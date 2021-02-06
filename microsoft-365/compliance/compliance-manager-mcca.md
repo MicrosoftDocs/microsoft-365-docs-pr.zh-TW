@@ -14,24 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何使用 Microsoft 規範設定分析器，透過 Microsoft 合規性管理員快速開始和執行。
-ms.openlocfilehash: 1f7d987262a7d390cb9efe2162ae9be9f56c8757
-ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
+ms.openlocfilehash: 86c4b04deb8313f3013a6d9ad349c0f4112db773
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071996"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122393"
 ---
-# <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager"></a>合規性管理員的 Microsoft 規範設定分析器
+# <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>合規性管理員的 Microsoft 規範設定分析器 (預覽) 
 
 **本文內容：** 瞭解如何安裝和執行 Microsoft 規範設定 Analyzer 工具，快速開始使用 Microsoft 合規性管理員。
 
-## <a name="microsoft-compliance-configuration-analyzer-mcca-overview"></a>Microsoft 規範設定分析器 (MCCA) 概述
+## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Microsoft 規範設定分析器 (MCCA)  (預覽) 概述
 
-Microsoft 規範設定分析器 (MCCA) 是一種可協助您開始使用 [Microsoft 合規性管理員](compliance-manager.md)的工具。 MCCA 是一種以 PowerShell 為基礎的公用程式，會取得組織目前的設定，並針對 Microsoft 365 建議的最佳作法進行驗證。 這些最佳作法是以一組控制項為基礎，其中包含資料保護和資料控管的主要法規和標準。
+Microsoft 規範設定分析器 (MCCA) 是一種預覽工具，可協助您開始使用 [Microsoft 合規性管理員](compliance-manager.md)。 MCCA 是一種以 PowerShell 為基礎的公用程式，會取得組織目前的設定，並針對 Microsoft 365 建議的最佳作法進行驗證。 這些最佳作法是以一組控制項為基礎，其中包含資料保護和資料控管的主要法規和標準。
 
 MCCA 可協助您快速查看合規性管理員中的哪些改進動作適用于您目前的 Microsoft 365 環境。 MCCA 識別的每個動作都會提供您的實施建議，其中包含符合性管理員的直接連結，以及開始採取糾正動作的適當解決方案。
 
 若要瞭解 MCCA 的其他資源，請造訪 [GitHub 上的讀我檔案指示](https://github.com/OfficeDev/MCCA#overview)。 此頁面提供有關必要條件的詳細資訊，並提供完整的安裝指示。 您不需要 GitHub 帳戶即可存取此頁面。
+
+**可用性**： MCCA 可供所有組織使用 Office 365 和 Microsoft 365 授權和美國政府社區 (GCC) 適中的客戶，以及執行將服務擴充至 GCC 高的客戶的計畫。
 
 ## <a name="install-mcca-and-run-a-report"></a>安裝 MCCA 並執行報告
 
@@ -45,7 +47,7 @@ MCCA 可協助您快速查看合規性管理員中的哪些改進動作適用于
 若要安裝 MCCA，請在系統管理員模式中使用 PowerShell 開始。 請遵循下列步驟：
 
 1. 選取 [Windows **開始** ] 按鈕。
-2. 輸入 **PowerShell** ，在 [ **Windows PowerShell** 上按一下滑鼠右鍵，然後選取 [ **以系統管理員身分執行** ]。
+2. 輸入 **PowerShell**，在 [ **Windows PowerShell** 上按一下滑鼠右鍵，然後選取 [ **以系統管理員身分執行**]。
 1. 請在命令提示字元處，輸入：
 
     ```powershell
@@ -94,7 +96,7 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
   | :------------- | :------------: |
   | 1  | 亞太地區 |
   | 2  | 澳洲 |
-  | 個 | 加拿大 |
+  | 3  | 加拿大 |
   | 4  | 歐洲 (除外法國) /中東/非洲 |
   | 5  | 法國 |
   | 6  | 印度 |
@@ -136,9 +138,9 @@ MCCA 會根據合規性管理員中建議的改進動作評估您目前的設定
 
 每個 Microsoft 解決方案旁邊都有色彩編碼方塊，指出與合規性管理員中的改進動作相對應的專案數。 動作會分解成三個狀態狀態：
 
-- **確定** ：符合建議條件的動作，在此時間不需要注意
-- **改進** ：需要注意的動作
-- **建議** ：不需要注意，但我們建議最佳作法的動作
+- **確定**：符合建議條件的動作，在此時間不需要注意
+- **改進**：需要注意的動作
+- **建議**：不需要注意，但我們建議最佳作法的動作
  
 選取方塊以查看改進和建議。
 

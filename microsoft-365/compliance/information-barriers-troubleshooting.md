@@ -13,12 +13,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39ac5c2f12b8947bce26d426cac83e57cd4c87ae
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 3810dd977ef0d25642ba86a2b62a036c9a4ace06
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980036"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126560"
 ---
 # <a name="troubleshooting-information-barriers"></a>疑難排解資訊屏障
 
@@ -27,7 +27,7 @@ ms.locfileid: "49980036"
 當有人在資訊壁壘出現之後發生意外問題時，您可以採取一些步驟來解決這些問題。 使用本文做為指南。
 
 > [!IMPORTANT]
-> 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理 (這是一個新的角色！ ) <p>若要深入瞭解資訊障礙的必要條件，請參閱 [資訊屏障原則) 的必要條件 (](information-barriers-policies.md#prerequisites)。<p>請務必 [連接至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+> 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理 (這是一個新的角色！ ) <p>若要深入瞭解資訊障礙的必要條件，請參閱 [資訊屏障原則) 的必要條件 (](information-barriers-policies.md#prerequisites)。<p>請務必 [連接至安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題：使用者意外封鎖，無法與 Microsoft 小組中的其他使用者通訊 
 
@@ -102,7 +102,7 @@ ms.locfileid: "49980036"
 
     |**Results**|**接下來要執行的動作**|
     |:----------|:------------------|
-    | 未列出選定使用者 (s 的區段)  | 執行下列其中一項：<br/>-在 Azure Active Directory 中編輯使用者設定檔，將使用者指派至現有的網段。  (請參閱 [使用 Office 365 PowerShell 設定使用者帳戶屬性](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)。 ) <br/>-使用 [支援的資訊障礙屬性](information-barriers-attributes.md)定義區段。 然後， [定義新的原則](information-barriers-policies.md#part-2-define-information-barrier-policies) 或 [編輯現有的原則](information-barriers-edit-segments-policies.md#edit-a-policy) ，以包含該區段。 |
+    | 未列出選定使用者 (s 的區段)  | 執行下列其中一項：<br/>-在 Azure Active Directory 中編輯使用者設定檔，將使用者指派至現有的網段。  (請參閱 [使用 Office 365 PowerShell 設定使用者帳戶屬性](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)。 ) <br/>-使用 [支援的資訊障礙屬性](information-barriers-attributes.md)定義區段。 然後， [定義新的原則](information-barriers-policies.md#part-2-define-information-barrier-policies) 或 [編輯現有的原則](information-barriers-edit-segments-policies.md#edit-a-policy) ，以包含該區段。 |
     | 會列出網段，但不會將資訊障礙原則指派給那些區段 | 執行下列其中一項：<br/>- 為相關的每個區段[定義新的資訊屏障原則](information-barriers-policies.md#part-2-define-information-barrier-policies) <br/>- [編輯現有的資訊屏障原則](information-barriers-edit-segments-policies.md#edit-a-policy) ，將其指派給正確的區段 |
     | 列出各段，且每個區段都包含在資訊屏障原則中 | -執行 `Get-InformationBarrierPolicy` Cmdlet 以確認資訊屏障原則為作用中狀態。<br/>-執行 `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet 以確認已套用原則<br/>-執行 `Start-InformationBarrierPoliciesApplication` Cmdlet 以套用所有作用中的資訊屏障原則 |
 
@@ -123,7 +123,7 @@ ms.locfileid: "49980036"
 
 2. 檢查結果，以查看是否已指派資訊屏障原則，以及 (s) 屬於哪個區段 (s) 使用者。
 
-3. 若要從受資訊障礙影響的區段中移除使用者，請 [在 Azure Active Directory 中更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+3. 若要從受資訊障礙影響的區段中移除使用者，請 [在 Azure Active Directory 中更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
 4. 等候大約30分鐘，以進行 FwdSync。 或者，執行 Cmdlet 以套用所有作用中的 `Start-InformationBarrierPoliciesApplication` 資訊屏障原則。
 
@@ -157,15 +157,15 @@ ms.locfileid: "49980036"
 
 ### <a name="what-to-do"></a>處理方式
 
-請確定您的組織沒有適當的 [Exchange 通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 。 這類原則會防止套用資訊屏障原則。
+請確定您的組織沒有適當的 [Exchange 通訊錄原則](/exchange/address-books/address-book-policies/address-book-policies) 。 這類原則會防止套用資訊屏障原則。
 
-1. 連接至 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 連接至 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 執行 [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy) Cmdlet，並檢查結果。
+2. 執行 [Get-AddressBookPolicy](/powershell/module/exchange/get-addressbookpolicy) Cmdlet，並檢查結果。
 
     |**Results**|**下一步**|
     |:----------|:------------|
-    | Exchange 通訊錄原則會列出 | [移除通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | Exchange 通訊錄原則會列出 | [移除通訊錄原則](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
     | 無通訊錄原則存在 |檢查您的審計記錄檔，以找出原則應用程式失敗的原因 |
 
 3. [查看使用者帳戶、區段、原則或原則應用程式的狀態](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)。

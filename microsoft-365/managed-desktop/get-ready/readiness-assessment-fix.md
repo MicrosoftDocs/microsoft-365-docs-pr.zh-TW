@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 22b5a6353720f8fbee218c138a3c9d0dee444db9
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: ff2ef15f93cef5255e8c8113facf51b833eff77d
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114916"
+ms.locfileid: "50122357"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
 
@@ -280,13 +280,13 @@ Azure AD 組織中的 Windows 10 裝置必須能夠在 Intune 中自動註冊。
 您沒有使用 Microsoft 管理的桌面所需的所有授權。 如需詳細資訊，請參閱 [Microsoft 管理的桌面技術](../intro/technologies.md) 和 [有關授權的詳細](prerequisites.md#more-about-licenses)資訊。
 
 
-### <a name="security-account-names"></a>安全性帳戶名稱
+### <a name="microsoft-managed-desktop-service-accounts"></a>Microsoft 受管理的桌面服務帳戶
 
-某些安全性帳戶名稱會與 Microsoft Managed Desktop 所建立的名稱相衝突。
+某些帳戶名稱會與 Microsoft Managed Desktop 所建立的帳戶名稱衝突，以管理 Microsoft 受管理的桌面服務。
 
 **未就緒**
 
-您至少要有一個帳戶名稱會與 Microsoft Managed Desktop 所建立的帳戶名稱產生衝突。 請與您的 Microsoft 帳戶代表合作，以排除這些帳戶名稱。
+您至少有一個帳戶名稱會與 Microsoft Managed Desktop 所建立的帳戶名稱衝突。 請與您的 Microsoft 帳戶代表合作，以排除這些帳戶名稱。 我們不會向公眾列出帳戶名稱，以儘量降低安全性風險。 
 
 
 ### <a name="security-administrator-roles"></a>安全性管理員角色

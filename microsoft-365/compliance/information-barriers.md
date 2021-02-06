@@ -16,12 +16,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 003347d46bed2529831a92681e73630d58a1f653
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 1ef09fbf7a517950ae182472e4b4d5ef896d65e5
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071268"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126540"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的資訊障礙
 
@@ -47,7 +47,7 @@ Microsoft 小組、SharePoint 線上及 OneDrive 商務支援資訊障礙。 假
 - [OneDrive 中的資訊障礙](/onedrive/information-barriers)
 
 > [!IMPORTANT]
-> 目前資訊障礙不適用於電子郵件通訊。 此外，資訊障礙獨立于 [規範界限](set-up-compliance-boundaries.md)。<p> 在您定義及套用資訊屏障原則之前，請確定您的組織沒有有效的 [Exchange 通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 。  (資訊障礙是以通訊錄原則為基礎。 ) 
+> 目前資訊障礙不適用於電子郵件通訊。 此外，資訊障礙獨立于 [規範界限](set-up-compliance-boundaries.md)。<p> 在您定義及套用資訊屏障原則之前，請確定您的組織沒有有效的 [Exchange 通訊錄原則](/exchange/address-books/address-book-policies/address-book-policies) 。  (資訊障礙是以通訊錄原則為基礎。 ) 
 
 ## <a name="what-happens-with-information-barriers"></a>資訊障礙發生什麼事
 
@@ -88,13 +88,13 @@ Microsoft 小組、SharePoint 線上及 OneDrive 商務支援資訊障礙。 假
 - Microsoft 365 規範 E5/A5
 - Microsoft 365 有問必答風險管理
 
-如需詳細資訊，請參閱 [Microsoft 365 授權指南以取得安全性 & 符合性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
+如需詳細資訊，請參閱 [Microsoft 365 授權指南以取得安全性 & 符合性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 若要 [定義或編輯資訊障礙原則](information-barriers-policies.md)，您必須被指派下列其中一個角色：
 
 - Microsoft 365 全域系統管理員
 - Office 365 全域系統管理員
-- 合規性管理員
+- 合規性系統管理員
 - IB 合規性管理
 
  (若要深入瞭解角色和許可權，請參閱 [Office 365 Security & 合規性中心的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。 ) 

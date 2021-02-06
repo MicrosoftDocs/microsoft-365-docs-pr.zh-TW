@@ -15,17 +15,16 @@ ms.collection:
 - commerce
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - MET150
 description: 了解如何閱讀及了解您的 Microsoft 商務產品帳單或發票。
 keywords: 帳單帳戶、組織資訊、發票
-ms.openlocfilehash: 79702c369a097dbcbc8fe2319cd04663f9fe0441
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114774"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126570"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解您的帳單或發票
 

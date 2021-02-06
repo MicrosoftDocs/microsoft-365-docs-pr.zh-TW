@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 瞭解如何控制可建立 Microsoft 365 群組的使用者。
-ms.openlocfilehash: 2954f68dce289d43b37bf8f5c6ff43fe1b5c48c7
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 3fa430e44c272e5ababbfb0e4befba707c72c1ba
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613557"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122381"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可建立 Microsoft 365 群組的人員
 
@@ -39,7 +39,7 @@ ms.locfileid: "49613557"
 - Power BI (傳統) 
 - Web/藍圖的專案
 
-您可以將 Microsoft 365 群組建立限制在特定安全性群組的成員。 若要設定此，您可以使用 Windows PowerShell。 本文將引導您完成必要的步驟。
+您可以將 Microsoft 365 群組建立限制在特定 Microsoft 365 群組或安全性群組的成員。 若要設定此，您可以使用 Windows PowerShell。 本文將引導您完成必要的步驟。
 
 本文中的步驟不會防止某些角色的成員建立群組。 Office 365 全域系統管理員可以透過任何方式建立群組，例如 Microsoft 365 系統管理中心、Planner、小組、Exchange 及 SharePoint 線上。 其他角色可以透過有限的方式建立群組，如下所列。
 
@@ -58,7 +58,7 @@ ms.locfileid: "49613557"
 若要管理群組的建立者，下列人員必須已指派 Azure AD Premium 授權或 Azure AD 基本 EDU 授權：
 
 - 設定這些群組建立設定的系統管理員
-- 允許建立群組的安全性群組成員
+- 允許建立群組的群組成員
 
 > [!NOTE]
 > 如需如何指派 Azure 授權的詳細資訊，請參閱 [在 Azure Active Directory 入口網站中指派或移除授權](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) 。
@@ -67,22 +67,19 @@ ms.locfileid: "49613557"
 
 - 屬於 Microsoft 365 群組成員的人員，以及沒有建立其他群組的能力。
 
-## <a name="step-1-create-a-security-group-for-users-who-need-to-create-microsoft-365-groups"></a>步驟1：為需要建立 Microsoft 365 群組的使用者建立安全性群組
+## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>步驟1：為需要建立 Microsoft 365 群組的使用者建立群組
 
-您組織中只有一個安全性群組可用於控制誰可以建立群組。 不過，您可以以巢狀方式內嵌其他安全性群組，做為此群組的成員。
+您組織中只有一個群組可以用來控制誰可以建立群組。 不過，您可以將其他群組嵌套為此群組的成員。
 
 以上所列角色中的系統管理員不需要是此群組的成員：他們保留其建立群組的能力。
-
-> [!IMPORTANT]
-> 請務必使用 **安全性群組** 來限制誰可以建立群組。 不支援使用 Microsoft 365 群組。
 
 1. 在系統管理中心中，移至 [ [群組] 頁面](https://admin.microsoft.com/adminportal/home#/groups)。
 
 2. 按一下 [ **新增群組**]。
 
-3. 選擇 [ **安全性** ] 做為「群組類型」。 請記下群組名稱！ 以便後續步驟使用。
+3. 選擇您想要的群組類型。 請記下群組名稱！ 以便後續步驟使用。
 
-4. 完成設定安全性群組，新增您想要在您的組織中建立群組的人員或其他安全性群組。
+4. 完成設定群組，新增您想要在您的組織中建立群組的人員或其他群組。
 
 如需詳細指示，請參閱 [建立、編輯或刪除 Microsoft 365 admin center 中的安全性群組](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group)。
 
@@ -98,7 +95,7 @@ ms.locfileid: "49613557"
 
 將下列腳本複製到文字編輯器（例如記事本）或 [Windows POWERSHELL ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)。
 
-取代 *\<SecurityGroupName\>* 為您建立的安全性群組名稱。 例如：
+*\<GroupName\>* 以您建立的群組名稱取代。 例如：
 
 `$GroupName = "Group Creators"`
 
@@ -113,7 +110,7 @@ ms.locfileid: "49613557"
 系統提示時，請 [使用系統管理員帳戶登入](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) 。
 
 ```PowerShell
-$GroupName = "<SecurityGroupName>"
+$GroupName = "<GroupName>"
 $AllowGroupCreation = $False
 
 Connect-AzureAD
@@ -146,7 +143,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 ![This is what your settings will look like when you're done.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
-如果您想要變更使用的安全性群組，您可以使用新安全性群組的名稱重新執行腳本。
+如果您想要變更所使用的群組，您可以使用新群組的名稱重新執行腳本。
 
 如果您想關閉群組建立限制，並再次允許所有使用者建立群組，請將 $GroupName 設定為 ""，並 $AllowGroupCreation 為 "True"，然後重新執行腳本。
 
@@ -154,7 +151,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 變更可能需要30分鐘以上的時間才會生效。 您可以執行下列動作來驗證新的設定：
 
-1. 使用不具備建立群組功能之人員的使用者帳戶登入 Microsoft 365。 也就是說，它們不是您所建立之安全性群組的成員，或是管理員的成員。
+1. 使用不具備建立群組功能之人員的使用者帳戶登入 Microsoft 365。 也就是說，它們不是您所建立之群組的成員，或是管理員的成員。
 
 2. 選取 [ **Planner** ] 磚。
 
@@ -162,10 +159,10 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 4. 您應該會收到一則停用計畫和群組建立的訊息。
 
-請使用安全性群組的成員嘗試相同的程式。
+請使用群組的成員重新嘗試相同的程式。
 
 > [!NOTE]
-> 如果安全性群組的成員無法建立群組，請檢查他們未透過 [OWA 信箱原則](https://go.microsoft.com/fwlink/?linkid=852135)封鎖。
+> [！注意] 如果群組的成員無法建立群組，請檢查未透過 [OWA 信箱原則](https://go.microsoft.com/fwlink/?linkid=852135)封鎖這些群組。
 
 ## <a name="related-topics"></a>相關主題
 

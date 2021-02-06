@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何執行腳本，將商務網站的信箱 & OneDrive 新增至與 Microsoft 365 規範中心內的 eDiscovery 案例相關聯的新保留。
-ms.openlocfilehash: 31c3bfef4eda4802618020f607bc7706780f3629
-ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
+ms.openlocfilehash: 72fd9b8e7b63b36399d055e2eb710e8b53967e44
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49525612"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126436"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>使用腳本將使用者新增至核心 eDiscovery 案例中的保留
 
@@ -51,17 +51,9 @@ ms.locfileid: "49525612"
 
 - 腳本會將使用者清單新增至與現有案例關聯的新保留。 在執行腳本之前，請確定您要建立保留的大小寫與所建立的專案。
 
-- 本文中的腳本可在連線至安全性 & 合規性中心 PowerShell 時，支援新式驗證。 如果您是 Microsoft 365 或 Microsoft 365 GCC 組織，您可以將腳本當做-。 如果您是 Office 365 德國組織、Microsoft 365 GCC 高組織或 Microsoft 365 DoD 組織，您必須編輯腳本，以順利執行它。 具體而言，您必須編輯該行 `Connect-IPPSSession` 並使用 *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 參數 (以及組織類型的適當值) 才能連線至安全性 & 規範中心 PowerShell。 如需詳細資訊，請參閱 [Connect To Security & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)中的範例。
+- 本文中的腳本可在連線至安全性 & 合規性中心 PowerShell 及 SharePoint 線上管理命令介面時，支援新式驗證。 如果您是 Microsoft 365 或 Microsoft 365 GCC 組織，您可以將腳本當做-。 如果您是 Office 365 德國組織、Microsoft 365 GCC 高組織或 Microsoft 365 DoD 組織，您必須編輯腳本，以順利執行它。 具體而言，您必須編輯該行 `Connect-IPPSSession` 並使用 *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 參數 (以及組織類型的適當值) 才能連線至安全性 & 規範中心 PowerShell。 如需詳細資訊，請參閱 [Connect To Security & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)中的範例。
 
-- 每次執行腳本時，都會建立新的安全性 & 規範 PowerShell 和 SharePoint 線上管理命令介面會話。 您可以使用所有可用的 PowerShell 會話。 若要避免發生這種情況，您可以執行下列命令，以中斷使用中 PowerShell 會話的連線。
-
-  ```powershell
-  Get-PSSession | Remove-PSSession
-  ```
-
-   ```powershell
-   Disconnect-SPOService
-   ```
+- 腳本會自動中斷與安全性 & 合規性中心的連線 PowerShell 和 SharePoint 線上管理命令介面。
 
 - 腳本包含最低的錯誤處理。 其主要用途是快速而輕鬆地將每位使用者的信箱和 OneDrive 用於保留的商務網站。
 
@@ -71,7 +63,7 @@ ms.locfileid: "49525612"
 
 第一步是安裝本機電腦上的 SharePoint Online 管理命令介面（如果尚未安裝）。 您不需要在此程式中使用命令介面，但必須安裝它，因為它包含您在步驟3中執行之腳本所需的必要條件。 這些必要條件允許腳本與 SharePoint Online 進行通訊，以取得商務網站 OneDrive 的 URLs。
   
-移至 [設定 SharePoint 線上管理命令介面 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318) ，並執行步驟1和步驟2，在您的本機電腦上安裝 SharePoint 的線上管理命令介面。 
+移至 [設定 SharePoint 線上管理命令介面 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318) ，並執行步驟1和步驟2，在您的本機電腦上安裝 SharePoint 的線上管理命令介面。
 
 ## <a name="step-2-generate-a-list-of-users"></a>步驟2：產生使用者清單
 
@@ -115,177 +107,169 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   
 1. 使用檔案名尾碼，將下列文字儲存至 Windows PowerShell 腳本檔案 `.ps1` 。 例如，`AddUsersToHold.ps1`。
 
-   ```powershell
-   #script begin
-   " "
-   write-host "***********************************************"
-   write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
-   write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
-   write-host "***********************************************"
-   " "
-   # Connect to SCC PowerShell using modern authentication
-   if (!$SccSession)
-   {
-     Import-Module ExchangeOnlineManagement
-     Connect-IPPSSession
-   }
-   # Get user credentials to connect to SPO Management Shell
-   $credentials = Get-Credential -Message "Type your credentials again to connect to SharePoint Online Management Shell"
-   # Load the SharePoint assemblies from the SharePoint Online Management Shell
-   # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
-   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
-   {
-       $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
-       $SPRuntime = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.Runtime")
-       $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
-       if (!$SharePointClient)
-       {
-           Write-Error "The SharePoint Online Management Shell isn't installed. Please install it from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then re-run this script."
-           return;
-       }
-   }
-   if (!$spCreds)
-   {
-       $spCreds = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($credentials.UserName, $credentials.Password)
-   }
-   # Get the user's MySite domain name. We use this to create the admin URL and root URL for OneDrive for Business
-   ""
-   $mySiteDomain = Read-Host "Enter the name of your organization's MySite domain. For example, 'contoso' for 'https://contoso-my.sharepoint.com'"
-   ""
-   # Get other required information
-   do{
-   $casename = Read-Host "Enter the name of the case"
-   $caseexists = (get-compliancecase -identity "$casename" -erroraction SilentlyContinue).isvalid
-   if($caseexists -ne 'True')
-   {""
-   write-host "A case named '$casename' doesn't exist. Please specify the name of an existing case, or create a new case and then re-run the script." -foregroundColor Yellow
-   ""}
-   }While($caseexists -ne 'True')
-   ""
-   do{
-   $holdName = Read-Host "Enter the name of the new hold"
-   $holdexists=(get-caseholdpolicy -identity "$holdname" -case "$casename" -erroraction SilentlyContinue).isvalid
-   if($holdexists -eq 'True')
-   {""
-   write-host "A hold named '$holdname' already exists. Please specify a new hold name." -foregroundColor Yellow
-   ""}
-   }While($holdexists -eq 'True')
-   ""
-   $holdQuery = Read-Host "Enter a search query to create a query-based hold, or press Enter to hold all content"
-   ""
-   $holdstatus = read-host "Do you want the hold enabled after it's created? (Yes/No)"
-   do{
-   ""
-   $inputfile = read-host "Enter the name of the text file that contains the email addresses of the users to add to the hold"
-   ""
-   $fileexists = test-path -path $inputfile
-   if($fileexists -ne 'True'){write-host "$inputfile doesn't exist. Please enter a valid file name." -foregroundcolor Yellow}
-   }while($fileexists -ne 'True')
-   #Import the list of addresses from the txt file.  Trim any excess spaces and make sure all addresses 
-       #in the list are unique.
-     [array]$emailAddresses = Get-Content $inputfile -ErrorAction SilentlyContinue | where {$_.trim() -ne ""}  | foreach{ $_.Trim() }
-     [int]$dupl = $emailAddresses.count
-     [array]$emailAddresses = $emailAddresses | select-object -unique
-     $dupl -= $emailAddresses.count
-   #Validate email addresses so the hold creation does not run in to an error.
-   if($emailaddresses.count -gt 0){
-   write-host ($emailAddresses).count "addresses were found in the text file. There were $dupl duplicate entries in the file." -foregroundColor Yellow
-   ""
-   Write-host "Validating the email addresses. Please wait..." -foregroundColor Yellow
-   ""
-   $finallist =@()
-   foreach($emailAddress in $emailAddresses)
-   {
-   if((get-recipient $emailaddress -erroraction SilentlyContinue).isvalid -eq 'True')
-   {$finallist += $emailaddress}
-   else {"Unable to find the user $emailaddress"
-   [array]$excludedlist += $emailaddress}
-   }
-   ""
-   #find user's OneDrive Site URL using email address
-   Write-Host "Getting the URL for each user's OneDrive for Business site." -foregroundColor Yellow 
-   ""
-   $AdminUrl = "https://$mySiteDomain-admin.sharepoint.com"
-   $mySiteUrlRoot = "https://$mySiteDomain-my.sharepoint.com"
-   # Add the path of the User Profile Service to the SPO admin URL, then create a new webservice proxy to access it
-   $proxyaddr = "$AdminUrl/_vti_bin/UserProfileService.asmx?wsdl"
-   $UserProfileService= New-WebServiceProxy -Uri $proxyaddr -UseDefaultCredential False 
-   $UserProfileService.Credentials = $credentials
-   # Take care of auth cookies
-   $strAuthCookie = $spCreds.GetAuthenticationCookie($AdminUrl)
-   $uri = New-Object System.Uri($AdminUrl)
-   $container = New-Object System.Net.CookieContainer
-   $container.SetCookies($uri, $strAuthCookie)
-   $UserProfileService.CookieContainer = $container
-   $urls = @()
-   foreach($emailAddress in $emailAddresses)
-   {
-        try{
-          $prop = $UserProfileService.GetUserProfileByName("i:0#.f|membership|$emailAddress") | Where-Object { $_.Name -eq "PersonalSpace" }
-          $url = $prop.values[0].value
-        if($url -ne $null){
-          $furl = $mySiteUrlRoot + $url
-          $urls += $furl
-          Write-Host "- $emailAddress => $furl"
-        [array]$ODadded += $furl}
-    else{    
-          Write-Warning "Couldn't locate OneDrive for $emailAddress"
-        [array]$ODExluded += $emailAddress
-      }}
-    catch { 
-    Write-Warning "Could not locate OneDrive for $emailAddress"
-    [array]$ODExluded += $emailAddress
-    Continue }
-   }
-   if(($finallist.count -gt 0) -or ($urls.count -gt 0)){
-   ""
-   Write-Host "Creating the hold named $holdname. Please wait..." -foregroundColor Yellow
-   if(($holdstatus -eq "Y") -or ($holdstatus -eq  "y") -or ($holdstatus -eq "yes") -or ($holdstatus -eq "YES")){
-   New-CaseHoldPolicy -Name "$holdName" -Case "$casename" -ExchangeLocation $finallist -SharePointLocation $urls -Enabled $True | out-null
-   New-CaseHoldRule -Name "$holdName" -Policy "$holdname" -ContentMatchQuery $holdQuery | out-null
-   }
-   else{
-   New-CaseHoldPolicy -Name "$holdName" -Case "$casename" -ExchangeLocation $finallist -SharePointLocation $urls -Enabled $false | out-null
-   New-CaseHoldRule -Name "$holdName" -Policy "$holdname" -ContentMatchQuery $holdQuery -disabled $true | out-null
-   }
-   ""
-   }
-   else {"No valid locations were identified. Therefore, the hold wasn't created."}
-   #write log files (if needed)
-   $newhold=Get-CaseHoldPolicy -Identity "$holdname" -Case "$casename" -erroraction SilentlyContinue
-   $newholdrule=Get-CaseHoldRule -Identity "$holdName" -erroraction SilentlyContinue
-   if(($ODAdded.count -gt 0) -or ($ODExluded.count -gt 0) -or ($finallist.count -gt 0) -or ($excludedlist.count -gt 0) -or ($newhold.isvalid -eq 'True') -or ($newholdrule.isvalid -eq 'True'))
-   {
-   Write-Host "Generating output files..." -foregroundColor Yellow
-   if($ODAdded.count -gt 0){
-   "OneDrive Locations" | add-content .\LocationsOnHold.txt
-   "==================" | add-content .\LocationsOnHold.txt 
-   $newhold.SharePointLocation.name | add-content .\LocationsOnHold.txt}
-   if($ODExluded.count -gt 0){ 
-   "Users without OneDrive locations" | add-content .\LocationsNotOnHold.txt
-   "================================" | add-content .\LocationsNotOnHold.txt
-   $ODExluded | add-content .\LocationsNotOnHold.txt}
-   if($finallist.count -gt 0){
-   " " | add-content .\LocationsOnHold.txt
-   "Exchange Locations" | add-content .\LocationsOnHold.txt
-   "==================" | add-content .\LocationsOnHold.txt 
-   $newhold.ExchangeLocation.name | add-content .\LocationsOnHold.txt}
-   if($excludedlist.count -gt 0){
-   " "| add-content .\LocationsNotOnHold.txt
-   "Mailboxes not added to the hold" | add-content .\LocationsNotOnHold.txt
-   "===============================" | add-content .\LocationsNotOnHold.txt
-   $excludedlist | add-content .\LocationsNotOnHold.txt}
-   $FormatEnumerationLimit=-1
-   if($newhold.isvalid -eq 'True'){$newhold|fl >.\GetCaseHoldPolicy.txt}
-   if($newholdrule.isvalid -eq 'True'){$newholdrule|Fl >.\GetCaseHoldRule.txt}
-   }
-   }
-   else {"The hold wasn't created because no valid entries were found in the text file."}
-   ""
-   Write-host "Script complete!" -foregroundColor Yellow
-   ""
-   #script end
-   ```
+```powershell
+#script begin
+" "
+write-host "***********************************************"
+write-host "   Security & Compliance Center PowerShell  " -foregroundColor yellow -backgroundcolor darkgreen
+write-host "   Core eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
+write-host "***********************************************"
+" "
+# Connect to SCC PowerShell using modern authentication
+if (!$SccSession)
+{
+  Import-Module ExchangeOnlineManagement
+  Connect-IPPSSession
+}
+
+# Get the organization's domain name. We use this to create the SharePoint admin URL and root URL for OneDrive for Business.
+""
+$mySiteDomain = Read-Host "Enter the domain name for your SharePoint organization. We use this name to connect to SharePoint admin center and for the OneDrive URLs in your organization. For example, 'contoso' in 'https://contoso-admin.sharepoint.com' and 'https://contoso-my.sharepoint.com'"
+""
+
+# Connect to PnP Online using modern authentication
+Import-Module PnP.PowerShell
+Connect-PnPOnline -Url https://$mySiteDomain-admin.sharepoint.com -UseWebLogin
+
+# Load the SharePoint assemblies from the SharePoint Online Management Shell
+# To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
+if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
+{
+    $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
+    $SPRuntime = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.Runtime")
+    $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
+    if (!$SharePointClient)
+    {
+        Write-Error "The SharePoint Online Management Shell isn't installed. Please install it from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then re-run this script."
+        return;
+    }
+}
+
+# Get other required information
+do{
+$casename = Read-Host "Enter the name of the case"
+$caseexists = (get-compliancecase -identity "$casename" -erroraction SilentlyContinue).isvalid
+if($caseexists -ne 'True')
+{""
+write-host "A case named '$casename' doesn't exist. Please specify the name of an existing case, or create a new case and then re-run the script." -foregroundColor Yellow
+""}
+}While($caseexists -ne 'True')
+""
+do{
+$holdName = Read-Host "Enter the name of the new hold"
+$holdexists=(get-caseholdpolicy -identity "$holdname" -case "$casename" -erroraction SilentlyContinue).isvalid
+if($holdexists -eq 'True')
+{""
+write-host "A hold named '$holdname' already exists. Please specify a new hold name." -foregroundColor Yellow
+""}
+}While($holdexists -eq 'True')
+""
+$holdQuery = Read-Host "Enter a search query to create a query-based hold, or press Enter to hold all content"
+""
+$holdstatus = read-host "Do you want the hold enabled after it's created? (Yes/No)"
+do{
+""
+$inputfile = read-host "Enter the name of the text file that contains the email addresses of the users to add to the hold"
+""
+$fileexists = test-path -path $inputfile
+if($fileexists -ne 'True'){write-host "$inputfile doesn't exist. Please enter a valid file name." -foregroundcolor Yellow}
+}while($fileexists -ne 'True')
+#Import the list of addresses from the txt file.  Trim any excess spaces and make sure all addresses 
+    #in the list are unique.
+  [array]$emailAddresses = Get-Content $inputfile -ErrorAction SilentlyContinue | where {$_.trim() -ne ""}  | foreach{ $_.Trim() }
+  [int]$dupl = $emailAddresses.count
+  [array]$emailAddresses = $emailAddresses | select-object -unique
+  $dupl -= $emailAddresses.count
+#Validate email addresses so the hold creation does not run in to an error.
+if($emailaddresses.count -gt 0){
+write-host ($emailAddresses).count "addresses were found in the text file. There were $dupl duplicate entries in the file." -foregroundColor Yellow
+""
+Write-host "Validating the email addresses. Please wait..." -foregroundColor Yellow
+""
+$finallist =@()
+foreach($emailAddress in $emailAddresses)
+{
+if((get-recipient $emailaddress -erroraction SilentlyContinue).isvalid -eq 'True')
+{$finallist += $emailaddress}
+else {"Unable to find the user $emailaddress"
+[array]$excludedlist += $emailaddress}
+}
+""
+#Find user's OneDrive account URL using email address
+Write-Host "Getting the URL for each user's OneDrive for Business site." -foregroundColor Yellow 
+""
+$AdminUrl = "https://$mySiteDomain-admin.sharepoint.com"
+$mySiteUrlRoot = "https://$mySiteDomain-my.sharepoint.com"
+$urls = @()
+foreach($emailAddress in $emailAddresses)
+{
+try
+{
+$url=Get-PnPUserProfileProperty -Account $emailAddress | Select PersonalUrl
+$urls += $url.PersonalUrl
+       Write-Host "- $emailAddress => $url"
+       [array]$ODadded += $url.PersonalUrl
+       }catch { 
+ Write-Warning "Could not locate OneDrive for $emailAddress"
+ [array]$ODExluded += $emailAddress
+ Continue }
+}
+$urls | FL
+if(($finallist.count -gt 0) -or ($urls.count -gt 0)){
+""
+Write-Host "Creating the hold named $holdname. Please wait..." -foregroundColor Yellow
+if(($holdstatus -eq "Y") -or ($holdstatus -eq  "y") -or ($holdstatus -eq "yes") -or ($holdstatus -eq "YES")){
+New-CaseHoldPolicy -Name "$holdName" -Case "$casename" -ExchangeLocation $finallist -SharePointLocation $urls -Enabled $True | out-null
+New-CaseHoldRule -Name "$holdName" -Policy "$holdname" -ContentMatchQuery $holdQuery | out-null
+}
+else{
+New-CaseHoldPolicy -Name "$holdName" -Case "$casename" -ExchangeLocation $finallist -SharePointLocation $urls -Enabled $false | out-null
+New-CaseHoldRule -Name "$holdName" -Policy "$holdname" -ContentMatchQuery $holdQuery -disabled $true | out-null
+}
+""
+}
+else {"No valid locations were identified. Therefore, the hold wasn't created."}
+#write log files (if needed)
+$newhold=Get-CaseHoldPolicy -Identity "$holdname" -Case "$casename" -erroraction SilentlyContinue
+$newholdrule=Get-CaseHoldRule -Identity "$holdName" -erroraction SilentlyContinue
+if(($ODAdded.count -gt 0) -or ($ODExluded.count -gt 0) -or ($finallist.count -gt 0) -or ($excludedlist.count -gt 0) -or ($newhold.isvalid -eq 'True') -or ($newholdrule.isvalid -eq 'True'))
+{
+Write-Host "Generating output files..." -foregroundColor Yellow
+if($ODAdded.count -gt 0){
+"OneDrive Locations" | add-content .\LocationsOnHold.txt
+"==================" | add-content .\LocationsOnHold.txt 
+$newhold.SharePointLocation.name | add-content .\LocationsOnHold.txt}
+if($ODExluded.count -gt 0){ 
+"Users without OneDrive locations" | add-content .\LocationsNotOnHold.txt
+"================================" | add-content .\LocationsNotOnHold.txt
+$ODExluded | add-content .\LocationsNotOnHold.txt}
+if($finallist.count -gt 0){
+" " | add-content .\LocationsOnHold.txt
+"Exchange Locations" | add-content .\LocationsOnHold.txt
+"==================" | add-content .\LocationsOnHold.txt 
+$newhold.ExchangeLocation.name | add-content .\LocationsOnHold.txt}
+if($excludedlist.count -gt 0){
+" "| add-content .\LocationsNotOnHold.txt
+"Mailboxes not added to the hold" | add-content .\LocationsNotOnHold.txt
+"===============================" | add-content .\LocationsNotOnHold.txt
+$excludedlist | add-content .\LocationsNotOnHold.txt}
+$FormatEnumerationLimit=-1
+if($newhold.isvalid -eq 'True'){$newhold|fl >.\GetCaseHoldPolicy.txt}
+if($newholdrule.isvalid -eq 'True'){$newholdrule|Fl >.\GetCaseHoldRule.txt}
+}
+}
+else {"The hold wasn't created because no valid entries were found in the text file."}
+""
+#Disconnect from SCC PowerShell and PnPOnline
+
+Write-host "Disconnecting from SCC PowerShell and PnP Online" -foregroundColor Yellow
+Get-PSSession | Remove-PSSession
+Disconnect-PnPOnline
+
+Write-host "Script complete!" -foregroundColor Yellow
+""
+#script end
+```
 
 2. 在您的本機電腦上，開啟 [Windows PowerShell]，然後移至您用來儲存腳本的資料夾。
 

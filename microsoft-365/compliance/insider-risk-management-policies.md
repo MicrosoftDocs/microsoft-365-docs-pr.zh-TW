@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1093d664e58f77d94db9f6f922a1a5072f4d3982
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 9f8424beb7e4a078d14bce755fc399ecd41764d9
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094696"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126632"
 ---
 # <a name="insider-risk-management-policies"></a>有問必答風險管理原則
 
@@ -89,7 +89,7 @@ ms.locfileid: "50094696"
 
 在許多組織中，使用者有權在其裝置上安裝軟體或修改裝置設定，以協助其工作。 不管是無意或惡意的目的，使用者可能會安裝惡意程式碼或停用重要的安全性功能，以協助保護其裝置或網路資源上的資訊。 這個原則範本使用 Microsoft Defender for Endpoint 中的安全性警示，以開始計分這些活動，並將此風險區域的「聚焦偵測和提醒」。 當使用者可能會有可能是「有問必答」風險的安全性原則違規記錄時，請使用此範本為案例中的安全性原則違規提供洞察力。
 
-您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
+您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="security-policy-violations-by-departing-users-preview"></a>由使用者 (預覽) 中的使用者進行安全性原則違規
 
@@ -97,13 +97,13 @@ ms.locfileid: "50094696"
 
 使用此範本時，您必須設定 Microsoft 365 HR connector，定期為組織中的使用者匯入辭職及終止日期資訊。 如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱 [Import data WITH HR connector](import-hr-data.md) 文章。
 
-您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
+您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="security-policy-violations-by-priority-users-preview"></a>優先使用者 (預覽的安全性原則違規) 
 
 保護組織中使用者的安全性違規可能取決於其位置、機密資訊的存取層級，或風險歷程記錄。 由於優先順序使用者的安全性違規可能會對組織的重要區域產生 outsized 影響，因此這個原則範本會從這些指示器開始計分，並使用 Microsoft Defender for Endpoint 警示，為這些使用者提供與安全性相關的活動的洞察力。 這可能包括安裝惡意程式碼或其他可能有害之應用程式的優先順序使用者，以及停用裝置上的安全性功能。 優先順序使用者是在「內幕風險管理設定」區域中設定的優先順序使用者群組中定義。
 
-您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。 此外，您必須將「內部使用者群組」原則 **管理**  >  **設定**  >  **優先順序使用者群組** 中所建立的優先順序使用者群組指派給原則。
+您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。 此外，您必須將「內部使用者群組」原則 **管理**  >  **設定**  >  **優先順序使用者群組** 中所建立的優先順序使用者群組指派給原則。
 
 ### <a name="security-policy-violations-by-disgruntled-users-preview"></a>因不滿使用者 (預覽所違反的安全性原則) 
 
@@ -111,7 +111,7 @@ ms.locfileid: "50094696"
 
 使用此範本時，您也必須設定 Microsoft 365 HR 連接器，以定期匯入效能改進通知、不良效能檢查狀態，或組織中使用者的工作層級變更資訊。 如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱 [Import data WITH HR connector](import-hr-data.md) 文章。
 
-您也需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部的「內部使用者風險管理整合」端點，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
+您也需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部的「內部使用者風險管理整合」端點，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="policy-template-prerequisites-and-triggering-events"></a>原則範本必要條件及觸發事件
 

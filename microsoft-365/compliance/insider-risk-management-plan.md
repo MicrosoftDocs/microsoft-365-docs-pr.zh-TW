@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8bf55cf3c27170c471dd45a68fd1ec2fa4a615b
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: f2581c4756a57926ab4a4539be8c383b0479e567
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357442"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126622"
 ---
 # <a name="plan-for-insider-risk-management"></a>測試人員風險管理計畫
 
@@ -51,7 +51,7 @@ ms.locfileid: "49357442"
 | **有問必答風險管理** | 使用此角色群組，在單一群組中管理組織的有問必答風險管理。 透過為指定的系統管理員、分析員和調查人員新增所有使用者帳戶，您可以在單一群組中設定「有問必答風險管理」許可權。 此角色群組包含所有測試人員風險管理權限角色。 這項設定是快速開始使用「內幕風險管理」的最簡單方法，而且很適合不需要個別使用者群組定義個別許可權的組織。|
 | **測試人員風險管理系統管理員** | 使用此角色群組開始設定「有問必答風險管理」和更新後的成員，以將內幕風險管理員與定義的群組隔離。  此角色群組中的使用者可以建立、讀取、更新和刪除內部使用者風險管理原則、全域設定和角色群組指派。 |
 | **測試人員風險管理分析員** | 使用此群組可將許可權指派給將擔當「有問必答風險案例分析」的使用者。 這個角色群組中的使用者可以存取所有的「內幕人員風險管理」提醒、案例及通知範本。 他們無法存取「內部使用者風險」內容瀏覽器。 |
-| **測試人員風險調查員** | 使用此群組可將許可權指派給將充當內部使用者風險資料調查人員的使用者。 在所有情況下，此角色群組中的使用者都可以存取所有的內幕程式風險管理提醒、案例、通知範本及內容瀏覽器。 |
+| **測試人員風險管理調查員** | 使用此群組可將許可權指派給將充當內部使用者風險資料調查人員的使用者。 在所有情況下，此角色群組中的使用者都可以存取所有的內幕程式風險管理提醒、案例、通知範本及內容瀏覽器。 |
 
 ## <a name="understand-requirements-and-dependencies"></a>瞭解需求和相依性
 
@@ -59,13 +59,13 @@ ms.locfileid: "49357442"
 
 **授權：** 在廣泛的 Microsoft 365 授權訂閱中，您可以使用「內幕風險管理」。 如需詳細資訊，請參閱《快速入門的 [內幕風險管理](insider-risk-management-configure.md#subscriptions-and-licensing) 文章。
 
-如果您沒有現有的 Microsoft 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以 [將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Microsoft 365 Enterprise E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
+如果您沒有現有的 Microsoft 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以 [將 microsoft 365 新增](/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Microsoft 365 Enterprise E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 
 **原則範本需求：** 視您所選擇的原則範本而定，您必須先瞭解和規劃這些需求，才能在組織中設定有問必答風險管理：
 
 - 當使用者使用「 **資料竊取** 」的範本時，您必須設定 MICROSOFT 365 HR 連接器，定期為組織中的使用者匯入辭職及終止日期資訊。 如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱 [Import data WITH HR connector](import-hr-data.md) 文章。
 - 使用 **資料洩漏** 範本時，您必須設定至少一個資料遺失防護 (DLP) 原則，以定義組織中的敏感資訊，並接收高嚴重性 DLP 原則警示的有問必答風險警示。 如需為組織設定 DLP 原則的逐步指引，請參閱 [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md) 文章。
-- 使用 **安全性原則侵犯** 範本時，您必須在 Defender security Center 中啟用內部的「內部人員風險管理整合」端點，以匯入安全性違規警示。 請參閱 [設定 Microsoft Defender 文章中的「高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) 」，以取得啟用 Defender 以與內幕風險管理進行端點整合的逐步指引。
+- 使用 **安全性原則侵犯** 範本時，您必須在 Defender security Center 中啟用內部的「內部人員風險管理整合」端點，以匯入安全性違規警示。 請參閱 [設定 Microsoft Defender 文章中的「高級功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) 」，以取得啟用 Defender 以與內幕風險管理進行端點整合的逐步指引。
 - 使用 **不滿的使用者** 範本時，您必須設定 MICROSOFT 365 HR connector，定期為組織中的使用者匯入效能或降級狀態資訊。 如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱 [Import data WITH HR connector](import-hr-data.md) 文章。
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>在實際執行環境中與一小組使用者進行測試

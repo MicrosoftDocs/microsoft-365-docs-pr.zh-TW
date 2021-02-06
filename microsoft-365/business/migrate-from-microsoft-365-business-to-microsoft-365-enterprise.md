@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 瞭解如何將您的企業從 Microsoft 365 商務版移至 Microsoft 365 E3。
-ms.openlocfilehash: 3f1bb9591e1bd2bac49326325ce6c8c2d6778497
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 019a422bb879389f42a32cf30f9a8094f776078a
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558231"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126194"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>從 Microsoft 365 商務進階版移轉至 Microsoft 365 E3
 
@@ -145,9 +145,7 @@ Microsoft 365 商務版特優包含 Windows 10 商務版，您可以使用 Windo
 
 您裝置上安裝的 Microsoft 365 應用程式商務用用戶端將會自動開始使用 Microsoft 365 應用程式的企業版功能。 遷移後，您現在可以使用：
 
- - 透過群組原則啟用磁片區
- - 應用程式遙測
- - 更新控制項
+ - 群組原則支援
  - 試算表比較及查詢
  - 商務智慧
 

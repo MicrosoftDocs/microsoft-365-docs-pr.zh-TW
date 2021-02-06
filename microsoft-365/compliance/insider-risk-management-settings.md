@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ba851a7ad6243b9b3b6bc69432bd2b3036d6b269
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 1e719b03db1c6de0279606d5f46f44eb02368c7e
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126612"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>開始使用「內幕風險管理」設定
 
@@ -60,7 +60,7 @@ ms.locfileid: "50094764"
 
 - **Office** 指標：包括 SharePoint 網站、小組和電子郵件訊息的原則指示器。
 - **裝置** 指標：包括透過網路或裝置共用檔案等活動的原則指示器。 標記包含 Microsoft Office 檔案所涉及的活動。CSV 檔案和。PDF 檔案。 如果您選取 [ **裝置** 指標]，只會處理 Windows 10 組建1809或更新版本的裝置的活動。 如需設定裝置與內幕風險整合相關的詳細資訊，請參閱下列 [啟用裝置指示器和板載裝置](insider-risk-management-settings.md#OnboardDevices) 一節。
-- **違反安全性原則的指標**：包括來自 Microsoft Defender for Endpoint 的標記，與未核准或惡意軟體安裝相關，或略過安全性控制。 若要在「內幕風險管理」中接收提醒，您必須啟用「使用中的 Defender」「端點授權」和「內部使用者風險整合」。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Microsoft Defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
+- **違反安全性原則的指標**：包括來自 Microsoft Defender for Endpoint 的標記，與未核准或惡意軟體安裝相關，或略過安全性控制。 若要在「內幕風險管理」中接收提醒，您必須啟用「使用中的 Defender」「端點授權」和「內部使用者風險整合」。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Microsoft Defender For endpoint 中設定高級功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 - **風險分數 boosters**：這包括針對非尋常的活動或過去的原則違規，提高風險分數。 啟用風險分數 boosters 會增加風險分數，以及這些類型的活動提醒的可能性。 只有在選取一個或多個指示器時，才能選取風險分數 boosters。
 
 ![有問必答風險管理指示器設定](../media/insider-risk-settings-indicators.png)
@@ -82,7 +82,7 @@ ms.locfileid: "50094764"
 請確認您計畫在「內幕風險管理」中報告的 Windows 10 裝置符合這些需求。
 
 1. 必須執行 Windows 10 x64 組建1809或更新版本，且必須已安裝 [windows 10 更新 (OS 組建 17763.1075) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) 從2月20日2020。
-2. 所有裝置都必須[加入 Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或加入混合式 Azure AD。
+2. 所有裝置都必須[加入 Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join) 或加入混合式 Azure AD。
 3. 在端點裝置上安裝 Microsoft Chromium Edge browser，以監視雲端上傳活動的動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
 #### <a name="step-2-onboarding-devices"></a>步驟2：上架裝置
@@ -92,7 +92,7 @@ ms.locfileid: "50094764"
 
 當您想要的板載裝置尚未架時，您可以下載適當的腳本，並依照下列步驟加以部署。
 
-如果您的裝置已上線至 [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)，這些裝置原本就會出現在 [受管理的裝置] 清單中。 遵循 [步驟3：如果您在下一節中有裝置架至 Microsoft Defender For Endpoint](insider-risk-management-settings.md#OnboardStep3) 。
+如果您的裝置已上線至 [適用於端點的 Microsoft Defender](/windows/security/threat-protection/)，這些裝置原本就會出現在 [受管理的裝置] 清單中。 遵循 [步驟3：如果您在下一節中有裝置架至 Microsoft Defender For Endpoint](insider-risk-management-settings.md#OnboardStep3) 。
 
 在此部署案例中，您將會有尚未架之裝置的板載裝置，而且您只想要在 Windows 10 裝置上監視「有問必答」風險活動。
 
@@ -105,7 +105,7 @@ ms.locfileid: "50094764"
 3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 在您的裝置上線之前，此清單會是空白。
 4. 選擇 **[上線]** 開始上線程序。
 5. 從 [ **部署方法** ] 清單中選擇您想要部署到這些裝置的方式，然後再 **下載套件**。
-6. 按照 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會帶您前往登陸頁面，您可以在其中存取與步驟5中所選部署套件相符的 Microsoft Defender for Endpoint 程式。
+6. 按照 [Windows 10 電腦的上線工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會帶您前往一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
     - 使用群組原則上線 Windows 10 電腦
     - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
     - 使用行動裝置管理工具上線 Windows 10 電腦
@@ -127,7 +127,7 @@ ms.locfileid: "50094764"
 3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 您應該會看到已向適用於端點的 Microsoft Defender 回報的裝置清單。
 4. 如果您需要在其他裝置上架，請選擇 [上 **架** ]。
 5. 從 [ **部署方法** ] 清單中選擇您想要部署到這些裝置的方式，然後再 **下載套件**。
-6. 按照 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會帶您前往登陸頁面，您可以在其中存取與步驟5中所選部署套件相符的 Microsoft Defender for Endpoint 程式。
+6. 按照 [Windows 10 電腦的上線工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會帶您前往一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
     - 使用群組原則上線 Windows 10 電腦
     - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
     - 使用行動裝置管理工具上線 Windows 10 電腦
@@ -184,7 +184,7 @@ ms.locfileid: "50094764"
 
 ### <a name="microsoft-defender-for-endpoint-preview"></a>Microsoft Defender for Endpoint (preview) 
 
-[Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一種企業端點安全性平臺，旨在協助商業網路避免、偵測、調查和回應高級威脅。 若要更好地瞭解組織中的安全性違規，您可以針對來自「內幕人員風險管理安全性違規」原則範本之原則中所使用的活動，匯入並篩選該使用者的 Defender 警示。
+[Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一種企業端點安全性平臺，旨在協助商業網路避免、偵測、調查和回應高級威脅。 若要更好地瞭解組織中的安全性違規，您可以針對來自「內幕人員風險管理安全性違規」原則範本之原則中所使用的活動，匯入並篩選該使用者的 Defender 警示。
 
 視您所感興趣的信號類型而定，您可以選擇根據您的 Defender for Endpoint alert 會審狀態，將警示匯入「內幕人員風險管理」。 您可以在要匯入的全域設定中，定義下列一或多個警示會審狀態：
 
@@ -198,7 +198,7 @@ ms.locfileid: "50094764"
 例如，如果您為此設定選取 [ *新增*]、[ *正在進行*] 及 [ *已解決* ]，則在產生 Microsoft Defender for Endpoint 警示時，當狀態為「 *新*」時，會為使用者匯入「內幕風險」的初始警示活動。 當 Defender for Endpoint 會審狀態變更為 [ *正在進行中*] 時，會為使用者匯入此警示的第二個活動。 設定 *解決* 的最終「端點會審」狀態時，會為使用者匯入此警示的第三個活動。 這項功能可讓調查人員追蹤 Defender for Endpoint 警示的進度，並選擇其調查所需的可見度層級。
 
 >[!IMPORTANT]
->您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
+>您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="domains-preview"></a>網域 (預覽) 
 
@@ -212,7 +212,7 @@ ms.locfileid: "50094764"
 
 ## <a name="export-alerts-preview"></a>匯出提醒 (預覽) 
 
-透過 [Office 365 管理活動 API 架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema)，可將內幕用的風險管理提醒資訊匯出至安全性資訊和事件管理 (SIEM) 服務。 您可以使用 Office 365 管理活動 APIs，將警示資訊匯出至組織可能用來管理或匯總有問必答風險資訊的其他應用程式。
+透過 [Office 365 管理活動 API 架構](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema)，可將內幕用的風險管理提醒資訊匯出至安全性資訊和事件管理 (SIEM) 服務。 您可以使用 Office 365 管理活動 APIs，將警示資訊匯出至組織可能用來管理或匯總有問必答風險資訊的其他應用程式。
 
 若要使用 APIs 查看「內幕風險」警示資訊：
 
@@ -240,7 +240,7 @@ ms.locfileid: "50094764"
 | 狀態 | 警示的狀態。 值是作用中 *(需要* 在「內幕風險」) 中，*調查* (已 *確認* 的內會員風險) *中的 [* 已確定] (，*已解決*) 在「內幕人員風險 *(中**已**解除) 。* |
 | 版本 | 安全性與合規性警示架構的版本。 |
 
-針對 [Office 365 管理活動 API 通用架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)，匯出下欄欄位及值，以取得內部的風險管理提醒。
+針對 [Office 365 管理活動 API 通用架構](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)，匯出下欄欄位及值，以取得內部的風險管理提醒。
 
 - UserId
 - 識別碼
@@ -348,7 +348,7 @@ ms.locfileid: "50094764"
 
 ## <a name="power-automate-flows-preview"></a> (預覽的自動功能流程預覽) 
 
-[Microsoft Power 自動化](https://docs.microsoft.com/power-automate/getting-started) 是一種工作流程服務，可在應用程式和服務間自動執行動作。 您可以使用來自範本或手動建立的流程，來自動化與這些應用程式和服務相關聯的常見工作。 當您為內幕風險管理啟用電源自動化流程時，您可以自動化案例和使用者的重要工作。 您可以設定 Power 自動化流程以取得使用者、警示及案例資訊，並與專案關係人和其他應用程式共用此資訊，以及自動化內幕程式風險管理中的動作，例如：發佈至案例記事。 電源自動化流程適用于案例及原則範圍中的任何使用者。
+[Microsoft Power 自動化](/power-automate/getting-started) 是一種工作流程服務，可在應用程式和服務間自動執行動作。 您可以使用來自範本或手動建立的流程，來自動化與這些應用程式和服務相關聯的常見工作。 當您為內幕風險管理啟用電源自動化流程時，您可以自動化案例和使用者的重要工作。 您可以設定 Power 自動化流程以取得使用者、警示及案例資訊，並與專案關係人和其他應用程式共用此資訊，以及自動化內幕程式風險管理中的動作，例如：發佈至案例記事。 電源自動化流程適用于案例及原則範圍中的任何使用者。
 
 客戶若使用包含「內幕風險管理」的 Microsoft 365 訂閱，則不需要額外的功率自動授權，即可使用建議的「內部使用者風險管理」功能自動化範本。 您可以自訂這些範本，以支援您的組織及涵蓋核心內部使用者風險管理案例。 如果您選擇使用這些範本中的 [高功耗自動功能] 功能，請使用 Microsoft 365 規範連接器建立自訂範本，或在 Microsoft 365 中使用其他法規遵從性區域的 Power features 範本，您可能需要更多電源自動授權。
 
@@ -392,8 +392,8 @@ ms.locfileid: "50094764"
 完成下列步驟，為內部人員風險管理建立自訂的 Power 自動化範本：
 
 1. **檢查您的電源自動化流程授權**：若要建立使用「內部使用者風險管理」觸發器的自訂電源自動化流程，您需要使用電源自動授權。 建議的內部使用者風險管理流程範本不需要額外的授權，而且會包含在您的有問必答風險管理授權中。
-2. **建立自動化流程**：建立流程，該流程會在由內幕人員風險管理事件觸發後執行一或多項工作。 如需如何建立自動流程的詳細資訊，請參閱 [create a flow In Power 自動化](https://docs.microsoft.com/power-automate/get-started-logic-flow)。
-3. **選取 microsoft 365 合規性連接器**：搜尋並選取 microsoft 365 規範連接器。 此連接器啟用內部使用者風險管理觸發器和動作。 如需連接器的詳細資訊，請參閱 [連接器參考概覽](https://docs.microsoft.com/connectors/connector-reference/) 文章。
+2. **建立自動化流程**：建立流程，該流程會在由內幕人員風險管理事件觸發後執行一或多項工作。 如需如何建立自動流程的詳細資訊，請參閱 [create a flow In Power 自動化](/power-automate/get-started-logic-flow)。
+3. **選取 microsoft 365 合規性連接器**：搜尋並選取 microsoft 365 規範連接器。 此連接器啟用內部使用者風險管理觸發器和動作。 如需連接器的詳細資訊，請參閱 [連接器參考概覽](/connectors/connector-reference/) 文章。
 4. **選擇您流程的「有問必答風險管理觸發器**」：「內部使用者風險管理」有兩個可供自訂電源自動化流程使用的觸發器：
     - **針對選取的「內幕風險管理案例**」，可以從「內幕風險管理案例」儀表板頁面中選取使用此觸發器的流程。
     - **針對選取的「內部使用者風險管理」使用者**：可以從「內幕使用者風險管理使用者」儀表板頁面中選取使用此觸發器的流程。
@@ -453,7 +453,7 @@ ms.locfileid: "50094764"
 
 在 Microsoft 團隊啟用內部人員風險管理之後，每次確認提醒並建立案例時，就會建立專屬的 Microsoft 團隊小組。 根據預設，小組會自動納入「 *內部使用者風險管理*」、「 *有問必答風險管理分析師*」和「 *內幕風險管理調查* 人員」角色群組的所有成員， (最多100初始使用者) 。 其他組織參與者可能會在建立之後和適當時，新增至團隊。 在啟用 Microsoft 團隊之前所建立的現有案例中，分析人員和調查人員可以選擇在必要時使用案例中建立新的 Microsoft 團隊團隊。  當您解決「內幕風險管理」中的相關案例後，就會自動將該小組封存 (移至隱藏及唯讀) 。
 
-如需如何在 Microsoft 小組中使用團隊和管道的詳細資訊，請參閱 [Microsoft 小組中的團隊和管道的概述](https://docs.microsoft.com/MicrosoftTeams/teams-channels-overview)。
+如需如何在 Microsoft 小組中使用團隊和管道的詳細資訊，請參閱 [Microsoft 小組中的團隊和管道的概述](/MicrosoftTeams/teams-channels-overview)。
 
 啟用 Microsoft 小組對案例的支援，快速且易於設定。 若要為內部人員風險管理啟用 Microsoft 團隊，請完成下列步驟：
 
@@ -466,7 +466,7 @@ ms.locfileid: "50094764"
 
 如果您在有現有案例後，為「內部人員風險管理」啟用 Microsoft 團隊支援，您必須視需要為每個案例手動建立小組。 在啟用「內幕風險管理」設定中的 Microsoft 團隊支援之後，新案例會自動建立新的 Microsoft 團隊小組。
 
-使用者需要在組織中建立 Microsoft 365 群組的許可權，才能從案例建立 Microsoft 小組小組。 如需管理 Microsoft 365 群組許可權的相關資訊，請參閱 [管理誰可以建立 microsoft 365 群組](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)。
+使用者需要在組織中建立 Microsoft 365 群組的許可權，才能從案例建立 Microsoft 小組小組。 如需管理 Microsoft 365 群組許可權的相關資訊，請參閱 [管理誰可以建立 microsoft 365 群組](/microsoft-365/solutions/manage-creation-of-groups)。
 
 若要為案例建立小組，當您直接在現有案例中工作時，您會使用 [建立 Microsoft 小組] 控制項。 完成下列步驟以建立新的團隊：
 

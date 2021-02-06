@@ -18,19 +18,18 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: 瞭解如何設定 Microsoft 365 Apps 商務版訂閱。
-ms.openlocfilehash: 905a8a69045ed283c0c6e38ab9bc58523fd8bade
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 04a1d4878e1d3d3e16e20a39dbadf2a7d3724e7b
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350256"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126148"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>設定 Microsoft 365 Apps 商務版
 
@@ -88,7 +87,7 @@ ms.locfileid: "48350256"
 
 1. 使用公司或學校帳戶登入。
 
-2. 選取 [安裝]****。
+2. 選取 [安裝]。
 
 需要更詳細的步驟，或想要安裝 64 位元版的 Office 嗎？ 請參閱[逐步安裝指示](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps)。
   
@@ -106,7 +105,7 @@ Microsoft 讓線上檔案儲存變得容易。若要了解最適合貴公司的�
   
 1. 在您的電腦上，使用 [檔案總管] 開啟 OneDrive。 或者，從 [Office 365](https://www.office.com) 的應用程式啟動器開啟 **OneDrive**。
 
-2. 檢視並上傳個人檔案，或選取 [共用]**** 來共用文件或資料夾，然後邀請其他人檢視文件或將連結傳送給他們。 若要深入了解，請參閱[共用 OneDrive 檔案及資料夾](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business)。
+2. 檢視並上傳個人檔案，或選取 [共用] 來共用文件或資料夾，然後邀請其他人檢視文件或將連結傳送給他們。 若要深入了解，請參閱[共用 OneDrive 檔案及資料夾](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business)。
   
 如需更多資訊，請參閱[上傳檔案至文件庫](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0)。
   

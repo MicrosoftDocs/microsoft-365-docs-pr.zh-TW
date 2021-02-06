@@ -14,7 +14,6 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - MET150
@@ -23,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: 瞭解如何管理您自己的 DNS 記錄，或讓 Microsoft 為您管理您的 DNS 記錄。
-ms.openlocfilehash: a22968fdfcdb6be8ecfdc9dde351de034edce4b2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ddf3b7faf7ac336b2d7caf3b7d35d9a4f101b122
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645296"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126356"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>設定您的網域 (主機專用指示)
 

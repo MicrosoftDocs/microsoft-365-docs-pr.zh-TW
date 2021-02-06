@@ -15,14 +15,13 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 description: 在 Microsoft 365 系統管理中心管理這些 Azure 系統管理員角色。
-ms.openlocfilehash: 2295a003fa73cb1805fad3231ff62b37930d0306
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 7a4e28667bc16d6619fe87451cd48ea77d89c81d
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289090"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126102"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的 Azure Active Directory 角色
 
@@ -32,7 +31,7 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 
 ::: moniker range="o365-worldwide"
 
-在 Microsoft 365 系統管理中心中，您可以移至 [角色]****，然後選取任何角色來開啟其詳細資料窗格。 選取 [權限]**** 索引標籤，以檢視系統管理員指派該角色具備權限之工作的詳細清單。 選取 [已指派]**** 或 [指派的系統管理員]**** 索引標籤來將使用者新增至角色。 如需在 Microsoft 365 系統管理中心指派角色的詳細資訊，請參閱[指派系統管理員角色](assign-admin-roles.md)。
+在 Microsoft 365 系統管理中心中，您可以移至 [角色]，然後選取任何角色來開啟其詳細資料窗格。 選取 [權限] 索引標籤，以檢視系統管理員指派該角色具備權限之工作的詳細清單。 選取 [已指派] 或 [指派的系統管理員] 索引標籤來將使用者新增至角色。 如需在 Microsoft 365 系統管理中心指派角色的詳細資訊，請參閱[指派系統管理員角色](assign-admin-roles.md)。
 
 ::: moniker-end
 

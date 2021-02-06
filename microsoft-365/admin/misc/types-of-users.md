@@ -15,7 +15,6 @@ ms.collection:
 - Adm_NonTOC
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -23,16 +22,16 @@ search.appverid:
 ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: '瞭解系統管理中心的使用者類型。 '
-ms.openlocfilehash: b0b0638ee9fb258cfd84bafdc1c09ab691a1d060
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 33f01de9f4e7836ca8137ab248575862fd06fa81
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022200"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126320"
 ---
 # <a name="quick-help-types-of-users"></a>快速說明：使用者類型
 
-在 Microsoft 365 系統管理中心的 [作用中**使用者**] 頁面上，您可以依下列類型的使用者進行篩選。 
+在 Microsoft 365 系統管理中心的 [作用中 **使用者** ] 頁面上，您可以依下列類型的使用者進行篩選。 
   
 |||
 |:-----|:-----|

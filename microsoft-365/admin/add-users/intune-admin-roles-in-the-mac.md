@@ -15,13 +15,13 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
-ms.openlocfilehash: 767cd8dbb44da51f0d26844f761eee7d5862b753
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 48bb0f3d1a3a239025017fda261945094a3eda79
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432450"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126078"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的 Intune 系統管理員角色
 
@@ -33,7 +33,7 @@ Microsoft 365 系統管理中心可讓您管理某些 Microsoft Intune 角色。
 
 ::: moniker range="o365-worldwide"
 
-在 Microsoft 365 系統管理中心中，您可以移至 [角色]****，然後選取任何角色來開啟其詳細資料窗格。 選取 [權限]**** 索引標籤，以檢視系統管理員指派該角色具備權限之工作的詳細清單。 選取 [已指派]**** 或 [指派的系統管理員]**** 索引標籤來將使用者新增至角色。
+在 Microsoft 365 系統管理中心中，您可以移至 [角色]，然後選取任何角色來開啟其詳細資料窗格。 選取 [權限] 索引標籤，以檢視系統管理員指派該角色具備權限之工作的詳細清單。 選取 [已指派] 或 [指派的系統管理員] 索引標籤來將使用者新增至角色。
 
 ::: moniker-end
 

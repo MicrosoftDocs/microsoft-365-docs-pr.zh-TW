@@ -13,12 +13,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e7815dbcfc6129685322a250351276476f8a9e3
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: c45a2733c1fa7cf6d05cff747a9cfcdba1b124cc
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980046"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126160"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>資訊屏障原則的屬性
 
@@ -38,9 +38,9 @@ Azure Active Directory 中的某些屬性可用於分割使用者。 在定義�
 
 2. 請確定使用者帳戶已填入值，以供您在步驟1中選取的屬性 (s) 。 查看使用者帳戶詳細資料，必要時，編輯使用者帳戶以包含屬性值。 
 
-    - 若要編輯多個帳戶 (或使用 PowerShell 編輯單一帳戶) ，請參閱 [Configure user account properties With Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)。
+    - 若要編輯多個帳戶 (或使用 PowerShell 編輯單一帳戶) ，請參閱 [Configure user account properties With Office 365 PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)。
 
-    - 若要編輯單一帳戶，請參閱 [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+    - 若要編輯單一帳戶，請參閱 [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
 3. [使用 PowerShell 定義線段](information-barriers-policies.md#define-segments-using-powershell)，類似下列範例：
 
@@ -91,7 +91,7 @@ Azure Active Directory 中的某些屬性可用於分割使用者。 在定義�
 | UsageLocation | UsageLocation |
 | UserPrincipalName | UserPrincipalName |
 | 郵件 | WindowsEmailAddress |
-| 說明 | 說明 |
+| 描述 | 描述 |
 | MemberOf | MemberOfGroup |
 
 ## <a name="resources"></a>資源

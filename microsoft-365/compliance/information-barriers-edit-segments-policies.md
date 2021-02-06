@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 0d46459f61b29c6bdb457c7e0c82e9147e7709ba
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071278"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126138"
 ---
 # <a name="manage-information-barrier-policies"></a>管理資訊障礙原則
 
@@ -37,7 +37,7 @@ ms.locfileid: "50071278"
 | [疑難排解資訊屏障](information-barriers-troubleshooting.md) | 當您遇到資訊障礙的意外問題時，請參閱本文。 |
 
 > [!IMPORTANT]
-> 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理 (這是一個新的角色！ ) <br><br>若要深入瞭解資訊障礙的必要條件，請參閱 [資訊屏障原則) 的必要條件 (](information-barriers-policies.md#prerequisites)。<br><br> 請務必 [連接至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+> 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理 (這是一個新的角色！ ) <br><br>若要深入瞭解資訊障礙的必要條件，請參閱 [資訊屏障原則) 的必要條件 (](information-barriers-policies.md#prerequisites)。<br><br> 請務必 [連接至安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="edit-user-account-attributes"></a>編輯使用者帳戶屬性
 
@@ -53,9 +53,9 @@ ms.locfileid: "50071278"
 
 3. 編輯一或多個使用者帳戶，以包含您在上一個步驟中選取之屬性的值。 若要採取此動作，請使用下列其中一個程式：
 
-    - 若要編輯單一帳戶，請參閱 [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+    - 若要編輯單一帳戶，請參閱 [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
-    - 若要編輯多個帳戶 (或使用 PowerShell 編輯單一帳戶) ，請參閱 [Configure user account properties With Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)。
+    - 若要編輯多個帳戶 (或使用 PowerShell 編輯單一帳戶) ，請參閱 [Configure user account properties With Office 365 PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)。
 
 ## <a name="edit-a-segment"></a>編輯區段
 

@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.openlocfilehash: dc7c6807e8c89b4146784e5be7f57472777a4c84
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 059e1653d7db9140dbc80fd69fe36e95a744b079
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613327"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126602"
 ---
 # <a name="learn-about-privileged-access-management"></a>了解特殊權限存取管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "49613327"
 
 ## <a name="layers-of-protection"></a>保護層
 
-「特權存取管理」會補充 Microsoft 365 安全架構中的其他資料和存取功能保護。 在安全性整合及分層方法中包含特殊許可權存取管理，可提供一種安全性模型，以最大化保護機密資訊和 Microsoft 365 設定設定。 如圖表中所示，「特權存取管理」會以 Microsoft 365 資料原生加密所提供的保護，以及 Microsoft 365 服務的角色型存取控制安全性模型來建立。 與 [AZURE AD 特權身分識別管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)搭配使用時，這兩個功能會在不同的範圍內，提供即時存取的存取控制。
+「特權存取管理」會補充 Microsoft 365 安全架構中的其他資料和存取功能保護。 在安全性整合及分層方法中包含特殊許可權存取管理，可提供一種安全性模型，以最大化保護機密資訊和 Microsoft 365 設定設定。 如圖表中所示，「特權存取管理」會以 Microsoft 365 資料原生加密所提供的保護，以及 Microsoft 365 服務的角色型存取控制安全性模型來建立。 與 [AZURE AD 特權身分識別管理](/azure/active-directory/active-directory-privileged-identity-management-configure)搭配使用時，這兩個功能會在不同的範圍內，提供即時存取的存取控制。
 
 ![Microsoft 365 中的分層保護](../media/pam-layered-protection.png)
 
@@ -93,7 +93,7 @@ ms.locfileid: "49613327"
 
 ### <a name="how-is-privileged-access-management-related-to-customer-lockbox"></a>授權存取管理與客戶密碼箱的關聯方式如何？
 
-[客戶加密箱](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) 允許 Microsoft 存取資料時，組織的存取控制層級。 「特權存取管理」可讓組織內所有 Microsoft 365 特權工作的精確存取控制。
+[客戶加密箱](/office365/admin/manage/customer-lockbox-requests) 允許 Microsoft 存取資料時，組織的存取控制層級。 「特權存取管理」可讓組織內所有 Microsoft 365 特權工作的精確存取控制。
 
 ## <a name="ready-to-get-started"></a>準備好開始使用了嗎？
 

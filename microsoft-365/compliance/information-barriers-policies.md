@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 284036fecf53252bb29878482dbf6dec42eeeaeb
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 09e680d2bcf8f1e0fd5237adbf640349741c26fd
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071258"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126582"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -59,20 +59,20 @@ ms.locfileid: "50071258"
 
 - 目錄資料-確保您的組織結構反映在目錄資料中。 若要採取此動作，請確定已在 Azure Active Directory (或 Exchange Online) 中正確填入使用者帳戶屬性（如群組成員資格、部門名稱等）。 若要深入了解，請參閱下列資源：
   - [資訊屏障原則的屬性](information-barriers-attributes.md)
-  - [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-  - [使用 Office 365 PowerShell 中設定使用者帳戶屬性](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+  - [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [使用 Office 365 PowerShell 中設定使用者帳戶屬性](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
-- 範圍型目錄搜尋-在您定義組織的第一個資訊障礙原則之前，您必須 [在 Microsoft 小組中啟用範圍型目錄搜尋](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)。 在您設定或定義資訊屏障原則之前，請先等候至少24小時後，再啟用範圍目錄搜尋。
+- 範圍型目錄搜尋-在您定義組織的第一個資訊障礙原則之前，您必須 [在 Microsoft 小組中啟用範圍型目錄搜尋](/MicrosoftTeams/teams-scoped-directory-search)。 在您設定或定義資訊屏障原則之前，請先等候至少24小時後，再啟用範圍目錄搜尋。
 
 - 只有在目標使用者已獲指派 EXO 授權時，EXO 授權 IB 原則才能運作。
 
 - 審核記錄-為了查詢原則應用程式的狀態，必須開啟審核記錄。 建議您先啟用審核，再開始定義區段或原則。 若要深入瞭解，請參閱 [開啟或關閉審核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
-- 無通訊錄原則-在您定義及套用資訊屏障原則之前，請確定沒有任何 Exchange 通訊錄原則存在到位。 資訊障礙是以通訊錄原則為基礎，但這兩種原則不相容。 如果您有這類原則，請務必先 [移除您的通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 一旦資訊障礙原則已啟用，且您已啟用階層式通訊錄，「資訊屏障」區段中的 [所有 *_未包含_* 的使用者] 都會看到 Exchange online 中的 [階層式通訊錄](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) 。
+- 無通訊錄原則-在您定義及套用資訊屏障原則之前，請確定沒有任何 Exchange 通訊錄原則存在到位。 資訊障礙是以通訊錄原則為基礎，但這兩種原則不相容。 如果您有這類原則，請務必先 [移除您的通訊錄原則](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 一旦資訊障礙原則已啟用，且已啟用階層式通訊錄，所有 ***未包含*** 在資訊屏障區段中的使用者，都會在 Exchange online 中看到 [階層式通訊錄](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) 。
 
 - 目前 PowerShell 中，資訊屏障原則是在 Office 365 安全性 & 規範中心使用 PowerShell Cmdlet 來定義及管理。 雖然本文提供了數個範例，但您需要熟悉 PowerShell Cmdlet 及參數。 您也會需要 Azure PowerShell 模組。
-    - [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
-    - [安裝 Azure PowerShell 模組](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
+    - [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
+    - [安裝 Azure PowerShell 模組](/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - 管理員對 Microsoft 小組資訊障礙的同意-當您的原則就緒時，資訊障礙可以從聊天會話中移除人員。 這種設定可協助確保您的組織符合原則及規定。 使用下列程式可讓資訊障礙原則在 Microsoft 小組中如預期的方式運作。
 
@@ -88,7 +88,7 @@ ms.locfileid: "50071258"
 
    2. 出現提示時，使用您的公司或學校帳戶登入 Office 365。
 
-   3. 在 [*要求的許可權*] 對話方塊中，複查資訊，然後選擇 [ **接受**]。
+   3. 在 [ **要求的許可權** ] 對話方塊中，複查資訊，然後選擇 [ **接受**]。
 
 當滿足所有必要條件時，請繼續進行下一節。
 
@@ -118,7 +118,7 @@ ms.locfileid: "50071258"
 決定您的組織目錄資料中所要用來定義段落的屬性。 您可以使用 *部門*、 *MemberOf* 或任何支援的屬性。 請確定您為使用者選取的屬性中有值。 [請參閱資訊障礙的支援屬性清單](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
-> **繼續進行下一節之前，請確定您的目錄資料具有可用於定義區段之屬性的值**。 如果您的目錄資料沒有您想要使用的屬性值，則必須更新使用者帳戶，以包含該資訊，然後再繼續進行資訊障礙。 若要取得這項協助，請參閱下列資源：<br/>- [使用 Office 365 PowerShell 設定使用者帳戶屬性](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **繼續進行下一節之前，請確定您的目錄資料具有可用於定義區段之屬性的值**。 如果您的目錄資料沒有您想要使用的屬性值，則必須更新使用者帳戶，以包含該資訊，然後再繼續進行資訊障礙。 若要取得這項協助，請參閱下列資源：<br/>- [使用 Office 365 PowerShell 設定使用者帳戶屬性](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>使用 PowerShell 定義線段
 

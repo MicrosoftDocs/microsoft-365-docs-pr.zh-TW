@@ -18,19 +18,18 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: 瞭解如何設定 Microsoft 365 商務基本版訂閱。
-ms.openlocfilehash: b40b6a633c9c6c25daa4607c9e05178a1f418c51
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 43ae19b24058429c9276bd44dd4c3960c792ca0d
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350212"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126182"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>設定 Microsoft 365 商務基本版
 
@@ -104,6 +103,6 @@ ms.locfileid: "48350212"
 
 2. 按照精靈中的步驟進行，系統會為您設定電子郵件及其他服務。
 
-    註冊程序完成後，系統會將您導向系統管理中心，您可以在該處新增使用者，以及指派授權。 完成初始安裝後，您可以使用系統管理中心的 [設定] **** 頁面繼續設定和設定訂閱隨附的服務。
+    註冊程序完成後，系統會將您導向系統管理中心，您可以在該處新增使用者，以及指派授權。 完成初始安裝後，您可以使用系統管理中心的 [設定] 頁面繼續設定和設定訂閱隨附的服務。
 
-    如需有關安裝精靈和系統管理中心 [設定]**** 頁面的詳細資訊，請參閱[安裝精靈和設定頁面之間的差異](o365-setup-wizard-and-setup-page.md)。
+    如需有關安裝精靈和系統管理中心 [設定] 頁面的詳細資訊，請參閱[安裝精靈和設定頁面之間的差異](o365-setup-wizard-and-setup-page.md)。

@@ -16,19 +16,18 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft GoDaddy。
-ms.openlocfilehash: fdd8688f848e676411e736a5be10a2d01dcce50b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2b53985dc17f3d124ec2b37dbf0047bce229385c
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658473"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126446"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>在 Microsoft 的 GoDaddy 建立 DNS 記錄
 
@@ -71,7 +70,7 @@ ms.locfileid: "49658473"
 
       ![GoDaddy-BP-Verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
 
 6. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
 
@@ -126,7 +125,7 @@ ms.locfileid: "49658473"
     |:-----|:-----|:-----|:-----|:-----|
     |MX (郵件交換程式)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 小時  <br/> |
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
 
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
@@ -202,7 +201,7 @@ ms.locfileid: "49658473"
 
     ![GoDaddy-BP-Configure-4-1](../../media/7c724f02-c9b3-42ab-b9c0-78959fa6ffad.png)
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
 
 
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
@@ -242,7 +241,7 @@ ms.locfileid: "49658473"
 
 6. 重複 **步驟 5** 以建立其他 SRV 記錄。
 
-7. 選取 **[儲存]**。
+7. 選取 [儲存]。
 
 > [!NOTE]
 > DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。

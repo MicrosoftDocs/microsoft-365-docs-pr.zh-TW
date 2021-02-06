@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 瞭解如何使用 QR 碼來驗證和下載 Outlook mobile。
-ms.openlocfilehash: 2d62a49b93fa7bd5f2d747525de7244e8014e6a7
-ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
+ms.openlocfilehash: b9e433e0c7d3f5f3466924b318e242e5ac29181c
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50050769"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122369"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>使用 QR 碼登錄 Outlook 行動應用程式
 
@@ -42,7 +42,7 @@ ms.locfileid: "50050769"
 2. 您可以使用 PowerShell 來停用通知，告知使用者 Outlook 行動應用程式的相關資訊。 這也會使 QR 碼無法顯示登入流程。
 
 ```powershell
-Set-Organization -MobileAppEducationEnabled <Boolean>
+Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
 相關主題

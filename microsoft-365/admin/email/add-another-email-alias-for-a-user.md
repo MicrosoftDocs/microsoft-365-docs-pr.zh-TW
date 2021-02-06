@@ -15,7 +15,6 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '瞭解您可以如何有一個以上的電子郵件地址，稱為「電子郵件別名」，與您的 Microsoft 365 for business 帳戶相關聯。 '
-ms.openlocfilehash: afb576a0499577b910fe3ed14eff75ae0a52b394
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3c97640f4bb16876ec028a1af2b361a21a0decab
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114030"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126402"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>為使用者新增其他電子郵件別名
 

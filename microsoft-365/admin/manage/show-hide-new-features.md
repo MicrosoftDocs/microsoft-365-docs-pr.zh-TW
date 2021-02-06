@@ -1,14 +1,31 @@
 ---
-title：「管理哪些 Office 功能出現在新功能中」 f1。關鍵字：
-- NOCSH 毫秒。 author： danbrown author： DHB-MSFT 管理員： scotv 物件： Admin 毫秒。主題：文章： o365-管理 localization_priority： Normal 毫秒。集合：
-- M365-訂閱-管理
+title: 管理哪些 Office 功能出現在新功能中
+f1.keywords:
+- NOCSH
+ms.author: danbrown
+author: DHB-MSFT
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
 - Adm_O365
-- Adm_TOC 毫秒。 custom： AdminSurgePortfolio appverid：
+- Adm_TOC
+ms.custom: AdminSurgePortfolio
+search.appverid:
 - BCS160
 - MET150
-- MOE150 描述：「Microsoft 365 系統管理中心」中的「Office 的新功能」功能，當使用者選擇協助 > 在 Windows 上的 Office 應用程式中的新功能時，決定要顯示或隱藏哪些 Office 功能。
+- MOE150
+description: 使用 Microsoft 365 系統管理中心的「Office 的新功能」功能，在使用者選擇協助 > 其 Office 應用程式中的新功能時，決定要顯示或隱藏哪些 Office 功能。
+ms.openlocfilehash: d0b5bc3e643b306d9a38a707fed50ab546249c2b
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122345"
 ---
-
 # <a name="manage-which-office-features-appear-in-whats-new"></a>管理哪些 Office 功能出現在新功能中
 
 當您發佈重要的 Office 功能時，當使用者選擇 [**協助**  >  Windows 上的 office 應用程式 **的新** 功能] 時，將會收到相關訊息。

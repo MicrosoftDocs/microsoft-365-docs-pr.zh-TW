@@ -16,19 +16,18 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 description: '在這裡尋找將網域從 Microsoft 轉接至另一個註冊機構的步驟。 '
-ms.openlocfilehash: 1fb1fa50bd919bddb620a39d9edb46abb6710ba4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f34e9733ab53c8bdc6f4432c96e6232ecc26ee06
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645272"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126344"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>將網域從 Microsoft 轉接至其他主機
 
@@ -57,7 +56,7 @@ ms.locfileid: "48645272"
 
 8. 移至您想要管理功能變數名稱的網域註冊機構網站。 遵循傳送網域的指導 (搜尋以取得其網站的協助) 。 這通常表示支付轉接費用，並將 Authcode 給新的註冊機構，讓他們可以開始進行轉接。 Microsoft 會傳送電子郵件給您，以確認我們已接收到轉接要求，而且網域會在5天內轉接。
 
-    您可以在 Microsoft 365 的 [ **網域**] 頁面上，找到 [授權碼**註冊**] 索引標籤。
+    您可以在 Microsoft 365 的 [ **網域**] 頁面上，找到 [授權碼 **註冊**] 索引標籤。
     
     > [!TIP]
     > uk 網域需要不同的程式。 請聯繫我們的 Microsoft 支援服務，要求 IPS 標籤 **變更** ，以符合您想要管理網域的註冊機構。 一旦標籤變更，網域就會立即傳輸至新的註冊機。 然後您必須與新的註冊機構合作，以完成傳送，很可能會支付轉接費用，並使用新的註冊機構將轉移的網域新增至您的帳戶。
