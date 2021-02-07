@@ -666,6 +666,8 @@
               href: themes-in-advanced-ediscovery.md
             - name: 使用相關性模組來分析資料
               href: using-relevance.md
+            - name: 相關性模組淘汰
+              href: relevance-module-retirement.md
         - name: 匯出案例資料
           href: exporting-data-ediscover20.md
           items:
