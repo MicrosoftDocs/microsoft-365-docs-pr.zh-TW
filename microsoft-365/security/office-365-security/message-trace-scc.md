@@ -7,23 +7,28 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在安全性與合規性中心使用郵件追蹤，以了解郵件發生什麼情況。
-ms.openlocfilehash: 455a1e22ff67ec47e1a6292c962d2a276ec54a64
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1b0c27d8e0f43557be537d6e7c9fa096441cc229
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658985"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150276"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件追蹤
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用對象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="message-trace-features"></a>郵件追蹤功能
 
@@ -87,7 +92,8 @@ ms.locfileid: "49658985"
 
   如需不同報告類型的詳細資訊，請參閱本文中的 [選擇報告類型](#choose-report-type) 一節。
 
-  **注意**：系統會使用封存的郵件追蹤資料來準備 [增強摘要] 和 [延伸] 報告，而且最多可能需要數小時的時間，才能下載您的報告。 根據有多少個其他系統管理員也已同時提交報告要求而定，您可能也會在系統開始處理您的佇列要求前察覺到延遲的情形。
+  > [!NOTE]
+  > 已使用封存的郵件追蹤資料來準備增強的摘要和擴充報告，而且可能需要數小時的時間，您的報告才可供下載。 根據有多少個其他系統管理員也已同時提交報告要求而定，您可能也會在系統開始處理您的佇列要求前察覺到延遲的情形。
 
 - 在 [滑桿] 檢視中儲存查詢會儲存相對的時間範圍 (例如，今天起 3 天之後的日期)。 在 [自訂] 檢視中儲存查詢會儲存絕對的日期/時間範圍 (例如，2018-05-06 13:00 到 2018-05-08 18:00)。
 
@@ -111,7 +117,8 @@ ms.locfileid: "49658985"
 
 - **取得狀態：** 郵件最近是由 Microsoft 365 收到，但其他狀態資料仍無法使用。 請在幾分鐘後再回來查看。
 
-**注意**：只有小於 10 天的搜尋，才能使用 [擱置]、[已隔離] 和 [篩選為垃圾郵件] 這些值。 此外，實際和報告的傳遞狀態之間可能會有 5 到 10 分鐘的延遲。
+> [!NOTE]
+> 僅限超過10天的搜尋才可使用 **擱置中、** **隔離** 及 **篩選的垃圾郵件** 。 此外，實際和報告的傳遞狀態之間可能會有 5 到 10 分鐘的延遲。
 
 #### <a name="message-id"></a>郵件識別碼
 
@@ -129,7 +136,8 @@ ms.locfileid: "49658985"
 
 您可以依據用戶端 IP 位址篩選結果，來調查傳送大量垃圾郵件或惡意程式碼，所以遭到駭客入侵的電腦。 雖然郵件看起來可能像是來自多個寄件者，真實的情況有可能是來自產生所有這些郵件的同一部電腦。
 
-**附註**：用戶端 IP 位址資訊只有在 10 天內可供使用，而且只能在 [增強摘要] 或 [延伸] 報告中取得 (可下載的 CSV 檔案)。
+> [!NOTE]
+> 用戶端 IP 位址資訊只可用於10天，且只有 **增強型摘要** 或 **延伸** 報告 (可供下載的 CSV 檔案) 。
 
 ### <a name="choose-report-type"></a>選擇報告類型
 
@@ -139,11 +147,11 @@ ms.locfileid: "49658985"
 
 - **增強摘要** 或 **延伸**：這些報告僅以可下載的 CSV 檔案形式提供，而且需要下列一或多個篩選選項 (無論時間範圍為何)：[依據這些人]、[給這些人] 或 [郵件識別碼]。 您可以將萬用字元用於寄件者或收件者 (例如，\*@contoso.com)。 增強型摘要報告會傳回最多50000的結果。 延伸報告會傳回最多1000個結果。
 
-**附註**：
-
-- 系統會使用封存的郵件追蹤資料來準備 [增強摘要] 和 [延伸] 報告，而且最多可能需要數小時的時間，才能下載您的報告。 根據有多少個其他系統管理員也已同時提交報告要求而定，您可能也會在系統開始處理您的佇列要求前察覺到延遲的情形。
-
-- 雖然您可以選取任何日期/時間範圍的 [增強摘要] 或 [延伸] 報告，通常將還無法取得這兩種報告類型過去四個小時的封存資料。
+> [!NOTE]
+> 
+> - 系統會使用封存的郵件追蹤資料來準備 [增強摘要] 和 [延伸] 報告，而且最多可能需要數小時的時間，才能下載您的報告。 根據有多少個其他系統管理員也已同時提交報告要求而定，您可能也會在系統開始處理您的佇列要求前察覺到延遲的情形。
+> 
+> - 雖然您可以選取任何日期/時間範圍的 [增強摘要] 或 [延伸] 報告，通常將還無法取得這兩種報告類型過去四個小時的封存資料。
 
 當您按一下 [下一步] 時，會呈現列出您已選取的篩選選項的摘要頁面、唯一 (可編輯) 的報告標題，以及在郵件追蹤完成時接收通知的電子郵件地址 (也可編輯，而且必須位於貴組織的其中一個可接受的網域中)。 按一下 [準備報告] 來提交郵件追蹤。 在主要的 [郵件追蹤] 頁面上，您可以在 [可下載的報告] 區段中查看報告狀態。
 
@@ -217,11 +225,11 @@ ms.locfileid: "49658985"
 
   - **已解析**：根據 Active Directory 查閱，已將郵件重新導向至新的收件者地址。 發生此情況時，原始收件者地址會伴隨著郵件的最終傳遞狀態，出現在郵件追蹤裡的另一列。
 
-  附註：
-
-  - 一封已成功傳遞的普通郵件都會在郵件追蹤中產生多個 [事件] 項目。
-
-  - 這份清單不應詳盡。 如需更多事件的說明，請參閱[郵件追蹤記錄中事件種類](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 請注意，此連結是 Exchange Server (內部部署 Exchange) 主題。
+  > [!NOTE]
+  > 
+  > - 一封已成功傳遞的普通郵件都會在郵件追蹤中產生多個 [事件] 項目。
+  > 
+  > - 這份清單不應詳盡。 如需更多事件的說明，請參閱[郵件追蹤記錄中事件種類](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 請注意，此連結是 Exchange Server (內部部署 Exchange) 主題。
 
 - **其他資訊**：此區段包含下列詳細資料：
 

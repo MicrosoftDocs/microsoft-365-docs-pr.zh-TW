@@ -13,17 +13,21 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 系統管理員可以在安全性 & 合規性中心的郵件流程儀表板中瞭解輸出和輸入郵件流程的洞察力。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e46a0ebf0c14e31462d1e86d8a8d8c08486337af
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: fcce6981369217f21ace5fdf2abbf23ca8606569
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029819"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150805"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>安全性 & 規範中心內的輸出和輸入郵件流程洞察力
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用對象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [安全性 & 合規性中心](https://protection.office.com)內的 [郵件流程儀表板](mail-flow-insights-v2.md)中的 **輸出和輸入郵件流程** 洞察力，結合了 [連接器報告](view-mail-flow-reports.md#connector-report)中的資訊和舊的 **TLS 總覽報告** 中的一個位置。
 
@@ -56,6 +60,6 @@ ms.locfileid: "50029819"
 
 針對 TLS 1.0 連線，您實際上需要將您的電子郵件伺服器或夥伴的伺服器升級或修復，以避免 Microsoft 365 中的 TLS 1.0 支援最後已被取代的任何問題。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

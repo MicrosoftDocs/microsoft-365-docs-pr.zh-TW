@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3d4c72d78fc6a31ec3075d4e7a889e191e639829
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: b810d7b15ef47a33a0675086219d2193cea00f2e
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029371"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145016"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -46,6 +46,8 @@ ms.locfileid: "50029371"
 | `Timestamp` | datetime | 事件記錄的日期和時間。 |
 | `NetworkMessageId` | 字串 | Microsoft 365 產生之電子郵件的唯一識別碼 |
 | `SenderFromAddress` | 字串 | 電子郵件用戶端上的電子郵件收件者看得到 [寄件者] 標題中的寄件者電子郵件地址 |
+| `SenderDisplayName` | 字串 | 顯示在通訊錄中之寄件者的名稱，通常是指定或名字、中間名首字母的組合，以及姓氏或姓的組合 |
+| `SenderObjectId` | 字串 | Azure AD 中寄件者帳戶的唯一識別碼 |
 | `RecipientEmailAddress` | 字串 | 收件者的電子郵件地址，或通訊群組清單展開後之收件者的電子郵件地址 |
 | `RecipientObjectId` | 字串 | Azure AD 中電子郵件收件者的唯一識別碼 |
 | `FileName` | 字串 | 記錄動作已套用的檔案名稱 |
@@ -53,12 +55,10 @@ ms.locfileid: "50029371"
 | `SHA256` | 字串 | 記錄動作已套用的檔案 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
 | `MalwareFilterVerdict` | 字串 | 決定電子郵件是否包含惡意程式碼的電子郵件篩選堆疊：惡意程式碼或非惡意程式碼 |
 | `MalwareDetectionMethod` | 字串 | 用於偵測電子郵件中惡意程式碼的方法：反惡意程式碼引擎、檔信譽、安全附件 |
-| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用。 |
-| `SenderDisplayName` | string | 顯示在通訊錄中之寄件者的名稱，通常是指定或名字、中間名首字母的組合，以及姓氏或姓的組合 |
-| `SenderObjectId` | string | Azure AD 中寄件者帳戶的唯一識別碼 |
 | `ThreatTypes` | string | 從電子郵件篩選棧中判定電子郵件是否包含惡意程式碼、網路釣魚或其他威脅 |
 | `ThreatNames` | string | 找到惡意程式碼或其他威脅的偵測名稱 |
 | `DetectionMethods` | string | 用於偵測電子郵件中所發現之惡意程式碼、網路釣魚或其他威脅的方法 |
+| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用。 |
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

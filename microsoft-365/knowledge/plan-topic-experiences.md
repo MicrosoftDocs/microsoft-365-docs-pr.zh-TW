@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何規劃 Microsoft Viva 主題的計畫
-ms.openlocfilehash: 65983f342b3277d33c7bfeb21d8481b1d3d5e817
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2f7b85399f0b1f49e25aae1f1d4627413594f618
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107951"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150475"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Microsoft Viva 主題的計畫
 
@@ -34,7 +34,7 @@ ms.locfileid: "50107951"
 
 ## <a name="requirements"></a>需求
 
-您必須是全域管理員或 SharePoint 管理員才能存取 Microsoft 365 系統管理中心及設定主題。
+您必須 [訂閱 Viva 主題](https://www.microsoft.com/microsoft-viva/topics) ，以及全域管理員或 SharePoint 管理員，才能存取 Microsoft 365 系統管理中心及設定相關主題。
 
 所有要使用主題的使用者都需要經驗豐富的授權 **主題** 。 在 [設定 Microsoft Viva 主題](set-up-topic-experiences.md)中涵蓋指派授權。
 

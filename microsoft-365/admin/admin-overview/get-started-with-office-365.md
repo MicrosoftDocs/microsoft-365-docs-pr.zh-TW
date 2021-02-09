@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: 瞭解如何在電腦、電話和平板電腦上設定及使用 Microsoft 365。
-ms.openlocfilehash: d3909cdabd0c4f95c44ab5afaf7dba7244bf6eeb
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 437e644190017a0031d7c91d239f5b4f0a8d3773
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142070"
 ---
 # <a name="get-started"></a>入門
 
@@ -38,8 +38,7 @@ ms.locfileid: "44780526"
 
 ****
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/7dbafb22-263b-4544-9774-508728c6e01b?autoplay=false]
-  
+
 ::: moniker-end
 
 ## <a name="training-resources-for-your-users"></a>使用者適用的訓練資源
@@ -63,7 +62,7 @@ ms.locfileid: "44780526"
     
 - 系統[管理](https://docs.microsoft.com/microsoft-365/admin/admin-home)說明：取得有關主要工作、「系統管理工具快速入門」及疑難排解問題的資訊。
     
-- [聯繫支援人員-系統管理](../contact-support-for-business-products.md)說明：致電 us，開啟線上要求，或讓社區協助。 
+- [聯繫支援人員-系統管理](../contact-support-for-business-products.md) 說明：致電 us，開啟線上要求，或讓社區協助。 
     
 ## <a name="related-articles"></a>相關文章
 

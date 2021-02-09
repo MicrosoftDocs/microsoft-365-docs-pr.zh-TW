@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -20,16 +19,21 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解 Microsoft Defender for Office 365 方案中的威脅調查和回應功能。
-ms.openlocfilehash: dc6a3dec096b6834d024cc4ff74a5b7600c33d45
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 32b23dca0d4cb70407ce91a652e458b729b3c12f
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794229"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150733"
 ---
 # <a name="threat-investigation-and-response"></a>威脅調查及回應
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+-    [Microsoft Defender for Office 365 方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 
 [Microsoft Defender For Office 365](office-365-atp.md)中的威脅調查和回應功能可協助安全性分析程式和系統管理員保護組織的 microsoft 365 for business 使用者：

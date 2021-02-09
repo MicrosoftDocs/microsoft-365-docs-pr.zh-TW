@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,17 +18,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的外寄垃圾郵件控制項，以及在您需要傳送大宗郵件時要執行的動作。
-ms.openlocfilehash: 1097b768b955f2fa99c552ceda7564bef33a1aa7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 6d5a82b4a2c7f94b3c5d0958abc8c4552cc04032
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202384"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150685"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>EOP 中的外寄垃圾郵件保護
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用對象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱，我們會認真管理輸出垃圾郵件。 一位客戶有意或無意中傳送來自組織的垃圾郵件，可能會降低整個服務的信譽，並可能影響其他客戶的電子郵件傳遞。
 
@@ -39,11 +44,11 @@ ms.locfileid: "48202384"
 
 - **使用內建通知**：當使用者超過傳送限制的 [服務](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) 或 [輸出垃圾郵件原則](configure-the-outbound-spam-policy.md) ，且限制傳送電子郵件時，名為「 **使用者限制傳送電子郵件** 的預設警示原則」會傳送電子郵件通知給 **TenantAdmins** (**Global admins**) 群組的成員。 若要設定接收這些通知的人員，請參閱 [驗證受限使用者的警示設定](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 此外，已 **超過名稱電子郵件傳送限制** 的預設警示原則，以及 **可疑的電子郵件傳送模式** ，偵測到 **TenantAdmins** (**Global admins**) 群組的成員傳送電子郵件通知。 如需有關警示原則的詳細資訊，請參閱[安全性與合規性中心中的警示原則](../../compliance/alert-policies.md)。
 
-- **複習來自協力廠商電子郵件提供者的垃圾**郵件：許多電子郵件服務（如 Outlook.com、YAHOO 和 AOL）都會提供反應環，在此情況下，如果服務中的任何使用者將 Microsoft 365 中的電子郵件標記為垃圾郵件，則會將郵件打包並送回我們進行審閱。 若要深入瞭解 Outlook.com 的寄件者支援，請移至 <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> 。
+- **複習來自協力廠商電子郵件提供者的垃圾** 郵件：許多電子郵件服務（如 Outlook.com、YAHOO 和 AOL）都會提供反應環，在此情況下，如果服務中的任何使用者將 Microsoft 365 中的電子郵件標記為垃圾郵件，則會將郵件打包並送回我們進行審閱。 若要深入瞭解 Outlook.com 的寄件者支援，請移至 <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> 。
 
 ## <a name="how-eop-controls-outbound-spam"></a>EOP 如何控制輸出垃圾郵件
 
-- **輸出電子郵件流量的隔離**：掃描透過服務傳送的每個輸出郵件是否有垃圾郵件。 如果將郵件決定為垃圾郵件，則會從名為「 _高風險傳遞集_區」的次要、較著名的 IP 位址集區傳遞。 如需詳細資訊，請參閱[外寄郵件的較高風險傳遞集區](high-risk-delivery-pool-for-outbound-messages.md)。
+- **輸出電子郵件流量的隔離**：掃描透過服務傳送的每個輸出郵件是否有垃圾郵件。 如果將郵件決定為垃圾郵件，則會從名為「 _高風險傳遞集_ 區」的次要、較著名的 IP 位址集區傳遞。 如需詳細資訊，請參閱[外寄郵件的較高風險傳遞集區](high-risk-delivery-pool-for-outbound-messages.md)。
 
 - **監視來源 IP 位址信譽**： Microsoft 365 查詢各種協力廠商 ip 封鎖清單。 如果此清單上出現用於輸出電子郵件的任何 IP 位址，就會產生警示。 這樣一來，當垃圾郵件導致信譽降級時，我們就能快速地作出反應。 警示產生時，我們會提供內部檔，說明如何從封鎖清單中移除 delisted)  (的 IP 位址。
 

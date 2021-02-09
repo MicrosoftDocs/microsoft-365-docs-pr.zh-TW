@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何設定 Microsoft Viva 主題
-ms.openlocfilehash: e8cfe1d849ba5df903f377fd001a8d067f80b608
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107880"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150497"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定 Microsoft Viva 主題
 
@@ -23,7 +23,7 @@ ms.locfileid: "50107880"
 
 在您的環境中規劃設定和設定主題的最佳方式是很重要的。 在您開始本文中的程式之前，請務必閱讀 [Microsoft Viva 主題的計畫](plan-topic-experiences.md) 。
 
-您必須是全域管理員或 SharePoint 管理員才能存取 Microsoft 365 系統管理中心及設定主題。
+您必須 [訂閱 Viva 主題](https://www.microsoft.com/microsoft-viva/topics) ，以及全域管理員或 SharePoint 管理員，才能存取 Microsoft 365 系統管理中心及設定相關主題。
 
 ## <a name="video-demonstration"></a>影片示範
 
@@ -35,7 +35,7 @@ ms.locfileid: "50107880"
 
 <br>
 
-## <a name="set-up-topics"></a>設定主題
+## <a name="set-up-topics"></a>設定 [主題]
 
 設定主題
 
@@ -131,7 +131,7 @@ ms.locfileid: "50107880"
 
 2. 選取您要授權的使用者，然後按一下 [ **授權和應用程式**]。
 
-3. 在 [**應用程式**] 底下，請確定已同時選取 [使用索引和 **Viva 主題****搜尋圖形連接器]** 主題。
+3. 在 [**應用程式**] 底下，請確定已同時選取 [使用索引及 **主題體驗** 的 **圖形連接器搜尋]** 。
 
 4. 按一下 **[儲存變更]**。
 

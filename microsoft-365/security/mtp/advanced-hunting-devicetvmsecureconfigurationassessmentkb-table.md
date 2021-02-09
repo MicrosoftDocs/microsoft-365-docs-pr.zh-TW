@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 DeviceTvmSecureConfigurationAssessmentKB 表格
 description: 在進階搜捕結構描述之 DeviceTvmSecureConfigurationAssessmentKB 表格中，了解由威脅與弱點管理評估的各種安全性設定。
-keywords: 進層搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參照、kusto、表格、欄、資料類型、描述、威脅 & 弱點管理、TVM、裝置管理、安全性組塊、MITRE ATT&CK 架構、知識庫、KB、DeviceMicmSecureConfigurationAssesmentKB
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，table，欄，資料類型，描述，威脅 & 漏洞管理，TVM，裝置管理，安全性設定，MITRE ATT&CK framework，知識庫，KB，DeviceTvmSecureConfigurationAssessmentKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4cd23b8f3ba99b38264b9bf1ba18e8ec2574bab6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cf4204767843b9a9e0b0bbfecc2d3fc50db531fc
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145448"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -51,8 +51,8 @@ ms.locfileid: "49931059"
 | `ConfigurationCategory` | 字串 | 設定所屬的類別或群組：應用程式、作業系統、網路、帳戶、安全性控制|
 | `ConfigurationSubcategory` | string |設定所屬的子類別或子群組。 在許多情況下，這會描述特定性能或功能。 |
 | `ConfigurationBenchmarks` | 字串 | 行業效能評定清單建議相同或類似的設定 |
-| `RelatedMitreTechniques` | 字串 | 與設定相關的 Mitre ATT&CK 架構技術清單 |
-| `RelatedMitreTactics ` | 字串 | 與設定相關的 Mitre ATT&CK 架構技巧清單 |
+| `Tags` | 字串 | 代表用來識別或分類安全性設定之各種屬性的標籤 |
+| `RemediationOptions` | string | 建議的動作可減少或解決任何相關聯的風險 |
 
 ## <a name="related-topics"></a>相關主題
 

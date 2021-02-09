@@ -14,25 +14,29 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用安全性 & 規範中心內郵件流程儀表板中的最上層網域郵件流程狀態，來疑難排解與其 MX 記錄相關的郵件流程問題。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 457675e7f32cd513f5593ede53a64aaef9d54904
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: df0f571d29d72b23e7b2e210b61a4fb1676175aa
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029903"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150204"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>安全性 & 規範中心內的最上層網域郵件流程狀態洞察力
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用對象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [安全性 & 合規性中心](https://protection.office.com)內的 [郵件流程儀表板](mail-flow-insights-v2.md)中的 **最上層網域郵件流程狀態**，可讓您在組織中取得目前的郵件流程狀態。
 
-這種洞察力可協助您識別及疑難排解出現 **_郵件流程_* _ 問題的網域。 例如，網域無法接收外部電子郵件，因為網域已到期或網域的 MX 記錄不正確。
+這種洞察力可協助您識別及疑難排解出現 ***郵件流程*** 問題的網域。 例如，網域無法接收外部電子郵件，因為網域已到期或網域的 MX 記錄不正確。
 
 ![安全性 & 規範中心內郵件流程儀表板中的上方網域流程狀態構件](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-當您按一下構件中的 [*查看詳細資料*] 時，會出現 [ **網域狀態** ] 快顯視窗，顯示每個網域狀態的詳細資訊：
+當您按一下小工具中的 [ **查看詳細資料** ] 時，會出現一個 **網域狀態** 快顯視窗，顯示每個網域狀態的詳細資訊：
 
 - **網域**
 - **先前的 MX 記錄**
@@ -46,6 +50,6 @@ ms.locfileid: "50029903"
 
 ![最上層網域郵件流程狀態洞察力中的詳細資料快顯視窗](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

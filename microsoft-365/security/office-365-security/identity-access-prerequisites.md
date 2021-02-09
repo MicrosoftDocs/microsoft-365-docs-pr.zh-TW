@@ -19,18 +19,23 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: df09f72e8bb5aee78ca4b45ce2804774ee16cbf2
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: e411eaa7874dee710cbb21dd02a4edd383003def
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142094"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
 本文說明系統管理員必須符合以使用建議的身分識別和裝置存取原則，以及使用條件式存取的必要條件。 此外，本文也會討論設定最佳單一登入 (SSO) 體驗的用戶端平臺的建議預設值。
 
 ## <a name="prerequisites"></a>必要條件
+
+**適用對象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- Azure
 
 在使用建議的身分識別與裝置存取原則之前，您的組織必須符合必要條件。 針對所列的各種身分識別和驗證模型，需求各有不同：
 

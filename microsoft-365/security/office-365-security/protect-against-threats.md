@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: 09/08/2020
 search.appverid:
@@ -19,17 +18,23 @@ ms.collection:
 - m365initiative-defender-office365
 description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護，並設定如何將它用於您的組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2951d5725237d572d357ac3fc6cff0ac4df7e8f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: cb2866fd3e60c021ae89ffabe7149f4b415d63bc
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794433"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150709"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用對象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 以下是將 Office 365 的 Defender 設定分解成區塊的快速入門手冊。 如果您是 Office 365 中威脅防護功能的新功能，請不要確定開始的位置，或者，如果您想要 *這麼做*，請使用本指導方針做為檢查清單和開始點。
 
@@ -55,8 +60,8 @@ ms.locfileid: "49794433"
 |反垃圾郵件保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |電子郵件的零小時自動清除 () |[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |保護電子郵件和 Office 檔中的惡意 URLs 和檔案 (安全連結和安全附件) |[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的 ATP|[適用于 Office 的 Defender 365 ](atp-for-spo-odb-and-teams.md)|
-|高級反網路釣魚保護|[適用於 Office 365 的 Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的安全附件|[適用于 Office 的 Defender 365 ](atp-for-spo-odb-and-teams.md)|
+|高級反網路釣魚保護|[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色及權限
 
@@ -167,7 +172,7 @@ ms.locfileid: "49794433"
      - 在 [ **安全附件未知惡意程式碼回應** ] 區段中，選擇 [ **封鎖**]。
      - 在 [重新 **導向附件** ] 區段中，選取 [ **啟用重新導向**] 選項。 指定組織的安全性系統管理員或操作員的電子郵件地址，誰會檢查偵測到的檔案。
 
-     按 **[下一步]**。
+     按 [下一步 **]**。
 
 3. 在 [套用 **至**] 頁面上，按一下 [**新增條件**]，然後選擇 [套用者 **：收件者網域是**]，按一下 [**新增**]，選取您的網域，按一下 [**新增**]，按一下 [**完成**]，然後按 **[下一步**
 
@@ -183,7 +188,7 @@ ms.locfileid: "49794433"
    - **當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
    - **不要讓使用者點擊 [安全連結至原始 URL**]：確認已開啟此設定： ![ 開啟開啟 ](../../media/scc-toggle-on.png) 。
 
-   完成後，請按一下 **[儲存]**。
+   完成後，按一下 [儲存 **]**。
 
 2. 回到 [主要安全連結] 頁面上，按一下 [ **建立**]。
 
@@ -207,7 +212,7 @@ ms.locfileid: "49794433"
 
 若要深入了解，請參閱[設定安全連結原則](set-up-atp-safe-links-policies.md)。
 
-## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第5部分-確認 SharePoint、OneDrive 和 Microsoft 團隊的 ATP 已開啟
+## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第5部分-確認 SharePoint、OneDrive 和 Microsoft 小組的安全附件已開啟
 
 SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立的。 使用適用于 Office 的 Defender 365 可協助封鎖和偵測在小組網站和文件庫中識別為惡意的檔案。 您可以在 [這裡](atp-for-spo-odb-and-teams.md)進一步閱讀該功能的詳細資訊。
 
@@ -216,7 +221,7 @@ SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立�
 
 1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，然後按一下 [ **通用設定**]。
 
-2. 驗證 **SharePoint、OneDrive 和 Microsoft 團隊** 切換功能的開啟 ATP 是否為右對齊： ![ 切換開啟]，然後按一下 [ ](../../media/scc-toggle-on.png) **儲存**]。
+2. 驗證 **SharePoint、OneDrive 和 Microsoft 團隊切換功能的 [開啟 Defender For Office 365** ] 是否正確： ![ 切換開啟] ](../../media/scc-toggle-on.png) ，然後按一下 [ **儲存**]。
 
 3. 檢閱 (並視需要編輯) 組織的 [[安全附件原則]](set-up-atp-safe-attachments-policies.md) 和 [[安全連結原則]](set-up-atp-safe-links-policies.md)。
 

@@ -7,7 +7,6 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,21 +15,21 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: 自動化的事件回應、調查、修正及威脅防護
-ms.date: 11/05/2020
+ms.date: 01/29/2021
 description: 請參閱 Office 365 的 Microsoft Defender 中的自動化調查和回應功能的運作方式
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 5ca9ea941d073c7b199678631a9063cfbeae8907
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 97cc2f6bcb066ff2d6f64254add3a57eb27b8828
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142546"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應運作方式
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 在某些情況下，安全性作業小組可能感覺到所觸發的警示數量所淹沒。 Microsoft Defender for Office 365 中 (AIR) 功能的自動化調查和回應可提供協助。
 
@@ -93,7 +92,4 @@ Microsoft Defender for Office 365 中的 AIR 功能包括 [報告 & 詳細資料
 ## <a name="next-steps"></a>後續步驟
 
 - [開始使用 AIR](office-365-air.md)
-
-- [流覽 Microsoft 365 藍圖，以查看已計畫及即將發行的專案](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-
-- [深入瞭解 Microsoft 365 Defender 中的自動化調查和回應功能](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [查看擱置中或已完成的修復動作](air-review-approve-pending-completed-actions.md)

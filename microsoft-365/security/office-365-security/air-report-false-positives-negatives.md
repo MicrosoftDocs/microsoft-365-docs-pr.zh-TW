@@ -3,7 +3,7 @@ title: 如何在 Microsoft Defender for Office 365 中報告自動調查的誤�
 description: Microsoft Defender for Office 365 中的 AIR 是否已錯過或錯誤地偵測到什麼？ 瞭解如何將誤報或錯誤否定提交給 Microsoft 進行分析。
 keywords: 自動化，調查，警示，觸發器，動作，修正，誤報，誤報，false 負數
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,36 +11,34 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 09/29/2020
+ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom:
 - autoir
-ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.openlocfilehash: 4ccc023a72ca450b1f0a433410206ccce59cb5f1
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142972"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自動化調查和回應功能中報告誤報/負片
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-
 適用於：
-- Microsoft Defender for Office 365
+- 適用於 Office 365 的 Microsoft Defender
 
-[自動調查和回應 (Office 365 中的 AIR) 功能](automated-investigation-response-office.md)是否漏掉或錯誤地偵測到某項功能？ 您可以採取一些步驟加以修正。 您可以：
+如果 [自動調查和回應 (Office 365 未接或誤偵測功能的空氣) 功能](automated-investigation-response-office.md) ，您的安全性運作小組可以採取這些步驟來修正問題。 這類動作包括：
 
 - [向 Microsoft 報告誤報/負數](#report-a-false-positivenegative-to-microsoft-for-analysis)
-- 視需要[調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring) () ;和
-- [復原採取的修復動作](#undo-a-remediation-action)。
+- 在需要時[調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring) () ;和
+- 復原[採取的修復動作](#undo-a-remediation-action)。
 
 使用本文做為指南。
 
@@ -58,7 +56,7 @@ ms.locfileid: "49616173"
 
 ## <a name="undo-a-remediation-action"></a>復原修正動作
 
-在大多數情況下，如果對電子郵件訊息、電子郵件附件或 URL 採取修正動作，而該專案實際上不是威脅，則您的安全作業小組可以復原修正動作，並採取步驟以避免定期誤報。 您可以使用 [威脅瀏覽器](#undo-an-action-using-threat-explorer) 或 [ [動作]](#undo-an-action-using-the-actions-tab-for-an-investigation) 索引標籤進行調查，以復原動作。
+在大多數情況下，如果對電子郵件訊息、電子郵件附件或 URL 採取修正動作，而該專案實際上不是威脅，則您的安全作業小組可以復原修正動作，並採取步驟以避免定期誤報。 您可以使用 [威脅瀏覽器](#undo-an-action-using-threat-explorer) 或 [ [動作]](#undo-an-action-in-the-action-center) 索引標籤進行調查，以復原動作。
 
 > [!IMPORTANT]
 > 在嘗試執行下列工作之前，請先確定您具備必要的許可權。
@@ -67,32 +65,23 @@ ms.locfileid: "49616173"
 
 透過威脅瀏覽器，您的安全性運作小組可以找到動作所影響的電子郵件，並可能復原動作。
 
-****
-
 |案例|復原選項|深入了解|
 |---|---|---|
-|將電子郵件路由傳送至使用者的 [垃圾郵件] 資料夾|<ul><li>將郵件移至使用者的 [刪除的郵件] 資料夾</li><li>將郵件移至使用者的收件匣</li><li>刪除郵件</li></ul>|[尋找並調查 Office 365 中傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)|
-|已隔離的電子郵件訊息或檔|<ul><li>發行電子郵件或檔案</li><li>刪除電子郵件或檔</li></ul>|[以系統管理員身分管理被隔離的郵件](manage-quarantined-messages-and-files.md)|
+|將電子郵件路由傳送至使用者的 [垃圾郵件] 資料夾|-將郵件移至使用者的 [刪除的郵件] 資料夾<br/>-將郵件移至使用者的收件匣<br/>-刪除郵件|[尋找並調查 Office 365 中傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)|
+|已隔離的電子郵件訊息或檔|-發行電子郵件或檔案<br/>-刪除電子郵件或檔|[以系統管理員身分管理被隔離的郵件](manage-quarantined-messages-and-files.md)|
 |
 
-### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>使用調查的 [動作] 索引標籤復原動作
+### <a name="undo-an-action-in-the-action-center"></a>復原動作中心的動作
 
 在「行動中心」中，您可以看到已採取的修復動作，並可能復原動作。
 
-1. 移至 <https://protection.office.com> 並登入。 這會帶您前往安全性 & 規範中心。
+1. 請移至 Microsoft 365 的安全性中心 ([https://security.microsoft.com](https://security.microsoft.com)) 。
+2. 在功能窗格中，選取 [ **動作中心**]。 
+3. 選取 [ **記錄** ] 索引標籤，以查看已完成的動作清單。
+4. 選取專案。 其快顯視窗隨即開啟。 
+5. 在快顯視窗中，選取 [ **復原**]。  (只有可復原的動作才能具有 [ **復原** ] 按鈕。 ) 
 
-2. 移至 **威脅管理** \> **調查**。
+## <a name="see-also"></a>另請參閱
 
-3. 在調查清單中，選取專案識別碼旁邊的 [ **在新視窗中開啟]** 圖示。
-
-4. 選取 [ **動作** ] 索引標籤。
-
-5. 選取狀態為 [**已完成**] 的專案，然後在 [**決策**] 欄中尋找連結（如「**已核准**」）。 這會開啟快顯視窗，包含動作的詳細資料。
-
-6. 若要復原動作，請選取 [ **刪除修正**]。
-
-## <a name="related-articles"></a>相關文章
-
-[Microsoft Defender for Office 365](office-365-atp.md)
-
-[Microsoft Defender for Office 365 中的空氣](office-365-air.md)
+- [適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
+- [Microsoft Defender for Office 365 中的自動調查](office-365-air.md)

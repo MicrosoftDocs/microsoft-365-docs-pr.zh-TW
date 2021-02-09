@@ -12,17 +12,21 @@ ms.assetid: ''
 description: 系統管理員可以瞭解如何使用「安全性 & 規範中心」中郵件流程儀表板中的新網域，以調查他們的使用者是否要將郵件轉寄給已永不轉寄的外部網域。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb44f5d577d18fc38333cca5e8d2d862f288a2e0
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: a4429f1657861091082fdfaedb52c85cec3a0cc1
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029855"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150595"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心轉寄電子郵件的新網域
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用對象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 將電子郵件轉寄給特定網域中的外部收件者，有一些有效的商業原因。 不過，當組織中的使用者突然開始將郵件轉送至一個網域，而您的組織中沒有任何人曾經轉送郵件給 (新網域) 時，這是可疑的。
 

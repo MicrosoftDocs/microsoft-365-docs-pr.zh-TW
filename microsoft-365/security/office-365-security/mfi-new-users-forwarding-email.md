@@ -12,17 +12,21 @@ ms.assetid: ''
 description: 系統管理員可以瞭解如何使用「安全性 & 規範中心」中的新使用者轉寄電子郵件，以調查組織中的使用者將郵件轉寄給新網域的時間。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af991cb0af20a0f48bc5283d4e4fb26ea75d6ba6
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 7b86d726979991a55e7d4e43bf3581a4a664ee4f
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029867"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150252"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新的使用者在安全性 & 合規性中心轉寄電子郵件洞察力
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用對象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 當您組織中的新使用者帳戶突然開始將電子郵件轉送至外部網域時，它會是可疑的。
 

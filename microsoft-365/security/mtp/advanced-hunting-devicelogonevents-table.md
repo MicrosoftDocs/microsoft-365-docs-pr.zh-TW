@@ -1,7 +1,7 @@
 ---
-title: 進位搜尋架構中的 DeviceLogonEvents 資料表
-description: 瞭解進位搜尋架構的 DeviceLogonEvents 資料表中的驗證或登登事件
-keywords: 進層搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參照、kusto、表格、欄、資料類型、描述、logonevents、DeviceLogonEvents、驗證、登入、登入
+title: Advanced 搜尋架構中的 DeviceLogonEvents 表格
+description: 深入瞭解高級搜尋架構的 DeviceLogonEvents 資料表中的驗證或登入事件
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，資料表，欄，資料類型，描述，logonevents，DeviceLogonEvents，authentication，logon，登入
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3a5666cc106365876956c8e313f9cd2f5a996e6f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 60455c0a66548654da52544e3d7ece84aecb9cf3
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145436"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -37,10 +37,10 @@ ms.locfileid: "49931227"
 
 
 
-進 `DeviceLogonEvents` 位搜尋架構 [中的](advanced-hunting-overview.md) 表格包含使用者標誌及裝置上的其他驗證事件相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `DeviceLogonEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含有關裝置上使用者登入和其他驗證事件的資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
-> 有關事件種類及資料 (資料) 值的詳細資訊，請使用安全性中心內建的架構 `ActionType` 參考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -52,33 +52,38 @@ ms.locfileid: "49931227"
 | `ActionType` | string |觸發事件的活動類型 |
 | `AccountDomain` | string | 帳戶的網域 |
 | `AccountName` | string | 帳戶的使用者名稱 |
-| `AccountSid` | string | 帳戶 (安全性) SID 識別碼 |
-| `LogonType` | string | 登入會話的類型，特別是：<br><br> - **互動** - 使用者會使用本機鍵盤和螢幕與電腦進行實際互動<br><br> - **遠端互動式 (RDP)** 標誌 - 使用者會使用遠端桌面、終端機服務、遠端協助或其他 RDP 用戶端，與電腦進行遠端互動<br><br> - **網路** - 當使用 PsExec 存取電腦時，或當電腦上的共用資源 ，例如印表機和共用資料夾存取時初始化的會話<br><br> - **批次** - 由排程任務啟動的會話<br><br> - **服務** - 服務啟動時所啟動的會話<br> |
-| `LogonId` | string | 登入會話的識別碼。 只有在重新開機之間，此識別碼才在同一部電腦上是唯一的 |
-| `RemoteDeviceName` | string | 在受影響電腦上執行遠端作業的機器名稱。 根據報告的事件，此名稱可能是完整功能變數名稱 (FQDN) 、NetBIOS 名稱或不含網域資訊的主機名稱 |
+| `AccountSid` | string | 帳戶的安全性識別碼 (SID)  |
+| `Protocol` | string | 通訊期間使用的通訊協定 |
+| `FailureReason` | string | 說明錄製的動作失敗原因的資訊 |
+| `LogonType` | string | 登入會話的類型，特別：<br><br> - **互動式** 使用者會使用本機鍵盤和畫面，以實際方式與機器互動<br><br> - **遠端互動 (RDP)** 登入-使用者利用遠端桌面、終端機服務、遠端協助或其他 RDP 用戶端從遠端與機器互動<br><br> - 使用 PsExec 存取機器時，或在機器上共用資源（如印表機和共用資料夾）存取時，所啟動的 **網路** 會話<br><br> - 由排程任務所啟動的 **批次** 會話<br><br> - **服務** -啟動時由服務啟動的會話<br> |
+| `LogonId` | string | 登入會話的識別碼。 只有在重新開機時，此識別碼在同一部電腦上是唯一的 |
+| `RemoteDeviceName` | string | 在受影響的機器上執行遠端作業的機器名稱。 根據所報告的事件，此名稱可以是完整功能變數名稱 (FQDN) 、NetBIOS 名稱或沒有網域資訊的主機名稱。 |
 | `RemoteIP` | 字串 | 連線到的 IP 位址 |
-| `RemoteIPType` | string | IP 位址類型，例如公用、私人、保留、Loopback、Teredo、FourToSixMapping 和 Broadcast |
-| `RemotePort` | int | 正在連接之遠端裝置上的 TCP 埠 |
-| `AdditionalFields` | string | 以 JSON 陣列格式顯示之事件的其他資訊 |
-| `InitiatingProcessAccountDomain` | string | 執行負責事件之程式之帳戶的網域 |
-| `InitiatingProcessAccountName` | string | 執行負責事件之程式之帳戶的使用者名稱 |
-| `InitiatingProcessAccountSid` | string | 執行 (之) 之帳戶的安全性識別碼為 SID |
-| `InitiatingProcessIntegrityLevel` | string | 初始化事件之程式的完整性層級。 Windows 會依據特定特性指派完整性層級給程式，例如從網際網路下載啟動程式。 這些完整性等級會影響資源的許可權 |
-| `InitiatingProcessTokenElevation` | string | 指出使用者存取控制存在或不存在的權杖類型 (UAC) 許可權提高已應用至初始化事件的流程 |
-| `InitiatingProcessSHA1` | string | 初始化活動的影像 (的 SHA-1) 影像檔案 |
-| `InitiatingProcessSHA256` | string | 初始化事件的 (的 SHA-256) 影像檔案。 此欄位通常無法填出，請使用 SHA1 欄 |
-| `InitiatingProcessMD5` | string | 初始化活動的 (圖像) MD5 雜湊 |
-| `InitiatingProcessFileName` | string | 初始化事件之程式的名稱 |
-| `InitiatingProcessId` | int | 程式識別碼 (初始化) 的 PID 值 |
-| `InitiatingProcessCommandLine` | string | 用來執行初始化事件的流程的命令列 |
-| `InitiatingProcessCreationTime` | datetime | 啟動事件之程式開始的日期和時間 |
-| `InitiatingProcessFolderPath` | string | 啟動事件之 (圖像) 的資料夾 |
-| `InitiatingProcessParentId` | int | 程式識別碼 (產生) 事件之父流程的 PID 值 |
-| `InitiatingProcessParentFileName` | string | 指定事件所負責之程式之父程式的名稱 |
-| `InitiatingProcessParentCreationTime` | datetime | 事件負責之程式父項開始的日期和時間 |
-| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一事件，此欄必須與 DeviceName 和 Timestamp 資料行一起使用 |
+| `RemoteIPType` | string | IP 位址的類型，例如 Public、Private、Reserved、環回、Teredo、FourToSixMapping 及廣播 |
+| `RemotePort` | int | 連線的遠端裝置上的 TCP 埠 |
+| `AdditionalFields` | string | 有關 JSON 陣列格式之事件的其他資訊 |
+| `InitiatingProcessFileSize` | long | 執行事件處理常式的檔案大小 |
+| `InitiatingProcessAccountDomain` | string | 執行負責事件之處理常式之帳戶的網域 |
+| `InitiatingProcessAccountName` | string | 負責事件之處理常式的帳戶使用者名稱 |
+| `InitiatingProcessAccountSid` | string | 執行事件負責處理之帳戶的安全性識別碼 (SID)  |
+| `InitiatingProcessAccountUpn` | string | 執行事件負責之帳戶的使用者主要名稱 (UPN)  |
+| ` InitiatingProcessAccountObjectId` | string | 執行負責事件之處理常式之使用者帳戶的 Azure AD 物件識別碼 |
+| `InitiatingProcessIntegrityLevel` | string | 啟動事件之處理常式的完整性層級。 Windows 會根據特定的特性，例如從網際網路下載啟動，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
+| `InitiatingProcessTokenElevation` | string | 指出是否存在使用者存取控制的 Token 類型 (UAC) 許可權提升會套用至啟動事件的程式。 |
+| `InitiatingProcessSHA1` | string | 啟動事件) 的處理常式 (映射檔 SHA-1 |
+| `InitiatingProcessSHA256` | string | 啟動事件) 的處理常式 (映射檔 SHA-256。 通常不會填入此欄位，可使用 SHA1] 欄位 |
+| `InitiatingProcessMD5` | string | 啟動事件之程式 (映射檔) 的 MD5 雜湊 |
+| `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
+| `InitiatingProcessId` | int | 啟動事件之程式的進程識別碼 (PID)  |
+| `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
+| `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |
+| `InitiatingProcessFolderPath` | string | 包含初始化事件之處理 (映射檔) 程式的資料夾 |
+| `InitiatingProcessParentId` | int | 產生負責事件之處理常式之父進程的進程識別碼 (PID)  |
+| `InitiatingProcessParentFileName` | string | 產生負責事件之處理常式的父進程名稱 |
+| `InitiatingProcessParentCreationTime` | datetime | 啟動事件之處理常式的父項時的日期和時間 |
+| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
 | `AppGuardContainerId` | string | Application Guard 用來隔離瀏覽器活動的虛擬容器識別碼 |
-| `IsLocalAdmin` | 布林值 | 使用者是否在電腦本機系統管理員的布林值指示器 |
+| `IsLocalAdmin` | 布林值 | 布林值指標，表示使用者是否為電腦上的本機系統管理員 |
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

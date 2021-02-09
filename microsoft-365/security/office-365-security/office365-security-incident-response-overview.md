@@ -11,24 +11,29 @@ ms.topic: overview
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: 此解決方案會告訴您，在 Microsoft 365 中最常見的 cybersecurity 攻擊可能如您所述，以及如何回應它們
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 221303d43620e89b8200392961d8aa0916c82763
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 8dd7a90255fdd3e083a5d7306cac2e9ca6411024
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198700"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150180"
 ---
 # <a name="security-incident-response"></a>安全性事件回應
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用對象**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
  **摘要：** 此解決方案會告訴您 Office 365 中最常見的 cybersecurity 攻擊的指示器為何，如何正確確認任何指定的攻擊，以及如何對其作出回應。
 
