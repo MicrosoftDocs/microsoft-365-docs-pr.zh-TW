@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 12/15/2016
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,17 +17,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解 Microsoft 365 如何使用寄件者原則框架 (的 SPF) TXT 記錄，以確保目的地電子郵件系統信任從您的自訂網域傳送的郵件。
-ms.openlocfilehash: c437793a63f3869573b023cbcd9420e4d3c3b554
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b6b79957f84e660fe952f88dab18d8934937d875
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196104"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167524"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 如何使用寄件者原則架構 (SPF) 來防止詐騙
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
  **摘要：** 本文說明 Microsoft 365 如何使用 DNS 中的寄件者原則框架 (SPF) TXT 記錄，以確保目的地電子郵件系統信任從您的自訂網域傳送的郵件。 這適用于從 Microsoft 365 傳送的輸出郵件。 從 Microsoft 365 傳送給 Microsoft 365 內之收件者的郵件，將永遠會透過 SPF。
 
@@ -157,9 +162,9 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
 
 - **ip4** 表示您正在使用 IP 版本 4 位址。 **ip6** 表示您正在使用 IP 版本 6 位址。 如果您使用 IPv6 IP 位址，請將本文範例中的 **ip4** 換成 **ip6**。 您也可以使用 CIDR 表示法來指定 IP 位址範圍，例如 **ip4:192.168.0.1/26**。
 
-- 「IP 位址」__ 是您要新增至 SPF TXT 記錄的 IP 位址。 通常，這是貴組織的外寄郵件伺服器的 IP 位址。 您可以列出多個外寄郵件伺服器。 如需詳細資訊，請參閱 [範例：多個輸出內部部署郵件伺服器和 Microsoft 365 的 SPF TXT 記錄](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365)。
+- 「IP 位址」是您要新增至 SPF TXT 記錄的 IP 位址。 通常，這是貴組織的外寄郵件伺服器的 IP 位址。 您可以列出多個外寄郵件伺服器。 如需詳細資訊，請參閱 [範例：多個輸出內部部署郵件伺服器和 Microsoft 365 的 SPF TXT 記錄](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365)。
 
-- 「網域名稱」__ 是您要新增為合法寄件者的網域。 如需您應為 Microsoft 365 包含的功能變數名稱清單，請參閱 [SPF 所需的外部 DNS 記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。
+- 「網域名稱」是您要新增為合法寄件者的網域。 如需您應為 Microsoft 365 包含的功能變數名稱清單，請參閱 [SPF 所需的外部 DNS 記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。
 
 - 強制規則通常為下列其中一項：
 
@@ -214,7 +219,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.ou
 
 您只能為您的自訂網域建立一筆 SPF TXT 記錄。 建立多筆記錄會導致循環配置情況，且 SPF 會失敗。 若要避免這種情況，您可以為每個子網域建立不同的記錄。 例如，為 contoso.com 建立一筆記錄，並為 bulkmail.contoso.com 建立另一筆記錄。
 
-如果電子郵件在傳遞前造成超過 10 個 DNS 查閱，則接收郵件伺服器將會以永久性錯誤 (也稱為 permerror__) 回應，並導致該郵件未通過 SPF 檢查。 接收伺服器也可能會以包含類似以下錯誤的未傳遞回報 (NDR) 回應：
+如果電子郵件在傳遞前造成超過 10 個 DNS 查閱，則接收郵件伺服器將會以永久性錯誤 (也稱為 permerror) 回應，並導致該郵件未通過 SPF 檢查。 接收伺服器也可能會以包含類似以下錯誤的未傳遞回報 (NDR) 回應：
 
 - 郵件超過躍點計數。
 

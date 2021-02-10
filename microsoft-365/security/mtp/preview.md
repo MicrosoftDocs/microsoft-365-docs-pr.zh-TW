@@ -20,51 +20,52 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ce0f1ae41b57db398c7ec84e078897a7345c1b9a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 9156025990e8da61006ac1d3b81a71be5580e00c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930075"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167380"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender 預覽功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!IMPORTANT]
->預覽版未提供服務等級協定，不建議用於生產環境工作負載。 某些功能可能不受支援，或可能具有限制功能。
+>預覽版本不會提供任何服務等級協定，不建議用於實際執行工作負載。 某些功能可能不受支援，或可能具有有限的功能。
 
 適用於：
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 服務會持續更新，以包含新的功能增強和功能。
+Microsoft 365 Defender 服務會不斷更新，以包含新功能增強功能及功能。
 
-瞭解 Microsoft 365 Defender 預覽版中的新功能，並開啟預覽體驗，成為第一個嘗試即將推出的功能之一。
+深入瞭解 Microsoft 365 Defender preview 版中的新功能，並透過開啟預覽體驗，以嘗試即將推出的功能。
 
-有關通常可用的新功能詳細資訊，請參閱 [Microsoft 365 Defender 的新增功能](whats-new.md)。
+如需一般可用之新功能的詳細資訊，請參閱 [Microsoft 365 Defender 的新](whats-new.md)功能。
 
 ## <a name="turn-on-preview-features"></a>開啟預覽功能
-您可以存取即將推出的功能，在功能一般可用之前，提供您的意見回饋，協助改善整體體驗。
+您將可以存取即將推出的功能，您可以在其中提供意見反應，以協助改善整體體驗，使其成為一般可用功能。
 
 開啟預覽體驗設定，成為第一批嘗試即將推出的功能的人。
 
 1. 在功能窗格中，選取 **[設定]**。
 
-2. 選取 **Microsoft 365 Defender。**
-
+2. 選取 [ **Microsoft 365 Defender**]。
 
 3. 選取 **預覽功能** > **開啟預覽功能**。 
 
-3. 選取 **[儲存]**。
+4. 選取 **[儲存]**。
 
 當您看到 **[開啟預覽功能]** 核取方塊已選取時，您就會知道您已開啟預覽功能。 
 
 ## <a name="preview-features"></a>預覽功能
 目前預覽版提供下列功能和增強功能：
 
-- **[Microsoft 365 Defender API](api-overview.md)** - lop 等級的 Microsoft 365 Defender API 將能依據共用事件和進一步搜尋資料表，將工作流程自動化。 
-- **[在進一步搜尋中採取行動](advanced-hunting-take-action.md)**—快速包含威脅或處理在進一步搜尋時找到的入侵 [資產](advanced-hunting-overview.md)。
-- **[入口網站架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**：直接在安全性中心取得進位搜尋架構資料表的資訊。 除了資料表與資料行描述之外，此參照還包含支援的事件種類 (查詢) `ActionType` 範例查詢。
-- **[DeviceFromIP ()](advanced-hunting-devicefromip-function.md)** 函數 — 取得特定時間範圍內哪些裝置已被指派特定 IP 位址或位址的資訊。
+### <a name="improved-microsoft-365-security-center"></a>改進的 Microsoft 365 安全中心
+改良的 [Microsoft 365 安全性中心](https://security.microsoft.com)現在可供公開預覽。 這種新的經驗會將 Defender、Office 365 的 Defender、Microsoft 365 Defender 等，帶入 Microsoft 365 的安全性中心。 這是管理安全性控制的新家用。 [了解新功能](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)。
 
-
+- **[Microsoft 365 Defender 威脅分析報告](threat-analytics.md)** -威脅分析可協助您回應並將主動攻擊的影響降至最低。 您也可以瞭解 Microsoft 365 Defender 解決方案所封鎖的攻擊嘗試，並採取預防措施，緩解進一步披露及提高恢復的風險。 在統一的安全性體驗中，威脅分析現在可用於 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 授權持有者。
+- **[Microsoft 365 Defender APIs](api-overview.md)** -最上層的 Microsoft 365 Defender APIs 可讓您根據共用的事件和高級搜尋表格來自動化工作流程。 
+- **[在高級搜尋中採取動作](advanced-hunting-take-action.md)**：快速包含威脅或您在 [ [高級搜尋](advanced-hunting-overview.md)] 中找到的受損資產。
+- **[In 入口架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**-直接在「安全性中心」中取得高級搜尋架構表格的相關資訊。 除了資料表和欄描述之外，此參考還包含支援的事件種類 (`ActionType` 值) 和範例查詢。
+- **[DeviceFromIP ( # A1 函數](advanced-hunting-devicefromip-function.md)**-取得在指定的時間範圍內指派特定 IP 位址或位址的相關資訊。

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何執行腳本，將商務網站的信箱 & OneDrive 新增至與 Microsoft 365 規範中心內的 eDiscovery 案例相關聯的新保留。
-ms.openlocfilehash: 72fd9b8e7b63b36399d055e2eb710e8b53967e44
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 278e8e051165eca906e9b454268068cbbe6aef05
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126436"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175572"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>使用腳本將使用者新增至核心 eDiscovery 案例中的保留
 
@@ -81,9 +81,9 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 當您在此步驟中執行腳本時，它會提示您輸入下列資訊。 在執行腳本之前，請務必準備好此資訊。
   
-- **您的使用者認證：** 腳本會使用您的認證，以遠端 PowerShell 連接至安全性 & 合規性中心。 它也會使用這些認證來存取 SharePoint 線上，以取得使用者清單的商務用 OneDrive URLs。
+- **您的使用者認證：** 腳本會使用您的認證，以使用 PowerShell 與安全性 & 合規性中心相連。 它也會使用這些認證來存取 SharePoint 線上，以取得使用者清單的商務用 OneDrive URLs。
 
-- 「**我的網站」網域的名稱：**「我的網站網域」是一個網域，包含您組織中的所有商務網站 OneDrive。 例如，如果「我的網站」網域的 URL 是 **https://contoso-my.sharepoint.com** ，  `contoso` 當腳本提示您輸入「我的網站」網域的名稱時，您就會輸入。
+- **SharePoint 網域的名稱：** 腳本會提示您輸入此名稱，以便連接至 SharePoint 系統管理中心。 它也會在您的組織中使用 OneDrive URLs 的功能變數名稱。 例如，如果系統管理中心的 URL 是 `https://contoso-admin.sharepoint.com` 和 OneDrive 的 url `https://contoso-my.sharepoint.com` ，則 `contoso` 當腳本提示您輸入功能變數名稱時，就會輸入該 url。
 
 - **案例名稱：** 現有案例的名稱。 此腳本會建立與此案例相關聯的新保留。
 

@@ -8,21 +8,24 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 深入瞭解獨立 Exchange Online Protection 中的工作所需的許可權
-ms.openlocfilehash: ae43dc2223b17d3b73f9b76fa6bde8fb9cb95e77
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 4f1f364e684f2d1d76f26f573e66fbd50bf5138b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202864"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167392"
 ---
 # <a name="permissions-in-standalone-eop"></a>獨立版 EOP 中的權限
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+-  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 獨立 Exchange Online Protection (EOP) 沒有 Exchange Online 信箱時，會使用以角色為基礎的存取控制 (RBAC) 許可權模型，以輕鬆授與許可權給您的系統管理員。 您可以使用獨立 EOP 中的許可權功能，快速地讓新組織正常運作。
 
@@ -50,20 +53,20 @@ ms.locfileid: "48202864"
 
 |角色群組|描述|已指派預設角色|
 |---|---|---|
-|ComplianceManagement|設定及管理組織內的規範設定，包括資料遺失防護 (DLP) （如果您的訂閱具有 DLP 功能）。 <br/><br/> Azure AD 中的 [合規性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) 角色成員會自動取得此角色群組的許可權。|稽核記錄 <br/><br/> 合規性管理 <br/><br/> 資訊版權管理 <br/><br/> 保留管理 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視組態 <br/><br/> 僅限檢視收件者|
+|ComplianceManagement|設定及管理組織內的規範設定，包括資料遺失防護 (DLP) （如果您的訂閱具有 DLP 功能）。 <p> Azure AD 中的 [合規性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) 角色成員會自動取得此角色群組的許可權。|稽核記錄 <p> 合規性管理 <p> 資訊版權管理 <p> 保留管理 <p> 僅限檢視稽核記錄 <p> 僅限檢視組態 <p> 僅限檢視收件者|
 |ContentExplorerContentViewer|不會使用。|資料分類內容檢視器|
 |ContentExplorerListViewer|不會使用。|資料分類清單檢視器|
-|HelpDesk|查看和管理郵件使用者。|重設密碼 <br/><br/> 使用者選項 <br/><br/> 僅限檢視收件者|
-|HygieneManagement|管理保護功能 (反垃圾郵件、反惡意程式碼等 ) 。|傳輸衛生 <br/><br/> 僅限檢視組態 <br/><br/> 僅限檢視收件者|
-|MailFlowAdministrator|查看及管理公認的網域和連接器|遠端和公認的網域 <br/><br/> 僅限檢視收件者|
-|OrganizationManagement|整個組織的系統管理員存取權，以及執行幾乎任何工作的功能。 <br/><br/> Azure AD 中 [全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 角色的成員會自動取得此角色群組的許可權。 <br/><br/> **重要**：由於 OrganizationManagement 角色群組是功能強大的角色，因此只有執行組織層級管理工作的使用者才應成為這個角色群組的成員。|軟體 <br/><br/> 反垃圾郵件 <br/><br/> 稽核記錄 <br/><br/> 合規性系統管理員 <br/><br/> 動態通訊群組 <br/><br/> 資訊版權管理 <br/><br/> 建立郵件收件者 <br/><br/> 郵件收件者 <br/><br/> 郵件追蹤 <br/><br/> 移轉 <br/><br/> 組織用戶端存取 <br/><br/> 組織組態 <br/><br/> 組織傳輸設定 <br/><br/> 隔離 <br/><br/> 收件者原則 <br/><br/> 遠端和公認的網域 <br/><br/> 重設密碼 <br/><br/> 保留管理 <br/><br/> 角色管理 <br/><br/> 安全性系統管理員 <br/><br/> 安全性群組建立和成員資格 <br/><br/> 安全性讀取者 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 監督 <br/><br/> 傳輸衛生 <br/><br/> 傳輸規則 <br/><br/> 使用者選項 <br/><br/> View-Only 反惡意程式碼 <br/><br/> View-Only 反垃圾郵件 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視組態 <br/><br/> View-Only 隔離 <br/><br/> 僅限檢視收件者 <br/><br/> View-Only 威脅情報|
+|HelpDesk|查看和管理郵件使用者。|重設密碼 <p> 使用者選項 <p> 僅限檢視收件者|
+|HygieneManagement|管理保護功能 (反垃圾郵件、反惡意程式碼等 ) 。|傳輸衛生 <p> 僅限檢視組態 <p> 僅限檢視收件者|
+|MailFlowAdministrator|查看及管理公認的網域和連接器|遠端和公認的網域 <p> 僅限檢視收件者|
+|OrganizationManagement|整個組織的系統管理員存取權，以及執行幾乎任何工作的功能。 <p> Azure AD 中 [全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 角色的成員會自動取得此角色群組的許可權。 <p> **重要**：由於 OrganizationManagement 角色群組是功能強大的角色，因此只有執行組織層級管理工作的使用者才應成為這個角色群組的成員。|軟體 <p> 反垃圾郵件 <p> 稽核記錄 <p> 合規性系統管理員 <p> 動態通訊群組 <p> 資訊版權管理 <p> 建立郵件收件者 <p> 郵件收件者 <p> 郵件追蹤 <p> 移轉 <p> 組織用戶端存取 <p> 組織組態 <p> 組織傳輸設定 <p> 隔離 <p> 收件者原則 <p> 遠端和公認的網域 <p> 重設密碼 <p> 保留管理 <p> 角色管理 <p> 安全性系統管理員 <p> 安全性群組建立和成員資格 <p> 安全性讀取者 <p> 敏感度標籤系統管理員 <p> 監督 <p> 傳輸衛生 <p> 傳輸規則 <p> 使用者選項 <p> View-Only 反惡意程式碼 <p> View-Only 反垃圾郵件 <p> 僅限檢視稽核記錄 <p> 僅限檢視組態 <p> View-Only 隔離 <p> 僅限檢視收件者 <p> View-Only 威脅情報|
 |QuarantineAdministrator|管理所有收件者的隔離郵件。|隔離|
-|RecipientManagement|建立、管理及移除組織中的收件者物件。|動態通訊群組 <br/><br/> 建立郵件收件者 <br/><br/> 郵件收件者 <br/><br/> 郵件追蹤 <br/><br/> 移轉 <br/><br/> 收件者原則 <br/><br/> 重設密碼|
-|RecordsManagement|設定符合性功能，例如保留原則標記、郵件分類和郵件流程規則 (也稱為傳輸規則) 。|郵件追蹤 <br/><br/> 保留管理 <br/><br/> 傳輸規則|
-|SecurityAdministrator|設定組織中的所有保護方面 (反垃圾郵件、反惡意程式碼、反欺騙、隔離等等 ) 。 <br/><br/> Azure AD 中的 [安全性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色成員會自動取得此角色群組的許可權。|軟體 <br/><br/> 反垃圾郵件 <br/><br/> 稽核記錄 <br/><br/> 隔離 <br/><br/> 安全性系統管理員 <br/><br/> 敏感度標籤系統管理員 <br/><br/> View-Only 反惡意程式碼 <br/><br/> View-Only 反垃圾郵件 <br/><br/> 僅限檢視稽核記錄 <br/><br/> View-Only 隔離 <br/><br/> View-Only 威脅情報|
-|SecurityReader|僅可供查看組織中的所有保護方面 (反垃圾郵件、反惡意程式碼、反欺騙、隔離等 ) 的存取權。 <br/><br/> Azure AD 中的 [安全性讀者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) 角色成員會自動取得此角色群組的許可權。|安全性讀取者 <br/><br/> View-Only 反惡意程式碼 <br/><br/> View-Only 反垃圾郵件 <br/><br/> View-Only 隔離 <br/><br/> View-Only 威脅情報|
+|RecipientManagement|建立、管理及移除組織中的收件者物件。|動態通訊群組 <p> 建立郵件收件者 <p> 郵件收件者 <p> 郵件追蹤 <p> 移轉 <p> 收件者原則 <p> 重設密碼|
+|RecordsManagement|設定符合性功能，例如保留原則標記、郵件分類和郵件流程規則 (也稱為傳輸規則) 。|郵件追蹤 <p> 保留管理 <p> 傳輸規則|
+|SecurityAdministrator|設定組織中的所有保護方面 (反垃圾郵件、反惡意程式碼、反欺騙、隔離等等 ) 。 <p> Azure AD 中的 [安全性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色成員會自動取得此角色群組的許可權。|軟體 <p> 反垃圾郵件 <p> 稽核記錄 <p> 隔離 <p> 安全性系統管理員 <p> 敏感度標籤系統管理員 <p> View-Only 反惡意程式碼 <p> View-Only 反垃圾郵件 <p> 僅限檢視稽核記錄 <p> View-Only 隔離 <p> View-Only 威脅情報|
+|SecurityReader|僅可供查看組織中的所有保護方面 (反垃圾郵件、反惡意程式碼、反欺騙、隔離等 ) 的存取權。 <p> Azure AD 中的 [安全性讀者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) 角色成員會自動取得此角色群組的許可權。|安全性讀取者 <p> View-Only 反惡意程式碼 <p> View-Only 反垃圾郵件 <p> View-Only 隔離 <p> View-Only 威脅情報|
 |TenantAdmins|這個角色群組中的成員資格能跨服務同步，且為集中管理的。 根據預設，此角色群組不會被指派任何角色。 不過，它會是「組織管理」角色群組的成員，並會繼承這些許可權。|無|
-|ViewOnlyOrganizationManagement|查看組織中的收件者、保護和設定物件及其屬性。|合規性系統管理員 <br/><br/> 安全性系統管理員 <br/><br/> 安全性讀取者 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 僅限檢視組態 <br/><br/> 僅限檢視收件者|
+|ViewOnlyOrganizationManagement|查看組織中的收件者、保護和設定物件及其屬性。|合規性系統管理員 <p> 安全性系統管理員 <p> 安全性讀取者 <p> 敏感度標籤系統管理員 <p> 僅限檢視組態 <p> 僅限檢視收件者|
 |
 
 如果您在只有少數系統管理員的小型組織中工作，您可能只需要將這些使用者新增至組織管理角色群組，而且您可能永遠不需要使用其他角色群組。 如果您在較大的組織中工作，則可能會有管理員執行特定工作，例如收件者設定。 在這種情況下，您可能會將一個系統管理員新增至 [收件者管理] 角色群組，並將另一個系統管理員新增至組織管理角色群組。 這些系統管理員可以管理其特定區域，但不會有管理其不負責之區域的許可權。
@@ -78,43 +81,43 @@ ms.locfileid: "48202864"
 
 |Role * *|描述|預設角色群組指派|
 |---|---|---|
-|軟體|查看及修改反惡意程式碼功能的設定和報告。|OrganizationManagement <br/><br/> SecurityAdministrator|
-|反垃圾郵件|查看及修改反垃圾郵件功能的設定和報告。|OrganizationManagement <br/><br/> SecurityAdministrator|
-|稽核記錄|搜尋系統管理員的審計記錄檔，然後查看結果。|ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> SecurityAdministrator|
-|合規性管理員<sup>\*</sup>||ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> ViewOnlyOrganizationManagement|
+|軟體|查看及修改反惡意程式碼功能的設定和報告。|OrganizationManagement <p> SecurityAdministrator|
+|反垃圾郵件|查看及修改反垃圾郵件功能的設定和報告。|OrganizationManagement <p> SecurityAdministrator|
+|稽核記錄|搜尋系統管理員的審計記錄檔，然後查看結果。|ComplianceManagement <p> OrganizationManagement <p> SecurityAdministrator|
+|合規性管理員<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement <p> ViewOnlyOrganizationManagement|
 |資料分類內容檢視器<sup>\*</sup>||ContentExplorerContentViewer|
 |資料分類清單檢視器<sup>\*</sup>||
-|動態通訊群組|建立及管理所有通訊群組、擁有郵件功能的安全性群組和成員。|OrganizationManagement <br/><br/> RecipientManagement|
-|資訊版權管理<sup>\*</sup>||ComplianceManagement <br/><br/> OrganizationManagement|
-|建立郵件收件者|建立及移除郵件使用者。|OrganizationManagement <br/><br/> RecipientManagement|
-|郵件收件者|修改現有的郵件使用者。|OrganizationManagement <br/><br/> RecipientManagement|
-|郵件追蹤<sup>\*</sup>||OrganizationManagement <br/><br/> RecipientManagement <br/><br/> 記錄管理|
-|遷移<sup>\*</sup>||OrganizationManagement <br/><br/> RecipientManagement|
-|MyBaseOptions|允許使用者查看其專屬的隔離郵件。 <br/><br/> 這個角色會自動指派給使用者，而且您無法手動指派。|無|
+|動態通訊群組|建立及管理所有通訊群組、擁有郵件功能的安全性群組和成員。|OrganizationManagement <p> RecipientManagement|
+|資訊版權管理<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement|
+|建立郵件收件者|建立及移除郵件使用者。|OrganizationManagement <p> RecipientManagement|
+|郵件收件者|修改現有的郵件使用者。|OrganizationManagement <p> RecipientManagement|
+|郵件追蹤<sup>\*</sup>||OrganizationManagement <p> RecipientManagement <p> 記錄管理|
+|遷移<sup>\*</sup>||OrganizationManagement <p> RecipientManagement|
+|MyBaseOptions|允許使用者查看其專屬的隔離郵件。 <p> 這個角色會自動指派給使用者，而且您無法手動指派。|無|
 |組織用戶端存取<sup>\*</sup>||OrganizationManagement|
 |組織組態|檢視報告。|OrganizationManagement|
 |組織傳輸設定<sup>\*</sup>||OrganizationManagement|
-|隔離|管理所有收件者的所有類型的隔離郵件。|OrganizationManagement <br/><br/> QuarantineAdministrator <br/><br/> SecurityAdministrator|
-|收件者原則<sup>\*</sup>||OrganizationManagement <br/><br/> RecipientManagement|
-|遠端和公認的網域|管理遠端網域、公認的網域和連接器。|MailFlowAdministrator <br/><br/> OrganizationManagement|
-|重設密碼<sup>\*</sup>||HelpDesk <br/><br/> OrganizationManagement <br/><br/> RecipientManagement|
-|保留管理<sup>\*</sup>||ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> RecordsManagement|
+|隔離|管理所有收件者的所有類型的隔離郵件。|OrganizationManagement <p> QuarantineAdministrator <p> SecurityAdministrator|
+|收件者原則<sup>\*</sup>||OrganizationManagement <p> RecipientManagement|
+|遠端和公認的網域|管理遠端網域、公認的網域和連接器。|MailFlowAdministrator <p> OrganizationManagement|
+|重設密碼<sup>\*</sup>||HelpDesk <p> OrganizationManagement <p> RecipientManagement|
+|保留管理<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement <p> RecordsManagement|
 |角色管理|建立及管理角色群組。|OrganizationManagement|
-|安全性系統管理員|管理所有安全性和保護功能的設定和報告。|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> ViewOnlyOrganizationManagement|
+|安全性系統管理員|管理所有安全性和保護功能的設定和報告。|OrganizationManagement <p> SecurityAdministrator <p> ViewOnlyOrganizationManagement|
 |安全性群組建立和成員資格|建立和管理擁有郵件功能的安全性群組。|OrganizationManagement|
-|安全性讀取者|查看安全性和保護功能的設定和報告。|組織管理 <br/><br/> SecurityReader <br/><br/> ViewOnlyOrganizationManagement|
-|敏感度標籤管理員<sup>\*</sup>||OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> ViewOnlyOrganizationManagement|
+|安全性讀取者|查看安全性和保護功能的設定和報告。|組織管理 <p> SecurityReader <p> ViewOnlyOrganizationManagement|
+|敏感度標籤管理員<sup>\*</sup>||OrganizationManagement <p> SecurityAdministrator <p> ViewOnlyOrganizationManagement|
 |監督<sup>\*</sup>||OrganizationManagement|
-|傳輸衛生|管理反惡意程式碼、反垃圾郵件功能和反欺騙功能。|HygieneManagement <br/><br/> OrganizationManagement|
-|傳輸規則|建立及管理郵件流程規則 (也稱為傳輸規則) 。|OrganizationManagement <br/><br/> RecordsManagement|
-|使用者選項|修改現有的郵件使用者。|HelpDesk <br/><br/> OrganizationManagement|
-|View-Only 反惡意程式碼|查看反惡意程式碼功能的設定和報告。|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|View-Only 反垃圾郵件|查看反垃圾郵件功能的設定和報告。|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|僅限檢視稽核記錄|搜尋系統管理員的審計記錄檔，然後查看結果。|ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> SecurityAdministrator|
-|僅限檢視組態|查看組織中的所有組織和郵件流程 (非收件者) 設定。|ComplianceManagement <br/><br/> HygieneManagement <br/><br/> OrganizationManagement <br/><br/> ViewOnlyOrganizationManagement|
-|View-Only 隔離|查看所有收件者的所有隔離郵件。|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|僅限檢視收件者|View 收件者屬性並執行郵件追蹤。|ComplianceManagement <br/><br/> HelpDesk <br/><br/> HygieneManagement <br/><br/> MailFlowAdministrator <br/><br/>  OrganizationManagement <br/><br/> ViewOnlyOrganizationManagement|
-|View-Only 威脅情報<sup>\*</sup>||OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
+|傳輸衛生|管理反惡意程式碼、反垃圾郵件功能和反欺騙功能。|HygieneManagement <p> OrganizationManagement|
+|傳輸規則|建立及管理郵件流程規則 (也稱為傳輸規則) 。|OrganizationManagement <p> RecordsManagement|
+|使用者選項|修改現有的郵件使用者。|HelpDesk <p> OrganizationManagement|
+|View-Only 反惡意程式碼|查看反惡意程式碼功能的設定和報告。|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|View-Only 反垃圾郵件|查看反垃圾郵件功能的設定和報告。|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|僅限檢視稽核記錄|搜尋系統管理員的審計記錄檔，然後查看結果。|ComplianceManagement <p> OrganizationManagement <p> SecurityAdministrator|
+|僅限檢視組態|查看組織中的所有組織和郵件流程 (非收件者) 設定。|ComplianceManagement <p> HygieneManagement <p> OrganizationManagement <p> ViewOnlyOrganizationManagement|
+|View-Only 隔離|查看所有收件者的所有隔離郵件。|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|僅限檢視收件者|View 收件者屬性並執行郵件追蹤。|ComplianceManagement <p> HelpDesk <p> HygieneManagement <p> MailFlowAdministrator <p>  OrganizationManagement <p> ViewOnlyOrganizationManagement|
+|View-Only 威脅情報<sup>\*</sup>||OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
 |
 
 <sup>\*</sup> 雖然此角色可用，但在獨立 EOP 中基本上不會有任何作用。
@@ -133,7 +136,7 @@ ms.locfileid: "48202864"
 |Microsoft 365 角色|EOP 角色群組|
 |---|---|
 |Exchange 系統管理員|OrganizationManagement|
-|全域系統管理員|OrganizationManagement <br/><br/> **附注**：全域系統管理員角色和 OrganizationManagement 角色群組會使用特殊的「公司系統管理員」角色群組進行結合。 公司系統管理員角色群組是在內部管理，且無法直接修改。|
+|全域系統管理員|OrganizationManagement <p> **附注**：全域系統管理員角色和 OrganizationManagement 角色群組會使用特殊的「公司系統管理員」角色群組進行結合。 公司系統管理員角色群組是在內部管理，且無法直接修改。|
 |密碼管理員|HelpDesk|
 |全域讀取者|ViewOnlyOrganizationManagement|
 |安全性系統管理員|SecurityAdministrator|
@@ -152,6 +155,6 @@ ms.locfileid: "48202864"
 
 - 在 Exchange Online PowerShell 中， \<Role Group Name\> 以角色群組的名稱取代，並執行下列命令，以確認角色群組存在 (或不存在) 並確認設定：
 
-    ```PowerShell
-    Get-RoleGroup -Identity "<Role Group Name>" | Format-List
-    ```
+  ```PowerShell
+  Get-RoleGroup -Identity "<Role Group Name>" | Format-List
+  ```

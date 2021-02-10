@@ -19,12 +19,12 @@ description: 深入瞭解 Microsoft Defender for Office 365 方案2中自動調�
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: bcff8f12133ea16e3d91e293943be1593eaf9659
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 3fb77fa41ff3e9af995cf80b9f4024aa92a51212
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142690"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176012"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在 Office 365 中複查及管理修正動作
 
@@ -35,6 +35,10 @@ ms.locfileid: "50142690"
 - 關閉外部郵件轉發
 
 除非安全運作小組批准，否則不會採取這些修復動作。 我們建議您儘快檢查及核准任何擱置的動作，以便您的自動化調查能夠及時完成。 在某些情況下，您可以復原修復動作。
+
+**適用於**
+- [Microsoft Defender for Office 365 方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="approve-or-reject-pending-actions"></a>核准 (或拒絕) 擱置的動作
 

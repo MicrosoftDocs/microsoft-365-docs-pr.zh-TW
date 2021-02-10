@@ -1,5 +1,5 @@
 ---
-title: 適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
+title: 適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.date: ''
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -22,24 +21,30 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 深入瞭解 Microsoft Defender for Office 365，以瞭解 SharePoint Online 中的檔案、商務 OneDrive，以及 Microsoft 團隊。
-ms.openlocfilehash: 7b007671a7fecb3ae074fd07ce38d17fb025f6b4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 640867cb38dab650bca990fe36c0b7cea7f6a0d8
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844329"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175724"
 ---
-# <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
+# <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Microsoft Defender For Office 365](office-365-atp.md)中 SharePoint、OneDrive 和 Microsoft 小組的 ATP 為[microsoft 365 中的常見病毒偵測引擎](virus-detection-in-spo.md)，針對在上傳時已掃描的檔案，提供額外的保護層級。 SharePoint、OneDrive 和 Microsoft 團隊的 ATP 可協助偵測和封鎖在小組網站和文件庫中識別為惡意的現有檔案。
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-預設不會啟用 SharePoint、OneDrive 和 Microsoft 團隊的 ATP。 若要將其開啟，請參閱 [開啟 ATP 的 SharePoint、OneDrive 和 Microsoft 團隊](turn-on-atp-for-spo-odb-and-teams.md)。
+[Microsoft Defender For Office 365](office-365-atp.md)中 SharePoint、OneDrive 和 Microsoft 小組的安全附件，為[microsoft 365 中的常見病毒偵測引擎](virus-detection-in-spo.md)，針對在上傳時已掃描的檔案，提供額外的保護層級。 SharePoint、OneDrive 和 Microsoft 團隊的安全附件可協助偵測和封鎖在小組網站和文件庫中識別為惡意的現有檔案。
 
-## <a name="how-atp-for-sharepoint-onedrive-and-microsoft-teams-works"></a>SharePoint、OneDrive 和 Microsoft 小組的 ATP 的運作方式
+預設不會啟用 SharePoint、OneDrive 和 Microsoft 小組的安全附件。 若要將其開啟，請參閱 [開啟安全附件的 SharePoint、OneDrive 和 Microsoft 團隊](turn-on-atp-for-spo-odb-and-teams.md)。
 
-當 SharePoint、OneDrive 和 Microsoft 團隊的 ATP 已啟用並將檔案識別為惡意時，會使用與檔案存放區的直接整合，鎖定檔案。 下列影像顯示文件庫中偵測到的惡意檔案範例。
+## <a name="how-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-works"></a>SharePoint、OneDrive 和 Microsoft 小組的安全附件的運作方式
+
+啟用 SharePoint、OneDrive 和 Microsoft 小組的安全附件，並將檔案識別為惡意時，會使用直接整合與檔案存放區來鎖定檔案。 下列影像顯示文件庫中偵測到的惡意檔案範例。
 
 ![商務用 OneDrive 中的檔案，偵測到其中一個是惡意檔案](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
@@ -57,7 +62,7 @@ SharePoint Online admins 可防止使用者下載惡意檔案。 如需相關指
 
 若要深入了解當檔案被偵測為惡意檔案時的使用者體驗，請參閱[在 SharePoint Online、OneDrive 或 Microsoft Teams 中找到惡意檔案時該怎麼做](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。
 
-## <a name="view-information-about-malicious-files-detected-by-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>針對 SharePoint、OneDrive 和 Microsoft 小組，查看 ATP 所偵測到之惡意檔案的相關資訊。
+## <a name="view-information-about-malicious-files-detected-by-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>查看 SharePoint、OneDrive 和 Microsoft 小組安全附件所偵測到之惡意檔案的相關資訊
 
 Microsoft Defender for Office 365 所識別為惡意的檔案，會顯示 [Microsoft defender For office 365](view-reports-for-atp.md) 及 [Explorer (和即時偵測) ](threat-explorer.md)中的報告。
 
@@ -69,4 +74,4 @@ Microsoft Defender for Office 365 所識別為惡意的檔案，會顯示 [Micro
 
 - 請確認您的 SharePoint 網站已設定為使用[新式體驗](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。 Office 365 的 Defender 防護會套用是否使用新式經驗或傳統模式;不過，只有在新式的體驗中，才可使用已封鎖檔案的視覺指示器。
 
-- SharePoint、OneDrive 和 Microsoft 團隊的 ATP 是組織整體威脅防護策略的一部分，其中包括 Exchange Online Protection (EOP) 中的反垃圾郵件和反惡意程式碼保護，以及 Microsoft Defender for Office 365 中的安全連結和安全附件。 若要深入了解，請參閱[防範 Office 365 中的威脅](protect-against-threats.md)。
+- SharePoint、OneDrive 和 Microsoft 團隊的安全附件是組織整體威脅防護策略的一部分，其中包括 Exchange Online Protection (EOP) 中的反垃圾郵件和反惡意程式碼保護，以及 Microsoft Defender for Office 365 中的安全連結和安全附件。 若要深入了解，請參閱[防範 Office 365 中的威脅](protect-against-threats.md)。

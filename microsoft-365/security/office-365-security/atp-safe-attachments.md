@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.date: ''
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,16 +18,22 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Microsoft Defender for Office 365 中的安全附件功能。
-ms.openlocfilehash: 07e44885a3813ce625c6a853f4070d644a392ded
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 5e85695a6d0fba221f3c614ec33b3552d37153e2
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659190"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175844"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全附件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [Microsoft Defender For Office 365](office-365-atp.md)中的安全附件為已[在 Exchange ONLINE protection (EOP) 中的反惡意程式碼保護](anti-malware-protection.md)掃描的電子郵件附件，提供額外的保護層級。 具體而言，安全附件會在電子郵件傳送至收件者 (程式（稱為 _引爆_) ）之前，使用虛擬環境檢查電子郵件中的附件。
 
@@ -51,7 +56,7 @@ ms.locfileid: "49659190"
 > [!NOTE]
 > 下列功能位於全域設定中的安全性 & 合規性中心內的安全附件原則，但這些設定會全域性啟用或停用，但不需要安全附件原則：
 >
-> - [SharePoint、OneDrive 和 Microsoft 小組的 ATP](atp-for-spo-odb-and-teams.md)。
+> - [SharePoint、OneDrive 和 Microsoft 小組的安全附件](atp-for-spo-odb-and-teams.md)。
 >
 > - [Microsoft 365 E5 中的安全文件](safe-docs.md)
 

@@ -19,16 +19,20 @@ description: 在 Microsoft 365 中的自動調查期間和之後，您可以查�
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7ebfa8bb7060b633bdb48c77bc661477ad3e201b
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 36cce42d0986cc793753d247d97315616f86f986
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142510"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175595"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自動調查的詳細資料和結果
 
-在[Office 365 的 Microsoft Defender](office-365-atp.md)中進行[自動調查](office-365-air.md)時，在自動化調查程式期間和之後都會提供該調查的詳細資料。 如果您有必要的許可權，您可以在 [安全性中心] 中查看這些詳細資料。 調查詳細資料可提供您最新的狀態，以及核准任何擱置中動作的功能。
+**適用於**
+- [Microsoft Defender for Office 365 方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+在[Office 365 的 Microsoft Defender](office-365-atp.md)中進行[自動調查](office-365-air.md)時，在自動化調查程式期間和之後都會提供該調查的詳細資料。 如果您有必要的許可權，您可以在 Microsoft 365 安全中心中查看這些詳細資料。 調查詳細資料可提供您最新的狀態，以及核准任何擱置中動作的功能。
 
 > [!TIP]
 > 請參閱 Microsoft 365 security center 中新的整合調查頁面。 若要深入瞭解，請參閱 [ (NEW！ ) 整合調查] 頁面](../mtp/mtp-autoir-results.md#new-unified-investigation-page)。

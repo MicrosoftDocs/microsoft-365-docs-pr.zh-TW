@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合規性中心建立及匯入原則的自訂機密資訊類型。
-ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 63ff32bda31446c25a523ff2064f7b750d102961
+ms.sourcegitcommit: 3e29926f51530afb0d75d8518a92b9ec7dc5e5bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080678"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173120"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 建立自訂機密資訊類型
 
@@ -377,7 +377,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
    如需詳細的語法和參數資訊，請參閱 [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)。
 
    > [!NOTE]
-   > 自訂敏感性資訊類型集合的上限為 10。
+   > 套件支援的規則數量上限為 10 個，但每個套件可以包含多個敏感性資訊類型的定義。
 
 4. 若要確認您已成功建立新的機密資訊類型，請執行下列任一步驟：
 
