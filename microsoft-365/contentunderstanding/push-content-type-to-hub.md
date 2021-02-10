@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-ms.openlocfilehash: 89c03a70da364bd4b945debc64de02255dec15e1
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 22d146b1d376bab134e82ad7d1313cb7881ca45b
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50144968"
 ---
 # <a name="push-content-types-to-a-hub"></a>將內容類型推入中樞
 
@@ -28,7 +28,7 @@ ms.locfileid: "49975712"
 </br>
 
 
-要使重要內容類型更一致地可用於 SharePoint 庫和清單，可以將它們推入到您選擇的中樞。 內容類型的自動推入功能會將它們新增到在與中樞相關聯的網站上所建立的新清單與文件庫，以及新增到中樞的所有新網站。
+要使重要內容類型更一致地可用於 SharePoint 庫和清單，可以將它們推入到您選擇的中樞。 內容類型的自動推入功能會將它們新增到在與中樞相關聯的網站上所建立的新清單與文件庫，以及新增到中樞的所有新網站。 此功能需要 [SharePoint Syntex](index.md) 授權。
 
 要使此功能正常運作，必須先發行要推入的內容類型。
 

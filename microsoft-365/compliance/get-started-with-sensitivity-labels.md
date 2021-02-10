@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: b2a16da1d4a7b9b35d519d544eba951765122596
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 04ac373250f13ece1a4e976891044a6584989f6d
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142036"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -98,7 +98,9 @@ ms.locfileid: "50071298"
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度標籤的使用者文件
 
-最有效的使用者文件會是您為所選的標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 敏感度標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880)。 
+最有效的使用者文件會是您為所選的標籤名稱和組態提供的自訂指導方針和指示。 針對內建標籤，您可以使用標籤原則設定 **為使用者提供自訂說明頁面的連結**，以指定本文件的內部連結。 然後使用者可以藉由從 Word、PowerPoint、Excel 和 Outlook 的 Office 功能區上的 **[敏感度]** 按鈕選取 **[深入了解]**，輕鬆存取。
+
+為了協助您撰寫自訂文件，請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 敏感度標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880)。 
 
 您也可以使用下列資源來取得基本指示：
 

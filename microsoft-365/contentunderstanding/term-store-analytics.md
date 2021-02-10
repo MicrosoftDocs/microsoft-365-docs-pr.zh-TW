@@ -12,16 +12,18 @@ ms.collection:
 - enabler-strategic
 - m365initiative-topics
 localization_priority: Priority
-ms.openlocfilehash: ad777fde5179b8425fad3ead4d4733a9a455e657
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 5ac0513b100c120366138b1f2a7b4a35f4435cfb
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145088"
 ---
 # <a name="term-store-reports"></a>字詞庫報告
 
-您可以在 [SharePoint Online 系統管理中心] 存取字詞庫的報告。 展開 **報告**，然後點擊 **內容服務**。
+您可以在 [SharePoint Online 系統管理中心] 存取字詞庫的報告。 此功能需要 [SharePoint Syntex](index.md) 授權。
+
+展開 **報告**，然後點擊 **內容服務**。
 
 下列報告可供使用：
 

@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: 開始使用
+    - name: 入門
       items:
         - name: 支援在家工作的主要工作
           href: top-security-tasks-for-remote-work.md
@@ -25,6 +25,8 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: 建議使用的 SharePoint Online 存取原則
           href: ./office-365-security/sharepoint-file-access-policies.md
+    - name: Microsoft 365 安全性中心
+      href: mtp/overview-security-center.md
     - name: Microsoft 安全分數
       items:
         - name: 安全分數概觀
@@ -45,10 +47,14 @@
               href: mtp/microsoft-threat-protection.md
             - name: Microsoft 365 Defender 的新功能
               href: mtp/whats-new.md
+            - name: Microsoft 365 安全性中心中的適用於端點的 Defender
+              href: mtp/microsoft-365-security-center-mde.md
+            - name: Microsoft 365 安全性中心中的適用於 Office 365 的 Defender
+              href: mtp/microsoft-365-security-center-mdo.md
+            - name: 將適用於端點的 Defender 重新導向至 Microsoft 365 安全性中心
+              href: mtp/microsoft-365-security-mde-redirection.md
             - name: 預覽功能
               href: mtp/preview.md
-            - name: Microsoft 365 安全性中心
-              href: mtp/overview-security-center.md
             - name: 針對問題進行疑難排解
               href: ./mtp/troubleshoot.md
             - name: 產業測試
@@ -63,22 +69,18 @@
               href: mtp/portals.md
         - name: 評估功能
           items:
-            - name: 試用實驗室簡介
-              href: mtp/mtp-evaluation.md
-            - name: 準備
-              href: mtp/prepare-mtpeval.md
-            - name: 設定
-              href: mtp/setup-mtpeval.md
-            - name: 設定和上線
-              href: mtp/config-mtpeval.md
-            - name: 開始使用 Microsoft 365 Defender 服務
-              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
-            - name: 產生測試提醒
-              href: mtp/generate-test-alert.md
-        - name: 部署
-          items:
-            - name: 開啟 Microsoft 威脅防護
-              href: mtp/mtp-enable.md
+            - name: 建立試用實驗室
+              items:
+                - name: 試用實驗室簡介
+                  href: mtp/mtp-evaluation.md
+                - name: 準備
+                  href: mtp/prepare-mtpeval.md
+                - name: 設定
+                  href: mtp/setup-mtpeval.md
+                - name: 設定 Microsoft 365 Defender 支柱和上線
+                  href: mtp/config-mtpeval.md
+                - name: 產生測試提醒
+                  href: mtp/generate-test-alert.md
             - name: 在生產環境中執行試驗專案
               items:
                 - name: 試驗概覽
@@ -91,8 +93,16 @@
                   href: mtp/mtp-pilot-simulate.md
                 - name: 結束和摘要
                   href: mtp/mtp-pilot-close.md
+        - name: 快速入門
+          items:
+            - name: 概觀
+              href: mtp/get-started.md
+            - name: 開啟 Microsoft 威脅防護
+              href: mtp/mtp-enable.md
             - name: 部署支援服務
               href: mtp/deploy-supported-services.md
+            - name: 開啟 Microsoft 365 Defender 常見問題集
+              href: mtp/mtp-enable-faq.md
         - name: 操作指南
           items:
             - name: 建立試用實驗室或試驗環境
@@ -101,6 +111,12 @@
               href: mtp/mtp-pilot.md
             - name: 開啟常見問題集
               href: mtp/mtp-enable-faq.md
+            - name: 威脅分析
+              items:
+                - name: 威脅分析概觀
+                  href: mtp/threat-analytics.md
+                - name: 閱讀分析師報告
+                  href: mtp/threat-analytics-analyst-reports.md
             - name: 事件
               items:
                 - name: 概觀
@@ -113,6 +129,10 @@
                       href: mtp/investigate-incidents.md
                     - name: 管理事件
                       href: mtp/manage-incidents.md
+                    - name: 調查警示
+                      href: mtp/investigate-alerts.md
+                    - name: 在 Microsoft 365 安全性中心調查使用者
+                      href: mtp/investigate-users.md
                 - name: 取得電子郵件通知
                   href: mtp/get-incident-notifications.md
             - name: 自動調查及回應
@@ -247,6 +267,8 @@
               items:
                 - name: 管理存取權
                   href: mtp/mtp-permissions.md
+                - name: 自訂角色型存取中的角色
+                  href: mtp/custom-roles.md
                 - name: 設定時區
                   href: mtp/mtp-time-zone.md
                 - name: 檢視裝置設定檔
@@ -302,6 +324,8 @@
           items:
             - name: 安全性藍圖
               href: ./office-365-security/security-roadmap.md
+            - name: Microsoft 365 安全性中心中的適用於 Office 365 的 Defender
+              href: mtp/microsoft-365-security-center-mdo.md
             - name: Exchange Online Protection
               items:
                 - name: Exchange Online Protection 概觀
@@ -328,7 +352,7 @@
               href: office-365-security/whats-new-in-office-365-atp.md
             - name: 適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
-            - name: 新的 Microsoft 365 安全性中心
+            - name: Microsoft 365 安全性中心概觀
               href: ./mtp/overview-security-center.md
             - name: 威脅總管 (及即時偵測)
               href: ./office-365-security/threat-explorer.md

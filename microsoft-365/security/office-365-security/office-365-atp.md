@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -20,17 +19,22 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 適用於 Office 365 的 Microsoft Defender 包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: 08ad29eebb0f0c144268866922f12959600bf7cf
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 7624b9a62530e54a161bbc4aacc8bee56ed959b2
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794181"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150721"
 ---
 # <a name="microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 的商務客戶。 如果您使用 Outlook.com、Microsoft 365 家用版或 Microsoft 365 個人版，並且在尋找 Outlook 中的安全連結或安全附件的相關資訊，請參閱[適用於 Microsoft 365 訂閱者的進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
@@ -77,7 +81,7 @@ ms.locfileid: "49794181"
 
 |適用於 Office 365 的 Microsoft Defender 方案 1|適用於 Office 365 的 Microsoft Defender 方案 2|
 |---|---|
-|設定、保護和偵測功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全連結](atp-safe-links.md)</li><li>[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)</li><li>[適用於 Office 365 的 Defender 中的反網路釣魚防護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|適用於 Office 365 的 Microsoft Defender 方案 1 的功能 <br>--- 以及 ---<br> 自動化、調查、補救和教育功能：<ul><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](office-365-air.md)</li><li>[攻擊模擬器](attack-simulator.md)</li><li>[行銷活動檢視](campaigns.md)</li></ul>|
+|設定、保護和偵測功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全連結](atp-safe-links.md)</li><li>[適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](atp-for-spo-odb-and-teams.md)</li><li>[適用於 Office 365 的 Defender 中的反網路釣魚防護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|適用於 Office 365 的 Microsoft Defender 方案 1 的功能 <br>--- 以及 ---<br> 自動化、調查、補救和教育功能：<ul><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](office-365-air.md)</li><li>[攻擊模擬器](attack-simulator.md)</li><li>[行銷活動檢視](campaigns.md)</li></ul>|
 |
 
 - 適用於 Office 365 的 Microsoft Defender 方案 2 隨附於 Office 365 E5、Office 365 A5、Microsoft 365 E5 安全性和 Microsoft 365 E5。
@@ -105,7 +109,7 @@ ms.locfileid: "49794181"
 
 - **[安全連結](atp-safe-links.md)**：提供 URL 的點擊時驗證 (例如在電子郵件訊息和 Office 檔案中)。 保護會持續進行，並在您郵件和 Office 環境間套用。 每次按一下連結時掃描：安全連結仍保持可存取，並且以動態方式封鎖惡意連結。 若要深入了解，請參閱[設定安全連結原則](set-up-atp-safe-links-policies.md)。
 
-- **[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)**：透過找出並封鎖小組網站和文件庫中的惡意檔案，在使用者共同作業及共用檔案時保護您的組織。 若要深入了解，請參閱[為 SharePoint、OneDrive 和 Microsoft Teams 開啟適用於 Office 365 的 Defender](turn-on-atp-for-spo-odb-and-teams.md)。
+- **[適用於 SharePoint、OneDrive 及 Microsoft Teams 的安全附件](atp-for-spo-odb-and-teams.md)**：透過找出並封鎖小組網站和文件庫中的惡意檔案，在使用者共同作業及共用檔案時保護您的組織。 若要深入了解，請參閱[為 SharePoint、OneDrive 和 Microsoft Teams 開啟適用於 Office 365 的 Defender](turn-on-atp-for-spo-odb-and-teams.md)。
 
 - **[適用於 Office 365 的 Defender 中的防網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**：偵測模擬使用者和內部或自訂網域的嘗試。 適用於電腦學習模型和進階模擬偵測演算法，以避免網路釣魚攻擊。 若要深入了解，請參閱[在適用於 Office 365 的 Microsoft Defender 中設定防網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
