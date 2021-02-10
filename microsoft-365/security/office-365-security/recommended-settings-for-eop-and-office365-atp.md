@@ -9,7 +9,6 @@ ms.date: ''
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,16 +17,23 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用適用于 Office 365 的 Defender，您也會取得哪些額外功能？
-ms.openlocfilehash: c93475f1215477281604abe72d70a60a75c41b3f
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 7a609a069e0e35b673b0902f2600f9c5433a14bb
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794457"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166936"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建議設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Exchange Online Protection (EOP)** 是 Microsoft 365 訂閱的安全性核心，可協助阻止惡意電子郵件到達您員工的收件匣。 不過，每天都會有新的更複雜的攻擊，但通常需要改進的保護。 **Microsoft Defender For Office 365** 方案1或計畫2包含其他可讓系統管理員更深入的安全性、控制和調查的功能。
 
@@ -153,7 +159,7 @@ Microsoft Defender for Office 365 訂閱附帶其他安全性權益。 如需最
 >
 > - 沒有預設的安全連結原則或安全附件原則，可自動保護組織中的所有收件者。 若要取得保護，您必須建立至少一個安全連結原則及安全附件原則。
 >
-> - [SharePoint、OneDrive 和 Microsoft 團隊](atp-for-spo-odb-and-teams.md) 防護和 [安全檔](safe-docs.md) 保護的 ATP，不會對安全連結原則產生任何依賴性。
+> - [SharePoint、OneDrive 和 Microsoft 團隊](atp-for-spo-odb-and-teams.md) 防護和 [安全檔](safe-docs.md) 保護的安全附件，不會對安全連結原則產生任何依賴性。
 
 如果您的訂閱包含 Microsoft Defender for Office 365，或您已購買 Office 365 的 Defender 作為附加元件，請設定下列標準或嚴格設定。
 
@@ -255,7 +261,7 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 #### <a name="global-settings-for-safe-attachments"></a>安全附件的通用設定
 
-若要設定這些設定，請參閱在[microsoft 365 E5 中](safe-docs.md)[開啟 SharePoint、OneDrive 和 Microsoft 小組](turn-on-atp-for-spo-odb-and-teams.md)和安全檔的 ATP。
+若要設定這些設定，請參閱在[microsoft 365 E5 中](safe-docs.md)[開啟 SharePoint、OneDrive 和 Microsoft 小組和安全檔的安全附件](turn-on-atp-for-spo-odb-and-teams.md)。
 
 在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
@@ -263,7 +269,7 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
 |---|:---:|:---:|:---:|---|
-|**開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP** <p> _EnableATPForSPOTeamsODB_|開啟 <p> `$true`|開啟 <p> `$true`||
+|**針對 SharePoint、OneDrive 和 Microsoft Teams 開啟適用於 Office 365 的 Defender** <p> _EnableATPForSPOTeamsODB_|開啟 <p> `$true`|開啟 <p> `$true`||
 |**開啟 Office 用戶端的安全檔** <p> _EnableSafeDocs_|開啟 <p> `$true`|開啟 <p> `$true`|此設定僅適用于 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的安全檔](safe-docs.md)。|
 |**即使安全檔識別為惡意檔案，也允許人員按一下受保護的檢視** <p> _AllowSafeDocsOpen_|關閉 <p> `$false`|關閉 <p> `$false`|此設定與安全檔相關。|
 |

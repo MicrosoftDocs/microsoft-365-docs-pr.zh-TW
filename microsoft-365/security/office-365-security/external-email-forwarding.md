@@ -8,24 +8,31 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: f75504941e8481d35458ad2ae6b5e8a72c5e8c8c
-ms.sourcegitcommit: a49338bde6923b13132c7b9e4c6bb75c14163c72
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e578cadf6687e02c900299a75bdd00a9d6e5b2ee
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49728185"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166144"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中控制自動外部電子郵件轉接
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-身為系統管理員，您可能會有公司需求，以限制或控制自動轉寄的郵件至外部收件者 (組織外) 收件者。 電子郵件轉寄可能是非常實用的功能，但由於可能披露資訊，也可能會造成安全性風險。 攻擊者可能會利用此資訊來攻擊您的組織或合作夥伴。
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+身為系統管理員，您可能會有公司需求，以限制或控制自動轉寄的郵件至外部收件者 (組織外) 收件者。 電子郵件轉寄可能非常有用，但由於可能洩漏資訊，也可能會造成安全性風險。 攻擊者可能會利用此資訊來攻擊您的組織或合作夥伴。
+
 
 Microsoft 365 提供下列自動轉送類型：
 

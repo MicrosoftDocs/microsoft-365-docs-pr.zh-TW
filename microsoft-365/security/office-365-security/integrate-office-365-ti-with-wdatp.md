@@ -19,12 +19,12 @@ description: 搭配使用 Microsoft Defender for Office 365 與 Microsoft Defend
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24b81bb4c445c44d7c0228fa1c4440faff642816
-ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
+ms.openlocfilehash: 035834e1e4855c0e47defed06043a5fdbd0e63bd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49939329"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166084"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>使用適用于 Office 365 的 Microsoft Defender 搭配 Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "49939329"
 
 整合 Microsoft Defender for Office 365 搭配 Microsoft Defender for Endpoint 可協助您的安全性運作小組監視並快速採取行動（如果使用者的裝置面臨危險）。 例如，啟用整合後，您的安全性作業小組將能夠查看偵測到的電子郵件訊息可能影響的裝置，以及為 Microsoft Defender for Endpoint 中的裝置產生多少最近的提醒。
 
-下圖說明 [ **裝置** ] 索引標籤似乎已啟用 Microsoft Defender 端點整合功能：
+下圖說明當您已啟用 Microsoft Defender 端點整合時，[ **裝置** ] 索引標籤的外觀。
 
 ![啟用 Microsoft Defender for Endpoint 時，您可以看到具有警示的裝置清單。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 

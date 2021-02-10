@@ -8,23 +8,26 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Admins in 獨立 Exchange Online Protection (EOP) 組織可以瞭解如何建立、修改及移除 Exchange 系統管理中心內的通訊群組和擁有郵件功能的安全性群組 (EAC) 和獨立 Exchange Online Protection (EOP) PowerShell。
-ms.openlocfilehash: 5ff7c61d51ded039b06d1faa98ba6390939b3413
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 01fe5c6ab1555749d38f9c092b05aca9befb67fe
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658842"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166960"
 ---
 # <a name="manage-groups-in-eop"></a>管理 EOP 中的群組
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+-  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，您可以建立、修改及移除下列類型的群組：
 
@@ -99,7 +102,7 @@ ms.locfileid: "49658842"
 
 3. 在開啟的 [通訊群組內容] 頁面上，按一下下列其中一個索引標籤，以查看或變更屬性。
 
-   完成後，按一下 [儲存]。
+   完成後，按一下 [儲存 **]**。
 
 #### <a name="general"></a>一般
 

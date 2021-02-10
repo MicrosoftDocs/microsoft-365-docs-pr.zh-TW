@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -18,16 +17,23 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 系統管理員現在可以了解 EOP 如何使用電子郵件驗證 (SPF、DKIM 和 DMARC) 來協助防止詐騙、網路釣魚和垃圾郵件。
-ms.openlocfilehash: 6a0bf6fd7958f44a9cfbe7ae0600aeb064170437
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ff6bbaa4831234e45c5617fb4e7ee9d4113f1eb1
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760515"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165448"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的電子郵件驗證
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 電子郵件驗證 (又稱為電子郵件驗證) 是一組嘗試停止詐騙 (來自偽造寄件者的電子郵件訊息) 的標準。 在所有 Microsoft 365 組織中，EOP 會使用這些標準來驗證輸入電子郵件：

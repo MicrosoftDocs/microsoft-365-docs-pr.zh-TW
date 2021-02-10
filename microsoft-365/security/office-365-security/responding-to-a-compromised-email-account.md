@@ -14,22 +14,27 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用可用工具辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
-ms.openlocfilehash: 5d5e5360e9851aee8eab27fc7c39e266e0332411
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a34780b260a6e4bbc2d8b3f53af6b67de04fbdcd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659882"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166660"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>回應遭入侵的電子郵件帳戶
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **摘要** 了解如何辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
 

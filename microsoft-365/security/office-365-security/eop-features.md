@@ -8,26 +8,29 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
-ms.openlocfilehash: dcbb7d2e31e230633d0401eee0ef0874eb6af615
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2c66c1cd8715717bae92ac81fbefe050f5e485eb
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021034"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166168"
 ---
 # <a name="eop-features"></a>EOP 功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+-  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
 
 > [!TIP]
-> [Microsoft 365 for business 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是找出即將推出之新功能之相關資訊的有用資源。如需更多有關不同 EOP 訂閱計畫可用之功能的詳細資訊，請參閱[Exchange Online Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+> [Microsoft 365 for business 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是找出即將推出之新功能之相關資訊的有用資源。 如需深入了解不同的 EOP 訂閱方案可提供什麼功能，請參閱 [Exchange Online Protection 服務描述](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
 ****
 
@@ -72,7 +75,7 @@ ms.locfileid: "49021034"
 |自訂字典|郵件流程可以包含較長的文字和關鍵字清單，提供和自訂字典相同的功能。|
 |以網域為基礎的原則規則|郵件流程規則的範圍可自訂以比對寄件者或收件者網域名稱、IP 位址範圍、地址關鍵字或模式、群組成員資格和其他條件。|
 |掃描附件|您可以建立規則來掃描檔案名稱、副檔名以及附件的內容。|
-|將原則規則通知傳送給寄件者|您可以拒絕郵件，並傳送未傳遞回報 (也稱為 NDR 或退回郵件) 傳送給寄件者，並透過 [拒絕] **狀態碼** 動作的 **說明** 或拒絕郵件，傳送給寄件者。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
+|將原則規則通知傳送給寄件者|您可以拒絕郵件，並傳送未傳遞回報 (也稱為 NDR 或退回郵件) 傳送給寄件者，並透過 [拒絕]**狀態碼** 動作的 **說明** 或拒絕郵件，傳送給寄件者。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
 |重新導向或複製郵件|郵件流程規則可以重新導向、新增收件者的抄送或密件副本，只要新增收件者和其他選項。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
 |調整多個規則之間的規則優先順序|使用 Exchange 系統管理員中心來變更規則的處理順序。|
 |篩選郵件，然後變更郵件的路由或屬性|您可以根據各種條件來篩選郵件，然後將一連串的動作套用至每封郵件。 如需詳細資訊，請參閱 [Exchange Online Protection 中的郵件流程規則 (傳輸規則)](mail-flow-rules-transport-rules-0.md)。|

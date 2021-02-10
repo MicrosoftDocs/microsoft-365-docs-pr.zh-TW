@@ -19,14 +19,19 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 261c375aa17e4a3bc8f7d1b469d82621cf4ae45b
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 653b16b7b3f6637440e3740830ffe9f9a51c6dd8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097125"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166504"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>保護電子郵件的原則建議
+
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+
 
 本文說明如何執行建議的身分識別和裝置存取原則，以保護支援新式驗證和條件式存取的組織電子郵件和電子郵件客戶程式。 本指南是以 [通用身分識別和裝置存取原則](identity-access-policies.md) 為基礎，也包含一些額外的建議。
 
@@ -46,7 +51,7 @@ ms.locfileid: "50097125"
 
 當您設定 Exchange Online 和 Outlook 時，如果您已在設定原則的範圍內包含 Exchange Online 和 Outlook，您只需要建立新原則來封鎖 ActiveSync 用戶端。 請查看下表所列的原則，並進行建議的新增，或確認是否已包含這些原則。 每個原則都連結至 [共同身分識別和裝置存取原則](identity-access-policies.md)中相關的設定指示。
 
-|保護層級|原則|其他相關資訊|
+|保護層級|原則|其他資訊|
 |---|---|---|
 |**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲應用程式的指派中包含 Exchange Online|
 ||[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|在雲應用程式的指派中包含 Exchange Online|

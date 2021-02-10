@@ -14,17 +14,21 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 系統管理員可以深入瞭解與使用 (連接器（也稱為「郵件流程情報」) ）相關聯之郵件傳遞的錯誤碼。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c7d4277d1ce3baeabcb5b1795b5d57583fbc8245
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 864b69bf650a4e460376ae988a9ce4abc4c61ad4
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029253"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167068"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP 中的郵件流程情報
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在使用 Exchange Online 或獨立 Exchange online Protection 中信箱的 Microsoft 365 組織中 (EOP) 組織沒有 Exchange Online 信箱，您通常會使用連接器將電子郵件訊息從 EOP 路由傳送至您的內部部署電子郵件環境。 您也可以使用連接器將來自 Microsoft 365 的郵件路由傳送至夥伴組織。 當 Microsoft 365 無法透過連接器傳遞這些郵件時，他們就會在 Microsoft 365 中佇列。 Microsoft 365 會繼續重試每封郵件24小時的傳遞。 24小時後，佇列中的郵件會到期，而且郵件會傳回未傳遞回報的原始寄件者 (也稱為 NDR 或退回郵件) 。
 

@@ -11,25 +11,29 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 的攻擊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b534d53166c09cf77993948cf1c448e21c8cd330
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a1c724bb3b201e0ddf1edea4794606c7083605e8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203092"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165436"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**摘要**了解如何識別並修正在 Office 365 中的非法同意授權。
+**摘要** 了解如何識別並修正在 Office 365 中的非法同意授權。
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>什麼是 Office 365 中的非法同意授權攻擊？
 
@@ -86,11 +90,11 @@ ms.locfileid: "48203092"
 
 2. 選取 [Azure Active Directory] 刀鋒視窗。
 
-3. 選取 [使用者]****。
+3. 選取 [使用者]。
 
 4. 選取您要檢閱的使用者。
 
-5. 選取 [應用程式]****。
+5. 選取 [應用程式]。
 
 這會顯示指派給使用者的應用程式，以及應用程式的許可權。
 
@@ -111,7 +115,7 @@ ms.locfileid: "48203092"
 - 將執行指令碼的電腦上的本機系統管理員。
 
 > [!IMPORTANT]
-> ***強烈建議***您在您的管理帳戶上需要多重要素驗證。 此指令碼支援 MFA 驗證。
+> ***強烈建議*** 您在您的管理帳戶上需要多重要素驗證。 此指令碼支援 MFA 驗證。
 
 1. 使用本機系統管理員權限登入您將執行指令碼的電腦。
 
@@ -139,7 +143,7 @@ ms.locfileid: "48203092"
 
 ## <a name="determine-the-scope-of-the-attack"></a>判斷攻擊的範圍
 
-當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [Microsoft 365 安全性與合規性中心][](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) 中搜尋**稽核記錄**。
+當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [Microsoft 365 安全性與合規性中心][](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) 中搜尋 **稽核記錄**。
 
 > [!IMPORTANT]
 > 您必須在攻擊之前啟用 [信箱稽核][](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) 和 [系統管理員與使用者的活動稽核][](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)，才能獲得此訊息。
@@ -150,13 +154,13 @@ ms.locfileid: "48203092"
 
 - 您可以在 Azure Active Directory 入口網站中撤銷應用程式的權限，方法是：
 
-  - 在 [Azure Active Directory 使用者]**** 刀鋒視窗中瀏覽至受影響的使用者。
+  - 在 [Azure Active Directory 使用者] 刀鋒視窗中瀏覽至受影響的使用者。
 
-  - 選取 [應用程式]****。
+  - 選取 [應用程式]。
 
   - 選取非法應用程式。
 
-  - 按一下向下切入中的 [移除]****。
+  - 按一下向下切入中的 [移除]。
 
 - 您可以依照[移除-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant) 中的步驟，使用 PowerShell 撤銷 QAuth 同意授權。
 

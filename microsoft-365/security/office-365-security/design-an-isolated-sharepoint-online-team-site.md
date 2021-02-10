@@ -8,7 +8,6 @@ manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,16 +17,22 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 設計獨立 SharePoint Online 小組網站，包括決定許可權等級、將許可權指派給具有存取群組的使用者，以及嵌套的 Azure AD 群組。
-ms.openlocfilehash: 035952c1921443d86602eb94e3965acee86ae3e8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f0f92a925948dbf6c8c5c1beb6b9c709f508c4b3
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203116"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165508"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>設計獨立的 SharePoint Online 小組網站
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
  **摘要：** 逐步執行獨立 SharePoint Online 小組網站的設計程式。
@@ -69,11 +74,11 @@ ms.locfileid: "48203116"
 
 使用預設的 SharePoint 群組為範例：
 
-- ** \<site name> 成員**SharePoint 群組（可以包含使用者帳戶和群組）的成員會被指派「**編輯**」許可權等級。
+- **\<site name> 成員** SharePoint 群組（可以包含使用者帳戶和群組）的成員會被指派「**編輯**」許可權等級。
 
-- ** \<site name> 訪客**SharePoint 群組的成員（可以包含使用者帳戶和群組）會獲指派「**讀取**」許可權等級。
+- **\<site name> 訪客** SharePoint 群組的成員（可以包含使用者帳戶和群組）會獲指派「**讀取**」許可權等級。
 
-- ** \<site name> 擁有**者 SharePoint 群組的成員（可以包含使用者帳戶和群組）會獲指派「**完全控制**」許可權層級。
+- **\<site name> 擁有** 者 SharePoint 群組的成員（可以包含使用者帳戶和群組）會獲指派「**完全控制**」許可權層級。
 
  **最佳作法：** 雖然您可以透過個別使用者帳戶管理許可權，但建議您改用單一 Azure AD 群組（稱為存取群組）。 這可簡化透過存取群組成員資格的版權管理，而不是管理每個 SharePoint 群組的使用者帳戶清單。
 
@@ -108,9 +113,9 @@ Microsoft 365 的 Azure AD 群組不同于 Microsoft 365 群組。 Azure AD 群�
 
 當您設計三個訪問群組時，請記住下列事項：
 
-- ** \<site name> 管理員**存取群組中應該只有少數幾個成員，對應于管理小組網站的少量 SharePoint Online 系統管理員。
+- **\<site name> 管理員** 存取群組中應該只有少數幾個成員，對應于管理小組網站的少量 SharePoint Online 系統管理員。
 
-- 您的網站成員大部分都位於** \<site name> members**或** \<site name> 查看**器訪問群組中。 因為** \<site name> 成員**存取群組中的網站成員具有刪除或修改網站中資源的能力，所以請謹慎考慮其成員資格。 若有疑問，請將網站成員新增至** \<site name> 查看**器存取群組。
+- 您的網站成員大部分都位於 **\<site name> members** 或 **\<site name> 查看** 器訪問群組中。 因為 **\<site name> 成員** 存取群組中的網站成員具有刪除或修改網站中資源的能力，所以請謹慎考慮其成員資格。 若有疑問，請將網站成員新增至 **\<site name> 查看** 器存取群組。
 
 以下是名為 ProjectX 之隔離網站的 SharePoint 群組和存取群組的範例。
 

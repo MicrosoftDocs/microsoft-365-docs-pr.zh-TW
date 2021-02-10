@@ -8,23 +8,28 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解在 Exchange Online Protection (EOP) 中設定郵件流程及路由的選項。
-ms.openlocfilehash: e1c821e3de8dd7dd18c192522bd18fd32a395dca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: cd07c4448d9b30c90c97c7bc89c787b2fdc08cdd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200700"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167236"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的郵件流程
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在具有 Exchange Online 信箱的 Microsoft 365 組織中，或獨立 Exchange Online Protection (EOP) 組織沒有 Exchange Online 信箱，所有傳送給您組織的郵件都會透過 EOP 傳遞，然後您的工作者才能看到它們。 您可以選擇如何路由傳送至您的工作人員收件匣的郵件，並透過 EOP 進行處理。
 

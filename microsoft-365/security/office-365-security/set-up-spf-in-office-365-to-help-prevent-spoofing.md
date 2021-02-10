@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -18,23 +17,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何更新網域名稱服務 (DNS) 記錄，以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。
-ms.openlocfilehash: 536f727ee71db70490259179ff8e47009c547f89
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: fbed28047b88a3eff75f574fc4d2581a75f15518
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905220"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166228"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>設定 SPF 以協助防止詐騙
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [先決條件](#prerequisites)
-- [建立或更新您的 SPF TXT 記錄](#create-or-update-your-spf-txt-record)   
-  - [如何處理子網域？](#how-to-handle-subdomains)
-- [SPF 電子郵件驗證實際上做什麼？](#what-does-spf-email-authentication-actually-do)   
-   - [疑難排解 SPF](#troubleshooting-spf)
-- [關於 SPF 的詳細資訊](#more-information-about-spf)
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 本文說明如何更新網域名稱服務 (DNS) 記錄，以便可以在 Office 365 中結合使用寄件者原則架構 (SPF) 電子郵件驗證和自訂網域。
 

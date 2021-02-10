@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,16 +17,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中設定連線篩選，以允許或封鎖電子郵件伺服器的電子郵件。
-ms.openlocfilehash: 844b1d8d17a99bbb0c441be511c64a009b8dafcb
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ef81d602e1f6da368e9d469bf1deaf0ef2c0a6af
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659810"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165748"
 ---
 # <a name="configure-connection-filtering"></a>設定連線篩選
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection 的 Microsoft 365 客戶 (EOP) 客戶沒有 Exchange Online 信箱，您可以在 EOP 中使用連線篩選 (特別是，「預設連線篩選原則」) 可透過 IP 位址識別正確或不良的來源電子郵件伺服器。 預設連線篩選原則的主要元件包括：
@@ -84,15 +90,15 @@ ms.locfileid: "49659810"
 
      - CIDR IP：例如 192.168.0.1/25。 有效的網路遮罩值為/24 到/32。 若要略過 CIDR IP 遮罩值的垃圾郵件篩選/1 到/23，請參閱本文稍後的 [可用範圍區段之外的 CIDR ip 的 [略過垃圾郵件篩選](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) ]。
 
-     若要新增 IP 位址或位址範圍，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **允許的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 [儲存]。
+     若要新增 IP 位址或位址範圍，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **允許的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 [儲存 **]**。
 
    - **IP 封鎖清單**：按一下 [ **編輯**]。 在出現的 [ **Ip 封鎖**] 快顯視窗中，在 [ **ip 允許清單**] 設定中先前所述的 [**位址] 或 [位址範圍**] 方塊中輸入單一 IP、ip 範圍或 CIDR IP。
 
-     若要新增 IP 位址或位址範圍，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **封鎖的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 [儲存]。
+     若要新增 IP 位址或位址範圍，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **封鎖的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 [儲存 **]**。
 
    - **開啟安全清單**：啟用或停用安全清單的使用，以找出將會略過垃圾郵件篩選的已知的良好寄件者。
 
-4. 完成後，按一下 [儲存]。
+4. 完成後，按一下 [儲存 **]**。
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>使用安全性 & 規範中心來查看預設連線篩選原則
 

@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但具有代表性的全球組織如何採用 Microsoft 365 for enterprise。
-ms.openlocfilehash: b009e02cde0708c54fbd8e047029dae9f67a145b
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 9e02469c644c3107e964d0f5defa08043091e28f
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749560"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166426"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>適用于 Contoso Corporation 的 Microsoft 365 for enterprise
 
@@ -71,17 +71,21 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
 - [適用於遠端和現場工作的 COVID-19 回應與基礎結構](../solutions/contoso-remote-onsite-work.md)
 
-  瞭解 Contoso 如何更新 COVID-19 pandemic 的遠端存取基礎結構，以及他們的新安裝和更新基礎結構，以進行遠端和現場工作。
+  瞭解 Contoso 如何針對遠端和現場工作者更新其遠端存取功能及其新安裝和更新基礎結構。
 
 - [用於高度機密專案的團隊](../solutions/contoso-team-for-top-secret-project.md)
 
   若要為最大機密專案建立安全的共同作業環境，Contoso 使用了具有安全性隔離的團隊。
 
-- [Teams 語音移轉概觀](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Teams 語音移轉](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 
   瞭解 Contoso 如何將其內部部署使用者遷移至 Microsoft 小組，以進行統一通訊、共同作業和語音。
 
-## <a name="next-step"></a>後續步驟
+- [通訊相容性冒犯性語言原則](../compliance/communication-compliance-case-study.md)
+
+  瞭解 Contoso 如何快速設定適用于 Microsoft 小組、Exchange 及 Yammer 通訊的冒犯性語言原則。
+
+## <a name="next-step"></a>下一步
 
 深入瞭解 [Contoso 公司](contoso-overview.md) ，以及在部署 Microsoft 365 for enterprise 時所解決的設計考慮。
 

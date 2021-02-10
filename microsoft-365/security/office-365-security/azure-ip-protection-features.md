@@ -8,7 +8,6 @@ manager: laurawi
 ms.date: 6/29/2018
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,17 +17,22 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文說明 Azure 資訊保護中的保護功能所要推出的變更
-ms.openlocfilehash: 070b0d1af0576391ce5f22a827975d1541646454
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2cb78f9e13d8ae429f5f46f2b1051d07ee541a10
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203596"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165976"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Azure 資訊保護中的保護功能可向現有承租人推出
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Microsoft Defender for Office 365 方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 若要協助您保護資訊的初始步驟，請從2018年7月開始，所有 Azure 資訊保護合格的承租人都會有預設開啟 Azure 資訊保護中的保護功能。 Azure 資訊保護中的保護功能先前在 Office 365 中稱為 Rights Management 或 Azure RMS。 如果您的組織有 Office E3 服務方案或較高的服務方案，您現在可以在推出這些功能時，透過 Azure 資訊保護來開始保護資訊。
 
@@ -70,7 +74,7 @@ Office 365 郵件加密會利用 Azure 資訊保護中的保護功能。 在最�
 
 使用 ADSI Edit，查看您是否已在 Active Directory 中發佈 SCP： CN=Configuration [server name]，CN=Services，CN = RightsManagementServices，CN = SCP
 
-2. 如果您不是使用 SCP，則必須使用 Windows 登錄為用戶端的服務探索或授權重新導向，設定連接至 AD RMS 叢集的 Windows 電腦： HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\MSIPC\ServiceLocation 或 HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation
+2. 如果您不是使用 SCP，則必須使用 Windows 登錄為用戶端的服務探索或授權重新導向，設定連接至 AD RMS 叢集的 Windows 電腦： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation 或 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation
 
 如需這些登錄設定的詳細資訊，請參閱使用 Windows 登錄和重新導向[授權伺服器流量](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)[啟用用戶端服務探索](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry)。
 

@@ -11,27 +11,31 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
-ms.openlocfilehash: a8312965e8923d7a759c0f436f8ab2e657756ea5
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1f3488b479b4d37b7e38e4ced0d612e8fb5ae8a0
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616617"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165472"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治活動開發/測試環境中建立小組網站
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
 
- **摘要：** 在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
-
+- [適用於 Office 365 的 Microsoft Defender 方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- 
+ **摘要：** 在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。 
+   
 使用本文所述指示來建立開發/測試環境，其中包含針對 [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)解決方案的四種不同類型的 SharePoint Online 小組網站。這些網站會在主題 10 中詳細說明，主題 10 的標題為 **「SharePoint 和商務用 OneDrive」**。
 
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>階段 1：建立政治活動開發/測試環境

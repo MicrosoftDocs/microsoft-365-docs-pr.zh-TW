@@ -8,21 +8,26 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
-ms.openlocfilehash: 7551a792c1d9c10cf5c655dade04bb5606b75f04
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a2b8228d33648f7bd20bde9d9e7b852276231aa6
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658692"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167104"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 的說明和支援
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在使用 Exchange Online 或獨立 Exchange online Protection 中信箱的 Microsoft 365 組織中 (EOP) 沒有 Exchange Online 信箱的組織，本文中所列的技術支援資源，可協助您在 EOP 有困難時找到答案。 Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
 
@@ -70,7 +75,7 @@ ms.locfileid: "49658692"
 
 ## <a name="support-telephone-numbers"></a>支援電話號碼
 
-Microsoft 為全球的產品支援提供本機或免付費電話號碼。許多支援中心在上班時間或每日的英文時間（一天24小時）中提供您當地語言的協助。如果您未看到下列所列的位置，請依照上述的方式使用虛擬代理程式來尋找您當地的支援電話號碼。
+Microsoft 提供全球產品支援的當地或免付費電話號碼。 許多支援中心會在上班時間以當地語言提供協助，或全年無休以英語提供協助。 如果您未看到下列所列的位置，請依照上述的方式使用虛擬代理程式來尋找您當地的支援電話號碼。
 
 ****
 

@@ -8,21 +8,24 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 系統管理員可以瞭解如何在 exchange Online Protection 中指派或移除 Exchange 系統管理中心 (EAC) 中的許可權。
-ms.openlocfilehash: 4a1353963e5e3eadc1a07f8b4aa3a765b06c86ec
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b53023521f477b5e864424ec648ccf7e5b749d0c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659294"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166984"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>在獨立版 EOP 中管理角色群組
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+-  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，您可以使用 Exchange 系統管理中心 (EAC) 將使用者新增至角色群組。 將使用者新增至角色群組，可讓使用者執行特定系統管理員工作的許可權。 您也可以從角色群組中移除使用者。
 
@@ -95,7 +98,7 @@ ms.locfileid: "49659294"
 
    - 選取您要移除的使用者，然後按一下 [ **移除** ![ 移除圖示] ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
-3. 完成後，按一下 [儲存]。
+3. 完成後，按一下 [儲存 **]**。
 
    > [!NOTE]
    > 使用者可能必須先登出再登入，才能在您於角色群組中新增或移除成員後，看到其系統管理權限的變更。

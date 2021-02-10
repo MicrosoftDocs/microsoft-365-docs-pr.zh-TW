@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,17 +17,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: '在本文中，您將瞭解退信攻擊和 Microsoft Exchange Online Protection (EOP) '
-ms.openlocfilehash: 2a752c89e2430f24441d14178942b89362736322
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3cdc556a8cc193466d150fc82298796779841cca
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203584"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165952"
 ---
 # <a name="backscatter-in-eop"></a>EOP 中的退信攻擊
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 *退信攻擊* 是未傳遞回報 (也稱為 NDRs 或退回郵件，) 您收到您未傳送的郵件。 垃圾郵件竊取 () 其郵件的寄件者位址，而且經常會使用實際的電子郵件地址來為其郵件的信譽。 因此，垃圾郵件製造者不可避免傳送郵件給非現有的收件者 (垃圾郵件是高容量作業) 時，目的地電子郵件伺服器實質上會欺騙您將 NDR 中無法傳遞的郵件，傳回寄件者： address 中的偽造寄件者。
 

@@ -1,5 +1,5 @@
 ---
-title: 瞭解敏感性資訊類型
+title: 了解敏感性資訊類型
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,66 +16,66 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 896a529d67faddb45b2672ca077f5a8e3b19827e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 91366e8f255d277d4d40de4c4cd3330283da718c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933077"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166448"
 ---
-# <a name="learn-about-sensitive-information-types"></a>瞭解敏感性資訊類型
+# <a name="learn-about-sensitive-information-types"></a>了解敏感性資訊類型
 
-識別及分類組織控制下的機密專案，是資訊保護分項 [的第一個步驟](protect-information.md)。  Microsoft 365 提供三種識別專案的方式，以便分類：
+識別和分類組織控制底下的敏感專案是 [資訊保護訓練科目](protect-information.md)中的第一步。  Microsoft 365 提供三種方式來識別專案，使其可進行分類：
 
-- 使用者手動
-- 自動化模式識別，例如敏感性資訊類型
+- 由使用者手動
+- 自動化的模式識別，像是敏感資訊類型
 - [機器學習](classifier-learn-about.md)
 
-敏感性資訊類型是以模式為基礎的分類器。 它們可偵測敏感性資訊 ，例如社會安全、信用卡或銀行帳戶號碼以識別敏感性專案，請參閱敏感性 [資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+敏感資訊類型是以模式為基礎的分類器。 它們會偵測敏感資訊，例如社會保險、信用卡或銀行帳戶號碼，以識別敏感專案，請參閱 [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 
-## <a name="sensitive-information-types-are-used-in"></a>敏感性資訊類型用於
+## <a name="sensitive-information-types-are-used-in"></a>敏感資訊類型是用於
 
 - [資料外洩防護原則](data-loss-prevention-policies.md) 
 - [敏感性標籤](sensitivity-labels.md)
 - [保留標籤](retention.md)
 - [通訊合規性](communication-compliance.md)
-- [自動標籤策略](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [自動標籤型原則](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
-## <a name="fundamental-parts-of-a-sensitive-information-type"></a>敏感性資訊類型的基本部分
+## <a name="fundamental-parts-of-a-sensitive-information-type"></a>敏感資訊類型的基礎部分
 
-每個敏感性資訊類型實體是由這些欄位定義：
+每個機密資訊類型實體都是由下欄欄位定義：
 
-- 名稱：如何參考敏感性資訊類型
-- 描述：描述敏感性資訊類型尋找的內容
-- 模式：模式會定義敏感性資訊類型偵測到的資訊。 它包含下列元件
-    - 主要元素是敏感性資訊類型要尋找的主要元素。 它可以是 **包含或不含檢查** 和驗證、關鍵字清單 **、關鍵字字典** 或函數的 **正則運算式**。
-    - 支援元素 – 做為支援證據的元素，可協助提高比對的信賴度。 例如，鄰近 SSN 數位的關鍵字 "SSN"。 它可以是包含或不含檢查和驗證、關鍵字清單、關鍵字字典的正則運算式。
-    - 信賴等級 - 信賴等級 (、中、低) 反應與主要元素一起偵測到的支援證據量。 專案包含的支援證據越多，相符專案的信賴度越高，就表示您正在尋找的敏感性資訊。
-    - 鄰近-主要與支援元素之間的字元數
+- 名稱：機密資訊類型的參考方式
+- 描述：描述敏感資訊類型所要尋找的專案
+- 模式：模式定義敏感資訊類型偵測的內容。 它包含下列元件
+    - 主要元素–敏感資訊類型要尋找的主要元素。 它可以是使用或不含校驗和驗證、**關鍵字清單**、**關鍵字字典** 或 **函數** 的 **正則運算式**。
+    - 支援元素–做為支援證據的元素，可協助增加相符的置信度。 例如，關鍵字 "SSN" 是在 SSN 號碼的接近。 它可以是使用或不含校驗和驗證、關鍵字清單、關鍵字字典的正則運算式。
+    - 信賴等級-信賴層級 (高、中、低) 會反映出與主要元素一起偵測到的支援證據的數量。 專案所包含的支援證據越多，符合專案所要尋找之敏感資訊的信賴越高。
+    - 近程–主要和支援元素之間的字元數
 
 ![確切辨識項和近似值視窗的圖表](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-在這段影片中深入瞭解信賴等級
+深入瞭解這段影片的信賴層級
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
 
-### <a name="example-sensitive-information-type"></a>敏感性資訊類型範例
+### <a name="example-sensitive-information-type"></a>範例機密資訊類型
 
 
-## <a name="argentina-national-identity-dni-number"></a>阿根廷國家/ (身分識別) 號碼
+## <a name="argentina-national-identity-dni-number"></a>阿根廷國家身分識別 (DNI) 號碼
 
 ### <a name="format"></a>格式
 
-以句點分隔的八位數
+以句點隔開的八位數
 
 ### <a name="pattern"></a>模式
 
 八位數：
 - 兩位數
-- a period
+- 一個句點
 - 三位數
-- a period
+- 一個句點
 - 三位數
 
 ### <a name="checksum"></a>校驗
@@ -84,9 +84,9 @@ ms.locfileid: "49933077"
 
 ### <a name="definition"></a>定義
 
-DLP 策略在鄰近 300 個字元時，有中度信賴度可偵測到這類敏感性資訊：
-- 正則運算式會Regex_argentina_national_id找到符合模式的內容。
-- 系統找到Keyword_argentina_national_id關鍵字。
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
+- 正則運算式 Regex_argentina_national_id 找到符合模式的內容。
+- 會找到來自 Keyword_argentina_national_id 的關鍵字。
 
 ```xml
 <!-- Argentina National Identity (DNI) Number -->
@@ -102,27 +102,27 @@ DLP 策略在鄰近 300 個字元時，有中度信賴度可偵測到這類敏�
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
-- 阿根廷國家身分識別號碼 
+- 阿根廷國內身分識別號碼 
 - 身分識別 
-- 身分識別身分識別卡 
+- 身分識別的國內身分識別卡片 
 - DNI 
-- NIC National Registry of Persons 
+- 個人的 NIC 註冊人員 
 - Documento Nacional de Identidad 
-- Registro Nacional de las Personas 
+- Registro Nacional de 拉斯維加斯角色 
 - Identidad 
 - Identificación 
 
-### <a name="more-on-confidence-levels"></a>進一步瞭解信賴等級
+### <a name="more-on-confidence-levels"></a>信賴層級的詳細資訊
 
-在敏感性資訊類型實體定義中，信賴 **等級會反映** 除了主要元素外，還偵測到多少支援證據。 專案包含的支援證據越多，相符專案的信賴度越高，就表示您正在尋找的敏感性資訊。 例如，高信賴等級的比對值會包含較接近主要元素的更多支援證據，而信賴等級低的比對值在接近鄰近區中則包含很少或沒有支援證據。 
+在機密資訊類型實體定義中， **信賴等級** 會反映出除了主要專案之外，偵測到多少支援證據。 專案所包含的支援證據越多，符合專案所要尋找之敏感資訊的信賴越高。 例如，具有高信賴度的比對會在主要元素的接近鄰近性中包含更多支援證據，而符合低信賴度的情況會包含很少無支援證據的近距離。 
 
-高信賴等級會回回最小的誤誤，但可能會導致漏報。 低或中信賴等級會回回更多的誤誤，但少到零的漏報。
+高信賴等級會傳回最少的誤報，但是可能會產生較多的漏報。 低或中度信賴等級會傳回更多的誤報，但很少為零的否定。
 
-- **低信賴** 度：值 65，相符的專案會包含最小的漏報，但負數最多。  
-- **中信賴**：值 75，相符的專案會包含平均的誤正和負數。  
-- **高信賴** 度：值 85，相符的專案會包含最小的誤數，但負數最高。  
+- **低信賴度**：65的值，相符的專案會包含最少的 false 負值，但是最少的誤報。  
+- **適中信賴**：值為75，相符的專案會包含平均的誤報和漏報的平均金額。  
+- **高信賴度**：值為85，相符的專案會包含最少的誤報，但最少為 false 的負值。  
 
-您應使用高信賴等級模式與低計數，例如 5 到 10 個，以及計數較高的低信賴度模式 ，例如 20 或更多。
+您應該使用具有較低計數的高信賴度模式、5到10個，以及具有較高數量的低可信度模式，例如20或更高。
 
 ## <a name="creating-custom-sensitive-information-types"></a>建立自訂敏感性資訊類型
 
@@ -137,6 +137,8 @@ DLP 策略在鄰近 300 個字元時，有中度信賴度可偵測到這類敏�
 
 
 > [!NOTE]
+> 在 Microsoft 365 服務的資料遺失防護內，可立即使用的信賴層級已增強，microsoft 365 服務、通訊相容性、資訊管理及記錄管理的 Microsoft 資訊保護功能均可供立即使用。
+
 > Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：
 > - 中文 (簡體)
 > - 中文 (繁體)
@@ -145,9 +147,9 @@ DLP 策略在鄰近 300 個字元時，有中度信賴度可偵測到這類敏�
 
 >這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 
-## <a name="for-further-information"></a>進一步資訊
+## <a name="for-further-information"></a>如需詳細資訊
 - [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
-- [在 PowerShell 中建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [在 PowerShell 中建立自訂機密資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

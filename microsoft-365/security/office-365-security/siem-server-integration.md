@@ -8,7 +8,6 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 11/18/2019
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -17,17 +16,23 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: 深入瞭解安全性資訊和事件管理 (SIEM) 伺服器與您的 Microsoft 365 雲端服務和應用程式整合
-ms.openlocfilehash: 851b27769badb2629b7e9fb1c93992c76828a633
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f29da87aa6eab1852330092d93187a27b2d36eb2
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615645"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167140"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>安全性資訊和事件管理 (SIEM) 伺服器與 Microsoft 365 服務和應用程式整合
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 ## <a name="summary"></a>摘要
 
@@ -52,9 +57,9 @@ SIEM server 可以從各種各樣的 Microsoft 365 服務和應用程式接收�
 
 |Microsoft 365 服務或應用程式|SIEM 伺服器的輸入/方法|可深入了解的資源|
 |---|---|---|
-|[Microsoft Defender for Office 365](office-365-atp.md)|稽核記錄|[SIEM 與 Microsoft Defender for Office 365 的整合](siem-integration-with-office-365-ti.md)|
+|[適用於 Office 365 的 Microsoft Defender](office-365-atp.md)|稽核記錄|[SIEM 與 Microsoft Defender for Office 365 的整合](siem-integration-with-office-365-ti.md)|
 |[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)|Azure 中主控的 HTTPS 端點 <p> REST API|[將提醒納入您的 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
-|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|記錄整合|[SIEM 與 Microsoft Cloud App Security 的整合](https://docs.microsoft.com/cloud-app-security/siem)|
+|[Microsoft 雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|記錄整合|[SIEM 與 Microsoft Cloud App Security 的整合](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 
 > [!TIP]

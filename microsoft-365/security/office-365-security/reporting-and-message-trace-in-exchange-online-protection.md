@@ -8,35 +8,40 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解 Microsoft Exchange Online Protection (EOP) 系統管理員可以使用的報告和疑難排解工具。
-ms.openlocfilehash: 856e99e55e6b67d1d22a30e2f55f60857eb4fe75
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 86c9eb0ee050c4c1a40ef7f29ea3d01dc202be9a
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020888"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166672"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的報告和郵件追蹤
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在包含 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP 提供許多不同的報告，可協助您判斷貴組織的整體狀態與健康情況) EOP。 還有可協助您疑難排解特定事件 (例如郵件未抵達其預定收件者) 的工具，以及有助於符合規範需求的稽核報告。
 
 ## <a name="usage-reports"></a>使用情況報告
 
-**Microsoft 365 群組活動** ：查看已建立及使用之 microsoft 365 群組數目的相關資訊。
+**Microsoft 365 群組活動**：查看已建立及使用之 microsoft 365 群組數目的相關資訊。
 
-**電子郵件活動** ：查看您整個組織中傳送、接收和讀取的郵件數目，以及特定使用者的相關資訊。
+**電子郵件活動**：查看您整個組織中傳送、接收和讀取的郵件數目，以及特定使用者的相關資訊。
 
-**電子郵件應用程式使用狀況** ：查看使用的電子郵件應用程式的相關資訊。 這包括每個應用程式的連線總數，以及連接的 Outlook 版本。
+**電子郵件應用程式使用狀況**：查看使用的電子郵件應用程式的相關資訊。 這包括每個應用程式的連線總數，以及連接的 Outlook 版本。
 
-**信箱使用狀況** ：查看信箱的「傳送或讀取活動」) 使用的儲存空間、配額消耗、專案計數及最後一項活動的相關資訊 (。
+**信箱使用狀況**：查看信箱的「傳送或讀取活動」) 使用的儲存空間、配額消耗、專案計數及最後一項活動的相關資訊 (。
 
 如需詳細資訊，請參閱下列資源：
 
@@ -52,9 +57,9 @@ ms.locfileid: "49020888"
 
 這些增強型報告提供 EOP 系統管理員的互動式報告經驗（包括摘要資訊），以及深入查看詳細資訊的功能。
 
-**適用于 office 的 Defender 365** ：查看有關安全連結的資訊，及屬於 Microsoft Defender for office 365 的安全附件。
+**適用于 office 的 Defender 365**：查看有關安全連結的資訊，及屬於 Microsoft Defender for office 365 的安全附件。
 
-**EOP** ：查看組織中惡意程式碼偵測、欺騙性郵件、垃圾郵件偵測和郵件流程的相關資訊。
+**EOP**：查看組織中惡意程式碼偵測、欺騙性郵件、垃圾郵件偵測和郵件流程的相關資訊。
 
 [查看 Office 365 的 Defender 報告](view-reports-for-atp.md)
 

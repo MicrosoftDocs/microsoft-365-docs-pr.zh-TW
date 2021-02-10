@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,16 +17,23 @@ ms.collection:
 - M365-security-compliance
 description: 深入瞭解如何將安全性秘訣加入電子郵件，以瞭解 EOP 和 Office 365 如何保護您免受垃圾郵件、網路釣魚和惡意程式碼的防禦。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e36887e2bb0146c86a8a4f1526f1e712a38b46ba
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c37eba07b306ff47e14640e494e468b63b358726
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376616"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166612"
 ---
 # <a name="safety-tips-in-email-messages"></a>電子郵件訊息的安全提示
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Exchange Online Protection (EOP) 和 Microsoft 365 保護您的垃圾郵件、網路釣魚和惡意程式碼防護。 如今，有些攻擊非常精心設計，看起來很合理。 將郵件傳送至 [垃圾郵件] 資料夾並不一定足夠。 現在，當您在 Outlook 或 Outlook 網頁版或任何電子郵件客戶程式中檢查您的電子郵件時，EOP 會自動檢查寄件者，並將安全性秘訣加入至電子郵件的最上層。
 

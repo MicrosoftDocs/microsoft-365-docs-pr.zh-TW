@@ -8,22 +8,25 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 瞭解如何在 Exchange Online Protection (EOP) 中管理郵件使用者，包括使用目錄同步處理、EAC 和 PowerShell 來管理使用者。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8258a63fe0fbf4a6b5641fbdef213f25de2e4dd
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 34edafea7567da04094ea386d469d3d27937eee5
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658830"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166390"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>在獨立版 EOP 中管理郵件使用者
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+-  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，郵件使用者是使用者帳戶的基本類型。 郵件使用者在獨立 EOP 組織中具有帳號憑證，而且可以存取) 具有指派許可權的資源 (。 郵件使用者的電子郵件地址為外部 (例如，在您的內部部署電子郵件環境) 中。
 
@@ -83,7 +86,7 @@ ms.locfileid: "49658830"
 
 3. 在開啟的 [郵件使用者屬性] 頁面上，按一下下列其中一個索引標籤以查看或變更屬性。
 
-   完成後，按一下 [儲存]。
+   完成後，按一下 [儲存 **]**。
 
 #### <a name="general"></a>一般
 

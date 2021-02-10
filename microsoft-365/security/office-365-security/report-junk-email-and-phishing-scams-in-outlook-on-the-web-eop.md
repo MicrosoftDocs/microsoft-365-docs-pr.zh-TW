@@ -17,17 +17,21 @@ ms.collection:
 description: 系統管理員可以深入瞭解 Outlook 網頁版 Outlook 中內建的垃圾郵件、非垃圾郵件和網路釣魚電子郵件報告選項，在 Exchange Online 中) 的 Outlook Web App (，以及如何為使用者停用這些報告選項。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0af57aceed608ae80e72e3ae18724925c1168e26
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: bd22e7f08ae420adf2923d4da731494a0f6af3e3
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029207"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166732"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在 Exchange Online 中，在 Outlook 網頁版中報告垃圾郵件和網路釣魚電子郵件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在包含 Exchange Online 信箱的 Microsoft 365 組織中，您可以在 Outlook 網頁版 Outlook 中使用內建的報告選項， (之前稱為 Outlook Web App) 若要提交誤報 (良好的電子郵件) 、誤報 (不良電子郵件允許) 和網路釣魚郵件到 Exchange Online Protection (EOP) 。
 

@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -19,17 +18,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的欺騙情報，您可以在其中允許或封鎖特定的欺騙寄件者。
-ms.openlocfilehash: 603aeb35241f9808561593afa69b3b9ce7193fb0
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 55a744cf2d226e72e8d84f6eb125f2baf9b9d3a0
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760527"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167260"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中設定欺騙情報
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱時，會自動保護輸入的電子郵件，避免在10月2018的情況下受到 EOP 的欺騙。 EOP 會使用哄騙情報做為組織對網路釣魚的整體防護的一部分。 如需詳細資訊，請參閱 [EOP 中的反欺詐防護](anti-spoofing-protection.md)。
 

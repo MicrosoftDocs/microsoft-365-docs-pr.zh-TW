@@ -19,17 +19,21 @@ description: 系統管理員可以在 Exchange Online Protection (EOP) 中查看
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 019f1c103ef1aaf7641072cd1259d22e83f0de4c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032598"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166924"
 ---
 # <a name="quarantined-messages-faq"></a>隔離的郵件常見問題
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 本主題針對 Exchange Online 中的信箱或獨立 Exchange Online Protection (EOP) 組織中的 exchange 電子郵件，提供有關隔離365的電子郵件的常見問題和解答，但沒有 Exchange Online 信箱。
 

@@ -8,21 +8,26 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 您可以使用郵件流程規則 (傳輸規則) 識別並對透過您組織的郵件採取動作。
-ms.openlocfilehash: 6bbf50b1a99b6691e959f6dcd4cfce33686a0014
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3f873d4e46c9e3b7f085e03a9fbb19e5914317fa
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659192"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167032"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>獨立版 EOP 中的郵件流程規則 (傳輸規則)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，您可以使用郵件流程 (規則（也稱為傳輸規則) ）來識別並對透過您的組織傳遞的郵件採取動作。
 

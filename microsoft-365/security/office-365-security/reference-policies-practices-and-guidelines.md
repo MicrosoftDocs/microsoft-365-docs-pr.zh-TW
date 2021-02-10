@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,17 +15,23 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft 已開發各種原則、程式，並採用數種行業最佳作法，協助保護我們的使用者免受濫用、有害或惡意的電子郵件。
-ms.openlocfilehash: b971823201fb805c9e17da8402250065d274668d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202372"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166852"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>參考：原則、實務與指導方針
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 因此，Microsoft 已開發各種原則、程式，並採用數種行業最佳作法，協助保護我們的使用者免受濫用、有害或惡意的電子郵件。 嘗試將電子郵件傳送給使用者的寄件者應確保他們完全瞭解並遵循本文中的指導方針，以協助您進行此工作，並協助避免潛在的傳遞問題。
 

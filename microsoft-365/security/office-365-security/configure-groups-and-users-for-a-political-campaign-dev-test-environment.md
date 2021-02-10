@@ -11,24 +11,27 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：為政治活動開發/測試環境建立具備使用者與群組的 Office 365 和 Enterprise Mobility + Security (EMS) 之試用訂閱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1fac15cc0b2a512745e0538ec689bd5f17555419
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2d23539951e4d51fcd29417ab71ce599853d7537
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614903"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165700"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>設定政治活動開發/測試環境的群組和使用者
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
  **摘要：** 為政治活動開發/測試環境建立具備使用者與群組的 Office 365 和 Enterprise Mobility + Security (EMS) 之試用訂閱。
 
@@ -60,7 +63,7 @@ ms.locfileid: "49614903"
 
 2. 按一下您的全域系統管理員帳戶，然後按一下 [產品授權] 的 [編輯]。
 
-3. 在 [產品授權]**** 窗格中，將 **Enterprise Mobility + Security E5** 的產品授權設為 [開啟]**，按一下 [儲存]，然後按兩次 [關閉]。
+3. 在 [產品授權] 窗格中，將 Enterprise Mobility + Security E5 的產品授權設為 [開啟]**，按一下 [儲存]，然後按兩次 [關閉]。
 
 ## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>階段 2：建立和設定 Azure Active Directory (AD) 群組
 
@@ -68,7 +71,7 @@ ms.locfileid: "49614903"
 
 首先，利用 Azure 入口網站建立一組典型政治活動的群組。
 
-1. 在瀏覽器中建立個別索引標籤，然後移至 Azure 入口網站 (網址為 <https://portal.azure.com>)。若有需要，請使用 Office 365 E5 試用訂閱的全域管理員帳戶認證登入。
+1. 在瀏覽器的個別索引標籤中，移至 Azure 入口網站 (網址為 <https://portal.azure.com>)。 如果需要，請使用 Office 365 E5 試用訂閱的全域管理員帳戶認證登入。
 
 2. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [使用者和群組] > [所有群組]。
 

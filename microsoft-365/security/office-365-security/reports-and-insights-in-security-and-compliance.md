@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,17 +17,23 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解安全性 & 規範中心提供的智慧報告和洞察力，以及如何使用它們來查看及流覽資料，並快速採取動作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1b6a3b6d19b9cfd2740baba9a3b3e53e4ec9637
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 0d1c44bf212ecedadf0af47637920805c0c9f241
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615873"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166696"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的智慧型報告和深入解析
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 如果您是組織的 Microsoft 365 for business security 小組的一部分，且在 [安全性 & 合規性中心內指派](permissions-in-the-security-and-compliance-center.md)必要的許可權，您就可以存取各種報告（包括智慧報告和真知灼見）。 請閱讀本文以取得這些報告和深入瞭解，以及深入瞭解特定報告的詳細資訊。
 

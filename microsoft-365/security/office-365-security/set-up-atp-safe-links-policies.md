@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,16 +16,22 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中查看、建立、修改及刪除安全連結原則及全域安全連結設定。
-ms.openlocfilehash: ef83d0dba1de03aa2b36384474791783e926059f
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 71ea33f1f6fbebf6d87a4b42ad3bd96a60597b90
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780529"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166264"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>設定 Microsoft Defender for Office 365 中的安全連結原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](office-365-atp.md) 的商務客戶。 如果您是尋找 Outlook 中 Safelinks 相關資訊的家用使用者，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
@@ -65,10 +70,10 @@ ms.locfileid: "49780529"
 
   如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md) 和 [Exchange Online 中的許可權](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
-  **附註**：
-
-  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
+  > [!NOTE]
+  > 
+  > - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  . - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權。
 
 - 如需安全連結原則的建議設定，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)。
 
@@ -188,7 +193,8 @@ ms.locfileid: "49780529"
 
 安全連結原則會以處理的順序顯示， (第一個原則的 **Priority** 值為 0) 。
 
-**附注**：在 [安全性 & 規範中心] 中，您只能在建立安全連結原則之後變更其優先順序。 在 PowerShell 中，您可以在建立安全連結規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
+> [!NOTE]
+> 在安全性 & 規範中心，您只能在建立安全連結原則之後變更其優先順序。 在 PowerShell 中，您可以在建立安全連結規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
 
 若要變更原則的優先順序，請在清單中將原則上移或下移 (您無法在安全性與合規性中心直接修改 [優先順序] 數字)。
 
@@ -233,16 +239,16 @@ ms.locfileid: "49780529"
 1. 建立安全連結原則。
 2. 建立安全連結規則，以指定套用規則的安全連結原則。
 
- **附註**：
-
-- 您可以建立新的安全連結規則，並將現有的未關聯的安全連結原則指派給它。 安全連結規則無法與一個以上的安全連結原則相關聯。
-
-- 您可以在 [安全性 & 規範中心] PowerShell 中的新安全連結原則上設定下列設定，直到您建立原則為止：
-
-  - _在_ `$false` **New-SafeLinksRule** Cmdlet) 上，建立新原則做為已停用 (。
-  - 在 _\<Number\>_ **New-SafeLinksRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
-
-- 您在 PowerShell 中建立的新安全連結原則不會顯示在安全性 & 規範中心，除非您將原則指派至安全連結規則。
+> [!NOTE]
+> 
+> - 您可以建立新的安全連結規則，並將現有的未關聯的安全連結原則指派給它。 安全連結規則無法與一個以上的安全連結原則相關聯。
+> 
+> - 您可以在 [安全性 & 規範中心] PowerShell 中的新安全連結原則上設定下列設定，直到您建立原則為止：
+> 
+>   - _在_ `$false` **New-SafeLinksRule** Cmdlet) 上，建立新原則做為已停用 (。
+>   - 在 _\<Number\>_ **New-SafeLinksRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
+> 
+> - 您在 PowerShell 中建立的新安全連結原則不會顯示在安全性 & 規範中心，除非您將原則指派至安全連結規則。
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>步驟1：使用 PowerShell 建立安全連結原則
 
@@ -252,11 +258,11 @@ ms.locfileid: "49780529"
 New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
-**附註**：
-
-- 如需 _DoNotRewriteUrls_ 參數所使用之專案語法的詳細資訊，請參閱 [[不要重新寫入下列 URLs] 清單中的輸入語法](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
-
-- 如需使用 **Set-SafeLinksPolicy** Cmdlet 修改現有的安全連結原則時可用於 _DoNotRewriteUrls_ 參數的其他語法，請參閱本文稍後的 [使用 PowerShell 修改安全連結原則](#use-powershell-to-modify-safe-links-policies)一節。
+> [!NOTE]
+> 
+> - 如需 _DoNotRewriteUrls_ 參數所使用之專案語法的詳細資訊，請參閱 [[不要重新寫入下列 URLs] 清單中的輸入語法](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
+> 
+> - 如需使用 **Set-SafeLinksPolicy** Cmdlet 修改現有的安全連結原則時可用於 _DoNotRewriteUrls_ 參數的其他語法，請參閱本文稍後的 [使用 PowerShell 修改安全連結原則](#use-powershell-to-modify-safe-links-policies)一節。
 
 此範例會建立名為 Contoso 的安全連結原則，並提供下列值：
 
@@ -422,7 +428,8 @@ Set-SafeLinksRule -Identity "<RuleName>" -Priority <Number>
 Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
 ```
 
-**附注**：若要在建立新規則時設定其優先順序，請改為在 **New-SafeLinksRule** Cmdlet 上使用 _priority_ 參數。
+> [!NOTE]
+> 若要在建立新規則時設定其優先順序，請改用 **New-SafeLinksRule** Cmdlet 上的 _priority_ 參數。
 
 如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule)。
 

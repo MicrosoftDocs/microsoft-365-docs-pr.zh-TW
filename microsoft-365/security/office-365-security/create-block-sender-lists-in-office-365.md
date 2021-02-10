@@ -8,22 +8,27 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
 description: 系統管理員可以深入瞭解可用及慣用的選項，以在 Exchange Online Protection (EOP) 中封鎖輸入郵件。
-ms.openlocfilehash: 7894a6cfe665539fa8c00f5911c4a588b9cf7ebc
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d77457567d4c3f9f4a8620021a7fb41615f0594d
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203188"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165652"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>在 EOP 中建立封鎖的寄件者清單
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在有信箱在 Exchange Online 或獨立 Exchange Online Protection 中的 Microsoft 365 組織中 (EOP) 不含 Exchange Online 信箱的組織，EOP 提供多種方式，封鎖來自不想要的寄件者的電子郵件。 這些選項包括 Outlook 封鎖的寄件者、封鎖的寄件者清單或反垃圾郵件原則中封鎖的網域清單、Exchange 郵件流程規則 (也稱為傳輸規則) ，以及 IP 封鎖清單 (連線篩選) 。 綜合，您可以將這些選項視為 _封鎖的寄件者清單_。
 
@@ -44,11 +49,11 @@ ms.locfileid: "48203188"
 
 ## <a name="email-message-basics"></a>電子郵件訊息基礎
 
-標準 SMTP 電子郵件由「郵件信封」**(Message Envelope) 和郵件內容組成。 郵件信封包含在 SMTP 伺服器之間傳輸及傳遞郵件所需的資訊。 郵件內容包含統稱為 (「郵件標頭」**) 的郵件標頭欄位和郵件內容。 RFC 5321 會說明郵件信封，而 RFC 5322 中說明郵件頭。 收件者永遠不會看到實際的郵件信封，因為它是由郵件傳輸程式所產生，而且實際上不是郵件的一部分。
+標準 SMTP 電子郵件由「郵件信封」(Message Envelope) 和郵件內容組成。 郵件信封包含在 SMTP 伺服器之間傳輸及傳遞郵件所需的資訊。 郵件內容包含統稱為 (「郵件標頭」) 的郵件標頭欄位和郵件內容。 RFC 5321 會說明郵件信封，而 RFC 5322 中說明郵件頭。 收件者永遠不會看到實際的郵件信封，因為它是由郵件傳輸程式所產生，而且實際上不是郵件的一部分。
 
 - 此 `5321.MailFrom` 位址 (也稱為「 **郵件來自** 位址」、「P1 寄件者」或「信封寄件者」) 是在郵件的 SMTP 傳輸中使用的電子郵件地址。 這個電子郵件地址通常會記錄在郵件頭的 [傳回 **路徑** 標頭] 欄位中 (不過，寄件者可能會指定不同的傳回 **路徑** 電子郵件地址) 。 如果無法傳遞郵件，表示未傳遞回報的收件者 (也稱為 NDR 或退回郵件) 。
 
-- `5322.From` (也稱為**from** address 或 P2 sender) 是電子郵件地址**的收**件者標頭欄位，也就是顯示在電子郵件客戶程式中的寄件者電子郵件地址。
+- `5322.From` (也稱為 **from** address 或 P2 sender) 是電子郵件地址 **的收** 件者標頭欄位，也就是顯示在電子郵件客戶程式中的寄件者電子郵件地址。
 
 通常， `5321.MailFrom` 與 `5322.From` 位址 (人員對人員通訊) 相同。 不過，當您代表其他人傳送電子郵件時，位址可能會不同。
 
@@ -65,7 +70,7 @@ EOP 中，封鎖的寄件者清單和封鎖的網域清單會檢查 `5321.MailFr
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>使用封鎖的寄件者清單或封鎖的網域清單
 
-當多個使用者受到影響時，範圍會變寬，所以下一個最佳選項是反垃圾郵件原則中的封鎖寄件者清單或封鎖的網域清單。 來自清單寄件者的郵件會標示為 **垃圾**郵件，而您針對 **垃圾郵件** 篩選判定所設定的動作會針對郵件採取。 如需詳細資訊，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+當多個使用者受到影響時，範圍會變寬，所以下一個最佳選項是反垃圾郵件原則中的封鎖寄件者清單或封鎖的網域清單。 來自清單寄件者的郵件會標示為 **垃圾** 郵件，而您針對 **垃圾郵件** 篩選判定所設定的動作會針對郵件採取。 如需詳細資訊，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 這兩個清單的上限大約是1000個專案。
 
@@ -73,7 +78,7 @@ EOP 中，封鎖的寄件者清單和封鎖的網域清單會檢查 `5321.MailFr
 
 如果您需要封鎖傳送給特定使用者或整個組織內的郵件，您可以使用郵件流程規則。 郵件流程規則比封鎖寄件者清單或封鎖的寄件者網域清單更為靈活，因為它們也可以在不想要的郵件中尋找關鍵字或其他屬性。
 
-不論您用來識別郵件的條件或例外情況為何，您可以將動作設定為將郵件的垃圾郵件信賴等級 (SCL) 設定為9，這會將郵件標示為 **高信賴的垃圾**郵件。 如需詳細資訊，請參閱 [使用郵件流程規則設定郵件中的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
+不論您用來識別郵件的條件或例外情況為何，您可以將動作設定為將郵件的垃圾郵件信賴等級 (SCL) 設定為9，這會將郵件標示為 **高信賴的垃圾** 郵件。 如需詳細資訊，請參閱 [使用郵件流程規則設定郵件中的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
 
 > [!IMPORTANT]
 > 您可以輕鬆地建立 *過於* 嚴格的規則，所以請務必只使用特別的準則來識別您想要封鎖的郵件。 此外，請務必啟用規則的審計，並測試規則的結果，以確保所有內容如預期般運作。

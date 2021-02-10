@@ -4,7 +4,6 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,17 +13,21 @@ search.appverid: MET150
 description: 威脅修正
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 67b27102ff9319e334b5ff1e006fe49f14d3f1ed
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2f623957a79ccd76702482cd23b4d8ce219603f6
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620572"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166876"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修復 Office 365 中傳遞的惡意電子郵件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+-    [Microsoft Defender for Office 365 方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 修正是指對威脅採取規定的動作。 傳送給您組織的惡意電子郵件可以由系統清除，不論是透過零小時自動清除 (ZAP) ，或是安全性小組透過修正動作（如 *移至收件* 匣 *、移至垃圾* 郵件、 *移至 [刪除的郵件*]、[ *虛刪除*] 或 [ *實刪除*]）。 Microsoft Defender for Office 365 P2/E5 可讓安全小組透過手動和自動調查來修正電子郵件和共同作業功能的威脅。
 

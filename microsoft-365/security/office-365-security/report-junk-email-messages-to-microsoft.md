@@ -17,16 +17,21 @@ ms.collection:
 description: 系統管理員可以瞭解不同的方式，向 Microsoft 報告好的和壞的訊息和檔案，以進行分析。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 601d0c599a815529540281679bd2b0f907031058
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: b75b05f33ab6c6a5827101ad2f5b14c94b932135
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099687"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166684"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>回報訊息和檔案至 Microsoft。
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在使用 Exchange Online 中的信箱或獨立 Exchange Online (Protection 中的 Microsoft 365 組織中，使用者與系統管理員都有數種不同的方法，可將電子郵件和檔案報告給 Microsoft，) EOP 不需要 Exchange Online 信箱的組織。
 

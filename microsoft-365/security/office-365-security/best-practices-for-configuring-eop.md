@@ -7,21 +7,24 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。
-ms.openlocfilehash: a229f8a269037296fa2b97ff7211343549b33685
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1a38454ceaba7f95dff172335dc374530efca20a
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864885"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165928"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>設定獨立 EOP 的最佳作法
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+-  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。 本主題假設您已完成安裝程序。 若您尚未完成 EOP 安裝，請參閱 [設定 EOP 服務](set-up-your-eop-service.md)。
 

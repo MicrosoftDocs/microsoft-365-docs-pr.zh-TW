@@ -10,7 +10,6 @@ audience: Admin
 ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -19,17 +18,23 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須先獲指派 Microsoft 365 Security & 合規性中心的許可權，才能管理任何安全性或規範功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1bf8da85a0e090a9d74934ea5084f547d6a8794f
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 9e19825ce0f8224b2aee8e1419ef5d1ad425aadb
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616605"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165412"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>讓使用者能夠存取安全性與合規性中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在安全性 & 規範中心內，必須將許可權指派給使用者，才能管理任何安全性或規範功能。 在安全性 & 規範中心內，以全域管理員或 OrganizationManagement 角色群組成員的身分，您可以將這些許可權授與使用者。 使用者只能管理您授予權利給他們的安全性或符合性功能。
 
@@ -55,7 +60,7 @@ ms.locfileid: "49616605"
 
 4. 當您選取要新增至角色群組的所有使用者時，請按一下 [**新增- \>** ]，然後按一下 **[確定]**。
 
-5. 完成後，按一下 **[儲存]**。
+5. 完成後，按一下 [儲存 **]**。
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用安全性 & 規範中心 PowerShell 授予另一個使用者存取安全性 & 規範中心的許可權
 

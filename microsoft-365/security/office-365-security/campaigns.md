@@ -9,7 +9,6 @@ ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,17 +17,21 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 深入瞭解 Microsoft Defender for Office 365 中的市場即時檢視。
-ms.openlocfilehash: 20cb50a4b304e148df24e54fac3a05c484cfa4f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e3b9c1a9a19e38ea83b13d9028af1a6ba042b900
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794361"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165916"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的即時檢視
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Microsoft Defender for Office 365 方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 [活動] 視圖是 Microsoft Defender for Office 365 方案2中的功能 (例如，Microsoft 365 E5 或使用 Defender for Office 365 Plan 2 附加元件) 的組織。 安全性 & 合規性中心的即時檢視會識別和分類服務中的網路釣魚攻擊。 行銷活動檢視可協助您：
 

@@ -8,23 +8,28 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 ms.custom:
 - seo-marvel-apr2020
 description: 尋找在 Exchange Online Protection (EOP) 篩選程式期間，有關已排入佇列、延遲或退回之郵件的最常見問題的答案。
-ms.openlocfilehash: 4ae38e871c0d6e4321bd7586c5cfd0bea3aeef81
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 854e954e3ebb995ba23db2afc6f2ca9ab19de508
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202936"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165424"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>EOP 排入佇列、延後和退回的訊息常見問題集
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 本主題提供 Exchange Online Protection (EOP) 篩選程式期間已排入佇列、延遲或退回之郵件的常見問題解答。
 

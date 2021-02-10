@@ -8,7 +8,6 @@ manager: laurawi
 ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
@@ -16,17 +15,22 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 使用此逐步部署指南，在 Microsoft Office 365 中建立和設定隔離的 SharePoint Online 小組網站。
-ms.openlocfilehash: 5b37868759dd91fc49fb8354db893f52b8f534dd
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1b1f0342afc92b4540330417ad0fc9cabe1dc8a8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561736"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165496"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署獨立的 SharePoint Online 小組網站
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
  **摘要：** 使用下列逐步指示來部署新的獨立 SharePoint Online 小組網站。
 

@@ -8,23 +8,28 @@ manager: dansimp
 ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解 Exchange Online Protection (EOP) 如何協助保護您的內部部署電子郵件組織，以進行獨立和混合式環境。
-ms.openlocfilehash: 997f157432dced474ccc17bf47cf9af68f4b8c08
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b84ac26333163caec6117cf042044b9bbfad0a4f
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356712"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165454"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+-    [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+-    [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Exchange Online Protection (EOP) 是雲端架構篩選服務，可協助您的組織抵禦垃圾郵件和惡意程式碼。 EOP 包含 Exchange Online 信箱的所有 Microsoft 365 組織。 不過，下列內部部署案例也提供 EOP：
 
