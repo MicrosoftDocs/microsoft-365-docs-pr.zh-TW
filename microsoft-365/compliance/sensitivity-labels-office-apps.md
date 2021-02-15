@@ -1,5 +1,5 @@
 ---
-title: 在 Office 應用程式中使用敏感度標籤
+title: 在 Office app 中管理敏感度標籤
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,16 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
+description: IT 系統管理員的資訊，可管理 Office 應用程式中桌面、行動裝置及網路的靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95da9753d773e3bb9724a8d0ae2ab0e2f2618c27
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3f2be9310e6230bf0530670796dea56f775f365d
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233715"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242663"
 ---
-# <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
+# <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office app 中管理敏感度標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
@@ -205,7 +205,9 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>與外部使用者共用加密檔
 
-除了限制存取您自己組織中的使用者之外，您還可以將存取權擴充至在 Azure Active Directory 中具有帳戶的任何其他使用者。 在使用者成功驗證之後，所有 Office 應用程式和其他 [RMS enlightened 應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 都可以開啟加密檔。
+除了限制存取您自己組織中的使用者之外，您還可以將存取權擴充至在 Azure Active Directory 中具有帳戶的任何其他使用者。 不過，如果您的組織使用條件式存取原則，請參閱 [下一節](#conditional-access-policies) 中的其他考慮。
+
+在使用者成功驗證之後，所有 Office 應用程式和其他 [RMS enlightened 應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 都可以開啟加密檔。 
 
 如果外部使用者在 Azure Active Directory 中沒有帳戶，則可以使用您租使用者中的來賓帳戶進行驗證。 當您已 [在 SharePoint 及 OneDrive 中啟用 Office 檔案的靈敏度標籤](sensitivity-labels-sharepoint-onedrive-files.md)時，也可以使用這些來賓帳戶來存取 SharePoint 或 OneDrive 中的共用檔：
 
@@ -228,6 +230,16 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 > [!TIP]
 > 因為您無法確定外部使用者將使用受支援的 Office 用戶端應用程式，所以在為特定) 使用者建立來賓帳戶 (之後，從 SharePoint 和 OneDrive 中共用連結，以及在任何已驗證的使用者 SharePoint 使用 [OneDrive 和 B2B 與 AZURE AD (整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)) 時，都是比較可靠的方法，可支援與外部使用者的安全共同作業。
+
+### <a name="conditional-access-policies"></a>條件式存取原則
+
+如果您的組織已執行 [Azure Active Directory 條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，請檢查這些原則的設定。 若原則包含 Azure 資訊保護，而且原則擴充至外部使用者，則即使使用者在自己的租使用者中有 Azure AD 帳戶，這些外部使用者還是必須在您的租使用者中擁有來賓帳戶。
+
+若沒有此來賓帳戶，他們將無法開啟加密檔，並看到錯誤訊息。 郵件文字可能會通知他們，其帳戶必須新增為租使用者中的外部使用者，且錯誤的指示會以 **不同的 Azure Active Directory 使用者帳戶登出並重新登入**。
+
+如果您無法在租使用者中建立及設定來賓帳戶，以供需要開啟您標籤所加密檔的外部使用者使用，則必須從條件式存取原則中移除 Azure 資訊保護，或從原則中排除外部使用者。
+
+如需條件式存取和 Azure 資訊保護的詳細資訊，請參閱敏感度標籤所使用的加密服務、常見問題： [我看到 Azure 資訊保護已列為可供設定條件存取的雲端應用程式，這是如何運作的？](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office 應用程式何時套用內容標示和加密
 

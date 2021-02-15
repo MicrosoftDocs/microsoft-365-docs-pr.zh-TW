@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-topics
 localization_priority: None
 description: 瞭解如何尋找 Microsoft Viva 主題的資源。
-ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107167"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242863"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva 主題簡介
 
@@ -42,6 +42,9 @@ Viva 主題是 Office 365 服務，可協助組織將資訊轉換為知識。
 |深入瞭解 Viva 主題|[Microsoft Viva 主題概述](topic-experiences-overview.md)|
 |瞭解如何透過 AI 來探索及建議主題|[Microsoft Viva 主題探索](topic-experiences-discovery.md)|
 |深入瞭解主題安全性|[Microsoft Viva 的安全性和隱私權](topic-experiences-security-privacy.md)|
+|瞭解如何取得 Viva 主題|[Microsoft Viva 主題產品頁面](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|查看 Microsoft 技術社群資源中心的資源|[Microsoft Viva 主題技術社區](https://resources.techcommunity.microsoft.com/viva-topics/)|
+
 
 
 ## <a name="adoption"></a>採用

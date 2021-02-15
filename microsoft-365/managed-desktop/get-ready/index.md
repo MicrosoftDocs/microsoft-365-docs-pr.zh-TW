@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 335fd660a2e132944a25e129b2f2fe03b51fda21
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: fa8a7170b3e738e4c90263ef3994238e328e982b
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529490"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242719"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>準備註冊 Microsoft 受管理的電腦
 
@@ -26,4 +26,5 @@ ms.locfileid: "46529490"
 - [為 Microsoft 受管理的電腦準備認證和網路設定檔](certs-wifi-lan.md)
 - [為 Microsoft 受管理的電腦準備列印資源](printing.md)
 - [Microsoft 受管理電腦中的應用程式](apps.md)
+- [使用整備評估工具](readiness-assessment-tool.md)
 

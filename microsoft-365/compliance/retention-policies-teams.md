@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: 675a98656655521095096a535d4ee8352885e70c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2541519ad9082383c5381452722d023f23760798
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166458"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242709"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -43,21 +43,22 @@ ms.locfileid: "50166458"
 > [!NOTE]
 > 包括卡片內容是最近新增的，目前正在向租用戶推出。 有關更多資訊，請參閱[透過 Teams 中應用程式之針對調適型卡片內容的 Microsoft 365 合規性功能已上線](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)。
 
-不包括私人頻道中的 Teams 訊息，也不包括程式碼片段和其他人以表情符號形式傳送的回應。
+保留原則目前不支援私人頻道中的 Teams 訊息。 當您對 Teams 使用保留原則時，系統不會包含來自 Teams 行動用戶端的程式碼片段、錄製的語音備忘錄，以及來自其他人表情符號形式的反應。
 
 Teams 保留原則中不包括與 Teams 一起使用的電子郵件和檔案。 這些項目有各自的保留原則。
-
-下列依 RecipientTypeDetails 的信箱支援使用 Teams 保留原則：
-
-- MailUser
-- UserMailbox
-- GroupMailbox
-- ArbitrationMailbox
-- SharedMailbox
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>保留如何與 Microsoft Teams 搭配使用
 
 您可以使用保留原則來保留和刪除 Teams 中的聊天與頻道訊息之資料。 在幕後，會使用 Exchange 信箱來儲存這些訊息。 來自 Teams 聊天的資料會儲存在聊天內包含的每個使用者信箱的隱藏資料夾中，且會將群組信箱中的一個類似的隱藏資料夾用於 Teams 頻道訊息。
+
+這些信箱是依其 RecipientTypeDetails 屬性列出：
+
+- **UserMailbox**：這些信箱會儲存擁有 Exchange Online 信箱的 Teams 使用者的訊息。
+- **MailUser**：這些信箱會儲存擁有內部部署 Exchange 伺服器而非 Exchange Online 信箱的 Teams 使用者訊息。
+- **使用者**：這些信箱會儲存沒有 Exchange Online 或內部部署 Exchange 伺服器信箱的 Teams 使用者的訊息。
+- **GroupMailbox**：這些信箱會儲存 Teams 頻道的訊息。
+
+Teams 保留原則不支援的其他信箱類型，例如用於 Teams 會議室的 RoomMailbox。
 
 請務必了解 Teams 使用的聊天服務是由 Azure 所提供，此服務也會儲存 Teams 的資料，且會根據預設永久保存。 因此，如果您因合規性原因而需要刪除 Teams 訊息，建議您使用能夠永久從 Exchange 信箱和基礎 Azure 提供的交談服務中刪除該資料的 Teams 保留原則。 如需詳細資訊，請參閱 [Microsoft Teams 中的安全性與合規性](https://go.microsoft.com/fwlink/?linkid=871258)，特別是[資訊保護架構](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)一節。
 

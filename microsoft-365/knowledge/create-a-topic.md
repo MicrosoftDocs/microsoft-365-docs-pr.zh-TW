@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107231"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242879"
 ---
 # <a name="create-a-new-topic"></a>建立新主題 
 
@@ -38,7 +38,19 @@ ms.locfileid: "50107231"
 > [!Note] 
 > 有權管理主題中心主題的使用者 (知識管理員) 已具備建立及編輯主題的許可權。
 
-## <a name="to-create-a-new-topic"></a>若要建立新的主題：
+## <a name="to-create-a-topic"></a>若要建立主題
+
+您可以從兩個位置建立新的主題：
+
+- 主題中心首頁：具有 **可建立或編輯主題** 許可權 (參與者的任何授權使用者) 可以從主題中心建立新的主題，方法是選取 [ <b>新增</b> ] 功能表，然後選取 [ <b>主題] 頁面</b>。</br> 
+
+    ![主題中心的新主題](../media/knowledge-management/new-topic.png) </br> 
+
+- 「管理主題」頁面：任何有 **權管理主題** 許可權的授權使用者 (知識管理員) 可以從主題中心的 [管理主題] 頁面，選取 [ <b>新增主題] 頁面</b>，以建立新的主題。</br> 
+
+    ![管理主題中的新主題](../media/knowledge-management/new-topic-topic-center.png) </br> 
+
+### <a name="to-create-a-new-topic"></a>若要建立新的主題：
 
 1. 在 [ **名稱這個主題** ] 區段中，輸入新主題的名稱。
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何尋找 Microsoft SharePoint Syntex 的資源。
-ms.openlocfilehash: 02f3da4e03d13b0710590336e49292ac6df70560
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 21dc0e29e9322b4c009b0f1e63b7bfbc4b92da9a
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044753"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242697"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 簡介
 
@@ -45,8 +45,8 @@ Microsoft SharePoint Syntex 是 Office 365 服務，可協助組織：
 |深入了解文件瞭解|[文件瞭解概觀](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)|
 |深入了解表單處理|[表單處理概觀](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)|
 |了解兩種方法的差異︰|[文件瞭解和表單處理模型之間的差異](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
-|查看 Microsoft 技術社群資源中心的資源|[SharePoint Syntex - Microsoft 365 中的内容服務](https://resources.techcommunity.microsoft.com/sharepoint-syntex/)|
-|Microsoft 技術社群資源中心的 SharePoint Syntex 常見問題集 |[SharePoint Syntext - 常見問題集](https://resources.techcommunity.microsoft.com/project-cortex-microsoft-365/faq/)|
+|查看 Microsoft 技術社群資源中心的資源|[SharePoint Syntex - Microsoft 365 中的内容服務](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
+|Microsoft 技術社群資源中心的 SharePoint Syntex 常見問題集 |[SharePoint Syntext - 常見問題集](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |如何取得 SharePoint Syntex |[SharePoint Syntex 產品頁面](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
 
 ## <a name="adoption"></a>採用
@@ -76,6 +76,7 @@ Microsoft SharePoint Syntex 是 Office 365 服務，可協助組織：
 |將保留標籤套用至模型|[將保留標籤套用至文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |在建立擷取器時使用受管理的中繼資料服務字詞庫分類法|[在建立擷取器時運用字詞庫分類法](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |了解如何查看您模型的資料|[模型流量分析](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
+|瞭解如何在訓練模型時使用協助工具模式|[SharePoint Syntex 協助工具模式](https://docs.microsoft.com/microsoft-365/contentunderstanding/accessibility-mode)|
 
 ## <a name="premium-services"></a>進階服務
 

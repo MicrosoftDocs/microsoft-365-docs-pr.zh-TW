@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: c0fdfc83bbdb8ec4c2f408cef113a487908957bf
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 9dc2f4c0923f52bfc83a9177b595a6955a3afa8f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110026"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242731"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (一般) 
 
@@ -95,6 +95,15 @@ ms.locfileid: "50110026"
 |:-------|:-----|:-------|:-------|
 | 將商務用 Skype 遷移至小組。 | 現有商務用 Skype 客戶會遷移至歐洲的 Office 365 服務，然後轉換為 Office 365 服務的德國地區中的 Microsoft 團隊。 | 商務用 Skype 客戶 | -使用者無法在遷移日期登入商務用 Skype。 遷移前的10天，我們會發佈到系統管理中心，讓您瞭解何時進行遷移，以及當我們開始遷移時，會發生什麼情況。 <br><br> -已遷移原則設定。 <br><br> -將使用者遷移至小組，並在遷移後不再具有商務用 Skype。 <br><br> -使用者必須已安裝團隊桌面用戶端。 安裝將透過商務用 Skype 基礎結構上的原則進行，但如果失敗，使用者仍需下載用戶端或使用支援的瀏覽器進行連線。 <br><br> -連絡人和會議會遷移到小組。 <br><br> -使用者無法在時間服務轉換為 Office 365 服務時登入商務用 Skype，而不能在客戶 DNS 專案完成之前登入。 <br><br> -連絡人和現有的會議將繼續充當商務用 Skype 會議。 |
 |||||
+
+
+## <a name="office-apps-phase-8-of-9"></a>Office App (階段8之 9) 
+
+| 步驟 (s)  | 描述 | 適用於 | 影響 |
+|:-------|:-----|:-------|:-------|
+| 用戶端，office Online 在 Office 用戶端轉換時，Azure AD 已完成租使用者範圍以指向 Office 365 服務。 | 這種設定變更可讓 Office 用戶端更新並指向 Office 365 服務端點。 | 所有 Office 客戶 | -通知使用者關閉 _所有_ Office 應用程式，然後重新登入 (或強制用戶端重新開機，或強制使用者登入) ，以讓 Office 用戶端選擇變更。 <br><br> -通知使用者和問訊台人員使用者 *可能會* 看到 office 橫幅，提示他們在轉換的72小時內重新啟用 office 應用程式。 <br><br> -必須關閉個人電腦上的所有 Office 應用程式，且使用者必須登出後再登入。 在黃色啟用欄中，登入以重新啟用 Office 365 服務。 <br><br> -共用電腦需要與個人電腦類似的動作，而且不需要特殊的程式。 <br><br> -在行動裝置上，使用者必須登出應用程式，關閉它們，然後再次登入。 |
+|||||
+
 
 ## <a name="office-services"></a>Office 服務
 

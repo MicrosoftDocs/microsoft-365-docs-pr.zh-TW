@@ -30,6 +30,8 @@
       href: model-usage-analytics.md
     - name: 在建立擷取器時運用字詞庫分類法
       href: leverage-term-store-taxonomy.md
+    - name: SharePoint Syntex 協助工具模式
+      href: accessibility-mode.md
 - name: 採用
   items:
     - name: 開始使用採用
