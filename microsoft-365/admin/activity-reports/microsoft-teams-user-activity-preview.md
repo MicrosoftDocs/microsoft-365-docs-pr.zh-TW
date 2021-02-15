@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何取得 Microsoft 團隊使用者活動報告，並深入瞭解組織中的小組活動。
-ms.openlocfilehash: 7e32ca6b665cab9da93dec9632ef25176db0e839
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: e8e4ab6fd78fb290243d8fdc780b5a7a14ca2ee0
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611397"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233407"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>系統管理中心的 microsoft 365 報告-Microsoft 團隊使用者活動
 
@@ -45,6 +45,8 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
 您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 **音訊時間**、**影片時間** 和 **螢幕共用時間** 的匯出格式會遵循 ISO8601 持續時間格式。
+
+您可以針對過去7天、30天、90天或180天的趨勢，查看 **Microsoft 團隊使用者活動** 報告。 不過，如果您在報告中選取某一天，則 table (7) 會從目前的日期顯示最多28天的資料， (不是) 產生報表的日期。
 
 為了確保資料品質，我們會在過去三天執行每日資料驗證檢查，並填入偵測到的任何空隙。 在處理過程中，您可能會發現歷史資料的差異。
 

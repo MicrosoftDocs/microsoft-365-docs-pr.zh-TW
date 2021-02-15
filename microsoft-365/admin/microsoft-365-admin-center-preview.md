@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: 深入瞭解 Microsoft 365 系統管理中心。
-ms.openlocfilehash: 2e54ad576b944153332aaec2012538e84c444db1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: da2b54e5f69fcc1209459b02220c0ead3f564067
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645068"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233383"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 
@@ -57,11 +57,11 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
 
 2. 移至 [ **發行偏好** 設定卡]，然後選取 [ **編輯**]。 
     
-3. **為所選使用者**選取 [所有人] 或 [目標版本]**的 [目標版本**]。 如果您為選取的使用者選擇 [目標版本]，請務必在您的組織中新增您的系統管理員帳戶 (和任何其他系統管理員，以加入) 至選取的使用者清單。
+3. **為所選使用者** 選取 [所有人] 或 [目標版本]**的 [目標版本**]。 如果您為選取的使用者選擇 [目標版本]，請務必在您的組織中新增您的系統管理員帳戶 (和任何其他系統管理員，以加入) 至選取的使用者清單。
     
 ### <a name="admin-center-feedback"></a>系統管理員中心意見反應
 
-[！附注] 在系統管理中心中，您可以在每一頁底部的 [**需要協助 ...** ] 按鈕上，選取 [**提供意見**反應]，以提供有關您的體驗的 Microsoft 意見反應。 請告訴我們您喜歡的專案，以及我們能夠做什麼。 此外，您還可以從向下取得整體印象或新發佈之特定經驗的時間，取得彈出的調查。 您也可以在本文結束時提供意見反應，請選取 [ **此資訊是否有説明？**
+[！附注] 在系統管理中心中，您可以在每一頁底部的 [**需要協助 ...** ] 按鈕上，選取 [**提供意見** 反應]，以提供有關您的體驗的 Microsoft 意見反應。 請告訴我們您喜歡的專案，以及我們能夠做什麼。 此外，您還可以從向下取得整體印象或新發佈之特定經驗的時間，取得彈出的調查。 您也可以在本文結束時提供意見反應，請選取 [ **此資訊是否有説明？**
   
 ::: moniker-end
 
@@ -116,5 +116,53 @@ Microsoft 365 系統管理中心是所有用來管理 Microsoft 365 的團隊和
 - [Microsoft 365 裝置管理的概述](https://go.microsoft.com/fwlink/?linkid=2006262)
     
 - [介紹 Microsoft 365 安全性與合規性中心](https://go.microsoft.com/fwlink/?linkid=2025413)
+
+## <a name="what-language-options-are-available-the-admin-center"></a>系統管理中心可使用哪些語言選項？
+
+Microsoft 365 系統管理中心已完全當地語系化為40語言。
+
+|語言 |Locale |
+|---------|---------|
+|阿拉伯文 | Ar |
+|保加利亞文 | Bg |
+|加泰隆尼亞文 | 約 |
+|捷克文 | Cs |
+|丹麥文 | 大 |
+|德文 | 德 |
+|希臘文 | el |
+|西班牙文 | e |
+|英文 | 途中 |
+|愛沙尼亞文 | et |
+|巴斯克文 | 歐盟 |
+|芬蘭文 | wi-fi |
+|法文 | fr |
+|加利西亞文 | Gl |
+|希伯來文 | 他 |
+|克羅埃西亞文 | hr |
+|匈牙利文 | 胡 |
+|印尼文  | id |
+|義大利文 | 會 |
+|日文 | ja |
+|韓文 | ko-kr |
+|立陶宛文 | 淺色 |
+|拉脫維亞文 | 低壓 |
+|荷蘭文 | 吧 |
+|挪威文 | 否 |
+|波蘭文 | Pl |
+|巴西 ( 葡萄牙文)  | 鉑 |
+|葡萄牙文 (葡萄牙) | pt-pt |
+|羅馬尼亞文 | Ro |
+|俄文 | 如 |
+|斯洛伐克文 | Sk |
+|斯洛維尼亞文 | sl |
+|塞爾維亞文 (斯拉夫)  | sr-1 cyrl |
+|Serbian Latin | 鍶 |
+|瑞典文 | Sv |
+|泰文 | k |
+|土耳其文 | Tr |
+|烏克蘭文 | 英國 |
+|越南文 | 六 |
+|Chinese Simplified | zh-cn-hans |
+|Chinese Traditional | zh-cn-hant |
 
 ::: moniker-end

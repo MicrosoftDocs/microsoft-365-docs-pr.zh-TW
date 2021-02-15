@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,30 +14,31 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境，以使用僅限雲端驗證的先決條件測試身分識別與裝置存取。
-ms.openlocfilehash: aa18e1a9943ec12465737f6c3f2e12c1fa49e2a3
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 1e659304eee330960937b641c9a39b03920f52e7
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398874"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233127"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中僅限雲端的先決條件
 
 *此測試實驗室指南僅可用於適用于企業測試環境的 Microsoft 365。*
 
-身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組設定和條件式存取原則，可保護與 Azure Active Directory (azure AD) 整合的所有服務存取。
+身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組建議的設定和條件式存取原則，可保護對與 Azure Active Directory (azure AD) 整合的所有服務的存取。
 
 本文說明如何設定符合[僅限雲端先決條件組態](../security/office-365-security/identity-access-prerequisites.md#prerequisites)需求、用於身分識別與裝置存取的 Microsoft 365 測試環境。
 
-設定此測試環境有七個階段：
+設定此測試環境有八個階段：
 
-1.  建立輕量型測試環境
-2.  設定具名位置
-3.  設定密碼回寫
-4.  啟用自助式密碼重設
-5.  設定多重要素驗證
-6.  啟用 Azure AD Identity Protection
-7.  為 Exchange Online 和商務用 Skype Online 啟用新式驗證
+1. 建立輕量型測試環境
+2. 設定具名位置
+3. 設定自助式密碼重設
+4. 設定多重要素驗證
+5. 啟用加入網域之 Windows 電腦的自動裝置註冊
+6. 設定 Azure AD 密碼保護 
+7. 啟用 Azure AD Identity Protection
+8. 為 Exchange Online 和商務用 Skype Online 啟用新式驗證
 
 ## <a name="phase-1-build-out-your-lightweight-microsoft-365-test-environment"></a>階段 1：建立輕量型 Microsoft 365 測試環境
 
@@ -47,22 +47,17 @@ ms.locfileid: "48398874"
 
 ![輕量型 Microsoft 365 企業版測試環境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
-
 ## <a name="phase-2-configure-named-locations"></a>階段 2：設定具名位置
 
 首先，判斷組織使用的公用 IP 位址或位址範圍。
 
 接下來，遵循[在 Azure Active Directory 中設定具名位置](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)中的指示，新增位址或位址範圍做為具名位置。 
 
-## <a name="phase-3-configure-password-writeback"></a>階段 3：設定密碼回寫
-
-遵循[測試實驗室指南密碼回寫階段 2](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) 中的指示。
-
-## <a name="phase-4-configure-self-service-password-reset"></a>階段 4：設定自助式密碼重設
+## <a name="phase-3-configure-self-service-password-reset"></a>階段3：設定自助密碼重設
 
 遵循[測試實驗室指南密碼重設階段 3](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset) 中的指示。 
 
-為特定 Azure AD 群組中的帳戶啟用重設密碼時，請將下列帳戶新增至**重設密碼**群組：
+為特定 Azure AD 群組中的帳戶啟用重設密碼時，請將下列帳戶新增至 **重設密碼** 群組：
 
 - 使用者 2
 - 使用者 3
@@ -71,7 +66,7 @@ ms.locfileid: "48398874"
 
 僅對使用者 2 帳戶測試密碼重設。
 
-## <a name="phase-5-configure-multi-factor-authentication"></a>階段 5：設定多重要素驗證
+## <a name="phase-4-configure-multi-factor-authentication"></a>階段4：設定多重要素驗證
 
 針對下列使用者帳戶，遵循[測試實驗室指南多重要素驗證階段 2](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) 中的指示：
 
@@ -82,11 +77,19 @@ ms.locfileid: "48398874"
 
 僅針對使用者 2 帳戶測試多重要素驗證。
 
-## <a name="phase-6-enable-azure-ad-identity-protection"></a>階段 6：啟用 Azure AD Identity Protection
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>階段5：啟用加入網域的 Windows 電腦的自動裝置註冊 
+
+遵循 [下列指示](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) ，啟用已加入網域之 Windows 電腦的自動裝置註冊。
+
+## <a name="phase-6-configure-azure-ad-password-protection"></a>階段6：設定 Azure AD 密碼保護 
+
+請遵循 [這些指示](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) 來封鎖已知的弱密碼及其變種。
+
+## <a name="phase-7-enable-azure-ad-identity-protection"></a>階段 7：啟用 Azure AD Identity Protection
 
 遵循[測試實驗室指南 Azure AD Identity Protection 階段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) 中的指示。 
 
-## <a name="phase-7-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>階段 7：為 Exchange Online 和商務用 Skype Online 啟用新式驗證
+## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>階段 8：為 Exchange Online 和商務用 Skype Online 啟用新式驗證
 
 若為 Exchange Online，請遵循[這些指示](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)。 
 
@@ -106,7 +109,7 @@ ms.locfileid: "48398874"
   Get-CsOAuthConfiguration
   ```
 
-結果會是符合[僅限雲端先決條件組態](../security/office-365-security/identity-access-prerequisites.md#prerequisites)需求、用於身分識別與裝置存取的測試環境。 
+結果是一種測試環境，可滿足身分識別與裝置存取之 [僅雲端](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 必要條件設定的需求。 
 
 ## <a name="next-step"></a>下一步
 
@@ -122,4 +125,4 @@ ms.locfileid: "48398874"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)

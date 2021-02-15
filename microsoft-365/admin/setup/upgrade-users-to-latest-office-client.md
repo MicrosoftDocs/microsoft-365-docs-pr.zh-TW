@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 深入瞭解如何將 Microsoft Office 升級為組織中使用者的最新 Office 用戶端。
-ms.openlocfilehash: 596dfc8f4a005d01c0bf330243bf1fb3c639f97e
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3f8ea0d16e1c27414b5f3e11e842e336fadb3e75
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906438"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233315"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>將您的 Microsoft 365 for business 使用者升級至最新的 Office 用戶端
 
@@ -93,7 +93,7 @@ Office 2010 在10月13日，2020已到達支援的結束。 Microsoft 將無法�
 
  - 購買 Office 的個別購買一次。 請參閱 [Office 家用 &amp; Business](https://products.office.com/home-and-business) Or [office 專業版](https://products.office.com/professional)
 
-     OR
+     「或」
 
  - 透過大量授權，購買 Office 的多個副本。 請參閱， [比較透過大量授權可使用的套件](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison)。
 
@@ -102,6 +102,9 @@ Office 2010 在10月13日，2020已到達支援的結束。 Microsoft 將無法�
 在安裝最新版的 Office 之前，建議您先卸載所有舊版的 Office。 不過，如果您變更升級 Office 的主意，請注意下列在卸載 Office 之後無法重新安裝 Office 的情況。
   
 建議您在使用協力廠商增益集時，請與製造商聯繫，以查看是否有更新可搭配最新版 Office 使用。
+
+> [!TIP]
+> 如果您在卸載 Office 時發生問題，您可以使用 Microsoft 支援及修復小幫手工具來協助您移除 Office： [下載並執行 Microsoft 支援與修復助理](https://go.microsoft.com/fwlink/?LinkID=2155008)。
 
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>選取您要卸載的 Office 版本
 

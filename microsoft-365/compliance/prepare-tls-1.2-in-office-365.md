@@ -1,7 +1,7 @@
 ---
 title: 在 Office 365 和 Office 365 GCC 中準備 TLS 1.2
 description: 停用 TLS 1.0 和 1.1 支援後，如何準備好以便 Office 365 與 Office 365 GCC 中的所有用戶端-伺服器及瀏覽端伺服器組合可以使用 TLS 1.2。
-author: workshay
+author: kccross
 manager: laurawi
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 4cc1fc739ee7fbcc4b976ae6e3f220713a53a007
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 8078f5de698adf437e843a423fe9e82c5e4dd8de
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681655"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233117"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>在 Office 365 和 Office 365 GCC 中準備 TLS 1.2
 
@@ -35,6 +35,8 @@ ms.locfileid: "48681655"
 自 2020 年 1 月起，我們已經開始淘汰 TLS 1.0 和 1.1。 不支援透過 DoD 或 GCC High 執行個體中的 TLS 1.0 或 1.1 連線至 Office 365 的任何用戶端、裝置或服務。 對於我們商務用 Office 365 的客戶而言，TLS 1.0 和1.1 的過時會從10月15日開始，2020和推廣會在下列星期和月份繼續進行。 
 
 為維持 Office 365 服務連線，我們推薦所有用戶端-伺服器及瀏覽器伺服器組合都使用 TLS 1.2（或更新版本）。 您可能必須更新特定的用戶端-伺服器及瀏覽器伺服器組合。
+
+您必須更新透過 TLS 1.0 或 TLS 1.1 呼叫 Microsoft 365 APIs 的應用程式，才能使用 TLS 1.2。 .NET 4.5 的預設值為 TLS 1.1。 若要更新您的 .NET 設定，請參閱 [如何在用戶端上啟用傳輸層安全性 (TLS) 1.2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
 
 已知下列用戶端不能使用 TLS 1.2。 請更新用戶端以確保順利存取服務。
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 取得 Microsoft SharePoint Syntex 中文件瞭解的概覽。
-ms.openlocfilehash: c0396c8e702d3e32db93d26dba23ab038546bea0
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d2bf581468eeee008d09a242876bed5ad07ae01f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976516"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242407"
 ---
 # <a name="document-understanding-overview"></a>文件瞭解概觀
 
@@ -46,10 +46,45 @@ ms.locfileid: "49976516"
 
 您可以在模型中使用範例檔案來訓練和測試分類器和擷取器。 範例檔案向您的模型範例提供在嘗試從檔案中識別和擷取資料時要查找的內容。 例如，您會以貴公司使用的合同續約文件範例來訓練您的合同續約分類器和擷取器。 您也可以使用範例檔案來測試模型的有效性。
 
-> [!NOTE]
-> 如果您使用光學字元辨識 (OCR) 技術來掃描文件，則Syntex 的模型訓練會有15頁之限制。
-
 發佈模型之後，請使用內容中心將它套用到您有權存取的任何 SharePoint 文件庫。  
+
+### <a name="file-limitations"></a>檔案限制
+
+文件瞭解模型：使用光學字元辨識 (OCR) 技術，在您使用範例檔案訓練模型時以及當您針對文件庫中的檔案執行模型時，掃描 PDF、影像和 TIFF 檔案。
+
+請注意有關於 Microsoft Office 文字型檔案與 OCR 掃描檔案 (PDF、影像或 TIFF) 的下列差異：
+
+- Office 檔案：我們會在 64K 字元截斷 (在訓練中以及針對文件庫中的檔案執行時)。
+- OCR 掃描檔案：頁面上限為 20 頁。  
+
+#### <a name="supported-file-types"></a>支援的檔案類型
+
+文件瞭解模型支援下列檔案類型：
+
+- doc
+- docx
+- eml
+- heic
+- heif
+- htm
+- html
+- jpeg
+- jpg
+- markdown
+- md
+- msg
+- pdf
+- png
+- ppt
+- pptx
+- rtf
+- tif
+- tiff
+- txt
+- xls
+- xlsx
+
+
 
 ## <a name="see-also"></a>另請參閱
 [建立分類器](create-a-classifier.md)
@@ -65,3 +100,5 @@ ms.locfileid: "49976516"
 [文件瞭解和表單處理模型之間的差異](difference-between-document-understanding-and-form-processing-model.md)
   
 [表單處理概觀](form-processing-overview.md)
+
+[SharePoint Syntex 協助工具模式](accessibility-mode.md)

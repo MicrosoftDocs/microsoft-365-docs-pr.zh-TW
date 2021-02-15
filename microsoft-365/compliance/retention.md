@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: d834cc53677c8b7c01ed4bec40ed51983d41e9da
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: 3d317a0a26d69eb46b8bb84253571b7d14f9836b
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084622"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242487"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
@@ -449,7 +449,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
     
 - [設定就地記錄管理](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (僅保留) 
     
-- [網站關閉及刪除的使用原則](https://support.microsoft.com/zh-TW/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (僅刪除) 
+- [網站關閉及刪除的使用原則](https://support.microsoft.com/zh-TW/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (僅刪除)
     
 - [資訊管理原則](intro-to-info-mgmt-policies.md) (僅刪除)
      

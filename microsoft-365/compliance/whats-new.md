@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案加入至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的合規性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 40140c950bb42078cb1e72ae74762db00a4516b6
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113972"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233161"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
@@ -35,6 +35,25 @@ ms.locfileid: "50113972"
 > [!TIP]
 > 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 請造訪 [microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，以瞭解已啟動、已開發、已取消或先前發佈的 microsoft 365 功能。
+
+## <a name="january-2021"></a>2021 年 1 月
+
+### <a name="support-for-card-content-in-teams"></a>支援小組中的卡片內容
+
+下列 Microsoft 365 規範解決方案現在支援透過小組訊息中的應用程式所產生的 [卡片內容](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards) 的偵測：
+
+- **核心和高級 eDiscovery**。 現在，卡片內容可以 [保留](create-ediscovery-holds.md#preserve-card-content) 或納入 [搜尋](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#search-for-card-content) (套用至內容搜尋) 。
+- **Audit**。 [卡片] 活動現在會 [記錄到審核記錄](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities)檔。
+- **保留原則**。 現在可以使用保留原則來 [保留和刪除卡片內容](retention-policies-teams.md#whats-included-for-retention-and-deletion)。
+
+### <a name="information-governance-and-records-management"></a>資訊管理與記錄管理
+
+使用資訊控管和記錄管理來處理的[新評估](retention-regulatory-requirements.md#new-zealand-public-records-act)，可協助滿足紐西蘭公開記錄法案的合規性義務。
+
+### <a name="sensitivity-labels"></a>敏感度標籤
+
+- 現在，我們的政府承租人 (GCC 和 GCC-H) 支援敏感度標籤。
+- MacOS 的新 [自動標籤](sensitivity-labels-office-apps.md) 支援。
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -240,29 +259,3 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 
 - 在 [將集合新增至審閱集](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review)時，您現在可以包含新式附件 (也稱為「雲端附件」 ) 及 SharePoint 檔版本。
 - 新的 [直接下載匯出體驗](export-documents-from-review-set.md)，不再需要使用 Azure 存放區瀏覽器來下載案例內容。
-
-## <a name="july-2020"></a>2020 年 7 月
-
-### <a name="spotlight-on-help-docs"></a>在説明檔上的聚光燈
-
-為了協助您瞭解哪些相容性解決方案是用來保護和管理組織的機密資料，我們會建立兩個新的登陸頁面，並概述解決方案如何協同運作以達成這些目標，包括相關檔的連結，讓您可以進一步深入。
-
-[請參閱 Microsoft 365 中的 Microsoft 資訊保護。](information-protection.md)<br>
-[Microsoft 365 中的 Microsoft 資訊控管功能](manage-Information-governance.md)
-
-### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Advanced eDiscovery：將非 custodial 資料來源新增至您的案例
-
-將資料新增至案例，而不需將它與保管人 (稱為 [非 custodial 資料來源](non-custodial-data-sources.md)) 。 而且，如果您需要將此非 custodial 資料保留，您可以使用新的高級索引功能來執行。
-
-### <a name="data-connectors-hr-connector-enhancements"></a>資料連線器：人力資源連接器增強功能
-
- (在預覽中) [HR connector](import-hr-data.md) 的新版本可讓您匯入與工作層級變更、效能檢查和效能改進計畫相關的資料。 您可以在數個 [內幕人士風險原則](insider-risk-management-policies.md) 中使用此資料，以偵測相關的活動。
-
-### <a name="retention-labels-new-support-for-email"></a>保留標籤：電子郵件的新支援
-
-您現在可以建立 [保留標籤](retention.md#retention-labels) ，根據郵件的標籤開始保留電子郵件。 這不會套用至會根據傳送專案時保留的行事曆專案。
-
-### <a name="sensitivity-labels-new-feature-and-an-improvement"></a>敏感度標籤：新增功能與改進
-
--  (在預覽中) 設定標籤的加密設定時，請尋找新的選項，以使用 [雙金鑰加密](encryption-sensitivity-labels.md#double-key-encryption) 進一步保護已標示的檔案和電子郵件。
-- 建立或刪除靈敏度標籤或建立、編輯或刪除其標籤原則時，變更現在會在1小時內同步處理至所有使用者、應用程式及服務。

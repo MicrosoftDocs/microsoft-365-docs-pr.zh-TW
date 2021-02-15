@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可在 Microsoft 365 中搜尋的使用者內容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fe6df03491350c33416021523f276e203a416fc9
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: 28e61665d286292f8ba301c313fc3d9bb13065c1
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099733"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233189"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -36,13 +36,17 @@ ms.locfileid: "50099733"
   
 ![規範界限是由控制對電子檔或系統管理員角色群組存取的搜尋許可權篩選所組成，以控制 eDiscovery 案例的存取](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
-在此範例中，Contoso 有限公司是由兩個分公司、第四個咖啡和 Coho Winery 所組成的組織。 業務要求 eDiscovery mangers 和調查人員只能在其代理人中搜尋 Exchange 信箱、OneDrive 帳戶及 SharePoint 網站。 此外，eDiscovery 管理員和調查人員只會查看其代理人中的 eDiscovery 案例，而且只能存取他們隸屬的案例。 以下是規範界限如何符合這些需求。
+在此範例中，Contoso 有限公司是由兩個分公司、第四個咖啡和 Coho Winery 所組成的組織。 業務要求 eDiscovery mangers 和調查人員只能在其代理人中搜尋 Exchange 信箱、OneDrive 帳戶及 SharePoint 網站。 此外，eDiscovery 管理員和調查人員只會查看其代理人中的 eDiscovery 案例，而且只能存取他們隸屬的案例。 此外，在這種情況下，調查人員無法保留內容位置或從案例中匯出內容。 以下是規範界限如何符合這些需求。
   
 - 內容搜尋中的搜尋許可權篩選功能會控制 eDiscovery 管理員和調查人員可搜尋的內容位置。 這表示第四個咖啡機關中的 eDiscovery 管理員和調查人員，只能在第四個咖啡店中搜尋內容位置。 這種限制適用于 Coho Winery 子公司。
 
-    角色群組控制誰可以查看安全性 & 合規性中心內的 eDiscovery 案例。 這表示 eDiscovery 管理員和調查人員只能查看其代理人中的 eDiscovery 案例。
+- 角色群組為符合性界限提供下列功能：
 
-- 角色群組也會控制誰可以指派成員至 eDiscovery 案例。 這表示 eDiscovery 管理員和調查人員只能將成員指派給他們本身是其成員的情況。
+  - 控制哪些人員可以查看安全性 & 合規性中心內的 eDiscovery 案例。 這表示 eDiscovery 管理員和調查人員只能查看其代理人中的 eDiscovery 案例。
+
+  - 控制誰可以指派成員至 eDiscovery 案例。 這表示 eDiscovery 管理員和調查人員只能將成員指派給他們本身是其成員的情況。
+
+  - 新增或移除指派特定許可權的角色，以控制可執行成員的 eDiscovery 相關工作。
 
 以下是設定規范界限的程式：
   
@@ -120,6 +124,8 @@ ms.locfileid: "50099733"
 
 - Coho Winery 調查人員
   
+為了符合 Contoso 合規性邊界案例的需求，您也可以移除「調查人員」角色群組中的 **保留** 和 **匯出** 角色，以防止調查人員在內容位置上放置保留，以及從案例中匯出內容。
+
 ## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>步驟4：建立搜尋許可權篩選以強制執行規范界限
 
 在您為每個代理商建立角色群組之後，下一步是建立搜尋許可權篩選器，將每個角色群組關聯至特定的代理人，並定義規範界限本身。 您必須為每個代理人建立一個搜尋許可權篩選。 如需建立安全性許可權篩選的詳細資訊，請參閱 [設定內容搜尋的許可權篩選](permissions-filtering-for-content-search.md)。
@@ -287,7 +293,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 搜尋許可權篩選不適用於 Exchange 公用資料夾。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>詳細資訊
 
 - 如果信箱是取消授權或虛刪除的，Azure AD 屬性就不再同步處理至信箱。 如果信箱已被刪除時保留在信箱上，則保留在信箱中的內容仍受限於符合性界限或搜尋許可權篩選器（根據上次在刪除信箱前同步處理 Azure AD 屬性的時間）。 
 
@@ -295,7 +301,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 符合性屬性每7天從使用者的 Exchange 信箱同步處理至其 OneDrive 帳戶。 如先前所述，此同步處理只會在使用者同時被指派 Exchange Online 和 SharePoint 線上授權，而且使用者的信箱至少為 10 MB 時發生。
 
-- 如果針對使用者的信箱和 OneDrive 帳戶執行規范界限和搜尋許可權篩選，則建議您不要刪除使用者的信箱，而不是刪除其 OneDrive 帳戶。 換句話說，如果您刪除使用者的信箱，您也應該移除該使用者的 OneDrive 帳戶。
+- 如果使用者的信箱和 OneDrive 帳戶都執行規范界限和搜尋許可權篩選，則建議您不要刪除使用者的信箱，而非刪除其 OneDrive 帳戶。 換句話說，如果您刪除使用者的信箱，您也應該移除該使用者的 OneDrive 帳戶。
 
 - 在某些情況下 (例如退回員工) ，而使用者可能會有兩個或多個 OneDrive 帳戶。 在這些情況下，只會同步處理 Azure AD 中的使用者相關的主要 OneDrive 帳戶。
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 報告取得 Microsoft 團隊應用程式使用方式報告，深入瞭解組織中所使用的 Microsoft 團隊應用程式。
-ms.openlocfilehash: 928ba7bbe4d4753499e71b347baffafa7441f5b5
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 54219b060767193e711c839d25780dd3b4a618bf
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988525"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233431"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>系統管理中心的 microsoft 365 報告-Microsoft 團隊裝置使用量
 
@@ -47,6 +47,8 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![小組使用者裝置報告-選擇欄](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
 您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
+
+**Microsoft 團隊裝置使用方式** 報告可查看過去7天、30天、90天或180天的趨勢。 不過，如果您在報告中選取某一天，則 table (7) 會從目前的日期顯示最多28天的資料， (不是) 產生報表的日期。
   
 |項目|描述|
 |:-----|:-----|

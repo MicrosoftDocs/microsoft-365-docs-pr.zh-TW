@@ -6,7 +6,6 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
-ms.date: 09/01/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -19,23 +18,23 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: e411eaa7874dee710cbb21dd02a4edd383003def
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 53d64d869b80c6fe5c6e0954a00af5b6f5359356
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142094"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233083"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
+
+**適用於**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- Azure
 
 本文說明系統管理員必須符合以使用建議的身分識別和裝置存取原則，以及使用條件式存取的必要條件。 此外，本文也會討論設定最佳單一登入 (SSO) 體驗的用戶端平臺的建議預設值。
 
 ## <a name="prerequisites"></a>必要條件
-
-**適用對象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- Azure
 
 在使用建議的身分識別與裝置存取原則之前，您的組織必須符合必要條件。 針對所列的各種身分識別和驗證模型，需求各有不同：
 
@@ -50,7 +49,7 @@ ms.locfileid: "50142094"
 |---|:---:|
 |[設定 PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。  這必須啟用以偵測已洩漏的認證，並針對風險型條件式存取採取行動。 **附注：** 不論您的組織是否使用同盟驗證，都是必要的。|僅雲端|
 |[啟用無縫單一登入](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) ，當使用者位於連接至組織網路的組織裝置時，自動簽署使用者。|僅限雲端和同盟|
-|[設定具名網路](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal)。 Azure AD Identity Protection 會收集和分析可產生風險分數的所有可用工作階段資料。 建議您在 Azure AD 命名為 [網路設定] 中，為您的網路指定您組織的公用 IP 範圍。 來自這些範圍的流量會獲得較低的風險分數，而來自組織環境以外的流量會獲得較高的風險排名。||
+|[設定命名的位置](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)。 Azure AD Identity Protection 會收集和分析可產生風險分數的所有可用工作階段資料。 建議您在 Azure AD 名稱位置設定中為您的網路指定您組織的公用 IP 範圍。 來自這些範圍的流量會獲得較低的風險分數，而來自組織環境以外的流量會獲得較高的風險排名。||
 |在[SSPR) 和多重要素驗證 (MFA) 時，註冊所有使用者的自助密碼重設 (](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)。 我們建議您提前註冊 Azure AD Multi-Factor 驗證的使用者。 Azure AD 身分識別保護會利用 Azure AD Multi-Factor 驗證，以執行其他安全性驗證。 此外，為了獲得最佳登入經驗，我們建議使用者在其裝置上安裝 [Microsoft 驗證者應用程式](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) 和 Microsoft 公司入口網站。 這些可從每個平臺的應用程式存放區安裝。||
 |[啟用已加入網域之 Windows 電腦的自動裝置註冊](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。 條件式存取會確定連接至應用程式的裝置已加入網域或相容性。 若要在 Windows 電腦上支援這個作業，則必須使用 Azure AD 註冊裝置。  本文討論如何設定自動裝置註冊。|僅雲端|
 |**準備支援小組**. 已有針對無法完成 MFA 的使用者的計劃。 這可能會將其新增至原則排除群組，或為其註冊新的 MFA 資訊。 在進行其中一項安全性敏感性變更之前，您必須確定實際的使用者正在進行要求。 需要使用者的管理員協助進行核准是有效的步驟。||
@@ -99,11 +98,11 @@ ms.locfileid: "50142094"
 
 |平台|Word/Excel/PowerPoint|OneNote|OneDrive 應用程式|SharePoint 應用程式|[OneDrive 同步處理用戶端](https://docs.microsoft.com/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 8.1|支援|支援|不適用|不適用|支援|
-|Windows 10|支援|支援|不適用|不適用|支援|
+|Windows 8.1|支援|支援|N/A|N/A|支援|
+|Windows 10|支援|支援|N/A|N/A|支援|
 |Android|支援|支援|支援|支援|N/A|
 |iOS|支援|支援|支援|支援|N/A|
-|macOS|支援|支援|不適用|不適用|不支援|
+|macOS|支援|支援|N/A|N/A|不支援|
 |Linux|不支援|不支援|不支援|不支援|不支援|
 |
 

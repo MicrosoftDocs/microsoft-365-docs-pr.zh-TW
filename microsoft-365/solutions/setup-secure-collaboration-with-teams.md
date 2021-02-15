@@ -16,16 +16,18 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: 瞭解如何設定小組中的安全內容共同作業，以根據其敏感度來保護您的資料。
-ms.openlocfilehash: f65657125fef8b8cf7e4e229d70d8fe211153392
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: c92dc6dbf62d3fa0cb00307447b3d5a793830394
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613581"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233853"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全的共同作業
 
 能夠輕易與適當的人員分享資訊，同時避免 oversharing 是組織成功的關鍵。 這包括可以安全地與只有應有存取權的使用者共用機密資料。 視專案而定，這可能包括與組織外部人員共用機密資料。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 這個共同作業方案指南包含兩個元件，可協助您：
 - 以適當的保護層級，為每個專案部署 Microsoft 團隊
@@ -64,7 +66,7 @@ ms.locfileid: "49613581"
 
 | 產品或元件 | 功能 | 授權 |
 |:-------|:-----|:-------|
-| Microsoft Defender for Office 365 | SPO、OneDrive 及小組的安全附件;安全檔;小組的安全連結    | Microsoft 365 E1，E3 和 E5 |
+| 適用於 Office 365 的 Microsoft Defender | SPO、OneDrive 及小組的安全附件;安全檔;小組的安全連結    | Microsoft 365 E1，E3 和 E5 |
 | SharePoint    | 網站與檔案共用原則、網站共用許可權、共用連結、存取要求、網站來賓共用設定 | Microsoft 365 E1，E3 和 E5 |
 | Microsoft Teams   | 來賓存取、私人團隊、專用通道 | Microsoft 365 E1，E3 和 E5 |
 | Microsoft 365 合規性  | 敏感度標籤    | Microsoft 365 E3 和 E5 |
@@ -82,7 +84,7 @@ ms.locfileid: "49613581"
 |:--|:-----------|:------------|:-------------------|
 |公用或私人團隊|兩者之一|Private|Private|
 |未經驗證的共用|已封鎖|已封鎖|已封鎖|
-|檔案共用|已允許|允許|只有小組擁有者可以共用。|
+|檔案共用|允許|允許|只有小組擁有者可以共用。|
 |小組成員資格|任何人都可以加入 public 團隊。<br>加入私人團隊所需的小組擁有者核准。|加入所需的小組擁有者核准。|加入所需的小組擁有者核准。|
 |檔加密|||可用於敏感度標籤|
 |來賓共用|允許|可以允許或封鎖|可以允許或封鎖|

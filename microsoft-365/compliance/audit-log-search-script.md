@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: 使用 PowerShell 指令碼，執行 Search-UnifiedAuditLog Cmdlet 來搜尋稽核記錄。 此指令碼經過最佳化，可傳回大量 (最多50,000) 稽核記錄。 指令碼會將這些記錄匯出為 CSV 檔案，您可以使用 Excel 中的 Power Query 來檢視或轉換。
-ms.openlocfilehash: d4fcf59297747d0499f6616438299ad8cbe96d7f
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+description: 使用 PowerShell 指令碼，在 Exchange Online 中執行 Search-UnifiedAuditLog Cmdlet，以搜尋稽核記錄檔。 此指令碼經過最佳化，可傳回大量 (最多50,000 筆) 稽核記錄。 指令碼會將這些記錄匯出為 CSV 檔案，您可以使用 Excel 中的 Power Query 來檢視或轉換。
+ms.openlocfilehash: 3d44054d8d1111fe86e06460f5ca4d442d0d1625
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094784"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233327"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 指令碼來搜尋稽核記錄
 
@@ -80,7 +80,7 @@ $intervalMinutes = 60
 
 Function Write-LogFile ([String]$Message)
 {
-    $final = [DateTime]::Now.ToString("s") + ":" + $Message
+    $final = [DateTime]::Now.ToUniversalTime().ToString("s") + ":" + $Message
     $final | Out-File $logFile -Append
 }
 
@@ -101,7 +101,7 @@ while ($true)
         break
     }
 
-    $sessionID = [DateTime]::Now.ToString("s")
+    $sessionID = [Guid]::NewGuid().ToString() + "_" +  "ExtractLogs" + (Get-Date).ToString("yyyyMMddHHmmssfff")
     Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     $currentCount = 0
@@ -137,14 +137,13 @@ while ($true)
 
 Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
 Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
-
 ```
 
 2. 修改下表中所列的變數以設定搜尋準則。 指令碼包含這些變數的範例值，但您應該變更這些值 (除非另有說明)，以符合您的特定需求。
 
    |變數|範例值|描述|
    |---|---|---|
-   |`$logFile`|"d:\temp\AuditSearchLog.txt"|指定記錄檔的名稱和位置，其中包含指令碼執行的稽核記錄搜尋進度相關資訊。|
+   |`$logFile`|"d:\temp\AuditSearchLog.txt"|指定記錄檔的名稱和位置，其中包含指令碼執行的稽核記錄搜尋進度相關資訊。 此指令碼會將 UTC 時間戳記寫入記錄檔。|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|指定 CSV 檔案的名稱和位置，該檔案包含指令碼所傳回的稽核記錄。|
    |`[DateTime]$start` 和 `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|指定稽核記錄搜尋的日期範圍。 指令碼會傳回在指定日期範圍內發生的稽核活動的記錄。 例如，若要傳回在 2021 年 1 月執行的活動，您可以使用 `"2021-01-01"` 作為開始日期，以及 `"2021-01-31"` 作為結束日期 (請務必用雙引號括住值)。指令碼中的範例值會傳回之前 24 小時內執行之活動的記錄。 如果您未在值中包含時間戳記，則預設時間戳記為指定日期的上午 12:00 (凌晨)。|
    |`$record`|"AzureActiveDirectory"|指定要搜尋之稽核活動的記錄類型 (又稱為 *作業*)。 此屬性表示在其中觸發活動的服務或功能。 如需可用於此變數的記錄類型清單，請參閱[稽核記錄類型](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。 您可以使用記錄類型名稱或 ENUM 值。 <br/><br/>**提示：** 若要傳回所有記錄類型的稽核記錄，請使用值 `$null` (不含雙引號)。|

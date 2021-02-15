@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 瞭解如何從已加入 Azure Active Directory 的 Windows 10 裝置，存取內部部署資源（如商務線應用程式、檔案共用及印表機）。
-ms.openlocfilehash: 22edf0c23d6318e1f70bcb21b2cd697ea0a75da4
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: fc02fd30f41f25f52e653e750a6bdfd1bd7f800e
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688226"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233833"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>從 Microsoft 365 商務版 Premium 中已加入 Azure AD 的裝置存取內部部署資源
 
@@ -61,6 +61,6 @@ ms.locfileid: "49688226"
 
 - 如果裝置使用的群組原則物件 (GPO) ，有些 Gpo 在 Intune 中可能沒有 (CSP) 的同等 [配置服務提供者](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) 。 執行 [MMAT 工具](https://www.microsoft.com/download/details.aspx?id=45520) ，尋找現有 gpo 的類似 csp。
 
-- 使用者將無法對依存于 Active Directory 驗證的應用程式進行驗證。 評估繼承應用程式，並考慮更新至使用新式驗證的應用程式（如有可能）。
+- 使用者可能無法對依存于 Active Directory 驗證的應用程式進行驗證。 評估繼承應用程式，並考慮更新至使用新式驗證的應用程式（如有可能）。
 
 - Active Directory 印表機探索無法運作。 您可以為所有使用者提供直接印表機路徑，或使用 [通用列印](https://aka.ms/UPDocs)。

@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境以測試身分識別與裝置存取。
-ms.openlocfilehash: b8e91a58bb6e1c00013b963c77151080a419b836
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: ed143341079a55d6bdd1d4a68feea68acb86ef85
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398804"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233725"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>您的 Microsoft 365 測試環境的身分識別與裝置存取
 
 *此測試實驗室指南僅可用於適用于企業測試環境的 Microsoft 365。*
 
-身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組功能和條件式存取原則，可保護與 Azure Active Directory (azure AD) 整合的所有服務存取權。
+身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組建議的設定和條件式存取原則，可保護對與 Azure Active Directory (azure AD) 整合的所有服務的存取。
 
 若要建立具備通用身分識別和裝置存取設定的測試環境：
 
@@ -48,4 +47,4 @@ ms.locfileid: "48398804"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)

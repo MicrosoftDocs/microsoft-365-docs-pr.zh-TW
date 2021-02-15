@@ -6,7 +6,6 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: m365-security
 ms.topic: article
-ms.date: 09/29/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -19,18 +18,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 2b72152b94d7bea85d92f86f16bdb27ffe541ebc
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 0f6e3d7bef0f09dc922a7c1878e6ea7ce0aad3d7
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150793"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233149"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
-**適用對象**
+**適用於**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 組織目前的安全性周邊環境會延伸至您的網路以外，以包含從各種裝置的任何位置存取雲端架構應用程式的使用者。 您的安全性基礎結構需要判斷是否應授與指定的存取要求，以及在哪些條件下。
 
@@ -47,6 +46,11 @@ ms.locfileid: "50150793"
 - 會協助您執行下列 [五個步驟，以保護您的身分識別基礎結構](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。
 
 如果您的組織有獨特的環境需求或複雜性，請使用這些建議做為開始點。 不過，大多陣列織可依照預定的方式來執行這些建議。
+
+觀賞這段影片，快速流覽 Microsoft 365 for enterprise 的身分識別與裝置存取設定。
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]
 > Microsoft 也會為 Office 365 訂閱銷售企業行動 + 安全性 (EMS) 授權。 EMS E3 和 EMS E5 功能相當於 Microsoft 365 E3 和 Microsoft 365 E5 中的功能。 如需詳細資訊，請參閱 [EMS 方案](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。

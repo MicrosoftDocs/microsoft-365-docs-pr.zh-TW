@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9e3f73ad3756381a2ea6884d6ec65bc85063a10
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 95da9753d773e3bb9724a8d0ae2ab0e2f2618c27
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110016"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233715"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -84,7 +84,7 @@ Office for iOS 和 Office for Android：敏感度標籤是內置於 [office 應�
 |[套用預設標籤](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[需要調整以變更標籤](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[提供自訂 [説明] 頁面的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
-|[標記內容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
+|[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 在 [複查] 下                     | 在 [複查] 下                 | 在 [複查] 下         | 在 [複查] 下           | 在 [複查] 下               |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
@@ -326,7 +326,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
     - 電子郵件 (Outlook) ：在使用者傳送未標記的郵件時。
 
 - 針對內建至 Office app 的標籤：
-    - 若為檔 ( # B1 Word、Excel PowerPoint) ：開啟或儲存未標記的檔時。
+    - 若為檔 ( (Word、Excel PowerPoint) ：開啟或儲存未標記的檔時。
     - 電子郵件 (Outlook) ：在使用者傳送未標記的電子郵件訊息時。
 
 內建標示標籤的其他資訊：

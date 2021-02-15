@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: 監視寄件者或寄件者對具有高業務影響之帳戶的失敗及延遲的電子郵件。
-ms.openlocfilehash: bc191873b3bbdcd84122a5430adeffe2b8c29fb1
-ms.sourcegitcommit: 5ce64d510b15c6e2df32b78e6086f77156731e3c
+ms.openlocfilehash: dbdd692a41d341564376960788054e70623daf5a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "49477610"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233359"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>管理及監視優先順序帳戶
 
@@ -26,8 +26,10 @@ ms.locfileid: "49477610"
 
 為了協助您的組織保護這些帳戶，您現在可以將特定使用者指定為優先順序帳戶，並利用可提供額外保護的應用程式特定功能。 在未來，其他應用程式和功能將支援優先順序帳戶，若要開始，我們已宣告兩項功能： **優先順序帳戶保護** 和 **優質郵件流程監控**。
 
-- **優先順序帳戶保護** -Microsoft Defender for office 365 (過去是 office 365 的「高級威脅防護」) 支援優先順序帳戶，作為可在警示、報告和調查篩選中使用的標記。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的使用者標記](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)。
-- **優質郵件流程監控** -狀況良好的郵件流程對商務成功來說可能很重要，且傳遞延遲或失敗可能對業務造成負面影響。 您可以針對失敗或延遲的電子郵件選擇臨界值，當超過該臨界值時接收通知，然後查看優先順序帳戶的電子郵件問題報告。 如需詳細資訊，請參閱 [新式 EAC 中「優先順序帳戶」報告的電子郵件問題](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。
+- **優先順序帳戶保護** -Microsoft Defender for office 365 (過去是 office 365 的「高級威脅防護」) 支援優先順序帳戶，作為可在警示、報告和調查篩選中使用的標記。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的使用者標記](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags)。
+- **優質郵件流程監控** -狀況良好的郵件流程對商務成功來說可能很重要，且傳遞延遲或失敗可能對業務造成負面影響。 您可以針對失敗或延遲的電子郵件選擇臨界值，當超過該臨界值時接收通知，然後查看優先順序帳戶的電子郵件問題報告。 如需詳細資訊，請參閱 [新式 EAC 中優先順序帳戶報告的電子郵件問題](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
+
+如需優先順序帳戶的安全性最佳作法，請參閱 [優先順序帳戶的安全性建議](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts)。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -38,7 +40,7 @@ ms.locfileid: "49477610"
 本主題中所述的 **高級郵件流程監控** 功能僅適用于符合下列需求的組織：
 
 - 您的組織必須具有至少10000的授權計數，也就是下列產品的其中一個或下列產品的組合： Office 365 E3，Microsoft 365 E3，Office 365 E5，Microsoft 365 E5。 例如，您的組織可以有 3000 Office 365 E3 授權和 8500 Microsoft 365 E5，以提供來自合格產品的全部11500授權。
-- 您的組織必須至少要有50個月的活動 Exchange Online 使用者。
+- 您的組織每月至少需要有 50 位作用中 Exchange Online 使用者
 
 > [!NOTE]
 > 您可以監控最多250個優先順序的帳戶。

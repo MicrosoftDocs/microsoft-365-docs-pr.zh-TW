@@ -291,6 +291,8 @@
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: 設定多重要素驗證
           href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: 管理和監視優先帳戶
+          href: setup/priority-accounts.md
         - name: 啟用適用於 Office 2013 的新式驗證
           href: security-and-compliance/enable-modern-authentication.md
         - name: 保護 Microsoft 365 商務進階版

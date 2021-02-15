@@ -17,18 +17,18 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 深入瞭解為小組中的客人設定任務、交談及檔共同作業時，所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: 34b7d5d47d7fb0c9196beda70184fa6510b6cc33
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 66c5692dd8cd233d8b3639f8ce0755ce51b60c0a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780541"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233071"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
 
 如果您需要跨檔、工作和交談共同處理來賓，我們建議使用 Microsoft 團隊。 小組會提供 Office 和 SharePoint 中的所有共同作業功能，以及持續聊天的功能，以及可自訂且可擴展的共同作業工具集合，以整合的使用者體驗。
 
-在本文中，我們將逐步完成設定小組以與來賓共同作業時，所需的 Microsoft 365 設定步驟。
+在本文中，我們將逐步完成設定小組以與來賓共同作業時，所需的 Microsoft 365 設定步驟。 設定來賓存取權之後，您可以依照在 [小組中新增客人](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)的步驟，邀請客人加入小組。
 
 ## <a name="video-demonstration"></a>影片示範
 
@@ -177,7 +177,7 @@ Microsoft 365 中的共用受 [Azure Active Directory 中的 B2B 外部](https:/
 4. 輸入來賓的完整名稱，然後按一下核取記號。
 5. Click **Add**, and then click **Close**.
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [與未驗證使用者共用檔案和資料夾的最佳做法](best-practices-anonymous-sharing.md)
 
@@ -187,6 +187,6 @@ Microsoft 365 中的共用受 [Azure Active Directory 中的 B2B 外部](https:/
 
 [使用受管理來賓建立 B2B 外部網路](b2b-extranet.md)
 
-[與 Azure AD B2B 的 SharePoint 和 OneDrive 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint 和 OneDrive 與 Azure AD B2B 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
 
 [當您從 SharePoint 或 OneDrive 共用時，共用選項會變灰。](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6c8d0dee3b1452c9a43b6b0b1b36e96f19e5abcd
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 633fd7ef00926d89d0b76051bf933798d2482ea1
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150627"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233823"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 中的內部風險解決方案
 
@@ -81,6 +81,7 @@ Microsoft 365 風險防護功能是設計和內建給我們的有問必答風險
 - Microsoft 365 G5 訂閱 (付費或試用版本) 
 - Microsoft 365 G3 訂閱 + Microsoft 365 G5 合規性附加元件
 - Microsoft 365 G3 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
+- Office 365 E3 訂閱 + Enterprise 可移動性和 Security E3 + Microsoft 365 E5 合規性附加元件
 
 ### <a name="information-barriers"></a>資訊屏障
 

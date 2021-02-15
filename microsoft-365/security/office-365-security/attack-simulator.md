@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用攻擊模擬器，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 方案2組織中執行模擬網路釣魚和密碼攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 824ee04e2fcf0757a7eb32b48246bf1a1c638926
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 9d3d55c17e5d77ee18bd822899fea2f64136e1a3
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175880"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233597"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻擊模擬器
 
@@ -34,6 +34,10 @@ ms.locfileid: "50175880"
 **適用** 于 [Microsoft Defender for Office 365 方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 如果您的組織有 Microsoft Defender for Office 365 Plan 2 （包括 [威脅調查和回應功能](office-365-ti.md)），您可以使用安全性 & 規範中心內的攻擊模擬器，在您的組織中執行實際的攻擊案例。 這些模擬的攻擊可協助您找出並找出有漏洞的使用者，而真實的攻擊會影響您的下一行。 若要深入瞭解，請閱讀本文。
+
+> [!NOTE]
+> 攻擊模擬器 v1 經驗已切換成隻讀模式，並由「 [開始使用進攻類比訓練](attack-simulation-training-get-started.md)」中所述的攻擊模擬器訓練所取代。
+> 已停用從此網站啟動新模擬的功能。 不過，您仍然可以在90天的期間內，存取模擬報告（從2021年1月24日）。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 

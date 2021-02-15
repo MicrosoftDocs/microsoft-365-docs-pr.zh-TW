@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: f265a30a3d43b592a7d297e2137fd6b9ff4acfb4
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 0ae67497829e69da92e9735cb68a84e75c517814
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097149"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242455"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
@@ -107,7 +107,19 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-當某人在 Outlook 網頁版 (OWA) 中使用 [搜尋列] 來搜尋信箱中的項目時，就會觸發 SearchQueryInitiatedExchange 事件。 調查人員可以使用 SearchQueryInitiatedExchange 事件，來判斷可能有遭入侵帳號的攻擊者是否已查看或嘗試存取信箱中的機密資訊。 SearchQueryInitiatedExchange 事件的稽核記錄包含實際的搜尋查詢文字。 透過查看攻擊者可能執行的搜尋查詢，調查人員可以更能瞭解搜尋的電子郵件資料意圖。
+當某人使用 Outlook 在信箱中搜尋項目時，就會觸發 SearchQueryInitiatedExchange 事件。 在下列 Outlook 環境中執行搜尋時，會觸發事件：
+
+- Outlook (桌面用戶端)
+
+- Outlook 網頁版 (OWA)
+
+- iOS 版 Outlook
+
+- Android 版 Outlook
+
+- Windows 10 版郵件應用程式
+
+調查人員可以使用 SearchQueryInitiatedExchange 事件，來判斷可能有遭入侵帳號的攻擊者是否已查看或嘗試存取信箱中的機密資訊。 SearchQueryInitiatedExchange 事件的稽核記錄包含實際的搜尋查詢文字。 稽核記錄也會指出搜尋執行時所用的 Outlook 環境。 透過查看攻擊者可能執行的搜尋查詢，調查人員可以更能瞭解搜尋的電子郵件資料意圖。
 
 若要搜尋 SearchQueryInitiatedExchange 稽核記錄，您可以在合規性中心的 [稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[搜尋活動]** 下拉式清單中搜尋 **[執行電子郵件搜尋]** 活動。
 
@@ -122,7 +134,17 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-與搜尋信箱項目類似，當某人搜尋貴組織中 SharePoint 主網站中的項目時，就會觸發 SearchQueryInitiatedSharePoint 事件。 調查人員可以使用 SearchQueryInitiatedSharePoint 事件來判斷攻擊者是否嘗試在 SharePoint 中尋找 (且可能存取) 敏感性資訊。 SearchQueryInitiatedSharePoint 事件的稽核記錄也包含實際的搜尋查詢文字。 透過查看攻擊者可能執行的搜尋查詢，調查人員可以更能瞭解欲搜尋的檔案資料意圖和範圍。
+與搜尋信箱項目類似，當某人搜尋 SharePoint 中的項目時，就會觸發 SearchQueryInitiatedSharePoint 事件。 在下列 SharePoint 網站類型中執行搜尋時，會觸發事件：
+
+- 主網站
+
+- 通訊網站
+
+- 中樞網站
+
+- 與 Microsoft Teams 相關聯的網站
+
+調查人員可以使用 SearchQueryInitiatedSharePoint 事件來判斷攻擊者是否嘗試在 SharePoint 中尋找 (且可能存取) 敏感性資訊。 SearchQueryInitiatedSharePoint 事件的稽核記錄也包含實際的搜尋查詢文字。 稽核記錄也會指出已搜尋的 SharePoint 網站類型。 透過查看攻擊者可能執行的搜尋查詢，調查人員可以更能瞭解欲搜尋的檔案資料意圖和範圍。
 
 若要搜尋 SearchQueryInitiatedSharePoint 稽核記錄，您可以在合規性中心的 [稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[搜尋活動]** 下拉式清單中搜尋 **[執行 SharePoint 搜尋]** 活動。
 

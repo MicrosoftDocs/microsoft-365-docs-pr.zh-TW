@@ -15,19 +15,19 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 瞭解如何為您的 Microsoft 365 租使用者中的所有資料設定客戶金鑰。
-ms.openlocfilehash: f14bbc0cb6dd29883efa4c8d294d8d65cae98641
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 682eed7eb2e80535af1acf68808c708e1a25d80f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751262"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242373"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>在承租人層級 (公開預覽的 Microsoft 365 客戶金鑰概述) 
 
 使用您提供的金鑰，您可以建立資料加密原則 (DEP) 並指派給租使用者。 DEP 會針對這些工作負載在租使用者上進行資料加密：
 
 - 小組聊天訊息 (1:1 聊天、群組交談、會議聊天及通道交談) 
-- 小組媒體郵件 (影像、程式碼片段、影片、wiki 影像) 
+- 小組媒體郵件 (影像、程式碼片段、影片訊息、音訊訊息、wiki 影像) 
 - 小組儲存中儲存的小組通話和會議錄製
 - 小組聊天通知
 - 小娜的小組聊天建議
@@ -44,9 +44,9 @@ ms.locfileid: "49751262"
 
 您建立的承租人層級加密原則會加密 microsoft 團隊和 Microsoft 365 中的 Exchange Online 工作負載的所有資料。 這個原則不會干擾您已在客戶機碼中建立的 DEPs。
 
-範例:
+範例：
 
-Microsoft 小組檔案和部分小組的呼叫和會議錄製會儲存在商務和 SharePoint 的 OneDrive 中，以 SharePoint 線上 DEP 加密。 單一 SharePoint 線上 DEP 會加密單一地理位置內的內容。 租使用者層級 DEP 會以新的原則再次加密加密的資料。
+Microsoft 小組檔案和部分小組的呼叫和會議錄製會儲存在商務和 SharePoint 的 OneDrive 中，以 SharePoint 線上 DEP 加密。 單一 SharePoint 線上 DEP 會加密單一地理位置內的內容。
 
 針對 Exchange Online，您可以建立使用客戶金鑰來加密一或多個使用者信箱的 DEP。 當您建立租使用者層級原則時，該原則不會加密加密的信箱。 不過，租使用者層級的金鑰會將不受 DEP 影響的信箱加密。
 
@@ -314,7 +314,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 
 | 名稱 | 描述 | 選用 (Y/N)  |
 |--|--|--|
-|姓名|資料加密原則的易記名稱|N|
+|名稱|資料加密原則的易記名稱|N|
 |AzureKeyIDs|指定 Azure Key Vault 機碼的兩個 URI 值，以逗號分隔，以與資料加密原則產生關聯|N|
 |描述|資料加密原則的描述|N|
 
@@ -345,7 +345,7 @@ Set-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy 
 
 描述：此 Cmdlet 可用於修改或重新整理現有的原則。 也可以用來啟用或停用原則。 在初次指派按鍵或旋轉按鍵後，新的機碼可能需要長達24小時才會生效。 如果新的 DEP 需要24小時以上才能生效，請與 Microsoft 聯繫。
 
-範例:
+範例：
 
 停用資料加密原則。
 
@@ -364,8 +364,8 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 |--|--|--|
 |-Identity|指定您要修改的資料加密原則。|N|
 |-重新整理|在您旋轉 Azure Key Vault 中的任何相關機碼之後，請使用重新整理參數來更新資料加密原則。 您不需要使用此參數指定值。|Y|
-|啟用|Enabled 參數會啟用或停用資料加密原則。 停用原則之前，必須先將其指派給您的租使用者。 有效值為：</br > $true：已啟用原則</br > $true：已啟用原則。此為預設值。|Y|
-|-Name|Name 參數會指定資料加密原則的唯一名稱。|Y
+|-已啟用|Enabled 參數會啟用或停用資料加密原則。 停用原則之前，必須先將其指派給您的租使用者。 有效值為：</br > $true：已啟用原則</br > $true：已啟用原則。此為預設值。|Y|
+|-名稱|Name 參數會指定資料加密原則的唯一名稱。|Y
 |-描述|Description 參數會指定資料加密原則的選擇性描述。|Y|
 
 ### <a name="get-policy-details"></a>取得原則詳細資料
@@ -376,7 +376,7 @@ Get-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy 
 
 描述：此 Cmdlet 會列出針對租使用者或特定原則的詳細資料所建立的所有 M365DataAtRest 加密原則。
 
-範例:
+範例：
 
 此範例會傳回組織中 M365DatAtRest 加密原則的摘要清單。
 

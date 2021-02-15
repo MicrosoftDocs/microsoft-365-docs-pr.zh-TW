@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境，以使用密碼雜湊同步處理驗證的先決條件測試身分識別與裝置存取。
-ms.openlocfilehash: 63f433d5297139fcc7f6eb8bd5383a6593c29388
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 8e8db4aae39acda0762f9b6394b23ab047727ea5
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399440"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233781"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中密碼雜湊同步處理的先決條件
 
@@ -28,22 +27,24 @@ ms.locfileid: "48399440"
 
 身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組設定和條件式存取原則，可保護所有與 Azure Active Directory (azure AD) 整合的 365 Microsoft 企業版服務的存取。
 
-本文說明如何設定符合[具有密碼雜湊同步處理的 Active Directory 先決條件組態](../security/office-365-security/identity-access-prerequisites.md#prerequisites)需求、用於身分識別與裝置存取的 Microsoft 365 測試環境。
+本文說明如何針對身分識別與裝置存取， [使用密碼雜湊同步驗證](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 必要條件設定，設定符合混合式需求的 Microsoft 365 測試環境。
 
-設定此測試環境有八個階段：
+設定此測試環境有10個階段：
 
-1.  使用密碼雜湊同步處理測試環境建立模擬企業
-2.  設定 Azure AD 無縫單一登入
-3.  設定具名位置
-4.  設定密碼回寫
-5.  為所有使用者帳戶設定自助式密碼重設
-6.  為所有使用者帳戶設定多重要素驗證
-7.  啟用 Azure AD Identity Protection
-8.  為 Exchange Online 和商務用 Skype Online 啟用新式驗證
+1. 使用密碼雜湊同步處理測試環境建立模擬企業
+2. 設定 Azure AD 無縫單一登入
+3. 設定具名位置
+4. 設定密碼回寫
+5. 為所有使用者帳戶設定自助式密碼重設
+6. 為所有使用者帳戶設定多重要素驗證
+7. 啟用加入網域之 Windows 電腦的自動裝置註冊
+8. 設定 Azure AD 密碼保護 
+9. 啟用 Azure AD Identity Protection
+10. 為 Exchange Online 和商務用 Skype Online 啟用新式驗證
 
 ## <a name="phase-1-build-out-your-simulated-enterprise-with-password-hash-sync-microsoft-365-test-environment"></a>階段 1：使用密碼雜湊同步處理 Microsoft 365 測試環境建立模擬企業
 
-遵循[密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)中的指示。
+依照 [[密碼雜湊同步](password-hash-sync-m365-ent-test-environment.md) 處理測試實驗室指南] 中的指示進行。
 以下是所產生的組態。
 
 ![使用密碼雜湊同步處理測試環境的模擬企業](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
@@ -66,7 +67,7 @@ ms.locfileid: "48399440"
 
 遵循[測試實驗室指南密碼重設階段 3](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset) 中的指示。 
 
-為特定 Azure AD 群組中的帳戶啟用重設密碼時，請將下列帳戶新增至**重設密碼**群組：
+為特定 Azure AD 群組中的帳戶啟用重設密碼時，請將下列帳戶新增至 **重設密碼** 群組：
 
 - 使用者 2
 - 使用者 3
@@ -86,11 +87,19 @@ ms.locfileid: "48399440"
 
 僅針對使用者 2 帳戶測試多重要素驗證。
 
-## <a name="phase-7-enable-azure-ad-identity-protection"></a>階段 7：啟用 Azure AD Identity Protection
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>階段7：啟用加入網域的 Windows 電腦的自動裝置註冊 
+
+遵循 [下列指示](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) ，啟用已加入網域之 Windows 電腦的自動裝置註冊。
+
+## <a name="phase-8-configure-azure-ad-password-protection"></a>階段8：設定 Azure AD 密碼保護 
+
+請遵循 [這些指示](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) 來封鎖已知的弱密碼及其變種。
+
+## <a name="phase-9-enable-azure-ad-identity-protection"></a>階段9：啟用 Azure AD 身分識別保護
 
 遵循[測試實驗室指南 Azure AD Identity Protection 階段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) 中的指示。 
 
-## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>階段 8：為 Exchange Online 和商務用 Skype Online 啟用新式驗證
+## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>階段10：為 Exchange Online 和商務用 Skype Online 啟用新式驗證
 
 若為 Exchange Online，請遵循[這些指示](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)。 
 
@@ -126,4 +135,4 @@ ms.locfileid: "48399440"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)

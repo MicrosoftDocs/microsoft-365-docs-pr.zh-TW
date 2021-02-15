@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表單處理
-ms.openlocfilehash: 9a979e0f7e45694f1cc7f98bbe2012c773698297
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976480"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242443"
 ---
 # <a name="form-processing-overview"></a>表單處理概觀
 
@@ -41,6 +41,10 @@ Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI Builder](https://docs
 訓練併發布模型之後，您的模型會建立 [Power Automate 流程](https://docs.microsoft.com/power-automate/getting-started)。 文件上傳至 SharePoint 文件庫時，將執行流程，並擷取在模型中識別的資料。 擷取的資料會顯示在模型文件庫檢視中的欄中。
 
 Office 365 系統管理員需要為 SharePoint 文件庫[啟用表單處理](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding)，以便用戶能够在其中[建立表單處理模型](create-a-form-processing-model.md)。 您可以在設定期間選取網站，或之後在管理設定中進行設定。
+
+### <a name="file-limitations"></a>檔案限制
+
+使用表單處理模型時，請務必記得[檔案使用量的需求和限制](https://docs.microsoft.com/ai-builder/form-processing-model-requirements)。
 
 
 

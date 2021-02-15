@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: e130fc3438fc8b4674b752e25fc473ee0dd55ae4
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: c032f537dd0a24632cc702f8363697b85df7e7ca
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870908"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233771"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -32,7 +32,7 @@ ms.locfileid: "49870908"
 
 合規性管理員可供使用 Office 365 和 Microsoft 365 授權的組織使用，以及向美國政府社區雲端 (GCC) 中和 GCC 的高客戶。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](https://go.microsoft.com/fwlink/?linkid=2132371)。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 您組織的 Microsoft 365 全域管理員可能是第一個存取合規性管理員的使用者。 我們建議全域管理員登入，並設定第一次造訪合規性管理員時所述的使用者權限。
 
@@ -359,5 +359,5 @@ Microsoft 365 合規性中心的合規性管理員設定可讓您啟用及停用
 
 **深入瞭解：** 請 [參閱如何使用評估範本](compliance-manager-templates.md)。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 [設定評估](compliance-manager-assessments.md)，以自訂合規性管理員。

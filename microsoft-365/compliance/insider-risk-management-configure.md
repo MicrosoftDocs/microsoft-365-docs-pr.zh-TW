@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 13e5d1f160fe957748295749662a7042489887ca
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 108f086af014c4f634e321f2e84e112db2032f17
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150581"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233305"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -44,6 +44,7 @@ ms.locfileid: "50150581"
 - Microsoft 365 G5 訂閱 (付費或試用版本) 
 - Microsoft 365 G3 訂閱 + Microsoft 365 G5 合規性附加元件
 - Microsoft 365 G3 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
+- Office 365 E3 訂閱 + Enterprise 可移動性和 Security E3 + Microsoft 365 E5 合規性附加元件
 
 包含在「內幕風險管理」原則中的使用者必須指派上述其中一個授權。
 

@@ -15,17 +15,17 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 瞭解如何使用 QR 碼來驗證和下載 Outlook mobile。
-ms.openlocfilehash: b9e433e0c7d3f5f3466924b318e242e5ac29181c
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.openlocfilehash: 1e5207a2792b557689a306fa1474a2c5fac81ed9
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122369"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242351"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>使用 QR 碼登錄 Outlook 行動應用程式
 
 > [!IMPORTANT]
-> 此 Microsoft 365 功能位於公開預覽中。 公開預覽可讓您及早存取 Microsoft 365 的功能。
+> 此功能僅適用于已在 Microsoft 365 系統管理中心中開啟目標版本的組織。 若要開啟目標版本並深入瞭解其運作方式，請參閱 [設定標準或目標發行選項](release-options-in-office-365.md)。 我們將透過公開預覽，將更多組織擴充至未來的幾周。 公開預覽可讓您及早存取 Microsoft 365 的功能。
 
 做為 Microsoft 365 系統管理員，您可以讓您的使用者在其行動裝置上登入 Outlook for Android 或 iOS 應用程式，而不必輸入他們的使用者名稱和密碼。 透過掃描 QR 碼，使用者就可以安全地驗證和登入 Outlook mobile。
 
@@ -36,7 +36,7 @@ ms.locfileid: "50122369"
 
 ## <a name="use-exchange-powershell"></a>使用 Exchange PowerShell
 
-此體驗預設為開啟。 若要停用此功能，請遵循下列步驟。
+這項功能預設為啟用。 若要停用此功能，請遵循下列步驟。
 
 1. [連接至 Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)。
 2. 您可以使用 PowerShell 來停用通知，告知使用者 Outlook 行動應用程式的相關資訊。 這也會使 QR 碼無法顯示登入流程。

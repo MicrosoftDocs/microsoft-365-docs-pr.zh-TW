@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 瞭解如何取消商務用 Microsoft 365 試用版或付費訂閱。
 ms.date: ''
-ms.openlocfilehash: 4141de3f1a228f465559212098cf46e68f2844f6
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 5d96b541030646668f636ee09cc3ccc4b43ef75a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114726"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233337"
 ---
 # <a name="cancel-your-subscription"></a>取消訂閱
 
@@ -35,7 +35,7 @@ ms.locfileid: "50114726"
 
 ::: moniker-end
 
-*資格：* 如果您指派給使用者的授權不足25個，您可以隨時取消 Microsoft 365 系統管理中心的 Microsoft 365 for business 試用版或付費訂閱。 如果您有超過25個授權指派給使用者，請 [致電支援部門以取消您的訂閱](../../admin/contact-support-for-business-products.md)。
+*資格：* 如果您指派給使用者的授權不足25個，您可以隨時取消 Microsoft 365 系統管理中心的 Microsoft 365 for business 試用版或付費訂閱。 如果您有超過25個授權指派給使用者，請將其縮小為小於25或 [致電支援部門，以取消您的訂閱](../../admin/contact-support-for-business-products.md)。
 
 *退款：* 任何按比例計算的款項將會在下個計費週期內退回。
 
@@ -44,7 +44,7 @@ ms.locfileid: "50114726"
 
 ## <a name="before-you-begin"></a>開始之前
 
-您必須是全球或計費系統管理員，才可執行本文中的工作。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+您必須是全球或計費系統管理員，才可執行本文中的工作。 如需詳細資訊，請參閱[系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="steps-to-cancel-your-subscription"></a>取消訂閱的步驟
 

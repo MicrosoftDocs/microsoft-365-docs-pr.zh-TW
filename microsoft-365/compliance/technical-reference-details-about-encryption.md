@@ -1,11 +1,10 @@
 ---
-title: 有關加密的技術參考詳細資料
+title: 關於加密的技術參考詳細資料
 f1.keywords:
 - NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 06/15/2020
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -21,14 +20,14 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 深入瞭解 Office 365 和 Microsoft 365 中用於加密的各種憑證、技術及傳輸層安全性 (TLS) 密碼套件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 244d7a6cef6d77322475245435dafb6c89ab5353
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 6e6b001b308519fb35e0cc835ac03fb4b27db260
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663426"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233139"
 ---
-# <a name="technical-reference-details-about-encryption"></a>有關加密的技術參考詳細資料
+# <a name="technical-reference-details-about-encryption"></a>關於加密的技術參考詳細資料
 
 請參閱本文，以瞭解 [Office 365 中用於加密](encryption.md)的憑證、技術和 TLS 密碼套件。 本文也提供規劃取代的詳細資料。
   
@@ -56,7 +55,7 @@ TLS 版本1.3 目前不支援 (TLS 1.3) 。
   
 ## <a name="support-for-tls-10-and-11-deprecation"></a>支援 TLS 1.0 和1.1 棄用
 
-在365年10月 31 2018 日，Office 已停止支援 TLS 1.0 和1.1。 在用戶端、裝置或以連線至 Office 365 over TLS 1.0 和1.1 的服務中找到的新問題，將無法修正。 GCC 高和 DoD 環境的正式棄用會從2020年1月15日開始。 已過時，全球和 GCC 的 TLS 1.0 和1.1 會從10月15日的2020開始。
+在365年10月 31 2018 日，Office 已停止支援 TLS 1.0 和1.1。 在 GCC 高端和 DoD 環境中，我們已完成停用 TLS 1.0 和1.1。 我們已開始從1.0 年10月15日開始，針對全球和 GCC 環境停用 TLS 和 1.1 2020，且會在今後的星期和月內繼續進行匯總。
 
 若要維護 Office 365 和 Microsoft 365 服務的安全連線，所有用戶端伺服器與瀏覽器-伺服器的組合都使用 TLS 1.2 和新式密碼套件。 您可能必須更新特定的用戶端-伺服器及瀏覽器伺服器組合。 如需此變更如何影響您的詳細資訊，請參閱在 [Office 365 中準備使用 TLS 1.2 的必要](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)資訊。
   
@@ -77,7 +76,7 @@ Office 365 會先嘗試使用最安全的密碼套件進行連線，以回應連
 > [!IMPORTANT]
 > 請注意 TLS 版本取代，如果有更新的版本，則 *不應該使用* 該版本。 目前不支援 TLS 1.3。 如果舊版服務不需要 TLS 1.0 或1.1，您應該將它們停用。
 
-| 密碼套件 | 金鑰交換演算法/強度 | 完全向前保密 | 密碼/強度 | 驗證演算法 |
+| 密碼套件 | 金鑰交換演算法/強度 | 轉寄保密 | 密碼/強度 | 驗證演算法 |
 |:-----|:-----|:-----|:-----|:-----|
 |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|是 <br/>|AES/256 <br/>|RSA/112 <br/> |
 |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|是 <br/>|AES/128 <br/>|RSA/112 <br/> |
@@ -90,7 +89,7 @@ Office 365 會先嘗試使用最安全的密碼套件進行連線，以回應連
 
 這些密碼套件支援 TLS 1.0 和1.1 通訊協定，直到其版本到期為止。 針對已取得日期為2020年1月15日的 GCC 高和 DoD 環境，而全球和 GCC 環境為2020。
 
-| 通訊協定 | 加密套件名稱 | 金鑰交換演算法/強度 | 完全向前保密支援 | 驗證演算法/強度 | 密碼/強度 |
+| 通訊協定 | 加密套件名稱 | 金鑰交換演算法/強度 | 轉寄保密支援 | 驗證演算法/強度 | 密碼/強度 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |

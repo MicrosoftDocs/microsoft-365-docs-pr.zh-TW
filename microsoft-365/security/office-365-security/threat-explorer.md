@@ -19,18 +19,18 @@ description: 在安全性與合規性中心使用 Explorer 和即時偵測， &a
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3c07ea4a44eb965ab6df834260c9dcef6e79c02a
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 5cbb8bd57a2e9bde8d19c960a71066d3ea5531c1
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142322"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233639"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
 
-**適用對象**
-- [Microsoft Defender for Office 365 方案1和方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 如果您的組織有 [Microsoft Defender For Office 365](office-365-atp.md)，而您具有 [必要的許可權](#required-licenses-and-permissions)，則您 **的 Explorer** 或 **即時** 偵測 (以前的 *即時報告* -- [請參閱](#new-features-in-threat-explorer-and-real-time-detections)最近更新！ ) 。 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**]，然後選擇 [ **Explorer** ] _或_[ **即時** 偵測]。
@@ -297,7 +297,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 ### <a name="preview-email-header-and-download-email-body"></a>預覽電子郵件標頭和下載電子郵件內文
 
-您現在可以預覽電子郵件頭，並下載威脅瀏覽器管理員的電子郵件內文。系統管理員可以分析已下載的標頭/電子郵件，以取得威脅。 因為下載電子郵件可能會危及資訊的危險性，所以此程式是由以角色為基礎的存取控制 (RBAC) 所控制。 新的角色， *預覽* 必須新增至另一個角色群組 (例如安全作業或安全性系統管理員) ，授與可在 [所有電子郵件] 視圖中下載郵件和預覽標頭的能力。
+您現在可以預覽電子郵件頭，並下載威脅瀏覽器管理員的電子郵件內文。系統管理員可以分析已下載的標頭/電子郵件，以取得威脅。 因為下載電子郵件可能會危及資訊的危險性，所以此程式是由以角色為基礎的存取控制 (RBAC) 所控制。 新的角色、 *預覽*，必須新增至其他角色群組 (例如安全作業或安全性系統管理員) ，以授與透過所有電子郵件消息查看下載郵件的能力。 不過，若要在威脅瀏覽器) 中查看郵件所需的 (以外，查看電子郵件標頭並不需要任何其他角色。
 
 瀏覽器和即時偵測也會取得新的欄位，可提供您的電子郵件所在位置更完整的畫面。 這些變更可使搜尋更輕鬆進行安全性 Op。 不過，主要結果是您可以快速知道問題電子郵件訊息的位置。
 

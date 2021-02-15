@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 深入了解 Microsoft SharePoint Syntex 中的說明類型
-ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080553"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242577"
 ---
 # <a name="introduction-to-explanation-types"></a>說明類型簡介
 
@@ -147,43 +147,65 @@ Redmond, WA 98034<br>
    ![自訂範圍](../media/content-understanding/custom-file.png)。</br>
 在檢視器中，您可以手動調整選取方塊，以包含該階段所在的位置。 在此設定中，您必須選取 <b>[開始]</b> ，以及 <b>[結束]</b> 位置。 這些值代表從文件開頭算起的的語彙基元數目。 當您可以手動輸入這些值，在檢視器中手動調整選取方塊就變得更容易。</br> 
    
-
-
 ## <a name="use-explanation-templates"></a>使用說明範本
 
-雖然您可以為您的說明手動新增各種模式清單值，但使用說明文件庫中所提供的範本會輕鬆得多。
+雖然您可以為您的說明手動新增各種片語清單值，但使用說明文件庫中所提供的範本會輕鬆得多。
 
-例如，不要手動新增 *日期* 的所有變化，而是可以使用 *日期* 的模式清單範本，因為其中已包含一些模式清單值：</br>
+例如，不要手動新增 *日期* 的所有變化，而是可以使用 *日期* 的片語清單範本，因為其中已包含一些片語清單值：</br>
 
    ![說明文件庫](../media/content-understanding/explanation-template.png)</br>
  
-說明文件庫包含常用的模式清單說明，包括：</br>
+說明文件庫包含常用的片語清單說明，包括：</br>
 
 - 日期</br>
 - 日期 (數字)</br>
 - 時間</br>
 - 數字</br>
+- 百分比</br>
 - 電話號碼</br>
 - 郵遞區號</br>
 - 句子的第一個單字</br>
+- 句子結尾</br>
 - 信用卡</br>
 - 社會安全編號</br>
+- 核取方塊</br>
+- 貨幣</br>
+- 電子郵件副本</br>
+- 電子郵件日期</br>
+- 電子郵件問候語</br>
+- 電子郵件收件者</br>
+- 電子郵件寄件者</br>
+- 電子郵件主旨</br>
 
-請注意，說明文件庫也包含用於片語清單說明的範本：
-- 句子結尾
-- 貨幣
+說明文件庫也包含三個自動範本類型，可以搭配您在範例檔案中標示的資料：
 
+- 標籤後面：範例檔案中標籤後面的文字或字元。</br>
+- 標籤前面：範例檔案中標籤前面的文字或字元。</br>
+- 標籤：範例檔案的最多前 10 個標籤。</br>
+
+為了提供您自動範本如何運作的範例，我們會在下列範例檔案中使用「標籤前面」說明範本，協助為模型提供更多資訊，以取得更準確的相符項目。
+
+   ![範例檔案](../media/content-understanding/before-label.png)</br>
+
+當您選取「標籤前面」說明範本時，它會尋找您的範例檔案中標籤前面出現的第一組文字。 範例中在第一個範例檔案中識別的文字是 "As of"。
+
+   ![標籤前面範本](../media/content-understanding/before-label-explanation.png)</br>
+
+您可以選取 [<b>新增</b>] 從範本建立說明。  隨著您新增更多範例檔案，將會識別出其他字詞，並將其新增至片語清單。
+
+   ![新增標籤](../media/content-understanding/before-label-add.png)</br>
+ 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>使用來自說明文件庫的範本
 
 1. 從模型 [訓練 **]** 頁面的 [說明 **]** 區段，選取 [新增 **]**，然後選取 [從範本 **]**。</br>
 
-   ![從範本建立](../media/content-understanding/from-template.png)</br>
+   ![在標籤前面新增](../media/content-understanding/from-template.png)</br>
 
 2.  在 [說明範本 **]** 頁面上，選取您要使用的說明，然後選取 [新增 **]**。</br>
 
        ![選取範本](../media/content-understanding/phone-template.png)</br>
 
-3. 您選取的範本資訊會顯示在 [建立說明 **]** 頁面上。 視需要編輯說明名稱，然後從模式清單新增或移除項目。 </br> 
+3. 您選取的範本資訊會顯示在 [建立說明 **]** 頁面上。 視需要編輯說明名稱，然後從片語清單新增或移除項目。 </br> 
 
    ![編輯範本](../media/content-understanding/phone-template-live.png)</br>
 
