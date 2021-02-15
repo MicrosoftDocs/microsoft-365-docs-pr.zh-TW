@@ -275,6 +275,8 @@
                   href: mtp/device-profile.md
                 - name: 提供意見反應
                   href: mtp/feedback.md
+                - name: 提供受控服務提供者 (MSSP) 存取權
+                  href: mtp/mssp-access.md
                 - name: 建立 ServiceNow 票證和工作
                   items:
                     - name: ServiceNow 整合概述
