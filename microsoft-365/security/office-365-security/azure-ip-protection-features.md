@@ -19,19 +19,19 @@ ms.custom:
 description: 本文說明 Azure 資訊保護中的保護功能所要推出的變更
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cb78f9e13d8ae429f5f46f2b1051d07ee541a10
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165976"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261558"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Azure 資訊保護中的保護功能可向現有承租人推出
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Microsoft Defender for Office 365 方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [適用於 Office 365 的 Microsoft Defender 方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 若要協助您保護資訊的初始步驟，請從2018年7月開始，所有 Azure 資訊保護合格的承租人都會有預設開啟 Azure 資訊保護中的保護功能。 Azure 資訊保護中的保護功能先前在 Office 365 中稱為 Rights Management 或 Azure RMS。 如果您的組織有 Office E3 服務方案或較高的服務方案，您現在可以在推出這些功能時，透過 Azure 資訊保護來開始保護資訊。
@@ -60,7 +60,8 @@ Office 365 郵件加密會利用 Azure 資訊保護中的保護功能。 在最�
 
 如果您的組織已購買合格的 Office 365 授權，則您的租使用者將會受到此變更的影響。
 
- **重要！** 如果您在內部部署環境中使用 Active Directory Rights Management Services (AD RMS) ，您必須立即自願退出這項變更或遷移至 Azure 資訊保護，然後才會在今後30天內推出這項變更。 如需如何自願退出的資訊，請參閱「我使用 AD RMS，如何退出宣告？」 本文稍後。 如果您想要遷移，請參閱 [從 AD RMS 遷移至 Azure 資訊保護。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+> [!IMPORTANT]
+> 如果您在內部部署環境中使用 Active Directory Rights Management Services (AD RMS) ，您必須立即自願退出這項變更或遷移至 Azure 資訊保護，然後才會在今後30天內推出這項變更。 如需如何自願退出的資訊，請參閱「我使用 AD RMS，如何退出宣告？」 本文稍後。 如果您想要遷移，請參閱 [從 AD RMS 遷移到 Azure 資訊保護。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>使用 Azure 資訊保護，是否可以使用 Active Directory Rights Management Services (AD RMS) ？
 
@@ -72,9 +73,9 @@ Office 365 郵件加密會利用 Azure 資訊保護中的保護功能。 在最�
 
 1. 雖然選用，大部分的 AD RMS 部署也會發佈服務連線點 (SCP) Active Directory，讓網域電腦能夠探索 AD RMS 叢集。
 
-使用 ADSI Edit，查看您是否已在 Active Directory 中發佈 SCP： CN=Configuration [server name]，CN=Services，CN = RightsManagementServices，CN = SCP
+   使用 ADSI Edit，查看您是否已在 Active Directory 中發佈 SCP： CN=Configuration [server name]，CN=Services，CN = RightsManagementServices，CN = SCP
 
-2. 如果您不是使用 SCP，則必須使用 Windows 登錄為用戶端的服務探索或授權重新導向，設定連接至 AD RMS 叢集的 Windows 電腦： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation 或 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation
+2. 如果您不是使用 SCP，則必須使用 Windows 登錄為用戶端服務探索或授權重新導向，設定連線至 AD RMS 叢集的 Windows 電腦： `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation` 。
 
 如需這些登錄設定的詳細資訊，請參閱使用 Windows 登錄和重新導向[授權伺服器流量](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)[啟用用戶端服務探索](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry)。
 

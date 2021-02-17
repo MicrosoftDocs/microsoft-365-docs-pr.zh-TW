@@ -1,5 +1,5 @@
 ---
-title: 與組織外部人員合作
+title: 與組織外部的人員共同作業
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,14 +18,14 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何設定 Microsoft 365 應用程式，如小組、OneDrive 和 SharePoint，以與組織外部的人員進行共同作業。
-ms.openlocfilehash: 374ad8f5ec37fc0900fb38cb4e0f4743a02c4da4
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 7b8e5e30d8222d055fc5f64472c4083db614d4bd
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613451"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261510"
 ---
-# <a name="collaborating-with-people-outside-your-organization"></a>與組織外部人員合作
+# <a name="collaborating-with-people-outside-your-organization"></a>與組織外部的人員共同作業
 
 Microsoft 365 中的外部共用功能可讓您組織中的人員與合作夥伴、廠商、客戶及其他使用者共同作業，而非您的目錄中的帳戶。 您可以與組織外部的人員或只與個別的檔案共用整個小組或網站。
 
@@ -36,7 +36,7 @@ Microsoft 365 中的外部共用功能可讓您組織中的人員與合作夥伴
 
 ## <a name="enable-sharing"></a>啟用共用
 
-根據預設，在 Microsoft 365 中，與組織外部的人員共用已啟用 SharePoint 和 OneDrive，但對小組停用。 許多 SharePoint 和 OneDrive 外部共用案例沒有進一步設定便可運作。 若要確認您所使用之案例的設定，或是啟用新案例，請從下列選項中選擇：
+根據預設，在 Microsoft 365 中，會啟用與組織外部人員共用。 許多外部共用案例的運作方式並無進一步設定。 若要確認您所使用之案例的設定，或是啟用新案例，請從下列選項中選擇：
 
 - 檔[共同](collaborate-on-documents.md)作業-瞭解如何設定 Microsoft 365，以允許與組織外部的人員共用和共同作業 (在檔案和資料夾上) 來賓和未驗證的使用者。
 - [在網站中共同](collaborate-in-site.md) 作業-瞭解如何設定 Microsoft 365，以啟用與來賓共用 SharePoint 網站。

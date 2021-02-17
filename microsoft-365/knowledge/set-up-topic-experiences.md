@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何設定 Microsoft Viva 主題
-ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: a90e75330527992f8519d625f94fe0d5ecb3de6b
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150497"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261466"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定 Microsoft Viva 主題
 
@@ -24,6 +24,8 @@ ms.locfileid: "50150497"
 在您的環境中規劃設定和設定主題的最佳方式是很重要的。 在您開始本文中的程式之前，請務必閱讀 [Microsoft Viva 主題的計畫](plan-topic-experiences.md) 。
 
 您必須 [訂閱 Viva 主題](https://www.microsoft.com/microsoft-viva/topics) ，以及全域管理員或 SharePoint 管理員，才能存取 Microsoft 365 系統管理中心及設定相關主題。
+
+如果您已將 SharePoint 設定為 [需要受管理裝置](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)，請務必設定受管理裝置中的主題。
 
 ## <a name="video-demonstration"></a>影片示範
 
@@ -46,7 +48,7 @@ ms.locfileid: "50150497"
 
 3. 在 [連線 **人員至知識]** 頁面上，按一下 [ **開始** ]，逐步引導您完成安裝程式。
 
-    ![入門](../media/k-get-started.png) 
+    ![快速入門](../media/k-get-started.png) 
 
 4. 在 [ **選擇 Viva 主題如何尋找主題** ] 頁面上，您會設定主題探索。 在 [ **選取 SharePoint 主題來源** ] 區段中，選取要在探索過程中將其編目為主題來源的 SharePoint 網站。 請選擇：
     - **所有網站**：您組織中的所有 SharePoint 網站。 這包括目前和未來的網站。
@@ -80,7 +82,7 @@ ms.locfileid: "50150497"
 
     完成並儲存 .csv 檔案之後，請選取 **[流覽]** 以找出並選取。
     
-    選取 **[下一步]**。
+    選取 [下一步]。
 
 6. 在 [ **誰可以看到主題及其可以查看的位置** ] 頁面上，您會設定主題可見度。 在 [ **可以查看主題** ] 設定中，您可以選擇誰可以存取主題詳細資料，例如高亮主題、主題卡片、搜尋中的主題答案和主題頁面。 您可以選取：
     - **組織中的所有人**
@@ -105,11 +107,11 @@ ms.locfileid: "50150497"
 
     ![主題管理的許可權](../media/km-setup-create-edit-topics.png) 
 
-    選取 **[下一步]**。
+    選取 [下一步]。
 
 9. 在 [ **建立主題中心** ] 頁面上，您可以建立可以查看主題頁面和管理主題的主題中心網站。 在 [ **網站名稱** ] 方塊中，輸入主題中心的名稱。 您可以選擇性地在 [ **描述** ] 方塊中輸入簡短的描述。 
 
-   選取 **[下一步]**。
+   選取 [下一步]。
 
    ![建立知識中心](../media/ksetup4.png)  
 
@@ -133,17 +135,17 @@ ms.locfileid: "50150497"
 
 3. 在 [**應用程式**] 底下，請確定已同時選取 [使用索引及 **主題體驗** 的 **圖形連接器搜尋]** 。
 
-4. 按一下 **[儲存變更]**。
+4. 按一下 [儲存變更]。
 
 ## <a name="manage-topic-experiences"></a>管理主題經驗
 
-在您設定好主題之後，您可以在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)變更您在安裝期間所選擇的設定。 請參閱下列參考：
+在您設定好主題之後，您可以在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)變更您在安裝期間所選擇的設定。 請參閱下列參照：
 
 - [在 Microsoft Viva 主題中管理主題探索](topic-experiences-discovery.md)
 - [在 Microsoft Viva 主題中管理主題可見度](topic-experiences-knowledge-rules.md)
 - [管理 Microsoft Viva 主題中的主題許可權](topic-experiences-user-permissions.md)
 - [變更 Microsoft Viva 主題中主題中心的名稱](topic-experiences-administration.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [主題經驗概述](topic-experiences-overview.md)

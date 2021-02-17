@@ -20,12 +20,12 @@ ms.collection:
 description: 系統管理員可以深入瞭解 Microsoft Defender for Office 365 中的安全附件功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5e85695a6d0fba221f3c614ec33b3552d37153e2
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 5d2d348856dbd51cabe2b320d315406076921fee
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175844"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261534"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全附件
 
@@ -54,7 +54,7 @@ ms.locfileid: "50175844"
 安全附件掃描會在 Microsoft 365 資料所在的相同區域中進行。 如需資料中心地理位置的詳細資訊，請參閱 [您的資料位於何處？](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> 下列功能位於全域設定中的安全性 & 合規性中心內的安全附件原則，但這些設定會全域性啟用或停用，但不需要安全附件原則：
+> 下列功能位於安全性 & 合規性中心內的安全附件原則全域設定中。 不過，這些設定會以全域方式啟用或停用，不需要安全附件原則：
 >
 > - [SharePoint、OneDrive 和 Microsoft 小組的安全附件](atp-for-spo-odb-and-teams.md)。
 >

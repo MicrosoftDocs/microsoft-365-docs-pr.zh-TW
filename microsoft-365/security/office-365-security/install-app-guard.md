@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 取得最新的硬體隔離。 防止目前和新興的攻擊（如入侵或惡意連結）中斷員工生產力和企業安全性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cf02f6776eb68537486b49c4fe45e8f88eeb38c6
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 50065c4c0b9cbac9dee29892d9ebb0c7ce5f20f8
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094876"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261522"
 ---
 # <a name="application-guard-for-office-for-admins"></a>適用于系統管理員的 Office 應用程式防護
 
