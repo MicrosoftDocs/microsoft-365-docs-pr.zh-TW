@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 本文提供保護 Microsoft 365 訂閱之全域管理員存取的相關資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15c497e02b139ea6af4aabba9f3e9ab65a1205be
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1f84ca33a620c3ea3c24f46eb29c1a39c28840e7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445404"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289636"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>保護您的 Microsoft 365 全域管理員帳戶
 
@@ -48,14 +48,14 @@ Microsoft 提供的功能可協助保護您的組織，但只有在您使用這�
 > [!Note]
 > 雖然本文著重于全域管理員帳戶，您還是應該考慮是否有其他具有廣域許可權的帳戶，以存取您訂閱中的資料，例如 eDiscovery 管理員或安全性或合規性管理員帳戶，都應該以相同的方式加以保護。 <br > 您可以建立全域管理員帳戶，而不需要新增任何授權。
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>步驟 1： 建立專屬的 Microsoft 365 全域管理員帳戶，並只在必要時加以使用
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>步驟 1. 建立專屬的 Microsoft 365 全域管理員帳戶，並只在必要時加以使用
 
 需要全域管理員許可權的系統管理工作相對較少，例如指派角色給使用者帳戶。 因此，請執行下列步驟，而不是使用已獲指派全域系統管理員角色的日常使用者帳戶：
   
 1. 決定已指派全域系統管理員角色的使用者帳戶集。 您可以在 Microsoft 365 系統管理中心或下列 Azure Active (Azure AD) Directory PowerShell for Graph] 命令中執行這項操作：
   
   ```powershell
-  Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+  Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
 2. 使用已獲指派全域系統管理員角色的使用者帳戶，登入您的 Microsoft 365 訂閱。
@@ -91,7 +91,7 @@ Microsoft 提供的功能可協助保護您的組織，但只有在您使用這�
 > [!NOTE]
 > 這需要其他步驟以您的日常使用者帳戶登出，並以專用全域管理員帳戶登入。 但是這只需要偶爾進行全域管理員作業。 請考慮在全域管理員帳戶遭到破壞之後復原 Microsoft 365 訂閱需要進行許多步驟。
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>步驟 2： 針對專用的 Microsoft 365 全域管理員帳戶設定多重要素驗證
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>步驟 2. 針對專用的 Microsoft 365 全域管理員帳戶設定多重要素驗證
 
 多重要素驗證 (MFA) 需要帳戶名稱和密碼以外的其他資訊。 Microsoft 365 支援下列其他驗證方法：
   
@@ -180,6 +180,6 @@ PIM 可與 Azure Active Directory Premium P2 搭配使用，隨附於 Microsoft 
 - 如果您使用的是混合身分識別，[準備目錄同步](prepare-for-directory-synchronization.md)處理
 
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 安全性藍圖](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)

@@ -20,12 +20,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何提升安全性設定，以及如何在 Microsoft 365 組織中提升優先順序帳戶的安全性設定，以及使用報表、警示和調查。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 814ca47ee48e844e313f7d75640643a0b659c527
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4038a9abc3357bb72a0c21db3e4ca4679c1aa745
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166366"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290748"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 中優先順序帳戶的安全性建議
 
@@ -52,7 +52,7 @@ Microsoft 365 和 Microsoft Defender for Office 365 包含許多主要功能，�
 
 優先順序帳戶需要增加的登入安全性。 您可以要求多重要素驗證 (MFA) 並停用舊版驗證通訊協定，以提升其登入安全性。
 
-如需相關指示，請參閱 [步驟1。增加具有 MFA 的遠端工作者的登入安全性](https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in)。 雖然本文是有關遠端工作者的資訊，但相同的概念也適用于優先順序使用者。
+如需相關指示，請參閱 [步驟1。增加具有 MFA 的遠端工作者的登入安全性](../../solutions/empower-people-to-work-remotely-secure-sign-in.md)。 雖然本文是有關遠端工作者的資訊，但相同的概念也適用于優先順序使用者。
 
 **附注**：強烈建議您全域停用所有優先順序使用者的舊版驗證通訊協定，如先前的文章所述。 如果您的業務需求可防止您這樣做，Exchange Online 會提供下列控制項，以協助限制舊版驗證通訊協定的範圍：
 
@@ -80,7 +80,7 @@ Microsoft 365 和 Microsoft Defender for Office 365 包含許多主要功能，�
 
 Microsoft Defender for Office 365 方案 2 (中的使用者標記是 Microsoft 365 E5 或附加元件訂閱) 中的一種方法，可快速識別及分類報告和事件調查中的特定使用者或使用者群組。
 
-「**優先順序帳戶**」是一種內建的使用者標記， (稱為 _系統_ 標籤) ，可供您用來識別涉及優先順序帳戶的事件及警示。 如需 **優先順序帳戶** 的詳細資訊，請參閱 [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
+「**優先順序帳戶**」是一種內建的使用者標記， (稱為 _系統_ 標籤) ，可供您用來識別涉及優先順序帳戶的事件及警示。 如需 **優先順序帳戶** 的詳細資訊，請參閱 [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)。
 
 您也可以建立自訂標記，進一步識別和分類您的優先順序帳戶。 如需詳細資訊，請參閱 [User tags](user-tags.md)。 請注意，您可以在與自訂使用者標籤位於相同介面中 (系統標記) 管理 **優先順序帳戶** 。
 
@@ -94,7 +94,7 @@ Microsoft Defender for Office 365 方案 2 (中的使用者標記是 Microsoft 3
 
 |功能|描述|
 |---|---|
-|警示|受影響使用者的使用者標記是可見的，而且在安全性 & 合規性中心的 [ **View alerts** ] 頁面上以篩選器形式提供。 如需詳細資訊，請參閱 [查看提醒](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)。|
+|警示|受影響使用者的使用者標記是可見的，而且在安全性 & 合規性中心的 [ **View alerts** ] 頁面上以篩選器形式提供。 如需詳細資訊，請參閱 [查看提醒](../../compliance/alert-policies.md#viewing-alerts)。|
 |威脅總管 <p> 即時偵測|在 [ **威脅瀏覽器** ] 中 (microsoft Defender for Office 365 plan 2) 或 **即時** 偵測 (Microsoft Defender for office 365 plan 1) ，使用者標記會顯示在 [電子郵件方格] 視圖和 [電子郵件詳細資料] 浮出視窗中。 使用者標記也可以做為可篩選的屬性。 如需詳細資訊，請參閱  [威脅資源管理器中的標記](threat-explorer.md#tags-in-threat-explorer)。|
 |行銷活動檢視|使用者標記是 Microsoft Defender for Office 365 方案2中的眾多可篩選屬性之一。 如需詳細資訊，請參閱 [即時檢視](campaigns.md)。|
 |威脅防護狀態報告|在實際 **威脅防護狀態報表** 中的所有 views 和詳細資料表格中，您可以依 **優先順序帳戶** 來篩選結果。 如需詳細資訊，請參閱 [威脅防護狀態報表](view-email-security-reports.md#threat-protection-status-report)。|
@@ -126,6 +126,6 @@ Microsoft 365 提供下列資源，協助您在組織中告知使用者：
 - 保護裝置
 - 在 Windows 10 和 Mac 電腦上啟用非管理裝置的安全性功能 () 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [宣告 Office 365 的 Microsoft Defender 優先順序帳戶保護](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

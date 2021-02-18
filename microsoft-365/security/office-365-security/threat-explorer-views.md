@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.collection:
@@ -16,16 +15,22 @@ ms.collection:
 - m365initiative-defender-office365
 description: 瞭解如何使用威脅瀏覽器和即時偵測報告，調查和回應安全性 & 規範中心內的威脅。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7300f8c87b100a38117b0cc4bee1bb95c9584c6
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: aef3f7fe69e5cbd1d70b7aee3284f0c5dc6416df
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615705"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290282"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測中的視圖
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
 ![威脅總管](../../media/ThreatExplorerFirstOpened.png)

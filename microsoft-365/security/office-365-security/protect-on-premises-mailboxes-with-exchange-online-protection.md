@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - GEU150
@@ -21,12 +20,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在中國使用 Office 365 的系統管理員可以瞭解如何使用獨立 Exchange Online Protection (EOP) 來保護其內部部署信箱。
-ms.openlocfilehash: 9b91abec8d258df2b549cee1d538d2f65d2974ab
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f4f27fa9237d76422e936555c9872b83655d7b6b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356892"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289422"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>使用獨立版 EOP 保護中國的內部部署信箱
 
@@ -61,7 +62,7 @@ ms.locfileid: "49356892"
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>步驟 4：允許輸入連接埠 25 SMTP 存取
 
-設定連接器之後，請等待 72 小時以允許傳播 DNS 記錄更新。 接著限制防火牆或郵件伺服器上的輸入連接埠 25 SMTP 流量，以僅接受來自 EOP 資料中心的郵件 (尤其是來自[ Office 365 URL 和 IP 位址範圍所列 IP 位址的郵件)。](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints)(部分機器翻譯)。 這會限制您可接收的輸入郵件範圍，以保護內部部署環境的安全。 此外，若您在郵件伺服器上進行設定，以控制允許連線執行郵件轉送的 IP 位址，請一併更新這些設定。
+設定連接器之後，請等待 72 小時以允許傳播 DNS 記錄更新。 接著限制防火牆或郵件伺服器上的輸入連接埠 25 SMTP 流量，以僅接受來自 EOP 資料中心的郵件 (尤其是來自[ Office 365 URL 和 IP 位址範圍所列 IP 位址的郵件)。](../../enterprise/managing-office-365-endpoints.md)(部分機器翻譯)。 這會限制您可接收的輸入郵件範圍，以保護內部部署環境的安全。 此外，若您在郵件伺服器上進行設定，以控制允許連線執行郵件轉送的 IP 位址，請一併更新這些設定。
 
 > [!TIP]
 > 將 SMTP 伺服器的連線時間設定設為超過 60 秒。此設定適用於大部分情況，例如在傳送具有大型附件的郵件時可稍許延遲。
@@ -72,7 +73,7 @@ ms.locfileid: "49356892"
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步驟 6：使用 Microsoft 365 系統管理中心將您的 MX 記錄指向 EOP
 
-請遵循 Office 365 網域設定步驟來更新網域的 MX 記錄，以讓輸入電子郵件經過 EOP。 如需詳細資訊，您可以再次參考[管理 DNS 記錄時為 Office 365 建立 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) (部分機器翻譯)。
+請遵循 Office 365 網域設定步驟來更新網域的 MX 記錄，以讓輸入電子郵件經過 EOP。 如需詳細資訊，您可以再次參考[管理 DNS 記錄時為 Office 365 建立 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-21vianet&preserve-view=true) (部分機器翻譯)。
 
 如何才能了解此工作是否正常運作？
 

@@ -13,21 +13,21 @@ ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 您可以使用郵件流程規則 (傳輸規則) 識別並對透過您組織的郵件採取動作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f873d4e46c9e3b7f085e03a9fbb19e5914317fa
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d189a9f4b21828fa4e23f7d5a325b4e9c56259bc
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167032"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289934"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>獨立版 EOP 中的郵件流程規則 (傳輸規則)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，您可以使用郵件流程 (規則（也稱為傳輸規則) ）來識別並對透過您的組織傳遞的郵件採取動作。
 
@@ -51,7 +51,7 @@ ms.locfileid: "50167032"
 
 - [透過 Exchange Online Protection 中的檔案附件封鎖功能來降低惡意軟體威脅](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [定義 Office 365 中加密或解密電子郵件訊息的規則](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
+- [定義 Office 365 中加密或解密電子郵件訊息的規則](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
 下列影片提供在獨立 EOP 中設定郵件流程規則的示範。
 
@@ -122,7 +122,7 @@ ms.locfileid: "50167032"
 |通過組織的郵件有幾種類型。下表顯示傳輸規則可處理哪些郵件類型。|郵件類型|
 |---|---|
 |**一般郵件**：包含單一 RTF 格式 (RTF)、HTML 或純文字郵件內文的郵件，或包含一組多部分或替代郵件內文的郵件。|是|
-|**Office 365 郵件加密**：Office 365 中 Office 365 郵件加密所加密的郵件。 如需詳細資訊，請參閱 [Office 365 加密](https://docs.microsoft.com/microsoft-365/compliance/encryption) (部分內容為機器翻譯)。|規則永遠可以存取信封標頭，並根據可檢查這些標頭的條件來處理郵件。 <p> 如需可檢查或修改加密郵件內容的規則，您必須確認已啟用傳輸解密 (強制或選擇性；預設值是選擇性)。 如需詳細資訊，請參閱[定義 Office 365 中將電子郵件加密或解密的規則](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email) (部分內容為機器翻譯)。|
+|**Office 365 郵件加密**：Office 365 中 Office 365 郵件加密所加密的郵件。 如需詳細資訊，請參閱 [Office 365 加密](../../compliance/encryption.md) (部分內容為機器翻譯)。|規則永遠可以存取信封標頭，並根據可檢查這些標頭的條件來處理郵件。 <p> 如需可檢查或修改加密郵件內容的規則，您必須確認已啟用傳輸解密 (強制或選擇性；預設值是選擇性)。 如需詳細資訊，請參閱[定義 Office 365 中將電子郵件加密或解密的規則](../../compliance/define-mail-flow-rules-to-encrypt-email.md) (部分內容為機器翻譯)。|
 |**S/MIME 加密的郵件**|規則只可以存取信封標頭，並根據可檢查這些標頭的條件來處理郵件。 <p> 無法處理具有需要檢查郵件內容之條件的規則，或具有可以修改郵件內容之動作的規則。|
 |**RMS 保護的訊息**：已套件 Active Directory Rights Management Services(AD RMS) 或 Azure 版權管理 (RMS) 原則的郵件。|規則永遠可以存取信封標頭，並根據可檢查這些標頭的條件來處理郵件。 <p> 如需可檢查或修改 RMS 保護之郵件內容的規則，您必須確認已啟用傳輸解密 (強制或選擇性；預設值是選擇性)。|
 |**明文簽章的郵件**：已簽署但未加密的郵件。|是|

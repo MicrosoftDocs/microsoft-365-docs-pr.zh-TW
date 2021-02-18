@@ -15,19 +15,19 @@ ms.custom:
 description: 針對 Exchange Online Protection (EOP) 雲端主控的電子郵件篩選服務，取得最常見的一般問題的答案。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0a5712d2bfb110c3292dee06b456161599d40b1
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1a1ce845ef50d7485113c211b0a8d7770ea57815
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165484"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290018"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常見問題集
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
--  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection 獨立](exchange-online-protection-overview.md)
 
 在這裡，我們會針對 Exchange Online Protection (EOP) 雲端主控的電子郵件篩選服務，回答最常見的一般問題。 如需其他常見問題集 (FAQ) 主題，請前往下列連結：
 

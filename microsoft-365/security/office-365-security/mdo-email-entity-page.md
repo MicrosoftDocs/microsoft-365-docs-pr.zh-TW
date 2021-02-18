@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 01/21/2021
 audience: ITPro
-ms.topic: How-to
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5 和 ATP P2 客戶現在可以透過電子郵件實體頁面取得每個電子郵件的360度的觀點。
-ms.openlocfilehash: 3b9198c9d91969d3b57f379d17de33a1c00d37f6
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 0a866b4d635e5c9e26b6fc065503b44ee2063e9f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143100"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289482"
 ---
 # <a name="the-email-entity-page"></a>電子郵件實體頁面
 
@@ -30,7 +30,7 @@ ms.locfileid: "50143100"
 - [使用電子郵件實體頁面索引標籤](#use-email-entity-page-tabs)
 - [電子郵件實體頁面的新增](#new-to-the-email-entity-page)
 
-Microsoft Defender for Office 365 (或 MDO) E5，而 MDO P1 和 P2 具有使用 **電子郵件實體頁面** 的電子郵件360度的觀點。 已建立此「送出電子郵件」頁面，以加強 [威脅瀏覽器「電子郵件詳細資料」飛出](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer-views)所提供的資訊。
+Microsoft Defender for Office 365 (或 MDO) E5，而 MDO P1 和 P2 具有使用 **電子郵件實體頁面** 的電子郵件360度的觀點。 已建立此「送出電子郵件」頁面，以加強 [威脅瀏覽器「電子郵件詳細資料」飛出](threat-explorer-views.md)所提供的資訊。
 
 ## <a name="reach-the-email-entity-page"></a>到達電子郵件實體頁面
 

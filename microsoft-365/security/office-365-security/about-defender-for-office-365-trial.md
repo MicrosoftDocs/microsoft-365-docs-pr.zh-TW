@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 系統管理員可以深入瞭解 Microsoft Defender for Office 365 的試用模式
-ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 0f45379bec52b54059c743823e2c8eb366f9bd59
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233575"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289386"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>關於 Microsoft Defender for Office 365 試用版
 
@@ -57,7 +57,7 @@ Microsoft Defender for Office 365 試用版是一種最簡單的方法，可嘗�
 
 ## <a name="permissions"></a>權限
 
-若要開始或結束試用，您必須是 Azure Active Directory 中 **全域管理員** 或 **安全性管理員** 角色的成員。 如需詳細資訊，請參閱 [關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+若要開始或結束試用，您必須是 Azure Active Directory 中 **全域管理員** 或 **安全性管理員** 角色的成員。 如需詳細資訊，請參閱 [關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="additional-information"></a>其他資訊
 
@@ -98,7 +98,7 @@ Office 365 試用版會逐步向外推出符合特定準則的現有客戶 (包�
 - [威脅瀏覽器和即時偵測](threat-explorer.md)
 - [Defender for Office 365 的即時報告](view-reports-for-atp.md)
 - [威脅追蹤器 - 新增和值得注意的功能](threat-trackers.md)
-- 與[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)整合
+- 與[Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)整合
 
 ### <a name="response-and-remediation"></a>回應和修正
 

@@ -8,45 +8,59 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以在安全性入口網站中瞭解如何在承租人允許/封鎖清單中設定允許和封鎖。
-ms.openlocfilehash: c789b09224d00f5bb41ae29d6d2a6efa64d23a8d
-ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 250b6223ffe663e0cd950069a3c3c7827b4aa57b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799710"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290162"
 ---
-# <a name="managing-allows-and-blocks-in-the-tenant-allowblock-list"></a>在承租人允許/封鎖清單中管理允許和封鎖
+# <a name="manage-the-tenant-allowblock-list"></a>管理租用戶允許/封鎖清單中
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
+>
 > 本文所述的功能都是在預覽中，可能會變更，而且無法在所有的組織中使用。
+>
+> 您此時無法在 [租使用者允許/封鎖] 清單中 **設定** 允許的專案。
 
 在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱，您可能會反對 EOP 篩選判定。 例如，良好的郵件可能會標示為壞的 (誤報) 或不良郵件可以透過 (誤報) 。
 
-Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆寫 Microsoft 365 篩選 verdicts。 承租人允許/封鎖清單是在郵件流程期間和使用者按一下時使用。 您可以在 [承租人允許/封鎖] 清單中指定要允許或封鎖的 URLs。
+Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆寫 Microsoft 365 篩選 verdicts。 承租人允許/封鎖清單是在郵件流程期間和使用者按一下時使用。 您可以指定要永遠封鎖 URLs 或檔案。
 
-本主題說明如何使用 Exchange Online 中的信箱，在 Security & 合規性中心或 PowerShell (Exchange Online PowerShell 中，設定 [安全性合規性中心] 或 [Exchange Online 365 中的專案。沒有 Exchange Online 信箱) 之組織的獨立 EOP PowerShell。
+本文說明如何在「安全性 & 合規性中心」或「PowerShell (Exchange online PowerShell 中使用 Exchange Online 信箱的 Microsoft 365 組織來設定專案]。沒有 Exchange Online 信箱) 之組織的獨立 EOP PowerShell。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至「 **租使用者允許/封鎖清單** 」頁面，請使用 <https://protection.office.com/tenantAllowBlockList> 。
 
+- 您可以使用檔案的 SHA256 雜湊值來指定檔案。 若要在 Windows 中尋找檔案的 SHA256 雜湊值，請在命令提示字元中執行下列命令：
+
+  ```dos
+  certutil.exe -hashfile "<Path>\<Filename>" SHA256
+  ```
+
+  例如，此值可能為 `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`。 不支援可感知雜湊 (pHash) 值。
+
 - 在本文稍後的 [承租人允許/封鎖清單區段的 url 語法](#url-syntax-for-the-tenant-allowblock-list) 中，會說明可用的 URL 值。
 
-- 承租人允許/封鎖清單最多可以有500個專案可供 URLs。
+- 承租人允許/封鎖清單可為 URLs 和500專案提供檔案雜湊的最大值為500專案。
 
 - 專案應該在15分鐘內生效。
-
-- 封鎖專案優先于允許專案。
 
 - 根據預設，承租人允許/封鎖清單中的專案會在30天后到期。 您可以指定日期或將其設為永不過期。
 
@@ -60,7 +74,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
   **附註**：
 
-  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心在承租人允許/封鎖清單中建立 URL 專案
@@ -69,13 +83,11 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
 
-2. 在 [**租使用者允許/封鎖清單**] 頁面上，確認已選取 [ **URLs** ] 索引標籤，然後按一下 [**新增**]
+2. 在 [**承租人允許/封鎖清單**] 頁面上，確認已選取 [ **URLs** ] 索引標籤，然後按一下 [**封鎖**]。
 
-3. 在出現的 [ **新增 URLs** ] 浮出控制項中，設定下列設定：
+3. 在出現的 [ **封鎖 URLs** 浮出] 中，設定下列設定：
 
-   - **使用萬用字元新增 URLs**：每行輸入一個 URL，最多20個。
-
-   - **封鎖/允許**：選取是否要 **允許** 或 **封鎖** 指定的 URLs。
+   - **新增封鎖 URLs**：每行輸入一個 URL，最多20個。
 
    - **永不過期**：執行下列其中一個步驟：
 
@@ -87,29 +99,46 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
    - **選用附注**：輸入專案的描述性文字。
 
-4. 完成後，請按一下 [ **新增**]。
+4. 完成後，按一下 **[新增]**。
+
+## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心在承租人允許/封鎖清單中建立檔案專案
+
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
+
+2. 在 [ **租使用者允許/封鎖清單** **] 頁面** 上，選取 [檔案] 索引標籤，然後按一下 [ **封鎖**]。
+
+3. 在 [ **新增要封鎖** 浮出的浮出] 快顯視窗中，設定下列設定：
+
+   - **新增檔案雜湊**：每行輸入一個 SHA256 雜湊值，最多20個。
+
+   - **永不過期**：執行下列其中一個步驟：
+
+     - 確認已關閉此設定 (![ 切換 ](../../media/scc-toggle-off.png)) 並使用 [ **到期** 日] 方塊來指定專案的到期日。
+
+     或
+
+     - 將切換向右移動，將專案設定為永不到期： ![開啟](../../media/scc-toggle-on.png).
+
+   - **選用附注**：輸入專案的描述性文字。
+
+4. 完成後，按一下 **[新增]**。
 
 ## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心來查看承租人允許/封鎖清單中的專案
 
 1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
 
-2. 選取 [ **URLs** ] 索引標籤。
+2. 選取 [ **URLs** ] 索引標籤 **或 [檔案** ] 索引標籤。
 
 按一下下列欄標題，以遞增或遞減順序排序：
 
-- **值**
-- **動作**： **封鎖** 或 **允許**。
+- **值**： URL 或檔雜湊。
 - **上次更新日期**
 - **有效期**
 - **附註**
 
-按一下 [ **群組** ]，依 **動作** 將專案群組 (**封鎖** 或 **允許**) 或 **無**。
-
 按一下 [ **搜尋**]，輸入全部或部分的值，然後按 enter 以尋找特定值。 完成後，請按一下 [ **清除搜尋** ![ 清除搜尋] 圖示 ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) 。
 
 按一下 [ **篩選**]。 在出現的 [ **篩選** ] 浮出控制項中，設定下列任一設定：
-
-- **動作**：選取 [ **允許**]、[ **封鎖** ] 或 [兩者]。
 
 - **永不到期**：選取 [關閉]： [關閉] 或 [開啟]：開啟開啟] ![ ](../../media/scc-toggle-off.png) ![ ](../../media/scc-toggle-on.png) 。
 
@@ -121,19 +150,17 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 若要清除現有篩選，請按一下 [ **篩選**]，然後在出現的 [ **篩選** ] 浮出控制項中按一下 [ **清除篩選**]。
 
-## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心修改承租人允許/封鎖清單中的專案
+## <a name="use-the-security--compliance-center-to-modify-block-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 合規性中心修改承租人允許/封鎖清單中的封鎖專案
 
-您無法修改 URL 值本身。 相反地，您必須刪除該專案，然後重新建立。
+您無法在專案中修改現有的封鎖 URL 或檔值。 若要修改這些值，您必須刪除並重新建立專案。
 
 1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
 
-2. 選取 [ **URLs** ] 索引標籤。
+2. 選取 [ **URLs** ] 索引標籤 **或 [檔案** ] 索引標籤。
 
-3. 選取您要修改的專案，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 。
+3. 選取您要修改的封鎖專案，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 。
 
 4. 在出現的浮出控制項中，設定下列設定：
-
-   - **封鎖/允許**：選取 [ **允許** ] 或 [ **封鎖**]。
 
    - **永不過期**：執行下列其中一個步驟：
 
@@ -145,32 +172,38 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
    - **選用附注**：輸入專案的描述性文字。
 
-5. 完成後，請按一下 **[儲存]**。
+5. 完成後，按一下 **[儲存]**。
 
-## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>使用安全性 & 規範中心移除承租人允許/封鎖清單中的專案
+## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>使用安全性 & 合規性中心移除租使用者允許/封鎖清單中的封鎖專案
 
 1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
 
-2. 選取 [ **URLs** ] 索引標籤。
+2. 選取 [ **URLs** ] 索引標籤 **或 [檔案** ] 索引標籤。
 
-3. 選取您要移除的專案，然後按一下 [ **刪除** ![ 刪除圖示] ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。
+3. 選取您要移除的封鎖專案，然後按一下 [ **刪除** ![ 刪除圖示] ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。
 
 4. 在出現的警告對話方塊中，按一下 [ **刪除**]。
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定承租人允許/封鎖清單
 
-### <a name="use-powershell-to-add-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 在承租人允許/封鎖清單中新增專案
+### <a name="use-powershell-to-add-block-entries-to-the-tenant-allowblock-list"></a>使用 PowerShell 將封鎖專案新增至承租人允許/封鎖清單
 
-若要在 [租使用者允許/封鎖] 清單中新增專案，請使用下列語法：
+若要在 [租使用者允許/封鎖] 清單中新增封鎖專案，請使用下列語法：
 
 ```powershell
-New-TenantAllowBlockListItems -ListType Url -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-這個範例會新增 contoso.com 及所有子域 (的 URL 封鎖專案（例如，contoso.com、www.contoso.com 及 xyz.abc.contoso.com) ）。 因為我們未使用 ExpirationDate 或 NoExpiration 參數，所以專案會在30天后到期。
+這個範例會新增 contoso.com 及所有子域 (的封鎖 URL 專案（例如，contoso.com、www.contoso.com 及 xyz.abc.contoso.com) ）。 因為我們未使用 ExpirationDate 或 NoExpiration 參數，所以專案會在30天后到期。
 
 ```powershell
-New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
+New-TenantAllowBlockListItem -ListType Url -Block -Entries ~contoso.com
+```
+
+這個範例會為永不到期的指定檔案新增封鎖檔專案。
+
+```powershell
+New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)。
@@ -180,28 +213,34 @@ New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
 若要在 [租使用者允許/封鎖] 清單中查看專案，請使用下列語法：
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType Url [-Entry <URLValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
+Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Block] [-ExpirationDate <DateTime>] [-NoExpiration]
 ```
 
 本範例會傳回所有封鎖的 URLs。
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType Url -Action Block
+Get-TenantAllowBlockListItems -ListType Url -Block
+```
+
+此範例會傳回指定之檔案雜湊值的資訊。
+
+```powershell
+Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
 ```
 
 如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems)。
 
-### <a name="use-powershell-to-modify-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 修改承租人 Allow/封鎖清單中的專案
+### <a name="use-powershell-to-modify-block-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 修改承租人 Allow/封鎖清單中的封鎖專案
 
-您無法修改 URL 值本身。 相反地，您必須刪除該專案，然後重新建立。
+您無法在區塊專案中修改現有的 URL 或檔值。 若要修改這些值，您必須刪除並重新建立專案。
 
-若要修改承租人 Allow/封鎖清單中的專案，請使用下列語法：
+若要修改承租人 Allow/封鎖清單中的封鎖專案，請使用下列語法：
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Block] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-本範例會變更指定專案的到期日。
+本範例會變更指定的封鎖專案的到期日。
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate (Get-Date "5/30/2020 9:30 AM").ToUniversalTime()
@@ -209,15 +248,15 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 如需詳細的語法及參數資訊，請參閱 [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems)。
 
-### <a name="use-powershell-to-remove-entries-from-the-tenant-allowblock-list"></a>使用 PowerShell 從承租人允許/封鎖清單中移除專案
+### <a name="use-powershell-to-remove-block-entries-from-the-tenant-allowblock-list"></a>使用 PowerShell 從承租人允許/封鎖清單中移除封鎖專案
 
-若要移除承租人允許/封鎖清單中的專案，請使用下列語法：
+若要從承租人允許/封鎖清單中移除封鎖專案，請使用下列語法：
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN">
 ```
 
-此範例會從承租人允許/封鎖清單中移除指定的 URL 專案。
+此範例會從承租人允許/封鎖清單中移除指定的封鎖 URL 專案。
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
@@ -234,7 +273,6 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 - 不支援 Unicode，但 Punycode 是。
 
 - 如果下列所有陳述皆為 true，則允許主機名稱：
-
   - 主機名稱包含句點。
   - 句點的左側至少有一個字元。
   - 句點右側至少有兩個字元。

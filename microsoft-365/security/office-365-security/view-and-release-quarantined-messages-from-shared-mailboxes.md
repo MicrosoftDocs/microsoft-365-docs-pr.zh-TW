@@ -1,5 +1,5 @@
 ---
-title: 從共用信箱中查看和釋出隔離的郵件
+title: 從共用信箱中查看和發行隔離的郵件
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,52 +14,52 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
-description: 使用者可以瞭解如何查看並處理已送往他們有權共用信箱的隔離郵件。
+description: 使用者可以瞭解如何針對已傳送至其許可權之共用信箱的隔離郵件，查看並採取行動。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3efccca375745b0850c91039165b72a7d6f0bcb3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 31fbf9c54c3f28e439f444dde872469918dc29d4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931443"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290138"
 ---
-# <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>從共用信箱中查看和釋出隔離的郵件
+# <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>從共用信箱中查看和發行隔離的郵件
 
 > [!NOTE]
-> 本文所述的功能目前為預覽版，並不提供所有人使用，且可能會有所變更。
+> 本文中所述的功能目前在預覽中，無法供所有人使用，而且可能會變更。
 
-使用者可以管理隔離的郵件，其中它們是其中一個收件者，如 [EOP](find-and-release-quarantined-messages-as-a-user.md)中的使用者一樣尋找和釋出隔離的郵件。 但是，如果使用者擁有信箱的完全存取和傳送為或代理傳送者許可權，那麼共用信箱呢？這如 [Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)中的共用信箱所述？
+使用者可以管理被隔離的郵件，而這些郵件是以 [EOP 中的使用者身分發現和發行隔離郵件](find-and-release-quarantined-messages-as-a-user.md)所述的其中一位收件者。 不過，如果使用者擁有信箱的「完整存取」和「代理傳送」或「代理傳送者」許可權（如 [Exchange Online 中的共用信箱](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)所述），共用信箱又該如何做呢？
 
-之前，若要讓使用者管理送往共用信箱的隔離郵件，系統管理員必須讓共用信箱的自動對數保持啟用 (當系統管理員將另一個信箱的存取權授予使用者時，系統預設會啟用此) 。 不過，根據使用者能夠存取的信箱大小和數量，Outlook 嘗試開啟使用者具有存取權的所有信箱時，可能會影響效果。  因此，許多系統管理員選擇移除共用信箱 [的自動對數](https://docs.microsoft.com/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
+先前，使用者能夠管理傳送至共用信箱的隔離郵件時，系統管理員可以將自動對應啟用，以供系統管理員在使用者存取另一個信箱) 時，預設會啟用該共用 (信箱。 不過，視使用者有權存取的信箱大小和數目而定，當 Outlooks 嘗試開啟使用者可以存取的 *所有* 信箱時，效能會受到影響。 基於這個理由，許多系統管理員會選擇 [移除共用信箱的自動對應](https://docs.microsoft.com/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
 
-現在，使用者不再需要自動對數來管理已送往共用信箱的隔離郵件。 這樣才有效。 有兩種不同的方法可以存取已送往共用信箱的隔離郵件：
+現在，使用者不再需要自動對應來管理傳送至共用信箱的隔離郵件。 它只適用于運作。 有兩種不同的方法可以存取已傳送至共用信箱的隔離郵件：
 
-- 如果系統管理員已啟用反[](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies)垃圾郵件策略中的使用者垃圾郵件通知，任何能夠存取共用信箱中使用者垃圾郵件通知的使用者，都可以按一下通知中的 [檢閱> 按鈕，在安全性&合規性中心隔離。 請注意，這個方法只能讓使用者管理已隔離並寄到共用信箱的郵件。 使用者在此情境中無法管理自己的隔離郵件。
+- 如果系統管理員已在反垃圾郵件原則中 [啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md) ，則可以存取共用信箱中使用者垃圾郵件通知的任何使用者，都可以按一下通知中的 [ **檢查** ] 按鈕，以移至安全性 & 規範中心內的隔離。 請注意，此方法只允許使用者管理傳送至共用信箱的隔離郵件。 使用者無法在此內容中管理自己的隔離訊息。
 
-- 使用者可以前往 [安全性與合規性中心的隔離&隔離](find-and-release-quarantined-messages-as-a-user.md)。 根據預設，只會顯示已給使用者的郵件。 不過，使用者可以變更 [郵件識別碼 (預設為) 收件者電子郵件地址、輸入共用信箱電子郵件地址，然後按一下 [重新整理， 查看已隔離的郵件已送到共用信箱中。
+- 使用者可以 [前往安全性 & 規範中心內的隔離](find-and-release-quarantined-messages-as-a-user.md)。 根據預設，只會顯示傳送給使用者的郵件。 不過，使用者可以變更「**郵件識別碼」按鈕** 的 **排序結果** () **收件者的電子郵件地址**、輸入共用信箱的電子郵件地址，然後 **按一下 [** 重新整理]，以查看已傳送至共用信箱的隔離郵件。
 
-  ![按照收件者電子郵件地址排序隔離的郵件。](../../media/quarantine-sort-results-by-recipient-email-address.png)
+  ![根據收件者電子郵件地址排序隔離的郵件。](../../media/quarantine-sort-results-by-recipient-email-address.png)
 
-不論使用哪種方法，使用者都可以在隔離郵件中包含收件者 **欄以避免混淆** 。 要顯示的欄數上限為 7，因此使用者必須按一下 [修改欄、移除現有的欄 (例如，[政策類型) ;選取收件者，然後按一下 [儲存或儲存為預設值。  
+不論方法為何，使用者都可以加入隔離郵件的 **收件** 者欄，以避免混淆。 顯示的最大欄數是7，因此使用者需要按一下 [ **修改欄**]，移除現有的欄 (例如 [ **原則類型**) ]，選取 [ **收件** 者]，然後按一下 [ **儲存** ] 或 [ **另存為預設值**]。
 
-  ![移除政策類型欄，並新增要隔離的收件者欄。](../../media/quarantine-add-recipient-column.png)
+  ![移除 [原則類型] 欄，並將 [收件者] 欄新增至隔離區。](../../media/quarantine-add-recipient-column.png)
 
 ## <a name="things-to-keep-in-mind"></a>必須記住的事項
 
-- 第一個針對隔離郵件採取行動的使用者，會決定該郵件的接收物件是使用共用信箱的每個人。 例如，如果有 10 個使用者存取共用信箱，而使用者決定刪除隔離郵件，這 10 個使用者將會刪除該郵件。 同樣地，如果使用者決定釋出郵件，該郵件會釋出至共用信箱，且共用信箱的其他使用者都可以進行共用。
+- 第一個作用於隔離郵件的使用者，會決定所有使用共用信箱之使用者的郵件 fate。 例如，如果有10位使用者存取共用信箱，而且使用者決定刪除隔離郵件，則會刪除所有10位使用者的郵件。 同樣地，如果使用者決定要放開郵件，該郵件就會發佈至共用信箱，並可供共用信箱的其他所有使用者存取。
 
-- 目前 **，針對已** 送往共用信箱的隔離郵件，在詳細資料飛出區中無法使用封鎖寄件者按鈕。
+- 目前已傳送至共用信箱的隔離郵件，[**詳細資料**] 浮出器中無法使用 [**封鎖寄件者**] 按鈕。
 
-- 若要在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中管理共用信箱的隔離郵件，使用者需要以共用信箱電子郵件地址使用 [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) Cmdlet 做為 _RecipientAddress_ 參數的值來識別郵件。 例如：
+- 若要管理 [Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中共用信箱的隔離郵件 PowerShell，使用者必須使用 [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) Cmdlet 與共享信箱電子郵件 _RecipientAddress_ 位址，以識別郵件。 例如：
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com
   ```
 
-  然後，使用者可以從清單中選取隔離郵件來查看或採取動作。
+  然後，使用者可以從清單中選取隔離的郵件，以查看或採取動作。
 
-  此範例顯示所有已送往共用信箱的隔離郵件，然後從隔離中釋出列表中的第一封郵件 (清單中的第一封郵件是 0，第二封郵件是 1，以) 此類比。
+  在這個範例中，會顯示所有已傳送至共用信箱的隔離郵件，然後從隔離區發行清單中的第一封郵件， (清單中的第一個郵件是0，第二個是1，) 依此類推。
 
   ```powershell
   $SharedMessages = Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity
@@ -71,5 +71,5 @@ ms.locfileid: "49931443"
 
   - [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)
   - [Get-QuarantineMessageHeader](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessageheader)
-  - [Preview-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage)
+  - [預覽-Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage)
   - [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)

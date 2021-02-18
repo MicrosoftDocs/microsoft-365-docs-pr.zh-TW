@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用攻擊模擬訓練，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 Plan 2 組織中執行模擬網路釣魚和密碼攻擊。
-ms.openlocfilehash: 2c00fb27748887c6b8e2fa1458b10f0c3405eef7
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1ec5b8175db6eb03e59a31a4dc21d9649c5e7616
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877161"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289888"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>開始使用攻擊模擬訓練
 
@@ -45,7 +46,7 @@ ms.locfileid: "49877161"
   - **攻擊模擬器管理員**：建立及管理攻擊類比活動的所有層面。
   - **攻擊模擬器的「負載作者**」：建立系統管理員可以稍後再啟動的攻擊負載。
 
-  如需詳細資訊，請參閱 [安全性 & 規範中心的許可權](permissions-in-the-security-and-compliance-center.md) 或 [有關系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  如需詳細資訊，請參閱 [安全性 & 規範中心的許可權](permissions-in-the-security-and-compliance-center.md) 或 [有關系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 - 攻擊模擬訓練沒有對應的 PowerShell Cmdlet。
 

@@ -12,19 +12,19 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a38454ceaba7f95dff172335dc374530efca20a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c64a9592d93ef046ad1c023a49bf378ccf6cf503
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165928"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290830"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>設定獨立 EOP 的最佳作法
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
--  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection 獨立](exchange-online-protection-overview.md)
 
 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。 本主題假設您已完成安裝程序。 若您尚未完成 EOP 安裝，請參閱 [設定 EOP 服務](set-up-your-eop-service.md)。
 
@@ -62,7 +62,7 @@ ms.locfileid: "50165928"
 |[PowerShell 連線能力](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|停用|停用|可供信箱使用者或郵件使用者 ([Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) Cmdlet) 所傳回的使用者物件。|
 |使用 [哄騙情報](learn-about-spoof-intelligence.md) 將寄件者新增至您的允許清單|是|是||
 |[以目錄為基礎的 Edge 封鎖 (DBEB) ](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已啟用|已啟用|網欄位型別 = 權威性|
-|[設定所有系統管理員帳戶的多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|已啟用|已啟用||
+|[設定所有系統管理員帳戶的多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|已啟用|已啟用||
 |
 
 ## <a name="troubleshooting"></a>疑難排解

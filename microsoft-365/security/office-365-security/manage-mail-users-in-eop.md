@@ -14,19 +14,19 @@ description: 瞭解如何在 Exchange Online Protection (EOP) 中管理郵件使
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34edafea7567da04094ea386d469d3d27937eee5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6a0dc1c0c343be77c6d6f713ee6b68a08a4fe5be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166390"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289910"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>在獨立版 EOP 中管理郵件使用者
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
--  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection 獨立](exchange-online-protection-overview.md)
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，郵件使用者是使用者帳戶的基本類型。 郵件使用者在獨立 EOP 組織中具有帳號憑證，而且可以存取) 具有指派許可權的資源 (。 郵件使用者的電子郵件地址為外部 (例如，在您的內部部署電子郵件環境) 中。
 
@@ -50,7 +50,7 @@ ms.locfileid: "50166390"
 - 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
-> 有問題嗎？ 在 Exchange 論壇中尋求協助。 請造訪 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇。
+> 有問題嗎？ 在 Exchange 論壇中尋求協助。 請造訪 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 論壇。
 
 ## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>使用 Exchange 系統管理中心管理郵件使用者
 
@@ -86,7 +86,7 @@ ms.locfileid: "50166390"
 
 3. 在開啟的 [郵件使用者屬性] 頁面上，按一下下列其中一個索引標籤以查看或變更屬性。
 
-   完成後，按一下 [儲存 **]**。
+   完成後，按一下 **[儲存]**。
 
 #### <a name="general"></a>一般
 

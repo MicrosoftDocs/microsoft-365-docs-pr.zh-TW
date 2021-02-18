@@ -7,7 +7,6 @@ ms.author: chrisda
 manager: chrisda
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,17 +16,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online 和 Exchange Online Protection 的 IPv6 來源中設定匿名輸入電子郵件的支援。
-ms.openlocfilehash: be226bf9814b0fcfadaaeb5b4bdda0ff133dd0c8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 63c9434fbd1f69c0cbd3145717b712857eb17e28
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202146"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290270"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>在 Microsoft 365 中新增對 IPv6 匿名輸入電子郵件的支援
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Microsoft 365 組織使用 Exchange Online 信箱和獨立 Exchange Online Protection (EOP) 沒有 Exchange Online 信箱的組織都支援透過 IPv6 的匿名輸入電子郵件。 來源 IPv6 電子郵件伺服器必須符合下列兩項需求：
 

@@ -7,7 +7,6 @@ author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,16 +14,23 @@ ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解 Exchange Online Protection 和 Exchange Online 中的 DKIM 已簽署郵件的驗證
-ms.openlocfilehash: 91a01f89bb633a38d27ddd3f2945b8707643d7e9
-ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 9da41cc7918b36e1aa6a4a8cc48aea6cd2a865c6
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49845056"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290258"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>支援 DKIM 簽署郵件的驗證
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Exchange Online Protection (EOP) 和 Exchange Online 都支援功能變數名稱驗證，識別出郵件 ([DKIM](https://www.rfc-editor.org/rfc/rfc6376.txt)) 郵件。
 

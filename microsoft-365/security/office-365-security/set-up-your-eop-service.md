@@ -15,19 +15,19 @@ ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 系統管理員可以瞭解如何設定獨立的 Exchange Online Protection (EOP) ，以保護內部部署的電子郵件環境。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 42952259da4086c4e147fb1a69fc081659dcc7e2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: de3c40a15a69eb2430c9c9b0473a983ef7c5354f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166204"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290462"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>設定您的獨立 EOP 服務
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
--  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection 獨立](exchange-online-protection-overview.md)
 
 本主題說明如何設定獨立 Exchange Online Protection (EOP) 。 如果您從 Office 365 網域精靈進入這裡，而您不希望使用 Exchange Online Protection 的話，請回到 Office 365 網域精靈。 如果您正在尋找如何設定連接器的詳細資訊，請參閱[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 
@@ -47,16 +47,16 @@ ms.locfileid: "50166204"
 - 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
-> 有問題嗎？ 在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇中尋求協助。
+> 有問題嗎？ 在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 論壇中尋求協助。
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步驟 1：使用 Microsoft 365 系統管理中心 新增及確認您的網域
 
-1. 在 [Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center)中，移至 **[設定]** 將您的網域新增至服務。
+1. 在 [Microsoft 365 管理中心](../../admin/admin-overview/about-the-admin-center.md)中，移至 **[設定]** 將您的網域新增至服務。
 
 2. 請遵循這些步驟，將適用的 DNS 記錄新增到 DNS 主機提供者，以便驗證網域擁有權。
 
 > [!TIP]
-> 當您新增網域至此服務並設定 DNS 時，[新增網域至 Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 和 [在任一 DNS 主機服務提供者建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)是有用的參考資源。
+> 當您新增網域至此服務並設定 DNS 時，[新增網域至 Office 365](../../admin/setup/add-domain.md) 和 [在任一 DNS 主機服務提供者建立 Office 365 的 DNS 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)是有用的參考資源。
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>步驟 2：新增收件者並選擇性地啟用 DBEB
 
@@ -72,7 +72,7 @@ ms.locfileid: "50166204"
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>步驟 4：允許輸入連接埠 25 SMTP 存取
 
-設定連接器之後，請等候72小時以允許傳播您的 DNS 記錄更新。 接著限制防火牆或郵件伺服器上的通訊埠 25 SMTP 流量，以僅接受來自 EOP 資料中心的郵件 (尤其是來自 [Exchange Online Protection IP 位址](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) 所列 IP 位址的郵件)。 這會限制您可接收的輸入郵件範圍，以保護內部部署環境的安全。 此外，若您在郵件伺服器上進行設定，以控制允許連線執行郵件轉送的 IP 位址，請一併更新這些設定。
+設定連接器之後，請等候72小時以允許傳播您的 DNS 記錄更新。 接著限制防火牆或郵件伺服器上的通訊埠 25 SMTP 流量，以僅接受來自 EOP 資料中心的郵件 (尤其是來自 [Exchange Online Protection IP 位址](../../enterprise/urls-and-ip-address-ranges.md) 所列 IP 位址的郵件)。 這會限制您可接收的輸入郵件範圍，以保護內部部署環境的安全。 此外，若您在郵件伺服器上進行設定，以控制允許連線執行郵件轉送的 IP 位址，請一併更新這些設定。
 
 > [!TIP]
 > 將 SMTP 伺服器的連線時間設定設為超過 60 秒。 此設定適用於大部分情況，例如，在傳送具有大型附件的郵件時可稍許延遲。
@@ -85,7 +85,7 @@ ms.locfileid: "50166204"
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步驟 6：使用 Microsoft 365 系統管理中心將您的 MX 記錄指向 EOP
 
-遵循網域設定步驟，更新您網域的 MX 記錄，讓輸入電子郵件流過 EOP。 請務必直接將 MX 記錄指向 EOP 而非讓協力廠商篩選服務將郵件轉送至 EOP。 如需詳細資訊，請再次參照[建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+遵循網域設定步驟，更新您網域的 MX 記錄，讓輸入電子郵件流過 EOP。 請務必直接將 MX 記錄指向 EOP 而非讓協力廠商篩選服務將郵件轉送至 EOP。 如需詳細資訊，請再次參照[建立 Office 365 的 DNS 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
 > [!NOTE]
 > 如果您必須將 MX 記錄指向位於 EOP 前方的另一部伺服器或服務，請參閱 [增強篩選 Exchange Online 中的連接器](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
