@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: b4981e8f2fda88f9ba078b29e70d572b7bcc7ce2
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: f84407046d2b1d91d834d090f49fc385df36ec51
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150487"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279351"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -84,6 +84,8 @@ ms.locfileid: "50150487"
     - 已選取 [**雙機碼加密**]。
     
     針對具有上述任何加密設定的標籤，網頁上的 Office 使用者不會看到標籤。 此外，新功能也無法與已有這些加密設定的已標記檔一起使用。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
+
+- 對於加密檔，不支援列印。
 
 - 針對授與使用者編輯許可權的加密檔，在 Office 應用程式的 web 版本中無法封鎖複製。
 
@@ -203,7 +205,7 @@ ms.locfileid: "50150487"
 使用此行為時，您可以保證所有的 Office 和 PDF 檔案在下載時受到保護，即使未進行標記，也能避免未經授權的存取。 不過，已上傳的已標示檔案不會受益于新功能。
 
 
-## <a name="search-for-documents-by-sensitivity-label"></a>依敏感度標籤搜尋檔    
+## <a name="search-for-documents-by-sensitivity-label"></a>依敏感度標籤搜尋檔
 
 您可以使用 managed 屬性 **InformationProtectionLabelId** ，在具有特定敏感度標籤的 SharePoint 或 OneDrive 中尋找所有檔。 請使用下列語法： `InformationProtectionLabelId:<GUID>`
 

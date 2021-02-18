@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09e680d2bcf8f1e0fd5237adbf640349741c26fd
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b1c613abd119265de3399d9057c917a680f5b880
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126582"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289780"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -74,12 +74,12 @@ ms.locfileid: "50126582"
     - [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
     - [安裝 Azure PowerShell 模組](/powershell/azure/install-az-ps?view=azps-2.3.2)
 
-- 管理員對 Microsoft 小組資訊障礙的同意-當您的原則就緒時，資訊障礙可以從聊天會話中移除人員。 這種設定可協助確保您的組織符合原則及規定。 使用下列程式可讓資訊障礙原則在 Microsoft 小組中如預期的方式運作。
+- 管理員對 Microsoft 小組資訊障礙的同意-當您的 IB 原則已到位時，可以從群組中移除非 IB 合規性使用者 (亦即，小組通道是以群組) 為基礎。 這種設定可協助確保您的組織符合原則及規定。 使用下列程式可讓資訊障礙原則在 Microsoft 小組中如預期的方式運作。
 
    1. 執行下列 PowerShell Cmdlet：
 
       ```powershell
-      Connect-AzureAD 
+      Connect-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
       if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }

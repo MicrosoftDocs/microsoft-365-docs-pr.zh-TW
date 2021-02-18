@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: IT 系統管理員的資訊，可管理 Office 應用程式中桌面、行動裝置及網路的靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 959fb0371ab50d4132cacbae38d979a9a75d2aab
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 8d7fd75aaa1b6f54222252c3e8379aaed2c4c223
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261354"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290808"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -126,7 +126,7 @@ Office 內建的標籤用戶端會從下列系統管理中心下載敏感度標�
 
 ## <a name="office-file-types-supported"></a>支援的 Office 檔案類型
 
-在 Word、Excel 及 PowerPoint 檔內建內建標籤的 Office 應用程式支援 Open XML 格式 (如 .docx 和 .xlsx) ，但不是 Microsoft Office 97-2003 格式 (例如 .doc 及 .xls) 。 當內建標籤不支援檔案類型時，[ **敏感度** ] 按鈕無法在 Office 應用程式中使用。
+在 Word、Excel 及 PowerPoint 檔內建內建標籤的 Office 應用程式支援 Open XML 格式 (如 .docx 和 .xlsx) 但不 (Microsoft Office 97-2003 格式例如 .doc 及 .xls) ，請開啟檔案格式 (例如 odt 及 ods) ，或其他格式。 當內建標籤不支援檔案類型時，[ **敏感度** ] 按鈕無法在 Office 應用程式中使用。
 
 Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Office 97-2003 格式。 如需詳細資訊，請參閱由該用戶端的系統管理指南之 [Azure 資訊保護統一標籤用戶端支援的檔案類型](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) 。
 
@@ -219,12 +219,12 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
     
     此選項的優點是最低的管理負荷，因為帳戶會自動建立，且標籤設定較為簡單。 在此案例中，您必須選取 [加密] 選項 [ [新增任何已驗證的使用者](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) ]，因為您不會事先知道電子郵件地址。 不利的是，此設定不會讓您限制特定使用者的存取權和使用許可權。
 
-外部使用者也可以使用 microsoft 帳戶來加密檔，當其使用 Microsoft 365 (應用程式時，在 Windows 上) 舊版本的 [Office 365 應用程式](https://docs.microsoft.com/deployoffice/name-change) ，以及 macOS (版本 16.42 +) ，Android (版本 16.0.13029 +) ，以及 iOS (版本 2.42 +) 。 例如，某人與他們共用加密檔，加密設定會指定其 Gmail 電子郵件地址。 此使用者可建立其自己的 Microsoft 帳戶，其使用 Gmail 電子郵件地址。 然後，使用此帳戶登入後，他們就可以開啟檔，並根據為該使用者指定的使用限制來進行編輯。 如需此案例的逐步範例，請參閱 [開啟和編輯受保護的檔](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
+外部使用者也可以使用 Microsoft 帳戶，在使用者使用 Windows 和 Microsoft 365 應用程式時，開啟已加密的檔。) 或獨立版本的 Office 2019 [365](https://docs.microsoft.com/deployoffice/name-change) (。 在其他平臺上，還會支援 Microsoft 帳戶。 macOS (Microsoft 365 應用程式、版本 16.42 +) 、Android (版本 16.0.13029 +) ，以及 iOS (版本 2.42 +) ，也支援開啟加密的檔。 例如，您組織中的使用者與組織外的使用者共用加密檔，而加密設定則會指定外部使用者的 Gmail 電子郵件地址。 此外部使用者可以建立使用 Gmail 電子郵件地址的自己的 Microsoft 帳戶。 然後，使用此帳戶登入後，他們就可以開啟檔，並根據為其所指定的使用限制來進行編輯。 如需此案例的逐步範例，請參閱 [開啟和編輯受保護的檔](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
 
 > [!NOTE]
 > Microsoft 帳戶的電子郵件地址必須符合所指定的電子郵件地址，以限制加密設定的存取權。
 
-當使用 Microsoft 帳戶的使用者以這種方式開啟加密檔時，如果不存在具有相同名稱的來賓帳戶，它會自動為租使用者建立來賓帳戶。 當來賓帳戶存在時，您可以使用網頁) 上的瀏覽器 (Office 來開啟 SharePoint 和 OneDrive 中的檔，以及從 Windows 桌面應用程式中開啟加密的檔。 
+當使用 Microsoft 帳戶的使用者以這種方式開啟加密檔時，如果不存在具有相同名稱的來賓帳戶，它會自動為租使用者建立來賓帳戶。 當來賓帳戶存在時，除了從支援的桌面和行動裝置應用程式中開啟加密檔之外，也可以使用網頁上的 Office 來開啟 SharePoint 和 OneDrive 中的檔。
 
 不過，在此情況下，不會立即建立自動來賓帳戶，因為複寫延遲。 如果您指定個人電子郵件地址做為標籤加密設定的一部分，我們建議您在 Azure Active Directory 中建立對應的來賓帳戶。 然後，讓這些使用者知道他們必須使用此帳戶來開啟組織中的加密檔。
 

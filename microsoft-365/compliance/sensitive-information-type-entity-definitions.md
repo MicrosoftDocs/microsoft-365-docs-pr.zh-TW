@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本文列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: 431349ffdfc1a9aa05d071ec5ef10d76919f7465
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: d23c6900e9aeb9ad9b550bb069b7a9592faa9b10
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094742"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288134"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -355,12 +355,12 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩位數 
 - 五個數字或字母 (不區分大小寫) 
 
-OR
+「或」
 
 - 一個至兩個選用的字母 (不區分大小寫)  
 - 四到九位數
 
-OR
+「或」
 
 - 九個數字或字母 (不區分大小寫) 
 
@@ -502,9 +502,9 @@ OR
 
 10-11 位數：
 - 第一個數位是在2-6 範圍內
-- 第九個數字是檢查碼
+- 九個數字是檢查碼
 - 第十個數字是問題的位數
-- 11位數 (選用) 是個別數位
+- 第十個數字 (選用) 是個別數位
 
 ### <a name="checksum"></a>校驗
 
@@ -957,6 +957,10 @@ OR
 - Passnummer
 - reisepässe
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 發行日期
+- 到期日
 
 ## <a name="austria-social-security-number"></a>奧地利的社會安全號碼
 
@@ -1180,7 +1184,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 - 字串 "DocumentDb"
 - 介於3-200 小寫或大寫字母、數位、符號、特殊字元或空格之間的任何組合
-- 大於符號 ( # A0) 、等號 (=) 、引號 ( ") 或撇號 ( ' ) 
+- 大於符號 (>) 、等號 (=) 、引號 ( ") 或撇號 ( ' ) 
 - 任何86小寫或大寫字母、數位、正斜線 (/) 或加號 (+) 的組合
 - 兩個等號 (=) 
 
@@ -1616,7 +1620,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="pattern"></a>模式
 
-- 0到大於符號的其中一個大於符號 ( # A0) 、撇號 ( ' ) 、等號 (=) 、引號 ( ") 或數位簽章 ( # ) 
+- 0到大於符號 (>) 、撇號 ( ' ) 、等號 (=) 、引號 ( ") 或數位簽章 ( # ) 
 - 86個字元的任何組合，其小寫或大寫字母、數位、正斜線 (/) 或加號 (+) 
 - 兩個等號 (=) 
 
@@ -1992,6 +1996,10 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - Passnummer
 - reisepass kein
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 發行日期
+- 到期日
 
 ## <a name="belgium-value-added-tax-number"></a>比利時增值的納稅號碼
 此機密資訊類型僅可用於下列專案：
@@ -6457,25 +6465,41 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 ### <a name="definition"></a>定義
 
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
+- 正則運算式會 `Regex_finland_passport_number` 找到符合模式的內容。
+- `Keywords_eu_passport_number`找到或的關鍵字 `Keyword_finland_passport_number` 。
+- 正則運算式 `Regex_eu_passport_date1` 會發現日期格式為 DD YYYY 或關鍵字 from `Keywords_eu_passport_date`
+
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
-- 正則運算式 Regex_finland_passport_number 找到符合模式的內容。
-- 會找到 Keywords_eu_passport_number_common 或 Keyword_finland_passport_number 中的關鍵字。
+- 正則運算式會 `Regex_finland_passport_number` 找到符合模式的內容。
+- `Keywords_eu_passport_number`找到或的關鍵字 `Keyword_finland_passport_number` 。
 
 ```xml
-<!-- Finland Passport Number -->
-<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+      <!-- Finland Passport Number -->
+      <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_finland_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keyword_finland_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_finland_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keyword_finland_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - 護照#
 - 護照#
@@ -6498,6 +6522,10 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - passi#
 - passi 編號
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 發行日期
+- 到期日
 
 ## <a name="france-drivers-license-number"></a>法國駕駛執照號碼
 
@@ -6779,46 +6807,79 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="definition"></a>定義
 
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
+- 函數 `Func_fr_passport` 會找到符合模式的內容。
+- `Keywords_eu_passport_number`找到或的關鍵字 `Keywords_france_eu_passport_number` 。
+- 正則運算式 `Regex_eu_passport_date3` 會找到日期格式為 DD MM YYYY 或關鍵字 from。 `Keywords_eu_passport_date`
+
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
-- 函數 Func_fr_passport 找到符合模式的內容。
-- 會找到來自 Keyword_passport 的關鍵字。
+- 函數 `Func_fr_passport` 會找到符合模式的內容。
+- `Keywords_eu_passport_number`找到或的關鍵字 `Keywords_france_eu_passport_number` 。
+
 
 ```xml
-<!-- France Passport Number -->
-<Entity id="3008b884-8c8c-4cd8-a289-99f34fc7ff5d" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_fr_passport" />
-        <Match idRef="Keyword_passport" />
-  </Pattern>
-</Entity>
+    <!-- France Passport Number -->
+    <Entity id="3008b884-8c8c-4cd8-a289-99f34fc7ff5d" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_fr_passport" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_france_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_fr_passport" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_france_eu_passport_number" />
+          </Any>
+        </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keyword_passport"></a>Keyword_passport
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- 護照號碼
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
 - 護照否
-- 護照#
-- 護照#
-- PassportID
-- Passportno
 - passportnumber
-- パスポート
-- パスポート番號
-- パスポートのNum
-- パスポート ＃ 
-- Numéro de passeport
-- Passeport n °
-- Passeport 非
-- Passeport#
-- Passeport#
-- PasseportNon
-- Passeportn °
+- 護照號碼
+- passportnumbers
+- 護照號碼
 
-      
+#### <a name="keywords_france_eu_passport_number"></a>Keywords_france_eu_passport_number
+
+- numéro de passeport
+- passeport n °
+- passeport 非
+- passeport#
+- passeport#
+- passeportnon
+- passeportn °
+- passeport français
+- passeport livre
+- passeport 購買
+- numéro passeport
+- passeport n °
+- n ° du passeport
+- n ° passeport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 發行日期
+- 到期日
+
+
 ## <a name="france-social-security-number-insee-or-equivalent-identification"></a>法國社會安全號碼 (INSEE) 或同等身分識別
-此敏感資訊類型的實體包含在歐盟社會保險號碼和對等識別碼的敏感資訊類型中。 它可以做為獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -6837,61 +6898,62 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="definition"></a>定義
 
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是95%：
-- 函數 Func_french_insee 或 Func_fr_insee 找到符合模式的內容。
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
+- 函數 `Func_french_insee` 會找到符合模式的內容。
 - 會找到來自 Keyword_fr_insee 的關鍵字。
 - 校驗和通過。
 
-當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
 - 函數 Func_french_insee 或 Func_fr_insee 找到符合模式的內容。
-- 找不到 Keyword_fr_insee 的關鍵字。
 - 校驗和通過。
 
 ```xml
-<!-- France INSEE -->
-<Entity id="71f62b97-efe0-4aa1-aa49-e14de253619d" patternsProximity="300" recommendedConfidence="85">
-  <Pattern confidenceLevel="95">
+    <!-- France INSEE -->
+    <Entity id="71f62b97-efe0-4aa1-aa49-e14de253619d" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_french_insee" />
-        <Match idRef="Func_fr_insee" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_fr_insee" />
-        </Any>
-  </Pattern>
-  <Pattern confidenceLevel="85">
-        <IdMatch idRef="Func_french_insee" />
-        <Match idRef="Func_fr_insee" />
         <Any minMatches="0" maxMatches="0">
           <Match idRef="Keyword_fr_insee" />
         </Any>
-  </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_french_insee" />
+        <Match idRef="Keyword_fr_insee" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
 #### <a name="keyword_fr_insee"></a>Keyword_fr_insee
 
+- 程式碼 sécu
+- d'identité nationale
 - insee
-- securité sociale
-- securite sociale
+- fssn#
+- le numéro d'identification nationale
+- le 程式碼 de la sécurité sociale
 - 國家識別碼
 - 本國身分識別
-- numéro d'identité
 - 無 d'identité
 - 不。 d'identité
+- numéro d'assurance
+- numéro d'identité
 - numero d'identite
+- numéro de sécu
+- numéro de sécurité sociale
 - 無 d'identite
 - 不。 d'identite
+- Ssn
+- Ssn#
+- sécurité sociale
+- securité sociale
+- securite sociale
+- socialsecuritynumber
 - 社會安全號碼
 - 社會安全性碼
 - 社交保險號碼
-- le numéro d'identification nationale
-- d'identité nationale
-- numéro de sécurité sociale
-- le 程式碼 de la sécurité sociale
-- numéro d'assurance sociale
-- numéro de sécu
-- 程式碼 sécu 
+
 
 ## <a name="france-tax-identification-number"></a>法國納稅識別號碼
 
@@ -8308,6 +8370,11 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - Útlevelek száma
 - útlevél szám
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 發行日期
+- 到期日
+
 
 ## <a name="hungary-social-security-number-taj"></a>匈牙利社會安全號碼 (TAJ) 
 
@@ -9330,22 +9397,144 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 ### <a name="definition"></a>定義
 
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
-- 正則運算式 Regex_italy_drivers_license_number 找到符合模式的內容。
-- 會找到來自 Keyword_italy_drivers_license_number 的關鍵字。
+- 正則運算式會 `Regex_italy_drivers_license_number` 找到符合模式的內容。
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keyword_italy_drivers_license_number` 。
 
 ```xml
-<!-- Italy Driver's license Number -->
-<Entity id="97d6244f-9157-41bd-8e0c-9d669a5c4d71" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="75">
+    <!-- Italy Driver's license Number -->
+    <Entity id="97d6244f-9157-41bd-8e0c-9d669a5c4d71" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_italy_drivers_license_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_italy_drivers_license_number" />
-        </Any>
-    </Pattern>
-</Entity>
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keyword_italy_drivers_license_number" />
+          </Any>
+        </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
+
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驅動程式許可證
+- 驅動程式 lics
+- 駕照
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
+- 駕駛執照
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
+- dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
@@ -9354,6 +9543,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - patente guida
 - patenti di guida
 - patenti guida
+
 
 ## <a name="italy-fiscal-code"></a>義大利會計代碼
 此機密資訊類型僅可用於下列專案：
@@ -12569,11 +12759,11 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="format"></a>格式
 
-14位數包含2個正斜杠
+包含兩個正斜線的14位數
   
 ### <a name="pattern"></a>模式
 
-14位數和2轉寄斜線：
+14位數和兩個正斜線：
   
 - 五位數 
 - 一個正斜線
@@ -12850,28 +13040,75 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 ### <a name="definition"></a>定義
 
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
-- 函數 Func_polish_passport_number 找到符合模式的內容。
-- 會找到來自 Keyword_polish_national_id_passport_number 的關鍵字。
+- 函數 `Func_polish_passport_number_v2` 會找到符合模式的內容。
+- 校驗和通過。
+- `Keywords_eu_passport_number`找到或的關鍵字 `Keyword_polish_national_passport_number` 。
+- 找到來自的關鍵字 `Keywords_eu_passport_date` 。
+
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
+- 函數 `Func_polish_passport_number_v2` 會找到符合模式的內容。
+- 校驗和通過。
+- `Keywords_eu_passport_number`找到或的關鍵字 `Keyword_polish_national_passport_number` 。
+
+DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信賴度很低：
+- 函數 `Func_polish_passport_number_v2` 會找到符合模式的內容。
 - 校驗和通過。
 
 ```xml
-<!-- Poland Passport Number -->
-<Entity id="03937FB5-D2B6-4487-B61F-0F8BFF7C3517" patternsProximity="300" recommendedConfidence="85">
-      <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_polish_passport_number" />
-          <Match idRef="Keyword_polish_national_id_passport_number" />
-      </Pattern>
-</Entity>
-</Version>
+      <!-- Poland Passport Number -->
+      <Entity id="03937FB5-D2B6-4487-B61F-0F8BFF7C3517" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_polish_passport_number_v2" />
+          <Match idRef="Keywords_eu_passport_date" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keyword_polish_national_passport_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_polish_passport_number_v2" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keyword_polish_national_passport_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_polish_passport_number_v2" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
+#### <a name="keyword_polish_national_passport_number"></a>Keyword_polish_national_passport_number
 
 - 轉寄 paszportu
-- 星期日。 Paszportu
-- Paszport
+- numery paszportów
+- numery paszportowe
+- nr paszportu
+- 星期日。 paszportu
+- nr paszportów
+- n ° passeport
+- passeport n °
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 發行日期
+- 到期日
+
 
 ## <a name="poland-regon-number"></a>波蘭 REGON 編號
 此機密資訊類型僅可用於下列專案：
@@ -15153,7 +15390,6 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ## <a name="spain-social-security-number-ssn"></a> (SSN) 的西班牙社會安全號碼
 
-這種敏感資訊類型實體包含在歐盟社會保險號碼或同等識別碼的敏感資訊類型中。 它可以做為獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -15177,19 +15413,35 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
 - 函數 Func_spanish_social_security_number 找到符合模式的內容。
 - 校驗和通過。
+- - 找到來自的關鍵字  `Keywords_spain_eu_ssn_or_equivalent` 。 
+
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
+- 函數 Func_spanish_social_security_number 找到符合模式的內容。
+- 校驗和通過。
 
 ```xml
-<!-- Spain SSN -->
-<Entity id="5df987c0-8eae-4bce-ace7-b316347f3070" patternsProximity="300" recommendedConfidence="85">
-    <Pattern confidenceLevel="85">
-        <IdMatch idRef="Func_spanish_social_security_number" />
-    </Pattern>
-</Entity>
+    <!-- Spain SSN -->
+    <Entity id="5df987c0-8eae-4bce-ace7-b316347f3070" patternsProximity="300" recommendedConfidence="85" relaxProximity="true" >
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spanish_social_security_number" />
+          <Match idRef="Keywords_spain_eu_ssn_or_equivalent" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spanish_social_security_number" />
+        </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-無
+#### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
+
+- Ssn
+- Ssn#
+- socialsecurityno
+- 社會安全性否
+- 社會安全號碼
+- número de la seguridad 社交
 
 ## <a name="spain-tax-identification-number"></a>西班牙納稅識別號碼
 此機密資訊類型僅可用於下列專案：
@@ -15313,7 +15565,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 介於1-200 小寫或大寫字母、數位、符號、特殊字元或空格之間的任何組合
 - 字串 "Password" 或 "pwd"，其中 "pwd" 前面不是小寫字母
 - 等號 (=) 
-- 不是貨幣符號的任何字元 ($) ，百分比符號 (% ) ，大於符號 ( # A0) ，at 符號 ( @ ) ，引號 ( ") ，分號 (; ) ，左大括弧 ( [) ，或左中括弧 ( {) 
+- 不是貨幣符號的任何字元 ($) ，百分比符號 (% ) ，大於符號 (>) ，符號 ( @ ) ，引號 ( ") ，分號 (; ) ，左大括弧 ( [) ，或左中括弧 ( {) 
 - 任何7-128 個字元的組合不是分號 (; ) 、正斜線 (/) 或引號 ( ") 
 - 分號 (; ) 或引號 ( ") 
 
@@ -15359,9 +15611,9 @@ Foreigners 與 Foreigner 的識別號碼
 - 密碼或密碼後接0-2 個空格、等號 (=) 、0-2 空間，以及星號 ( * ) -OR-
 - 密碼或密碼，接著：
     - 等號 (=) 
-    - 小於符號 ( # A0) 
+    - 小於符號 (<) 
     - 1-200 個字元的任意組合（大小寫字母、數位、星號 ( * ) 、連字號 ( ) 、底線 (_) 或空白字元）
-    - 大於符號 ( # A0) 
+    - 大於符號 (>) 
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -15617,7 +15869,6 @@ Foreigners 與 Foreigner 的識別號碼
 - skatteidentifikationsnummer
    
 ## <a name="sweden-passport-number"></a>瑞典護照號碼
-這個敏感資訊類型實體包含在歐盟護照號碼機密資訊類型中，並可作為獨立的敏感資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -15633,59 +15884,82 @@ Foreigners 與 Foreigner 的識別號碼
 
 ### <a name="definition"></a>定義
 
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
+- 正則運算式 Regex_sweden_passport_number 找到符合模式的內容。
+- `Keywords_eu_passport_number`找到或的關鍵字 `Keyword_sweden_passport` 。
+- 正則運算式 `Regex_sweden_eu_passport_date` 會找到以 DD MMM/MMM YY 格式 (01 JAN/JAN 12) 或找到關鍵字的日期 `Keywords_eu_passport_date` 。
+
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
 - 正則運算式 Regex_sweden_passport_number 找到符合模式的內容。
-- 下列其中一項為真：
-    - 會找到來自 Keyword_passport 的關鍵字。
-    - 會找到來自 Keyword_sweden_passport 的關鍵字。
+- `Keywords_eu_passport_number`找到或的關鍵字 `Keyword_sweden_passport` 。
+
 
 ```xml
-<!-- Sweden Passport Number -->
-<Entity id="ba4e7456-55a9-4d89-9140-c33673553526" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="75">
-        <IdMatch idRef="Regex_sweden_passport_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_passport" />
-          <Match idRef="Keyword_sweden_passport" />
-        </Any>
-    </Pattern>
-</Entity>
+    <!-- Sweden Passport Number -->
+    <Entity id="ba4e7456-55a9-4d89-9140-c33673553526" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_sweden_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keyword_sweden_passport" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_sweden_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_sweden_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keyword_sweden_passport" />
+          </Any>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
    
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
-- 簽證要求 
-- 外部註冊卡 
-- Schengen 簽證 
-- Schengen 簽證 
-- 簽證處理 
-- 簽證類型 
-- 單一專案 
-- 多重專案 
-- G3 處理費用 
+- 外部註冊卡
+- g3 處理費用
+- 多重專案
+- Numéro de passeport
+- passeport n °
+- passeport 非
+- passeport#
+- passeport#
+- passeportnon
+- passeportn °
+- passnummer
+- 傳遞 nr
+- schengen 簽證
+- schengen 簽證
+- 單一專案
+- sverige 傳遞
+- 簽證要求
+- 簽證處理
+- 簽證類型
 
-#### <a name="keyword_passport"></a>Keyword_passport
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 護照號碼 
-- 護照否 
-- 護照# 
-- 護照# 
-- PassportID 
-- Passportno 
-- passportnumber 
-- パスポート 
-- パスポート番號 
-- パスポートのNum 
-- パスポート＃ 
-- Numéro de passeport 
-- Passeport n ° 
-- Passeport 非 
-- Passeport# 
-- Passeport# 
-- PasseportNon 
-- Passeportn ° 
+- 發行日期
+- 到期日
+
 
 ## <a name="sweden-social-security-number-or-equivalent-identification"></a>瑞典社會安全號碼或對等身分識別
 這個敏感資訊類型實體只有歐盟社會保險號碼或同等識別碼的敏感資訊類型提供。
@@ -15841,7 +16115,7 @@ Foreigners 與 Foreigner 的識別號碼
 四個字母后接5-31 個字母或數位：
 - 四個字母的銀行程式碼 (不區分大小寫)  
 - 選擇性的空格 
--  ( (BBAN) # A3 的基本銀行帳戶號碼，4-28 個字母或數位 
+-  ( (BBAN) ) 基本銀行帳戶號碼的4-28 字母或數位 
 - 選擇性的空格 
 - BBAN 的其餘部分 (一到三個字母或數位) 
 
@@ -15913,11 +16187,11 @@ Foreigners 與 Foreigner 的識別號碼
 
 ### <a name="format"></a>格式
 
-13位數
+13位數數位
 
 ### <a name="pattern"></a>模式
 
-13位數：
+13位數數位：
 
 - 三位數-756
 - 選用點
@@ -16228,7 +16502,6 @@ Foreigners 與 Foreigner 的識別號碼
 - Vatandaşlık 否
 
 ## <a name="uk-drivers-license-number"></a>英國。 駕駛執照號碼
-這種敏感資訊類型實體包含在歐盟駕駛執照號碼的敏感資訊類型中。 它可以做為獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -16250,39 +16523,150 @@ Foreigners 與 Foreigner 的識別號碼
 ### <a name="definition"></a>定義
 
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
-- 函數 Func_uk_drivers_license 找到符合模式的內容。
-- 會找到來自 Keyword_uk_drivers_license 的關鍵字。
+- 函數 `Func_uk_drivers_license` 會找到符合模式的內容。
+- 找到來自的關鍵字 `Keywords_eu_driver's_license_number` 。
+- 校驗和通過。
+
+DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信賴度很低：
+- 函數 `Func_uk_drivers_license` 會找到符合模式的內容。
 - 校驗和通過。
 
 ```xml
-<!-- U.K. Driver's License Number -->
-<Entity id="f93de4be-d94c-40df-a8be-461738047551" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_uk_drivers_license" />
-        <Match idRef="Keyword_uk_drivers_license" />
-    </Pattern>
-</Entity>
+    <!-- U.K. Driver's License Number -->
+    <Entity id="f93de4be-d94c-40df-a8be-461738047551" patternsProximity="300" recommendedConfidence="75" relaxProximity="true" >
+      <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_uk_drivers_license" />
+          <Match idRef="Keywords_eu_driver's_license_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_uk_drivers_license" />
+        </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keyword_uk_drivers_license"></a>Keyword_uk_drivers_license
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- DVLA 
-- 淺 vans 
-- quadbikes 
-- 汽車轎車 
-- 125cc 
-- sidecar 
-- 三輪車 
-- 摩托車 
-- photocard 許可證 
-- learner 驅動程式 
-- 許可證持有者 
-- 許可證持有人 
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驅動程式許可證
+- 驅動程式 lics
+- 駕照
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
+- 駕駛執照
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
 - 駕駛許可證 
-- 駕駛許可證 
-- 雙控制汽車 
+- 駕照
+- dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
    
 ## <a name="uk-electoral-roll-number"></a>英國。 electoral 編號
 
@@ -16408,7 +16792,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 六位數
 - "A"、"B"、"C" 或 "d" (類似前置詞，只允許在尾碼中使用特定字元;不區分大小寫) 
 
-OR
+「或」
 
 - 兩個字母
 - 一個空格或破折號
@@ -16903,7 +17287,6 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - Ssid
    
 ## <a name="us--uk-passport-number"></a>美國/英國 護照號碼
-英國 護照號碼機密資訊類型實體可用於歐盟護照號碼機密資訊類型。 它可以做為獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -16919,41 +17302,56 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="definition"></a>定義
 
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
+- 函數 Func_usa_uk_passport 找到符合模式的內容。
+- `Keywords_eu_passport_number`找到或的關鍵字 `Keywords_uk_eu_passport_number` 。
+- 找到來自的關鍵字 `Keywords_eu_passport_date`
+
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
 - 函數 Func_usa_uk_passport 找到符合模式的內容。
-- 會找到來自 Keyword_passport 的關鍵字。
+- `Keywords_eu_passport_number`找到或的關鍵字 `Keywords_uk_eu_passport_number` 。
 
 ```xml
-<Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_usa_uk_passport" />
-        <Match idRef="Keyword_passport" />
-    </Pattern>
-</Entity>
+    <!-- U.S. / U.K. Passport Number -->
+    <Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
+       <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_usa_uk_passport" />
+          <Match idRef="Keywords_eu_passport_date" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_uk_eu_passport_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_usa_uk_passport" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_uk_eu_passport_number" />
+          </Any>
+        </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keyword_passport"></a>Keyword_passport
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- 護照號碼 
-- 護照否 
-- 護照# 
-- 護照# 
-- PassportID 
-- Passportno 
-- passportnumber 
-- パスポート 
-- パスポート番號 
-- パスポートのNum 
-- パスポート＃ 
-- Numéro de passeport 
-- Passeport n ° 
-- Passeport 非 
-- Passeport# 
-- Passeport# 
-- PasseportNon 
-- Passeportn ° 
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
+#### <a name="keywords_uk_eu_passport_number"></a>Keywords_uk_eu_passport_number
+
+- 英屬護照 
+- 英國護照 
+
 
 ## <a name="ukraine-passport-domestic"></a>烏克蘭護照（國內）
 此機密資訊類型僅可用於下列專案：

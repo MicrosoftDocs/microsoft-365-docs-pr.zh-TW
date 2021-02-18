@@ -3,7 +3,7 @@ title: 租用戶等級的 Microsoft 365 客戶金鑰 (公開預覽)
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/17/2020
+ms.date: 2/17/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 瞭解如何為您的 Microsoft 365 租使用者中的所有資料設定客戶金鑰。
-ms.openlocfilehash: 682eed7eb2e80535af1acf68808c708e1a25d80f
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 60704f77e17222de790cb397653a2275144d770e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242373"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288144"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>在承租人層級 (公開預覽的 Microsoft 365 客戶金鑰概述) 
 
@@ -313,7 +313,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 參數：
 
 | 名稱 | 描述 | 選用 (Y/N)  |
-|--|--|--|
+|----------|----------|---------|
 |名稱|資料加密原則的易記名稱|N|
 |AzureKeyIDs|指定 Azure Key Vault 機碼的兩個 URI 值，以逗號分隔，以與資料加密原則產生關聯|N|
 |描述|資料加密原則的描述|N|
@@ -334,7 +334,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
 
 參數：
 | 名稱 | 描述 | 選用 (Y/N)  |
-|--|--|--|
+|----------|----------|---------|
 -原則|指定需要指派的資料加密原則;請指定原則名稱或原則識別碼。|N|
 
 ### <a name="modify-or-refresh-policy"></a>修改或重新整理原則
@@ -361,7 +361,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 
 參數：
 | 名稱 | 描述 | 選用 (Y/N)  |
-|--|--|--|
+|----------|----------|---------|
 |-Identity|指定您要修改的資料加密原則。|N|
 |-重新整理|在您旋轉 Azure Key Vault 中的任何相關機碼之後，請使用重新整理參數來更新資料加密原則。 您不需要使用此參數指定值。|Y|
 |-已啟用|Enabled 參數會啟用或停用資料加密原則。 停用原則之前，必須先將其指派給您的租使用者。 有效值為：</br > $true：已啟用原則</br > $true：已啟用原則。此為預設值。|Y|
@@ -393,7 +393,7 @@ Get-M365DataAtRestEncryptionPolicy -Identity "NAM Policy"
 參數：
 
 | 名稱 | 描述 | 選用 (Y/N)  |
-|--|--|--|
+|----------|----------|---------|
 |-Identity|指定您要列出詳細資料的資料加密原則。|Y|
 
 ### <a name="get-policy-assignment-info"></a>取得原則指派資訊
