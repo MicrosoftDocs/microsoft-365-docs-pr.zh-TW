@@ -15,57 +15,57 @@ ms.custom:
 description: 在本文中，您將瞭解如何將網域和設定從一個 Microsoft Exchange Online Protection (EOP) 組織 (承租人) 移至另一個。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4cfb5c31728174f7f7307e9492abc03a62f8bf9a
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 42a212c1826f63f9e7ed8395fe1d6b6564625b7b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150757"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287770"
 ---
-# <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a><span data-ttu-id="b46cd-103">將網域及設定從某個 EOP 組織移到另一個</span><span class="sxs-lookup"><span data-stu-id="b46cd-103">Move domains and settings from one EOP organization to another</span></span>
+# <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a><span data-ttu-id="1b19a-103">將網域及設定從某個 EOP 組織移到另一個</span><span class="sxs-lookup"><span data-stu-id="1b19a-103">Move domains and settings from one EOP organization to another</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-<span data-ttu-id="b46cd-104">**適用對象**</span><span class="sxs-lookup"><span data-stu-id="b46cd-104">**Applies to**</span></span>
--  [<span data-ttu-id="b46cd-105">Exchange Online Protection 獨立</span><span class="sxs-lookup"><span data-stu-id="b46cd-105">Exchange Online Protection standalone</span></span>](https://go.microsoft.com/fwlink/?linkid=2148611)
+<span data-ttu-id="1b19a-104">**適用於**</span><span class="sxs-lookup"><span data-stu-id="1b19a-104">**Applies to**</span></span>
+-  [<span data-ttu-id="1b19a-105">Exchange Online Protection 獨立</span><span class="sxs-lookup"><span data-stu-id="1b19a-105">Exchange Online Protection standalone</span></span>](exchange-online-protection-overview.md)
 
-<span data-ttu-id="b46cd-p101">隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。從一個 EOP 組織移至第二個 EOP 組織並不容易，但是利用幾個基本遠端 Windows PowerShell 指令碼和少量的準備工作，就可以使用一個相當小的維護視窗達成此目地。</span><span class="sxs-lookup"><span data-stu-id="b46cd-p101">Changing business requirements can sometimes require splitting one Microsoft Exchange Online Protection (EOP) organization (tenant) into two separate organizations, merging two organizations into one, or moving your domains and EOP settings from one organization to another organization. Moving from one EOP organization to a second EOP organization can be challenging, but with a few basic remote Windows PowerShell scripts and a small amount of preparation, this can be achieved with a relatively small maintenance window.</span></span>
+<span data-ttu-id="1b19a-p101">隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。從一個 EOP 組織移至第二個 EOP 組織並不容易，但是利用幾個基本遠端 Windows PowerShell 指令碼和少量的準備工作，就可以使用一個相當小的維護視窗達成此目地。</span><span class="sxs-lookup"><span data-stu-id="1b19a-p101">Changing business requirements can sometimes require splitting one Microsoft Exchange Online Protection (EOP) organization (tenant) into two separate organizations, merging two organizations into one, or moving your domains and EOP settings from one organization to another organization. Moving from one EOP organization to a second EOP organization can be challenging, but with a few basic remote Windows PowerShell scripts and a small amount of preparation, this can be achieved with a relatively small maintenance window.</span></span>
 
 > [!NOTE]
 >
-> - <span data-ttu-id="b46cd-108">設定可以只從一個 EOP 獨立 (標準) 組織可靠地移至另一個 EOP 標準組織或至具有服務 (EOP 進階) 的 Exchange 企業 CAL 組織，或是從 EOP 進階組織移至另一個 EOP 進階組織。</span><span class="sxs-lookup"><span data-stu-id="b46cd-108">Settings can be reliably moved only from an EOP standalone (Standard) organization to either another EOP Standard or an Exchange Enterprise CAL with Services (EOP Premium) organization, or from an EOP Premium organization to another EOP Premium organization.</span></span> <span data-ttu-id="b46cd-109">因為 EOP 標準組織中部支援部分進階功能，所以從 EOP 進階組織移至 EOP 標準組織可能會失敗。</span><span class="sxs-lookup"><span data-stu-id="b46cd-109">Because some premium features are not supported in EOP Standard organizations, moves from an EOP Premium organization to an EOP Standard organization might not be successful.</span></span>
+> - <span data-ttu-id="1b19a-108">設定可以只從一個 EOP 獨立 (標準) 組織可靠地移至另一個 EOP 標準組織或至具有服務 (EOP 進階) 的 Exchange 企業 CAL 組織，或是從 EOP 進階組織移至另一個 EOP 進階組織。</span><span class="sxs-lookup"><span data-stu-id="1b19a-108">Settings can be reliably moved only from an EOP standalone (Standard) organization to either another EOP Standard or an Exchange Enterprise CAL with Services (EOP Premium) organization, or from an EOP Premium organization to another EOP Premium organization.</span></span> <span data-ttu-id="1b19a-109">因為 EOP 標準組織中部支援部分進階功能，所以從 EOP 進階組織移至 EOP 標準組織可能會失敗。</span><span class="sxs-lookup"><span data-stu-id="1b19a-109">Because some premium features are not supported in EOP Standard organizations, moves from an EOP Premium organization to an EOP Standard organization might not be successful.</span></span>
 >
-> - <span data-ttu-id="b46cd-110">這些指示適用於僅進行 EOP 篩選的組織。</span><span class="sxs-lookup"><span data-stu-id="b46cd-110">These instructions are for EOP filtering-only organizations.</span></span> <span data-ttu-id="b46cd-111">從一個 Exchange Online 組織移至另一個 Exchange Online 組織有其他的考量。</span><span class="sxs-lookup"><span data-stu-id="b46cd-111">There are additional considerations in moving from one Exchange Online organization to another Exchange Online organization.</span></span> <span data-ttu-id="b46cd-112">Exchange Online 組織並不在這些指引的範圍內。</span><span class="sxs-lookup"><span data-stu-id="b46cd-112">Exchange Online organizations are out of scope for these instructions.</span></span>
+> - <span data-ttu-id="1b19a-110">這些指示適用於僅進行 EOP 篩選的組織。</span><span class="sxs-lookup"><span data-stu-id="1b19a-110">These instructions are for EOP filtering-only organizations.</span></span> <span data-ttu-id="1b19a-111">從一個 Exchange Online 組織移至另一個 Exchange Online 組織有其他的考量。</span><span class="sxs-lookup"><span data-stu-id="1b19a-111">There are additional considerations in moving from one Exchange Online organization to another Exchange Online organization.</span></span> <span data-ttu-id="1b19a-112">Exchange Online 組織並不在這些指引的範圍內。</span><span class="sxs-lookup"><span data-stu-id="1b19a-112">Exchange Online organizations are out of scope for these instructions.</span></span>
 
-<span data-ttu-id="b46cd-p104">在下列範例中，Contoso, Ltd. 已經和 Contoso 套件合併。下圖顯示將網域、郵件使用者和群組以及設定從來源 EOP 組織 (contoso.onmicrosoft.com) 移至目標 EOP 組織 (contososuites.onmicrosoft.com) 的程序：</span><span class="sxs-lookup"><span data-stu-id="b46cd-p104">In the following example, Contoso, Ltd. has merged with Contoso Suites. The following image shows the process of moving domains, mail users and groups, and settings from the source EOP organization (contoso.onmicrosoft.com) to the target EOP organization (contososuites.onmicrosoft.com):</span></span>
+<span data-ttu-id="1b19a-p104">在下列範例中，Contoso, Ltd. 已經和 Contoso 套件合併。下圖顯示將網域、郵件使用者和群組以及設定從來源 EOP 組織 (contoso.onmicrosoft.com) 移至目標 EOP 組織 (contososuites.onmicrosoft.com) 的程序：</span><span class="sxs-lookup"><span data-stu-id="1b19a-p104">In the following example, Contoso, Ltd. has merged with Contoso Suites. The following image shows the process of moving domains, mail users and groups, and settings from the source EOP organization (contoso.onmicrosoft.com) to the target EOP organization (contososuites.onmicrosoft.com):</span></span>
 
 ![移動 EOP 網域和設定](../../media/EOP-Move-domains-and-settings.jpg)
 
-<span data-ttu-id="b46cd-p105">將網域從一個組織移至另一個網域的挑戰就是已驗證的網域無法同時在兩個組織中存在。下列步驟可協助您完成此作業。</span><span class="sxs-lookup"><span data-stu-id="b46cd-p105">The challenge in moving domains from one organization to another is that a verified domain can't exist in two organizations at the same time. The following steps help you work through this.</span></span>
+<span data-ttu-id="1b19a-p105">將網域從一個組織移至另一個網域的挑戰就是已驗證的網域無法同時在兩個組織中存在。下列步驟可協助您完成此作業。</span><span class="sxs-lookup"><span data-stu-id="1b19a-p105">The challenge in moving domains from one organization to another is that a verified domain can't exist in two organizations at the same time. The following steps help you work through this.</span></span>
 
-## <a name="step-1-collect-data-from-the-source-organization"></a><span data-ttu-id="b46cd-118">步驟 1：從來源組織收集資料</span><span class="sxs-lookup"><span data-stu-id="b46cd-118">Step 1: Collect data from the source organization</span></span>
+## <a name="step-1-collect-data-from-the-source-organization"></a><span data-ttu-id="1b19a-118">步驟 1：從來源組織收集資料</span><span class="sxs-lookup"><span data-stu-id="1b19a-118">Step 1: Collect data from the source organization</span></span>
 
-<span data-ttu-id="b46cd-119">若要在目標組織中重新建立來源組織，請務必收集和儲存關於來源組織的下列資訊：</span><span class="sxs-lookup"><span data-stu-id="b46cd-119">In order to re-create the source organization in the target organization, make sure that you collect and store the following information about the source organization:</span></span>
+<span data-ttu-id="1b19a-119">若要在目標組織中重新建立來源組織，請務必收集和儲存關於來源組織的下列資訊：</span><span class="sxs-lookup"><span data-stu-id="1b19a-119">In order to re-create the source organization in the target organization, make sure that you collect and store the following information about the source organization:</span></span>
 
-- <span data-ttu-id="b46cd-120">網域</span><span class="sxs-lookup"><span data-stu-id="b46cd-120">Domains</span></span>
-- <span data-ttu-id="b46cd-121">郵件使用者</span><span class="sxs-lookup"><span data-stu-id="b46cd-121">Mail users</span></span>
-- <span data-ttu-id="b46cd-122">群組</span><span class="sxs-lookup"><span data-stu-id="b46cd-122">Groups</span></span>
-- <span data-ttu-id="b46cd-123">反垃圾郵件</span><span class="sxs-lookup"><span data-stu-id="b46cd-123">Anti-spam</span></span>
-  - <span data-ttu-id="b46cd-124">反垃圾郵件原則 (也稱為內容篩選原則) </span><span class="sxs-lookup"><span data-stu-id="b46cd-124">Anti-spam policies (also known as content filter policies)</span></span>
-  - <span data-ttu-id="b46cd-125">輸出垃圾郵件篩選原則</span><span class="sxs-lookup"><span data-stu-id="b46cd-125">Outbound spam filter policies</span></span>
-  - <span data-ttu-id="b46cd-126">連接篩選原則</span><span class="sxs-lookup"><span data-stu-id="b46cd-126">Connection filter policies</span></span>
-- <span data-ttu-id="b46cd-127">反惡意程式碼原則</span><span class="sxs-lookup"><span data-stu-id="b46cd-127">Anti-malware policies</span></span>
-- <span data-ttu-id="b46cd-128">連接器</span><span class="sxs-lookup"><span data-stu-id="b46cd-128">Connectors</span></span>
-- <span data-ttu-id="b46cd-129">郵件流程規則（又稱為傳輸規則）</span><span class="sxs-lookup"><span data-stu-id="b46cd-129">Mail flow rules (also known as transport rules)</span></span>
+- <span data-ttu-id="1b19a-120">網域</span><span class="sxs-lookup"><span data-stu-id="1b19a-120">Domains</span></span>
+- <span data-ttu-id="1b19a-121">郵件使用者</span><span class="sxs-lookup"><span data-stu-id="1b19a-121">Mail users</span></span>
+- <span data-ttu-id="1b19a-122">群組</span><span class="sxs-lookup"><span data-stu-id="1b19a-122">Groups</span></span>
+- <span data-ttu-id="1b19a-123">反垃圾郵件</span><span class="sxs-lookup"><span data-stu-id="1b19a-123">Anti-spam</span></span>
+  - <span data-ttu-id="1b19a-124">反垃圾郵件原則 (也稱為內容篩選原則) </span><span class="sxs-lookup"><span data-stu-id="1b19a-124">Anti-spam policies (also known as content filter policies)</span></span>
+  - <span data-ttu-id="1b19a-125">輸出垃圾郵件篩選原則</span><span class="sxs-lookup"><span data-stu-id="1b19a-125">Outbound spam filter policies</span></span>
+  - <span data-ttu-id="1b19a-126">連接篩選原則</span><span class="sxs-lookup"><span data-stu-id="1b19a-126">Connection filter policies</span></span>
+- <span data-ttu-id="1b19a-127">反惡意程式碼原則</span><span class="sxs-lookup"><span data-stu-id="1b19a-127">Anti-malware policies</span></span>
+- <span data-ttu-id="1b19a-128">連接器</span><span class="sxs-lookup"><span data-stu-id="1b19a-128">Connectors</span></span>
+- <span data-ttu-id="1b19a-129">郵件流程規則（又稱為傳輸規則）</span><span class="sxs-lookup"><span data-stu-id="1b19a-129">Mail flow rules (also known as transport rules)</span></span>
 
   > [!NOTE]
-  > <span data-ttu-id="b46cd-130">目前只有 EOP 進階訂閱計劃支援匯出和匯入郵件流程規則集合的指令程式。</span><span class="sxs-lookup"><span data-stu-id="b46cd-130">Cmdlet support for the export and import of the mail flow rule collection is currently only supported for EOP Premium subscription plans.</span></span>
+  > <span data-ttu-id="1b19a-130">目前只有 EOP 進階訂閱計劃支援匯出和匯入郵件流程規則集合的指令程式。</span><span class="sxs-lookup"><span data-stu-id="1b19a-130">Cmdlet support for the export and import of the mail flow rule collection is currently only supported for EOP Premium subscription plans.</span></span>
 
-<span data-ttu-id="b46cd-131">收集所有設定最簡單的方法是使用 PowerShell。</span><span class="sxs-lookup"><span data-stu-id="b46cd-131">The easiest way to collect all of your settings is to use PowerShell.</span></span> <span data-ttu-id="b46cd-132">若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="b46cd-132">To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
+<span data-ttu-id="1b19a-131">收集所有設定最簡單的方法是使用 PowerShell。</span><span class="sxs-lookup"><span data-stu-id="1b19a-131">The easiest way to collect all of your settings is to use PowerShell.</span></span> <span data-ttu-id="1b19a-132">若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="1b19a-132">To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
 
-<span data-ttu-id="b46cd-p107">接下來，您可以收集您的所有設定，並將它們匯出到要匯入目標租用戶的 .xml 檔案。在一般情況下，您可以將每項設定的 **Get** 指令程式輸出輸送到 **Export-Clixml** 指令程式，以將設定儲存在 .xml 檔案中，如下列程式碼範例所示。</span><span class="sxs-lookup"><span data-stu-id="b46cd-p107">Next, you can collect all your settings and export them to an .xml file to be imported into the target tenant. In general, you can pipe the output of the **Get** cmdlet for each setting to the **Export-Clixml** cmdlet to save the settings in .xml files, as shown in the following code sample.</span></span>
+<span data-ttu-id="1b19a-p107">接下來，您可以收集您的所有設定，並將它們匯出到要匯入目標租用戶的 .xml 檔案。在一般情況下，您可以將每項設定的 **Get** 指令程式輸出輸送到 **Export-Clixml** 指令程式，以將設定儲存在 .xml 檔案中，如下列程式碼範例所示。</span><span class="sxs-lookup"><span data-stu-id="1b19a-p107">Next, you can collect all your settings and export them to an .xml file to be imported into the target tenant. In general, you can pipe the output of the **Get** cmdlet for each setting to the **Export-Clixml** cmdlet to save the settings in .xml files, as shown in the following code sample.</span></span>
 
-<span data-ttu-id="b46cd-135">在 [獨立 EOP PowerShell] 的位置中，建立名為 Export 的目錄，該位置很容易找到並變更至該目錄。</span><span class="sxs-lookup"><span data-stu-id="b46cd-135">In standalone EOP PowerShell, create a directory called Export in a location that's easy to find and change to that directory.</span></span> <span data-ttu-id="b46cd-136">例如：</span><span class="sxs-lookup"><span data-stu-id="b46cd-136">For example:</span></span>
+<span data-ttu-id="1b19a-135">在 [獨立 EOP PowerShell] 的位置中，建立名為 Export 的目錄，該位置很容易找到並變更至該目錄。</span><span class="sxs-lookup"><span data-stu-id="1b19a-135">In standalone EOP PowerShell, create a directory called Export in a location that's easy to find and change to that directory.</span></span> <span data-ttu-id="1b19a-136">例如：</span><span class="sxs-lookup"><span data-stu-id="1b19a-136">For example:</span></span>
 
 ```PowerShell
 mkdir C:\EOP\Export
@@ -75,7 +75,7 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-<span data-ttu-id="b46cd-137">下列指令碼可以用來收集來源組織中的所有郵件使用者、群組、反垃圾郵件設定、反惡意程式碼設定、連接器和郵件流程規則。</span><span class="sxs-lookup"><span data-stu-id="b46cd-137">The following script can be used to collect all the mail users, groups, anti-spam settings, anti-malware settings, connectors, and mail flow rules in the source organization.</span></span> <span data-ttu-id="b46cd-138">複製下列文字並貼入記事本之類的文字編輯器，將檔案在您剛建立的匯出目錄中儲存為 Source_EOP_Settings.ps1，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="b46cd-138">Copy and paste the following text into a text editor like Notepad, save the file as Source_EOP_Settings.ps1 in the Export directory you just created, and run the following command:</span></span>
+<span data-ttu-id="1b19a-137">下列指令碼可以用來收集來源組織中的所有郵件使用者、群組、反垃圾郵件設定、反惡意程式碼設定、連接器和郵件流程規則。</span><span class="sxs-lookup"><span data-stu-id="1b19a-137">The following script can be used to collect all the mail users, groups, anti-spam settings, anti-malware settings, connectors, and mail flow rules in the source organization.</span></span> <span data-ttu-id="1b19a-138">複製下列文字並貼入記事本之類的文字編輯器，將檔案在您剛建立的匯出目錄中儲存為 Source_EOP_Settings.ps1，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="1b19a-138">Copy and paste the following text into a text editor like Notepad, save the file as Source_EOP_Settings.ps1 in the Export directory you just created, and run the following command:</span></span>
 
 ```PowerShell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
@@ -147,22 +147,22 @@ $file = Export-TransportRuleCollection
 Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
 ```
 
-<span data-ttu-id="b46cd-p110">從匯出目錄執行下列命令，以利用目標組織更新 .xml 檔案。以來源和目錄組織名稱取代 Contoso.onmicrosoft.com 和 contososuites.onmicrosoft.com。</span><span class="sxs-lookup"><span data-stu-id="b46cd-p110">Run the following commands from the Export directory to update the .xml files with the target organization. Replace contoso.onmicrosoft.com and contososuites.onmicrosoft.com with your source and target organization names.</span></span>
+<span data-ttu-id="1b19a-p110">從匯出目錄執行下列命令，以利用目標組織更新 .xml 檔案。以來源和目錄組織名稱取代 Contoso.onmicrosoft.com 和 contososuites.onmicrosoft.com。</span><span class="sxs-lookup"><span data-stu-id="1b19a-p110">Run the following commands from the Export directory to update the .xml files with the target organization. Replace contoso.onmicrosoft.com and contososuites.onmicrosoft.com with your source and target organization names.</span></span>
 
 ```PowerShell
 $files = ls
 ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -replace 'contoso.onmicrosoft.com', 'contososuites.onmicrosoft.com'} | Set-Content $file.Name}
 ```
 
-## <a name="step-2-add-domains-to-the-target-organization"></a><span data-ttu-id="b46cd-141">步驟 2：將網域新增至目標組織</span><span class="sxs-lookup"><span data-stu-id="b46cd-141">Step 2: Add domains to the target organization</span></span>
+## <a name="step-2-add-domains-to-the-target-organization"></a><span data-ttu-id="1b19a-141">步驟 2：將網域新增至目標組織</span><span class="sxs-lookup"><span data-stu-id="1b19a-141">Step 2: Add domains to the target organization</span></span>
 
-<span data-ttu-id="b46cd-p111">使用下列指令碼將網域新增至目標組織。複製文字並貼入記事本之類的文字編輯器，將指令碼儲存為 C:\EOP\Export\Add_Domains.ps1，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="b46cd-p111">Add domains to the target organization by using the following script. Copy and paste the text into a text editor like Notepad, save the script as C:\EOP\Export\Add_Domains.ps1, and run the following command:</span></span>
+<span data-ttu-id="1b19a-p111">使用下列指令碼將網域新增至目標組織。複製文字並貼入記事本之類的文字編輯器，將指令碼儲存為 C:\EOP\Export\Add_Domains.ps1，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="1b19a-p111">Add domains to the target organization by using the following script. Copy and paste the text into a text editor like Notepad, save the script as C:\EOP\Export\Add_Domains.ps1, and run the following command:</span></span>
 
 ```PowerShell
 & "C:\EOP\Export\Add_Domains.ps1"
 ```
 
-<span data-ttu-id="b46cd-144">這些網域不會經過驗證，而且不能用來路由傳送郵件，但是在新增網域後，您可以收集必要的資訊以驗證網域並在最後更新您的新組用戶 MX 記錄。</span><span class="sxs-lookup"><span data-stu-id="b46cd-144">These domains won't be verified and can't be used to route mail, but after the domains are added, you can collect the information needed to verify the domains and eventually update your MX records for the new tenant.</span></span>
+<span data-ttu-id="1b19a-144">這些網域不會經過驗證，而且不能用來路由傳送郵件，但是在新增網域後，您可以收集必要的資訊以驗證網域並在最後更新您的新組用戶 MX 記錄。</span><span class="sxs-lookup"><span data-stu-id="1b19a-144">These domains won't be verified and can't be used to route mail, but after the domains are added, you can collect the information needed to verify the domains and eventually update your MX records for the new tenant.</span></span>
 
 ```PowerShell
 #***********************************************************************
@@ -179,38 +179,38 @@ Foreach ($domain in $Domains) {
 }
 ```
 
-<span data-ttu-id="b46cd-145">現在，您可以從目標組織的 Microsoft 365 系統管理中心檢閱並收集資訊，讓您可以在適當時間快速驗證網域：</span><span class="sxs-lookup"><span data-stu-id="b46cd-145">Now you can review and collect the information from the Microsoft 365 admin center of your target organization so you can quickly verify your domains when the time comes:</span></span>
+<span data-ttu-id="1b19a-145">現在，您可以從目標組織的 Microsoft 365 系統管理中心檢閱並收集資訊，讓您可以在適當時間快速驗證網域：</span><span class="sxs-lookup"><span data-stu-id="1b19a-145">Now you can review and collect the information from the Microsoft 365 admin center of your target organization so you can quickly verify your domains when the time comes:</span></span>
 
-1. <span data-ttu-id="b46cd-146">登入 <https://portal.office.com> 的 Microsoft 365 系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="b46cd-146">Sign in to the Microsoft 365 admin center at <https://portal.office.com>.</span></span>
+1. <span data-ttu-id="1b19a-146">登入 <https://portal.office.com> 的 Microsoft 365 系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="1b19a-146">Sign in to the Microsoft 365 admin center at <https://portal.office.com>.</span></span>
 
-2. <span data-ttu-id="b46cd-147">按一下 **[網域]**。</span><span class="sxs-lookup"><span data-stu-id="b46cd-147">Click **Domains**.</span></span>
+2. <span data-ttu-id="1b19a-147">按一下 **[網域]**。</span><span class="sxs-lookup"><span data-stu-id="1b19a-147">Click **Domains**.</span></span>
 
-   <span data-ttu-id="b46cd-148">如果您看不到網域，請按一下 [ **自訂導覽**]，選取 [ **設定**]，然後按一下 [ **儲存**]。</span><span class="sxs-lookup"><span data-stu-id="b46cd-148">If you don't see domains, click **Customize navigation**, select **Setup**, and then click **Save**.</span></span>
+   <span data-ttu-id="1b19a-148">如果您看不到網域，請按一下 [ **自訂導覽**]，選取 [ **設定**]，然後按一下 [ **儲存**]。</span><span class="sxs-lookup"><span data-stu-id="1b19a-148">If you don't see domains, click **Customize navigation**, select **Setup**, and then click **Save**.</span></span>
 
-3. <span data-ttu-id="b46cd-149">按一下每個 **啟動安裝程式** 連結，然後繼續執行安裝精靈。</span><span class="sxs-lookup"><span data-stu-id="b46cd-149">Click each **Start setup** link, and then proceed through the setup wizard.</span></span>
+3. <span data-ttu-id="1b19a-149">按一下每個 **啟動安裝程式** 連結，然後繼續執行安裝精靈。</span><span class="sxs-lookup"><span data-stu-id="1b19a-149">Click each **Start setup** link, and then proceed through the setup wizard.</span></span>
 
-4. <span data-ttu-id="b46cd-150">在 [**確認擁有權**] 頁面上，為 **查看執行這個步驟的逐步指示** 選取 [**一般指示**]。</span><span class="sxs-lookup"><span data-stu-id="b46cd-150">On the **Confirm ownership** page, for **See step-by-step instructions for performing this step with**, select **General instructions**.</span></span>
+4. <span data-ttu-id="1b19a-150">在 [**確認擁有權**] 頁面上，為 **查看執行這個步驟的逐步指示** 選取 [**一般指示**]。</span><span class="sxs-lookup"><span data-stu-id="1b19a-150">On the **Confirm ownership** page, for **See step-by-step instructions for performing this step with**, select **General instructions**.</span></span>
 
-5. <span data-ttu-id="b46cd-151">記錄您降用來驗證網域的 MX 記錄或 TXT 記錄，然後完成安裝精靈。</span><span class="sxs-lookup"><span data-stu-id="b46cd-151">Record the MX record or TXT record that you'll use to verify your domain, and finish the setup wizard.</span></span>
+5. <span data-ttu-id="1b19a-151">記錄您降用來驗證網域的 MX 記錄或 TXT 記錄，然後完成安裝精靈。</span><span class="sxs-lookup"><span data-stu-id="1b19a-151">Record the MX record or TXT record that you'll use to verify your domain, and finish the setup wizard.</span></span>
 
-6. <span data-ttu-id="b46cd-152">將驗證 TXT 記錄新增至您的 DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="b46cd-152">Add the verification TXT records to your DNS records.</span></span> <span data-ttu-id="b46cd-153">這樣可以在網域從目標組織移除後，讓您更快速地在來源組織中驗證網域。</span><span class="sxs-lookup"><span data-stu-id="b46cd-153">This will let you more quickly verify the domains in the source organization after they're removed from the target organization.</span></span> <span data-ttu-id="b46cd-154">如需設定 DNS 的詳細資訊，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。</span><span class="sxs-lookup"><span data-stu-id="b46cd-154">For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).</span></span>
+6. <span data-ttu-id="1b19a-152">將驗證 TXT 記錄新增至您的 DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="1b19a-152">Add the verification TXT records to your DNS records.</span></span> <span data-ttu-id="1b19a-153">這樣可以在網域從目標組織移除後，讓您更快速地在來源組織中驗證網域。</span><span class="sxs-lookup"><span data-stu-id="1b19a-153">This will let you more quickly verify the domains in the source organization after they're removed from the target organization.</span></span> <span data-ttu-id="1b19a-154">如需設定 DNS 的詳細資訊，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。</span><span class="sxs-lookup"><span data-stu-id="1b19a-154">For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).</span></span>
 
-## <a name="step-3-force-senders-to-queue-mail"></a><span data-ttu-id="b46cd-155">步驟 3：強制寄件者將郵件加入佇列</span><span class="sxs-lookup"><span data-stu-id="b46cd-155">Step 3: Force senders to queue mail</span></span>
+## <a name="step-3-force-senders-to-queue-mail"></a><span data-ttu-id="1b19a-155">步驟 3：強制寄件者將郵件加入佇列</span><span class="sxs-lookup"><span data-stu-id="1b19a-155">Step 3: Force senders to queue mail</span></span>
 
-<span data-ttu-id="b46cd-p113">將網域從一個租用戶移至另一個租用戶時，您必須刪除來源組織的網域，然後在目標組織中驗證網域。在此期間，您將無法透過 EOP 路由傳送郵件。</span><span class="sxs-lookup"><span data-stu-id="b46cd-p113">While moving your domains from one tenant to another, you'll need to delete the domains from the source organization and then verify them in your target organization. During this time, you won't be able to route mail through EOP.</span></span>
+<span data-ttu-id="1b19a-p113">將網域從一個租用戶移至另一個租用戶時，您必須刪除來源組織的網域，然後在目標組織中驗證網域。在此期間，您將無法透過 EOP 路由傳送郵件。</span><span class="sxs-lookup"><span data-stu-id="1b19a-p113">While moving your domains from one tenant to another, you'll need to delete the domains from the source organization and then verify them in your target organization. During this time, you won't be able to route mail through EOP.</span></span>
 
-<span data-ttu-id="b46cd-158">強制寄件者將郵件加入佇列的選項之一是更新您的 MX 記錄，以直接指向您的內部部署郵件伺服器。</span><span class="sxs-lookup"><span data-stu-id="b46cd-158">One option to force senders to queue mail is to update your MX records to point directly to your on-premises mail server.</span></span>
+<span data-ttu-id="1b19a-158">強制寄件者將郵件加入佇列的選項之一是更新您的 MX 記錄，以直接指向您的內部部署郵件伺服器。</span><span class="sxs-lookup"><span data-stu-id="1b19a-158">One option to force senders to queue mail is to update your MX records to point directly to your on-premises mail server.</span></span>
 
-<span data-ttu-id="b46cd-p114">另一個選項是將無效的 MX 記錄放在保留網域 DNS 記錄的每個網域中 (也就是您的 DNS 主機服務)。這會導致寄件者將您的郵件加入佇列然後重試 (一般的重試嘗試會維持 48 個小時，但可能會因為不同的提供者而有所不同)。您可以使用 invalid.outlook.com 做為無效的 MX 目標。將 MX 記錄上的存留時間 (TTL) 值降低至 5 分鐘，將有助於更快速地將變更傳播到 DNS 提供者。</span><span class="sxs-lookup"><span data-stu-id="b46cd-p114">Another option is to put an invalid MX record in each domain where the DNS records for your domain are kept (also known as your DNS hosting service). This will cause the sender to queue your mail and retry (typical retry attempts are for 48 hours, but this might vary from provider to provider). You can use invalid.outlook.com as an invalid MX target. Lowering the Time to Live (TTL) value to five minutes on the MX record will help the change propagate to DNS providers more quickly.</span></span>
+<span data-ttu-id="1b19a-p114">另一個選項是將無效的 MX 記錄放在保留網域 DNS 記錄的每個網域中 (也就是您的 DNS 主機服務)。這會導致寄件者將您的郵件加入佇列然後重試 (一般的重試嘗試會維持 48 個小時，但可能會因為不同的提供者而有所不同)。您可以使用 invalid.outlook.com 做為無效的 MX 目標。將 MX 記錄上的存留時間 (TTL) 值降低至 5 分鐘，將有助於更快速地將變更傳播到 DNS 提供者。</span><span class="sxs-lookup"><span data-stu-id="1b19a-p114">Another option is to put an invalid MX record in each domain where the DNS records for your domain are kept (also known as your DNS hosting service). This will cause the sender to queue your mail and retry (typical retry attempts are for 48 hours, but this might vary from provider to provider). You can use invalid.outlook.com as an invalid MX target. Lowering the Time to Live (TTL) value to five minutes on the MX record will help the change propagate to DNS providers more quickly.</span></span>
 
-<span data-ttu-id="b46cd-163">如需設定 DNS 的詳細資訊，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。</span><span class="sxs-lookup"><span data-stu-id="b46cd-163">For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).</span></span>
+<span data-ttu-id="1b19a-163">如需設定 DNS 的詳細資訊，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。</span><span class="sxs-lookup"><span data-stu-id="1b19a-163">For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="b46cd-p115">不同的提供者將郵件加入佇列的時間也有所不同。您必須快速地設定新的租用戶並還原您的 DNS 設定，以避免未傳遞回報 (NDR) 在佇列時間過期時傳送給寄件者。</span><span class="sxs-lookup"><span data-stu-id="b46cd-p115">Different providers queue mail for different periods of time. You'll need to set up your new tenant quickly and revert your DNS settings to avoid non-delivery reports (NDRs) from being sent to the sender if the queuing time expires.</span></span>
+> <span data-ttu-id="1b19a-p115">不同的提供者將郵件加入佇列的時間也有所不同。您必須快速地設定新的租用戶並還原您的 DNS 設定，以避免未傳遞回報 (NDR) 在佇列時間過期時傳送給寄件者。</span><span class="sxs-lookup"><span data-stu-id="1b19a-p115">Different providers queue mail for different periods of time. You'll need to set up your new tenant quickly and revert your DNS settings to avoid non-delivery reports (NDRs) from being sent to the sender if the queuing time expires.</span></span>
 
-## <a name="step-4-remove-users-groups-and-domains-from-the-source-organization"></a><span data-ttu-id="b46cd-166">步驟 4：從來源組織移除使用者、群組及網域</span><span class="sxs-lookup"><span data-stu-id="b46cd-166">Step 4: Remove users, groups, and domains from the source organization</span></span>
+## <a name="step-4-remove-users-groups-and-domains-from-the-source-organization"></a><span data-ttu-id="1b19a-166">步驟 4：從來源組織移除使用者、群組及網域</span><span class="sxs-lookup"><span data-stu-id="1b19a-166">Step 4: Remove users, groups, and domains from the source organization</span></span>
 
-<span data-ttu-id="b46cd-167">下列指令碼會使用 Azure Active Directory PowerShell 從來源租用戶移除使用者、群組及網域。</span><span class="sxs-lookup"><span data-stu-id="b46cd-167">The following script removes users, groups, and domains from the source tenant by using Azure Active Directory PowerShell.</span></span> <span data-ttu-id="b46cd-168">複製下列文字並貼入記事本之類的文字編輯器，將檔案儲存為 C:\EOP\Export\Remove_Users_and_Groups.ps1，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="b46cd-168">Copy and paste the following text into a text editor like Notepad, save the file as C:\EOP\Export\Remove_Users_and_Groups.ps1, and run the following command:</span></span>
+<span data-ttu-id="1b19a-167">下列指令碼會使用 Azure Active Directory PowerShell 從來源租用戶移除使用者、群組及網域。</span><span class="sxs-lookup"><span data-stu-id="1b19a-167">The following script removes users, groups, and domains from the source tenant by using Azure Active Directory PowerShell.</span></span> <span data-ttu-id="1b19a-168">複製下列文字並貼入記事本之類的文字編輯器，將檔案儲存為 C:\EOP\Export\Remove_Users_and_Groups.ps1，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="1b19a-168">Copy and paste the following text into a text editor like Notepad, save the file as C:\EOP\Export\Remove_Users_and_Groups.ps1, and run the following command:</span></span>
 
 ```PowerShell
 & "C:\EOP\Export\Remove_Users_and_Groups.ps1"
@@ -249,19 +249,19 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 }
 ```
 
-## <a name="step-5-verify-domains-for-the-target-organization"></a><span data-ttu-id="b46cd-169">步驟 5：驗證目標組織的網域</span><span class="sxs-lookup"><span data-stu-id="b46cd-169">Step 5: Verify domains for the target organization</span></span>
+## <a name="step-5-verify-domains-for-the-target-organization"></a><span data-ttu-id="1b19a-169">步驟 5：驗證目標組織的網域</span><span class="sxs-lookup"><span data-stu-id="1b19a-169">Step 5: Verify domains for the target organization</span></span>
 
-1. <span data-ttu-id="b46cd-170">登入 <https://portal.office.com> 的系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="b46cd-170">Sign in to the admin center at <https://portal.office.com>.</span></span>
+1. <span data-ttu-id="1b19a-170">登入 <https://portal.office.com> 的系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="1b19a-170">Sign in to the admin center at <https://portal.office.com>.</span></span>
 
-2. <span data-ttu-id="b46cd-171">按一下 **[網域]**。</span><span class="sxs-lookup"><span data-stu-id="b46cd-171">Click **Domains**.</span></span>
+2. <span data-ttu-id="1b19a-171">按一下 **[網域]**。</span><span class="sxs-lookup"><span data-stu-id="1b19a-171">Click **Domains**.</span></span>
 
-3. <span data-ttu-id="b46cd-172">按一下目標網域的每個 **啟動安裝程式** 連結，然後繼續執行安裝精靈。</span><span class="sxs-lookup"><span data-stu-id="b46cd-172">Click each **Start setup** link for the target domain and proceed through the setup wizard.</span></span>
+3. <span data-ttu-id="1b19a-172">按一下目標網域的每個 **啟動安裝程式** 連結，然後繼續執行安裝精靈。</span><span class="sxs-lookup"><span data-stu-id="1b19a-172">Click each **Start setup** link for the target domain and proceed through the setup wizard.</span></span>
 
-## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a><span data-ttu-id="b46cd-173">步驟 6：將郵件使用者和群組新增至目標組織</span><span class="sxs-lookup"><span data-stu-id="b46cd-173">Step 6: Add mail users and groups to the target organization</span></span>
+## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a><span data-ttu-id="1b19a-173">步驟 6：將郵件使用者和群組新增至目標組織</span><span class="sxs-lookup"><span data-stu-id="1b19a-173">Step 6: Add mail users and groups to the target organization</span></span>
 
-<span data-ttu-id="b46cd-174">EOP 的最佳作法是使用 Azure Active Directory 將內部部署 Active Directory 同步至您的目標租用戶。</span><span class="sxs-lookup"><span data-stu-id="b46cd-174">A best practice for EOP is to use Azure Active Directory to sync your on-premises Active Directory to your target tenant.</span></span> <span data-ttu-id="b46cd-175">如需如何進行此作業的詳細資訊，請參閱[在 EOP 中管理郵件使用者](manage-mail-users-in-eop.md) 中的「使用目錄同步作業管理郵件使用者」一節。</span><span class="sxs-lookup"><span data-stu-id="b46cd-175">For more information about how to do this, see "Use directory synchronization to manage mail users" in [Manage mail users in EOP](manage-mail-users-in-eop.md).</span></span> <span data-ttu-id="b46cd-176">您也可以使用下列指令碼，從您的來源租用戶重新建立您的使用者和群組。</span><span class="sxs-lookup"><span data-stu-id="b46cd-176">You can also use the following script to recreate your users and groups from your source tenant.</span></span> <span data-ttu-id="b46cd-177">注意：使用者密碼不能移動。</span><span class="sxs-lookup"><span data-stu-id="b46cd-177">Note: User passwords cannot be moved.</span></span> <span data-ttu-id="b46cd-178">建立新的使用者密碼並儲存在名為 UsersAndGroups.ps1 的檔案。</span><span class="sxs-lookup"><span data-stu-id="b46cd-178">New user passwords are created and saved in the file named UsersAndGroups.ps1.</span></span>
+<span data-ttu-id="1b19a-174">EOP 的最佳作法是使用 Azure Active Directory 將內部部署 Active Directory 同步至您的目標租用戶。</span><span class="sxs-lookup"><span data-stu-id="1b19a-174">A best practice for EOP is to use Azure Active Directory to sync your on-premises Active Directory to your target tenant.</span></span> <span data-ttu-id="1b19a-175">如需如何進行此作業的詳細資訊，請參閱[在 EOP 中管理郵件使用者](manage-mail-users-in-eop.md) 中的「使用目錄同步作業管理郵件使用者」一節。</span><span class="sxs-lookup"><span data-stu-id="1b19a-175">For more information about how to do this, see "Use directory synchronization to manage mail users" in [Manage mail users in EOP](manage-mail-users-in-eop.md).</span></span> <span data-ttu-id="1b19a-176">您也可以使用下列指令碼，從您的來源租用戶重新建立您的使用者和群組。</span><span class="sxs-lookup"><span data-stu-id="1b19a-176">You can also use the following script to recreate your users and groups from your source tenant.</span></span> <span data-ttu-id="1b19a-177">注意：使用者密碼不能移動。</span><span class="sxs-lookup"><span data-stu-id="1b19a-177">Note: User passwords cannot be moved.</span></span> <span data-ttu-id="1b19a-178">建立新的使用者密碼並儲存在名為 UsersAndGroups.ps1 的檔案。</span><span class="sxs-lookup"><span data-stu-id="1b19a-178">New user passwords are created and saved in the file named UsersAndGroups.ps1.</span></span>
 
-<span data-ttu-id="b46cd-179">若要使用此指令碼，請複製下列文字並貼入記事本之類的文字編輯器，將檔案儲存為 C:\EOP\Export\Add_Users_and_Groups.ps1，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="b46cd-179">To use the script, copy and paste the following text into a text editor like Notepad, save the file as C:\EOP\Export\Add_Users_and_Groups.ps1, and run the following command:</span></span>
+<span data-ttu-id="1b19a-179">若要使用此指令碼，請複製下列文字並貼入記事本之類的文字編輯器，將檔案儲存為 C:\EOP\Export\Add_Users_and_Groups.ps1，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="1b19a-179">To use the script, copy and paste the following text into a text editor like Notepad, save the file as C:\EOP\Export\Add_Users_and_Groups.ps1, and run the following command:</span></span>
 
 ```PowerShell
 & "C:\EOP\Export\Add_Users_and_Groups.ps1"
@@ -609,17 +609,17 @@ if($MailContactsCount -gt 0){
 }
 ```
 
-## <a name="step-7-add-protection-settings-to-the-target-organization"></a><span data-ttu-id="b46cd-180">步驟 7：將保護設定新增至目標組織</span><span class="sxs-lookup"><span data-stu-id="b46cd-180">Step 7: Add protection settings to the target organization</span></span>
+## <a name="step-7-add-protection-settings-to-the-target-organization"></a><span data-ttu-id="1b19a-180">步驟 7：將保護設定新增至目標組織</span><span class="sxs-lookup"><span data-stu-id="1b19a-180">Step 7: Add protection settings to the target organization</span></span>
 
-<span data-ttu-id="b46cd-181">您可以從匯出目錄執行下列指令碼，同時登入您的目標組織，以重新建立先前從來源組織匯出至.xml 檔案的設定。</span><span class="sxs-lookup"><span data-stu-id="b46cd-181">You can run the following script from the Export directory while logged in to your target organization to recreate the settings exported to .xml files earlier from the source organization.</span></span>
+<span data-ttu-id="1b19a-181">您可以從匯出目錄執行下列指令碼，同時登入您的目標組織，以重新建立先前從來源組織匯出至.xml 檔案的設定。</span><span class="sxs-lookup"><span data-stu-id="1b19a-181">You can run the following script from the Export directory while logged in to your target organization to recreate the settings exported to .xml files earlier from the source organization.</span></span>
 
-<span data-ttu-id="b46cd-182">複製指令碼並貼入記事本之類的文字編輯器，將檔案儲存為 C:\EOP\Export\Import_Settings.ps1，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="b46cd-182">Copy and paste the script text into a text editor like Notepad, save the file as C:\EOP\Export\Import_Settings.ps1, and run the following command:</span></span>
+<span data-ttu-id="1b19a-182">複製指令碼並貼入記事本之類的文字編輯器，將檔案儲存為 C:\EOP\Export\Import_Settings.ps1，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="1b19a-182">Copy and paste the script text into a text editor like Notepad, save the file as C:\EOP\Export\Import_Settings.ps1, and run the following command:</span></span>
 
 ```PowerShell
 & "C:\EOP\Export\Import_Settings.ps1"
 ```
 
-<span data-ttu-id="b46cd-183">此指令碼會匯入.xml 檔案，並建立一個稱為 Settings.ps1 的 Windows PowerShell 指令碼檔案，您可以檢閱、編輯，然後再執行此檔案以重新建立您的保護與郵件流程設定。</span><span class="sxs-lookup"><span data-stu-id="b46cd-183">This script imports the .xml files and create a Windows PowerShell script file called Settings.ps1 that you can review, edit, and then run to recreate your protection and mail-flow settings.</span></span>
+<span data-ttu-id="1b19a-183">此指令碼會匯入.xml 檔案，並建立一個稱為 Settings.ps1 的 Windows PowerShell 指令碼檔案，您可以檢閱、編輯，然後再執行此檔案以重新建立您的保護與郵件流程設定。</span><span class="sxs-lookup"><span data-stu-id="1b19a-183">This script imports the .xml files and create a Windows PowerShell script file called Settings.ps1 that you can review, edit, and then run to recreate your protection and mail-flow settings.</span></span>
 
 ```PowerShell
 #***********************************************************************
@@ -931,6 +931,6 @@ if($HostedContentFilterPolicyCount -gt 0){
  }
 ```
 
-## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a><span data-ttu-id="b46cd-184">步驟 8：還原您的 DNS 設定以停止郵件佇列</span><span class="sxs-lookup"><span data-stu-id="b46cd-184">Step 8: Revert your DNS settings to stop mail queuing</span></span>
+## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a><span data-ttu-id="1b19a-184">步驟 8：還原您的 DNS 設定以停止郵件佇列</span><span class="sxs-lookup"><span data-stu-id="1b19a-184">Step 8: Revert your DNS settings to stop mail queuing</span></span>
 
-<span data-ttu-id="b46cd-185">如果您選擇將 MX 記錄設為無效的位址，造成寄件者在您的轉換期間將郵件加入佇列，您必須將它們設回[系統管理中心](https://admin.microsoft.com)中所指定的正確值。</span><span class="sxs-lookup"><span data-stu-id="b46cd-185">If you chose to set your MX records to an invalid address to cause the senders to queue mail during your transition, you'll need to set them back to the correct value as specified in the [admin center](https://admin.microsoft.com).</span></span> <span data-ttu-id="b46cd-186">如需設定 DNS 的詳細資訊，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。</span><span class="sxs-lookup"><span data-stu-id="b46cd-186">For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).</span></span>
+<span data-ttu-id="1b19a-185">如果您選擇將 MX 記錄設為無效的位址，造成寄件者在您的轉換期間將郵件加入佇列，您必須將它們設回[系統管理中心](https://admin.microsoft.com)中所指定的正確值。</span><span class="sxs-lookup"><span data-stu-id="1b19a-185">If you chose to set your MX records to an invalid address to cause the senders to queue mail during your transition, you'll need to set them back to the correct value as specified in the [admin center](https://admin.microsoft.com).</span></span> <span data-ttu-id="1b19a-186">如需設定 DNS 的詳細資訊，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。</span><span class="sxs-lookup"><span data-stu-id="1b19a-186">For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).</span></span>
