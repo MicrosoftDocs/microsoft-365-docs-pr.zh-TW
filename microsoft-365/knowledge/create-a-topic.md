@@ -14,19 +14,19 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242879"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279385"
 ---
 # <a name="create-a-new-topic"></a>建立新主題 
 
 在 Viva 主題中，您可以建立新的主題如果沒有透過索引探索，或是 AI 技術沒有找到足夠的證據來建立主題。
 
 > [!Note] 
-> 雖然 AI 收集的主題中的資訊是 [安全修整](topic-experiences-security-trimming.md)的，請注意，所有具有查看主題許可權的使用者皆可看到手動建立主題中的資訊。 
+> [！附注] 透過 AI 收集的主題中的資訊是 [安全修整](topic-experiences-security-trimming.md)的，請注意，所有具有查看主題許可權的使用者皆可看到手動建立主題中的主題描述和人員資訊。 
 
 
 ## <a name="requirements"></a>需求
@@ -77,6 +77,9 @@ ms.locfileid: "50242879"
 
     您也可以透過提供 URL，使用 [ <b>發件</b> 人] 中的 [連結] 選項來新增檔或頁面。 
 
+    > [!Note] 
+    > 您新增的檔案和頁面必須位於相同的 Microsoft 365 租使用者內。 如果您想要在主題中新增外部資源的連結，您可以透過步驟8中的 canvas 圖示加以新增。
+
 
 6.  [ <b>相關網站</b> ] 區段會顯示網站，其中包含主題的相關資訊。 
 
@@ -97,6 +100,16 @@ ms.locfileid: "50242879"
    您新增的相關主題會顯示為連線的主題。
 
    ![連線的相關主題](../media/knowledge-management/related-topics-final.png)</br> 
+
+   若要移除相關主題，請選取您要移除的主題，然後選取 <b>移除主題</b> 圖示。</br>
+ 
+   ![移除相關主題](../media/knowledge-management/remove-related.png)</br>  
+
+   然後選取 [ <b>移除</b>]。</br>
+
+   ![確認移除](../media/knowledge-management/remove-related-confirm.png)</br> 
+     
+ 
 
 
 8. 您也可以選取 [畫布] 圖示，將靜態專案新增至頁面 (例如文字、圖像或連結) ，您可以在簡短描述下方找到該圖示。 選取它會開啟 SharePoint 工具箱，您可以從中選擇要新增至頁面的專案。

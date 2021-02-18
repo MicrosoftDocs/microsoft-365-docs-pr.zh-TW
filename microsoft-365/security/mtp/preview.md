@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9156025990e8da61006ac1d3b81a71be5580e00c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1636b1deb5f35d8286b33238a8f4bbfff0b33521
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167380"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288122"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender 預覽功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->[!IMPORTANT]
->預覽版本不會提供任何服務等級協定，不建議用於實際執行工作負載。 某些功能可能不受支援，或可能具有有限的功能。
+> [!IMPORTANT]
+> 預覽版本不會提供任何服務等級協定，不建議用於實際執行工作負載。 某些功能可能不受支援，或可能具有有限的功能。
 
 適用於：
 - Microsoft 365 Defender
@@ -43,22 +43,29 @@ Microsoft 365 Defender 服務會不斷更新，以包含新功能增強功能及
 
 如需一般可用之新功能的詳細資訊，請參閱 [Microsoft 365 Defender 的新](whats-new.md)功能。
 
+## <a name="required-permissions"></a>必要的權限
+
+指派給下列 Azure Active Directory 的帳戶 (Azure AD) 角色可以開啟 Microsoft 365 Defender 預覽功能：
+
+- 全域管理員
+- 安全性系統管理員
+- 安全性操作員
+
 ## <a name="turn-on-preview-features"></a>開啟預覽功能
+
 您將可以存取即將推出的功能，您可以在其中提供意見反應，以協助改善整體體驗，使其成為一般可用功能。
 
 開啟預覽體驗設定，成為第一批嘗試即將推出的功能的人。
 
 1. 在功能窗格中，選取 **[設定]**。
-
 2. 選取 [ **Microsoft 365 Defender**]。
-
 3. 選取 **預覽功能** > **開啟預覽功能**。 
-
 4. 選取 **[儲存]**。
 
 當您看到 **[開啟預覽功能]** 核取方塊已選取時，您就會知道您已開啟預覽功能。 
 
 ## <a name="preview-features"></a>預覽功能
+
 目前預覽版提供下列功能和增強功能：
 
 ### <a name="improved-microsoft-365-security-center"></a>改進的 Microsoft 365 安全中心
@@ -68,4 +75,4 @@ Microsoft 365 Defender 服務會不斷更新，以包含新功能增強功能及
 - **[Microsoft 365 Defender APIs](api-overview.md)** -最上層的 Microsoft 365 Defender APIs 可讓您根據共用的事件和高級搜尋表格來自動化工作流程。 
 - **[在高級搜尋中採取動作](advanced-hunting-take-action.md)**：快速包含威脅或您在 [ [高級搜尋](advanced-hunting-overview.md)] 中找到的受損資產。
 - **[In 入口架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**-直接在「安全性中心」中取得高級搜尋架構表格的相關資訊。 除了資料表和欄描述之外，此參考還包含支援的事件種類 (`ActionType` 值) 和範例查詢。
-- **[DeviceFromIP ( # A1 函數](advanced-hunting-devicefromip-function.md)**-取得在指定的時間範圍內指派特定 IP 位址或位址的相關資訊。
+- **[DeviceFromIP () 函數](advanced-hunting-devicefromip-function.md)**-取得在指定的時間範圍內，哪些裝置已被指派特定的 IP 位址或位址的相關資訊。

@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,17 +14,23 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何使用郵件流程規則 (也稱為傳輸規則) 接收使用者向 Microsoft 報告的郵件副本。
-ms.openlocfilehash: ec7145b68548bb5e1d6841387a18e86b74ec2a78
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 40e87fec3bfd8ed4402713ca7ec45499bb50c68e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751568"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287602"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用郵件流程規則來查看您的使用者報告給 Microsoft 哪些內容
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱時，使用者可以使用多種方式，將郵件報告給 Microsoft 進行分析，如 [報表訊息和檔案至 microsoft](report-junk-email-messages-to-microsoft.md)所述。
 
@@ -79,7 +84,7 @@ ms.locfileid: "49751568"
 
 4. 您可以進行其他選擇來審核規則、測試規則、在特定時間週期內啟動規則，以及其他設定。 建議您先測試規則，再加以強制執行。
 
-5. 完成後，請按一下 **[儲存]**。
+5. 完成後，按一下 **[儲存]**。
 
 ## <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>使用 PowerShell 建立郵件流程規則，以接收報告訊息的副本
 

@@ -17,12 +17,12 @@ ms.collection:
 description: '深入瞭解 Exchange Online Protection (EOP 中的安全性預設設定) '
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 51b33afa6b07c040e6aa18abe996c78b770f0773
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4a507abce8c18657794b56570241570e5048b89d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166576"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288510"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 中預設的安全性
 
@@ -30,9 +30,9 @@ ms.locfileid: "50166576"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 「預設使用安全」是一種術語，用來定義盡可能最安全的預設設定。
 

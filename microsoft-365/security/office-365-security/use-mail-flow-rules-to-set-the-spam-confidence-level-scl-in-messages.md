@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,17 +16,23 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何建立郵件流程規則 (傳輸規則) 識別郵件，以及在 Exchange Online Protection 中設定郵件的垃圾郵件信賴等級 (SCL) 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 447333eb968ba7d91a1673c57b11afdb16b90469
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: aa2893214543f77114d517dc38f874d6172a920a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659834"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287554"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>使用郵件流程規則設定 EOP 中郵件中的垃圾郵件信賴等級 (SCL) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 在包含 Exchange Online 或獨立 Exchange online)  (Protection 中信箱的 Microsoft 365 組織中，EOP 會使用反垃圾郵件原則 (也稱為垃圾郵件篩選原則或內容篩選原則) ，以掃描輸入郵件中的垃圾郵件。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
@@ -76,7 +81,7 @@ ms.locfileid: "49659834"
 
    - **7 至 9**：郵件標示為 **高信賴的垃圾郵件**。 您為反垃圾郵件原則中已設定 **高信賴垃圾郵件** 篩選 verdicts 的動作會套用至郵件 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。
 
-4. 指定規則所需的任何其他屬性。 完成後，按一下 [儲存]。
+4. 指定規則所需的任何其他屬性。 完成後，按一下 **[儲存]**。
 
 ## <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 

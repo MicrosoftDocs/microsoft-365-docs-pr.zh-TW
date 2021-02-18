@@ -19,19 +19,19 @@ description: 摘要：為政治活動開發/測試環境建立具備使用者與
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d23539951e4d51fcd29417ab71ce599853d7537
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e600b3baf012d416a7b5de974b94111bb6cf90a2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165700"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287446"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>設定政治活動開發/測試環境的群組和使用者
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [適用於 Office 365 的 Microsoft Defender 方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [適用於 Office 365 的 Microsoft Defender 方案 2](office-365-atp.md)
 
  **摘要：** 為政治活動開發/測試環境建立具備使用者與群組的 Office 365 和 Enterprise Mobility + Security (EMS) 之試用訂閱。
 
@@ -41,7 +41,7 @@ ms.locfileid: "50165700"
 
 在這個階段中，您會為代表政治活動的虛構組織取得 Office 365 E5 與 Enterprise Mobility + Security (EMS) E5 試用訂閱。
 
-首先，請依照[輕量型基本組態](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)中「第 2 階段」的指示進行。
+首先，請依照[輕量型基本組態](../../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md)中「第 2 階段」的指示進行。
 
 接著，註冊 EMS E5 試用訂閱，並將它新增至與試用訂閱相同的組織。
 
@@ -139,7 +139,7 @@ ms.locfileid: "50165700"
 
 在這個階段，您可以為政治活動新增範例使用者帳戶。
 
-首先，[與 Azure Active Directory PowerShell for Graph 模組連線](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell)。
+首先，[與 Azure Active Directory PowerShell for Graph 模組連線](../../enterprise/connect-to-microsoft-365-powershell.md)。
 
 接下來，填寫您的組織名稱、位置及常見的密碼，並從 PowerShell 命令提示字元或整合式指令碼環境 (ISE) 執行這些命令：
 
@@ -212,6 +212,6 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 [在政治活動開發/測試環境中建立小組網站](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[雲端採用測試實驗室指南 (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[雲端採用測試實驗室指南 (TLG)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
 [雲端採用和混合式解決方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

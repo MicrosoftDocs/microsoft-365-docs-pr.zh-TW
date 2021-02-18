@@ -7,7 +7,6 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用新的安全性儀表板來查看 Office 365 威脅防護狀態，並查看並處理安全性警示。
-ms.openlocfilehash: 6a2669e3e36ee9238de99014a6c899df75204726
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 72743f1b052d39ac4762dffc0b3e3e694befa8bc
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615813"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "50288320"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
@@ -70,7 +71,7 @@ ms.locfileid: "49615813"
 |如果您的訂閱包括 .。。|您將會看到這些詳細資料|
 |---|---|
 |EOP，但不是 Microsoft Defender for Office 365|EOP 所偵測到並封鎖的惡意電子郵件。<p> 請參閱 [威脅防護狀態報表 (EOP) ](view-email-security-reports.md#threat-protection-status-report)。|
-|Microsoft Defender for Office 365|EOP 和 Defender for Office 365 偵測到並封鎖惡意的惡意內容和惡意電子郵件 <p> 由反惡意程式碼引擎、 [零小時自動清除](zero-hour-auto-purge.md)及 Defender for office 365 功能所封鎖的獨特電子郵件累計計數， (包括 office 365) 中的 [安全連結](atp-safe-links.md)、 [安全附件](atp-safe-attachments.md)和 [防網路釣魚](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 功能。 <p> 請參閱 [威脅防護狀態報表](view-reports-for-atp.md#threat-protection-status-report)。|
+|適用於 Office 365 的 Microsoft Defender|EOP 和 Defender for Office 365 偵測到並封鎖惡意的惡意內容和惡意電子郵件 <p> 由反惡意程式碼引擎、 [零小時自動清除](zero-hour-auto-purge.md)及 Defender for office 365 功能所封鎖的獨特電子郵件累計計數， (包括 office 365) 中的 [安全連結](atp-safe-links.md)、 [安全附件](atp-safe-attachments.md)和 [防網路釣魚](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 功能。 <p> 請參閱 [威脅防護狀態報表](view-reports-for-atp.md#threat-protection-status-report)。|
 
 若要查看或存取威脅防護狀態構件，您必須具有 view Defender for Office 365 報告的許可權。 若要深入瞭解，請參閱 [查看 Office 365 的 Defender 時，需要哪些許可權？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -95,7 +96,7 @@ ms.locfileid: "49615813"
 
 ![惡意程式碼趨勢及系列類型](../../media/malwarewidgetatpe5.png)
 
-## <a name="insights"></a>深入資訊
+## <a name="insights"></a>深入解析
 
 不只是深入瞭解應該檢查的 surface key 問題，也包括要考慮的建議和動作。
 

@@ -22,21 +22,21 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 中包含可能危險或有害郵件的隔離。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4b111ea0d07453ef4280ec9e57247c8215420074
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 47742008af9c1cd0a0a17df9e43ebc0228a825b0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167404"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288762"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>EOP 中隔離的電子郵件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
--   [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
--   [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱，隔離可用於存放可能危險或不需要的郵件。
 

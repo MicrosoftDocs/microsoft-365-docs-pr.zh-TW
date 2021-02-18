@@ -17,21 +17,21 @@ ms.custom:
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a97d95ab4d7cf0146ea6d6d008230ee6aa678d80
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 083fd4ae7e5564f2affeca73dd3d78a52657c5a7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166378"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287314"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 設定反網路釣魚防護設定的原則，可在 Microsoft 365 組織中使用 Exchange Online 信箱、獨立 Exchange Online Protection (EOP) 沒有 Exchange Online 信箱的組織，以及 Microsoft Defender for Office 365 組織。
 
@@ -206,9 +206,10 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
   - **類比網域**：寄件者位址包含受保護的網域。
   - 不 **尋常的字元**： From 位址包含不尋常的字元集 (例如數學符號和文字，或是混合的大小寫字母) 在受保護的寄件者或網域中。
 
+
   > [!IMPORTANT]
   >
-  > 即使已關閉模擬安全性秘訣， **我們還是建議您使用** 郵件流程規則 (也稱為傳輸規則) ，以將名為 **X-MS-Exchange-EnableFirstContactSafetyTip** 的郵件頭新增為郵件的 [ **啟用** ] 值。 當收件者第一次從寄件者收到郵件時，或是不經常從寄件者取得郵件時，安全提示會通知收件者。
+  > **在寄件者與 (收件者之間的初次聯繫時所顯示的安全性提示的建議)**：即使已關閉模擬安全性秘訣， **我們還是建議您使用** 郵件流程規則 (也稱為 transport rule) ，以新增名為 **X-MS-EnableFirstContactSafetyTip** 的郵件頭，並對郵件 **啟用** 值。 當收件者第一次從寄件者收到郵件時，或是不經常從寄件者取得郵件時，安全提示會通知收件者。 這項功能會針對潛在的模仿攻擊，新增額外的安全性防護層。 
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="具有多個收件者之類比保護的安全性秘訣文字。":::
 
 - **信箱智慧**：啟用或停用使用者的智慧 (AI) ，可決定使用者的電子郵件模式與經常的連絡人。 此設定可協助 AI 區分合法和欺騙的電子郵件與這些連絡人。 信箱智慧只適用于 Exchange Online 信箱。

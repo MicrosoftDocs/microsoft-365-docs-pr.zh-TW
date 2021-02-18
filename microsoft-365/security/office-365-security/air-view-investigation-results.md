@@ -19,18 +19,18 @@ description: 在 Microsoft 365 中的自動調查期間和之後，您可以查�
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 36cce42d0986cc793753d247d97315616f86f986
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 9ab32444f2c0b4f9f6140c20fe8356f016d62c30
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175595"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287074"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自動調查的詳細資料和結果
 
 **適用於**
-- [Microsoft Defender for Office 365 方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [適用於 Office 365 的 Microsoft Defender 方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 在[Office 365 的 Microsoft Defender](office-365-atp.md)中進行[自動調查](office-365-air.md)時，在自動化調查程式期間和之後都會提供該調查的詳細資料。 如果您有必要的許可權，您可以在 Microsoft 365 安全中心中查看這些詳細資料。 調查詳細資料可提供您最新的狀態，以及核准任何擱置中動作的功能。
 
@@ -46,7 +46,7 @@ ms.locfileid: "50175595"
 |**啟動中**|調查已觸發並等候開始執行。|
 |**正在執行**|調查過程已開始且正在進行中。 當 [待定的動作](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) 獲得批准時，也會發生此狀態。|
 |**找不到威脅**|調查已完成，但找不到任何威脅 (使用者帳戶、電子郵件訊息、URL 或檔案) 皆已識別。 <p> **提示**：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](threat-explorer.md)採取動作。|
-|**發現威脅**|自動調查發現問題，但沒有任何特定的修正動作可解決這些問題。 <p> 發現某些類型的使用者活動時，可能會發生 **威脅已發現** 狀態，但沒有清除動作可供使用。 範例包括下列任何使用者活動： <br/>- (DLP) 事件的[資料遺失防護](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies)<br/>-傳送反常的電子郵件<br/>-傳送惡意程式碼<br/>-傳送網路釣魚 <p> 調查發現沒有惡意的 URLs、檔案或電子郵件訊息要修正，而且沒有要修正的信箱活動，例如關閉轉移規則或委派。 <p> **提示**：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](threat-explorer.md)來調查和採取動作。|
+|**發現威脅**|自動調查發現問題，但沒有任何特定的修正動作可解決這些問題。 <p> 發現某些類型的使用者活動時，可能會發生 **威脅已發現** 狀態，但沒有清除動作可供使用。 範例包括下列任何使用者活動： <br/>- (DLP) 事件的[資料遺失防護](../../compliance/data-loss-prevention-policies.md)<br/>-傳送反常的電子郵件<br/>-傳送惡意程式碼<br/>-傳送網路釣魚 <p> 調查發現沒有惡意的 URLs、檔案或電子郵件訊息要修正，而且沒有要修正的信箱活動，例如關閉轉移規則或委派。 <p> **提示**：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](threat-explorer.md)來調查和採取動作。|
 |**由系統終止**|調查已停止。 調查可能會因下列幾點原因而停止： <br/>-調查的擱置中動作已過期。 等候一周的核准，待處理的動作超時。<br/>-動作太多。 例如，如果有太多使用者點擊惡意的 URLs，它可能會超出調查的執行所有分析器的能力，所以調查會暫停。<p> **提示**：如果調查在採取動作之前暫停，請嘗試使用 [威脅瀏覽器](threat-explorer.md) 來尋找並處理威脅。|
 |**擱置的動作**|調查發現威脅，例如惡意電子郵件、惡意 URL 或風險信箱設定，以及修正威脅 [等候核准](air-review-approve-pending-completed-actions.md)的動作。 <p> 當找到具有對應動作的任何威脅時，就會觸發 **擱置的動作** 狀態。 不過，擱置中的動作清單會隨著調查的執行而增加。 查看調查詳細資料以查看其他專案是否仍待完成。|
 |**修復**|調查已完成，且所有修正動作都已獲核准 (會注明為完全修正) 。 <p> **附注**：核准的修復動作可能會有錯誤，導致無法採取動作。 不論是否成功完成修正動作，調查狀態不會變更。 查看調查詳細資料。|

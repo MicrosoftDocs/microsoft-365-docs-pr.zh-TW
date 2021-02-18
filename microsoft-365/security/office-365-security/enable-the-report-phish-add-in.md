@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的報表網路釣魚增益集。
-ms.openlocfilehash: abac24e447d0afe9bc725dd8f9a976dce900b278
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 8242f3fcac27f8c76f7bef5a84c70960a204e3bd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094674"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286654"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>啟用報告網路釣魚增益集
 
@@ -41,7 +41,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 
 如果您是個別的使用者，您可以 [為自己啟用報告網路釣魚增益集](#get-the-report-phishing-add-in-for-yourself)。
 
-如果您是全域系統管理員或 Exchange Online 系統管理員，且 Exchange 設定成使用 OAuth 驗證，您可以 [為組織啟用報告網路釣魚增益集](#get-and-enable-the-report-phishing-add-in-for-your-organization)。 現在，您可以透過 [集中式部署](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)來使用報表網路釣魚 Add-In。
+如果您是全域系統管理員或 Exchange Online 系統管理員，且 Exchange 設定成使用 OAuth 驗證，您可以 [為組織啟用報告網路釣魚增益集](#get-and-enable-the-report-phishing-add-in-for-your-organization)。 現在，您可以透過 [集中式部署](../../admin/manage/centralized-deployment-of-add-ins.md)來使用報表網路釣魚 Add-In。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -142,7 +142,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 
 2. 尋找並選取 **報告網路釣魚** 增益集。
 
-3. 在 [ **編輯報告的網路釣魚** ] 浮出控制項中，視您的組織而定，會顯示、審閱及編輯設定。 完成後，按一下 [儲存 **]**。
+3. 在 [ **編輯報告的網路釣魚** ] 浮出控制項中，視您的組織而定，會顯示、審閱及編輯設定。 完成後，按一下 **[儲存]**。
 
 ## <a name="view-and-review-reported-messages"></a>查看和審閱報告的郵件
 

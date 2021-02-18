@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 系統管理員可以深入瞭解 Microsoft 365 安全中心的攻擊模擬訓練如何影響員工，以及如何深入瞭解類比和訓練結果。
 ms.technology: mdo
-ms.openlocfilehash: b7fd414cc355e768077198eb5215720c4d4a9444
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 43319089f604d32bf295392dd223cf65af8bd4be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933063"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288654"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>透過攻擊模擬訓練取得深入解析
 
@@ -45,7 +45,7 @@ ms.locfileid: "49933063"
 
 在 [ [**模擬** ]](https://security.microsoft.com/attacksimulator?viewid=simulations)索引標籤上，選取類比會帶您前往類比詳細資料，您可以在其中找到 [ **建議的動作** ] 區段。
 
-建議的動作區段會詳細說明 [Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)中提供的建議。 這些建議是以類比中所使用的負載為基礎，可協助您保護員工和您的環境。 按一下每個改進動作會將您帶到其詳細資料。
+建議的動作區段會詳細說明 [Microsoft 安全分數](../mtp/microsoft-secure-score.md)中提供的建議。 這些建議是以類比中所使用的負載為基礎，可協助您保護員工和您的環境。 按一下每個改進動作會將您帶到其詳細資料。
 
 > [!div class="mx-imgBorder"]
 > ![攻擊模擬訓練的建議動作區段](../../media/attack-sim-preview-recommended-actions.png)

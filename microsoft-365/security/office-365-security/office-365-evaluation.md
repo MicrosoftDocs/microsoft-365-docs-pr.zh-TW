@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c0bb1701cf030692bc98218b38be00cae57a2bd
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 1d16c0afc675ba759e392c9fe9a44c42b89dbad0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080698"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287650"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>評估 Microsoft Defender for Office 365
 
@@ -57,7 +57,7 @@ ms.locfileid: "50080698"
 - 分析動作報告
 - 展示評估結果
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 ### <a name="licensing"></a>授權
 
@@ -83,7 +83,7 @@ ms.locfileid: "50080698"
 在評估模式中，需要有 Exchange Online 角色才能設定 Office 365 的 Defender。
 
 - [深入瞭解 Exchange Online 中的許可權](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
-- [深入瞭解指派系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+- [深入瞭解指派系統管理員角色](../../admin/add-users/assign-admin-roles.md)
 
 下列角色是必要的：
 

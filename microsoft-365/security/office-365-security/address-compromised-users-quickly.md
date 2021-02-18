@@ -15,21 +15,21 @@ ms.date: 02/25/2020
 description: 瞭解如何使用 Microsoft Defender for Office 365 方案2中的自動調查和回應功能，以加速偵測和解決已遭破壞之使用者帳戶的處理常式。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2159ab7ad7e13c4cd4c2c428317ee7d99f78158c
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 1dda8c9b4aec30fd35efa153aaf032eee23b5e8a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176060"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288738"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>利用自動調查和回應來處理已遭破壞的使用者帳戶
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
 [Microsoft Defender For Office 365 方案 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) 包含強大的 [自動化調查和回應](office-365-air.md) (AIR) 功能。 這類功能可讓您的安全性運作小組儲存大量的時間和精力處理威脅。 Microsoft 繼續加強安全性功能。 最近，AIR 功能已增強，可在目前預覽) 中包含已遭破壞的使用者安全性行動手冊 (。 請閱讀本文以深入瞭解已遭破壞的使用者安全性行動手冊。 [使用 Microsoft Defender For Office 365，查看並回應使用者洩密和限制損等範圍](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)的博客文章，以取得其他詳細資料。
@@ -97,7 +97,7 @@ ms.locfileid: "50176060"
 
 - 「**自動化」協助（但不取代）您的安全性運作小組**。 自動化調查和回應功能可在初期偵測到遭到損害的使用者，但是您的安全性作業小組可能需要接洽並進行一些調查和修復。 需要一些協助嗎？ 請參閱 [複查和核准動作](air-review-approve-pending-completed-actions.md)。
 
-- 請 **不要依賴可疑的登入警示做為您唯一的指示器**。 當使用者帳戶遭到攻破時，可能會或不會觸發可疑的登入警示。 有時候，它是一系列的活動，會在帳戶遭到洩漏後觸發警示。 想要瞭解更多關於提醒的資訊嗎？ 請參閱 [警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。
+- 請 **不要依賴可疑的登入警示做為您唯一的指示器**。 當使用者帳戶遭到攻破時，可能會或不會觸發可疑的登入警示。 有時候，它是一系列的活動，會在帳戶遭到洩漏後觸發警示。 想要瞭解更多關於提醒的資訊嗎？ 請參閱 [警示原則](../../compliance/alert-policies.md)。
 
 ## <a name="next-steps"></a>後續步驟
 

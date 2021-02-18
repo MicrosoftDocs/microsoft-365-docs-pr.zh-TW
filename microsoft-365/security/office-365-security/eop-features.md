@@ -13,19 +13,19 @@ ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2c66c1cd8715717bae92ac81fbefe050f5e485eb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 7dbdf30df0659565d775bfba2cf968ac56f6a4ac
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166168"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286846"
 ---
 # <a name="eop-features"></a>EOP 功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
--  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection 獨立](exchange-online-protection-overview.md)
 
 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
 

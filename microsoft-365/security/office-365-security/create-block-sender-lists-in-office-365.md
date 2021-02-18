@@ -14,21 +14,21 @@ search.appverid:
 description: 系統管理員可以深入瞭解可用及慣用的選項，以在 Exchange Online Protection (EOP) 中封鎖輸入郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d77457567d4c3f9f4a8620021a7fb41615f0594d
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 5c95b49db811807a0cb46dce5363b8ae2dbe5602
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165652"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287278"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>在 EOP 中建立封鎖的寄件者清單
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 在有信箱在 Exchange Online 或獨立 Exchange Online Protection 中的 Microsoft 365 組織中 (EOP) 不含 Exchange Online 信箱的組織，EOP 提供多種方式，封鎖來自不想要的寄件者的電子郵件。 這些選項包括 Outlook 封鎖的寄件者、封鎖的寄件者清單或反垃圾郵件原則中封鎖的網域清單、Exchange 郵件流程規則 (也稱為傳輸規則) ，以及 IP 封鎖清單 (連線篩選) 。 綜合，您可以將這些選項視為 _封鎖的寄件者清單_。
 

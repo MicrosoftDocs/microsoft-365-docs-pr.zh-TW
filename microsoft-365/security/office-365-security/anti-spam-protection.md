@@ -21,21 +21,21 @@ ms.custom:
 description: 系統管理員可以瞭解反垃圾郵件設定和篩選器，有助於防止 Exchange Online Protection 中的垃圾郵件 (EOP) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ae2c4f42d42c37f5b7a7df2b6c8306fd390b0af
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: f82e3f36d00994a68ed579779bed314318c51f47
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175856"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288942"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾郵件保護
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > 本主題適用于系統管理員。 如需使用者的主題，請參閱 [垃圾郵件篩選程式的 [概述](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) ]，並 [瞭解垃圾郵件和網路釣魚](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31)。
@@ -79,7 +79,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 
 - **檢查反垃圾郵件訊息標頭**：這些值會告訴您郵件為何被標示為垃圾郵件，或為何略過垃圾郵件篩選。 如需詳細資訊，請參閱＜[反垃圾郵件訊息標頭](anti-spam-message-headers.md)＞。
 
-- 將 **您的 MX 記錄指向 Microsoft 365**：為了讓 EOP 能夠提供最佳保護，我們一定會建議您先將電子郵件傳遞至 microsoft 365。 如需相關指示，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+- 將 **您的 MX 記錄指向 Microsoft 365**：為了讓 EOP 能夠提供最佳保護，我們一定會建議您先將電子郵件傳遞至 microsoft 365。 如需相關指示，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
   如果 MX 記錄指向其他位置 (例如，協力廠商的反垃圾郵件解決方案或裝置) ，EOP 可提供準確的垃圾郵件篩選功能是很困難的。 在此案例中，您必須設定連接器的增強篩選 (也稱為 _略過清單_) 。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 

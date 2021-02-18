@@ -16,18 +16,18 @@ ms.collection:
 description: Office 365 的安全性，從 EOP 到 Defender for Office 365 方案1和2，Standard 與 Strict 安全性設定等等。 瞭解您擁有的內容，以及如何保護您的屬性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68570cedd0696510f2181edcea7ef149ace606e3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: cbe95946ab7214efded8feca39578c364b948df0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166414"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287898"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全性概述
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
 
 
 本文將向您介紹雲端中的新安全性屬性。 不論您是安全運作中心的一部分，您是安全性管理員新的空間，或是您想要使用複習，讓我們開始吧！
@@ -141,10 +141,10 @@ Microsoft Defender for Office 365 P1 也會新增 **即時** 偵測以進行調�
 
 - [安全文件](safe-docs.md)功能僅可供具備 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權 (未包含在適用於 Office 365 的 Microsoft Defender 方案中) 的使用者使用。
 
-- 如果您目前的訂閱不包含 Microsoft Defender for Office 365，而您想要使用它，請 [聯繫我們的銷售人員開始試用版](https://go.microsoft.com/fwlink/p/?LinkId=518644)，並瞭解在您的組織中，microsoft Defender for office 365 如何運作。
+- 如果您目前的訂閱不包含 Microsoft Defender for Office 365，而您想要使用它，請 [聯繫我們的銷售人員開始試用版](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)，並瞭解在您的組織中，microsoft Defender for office 365 如何運作。
 
 > [!TIP]
-> ***有問必答秘訣**。 您可以使用 [docs.microsoft.com] 目錄來瞭解 EOP 和 Microsoft Defender for Office 365。 向後流覽至此頁面， [Office 365 安全性簡介](https://docs.microsoft.com/microsoft-365/security/office-365-security)，您會注意到 [目錄] 組織位於側面列中。 其開始的部署 (包括遷移) ，然後繼續進行防護、偵測、調查和回應。 <p> 這種結構已分割，所以安全性 **操作** 主題後面會有 _ *安全性管理** 主題。 如果您是工作角色的新成員，請使用此秘訣中的連結和您的目錄知識，協助您瞭解空間。 請記得使用反應 *連結* ，並在旅途中 *評價文章* 。 意見反應可協助我們改進我們為您提供的功能。
+> ***有問必答秘訣**。 您可以使用 [docs.microsoft.com] 目錄來瞭解 EOP 和 Microsoft Defender for Office 365。 向後流覽至此頁面， [Office 365 安全性簡介](index.md)，您會注意到 [目錄] 組織位於側面列中。 其開始的部署 (包括遷移) ，然後繼續進行防護、偵測、調查和回應。 <p> 這種結構已分割，所以安全性 **操作** 主題後面會有 _ *安全性管理** 主題。 如果您是工作角色的新成員，請使用此秘訣中的連結和您的目錄知識，協助您瞭解空間。 請記得使用反應 *連結* ，並在旅途中 *評價文章* 。 意見反應可協助我們改進我們為您提供的功能。
 
 ## <a name="where-to-go-next"></a>下一步
 

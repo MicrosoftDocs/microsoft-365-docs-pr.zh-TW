@@ -7,7 +7,6 @@ author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,17 +16,22 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 深入瞭解威脅追蹤器（包括新的重要追蹤追蹤器），以協助您的組織維持在安全性上的關注。
-ms.openlocfilehash: 551f5704337ef8989fd1568854822bc1d9d4c14b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a734085e9bc341424ee40757a21b855442605bcd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615453"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287386"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [Office 365 威脅調查和回應](office-365-ti.md) 功能可讓您的組織的安全性小組探索和採取行動，以防範 cybersecurity 威脅。 Office 365 威脅調查和回應功能包括威脅追蹤器功能，包括值得注意的追蹤器。 請閱讀本文，以取得這些新功能及後續步驟的概述。
 

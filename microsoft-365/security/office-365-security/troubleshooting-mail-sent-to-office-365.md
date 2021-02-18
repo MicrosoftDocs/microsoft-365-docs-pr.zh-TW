@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,17 +17,22 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文提供將電子郵件傳送至 Microsoft 365 收件匣之問題的疑難排解資訊 & 大量郵遞至 Microsoft 365 客戶的最佳作法。
-ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1e4a91f70b59debc770a5811638bd64a1eef36dd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760479"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286378"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>疑難排解傳送至 Microsoft 365 的郵件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**適用於**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
 
 本文提供嘗試將電子郵件傳送至 Microsoft 365 收件匣的寄件者疑難排解資訊，以及大量郵遞至客戶的最佳作法。
 
@@ -80,7 +84,7 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>我無法從 Microsoft 365 中的寄件者接收電子郵件
 
- 若要從我們的使用者接收郵件，請確定您的網路允許來自 EOP 在我們資料中心使用的 IP 位址的連線。 如需詳細資訊，請參閱 [Exchange Online PROTECTION IP 位址](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
+ 若要從我們的使用者接收郵件，請確定您的網路允許來自 EOP 在我們資料中心使用的 IP 位址的連線。 如需詳細資訊，請參閱 [Exchange Online PROTECTION IP 位址](../../enterprise/urls-and-ip-address-ranges.md)。
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>大量電子郵件至 Microsoft 365 使用者的最佳作法
 

@@ -19,20 +19,20 @@ ms.custom:
 description: 本文說明 Azure 資訊保護中的保護功能所要推出的變更
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: fe85a46e3f20cda62cd8a52bd5df92257f8fee57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261558"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286666"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Azure 資訊保護中的保護功能可向現有承租人推出
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [適用於 Office 365 的 Microsoft Defender 方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [適用於 Office 365 的 Microsoft Defender 方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 若要協助您保護資訊的初始步驟，請從2018年7月開始，所有 Azure 資訊保護合格的承租人都會有預設開啟 Azure 資訊保護中的保護功能。 Azure 資訊保護中的保護功能先前在 Office 365 中稱為 Rights Management 或 Azure RMS。 如果您的組織有 Office E3 服務方案或較高的服務方案，您現在可以在推出這些功能時，透過 Azure 資訊保護來開始保護資訊。
 

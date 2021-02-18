@@ -22,20 +22,20 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 451a6b19139502a3765795694860e884a7a469bf
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 48d7e1a7497f9bc2a07a84b36fb07939d25609bf
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175748"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289146"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自動化調查和回應功能中報告誤報/負片
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Microsoft Defender for Office 365 方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [適用於 Office 365 的 Microsoft Defender 方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 如果 [自動調查和回應 (Office 365 未接或誤偵測功能的空氣) 功能](automated-investigation-response-office.md) ，您的安全性運作小組可以採取這些步驟來修正問題。 這類動作包括：
 
@@ -84,7 +84,7 @@ ms.locfileid: "50175748"
 4. 選取專案。 其快顯視窗隨即開啟。 
 5. 在快顯視窗中，選取 [ **復原**]。  (只有可復原的動作才能具有 [ **復原** ] 按鈕。 ) 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
 - [Microsoft Defender for Office 365 中的自動調查](office-365-air.md)

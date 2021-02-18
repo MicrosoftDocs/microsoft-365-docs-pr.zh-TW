@@ -21,20 +21,20 @@ description: 瞭解如何使用 Office 365 安全性 & 規範中心中的 [提�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4af23ac1fd3c7272fc60b2228bf808351cb4d2b
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: d4c92a0bccded461d272d84e0f5b4d06a3b44713
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176024"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287086"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>安全性 & 規範中心的警示
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
 
 使用安全性 & 合規性中心中的警示功能，以查看及管理組織的提醒，包括在 [Microsoft Cloud App Security 概要](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)中管理高級提醒。
 

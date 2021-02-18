@@ -17,19 +17,19 @@ ms.collection:
 description: 深入瞭解獨立 Exchange Online Protection (EOP) 中的 web 管理介面。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166216"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286954"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>獨立版 EOP 中的 Exchange 系統管理中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
--  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection 獨立](exchange-online-protection-overview.md)
 
 Exchange 系統管理中心 (EAC) 是以 web 為基礎的管理主控台，供獨立 Exchange Online Protection (EOP) 。
 

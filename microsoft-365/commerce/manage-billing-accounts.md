@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 深入瞭解記帳帳戶及管理方式。
-ms.openlocfilehash: 2382396c348fab0b24a269e9678193041ac2c19e
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 6c90bdd9087a67cc3639cfb06644a5587273dc35
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032630"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279295"
 ---
 # <a name="manage-billing-accounts"></a>管理計費帳戶
 
@@ -47,10 +47,10 @@ Microsoft 365 admin center 目前支援下列類型的計費帳戶：
 | 帳戶狀態 | 指定您的商務用 Microsoft 帳戶狀態的唯讀欄位。 |
 | 納稅識別碼 | 如果您在美國境外，您必須提供加值稅或當地對等專案。 如需詳細資訊，請參閱[稅務資訊](billing-and-payments/tax-information.md)。 |
 | 協定 | 在建立計費帳戶時（透過直接購買或大量授權安排），組織的簽署人會接受（或簽署）列出該帳戶的條款 & 條件的合約。 如果適用的話，此視圖會列出合約記錄。 如果您需要接受更新的字詞，就會顯示「 **核准合約** 」的連結。 |
-| 計費設定檔 | 計費設定檔會定義發票的內容，例如誰接收帳單、帳單傳遞的方式、付款條款和 PO 號碼。 若要在組織中散佈帳單，您可以建立多個帳單設定檔，並在購買時識別適當的帳單設定檔。 如需計費設定檔的詳細資訊，以及如何使用它們為您的組織建立更靈活的帳單選項，請 [管理帳單設定檔](billing-and-payments/manage-billing-profiles.md)。 |
+| 計費設定檔 | 計費設定檔會定義發票的內容，例如誰接收帳單、帳單傳遞的方式、付款條款和 PO 號碼。 若要在組織中散佈帳單，您可以建立多個帳單設定檔，並在購買時識別適當的帳單設定檔。 如需計費設定檔的詳細資訊，以及如何使用它們為組織建立更靈活的帳單選項，請 [瞭解計費設定檔](billing-and-payments/manage-billing-profiles.md)。 |
 
 > [!NOTE]
-> 如果您想要變更已 **售出** 的名稱或位址，但沒有看到 **編輯** 連結，您必須  [聯繫支援人員](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) 加以變更。 要求 **銷售** 變更名稱的要求會要求信用支票。 當您聯繫支援人員時，準備好與 Microsoft 共用下列其中一個檔： 
+> 如果您需要變更已 **售出** 的名稱或位址，但沒有看到 **編輯** 連結，您必須 [聯繫支援人員](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) 加以變更。 要求 **銷售** 變更名稱的要求會要求信用支票。 完成 [此表單](https://www.microsoft.com/download/details.aspx?id=102732)，並準備好在您聯繫支援人員時，與 Microsoft 共用下列其中一個檔：
 >
 > - 政府簽發的檔或註冊信件
 > - 列印本機公司的登錄
@@ -72,8 +72,7 @@ Microsoft 365 admin center 目前支援下列類型的計費帳戶：
 > [!Note]
 > 計費帳戶角色只適用于帳單帳戶，不適用於其他 Microsoft 365 系統管理中心案例。
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[稅務資訊](billing-and-payments/tax-information.md)
-
-[管理帳單設定檔](billing-and-payments/manage-billing-profiles.md)
+ (篇文章) 的[稅務資訊](billing-and-payments/tax-information.md)
+[瞭解計費設定檔](billing-and-payments/manage-billing-profiles.md) (文章) 

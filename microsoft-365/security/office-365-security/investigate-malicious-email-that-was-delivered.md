@@ -20,12 +20,12 @@ description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b1fd9af5267defd55025ca712b3e5f7c0cc3b56
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b36e16f5351ab30ac8150fbc3e87feb9ca4a6453
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167356"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286630"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>調查 Office 365 中傳遞的惡意電子郵件
 
@@ -33,15 +33,15 @@ ms.locfileid: "50167356"
 
 **適用於**
 
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [Microsoft Defender For Office 365](office-365-atp.md) 可讓您調查讓組織中的人員面臨風險的活動，並採取行動以保護您的組織。 例如，如果您是組織的安全性小組的一部分，您可以找出並調查已傳遞的可疑電子郵件訊息。 您可以使用 [威脅瀏覽器 (或即時偵測) ](threat-explorer.md)來執行此動作。
 
 > [!NOTE]
 > 在 [這裡](remediate-malicious-email-delivered-office-365.md)跳到修正文章。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 請確定符合下列需求：
 

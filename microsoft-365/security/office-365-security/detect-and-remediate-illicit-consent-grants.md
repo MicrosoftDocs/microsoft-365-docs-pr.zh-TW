@@ -18,20 +18,20 @@ description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1c724bb3b201e0ddf1edea4794606c7083605e8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2a50ce58d91d2ff7b2e31e57830289c870364d9b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165436"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288284"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **摘要** 了解如何識別並修正在 Office 365 中的非法同意授權。
 
@@ -143,10 +143,10 @@ ms.locfileid: "50165436"
 
 ## <a name="determine-the-scope-of-the-attack"></a>判斷攻擊的範圍
 
-當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [Microsoft 365 安全性與合規性中心][](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) 中搜尋 **稽核記錄**。
+當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [Microsoft 365 安全性與合規性中心][](../../compliance/search-the-audit-log-in-security-and-compliance.md) 中搜尋 **稽核記錄**。
 
 > [!IMPORTANT]
-> 您必須在攻擊之前啟用 [信箱稽核][](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) 和 [系統管理員與使用者的活動稽核][](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)，才能獲得此訊息。
+> 您必須在攻擊之前啟用 [信箱稽核][](../../compliance/enable-mailbox-auditing.md) 和 [系統管理員與使用者的活動稽核][](../../compliance/turn-audit-log-search-on-or-off.md)，才能獲得此訊息。
 
 ## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>如何阻止及修復非法同意授權攻擊
 
@@ -168,7 +168,7 @@ ms.locfileid: "50165436"
 
 - 您也可以完全停用受影響帳戶的登入，這將會進一步停用該帳戶中應用程式對資料的存取權。 當然，這對使用者的生產力並不理想，但是如果您正努力快速限制影響，這會是可行的短期補救。
 
-- 您可以關閉租用戶的整合式應用程式。 這是一項重大步驟，會在整個租用戶範圍中停用使用者授權同意的能力。 這可防止您的使用者不小心授權存取惡意應用程式。 我們不建議您這麼做，因為這會嚴重影響使用者使用使用協力廠商應用程式的生產力。 若要這麼做，可以依照[開啟或關閉整合式應用程式](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)中的步驟進行。
+- 您可以關閉租用戶的整合式應用程式。 這是一項重大步驟，會在整個租用戶範圍中停用使用者授權同意的能力。 這可防止您的使用者不小心授權存取惡意應用程式。 我們不建議您這麼做，因為這會嚴重影響使用者使用使用協力廠商應用程式的生產力。 若要這麼做，可以依照[開啟或關閉整合式應用程式](../../admin/misc/user-consent.md)中的步驟進行。
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Microsoft 365
 

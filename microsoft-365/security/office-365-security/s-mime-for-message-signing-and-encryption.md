@@ -8,19 +8,20 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 系統管理員可以瞭解如何在 Exchange Online 中使用 S/MIME (安全/多用途網際網路郵件) 延伸，以加密電子郵件並以數位方式簽署郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01de52bb1d8e946ead0d8b39e34b13e34741259e
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 35266b4ceefe161b907ddbc955fd234b716792a6
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760551"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288570"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>可用於 Exchange Online 中訊息簽署和加密的 S/MIME
 
@@ -41,7 +42,7 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
 
 對每個端點設定 S/MIME 時所採取的步驟會稍有不同。 通常需要執行下列步驟：
 
-1. 安裝以 Windows 為基礎的憑證授權單位單位 (CA) 並設定公開金鑰基礎結構，以發行 S/MIME 憑證。也支援協力廠商憑證提供者所發行的憑證。如需詳細資訊，請參閱 [Active Directory 憑證服務概述](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
+1. 安裝以 Windows 為基礎的憑證授權單位單位 (CA) 並設定公開金鑰基礎結構，以發行 S/MIME 憑證。 也支援協力廠商憑證提供者所發出的憑證。 如需詳細資訊，請參閱 [Active Directory 憑證服務概觀](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
 
    **附註**：
 
@@ -80,7 +81,7 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
 
 ### <a name="smime-compared-with-office-365-message-encryption"></a>S/MIME 與 Office 365 郵件加密的比較
 
-S/MIME 需要憑證和發佈基礎結構 (常用於企業對企業及企業對消費者情況)。 在 S/MIME 中，由使用者控制密碼編譯金鑰，且在他們所傳送的每一封郵件上，都可選擇是否使用金鑰。 電子郵件程式 (例如 Outlook) 會搜尋受信任的根憑證授單位，以進行數位簽署並驗證簽章。 Office 365 郵件加密是系統管理員 (而不是個別使用者) 可設定的原則型加密服務，可將傳送給組織內外任何人的郵件加密。 它是以 Azure 版權管理 (RMS) 為基礎的線上服務，且不依賴任何公開金鑰基礎結構。 Office 365 郵件加密還提供其他功能，例如以組織的品牌來自訂郵件。 如需 Office 365 郵件加密的相關資訊，請參閱 [Office 365 加密](https://docs.microsoft.com/microsoft-365/compliance/encryption)。
+S/MIME 需要憑證和發佈基礎結構 (常用於企業對企業及企業對消費者情況)。 在 S/MIME 中，由使用者控制密碼編譯金鑰，且在他們所傳送的每一封郵件上，都可選擇是否使用金鑰。 電子郵件程式 (例如 Outlook) 會搜尋受信任的根憑證授單位，以進行數位簽署並驗證簽章。 Office 365 郵件加密是系統管理員 (而不是個別使用者) 可設定的原則型加密服務，可將傳送給組織內外任何人的郵件加密。 它是以 Azure 版權管理 (RMS) 為基礎的線上服務，且不依賴任何公開金鑰基礎結構。 Office 365 郵件加密還提供其他功能，例如以組織的品牌來自訂郵件。 如需 Office 365 郵件加密的相關資訊，請參閱 [Office 365 加密](../../compliance/encryption.md)。
 
 ## <a name="more-information"></a>詳細資訊
 

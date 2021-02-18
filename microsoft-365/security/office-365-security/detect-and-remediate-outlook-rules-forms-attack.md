@@ -11,18 +11,19 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: 瞭解如何在 Office 365 中識別及修復 Outlook 規則和自訂表單注入攻擊
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cbdc41315d64d341248d6900147aabc5a0b9877c
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e22cfa97ae59fdd094c161cdaeff899dc1dd6507
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663640"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286390"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>偵測並修復 Outlook 規則和自訂表單注入攻擊
 
@@ -168,7 +169,7 @@ ms.locfileid: "49663640"
 
 4. 安裝最新版本的 Outlook。 請記住，目前的 Outlook 版本會封鎖這兩種攻擊類型的預設值。
 
-5. 移除信箱的所有離線副本之後，請重設使用者的密碼 (使用高品質的) ，然後在未啟用 MFA 時，依照 [為使用者設定多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) 中的步驟進行。 這可確保使用者的認證不會透過其他方式公開 (例如網路釣魚或密碼重複使用) 。
+5. 移除信箱的所有離線副本之後，請重設使用者的密碼 (使用高品質的) ，然後在未啟用 MFA 時，依照 [為使用者設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) 中的步驟進行。 這可確保使用者的認證不會透過其他方式公開 (例如網路釣魚或密碼重複使用) 。
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
@@ -196,7 +197,7 @@ ms.locfileid: "49663640"
 
 只有在竊取或破壞使用者的帳戶之後，攻擊者才會使用這些規則和表單攻擊。 因此，避免對您的組織使用這些入侵的第一步，是要積極保護您的使用者帳戶。 一些最常見的帳戶破壞方式是透過網路釣魚或 [密碼 spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) 攻擊。
 
-保護使用者帳戶的最佳方法（特別是管理員帳戶）是為 [使用者設定多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。 您也應該：
+保護使用者帳戶的最佳方法（特別是管理員帳戶）是為 [使用者設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。 您也應該：
 
 - 監視如何 [存取及使用](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)您的使用者帳戶。 您可能不會防止初始遭到破壞，但是您會儘早偵測，以縮短破壞的持續時間和破壞影響。 您可以使用這些 [Office 365 雲端 App 安全性原則](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) ，監控不尋常活動的帳戶和警示：
 

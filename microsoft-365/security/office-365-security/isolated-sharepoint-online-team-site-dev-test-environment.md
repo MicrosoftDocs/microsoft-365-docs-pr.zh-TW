@@ -8,7 +8,6 @@ manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
@@ -16,16 +15,23 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要：設定與 Microsoft 365 開發/測試環境中組織的其他部分隔離的 SharePoint 線上小組網站。
-ms.openlocfilehash: 6e056cd1d930d13e1ae20f8f8d0cdc9aa886f17e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 103ba1ddb2b5123db80be91f40c4fce8c6e2eb3d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616485"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286606"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>獨立的 SharePoint Online 小組網站開發/測試環境
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 方案1](office-365-atp.md)
+- SharePoint Online 
 
 
  **摘要：** 設定與 Microsoft 365 開發/測試環境中組織的其他部分隔離的 SharePoint 線上小組網站。
@@ -57,16 +63,16 @@ SharePoint 線上小組網站的存取權，以及使用者可以執行的工作
 
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>階段1：組建小型或模擬的企業 Microsoft 365 開發/測試環境
 
-如果您只想以輕量的方式建立隔離的 SharePoint Online 小組網站，請遵循 [輕量基本](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)設定的階段2和3中的指示。
+如果您只想以輕量的方式建立隔離的 SharePoint Online 小組網站，請遵循 [輕量基本](../../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md)設定的階段2和3中的指示。
 
-如果您想要在模擬的企業設定中建立隔離的 SharePoint Online 小組網站，請遵循 [Microsoft 365 測試環境的密碼雜湊同步](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)處理指示。
+如果您想要在模擬的企業設定中建立隔離的 SharePoint Online 小組網站，請遵循 [Microsoft 365 測試環境的密碼雜湊同步](../../enterprise/password-hash-sync-m365-ent-test-environment.md)處理指示。
 
 > [!NOTE]
 > 建立隔離的 SharePoint 線上網站不需要模擬的企業開發/測試環境，其中包括連線至網際網路的模擬內部網路與目錄同步處理，以及 Active Directory 網域服務 (AD DS) 樹系的目錄同步處理。 這裡是以選項形式提供，可讓您測試隔離的 SharePoint Online 網站，並在代表一般組織的環境中進行嘗試。
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>階段2：建立使用者帳戶和存取群組
 
-使用 [[連線至 Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell) 中的指示，從您的全域系統管理員帳戶連接到您的試用訂閱：
+使用 [[連線至 Office 365 PowerShell](../../enterprise/connect-to-microsoft-365-powershell.md) 中的指示，從您的全域系統管理員帳戶連接到您的試用訂閱：
 
 - 您的電腦 (用於羽量級 Microsoft 365 開發/測試環境) 。
 
@@ -287,10 +293,10 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 [獨立的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)
 
-[雲端採用測試實驗室指南 (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[雲端採用測試實驗室指南 (TLG)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[模擬企業基本設定](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
+[模擬企業基本設定](../../enterprise/simulated-ent-base-configuration-microsoft-365-enterprise.md)
 
-[輕量型基本組態](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
+[輕量型基本組態](../../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md)
 
-[雲端採用和混合式解決方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Microsoft 365 解決方案與架構中心](../../solutions/index.yml)

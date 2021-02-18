@@ -15,21 +15,21 @@ ms.custom:
 description: 在本文中，您將瞭解 Microsoft Exchange Online Protection (EOP) 系統管理員可以使用的報告和疑難排解工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86c9eb0ee050c4c1a40ef7f29ea3d01dc202be9a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 783c7ea0aca47c805daf66592b401a98f739d071
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166672"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288076"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的報告和郵件追蹤
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 在包含 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP 提供許多不同的報告，可協助您判斷貴組織的整體狀態與健康情況) EOP。 還有可協助您疑難排解特定事件 (例如郵件未抵達其預定收件者) 的工具，以及有助於符合規範需求的稽核報告。
 
@@ -45,13 +45,13 @@ ms.locfileid: "50166672"
 
 如需詳細資訊，請參閱下列資源：
 
-- [Admin center 中的 microsoft 365 報告-Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Admin center 中的 microsoft 365 報告-Microsoft 365 群組](../../admin/activity-reports/office-365-groups.md)
 
-- [系統管理中心的 Microsoft 365 報告-電子郵件活動](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
+- [系統管理中心的 Microsoft 365 報告-電子郵件活動](../../admin/activity-reports/email-activity.md)
 
-- [系統管理中心的 Microsoft 365 報告-電子郵件應用程式使用方式](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
+- [系統管理中心的 Microsoft 365 報告-電子郵件應用程式使用方式](../../admin/activity-reports/email-apps-usage.md)
 
-- [系統管理中心的 Microsoft 365 報告-信箱使用量](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
+- [系統管理中心的 Microsoft 365 報告-信箱使用量](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心中的安全性 & 符合性報告
 

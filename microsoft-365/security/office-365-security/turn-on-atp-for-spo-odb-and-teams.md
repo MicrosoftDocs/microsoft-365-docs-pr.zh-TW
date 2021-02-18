@@ -1,5 +1,5 @@
 ---
-title: 開啟 Microsoft Defender for Office 365-SharePoint、OneDrive、& 團隊
+title: 開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -8,7 +8,6 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,28 +16,34 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: 了解如何開啟適用於 SharePoint、OneDrive 和 Teams 的 ATP，包括如何為偵測到的檔案設定警示。
+description: 系統管理員可以瞭解如何為 SharePoint、OneDrive 和 Microsoft 團隊開啟安全附件，包括如何設定偵測到之檔案的警示。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 44d487810156d5de5ae152e08040e8dccd2a4ee0
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 9688af82d194b1818d6bd3323d39bde51db20cb2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682588"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286366"
 ---
-# <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 與 Microsoft Teams 的 ATP
+# <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-適用于 SharePoint、OneDrive 和 Microsoft 團隊的 microsoft Defender for Office 365，可防止您的組織意外共用惡意檔案。 如需詳細資訊，請參閱 [SharePoint、OneDrive 和 Microsoft 小組的 ATP](atp-for-spo-odb-and-teams.md)。
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-本文包含啟用及設定 SharePoint、OneDrive 和 Microsoft 小組之 ATP 的步驟。
+適用于 SharePoint、OneDrive 和 Microsoft 團隊的 microsoft Defender for Office 365，可防止您的組織意外共用惡意檔案。 如需詳細資訊，請參閱 [SharePoint、OneDrive 和 Microsoft 小組的安全附件](atp-for-spo-odb-and-teams.md)。
+
+本文包含啟用及設定 SharePoint、OneDrive 和 Microsoft 小組安全附件的步驟。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 您要在 <https://protection.office.com> 開啟安全性與合規性中心。 若要直接移至 [ **ATP 安全附件** ] 頁面，請開啟] <https://protection.office.com/safeattachmentv2> 。
 
-- 若要為 SharePoint、OneDrive 和 Microsoft 團隊開啟 ATP，您必須是 [安全性 & 規範中心] 中「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+- 若要開啟 SharePoint、OneDrive 和 Microsoft 小組的安全附件，您必須是 [安全性 & 規範中心] 中「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 若要使用 SharePoint 線上 PowerShell 以避免人員下載惡意檔案，您必須是 [全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 的成員或 Azure AD 中 [SharePoint 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) 角色。
 
@@ -46,17 +51,17 @@ ms.locfileid: "49682588"
 
 - 允許最多30分鐘的設定才會生效。
 
-## <a name="step-1-use-the-security--compliance-center-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>步驟1：使用安全性 & 合規性中心開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP
+## <a name="step-1-use-the-security--compliance-center-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>步驟1：使用安全性 & 合規性中心開啟 SharePoint、OneDrive 和 Microsoft 小組的安全附件
 
 1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，然後按一下 [ **通用設定**]。
 
-2. 在 [ **全域設定** ] 中顯示的 [飛出] 中，移至 [ **開啟 ATP] SharePoint、[OneDrive] 和 [Microsoft 小組** ] 設定。 將切換移至右 ![ 切換開啟， ](../../media/scc-toggle-on.png) 以開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP。
+2. 在 [ **全域設定** ] 中顯示的 [飛出] 中，移至 [ **開啟 Office 365 的 Defender]，以取得 SharePoint、OneDrive 和 Microsoft 團隊** 設定。 將切換移至右 ![ 開啟開啟 ](../../media/scc-toggle-on.png) 以開啟 SharePoint、OneDrive 和 Microsoft 小組的安全附件。
 
-   完成後，按一下 [儲存]。
+   完成後，按一下 **[儲存]**。
 
-### <a name="use-exchange-online-powershell-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>使用 Exchange Online PowerShell 開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP
+### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>使用 Exchange Online PowerShell 開啟 SharePoint、OneDrive 和 Microsoft 小組的安全附件
 
-如果您不想使用 PowerShell 開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP，請連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 並執行下列命令：
+如果您不想使用 PowerShell 開啟 SharePoint、OneDrive 和 Microsoft 小組的安全附件，請連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) ，然後執行下列命令：
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
@@ -83,7 +88,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 ## <a name="step-3-recommended-use-the-security--compliance-center-to-create-an-alert-policy-for-detected-files"></a>建議的步驟 3 () 使用安全性 & 合規性中心建立偵測到的檔案的警示原則
 
-您可以建立警示原則，當 SharePoint、OneDrive 和 Microsoft 小組偵測到惡意檔案時，通知您及其他系統管理員。 若要深入瞭解提醒，請參閱 [在安全性 & 規範中心建立活動警示](../../compliance/create-activity-alerts.md)。
+您可以建立警示原則，當 SharePoint、OneDrive 和 Microsoft 小組的安全附件偵測到惡意檔案時，通知您及其他系統管理員。 若要深入瞭解提醒，請參閱 [在安全性 & 規範中心建立活動警示](../../compliance/create-activity-alerts.md)。
 
 1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，移至 [ **警示** \> **警示原則** ] 或 [開啟] <https://protection.office.com/alertpolicies> 。
 
@@ -132,9 +137,9 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
-- 若要確認您是否已成功為 SharePoint、OneDrive 和 Microsoft 團隊開啟 ATP，請使用下列其中一個步驟：
+- 若要確認您是否已成功開啟 SharePoint、OneDrive 和 Microsoft 小組的安全附件，請使用下列其中一個步驟：
 
-  - 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，選取 [ **通用設定**]，然後確認 [ **開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP** ] 設定的值。
+  - 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，選取 [ **通用設定**]，然後確認 [ **開啟 Office 365 的 Defender]，以取得 SharePoint、OneDrive 和 Microsoft 小組** ] 設定的值。
 
   - 在 Exchange Online PowerShell 中，執行下列命令來驗證屬性設定：
 

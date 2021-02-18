@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: reference
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
@@ -19,16 +18,22 @@ ms.collection:
 - M365-security-compliance
 description: 深入瞭解 SharePoint 線上如何在使用者上傳的檔案中偵測病毒，並防止使用者下載或同步處理檔案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f774c9afd0988c504d6207b0e71ee9561312e6b4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f0eafb9e5e2f0c9d86791fe83931276e420afcd9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844233"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286498"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive 和 Microsoft 團隊中內建的病毒防護
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**適用於**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
 
 Microsoft 365 使用常見的病毒偵測引擎，掃描使用者上傳至 SharePoint 線上、OneDrive 和 Microsoft 小組的檔案。 這種保護包含在 SharePoint 線上、OneDrive 和 Microsoft 小組的所有訂閱中。
 
@@ -67,8 +72,10 @@ OneDrive 同步處理用戶端將不會下載含有病毒的檔案。 同步處�
 
 ## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>使用 Microsoft Defender for Office 365 的延伸功能
 
-包含 [Microsoft Defender For Office 365](office-365-atp.md) 的 microsoft 365 組織在其訂閱中或以附加元件形式購買，可為 SharePoint、OneDrive 和 Microsoft 團隊啟用 ATP，以增強報表與保護。 如需詳細資訊，請參閱 [SharePoint、OneDrive 和 Microsoft 小組的 ATP](atp-for-spo-odb-and-teams.md)。
+包含 [Microsoft Defender For Office 365](office-365-atp.md) 的 microsoft 365 組織，包含在其訂閱中或以附加元件形式購買，可為 SharePoint、OneDrive 和 Microsoft 團隊啟用安全附件，以增強報表與保護。 如需詳細資訊，請參閱 [SharePoint、OneDrive 和 Microsoft 小組的安全附件](atp-for-spo-odb-and-teams.md)。
 
-## <a name="more-information"></a>其他資訊
+## <a name="related-articles"></a>相關文章
 
-如需 SharePoint 線上、OneDrive 和 Microsoft 小組的防病毒相關資訊，請參閱 [防範威脅](protect-against-threats.md) 及 [開啟 SharePoint、OneDrive 及 MICROSOFT 小組的 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
+[Microsoft 365 中的惡意程式碼和勒索軟體防護](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)
+
+如需 SharePoint 線上、OneDrive 和 Microsoft 小組的防病毒相關資訊，請參閱 [防範威脅](protect-against-threats.md) 及 [開啟 SharePoint、OneDrive 及 Microsoft 小組的安全附件](turn-on-atp-for-spo-odb-and-teams.md)。

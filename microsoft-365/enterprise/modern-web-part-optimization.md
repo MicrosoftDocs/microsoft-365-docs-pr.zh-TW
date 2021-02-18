@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 瞭解如何使用頁面診斷，在 SharePoint 線上新式網站頁面中優化網頁元件的效能。
-ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519748"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287146"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式網站頁面中最佳化網頁組件效能
 
@@ -56,13 +56,16 @@ SharePoint Online 新式網站頁面包含網頁組件，對整體頁面載入�
 
 結果中提供的資訊包括：
 
-- [製作者] 顯示網頁組件是自訂或 Microsoft OOTB
-- [名稱和識別碼] 顯示可協助您在頁面上尋找網頁組件的識別資訊
-- [總計] 顯示網頁組件載入的時間總計
-- [模組載入] 顯示提取和載入網頁組件元件所需的時間
-- [消極式載入] 顯示在頁面主要區段中未顯示網頁元件的延遲載入時間
-- [初始] 顯示網頁元件初始化所需的時間
-- [轉譯] 顯示網頁元件提取及轉譯結果所需的時間
+- 會 **顯示網頁** 元件是自訂或 Microsoft OOTB。
+- **名稱和識別碼** 會顯示識別資訊，可協助您尋找頁面上的網頁元件。
+- **Total** 顯示網頁元件對模組載入、初始化及呈現的總時間。 它是網頁元件在頁面上呈現的總的相對時間（從開始到結尾）。
+- **模組載入** 顯示下載、評估和載入副檔名 JAVASCRIPT 和 CSS 檔案所需的時間。 接著，它會啟動 Init 處理常式。
+- **Lazy Load** 顯示在頁面主要區段中，未看到的延遲載入網頁元件的時間。 在某些情況下，您可能會呈現太多網頁元件，而且會進行佇列以進行轉譯，以盡可能縮短頁面載入時間。
+- **Init** 顯示網頁元件初始化資料所花費的時間。
+    這是一項非同步呼叫和 init 時間是指當傳回的承諾得以解決時，onInit 函式的時間計算。
+- **Render** 顯示在模組載入和 Init 完成之後，呈現 UI (使用者介面) 所花費的時間。
+    在 [檔 (] 頁面) 中裝入 DOM 的 JavaScript 執行時間。
+    非同步資源的呈現（例如影像）可能需要額外的時間才能完成。
 
 系統會提供此資訊，協助設計人員和開發人員對問題進行疑難排解。 此資訊應提供給您的設計和開發小組。
 

@@ -20,21 +20,21 @@ search.appverid:
 description: 了解如何使用可用工具辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a34780b260a6e4bbc2d8b3f53af6b67de04fbdcd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1bbd607386b49b45ebd7444c4a91d05e4cee475b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166660"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288606"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>回應遭入侵的電子郵件帳戶
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **摘要** 了解如何辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
 
@@ -90,7 +90,7 @@ ms.locfileid: "50166660"
 
 ### <a name="step-1-reset-the-users-password"></a>步驟 1 重設使用者的密碼
 
-遵循[重設某人的商務密碼](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password)中的程序進行。
+遵循[重設某人的商務密碼](../../admin/add-users/reset-passwords.md#reset-my-admin-password)中的程序進行。
 
 > [!IMPORTANT]
 >
@@ -104,7 +104,7 @@ ms.locfileid: "50166660"
 >
 > - 務必更新應用程式密碼。 使用者帳戶密碼重設時，應用程式密碼未自動撤銷。 使用者應該刪除現有的應用程式密碼，並建立新密碼。 如需指示，請參閱[從其他安全性驗證頁面建立和刪除應用程式密碼](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)。
 >
-> - 我們強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。 若要深入了解 MFA，請至 [設定多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
+> - 我們強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。 若要深入了解 MFA，請至 [設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步驟 2 移除可疑的電子郵件轉寄地址
 

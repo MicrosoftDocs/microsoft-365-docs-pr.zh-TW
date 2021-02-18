@@ -19,21 +19,21 @@ ms.custom:
 description: 瞭解 Microsoft 365 如何使用寄件者原則框架 (的 SPF) TXT 記錄，以確保目的地電子郵件系統信任從您的自訂網域傳送的郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6b79957f84e660fe952f88dab18d8934937d875
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: daf170339f4a218c404114f9c82b1d465779100d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167524"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286861"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 如何使用寄件者原則架構 (SPF) 來防止詐騙
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **摘要：** 本文說明 Microsoft 365 如何使用 DNS 中的寄件者原則框架 (SPF) TXT 記錄，以確保目的地電子郵件系統信任從您的自訂網域傳送的郵件。 這適用于從 Microsoft 365 傳送的輸出郵件。 從 Microsoft 365 傳送給 Microsoft 365 內之收件者的郵件，將永遠會透過 SPF。
 
@@ -139,7 +139,7 @@ v=spf1 include:spf.protection.outlook.com -all
 
 使用本文中的語法資訊，構成自訂網域的 SPF TXT 記錄。 雖然還有其他此處未提及的語法選項，以下是最常使用的選項。 一旦您已形成記錄，您需要在網域註冊機構中更新記錄。
 
-如需您需要在 Microsoft 365 中包含的網域相關資訊，請參閱 [SPF 所需的外部 DNS 記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 使用[逐步指示](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam)來更新您網域註冊機構的 SPF (TXT) 記錄。
+如需您需要在 Microsoft 365 中包含的網域相關資訊，請參閱 [SPF 所需的外部 DNS 記錄](../../enterprise/external-domain-name-system-records.md)。 使用[逐步指示](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md#add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online)來更新您網域註冊機構的 SPF (TXT) 記錄。
 
 ### <a name="spf-txt-record-syntax-for-microsoft-365"></a>Microsoft 365 的 SPF TXT 記錄語法
 <a name="SPFSyntaxO365"> </a>
@@ -164,7 +164,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
 
 - 「IP 位址」是您要新增至 SPF TXT 記錄的 IP 位址。 通常，這是貴組織的外寄郵件伺服器的 IP 位址。 您可以列出多個外寄郵件伺服器。 如需詳細資訊，請參閱 [範例：多個輸出內部部署郵件伺服器和 Microsoft 365 的 SPF TXT 記錄](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365)。
 
-- 「網域名稱」是您要新增為合法寄件者的網域。 如需您應為 Microsoft 365 包含的功能變數名稱清單，請參閱 [SPF 所需的外部 DNS 記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。
+- 「網域名稱」是您要新增為合法寄件者的網域。 如需您應為 Microsoft 365 包含的功能變數名稱清單，請參閱 [SPF 所需的外部 DNS 記錄](../../enterprise/external-domain-name-system-records.md)。
 
 - 強制規則通常為下列其中一項：
 
@@ -256,6 +256,4 @@ cust-spf.exacttarget.com
 ## <a name="for-more-information"></a>如需詳細資訊
 <a name="SPFTroubleshoot"> </a>
 
-需要新增 SPF TXT 記錄的說明嗎？ 閱讀此文章 [：在任何 dns 主機服務提供者（適用于 microsoft 365）上建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) ，以取得與 microsoft 365 中的自訂網域使用的寄件者原則架構的詳細資訊。 [反垃圾郵件訊息標頭](anti-spam-message-headers.md) 包含 Microsoft 365 用於 SPF 檢查的語法及標頭欄位。
-
-
+需要新增 SPF TXT 記錄的說明嗎？ 閱讀此文章 [：在任何 dns 主機服務提供者（適用于 microsoft 365）上建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md#add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online) ，以取得與 microsoft 365 中的自訂網域使用的寄件者原則架構的詳細資訊。 [反垃圾郵件訊息標頭](anti-spam-message-headers.md) 包含 Microsoft 365 用於 SPF 檢查的語法及標頭欄位。

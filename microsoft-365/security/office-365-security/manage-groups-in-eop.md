@@ -15,19 +15,19 @@ ms.custom:
 description: Admins in 獨立 Exchange Online Protection (EOP) 組織可以瞭解如何建立、修改及移除 Exchange 系統管理中心內的通訊群組和擁有郵件功能的安全性群組 (EAC) 和獨立 Exchange Online Protection (EOP) PowerShell。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01fe5c6ab1555749d38f9c092b05aca9befb67fe
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d03b8a5129eb3b070f30de46b9b9c7bcc8e9898d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166960"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286798"
 ---
 # <a name="manage-groups-in-eop"></a>管理 EOP 中的群組
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
--  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection 獨立](exchange-online-protection-overview.md)
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，您可以建立、修改及移除下列類型的群組：
 
@@ -56,7 +56,7 @@ ms.locfileid: "50166960"
 - 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
-> 有問題嗎？ 在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇中尋求協助。
+> 有問題嗎？ 在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 論壇中尋求協助。
 
 ## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>使用 Exchange 系統管理中心來管理通訊群組
 
@@ -102,7 +102,7 @@ ms.locfileid: "50166960"
 
 3. 在開啟的 [通訊群組內容] 頁面上，按一下下列其中一個索引標籤，以查看或變更屬性。
 
-   完成後，按一下 [儲存 **]**。
+   完成後，按一下 **[儲存]**。
 
 #### <a name="general"></a>一般
 

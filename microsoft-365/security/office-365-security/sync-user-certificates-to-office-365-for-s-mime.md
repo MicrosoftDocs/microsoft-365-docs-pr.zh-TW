@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 12/09/2016
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何在 Exchange Online 中傳送與 S/MIME 保護的郵件，然後再將適當的憑證發佈到 Office 365。
-ms.openlocfilehash: 3551dbacc3cc6279d319860f1133d059216ae591
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 8c6d3968d617bcb503057c47567182091010c726
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202100"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "50290198"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>將使用者憑證同步至 Office 365 進行 S/MIME 處理
 

@@ -13,25 +13,25 @@ ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 深入瞭解獨立 Exchange Online Protection 中的工作所需的許可權
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f1f364e684f2d1d76f26f573e66fbd50bf5138b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 9c24c6f57ea9a7c0e1b3332d2f4b518b232ec0c2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167392"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288296"
 ---
 # <a name="permissions-in-standalone-eop"></a>獨立版 EOP 中的權限
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
--  [Exchange Online Protection 獨立](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection 獨立](exchange-online-protection-overview.md)
 
 獨立 Exchange Online Protection (EOP) 沒有 Exchange Online 信箱時，會使用以角色為基礎的存取控制 (RBAC) 許可權模型，以輕鬆授與許可權給您的系統管理員。 您可以使用獨立 EOP 中的許可權功能，快速地讓新組織正常運作。
 
 若要授與許可權給使用者，請參閱 [管理 EOP 中的系統管理員角色群組](manage-admin-role-group-permissions-in-eop.md)。
 
-如需跨 Microsoft 365 之許可權的詳細資訊，請參閱 [關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+如需跨 Microsoft 365 之許可權的詳細資訊，請參閱 [關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="role-based-permissions"></a>角色型權限
 
@@ -129,7 +129,7 @@ ms.locfileid: "50167392"
 > [!NOTE]
 > 您用來建立獨立 EOP 組織的帳戶會自動指派給全域系統管理員角色。
 
-下表列出 Microsoft 365 角色和其對應的獨立 EOP 角色群組。 如需這些角色的相關資訊，請參閱 [關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+下表列出 Microsoft 365 角色和其對應的獨立 EOP 角色群組。 如需這些角色的相關資訊，請參閱 [關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ****
 
@@ -143,7 +143,7 @@ ms.locfileid: "50167392"
 |安全性讀取者|SecurityReader|
 |
 
-其他 Microsoft 365 角色沒有對應的 EOP 角色群組，也不會授與 EOP 中的管理許可權。 如需將 Microsoft 365 角色指派給使用者的詳細資訊，請參閱 [指派系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。
+其他 Microsoft 365 角色沒有對應的 EOP 角色群組，也不會授與 EOP 中的管理許可權。 如需將 Microsoft 365 角色指派給使用者的詳細資訊，請參閱 [指派系統管理員角色](../../admin/add-users/assign-admin-roles.md)。
 
 使用者可以在 EOP 中授與系統管理許可權，而不需將其新增至 Microsoft 365 角色。 您可以將使用者新增為 EOP 角色群組的成員來執行此動作。 使用者將在 EOP 中取得許可權，但不會取得其他 Microsoft 365 工作負載中的許可權。
 

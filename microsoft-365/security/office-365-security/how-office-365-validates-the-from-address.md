@@ -19,21 +19,21 @@ description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Ou
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7c2cbec49082fbded857dde13f73516fd3e0fd5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: f8ced200c2e521533c1dec8a9d0917add7ca058f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167512"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287816"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP 如何驗證寄件者位址以避免網路釣魚
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 網路釣魚攻擊是對任何電子郵件組織造成的持續威脅。 除了使用 [冒牌 (偽造) 寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Exchange Online Protection (EOP) 和 Outlook.com 現在要求輸入郵件包含與 RFC 相容的來源位址（如本文所述）。 此強制已于2017年11月啟用。
 
@@ -58,7 +58,7 @@ ms.locfileid: "50167512"
 - **顯示名稱**：說明電子郵件地址擁有者的選用片語。
 
   - 建議您永遠以雙引號括住顯示名稱 ( ") 如圖所示。 如果顯示名稱包含逗號，則 _必須_ 在每個 RFC 5322 的雙引號內加上單引號。
-  - 如果 [寄件者] 位址包含顯示名稱，則 EmailAddress 值必須括在角括弧 ( # A2) （如圖所示）。
+  - 如果 [寄件者] 位址包含顯示名稱，則 EmailAddress 值必須用角括弧括住 (< >) 如圖所示。
   - Microsoft 強烈建議您在顯示名稱和電子郵件地址之間插入空格。
 
 - **EmailAddress**：電子郵件地址使用下列格式 `local-part@domain` ：

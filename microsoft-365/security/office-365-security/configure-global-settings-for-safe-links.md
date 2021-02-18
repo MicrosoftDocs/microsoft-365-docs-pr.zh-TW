@@ -18,20 +18,20 @@ ms.collection:
 description: 系統管理員可以瞭解如何查看和設定全域設定 (「封鎖下列 URLs」清單和 Office 365 應用程式的保護) ，以取得 Microsoft Defender for Office 365 中的安全連結。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 885fe6a06cce054bea6d6f20c24c5c1f2a159c07
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d52a4dc5ed35ec73c1410d6428a581b098bf2c52
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165724"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287458"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>設定 Microsoft Defender for Office 365 中安全連結的全域設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](office-365-atp.md) 的商務客戶。 如果您是尋找 Outlook 中 Safelinks 相關資訊的家用使用者，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
@@ -63,7 +63,7 @@ ms.locfileid: "50165724"
 
   **附註**：
 
-  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 如需安全連結之全域設定的建議值，請參閱 [安全連結設定](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)。
@@ -82,7 +82,7 @@ ms.locfileid: "50165724"
 
 3. 設定一或多個專案，如 ["封鎖下列 URLs 的專案語法](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)中所述] 清單。
 
-   完成後，按一下 [儲存 **]**。
+   完成後，按一下 **[儲存]**。
 
 ### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>設定 PowerShell 中的「封鎖下列 URLs」清單
 
@@ -131,7 +131,7 @@ Office 365 應用程式的安全連結保護適用于支援的 Office desktop、
 
    - **不要讓使用者點擊 [安全連結] 原始 URL**：確認切換是向右，以防止使用者在支援的 Office 365 應用程式中按一下原始的封鎖 URL： ![ 開啟 ](../../media/scc-toggle-on.png) 。
 
-   完成後，按一下 [儲存 **]**。
+   完成後，按一下 **[儲存]**。
 
 ### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>在 PowerShell 中設定 Office 365 應用程式的安全連結保護
 

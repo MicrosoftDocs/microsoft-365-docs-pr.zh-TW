@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f2fae1e41562d1ae743ecd964b42082b3d6486e8
-ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
+ms.openlocfilehash: 423a65e60ccd11ab7e9fd78ef3b7983ba0c609c2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50031348"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288714"
 ---
 # <a name="compliance"></a>合規性
 
@@ -34,9 +34,10 @@ Microsoft 受管理的桌面已達到下列認證：
 - [雲端安全性聯盟 (CSA) STAR 證明](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
 - [雲端安全性聯盟 (CSA) STAR 認證](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [服務組織控制 (SOC) 1、2、3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [資訊安全性註冊 Assessor 程式 (IRAP) ](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 - [支付卡行業 (PCI) 資料安全標準 (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 - [健康保險流通與責任法案 (HIPAA) ](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [資訊安全性註冊 Assessor 程式 (IRAP) ](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+- [狀況資訊信任同盟 (HITRUST) 常見的安全性架構 (CSF) ](https://docs.microsoft.com/compliance/regulatory/offering-hitrust)
 
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>審計員報告和合規性憑證

@@ -8,18 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在 Microsoft 合作夥伴和轉銷商的 Microsoft 365 中，查看有關委派管理工作的常見問題及解答。
-ms.openlocfilehash: 6729f276e6afea83568ca59d3bf48c08fcd837d2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 971572f8bff80da6dd63bed8958112332292feb9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203140"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288356"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常見問題集
 
@@ -38,7 +39,7 @@ ms.locfileid: "48203140"
 
 2. 註冊委派管理。 在您開始管理客戶的承租人之前，必須以委派的管理員身分授權您。 若要取得他們的核准，您必須先 [傳送給他們，以取得委派管理的服務](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e)。 您也可以稍後為客戶提供委派管理。
 
-3. 使用 [新增、變更或刪除訂閱顧問合作夥伴](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)中的步驟，建立委派的系統管理員帳戶。
+3. 使用 [新增、變更或刪除訂閱顧問合作夥伴](../../admin/misc/add-partner.md)中的步驟，建立委派的系統管理員帳戶。
 
 請造訪協力廠商 [：組建您的商務和管理合作夥伴訂閱](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) ，以取得如何設定委派管理的詳細資訊。
 

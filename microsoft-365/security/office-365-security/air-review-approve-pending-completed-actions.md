@@ -19,12 +19,12 @@ description: 深入瞭解 Microsoft Defender for Office 365 方案2中自動調�
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: 3fb77fa41ff3e9af995cf80b9f4024aa92a51212
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: a11e9ee6a4c2426951fe2b4aa4f2dd08d1931f1c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176012"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287110"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在 Office 365 中複查及管理修正動作
 
@@ -37,8 +37,8 @@ ms.locfileid: "50176012"
 除非安全運作小組批准，否則不會採取這些修復動作。 我們建議您儘快檢查及核准任何擱置的動作，以便您的自動化調查能夠及時完成。 在某些情況下，您可以復原修復動作。
 
 **適用於**
-- [Microsoft Defender for Office 365 方案2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [適用於 Office 365 的 Microsoft Defender 方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ## <a name="approve-or-reject-pending-actions"></a>核准 (或拒絕) 擱置的動作
 
@@ -74,6 +74,6 @@ ms.locfileid: "50176012"
 - [使用威脅瀏覽器](threat-explorer.md)
 - [如何在自動化調查和回應功能中報告誤報/負片](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在 Office 365 中查看自動調查的詳細資料和結果](air-view-investigation-results.md)

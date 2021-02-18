@@ -21,20 +21,20 @@ ms.custom:
 description: 適用於 Office 365 的 Microsoft Defender 包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7624b9a62530e54a161bbc4aacc8bee56ed959b2
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 741b00a55ee73d16c82abd4806d06660d49be65b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150721"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287662"
 ---
 # <a name="microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 的商務客戶。 如果您使用 Outlook.com、Microsoft 365 家用版或 Microsoft 365 個人版，並且在尋找 Outlook 中的安全連結或安全附件的相關資訊，請參閱[適用於 Microsoft 365 訂閱者的進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
@@ -92,7 +92,7 @@ ms.locfileid: "50150721"
 
 - [安全文件](safe-docs.md)功能僅可供具備 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權 (未包含在適用於 Office 365 的 Microsoft Defender 方案中) 的使用者使用。
 
-- 如果您目前的訂閱未包含適用於 Office 365 的 Microsoft Defender，請[與銷售人員連絡以開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，並了解適用於 Office 365 的 Defender 如何能幫助您的組織。
+- 如果您目前的訂閱未包含適用於 Office 365 的 Microsoft Defender，請[與銷售人員連絡以開始試用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)，並了解適用於 Office 365 的 Defender 如何能幫助您的組織。
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>設定適用於 Office 365 的 Microsoft Defender 原則
 
@@ -149,7 +149,7 @@ ms.locfileid: "50150721"
 
 |角色或角色群組|可深入了解的資源|
 |---|---|
-|全域系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派)|[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|全域系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派)|[關於 Microsoft 365 系統管理員角色](../../admin/add-users/about-admin-roles.md)|
 |安全性系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派)|[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online 組織管理 (這是在 Exchange Online 中指派)|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |搜尋和清除 (僅能在安全性與合規性中心指派)|[安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|

@@ -8,19 +8,20 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: 在 Microsoft Outlook 中傳送或回覆 S/MIME 加密郵件的實作方式，與非加密郵件十分相似。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 457ab8d4f494759443b21950615b1ae2853ee3d9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 23083aa42687476f58463b508b56e8317b13c3d4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202660"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "50288416"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>在 Exchange Online 中傳送和接收 S/MIME 已簽署和加密的電子郵件
 

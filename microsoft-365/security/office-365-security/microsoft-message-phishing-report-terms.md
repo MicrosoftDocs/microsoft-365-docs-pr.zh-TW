@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
-ms.openlocfilehash: a6c28bad5b79bc7459a1a00fabb6713b1759201d
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 2b2b8a6215a653cee7ea67bafaadddc096abb911
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032685"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288154"
 ---
 # <a name="microsoft-report-message-and-report-phishing-add-in-license-terms"></a>Microsoft Report Message 和 Report 仿冒 Add-In 授權條款
 
@@ -42,11 +42,11 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
     1. **General.** You may install and use any number of copies of the software.
     1. **Third Party Software.** 本軟體可能包含 Microsoft，而非協力廠商的協力廠商應用程式，此為您下的合約授權。 針對協力廠商應用程式所包含的任何通知僅適用于您的資訊。
-    1. **Microsoft 服務合約。** 軟體的某些功能可提供或依賴線上服務的存取權。 使用這些服務 (但不是軟體) ，由 Microsoft 服務合約中的個別條款和隱私權原則所制約 [https://go.microsoft.com/fwlink/?linkid=398923](https://go.microsoft.com/fwlink/?linkid=398923) 。 請閱讀。 所有地區都無法使用這些服務。
+    1. **Microsoft 服務合約。** 軟體的某些功能可提供或依賴線上服務的存取權。 使用這些服務 (但不是軟體) ，由 Microsoft 服務合約中的個別條款和隱私權原則所制約 <https://www.microsoft.com/servicesagreement/> 。 請閱讀。 所有地區都無法使用這些服務。
 
-2. **DATA COLLECTION.** 軟體可能會收集有關您和您使用軟體的資訊，並將其傳送給 Microsoft。 Microsoft 可能會利用此資訊提供服務，並改善 Microsoft 的產品和服務。 產品檔中會描述您的自願退出權利（如果有的話）。 軟體中的某些功能可讓您的應用程式使用者收集資料，以存取或使用軟體。 
+2. **DATA COLLECTION.** 軟體可能會收集有關您和您使用軟體的資訊，並將其傳送給 Microsoft。 Microsoft 可能會利用此資訊提供服務，並改善 Microsoft 的產品和服務。 產品檔中會描述您的自願退出權利（如果有的話）。 軟體中的某些功能可讓您的應用程式使用者收集資料，以存取或使用軟體。
 
-    如果您使用這些功能在您的應用程式中啟用資料收集，您必須遵守適用的法律，包括取得任何必要的使用者同意，並維護正確的隱私權原則，以準確告知使用者您使用、收集和共用其資料的方式。 您可以深入瞭解 Microsoft 的資料收集，並使用產品檔和 Microsoft 隱私權聲明 [https://go.microsoft.com/fwlink/?LinkId=512132](https://go.microsoft.com/fwlink/?LinkId=512132) 。 您同意遵守 Microsoft 隱私權聲明的所有適用條款。
+    如果您使用這些功能在您的應用程式中啟用資料收集，您必須遵守適用的法律，包括取得任何必要的使用者同意，並維護正確的隱私權原則，以準確告知使用者您使用、收集和共用其資料的方式。 您可以深入瞭解 Microsoft 的資料收集，並使用產品檔和 Microsoft 隱私權聲明 <https://privacy.microsoft.com/privacystatement> 。 您同意遵守 Microsoft 隱私權聲明的所有適用條款。
 
 3. **SCOPE OF LICENSE.** The software is licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
     1. work around any technical limitations in the software that only allow you to use it in certain ways;

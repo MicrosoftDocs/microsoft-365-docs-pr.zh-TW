@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 請以外部的寄件者的身分瞭解，如何提高將電子郵件傳遞給 Microsoft 365 中使用者的能力。 此外，還會瞭解如何以外部使用者的身分嘗試報告垃圾郵件 & 網路釣魚嘗試。
-ms.openlocfilehash: 0c0a981d12fa5b8159789a69597f83eb15d9b194
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 4869b0f02415b3802b34625789817068cbe14c57
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196794"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "50286570"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>將郵件傳送至 Microsoft 365
 

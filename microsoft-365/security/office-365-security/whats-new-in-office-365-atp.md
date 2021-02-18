@@ -21,30 +21,30 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3544f1ccb760c461b7ab72c6dc037fd653136db9
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 5934abb3afec3253da78c680735730b63ddb5701
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988157"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287350"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-適用於：
-
-- [適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
+**適用於**
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 本文列出最新版本 Microsoft Defender for Office 365 的新功能。 目前在預覽中的功能會以 **(預覽)** 表示。
 
 > [!TIP]
-> 還沒有 Microsoft Defender for Office 365 嗎？ [連絡人銷售人員開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
+> 還沒有 Microsoft Defender for Office 365 嗎？ [連絡人銷售人員開始試用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)。
 
 ## <a name="december-2020"></a>2020 年 12 月
 
 - [Office 365 中預設的安全性](secure-by-default.md)
+- 自動化調查改進功能：手動觸發電子郵件調查的一般提醒、將信箱變更視為個別實體類別、移除重複的 URL 封鎖動作，以及建立使用者已遭破壞調查的輸出電子郵件群集。
 
 ## <a name="november-2020"></a>2020 年 11 月
 
@@ -113,7 +113,7 @@ ms.locfileid: "49988157"
 
 您知道 Microsoft Defender for Office 365 可提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 

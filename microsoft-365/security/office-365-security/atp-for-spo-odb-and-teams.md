@@ -23,20 +23,20 @@ ms.custom:
 description: 深入瞭解 Microsoft Defender for Office 365，以瞭解 SharePoint Online 中的檔案、商務 OneDrive，以及 Microsoft 團隊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 640867cb38dab650bca990fe36c0b7cea7f6a0d8
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: ce73e1fd5c8ecb63bee1db2e9e64aade305b37e9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175724"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287050"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
-- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [Microsoft Defender For Office 365](office-365-atp.md)中 SharePoint、OneDrive 和 Microsoft 小組的安全附件，為[microsoft 365 中的常見病毒偵測引擎](virus-detection-in-spo.md)，針對在上傳時已掃描的檔案，提供額外的保護層級。 SharePoint、OneDrive 和 Microsoft 團隊的安全附件可協助偵測和封鎖在小組網站和文件庫中識別為惡意的現有檔案。
 

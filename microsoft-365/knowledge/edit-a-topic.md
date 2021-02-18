@@ -4,6 +4,7 @@ description: 如何在 Microsoft Viva 主題中編輯現有的主題。
 author: efrene
 ms.author: efrene
 manager: pamgreen
+audience: admin
 ms.reviewer: cjtan
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 4194328804285f93f023092f1c7ac31d31a581da
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107447"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279407"
 ---
 # <a name="edit-an-existing-topic"></a>編輯現有主題 
 
@@ -31,7 +32,7 @@ ms.locfileid: "50107447"
 在 Viva 主題中，您可以編輯現有的主題。 如果您想要更正或將其他資訊新增至現有的主題頁面，您可能需要執行此動作。 
 
 > [!Note] 
-> [！附注] 透過 AI 收集的主題中的資訊是 [安全修整](topic-experiences-security-trimming.md)的，請注意，在編輯現有主題時，您手動新增的資訊可對所有具有「查看主題」許可權的使用者顯示。 
+> [！附注] 透過 AI 收集的主題中的資訊是 [安全修整](topic-experiences-security-trimming.md)的，請注意，您在編輯現有主題時手動新增的主題描述和人員資訊，對所有具有「查看主題」許可權的使用者都是可見的。 
 
 ## <a name="requirements"></a>需求
 
@@ -82,11 +83,14 @@ ms.locfileid: "50107447"
 
     您也可以透過提供 URL，使用 [ <b>發件</b> 人] 中的 [連結] 選項來新增檔或頁面。 
 
+   > [!Note] 
+   > 您新增的檔案和頁面必須位於相同的 Microsoft 365 租使用者內。 如果您想要在主題中新增外部資源的連結，您可以透過步驟9中的 canvas 圖示加以新增。
+
 6. [ <b>建議的檔案與頁面</b> ] 區段會顯示 AI 建議與主題相關聯的檔案與頁面。
 
    ![[建議的檔案與頁面] 區段](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    您可以選取釘選的圖示，將建議的檔案或頁面設定為固定的檔案或頁面。
+    您可以透過選取釘選的圖示，將建議的檔案或頁面變更為固定的檔案或頁面。
 
 7.  [ <b>相關網站</b> ] 區段會顯示網站，其中包含主題的相關資訊。 
 
@@ -107,6 +111,14 @@ ms.locfileid: "50107447"
    您新增的相關主題會顯示為連線的主題。
 
    ![連線的相關主題](../media/knowledge-management/related-topics-final.png)</br> 
+
+   若要移除相關主題，請選取您要移除的主題，然後選取 <b>移除主題</b> 圖示。</br>
+ 
+   ![移除相關主題](../media/knowledge-management/remove-related.png)</br>  
+
+   然後選取 [ <b>移除</b>]。</br>
+
+   ![確認移除](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
 9. 您也可以將靜態專案新增至頁面（如文字、圖像或連結），方法是選取 [畫布] 圖示，您可以在簡短描述下方找到該圖示。 選取它會開啟 SharePoint 工具箱，您可以從中選擇要新增至頁面的專案。
