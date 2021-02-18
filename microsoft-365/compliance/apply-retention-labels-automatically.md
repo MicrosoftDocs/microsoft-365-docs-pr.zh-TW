@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 2b06188a5990c7de81fca0afd21f05ef346807ba
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 69bada084aa3817b49b75d970a1a8d304f6853e6
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759963"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261344"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
@@ -128,6 +128,9 @@ ms.locfileid: "49759963"
 - [可訓練分類器的符合項目](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>自動將標籤套用至包含特定類型敏感資訊的內容
+
+> [!WARNING]
+> 此設定目前有已知的限制，其中當您所選的敏感性資訊類型有相符的項目時，所有未標記的電子郵件都必須套用選取的保留標籤。 例如，即使您將自動套用原則限定為特定的使用者，或是選取 Exchange 原則以外的位置，但一旦有相符的項目時，標籤就會套用到未標記的電子郵件。
 
 當您為敏感性資訊建立自動套用保留標籤原則時，系統會顯示與建立資料外洩防護 (DLP) 原則時相同的原則範本清單。 每個範本預設會尋找特定類型的敏感性資訊。 例如，此處顯示的範本從 **隱私權** 類別中查找美國 ITIN、SSN 和護照號碼，以及 **美國個人識別資訊 (PII) 資料** 範本：
 

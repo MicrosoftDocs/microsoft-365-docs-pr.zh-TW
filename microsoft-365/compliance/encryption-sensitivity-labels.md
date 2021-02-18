@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83ed515d5ac6ea853c3e6a822fae0a03f73fc37c
-ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
+ms.openlocfilehash: 602b4b3abd2b07386ad130e4b2cd21bb593eee7e
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49904028"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261570"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容
 
@@ -379,6 +379,8 @@ ms.locfileid: "49904028"
   - DLP 原則對這些加密檔案的中繼資料 (包括保留標籤資訊) 有效，但對這些檔案的內容 (例如檔案中的信用卡號碼) 沒有效用。
   - 使用者無法使用 Office 網頁版開啟加密的檔案。 啟用 SharePoint 和 OneDrive 中的 Office 檔案敏感度標籤時，使用者可以使用 Office 網頁版來開啟加密的檔案，但有一些[限制](sensitivity-labels-sharepoint-onedrive-files.md#limitations)，其中包括已使用內部部署金鑰 (稱為「保存您自己的金鑰」或 HYOK)、[雙重金鑰加密](#double-key-encryption)，以及已獨立於敏感度標籤套用的加密。
 
+- 如果您與組織外部人員共用加密文件，您可能需要建立來賓帳戶並修改條件式存取原則。 如需詳細資訊，請參閱 [與外部使用者共用加密文件](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。
+
 - 若要讓多個使用者同時編輯加密的檔案，他們都必須使用 Office 網頁版。 如果未這麼做，而且檔案已經開啟：
 
   - 在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中，使用者會看到 **[檔案使用中]** 訊息，其中包含已簽出檔案的人員名稱。 然後，他們可以檢視唯讀複本，或儲存並編輯檔案的複本，並在檔案可用時收到通知。
@@ -396,6 +398,7 @@ ms.locfileid: "49904028"
   - 變更檔案的名稱或位置。 或者，使用者可以在 SharePoint 中[重新命名文件庫中的檔案、資料夾或連結](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
 
 若要獲得使用敏感度標籤加密之檔案的最佳共同作業體驗，建議您[為 SharePoint 和 OneDrive 中的 Office 檔案中使用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)和 Office 網頁版。
+
 
 ## <a name="important-prerequisites"></a>重要的先決條件
 
