@@ -19,12 +19,12 @@ search.appverid:
 description: 了解三種您可以用來監視個人資料外洩的工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1425015843b2f444c6a410df449eeeaf4045ee5
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261422"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290666"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>監視個人資料的外洩
 
@@ -65,7 +65,7 @@ ms.locfileid: "50261422"
 
 DLP 報告位於安全性中心和合規性中心。 瀏覽至 [報告] \> [檢視報告]。 在 [資料外洩防護 (DLP)] 下，移至 [DLP 原則和規則相符項目] 或 [DLP 誤判和覆寫]。
 
-如需詳細資訊，請參閱[檢視資料外洩防護的報告](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)。
+如需詳細資訊，請參閱[檢視資料外洩防護的報告](../../compliance/view-the-dlp-reports.md)。
 
 ![顯示 DLP 原則比對的報告](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -87,17 +87,17 @@ DLP 報告位於安全性中心和合規性中心。 瀏覽至 [報告] \> [檢�
 
 警示原則和搜尋稽核記錄的相關資訊：
 
-- [Microsoft 365 安全性與合規性中心的警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- [Microsoft 365 安全性與合規性中心的警示原則](../../compliance/alert-policies.md)
 
-- [搜尋稽核記錄以取得 Office 365 中的使用者和系統管理員活動](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (簡介)
+- [搜尋稽核記錄以取得 Office 365 中的使用者和系統管理員活動](../../compliance/search-the-audit-log-in-security-and-compliance.md) (簡介)
 
-- [開啟或關閉稽核記錄搜尋](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [開啟或關閉稽核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)
 
-- [搜尋稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [搜尋稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (Cmdlet)
 
-- [稽核記錄中的詳細內容](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [稽核記錄中的詳細內容](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
