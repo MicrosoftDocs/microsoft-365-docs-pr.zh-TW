@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 端點資料外洩防護可擴充檔案活動的監視以及這些檔案到端點的保護動作。 在 Microsoft 365 合規性中心解決方案中可看到檔案 '
-ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682624"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279307"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>深入了解 Microsoft 365 端點資料外洩防護
 
@@ -34,8 +34,7 @@ ms.locfileid: "49682624"
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>您可以監視和採取動作的端點活動
 
-Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用者會在執行 Windows 10 的裝置上透過這些活動使用敏感度專案。
-
+Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用者會在執行 Windows 10 的裝置上透過這些活動使用敏感度專案。 
 
 |活動 |描述  | 可稽核的/可限制的|
 |---------|---------|---------|
@@ -47,6 +46,28 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 |建立項目|當使用者建立項時偵測| 可稽核的|
 |重新命名項目|當使用者重新命名項時偵測| 可稽核的|
 
+ ## <a name="monitored-files"></a>受監視的檔案
+
+端點 DLP 支援監視下列檔案類型：
+
+- Word 檔案
+- PowerPoint 檔案
+- Excel 檔案
+- PDF 檔案
+- .csv 檔案
+- .tsv 檔案
+- .txt 檔案
+- .rtf 檔案
+- .c 檔案
+- .class 檔案
+- .cpp 檔案
+- .cs 檔案
+- .h 檔案
+- .java 檔案
+ 
+根據預設，端點 DLP 會稽核這些檔案類型的活動（即使沒有相符原則）。 如果您只想要從相符原則監控資料，您可以關閉端點 DLP 全域設定中的 **[一律稽核裝置的檔案活動]**。 無論如何，Word、PowerPoint、Excel、PDF 和 .csv 檔案中的相符活動都將一律受到稽核。
+
+[端點 DLP] 可監視基於 MIME 類型的活動，因此即使副檔名變更，也能截取活動。 
 
 ## <a name="whats-different-in-endpoint-dlp"></a>端點 DLP 有何不同
 
@@ -79,25 +100,7 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 
 ### <a name="viewing-endpoint-dlp-data"></a>查看端點 DLP 資料
 
- [端點 DLP] 可監視基於 MIME 類型的活動，因此即使副檔名變更，也能截取活動。 目前還支援下列檔案類型：
 
-- Word 檔案
-- PowerPoint 檔案
-- Excel 檔案
-- PDF 檔案
-- .csv 檔案
-- .tsv 檔案
-- .txt 檔案
-- .rtf 檔案
-- .c 檔案
-- .class 檔案
-- .cpp 檔案
-- .cs 檔案
-- .h 檔案
-- .java 檔案
-
-> [!NOTE]
-> 端點 DLP 會根據 DLP 原則評估以上所有類型的檔案，並相應地套用保護動作。 系統會針對所有支援的動作稽核符合 DLP 原則的所有檔案，即使它們不受封鎖。 另外，根據預設，將對在任何 Word、PowerPoint、Excel、PDF 和 .csv 檔案上執行的檔案活動進行稽核，這與 DLP 原則是否存在或符合這些檔案無關。
 
 您可以移至 [DLP 警示管理儀表板](dlp-configure-view-alerts-policies.md)，檢視與在端點裝置上強制執行的 DLP 原則相關的警示。
 

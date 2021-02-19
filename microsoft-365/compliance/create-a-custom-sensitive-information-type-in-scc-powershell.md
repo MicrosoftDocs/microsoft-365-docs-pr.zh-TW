@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合規性中心建立及匯入原則的自訂機密資訊類型。
-ms.openlocfilehash: 63ff32bda31446c25a523ff2064f7b750d102961
-ms.sourcegitcommit: 3e29926f51530afb0d75d8518a92b9ec7dc5e5bd
+ms.openlocfilehash: e3735458f3259478a7df36bb3c6ddbc4a5fed719
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50173120"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288500"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 建立自訂機密資訊類型
 
@@ -433,9 +433,13 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
 
 - 每個自訂敏感性資訊類型總計最多可以有 2048 個關鍵字。
 
-- 使用 PowerShell Cmdlet 時，還原序列化資料的大小上限為 1 MB。   這會影響 XML 檔案的大小。 在處理時，請將上傳的檔案限制在 512 MB 的上限，做為要獲得一致結果且不會發生錯誤的建議限制。
+- 在單一租用戶中，關鍵字字典的大小上限為 100 KB。 在建立自訂敏感性資訊類型時，請視需要盡情參照同一字典。 請先在敏感性資訊類型中建立自訂關鍵字清單，並使用關鍵字字典（如果關鍵字清單中有超過 2048 個關鍵字，或關鍵字長度超過 50 個字元）。
 
-- XML 結構不需要輸入空格、Tab 字元或歸位字元/換行字元等格式設定字元。  針對上傳將空格最佳化時，請注意這一點。
+- 請確定每個 Entity 元素都包含 recommendedConfidence 屬性。
+
+- 使用 PowerShell Cmdlet 時，還原序列化資料的大小上限為 1 MB。   這會影響您的規則套件 XML 檔案的大小。 在處理時，請將上傳的檔案限制在 770 KB 的上限，作為要獲得一致結果且不會發生錯誤的建議限制。
+
+- XML 結構不需要輸入空格、Tab 字元或歸位字元/換行字元等格式設定字元。  針對上傳將空格最佳化時，請注意這一點。 Microsoft Visual Code 等工具提供連接線功能，可壓縮 XML 檔案。
     
 如果自訂機密資訊類型包含可能會影響效能的問題，則無法上傳，您可能會看到下列其中一個錯誤訊息：
   
