@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 建立共用信箱讓組織中的多位使用者共同負責讀取及回覆傳送到某個地址的電子郵件。
-ms.openlocfilehash: d0bd5770f347766638af0f0e66b9f961b3721697
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926591"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287230"
 ---
 # <a name="create-a-shared-mailbox"></a>建立共用信箱 
 
@@ -81,6 +81,30 @@ ms.locfileid: "49926591"
 7. 選取 **[關閉]**。
 
 您已經擁有共用信箱，且其中包含了共用行事曆。 現在繼續進行後續步驟：封鎖登入共用信箱帳戶。
+
+## <a name="which-permissions-should-you-use"></a>應該使用哪些權限？
+
+以下是可與共用信箱搭配使用的權限：
+
+- **完整存取**：「完整存取」權限可讓使用者開啟共用信箱，並做為該信箱的擁有者。 在存取登入共用信箱後，使用者可以建立行事曆項目，讀取、檢視、刪除和變更電子郵件，以及建立工作和行事曆連絡人。 不過，除非具有「完整存取權」權限的使用者也有「傳送為」或「代理傳送者」權限，否則無法從共用信箱傳送電子郵件。
+
+- **傳送為**：「傳送為」權限可讓使用者在傳送郵件時模擬共用信箱。 例如，如果 Katerina 登入共用信箱 Marketing Department 並傳送一封電子郵件，看起來就像是 Marketing Department 傳送該電子郵件。
+
+- **代理傳送者**：「代理傳送者」權限可讓使用者代表共用信箱傳送電子郵件。 例如，如果 John 登入共用信箱 Reception Building 32 並傳送一封電子郵件，該電子郵件看起來就像由「John 代表 Reception Building 32」傳送。 您不能使用 EAC 來授與「代理傳送者」權限，而必須使用 **Set-Mailbox** Cmdlet 搭配 _GrantSendonBehalf_ 參數。
+
+### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>使用 EAC 來編輯共用信箱委派
+
+1. 在 EAC 中，移至 [收件者 **]** \> [共用 **]**。 選取共用信箱，然後選取 [編輯 **]** ![編輯圖示](../../media/ITPro-EAC-EditIcon.png)。
+
+2. 選取 [信箱委派 **]**。
+
+3. 若要授與或移除「完整存取」和「傳送為」權限，請選取 [新增 **]** ![新增圖示](../../media/ITPro-EAC-AddIcon.png) 或 [移除 **]** ![移除圖示](../../media/ITPro-EAC-RemoveIcon.gif)，然後選取您想要授與權限的使用者。
+
+   > [!NOTE]
+   > [完整存取] 權限可讓使用者開啟信箱，以及在信箱中建立與修改項目。[以下列傳送 ] 權限可讓任何人 (信箱擁有者除外) 從該共用信箱傳送電子郵件。這兩者是成功共用信箱作業的必要權限。
+
+4. 選取 [儲存 **]** 以儲存變更。
+
 
 ## <a name="block-sign-in-for-the-shared-mailbox-account"></a>封鎖登入共用信箱帳戶
 
@@ -185,8 +209,5 @@ ms.locfileid: "49926591"
 [從共用信箱中移除授權](remove-license-from-shared-mailbox.md)
 
 [解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md)
-
-
-
 
 
