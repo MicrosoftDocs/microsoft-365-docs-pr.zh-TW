@@ -19,12 +19,12 @@ description: 在 Microsoft 365 中的自動調查期間和之後，您可以查�
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ab32444f2c0b4f9f6140c20fe8356f016d62c30
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 2d6d4a710878d65462110f317cafeeef64617667
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287074"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406685"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自動調查的詳細資料和結果
 
@@ -58,7 +58,7 @@ ms.locfileid: "50287074"
 
 ## <a name="view-details-of-an-investigation"></a>檢視調查的詳細資料
 
-1. 請移至 Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) 並登入。
+1. 請移至 Microsoft 365 security center (<https://security.microsoft.com>) 並登入。
 2. 在功能窗格中，選取 [ **動作中心**]。
 3. 在 [ **擱置** ] 或 [歷程 **記錄** ] 索引標籤上，選取動作。 其快顯視窗隨即開啟。
 4. 在彈出窗格中，選取 [ **開啟調查] 頁面**。 
@@ -68,7 +68,7 @@ ms.locfileid: "50287074"
 
 某些類型的警示會觸發 Microsoft 365 中的自動調查。 若要深入瞭解，請參閱 [觸發自動調查的警示原則](office-365-air.md#which-alert-policies-trigger-automated-investigations)。
 
-1. 請移至 Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) 並登入。
+1. 請移至 Microsoft 365 security center (<https://security.microsoft.com>) 並登入。
 2. 在功能窗格中，選取 [ **動作中心**]。
 3. 在 [ **擱置** ] 或 [歷程 **記錄** ] 索引標籤上，選取動作。 其快顯視窗隨即開啟。
 4. 在彈出窗格中，選取 [ **開啟調查] 頁面**。 

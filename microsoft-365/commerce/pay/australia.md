@@ -1,8 +1,8 @@
 ---
 title: 澳大利亞的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -13,23 +13,33 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66aaf084da0cd86fd379f2b667e37cbac3192565
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0dc0d574e07868cd01e491f9e4d1ad28e42b9c8d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637964"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407023"
 ---
 # <a name="payment-information-for-australia"></a>澳大利亞的付款資訊
 
 [尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
-請只支付 AUD，並參照您發票匯款 (s) 中的發票編號。
+## <a name="electronic-funds-transfer"></a>電匯
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+**請以 AUD 及參考發票編號 (s) 支付您的付款匯款。**
 
-**銀行：** Citibank，悉尼  
-**SWIFT 程式碼：** CITIAU2X  
-**BSB 程式碼：** 242000  
-**帳戶號碼：** 205565043  
-**帳戶名稱：** MICROSOFT 地區銷售公司  
+如果您擁有由 **Microsoft 地區銷售 Pte 有限公司** 計費的發票，請使用此銀行資訊：
+
+銀行： Citibank，悉尼 \
+SWIFT 程式碼： CITIAU2X \
+BSB 程式碼： 242000 \
+帳戶號碼： 205565043 \
+帳戶名稱： MICROSOFT
+
+如果您有發票的 **Microsoft Pty 有限公司** 為從2021年3月1日開始的訂單和消費計費，請使用此銀行資訊：
+
+銀行： Citibank、N.A。 雪梨
+SWIFT 程式碼： CITIAU2X \
+BSB 程式碼： 248053 \
+帳戶號碼： 100001074 \
+帳戶名稱： MICROSOFT

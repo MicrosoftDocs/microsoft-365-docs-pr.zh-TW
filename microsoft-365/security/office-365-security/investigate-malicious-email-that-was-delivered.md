@@ -20,12 +20,12 @@ description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b36e16f5351ab30ac8150fbc3e87feb9ca4a6453
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0700345ed32b736669adc4e35ddc8aa1476b699f
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286630"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406453"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>調查 Office 365 中傳遞的惡意電子郵件
 
@@ -67,10 +67,10 @@ ms.locfileid: "50286630"
 |
 
 > [!NOTE]
-> *Preview* 是角色，不是角色群組;預覽角色必須新增至現有的 Office 365 (角色群組中 [https://protection.office.com](https://protection.office.com)) 。 移至 [ **許可權**]，然後編輯現有的角色群組，或新增「 **預覽** 」角色所指派的新角色群組。
+> *Preview* 是角色，不是角色群組;預覽角色必須新增至現有的 Office 365 (角色群組中 <https://protection.office.com>) 。 移至 [ **許可權**]，然後編輯現有的角色群組，或新增「 **預覽** 」角色所指派的新角色群組。
 > 全域系統管理員角色會指派 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) ，而且安全性管理員和安全性讀取者角色會指派在安全性 & 規範中心 (<https://protection.office.com>) 。 若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
-我們瞭解預覽和下載電子郵件是機密的活動，因此會為這些活動啟用審核。 當系統管理員在電子郵件上執行這些動作後，就會產生相同的審計記錄，並可在 Office 365 安全性 & 規範中心 () 中看到 [https://protection.office.com](https://protection.office.com) 。 移至 **「搜尋**  >  **審核記錄**」搜尋，然後在 [搜尋] 區段中篩選 admin name。 篩選的結果會顯示活動 **AdminMailAccess**。 選取要在 [ **詳細資訊** ] 區段中預覽或下載之電子郵件的詳細資訊一列。
+我們瞭解預覽和下載電子郵件是機密的活動，因此會為這些活動啟用審核。 當系統管理員在電子郵件上執行這些動作後，就會產生相同的審計記錄，並可在 Office 365 安全性 & 規範中心 () 中看到 <https://protection.office.com> 。 移至 **「搜尋**  >  **審核記錄**」搜尋，然後在 [搜尋] 區段中篩選 admin name。 篩選的結果會顯示活動 **AdminMailAccess**。 選取要在 [ **詳細資訊** ] 區段中預覽或下載之電子郵件的詳細資訊一列。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>尋找已傳遞的可疑電子郵件
 

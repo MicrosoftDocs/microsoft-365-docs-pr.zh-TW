@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 91366e8f255d277d4d40de4c4cd3330283da718c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e125a6dfb35b7018b5f85100184c842da9231327
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166448"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407323"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感性資訊類型
 
@@ -103,7 +103,7 @@ ms.locfileid: "50166448"
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - 阿根廷國內身分識別號碼 
-- 身分識別 
+- 身份識別 
 - 身分識別的國內身分識別卡片 
 - DNI 
 - 個人的 NIC 註冊人員 
@@ -118,9 +118,9 @@ ms.locfileid: "50166448"
 
 高信賴等級會傳回最少的誤報，但是可能會產生較多的漏報。 低或中度信賴等級會傳回更多的誤報，但很少為零的否定。
 
-- **低信賴度**：65的值，相符的專案會包含最少的 false 負值，但是最少的誤報。  
-- **適中信賴**：值為75，相符的專案會包含平均的誤報和漏報的平均金額。  
-- **高信賴度**：值為85，相符的專案會包含最少的誤報，但最少為 false 的負值。  
+- **低信賴度**：65的值，相符的專案會包含最少的 false 負值，但是最少的誤報。 低信賴會傳回所有低、中和高信賴度的相符專案。
+- **適中信賴**：值為75，相符的專案會包含平均的誤報和漏報的平均金額。 中度信賴會傳回所有中和高信賴度的相符專案。  
+- **高信賴度**：值為85，相符的專案會包含最少的誤報，但最少為 false 的負值。 高信賴度只會傳回高可信度比對。  
 
 您應該使用具有較低計數的高信賴度模式、5到10個，以及具有較高數量的低可信度模式，例如20或更高。
 

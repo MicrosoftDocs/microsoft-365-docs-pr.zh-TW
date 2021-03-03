@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: IT 系統管理員的資訊，可管理 Office 應用程式中桌面、行動裝置及網路的靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8d7fd75aaa1b6f54222252c3e8379aaed2c4c223
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1834e1071c56e03ef20ae0e87b63fc4c03a6921b
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290808"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407303"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -67,7 +67,7 @@ Office for iOS 和 Office for Android：敏感度標籤是內置於 [office 應�
 |[開始使用資料分類](data-classification-overview.md) ，並傳送系統管理員的資料                      | 2011 + | 16.43 + | 預覽： [目前的頻道 (預覽) ](https://office.com/insider) | 預覽： [目前的頻道 (預覽) ](https://office.com/insider) | 是的 <sup>\*</sup>                                                        |
 |[要求使用者將標籤套用至電子郵件和檔](#require-users-to-apply-a-label-to-their-email-and-documents)   | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)             | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)         | 在 [複查] 下   | 推出： 16.0.13628 + | 在 [複查] 下                                            
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | 推出： 16.44 + | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|支援標籤和加密檔上的[AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)和[合著](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|支援已標記和加密檔的[共同撰寫和 AutoSave](sensitivity-labels-coauthoring.md) | 預覽： [目前的頻道 (預覽) ](https://office.com/insider) | 預覽： [Beta 通道](https://office.com/insider) | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **註腳：**
@@ -88,10 +88,14 @@ Office for iOS 和 Office for Android：敏感度標籤是內置於 [office 應�
 |[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 在 [複查] 下                     | 在 [複查] 下                 | 在 [複查] 下         | 在 [複查] 下           | 在 [複查] 下               |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
-|[要求使用者將標籤套用至電子郵件和檔](#require-users-to-apply-a-label-to-their-email-and-documents)   | 預覽： [目前的頻道 (預覽) ](https://office.com/insider))                         | 16.43 +                     | 在 [複查] 下            | 在 [複查] 下                | 是                |
+|[要求使用者將標籤套用至電子郵件和檔](#require-users-to-apply-a-label-to-their-email-and-documents)   | 預覽： [目前的頻道 (預覽) ](https://office.com/insider))                         | 16.43 + <sup>\*</sup>                    | 在 [複查] 下            | 在 [複查] 下                | 是                |
 |[開始使用資料分類](data-classification-overview.md) ，並傳送系統管理員的資料                      | 2011 + | 在 [複查] 下 | 在 [複查] 下           | 在 [複查] 下               | 在 [複查] 下 |
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 16.44 +                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 16.44 + <sup>\*</sup>                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
 |
+
+**註腳：**
+
+<sup>\*</sup> 需要 [新的 Mac 版 Outlook](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 內建標籤用戶端和其他標記解決方案
@@ -264,7 +268,7 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 - 從 Power BI 匯出已標示及已加密的資料
 
-- Microsoft Cloud App Security
+- Microsoft 雲端應用程式安全性
 
 針對這些案例，使用內建標籤的使用者可以暫時移除或取代目前的標籤，然後重新應用原始標籤，以套用標籤的內容標記。
 

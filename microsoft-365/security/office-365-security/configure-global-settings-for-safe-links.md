@@ -18,12 +18,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何查看和設定全域設定 (「封鎖下列 URLs」清單和 Office 365 應用程式的保護) ，以取得 Microsoft Defender for Office 365 中的安全連結。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d52a4dc5ed35ec73c1410d6428a581b098bf2c52
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 38614d070f4ac9bfda978301eaeed6029b47e0ca
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287458"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406111"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>設定 Microsoft Defender for Office 365 中安全連結的全域設定
 
@@ -55,15 +55,15 @@ ms.locfileid: "50287458"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須先獲指派安全性與合規性中心的權限，才能執行此文章中的程序：
+- 您必須先在 **Exchange Online** 中指派許可權，才能執行本文中的程式：
   - 若要設定安全連結的全域設定，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要對安全連結的全域設定進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+  如需詳細資訊，請參閱 [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **附註**：
 
-  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  - 將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 中其他功能的必要許可權 _和_ 許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 如需安全連結之全域設定的建議值，請參閱 [安全連結設定](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)。

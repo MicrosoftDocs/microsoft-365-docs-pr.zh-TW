@@ -11,17 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: 針對您的 Microsoft 365 承租人遷移您的 Windows 裝置、Office 用戶端應用程式及 Office server。
-ms.openlocfilehash: 3230f7e1087b573691f04b9335a15b4ad6d20b65
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 85f1c0d927b881c4d1526ce538ae54f5954a0664
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908529"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406357"
 ---
-# <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 4： Microsoft 365 for enterprise 承租人的遷移
+# <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 4. Microsoft 365 for enterprise 承租人的遷移
 
 大多數的企業組織都有異構環境，包括多個版本的作業系統、用戶端軟體和伺服器軟體。 適用于企業的 Microsoft 365 包括 IT 基礎結構主要元件的最安全版本。 此外，它也包含可讓您利用雲端技術的生產力功能。
 
@@ -94,7 +96,7 @@ Microsoft 365 for enterprise 包含雲端架構版本的 Office server 服務，
 - 請根據您的 Exchange 信箱遷移狀態，繼續在您的組織中滾動轉換至 Exchange。
 - 請根據您的內部部署 SharePoint 網站遷移狀態，繼續將 Microsoft 365 中 SharePoint 轉換為您的組織。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [![步驟5。部署裝置和應用程式管理](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
 

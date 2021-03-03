@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: c032f537dd0a24632cc702f8363697b85df7e7ca
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3c8f3f30741d4b0fac5c940bc6ec3fb56ea4f79e
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233771"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405793"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -32,7 +32,7 @@ ms.locfileid: "50233771"
 
 合規性管理員可供使用 Office 365 和 Microsoft 365 授權的組織使用，以及向美國政府社區雲端 (GCC) 中和 GCC 的高客戶。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](https://go.microsoft.com/fwlink/?linkid=2132371)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 您組織的 Microsoft 365 全域管理員可能是第一個存取合規性管理員的使用者。 我們建議全域管理員登入，並設定第一次造訪合規性管理員時所述的使用者權限。
 
@@ -322,6 +322,8 @@ Microsoft 365 合規性中心的合規性管理員設定可讓您啟用及停用
 
 「評估」頁面會列出您為組織設定的所有 [評估](compliance-manager-assessments.md) 。 您的相容性分數分母是由所有追蹤的評估所決定。 當您新增更多評估時，您將會看到 [改進動作] 頁面上列出的更多改進動作，以及您的相容性分數分母增加。
 
+靠近頁面頂端的 [已啟動 **範本** ] 計數器會顯示目前使用中的評估範本數目，以供您的組織使用的範本總數。 如需詳細資訊，請參閱 [範本類型](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) 。
+
 評估頁面摘要列出每項評估的重要資訊：
 
 - **評估**：評估的名稱
@@ -354,6 +356,8 @@ Microsoft 365 合規性中心的合規性管理員設定可讓您啟用及停用
 ## <a name="assessment-templates-page"></a>評估範本頁面
 
 範本是在合規性管理員中建立評估的架構。 「評估範本」頁面會顯示範本及主要詳細資料的清單。 此清單包含合規性管理員所提供的範本，以及您的組織已修改或建立的任何範本。 您可以套用篩選器，以根據憑證、產品範圍、國家、行業及建立者，尋找範本。
+
+靠近頁面頂端的 [已啟動 **範本** ] 計數器會顯示目前使用中的評估範本數目，以供您的組織使用的範本總數。 如需詳細資訊，請參閱 [範本類型](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) 。
 
 從其列中選取範本以顯示其 [詳細資料] 頁面，其中包含範本的描述，以及憑證、範圍和控制項詳細資料的詳細資訊。 您可以從這個頁面選取適當的按鈕來建立評估、將範本資料匯出至 Excel 或修改範本。
 

@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: 部署及管理單一或多個 Microsoft 365 承租人，包含多地理位置和移動位置的選項。
-ms.openlocfilehash: 567a2cb46e715ec560bf973a33ab83cfa63d403b
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 4d9bd685fce6fb2f11b8e17bebae6460e0c10bd2
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908510"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406381"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>步驟 1. 您的 Microsoft 365 for enterprise 承租人
 
@@ -150,7 +152,7 @@ Microsoft 繼續開啟新的資料中心 geos for Microsoft 365 服務。 這些
 - 針對資料派駐服務需求新增多地理位置。
 - 設定承租人間共同作業。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [![步驟2。為您的網路存取優化您的租使用者](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
 

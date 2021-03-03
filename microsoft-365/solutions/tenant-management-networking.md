@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: 優化 Microsoft 365 承租人的網路存取。
-ms.openlocfilehash: 1e57911a6e8c51af3ae00ff0f9053bf9273e0e17
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 5eac0793d2afc924a919671ffa105362ea1866d9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908538"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407189"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 2. 適用于 Microsoft 365 enterprise 承租人的最佳網路
 
@@ -173,7 +175,7 @@ Office 365 CDN 是由可讓您在多個位置或 _來源_ 主控靜態資產的�
 - 在 Office 365 CDN 中管理您的資產。
 - 針對端點的變更，更新 VPN 用戶端中的分割隧道設定。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [![步驟3。同步處理您的身分識別並強制執行安全登入](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
 

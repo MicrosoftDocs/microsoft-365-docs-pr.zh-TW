@@ -12,18 +12,20 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: 瞭解如何使用 PowerShell 在您的 Microsoft 365 環境中管理 Exchange Online 多地理位置設定。
-ms.openlocfilehash: 63eb1957611fd57e216012435188a6ddd1b232d3
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 83889b4582d2e305b2cb9f07a64307e85d30be77
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49552004"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406039"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>管理多地理位置環境中的 Exchange Online 信箱
 
 Exchange Online PowerShell 是在您的 Microsoft 365 環境中查看及設定多地理屬性所需的。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 您需要 [Microsoft Azure Active Directory PowerShell 模組](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) 1.1.166.0 版或使用 1.x 版的更新版本，才能查看使用者物件上的 **PreferredDataLocation** 屬性。 透過 AAD Connect 同步處理至 AAD 的使用者物件，您無法經由 AAD PowerShell 直接修改其 **PreferredDataLocation** 值。 您可以透過 AAD PowerShell 修改僅雲端的使用者物件。 若要連線到 Azure AD PowerShell，請參閱[連線至 PowerShell](connect-to-microsoft-365-powershell.md)。
+
+在 Exchange Online 多地理位置環境中，您不需要執行任何手動步驟，即可將 geos 新增至您的租使用者。 當您收到「多地理位置已準備好進行 Exchange Online」的訊息中心 post 之後，所有可用的 geos 都會準備好並設定供您使用。
 
 ## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>使用 Exchange Online PowerShell 直接連線到地理位置
 

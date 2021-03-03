@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何使用和管理範本，以在 Microsoft 合規性管理員中建立評估。 使用格式化的 Excel 檔案建立及修改範本。
-ms.openlocfilehash: 34adb79392b235152cc0e00f5b7d661e90c9005e
-ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
+ms.openlocfilehash: 9f76ff6202ff9ad4a876c57209748dd7c98877b4
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49849607"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405827"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>在合規性管理員中使用評估範本
 
@@ -30,11 +30,37 @@ ms.locfileid: "49849607"
 
 ## <a name="templates-overview"></a>範本概述
 
-範本是在合規性管理員中建立評估的架構。 它們包含的控制項可用於使用特定產品來滿足憑證的需求。 合規性管理員提供一組完整的範本，以協助您的組織遵守管理資料集合及使用的本國、地區和行業特定需求。
+範本是在合規性管理員中建立評估的控制項框架。 我們的綜合樣板集合可協助您的組織遵循管理資料集合及使用的本國、區域及特定行業的需求。 我們會將範本命名為與其基礎憑證或法規（如歐盟 GDPR 範本及 ISO 27001:2013 範本相同）的名稱。
 
-## <a name="list-of-pre-built-templates-for-assessments"></a>用於評估的預先建立的範本清單
+ 查看 [完整的範本清單](compliance-manager-templates-list.md)。
 
-合規性管理員提供用來建立評估的範本，以協助您遵守各種規章和標準。 查看合規性管理員所提供的 [範本清單](compliance-manager-templates-list.md) 。 新的範本會定期新增，所以請經常檢查清單。
+## <a name="template-types-included-and-premium-active-and-inactive"></a>範本類型：包括和特優、作用中和非使用中
+
+#### <a name="included-and-premium-templates"></a>包含和精品範本
+
+可供使用的範本是根據您組織的授權協定 ([查看授權詳細資料](https://go.microsoft.com/fwlink/?linkid=2132371)) 。 範本有兩種類別：包括和特優。
+
+1. **包含的範本** 可做為組織的授權合約的一部分使用。
+2. 您必須購買 **特優範本**，才能建立評估。 購買後，您可以視需要建立來自範本的評估數目。
+
+#### <a name="active-and-inactive-templates"></a>使用中和非使用中範本
+
+範本會顯示啟用狀態為 [使用中] 或 [非使用中]：
+
+- **當您** 從該範本建立評估之後，就會將範本視為作用中。
+- 如果您的組織未使用範本做為評估的架構，則會將範本視為 **非** 使用中。
+
+當您購買高階範本並從中建立評估時，該範本會在一年中使用。 除非您取消更新，否則您的購買將會自動更新。
+
+**啟用的範本計數器**
+
+「評估」頁面和「評估範本」頁面的上方有一個已啟動的 **範本** 計數器。 此計數器會顯示已使用的範本數目，而這些數目已超出您的授權合約的資格使用。
+
+例如，如果計數器顯示2/5，這表示您的組織已啟動2個範本，可供使用。
+
+如果計數器顯示5/2，這表示您的組織超出其限制，需要購買使用中的高級範本3。
+
+如需詳細資訊，請參閱 [合規性管理員授權指南](https://go.microsoft.com/fwlink/?linkid=2132371) 。
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>從 [評估範本] 頁面查看及管理範本
 
@@ -194,7 +220,7 @@ ms.locfileid: "49849607"
 
 #### <a name="change-an-improvement-actions-name"></a>變更改進動作的名稱
 
-如果您想要變更改進動作的名稱，您必須在試算表中明確指定您要以新名稱取代現有名稱。 依照下列步驟執行：
+如果您想要變更改進動作的名稱，您必須在試算表中明確指定您要以新名稱取代現有名稱。 請遵循下列步驟：
 
 1. 在試算表的 [ **動作** ] 索引標籤中，將新欄新增至 a 欄後的試算表中。
 2. 在這個新欄中（現在是 B 欄），置於第1列： **oldActionTitle** 中的標題。

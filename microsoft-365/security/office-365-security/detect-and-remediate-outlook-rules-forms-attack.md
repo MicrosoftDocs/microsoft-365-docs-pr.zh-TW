@@ -18,12 +18,12 @@ description: 瞭解如何在 Office 365 中識別及修復 Outlook 規則和自�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e22cfa97ae59fdd094c161cdaeff899dc1dd6507
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 30ddd5f57dee2156504211e76304d346a63e192d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286390"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406697"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>偵測並修復 Outlook 規則和自訂表單注入攻擊
 
@@ -34,70 +34,69 @@ ms.locfileid: "50286390"
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Outlook 規則和自訂表單植入攻擊是什麼？
 
-當攻擊者破壞您租用中的帳戶並取得時，會嘗試並建立一種方式，以在發現及移除之後，繼續進行，或是取得的方式。 這稱為建立持久性機制。 使用 Outlook 規則或將自訂表單插入 Outlook 的兩種方法可以做到這一點。
-在這兩種情況下，規則或表單會從雲端服務同步處理至桌面用戶端，因此完整格式化及重新安裝用戶端軟體不會消除插入機制。 這是因為當 Outlook 用戶端軟體重新連接至雲端中的信箱時，它會從雲端重新下載規則和表單。 當規則和表單就緒後，攻擊者會使用它們來執行遠端或自訂程式碼，通常是在本機電腦上安裝惡意程式碼。 惡意程式碼接著重新竊取認證或執行其他非法活動。
-以下是一個好的資訊：如果您將用戶端保持在最新版本的補丁，您就不會因為目前的 Outlook 用戶端預設會封鎖這兩種機制，所以威脅不會受到威脅。
+在攻擊者取得組織的存取權之後，他們會嘗試建立 foothold，以在發現之後繼續進行，或回復。 此活動稱為 *建立持續性機制*。 攻擊者可透過兩種方式來使用 Outlook 建立持續性機制：
+
+- 透過利用 Outlook 規則。
+- 將自訂表單插入 Outlook。
+
+重新安裝 Outlook，或甚至為受影響的人員提供新電腦不會有説明。 當 Outlook 的全新安裝會連接至信箱時，所有規則和表單都會從雲端進行同步處理。 規則或表單通常是用來執行遠端程式碼，並在本機電腦上安裝惡意程式碼。 惡意程式碼會竊取認證或執行其他非法活動。
+
+好消息是：如果您將 Outlook 用戶端保持在最新版本的狀態，您就不會因為目前的 Outlook 用戶端預設會封鎖這兩種機制，所以威脅不會受到威脅。
 
 攻擊通常遵循下列模式：
 
 **規則會利用** 下列專案：
 
-1. 攻擊者竊取其中一個使用者的使用者名稱和密碼。
+1. 攻擊者竊取使用者的認證。
 
-2. 然後，攻擊者會登入該使用者的 Exchange 信箱。 信箱可以位於 Exchange online 中，也可以位於 Exchange 內部部署中。
+2. 攻擊者以 exchange Online 或內部部署 Exchange) 登入該使用者的 Exchange (信箱。
 
-3. 然後，攻擊者會在信箱收到符合規則準則的電子郵件時，在觸發的信箱中建立轉移規則。 規則的準則及觸發器電子郵件的內容是針對彼此進行量身定制的。
+3. 攻擊者會在信箱中建立轉接收件匣規則。 當信箱收到符合規則條件的特定郵件時，就會觸發轉寄規則。 規則條件和郵件格式是針對彼此進行量身定制的。
 
-4. 攻擊者會將觸發器電子郵件傳送至一般使用信箱的使用者。
+4. 攻擊者會將觸發器電子郵件傳送至已遭破壞的信箱，而該信箱仍是由使用者無意中使用。
 
-5. 收到電子郵件時，會觸發規則。 規則的動作通常是在遠端 (WebDAV) 伺服器上啟動應用程式。
+5. 當信箱收到符合規則條件的郵件時，就會套用規則的動作。 一般來說，規則動作是要在遠端 (WebDAV) 伺服器上啟動應用程式。
 
-6. 應用程式通常會在使用者的電腦上，以本機方式安裝惡意程式碼，例如 [Powershell Empire](https://www.powershellempire.com/)。
+6. 通常，應用程式會在使用者的電腦上安裝惡意程式碼 (例如， [PowerShell Empire](https://www.powershellempire.com/)) 。
 
-7. 惡意程式碼可讓攻擊者重新竊取使用者的使用者名稱和密碼，或從本機機器重新竊取其他認證，以及執行其他惡意活動。
+7. 惡意程式碼可讓攻擊者) 使用者的使用者名稱和密碼或本機電腦上的其他認證，以及執行其他惡意活動，以竊取 (或竊取。
 
 **表單利用** 方式：
 
-1. 攻擊者竊取其中一個使用者的使用者名稱和密碼。
+1. 攻擊者竊取使用者的認證。
 
-2. 然後，攻擊者會登入該使用者的 Exchange 信箱。 信箱可以位於 Exchange online 中，也可以位於 Exchange 內部部署中。
+2. 攻擊者以 exchange Online 或內部部署 Exchange) 登入該使用者的 Exchange (信箱。
 
-3. 然後，攻擊者會建立自訂的郵件表單範本，並將其插入使用者的信箱。 當信箱收到需要信箱載入自訂表單的電子郵件時，就會觸發自訂表單。 自訂表單和電子郵件的格式是針對彼此進行量身定制。
-4. 攻擊者會將觸發器電子郵件傳送給使用者，該使用者一般會使用其信箱。
+3. 攻擊者會將自訂的郵件表單範本插入使用者的信箱。 當信箱從需要信箱載入自訂表單的攻擊者接收特定郵件時，就會觸發自訂表單。 自訂表單和郵件格式是針對彼此進行量身定制。
 
-5. 當接收到電子郵件時，就會載入表單。 表單會在遠端 (WebDAV) 伺服器上啟動應用程式。
+4. 攻擊者會將觸發器電子郵件傳送至已遭破壞的信箱，而該信箱仍是由使用者無意中使用。
 
-6. 應用程式通常會在使用者的電腦上，以本機方式安裝惡意程式碼，例如 [Powershell Empire](https://www.powershellempire.com/)。
+5. 當信箱收到郵件時，信箱會載入所需的表單。 表單會在遠端 (WebDAV) 伺服器上啟動應用程式。
 
-7. 惡意程式碼可讓攻擊者重新竊取使用者的使用者名稱和密碼，或從本機機器重新竊取其他認證，以及執行其他惡意活動。
+6. 通常，應用程式會在使用者的電腦上安裝惡意程式碼 (例如， [PowerShell Empire](https://www.powershellempire.com/)) 。
+
+7. 惡意程式碼可讓攻擊者) 使用者的使用者名稱和密碼或本機電腦上的其他認證，以及執行其他惡意活動，以竊取 (或竊取。
 
 ## <a name="what-a-rules-and-custom-forms-injection-attack-might-look-like-office-365"></a>規則和自訂表單植入攻擊可能類似于 Office 365？
 
 您的使用者可能會注意到這些持續性機制，但在某些情況下，您可能會看不到這些功能。 本文將告訴您如何在下面列出的任何 (的威脅) 中尋找7號徵兆。 如果您找到上述任一項，您必須採取補救步驟。
 
-- 規則受損的指標：
-
+- **規則受損的** 指標：
   - 規則動作是要啟動應用程式。
-
   - 規則參照 EXE、ZIP 或 URL。
-
   - 在本機電腦上，尋找來自 Outlook P&ID 的新進程開始。
 
-- 自訂表單受損的指標：
-
+- **自訂表單受損的** 指標：
   - 顯示的自訂表單會另存為自己的郵件類別。
-
   - 郵件類別包含可執行程式碼。
-
-  - 通常儲存在個人表單庫或 [收件匣] 資料夾中。
-
+  - 通常，惡意表單會儲存在個人表單文件庫或 [收件匣] 資料夾中。
   - 表單命名為 IPM。注意。[custom name]。
 
 ## <a name="steps-for-finding-signs-of-this-attack-and-confirming-it"></a>尋找此攻擊之徵兆及確認的步驟
 
-您可以使用下列兩種方法之一來確認攻擊：
+您可以使用下列其中一種方法來確認攻擊：
 
-- 使用 Outlook 用戶端，手動檢查每個信箱的規則和表單。 這種方法是完整的，但是您一次只能檢查信箱使用者，如果您有許多使用者可供檢查，就會非常耗費時間。 也可能會造成您正在執行檢查的電腦遭到破壞。
+- 使用 Outlook 用戶端，手動檢查每個信箱的規則和表單。 這個方法是完整的，但是您一次只能檢查一個信箱。 如果您有許多使用者要檢查，而且也可能會感染您所使用的電腦，則此方法可能會非常耗時。
 
 - 使用 [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell 腳本自動為您租使用者中的所有使用者轉儲所有的郵件轉寄規則和自訂表單。 這是最快且最安全的方法，最少量的開銷。
 
@@ -117,7 +116,7 @@ ms.locfileid: "50286390"
 
 1. 以使用者身分開啟使用者 Outlook 用戶端。
 
-2. 遵循中的步驟，顯示 Outlook 使用者版本的 [[開發人員]](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) 索引標籤。
+2. 依照中的步驟，針對使用者的 Outlook 版本 [顯示 [開發人員]](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) 索引標籤。
 
 3. 開啟 Outlook 中的 [now visible developer] 索引標籤，然後按一下 [ **設計表單**]。
 
@@ -133,7 +132,7 @@ ms.locfileid: "50286390"
 
 #### <a name="pre-requisites"></a>先決條件
 
-您必須具有全域系統管理員許可權，才能執行腳本，因為腳本會連線至租用中的每個信箱，以讀取規則和表單。
+您必須具有全域系統管理員許可權，才能執行腳本，因為腳本會連接到租用中的每個信箱，以讀取規則和表單。
 
 1. 以本機系統管理員許可權登入您將執行腳本的電腦。
 
@@ -151,9 +150,9 @@ ms.locfileid: "50286390"
 
   - **IsPotentiallyMalicious (欄)**：如果此值為 "TRUE"，則此規則可能是惡意的。
 
-  - **ActionCommand (Column G)**：如果這會列出應用程式或任何副檔名為 .exe、.zip 副檔名的專案，或是參考 URL 的專案，則該規則可能是惡意的。
+  - **ActionCommand (Column G)**：如果此欄位列出的是應用程式或任何副檔名為 .exe 或 .zip 的檔案，或是參照 URL 的未知專案，則該規則可能是惡意的。
 
-- **MailboxFormsExport-*yyyy-yyyy***：一般說來，使用自訂表單非常少見。 如果您在此活頁簿中找到任何的，請開啟該使用者的信箱，並檢查該表單本身。 如果您的組織未有意放入該組織，可能是惡意的。
+- **MailboxFormsExport-*yyyy*** 年：一般說來，使用自訂表單非常少見。 如果您在此活頁簿中找到任何的，請開啟該使用者的信箱，並檢查該表單本身。 如果您的組織未有意放入該組織，可能是惡意的。
 
 ## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>如何停止和修復 Outlook 規則和表單攻擊
 
@@ -165,11 +164,11 @@ ms.locfileid: "50286390"
 
 2. 依照刪除每個裝置的 [規則](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) 中的步驟進行。
 
-3. 如果您不確定是否存在其他惡意程式碼，您可以格式化及重新安裝裝置上的所有軟體。 針對行動裝置，您可以遵循製造商的步驟，將裝置重設為出廠影像。
+3. 如果您不確定是否存在其他惡意程式碼，您可以格式化及重新安裝裝置上的所有軟體。 若為行動裝置，您可以依照製造商的步驟，將裝置重設為出廠影像。
 
 4. 安裝最新版本的 Outlook。 請記住，目前的 Outlook 版本會封鎖這兩種攻擊類型的預設值。
 
-5. 移除信箱的所有離線副本之後，請重設使用者的密碼 (使用高品質的) ，然後在未啟用 MFA 時，依照 [為使用者設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) 中的步驟進行。 這可確保使用者的認證不會透過其他方式公開 (例如網路釣魚或密碼重複使用) 。
+5. 移除信箱的所有離線副本之後，請重設使用者的密碼 (使用高品質的) ，然後在 [未啟用 MFA 的情況下，依照 [設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) ] 中的步驟進行。 這可確保使用者的認證不會透過其他方式公開 (例如網路釣魚或密碼重複使用) 。
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
@@ -195,7 +194,7 @@ ms.locfileid: "50286390"
 
 ### <a name="first-protect-your-accounts"></a>第一種：保護您的帳戶
 
-只有在竊取或破壞使用者的帳戶之後，攻擊者才會使用這些規則和表單攻擊。 因此，避免對您的組織使用這些入侵的第一步，是要積極保護您的使用者帳戶。 一些最常見的帳戶破壞方式是透過網路釣魚或 [密碼 spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) 攻擊。
+只有在竊取或破壞使用者的帳戶之後，攻擊者才會使用這些規則和表單攻擊。 因此，避免對您的組織使用這些入侵的第一步，是要積極保護您的使用者帳戶。 一些最常見的帳戶破壞方式是透過網路釣魚或 [密碼噴塗攻擊](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/)。
 
 保護使用者帳戶的最佳方法（特別是管理員帳戶）是為 [使用者設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。 您也應該：
 
@@ -207,7 +206,7 @@ ms.locfileid: "50286390"
 
   - **由使用者) 所 (的特殊模擬活動**：此原則設定檔您的環境，當使用者在與基線獲知相關的單一會話中執行多個類比活動時，便會觸發警示，這可能表示企圖遭到破壞。
 
-- 利用類似 [Office 365 安全分數](https://securescore.office.com/) 的工具來管理帳戶安全性設定和行為。
+- 使用類似 [Office 365 安全分數](https://securescore.office.com/) 的工具來管理帳戶安全性設定和行為。
 
 ### <a name="second-keep-your-outlook-clients-current"></a>第二：讓 Outlook 用戶端保持最新
 
@@ -229,7 +228,7 @@ ms.locfileid: "50286390"
 
 請注意，即使已安裝修補程式和更新，攻擊者還是可以變更本機電腦設定，以重新啟用「啟動應用程式」行為。 您可以使用 [高級群組原則管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) ，在用戶端上監視及強制執行本機電腦原則。
 
-您可以使用 [Windows 的64位版本](https://support.microsoft.com/help/305097)資訊，查看是否已透過登錄中的覆寫方式重新啟用 [啟動應用程式]。 請檢查下列子項：
+您可以使用 [Windows 的64位版本](https://support.microsoft.com/help/305097)資訊，查看是否已透過登錄中的覆寫來重新啟用「啟動應用程式」。 請檢查下列子項：
 
 - **Outlook 2016**： `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
@@ -243,7 +242,7 @@ ms.locfileid: "50286390"
 
 您的 Microsoft 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。 使用 [Microsoft 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高優先順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Microsoft 365 租用戶的最佳做法。
 
-- 要在前 30 天內完成的工作。 這些工作會有立即的影響，而且對您的使用者影響較低。
+- 要在前 30 天內完成的工作。 這類功能會立即生效，對您的使用者影響很小。
 
 - 要在 90 天內完成的工作。 這些工作需要多一些時間來計劃及實作，但是可以大幅改善您的安全性狀態。
 

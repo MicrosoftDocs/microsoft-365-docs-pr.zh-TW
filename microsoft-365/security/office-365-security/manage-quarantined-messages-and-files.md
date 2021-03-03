@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以管理 SharePoint Online、商務 OneDrive 和 Microsoft 小組中的隔離檔案。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 22bcf0cefb746e92ccadf8254f4076b47ee475c4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b0515d610b38986c2b5339c1cb967a7b150914a2
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287782"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405815"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -49,15 +49,15 @@ ms.locfileid: "50287782"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須先獲指派安全性與合規性中心的權限，才能執行此文章中的程序：
+- 您必須先在 **Exchange Online** 中指派許可權，才能執行本文中的程式：
   - 若要對所有使用者執行隔離郵件的動作，您必須是「**組織管理**」、「**安全性管理員**」或「**隔離系統管理員**」 <sup>\*</sup> 角色群組的成員。
   - 若要對所有使用者的隔離郵件進行唯讀存取，您必須是 **全域讀取** 者或 **安全性讀者** 角色群組的成員。
 
-  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+  如需詳細資訊，請參閱 [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **附註**：
 
-  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  - 將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 中其他功能的必要許可權 _和_ 許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
   - <sup>\*</sup>**隔離系統管理員** 角色群組的成員也必須是 [exchange online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的「**衛生管理**」角色群組的成員，才能在 exchange online 中執行隔離程式 PowerShell。
 

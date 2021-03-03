@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何建立、修改及刪除 Exchange Online Protection (EOP 中可用的反網路釣魚原則，以含或不含 Exchange Online 信箱的組織) 組織。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bab5e791cb58c4e681a802179583471bb6ab165
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 612c7153f89a404cac736a9a46e8ca5f69e46f65
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287910"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406217"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中設定反網路釣魚原則
 
@@ -66,15 +66,15 @@ ms.locfileid: "50287910"
 
   您無法管理獨立 EOP PowerShell 中的反網路釣魚原則。
 
-- 您必須先獲得 [安全性與合規性中心] 指派的權限，才能使用此文章中的程序：
+- 您必須先在 **Exchange Online** 中指派許可權，才能執行本文中的程式：
   - 若要新增、修改和刪除反網路釣魚原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要唯讀的反網路釣魚原則存取權，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員 <sup>\*</sup> 。
 
-  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+  如需詳細資訊，請參閱 [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **附註**：
 
-  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  - 將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 中其他功能的必要許可權 _和_ 許可權。 如需詳細資訊，請參閱[系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權 <sup>\*</sup> 。
   - <sup>\*</sup> 在 [安全性 & 規範中心] 中，唯讀存取可讓使用者查看自訂反網路釣魚原則的設定。 唯讀使用者看不到預設反網路釣魚原則中的設定。
 

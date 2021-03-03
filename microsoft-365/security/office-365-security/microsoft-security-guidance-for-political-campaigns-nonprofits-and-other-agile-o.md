@@ -22,12 +22,12 @@ ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 摘要：此計劃與實作指南適用於因快速發展而導致威脅增加的組織。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f8ed01d2c41529782c5c714bfe66096b97300712
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 76680ef5b21ae80525a7158ca0473cf82bd154d7
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287398"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406325"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南
 
@@ -65,10 +65,8 @@ ms.locfileid: "50287398"
 
   建立 4 個分別具有內部、私人、敏感性及高度機密安全性層級的 SharePoint Online 小組網站。
 
-如需示範的其他安全性功能或概念證明，請參閱＜[Office 365 測試實驗室指南](https://aka.ms/o365tlgs)＞。
+如需示範的其他安全性功能或概念證明，請參閱＜[Office 365 測試實驗室指南](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)＞。
 
 ## <a name="see-also"></a>另請參閱
-
-[雲端採用測試實驗室指南 (TLG)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
 [Microsoft Cloud IT 架構資源](../../solutions/cloud-architecture-models.md)

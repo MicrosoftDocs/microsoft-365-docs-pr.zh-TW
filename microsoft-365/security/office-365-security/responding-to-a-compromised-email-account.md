@@ -20,12 +20,12 @@ search.appverid:
 description: 了解如何使用可用工具辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1bbd607386b49b45ebd7444c4a91d05e4cee475b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5dfb40c195cb9df9c8f2ac5d1cfbacdda022d416
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288606"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406721"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>回應遭入侵的電子郵件帳戶
 
@@ -204,7 +204,7 @@ ms.locfileid: "50288606"
 
 - [偵測並修復 Microsoft 365 中 Outlook 規則與自訂表單插入式攻擊](detect-and-remediate-outlook-rules-forms-attack.md)
 
-- [網際網路犯罪客訴中心](https://www.ic3.gov/preventiontips.aspx)
+- [網際網路犯罪客訴中心](https://www.ic3.gov/Home/Ransomware)
 
 - [美國證券交易委員會 -「網路釣魚」詐騙](https://www.sec.gov/investor/pubs/phishing.htm)
 

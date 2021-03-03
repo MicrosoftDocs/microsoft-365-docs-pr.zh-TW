@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
-ms.openlocfilehash: 2b2b8a6215a653cee7ea67bafaadddc096abb911
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: c42f8da3235ffe139eaad3de61473a26866ecd3d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288154"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407429"
 ---
 # <a name="microsoft-report-message-and-report-phishing-add-in-license-terms"></a>Microsoft Report Message 和 Report 仿冒 Add-In 授權條款
 
@@ -56,13 +56,13 @@ These license terms are an agreement between you and Microsoft Corporation (or o
     1. use the software in any way that is against the law or to create or propagate malware; or
     1. share, publish, distribute, or lend the software, provide the software as a stand-alone hosted solution for others to use, or transfer the software or this agreement to any third party.
 
-4. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. 如需有關匯出限制的進一步資訊，請造訪 [https://aka.ms/exporting](https://aka.ms/exporting) 。
+4. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit <https://www.microsoft.com/exporting>.
 
 5. **SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 
 6. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
-7. **捆綁仲裁和類別動作棄權。** **如果您是在 (，或公司，您的主要經營地點是) 美國，則適用本節。** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. 如果您和 Microsoft 無法，您和 Microsoft 同意在聯邦仲裁法案 ( "FAA" ) 上進行 **美洲仲裁協會的捆綁個別仲裁** ，而 **不是在「判斷」或陪審團之前的法院內 sue。** Instead, a neutral arbitrator will decide. **類別動作訴訟、全類別 arbitrations、私人律師-一般動作**，以及任何其他在其他人在任何情況下採取代表性容量的情況， **都不允許使用**。不同意所有的各方，也不會結合個別的訴訟。 完整的仲裁合約包含更多字詞，且位於 [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) 。 You and Microsoft agree to these terms.
+7. **捆綁仲裁和類別動作棄權。** **如果您是在 (，或公司，您的主要經營地點是) 美國，則適用本節。** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. 如果您和 Microsoft 無法，您和 Microsoft 同意在聯邦仲裁法案 ( "FAA" ) 上進行 **美洲仲裁協會的捆綁個別仲裁** ，而 **不是在「判斷」或陪審團之前的法院內 sue。** Instead, a neutral arbitrator will decide. **類別動作訴訟、全類別 arbitrations、私人律師-一般動作**，以及任何其他在其他人在任何情況下採取代表性容量的情況， **都不允許使用**。不同意所有的各方，也不會結合個別的訴訟。 The complete Arbitration Agreement contains more terms and is at <https://aka.ms/arb-agreement-1>. You and Microsoft agree to these terms.
 
 8. **ENTIRE AGREEMENT.** This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
 

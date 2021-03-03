@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 48d7e1a7497f9bc2a07a84b36fb07939d25609bf
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 8a91a55d9598b5e780474315ddf1f7019e593fed
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289146"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406159"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自動化調查和回應功能中報告誤報/負片
 
@@ -78,13 +78,13 @@ ms.locfileid: "50289146"
 
 在「行動中心」中，您可以看到已採取的修復動作，並可能復原動作。
 
-1. 請移至 Microsoft 365 的安全性中心 ([https://security.microsoft.com](https://security.microsoft.com)) 。
-2. 在功能窗格中，選取 [ **動作中心**]。 
+1. 請移至 Microsoft 365 的安全性中心 (<https://security.microsoft.com>) 。
+2. 在功能窗格中，選取 [ **動作中心**]。
 3. 選取 [ **記錄** ] 索引標籤，以查看已完成的動作清單。
-4. 選取專案。 其快顯視窗隨即開啟。 
+4. 選取專案。 其快顯視窗隨即開啟。
 5. 在快顯視窗中，選取 [ **復原**]。  (只有可復原的動作才能具有 [ **復原** ] 按鈕。 ) 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
 - [Microsoft Defender for Office 365 中的自動調查](office-365-air.md)

@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 的保護功能上套用標準和嚴格的原則設定
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8f254f2a1ea2dcf1a4b51594a5c340e91cb3f15
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b49b980d217d60865029c8e64ad02ed722f6b86e
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290772"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407453"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的預先設定安全性原則
 
@@ -109,13 +109,13 @@ ms.locfileid: "50290772"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您必須先獲得 [安全性與合規性中心] 指派的權限，才能使用此文章中的程序：
+- 您必須先在 **Exchange Online** 中指派許可權，才能執行本文中的程式：
   - 若要設定預先設定的安全性原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要針對預設安全性原則進行唯讀存取，您必須是 **全域讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+  如需詳細資訊，請參閱 [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
-  **附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  **附注**：將使用者新增至 microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 microsoft 365 中其他功能的必要許可權 _和_ 許可權。 如需詳細資訊，請參閱[系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>使用安全性 & 規範中心，將預先設定的安全性原則指派給使用者
 

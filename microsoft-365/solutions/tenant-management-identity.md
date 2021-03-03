@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: 部署適用于 Microsoft 365 承租人的正確身分識別模型，並強制執行強使用者登入。
-ms.openlocfilehash: 40ea67d9b30a385e36af45f57bd33906c10e495d
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: ca545e0152b567cd566ce939e369988f864042a9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908494"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407167"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 3. Microsoft 365 for enterprise 承租人的身分識別
 
@@ -30,7 +32,7 @@ ms.locfileid: "49908494"
 以下是這兩種類型的身分識別模型及其最大和優點。
 
 
-| Model | 說明 | Microsoft 365 如何驗證使用者認證 | 適用 | 最大好處 |
+| Model | 描述 | Microsoft 365 如何驗證使用者認證 | 適用 | 最大好處 |
 |:-------|:-----|:-----|:-----|:-----|
 | 僅雲端 | 使用者帳戶只存在於 Microsoft 365 租使用者的 Azure AD 租使用者中。 | Microsoft 365 租使用者的 Azure AD 租使用者使用雲端身分識別帳戶執行驗證。 | 不需要內部部署 AD DS 的組織。 | 便於使用。 不需要額外的目錄工具或伺服器。 |
 | 混合式 |  使用者帳戶存在於內部部署 Active Directory 網域服務中 (AD DS) 而且副本也位於您的 Microsoft 365 租使用者的 Azure AD 租使用者中。 Azure AD Connect 會在內部部署伺服器上執行，以將 AD DS 變更同步處理至您的 Azure AD 租使用者。 Azure AD 中的使用者帳戶可能也包含已雜湊的 AD DS 使用者帳戶密碼的雜湊版本。 | Microsoft 365 租使用者的 Azure AD 租使用者可以處理驗證程式，或將使用者重新導向至另一個身分識別提供者。 | 使用 AD DS 或其他身分識別提供者的組織。 | 當存取內部部署或雲端式資源時，使用者可以使用相同的認證。 |
@@ -58,7 +60,7 @@ ms.locfileid: "49908494"
 
 以下是使用混合式識別模型時的兩種驗證類型。
 
-| 驗證類型 | 說明 |
+| 驗證類型 | 描述 |
 |:-------|:-----|
 | 管理的驗證 | Azure AD 會使用本機儲存的雜湊版本的密碼，或將認證傳送至內部部署 AD DS 來驗證內部部署軟體代理程式，以處理驗證程式。 <br> <br>  受管理的驗證類型有兩種：密碼雜湊同步處理 (PHS) 以及透過驗證 (PTA) 。 使用 PHS 時，Azure AD 會自行執行驗證。 使用 PTA 時，Azure AD 具有 AD DS 執行驗證。 |
 | 同盟驗證 | Azure AD 會將要求驗證的用戶端電腦重新導向至另一個身分識別提供者。 |
@@ -105,7 +107,7 @@ ms.locfileid: "49908494"
 - 新增或修改使用者帳戶和群組。 針對僅限雲端的身分識別，您可以使用 Azure AD 工具（例如 Microsoft 365 系統管理中心或 PowerShell）來維護雲端式使用者和群組。 針對混合式身分識別，您可以使用 AD DS 工具維護內部部署使用者和群組。
 - 新增或修改身分識別與裝置存取設定，以強制登入安全性需求。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [![步驟4。遷移您的內部部署 Office 伺服器和資料](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
 

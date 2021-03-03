@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2e359f193f3c8b0502a1995b8e9d515eb03a983
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 250fba7bdf89425bce601112c7863eb9d1c952be
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287686"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407441"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查和回應 (AIR) 
 
@@ -131,10 +131,10 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 新的和改善的安全性中心會在 [Microsoft defender For Office 365](office-365-atp.md) 和 [Microsoft defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)中共同提供 AIR 功能。 透過這些更新與改進功能，您的安全性運作小組將可以跨整個電子郵件、共同作業內容、使用者帳戶和裝置，查看有關自動化調查和修正動作的詳細資料，全部都位於一個地方。
 
 > [!TIP]
-> 新的 Microsoft 365 安全性中心 ([https://security.microsoft.com](https://security.microsoft.com)) 會取代下列的中心：
+> 新的 Microsoft 365 安全性中心 (<https://security.microsoft.com>) 會取代下列的中心：
 >
-> - Office 365 的安全性 & 規範中心 ([https://protection.office.com](https://protection.office.com)) 
-> - Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 
+> - Office 365 的安全性 & 規範中心 (<https://protection.office.com>) 
+> - Microsoft Defender Security Center (<https://securitycenter.windows.com>) 
 >
 > 除了 URL 變更之外，還有一個全新的外觀與風格，其設計目的是讓您的安全性小組獲得更簡化的體驗，並在一個位置看到更多威脅偵測。
 

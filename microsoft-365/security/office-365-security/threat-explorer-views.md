@@ -17,12 +17,12 @@ description: 瞭解如何使用威脅瀏覽器和即時偵測報告，調查和�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: aef3f7fe69e5cbd1d70b7aee3284f0c5dc6416df
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b00b78432a34ec982208586f2fe19c1588354293
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290282"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406477"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測中的視圖
 
@@ -52,6 +52,9 @@ ms.locfileid: "50290282"
 |Microsoft Defender for Office 365 P2 試用版|威脅總管|7 |
 |Microsoft Defender for Office 365 P2 已支付|威脅總管|大約|
 |
+
+> [!NOTE]
+> 我們即將開始展開瀏覽器的 (和即時偵測) 從7天到30天的試用承租人的資料保留和搜尋限制。 這項變更是在藍圖專案的一部分中追蹤的，而不是70544，而且目前在滾出階段。
 
 使用 [ **View** ] （查看）功能表來變更顯示的資訊。 工具提示可協助您決定要使用的視圖。
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員提供範本，以建立與國家、地區和行業法規、標準及法律相關的評估。
-ms.openlocfilehash: 2127daddaf44d25d9a43969e8bfafe5def39a260
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 73777746606c20d43cdf330b04e7301b5c512bcc
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519280"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406745"
 ---
 # <a name="compliance-manager-templates-list"></a>合規性管理員範本清單
 
@@ -42,12 +42,15 @@ ms.locfileid: "49519280"
 
 **哪裡可以找到您的範本**
 
-在 [合規性管理員] 中，移至 [ **評估範本** ] 頁面。 您將會看到您的組織可使用的所有範本清單。
+在 [合規性管理員] 中，移至 [ **評估範本** ] 頁面。 您將會看到您的組織可使用的所有範本清單。 請務必瞭解包含的和特優範本之間的差異：
 
 - **包含的範本** 是組織的授權合約中所包含的範本。
  - [**特優範本**] 顯示您的組織可能選擇取得的其他範本 (請參閱 [服務條款](https://go.microsoft.com/fwlink/?linkid=2132371)) 。
 
 進一步閱讀 [如何查看和管理範本](compliance-manager-templates.md#viewing-and-managing-templates-from-the-assessment-templates-page)。
+
+> [!NOTE]
+> 請參閱 [範本類型](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) 以取得有關包含和精品範本的詳細資訊，以及瞭解哪些專案可供您的組織使用。
 
 ## <a name="included-templates"></a>包含的範本
 
@@ -55,6 +58,9 @@ ms.locfileid: "49519280"
 - [GDPR](https://docs.microsoft.com/compliance/regulatory/gdpr) Microsoft 365，Office 365，Intune) 的歐盟 (
 - [ISO 27001:2013](https://docs.microsoft.com/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Rev 4
+
+> [!NOTE]
+> 針對美國政府社區 (GCC) 中和 GCC 高的客戶，除了上述範本之外，還會包括 Cybersecurity 成熟度模型憑證 (CMMC) 等級1到5範本。
 
 ## <a name="premium-templates"></a>精品範本
 
@@ -129,7 +135,7 @@ ms.locfileid: "49519280"
 - [DFARS](https://docs.microsoft.com/compliance/regulatory/offering-dfars) (Microsoft 365) 
 - Parliament 和 the the the the the the the the the the the the the the the the the the the the the the the the) 365 (理事會
 - 杜拜-健康情況資料保護法規 (Microsoft 365) 
--  (電信規章機關) # B2 Microsoft 365) 的消費者防護規章
+- 杜拜消費者保護法規 (電信規章機關)  (Microsoft 365) 
 - 杜拜 ISR (Microsoft 365) 
 - 電子化聯邦法規的電副程式代碼-Part 748.0 和附錄 A (Microsoft 365) 
 - ENISA 資訊保證架構
@@ -284,8 +290,8 @@ ms.locfileid: "49519280"
 - 猶他州消費者信用 Protection 法案 (Microsoft 365) 
 - 在個人資料上的烏茲別克斯坦法律
 - Victorian 保護性資料安全性標準-2.0 (VPDSS 2.0)  (Microsoft 365) 
-- 越南-消費者權力 Protection 法則 (Microsoft 365) 
-- 越南 (Microsoft 365) 的法律 Cybersecurity
-- 越南-網路資訊安全性的法律
-- 越南- (Microsoft 365) 的資訊技術的法律
+- Microsoft 365) 的越南使用者權利 Protection 法律 (
+- Cybersecurity (Microsoft 365 的越南法律) 
+- 越南網路資訊安全性的法律
+- 越南- (Microsoft 365) 資訊技術的法律
 -  (Microsoft 365) 資訊存取許可權右側的葉門法律

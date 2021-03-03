@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 隱私權對生產力分數的保護方式。
-ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: b522c40cba746f3a4ede2404cf671607d62a3282
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604323"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406557"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>生產力分數的隱私權控制
 
@@ -49,7 +49,7 @@ ms.locfileid: "49604323"
 - Teams 系統管理員
 - 全域讀取者
 - 報告讀取者
-- 使用狀況摘要報告讀取器
+- 使用狀況摘要報告閱讀程式
 
 將「報告讀取者」或「使用狀況摘要報告讀取者」角色指派給負責變更管理和採用的任何人員，但不一定是 IT 管理員。 此角色可讓他們存取 Microsoft 365 系統管理中心的完整生產力評分體驗。
 
@@ -75,9 +75,9 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 您也可以選擇 [人員經驗] 中的 [人員經驗] 區域。 如果您退出宣告，您組織中的任何人都無法查看這些計量，而且您的組織將會從任何涉及通訊、會議、團隊合作、內容共同作業及行動性的計算中移除。 您必須是全域系統管理員，才可選擇您的組織體驗報告。
 
-若要選擇 put：
+若要取消選擇：
 
-1. 在系統管理中心中，移至 [**設定**   >   **組織設定**]，然後在 [**服務**] 索引標籤上選取 [**報告**]。
+1. 在系統管理中心中，移至 [**設定**] [   >   **組織設定**]  >  ****。
 2. 取消選取 [  **允許 Microsoft 365 使用方式資料以供人員經驗深入使用**] 方塊。 若要瞭解如何在 Intune configuration manager 中修改端點分析的資料共用設定，請選取 [ **深入瞭解**]。
 3. 選取 [  **儲存**]。
 

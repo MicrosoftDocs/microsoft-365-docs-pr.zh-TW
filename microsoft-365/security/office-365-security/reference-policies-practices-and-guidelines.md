@@ -17,12 +17,12 @@ ms.collection:
 description: Microsoft 已開發各種原則、程式，並採用數種行業最佳作法，協助保護我們的使用者免受濫用、有害或惡意的電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1065fdef5f804214ca48f7ca54170e6e417490d7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: f53b1c36417b15e366b527dd1c12e4f23c06f632
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289194"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406593"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>參考：原則、實務與指導方針
 
@@ -91,7 +91,7 @@ Microsoft 主動與業界主體和服務提供者合作，以改善網際網路�
 
 - [郵件惡意程式碼動裝置的反濫用運作群組](https://www.m3aawg.org/)
 
-- [線上信任同盟](https://www.otalliance.org/resources)
+- [線上信任同盟](https://www.internetsociety.org/ota/)
 
 - [電子郵件寄件者 & 提供者聯盟](https://www.espcoalition.org/)
 

@@ -19,12 +19,12 @@ description: 在安全性與合規性中心使用 Explorer 和即時偵測， &a
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: daa7b4014d1302743578d79c2e1e0e1d2d5ac61f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 614cd7c256fe8af5fd7474a2101f937b1ecfd0d3
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288894"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406399"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -52,7 +52,26 @@ ms.locfileid: "50288894"
 - [從瀏覽器中的視圖開始自動調查和回應](#start-automated-investigation-and-response) 程式 (Office 365 的 Defender for Office 方案 2) 
 - [調查惡意電子郵件及其他](#more-ways-to-use-explorer-and-real-time-detections)
 
-## <a name="improvements-to-threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測的增強功能
+## <a name="improvements-to-threat-hunting-experience"></a>威脅搜尋體驗的增強功能
+
+### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>Explorer/即時偵測內 MDO 警示的警示識別碼簡介 (預覽) 
+現在，如果您從警示流覽至威脅瀏覽器，它就會在瀏覽器中開啟篩選的視圖，並以警示原則識別碼篩選 (原則識別碼為警示原則) 的唯一識別碼。
+在威脅瀏覽器和即時偵測中引入警示識別碼，使這項整合更為相關 (在威脅瀏覽器和即時偵測中看到警示) 識別碼的範例，這樣您就能看到與特定警示相關的訊息，以及電子郵件的計數。 您也可以查看郵件是否為警示的一部分，以及從該郵件流覽至特定警示。  
+
+當您查看個別的警示時，URL 內可使用警示識別碼;範例是 `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+
+> [!div class="mx-imgBorder"]
+> ![警示識別碼的篩選](../../media/AlertID-Filter.png)
+
+> [!div class="mx-imgBorder"]
+> ![詳細資料快顯視窗中的警示識別碼](../../media/AlertID-DetailsFlyout.png)
+
+ 
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>將瀏覽器的 (和即時的偵測功能延伸) 從7天到30天 (預覽的試用承租人的資料保留和搜尋限制)   
+在這項變更中，您將可以搜尋和篩選超過30天的電子郵件資料 (在威脅瀏覽器/即時偵測中，針對 Office P1 和 P2 試用租使用者的 Defender，進行過去7天) 的增加。 這不會影響 P1 和 P2/E5 客戶的任何實際執行承租人，其已有30天的資料保留和搜尋功能。 
+
+### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>更新威脅瀏覽器的記錄匯出 (預覽的限制)  
+做為此更新的一部分，可從威脅瀏覽器匯出的電子郵件記錄的列數會從9990增加為200000記錄。 目前可匯出的一組資料行將保持不變，但是列數會從目前的限制增加。
 
 ### <a name="tags-in-threat-explorer"></a>威脅瀏覽器中的標記
 
@@ -87,6 +106,9 @@ ms.locfileid: "50288894"
 > ![電子郵件詳細資料標記](../../media/tags-flyout.png)
 
 標記資訊也會顯示在 URL 中按一下 [飛入]。 若要查看，請移至 [網路釣魚] 或 [所有電子郵件] 視圖，然後按一下 [ **URLs** ] 或 [URL] [ **按一下** ]選取個別的 [URL] 浮出視窗，以查看有關該 URL 之按一下的其他詳細資料，包括與該按一下關聯的標記。
+
+
+### <a name="updated-timeline-view"></a>更新時程表視圖
 
 > [!div class="mx-imgBorder"]
 > ![URL 標記](../../media/tags-urls.png)
@@ -287,13 +309,39 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測中的新功能
 
-威脅瀏覽器和即時偵測可使用三項新功能：
-
-- [預覽電子郵件標頭和下載電子郵件內文](#preview-email-header-and-download-email-body)
+- [查看傳送給類比使用者和網域的網路釣魚電子郵件](#view-phishing-emails-sent-to-impersonated-users-and-domains)
+-  [預覽電子郵件標頭和下載電子郵件內文](#preview-email-header-and-download-email-body)
 - [電子郵件時間表](#email-timeline)
 - [匯出 URL 點擊資料](#export-url-click-data)
 
-新功能如下所列。
+### <a name="view-phishing-emails-sent-to-impersonated-users-and-domains"></a>查看傳送給類比使用者和網域的網路釣魚電子郵件
+
+若要識別對類比使用者的使用者和網域的網頁網路嘗試，必須新增至 *要保護的使用者* 清單中。 對於網域，系統管理員必須啟用 *組織網域*，或將功能變數名稱新增至 *要保護的網域*。 您 *可以在模擬區段的*[*反網路釣魚原則] 頁面* 上找到要保護的網域。
+
+若要查看網路釣魚郵件和搜尋模擬的使用者或網域，請使用瀏覽器的 [電子郵件 > 網路釣魚視圖](threat-explorer-views.md) 。
+
+本範例會使用威脅瀏覽器。
+
+1. 在 [ [安全性 & 規範中心](https://protection.office.com) ] (中 https://protection.office.com) ，選擇 [威脅管理] > Explorer (或即時偵測) 。
+
+2. 在 [View] 功能表中，選擇 [電子郵件 > 網路釣魚。
+
+   您可以在這裡選擇模擬的 **網域** 或 **模仿的使用者**。
+
+3. **請選取 [** 模擬 **網域**]，然後在 textbox 中輸入受保護的網域。
+
+   例如，搜尋受保護的功能變數名稱（如 *contoso*、 *contoso.com* 或 *contoso.com.au*）。
+
+4. 在 [電子郵件] 索引標籤 > 詳細資料] 索引標籤下，選取任何郵件的主旨，以查看類比網域/偵測到的位置等其他類比
+
+5. **或** 選取 [模擬 **使用者** ]，然後在 textbox 中輸入受保護使用者的電子郵件地址。
+
+6. 在 [**電子郵件** 索引標籤詳細資料] 索引標籤中選取任何 **郵件的主旨**  >   ，以查看有關使用者或網域的其他模擬資訊和偵測 *到的位置*。
+
+:::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="顯示偵測位置之受保護使用者的威脅瀏覽器詳細資料窗格，以及偵測到使用者) 的網路釣魚模擬 (所偵測到的威脅。":::
+
+> [!TIP]
+> **為了獲得最佳結果**，請使用 *完整電子郵件地址* 來搜尋受保護的使用者。 當您搜尋 *firstname.lastname@contoso.com* 時（例如，調查使用者模擬時），您可以更快速且更順利地找到您的受保護的使用者。 搜尋受保護的網域時，搜尋會以根域 (contoso.com，例如) ，以及功能變數名稱 (*contoso*) 。 搜尋根網域 *contoso.com* 將同時傳回 *contoso.com* 和功能變數名稱 *contoso* 的 impersonations。
 
 ### <a name="preview-email-header-and-download-email-body"></a>預覽電子郵件標頭和下載電子郵件內文
 
@@ -498,3 +546,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 - 即時偵測報告可讓您即時查看偵測。 威脅瀏覽器也會這麼做，但也會提供特定攻擊的其他詳細資料。
 - *所有的電子郵件* view 都可用於威脅瀏覽器，但不會出現在即時偵測報告中。
 - 威脅瀏覽器中包含更多篩選功能和可用的動作。 如需詳細資訊，請參閱 [Microsoft defender For office 365 服務說明：每個 Defender For office 365 方案中可用的功能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+
+## <a name="other-articles"></a>其他文章
+
+[使用電子郵件實體頁面調查電子郵件](mdo-email-entity-page.md)

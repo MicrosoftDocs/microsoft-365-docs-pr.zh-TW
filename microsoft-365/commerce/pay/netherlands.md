@@ -1,8 +1,8 @@
 ---
 title: 荷蘭的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -13,24 +13,33 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f8fbe40237e4ec9eec7eaf242b98df9f677b08cf
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c0b74ce7fa1021f8a405afafcb9cdfb2522a5bbf
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649052"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406931"
 ---
 # <a name="payment-information-for-netherlands"></a>荷蘭的付款資訊
 
 [尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
-請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。
+## <a name="electronic-funds-transfer"></a>電匯
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+**請在您的付款匯款中，以 EUR 及參考發票編號 (s) 支付。**
 
-**銀行：** Citibank，倫敦  
-**SWIFT Code/BIC：** CITIGB2L  
-**IBAN：** GB31CITI18500812207591  
-**分類程式代碼：** 185008  
-**帳戶號碼：** 12207591  
-**帳戶名稱：** 微軟
+如果您擁有由 **Microsoft 愛爾蘭 Operations** 計費的發票，請使用此銀行資訊：
+
+銀行： Citibank，倫敦 \
+SWIFT 程式碼： CITIGB2L \
+IBAN 程式碼： GB31CITI18500812207591 \
+帳戶號碼： 12207591 \
+帳戶名稱： MICROSOFT
+
+如果您已使用 **MICROSOFT BV** 為從2021年3月1日開始的訂單和消耗量計費發票，請使用此銀行資訊：
+
+銀行： Citibank 歐洲 plc \
+SWIFT 程式碼： CITIIE2X \
+IBAN 程式碼： IE70CITI99005170000128 \
+帳戶號碼： 70000128 \
+帳戶名稱： MICROSOFT

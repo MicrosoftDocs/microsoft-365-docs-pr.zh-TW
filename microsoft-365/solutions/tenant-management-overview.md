@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- m365solution-overview
+- tenant-management
 ms.custom:
 - Ent_Solutions
 description: Microsoft 365 承租人的規劃、部署及日常作業的概述。
-ms.openlocfilehash: f7daeaed149b5b6199ac9012b3ffa3d811029099
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 42bde00fbd4ddc1cf92236f099a22b2260dbb980
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908533"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405675"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>適用于企業的 Microsoft 365 租使用者管理
 
@@ -106,7 +108,7 @@ Microsoft 365 租使用者是 Microsoft 365 服務的專用實例，以及儲存
 | 自動化端點更新 | 為用戶端 PAC 檔案和網路裝置及服務中的 Microsoft 365 端點自動化設定和持續更新。 | Microsoft 365 E3 或 E5 | 
 ||||
 
-### <a name="identity"></a>身分識別
+### <a name="identity"></a>身份識別
 
 | 功能 | 描述 | 授權 |
 |:-------|:-----|:-------|

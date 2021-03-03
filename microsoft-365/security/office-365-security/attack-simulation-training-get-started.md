@@ -11,7 +11,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
+ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用攻擊模擬訓練，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 Plan 2 組織中執行模擬網路釣魚和密碼攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ec5b8175db6eb03e59a31a4dc21d9649c5e7616
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a33c212f7d0fd6b0617a8059b03ac90de03fba16
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289888"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407469"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>開始使用攻擊模擬訓練
 
@@ -50,7 +50,7 @@ ms.locfileid: "50289888"
 
 - 攻擊模擬訓練沒有對應的 PowerShell Cmdlet。
 
-- 攻擊類比和訓練相關的資料會與其他 Microsoft 365 服務的客戶資料一起儲存。 如需詳細資訊，請參閱 [Microsoft 365 資料位置](/microsoft-365/enterprise/o365-data-locations)。 目前無法使用下列地區的攻擊模擬： SGP、UAE、ZAF、GER、BRA 及 CHE。
+- 攻擊類比和訓練相關的資料會與其他 Microsoft 365 服務的客戶資料一起儲存。 如需詳細資訊，請參閱 [Microsoft 365 資料位置](../../enterprise/o365-data-locations.md)。 可在下列地區取得攻擊模擬： <、APC、EUR、IND、CAN、澳大利亞、FRA、GBR、JPN 和 KOR。
 
 ## <a name="simulations"></a>類比
 

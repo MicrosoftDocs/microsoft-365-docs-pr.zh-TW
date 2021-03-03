@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用攻擊模擬器，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 方案2組織中執行模擬網路釣魚和密碼攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e877900698d033cb99154b31e32fa04ff7d1010
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 85b376701ffa0c567fd66aa629371e9f69b354e9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289578"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407466"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻擊模擬器
 
@@ -48,6 +48,8 @@ ms.locfileid: "50289578"
 - 您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 您的帳戶必須設定為進行多重要素驗證 (MFA) 以在攻擊模擬器中建立及管理活動。 如需相關指示，請參閱 [設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
+
+- 攻擊模擬程式僅適用于雲端架構信箱。
 
 - 網路釣魚活動會收集事件，並處理30天的事件。 在您啟動市場活動之後，歷史活動資料將可長達90天。
 

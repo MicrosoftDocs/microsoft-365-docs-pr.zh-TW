@@ -11,17 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: 為 Microsoft 365 承租人的裝置和應用程式管理部署正確的選項。
-ms.openlocfilehash: a581af3ec2ec192112656f1919e27f5b05a41cb1
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 96412cb52540e87341fa67e20382951db7becfbe
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908506"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406369"
 ---
-# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 5： 適用于企業承租人的 Microsoft 365 裝置和應用程式管理
+# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 5. 適用于企業承租人的 Microsoft 365 裝置和應用程式管理
 
 Microsoft 365 for enterprise 包含一些功能，可協助您管理裝置，並在組織內使用行動裝置管理 (MDM) 和行動應用程式管理 (MAM) 來管理裝置及使用這些裝置上的應用程式。 您可以管理 iOS、Android、macOS 和 Windows 裝置，以保護您組織的資源（包括您的資料）的存取。 例如，您可以防止將電子郵件傳送給組織外部的人員，或從工作者個人裝置上的個人資料隔離組織資料。
 

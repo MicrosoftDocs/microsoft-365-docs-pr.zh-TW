@@ -19,12 +19,12 @@ description: 深入瞭解 Microsoft Defender for Office 365 方案2中自動調�
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: a11e9ee6a4c2426951fe2b4aa4f2dd08d1931f1c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 40d0d8a14e0dd340d931a1c43425854b96702c65
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287110"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407091"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在 Office 365 中複查及管理修正動作
 
@@ -42,7 +42,7 @@ ms.locfileid: "50287110"
 
 ## <a name="approve-or-reject-pending-actions"></a>核准 (或拒絕) 擱置的動作
 
-1. 請移至 Microsoft 365 security center [https://security.microsoft.com](https://security.microsoft.com)) 並登入。
+1. 請移至 Microsoft 365 security center (<https://security.microsoft.com>) 並登入。
 2. 在功能窗格中，選取 [ **動作中心**]。
 3. 在 [ **暫** 止] 索引標籤上，查看等候核准的動作清單。
 4. 選取清單中的項目。 其快顯視窗隨即開啟。 
@@ -53,19 +53,19 @@ ms.locfileid: "50287110"
 
 ## <a name="undo-one-remediation-action"></a>復原一個修正動作
 
-1. 請移至「行動中心」 ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 並登入。
+1. 請移至「行動中心」 (<https://security.microsoft.com/action-center>) 並登入。
 2. 在 [ **記錄** ] 索引標籤上，選取您要復原的動作。
 3. 在螢幕右側的窗格中，選取 [ **復原**]。
 
 ## <a name="undo-multiple-remediation-actions"></a>復原多項修復動作
 
-1. 請移至「行動中心」 ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 並登入。
+1. 請移至「行動中心」 (<https://security.microsoft.com/action-center>) 並登入。
 2. 在 [ **記錄** ] 索引標籤上，選取您要復原的動作。 請務必選取具有相同動作類型的專案。 隨即開啟彈出窗格。
 3. 在快顯視窗中，選取 [復原]。
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>在多個裝置間移除隔離檔
 
-1. 請移至「行動中心」 ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 並登入。
+1. 請移至「行動中心」 (<https://security.microsoft.com/action-center>) 並登入。
 2. 在 [ **記錄** ] 索引標籤上，選取具有 [ **隔離** 檔] 動作類型的檔案。
 3. 在螢幕右側的窗格中，選取 [套用至此檔案 **的 X 個實例**]，然後選取 [ **復原**]。
 
@@ -74,6 +74,6 @@ ms.locfileid: "50287110"
 - [使用威脅瀏覽器](threat-explorer.md)
 - [如何在自動化調查和回應功能中報告誤報/負片](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在 Office 365 中查看自動調查的詳細資料和結果](air-view-investigation-results.md)

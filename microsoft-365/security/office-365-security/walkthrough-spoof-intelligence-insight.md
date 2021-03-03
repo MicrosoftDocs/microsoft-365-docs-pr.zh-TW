@@ -19,12 +19,12 @@ description: 系統管理員可以瞭解欺騙性智慧洞察力的運作方式�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 91cd26498b2a14166f1be10921b9d5b2ea8d583c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 8ca40e2cde08e5ea213d4c19366f038f1da19fa7
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287968"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407213"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>逐步解說-Microsoft Defender for Office 365 中的欺騙智慧洞察力
 
@@ -41,6 +41,9 @@ ms.locfileid: "50287968"
 如需報表和洞察力的詳細資訊，請參閱 [安全性 & 規範中心中的報告與深入](reports-and-insights-in-security-and-compliance.md)瞭解。
 
 此逐步解說是安全性 & 規範中心的其中一項。 若要瞭解如何導覽報表和真知灼見，請參閱 [相關主題](#related-topics) 區段中的演練。
+
+> [!NOTE]
+> 「欺騙性智慧洞察力」顯示過去7天的資料。 Exchange Online 中的 [欺騙智慧原則](learn-about-spoof-intelligence.md) 和對應的 [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy) Cmdlet PowerShell 顯示過去30天的資料。 [SpoofMailReport](https://docs.microsoft.com/powershell/module/exchange/get-spoofmailreport)顯示最多90天的資料。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
