@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解 Microsoft 365 電子檔探索工具如何處理附加至電子郵件的加密檔，並儲存在 SharePoint 線上和商務 OneDrive 中。
-ms.openlocfilehash: aeb1d927a5da24c55838fe3379451956949d8b4f
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 4ddc66d595b9d2129a7ba1b75e69586ccbd130f7
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044765"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423816"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365 eDiscovery tools 中的解密
 
@@ -35,7 +35,7 @@ ms.locfileid: "50044765"
 
 ## <a name="supported-encryption-technologies"></a>支援的加密技術
 
-Microsoft eDiscovery 工具支援以 Microsoft 加密技術加密的專案。 這些技術包括 Office 郵件加密、Azure 版權管理和 Microsoft 資訊保護 (特別區分) 標籤。 如需 Microsoft 加密技術的相關資訊，請參閱 [encryption](encryption.md)。 不支援以協力廠商加密技術加密的內容。 例如，不支援預覽或匯出以非 Microsoft 技術加密的內容。
+Microsoft eDiscovery 工具支援以 Microsoft 加密技術加密的專案。 這些技術是 Azure 版權管理和 Microsoft 資訊保護 (特別區分) 標籤。 如需 Microsoft 加密技術的相關資訊，請參閱 [encryption](encryption.md)。 不支援以協力廠商加密技術加密的內容。 例如，不支援預覽或匯出以非 Microsoft 技術加密的內容。
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>支援加密專案的 eDiscovery 活動
 
@@ -46,7 +46,7 @@ Microsoft eDiscovery 工具支援以 Microsoft 加密技術加密的專案。 �
 |在電子郵件和網站中搜尋加密檔中的內容     |是      |是      |是      |
 |預覽附加至電子郵件的加密檔     |是      |是     |是       |
 |在 SharePoint 和 OneDrive 中預覽加密檔|否      |否    |是       |
-|查看審閱集中的加密檔    |不適用      |不適用        | 是        |
+|查看審閱集中的加密檔    |N/A      |不適用        | 是        |
 |匯出附加至電子郵件的加密檔    |是       |是  |是    |
 |在 SharePoint 和 OneDrive 中匯出加密檔    |否       |否  |是    |
 |||||

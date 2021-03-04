@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解 Microsoft 365 中的高級 eDiscovery 解決方案的大小寫限制、索引限制和搜尋限制。
-ms.openlocfilehash: 6994a3511b97e9209491fa61a8c6f9bc147b6b87
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 9b36407868a0f426b71a0a551d2f702d0a20b777
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044628"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423434"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>進階電子文件探索的限制
 
@@ -42,17 +42,26 @@ ms.locfileid: "50044628"
 |每個案例的標記數目上限。  <br/> |1000 <br/> |
 |||
 
+## <a name="hold-limits"></a>保留限制
+
+下表列出與高級 eDiscovery 案例相關聯的保留限制。
+
+| 限制的描述 | 限制 |
+|:-----|:-----|
+|單一案例保留中的信箱數目上限。 此限制包括使用者信箱的合併總數，以及與 Microsoft 365 群組、Microsoft 團隊和 Yammer 群組相關聯的信箱。 <br/> |1,000  <br/> |
+|單一案例保留中的網站數目上限。 此限制包括商務網站、SharePoint 網站與 Microsoft 365 群組、Microsoft 團隊和 Yammer 群組相關聯的 OneDrive 總數。  <br/> |100  <br/> |
+
 ## <a name="indexing-limits"></a>索引限制
 
 下表列出高級 eDiscovery 中的索引限制。
 
 | 限制的描述 | 限制 |
-  |:-----|:-----|
-  |從單一檔案解壓縮的字元數上限。  <br/> |10000000<sup>1</sup> <br/> |
-  |單一檔案的大小上限。   <br/> |100 MB<sup>1</sup> <br/> |
-  |檔中內嵌專案的最大深度。  <br/> |25<sup>1</sup> <br/> |
-  |光學字元辨識 (OCR) 所處理的檔案大小上限。  <br/> |24 MB<sup>1</sup> <br/> 
-  |每天每個組織的索引工作數目上限。 <br/> |10<sup>6</sup> <br/>|  
+|:-----|:-----|
+|從單一檔案解壓縮的字元數上限。  <br/> |10000000<sup>1</sup> <br/> |
+|單一檔案的大小上限。   <br/> |100 MB<sup>1</sup> <br/> |
+|檔中內嵌專案的最大深度。  <br/> |25<sup>1</sup> <br/> |
+|光學字元辨識 (OCR) 所處理的檔案大小上限。  <br/> |24 MB<sup>1</sup> <br/> 
+|每天每個組織的索引工作數目上限。 <br/> |10<sup>6</sup> <br/>|  
 |||
 
 ## <a name="search-limits"></a>搜尋限制
@@ -65,8 +74,8 @@ ms.locfileid: "50044628"
 |可以同時執行的搜尋數目上限。 |無限制 |
 |單一使用者可以同時開始的搜尋數目上限。 |10  | 
 |搜尋查詢 (包含運算子和條件) 的最大字元數。 |10000 &nbsp; <sup>2</sup>|
-|首碼萬用字元的最小字母字元數目;例如，**one \** 或 _*set \**_。|個 |  
-|使用首碼萬用字元來搜尋確切片語時，或使用首碼萬用字元和 _ *NEAR** Boolean 運算子時所傳回的最大變種。 |10000 &nbsp; <sup>3</sup>|
+|首碼萬用字元的最小字母字元數目;例如，**一個 \* *_ 或 _* 集 \***。|3  |  
+|使用首碼萬用字元來搜尋確切的字詞，或是使用前置詞萬用字元及 **接近** 的布林運算子時，所傳回的最大變種。 |10000 &nbsp; <sup>3</sup>|
 |搜尋的預覽頁面上顯示的每個使用者信箱的專案數上限。 隨即顯示最新的專案。 |100|
 |搜尋時，預覽頁面上顯示的所有信箱中的專案數上限。|1,000|
 |可針對搜尋結果預覽的信箱數目上限。  如果有超過1000個信箱包含符合搜尋查詢的專案，則預覽中只會提供最多結果的前1000個信箱。|1,000|
@@ -76,6 +85,20 @@ ms.locfileid: "50044628"
 |在 [預覽] 頁面上顯示的所有公用資料夾信箱專案中找到的專案數上限。 |200|
 |可預覽搜尋結果的公用資料夾信箱數目上限。 如果有超過500的公用資料夾信箱包含符合搜尋查詢的專案，則預覽中只可使用具有最多結果的前500個信箱。|500|
 |||
+
+## <a name="search-times"></a>搜尋時間
+
+Microsoft 會收集所有組織執行之搜尋的效能資訊。 雖然搜尋查詢的複雜性可能會影響搜尋時間，會影響搜尋所需時間的最大因素是搜尋的信箱數量。 雖然 Microsoft 不會提供搜尋時間的服務等級協定，但下表會根據搜尋中包含的信箱數目，列出收集搜尋的平均搜尋時間。
+  
+  |**信箱數目**|**平均搜尋時間**|
+  |:-----|:-----|
+  |100  <br/> |30 秒  <br/> |
+  |1,000  <br/> |45 秒  <br/> |
+  |10,000  <br/> |4 分鐘  <br/> |
+  |25,000  <br/> |10 分鐘  <br/> |
+  |50,000  <br/> |20 分鐘  <br/> |
+  |100,000  <br/> |25 分鐘  <br/> |
+  |||
 
 ## <a name="viewer-limits"></a>檢視器限制
 
@@ -91,7 +114,7 @@ ms.locfileid: "50044628"
 |單一匯出的大小上限。|3000000檔或 100 GB （以較少者為准）|
 |單一一天的資料量上限。 | 2 TB |
 |您的組織中同時匯出的最大值。 | 10 <sup>4</sup> |
-|每個使用者的最大同步輸出數目。 | 個 |
+|每個使用者的最大同步輸出數目。 | 3  |
 |單一 PST 檔案的大小上限。 | 10GB |
 |每個審閱集的併發匯出上限。 | 1  |
 |||

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用匯入工具 dto 將多個保管人和其相關聯的資料來源快速新增至高級 eDiscovery 中的案例。
-ms.openlocfilehash: 65ae932fac759896690e5fa65ec1d4173439ccb6
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+ms.openlocfilehash: 98ff3690fe7fd8c956fce436585014ef0db82a26
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740300"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421610"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>將保管人匯入至高級電子檔探索案例
 
@@ -53,10 +53,13 @@ ms.locfileid: "49740300"
 |**保管人 contactEmail**     |管理員的 UPN 電子郵件地址。 例如，sarad@contoso.onmicrosoft.com。           |
 |**已啟用 Exchange** | TRUE/FALSE 值可包含或不包含保管人的信箱。      |
 |**OneDrive 啟用** | TRUE/FALSE 值可包含或不包含保管人的 OneDrive 商務帳戶。 |
-|**為 OnHold**        | TRUE/FALSE 值，表示是否要將保管人資料來源保留。       |
+|**為 OnHold**        | TRUE/FALSE 值，表示是否要將保管人資料來源保留。 <sup>1</sup>     |
 |**Workload1 類型**         |String 值，表示要與保管人關聯的資料來源類型。 可能的值包括： <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
 |**Workload1 位置**     | 視您的工作量類型而定，這會是資料來源的位置。 例如，Exchange 信箱的電子郵件地址或 SharePoint 網站的 URL。 |
 |||
+
+> [!NOTE]
+> <sup>1</sup> 使用保管人匯入程式和 CSV 檔案，您最多可以將1000個信箱和100個網站保留。 您可以使用此程式將超過1000的保管人新增至案例，但保留限制仍然適用。 如需有關保留限制的詳細資訊，請參閱 [Advanced eDiscovery 中的限制](limits-ediscovery20.md#hold-limits)。
 
 以下是具有保管人資訊之 CSV 檔案的範例：<br/><br/>
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可在 Microsoft 365 中搜尋的使用者內容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28e61665d286292f8ba301c313fc3d9bb13065c1
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: df582d46472bc7ca6d6e99e823ab94c0884d60a0
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233189"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423894"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -194,7 +194,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 5. 按一下 [**管理此案例**] 浮出控制項上的 [**儲存**] 以儲存變更。
 
 > [!NOTE]
-將角色群組新增至案例時，您只可以新增您是其成員的角色群組。
+> 將角色群組新增至案例時，您只可以新增您是其成員的角色群組。
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>在多地理位置環境中搜尋和匯出內容
 
@@ -293,7 +293,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 搜尋許可權篩選不適用於 Exchange 公用資料夾。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 - 如果信箱是取消授權或虛刪除的，Azure AD 屬性就不再同步處理至信箱。 如果信箱已被刪除時保留在信箱上，則保留在信箱中的內容仍受限於符合性界限或搜尋許可權篩選器（根據上次在刪除信箱前同步處理 Azure AD 屬性的時間）。 
 

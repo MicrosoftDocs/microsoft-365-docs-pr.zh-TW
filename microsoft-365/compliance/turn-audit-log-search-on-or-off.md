@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: 如何在安全性 & 規範中心開啟或關閉「審核記錄搜尋」功能，以啟用或停用系統管理員搜尋審核記錄的能力。
-ms.openlocfilehash: 1f3da9671b9e5287d715a438a11b0a0eef164584
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 3f3e1b913dd163e74f9e5359de772dfcbf3bd786
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976326"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423674"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>開啟或關閉稽核記錄搜尋
 
-預設會針對 Microsoft 365 和 Office 365 企業組織開啟審核記錄。 這包括具有 E3/G3 或 E5/G5 訂閱的組織。 在規範中心開啟審核記錄搜尋時，您組織中的使用者和系統管理員活動會記錄在審核記錄中，並在90天內保留，而且會根據指派給使用者的授權，保留一年。 不過，您的組織可能會有不想要記錄和保留審核記錄資料的原因。 在這種情況下，全域管理員可能會決定在 Microsoft 365 中關閉審核。
+使用 Microsoft 365 和 Office 365 企業版的組織，預設會開啟 [稽核記錄]。 其中包括使用 E3/G3 或 E5/G5 訂閱的組織。 在規範中心開啟審核記錄搜尋時，您組織中的使用者和系統管理員活動會記錄在審核記錄中，並在90天內保留，而且會根據指派給使用者的授權，保留一年。 不過，您的組織可能會有不想要記錄和保留審核記錄資料的原因。 在這種情況下，全域管理員可能會決定在 Microsoft 365 中關閉審核。
 
 > [!IMPORTANT]
 > 如果您在 Microsoft 365 中關閉「審計記錄搜尋」，您就無法使用 Office 365 管理活動 API 或 Azure Sentinel 來存取您組織的審計資料。 依照本文中的步驟關閉審核記錄搜尋，表示當您使用安全性 & 合規性中心或在 Exchange Online PowerShell 中執行 **Search-UnifiedAuditLog** Cmdlet 來搜尋審核記錄時，不會傳回任何結果。 這也表示無法透過 Office 365 管理活動 API 或 Azure Sentinel 使用審核記錄。
@@ -43,7 +43,7 @@ ms.locfileid: "49976326"
     
 - 如需搜尋審核記錄的逐步指示，請參閱在 [安全性 & 規範中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。 如需 Microsoft 365 管理活動 API 的詳細資訊，請參閱 [開始使用 microsoft 365 管理 APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。
 
-- 若要確認已開啟「審計記錄搜尋」，您可以在 Exchange Online 中執行下列命令 PowerShell:
+- 若要驗證 [稽核記錄搜尋] 已開啟，您可以在 Exchange Online PowerShell 中執行下列命令：
 
     ```powershell
     Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
@@ -71,7 +71,7 @@ ms.locfileid: "49976326"
 
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>使用 PowerShell 開啟審計記錄搜尋
 
-1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 執行下列 PowerShell 命令，在 Office 365 中開啟審計記錄搜尋。
 
@@ -85,7 +85,7 @@ ms.locfileid: "49976326"
 
 您必須使用 Exchange Online PowerShell 關閉「審核記錄搜尋」。
   
-1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 執行下列 PowerShell 命令，以關閉審核記錄搜尋。
 

@@ -1,5 +1,5 @@
 ---
-title: 如何重新培訓內容瀏覽器中的分類器
+title: 如何重新定型內容總管的分類器
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,20 +15,27 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何在內容瀏覽器中提供對 trainable 分類器的意見反應。
-ms.openlocfilehash: 786ebb682e9cdd96c0c6503294bd4f316f777f68
-ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
+ms.openlocfilehash: fabfe8e4df377c25012b358960d7f7ff7ff994bc
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752619"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423260"
 ---
-# <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新培訓內容瀏覽器中的分類器
+# <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新定型內容總管的分類器
 
 Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 經過訓練之後，您可以使用它來識別應用 Office 敏感度標籤、通訊合規性原則及保留標籤原則的專案。
 
 本文說明如何透過提供額外的意見反應，以改善自訂 trainable 分類器和部分預先訓練的分類器的效能。
 
 若要深入瞭解不同類型的分類器，請參閱 [瞭解如何 trainable 的分類](classifier-learn-about.md)器。
+
+觀賞這段影片，以快速摘要顯示調整和重新培訓程式。 您仍然需要閱讀本文的完整文章，以取得詳細資料。
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
+
 
 ## <a name="permissions"></a>權限
 
@@ -52,7 +59,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 > [!NOTE]
 > 分類器必須已發佈且在使用之前才能 retrained。
 
-## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新培訓內容瀏覽器中的分類器
+## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新定型內容總管的分類器
 
 1. 使用合規性管理員或安全性系統管理員角色存取權登入 microsoft 365 合規性中心，並開啟 **microsoft 365 規範中心**  >  **資料分類**  >  **內容瀏覽器**。 
 2. 在 [ **標籤、資訊類型] 或 [類別** ] 清單中的 [篩選] 底下，展開 [ **Trainable** 類別]。
@@ -102,7 +109,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 
 我們比較 retrained 和發行的分類器之兩組專案的效能值，以提供是否有改進重新發佈的建議。 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [深入瞭解 trainable 的分類器](classifier-learn-about.md)
+- [深入了解可訓練分類器](classifier-learn-about.md)
 - [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

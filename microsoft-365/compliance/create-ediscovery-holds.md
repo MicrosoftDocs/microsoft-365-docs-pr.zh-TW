@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以建立與核心 eDiscovery 案例相關聯的保留，以保留可能與調查相關的內容。
-ms.openlocfilehash: 76ea455af0a7600cd901bdcdaeb0e4b15ef9bc43
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 377a9e7a31864f177f0ccbdc4cf2789fdc1cf373
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988147"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423464"
 ---
 # <a name="create-an-ediscovery-hold"></a>建立電子文件探索保留
 
@@ -138,7 +138,7 @@ ms.locfileid: "49988147"
 
 ### <a name="preserve-card-content"></a>保留卡片內容
 
-同樣地，小組頻道中的應用程式所產生的卡片內容，1:1 聊天和1： N 群組聊天會儲存在信箱中，而且會在信箱置於 eDiscovery 暫止時保留。 *卡片* 是簡短內容片段的 UI 容器。 名片可以有多個屬性和附件，也可以包含觸發卡片動作的按鈕。 如需詳細資訊，請參閱 [卡片](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 與其他小組內容不同的是，智慧卡內容的儲存位置取決於使用卡的位置。 小組通道中使用的卡片內容會儲存在小組群組信箱中。 1:1 和1xN 聊天室的卡片內容會儲存在聊天參與者的信箱中。
+同樣地，小組頻道中的應用程式所產生的卡片內容，1:1 聊天和1： N 群組聊天會儲存在信箱中，而且會在信箱置於 eDiscovery 暫止時保留。 *卡片* 是一個 UI 容器，用於儲存簡短的內容片段。 名片可以有多個屬性和附件，也可以包含觸發卡片動作的按鈕。 如需詳細資訊，請參閱 [卡片](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 與其他 Teams 內容一樣，儲存卡片內容的位置取決於卡片的使用位置。 Teams 頻道中使用的卡片之內容儲存在 Teams 群組信箱中。 1:1 和 1xN 聊天的卡片內容儲存在聊天參與者的信箱中。
 
 ### <a name="preserve-meeting-and-call-information"></a>保留會議及電話資訊
 
@@ -221,10 +221,10 @@ ms.locfileid: "49988147"
 
   | 限制的描述 | 限制 |
   |:-----|:-----|
-  |組織的案例數目上限  <br/> |無限制  <br/> |
-  |組織的 eDiscovery 保留數目上限  <br/> |10,000  <br/> |
-  |單一電子檔保留中的信箱數目上限  <br/> |1,000  <br/> |
-  |單一 eDiscovery 保留中商務網站的 SharePoint 數目上限及 OneDrive  <br/> |100  <br/> |
+  |組織的案例數目上限。  <br/> |無限制  <br/> |
+  |組織的 eDiscovery 保留數目上限。  <br/> |10,000  <br/> |
+  |單一 eDiscovery 保留中的信箱數目上限。 此限制包括使用者信箱的合併總數，以及與 Microsoft 365 群組、Microsoft 團隊和 Yammer 群組相關聯的信箱。  <br/> |1,000  <br/> |
+  |單一 eDiscovery 保留中的網站數目上限。 此限制包括商務網站、SharePoint 網站與 Microsoft 365 群組、Microsoft 團隊和 Yammer 群組相關聯的 OneDrive 總數。  <br/> |100  <br/> |
   |在 eDiscovery 首頁顯示的案例數目上限，以及在案例中的 [保留]、[搜尋] 和 [匯出] 索引標籤上顯示的專案數上限。 <sup>1</sup> |1,000|
   |||
 

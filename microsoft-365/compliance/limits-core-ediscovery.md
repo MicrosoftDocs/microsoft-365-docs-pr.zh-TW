@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明 Microsoft 365 核心 eDiscovery 案例中的限制。
-ms.openlocfilehash: 43d267acdb0c1fee0202c74832b376e066241d7c
-ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
+ms.openlocfilehash: 2699e9b2511c742bb295f69611a976f6a3955980
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799660"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423444"
 ---
 # <a name="limits-in-core-ediscovery"></a>核心 eDiscovery 的限制
 
@@ -30,10 +30,10 @@ ms.locfileid: "49799660"
     
   | 限制的描述 | 限制 |
   |:-----|:-----|
-  |組織的案例數目上限  <br/> |無限制  <br/> |
-  |組織的案例保留數目上限  <br/> |10,000  <br/> |
-  |單一案例保留中的信箱數目上限  <br/> |1,000  <br/> |
-  |單一案例保留中的商務網站 SharePoint 和 OneDrive 數目上限  <br/> |100  <br/> |
+  |組織的案例數目上限。  <br/> |無限制  <br/> |
+  |組織的案例保留數目上限。  <br/> |10,000  <br/> |
+  |單一案例保留中的信箱數目上限。 此限制包括使用者信箱的合併總數，以及與 Microsoft 365 群組、Microsoft 團隊和 Yammer 群組相關聯的信箱。  <br/> |1,000  <br/> |
+  |單一案例保留中的網站數目上限。 此限制包括商務網站、SharePoint 網站與 Microsoft 365 群組、Microsoft 團隊和 Yammer 群組相關聯的 OneDrive 總數。  <br/> |100  <br/> |
   |顯示在核心 eDiscovery 首頁上的案例數目上限，以及在案例中的 [保留]、[搜尋] 和 [匯出] 索引標籤上顯示的專案數上限。 <sup>1</sup> |1,000|
   |||
 

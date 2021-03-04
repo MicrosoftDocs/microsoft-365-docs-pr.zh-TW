@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何使用資料遺失防護 (DLP) 原則，以保護具有協力廠商系統屬性的檔。
-ms.openlocfilehash: cf026e447ad1f0da3486a36dd5e36c52c09998cb
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 971d2a1dd4f69f7bbd2598e31fc99c9c5cfe1eda
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288226"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423796"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>建立 DLP 原則來保護具有 FCI 或其他屬性的文件
 
@@ -105,9 +105,9 @@ DLP 原則只會尋找特定的屬性名稱/值對。 只要屬性具有對應�
 
 條件 **檔案屬性包含這些值中的任何一個** 暫時無法在安全性與合規性中心的 UI 中使用 &amp; ，但是您仍然可以使用 PowerShell 來使用此條件。 您可以使用  `New\Set\Get-DlpCompliancePolicy` Cmdlet 來使用 DLP 原則，並搭配參數使用 Cmdlet，  `New\Set\Get-DlpComplianceRule`  `ContentPropertyContainsWords` 以新增條件 **檔案屬性包含這些值中的任何一個**。
 
-如需這些 Cmdlet 的詳細資訊，請參閱 [安全性 &amp; 規範中心 Cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)。
+如需這些 Cmdlet 的詳細資訊，請參閱 [安全性 &amp; 規範中心 Cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)。
 
-1. [&amp;使用遠端 PowerShell 連接至安全規範中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [&amp;使用遠端 PowerShell 連接至安全規範中心](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. 使用建立原則  `New-DlpCompliancePolicy` 。
 

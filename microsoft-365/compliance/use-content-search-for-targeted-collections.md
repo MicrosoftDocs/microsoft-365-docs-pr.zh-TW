@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: 在 Microsoft 365 規範中心使用內容搜尋，以執行目標的集合，以確保專案位於特定信箱或網站資料夾中。
-ms.openlocfilehash: 0908b8262942e7a1c4d80bc511d4b8cbcc6dc646
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 9c549b3ae418d13b6e1aafbf0cc171c52f89e621
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376588"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423454"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>對目標集合使用內容搜尋
 
@@ -47,11 +47,11 @@ Microsoft 365 規範中心的內容搜尋功能不會在 UI 中提供直接的�
   Get-PSSession | Remove-PSSession
   ```
 
-    如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)＞。
+    如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)＞。
 
 - 腳本包含最低的錯誤處理。 腳本的主要用途是快速顯示可在內容搜尋的搜尋查詢語法中使用的信箱資料夾 IDs 或網站路徑清單，以執行目標集合。
 
-- 在任何 Microsoft standard support 方案或服務下，都不支援本主題中提供的範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
+- 在任何 Microsoft standard support 方案或服務下，都不支援本主題中提供的範例腳本。 範例指令碼係依「現狀」提供，不含任何種類的擔保方式。 Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。 使用或操作範例指令碼和文件發生的所有風險，皆屬於您的責任。 Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
   
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>步驟1：執行腳本以取得信箱或網站的資料夾清單
 
@@ -234,7 +234,7 @@ Microsoft 365 規範中心的內容搜尋功能不會在 UI 中提供直接的�
 
     - 在 [ **Exchange 電子郵件**] 旁，按一下 **[選擇使用者、群組或小組** ]，然後新增您在步驟1中執行腳本時所指定的相同信箱。
 
-      或
+      或者
 
     - 在 [ **SharePoint 網站**] 旁，按一下 **[選擇網站** ]，然後新增當您在步驟1中執行腳本時所指定的相同網站 URL。
 
@@ -268,7 +268,7 @@ Microsoft 365 規範中心的內容搜尋功能不會在 UI 中提供直接的�
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 使用本文中的腳本時，請記住下列事項，以執行目標集合。
   

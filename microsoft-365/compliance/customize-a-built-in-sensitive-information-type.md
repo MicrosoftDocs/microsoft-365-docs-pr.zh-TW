@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何建立自訂機密資訊類型，讓您能夠使用符合貴組織需求的規則。
-ms.openlocfilehash: 745cea9a0851168999335e27b970276726b516d0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40584b430af6e822b115e014c20481c027222aae
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546661"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423402"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 
-在內容中尋找機密資訊時，您需要以所謂的規則** 來說明資訊。資料外洩防護 (DLP) 包含您可以立即使用之最常用機密資訊類型的規則。若要使用這些規則，您必須將其包含在原則中。您也許想要調整這些內建規則以符合貴組織的特定需求，您可以藉由建立自訂機密資訊類型來完成。本主題說明如何自訂其中包含現有規則集合的 XML 檔案，以偵測更大範圍的潛在信用卡資訊。 
+在內容中尋找機密資訊時，您需要以所謂的規則來說明資訊。資料外洩防護 (DLP) 包含您可以立即使用之最常用機密資訊類型的規則。若要使用這些規則，您必須將其包含在原則中。您也許想要調整這些內建規則以符合貴組織的特定需求，您可以藉由建立自訂機密資訊類型來完成。本主題說明如何自訂其中包含現有規則集合的 XML 檔案，以偵測更大範圍的潛在信用卡資訊。 
   
 您可以採用此範例並且將其套用至其他內建機密資訊類型。如需預設機密資訊類型清單及 XML 定義，請參閱[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)。 
   
@@ -58,7 +58,7 @@ ms.locfileid: "47546661"
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>尋找您要在 XML 中修改的規則
 
-上述 Cmdlet 會匯出整個*規則集合*，該集合包含我們提供的預設規則。接下來您必須特別尋找您想要修改的「信用卡號碼」規則。 
+上述 Cmdlet 會匯出整個 *規則集合*，該集合包含我們提供的預設規則。接下來您必須特別尋找您想要修改的「信用卡號碼」規則。 
   
 1. 使用文字編輯器開啟您在上一節中匯出的 XML 檔案。
     
@@ -201,7 +201,7 @@ ms.locfileid: "47546661"
   
 1. 以 Unicode 編碼方式將它儲存為 .xml 檔案。這非常重要，因為如果檔案是以其他編碼方式儲存，則規則不會運作。
     
-2. [透過遠端 PowerShell 連線到安全性與合規性中心。](https://go.microsoft.com/fwlink/?linkid=799771)
+2. [透過遠端 PowerShell 連線到安全性與合規性中心。](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
     
 3. 在 PowerShell 中，輸入下列命令。
 

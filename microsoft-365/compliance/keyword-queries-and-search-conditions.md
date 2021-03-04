@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解您可以使用 Microsoft 365 中的搜尋和 eDiscovery 工具進行搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: 6593fb6782c245781983a9766ac4d67dfe3f33e2
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: 9ad280678cac2d266b6e4c68ac66fb2e5afe0bf1
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084664"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423916"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>內容搜尋和 eDiscovery 的關鍵字查詢和搜尋條件
 
@@ -171,7 +171,7 @@ ms.locfileid: "50084664"
 |:-----|:-----|:-----|
 |AND|keyword1 與 keyword2|會傳回包含所有指定關鍵字或運算式的專案  `property:value` 。 例如，  `from:"Ann Beebe" AND subject:northwind` 會傳回 Beebe 中，包含主旨行中的「northwind」一詞的所有郵件。 <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|會 *傳回包含* `keyword2` 或 `keyword3` 同時包含的專案 `keyword1` 。   因此，此範例相當於查詢  `(keyword2 OR keyword3) AND keyword1` 。  <br/> 在  `keyword1 + keyword2` 符號) 之後的查詢 (與 **+** 使用 **AND** 運算子不同。 此查詢相當於並傳回  `"keyword1 + keyword2"` 精確階段的專案  `"keyword1 + keyword2"` 。|
-|OR|keyword1 或 keyword2|會傳回包含一或多個指定關鍵字或運算式的專案  `property:value` 。 <sup>2</sup>|
+|「或」|keyword1 或 keyword2|會傳回包含一或多個指定關鍵字或運算式的專案  `property:value` 。 <sup>2</sup>|
 |不|keyword1 未 keyword2  <br/> 不是來自： "王 Beebe"  <br/> 非類型： im|排除關鍵字或運算式所指定的專案  `property:value` 。 在第二個範例中，排除王小姐 Beebe 所傳送的郵件。 第三個範例會排除任何立即訊息交談，例如儲存至 [交談歷程記錄] 信箱資料夾的商務用 Skype 交談。 <sup>2</sup>|
 |-|keyword1 -keyword2|與 **NOT** 運算子相同。 所以此查詢會傳回包含的專案，  `keyword1` 並將包含的專案排除  `keyword2` 。|
 |附近|keyword1 NEAR (n) keyword2|會傳回彼此接近的字詞，其中 n 等於文字相隔的專案數。 例如，傳回 `best NEAR(5) worst` 任何文字 "惡化" 位於5字 "最佳" 以內的專案。 若未指定數值，則預設的距離為八個字。 <sup>2</sup>|
@@ -183,7 +183,7 @@ ms.locfileid: "50084664"
 |\>=|property \> = 值|表示所搜尋的屬性大於或等於特定值。<sup>1</sup>|
 |..|屬性： value1。value2|表示所搜尋的屬性大於或等於 value1 且小於或等於 value2。<sup>1</sup>|
 |"  "|"公平值"  <br/> subject:"Quarterly Financials"|使用雙引號 ( "" ) 來搜尋關鍵字和搜尋查詢中的確切片語或字詞  `property:value` 。|
-|\*|貓\*  <br/> subject： set\*|首碼萬用字元搜尋 (，星號會放在字結尾的字) 比對關鍵字或查詢中零個或多個字元的相符  `property:value` 。 例如，  `title:set*` 會傳回檔，其中包含 word set、setup 及 set (及其他以「設定」 ) 在檔標題中的文字。  <br/><br/> **附注：** 您只能使用首碼萬用字元搜尋;例如， **cat \* *_ 或 _* 集 \* *_。尾碼搜尋 (_* \* cat** ) 、中綴搜尋 (**c \* t**) 及子字串搜尋 (不支援 **\* cat \***) 。|
+|\*|貓\*  <br/> subject： set\*|首碼萬用字元搜尋 (，星號會放在字結尾的字) 比對關鍵字或查詢中零個或多個字元的相符  `property:value` 。 例如，  `title:set*` 會傳回檔，其中包含 word set、setup 及 set (及其他以「設定」 ) 在檔標題中的文字。  <br/><br/> **附注：** 您只能使用首碼萬用字元搜尋;例如， **cat \* *_ 或 _* 集 \* *_。尾碼搜尋 (_* \* cat** ) 、中綴搜尋 (**c \* t**) 及子字串搜尋 (不支援 **\* cat \***) 。<br/><br/>此外，新增句點 ( \。 ) 至前置詞的萬用字元搜尋會變更傳回的結果。 這是因為句點會被視為停用字詞。 例如，搜尋 **cat \* *_ 和搜尋 _* cat。 \*** 會傳回不同的結果。 建議您不要在前置詞萬用字元搜尋中使用句點。 |
 |(  )|從:contoso)  (公平或自由) 及 (  <br/>  (IPO 或初始) 及 (股票或共用)   <br/>  (季度財務) |括弧群組組成 Boolean 片語、  `property:value` items 和關鍵字。 例如，傳回  `(quarterly financials)` 包含文字季度和財務的專案。|
 |||||
    

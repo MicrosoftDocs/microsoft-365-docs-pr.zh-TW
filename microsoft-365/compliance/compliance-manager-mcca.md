@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何使用 Microsoft 規範設定分析器，透過 Microsoft 合規性管理員快速開始和執行。
-ms.openlocfilehash: 86c4b04deb8313f3013a6d9ad349c0f4112db773
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.openlocfilehash: 41315dd072e089bd61767181b17dffd5fba88281
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122393"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423424"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>合規性管理員的 Microsoft 規範設定分析器 (預覽) 
 
@@ -33,7 +33,7 @@ MCCA 可協助您快速查看合規性管理員中的哪些改進動作適用于
 
 若要瞭解 MCCA 的其他資源，請造訪 [GitHub 上的讀我檔案指示](https://github.com/OfficeDev/MCCA#overview)。 此頁面提供有關必要條件的詳細資訊，並提供完整的安裝指示。 您不需要 GitHub 帳戶即可存取此頁面。
 
-**可用性**： MCCA 可供所有組織使用 Office 365 和 Microsoft 365 授權和美國政府社區 (GCC) 適中的客戶，以及執行將服務擴充至 GCC 高的客戶的計畫。
+**可用性**： MCCA 可供所有使用 Office 365 和 Microsoft 365 授權和美國政府社區 (GCC) 適中和 GCC 高客戶的組織使用，並提供將服務擴充為 DOD 客戶的計畫。
 
 ## <a name="install-mcca-and-run-a-report"></a>安裝 MCCA 並執行報告
 
@@ -64,6 +64,12 @@ MCCA 可協助您快速查看合規性管理員中的哪些改進動作適用于
     ```powershell
     Get-MCCAReport
     ```
+   如果您是擁有 GCC 的高客戶，您必須提供額外的輸入參數來執行報告：
+
+    ```powershell
+    Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
+    ```
+
 3. MCCA 執行後，它會進行初始版本檢查，並要求認證。 在輸入的使用者名稱提示字元下，使用您的 Microsoft 365 帳戶電子郵件地址登入 ([查看符合建立報告) 的角色](#role-based-reporting) 。 然後在密碼提示字元處輸入您的密碼。
 
 您的報告將會花大約2-5 分鐘的時間來產生。 完成後，瀏覽器視窗隨即開啟，並顯示您的 HTML 報告。 每次執行工具時，它會要求您的認證，並產生新的報告。 此報告儲存在本機的下列目錄中：

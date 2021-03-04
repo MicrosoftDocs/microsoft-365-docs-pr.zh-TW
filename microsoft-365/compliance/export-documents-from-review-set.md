@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何選取及匯出簡報或外部評論的審閱集合中的內容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b3be21d4c90c861c83acf612e9aadc373189f7ba
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: a2ca8e2f400d9f257549e59305d1fd56586185e2
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285359"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423644"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>從高級 eDiscovery 的審閱集中匯出檔
 
@@ -44,7 +44,7 @@ ms.locfileid: "48285359"
 
 - 中繼資料
   
-  - 載入檔-此檔案包含每個檔案的中繼資料。 如需包含哪些欄位的詳細資訊，請參閱 [Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md) 。 這個檔案通常可由協力廠商的 eDiscovery 工具來 ingested。
+  - 載入檔-此檔案包含每個檔案的中繼資料。 如需包含哪些欄位的詳細資訊，請參閱 [Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md)。 這個檔案通常可由協力廠商的 eDiscovery 工具來 ingested。
   
   - 標記-選取時，標籤資訊將會包含在載入檔中。
 
@@ -70,7 +70,7 @@ ms.locfileid: "48285359"
   
   - 緊縮的目錄結構-檔會匯出並包含在下載中。
   
-  - 匯出至您的 Azure 儲存體帳戶的壓縮目錄結構-檔案會匯出至您組織的 Azure Storage accouunt。
+  - 匯出至您的 Azure 儲存體帳戶的壓縮目錄結構-檔案會匯出至您組織的 Azure 儲存體帳戶。
 
 ## <a name="loose-files-and-pst-export-structure"></a>鬆散檔與 PST 匯出結構
 
@@ -105,4 +105,4 @@ ms.locfileid: "48285359"
   - Extracted_text_files-此資料夾包含在處理時所產生的所有解壓縮文字檔。
 
 > [!NOTE]
-> 匯出工作會在案例週期內保留，只要案例並未刪除，就可以下載。
+> 匯出工作會在案例週期內保留。 不過，您必須在匯出工作完成後的30天內，從匯出工作下載內容。

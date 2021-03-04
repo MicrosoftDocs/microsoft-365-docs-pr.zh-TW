@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 針對系統管理員：瞭解如何啟用自動擴充封存，可為使用者提供 Exchange Online 信箱的無限存放區。 您可以為整個組織啟用自動展開的封存，也可以只為特定使用者啟用此功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f95d635c6f6dc89e91b98e9219b491ec34a3e5d7
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 967b623b8ac1898567b5e6e779e8e557404b5242
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867991"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423654"
 ---
 # <a name="enable-unlimited-archiving---admin-help"></a>啟用無限封存-系統管理協助
 
@@ -42,13 +42,13 @@ ms.locfileid: "49867991"
 
 - 自動展開封存可防止您復原或還原非使用中的 [信箱](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes)。 這表示如果您為信箱啟用自動展開的封存，而且信箱在日後變為非使用中，則您將無法透過將內容合併至現有的信箱) 來 [復原非使用中的信箱](recover-an-inactive-mailbox.md) () 或將 [其還原](restore-an-inactive-mailbox.md) (。 若在非使用中的信箱上啟用自動擴充封存，恢復資料的唯一方法是使用 Microsoft 365 規範中心的「內容搜尋」工具，從信箱中匯出資料，然後匯入至另一個信箱。 如需詳細資訊，請參閱非使用中 [信箱](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives)的「非使用中信箱和自動展開的封存」一節。
 
-- 您無法使用 Exchange 系統管理中心或安全性 & 規範中心來啟用自動擴充封存。 您必須使用 Exchange Online PowerShell。 若要使用遠端 PowerShell 連線到您的 Exchange Online 組織，請參閱 [connect To Exchange online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+- 您無法使用 Exchange 系統管理中心或安全性 & 規範中心來啟用自動擴充封存。 您必須使用 Exchange Online PowerShell。 若要使用遠端 PowerShell 連線到您的 Exchange Online 組織，請參閱 [connect To Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>啟用整個組織的自動擴充封存
 
 您可以為整個組織啟用自動展開封存。 開啟之後，會針對現有的使用者信箱及建立的新使用者信箱啟用自動擴充封存。 當您建立使用者信箱時，請務必啟用使用者的主要封存信箱，這樣新使用者信箱的自動擴充封存功能才能運作。
   
-1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 在 Exchange Online PowerShell 中執行下列命令，以啟用整個組織的自動擴充封存。
 
@@ -68,7 +68,7 @@ ms.locfileid: "49867991"
 
 新增此額外的空間，以避免在自動展開的封存布建之前可能發生的任何儲存問題。 當您為整個組織啟用自動擴充封存時，  *將不會*  新增額外的儲存空間，如前一節所述。
   
-1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 在 Exchange Online PowerShell 中執行下列命令，以啟用特定使用者的自動擴充封存。 如先前所述，必須先啟用使用者的封存信箱 (主封存) ，才能為該使用者開啟自動展開的封存。
 
@@ -113,7 +113,7 @@ Get-Mailbox -InactiveMailboxOnly | FL UserPrincipalName,AutoExpandingArchiveEnab
 
     ![啟用自動擴充封存後，就會忽略 ArchiveQuota 和 ArchiveWarningQuota 屬性](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 - 您也可以使用 PowerShell 來啟用封存信箱。 例如，您可以在 Exchange Online PowerShell 中執行下列命令，以啟用尚未啟用封存信箱之所有使用者的封存信箱。
 

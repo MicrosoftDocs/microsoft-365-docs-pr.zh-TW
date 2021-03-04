@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何將信箱變成非使用中的信箱，保留先前員工的信箱內容。
-ms.openlocfilehash: f7b81d259fb850c05a1539c37008c04d43030fde
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 7a10b3327dda148c3328f53826a81464b86a7a0a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655710"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423614"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>非作用中信箱概觀
 
@@ -42,9 +42,9 @@ ms.locfileid: "48655710"
 
 ## <a name="inactive-mailboxes-and-microsoft-365-retention-policies"></a>非使用中的信箱和 Microsoft 365 保留原則
 
-除了訴訟暫止之外，使用安全性 & 規範中心內的新 Microsoft 365 保留原則功能，也就是讓信箱成為非使用中信箱的另一種方式。 To use a retention policy to make an inactive mailbox:
+除了訴訟暫止之外，在 Microsoft 365 規範中心使用新的 Microsoft 365 保留原則功能，也是讓信箱成為非使用中的另一種方式。 To use a retention policy to make an inactive mailbox:
 
-- 必須設定它以保留內容或保留，然後刪除內容。 如果保留原則設定為僅刪除內容，則套用原則的信箱在信箱刪除時不會變成停用狀態。
+- 必須設定它以保留內容或保留，然後刪除內容。 如果保留原則設定為僅刪除內容，則套用原則的信箱在刪除使用者帳戶時不會變成停用狀態。
 
 - 它具有 （因為 Skype 相關的內容會儲存在使用者的信箱中） 可套用到 Exchange 信箱或商務用 Skype位置。
 
@@ -95,7 +95,7 @@ ms.locfileid: "48655710"
 
 ## <a name="creating-an-inactive-mailbox"></a>建立非使用中的信箱
 
-若要讓信箱成為非使用中的信箱，必須為其指派 exchange Online Plan 2 授權 (或 Exchange online Plan 1 授權與 Exchange Online 封存附加元件授權) ，以便在信箱刪除之前，可將訴訟暫止或 Microsoft 365 保留原則套用至信箱。 在刪除信箱之後，就可以將任何與其相關聯的 Exchange Online 授權指派給新的使用者。
+若要讓信箱成為非使用中的信箱，必須為其指派 exchange Online Plan 2 授權 (或 Exchange online Plan 1 授權與 Exchange Online 封存附加元件授權) ，以便在信箱刪除之前，可將訴訟暫止或 Microsoft 365 保留原則套用至信箱。 刪除使用者帳戶後，就可以將任何與該使用者帳戶相關聯的 Exchange Online 授權指派給新的使用者。
 
 下表摘要說明程序，讓不同保留案例的非使用中信箱。 如需詳細資訊，請參閱 [管理非](create-and-manage-inactive-mailboxes.md)使用中的信箱。
 
