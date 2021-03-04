@@ -17,16 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: b3b0451f2f1b0950f2b2ee723025a796f1814038
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 5c992a988dbffc12824b2b64c1ea9a8fb6d22d67
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261500"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406523"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> 如果您在 Teams 訊息中得知保留原則已刪除聊天和訊息，請參閱 [關於保留原則的 Teams 訊息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
+> 
+> 本頁面上的資訊適用於管理這些保留原則的 IT 系統管理員。
 
 本文中的資訊可補充 [了解保留原則](retention.md)，因為其包含 Microsoft Teams 訊息專用的資訊。
 
@@ -43,7 +48,7 @@ ms.locfileid: "50261500"
 > [!NOTE]
 > 包括卡片內容是最近新增的，目前正在向租用戶推出。 有關更多資訊，請參閱[透過 Teams 中應用程式之針對調適型卡片內容的 Microsoft 365 合規性功能已上線](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)。
 
-保留原則目前不支援私人頻道中的 Teams 訊息。 當您對 Teams 使用保留原則時，系統不會包含來自 Teams 行動用戶端的程式碼片段、錄製的語音備忘錄，以及來自其他人表情符號形式的反應。
+保留原則目前不支援私人頻道中的 Teams 訊息。 當您對 Teams 使用保留原則時，系統不會包含程式碼片段、來自 Teams 行動用戶端的錄製語音備忘錄、縮圖、宣告影像，以及來自其他人表情符號形式的反應。
 
 Teams 保留原則中不包括與 Teams 一起使用的電子郵件和檔案。 這些項目有各自的保留原則。
 

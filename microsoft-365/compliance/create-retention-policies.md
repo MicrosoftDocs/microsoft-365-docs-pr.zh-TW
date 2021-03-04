@@ -16,23 +16,26 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 使用保留原則可以非常有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 1806000b47a19c07da11a6a732eeacf5d60a7da0
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
+ms.openlocfilehash: 02d3fd17e4aac34546e545ec10621bc99b945b31
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261322"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405711"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-使用保留原則主動決定是否要保留內容、刪除內容，還是兩者，即保留然後刪除內容。
+使用保留原則，主動決定是否要保留內容、刪除內容，或保留然後刪除內容，以管理貴組織的資料。
 
-透過將相同的保留設定依照位置如網站或信箱層級的內容進行指派，保留原則可讓您工作的更有效率，。 如果您不確定是否要使用保留原則或保留標籤，可參閱[保留原則及保留標籤](retention.md#retention-policies-and-retention-labels)。
+保留原則可讓您在容器層級指派相同的保留設定，以自動由該容器中的內容繼承，進而有效率地執行此工作。 例如，SharePoint 網站的所有專案、使用者 Exchange 信箱中的所有電子郵件訊息、搭配 Microsoft Teams 所使用的團隊所有頻道訊息。 如果您不確定要使用容器層級的保留原則或專案層級的保留標籤，請參閱 [保留原則及保留標籤](retention.md#retention-policies-and-retention-labels)。
 
-如需有關保留原則及其運作方式的詳細資訊，可參閱 [瞭解保留原則和保留標籤](retention.md)。
+如需有關保留原則及其在 Microsoft 365 中運作方式的詳細資訊，可參閱 [了解保留原則及保留標籤](retention.md)。
+
+> [!NOTE]
+> 此頁面上的資訊適用於合規性系統管理員。 如果您不是系統管理員，且想要了解你所使用之應用程式的保留原則設定方式，請與您的技術支援中心、IT 部門或系統管理員聯繫。 若您在 Teams 聊天和頻道訊息中看見有關保留原則的訊息，建議您檢閱 [關於保留原則的 Teams 訊息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
 
 ## <a name="before-you-begin"></a>在您開始之前
 
@@ -40,7 +43,7 @@ ms.locfileid: "50261322"
 
 ## <a name="create-and-configure-a-retention-policy"></a>建立及設定保留原則
 
-雖然保留原則可以支援多個位置，但您無法建立含括所有支援位置的單一個保留原則：
+雖然保留原則可以支援在保留原則中識別為「位置」的多個服務，但您無法建立包含所有受支援位置的單一保留原則：
 
 - Exchange 電子郵件
 - SharePoint 網站
@@ -53,7 +56,7 @@ ms.locfileid: "50261322"
 - Yammer 社群訊息
 - Yammer 私人訊息
 
-建立保留原則時若選取 Teams 或 Yammer 位置，系統會自動排除另一個位置。 因此，應遵循的指示將取決於您是否要包含 Teams 或 Yammer 位置而定：
+建立保留原則時若選取 Teams 或 Yammer 位置，系統會自動排除另一個位置。 這表示，應遵循的指示將取決於您是否要包含 Teams 或 Yammer 位置而定：
 
 - [Teams 位置保留原則的指示](#retention-policy-for-teams-locations)
 - [Yammer 位置保留原則的指示](#retention-policy-for-yammer-locations)
