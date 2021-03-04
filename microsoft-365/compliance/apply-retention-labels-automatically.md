@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 69bada084aa3817b49b75d970a1a8d304f6853e6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 34b6fb53095a2c3f52598b84e82cae3083b98f21
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261344"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423302"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
@@ -282,6 +282,14 @@ ProgID:Media AND ProgID:Meeting
 在建立及儲存標籤或原則之後，部分設定無法變更，其中包括：
 - 保留標籤和原則名稱，以及保留期間以外的保留設定。 不過，當保留期間是以項目標記的時間為根據時，您就無法變更保留期間。
 - 將項目標記為記錄的選項。
+
+### <a name="deleting-retention-labels"></a>刪除保留標籤
+
+您可以刪除目前未包含在任何保留標籤原則中、未針對事件型保留所設定的保留標籤，或將項目標示為法規記錄。 刪除將項目標記為記錄的保留標籤功能目前正在預覽版中推出。
+
+針對您可以刪除的保留標籤，如果該標籤已套用至項目中，則會刪除失敗，而且您會看到一個連線至內容瀏覽器的連結，以識別已標籤的項目。
+
+不過，內容瀏覽器最多可能需要兩天才能顯示已標籤的項目。 在此情況中，保留標籤可能會被刪除，而不會向您顯示連線至內容瀏覽器的連結。
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>鎖定原則以防止變更
 

@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用安全性與合規性中心的搜尋和清除功能，可搜尋並刪除組織中所有信箱的電子郵件訊息。
-ms.openlocfilehash: f4bcd012708c0b7e9fa37b06288cda18ad4766cf
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 52871fc85a4d5aec1754c1957f2087552b442daf
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546531"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423694"
 ---
 # <a name="search-for-and-delete-email-messages"></a>搜尋並刪除電子郵件訊息
 
-**本文適用於系統管理員。您正嘗試在信箱中尋找要刪除的項目嗎？請參閱[使用立即搜尋尋找郵件或項目](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**。
+**本文適用於系統管理員。您正嘗試在信箱中尋找要刪除的項目嗎？請參閱 [使用立即搜尋尋找郵件或項目](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**。
 
 您可以使用內容搜尋功能來搜尋並刪除組織中所有信箱的電子郵件。 這可幫助您找出並移除可能有害或高風險的電子郵件，例如：
 
@@ -41,13 +41,13 @@ ms.locfileid: "47546531"
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 若要建立和執行內容搜尋，您必須是「eDiscovery 管理員」**** 角色群組的成員，或者獲指派「合規性搜尋」**** 管理角色。 若要刪除郵件，您必須是「組織管理」**** 角色群組的成員，或者獲指派「搜尋及清除」**** 管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心中指派電子文件探索權限](assign-ediscovery-permissions.md)。
+- 若要建立和執行內容搜尋，您必須是 **「eDiscovery 管理員」** 角色群組的成員，或者獲指派 **「合規性搜尋」** 管理角色。 若要刪除郵件，您必須是 **「組織管理」** 角色群組的成員，或者獲指派 **「搜尋及清除」** 管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心中指派電子文件探索權限](assign-ediscovery-permissions.md)。
 
 - 您必須使用安全性與合規性中心 PowerShell 來刪除郵件。 如需如何連線的相關指示，請參閱[步驟 2](#step-2-connect-to-security--compliance-center-powershell)。
 
 - 每個信箱一次可以移除最多 10 個項目。 因為搜尋和移除郵件的功能應該是事件回應工具，此限制可以協助確保從信箱快速移除郵件。 這項功能不是用來清除使用者信箱。
 
-- 透過搜尋及清除動作，您最多可以在內容搜尋刪除 50,000 個信箱內的項目。 如果內容搜尋 (您在[步驟 1 ](#step-1-create-a-content-search-to-find-the-message-to-delete)中建立) 中有超過 50,000 個來源信箱，則您在步驟 3 中建立的清除動作將失敗。 請參閱[詳細資訊](#more-information)章節以取得搜尋並清除超過 50,000 個信箱的執行提示。
+- 透過搜尋及清除動作，您最多可以在內容搜尋刪除 50,000 個信箱內的項目。 如果搜尋功能 (您在[步驟 1 ](#step-1-create-a-content-search-to-find-the-message-to-delete)中所建立的項目) 搜尋超過 50,000 個信箱，則您在步驟 3 中建立的清除動作將失敗。 在單一搜尋中搜尋超過 50,000 個信箱，通常會在您將搜尋設為包含貴組織的所有信箱時發生。 即使包含符合搜尋查詢項目的信箱少於 50,000 個，此限制仍會適用。 請參閱 [更多資訊](#more-information) 一節，以瞭解有關使用搜尋權限篩選條件在超過 50,000 個信箱中搜尋和清除項目的指南。
 
 - 本文所述的程序只能用於刪除 Exchange Online 信箱和公用資料夾中的項目。 您無法使用這個程序來刪除 SharePoint 或商務用 OneDrive 上的內容。
 
@@ -55,7 +55,7 @@ ms.locfileid: "47546531"
 
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>步驟 1：建立內容搜尋來尋找要刪除的郵件
 
-第一個步驟是建立和執行內容搜尋，以尋找您想要從組織中的信箱移除的郵件。 您可以使用安全性與合規性中心或執行 **New-ComplianceSearch** 以及 **Start-ComplianceSearch** Cmdlet 來建立搜尋。 藉由在[步驟 3](#step-3-delete-the-message) 中執行 **New-ComplianceSearchAction -Purge** 命令，會刪除符合此搜尋查詢的郵件。 如需如何建立內容搜尋及設定搜尋查詢的資訊，請參閱下列主題：
+第一個步驟是建立和執行內容搜尋，以尋找您想要從組織中的信箱移除的郵件。 您可以使用安全性與合規性中心或執行 **New-ComplianceSearch** 以及 **Start-ComplianceSearch** Cmdlet 來建立搜尋。 藉由在 [步驟 3](#step-3-delete-the-message) 中執行 **New-ComplianceSearchAction -Purge** 命令，會刪除符合此搜尋查詢的郵件。 如需如何建立內容搜尋及設定搜尋查詢的資訊，請參閱下列主題：
 
 - [Office 365 中的內容搜尋](content-search.md)
 
@@ -66,7 +66,7 @@ ms.locfileid: "47546531"
 - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/Start-ComplianceSearch)
 
 > [!NOTE]
-> 在此步驟中建立的內容搜尋，其搜尋的內容位置不能包含 SharePoint 或商務用 OneDrive 網站。 您只能在內容搜尋中包含將用於電子郵件的信箱和公用資料夾。 如果內容搜尋包含網站，則在步驟 3 中執行 **New-ComplianceSearchAction ** Cmdlet 時會收到錯誤。
+> 在此步驟中建立的內容搜尋，其搜尋的內容位置不能包含 SharePoint 或商務用 OneDrive 網站。 您只能在內容搜尋中包含將用於電子郵件的信箱和公用資料夾。 如果內容搜尋包含網站，則在步驟 3 中執行 **New-ComplianceSearchAction** Cmdlet 時會收到錯誤。
 
 ### <a name="tips-for-finding-messages-to-remove"></a>尋找要移除郵件的提示
 
@@ -127,7 +127,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 當您執行上述命令來虛刪除或實刪除郵件時，*SearchName* 參數指定的搜尋是您在步驟 1 建立的內容搜尋。
 
-如需詳細資訊，請參閱 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction) (英文)。
+如需詳細資訊，請參閱 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction)。
 
 ## <a name="more-information"></a>詳細資訊
 
@@ -143,7 +143,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 - **如果要從 50,000 個以上的信箱刪除郵件，該怎麼辦？**
 
-  如先前所述，您可以針對最多 50,000 個信箱執行搜尋和清除作業。 如果必須對超過 50,000 個信箱執行搜尋和清除作業，請考慮建立臨時搜尋權限篩選條件，以便將搜尋到的信箱數減少為小於 50,000 個信箱。 例如，如果您的組織包含不同部門、州或國家/地區的信箱，則可以基於其中一個信箱屬性建立信箱搜尋權限篩選條件，以搜尋組織中的信箱子集。 建立搜尋權限篩選條件後，您可以建立搜尋 (如步驟 1 所述)，然後再刪除郵件 (如步驟 3 所述)。 您可以編輯篩選條件來搜尋及清除不同組信箱中的郵件。 如需建立搜尋權限篩選條件的詳細資訊，請參閱[設定內容搜尋的權限篩選](permissions-filtering-for-content-search.md)。
+  如先前所述，您可以針對最多 50,000 個信箱執行搜尋和清除作業 (即使包含符合搜尋查詢項目的信箱少於 50,000 個) 如果必須對超過 50,000 個信箱執行搜尋和清除作業，請考慮建立臨時搜尋權限篩選條件，以便將搜尋到的信箱數減少為小於 50,000 個信箱。 例如，如果您的組織包含不同部門、州或國家/地區的信箱，則可以基於其中一個信箱屬性建立信箱搜尋權限篩選條件，以搜尋組織中的信箱子集。 建立搜尋權限篩選條件後，您可以建立搜尋 (如步驟 1 所述)，然後再刪除郵件 (如步驟 3 所述)。 您可以編輯篩選條件來搜尋及清除不同組信箱中的郵件。 如需建立搜尋權限篩選條件的詳細資訊，請參閱[設定內容搜尋的權限篩選](permissions-filtering-for-content-search.md)。
 
 - **搜尋結果中包含的未索引項目是否會被刪除？**
 
