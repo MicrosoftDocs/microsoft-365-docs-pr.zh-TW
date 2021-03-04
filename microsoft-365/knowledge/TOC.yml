@@ -1,12 +1,12 @@
-- name: 開始使用 Microsoft Viva
+- name: Microsoft Viva Topics
+  href: index.md
+- name: 開始使用 Microsoft Viva Topics
   items:
-    - name: Microsoft Viva 簡介
-      href: index.md
-    - name: Microsoft Viva 概述
+    - name: Microsoft Viva Topics 概觀
       href: topic-experiences-overview.md
-    - name: Microsoft Viva 探索摘要與內容篩選
+    - name: Microsoft Viva Topics 探索摘要與內容篩選
       href: topic-experiences-discovery-curation.md
-    - name: Microsoft Viva 角色
+    - name: Microsoft Viva Topics 角色
       href: topic-experiences-roles.md
     - name: 準備好您的環境
       href: topic-experiences-get-ready.md
@@ -28,6 +28,8 @@
       href: topic-experiences-administration.md
 - name: 使用主題
   items:
+    - name: 開始使用 Viva Topics
+      href: get-started-with-viva-topics.md
     - name: 主題中心概觀
       href: topic-center-overview.md
     - name: 在主題中心中管理主題

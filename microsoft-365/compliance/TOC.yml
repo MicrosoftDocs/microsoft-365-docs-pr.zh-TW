@@ -237,6 +237,8 @@
               href: data-loss-prevention-policies.md
             - name: 深入了解端點資料外洩防護
               href: endpoint-dlp-learn-about.md
+            - name: 深入了解 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)
+              href: dlp-on-premises-scanner-learn.md
         - name: 開始使用 DLP
           items:
             - name: 開始使用預設的 DLP 原則
@@ -245,6 +247,8 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: 建立、測試及調整 DLP 原則
               href: create-test-tune-dlp-policy.md
+            - name: 開始使用 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)
+              href: dlp-on-premises-scanner-get-started.md
             - name: 開始使用端點資料外洩防護
               href: endpoint-dlp-getting-started.md
             - name: 為端點 DLP 設定裝置 Proxy 和網際網路連線設定
@@ -269,6 +273,8 @@
               href: dlp-microsoft-teams.md
             - name: 使用端點資料外洩防護
               href: endpoint-dlp-using.md
+            - name: 使用 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)
+              href: dlp-on-premises-scanner-use.md
             - name: 使用 DLP 原則中的通知和原則提示
               href: use-notifications-and-policy-tips.md
             - name: DLP 原則範本包含哪些內容
@@ -753,11 +759,11 @@
           href: use-sharing-auditing.md
         - name: Office 365 管理活動 API
           items:
-            - name: Office 365 管理活動 API 參考 (英文)
+            - name: Office 365 管理活動 API 參考
               href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference'
-            - name: Office 365 管理活動 API 架構 (英文)
+            - name: Office 365 管理活動 API 架構
               href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema'
-            - name: Office 365 管理活動 API 常見問題和疑難排解 (英文)
+            - name: Office 365 管理活動 API 常見問題和疑難排解
               href: 'https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api'
     - name: 信箱稽核
       href: enable-mailbox-auditing.md
