@@ -1,5 +1,5 @@
 ---
-title: Microsoft Bookings - 概觀
+title: Microsoft 預約-簡介
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -9,47 +9,45 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解 Microsoft Bookings。
-ms.openlocfilehash: 67ed948793b4d43f92b376d7e299564f5d734550
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 深入瞭解 Microsoft 預定。
+ms.openlocfilehash: 681667d8f399c0bf5ba1b84ee67352a30d10d78d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928123"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422336"
 ---
-# <a name="overview-of-microsoft-bookings"></a>Microsoft Bookings 概觀
+# <a name="overview-of-microsoft-bookings"></a>Microsoft 預約簡介
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
-Microsoft Bookings 是一款線上及行動應用程式，適用于為客戶提供預約服務的小型企業。 企業範例包括美髮店、診所、SPA、律師事務所、財務服務提供者、顧問和車行。
+Microsoft 預約是適用于小型企業的線上和行動應用程式，可在約會基礎上為客戶提供服務。 企業的範例包括頭髮美容、牙科辦事處、spa、法律公司、金融服務提供者、顧問和汽車店。
 
-## <a name="get-started-with-bookings"></a>開始使用 Bookings
+## <a name="get-started-with-bookings"></a>開始使用預定
 
-1. 若要開始使用 Microsoft 365，然後從應用程式啟動器選取 **Bookings。**
-1. 在 **Bookings 頁面上選擇** 現在 **取得** 。
-1. 新增您的商務資訊，就可以開始使用 Bookings 了。
+1. 若要開始登入 Microsoft 365，並從應用程式啟動器選取 [ **預定** ]。
+1. 在 [**預定**] 頁面上選擇 [**立即取得**]。
+1. 新增您的商務資訊，而且您已準備好開始使用預定。
 
-    若要在行動裝置上管理您的預約，請從 App Store 下載 Bookings。
+    若要在行動裝置上管理您的預約，請從您的應用程式存放區下載預定。
 
-## <a name="use-bookings"></a>使用 Bookings
+## <a name="use-bookings"></a>使用預定
 
-- 在 **Bookings** 儀表板上，審查您的公司位址、小時及其他商務資訊，並如有必要進行更新。
-- 在日曆 **頁面上** ，您和員工都可以新增或更新客戶約會。 您可以按天、周或月來查看您的日曆。
-- 在客戶 **頁面上** ，新客戶可以新增或從 Gmail 等其他帳戶或裝置中新增或匯出。
-- 員工 **頁面** 可讓您新增及管理教職員。 新增他們的電子郵件地址至關重要，他們才能立即收到新約會的通知。
-- 服務 **頁面** 可讓您新增或管理客戶預約約會時選擇的服務。
-- 最後，在 **Bookings** 頁面上，您可以找到許多設定，例如排程政策、電子郵件通知、時區設定等等。
+- 在 [ **預定** ] 儀表板上，複查您的公司位址、時間及其他商務資訊，並視需要進行更新。
+- 在 [行事 **曆** ] 頁面上，您和您的員工可以新增或更新客戶約會。 您可以按日、周或月來查看您的行事曆。
+- 在 [ **客戶** ] 頁面上，您可以從 Gmail 或裝置等其他帳戶新增或匯入新客戶。
+- [ **人員** ] 頁面可讓您新增及管理您的員工。 請務必新增電子郵件地址，讓他們可以立即接收新約會的通知。
+- [ **服務** ] 頁面可讓您新增或管理客戶預約預約時選擇的服務。
+- 最後，在 [ **預定** ] 頁面上，您會發現許多設定，例如排程原則、電子郵件通知、時區設定等等。
 
-儲存併發布 Bookings 日曆後，該日曆可內嵌在貴公司的網站或 Facebook 頁面上。
+當您儲存併發布您的預約行事曆後，即可將其嵌入公司的網站或 Facebook 頁面。

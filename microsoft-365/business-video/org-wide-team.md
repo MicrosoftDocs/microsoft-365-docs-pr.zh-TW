@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何在 Microsoft Teams 中建立全組織團隊。
-ms.openlocfilehash: 5df4ebce8e80babd8bd3e70004829c997a127a55
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 瞭解如何在 Microsoft 小組中建立組織的廣泛團隊。
+ms.openlocfilehash: 98513795b5f499e288671431defffbd4be0d2a4d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928171"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422468"
 ---
 # <a name="create-an-org-wide-team"></a>建立全組織小組
 
@@ -35,22 +33,22 @@ ms.locfileid: "49928171"
 
 ## <a name="try-it"></a>試試看吧！
 
-在 Microsoft Teams 中建立全組織團隊，讓貴公司的每個人都能參與。 當您新增更多使用者至 Microsoft 365 時，系統會自動將使用者新增到這個小組。
+在您公司的每個人都可以隸屬的 Microsoft 小組中建立全組織團隊。 當您將更多使用者新增至 Microsoft 365 時，系統會自動將這些使用者新增至此小組。
 
-1. 在 Microsoft Teams 中，選取  **Teams，** 然後 **建立團隊。**
-2. 選擇  **從頭建立團隊**。
-3. 選取  **建立全組織團隊**。
+1. 在 Microsoft 團隊中，選取 [  **小組**]，然後 **建立小組。**
+2. 選擇  **從頭開始建立小組**。
+3. 選取 [  **建立整個組織的小組**]。
 
 > [!NOTE]
-> 您必須是 Microsoft 365 系統管理員才能查看此選項。
+> 您必須是 Microsoft 365 系統管理員，才可查看此選項。
 
-1. 為您的團隊命名、新增描述，  **然後選取建立**。
+1. 為您的小組提供名稱、新增描述，然後選取 [  **建立**]。
 
-在團隊內是頻道。 系統會自動建立一般頻道。 您可以為不同的部門、活動或專案新增額外的頻道、個別交談和檔案。
+您的小組中有通道。 自動建立一般通道。 您可以針對不同的部門、事件或專案，新增其他通道、個別交談和檔案。
 
-請嘗試下列任何一項：
+請嘗試下列其中一項：
 
-- 針對整個  **組織中的** 交談和公告使用文章 Tab，例如向每個人發出歡迎訊息。
-- 在檔案的檔案中，您可以建立每個人都能參與的新檔，例如 Microsoft Word 檔。 或者，將現有的檔拖放到檔案  **按鈕** 。
-- 使用 Wiki  **按鈕** 快速記錄筆記。 然後選取加 () **+** 號，將 App 或檔案新增為其他定位字元。
-- 您可以使用左側的按鈕來查看最近的活動、與其他團隊成員聊天、查看您所屬的團隊，以及您的月曆。 您可以撥打語音和視音電話給其他小組使用者，以及查看您最近處理過的檔。
+- 使用 [  **發佈** ] 索引標籤，進行整個組織的交談和宣告，例如歡迎訊息給每個人。
+- **在 [檔案**] 索引標籤上，您可以建立所有人都可以參與的新檔，例如 Microsoft Word 檔。 或將  **現有檔拖曳至 [檔案** ] 索引標籤。
+- 使用 [  **Wiki** ] 索引標籤進行快速筆記。 並選取加號 ( **+** ) 簽署以將應用程式或檔案新增為其他索引標籤。
+- 您可以使用左邊的索引標籤，查看最近的活動、與其他小組成員交談、查看您所屬的團隊以及行事曆。 您可以對其他小組使用者進行語音和影片通話，以及查看您最近處理過的檔案。

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 03408a2f9e57421ea613bdb38e253401526f8f71
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 31c0ae4cdbeabb10fd44aaffaa24a8597e644941
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242363"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407157"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -73,7 +73,7 @@ ms.locfileid: "50242363"
 
 建議使用下一章的表格，確定與影響最大的業務需求對應的前兩種情況。 部署這些案例之後，請回到清單以確定下一個或下兩個部署的優先順序。
 
-您可以在可下載的「資料外洩防護」與《Microsoft 資訊保護部署加速指南》中找到其他一般部署指導方針。 如需詳細資訊，請參閱部落格文章 [Microsoft 365 資訊保護和合規性部署加速指南](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404) (英文)。
+您可以在可下載的「資料外洩防護」與《Microsoft 資訊保護部署加速指南》中找到其他一般部署指導方針。 如需詳細資訊，請參閱部落格文章 [Microsoft 365 資訊保護和合規性部署加速指南](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404)。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>敏感度標籤的常見案例
 
@@ -85,6 +85,7 @@ ms.locfileid: "50242363"
 |讓使用者能夠使用 Office 應用程式、檔案總管和 PowerShell，從 Windows 電腦標籤及保護檔案|[適用於 Windows 的 Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |使用敏感度標籤加密文件和電子郵件，並限制能夠存取該內容的人員以及使用方式 |[使用敏感度標籤來套用加密以限制存取內容](encryption-sensitivity-labels.md)|
 |在網頁上啟用 Office 的敏感度標籤，並提供共同撰寫、電子文件探索、資料遺失防護、搜尋支援，即使文件已加密 | [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)
+|當檔案加密時，在 Office 桌面應用程式中使用共同撰寫和自動儲存 | [針對使用敏感度標籤加密的檔案啟用共同撰寫](sensitivity-labels-coauthoring.md)
 |自動將敏感度標籤套用至文件和電子郵件 | [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)|
 |使用敏感度標籤來保護 Teams 和 SharePoint 中的內容 |[對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤](sensitivity-labels-teams-groups-sites.md)|
 |防止或警告使用者共用具有特定敏感度標籤的檔案或電子郵件 |[使用敏感度標籤作為 DLP 原則中的條件 (預覽)](dlp-sensitivity-label-as-condition.md) |

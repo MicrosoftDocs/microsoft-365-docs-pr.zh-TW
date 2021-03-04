@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender 進 (尋找中的 FileProfile () 函數
-description: 瞭解如何使用 FileProfile () 來豐富進位搜尋查詢結果中檔案的資訊
-keywords: 進一步搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、FileProfile、檔案設定檔、函數、擴充
+title: Microsoft 365 Defender 的高級搜尋中的 FileProfile () 功能
+description: 瞭解如何使用 FileProfile () 豐富您的高級搜尋查詢結果中檔案的相關資訊
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，FileProfile，file profile，function，豐富
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 68196f126ac470088d7ba5e2923accc492d8764c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f2e92967b8951cd0f5a3c394a537404db1d53819
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929547"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424020"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -35,25 +35,25 @@ ms.locfileid: "49929547"
 適用於：
 - Microsoft 365 Defender
 
-此 `FileProfile()` 函數是進一步搜尋中的擴充 [函數](advanced-hunting-overview.md) ，會將下列資料新增到查詢找到的檔案中。
+`FileProfile()`函數是[高級搜尋](advanced-hunting-overview.md)中的豐富函數，可將下列資料新增至查詢所找到的檔案。
 
 | 欄 | 資料類型 | 描述 |
 |------------|-------------|-------------|
 | SHA1 | 字串 | 記錄動作已套用的檔案 SHA-1 |
-| SHA256 | string | 已記錄動作所適用于檔案的 SHA-256 |
-| MD5 | string | 已記錄動作所針對之檔案的 MD5 雜湊 |
-| FileSize | int | 檔案大小 ，以位元組為單位 |
-| GlobalPrevalence | int | Microsoft 全域觀察之實體的實例數目 |
-| GlobalFirstSeen | datetime | Microsoft 全域第一次觀察實體的日期和時間 |
-| GlobalLastSeen | datetime | Microsoft 全域上次觀察實體的日期和時間 |
-| 簽名 | string | 檔案簽署者的資訊 |
-| 發行者 | string | 發行憑證授權單位 (CA)  |
-| SignerHash | string | 識別簽簽者的唯一雜湊值 |
-| IsCertificateValid | 布林值 | 用來簽署檔案的憑證是否有效 |
-| IsRootSignerMicrosoft | 布林值 | 指出根憑證的簽署者是否為 Microsoft |
-| IsExecutable | 布林值 | 檔案為可攜式可執行檔 (PE) 檔案 |
-| ThreatName | string | 找到任何惡意攻擊或其他威脅的偵測名稱 |
-| Publisher | string | 發佈檔案的組織名稱 |
+| SHA256 | string | 錄製的動作所套用的檔案 SHA-256 |
+| MD5 | string | 錄製的動作所套用的檔案 MD5 雜湊 |
+| FileSize | int | 檔案大小（以位元組為單位） |
+| GlobalPrevalence | int | 由 Microsoft 全域觀測的實體實例數目 |
+| GlobalFirstSeen | datetime | Microsoft 全球第一次觀測實體的日期和時間 |
+| GlobalLastSeen | datetime | Microsoft 全球最後觀測實體的日期和時間 |
+| 簽名 | string | 檔案的簽署者相關資訊 |
+| 發行者 | string | 發證憑證授權 (CA 的相關資訊)  |
+| SignerHash | string | 識別簽署者的唯一雜湊值 |
+| IsCertificateValid | 布林值 | 用於簽署檔的憑證是否有效 |
+| IsRootSignerMicrosoft | 布林值 | 會指出根憑證的簽署者是否為 Microsoft |
+| IsExecutable | 布林值 | 檔案是否為可遷移的可執行檔 (PE) file |
+| ThreatName | string | 找到的任何惡意程式碼或其他威脅的偵測名稱 |
+| Publisher | string | 發佈檔的組織名稱 |
 | SoftwareName | 字串 | 軟體產品名稱 |
 
 ## <a name="syntax"></a>語法
@@ -64,12 +64,16 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>引數
 
-- **x**—未指定時，會使用檔案識別碼資料行：、、或 `SHA1` `SHA256` ; `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` 函數
-- **y**— 限制要豐富記錄的數量，1-1000;函數使用 100 未指定時
+- **x**-要使用的檔案識別碼欄： `SHA1` 、、 `SHA256` `InitiatingProcessSHA1` 、 `InitiatingProcessSHA256` 或; `SHA1` 如果未指定，則函數會使用
+- **y**-對要濃縮的記錄數目的限制，1-1000;函數使用100（若未指定）
+
+
+>[!TIP]
+> 豐富函數只會顯示輔助性資訊（僅適用時）。 資訊的可用性會不同，且取決於許多因素。 當您在查詢中或建立自訂的偵測中使用 FileProfile () 時，請務必考慮到這一點。 為了獲得最佳結果，建議使用 FileProfile () 函數搭配 SHA1。
 
 ## <a name="examples"></a>範例
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>只預計 SHA1 欄並豐富
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>僅限 Project 的 SHA1 欄並濃縮
 
 ```kusto
 DeviceFileEvents
@@ -79,7 +83,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>豐富前 500 個記錄，並列出低品質檔案
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>豐富第一筆500記錄並列出低傳播檔
 
 ```kusto
 DeviceFileEvents

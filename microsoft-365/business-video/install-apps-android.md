@@ -9,40 +9,38 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何在 Android 裝置上安裝 Outlook 和其他 Office App。
-ms.openlocfilehash: 3b449d98a9e19e8f4ce8a3cc84dbbdce058dc310
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 瞭解如何在 Android 裝置上安裝 Outlook 和其他 Office 應用程式。
+ms.openlocfilehash: 8e4abb38ad56d9bfe8f5e3a580dd1075cd16a564
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925119"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422540"
 ---
-# <a name="install-outlook-and-office-apps-on-android-devices"></a>在 Android 裝置上安裝 Outlook 和 Office App
+# <a name="install-outlook-and-office-apps-on-android-devices"></a>在 Android 裝置上安裝 Outlook 和 Office 應用程式
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfquk?autoplay=false]
 
-如果您的 Android 裝置是由 Microsoft 365 商務進版管理，第一次安裝 Office App 時，可能會提示您設定額外的安全性。 
+如果您的 Android 裝置是由 Microsoft 365 商務版 Premium 所管理，則在您第一次安裝 Office 應用程式時，系統可能會提示您設定額外的安全性。 
 
 ## <a name="try-it"></a>試試看吧！
 
-1. 在裝置上選擇 Google Play 商店。
-2. 搜尋您想要安裝的 Office App。 我們&#39;使用 Outlook 做為此範例。
-3. 在 Outlook 歡迎畫面上  **，選擇開始使用**。
-4. 在新增 **帳戶頁面上**，輸入您的 Microsoft 365 電子郵件地址，**然後選擇繼續。**
-5. 在 **輸入您的密碼下**，輸入您的密碼，**然後選擇簽署。**
-6. 如果您想要新增另  **一個帳戶**  ，請于下一頁選擇繼續。 否則，請選擇略  **過**。
-7. 當系統提示您新增 Intune 公司入口網站 App 時，請選擇 **Go to store。**
-8. 安裝並開啟 Intune 公司入口網站應用程式，然後在看見貴組織保護此應用程式資料的訊息時選擇確定。
-9. 如果系統詢問 PIN，請輸入您將用於解除鎖定&#39;的 4 位數 PIN、選擇傳送、確認 PIN，然後選擇 **再次選擇傳送**。 
+1. 在您的裝置上，選擇 Google Play 商店。
+2. 搜尋您想要安裝的 Office 應用程式。 我們&#39;對此範例使用 Outlook。
+3. 在 [Outlook 歡迎] 畫面中，選擇 [  **入門**]。
+4. 在 [  **新增帳戶**  ] 頁面上，輸入您的 Microsoft 365 電子郵件地址，然後選擇 [  **繼續**]。
+5. 在 [  **輸入密碼** ] 底下，輸入您的密碼，然後選擇 [登  **入**]。
+6. 在下一個頁面上，如果您想要新增其他帳戶，請選擇 [  **繼續**  ]。 否則，請選擇 [  **略過**]。
+7. 當系統提示您新增 Intune 公司入口網站應用程式時，請選擇 [  **移至儲存區**]。
+8. 安裝並開啟 Intune 公司入口網站應用程式，然後在看到您的組織保護此應用程式中的資料時，選擇  **[確定]**  。
+9. 如果系統要求 PIN，請輸入您&#39;用來解除鎖定電話的4位數 PIN 碼，然後選擇 [  **傳送** ]，確認您的 PIN 碼，然後選擇 [  **傳送**  ]。

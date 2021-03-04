@@ -1,5 +1,5 @@
 ---
-title: 加入有來賓的 Microsoft Teams 會議
+title: 加入與客人的 Microsoft 小組會議
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -9,39 +9,37 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何加入與來賓的 Teams 會議。
-ms.openlocfilehash: a5f19aab079685a76f31bf67c1c79bd7312d00a4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 瞭解如何加入與客人的團隊會議。
+ms.openlocfilehash: f17cf94471b58c45192298a47af9e1f142d39c75
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927139"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422492"
 ---
 # <a name="join-a-teams-meeting-with-guests"></a>加入含有來賓的 Teams 會議
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn?autoplay=false]
 
-有了 Microsoft Teams，您可以輕鬆地加入及加入與內部和外部使用者的會議。
+透過 Microsoft 小組，您可以輕鬆加入和參與與內部及外部使用者的會議。
 
 ## <a name="try-it"></a>試試看吧！
 
-1. 在 Microsoft Teams 中，選擇 **日曆**，然後尋找您的會議。
-1. 選取 **加入**，決定是否要打開或關閉攝影機和麥克風，然後選取立即 **加入**。
-1. 如果您是外部來賓，請開啟您收到有關會議的電子郵件，然後選取加入 Microsoft Teams **會議**。
+1. 在 Microsoft 小組中，選擇 [行事 **曆**]，然後尋找您的會議。
+1. 選取 [ **加入**]，決定是否要開啟或關閉相機和麥克風，然後選取 [ **立即加入**]。
+1. 如果您是外部來賓，請開啟您收到之會議的電子郵件，並選取 [ **加入 Microsoft 團隊會議**]。
 
-    如果您不想下載應用程式，請改為選擇在 **網頁上加入** 。
-1. 輸入您的名稱，然後選取立即 **加入**。
-1. 每個人都到場後，您可以共用桌面、監視器或 PowerPoint 等應用程式來開始會議。
-1. 會議結束後，請選取掛 **斷**。
+    如果您不想要下載應用程式，請改為選擇 [ **在網頁上加入** ]。
+1. 輸入您的名稱，然後選取 [ **立即加入**]。
+1. 一旦每個人都到達，您可以分享您的桌面、監視器或像 PowerPoint 之類的應用程式來啟動會議。
+1. 當會議結束時，請選取 [ **掛斷**]。

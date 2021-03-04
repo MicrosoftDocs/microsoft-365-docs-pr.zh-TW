@@ -1,5 +1,5 @@
 ---
-title: 何謂共同作業管理？
+title: 什麼是共同作業控管？
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -16,14 +16,14 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 瞭解如何在 Microsoft 365 群組、小組、SharePoint 及 Yammer 中管理相關的功能。
-ms.openlocfilehash: 2319a0f5b8c74925569d00eb781d247fe61a5a76
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 8f1341b3b3bab1e9ae7219f01124983aefb022b1
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613029"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424037"
 ---
-# <a name="what-is-collaboration-governance"></a>何謂共同作業管理？
+# <a name="what-is-collaboration-governance"></a>什麼是共同作業控管？
 
 共同作業控管是您如何管理使用者對資源的存取，遵循您的商務標準，並確保資料的安全性。
 
@@ -36,6 +36,10 @@ Microsoft 365 群組、小組和 Yammer 等服務可讓使用者，並提供共�
 ![圖表顯示 Microsoft 365 中的共同作業管理選項](../media/collaboration-governance-overview.png)
 
 這系列的文章將協助您瞭解群組、小組和 SharePoint 設定如何相互作用、哪些管理功能可供使用，以及如何在 Microsoft 365 中建立及實施共同作業功能的控管計畫。
+
+### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全協同作業
+
+在您的組織中部署 Microsoft 365 群組和小組以進行安全共同作業時，有許多選項。 我們建議您使用這個控管內容搭配 [設定 Microsoft 365 的安全](setup-secure-collaboration-with-teams.md) 共同作業，以及其相關的文章，為您的組織建立最佳的共同作業解決方案。
 
 ## <a name="what-are-microsoft-365-groups"></a>何謂 Microsoft 365 群組？
 
@@ -156,35 +160,34 @@ Microsoft 365 中共同作業的控管功能包括 Microsoft 365、小組、Shar
 
 ## <a name="training-for-administrators"></a>系統管理員訓練
 
-Microsoft 學習的這些訓練模組可協助您瞭解小組和 SharePoint 中的共同作業功能。
+Microsoft 學習的這些訓練模組可協助您瞭解 Microsoft 365 中的管理功能。
 
-#### <a name="teams"></a>Teams
+#### <a name="information-protection"></a>資訊保護
 
-|培訓：|使用 Microsoft Teams 管理團隊共同作業|
+|培訓：|管理資訊保護和管理|
 |:---|:---|
-|![小組訓練圖示](../media/manage-team-collaboration-with-microsoft-teams.svg)|使用 Microsoft Teams 管理團隊共同作業會為您介紹 Microsoft Teams 的功能，Microsoft Teams 是 Microsoft 365 中的團隊共同作業中心。 您將了解如何使用 Teams 來促進組織內部和外部的團隊合作和溝通，包括從桌面、平板電腦和手機等各種設備，同時利用 Office 365 應用程式的所有豐富功能。 您將了解 Teams 如何提供全面且靈活的環境，以便在各個應用程式和裝置上共同作業。 這個學習路徑可協助您準備 Microsoft 365 認證：Teams 系統管理員關聯認證。<br><br>2個 hr 17 min-教學路徑-5 模組|
+|![資訊保護訓練圖示](../media/information-protection-governance.svg)|目前所產生的資料量會比以往更快，員工們想要在所有工作中完成工作，而且法規形勢會不斷變更。 Microsoft 的資訊保護和控管解決方案可協助組織在保持資料保護和其人員生產力之間達到適當的平衡。 這個學習路徑可協助您準備 Microsoft 365 認證：安全性系統管理員助理和 Microsoft 365 認證：企業管理員專家認證。<br><br>5小時13分-7 模組|
 
 > [!div class="nextstepaction"]
-> [開始 >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+> [開始 >](https://docs.microsoft.com/learn/modules/m365-compliance-information-governance/introduction/)
 
-#### <a name="sharepoint"></a>SharePoint
+<br><br>
 
-|培訓：|在 Microsoft 365 中使用 SharePoint 共同作業|
+|培訓：|使用 Microsoft 365 保護企業資訊|
 |:---|:---|
-|![SharePoint 訓練圖示](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|使用 Microsoft SharePoint 管理共用內容，為您提供 SharePoint 的各項功能，以及它如何與 Microsoft 365 搭配使用。 您將了解不同類型的 SharePoint 網站，包括中樞網站，以及資訊保護、報告及監視。 您也將了解如何使用 SharePoint 檔案和資料夾共用，以最佳化共同作業、如何在外部共用檔案，以及如何在 SharePoint 系統管理中心管理 SharePoint 網站。 這個學習路徑可協助您準備 Microsoft 365 認證：團隊工作系統管理員關聯認證。<br><br>1 hr 14 min-教學路徑-4 模組|
+|![小組訓練圖示](../media/protect-enterprise-information-microsoft-365.svg)|保護您組織資訊的方式比以往更具挑戰性。 使用 Microsoft 365 保護企業資訊學習路徑將討論如何防止您的敏感資訊意外地過度分享或誤用、如何探索和分類資料、如何使用敏感度標籤保護資料，以及如何監視和分析您的敏感資訊以避免資料遺失。 這種教學途徑可協助您準備 Microsoft 365 認證：安全性管理員關聯和 Microsoft 365 認證：企業系統管理專家認證。<br><br>1 hr 教學路徑-5 模組|
 
 > [!div class="nextstepaction"]
-> [開始 >](https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+> [開始 >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
 
-## <a name="training-for-end-users"></a>適用於終端使用者的訓練
+#### <a name="security-and-compliance"></a>安全性與合規性
 
-這些訓練模組可協助您的使用者使用團隊、群組和 SharePoint，以在 Microsoft 365 中共同作業。
-
-|Teams|SharePoint|
+|培訓：|示範 Microsoft 365 安全性與合規性功能的基本知識|
 |:---|:---|
-|![設定和自訂小組訓練圖示](../media/set-up-customize-team-training.png)<br>**[設定和自訂您的小組](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint 共用及同步訓練圖示](../media/sharepoint-share-sync-training.png)<br>**[共用及同步處理](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
-|![小組上傳及尋找檔案訓練圖示](../media/smc-teams-upload-find-files-training.png)<br>**[上傳及尋找檔案](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
-|![在小組和頻道中共同作業圖示](../media/teams-collaborate-channels-training.png)<br>**[小組和頻道共同作業](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+|![安全性與合規性訓練圖示](../media/microsoft-365-security-and-compliance-capabilities.svg)|深入瞭解 Microsoft 365 的安全性和合規性解決方案領域，以及可協助企業保護企業安全及符合法規需求的功能。 如果您不熟悉基本的雲端計算概念，建議您採取雲端 [概念-雲端計算的原則](https://docs.microsoft.com/learn/modules/principles-cloud-computing/index)。<br><br>3小時11分-學習路徑-8 模組|
+
+> [!div class="nextstepaction"]
+> [開始 >](https://docs.microsoft.com/learn/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>插圖
 
@@ -236,3 +239,9 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 請參閱幕後的範例，說明 Microsoft 365 群組、SharePoint、小組和 Yammer 如何共同運作，以提供全球協同作業平臺。
 
 - [使用 Office 365 群組、SharePoint、小組和 Yammer 尋找共同作業的最擅長點](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+
+## <a name="see-also"></a>另請參閱
+
+[Microsoft 365 安全性文件](https://docs.microsoft.com/microsoft-365/security)
+
+[Microsoft 365 合規性文件](https://docs.microsoft.com/microsoft-365/compliance)

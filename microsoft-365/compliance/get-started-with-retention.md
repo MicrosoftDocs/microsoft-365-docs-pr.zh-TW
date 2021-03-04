@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作保留原則及保留標籤來管理貴組織的資料，但不確定從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: bb73f0871bfc2ad707d31ef6d4d57e18218842a5
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682528"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406513"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>開始使用保留原則和保留標籤
 
@@ -82,10 +82,12 @@ ms.locfileid: "49682528"
 
 如果您是為了記錄管理而使用保留標籤，還有其他保留標籤專用的案例，也可將其內容標示為記錄。 請參閱 [記錄管理的常見案例](get-started-with-records-management.md#common-scenarios-for-records-management)。
 
-## <a name="end-user-documentation-for-retention-labels"></a>保留標籤的終端使用者文件
+## <a name="end-user-documentation-for-retention"></a>保留的終端使用者文件
 
-不同于保留原則，保留標籤在 Microsoft 365 應用程式中具有 UI。 在您將保留標籤部署到生產網路前，請務必為使用者和您的技術支援部門提供指導方針。
+大部分保留原則低調地在背景中工作，無須使用者互動，因此不太需要使用者的文件。 Teams 的保留原則會通知使用者其訊息已刪除，並包含 [有關保留原則的 Teams 訊息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b) 的連結。
 
-最有效的使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 保留標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861) (英文)。
+由於保留標籤在 Microsoft 365 應用程式中具有 UI，因此請務必先為終端使用者和技術支援中心提供指引，再將這些標籤部署到生產網路。
+
+最有效的使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 保留標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
 
 您也會在以下章節中找到基本的使用者指示：[手動套用保留標籤](create-apply-retention-labels.md#manually-apply-retention-labels)。

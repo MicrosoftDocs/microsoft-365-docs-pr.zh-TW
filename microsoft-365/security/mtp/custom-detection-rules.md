@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d58292f658446259bfab5b1b55c8b462d081421c
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 51a6bc33778248a69e533d9e2077365a63b97e30
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080620"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424128"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
@@ -165,6 +165,12 @@ DeviceEvents
 
 ### <a name="6-review-and-turn-on-the-rule"></a>6. 檢查並開啟規則。
 檢查規則之後，請選取 [ **建立** ] 以儲存該規則。 自訂偵測規則會立即執行。 它會以檢查相符專案的設定頻率重新執行，並產生警示和採取回應動作。
+
+
+>[!Important] 
+>應該定期檢查自訂偵測，以取得效能和效能。 若要確定您建立的偵測會觸發 true 警示，請遵循 [管理現有自訂偵測規則](#manage-existing-custom-detection-rules)中的步驟，以複查現有的自訂偵測。 <br>  
+您可以維持對自訂偵測的 broadness 或明確程度的控制權，因此自訂偵測產生的任何 false 警示，都可能表示需要修改規則的特定參數。
+
 
 ## <a name="manage-existing-custom-detection-rules"></a>管理現有的自訂偵測規則
 您可以查看現有的自訂偵測規則清單，檢查其先前的執行，並查看其觸發的警示。 您也可以根據需要執行規則，並加以修改。

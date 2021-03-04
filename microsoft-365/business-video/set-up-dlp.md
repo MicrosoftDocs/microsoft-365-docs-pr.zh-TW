@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何管理設定資料遺失防護原則。
-ms.openlocfilehash: e963cf85fee887b6e91c6e54b00aaa9e5174e3b6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 54cd508ef0b0cfcf8b71dc86a4903f77a5354c36
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927955"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422060"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>使用 DLP 防止資料遺失
 
@@ -47,11 +45,11 @@ ms.locfileid: "49927955"
 1. 請複查您的設定，並視需要加以調整。 例如，您可以選擇 **自訂電子郵件文字** 和 **自訂原則提示文字**。 選取 [儲存]。
 1. 針對高容量規則重複此步驟。 選取 [ **儲存**]，然後 **關閉**]。
 1. 若要建立新原則，請選取 [ **建立原則**]。
-1. 您可以建立自訂原則或從範本開始。 例如，若要建立 HIPAA 原則，請選取 [ **醫學與健康** 情況範本]，然後選取 [ **美國健康情況保險業法案 (HIPAA])**。 選取 **[下一步]**。
-1. 輸入原則的名稱和描述。 選取 **[下一步]**。
-1. 選擇要掃描的位置。 選取 **[下一步]**。
-1. 選擇您要保護的內容類型。 選取 **[下一步]**。
-1. 選擇偵測到敏感資訊時所要執行的動作。 選取 **[下一步]**。
-1. 自訂您的存取權和覆寫許可權。 選取 **[下一步]**。
-1. 選擇您想要原則生效的時間。 選取 **[下一步]**。
+1. 您可以建立自訂原則或從範本開始。 例如，若要建立 HIPAA 原則，請選取 [ **醫學與健康** 情況範本]，然後選取 [ **美國健康情況保險業法案 (HIPAA])**。 選取 [下一步]。
+1. 輸入原則的名稱和描述。 選取 [下一步]。
+1. 選擇要掃描的位置。 選取 [下一步]。
+1. 選擇您要保護的內容類型。 選取 [下一步]。
+1. 選擇偵測到敏感資訊時所要執行的動作。 選取 [下一步]。
+1. 自訂您的存取權和覆寫許可權。 選取 [下一步]。
+1. 選擇您想要原則生效的時間。 選取 [下一步]。
 1. 請複查您的設定，然後選取 [ **建立**]。 當原則生效後，包含所述敏感資訊的電子郵件將會遭到封鎖，而且嘗試傳送該資訊的寄件者會看到警告訊息。

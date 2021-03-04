@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在管理高級 eDiscovery 案例時，新增或移除可以存取案例的成員。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 301796dfd15236a8d590d8f94ff5b885176d5d82
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 53119bfa61e259eb7a22dea37ee99b0d7b533da6
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285147"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423382"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>從案例新增或移除成員
 
@@ -37,6 +37,9 @@ ms.locfileid: "48285147"
 4. 在 [ **管理成員**] 底下，按一下 [ **新增** ] 以將成員新增至案例。 您也可以按一下 [**管理角色群組**] 下的 [**新增**]，將角色群組新增至案例。
 
 5. 在可以新增為案例成員之人員或角色群組的清單中，選取要新增之人員或角色群組名稱旁邊的核取方塊。
+
+   > [!NOTE]
+   > 將角色群組新增至案例時，您只可以新增您是其成員的角色群組。
 
 6. 選取要新增為案例成員的人員或角色群組之後，按一下 [ **新增**]。
 
