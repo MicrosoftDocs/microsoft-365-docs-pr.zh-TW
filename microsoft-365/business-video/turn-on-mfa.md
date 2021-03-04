@@ -9,41 +9,39 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何開啟多重要素驗證。
-ms.openlocfilehash: 1485875d1d40d93dab7a04d4e3d81016ac1536f3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 36a556046deac98a8687b7a74affda908fb15e4f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927763"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421772"
 ---
 # <a name="turn-on-multi-factor-authentication"></a>開啟多重要素驗證
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
-多重要素驗證表示您和員工必須提供多種方式來使用 Microsoft 365，這是保護業務最簡單的方式之一。
+多重要素驗證表示您和您的員工必須提供一種以上的方式登入 Microsoft 365，這是保護您公司的最簡單方法之一。
 
 ## <a name="try-it"></a>試試看吧！
 
 1. 移至位於 [https://admin.microsoft.com](https://admin.microsoft.com) 的系統管理中心。
-1. 選取  **全部顯示**，然後選擇 **Azure Active Directory 系統管理中心**。
-1. 選取 **Azure Active Directory、****屬性**、**管理安全性預設值**。
-1. 在 **啟用安全性預設值下**，選取 **是** ，然後 **儲存**。
+1. 選取 [  **全部顯示**]，然後選擇 [ **Azure Active Directory 系統管理中心**]。
+1. 選取 [ **Azure Active Directory**]、[ **屬性**] 及 [ **管理安全性預設值**]。
+1. 在 [ **啟用安全性預設值**] 底下選取 **[是]** ，然後按一下 [ **儲存**]。
 
 > [!NOTE]
-> 針對新訂閱，系統會自動開啟安全預設值。
+> 針對新訂閱，會自動開啟安全的預設值。
 
-下次選取的員工進行登錄時，系統將會要求他們先在手機上設定 Microsoft Authenticator App 進行第二種形式的驗證。
+在下一次選取的雇員登入時，系統會要求他們在其電話上設定 Microsoft 驗證應用程式，以進行第二種驗證格式。
