@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6b5cbbcb2f48797130b080d9d1dd1e6427d4fb8
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 90dee316ee5bdc99b6a2386260a3be38728e7282
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110048"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453714"
 ---
 # <a name="device-requirements"></a>裝置需求
 
@@ -68,6 +68,7 @@ Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 
 
 - 啟動磁片磁碟機必須是硬碟以外的任何類型。 例如，SSD、NVMe 和 eMMC 磁片磁碟機都是有效的選擇。
 - 啟動磁片磁碟機必須具有至少 128 GB 的容量。
+- 內部裝置記憶體 (RAM) 必須等於或超過 8 GB。
 
 如果裝置是在2020年6月1日之後進行，也應同時有紅外相機、指紋辨識器或兩者，以便支援 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)。
 

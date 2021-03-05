@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c3ba9ce6675e81a99309243db251b34a21a4b43f
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279385"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454156"
 ---
 # <a name="create-a-new-topic"></a>建立新主題 
 
@@ -52,15 +52,17 @@ ms.locfileid: "50279385"
 
 ### <a name="to-create-a-new-topic"></a>若要建立新的主題：
 
-1. 在 [ **名稱這個主題** ] 區段中，輸入新主題的名稱。
+1. 從 [管理主題] 頁面上的功能區中，選取用來建立新主題頁面的選項。
+
+2.   在 [ **名稱這個主題** ] 區段中，輸入新主題的名稱。
 
     ![名稱本主題](../media/knowledge-management/k-new-topic-page.png) </br> 
 
 
-2. 在 [ <b>替代名稱</b> ] 區段中，輸入該主題可能參考的任何其他名稱。 
+3. 在 [ <b>替代名稱</b> ] 區段中，輸入該主題可能參考的任何其他名稱。 
 
     ![替代名稱](../media/knowledge-management/alt-names.png) </br> 
-3. 在 [ <b>描述</b> ] 區段中，輸入一些描述主題的句子。 
+4. 在 [ <b>描述</b> ] 區段中，輸入一些描述主題的句子。 
 
     ![主題的描述](../media/knowledge-management/description.png)</br>
 

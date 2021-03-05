@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b32982298a368dc435dad8b6c09188321d099e2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6c5c94ce3994424a6d4b6f4a4ac587f5cc5e33ca
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289230"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454694"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修復 Office 365 中傳遞的惡意電子郵件
 
@@ -130,6 +130,8 @@ ms.locfileid: "50289230"
   - **成功**：對 remediable 電子郵件所需的動作已完成。 例如：系統管理員想要移除信箱中的電子郵件，讓系統管理員採取虛刪除電子郵件的動作。 如果在採取動作後原始檔案夾中找不到 remediable 電子郵件，則狀態會顯示為 [成功]。
 
   - **失敗**：對 remediable 電子郵件所需的動作失敗。 例如：系統管理員想要移除信箱中的電子郵件，讓系統管理員採取虛刪除電子郵件的動作。 如果在採取動作後，在信箱中仍然會找到 remediable 電子郵件，則狀態會顯示為 [失敗]。
+  
+  - **已在目的地中**：已在電子郵件上執行所需的動作，或已存在於目的地位置的電子郵件。 例如：電子郵件在第一天的管理員透過瀏覽器進行虛刪除。 類似的電子郵件會顯示在第2天，也就是由系統管理員重新虛刪除。當您選取這些電子郵件時，系統管理員會從第一天開始挑選一些已虛刪除的電子郵件。 現在這些電子郵件不會再次進行處理，因為它們只會顯示為「已在目的地中」，因為它們存在於目的地位置中時未採取任何動作。
 
   選取動作記錄檔中的任何專案，以顯示修正詳細資料。 如果詳細資料說「成功」或「在信箱中找不到」，表示該專案已經從信箱中移除。 有時候，修復期間發生系統性錯誤。 在這種情況下，重試修正是一個不錯的做法。
 

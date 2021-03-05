@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1a00f7d5fb37cc9eea3f9454d473703084960864
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 0311450386f3b7c9f950276340901daacc06b2a8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142930"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453931"
 ---
 # <a name="readiness-assessment-tools"></a>準備工作評估工具
 
@@ -26,7 +26,7 @@ ms.locfileid: "50142930"
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>適用于管理設定的線上準備工作評估工具
 
-線上工具會檢查 Microsoft Endpoint Manager 中的設定 (尤其是 Microsoft Intune) 、Azure Active Directory (Azure AD) 和 Microsoft 365，以確保它們能夠與 Microsoft 受管理的電腦搭配使用。 在您上次於 Azure AD 組織 (租使用者) 中執行檢查後，Microsoft 受管理的桌面會保留與這些檢查相關的資料。 12個月後，我們會將它保留在解除識別的表單中。 您可以選擇刪除我們收集的資料。
+[線上工具](https://aka.ms/mmdart)會檢查 Microsoft Endpoint Manager 中的設定 (尤其是 microsoft Intune) 、Azure Active Directory (azure AD) 和 microsoft 365，以確保它們能夠與 Microsoft 受管理的電腦搭配使用。 在您上次於 Azure AD 組織 (租使用者) 中執行檢查後，Microsoft 受管理的桌面會保留與這些檢查相關的資料。 12個月後，我們會將它保留在解除識別的表單中。 您可以選擇刪除我們收集的資料。
 
 任何至少具有全域讀取者或 Intune 系統管理員角色的人員，都可以執行此工具，但是兩個檢查 ([條件式存取原則](readiness-assessment-fix.md#conditional-access-policies) 和 [多重要素驗證](readiness-assessment-fix.md#multifactor-authentication) 都需要額外的許可權。
  
@@ -34,7 +34,7 @@ ms.locfileid: "50142930"
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
-|支票  |說明  |
+|支票  |描述  |
 |---------|---------|
 |Autopilot 部署設定檔     | 驗證 Autopilot 部署設定檔的指派是否不會套用到所有的裝置 (設定檔 *不應該指派* 給任何 Microsoft 受管理的桌面裝置。 )        |
 |憑證連接器     | 檢查憑證連接器的狀態，以確保它們為作用中狀態。   |
@@ -56,7 +56,7 @@ ms.locfileid: "50142930"
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 設定
 
-|支票  |說明  |
+|支票  |描述  |
 |---------|---------|
 |企業狀態漫遊的「Ad hoc」訂閱     | 建議您如何檢查是否 (如果設定為 "false" ) 設定為 "false" 可使企業狀態漫遊無法正常運作  |
 |企業狀態漫遊     | 建議如何檢查是否已啟用企業狀態漫遊       |
@@ -71,7 +71,7 @@ ms.locfileid: "50142930"
 
 ## <a name="microsoft-365-apps-for-enterprise-settings"></a>Microsoft 365 應用程式的企業版設定
 
-|支票  |說明  |
+|支票  |描述  |
 |---------|---------|
 |商務用 OneDrive     | 檢查商務用 OneDrive 是否使用不支援的設定。        |
 

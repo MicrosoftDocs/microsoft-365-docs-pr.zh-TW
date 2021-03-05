@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 9dc2f4c0923f52bfc83a9177b595a6955a3afa8f
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 1da3ff6b3347d0e996b017aa1f6243fd724ffccd
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242731"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454404"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (一般) 
 
@@ -59,7 +59,8 @@ ms.locfileid: "50242731"
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
-| 新的德國地區新增至現有的組織設定，而信箱移至 Office 365 服務。 | Exchange Online 設定會將新的隨用本機德文區域新增至轉換的組織。 此 Office 365 服務區域已設定為預設值，可讓內部負載平衡服務將信箱重新分配至 Office 365 服務中的適當預設區域。 在此轉換中，任何一側 (德國或 Office 365 服務) 的使用者都位於相同的組織中，而且可以使用 URL 端點。 | Exchange Online | -將使用者和服務從 URLs 德國轉接至 Office 365 服務 URLs (`https://outlook.office365.com`) 。 <br><br> -在遷移期間，使用者將繼續透過傳統的德國 URLs 存取服務。 無需立即採取任何動作。 <br><br> -使用者應開始使用 Office Online 功能的 office.com 入口網站 (行事曆、郵件、人員) 。 流覽至尚未遷移至 Office 365 服務的服務，在遷移之前將無法運作。 <br><br> -Outlook Web App 在遷移期間不會提供公用資料夾體驗。 |
+| 新的德國地區新增至現有的組織設定，並將信箱移至 Office 365 服務。 | Exchange Online 設定會將新的隨用本機德文區域新增至轉換的組織。 此 Office 365 服務區域已設定為預設值，可讓內部負載平衡服務將信箱重新分配至 Office 365 服務中的適當預設區域。 在此轉換中，任何一側 (德國或 Office 365 服務) 的使用者都位於相同的組織中，而且可以使用 URL 端點。 | Exchange Online | -從您傳統的德國 URLs (outlook.office.de) 轉換使用者和服務365，URLs (`https://outlook.office365.com`) 。 <br><br> -使用者可能會在遷移期間，繼續透過舊版德國 URLs 存取服務，但在完成遷移時，需要停止使用舊版 URLs。 <br><br> -使用者應使用 Office Online 的「全球 Office 入口網站」功能（ (行事曆、郵件、人員) ）進行轉換。 流覽至尚未遷移至 Office 365 服務的服務，在遷移之前將無法運作。 <br><br> -在遷移期間，Outlook Web App 不會提供公用資料夾體驗。 |
+| 更新 AutoDiscover 的自訂 DNS 設定| 在 Exchange Online 階段 (階段 5) 完成時，必須更新目前指向 Microsoft Cloud Deutschland 之 AutoDiscover 的客戶管理 DNS 設定，以指向 Office 365。 <br> 具有指向 autodiscover-outlook.office.de 之 CNAME 的現有 DNS 專案必須更新為指向 autodiscover.outlook.com。 | Exchange Online | 可用性要求和服務探索呼叫透過 AutoDiscover 直接指向 Office 365 服務。 在遷移完成後，未執行這些 DNS 更新的客戶可能會遇到自動探索服務的問題。 |
 |||||
 
 其他考慮：
@@ -74,7 +75,7 @@ ms.locfileid: "50242731"
 
 - 如果您使用的是 Exchange Online 混合式：
 
-    - 您必須先重新執行混合式設定向導 (HCW) 以在轉換之前更新 Microsoft Cloud Deutschland 的內部部署設定，然後在 Office 365 服務時重新執行 HCW。 如果您使用自訂網域，可能需要其他的 DNS 更新。
+    - Exchange Online 混合式客戶必須執行混合式設定向導 (HCW) 做為這項轉換的一部分。 在 **遷移步驟階段5開始之前，** 任何 Exchange Online 混合客戶都必須在 Office 365 德國模式中執行最新版的 HCW，以準備內部部署設定，以進行遷移至 Office 365 global。 在 **完成「遷移階段 5** (當郵件中心通知發佈) 時，您必須使用 Office 365 全球化設定執行 HCW，將內部部署系統指向全域服務。 如果您使用自訂網域，可能需要其他的 DNS 更新。
 
 若要深入瞭解遷移中組織和遷移 Exchange Online 資源之後的差異，請在 [新的德國資料中心區域遷移至 Office 365 服務期間，查看客戶經驗](ms-cloud-germany-transition-experience.md)中的資訊。
 

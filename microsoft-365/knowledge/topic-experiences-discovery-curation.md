@@ -11,16 +11,16 @@ ms.service: ''
 ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 435544de1016552c6ce3d39c73f7127223f36331
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 036dbc4029cc7e8308ad295ccd8b45dc3879a6f8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107705"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453954"
 ---
-# <a name="microsoft-viva-topics-discovery-and-curation"></a>Microsoft Viva 主題探索和 curation 
+# <a name="microsoft-viva-topics-discovery-and-curation"></a>Microsoft Viva Topics 探索摘要與內容篩選 
 
 Viva 主題會將資訊組織至 Microsoft 365 環境中的知識。 我們已有經驗豐富的檔和網站頁面，我們會遇到我們所熟悉的字詞。 許多時候，我們會停止我們所做的工作，以花寶貴時間搜尋詳細資訊。
 

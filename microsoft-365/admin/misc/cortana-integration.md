@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 當您使用有效的工作或學校帳戶登入時，使用者可在 Microsoft 365 體驗中取得使用 Cortana 的雲端協助服務，以符合 Office 365 的企業級隱私權、安全性和合規性承諾。
-ms.openlocfilehash: bd296b19d0e21abb39fe39e2a0bb92d0d84d9034
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 72d7eb2e4195e3941c382d96c7e7319b94202707
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751332"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454358"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -103,11 +103,26 @@ Windows 10 版本2004和更新版本中的 cortana，符合 Cortana enterprise �
 
 [深入瞭解小組中的 Cortana 語音協助](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
 
+### <a name="conversational-ai-in-outlook-for-ios-with-cortana"></a>使用 Cortana iOS 的 Outlook 中的會話 AI
+
+在 iOS 的 Outlook 中，Cortana 的語音導向通話體驗功能可讓使用者向其工作效率的 assistant，以排程會議、撰寫電子郵件、管理他們的行事曆和收件匣，並尋找所有類型的資訊。
+
+使用自然語言、語音辨識、機器學習及語言的 Microsoft AI 技術，Cortana 會取得您的內容，以協助您保持井然有序、連線至對您很重要的人員和事項，以及控制您的日常。
+
+只要使用麥克風按鈕，即可要求 Cortana 加入會議收件者，或是變更日期、時間或地點。 您也可以要求 Cortana 尋找特定的事件。 最後，您可以要求 Cortana 撰寫快速電子郵件、轉寄郵件或回復執行緒。 Cortana 的麥克風也可以協助您在 iOS 的 Outlook 中開始播放我的電子郵件，讓您可以聆聽收件匣無人參與。
+
+在最初，使用 Outlook iOS 搭配 Microsoft 365 工作帳戶時，適用于美國的這項新的交談 AI 功能將會以英文使用。 若要深入瞭解，請參閱 [使用 Cortana 的 Outlook 中的個人生產力助理開始交談](https://techcommunity.microsoft.com/t5/outlook-blog/start-a-conversation-with-your-personal-productivity-assistant/ba-p/2071416#:~:text=Conversational%20AI%20allows%20you%20to,time%2C%20all%20with%20your%20voice)。
+
+### <a name="conversational-ai-with-cortana-in-outlook-with-ios-is-an-opt-in-experience"></a>具有 iOS 的 Outlook 中的「使用中 Cortana 的會話 AI] 是自願參與的體驗
+
+個別的使用者會在第一次在 iOS 的 Outlook 中，選取 [要求 Cortana] mic 按鈕時，系統會提示他們加入宣告對話 AI 體驗。
+
 ### <a name="play-my-emails"></a>播放我的電子郵件
 
 透過 Outlook mobile (播放我的電子郵件（透過 Outlook mobile) 以語音導向的免提體驗，讓使用者透過其手機、耳機或相連的音訊裝置上的揚聲器收聽新的郵件，並透過揚聲器進行變更。 使用者可以要求 Cortana 高聲閱讀他們最近的電子郵件，並要求 Cortana 採取諸如旗標、封存、刪除和略過訊息等動作。 這項功能特別有助於在 commuting、多工工作或前往時追趕您的電子郵件。 當使用者在 [播放我的電子郵件] 中與 Cortana 交談時，語音音訊要求會直接移至 [Cortana enterprise 服務]。 在 Office 365 雲端中處理使用者電子郵件語音讀出的文字。 在此程式期間，不會在使用者的行動裝置上處理任何 Office 365 資料，也不會儲存電子郵件資料。 口述命令的成績單 (例如「標為已讀取」、「下一步」、「旗標」等等。 ) 可能會依照 Microsoft [Online Services 條款](https://www.microsoft.com/licensing/product-licensing/products)中的資料保護條款保留。
 
 當電子郵件受到保護時，Cortana 會呼叫出來，並在閱讀郵件之前停頓片刻，讓使用者有足夠的時間來暫停播放或略過下一封郵件。 類似于私人電話，當使用者可能會 overheard 機密資訊的位置時，使用者應小心謹慎。 在這些情況下，當您在 Outlook mobile 中使用「播放我的電子郵件」時，建議您組織的員工在適當的環境中有磨損耳機。
+
 
 ### <a name="opt-out-of-play-my-emails"></a>選擇不播放我的電子郵件
 

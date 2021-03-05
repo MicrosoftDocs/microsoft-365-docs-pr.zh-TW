@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的準備工作。
-ms.openlocfilehash: 8160756bdbf973741f5e75f45dc2a2044f63e39b
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 085630c498cebfea26fb3de975740af17cb73921
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242839"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454416"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的準備工作
 
@@ -90,7 +90,7 @@ Reworked as text:
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
-| 卸載舊版的混合式設定向導 (HCW) ，然後安裝並執行最新版本 17.0.5378.0 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 | 最新版本的 HCW 包含必要更新，以支援從 Microsoft Cloud Deutschland 轉換為 Office 365 服務的客戶。 <br><br> 更新包括傳送連接器和接收連接器對內部部署憑證設定的變更。 | Exchange Online 客戶執行混合式部署 | 必要的動作。 在階段5之 9 (Exchange) 之前失敗，可能會導致服務或用戶端失敗。 |
+| 在遷移之前，更新至最新版本的混合式設定向導 (HCW) 。 <br><br> Microsoft Cloud Deutschland 混合式 Exchange Online 客戶必須先卸載舊版的 HCW，然後 (17.0.5378.0 或以上) 中安裝及執行最新版本 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 | 最新版本的 HCW 包含必要更新，以支援從 Microsoft Cloud Deutschland 轉換為 Office 365 服務的客戶。 <br><br> 更新包括傳送連接器和接收連接器的內部部署憑證設定變更。 <br><br> 客戶必須在階段5之 9 (Exchange 遷移) 開始之前，使用 Office 365 德國設定重新安裝。 <br><br> 附注：完成遷移至 Office 365 服務後，您將會再次移除並重新安裝 HCW，這次使用 Office 365 全球化設定來完成混合式設定與全域服務。 | Exchange Online 客戶執行混合式部署 | 必要的動作。  (Exchange 遷移) 中的第5階段之前失敗，可能會導致服務或用戶端失敗。 |
 |||||
 
 <!--

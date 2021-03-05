@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 使用設定指南，加速規劃和設定 Microsoft 365 或 Office 365。
-ms.openlocfilehash: 9bddf24e4133dfac32a0175b754709ba0c840760
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 6ad00819b172d7cb0cfb5b63a93c0910df5517e6
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794421"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454144"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服務的設定指南
 
@@ -216,3 +216,9 @@ Microsoft Exchange Online Protection (EOP) 是雲端式電子郵件篩選服務�
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>使用 Configuration Manager 部署及更新 Microsoft 365 應用程式
 
 針對使用 Configuration Manager 的組織，您可以使用「使用 [Configuration manager Advisor 部署和更新 microsoft 365 應用程式](https://aka.ms/oppinstall) 」產生腳本，以使用 FastTrack 工程師的最佳作法來自動設定您的 Microsoft 365 應用程式部署。 使用此指南可建立您的部署群組、自訂您的 Office 應用程式和功能、設定動態或精益安裝，然後執行腳本以建立以您的部署為目標的應用程式、自動部署規則和裝置集合。 
+
+### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>整合協力廠商 cloud app 與 Azure AD
+
+整合協力廠商應用程式與 Azure Active Directory (Azure AD) ，以改善使用者體驗，並提供額外的安全性層級。 透過這種端對端的體驗，您可以直接從此嚮導執行大部分設定。 在適當的地方，我們會將您重新導向至對應的設定頁面。
+
+使用 [ [整合協力廠商 cloud app](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) ] 嚮導來整合協力廠商 cloud App 與 Azure AD。

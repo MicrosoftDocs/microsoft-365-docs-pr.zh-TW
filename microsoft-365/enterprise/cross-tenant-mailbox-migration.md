@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 237d47502d28ec43978cef2c16e049ac9e90d7b1
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: d81e272cfe50aa8379135406cbe538fbc8a18cb5
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040553"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454226"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -92,15 +92,15 @@ ms.locfileid: "50040553"
 #### <a name="step-by-step-instructions-for-the-target-tenant-admin"></a>目標承租人管理員的逐步指示
 
 1. 從 [GitHub 存放庫](https://github.com/microsoft/cross-tenant/releases/tag/Preview)下載目標租使用者安裝程式的 SetupCrossTenantRelationshipForTargetTenant.ps1 腳本。 
-2. 將腳本 ( # A0) 儲存至您要執行腳本的電腦。
+2. 將腳本 (SetupCrossTenantRelationshipForTargetTenant.ps1) 儲存至您要執行腳本的電腦。
 3. 建立與 Exchange Online 目標租使用者的遠端 PowerShell 連線。 此外，請務必具備執行部署腳本所需的許可權，才能設定 Azure 金鑰 Vault 儲存和憑證、移動信箱應用程式、EXO 遷移端點，以及 EXO 組織關聯性。
 4. 將檔資料夾目錄變更為腳本位置，或確認腳本目前已儲存至遠端 PowerShell 會話中的目前位置。
 5. 使用下列參數和值執行腳本。
 
     | 參數 | 值 | 必要或選用
     |---------------------------------------------|-----------------|--------------|
-    | -TargetTenantDomain                         | 目標租使用者網域，例如 contoso \. onmicrosoft.com。 | 必要 |
-    | -ResourceTenantDomain                       | 來源租使用者網域，例如 fabrikam \. onmicrosoft.com。 | 必要 |
+    | -TargetTenantDomain                         | 目標租使用者網域，例如 fabrikam \. onmicrosoft.com。 | 必要 |
+    | -ResourceTenantDomain                       | 來源租使用者網域，例如 contoso \. onmicrosoft.com。 | 必要 |
     | -ResourceTenantAdminEmail                   | 來源承租人管理員的電子郵件地址。 這是來源承租人系統管理員，會同意使用從目標系統管理員傳送的信箱遷移應用程式。這是將會收到該應用程式之電子郵件邀請的系統管理員。 | 必要 |
     | -ResourceTenantId                           | 來源承租人組織識別碼 (GUID) 。 | 必要 |
     | -SubscriptionId                             | 用於建立資源的 Azure 訂閱。 | 必要 |
@@ -187,9 +187,9 @@ ms.locfileid: "50040553"
     | 參數 | 值 |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | 來源租使用者為屬於遷移範圍內之身分識別/信箱所建立的已啟用郵件功能的安全性群組。 |
-    | -ResourceTenantDomain | 來源租使用者功能變數名稱，例如 fabrikam \. onmicrosoft.com。 |
+    | -ResourceTenantDomain | 來源租使用者功能變數名稱，例如 contoso \. onmicrosoft.com。 |
     | -ApplicationId | 用於遷移之應用程式的 Azure 應用程式識別碼 (GUID) 。 可透過 Azure 入口網站取得的應用程式識別碼 (Azure AD、企業應用程式、應用程式名稱、應用程式識別碼) 或包含在您的邀請電子郵件中。  |
-    | -TargetTenantDomain | 目標租使用者功能變數名稱，例如 contoso \. onmicrosoft.com。 |
+    | -TargetTenantDomain | 目標租使用者功能變數名稱，例如 fabrikam \. onmicrosoft.com。 |
     | -TargetTenantId | 目標租使用者的租使用者識別碼。 例如，contoso onmicrosoft.com 租使用者的 Azure AD 租使用者識別碼 \. 。 |
     |||
 

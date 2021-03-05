@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: 976059e1469861ea28b2a94b84e373119935fb20
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 159edf6f95910625c3f924d02c8307d681164df7
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145388"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454238"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
@@ -49,7 +49,7 @@ Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者
 
 ### <a name="1-enable-windows-location-services"></a>1. 啟用 Windows 位置服務
 
-在此選項中，您必須至少要有兩部電腦在支援先決條件的辦公室位置執行。 您必須在每一部電腦上安裝 Windows 版本 **19.232** 或更新版本的 OneDrive。 如需 OneDrive 版本的詳細資訊，請參閱 [OneDrive 版本](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)資訊。 在近期的 Office 365 用戶端應用程式中，計畫加入網路度量。
+針對此選項，您必須至少要有兩部電腦在支援先決條件的辦公室位置執行。 Windows 版本的 OneDrive 必須是最新的，且已安裝在每一部電腦上。 如需 OneDrive 版本的詳細資訊，請參閱 [OneDrive 版本](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)資訊。 在近期的 Office 365 用戶端應用程式中，計畫加入網路度量。
 
 Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應用程式並自行尋找，以測試這種情況。 可在具有設定的單一機器上啟用 **|隱私權 |** 必須啟用設定 _允許應用程式存取您的位置_ 的位置。 您可以使用 MDM 或群組原則，將 Windows Location 服務同意部署至使用設定 _LetAppsAccessLocation_ 的電腦。
 
@@ -61,11 +61,11 @@ Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應�
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. 新增位置及提供 LAN 子網資訊
 
-若為此選項，則不需要 Windows Location 服務和 Wi-Fi。 您需要在該位置的每台電腦上安裝 Windows 版本 **20.161** 或更新版本 OneDrive。
+若為此選項，則不需要 Windows Location 服務和 Wi-Fi。 您的 Windows 版本 OneDrive 必須是最新的，且安裝在每個電腦上的位置。
 
 您也需要在系統管理中心的 [網路連線] 頁面中新增位置，或從 CSV 檔案匯入這些位置。 新增的位置必須包含您的 office LAN 子網資訊。
 
-因為您是要新增位置，所以您可以在城市內定義多個辦事處。
+自您新增位置後，您可以在城市內定義多個辦事處。
 
 來自用戶端電腦的所有測試度量，都包括 LAN 子網資訊，與您輸入的 office 位置詳細資料相關聯。 在符合這些先決條件後，應會在24小時內開始顯示度量範例和辦公室位置。
 

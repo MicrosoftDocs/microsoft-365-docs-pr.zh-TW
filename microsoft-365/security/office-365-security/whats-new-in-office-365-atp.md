@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fd999c27598db6f17073cfe82e4c4f91ffb1667
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7b6175f507f54adf357e40ea44c39f5e495a1b14
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407201"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454486"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新功能
 
@@ -46,6 +46,7 @@ ms.locfileid: "50407201"
 - 在[搜尋體驗](threat-explorer.md)中使用警示識別碼及 Alert-Explorer 導覽) 進行搜尋的警示識別碼整合 (
 - 將[搜尋體驗](threat-explorer.md)中從9990到200000匯出記錄的限制提高
 - 從 7 (先前的限制到[搜尋體驗](threat-explorer.md)中的30天內，擴充 Explorer (和即時的偵測) 資料保留和搜尋限制) 
+- 瀏覽器中新的搜尋功能稱為模擬的 **網域** 和模擬 **使用者** (和即時偵測) 搜尋受保護的使用者或網域的類比攻擊。 如需詳細資訊，請參閱 [詳細資料](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。  (Office 365 的 Microsoft Defender 方案1或 Plan 2) 
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -119,7 +120,7 @@ ms.locfileid: "50407201"
 
 您知道 Microsoft Defender for Office 365 可提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 

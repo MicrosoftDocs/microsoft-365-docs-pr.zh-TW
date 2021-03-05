@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Microsoft 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
-ms.openlocfilehash: 3fba6b4498f275b07148c2d879d141474ddf4a13
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 9a713684bb9a2401316dbb3289115be19b220cff
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753274"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453654"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 群組中管理來賓存取
 
@@ -53,7 +53,7 @@ ms.locfileid: "48753274"
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>從系統管理中心新增來賓至 Microsoft 365 群組
 
-如果您的目錄中已存在來賓，您可以從 Microsoft 365 系統管理中心將其新增至您的群組。
+如果您的目錄中已存在來賓，您可以從 Microsoft 365 系統管理中心將其新增至您的群組。 具有動態成員資格的 (群組必須 [在 Azure Active Directory 中管理](https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-create-rule)。 ) 
   
 1. 在系統管理中心中，移至 [**群組**  >  **群組**] 頁面。
   
@@ -61,7 +61,7 @@ ms.locfileid: "48753274"
   
 4. 選取 [ **新增成員**]，然後選擇您要新增的客人名稱。
     
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
 
 如果您想要直接將來賓新增至目錄，您可以 [在 azure 入口網站中新增 Azure Active directory B2B 協同作業使用者](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)。
 

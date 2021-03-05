@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: ac8e4b8cdcdfd4d2de0c48a22500338c7a8480a8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279407"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454168"
 ---
 # <a name="edit-an-existing-topic"></a>編輯現有主題 
 
@@ -55,7 +55,7 @@ ms.locfileid: "50279407"
 
 ### <a name="to-edit-a-topic-page"></a>編輯主題頁面
 
-1. 在 [主題] 頁面上，選取 [ **編輯**]。 這可讓您在 [主題] 頁面上進行所需的變更。
+1. 在 [主題] 頁面上，選取 [ **編輯**]。 這可讓您視需要在 [主題] 頁面進行變更。
 
    ![編輯控制項](../media/knowledge-management/topic-page-edit.png) </br>  
 

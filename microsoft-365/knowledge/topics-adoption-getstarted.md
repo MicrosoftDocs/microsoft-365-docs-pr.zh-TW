@@ -11,13 +11,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ROBOTS: NOINDEX
-ms.openlocfilehash: 3548cb31f782052a3bd4da1802077a343b5da01f
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 28dc86bbc2d844110610cd8a884af5313b7d8cfa
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107527"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453978"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>開始推動採用 Microsoft Viva 主題
 

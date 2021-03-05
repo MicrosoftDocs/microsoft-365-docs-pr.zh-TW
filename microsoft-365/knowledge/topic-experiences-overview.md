@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva 主題概述
+title: Microsoft Viva Topics 概觀
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,17 +11,17 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
 description: Viva 主題的概述。
-ms.openlocfilehash: f45e0f7c6090d4584526aa9c2abb5ec98213d635
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107635"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453966"
 ---
-# <a name="microsoft-viva-topics-overview"></a>Microsoft Viva 主題概述 
+# <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概觀 
 
 Viva 主題使用 Microsoft AI 技術、Microsoft 365、Microsoft Graph、搜尋及其他元件和服務，以在日常使用的 Microsoft 365 應用程式中，向您的使用者傳授知識，從 SharePoint 新式頁面和 Microsoft 搜尋開始。
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3f03543b03dca5fe426700ffff4f5c6edb8fa3c7
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066866"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461664"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高級搜尋架構命名變更
 
@@ -55,7 +55,7 @@ ms.locfileid: "50066866"
 
 | 資料行名稱 | 原始值名稱 | 新值名稱 | 變更的原因
 |--|--|--|--|
-| `DetectionSource` | MCAS |    Microsoft Cloud App Security | ..Org |
+| `DetectionSource` | MCAS |    Microsoft 雲端應用程式安全性 | ..Org |
 | `DetectionSource` | WindowsDefenderAtp|   EDR| ..Org |
 | `DetectionSource` | WindowsDefenderAv | 防毒 | ..Org |
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | ..Org |
@@ -73,6 +73,37 @@ ms.locfileid: "50066866"
 | `ServiceSource` |Azure ATP    |適用於身分識別的 Microsoft Defender | ..Org |
 
 `DetectionSource` 可用於 [AlertInfo](advanced-hunting-alertinfo-table.md) 表格。 `ServiceSource` 可用於 [AlertEvidence](advanced-hunting-alertevidence-table.md) 和 [AlertInfo](advanced-hunting-alertinfo-table.md) 資料表。 
+
+## <a name="february-2021"></a>2021 年 2 月
+
+1. 在 [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) 和 [EmailEvents](advanced-hunting-emailevents-table.md) 資料表中，我們已棄用 `MalwareFilterVerdict` 和 `PhishFilterVerdict` 欄，並將其取代為數據 `ThreatTypes` 行。 我們也已棄用 `MalwareDetectionMethod` 和 `PhishDetectionMethod` 欄，並將其取代 `DetectionMethods` 欄。 這種精簡功能可讓我們在新欄下提供更多資訊。 下圖提供對應。
+
+| 表格名稱 | 原始欄名稱 | 新欄名稱 | 變更的原因
+|--|--|--|--|
+| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包含更多偵測方法 |
+| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包含更多威脅類型 |
+| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包含更多偵測方法 |
+| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包含更多威脅類型 |
+
+
+2. 在 [ `EmailAttachmentInfo` 和 `EmailEvents` 表格] 中，我們新增了欄， `ThreatNames` 以提供有關電子郵件威脅的詳細資訊。 此欄包含垃圾郵件或網路釣魚詐騙等值。
+
+3. 在 [ [DeviceInfo](advanced-hunting-deviceinfo-table.md) ] 表格中，我們會根據 `DeviceObjectId` `AadDeviceId` 客戶的意見反應取代欄。
+
+4. 在 [ [DeviceEvents](advanced-hunting-deviceevents-table.md) ] 表格中，我們更新數個 ActionType 名稱，以更好地反映動作的描述。 詳細資訊可在下面找到。
+
+| 表格名稱 | 原始 ActionType 名稱 | 新 ActionType 名稱 | 變更的原因
+|--|--|--|--|
+| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | 客戶意見反應 |
+| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | 客戶意見反應 |
+| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | 客戶意見反應 |
+| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | 客戶意見反應 |
+| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | 客戶意見反應 |
+
+
+
+
+
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)

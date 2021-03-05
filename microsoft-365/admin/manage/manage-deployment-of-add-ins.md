@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 4dc7552f2341097b95e763297d2f701f162f83ec
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114498"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454391"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在系統管理中心部署增益集
 
@@ -68,7 +68,7 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
 2. 選取頁面頂端的 [ **部署增益集** ]，然後選取 **[下一步]**。
  
     > [!NOTE]
-    > 系統管理中心已更新整合型應用程式的部署經驗。 如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 [**設定**] [  >  **整合式應用程式**]。 在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。
+    > 系統管理中心已更新整合型應用程式的部署經驗。 整合式應用程式只有全域系統管理員才能看見，但其他使用者仍存在舊經驗。 如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 [**設定**  >  **整合型應用程式**]。 在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。
     
 3. 選取 [選項]，然後依照指示執行。
   
@@ -99,7 +99,7 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>將增益集指派給使用者和群組時的考慮事項
 
-系統管理員可以將增益集指派給所有人或特定的使用者和群組。 每個選項都有其意涵：
+全域管理員和 Exchange 系統管理員可以將增益集指派給每個人或特定使用者和群組。 每個選項都有其意涵：
   
 - **所有人** 此選項會將增益集指派給組織中的每一位使用者。 請謹慎使用此選項，並且只有在貴組織需要普遍使用此增益集時才使用此選項。 
     

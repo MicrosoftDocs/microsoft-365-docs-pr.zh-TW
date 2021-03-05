@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d16c0afc675ba759e392c9fe9a44c42b89dbad0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1a9bf9461e8cf6d62e4283c9112b801371242f2e
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287650"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453702"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>評估 Microsoft Defender for Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "50287650"
 
 進行完整的安全性產品評估，可協助您瞭解升級和購買的決策。 它可協助您嘗試安全性產品的功能，以評估其日常工作中的安全性操作小組的運作方式。
 
-[Microsoft Defender For Office 365](office-365-atp.md)評估體驗旨在消除裝置和環境設定的複雜性，使您能夠專注于評估安全性解決方案的功能。 它只適用于電子郵件保護，而不是 SharePoint、Office 用戶端或小組。
+[Microsoft Defender For Office 365](office-365-atp.md)評估體驗旨在消除裝置和環境設定的複雜性，使您能夠專注于評估安全性解決方案的功能。 它只適用于電子郵件保護，而不是 SharePoint、Office 用戶端（如 Word 或小組）。
 
 如果您還沒有支援 Microsoft Defender for Office 365 的授權，您可以開始 [30 天的試用版評估](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) ，並測試 Office 365 安全性 & 規範中心 (中的功能 https://protection.office.com/homepage) 。 您將會喜歡快速設定，必要時您可以輕鬆關閉此功能。
 
@@ -42,11 +42,11 @@ ms.locfileid: "50287650"
 
 在評估模式中，Office 365 的 defender 為 Office 365 的電子郵件原則，會記錄 verdicts，例如惡意程式碼，但不會對郵件採取動作。 您不需要變更 MX 記錄設定。
 
-使用評估模式時，會替您設定 [安全附件](atp-safe-attachments.md)、 [安全連結](atp-safe-links.md)和 [反網路釣魚模擬原則](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 。 所有的 Office 365 原則都是在後臺非強制模式中建立，對您看不到。
+使用評估模式時，會替您設定 [安全附件](atp-safe-attachments.md)、 [安全連結](atp-safe-links.md)和 [信箱智慧類比原則](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 。 所有的 Office 365 原則都是在後臺非強制模式中建立，對您看不到。
 
-在設定過程中，評估模式也會為 [連接器設定增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它會透過保留 IP 位址和寄件者資訊，提高篩選精確度，當郵件透過電子郵件安全性閘道 (ESG) 在 Office 365 的前端時，就會遺失。 增強型篩選也會提升 Exchange Online Protection (EOP) 反垃圾郵件和反網路釣魚原則的篩選準確性。
+在設定過程中，評估模式也會為 [連接器設定增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它會透過保留 IP 位址和寄件者資訊，提高篩選精確度，當郵件透過電子郵件安全性閘道 (ESG) 在 Office 365 的前端時，就會遺失。 針對連接器的增強篩選也會提升現有 Exchange Online Protection (EOP) 反垃圾郵件和反網路釣魚原則的篩選精確性。
 
-若要將潛在的實際執行影響降至不支援的案例，您可以建立傳輸規則，將垃圾郵件信賴等級設定 (SCL) 設定為-1，以略過所有的 EOP 篩選。 請參閱 [使用 EAC 建立郵件流程規則，設定](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)郵件的 SCL 的   詳細資料。
+啟用增強型連接器的增強篩選功能可提升篩選精確度，但如果您在 Office 365 的 Defender 上有 ESG，而且目前不會略過 EOP 篩選，則可能會變更特定郵件的 deliverability。 影響限制為 EOP 原則;在評估中建立的 MDO 原則安裝會以非強制模式建立。 若要將潛在的實際影響降至最低，您可以建立傳輸規則，將垃圾郵件信賴等級設定 (SCL) 為-1，以略過所有的 EOP 篩選。 請參閱 [使用 EAC 建立郵件流程規則，設定](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)郵件的 SCL 的   詳細資料。
 
 當評估模式已設定時，每日會更新一份報告，其中包含超過90天的資料，量化當原則實施 (例如「刪除」、「傳送至垃圾、隔離」) 時，可能會封鎖的郵件。 報告是針對所有的 Defender for Office 365 和 EOP 偵測產生。 它們會根據偵測技術匯總 (例如，模擬) ，並且可依時間範圍篩選。 此外，您也可以根據需要建立郵件報告，以建立自訂透視或使用威脅瀏覽器深入瞭解郵件。
 
@@ -57,7 +57,7 @@ ms.locfileid: "50287650"
 - 分析動作報告
 - 展示評估結果
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 ### <a name="licensing"></a>授權
 
@@ -99,9 +99,9 @@ ms.locfileid: "50287650"
 
 ### <a name="enhanced-filtering"></a>增強型篩選
 
-您的 Exchange Online Protection 原則（如大量和垃圾郵件保護）將保持不變。 郵件傳遞也會保持不變。 不過，評估會對連接器開啟增強型篩選功能，除非略過，否則會影響郵件流程和 Exchange Online Protection 原則。
+您的 Exchange Online Protection 原則（如大量和垃圾郵件保護）將保持不變。 不過，評估會針對連接器開啟增強型篩選功能，這可能會影響郵件流程和 Exchange Online Protection 原則，除非略過。
 
-連接器的增強篩選功能將允許承租人使用反欺騙保護。 如果您使用的電子郵件安全性閘道 (ESG) 但未開啟「增強型連接器」篩選，則不支援反欺騙。
+連接器的增強型篩選功能允許承租人使用反欺騙保護。 如果您使用的電子郵件安全性閘道 (ESG) 但未開啟「增強型連接器」篩選，則不支援反欺騙。
 
 ### <a name="urls"></a>URL
 

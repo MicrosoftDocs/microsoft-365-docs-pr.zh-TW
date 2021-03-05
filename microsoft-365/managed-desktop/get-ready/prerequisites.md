@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 79ae949d9624021121492edb811a4ea5bfcc729a
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: c298c0d07b73966fe3946f0e3f2706da5d2d30fc
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659137"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453894"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的先決條件
 
@@ -26,7 +26,7 @@ ms.locfileid: "49659137"
 
 範圍 | 必要條件詳細資料
 --- | ---
-授權 |Microsoft 受管理的桌面需要 Microsoft 365 E3 授權搭配 Microsoft Defender for Endpoint 和 Azure Active Directory Premium 2 (或視) 。<br>如需特定服務方案的詳細資訊，請參閱本主題中 [有關授權的詳細](#more-about-licenses) 資訊。<br>如需可用授權的詳細資訊，請參閱 [Microsoft 365 授權](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
+授權 |Microsoft 受管理的桌面需要 Microsoft 365 E3 授權搭配 Microsoft Defender for Endpoint (或) 指派給您的使用者。 您必須在租使用者中使用 Azure Active Directory Premium 2 的兩個授權，但使用者不需要此授權。 <br>如需特定服務方案的詳細資訊，請參閱本主題中 [有關授權的詳細](#more-about-licenses) 資訊。<br>如需可用授權的詳細資訊，請參閱 [Microsoft 365 授權](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 連線能力 |  所有 Microsoft 受管理的桌面裝置都需要從公司網路連接至眾多的 Microsoft 服務端點。<br><br>如需必要 IPs 和 URLs 的完整清單，請參閱 [Network configuration](../get-ready/network.md)。 
 Azure Active Directory |    Azure Active Directory (Azure AD) 必須是所有使用者帳戶的授權來源，或是必須使用最新版的 Azure AD Connect 從內部部署 Active Directory 同步處理使用者帳戶。<br><br>必須對 Microsoft 受管理的桌面使用者啟用[企業狀態漫遊](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)。<br><br>如需詳細資訊，請參閱 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect)。<br><br>如需支援的 Azure AD Connect 版本的詳細資訊，請參閱 [AZURE Ad connect：版本發行歷程記錄](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history)。
 驗證 |    如果 Azure AD 不是使用者帳戶的主要驗證來源，您必須在 Azure AD Connect 中設定下列其中一項：<br>-密碼雜湊同步處理<br>傳遞驗證<br>-外部身分識別提供者 (，包括 Windows Server ADFS 和非 Microsoft IDPs) 設定為符合 Azure AD 整合需求。 如需詳細資訊，請參閱 [指導方針](https://www.microsoft.com/download/details.aspx?id=56843) 。 <br><br>使用 Azure AD Connect 設定驗證選項時，也建議使用密碼回寫。 如需詳細資訊，請參閱 [密碼回寫](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)。 <br><br>如果已執行外部身分識別提供者，則必須驗證解決方案：<br>-符合 Azure AD 整合需求<br>-支援 Azure AD 條件式存取，允許設定 Microsoft 受管理的桌面裝置合規性原則<br>-啟用裝置註冊，並使用 microsoft 365 服務或 Microsoft 受管理桌面的一部分所需功能 <br><br>如需 Azure AD 驗證選項的詳細資訊，請參閱 [AZURE Ad Connect 使用者登入選項](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin)。
@@ -43,7 +43,7 @@ Microsoft 受管理的桌面需要某些授權選項才能正常運作。 如需
 > [!TIP]
 > 若要將這些授權選項指派給特定使用者，建議您利用 Azure Active Directory 的 [群組型授權功能](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) 。
 
-- Azure Active Directory Premium P2
+- Azure Active Directory Premium P1
 - Microsoft Intune 
 - Windows 10 企業版  
 - 適用於端點的 Microsoft Defender

@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 98995084fb7de9ecb434b70b5d38793a20675f19
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 26e62d6e59f1f90e35d9e18e6eed917a66876645
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840338"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453918"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps 企業版
 
@@ -27,7 +27,7 @@ Microsoft 受管理的桌面機，可確保在所有 [程式裝置](../service-d
 - Excel
 - PowerPoint
 - Outlook
-- 發行者
+- Publisher
 - Access
 - 商務用 Skype
 - OneNote
@@ -53,8 +53,8 @@ Microsoft 受管理的桌面 staggers 每個版本，以找出您環境中的任
 
 - 測試：零天
 - 第一：零天
-- Fast：7天
-- 寬：21天
+- Fast：3天
+- 寬：7天
 
 Microsoft 受管理的桌面會設定裝置的7天 [更新期限](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) 。 更新可供使用後，必須在七天內安裝。 使用者會 [收到](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) 下列數個位置要求的更新：應用程式，在最後期限之前的系統託盤12小時內，而且會在最後期限之前收到15分鐘的警告。 所有 Microsoft 365 應用程式必須關閉，更新才能完成。
 

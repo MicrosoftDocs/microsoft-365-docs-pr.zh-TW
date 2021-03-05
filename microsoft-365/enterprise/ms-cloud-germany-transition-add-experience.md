@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時的其他客戶體驗資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: 717978d69c9f87855967c474f29216f6db8d3ce9
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 26db69583bac68723d5d57b07abb856c8190d9b1
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242851"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454464"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (advanced)  
 
@@ -34,6 +34,8 @@ ms.locfileid: "50242851"
 下列各節將提供客戶經驗的其他資訊，從 Microsoft Cloud 德國 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務。
 
 ## <a name="services"></a>服務
+
+在9的階段2和階段3之9之間，可能無法存取夥伴入口網站。 在這段時間內，合作夥伴可能無法存取合作夥伴入口網站上的承租人資訊。 由於每個遷移都不同，以協助工具的持續時間可能是以小時為單位。 
 
 ### <a name="azure-ad-phase-2-of-9"></a>Azure AD (階段2之 9) 
 

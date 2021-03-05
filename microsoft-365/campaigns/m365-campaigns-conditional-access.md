@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何要求 MFA 和設定適用于商務用 Microsoft 365 的條件式存取原則。
-ms.openlocfilehash: b13ba9f8c948d9a1209655c44871ca62cb5354dd
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: e16b7f4ff7d215ee749435806be214a807cc60a4
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044497"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453666"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重要素驗證並設定條件式存取原則
 
@@ -70,7 +70,7 @@ ms.locfileid: "50044497"
 
 ## <a name="set-up-baseline-policies"></a>設定基準原則
 
-1. 移至 [azure 入口網站](https://portal.azure.com)，然後流覽至 **azure Active Directory** \> **條件式存取** ，以建立 **新的原則**。
+1. 移至 [azure 入口網站](https://portal.azure.com)，然後流覽至 **azure Active Directory** \> **安全性** \> **條件式存取** ，以建立 **新的原則**。
 
 請參閱下列每個原則的特定指示： <br>
     - [需要對系統管理員進行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva 主題角色
+title: Microsoft Viva Topics 角色
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,17 +11,17 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
 description: 深入瞭解 Viva 主題中的使用者角色。
-ms.openlocfilehash: e2975201124045574c516aad49bc5059db969b76
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5b57e768a1de8bc0447492067371630b2d045f6
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107431"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453935"
 ---
-# <a name="microsoft-viva-topics-roles"></a>Microsoft Viva 主題角色 
+# <a name="microsoft-viva-topics-roles"></a>Microsoft Viva Topics 角色 
 
 當您在 Microsoft 365 環境中使用 Viva 主題時，您的使用者可以具備下列角色：
 -   主題檢視器

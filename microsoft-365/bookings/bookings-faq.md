@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 預定常見問題。
-ms.openlocfilehash: 35e1b71fb7d87d40aa9a3a60d2e3cf108f36c2bf
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: a293bf86225731917068712c2887ea79c2540039
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751378"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454286"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 預定常見問題
 
@@ -274,7 +274,7 @@ GDPR 合規性已存在此功能。 「預約」頁面具有「自訂同意」�
 
 您可以使用下列命令來取回所有預訂信箱的資訊及具有存取權的使用者。
 
-`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($\_.user -like '\*@\*')}`
+`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '@')}`
 
 ## <a name="technical-questions"></a>技術問題
 

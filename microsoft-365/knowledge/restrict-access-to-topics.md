@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 6b3d2a4b6cbfc67623cea58b73681b7af7cc4889
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: b8c49c96ace14ac1ba03411b5670d8e77268109a
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107155"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453905"
 ---
 # <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>限制存取 Microsoft Viva 主題中的主題
 

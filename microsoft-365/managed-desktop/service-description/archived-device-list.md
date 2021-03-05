@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d386000fab8894dd60790d3514ae93feaa03a22
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: e392d071b77226a23001d8628c3b9c711b06e228
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841276"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454580"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 管理的桌面封存裝置
 
@@ -44,6 +44,7 @@ ms.locfileid: "49841276"
 |Dell Latitude 7200 2-1 | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | **5月1日2024** |
 |Dell Latitude 7300/7400/7400 2-1 | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | **5月1日2024**  |
 |Dell Latitude 7390/7390 2-內-1/7490 | 256 GB/Intel i5/8 GB RAM   | 需要 IR 相機 | **2023年1月9日** |
+|Dell Latitude 7410/7410 2-1-1 | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | **2025年5月19日**  |
 |Dell Optiplex 3070 | 128 GB/Intel i3/8 GB RAM | 無 | **5月1日2025**  |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 需要5VS01AV、紅外線相機或指紋感應器的 SKU  | **2023年2月15日** |
 |HP EliteBook 830/840/850 G6| 128 GB/Intel i5/8 GB RAM | 需要5VS01AV、紅外線相機或指紋感應器的 SKU  | **2023年11月30日** |

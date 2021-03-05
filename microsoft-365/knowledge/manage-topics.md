@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 45e8f26823998278f9a332d2ea1e362b77f2032b
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 3d083537f3a9337d88d63861e0bf66867f558aba
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107183"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454002"
 ---
 # <a name="manage-topics-in-the-topic-center"></a>管理主題中心的主題 
 

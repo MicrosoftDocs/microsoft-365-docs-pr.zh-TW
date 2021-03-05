@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 群組。
-ms.openlocfilehash: 5d5c15c13d46738ac9de701b5a39f47274b9f1e5
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 75bc743ed8f1965d0ed8a1967e6eac1bd6e0178b
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094730"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453678"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>系統管理員的 Microsoft 365 群組概觀 (部分機器翻譯)
 
@@ -41,6 +41,7 @@ Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsof
 - Yammer (如果群組是由 Yammer 建立) 
 - 如果群組是從小組建立，則為小組 () 
 - 如果您有 web 的專案，則為藍圖 () 
+- Stream
 
 使用 Microsoft 365 群組時，您不需要手動指派每個資源的許可權。 將人員新增至群組時，會自動為他們提供所需的許可權。
 
@@ -125,3 +126,5 @@ Microsoft 365 群組使用 Azure Active Directory。 您取得的群組功能取
 [使用 PowerShell 管理 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
 [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+
+[在 Microsoft Stream 中組織群組和通道](https://docs.microsoft.com/stream/groups-channels-organization)

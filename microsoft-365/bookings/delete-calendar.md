@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: 使用 Microsoft 365 系統管理中心或 Windows PowerShell 刪除預約行事曆。
-ms.openlocfilehash: 2fcb92cee18d709ef0e1fa3faa0246e622a9f9db
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 1f8df15eafac7867f7ae852e344e1c5730362598
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126646"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454202"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>在預訂中刪除預約行事曆
 
@@ -50,45 +50,44 @@ ms.locfileid: "49126646"
 
 若要執行這些步驟，您必須選擇 [以系統管理員身分執行] 選項，使用您所執行的 active Microsoft PowerShell 命令視窗。
 
-1. 輸入下列命令：
+1. 在 PowerShell 視窗中，執行下列命令來載入 EXO V2 模組：
 
-   ```PowerShell
-    $user = get-credential
+   ```powershell
+   Import-Module ExchangeOnlineManagement
    ```
 
-1. 出現提示時，請以租使用者系統管理員認證登入，以裝載您想要永久刪除之預定行事曆的 Microsoft 365 租使用者。
+   > [!NOTE]
+   > 如果您已經 [完成安裝 EXO V2 模組](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)，上一個命令會依照寫好的內容的運作。
+   
+2. 您需要執行的命令會使用下列語法:
 
-1. 在 PowerShell 命令提示字元處，輸入下列命令：
-
-   ```PowerShell
-    $s = New-Pssession -ConnectionUri https://outlook.office365.com/powershell-liveid -Credential $user -Authentication basic -AllowRedirection -ConfigurationName Microsoft.Exchange
+   ```powershell
+   Connect-ExchangeOnline -UserPrincipalName <UPN> 
    ```
 
-1. 輸入下列命令：
+   - _\<UPN\>_ 是以使用者主體名稱格式（例如 `john@contoso.com`）表示的您的帳戶。
 
-   ```PowerShell
-    Import-PSSession $s
+3. 出現提示時，請以租使用者系統管理員認證登入，以裝載您想要永久刪除之預定行事曆的 Microsoft 365 租使用者。
+
+4. 完成此命令的處理之後，請輸入下列命令，以取得您租使用者中的預約信箱清單：
+
+   ```powershell
+   Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
-1. 完成此命令的處理之後，請輸入下列命令，以取得您租使用者中的預約信箱清單：
+5. 輸入下列命令：
 
-   ```PowerShell
-    get-mailbox -RecipientTypeDetails Scheduling
-   ```
-
-1. 輸入下列命令：
-
-   ```PowerShell
+   ```powershell
    remove-mailbox [BookingCalendarToDelete]
    ```
 
    > [!IMPORTANT]
    > 請務必輸入您要永久刪除之預定信箱別名的確切名稱。
 
-1. 若要確認是否已刪除行事曆，請輸入下列命令：
+6. 若要確認是否已刪除行事曆，請輸入下列命令：
 
-   ```PowerShell
-    get-mailbox -RecipientTypeDetails Scheduling
+   ```powershell
+    Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
    已刪除的行事曆不會出現在輸出中。

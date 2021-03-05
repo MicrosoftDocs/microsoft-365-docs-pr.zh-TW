@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f39e8f77a53b018fdf9c96981524e12f9aface65
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: a0892e03e0ac4c6fc6bcda1b7b159ce403a7ce2e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145040"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461606"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -62,11 +62,7 @@ ms.locfileid: "50145040"
 | `EmailDirection` | 字串 | 相對於您的網路的電子郵件方向：內送、外寄、組織內部 |
 | `DeliveryAction` | 字串 | 電子郵件的傳遞動作：已傳送、已標示為垃圾郵件、已封鎖或已取代 |
 | `DeliveryLocation` | 字串 | 傳送電子郵件的位置：收件匣/資料夾、內部部署/外部、垃圾郵件、隔離、失敗、已中斷、刪除的郵件 |
-| `PhishFilterVerdict` | 字串 | 決定電子郵件是否為網路釣魚的電子郵件篩選堆疊：網路釣魚或非網路釣魚 |
-| `PhishDetectionMethod` | 字串 | 用於偵測電子郵件為網路釣魚網路的方法：惡意 URL 信譽、安全連結 URL 引爆、高級網路釣魚篩選、一般網路釣魚篩選器、反欺騙性：組織內、反欺騙性：外部網域、網域模擬、使用者模擬、品牌模仿 |
-| `MalwareFilterVerdict` | 字串 | 決定電子郵件是否包含惡意程式碼的電子郵件篩選堆疊：惡意程式碼或非惡意程式碼 |
-| `MalwareDetectionMethod` | 字串 | 用於偵測電子郵件中惡意程式碼的方法：反惡意程式碼引擎、檔信譽、安全附件 |
-| `ThreatTypes` | string | 從電子郵件篩選棧中判定電子郵件是否包含惡意程式碼、網路釣魚或其他威脅 |
+| `ThreatTypes` | 字串 | 從電子郵件篩選棧中判定電子郵件是否包含惡意程式碼、網路釣魚或其他威脅 |
 | `ThreatNames` | string |找到惡意程式碼或其他威脅的偵測名稱 |
 | `DetectionMethods` | string | 用於偵測電子郵件中所發現之惡意程式碼、網路釣魚或其他威脅的方法 |
 | `ConfidenceLevel` | string | 任何垃圾郵件或網路釣魚 verdicts 的信賴層級清單。 若為垃圾郵件，此欄會顯示「垃圾郵件信賴等級」 (SCL) ，指出是否已略過電子郵件 (-1) ，發現不是垃圾郵件 (0，1) ，發現是具有適中信心的垃圾郵件， (5、6) ，或發現是具有高可信度的垃圾郵件 (9) 。 若為網路釣魚，此欄會顯示信賴等級為 "High" 或 "Low"。 |

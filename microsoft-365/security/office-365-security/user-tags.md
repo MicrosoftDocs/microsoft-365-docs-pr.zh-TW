@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 的 Microsoft Defender 中的提醒、報告和調查，以快速識別已標記的使用者。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 62d858fe5962b94f536d4ccbd712e21bdd5caa57
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6e5ddffad6405f48a9af55b5123729eb256064a7
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290126"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453642"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的使用者標記
 
@@ -59,7 +59,7 @@ ms.locfileid: "50290126"
   **附註**：
 
   - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  - 使用者標記管理是由 **標記讀取器**、 **標記參與者** 及 **標記管理員** 角色所控制。
+  - 使用者標記管理是由「 **標記讀取器** 」和「標籤 **管理員** 」角色所控制。
 
 - 您也可以在 Microsoft 365 admin center 中管理及監視優先順序帳戶。 如需相關指示，請參閱 [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)。
 
