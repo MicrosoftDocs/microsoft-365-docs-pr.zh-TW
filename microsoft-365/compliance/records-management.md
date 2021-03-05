@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 使用 Microsoft 365 中的記錄管理，您可以將保留時間表套用到管理保留、記錄聲明和處置的檔案計畫中。
-ms.openlocfilehash: 1f6ab392abbf55851e1f084507d3f1658c3cf264
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: 857f8118bb2cc0f94065a8b8696c92bd3ae05cc4
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905232"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461848"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的記錄管理
 
@@ -80,13 +80,13 @@ ms.locfileid: "49905232"
 
 |動作| 保留標籤 |記錄 - 鎖定| 記錄 - 解除鎖定| 監管記錄 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|編輯內容|允許 | **封鎖** | 已允許 | **封鎖**|
-|編輯內容，包括重新命名|已允許 |已允許 | 允許| **封鎖**|
+|編輯內容|允許 | **封鎖** | 允許 | **封鎖**|
+|編輯內容，包括重新命名|已允許 |允許 | 允許| **封鎖**|
 |刪除|允許 <sup>1</sup> |**封鎖** |**封鎖**| **封鎖**|
-|複製|已允許 |已允許 | 已允許| 允許|
-|在容器內移動 <sup>2</sup>|允許 |已允許 | 已允許| 已允許|
+|複製|已允許 |允許 | 允許| 允許|
+|在容器內移動 <sup>2</sup>|允許 |允許 | 允許| 已允許|
 |在容器間移動 <sup>2</sup>|允許 |如果從未解除鎖定則允許 | **封鎖** | **封鎖**|
-|開啟/讀取|允許 |已允許 | 已允許| 已允許|
+|開啟/讀取|允許 |允許 | 允許| 已允許|
 |變更標籤|允許 |允許 - 僅限容器系統管理員 | 允許 - 僅限容器系統管理員| **封鎖**
 |移除標籤|允許 |允許 - 僅限容器系統管理員 | 允許 - 僅限容器系統管理員| **封鎖**
 
@@ -98,7 +98,7 @@ ms.locfileid: "49905232"
 
 ![無法從 SharePoint 中刪除項目的訊息](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-<sup>2</sup> 容器包括 SharePoint 文件庫和 Exchange 信箱。
+<sup>2</sup> 容器包括 SharePoint 文件庫、OneDrive 帳戶和 Exchange 信箱。
 
 >[!IMPORTANT] 
 > 監管記錄最重要的差異是，當它套用到內容之後，沒有人 (甚至全域系統管理員)，可以移除標籤。 

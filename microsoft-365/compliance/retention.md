@@ -19,16 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 3d317a0a26d69eb46b8bb84253571b7d14f9836b
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: a716e3dd8138d5f7f9b5f8d8abbdb401211db9ae
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242487"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461868"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> 如果您看到查看 App 中關於保留原則的訊息，請連絡您的的 IT 部門，以取得他們已如何為您設定的資訊。 如果這些訊息是適用於 Teams 聊天或頻道訊息，請參閱[關於保留原則的 Teams 訊息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
+>
+> 此頁面上的資訊適用於可為了合規性原因而建立保留原則和保留標籤的 IT 系統管理員。
 
 對大多數組織來說，其資料 (電子郵件、文件、即時訊息等) 的數量和複雜性日益增加。有效管理或控管此資訊至關重要，因為您需要：
   
@@ -426,10 +431,10 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
 
 - Exchange： 
     - [就地保留與訴訟資料暫留](https://go.microsoft.com/fwlink/?linkid=846124)
-    - [如何找出位於 Exchange Online 信箱的保留類型](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox) (英文)
+    - [如何找出位於 Exchange Online 信箱的保留類型](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
 
 - SharePoint 和 OneDrive： 
-    - [在電子文件探索中心將內容新增至案例及保留來源](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (英文)
+    - [在電子文件探索中心將內容新增至案例及保留來源](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
 - [舊版電子文件探索工具淘汰](legacy-ediscovery-retirement.md)
 
