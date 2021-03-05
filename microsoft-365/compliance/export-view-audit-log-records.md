@@ -18,16 +18,16 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將會瞭解如何匯出、設定及查看 Microsoft 365 的審計記錄檔記錄。
-ms.openlocfilehash: 688ba06fc9c5c2b26eef93fb1a68d311db9da5d8
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: a7f731bb30ffdddfe7898ee4051060b8e22c093e
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358491"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454664"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>匯出、 設定及檢視稽核記錄檔的記錄
 
-在您搜尋審核記錄並將搜尋結果下載至 CSV 檔案之後，該檔案會包含一個名為 **AuditData**的欄，其中包含每個事件的詳細資訊。 此欄中的資料已格式化為 JSON 物件，包含多個屬性設定為 *property：值* 組合，以逗號分隔。 您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將 **AuditData** 欄中 JSON 物件的每個屬性分割成多個欄，使每個屬性都有自己的資料行。 這可讓您在一個或多個屬性上進行排序和篩選，這可協助您快速找到所要尋找的特定審核資料。
+在您搜尋審核記錄並將搜尋結果下載至 CSV 檔案之後，該檔案會包含一個名為 **AuditData** 的欄，其中包含每個事件的詳細資訊。 此欄中的資料已格式化為 JSON 物件，包含多個屬性設定為 *property：值* 組合，以逗號分隔。 您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將 **AuditData** 欄中 JSON 物件的每個屬性分割成多個欄，使每個屬性都有自己的資料行。 這可讓您在一個或多個屬性上進行排序和篩選，這可協助您快速找到所要尋找的特定審核資料。
 
 ## <a name="step-1-export-audit-log-search-results"></a>步驟1：匯出審計記錄搜尋結果
 
@@ -66,7 +66,7 @@ ms.locfileid: "47358491"
 
    ![按一下 [轉換資料]](../media/JSONOpenPowerQuery.png)
 
-   CSV 檔案會在 **查詢編輯器**中開啟。 有四個欄： **CreationDate**、 **UserIds**、 **作業**及 **AuditData**。 **AuditData**欄是包含多個屬性的 JSON 物件。 下一步是為 JSON 物件中的每個屬性建立欄。
+   CSV 檔案會在 **查詢編輯器** 中開啟。 有四個欄： **CreationDate**、 **UserIds**、 **作業** 及 **AuditData**。 **AuditData** 欄是包含多個屬性的 JSON 物件。 下一步是為 JSON 物件中的每個屬性建立欄。
 
 5. 以滑鼠右鍵按一下 [ **AuditData** ] 欄中的標題，按一下 [ **轉換**]，然後按一下 [ **JSON**]。 
 
@@ -87,15 +87,18 @@ ms.locfileid: "47358491"
    > [!NOTE]
    > 上一個螢幕擷取畫面所顯示的 JSON 屬性 (按一下 [ **載入更多**) 時所依據的屬性，取決於 CSV 檔案中的第一個1000資料列中找到的 [ **AuditData** ] 資料行。 如果在第一個1000列之後的記錄中有不同的 JSON 屬性，當 **AuditData** 欄位分割成多個欄時，這些屬性 (和對應的資料行) 不會包含在此欄位中。 為了協助避免這種情況，請考慮重新執行審核記錄搜尋並縮小搜尋準則，以減少傳回的記錄。 另一個解決方法是在 [ **作業** ] 欄中篩選項目，以在您執行上述步驟5之前，先在) 中 (的列數，再轉換 **AuditData** ] 欄中的 JSON 物件。
 
+   > [!TIP]
+   > 若要在清單中查看屬性，例如 AuditData AffectedItems，按一下您想要從中拉出屬性的欄右上角的 **展開** 圖示，然後選取 [ **展開至新** 列]。  從這裡將會有一筆記錄，您可以按一下欄右上角的 **展開** 圖示，查看屬性，然後選取要查看或抽出的屬性。
+
 8. 請執行下列其中一項動作，以格式化所選取的每個 JSON 屬性所新增的欄標題。
 
     - 取消選取 [ **使用原始欄名稱做為前置** 詞] 核取方塊，以使用 JSON 屬性的名稱做為欄名稱;例如， **RecordType** 或 **SourceFileName**。
 
     - 選取 [ **使用原始欄名稱做為前置** 詞] 核取方塊，以將 AuditData 前置詞加入欄名稱中;例如， **AuditData。 RecordType** 或 **AuditData SourceFileName**。
 
-9. 按一下 **[確定]**。
+9. 按一下 [確定]。
 
-    **AuditData**欄會分割成多個欄。 每個新欄會對應至 AuditData JSON 物件中的屬性。 資料行中的每一列都包含屬性的值。 如果此屬性不包含值，則會顯示 *null* 值。 在 Excel 中，具有 null 值的儲存格是空白的。
+    **AuditData** 欄會分割成多個欄。 每個新欄會對應至 AuditData JSON 物件中的屬性。 資料行中的每一列都包含屬性的值。 如果此屬性不包含值，則會顯示 *null* 值。 在 Excel 中，具有 null 值的儲存格是空白的。
   
 10. 在 [ **常用** ] 索引標籤上，按一下 [ **關閉 & 載入** ]，關閉 Power Query 編輯器，並在 Excel 活頁簿中開啟轉換後的 CSV 檔案。
 
@@ -115,9 +118,9 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 搜尋結果會匯出至名為 *PowerShellAuditlog* 的 CSV 檔案，該檔案包含四個欄： CreationDate、UserIds、RecordType AuditData) 。
 
-您也可以使用 record 類型的 name 或 enum 值做為 *RecordType* 參數的值。 如需記錄類型名稱及其對應列舉值的清單，請參閱[Office 365 管理活動 API 架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)中的*AuditLogRecordType*表格。
+您也可以使用 record 類型的 name 或 enum 值做為 *RecordType* 參數的值。 如需記錄類型名稱及其對應列舉值的清單，請參閱 [Office 365 管理活動 API 架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)中的 *AuditLogRecordType* 表格。
 
-*RecordType*參數只能包含單一值。 若要搜尋其他記錄類型的審計記錄，您必須再次執行這兩個先前的命令，以指定不同的記錄類型，並將這些結果附加至原始 CSV 檔案。 例如，您可以執行下列兩個命令，將相同日期範圍的 SharePoint 檔案活動新增至 PowerShellAuditlog.csv 檔案。
+*RecordType* 參數只能包含單一值。 若要搜尋其他記錄類型的審計記錄，您必須再次執行這兩個先前的命令，以指定不同的記錄類型，並將這些結果附加至原始 CSV 檔案。 例如，您可以執行下列兩個命令，將相同日期範圍的 SharePoint 檔案活動新增至 PowerShellAuditlog.csv 檔案。
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation

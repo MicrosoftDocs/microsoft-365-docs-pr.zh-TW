@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 「高級 eDiscovery 工作」可協助您追蹤長時間執行程式的狀態，以執行各種高級 eDiscovery 任務。
-ms.openlocfilehash: f5c366b8809b1b5c08b15972118c40d7d29e33c4
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 7b80df3f9891105d59a1741e9e0288ef0e67c25e
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750764"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454654"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>在高級電子檔探索中管理工作
 
@@ -54,6 +54,6 @@ ms.locfileid: "49750764"
 | 提交失敗 | 工作提交失敗。  您應嘗試重新執行觸發工作的動作。 |
 | 進行中。 | 工作正在進行中，您可以在 [ **工作** ] 索引標籤中監控工作進度。 |
 | 成功 | 工作順利完成。 工作已完成的日期和時間會顯示在 [**工作**] 索引標籤上的 [**完成**] 欄中。 |
-| 部分成功 | 工作已部分成功。 當工作未找到任何已部分編制索引的資料 (也稱為未編制索引的 *資料*) 部分的保管人資料來源中時，通常會傳回此狀態。  |
+| 部分成功 | 工作成功。 當工作未找到任何已部分編制索引的資料 (也稱為未編制索引的 *資料*) 部分的保管人資料來源中時，通常會傳回此狀態。  |
 | 失敗 | 工作失敗。  您應嘗試重新執行觸發工作的動作。 如果作業失敗第二次，我們建議您聯繫 Microsoft 支援部門，並提供工作的支援資訊。 |
 |||

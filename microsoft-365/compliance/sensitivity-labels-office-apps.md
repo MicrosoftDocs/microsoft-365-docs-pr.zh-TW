@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: IT 系統管理員的資訊，可管理 Office 應用程式中桌面、行動裝置及網路的靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7d3c436030c0db3faa7834ed0153396048c0ec6
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 2e0fc96c1bb7b077df50f4f1c3c52ffa0dd49bef
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423684"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461858"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -64,7 +64,7 @@ Office for iOS 和 Office for Android：敏感度標籤是內置於 [office 應�
 |[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 2010 +           | 16.42 +     | 2.42 + | 16.0.13328 + | 在 [複查] 下 |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
-|[開始使用資料分類](data-classification-overview.md) ，並傳送系統管理員的資料                      | 2011 + | 16.43 + | 推出： 2.46 + | 推出： 16.0.13628 + | 是的 <sup>\*</sup>                                                        |
+|[與審核標籤相關的使用者活動](data-classification-activity-explorer.md)                      | 2011 + | 16.43 + | 推出： 2.46 + | 推出： 16.0.13628 + | 是的 <sup>\*</sup>                                                        |
 |[要求使用者將標籤套用至電子郵件和檔](#require-users-to-apply-a-label-to-their-email-and-documents)   | 推出： 2101 +             | 推出： 16.45 +         | 在預覽中推出： [Beta 通道](https://office.com/insider) | 推出： 16.0.13628 + | 在 [複查] 下                                            
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | 推出： 16.44 + | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |支援已標記和加密檔的[共同撰寫和 AutoSave](sensitivity-labels-coauthoring.md) | 預覽： [目前的頻道 (預覽) ](https://office.com/insider) | 預覽： [Beta 通道](https://office.com/insider) | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -89,7 +89,7 @@ Office for iOS 和 Office for Android：敏感度標籤是內置於 [office 應�
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[要求使用者將標籤套用至電子郵件和檔](#require-users-to-apply-a-label-to-their-email-and-documents)   | 推出： 2101 +                        | 16.43 + <sup>\*</sup>                    | 在 [複查] 下            | 在 [複查] 下                | 是                |
-|[開始使用資料分類](data-classification-overview.md) ，並傳送系統管理員的資料                      | 2011 + | 在 [複查] 下 | 在 [複查] 下           | 在 [複查] 下               | 在 [複查] 下 |
+|[與審核標籤相關的使用者活動](data-classification-activity-explorer.md) | 2011 + | 在 [複查] 下 | 在 [複查] 下           | 在 [複查] 下               | 在 [複查] 下 |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 16.44 + <sup>\*</sup>                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
 |
 
@@ -237,7 +237,7 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 ### <a name="conditional-access-policies"></a>條件式存取原則
 
-如果您的組織已執行 [Azure Active Directory 條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，請檢查這些原則的設定。 若原則包含 Azure 資訊保護，而且原則擴充至外部使用者，則即使使用者在自己的租使用者中有 Azure AD 帳戶，這些外部使用者還是必須在您的租使用者中擁有來賓帳戶。
+如果您的組織已執行 [Azure Active Directory 條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，請檢查這些原則的設定。 若原則包括 **Microsoft Azure 資訊保護** ，而且原則擴充至外部使用者，則即使使用者在自己的承租人中有 Azure AD 帳戶，這些外部使用者還是必須在您的租使用者中擁有來賓帳戶。
 
 若沒有此來賓帳戶，他們將無法開啟加密檔，並看到錯誤訊息。 郵件文字可能會通知他們，其帳戶必須新增為租使用者中的外部使用者，此案例的指示不正確，可 **使用不同的 Azure Active Directory 使用者帳戶登出並重新登入**。
 

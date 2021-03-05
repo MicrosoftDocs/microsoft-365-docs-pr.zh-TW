@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4cd6e62fd236bf9fd3683425b1e98315fc26dd71
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e2d0f4f4abbe538d11d61869f52285f19c23a253
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421690"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461804"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -131,16 +131,6 @@ ms.locfileid: "50421690"
 - **協力廠商來源**：您可以掃描 Bloomberg 中的資料匯365入的通訊，從協力廠商來源（如 [立即](archive-instant-bloomberg-data.md)、 [時差](archive-slack-data.md)、 [縮放](archive-zoommeetings-data.md)性、SMS 及許多其他專案）。 如需通訊相容性所支援之連接器的完整清單，請參閱封存 [協力廠商資料](archiving-third-party-data.md)。
 
     您必須先為 Microsoft 365 組織設定協力廠商連接器，才能將連接器指派給通訊相容性原則。 通訊相容性原則嚮導的 [ **Third-Party 來源** ] 區段只會顯示目前設定的協力廠商連接器。
-
-## <a name="transitioning-from-supervision-in-office-365"></a>從 Office 365 的監察過渡
-
-組織使用 Office 365 中的監察原則，並在 Microsoft 365 中將其轉換為通訊法規遵從性原則時，需要瞭解這些重要的要點：
-
-- 這兩種解決方案可能會同時用於您的組織，但是每個方案中所用的原則都必須有唯一的原則名稱。 群組和自訂關鍵字字典可以在過渡期間內共用方案。
-- Office 365 原則相符中所儲存的監察性郵件，無法在 Microsoft 365 中移動或共用到通訊合規性中。
-- Office 365 中的監督解決方案將會完全取代于 Microsoft 365 中的通訊相容性解決方案。 建議您在通訊合規性中建立新原則，這些原則與現有的監察原則具有相同的設定，以使用新的調查和修正功能。 當轉換為 Microsoft 365 中的通訊法規遵從性時，如果您有內部合規性保留原則需求，您應該規劃從 Office 365 中的監察權匯出報表資料。
-
-如需 Office 365 中監督的退休資訊，請參閱 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap) 以取得詳細資訊。
 
 ## <a name="policy-settings"></a>原則設定
 
@@ -530,6 +520,16 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType AeD -
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
+
+## <a name="transitioning-from-supervision-in-office-365"></a>從 Office 365 的監察過渡
+
+在 Office 365 中使用監察原則的組織，應立即計畫轉換為 Microsoft 365 中的通訊法規遵從性原則，並需要瞭解這些重要資料點：
+
+- Office 365 中的監督解決方案已完全由 Microsoft 365 中的通訊規範解決方案取代。 建議您在通訊合規性中建立新原則，這些原則與現有的監察原則具有相同的設定，以使用新的調查和修正功能。 當轉換為 Microsoft 365 中的通訊法規遵從性時，如果您有內部合規性保留原則需求，您應該規劃從 Office 365 中的監察權匯出報表資料。
+- Office 365 原則相符中所儲存的監察性郵件，無法在 Microsoft 365 中移動或共用到通訊合規性中。
+- 針對在轉換過程中同時使用這兩種解決方案的組織，每個方案中所用的原則都必須有唯一的原則名稱。 群組和自訂關鍵字字典可以在過渡期間內共用方案。
+
+如需 Office 365 中監督的退休資訊，請參閱 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap) 以取得詳細資訊。
 
 ## <a name="ready-to-get-started"></a>準備好開始使用了嗎？
 

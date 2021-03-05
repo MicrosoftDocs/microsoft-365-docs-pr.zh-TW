@@ -15,19 +15,19 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 瞭解如何為您的 Microsoft 365 租使用者中的所有資料設定客戶金鑰。
-ms.openlocfilehash: 60704f77e17222de790cb397653a2275144d770e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7bc5403f73e2d61f47e92ab5c94509f3fe9f3e33
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288144"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454644"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>在承租人層級 (公開預覽的 Microsoft 365 客戶金鑰概述) 
 
 使用您提供的金鑰，您可以建立資料加密原則 (DEP) 並指派給租使用者。 DEP 會針對這些工作負載在租使用者上進行資料加密：
 
 - 小組聊天訊息 (1:1 聊天、群組交談、會議聊天及通道交談) 
-- 小組媒體郵件 (影像、程式碼片段、影片訊息、音訊訊息、wiki 影像) 
+- 小組媒體郵件 (影像、程式碼片段、影片郵件、音訊訊息、wiki 影像) 
 - 小組儲存中儲存的小組通話和會議錄製
 - 小組聊天通知
 - 小娜的小組聊天建議
@@ -314,7 +314,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 
 | 名稱 | 描述 | 選用 (Y/N)  |
 |----------|----------|---------|
-|名稱|資料加密原則的易記名稱|N|
+|姓名|資料加密原則的易記名稱|N|
 |AzureKeyIDs|指定 Azure Key Vault 機碼的兩個 URI 值，以逗號分隔，以與資料加密原則產生關聯|N|
 |描述|資料加密原則的描述|N|
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 開啟可在桌面應用程式中針對 SharePoint 和 OneDrive 中已標記和加密的檔案啟用共同撰寫和自動儲存的設定。
-ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423860"
+ms.locfileid: "50454634"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>針對使用敏感度標籤加密的檔案啟用共同撰寫
 
@@ -37,12 +37,14 @@ ms.locfileid: "50423860"
 
 此外，啟用此功能會導致這些已標記和加密的檔案支援 [自動儲存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 功能。
 
+若要閱讀發行公告，請參閱這篇部落格文章：[宣佈在 Microsoft 資訊保護加密的文件上共同撰寫並標示更新](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162)。
+
 ## <a name="metadata-changes-for-sensitivity-labels"></a>敏感度標籤的中繼資料變更
 
 > [!IMPORTANT]
 > 啟用共同撰寫的設定之後，未加密檔案的標籤資訊將不再儲存於自訂屬性中。
 > 
-> 如果您的組織中有任何將標籤中繼資料讀取或寫入舊位置的應用程式、服務、指令碼或工具，請勿啟用此設定。
+> 如果使用任何將標籤中繼資料讀取或寫入舊位置的應用程式、服務、指令碼或工具，請勿啟用此設定。
 
 在啟用設定以支援 Office 桌面應用程式共同撰寫之前，必須了解此動作會變更儲存至 Office 檔案和從 Office 檔案讀取的標籤中繼資料。
 
@@ -80,16 +82,16 @@ ms.locfileid: "50423860"
 
 - 必須為租用戶啟用 [SharePoint 和 OneDrive 中 Office 檔案](sensitivity-labels-sharepoint-onedrive-files.md) 的敏感度標記。 如果此功能尚未啟用，當您選取設定以開啟具有敏感度標籤的檔案共同撰寫時，就會自動啟用此功能。
 
-- 您租用戶中所有的應用程式、服務和作業工具都必須支援新的應用程式 [標籤中繼資料](#metadata-changes-for-sensitivity-labels)：
+- Microsoft 365 Apps 企業版：
+    - **Windows**：[目前通道 (預覽)](https://office.com/insider) 搭配最小組建 16.0.13801.20182，或 [Beta 通道](https://office.com/insider)搭配最小組建 16.0.13819.20006
+    - **macOS**：[Beta 通道](https://office.com/insider)搭配最小組建 16.47.218.0
+    - **iOS**：尚未支援
+    - **Android**：尚未支援
+
+- 您租用戶中所有的應用程式、服務和作業工具都必須支援新的應用程式 [標籤中繼資料](#metadata-changes-for-sensitivity-labels)。 如果您使用下列任何一項，請檢查所需的最低版本：
     
-    - **Microsoft 365 Apps 企業版：**
-        - Windows：[目前通道 (預覽)](https://office.com/insider) 搭配最小組建 16.0.13801.20182，或 [Beta 通道](https://office.com/insider) 搭配最小組建 16.0.13819.20006
-        - macOS：[Beta 通道](https://office.com/insider) 搭配最小組建 16.47.218.0
-        - iOS：尚未支援
-        - Android：尚未支援
-    
-    - **Azure 資訊保護統一標籤用戶端和掃描：** 
-        - 可從 [Microsoft 下載中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018) 安裝的公開預覽版本 (AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe 的安裝名稱)，，以及列於上一個項目中的其中一個適用於 Windows 的 Microsoft 365 Apps 企業版。
+    - **Azure 資訊保護統一標籤用戶端和掃描：**
+        - 可從 [Microsoft 下載中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018)安裝的公開預覽版本 (AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe 的安裝名稱)
     
     - **適用於 Windows 或 macOS 的 OneDrive 同步處理應用程式：**
         - 最低版本 19.002.0121.0008
@@ -144,9 +146,9 @@ ms.locfileid: "50423860"
 
 1. 使用下列連結，以測試租用戶全域系統管理員的身分登入 Microsoft 365 合規性中心：
     
-    ````
+    ```http
     https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ````
+    ```
     此連結會直接將您帶至租用戶設定，**共同撰寫具有敏感度標記的檔案**。
 
     > [!IMPORTANT]

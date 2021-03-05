@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何使用 Microsoft 規範設定分析器，透過 Microsoft 合規性管理員快速開始和執行。
-ms.openlocfilehash: 41315dd072e089bd61767181b17dffd5fba88281
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 272477251efed7ebf13bd2e644869eaf2aad1bc2
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423424"
+ms.locfileid: "50454684"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>合規性管理員的 Microsoft 規範設定分析器 (預覽) 
 
@@ -64,6 +64,7 @@ MCCA 可協助您快速查看合規性管理員中的哪些改進動作適用于
     ```powershell
     Get-MCCAReport
     ```
+
    如果您是擁有 GCC 的高客戶，您必須提供額外的輸入參數來執行報告：
 
     ```powershell

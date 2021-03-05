@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何將原則提示新增至資料遺失防護 (DLP) 原則，以通知使用者他們使用與 DLP 原則衝突的內容。
-ms.openlocfilehash: 4f8855e3dce2adaf457b9a2453ca9dd827de5bcd
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 79435343df2d2cb3bc027a92acce44eb74b4d91c
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682946"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454528"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 
@@ -218,7 +218,7 @@ DLP 原則同步處理至網站，而且會定期及非同步評估 contented，
 - 內容包含
 - 內容已共用
 
-請注意，所有這些條件都是在 Outlook 中運作，其將會符合內容，並強制執行內容的保護動作。 但尚未支援使用者顯示原則提示。
+請注意，例外狀況和所有這些條件都是在 Outlook 中運作，其將會符合內容，並強制執行內容的保護動作。 但尚未支援使用者顯示原則提示。 
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Exchange 系統管理中心與安全性與 &amp; 合規性中心的原則提示
 
@@ -286,6 +286,7 @@ Office 桌面程式會直接從 Office 365 自動同步處理 DLP 原則，然�
 - [資料外洩防護原則概觀](data-loss-prevention-policies.md)
     
 - [從範本建立 DLP 原則](create-a-dlp-policy-from-a-template.md)
+- [DLP 原則條件、例外狀況和動作 (預覽) ](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
     
 - [建立 DLP 原則來保護具有 FCI 或其他屬性的文件](protect-documents-that-have-fci-or-other-properties.md)
     
