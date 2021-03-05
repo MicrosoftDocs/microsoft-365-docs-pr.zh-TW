@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 開啟可在桌面應用程式中針對 SharePoint 和 OneDrive 中已標記和加密的檔案啟用共同撰寫和自動儲存的設定。
-ms.openlocfilehash: a5c3e84e4ca8874f99a07294dccfd2e4ad7ed81f
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417350"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423860"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>針對使用敏感度標籤加密的檔案啟用共同撰寫
 
@@ -88,8 +88,8 @@ ms.locfileid: "50417350"
         - iOS：尚未支援
         - Android：尚未支援
     
-    - **Azure 資訊保護統一標籤用戶端和掃描器：** 
-        - 公開預覽版 (最低版本 2.10.45.0)，可從 [Microsoft 下載中心](https://aka.ms/aip-coauth-pp) 安裝，以及上一個項目所列的其中一個 Windows 版 Microsoft 365 Apps 企業版。
+    - **Azure 資訊保護統一標籤用戶端和掃描：** 
+        - 可從 [Microsoft 下載中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018) 安裝的公開預覽版本 (AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe 的安裝名稱)，，以及列於上一個項目中的其中一個適用於 Windows 的 Microsoft 365 Apps 企業版。
     
     - **適用於 Windows 或 macOS 的 OneDrive 同步處理應用程式：**
         - 最低版本 19.002.0121.0008
@@ -121,7 +121,9 @@ ms.locfileid: "50417350"
     - **使用者的內容存取權到期日** 設定為 **永不** 以外的值。
     - **使用雙重金鑰加密** 已選取。
     
-    對於具有這些加密設定的標籤，標籤會顯示在 Office 應用程式中。 不過，當使用者選取這些標籤，且沒有其他人在編輯檔案時，系統會警告他們共同撰寫和自動儲存將無法使用。 如果有其他人在編輯檔案，使用者會看到「無法貼上這些標記」的訊息。
+    對於具有這些加密設定的標籤，標籤會顯示在 Office 應用程式中。 不過，當使用者選取這些標籤，且沒有其他人在編輯檔案時，系統會警告他們共同撰寫和自動儲存將無法使用。 如果有其他人在編輯文件，使用者會看到「無法套用這些標籤」的訊息。
+
+- 如果您使用 Azure 資訊保護統一標籤用戶端：請查看此標籤用戶端的文件，以取得[更多需求或限制](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview)。
 
 ## <a name="known-issues-for-this-preview"></a>此預覽的已知問題
 
