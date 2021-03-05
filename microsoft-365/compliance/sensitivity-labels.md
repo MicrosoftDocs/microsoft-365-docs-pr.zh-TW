@@ -22,16 +22,21 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2121c58b0105519d5dacda0c0bb39a102cf8d299
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 9232ccd9fd64676cea0826b05ccd7e68fcf054b9
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407259"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454602"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> 如果您要尋找在 Office 應用程式中看到的敏感度標籤相關資訊，請參閱[在 Office 中將敏感度標籤適用於您的檔案和電子郵件](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。
+>
+> 此頁面上的資訊適用於可建立及設定這些標籤的 IT 系統管理員。
 
 為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不再會停留在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而當內容漫遊時，您會希望以符合組織的商務及合規性原則的安全、受保護的方式漫遊。
 
