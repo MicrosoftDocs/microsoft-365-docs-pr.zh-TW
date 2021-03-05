@@ -36,10 +36,6 @@
           href: communication-compliance-feature-reference.md
         - name: 案例研究 - Contoso 快速設定粗穢言語原則
           href: communication-compliance-case-study.md
-        - name: Office 365 中的監督原則
-          href: supervision-policies.md
-        - name: 設定 Office 365 的監督原則
-          href: configure-supervision-policies.md
     - name: 內部風險管理
       items:
         - name: 概觀
