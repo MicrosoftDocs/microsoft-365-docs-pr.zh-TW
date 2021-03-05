@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 無論您使用處置檢閱或根據設定自動刪除內容，監視和管理內容的處置。
-ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 092067e676c1cbae3fae6e9d6a5ff77099ce4631
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682666"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461878"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -52,15 +52,13 @@ ms.locfileid: "49682666"
 
 ## <a name="disposition-reviews"></a>處置檢閱
 
-當內容的保留期間結束時，基於多種原因，您可能會想要檢閱該內容以決定是否可以安全刪除 (亦即「處置」)。 例如，您可能會需要：
+當內容的保留期間結束時，基於多種原因，您可能會想要檢閱該內容，以確認是否可以永久刪除 (亦即「處置」)。 例如，不要刪除內容，您可能需要：
   
 - 如果發生訴訟或稽核，則暫停相關內容的刪除。
-    
-- 如果內容具有研究或歷史價值，將內容從處置清單中移除，以儲存在封存中。
-    
+
 - 為內容指派不同的保留期間，可能是因為原始保留設定是暫時或臨時解決方案。
-    
-- 將內容送交回客戶或轉移至其他組織。
+
+- 例如，如果內容具有研究或歷史價值，則從內容的現有位置移至封存位置。
 
 在保留期間結束後觸發處置檢閱時：
   
