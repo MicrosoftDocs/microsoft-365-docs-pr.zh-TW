@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: 瞭解如何取得 Office 啟用報告，以瞭解哪些使用者已啟用其 Office 訂閱，以及識別可能需要其他説明的使用者。
-ms.openlocfilehash: 1af022053735fb9b1b8fe382c44bbe9cc11058a5
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: e82c67560be7ccaa3780547e6c95a2823e7f0adf
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611409"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514989"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Admin center 中的 microsoft 365 報告-Microsoft Office 啟用
 
@@ -37,7 +37,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
   
 ## <a name="how-to-get-to-the-office-activations-report"></a>如何查看 Office 啟用報告
 
-1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。
+1. 在系統管理中心中，移至 **[報告]** \> <a href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage" target="_blank">[使用量]</a> 頁面。
 
     
 2. 從 [ **選取報告** ] 下拉式清單中，選取 [ **Office 365** 啟用] \> ****。 

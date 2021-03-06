@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 083fd4ae7e5564f2affeca73dd3d78a52657c5a7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: fe7d986c537cbc5da31811e0b49cf6224815d32c
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287314"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509311"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -70,7 +70,7 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
 
 下列原則設定可用於 EOP 和 Microsoft Defender for Office 365 中的反網路釣魚原則：
 
-- **名稱**：您無法重新命名預設的反網路釣魚原則，但您可以命名和重新命名您建立的自訂原則。
+- **名稱**：您無法重新命名預設的反網路釣魚原則。 在您建立自訂的反網路釣魚原則之後，就無法在安全性 & 規範中心內重新命名原則。
 
 - **描述** 您無法將描述新增至預設的反網路釣魚原則，但您可以新增及變更所建立之自訂原則的描述。
 

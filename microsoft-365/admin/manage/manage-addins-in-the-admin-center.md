@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用集中式增益集，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 5366bd5be80559f23490aeb54f9417a189169e12
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: b888c0f329e3f1f36f5aa566df7efbab07cd1f5f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114198"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509131"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在系統管理中心管理增益集
 
@@ -166,7 +166,7 @@ Office 增益集可協助您個人化檔，並簡化存取網頁上資訊的方�
 
 深入了解如何建立及建置 [Office 增益集](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)。
   
-[使用集中式部署 PowerShell Cmdlet 來管理增益集](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)。
+[使用集中式部署 PowerShell Cmdlet 來管理增益集](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)。
   
 [疑難排解：使用者未看到增益集](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
 

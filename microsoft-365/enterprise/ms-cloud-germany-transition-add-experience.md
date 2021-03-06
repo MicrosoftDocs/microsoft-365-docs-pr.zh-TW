@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時的其他客戶體驗資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: 26db69583bac68723d5d57b07abb856c8190d9b1
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 152e9e8d8f4550b9095a7b22e1bcd4cf30fa620f
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454464"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515193"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (advanced)  
 
@@ -62,27 +62,6 @@ ms.locfileid: "50454464"
 |停止或刪除信箱的任何上架或脫離移動。  | 這可確保移動要求不會失敗，併發生錯誤。 | 具有混合式 (內部部署) 部署的 Exchange Online 客戶 | 必要的動作。 若失敗，可能會導致服務或軟體用戶端失敗。 |
 |||||
 
-### <a name="dynamics-phase-8-of-9"></a>Dynamics (階段8之 9) 
-
-| 步驟 (s)  | 描述 | 適用於 | 影響 |
-|:-------|:-----|:-------|:-------|
-| Microsoft Dynamics 資源 | 使用 Microsoft Dynamics 的客戶將會進行工程或 FastTrack，以將動態轉換為 Office 365 服務實例。 * | Microsoft Dynamics 365 客戶 | -遷移後，系統管理員會驗證組織。 <br><br> -系統管理員會視需要修改工作流程。 <br><br> -系統管理員會視需要清除 AdminOnly 模式。 <br><br> -系統管理員會適當地從 _沙箱_ 變更組織類型。 <br><br> -通知使用者新的 URL 存取實例 (org) 。 <br><br> -更新任何指向新端點 URL 的輸入連線。 <br><br> -轉換期間，使用者將無法使用 Dynamics 服務。 <br><br> -在遷移每個組織之後，使用者必須驗證組織的健康情況和功能。  |
-|||||
-
-\* (i) 使用 Microsoft Dynamics 365 的客戶，必須在此遷移案例中採取動作，如所提供的遷移程式所定義。  (ii) 客戶採取行動的失敗即表示 Microsoft 將無法完成遷移。  (iii) 當 Microsoft 因客戶的 inaction 而無法完成遷移時，客戶的訂閱會在2021年10月29日到期。 
-
-
-### <a name="power-bi-phase-8-of-9"></a>Power BI (階段8之 9) 
-
-| 步驟 (s)  | 描述 | 適用於 | 影響 |
-|:-------|:-----|:-------|:-------|
-| Power BI 資源的遷移 | 當手動觸發現有的 PBI 遷移工具，將 Power BI 轉換為 Office 365 服務實例後，Microsoft Power BI 的客戶將會涉嫌從事工程或 FastTrack。\*\* | Microsoft Power BI 客戶 | - _不_ 會轉換下列的 Power BI 專案，必須重新建立這些專案： <br><br> -即時資料集 (例如，流式傳送或推入資料集) 。 <br> -Power BI 內部部署資料閘道設定和資料來源。 <br> -在遷移後，在即時資料集之上建立的報告將無法使用，且必須重新建立。 <br><br> -在轉換期間，使用者將無法使用 Power BI 服務。 無法取得服務，不應超過24小時。 <br><br> -遷移後，使用者將需要使用 Power BI 服務重新設定資料來源及其內部部署資料閘道。  在執行這項作業之前，使用者將無法使用這些資料來源，對這些資料來源執行排程的重新整理和/或直接查詢。 <br><br> -無法遷移容量與特優工作區。 客戶必須先刪除所有容量，再進行遷移，然後在遷移之後重新建立。 視需要將工作區移回容量。  |
-|||||
-
-\*\* (i) 使用 Microsoft Power BI 的客戶必須採取遷移程式所定義的遷移程式，採取行動。  (ii) 客戶採取行動的失敗即表示 Microsoft 將無法完成遷移。  (iii) 當 Microsoft 因客戶的 inaction 而無法完成遷移時，客戶的訂閱會在2021年10月29日到期。 
-
-
-
 ## <a name="during-migration"></a>在移轉期間
 
 ### <a name="sharepoint-online-phase-4-of-9"></a>SharePoint 線上 (階段4之 9) 
@@ -115,14 +94,14 @@ ms.locfileid: "50454464"
 
 ### <a name="azure-ad-phase-9-of-9"></a>Azure AD (階段9之 9) 
 
-若為混合式：
+針對混合式 Azure 客戶：
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
 | 更新 Azure AD Connect。 | 在完成剪下 Azure AD 後，組織就完全使用 Office 365 服務，而且不再連接至 Microsoft 雲端 Deutschland。 此時，客戶必須確定已完成的 delta 同步處理常式，然後在該程式中，將 `AzureInstance` Deutschland Microsoft Cloud) 中的字串 (值變更為登錄路徑中的 0 `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` 。 | 混合式 Azure AD –連線的組織 | 變更登錄機碼的值 `AzureInstance` 。 若無法這麼做，將在不再提供 Microsoft Cloud Deutschland 端點後，導致物件不會進行同步處理。 |
 |||||
 
-對於同盟驗證：
+針對使用同盟驗證的客戶：
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -136,7 +115,7 @@ ms.locfileid: "50454464"
 | 在過去30天內加入 Azure AD 群組的要求若未獲核准原始要求，將需要重新要求遷移。 | 若使用者在遷移前的30天內未獲核准，使用者的客戶將需要使用存取面板提交要求，以重新加入 Azure AD 群組。 | 在遷移前30天內，未核准 Azure AD 群組核准要求的使用者 |  做為使用者： <ol><li>流覽至 [Access 面板](https://account.activedirectory.windowsazure.com/r#/joinGroups)。</li><li>尋找在遷移前30天內，成員核准已擱置的 Azure AD 群組。</li><li>要求重新加入 Azure AD 群組。</li></ol> 在遷移後，若要加入超過30天使用中的群組的要求，則無法進行核准。 |
 |||||
 
-若為 DNS：
+若為客戶管理的 DNS 區域：
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|

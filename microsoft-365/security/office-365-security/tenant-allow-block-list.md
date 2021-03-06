@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以在安全性入口網站中瞭解如何在承租人允許/封鎖清單中設定允許和封鎖。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 960fbf26b610485fb46c935b04aedcc593b85752
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 20e460f4e93f7b87faaead8b87ba561224e38938
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407247"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515205"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租用戶允許/封鎖清單中
 
@@ -50,7 +50,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 - 您可以使用檔案的 SHA256 雜湊值來指定檔案。 若要在 Windows 中尋找檔案的 SHA256 雜湊值，請在命令提示字元中執行下列命令：
 
-  ```dos
+  ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
@@ -60,22 +60,26 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 - 承租人允許/封鎖清單可為 URLs 和500專案提供檔案雜湊的最大值為500專案。
 
-- 專案應該在15分鐘內生效。
+- 每個專案的字元數上限為：
+  - 檔雜湊 = 64
+  - URL= 250
+
+- 專案應該在30分鐘內生效。
 
 - 根據預設，承租人允許/封鎖清單中的專案會在30天后到期。 您可以指定日期或將其設為永不過期。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須先在 **Exchange Online** 中指派許可權，才能執行本文中的程式：
+- 您必須已在 **Exchange Online** 中獲派權限，才能執行此文章中的程序：
   - 若要從 [承租人允許/封鎖] 清單中新增及移除值，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要取得租使用者 Allow/封鎖清單的唯讀許可權，您必須是 **全域讀取** 者或 **安全性讀取器** 角色群組的成員。
 
   如需詳細資訊，請參閱 [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
-  **附註**：
-
-  - 將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 中其他功能的必要許可權 _和_ 許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
+  > [!NOTE]
+  > 
+  > - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  > - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心在承租人允許/封鎖清單中建立 URL 專案
 
@@ -93,7 +97,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
      - 確認已關閉此設定 (![ 切換 ](../../media/scc-toggle-off.png)) 並使用 [ **到期** 日] 方塊來指定專案的到期日。
 
-     或
+       或
 
      - 將切換向右移動，將專案設定為永不到期： ![開啟](../../media/scc-toggle-on.png).
 
@@ -166,13 +170,13 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
      - 確認已關閉此設定 (![ 切換 ](../../media/scc-toggle-off.png)) 並使用 [ **到期** 日] 方塊來指定輸入專案的到期日。
 
-     或
+       或
 
      - 將切換向右移動，將專案設定為永不過期： ![開啟](../../media/scc-toggle-on.png).
 
    - **選用附注**：輸入專案的描述性文字。
 
-5. 完成後，按一下 **[儲存]**。
+5. 完成後，按一下 [儲存]。
 
 ## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>使用安全性 & 合規性中心移除租使用者允許/封鎖清單中的封鎖專案
 
@@ -197,13 +201,13 @@ New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String
 這個範例會新增 contoso.com 及所有子域 (的封鎖 URL 專案（例如，contoso.com、www.contoso.com 及 xyz.abc.contoso.com) ）。 因為我們未使用 ExpirationDate 或 NoExpiration 參數，所以專案會在30天后到期。
 
 ```powershell
-New-TenantAllowBlockListItem -ListType Url -Block -Entries ~contoso.com
+New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 ```
 
 這個範例會為永不到期的指定檔案新增封鎖檔專案。
 
 ```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
+New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)。

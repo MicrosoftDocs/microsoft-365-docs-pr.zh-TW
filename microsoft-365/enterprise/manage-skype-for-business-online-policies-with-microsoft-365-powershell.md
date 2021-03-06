@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 摘要：使用 PowerShell，使用原則來管理商務用 Skype Online 使用者帳戶屬性。
-ms.openlocfilehash: 20a75fa1c131f693fcf30d20477af5c9ee7aed35
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: ca945bc05e76525b4b2df6fb0b982a8468d87810
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477038"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515049"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>使用 PowerShell 管理商務用 Skype Online 原則
 
@@ -32,7 +32,7 @@ ms.locfileid: "48477038"
 使用下列指示設定執行命令 (略過已完成的步驟) ：
 
   > [!Note]
-  > 商務用 Skype Online 連接器目前是最新小組 PowerShell 模組的一部分。 如果您使用的是最新的小組 PowerShell 公開發行，您不需要安裝商務用 Skype Online 連接器。
+  > 商務用 Skype Online 連接器目前是最新 Teams PowerShell 模組的一部分。 如果您使用的是最新的 Teams PowerShell 公開發行版本，則不需要安裝商務用 Skype Online 連接器。
 
 1. 安裝 [團隊 PowerShell 模組](https://docs.microsoft.com/microsoftteams/teams-powershell-install)。
     
@@ -41,8 +41,7 @@ ms.locfileid: "48477038"
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
-   $sfbSession = New-CsOnlineSession -Credential $userCredential
-   Import-PSSession $sfbSession
+   Connect-MicrosoftTeams -Credential $userCredential
    ```
 
    出現提示時，請輸入您的商務用 Skype Online 系統管理員帳戶名稱和密碼。

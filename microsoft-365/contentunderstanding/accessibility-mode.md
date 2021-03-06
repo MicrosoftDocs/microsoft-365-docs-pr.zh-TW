@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Normal
 description: 瞭解如何在訓練 SharePoint Syntex 中的模型時使用協助工具模式。
-ms.openlocfilehash: 32e5bd132a7a0145f03e4620545d65d1d92ff223
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 5f6e9d542f3d41dbddacd54b1b379910dcb0c9dc
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080998"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515145"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>SharePoint Syntex 協助工具模式
 
@@ -38,8 +38,8 @@ ms.locfileid: "50080998"
 - 索引標籤：向前移動並選取下一個字。
 - Tab + Shift：向後移動並選取上一個字。
 - Enter：標籤或從選取的單字移除標籤。
-- 轉寄箭號：將您向前移動選取的單字中的個別字元。
-- 向下箭號：向後移動選取的單字中的個別字元。
+- 向右鍵：向內移動選取的單字中的個別字元。
+- 向左鍵：向後移動選取的單字中的個別字元。
 
 > [!NOTE]
 > 如果您要為單一標籤標記多個字，您必須為每個單字加上標籤。
@@ -52,7 +52,7 @@ ms.locfileid: "50080998"
 當您流覽範例檔及標籤字串值時，「講述人」會為使用者提供下列音訊提示：
 
 - 當您使用鍵盤流覽檔檢視器時，[講述人] 音訊會將選取的字串狀態。
-- 在選取的字串內，[講述人] 音訊會在您使用向前或向後箭號時，依照您的字串選取字串中的每個字元。
+- 在選取的字串內，[講述人] 音訊會在您使用向左鍵或向右鍵來選取字串中的每個字元時，為您陳述該字串。
 - 如果您選取一個已標示的字串，則「講述人」會指出值，然後再「標示」。  例如，如果標籤值為 "Contoso"，它會將 "Costoso 標示" 狀態。 
 - 在 [訓練] 索引標籤中，如果您在 [檔檢視器] 中選取只有預測的字串，則 [講述人] 音訊會指出值，然後「預測」。 當訓練會在檔中預測的值不符合使用者所標示的值時，就會發生這種情況。
 - 在 [訓練] 索引標籤中，如果您在已標示及預測的檔檢視器中選取字串，[講述人] 音訊會指出值，然後「標籤及預測」。 當訓練成功而且預測值和使用者標籤之間有相符的情況時，就會發生這種情況。

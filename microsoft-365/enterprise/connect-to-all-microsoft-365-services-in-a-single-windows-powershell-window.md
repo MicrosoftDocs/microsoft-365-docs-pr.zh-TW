@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要：在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務。
-ms.openlocfilehash: 390e2446737b4b85dfaba64974666fab4938a5dd
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: cd030018dabff628af18d173cf542a3d375b27d0
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084598"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515109"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務
 
@@ -115,8 +115,9 @@ ms.locfileid: "50084598"
    > 商務用 Skype Online 連接器目前是最新 Teams PowerShell 模組的一部分。 如果您使用的是最新的 Teams PowerShell 公開發行版本，則不需要安裝商務用 Skype Online 連接器。
    
    ```powershell
-   $sfboSession = New-CsOnlineSession -Credential $credential
-   Import-PSSession $sfboSession
+   Import-Module MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
    ```
 
 6. 執行這些命令，以連線到 Exchange Online。
@@ -143,11 +144,14 @@ ms.locfileid: "50084598"
     
    ```powershell
    Import-Module MicrosoftTeams
-   Connect-MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
    ```
   
    > [!Note]
    > 若要連線到 Microsoft Teams 雲端 (而非 *[全球]*)，請參閱 [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams)。
+  
+
 
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell for Graph 模組
@@ -164,8 +168,8 @@ Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession -Credential $credential
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
@@ -173,7 +177,7 @@ Connect-ExchangeOnline -ShowProgress $true
 Connect-IPPSSession -UserPrincipalName $acctName
 #Teams
 Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 ```
 
 ### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組
@@ -190,8 +194,8 @@ Connect-MsolService -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession -Credential $credential
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
@@ -199,7 +203,7 @@ Connect-ExchangeOnline -ShowProgress $true
 Connect-IPPSSession -UserPrincipalName $acctName
 #Teams
 Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 ```
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>使用多重要素驗證時的連線步驟
@@ -216,8 +220,8 @@ Connect-AzureAD
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
@@ -239,8 +243,8 @@ Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true

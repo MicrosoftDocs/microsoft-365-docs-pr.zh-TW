@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4e065ff4da80b50ea11ff2069e8938c59f16f962
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 72c6ec814c5f3317f582cb4bfb21858677fbb7e1
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165988"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509119"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新功能
 
@@ -36,18 +36,18 @@ ms.locfileid: "50165988"
 
 RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此頁面的通知：
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
+https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
-## <a name="february-2021"></a>2021年2月
+## <a name="february-2021"></a>2021 年 2 月
 -  (預覽) 增強型[Microsoft 365 安全性中心 (https://security.microsoft.com) ](https://security.microsoft.com)現在已提供公開預覽。 這種新的經驗會將適用于 Office 365 的 Defender 和 Defender 帶入中央。 [深入瞭解已變更的](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)專案。
 
 ## <a name="september-2020"></a>2020 年 9 月
 - [IdentityDirectoryEvents 表格](advanced-hunting-identitydirectoryevents-table.md) <br> 尋找與執行 Active Directory (AD) 之內部部署網域控制站有關的事件。 這個 [高級搜尋](advanced-hunting-overview.md) 架構表涵蓋網域控制站上的身分識別相關事件及系統事件範圍。
-- [AssignedIPAddresses ( # A1 函數](advanced-hunting-assignedipaddresses-function.md) <br> 您可以在您的高級搜尋查詢中使用此功能，快速取得指派給裝置的最新 IP 位址，或從特定時間取得最近的 IP 位址。
+- [AssignedIPAddresses () 函數](advanced-hunting-assignedipaddresses-function.md) <br> 您可以在您的高級搜尋查詢中使用此功能，快速取得指派給裝置的最新 IP 位址，或從特定時間取得最近的 IP 位址。
 
 ## <a name="july-2020"></a>2020 年 7 月
-- [FileProfile ( # A1 函數](advanced-hunting-fileprofile-function.md) <br> 在您的高級搜尋查詢中使用此功能，以豐富包含完整檔案資訊的結果。
+- [FileProfile () 函數](advanced-hunting-fileprofile-function.md) <br> 在您的高級搜尋查詢中使用此功能，以豐富包含完整檔案資訊的結果。
 - [身分識別和應用程式表格](advanced-hunting-schema-tables.md)<br> 使用高級搜尋架構中的 [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)及 [AppFileEvents](advanced-hunting-appfileevents-table.md) 表格，可以深入瞭解驗證事件、Active Directory 查詢及應用程式相關的活動。
 - [開始搜補](advanced-hunting-go-hunt.md)<br> 快速從調查事件，以在高級搜尋中檢查特定事件、使用者、裝置或其他實體類型。
 

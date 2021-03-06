@@ -22,12 +22,12 @@ ms.custom:
 description: 系統管理員可以瞭解零小時自動清除 (ZAP) 是否可以 retroactively 將 Exchange Online 信箱中已傳遞的郵件移至 [垃圾郵件] 資料夾，或 retroactively 發現為垃圾郵件或網路釣魚的隔離區。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5fd41cf45ad2a49d74684ae3e20dded5c1b8f034
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0f6cd7522581db1fbc594e9350c8712359498e3b
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287302"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509287"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>在 Exchange Online 中，以零小時自動清除 (ZAP) 
 
@@ -108,6 +108,10 @@ ZAP 無法在獨立 Exchange Online Protection (EOP 中運作) 保護內部部�
 ### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>如果我使用安全寄件者、郵件流程規則或允許/封鎖的寄件者清單，該怎麼辦？
 
 安全寄件者、郵件流程規則或封鎖及允許組織設定會優先。 因為服務正在執行您設定的工作，所以這些郵件會從 ZAP 中排除。 這是將郵件設定為略過篩選所需注意的另一個原因。
+
+### <a name="what-are-the-licensing-requirements-for-zap-to-work"></a>要使用的 ZAP 授權需求為何？
+
+授權沒有任何限制。 在 Exchange online 上主控的所有信箱都可以運作。 ZAP 無法在獨立 Exchange Online Protection (EOP 中運作) 保護內部部署 Exchange 信箱的環境。
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>當郵件移至另一個資料夾 (例如收件匣規則) 時，該怎麼辦？
 

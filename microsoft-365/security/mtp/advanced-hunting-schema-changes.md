@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461664"
+ms.locfileid: "50509299"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高級搜尋架構命名變更
 
@@ -76,7 +76,7 @@ ms.locfileid: "50461664"
 
 ## <a name="february-2021"></a>2021 年 2 月
 
-1. 在 [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) 和 [EmailEvents](advanced-hunting-emailevents-table.md) 資料表中，我們已棄用 `MalwareFilterVerdict` 和 `PhishFilterVerdict` 欄，並將其取代為數據 `ThreatTypes` 行。 我們也已棄用 `MalwareDetectionMethod` 和 `PhishDetectionMethod` 欄，並將其取代 `DetectionMethods` 欄。 這種精簡功能可讓我們在新欄下提供更多資訊。 下圖提供對應。
+1. 在 [ [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) ] 和 [ [EmailEvents](advanced-hunting-emailevents-table.md) ] 表格中，[ `MalwareFilterVerdict` 和] 欄已 `PhishFilterVerdict` 由欄所取代 `ThreatTypes` 。 `MalwareDetectionMethod`和 `PhishDetectionMethod` 欄也會取代 `DetectionMethods` 欄。 這種精簡功能可讓我們在新欄下提供更多資訊。 下圖提供對應。
 
 | 表格名稱 | 原始欄名稱 | 新欄名稱 | 變更的原因
 |--|--|--|--|
@@ -86,11 +86,11 @@ ms.locfileid: "50461664"
 | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包含更多威脅類型 |
 
 
-2. 在 [ `EmailAttachmentInfo` 和 `EmailEvents` 表格] 中，我們新增了欄， `ThreatNames` 以提供有關電子郵件威脅的詳細資訊。 此欄包含垃圾郵件或網路釣魚詐騙等值。
+2. 在 [ `EmailAttachmentInfo` 和 `EmailEvents` 表格] 中， `ThreatNames` 新增欄以提供有關電子郵件威脅的詳細資訊。 此欄包含垃圾郵件或網路釣魚詐騙等值。
 
-3. 在 [ [DeviceInfo](advanced-hunting-deviceinfo-table.md) ] 表格中，我們會根據 `DeviceObjectId` `AadDeviceId` 客戶的意見反應取代欄。
+3. 在 [ [DeviceInfo](advanced-hunting-deviceinfo-table.md) ] 表格中，根據客戶的意見反應，欄會 `DeviceObjectId` 取代欄 `AadDeviceId` 。
 
-4. 在 [ [DeviceEvents](advanced-hunting-deviceevents-table.md) ] 表格中，我們更新數個 ActionType 名稱，以更好地反映動作的描述。 詳細資訊可在下面找到。
+4. 在 [ [DeviceEvents](advanced-hunting-deviceevents-table.md) ] 表格中，已修改數個 ActionType 名稱，以更好地反映動作的描述。 您可以在下面找到變更的詳細資料。
 
 | 表格名稱 | 原始 ActionType 名稱 | 新 ActionType 名稱 | 變更的原因
 |--|--|--|--|

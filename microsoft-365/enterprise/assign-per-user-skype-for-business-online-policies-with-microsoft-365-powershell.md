@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用 Microsoft 365 的 PowerShell，將每位使用者的通訊設定指派給商務用 Skype Online 原則。
-ms.openlocfilehash: 6ff9fce3e0287313f6725b370b6ba89cb939eb3a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6ee237e5d2ee0c9f472f372a6aa66c9612336265
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688499"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514977"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>將每一使用者商務用 Skype Online 原則指派給 Microsoft 365 的 PowerShell
 
@@ -31,18 +31,19 @@ ms.locfileid: "46688499"
 
 使用下列指示設定執行命令 (略過已完成的步驟) ：
   
-1. 下載及安裝 [商務用 Skype Online 連接器模組](https://www.microsoft.com/download/details.aspx?id=39366)。
+  > [!Note]
+   > 商務用 Skype Online 連接器目前是最新 Teams PowerShell 模組的一部分。 如果您使用的是最新的 Teams PowerShell 公開發行版本，則不需要安裝商務用 Skype Online 連接器。
+
+1. 安裝 [團隊 PowerShell 模組](https://docs.microsoft.com/microsoftteams/teams-powershell-install)。
     
 2. 開啟 Windows PowerShell 命令提示字元，然後執行下列命令： 
     
-```powershell
-Import-Module LyncOnlineConnector
-$userCredential = Get-Credential
-$sfbSession = New-CsOnlineSession -Credential $userCredential
-Import-PSSession $sfbSession
-```
+   ```powershell
+   Import-Module MicrosoftTeams
+   Connect-MicrosoftTeams
+   ```
 
-出現提示時，請輸入您的商務用 Skype Online 系統管理員帳戶名稱和密碼。
+   出現提示時，請輸入您的商務用 Skype Online 系統管理員帳戶名稱和密碼。
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>更新使用者帳戶的外部通訊設定
 
@@ -108,8 +109,6 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 若要管理大量使用者 (1000 或以上) ，您必須使用 [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) Cmdlet 透過腳本區塊批命令。  在先前的範例中，每次執行 Cmdlet 時，必須先設定此呼叫，然後等候結果，再將其傳送回來。  使用腳本區塊時，這可讓 Cmdlet 以遠端方式執行，並在完成之後傳送資料回來。 
 
 ```powershell
-Import-Module LyncOnlineConnector
-$sfbSession = New-CsOnlineSession
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
 
 $batch = 50
@@ -136,7 +135,7 @@ $count = 0
 
 這會在不具備用戶端原則的時刻找到500使用者。 它會授與他們用戶端原則 "ClientPolicyNoIMURL" 和外部存取原則 "FederationAndPicDefault"。 結果會批分為50群組，而每批次50都會傳送至遠端電腦。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 PowerShell 管理商務用 Skype Online](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   

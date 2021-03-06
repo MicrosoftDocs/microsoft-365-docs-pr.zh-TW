@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 1fd32aa688256f1ac8e63eec902c3a18b2143f09
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 63f40ff12972695e391bd25973fd9a7195fab5b1
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242911"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515025"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的 microsoft Defender for Endpoint
 
@@ -48,6 +48,9 @@ Microsoft 365 security center 中的 microsoft Defender for Endpoint [可將受�
 
 > [!IMPORTANT]
 > 您在 Microsoft 365 的安全性中心看到的內容，取決於您目前的訂閱。 例如，如果您沒有 Microsoft Defender for Office 365 的授權，則不會顯示 [電子郵件 & 協同作業] 區段。
+
+>[!Note]
+>新的整合入口網站無法供下列人員使用：美國政府社區雲端 (GCC) US 政府社區雲端高 (GCC 高) 美國政府機構，含商業授權的美國政府機構
 
 請參閱改進的 Microsoft 365 安全中心： [https://security.microsoft.com](https://security.microsoft.com) 。
 

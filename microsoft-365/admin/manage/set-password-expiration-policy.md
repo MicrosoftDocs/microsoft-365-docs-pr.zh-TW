@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解如何在 Microsoft 365 系統管理中心設定組織的密碼到期原則。
-ms.openlocfilehash: 471a881bd9808861b9fa2c67d007f1ebe1c10885
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 9470a73926327777055a321eb3a592ea3ddcf41e
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926171"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515037"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
 
@@ -70,8 +70,6 @@ ms.locfileid: "49926171"
 5. 輸入密碼應到期的頻率。 選擇介於 14 到 730 之間的天數。
   
 6. 在第二個方塊中，輸入使用者何時應收到其密碼到期的通知，然後選取 [儲存]。 Choose a number of days from 1 to 30.
-
-7. 使用者的密碼過期時，會收到通知 (顯示在其螢幕的右下角)。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>關於密碼到期功能，您應知道的重要事項
   
