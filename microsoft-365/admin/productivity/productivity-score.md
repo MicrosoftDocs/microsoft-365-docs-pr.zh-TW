@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生產力分數概觀。
-ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988065"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509083"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生產力分數 
 
@@ -129,6 +129,7 @@ Microsoft 致力於保護個人隱私權。 這份[隱私權文件](privacy.md)�
 - [行動性 – 人員體驗](mobility.md)
 - [團隊工作 – 人員體驗](teamwork.md)
 - [Microsoft 365 應用程式健康情況 – 科技體驗](apps-health.md)
+- [端點分析](https://docs.microsoft.com/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>商務持續性特殊報告
 

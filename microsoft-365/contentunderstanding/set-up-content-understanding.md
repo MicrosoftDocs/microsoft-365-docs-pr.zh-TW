@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: 58496041004218b48b864fa725084cba8edd518b
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: a275b2ec14403e16651acb293f8598b453fd3739
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145472"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515013"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -42,6 +42,16 @@ ms.locfileid: "50145472"
 > 您必須具備全域系統管理員或 SharePoint 系統管理員權限才能存取 Microsoft 365 系統管理中心，並設定 SharePoint Syntex。
 
 如果您是系統管理員，您也可以在設定之後隨時變更所選的設定，以及在 Microsoft 365 系統管理中心中的所有內容瞭解管理設定。
+
+### <a name="licensing"></a>授權
+
+若要使用 SharePoint Syntex，您的組織必須有 SharePoint Syntex 的訂閱，且每個使用者都必須獲指派下列授權：
+
+- SharePoint Syntex
+- SharePoint Syntex - SPO 類型
+- Common Data Service for SharePoint Syntex
+
+如果您在日後 (或您的試用版到期) 取消 SharePoint Syntex 訂閱，使用者將不再可建立或執行文件瞭解模型或表單處理模型，且內容中心範本將不再可用。 此外，字詞庫報告、SKOS 分類法匯入和內容類型推送將不再可用。 不會刪除任何內容，且不會變更網站權限。
 
 ## <a name="to-set-up-sharepoint-syntex"></a>若要設定 SharePoint Syntex
 

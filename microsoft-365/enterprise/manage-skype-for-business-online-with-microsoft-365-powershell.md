@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 使用適用於 Microsoft 365 的 PowerShell 來管理商務用 Skype Online 原則、每一個使用者原則和會議的設定。
-ms.openlocfilehash: ff35463dc0c2e16106432c393b10e31e6bf0a5d2
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 1992edfb6d1c141c7ed4db22064960873b768865
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477098"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514953"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>使用 PowerShell 管理商務用 Skype Online
 
@@ -42,8 +42,7 @@ ms.locfileid: "48477098"
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
-   $sfbSession = New-CsOnlineSession -Credential $userCredential
-   Import-PSSession $sfbSession
+   Connect-MicrosoftTeams -Credential $userCredential
    ```
 
 2. 在 **[Windows PowerShell 認證要求]** 對話方塊中，輸入您的系統管理員帳戶名稱和密碼，然後選取 **[確定]**。
@@ -55,11 +54,10 @@ ms.locfileid: "48477098"
 
    ```powershell
    Import-Module MicrosoftTeams
-   $sfbSession = New-CsOnlineSession
-   Import-PSSession $sfbSession
+   Connect-MicrosoftTeams
    ```
 
-2. 當出現 **New-CsOnlineSession** 命令提示時，請輸入您的商務用 Skype Online 系統管理員帳戶名稱。
+2. 出現提示時，請輸入您的商務用 Skype Online 系統管理員帳戶名稱。
 
 3. 在 **[登入您的帳戶]** 對話方塊中，輸入商務用 Skype Online 系統管理員密碼，然後選取 **[登入]**。
 

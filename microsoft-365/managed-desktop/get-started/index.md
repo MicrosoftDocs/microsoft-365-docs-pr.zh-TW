@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 02f12174ef3b8a55f9642bba41c845952b1c1c48
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950541"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509275"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>開始使用 Microsoft 受管理的電腦
 
@@ -21,7 +21,7 @@ ms.locfileid: "47950541"
 > 這是建議遵守的順序，但是您可彈性運用。
 
 1. [在系統管理入口網站中新增和驗證系統管理員連絡人](add-admin-contacts.md)
-2. [調整條件式存取](conditional-access.md)
+2. [註冊之後調整設定](conditional-access.md)
 3. [指派授權](assign-licenses.md)
 4. [部署 Intune 公司入口網站](company-portal.md)
 5. [啟用企業狀態漫遊](enterprise-state-roaming.md)

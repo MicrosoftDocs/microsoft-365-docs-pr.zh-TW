@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 瞭解如何使用三層保護來設定 Teams 以取得更佳的檔案共用安全性，並以輕鬆的共同作業方式來平衡安全性。
-ms.openlocfilehash: cb49c35cc1c485d45656b1716d385cf626322ce8
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602004"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509239"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>為小組設定三層保護
 
@@ -114,6 +114,8 @@ ms.locfileid: "49602004"
 ## <a name="access-from-unmanaged-devices"></a>從未受管理的裝置存取
 
 針對敏感度和高敏感度層，我們會針對有敏感度標籤的 SharePoint 內容限制存取權。 Azure AD 條件式存取提供了許多選項，可供您決定使用者存取 Microsoft 365 的方式，包括根據位置、風險、裝置合規性和其他因素的限制。 建議您閱讀[什麼是條件式存取？](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，並考慮可能適合貴組織的其他原則。
+
+請注意，來賓通常不會有由組織管理的裝置。 如果您允許任何層級中的來賓，請考慮他們將用來存取小組和網站的裝置，並據以設定未受管理裝置原則。
 
 ## <a name="next-step"></a>後續步驟
 

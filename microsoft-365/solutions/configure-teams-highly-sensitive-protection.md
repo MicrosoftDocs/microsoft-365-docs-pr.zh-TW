@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何為小組部署高敏感度資料保護。
-ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921131"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509263"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>為小組設定高敏感度資料保護
 
@@ -47,7 +47,7 @@ ms.locfileid: "49921131"
 - [在與組織外的人員共用檔案時，限制資訊意外暴露](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
 - [建立安全的來賓共用環境](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
 
-為了允許或封鎖來賓共用，我們會使用敏感度標籤 (適用於團隊) 和網站層級共用控制 (適用於相關聯的 SharePoint 網站) 的組合，後面會有這兩種機制的討論。
+為了允許或封鎖來賓共用，我們會使用敏感度標籤 (適用於小組) 和網站層級共用控制 (適用於相關聯的 SharePoint 網站) 的組合，後面會有這兩種機制的討論。
 
 ## <a name="sensitivity-labels"></a>敏感度標籤
 
@@ -59,7 +59,7 @@ ms.locfileid: "49921131"
 
 在為 Teams 啟用敏感度標籤後，下一步是建立標籤。
 
-若要建立敏感度標籤
+建立敏感度標籤
 1. 開啟 [Microsoft 365 合規性中心](https://compliance.microsoft.com)。
 2. 在 **[解決方案]** 底下，按一下 **[資訊保護]**。
 3. 按一下 **[建立標籤]**。
@@ -76,10 +76,10 @@ ms.locfileid: "49921131"
 14. 在 [定義群組及網站的保護設定 **]** 頁面上，選取 [隱私權和外部使用者存取權設定 **]** 和 [裝置存取權和外部共用設定 **]**，然後按 [下一步 **]**。
 15. 在 [定義隱私權和外部使用者存取權設定 **]** 頁面上，於 [隱私權 **]** 底下選取 [私人 **]** 選項。
 16. 如果您想要允許來賓存取，請在 [外部使用者存取權 **]** 底下，選取 [讓 Microsoft 365 群組擁有者將貴組織外部人員新增到群組做為來賓 **]** 群組。
-17. 按 [下一步 **]**。
+17. 按 **[下一步]**。
 18. 在 [定義外部共用和裝置存取權設定 **]** 頁面上，選取 [從已套用標籤的 SharePoint 網站控制外部共用 **]**。
 19. 如果您要允許來賓存取，在 [內容可以與誰共用 **]** 底下，選擇 [新的及現有的來賓 **]**，或如果您不要允許來賓存取，則選擇 [僅限組織中的人員 **]**。
-20. 在 [從未受控裝置存取 **]** 下，選擇 [封鎖存取 **]**。
+20. 在 [從未受控裝置存取 **]** 下，選擇 [封鎖存取 **]**。 (如果您要允許來賓，但來賓沒有受管理的裝置，您可能會想要選擇 [允許受限的僅限 Web 存取]。)
 21. 按 [下一步 **]**。
 22. 在 [為資料庫資料行自動加上標籤 **]** 頁面上，按 [下一步 **]**。
 23. 按一下 [建立標籤 **]**，然後按一下 [完成 **]**。

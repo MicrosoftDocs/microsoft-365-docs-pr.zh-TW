@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表單處理
-ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 1dba8828a158a5163017ee5f37735f44e974274c
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242443"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515157"
 ---
 # <a name="form-processing-overview"></a>表單處理概觀
 
@@ -45,6 +45,13 @@ Office 365 系統管理員需要為 SharePoint 文件庫[啟用表單處理](htt
 ### <a name="file-limitations"></a>檔案限制
 
 使用表單處理模型時，請務必記得[檔案使用量的需求和限制](https://docs.microsoft.com/ai-builder/form-processing-model-requirements)。
+
+### <a name="multi-geo-environments"></a>多地理位置環境
+
+在 [Microsoft 365 多地理位置環境](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)中設定 SharePoint Syntex 時，您只能將它設定為在中央位置使用表單處理。 如果您要在衛星位置使用表單處理，請連絡 Microsoft 支援服務。
+
+
+
 
 
 
