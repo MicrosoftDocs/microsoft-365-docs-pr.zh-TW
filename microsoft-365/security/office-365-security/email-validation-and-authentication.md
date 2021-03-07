@@ -19,12 +19,12 @@ localization_priority: Priority
 description: 系統管理員現在可以了解 EOP 如何使用電子郵件驗證 (SPF、DKIM 和 DMARC) 來協助防止詐騙、網路釣魚和垃圾郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1e0fbe8a00b17e871adf65f86a337a0a94493ed
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 87677608431446a4bdfe6e16ae1204163a4f582a
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286510"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509191"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的電子郵件驗證
 
@@ -64,7 +64,7 @@ DMARC 會透過檢查郵件中的 **寄件者** 位址來防止詐騙。 **寄�
 
 隱含電子郵件驗證是一般電子郵件驗證原則的延伸模組。 這些延伸模組包括：寄件者信譽、寄件者歷程記錄、收件者歷程記錄、行為分析，以及其他進階技術。 如果沒有來自這些延伸模組的其他信號，從未使用電子郵件驗證原則的網域傳送的郵件將被標示為詐騙。
 
-若要查看 Microsoft 的一般公告，請參閱[網路釣魚的範圍第 2 部分 - Microsoft 365 中增強的反詐騙保護](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209) (英文)。
+若要查看 Microsoft 的一般公告，請參閱[網路釣魚的範圍第 2 部分 - Microsoft 365 中增強的反詐騙保護](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209)`。
 
 ## <a name="composite-authentication"></a>複合驗證
 
@@ -175,7 +175,7 @@ Microsoft 365 會將來自您公司基礎結構的輸入電子郵件視為已驗
 
 在下方的螢幕擷取畫面中，來源 IP 是 131.107.18.4，PTR 記錄是 outbound.mail.protection.outlook.com。 這會針對傳送基礎結構顯示為 outlook.com。
 
-若要允許此寄件者傳送未經驗證的電子郵件，請將 [否] 變更為 [是]。
+若要允許此寄件者傳送未經驗證的電子郵件，請將 **[否]** 變更為 **[是]**。
 
 ![設定反詐騙允許的寄件者](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
@@ -215,7 +215,7 @@ Microsoft 365 會將來自您公司基礎結構的輸入電子郵件視為已驗
 
 ## <a name="related-links"></a>相關連結
 
-如需服務提供者最佳作法的詳細資訊，請參閱[適用服務提供者的 M3AAWG 行動訊息最佳做法](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf) (英文)。
+如需服務提供者最佳作法的詳細資訊，請參閱[適用服務提供者的 M3AAWG 行動訊息最佳做法](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf)。
 
 瞭解 Office 365 如何使用 SPF 並支援 DKIM 驗證：
 

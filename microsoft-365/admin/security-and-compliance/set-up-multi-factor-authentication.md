@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何為您的組織設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 5ea367e64108e80ee7429ec700cf2ac0551aeab2
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: d08ef54c545809bbb2277f8d0a8471245400a3ac
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105148"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514965"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
 
@@ -42,7 +42,7 @@ ms.locfileid: "50105148"
 - 您必須是全域系統管理員才能管理 MFA。 如需詳細資訊，請參閱[系統管理員角色](../add-users/about-admin-roles.md)。
 - 如果您已開啟舊版每一使用者 MFA，請 [關閉舊版每一使用者 MFA](#turn-off-legacy-per-user-mfa)。
 - 如果您在 Windows 裝置上安裝有 Office 2013 用戶端，請[開啟 Office 2013 用戶端新式驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)。
-- 進階：如果您使用 Active Directory 同盟服務 (AD FS) 搭配協力廠商目錄服務，請設定 Azure MFA Server。 如需詳細資訊，請參閱[使用 Azure AD Multi-Factor Authentication 和協力廠商 VPN 解決方案的進階案例](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) (英文)。
+- 進階：如果您使用 Active Directory 同盟服務 (AD FS) 搭配協力廠商目錄服務，請設定 Azure MFA Server。 如需詳細資訊，請參閱[使用 Azure AD Multi-Factor Authentication 和協力廠商 VPN 解決方案的進階案例](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。
 
 ## <a name="turn-security-defaults-on-or-off"></a>開啟或關閉安全性預設值
 
@@ -63,8 +63,8 @@ ms.locfileid: "50105148"
 1. 移至 [[條件式存取原則]](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) 頁面。
 2. 選擇每個 **開啟** 的基準原則，並將 **啟用原則** 設定為 **關閉**。
 3. 移至 [Azure Active Directory - [屬性] 頁面](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。
-4. 在頁面底部，選取 [管理安全性預設]。
-5. 選擇 [是] 可啟用安全性預設，以及 [否] 可停用安全性預設，然後選擇 [儲存]。
+4. 在頁面底部，選取 **[管理安全性預設]**。
+5. 選擇 **[是]** 可啟用安全性預設，以及 **[否]** 可停用安全性預設，然後選擇 **[儲存]**。
 
 ## <a name="use-conditional-access-policies"></a>使用 [條件式存取] 原則
 
@@ -81,10 +81,11 @@ ms.locfileid: "50105148"
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>為您的組織開啟 [新式] 驗證。
 
-對於大多數訂閱而言，[新式] 驗證會自動開啟，但如果您是在很久以前購買訂閱的話，則可能有所不同。 這必須在 MFA 以 Office 應用程式正常運作之前開啟。
+對於多數訂閱，新式驗證會自動開啟，但如果您在 2017 年 8 月之前購買訂閱，可能需要開啟新式驗證，才能讓多重要素驗證之類的功能在 Windows 用戶端 (例如 Outlook) 中運作。
 
-1. 在 Microsoft 365 系統管理中心，在左側導覽中選擇 **[設定]** \> **[組織設定]**。
-1. 在 **[服務]** 索引標籤底下，選擇 **[新式驗證]**，然後在 **[新式驗證]** 窗格中，確保 **[啟用新式驗證]** 已選取。 選取 **[儲存變更]**。
+
+1. 在 Microsoft 365 系統管理中心，於左側導覽中選擇 **[設定]** \> **[組織設定]**。
+2. 在 **[服務]** 索引標籤底下，選擇 **[新式驗證]**，然後在 **[新式驗證]** 窗格中，確保 **[啟用新式驗證]** 已選取。 選取 **[儲存變更]**。
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>關閉舊版的每一使用者 MFA
 
