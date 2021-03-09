@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e22d51316d77ad4a6bc049a217098237d883e072
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f19e3b94aab6ae538ffab4c88fa43380bfeebe88
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637424"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551569"
 ---
-# <a name="payment-information-for-croatia"></a><span data-ttu-id="df972-103">克羅地亞的付款資訊</span><span class="sxs-lookup"><span data-stu-id="df972-103">Payment information for Croatia</span></span>
+# <a name="payment-information-for-croatia"></a><span data-ttu-id="5fb8f-103">克羅地亞的付款資訊</span><span class="sxs-lookup"><span data-stu-id="5fb8f-103">Payment information for Croatia</span></span>
 
-<span data-ttu-id="df972-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="df972-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="5fb8f-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="5fb8f-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="df972-105">請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="df972-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="5fb8f-105">請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="5fb8f-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="df972-106">電子基金轉移</span><span class="sxs-lookup"><span data-stu-id="df972-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="5fb8f-106">電匯</span><span class="sxs-lookup"><span data-stu-id="5fb8f-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="df972-107">**銀行：** Citibank，倫敦</span><span class="sxs-lookup"><span data-stu-id="df972-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="df972-108">**SWIFT Code/BIC：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="df972-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="df972-109">**IBAN：** 12207591</span><span class="sxs-lookup"><span data-stu-id="df972-109">**IBAN:** 12207591</span></span>  
-<span data-ttu-id="df972-110">**分類程式代碼：** 185008</span><span class="sxs-lookup"><span data-stu-id="df972-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="df972-111">**帳戶號碼：** 12207591</span><span class="sxs-lookup"><span data-stu-id="df972-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="df972-112">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="df972-112">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="5fb8f-107">**銀行：** Citibank，倫敦</span><span class="sxs-lookup"><span data-stu-id="5fb8f-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="5fb8f-108">**SWIFT Code/BIC：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="5fb8f-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
+<span data-ttu-id="5fb8f-109">**IBAN：** 12207591</span><span class="sxs-lookup"><span data-stu-id="5fb8f-109">**IBAN:** 12207591</span></span>  
+<span data-ttu-id="5fb8f-110">**分類程式代碼：** 185008</span><span class="sxs-lookup"><span data-stu-id="5fb8f-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="5fb8f-111">**帳戶號碼：** 12207591</span><span class="sxs-lookup"><span data-stu-id="5fb8f-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="5fb8f-112">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="5fb8f-112">**Account Name:** MICROSOFT</span></span>  
