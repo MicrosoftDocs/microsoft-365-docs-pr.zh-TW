@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ec51a31e5370e837f78ff74c84313014a8ebc0e9
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f1877a09e345ba6c1c7c19c07846aaa08bbdb4f3
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642872"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547585"
 ---
 # <a name="contact-support-for-estonia"></a>愛沙尼亞的連絡人支援
 

@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 871c70d0afed42069c07e08264beee586dfd4e27
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2ea3d199fe645897df92da569ed7c013ad5ce209
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644360"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549085"
 ---
 # <a name="contact-support-for-american-samoa"></a>聯繫我們的支援人員薩摩亞
 

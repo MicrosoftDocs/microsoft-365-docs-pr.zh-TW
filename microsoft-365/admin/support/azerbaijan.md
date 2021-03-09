@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 948cd5c0258532325d631e502a11c4f8f741c82a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 35a2e561e8d7e72088484fc902d4e4ca36b5f41e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644108"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548833"
 ---
 # <a name="contact-support-for-azerbaijan"></a>以亞塞拜然為中心的支援人員
 

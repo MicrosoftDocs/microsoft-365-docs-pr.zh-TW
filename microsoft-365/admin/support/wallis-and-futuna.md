@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5babc628894e43788756a3df94bcddf11a83fa0e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9e0b2614012e8a9b122cadd2771fb5006550aee0
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638660"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549313"
 ---
 # <a name="contact-support-for-wallis-and-futuna"></a>取得瓦利斯和富圖納的支援
 
