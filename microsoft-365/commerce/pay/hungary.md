@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6320b31929fb0d02abe0c3929cc2adc49c0e8d15
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c18dd07c883d91e37fc253d0614f36146316d3bd
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647216"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550885"
 ---
 # <a name="payment-information-for-hungary"></a>匈牙利的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48647216"
 
 請只以 EUR 支付，並參照您的付款匯款 (s) 中的發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** Citibank，倫敦  
 **SWIFT Code/BIC：** CITIGB2L  

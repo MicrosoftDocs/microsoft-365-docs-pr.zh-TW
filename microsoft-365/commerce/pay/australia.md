@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0dc0d574e07868cd01e491f9e4d1ad28e42b9c8d
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 583bd8ad67fa78ae09fde69813506606ca9806b7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407023"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549613"
 ---
 # <a name="payment-information-for-australia"></a>澳大利亞的付款資訊
 

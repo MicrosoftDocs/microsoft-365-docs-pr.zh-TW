@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5440487bb42bd6b2ec1f39871e226f6ac941f228
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 00ea9cafd1978ecd5e2b723f6723f96fd0a69bba
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646952"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550321"
 ---
 # <a name="payment-information-for-portugal"></a>葡萄牙的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48646952"
 
 請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** Citibank，倫敦  
 **SWIFT Code/BIC：** CITIGB2L  

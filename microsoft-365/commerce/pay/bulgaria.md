@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 636f40ca39c7f1f45dbe304788f1b211c1f0a3ef
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 26abfcd3b5c90da469eb29da8b631e8f7c997ad1
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637652"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551821"
 ---
 # <a name="payment-information-for-bulgaria"></a>保加利亞的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48637652"
 
 請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** Citibank，倫敦  
 **Swift Code/BIC：** CITIGB2L  

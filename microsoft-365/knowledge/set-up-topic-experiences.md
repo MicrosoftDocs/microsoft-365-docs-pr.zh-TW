@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何設定 Microsoft Viva 主題
-ms.openlocfilehash: a90e75330527992f8519d625f94fe0d5ecb3de6b
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: cc420a0631f5b861341116abcd50cfe90e15450e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261466"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551883"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定 Microsoft Viva 主題
 
@@ -48,7 +48,7 @@ ms.locfileid: "50261466"
 
 3. 在 [連線 **人員至知識]** 頁面上，按一下 [ **開始** ]，逐步引導您完成安裝程式。
 
-    ![快速入門](../media/k-get-started.png) 
+    ![開始使用](../media/k-get-started.png) 
 
 4. 在 [ **選擇 Viva 主題如何尋找主題** ] 頁面上，您會設定主題探索。 在 [ **選取 SharePoint 主題來源** ] 區段中，選取要在探索過程中將其編目為主題來源的 SharePoint 網站。 請選擇：
     - **所有網站**：您組織中的所有 SharePoint 網站。 這包括目前和未來的網站。
@@ -133,9 +133,13 @@ ms.locfileid: "50261466"
 
 2. 選取您要授權的使用者，然後按一下 [ **授權和應用程式**]。
 
-3. 在 [**應用程式**] 底下，請確定已同時選取 [使用索引及 **主題體驗** 的 **圖形連接器搜尋]** 。
+3. 在 [ **授權**] 底下，選取 [ **Viva 主題**]。
 
-4. 按一下 [儲存變更]。
+4. 在 [ **應用程式**] 底下，請確定已選取 [ **使用索引的圖形連接器進行搜尋 (Viva 主題)** 及 **Viva 主題** 。
+
+    ![Microsoft 365 系統管理中心中的 microsoft Viva 主題授權](../media/topic-experiences-licenses.png)
+
+5. 按一下 **[儲存變更]**。
 
 ## <a name="manage-topic-experiences"></a>管理主題經驗
 
@@ -146,6 +150,6 @@ ms.locfileid: "50261466"
 - [管理 Microsoft Viva 主題中的主題許可權](topic-experiences-user-permissions.md)
 - [變更 Microsoft Viva 主題中主題中心的名稱](topic-experiences-administration.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [主題經驗概述](topic-experiences-overview.md)

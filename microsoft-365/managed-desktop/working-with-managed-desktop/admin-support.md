@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9e96a530c61f3f9a94dd84cc79bd3c4c03b61106
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 5e614581ee76d1f8cb026345f1c31ed22faafb8a
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840274"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572625"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 受管理的電腦的系統管理員支援
 
@@ -32,7 +32,7 @@ ms.locfileid: "49840274"
 
 支援要求類型 | 何時使用
 --- | ---
-事件 | 您需要 Microsoft Managed Desktop Operations 小組調查，如變更或安全性事件的廣泛影響。
+事件 | 您需要 Microsoft Managed Desktop Operations 小組調查，如變更或服務中斷的廣泛影響。
 要求資訊 | 您正在規劃網路、proxy 設定、VPN 系統、憑證到期或只需要服務的某些資訊的變更。 當您在組織內傳遞變更時，建議來自 Microsoft 受管理的桌面作業小組的回應。
 變更要求 | 您需要 Microsoft Managed Desktop Operations 小組進行變更，例如在更新群組之間移動裝置。
 
