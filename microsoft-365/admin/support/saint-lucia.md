@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e7f07aaaad6f8a51231e5b14251f0badb4c08089
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7d76ebbc45301b65ca7e92e086e5a76c5ea993e6
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640076"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544765"
 ---
 # <a name="contact-support-for-saint-lucia"></a>取得聖露西亞的技術支援
 

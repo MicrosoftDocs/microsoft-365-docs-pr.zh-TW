@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 344e3d8f09625773e942751a5cc0c58b5dd1a367
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ef646a8b9b4696ca7ce1a9383619bc882b15f2b2
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639608"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544309"
 ---
 # <a name="contact-support-for-somalia"></a>針對索馬里的連絡人支援
 

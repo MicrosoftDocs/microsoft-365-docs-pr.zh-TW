@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a00aba346a48524303199b63b3622bfb9a742bd3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e93ccd2f9ddb545f1ad8ea094b854b7c8df797f2
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643148"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547897"
 ---
 # <a name="contact-support-for-cyprus"></a>尋求賽普勒斯的人員支援
 

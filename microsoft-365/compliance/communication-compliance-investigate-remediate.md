@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ea02f5ff95baea42bf57c01c939afe4d3e4c13a2
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4f0be1b416bb80bc5cd2b43f5e4c95f0dbc24142
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423474"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542321"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>調查和修復通訊合規性警示
 
@@ -102,7 +102,7 @@ ms.locfileid: "50423474"
 檢查郵件基礎知識之後，就可以開啟訊息以檢查詳細資料，並決定進一步的修正動作。 選取郵件，以查看完整的郵件頭和正文資訊。 有幾種不同的觀點可協助您決定正確的動作：
 
 - **來源視圖**：此視圖是大多數網頁型郵件平臺中通常會出現的標準郵件視圖。 標頭資訊的格式為 normal 樣式，郵件內文支援嵌入的圖形檔案及換行的文字。 如果已啟用原則的 [光學字元辨識 (OCR) ](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) ，包含符合原則條件之列印或手寫文字的影像會在此 view 中視為相關聯郵件的子項專案。
-- **文字** 模式：文字視圖會顯示郵件的單行型純文字視圖，並在郵件和附件中包含相關聯的通訊合規性原則中符合的字詞。 關鍵字醒目提示可協助您快速掃描長訊息和附件，瞭解感興趣的領域。 在某些情況下，反白顯示的文字可能只會存在於符合原則條件的郵件附件中。 內嵌的檔案不會顯示，而且此視圖的行號可用於參考多個檢閱者之間的相關詳細資料。
+- **文字** 模式：文字視圖會顯示郵件的單行型純文字視圖，並在郵件和附件中包含相關聯的通訊合規性原則中符合的敏感資訊類型字詞或關鍵字。 關鍵字醒目提示可協助您快速掃描長訊息和附件，瞭解感興趣的領域。 在某些情況下，反白顯示的文字可能只會存在於符合原則條件的郵件附件中。 指定給原則的內建分類器所識別的字詞不支援關鍵字醒目提示。 內嵌的檔案不會顯示，而且此視圖的行號可用於參考多個檢閱者之間的相關詳細資料。
 - **批註視圖**：此視圖可讓檢閱者直接在儲存為郵件視圖的郵件上新增批註。 如果針對原則 [啟用了 OCR](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) ，包含符合原則條件之列印或手寫文字的影像會在此視圖中視為相關聯郵件的子項專案，而且可能會加以批註。
 - **使用者歷程記錄**：使用者史 view 顯示傳送郵件之使用者的所有通訊合規性原則所產生的所有其他警示。
 - **郵件詳細資料檢視**：郵件中繼資料和設定資訊的高級視圖。
