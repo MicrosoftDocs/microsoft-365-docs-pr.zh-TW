@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1238595d1eca11004f5bb9b4eb19c9652d91a787
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 75faac2c946d93f7e0aed7ef6daca40f2b9982c5
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642944"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547633"
 ---
 # <a name="contact-support-for-el-salvador"></a>以薩爾瓦多為中心的支援人員
 

@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ba28264c525f970c0900670b69dbb4b167768a01
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 976183a627fc769cfa1ef725cfb1c8d0ecaf06f0
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648788"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550344"
 ---
 # <a name="payment-information-for-saint-kitts-and-nevis"></a>聖基茨和尼維斯的支付資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48648788"
 
 請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** 美洲銀行  
 **Branch：** 達拉斯  

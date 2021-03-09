@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 10ce19845201f40f25728867ea2768c37d40f84d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f8bd77592506892213c97105db34c6c53c19e601
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639860"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544573"
 ---
 # <a name="contact-support-for-sao-tome-and-principe"></a>對聖多美 Tome 和普林西比的支援聯繫
 

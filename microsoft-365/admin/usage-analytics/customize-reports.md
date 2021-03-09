@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 瞭解如何在瀏覽器和 Power BI Desktop 中自訂報告。
-ms.openlocfilehash: 0375b61b6922c99acf927a4283571451deabaf14
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3c662dfa91939c68f0aa0a85c19a1fab003064bf
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114294"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572647"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用方式分析中自訂報告
 
@@ -138,7 +138,7 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
 
 您也可以使用與 Microsoft 365 使用方式分析報告對應的 Power BI 範本檔案，作為連接至資料的起點。 使用 pbit 檔案的優點是已建立連接字串。 您也可以利用基礎架構傳回的資料與基礎架構傳回的所有自訂量值，並進一步加以建立。
   
-您可以從 [下載中心](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)從 Microsoft 下載中心下載 Power BI 範本檔案。 下載 Power BI 範本檔案之後，請遵循下列步驟開始執行：
+您可以從 [Microsoft 下載中心](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)下載 Power BI 範本檔案。 下載 Power BI 範本檔案之後，請遵循下列步驟開始執行：
   
 1. 開啟 pbit 檔案。
     
