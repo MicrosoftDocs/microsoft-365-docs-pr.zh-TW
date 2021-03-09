@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 43713eb06ee46c44801a5148ac263b88fbb98242
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f13fc95c62c6f5afcd0d5941f433a9ea8140b235
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637916"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549553"
 ---
 # <a name="payment-information-for-bahrain"></a>巴林的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48637916"
 
 請只以 USD 支付，並參照您發票匯款 (s) 中的發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** Citibank，倫敦  
 **SWIFT 程式碼：** CITIGB2L  

@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 36eff0eae165978a851e2f4a6c899175aa87fb0d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 93ed8431efaec9201df9c8ddfc2212aa23d24267
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637904"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549541"
 ---
 # <a name="payment-information-for-bangladesh"></a>孟加拉的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48637904"
 
 請只以 USD 支付，並參照您發票匯款 (s) 中的發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** Citibank，新加坡  
 **SWIFT 程式碼：** CITISGSG  
