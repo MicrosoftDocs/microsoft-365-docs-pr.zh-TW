@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 709a908af6020b6b9ce43097abef1bcfddb04e01
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e158105380949a021598a5b5fbd7395cfc73bfbf
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648332"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542523"
 ---
 # <a name="payment-information-for-thailand"></a>泰國的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48648332"
 
 請只以 USD 支付，並參照您發票匯款 (s) 中的發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** Citibank，新加坡  
 **SWIFT 程式碼：** CITISGSG  

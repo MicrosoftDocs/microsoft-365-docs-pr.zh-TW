@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9ee6a347905e42c9271e824ce7ef1945bf34742f
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 734df0a8af82e1629c0b1808959ba1fe5b0c2bed
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648344"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542511"
 ---
 # <a name="payment-information-for-tanzania"></a>坦尚尼亞的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48648344"
 
 請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** Citibank，倫敦  
 **SWIFT 程式碼：** CITIGB2L  

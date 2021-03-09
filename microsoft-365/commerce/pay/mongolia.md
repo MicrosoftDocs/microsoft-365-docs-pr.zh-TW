@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d2a524087511bd84ddf855b04225304fa29c045
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7cda104c9cdb283f350d2f21d5e947740fd1930d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649148"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543097"
 ---
 # <a name="payment-information-for-mongolia"></a>用於蒙古的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48649148"
 
 請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** Citibank，倫敦  
 **SWIFT 程式碼：** CITIGB2L  

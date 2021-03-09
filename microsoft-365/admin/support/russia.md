@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 79a563b44979f9fc4d8cc053575a0ca76ed3a846
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9fd3a9dec07e4eb6cd543384d82b317fa1da9acc
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640124"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544813"
 ---
 # <a name="contact-support-for-russia"></a>俄羅斯的連絡人支援
 

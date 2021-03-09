@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0c39ba1d08bd40a950b4a323874e2a64c4017633
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 07983faa86c1ac2fe2a5daaaa8784d8071d9430b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641408"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546145"
 ---
 # <a name="contact-support-for-macau-sar"></a>澳門特別行政區的連絡人支援
 

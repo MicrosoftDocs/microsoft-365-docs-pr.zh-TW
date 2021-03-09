@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 015ae550440db87215148e6d65b98f64fea54963
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4b47325f466da829ff35af5f7354d19ccfc2129b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648368"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542475"
 ---
 # <a name="payment-information-for-taiwan"></a>臺灣的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48648368"
 
 請以 N.T. 付費 您的付款匯款中 (s) ，只會有美元及參考發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **受益人銀行：** CITIBANK 臺灣有限  
 **銀行代碼和分支程式碼：** 0210018  

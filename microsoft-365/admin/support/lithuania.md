@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c4d8e56abe21f121ac67c4ee47991f986ce546cb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2183b85f2a5c051d86a18e88f5c6eaafd7d97c46
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641456"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546169"
 ---
 # <a name="contact-support-for-lithuania"></a>立陶宛的連絡人支援
 

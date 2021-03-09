@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 456b96e21a4f18f882d8fd3d3bb4c2a5da679373
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: acff7dd180233fe4c7ff9ca76ee6c0d573d9e34f
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638912"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543757"
 ---
 # <a name="contact-support-for-turkmenistan"></a>對土庫曼斯坦的支援聯繫
 

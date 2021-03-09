@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1caf3322a958ed13cab20cb866dd33d9199e96f1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ca55bc619c22f344cd945c9cd0089dbb1317e932
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648908"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542857"
 ---
 # <a name="payment-information-for-oman"></a>阿曼的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48648908"
 
 請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** Citibank，倫敦  
 **SWIFT 程式碼：** CITIGB2L  

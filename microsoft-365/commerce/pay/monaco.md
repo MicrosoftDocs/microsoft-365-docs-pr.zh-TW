@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b511892e93861d8a925cfacbdae858f0f57a1d69
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 007c21e9e6332503ee5465607d541b911cb296a2
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649172"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543109"
 ---
 # <a name="payment-information-for-monaco"></a>摩納哥的付款資訊
 
@@ -26,7 +25,7 @@ ms.locfileid: "48649172"
 
 請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。
 
-## <a name="electronic-funds-transfer"></a>電子基金轉移
+## <a name="electronic-funds-transfer"></a>電匯
 
 **銀行：** Citibank，倫敦  
 **SWIFT Code/BIC：** CITIGB2L  
