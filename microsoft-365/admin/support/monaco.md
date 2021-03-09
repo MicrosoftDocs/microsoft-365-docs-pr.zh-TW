@@ -9,35 +9,34 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 878f6f50996d90b01b0dee30989871e73df18583
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6448b6f76ea2883dc859f27083f6d192ac5cbbd7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641024"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545725"
 ---
-# <a name="contact-support-for-monaco"></a><span data-ttu-id="5ac71-103">取得摩納哥的支援</span><span class="sxs-lookup"><span data-stu-id="5ac71-103">Contact support for Monaco</span></span>
+# <a name="contact-support-for-monaco"></a><span data-ttu-id="fd18d-103">取得摩納哥的支援</span><span class="sxs-lookup"><span data-stu-id="fd18d-103">Contact support for Monaco</span></span>
 
-<span data-ttu-id="5ac71-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="5ac71-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="fd18d-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="fd18d-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="5ac71-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="5ac71-105">Phone number</span></span>
-<span data-ttu-id="5ac71-106">+ 33 1 57 32 42 97</span><span class="sxs-lookup"><span data-stu-id="5ac71-106">+33 1 57 32 42 97</span></span>
+## <a name="phone-number"></a><span data-ttu-id="fd18d-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="fd18d-105">Phone number</span></span>
+<span data-ttu-id="fd18d-106">+ 33 1 57 32 42 97</span><span class="sxs-lookup"><span data-stu-id="fd18d-106">+33 1 57 32 42 97</span></span>
 
-## <a name="hours"></a><span data-ttu-id="5ac71-107">小時</span><span class="sxs-lookup"><span data-stu-id="5ac71-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="5ac71-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="5ac71-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="fd18d-107">小時</span><span class="sxs-lookup"><span data-stu-id="fd18d-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="fd18d-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="fd18d-108">Billing Support:</span></span>
 
-<span data-ttu-id="5ac71-109">法文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="5ac71-109">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="fd18d-109">法文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="fd18d-109">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="5ac71-110">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="5ac71-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="fd18d-110">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="fd18d-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="5ac71-111">技術支援：</span><span class="sxs-lookup"><span data-stu-id="5ac71-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="fd18d-111">技術支援：</span><span class="sxs-lookup"><span data-stu-id="fd18d-111">Technical Support:</span></span>
 
-<span data-ttu-id="5ac71-112">法文： Mon-Fri 8 AM-9 PM</span><span class="sxs-lookup"><span data-stu-id="5ac71-112">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="fd18d-112">法文： Mon-Fri 8 AM-9 PM</span><span class="sxs-lookup"><span data-stu-id="fd18d-112">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="5ac71-113">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="5ac71-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="fd18d-113">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="fd18d-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="5ac71-114">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="5ac71-114">International call charges apply</span></span>
+<span data-ttu-id="fd18d-114">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="fd18d-114">International call charges apply</span></span>

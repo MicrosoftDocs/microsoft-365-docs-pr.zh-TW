@@ -9,33 +9,32 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9c19c0243abfb6f0823cce3306e29e47444032fe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4c14ef71c429a19f479456c6a0c2c8120b7ded0a
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638876"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543565"
 ---
-# <a name="contact-support-for-united-kingdom"></a><span data-ttu-id="318f4-103">英國的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="318f4-103">Contact support for United Kingdom</span></span>
+# <a name="contact-support-for-united-kingdom"></a><span data-ttu-id="2e22c-103">英國的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="2e22c-103">Contact support for United Kingdom</span></span>
 
-<span data-ttu-id="318f4-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="318f4-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="2e22c-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="2e22c-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="318f4-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="318f4-105">Phone number</span></span>
-<span data-ttu-id="318f4-106">0800 032 6417</span><span class="sxs-lookup"><span data-stu-id="318f4-106">0800 032 6417</span></span>
+## <a name="phone-number"></a><span data-ttu-id="2e22c-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="2e22c-105">Phone number</span></span>
+<span data-ttu-id="2e22c-106">0800 032 6417</span><span class="sxs-lookup"><span data-stu-id="2e22c-106">0800 032 6417</span></span>
 
-## <a name="hours"></a><span data-ttu-id="318f4-107">小時</span><span class="sxs-lookup"><span data-stu-id="318f4-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="318f4-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="318f4-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="2e22c-107">小時</span><span class="sxs-lookup"><span data-stu-id="2e22c-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="2e22c-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="2e22c-108">Billing Support:</span></span>
 
-<span data-ttu-id="318f4-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="318f4-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="2e22c-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="2e22c-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="318f4-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="318f4-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="2e22c-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="2e22c-110">Technical Support:</span></span>
 
-<span data-ttu-id="318f4-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="318f4-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="2e22c-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="2e22c-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="318f4-112">替代電話號碼： 0203 450 6455</span><span class="sxs-lookup"><span data-stu-id="318f4-112">Alternative Phone Number: 0203 450 6455</span></span>
+<span data-ttu-id="2e22c-112">替代電話號碼： 0203 450 6455</span><span class="sxs-lookup"><span data-stu-id="2e22c-112">Alternative Phone Number: 0203 450 6455</span></span>
 
-<span data-ttu-id="318f4-113">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="318f4-113">Local call charges apply</span></span>
+<span data-ttu-id="2e22c-113">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="2e22c-113">Local call charges apply</span></span>
