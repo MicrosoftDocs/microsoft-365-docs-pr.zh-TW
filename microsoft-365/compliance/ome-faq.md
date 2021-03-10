@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a88d853905ed8462972c9f423254a49424974bb7
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 1bb5e93b08b74f5691c76e9a59bf9fa970e08f36
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066836"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597193"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -174,7 +174,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 
 ## <a name="can-i-remove-encryption-from-email"></a>我可以從電子郵件移除加密嗎？
 
-系統管理員可以設定郵件流程規則，以從外寄郵件中移除加密。 您無法使用傳入郵件的郵件流程規則來移除加密。
+系統管理員可以設定郵件流程規則，以移除加密。 您無法從其他組織所套用的郵件中，使用郵件流程規則來移除加密，除非郵件是 enrypted 使用僅限加密的保護。
 
 ## <a name="is-delegated-access-supported"></a>是否支援委派存取？
 

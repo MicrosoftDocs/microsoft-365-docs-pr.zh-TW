@@ -1,5 +1,5 @@
 ---
-title: 以 s 來賓的身分加入小組
+title: 以來賓身分加入團隊
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在 Microsoft 小組中以來賓的身分加入團隊。
-ms.openlocfilehash: 8ed7b8c92fa9fbe22c8a4f74b89916266a4af46f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 51f287361877cb0b427a38c48683c064bda99126
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422480"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603957"
 ---
 # <a name="join-a-team-as-a-guest"></a>以來賓身分加入團隊
 

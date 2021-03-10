@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 521b5fc2a8efee83b6a2931e7dbc1c713bd63cd2
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 4d29f4f3df3d65ad72a19f059763523d7f7cba31
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094804"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50596992"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>從 Microsoft Defender for Endpoint 遷移高級搜尋查詢
 
@@ -39,7 +39,7 @@ ms.locfileid: "50094804"
 
 - 適用於端點的 Microsoft Defender
 - 適用於 Office 365 的 Microsoft Defender
-- Microsoft Cloud App Security
+- Microsoft 雲端應用程式安全性
 - 適用於身分識別的 Microsoft Defender
 
 >[!NOTE]
@@ -63,6 +63,9 @@ ms.locfileid: "50094804"
 | [IdentityInfo](advanced-hunting-identityinfo-table.md) | 各來源的帳戶資訊，包括 Azure Active Directory |
 | [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Active Directory 和 Microsoft online services 上的驗證事件 |
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | 使用 Active Directory 物件的查詢，例如使用者、群組、裝置和網域 |
+
+>[!IMPORTANT]
+> 使用僅可在 Microsoft 365 Defender 中使用之架構表的查詢和自訂偵測只能在 Microsoft 365 Defender 中查看。
 
 ## <a name="map-devicealertevents-table"></a>Map DeviceAlertEvents 表格
 `AlertInfo`和 `AlertEvidence` 表格會取代 `DeviceAlertEvents` Microsoft Defender for Endpoint 架構中的表格。 除了裝置警示的資料之外，這兩個表格也包含有關身分識別、應用程式及電子郵件警示的資料。
@@ -114,7 +117,66 @@ AlertInfo
 | where FileName == "powershell.exe"
 ```
 
+## <a name="migrate-custom-detection-rules"></a>遷移自訂偵測規則
 
+當 microsoft Defender for Endpoint rules 在 Microsoft 365 Defender 上進行編輯時，如果結果查詢只會查看裝置資料表，便會繼續像之前一樣運作。 
+
+例如，自訂偵測規則所產生的警示，只要查詢裝置資料表，就會繼續傳遞到您的 SIEM 並產生電子郵件通知，視您在 Microsoft Defender for Endpoint 中的設定方式而定。 在 Defender for Endpoint 中的任何現有抑制規則也會繼續套用。
+
+一旦您編輯了某一套用於端點規則的 Defender 規則，讓它查詢身分識別和電子郵件表格（僅適用于 Microsoft 365 Defender），該規則就會自動移至 Microsoft 365 Defender。 
+
+由遷移的規則所產生的警示：
+
+-  (Microsoft Defender Security Center) 中不再顯示在端點入口網站的 Defender
+- 停止傳遞到您的 SIEM 或產生電子郵件通知。 若要解決此變更，請透過 Microsoft 365 Defender 設定通知以取得提醒。 您可以使用 [Microsoft 365 DEFENDER API](api-incident.md) 接收客戶偵測警示或相關事件的通知。
+- 不會由 Microsoft Defender for Endpoint 抑制規則抑制。 若要防止針對某些使用者、裝置或信箱產生警示，請修改對應的查詢以明確排除那些實體。
+
+如果您以這種方式編輯規則，則在套用此類變更之前，系統會提示您進行確認。
+
+由 Microsoft 365 Defender 入口網站中的自訂偵測規則所產生的新警示會顯示在提供下列資訊的警示頁面中：
+
+- 提醒標題和描述 
+- 受影響資產
+- 回應提醒所採取的動作
+- 觸發警示的查詢結果 
+- 自訂偵測規則的資訊 
+ 
+![新警示頁面的圖像](../../media/new-alert-page.png)
+
+## <a name="write-queries-without-devicealertevents"></a>寫入不含 DeviceAlertEvents 的查詢
+
+在 Microsoft 365 Defender 架構中， `AlertInfo` 提供了和 `AlertEvidence` 資料表，以容納不同來源的警示附帶的資訊集。 
+
+若要取得您用來從 `DeviceAlertEvents` Microsoft Defender For Endpoint 架構中的表格取得的相同警示資訊，請篩選 `AlertInfo` 該表， `ServiceSource` 然後使用資料表加入每個唯一的 ID `AlertEvidence` ，以提供詳細的事件及實體資訊。 
+
+請參閱下列範例查詢：
+
+```kusto
+AlertInfo
+| where Timestamp > ago(7d)
+| where ServiceSource == "Microsoft Defender for Endpoint"
+| join AlertEvidence on AlertId
+```
+
+此查詢所產生的資料行數多於 `DeviceAlertEvents` Microsoft Defender For Endpoint 架構中的資料行數。 若要保持可管理的結果，請使用 `project` 僅取得您感興趣的欄。 在調查偵測到 PowerShell 活動時，可能會對下列專案欄感興趣的範例：
+
+```kusto
+AlertInfo
+| where Timestamp > ago(7d)
+| where ServiceSource == "Microsoft Defender for Endpoint"
+    and AttackTechniques has "powershell"
+| join AlertEvidence on AlertId
+| project Timestamp, Title, AlertId, DeviceName, FileName, ProcessCommandLine 
+```
+
+如果您想要針對警示中的特定實體進行篩選，您可以在中指定實體類型 `EntityType` 和要篩選的值來執行此動作。 下列範例會尋找特定的 IP 位址：
+
+```kusto
+AlertInfo
+| where Title == "Insert_your_alert_title"
+| join AlertEvidence on AlertId 
+| where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
+```
 
 ## <a name="see-also"></a>另請參閱
 - [開啟 Microsoft 365 Defender](advanced-hunting-query-language.md)

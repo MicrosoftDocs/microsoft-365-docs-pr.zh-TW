@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: 深入瞭解 Microsoft 365 流量分析、活動報告和採用度量的使用者。
-ms.openlocfilehash: b4834d96b2f762d77f0d27309cf8c71a782b0dcd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7b8d15a88568c9af8b11a157dad2ec5f76ace6d3
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402879"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603969"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Microsoft 365 使用方式報告中的作用中使用者
 
@@ -33,7 +33,7 @@ Microsoft [365 使用方式分析](usage-analytics.md) 的 microsoft 365 產品�
   
 |**產品**|**作用中使用者定義**|**附註**|
 |:-----|:-----|:-----|
-|Exchange Online  <br/> |已讀取或傳送電子郵件的任何使用者。  <br/> |未顯示任何行事曆資訊，這會新增接下來的更新中。  <br/> |
+|Exchange Online  <br/> |任何執行下列動作的使用者：標示為已讀取、傳送訊息、建立約會、傳送會議邀請、接受 (為暫定) 或謝絕會議邀請、取消會議）。  <br/> |未顯示任何行事曆資訊，這會新增接下來的更新中。  <br/> |
 |SharePoint Online  <br/> |透過在任何網站上建立、修改、檢視、刪除、內外部共用或同步處理至用戶端以與檔案互動，或是檢視任何網站頁面的任何使用者。  <br/> |Microsoft 365 使用方式分析範本應用程式中的 SharePoint 線上作用中使用者度量，只會反映對 SharePoint 小組網站或群組網站進行檔案活動的使用者。 範本應用程式會更新，將定義同步處理為與系統管理中心的使用方式報告上的定義相同。  <br/> |
 |商務用 OneDrive  <br/> |透過建立、修改、檢視、刪除、內外部共用或同步處理至用戶端以與檔案互動的任何使用者。  <br/> ||
 |Yammer  <br/> |已在 Yammer 上讀取、張貼或喜歡訊息的任何使用者。  <br/> ||

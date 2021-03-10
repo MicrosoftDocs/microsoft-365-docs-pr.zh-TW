@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: 使用 Microsoft 365 系統管理中心或 Windows PowerShell 刪除預約行事曆。
-ms.openlocfilehash: 1f8df15eafac7867f7ae852e344e1c5730362598
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454202"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604017"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>在預訂中刪除預約行事曆
 
@@ -87,7 +87,7 @@ ms.locfileid: "50454202"
 6. 若要確認是否已刪除行事曆，請輸入下列命令：
 
    ```powershell
-    Get-EXOMailbox -RecipientTypeDetails Scheduling
+    Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
    已刪除的行事曆不會出現在輸出中。

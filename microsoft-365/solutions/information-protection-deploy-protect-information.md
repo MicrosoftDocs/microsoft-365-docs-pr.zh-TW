@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 部署 Microsoft 365 安全性和合規性功能，並保護您的個人資訊。
-ms.openlocfilehash: f17568c5a19446644cfb7ee64aac3e0f9eae5793
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: a5bba79f8ab382707b6fd5e448003a0271d690c6
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988479"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597235"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保護受資料隱私權法規制約的資訊
 
@@ -45,11 +45,11 @@ ms.locfileid: "48988479"
 
 以下是可能與資訊保護控制相關之資料隱私權法規的範例清單：
 
-- GDPR 第5篇 (1) # B2 f) # A4
-- GDPR 文章 (32) # B2 1) # B4 a) 
+- GDPR 第5篇 (1)  (f) ) 
+- GDPR 文章 (32)  (1)  () 
 - LGPD 文章46
-- HIPAA-高科技 (45 CFR 164.312 (e) # B3 1) # A5
-- HIPAA-高科技 (45 C.F.R。 164.312 (e) # B2 2) # B4 ii) # A6
+- HIPAA-高科技 (45 CFR 164.312 (e)  (1) ) 
+- HIPAA-高科技 (45 C.F.R。 164.312 (e)  (2)  (ii) ) 
 
 請參閱 [評估資料隱私權風險及識別敏感專案文章](information-protection-deploy-assess.md) ，以取得上述各項的詳細資訊。
 
@@ -67,14 +67,14 @@ ms.locfileid: "48988479"
 
 Microsoft [資訊保護解決方案](../compliance/information-protection.md) 包含許多 microsoft 365、microsoft Azure 和 microsoft Windows 的整合式功能。 在 Microsoft 365 中，資訊保護解決方案包括：
 
-- [使用客戶金鑰的服務加密](../compliance/customer-key-overview.md)
+- [客戶金鑰服務加密](../compliance/customer-key-overview.md)
 - [敏感資訊類型](../compliance/what-the-sensitive-information-types-look-for.md) (會在 [評估資料隱私權風險及識別敏感專案文章](information-protection-deploy-assess.md) 中所述) 
-- [敏感性標籤](../compliance/sensitivity-labels.md) 
+- [敏感度標籤](../compliance/sensitivity-labels.md) 
   - 服務/容器層級
   - 用戶端/內容層級
   - 在 SharePoint 和 OneDrive 中的靜止資料自動化
 - 資料外洩防護 (DLP)
-- [Microsoft 365 端點資料遺失防護 (預覽) ](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
+- [Microsoft 365 端點資料遺失防護](../compliance/endpoint-dlp-learn-about.md)
 - [Office 365 郵件加密新功能 (OME) ](../compliance/ome.md) 和 OME [高級郵件加密](../compliance/ome-advanced-message-encryption.md)
 
 此外，網站和文件庫層級保護是在任何保護架構中包含的重要機制。

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 實施 Microsoft 資訊保護 (MIP) 可協助您保護敏感性資訊，無論這些資料儲存在某處在或傳輸中。
-ms.openlocfilehash: bf464fd4ea0314a86a10696f8bda62e85a70ea49
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: b65f5ea2d4c24bc1c2ef2a34e25150446902d940
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099699"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572615"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>請參閱 Microsoft 365 中的 Microsoft 資訊保護。
 
@@ -41,8 +41,7 @@ MIP 功能隨附於 Microsoft 365 合規性中，並提供工具以 [了解您�
 > [!NOTE]
 > 如需在 Azure Purview 中分類資料和為資料加上標籤 (目前處於預覽) 的相關資訊，請參閱[在 Azure Purview 中自動為您的內容加上標籤](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
 > 
-> 如需此份最近版本的相關資訊，請參閱 [Microsoft 資訊保護和 Microsoft Azure Purview：相輔相成](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481)部落格文章。
-
+> 如需 Azure Purview 的發行公告，請參閱下列部落格文章：[Microsoft 資訊保護和 Microsoft Azure Purview：Better Together](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481) 和 [Azure Purview at Spring Ignite 2021](https://techcommunity.microsoft.com/t5/azure-purview/azure-purview-at-spring-ignite-2021/ba-p/2175919)。
 
 
 若要深入了解您的資料環境，並識別混合式環境中的重要資料，請使用下列功能：

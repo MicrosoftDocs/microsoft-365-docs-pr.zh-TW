@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何在 Microsoft 365 中建立封存和刪除原則，以自動將專案移至使用者的封存信箱。
-ms.openlocfilehash: 5e8675c1cc6e1df4c22e55648e1655798bae5e5b
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: cfe14b0821230831517e78ca6a56175a94d81eec
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624775"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597141"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>設定組織中的信箱封存和刪除原則
 
@@ -34,7 +34,7 @@ ms.locfileid: "49624775"
   
 本文中的步驟會針對名為高山房屋的虛擬組織，設定封存和保留原則。 設定此原則包含下列工作：
   
-- 為組織中的每位使用者啟用封存信箱。 這可讓使用者新增信箱儲存空間，並必須讓保留原則將專案移至封存信箱。 它也可讓使用者將專案移至封存信箱，以儲存封存資訊。
+- 為組織中的每位使用者啟用封存信箱。 這為使用者提供額外的信箱儲存空間，而且必須讓保留原則能夠將專案移至封存信箱。 它也可讓使用者將專案移至封存信箱，以儲存封存資訊。
 
 - 建立三個執行下列動作的自訂保留標記：
 
@@ -276,7 +276,7 @@ ms.locfileid: "49624775"
 
 4. 您可以在步驟2中重新執行命令，以驗證指派給預設信箱計畫的保留原則已變更。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>詳細資訊
 
 - 保留存留期的計算方式？ 信箱專案的保留天數會從傳遞日期或專案建立的日期開始計算，例如未傳送但由使用者建立的草稿郵件。 當受管理的資料夾助理員處理信箱中的項目時，它會針對其保留標記具有 [刪除並允許復原] 或 [永久刪除] 保留動作的所有項目，加上開始日期和到期日的戳記。 具有封存標籤的專案會以移動日期標記。 
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: IT 系統管理員的資訊，可管理 Office 應用程式中桌面、行動裝置及網路的靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e0fc96c1bb7b077df50f4f1c3c52ffa0dd49bef
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 1aa710939a805453a73db38eb93e4ceb90bc25d7
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461858"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597163"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -126,7 +126,7 @@ Office 內建的標籤用戶端會從下列系統管理中心下載敏感度標�
 
 當您停用或移除此 Office 增益集時，Azure 資訊保護用戶端仍會保持安裝，這樣您就可以繼續在 Office app 以外的標籤上進行標記。 例如，使用檔案瀏覽器或 PowerShell。
 
-如需 Azure 資訊保護用戶端和 Office 內建標籤用戶端支援哪些功能的相關資訊，請參閱選擇從 Azure 資訊保護檔 [使用 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) 。
+如需 Azure 資訊保護用戶端和 Office 內建標籤用戶端支援哪些功能的相關資訊，請參閱從 Azure 資訊保護檔中 [選擇您的 Windows 標籤解決方案](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) 。
 
 ## <a name="office-file-types-supported"></a>支援的 Office 檔案類型
 

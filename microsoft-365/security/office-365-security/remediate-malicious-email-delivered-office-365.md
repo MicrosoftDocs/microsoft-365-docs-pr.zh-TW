@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c5c94ce3994424a6d4b6f4a4ac587f5cc5e33ca
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0c52b80ffe30da259672e5862d0fa73a8445aa59
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454694"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604039"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修復 Office 365 中傳遞的惡意電子郵件
 
@@ -136,5 +136,7 @@ ms.locfileid: "50454694"
   選取動作記錄檔中的任何專案，以顯示修正詳細資料。 如果詳細資料說「成功」或「在信箱中找不到」，表示該專案已經從信箱中移除。 有時候，修復期間發生系統性錯誤。 在這種情況下，重試修正是一個不錯的做法。
 
   在修正大量批次的情況下，您也可以透過郵件提交將郵件傳送給修正，以及透過動作記錄檔修正的郵件。 匯出限制已增加至100k 記錄。
+
+安全小組最多可花50並行手動 remediations;不過，自動調查和回應動作不會設定任何限制。
 
   修正是一種強大的工具，可減輕威脅，並處理可疑的電子郵件。 這有助於維護組織的安全。

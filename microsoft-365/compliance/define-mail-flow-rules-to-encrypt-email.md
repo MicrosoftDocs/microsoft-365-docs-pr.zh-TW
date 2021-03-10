@@ -16,16 +16,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以使用 Office 365 郵件加密，瞭解如何建立郵件流程規則 (傳輸規則) 以加密及解密郵件。
-ms.openlocfilehash: 28486f601a79e294550bbceb48ad57069024fd5a
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 8060309f350b50c2aadc9a703e7a57a4caf8808c
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408603"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597225"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>定義郵件流程規則以加密電子郵件
 
-以全域管理員的身分，您可以建立郵件流程規則 (也稱為傳輸規則) ，以協助保護您傳送和接收的電子郵件訊息。 您可以設定規則來加密任何外寄電子郵件訊息，並移除來自組織內部的加密郵件的加密，或從組織傳送的加密郵件回復。 您可以使用 Exchange 系統管理中心 (EAC) 或 Exchange Online PowerShell 建立這些規則。 除了整體加密規則，您也可以選擇啟用或停用使用者的個別郵件加密選項。
+作為管理 Exchange Online 的系統管理員，您可以建立郵件流程規則 (也稱為傳輸規則) ，以協助保護您傳送和接收的電子郵件訊息。 您可以設定規則來加密任何外寄電子郵件訊息，並移除來自組織內部的加密郵件的加密，或從組織傳送的加密郵件回復。 您可以使用 Exchange 系統管理中心 (EAC) 或 Exchange Online PowerShell 建立這些規則。 除了整體加密規則，您也可以選擇啟用或停用使用者的個別郵件加密選項。
 
 您無法對來自組織外部寄件者的輸入郵件進行加密。
 
@@ -48,7 +48,7 @@ ms.locfileid: "48408603"
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [系統 **管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增**新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [ **名稱**] 中，輸入規則的名稱，例如 [加密 DrToniRamos@hotmail.com 的郵件]。
 
@@ -64,9 +64,9 @@ ms.locfileid: "48408603"
 
 7. 若要新增更多條件，請選擇 [ **更多選項** ]，然後選擇 [ **新增條件** ]，然後從清單中選取。
 
-   例如，若要在組織外部的收件者之外套用規則，請選取 [**新增條件**]，然後選取收件者在組織外**外部/內部的收件**者 \> **Outside the organization** \> ** **。
+   例如，若要在組織外部的收件者之外套用規則，請選取 [**新增條件**]，然後選取收件者在組織外 **外部/內部的收件** 者 \>  \> ****。
 
-8. 若要使用新的 OME 功能來啟用加密，請從 **執行下列**動作，選取 **[修改郵件安全性** ]，然後選擇 [套用 **Office 365 郵件加密和許可權保護**]。 從清單中選取 RMS 範本，然後選擇 [ **儲存**]，然後選擇 **[確定]**。
+8. 若要使用新的 OME 功能來啟用加密，請從 **執行下列** 動作，選取 **[修改郵件安全性** ]，然後選擇 [套用 **Office 365 郵件加密和許可權保護**]。 從清單中選取 RMS 範本，然後選擇 [ **儲存**]，然後選擇 **[確定]**。
   
   範本清單包括所有預設範本和選項，以及您已建立供 Office 365 使用的任何自訂範本。 如果清單是空的，請確定您已使用 [設定新的 office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)中所述的新功能，來設定 Office 365 郵件加密。 如需預設範本的相關資訊，請參閱設定 [及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。 如需有關 [ **不要轉寄** ] 選項的詳細資訊，請參閱 [請勿轉寄選項的電子郵件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 如需只供 **加密** 之選項的詳細資訊，請參閱 [僅限加密選項的電子郵件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
@@ -80,25 +80,27 @@ ms.locfileid: "48408603"
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [系統 **管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [郵件流程]**** \> [規則]****。
+4. 在 EAC 中，移至 [郵件流程] \> [規則]。
 
 5. 在郵件流程規則清單中，選取您要修改的規則，以使用新的 OME 功能，然後選擇 [ **編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
 
-6. 若要使用新的 OME 功能來啟用加密，請從 **執行下列**動作，選擇 [ **修改郵件安全性** ]，然後選擇 [套用 **Office 365 郵件加密和許可權保護**]。 從清單中選取 RMS 範本，然後選擇 [ **儲存** ]，然後選擇 **[確定]**。
+6. 若要使用新的 OME 功能來啟用加密，請從 **執行下列** 動作，選擇 [ **修改郵件安全性** ]，然後選擇 [套用 **Office 365 郵件加密和許可權保護**]。 從清單中選取 RMS 範本，然後選擇 [ **儲存** ]，然後選擇 **[確定]**。
 
    範本清單包括所有預設範本和選項，以及您已建立供 Office 365 使用的任何自訂範本。 如果清單是空的，請確定您已設定 Office 365 郵件加密的新功能，如 [設定以 Azure 資訊保護為基礎的新 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)所述。 如需預設範本的相關資訊，請參閱設定 [及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。 如需有關 [ **不要轉寄** ] 選項的詳細資訊，請參閱 [請勿轉寄選項的電子郵件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 如需只供 **加密** 之選項的詳細資訊，請參閱 [僅限加密選項的電子郵件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
    如果您想要指定另一個動作，您可以選擇 [ **新增動作** ]。
 
-7. 從 [ **執行下列** 動作] 清單中，移除指派給 **修改郵件安全性**的任何動作套用 \> **先前版本的 OME**。
+7. 從 [ **執行下列** 動作] 清單中，移除指派給 **修改郵件安全性** 的任何動作套用 \> **先前版本的 OME**。
 
 8. 選擇 **[儲存]**。
 
-## <a name="create-mail-flow-rules-to-remove-encryption-for-outgoing-email-messages-with-the-new-ome-capabilities"></a>建立郵件流程規則，以使用新的 OME 功能移除外寄電子郵件的加密
+## <a name="create-mail-flow-rules-to-remove-encryption-for-email-messages-with-the-new-ome-capabilities"></a>建立郵件流程規則，以使用新的 OME 功能來移除電子郵件的加密
 
 您可以使用 EAC 來定義郵件流程規則，以使用新的 OME 功能來觸發移除郵件加密。
 
 ### <a name="use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-the-new-ome-capabilities"></a>使用 EAC 來建立規則，以使用新的 OME 功能來移除電子郵件中的加密
+
+您可以移除組織可存取的加密。 這表示組織套用的任何加密，或任何郵件都有加密。
 
 1. 在網頁瀏覽器中，使用已被授與全域系統管理員許可權的公司或學校帳戶登 [入 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)。
 
@@ -106,15 +108,15 @@ ms.locfileid: "48408603"
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [系統 **管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增**新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [ **名稱**] 中，輸入規則的名稱，例如 [從外寄郵件移除加密]。
 
-6. 在 [套用 **此規則**條件] 中，選取應該從郵件中移除加密的條件。 新增 **寄件者位於** \> **組織內**。 現在，新增其他條件以設定特定的收件者，例如 **收件者位於** \> **組織外**。
+6. 在 [套用 **此規則** 條件] 中，選取應該從郵件中移除加密的條件。 新增 **收件者位於** \> **組織外部** 或 **組織內**。
 
-7. 在 **執行下列**動作中，選取 **[修改郵件安全性** \> **移除 Office 365 訊息加密和許可權保護**]。
+7. 在 **執行下列** 動作中，選取 **[修改郵件安全性** \> **移除 Office 365 訊息加密和許可權保護**]。
 
-8. 選取 **[儲存]**。
+8. 選取 [儲存 **]**。
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>建立沒有新功能的 Office 365 郵件加密的郵件流程規則
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: 4ec7690e5300b2ac08a98fbec3f4c253e970738c
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: a71ced2dd0aa71179c1b26cec571f3025af1ce05
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921167"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603849"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
@@ -85,6 +85,8 @@ ms.locfileid: "49921167"
 ## <a name="which-activity-reports-are-available-in-the-admin-center"></a>系統管理中心提供哪些活動報告
 
 視您的訂閱而定，可能有以下幾種報告可用。
+
+- [Microsoft 瀏覽器使用量](browser-usage-report.md) 
   
 - [電子郵件活動](email-activity-ww.md)
 
@@ -125,8 +127,6 @@ ms.locfileid: "49921167"
 - [美國政府的商務用 OneDrive 使用量](onedrive-for-business-usage.md)
 
 - [Microsoft 365 Apps 使用量](microsoft365-apps-usage-ww.md)
-
-- [適用於美國政府的 Microsoft 365 Apps](microsoft365-apps-usage.md)
   
 - [SharePoint 網站使用量](sharepoint-site-usage-ww.md)
 

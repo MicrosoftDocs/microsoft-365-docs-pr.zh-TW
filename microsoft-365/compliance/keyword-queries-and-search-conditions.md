@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解您可以使用 Microsoft 365 中的搜尋和 eDiscovery 工具進行搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: 9ad280678cac2d266b6e4c68ac66fb2e5afe0bf1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d5b558df15cde6be6f87663dcb999efc6ec66f7e
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423916"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604029"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>內容搜尋和 eDiscovery 的關鍵字查詢和搜尋條件
 
@@ -161,7 +161,7 @@ ms.locfileid: "50423916"
 
   然後，您可以在搜尋屬性中使用識別碼 `SensitiveType` ，傳回含有自訂敏感資料類型的檔; 例如， `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
   
-- 您無法使用敏感資訊類型和 `SensitiveType` 搜尋屬性來搜尋位於 Exchange Online 信箱中的機密資料。 不過，您可以使用資料遺失防護 (DLP) 原則，以保護傳輸中的敏感電子郵件資料。 如需詳細資訊，請參閱 [資料遺失防護原則](data-loss-prevention-policies.md) 及 [搜尋及尋找個人資料](search-for-and-find-personal-data.md)的概述。
+- 您無法使用敏感資訊類型和 `SensitiveType` 搜尋屬性來搜尋位於 Exchange Online 信箱中的機密資料。 這包括1:1 聊天訊息、1： N 群組聊天訊息，以及 Microsoft 小組中的小組管道交談，因為所有內容都儲存在信箱中。 不過，您可以使用資料遺失防護 (DLP) 原則，以保護傳輸中的敏感電子郵件資料。 如需詳細資訊，請參閱 [資料遺失防護原則](data-loss-prevention-policies.md) 及 [搜尋及尋找個人資料](search-for-and-find-personal-data.md)的概述。
   
 ## <a name="search-operators"></a>搜尋運算子
 
