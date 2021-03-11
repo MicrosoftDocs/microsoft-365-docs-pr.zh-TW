@@ -6,19 +6,21 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 49cf658c7d146f75d54d1f74f0034db64c3cc5dc
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509275"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572549"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>開始使用 Microsoft 受管理的電腦
 
-現在您已註冊服務，請按照下列步驟確認系統管理連絡人、調整條件式存取設定、將授權指派給使用者、啟用企業狀態漫遊、取得及設定裝置、準備使用者，以及將應用程式部署到裝置。
+現在您已準備好要註冊，請開啟 [Microsoft 端點管理員](https://endpoint.microsoft.com/) 並瀏覽至 **租用戶系統管理**。 在 **Microsoft 受管理的電腦** 下方的子節選取 **租用戶註冊**，然後遵循精靈使用 Microsoft 受管理的電腦註冊您的租用戶。
 
 > [!NOTE]
-> 這是建議遵守的順序，但是您可彈性運用。
+> 您必須以全域系統管理員的身份登入，才能完成註冊。 如需詳細資訊，請參閱 [存取系統管理員入口網站](access-admin-portal.md) 以取得詳細資料。
+
+註冊完成後，請遵循下列步驟以設定服務。 這是建議遵守的順序，但是您可彈性運用。 
 
 1. [在系統管理入口網站中新增和驗證系統管理員連絡人](add-admin-contacts.md)
 2. [註冊之後調整設定](conditional-access.md)

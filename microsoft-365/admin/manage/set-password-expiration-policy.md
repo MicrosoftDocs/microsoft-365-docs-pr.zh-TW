@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解如何在 Microsoft 365 系統管理中心設定組織的密碼到期原則。
-ms.openlocfilehash: 9470a73926327777055a321eb3a592ea3ddcf41e
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 4a7b544b6eded6f0cd6441ad7f6b02de790e5e44
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515037"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603981"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)。
 
 ::: moniker-end
 
@@ -43,7 +43,7 @@ ms.locfileid: "50515037"
 
 本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../admin-overview/admin-overview.md)
 
-您必須是 [全域系統管理員或密碼系統管理員](../add-users/about-admin-roles.md)才能執行這些步驟。
+您必須是[全域系統管理員](../add-users/about-admin-roles.md)才能執行這些步驟。
 
 如果您是使用者，則無權將密碼設為永不到期。 請要求貴公司或學校的技術支援人員，為您執行本文所述的步驟。
 
@@ -55,21 +55,19 @@ ms.locfileid: "50515037"
 > 根據預設，密碼會設定為在 90 天內過期。 最新研究強烈指出強制密碼變更的弊大於利。 它們會讓使用者選擇較弱的密碼、重複使用密碼或以容易被駭客猜測到的方式更新舊密碼。 如果將密碼設定為永不到期，建議您啟用[多重要素驗證](../security-and-compliance/set-up-multi-factor-authentication.md)。
 
 如果您要將使用者密碼設定在指定的時間量後到期，請遵循下列步驟進行。
-> [!IMPORTANT]
-> 只有[全域系統管理員](../add-users/about-admin-roles.md)才能執行這些步驟。
-  
-1. 在系統管理中心中，移至 [設定 **]** \> [組織設定 **]**。
+
+1. 在系統管理中心中，移至 **[設定]** \> **[組織設定]**。
 
 2. 移至<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">安全性與隱私權</a>頁面。
  如果您不是全域系統管理員，就看不到 [安全性和隱私權] 選項。
   
-3. 選取 [密碼到期原則]。
+3. 選取 **[密碼到期原則]**。
   
-4. 如果您不希望使用者必須變更密碼，請取消選取 [將使用者密碼設定為在幾天後到期 **]** 旁的核取方塊。
+4. 如果您不希望使用者必須變更密碼，請取消選取 **[將使用者密碼設定為在幾天後到期]** 旁的核取方塊。
   
 5. 輸入密碼應到期的頻率。 選擇介於 14 到 730 之間的天數。
   
-6. 在第二個方塊中，輸入使用者何時應收到其密碼到期的通知，然後選取 [儲存]。 Choose a number of days from 1 to 30.
+6. 在第二個方塊中，輸入使用者何時應收到其密碼到期的通知，然後選取 **[儲存]**。 選擇介於 10 到 30 之間的天數。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>關於密碼到期功能，您應知道的重要事項
   
