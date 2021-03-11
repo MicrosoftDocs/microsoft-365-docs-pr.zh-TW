@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 00fede86da826b940026b894a4ba2a9774ae4dc2
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: b2ea85190aeda74efc25a7088a01365132caad30
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771904"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712507"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>至身分識別和超過-一種架構師的視點
 
@@ -194,7 +194,7 @@ Azure AD 具有詳細的 [審計及報告](https://docs.microsoft.com/azure/acti
 - 它不會提供效能優點。 如果 [網路設計](https://aka.ms/office365networking) 不正確，它會使效能更糟。 讓裝置「關閉」至 Microsoft 網路，而不一定是您的資料。
 - 這不是 [GDPR 規範](https://www.microsoft.com/trust-center/privacy/gdpr-overview)的解決方案。 GDPR 不會專注于資料主權或儲存位置。 另外還有其他的規範框架。
 - 它不會解決管理委派 (請參閱下列) 或 [資訊障礙](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)。
-- 它與多租使用者不同，需要額外的 [使用者](https:/docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) 布建工作流程。
+- 它與多租使用者不同，需要額外的 [使用者](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md) 布建工作流程。
 - 它不會 [將您的租使用者](https://docs.microsoft.com/microsoft-365/enterprise/moving-data-to-new-datacenter-geos) (Azure AD) 移至其他地理位置。 
 
 ## <a name="delegation-of-administration"></a>委派管理

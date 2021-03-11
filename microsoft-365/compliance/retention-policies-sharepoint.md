@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留功能在 SharePoint 以及 OneDrive 中的運作方式。
-ms.openlocfilehash: 253b4f2c09468b45b8e6102f585a8e4b7bbe4e4e
-ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
+ms.openlocfilehash: ff4b4f517daccbce908411f3b5a62c0a1f11ba57
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "49992499"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597173"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>瞭解 SharePoint 和 OneDrive 的保留功能
 
@@ -66,7 +66,7 @@ SharePoint 中具有標準保留標籤的項目 (不宣告該項目為記錄) �
 
 若要在使用者嘗試變更或删除此內容時保留此內容，將檢查自套用保留設定後內容是否已變更。 如果這是套用原則後的第一次變更，檔案的內容會先被複製到 [文件保留庫]，然後允許使用者變更或刪除原始內容。 您可以將網站集合中的任何內容，複製到 [文件保留庫]，不需套用保留設定。
   
-計時器工作會定期清理 [文件保留庫]。 此工作會將 [文件保留庫] 中的所有內容和以內容設有保留設置的所有查詢進行比較。 比其設定的保留期間更舊的內容會從文件保留庫中刪除，以及從原始位置刪除 (如果仍然存在)。 此計時器工作會每隔七天執行一次，這表示要刪除內容最多可能需要七天的時間。
+計時器工作會定期清理 [文件保留庫]。 針對在文件保留庫中超過 30 天的內容，此工作會將設有保留設置的所有查詢內容進行比較。 比其設定的保留期間更舊的內容稍後會從文件保留庫中刪除，以及從原始位置刪除 (如果仍然存在)。 此計時器工作每 7 天執行一次，這表示與最少 30 天一起，最多可能需要 37 天才能從文件保留庫刪除內容。
   
 這項行為可使用在套用保留原則時已存在的內容。 除外，針對保留原則，任何在納入原則後的新增或建立在網站集合的新內容都將在刪除之後仍將保留。 不過，新內容在第一次編輯時並不會複製到文件保留庫，而只有在刪除時才會。 若要保留檔案的所有版本，您必須開啟[版本設定](#how-retention-works-with-document-versions)。
   

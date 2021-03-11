@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 9232ccd9fd64676cea0826b05ccd7e68fcf054b9
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: f5c5901da44424d949062c6a2e9eecf69c48be3f
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454602"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597183"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -256,7 +256,7 @@ ms.locfileid: "50454602"
 
 - PowerShell 模組，以探索內部部署檔案中的敏感性資訊，並對這些檔案套用或移除標籤和加密。
 
-如果您是 Azure 資訊保護的新使用者，或您是剛移轉標籤的現有 Azure 資訊保護客戶，請參閱來自 Azure 資訊保護文件的[選擇要用於 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)。
+如果您是 Azure 資訊保護的新使用者，或您是剛轉移標籤的現有 Azure 資訊保護客戶，請參閱來自 Azure 資訊保護文件的[選擇要用於 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>敏感性標籤和 Microsoft Cloud App Security
 

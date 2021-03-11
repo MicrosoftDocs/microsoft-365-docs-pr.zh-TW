@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: e8e743c0f3de0d7ac2eb8ebb9995596783d2d31a
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461826"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717650"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -62,6 +62,12 @@ ms.locfileid: "50461826"
 :::image type="content" source="../media/message-center.png" alt-text="螢幕擷取畫面：訊息中心首頁顯示收件匣和郵件":::
 
 若要深入瞭解這些新功能，請參閱 [在郵件中心管理郵件](manage/manage-messages.md)。
+
+### <a name="whats-new-features"></a>新功能
+
+我們已改進您如何在 Office 應用程式中查看使用者的「新增功能」功能。 您現在可以在 [內容] 的 [新增] 窗格中看到豐富的內容，讓使用者可以看到。 您也可以在決定讓使用者瞭解該功能之前深入瞭解該功能。 如需詳細資訊，請參閱 [管理哪些功能出現在新的 Office 功能](manage/show-hide-new-features.md)。
+
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="螢幕擷取畫面： Office 應用程式的新頁面，顯示 Power BI 的增強功能":::
 
 ## <a name="ignite-2020-august--september"></a>Ignite 2020 (月 & 年9月) 
 

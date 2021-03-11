@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 的安全性，從 EOP 到 Defender for Office 365 方案1和2，Standard 與 Strict 安全性設定等等。 瞭解您擁有的內容，以及如何保護您的屬性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbe95946ab7214efded8feca39578c364b948df0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: e1c6e768098cd59892c2572fb52497c873aef1a3
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287898"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50711937"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全性概述
 

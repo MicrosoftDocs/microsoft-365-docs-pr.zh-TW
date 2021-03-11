@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時的其他客戶體驗資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: b38ed865306eb676c8f57c1dcbb4541fae43c8df
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 8dcb8b8ab2ec5c3dea105380858d26cfd5537d9c
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603993"
+ms.locfileid: "50712279"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (advanced)  
 
@@ -84,7 +84,7 @@ ms.locfileid: "50603993"
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| 從 beinning 的階段4直到階段9完成，「電子檔探索」搜尋會失敗，或傳回0個結果，以供 SharePoint 線上、OneDrive 商務及已遷移的 Exchange Online 位置。 | 在遷移期間，客戶可以繼續在 [安全性 & 規範中心](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)（包括 [內容搜尋](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)）中建立案例、保留、搜尋和匯出。  不過，針對已遷移的 SharePoint 線上、OneDrive 商務和 Exchange Online 位置進行搜尋會傳回0個結果或產生錯誤。 如需修正，請參閱 _影響_ 欄。 | 在遷移期間，如果搜尋傳回零結果或發生錯誤，請在線上 SharePoint 執行下列動作： <ul><li>遵循 [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中的指示，直接從 SharePoint Online/OneDrive 取得商務網站下載網站。 此方法將需要 SharePoint 線上系統管理員許可權或網站的唯讀許可權。</li><li>若超出限制（ [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中所述），客戶可以遵循 [與電腦同步 SharePoint 及小組](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)檔案的指導方針，使用 OneDrive 進行商務同步處理用戶端。</li><li>如需詳細資訊，請參閱  [In-Place eDiscovery In Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| 從第4階段開始直到階段9完成，電子檔探索搜尋會失敗，或傳回 SharePoint 線上、OneDrive 商務及已遷移之 Exchange Online 位置的0個結果。 | 在遷移期間，客戶可以繼續在 [安全性 & 規範中心](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)（包括 [內容搜尋](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)）中建立案例、保留、搜尋和匯出。  不過，針對已遷移的 SharePoint 線上、OneDrive 商務和 Exchange Online 位置進行搜尋會傳回0個結果或產生錯誤。 如需修正，請參閱 _影響_ 欄。 | 在遷移期間，如果搜尋傳回零結果或發生錯誤，請在線上 SharePoint 執行下列動作： <ul><li>遵循 [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中的指示，直接從 SharePoint Online/OneDrive 取得商務網站下載網站。 此方法將需要 SharePoint 線上系統管理員許可權或網站的唯讀許可權。</li><li>若超出限制（ [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中所述），客戶可以遵循 [與電腦同步 SharePoint 及小組](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)檔案的指導方針，使用 OneDrive 進行商務同步處理用戶端。</li><li>如需詳細資訊，請參閱  [In-Place eDiscovery In Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 ||||
 
 ## <a name="post-migration"></a>移轉後

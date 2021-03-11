@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 了解什麼是 Microsoft 365 多地理位置、多地理位置的運作方式，以及哪些地理位置可用於儲存資料。
-ms.openlocfilehash: a8eba731fac16e56ef66ac0a905de521dfa7a6c8
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: ce8b752cc6a335249f9d8e03289fd16b04756ce9
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877228"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712339"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>規劃 Microsoft 365 多地理位置
 
@@ -34,7 +34,7 @@ ms.locfileid: "48877228"
 
 -   **地理位置** – 可用來裝載 Microsoft 365 租用戶中資料的地理位置。
 
--   **衛星位置** ：您在 Microsoft 365 租用戶中設定來裝載資料的其他地理位置。 多地理位置租用戶橫跨多個地理位置，例如，北美洲和歐洲。
+-   **衛星位置**：您在 Microsoft 365 租用戶中設定來裝載資料的其他地理位置。 多地理位置租用戶橫跨多個地理位置，例如，北美洲和歐洲。
 
 -   **慣用的資料位置 (PDL)** -個別使用者儲存 Exchange 和 OneDrive 資料的地理位置。 系統管理員可將此位置設定為已為租用戶設定的任何地理位置。 請注意，如果您變更已經擁有 OneDrive 網站的使用者的 PDL，他們的 OneDrive 資料將不會自動移動到新的地理位置。 如需詳細資訊，請參閱[將 OneDrive 文件庫移至不同的地理位置](move-onedrive-between-geo-locations.md)。 如果他們有 Exchange 信箱，則信箱會自動移至新的慣用資料位置。
 
@@ -65,7 +65,7 @@ ms.locfileid: "48877228"
 
 與測試使用者一起完成測試後，請選取一個試驗組 (可以是您的 IT 部門的人員)，成為第一批在新地理位置使用 OneDrive 和 Exchange 的人。 在第一批人員當中，選取還沒有 OneDrive 的使用者。 我們建議這個試驗組不要超過五個人，之後再透過批次推出方法來逐步擴展。
 
-每個使用者應具備 *慣用的資料位置* (PDL) 設定，以便 Microsoft 365 判斷佈建其 OneDrive 的地理位置。使用者慣用的資料位置必須與您所選的某個衛星位置或您的中心位置相符。當 PDL 不是強制性欄位時，我們建議為所有使用者設定 PDL。沒有 PDL 的使用者工作負載會佈建在中心位置。
+每個使用者應具備 *慣用的資料位置*(PDL) 設定，以便 Microsoft 365 判斷佈建其 OneDrive 的地理位置。使用者慣用的資料位置必須與您所選的某個衛星位置或您的中心位置相符。當 PDL 不是強制性欄位時，我們建議為所有使用者設定 PDL。沒有 PDL 的使用者工作負載會佈建在中心位置。
 
 建立使用者清單，並包含使用者主體名稱 (UPN) 與適當慣用資料位置的位置代碼。包含測試使用者與您起始的試驗群組來開始進行。您將需要此清單來設定程序。
 
@@ -80,3 +80,7 @@ ms.locfileid: "48877228"
 若要開始設定 Microsoft 365 多地理位置，請參閱[設定 Microsoft 365 多地理位置](multi-geo-tenant-configuration.md)。
 
 當您完成設定時，請記得視需要[移轉使用者的 OneDrive 文件庫](move-onedrive-between-geo-locations.md)，讓使用者在自己慣用的資料位置工作。
+
+## <a name="related-topics"></a>相關主題
+
+[Microsoft 365 多地理位置電子文件探索設定](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)

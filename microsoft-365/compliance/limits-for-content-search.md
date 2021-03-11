@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 深入瞭解 Microsoft 365 規範中心的內容搜尋功能限制，例如同時進行的搜尋數目上限。 這些搜尋限制也適用于與核心 eDiscovery 案例相關聯的搜尋。
-ms.openlocfilehash: 23751fd62b2d96400d8184faa0d8d74b06b68906
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 7212175dece6956ac825cef273b06603230736ee
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840490"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717604"
 ---
 # <a name="limits-for-content-search"></a>內容搜尋限制 
 在 Microsoft 365 規範中心的內容搜尋工具中，各項限制都適用。 這包括「 **內容搜尋** 」頁面上的搜尋執行，以及與 **核心 ediscovery** 頁面上的 eDiscovery 案例相關聯的搜尋。 這些限制可協助維護為組織提供的服務健康情況和品質。 在 Exchange Online 進行搜尋時，也有與電子郵件訊息的索引相關的限制。 您無法修改內容搜尋或電子郵件索引的限制，但您應該知道這些限制，這樣就能在規劃、執行及疑難排解內容搜尋時考慮這些限制。
@@ -35,6 +35,7 @@ ms.locfileid: "49840490"
 |:-----|:-----|
 |可在單一搜尋中搜尋的信箱或網站數目上限  <br/> |無限制 <sup>1</sup> <br/> |
 |可在組織中同時執行的最大搜尋數目。  <br/> |大約  <br/> |
+|可同時執行的組織範圍搜尋數目上限。 <br/> |3   <br/> |
 |單一使用者可以同時開始的搜尋數目上限。 當使用者嘗試使用安全性 & 規範中心 PowerShell 的 **Get-ComplianceSearch \| Start-ComplianceSearch** 命令來啟動多個搜尋時，最有可能會發生此限制。  <br/> |10   <br/> |
 |預覽內容搜尋結果時，在預覽頁面上顯示的每個使用者信箱的專案數上限。  <br/> |100  <br/> |
 |預覽搜尋結果時，在預覽頁面上顯示的所有使用者信箱中找到的專案數上限。 隨即顯示最新的專案。  <br/> |1,000  <br/> |
@@ -54,6 +55,19 @@ ms.locfileid: "49840490"
 > [!NOTE]
 > <sup>1</sup> 雖然您可以在單一搜尋中搜尋不限數量的信箱，但您只能使用 Microsoft 365 規範中心內的 EDiscovery 匯出工具，從最多100000個信箱下載匯出的搜尋結果。 若要從100000個以上的信箱下載搜尋結果，您必須使用安全性 & 規範中心 PowerShell。 如需詳細資訊和範例腳本，請參閱 [匯出超過100000個信箱的結果](export-search-results.md#exporting-results-from-more-than-100000-mailboxes)。 <br/><br/> <sup>2</sup> 搜尋商務位置的 SharePoint 和 OneDrive 時，所搜尋之網站 URLs 中的字元會根據此限制計算。 <br/><br/> <sup>3</sup> ：非片語查詢 (關鍵字值，但不使用雙引號) 我們使用特殊的前置詞索引。 這會告訴我們檔中的字詞，但不會出現在檔中。 若要執行片語查詢 (關鍵字值使用雙引號) ，我們需要比較檔內的字詞中的文字的位置。 這表示我們無法使用關鍵字查詢的首碼索引。 在此情況下，我們會以內部首碼擴充的任何可能的字來內部展開查詢;例如，  `"time*"` 可以展開 to  `"time OR timer OR times OR timex OR timeboxed OR …"` 。 10000是 word 可以擴充的變種數目上限，而非符合查詢的檔數目上限。 非片語字詞沒有上限。 
   
+## <a name="search-times"></a>搜尋時間
+Microsoft 會收集所有組織執行之搜尋的效能資訊。 雖然搜尋查詢的複雜性可能會影響搜尋時間，會影響搜尋所需時間的最大因素是搜尋的信箱數量。 雖然 Microsoft 不會提供搜尋時間的服務等級協定，但下表會根據搜尋中包含的信箱數目，列出收集搜尋的平均搜尋時間。
+
+|信箱數目|平均搜尋時間|
+|:-----|:-----|
+|100|30 秒|
+|1,000|45 秒|
+|10,000|4 分鐘|
+|25,000|10 分鐘|
+|50,000|20 分鐘|
+|100,000|25 分鐘|
+|||
+
 ## <a name="export-limits"></a>匯出限制
 下表列出匯出內容搜尋結果時的限制。 當您從核心 eDiscovery 案例中匯出內容時，這些限制也適用。
 
@@ -85,7 +99,7 @@ ms.locfileid: "49840490"
 |Body 中的唯一標記上限  <br/> |1 百萬  <br/> |如先前所述，token 是從內容提取文字、移除標點符號和空格，然後將其分割成) 儲存在索引中的 (稱為 token 的字。 例如，片語  `"cat, mouse, bird, dog, dog"` 包含5個權杖。 但只有4個是唯一的標記。 每封電子郵件都有1000000個唯一的標記限制，這有助於防止索引因過大而無法使用隨機標記。  <br/> |
 |||
   
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>詳細資訊
 
 有其他與搜尋內容的不同層面相關的限制，例如內容索引。 如需這些限制的相關資訊，請參閱下列主題：
 

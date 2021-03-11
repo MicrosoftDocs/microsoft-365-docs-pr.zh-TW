@@ -1,7 +1,7 @@
 ---
-title: 進位搜尋架構中的 CloudAppEvents 資料表
-description: 瞭解來自雲端應用程式與服務的事件，包括進位搜尋架構的 CloudAppEvents 資料表
-keywords: 進層搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、資料表、資料行、資料類型、描述、CloudAppEvents、雲端 App 安全性、MCAS
+title: Advanced 搜尋架構中的 CloudAppEvents 表格
+description: 深入瞭解高級搜尋架構之 CloudAppEvents 資料表中 cloud apps and service 的事件
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，table，欄，資料類型，描述，CloudAppEvents，Cloud App Security，MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 021a8210bbe5886021e980b33ade0b9e2ded7b5b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a8ba1f94bc704a5fe99d54b77aa6570c5e43d3f7
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928447"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712483"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -35,11 +35,13 @@ ms.locfileid: "49928447"
 適用於：
 - Microsoft 365 Defender
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-目前提供預覽版，進位搜尋架構中的表格包含各種雲端應用程式和服務中活動的資訊，特別是 `CloudAppEvents` Microsoft Teams 和 Exchange Online。 [](advanced-hunting-overview.md) 使用這個參考來建立從此表格取回之資訊的查詢。
 
-此表格將展開以納入 Microsoft Cloud App 安全性所監視的更多活動。 最後，此表格會包含目前儲存在 [AppFileEvents](advanced-hunting-appfileevents-table.md) 資料表中的檔案活動。 當更多資料移至此表格時，Microsoft 會提供額外的指引。
+[！附注] `CloudAppEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含 Microsoft cloud App Security、特別是 Dropbox、Exchange Online、OneDrive、Microsoft 團隊及 SharePoint 所涵蓋的各種雲端應用程式和服務中的活動相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+
+>[!IMPORTANT]
+>此表格包含可用於表格的資訊 `AppFileEvents` 。 從2021年3月7日起，使用者在此日期以外的雲端服務中搜尋與檔案相關的活動，應改為使用 `CloudAppEvents` 表格。 <br><br>請務必搜尋查詢和自訂偵測規則，該規則仍會使用 `AppFileEvents` 該表，並進行編輯，以使用 `CloudAppEvents` 該表。 若要瞭解轉換受影響查詢的相關指引，請參閱 [使用 Microsoft 365 Defender advanced 搜尋跨 cloud app Activity 搜尋](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
+
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -50,24 +52,25 @@ ms.locfileid: "49928447"
 | `Application` | string | 執行錄製動作的應用程式 |
 | `ApplicationId` | string | 應用程式的唯一識別碼 |
 | `AccountObjectId` | string | Azure Active Directory 中帳戶的唯一識別碼 |
-| `AccountDisplayName` | string | 顯示在通訊錄中的帳戶使用者名稱。 通常是指定或名字、中間名、姓氏或名字的組合。 |
+| `AccountDisplayName` | string | 顯示在通訊錄中之帳戶使用者的名稱。 通常是指定的名稱或名字、中間初始名稱或姓氏的組合。 |
 | `IsAdminOperation` | string | 指出活動是否由系統管理員執行 |
-| `DeviceType` | string | 根據用途和功能所根據的裝置類型，例如「網路裝置」、「工作站」、「伺服器」、「行動裝置」、「遊戲主機」或「印表機」 | 
-| `OSPlatform` | string | 在裝置上作業系統平臺。 此欄會指出特定的作業系統，包括同一家庭內的變化，例如 Windows 10 和 Windows 7。 |
-| `IPAddress` | string | 指派給端點的 IP 位址，用於相關網路通訊期間 |
-| `IsAnonymousProxy` | string | 指出 IP 位址是否屬於已知的匿名 Proxy |
-| `CountryCode` | string | 兩個字母的代碼，指出用戶端 IP 位址已異地定位的國家/地區 |
-| `City` | string | 用戶端 IP 位址地理位置的城市 |
-| `Isp` | string | 與 IP 位址 (ISP) 網際網路服務提供者 |
-| `UserAgent` | string | 網頁瀏覽器或其他用戶端應用程式的使用者代理程式資訊 |
+| `DeviceType` | string | 根據用途及功能的裝置類型，例如「網路裝置」、「工作站」、「伺服器」、「Mobile」、「遊戲主控台」或「印表機」。 | 
+| `OSPlatform` | string | 裝置上所執行作業系統的平臺。 此欄會指出特定的作業系統，包括相同系列內的變化，例如 Windows 10 和 Windows 7。 |
+| `IPAddress` | string | 指派給端點的 IP 位址，並在相關的網路通訊期間使用 |
+| `IsAnonymousProxy` | string | 指出 IP 位址是否屬於已知的匿名 proxy |
+| `CountryCode` | string | 兩個字母的代碼，指出用戶端 IP 位址為 geolocated 的國家/地區 |
+| `City` | string | 用戶端 IP 位址為 geolocated 的城市 |
+| `Isp` | string | 網際網路服務提供者 (與 IP 位址相關聯的 ISP)  |
+| `UserAgent` | string | 來自網頁瀏覽器或其他用戶端應用程式的使用者代理程式資訊 |
 | `ActivityType` | string | 觸發事件的活動類型 |
-| `ActivityObjects` | string | 包含錄製活動的物件清單，例如檔案或資料夾 |
-| `ObjectName` | string | 錄製動作所使用之物件的名稱 |
-| `ObjectType` | string | 所記錄動作所針對的物件類型，例如檔案或資料夾 |
-| `ObjectId` | string | 所記錄動作所使用之物件的唯一識別碼 |
+| `ActivityObjects` | string | 錄製的活動中所涉及的物件（例如檔案或資料夾）的清單 |
+| `ObjectName` | string | 已錄製動作套用至之物件的名稱 |
+| `ObjectType` | string | 錄製的動作所套用的物件類型，例如檔案或資料夾 |
+| `ObjectId` | string | 套用錄製動作之物件的唯一識別碼 |
 | `ReportId` | string | 事件的唯一識別碼 |
-| `RawEventData` | string | 從 JSON 格式的來源應用程式或服務原始事件資訊 |
-| `AdditionalFields` | string | 實體或事件的其他相關資訊 |
+| `RawEventData` | string | 來源應用程式或服務中 JSON 格式的原始事件資訊 |
+| `AdditionalFields` | string | 實體或事件的其他資訊 |
+
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

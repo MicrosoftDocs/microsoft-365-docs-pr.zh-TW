@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8406d1f9e3d56555b1699d191933c6f9735c9574
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 9eb2f195959409ad25b9a401a44425cc4af7f97e
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145484"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712495"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -37,8 +37,9 @@ ms.locfileid: "50145484"
 
 [！附注] `AppFileEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含雲端 app 和服務中由 Microsoft cloud App Security 監控之檔案相關活動的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
->[!TIP]
-> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+>[!WARNING]
+>此表格即將停用。 從2021年3月7日直到 `AppFileEvents` 資料表不再記錄記錄。 使用者在所說的日期以外的雲端服務中搜尋與檔案相關的活動，應改為使用 [CloudAppEvents](advanced-hunting-cloudappevents-table.md) 表格。 <br><br>請務必搜尋查詢和自訂偵測規則，該規則仍會使用 `AppFileEvents` 該表，並進行編輯，以使用 `CloudAppEvents` 該表。 若要瞭解轉換受影響查詢的相關指引，請參閱 [使用 Microsoft 365 Defender advanced 搜尋跨 cloud app Activity 搜尋](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
+
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -70,6 +71,10 @@ ms.locfileid: "50145484"
 | `Isp` | string | 網際網路服務提供者 (與端點 IP 位址相關聯的 ISP)  |
 | `ReportId` | long | 事件的唯一識別碼 |
 | `AdditionalFields` | string | 實體或事件的其他資訊 |
+
+>[!TIP]
+> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的內建架構參照。
+
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/5/2017
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,16 +18,16 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: 當您不再需要保留 Microsoft 365 非使用中信箱的內容時，您可以永久刪除非使用中的信箱。
-ms.openlocfilehash: 0e5a56fce7f41b0c3b30e56aefbaae0593470756
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d5acccbf37ee5b6958d282de14edafc0b9b00182
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423210"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717581"
 ---
 # <a name="delete-an-inactive-mailbox"></a>刪除非作用中的信箱
 
-在前任員工離開您的組織之後，可透過非使用中信箱來保留其電子郵件。 當您不再需要保留非使用中信箱的內容時，您可以移除 [保留]，以永久刪除非使用中的信箱。 此外，可能會在非使用中的信箱上放置多個保留。 例如，非使用中的信箱可能處於訴訟暫止狀態，且有一或多個 In-Place 保留。 此外，Office 365 或 Microsoft 365) 中的安全性與合規性中心中所建立的保留原則 (，都可能會套用到非使用中的信箱。 您必須移除非使用中信箱的所有保留和保留原則，才能加以刪除。 移除保留和保留原則之後，非作用中的信箱會標示為待刪除，並且會在處理完後永久刪除。
+非使用中的信箱可用於保留您的組織之後，保留離職員工的電子郵件。 當您不再需要保留非使用中信箱的內容時，您可以移除 [保留]，以永久刪除非使用中的信箱。 此外，可能會在非使用中的信箱上放置多個保留。 例如，非使用中的信箱可能處於訴訟暫止狀態，且有一或多個 In-Place 保留。 此外，Office 365 或 Microsoft 365) 中的安全性與合規性中心中所建立的保留原則 (，都可能會套用到非使用中的信箱。 您必須移除非使用中信箱的所有保留和保留原則，才能加以刪除。 移除保留和保留原則之後，非作用中的信箱會標示為待刪除，並且會在處理完後永久刪除。
   
 > [!IMPORTANT]
 > 當我們繼續以保留信箱內容的不同方式投資時，我們宣佈在 Exchange 系統管理中心中封存 In-Place 的退休。 這表示您應該使用訴訟保留和保留原則來建立非使用中的信箱。 從2020年7月1日起，您將無法在 Exchange Online 中建立新的 In-Place 保留。 不過，您仍然可以變更置於非使用中信箱的 In-Place 保留期間。 不過，從2020年10月1日開始，您將無法變更保留期間。 您只能移除 In-Place 保留才能刪除非使用中的信箱。 在移除保留之前，仍會保留位於 In-Place 暫止的現有非作用中信箱。 如需停用 In-Place 保留的詳細資訊，請參閱 [舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md)。
@@ -128,12 +128,12 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
 
  有兩種方式可以移除非使用中信箱的 In-Place 保留： 
   
-- **刪除 In-Place 保留物件** 如果您想要永久刪除的非作用中信箱是唯一的 In-Place 保留來源信箱，您只需刪除 In-Place 保留物件即可。 
+- **刪除 In-Place 保留物件**。 如果您想要永久刪除的非作用中信箱是唯一的 In-Place 保留來源信箱，您只需刪除 In-Place 保留物件即可。 
 
     > [!NOTE]
     > 您必須先停用保留，才能刪除 In-Place 保留物件。 如果您嘗試刪除已啟用保留的 In-Place 保留物件，您會收到錯誤訊息。 
   
-- **移除非使用中的信箱做為 In-Place 保留的來源信箱** 如果您想要保留其他來源信箱以供 In-Place 保留，您可以從來源信箱清單中移除非使用中的信箱，並保留 In-Place 保留物件。
+- **移除非使用中的信箱做為 In-Place 保留的來源信箱**。 如果您想要保留其他來源信箱以供 In-Place 保留，您可以從來源信箱清單中移除非使用中的信箱，並保留 In-Place 保留物件。
 
 #### <a name="delete-an-in-place-hold"></a>刪除 In-Place 暫止
 
@@ -204,7 +204,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - **非使用中的信箱是虛刪除信箱的類型。** 在 Exchange Online 中，虛刪除的信箱是已刪除但可在特定保留期間內復原的信箱。 Exchange Online 中的虛刪除信箱保留期間是30天。 這表示信箱可在虛刪除的30天內復原。 30天后，虛刪除的信箱會標示為永久刪除，且無法復原。
 

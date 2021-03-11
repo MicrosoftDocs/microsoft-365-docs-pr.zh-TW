@@ -3,7 +3,7 @@ title: Microsoft 365 已告知網路路由
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/22/2020
+ms.date: 03/10/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 已告知網路路由
-ms.openlocfilehash: 367f83684a4a200e3ddd630e1412c756d7093da1
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 5275f8ea55afaf621555b440e7fae4a6d11cad91
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749548"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717587"
 ---
 # <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365 已 (預覽告知網路路由) 
 
@@ -59,7 +59,7 @@ Microsoft 正與不同的合作夥伴合作，以啟用與 Microsoft 365 的網�
 
 ### <a name="application-usage"></a>應用程式使用
 
-應用程式經驗資料 (反映透過網路品質度量) 會透過 Microsoft Outlook 在執行 Windows、小組、SharePoint 及 OneDrive 的裝置上的使用方式收集。 評估網路電路的健康情況時，並不會考慮其他應用程式流量。
+透過透過特定 Microsoft 用戶端應用程式的使用來收集透過網路品質計量) 所反映的應用程式經驗資料 (。 Exchange 度量會反映 Outlook 用戶端的使用方式，以及一些 Outlook Web App 的使用方式。 SharePoint 和 OneDrive 度量會反映租使用者特定 SharePoint 端點的使用方式，不論用戶端應用程式為何。 小組度量會反映小組桌面用戶端的使用狀況。 評估網路電路的健康情況時，並不會考慮其他應用程式流量。
 
 ## <a name="enabling-informed-network-routing"></a>啟用已通知的網路路由
 
@@ -138,7 +138,7 @@ Microsoft 正與不同的合作夥伴合作，以啟用與 Microsoft 365 的網�
 
 3. 在 **此辦公室位置的 [出局 IP 位址範圍** ] 區段中，新增所有可提供網際網路連線到此 office 位置的網路電路。 確定每個電路都與代表網路流量的唯一公用 IP 位址子網相關聯。
 
-4. 選取 **[儲存]** 以儲存變更。
+4. 選取 [儲存 **]** 以儲存變更。
 
 ## <a name="disabling-network-informed-routing"></a>停用網路通知路由
 

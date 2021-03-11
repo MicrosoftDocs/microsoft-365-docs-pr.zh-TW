@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的準備工作。
-ms.openlocfilehash: 94b3758bbf24133c0d01a0db9e17f9451cf2d8d2
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: e922cf3b5599e81905499db60000c5b5f34b69ad
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603861"
+ms.locfileid: "50712267"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的準備工作
 
@@ -45,10 +45,10 @@ ms.locfileid: "50603861"
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
 | 準備在遷移後，通知使用者如何重新開機和登出用戶端。 | Office 用戶端授權會從 Microsoft Cloud Deutschland 轉換為遷移中的 Office 365 服務。 用戶端登出及簽入 Office 用戶端後，用戶端會挑選新的有效授權。 | 使用者的 Office 產品需要重新整理 Office 365 服務的授權。 如果未重新整理授權，Office 產品可能會遇到授權驗證錯誤。 |
-| 確定 Office 365 服務的網路連線能力 [URLs 及 IP 位址](https://aka.ms/o365urls)。 | 由客戶所主控的所有用戶端和服務，用來存取 Office 365 服務，必須能夠存取 Office 365 泛型服務端點。 <br>在此情況下，您或您的共同作業合作夥伴會有適當的防火牆規則，可防止存取 Office 365 服務中所列的 URLs 和 IP 位址 [URLs 和 ip 位址](https://aka.ms/o365urls) 必須變更防火牆規則，以允許存取 Office 365 全域服務 enpoints| 如果不是在階段4之前完成，則可能會發生服務或用戶端軟體失敗  |
+| 確定 Office 365 服務的網路連線能力 [URLs 及 IP 位址](https://aka.ms/o365urls)。 | 由客戶所主控的所有用戶端和服務，用來存取 Office 365 服務，必須能夠存取 Office 365 泛型服務端點。 <br>在此情況下，您或您的共同作業夥伴有適當的防火牆規則，可防止存取 Office 365 服務中所列的 URLs 和 IP 位址 [URLs 和 ip 位址](https://aka.ms/o365urls) 必須變更防火牆規則，以允許存取 Office 365 全域服務端點| 如果不是在階段4之前完成，則可能會發生服務或用戶端軟體失敗  |
 | 取消所有的試用訂閱。 | 不會遷移試用訂閱，而且會封鎖付費訂閱的轉接。 | 若使用者在取消後存取，試用版服務會到期且無法運作。 |
 | 分析 Microsoft Cloud Deutschland 與 Office 365 服務之間授權功能的差異。 | Office 365 服務包含目前 Microsoft Cloud Deutschland 中無法使用的其他功能和服務。 在訂閱轉移期間，使用者將可以使用新功能。 | <ul><li> 分析 Microsoft Cloud Deutschland 和 Office 365 服務的授權所提供的不同功能。 開始使用 [Office 365 平臺服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> 判斷是否應該開始停用 Office 365 服務的任何新功能，以限制使用者或使用者變更管理的影響，並視需要變更使用者授權指派。 </li><li>準備使用者及服務台人員，以取得 Office 365 服務提供的新服務和功能。 |
-| 建立整個組織 [保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention) ，以防止在遷移期間因無意中刪除內容。  |<ul><li>為了確保使用者不會在遷移期間由使用者意外刪除內容，客戶可以選擇啟用整個組織的保留原則。 </li><li>雖然不需要保留，但在遷移期間任何時間保留的保留原則都應該如預期般運作，具有保留原則是備份的安全性機制。 同時，所有客戶可能不會使用保留原則，尤其是有關保留原則的使用者。</li></ul>| 如 [深入瞭解保留原則和保留標籤](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)所述套用保留原則。 如果這不是在第4階段中執行，則可能會發生服務或用戶端軟體失敗。 </li></ul>|
+| 建立整個組織 [保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention) ，以防止在遷移期間因無意中刪除內容。  |<ul><li>為了確保使用者不會在遷移期間由使用者意外刪除內容，客戶可以選擇啟用整個組織的保留原則。 </li><li>雖然不需要保留，但在遷移期間可隨時使用保留原則，但具有保留原則是備份的安全性機制。 同時，所有客戶可能不會使用保留原則，尤其是有關保留原則的使用者。</li></ul>| 如 [深入瞭解保留原則和保留標籤](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)所述套用保留原則。 如果這不是在第4階段中執行，則可能會發生服務或用戶端軟體失敗。 </li></ul>|
 |||||
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
@@ -75,7 +75,7 @@ ms.locfileid: "50603861"
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| 在您的租使用者進入遷移階段5之前，請 (HCW) 更新至最新版本的混合式設定向導。 您可以在收到您的 Office 365 租使用者 migratin 已開始的郵件中心 notificate 之後，啟動此活動 immidiately。<br><br> Microsoft Cloud Deutschland 混合式 Exchange Online 客戶必須先卸載舊版的 HCW，然後 (17.0.5378.0 或以上) 中安裝及執行最新版本 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 |<ul><li>最新版本的 HCW 包含必要更新，以支援從 Microsoft Cloud Deutschland 轉換為 Office 365 服務的客戶。</li><li> 更新包括傳送連接器和接收連接器的內部部署憑證設定變更。</li><li> Exchange 管理員必須在 (Exchange 遷移) 開始的第5階段之前，隨時重新安裝 HCW。<br>在階段5之前執行 HCW 時，請在 [office _365 Exchange Online_ ] 下的清單方塊的第2頁面上，選取 office _365 組織_ 位於下列清單中的 [Office 365： Exchange Online]。</li><li>**附注**：完成 Office 365 租使用者遷移後，您將會再次移除並重新安裝 HCW，這次是使用 HCW 的第二個 parge 上的「Office 365 世界」設定，以 Exchange Online 泛型服務完成混合式設定。</li></ul>|在 Exchange 遷移)  (第5階段之前執行 HCW 可能會導致服務或用戶端失敗。 |
+| 在您的租使用者進入遷移階段5之前，更新至最新版本的混合式設定向導 (HCW) 。 您可以在收到您的 Office 365 承租人遷移已開始的訊息中心通知之後，立即啟動此活動。<br><br> Microsoft Cloud Deutschland 混合式 Exchange Online 客戶必須先卸載舊版的 HCW，然後 (17.0.5378.0 或以上) 中安裝及執行最新版本 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 |<ul><li>最新版本的 HCW 包含必要更新，以支援從 Microsoft Cloud Deutschland 轉換為 Office 365 服務的客戶。</li><li> 更新包括傳送連接器和接收連接器的內部部署憑證設定變更。</li><li> Exchange 管理員必須在 (Exchange 遷移) 開始之前的第5階段中，隨時重新安裝 HCW。<br>在階段5之前執行 HCW 時，請在 [office _365 Exchange Online_ ] 下的清單方塊的第2頁面上，選取 office _365 組織_ 位於下列清單中的 [Office 365： Exchange Online]。</li><li>**附注**：完成 Office 365 租使用者遷移後，您將會再次移除並重新安裝 HCW，這次是使用 HCW 的第二頁上的「Office 365 世界」設定，以 Exchange Online 泛型服務完成混合式設定。</li></ul>|在 Exchange 遷移)  (第5階段之前執行 HCW 可能會導致服務或用戶端失敗。 |
 ||||
 
 ## <a name="sharepoint-online"></a>SharePoint Online
@@ -145,7 +145,7 @@ ms.locfileid: "50603861"
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| 新增單一登入 (SSO) 至現有的信賴憑證者信任，並停用 AD FS 中繼資料自動更新的識別碼。 | 開始遷移之前，必須先將識別碼新增至 AD FS 信賴憑證者信任。 若要避免意外移除信賴憑證方識別碼，請停用中繼資料更新的自動更新。 <br><br> 在 AD FS 伺服器上以單一命令列指令執行下列命令： <br>`Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de', 'https://login.microsoftonline.de/extSTS.srf', 'https://login.microsoftonline.de') -AutoUpdate $False`
+| 新增單一登入 (SSO) 至現有的信賴憑證者信任，並停用 AD FS 中繼資料自動更新的識別碼。 | 開始遷移之前，必須先將識別碼新增至 AD FS 信賴憑證者信任。 若要避免意外移除信賴憑證方識別碼，請停用中繼資料更新的自動更新。 <br><br> 在 AD FS 伺服器上以單一命令列的身分執行這個命令： <br>`Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de', 'https://login.microsoftonline.de/extSTS.srf', 'https://login.microsoftonline.de') -AutoUpdate $False`
 | 同盟驗證組織 | 必要的動作。 Inaction SharePoint (第4階段之前 9) 會在遷移期間產生服務影響。  |
 | 為全域 Azure AD 端點產生信賴憑證者信任。 | 客戶必須手動建立信賴憑證者信任 (RPT) 到 [全域](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) 端點。 方法是透過 GUI 新增 RPT，方法是利用全域同盟中繼資料 URL，然後使用 [AZURE AD RPT 宣告規則](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (于 AD FS 說明中) 產生宣告規則並將其匯入 RPT。 | 同盟驗證組織 | 必要的動作。 Inaction 會在遷移期間產生服務影響。 |
 |||||
@@ -154,6 +154,7 @@ ms.locfileid: "50603861"
 
 如果您使用的是 Office 365 和 Microsoft Azure 的相同 Azure Active Directory 身分識別分割區，請確定您準備好進行 Microsoft Azure 服務的客戶導向遷移。
 您的 Microsoft Azure 服務遷移必須在您的 Office 365 租使用者達到遷移階段3之前啟動，且必須在完成遷移階段8之前完成。
+
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
 | 使用您的合作夥伴，判斷哪些 Azure 服務正在使用中，並準備今後從德國遷移至 Office 365 服務租使用者。 遵循 [Azure 遷移行動手冊](https://docs.microsoft.com/azure/germany/germany-migration-main)中所述的步驟。 |<ul><li>遷移 Azure 資源是一項客戶責任，需要在規定的步驟後手動工作。 瞭解組織中所使用的服務是成功遷移 Azure 服務的關鍵。 </li><li> Office 365 德國在相同身分識別分割下具有 Azure 訂閱的客戶 (組織) 必須遵循 Microsoft 規定的訂單，當他們可以開始訂閱和服務遷移時。</li></ul>|<ul><li>客戶可能會有多個 Azure 訂閱，每個包含基礎結構、服務和平臺元件的訂閱。 </li><li> 管理員應識別訂閱和專案關係人，以確保在此遷移事件中，可能會有提示進行遷移和驗證。 </li><li>無法順利完成這些訂閱和指定時程表內的 Azure 元件的遷移，會影響 Office 和 Azure AD 轉換至 Office 365 服務的完成，而且可能會導致資料遺失。 </li><li> 訊息中心通知會通知用戶端遷移開始的點。 </li></ul>|

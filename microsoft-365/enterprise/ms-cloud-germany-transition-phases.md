@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 045e29cba293dd74d3a77beae80d78380eaa4147
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 98a547a9af772e880465f75d9a3b01b1795639e1
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604005"
+ms.locfileid: "50711949"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (一般) 
 
@@ -55,9 +55,10 @@ ms.locfileid: "50604005"
 ## <a name="opt-in"></a>Opt-In
 
 **適用于**：在 Microsoft Cloud Deutschland 中主控 Office 365 租使用者的所有客戶 (MCD) 
+
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-----|:-------|
-| 我們無法在不同意的情況下，遷移 MCD 中主控的 Office 365 承租人。 | Microsoft 會以兩種方式之一提升遷移許可權，讓 Microsoft 能夠將資料和服務的轉換轉變為 Office 365 全域服務實例。 <ol><li>Office 365 租使用者管理員會將您加入至 Microsoft 導向的遷移。 </li><li> 客戶在5月1日後2020，更新 MCD Office 365 租使用者中的任何訂閱。 我們會每月向這些客戶通報每月的遷移，等候30天讓客戶有機會取消，然後直接加入宣告。</li></ol> | <ul><li>承租人會標示為「遷移」，系統管理中心會顯示確認。 </li><li>確認會發佈到 Office 365 租使用者訊息中心。 服務設定會從 Microsoft Cloud Deutschland 端點繼續。 </li><li>承租人 administatror 必須監視 Office 365 訊息中心，以取得 igration 階段狀態的更新。 </li></ul>|
+| 我們無法在不同意的情況下，遷移 MCD 中主控的 Office 365 承租人。 | Microsoft 會以兩種方式之一提升遷移許可權，讓 Microsoft 能夠將資料和服務的轉換轉變為 Office 365 全域服務實例。 <ol><li>Office 365 租使用者管理員會將您加入至 Microsoft 導向的遷移。 </li><li> 客戶在5月1日後2020，更新 MCD Office 365 租使用者中的任何訂閱。 我們會每月向這些客戶通報每月的遷移，等候30天讓客戶有機會取消，然後直接加入宣告。</li></ol> | <ul><li>承租人會標示為「遷移」，系統管理中心會顯示確認。 </li><li>確認會發佈到 Office 365 租使用者訊息中心。 服務設定會從 Microsoft Cloud Deutschland 端點繼續。 </li><li>租使用者管理員必須監視 Office 365 訊息中心，以取得遷移階段狀態的更新。 </li></ul>|
 
 ## <a name="subscription-phase-3"></a>訂閱 (階段 3) 
 
@@ -89,9 +90,9 @@ ms.locfileid: "50604005"
 
 **適用于：** 所有使用 Exchange Online 的客戶
 
-如果您使用的是 Exchange Online 混合式： Exchange Online 混合管理員  **必須執行混合式設定向導 (HCW)** 做為這項轉換的一部分。 請參閱 [適用于 Exchange 的預備高級遷移步驟](ms-cloud-germany-transition-add-experience.md#Exchange-Online-before-phase-5)
+如果您使用的是 Exchange Online 混合式： Exchange Online 混合管理員  **必須執行混合式設定向導 (HCW)** 做為這項轉換的一部分。 請參閱 [適用于 Exchange 的預備高級遷移步驟](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
 
-如遷移準備 [事項中所](ms-cloud-germany-transition-add-pre-work.md#exchange-online)述，在 **遷移步驟階段5開始之前，** Exchange Online 混合式客戶必須執行最新版本的 Exchange 混合式 Configruation Wizard (HCW) In 「Office 365 德國」模式，準備用於遷移至 Office 365 泛型服務的內部部署設定。
+如遷移準備 [事項中所](ms-cloud-germany-transition-add-pre-work.md#exchange-online)述，在 **遷移步驟階段5開始之前，** Exchange Online 混合式客戶必須執行 Exchange 混合式設定向導的最新版本 (HCW) 在「Office 365 德國」模式中，為遷移至 Office 365 全域服務準備內部部署設定。
 
 當 [！注意事項] 當郵件中心通知發佈完成時， **遷移階段 5** () ，您必須使用 Office 365 全球化設定重新執行 HCW，將內部部署系統指向 Office 365 泛型服務。 如果您使用自訂網域，可能需要其他的 DNS 更新。
 

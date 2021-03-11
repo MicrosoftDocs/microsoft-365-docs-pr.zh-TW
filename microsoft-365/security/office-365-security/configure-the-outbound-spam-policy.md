@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中查看、建立、修改和刪除輸出垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b8c330e84716c455fa1f4759c82109ec59a3fc9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 748b274903590c5e28f34ce2fb4e65292d382cd2
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406489"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717619"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -72,7 +72,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須先在 **Exchange Online** 中指派許可權，才能執行本文中的程式：
+- 您必須已在 **Exchange Online** 中獲派權限，才能執行此文章中的程序：
   - 若要新增、修改和刪除輸出垃圾郵件原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要唯讀的輸出垃圾郵件原則的存取權，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
@@ -80,7 +80,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
   **附註**：
 
-  - 將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 中其他功能的必要許可權 _和_ 許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 如需輸出垃圾郵件原則的建議設定，請參閱 [EOP 呼出垃圾郵件篩選原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)。
@@ -330,11 +330,10 @@ New-HostedOutboundSpamFilterRule -Name "<RuleName>" -HostedOutboundSpamFilterPol
 此範例會使用下列設定建立名為 Contoso 主管的新輸出垃圾郵件篩選規則：
 
 - 名為 Contoso 主管的輸出垃圾郵件篩選原則與規則相關聯。
-
 - 此規則會套用至名為 ContosoExecutives Group 的群組成員。
 
 ```PowerShell
-New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
+New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -FromMemberOf "Contoso Executives Group"
 ```
 
 如需詳細的語法及參數資訊，請參閱 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterrule)。

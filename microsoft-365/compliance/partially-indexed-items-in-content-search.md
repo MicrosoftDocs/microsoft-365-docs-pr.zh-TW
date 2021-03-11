@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 瞭解 Exchange 和 SharePoint 中未編制索引的專案，您可以在 Microsoft 365 規範中心執行的 eDiscovery 搜尋中包含這些專案。
-ms.openlocfilehash: 34758ae904678d194e889a4f1b65606d2420a3c7
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 308e0755f1966b8e4559cf6f08b3133a00ea1b5a
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920297"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50711903"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>EDiscovery 中已部分索引的專案
 
@@ -77,11 +77,11 @@ ms.locfileid: "48920297"
   
 請記住下列部分編制索引的專案：
   
-- 當您執行 eDiscovery 搜尋時，搜尋查詢) 所傳回之部分索引 Exchange 專案 (的總數和大小會顯示在詳細資料窗格的 [搜尋統計資料] 中，並標示為 [ **索引項目目** ]。 在詳細資料窗格中顯示的部分索引項目目的統計資料，在 SharePoint 或 OneDrive 中不會包含部分索引的專案。
+- 當您執行 eDiscovery 搜尋時，搜尋查詢) 所傳回之部分索引 Exchange 專案 (的總數和大小會顯示在飛入頁面上的搜尋統計資料中，並標示為未 **編制索引的專案**。 在飛入頁面上顯示之部分索引項目目的統計資料，在 SharePoint 或 OneDrive 中不包含已部分索引的專案。
 
 - 如果您要從中匯出結果的搜尋是針對您組織中的特定內容位置或所有內容位置進行搜尋，則只會匯出包含符合搜尋準則之專案的內容位置中未編制索引的專案。 In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. 其原因是匯出組織中大量位置的部分索引項目目時，可能會增加匯出錯誤的可能性，並增加匯出及下載搜尋結果所需的時間。
 
-    若要從搜尋的所有內容位置匯出已部分索引的專案，請將搜尋設定為從搜尋查詢中移除任何關鍵字，以傳回所有專案 () 然後在 [ **輸出選項** ) 下，根據其他原因，按一下 [ **只匯出具有無法辨識之格式的專案** 時，只匯出部分索引項目目] (。
+    若要從搜尋的所有內容位置匯出已部分索引的專案，請將搜尋設定為從搜尋查詢中移除任何關鍵字，以傳回所有專案 () 然後在 [**輸出選項**) 下，根據其他原因，按一下 [**只匯出具有無法辨識之格式的專案** 時，只匯出部分索引項目目] (。
 
 - 如果您選擇包含搜尋結果中的所有信箱專案，或者搜尋查詢未指定任何關鍵字或只指定日期範圍，則部分索引的專案可能不會複製到包含部分索引項目目的 PST 檔案中。 這是因為所有專案（包括所有已編制索引的專案）都會自動包含在一般搜尋結果中。
 
@@ -139,6 +139,6 @@ ms.locfileid: "48920297"
 
 - 使用 Azure Rights Management 保護的電子郵件會進行索引，如果符合搜尋查詢，將會包含在搜尋結果中。 受版權保護的電子郵件會解密，而且可以預覽及匯出。 這種功能要求您指派 RMS 解密角色，此角色預設會指派給 eDiscover 管理員角色群組。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [調查 eDiscovery 中已部分索引的專案](investigating-partially-indexed-items-in-ediscovery.md)

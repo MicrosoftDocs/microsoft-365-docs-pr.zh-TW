@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cccbd268c8f69d6623df1ef4c8208d20ead2e9f5
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: e54a6dce9765a8b87fcf2f63bbd1342beabdcf39
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145291"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712459"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "50145291"
 [！附注] `DeviceFileEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含檔建立、修改及其他檔案系統事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
-> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的內建架構參照。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 47bbc722ad87d5bde4b1e0dfb732e08dad3938f2
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ef89cadc09dea7c2186fbf4a0d76d2c690aa8acc
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423634"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597215"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -34,7 +34,7 @@ ms.locfileid: "50423634"
 
 如果您有 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)，請判斷是否需要將標籤移轉至統一標籤平台，以及要使用的標籤用戶端：
 - [如何判斷我的租用戶是否在統一標籤平台上？](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [選擇要用於 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
+- [選擇您的 Windows 標籤解決方案](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
 
 當您準備好要開始使用敏感度標籤來保護組織的資料時：
 

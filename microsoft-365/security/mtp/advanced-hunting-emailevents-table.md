@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a0892e03e0ac4c6fc6bcda1b7b159ce403a7ce2e
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 5e9fce199d253cf22f73ec8620c5441d8bf1305d
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461606"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712387"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "50461606"
 [！附注] `EmailEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含有關在 Microsoft Defender for Office 365 上處理電子郵件之事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
-> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的內建架構參照。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 

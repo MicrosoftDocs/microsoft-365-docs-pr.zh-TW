@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 72c6ec814c5f3317f582cb4bfb21858677fbb7e1
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 1f5fa231c371ca7a8d6a22ca0b4ff388fd89004c
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509119"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50711913"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新功能
 
@@ -39,6 +39,8 @@ RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此�
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
+## <a name="march-2021"></a>2021年3月
+- [CloudAppEvents 表格](advanced-hunting-cloudappevents-table.md) <br>尋找 Microsoft Cloud App Security 涵蓋的各種雲端應用程式和服務中的事件資訊。 此表格也包含先前在中提供的資訊 `AppFileEvents` 。
 ## <a name="february-2021"></a>2021 年 2 月
 -  (預覽) 增強型[Microsoft 365 安全性中心 (https://security.microsoft.com) ](https://security.microsoft.com)現在已提供公開預覽。 這種新的經驗會將適用于 Office 365 的 Defender 和 Defender 帶入中央。 [深入瞭解已變更的](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)專案。
 

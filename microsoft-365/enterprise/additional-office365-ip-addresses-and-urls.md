@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新端點 Web 服務不包含特定案例的少量端點。
 hideEdit: true
-ms.openlocfilehash: f81a3b622bb7cc6eb82d9ed7f450762cfc7711ff
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 7922730957be93b2cdfbd06a48d39fc54ac4af89
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787936"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50711973"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 位址和 URL Web 服務中未包含的其他端點
 
@@ -46,20 +46,20 @@ ms.locfileid: "49787936"
 | 列 | 用途 | 目的地 | 類型 |
 |:-----|:-----|:-----|:-----|
 | 1  | PST 的[匯入服務](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6)和檔案擷取 | 如需其他需求的資訊，請參閱[匯入服務](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6)。 | 另類外寄範例 |
-| 2  | [適用於 Office 365 的 Microsoft 支援及修復小幫手](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | 外寄伺服器流量 |
-| 3  | Azure AD Connect (含 SSO 選項) – WinRM 和遠端 PowerShell | 客戶 STS 環境 (AD FS 伺服器和 AD FS Proxy) \| TCP 通訊埠 80 和 443 | 內送伺服器流量 |
-| 4  | STS，例如 AD FS Proxy 伺服器 (僅適用於同盟客戶) | 客戶 STS (例如 AD FS Proxy) \| 通訊埠 TCP 443 或 TCP 49443 (含 ClientTLS) | 內送伺服器流量 |
-| 5  | [Exchange Online 整合通訊/SBC 整合](https://technet.microsoft.com/library/jj673565.aspx) | 在內部部署工作階段邊界控制器與 *.um.outlook.com 之間為雙向 | 僅限外寄伺服器的流量 |
-| 6  | 信箱移轉。當您啟動從內部部署 [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant)將信箱移轉至 Office 365，Office 365 會連線到已發佈的 Exchange Web 服務 (EWS)/信箱複寫服務 (MRS) 伺服器。如果您需要 Exchange Online 伺服器所使用的 NAT IP 位址，以限制特定來源 IP 範圍的輸入連線，其會列在「Exchange Online」服務區域底下的 [Office 365 URL 與 IP 範圍](urls-and-ip-address-ranges.md)。請務必注意，在限制特定來源 IP 範圍的 TCP 443 連線之前，先確保 MRS Proxy 解析為個別 FQDN 和公用 IP 位址，以確保存取已發佈的 EWS 端點 (如 OWA) 時不會受到影響。 | 客戶內部部署 EWS/MRS Proxy<br> TCP 通訊埠 443 | 內送伺服器流量 |
-| 7  | [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant)共存功能，例如空閒/忙碌共用。 | 客戶內部部署 Exchange 伺服器 | 內送伺服器流量 |
-| 8  | [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant) Proxy 驗證 | 客戶內部部署 STS | 內送伺服器流量 |
-| 9  | 用來設定 [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant)，使用 [Exchange 混合式組態精靈](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) <br> 附註：只有在設定 Exchange 混合式時，才需要這些端點  | TCP 通訊埠 80 和 443 上的 domains.live.com，只有 Exchange 2010 SP3 混合式組態精靈才需要。<BR> <BR> GCC 高、DoD IP 位址：40.118.209.192/32；168.62.190.41/32 <BR> <BR> 全球各地Worldwide Commercial & GCC: *.store.core.windows.net; asl.configure.office.com; mshrcstorageprod.blob.core.windows.net; tds.configure.office.com; mshybridservice.trafficmanager.net <BR>  | 僅限外寄伺服器的流量 |
-| 10  | 自動偵測服務用於 [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant)案例，搭配 [iOS 版 Outlook 和 Android 的混合式新式驗證](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | 客戶在 TCP 443 上內部部署 Exchange 伺服器 | 內送伺服器流量 |
-| 11  | Exchange 混合式 Azure AD 驗證 | msappproxy.net | 僅限 TCP 輸出伺服器流量 |
+| 2   | [適用於 Office 365 的 Microsoft 支援及修復小幫手](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | 外寄伺服器流量 |
+| 3   | Azure AD Connect (含 SSO 選項) – WinRM 和遠端 PowerShell | 客戶 STS 環境 (AD FS 伺服器和 AD FS Proxy) \| TCP 通訊埠 80 和 443 | 內送伺服器流量 |
+| 4   | STS，例如 AD FS Proxy 伺服器 (僅適用於同盟客戶) | 客戶 STS (例如 AD FS Proxy) \| 通訊埠 TCP 443 或 TCP 49443 (含 ClientTLS) | 內送伺服器流量 |
+| 5   | [Exchange Online 整合通訊/SBC 整合](https://technet.microsoft.com/library/jj673565.aspx) | 在內部部署工作階段邊界控制器與 *.um.outlook.com 之間為雙向 | 僅限外寄伺服器的流量 |
+| 6   | 信箱移轉。當您啟動從內部部署 [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant)將信箱移轉至 Office 365，Office 365 會連線到已發佈的 Exchange Web 服務 (EWS)/信箱複寫服務 (MRS) 伺服器。如果您需要 Exchange Online 伺服器所使用的 NAT IP 位址，以限制特定來源 IP 範圍的輸入連線，其會列在「Exchange Online」服務區域底下的 [Office 365 URL 與 IP 範圍](urls-and-ip-address-ranges.md)。請務必注意，在限制特定來源 IP 範圍的 TCP 443 連線之前，先確保 MRS Proxy 解析為個別 FQDN 和公用 IP 位址，以確保存取已發佈的 EWS 端點 (如 OWA) 時不會受到影響。 | 客戶內部部署 EWS/MRS Proxy<br> TCP 通訊埠 443 | 內送伺服器流量 |
+| 7   | [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant)共存功能，例如空閒/忙碌共用。 | 客戶內部部署 Exchange 伺服器 | 內送伺服器流量 |
+| 8   | [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant) Proxy 驗證 | 客戶內部部署 STS | 內送伺服器流量 |
+| 9   | 用來設定 [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant)，使用 [Exchange 混合式組態精靈](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) <br> 附註：只有在設定 Exchange 混合式時，才需要這些端點  | TCP 通訊埠 80 和 443 上的 domains.live.com，只有 Exchange 2010 SP3 混合式組態精靈才需要。<BR> <BR> GCC 高、DoD IP 位址：40.118.209.192/32；168.62.190.41/32 <BR> <BR> 全球商業銀行 & GCC： * store.core.windows.net;asl.configure.office.com;tds.configure.office.com;mshybridservice.trafficmanager.net; <BR> aka.ms/hybridwizard; <BR> shcwreleaseprod.blob.core.windows.net/shcw/ \* ;<BR>  | 僅限外寄伺服器的流量 |
+| 10   | 自動偵測服務用於 [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant)案例，搭配 [iOS 版 Outlook 和 Android 的混合式新式驗證](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | 客戶在 TCP 443 上內部部署 Exchange 伺服器 | 內送伺服器流量 |
+| 11   | Exchange 混合式 Azure AD 驗證 | msappproxy.net | 僅限 TCP 輸出伺服器流量 |
 | 12   | Office 2016 中的商務用 Skype 包含使用 UDP 通訊埠根據螢幕共用的視訊。Office 2013 及較舊版本中的商務用 Skype 用戶端在 TCP 通訊埠 443 上使用 RDP。 | TCP 通訊埠 443 開放給 52.112.0.0/14 | Office 2013 及較舊版本中的商務用 Skype 更舊用戶端版本 |
 | 13   | 商務用 Skype 混合式內部部署伺服器連線至商務用 Skype Online | 13.107.64.0/18、52.112.0.0/14  <BR> UDP 連接埠 50,000-59,999 <BR>  TCP 連接埠 50,000-59,999；5061 | 商務用 Skype 內部部署伺服器輸出連線 |
 | 14   | 具有內部部署混合式連線的 Cloud PSTN 要求開啟內部部署主機的網路連線。如需商務用 Skype Online 混合式設定的詳細資料，  | 請參閱[規劃商務用 Skype Server 和 Office 365 之間的混合式連線](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity) (英文) | 商務用 Skype 內部部署混合式輸入 |
-| 15  | **驗證與身分識別 FQDN** <br> FQDN ```secure.aadcdn.microsoftonline-p.com``` 必須在您用戶端的 Internet Explorer (IE) 或 Microsoft Edge 信任的網站區域中才能正常運作。 |  | 信任的網站 |
+| 15   | **驗證與身分識別 FQDN** <br> FQDN ```secure.aadcdn.microsoftonline-p.com``` 必須在您用戶端的 Internet Explorer (IE) 或 Microsoft Edge 信任的網站區域中才能正常運作。 |  | 信任的網站 |
 | 16   |  **Microsoft Teams FQDN** <br> 如果您使用的是 Internet Explorer 或 Microsoft Edge，您需要啟用第一和第三方 Cookie，並將 Teams 的 FQDN 新增到您的 [信任的網站] 中。這是列 14 所列之跨套件 FQDN、CDN 和遙測之外的項目。如需詳細資訊，請參閱 [Microsoft Teams 的已知問題](https://docs.microsoft.com/microsoftteams/known-issues)。 |  | 信任的網站 |
 | 17   |  **SharePoint Online 和商務用 OneDrive FQDN** <br> 所有在 FQDN 中含有 '\<tenant>' 的 '.sharepoint.com' 的 FQDN 都必須在您用戶端的 IE 或 Microsoft Edge 信任的網站區域中才能正常運作。除了列 14 列出的跨套件 FQDN、CDN 和遙測，您也必須新增這些端點。 |  | 信任的網站 |
 | 18   | **Yammer**  <br> Yammer 僅可於瀏覽器中使用，且必須透過 Proxy 傳遞已驗證的使用者。所有 Yammer FQDN 都必須在用戶端的 IE 或 Microsoft Edge 的信任的網站區域中才能正常運作。 |  | 信任的網站 |

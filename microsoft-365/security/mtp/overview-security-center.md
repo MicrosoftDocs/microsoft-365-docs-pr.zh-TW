@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 89e72d703bd70647d6c2b00732315b8e5f015cc7
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 87149ab9c99168d62f5114555a46b8bfaee83ab2
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167179"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712099"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>整合的 Microsoft 365 安全性中心概述
 

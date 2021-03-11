@@ -5,17 +5,19 @@ keywords: GDPR，保留，刪除，儲存，保留，處理，安全性，審核
 ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
+manager: laurawi
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.topic: article
+audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 7005e09d5a3df158569e132d2954f3b9a0ebf371
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: e98d42e79ac270e6ccce46e88e3b8ff00f8bfc0a
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840478"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712303"
 ---
 # <a name="privacy-and-personal-data"></a>隱私權和個人資料
 
@@ -44,12 +46,13 @@ Microsoft Managed Desktop 會將其資料儲存在下列一或多個 Microsoft s
 
 - Azure SQL
 - Azure 儲存體
+- Dynamics 365
 
-Microsoft 受管理的桌面會將其資料儲存在美國。 Microsoft 受管理的桌面會保留最多30天的個人資料。
+Microsoft 受管理的桌面會將其資料儲存在美國。 Microsoft 受管理的桌面會在最多30天內保留個人資料，但 microsoft Defender for Endpoint 收集的 Microsoft 受管理桌面裝置的警示資料除外。 實際的警示資料 (可以包含個人資料) 儲存180天。 已移除個人資料的警示資料會儲存多達兩年。 在遵守一般資料保護法規 (GDPR) 和加州消費者隱私權法案 (CCPA) 中，Microsoft Managed Desktop 會針對儲存于警示資料中的任何個人資料，取得資料主體許可權。
 
 ### <a name="staff-location"></a>員工位置
 
-MMD Operations and MMD Security Operations 團隊位於美國和印度。
+Microsoft 受管理的桌面作業及安全性作業小組位於美國和印度。
 
 ## <a name="data-usage-of-microsoft-managed-desktop"></a>Microsoft 受管理電腦的資料使用量
 
@@ -77,7 +80,7 @@ Microsoft 受管理的桌面處理這些實體以提供服務：
 - 租使用者資料
 - Azure Active Directory 資源
 - 原則和設定資料
-- Microsoft Defender for Endpoint metadata
+- Microsoft Defender 用於端點中繼資料和警示資料
 - Windows 診斷資料
 - 產品和服務使用方式資料
 
@@ -123,7 +126,7 @@ Microsoft 受管理的桌面不會使用任何收集的個人資料，做為進�
 
 [GDPR) 的歐盟一般資料保護法規 (](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) ，可將法規中 (已知之人員的權力視為資料主旨) ，以管理由雇主或其他類型的代理商或組織所收集的個人資料 (稱為資料控制者或僅限審計員) 。 依據 GDPR，個人資料的定義非常廣泛，舉凡與已識別或可識別自然人相關的任何資料皆屬之。 GDPR 為資料主體提供其個人資料的特定權限；這些權限包括取得個人資料副本、要求對該資料進行更正、限制對該資料的處理、刪除該資料，或是以電子格式接收該資料以移至另一個控制者。 由資料主體向控制者提出以對其個人資料採取行動的正式要求，稱為資料主體要求或 DSR。
 
-同樣地，加州消費者隱私權法案 (CCPA) 會為加州消費者提供隱私權權利和義務，包含與 GDPR 的資料主體許可權類似的許可權，例如刪除、存取和接收 (可攜性) 其個人資訊的權利。 CCPA 也會提供某些披露的披露，針對其他分類為 "sales" 的資料傳輸，防範歧視時防範歧視和「自願退出/自願」的需求。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide)和[常見問題集](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide)。
+同樣地，CCPA 為加州消費者提供隱私權權利和義務，包含與 GDPR 的資料主體許可權類似的許可權，例如刪除、存取和接收 (可攜性) 其個人資訊的許可權。 CCPA 也會提供某些披露的披露，針對其他分類為 "sales" 的資料傳輸，防範歧視時防範歧視和「自願退出/自願」的需求。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide)和[常見問題集](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide)。
 
 下一節將討論 Microsoft Managed Desktop 如何協助控制器尋找、存取及處理 Microsoft 受管理的桌面所使用的個人資料或個人資訊。
 
@@ -134,6 +137,10 @@ Microsoft 受管理的桌面不會使用任何收集的個人資料，做為進�
 
 租使用者管理員可以在 Microsoft 受管理的桌面入口網站上，查看、更正和刪除自己的個人資料 (例如自己的連絡人資訊) 。
 
+## <a name="microsoft-defender-for-endpoint-alert-data"></a>Microsoft Defender for Endpoint 警示資料
+
+安全性管理員可以要求在其環境中的 Microsoft 受管理的桌面管理裝置上，針對 Microsoft Defender for Endpoint 警示要求解壓縮或刪除個人資料。 安全性管理員應該登入 Microsoft Managed Desktop [Admin 入口網站](https://aka.ms/memadmin) ，並提交支援要求。 選取 [支援 **變更要求****類型**]、 **[** **安全性**] 及 [**其他**]**子** 類別，然後在描述中提供相關的裝置名稱，以及提取或刪除資料的要求。
+
 ### <a name="user-related-personal-data"></a>使用者相關個人資料
 
 除此之外，Microsoft 受管理的電腦不會自行收集個人資料。 相反地，它會依賴和使用其他 Microsoft 企業版線上服務收集的個人資料。 IT 系統管理員希望回應他們的使用者要求以查看、更正和刪除其個人資料，可使用 Microsoft 受管理桌面所依賴之基礎服務的個別功能。 如果您有興趣查看或刪除這些服務所使用的個人資料，請先參閱 GDPR 文章的 [Azure 資料主體要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure) 。
@@ -142,5 +149,5 @@ Microsoft 受管理的桌面不會使用任何收集的個人資料，做為進�
 
 - [Azure Active Directory](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-intune?view=o365-worldwide)
-- [Microsoft Defender for Endpoint](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Windows 10](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)

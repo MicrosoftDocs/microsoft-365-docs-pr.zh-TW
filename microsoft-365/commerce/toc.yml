@@ -48,12 +48,14 @@
       href: billing-and-payments/view-your-bill-or-invoice.md
     - name: 認識您的帳單或發票
       href: billing-and-payments/understand-your-invoice.md
-    - name: 管理付款方式
-      href: billing-and-payments/manage-payment-methods.md
     - name: 支付訂閱費用
       href: billing-and-payments/pay-for-your-subscription.md
+    - name: 管理付款方式
+      href: billing-and-payments/manage-payment-methods.md
     - name: 變更計費頻率
       href: billing-and-payments/change-payment-frequency.md
+    - name: 管理帳單通知和發票附件
+      href: billing-and-payments/manage-billing-notifications.md
     - name: 了解帳單設定檔
       href: billing-and-payments/manage-billing-profiles.md
     - name: 變更帳單地址
