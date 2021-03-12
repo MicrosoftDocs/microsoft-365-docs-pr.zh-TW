@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解您可以使用的群組類型。
-ms.openlocfilehash: 4cbc7f15632026babec3640f021c09e901ad20b9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925527"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727244"
 ---
 # <a name="compare-groups"></a>比較群組
 
@@ -41,7 +41,7 @@ ms.locfileid: "49925527"
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 群組
 
-Microsoft 365 群組用來在公司內部和外部的使用者之間共同作業。 透過每個 Microsoft 365 群組，成員可以取得交談、檔案和行事曆活動以及 Planner 的群組電子郵件與共用工作區。
+Microsoft 365 群組用來在公司內部和外部的使用者之間共同作業。 透過每個 Microsoft 365 群組，成員可以取得交談、檔案和行事曆活動、Steam 以及 Planner 的群組電子郵件與共用工作區。
 
 只要[系統管理員啟用](manage-guest-access-in-groups.md)這項功能，您就可以將組織外部的人員新增至群組。 您也可以允許外部寄件者將電子郵件傳送到群組電子郵件地址。
 
