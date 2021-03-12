@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: e125a6dfb35b7018b5f85100184c842da9231327
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 90b545f60c68ac6b76509e14daf1258df66e1c63
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407323"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741530"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感性資訊類型
 
@@ -124,6 +124,11 @@ ms.locfileid: "50407323"
 
 您應該使用具有較低計數的高信賴度模式、5到10個，以及具有較高數量的低可信度模式，例如20或更高。
 
+> [!NOTE]
+> 如果您有現有的原則或自訂敏感資訊類型 (是使用以數位為基礎的信賴等級) 定義 (也知道精確度) ，它們就會自動對應至三個不同的信賴等級;安全性 @ 合規性中心 UI 中的低信心、中置信度和高信賴度。
+> - 所有原則的精確度或自訂 SIT 模式，在76和100之間具有信賴層級，將會對應至高信賴度。 
+> - 所有原則的精確度或自訂 SIT 模式，在66和75之間具有信賴層級，將會對應至中的置信度。
+> - 具有最低精確度或自訂 SIT 模式且信賴等級小於或等於65的所有原則都會對應至低信賴度。 
 ## <a name="creating-custom-sensitive-information-types"></a>建立自訂敏感性資訊類型
 
 若要在安全性與合規性中心建立自訂敏感性資訊類型，您可以從數個選項中選擇：

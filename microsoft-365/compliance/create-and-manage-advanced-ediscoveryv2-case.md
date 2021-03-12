@@ -12,18 +12,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-aed
+- m365solution-ediscovery
 - m365initiative-compliance
+- m365initiative-scenario
 search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何建立及管理高級 eDiscovery 案例。 第一步是建立案例，並開始使用 Advanced eDiscovery 的功能和功能。
-ms.openlocfilehash: c95994b3706880b40ff6306c02a4bdb5dba7748b
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 80cfe31a86060cb3603a101b314273cc67750bd8
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841604"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727540"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>建立及管理高級 eDiscovery 案例
 

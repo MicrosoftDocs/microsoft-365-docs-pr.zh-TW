@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何在組織內部和外部的人員之間傳送和接收加密的電子郵件。
-ms.openlocfilehash: f601618c3ad44361794720852b391949901122f2
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 8d1803442428f3061c686afa0b790d3f468abde8
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709619"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741324"
 ---
 # <a name="message-encryption"></a>郵件加密
 
@@ -36,13 +36,13 @@ ms.locfileid: "49709619"
 
 本文的其餘部分適用于新的 OME 功能。
 
-Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Management (Azure RMS) （Azure 資訊保護的一部分）上建立。 這包括加密、身分識別和授權原則，以協助保護您的電子郵件。 您可以使用 rights management 範本、[ [不要轉寄] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)及 [ [僅限加密] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)來加密郵件。
+Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Management (Azure RMS) （Azure 資訊保護的一部分）上建立。 此服務包含加密、身分識別和授權原則，以協助保護您的電子郵件。 您可以使用 rights management 範本、[ [不要轉寄] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)及 [ [僅限加密] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)來加密郵件。
 
-然後，使用者可以使用這些選項，將電子郵件訊息和各種附件加密。 如需支援的附件類型的完整清單，請參閱 [irm for email to email to email 中的「irm 原則所涵蓋的檔案類型](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)」。
+然後，使用者可以使用這些選項來加密電子郵件訊息和各種附件。 如需支援的附件類型的完整清單，請參閱 [irm for email to email to email 中的「irm 原則所涵蓋的檔案類型](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)」。
 
 您也可以以系統管理員身分定義郵件流程規則，以套用這種保護。 例如，您可以建立規則，要求所有傳送給特定收件者的郵件，或在主旨行中包含特定文字的郵件，也指定收件者無法複製或列印郵件的內容。
 
-與舊版的 OME 不同的是，當您要將郵件傳送給組織或 Microsoft 365 以外的收件者時，新功能會提供統一的傳送者體驗。 此外，收件者會收到受保護的電子郵件訊息傳送至 Outlook 2016 中的 Microsoft 365 帳戶或網頁上的 Outlook，您不需要採取任何其他動作來查看郵件。 它可順利運作。 使用其他電子郵件用戶端和電子郵件服務提供者的收件者也可獲得改進的體驗。 如需詳細資訊，請參閱 [瞭解 Office 365 中的受保護郵件](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) 和 [如何開啟受保護的郵件](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098)。
+與舊版的 OME 不同的是，當您要將郵件傳送給組織或 Microsoft 365 以外的收件者時，新功能會提供統一的傳送者體驗。 此外，收件者會收到受保護的電子郵件訊息傳送至 Outlook 2016 中的 Microsoft 365 帳戶或網頁上的 Outlook，您不需要執行任何其他動作即可查看郵件。 它可順利運作。 使用其他電子郵件用戶端和電子郵件服務提供者的收件者也可獲得改進的體驗。 如需詳細資訊，請參閱 [瞭解 Office 365 中的受保護郵件](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) 和 [如何開啟受保護的郵件](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098)。
 
 如需舊版 OME 與新 OME 功能之間差異的詳細清單，請參閱 [比較版本的 OME](ome-version-comparison.md)。
 

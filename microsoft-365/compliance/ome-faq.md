@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1bb5e93b08b74f5691c76e9a59bf9fa970e08f36
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 09d9293cfb1b574b4c179a0b486d436dab99edf2
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597193"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741344"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -145,8 +145,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 
 ## <a name="what-email-clients-support-revocation-of-protected-emails"></a>哪些電子郵件客戶程式支援撤銷受保護的電子郵件？
 
-網頁上的 Outlook 支援撤銷受保護的郵件。  請參閱 [如何撤銷您傳送的加密郵件](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) 以取得詳細資訊。
-
+網頁上的 Outlook 支援撤銷受保護的郵件。  請參閱 [如何撤銷您傳送的加密郵件](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) 以取得詳細資訊。
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>我是否可以透過設定原則自動加密郵件？
 
@@ -218,8 +217,8 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
-   
- ## <a name="can-i-open-encrypted-messages-sent-to-another-users-mailbox-with-fullaccess"></a>我可以開啟使用 Fullaccess 傳送給另一個使用者信箱的加密郵件嗎？
+
+## <a name="can-i-open-encrypted-messages-sent-to-another-users-mailbox-with-fullaccess"></a>我可以開啟使用 Fullaccess 傳送給另一個使用者信箱的加密郵件嗎？
 
 使用者可以開啟加密的郵件，只要獲得直接存取和自動對應已開啟。 如果是透過已啟用電子郵件功能的安全性群組來授與存取權，則不允許存取。
 

@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-aed
+- m365solution-ediscovery
 - m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何設定高級 eDiscovery，讓您可以開始建立及管理案例。 此外，它也會說明必要的 Microsoft 訂閱和授權。 完成一些快速步驟之後，就可以使用「高級 eDiscovery」工具。
-ms.openlocfilehash: aef5cd2e465306b4401cda66d4ba30c97b9fc8cd
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 29a220f36a55a04d1c1a24add03b2e013a5c60ba
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841174"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727408"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>設定 Microsoft 365 Advanced eDiscovery
 

@@ -11,20 +11,18 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
-- M365-security-compliance
-- m365solution-aed
-- m365initiative-compliance
+- m365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 中的高級 eDiscovery 內建的內建工作流程，會與「電子探索參考模型」所述的 eDiscovery 程式（ (EDRM) ）對齊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ca94baf1fc57ac014a32a80ddc5705feeb2c842
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: f2e7886eb67a58b43e9fb638fafb358fd9ee832c
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841609"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727486"
 ---
 # <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>使用電子探索參考模型的高級 eDiscovery 對齊方式
 
@@ -50,10 +48,10 @@ Microsoft 365 中的高級 eDiscovery 內建的內建工作流程，會與「電
 
 - **生產** 及 **簡報。** 當您準備好時，您可以從審閱集中匯出檔，以進行法律考評。 您可以以原生格式或以 EDRM 指定的格式匯出檔，以便將其匯入協力廠商的審閱應用程式。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>詳細資訊
 
 若要開始使用高級 eDiscovery，請參閱：
 
-- [設定高級電子檔探索](get-started-with-advanced-ediscovery.md)
+- [設定進階電子文件探索](get-started-with-advanced-ediscovery.md)
 
 - [建立及管理高級 eDiscovery 案例](create-and-manage-advanced-ediscoveryv2-case.md)

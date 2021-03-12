@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 瞭解 Exchange Online 和 Microsoft 365 如何使用 (TLS) 和轉寄機密 (FS) 的傳輸層安全性，以保護電子郵件通訊。 也會取得 Microsoft 用於 Exchange Online 之憑證的相關資訊。
-ms.openlocfilehash: 67be87bc07399af9469728383af1caf604bf1372
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 6e23ebc6451b9d139f1b18838007411028a059f3
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066826"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727454"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Exchange Online 如何使用 TLS 保護電子郵件連線
 
@@ -37,7 +37,7 @@ TLS 之前的傳輸層安全性 (TLS) 和 SSL 是密碼編譯通訊協定，該�
   
 當您想要在 Microsoft 與您的內部部署組織或其他組織（例如合作夥伴）之間設定安全通道時，建議使用 TLS。 Exchange Online 一律會先嘗試使用 TLS 來保護您的電子郵件，但如果另一方沒有提供 TLS 安全性，則無法一律如此進行。 繼續閱讀若要瞭解如何使用  *連接器* 將所有郵件安全傳送至內部部署伺服器或重要的合作夥伴。 
 
-若要為我們的客戶提供一流的加密，Microsoft 已棄用 (TLS) 版本1.0 和1.1 的 [office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) 和 [office 365 GCC](tls-1-2-in-office-365-gcc.md)中的傳輸層安全性。 不過，您可以繼續使用沒有任何 TLS 的未加密 SMPT 連接。 建議您不要在未加密的情況下進行電子郵件傳輸。  
+若要為我們的客戶提供一流的加密，Microsoft 已棄用 (TLS) 版本1.0 和1.1 的 [office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) 和 [office 365 GCC](tls-1-2-in-office-365-gcc.md)中的傳輸層安全性。 不過，您可以繼續使用未加密的 SMTP 連線，而不需要任何 TLS。 建議您不要在未加密的情況下進行電子郵件傳輸。  
   
 ## <a name="how-exchange-online-uses-tls-between-exchange-online-customers"></a>Exchange Online 如何在 Exchange Online 客戶之間使用 TLS
 

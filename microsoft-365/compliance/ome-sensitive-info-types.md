@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 瞭解如何使用 Office 365 郵件加密為組織建立機密資訊類型原則。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bfc77fa88ff798f98d260682dfbdbdd57b17af69
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 22aec87b149c58b2537f6921fb7c37552ef72f98
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545983"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741376"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>使用郵件加密為組織建立機密資訊類型原則
 
@@ -31,7 +31,7 @@ ms.locfileid: "47545983"
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>使用 EAC 中的郵件流程規則建立原則
 
-登入 Exchange 系統管理中心 (EAC) 並移至**郵件流程**  >  **規則**。 在 [規則] 頁面上，建立套用 Office 365 郵件加密的規則。 您可以根據狀況（例如郵件或附件中的某些關鍵字或機密資訊類型的存在性）來建立規則。
+登入 Exchange 系統管理中心 (EAC) 並移至 **郵件流程**  >  **規則**。 在 [規則] 頁面上，建立套用 Office 365 郵件加密的規則。 您可以根據狀況（例如郵件或附件中的某些關鍵字或機密資訊類型的存在性）來建立規則。
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>若要使用 PowerShell 中的郵件流程規則建立原則
 
@@ -39,7 +39,7 @@ ms.locfileid: "47545983"
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>使用 PowerShell 建立的郵件流程規則範例
 
-在 PowerShell 中執行下列命令，以建立 Exchange 郵件流程規則，此規則會在電子郵件或其附件包含下列機密資訊類型時，自動以「 *加密專用* 」原則加密組織外傳送的電子郵件：
+在 PowerShell 中執行下列命令，以建立 Exchange 郵件流程規則，此規則會在電子郵件或其附件包含下列機密資訊類型時，自動以 [僅限加密] 選項加密組織外傳送的電子郵件：
 
 - ABA 路由號碼
 - 信用卡號碼
@@ -77,4 +77,4 @@ Microsoft 365 會審核此活動，並使其可供系統管理員使用。 作�
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>停用或自訂敏感資訊類型原則
 
-建立 exchange 郵件流程規則之後，您可以在 exchange 系統管理中心中，移至**郵件流程**規則，以[停用或編輯規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)  >  **Rules** (EAC) 並停用 [*加密輸出機密電子郵件 (現成規則) *] 規則。
+建立 exchange 郵件流程規則之後，您可以在 exchange 系統管理中心中，移至 **郵件流程** 規則，以 [停用或編輯規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)  >   (EAC) 並停用 [*加密輸出機密電子郵件 (現成規則)*] 規則。

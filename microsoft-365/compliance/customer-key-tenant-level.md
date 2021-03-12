@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 瞭解如何為您的 Microsoft 365 租使用者中的所有資料設定客戶金鑰。
-ms.openlocfilehash: 7bc5403f73e2d61f47e92ab5c94509f3fe9f3e33
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7ffa9a8148a8ae699711b62da48cd2c856d48cac
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454644"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727476"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>在承租人層級 (公開預覽的 Microsoft 365 客戶金鑰概述) 
 
@@ -33,6 +33,7 @@ ms.locfileid: "50454644"
 - 小娜的小組聊天建議
 - 小組狀態郵件
 - Exchange Online 的使用者和信號資訊
+- Exchange Online 信箱，但在應用層級尚未加密客戶金鑰 DEPs
 
 針對 Microsoft 小組，租使用者層級的客戶機碼會從 DEP 指派給租使用者時，加密新的資料。 公開預覽不支援加密過去的資料。 針對 Exchange Online，客戶金鑰會加密所有現有和新的資料。
 
@@ -42,13 +43,9 @@ ms.locfileid: "50454644"
 
 如果您已設定 Exchange Online 和 Sharepoint Online 的客戶金鑰，以下是新租使用者層級公開預覽的方式。
 
-您建立的承租人層級加密原則會加密 microsoft 團隊和 Microsoft 365 中的 Exchange Online 工作負載的所有資料。 這個原則不會干擾您已在客戶機碼中建立的 DEPs。
+您建立的承租人層級加密原則會加密 microsoft 團隊和 Microsoft 365 中的 Exchange Online 工作負載的所有資料。 不過，對於 Exchange Online，如果您已將客戶金鑰 DEPs 指派給個別信箱，則租使用者層級原則不會覆寫這些 DEPs。 租使用者層級原則只會加密尚未指定信箱層級客戶金鑰 DEP 的信箱。
 
-範例：
-
-Microsoft 小組檔案和部分小組的呼叫和會議錄製會儲存在商務和 SharePoint 的 OneDrive 中，以 SharePoint 線上 DEP 加密。 單一 SharePoint 線上 DEP 會加密單一地理位置內的內容。
-
-針對 Exchange Online，您可以建立使用客戶金鑰來加密一或多個使用者信箱的 DEP。 當您建立租使用者層級原則時，該原則不會加密加密的信箱。 不過，租使用者層級的金鑰會將不受 DEP 影響的信箱加密。
+例如，Microsoft 小組檔案和部分小組的呼叫和會議錄製會儲存在商務用 OneDrive 中，SharePoint 是由 SharePoint 線上 DEP 加密。 單一 SharePoint 線上 DEP 會加密單一地理位置內的內容。
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>在承租人層級設定客戶機碼 (公開預覽) 
 
@@ -274,7 +271,7 @@ Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,un
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-已到期的金鑰無法由客戶金鑰使用，而且嘗試使用到期金鑰會失敗，而且可能會造成服務中斷。 強烈建議使用與客戶金鑰搭配使用的金鑰沒有到期日。 到期日一經設定，便無法移除，但可以變更為不同的日期。 如果必須使用具有到期日期設定的金鑰，請將 [到期] 值變更為12/31/9999。 到期日期設定為12/31/9999 以外的金鑰，將不會通過 Microsoft 365 驗證。
+已到期的金鑰無法由客戶金鑰使用，而且嘗試使用到期金鑰會失敗，而且可能會造成服務中斷。 強烈建議使用與客戶金鑰搭配使用的金鑰沒有到期日。 到期日一經設定，便無法移除，但可以變更為不同的日期。 如果必須使用具有到期日期設定的金鑰，請將 [到期] 值變更為12/31/9999。 到期日設定為日期12/31/9999 以外的金鑰將不會通過 Microsoft 365 驗證。
   
 若要變更已設定為12/31/9999 以外任何值的到期日，請執行 AzKeyVaultKey 指令 [程式](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) ，如下所示：
   
@@ -299,10 +296,10 @@ Azure PowerShell:
 ### <a name="create-policy"></a>建立原則
 
 ```powershell
-   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>] [-Enabled <Boolean>]
+   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>]
 ```
 
-描述：使用兩個 AKV 根機碼，啟用相容性管理員以建立新的資料加密原則 (DEP) 。 一旦建立後，便可使用 Set-M365DataAtRestEncryptionPolicy Cmdlet 指派原則。 在初次指派按鍵或旋轉按鍵後，新的機碼可能需要長達24小時才會生效。 如果新的 DEP 需要24小時以上才能生效，請與 Microsoft 聯繫。
+描述：使用兩個 AKV 根機碼，啟用相容性管理員以建立新的資料加密原則 (DEP) 。 一旦建立後，便可使用 Set-M365DataAtRestEncryptionPolicyAssignment Cmdlet 指派原則。 在初次指派按鍵或旋轉按鍵後，新的機碼可能需要長達24小時才會生效。 如果新的 DEP 需要24小時以上才能生效，請與 Microsoft 聯繫。
 
 範例：
 
@@ -321,7 +318,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 ### <a name="assign-policy"></a>指派原則
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_PolicyName or Default_PolicyID>”
 ```
 
 描述：此指令程式用於設定預設資料加密原則。 這個原則將用來加密所有支援工作負載中的資料。 
@@ -329,18 +326,19 @@ Set-M365DataAtRestEncryptionPolicyAssignment -Policy “<Default_PolicyName or D
 範例：
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_PolicyName”
 ```
 
 參數：
+
 | 名稱 | 描述 | 選用 (Y/N)  |
 |----------|----------|---------|
--原則|指定需要指派的資料加密原則;請指定原則名稱或原則識別碼。|N|
+-DataEncryptionPolicy|指定需要指派的資料加密原則;請指定原則名稱或原則識別碼。|N|
 
 ### <a name="modify-or-refresh-policy"></a>修改或重新整理原則
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
+Set-M365DataAtRestEncryptionPolicy [-Identity] <M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
 ```
 
 描述：此 Cmdlet 可用於修改或重新整理現有的原則。 也可以用來啟用或停用原則。 在初次指派按鍵或旋轉按鍵後，新的機碼可能需要長達24小時才會生效。 如果新的 DEP 需要24小時以上才能生效，請與 Microsoft 聯繫。
@@ -360,18 +358,19 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 ```
 
 參數：
+
 | 名稱 | 描述 | 選用 (Y/N)  |
 |----------|----------|---------|
 |-Identity|指定您要修改的資料加密原則。|N|
 |-重新整理|在您旋轉 Azure Key Vault 中的任何相關機碼之後，請使用重新整理參數來更新資料加密原則。 您不需要使用此參數指定值。|Y|
 |-已啟用|Enabled 參數會啟用或停用資料加密原則。 停用原則之前，必須先將其指派給您的租使用者。 有效值為：</br > $true：已啟用原則</br > $true：已啟用原則。此為預設值。|Y|
-|-名稱|Name 參數會指定資料加密原則的唯一名稱。|Y
+|-名稱|Name 參數會指定資料加密原則的唯一名稱。|Y|
 |-描述|Description 參數會指定資料加密原則的選擇性描述。|Y|
 
 ### <a name="get-policy-details"></a>取得原則詳細資料
 
 ```powershell
-Get-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
+Get-M365DataAtRestEncryptionPolicy [-Identity] <M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
 ```
 
 描述：此 Cmdlet 會列出針對租使用者或特定原則的詳細資料所建立的所有 M365DataAtRest 加密原則。

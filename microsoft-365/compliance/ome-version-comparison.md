@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 本文可協助說明不同版本的 Office 365 郵件加密之間的差異。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 30344a9cbe8629804f5026fc809577923965b7bc
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: a587e27460d949811f9f30af0244cf325aaadac6
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032620"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741334"
 ---
 # <a name="compare-versions-of-ome"></a>比較 OME 版本
 
@@ -56,11 +56,11 @@ Set-IrmConfiguration -AzureRMSLicensingEnabled $true
 |           **情況**           | **舊版 OME**    | **AD RMS 中的 IRM**        | **新的 OME 功能** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |*傳送加密郵件*        |透過 Exchange 郵件流程規則|使用者從 Outlook desktop 或網頁型 Outlook 啟動;或透過 Exchange 郵件流程規則|使用者從 Outlook desktop、Mac 版 Outlook 或網頁型 Outlook 啟動;透過 Exchange 郵件流程規則 (也稱為傳輸規則) 和資料遺失防護 (DLP) |
-|*Rights management 範本*       |   不適用      |[不要轉寄] 選項及自訂範本|[不要轉寄] 選項、Encrypt-Only 選項及自訂範本|
+|*Rights management 範本*       |   N/A      |[不要轉寄] 選項及自訂範本|[不要轉寄] 選項、[只供加密] 選項及自訂範本|
 |*收件者類型*                   |內部和外部收件者|僅限內部收件者         |內部和外部收件者|
 |*內部收件者的經驗*|收件者會收到 HTML 郵件，其可在網頁瀏覽器或行動裝置應用程式中下載及開啟|Outlook 用戶端中的原生內嵌體驗|使用 Outlook 用戶端的相同組織中收件者的原生內嵌經驗。  收件者可以使用 Outlook 以外的用戶端，從 OME 入口網站讀取郵件 () 不需要下載或應用程式。|
-|*外部收件者的經驗*|收件者會收到 HTML 郵件，其可在網頁瀏覽器或行動裝置應用程式中下載及開啟|不適用|Microsoft 365 收件者的原生內聯體驗。 所有其他收件者都可以從 OME 入口網站讀取訊息 (不需要下載或應用程式) 。|
-|*附件許可權*           |不限制附件|附件受到保護|[不要轉寄] 選項及自訂範本會保護附件。 系統管理員可以選擇是否要保護 Encrypt-Only 選項的附件。|
+|*外部收件者的經驗*|收件者會收到 HTML 郵件，其可在網頁瀏覽器或行動裝置應用程式中下載及開啟|N/A|Microsoft 365 收件者的原生內聯體驗。 所有其他收件者都可以從 OME 入口網站讀取訊息 (不需要下載或應用程式) 。|
+|*附件許可權*           |不限制附件|附件受到保護|[不要轉寄] 選項及自訂範本會保護附件。 系統管理員可以選擇是否要保護只供加密之選項的附件。|
 |*在 BYOK) 支援中引入您自己的金鑰 (*|無                |無               |支援 BYOK          |
 ||
 
@@ -68,7 +68,7 @@ Set-IrmConfiguration -AzureRMSLicensingEnabled $true
 
 新功能具有下列優點：
 
-- 可以使用 Encrypt-Only (來啟用安全共同作業) 、不要轉寄及自訂限制。
+- 可使用 [只加密] 選項 (啟用安全共同作業) 、[不要轉寄] 選項及自訂限制的功能。
 - 寄件者可以從 Outlook Desktop、Mac 版 Outlook 和 Outlook 網頁版用戶端上的新功能，以手動方式傳送郵件。
 - Microsoft 365 收件者可在支援的 Outlook 用戶端中使用內嵌經驗。 或者，系統管理員可以選擇顯示 Microsoft 365 收件者的署名體驗。
 - Microsoft 365 以外的帳戶（例如 Gmail、Yahoo 和 Microsoft 帳戶）與 OME 入口網站同盟，可提供更佳的使用者經驗給這些收件者。 所有其他身分識別使用一次性程式碼來存取加密的郵件。

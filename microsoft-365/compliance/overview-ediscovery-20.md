@@ -11,20 +11,21 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
-- M365-security-compliance
-- m365solution-aed
+- m365-security-compliance
+- m365solution-ediscovery
 - m365initiative-compliance
+- m365solution-overview
 search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解 Microsoft 365 中的高級 eDiscovery 解決方案。 本文概要說明 Microsoft 365 中的高級 eDiscovery，這是協助您管理內部及外部調查的工具。 它也可讓您使用高級 eDiscovery 來管理法律調查的商業原因。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1b2fa0b42a7f439aa65ae53e76e377ded92f97b7
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 6623682dedd0342f1e88478127d23bbbd4ab9dbb
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840876"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727584"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Microsoft 365 Advanced eDiscovery 概述
 

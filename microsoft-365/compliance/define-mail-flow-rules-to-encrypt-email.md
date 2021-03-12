@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以使用 Office 365 郵件加密，瞭解如何建立郵件流程規則 (傳輸規則) 以加密及解密郵件。
-ms.openlocfilehash: 8060309f350b50c2aadc9a703e7a57a4caf8808c
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 58b5e592ee8da92a2dbfd10f533aad3240b7a484
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597225"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741552"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>定義郵件流程規則以加密電子郵件
 
@@ -86,7 +86,7 @@ ms.locfileid: "50597225"
 
 6. 若要使用新的 OME 功能來啟用加密，請從 **執行下列** 動作，選擇 [ **修改郵件安全性** ]，然後選擇 [套用 **Office 365 郵件加密和許可權保護**]。 從清單中選取 RMS 範本，然後選擇 [ **儲存** ]，然後選擇 **[確定]**。
 
-   範本清單包括所有預設範本和選項，以及您已建立供 Office 365 使用的任何自訂範本。 如果清單是空的，請確定您已設定 Office 365 郵件加密的新功能，如 [設定以 Azure 資訊保護為基礎的新 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)所述。 如需預設範本的相關資訊，請參閱設定 [及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。 如需有關 [ **不要轉寄** ] 選項的詳細資訊，請參閱 [請勿轉寄選項的電子郵件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 如需只供 **加密** 之選項的詳細資訊，請參閱 [僅限加密選項的電子郵件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
+   範本清單包括所有預設範本和選項，以及您已建立供 Office 365 使用的任何自訂範本。 如果清單是空的，請確定您已設定 Office 365 郵件加密的新功能，如 [設定以 Azure 資訊保護為基礎的新 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)所述。 如需預設範本的相關資訊，請參閱設定 [及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。 如需有關 [不要轉寄] 選項的詳細資訊，請參閱 [請勿轉寄選項的電子郵件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 如需只供加密之選項的詳細資訊，請參閱 [只對電子郵件加密選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
    如果您想要指定另一個動作，您可以選擇 [ **新增動作** ]。
 
