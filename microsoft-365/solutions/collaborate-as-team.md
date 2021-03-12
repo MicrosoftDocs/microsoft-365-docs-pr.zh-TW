@@ -1,5 +1,5 @@
 ---
-title: 在小組中與來賓共同作業
+title: 在團隊中與來賓共同作業
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -14,170 +14,170 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Normal
+localization_priority: Priority
 f1.keywords: NOCSH
-description: 深入瞭解為小組中的客人設定任務、交談及檔共同作業時，所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: 66c5692dd8cd233d8b3639f8ce0755ce51b60c0a
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
-ms.translationtype: MT
+description: 了解所需的 Microsoft 365 設定步驟，以在 Teams 中成立團隊並與來賓進行工作、交談和文件共同作業。
+ms.openlocfilehash: 986f9c1f343c8ccc3d76557291938d170923c89b
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233071"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712315"
 ---
-# <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
+# <a name="collaborate-with-guests-in-a-team"></a>在團隊中與來賓共同作業
 
-如果您需要跨檔、工作和交談共同處理來賓，我們建議使用 Microsoft 團隊。 小組會提供 Office 和 SharePoint 中的所有共同作業功能，以及持續聊天的功能，以及可自訂且可擴展的共同作業工具集合，以整合的使用者體驗。
+如果您需要跨文件、工作及交談與來賓共同作業，建議您使用 Microsoft Teams。 Teams 提供 Office 和 SharePoint 中具備的所有共同作業功能，搭配持續聊天及一組可自訂且可擴展的共同作業工具，進而提供一致的使用者體驗。
 
-在本文中，我們將逐步完成設定小組以與來賓共同作業時，所需的 Microsoft 365 設定步驟。 設定來賓存取權之後，您可以依照在 [小組中新增客人](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)的步驟，邀請客人加入小組。
+在本文中，我們會完成所需的 Microsoft 365 設定步驟，以成立團隊並與來賓進行共同作業。 設定來賓存取權後，您可以遵循 [在 Teams 中新增來賓至團隊](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f) 的步驟來邀請來賓加入團隊。
 
 ## <a name="video-demonstration"></a>影片示範
 
-這段影片顯示本檔所述的設定步驟。</br>
+這段影片顯示本文件中所述的設定步驟。</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
-## <a name="azure-external-collaboration-settings"></a>Azure 外部協同作業設定
+## <a name="azure-external-collaboration-settings"></a>Azure 外部共同作業設定
 
-Microsoft 365 中的共用受 [Azure Active Directory 中的 B2B 外部](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)共同作業設定的最高層級。 如果 Azure AD 中已停用或限制來賓共用，此設定會覆寫您在 Microsoft 365 中設定的任何共用設定。
+Microsoft 365 中的共用是由 [Azure Active Directory 中 B2B 外部共同作業設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations) 的最高層級所控管。 如果在 Azure AD 中停用或限制來賓共用，此設定會覆寫您於 Microsoft 365 中設定的任何共用設定。
 
-檢查 B2B 外部協同設定設定，以確保不會封鎖與來賓共用。
+檢查 B2B 外部共同作業設定，以確保不會封鎖與來賓共用。
 
 ![Azure Active Directory 組織關聯性設定頁面的螢幕擷取畫面](../media/azure-ad-organizational-relationships-settings.png)
 
-設定外部協同作業設定
+設定外部共同作業設定
 
-1. 登入 Azure Active Directory at [https://aad.portal.azure.com](https://aad.portal.azure.com) 。
-2. 在左功能窗格中，按一下 [ **Azure Active Directory**]。
-3. 按一下 [ **外部** 身分識別]。
-4. 在 [ **快速入門** ] 畫面上，按一下左功能窗格中的 [ **外部協同作業設定**]。
-5. 確定 **guest 和 guest inviter role 中的系統管理員和使用者都可以邀請** 和 **成員可以邀請** 皆設定為 **[是]**。
-6. 如果您做了任何變更，請按一下 [儲存]。
+1. 登入 Azure Active Directory，網址為：[https://aad.portal.azure.com](https://aad.portal.azure.com)。
+2. 在左側瀏覽窗格中，按一下 **Azure Active Directory**。
+3. 按一下 **外部身分識別**。
+4. 在左側瀏覽窗格的 **開始** 畫面中，按一下 **外部共同作業設定**。
+5. 請確保 **系統管理員和來賓邀請者角色中的使用者可邀請** 及 **成員可邀請** 都設定為 **是**。
+6. 如果您做了任何變更，請按一下 **儲存**。
 
-請記下 [ **協同限制** ] 區段中的設定。 確定您要與之來賓進行共同作業的網域不會遭到封鎖。
+記下 **共同作業限制** 區段中的設定。 請確定您想要共同作業之來賓的網域未封鎖。
 
-如果您與多個組織的客人合作，您可能想要限制其存取目錄資料的能力。 這可防止使用者看到目錄中的客人。 若要執行此動作，請在 [ **來賓使用者訪問限制**] 底下，選取 [來賓使用者對內容的 **存取權受到限制** ]，或 **[來賓使用者存取許可權制于自身目錄物件的屬性和成員資格]** 設定。
+如果您與多個組織的來賓合作，建議您限制他們存取目錄資料的能力。 這可防止他們查看目錄中還有誰是來賓。 若要執行這項操作，請在 **來賓使用者存取限制** 下，選取 **來賓使用者對屬性及目錄物件設定的成員資格存取受限** 或 **來賓使用者存取受限於他們自己的目錄物件的屬性及成員資格**。
 
-## <a name="teams-guest-access-settings"></a>小組訪客存取設定
+## <a name="teams-guest-access-settings"></a>Teams 來賓存取設定
 
-團隊具有來賓存取的主圖形參數和各種設定，可控制哪些來賓可以在小組中執行。 主要參數 **允許小組中的來賓存取** 必須 **開啟** ，以供來賓存取在小組中運作。
+Teams 具備來賓存取的主開啟/關閉開關，以及各種設定，可用於控制來賓可在團隊中執行哪些工作。 主開關 **在 Teams 中允許來賓存取** 必須為 **開啟** ，來賓才有存取權在 Teams 中工作。
 
-檢查以確保小組已啟用來賓存取，並根據您的業務需求對來賓設定進行任何調整。 請記住，這些設定會影響所有小組。
+檢查並確保 Teams 中已啟用來賓存取，並根據您的業務需求調整來賓設定。 請記住，這些設定會影響所有團隊。
 
 ![Teams 來賓存取切換的螢幕擷取畫面](../media/teams-guest-access-toggle-on.png)
 
 設定 Teams 來賓存取設定
 
 1. 登入 [https://admin.microsoft.com](https://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
-2. 在左功能窗格中，按一下 [ **全部顯示**]。
-3. 在 [系統管理中心] 底下，按一下 [Teams]。
-4. 在團隊系統管理中心的左功能窗格中，展開 [ **整個組織的設定** ]，然後按一下 [ **來賓存取**]。
+2. 在左側瀏覽窗格中，按一下 **顯示全部**。
+3. 在 **系統管理中心** 下，按一下 **Teams**。
+4. 在 Teams 系統管理中心的左側瀏覽窗格中展開 **全組織設定**，然後按一下 **來賓存取**。
 5. 確定 [在 Teams 中允許來賓存取] 已設定為 [開啟]。
 6. 對其他來賓設定進行所需的變更，然後按一下 [儲存]。
 
-一旦開啟團隊使用者存取，您可以選擇性地使用敏感度標籤控制個別小組及其相關聯 SharePoint 網站的 guest 存取。 如需詳細資訊，請參閱 [[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容]](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+開啟 Teams 來賓存取後，您可以選擇性地使用敏感度標籤，以控制個別團隊及其相關聯 SharePoint 網站的來賓存取。 如需詳細資訊，請參閱[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
 
 > [!NOTE]
-> 「小組訪客」設定在開啟後，可能需要長達24小時的時間才會變成作用中。
+> Teams 來賓設定在開啟後，最慢可能需要 24 小時才會生效。
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 群組來賓設定
 
-小組會使用 Microsoft 365 群組做為小組成員資格。 為了讓小組中的來賓存取能夠運作，必須開啟 Microsoft 365 群組來賓設定。
+Teams 使用 Microsoft 365 群組作為團隊成員資格。 必須開啟 Microsoft 365 群組來賓設定，才能使用 Teams 中的來賓存取。
 
-![Microsoft 365 系統管理中心中 Microsoft 365 群組來賓設定的螢幕擷取畫面](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 系統管理中心的 Microsoft 365 群組來賓設定螢幕擷取畫面](../media/office-365-groups-guest-settings.png)
 
 設定 Microsoft 365 群組來賓設定
 
-1. 在 Microsoft 365 系統管理中心的左功能窗格中，展開 [ **設定**]。
-2. 按一下 [ **組織設定**]。
-3. 在清單中，按一下 [ **Microsoft 365 群組**]。
-4. 確定 **允許群組擁有者將組織外部的人員新增至 Microsoft 365 群組做為來賓** ，並 **讓 [允許來賓群組成員存取群組內容** ] 核取方塊皆已勾選。
-5. 如果您進行變更，請按一下 [ **儲存變更**]。
+1. 在 Microsoft 365 系統管理中心左側的瀏覽窗格中，展開 **設定**。
+2. 按一下 **組織設定**。
+3. 在清單中，按一下 **Microsoft 365 群組**。
+4. 請確認已核取 **讓群組擁有者將組織外部人員新增到 Microsoft 365 群組作為來賓** 及 **讓來賓群組成員存取群組內容** 核取方塊。
+5. 如果您做了任何變更，請按一下 **儲存變更**。
 
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 組織層級共用設定
 
-小組內容（如檔案、資料夾和清單）全都儲存在 SharePoint。 為了讓來賓能夠存取小組中的這些專案，SharePoint 組織層級的共用設定必須允許與來賓共用。
+Teams 內容 (例如檔案、資料夾和清單) 全部都儲存在 SharePoint 中。 為了讓來賓能夠存取 Teams 中的這些專案，SharePoint 組織層級共用設定必須允許與來賓共用。
 
-組織層級設定會決定個別網站可使用的設定，包括與小組相關聯的網站。 網站設定不能超過組織層級設定的許可。
+組織層級設定會決定個別網站可用的設定，包括與團隊相關聯的網站。 網站設定不能比組織層級設定更寬鬆。
 
-如果您想要允許檔案和資料夾與未驗證人員共用，請選擇 [ **任何人**]。 如果您想要確保所有來賓都必須進行驗證，請選擇 [ **新增] 和 [現有來賓**]。 選擇您的組織中的任何網站所需的功能最寬鬆設定。
+如果您想要允許與未驗證人員共用檔案和資料夾，請選擇 **任何人**。 如果您想要確保所有來賓都經過驗證，請選擇 **新的及現有的來賓**。 選擇組織中任何網站所需的最寬鬆設定。
 
 ![SharePoint 組織層級共用設定的螢幕擷取畫面](../media/sharepoint-organization-external-sharing-controls.png)
 
 
-設定 SharePoint 組織層級的共用設定
+設定 SharePoint 組織層級共用設定
 
-1. 在 Microsoft 365 系統管理中心的左功能窗格中，按一下 [系統 **管理中心**] 底下的 [ **SharePoint**]。
-2. 在 [SharePoint 系統管理中心] 的左功能窗格中，展開 [ **原則** ]，然後按一下 [ **共用**]。
-3. 確定 SharePoint 的外部共用已設定為 **任何人** 或 **新的和現有的客人**。
-4. 如果您做了任何變更，請按一下 [儲存]。
+1. 在 Microsoft 365 系統管理中心的左側瀏覽窗格中，在 **系統管理中心** 下，按一下 **SharePoint**。
+2. 在 SharePoint 系統管理中心的左側瀏覽窗格中，展開 **原則** ，然後按一下 **共用**。
+3. 確定 SharePoint 的外部共用已設定為 **任何人** 或 **新的及現有的來賓**。
+4. 如果您做了任何變更，請按一下 **儲存**。
 
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 組織層級的預設連結設定
 
-預設的檔案和資料夾連結設定會決定在使用者共用檔案或資料夾時，預設會向使用者顯示的連結選項。 如有需要，使用者可以在共用之前將連結類型變更為其他選項之一。
+預設檔案和資料夾連結設定會決定當使用者共用檔案或資料夾時，預設會向使用者顯示的連結選項。 如有需要，使用者可以在共用前，將連結類型變更為其中一個其他選項。
 
-請記住，此設定會影響組織中的所有小組和 SharePoint 網站。
+請記住，此設定會影響貴組織的所有團隊和 SharePoint 網站。
 
-選擇下列任一連結類型：使用者共用檔案和資料夾時預設會選取下列其中一種連結類型：
+選擇下列任一連結類型，使用者共用檔案和資料夾時，預設會加以選取：
 
-- **任何具有連結的使用者** -如果您想要對檔案和資料夾進行許多未驗證的共用，請選擇此選項。 如果您想要允許 *任何人* 的連結，但擔心意外的共用驗證，請將其中一個其他選項視為預設值。 只有在您已啟用 **任何** 共用時，才可使用此連結類型。
-- **僅限貴組織中的人員** -如果您預期大多數的檔案和資料夾共用與組織內的人員有關，請選擇此選項。
-- **特定人員** -如果您想要對來賓執行大量檔案和資料夾共用，請考慮此選項。 這種連結類型與來賓搭配使用，需要驗證。
+- **擁有連結的任何人** - 如果您預期要共用許多未經驗證的檔案和資料夾，請選擇此選項。 如果您想要允許 *任何人* 連結，但擔心意外的未驗證共用，請考慮將其中一個其他選項設為預設值。 此連結類型只有在您已啟用 **任何人** 共用時才能使用。
+- **只有貴組織中的人員** - 如果您預期大部分檔案和資料夾共用都是與組織內部人員共用，請選擇此選項。
+- **特定人員** - 如果您預期要與來賓共用許多檔案和資料夾，請考慮使用此選項。 這種類型的連結適用於來賓，且需要他們進行驗證。
  
 ![SharePoint 組織層級檔案和資料夾共用設定的螢幕擷取畫面](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 設定 SharePoint 組織層級的預設連結設定
 
-1. 流覽至 SharePoint 系統管理中心的 [共用] 頁面。
-2. 在 [檔案 **和資料夾連結**] 底下，選取您要使用的預設共用連結。
-3. 如果您做了任何變更，請按一下 [儲存]。
+1. 瀏覽至 SharePoint 系統管理中心的共用頁面。
+2. 在 **檔案與資料夾連結** 下，選取您想要使用的預設共用連結。
+3. 如果您做了任何變更，請按一下 **儲存**。
 
-## <a name="create-a-team"></a>建立小組
+## <a name="create-a-team"></a>建立團隊
 
-下一步是建立您計畫用以與客人合作的小組。
+下一個步驟是建立您計畫用於與來賓共同作業的團隊。
 
-建立小組
-1. 在 [小組] 的 [ **小組** ] 索引標籤上，按一下 [ **加入] 或 [建立小組** ] （位於左窗格的底部）。
-2. 按一下 [ **建立小組**]。
-3. 按一下 [ **從頭開始建立小組**]。
-4. 選擇 [ **私人** ] 或 [ **公用**]。
-5. 輸入團隊的名稱和描述，然後按一下 [ **建立**]。
-6. 按一下 [ **略過**]。
+建立團隊
+1. 在 Teams 中，於 **Teams** 索引標籤左窗格底部按一下 **加入或建立團隊**。
+2. 按一下 **建立團隊**。
+3. 按一下 **從頭建立團隊**。
+4. 選擇 **私人** 或 **公用**。
+5. 輸入團隊的名稱和描述，然後按一下 **建立**。
+6. 按一下 **略過**。
 
-我們稍後會邀請使用者。 接下來，請務必檢查與小組相關聯之 SharePoint 網站的網站層級共用設定。
+我們稍後會邀請使用者。 接下來，檢查與團隊相關聯之 SharePoint 網站的網站層級共用設定，這點非常重要。
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 網站層級共用設定
 
-檢查網站層級的共用設定，確定其允許此小組的訪問類型。 例如，如果您將組織層級設定設定為 [ **任何人**]，但您希望所有來賓都對此小組進行驗證，請確定網站層級共用設定已設定為 [ **新增] 和 [現有來賓**]。
+檢查網站層級共用設定，確定它們允許你所要的此團隊存取類型。 例如，如果您將組織層級設定設為 **任何人**，但您希望所有來賓都為此團隊進行驗證，則請確定網站層級共用設定已設為 **新的及現有的來賓**。
 
 ![SharePoint 網站外部共用設定的螢幕擷取畫面](../media/sharepoint-site-external-sharing-settings.png)
 
 設定網站層級共用設定
-1. 在 SharePoint 系統管理中心的左功能窗格中，展開 [ **網站** ]，然後按一下 [作用中的 **網站**]。
-2. 為您剛建立的小組選取網站。
-3. 點擊。。。，然後選擇 [ **共用**]。
-4. 確定 [共用] 設定為 [ **任何人** ] 或 [ **現有來賓**]。
-5. 如果您做了任何變更，請按一下 [儲存]。
+1. 在 SharePoint 管理中心中，在左側導覽窗格中展開 **網站**，然後按一下 **使用中網站**。
+2. 為您剛建立的團隊選取網站。
+3. 按一下 [...] 然後選擇 **共用**。
+4. 請確認共用設為 **任何人** 或 **新的及現有的來賓**。
+5. 如果您做了任何變更，請按一下 **儲存**。
 
 ## <a name="invite-users"></a>邀請使用者
 
-現在已設定來賓共用設定，因此您可以開始將內部使用者和來賓新增至您的小組。 
+來賓共用設定現已設定，因此您可以開始將內部使用者和來賓新增到您的團隊。 
 
-邀請內部使用者加入小組
-1. 在團隊中，按一下 [ **更多選項** ] (**\*\*\***) ]，然後按一下 [ **新增成員**]。
-2. 輸入您要邀請之人員的名稱。
-3. Click **Add**, and then click **Close**.
+邀請內部使用者加入團隊
+1. 在該團隊中，按一下 **更多選項** (**\*\*\***)，然後按一下 **新增成員**。
+2. 輸入要邀請的人員名稱。
+3. 按一下 **新增**，然後按一下 **關閉**。
 
-邀請客人加入小組
-1. 在團隊中，按一下 [ **更多選項** ] (**\*\*\***) ]，然後按一下 [ **新增成員**]。
-2. 輸入您要邀請之客人的電子郵件地址。
-3. 按一下 [ **編輯來賓資訊**]。
-4. 輸入來賓的完整名稱，然後按一下核取記號。
-5. Click **Add**, and then click **Close**.
+邀請來賓加入團隊
+1. 在該團隊中，按一下 **更多選項** (**\*\*\***)，然後按一下 **新增成員**。
+2. 輸入要邀請之來賓的電子郵件地址。
+3. 按一下 **編輯來賓資訊**。
+4. 輸入來賓的全名，然後按一下核取方塊。
+5. 按一下 **新增**，然後按一下 **關閉**。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [與未驗證使用者共用檔案和資料夾的最佳做法](best-practices-anonymous-sharing.md)
 
@@ -189,4 +189,4 @@ Microsoft 365 中的共用受 [Azure Active Directory 中的 B2B 外部](https:/
 
 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[當您從 SharePoint 或 OneDrive 共用時，共用選項會變灰。](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[從 SharePoint 或 OneDrive 共用時，共用選項會以灰色顯示](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

@@ -20,12 +20,12 @@ description: 深入瞭解 SharePoint 線上如何在使用者上傳的檔案中�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0eafb9e5e2f0c9d86791fe83931276e420afcd9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9ba3d19c6b04b93d9b1089540b7483d8b2e7246c
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286498"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727496"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive 和 Microsoft 團隊中內建的病毒防護
 
@@ -40,16 +40,16 @@ Microsoft 365 使用常見的病毒偵測引擎，掃描使用者上傳至 Share
 > [!IMPORTANT]
 > 內建的防病毒功能是一種協助包含病毒的方式。 它們不是用來防禦您環境中惡意程式碼的單一防禦點。 我們鼓勵所有客戶調查和執行各層的反惡意程式碼保護，並套用最佳作法，以保護其企業基礎結構。 如需策略及最佳作法的詳細資訊，請參閱 [安全性藍圖](security-roadmap.md)。
 
-## <a name="what-happens-when-an-infected-file-is-uploaded-to-sharepoint-online"></a>將感染的檔案上傳至 SharePoint 線上時，會發生什麼情況？
+## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>將感染的檔案上傳至 SharePoint 線上時，會發生什麼情況？
 
-Microsoft 365 病毒偵測引擎會在線上 SharePoint 內非同步執行。 **上載時不會自動掃描所有** 檔案。 啟發式決定要掃描的檔案。 當發現檔案包含病毒時，會對該檔案進行標記，使其無法再次下載。 在4月2018，我們已移除已掃描檔案的 25 MB 限制。
+Microsoft 365 病毒偵測引擎會以非同步方式執行 (獨立于 SharePoint 線上中的檔案上傳) 。 **不會自動掃描所有** 檔案。 啟發式決定要掃描的檔案。 當找到檔案包含病毒時，就會標示該檔案。 在4月2018，我們已移除已掃描檔案的 25 MB 限制。
 
 會發生下列情況：
 
 1. 使用者將檔案上傳到線上 SharePoint。
-2. SharePoint 線上決定檔是否符合掃描的準則。
-3. 病毒偵測引擎會掃描檔案。
-4. 如果找到病毒，病毒引擎便會將檔案上的屬性設定為指出其受到感染。
+2. SharePoint 線上，成為病毒掃描程式的一部分，稍後會判斷檔案是否符合掃描的準則。
+3. 如果檔案符合掃描的準則，病毒偵測引擎便會掃描檔案。
+4. 如果在掃描的檔案內找到病毒，病毒引擎便會將檔案上的屬性設定為表示感染的檔案。
 
 ## <a name="what-happens-when-a-user-tries-to-download-an-infected-file-by-using-the-browser"></a>當使用者嘗試使用瀏覽器下載感染的檔案時，會發生什麼事？
 

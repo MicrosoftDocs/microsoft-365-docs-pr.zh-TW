@@ -2,8 +2,8 @@
 title: 安全連結
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護，以保護其組織免受使用惡意 URLs 的網路釣魚和其他攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 15168f2fff5ce1e4afbef5ff71a780de896f0bbf
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b8e184930e0891844a2a6f3b7b60cf5122ca4597
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288690"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727528"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全連結
 
@@ -117,6 +117,8 @@ ms.locfileid: "50288690"
   URL 按一下 [追蹤] 以取得內部寄件者和內部收件者之間所傳送的電子郵件中的連結目前不支援。
 
 - **不允許使用者依序按一下原始 url**：允許或封鎖使用者按一下 [ [警告] 頁面](#warning-pages-from-safe-links) 至原始 url。 建議值已啟用。
+
+- **在通知和警告頁面上顯示組織商標**：此選項會在警告頁面上顯示組織的署名。 署名可協助使用者識別合法的警告，因為攻擊者經常會使用預設的 Microsoft 警告頁面。 如需自訂商標的詳細資訊，請參閱 [將品牌新增至您組織的 Azure Active Directory 登入頁面](/azure/active-directory/fundamentals/customize-branding)。
 
 - **請勿重新寫入下列 URLs**：保留 URLs。 保留不需要掃描之安全 URLs 的自訂清單。 每個安全連結原則的清單都是唯一的。 如需 [不要重新 **寫入下列 URLs** ] 清單的詳細資訊，請參閱本文稍後的「 [安全連結原則中的「不要重新寫入下列 URLs」清單](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) 」一節。
 

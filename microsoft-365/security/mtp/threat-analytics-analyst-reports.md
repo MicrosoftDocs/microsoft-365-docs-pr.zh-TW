@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 650282e0dce49cc392eeb7501f91b3ffed9f0707
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c82b0a84582d18f8b08b369ff76ba34046c40eba
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167551"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727112"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>瞭解威脅分析中的分析報告
 

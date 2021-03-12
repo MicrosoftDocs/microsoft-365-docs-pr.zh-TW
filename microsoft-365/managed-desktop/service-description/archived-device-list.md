@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e392d071b77226a23001d8628c3b9c711b06e228
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: bbb3814a973bec53a877bc70d0299ce7b2eb87b5
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454580"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727550"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 管理的桌面封存裝置
 
@@ -48,16 +48,22 @@ ms.locfileid: "50454580"
 |Dell Optiplex 3070 | 128 GB/Intel i3/8 GB RAM | 無 | **5月1日2025**  |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 需要5VS01AV、紅外線相機或指紋感應器的 SKU  | **2023年2月15日** |
 |HP EliteBook 830/840/850 G6| 128 GB/Intel i5/8 GB RAM | 需要5VS01AV、紅外線相機或指紋感應器的 SKU  | **2023年11月30日** |
+|HP EliteBook 830/840/850 G7| 128 GB/Intel i5/8 GB RAM | 需要9MZ21AV、紅外線相機或指紋感應器的 SKU  | **2024年11月30日** |
 |HP 精英 x2 1013 G3| 256 GB/Intel i5/8 GB RAM | SKU 與5VS03AV，需要 IR 相機 |**2023年5月14日** |
+|HP 精英 x2 G4| 256 GB/Intel i5/8 GB RAM | SKU 與5VS03AV，需要 IR 相機 |**2024年5月31日** |
+|HP EliteBook x360 830 G7| 256 GB/Intel i5/8 GB RAM | SKU 與9MZ21AV，需要 IR 相機 |**2024年11月30日** |
 |HP EliteBook x360 1030 G5| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 |**2023年5月14日** |
 |HP EliteBook x360 1030 G6| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 |**2023年11月30日** |
 |HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 | **2023年10月23日** |
 |HP EliteBook x360 1040 G6| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 | **2023年11月30日** |
+|HP EliteBook x360 1030/1040 G7| 256 GB/Intel i5/8 GB RAM | SKU 與8XW08AV，需要 IR 相機 | **2024年8月31日** |
 |HP ProBook x360 440 G1| 128 GB/Intel i3/8 GB RAM | 需要5VS04AV、紅外線相機或指紋辨識器的 SKU | **2023年6月6日** |
 |HP EliteDesk 800 G4 DM | 128 GB/Intel i3/8 GB RAM | 具有5VS04AV 的 SKU | **2023年7月18日** |
 |HP EliteDesk 800 G4 SFF | 128 GB/Intel i3/8 GB RAM | 具有5VS04AV 的 SKU | **2023年7月18日** |
 |AIO 中的 HP EliteOne 800 G4 23。8 |128 GB/Intel i3/8 GB RAM |具有5VS04AV 的 SKU| **2023年7月18日** |
+|HP EliteOne 800 G6 24/27 AIO |256 GB/Intel i5/8 GB RAM |具有9XM14AV 的 SKU| **2025年6月30日** |
 |HP ZBook 14u/15u G6 移動工作站 |256 GB/Intel i5/8 GB RAM |SKU 與5VS04AV，需要 IR 相機| **2023年11月30日** |
+|HP ZBook Firefly 14/15 G7 移動工作站 |256 GB/Intel i5/8 GB RAM |SKU 與9MZ22AV，需要 IR 相機| **2024年11月30日** |
 |Surface Book 2| 256 GB/Intel i5/8 GB RAM | 無 | **2022年11月16日** |
 |移至表面| 128 GB/Intel 4415Y/8GB RAM | 無 | **2023年8月2日** |
 |Surface 膝上型電腦| 256 GB/Intel i5/8 GB RAM | 無 | **2022年5月20日** |

@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 瞭解如何在 Microsoft 365 群組、小組、SharePoint 及 Yammer 中管理相關的功能。
-ms.openlocfilehash: 8f1341b3b3bab1e9ae7219f01124983aefb022b1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50424037"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741594"
 ---
 # <a name="what-is-collaboration-governance"></a>什麼是共同作業控管？
 
@@ -41,7 +41,7 @@ Microsoft 365 群組、小組和 Yammer 等服務可讓使用者，並提供共�
 
 在您的組織中部署 Microsoft 365 群組和小組以進行安全共同作業時，有許多選項。 我們建議您使用這個控管內容搭配 [設定 Microsoft 365 的安全](setup-secure-collaboration-with-teams.md) 共同作業，以及其相關的文章，為您的組織建立最佳的共同作業解決方案。
 
-## <a name="what-are-microsoft-365-groups"></a>何謂 Microsoft 365 群組？
+## <a name="why-microsoft-365-groups-are-important"></a>Microsoft 365 群組為何很重要
 
 Microsoft 365 群組可讓您選擇您想要共同作業的一組人員，並輕鬆地設定要共用之人員的資源集合。 新增成員至群組時，會自動授與群組所提供之所有資產的必要許可權。 兩個小組和 Yammer 都使用 Microsoft 365 群組來管理其成員資格。
 
@@ -166,7 +166,7 @@ Microsoft 學習的這些訓練模組可協助您瞭解 Microsoft 365 中的管�
 
 |培訓：|管理資訊保護和管理|
 |:---|:---|
-|![資訊保護訓練圖示](../media/information-protection-governance.svg)|目前所產生的資料量會比以往更快，員工們想要在所有工作中完成工作，而且法規形勢會不斷變更。 Microsoft 的資訊保護和控管解決方案可協助組織在保持資料保護和其人員生產力之間達到適當的平衡。 這個學習路徑可協助您準備 Microsoft 365 認證：安全性系統管理員助理和 Microsoft 365 認證：企業管理員專家認證。<br><br>5小時13分-7 模組|
+|![資訊保護訓練圖示](../media/information-protection-governance.svg)|目前所產生的資料量會比以往更快，員工們想要在所有工作中完成工作，而且法規形勢會不斷變更。 Microsoft 的資訊保護和控管解決方案可協助組織在保持資料保護和其人員生產力之間達到適當的平衡。 這個學習路徑可協助您準備 Microsoft 365 認證：安全性系統管理員關聯和 Microsoft 365 認證：企業管理專家 認證。<br><br>5小時13分-7 模組|
 
 > [!div class="nextstepaction"]
 > [開始 >](https://docs.microsoft.com/learn/modules/m365-compliance-information-governance/introduction/)
@@ -228,7 +228,7 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 
 - [接納 Microsoft 365 群組](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
-**管理**
+**Governance**
 
 瞭解如何設定您的群組到期生命週期、命名原則、分類標籤、與外部來賓的共同作業，以及管理群組建立許可權。
 
@@ -240,7 +240,7 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 
 - [使用 Office 365 群組、SharePoint、小組和 Yammer 尋找共同作業的最擅長點](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 安全性文件](https://docs.microsoft.com/microsoft-365/security)
 

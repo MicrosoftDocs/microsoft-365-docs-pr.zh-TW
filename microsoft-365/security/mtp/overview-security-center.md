@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 87149ab9c99168d62f5114555a46b8bfaee83ab2
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 7db9b9762830384370a4bedf220d7a52112ab1ea
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712099"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727208"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>整合的 Microsoft 365 安全性中心概述
 
@@ -107,6 +107,9 @@ Microsoft 365 的安全性中心強調 *unity、清晰度及共同目標* ，因
 
 - 深入瞭解如何 [管理 Microsoft 365 Defender 的存取](mtp-permissions.md)
 - 深入瞭解如何在 Microsoft 365 的安全性中心[建立自訂角色](custom-roles.md)
+
+> [!NOTE]
+> Microsoft 365 security center 中的 microsoft Defender for Endpoint 可將存取權授與 [受管理的安全性服務提供者。 (MSSPs) ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) 在 [microsoft Defender security center 中授](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)與存取權的方式相同。
 
 ### <a name="integrated-reports"></a>整合報告
 
