@@ -53,6 +53,8 @@
               href: mtp/microsoft-365-security-center-mdo.md
             - name: 將適用於端點的 Defender 重新導向至 Microsoft 365 安全性中心
               href: mtp/microsoft-365-security-mde-redirection.md
+            - name: 將適用於 Office 365 的 Defender 重新導向至 Microsoft 365 安全性中心
+              href: mtp/microsoft-365-security-mdo-redirection.md
             - name: 預覽功能
               href: mtp/preview.md
             - name: 針對問題進行疑難排解
