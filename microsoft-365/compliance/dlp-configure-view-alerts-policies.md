@@ -1,11 +1,11 @@
 ---
-title: '設定及查看 DLP 原則 (預覽的警示) '
+title: 設定和檢視 DLP 原則的警示 (預覽)
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 10/15/2020
+ms.date: ''
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何定義及管理 DLP 原則的警示。
-ms.openlocfilehash: addf46b27575f1a1cc062949aedb7ecdecaf7286
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: 7bc9d9b59c0424792f995be42591548b758c99ec
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651451"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766418"
 ---
 # <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>設定及查看 DLP 原則的警示 (預覽) 
 
@@ -44,7 +44,7 @@ ms.locfileid: "48651451"
     -   裝置
 -   **高級警示設定選項**：這些選項是 DLP 原則撰寫流程的一部分。 使用它們來建立豐富的警示設定。 您可以根據事件數目或洩漏的資料大小，來建立單一事件警示或匯總警示。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>事前準備
 
 開始之前，請確定您具備必要的必要條件：
 
@@ -60,8 +60,8 @@ Office 365 DLP 所有合格租使用者皆可存取新的 DLP 警示管理儀表
 
 ### <a name="licensing-for-alert-configuration-options"></a>警示設定選項的授權
 
--   **單一事件警示**設定：具有 E1、F1 或 G1 訂閱或 E3 或 G3 訂閱的組織，只會建立在每次發生活動時觸發警示的警示原則。
--   **匯總的警示**設定：若要根據臨界值來設定匯總警示原則，您必須具有下列任一設定：
+-   **單一事件警示** 設定：具有 E1、F1 或 G1 訂閱或 E3 或 G3 訂閱的組織，只會建立在每次發生活動時觸發警示的警示原則。
+-   **匯總的警示** 設定：若要根據臨界值來設定匯總警示原則，您必須具有下列任一設定：
     -   E5 或 G5 訂閱
     -   具有下列其中一項功能的 E1、F1 或 G1 訂閱或 E3 或 G3 訂閱：
         -   Office 365 進階威脅防護方案 2
@@ -93,7 +93,7 @@ Office 365 DLP 所有合格租使用者皆可存取新的 DLP 警示管理儀表
 
 如果您符合 [單一事件警示設定選項](#licensing-for-alert-configuration-options)，則會在 DLP 原則製作體驗中看到下列警示設定選項。 使用此選項，可建立每當 DLP 規則比對使用者活動發生時，每次都會引發的警示。
 
-:::image type="content" source="../media/incident-reports-options-single-event-alerts.png" alt-text="螢幕擷取畫面顯示適用于已匯總警示設定選項之使用者的附隨報告選項。" border="false":::
+:::image type="content" source="../media/incident-reports-options-single-event-alerts.png" alt-text="螢幕擷取畫面顯示適用于單一事件警示設定選項的使用者附隨報告選項。" border="false":::
 
 ## <a name="dlp-alert-management-dashboard"></a>DLP 警示管理儀表板
 
@@ -106,7 +106,7 @@ Office 365 DLP 所有合格租使用者皆可存取新的 DLP 警示管理儀表
     -   選擇 [篩選] 以精煉警示清單。 選擇 [ **自訂欄位** ]，列出您要查看的屬性。 您也可以選擇在任何欄中，以遞增或遞減順序排序警示。
     -   選取警示以查看詳細資料：
 
-        :::image type="content" source="../media/alert-details.png" alt-text="螢幕擷取畫面顯示適用于已匯總警示設定選項之使用者的附隨報告選項。" border="false":::
+        :::image type="content" source="../media/alert-details.png" alt-text="螢幕擷取畫面顯示 DLP 警示管理儀表板上的警示詳細資料。" border="false":::
 
 1.  選取 [ **事件** ] 索引標籤，以查看與警示相關聯的所有事件。 您可以選擇特定的事件來查看其詳細資料。
     下表顯示一些事件的詳細資料。
@@ -123,7 +123,7 @@ Office 365 DLP 所有合格租使用者皆可存取新的 DLP 警示管理儀表
     |                   | IP 位址                    | 電腦的 IP 位址                                                  | 裝置事件                           |
     |                   | 檔案路徑                     | 與非法相關之檔案的絕對路徑                        | SharePoint、OneDrive 和裝置事件 |
     |                   | 電子郵件收件者              | 違反 DLP 原則的電子郵件收件者                       | Exchange 事件                          |
-    |                   | 電子郵件主題                 | 違反 DLP 原則的電子郵件主題                          | Exchange 事件                          |
+    |                   | 電子郵件主旨                 | 違反 DLP 原則的電子郵件主題                          | Exchange 事件                          |
     |                   | 電子郵件附件             | 違反 DLP 原則之電子郵件中的附件名稱         | Exchange 事件                          |
     |                   | 網站擁有人                    | 網站擁有者的名稱                                                     | SharePoint 和 OneDrive 事件           |
     |                   | 網站 URL                      | SharePoint 或 OneDrive 網站的完整 URL                                | SharePoint 和 OneDrive 事件           |
@@ -141,7 +141,7 @@ Office 365 DLP 所有合格租使用者皆可存取新的 DLP 警示管理儀表
     
 1.  選取 [ **敏感資訊類型** ] 索引標籤，以查看內容中偵測到的敏感資訊類型的詳細資料。 詳細資料包括自信和計數。
 
-2.  調查警示之後，請選擇 [ **管理警示** **]，以變更狀態 (使用**中、 **調查**、 **消除**或 **解決**) 。 您也可以新增批註，並將提醒指派給組織中的某人。
+2.  調查警示之後，請選擇 [ **管理警示** **]，以變更狀態 (使用** 中、 **調查**、 **消除** 或 **解決**) 。 您也可以新增批註，並將提醒指派給組織中的某人。
 
     -   若要查看工作流程管理的史，請選擇 [ **記錄管理**]。
     -   針對警示採取必要的動作後，請將警示的狀態設定為 [ **已解決**]。
