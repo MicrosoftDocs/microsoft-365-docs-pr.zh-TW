@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 的 Microsoft Defender 中的提醒、報告和調查，以快速識別已標記的使用者。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e5ddffad6405f48a9af55b5123729eb256064a7
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 80bd360888be3aeea42da6f9b58a119a9752d382
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453642"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758889"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的使用者標記
 
@@ -45,6 +45,8 @@ ms.locfileid: "50453642"
 
 本文說明如何在安全性 & 規範中心內設定使用者標記。 安全性 & 合規性中心內沒有 Cmdlet 可管理使用者標記。
 
+若要查看使用者標記屬於策略的一部分，以協助保護高影響的使用者帳戶，請參閱 [Microsoft 365 中優先順序帳戶的安全性建議](security-recommendations-for-priority-accounts.md)。
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **使用者標記** ] 頁面，請開啟] <https://protection.office.com/userTags> 。
@@ -63,9 +65,9 @@ ms.locfileid: "50453642"
 
 - 您也可以在 Microsoft 365 admin center 中管理及監視優先順序帳戶。 如需相關指示，請參閱 [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)。
 
-## <a name="use-the-security-center-to-create-user-tags"></a>使用安全中心建立使用者標記
+## <a name="use-the-security--compliance-center-to-create-user-tags"></a>使用安全性 & 規範中心建立使用者標記
 
-1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
 2. 在開啟的 [ **使用者標記** ] 頁面上，按一下 [ **建立標記**]。
 
@@ -94,9 +96,9 @@ ms.locfileid: "50453642"
 
    當您完成時，按一下 [ **提交**]。
 
-## <a name="use-the-security-center-to-view-user-tags"></a>使用安全中心來查看使用者標記
+## <a name="use-the-security--compliance-center-to-view-user-tags"></a>使用安全性 & 規範中心來查看使用者標記
 
-1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
 2. 在開啟的 [ **使用者標記** ] 頁面上，選取您要查看的使用者標籤 (不要按一下核取方塊) 。
 
@@ -104,9 +106,9 @@ ms.locfileid: "50453642"
 
    完成時，請按一下 [關閉]。
 
-## <a name="use-the-security-center-to-modify-user-tags"></a>使用 [安全性中心] 修改使用者標記
+## <a name="use-the-security--compliance-center-to-modify-user-tags"></a>使用安全性 & 規範中心來修改使用者標記
 
-1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
 2. 在開啟的 [ **使用者標記** ] 頁面上，選取您要查看的使用者標記，然後按一下 [ **編輯標記**]。
 
@@ -114,10 +116,10 @@ ms.locfileid: "50453642"
 
    當您完成時，按一下 [ **提交**]。
 
-## <a name="use-the-security-center-to-remove-user-tags"></a>使用安全中心來移除使用者標記
+## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>使用安全性 & 規範中心移除使用者標記
 
 **附注**：您無法移除內建的 [ **優先順序] 帳戶** 標記。
 
-1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
 2. 在開啟的 [ **使用者標記** ] 頁面上，選取您要移除的使用者標籤，按一下 [ **刪除** 標籤]，然後選取 [ **是]，** 然後在顯示的警告中移除。

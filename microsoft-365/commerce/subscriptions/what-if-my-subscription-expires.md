@@ -8,237 +8,234 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
-description: 瞭解當您的 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
-ms.openlocfilehash: c191b2fa795614a272b28cedae8d23693933dc95
-ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
-ms.translationtype: MT
+description: 了解當商務用 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
+ms.openlocfilehash: a9e2e68c0eee119126af93552a50f1859f708c1f
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49135976"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741354"
 ---
-# <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>365 Microsoft 商務版訂閱結束時，我的資料與存取權會發生什麼情況？
+# <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>若要深入了解，請參閱當商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？
 
-如果您的訂閱結束時（因為它已到期，或您決定取消），您的 Microsoft 365 服務、應用程式及客戶資料的存取會在訂閱完全關閉或 *刪除* 之前，先進行多種狀態。 如果您知道這項進展，您將會更好地將您的訂閱傳回使用中狀態過遲之前的狀態，或者，如果您離開 Microsoft 365，請先備份您的資料，再將其最後刪除。
+如果您的訂閱結束 (無論是因為到期或是因為您決定取消)，您在訂閱之前對於多種狀態的 Microsoft 365 服務、應用程式和客戶資料的存取權將會完全關閉或「*刪除*」。 如果您知道這個進度，您就更能針對讓您的訂閱回到作用中狀態做好準備，以免為時已晚，或者，如果您要離開 Microsoft 365，請在最終刪除之前備份您的資料。
 
-請先閱讀重要資訊，再聯繫 [Microsoft 365 支援人員](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
+在您連絡 [Microsoft 365 客戶支援](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)之前，請仔細閱讀這個重要資訊。
   
-## <a name="what-happens-to-data-when-a-subscription-expires"></a>訂閱到期時資料會發生什麼事？
+## <a name="what-happens-to-data-when-a-subscription-expires"></a>訂閱到期時，資料會發生什麼情況？
 
-- 如果您的訂閱已到期，它會經歷下列階段：已到期/已停用/已刪除。 在訂閱到達其結束日期之後，到期的階段會立即開始。
-- 如果您關閉年度訂閱上的週期性帳單，它會與到期訂閱相同。 第一個階段的開始是年度訂閱的周年紀念，而不是在您關閉訂閱的週期性帳單設定的日期開始。
-- 如果您取消每月訂閱，則會立即停用 () 的取消日期。 這表示您的使用者會立即遺失 Microsoft 365 資產的存取權，且只有系統管理員才能存取未來90天的資料。
+- 如果您的訂閱到期，它會經歷下列階段：已到期/已停用/已刪除。 「已到期」階段會在訂閱到達結束日期之後立即開始。
+- 如果您關閉年度訂閱的週期性計費，它會經歷與已到期的訂閱相同的階段。 第一個階段是從年度訂閱的週年日開始，而不是從您關閉訂閱的週期性計費設定的日期開始。
+- 如果您取消每月訂閱，它會立即停用 (取消的日期)。 這表示您的使用者會立即失去 Microsoft 365 資產的存取權，且未來 90 天內只有系統管理員可以存取資料。
 
-下表說明當您付費的 Microsoft 365 for business 訂閱到期時，您可以預期的結果。
+下表說明付費的商務用 Microsoft 365 訂閱到期時，會是怎樣的情形。
 
-| 作用中 | 已到期 <br/> (30 天 \*)  | 停用 <br/> (90 天 \*)  | 刪除 |
+| 作用中 | 已到期 <br/>(30 天\*) | 已停用 <br/>(90 天\*) | 已刪除 |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *所有可存取的資料*                                               | *所有可存取的資料*                                                     | *僅限系統管理員可存取的資料*                                             | **資料刪除的 <br/> Azure Active Directory 已移除，如果其他服務未使用該 Active Directory** |
-| 使用者具有對 Microsoft 365、檔案及應用程式的一般存取權   | 使用者具有對 Microsoft 365、檔案及應用程式的一般存取權              | 使用者無法存取 Microsoft 365、檔或應用程式                        | 使用者無法存取 Microsoft 365、檔或應用程式                                     |
-| 系統管理員可以一般存取 Microsoft 365、data 和 Office 應用程式 | 系統管理員可以存取系統管理中心                                           | 系統管理員可以存取系統管理中心，但無法將授權指派給使用者       | 系統管理員可以存取系統管理中心，以購買及管理其他訂閱             |
-|                                                                        | 全域或計費系統管理員可以在系統管理中心重新啟用訂閱 | 全域或計費系統管理員可以在系統管理中心重新啟用訂閱 |                                                                                           |
+| *所有人都可以存取資料*                                               | *所有人都可以存取資料*                                                     | *只有系統管理員可以存取資料*                                             | **資料已刪除<br/>Azure Active Directory 已移除，如果沒有其他服務在使用** |
+| 使用者可以正常存取 Microsoft 365、檔案和應用程式   | 使用者可以正常存取 Microsoft 365、檔案和應用程式              | 使用者無法存取 Microsoft 365、檔案和應用程式                        | 使用者無法存取 Microsoft 365、檔案和應用程式                                     |
+| 系統管理員可以正常存取 Microsoft 365、資料和 Office 應用程式 | 系統管理員可以存取系統管理中心                                           | 系統管理員可以存取系統管理中心，但是無法指派授權給使用者       | 系統管理員可以存取系統管理中心以購買和管理其他訂閱             |
+|                                                                        | 全域或計費系統管理員可以在系統管理中心重新啟動訂閱 | 全域或計費系統管理員可以在系統管理中心重新啟動訂閱 |                                                                                           |
 
-* 大部分的國家和地區中的產品。
+*針對大部分國家/地區和區域的供應項目。
   
 > [!NOTE]
-> **何謂「客戶資料」？** 客戶資料（如 [Microsoft Online 服務條款](https://go.microsoft.com/fwlink/p/?LinkId=613649)中所定義）是指透過客戶使用 Microsoft 365 服務，將所有資料（包括所有的文字、聲音或圖像檔案）提供給 microsoft （或代表）提供給 microsoft 的使用者。 若要深入瞭解客戶資料的保護，請參閱 [Microsoft 服務信任入口網站入門](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)。
+> **什麼是「客戶資料」？** 客戶資料如同 [Microsoft Online Service 條款](https://go.microsoft.com/fwlink/p/?LinkId=613649)中的定義，指的是所有資料，包括所有文字、聲音或影像檔，由 Microsoft 或代表其提供，或客戶透過使用 Microsoft 365 服務所使用的資料。 若要深入了解客戶資料的保護，請參閱[開始使用 Microsoft 服務信任入口網站](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)。
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>如果我取消訂閱，會發生什麼情況？
 
-如果您在其期限結束日期之前取消訂閱，該訂閱就會跳過到期狀態，並且直接移到停用的狀態，在大部分的國家和地區中為大多數訂閱的90天。 建議您先 [備份資料](back-up-data-before-switching-plans.md) ，然後再取消，但作為系統管理員，您仍然可以存取和備份您組織的資料，當其處於停用狀態時。 您所留下的任何客戶資料在 90 天後可能會遭到刪除，並且會在取消後的 180 天內全部刪除。
+如果您在訂閱期間結束日期之前取消訂閱，訂閱會略過已到期狀態，直接進入已停用狀態 (對於大部分國家/地區和區域的大部分訂閱是 90 天)。 建議您在取消之前[備份您的資料](back-up-data-before-switching-plans.md)，但是身為系統管理員，在訂閱處於已停用狀態時，您仍然可以為貴組織存取和備份資料。 您所留下的任何客戶資料在 90 天後可能會遭到刪除，並且會在取消後的 180 天內全部刪除。
   
-當您取消訂閱時，以下是您和您的使用者所期望的功能。
+以下是取消訂閱後，您和您的使用者預期會面臨的狀況。
   
-- 系統 **管理存取** 管理員仍可登入並存取系統管理中心，並視需要購買其他訂閱。 若您是全球或計費系統管理員，您可以在90天內重新啟用所有資料都完好無損 [的訂閱](reactivate-your-subscription.md) 。
+- **系統管理員存取**：系統管理員仍可登入及存取系統管理中心，並視需要購買其他訂閱。 如果您是全域或計費系統管理員，您有 90 天的時間可以[重新啟動訂閱](reactivate-your-subscription.md)，而且所有資料皆保持原封不動。
 
-- **使用者存取** 您的使用者將無法使用 OneDrive 商務版服務，或存取客戶資料（例如，小組網站上的電子郵件或檔）。 Word 和 Excel 等 Office 應用程式最後都會進入唯讀、精簡功能模式，並顯示[未授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
+- **使用者存取**：您的使用者將無法使用服務 (像是商務用 OneDrive) 或是存取客戶資料 (例如小組網站上的電子郵件或文件)。 Word 和 Excel 等 Office 應用程式最後都會進入唯讀、精簡功能模式，並顯示[未授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
 
-若要瞭解如何取消，請參閱 [取消您的訂閱](cancel-your-subscription.md)。
+若要了解如何立即取消訂閱，請參閱[取消您的訂閱](cancel-your-subscription.md)。
   
 > [!IMPORTANT]
-> 如果您想要在一般停用期間刪除訂閱資料，您可以 [關閉您的帳戶](../close-your-account.md)。
+> 如果您想要在一般的「已停用」期間結束之前刪除您的訂閱資料，可以[關閉帳戶](../close-your-account.md)。
   
-## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>如果我的訂閱即將到期，我有哪些選項？
+## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>我的訂閱即將到期時，我有哪些選擇？
 
-當訂閱處於使用中狀態時，您和您的使用者可以一般存取您的資料，例如電子郵件和 OneDrive 商務和 Office 應用程式等服務。 作為系統管理員，當訂閱接近其到期日時，您會透過電子郵件和系統管理中心接收一系列的通知。
+當訂閱為使用中時，您和使用者可以正常存取您的資料、電子郵件、商務用 OneDrive 和 Office 應用程式等服務。 如果您是系統管理員，當您的訂閱接近到期日時，您將會透過電子郵件和系統管理中心收到一系列通知。
   
 在訂閱實際到達到期日之前，您可以選擇下列做法：
 
 ::: moniker range="o365-worldwide"
   
-- **啟用定期計費訂閱。**
+- **為訂閱啟用週期性計費。**
 
-  - 如果 **定期計費** 已開啟，您不需要採取任何動作。 您的訂閱會自動計費，您可以根據您目前的付款頻率，向您收取額外的一年或一個月。 如果您因任何原因而關閉了 **週期性的帳單** ，您可以永遠 [開啟定期計費](renew-your-subscription.md)。
+  - 如果 **週期性計費** 已開啟，您不需執行任何動作。 您的訂閱將會自動計費，而您將會根據目前的付款頻率，支付一年或一個月的費用。 如因任何原因關閉 **週期性計費**，您可以隨時[開啟週期性計費](renew-your-subscription.md)。
 
-  - 如果您購買的是含預付卡的 Microsoft 365 應用程式，您可以為訂閱 [開啟定期計費](renew-your-subscription.md) 。
+  - 如果您是使用預付卡購買 Microsoft 365 Apps 商務版，可以為訂閱[開啟週期性計費](renew-your-subscription.md)。
 
-  - 如果您是具有預付一年期的大量授權客戶，請與您的合作夥伴聯繫以購買新的產品金鑰。 您會透過電子郵件接收指示，以在 [大量授權服務中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)啟用金鑰。 若要瞭解如何尋找新的合作夥伴或您已在過去使用過的合作夥伴，請參閱 [尋找您的合作夥伴或轉銷商](../../admin/manage/find-your-partner-or-reseller.md)。
+  - 如果您是預付 1 年期的開放式大量授權客戶，請與您的合作夥伴聯繫，購買新的產品金鑰。 您會透過電子郵件收到指示，以在[大量授權服務中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)啟用您的金鑰。 若要了解如何尋找新的合作夥伴或您過去合作過的合作夥伴，請參閱[尋找您的合作夥伴或經銷商](../../admin/manage/find-your-partner-or-reseller.md)。
 
-  - 如果您有 Microsoft 365 商務應用程式，請參閱 [管理您訂閱的週期性帳單](renew-your-subscription.md)。
+  - 如果您有 Microsoft 365 Apps 商務版，請參閱[管理訂閱的週期性計費](renew-your-subscription.md)。
 
-- **讓訂閱到期。**
+- **任由訂閱到期。**
 
-  - 如果您是以信用卡或發票付款，而您不想繼續訂閱，請關閉 [定期帳單](renew-your-subscription.md)。 您的訂閱會在到期日結束，而且您可以略過所有相關的電子郵件通知。
+  - 如果您是使用信用卡或發票付款，而且不想繼續訂閱，請[關閉週期性計費](renew-your-subscription.md)。 您的訂閱會在到期日結束，您可以忽略所有相關的電子郵件通知。
 
-  - 如果您是已開啟的大量授權客戶與合作夥伴合作，您可以不採取任何動作，讓訂閱到期。
+  - 如果您是與合作夥伴合作的 Open 大量授權客戶，不需採取任何動作，任由訂閱到期即可。
 
-  - 如果您是 Office 365 Small Business Premium 客戶，且您預付 Office 365 並以產品金鑰加以啟用，您可以透過不需採取任何動作，讓訂閱到期。
+  - 如果您是 Office 365 小型企業進階版客戶，並且採用預付方式，用產品金鑰啟動 Office 365，不需採取任何動作，任由訂閱到期即可。
 
-- **在訂閱到期之前取消。** 如需詳細資訊，請參閱 [Cancel a 訂閱](cancel-your-subscription.md)。
+- **在訂閱到期之前取消。** 如需詳細資訊，請參閱[取消您的訂閱](cancel-your-subscription.md)。
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
   
-- **管理訂閱的週期性帳單。**
+- **為訂閱管理週期性計費。**
 
-  - 如果 **定期計費** 已開啟，您不需要採取任何動作。 您的訂閱將會自動計費，而您將會根據目前的付款頻率，支付一年或一個月的費用。 如果您因任何原因而關閉了 **週期性的帳單** ，您可以永遠 [開啟定期計費](renew-your-subscription.md)。
+  - 如果 **週期性計費** 已開啟，您不需執行任何動作。 您的訂閱將會自動計費，而您將會根據目前的付款頻率，支付一年或一個月的費用。 如因任何原因關閉 **週期性計費**，您可以隨時[開啟週期性計費](renew-your-subscription.md)。
 
-  - 如果您購買的是含預付卡的 Microsoft 365 應用程式，您可以為訂閱 [開啟定期計費](renew-your-subscription.md) 。
+  - 如果您是使用預付卡購買 Microsoft 365 Apps 商務版，可以為訂閱[開啟週期性計費](renew-your-subscription.md)。
 
-  - 如果您是具有預付一年期的大量授權客戶，請與您的合作夥伴聯繫以購買新的產品金鑰。 您會透過電子郵件接收指示，以在 [大量授權服務中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)啟用金鑰。 若要瞭解如何尋找新的合作夥伴或您已在過去使用過的合作夥伴，請參閱 [尋找您的合作夥伴或轉銷商](../../admin/manage/find-your-partner-or-reseller.md)。
+  - 如果您是預付 1 年期的開放式大量授權客戶，請與您的合作夥伴聯繫，購買新的產品金鑰。 您會透過電子郵件收到指示，以在[大量授權服務中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)啟用您的金鑰。 若要了解如何尋找新的合作夥伴或您過去合作過的合作夥伴，請參閱[尋找您的合作夥伴或經銷商](../../admin/manage/find-your-partner-or-reseller.md)。
 
-  - 如果您有 Microsoft 365 商務應用程式，請參閱 [更新您的訂閱](renew-your-subscription.md)。
+  - 如果您有 Microsoft 365 Apps 商務版，請參閱[為您的訂閱續約](renew-your-subscription.md)。
 
-- **讓訂閱到期。**
+- **任由訂閱到期。**
 
-  - 如果您是以信用卡或發票付款，而您不想繼續訂閱，請關閉 [定期帳單](renew-your-subscription.md)。 您的訂閱會在到期日到期，而且您可以略過所有相關的電子郵件通知。
+  - 如果您是使用信用卡或發票付款，而且不想繼續訂閱，請[關閉週期性計費](renew-your-subscription.md)。 您的訂閱會在到期日時到期，您可以忽略所有相關的電子郵件通知。
 
-  - 如果您是已開啟的大量授權客戶與合作夥伴合作，您可以不採取任何動作，讓訂閱到期。
+  - 如果您是與合作夥伴合作的 Open 大量授權客戶，不需採取任何動作，任由訂閱到期即可。
 
-  - 如果您是 Office 365 Small Business Premium 客戶，且您預付 Office 365 並以產品金鑰加以啟用，您可以透過不需採取任何動作，讓訂閱到期。
+  - 如果您是 Office 365 小型企業進階版客戶，並且採用預付方式，用產品金鑰啟動 Office 365，不需採取任何動作，任由訂閱到期即可。
 
-- **在訂閱到期之前取消。** 如需詳細資訊，請參閱 [Cancel a 訂閱](cancel-your-subscription.md)。
+- **在訂閱到期之前取消。** 如需詳細資訊，請參閱[取消您的訂閱](cancel-your-subscription.md)。
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
   
-- **更新訂閱。** 如果 **定期計費** 已開啟，您不需要採取任何動作。 您的訂閱將會自動計費，而您將會根據目前的付款頻率，支付一年或一個月的費用。 如果您因任何原因而關閉了 **週期性的帳單** ，您可以永遠 [開啟定期計費](renew-your-subscription.md)。
+- **為訂閱續約。** 如果 **週期性計費** 已開啟，您不需執行任何動作。 您的訂閱將會自動計費，而您將會根據目前的付款頻率，支付一年或一個月的費用。 如因任何原因關閉 **週期性計費**，您可以隨時[開啟週期性計費](renew-your-subscription.md)。
 
-- **讓訂閱到期。** 如果您是以信用卡或發票付款，而您不想繼續訂閱，請關閉 [定期帳單](renew-your-subscription.md)。 您的訂閱會在到期日到期，而且您可以略過所有相關的電子郵件通知。
+- **任由訂閱到期。** 如果您是使用信用卡或發票付款，而且不想繼續訂閱，請[關閉週期性計費](renew-your-subscription.md)。 您的訂閱會在到期日時到期，您可以忽略所有相關的電子郵件通知。
 
-- **在訂閱到期之前取消。** 如需詳細資訊，請參閱 [Cancel a 訂閱](cancel-your-subscription.md)。
+- **在訂閱到期之前取消。** 如需詳細資訊，請參閱[取消您的訂閱](cancel-your-subscription.md)。
 
 ::: moniker-end
 
-## <a name="what-happens-after-my-subscription-expires"></a>訂閱到期後會發生什麼情況？
-如果您要讓訂閱到期，它會經歷多個狀態，最後刪除。 這可讓您以系統管理員、重新開機時間，如果您想要繼續服務，或是在您決定不再需要訂閱時，再備份您的資料。
+## <a name="what-happens-after-my-subscription-expires"></a>在訂閱到期之後，會發生什麼情況？
+如果您讓訂閱到期，它會在最終刪除之前經歷多個狀態。 如果您是系統管理員，而且想延續訂閱服務的話，您將有時間可以重新啟動訂閱；如果您確定不想再訂閱，也還有時間可以進行資料備份。
   
-以下是訂閱處於每個狀態時您可以預期的結果。
+以下是您在訂閱的每個狀態中所能預期的情況。
   
 ### <a name="state-expired"></a>狀態：已到期
   
 ::: moniker range="o365-worldwide"
 
- **預期的專案：** 到期狀態會持續30天的大部分訂閱，包括透過 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298)購買的訂閱，在大部分的國家和地區。 針對大量授權產品，除了 Microsoft Open 之外，到期狀態會持續90天。
+ **預期狀況：** 在大多數國家/地區和區域中，大部分訂閱 (包括透過 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 購買的訂閱) 的到期狀態是持續 30 天。 若為大量授權的產品 (Microsoft Open 除外)，到期狀態是持續 90 天。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **預期的專案：** 到期狀態會持續30天的大部分訂閱，包括透過 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298)購買的訂閱，在大部分的國家和地區。 針對大量授權產品，除了 Microsoft Open 之外，到期狀態會持續90天。
+ **預期狀況：** 在大多數國家/地區和區域中，大部分訂閱 (包括透過 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 購買的訂閱) 的到期狀態是持續 30 天。 若為大量授權的產品 (Microsoft Open 除外)，到期狀態是持續 90 天。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **預期的專案：** 在大部分的國家和地區中，大部分訂閱的到期狀態為30天。
+ **預期狀況：** 在大多數國家/地區和區域中，訂閱的到期狀態一般都是 30 天。
 
 ::: moniker-end
 
-在此狀態下，使用者可以正常存取 Microsoft 365 入口網站、Office 應用程式，以及電子郵件和 SharePoint 線上等服務。
+在此狀態下，使用者仍可正常存取 Microsoft 365 入口網站、Office 應用程式，以及電子郵件和 SharePoint Online 等服務。
   
-做為系統管理員，您仍然可以存取系統管理員中心。 別擔心，全球或計費系統管理員可以 [重新開機訂閱](reactivate-your-subscription.md) ，並繼續使用 Microsoft 365。 如果您未重新啟用，請 [備份您的資料](back-up-data-before-switching-plans.md)。
+身為系統管理員的您仍然可以存取系統管理中心。 別擔心，全域系統管理員或計費系統管理員可以[重新啟動訂閱](reactivate-your-subscription.md)，並且繼續使用 Microsoft 365。 如果您不要重新啟動，請[備份您的資料](back-up-data-before-switching-plans.md)。
   
 ### <a name="state-disabled"></a>狀態：已停用
   
 ::: moniker range="o365-worldwide"
 
- **預期的專案：** 如果您未在已過期的狀態下重新啟用您的訂閱，它會進入停用狀態，在大部分的國家和地區中，會持續為大多數訂閱的90天。 若為大量授權產品，停用狀態會持續30天。
+ **預期狀況：** 如果您沒有在已到期狀態期間重新啟動訂閱，它會進入已停用狀態。對大部分國家/地區和區域的多數訂閱來說，已停用狀態都是 90 天。 若為大量授權產品，已停用狀態是持續 30 天。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **預期的專案：** 如果您未在已過期的狀態下重新啟用您的訂閱，它會進入停用狀態，在大部分的國家和地區中，會持續為大多數訂閱的90天。 若為大量授權產品，停用狀態會持續30天。
+ **預期狀況：** 如果您沒有在已到期狀態期間重新啟動訂閱，它會進入已停用狀態。對大部分國家/地區和區域的多數訂閱來說，已停用狀態都是 90 天。 若為大量授權產品，已停用狀態是持續 30 天。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **預期的專案：** 如果您未在已過期的狀態下重新啟用您的訂閱，它會進入停用狀態，在大部分的國家和地區中為大多數訂閱的90天。
+ **預期狀況：** 如果您沒有在已到期狀態期間重新啟動訂閱，它會進入已停用狀態。對大部分國家/地區和區域的多數訂閱來說，已停用狀態都是 90 天。
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-在此狀態下，您的存取會大幅減少。 您的使用者無法登入，或存取諸如電子郵件或 SharePoint 線上的服務。 Office 應用程式最終會移到唯讀、精簡功能的模式，並顯示未 [授權的產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 您仍可登入並進入系統管理中心，但無法將授權指派給使用者。 您的客戶資料（包括所有使用者資料、電子郵件及小組網站上的檔案）只供您和其他系統管理員使用。
+在此狀態中，您的存取權會明顯減少。 您的使用者無法登入，或存取電子郵件或 SharePoint Online 等服務。 Office 應用程式最後都會進入唯讀、精簡功能模式，並顯示[未授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 您仍然可以登入系統管理中心，但是無法指派授權給使用者。 您的客戶資料 (包括小組網站上所有的使用者資料、電子郵件和檔案) 僅可供您和其他系統管理員使用。
 
 ::: moniker-end
 
-以全域或計費系統管理員的身分，您可以 [重新啟用訂閱](reactivate-your-subscription.md) ，並以完整的客戶資料繼續使用 Microsoft 365。 如果您選擇不要重新啟用，請 [備份您的資料](back-up-data-before-switching-plans.md)。
+如果您是全域或計費系統管理員，您可以[重新啟動訂閱](reactivate-your-subscription.md)，並繼續使用 Microsoft 365，而且客戶資料都將保持原封不動。 如果您選擇不重新啟動，請[備份您的資料](back-up-data-before-switching-plans.md)。
 
-### <a name="state-deleted"></a>State：已刪除
+### <a name="state-deleted"></a>狀態：已刪除
   
- **預期的專案：** 如果您在寬限期或停用時未重新啟用您的訂閱，則會刪除該訂閱。
+ **預期狀況：** 如果您未在寬限期或停用階段內重新啟動訂閱，系統就會刪除訂閱。
   
-系統管理員和使用者不再可以存取訂閱隨附的服務或 Office 應用程式。 所有客戶資料（從使用者資料到檔和電子郵件）都會永久刪除，且無法復原。
+系統管理員和使用者都不能再存取訂閱隨附的服務或 Office 應用程式。 從使用者資料到文件和電子郵件等等的所有客戶資料，都會永久遭到刪除且無法復原。
   
-此時，您無法重新啟用訂閱。 不過，以全域或計費系統管理員的身分，您仍然可以存取系統管理中心，以管理其他訂閱，或購買新的訂閱以滿足您的業務需求。
+此時您無法重新啟動訂閱。 但是如果您是全域或計費系統管理員，您還是可以存取系統管理中心以管理其他訂閱，或購買您的企業所需的新訂閱。
   
 > [!NOTE]
-> 新增已遭刪除的相同類型的訂閱，不會還原與已刪除之訂閱相關聯的資料。
+> 新增與已刪除訂閱相同類型的新訂閱，並不會還原與已刪除訂閱相關聯的資料。
 
 
 > [!NOTE]
-> 如果已暫停 CSP 授權，則沒有30天的寬限期，且服務會立即停用。 若租使用者未以新增授權重新啟用，則會在90天之後刪除資料。
+> 如果 CSP 授權已暫停，則沒有 30 天的寬限期，服務會立即停用。 如果租用戶未新增授權以重新啟動，則資料將會在 90 天之後刪除。
 
-### <a name="what-happens-when-my-trial-ends"></a>我的試用版結束時會發生什麼情況？
+### <a name="what-happens-when-my-trial-ends"></a>試用版結束時，會發生什麼情況？
 
-當您的試用版結束時，您無法繼續使用 Microsoft 365 免費版。 您有幾個選項：
+試用版結束時，您就無法繼續免費使用 Microsoft 365。 此時，您有幾個選項：
 
 ::: moniker range="o365-worldwide"
 
-- **購買 Microsoft 365。** 當您的試用版到期時，它會移至寬限期，在大部分的國家和) 地區中，您也會有30天的時間 (，以購買 Microsoft 365。 若要瞭解如何將您的試用版轉換為付費訂閱，請參閱 [購買您的 Microsoft 365 的試用版](../buy-a-subscription-from-your-free-trial.md)。
+- **購買 Microsoft 365。** 試用版到期時，訂閱會進入寬限期，再給您 30 天的時間 (大部分國家/地區和區域的多數試用版) 購買 Microsoft 365。 若要了解將試用版轉換成付費訂閱的方式，請參閱[購買商務用 Microsoft 365 試用版](../buy-a-subscription-from-your-free-trial.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- **購買 Microsoft 365。** 當您的試用版到期時，它會移至寬限期，在大部分的國家和) 地區中，您也會有30天的時間 (，以購買 Microsoft 365。 若要瞭解如何將您的試用版轉換為付費訂閱，請參閱 [購買您的 Microsoft 365 的試用版](../buy-a-subscription-from-your-free-trial.md)。
+- **購買 Microsoft 365。** 試用版到期時，訂閱會進入寬限期，再給您 30 天的時間 (大部分國家/地區和區域的多數試用版) 購買 Microsoft 365。 若要了解將試用版轉換成付費訂閱的方式，請參閱[購買商務用 Microsoft 365 試用版](../buy-a-subscription-from-your-free-trial.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-- **購買 Office 365。** 當您的試用版到期時，它會移至寬限期，在大部分的國家和地區中 (大多數的實驗) 購買 Office 365。 若要瞭解如何將您的試用版轉換為付費訂閱，請參閱 [購買或嘗試使用世紀運作之 Office 365 的訂閱](../../admin/services-in-china/buy-or-try-subscriptions.md)。
+- **購買 Office 365。** 試用版到期時，訂閱會進入寬限期，再給您 30 天的時間 (大部分國家/地區和區域的多數試用版) 購買 Office 365。 若要了解將試用版轉換成付費訂閱的方式，請參閱[購買或試用由 21Vianet 提供的 Office 365 訂閱](../../admin/services-in-china/buy-or-try-subscriptions.md)。
 
 ::: moniker-end
 
-- **請擴充您的試用版。** 需要更多時間來評估 Microsoft 365 嗎？ 在某些情況下，您可以 [擴充您的試用版](../extend-your-trial.md)。
+- **延長試用期。** 需要更多時間來評估 Microsoft 365 嗎？ 在某些情況下，您可以[延長試用期](../extend-your-trial.md)。
 
-- **取消試用期或讓其到期。** 如果您決定不購買 Microsoft 365，您可以讓您的試用版到期或 [取消](cancel-your-subscription.md)。 備份您要保留的任何資料。 30天的寬限期之後不久，您的試用帳戶資訊和資料就會永久清除。
+- **取消試用或讓它到期。** 如果您決定不購買 Microsoft 365，您可以讓試用版到期或[取消](cancel-your-subscription.md)。 備份您想要保留的任何資料。 30 天寬限期之後，您的試用帳戶資訊和資料就會永久清除。
 
 > [!NOTE]
-> 此頁面上的資訊受限於 [Microsoft 原則免責聲明和變更通知](https://go.microsoft.com/fwlink/p/?LinkId=613651)。 定期回到此網站以檢查任何變更。
+> [Microsoft 原則免責聲明和異動通知](https://go.microsoft.com/fwlink/p/?LinkId=613651)可能隨時更改這個頁面上的資訊。 請定期回到本網站檢閱有無任何資訊變更。
 
 ## <a name="related-content"></a>相關內容 
 
-[取消訂閱](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (篇) \
-[更新 Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (文章) \
-[重新開機訂閱](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (文章) 
+[取消您的訂閱](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (文章)\
+[續約商務用 Microsoft 365](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (文章)\
+[重新啟動您的訂閱](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (文章)
 

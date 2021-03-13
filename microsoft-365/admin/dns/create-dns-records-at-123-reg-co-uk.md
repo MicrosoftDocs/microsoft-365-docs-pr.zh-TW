@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft 123-reg.co.uk。
-ms.openlocfilehash: bde8003ad343680e8f499dd8ec1fb638f15080b1
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 3c9af6909f37082a63170adac94ac3d92b717ad1
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658312"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758901"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>在123-reg.co.uk 建立 Microsoft 的 DNS 記錄
 
@@ -65,7 +65,7 @@ ms.locfileid: "49658312"
     |**主機 名** <br/> |**Type** <br/> |**Destination TXT/SPF** <br/> |
     |@  <br/> |TXT/SPF  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-6. 選取 **[新增]**。
+6. 選取 [新增]。
     
 7. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -102,19 +102,19 @@ ms.locfileid: "49658312"
     
     |**主機 名**|**Type**|**優先順序**|**Destination MX (目的地 MX)**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **注意：** 從您的 Microsoft 帳戶取得您的 \<domain-key\>。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **注意：** 從您的 Microsoft 帳戶取得您的 \<domain-key\>。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![複製並貼上表格中的值](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
-6. 選取 **[新增]**。
+6. 選取 [新增]。
     
-    ![選取 [新增]](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
+    ![已選取 [新增] 按鈕之對話方塊的螢幕擷取畫面](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
 7. 如果有任何其他 MX 記錄，請選擇 [ **刪除 (垃圾桶)** 該記錄的圖示來移除每個記錄。 
     
     ![選取 [刪除] (垃圾桶圖示) ](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的六筆 CNAME 記錄
+## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的5筆 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
 
 1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。系統會提示您先登入。
@@ -125,7 +125,7 @@ ms.locfileid: "49658312"
     
 4. 在 [ **管理您的 DNS** ] 頁面上，選取 [ **高級 DNS** ] 索引標籤。 
     
-5. 新增六筆 CNAME 記錄的第一筆。
+5. 新增五筆 CNAME 記錄中的第一筆。
     
     In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -139,17 +139,17 @@ ms.locfileid: "49658312"
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
    
-    ![複製並貼上表格中的值](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
+    ![使用目的 CNAME 複製及貼上的螢幕擷取畫面](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
-6. 選取 **[新增]**。
+6. 選取 [新增]。
     
-    ![選取 [新增]](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
+    ![新增目的地 CNAME 的螢幕擷取畫面](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
-7. 新增其他五筆 CNAME 記錄。
+7. 新增其他四筆 CNAME 記錄。
     
     在 [ **ADVANCED DNS** ] 區段中，使用表格中下一列的值建立記錄，然後再選取 [ **新增** ] 以完成記錄。 
     
-    重複這個程序，直到六筆 CNAME 記錄全部建立完畢。
+    重複此程式，直到您已建立全部五筆 CNAME 記錄為止。
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 <a name="BKMK_add_TXT"> </a>
@@ -175,9 +175,9 @@ ms.locfileid: "49658312"
    
     ![123Reg-BP-Configure-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
-6. 選取 **[新增]**。
+6. 選取 [新增]。
     
-    ![選取 [新增]](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
+    ![具有目的地 TXT/SPF 的螢幕擷取畫面](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
@@ -202,11 +202,11 @@ ms.locfileid: "49658312"
     |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com。 **此值必須以英文句點 (.) 結尾。**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
     |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com。 **此值必須以英文句點 (.) 結尾。** <br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-    ![複製並貼上表格中的值](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
+    ![使用表格中的 DNS 值的螢幕擷取畫面](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
-6. 選取 **[新增]**。
+6. 選取 [新增]。
     
-    ![選取 [新增]](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
+    ![新增目的地 SRV 的螢幕擷取畫面](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
   
 7. 新增另一筆 SRV 記錄：
     

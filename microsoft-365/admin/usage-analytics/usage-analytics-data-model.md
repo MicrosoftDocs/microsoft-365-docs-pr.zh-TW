@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '瞭解流量分析如何連接至 API，並提供各種 Microsoft 365 服務的每月使用趨勢。  '
-ms.openlocfilehash: d7b3e7e9467a57f913f069c48249e82b5958aabb
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 7d1e797fc388934f66ddc45d2e7f51566e89ad23
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611445"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758937"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情況分析資料模型
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Microsoft 365 使用方式分析方格的資料
 
-Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs 位於預覽中，而且可以在 `https://reports.office.com/pbi/v1.0/\<tenantid\>` (取代為您的 \<tenant id\> 租使用者 GUID) 中存取。 
+Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Microsoft 365 流量分析用來產生其資料的 APIs，來自各種、一般可用的圖形 APIs。 Microsoft 365 流量分析 API 的功能一般無法使用。
   
 > [!NOTE]
 > 如需詳細資訊，請參閱使用 microsoft [Graph 中的 microsoft 365 使用量報告](https://go.microsoft.com/fwlink/p/?linkid=864336)。 

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: landing-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 現在，您已設定 Microsoft 365，瞭解如何在 Mac、PC 或行動裝置上安裝個別 Office 應用程式，以及如何在 Outlook 中設定電子郵件。
-ms.openlocfilehash: dc8a4c3670dacf4b3cc85637c3e18c51a8c8e350
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: c1d88aa1e754424e7a4ef3e486efc8a9618d3e9b
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988029"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766352"
 ---
 # <a name="install-office-applications"></a>安裝 Office 應用程式
 

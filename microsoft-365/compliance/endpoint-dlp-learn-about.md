@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 端點資料外洩防護可擴充檔案活動的監視以及這些檔案到端點的保護動作。 在 Microsoft 365 合規性中心解決方案中可看到檔案 '
-ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c4f0d10808d564fc0ee19510c25d33caba0471ff
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279307"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741584"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>深入了解 Microsoft 365 端點資料外洩防護
 
@@ -43,6 +43,8 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 |複製到 USB 卸除式媒體 |使用者嘗試將項目或資訊複製到卸除式媒體或 USB 裝置時偵測。         | 可稽核與可限制|
 |複製到網路共用    |使用者嘗試將項目複製到網路共用或對應的網路磁碟機時偵測         |可稽核與可限制|
 |列印文件    |當使用者試圖將受保護的項目列印到本機或網路列印機時偵測。| 可稽核與可限制         |
+|複製到遠端工作階段|偵測使用者何時嘗試將項目複製到遠端桌面工作階段 |  可稽核與可限制|
+|複製到藍牙裝置|偵測使用者何時嘗試將項目複製到不允許的藍牙應用程式 (如端點 DLP 設定中不允許的藍牙應用程式清單中所定義)。| 可稽核與可限制|
 |建立項目|當使用者建立項時偵測| 可稽核的|
 |重新命名項目|當使用者重新命名項時偵測| 可稽核的|
 

@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '透過將自訂麻將牌新增至應用程式啟動器，建立電子郵件、檔、應用程式、SharePoint 網站、外部網站及其他資源的快速連結。 '
-ms.openlocfilehash: 96d059b252b63e48e20edb29861cf8233e220e34
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 809788033d0e8ef414511af5ab89857974d8b175
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114186"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766440"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>新增自訂磚至 App 啟動器
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
@@ -64,18 +64,6 @@ ms.locfileid: "50114186"
 8. 選取 [ **儲存變更** ] 以建立自訂磚。 
     
 您的自訂圖格現在會出現在 [ **全部** ] 索引標籤上的應用程式啟動器中，以及您的使用者。 
-  
-## <a name="promote-the-tile-to-app-launcher"></a>將磚提升至應用程式啟動器
-
-1. 選取應用程式啟動器圖示，然後選取 [ **所有應用程式**]。 
-    
-2. 尋找應用程式的新麻將牌，選取省略號，然後選擇 [ **固定至啟動器**]。
-  
-    > [!NOTE]
-    > 如果您在之前的步驟看不到已建立的 [自訂磚]，請確認 Exchange Online 信箱已指派給您，且至少登入您的信箱一次。 Microsoft 365 中的自訂圖格必須執行這些步驟。 
-  
-> [!IMPORTANT]
-> 您和您的使用者都必須執行這些步驟，才能將自訂磚從 [我的 App] 頁面升階到 App 啟動器。 
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 

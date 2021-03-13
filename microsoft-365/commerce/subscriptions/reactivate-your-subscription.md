@@ -1,7 +1,7 @@
 ---
 title: 重新啟用您的訂閱
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -22,25 +22,25 @@ search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: 深入瞭解當您的訂閱到期、停用或取消時，如何重新開機訂閱。
-ms.openlocfilehash: 01dee5e8a4c5a9ef7d30c21f66186086900b6cc1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3e360e37a108c290e13ca3c1a147f8eb099648e6
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114618"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766386"
 ---
 # <a name="reactivate-your-subscription"></a>重新啟動您的訂閱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
 您可以在系統管理中心重新啟用您的訂閱：訂閱已到期、已由 Microsoft 停用，或您已在訂閱期限內取消。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>事前準備
 
 您必須是全域或計費系統管理員，才可重新啟用訂閱。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
@@ -60,7 +60,7 @@ ms.locfileid: "50114618"
 
 ::: moniker range="o365-germany"
   
-1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
 
 2. 找到您要重新啟用的訂閱，然後選取 [ **重新** 啟用]。
 
@@ -81,7 +81,7 @@ ms.locfileid: "50114618"
 
 ::: moniker range="o365-21vianet"
   
-1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。
 
 2. 找到您要重新啟用的訂閱，然後選取 [ **重新** 啟用]。
 
@@ -103,5 +103,5 @@ ms.locfileid: "50114618"
 ## <a name="related-content"></a>相關內容
 
 [嘗試或購買 Microsoft 365 for business 訂閱](../try-or-buy-microsoft-365.md) (文章) \
-[更新 Microsoft 365 for business](renew-your-subscription.md) (文章) \
+[續約商務用 Microsoft 365](renew-your-subscription.md) (文章)\
  (文章) [取消您的訂閱](cancel-your-subscription.md)

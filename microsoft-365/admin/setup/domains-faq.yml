@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: 若要深入瞭解網域 (name.onmicrosoft.com17 網域和傳輸網域) ，請在 FAQ 中尋找您問題的答案。
-  ms.openlocfilehash: 90777387d16b7cb45ec597a384a6ff768c3b0afd
-  ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+  ms.openlocfilehash: 1ecb82b2dcc93cb57a68e4aa878c5699e06e93b9
+  ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/11/2020
-  ms.locfileid: "49658173"
+  ms.lasthandoff: 03/12/2021
+  ms.locfileid: "50758913"
 title: 網域常見問題集
 summary: "\n\n本文包含有關 Microsoft 365 中網域的常見問題解答。\n\n如果您找不到問題的答案，請留言讓我們知道，我們會將它新增至清單。\n"
 sections:
@@ -48,7 +48,7 @@ sections:
   - question: 如何在 Microsoft 365 中設定或變更預設網域？
     answer: "您必須至少有一個自訂網域新增至 Microsoft 365，您才能選擇預設網域。\n\n::: moniker range=\"o365-worldwide\"\n\n1. 在系統管理中心中，移至 **[設定]** \\> <a href=\"https://go.microsoft.com/fwlink/p/?linkid=834818\" target=\"_blank\">[網域]</a> 頁面。\n\n::: moniker-end\n\n::: moniker range=\"o365-germany\"\n\n1. 在系統管理中心中，移至 **[設定]** > <a href=\"https://go.microsoft.com/fwlink/p/?linkid=854615\" target=\"_blank\">[網域]</a> 頁面。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n1. 在系統管理中心中，移至 **[設定]** > <a href=\"https://go.microsoft.com/fwlink/p/?linkid=2007048\" target=\"_blank\">[網域]</a> 頁面。\n\n::: moniker-end\n    \n2. 在 [ **網域** ] 頁面上，選取您要設定為新電子郵件地址的預設網域。 \n    \n3. 選取 [設定成預設值]。\n    \n::: moniker range=\"o365-worldwide\"\n\n您無法變更  *onmicrosoft.com*  網域的名稱。 \n\n::: moniker-end\n\n::: moniker range=\"o365-germany\"\n\n您無法變更  *onmicrosoft.de*  網域的名稱。 \n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n您無法變更  *partner.onmschina.cn*  網域的名稱。 \n\n::: moniker-end\n"
   - question: 我可以將自訂子域或多個網域新增至 Microsoft 365 嗎？
-    answer: "::: moniker range=\"o365-worldwide\"\n\n是。 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。\n\n::: moniker-end\n\n::: moniker range=\"o365-germany\"\n\n可以！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n可以！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您是讓世紀以 NS 記錄來管理您的 DNS 設定，就無法新增子域。\n\n::: moniker-end\n\n一般來說，您最多可以將900個網域新增至您的 Microsoft 365 訂閱。\n  \n例如，您可以新增網域 contoso.com 及 contosomarketing.com，然後新增子域 www.contoso.com、www.partners.contoso.com、www.partners.marketing.contoso.com 等等。\n  \n當您新增子域時，會根據所驗證的父系網域，自動驗證。\n  \n當您將多個網域新增至 Microsoft 365 時，您可以在您已新增的任何網域上，主控任何服務 (例如電子郵件) ）。  *當您將電子郵件變更為 Microsoft 365 時，更新網域的 MX 記錄，所有傳送至該網域的電子郵件都會開始成為 Microsoft 365。* \n \n::: moniker range=\"o365-worldwide\"\n\n> [!NOTE]\n> 如果您已將 contoso.com 網域新增至 Microsoft 365 訂閱，您也可以將子域 xyz.contoso.com 新增至其他 Microsoft 365 組織。 新增子域時，系統會提示您在 DNS 主機服務提供者中新增 TXT 記錄。\n::: moniker-end\n"
+    answer: "::: moniker range=\"o365-worldwide\"\n\n是。 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。\n\n::: moniker-end\n\n::: moniker range=\"o365-germany\"\n\n可以！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n可以！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您是讓世紀以 NS 記錄來管理您的 DNS 設定，就無法新增子域。\n\n::: moniker-end\n\n一般來說，您最多可以將900個網域新增至您的 Microsoft 365 訂閱。\n  \n例如，您可以新增網域 contoso.com 及 contosomarketing.com，然後新增子域 www.contoso.com、www.partners.contoso.com、www.marketing.partners.contoso.com 等等。\n  \n當您新增子域時，會根據所驗證的父系網域，自動驗證。\n  \n當您將多個網域新增至 Microsoft 365 時，您可以在您已新增的任何網域上，主控任何服務 (例如電子郵件) ）。  *當您將電子郵件變更為 Microsoft 365 時，更新網域的 MX 記錄，所有傳送至該網域的電子郵件都會開始成為 Microsoft 365。* \n \n::: moniker range=\"o365-worldwide\"\n\n> [!NOTE]\n> 如果您已將 contoso.com 網域新增至 Microsoft 365 訂閱，您也可以將子域 xyz.contoso.com 新增至其他 Microsoft 365 組織。 新增子域時，系統會提示您在 DNS 主機服務提供者中新增 TXT 記錄。\n::: moniker-end\n"
   - question: 如何將網域從 Microsoft 365 傳輸到另一部主機？
     answer: >
       如需傳輸網域的程式，請參閱將 [網域從 Microsoft 轉接至其他主機](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host)。
