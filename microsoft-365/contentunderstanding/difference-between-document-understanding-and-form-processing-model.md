@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 描述文件瞭解和表單處理模型之間的差異
-ms.openlocfilehash: 555dfa7d76335a3b943e860e5f41ed64c9d3e874
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: a50941ec117480be586ba828e7b49c4a88a310ab
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596977"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712291"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文件瞭解和表單處理模型之間的差異 
 
@@ -72,17 +72,17 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
 
 | 功能 | 表單處理 | 文件瞭解 |
 | ------- | ------- | ------- |
-| 模型類型 - 何時使用 | 用於半結構化檔案格式， 例如，版面配置有差異，但仍要擷取類似資訊的 Office 文件。 | 用於非結構化檔案格式，例如表單內容的 PDF (如版面配置和格式類似的發票或採購單)。 |
-| 模型建立 | 在 AI Builder 中建立的模型，可順暢地從 SharePoint 文件庫存取。| 在 SharePoint 內容中心內建的原生介面中建立的模型。|
-| 分類類型| 可設定分類器，使用機器學習為系統提供要擷取資料之線索。| 具有選擇性擷取程式的可訓練分類器，使用機器學習來指派要擷取資料的文件位置。|
-| 位置 | 僅限單一文件庫，除非您使用 Power Platform 從 CDS 中擷取。| 可以適用於多個文件庫。|
+| 模型類型 - 何時使用 | 用於半結構化檔案格式，例如表單內容的 PDF (如版面配置和格式類似的發票或採購單)。  | 用於半結構化檔案格式，例如，版面配置有差異，但仍要擷取類似資訊的 Office 文件。 |
+| 模型建立 | 在 AI Builder 中建立的模型，可順暢地從 SharePoint 文件庫存取。| 在 SharePoint 的新網站，也就是內容中心中建立的模型。 |
+| 分類類型| 可設定的分類器，用於為系統提供要擷取之資料的線索。| 具有選擇性擷取程式的可訓練分類器，使用機器學習來指派要擷取資料的文件位置。|
+| 位置 | 訓練單一文件庫。| 可以適用於多個文件庫。|
 | 支援的檔案類型| 訓練 PDF、JPG、PNG 格式，總計 50 MB 和 500 頁。| 訓練 5 到 10 個 PDF、Office 或電子郵件檔案，包括負面範例。<br>Office 檔案會截斷為 64K 字元。 OCR 掃描的檔案限制為 20 頁。|
-| 與受管理的中繼資料整合 | 否 | 是，在訓練模型之前透過在文件庫欄上設定。|
-| 啟用 Microsoft 資訊保護時的合規性功能整合 | 設定保留標籤。<br>設定敏感度標籤即將推出。 | 設定保留標籤。<br>設定敏感度標籤即將推出。 |
+| 與受管理的中繼資料整合 | 否 | 是，透過訓練實體擷取器參考已設定的受管理的中繼資料欄位。|
+| 啟用 Microsoft 資訊保護時的合規性功能整合 | 設定已發佈的保留標籤。<br>設定敏感度標籤即將推出。 | 設定已發佈的保留標籤。<br>設定敏感度標籤即將推出。 |
 | 支援的地區| 表單處理依賴於 Power Platform。 有關 Power Platform 和 AI Builder 全域可用性的資訊，請參閱 [Power Platform 可用性](https://dynamics.microsoft.com/geographic-availability/)。 | 適用於所有地區。|
-| 交易成本 | 使用 AI Builder 點數。<br>點數可分批購買 1 百萬個。<br>購買超過 300 個 SharePoint Syntex 授權時，會包含 1 百萬個點數。<br>1 百萬個點數將允許處理 2000 個檔案頁面。| N/A |
-| 容量 | 已針對預設一般資料服務環境進行佈建。| 沒有容量限制。|
-| 支援的語言| 英文 <br>2021 年稍後推出：西班牙文、德文、法文、義大利文| 模型可支援所有拉丁字母語言。 除了英文之外：德文、瑞典文、法文、西班牙文、義大利文和葡萄牙文。|
+| 交易成本 | 使用 AI Builder 點數。<br>點數可分批購買 1 百萬個。<br>購買超過 300 個 SharePoint Syntex 授權時，會包含 1 百萬個點數。<br>1 百萬個點數將允許處理 2000 個檔案頁面。<br>| N/A |
+| 容量 | 使用預設的 Power Platform 環境 (支援 Dataverse 資料庫的自訂環境)。 | 沒有容量限制。|
+| 支援的語言| 英文 <br>2021 下半年即將推出：拉丁字母語言 | 模型可支援所有拉丁字母語言。 除了英文之外：德文、瑞典文、法文、西班牙文、義大利文和葡萄牙文。|
 
 ## <a name="see-also"></a>另請參閱
 [訓練：使用 AI Builder 改善商務效能](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

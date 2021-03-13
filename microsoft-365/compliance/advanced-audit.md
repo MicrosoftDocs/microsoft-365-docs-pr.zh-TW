@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: 0ae67497829e69da92e9735cb68a84e75c517814
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 012361e8ebbf1961d5ca21cef97357d5150523d5
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242455"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712053"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
@@ -183,7 +183,7 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
    將在 24 小時內開始記錄使用者的 MailItemsAccessed、Send 和其他重要事件的稽核記錄。
 
-針對使用以群組為基礎授權之指派授權至使用者群組的組織，請務必關閉該群組的 Microsoft 365 進階稽核授權指派。 儲存變更之後，請確認已關閉群組的 Microsoft 365 進階稽核。 然後重新開啟群組的授權指派。 如需以群組為基礎授權的相關指示，請參閱[在 Azure Active Directory 中以群組成員資格指派授權給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) (英文)。
+針對使用以群組為基礎授權之指派授權至使用者群組的組織，請務必關閉該群組的 Microsoft 365 進階稽核授權指派。 儲存變更之後，請確認已關閉群組的 Microsoft 365 進階稽核。 然後重新開啟群組的授權指派。 如需以群組為基礎授權的相關指示，請參閱[在 Azure Active Directory 中以群組成員資格指派授權給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
 此外，如果您已自訂登入到使用者郵箱或共用郵箱的郵箱動作，則不會在這些郵箱上自動稽核新的預設郵箱動作 (如 MailItemsAccessed)。 有關變更為每個登入類型稽核的郵箱動作之資訊，請參閱[管理郵箱稽核](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)中的 [變更或還原預設記錄的郵箱動作] 一節。
 
@@ -199,11 +199,11 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 **何時提供新的 10 年稽核記錄保留附加元件授權？**
 
-新的 10 年稽核記錄保留附加元件將於 2021 年初提供給 E5 訂閱的客戶購買。
+新的 10 年稽核記錄保留附加元件將提供給具有 E5 訂閱的客戶購買。
 
-**如果我建立了 10 年稽核記錄保留原則，此功能已發發布至正式版本，但在 2021 年初所需的附加元件授權可使用之前，系統會對我組織的稽核記錄資料產生什麼影響？**
+**如果我建立 10 年稽核記錄保留原則時，此功能已發行至正式版本，但在 2021 年 2 月所需的附加元件授權可使用之前，我組織的稽核記錄資料會產生什麼影響？**
 
-您在正式發行之後建立的 10 年稽核記錄保留原則所涵蓋的所有稽核資料，都將保留 10 年。 當 2021 年初 10 年稽核記錄保留附加元件授權可用時，您將需要為使用現有 10 年稽核記錄保留原則保留稽核資料的使用者購買附加元件授權。 此外，只要 2021 年初附加元件授權可用時，當您建立新的 10 年稽核紀錄保留原則時，系統就會強制執行適當的授權。
+您在正式發行之後建立的 10 年稽核記錄保留原則所涵蓋的所有稽核資料，都將保留 10 年。 當 2021 年初 10 年稽核記錄保留附加元件授權可用時，您將需要為使用現有 10 年稽核記錄保留原則保留稽核資料的使用者購買附加元件授權。
 
 **Office 365 管理活動 API 的進階稽核中是否有新的事件？**
 

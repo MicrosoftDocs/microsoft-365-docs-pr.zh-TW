@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: 137fcdad514e8272b99ab735a0cf1ed6f6e3e00e
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 4296924684e13e163f28e0f952b2cd380cdcc047
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461794"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712009"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -58,8 +58,8 @@ Teams 保留原則中不包括與 Teams 一起使用的電子郵件和檔案。 
 
 這些信箱是依其 RecipientTypeDetails 屬性列出：
 
-- **UserMailbox**：這些信箱會儲存擁有 Exchange Online 信箱的 Teams 使用者的訊息。
-- **MailUser**：這些信箱會儲存擁有內部部署 Exchange 伺服器而非 Exchange Online 信箱的 Teams 使用者訊息。
+- **MailUser**：這些信箱會儲存雲端式 Teams 使用者的郵件。
+- **UserMailbox**：這些信箱會儲存[內部部屬 Teams 使用者](search-cloud-based-mailboxes-for-on-premises-users.md)的郵件。
 - **GroupMailbox**：這些信箱會儲存 Teams 頻道的訊息。
 
 Teams 保留原則不支援的其他信箱類型，例如用於 Teams 會議室的 RoomMailbox。

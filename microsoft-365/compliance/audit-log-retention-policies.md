@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 稽核記錄保留原則是 Microsoft 365 中新增的「進階稽核」功能的一部分。 稽核記錄保留原則可讓您指定要在組織中保留稽核記錄的時間長度。
-ms.openlocfilehash: eeddf4c963284acaa908e07ddfdae77ec0bb080c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114932"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712043"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理稽核記錄保留原則
 
@@ -47,7 +47,7 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 
 - 您可以在組織中有最多 50 個稽核記錄保留原則。
 
-- 若要保留稽核記錄超過 90 天，產生稽核記錄的使用者必須獲指派 Office 365 E5 或 Microsoft 365 E5 授權，或擁有 365 Microsoft E5 合規性或 E5 電子化探索與稽核附加元件授權。
+- 若要保留稽核記錄超過 90 天 (最多 1 年)，產生稽核記錄 (透過執行稽核活動) 的使用者必須獲指派 Office 365 E5 或 Microsoft 365 E5 授權，或擁有 365 Microsoft E5 合規性或 E5 電子文件探索與稽核附加元件授權。 若要保留稽核記錄 10 年，除了 E5 授權之外，還必須指派 10 年的稽核記錄保留附加元件授權給產生稽核記錄的使用者。
 
 - 所有自訂稽核記錄保留原則 (由您的組織建立) 會優先於預設保留原則。 例如，如果您為具有的保留期間少於一年的建Exchange 信箱活動立稽核記錄保留原則，則 Exchange 信箱活動的稽核記錄將會保留較自訂原則所指定更短的持續時間。
 
