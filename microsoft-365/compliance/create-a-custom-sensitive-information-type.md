@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 04/17/2019
+ms.date: ''
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94f0f6b68e9f952e0d52ce7cb71ccf03913584f4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 049c3c123053b4bd833ea95a2413b81366586870
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929349"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766364"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自訂敏感性資訊類型入門
 
@@ -64,7 +64,7 @@ ms.locfileid: "49929349"
 5. 選擇並定義 **主要元素**。 主要元素可以是帶有選用驗證程式的 **規則運算式**、**關鍵字清單**、**關鍵字字典** 或預先設定的 **函數** 之一。 有關 DLP 功能的詳細資訊，請參閱 [DLP 功能尋找的項目](what-the-dlp-functions-look-for.md)。
 6. 填寫 **鄰近的字元** 的值。
 7. (選用) 新增支援元素 (如有)。 支援元素可以是帶有選用驗證程式的規則運算式、關鍵字清單、關鍵字字典或預定義的函數之一。 
-8.  (選用) 從可用檢查清單中新增其他檢查
+8.  (選用) 從可用檢查清單中新增 [**其他檢查**](#more-information-on-additional-checks)。
 9. 選擇 **[建立]**。
 10. 選擇 **[下一步]**。
 11. 為此敏感性資訊類型選擇 **[建議的信賴等級]**。
@@ -87,7 +87,7 @@ ms.locfileid: "49929349"
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>在合規性中心內修改自訂敏感性資訊類型
 
 1. 在 [合規性中心] 中，前往 **[資料分類]** \> **[敏感性資訊類型]**，然後從要修改的清單中選擇敏感性資訊類型，然後選擇 **[編輯]**。
-2. 可以新增其他模式，其中包括唯一的主要元素和支援元素、信賴等級、鄰近的字元和其他檢查，或者編輯/移除現有的模式。 有關詳細資訊，請參閱[建立自訂敏感性資訊類型](#create-a-custom-sensitive-information-type)。
+2. 您可以新增其他模式，其中包括唯一的主要元素和支援元素、信賴等級、鄰近的字元和 [**其他檢查**](#more-information-on-additional-checks)，或者編輯/移除現有的模式。
 
 ## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>移除合規性中心中的自訂敏感性資訊類型 
 
@@ -113,7 +113,7 @@ ms.locfileid: "49929349"
 7. 您可以選擇編輯或移除現有模式，以及新增新模式。 選擇新模式的預設信賴等級。 這些值是 **[低信賴等級]**、**[中信賴等級]** 和 **[高信賴等級]**。
 8. 選擇並定義 **主要元素**。 主要元素可以是 **規則運算式**、**關鍵字列表**、**關鍵字字典** 或預先配置的 **函數** 之一。 請參閱，[DLP 功能搜尋的項目](what-the-dlp-functions-look-for.md)。
 9. 填寫 **鄰近的字元** 的值。
-10. (選用) 如果有 **支援元素** 或任何 **其他檢查**，請新增它們。 如果需要，可以將您的 **支援元素** 分組。
+10. (選用) 如果有 **支援元素** 或任何 [**其他檢查**](#more-information-on-additional-checks)，請新增它們。 如果需要，可以將您的 **支援元素** 分組。
 11. 選擇 **[建立]**。
 12. 選擇 **[下一步]**。
 13. 為此敏感性資訊類型選擇 **[建議的信賴等級]**。
@@ -122,7 +122,24 @@ ms.locfileid: "49929349"
 您也可以使用 PowerShell 和 Exact Data Match 功能建立自訂敏感性資訊類型。 若要深入了解這些方法，請參閱：
 - [在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [使用 Exact Data Match (EDM) 建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
- 
+
+## <a name="more-information-on-additional-checks"></a>其他檢查的其他資訊
+
+以下是可用其他檢查的定義和一些範例。
+
+**排除特定相符項目**：這項檢查可讓您定義在偵測所編輯模式的相符項目時要排除的關鍵字。 例如，您可以排除測試信用卡號碼 (例如 '4111111111111111')，讓這些號碼無法相符為有效的號碼。
+
+**以字元開頭或不以字元開頭**：這項檢查可讓您定義相符項目必須或不能以哪些字元開頭。 例如，如果您希望模式只偵測開頭為 41、42 或 43 的信用卡號碼，請選取 **[開頭為]**，然後新增 41、42 和 43 到清單中，以逗號分隔。 
+
+**以字元結束或不以字元結束**：這項檢查可讓您定義相符項目必須或不能以哪些字元結束。 例如，如果您的員工識別碼的結尾不能是 0 或 1，請選取 **[結尾不是]**，然後新增 0 和 1 到清單中，以逗號分隔。
+
+**排除重複字元**：此檢查可讓您忽略所有數字都相同的相符項目。 例如，如果六位數的員工識別碼不能使用所有數字都相同的識別碼，您可以選取 **[排除重複字元]**，從員工識別碼的有效相符項目清單中排除 111111、222222、333333、444444、555555、666666、777777、888888、999999 和 000000。
+
+**包含或排除首碼**：此檢查可讓您定義在相符實體之前必須立即找到或不能立即找到的關鍵字。 根據您的選項，如果實體前面有您在這裡指定的首碼，則實體會相符或不相符。 例如，如果您 **排除** 首碼 **GUID:**，則 **GUID:** 前的任何實體不會被視為相符項目。
+
+**包含或排除尾碼**：此檢查可讓您定義在相符實體之後必須立即找到或不能立即找到的關鍵字。 根據您的選項，如果實體後面接著您在這裡指定的尾碼，則實體會相符或不相符。 例如，如果您 **排除** 尾碼 **GUID:**，則 **GUID:** 後面接著的文字不會被視為相符項目。
+
+
 > [!NOTE]
 > Microsoft 365 資訊保護在預覽版中支援下列雙位元組字元集語言：
 > - 中文 (簡體)
