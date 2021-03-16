@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何設定資料遺失防護（DLP）原則以使用 Microsoft 365 端點資料遺失防護（EPDLP）位置。
-ms.openlocfilehash: 6723f3f0903ba6a0e1833bfae1f3dea2362e2c30
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 1bb4013069b8f4890ba420f13a0203eb63973121
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406207"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820185"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端點資料外洩防護
 
@@ -81,6 +81,9 @@ ms.locfileid: "50406207"
 如果 [清單模式] 設為 **[封鎖]**，則使用者將無法將敏感性專案上傳到這些網域。 當由於專案符合 DLP 原則而封鎖上傳動作時，DLP 將會產生警告，或封鎖敏感性專案的上傳。
 
 如果 [清單模式] 設為 **[允許]**，則使用者 ***_僅_** 能將敏感性項目上傳到那些網域，而不可將存取權上傳到其他網域。
+
+> [!IMPORTANT]
+> 當服務限制模式設定為 「允許」時，您至少必須設定一個服務網域，才能強制執行限制。
 
 #### <a name="unallowed-browsers"></a>不受允許的瀏覽器
 
