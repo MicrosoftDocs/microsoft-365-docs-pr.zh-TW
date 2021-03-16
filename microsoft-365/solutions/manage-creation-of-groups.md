@@ -1,5 +1,5 @@
 ---
-title: 管理可建立 Microsoft 365 群組的人員
+title: 管理能建立 Microsoft 365 群組的使用者
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 瞭解如何控制可建立 Microsoft 365 群組的使用者。
-ms.openlocfilehash: 3fa430e44c272e5ababbfb0e4befba707c72c1ba
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.openlocfilehash: f2d1a2062d43af750a84984aab66329ed6a4db22
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122381"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819699"
 ---
-# <a name="manage-who-can-create-microsoft-365-groups"></a>管理可建立 Microsoft 365 群組的人員
+# <a name="manage-who-can-create-microsoft-365-groups"></a>管理能建立 Microsoft 365 群組的使用者
 
 根據預設，所有使用者都可以建立 Microsoft 365 群組。 這是建議的方法，因為它可讓使用者在不需要協助的情況下開始合作。
 
@@ -49,7 +49,7 @@ ms.locfileid: "50122381"
 - 目錄編寫者： Azure AD
 - SharePoint 管理員： SharePoint Admin center，Azure AD
 - 小組服務管理員：小組系統管理中心，Azure AD
-- 使用者管理系統管理員： Microsoft 365 Admin center、Yammer、Azure AD
+- 使用者管理員： Microsoft 365 Admin center，Azure AD
 
 如果您是其中一個角色的成員，您可以為受限制的使用者建立 Microsoft 365 群組，然後將該使用者指派為群組的擁有者。
 

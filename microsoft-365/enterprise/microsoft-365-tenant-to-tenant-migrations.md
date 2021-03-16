@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解如何遷移 Microsoft 365 承租人。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09b2bc77333afaf1991064369846241328db85ff
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: f6e8277a7ca768db3a4a4acd2488859b7764a40c
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461640"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819711"
 ---
 # <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 租使用者對租使用者遷移
 
@@ -34,7 +34,7 @@ ms.locfileid: "50461640"
 
 [![租使用者對租使用者遷移模型](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
-您可以下載 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) 格式的此模型，並在 letter、法律或卡片 (11 x 17) 大小的紙上列印此模型。
+您可以下載 [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 格式的此模型，並在 letter、法律或卡片 (11 x 17) 大小的紙上列印此模型。
 
 這種模型提供下列專案的指導方針和切入點：
 

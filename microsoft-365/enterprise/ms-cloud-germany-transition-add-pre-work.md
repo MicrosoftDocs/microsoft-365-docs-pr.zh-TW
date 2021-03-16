@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的準備工作。
-ms.openlocfilehash: e922cf3b5599e81905499db60000c5b5f34b69ad
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 5110c6bd86d5df35a7ceccb4abfedf059cb826d0
+ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712267"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "50826173"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的準備工作
 
@@ -49,6 +49,7 @@ ms.locfileid: "50712267"
 | 取消所有的試用訂閱。 | 不會遷移試用訂閱，而且會封鎖付費訂閱的轉接。 | 若使用者在取消後存取，試用版服務會到期且無法運作。 |
 | 分析 Microsoft Cloud Deutschland 與 Office 365 服務之間授權功能的差異。 | Office 365 服務包含目前 Microsoft Cloud Deutschland 中無法使用的其他功能和服務。 在訂閱轉移期間，使用者將可以使用新功能。 | <ul><li> 分析 Microsoft Cloud Deutschland 和 Office 365 服務的授權所提供的不同功能。 開始使用 [Office 365 平臺服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> 判斷是否應該開始停用 Office 365 服務的任何新功能，以限制使用者或使用者變更管理的影響，並視需要變更使用者授權指派。 </li><li>準備使用者及服務台人員，以取得 Office 365 服務提供的新服務和功能。 |
 | 建立整個組織 [保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention) ，以防止在遷移期間因無意中刪除內容。  |<ul><li>為了確保使用者不會在遷移期間由使用者意外刪除內容，客戶可以選擇啟用整個組織的保留原則。 </li><li>雖然不需要保留，但在遷移期間可隨時使用保留原則，但具有保留原則是備份的安全性機制。 同時，所有客戶可能不會使用保留原則，尤其是有關保留原則的使用者。</li></ul>| 如 [深入瞭解保留原則和保留標籤](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)所述套用保留原則。 如果這不是在第4階段中執行，則可能會發生服務或用戶端軟體失敗。 </li></ul>|
+| 正確的授權 overages | 在某些情況下，客戶可能會使用超過所購買的服務。 這種情況稱為授權超額。 Microsoft 無法從 Microsoft Cloud Deutschland 到德國資料中心區域，將客戶的授權超額的情況轉移。 為了確保連續存取服務和資料，每個指派的使用者都需要授權。 | 所有客戶 | 客戶必須透過購買其他授權或從使用者取消指派授權，來評估並解決授權超額的情況。 |
 |||||
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
@@ -180,7 +181,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 

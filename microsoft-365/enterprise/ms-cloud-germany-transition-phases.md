@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 98a547a9af772e880465f75d9a3b01b1795639e1
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: e630e88fa25bc97bcac27a032499bc31718be396
+ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711949"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "50826207"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (一般) 
 
@@ -65,8 +65,8 @@ ms.locfileid: "50711949"
 **適用于**：在 Microsoft Cloud Deutschland 中主控 Office 365 租使用者的所有客戶 (MCD) 
 
 | 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 會轉移訂閱，並重新指派授權。 | 對應的 Office 365 全域服務訂閱會在傳輸的 Microsoft Cloud Deutschland 訂閱的 Office 365 全域實例中購買。 已指派 Microsoft Cloud Deutschland 授權的使用者將會被指派 Office 365 全域實例中的授權。 舊版 Microsoft Cloud Deutschland 訂閱會從 Office 365 服務租使用者完成時移除。| <ul><li>對現有訂閱所做的變更會遭到封鎖 (例如，在此階段中，不會有新的訂閱購買或座位元數目變更) 。</li><li>將會封鎖授權指派變更。</li><li>Microsoft Cloud Deutschland 訂閱將會遷移到對應的 Office 365 全域服務訂閱。 由 Microsoft (（也稱為「 _提供對應_) 」）定義該訂閱的 Office 365 全域服務提供。</li><li>Office 365 服務所提供 (服務方案) 的功能數目可以大於原始 Microsoft 雲端 Deutschland 提供的功能。 Office 365 服務中的使用者授權會指派給類似的 Microsoft Cloud Deutschland (服務方案) 中的功能。 所有使用者的使用者授權都會自動指派給新功能。 必要時，系統管理員必須採取明確的動作以停用這些授權。 </li><li>完成訂閱遷移後，Office 365 服務和 Microsoft Cloud Deutschland 訂閱將會顯示在 Office 365 系統管理員入口網站中，並以 Microsoft Cloud Deutschland 訂閱的狀態視為 _deprovisioned_。 </li><li>使用者將會重新指派與新 Office 365 服務訂閱相關聯的授權。 任何對 MCD 訂閱或 SKU Guid 有相依相依的客戶處理都將會中斷，而且必須透過 Office 365 服務產品進行修正。 </li><li>Office 365 服務中的新訂閱每月都會以新字詞購買， (每月/每季/每年) ，且客戶將會收到未使用的 Microsoft Cloud Deutschland 訂閱餘額的按比例退款。 </li><li>將不會遷移協力廠商 Microsoft Cloud Deutschland 承租人。 CSP 客戶將會遷移到相同協力廠商的新 Office 365 服務租使用者下的 Office 365 服務。 客戶遷移後，協力廠商只可以從 Office 365 服務租使用者管理此客戶。 </li><li>您也可以使用其他功能 (例如，Microsoft Planner 和 Microsoft Flow) ，除非租使用者系統管理員停用。如需如何停用指派給使用者授權之服務方案的詳細資訊，請參閱 [在指派使用者授權時，停用 Microsoft 365 服務的存取權](disable-access-to-services-while-assigning-user-licenses.md)。</li></ul> |
+|:-------|:-----|:-------|
+| 會轉移訂閱，並重新指派授權。 | 當租使用者轉換為 Office 365 服務後，會為轉接的 Microsoft 雲端 Deutschland 訂閱購買對應的 Office 365 服務訂閱。 已指派 Microsoft Cloud Deutschland 授權的使用者將會被指派 Office 365 服務授權。 舊版 Microsoft Cloud Deutschland 訂閱會從 Office 365 服務租使用者完成時移除。 | <ul><li>如果您的組織處於「授權超額」狀況， (使用超過授權的席位) 時，可能會封鎖遷移，直到修正為止。 請參閱 [預備工作](ms-cloud-germany-transition-add-pre-work.md?view=o365-worldwide#applies-to-everyone) 以瞭解如何確保您的已分配座位元數目符合所使用的席位。</li><li> 對現有訂閱所做的變更會遭到封鎖 (例如，在此階段中，不會有新的訂閱購買或座位元數目變更) 。 </li><li> 將會封鎖授權指派變更。 </li><li> Microsoft Cloud Deutschland 訂閱將會遷移到對應的 Office 365 服務訂閱。 由 Microsoft (（也稱為「 _提供對應_) 」）定義該訂閱的 Office 365 服務提供。 </li><li> Office 365 服務所提供 (服務方案) 的功能數目可以大於原始 Microsoft 雲端 Deutschland 提供的功能。 Office 365 服務中的使用者授權會指派給類似的 Microsoft Cloud Deutschland (服務方案) 中的功能。 所有使用者的使用者授權都會自動指派給新功能。 必要時，系統管理員必須採取明確的動作以停用這些授權。 </li><li> 完成訂閱遷移後，office 365 服務和德國訂閱將會顯示在 Office 365 系統管理入口網站中，並以德國訂閱狀態為 _deprovisioned_。 </li><li> 使用者將會重新指派與新 Office 365 服務訂閱相關聯的授權。 任何對德國訂閱或 SKU Guid 具有相依相依性的客戶流程，都將會中斷，且必須與 Office 365 服務選項一起修正。 </li><li> Office 365 服務中的新訂閱每月都會以新字詞購買， (每月/每季/每年) ，且客戶將會收到未使用的 Microsoft Cloud Deutschland 訂閱餘額的按比例退款。 </li><li> 將不會遷移協力廠商 Microsoft Cloud Deutschland 承租人。 CSP 客戶將會遷移到相同協力廠商的新 Office 365 服務租使用者下的 Office 365 服務。 客戶遷移後，協力廠商只可以從 Office 365 服務租使用者管理此客戶。 </li><li> 您也可以使用其他功能 (例如，Microsoft Planner 和 Microsoft Flow) ，除非租使用者系統管理員停用。如需如何停用指派給使用者授權之服務方案的詳細資訊，請參閱 [在指派使用者授權時，停用 Microsoft 365 服務的存取權](disable-access-to-services-while-assigning-user-licenses.md)。 |
 ||||
 
 ## <a name="sharepoint-online-phase-4"></a>SharePoint 線上 (階段 4) 
@@ -193,7 +193,7 @@ MCD 中最近 (使用的 MRU) 服務是從轉換為 Office 365 全域服務，�
 
 [執行其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 

@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用內建基本行動性和安全性，以移除已註冊裝置中的資訊。
-ms.openlocfilehash: 3bb9bfe55653b021ce5a86dd5d3dbc3de45ed19a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: ddf13ef6627d70128064e2d8bd185203244b12e4
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876825"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819805"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本行動及安全性中清除行動裝置
 
 您可以使用 Microsoft 365 的內建基本行動及安全性，只移除組織資訊，或執行出廠重設以刪除行動裝置中的所有資訊，並將其還原為出廠設定。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>事前準備
 
 行動裝置可以儲存敏感組織資訊，並提供組織的 Microsoft 365 資源的存取權。 為了協助保護您組織的資訊，您可以進行原始重設或移除公司資料：
 
@@ -81,7 +81,7 @@ ms.locfileid: "49876825"
 
 擦除會立即傳送給行動裝置，而且裝置會在 Azure active directory 中標示為不相容。 當裝置重設為出廠預設值時，會移除所有資料，下表會說明當您移除公司資料時，裝置會移除每種裝置類型的內容。
 
-|**內容 impace**|**iOS 10 和更新版本**|**Android 5 及更新版本**|
+|**內容影響**|**iOS 10 和更新版本**|**Android 5 及更新版本**|
 |:-----|:-----|:-----|
 |如果使用 Intune 應用程式保護原則保護裝置，則會清除 Microsoft 365 應用程式資料。 未移除應用程式。 對於不是由行動應用程式管理 (MAM) 原則保護的裝置，Outlook 和 OneDrive 不會移除快取的資料。<br/>**記事** 若要套用 Intune 應用程式保護原則，您必須要有 Intune 授權。|是|是|
 |已不再執行基本行動性和裝置安全性所套用的原則設定;使用者可以變更設定。|是|是|

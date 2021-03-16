@@ -1,9 +1,9 @@
 ---
-title: 關於 Microsoft 365 Admin 行動應用程式
+title: 關於 Microsoft 365 Admin 行動裝置應用程式
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -22,91 +22,99 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
-description: 取得 Microsoft 365 Admin 應用程式，並瞭解如何從手機或平板電腦管理您的線上組織。
-ms.openlocfilehash: aa5d7f688e2304f703f14f3a581eec73e67111a4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 取得 Microsoft 365 系統管理應用程式，並瞭解如何從您的手機或平板電腦管理您的線上組織。
+ms.openlocfilehash: eba3783e3673efe84bdb823da2a14e06c06c5fbe
+ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925563"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "50826115"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>關於 Microsoft 365 Admin 行動應用程式
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>關於 Microsoft 365 admin 行動裝置應用程式
 
-您是否為經常在外的系統管理員？ 然後查看[Microsoft 365 系統管理 App。](https://go.microsoft.com/fwlink/?LinkID=627216) 您可以使用應用程式，從手機或平板電腦管理您的線上組織。 應用程式可以從 Apple Store 和 Google Play 取得。 <br> 
+您的系統管理員通常在旅途中？ 即使您沒有，也可能需要從您的手機或平板電腦管理 Microsoft 365。 請參閱免費的 [microsoft 365 系統管理應用程式](https://go.microsoft.com/fwlink/?LinkID=627216)，這是以 web 為基礎的 microsoft 365 系統管理中心的完美配套。 您可以從 [Apple 應用程式存放](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)區，以及從 [Google Play 商店](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)下載應用程式。
 
-![系統管理行動應用程式首頁的螢幕畫面，顯示搜尋、訊息、健康狀態及快速連結。](../../media/admin-mobile-app-darkbg.png)
+:::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="螢幕擷取畫面：系統管理行動應用程式的首頁，顯示搜尋、訊息中心、健康情況及快速連結":::
 
-系統管理 App 是功能豐富的 App，具有 80 多個功能，可協助管理您的組織 ，當您無法使用電腦時。 以下清單列出一些您可從應用程式執行的工作：
+系統管理應用程式有許多功能可讓您在行動裝置或平板電腦裝置上，當您無法前往電腦時，管理 Microsoft 365。 以下是您可以從應用程式執行的一些工作清單：
 
-- 取得服務健康情況及變更通知
-- 建立服務要求
-- 重設使用者的密碼
-- 指派授權
-- 新增或移除群組成員資格
-- 新增使用者 
+- **管理使用者和裝置** 新增或編輯使用者、重設使用者的密碼、指派角色、封鎖使用者、刪除使用者、管理別名、指派授權、擦除裝置資料等等。
+- **管理群組** 新增群組、新增或移除群組中的使用者。
+- **授權管理和帳單** 查看已購買及已指派之授權的清單、將授權指派給使用者、購買或移除授權，以及查看和下載發票。
+- **支援** 在旅途中建立新的服務要求，並追蹤與服務要求相關的所有更新。
+- **訊息中心** 保持最新的即將進行的變更、規劃的維護或其他與 Microsoft 365 相關的重要宣告
+- **服務健康** 情況透過查看服務的目前狀態及服務中斷及中斷的詳細資料，監視所有服務的健康情況。
+- **通知** 掌握有關訊息中心文章、服務健康情況及透過推播通知計費的所有重要資訊和更新。 您甚至可以自訂想要通知的專案。
 
-如果您是負責多個線上組織的人，您可以註冊多個組織，並快速在組織間切換。 
+如果您是系統管理員，且負責一個以上的 Microsoft 365 組織，您可以登入多個組織，並在兩者之間快速切換。 App 支援深色主題，且可用於39語言。
   
 > [!IMPORTANT]
-> 如果您在 iOS 或 Android 上無法使用 Admin 行動應用程式，請以電子郵件 [feedback365@microsoft.com讓我們知道](mailto:feedback365@microsoft.com) 。 
+> 如果您在 iOS 或 Android 上使用系統管理員行動裝置時出現問題，請以電子郵件傳送我們的 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，以告知我們。
   
 ## <a name="download-the-admin-mobile-app"></a>下載 Admin 行動應用程式
 
-[Microsoft 365 Admin 行動應用程式](https://go.microsoft.com/fwlink/?LinkID=627216)。
+[Apple 應用程式存放區](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
+
+[Google Play 商店](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)。
   
-觀看有關安裝系統管理行動應用程式的短片。<br><br>
+## <a name="watch-install-the-admin-mobile-app"></a>觀賞：安裝 admin 行動應用程式
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
-
- 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-以下提供與該 App 相關的部分常見問題集解答。
+以下是常見問題集的回答。
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>使用此 App 的先決條件為何？
 
-您必須擁有有效的商務用 Microsoft 365 應用程式或 Microsoft 365 商務進版訂閱，才能使用應用程式來註冊及使用。 Admin 行動應用程式不是電子郵件客戶程式。 這是豐富的系統管理 App，提供 80 多個功能，可協助貴組織在外時支援。
-  
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>我可以將應用程式與 Microsoft 365 家用版訂閱一同使用嗎？
+若要使用此應用程式，您必須具有系統管理員許可權，且具有下列其中一個 Microsoft 365 訂閱的有效訂閱：
 
-否，這個應用程式只能與商務用 Microsoft 365 應用程式及 Microsoft 365 商務進版訂閱一起使用。 
+- Microsoft 365 Apps 企業版
+- Microsoft 365 商務應用程式
+- Microsoft 365 商務進階版
+- Microsoft 365 商務標準版
+- Microsoft 365 商務基本版
+- Microsoft 365 E3/E5
+- Office 365： E1，E3/E5
+- Exchange Online 計畫
+- Business plan 的 OneDrive
   
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>我可以搭配 Microsoft 365 系列訂閱使用此應用程式嗎？
+
+否，該應用程式無法與 Microsoft 365 系列或 Microsoft 365 個人版訂閱搭配使用。
+
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>此 App 能夠在組織啟用目錄同步處理的情況下正常運作嗎？
 
-可以，但功能會減少。 您將可以註冊並查看服務資訊，但大部分的使用者管理功能都是唯讀的。 您將無法新增、編輯或刪除使用者。 不過，您可以指派授權給貴組織的使用者，並取得通知。
+可以，但功能會變少。 您可以登入並查看服務資訊，但大部分的使用者管理功能都會是唯讀的。 您將無法新增、編輯或刪除使用者。 不過，您可以將授權指派給組織中的使用者，並取得通知。
   
 ### <a name="what-languages-are-supported-by-the-app"></a>此 App 支援哪些語言？
 
-應用程式支援 Web 型 Microsoft 365 系統管理中心所支援的所有 39 種語言。 若要變更語言，請選取上方欄中的應用程式啟動圖示 **，然後選擇設定**  >  **語言**。
-  
-### <a name="why-does-the-messages-tile-on-the-home-screen-show-numbers-even-after-ive-read-the-new-messages"></a>為什麼即使讀取了新郵件，主畫面中的郵件磚仍會顯示數字？
-
-數字代表的是上週的總郵件數，不是未讀取的郵件數。
+該應用程式支援以 web 為基礎的 Microsoft 365 系統管理中心所支援的所有39語言。 若要變更語言，請從系統管理中心的左側流覽功能表移至 [**設定**  >  **語言**]，或選取 [系統管理行動應用程式] 首頁的 [**快速連結**] 區段中的 [**語言**] 圖示。
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>如何與組織的其他人員共用服務事件與郵件？
 
-如果您選取特定的服務事件或郵件，共用選項會位於右上角。 目前支援電子郵件共用。
+如果您選取特定的服務事件或郵件，[共用] 選項將會位於右上角。
   
-### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>我可以將此應用程式用於多個帳戶或租使用者嗎？
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>我可以使用此應用程式與多個帳戶或租使用者嗎？
 
-可以，您可以設定多個帳戶或租使用者。
-  
-### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a>我的 App 無法正常運作。 我該如何疑難排解 App 不正常的行為？
+是的，您可以設定多個帳戶或組織。
+
+### <a name="im-unable-to-login-or-my-app-is-acting-funny-what-can-i-do-to-troubleshoot-or-fix-the-issue"></a>我無法登入或我的應用程式的功能非常有趣。 如何進行疑難排解或修正問題？
 
 您可以嘗試一些常見的行動應用程式疑難排解步驟︰
-  
-1. 關閉並重新開啟 App。
-    
-2. 解除安裝並重新安裝 App。
 
-3. 如果這樣沒有用，您可以用電子郵件告訴我們feedback365@microsoft.com告訴我們。 [](mailto:feedback365@microsoft.com)
-    
+1. 關閉並重新開啟 App。
+1. 解除安裝並重新安裝 App。 確定您在最新版本的應用程式。
+1. 如果您已在裝置上安裝 Microsoft 驗證者或公司入口網站，請嘗試重新安裝或更新至最新版本。
+1. 如果仍無法運作，您可以在 feedback365@microsoft.com 以電子郵件傳送給我們，告訴我們。
+
+### <a name="how-do-i-manage-notifications-in-the-app"></a>如何在應用程式中管理通知？
+
+從左導覽功能表，移至 [**設定**  >  **通知**]。 您可以在這裡管理服務健康情況、訊息中心和計費通知。
+
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>如果仍無法解決我的問題該怎麼辦？
 
-使用 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) 來報告 App 的問題。 或者，您也可以在本文最下方提供意見回饋。 
+電子郵件 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) 以報告應用程式的問題。 您也可以在本文的底部提供意見反應。
   
 ## <a name="see-also"></a>請參閱
 

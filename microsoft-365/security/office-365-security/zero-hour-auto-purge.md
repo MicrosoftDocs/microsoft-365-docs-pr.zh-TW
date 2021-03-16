@@ -22,12 +22,12 @@ ms.custom:
 description: 系統管理員可以瞭解零小時自動清除 (ZAP) 是否可以 retroactively 將 Exchange Online 信箱中已傳遞的郵件移至 [垃圾郵件] 資料夾，或 retroactively 發現為垃圾郵件或網路釣魚的隔離區。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0f6cd7522581db1fbc594e9350c8712359498e3b
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: be47d8dfda68bfb6819b6423542970c7768c6ffb
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509287"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820255"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>在 Exchange Online 中，以零小時自動清除 (ZAP) 
 
@@ -63,11 +63,11 @@ ZAP 無法在獨立 Exchange Online Protection (EOP 中運作) 保護內部部�
 
 針對傳送後識別為網路釣魚的 **讀取或未讀取郵件** ，ZAP 結果取決於針對網路釣魚電子郵件原則中設定的 **網路釣魚電子** 郵件篩選的動作。 下列清單說明網路釣魚和其可能的 ZAP 結果的可用篩選判定動作：
 
-- **新增 X-Header**， **並將主旨行前置文字**： ZAP 不會對郵件採取任何動作。
+- **新增 X-Header**， **前置文字的主旨行**，將 **郵件重新導向至電子郵件地址**， **刪除郵件**： ZAP 不會對郵件採取任何動作。
 
 - **將郵件移至垃圾郵件**：將郵件移至 [垃圾郵件] 資料夾，只要信箱上已啟用垃圾郵件規則 (預設會啟用該信箱) 。 如需詳細資訊，請參閱 [在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-- **將郵件重新導向至電子郵件地址**、 **刪除郵件**、 **隔離訊息**： ZAP 會隔離郵件。
+- **隔離訊息**： ZAP 會隔離郵件。
 
 根據預設，反垃圾郵件原則中已啟用網路釣魚 ZAP， **網路釣魚電子郵件** 篩選決定的預設動作為 **隔離訊息**，這表示網路釣魚網站預設會隔離郵件。
 
@@ -77,11 +77,11 @@ ZAP 無法在獨立 Exchange Online Protection (EOP 中運作) 保護內部部�
 
 針對傳送後被識別為垃圾郵件的 **未讀取郵件** ，ZAP 結果取決於針對 **垃圾** 郵件篩選決定在適用的反垃圾郵件原則中所設定的動作。 下列清單說明了垃圾郵件及其可能的 ZAP 結果的可用篩選：
 
-- **新增 X-Header**， **並將主旨行前置文字**： ZAP 不會對郵件採取任何動作。
+- **新增 X-Header**， **前置文字的主旨行**，將 **郵件重新導向至電子郵件地址**， **刪除郵件**： ZAP 不會對郵件採取任何動作。
 
 - **將郵件移至垃圾郵件**：將郵件移至 [垃圾郵件] 資料夾，只要信箱上已啟用垃圾郵件規則 (預設會啟用該信箱) 。 如需詳細資訊，請參閱 [在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-- **將郵件重新導向至電子郵件地址**、 **刪除郵件**、 **隔離訊息**： ZAP 會隔離郵件。 使用者可以查看和管理自己的垃圾郵件隔離郵件。
+- **隔離訊息**： ZAP 會隔離郵件。 使用者可以查看和管理自己的垃圾郵件隔離郵件。
 
 根據預設，反垃圾郵件原則中已啟用垃圾郵件 ZAP， **垃圾** 郵件篩選判定的預設動作是 **將郵件移至垃圾郵件資料夾**，這表示垃圾郵件 ZAP 預設會將 **未讀取** 的郵件移至 [垃圾郵件] 資料夾。
 
