@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何建立及管理高級 eDiscovery 案例。 第一步是建立案例，並開始使用 Advanced eDiscovery 的功能和功能。
-ms.openlocfilehash: 80cfe31a86060cb3603a101b314273cc67750bd8
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 0301213cf6d7e3c30b98ad5125468c6c75ed95b1
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727540"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838250"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>建立及管理高級 eDiscovery 案例
 
@@ -82,15 +82,15 @@ ms.locfileid: "50727540"
 
    - 您可以使用高級 eDiscovery 中的 [通訊工作流程](managing-custodian-communications.md) ，將合法保留通知傳送給保管人。
 
-2. **[搜尋與案例相關之資料的資料來源](collecting-data-for-ediscovery.md)**。 在您將保管人和非 custodial 資料來源新增至案例後，請使用內建的搜尋工具，針對可能與案例相關的資料，搜尋這些資料來源。 您可以使用關鍵字、屬性和條件來 [建立搜尋查詢](building-search-queries.md) ，以利用最可能與案例相關的資料傳回搜尋結果。 您也可以：
+2. **[從資料來源收集相關資料](create-draft-collection.md)**。 在您將保管人和非 custodial 資料來源新增至案例後，請使用內建的集合工具，針對可能與案例相關的內容，搜尋這些資料來源。 您可以使用關鍵字、屬性和條件來 [建立搜尋查詢](building-search-queries.md) ，以利用最可能與案例相關的資料傳回搜尋結果。 您也可以：
 
-   - 查看可協助您縮小搜尋查詢以縮小結果的 [搜尋統計資料](search-statistics-in-advanced-ediscovery.md) 。
+   - 查看 [集合統計資料](collection-statistics-reports.md) ，可協助您精煉集合以縮小結果。
 
-   - 預覽搜尋結果，以快速確認是否找到相關資料。
+   - 預覽集合的範例，以快速確認是否找到相關資料。
 
-   - 修改查詢，然後重新執行搜尋。
+   - 修改查詢，然後重新執行集合。
 
-3. **[將資料新增至審閱集](add-data-to-review-set.md)**。 當您設定並確認搜尋傳回所需的資料之後，下一步是將搜尋結果新增至審閱集。 當您將資料新增至審閱集時，專案會從其原始位置複製到安全的 Azure 存放位置。 當審閱及分析審閱集中的專案時，會再次重新編制索引資料，以優化完整和快速的搜尋。 此外，您也可以 [將非 Office 365 資料新增至審閱集](load-non-office-365-data-into-a-review-set.md)。
+3. **[認可集合的審閱集](commit-draft-collection.md)**。 當您設定並確認搜尋傳回所需的資料之後，下一步是將搜尋結果新增至審閱集。 當您將資料新增至審閱集時，專案會從其原始位置複製到安全的 Azure 存放位置。 當審閱及分析審閱集中的專案時，會再次重新編制索引資料，以優化完整和快速的搜尋。 此外，您也可以 [將非 Office 365 資料新增至審閱集](load-non-office-365-data-into-a-review-set.md)。
 
    此外還有一種特殊的審閱集，您可以將資料新增至（稱為「 *交談複查集*」）。 這兩種審閱集可提供交談重新構建功能，以重新構建、審閱及匯出像是 Microsoft 小組中的對話交談。 如需詳細資訊，請參閱 [在高級 eDiscovery 中查看交談](conversation-review-sets.md)。
 

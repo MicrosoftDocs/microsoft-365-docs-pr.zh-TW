@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: 使用關鍵字和條件，可在 Microsoft 365 中使用 [Advanced eDiscovery] 搜尋資料時縮小搜尋範圍。
-ms.openlocfilehash: 8ec1e099625bb081f8a915f08ac818fddcc2b60d
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: e0df319257776d3995a4b8e37781d7b5dad54d82
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751110"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838477"
 ---
-# <a name="build-search-collection-queries-in-advanced-ediscovery"></a>在高級電子檔探索中建立搜尋集合查詢
+# <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>在高級 eDiscovery 中建立集合的搜尋查詢
 
-當您建立搜尋查詢以在高級 eDiscovery 案例中收集資料時，您可以使用關鍵字來尋找特定內容和條件，以縮小搜尋範圍，以傳回與您法律調查最為相關的專案。
+當您在高級 eDiscovery 案例中建立 [集合](collections-overview.md) 時設定搜尋查詢時，您可以使用關鍵字來尋找特定內容和條件，以縮小搜尋範圍，以傳回與您法律調查最為相關的專案。
 
 ![使用關鍵字和條件來縮小搜尋結果的範圍](../media/SearchQueryBox.png)
 

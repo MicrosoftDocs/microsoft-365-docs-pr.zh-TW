@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: 瞭解如何使用「搜尋統計資料」功能，在安全性 & 規範中心內，顯示及比較多個內容搜尋的統計資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7faf956aaec5619655818036b969086e0af0c6a
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: f12c51c47045996e450772c081bd26ef4a520b5f
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49987828"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838696"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>檢視內容搜尋結果的關鍵字統計資料
 

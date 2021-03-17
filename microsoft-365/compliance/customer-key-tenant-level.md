@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 瞭解如何為您的 Microsoft 365 租使用者中的所有資料設定客戶金鑰。
-ms.openlocfilehash: 7ffa9a8148a8ae699711b62da48cd2c856d48cac
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727476"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838238"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>在承租人層級 (公開預覽的 Microsoft 365 客戶金鑰概述) 
 
@@ -49,7 +49,7 @@ ms.locfileid: "50727476"
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>在承租人層級設定客戶機碼 (公開預覽) 
 
-這些步驟類似，但與在應用層級設定客戶機碼的步驟並不相同。 您應只對測試承租人中的測試資料使用此公開預覽。 請勿在生產資料或您的實際執行環境中使用此版本。 如果您已具備客戶金鑰的實際執行部署，請使用下列步驟，在測試環境中的承租人層級設定客戶機碼。
+這些步驟類似，但與在應用層級設定客戶機碼的步驟並不相同。 您應只對測試承租人中的測試資料使用此公開預覽。 請勿在生產資料或您的實際執行環境中使用此版本。 如果您已具備客戶金鑰的實際執行部署，請使用下列步驟，在測試環境中的承租人層級設定客戶機碼。 指派租使用者層級的 DEP 給租使用者後，您就可以開始驗證程式並 m365ck@microsoft.com 任何問題或考慮事項。 您也可以在 [Microsoft 365 的靜態加密驗證指示](https://aka.ms/CustomerKey/PublicPreviewValidation)的公開預覽中，找到已記錄的驗證步驟。
 
 您可以遠端連線至 Azure PowerShell，以完成大部分的工作。 為了獲得最佳結果，請使用版本4.4.0 或更新版本的 Azure PowerShell。
 
@@ -318,7 +318,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 ### <a name="assign-policy"></a>指派原則
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
 描述：此指令程式用於設定預設資料加密原則。 這個原則將用來加密所有支援工作負載中的資料。 
@@ -326,7 +326,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_P
 範例：
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_PolicyName”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Default_PolicyName"
 ```
 
 參數：
@@ -354,7 +354,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "NAM Policy" -Enabled $false
 重新整理資料加密原則。
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
+Set-M365DataAtRestEncryptionPolicy -Identity "EUR Policy" -Refresh
 ```
 
 參數：

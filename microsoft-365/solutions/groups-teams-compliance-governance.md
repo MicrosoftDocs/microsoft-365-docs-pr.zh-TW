@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 深入瞭解 Microsoft 365 群組、小組和 SharePoint 共同作業的規範選項。
-ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: f68381ab45e74b9b7c8f44465387add82bd4150a
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613627"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838648"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 群組、小組和 SharePoint 共同作業的相容性選項
 
@@ -35,7 +35,7 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 ||保留聊天和訊息|[了解 Microsoft Teams 的保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)|
 |資訊分類|||
 ||分類群組和團隊|[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
-||自動分類敏感內容|[自動將敏感性標籤套用到內容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
+||自動分類敏感內容|[自動將敏感度標籤套用到內容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
 ||加密敏感內容|[使用敏感度標籤來套用加密以限制存取內容](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)|
 |資訊保護|||
 ||避免機密資訊遺失|[資料外洩防護概觀](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|
@@ -52,7 +52,9 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 - [了解 SharePoint 和 OneDrive 的保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)
 
-小組保留原則保留聊天及通道訊息。 雖然聊天和通道郵件會儲存在 Exchange 信箱中，但不會受到 Exchange 保留原則的影響。 您必須將保留原則設定為套用到小組聊天和小組通道郵件：
+小組保留原則保留聊天及通道訊息。 雖然聊天和通道郵件會儲存在 Exchange 信箱中，但不會受到 Exchange 保留原則的影響。 您必須設定保留原則，以套用至小組聊天和小組通道郵件。 
+
+即使刪除使用者帳戶，也會無限期保留使用者聊天。 如果您不想要無限期保留此資料，請考慮使用保留原則，在指定的時間之後刪除使用者聊天，或在使用者刪除程式中包含這項刪除。
 
 - [了解 Microsoft Teams 的保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)
 
@@ -74,13 +76,13 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 您可以根據您指定的準則，將 Microsoft 365 設定為自動將敏感度標籤套用至檔案和電子郵件，包括偵測敏感資訊類型或與 trainable 的分類器相符的模式。
 
-- [自動將敏感性標籤套用到內容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+- [自動將敏感度標籤套用到內容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
 
 您可以使用敏感度標籤加密檔案，只允許具有解密及讀取這些檔案的許可權。
 
 - [使用敏感度標籤來套用加密以限制存取內容](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
 
-- [為團隊設定安全性隔離](https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation)
+- [為小組設定安全性隔離](https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation)
 
 其他資源：
 

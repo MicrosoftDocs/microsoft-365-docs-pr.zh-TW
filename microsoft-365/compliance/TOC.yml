@@ -44,16 +44,18 @@
           href: insider-risk-management.md
         - name: 測試人員風險管理計畫
           href: insider-risk-management-plan.md
-        - name: 開始使用測試人員風險設定
-          href: insider-risk-management-settings.md
         - name: 開始使用測試人員風險管理
           href: insider-risk-management-configure.md
+        - name: 開始使用測試人員風險設定
+          href: insider-risk-management-settings.md
         - name: 建立及管理測試人員風險原則
           href: insider-risk-management-policies.md
         - name: 調查測試人員風險警示
           href: insider-risk-management-alerts.md
         - name: 對測試人員風險案例採取動作
           href: insider-risk-management-cases.md
+        - name: 使用內部風險稽核記錄來審查活動
+          href: insider-risk-management-audit-log.md
         - name: 使用測試人員風險內容總管檢閱資料
           href: insider-risk-management-content-explorer.md
         - name: '使用 [使用者] 儀表板來管理工作流程'
@@ -237,8 +239,12 @@
               href: data-loss-prevention-policies.md
             - name: 深入了解端點資料外洩防護
               href: endpoint-dlp-learn-about.md
+            - name: 了解 Microsoft Teams 中的預設資料外洩防護原則 (預覽)
+              href: dlp-teams-default-policy.md
             - name: 深入了解 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)
               href: dlp-on-premises-scanner-learn.md
+            - name: 了解 Microsoft 合規性中心擴充功能 (預覽)
+              href: dlp-chrome-learn-about.md
         - name: 開始使用 DLP
           items:
             - name: 開始使用預設的 DLP 原則
@@ -253,6 +259,8 @@
               href: endpoint-dlp-getting-started.md
             - name: 為端點 DLP 設定裝置 Proxy 和網際網路連線設定
               href: endpoint-dlp-configure-proxy.md
+            - name: 開始使用 Microsoft 合規性中心擴充功能 (預覽)
+              href: dlp-chrome-get-started.md
             - name: Windows 10 裝置的端點 DLP 上線工具及方法
               items:
                 - name: Windows 10 裝置的上線工具及方法

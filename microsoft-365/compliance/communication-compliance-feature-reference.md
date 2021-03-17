@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 82dfab193277744c9a7888e7f9ac1d7b7293d843
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 30ad9bf968fa91218d15a6f71785d5299e664ddc
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542535"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838496"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -507,7 +507,7 @@ ms.locfileid: "50542535"
 | **Operations** | 對原則執行的審閱作業。 |
 | **AuditData** | 此欄位是所有原則審查活動的主要資料來源。 所有的檢閱活動都會以逗號分隔符號進行記錄及分隔。 |
 
-您也可以在整合的審計記錄中或使用 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell Cmdlet 來查看審核活動。
+您也可以在整合的審計記錄中或使用 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell Cmdlet 來查看審核活動。 若要深入瞭解審核記錄保留原則，請參閱 [Manage audit log 保留原則](audit-log-retention-policies.md)。
 
 例如，下列範例會傳回所有主管審查活動的活動， (原則和規則) ：
 
@@ -519,6 +519,12 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType AeD -
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
+```
+
+此範例會傳回符合您目前的通訊相容性原則的活動：
+
+```PowerShell
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
 ```
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>從 Office 365 的監察過渡

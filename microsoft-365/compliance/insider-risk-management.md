@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ceb35fa9e89a5393500cecb82e52f44852e47b6f
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: b98d2385ee0ae130df115c85010366a5100ab78d
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094664"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838444"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的內幕人士風險管理
 
@@ -51,7 +51,13 @@ ms.locfileid: "50094664"
 - **透明性**：透過隱私權架構，平衡使用者隱私權與組織風險。
 - **可設定的**：可根據業界、地理位置和商務群組進行設定的原則。
 - **整合**：跨 Microsoft 365 合規性解決方案的整合工作流程。
-- **可行**：提供深入瞭解使用者通知、資料調查和使用者調查。
+- **可行**：提供有關啟用檢閱者通知、資料調查和使用者調查的洞察力。
+
+## <a name="identifying-potential-risks-with-analytics-preview"></a>流量分析 (預覽識別潛在風險) 
+
+「內部使用者風險分析」可讓您在組織中評估潛在的內幕風險，而不需設定任何內部擁有者風險原則。 這項評估可協助您的組織識別潛在的使用者風險的潛在方面，並協助決定您可以考慮設定的有問必答風險管理原則類型和範圍。 這項評估還可以協助您判斷現有的有問必答風險原則的其他授權或未來優化的需求。
+
+若要深入瞭解內幕風險分析，請參閱「 [有問必答風險管理設定：分析](insider-risk-management-settings.md#analytics-preview)」。
 
 ## <a name="workflow"></a>工作流程
 
@@ -65,7 +71,7 @@ ms.locfileid: "50094664"
 
 [有問必答風險管理原則](insider-risk-management-policies.md) 是使用預先定義的範本和原則條件建立，以定義組織中檢查哪些觸發事件及風險指示器。 這些狀況包括風險指示器如何用於提醒、原則中所包含的使用者、優先順序的服務，以及監控時間週期。
 
-您可以從下列 [原則範本] 中進行選取，以快速開始使用「內幕風險管理」：
+您可以從下列原則範本中選取，以快速開始使用測試人員風險管理：
 
 - [由去聲使用者竊取資料](insider-risk-management-policies.md#data-theft-by-departing-users)
 - [一般資料洩漏](insider-risk-management-policies.md#general-data-leaks)
@@ -110,6 +116,8 @@ ms.locfileid: "50094664"
 
 ![測試人員風險調查](../media/insider-risk-investigate.png)
 
+此外，新的「 [審計記錄檔 (預覽」) ](insider-risk-management-audit-log.md) 可讓您及時瞭解對有問必答風險管理功能所採取的動作。 這個資源可以獨立複查指派給一或多個「內幕人員風險管理」角色群組之使用者所採取的動作。
+
 ### <a name="action"></a>動作
 
 在調查案例之後，檢閱者可以快速處理案例，或與組織中的其他風險專案關係人共同作業。 如果使用者無意或不經意地違反原則條件，則可以將簡單的提醒通知傳送給使用者，您可以自訂群組織的通知範本。 這些通知可能會做為簡單的提醒，也可能指導使用者進行複習訓練或指導，以協助避免未來的危險行為。 如需詳細資訊，請參閱[測試人員風險管理通知範本](insider-risk-management-notices.md)。
@@ -141,7 +149,7 @@ ms.locfileid: "50094664"
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a> (預覽) 的故意或無意間的安全性原則違規
 
-使用者在新式的工作場所管理其裝置時，通常會有很大的控制權。 這可能包括安裝或卸載其職責效能所需的應用程式，或暫時停用裝置安全性功能的許可權。 無論此活動是無意、意外或惡意的，此行為都會對您的組織造成風險，而且很重要的是識別和採取最小化。 為了協助識別這些危險的安全性活動，下列內部的「內幕人員風險管理」安全性原則違規模板會評分安全性風險指示器，並使用 Microsoft Defender for Endpoint 警示，提供與安全性相關活動的洞察力：
+使用者在新式的工作場所管理其裝置時，通常會有很大的控制權。 此控制項可能包含安裝或卸載其責任效能中所需的應用程式，或暫時停用裝置安全性功能的許可權。 無論此活動是無意、意外或惡意的，此行為都會對您的組織造成風險，而且很重要的是識別和採取最小化。 為了協助識別這些危險的安全性活動，下列內部的「內幕人員風險管理」安全性原則違規模板會評分安全性風險指示器，並使用 Microsoft Defender for Endpoint 警示，提供與安全性相關活動的洞察力：
 
 - [ (預覽的一般安全性原則違規) ](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [由使用者 (預覽) 中的使用者進行安全性原則違規 ](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
@@ -150,7 +158,7 @@ ms.locfileid: "50094664"
 
 ## <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>根據位置、存取層級或風險記錄 (預覽的使用者原則) 
 
-組織中的使用者可能會有不同層級的風險，取決於其位置、敏感資訊存取權或風險記錄。 這可能包括組織的高層領導團隊成員、具有大量資料和網路存取許可權的 IT 管理員，或過去具有風險活動之歷史的使用者。 在這些情況下，更深入的檢查和更積極的風險計分對於協助表面上的調查和快速動作都很重要。 若要協助識別這類使用者的危險活動，您可以建立優先順序使用者群組，並建立下列原則範本中的原則：
+組織中的使用者可能會有不同層級的風險，取決於其位置、敏感資訊存取權或風險記錄。 此結構可能包含組織的高層領導團隊成員、具有大量資料和網路存取許可權的 IT 管理員，或過去具有風險活動之歷史的使用者。 在這些情況下，更深入的檢查和更積極的風險計分對於協助表面上的調查和快速動作都很重要。 若要協助識別這類使用者的危險活動，您可以建立優先順序使用者群組，並建立下列原則範本中的原則：
 
 - [優先使用者 (預覽的安全性原則違規) ](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [依優先順序的使用者 (預覽的資料洩漏) ](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)

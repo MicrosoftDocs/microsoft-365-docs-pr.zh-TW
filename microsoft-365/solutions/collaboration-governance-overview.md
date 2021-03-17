@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 瞭解如何在 Microsoft 365 群組、小組、SharePoint 及 Yammer 中管理相關的功能。
-ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741594"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838464"
 ---
 # <a name="what-is-collaboration-governance"></a>什麼是共同作業控管？
 
@@ -40,6 +40,10 @@ Microsoft 365 群組、小組和 Yammer 等服務可讓使用者，並提供共�
 ### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全協同作業
 
 在您的組織中部署 Microsoft 365 群組和小組以進行安全共同作業時，有許多選項。 我們建議您使用這個控管內容搭配 [設定 Microsoft 365 的安全](setup-secure-collaboration-with-teams.md) 共同作業，以及其相關的文章，為您的組織建立最佳的共同作業解決方案。
+
+### <a name="data-residency"></a>資料落地
+
+如果您的組織是跨國的，而且您有不同地理位置的資料派駐需求，請在您的共同作業控管計畫中包含 [Microsoft 365 多地理](/microsoft-365/enterprise/microsoft-365-multi-geo) 位置。
 
 ## <a name="why-microsoft-365-groups-are-important"></a>Microsoft 365 群組為何很重要
 
@@ -109,6 +113,8 @@ Microsoft 365 支援三種主要通訊方法：
 - 依 **業務優先順序對齊**-業務目標可協助您定義投資管理所需的時間和精力。
 
 - **直接在您建立的解決方案中內嵌管理決策** -許多管理決定可以透過開啟或關閉 Microsoft 365 中的功能來實施。
+
+- **請先將分階段的方式** 共同作業功能提供給一小小使用者群組。 從他們那裡取得意見反應、觀賞服務台票證，並更新任何必要的設定或處理常式，再繼續進行較大的群組。
 
 - **使用** [microsoft 365 學習路徑](https://docs.microsoft.com/office365/customlearning) 等訓練-調整方案，以確保您的組織特有的預期會與 microsoft 所提供的訓練。
 
@@ -240,7 +246,7 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 
 - [使用 Office 365 群組、SharePoint、小組和 Yammer 尋找共同作業的最擅長點](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 安全性文件](https://docs.microsoft.com/microsoft-365/security)
 

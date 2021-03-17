@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 瞭解如何在 Microsoft 365 群組、小組和 SharePoint 中管理存取。
-ms.openlocfilehash: fb1bec219ef0d27c2a908f5f385185a1a70e01e1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 24a8a43f05206c9f1c0cd07aef480b330d968935
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613463"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838706"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>管理 Microsoft 365 群組、小組和 SharePoint 中的存取權
 
@@ -60,7 +60,7 @@ ms.locfileid: "49613463"
 
 - [管理 Microsoft 小組中的私營小組探索](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)
 
-您可以根據某些準則（例如部門），以動態方式管理群組或小組的成員資格。 在此情況下，成員和擁有者無法邀請人員加入小組。
+您可以根據某些準則（例如部門），以動態方式管理群組或小組的成員資格。 在此情況下，成員和擁有者無法邀請人員加入小組。 動態群組會使用您在 Azure Active Directory 中定義的中繼資料來控制群組的成員。 請確定您使用的中繼資料是完整的，且最新的是不正確的中繼資料，可能會導致使用者無法使用群組或加入不正確的使用者。
 
 - [在 Azure Active Directory 中建立或更新動態群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
 
@@ -121,6 +121,10 @@ Microsoft 365 允許以共用連結的 *任何人* 匿名共用檔案和資料�
 
 - [使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
+在您經常邀請客人加入群組和小組的環境中，請考慮設定定期進行的「來賓存取」複查。 系統會提示擁有者查看群組和小組中的客人，以及核准或拒絕存取權。
+
+- [設定來賓存取權檢閱](/microsoft-365/solutions/create-secure-guest-sharing-environment#set-up-guest-access-reviews)
+
 Microsoft 365 提供許多不同的共用資訊方法。 如果您有機密資訊，而且想要限制共用的方式，請參閱限制共用的選項：
 
 - [在 Microsoft 365 中限制共用](https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-limit-sharing)
@@ -135,7 +139,7 @@ Microsoft 365 提供許多不同的共用資訊方法。 如果您有機密資�
 
 - [建立安全的來賓共用環境](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
 
-- [啟用 B2B 的外部共同作業和管理誰可以邀請客人](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations)
+- [啟用 B2B 外部共同作業，並管理誰可以邀請來賓](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations)
 
 ## <a name="user-management"></a>使用者管理
 
@@ -169,4 +173,4 @@ Microsoft 365 提供許多不同的共用資訊方法。 如果您有機密資�
 
 [在 Yammer 中建立及管理外部網路](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-an-external-network)
 
-[為小組設定三層保護](https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection)
+[為 Teams 設定三層保護](https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection)

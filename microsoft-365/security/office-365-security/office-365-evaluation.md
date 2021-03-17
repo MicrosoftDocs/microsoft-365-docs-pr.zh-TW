@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a9bf9461e8cf6d62e4283c9112b801371242f2e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: ce17f413b23ef9ef6abf79a2710a5cec9b05206c
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453702"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838528"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>評估 Microsoft Defender for Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "50453702"
 
 進行完整的安全性產品評估，可協助您瞭解升級和購買的決策。 它可協助您嘗試安全性產品的功能，以評估其日常工作中的安全性操作小組的運作方式。
 
-[Microsoft Defender For Office 365](office-365-atp.md)評估體驗旨在消除裝置和環境設定的複雜性，使您能夠專注于評估安全性解決方案的功能。 它只適用于電子郵件保護，而不是 SharePoint、Office 用戶端（如 Word 或小組）。
+[Microsoft defender For office 365](office-365-atp.md)評估體驗旨在消除裝置和環境設定的複雜性，使您能夠專注于評估 Microsoft Defender for Office 365 的功能。 使用評估模式，可以評估所有傳送至 Exchange Online 信箱的郵件，而不需指向 Microsoft 的 MX 記錄。 此功能僅適用于電子郵件保護，而不適用於 Word、SharePoint 或小組等 Office 用戶端。
 
 如果您還沒有支援 Microsoft Defender for Office 365 的授權，您可以開始 [30 天的試用版評估](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) ，並測試 Office 365 安全性 & 規範中心 (中的功能 https://protection.office.com/homepage) 。 您將會喜歡快速設定，必要時您可以輕鬆關閉此功能。
 

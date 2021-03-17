@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b1c613abd119265de3399d9057c917a680f5b880
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 65fa24d0a69e43cbdb2deeed8362b83d6b097413
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289780"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838356"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -44,7 +44,7 @@ ms.locfileid: "50289780"
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概覽
 
-|**階段**|**涉及的內容**|
+| 階段 | 涉及的內容 |
 |:--------|:------------------|
 | [請確定符合先決條件](#prerequisites) | -確認您具備必要的 [授權和許可權](information-barriers.md#required-licenses-and-permissions)<br/>-確認您的目錄包含分割使用者的資料<br/>-針對 Microsoft 團隊啟用範圍型目錄搜尋<br/>-請確定已開啟審核記錄<br/>-確定沒有 Exchange 通訊錄原則已就緒<br/>-提供 (範例的使用 PowerShell) <br/>-提供 Microsoft 團隊的系統管理員同意 (步驟包括)  |
 | [第1部分：分割組織中的使用者](#part-1-segment-users) | -決定所需的原則<br/>-建立區段清單以定義<br/>-識別要使用的屬性<br/>-以原則篩選的條款定義區段 |
@@ -76,19 +76,25 @@ ms.locfileid: "50289780"
 
 - 管理員對 Microsoft 小組資訊障礙的同意-當您的 IB 原則已到位時，可以從群組中移除非 IB 合規性使用者 (亦即，小組通道是以群組) 為基礎。 這種設定可協助確保您的組織符合原則及規定。 使用下列程式可讓資訊障礙原則在 Microsoft 小組中如預期的方式運作。
 
+   1. 預備必要條件：從 [安裝 azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)安裝 azure PowerShell。
+
    1. 執行下列 PowerShell Cmdlet：
 
       ```powershell
-      Connect-AzAccount 
+      Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
       if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
-   2. 出現提示時，使用您的公司或學校帳戶登入 Office 365。
+   1. 出現提示時，使用您的公司或學校帳戶登入 Office 365。
 
-   3. 在 [ **要求的許可權** ] 對話方塊中，複查資訊，然後選擇 [ **接受**]。
+   1. 在 [ **要求的許可權** ] 對話方塊中，複查資訊，然後選擇 [ **接受**]。 下列提供應用程式要求的許可權。
+      
+      > [!div class="mx-imgBorder"]
+      > ![圖像](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
+
 
 當滿足所有必要條件時，請繼續進行下一節。
 
@@ -126,7 +132,7 @@ ms.locfileid: "50289780"
 
 1. 使用 **OrganizationSegment 指令程式** 搭配 **UserGroupFilter** 參數，該參數會對應至您想要使用的 [屬性](information-barriers-attributes.md) 。
 
-    |**語法**|**範例**|
+    | 語法 | 範例 |
     |:---------|:----------|
     | `New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"` |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>在此範例中，稱為 *hr* 的區段是使用 *hr*，以 [ *部門* ] 屬性中的值來定義。 Cmdlet 的 **-eq** 部分參照 "equals"。  (或者，您可以使用 **-ne** 表示 "not equals"。 請參閱 [片段定義中的 Using "equals" 和 "not equals"](#using-equals-and-not-equals-in-segment-definitions)。 )  |
 
@@ -143,19 +149,19 @@ ms.locfileid: "50289780"
 
 在下列範例中，我們定義的是 "部門等於 HR" 的區段。 
 
-|**範例**|**附註**|
+| 範例 | 注意 |
 |:----------|:-------|
 |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` | 請注意，在此範例中，線段定義包含表示為 **-eq** 的 "equals" 參數。 |
 
 您也可以使用 "not equals" 參數定義線段，以表示為 **-ne**，如下表所示：
 
-|**語法**|**範例**|
+| 語法 | 範例 |
 |:---------|:----------|
 | `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | 在此範例中，我們會定義一個稱為 *NotSales* 的區段，其中包含不在 *銷售* 人員的任何人。 Cmdlet 的 **-ne** 部分參照 "not equals"。 |
 
 除了使用 "equals" 或 "not equals" 定義區段之外，您還可以使用 "equals" 和 "not equals" 參數定義區段。 您也可以使用邏輯 *AND* 和 *OR* 運算子定義複雜的群組篩選。
 
-|**語法**|**範例**|
+| 語法 | 範例 |
 |:---------|:----------|
 | `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` | 在此範例中，我們會定義一個稱為 *LocalFTE* 的區段，其中包含位於本機的使用者，且其位置並未列出為 *暫時* 的。 |
 | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`| 在此範例中，我們會定義一個稱為 *Segment1* 的區段，其中包含 group1@contoso.com 成員的人員，而不是 group3@contoso.com 的成員。 |
@@ -187,11 +193,13 @@ ms.locfileid: "50289780"
 
 1. 若要定義您的第一個封鎖原則，請使用具有 **SegmentsBlocked** 參數的 **InformationBarrierPolicy** Cmdlet。
 
-    |**語法** |**範例**| | * *--------|：----------| |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"` | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此範例中，我們為稱為 *sales* 的區段定義名為「*銷售調研*」的原則。 使用中並套用此原則，可防止 *銷售* 人員與稱為「 *調研*」區段中的人員進行通訊。 |
+    | 語法 | 範例 |
+    |:--------|:----------|
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"` | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此範例中，我們為稱為 *sales* 的區段定義名為「*銷售調研*」的原則。 使用中並套用此原則，可防止 *銷售* 人員與稱為「 *調研*」區段中的人員進行通訊。 |
 
 2. 若要定義第二個封鎖段，請再次使用具有 **SegmentsBlocked** 參數的 **InformationBarrierPolicy 指令程式**，這次會將段落顛倒。
 
-    |**範例**|**附註**|
+    | 範例 | 注意 |
     |:----------|:-------|
     |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` | 在此範例中，我們會定義稱為「 *調查銷售* 」的原則，以防止「 *調查* 」與「 *銷售*」通訊。 |
 
@@ -204,13 +212,13 @@ ms.locfileid: "50289780"
 
 1. 若要允許一個區段只與一個其他的區段進行通訊，請使用具有 **SegmentsAllowed** 參數的 **InformationBarrierPolicy** Cmdlet。
 
-    |**語法**|**範例**|
+    | 語法 | 範例 |
     |:----------|:----------|
     | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"` | `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p> 在此範例中，我們為稱為「*製造*」的區段定義稱為「*製造業-HR* 」的原則。 使用中並套用此原則時，可讓 *製造業* 中的人員只與稱為 *HR* 的區段中的人員進行通訊。  (在此案例中， *製造業* 無法與不屬於 *人力資源* 的使用者進行通訊。 )  |
 
     **如有需要，您可以使用此 Cmdlet 來指定多個區段，如下列範例所示。**
 
-    |**語法**|**範例**|
+    | 語法 | 範例 |
     |:---------|:----------|
     | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"` | `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p> 在此範例中，我們定義了一個原則，可讓 *調查* 區段只與 *HR* 和 *製造業* 通訊。 |
 
@@ -231,7 +239,7 @@ ms.locfileid: "50289780"
 
 2. 若要將原則設定為作用中狀態，請使用 **InformationBarrierPolicy** 指令程式搭配 **Identity** 參數，並將 **State** 參數設定為 **active**。 
 
-    |**語法**|**範例**|
+    | 語法 | 範例 |
     |:---------|:----------|
     | `Set-InformationBarrierPolicy -Identity GUID -State Active` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active` <p> 在此範例中，我們會設定具有 GUID *43c37853-ea10-4b90-a23d-ab8c93772471* 為 [使用中] 狀態的資訊屏障原則。 |
 
@@ -247,7 +255,7 @@ ms.locfileid: "50289780"
 
 透過 PowerShell，您可以查看使用者帳戶、區段、原則及原則應用程式的狀態，如下表所列。
 
-|**若要查看此資訊**|**採取此動作**|
+| 若要查看此資訊 | 採取此動作 |
 |:---------------|:----------|
 | 使用者帳戶 | 使用具有 Identity 參數的 **InformationBarrierRecipientStatus** Cmdlet。 <p> 語法： `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 <p> 範例：`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此範例中，我們會參考 Office 365 中的兩個使用者帳戶： *meganb* for *Megan* 和 *alexw* for *Alex*。 <p>  (您也可以將此 Cmdlet 用於單一使用者： `Get-InformationBarrierRecipientStatus -Identity <value>`)  <p> 此 Cmdlet 會傳回使用者的相關資訊，例如屬性值以及所套用的任何資訊屏障原則。|
 | 段 | 使用 **OrganizationSegment** Cmdlet。<p> 語法： `Get-OrganizationSegment` <p> 此 Cmdlet 會顯示針對您組織所定義的所有網段清單。 |
@@ -274,7 +282,7 @@ ms.locfileid: "50289780"
 
 Contoso 有五個部門： HR、Sales、Marketing、Research 及製造業。 為了維持與業界法規的相容性，某些部門中的人員不應該與其他部門通訊，如下表所列：
 
-|**段**|**可以交談**|**無法交談**|
+| 段 | 可以交談 | 無法交談 |
 |:----------|:--------------|:-----------------|
 | 人力資源 | 所有人 |  (無限制)  |
 | 銷售 | HR、行銷、製造業 | 參考資料 |
@@ -285,6 +293,7 @@ Contoso 有五個部門： HR、Sales、Marketing、Research 及製造業。 為
 針對此結構，Contoso 的計畫包括三項資訊障礙原則：
 
 1. 一種原則設計，可防止銷售人員與調研 (及另一個原則通訊，以防止調研與銷售) 通訊。
+
 2. 一個原則，可讓製造業只與 HR 和 Marketing 進行通訊。
 
 在此案例中，您不需要為 HR 或 Marketing 定義原則。
@@ -293,7 +302,7 @@ Contoso 有五個部門： HR、Sales、Marketing、Research 及製造業。 為
 
 Contoso 會使用 Azure Active Directory 中的部門屬性定義區段，如下所示：
 
-|**Department**|**段定義**|
+| 部門 | 段定義 |
 |:-------------|:---------------------|
 | 人力資源 | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` |
 | 銷售 | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"` |
@@ -307,7 +316,7 @@ Contoso 會使用 Azure Active Directory 中的部門屬性定義區段，如下
 
 Contoso 定義三個原則，如下表所述：
 
-|**原則**|**原則定義**|
+| 原則 | 原則定義 |
 |:---------|:--------------------|
 | **原則1：防止銷售人員與調查進行通訊** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此範例中，資訊屏障原則稱為「 *銷售-調研*」。 當您使用並套用此原則時，會協助避免銷售資料段中的使用者與研究資料段中的使用者進行通訊。 這項原則是單向原則;它不會防止「調查」與銷售進行通訊。 針對此，需要原則2。 |
 | **原則2：防止調查與銷售通訊** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此範例中，資訊屏障原則稱為「 *調研-銷售*」。 當您使用並套用此原則時，它會協助避免使用調查區段中的使用者與銷售部門中的使用者進行通訊。 |

@@ -17,18 +17,22 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 瞭解如何控制可建立 Microsoft 365 群組的使用者。
-ms.openlocfilehash: f2d1a2062d43af750a84984aab66329ed6a4db22
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 04c2b6e738ed41f8d4a2bf96716fb74b1d260497
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819699"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838636"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理能建立 Microsoft 365 群組的使用者
 
 根據預設，所有使用者都可以建立 Microsoft 365 群組。 這是建議的方法，因為它可讓使用者在不需要協助的情況下開始合作。
 
-如果您的公司需要限制誰可以建立群組，您可以遵循本文所述的程式來執行。 當您限制誰可以建立群組時，它會影響依賴群組進行存取的所有服務，包括：
+如果您的公司需要限制誰可以建立群組，您可以將 Microsoft 365 群組建立限制為特定 Microsoft 365 群組或安全性群組的成員。
+
+如果您擔心使用者建立的小組或群組不符合您的商務標準，請考慮要求使用者完成訓練課程，然後將其新增至允許的使用者群組。
+
+當您限制誰可以建立群組時，它會影響依賴群組進行存取的所有服務，包括：
 
 - Outlook
 - SharePoint
@@ -38,8 +42,6 @@ ms.locfileid: "50819699"
 - Planner
 - Power BI (傳統) 
 - Web/藍圖的專案
-
-您可以將 Microsoft 365 群組建立限制在特定 Microsoft 365 群組或安全性群組的成員。 若要設定此，您可以使用 Windows PowerShell。 本文將引導您完成必要的步驟。
 
 本文中的步驟不會防止某些角色的成員建立群組。 Office 365 全域系統管理員可以透過任何方式建立群組，例如 Microsoft 365 系統管理中心、Planner、小組、Exchange 及 SharePoint 線上。 其他角色可以透過有限的方式建立群組，如下所列。
 
@@ -141,7 +143,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 腳本的最後一行會顯示更新的設定：
 
-![This is what your settings will look like when you're done.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
+![PowerShell 腳本輸出的螢幕擷取畫面。](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
 如果您想要變更所使用的群組，您可以使用新群組的名稱重新執行腳本。
 

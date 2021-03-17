@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 858b4a05dd65b0a32d672882e6ec18188c0cce81
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: c40c30c44e5b8010112adc11d7faee49563761bf
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423938"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838268"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 中的內部風險解決方案
 

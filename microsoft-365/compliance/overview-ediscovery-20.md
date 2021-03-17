@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 深入瞭解 Microsoft 365 中的高級 eDiscovery 解決方案。 本文概要說明 Microsoft 365 中的高級 eDiscovery，這是協助您管理內部及外部調查的工具。 它也可讓您使用高級 eDiscovery 來管理法律調查的商業原因。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6623682dedd0342f1e88478127d23bbbd4ab9dbb
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 80a1505bf19beb954c0746efb7fb29f99d6a916b
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727584"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838219"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Microsoft 365 Advanced eDiscovery 概述
 
@@ -103,7 +103,7 @@ Advanced eDiscovery 中的智慧機學習功能可協助您減少要檢查的資
 
 ### <a name="collecting-case-data"></a>收集案例資料
 
-使用 [ **搜尋** ] 索引標籤來建立搜尋，以搜尋與案例相關之內容的就地 custodial 和非 custodial 資料來源。 您可以使用關鍵字和) 條件來建立及執行查詢型搜尋 (，以識別一組與案例相關的電子郵件訊息和檔，以及您想要在 eDiscovery 工作流程的後續步驟中進一步複查及分析的檔。 您可以建立一個或多個與案例相關聯的搜尋。 您也可以使用搜尋工具來預覽範例檔，並查看搜尋統計資料，以協助您優化和改善搜尋結果。 當您認為搜尋結果包含與案例相關的所有資料時，您可以將搜尋結果新增至審閱集，以便進一步複查、分析和剔除。 如需詳細資訊，請參閱 [收集案例的資料](collecting-data-for-ediscovery.md)。
+使用 [ **集合** ] 索引標籤可建立 eDiscovery 搜尋，以搜尋與案例相關之內容的就地 custodial 和非 custodial 資料來源。 您可以使用關鍵字和) 條件來建立及執行查詢型集合 (，以識別一組與案例相關的電子郵件訊息與檔，以及您想要在 eDiscovery 工作流程的後續步驟中進一步複查及分析的檔。 您可以建立一個或多個與案例相關聯的集合。 您也可以使用集合工具來預覽範例檔，並查看搜尋統計資料，以協助您優化和改善搜尋結果。 當您認為集合結果包含與案例相關的資料後，您可以將集合認可為審閱集，以供進一步複查、分析和剔除。 如需詳細資訊，請參閱 [收集案例的資料](collecting-data-for-ediscovery.md)。
 
 ### <a name="reviewing-and-analyzing-case-data"></a>檢查及分析案例資料
 
