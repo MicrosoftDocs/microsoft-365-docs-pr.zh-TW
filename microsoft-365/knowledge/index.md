@@ -42,7 +42,7 @@ Viva Topics 是 Office 365 服務，可協助組織將資訊轉換為知識。
 |深入了解 Viva Topics |[Microsoft Viva Topics 概觀](topic-experiences-overview.md)|
 |了解 AI 如何發現及建議主題|[Microsoft Viva Topics 探索](topic-experiences-discovery.md)|
 |了解主題安全性|[Microsoft Viva 安全性與隱私權](topic-experiences-security-privacy.md)|
-|了解如何取得 Viva Topics |[Microsoft Viva Topics 產品頁面](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|了解如何取得 Viva Topics|[Microsoft Viva Topics 產品頁面](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
 |查看 Microsoft 技術社群資源中心的資源|[Microsoft Viva Topics 技術社群](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
