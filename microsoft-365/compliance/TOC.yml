@@ -540,6 +540,8 @@
               href: de-duplication-in-ediscovery-search-results.md
             - name: 估計與實際搜尋結果之間的差異
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: 儲存在信箱中供電子文件探索的內容
+              href: what-is-stored-in-exo-mailbox.md
             - name: 電子文件探索工具的解密
               href: ediscovery-decryption.md
         - name: 內容搜尋 PowerShell 指令碼
@@ -570,6 +572,8 @@
               href: assign-ediscovery-permissions.md
             - name: 關鍵字查詢與搜尋條件
               href: keyword-queries-and-search-conditions.md
+            - name: 儲存在信箱中供電子文件探索的內容
+              href: what-is-stored-in-exo-mailbox.md
             - name: 設定搜尋權限篩選
               href: permissions-filtering-for-content-search.md
             - name: 設定合規性界限
@@ -635,14 +639,27 @@
         - name: 管理處理錯誤
           href: processing-data-for-case.md
           items:
-            - name: 進階的監管人資料索引
+            - name: 監管人內容進階索引
               href: indexing-custodian-data.md
-            - name: 處理資料時的錯誤補救
+            - name: 處理內容時的錯誤補救
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: 單一項目錯誤補救
               href: single-item-error-remediation.md
+        - name: 收集案例的內容 （預覽）
+          items:
+            - name: 了解集合 （預覽）
+              href: collections-overview.md
+            - name: 建立草稿集合 （預覽）
+              href: create-draft-collection.md
+            - name: 將草稿集合提交至檢閱集 （預覽）
+              href: commit-draft-collection.md
+            - name: 集合統計資料和報告 （預覽）
+              href: collection-statistics-reports.md
+            - name: 組建集合的搜尋查詢
+              href: building-search-queries.md
+            - name: 關鍵字查詢與搜尋條件
+              href: keyword-queries-and-search-conditions.md
         - name: 收集適用於案例的資料
-          href: collecting-data-for-ediscovery.md
           items:
             - name: 建立搜尋
               href: create-search-to-collect-data.md
@@ -661,7 +678,7 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: 將資料新增至另一個檢閱集
               href: add-data-to-review-set-from-another-review-set.md
-        - name: 檢閱案例資料
+        - name: 評論案例內容
           items:
             - name: 使用檢閱集儀表板
               href: advanced-ediscovery-dashboard.md
@@ -671,7 +688,7 @@
               href: review-set-search.md
             - name: 標記檢閱集中的文件
               href: tagging-documents.md
-        - name: 分析案例資料
+        - name: 分析案例內容
           href: analyzing-data-in-review-set.md
           items:
             - name: 近似重複項偵測
@@ -680,11 +697,11 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: 佈景主題
               href: themes-in-advanced-ediscovery.md
-            - name: 使用相關性模組來分析資料
+            - name: 使用相關性模組來分析內容
               href: using-relevance.md
-            - name: 相關性模組淘汰
+            - name: 停用相關性模組
               href: relevance-module-retirement.md
-        - name: 匯出案例資料
+        - name: 匯出案例內容
           href: exporting-data-ediscover20.md
           items:
             - name: 從檢閱集下載文件
@@ -725,6 +742,8 @@
               href: permissions-filtering-for-content-search.md
             - name: 設定合規性界限
               href: set-up-compliance-boundaries.md
+            - name: 儲存在信箱中供電子文件探索的內容
+              href: what-is-stored-in-exo-mailbox.md
             - name: 電子文件探索工具的解密
               href: ediscovery-decryption.md
             - name: 收集電子文件探索診斷資訊

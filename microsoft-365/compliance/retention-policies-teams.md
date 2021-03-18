@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: 4296924684e13e163f28e0f952b2cd380cdcc047
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: ec4ca9a79ee3b5674e1837d14cea4ee504cb57d5
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712009"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838208"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -46,7 +46,7 @@ ms.locfileid: "50712009"
 使用 Teams 保留原則可以保留和删除以下 Teams 項目：聊天訊息和頻道訊息 (包括内嵌影像、表格、超文字連結、指向其他 Teasm 訊息和檔案的連結以及[卡片内容](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards))。 聊天訊息包括聊天中所有人的姓名，頻道訊息包括小組名稱和訊息標題 (如有)。 
 
 > [!NOTE]
-> 包括卡片內容是最近新增的，目前正在向租用戶推出。 有關更多資訊，請參閱[透過 Teams 中應用程式之針對調適型卡片內容的 Microsoft 365 合規性功能已上線](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)。
+> 包括卡片內容是最近新增的，且目前已完全向租用戶推出。 有關更多資訊，請參閱[透過 Teams 中應用程式之針對調適型卡片內容的 Microsoft 365 合規性功能已上線](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)。
 
 保留原則目前不支援私人頻道中的 Teams 訊息。 當您對 Teams 使用保留原則時，系統不會包含程式碼片段、來自 Teams 行動用戶端的錄製語音備忘錄、縮圖、宣告影像，以及來自其他人表情符號形式的反應。
 
@@ -59,7 +59,7 @@ Teams 保留原則中不包括與 Teams 一起使用的電子郵件和檔案。 
 這些信箱是依其 RecipientTypeDetails 屬性列出：
 
 - **MailUser**：這些信箱會儲存雲端式 Teams 使用者的郵件。
-- **UserMailbox**：這些信箱會儲存[內部部屬 Teams 使用者](search-cloud-based-mailboxes-for-on-premises-users.md)的郵件。
+- **UserMailbox**：這些信箱會儲存 [內部部屬 Teams 使用者](search-cloud-based-mailboxes-for-on-premises-users.md)的郵件。
 - **GroupMailbox**：這些信箱會儲存 Teams 頻道的訊息。
 
 Teams 保留原則不支援的其他信箱類型，例如用於 Teams 會議室的 RoomMailbox。

@@ -2,8 +2,8 @@
 title: Microsoft 生產力分數
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生產力分數概觀。
-ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509083"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838422"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生產力分數 
 
-生產力分數透過深入了解您的組織如何使用 Microsoft 365 以及支援它的技術經驗來支援數位轉型的過程。 組織的分數反映出人員和技術經驗的衡量標準，並可以與規模相近的組織基准進行比較。
+生產力分數透過深入了解您的組織如何使用 Microsoft 365 以及支援它的技術經驗來支援數位轉型的過程。 組織的分數反映出人員和技術體驗的衡量標準，並可以與規模相近的組織基準進行比較。
 
 它提供：
 
@@ -40,7 +40,7 @@ ms.locfileid: "50509083"
 
 - **人員體驗：** 量化組織使用 Microsoft 365 類別，例如內容共同作業、行動性、通訊、會議及團隊合作的狀況。  
 
-    對於上述每個類別，我們著眼於公共研究，以組織有效性的形式找出一些最佳作法和相關利益。 例如，[Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) 研究顯示，當人員在雲端 (而不是使用電子郵件附件)進行共同作業和共用內容時，他們每週最多可以節省 100 分鐘。 此外，我們會量化組織中這些最佳做法的使用狀況，以協助您查看您在數位轉型中所處的階段。 
+    對於上述每個類別，我們著眼於公用研究，以組織有效性的形式識別出一些最佳作法和相關優點。 例如，[Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) 研究顯示，當人員在雲端 (而不是使用電子郵件附件)進行共同作業和共用內容時，他們每週最多可以節省 100 分鐘。 此外，我們會量化組織中這些最佳做法的使用狀況，以協助您查看您在數位轉型中所處的階段。 
 
 - **技術體驗**：組織仰賴可靠和性能良好的技術，以及 Microsoft 365 的有效使用。 [端點分析](https://aka.ms/endpointanalytics)：協助您了解組織如何受硬體與軟體的效能和健康情況問題影響。 Microsoft 365 應用程式健康情況可協助您了解組織中的裝置是否正在建議通道上執行 Microsoft 365 應用程式。
 
@@ -72,7 +72,7 @@ ms.locfileid: "50509083"
 組織的分數每天更新一次，並反映過去 28 天 (包括當日) 完成的使用者動作。
 
 
-## <a name="pre-requisites"></a>先決條件 
+## <a name="prerequisites"></a>必要條件 
 
 關於人員體驗資料，您需要商務用 Microsoft 365 或Office 365 企業版訂閱。 關於租用戶的端點分析資料，您需要將 Microsoft Intune 增加到您的訂閱中。 Intune 經由管理裝置和應用程式來協助您保護組織的資料。 擁有 Intune 之後，您可以在 Intune 體驗中開啟端點分析。 深入了解 [Microsoft Intune](https://docs.microsoft.com/mem/intune/)。 
 > [!NOTE]
@@ -92,9 +92,9 @@ ms.locfileid: "50509083"
 > [!NOTE]
 > 只有擁有全域系統管理員角色的 IT 專業人員才能註冊或加入選擇加入生產力分數的租用戶。
 
-請注意，這項資訊僅用於使用 Microsoft 365 進行數位轉型，因此應謹慎共用。 
+生產力分數的角色型存取控制模型，提供將角色指派給組織內 IT 專業人員的彈性，協助組織進一步進行 Microsoft 365 的數位轉型。
 
-Microsoft 致力於保護個人隱私權。 這份[隱私權文件](privacy.md)說明我們提供給您身為組織 IT 系統管理員的控制措施，以確保資訊具有可行性，同時又不損害您對 Microsoft 的信任。
+Microsoft 致力於保護個人隱私。 這份[隱私權文件](privacy.md)說明我們提供給您身為組織 IT 系統管理員的控制措施，以確保資訊具有可行性，同時不損害您對 Microsoft 的信任。
 
 您可以從 [Microsoft 365 系統管理] 首頁的 **[報告]**  >  **[生產力分數]** 下存取該體驗。
 
