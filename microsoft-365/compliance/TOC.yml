@@ -645,15 +645,15 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: 單一項目錯誤補救
               href: single-item-error-remediation.md
-        - name: 收集案例的內容 （預覽）
+        - name: 收集案例的內容 (預覽)
           items:
-            - name: 了解集合 （預覽）
+            - name: 了解集合 (預覽)
               href: collections-overview.md
-            - name: 建立草稿集合 （預覽）
+            - name: 建立草稿集合 (預覽)
               href: create-draft-collection.md
-            - name: 將草稿集合提交至檢閱集 （預覽）
+            - name: 草稿集合提交至檢閱集 (預覽)
               href: commit-draft-collection.md
-            - name: 集合統計資料和報告 （預覽）
+            - name: 集合統計資料和報告 (預覽)
               href: collection-statistics-reports.md
             - name: 組建集合的搜尋查詢
               href: building-search-queries.md

@@ -41,7 +41,7 @@ Office 365 需具有網際網路的連線能力。使用　Office 365 方案的�
 |:-----|:-----|:-----|
 |**上次更新日期:** 2021 年 3 月 1 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [變更記錄訂閱](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下載：** 一個 [JSON 格式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)清單中所有必要與選用的目的地。  <br/> | **使用：** 我們的 proxy [PAC 檔案](managing-office-365-endpoints.md#pacfiles) <br/> |
 
- 開始使用 [管理 Office 365 端點][](managing-office-365-endpoints.md)，以了解我們針對在使用本資料管理網路連線能力上的建議。 端點資料會在每個月初根據需要進行更新，並在上線前 30 天發布新的 IP 位址和 URL。  這讓尚未進行自動更新的客戶，能在需要新連接前完成該流程。  如果需要解決支援升級、安全性事件或其他即時操作需求，則還可以在該月內更新端點。  本頁下方顯示的資料全部來自基於 REST 的 Web 服務。 如果您正使用指令碼或網路裝置來存取本資料，您應直接前往 [Web 服務][](microsoft-365-ip-web-service.md)。
+ 從[管理 Office 365 端點](managing-office-365-endpoints.md)開始，以了解我們針對在使用此資料管理網路連線能力方面的建議。 端點資料會在每個月初根據需要進行更新，並在上線前 30 天發布新的 IP 位址和 URL。  這讓尚未進行自動更新的客戶，能在需要新連線前完成該程序。  如果需要解決支援升級、安全性事件或其他即時操作需求，則還可以在該月內更新端點。  本頁下方顯示的資料全部來自基於 REST 的 Web 服務。 如果您正使用指令碼或網路裝置來存取本資料，您應直接前往 [Web 服務](microsoft-365-ip-web-service.md)。
 
 下列端點資料列出了從使用者機器到連線至 Office 365 的要求。它不包括從 Microsoft 到客戶網路的網路連線，有時稱為混合式或輸入網路連線。如需詳細資訊，請參閱[其他端點](additional-office365-ip-addresses-and-urls.md)。
 
