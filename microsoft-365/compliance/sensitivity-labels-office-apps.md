@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7dcd0ce9b439d78b79d95b3eca39d80ca440726c
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 782c4fdda7e515d921063937f59b199510beaf08
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826185"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838609"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -351,7 +351,12 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 - 當強制套用標籤生效時，使用者無法從文件移除敏感度標籤，但可以變更現有的標籤。
 
-如需何時使用此設定的指導，請參閱[原則設定](sensitivity-labels.md#what-label-policies-can-do)的相關資訊。
+如需何時使用此設定的指導方針，請參閱[原則設定](sensitivity-labels.md#what-label-policies-can-do)的相關資訊。
+
+> [!NOTE]
+> 如果您除了強制標籤之外，還針對文件和電子郵件使用預設標籤原則設定： 
+>
+> 預設標籤一律優先於強制標籤。 不過，針對文件，Azure 資訊保護統一標籤用戶端會針對所有未標籤的文件套用預設標籤，而內建標籤會對新文件而非針對未標籤的現有文件套用預設標籤。 此行為差異表示，當您使用強制標籤搭配預設標籤時，當使用者使用內建標籤時，系統會較使用 Azure 資訊保護統一標籤用戶端時，更常提示使用者套用敏感度標籤。
 
 ## <a name="end-user-documentation"></a>使用者文件
 
