@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: a275b2ec14403e16651acb293f8598b453fd3739
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: db6340e8bf4dc23163b67e749f60567f7841a943
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515013"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911183"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -123,6 +123,6 @@ ms.locfileid: "50515013"
 
 ## <a name="see-also"></a>另請參閱
 
-[表單處理模型概觀](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
+[表單處理模型概觀](/ai-builder/form-processing-model-overview)
 
 [逐步執行：如何建立文件理解模型 (影片)](https://www.youtube.com/watch?v=DymSHObD-bg)

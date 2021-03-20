@@ -22,20 +22,20 @@ search.appverid:
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: 瞭解如何管理 Microsoft 365 相關的系統管理員工作、行動裝置、Windows 10 電腦及許多這類工作。
-ms.openlocfilehash: 0534356f4ffc4a05504121d96edbc381e00632e9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d4136298a1305f12602e0ce258a440dd72e8cd64
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403031"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913167"
 ---
 # <a name="manage-microsoft-365-for-business"></a>管理 Microsoft 365 for business
 
 ## <a name="general-microsoft-365-for-business-admin-tasks"></a>一般 Microsoft 365 for business 系統管理工作
 
-Office 365 的大部分系統[管理內容](https://docs.microsoft.com/office365/admin/admin-home)也適用于商務用 Microsoft 365。
+Office 365 的大部分系統 [管理內容](/office365/admin/admin-home) 也適用于商務用 Microsoft 365。
 
-- [將更多使用者新增至 Microsoft 365 for business](add-users-m365b.md)
+- [將更多使用者新增至 Microsoft 365 for business](../admin/add-users/add-users.md)
     
 - [檢視原則和裝置](view-policies-and-devices.md)
     
@@ -51,7 +51,7 @@ Office 365 的大部分系統[管理內容](https://docs.microsoft.com/office365
     
 - [設定 Android 或 iOS 裝置的 App 保護設定](app-protection-settings-for-android-and-ios.md)
     
-    若要確定這是否正常運作，請參閱[驗證 Android 或 iOS 裝置上的 app 保護設定](validate-settings-on-android-or-ios.md)。 
+    若要確定這是否正常運作，請參閱 [驗證 Android 或 iOS 裝置上的 app 保護設定](validate-settings-on-android-or-ios.md)。 
     
 - [從裝置移除公司資料](remove-company-data.md)
     
@@ -59,15 +59,15 @@ Office 365 的大部分系統[管理內容](https://docs.microsoft.com/office365
 
 - [為商務用 Microsoft 365 使用者設定 Windows 裝置](set-up-windows-devices.md)
 
-    在您自動安裝 Office 之前，請先閱讀[Microsoft 365 for Business 準備 office 用戶端部署](prepare-for-office-client-deployment.md)。 
+    在您自動安裝 Office 之前，請先閱讀 [Microsoft 365 for Business 準備 office 用戶端部署](prepare-for-office-client-deployment.md) 。 
     
 - [設定 Windows 10 裝置的裝置保護設定](protection-settings-for-windows-10-pcs.md)
     
-    若要確定這是否正常運作，請參閱[在 Windows 10 裝置上驗證裝置保護設定](validate-settings-on-windows-10-pcs.md)。 
+    若要確定這是否正常運作，請參閱 [在 Windows 10 裝置上驗證裝置保護設定](validate-settings-on-windows-10-pcs.md)。 
     
 - [設定 Windows 10 裝置的應用程式保護設定](protection-settings-for-windows-10-devices.md)
     
-    若要確定這是否正常運作，請參閱[在 Windows 10 電腦上驗證應用程式保護設定](validate-protection-settings-on-windows-10-pcs.md)。 
+    若要確定這是否正常運作，請參閱 [在 Windows 10 電腦上驗證應用程式保護設定](validate-protection-settings-on-windows-10-pcs.md)。 
     
 - [從裝置移除公司資料](remove-company-data.md)
     

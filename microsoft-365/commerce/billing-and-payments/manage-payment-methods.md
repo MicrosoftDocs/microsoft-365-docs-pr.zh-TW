@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 description: 了解如何在 Microsoft 365 系統管理中心管理您的付款方式。
 ms.date: ''
-ms.openlocfilehash: a6866a9691e42928a5712c3069704f11fac0546f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 2a53ae0bfb4806a85e03f293f58e1b575e8bcf90
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741386"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911839"
 ---
 # <a name="manage-payment-methods"></a>管理付款方式
 
 ::: moniker range="o365-21vianet"
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 ::: moniker-end
 
 向 Microsoft 購買商務產品或服務時，您可以使用現有的付款方式，或新增付款方式。 您可以使用信用卡或轉帳卡，或是銀行帳戶來支付購買的項目。
@@ -55,7 +55,7 @@ ms.locfileid: "50741386"
 
 新增付款方式不會將任何訂閱與它相關聯。 若要將單一訂閱指派給付款方式，請參閱[變更單一訂閱的付款方式](#change-a-payment-method-for-a-single-subscription)。 若要以新的付款方式取代使用另一種付款方式的所有訂閱，請參閱[取代付款方式](#replace-a-payment-method)。
 
-1. 在系統管理中心中，移至 [帳單 **]**  >  [帳單與付款 **]**  >  [付款方式<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，移至 [帳單 **]**  >  [帳單與付款 **]**  >  [付款方式 <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">]</a> 頁面。
 2. 選取 [新增付款方式]。
 3. 在 [付款方式] 頁面上，從下拉式功能表選取付款方法。
 4. 輸入新卡片或銀行帳戶的相關資訊，然後選取 [新增 **]**。
@@ -103,7 +103,7 @@ ms.locfileid: "50741386"
 
 如果某個付款方式沒有與任何訂閱或帳單設定檔相關聯，您可以立即將其刪除。
 
-1. 在系統管理中心中，移至 [帳單 **]**  >  [帳單與付款 **]**  >  [付款方式<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，移至 [帳單 **]**  >  [帳單與付款 **]**  >  [付款方式 <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">]</a> 頁面。
 2. 尋找要刪除的付款方式，選取三個點，然後選取 [刪除 **]**。
 3. 在右窗格底部，選取 [刪除 **]**。
 
@@ -111,7 +111,7 @@ ms.locfileid: "50741386"
 
 如果某個付款方式已與任何訂閱或帳單設定檔連結，請先以現有的付款方式取代它，或新增付款方式，然後刪除舊的付款方式。
 
-1. 在系統管理中心中，移至 [帳單 **]**  >  [帳單與付款 **]**  >  [付款方式<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，移至 [帳單 **]**  >  [帳單與付款 **]**  >  [付款方式 <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">]</a> 頁面。
 2. 選取要刪除的付款方式列。 右窗格會列出使用該付款方式的現有訂閱。
 3. 在右窗格中，選取 [編輯 **]**。
 4. 若要使用現有的付款方式，請從下拉式清單中選擇一個付款方式，選取 [下一步 **]**，然後選取 [刪除 **]**。

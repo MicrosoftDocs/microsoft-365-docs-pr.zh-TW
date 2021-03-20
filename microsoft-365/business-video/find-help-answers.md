@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何尋找 Microsoft 365 商務版的系統管理員說明。
-ms.openlocfilehash: cf81ae934a35dadc895a1fc836ef1bd28f5000e0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422588"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913631"
 ---
 # <a name="find-answers-and-help-for-admins"></a>尋找系統管理員的答案及協助
 
@@ -47,6 +47,6 @@ ms.locfileid: "50422588"
 
 您也可以使用下列資源來取得問題的協助：
 
-- [aka.ms/learn365admin](https://aka.ms/learn365admin)，搜尋所有系統管理員相關的工作及協助，例如重設密碼和指派 Microsoft 訂閱。
+- [aka.ms/learn365admin](../admin/index.yml)，搜尋所有系統管理員相關的工作及協助，例如重設密碼和指派 Microsoft 訂閱。
 - [answers.microsoft.com](https://answers.microsoft.com)，可搜尋答案、開始討論，以及詢問其他使用者的問題。
 - [techcommunity.microsoft.com](https://techcommunity.microsoft.com)，加入專家群組，並尋找適用于您公司的 microsoft 365 最佳作法。

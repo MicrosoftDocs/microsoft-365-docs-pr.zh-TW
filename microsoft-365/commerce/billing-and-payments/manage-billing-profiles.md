@@ -1,5 +1,5 @@
 ---
-title: 瞭解計費設定檔
+title: 了解帳單設定檔
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,19 +20,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解帳單設定檔如何支援發票。
-ms.openlocfilehash: 708096b624caa9c23a40df4842ccfce856db048d
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 2f56b9a3edbbbe14927df64bed8b699a68826c9e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667771"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911863"
 ---
-# <a name="understand-billing-profiles"></a>瞭解計費設定檔
+# <a name="understand-billing-profiles"></a>了解帳單設定檔
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ ms.locfileid: "49667771"
 
 ## <a name="view-billing-profiles"></a>查看帳單設定檔
 
-1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[帳單與付款]</a> 頁面。
+1. 在系統管理中心中，移至 [帳單 **]** \> [帳單與付款 <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">]</a> 頁面。
 
 2. 選擇 [ **帳單設定檔**]，然後從清單中選擇帳單設定檔。
 
@@ -82,4 +82,4 @@ ms.locfileid: "49667771"
 
 如果您有任何問題或需要協助您的 Azure 費用，請 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">建立支援 azure 支援的支援要求</a>。
 
-如果您有任何疑問或需要協助您使用 Microsoft 365 系統管理中心的帳單設定檔，請 [聯繫商務產品支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)人員。
+如果您有任何疑問或需要協助您使用 Microsoft 365 系統管理中心的帳單設定檔，請 [聯繫商務產品支援](/office365/admin/contact-support-for-business-products)人員。

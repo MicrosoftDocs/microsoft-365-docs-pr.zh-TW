@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 商務版市場活動或其他企業版的設定綜述
-ms.openlocfilehash: c3d5687453aeaa2d9ace66491e3a900113a69ed1
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: fee9391d7a6375f14f0e38f8c6a349fe4ec11619
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044249"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912103"
 ---
 # <a name="set-up-microsoft-365"></a>設定 Microsoft 365
 
@@ -65,4 +65,4 @@ ms.locfileid: "50044249"
 
  **如果您需要連絡客戶支援：**
   
-做為 Microsoft 365 系統管理員，您可以存取我們的客戶支援小組， **[與商務產品的支援人員聯繫-系統管理](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)說明**
+做為 Microsoft 365 系統管理員，您可以存取我們的客戶支援小組， **[與商務產品的支援人員聯繫-系統管理](../admin/contact-support-for-business-products.md)說明**

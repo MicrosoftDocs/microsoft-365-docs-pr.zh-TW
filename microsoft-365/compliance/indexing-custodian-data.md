@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 當保管人新增至高級 eDiscovery 案例時，被視為部分索引的任何內容都會重新處理，使其完全可供搜尋。
-ms.openlocfilehash: 908d01cacc103639e1f9efe965240c33a5296ba9
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 904c8fe626ce8ece8f4b48bd5504e4011e9f4fb2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750754"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911207"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>進階的監管人資料索引
 
@@ -33,9 +33,9 @@ ms.locfileid: "49750754"
 
 - [位於 Office 365 中內容搜尋的已局部編製索引項目](partially-indexed-items-in-content-search.md)
 
-- [Exchange 搜尋編製索引的檔案格式](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [Exchange 搜尋編製索引的檔案格式](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## <a name="viewing-advanced-indexing-results"></a>查看高級索引結果
 

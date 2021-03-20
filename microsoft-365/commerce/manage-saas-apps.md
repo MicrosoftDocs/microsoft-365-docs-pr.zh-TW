@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 瞭解如何在 Microsoft 365 系統管理中心中啟動和管理協力廠商應用程式。
-ms.openlocfilehash: 071f95c838620fb11350a829cbfed249e7c34f6e
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: f560b23871fc6d6ecb319a5704453f2400cb9982
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114714"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911407"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理組織的協力廠商應用程式訂閱
 
@@ -28,7 +28,7 @@ ms.locfileid: "50114714"
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -113,7 +113,7 @@ ms.locfileid: "50114714"
 - **連絡人資訊** –帳單位址和連絡人名稱
 - **角色** –可讓您變更帳單設定檔、支付帳單或使用計費設定檔中的付款條件進行購買的角色。
 
-如需計費設定檔的詳細資訊，請參閱 [瞭解計費設定檔](https://docs.microsoft.com/microsoft-store/billing-profile)。
+如需計費設定檔的詳細資訊，請參閱 [瞭解計費設定檔](/microsoft-store/billing-profile)。
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>變更軟體即服務應用程式訂閱上的帳單設定檔
 

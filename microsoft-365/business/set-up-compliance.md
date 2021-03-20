@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定規范功能以避免資料遺失，並協助保護您的和客戶的敏感資訊。
-ms.openlocfilehash: 2c95ad3f36df28af2c68cd11192bcfe92dfe29e3
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: e210787718025c5df29af8d4a2283291dcecc2a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841166"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912523"
 ---
 # <a name="set-up-compliance-features"></a>設定合規性功能
 
@@ -35,9 +35,9 @@ ms.locfileid: "48841166"
 
 ## <a name="set-up-dlp-features"></a>設定 DLP 功能
 
-請參閱 [從範本建立 DLP 原則](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) ，以取得如何設定原則以避免個人資料的保護遺失的範例。 
+請參閱 [從範本建立 DLP 原則](../compliance/create-a-dlp-policy-from-a-template.md) ，以取得如何設定原則以避免個人資料的保護遺失的範例。 
   
-DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如，澳大利亞財務資料、加拿大個人資訊法案、美國財務資料等等。 如需完整清單，請參閱 [DLP 原則範本包含哪些內容](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) 。 您可以啟用上述所有範本，類似 PII 範本範例。 
+DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如，澳大利亞財務資料、加拿大個人資訊法案、美國財務資料等等。 如需完整清單，請參閱 [DLP 原則範本包含哪些內容](../compliance/what-the-dlp-policy-templates-include.md) 。 您可以啟用上述所有範本，類似 PII 範本範例。 
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>設定 Exchange Online 封存的電子郵件保留
 
@@ -47,15 +47,15 @@ DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如
     
 若要將信箱設為訴訟暫止狀態，請在系統管理中心：
     
-1. 在左側導覽中，移至 [ **使用者** ] [作用中 \> **使用者** ]。
+1. 在左側導覽中，移至 [ **使用者**] [作用中 \> **使用者**]。
     
-2. 選取您要對其信箱進行訴訟暫止的使用者。 在 [使用者] 窗格中，展開 [ **郵件設定** ]，然後按一下 [ **其他設定** ] 旁的 [ **編輯 Exchange 屬性** ]。
+2. 選取您要對其信箱進行訴訟暫止的使用者。 在 [使用者] 窗格中，展開 [ **郵件設定**]，然後按一下 [ **其他設定**] 旁的 [ **編輯 Exchange 屬性**]。
     
-3. 在使用者的 [信箱] 頁面上，選擇左側流覽上的 [*] [信箱功能] * *，然後選擇 [ **訴訟暫** 止] 下的 [ **啟用** ] 連結。
+3. 在使用者的 [信箱] 頁面上，選擇左側流覽上的 [*] [信箱功能] * *，然後選擇 [**訴訟暫** 止] 下的 [**啟用**] 連結。
     
-4. 在 [ **訴訟** 暫止] 對話方塊中，您可以在 [ **訴訟暫止持續時間** ] 欄位中指定訴訟暫止持續時間。 如果您想要進行無限保留，請將此欄位保留空白。 您也可以新增附注，並將信箱擁有者導向至網站，您可能需要進一步說明訴訟暫止。 \>**儲存** 。
+4. 在 [ **訴訟** 暫止] 對話方塊中，您可以在 [ **訴訟暫止持續時間** ] 欄位中指定訴訟暫止持續時間。 如果您想要進行無限保留，請將此欄位保留空白。 您也可以新增附注，並將信箱擁有者導向至網站，您可能需要進一步說明訴訟暫止。 \>**儲存**。
     
-**保留：** 例如，您可以啟用自訂的保留原則，以在保留期間結束時保留特定時間量或永久刪除內容。 若要深入瞭解，請參閱 [保留原則一覽](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。
+**保留：** 例如，您可以啟用自訂的保留原則，以在保留期間結束時保留特定時間量或永久刪除內容。 若要深入瞭解，請參閱 [保留原則一覽](../compliance/retention.md)。
 
 ## <a name="set-up-sensitivity-labels"></a>設定敏感度標籤
 
@@ -71,7 +71,7 @@ DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如
 
 1. 從 [Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53018)下載 **AzinfoProtection_UL.exe** 。
  
-2. 您可以透過查看 Word 檔來驗證安裝是否正常運作，並確定 [ **首頁** ] 索引標籤上有 [ **敏感度** ] 選項。
+2. 您可以透過查看 Word 檔來驗證安裝是否正常運作，並確定 [**首頁**] 索引標籤上有 [**敏感度**] 選項。
 <br/>![在 Word 檔中下拉式清單中的 [保護] 索引標籤。](../media/word-sensitivity.png)
 
-如需詳細資訊，請參閱 [安裝用戶端](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)。
+如需詳細資訊，請參閱 [安裝用戶端](/azure/information-protection/infoprotect-tutorial-step3)。

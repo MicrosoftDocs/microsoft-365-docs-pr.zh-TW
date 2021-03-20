@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 description: 瞭解如何在 Microsoft 365 訂閱中新增及減少檔存放區。 使用額外的檔案存放區，您可以在 SharePoint 線上及 OneDrive 中儲存更多內容。
 ms.date: ''
-ms.openlocfilehash: 626cc81faea43ebdcf618a4f26c33069bae6a206
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: b170924f40d517cb6bbdf8635ad3e163eadc8643
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405885"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911923"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>新增您訂閱的儲存空間
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -44,24 +44,24 @@ ms.locfileid: "50405885"
 > [!NOTE]
 > 如果您透過大量授權或 CSP 購買訂閱，您就無法直接從 Microsoft 為您的組織購買 **Office 365 額外檔案存放區** 。 請與您的代表或合作夥伴聯繫以取得協助。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
-您必須是全域或 SharePoint 的系統管理員，才可執行本文中的工作。 如需詳細資訊，請參閱[系統管理員角色](../admin/add-users/about-admin-roles.md)。
+您必須是全域或 SharePoint 的系統管理員，才可執行本文中的工作。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="view-available-storage"></a>查看可用的儲存區
 
-1. 在 SharePoint 系統管理中心中，移至 [使用中的 <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">網站</a> ] 頁面，並以具備組織之系統 [管理員許可權](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) 的帳戶登入。
+1. 在 SharePoint 系統管理中心中，移至 [使用中的 <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">網站</a> ] 頁面，並以具備組織之系統 [管理員許可權](/sharepoint/sharepoint-admin-role) 的帳戶登入。
 
 2. 在頁面右上方，查看所有網站所使用的儲存空間量，以及您訂閱的總計儲存空間。 如果您的組織已在 Office 365 中設定多地理位置，此列也會顯示所有地理位置所使用的儲存量。
 
-   ![[使用中網站] 頁面上的儲存空間橫條](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+   ![[使用中網站] 頁面上的儲存空間橫條](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > 使用的儲存空間不包含在過去 24 到 48 小時內所做的變更。
 
 決定所使用的儲存空間量後，您可以為訂閱新增或移除儲存空間。 若要瞭解增加儲存空間的成本，請遵循本文中的步驟，並查看定價資訊，再購買其他。
   
-如需設定網站集合儲存限制的相關資訊，請參閱 [管理網站集合儲存限制](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits)。
+如需設定網站集合儲存限制的相關資訊，請參閱 [管理網站集合儲存限制](/sharepoint/manage-site-collection-storage-limits)。
   
 ## <a name="add-storage-to-your-subscription"></a>將儲存新增至您的訂閱
 
@@ -112,4 +112,4 @@ Office 365 額外檔案儲存空間適用於下列訂閱︰
 ## <a name="related-content"></a>相關內容
 
 [管理網站儲存量限制](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (篇文章) \
-[設定 OneDrive 使用者 (文章的預設儲存空間](https://docs.microsoft.com/onedrive/set-default-storage-space)) 
+[設定 OneDrive 使用者 (文章的預設儲存空間](/onedrive/set-default-storage-space)) 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 取得在 Microsoft 365 中提高保護層級的協助
-ms.openlocfilehash: 56a6cd7fa82e8a35ea52a47475a14781ea0160cd
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: aff5491bd8319be2daf9c9c4ed0fc6e49b27ee27
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044519"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912207"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>增強 Microsoft 365 訂閱的威脅防護
 
@@ -36,7 +36,7 @@ ms.locfileid: "50044519"
 
 開始之前，請先檢查您的 Microsoft 安全分數。 Microsoft 安全分數會根據您的定期活動和安全性設定來分析貴組織的安全性，並指定分數。 請先記下您目前的分數。 採取本文中建議的動作可提升您的分數。 目標不會達到最大分數，但請注意保護您的環境不會對使用者生產力造成不良影響的機會。
 
-如需詳細資訊，請參閱 [Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)。
+如需詳細資訊，請參閱 [Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)。
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>提升郵件中惡意程式碼的保護層級
 
@@ -58,7 +58,7 @@ ms.locfileid: "50044519"
 
 6. 按一下 [儲存]。
 
-如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection)。
+如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](../security/office-365-security/anti-malware-protection.md)。
 
 ## <a name="protect-against-ransomware"></a>防範勒索軟體
 
@@ -138,7 +138,7 @@ ms.locfileid: "50044519"
 
 4. 在 [ **反網路釣魚** ] 頁面上，選取 [ **+ 建立**]。 嚮導會啟動以逐步逐步定義您的反網路釣魚原則。
 
-5. 請依照下表中的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
+5. 請依照下表中的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 6. 檢查您的設定之後，請選擇 [ **建立這個原則** ] 或 [ **儲存**] （如適用）。
 
@@ -153,7 +153,7 @@ ms.locfileid: "50044519"
 |新增受信任的寄件者與網域|您可以在這裡新增您自己的網域或任何其他受信任的網域。|
 |套用對象|請選取 **[收件者的網域是]**。 在 **[任一項]** 底下選取 **[選擇]**。 選取 **[+ 新增]**。 選取功能變數名稱（例如 contoso）旁的核取方塊 *。 <span> <span>com*，在清單中，然後選取 [**新增**]。 選取 **[完成]**。|
 
-如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
+如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 ## <a name="protect-against-malicious-attachments-files-and-links-with-defender-for-office-365"></a>使用適用于 Office 的 Defender，防止惡意附件、檔案及連結的 Office 365
 
@@ -207,7 +207,7 @@ ms.locfileid: "50044519"
 |在偵測時重新導向附件|啟用重新導向 (選取此方塊)  <br/> 輸入用於隔離的系統管理員帳戶或信箱設定。 <br/> 若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。 (選取此方塊) 。|
 |套用對象|收件者網域是。 . . 選取您的網域。|
 
-如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
+如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 ### <a name="set-up-safe-links-in-the-security--compliance-center"></a>在安全性 & 規範中心設定安全連結
 
@@ -250,7 +250,7 @@ ms.locfileid: "50044519"
 |使用安全附件掃描可下載的內容|選取此方塊。|
 |套用對象|收件者網域是。 . . 選取您的網域。|
 
-如需詳細資訊，請參閱 [Office 365 的 Defender 中的安全連結](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)。
+如需詳細資訊，請參閱 [Office 365 的 Defender 中的安全連結](../security/office-365-security/atp-safe-links.md)。
 
 ## <a name="turn-on-the-unified-audit-log"></a>開啟整合的審計記錄檔
 
@@ -265,7 +265,7 @@ ms.locfileid: "50044519"
 3. 在 [安全性與合規性] 頁面上，選擇 [ **搜尋** ]，然後再 **審核記錄搜尋**。
 4. 在 [ **審計記錄搜尋** ] 頁面的頂端，選擇 [ **開啟審計**]。
 
-開啟功能後，您可以搜尋檔案、資料夾及許多活動。 如需詳細資訊，請參閱 [搜尋審核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)檔。
+開啟功能後，您可以搜尋檔案、資料夾及許多活動。 如需詳細資訊，請參閱 [搜尋審核記錄](../compliance/search-the-audit-log-in-security-and-compliance.md)檔。
 
 ## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>調整 SharePoint 和 OneDrive 檔案及資料夾的匿名共用設定
 
@@ -279,7 +279,7 @@ ms.locfileid: "50044519"
 
 ## <a name="activity-alerts"></a>活動警示
 
-您可以使用活動警示來追蹤系統管理員和使用者活動，並偵測組織中的惡意程式碼和資料遺失防護事件。 您的訂閱包含一組預設原則，但您也可以建立自訂的原則。 如需詳細資訊，請參閱 [警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。 例如，如果您在 SharePoint 中儲存重要檔案，而您不想讓任何人在外部共用，您可以建立通知，以在使用者共用郵件時提醒您。
+您可以使用活動警示來追蹤系統管理員和使用者活動，並偵測組織中的惡意程式碼和資料遺失防護事件。 您的訂閱包含一組預設原則，但您也可以建立自訂的原則。 如需詳細資訊，請參閱 [警示原則](../compliance/alert-policies.md)。 例如，如果您在 SharePoint 中儲存重要檔案，而您不想讓任何人在外部共用，您可以建立通知，以在使用者共用郵件時提醒您。
 
 下圖顯示 Microsoft 365 隨附的預設原則。
 

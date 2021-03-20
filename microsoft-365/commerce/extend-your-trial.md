@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: 瞭解如何在30天內擴充試用訂閱。
-ms.openlocfilehash: 9b0d1d04b057613ef8ad26fa8cd946b6480bc21e
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: b66205dce6cab06a30360f8481f134681781a400
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114751"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911623"
 ---
 # <a name="extend-your-trial"></a>延長試用期
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -48,7 +48,7 @@ ms.locfileid: "50114751"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
 2. 在 [ **訂閱** ] 頁面上，選取您要擴充的試用訂閱，然後在 [到期日] 底下，選取 [ **擴充試用**]。
 3. 完成精靈中的步驟。
 
@@ -56,10 +56,10 @@ ms.locfileid: "50114751"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。
 2. 在 [ **訂閱** ] 頁面上，選取您要擴充的試用訂閱，然後在 [到期日] 底下，選取 [ **擴充試用**]。
 3. 完成精靈中的步驟。
 
 ::: moniker-end
 
-當您準備好購買時，請參閱 [購買您的試用版](buy-a-subscription-from-your-free-trial.md)。
+當您準備好購買時，請參閱 [購買您的試用版](./try-or-buy-microsoft-365.md)。

@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 description: 了解如何閱讀及了解您的 Microsoft 商務產品帳單或發票。
 keywords: 帳單帳戶、組織資訊、發票
-ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 2b11cca810b17ae2dacc3ddab723725608ffceb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126570"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911695"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解您的帳單或發票
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -60,13 +60,13 @@ ms.locfileid: "50126570"
 | --- | --- |
 | 費用|此計費週期購買的產品總數及其相關的費用與稅金。 彙總購買以提供您的帳單的精簡檢視。 |
 | 點數 |從退貨獲得的點數 |
-| 套用的 Azure 點數 |自動套用到每個計費週期 Azure 費用的您的 Azure 點數。 如果您沒有任何 Azure 點數，則會隱藏此欄位。 如需有關 Azure 點數的詳細資訊，請參閱[追蹤 Microsoft 客戶合約 Azure 點數餘額](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance)。 |
+| 套用的 Azure 點數 |自動套用到每個計費週期 Azure 費用的您的 Azure 點數。 如果您沒有任何 Azure 點數，則會隱藏此欄位。 如需有關 Azure 點數的詳細資訊，請參閱[追蹤 Microsoft 客戶合約 Azure 點數餘額](/azure/billing/billing-mca-check-azure-credits-balance)。 |
 | 小計 |稅前應付金額 |
 | 稅金 |根據您的帳單設定檔國家/地區所支付的稅務類型和金額。 如果您不需要支付稅金，您的發票上就不會顯示稅金。 |
 
 ### <a name="understand-your-charges"></a>了解您的費用
 
-費用頁面會依產品顯示成本劃分。 若為 Azure 客戶，費用可能會依發票區段組織。 如需有關發票區段如何搭配 Azure 產品使用的詳細資訊，請參閱[開始使用您的 Microsoft 客戶合約帳單帳戶](https://docs.microsoft.com/azure/billing/billing-mca-overview)中的[發票區段](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections)。 在每個產品訂單內，成本會依服務系列劃分。
+費用頁面會依產品顯示成本劃分。 若為 Azure 客戶，費用可能會依發票區段組織。 如需有關發票區段如何搭配 Azure 產品使用的詳細資訊，請參閱[開始使用您的 Microsoft 客戶合約帳單帳戶](/azure/billing/billing-mca-overview)中的[發票區段](/azure/billing/billing-mca-overview#invoice-sections)。 在每個產品訂單內，成本會依服務系列劃分。
 
 | 術語 |描述 |
 | --- | --- |
@@ -86,7 +86,7 @@ ms.locfileid: "50126570"
 
 > 總計 = 費用/點數 - Azure 點數 + 稅金
 
-如果您要在發票上顯示更多明細，請參閱[檢閱您的 Microsoft 客戶合約發票](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)。
+如果您要在發票上顯示更多明細，請參閱[檢閱您的 Microsoft 客戶合約發票](/azure/cost-management-billing/understand/review-customer-agreement-bill)。
 
 ## <a name="understand-the-last-invoice-page"></a>了解最後一個發票頁面
 

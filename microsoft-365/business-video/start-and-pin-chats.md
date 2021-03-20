@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在 Microsoft 小組中開始和固定聊天。
-ms.openlocfilehash: 02e7336a5de51526e7c1535eb62724823753d8a0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8026c71ebda6c6d65c953fa4983180d80a5df536
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421880"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913595"
 ---
 # <a name="chat-with-employees-and-customers"></a>與員工和客戶聊天
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWedV6?autoplay=false]
 
-您可以從內部與同事互動，或與來賓使用者交談，例如客戶或合作夥伴。 如果已為您的公司 [開啟來賓存取](https://docs.microsoft.com/microsoftteams/set-up-guests) ，您只需輸入電子郵件地址，即可將客人新增至聊天。
+您可以從內部與同事互動，或與來賓使用者交談，例如客戶或合作夥伴。 如果已為您的公司 [開啟來賓存取](/microsoftteams/set-up-guests) ，您只需輸入電子郵件地址，即可將客人新增至聊天。
 
 ## <a name="try-it"></a>試試看吧！
 

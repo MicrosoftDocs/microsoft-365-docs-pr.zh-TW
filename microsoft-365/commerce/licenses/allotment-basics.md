@@ -14,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 description: 深入瞭解新的服務配額功能。
-ms.openlocfilehash: 2ab8efd637bb278faf6065559cab26cb7016975b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 62df346def3fd2577568916d2d668ca50542bdbd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638228"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911611"
 ---
 # <a name="allotment-basics"></a>服務配額基礎
 
@@ -31,7 +31,7 @@ ms.locfileid: "48638228"
 
 ## <a name="prerequisites"></a>必要條件
 
-您必須符合以 [群組為基礎之授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的授權需求。
+您必須符合以 [群組為基礎之授權](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的授權需求。
 
 您可以搭配任何可供使用者使用的產品配額：
 

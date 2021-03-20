@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解如何設定商務用 Skype 內部部署以使用混合式新式驗證 (HMA) ，為您提供更安全的使用者驗證和授權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74c8e3e0514fbfd8779c2f65e9c541c33b281c59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f3177bafb6eff27053dca61ec576666cae4a97bb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695005"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911147"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>如何設定商務用 Skype 內部部署以使用混合式新式驗證
 
@@ -72,7 +72,7 @@ ms.locfileid: "46695005"
   
 如您所見，有四個不同的地方可開啟 MA！ 為了獲得最佳的使用者體驗，建議您在上述四個位置中開啟 MA。 [！注意] 如果您無法在這些位置中開啟 MA，請調整步驟，讓您只在環境所需的位置開啟 MA。
   
-如需支援的拓撲，請參閱 [適用于商務用 Skype](https://technet.microsoft.com/library/mt803262.aspx) 的支援主題。
+如需支援的拓撲，請參閱 [適用于商務用 Skype](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported) 的支援主題。
   
  **重要事項** 請仔細檢查您是否已符合所有必要條件，再開始之前。 您會發現 [混合式新式驗證概述和必要條件](hybrid-modern-auth-overview.md)中的資訊。
   
@@ -122,7 +122,7 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
   
  **記事** 服務主體名稱 (Spn) 識別 web 服務，並將它們與安全性主體 (例如帳戶名稱或群組) 等相關聯，這樣服務才能代表授權的使用者進行動作。 對伺服器進行驗證的用戶端會使用包含在 Spn 中的資訊。
   
-1. 首先，使用 [下列指示](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)連線到 Azure Active Directory (azure AD) 。
+1. 首先，使用 [下列指示](/powershell/azure/active-directory/overview?view=azureadps-1.0)連線到 Azure Active Directory (azure AD) 。
 
 2. 在內部部署中執行此命令，以取得 SFB web 服務 URLs 的清單。
 
@@ -179,4 +179,4 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 [連結回新式驗證概述](hybrid-modern-auth-overview.md)。
   
-您需要瞭解如何使用適用于商務用 Skype 用戶端的新式驗證 (ADAL) 嗎？ 我們已 [在這裡](https://technet.microsoft.com/library/mt710548.aspx)獲得步驟。
+您需要瞭解如何使用適用于商務用 Skype 用戶端的新式驗證 (ADAL) 嗎？ 我們已 [在這裡](./hybrid-modern-auth-overview.md)獲得步驟。

@@ -18,12 +18,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 使用 Microsoft 365 的 PowerShell，設定您的 Microsoft 365 租使用者中個別或多個使用者帳戶的屬性。
-ms.openlocfilehash: 830cede93a6c14db2dcc5626d41d0dd296b9ac29
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 6b674641842f89fd8c8e22dc26350cdd53734b9e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754325"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911081"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>使用 PowerShell 設定 Microsoft 365 使用者帳戶屬性
 
@@ -33,7 +33,7 @@ ms.locfileid: "48754325"
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-若要在 Azure Active Directory PowerShell 中為 Graph 模組設定使用者帳戶的屬性，請使用 [**AzureADUser 指令程式**](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) ，並指定要設定或變更的屬性。
+若要在 Azure Active Directory PowerShell 中為 Graph 模組設定使用者帳戶的屬性，請使用 [**AzureADUser 指令程式**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) ，並指定要設定或變更的屬性。
 
 首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
    
@@ -73,7 +73,7 @@ ms.locfileid: "48754325"
     
     這是 ISO 3166-1 Alpha-2 (A2) 雙字母國家或地區碼。
     
-如需其他參數，請參閱 [AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) 。
+如需其他參數，請參閱 [AzureADUser](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) 。
 
 >[!Note]
 >在您指派授權給使用者帳戶之前，您必須指派使用位置。
@@ -102,14 +102,14 @@ $userName="<Display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-在這個範例中，會顯示具有顯示名稱 *Caleb sills 帳戶*之使用者帳戶的使用者主要名稱。
+在這個範例中，會顯示具有顯示名稱 *Caleb sills 帳戶* 之使用者帳戶的使用者主要名稱。
   
 ```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-使用 *$upn* 變數，您可以根據其顯示名稱來變更個別帳戶。 以下範例會將 *Belinda Newman*的使用位置設定為法國。 但是它會指定其顯示名稱，而不是使用者主要名稱：
+使用 *$upn* 變數，您可以根據其顯示名稱來變更個別帳戶。 以下範例會將 *Belinda Newman* 的使用位置設定為法國。 但是它會指定其顯示名稱，而不是使用者主要名稱：
   
 ```powershell
 $userName="Belinda Newman"
@@ -133,7 +133,7 @@ Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>變更特定使用者帳戶組的屬性
 
-若要變更特定使用者帳戶集的屬性，您可以使用 **AzureADUser**、 **Where**及 **AzureADUser** Cmdlet 的組合。 下列範例會將會計部門中所有使用者的使用量位置變更為 *華北*：
+若要變更特定使用者帳戶集的屬性，您可以使用 **AzureADUser**、 **Where** 及 **AzureADUser** Cmdlet 的組合。 下列範例會將會計部門中所有使用者的使用量位置變更為 *華北*：
   
 ```powershell
 Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
@@ -154,12 +154,12 @@ Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -Usag
 首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
 >[!Note]
->PowerShell 核心不支援 Windows PowerShell 模組的 Microsoft Azure Active Directory 模組，以及其名稱中含有 *Msol* 的 Cmdlet。 從 Windows PowerShell 執行這些 Cmdlet。
+>PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 *Msol* 的 Cmdlet。 從 PowerShell 執行這些 Cmdlet。
 >
 
 ### <a name="change-properties-for-a-specific-user-account"></a>變更特定使用者帳戶的屬性
 
-若要設定特定使用者帳戶的屬性，請使用 [**Set-MsolUser**](https://docs.microsoft.com/previous-versions/azure/dn194136(v=azure.100)) Cmdlet，並指定要設定或變更的屬性。 
+若要設定特定使用者帳戶的屬性，請使用 [**Set-MsolUser**](/previous-versions/azure/dn194136(v=azure.100)) Cmdlet，並指定要設定或變更的屬性。 
 
 您可以使用 *-UserPrincipalName* 參數識別帳戶，並使用其他參數設定或變更特定屬性。 以下是最常見的參數清單。
   
@@ -197,7 +197,7 @@ Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -Usag
     
     這是 ISO 3166-1 Alpha-2 (A2) 雙字母國家或地區碼。
     
-如需其他參數，請參閱 [Set-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194136(v=azure.100))。
+如需其他參數，請參閱 [Set-MsolUser](/previous-versions/azure/dn194136(v=azure.100))。
 
 若要查看所有使用者的使用者主要名稱，請執行下列命令：
   
@@ -229,7 +229,7 @@ $userName="Caleb Sills"
 Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-使用 *$upn* 變數，您可以根據其顯示名稱來變更個別帳戶。 以下範例會將 *Belinda Newman*的使用位置設定為 *法國*，但是會指定其顯示名稱，而不是其使用者主要名稱：
+使用 *$upn* 變數，您可以根據其顯示名稱來變更個別帳戶。 以下範例會將 *Belinda Newman* 的使用位置設定為 *法國*，但是會指定其顯示名稱，而不是其使用者主要名稱：
   
 ```powershell
 $userName="<display name>"
@@ -253,7 +253,7 @@ Get-MsolUser | Set-MsolUser -UsageLocation "FR"
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>變更特定使用者帳戶組的屬性
 
-若要變更特定使用者帳戶集的屬性，您可以使用 **Get-MsolUser**、 **Where**及 **Set-MsolUser** Cmdlet 的組合。 下列範例會將會計部門中所有使用者的使用量位置變更為 *華北*：
+若要變更特定使用者帳戶集的屬性，您可以使用 **Get-MsolUser**、 **Where** 及 **Set-MsolUser** Cmdlet 的組合。 下列範例會將會計部門中所有使用者的使用量位置變更為 *華北*：
   
 ```powershell
 Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
@@ -267,7 +267,7 @@ Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocat
     
 1. 將使用者位置設定為法國 (**Set-MsolUser UsageLocation "FR"**) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

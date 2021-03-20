@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何設定和保護您的系統管理員帳戶。
-ms.openlocfilehash: 73e4b69571b1e1d0a4d1585224fe256ff135c40a
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: ec5b971ba4f1fdc8834e10ddf90ff219f763f805
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044485"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912171"
 ---
 # <a name="protect-your-administrator-accounts"></a>保護您的系統管理員帳戶
 
@@ -36,13 +36,13 @@ ms.locfileid: "50044485"
 - 如何為緊急情況設定額外的系統管理員帳戶。
 - 如何保護這些帳戶。
 
-當您註冊 Microsoft 365 並輸入您的資訊時，您會自動成為全域系統管理員。全域管理員在 Microsoft 系統管理中心內具有使用者帳戶和所有其他設定的最終控制權，但不同類型的系統管理員帳戶具有不同的存取程度。 如需每種系統管理員角色之不同存取層級的詳細資訊，請參閱 [關於系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) 。
+當您註冊 Microsoft 365 並輸入您的資訊時，您會自動成為全域系統管理員。全域管理員在 Microsoft 系統管理中心內具有使用者帳戶和所有其他設定的最終控制權，但不同類型的系統管理員帳戶具有不同的存取程度。 如需每種系統管理員角色之不同存取層級的詳細資訊，請參閱 [關於系統管理員角色](/office365/admin/add-users/about-admin-roles) 。
 
 ## <a name="create-additional-admin-accounts"></a>建立其他系統管理員帳戶
 
 僅使用系統管理帳戶進行管理。 系統管理員應該要有個別的使用者帳戶，以便定期使用 Office 應用程式，且只有在需要管理帳戶和裝置時，以及在處理其他系統管理功能時，才使用其管理帳戶。 最好從系統管理員帳戶中移除 Microsoft 365 授權，這樣您就不需要付費。
 
-您必須設定至少一個額外的全域系統管理員帳戶，以授與其他受信任員工的系統管理員存取權。 您也可以為使用者管理建立個別的系統管理員帳戶， (此角色稱為「 **使用者管理管理員** 」) 。 如需詳細資訊，請參閱 [關於系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
+您必須設定至少一個額外的全域系統管理員帳戶，以授與其他受信任員工的系統管理員存取權。 您也可以為使用者管理建立個別的系統管理員帳戶， (此角色稱為「 **使用者管理管理員** 」) 。 如需詳細資訊，請參閱 [關於系統管理員角色](/office365/admin/add-users/about-admin-roles)。
 
 若要建立其他系統管理員帳戶：
 

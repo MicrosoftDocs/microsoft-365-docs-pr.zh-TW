@@ -20,12 +20,12 @@ description: '瞭解在不同地區，您要對 Microsoft 365 for business 訂�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: d3654dd307e15e58acdd06277cf7338da537e5c6
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: 11a7aa1e1825e41f463de17eebd676d8168a56d8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806597"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911707"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -135,11 +135,11 @@ ms.locfileid: "48806597"
 
 ## <a name="add-your-vat-id"></a>新增您的 加值稅 ID
 
-1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 **[產品]** 索引標籤上，選擇您想要更新的訂閱。
-3. 在 [訂閱詳細資料] 頁面上，選取 [ **服務使用位址** ] 區段中的 [ **編輯服務使用位址** ]。
+3. 在 [訂閱詳細資料] 頁面上，選取 [ **服務使用位址** ] 區段中的 [ **編輯服務使用位址**]。
 4. 在 [ **編輯服務使用位址** ] 窗格的 [ **加值稅 號碼** ] 方塊中，輸入您的 加值稅 ID （包括前置詞），且不含任何空格。
-5. 選取 **[儲存]** 。
+5. 選取 [儲存]。
 
 ## <a name="how-taxes-are-calculated"></a>如何計算稅金
 
@@ -149,13 +149,13 @@ ms.locfileid: "48806597"
 
 >*(單位價格 X 稅率) X 數量 = 總銷售稅*
 
-- 或 -
+-或-
 
 > ($1.29 X 0.095) X 100 = $12.25
 
 ## <a name="apply-for-tax-exempt-status"></a>申請免稅狀態
 
-如果您在市場上有資格享受免稅狀態，請 [啟動服務要求](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) ，為您的組織建立免稅狀態。
+如果您在市場上有資格享受免稅狀態，請 [啟動服務要求](/office365/admin/contact-support-for-business-products) ，為您的組織建立免稅狀態。
 
 |國家或地區 | 文件 |
 |------------------|----------------|
@@ -169,5 +169,5 @@ ms.locfileid: "48806597"
   
 ## <a name="related-content"></a>相關內容
   
-[查看您的帳單或發票](view-your-bill-or-invoice.md) (文章) \
-[瞭解您的帳單或發票](understand-your-invoice.md) (文章) 
+[檢視帳單](view-your-bill-or-invoice.md) (文章)\
+[了解您的帳單或發票](understand-your-invoice.md) (文章)

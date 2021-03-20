@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何為您的公司主控線上會議。
-ms.openlocfilehash: 18a142700e8b83545219ddabf17be7d562037140
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 85163990d65126cc3d9d6c11627e63aa975b2924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422312"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913599"
 ---
 # <a name="host-online-meetings-for-your-business"></a>主控商務的線上會議
 
@@ -75,7 +75,7 @@ ms.locfileid: "50422312"
 
 ## <a name="related-articles"></a>相關文章
 
-[Microsoft Teams 會議](https://docs.microsoft.com/microsoftteams/tutorial-meetings-in-teams)
+[Microsoft Teams 會議](/microsoftteams/tutorial-meetings-in-teams)
 
 [使虛擬會議更有效率的6種方式](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 

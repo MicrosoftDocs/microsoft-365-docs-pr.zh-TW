@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 深入瞭解 Microsoft 365 for business 中的訂閱與授權。
 ms.date: 07/01/2020
-ms.openlocfilehash: ccfcb52548fb79267c550afba63c2f5a96b99ed1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6310b3e48c59da3243746cceca2d0516f511b827
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928507"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911431"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>瞭解 Microsoft 365 for business 中的訂閱與授權
 
@@ -66,9 +66,9 @@ ms.locfileid: "49928507"
   
 - [建立共用信箱](../../admin/email/create-a-shared-mailbox.md)
 - [從共用信箱中移除授權](../../admin/email/remove-license-from-shared-mailbox.md)
-- [Exchange Online 中的共用信箱](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes) ，適用于所有其他 Microsoft 365 方案。
-- [建立及管理會議室信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-room-mailboxes)
-- [管理設備信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-equipment-mailboxes) (機器翻譯)
+- [Exchange Online 中的共用信箱](/exchange/collaboration-exo/shared-mailboxes) ，適用于所有其他 Microsoft 365 方案。
+- [建立及管理會議室信箱](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
+- [管理設備信箱](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes) (機器翻譯)
 
 ## <a name="who-can-assign-licenses"></a>誰可以指派授權？
 
@@ -85,6 +85,6 @@ ms.locfileid: "49928507"
 ## <a name="related-content"></a>相關內容
 
 [購買或移除商務用訂閱的授權](buy-licenses.md) (文章) \
- (篇文章) \[中指派授權給使用者](../../admin/manage/assign-licenses-to-users.md)
+[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md) (文章)\
 [取消指派給使用者的授權](../../admin/manage/remove-licenses-from-users.md) (文章)\
 [從共用信箱中移除授權](../../admin/email/remove-license-from-shared-mailbox.md) (文章) 

@@ -20,12 +20,12 @@ search.appverid:
 description: 了解 Microsoft 365 商務進階版功能。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 2183c3c865b618d71e15b366f7eaed091101bbc7
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b92e3790e83c5da62d65e6c98bf448d33862df54
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421620"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913535"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 商務進階版
 
@@ -46,4 +46,4 @@ Microsoft 365 商務進階版是一種訂閱服務，它允許您在雲段中執
 | 保護您的裝置 | 您可以透過限制行動存取 (如複製和貼上) 來保護裝置上的工作檔案。 如果注册的行動裝置遺失或被盜，您也可以選擇性地從中抹除商業資料。 |
 | 其他安全性功能 | Microsoft 365 商務進階版中的進階功能可協助您保護您的企業免受網路威脅並保護敏感性資訊。 這些功能包括 Office 365 進階威脅防護、資料外洩防護 (DLP)、Exchange Online 封存、Azure 資訊保護 和 Intune。 |
 
-如需詳細資料，請參閱[Microsoft 365 商務進階版內容](https://docs.microsoft.com/microsoft-365/business/)。
+如需詳細資料，請參閱[Microsoft 365 商務進階版內容](../business/index.yml)。

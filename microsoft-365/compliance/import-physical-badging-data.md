@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將資料從其組織的實體聲譽徽章授予系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的這項資料，協助您偵測特定使用者對實體辦公樓的存取權，這可能表示您的組織可能會發生內部威脅。
-ms.openlocfilehash: 7e745b42d0df79f5c39f9fa02cb1b63f164ec2a5
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: c07dfcbefa338f7499f2c45f595bf2ccda6387fa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620129"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911363"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>設定連接器以匯入實體聲譽徽章授予資料 (預覽) 
 
@@ -39,11 +39,11 @@ ms.locfileid: "49620129"
 
 ## <a name="before-you-set-up-the-connector"></a>在您設定連接器之前
 
-- 在步驟3中建立實體聲譽徽章授予連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立新的角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟3中建立實體聲譽徽章授予連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立新的角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 - 您必須決定如何每日 (檢索或匯出組織實體聲譽徽章授予系統中的資料) 並建立步驟2中所述的 JSON 檔案。 您在步驟4中執行的腳本會將 JSON 檔案中的資料推送至 API 端點。
 
-- 您在步驟4中執行的範例腳本會將實體聲譽徽章授予資料從 JSON 檔案推入至連接器 API，使其可供有問必答風險管理解決方案使用。 在任何 Microsoft standard support 計畫或服務下，都不支援此範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
+- 您在步驟4中執行的範例腳本會將實體聲譽徽章授予資料從 JSON 檔案推入至連接器 API，使其可供有問必答風險管理解決方案使用。 在任何 Microsoft standard support 計畫或服務下，都不支援此範例腳本。 範例指令碼係依「現狀」提供，不含任何種類的擔保方式。 Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。 使用或操作範例指令碼和文件發生的所有風險，皆屬於您的責任。 Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步驟1：在 Azure Active Directory 中建立應用程式
 
@@ -55,7 +55,7 @@ ms.locfileid: "49620129"
 
 - 租使用者識別碼 (也稱為 *目錄識別碼*) 
 
-如需在 Azure AD 中建立應用程式的逐步指示，請參閱 [使用 Microsoft identity Platform 註冊應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
+如需在 Azure AD 中建立應用程式的逐步指示，請參閱 [使用 Microsoft identity Platform 註冊應用程式](/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>步驟2：使用實體聲譽徽章授予資料準備 JSON 檔案
 

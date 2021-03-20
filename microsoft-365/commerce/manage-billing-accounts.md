@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 深入瞭解記帳帳戶及管理方式。
-ms.openlocfilehash: 6c90bdd9087a67cc3639cfb06644a5587273dc35
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c2cf7584148bb846541328396885d20c00e2712a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279295"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911419"
 ---
 # <a name="manage-billing-accounts"></a>管理計費帳戶
 
@@ -50,7 +50,7 @@ Microsoft 365 admin center 目前支援下列類型的計費帳戶：
 | 計費設定檔 | 計費設定檔會定義發票的內容，例如誰接收帳單、帳單傳遞的方式、付款條款和 PO 號碼。 若要在組織中散佈帳單，您可以建立多個帳單設定檔，並在購買時識別適當的帳單設定檔。 如需計費設定檔的詳細資訊，以及如何使用它們為組織建立更靈活的帳單選項，請 [瞭解計費設定檔](billing-and-payments/manage-billing-profiles.md)。 |
 
 > [!NOTE]
-> 如果您需要變更已 **售出** 的名稱或位址，但沒有看到 **編輯** 連結，您必須 [聯繫支援人員](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) 加以變更。 要求 **銷售** 變更名稱的要求會要求信用支票。 完成 [此表單](https://www.microsoft.com/download/details.aspx?id=102732)，並準備好在您聯繫支援人員時，與 Microsoft 共用下列其中一個檔：
+> 如果您需要變更已 **售出** 的名稱或位址，但沒有看到 **編輯** 連結，您必須 [聯繫支援人員](../admin/contact-support-for-business-products.md) 加以變更。 要求 **銷售** 變更名稱的要求會要求信用支票。 完成 [此表單](https://www.microsoft.com/download/details.aspx?id=102732)，並準備好在您聯繫支援人員時，與 Microsoft 共用下列其中一個檔：
 >
 > - 政府簽發的檔或註冊信件
 > - 列印本機公司的登錄

@@ -18,13 +18,13 @@ description: 當您購買 Microsoft 產品或服務時，請深入瞭解註冊�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
-ms.openlocfilehash: 342813fa103cb260c036de5dd2cdfd13bea12d33
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+- commerce
+ms.openlocfilehash: a9625b391260d27610bb304b0ae3788b541b7709
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717713"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911980"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>關於註冊號碼和審閱通知
 
@@ -36,13 +36,15 @@ ms.locfileid: "50717713"
 
 對於登記編號是必要的國家/地區，文字方塊上方的標籤會指出需要的號碼類型。
 
-<!-- For example, in the following screenshot, the label indicates that a CNPJ registration number is needed.
- add screenshot-->
+例如，在下列螢幕擷取畫面中，標籤會指出需要 CNPJ 登記編號。
+
+:::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="C N P J 編號之註冊號碼欄位的螢幕擷取畫面。":::
 
 針對登記編號為選用的國家/地區，您可以選擇提供公司的法律登記號碼。 請勿在此欄位中輸入個人識別碼。
 
-<!-- The following screenshot shows an example of when the registration number is optional.
-add screenshot -->
+下列螢幕擷取畫面顯示登記編號是選用的範例。
+
+:::image type="content" source="../media/macregnum-reg-screenshot_400.png" alt-text="選用登記編號欄位的螢幕擷取畫面。":::
 
 如果您沒有有效的註冊號碼，請參閱 [各國的註冊號碼](#registration-numbers-by-country) 以取得詳細資訊。
 
@@ -52,13 +54,15 @@ add screenshot -->
 
 考核程式通常需要一天的時間才能完成，但可能需要更長的時間。
 
-<!-- The following screenshot shows the review notification displayed during checkout.
-add screenshot -->
+下列螢幕擷取畫面顯示結帳時所顯示的審閱通知。
+
+:::image type="content" source="../media/macregnum_statuscheckout_screenshot_400.png" alt-text="「結帳」頁面上的帳戶審查通知的螢幕擷取畫面。":::
 
 電子郵件通知也會傳送給您帳戶上的所有通用和計費系統管理員。 在某些情況下，會將通知傳送給具有記帳帳戶擁有者或帳戶上的帳單帳戶參與者角色的使用者。 通知會指出目前正在處理評論。 在審閱程式完成後，會傳送確認電子郵件通知。
 
-<!-- The following screenshot shows the notification displayed on the billing account details page.
-add screenshot -->
+下列螢幕擷取畫面顯示 [帳單帳戶詳細資料] 頁面上顯示的通知。
+
+:::image type="content" source="../media/macregnum-statusbillacct-screenshot_700.png" alt-text="在 [帳單帳戶] 頁面的 [審閱通知] 底下的螢幕擷取畫面。":::
 
 ## <a name="registration-numbers-by-country"></a>依國家/地區的登記編號
 

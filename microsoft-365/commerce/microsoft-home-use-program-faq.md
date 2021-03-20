@@ -15,12 +15,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 description: 有關 Microsoft 家庭使用方案 (常見問題的常見問題) 。
-ms.openlocfilehash: f4848e5f84081152fb42e41887b581d7290dfe2f
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 68abc62e7d8daf3122ce646223eee0f772ce572d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294683"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911383"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft 家居使用程式常見的常見問題 (常見問題) 
 
@@ -56,13 +56,13 @@ Microsoft 365 系列和個人訂閱上的折扣會提供給全球合格的公司
 
 ## <a name="why-do-i-have-to-create-an-azure-active-directory-aad-account-to-use-the-home-use-program-microsoft-store-for-business"></a>為什麼我必須建立 Azure Active Directory (AAD) 帳戶，才能使用「家用使用方案/Microsoft Store for Business」？
 
-若要更新和現代化家用使用計畫，以獲得更廣泛的授權和產品優點，我們需要變更 HUP 的方式。 商務用 Microsoft Store 用於資格驗證，並可指派 HUP 福利，而且它會依靠 AAD 從 VSLC 連線資訊，以及驗證貴組織的員工所在的電子郵件網域。 如需詳細資訊，請參閱 [以商務用 Office 365 註冊 AZURE AD 帳戶](https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)。
+若要更新和現代化家用使用計畫，以獲得更廣泛的授權和產品優點，我們需要變更 HUP 的方式。 商務用 Microsoft Store 用於資格驗證，並可指派 HUP 福利，而且它會依靠 AAD 從 VSLC 連線資訊，以及驗證貴組織的員工所在的電子郵件網域。 如需詳細資訊，請參閱 [以商務用 Office 365 註冊 AZURE AD 帳戶](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)。
 
 ## <a name="how-do-i-become-the-assigned-it-admin-of-a-managed-tenant"></a>我要如何成為受管理租使用者的指派系統管理員？
 
 您必須在 DNS 中建立特殊的記錄，以證明您擁有公司網域（例如:contoso）。
 
-如需成為受管理租使用者的逐步程式，請參閱 [在 Azure Active 中以系統管理員身分處理非受管理的目錄](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)。
+如需成為受管理租使用者的逐步程式，請參閱 [在 Azure Active 中以系統管理員身分處理非受管理的目錄](/azure/active-directory/users-groups-roles/domains-admin-takeover)。
 
 ## <a name="what-resources-are-available-to-help-promote-the-home-use-program-benefit-to-employees"></a>哪些資源可協助促進員工的家用使用計畫受益？
 
@@ -76,7 +76,7 @@ Microsoft 365 系列和個人訂閱上的折扣會提供給全球合格的公司
 
 2. **確認**  電子郵件會傳送至其公司的電子郵件地址收件匣，其連結會驗證其對程式的資格。
 
-3. 登**入**在驗證之後，他們會提供與其個人電子郵件地址相關聯的 Microsoft 帳戶，以開始購買程式，讓他們能夠根據組織的家用使用方案權益，查看其可用產品的折扣。 如需詳細資訊，請參閱 how [to 登入您的 Microsoft 帳戶](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)。
+3. 登 **入** 在驗證之後，他們會提供與其個人電子郵件地址相關聯的 Microsoft 帳戶，以開始購買程式，讓他們能夠根據組織的家用使用方案權益，查看其可用產品的折扣。 如需詳細資訊，請參閱 how [to 登入您的 Microsoft 帳戶](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)。
 
 4. **購買** 在 Microsoft Store 中處理並完成購買。
 
@@ -88,7 +88,7 @@ Microsoft 365 系列和個人訂閱上的折扣會提供給全球合格的公司
 
 若要支援從大量授權服務中心遷移或存取 Microsoft Store for Business 的問題，請參閱 [VLSC support](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0)。
 
-如需在您已存取商務用 Microsoft Store 後，查看權益的問題，請參閱 [Store For Business Admin support。](https://docs.microsoft.com/microsoft-store/)
+如需在您已存取商務用 Microsoft Store 後，查看權益的問題，請參閱 [Store For Business Admin support。](/microsoft-store/)
 
 ## <a name="why-am-i-not-seeing-an-option-to-purchase-visio-professional-2019-andor-project-professional-2019"></a>為什麼我沒有看到購買 Visio Professional 2019 和/或 Project Professional 2019 的選項？
 
@@ -118,7 +118,7 @@ Microsoft 365 系列和個人訂閱上的折扣會提供給全球合格的公司
 
 [Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (連結頁面) 
 
-[Microsoft Store For Business administration support](https://docs.microsoft.com/microsoft-store/) (link page) 
+[Microsoft Store For Business administration support](/microsoft-store/) (link page) 
 
 [商務用 Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2139192) (連結頁面) 
 

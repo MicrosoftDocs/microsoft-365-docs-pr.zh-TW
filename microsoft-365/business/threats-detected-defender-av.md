@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 瞭解 Microsoft Defender 防毒軟體如何保護您的 Windows 裝置免受軟體威脅（如病毒、惡意程式碼和間諜軟體的威脅）。
-ms.openlocfilehash: 1653aef6967cdf76e6e19acda158fb29758280a8
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: ce88e4f7b1caf3a98ebd6dc56d66f0d0fc99a9ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870896"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912427"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Microsoft Defender 防毒軟體偵測到的威脅
 
@@ -89,4 +89,4 @@ Microsoft Defender 防病毒是作業系統的一部分，且已在執行 Window
 [如何在 Windows 安全性 app 中開啟及使用 Microsoft Defender 防病毒](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (文章) \
 [如何使用群組原則開啟 Microsoft Defender 防病毒](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (文章) \
 [如何更新防病毒定義](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (文章) \
-[如何將惡意程式碼和非惡意程式碼提交給 Microsoft 進行分析](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (文章) 
+[如何將惡意程式碼和非惡意程式碼提交給 Microsoft 進行分析](../security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md) (文章) 

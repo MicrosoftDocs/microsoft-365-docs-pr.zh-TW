@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解如何管理接收帳單通知電子郵件和發票附件的人員。
-ms.openlocfilehash: f0811c5d027d042b5114c9e05c698dab1e08763b
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515218"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911851"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>管理帳單通知和發票附件
 
@@ -56,7 +56,7 @@ ms.locfileid: "50515218"
 3. 在右窗格的 [指派的系統 **管理員** ] 索引標籤上，選取 [ **新增**]。
 4. 在 [ **新增系統管理員** ] 窗格中，輸入使用者的顯示名稱或使用者名稱，然後從建議清單中選取使用者。
 5. 在您完成之前，新增多個使用者。
-6. 選取 **[儲存]**。 使用者已新增至指派的系統管理員清單。
+6. 選取 [儲存]。 使用者已新增至指派的系統管理員清單。
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>使用 [帳單通知] 頁面移除系統管理員角色
 
@@ -109,7 +109,7 @@ ms.locfileid: "50515218"
 - 帳單設定檔參與者
 - 發票管理員
 
-若要深入瞭解計費設定檔角色及其管理方式，請參閱 [瞭解 Microsoft 客戶合約在 Azure 中的管理角色](https://docs.microsoft.com/azure/cost-management-billing/manage/understand-mca-roles)。
+若要深入瞭解計費設定檔角色及其管理方式，請參閱 [瞭解 Microsoft 客戶合約在 Azure 中的管理角色](/azure/cost-management-billing/manage/understand-mca-roles)。
 
 若要變更接收組織的帳單通知的人員，請使用下列步驟來變更指派給使用者的角色。
 
@@ -127,6 +127,6 @@ ms.locfileid: "50515218"
 
 ## <a name="related-content"></a>相關內容
 
-[查看您的帳單或發票](view-your-bill-or-invoice.md) (文章) \
+[檢視帳單](view-your-bill-or-invoice.md) (文章)\
 [瞭解適用于商務用 Microsoft 365 的帳單或發票](understand-your-invoice2.md) (文章) \
 [同時新增使用者並指派授權](../../admin/add-users/add-users.md) (文章) 

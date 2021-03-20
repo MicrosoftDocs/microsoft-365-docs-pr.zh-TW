@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何在設定 Microsoft 365 商務版 Premium 之後保護 Windows 10 電腦。
-ms.openlocfilehash: 286393779eaa92d33432ff9ad4b21c0a1fb8612c
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1b843e9ae3fcdb78eb128549f8f3c18badd8eb4e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376270"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912623"
 ---
 # <a name="secure-windows-10-computers"></a>保護 Windows 10 電腦
 
@@ -46,7 +46,7 @@ ms.locfileid: "49376270"
 
 4. 在 [ **保護您的 Windows 10 電腦** ] 窗格上，選取您要開啟的選項。 如需這些設定的詳細資訊，請參閱 [Secure Windows 10 裝置](secure-windows-10-devices.md)。 
     
-    對大多數的組織而言，此處的選項可提供良好的安全性，不過，如果您的組織有更複雜的安全性需求，您也可以使用預先定義的安全性基準來保護您的 Windows 10 裝置。 如需詳細資訊，請參閱 [Windows 10 裝置的安全性基準](https://docs.microsoft.com/mem/intune/protect/security-baselines)。   
+    對大多數的組織而言，此處的選項可提供良好的安全性，不過，如果您的組織有更複雜的安全性需求，您也可以使用預先定義的安全性基準來保護您的 Windows 10 裝置。 如需詳細資訊，請參閱 [Windows 10 裝置的安全性基準](/mem/intune/protect/security-baselines)。   
 
 1. 選擇 [套用 **設定**]。
 

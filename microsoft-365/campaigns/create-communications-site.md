@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 建立活動或商務的通訊網站。
-ms.openlocfilehash: c9624694e2174de47cb53ece8b1077fd7a5b59c5
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: c79f51e43bf3828826adbe25396132d28902722c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044653"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912231"
 ---
 # <a name="create-a-communications-site"></a>建立通訊網站
 
@@ -64,4 +64,4 @@ ms.locfileid: "50044653"
 
 ## <a name="admin-settings"></a>系統管理員設定
 
-如果您沒有看到 [ **+ 建立** 網站] 連結，Microsoft 365 可能無法使用自助網站架設。 若要建立小組網站，請與組織中的 Microsoft 365 管理人員聯繫。 如果您是 Microsoft 365 系統管理員，請參閱 [在 SharePoint online 中管理網站的建立](https://docs.microsoft.com/sharepoint/manage-site-creation) ，以啟用組織的自助網站架設或在 [新的 SharePoint 系統管理中心中管理網站](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) ，以從 SharePoint 線上系統管理中心建立網站。  
+如果您沒有看到 [ **+ 建立** 網站] 連結，Microsoft 365 可能無法使用自助網站架設。 若要建立小組網站，請與組織中的 Microsoft 365 管理人員聯繫。 如果您是 Microsoft 365 系統管理員，請參閱 [在 SharePoint online 中管理網站的建立](/sharepoint/manage-site-creation) ，以啟用組織的自助網站架設或在 [新的 SharePoint 系統管理中心中管理網站](/sharepoint/manage-sites-in-new-admin-center) ，以從 SharePoint 線上系統管理中心建立網站。

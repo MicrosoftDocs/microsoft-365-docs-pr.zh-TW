@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 瞭解如何設定多地理位置環境中的搜尋。 只有部分用戶端（例如商務用 OneDrive）可以傳回多地理位置環境中的結果。
-ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547149"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911159"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>設定 Microsoft 365 多地理位置的搜尋
 
@@ -84,7 +84,7 @@ Delve 摘要和個人檔案卡片只會顯示儲存在中央位置之檔案的�
 <tr class="odd">
 <td align="left"></td>
 <td align="left">多地理位置搜尋不支援數字精簡器的動態貯體。</td>
-<td align="left">使用 <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"分隔" 參數</a> 取得數值精簡器。</td>
+<td align="left">使用 <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">"分隔" 參數</a> 取得數值精簡器。</td>
 </tr>
 <tr class="even">
 <td align="left">文件識別碼</td>
@@ -98,7 +98,7 @@ Delve 摘要和個人檔案卡片只會顯示儲存在中央位置之檔案的�
 </tr>
 <tr class="even">
 <td align="left">混合式搜尋</td>
-<td align="left">在具有<a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">雲端混合式搜尋</a>的混合式 SharePoint 環境中，內部部署的內容會新增至中央位置的 Microsoft 365 索引。</td>
+<td align="left">在具有<a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">雲端混合式搜尋</a>的混合式 SharePoint 環境中，內部部署的內容會新增至中央位置的 Microsoft 365 索引。</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -149,30 +149,30 @@ Delve 摘要和個人檔案卡片只會顯示儲存在中央位置之檔案的�
 
 2. 瀏覽至 [搜尋結果] 頁面 (請參閱搜尋結果頁面的[清單](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213))
 
-3. 選取要設定的類別，請按一下右上角的 [設定]**** 圖示，然後按一下 [編輯頁面] ****。在編輯模式中搜尋結果網頁會開啟。
+3. 選取要設定的類別，請按一下右上角的 [設定] 圖示，然後按一下 [編輯頁面] 。在編輯模式中搜尋結果網頁會開啟。
 
    ![在 [設定] 中編輯頁面選項](../media/configure-search-for-multi-geo-image2.png)
 
-4. 在搜尋結果網頁組件中，請將指標移至網頁組件的右上角，按一下箭號，然後按一下功能表上的 [編輯網頁組件]****。 搜尋結果網頁組件工具窗格隨即在網頁右上方的功能區下開啟。
+4. 在搜尋結果網頁組件中，請將指標移至網頁組件的右上角，按一下箭號，然後按一下功能表上的 [編輯網頁組件]。 搜尋結果網頁組件工具窗格隨即在網頁右上方的功能區下開啟。
 
    ![編輯網頁元件選取範圍](../media/configure-search-for-multi-geo-image3.png)
 
-5. 在網頁組件工具窗格 [設定]**** 區段中，在 [結果控制設定]****，請選取 [顯示多地理位置結果]**** 以取得搜尋結果網頁組件，以顯示來自所有地理位置的結果。
+5. 在網頁組件工具窗格 [設定] 區段中，在 [結果控制設定]，請選取 [顯示多地理位置結果] 以取得搜尋結果網頁組件，以顯示來自所有地理位置的結果。
 
-6. 按一下 [確定]**** 以儲存變更並且關閉網頁組件工具窗格。
+6. 按一下 [確定] 以儲存變更並且關閉網頁組件工具窗格。
 
-7. 檢查您對搜尋結果網頁組件所做的變更，請在主功能表的 [頁面] 索引標籤上按一下 [存回]****。
+7. 檢查您對搜尋結果網頁組件所做的變更，請在主功能表的 [頁面] 索引標籤上按一下 [存回]。
 
 8. 使用頁面頂端之附註中提供的連結發佈變更。
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>取得自訂搜尋應用程式，以顯示來自全部或部分地理位置的結果
 
-自訂搜尋應用程式會透過指定含對 SharePoint 搜尋 REST API 之要求的查詢參數，以取得來自全部或部分地理位置的結果。視查詢參數而定，系統會將查詢展開傳送至所有地理位置或部分的地理位置。例如，如果您只需要查詢地理位置的子集來尋找相關資訊，您可以控制只對這些項目進行展開傳送。如果要求成功，SharePoint 搜尋 REST API 會傳回回應資料。
+自訂搜尋應用程式會透過使用 SharePoint 搜尋 REST API 的要求指定查詢參數，來取得所有或部分地理位置的結果。 根據查詢參數，查詢會 fanned 至所有地理位置或某些地理位置。 例如，如果您只需要查詢地理位置的子集以尋找相關的資訊，您可以僅將其控制于這些位置。 如果要求成功，SharePoint 搜尋 REST API 會傳迴響應資料。
 
 ### <a name="requirement"></a>需求
 
-對於每個地理位置，您必須確保組織中的所有使用者都已被授予根網站的**讀取**權限層級 (例如contoso**APAC**.sharepoint.com/ 和 contoso**EU**.sharepoint.com/)。[了解權限](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
+對於每個地理位置，您必須確保組織中的所有使用者都已被授予根網站的 **讀取** 權限層級 (例如contoso **APAC**.sharepoint.com/ 和 contoso **EU**.sharepoint.com/)。[了解權限](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
 
 ### <a name="query-parameters"></a>查詢參數
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - 這是選擇性的清單，它是當 **EnableMulti
 </tbody>
 </table>
 
-如果您省略 DataLocation 或EndPoint，或者 DataLocation 是重複的，要求將會失敗。[您可以透過 Microsoft Graph 來取得租用戶地理位置的端點相關資訊](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery)。
+如果您省略 DataLocation 或EndPoint，或者 DataLocation 是重複的，要求將會失敗。[您可以透過 Microsoft Graph 來取得租用戶地理位置的端點相關資訊](/sharepoint/dev/solution-guidance/multigeo-discovery)。
 
 ### <a name="response-data"></a>回應資料
 
@@ -251,18 +251,18 @@ MultiGeoSearchStatus – 這是 SharePoint 搜尋 API 在回應中傳回至要�
 </tbody>
 </table>
 
-#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>已展開傳送至**所有**地理位置的範例 GET 要求
+#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>已展開傳送至 **所有** 地理位置的範例 GET 要求
 
 HTTPs:// \<tenant\> / \_ api/search/query？ querytext = "sharepoint" &屬性 = "EnableMultiGeoSearch:true" &ClientType = "my \_ client \_ id"
 
-#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>要展開傳送至**部分**地理位置的範例 GET 要求
+#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>要展開傳送至 **部分** 地理位置的範例 GET 要求
 
 HTTPs:// \<tenant\> / \_ api/search/query？ querytext = ' site ' &ClientType = ' my_client_id ' &property = ' EnableMultiGeoSearch:true，MultiGeoSearchConfiguration： [{DataLocation \\ ： "名稱" \\ ，端點 \\ ： "HTTPs： \\ //contosoNAM.sharepoint.com"，"！ \\ \\ \\ \\ \\ \\ ：" HTTPs： "HTTPs： \\ //DataLocation"}] '
 
 > [!NOTE]
-> MultiGeoSearchConfiguration 屬性地理位置清單中的逗號和冒號，其前面會加上**反斜線**字元。 這是因為 GET 要求會使用冒號來分隔屬性，以及使用逗號來分隔屬性的引數。 若未使用反斜線做為逸出字元，將會錯誤地解譯 MultiGeoSearchConfiguration 屬性。
+> MultiGeoSearchConfiguration 屬性地理位置清單中的逗號和冒號，其前面會加上 **反斜線** 字元。 這是因為 GET 要求會使用冒號來分隔屬性，以及使用逗號來分隔屬性的引數。 若未使用反斜線做為逸出字元，將會錯誤地解譯 MultiGeoSearchConfiguration 屬性。
 
-#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>已展開傳送至**所有**地理位置的範例 POST 要求
+#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>已展開傳送至 **所有** 地理位置的範例 POST 要求
 
 ```text
     {
@@ -287,7 +287,7 @@ HTTPs:// \<tenant\> / \_ api/search/query？ querytext = ' site ' &ClientType = 
     }
 ```
 
-#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>已展開傳送至**部分**地理位置的範例 POST 要求
+#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>已展開傳送至 **部分** 地理位置的範例 POST 要求
 
 ```text
     {
@@ -318,7 +318,7 @@ HTTPs:// \<tenant\> / \_ api/search/query？ querytext = ' site ' &ClientType = 
 
 ### <a name="query-using-csom"></a>使用 CSOM 查詢
 
-此為已展開傳送至**所有**地理位置的範例 CSOM 查詢：
+此為已展開傳送至 **所有** 地理位置的範例 CSOM 查詢：
 
 ```text
 var keywordQuery = new KeywordQuery(ctx);

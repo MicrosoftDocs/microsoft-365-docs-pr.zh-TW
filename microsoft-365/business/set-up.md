@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 探索 Microsoft 365 商務版 Premium 的設定步驟，包括新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: e7ebe179c67077dc71ae4873b0711d0e810c701a
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 5b082e78f3dc4067dcce4a96a8088b2347bc3af4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044723"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912563"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安裝精靈中設定 Microsoft 365 商務版 Premium
 
@@ -67,15 +67,15 @@ ms.locfileid: "50044723"
     ![個人化登入頁面的螢幕擷取畫面。](../media/adddomain.png)
 
     
-4. 依照嚮導中的步驟，在任何可驗證您擁有網域之 [Microsoft 365 的 dns 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) 。 如果您知道您的網域主機，請參閱 [[主機特定指示]](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)。
+4. 依照嚮導中的步驟，在任何可驗證您擁有網域之 [Microsoft 365 的 dns 主機服務提供者中建立 dns 記錄](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) 。 如果您知道您的網域主機，請參閱 [[主機特定指示]](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)。
 
-    如果您的主機服務供應商是 GoDaddy 或透過 [[網域連結]](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect) 所啟用的另一個主機，這個過程便會很簡單，您自動便會被要求登入，並讓 Microsoft 替您進行驗證。
+    如果您的主機服務供應商是 GoDaddy 或透過 [[網域連結]](/office365/admin/get-help-with-domains/domain-connect) 所啟用的另一個主機，這個過程便會很簡單，您自動便會被要求登入，並讓 Microsoft 替您進行驗證。
 
     ![在 GoDaddy 確認存取頁面上，選取 [授權]。](../media/godaddyauth.png)
 
 ### <a name="add-users-and-assign-licenses"></a>新增使用者並指派授權
 
-您可以在精靈中新增使用者，或稍後在系統管理中心[[新增使用者]](add-users-m365b.md)。 此外，如果您有本機網域控制站，您可以使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)新增使用者。
+您可以在精靈中新增使用者，或稍後在系統管理中心[[新增使用者]](../admin/add-users/add-users.md)。 此外，如果您有本機網域控制站，您可以使用 [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-express)新增使用者。
 
 #### <a name="add-users-in-the-wizard"></a>在精靈中新增使用者
 
@@ -94,10 +94,10 @@ ms.locfileid: "50044723"
   
 若要設定服務，您必須更新 DNS 主機或網域註冊機構中的某些記錄。
   
-1. 設定精靈通常會偵測您的註冊機構，並提供您一個逐步指示連結，讓您更新在註冊機構網站上的 NS 記錄。 如果不是，請 [將名稱伺服器變更為設定 Microsoft 365 與任何網域註冊機構](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar)。 
+1. 設定精靈通常會偵測您的註冊機構，並提供您一個逐步指示連結，讓您更新在註冊機構網站上的 NS 記錄。 如果不是，請 [將名稱伺服器變更為設定 Microsoft 365 與任何網域註冊機構](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
 
-    - 如果您有現有的 DNS 記錄，例如現有網站，但您的 DNS 主機已啟用 [網域連線](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)，請選擇 **[為我新增記錄]**。 在 **[選擇您的線上服務]** 頁面，接受所有預設值，並選擇 **[下一步]**，然後在您的 DNS 主機頁面上選擇 **[授權]**。
-    - 如果您的現有 DNS 記錄中有其他 DNS 主機(該主機無法用於網域連線)，您最好能自己管理自己的 DNS 記錄，以確保現有服務保持連線。 如需詳細資訊，請參閱 [網域基本資訊](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)。
+    - 如果您有現有的 DNS 記錄，例如現有網站，但您的 DNS 主機已啟用 [網域連線](/office365/admin/get-help-with-domains/domain-connect)，請選擇 **[為我新增記錄]**。 在 **[選擇您的線上服務]** 頁面，接受所有預設值，並選擇 **[下一步]**，然後在您的 DNS 主機頁面上選擇 **[授權]**。
+    - 如果您的現有 DNS 記錄中有其他 DNS 主機(該主機無法用於網域連線)，您最好能自己管理自己的 DNS 記錄，以確保現有服務保持連線。 如需詳細資訊，請參閱 [網域基本資訊](/office365/admin/get-help-with-domains/dns-basics)。
 
         ![開機記錄頁面。](../media/activaterecords.png)
 
@@ -105,9 +105,9 @@ ms.locfileid: "50044723"
 
 ### <a name="protect-your-organization"></a>保護您的組織 
 
-您在嚮導中設定的原則會自動套用至稱為「*所有使用者*」的 [安全性群組](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups)。 您也可以在系統管理中心建立其他群組，以指派原則。
+您在嚮導中設定的原則會自動套用至稱為「*所有使用者*」的 [安全性群組](/office365/admin/create-groups/compare-groups#security-groups)。 您也可以在系統管理中心建立其他群組，以指派原則。
 
-1. 在 [ **加強來自高級網路威脅的保護**] 中，建議您接受預設值，讓 [Office 365 的高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 掃描 office 應用程式中的檔案和連結。
+1. 在 [ **加強來自高級網路威脅的保護**] 中，建議您接受預設值，讓 [Office 365 的高級威脅防護](../security/office-365-security/office-365-atp.md) 掃描 office 應用程式中的檔案和連結。
 
     ![[增加保護] 頁面的螢幕擷取畫面。](../media/increasetreatprotection.png)
 

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 瞭解如何在 Windows 10 裝置上複查及管理 Microsoft Defender 防毒程式所偵測到的威脅。
-ms.openlocfilehash: 41465cb81850415a7b490b6af7f0ec66c724ca68
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 15e99fb75e4a3ac1af842ca7d0b900e02cbc6bd4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588514"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912783"
 ---
 # <a name="review-detected-threats-and-take-action"></a>檢閱偵測到的威脅並採取動作
 
@@ -58,7 +58,7 @@ Microsoft Defender 防病毒偵測並防護下列威脅類型：
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>在 [使用中 **威脅** ] 頁面上管理威脅偵測
 
-下列程式適用于具有 Microsoft 365 商務版 Premium 的客戶。 [Windows 10 裝置必須](/microsoft-365/business/secure-win-10-pcs)[在 Intune 中](/mem/intune/enrollment/windows-enrollment-methods)安全且註冊。
+下列程式適用于具有 Microsoft 365 商務版 Premium 的客戶。 [Windows 10 裝置必須](./secure-win-10-pcs.md)[在 Intune 中](/mem/intune/enrollment/windows-enrollment-methods)安全且註冊。
 
 > [!NOTE]
 > **Microsoft Defender 防毒軟體** 卡和作用中 **威脅** 頁面會以分階段的方式展開，所以您可能無法立即進行存取。
@@ -105,7 +105,7 @@ Microsoft Defender 防病毒偵測並防護下列威脅類型：
 | 重新啟動 | 強制 Windows 10 裝置在五分鐘內重新開機。<br><br>**重要：** 裝置擁有人或使用者不會自動通知重新開機，而且可能會遺失未儲存的工作。 |
 | 快速掃描 | 在裝置上啟動快速防病毒掃描，以著重于可能會註冊惡意程式碼的常見位置，例如登錄機碼和已知的 Windows startup 資料夾。 結果會傳送至 [Microsoft 端點管理員](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)。 |
 | 完整掃描 | 啟動裝置上的完整防病毒掃描，著重于可能會註冊惡意程式碼的常見位置，並包括裝置上的每個檔案和資料夾。 結果會傳送至 [Microsoft 端點管理員](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)。 |
-| Sync | 需要裝置使用 Intune (部分的 Microsoft 端點管理員) 中存回。 裝置檢入時，裝置會收到指派給裝置的任何擱置動作或原則。 |
+| 同步處理 | 需要裝置使用 Intune (部分的 Microsoft 端點管理員) 中存回。 裝置檢入時，裝置會收到指派給裝置的任何擱置動作或原則。 |
 | 更新簽名 | 需要裝置取得 [安全情報更新](https://go.microsoft.com/fwlink/?linkid=2149926) ，以進行防病毒和反惡意程式碼保護。 |
 
 > [!TIP]

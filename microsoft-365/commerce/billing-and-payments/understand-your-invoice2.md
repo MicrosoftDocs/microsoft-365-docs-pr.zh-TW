@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 了解如何解讀商務用 Microsoft 365 帳單或發票上的費用、計費和付款資訊，以及如何變更採購單編號。
-ms.openlocfilehash: 3d71bab82be3fd9e4c633885dccaf357ccabb551
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: HT
+ms.openlocfilehash: 99b52928d458e7883919ee46aaafaa7a66278447
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638396"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911683"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解您的商務用 Microsoft 365 帳單或發票
 
@@ -141,4 +141,4 @@ ms.locfileid: "48638396"
 
 [支付商務用 Microsoft 365 訂閱費用](pay-for-your-subscription.md)
 
-[Minecraft: Education Edition 付款選項](https://go.microsoft.com/fwlink/p/?linkid=838761)
+[Minecraft: Education Edition 付款選項](/education/windows/school-get-minecraft)

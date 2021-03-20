@@ -10,18 +10,18 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: SharePoint 分類法的 SKOS 格式參照
-ms.openlocfilehash: 90c20ddb440e216941a5ea06f1aa815cb80102a9
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 6a565de9598706e998206304093ed86a1a55704d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087273"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911171"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>SharePoint 分類法的 SKOS 格式參照
 
-本文包括用於表示 [SharePoint 分類法](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy)的 RDF 詞彙，它基於 [SKOS](https://www.w3.org/TR/skos-primer/)。 如需此 RDF 語法的序列化，請使用 RDF [TURTLE](https://www.w3.org/TR/turtle/)。
+本文包括用於表示 [SharePoint 分類法](/dotnet/api/microsoft.sharepoint.taxonomy)的 RDF 詞彙，它基於 [SKOS](https://www.w3.org/TR/skos-primer/)。 如需此 RDF 語法的序列化，請使用 RDF [TURTLE](https://www.w3.org/TR/turtle/)。
 
-下表顯示了 [SharePoint 分類法](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy)詞彙的 [SKOS](https://www.w3.org/TR/skos-primer/) 對等用法。 SharePoint 不支援沒有 SharePoint 分類法對等用法的 [SKOS](https://www.w3.org/TR/skos-primer/) 值。
+下表顯示了 [SharePoint 分類法](/dotnet/api/microsoft.sharepoint.taxonomy)詞彙的 [SKOS](https://www.w3.org/TR/skos-primer/) 對等用法。 SharePoint 不支援沒有 SharePoint 分類法對等用法的 [SKOS](https://www.w3.org/TR/skos-primer/) 值。
 
 |SharePoint 分類法|SKOS 對等用法|
 |:-----------------|:--------------|
@@ -55,9 +55,9 @@ ms.locfileid: "49087273"
 
 代表受管理的中繼資料階層圖中的字詞或關鍵字。
 
-[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)是 SharePoint [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 的原子單元。 每個[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)都屬於屬於 [TermGroup](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.group) 的 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)。 
+[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)是 SharePoint [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 的原子單元。 每個[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)都屬於屬於 [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group) 的 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)。 
 
-定義[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)的語法如下：
+定義[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)的語法如下：
 
 ```SKOS
 ex:TermA    a    sharepoint-taxonomy:Term;
@@ -68,27 +68,27 @@ ex:TermA    a    sharepoint-taxonomy:Term;
     sharePoint-taxonomy:defaultLabel    “Term A”@en-us.
 ```
 
-[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)強制存在於 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) 中。 DefaultLabel 是[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)在視覺呈現方式中顯示的名稱。 定義[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)的必要欄位包括：
+[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)強制存在於 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 中。 DefaultLabel 是[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)在視覺呈現方式中顯示的名稱。 定義[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)的必要欄位包括：
 
 - sharepoint-taxonomy:defaultLabel
 - sharepoint-taxonomy:inTermSet
 
-[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)可以：
+[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)可以：
 
-- 在階層上與另一[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)相關，前提是這兩個[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)屬於同一個 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)。
-- 有多個子系[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)，但只有單一父系[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)。
-- 如果是 topLevelTermOf [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)，則不會定義父系[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)。
-- 每個 [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 工作語言都有一個 defaultLabel。
-- 如果它既不包含父系[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)，也不是 topLevelTermOf a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)，則不存在。 
+- 在階層上與另一[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)相關，前提是這兩個[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)屬於同一個 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)。
+- 有多個子系[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)，但只有單一父系[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)。
+- 如果是 topLevelTermOf [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)，則不會定義父系[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)。
+- 每個 [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 工作語言都有一個 defaultLabel。
+- 如果它既不包含父系[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)，也不是 topLevelTermOf a [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)，則不存在。 
 - 在相同的階層層級中，只有唯一的 defaultLabel。
 
 **sharepoint-taxonomy:TermSet**
 
 表示字詞物件的階層或平面集，稱為「TermSet」。
 
-顧名思義，TermSet 是[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)的集合。 [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 中的[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)必須屬於 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)。 沒有單獨存在的[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)。 
+顧名思義，TermSet 是[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)的集合。 [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 中的[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)必須屬於 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)。 沒有單獨存在的[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)。 
 
-定義[TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)的語法如下：
+定義[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)的語法如下：
 
 ```SKOS
 ex:TermSetA    a    sharepoint-taxonomy:TermSet;
@@ -97,15 +97,15 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
     sharepoint-taxonomy:hasTopLevelTerm    Ex:Term A.
 ```
 
-[TermSets](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) 會以邏輯方式組入 [TermGroups](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.group)。 定義[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)的必要欄位是：
+[TermSets](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 會以邏輯方式組入 [TermGroups](/dotnet/api/microsoft.sharepoint.taxonomy.group)。 定義[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.termset)的必要欄位是：
 
 - sharepoint-taxonomy:termSetName
 
-如果提供的 termSetName 在 [TermGroup](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.group) 中不是唯一的，SharePoint 會在名稱末尾附加一個數位，以保持 termSetName 的唯一性。
+如果提供的 termSetName 在 [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group) 中不是唯一的，SharePoint 會在名稱末尾附加一個數位，以保持 termSetName 的唯一性。
 
 **sharepoint-taxonomy:hasTopLevelTerm**
 
-SharePoint 使用此内容對應 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) 中最頂層的[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)，該字詞集是 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) 中[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)階層圖的進入點。 這是 SharePoint 分類法的反關係： topLevelTermOf。 
+SharePoint 使用此内容對應 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 中最頂層的[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)，該字詞集是 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 中[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)階層圖的進入點。 這是 SharePoint 分類法的反關係： topLevelTermOf。 
 
 定義此項語法如下：
 
@@ -114,7 +114,7 @@ ex:TermSetA    sharepoint-taxonomy:hasTopLevelTerm    ex:TermA.
 ```
 
 >[!NOTE]
-> 您無法定父系[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)的頂層[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)。
+> 您無法定父系[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)的頂層[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)。
 
 **sharepoint-taxonomy:topLevelTermOf**
 
@@ -128,7 +128,7 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
 
 **sharepoint-taxonomy:inTermSet**
 
-使用此項可將[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)對應到 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)。 單一[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)只能存在於單一 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)中。 [定義字詞](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/3a3cd54dd076b18bdff1d43b3e342897f8704c23/microsoft-365/contentunderstanding/skos-format-reference.md#term)時，SharePoint 就需要使用這個屬性。
+使用此項可將[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)對應到 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)。 單一[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)只能存在於單一 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)中。 [定義字詞](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/3a3cd54dd076b18bdff1d43b3e342897f8704c23/microsoft-365/contentunderstanding/skos-format-reference.md#term)時，SharePoint 就需要使用這個屬性。
 
 ## <a name="required-labels"></a>必要標籤
 
@@ -138,7 +138,7 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
 
 **sharepoint-taxonomy:defaultLabel**
 
-將此預設詞法標籤用於作為[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)必要參數的[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)。 用以視覺化表示[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)。
+將此預設詞法標籤用於作為[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)必要參數的[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)。 用以視覺化表示[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)。
 
 定義 defaultLabel 的語法如下：
 
@@ -146,13 +146,13 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
 ex:TermA    sharepoint-taxonomy:defaultLabel    “Term A”@en-us.
 ```
 
-DefaultLabel 包含兩部分：字串和語言標籤。 該語言必須是 [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 工作語言之一。 defaultLabel 對同一 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) 中同一階層級的所有[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) 必須是唯一的。
+DefaultLabel 包含兩部分：字串和語言標籤。 該語言必須是 [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 工作語言之一。 defaultLabel 對同一 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 中同一階層級的所有[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term) 必須是唯一的。
 
 **sharepoint-taxonomy:termSetName**
 
 取得並設定目前 TermSet 物件的名稱。
 
-這是 [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 工作語言中 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) 的詞法標籤。 這是 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) 的必要參數。 用以視覺化表示[TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)。
+這是 [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 工作語言中 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 的詞法標籤。 這是 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 的必要參數。 用以視覺化表示[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)。
 
 定義 termSetName 的語法如下：
 
@@ -164,7 +164,7 @@ ex:TermA    sharepoint-taxonomy:TermSetName    “Term Set A”@en-us.
 
 取得並設定目前 TermSet 物件的使用者定義樣式。
 
-這是 sharepoint-taxonomy 的詞法標籤： SharedCustomPropertyForTerm、sharepoint-taxonomy： LocalCustomPropertyForTerm 和 sharepoint-taxonomy：[TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 工作語言中的 CustomPropertyForTermSet。
+這是 sharepoint-taxonomy 的詞法標籤： SharedCustomPropertyForTerm、sharepoint-taxonomy： LocalCustomPropertyForTerm 和 sharepoint-taxonomy：[TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) 工作語言中的 CustomPropertyForTermSet。
 
 sharepoint-taxonomy： propertyName 被視為 CustomProperty 的鑰匙。
 
@@ -180,7 +180,7 @@ ex:SharedCustomProperty1    sharepoint-taxonomy:propertyName    “Shared Custom
 
 **sharepoint-taxonomy:otherLabel**
 
-這是[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)的替代詞法標籤。 
+這是[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)的替代詞法標籤。 
 
 定義 otherLabel 的語法如下：
 
@@ -194,7 +194,7 @@ ex:TermA    sharepoint-taxonomy:otherLabel    “Term A”@en-us.
 
 **sharepoint-taxonomy:parent**
 
-這種分層將一個[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)與另一個[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)相關聯。 [字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)可以是 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)的頂層[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)，否則一定有父系[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)。 
+這種分層將一個[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)與另一個[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)相關聯。 [字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)可以是 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)的頂層[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)，否則一定有父系[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)。 
 
 定義父系的語法如下：
 
@@ -208,7 +208,7 @@ ex:TermA1    sharepoint-taxonomy:parent    ex:TermA.
 
 物件包含一個或多個子系 TermSet 實例，且可透過 TermSets 屬性存取。 這個類別也提供建立新子系 TermSet 物件的方法。 在群組上指定了編輯子系字詞和 TermSet 實例的權限。 
 
-這種分層將一個[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)與另一個[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)相關聯。
+這種分層將一個[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)與另一個[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)相關聯。
 
 定義子系的語法如下：
 
@@ -224,7 +224,7 @@ ex:TermA    sharepoint-taxonomy:child    ex:TermA1.
 
 **sharepoint-taxonomy:description**
 
-這是對任何 [SharePoint 分類法](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy)詞彙實體的詳細說明。 
+這是對任何 [SharePoint 分類法](/dotnet/api/microsoft.sharepoint.taxonomy)詞彙實體的詳細說明。 
 
 新增描述的語法是：
 
@@ -236,7 +236,7 @@ ex:TermA    sharepoint-taxonomy:description    “Term A is the top level term o
 
 從只讀字典中取得目前字詞對象的自訂屬性物件的集合。
 
-自訂屬性是可以為[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)或 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) 定義的機碼值對，以進一步描述[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)或 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)。 SharePoint 在 propertyName 的協助下指定自訂屬性的鍵。
+自訂屬性是可以為[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)或 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) 定義的機碼值對，以進一步描述[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)或 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)。 SharePoint 在 propertyName 的協助下指定自訂屬性的鍵。
 
 **sharepoint-taxonomy:CustomPropertyForTermSet**
 
@@ -251,7 +251,7 @@ ex:TermSetA    ex:CustomProp1    “Red”@en-us.
 
 **sharepoint-taxonomy:SharedCustomPropertyForTerm**
 
-如果[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)的自訂屬性需要與[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)一起使用，那麼當您在其他地方重用該[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)時，則需要在 SharedCustomPropertyForTerm 下定義它。
+如果[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)的自訂屬性需要與[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)一起使用，那麼當您在其他地方重用該[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)時，則需要在 SharedCustomPropertyForTerm 下定義它。
 
 定義此項語法如下：
 
@@ -263,7 +263,7 @@ ex:TermA    ex:CustomProp2    “5 cm”@en-us.
 ```
 **sharepoint-taxonomy:LocalCustomPropertyForTerm**
 
-如果[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)的自訂屬性不需要與[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)一起使用，那麼當您在其他地方重用該[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)時，則需要在 LocalCustomPropertyForTerm 下定義它。
+如果[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)的自訂屬性不需要與[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)一起使用，那麼當您在其他地方重用該[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)時，則需要在 LocalCustomPropertyForTerm 下定義它。
 
 定義此項語法如下：
 
@@ -280,7 +280,7 @@ ex:TermA    ex:CustomProp3    “5 cm”@en-us.
 
 **sharepoint-taxonomy:isAvailableForTagging**
 
-使用此項可指定在 SharePoint 清單和庫中是否有可用的[字詞](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term)或 [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset)。  
+使用此項可指定在 SharePoint 清單和庫中是否有可用的[字詞](/dotnet/api/microsoft.sharepoint.taxonomy.term)或 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)。  
 
 此項的語法是：
 
@@ -310,7 +310,7 @@ propertyName|具有屬性標籤|SharedCustomPropertyForTerm，LocalCustomPropert
 |LocalCustomPropertyForTerm|具有本地自訂屬性|字詞|布林值、字串、整數、小數點、雙精確度|
 |CustomPropertyForTermSet|具有自訂屬性|TermSet|布林值、字串、整數、小數點、雙精確度|
 
-[SKOS](https://www.w3.org/TR/skos-primer/) [SharePoint 分類法](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy)不允許的有效案例：
+[SKOS](https://www.w3.org/TR/skos-primer/) [SharePoint 分類法](/dotnet/api/microsoft.sharepoint.taxonomy)不允許的有效案例：
 
 - 分層冗餘 - [SKOS](https://www.w3.org/TR/skos-primer/) 概念可以同時附加到多個更廣泛的概念，但 sharepoint-taxonomy：字詞只有一個 sharepoint-taxonomy：父系，因此也不允許字詞的循環相依。
 - SharePoint 分類法中不允許孤立字詞。 每個 sharepoint-taxonomy：字詞應該要麼有一個 sharepoint-taxonomy：父系或應該是 sharepoint-taxonomy：TermSet 的topLevelTermOf。
@@ -321,4 +321,3 @@ propertyName|具有屬性標籤|SharedCustomPropertyForTerm，LocalCustomPropert
 ## <a name="see-also"></a>請參閱
 
 [使用 SKOS 格式匯入字詞組](import-term-set-skos.md)
-

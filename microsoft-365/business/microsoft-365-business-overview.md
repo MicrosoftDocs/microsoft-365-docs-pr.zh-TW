@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 商務進階版，這是一項訂閱服務，其中包含 Office 生產力應用程式和供企業防禦網路威脅的進階防護。
-ms.openlocfilehash: e67ae036bf3ce7811f19c8745838bb51dde073ea
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: aa6e313f0f3db1c3401836c3e1737c219fcf6c3a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842173"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912995"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商務進階版的概觀
 
@@ -48,9 +48,9 @@ Microsoft 365 商務進階版 (之前稱為 Microsoft 365 商務版) 是一項�
   
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。 
 
-Microsoft 365 商務進階版可提供最多 300 個授權。 如果您需要更多授權，請參閱 [Microsoft 365 企業版](https://go.microsoft.com/fwlink/p/?linkid=860986)文件，以取得詳細資訊。
+Microsoft 365 商務進階版可提供最多 300 個授權。 如果您需要更多授權，請參閱 [Microsoft 365 企業版](../enterprise/index.yml)文件，以取得詳細資訊。
 
-如需完整的功能清單，請參閱 [Microsoft 365 商務進階版服務描述](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
+如需完整的功能清單，請參閱 [Microsoft 365 商務進階版服務描述](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
   
 ## <a name="small-business-security-needs"></a>小型企業安全性需求
 
@@ -69,7 +69,7 @@ Microsoft 365 商務進階版可協助保護您在每個執行個體中的資料
 
 ## <a name="how-your-data-and-devices-are-protected"></a>保護您的資料和裝置的方式
 
-Microsoft 365 商務進階版透過下列方式，協助 **針對威脅防禦** ：
+Microsoft 365 商務進階版透過下列方式，協助 **針對威脅防禦**：
 
 - 即時掃描電子郵件和檔中的連結，以封鎖不安全的網站 (安全連結) 。
 
@@ -81,17 +81,17 @@ Microsoft 365 商務進階版透過下列方式，協助 **針對威脅防禦** 
 
 - 針對組織的所有 Windows 10 裝置強制執行惡意程式碼保護，並保護重要系統資料夾中的檔案不遭到勒索軟體變更 (Windows Defender)
 
-您的 **商務資料會受到以下方式保護** ：
+您的 **商務資料會受到以下方式保護**：
 
 - 使用自動偵測來協助防止敏感性資訊 (例如身分證字號或信用卡) 在公司外部洩露 (資料外洩防護)。 
 
 - 加密敏感性電子郵件，讓您能與組織外部的客戶或其他人員安全地通訊。 這可確保只有預期的收件者可以讀取郵件 (Office 365 訊息加密)。
 
-- 透過對電子郵件和文件套用限制，例如 **請勿複製** 和 **不可轉寄** ，來控制誰能夠存取公司資訊 (Azure 資訊保護，方案 1)。
+- 透過對電子郵件和文件套用限制，例如 **請勿複製** 和 **不可轉寄**，來控制誰能夠存取公司資訊 (Azure 資訊保護，方案 1)。
 
 - 啟用無限的雲端封存功能，讓您能夠保留組織所有的電子郵件，包括離職員工的信箱 (Exchange Online 封存)。
 
-您的 **裝置會受到以下方式保護** ：
+您的 **裝置會受到以下方式保護**：
 
 - 控制哪些裝置和使用者能夠存取您的 Microsoft 資料，並具有可封鎖使用者從家用電腦、未核准的應用程式或是在工作時間以外登入的選項 (條件式存取)。
 
@@ -103,7 +103,7 @@ Microsoft 365 商務進階版透過下列方式，協助 **針對威脅防禦** 
 
 - 使用簡化的控制來管理公司中所有 Windows 10 電腦的原則，強制執行 BitLocker 加密並自動安裝重要的 Windows 更新 (強制執行 Windows 更新原則)。
 
-若要查看完整的安全性功能清單，請參閱 [Microsoft 365 商務進階版安全性功能](security-features.md)。 [設定 Microsoft 365 商務進階版](set-up.md)之後，請參閱[增加威脅防護](increase-threat-protection.md)和[設定合規性功能](set-up-compliance.md)，以開始使用未隨著引導式設定包含的安全性功能。 如需有關如何設定保護以抵禦網路罪犯和駭客的良好概觀，請參閱[保護 Office 365 和 Microsoft 365 商務進階版方案前的十大方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)。
+若要查看完整的安全性功能清單，請參閱 [Microsoft 365 商務進階版安全性功能](security-features.md)。 [設定 Microsoft 365 商務進階版](set-up.md)之後，請參閱[增加威脅防護](increase-threat-protection.md)和[設定合規性功能](set-up-compliance.md)，以開始使用未隨著引導式設定包含的安全性功能。 如需有關如何設定保護以抵禦網路罪犯和駭客的良好概觀，請參閱[保護 Office 365 和 Microsoft 365 商務進階版方案前的十大方法](/office365/admin/security-and-compliance/secure-your-business-data)。
 
 ## <a name="get-microsoft-365-business-premium"></a>取得 Microsoft 365 商務進階版
 

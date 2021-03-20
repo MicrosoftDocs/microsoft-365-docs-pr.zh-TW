@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 登入 Microsoft 365。 保護您的商務、練習或活動，使其無法 cybersecurity 威脅至電子郵件、資料和通訊。
-ms.openlocfilehash: d2bc0ddbfbc839f1b389b844544f33c444012fb4
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: e115ec9fab8270f1b9dddcc33b2d20a5554e4f2e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044201"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912147"
 ---
 # <a name="sign-in-to-microsoft-365"></a>登入 Microsoft 365
 
@@ -43,5 +43,5 @@ ms.locfileid: "50044201"
 
 ## <a name="for-staff"></a>員工的
 
-設定員工如 [ [新增使用者](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) ] 中所述您可以在 [ **新增使用者** ] 頁面上重設和重新傳送密碼。
+設定員工如 [ [新增使用者](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) ] 中所述您可以在 [ **新增使用者** ] 頁面上重設和重新傳送密碼。
 所有人員皆可登入 <a href="https://office.com" target="_blank">https://Office.com</a> 。

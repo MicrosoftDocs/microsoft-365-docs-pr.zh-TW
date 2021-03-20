@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定 Microsoft Defender for Office 365，並保護機密資料，避免網路釣魚、惡意程式碼和其他威脅。
-ms.openlocfilehash: 2f1a26b5a2c5678871502d441b6ba64c9b011e1c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0424fd56e30477f4e8d9e84b7ac78ba6255781fa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842249"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913279"
 ---
 # <a name="increase-threat-protection"></a>加強威脅防護
 
@@ -35,7 +35,7 @@ ms.locfileid: "48842249"
 
 開始之前，請先檢查您的 Office 365 安全分數。 Office 365 安全分數會根據您的定期活動和安全性設定來分析貴組織的安全性，並指定分數。 請先記下您目前的分數。 若要增加您的分數，請完成本文中建議的動作。 目標不會達到最大分數，但請注意保護您的環境不會對使用者生產力造成不良影響的機會。
 
-如需詳細資訊，請參閱 [Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)。
+如需詳細資訊，請參閱 [Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)。
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>提升郵件中惡意程式碼的保護層級
 
@@ -43,13 +43,13 @@ ms.locfileid: "48842249"
 
 1. 移至 [https://protection.office.com](https://protection.office.com) 並以您的系統管理員帳號憑證登入。
 
-2. 在安全性與 &amp; 合規性中心的左功能窗格中，在 [ **威脅管理** ] 底下，選擇 [ **原則** \> **Anti-Malware** ]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，在 [ **威脅管理**] 底下，選擇 [ **原則** \> **Anti-Malware**]。
 
 3. 按兩下預設原則，以編輯此全公司原則。
 
 4. 選取 [設定]。
 
-5. 在 [ **一般附件類型篩選** ] 底下，選取 [ **開啟** ]。 封鎖的檔案類型會列在此控制項底下的視窗中。 請務必新增下列檔案類型：
+5. 在 [ **一般附件類型篩選**] 底下，選取 [ **開啟**]。 封鎖的檔案類型會列在此控制項底下的視窗中。 請務必新增下列檔案類型：
 
    `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
 
@@ -57,7 +57,7 @@ ms.locfileid: "48842249"
 
 6. 選取 [ **儲存]。**
 
-如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection)。
+如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](../security/office-365-security/anti-malware-protection.md)。
 
 ## <a name="protect-against-ransomware"></a>防範勒索軟體
 
@@ -69,11 +69,11 @@ ms.locfileid: "48842249"
 
 若要建立郵件傳輸規則：
 
-1. 移至 [系統管理中心] <https://admin.microsoft.com> ，然後選擇 [系統 **管理中心** ] [ \> **Exchange** ]。
+1. 移至 [系統管理中心] <https://admin.microsoft.com> ，然後選擇 [系統 **管理中心**] [ \> **Exchange**]。
 
-2. 在 [ **郵件流程** ] 類別中，選取 [ **規則** ]。
+2. 在 [ **郵件流程** ] 類別中，選取 [ **規則**]。
 
-3. 選取 [] **+** ，然後選取 [ **建立新規則** ]。
+3. 選取 [] **+** ，然後選取 [ **建立新規則**]。
 
 4. 在對話方塊底部選取 [ **更多選項** ]，以查看完整的選項組。
 
@@ -101,11 +101,11 @@ ms.locfileid: "48842249"
 
 若要建立郵件傳輸規則，請觀看 [這段簡短的影片](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7) ，或遵循下列步驟：
 
-1. 在 Microsoft 365 系統管理中心中，選取 [系統 **管理中心** ] [ \> **Exchange** ]。
+1. 在 Microsoft 365 系統管理中心中，選取 [系統 **管理中心**] [ \> **Exchange**]。
 
-2. 在 [ **郵件流程** ] 類別中，選取 [ **規則** ]。
+2. 在 [ **郵件流程** ] 類別中，選取 [ **規則**]。
 
-3. 選取 [] **+** ，然後選取 [ **建立新規則** ]。
+3. 選取 [] **+** ，然後選取 [ **建立新規則**]。
 
 4. 若要查看所有選項，請選取對話方塊底部的 [ **更多選項** ]。
 
@@ -132,26 +132,26 @@ ms.locfileid: "48842249"
 
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
 
-2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [ **威脅管理** ] 底下的 [ **原則** ]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [ **威脅管理**] 底下的 [ **原則**]。
 
-3. 在 [ **原則** ] 頁面上，選擇 [ **反網路釣魚** ]。
+3. 在 [ **原則** ] 頁面上，選擇 [ **反網路釣魚**]。
 
-4. 在 [ **反網路釣魚** ] 頁面上，選取 [ **+ 建立** ]。 嚮導會啟動以逐步逐步定義您的反網路釣魚原則。
+4. 在 [ **反網路釣魚** ] 頁面上，選取 [ **+ 建立**]。 嚮導會啟動以逐步逐步定義您的反網路釣魚原則。
 
-5. 依照下表的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
+5. 依照下表的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
-6. 檢查您的設定之後，請選擇 [ **建立這個原則** ] 或 [ **儲存** ] （如適用）。
+6. 檢查您的設定之後，請選擇 [ **建立這個原則** ] 或 [ **儲存**] （如適用）。
 
 |設定或選項|建議的設定|
 |---|---|
 |姓名|網域和最有價值的活動人員|
 |描述|確定最重要的人員和我們的網域未進行類比。|
-|新增要保護的使用者|選取 **[+ 新增條件]，收件者是** 。 輸入使用者名稱，或輸入候選人、活動管理員及其他重要員工成員的電子郵件地址。 您最多可以新增20個要從類比中保護的內部和外部地址。|
-|新增要保護的網域|選取 **[+ 新增條件]，收件者網域是** 。 輸入您的 Microsoft 365 訂閱相關聯的自訂網域（如果您已定義的話）。 您可以輸入一個以上的網域。|
-|選擇動作|如果模仿的使用者傳送電子郵件：選擇 [重新 **導向郵件至其他電子郵件地址** ]，然後輸入安全性管理員的電子郵件地址。例如， *劉愛琳 <span> <span> @contoso .com* 。 如果電子郵件來自冒充的網域：請選擇 **[隔離郵件]** 。|
-|信箱情報|當您建立新的反網路釣魚原則時，系統會預設選取信箱情報。 請將此設定保留為 **[開啟]** ，以獲得最佳結果。|
+|新增要保護的使用者|選取 **[+ 新增條件]，收件者是**。 輸入使用者名稱，或輸入候選人、活動管理員及其他重要員工成員的電子郵件地址。 您最多可以新增20個要從類比中保護的內部和外部地址。|
+|新增要保護的網域|選取 **[+ 新增條件]，收件者網域是**。 輸入您的 Microsoft 365 訂閱相關聯的自訂網域（如果您已定義的話）。 您可以輸入一個以上的網域。|
+|選擇動作|如果模仿的使用者傳送電子郵件：選擇 [重新 **導向郵件至其他電子郵件地址**]，然後輸入安全性管理員的電子郵件地址。例如，*劉愛琳 <span> <span> @contoso .com*。 如果電子郵件來自冒充的網域：請選擇 **[隔離郵件]**。|
+|信箱情報|當您建立新的反網路釣魚原則時，系統會預設選取信箱情報。 請將此設定保留為 **[開啟]**，以獲得最佳結果。|
 |新增受信任的寄件者與網域|您可以在這裡新增您自己的網域或任何其他受信任的網域。|
-|套用對象|請選取 **[收件者的網域是]** 。 在 **[任一項]** 底下選取 **[選擇]** 。 選取 **[+ 新增]** 。 選取功能變數名稱（例如 contoso）旁的核取方塊 *。 <span> <span>com* ，在清單中，然後選取 [ **新增** ]。 選取 **[完成]** 。|
+|套用對象|請選取 **[收件者的網域是]**。 在 **[任一項]** 底下選取 **[選擇]**。 選取 **[+ 新增]**。 選取功能變數名稱（例如 contoso）旁的核取方塊 *。 <span> <span>com*，在清單中，然後選取 [**新增**]。 選取 **[完成]**。|
 
 ## <a name="protect-against-malicious-attachments-and-files-with-safe-attachments"></a>使用安全附件防範惡意附件和檔案
 
@@ -161,9 +161,9 @@ ms.locfileid: "48842249"
 
 1. 移至 [https://protection.office.com](https://protection.office.com) ，然後使用您的系統管理員帳戶登入。
 
-2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [ **威脅管理** ] 底下的 [ **原則** ]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [ **威脅管理**] 底下的 [ **原則**]。
 
-3. 在 [原則] 頁面上，選擇 [ **安全附件** ]。
+3. 在 [原則] 頁面上，選擇 [ **安全附件**]。
 
 4. 在 [安全附件] 頁面上，選取 [ **開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP** ] 核取方塊，廣泛套用此保護。
 
@@ -171,7 +171,7 @@ ms.locfileid: "48842249"
 
 6. 套用下表中的設定。
 
-7. 檢查您的設定之後，請選擇 [ **建立這個原則** ] 或 [ **儲存** ] （如適用）。
+7. 檢查您的設定之後，請選擇 [ **建立這個原則** ] 或 [ **儲存**] （如適用）。
 
 |設定或選項|建議的設定|
 |---|---|
@@ -181,7 +181,7 @@ ms.locfileid: "48842249"
 |在偵測時重新導向附件|啟用重新導向 (選取此方塊) 輸入系統管理員帳戶或隔離的信箱設定。          若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。 (選取此方塊) 。|
 |套用對象|收件者網域是。 . . 選取您的網域。|
 
-如需詳細資訊，請參閱 [在 Microsoft Defender For Office 365 中設定反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
+如需詳細資訊，請參閱 [在 Microsoft Defender For Office 365 中設定反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>使用安全連結防禦網路釣魚攻擊
 
@@ -197,21 +197,21 @@ ms.locfileid: "48842249"
 
 1. 移至 [https://protection.office.com](https://protection.office.com) ，然後使用您的系統管理員帳戶登入。
 
-2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [ **威脅管理** ] 底下的 [ **原則** ]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [ **威脅管理**] 底下的 [ **原則**]。
 
-3. 在 [原則] 頁面上，選擇 [ **安全連結** ]。
+3. 在 [原則] 頁面上，選擇 [ **安全連結**]。
 
 若要修改預設原則：
 
-1. 在 [安全連結] 頁面上，于 [套用 **至整個組織的原則** ] 底下，選取 **預設** 原則。
+1. 在 [安全連結] 頁面上，于 [套用 **至整個組織的原則**] 底下，選取 **預設** 原則。
 
-2. 在 [ **電子郵件除外，套用至內容** ] 底下，選取 [適用于 **企業的 Microsoft 365 應用程式、Office iOS 和 Android** ]。
+2. 在 [ **電子郵件除外，套用至內容**] 底下，選取 [適用于 **企業的 Microsoft 365 應用程式、Office iOS 和 Android**]。
 
 3. 選取 [儲存]。
 
 若要建立新的原則針對您網域中的所有收件者：
 
-1. 在 [安全連結] 頁面上，于 [套用 **至整個組織的原則** ] 底下，選取 [ **+** 建立新原則]。
+1. 在 [安全連結] 頁面上，于 [套用 **至整個組織的原則**] 底下，選取 [ **+** 建立新原則]。
 
 2. 套用下表所列的設定。
 
@@ -220,18 +220,18 @@ ms.locfileid: "48842249"
 |設定或選項|建議的設定|
 |---|---|
 |姓名|網域中所有收件者的安全連結原則|
-|選取郵件中未知可能惡意 URLs 的動作|選取 **[URLs 會在使用者按一下連結時，重新寫入並檢查已知惡意連結的清單** 。|
+|選取郵件中未知可能惡意 URLs 的動作|選取 **[URLs 會在使用者按一下連結時，重新寫入並檢查已知惡意連結的清單**。|
 |使用安全附件掃描可下載的內容|選取此方塊。|
 |套用對象|收件者網域是。 . . 選取您的網域。|
 
-如需詳細資訊，請參閱 [安全連結](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)。
+如需詳細資訊，請參閱 [安全連結](../security/office-365-security/atp-safe-links.md)。
 
 ## <a name="go-to-intune-admin-center"></a>移至 Intune 系統管理中心
 
 1. 登入 [Azure 入口網站](https://portal.azure.com/)。
 
-2. 在 [ **搜尋** ] 方塊中選取 [ **所有服務** ]，然後輸入 *Intune* 。
+2. 在 [**搜尋**] 方塊中選取 [**所有服務**]，然後輸入 *Intune* 。
 
 3. 結果出現之後，請選取 [ **Microsoft Intune** ] 旁邊的 [開始]，讓它成為最愛，稍後便可輕鬆尋找。
 
-除了系統管理中心之外，您還可以使用 Intune 來註冊和管理您組織的裝置。 如需詳細資訊，請參閱 [Windows 裝置的註冊方法](https://docs.microsoft.com/intune/enrollment/enrollment-method-capab) 及 [Intune 所管理裝置的註冊選項](https://docs.microsoft.com/intune/enrollment-options)的功能。
+除了系統管理中心之外，您還可以使用 Intune 來註冊和管理您組織的裝置。 如需詳細資訊，請參閱 [Windows 裝置的註冊方法](/intune/enrollment/enrollment-method-capab) 及 [Intune 所管理裝置的註冊選項](/intune/enrollment-options)的功能。

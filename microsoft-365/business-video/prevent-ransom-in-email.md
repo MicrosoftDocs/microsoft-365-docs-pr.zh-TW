@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何建立電子郵件規則，以防止勒索軟體。
-ms.openlocfilehash: 0d8b4a9de881f47752ac0bfbf778453d6ee73046
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 34590945b13408cf3521f000d703bd37e04ba73f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422250"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913547"
 ---
 # <a name="create-email-rules-to-prevent-ransomware"></a>建立電子郵件規則以防止勒索軟體
 
@@ -43,7 +43,7 @@ Microsoft 365 會防止在 Outlook 中開啟可能有害的檔案（例如 JavaS
 1. 在 [套用 **此規則條件**] 底下，選取 [ **任何附件**]，然後選取 [ **副檔名] 包含這些文字**。
 1. 在 [ **指定文字或片語**] 底下的方塊中，輸入您要套用規則的副檔名，例如可以包含宏的副檔名。 使用 plus (+) 符號，一次新增一個。
 
-    閱讀 [針對勒索軟體的保護](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)，深入瞭解檔案類型。
+    閱讀 [針對勒索軟體的保護](../admin/security-and-compliance/secure-your-business-data.md#ransomware)，深入瞭解檔案類型。
 
 1. 向下滾動以查看清單，然後選擇 **[確定]**。
 1. 在 [ **新增規則** ] 頁面上，選擇 [新增 **條件**]，然後選擇 [ **執行下列** 動作] 下的條件。

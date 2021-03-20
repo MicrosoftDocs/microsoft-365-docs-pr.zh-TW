@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何要求 MFA 和設定適用于商務用 Microsoft 365 的條件式存取原則。
-ms.openlocfilehash: e16b7f4ff7d215ee749435806be214a807cc60a4
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453666"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912183"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重要素驗證並設定條件式存取原則
 
@@ -48,7 +48,7 @@ ms.locfileid: "50453666"
 
 建議您啟用所有的基準原則。 啟用這些原則之後，系統會提示系統管理員和使用者註冊 Azure AD 多重要素驗證。
 
-如需這些原則的詳細資訊，請參閱 [什麼是基準原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)？
+如需這些原則的詳細資訊，請參閱 [什麼是基準原則](/azure/active-directory/conditional-access/concept-baseline-protection)？
 
 ## <a name="require-mfa"></a>需要 MFA
 
@@ -73,12 +73,12 @@ ms.locfileid: "50453666"
 1. 移至 [azure 入口網站](https://portal.azure.com)，然後流覽至 **azure Active Directory** \> **安全性** \> **條件式存取** ，以建立 **新的原則**。
 
 請參閱下列每個原則的特定指示： <br>
-    - [需要對系統管理員進行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [使用者需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [需要 MFA 進行服務管理](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+    - [需要對系統管理員進行 MFA](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [使用者需要 MFA](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+    - [封鎖舊版驗證](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
+    - [需要 MFA 進行服務管理](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 > [!NOTE]
 > 預覽原則已不存在，使用者將需要建立其本身的原則。
 
-您可以設定額外的原則，例如要求核准的用戶端應用程式。 如需詳細資訊，請參閱 [條件式存取檔](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
+您可以設定額外的原則，例如要求核准的用戶端應用程式。 如需詳細資訊，請參閱 [條件式存取檔](/azure/active-directory/conditional-access/)。

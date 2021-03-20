@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 團隊建立小組的共同作業空間。
-ms.openlocfilehash: b30bf495dfbf6d510eab9a7d783d343d6b9476a6
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: ddce111b758fcbd4840ca3493601779690684eeb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044677"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912219"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>在 Microsoft 小組中建立共同作業的團隊
 
@@ -59,9 +59,9 @@ Microsoft 團隊是一種共同作業應用程式，可協助您的員工從任�
 
 當您建立小組時，以下是另一個建立的內容：
 
-- 新的 [Microsoft 365 群組](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- 用於儲存小組檔案的 [SharePoint 線上](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) 網站和文件庫
-- [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)共用信箱和行事曆
+- 新的 [Microsoft 365 群組](/MicrosoftTeams/office-365-groups)
+- 用於儲存小組檔案的 [SharePoint 線上](/MicrosoftTeams/sharepoint-onedrive-interact) 網站和文件庫
+- [Exchange Online](/MicrosoftTeams/exchange-teams-interact)共用信箱和行事曆
 - OneNote 筆記本
 - 與其他 Office 365 應用程式（如 Planner 和 Power BI）進行結合
 
@@ -88,7 +88,7 @@ Microsoft 團隊是一種共同作業應用程式，可協助您的員工從任�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-深入瞭解 microsoft 小組的 [microsoft 團隊技術檔](https://docs.microsoft.com/microsoftteams/microsoft-teams)
+深入瞭解 microsoft 小組的 [microsoft 團隊技術檔](/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>系統管理員設定
 

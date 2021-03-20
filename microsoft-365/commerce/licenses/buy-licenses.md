@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: 瞭解如何購買更多授權，或減少用於商務用 Microsoft 365 訂閱的授權數目。
 ms.date: ''
-ms.openlocfilehash: 385d5b2bb4bb224c9e3f0944ac4cb024beb9831b
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 904444790a7984ebce4f549c77bfd22e8f459c9c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071236"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911539"
 ---
 # <a name="buy-or-remove-licenses"></a>購買或移除授權
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ ms.locfileid: "50071236"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
 2. 在 [ **訂閱** ] 頁面上，選取您要購買或移除授權的訂閱，然後選取 [ **新增/移除授權**]。 [如果看不到 [購買授權] 或 [移除授權] 按鈕，該怎麼辦？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. 在 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數，然後選取 [ **提交** \> **關閉**]。 例如，如果您有100授權，而您想要新增5個，請輸入105。 如果您想要移除五個授權，請輸入95。
 
@@ -78,7 +78,7 @@ ms.locfileid: "50071236"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。
 2. 在 [ **訂閱** ] 頁面上，選取您要購買或移除授權的訂閱，然後選取 [ **新增/移除授權**]。 [如果看不到 [購買授權] 或 [移除授權] 按鈕，該怎麼辦？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. 在 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數，然後選取 [ **提交** \> **關閉**]。 For example, if you have 100 licenses and you need to add 5 more, enter 105. 如果您想要移除5項，請輸入95。
 
@@ -117,6 +117,6 @@ ms.locfileid: "50071236"
 
 ## <a name="related-content"></a>相關內容
 
- (篇文章) \[中指派授權給使用者](../../admin/manage/assign-licenses-to-users.md)
+[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md) (文章)\
 [了解訂閱與授權](subscriptions-and-licenses.md) (文章)\
 [嘗試或購買 Microsoft 365 訂閱](../try-or-buy-microsoft-365.md) (文章) 

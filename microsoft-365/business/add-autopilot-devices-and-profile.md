@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 瞭解如何使用 Windows AutoPilot 為您的公司設定新的 Windows 10 裝置，以供員工使用。
-ms.openlocfilehash: f263cc90656ae5e7be1a89e3c7f56bfb2d0e3651
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: 75cc51b889f8673de8dba2357c777de47fd0d296
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099743"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913495"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用逐步指南新增 Autopilot 裝置和設定檔
 
@@ -46,7 +46,7 @@ ms.locfileid: "50099743"
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用設定指南建立裝置和設定檔
 
-[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
 若尚未建立裝置群組或設定檔，最好的入門方式是使用逐步指南。 您也可以 [新增裝置](create-and-edit-autopilot-devices.md) ，並 [將設定檔指派](create-and-edit-autopilot-profiles.md) 給它們，而不需使用輔助線。 
   
@@ -70,7 +70,7 @@ ms.locfileid: "50099743"
     
     您可以從硬體廠商取得此資訊，也可以使用 [Get-WindowsAutoPilotInfo PowerShell 腳本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 來產生 CSV 檔案。 
     
-    如需詳細資訊，請參閱[裝置清單 CSV 檔案](https://docs.microsoft.com/microsoft-365/admin/misc/device-list)。 您也可以在 [ **上傳含裝置清單的 .csv** 檔案] 頁面上，下載範例檔案。 
+    如需詳細資訊，請參閱[裝置清單 CSV 檔案](../admin/misc/device-list.md)。 您也可以在 [ **上傳含裝置清單的 .csv** 檔案] 頁面上，下載範例檔案。 
     
 > [!NOTE]
 > 此腳本會使用 WMI 來取得客戶使用 Windows Autopilot 註冊裝置所需的屬性。 請注意，產生的 CSV 檔案不會收集 Windows 產品識別碼 (PKID) 值，因為不需要在輸出 CSV 中註冊裝置和 PKID 是完全正常的方式。 只會填入序號碼和硬體雜湊。
@@ -94,4 +94,3 @@ ms.locfileid: "50099743"
     選擇 **[下一步]**。
     
 6. **您已完成** 表示您已建立的設定檔 (或選擇) 會套用到您透過上載裝置清單所建立的裝置群組。 當裝置使用者下一次登入時，設定就會生效。 選擇 [ **關閉**]。
-    

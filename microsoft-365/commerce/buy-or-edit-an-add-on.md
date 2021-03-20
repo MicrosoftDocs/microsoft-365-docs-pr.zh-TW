@@ -19,19 +19,19 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - Commerce
-ms.openlocfilehash: 22868021fec978f8f55c47adca82438f1ae51029
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: ea9cdb6edf3aaac1575b1d2b14790bd28876ee26
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405861"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911637"
 ---
 # <a name="buy-or-manage-add-ons"></a>購買或管理附加元件
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -44,13 +44,13 @@ ms.locfileid: "50405861"
 
 ## <a name="before-you-begin"></a>開始之前
 
-您必須是全域或計費系統管理員，才能執行本文所述的步驟。 如需詳細資訊，請參閱[系統管理員角色](../admin/add-users/about-admin-roles.md)。
+您必須是全域或計費系統管理員，才能執行本文所述的步驟。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="buy-an-add-on"></a>購買附加元件
 
 使用下列步驟來尋找及購買附加元件。 清單僅包含您可以使用的附加元件。 此清單是根據您目前使用中的訂閱，以及您已有的任何其他現有的增益集。 如果清單上沒有增益集，便無法購買。
 
-如需商務用 Skype 附加元件的資訊，請參閱[商務用 Skype 及 Microsoft Teams 附加元件授權](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)。
+如需商務用 Skype 附加元件的資訊，請參閱[商務用 Skype 及 Microsoft Teams 附加元件授權](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)。
 
 1. 在系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a> ] 頁面。
 2. 在 [ **購買服務** ] 頁面底部的 [ **附加** 元件] 區段中，尋找您想要購買的附加元件，然後選取 [ **詳細資料**]。

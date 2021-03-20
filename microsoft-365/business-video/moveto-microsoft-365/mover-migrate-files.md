@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用移動器將 Google 檔案遷移至 Microsoft 365 for business。
-ms.openlocfilehash: 72ea81ad86a20e01b4650915fef96a713b207c3b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6feabff7e36e84f7dba56e74333648325cf43920
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166156"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913571"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>將 Google 檔案遷移至 Microsoft 365 for business 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-當您移至 Microsoft 365 for business 時，您會想要從 Google Drive 遷移檔案。 您可以使用移動器應用程式，從個人和共用磁片磁碟機移動檔案。 如需詳細資訊，請參閱 [移動雲端遷移](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)。
+當您移至 Microsoft 365 for business 時，您會想要從 Google Drive 遷移檔案。 您可以使用移動器應用程式，從個人和共用磁片磁碟機移動檔案。 如需詳細資訊，請參閱 [移動雲端遷移](/sharepointmigration/mover-plan-migration)。
 
 > [!NOTE]
 > 移動器會製作檔案複本，並將複本移至 Microsoft 365 for business。 原始檔案也會保留在 Google 磁片磁碟機中。
@@ -83,7 +83,7 @@ ms.locfileid: "50166156"
 1. 在此情況下，我們已新增稱為「遷移檔案」的 SharePoint 網站，並記下 [檔] 頁面的 URL。 
 1. 然後，我們會使用來源路徑、目的地路徑及標記的格式建立 CSV 檔案。 
 
-    如需詳細資訊，請參閱 [aka.ms/movercsv](https://docs.microsoft.com/sharepointmigration/mover-create-migration-csv)。
+    如需詳細資訊，請參閱 [aka.ms/movercsv](/sharepointmigration/mover-create-migration-csv)。
 
     新增目的地路徑 URL 時，請移除共用檔之後的所有專案。 例如，以下完整的 URL 將無法運作：`https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
 

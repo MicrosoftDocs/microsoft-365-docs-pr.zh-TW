@@ -17,19 +17,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解如何使用 Microsoft 關閉您的帳戶。
-ms.openlocfilehash: bdcf4408ddc9c198fab1d68b4c096fad9059b975
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 19e9a92a90f7c88cc150844ab451bc71d63e4c4a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376314"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911659"
 ---
 # <a name="close-your-account"></a>關閉您的帳戶
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -39,7 +39,7 @@ ms.locfileid: "49376314"
 
 開始此程序之前，請務必備份任何您想保留的資料。
 
-您必須是全球或計費系統管理員，才可執行本文中的工作。 如需詳細資訊，請參閱[系統管理員角色](../admin/add-users/about-admin-roles.md)。
+您必須是全域或計費管理員，才能執行本文所述的工作。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="step-1-delete-users"></a>步驟1：刪除使用者
 
@@ -47,23 +47,23 @@ ms.locfileid: "49376314"
 
 若使用者從內部部署進行同步處理，請先關閉同步處理，然後使用 Azure 入口網站或 Azure PowerShell Cmdlet 刪除雲端目錄中的使用者。
 
-若要刪除使用者，請參閱 <a href="https://docs.microsoft.com/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">User management admin：刪除一或多個使用者</a>。
+若要刪除使用者，請參閱 <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">User management admin：刪除一或多個使用者</a>。
 
 您也可以使用 <a href="https://go.microsoft.com/fwlink/?linkid=842230">Remove-MsolUser</a> PowerShell Cmdlet，成批刪除使用者。
 
-如果您的組織使用 Active Directory 與 Microsoft Azure Active Directory (Azure AD) 同步，請改為從 Active Directory 刪除使用者帳戶。 如需相關指示，請參閱 <a href="https://docs.microsoft.com/azure/active-directory/users-groups-roles/users-bulk-delete">大量刪除 Azure Active Directory 中的使用者</a>。
+如果您的組織使用 Active Directory 與 Microsoft Azure Active Directory (Azure AD) 同步，請改為從 Active Directory 刪除使用者帳戶。 如需相關指示，請參閱 <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">大量刪除 Azure Active Directory 中的使用者</a>。
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步驟2：取消所有作用中的訂閱
 
-1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，尋找使用中的訂閱。 選取 **[更多動作]** (三個點)，然後選取 **[取消訂閱]**。
 3. 在 **取消訂閱** 窗格中，選擇取消的原因。 您也可以選擇提供任何意見反應。
-4. 選取 [儲存]。
+4. 選取 **[儲存]**。
 5. 重複步驟1到4，以取消所有作用中的訂閱。
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>步驟3：刪除所有已停用的訂閱
 
-1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取停用的訂閱。
 3. 在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **刪除訂閱**]。
 4. 在 [ **刪除訂閱** ] 窗格中，選取 [ **刪除訂閱**]。
@@ -71,7 +71,7 @@ ms.locfileid: "49376314"
 6. 針對每個停用的訂閱，重複步驟3到5，直到刪除所有訂閱為止。
 
 > [!NOTE]
-> 如果您無法立即刪除停用的訂閱， <a href="https://go.microsoft.com/fwlink/p/?linkid=518322" target="_blank">請聯繫支援人員</a>
+> 如果您無法立即刪除停用的訂閱， <a href="/microsoft-365/Admin/contact-support-for-business-products" target="_blank">請聯繫支援人員</a>
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>步驟4：停用多重要素驗證
 
@@ -80,7 +80,7 @@ ms.locfileid: "49376314"
 3. 選擇 **多重要素驗證**。
 4. 在 [多重要素驗證] 頁面上，停用您目前所用全域系統管理員帳戶以外的所有帳戶。
 
-您也可以 <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">使用 PowerShell 來停用多個使用者的多重要素驗證</a>。
+您也可以 <a href="/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">使用 PowerShell 來停用多個使用者的多重要素驗證</a>。
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步驟5：刪除 Azure Active Directory 中的目錄
 

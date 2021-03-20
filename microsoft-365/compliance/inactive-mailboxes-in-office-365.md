@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何將信箱變成非使用中的信箱，保留先前員工的信箱內容。
-ms.openlocfilehash: 7a10b3327dda148c3328f53826a81464b86a7a0a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6aeb10f1557a991523b60b8e8e85a99fc61f4b87
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423614"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911249"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>非作用中信箱概觀
 
@@ -71,7 +71,7 @@ ms.locfileid: "50423614"
 
 如果與安全性 & 合規性中心的 eDiscovery 案例相關聯的保留已放在信箱上，然後刪除信箱或使用者帳戶，則信箱會變成非使用中的信箱。 However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. 此外，您也無法建立以時間為基礎的 eDiscovery 保留。 這表示非使用中信箱中的內容會永遠保留，或直到刪除保留並刪除非作用中信箱為止。 因此，建議使用非使用中信箱的訴訟暫止或保留原則。
 
-如需有關 eDiscovery 案例和保留的詳細資訊，請參閱 [eDiscovery 案例](ediscovery-cases.md)。
+如需有關 eDiscovery 案例和保留的詳細資訊，請參閱 [eDiscovery 案例](./get-started-core-ediscovery.md)。
 
 ## <a name="inactive-mailboxes-and-labels"></a>非使用中的信箱及標籤
 

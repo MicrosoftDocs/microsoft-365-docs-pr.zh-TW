@@ -15,19 +15,19 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 瞭解如何與 Microsoft 認證的解決方案提供者合作，) 為組織或學校購買及管理產品及服務的 (合作夥伴。
-ms.openlocfilehash: d43aadf938cddfd5382fe4b3474eb92cc2b2763c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3297b2322983eabb793116a450a618b3a62a5a9c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114738"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911395"
 ---
 # <a name="manage-partner-relationships"></a>管理合作夥伴關係
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -86,7 +86,7 @@ ms.locfileid: "50114738"
 
 ## <a name="remove-partner-admin-roles"></a>移除夥伴系統管理員角色
 
-根據合作夥伴的要求，當您接受邀請時，即表示您同意授與服務台系統管理員角色。 當您將這些系統管理員角色授與合作夥伴時，您會在 Azure AD 中自動授與委派的系統管理員許可權。 若要深入瞭解，請參閱 [在 AZURE AD 中委派的系統管理員許可權](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)。
+根據合作夥伴的要求，當您接受邀請時，即表示您同意授與服務台系統管理員角色。 當您將這些系統管理員角色授與合作夥伴時，您會在 Azure AD 中自動授與委派的系統管理員許可權。 若要深入瞭解，請參閱 [在 AZURE AD 中委派的系統管理員許可權](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)。
 
 如果您不想要將系統管理員角色授與合作夥伴，請取消邀請，而不接受邀請。
 

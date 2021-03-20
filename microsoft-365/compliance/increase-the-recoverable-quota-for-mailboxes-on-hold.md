@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 啟用封存信箱，並開啟自動擴充封存，增加 Microsoft 365 中信箱的 [可復原的專案] 資料夾的大小。
-ms.openlocfilehash: c674d3df4ad14dabce13effd0dd6729edaeab715
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 7b4ee808bc3004438c9eb7424a89c01567fc04d9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804642"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911271"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>增加保留信箱的可復原項目配額
 
-預設的 Exchange 保留原則（名為「 *預設 MRM 原則* 」）會自動套用至 Exchange Online 中的新信箱，包含一個名為「可復原的專案14天」的保留標記，可移至封存。 這項保留標記會將專案從使用者主要信箱的 [可復原的專案] 資料夾移至使用者封存信箱中的 [可復原的專案] 資料夾之後，在14天的保留期間到期的專案。 為做到這一點，必須啟用使用者的封存信箱。 如果未啟用封存信箱，則不會採取任何動作，這表示在14天保留期間到期後，信箱的 [可復原的專案] 資料夾中的專案不會移至封存信箱。 因為保留信箱中未刪除任何專案，可能會超出 [可復原的專案] 資料夾的儲存配額，尤其是在未啟用使用者的封存信箱的情況下。 
+預設的 Exchange 保留原則（名為「 *預設 MRM 原則*」）會自動套用至 Exchange Online 中的新信箱，包含一個名為「可復原的專案14天」的保留標記，可移至封存。 這項保留標記會將專案從使用者主要信箱的 [可復原的專案] 資料夾移至使用者封存信箱中的 [可復原的專案] 資料夾之後，在14天的保留期間到期的專案。 為做到這一點，必須啟用使用者的封存信箱。 如果未啟用封存信箱，則不會採取任何動作，這表示在14天保留期間到期後，信箱的 [可復原的專案] 資料夾中的專案不會移至封存信箱。 因為保留信箱中未刪除任何專案，可能會超出 [可復原的專案] 資料夾的儲存配額，尤其是在未啟用使用者的封存信箱的情況下。 
   
 為了協助降低超過此限制的機率，[可復原的專案] 資料夾的儲存配額會在 Exchange Online 中的信箱上進行保留時，自動從 30 GB 增加為 100 GB。 如果已啟用封存信箱，則封存信箱中 [可復原的專案] 資料夾的儲存配額也會從 30 GB 增加為 100 GB。 如果啟用 Exchange Online 中的自動展開封存功能，使用者封存中 [可復原的專案] 資料夾的儲存配額將不受限制。
   
@@ -63,7 +63,7 @@ ms.locfileid: "48804642"
 
 第一步是針對 [可復原的專案] 資料夾，建立稱為保留原則標記或 RPT) 的自訂保留標記 (。 如先前所述，此 RPT 會將專案從使用者主要信箱的 [可復原的專案] 資料夾移至使用者封存信箱中的 [可復原的專案] 資料夾。 您必須使用 PowerShell 為 [可復原的專案] 資料夾建立 RPT。 您無法使用 Exchange 系統管理中心 (EAC) 。 
   
-1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283)
+1. [使用遠端 PowerShell 連線到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)
     
 2. 執行下列命令，為 [可復原的專案] 資料夾建立新的 RPT： 
     
@@ -86,29 +86,29 @@ ms.locfileid: "48804642"
   
 在您建立新的保留原則之前，請先確定您想要新增的其他保留標記。 如需新增至預設 MRM 原則的保留標記清單，以及建立新保留標記的相關資訊，請參閱下列各項：
   
-- [Exchange Online 中的預設保留原則](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- [Exchange Online 中的預設保留原則](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
     
-- [支援保留原則標記的預設資料夾](https://go.microsoft.com/fwlink/p/?LinkId=746957)
+- [支援保留原則標記的預設資料夾](/exchange/security-and-compliance/messaging-records-management/default-folders)
     
-- [ [建立保留原則](https://go.microsoft.com/fwlink/p/?LinkId=404422) ] 主題中的「建立保留標記」一節。
+- [ [建立保留原則](/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy) ] 主題中的「建立保留標記」一節。
     
 您可以使用 EAC 或 Exchange Online PowerShell 建立保留原則。
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>使用 EAC 建立保留原則
   
-1. 在 EAC 中，移至 [ **規範管理** ] [ \> **保留原則** ]，然後按一下 [ **新增** ] [新增] ![ 圖示 ](../media/ITPro-EAC-AddIcon.gif) 。
+1. 在 EAC 中，移至 [ **規範管理**] [ \> **保留原則**]，然後按一下 [ **新增**] [新增] ![ 圖示 ](../media/ITPro-EAC-AddIcon.gif) 。
     
-2. 在 [ **新增保留原則** ] 頁面的 [ **名稱** ] 下，輸入描述保留原則目的的名稱，然後按一下 [是]。例如， **保留信箱的 MRM 原則** 。 
+2. 在 [ **新增保留原則** ] 頁面的 [ **名稱**] 下，輸入描述保留原則目的的名稱，然後按一下 [是]。例如， **保留信箱的 MRM 原則**。 
     
-3. 在 [ **保留標記** ] 底下，按一下 [ **新增** ] ![ 圖示 ](../media/ITPro-EAC-AddIcon.gif) 。
+3. 在 [ **保留標記**] 底下，按一下 [ **新增**] ![ 圖示 ](../media/ITPro-EAC-AddIcon.gif) 。
     
-4. 在 [保留標記] 清單中，選取您在步驟1中建立的 [可復原的專案 RPT]，然後按一下 [ **新增** ]。
+4. 在 [保留標記] 清單中，選取您在步驟1中建立的 [可復原的專案 RPT]，然後按一下 [ **新增**]。
     
     ![選取自訂的 [可復原的項目] 保留標記](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
 5. 選取要新增至保留原則的其他保留標記。 例如，您可能想要加入預設 MRM 原則中所包含的相同標記。
     
-6. 完成新增保留標記之後，請按一下 **[確定]** 。
+6. 完成新增保留標記之後，請按一下 **[確定]**。
     
 7. 按一下 [ **儲存** ] 以建立新的保留原則。 
     
@@ -137,25 +137,25 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
   
 ### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>使用 EAC 來套用新的保留原則
   
-1. 移至 **[** 收件者] [  >  **信箱** ]。
+1. 移至 **[** 收件者] [  >  **信箱**]。
     
 2. 在清單視圖中，選取您要套用保留原則的信箱，然後按一下 [ **編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
     
-3. 在 [ **使用者信箱** ] 頁面上，按一下 [ **信箱功能** ]。
+3. 在 [ **使用者信箱** ] 頁面上，按一下 [ **信箱功能**]。
     
-4. 在 [ **保留原則** ] 底下，選取您在步驟2中建立的保留原則，然後按一下 [ **儲存** ]。
+4. 在 [ **保留原則**] 底下，選取您在步驟2中建立的保留原則，然後按一下 [ **儲存**]。
     
 您也可以使用 EAC 將保留原則套用至多個信箱。
   
-1. 移至 **[** 收件者] [  >  **信箱** ]。
+1. 移至 **[** 收件者] [  >  **信箱**]。
     
 2. 在清單檢視中，使用 Shift 鍵或 Ctrl 鍵來選取多個信箱。
     
-3. 在詳細資料窗格中，按一下 [其他選項]  。
+3. 在詳細資料窗格中，按一下 [其他選項]。
     
-4. 在 [保留原則]  下方，按一下 [更新]  。
+4. 在 [保留原則] 下方，按一下 [更新]。
     
-5. 在 [ **大量指派保留原則** ] 頁面上，選取您在步驟2中建立的保留原則，然後按一下 [ **儲存** ]。 
+5. 在 [ **大量指派保留原則** ] 頁面上，選取您在步驟2中建立的保留原則，然後按一下 [ **儲存**]。 
     
 ### <a name="use-exchange-online-powershell-to-apply-the-new-retention-policy"></a>使用 Exchange Online PowerShell 套用新的保留原則
   
@@ -223,8 +223,8 @@ $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlace
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
-- 在您啟用使用者的封存信箱之後，請考慮告知使用者其信箱中的其他專案 (不只是「可復原的專案」資料夾中的專案) 可能會移至封存信箱。 這是因為指派給 Exchange Online 信箱的預設 MRM 原則所包含的保留標記 (名為 Default 2 年移至封存) 會在專案傳遞至信箱或使用者建立的日期之後的兩年後，將專案移至封存信箱。 如需詳細資訊，請參閱 [Exchange Online 中的預設保留原則 ](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- 在您啟用使用者的封存信箱之後，請考慮告知使用者其信箱中的其他專案 (不只是「可復原的專案」資料夾中的專案) 可能會移至封存信箱。 這是因為指派給 Exchange Online 信箱的預設 MRM 原則所包含的保留標記 (名為 Default 2 年移至封存) 會在專案傳遞至信箱或使用者建立的日期之後的兩年後，將專案移至封存信箱。 如需詳細資訊，請參閱 [Exchange Online 中的預設保留原則 ](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
     
-- 啟用使用者的封存信箱之後，您可能也會告訴使用者他們可以在其封存信箱的 [可復原的專案] 資料夾中復原已刪除的郵件。 在 Outlook 中，您可以選取封存信箱中的 [ **刪除的郵件** ] 資料夾，然後按一下 [從 **首頁** ] 索引標籤上的 [ **從伺服器復原刪除的郵件** ] 來執行此動作。如需復原已刪除專案的詳細資訊，請參閱 [在 Outlook For Windows 中復原已刪除的郵件](https://go.microsoft.com/fwlink/p/?LinkId=624829)。 
+- 啟用使用者的封存信箱之後，您可能也會告訴使用者他們可以在其封存信箱的 [可復原的專案] 資料夾中復原已刪除的郵件。 在 Outlook 中，您可以選取封存信箱中的 [**刪除的郵件**] 資料夾，然後按一下 [從 **首頁**] 索引標籤上的 [**從伺服器復原刪除的郵件**] 來執行此動作。如需復原已刪除專案的詳細資訊，請參閱 [在 Outlook For Windows 中復原已刪除的郵件](https://go.microsoft.com/fwlink/p/?LinkId=624829)。

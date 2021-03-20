@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 自訂您的登入頁面，並提供 Microsoft 365 的隱私權與同意通知。
-ms.openlocfilehash: 894686ac785e979b8491cd5943c9a071d3be9ee9
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: cb6e7f91c31e1a8bbacb9904a5aad7a76af8ffcb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044551"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912115"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>使用隱私權和同意通知自訂登入頁面
 
@@ -37,7 +37,7 @@ ms.locfileid: "50044551"
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>設計自訂登入頁面上的文字
 
-若要更新登入頁面上的可自訂元素，您必須是全域系統管理員。如需詳細指示，請參閱 [add company 署名](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) 文章。
+若要更新登入頁面上的可自訂元素，您必須是全域系統管理員。如需詳細指示，請參閱 [add company 署名](/azure/active-directory/fundamentals/customize-branding) 文章。
 
 您可以更新的元素包括：
 

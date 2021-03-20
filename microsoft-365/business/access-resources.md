@@ -21,27 +21,27 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 瞭解如何從已加入 Azure Active Directory 的 Windows 10 裝置，存取內部部署資源（如商務線應用程式、檔案共用及印表機）。
-ms.openlocfilehash: fc02fd30f41f25f52e653e750a6bdfd1bd7f800e
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: b78509d72cbd9b3c121039c4965625bf5c21c7e0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233833"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913515"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>從 Microsoft 365 商務版 Premium 中已加入 Azure AD 的裝置存取內部部署資源
 
 本文適用于 Microsoft 365 商務版 Premium。
 
-任何已加入 Azure Active Directory 的 Windows 10 裝置都能存取所有雲端架構資源（如您的 Microsoft 365 應用程式），並可由 Microsoft 365 商務版 Premium 進行保護。 您也可以像商務線 (LOB) 應用程式、檔案共用及印表機等方式，允許存取內部部署資源。 若要允許存取，請使用 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) ，將您的內部部署 Active Directory 與 Azure active directory 同步。 
+任何已加入 Azure Active Directory 的 Windows 10 裝置都能存取所有雲端架構資源（如您的 Microsoft 365 應用程式），並可由 Microsoft 365 商務版 Premium 進行保護。 您也可以像商務線 (LOB) 應用程式、檔案共用及印表機等方式，允許存取內部部署資源。 若要允許存取，請使用 [AZURE AD Connect](/azure/active-directory/connect/active-directory-aadconnect) ，將您的內部部署 Active Directory 與 Azure active directory 同步。 
 
-若要深入瞭解，請參閱 [Azure Active Directory 中的裝置管理簡介](https://docs.microsoft.com/azure/active-directory/device-management-introduction)。
+若要深入瞭解，請參閱 [Azure Active Directory 中的裝置管理簡介](/azure/active-directory/device-management-introduction)。
 下列各節也會摘要說明這些步驟。
  
 ## <a name="run-azure-ad-connect"></a>執行 Azure AD Connect
 
 完成下列步驟，讓您組織的 Azure AD 加入裝置能夠存取內部部署資源。
   
-1. 若要將您的使用者、群組和連絡人從本機 Active Directory 同步處理至 Azure Active Directory，請依照 [設定 Office 365 的目錄同步](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)處理中所述，執行目錄同步處理嚮導和 Azure AD Connect。
+1. 若要將您的使用者、群組和連絡人從本機 Active Directory 同步處理至 Azure Active Directory，請依照 [設定 Office 365 的目錄同步](../enterprise/set-up-directory-synchronization.md)處理中所述，執行目錄同步處理嚮導和 Azure AD Connect。
     
 2. 目錄同步處理完成後，請確定您組織的 Windows 10 裝置已加入 Azure AD。 此步驟會在每個 Windows 10 裝置上進行個別的執行。 如需詳細資訊，請參閱 [為 Microsoft 365 商務版使用者設定 Windows 裝置](set-up-windows-devices.md) 。 
     
@@ -59,8 +59,8 @@ ms.locfileid: "50233833"
   
 - 當裝置 Azure AD 加入時，它會建立新的使用者，而不會參照現有的設定檔。 設定檔必須手動遷移。 使用者設定檔包含我的最愛、本機檔案、瀏覽器設定及「開始」功能表設定等資訊。 最佳方法是尋找協力廠商工具，將現有的檔案和設定對應至新的設定檔。
 
-- 如果裝置使用的群組原則物件 (GPO) ，有些 Gpo 在 Intune 中可能沒有 (CSP) 的同等 [配置服務提供者](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) 。 執行 [MMAT 工具](https://www.microsoft.com/download/details.aspx?id=45520) ，尋找現有 gpo 的類似 csp。
+- 如果裝置使用的群組原則物件 (GPO) ，有些 Gpo 在 Intune 中可能沒有 (CSP) 的同等 [配置服務提供者](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) 。 執行 [MMAT 工具](https://www.microsoft.com/download/details.aspx?id=45520) ，尋找現有 gpo 的類似 csp。
 
 - 使用者可能無法對依存于 Active Directory 驗證的應用程式進行驗證。 評估繼承應用程式，並考慮更新至使用新式驗證的應用程式（如有可能）。
 
-- Active Directory 印表機探索無法運作。 您可以為所有使用者提供直接印表機路徑，或使用 [通用列印](https://aka.ms/UPDocs)。
+- Active Directory 印表機探索無法運作。 您可以為所有使用者提供直接印表機路徑，或使用 [通用列印](/universal-print/)。

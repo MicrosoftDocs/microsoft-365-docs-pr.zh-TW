@@ -13,12 +13,12 @@ metadata:
   ms.date: 02/27/2020
   localization_priority: Normal
   search.appverid: MET150
-  ms.openlocfilehash: 4f5634b720079f57a37f9b7079a8bece6cf150cd
-  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+  ms.openlocfilehash: a2998495e5cf6309005e9bd8a65290081f565678
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "44402139"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50911599"
 landingContent:
 - title: 管理帳單與付款
   linkLists:
@@ -45,7 +45,7 @@ landingContent:
     - text: 購買訂閱授權
       url: licenses/buy-licenses.md
     - text: 從您的訂閱中移除授權
-      url: licenses/remove-licenses-from-subscription.md
+      url: ./licenses/buy-licenses.md
 - title: 升級、續約或取消
   linkLists:
   - linkListType: how-to-guide
@@ -67,7 +67,7 @@ landingContent:
     - text: 試用或購買 Microsoft 365
       url: try-or-buy-microsoft-365.md
     - text: 從免費試用版購買訂閱
-      url: buy-a-subscription-from-your-free-trial.md
+      url: ./try-or-buy-microsoft-365.md
     - text: 延長試用期
       url: extend-your-trial.md
     - text: 購買網域名稱

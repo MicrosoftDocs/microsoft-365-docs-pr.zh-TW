@@ -21,19 +21,19 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 21aad23b849db76acb1bcc98bb37ff0d8b6fc1ce
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 44cb7b09c76ee5e49d2f556df104e55150212f30
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741442"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911779"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>如何支付您的訂閱費用
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ ms.locfileid: "50741442"
 
 如果您個人新增的付款方法有逾期金額，則可以使用 [結算餘額 **]** 來付款。 您用來支付逾期金額的付款方法會變成所有使用遭拒絕付款方法的訂閱的新付款方法。
 
-1. 在系統管理中心，前往 [帳單 **]**  >  [帳單與付款 **]** 頁面，然後選取 [付款<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法]</a> 索引標籤。
+1. 在系統管理中心，前往 [帳單 **]**  >  [帳單與付款 **]** 頁面，然後選取 [付款 <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法]</a> 索引標籤。
 1. 警告訊息會指出遭拒絕的付款方式。 選取 [結算餘額 **]**。
 1. 在右窗格中，選擇不同的付款方式，或選取 [新增新的付款方式 **]**。
 1. 更新付款方式資訊之後，選取 [儲存 **]**。

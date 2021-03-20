@@ -19,25 +19,25 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 15feb1b806b46d147d427256ce2416ea75b48bbe
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 750420b6fac8fff16130710ef96a9ceb6345a87a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143093"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911827"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用計費設定檔支付訂閱費用
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
 當您購買訂閱時，會以帳單設定檔付款。 計費設定檔會連結至特定的付款條件，而且可以是信用卡或借方卡或發票，但不能是銀行帳戶。
 
-如果您不確定您的帳戶是否有帳單設定檔，請參閱 [瞭解帳單設定檔](manage-billing-profiles.md)。 如果您沒有帳單設定檔，請參閱 [如何支付您的訂閱費用](pay-for-your-subscription.md)。
+如果您不確定您的帳戶是否有帳單設定檔，請參閱[了解帳單設定檔](manage-billing-profiles.md)。 如果您沒有帳單設定檔，請參閱 [如何支付您的訂閱費用](pay-for-your-subscription.md)。
 
 ## <a name="paying-with-recurring-billing-turned-on-or-off"></a>開啟或關閉重複帳單的付款
 
@@ -45,26 +45,26 @@ ms.locfileid: "50143093"
 
 如果已關閉計費設定檔的定期計費，您可以在發票上使用 [ **立即付款** ] 按鈕，以支付每個帳單的支付方式，不論使用哪一種付款條件連結計費設定檔。 您也可以依支票或電子資金轉帳 (EFT) 支付。 有關如何進行的說明，包含在發票的 PDF 副本中。
 
-## <a name="paying-by-invoice"></a>按發票付款
+## <a name="paying-by-invoice"></a>透過發票付款
 
 如果您有設定為透過發票支付的計費設定檔，您可以使用支票或 EFT 支付訂閱費用。 您也可以在發票上使用 [ **立即付款** ] 按鈕，以使用信用卡進行線上付款。
 
-若要享受發票付款，您必須：
+若要符合透過發票付款的資格，您必須：
 
 - 成為已建立的客戶
-- 訂閱成本超過特定金額 (此金額會因服務位置而異) 
-- 傳遞信用檢查
+- 訂閱費用超過特定金額 (此金額因服務位置而異)
+- 通過信用查核
 
-如果需要信用檢查，當您購買訂閱時，系統就會通知您。 如果您同意聯繫，您會收到一封電子郵件，其中包含適用于信用核准的詳細資訊。 信用查核通常會在兩個工作天內完成。
+如果需要信用查核，當您購買訂閱時會收到通知。 如果您同意連絡，將會收到一封電子郵件，其中包括有關適用於信用核准的詳細資訊。 信用查核通常會在兩個工作天內完成。
 
-如果您的帳單設定檔是由發票所支援，當您的帳單報表可供查看時，您會收到一封電子郵件。 這封電子郵件不包含帳單帳單的複本。 不過，您可以選擇透過 [電子郵件接收帳單帳單的複本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 您的帳單帳單包含您進行付款的選項及傳送位置的詳細資訊。 如果您在帳單設定檔中輸入採購訂單 (PO) 號碼，號碼就會出現在帳單報表上。 如需存取帳單明細的相關資訊，請參閱[檢視您的帳單或發票](view-your-bill-or-invoice.md)。
+如果您的帳單設定檔是由發票所支援，當您的帳單報表可供查看時，您會收到一封電子郵件。 此電子郵件不含帳單複本。 不過，您可以選擇[透過電子郵件接收帳單明細的複本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 帳單明細內包括各種付款方式以及要寄送到哪裡的詳細資料。 如果您在帳單設定檔中輸入採購訂單 (PO) 號碼，號碼就會出現在帳單報表上。 如需存取帳單明細的相關資訊，請參閱[檢視您的帳單或發票](view-your-bill-or-invoice.md)。
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>我要在哪裡送出我的支票或是 EFT 付款？
 
-[檢查您的發票](view-your-bill-or-invoice.md) 付款指示。 您也可以使用下列下拉式清單來尋找您國家/地區的付款指示。 如果您不確定所欠多少，您可以在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帳單 & 付款</a>] 頁面的 [**發票**] 索引標籤上，查看您的帳單和帳單記錄。
+[檢查您的發票](view-your-bill-or-invoice.md)以了解相關的付款指示。 您也可以使用下列下拉式清單來尋找您國家/地區的付款指示。 如果您不確定應付金額，可以在 [帳單與付款 <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">]</a> 頁面的 [發票 **]** 索引標籤上檢查帳單和線上帳單記錄。
 
 > [!NOTE]
-> 只可在少數幾個國家/地區購買支票。
+> 支票付款服務僅在部分國家/地區提供。
 
  **從下方下拉式功能表選擇您的「帳單地址」國家/地區或區域。**
 
@@ -222,20 +222,20 @@ ms.locfileid: "50143093"
 > - [尚比亞](../pay/zambia.md)
 > - [辛巴威](../pay/zimbabwe.md)
 
-## <a name="can-i-pay-my-invoice-online"></a>我是否可以線上支付發票？
+## <a name="can-i-pay-my-invoice-online"></a>我可以在線上支付我的發票嗎？
 
 如果為您的帳單設定檔關閉定期計費，您可以使用信用卡線上支付發票。 若要進行支付，請在 Microsoft 365 系統管理中心的發票上使用 [ **立即付款** ] 按鈕。 若要尋找您的發票，請參閱 [查看您的帳單或發票](view-your-bill-or-invoice.md)。
 
-## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>我是否可以從目前的付款條件改為透過發票付款？
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>我可以從目前的付款方式變更為透過發票付款嗎？
 
 如果您的帳單設定檔是以信用卡或轉帳卡為後盾，您只能將付款條件變更為另一個信用卡或借方卡。 您無法變更為按發票付款。
 
-## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>我是否可以使用不同的支付方式，將發票付款變更為其他支付方式？
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>我可以從透過發票付款變更為使用不同的付款方式嗎？
 
 如果您的帳單設定檔是由發票付款所支援，您就無法變更付款條件。 您可以在發票上使用 [ **立即付款** ] 按鈕，以支付信用卡或付款卡，或是支票或 EFT。
 
 ## <a name="related-content"></a>相關內容
 
-[管理付款條件](manage-payment-methods.md) (文章) \
-[查看您的帳單或發票](view-your-bill-or-invoice.md) (文章) \
-[瞭解您的帳單或發票](understand-your-invoice.md) (文章) 
+[管理付款方式](manage-payment-methods.md) (文章)\
+[檢視帳單](view-your-bill-or-invoice.md) (文章)\
+[了解您的帳單或發票](understand-your-invoice.md) (文章)

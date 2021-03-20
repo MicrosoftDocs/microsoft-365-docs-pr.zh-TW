@@ -18,12 +18,12 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: c1715d2420315c6e645303c959512a45d47fddfe
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759201"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911467"
 ---
 # <a name="manage-auto-claim-policies"></a>管理自動宣告原則
 
@@ -41,9 +41,9 @@ ms.locfileid: "50759201"
 > [!IMPORTANT]
 > 「自動宣告」原則目前僅適用于 Microsoft 小組。 未來可使用的產品越多。
 
-## <a name="before-you-begin"></a>事前準備
+## <a name="before-you-begin"></a>開始之前
 
-您必須是全域、計費或使用者系統管理員，才能建立及管理自動宣告原則。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+您必須是全域系統管理員，才能建立及管理自動宣告原則。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>開啟或關閉自動理賠原則功能
 
@@ -160,6 +160,6 @@ ms.locfileid: "50759201"
 
 ## <a name="related-content"></a>相關內容
 
- (篇文章) \[中指派授權給使用者](../../admin/manage/assign-licenses-to-users.md)
+[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md) (文章)\
 [購買或移除訂閱授權](buy-licenses.md) (篇) \
 瞭解 (文章) [的訂閱與授權](subscriptions-and-licenses.md)
