@@ -23,17 +23,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 建立共用信箱讓組織中的多位使用者共同負責讀取及回覆傳送到某個地址的電子郵件。
-ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287230"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915875"
 ---
 # <a name="create-a-shared-mailbox"></a>建立共用信箱 
 
 > [!NOTE]
-> 如果您的組織使用混合式 Exchange 環境，您應使用內部部署 Exchange 系統管理中心 (EAC) 來建立及管理共用信箱。 請參閱[在 Exchange 系統管理中心建立共用信箱](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019&preserve-view=true.)<br><br>
+> 如果您的組織使用混合式 Exchange 環境，您應使用內部部署 Exchange 系統管理中心 (EAC) 來建立及管理共用信箱。 請參閱[在 Exchange 系統管理中心建立共用信箱](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)<br><br>
 > 如果您不確定應該建立共用信箱或者 Outlook​​ 的 Microsoft 365 群組，請參閱[比較群組](../create-groups/compare-groups.md)以取得指導。 請注意，目前無法將共用信箱移轉至 Microsoft 365 群組。 如果您想要這麼做，請[在這裡投票](https://go.microsoft.com/fwlink/?linkid=871518)讓我們知道。
 
 建立共用信箱能讓一群人輕易監視某個共用電子郵件地址 (例如 info@contoso.com) 的電子郵件，並從該電子郵件地址傳送電子郵件。當群組中的某人回覆一則傳送到共用信箱的郵件時，該封電子郵件會顯示為從共用信箱發出，而非從個別使用者發出。
@@ -153,13 +153,13 @@ ms.locfileid: "50287230"
 4. 在 **[編輯登入狀態]** 飛出視窗中，確認已選取 [封鎖使用者，使其無法登入]、選取 **[儲存]**，然後 **[關閉]**。
 ::: moniker-end
 
-如需有關如何使用 Azure AD PowerShell 封鎖帳戶登入的指示 (包含一次封鎖多個帳戶)，請參閱[使用 Office 365 PowerShell 封鎖使用者帳戶](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell)。
+如需有關如何使用 Azure AD PowerShell 封鎖帳戶登入的指示 (包含一次封鎖多個帳戶)，請參閱[使用 Office 365 PowerShell 封鎖使用者帳戶](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md)。
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>將共用信箱新增至 Outlook
 
 如果您在貴公司啟用了自動對應功能 (根據預設，大多數人都會這麼做)，當使用者關閉並重新啟動 Outlook 後，共用信箱就會自動顯示在使用者的 Outlook 應用程式中。 
 
-自動對應是在使用者的信箱中設定，而非共用信箱。 也就是說，如果您嘗試使用安全性群組來管理哪些人員可以存取共用信箱，自動對應將無法運作。 因此，若要使用自動對應，您就必須明確地指派權限。 根據預設會啟用自動對應。 若要瞭解如何將它關閉，請參閱[移除共用信箱的自動對應](https://docs.microsoft.com/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox)。
+自動對應是在使用者的信箱中設定，而非共用信箱。 也就是說，如果您嘗試使用安全性群組來管理哪些人員可以存取共用信箱，自動對應將無法運作。 因此，若要使用自動對應，您就必須明確地指派權限。 根據預設會啟用自動對應。 若要瞭解如何將它關閉，請參閱[移除共用信箱的自動對應](/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox)。
 
 若要深入了解 Outlook 中的共用信箱，請參閱：
 
@@ -209,5 +209,3 @@ ms.locfileid: "50287230"
 [從共用信箱中移除授權](remove-license-from-shared-mailbox.md)
 
 [解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md)
-
-

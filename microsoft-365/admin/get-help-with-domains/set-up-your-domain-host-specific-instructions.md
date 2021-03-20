@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: 瞭解如何管理您自己的 DNS 記錄，或讓 Microsoft 為您管理您的 DNS 記錄。
-ms.openlocfilehash: ddf3b7faf7ac336b2d7caf3b7d35d9a4f101b122
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: f3c3710320c62d20c6a16818cd138c9b686d2781
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126356"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915563"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>設定您的網域 (主機專用指示)
 
@@ -57,7 +57,7 @@ ms.locfileid: "50126356"
 
 |                           |                          |
 |---------------------------|--------------------------|
-| [1&1 IONOS](../dns/create-dns-records-at-1-1-internet.md) | [懸停](../dns/create-dns-records-at-hover.md) |
+| [1&1 IONOS](../dns/create-dns-records-at-1-1-internet.md) | [懸停](./create-dns-records-at-any-dns-hosting-provider.md) |
 | [123-reg.co.uk](../dns/create-dns-records-at-123-reg-co-uk.md) | [由 Google (eNom) 管理 ](../dns/create-dns-records-for-domain-managed-by-google-enom.md)|
 | [Amazon Web Services (AWS)](../dns/create-dns-records-at-aws.md) | [MyDomain](../dns/create-dns-records-at-mydomain.md) |
 | [Azure DNS 區域](../dns/create-dns-records-for-azure-dns-zones.md) | [name.com](../dns/create-dns-records-at-name-com.md) |
@@ -74,4 +74,3 @@ ms.locfileid: "50126356"
 |[Hostgator](../dns/create-dns-records-at-hostgator.md)  | [雅虎！  小型企業](../dns/create-dns-records-at-yahoo-small-business.md)  |
 
 [我需要一般指示，因為我的網域主機未出現在此清單中。 ](create-dns-records-at-any-dns-hosting-provider.md)
-   

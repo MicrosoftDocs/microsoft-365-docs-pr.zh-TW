@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: 瞭解如何設定登錄機碼，以便為已安裝 Microsoft Office 2013 的裝置啟用新式驗證。
-ms.openlocfilehash: 2a4be82328d391db7808cb9197ce259275b567c6
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: f12511ad6d685647b3b38fd424f1d4611a3119b4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758925"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914531"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>為 Windows 裝置上的 Office 2013 啟用新式驗證
 
@@ -60,6 +60,5 @@ ms.locfileid: "50758925"
 ## <a name="related-articles"></a>相關文章
 [使用第二種驗證方式登入 Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
-[Outlook 會提示輸入密碼，而不使用新式驗證連線到 Office 365](https://docs.microsoft.com/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
+[Outlook 會提示輸入密碼，而不使用新式驗證連線到 Office 365](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
 
-  

@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '瞭解您可以如何有一個以上的電子郵件地址，稱為「電子郵件別名」，與您的 Microsoft 365 for business 帳戶相關聯。 '
-ms.openlocfilehash: 3c97640f4bb16876ec028a1af2b361a21a0decab
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 590782f7b22b1d26abef83f884d45da567f0425c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126402"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915947"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>為使用者新增其他電子郵件別名
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
   
@@ -72,7 +72,7 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱 [add a domain To Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱 [add a domain To Microsoft 365](../setup/add-domain.md)。 
   
      
 5. 完成後，請選擇 [ **儲存變更**]。
@@ -104,7 +104,7 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱 [add a domain To Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱 [add a domain To Microsoft 365](../setup/add-domain.md)。 
 
 5. 完成後，選取 **[儲存]**。
 
@@ -135,7 +135,7 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱 [add a domain To Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱 [add a domain To Microsoft 365](../setup/add-domain.md)。 
 
 5. 完成後，選取 **[儲存]**。
 
@@ -164,5 +164,3 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
 [從不同的地址傳送電子郵件](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
 
 [變更使用名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md)
-  
-

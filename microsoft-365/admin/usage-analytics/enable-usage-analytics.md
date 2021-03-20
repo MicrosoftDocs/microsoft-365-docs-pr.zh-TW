@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 瞭解如何使用 Power BI 中的 Microsoft 365 流量分析範本應用程式，來開始收集租使用者的資料。
-ms.openlocfilehash: 98ae107b6777ac97d0be3b37847117c6e20be63d
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 1ef50380041650763961ffbe6e01c63b26800ee3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114234"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913871"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -50,9 +50,9 @@ Microsoft 365 美國政府社區尚無可用的 microsoft 365 使用方式分析
 您也可以展開 [ **產品** ] 以購買 Power BI 的版本。 
 
 > [!NOTE]
-> 您需要具備 Power BI Pro 授權才能安裝、自訂及發佈範本應用程式。 如需詳細資訊，請參閱 [必要條件](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute?source=docs#prerequisites)。
+> 您需要具備 Power BI Pro 授權才能安裝、自訂及發佈範本應用程式。 如需詳細資訊，請參閱 [必要條件](/power-bi/service-template-apps-install-distribute?source=docs#prerequisites)。
 
-若要共用您的資料，這兩者和您與您共用資料的人員、需要 Power BI Pro 授權，或是內容必須位於 [POWER bi premium 服務](https://docs.microsoft.com/power-bi/service-premium-what-is)的工作區中。 
+若要共用您的資料，這兩者和您與您共用資料的人員、需要 Power BI Pro 授權，或是內容必須位於 [POWER bi premium 服務](/power-bi/service-premium-what-is)的工作區中。 
   
 ### <a name="enable-the-template-app"></a>啟用範本應用程式
 

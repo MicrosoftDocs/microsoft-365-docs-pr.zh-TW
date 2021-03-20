@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何在 Microsoft 365 上驗證您的網域並建立 DNS 記錄。
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: c5c33af8a5635d1092aec2f1bffdfc942f2e4851
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126332"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914591"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>將您的網域連線到 Microsoft 365
 
@@ -72,10 +72,10 @@ ms.locfileid: "50126332"
 
 儲存記錄。
 
-透過其中一個 [SPF 驗證工具](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) 以驗證您的 SPF 記錄
+透過其中一個 [SPF 驗證工具](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) 以驗證您的 SPF 記錄
 
 SPF 是設計來協助防止詐騙，但是仍有 SPF 無法防護的詐騙技術。 為了防範這些技術，設定 SPF 之後，您也應該為 Microsoft 365 設定 DKIM 和 DMARC。
 
-若要開始使用，請參閱[在 Microsoft 365 中使用 DKIM 驗證從您的網域傳送的外寄電子郵件](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) 和 [使用 DMARC 在 Microsoft 365 中驗證電子郵件](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
+若要開始使用，請參閱[在 Microsoft 365 中使用 DKIM 驗證從您的網域傳送的外寄電子郵件](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) 和 [使用 DMARC 在 Microsoft 365 中驗證電子郵件](../../security/office-365-security/use-dmarc-to-validate-email.md)。
 
 最後，返回系統管理員中心網域設定精靈以完成你的設定。

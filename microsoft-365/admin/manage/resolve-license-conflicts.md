@@ -21,23 +21,23 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: 瞭解如何解決與 Microsoft 365 for business 訂閱的授權衝突。
-ms.openlocfilehash: 284a6b169c02314dd2bbd0e13c10c081cb50f58d
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: e2b5daa71164b41825282bd5652549347b8307c1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114450"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915179"
 ---
 # <a name="resolve-license-conflicts"></a>解決授權衝突
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
-建議您先購買訂閱所需的授權，再建立新的使用者。 如此一來，就能在建立使用者帳戶時，將授權指派給新的使用者。 如果您已經將所有授權指派給使用者，但其中有部分授權已過期，或是您嘗試移除已經指派給某位使用者的授權，將會發生授權衝突。 如需詳細資訊，請參閱 [從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
+建議您先購買訂閱所需的授權，再建立新的使用者。 如此一來，就能在建立使用者帳戶時，將授權指派給新的使用者。 如果您已經將所有授權指派給使用者，但其中有部分授權已過期，或是您嘗試移除已經指派給某位使用者的授權，將會發生授權衝突。 如需詳細資訊，請參閱 [從您的訂閱中移除授權](../../commerce/licenses/buy-licenses.md)。
   
 ## <a name="how-do-i-view-license-conflicts"></a>如何查看授權衝突？
 

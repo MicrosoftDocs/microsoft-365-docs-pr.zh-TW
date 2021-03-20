@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 瞭解如何使用 QR 碼來驗證和下載 Outlook mobile。
-ms.openlocfilehash: 1e5207a2792b557689a306fa1474a2c5fac81ed9
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: bc8ab14d3c1c0621e84d0c95ad7448c6c50825d6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242351"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914963"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>使用 QR 碼登錄 Outlook 行動應用程式
 
@@ -38,7 +38,7 @@ ms.locfileid: "50242351"
 
 這項功能預設為啟用。 若要停用此功能，請遵循下列步驟。
 
-1. [連接至 Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. [連接至 Exchange PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)。
 2. 您可以使用 PowerShell 來停用通知，告知使用者 Outlook 行動應用程式的相關資訊。 這也會使 QR 碼無法顯示登入流程。
 
 ```powershell
@@ -47,4 +47,4 @@ Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 
 相關主題
 
-[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig?view=exchange-ps)
+[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig?view=exchange-ps)

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: 瞭解如何將流量路由傳送至 Microsoft 所主控的現有公用網站（如果您已將 Microsoft 設定為管理自訂網域的 DNS 記錄）。
-ms.openlocfilehash: 5d2bf23d4052815fae210d0fdf6635288ff46b57
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ceef82345e562e2aa4c291f416c454fb831ee45b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645560"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915971"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>更新 DNS 記錄以便向目前的主機服務提供者保留網站
 
@@ -43,7 +43,7 @@ ms.locfileid: "48645560"
 
 4. 選取 [ **+ 新的自訂記錄** ]，然後輸入下列內容： 
     
-   - 針對 **DNS** 輸入： ** (位址) **
+   - 針對 **DNS** 輸入： **(位址)**
     
    - 針對 [ **主機名稱或別名**]，輸入下列專案： **@**
     
@@ -51,23 +51,22 @@ ms.locfileid: "48645560"
     
    This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website. 
     
-5. 選取 **[儲存]**。 
+5. 選取 [儲存]。 
     
 此外，您還可以建立 CNAME 記錄，協助客戶找到您的網站。
   
 1. 選取 [ **+ 新的自訂記錄** ]，然後輸入下列內容： 
     
-   - 針對 **DNS 類型** 輸入： **CNAME (別名) **
+   - 針對 **DNS 類型** 輸入： **CNAME (別名)**
     
    - 針對 [ **主機名稱或別名**]，輸入下列： **www**
     
    - 在 [ **指向位址**] 中，為您的網站輸入完整功能變數名稱 (FQDN)  (例如，contoso.com) 。 
     
-2. 選取 **[儲存]**。 
+2. 選取 [儲存]。 
     
 最後，請執行下列動作：
   
-[更新您網域的 NS 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) ，以指向 Microsoft。 
+[更新您網域的 NS 記錄](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) ，以指向 Microsoft。 
   
 當 NS 記錄更新為指向 Microsoft 時，您的網域就會全部設定。 電子郵件會路由傳送至 Microsoft，而您的網站位址的流量將繼續前往您目前的網站主機。
- 

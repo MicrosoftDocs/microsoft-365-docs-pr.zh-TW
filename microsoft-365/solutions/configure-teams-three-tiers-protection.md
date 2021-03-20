@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 瞭解如何使用三層保護來設定 Teams 以取得更佳的檔案共用安全性，並以輕鬆的共同作業方式來平衡安全性。
-ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509239"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916211"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>為小組設定三層保護
 
@@ -42,7 +42,7 @@ ms.locfileid: "50509239"
 
 - 高敏感度保護
 
-如需有關這些層級和針對每個層級所建議功能的詳細資訊，請參閱 [Microsoft Cloud for Enterprise Architects 圖解](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+如需有關這些層級和針對每個層級所建議功能的詳細資訊，請參閱 [Microsoft Cloud for Enterprise Architects 圖解](./cloud-architecture-models.md)
 
 
 ## <a name="three-tiers-at-a-glance"></a>三層保護概覽
@@ -68,11 +68,11 @@ ms.locfileid: "50509239"
 
 ## <a name="sensitivity-labels"></a>敏感度標籤
 
-敏感度和高敏感度層會使用敏感度標籤來協助保護小組及其檔案。 若要實作這些保護層，您必須啟用[敏感度標籤來保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+敏感度和高敏感度層會使用敏感度標籤來協助保護小組及其檔案。 若要實作這些保護層，您必須啟用[敏感度標籤來保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 雖然基準層不需要敏感度標籤，但請考慮建立「一般」標籤，然後要求所有小組都要套用標籤。 這可協助確保使用者在建立小組時能注意到其選擇的敏感度。 如果您打算部署敏感度或高敏感度層，建議您建立「一般」標籤，以供用於基準小組和不敏感的檔案。
 
-如果您不熟悉如何使用敏感度標籤，建議您閱讀[開始使用敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)以便開始使用。 
+如果您不熟悉如何使用敏感度標籤，建議您閱讀[開始使用敏感度標籤](../compliance/get-started-with-sensitivity-labels.md)以便開始使用。 
 
 如果您已在組織中部署敏感度標籤，請考慮敏感度和高敏感度層所用的標籤與您整體標籤策略的配適程度。 
 
@@ -95,7 +95,7 @@ ms.locfileid: "50509239"
 
 ## <a name="guest-sharing"></a>來賓共用
 
-如果您需要與組織外部人員共同作業，建議您設定 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)，以獲得最佳的共用和管理體驗。
+如果您需要與組織外部人員共同作業，建議您設定 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](/sharepoint/sharepoint-azureb2b-integration-preview)，以獲得最佳的共用和管理體驗。
 
 小組來賓共用預設為關閉，不過 Office 365 群組 (小組成員資格儲存所在位置) 和 SharePoint 的共用則會開啟。 我們會在基準層開啟 Teams 共用，但如有需要，您可以使用敏感度標籤在敏感度和高敏感度層將其關閉。
 
@@ -113,7 +113,7 @@ ms.locfileid: "50509239"
 
 ## <a name="access-from-unmanaged-devices"></a>從未受管理的裝置存取
 
-針對敏感度和高敏感度層，我們會針對有敏感度標籤的 SharePoint 內容限制存取權。 Azure AD 條件式存取提供了許多選項，可供您決定使用者存取 Microsoft 365 的方式，包括根據位置、風險、裝置合規性和其他因素的限制。 建議您閱讀[什麼是條件式存取？](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，並考慮可能適合貴組織的其他原則。
+針對敏感度和高敏感度層，我們會針對有敏感度標籤的 SharePoint 內容限制存取權。 Azure AD 條件式存取提供了許多選項，可供您決定使用者存取 Microsoft 365 的方式，包括根據位置、風險、裝置合規性和其他因素的限制。 建議您閱讀[什麼是條件式存取？](/azure/active-directory/conditional-access/overview)，並考慮可能適合貴組織的其他原則。
 
 請注意，來賓通常不會有由組織管理的裝置。 如果您允許任何層級中的來賓，請考慮他們將用來存取小組和網站的裝置，並據以設定未受管理裝置原則。
 
@@ -123,6 +123,6 @@ ms.locfileid: "50509239"
 
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft Teams 中的安全性與合規性](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Microsoft Teams 中的安全性與合規性](/microsoftteams/security-compliance-overview)
 
-[安全性與合規性中心的警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+[安全性與合規性中心的警示原則](../compliance/alert-policies.md)

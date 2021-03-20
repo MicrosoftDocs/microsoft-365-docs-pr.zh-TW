@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: 瞭解如何在 Microsoft 365 for business 中 AutoPilot 建立 CSV 檔案。
-ms.openlocfilehash: 030fb96e9e60c792fb685af57d34eacd6670645a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 78a9012bac054329bdb87b02757f49f30dd44f65
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399359"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914735"
 ---
 # <a name="device-list-csv-file"></a>裝置清單 CSV-檔案
 
@@ -50,9 +50,8 @@ ms.locfileid: "44399359"
   
 ## <a name="related-articles"></a>相關文章
 
-[商務用 Microsoft 365 檔和資源](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[商務用 Microsoft 365 檔和資源](../../business/index.yml)
   
-[開始使用 Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
+[開始使用 Microsoft 365 for business](../../business/microsoft-365-business-overview.md)
   
-[管理 Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/business/manage)
-  
+[管理 Microsoft 365 for business](../../business/manage.md)

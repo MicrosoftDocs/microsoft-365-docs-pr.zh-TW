@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 為您的使用者提供有關您行業和組織資訊的最新資訊資訊，使用新聞服務可為您的組織啟用自訂的新聞摘要。
-ms.openlocfilehash: 90fa9a046e5207ae032180099f7766ef18d71898
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 2e4b7344eabb2ccd25bc0f0fed38ebfedbfe52af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519302"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915347"
 ---
 # <a name="manage-industry-news"></a>管理行業新聞
 
@@ -63,5 +63,5 @@ ms.locfileid: "49519302"
 
 ## <a name="related-articles"></a>相關文章
 
-- [Microsoft 搜尋](https://docs.microsoft.com/microsoftsearch/)
-- [管理您的資料和服務](https://docs.microsoft.com/microsoft-365/admin/manage)
+- [Microsoft 搜尋](/microsoftsearch/)
+- [管理您的資料和服務](./index.yml)

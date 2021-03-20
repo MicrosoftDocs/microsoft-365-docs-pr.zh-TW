@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 瞭解如何在 Microsoft 365 購買時，新增訂閱顧問合作夥伴作為記錄的合作夥伴，變更合作夥伴或從訂閱刪除合作夥伴。
-ms.openlocfilehash: 6407a30182fc69cd928a44d606e2e6f0cd72c712
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 9734ee5f23af24ec701b8ae1fbd448d6bedb63fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324509"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914927"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>新增、變更或刪除訂閱顧問合作夥伴
 
@@ -99,16 +99,16 @@ ms.locfileid: "47324509"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取您要編輯的訂閱。
 3. 在 [訂閱詳細資料] 頁面的 [ **合作夥伴資訊**] 下，輸入 **夥伴網路識別碼**。 您可以詢問合作夥伴，以取得協力廠商的 Microsoft 合作夥伴網路識別碼。
-4. 選取 **[新增]**。
+4. 選取 **新增**。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
 2. 如果您有一個以上的訂閱，請選取您要編輯的訂閱。
 3. 在右側的 [訂閱成本] 底下，選擇 [ **其他動作**] [ > **新增記錄的夥伴**]。
 4. 輸入您要新增之合作夥伴的 Microsoft 合作夥伴 ID、選取 [ **檢查 ID**]，然後再進行 **提交**。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
@@ -133,16 +133,16 @@ ms.locfileid: "47324509"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [訂閱詳細資料] 頁面的 [ **合作夥伴資訊**] 底下，選取 [ **移除**]。
 3. 輸入新合作夥伴的 **Microsoft 合作夥伴網路識別碼** 。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
-4. 選取 **[新增]**。
+4. 選取 **新增**。
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
 2. 如果您有多個訂閱，請選取您要編輯之訂閱的名稱。
 3. 在 [ **合作夥伴識別碼**] 底下，選取 [ **編輯記錄的夥伴**]。
 4. 輸入您要新增之合作夥伴的新 Microsoft 合作夥伴識別碼，然後選取 [ **檢查 ID**]，然後再 **提交**。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
@@ -151,7 +151,7 @@ ms.locfileid: "47324509"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。
 2. 如果您有多個訂閱，請選取您要編輯之訂閱的名稱。
 3. 在 [ **合作夥伴識別碼**] 底下，選取 [ **編輯記錄的夥伴**]。
 4. 輸入您要新增之合作夥伴的新 Microsoft 合作夥伴識別碼，然後選取 [ **檢查 ID**]，然後再 **提交**。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
@@ -168,7 +168,7 @@ ms.locfileid: "47324509"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取您要編輯的訂閱。
 3. 在 [訂閱詳細資料] 頁面的 [ **合作夥伴資訊**] 底下，選取 [ **移除**]。
 
@@ -176,7 +176,7 @@ ms.locfileid: "47324509"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
 2. 如果您有多個訂閱，請選取您要編輯之訂閱的名稱。
 3. 在 [ **合作夥伴識別碼**] 底下，選取 [ **編輯記錄的夥伴**]。
 4. 在 [ **合作夥伴資訊** ] 頁面上，清除 [ **合作夥伴識別碼** ] 方塊，然後選取 [ **提交**]。
@@ -185,7 +185,7 @@ ms.locfileid: "47324509"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。
 2. 如果您有多個訂閱，請選取您要編輯之訂閱的名稱。
 3. 在 [ **合作夥伴識別碼**] 底下，選取 [ **編輯記錄的夥伴**]。
 4. 在 [ **合作夥伴資訊** ] 頁面上，清除 [ **合作夥伴識別碼** ] 方塊，然後選取 [ **提交**]。
@@ -198,7 +198,7 @@ ms.locfileid: "47324509"
 
 您不能自行移除經銷商關係。
   
-如果您要移除轉銷商關係，[ **刪除** ] 選項會變暗，您必須要求轉銷商合作夥伴遵循下列指示： [移除與合作夥伴的轉銷商關係](https://docs.microsoft.com/partner-center/remove-a-relationship)。
+如果您要移除轉銷商關係，[ **刪除** ] 選項會變暗，您必須要求轉銷商合作夥伴遵循下列指示： [移除與合作夥伴的轉銷商關係](/partner-center/remove-a-relationship)。
 
 ::: moniker-end
 
@@ -206,7 +206,7 @@ ms.locfileid: "47324509"
 
 您不能自行移除經銷商關係。
   
-如果您要移除轉銷商關係，[ **刪除** ] 選項會變暗，您必須要求轉銷商合作夥伴遵循下列指示： [移除與合作夥伴的轉銷商關係](https://docs.microsoft.com/partner-center/remove-a-relationship)。
+如果您要移除轉銷商關係，[ **刪除** ] 選項會變暗，您必須要求轉銷商合作夥伴遵循下列指示： [移除與合作夥伴的轉銷商關係](/partner-center/remove-a-relationship)。
   
 ::: moniker-end
 
@@ -214,7 +214,7 @@ ms.locfileid: "47324509"
 
 您不能自行移除經銷商關係。
   
-您必須要求轉銷商合作夥伴遵循下列指示： [移除與合作夥伴的轉銷商關係](https://docs.microsoft.com/partner-center/remove-a-relationship)。
+您必須要求轉銷商合作夥伴遵循下列指示： [移除與合作夥伴的轉銷商關係](/partner-center/remove-a-relationship)。
   
 ::: moniker-end
 

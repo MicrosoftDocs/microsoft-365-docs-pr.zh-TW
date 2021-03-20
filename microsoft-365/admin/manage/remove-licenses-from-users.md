@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: 瞭解如何從使用者帳戶取消指派授權。
 ms.date: 07/01/2020
-ms.openlocfilehash: 6fb07883fdfd4f4a837890e3e8c4c04b2411772b
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 858daaf0069ecba3e6ff65ce957462764b45c22c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114474"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915191"
 ---
 # <a name="unassign-licenses-from-users"></a>取消指派給使用者的授權
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ ms.locfileid: "50114474"
 ## <a name="before-you-begin"></a>開始之前
 
 - 您必須是全域授權，使用者管理員才能取消指派授權。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../add-users/about-admin-roles.md)。
-- 您可以[使用 Office 365 PowerShell 移除使用者帳戶中的授權](https://docs.microsoft.com/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell)。
+- 您可以[使用 Office 365 PowerShell 移除使用者帳戶中的授權](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)。
 - 您也可以刪除已獲指派授權的 [使用者帳戶](../add-users/delete-a-user.md) ，讓其他使用者可以使用授權。 當您刪除使用者帳戶時，他們的授權會立即可指派給其他人。
 
 ::: moniker range="o365-worldwide"
@@ -139,9 +139,9 @@ ms.locfileid: "50114474"
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>當您移除授權時，使用者的資料會發生什麼事？
 
 - 從使用者移除授權時，與該帳戶相關聯的資料會保留30天。 30天的寬限期過後，便會刪除資料，而且無法復原。
-- 在商務用 OneDrive 中儲存的檔案不會被刪除，除非使用者從 Microsoft 365 系統管理中心中刪除或透過 Active Directory 同步處理移除。 如需詳細資訊，請參閱 [OneDrive 保留和刪除](https://docs.microsoft.com/onedrive/retention-and-deletion)。
-- 移除授權時，使用者的信箱將無法再使用「內容搜尋」或「高級 eDiscovery」等 eDiscovery 工具進行搜尋。 如需詳細資訊，請參閱 [Microsoft 365 中內容搜尋](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes)中的「搜尋中斷連線或已取消授權的信箱」。
-- 如果您有企業訂閱（如 Office 365 企業版 E3），Exchange Online 可讓您使用非使用中的 [信箱](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365)來保留已刪除之使用者帳戶的信箱資料。 如需詳細資訊，請參閱 [在 Exchange Online 中建立及管理非](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)使用中的信箱。
+- 在商務用 OneDrive 中儲存的檔案不會被刪除，除非使用者從 Microsoft 365 系統管理中心中刪除或透過 Active Directory 同步處理移除。 如需詳細資訊，請參閱 [OneDrive 保留和刪除](/onedrive/retention-and-deletion)。
+- 移除授權時，使用者的信箱將無法再使用「內容搜尋」或「高級 eDiscovery」等 eDiscovery 工具進行搜尋。 如需詳細資訊，請參閱 [Microsoft 365 中內容搜尋](../../compliance/content-search.md#searching-disconnected-or-de-licensed-mailboxes)中的「搜尋中斷連線或已取消授權的信箱」。
+- 如果您有企業訂閱（如 Office 365 企業版 E3），Exchange Online 可讓您使用非使用中的 [信箱](../../compliance/inactive-mailboxes-in-office-365.md)來保留已刪除之使用者帳戶的信箱資料。 如需詳細資訊，請參閱 [在 Exchange Online 中建立及管理非](../../compliance/create-and-manage-inactive-mailboxes.md)使用中的信箱。
 - 若要瞭解如何在移除授權後封鎖使用者對 Microsoft 365 資料的存取，以及如何在以後存取資料，請參閱 [移除離職員工](../add-users/remove-former-employee.md)。
 - 如果您移除使用者的授權，但他們仍已安裝 Office 應用程式，他們會在使用 Office app 時，看到 [office 中未授權的產品和啟用錯誤](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) 。
 
@@ -151,6 +151,6 @@ ms.locfileid: "50114474"
 
 ## <a name="related-content"></a>相關內容
 
-[從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md) (文章) \
- (篇文章) \[中指派授權給使用者](assign-licenses-to-users.md)
+[從您的訂閱中移除授權](../../commerce/licenses/buy-licenses.md) (文章) \
+[將授權指派給使用者](assign-licenses-to-users.md) (文章)\
 [瞭解 Microsoft 365 for business 中的訂閱與授權](../../commerce/licenses/subscriptions-and-licenses.md) (文章) 

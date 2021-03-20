@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 深入瞭解一般資料保護法規 (GDPR) 管理未成年人之個人資料的規章。
-ms.openlocfilehash: a738e22a0ac0b995c8e44fcf4cc5a2eb47375be5
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c49ea719bc85166cc8082200eb833273b0ab5835
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306548"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915251"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>對存放區中的增益集進行未成年人和取得
 
@@ -48,7 +48,7 @@ ms.locfileid: "47306548"
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
-|網頁版 Office  <br/> |不適用  <br/> |
+|Office 網頁版  <br/> |N/A  <br/> |
    
  **Outlook**： 
   
@@ -59,23 +59,22 @@ ms.locfileid: "47306548"
 |Office 2016 for Mac  <br/> |16.0.9318.1000  <br/> |
 |iOS 的 Outlook mobile  <br/> |2.75.0  <br/> |
 |適用于 Android 的 Outlook mobile  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |不適用  <br/> |
+|Outlook.com  <br/> |N/A  <br/> |
 
  **Office 2013 需求**
   
 如果啟用 Active Directory 驗證程式庫 (ADAL) ，則 Windows 的 Word、Excel 及 PowerPoint 2013 會支援相同的各處檢查。 規範有兩個選項，如接下來所述。
   
-- **啟用 ADAL**。 本文說明如何啟用 ADAL for Office 2013：搭配 [使用 Microsoft 365 新式驗證與 office 用戶端](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)。<br/>您也需要將登錄機碼設定為啟用 ADAL，如在 [Windows 裝置上啟用 Office 2013 新式驗證](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，您必須安裝下列 Office 2013 的四月更新：
+- **啟用 ADAL**。 本文說明如何啟用 ADAL for Office 2013：搭配 [使用 Microsoft 365 新式驗證與 office 用戶端](../../enterprise/modern-auth-for-office-2013-and-2016.md)。<br/>您也需要將登錄機碼設定為啟用 ADAL，如在 [Windows 裝置上啟用 Office 2013 新式驗證](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，您必須安裝下列 Office 2013 的四月更新：
     
   - [Office 2013 的安全性更新說明：4月10日（2018）](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
   - [2018年4月3日，Office 2013 的更新 (KB4018333) ](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
     
-- **不要啟用 ADAL**。 如果您無法在 Office 2013 中啟用 ADAL，我們建議使用「群組原則」來關閉 Office 用戶端的存放區。 有關如何關閉 Office 相關應用程式設定的資訊位於 [這裡](https://technet.microsoft.com/library/cc178992.aspx)。
+- **不要啟用 ADAL**。 如果您無法在 Office 2013 中啟用 ADAL，我們建議使用「群組原則」來關閉 Office 用戶端的存放區。 有關如何關閉 Office 相關應用程式設定的資訊位於 [這裡](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15))。
 
 ## <a name="related-articles"></a>相關文章
 
-[在系統管理中心部署增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
+[在系統管理中心部署增益集](./manage-deployment-of-add-ins.md)
 
-[在系統管理中心管理增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center)
-    
+[在系統管理中心管理增益集](./manage-addins-in-the-admin-center.md)

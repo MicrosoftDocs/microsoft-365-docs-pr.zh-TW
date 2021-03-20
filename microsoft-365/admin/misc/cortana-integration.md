@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 當您使用有效的工作或學校帳戶登入時，使用者可在 Microsoft 365 體驗中取得使用 Cortana 的雲端協助服務，以符合 Office 365 的企業級隱私權、安全性和合規性承諾。
-ms.openlocfilehash: 72d7eb2e4195e3941c382d96c7e7319b94202707
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 00702724a44cd75bc68e9f7adac7170d81c080fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454358"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914795"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -37,7 +37,7 @@ Cortana，您的個人生產能力 assistant 可提供 AI 的體驗，以節省�
 
 - 與其他 Office 365 服務一致，Cortana enterprise 服務會符合相同的企業級隱私權、安全性和合規性承諾，反映在 [線上服務條款 (OST) ](https://www.microsoft.com/licensing/product-licensing/products)中。
 
-- 新的 Microsoft 365 體驗（如簡報電子郵件和播放我的電子郵件）將使用 Cortana enterprise 服務來啟用，並完全遵守這些承諾。 這些功能目前可供全球通用 (標準多租使用者) 使用。 如需尋找使用位置的詳細資訊，請造訪 [View 的其他屬性值](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts)。
+- 新的 Microsoft 365 體驗（如簡報電子郵件和播放我的電子郵件）將使用 Cortana enterprise 服務來啟用，並完全遵守這些承諾。 這些功能目前可供全球通用 (標準多租使用者) 使用。 如需尋找使用位置的詳細資訊，請造訪 [View 的其他屬性值](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts)。
 
 - 使用者可能會透過使用 Windows 10 (版本2004和更新版本) 中的 Cortana 與用戶端應用程式（例如 iOS 和 Android 的 Outlook）連接到此處所述的 Cortana enterprise 服務，以進行個別授權條款。 
 
@@ -77,9 +77,9 @@ Windows 10 版本2004和更新版本中的 cortana，符合 Cortana enterprise �
 
 系統管理員可以使用 Experience\AllowCortana MDM 原則，或透過群組原則，在 Windows 10 中為其組織設定 Cortana： Computer Configuration\Administrative \Windows 元件 Components\Search\Allow Cortana。
 
-從 Windows 10，版本2004開始，Cortana 是一種通用 Windows 平臺 (UWP) 使用 Windows 安裝的應用程式，並定期透過 Microsoft Store 更新。 若要接收 Cortana 的最新更新，您必須 [透過 Microsoft Store 啟用更新](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store)。
+從 Windows 10，版本2004開始，Cortana 是一種通用 Windows 平臺 (UWP) 使用 Windows 安裝的應用程式，並定期透過 Microsoft Store 更新。 若要接收 Cortana 的最新更新，您必須 [透過 Microsoft Store 啟用更新](/windows/configuration/stop-employees-from-using-microsoft-store)。
 
-[深入瞭解 Windows 10 中的 Cortana](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
+[深入瞭解 Windows 10 中的 Cortana](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
 ### <a name="cortana-voice-assistance-in-teams"></a>小組中的 Cortana 語音協助
 
@@ -101,7 +101,7 @@ Windows 10 版本2004和更新版本中的 cortana，符合 Cortana enterprise �
 
 4. 視您是否要在裝置上的小娜語音協助，將切換移至 [ **開啟** ] 或 [ **關閉**]。
 
-[深入瞭解小組中的 Cortana 語音協助](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
+[深入瞭解小組中的 Cortana 語音協助](/microsoftteams/cortana-in-teams)
 
 ### <a name="conversational-ai-in-outlook-for-ios-with-cortana"></a>使用 Cortana iOS 的 Outlook 中的會話 AI
 
@@ -144,13 +144,13 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 ### <a name="how-to-opt-out-of-briefing-email"></a>如何選擇未用簡報電子郵件
 
-系統管理員可以使用 Exchange Online 中的 [PowerShell](https://docs.microsoft.com/briefing/be-admin) ，設定其組織的簡報。 個人可以在郵件的頁尾選取 [ **取消訂閱** ]，以選擇不使用 Cortana 的簡報電子郵件。
+系統管理員可以使用 Exchange Online 中的 [PowerShell](/briefing/be-admin) ，設定其組織的簡報。 個人可以在郵件的頁尾選取 [ **取消訂閱** ]，以選擇不使用 Cortana 的簡報電子郵件。
 
 [深入瞭解簡報電子郵件](https://support.microsoft.com/help/4558259)
 
 我們將繼續引進與上述類似的經驗，協助您增加組織的生產力。
 
-[深入瞭解 Microsoft 規範服務](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
+[深入瞭解 Microsoft 規範服務](/compliance/regulatory/offering-home)
 
 ## <a name="how-is-the-delivery-of-cortana-enterprise-services-different-from-the-delivery-of-other-cortana-features-i-may-have-previously-experienced"></a>Cortana 企業服務的傳遞與我先前可能經歷的其他 Cortana 功能的傳遞有何不同？
 

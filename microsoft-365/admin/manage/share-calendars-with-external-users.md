@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 瞭解如何讓您的使用者與外部使用者共用會議及約會的行事曆。
-ms.openlocfilehash: 8204dc025f843953af13cba58fa0cf2e4d76de45
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 5fc80965ae277e66dfbf73de80618dec03d26759
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760051"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915047"
 ---
 # <a name="share-calendars-with-external-users"></a>與外部使用者共用行事曆
 
@@ -36,7 +36,7 @@ ms.locfileid: "49760051"
 您可以為組織中的所有使用者啟用「行事曆共用」的 Microsoft 365 系統管理中心。 啟用共用之後，您的使用者就可以使用 Outlook Web App 與組織內部或外部的任何人共用其行事曆。 組織內部的人員可以查看共用的行事曆及其自己的行事曆。 組織外部人員會收到可用來檢視行事曆的 URL。 組織中的使用者決定何時共用和共用多少。
 
 > [!NOTE]
-> 如果您要與使用 Exchange Server 2013 (一種內部部署的解決方案) 的組織共用行事曆，Exchange 系統管理員必須與雲端之間設定驗證關聯。 這稱為同盟，且必須符合最低軟體需求。 請參閱 [共用](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx)，以取得詳細資訊。
+> 如果您要與使用 Exchange Server 2013 (一種內部部署的解決方案) 的組織共用行事曆，Exchange 系統管理員必須與雲端之間設定驗證關聯。 這稱為同盟，且必須符合最低軟體需求。 請參閱 [共用](/exchange/sharing-exchange-2013-help)，以取得詳細資訊。
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 admin center 啟用行事曆共用
 

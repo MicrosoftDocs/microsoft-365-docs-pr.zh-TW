@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: 本文提供管理使用者設定的相關資訊。
-ms.openlocfilehash: ca57d536794ffde4865ec86f34c8dc644ff3c1f1
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: db7a7f01fdd5a6bd657bb04f9aaf4491959e0558
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080000"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915719"
 ---
 # <a name="user-email-settings"></a>使用者電子郵件設定
 
@@ -35,12 +35,12 @@ ms.locfileid: "45080000"
 
 |郵件設定|描述  |
 |---------|---------|
-|信箱權限| [讀取和管理]**** 可讓您設定使用者是否可以讀取及管理其他人的信箱。 您也可以為使用者設定 [傳送為]**** 和 [代理傳送者]**** 權限。 如需詳細資料，請參考[授予信箱的權限給 Microsoft 365 中的另一個使用者 - 系統管理說明](../add-users/give-mailbox-permissions-to-another-user.md)。 |
+|信箱權限| [讀取和管理] 可讓您設定使用者是否可以讀取及管理其他人的信箱。 您也可以為使用者設定 [傳送為] 和 [代理傳送者] 權限。 如需詳細資料，請參考[授予信箱的權限給 Microsoft 365 中的另一個使用者 - 系統管理說明](../add-users/give-mailbox-permissions-to-another-user.md)。 |
 |電子郵件應用程式| [電子郵件應用程式] 可讓您選擇使用者可用來存取 Microsoft 電子郵件的應用程式。 |
 |在全域通訊清單中顯示| [在全域通訊清單中顯示] 可讓您啟用或停用在組織通訊錄中顯示使用者信箱。 |
 |電子郵件轉寄|[電子郵件轉寄] 可讓您新增使用者的轉寄電子郵件地址。 如果該使用者有多個電子郵件地址，並且想要在所有電子郵件地址接收電子郵件，可以這麼做。 如需詳細資訊，請參閱[在 Microsoft 365 中設定電子郵件轉寄](configure-email-forwarding.md)。|
 |自動回覆|[自動回覆] 可讓您設定當某人將電子郵件傳送到使用者的電子郵件地址時，自動回覆。 當員工離開您的公司，而您想通知電子郵件寄件者時，可以這麼做。|
-|其他動作| [轉換成共用信箱]**** 可讓您將使用者信箱轉換為共用信箱。 當員工離開您的公司，但您想要保留其信箱資料一段時間時，可以這麼做。 請參閱[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md)和[開啟及使用共用信箱](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd)。</br>[編輯 Exchange 內容]**** 可讓您使用 Exchange 系統管理中心管理其他 Exchange Online 工作。 請參閱[管理 Exchange Online 中的使用者信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。|
+|其他動作| [轉換成共用信箱] 可讓您將使用者信箱轉換為共用信箱。 當員工離開您的公司，但您想要保留其信箱資料一段時間時，可以這麼做。 請參閱[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md)和[開啟及使用共用信箱](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd)。</br>[編輯 Exchange 內容] 可讓您使用 Exchange 系統管理中心管理其他 Exchange Online 工作。 請參閱[管理 Exchange Online 中的使用者信箱](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。|
 
 > [!NOTE]
 >

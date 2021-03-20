@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。 '
-ms.openlocfilehash: 3ae6d896d5ef060e2f077167f81e2029a3a143ac
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 5607d301ceda44fd582055d49daa9082ee321cb9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114402"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914483"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保護商務用 Microsoft 365 方案的十大方式
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -44,9 +44,9 @@ Microsoft 建議您完成下清單格中所列的工作，以套用至您的服�
 
 ||工作|Microsoft 365 商務標準版|Microsoft 365 商務進階版|
 |---|---|---|---|
-|1 |[設定多重要素驗證](secure-your-business-data.md#setup)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[設定多重要素驗證](secure-your-business-data.md#setup)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2 |[訓練您的使用者](secure-your-business-data.md#train)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|個|[使用專用的系統管理員帳戶](secure-your-business-data.md#admin)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[使用專用的系統管理員帳戶](secure-your-business-data.md#admin)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[提升郵件中惡意程式碼的保護層級](secure-your-business-data.md#malware)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[防範勒索軟體](secure-your-business-data.md#ransomware)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[停止電子郵件的自動轉寄功能](secure-your-business-data.md#forwarding)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -55,7 +55,7 @@ Microsoft 建議您完成下清單格中所列的工作，以套用至您的服�
 |9 |[使用安全附件防範惡意附件和檔案](secure-your-business-data.md#atp)||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10 |[使用安全連結防禦網路釣魚攻擊](secure-your-business-data.md#phishingatp)||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-開始之前，請先在 Microsoft 365 安全性中心檢查您的 [microsoft 365 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) 。 您可以從集中式儀表板，監視及提高 Microsoft 365 身分識別、資料、應用程式、裝置和基礎結構的安全性。 您可以在設定建議的安全性功能、執行安全性相關工作 (例如查看報告) 或使用協力廠商應用程式或軟體解決建議等方面提供積分。 透過更深入的見解和更深入的 Microsoft 產品和服務集合，您可以自信地報告組織的安全性健康情況。
+開始之前，請先在 Microsoft 365 安全性中心檢查您的 [microsoft 365 安全分數](../../security/mtp/microsoft-secure-score.md) 。 您可以從集中式儀表板，監視及提高 Microsoft 365 身分識別、資料、應用程式、裝置和基礎結構的安全性。 您可以在設定建議的安全性功能、執行安全性相關工作 (例如查看報告) 或使用協力廠商應用程式或軟體解決建議等方面提供積分。 透過更深入的見解和更深入的 Microsoft 產品和服務集合，您可以自信地報告組織的安全性健康情況。
 
 ![Microsoft 安全分數的螢幕擷取畫面](../../media/secure-score.png)
 
@@ -69,7 +69,7 @@ Microsoft 建議您完成下清單格中所列的工作，以套用至您的服�
 
 若要設定多重要素驗證，請開啟安全性預設值：
 
-大部分的組織，安全性預設值皆提供有良好的額外登入安全性。 如需詳細資訊，請參閱[什麼是安全性預設？](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+大部分的組織，安全性預設值皆提供有良好的額外登入安全性。 如需詳細資訊，請參閱[什麼是安全性預設？](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 如果您新訂閱，則系統可能會自動為您開啟安全性預設值。
 
@@ -132,7 +132,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 6. 選取 [ **儲存]。**
 
-如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection)。
+如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](../../security/office-365-security/anti-malware-protection.md)。
 
 ## <a name="5-protect-against-ransomware"></a>5：防禦勒索軟體
 <a name="ransomware"> </a>
@@ -157,7 +157,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 針對每個規則套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 [儲存 **]**。
+6. 選取 [儲存]。
     
 | 設定 | 開啟 Office 檔案的附件之前警告使用者 | 封鎖可能包含勒索代碼或其他惡意程式碼的檔案類型 |
 |:-----|:-----|:-----|
@@ -193,7 +193,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 [儲存 **]**。
+6. 選取 [儲存]。
 
 |設定|拒絕自動轉寄電子郵件至外部網域|
 |---|---|
@@ -254,7 +254,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 
 4. 在 [反網路釣魚] 頁面上，選取 [ **+ 建立**]。 嚮導會啟動以逐步逐步定義您的反網路釣魚原則。
 
-5. 請依照下表中的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) 。
+5. 請依照下表中的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](../../security/office-365-security/set-up-anti-phishing-policies.md) 。
 
 6. 檢查您的設定之後，請選取 [ **建立這個原則** ] 或 [ **儲存**] （視需要）。
 
@@ -270,7 +270,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 |套用對象|請選取 **[收件者的網域是]**。 在 **[任一項]** 底下選取 **[選擇]**。 選取 **[+ 新增]**。 選取功能變數名稱（例如，contoso.com，在清單中）旁的核取方塊，然後選取 [ **新增**]。 選取 **[完成]**。|
 |
 
-如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
+如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](../../security/office-365-security/configure-atp-anti-phishing-policies.md)。
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9：防止惡意附件和檔案使用安全附件
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 |套用對象|收件者網域是。 . . 選取您的網域。|
 |
 
-如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
+如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](../../security/office-365-security/configure-atp-anti-phishing-policies.md)。
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10：防禦安全連結的網路釣魚攻擊
 <a name="phishingatp"> </a>
@@ -331,7 +331,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 
 3. 在 [ **電子郵件除外，套用至內容**] 底下，選取 [ **Office 365 應用程式**]， **當使用者按一下 [安全連結] 時請勿追蹤**，而且不要 **讓使用者按一下 [指向原始 URL 的安全連結**]。
 
-4. 選取 [儲存 **]**。
+4. 選取 [儲存]。
 
 若要建立新的原則針對您網域中的所有收件者：
 
@@ -339,7 +339,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 
 2. 套用下表所列的設定。
 
-3. 選取 [儲存 **]**。
+3. 選取 [儲存]。
 
 |設定或選項|建議的設定|
 |---|---|
@@ -349,4 +349,4 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 |套用對象|收件者網域是。 . . 選取您的網域。|
 |
 
-如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的安全連結](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)。
+如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的安全連結](../../security/office-365-security/atp-safe-links.md)。

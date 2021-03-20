@@ -1,5 +1,5 @@
 ---
-title: 管理及監視優先順序帳戶
+title: 管理和監視優先帳戶
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -13,23 +13,23 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: 監視寄件者或寄件者對具有高業務影響之帳戶的失敗及延遲的電子郵件。
-ms.openlocfilehash: dbdd692a41d341564376960788054e70623daf5a
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: b31cbf79b5b1b8f882c4c7bc8926779410baefe3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233359"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914051"
 ---
-# <a name="manage-and-monitor-priority-accounts"></a>管理及監視優先順序帳戶
+# <a name="manage-and-monitor-priority-accounts"></a>管理和監視優先帳戶
 
 在每個 Microsoft 365 組織中，有重要的人員，也就是主管、領導者、主管或其他具有敏感、專有或高優先順序資訊存取權的使用者。
 
 為了協助您的組織保護這些帳戶，您現在可以將特定使用者指定為優先順序帳戶，並利用可提供額外保護的應用程式特定功能。 在未來，其他應用程式和功能將支援優先順序帳戶，若要開始，我們已宣告兩項功能： **優先順序帳戶保護** 和 **優質郵件流程監控**。
 
-- **優先順序帳戶保護** -Microsoft Defender for office 365 (過去是 office 365 的「高級威脅防護」) 支援優先順序帳戶，作為可在警示、報告和調查篩選中使用的標記。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的使用者標記](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags)。
-- **優質郵件流程監控** -狀況良好的郵件流程對商務成功來說可能很重要，且傳遞延遲或失敗可能對業務造成負面影響。 您可以針對失敗或延遲的電子郵件選擇臨界值，當超過該臨界值時接收通知，然後查看優先順序帳戶的電子郵件問題報告。 如需詳細資訊，請參閱 [新式 EAC 中優先順序帳戶報告的電子郵件問題](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
+- **優先順序帳戶保護** -Microsoft Defender for office 365 (過去是 office 365 的「高級威脅防護」) 支援優先順序帳戶，作為可在警示、報告和調查篩選中使用的標記。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的使用者標記](../../security/office-365-security/user-tags.md)。
+- **優質郵件流程監控** -狀況良好的郵件流程對商務成功來說可能很重要，且傳遞延遲或失敗可能對業務造成負面影響。 您可以針對失敗或延遲的電子郵件選擇臨界值，當超過該臨界值時接收通知，然後查看優先順序帳戶的電子郵件問題報告。 如需詳細資訊，請參閱 [新式 EAC 中優先順序帳戶報告的電子郵件問題](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-如需優先順序帳戶的安全性最佳作法，請參閱 [優先順序帳戶的安全性建議](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts)。
+如需優先順序帳戶的安全性最佳作法，請參閱 [優先順序帳戶的安全性建議](../../security/office-365-security/security-recommendations-for-priority-accounts.md)。
 
 ## <a name="before-you-begin"></a>開始之前
 

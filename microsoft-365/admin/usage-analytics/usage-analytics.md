@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: d7e9e6cf945134df54221bb8a03ef83d1a8851cc
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 5120e487604fbaf4421c1b2f814cd57e79d5f9dc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841384"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913811"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
 
@@ -60,7 +60,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 - **通訊** &ndash; 您可以立即查看組織中的人員是否喜歡使用團隊、Yammer、電子郵件或 Skype 通話保持聯繫。 您可以觀察您的員工在使用通訊工具時，是否有變化的模式。 
 
-- 共同作業 **Collaboration** &ndash;請參閱貴組織中的人員如何使用 OneDrive 和 SharePoint 來儲存檔，以及彼此共同作業，以及這些趨勢如何隨月演變。 您也可以查看內部或外部共用的檔數量，以及正在使用的 SharePoint 網站或 OneDrive 帳戶數目，由擁有者及其他合作者分割。
+- 共同作業 &ndash;請參閱貴組織中的人員如何使用 OneDrive 和 SharePoint 來儲存檔，以及彼此共同作業，以及這些趨勢如何隨月演變。 您也可以查看內部或外部共用的檔數量，以及正在使用的 SharePoint 網站或 OneDrive 帳戶數目，由擁有者及其他合作者分割。
 
 - **儲存空間** &ndash; 使用此報告可追蹤信箱、OneDrive 和 SharePoint 網站的雲端儲存空間。
 
@@ -86,13 +86,13 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>這個範本應用程式是否可透過購買取得，或是是免費的？
 
-這不是免費的，您將需要 Power BI Pro 授權。 如需詳細資訊，請參閱安裝、自訂及發佈範本應用程式的 [必要條件](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute#prerequisites) 。
+這不是免費的，您將需要 Power BI Pro 授權。 如需詳細資訊，請參閱安裝、自訂及發佈範本應用程式的 [必要條件](/power-bi/service-template-apps-install-distribute#prerequisites) 。
 
-若要與其他人共用儀表板，請參閱 [共用儀表板和報告](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)。
+若要與其他人共用儀表板，請參閱 [共用儀表板和報告](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)。
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>誰可以連線到 Microsoft 365 使用情況分析？
 
-您必須是 **全域系統管理員** 、Exchange 系統 **管理員** 、 **商務用 Skype** 系統管理員、 **SharePoint 系統管理員** 、 **全域讀取器** 或 **報告讀取器** ，才能建立與範本應用程式的連線。 如需詳細資訊，請參閱 [關於系統管理員角色](../add-users/about-admin-roles.md) 。
+您必須是 **全域系統管理員**、Exchange 系統 **管理員**、 **商務用 Skype** 系統管理員、 **SharePoint 系統管理員**、 **全域讀取器** 或 **報告讀取器** ，才能建立與範本應用程式的連線。 如需詳細資訊，請參閱 [關於系統管理員角色](../add-users/about-admin-roles.md) 。
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>誰可以自訂使用方式分析報告？
 
@@ -108,7 +108,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>誰可以查看儀表板和報告？
 
-如果您已連線至範本應用程式，您可以使用 [共用功能](https://go.microsoft.com/fwlink/p/?linkid=845494)與任何人共用。 Power BI 授權要求共用儀表板的使用者共用和使用者皆具有 Power BI Pro 或 Power BI Premium。
+如果您已連線至範本應用程式，您可以使用 [共用功能](/power-bi/collaborate-share/service-share-dashboards)與任何人共用。 Power BI 授權要求共用儀表板的使用者共用和使用者皆具有 Power BI Pro 或 Power BI Premium。
 
 ### <a name="can-anyone-share-the-dashboard-or-does-it-have-to-be-the-person-who-connected-to-the-dashboard"></a>是否任何人都可以共用儀表板，或者必須是已連線到儀表板的人員？
 
@@ -116,7 +116,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>是否可以使用和自訂使用者群組的相同範本應用程式？
 
-是。 若要讓系統管理員群組能夠在相同的範本應用程式上共同作業，您可以利用 Power BI 的應用程式工作區功能，如需詳細資訊，請參閱 [我應該如何共同作業及共用儀表板和報告？](https://go.microsoft.com/fwlink/p/?linkid=851070) 
+是。 若要讓系統管理員群組能夠在相同的範本應用程式上共同作業，您可以利用 Power BI 的應用程式工作區功能，如需詳細資訊，請參閱 [我應該如何共同作業及共用儀表板和報告？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>可提供哪個時間範圍內的資料？
 

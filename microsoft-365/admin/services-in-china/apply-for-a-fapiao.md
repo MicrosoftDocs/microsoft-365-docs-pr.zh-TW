@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: 瞭解如何將發票要求提交給世紀發票管理系統，然後再將其付款于中國由世紀運作的 Office 365。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7145b4c223e7cb9347d38d6399fc8a3338651d42
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 681d2d79c510c773d7597c62811256458e3d166d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114366"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914471"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>適用于由世紀運作的 Office 365 發票
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 您可以將您的發票要求提交至世紀發票管理系統，大約在您支付後三天。 在您提交發票要求之後，它會在兩天內處理。
   
@@ -43,7 +43,7 @@ ms.locfileid: "50114366"
   
 1. 在由世紀運作的 Office 365 中支付款項後，您將會收到訂單確認電子郵件，其中包含您的訂單號碼和發票管理系統的連結。 您可以使用電子郵件中的連結，在 [ <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世紀發票資訊管理系統</a>] 中建立帳戶。
 
-    或
+    或者
 
 2. 您可以從系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>申請發票。
 

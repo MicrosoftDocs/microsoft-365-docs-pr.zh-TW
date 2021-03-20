@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 瞭解如何驗證您的電子郵件和網域擁有權，以在 Microsoft 365 中接管未受管理的租使用者
-ms.openlocfilehash: 28359908576260218459d13b8c1c1b662b9a2c8f
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658060"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914843"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>執行內部系統管理員接管
 
@@ -34,7 +34,7 @@ ms.locfileid: "49658060"
 如果您是系統管理員，而且想要接管自助使用者註冊所建立的非管理租使用者，您可以使用內部系統管理員接管。
 
 > [!NOTE]
-> 使用 Azure AD 的任何雲端服務註冊的自助服務，會將使用者新增至未受管理或「陰影」 Azure AD 目錄，並建立未受管理的租使用者。 未受管理的租使用者是沒有全域管理員的目錄。 若要判斷承租人是否受管理或未受管理，請參閱 [決定租使用者類型](https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type)。 
+> 使用 Azure AD 的任何雲端服務註冊的自助服務，會將使用者新增至未受管理或「陰影」 Azure AD 目錄，並建立未受管理的租使用者。 未受管理的租使用者是沒有全域管理員的目錄。 若要判斷承租人是否受管理或未受管理，請參閱 [決定租使用者類型](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type)。 
   
 ## <a name="step-1-verify-your-email-address"></a>步驟1：確認您的電子郵件地址
 
@@ -70,9 +70,8 @@ ms.locfileid: "49658060"
 
 YouTube：對 [POWER BI 和 Microsoft 365 執行 IT 系統管理員的3個步驟](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
-[Azure AD 中的系統管理接管](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Azure AD 中的系統管理接管](/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
 [在組織中使用自助式註冊](self-service-sign-up.md)
   
-[瞭解 Power BI 服務系統管理員角色](https://docs.microsoft.com/power-bi/service-admin-role)
-
+[瞭解 Power BI 服務系統管理員角色](/power-bi/service-admin-role)

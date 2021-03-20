@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生產力分數概觀。
-ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838422"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914579"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生產力分數 
 
@@ -44,7 +44,7 @@ ms.locfileid: "50838422"
 
 - **技術體驗**：組織仰賴可靠和性能良好的技術，以及 Microsoft 365 的有效使用。 [端點分析](https://aka.ms/endpointanalytics)：協助您了解組織如何受硬體與軟體的效能和健康情況問題影響。 Microsoft 365 應用程式健康情況可協助您了解組織中的裝置是否正在建議通道上執行 Microsoft 365 應用程式。
 
-有關概觀和先決條件的詳細資料​​，請參閱[什麼是端點分析](https://docs.microsoft.com/mem/analytics/overview)。 若要深入了解 Microsoft 365 網路連線能力深入解析，請參閱[網路連線能力概觀](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)。
+有關概觀和先決條件的詳細資料​​，請參閱[什麼是端點分析](/mem/analytics/overview)。 若要深入了解 Microsoft 365 網路連線能力深入解析，請參閱[網路連線能力概觀](../../enterprise/microsoft-365-networking-overview.md)。
   
 
 ## <a name="how-the-score-is-calculated"></a>如何計算分數
@@ -74,7 +74,8 @@ ms.locfileid: "50838422"
 
 ## <a name="prerequisites"></a>必要條件 
 
-關於人員體驗資料，您需要商務用 Microsoft 365 或Office 365 企業版訂閱。 關於租用戶的端點分析資料，您需要將 Microsoft Intune 增加到您的訂閱中。 Intune 經由管理裝置和應用程式來協助您保護組織的資料。 擁有 Intune 之後，您可以在 Intune 體驗中開啟端點分析。 深入了解 [Microsoft Intune](https://docs.microsoft.com/mem/intune/)。 
+關於人員體驗資料，您需要商務用 Microsoft 365 或Office 365 企業版訂閱。 關於租用戶的端點分析資料，您需要將 Microsoft Intune 增加到您的訂閱中。 Intune 經由管理裝置和應用程式來協助您保護組織的資料。 擁有 Intune 之後，您可以在 Intune 體驗中開啟端點分析。 深入了解 [Microsoft Intune](/mem/intune/)。 
+
 > [!NOTE]
 > 不需 [工作場所分析] 的授權，即可取得 [生產力分數] 功能。
 
@@ -129,7 +130,7 @@ Microsoft 致力於保護個人隱私。 這份[隱私權文件](privacy.md)說�
 - [行動性 – 人員體驗](mobility.md)
 - [團隊工作 – 人員體驗](teamwork.md)
 - [Microsoft 365 應用程式健康情況 – 科技體驗](apps-health.md)
-- [端點分析](https://docs.microsoft.com/mem/analytics/productivity-score)
+- [端點分析](/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>商務持續性特殊報告
 
@@ -143,12 +144,12 @@ Microsoft 致力於保護個人隱私。 這份[隱私權文件](privacy.md)說�
 
 - 遠端會議是否支援有效的決策。
 
-[深入了解商務持續性報告](https://aka.ms/bcrps)
+[深入了解商務持續性報告](/Workplace-Analytics/tutorials/bcrps)
 
-[深入了解 Microsoft Graph](https://docs.microsoft.com/graph/)
+[深入了解 Microsoft Graph](/graph/)
 
 > [!NOTE]
-> 使用者也可以選擇從 [MyAnalytics 儀表板[]](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2) 取得生產力的深入解析。
+> 使用者也可以選擇從 [MyAnalytics 儀表板[]](/workplace-analytics/myanalytics/use/dashboard-2) 取得生產力的深入解析。
 
 
 ## <a name="we-want-to-hear-from-you"></a>我們想知道您的想法

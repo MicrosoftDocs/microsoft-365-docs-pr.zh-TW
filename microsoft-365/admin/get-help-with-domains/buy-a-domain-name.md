@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 瞭解如何在 Microsoft 365 中購買功能變數名稱。
-ms.openlocfilehash: d7215db61577968bb2b21f708bda9d42acd7e675
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 24c6ac017cf25e1a40148e7a2c982e9d1068664b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126390"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915671"
 ---
 # <a name="buy-a-domain-name"></a>購買網域名稱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -129,4 +129,4 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 [網域常見問題集](../setup/domains-faq.yml)
 
-[更新 DNS 記錄以將您的網站保留在目前的主機服務提供者](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)。
+[更新 DNS 記錄以將您的網站保留在目前的主機服務提供者](../dns/update-dns-records-to-retain-current-hosting-provider.md)。

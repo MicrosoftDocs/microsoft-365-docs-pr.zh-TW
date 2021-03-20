@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '瞭解如何將私人信箱轉換為可供多位使用者存取的共用信箱。 '
-ms.openlocfilehash: f716bbd16be9f67189b19358ddf16a289f57f8e7
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.openlocfilehash: d5b33731908d2d555a8dd12d5d7fbbd462bd83ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49737962"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915863"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>將使用者信箱轉換為共用信箱
 
@@ -96,7 +96,7 @@ ms.locfileid: "49737962"
 如需將使用者信箱轉換成 Exchange 混合式環境中共用信箱的詳細資訊，請參閱：
 
  - [在內部部署 Exchange 環境中建立或修改遠端共用信箱的 Cmdlet](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [在 Exchange 混合式部署中執行目錄同步作業後，共用信箱意外轉換為使用者信箱](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [在 Exchange 混合式部署中執行目錄同步作業後，共用信箱意外轉換為使用者信箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]

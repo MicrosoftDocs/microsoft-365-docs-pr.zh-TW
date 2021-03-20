@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 深入瞭解 Power BI，以及組織中的使用者可以如何使用此商務 analytics 服務。
-ms.openlocfilehash: e549ff25b7db41d6a582b4af0506d67787df7e0d
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: c2f07c4e1e6da814eb31186ba0c132021479ad4a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906582"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914699"
 ---
 # <a name="power-bi-in-your-organization"></a>貴組織中的 Power BI
 
@@ -103,7 +103,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 
     ![已反白顯示系統管理應用程式的應用程式啟動器](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
-5. 閱讀 [ **成為系統管理** ] 頁面上的指示，然後選取 **[是，我要成為系統管理員]** 。
+5. 閱讀 [ **成為系統管理** ] 頁面上的指示，然後選取 **[是，我要成為系統管理員]**。
 
     > [!NOTE]
     >  如果未顯示此選項，則表示已有系統管理員。
@@ -120,19 +120,19 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 > 沒有任何支援的自動化機制，可讓使用者在租用戶建立之後於其間移動。 若要瞭解如何將網域新增至單一 Microsoft 365 租使用者，請參閱 [Add a domain To Office 365](../setup/add-domain.md)。
 
 > [!IMPORTANT]
-> 如需有關管理承租人的詳細資訊和指導方針，請參閱 [何謂 POWER BI administration？](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization)。
+> 如需有關管理承租人的詳細資訊和指導方針，請參閱 [何謂 POWER BI administration？](/power-bi/service-admin-administering-power-bi-in-your-organization)。
   
 ## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>如何防止使用者加入我的現有租使用者？
 
 您可以做為系統管理員採取的步驟，以避免使用者加入您的現有租使用者。 如果您禁止使用者加入租使用者，則使用者的登入嘗試會失敗，並會導向他們聯繫其組織的系統管理員。如果您已在 (之前停用自動授權發佈，則不需要重複此程式（例如，Office 365 教育版學生、教職員和員工) ）。
   
-執行這些步驟必須使用 Windows PowerShell。 若要開始使用 Windows PowerShell，請參閱 [PowerShell 快速入門指南](https://go.microsoft.com/fwlink/p/?LinkID=286814)。
+執行這些步驟必須使用 Windows PowerShell。 若要開始使用 Windows PowerShell，請參閱 [PowerShell 快速入門指南](/powershell/scripting/overview)。
   
 若要執行下列步驟，您必須安裝最新的64位版本的 [Azure Active Directory V2 PowerShell Module](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)。
   
 選取連結後，請選取 [ **執行** ] 以執行安裝程式套件。
   
-**停用自動租用戶加入** ：使用這個 Windows PowerShell 命令可防止新使用者加入受管理的租用戶：
+**停用自動租用戶加入**：使用這個 Windows PowerShell 命令可防止新使用者加入受管理的租用戶：
   
 停用新使用者的自動租用戶加入： `Set-MsolCompanySettings -AllowEmailVerifiedUsers $false`
   
@@ -176,7 +176,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 
 3. 在 [ **授權與應用程式** ] 索引標籤上，清除 [ **Microsoft Power BI** ] 核取方塊。
 
-4. 選取 **[儲存變更]** 。
+4. 選取 **[儲存變更]**。
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 
 2. 尋找您要移除授權的使用者，然後選取其名稱。
 
-3. 在 [ **產品授權** ] 旁，選取 [ **編輯** ]。
+3. 在 [ **產品授權**] 旁，選取 [ **編輯**]。
 
 4. 開啟 [ **Microsoft POWER BI** ] 選項。
 
@@ -200,7 +200,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 
 2. 尋找您要移除授權的使用者，然後選取其名稱。
 
-3. 在 [ **產品授權** ] 旁，選取 [ **編輯** ]。
+3. 在 [ **產品授權**] 旁，選取 [ **編輯**]。
 
 4. 開啟 [ **Microsoft POWER BI** ] 選項。
 
@@ -212,7 +212,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 
 已在本方案中加入您租用戶的使用者，會獲得專屬授權的指派，您可以在管理員儀表板的 [作用中的使用者] 窗格內篩選這項授權。
   
-若要建立這個新的視圖，請在系統管理中心，依照 [ [建立自訂使用者視圖](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view)] 中的步驟進行。 在 [ **已指派產品授權** ] 底下，選取 [ **Microsoft Power BI** ]。 在建立新的視圖後，您就可以看到您租使用者中已註冊此程式的所有使用者。
+若要建立這個新的視圖，請在系統管理中心，依照 [ [建立自訂使用者視圖](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view)] 中的步驟進行。 在 [ **已指派產品授權**] 底下，選取 [ **Microsoft Power BI**]。 在建立新的視圖後，您就可以看到您租使用者中已註冊此程式的所有使用者。
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>我還需要準備其他任何事項嗎？
 

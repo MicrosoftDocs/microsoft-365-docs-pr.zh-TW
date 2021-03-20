@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 瞭解如何管理電子郵件簽名，包括輸入或離開組織之所有電子郵件的法律免責聲明或披露聲明。
-ms.openlocfilehash: c8d63a11a75b9b53de9cabdf1f4baabc61cc3e42
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b599ef8b6d0bb236b6111bae86c92409601e00d0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926915"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914231"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽名和免責聲明
 
@@ -80,14 +80,14 @@ ms.locfileid: "49926915"
 6. 在 [套用 **此規則**] 底下，選取 **[套用到所有郵件]**。
     
     > [!TIP]
-    > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)您不想將免責聲明套用至所有郵件時的套用條件。  (此範圍的文章適用于 Exchange Server，但也適用于 Microsoft 365。 )  
+    > [深入了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)您不想將免責聲明套用至所有郵件時的套用條件。  (此範圍的文章適用于 Exchange Server，但也適用于 Microsoft 365。 )  
   
 7. 在 [執行下列作業] 底下，保留 **[附加免責聲明** ] 選取狀態。 
     
 8.  選取 [ **輸入文字** ]，然後輸入免責聲明。 
     
     > [!TIP]
-    > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何設定免責聲明格式。  (此格式化文章適用于 Exchange Server，但也適用于 Microsoft 365。 )  
+    > [深入了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何設定免責聲明格式。  (此格式化文章適用于 Exchange Server，但也適用于 Microsoft 365。 )  
 
 9. 選取 [ **選取其中一項** ]，然後選擇 [ **包裝** 為回退] 選項。 然後按一下 **[確定]**。 這表示，該免責聲明如果因為加密或其他郵件設定而無法新增，系統會將它包裝在郵件信封中。
     
@@ -115,4 +115,4 @@ ms.locfileid: "49926915"
   
 ## <a name="more-resources"></a>其他資源
 
-- 如需使用 PowerShell 的詳細資訊，請參閱 [整個組織郵件免責聲明、簽章、頁尾或 Exchange Online 中的標頭](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) 。
+- 如需使用 PowerShell 的詳細資訊，請參閱 [整個組織郵件免責聲明、簽章、頁尾或 Exchange Online 中的標頭](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) 。

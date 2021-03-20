@@ -22,24 +22,24 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 瞭解如何在 Microsoft 365 系統管理中心中，設定新產品及功能更新的發行選項。
-ms.openlocfilehash: 99a2660af9d8756bf4faf1cf3eddfe142a7c87bf
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: f500aac89495c55d27fc4afb699254653786422d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114486"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915203"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>設定標準或目標發行選項
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
 > [!IMPORTANT]
-> 本文所述的 Microsoft 365 更新適用于 Microsoft 365、SharePoint Online 和 Exchange Online。 這些版本選項是針對目標的，將變更發佈至 Microsoft 365 的最佳操作方式，但在任何時間或所有更新皆無法保證。 它們不適用於 Microsoft 365 應用程式、商務用 Skype、Microsoft 小組和相關的服務。 如需 Microsoft 365 應用程式之版本選項的詳細資訊，請參閱 [microsoft 365 應用程式的更新通道概述](https://docs.microsoft.com/deployoffice/overview-update-channels)。
+> 本文所述的 Microsoft 365 更新適用于 Microsoft 365、SharePoint Online 和 Exchange Online。 這些版本選項是針對目標的，將變更發佈至 Microsoft 365 的最佳操作方式，但在任何時間或所有更新皆無法保證。 它們不適用於 Microsoft 365 應用程式、商務用 Skype、Microsoft 小組和相關的服務。 如需 Microsoft 365 應用程式之版本選項的詳細資訊，請參閱 [microsoft 365 應用程式的更新通道概述](/deployoffice/overview-update-channels)。
 
 使用 Microsoft 365 時，您會在新的產品更新及功能可供使用時收到，而不是每隔幾年執行昂貴的更新。 您可以管理組織收到這些更新的方式。 例如，您可以註冊以在早期取得發行的更新，讓您的組織率先收到更新。 您可以指定僅特定人員收到這些更新。 或者，您可以維持預設的發行排程，於稍後收到更新。 本文說明不同的發行選項，以及您可以如何將它們用於您的組織。
 
@@ -52,7 +52,7 @@ ms.locfileid: "50114486"
 對於重要的更新，客戶最初是由 [Microsoft 365 藍圖](https://products.office.com/business/office-365-roadmap)通知。 隨著更新變得更接近，它會透過您的 [Microsoft 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)進行傳遞。
 
 > [!NOTE]
-> 您必須使用 Microsoft 365 或 Azure AD 帳戶，透過系統 [管理中心](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)存取您的郵件中心。 Microsoft 365 家用方案使用者沒有系統管理員中心。
+> 您必須使用 Microsoft 365 或 Azure AD 帳戶，透過系統 [管理中心](/office365/admin/admin-overview/about-the-admin-center)存取您的郵件中心。 Microsoft 365 家用方案使用者沒有系統管理員中心。
 
 
 ## <a name="standard-release"></a>標準發行
@@ -116,4 +116,4 @@ ms.locfileid: "50114486"
   
 ## <a name="learn-more"></a>深入了解
 
-探索如何在[microsoft 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)[管理郵件](https://docs.microsoft.com/office365/admin/manage/message-center)，以取得即將推出之 microsoft 365 更新及發行的通知。
+探索如何在[microsoft 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)[管理郵件](/office365/admin/manage/message-center)，以取得即將推出之 microsoft 365 更新及發行的通知。

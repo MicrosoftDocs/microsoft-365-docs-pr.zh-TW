@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 預定常見問題。
-ms.openlocfilehash: a293bf86225731917068712c2887ea79c2540039
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: c7bf14c35626eeeec781f6a9f45769e0ead1730e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454286"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913823"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 預定常見問題
 
@@ -184,7 +184,7 @@ Microsoft 365 商務版、Microsoft 365 Business Standard、A3、A5、E3、E5 �
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>電子郵件通知是否可以以租使用者功能變數名稱形式傳送？
 
-電子郵件地址是在 Microsoft 365 設定層級加以控制和管理，視您的網域設定設定而定。 您可以在 [這裡](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)找到詳細資訊。
+電子郵件地址是在 Microsoft 365 設定層級加以控制和管理，視您的網域設定設定而定。 您可以在 [這裡](/powershell/module/exchange/get-accepteddomain)找到詳細資訊。
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>是否能夠根據不同的服務或特定設定傳送短信訊息？
 
@@ -218,7 +218,7 @@ Microsoft 365 商務版、Microsoft 365 Business Standard、A3、A5、E3、E5 �
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>預定的行事曆是否可以複製或重複，是否可以 templatized 以方便擴充？
 
-處理常式是使用圖形 API 來取得信箱詳細資料，然後使用這些詳細資料來建立新的信箱。 API 檔位於 [這裡](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
+處理常式是使用圖形 API 來取得信箱詳細資料，然後使用這些詳細資料來建立新的信箱。 API 檔位於 [這裡](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
 
 ### <a name="what-reporting-is-available-in-bookings"></a>哪些報表可用於預定？
 
@@ -360,19 +360,19 @@ GDPR 合規性已存在此功能。 「預約」頁面具有「自訂同意」�
 
   - [開啟或關閉 Microsoft Bookings](turn-bookings-on-or-off.md)
 
-  - [個別或大量新增使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
+  - [個別或大量新增使用者](../admin/add-users/add-users.md?view=o365-worldwide.)
 
   - [向 Bookings 新增員工](add-staff.md)
 
-  - [定義範本後要自動化的 API 元件](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
+  - [定義範本後要自動化的 API 元件](/graph/api/bookingbusiness-post-bookingbusinesses)
 
   - [顯示之預定行事曆的 URL](https://outlook.office.com/bookings/calendar)
 
-  - [預定符合性原則](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?view=o365-worldwide#bookings)
+  - [預定符合性原則](/compliance/regulatory/gdpr-dsr-Office365?view=o365-worldwide#bookings)
 
   - [定制並發佈您的預約頁面](customize-booking-page.md)
 
-  - [租使用者信箱設定](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
+  - [租使用者信箱設定](/powershell/module/exchange/get-accepteddomain)
 
   - [群組預訂](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

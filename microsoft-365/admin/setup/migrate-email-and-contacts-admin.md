@@ -28,12 +28,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 瞭解如何從 Gmail 或其他電子郵件提供者匯入連絡人、行事曆和電子郵件，並將其遷移至 Microsoft 365。
-ms.openlocfilehash: eb82711bc8fb431c6e29272b601b898566446f02
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 91c8177322e8ebc1e1530675d92d60e96cc73adb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906378"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914099"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>將電子郵件和連絡人移轉到 Microsoft 365
 
@@ -69,7 +69,7 @@ ms.locfileid: "48906378"
     
 2. [匯入連絡人至 Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-若要啟動此程式，請開啟 Outlook， **然後選擇 [** 檔案開啟匯出] [匯 \> **&amp;** \> **入/匯出** ]。
+若要啟動此程式，請開啟 Outlook， **然後選擇 [** 檔案開啟匯出] [匯 \> **&amp;** \> **入/匯出**]。
   
 ![Outlook 2016 中的 [檔案] 功能表](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![&amp;在 Outlook 2016 中開啟匯出命令](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 中的匯入/匯出按鈕](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
@@ -81,7 +81,7 @@ ms.locfileid: "48906378"
 
 將帳戶（如私人 Gmail 帳戶）新增至 Outlook。
   
-- 開啟 Outlook，然後 **移至 [** 檔案] [ \> **新增帳戶** ]。
+- 開啟 Outlook，然後 **移至 [** 檔案] [ \> **新增帳戶**]。
     
 需要更詳細的步驟嗎？ 請參閱 [新增帳戶](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)。
   
@@ -89,4 +89,4 @@ ms.locfileid: "48906378"
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>多個信箱：系統管理員可以大量將電子郵件、連絡人及行事曆匯入 Microsoft 365
 
-視您的來源電子郵件系統而定，您可以選擇數種大量遷移方法。 將 [多個電子郵件帳戶遷移至 Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration) 的閱讀方式，以決定哪種方法適用于您。
+視您的來源電子郵件系統而定，您可以選擇數種大量遷移方法。 將 [多個電子郵件帳戶遷移至 Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) 的閱讀方式，以決定哪種方法適用于您。

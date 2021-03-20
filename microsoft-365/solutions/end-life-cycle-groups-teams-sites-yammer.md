@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 群組、小組和 Yammer 的生命週期選項結束。
-ms.openlocfilehash: 31383287f3288cbab68d6e249f98210dec62af2f
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 405d87c645118cf0ef318d4d68802d17da8c5673
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681707"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916127"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>群組、小組和 Yammer 的生命週期選項結束
 
@@ -33,11 +33,11 @@ Microsoft 365 群組和 Microsoft 團隊使用各種相連的服務。 刪除群
 |服務|內容類型|
 |:------|:---------------|
 |Teams|通道交談，通道中的檔案|
-|Forms|調查架構和結果|
+|表單|調查架構和結果|
 |OneNote|筆記本|
 |Outlook|郵件和行事曆|
 |Planner|專案狀態與任務資訊|
-|自動功耗|工作流程|
+|自動功耗|Workflows|
 |Power BI|資料、報表及儀表板|
 |網頁上的專案|專案計劃|
 |藍圖|藍圖|
@@ -83,7 +83,7 @@ Microsoft 365 群組和 Microsoft 團隊使用各種相連的服務。 刪除群
 
 ### <a name="archiving-a-team"></a>封存小組
 
-封存 [小組](https://docs.microsoft.com/microsoftteams/archive-or-delete-a-team) 的好處是，它會提供小組的完整存取權，這樣使用者仍可流覽通道交談，也可在未使用的情況下開啟檔案。 此外，如果需要繼續處理，小組也可以 unarchived (例如在專案延伸) 中的情況。
+封存 [小組](/microsoftteams/archive-or-delete-a-team) 的好處是，它會提供小組的完整存取權，這樣使用者仍可流覽通道交談，也可在未使用的情況下開啟檔案。 此外，如果需要繼續處理，小組也可以 unarchived (例如在專案延伸) 中的情況。
 
 當團隊以擁有者的方式封存時，會針對小組中的內容以及所選的 SharePoint 網站，將其設為唯讀的成員。 此項動作的目標是確保通道中的交談會以現有的狀態保留，以及檔案和 wiki 等 SharePoint 型內容。
 
@@ -101,7 +101,7 @@ Microsoft 365 群組和 Microsoft 團隊使用各種相連的服務。 刪除群
 - 影片仍可在資料流程中上傳、修改和刪除
 - 仍可建立、修改和刪除流量，但會繼續執行 (但如果需要將郵件張貼至封存) 小組的通道，也會失敗
 
-## <a name="forms"></a>Forms
+## <a name="forms"></a>表單
 
 雖然表單可以從個別帳戶移至群組，但無法將它移動或複製到另一個群組。 當小組已刪除時，表單有三個可用選項。
 
@@ -187,11 +187,11 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，如其他工�
 
 **將報表複製到另一個工作區**
 
-如果報表需要在群組或小組的生命週期內保留其功能狀態，則可以 [從現有的工作區將它複製到 POWER BI 中的另一個工作區](https://docs.microsoft.com/power-bi/connect-data/service-datasets-copy-reports)。
+如果報表需要在群組或小組的生命週期內保留其功能狀態，則可以 [從現有的工作區將它複製到 POWER BI 中的另一個工作區](/power-bi/connect-data/service-datasets-copy-reports)。
 
 **從儀表板或報表匯出資料**
 
-或者，如果報表不再需要使用中，但資料必須保留，則可以 [匯出至 Excel](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data)。
+或者，如果報表不再需要使用中，但資料必須保留，則可以 [匯出至 Excel](/power-bi/visuals/power-bi-visualization-export-data)。
 
 ## <a name="project"></a>Project
 
@@ -199,11 +199,11 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，如其他工�
 
 **將專案指派給另一個群組**
 
-如果專案需要在群組或小組的生命週期內保留其功能狀態，則可以使用 Dynamics 365 系統管理中心將其 [指派給不同的 Microsoft 365 群組](https://docs.microsoft.com/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) 。
+如果專案需要在群組或小組的生命週期內保留其功能狀態，則可以使用 Dynamics 365 系統管理中心將其 [指派給不同的 Microsoft 365 群組](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) 。
 
 **從專案或藍圖匯出資料**
 
-您可以使用 Dynamics 365 系統管理中心，將 [專案中的使用者資料匯出](https://docs.microsoft.com/project-for-the-web/export-user-data-from-project-for-the-web) 至試算表，或是使用 PowerShell 腳本可以將資料匯出至 project file (。MPP) 和 XML 檔案格式。
+您可以使用 Dynamics 365 系統管理中心，將 [專案中的使用者資料匯出](/project-for-the-web/export-user-data-from-project-for-the-web) 至試算表，或是使用 PowerShell 腳本可以將資料匯出至 project file (。MPP) 和 XML 檔案格式。
 
 ## <a name="sharepoint"></a>SharePoint
 「小組通道」中的所有檔案都會儲存在相關群組 SharePoint 網站的文件庫中。 在某些情況下，檔以外的內容可能會存在於 SharePoint 中，例如清單或頁面。
@@ -241,11 +241,11 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，如其他工�
 
 **新增其他擁有者**
 
-當影片保留在資料流程中時，不論群組刪除為何，原始擁有者可以 [與其他使用者和群組共用影片，甚至將其新增為擁有](https://docs.microsoft.com/stream/portal-edit-video)者。
+當影片保留在資料流程中時，不論群組刪除為何，原始擁有者可以 [與其他使用者和群組共用影片，甚至將其新增為擁有](/stream/portal-edit-video)者。
 
 **下載影片**
 
-在影片不需要保留在資料流程中或必須儲存在其他位置（例如記錄管理系統）的情況下，擁有者可以在 [本機上下載](https://docs.microsoft.com/stream/portal-download-video)
+在影片不需要保留在資料流程中或必須儲存在其他位置（例如記錄管理系統）的情況下，擁有者可以在 [本機上下載](/stream/portal-download-video)
 
 ## <a name="yammer"></a>Yammer
 
@@ -257,4 +257,4 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，如其他工�
 
 **匯出網路資料**
 
-Yammer 網路系統管理員可以執行 [網路資料的匯出](https://docs.microsoft.com/yammer/manage-security-and-compliance/export-yammer-enterprise-data)，但這樣做會匯出整個網路的所有交談。 產生的匯出但是會列出群組識別碼，因此可以根據這種方式來篩選交談。
+Yammer 網路系統管理員可以執行 [網路資料的匯出](/yammer/manage-security-and-compliance/export-yammer-enterprise-data)，但這樣做會匯出整個網路的所有交談。 產生的匯出但是會列出群組識別碼，因此可以根據這種方式來篩選交談。

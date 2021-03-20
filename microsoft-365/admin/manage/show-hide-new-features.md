@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 365 系統管理中心的「Office 的新功能」功能，在使用者選擇協助 > 其 Office 應用程式中的新功能時，決定要顯示或隱藏哪些 Office 功能。
-ms.openlocfilehash: d0b5bc3e643b306d9a38a707fed50ab546249c2b
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.openlocfilehash: b9d20e3df4a2de540316dce0e6a6905c07e65176
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122345"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915024"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>管理哪些 Office 功能出現在新功能中
 
@@ -68,7 +68,7 @@ ms.locfileid: "50122345"
 |**半年 Enterprise (預覽)** <br/> |9月1日和3月1日 <br/> | 主要版本之前2周的新功能|
 |**半年 Enterprise** <br/> |1月1日和7月1日 <br/> | 主要版本之前2周的新功能<br/> |
 
-如需每個更新通道發行新版本的詳細資訊，請參閱 [依日期) 列出之 Microsoft 365 app 的更新歷程記錄 (](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。
+如需每個更新通道發行新版本的詳細資訊，請參閱 [依日期) 列出之 Microsoft 365 app 的更新歷程記錄 (](/officeupdates/update-history-microsoft365-apps-by-date)。
 
 ## <a name="add-the-whats-new-in-office-card-to-the-admin-center-home-page"></a>新增「Office 的新功能」卡片至系統管理中心首頁
 

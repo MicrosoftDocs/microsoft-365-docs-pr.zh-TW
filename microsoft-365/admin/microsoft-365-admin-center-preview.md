@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: 深入瞭解 Microsoft 365 系統管理中心。
-ms.openlocfilehash: da2b54e5f69fcc1209459b02220c0ead3f564067
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 4a477287f334e2d4a60d61418f746fa3fe2f4efa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233383"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914951"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 
@@ -91,7 +91,7 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
 
 Microsoft 365 是完整的智慧解決方案，包括 Office 365、Windows 10 和企業行動性 + 安全性，可讓每個人都有創造性且安全地協同運作。 您可以在系統管理中心使用下列 Microsoft 365 訂閱，讓您立即嘗試或購買：
   
-- 商務用 Microsoft 365
+- Microsoft 365 商務版
 - Microsoft 365 企業版 E3
 - Microsoft 365 企業版 E5
     
@@ -109,11 +109,11 @@ Microsoft 365 系統管理中心是所有用來管理 Microsoft 365 的團隊和
   
 更新所有系統管理中心以取得一致的經驗，但您可以深入瞭解已開始 makeover 的系統管理中心：
   
-- [開始使用新 SharePoint 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2024186)
+- [開始使用新 SharePoint 系統管理中心](/sharepoint/get-started-new-admin-center)
     
-- [在轉換至新的 Microsoft 團隊商務用 Skype 系統管理中心時管理團隊 &amp;](https://go.microsoft.com/fwlink/?linkid=2024308)
+- [在轉換至新的 Microsoft 團隊商務用 Skype 系統管理中心時管理團隊 &amp;](/microsoftteams/manage-teams-skypeforbusiness-admin-center)
     
-- [Microsoft 365 裝置管理的概述](https://go.microsoft.com/fwlink/?linkid=2006262)
+- [Microsoft 365 裝置管理的概述](/mem/intune/fundamentals/what-is-device-management)
     
 - [介紹 Microsoft 365 安全性與合規性中心](https://go.microsoft.com/fwlink/?linkid=2025413)
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解哪一種 Microsoft 365 訂閱適合您的組織。
-ms.openlocfilehash: 9bb72b01c7b1119f96120702e7b4f9c80aa4e729
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422816"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913751"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>選擇 Microsoft 365 訂閱
 
@@ -74,4 +74,4 @@ ms.locfileid: "50422816"
 
 \*\*\* 自動擴充開啟時無限制封存。
 
-若要將 Microsoft 365 商務版與其他產品（包括其他 Microsoft 365 方案）進行比較，請參閱 [授權 microsoft 365 for small 大中型企業](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。
+若要將 Microsoft 365 商務版與其他產品（包括其他 Microsoft 365 方案）進行比較，請參閱 [授權 microsoft 365 for small 大中型企業](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。

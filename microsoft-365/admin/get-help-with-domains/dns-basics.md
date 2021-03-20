@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解網域及其相關聯的 DNS 記錄，協助您管理網域。
-ms.openlocfilehash: 093641a5c80c70264c1d64ee27cb7621e5f7b2cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926411"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915659"
 ---
 # <a name="dns-basics"></a>DNS 基本知識
 
@@ -69,7 +69,7 @@ ms.locfileid: "49926411"
     
 為什麼要使用第三層網域？ 您可能會想要針對行銷或部落格使用不同的網域名稱。 例如，blog.contoso.com。 您通常會新增第二層網域 (例如 contoso.com) 以搭配 Microsoft 使用，但也可以視需要使用第三層網域。
   
-若要深入了解如何將網域用於每種類型的產品，請參閱 [Microsoft 365 和 Office 365 平台網域服務說明](https://go.microsoft.com/fwlink/?LinkId=402693)。
+若要深入了解如何將網域用於每種類型的產品，請參閱 [Microsoft 365 和 Office 365 平台網域服務說明](/office365/servicedescriptions/office-365-platform-service-description/domains)。
   
 ## <a name="understand-dns-record-types"></a>了解 DNS 記錄類型
 
@@ -150,14 +150,14 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 ## <a name="why-add-a-domain-in-microsoft-365"></a>為什麼要在 Microsoft 365 中新增網域？
 
 
-將自訂網域 (例如 fourthcoffee.com) 新增至 Microsoft 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Microsoft 365 帳戶時，將會[提供一個網域供您使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但包括「onmicrosoft.com」。 如果計劃將 Microsoft 365 用於電子郵件，許多人偏好新增組織或商務網域。 
+將自訂網域 (例如 fourthcoffee.com) 新增至 Microsoft 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Microsoft 365 帳戶時，將會[提供一個網域供您使用](../setup/domains-faq.yml)，但包括「onmicrosoft.com」。 如果計劃將 Microsoft 365 用於電子郵件，許多人偏好新增組織或商務網域。 
   
 > [!NOTE]
 > 如果您只是要下載並使用 Microsoft App (例如 Outlook 或 Word)，則無需新增網域：[在您的 PC 或 Mac 上安裝 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。 
   
 您可以在 Microsoft 365 中將網域名稱用於電子郵件、公用網站及立即訊息位址。
   
-- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的 [初始 onmicrosoft.com 電子郵件地址](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。 因此電子郵件地址 (也是用於登入 Microsoft 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
+- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的 [初始 onmicrosoft.com 電子郵件地址](../setup/domains-faq.yml)。 因此電子郵件地址 (也是用於登入 Microsoft 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
     
 - **網站：** 如果您的 Microsoft 365 訂閱包含 SharePoint Online 公用網站 (已不再提供購買)，您的公用網站會隨附像 contoso-public.sharepoint.com 這樣的初始位址。 如果您是為企業設定網站，您可以使用自訂網域名稱，將網站位址重新命名為類似 www.contoso.com 這樣的位址。 
     
@@ -169,14 +169,14 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 ## <a name="why-add-a-domain-in-microsoft-365"></a>為什麼要在 Microsoft 365 中新增網域？
 
 
-將自訂網域 (例如 fourthcoffee.com) 新增至 Microsoft 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Microsoft 365 帳戶時，將會[提供一個網域供您使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但包括「onmicrosoft.com」。 如果計劃將 Microsoft 365 用於電子郵件，許多人偏好新增組織或商務網域。 
+將自訂網域 (例如 fourthcoffee.com) 新增至 Microsoft 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Microsoft 365 帳戶時，將會[提供一個網域供您使用](../setup/domains-faq.yml)，但包括「onmicrosoft.com」。 如果計劃將 Microsoft 365 用於電子郵件，許多人偏好新增組織或商務網域。 
   
 > [!NOTE]
 > 如果您只是要下載並使用 Microsoft 365 應用程式 (例如 Outlook 或 Word)，則無需新增網域：[在您的 PC 或 Mac 上安裝 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。 
   
 您可以在 Microsoft 365 中將網域名稱用於電子郵件、公用網站及立即訊息位址。
   
-- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的 [初始 onmicrosoft.com 電子郵件地址](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。 因此電子郵件地址 (也是用於登入 Microsoft 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
+- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的 [初始 onmicrosoft.com 電子郵件地址](../setup/domains-faq.yml)。 因此電子郵件地址 (也是用於登入 Microsoft 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
     
 - **網站：** 如果您的訂閱包含 SharePoint Online 公用網站 (已不再提供購買)，您的公用網站會隨附像 contoso-public.sharepoint.com 這樣的初始位址。 如果您是為企業設定網站，您可以使用自訂網域名稱，將網站位址重新命名為類似 www.contoso.com 這樣的位址。 
     
@@ -190,7 +190,7 @@ Microsoft 365 需要具備數種 DNS 記錄才能搭配您的網域使用。 除
   
 您可以[尋找值清單](information-for-dns-records.md)設定您的網域。 這些都包含在 Microsoft 365 系統管理中心。 
   
-或者，如果您正在規劃部署，建議您檢閱 Microsoft 365 所需的所有 DNS 記錄清單、DNS 記錄的作用與範例值。 請參閱 [Microsoft 365 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。
+或者，如果您正在規劃部署，建議您檢閱 Microsoft 365 所需的所有 DNS 記錄清單、DNS 記錄的作用與範例值。 請參閱 [Microsoft 365 的外部網域名稱系統記錄](../../enterprise/external-domain-name-system-records.md)。
   
 ## <a name="how-can-i-learn-more"></a>如何深入了解？
 

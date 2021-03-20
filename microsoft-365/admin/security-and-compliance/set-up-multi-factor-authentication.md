@@ -23,30 +23,30 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何為您的組織設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: d08ef54c545809bbb2277f8d0a8471245400a3ac
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 54c862d8f7c25472d84557e177a9107d2c14d846
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514965"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914459"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
 
 根據您對[多重因素驗證 (MFA) 及其在 Microsoft 365 中支援](multi-factor-authentication-microsoft-365.md)的了解，是時候進行設定並將其階段推出至您的組織了。
 
 > [!IMPORTANT]
-> 如果您在 2019 年10 月 21 日之後購買訂閱或試用版，且在您登入時，提示您進行 MFA，則將自動為您的訂閱啟用[安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
+> 如果您在 2019 年10 月 21 日之後購買訂閱或試用版，且在您登入時，提示您進行 MFA，則將自動為您的訂閱啟用[安全性預設值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
 
 ## <a name="before-you-begin"></a>開始之前
 
 - 您必須是全域系統管理員才能管理 MFA。 如需詳細資訊，請參閱[系統管理員角色](../add-users/about-admin-roles.md)。
 - 如果您已開啟舊版每一使用者 MFA，請 [關閉舊版每一使用者 MFA](#turn-off-legacy-per-user-mfa)。
-- 如果您在 Windows 裝置上安裝有 Office 2013 用戶端，請[開啟 Office 2013 用戶端新式驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)。
-- 進階：如果您使用 Active Directory 同盟服務 (AD FS) 搭配協力廠商目錄服務，請設定 Azure MFA Server。 如需詳細資訊，請參閱[使用 Azure AD Multi-Factor Authentication 和協力廠商 VPN 解決方案的進階案例](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。
+- 如果您在 Windows 裝置上安裝有 Office 2013 用戶端，請[開啟 Office 2013 用戶端新式驗證](./enable-modern-authentication.md)。
+- 進階：如果您使用 Active Directory 同盟服務 (AD FS) 搭配協力廠商目錄服務，請設定 Azure MFA Server。 如需詳細資訊，請參閱[使用 Azure AD Multi-Factor Authentication 和協力廠商 VPN 解決方案的進階案例](/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。
 
 ## <a name="turn-security-defaults-on-or-off"></a>開啟或關閉安全性預設值
 
-大部分的組織，安全性預設值皆提供有良好的額外登入安全性。 如需詳細資訊，請參閱[什麼是安全性預設？](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+大部分的組織，安全性預設值皆提供有良好的額外登入安全性。 如需詳細資訊，請參閱[什麼是安全性預設？](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 如果您新訂閱，則系統可能會自動為您開啟安全性預設值。
 
@@ -58,7 +58,7 @@ ms.locfileid: "50514965"
 4. 在頁面底部，選取 **[管理安全性預設]**。
 5. 選擇 **[是]** 以啟用安全性預設，或 **[否]** 以停用安全性預設，然後選擇 **[儲存]**。
 
-如果您使用的是[基準條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)，則會在您移往使用安全性預設之前，提示您將之關閉。
+如果您使用的是[基準條件式存取原則](/azure/active-directory/conditional-access/concept-baseline-protection)，則會在您移往使用安全性預設之前，提示您將之關閉。
 
 1. 移至 [[條件式存取原則]](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) 頁面。
 2. 選擇每個 **開啟** 的基準原則，並將 **啟用原則** 設定為 **關閉**。
@@ -73,9 +73,9 @@ ms.locfileid: "50514965"
 > [!IMPORTANT]
 > 在啟用條件式存取原則之前，請關閉 [每一使用者 MFA] 和 [安全性預設]。
 
-購買 Azure AD Premium P1 的客戶或含此授權的授權（例如 Microsoft 365 商務版 Premium）和 Microsoft 365 E3 皆可使用條件式存取。 如需詳細資訊，請參閱[建立 [條件式存取] 原則](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa)。
+購買 Azure AD Premium P1 的客戶或含此授權的授權（例如 Microsoft 365 商務版 Premium）和 Microsoft 365 E3 皆可使用條件式存取。 如需詳細資訊，請參閱[建立 [條件式存取] 原則](/azure/active-directory/authentication/tutorial-enable-azure-mfa)。
 
-透過 Azure AD Premium P2 授權或含此授權的授權 (例如 Microsoft 365 E5) 可使用風險型條件式存取。 如需詳細資訊，請參閱 [風險型 [條件式存取]](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)。
+透過 Azure AD Premium P2 授權或含此授權的授權 (例如 Microsoft 365 E5) 可使用風險型條件式存取。 如需詳細資訊，請參閱 [風險型 [條件式存取]](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)。
 
 如需有關 Azure AD P1 和 P2 的詳細資訊，請參閱 [Azure Active Directory 定價](https://azure.microsoft.com/pricing/details/active-directory/)。
 
@@ -104,6 +104,6 @@ ms.locfileid: "50514965"
 
 ## <a name="related-topics"></a>相關主題
 
-[影片：開啟多重要素驗證](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+[影片：開啟多重要素驗證](../../business-video/turn-on-mfa.md)
 
-[影片：為您的手機開啟多重要素驗證](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
+[影片：為您的手機開啟多重要素驗證](../../business-video/set-up-mfa.md)

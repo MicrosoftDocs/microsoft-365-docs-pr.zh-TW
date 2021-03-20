@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 description: 了解如何指派授權給使用者。
 ms.date: 08/14/2020
-ms.openlocfilehash: b5179006da896dbadab10d43a43b094acedcb806
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 9f044f29cabf4976d5fbf17b22777da62e4414c5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113982"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915491"
 ---
 # <a name="assign-licenses-to-users"></a>將授權指派給使用者
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -50,8 +50,8 @@ ms.locfileid: "50113982"
 ## <a name="before-you-begin"></a>開始之前
 
 - 您必須是全域、授權或使用者系統管理員，才能指派授權。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../add-users/about-admin-roles.md)。
-- 您可以[使用 Office 365 PowerShell 指派授權給使用者帳戶](https://go.microsoft.com/fwlink/p/?linkid=850410)。
-- 若要使用以群組為基礎的授權，請參閱[依據 Azure Active Directory 中的群組成員資格將授權指派給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)。
+- 您可以[使用 Office 365 PowerShell 指派授權給使用者帳戶](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
+- 若要使用以群組為基礎的授權，請參閱[依據 Azure Active Directory 中的群組成員資格將授權指派給使用者](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 - 某些服務 (例如 Sway) 會自動指派給使用者，而不需要您個別指派。
 
 ::: moniker range="o365-worldwide"
@@ -163,7 +163,7 @@ ms.locfileid: "50113982"
 
 ## <a name="assign-a-license-to-a-guest-user"></a>指派授權給來賓使用者
 
-您可以在 Azure Active Directory 系統管理中心中邀請來賓使用者來與您的組織共同作業。 若要進一步了解來賓使用者，請參閱[什麼是 Azure Active Directory B2B 中的來賓使用者存取權？](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b)。 如果您沒有任何來賓使用者，請參閱[快速入門：在 Azure 入口網站中將來賓使用者新增至您的目錄](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)。
+您可以在 Azure Active Directory 系統管理中心中邀請來賓使用者來與您的組織共同作業。 若要進一步了解來賓使用者，請參閱[什麼是 Azure Active Directory B2B 中的來賓使用者存取權？](/azure/active-directory/external-identities/what-is-b2b)。 如果您沒有任何來賓使用者，請參閱[快速入門：在 Azure 入口網站中將來賓使用者新增至您的目錄](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)。
 
 > [!IMPORTANT]
 > 您必須是全域系統管理員才能執行這些步驟。

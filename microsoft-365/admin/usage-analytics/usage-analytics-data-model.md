@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '瞭解流量分析如何連接至 API，並提供各種 Microsoft 365 服務的每月使用趨勢。  '
-ms.openlocfilehash: 7d1e797fc388934f66ddc45d2e7f51566e89ad23
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: 1975fc0bdba279b281fb45c8aec22255579ef414
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758937"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913847"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情況分析資料模型
 
@@ -35,7 +35,7 @@ ms.locfileid: "50758937"
 Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Microsoft 365 流量分析用來產生其資料的 APIs，來自各種、一般可用的圖形 APIs。 Microsoft 365 流量分析 API 的功能一般無法使用。
   
 > [!NOTE]
-> 如需詳細資訊，請參閱使用 microsoft [Graph 中的 microsoft 365 使用量報告](https://go.microsoft.com/fwlink/p/?linkid=864336)。 
+> 如需詳細資訊，請參閱使用 microsoft [Graph 中的 microsoft 365 使用量報告](/graph/api/resources/report)。 
   
 此 API 提供各種 Microsoft 365 服務每月使用趨勢的相關資訊。 如需 API 傳回的確切資料，請參閱下一節中的表格。
   
@@ -295,5 +295,3 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
 |WinRtCount  <br/> |Windows Mobile 裝置的每個服務方案在時間範圍結束前的啟用次數。  <br/> |
 |Timeframe  <br/> |此欄有日期值。當做行事曆表格的多對一關係使用。  <br/> |
 |Content Date  <br/> |如果時間範圍顯示目前月份，此值將代表資料在目前月份可供使用的最晚日期。  <br/> 如果時間範圍顯示上個月，此值將代表時間範圍月份的最後一個日期。  <br/> |
-   
-

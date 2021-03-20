@@ -22,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 瞭解如何從 Microsoft 365 移除舊的網域，以及將使用者和群組移至另一個網域。
-ms.openlocfilehash: 39f8d97abb3a424251d6847da02f0dcc58baff31
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: f4281eb793e6a832e3bd7f31484a97ccd5065bf5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114006"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915611"
 ---
 # <a name="remove-a-domain"></a>移除網域
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
   
@@ -108,7 +108,7 @@ ms.locfileid: "50114006"
 
 5. 使用新的網域登入，並使用相同的密碼登入。
 
-您也可以使用 PowerShell 將使用者移至另一個網域。 如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。 若要設定預設網域，請使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
+您也可以使用 PowerShell 將使用者移至另一個網域。 如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。 若要設定預設網域，請使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
 
 ::: moniker-end
 
@@ -124,7 +124,7 @@ ms.locfileid: "50114006"
 
 5. 使用新的網域登入，並使用相同的密碼登入。
 
-您也可以使用 PowerShell 將使用者移至另一個網域。 如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。 若要設定預設網域，請使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
+您也可以使用 PowerShell 將使用者移至另一個網域。 如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。 若要設定預設網域，請使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
 
 ::: moniker-end
 
@@ -140,7 +140,7 @@ ms.locfileid: "50114006"
 
 5. 使用新的網域登入，並使用相同的密碼登入。
 
-您也可以使用 PowerShell 將使用者移至另一個網域。 如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。 若要設定預設網域，請使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
+您也可以使用 PowerShell 將使用者移至另一個網域。 如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。 若要設定預設網域，請使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
 
 ::: moniker-end
 
@@ -212,14 +212,14 @@ ms.locfileid: "50114006"
 
 如果不是在許多地方（如安全性群組、通訊群組清單、使用者和 Microsoft 365 群組）上加以參考，則 Microsoft 365 可能只需要5分鐘的時間來移除網域。 如果有許多參照都使用此網域，就會花費數小時 (一天) 的時間才能將網域移除。
   
-如果您有數百名或數千名使用者，請使用 PowerShell 來查詢所有使用者，然後將他們移到另一個網域。否則，UI 中很可能會遺失一些使用者，當您隨後想移除此網域時，將無法執行且不知道原因為何。如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。若要設定預設網域，請使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
+如果您有數百名或數千名使用者，請使用 PowerShell 來查詢所有使用者，然後將他們移到另一個網域。否則，UI 中很可能會遺失一些使用者，當您隨後想移除此網域時，將無法執行且不知道原因為何。如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。若要設定預設網域，請使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
   
 ## <a name="still-need-help"></a>是否仍需要協助？
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> 您無法移除帳戶中的 [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 網域。 當您移除網域時，使用者帳戶會回復為 "onmicrosoft.com" 位址，成為主要 SMTP/UserprincipalName。
+> 您無法移除帳戶中的 [".onmicrosoft.com"](../setup/domains-faq.yml) 網域。 當您移除網域時，使用者帳戶會回復為 "onmicrosoft.com" 位址，成為主要 SMTP/UserprincipalName。
   
 仍無法運作？ 您的網域可能需要手動移除。 請[致電](../contact-support-for-business-products.md)我們，我們將協助您處理！
   

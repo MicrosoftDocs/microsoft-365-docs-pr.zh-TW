@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 了解管理訊息中心訊息以協助進行變更管理。
-ms.openlocfilehash: 3f0a3c5fe20e76d0fff63cefe7e6eaa687696426
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
-ms.translationtype: HT
+ms.openlocfilehash: ee3df1b2f4855421dab4d6715add6503027b24bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405951"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915275"
 ---
 # <a name="manage-messages-in-message-center"></a>管理訊息中心中的訊息
 
@@ -171,6 +171,6 @@ ms.locfileid: "50405951"
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>在 Planner 中追蹤訊息中心的工作
 
-Microsoft 365 訊息中心會提供許多與 Microsoft 365 服務變更相關的可採取動作資訊。 要追蹤哪些變更需要工作完成、時間，與執行人員，以及追蹤每項工作的完成都不是容易的事。 您也可能想要記下某事，並將它標記為稍後檢查。 只要將 Microsoft 365 系統管理中心的訊息同步處理至 Microsoft Planner 時，即可以執行這些以及更多作業。 如需詳細資訊，請參閱[在 Planner 中追蹤訊息中心的工作](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner)。
+Microsoft 365 訊息中心會提供許多與 Microsoft 365 服務變更相關的可採取動作資訊。 要追蹤哪些變更需要工作完成、時間，與執行人員，以及追蹤每項工作的完成都不是容易的事。 您也可能想要記下某事，並將它標記為稍後檢查。 只要將 Microsoft 365 系統管理中心的訊息同步處理至 Microsoft Planner 時，即可以執行這些以及更多作業。 如需詳細資訊，請參閱[在 Planner 中追蹤訊息中心的工作](/office365/planner/track-message-center-tasks-planner)。
 
-有關 [訊息中心] 的概觀，請參閱 [Microsoft 365 中的訊息中心](message-center.md)。 或者，要了解如何設定語言喜好設定以啟用 [訊息中心] 文章的機器翻譯功能，請參閱[訊息中心文章的語言翻譯功能](language-translation-for-message-center-posts.md)。 如果您想程式設計一種替代方法來取得即時服務健康情況資訊和訊息中心通訊，請參考 [Microsoft 365 服務通訊 API 概觀](https://go.microsoft.com/fwlink/p/?linkid=848507)。
+有關 [訊息中心] 的概觀，請參閱 [Microsoft 365 中的訊息中心](message-center.md)。 或者，要了解如何設定語言喜好設定以啟用 [訊息中心] 文章的機器翻譯功能，請參閱[訊息中心文章的語言翻譯功能](language-translation-for-message-center-posts.md)。 如果您想程式設計一種替代方法來取得即時服務健康情況資訊和訊息中心通訊，請參考 [Microsoft 365 服務通訊 API 概觀](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15))。

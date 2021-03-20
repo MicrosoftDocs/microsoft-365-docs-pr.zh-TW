@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 當多人需要存取相同的信箱時，會使用共用信箱。 深入瞭解建立共用信箱之前所需注意的事項。
-ms.openlocfilehash: f5d46af5abdd528ce3db817dbabce015ed5abade
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: eb1947b5baffd97f067bfe4e0c6d71d5c1329d65
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094718"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915983"
 ---
 # <a name="about-shared-mailboxes"></a>關於共用信箱
 
@@ -37,7 +37,7 @@ ms.locfileid: "50094718"
 
 [建立共用信箱](create-a-shared-mailbox.md)之前，請先瞭解下列事項：
 
-- **授權：** 您的共用信箱可以儲存至50GB 的資料，而不需要您指派授權給它。 超過此上限後，您必須指派授權給信箱才能儲存更多資料。 如需共用信箱授權的詳細資訊，請參閱 [Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits)。 當共用信箱到達儲存上限時，您可以接收電子郵件一段時間，但您將無法傳送新電子郵件。 之後，信箱將停止接收電子郵件。 傳送郵件到此信箱的寄件者會收到未傳遞回條。
+- **授權：** 您的共用信箱可以儲存至50GB 的資料，而不需要您指派授權給它。 超過此上限後，您必須指派授權給信箱才能儲存更多資料。 如需共用信箱授權的詳細資訊，請參閱 [Exchange Online 限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#StorageLimits)。 當共用信箱到達儲存上限時，您可以接收電子郵件一段時間，但您將無法傳送新電子郵件。 之後，信箱將停止接收電子郵件。 傳送郵件到此信箱的寄件者會收到未傳遞回條。
 
 - **使用者權限：** 您必須授與使用者 (成員資格) 使用共用信箱的許可權。 僅限貴組織內部的人員可以使用共用信箱。
 

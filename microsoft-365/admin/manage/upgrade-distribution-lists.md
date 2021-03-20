@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 瞭解如何將一或多個通訊群組清單升級至 Outlook 中的 Microsoft 365 群組，以及如何使用 PowerShell 同時升級多個通訊群組清單。
-ms.openlocfilehash: 95f887b4386b349dc9d8bb471deab19b5425f6f5
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 7fd6090e00e9099feb93685a276b5e207bd05419
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080524"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914999"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將通訊群組清單升級至 Outlook 中的 Microsoft 365 群組
 
@@ -81,7 +81,7 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 ```
 
 > [!NOTE]
-> 您也可以使用 [set-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell Cmdlet，將單一通訊群組清單升級至 Microsoft 365 群組。
+> 您也可以使用 [set-unifiedgroup](/powershell/module/exchange/new-unifiedgroup) PowerShell Cmdlet，將單一通訊群組清單升級至 Microsoft 365 群組。
 
 ### <a name="upgrade-multiple-dls-in-a-batch"></a>在批次中升級多個 DLs
 
@@ -156,7 +156,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-a-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>為什麼連絡人卡片仍顯示通訊群組清單？ 若要防止已升級的通訊群組清單顯示在我的自動建議清單中，該怎麼辦？
 
-- 若為 Outlook：當有人嘗試在遷移後輸入 Microsoft 365 群組名稱時，在 Outlook 中嘗試傳送電子郵件時，收件者將會解析為通訊群組清單，而不是群組。 收件者的連絡人卡片將會是通訊群組清單連絡人卡片。 這是因為 Outlook 中的收件者緩存或 nick 名稱快取。 電子郵件會順利傳送至群組，但是可能會造成對寄件者的混淆。<br/>您可以執行本主題中的步驟， [[Outlook AutoComplete] 清單的相關資訊](https://go.microsoft.com/fwlink/?LinkID=798736) 可重設快取，以修正此問題。
+- 若為 Outlook：當有人嘗試在遷移後輸入 Microsoft 365 群組名稱時，在 Outlook 中嘗試傳送電子郵件時，收件者將會解析為通訊群組清單，而不是群組。 收件者的連絡人卡片將會是通訊群組清單連絡人卡片。 這是因為 Outlook 中的收件者緩存或 nick 名稱快取。 電子郵件會順利傳送至群組，但是可能會造成對寄件者的混淆。<br/>您可以執行本主題中的步驟， [[Outlook AutoComplete] 清單的相關資訊](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) 可重設快取，以修正此問題。
 
 - 針對網頁上的 Outlook：在 Outlook 網頁版中，通訊群組清單收件者仍會保留在快取中。 您可以依照「 [從自動完成」清單中移除建議的名稱或電子郵件地址](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) 中的步驟進行，以重新整理快取，以查看群組連絡人卡片。
 

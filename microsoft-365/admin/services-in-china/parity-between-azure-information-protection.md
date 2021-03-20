@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 深入瞭解 Office 365 運作的 Azure 資訊保護 (AIP) ，以及如何為中國的客戶設定該功能。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 300e7633237511fb9de64199ae7cf54594f2239e
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: 77790249cbd544b2f11e9a16dd77bab297cac509
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099675"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914315"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>由世紀運作之 Office 365 的 Azure 資訊保護支援
 
@@ -130,7 +130,7 @@ ms.locfileid: "50099675"
 - [AIP 快速入門：部署 AIP 用戶端](/azure/information-protection/quickstart-deploy-client)
 - [AIP 管理員指南](/azure/information-protection/rms-client/clientv2-admin-guide)
 - [AIP 使用者指南](/azure/information-protection/rms-client/clientv2-user-guide)
-- [深入瞭解 Microsoft 365 敏感度標籤](/microsoft-365/compliance/sensitivity-labels)
+- [深入瞭解 Microsoft 365 敏感度標籤](../../compliance/sensitivity-labels.md)
 
 ### <a name="step-4-configure-aip-apps-on-windows"></a>步驟4：設定 Windows 上的 AIP 應用程式
 

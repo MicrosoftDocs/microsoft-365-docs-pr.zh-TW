@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
 description: 查看您的帳單報表或發票，瞭解您的 Office 365 由中國所運作的使用者。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 402634941180fbe7abf26637b8fa7096d8c8eb7c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: aa6a83f7054488b4e8944010a24341daeb83c690
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114247"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914291"
 ---
 # <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>在由世紀運作的 Office 365 中查看您的帳單或取得發票
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 您可以查看帳單報表或發票，以取得您的 Office 365 （由世紀訂閱費用運作）的相關資訊。 您也可以取得發票 (您的最終購買憑證) 。 您可以將發票要求提交至 [發票管理系統](https://go.microsoft.com/fwlink/p/?linkid=837465) ，在您支付之後大約三天。 
   

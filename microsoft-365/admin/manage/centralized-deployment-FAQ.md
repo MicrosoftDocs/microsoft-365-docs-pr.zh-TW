@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 系統管理中心，回顧有關集中式部署的常見問題解答。
-ms.openlocfilehash: 555496f15663b6607ebc785498bdc94b5e51b9c9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 9f4841508701d4dd5878e99fcc51a436bc5824e2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948685"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915467"
 ---
 # <a name="centralized-deployment-faq"></a>集中式部署常見問題集
 
@@ -44,7 +44,7 @@ ms.locfileid: "47948685"
 
 最好是使用群組指派，而不是個別的使用者指派，以簡化管理。
  
-如需詳細資訊，請參閱 [使用者和群組指派](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#user-and-group-assignments)。  
+如需詳細資訊，請參閱 [使用者和群組指派](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)。  
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>增益集需要多長時間才能顯示給所有使用者？  
 
@@ -55,14 +55,14 @@ ms.locfileid: "47948685"
 為了輕鬆將增益集部署至使用者、群組或整個組織，我們建議系統管理員使用集中式部署。
 
 如需管理使用者存取的相關資訊，請參閱：
- - [在 Outlook) 以外的所有用戶端上關閉 Office 存放區，以防止增益集下載 (](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
- - [指定系統管理員和使用者可安裝和管理適用於 Outlook 增益集](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
+ - [在 Outlook) 以外的所有用戶端上關閉 Office 存放區，以防止增益集下載 (](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [指定系統管理員和使用者可安裝和管理適用於 Outlook 增益集](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>集中式部署會為系統管理員提供彈性，以選擇 Outlook 增益集的部署方法？  
 
 是。 集中式部署為系統管理員提供彈性，為增益集部署期間的 Outlook 增益集選擇三種部署方法之一：
 
-**固定 (預設) **  增益集會自動部署至指派的使用者，且無法加以移除。  
+**固定 (預設)**  增益集會自動部署至指派的使用者，且無法加以移除。  
  
 **可用** 使用者可以在 Outlook 中安裝增益集，方法是選擇 [ **首頁] > > 管理管理] 中取得更多增益集**。
  
@@ -72,19 +72,19 @@ ms.locfileid: "47948685"
 
 是。 系統管理員可以上傳新的資訊清單檔案，以支援系統管理員部署的 LOB 增益集的中繼資料變更。增益集會在下次啟動 Office 應用程式時更新。 Web 應用程式可以隨時變更。  
  
-如需詳細資訊，請參閱企業營運營運 [增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security)。  
+如需詳細資訊，請參閱企業營運營運 [增益集](./manage-addins-in-the-admin-center.md#more-about-office-add-ins-security)。  
 
 ## <a name="can-admins-turn-off-add-ins"></a>系統管理員是否可以關閉增益集？  
 
 是。 系統管理員可以開啟或關閉其為所有使用者從 Microsoft 系統管理中心部署的增益集。
 
-如需詳細資訊，請參閱 [增益集狀態](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states)。  
+如需詳細資訊，請參閱 [增益集狀態](./manage-addins-in-the-admin-center.md#add-in-states)。  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>系統管理員可以刪除或移除增益集嗎？
 
 是。 系統管理員可以從 Microsoft 系統管理中心刪除其為所有使用者部署的增益集。
 
-如需詳細資訊，請參閱 [刪除增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in)。 
+如需詳細資訊，請參閱 [刪除增益集](./manage-addins-in-the-admin-center.md#delete-an-add-in)。 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>使用集中式部署，系統管理員可以從 Office Store 部署付費增益集嗎？ 
 
@@ -98,6 +98,4 @@ ms.locfileid: "47948685"
  
 您的訂閱隨附一組系統管理員角色，您可以將其指派給組織中的其他使用者。 每個系統管理員角色會對應至常見商務功能，並讓您組織中的人員能夠在 Microsoft 365 系統管理中心中執行特定工作。  
  
-如需詳細資訊，請參閱 [指派系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide)。  
-
-
+如需詳細資訊，請參閱 [指派系統管理員角色](../add-users/assign-admin-roles.md?view=o365-worldwide)。 

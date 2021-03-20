@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 瞭解如何建立、編輯或刪除安全性群組。
-ms.openlocfilehash: df3d8fde0c487663237b3858aa0bf049ba4db045
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: d2cc749acaf7b2e23674156f6ad9a200ec7b386d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114042"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915815"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中建立、編輯或刪除安全性群組
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -139,15 +139,15 @@ ms.locfileid: "50114042"
 
 如果您想要建立使用者群組，以便同時將電子郵件傳送給他們，您可以移至「**管理** Exchange 收件者」群組，在 Exchange 系統管理中心中執行這項作業 \>  \>  \> ****。 接下來，選取 [**新增**] ![ ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) ，然後選取您要建立的群組類型： 
   
-- **通訊群組**：用於發送訊息至使用者群組。 也稱為  *啟用郵件功能的通訊群組* 或  *通訊群組清單*。 如需詳細資訊，請參閱 [管理通訊群組](https://technet.microsoft.com/library/bb124513.aspx)。
+- **通訊群組**：用於發送訊息至使用者群組。 也稱為  *啟用郵件功能的通訊群組* 或  *通訊群組清單*。 如需詳細資訊，請參閱 [管理通訊群組](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)。
     
-- **安全性群組**：可以用來將訊息發送至使用者群組，或是用於授與資源的存取權限。 這個群組又稱為 *啟用郵件功能的安全性群組*。 如需詳細資訊，請參閱 [管理擁有郵件功能的安全性群組](https://technet.microsoft.com/library/bb123521.aspx)。
+- **安全性群組**：可以用來將訊息發送至使用者群組，或是用於授與資源的存取權限。 這個群組又稱為 *啟用郵件功能的安全性群組*。 如需詳細資訊，請參閱 [管理擁有郵件功能的安全性群組](/Exchange/recipients/mail-enabled-security-groups)。
     
-- **動態通訊群組**：每次傳送郵件時，此通訊群組類型就會根據您所定義的篩選和條件重新計算收件者清單。 如需詳細資訊，請參閱 [管理動態通訊群組](https://technet.microsoft.com/library/bb123722.aspx)。
+- **動態通訊群組**：每次傳送郵件時，此通訊群組類型就會根據您所定義的篩選和條件重新計算收件者清單。 如需詳細資訊，請參閱 [管理動態通訊群組](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)。
     
 在 Exchange 系統管理中心建立通訊群組和擁有郵件功能的安全性群組之後，其名稱和使用者清單會出現在 [ **安全性群組** ] 頁面上。 您可以在這兩個位置刪除這些群組，但是僅可在 Exchange 系統管理中心對這些群組進行編輯。 動態通訊群組不會顯示在 [ **安全性群組** ] 頁面上。 
   
- SharePoint 群組會在您建立網站集合時自動建立。 預設群組會使用 SharePoint 中的預設權限等級 (有時稱為 SharePoint 角色) 來授與使用者權限與存取權。 如需詳細資訊，請參閱 [Default SharePoint groups in SharePoint Online](https://docs.microsoft.com/sharepoint/default-sharepoint-groups)。
+ SharePoint 群組會在您建立網站集合時自動建立。 預設群組會使用 SharePoint 中的預設權限等級 (有時稱為 SharePoint 角色) 來授與使用者權限與存取權。 如需詳細資訊，請參閱 [Default SharePoint groups in SharePoint Online](/sharepoint/default-sharepoint-groups)。
   
 ## <a name="how-is-a-security-group-different-from-security-groups-i-create-in-sharepoint"></a>安全性群組與我在 SharePoint 中建立的安全性群組有何不同？
 
@@ -160,4 +160,3 @@ ms.locfileid: "50114042"
 ## <a name="can-i-send-email-to-a-security-group"></a>我可以將電子郵件傳送至安全性群組嗎？
 
 是。 不過，如果您想要使用群組進行電子郵件及共同作業，建議您改為 [建立 Microsoft 365 群組](../create-groups/create-groups.md) 。 
-  

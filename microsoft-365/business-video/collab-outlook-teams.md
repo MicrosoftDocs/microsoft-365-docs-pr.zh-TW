@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用 Outlook 和 Microsoft 小組共同作業。
-ms.openlocfilehash: 14a3cdf28c4e0c855671c67af36fa25ac47c6568
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: dd1030833a10678b4630d9e86905c98d30ac15fe
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422828"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913655"
 ---
 # <a name="use-outlook-and-teams-together"></a>搭配使用 Outlook 與 Teams
 
@@ -54,4 +54,4 @@ ms.locfileid: "50422828"
 
 [何謂 Outlook？](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[小組簡介](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+[小組簡介](/MicrosoftTeams/Teams-overview)

@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: 使用 Microsoft 365 系統管理中心或 Windows PowerShell 刪除預約行事曆。
-ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 7b79628327797d2e315d31e1b1a2671f0b24e447
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604017"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913775"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>在預訂中刪除預約行事曆
 
@@ -46,7 +46,7 @@ ms.locfileid: "50604017"
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>使用 Exchange Online PowerShell 刪除預約行事曆
 
-請參閱連線 [至 Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) 以取得連線至 exchange online PowerShell 的必要條件和指引。
+請參閱連線 [至 Exchange online PowerShell](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) 以取得連線至 exchange online PowerShell 的必要條件和指引。
 
 若要執行這些步驟，您必須選擇 [以系統管理員身分執行] 選項，使用您所執行的 active Microsoft PowerShell 命令視窗。
 
@@ -57,7 +57,7 @@ ms.locfileid: "50604017"
    ```
 
    > [!NOTE]
-   > 如果您已經 [完成安裝 EXO V2 模組](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)，上一個命令會依照寫好的內容的運作。
+   > 如果您已經 [完成安裝 EXO V2 模組](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)，上一個命令會依照寫好的內容的運作。
    
 2. 您需要執行的命令會使用下列語法:
 

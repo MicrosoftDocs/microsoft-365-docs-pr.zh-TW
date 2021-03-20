@@ -11,12 +11,12 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 213d7a3680504fdd13b63568627a97dc0c0c6496
-  ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+  ms.openlocfilehash: fe5cdfb7106a3ee8b9b14a5e02374b4e1f4d9264
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/29/2020
-  ms.locfileid: "47306908"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50915743"
 landingContent:
 - title: 管理電子郵件
   linkLists:
@@ -65,10 +65,10 @@ landingContent:
   - linkListType: how-to-guide
     links:
     - text: 尋找並修正電子郵件傳遞問題
-      url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
+      url: /exchange/troubleshoot/mail-delivery/email-delivery-issues
     - text: 尋找並修正新增網域或 DNS 記錄後所發生的問題
       url: ../get-help-with-domains/find-and-fix-issues.md
     - text: 復原使用者信箱中刪除的郵件
-      url: https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox
+      url: /Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages
     - text: 修正 Microsoft 365 與 Exchange Online 中的 Outlook 連線問題
       url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

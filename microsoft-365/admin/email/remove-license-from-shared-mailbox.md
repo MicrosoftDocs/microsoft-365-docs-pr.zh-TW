@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '從共用信箱中移除授權，將其指派給其他使用者。 '
-ms.openlocfilehash: 11d5185cc3f79899a737ddccc0a93160acb380bc
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 1acd549936212db7f722355ed1f2518ff6bbac18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698300"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915683"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>從共用信箱移除授權
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ ms.locfileid: "49698300"
 
 5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
 
-6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/buy-licenses.md)。
 
 ::: moniker-end
 
@@ -80,11 +80,11 @@ ms.locfileid: "49698300"
 
 3. [ **產品授權** ] 頁面上，針對您想要移除的授權，將切換設定為 [ **關閉** ]。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
 
 5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
 
-6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/buy-licenses.md)。
 
 ::: moniker-end
 
@@ -99,11 +99,11 @@ ms.locfileid: "49698300"
 
 3. [ **產品授權** ] 頁面上，針對您想要移除的授權，將切換設定為 [ **關閉** ]。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
 
 5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
 
-6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/buy-licenses.md)。
 
 ::: moniker-end 
 

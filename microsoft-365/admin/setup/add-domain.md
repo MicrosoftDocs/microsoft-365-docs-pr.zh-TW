@@ -26,19 +26,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Microsoft 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: 5a3c86fb2b2f93e9da844c15a55555c5d0d7b5c1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 30bce7dd207532c441fdfaf572add44baec16d8d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114252"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914267"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>新增網域至 Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ ms.locfileid: "50114252"
 
     如果入口網站無法辨認您的註冊機構，您可以[遵循這些一般指示](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (機器翻譯)。
     
-    查看我們的[特定主機指示](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) 來尋找您的主機，並遵循步驟來新增您需要的所有記錄。 
+    查看我們的[特定主機指示](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) 來尋找您的主機，並遵循步驟來新增您需要的所有記錄。 
     
     如果您不知道您網域的 DNS 主機提供者或網域註冊機構，請參閱[尋找您的網域註冊機構或 DNS 主機服務提供者](../get-help-with-domains/find-your-domain-registrar.md)。
     
@@ -118,7 +118,7 @@ ms.locfileid: "50114252"
 
 5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
     
-6. 選取 [儲存 **]**。
+6. 選取 [儲存]。
 
 ## <a name="registrars-with-domain-connect"></a>使用網域連接的註冊機構
 

@@ -1,5 +1,5 @@
 ---
-title: 開啟或關閉 Microsoft 預約
+title: 開啟或關閉 Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,14 +9,14 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: 瞭解如何在 Microsoft 365 中取得 Microsoft 預約的存取權。
-ms.openlocfilehash: 7e4eaa1e474f3f49807b842097c855193f028af0
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 7b1582a480ac4fdcd5a131febcc59450aa13e299
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126588"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913763"
 ---
-# <a name="turn-microsoft-bookings-on-or-off"></a>開啟或關閉 Microsoft 預約
+# <a name="turn-microsoft-bookings-on-or-off"></a>開啟或關閉 Microsoft Bookings
 
 您的整個組織或特定使用者可以開啟或關閉預約。 當您為使用者開啟預約時，他們可以建立預約頁面、建立行事曆，以及允許其他人與他們一起預約時間。
 
@@ -38,7 +38,7 @@ ms.locfileid: "49126588"
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>使用 PowerShell 為您的組織開啟或關閉預定功能
 
-若要使用 PowerShell Cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)為您的組織開啟或關閉預約，請連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) ，並執行下列命令：
+若要使用 PowerShell Cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)為您的組織開啟或關閉預約，請連線 [至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ，並執行下列命令：
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
@@ -74,7 +74,7 @@ ms.locfileid: "49126588"
 
 包含在此原則中的使用者可以建立新的預約行事曆，也可以新增為任何產能的人員， (包括「系統管理員」角色) 現有的預約行事曆。 未包含在此原則中的使用者將無法建立新的預約行事曆，如果他們嘗試這麼做，將會收到錯誤訊息。
 
-您必須使用 Exchange Online PowerShell 執行下列命令。 如需有關執行 Exchange Online Cmdlet 的詳細資訊，請參閱 [Connect To Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+您必須使用 Exchange Online PowerShell 執行下列命令。 如需有關執行 Exchange Online Cmdlet 的詳細資訊，請參閱 [Connect To Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 > [!IMPORTANT]
 > 下列步驟會假設您的組織中沒有建立其他 Outlook Web App (OWA) 信箱原則。
@@ -85,7 +85,7 @@ ms.locfileid: "49126588"
    New-OwaMailboxPolicy -Name "BookingsCreators"
    ```
 
-   如需詳細資訊，請參閱 [New-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy)。
+   如需詳細資訊，請參閱 [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy)。
 
 2. 針對您想要授與建立預約行事曆許可權的每個使用者執行此命令，將此原則指派給相關的使用者。
 
@@ -93,7 +93,7 @@ ms.locfileid: "49126588"
    Set-CASMailbox -Identity <someCreator@emailaddress> -OwaMailboxPolicy "BookingsCreators"
    ```
 
-   如需詳細資訊，請參閱 [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox)。
+   如需詳細資訊，請參閱 [Set-CASMailbox](/powershell/module/exchange/set-casmailbox)。
 
 3. 選用：如果您想要對組織中的其他所有使用者停用預定，請執行此命令。
 
@@ -101,10 +101,10 @@ ms.locfileid: "49126588"
    Set-OwaMailboxPolicy "OwaMailboxPolicy-Default" -BookingsMailboxCreationEnabled:$false
    ```
 
-   如需詳細資訊，請參閱＜[Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy)＞。
+   如需詳細資訊，請參閱＜[Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy)＞。
 
 如需 OWA 信箱原則的詳細資訊，請參閱下列主題：
 
-- [在 Exchange Online 中建立 Outlook 網頁版信箱原則](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [在 Exchange Online 中建立 Outlook 網頁版信箱原則](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 
-- [在 Exchange Online 中的信箱上套用或移除網頁型 Outlook 信箱原則](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [在 Exchange Online 中的信箱上套用或移除網頁型 Outlook 信箱原則](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)

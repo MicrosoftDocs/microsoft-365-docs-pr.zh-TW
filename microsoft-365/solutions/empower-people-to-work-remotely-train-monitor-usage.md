@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 訓練您的使用者，並確保問題獲得快速處理。
-ms.openlocfilehash: a987a08b2ebd27f7a9cc299e5c8fbae0376437a3
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 662b0d6d7a40a69b3e5c10f3aeea63c2e5237d6d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681381"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916163"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>步驟6：訓練遠端工作者和處理使用上的意見反應
 
@@ -32,7 +32,7 @@ ms.locfileid: "48681381"
 - 使用裝置，以及如何使用端點管理原則來封鎖不合規或未受管理裝置的存取。
 - 使用允許的應用程式，以及如何使用端點管理應用程式原則來封鎖使用部分應用程式。
 - Windows 10 企業版安全性功能。
-- 如何使用 [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) 來聊天、視訊會議、共用文件和往來交談。
+- 如何使用 [Teams](/microsoftteams/training-microsoft-teams-landing-page) 來聊天、視訊會議、共用文件和往來交談。
 - 如何使用 [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) 來傳送電子郵件和排程。
 - 如何使用 [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) 小組或通訊網站和 [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) 資料夾來瀏覽使用者文件庫中的檔案以及屬於群組的檔案並共同作業。
 
@@ -50,4 +50,3 @@ ms.locfileid: "48681381"
 ## <a name="results-of-step-6"></a>步驟 6 的結果
 
 您的遠端工作者已受過訓練，其可以在會有人回應且公開的論壇中提供意見反應，並發表與遠端存取和生產力應用程式有關的問題。
-

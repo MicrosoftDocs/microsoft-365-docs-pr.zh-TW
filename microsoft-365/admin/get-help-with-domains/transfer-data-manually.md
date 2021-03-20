@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 尋找當您變更計畫或公司名稱時，如何在兩部 Microsoft 365 帳戶之間手動傳輸資料，或將多個訂閱組合為一個。
-ms.openlocfilehash: b7b0bb9c9b95b31d98040ae90632ef87a7fb0e3b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645140"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915503"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在兩個帳戶間手動傳輸資料
 
@@ -56,22 +56,22 @@ ms.locfileid: "48645140"
 
 移至每個帳戶的下列頁面，並根據舊帳戶的設定，設定新帳戶。
   
-如果您要將資料從 Microsoft 365 轉接至 Microsoft 365 中型企業或 Microsoft 365 企業版，系統管理員頁面會以不同的方式結構化。 觀賞 [影片：介紹 Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/)，然後移至下列位置，以查看系統管理設定。
+如果您要將資料從 Microsoft 365 轉接至 Microsoft 365 中型企業或 Microsoft 365 企業版，系統管理員頁面會以不同的方式結構化。 觀賞 [影片：介紹 Microsoft 365 Enterprise](../index.yml)，然後移至下列位置，以查看系統管理設定。
   
 Microsoft 365 企業版和 Microsoft 365 中型企業版：
   
 |**位置**|**用途**|
 |:-----|:-----|
-|系統**管理員** \>**Microsoft 365** \>**服務設定** <br/> |選取每個索引標籤，以查看郵件、網站、Lync、使用者軟體、密碼、群組、版權管理及行動裝置的設定。  <br/> |
-|系統**管理員** \>**Exchange** <br/> | Exchange Online 設定  <br/> |
-|系統**管理員** \>**SharePoint** <br/> | SharePoint 線上設定  <br/> |
-|系統**管理員** \>**商務用 Skype** <br/> |其他商務用 Skype 設定  <br/> |
+|系統 **管理員** \>**Microsoft 365** \>**服務設定** <br/> |選取每個索引標籤，以查看郵件、網站、Lync、使用者軟體、密碼、群組、版權管理及行動裝置的設定。  <br/> |
+|系統 **管理員** \>**Exchange** <br/> | Exchange Online 設定  <br/> |
+|系統 **管理員** \>**SharePoint** <br/> | SharePoint 線上設定  <br/> |
+|系統 **管理員** \>**商務用 Skype** <br/> |其他商務用 Skype 設定  <br/> |
 
 適用于 Microsoft 365 Small Business
   
 |**位置**|**用途**|
 |:-----|:-----|
-|系統**管理員** \>**管理整個組織的設定** <br/> |管理設定  <br/> |
+|系統 **管理員** \>**管理整個組織的設定** <br/> |管理設定  <br/> |
 
 ## <a name="transfer-a-public-website-between-subscriptions"></a>在訂閱間傳輸公用網站
 
@@ -80,7 +80,7 @@ Microsoft 365 企業版和 Microsoft 365 中型企業版：
 > [!NOTE]
 > 如果您的公用網站主控于 DNS 主機服務提供者，則不需要進行任何變更。 您的轉換不會影響此方式。
   
-若要將文件庫或清單內容從 SharePoint 線上環境儲存至檔案共用或本機電腦，請參閱 [手動遷移 SharePoint 線上內容](https://go.microsoft.com/fwlink/p/?LinkId=402910)。
+若要將文件庫或清單內容從 SharePoint 線上環境儲存至檔案共用或本機電腦，請參閱 [手動遷移 SharePoint 線上內容](/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
   
 > [!NOTE]
 > 公用網站遷移應用程式無法將資料傳輸至不同的訂閱。

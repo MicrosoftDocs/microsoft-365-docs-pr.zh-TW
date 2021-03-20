@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 瞭解如何在瀏覽器和 Power BI Desktop 中自訂報告。
-ms.openlocfilehash: 3c662dfa91939c68f0aa0a85c19a1fab003064bf
-ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
+ms.openlocfilehash: 18b4352d3aaa2fd16b74f78e1f80da3ee98367a6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50572647"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914003"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用方式分析中自訂報告
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -154,6 +154,4 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
     
     資料負載可能需要一些時間，完成後，您可以將檔案儲存為 .pbix 檔案，繼續自訂報告或將額外的資料來源帶入此報告。
     
-4. 遵循 [POWER bi 檔快速](https://go.microsoft.com/fwlink/?linkid=849802) 入門，以瞭解如何建立報表、將其發佈至 Power BI 服務，以及與您的組織共用。 請遵循此路徑進行自訂和共用，可能需要額外的 Power BI 授權。 如需詳細資訊，請參閱 Power BI [授權指南](https://go.microsoft.com/fwlink/p/?linkid=849803) 。 
-    
-
+4. 遵循 [POWER bi 檔快速](/power-bi/fundamentals/desktop-getting-started) 入門，以瞭解如何建立報表、將其發佈至 Power BI 服務，以及與您的組織共用。 請遵循此路徑進行自訂和共用，可能需要額外的 Power BI 授權。 如需詳細資訊，請參閱 Power BI [授權指南](https://go.microsoft.com/fwlink/p/?linkid=849803) 。 

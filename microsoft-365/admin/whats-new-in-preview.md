@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: 833f782e071e06d837ca5eacfcb72e2d6e16c8fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717650"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913931"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -41,13 +41,13 @@ ms.locfileid: "50717650"
 
 如果您想要瞭解其他 Microsoft 雲端服務的新功能：
 
-- [Azure Active Directory 的新功能](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
-- [Exchange 系統管理中心的新功能](https://docs.microsoft.com/Exchange/whats-new)
-- [Microsoft Intune 的新功能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Microsoft 365 規範中心的新功能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [Microsoft 365 Defender 的新功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
-- [SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
+- [Azure Active Directory 的新功能](/azure/active-directory/fundamentals/whats-new)
+- [Exchange 系統管理中心的新功能](/Exchange/whats-new)
+- [Microsoft Intune 的新功能](/mem/intune/fundamentals/whats-new)
+- [Microsoft 365 規範中心的新功能](/Office365/SecurityCompliance/whats-new)
+- [Microsoft 365 Defender 的新功能](../security/mtp/whats-new.md)
+- [SharePoint 系統管理中心的新功能](/sharepoint/what-s-new-in-admin-center)
+- [Office 更新](/OfficeUpdates/)
 
 ## <a name="ignite-2021-march"></a>Ignite 2021 (三月份) 
 
@@ -104,7 +104,7 @@ ms.locfileid: "50717650"
 - 移至 [ **使用者**]，然後在 [其他動作] 功能表中，選取 [ **管理優先順序帳戶** ]，將使用者新增至清單。
 - 移至 [ **設定**]，尋找「安裝程式 **工作」監視您最重要的帳戶**，然後選取 [ **開始**]。
 
-如需優先順序帳戶的詳細資訊，請參閱 [監視優先順序帳戶](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
+如需優先順序帳戶的詳細資訊，請參閱 [監視優先順序帳戶](./setup/priority-accounts.md)。
 
 ### <a name="search-faster-and-get-better-results-from-any-page"></a>更快地搜尋並取得任何頁面的結果
 
@@ -163,13 +163,13 @@ ms.locfileid: "50717650"
 
 ![在 [喜好設定] 按鈕旁邊的命令列中，高亮顯示「規劃同步處理」的郵件中心頁面。](../media/MAC-WN-MCPlannerSync.png)
 
-若要深入瞭解它，請參閱本文和影片以查看其運作方式： [在 Planner 中追蹤您的訊息中心文章](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+若要深入瞭解它，請參閱本文和影片以查看其運作方式： [在 Planner 中追蹤您的訊息中心文章](/Office365/Planner/track-message-center-tasks-planner)
 
 ### <a name="documentation-training-and-videos"></a>檔、訓練和影片
 
 - 適用于 Microsoft Ignite--[虛擬中樞](https://adoption.microsoft.com/virtual-hub/)的全新和即時的品牌。 深入深入瞭解 IT 專業人員和開發人員的技術訓練。 在 #SIDETRACKED 中，快速尋找20個新影片，作為的一部分，這一年的 Ignite 系統管理員追蹤名稱。
 - [Microsoft 365 vcd 系列的新](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) 功能：本月，我們涵蓋在小組和網頁上的白板中可用的新功能、如何自動化使用者對 Azure AD 的布建、新的 Power 自動化觸發器及小組中的動作等等。 並在下個月繼續深入瞭解，我們將在 Ignite 取得所有重要事情的回顧！
-- 我們會先重新設計著重于解決方案的 [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365) 頁面。 我們會在此頁面上醒目提示新的解決方案，因此請留意。
+- 我們會先重新設計著重于解決方案的 [Microsoft 365 檔](/microsoft-365) 頁面。 我們會在此頁面上醒目提示新的解決方案，因此請留意。
 
 ![Microsoft 365 解決方案的新登陸分頁檔，含「提供遠端工作者」等解決方案。](../media/MAC-WN-M365Docspage.png)
 
@@ -221,7 +221,7 @@ ms.locfileid: "50717650"
 
 與每月的 Enterprise 通道版本一起，我們也會修訂現有更新通道的名稱。 例如，每月通道都會重新命名為目前通道。 新的名稱會在2020年6月9日生效。
 
-如需詳細資訊，請參閱 [Microsoft 365 應用程式的更新通道變更](https://docs.microsoft.com/DeployOffice/update-channels-changes)。
+如需詳細資訊，請參閱 [Microsoft 365 Apps 更新通道的變更](/DeployOffice/update-channels-changes) (部分機器翻譯)。
 
 ### <a name="new-admin-roles"></a>新系統管理員角色
 
@@ -231,7 +231,7 @@ ms.locfileid: "50717650"
 - 網路管理員角色可讓使用者管理網路位置，並查看 Microsoft 365 軟體的網路洞察力，以作為服務應用程式。
 - 印表機系統管理員角色會授與管理印表機及印表機連線所有層面的許可權。
 - 印表機技術人員是印表機系統管理員角色的子集，使用者可以在其中註冊及取消註冊印表機，以及更新印表機狀態。
-若要瞭解更多有關這些角色的資訊，請參閱 [關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+若要瞭解更多有關這些角色的資訊，請參閱 [關於系統管理員角色](./add-users/about-admin-roles.md)。
 
 ### <a name="export-groups-list"></a>匯出群組清單
 
@@ -239,7 +239,7 @@ ms.locfileid: "50717650"
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 解決方案與架構中心
 
-只是在這個月發行新的網站， [https://docs.microsoft.com](https://docs.microsoft.com) 稱為 [Microsoft 365 解決方案和架構中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)，其結合了您需要的技術指導方針，以瞭解、規劃及實施整合的 Microsoft 365 解決方案，以進行安全且相容的共同作業。 在此中心，您會發現：
+只是在這個月發行新的網站， [https://docs.microsoft.com]() 稱為 [Microsoft 365 解決方案和架構中心](../solutions/index.yml)，其結合了您需要的技術指導方針，以瞭解、規劃及實施整合的 Microsoft 365 解決方案，以進行安全且相容的共同作業。 在此中心，您會發現：
 
 - 基礎解決方案指導方針
 - 工作負載解決方案與案例指南
@@ -250,7 +250,7 @@ ms.locfileid: "50717650"
 ### <a name="docs-training-and-videos-may"></a>檔、訓練和影片 (可能) 
 
 - **Microsoft 365 vcd 系列的新功能**：本月，我們涵蓋小組系統管理員和安全性與合規性中心的新支援體驗，與郵件中心整合 Planner，以及 Microsoft 小組中新的3x3 影片版面配置。 
-- [Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/)的「協助中心」頁面已更新，可協助您更快速地找到您需要的專案。 而且，如果您現在查看此頁面，我們已新增了一張卡片，通知您重要的更新和變更。
+- [Microsoft 365 系統管理中心](./index.yml)的「協助中心」頁面已更新，可協助您更快速地找到您需要的專案。 而且，如果您現在查看此頁面，我們已新增了一張卡片，通知您重要的更新和變更。
 
 ## <a name="april-2020"></a>2020 年 4 月
 

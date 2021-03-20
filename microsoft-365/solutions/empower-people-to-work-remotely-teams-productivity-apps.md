@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 讓您的使用者透過 Teams、Exchange、SharePoint 和其他 Microsoft 365 服務提高生產力。
-ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: 7b62191d08e5ff91e54bb16b06a0511e02f16b6d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055485"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916175"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步驟 5： 部署遠端工作者生產力應用程式和服務
 
@@ -42,7 +42,7 @@ ms.locfileid: "50055485"
 
 Teams 可讓您在同一個地方交談、開會、通話和共同作業。 數百萬個人每天都在 Teams 中完成自己的工作，因為此工具可將您從遠端工作所需的一切都整合到一個中樞，以進行團隊作業。 
 
-如需詳細指導方針，請參閱[支援使用 Microsoft Teams 的遠端工作者](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)。 
+如需詳細指導方針，請參閱[支援使用 Microsoft Teams 的遠端工作者](/microsoftteams/support-remote-work-with-teams)。 
 
 觀看[使用 Microsoft Teams 啟用混合式工作網路廣播](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)，以取得將 Teams 用於遠端工作的指導方針和示範。
 
@@ -76,10 +76,10 @@ Teams 為應用程式和工作流程提供一個平台，您可以從電腦版�
 
 您可能必須將文件從以下位置移轉至 SharePoint 或 OneDrive：
 
-- [SharePoint Server 小組網站](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
-- [MySites](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
-- [檔案共用](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
-- [Box](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+- [SharePoint Server 小組網站](/sharepointmigration/sp-teams-sites-migration-guide)
+- [MySites](/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [檔案共用](/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [Box](/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
 若要保護 SharePoint 和 OneDrive，請參閱[此文章](../security/office-365-security/sharepoint-file-access-policies.md)的建議身分識別和裝置存取原則。
 
@@ -87,15 +87,15 @@ Teams 為應用程式和工作流程提供一個平台，您可以從電腦版�
 
 Microsoft 365 Apps 對於企業而言，是最具生產力且安全的 Office 體驗，可讓使用者隨時隨地順利地共同作業。 遠端工作者可以同時與多人共同處理文件、即時查看編輯及變更，並與其他人在任何筆記型電腦、電腦或行動裝置上共同撰寫。
 
-如需詳細資訊，請參閱 [Microsoft 365 Apps 的部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)。
+如需詳細資訊，請參閱 [Microsoft 365 Apps 的部署指南](/deployoffice/deployment-guide-microsoft-365-apps)。
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>適用於生產力應用程式和服務的系統管理技術資源
 
-- [支援使用 Microsoft Teams 的遠端工作者](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [支援使用 Microsoft Teams 的遠端工作者](/microsoftteams/support-remote-work-with-teams)
 - [使用 Microsoft Teams 啟用混合式工作網路廣播](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Teams 客戶成功套件下載](https://www.microsoft.com/download/details.aspx?id=54244)
-- [推動 Teams 採用的工具](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
-- [建立 Microsoft Teams 的變更管理策略](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) (部分機器翻譯)
+- [推動 Teams 採用的工具](/microsoftteams/adopt-tools-and-downloads) 
+- [建立 Microsoft Teams 的變更管理策略](/MicrosoftTeams/change-management-strategy) (部分機器翻譯)
 - [擁有三層防護的 Teams](configure-teams-three-tiers-protection.md)
 
 ## <a name="user-training-resources-for-productivity-apps-and-services"></a>以生產力應用程式和服務作為使用者培訓資源

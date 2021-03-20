@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: d4d21678be0d8e6a845c8909d2dc818f02f79b24
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 9ded0294912a3c3c99e62913bcdc349de7bae1b5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509107"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915383"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在系統管理中心部署增益集
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
 5. 在下一個頁面上，選取 [ **所有人**]、[ **特定使用者/群組**] 或 [ **僅限我** ]，以指定要部署增益集的人員。 使用 [搜尋] 方塊尋找特定的使用者或群組。 <br/>
 
     > [!NOTE]
-    > 若要瞭解適用于增益集的其他狀態，請參閱 [增益集狀態](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md)。
+    > 若要瞭解適用于增益集的其他狀態，請參閱 [增益集狀態](./manage-addins-in-the-admin-center.md)。
   
 6. 選取 [ **部署**]。
   
@@ -121,9 +121,9 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
 
 - 從使用者的文件讀取及寫入資料，以提供值給該使用者。
 
-如需 Office 增益集類型和功能的詳細資訊，請參閱 [Office 增益集平台概觀](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) (尤其是「分析 Office 增益集」一節)。
+如需 Office 增益集類型和功能的詳細資訊，請參閱 [Office 增益集平台概觀](/office/dev/add-ins/overview/office-add-ins) (尤其是「分析 Office 增益集」一節)。
   
-若要與使用者的文件互動，增益集必須在資訊清單中宣告需要的權限。五個層級的 JavaScript API 存取權限模型可為工作窗格增益集使用者提供基本的隱私權和安全性。Office 市集中的大多數增益集為 ReadWriteDocument 層級，且包含至少 ReadDocument 層級的大部分增益集支援功能。如需權限層級的詳細資訊，請參閱[要求取得用於內容和工作窗格增益集之 API 的權限](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins) (英文)。
+若要與使用者的文件互動，增益集必須在資訊清單中宣告需要的權限。五個層級的 JavaScript API 存取權限模型可為工作窗格增益集使用者提供基本的隱私權和安全性。Office 市集中的大多數增益集為 ReadWriteDocument 層級，且包含至少 ReadDocument 層級的大部分增益集支援功能。如需權限層級的詳細資訊，請參閱[要求取得用於內容和工作窗格增益集之 API 的權限](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins) (英文)。
   
 更新資訊清單時，通常是變更增益集的圖示和文字。有時則會變更增益集的命令。不過，增益集的權限不會遭到變更。執行增益集的所有程式碼和邏輯的 Web 應用程式可能隨時變更，這是 Web 應用程式的本質所致。
   
@@ -140,10 +140,10 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
 
 [在系統管理中心管理增益集](manage-addins-in-the-admin-center.md)
 
-[建立第一個 Word 工作窗格增益集](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator)。
+[建立第一個 Word 工作窗格增益集](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator)。
 
 [對存放區中的增益集進行未成年人和取得](minors-and-acquiring-addins-from-the-store.md)
   
-[使用集中式部署 PowerShell Cmdlet 來管理增益集](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
+[使用集中式部署 PowerShell Cmdlet 來管理增益集](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)
   
-[疑難排解：使用者未看到增益集](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[疑難排解：使用者未看到增益集](/office365/troubleshoot/access-management/user-not-seeing-add-ins)

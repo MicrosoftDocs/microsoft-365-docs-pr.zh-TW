@@ -25,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: '將您的初始電子郵件地址變更為類似 tom@fourthcoffee.com 的易記電子郵件地址。 若要這麼做，您必須購買功能變數名稱，並將其新增至 Microsoft 365。 '
-ms.openlocfilehash: 445b78f759cee79a794f9656afd5b26051534e26
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 10dff4e0523062ae763c08a972563dc8b5582038
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114018"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915923"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>變更電子郵件地址以使用您的自訂網域
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ ms.locfileid: "50114018"
 
 ::: moniker-end
 
-當您將網域的電子郵件變更為 Microsoft 365 時，當您在設定期間更新您網域的 MX 記錄時，所有傳送至該網域的電子郵件都會開始使用 Microsoft 365。 在您變更 MX 記錄之前，請確定已在 Microsoft 365 中新增使用者，並為已在您的網域上擁有電子郵件的所有人新增信箱。 不想將您網域中的每一個人的電子郵件移至 Microsoft 365 嗎？ 您可以 [只使用一些電子郵件地址試驗 Microsoft 365 的](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide)步驟。
+當您將網域的電子郵件變更為 Microsoft 365 時，當您在設定期間更新您網域的 MX 記錄時，所有傳送至該網域的電子郵件都會開始使用 Microsoft 365。 在您變更 MX 記錄之前，請確定已在 Microsoft 365 中新增使用者，並為已在您的網域上擁有電子郵件的所有人新增信箱。 不想將您網域中的每一個人的電子郵件移至 Microsoft 365 嗎？ 您可以 [只使用一些電子郵件地址試驗 Microsoft 365 的](../misc/pilot-microsoft-365-from-my-custom-domain.md?view=o365-worldwide)步驟。
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心變更您的電子郵件地址以使用您的自訂網域
 
@@ -99,4 +99,3 @@ ms.locfileid: "50114018"
 ## <a name="related-articles"></a>相關文章
 
 [使用 Microsoft 365 購買自訂網域](../get-help-with-domains/buy-a-domain-name.md)
- 

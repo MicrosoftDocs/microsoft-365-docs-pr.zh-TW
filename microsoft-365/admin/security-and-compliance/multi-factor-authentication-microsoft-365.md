@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 深入瞭解 Microsoft 365 中的多重要素驗證。
-ms.openlocfilehash: 5e72e3990db533b49041dc4167283b9487f23426
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: e1635e48e3948425a6d91f80fd07d50c474b73d7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105182"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914507"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 的多重要素驗證
 
@@ -81,7 +81,7 @@ ms.locfileid: "50105182"
 
 您可以使用安全性預設值搭配任何 Microsoft 365 方案。
 
-如需詳細資訊，請參閱這個[安全性預設概觀](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
+如需詳細資訊，請參閱這個[安全性預設概觀](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
 
 ### <a name="conditional-access-policies"></a>條件式存取原則
 
@@ -117,24 +117,24 @@ ms.locfileid: "50105182"
 
 此條件式存取原則可讓您以您自己的節奏向您的使用者推廣 MFA 需求。
 
-企業應該使用 [通用的條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) 來設定下列原則：
+企業應該使用 [通用的條件式存取原則](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) 來設定下列原則：
 
-- [要求系統管理員使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
-- [要求所有使用者使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [要求系統管理員使用 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [要求所有使用者使用 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [封鎖舊版驗證](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 
-如需詳細資訊，請參閱這個[條件式存取概觀](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
+如需詳細資訊，請參閱這個[條件式存取概觀](/azure/active-directory/conditional-access/overview)。
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-使用 Azure AD Identity Protection，您可以建立額外的條件式存取原則，以在登 [入風險為中低或高時，要求進行 MFA](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies#require-mfa-based-on-sign-in-risk)。
+使用 Azure AD Identity Protection，您可以建立額外的條件式存取原則，以在登 [入風險為中低或高時，要求進行 MFA](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)。
 
 您可以使用 Azure AD 身分識別保護和以風險為基礎的條件式存取原則：
 
 - Microsoft 365 E5
 - Azure AD 高級 P2 授權
 
-如需詳細資訊，請參閱這個 [Azure AD Identity Protection 概觀](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+如需詳細資訊，請參閱這個 [Azure AD Identity Protection 概觀](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 ### <a name="legacy-per-user-mfa-not-recommended"></a>不建議使用傳統個別使用者 MFA () 
 
@@ -176,6 +176,6 @@ ms.locfileid: "50105182"
 
 ## <a name="related-topics"></a>相關主題
 
-[影片：開啟多重要素驗證](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+[影片：開啟多重要素驗證](../../business-video/turn-on-mfa.md)
 
-[影片：針對您的電話開啟多重要素驗證](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
+[影片：為您的手機開啟多重要素驗證](../../business-video/set-up-mfa.md)

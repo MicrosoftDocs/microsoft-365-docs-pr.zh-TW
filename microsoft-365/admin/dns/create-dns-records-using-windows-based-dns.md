@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以在 Microsoft 的 Windows 基礎 DNS 上進行。
-ms.openlocfilehash: 8202ffe10b4a0ff9c94d863d92fc55c47ebb38d3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 9e5e42f847e740571944ea3db205282ec9a7a0e6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656840"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916043"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用以 Windows 為基礎的 DNS 建立 Microsoft 的 DNS 記錄
 
@@ -201,8 +201,7 @@ ms.locfileid: "49656840"
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>在內部部署 Active Directory 中用來做為 UPN 的非可路由電子郵件地址
 <a name="BKMK_ADNote"> </a>
 
-如果您想要將內部部署的 Active Directory 與 Microsoft 同步，請確定 Active Directory 使用者主體名稱 (UPN) 尾碼是有效的網域尾碼，而不是不受支援的網域尾碼，例如 @contoso。 如果您需要變更 UPN 尾碼，請參閱 how [to prepare a 不可路由的網域以進行目錄同步](https://docs.microsoft.com/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)處理。
+如果您想要將內部部署的 Active Directory 與 Microsoft 同步，請確定 Active Directory 使用者主體名稱 (UPN) 尾碼是有效的網域尾碼，而不是不受支援的網域尾碼，例如 @contoso。 如果您需要變更 UPN 尾碼，請參閱 how [to prepare a 不可路由的網域以進行目錄同步](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md)處理。
   
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
-  

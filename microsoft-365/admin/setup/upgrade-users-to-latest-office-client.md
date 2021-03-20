@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 深入瞭解如何將 Microsoft Office 升級為組織中使用者的最新 Office 用戶端。
-ms.openlocfilehash: 3f8ea0d16e1c27414b5f3e11e842e336fadb3e75
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 14be8d63b2acb3e4838640dc399595c0ba3f97f5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233315"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913991"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>將您的 Microsoft 365 for business 使用者升級至最新的 Office 用戶端
 
@@ -42,7 +42,7 @@ Office 2010 在10月13日，2020已到達支援的結束。 Microsoft 將無法�
 
 - 已探索之弱點的安全性修正程式
 
-如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap) 。
+如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](/deployoffice/endofsupport/office-2010-end-support-roadmap) 。
 
  **這個主題是正確的嗎？**
   
@@ -131,4 +131,4 @@ Office 2010 在10月13日，2020已到達支援的結束。 Microsoft 將無法�
 在您確認要升級的使用者擁有授權後，最後一個步驟是讓他們安裝 Office，請參閱 [在您的 PC 或 Mac 上下載並安裝或重新安裝 office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。
   
 > [!TIP]
-> 如果您不想讓使用者自行安裝 Office，請參閱 [管理 office 365 中的軟體下載設定](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)。 您可以使用 [Office 部署工具](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) ，將 office 軟體下載到您的本機網路，然後使用您一般使用的軟體部署方法來部署 office。
+> 如果您不想讓使用者自行安裝 Office，請參閱 [管理 office 365 中的軟體下載設定](/DeployOffice/manage-software-download-settings-office-365)。 您可以使用 [Office 部署工具](/DeployOffice/overview-office-deployment-tool) ，將 office 軟體下載到您的本機網路，然後使用您一般使用的軟體部署方法來部署 office。

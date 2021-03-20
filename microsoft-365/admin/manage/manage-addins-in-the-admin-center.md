@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用集中式增益集，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: b888c0f329e3f1f36f5aa566df7efbab07cd1f5f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 0750b6c9b91bc5cbd67d227fadb304bfc6cf7537
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509131"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915395"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在系統管理中心管理增益集
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ Office 增益集可協助您個人化檔，並簡化存取網頁上資訊的方�
 
 在管理員為組織中的使用者部署增益集後，系統管理員可以關閉或開啟增益集、編輯、刪除及管理增益集的存取。
 
-如需從系統管理中心安裝增益集的詳細資訊，請參閱 [在系統管理中心部署增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)。
+如需從系統管理中心安裝增益集的詳細資訊，請參閱 [在系統管理中心部署增益集](./manage-deployment-of-add-ins.md)。
   
 ## <a name="add-in-states"></a>增益集狀態
 
@@ -87,7 +87,7 @@ Office 增益集可協助您個人化檔，並簡化存取網頁上資訊的方�
 ## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>在 Outlook) 以外的所有用戶端上關閉 Office 存放區，以防止增益集下載 (
 
 > [!NOTE]
-> Outlook 增益集安裝是由 [不同](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx)的程式管理。
+> Outlook 增益集安裝是由 [不同](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)的程式管理。
 
 做為組織，您可能想要防止從 Office Store 下載新的 Office 增益集。 這可以與集中式部署搭配使用，以確保只有組織認可的增益集部署至組織內的使用者。
   
@@ -131,10 +131,10 @@ Office 增益集可協助您個人化檔，並簡化存取網頁上資訊的方�
     
 這不會讓系統管理員使用集中式部署從 Office Store 指派增益集。
   
-若要防止使用者使用 Microsoft 帳戶登入，您可以限制登入只使用組織帳戶。 如需詳細資訊，請參閱 [Office 2016 的身分識別、驗證及授權](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx)。  
+若要防止使用者使用 Microsoft 帳戶登入，您可以限制登入只使用組織帳戶。 如需詳細資訊，請參閱 [Office 2016 的身分識別、驗證及授權](/DeployOffice/security/identity-authentication-and-authorization-in-office)。  
 
 > [!NOTE]
-> 防止使用者存取 office 書店也會防止使用者在 [進行測試時旁載 Office 增益集](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)。
+> 防止使用者存取 office 書店也會防止使用者在 [進行測試時旁載 Office 增益集](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)。
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>更多關於使用者使用增益集的體驗
 
@@ -162,12 +162,12 @@ Office 增益集可協助您個人化檔，並簡化存取網頁上資訊的方�
 
 ## <a name="learn-more"></a>深入了解
 
-[在系統管理中心部署增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
+[在系統管理中心部署增益集](./manage-deployment-of-add-ins.md)
 
-深入了解如何建立及建置 [Office 增益集](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)。
+深入了解如何建立及建置 [Office 增益集](/office/dev/add-ins/overview/office-add-ins)。
   
-[使用集中式部署 PowerShell Cmdlet 來管理增益集](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)。
+[使用集中式部署 PowerShell Cmdlet 來管理增益集](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)。
   
-[疑難排解：使用者未看到增益集](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[疑難排解：使用者未看到增益集](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
 
-[Microsoft Store 中的未成年人和取得增益集](https://docs.microsoft.com/microsoft-365/admin/manage/minors-and-acquiring-addins-from-the-store)
+[Microsoft Store 中的未成年人和取得增益集](./minors-and-acquiring-addins-from-the-store.md)

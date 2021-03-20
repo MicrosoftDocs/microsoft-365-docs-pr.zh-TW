@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '建立會議室或設備信箱，讓貴組織中的每個人都可以使用 Outlook 預約會議或活動所需的資源。 '
-ms.openlocfilehash: ab48a0177acd212ff330a4a772ef84843406a3d5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399599"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915167"
 ---
 # <a name="room-and-equipment-mailboxes"></a>會議室和設備信箱
 
 如果您有每個人都需要用到的會議室、公務車或設備，您就必須設法讓每個人都能夠預約這些資源。最好的方法是在 Microsoft 365 中為每個資源建立會議室或設備信箱。您可能會為您的一樓會議室、媒體設備或物流貨車建立會議室或設備信箱。
   
-一旦建立會議室或設備信箱，公司中的每個人都可以使用 Outlook 預約會議或活動所需的資源。 若要了解**使用方法**和**設定方法**，請參閱下列兩個索引標籤。 以下是一些有關會議室與設備信箱的其他常見問題。 
+一旦建立會議室或設備信箱，公司中的每個人都可以使用 Outlook 預約會議或活動所需的資源。 若要了解 **使用方法** 和 **設定方法**，請參閱下列兩個索引標籤。 以下是一些有關會議室與設備信箱的其他常見問題。 
   
 ## <a name="use-room-and-equipment-mailboxes"></a>使用會議室和設備信箱
 
@@ -47,7 +47,7 @@ ms.locfileid: "44399599"
   
 4. 在 **[主旨]** 行中，輸入預約或會議的目的。 
     
-5. 變更 [位置]**** 的值或保留原狀。 
+5. 變更 [位置] 的值或保留原狀。 
     
 6. 變更 **[開始時間]** 與 **[結束時間]**。 或選取 **[全天活動]**。 若要讓會議或預約重複發生，請選取頂端的 **[週期性]**。<br/>![預約會議時間](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
@@ -69,7 +69,7 @@ ms.locfileid: "44399599"
     
 3. 填寫會議室或設備欄位：<br/>![Microsoft 365 中的新增會議室信箱](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
-  - **會議室**或**設備**：您想要建立的信箱類型。
+  - **會議室** 或 **設備**：您想要建立的信箱類型。
     
   - **名稱**：易記的名稱或甚至是簡短的描述。
     
@@ -88,7 +88,7 @@ ms.locfileid: "44399599"
 6. 如果您做了變更，請選取 **[儲存]**，然後選取 **[關閉]**。
 
 > [!Note]
-> 若要確保會議室和設備信箱安全，請封鎖登入這些信箱。 如需詳細資訊，請參閱[封鎖登入共用信箱帳戶](https://docs.microsoft.com/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account) (部分內容為機器翻譯)。
+> 若要確保會議室和設備信箱安全，請封鎖登入這些信箱。 如需詳細資訊，請參閱[封鎖登入共用信箱帳戶](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account) (部分內容為機器翻譯)。
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>有關會議室與設備信箱的常見問題。
 
@@ -110,4 +110,4 @@ ms.locfileid: "44399599"
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>是否需要擁有者來負責會議室或設備的預約？
 
- 否，您不需要任何人來負責會議室信箱或設備信箱。 
+ 否，您不需要任何人來負責會議室信箱或設備信箱。

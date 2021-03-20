@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加強貴組織對密碼攻擊的防護，以及為何應禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: 66a4048ac1add3a0d47f256dc29519a91ae6cb11
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926711"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914723"
 ---
 # <a name="password-policy-recommendations"></a>密碼原則建議
 
@@ -136,10 +136,10 @@ ms.locfileid: "49926711"
 
 ## <a name="related-articles"></a>相關文章
 
-[重設密碼](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+[重設密碼](../add-users/reset-passwords.md)
 
-[設定個別使用者的密碼永不過期](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+[設定個別使用者的密碼永不過期](../add-users/set-password-to-never-expire.md)
 
-[讓使用者重設自己的密碼](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md)
 
-[重新傳送使用者的密碼 - 系統管理說明](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)
+[重新傳送使用者的密碼 - 系統管理說明](../add-users/resend-user-password.md)

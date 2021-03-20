@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解如何在 Microsoft 365 系統管理中心設定組織的密碼到期原則。
-ms.openlocfilehash: 4a7b544b6eded6f0cd6441ad7f6b02de790e5e44
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: ffe3ca74ce901eef359e1bcb80c4044ce4bf9ad7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915071"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?view=o365-worldwide)。
 
 ::: moniker-end
 
@@ -75,25 +75,25 @@ ms.locfileid: "50603981"
 
 ## <a name="prevent-last-password-from-being-used-again"></a>避免再次使用上次的密碼
 
-如果想要避免您的使用者回收舊密碼，您可以在內部部署 Active Directory (AD) 中強制使用密碼記錄來執行此動作。 請參閱 [建立自訂密碼原則](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)。
+如果想要避免您的使用者回收舊密碼，您可以在內部部署 Active Directory (AD) 中強制使用密碼記錄來執行此動作。 請參閱 [建立自訂密碼原則](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)。
 
-在 Azure AD 中，當使用者變更密碼時，不能再次使用最後一個密碼。 密碼原則會套用至在 Azure AD 中建立並直接管理的所有使用者帳戶。 不能修改此密碼原則。 請參閱 [Azure AD 密碼原則](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)。
+在 Azure AD 中，當使用者變更密碼時，不能再次使用最後一個密碼。 密碼原則會套用至在 Azure AD 中建立並直接管理的所有使用者帳戶。 不能修改此密碼原則。 請參閱 [Azure AD 密碼原則](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)。
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>將內部部署 Active Directory 的使用者密碼雜湊同步處理到 Azure AD (Microsoft 365)
 
 本文用於為僅限雲端使用者 (Azure AD) 設定到期原則。 不適用於使用密碼雜湊同步處理、傳遞驗證或內部部署同盟 (例如 ADFS) 的混合式身分識別使用者。
   
-若要了解如何將使用者密碼雜湊從內部部署 AD 同步處理到 Azure AD，請參閱[使用 Azure AD Connect 同步處理實作密碼雜湊同步處理](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。
+若要了解如何將使用者密碼雜湊從內部部署 AD 同步處理到 Azure AD，請參閱[使用 Azure AD Connect 同步處理實作密碼雜湊同步處理](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。
 
 ## <a name="password-policies-and-account-restrictions-in-azure-active-directory"></a>密碼原則和 Azure Active Directory 中的帳戶限制
 
-您可以設定更多密碼原則和 Azure Active Directory 中的限制。 如需詳細資訊，請參閱 [密碼原則和 Azure Active Directory 中的帳戶限制](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy)。
+您可以設定更多密碼原則和 Azure Active Directory 中的限制。 如需詳細資訊，請參閱 [密碼原則和 Azure Active Directory 中的帳戶限制](/azure/active-directory/authentication/concept-sspr-policy)。
 
 ## <a name="update-password-policy"></a>已更新密碼原則
 
 Set-MsolPasswordPolicy 指令會更新指定網域或租使用者的密碼原則。 需要進行兩個設定;一是在必須變更之前，指出密碼保持有效的時間長度，而二是指出在使用者收到密碼即將到期的第一次通知時所觸發的密碼到期日前的天數。
 
-若要瞭解如何更新特定網域或租使用者的密碼原則，請參閱 [Set-MsolPasswordPolicy](https://docs.microsoft.com/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)。
+若要瞭解如何更新特定網域或租使用者的密碼原則，請參閱 [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)。
 
 ## <a name="related-content"></a>相關內容
 

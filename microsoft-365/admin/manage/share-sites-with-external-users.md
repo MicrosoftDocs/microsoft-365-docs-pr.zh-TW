@@ -21,19 +21,19 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '瞭解如何與組織外部的人員共用網站和檔案。 '
-ms.openlocfilehash: 3857cee3073950bbb9c130368abdd7df68d0da2a
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 585034580fd18d9584b4df3d0bec7026cf207f50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114462"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915034"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>與來賓使用者共用網站和檔案
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -75,12 +75,10 @@ ms.locfileid: "50114462"
   
 2. 在開啟的頁面上，選擇使用者是否可以只與現有來賓共用、新的和現有的來賓或任何人共用。 
     
-3. 選取 [儲存 **]**。
+3. 選取 [儲存]。
     
 在組織層級啟用外部共用之後，您可以微調共用設定，以停用特定網站的外部共用。 如需詳細資訊，請參閱 [開啟或關閉網站的外部共用](/sharepoint/change-external-sharing-site)。
   
 
   
-
-    
 

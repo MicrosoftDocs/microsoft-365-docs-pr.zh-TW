@@ -18,33 +18,33 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
-description: 深入瞭解 Microsoft 365 for business 如何協助您使用一般資料保護規定（GDPR）程式。
-ms.openlocfilehash: 066803e15fe107c8a20b61d9871b6807629f2a9f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 瞭解 Microsoft 365 for business 如何協助您 (GDPR) 程式的一般資料保護法規。
+ms.openlocfilehash: c00dec46e47bde8afef8ffb2cd67dfc00ea98950
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399155"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914495"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR 簡體：適用于小型企業的指南
 
  *使用 Microsoft 365 for business 來緩解及管理 GDPR 合規性* 
   
-一般資料保護規定（GDPR）是一種歐盟（EU）法規，規定組織應如何處理個人資料。 GDPR 是因為會在2018年5月25日強制進入。 如果您的商務銷售、提供服務給或採用歐盟的公民，則[GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en)將會影響您。 
+一般資料保護法規 (GDPR) 是一種歐盟 (歐盟) 法規，規定組織應如何處理個人資料。 GDPR 是因為會在2018年5月25日強制進入。 如果您的商務銷售、提供服務給或採用歐盟的公民，則 [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) 將會影響您。 
   
 本文可協助您瞭解 GDPR 的功能、內容的原因，以及 Microsoft 365 for business 可如何協助您的組織遵循 GDPR。
   
 ## <a name="a-quick-overview-of-the-gdpr"></a>GDPR 的快速綜述
 
-GDPR 是一項歐盟法規，可更新及擴充先前在1995中所頒佈的資料保護指令（DPD）。 GDPR 與個人資料的隱私權有關，必須是客戶、客戶、員工或商務合作夥伴。 GDPR 的目標是加強歐盟公民的個人資料保護，不論他們位於歐盟或其他地方。 法規會設定期望，並建議您如何做到這一點。 當 GDPR 在遲年5月的2018可強制實施時，組織必須具備滿足 GDPR 需求的測度。
+GDPR 是一項歐盟法規，可更新及擴充先前在 1995) 第一次頒佈的資料保護指令 (DPD。 GDPR 與個人資料的隱私權有關，必須是客戶、客戶、員工或商務合作夥伴。 GDPR 的目標是加強歐盟公民的個人資料保護，不論他們位於歐盟或其他地方。 法規會設定期望，並建議您如何做到這一點。 當 GDPR 在遲年5月的2018可強制實施時，組織必須具備滿足 GDPR 需求的測度。
   
-GDPR 全部都是有關資料及其使用方式。 將資料視為具有生命週期。 當您收集資料時，週期會開始，當您儲存及使用它（處理）時，就會開始，並在您完全從系統中刪除它時結束。 
+GDPR 全部都是有關資料及其使用方式。 將資料視為具有生命週期。 當您收集資料時，週期會開始，當您儲存資料並使用它 (處理) 時，就會開始，並在您完全從系統中刪除它時結束。 
   
 GDPR 與下列資料類型相關： 
   
-- **個人資料：** 如果您可以將資料連結到個人並加以識別，則該資料在 GDPR 中會被視為個人。 個人資料的範例包括姓名、位址、出生日期和 IP 位址。 GDPR 會將編碼的資訊（也稱為 "pseudonymous" 資訊）視為個人資料，不論資料的隱蔽或技術為何，如果資料可以連結到個人也是如此。
+- **個人資料：** 如果您可以將資料連結到個人並加以識別，則該資料在 GDPR 中會被視為個人。 個人資料的範例包括姓名、位址、出生日期和 IP 位址。 GDPR 會考慮甚至編碼的資訊 (也稱為 "pseudonymous" 資訊) 為個人資料，不論資料的隱蔽或技術為何，如果資料可以連結到個人。
     
-- **機密個人資料**這是將更多詳細資料新增至個人資料的資料。 範例包括宗教、貿易同盟成員資格、種族來源等等。 敏感的個人資料也包含生物化資料和 DNA。 在 [GDPR] 下，敏感性資料具有比個人資料更嚴格的保護規則。 
+- **機密個人資料** 這是將更多詳細資料新增至個人資料的資料。 範例包括宗教、貿易同盟成員資格、種族來源等等。 敏感的個人資料也包含生物化資料和 DNA。 在 [GDPR] 下，敏感性資料具有比個人資料更嚴格的保護規則。 
     
 ## <a name="gdpr-terms"></a>GDPR 字詞
 
@@ -54,13 +54,13 @@ GDPR 與下列資料類型相關：
   
 GDPR 狀態：「個人資料的處理應設計為服務于 mankind。」 GDPR 可在處理個人資料時使用同意，取得此目標。 這可能是詢問客戶是否要從您的公司接收電子郵件訊息的簡單行動。 當您想要使用資料進行行銷時，也表示您的網站上沒有其他自願退出核取方塊。 您必須使用 "clear affirmative act" 進行明確同意。 此外，您還必須保留或撤銷同意的記錄。
   
- **資料主體權力**
+ **資料主體權利**
   
 GDPR 會建立資料主體權力，這表示，相對於個人資料、客戶、員工、商務合作夥伴、用戶端、合同工、學生、供應商等等，有權：
   
 - **知道其資料的相關資訊：** 您必須告知個人您使用其資料的相關資訊。 
     
-- **可以存取其資料：** 您必須讓個別人存取您保留的任何資料（例如，使用帳戶存取或某些手動方式）。 
+- **可以存取其資料：** 您必須讓個別人存取任何保留的資料 (例如，使用帳戶存取或以某種手動方式) 。 
     
 - **要求資料修正：** 個人可以要求您修正不正確的資料。 
     
@@ -100,7 +100,7 @@ GDPR 是保護歐盟公民的規章。 如果貴公司現在與歐盟公民交�
     
 - 澳大利亞公司線上銷售產品，其使用者設定線上帳戶。 GDPR 資料主體權利及同意將會套用到開啟帳戶的歐盟公民。 公司必須確定客戶可以套用所有的資料主體權力。 
     
-- 國際慈善團體會收集有關捐贈人的資料，並使用它來傳送有關捐贈的更新和要求。 GDPR 狀態： ' .。。出於直銷目的，處理個人資料時，可能會視為有合法的利益。 不過，組織中的責任是證明其利益會覆寫資料主體的利益。 公司（或在此案例中，是慈善組織）應始終獲得通知、明確、自願自願同意。
+- 國際慈善團體會收集有關捐贈人的資料，並使用它來傳送有關捐贈的更新和要求。 GDPR 狀態： ' .。。出於直銷目的，處理個人資料時，可能會視為有合法的利益。 不過，組織中的責任是證明其利益會覆寫資料主體的利益。 公司 (或在這種情況下，慈善組織) 應一定會取得明確、明確的自願自願同意。
     
 如果客戶資料跨框線移動，也會套用 GDPR。 若要將雲端計算用於資料儲存，您必須確定服務完全 GDPR 相容。 如果資料儲存在資料保護記錄不佳的位置，就會發生很複雜的情況。 如果您使用 Microsoft 365 for business，我們就會提供正確的法律檔，以涵蓋 GDPR 的需求。
   
@@ -108,9 +108,9 @@ GDPR 是保護歐盟公民的規章。 如果貴公司現在與歐盟公民交�
 
 在 [GDPR] 下，如果您收集的資料會影響某些範圍。 GDPR 具有資料處理器及資料控制者的概念： 
   
-- **資料控制器：** 個人或組織（可以具有共同決定資料收集方式、內容及原因的方式）。 他們可能會使用另一個公司的雲端伺服器儲存。 例如，收集客戶資料的網站是控制器。 
+- **資料控制器：** 個人或組織 (您可以使用決定收集資料的方式、內容及原因的接點) 。 他們可能會使用另一個公司的雲端伺服器儲存。 例如，收集客戶資料的網站是控制器。 
     
-- **資料處理器：** 代表控制器儲存資料的個人或組織，並在要求時處理這些資料。 例如，Microsoft 365 Apps for business data storage 會擔當處理器，且完全符合 GDPR 規範。 
+- **資料處理器：** 個人或組織，代表控制器 (來儲存資料，) 並在要求時處理這些資料。 例如，Microsoft 365 Apps for business data storage 會擔當處理器，且完全符合 GDPR 規範。 
     
     組織或系統可以同時擔當控制器和處理器。 Microsoft 365 for business 可以同時擔當 GDPR，也可以遵循這兩者。
     
@@ -148,9 +148,9 @@ Microsoft 365 for business 可透過下列方式，協助您使用 GDPR 處理�
 
 若要準備好進行 GDPR，以下是後續步驟的一些建議：
   
-- 使用[責任準備工作表](https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc)評估 GDPR 計畫。
+- 使用 [責任準備工作表](/compliance/regulatory/gdpr-arc)評估 GDPR 計畫。
     
-- 調查[Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business)做為實現和維護 GDPR 相容性的解決方案。 
+- 調查 [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) 做為實現和維護 GDPR 相容性的解決方案。 
    
 
 > [!IMPORTANT]
@@ -168,5 +168,3 @@ Microsoft 365 for business 可透過下列方式，協助您使用 GDPR 處理�
 - [資料保護](https://ec.europa.eu/info/law/law-topic/data-protection)
     
 - [2018改革的歐盟資料保護規則](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules)
-    
-

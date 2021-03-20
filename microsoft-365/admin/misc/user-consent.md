@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 瞭解使用者對應用程式的同意，以及如何將其開啟以允許協力廠商應用程式存取使用者的 Microsoft 365 資訊。
-ms.openlocfilehash: 955ae9e58c14dbb8012a440ef6c336f44b0760a4
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 1f6f08161d6dd85964f07ec4d48f9f2cc23a1ead
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999562"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914555"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>管理使用者對 Microsoft 365 應用程式的同意
 
@@ -40,13 +40,13 @@ ms.locfileid: "48999562"
 
 以下說明如何開啟或關閉應用程式的使用者同意。
 
-1. 在系統管理中心中，移至 [ **設定** \> **組織設定**  >  [服務](https://go.microsoft.com/fwlink/p/?linkid=2053743)] 頁面，然後選取 [ **使用者同意應用程式** ]。
+1. 在系統管理中心中，移至 [**設定** \> **組織設定**  >  [服務](https://go.microsoft.com/fwlink/p/?linkid=2053743)] 頁面，然後選取 [**使用者同意應用程式**]。
 
 2. 在 [ **使用者同意應用程式** ] 頁面上，選取開啟或關閉使用者同意的選項。
 
 ## <a name="more-info"></a>詳細資訊
 <a name="__toc379982114"> </a>
 
-若要瞭解如何在 Azure active directory 中設定同意設定，請參閱 [設定系統管理員同意工作流程](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow)。
+若要瞭解如何在 Azure active directory 中設定同意設定，請參閱 [設定系統管理員同意工作流程](/azure/active-directory/manage-apps/configure-admin-consent-workflow)。
 
-若要瞭解如何管理使用者對應用程式的同意，請閱讀 [對應用程式的同意並評估同意要求](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests)。
+若要瞭解如何管理使用者對應用程式的同意，請閱讀 [對應用程式的同意並評估同意要求](/azure/active-directory/manage-apps/manage-consent-requests)。

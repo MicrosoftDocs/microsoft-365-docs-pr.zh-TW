@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: 瞭解如何使用流覽索引標籤及篩選器來查看報告。
-ms.openlocfilehash: aa7508b65d2a2b949c8e6737e92171ebb95812e1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: d3f080bdf2ec5544a0ef9d06139cad682962d57d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114270"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913907"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>導覽和運用 Microsoft 365 使用情況分析中的報告
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -76,14 +76,14 @@ ms.locfileid: "50114270"
 
 您可以在 Power BI 說明文件中找到許多額外的資訊：
 
-- [Power BI 基本概念](https://docs.microsoft.com/power-bi/service-basic-concepts)
+- [Power BI 基本概念](/power-bi/service-basic-concepts)
 
     深入瞭解儀表板、資料集、報告及其他 Power BI 概念。
 
-- [Power BI 快速入門](https://docs.microsoft.com/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
+- [Power BI 快速入門](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 
     了解 Power BI 中的基本功能。提供 Power BI Desktop 使用方法的連結。
 
-- [共用儀表板和報表](https://docs.microsoft.com/power-bi/service-share-dashboards)
+- [共用儀表板和報表](/power-bi/service-share-dashboards)
 
     瞭解如何與您的同事或組織外部的人員共用報告。 您也可以共用報表或篩選的報表版本。
