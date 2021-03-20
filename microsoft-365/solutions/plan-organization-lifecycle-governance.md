@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 有關 Microsoft 365 中的共同作業工具生命週期管理選項的精益
-ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613017"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907925"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>針對 Microsoft 365 群組和 Microsoft 團隊規劃組織和生命週期管理
 
@@ -39,7 +39,7 @@ Microsoft 365 群組具有一套豐富的工具，可實施組織所需的控管
 考慮建立群組的下列管理選項：
 
 - 若要限制群組蔓延，請使用 [群組到期原則](microsoft-365-groups-expiration-policy.md) ，以自動刪除未使用的群組。
-- 將群組建立功能限制為 [具有動態成員資格的安全性群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) 成員，例如，所有的全職員工。
+- 將群組建立功能限制為 [具有動態成員資格的安全性群組](/azure/active-directory/users-groups-roles/groups-create-rule) 成員，例如，所有的全職員工。
 - 將群組建立限制在安全性群組中，並要求使用者在組織的群組使用原則中完成訓練，以便成為安全性群組的成員。
 
 如果您想要限制誰可以建立群組，請參閱 [管理誰可以建立 Microsoft 365 群組](manage-creation-of-groups.md) ，以取得如何設定此內容的資訊。
@@ -48,7 +48,7 @@ Microsoft 365 群組具有一套豐富的工具，可實施組織所需的控管
 
 刪除 Microsoft 365 群組時，預設會保留30天。 此 30 天期間稱為「虛刪除」，因為您仍可還原該群組。 30 天之後，該群組和關聯的內容將會被永久刪除，而且無法還原。
 
-如果您有保留原則可保留聊天、檔案或郵件，將會在刪除群組之後保留這些專案。 如需詳細資訊，請參閱 [瞭解保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) 。
+如果您有保留原則可保留聊天、檔案或郵件，將會在刪除群組之後保留這些專案。 如需詳細資訊，請參閱 [瞭解保留原則](../compliance/retention.md) 。
 
 如果您想要刪除群組，但保留一或多個群組聯機服務的內容，請參閱封存 [群組、小組和 Yammer](end-life-cycle-groups-teams-sites-yammer.md) 中的資訊。
 

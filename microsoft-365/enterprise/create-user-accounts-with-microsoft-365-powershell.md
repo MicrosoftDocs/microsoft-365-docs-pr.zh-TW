@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 如何使用 PowerShell 建立個別或多個 Microsoft 365 使用者帳戶。
-ms.openlocfilehash: d96de72ca3e7c4a439665c3ebf751a8fe25ce572
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: c3676acdec3bbba328809ee1528206bbc44f94f1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754207"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907561"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 建立 Microsoft 365 使用者帳戶
 
@@ -45,9 +45,9 @@ ms.locfileid: "48754207"
 |**UsageLocation** <br/> |否  <br/> |這是有效的 ISO 3166-1 alpha-2 國碼。 例如，美國 *為美國，法國為* *FR* 。 提供此值很重要，因為某些國家/地區沒有提供某些 Microsoft 365 服務。 除非帳戶已設定此值，否則您無法將授權指派給使用者帳戶。 如需詳細資訊，請參閱 [關於授許可權制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。<br/> |
 
 >[!Note]
->瞭解如何使用 Microsoft 365 系統管理中心[建立使用者帳戶](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。
+>瞭解如何使用 Microsoft 365 系統管理中心[建立使用者帳戶](../admin/add-users/add-users.md)。
 > 
-> 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+> 如需其他資源的清單，請參閱 [管理使用者和群組](../admin/add-users/index.yml)。
 >   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
@@ -62,7 +62,7 @@ $PasswordProfile.Password="<user account password>"
 New-AzureADUser -DisplayName "<display name>" -GivenName "<first name>" -SurName "<last name>" -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -MailNickName <mailbox name> -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
 
-本範例會為 US user *Caleb sills 帳戶*建立帳戶：
+本範例會為 US user *Caleb sills 帳戶* 建立帳戶：
   
 ```powershell
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
@@ -83,7 +83,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell 核心不支援 Windows PowerShell 模組的 Microsoft Azure Active Directory 模組，以及其名稱中具有 *Msol* 的 Cmdlet。 從 Windows PowerShell 執行這些 Cmdlet。
+>PowerShell 核心不支援 Windows PowerShell 模組的 Microsoft Azure Active Directory 模組，以及其名稱中具有 *Msol* 的 Cmdlet。 從 PowerShell 執行這些 Cmdlet。
 >
 
 若要列出可用的授權方案名稱，請使用此命令：
@@ -92,7 +92,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 Get-MsolAccountSku
 ````
 
-本範例會為 US user *Caleb sills 帳戶*建立帳戶，並指派 `contoso:ENTERPRISEPACK` (Office 365 Enterprise E3) 授權方案的授權。
+本範例會為 US user *Caleb sills 帳戶* 建立帳戶，並指派 `contoso:ENTERPRISEPACK` (Office 365 Enterprise E3) 授權方案的授權。
   
 ```powershell
 New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -LicenseAssignment contoso:ENTERPRISEPACK
@@ -118,7 +118,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
      Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>
     ```
 
-   本範例會從檔案 *C:\My Documents\NewAccounts.csv* 中建立使用者帳戶，並將結果記錄在名為 *C:\My Documents\NewAccountResults.csv*檔案中。
+   本範例會從檔案 *C:\My Documents\NewAccounts.csv* 中建立使用者帳戶，並將結果記錄在名為 *C:\My Documents\NewAccountResults.csv* 檔案中。
     
     ```powershell
     Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
@@ -126,7 +126,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
 
 3. 檢閱輸出檔以查看結果。 我們未指定密碼，所以在輸出檔中會顯示 Microsoft 365 所產生的隨機密碼。
     
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

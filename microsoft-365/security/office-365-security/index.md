@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性，從 EOP 到適用於 Office 365 的 Defender 方案 1 和 2、標準與嚴格安全性組態等等。 了解您擁有哪些項目，以及如何保護您的屬性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1c6e768098cd59892c2572fb52497c873aef1a3
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
-ms.translationtype: HT
+ms.openlocfilehash: f8e929fde2908ba0d436c71c2caeb1be94b1338f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711937"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907177"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全性概觀
 
@@ -44,7 +44,7 @@ ms.locfileid: "50711937"
 1. 適用於 Office 365 的 Microsoft Defender 方案 2 (適用於 Office 的 Defender P2)
 
 > [!NOTE]
-> 如果您購買了訂閱，而且需要 *「立即」* 推出安全性功能，請跳到[防範威脅](protect-against-threats.md)一文中的步驟。 如果您是訂閱的新手，並且想在開始之前先知道您的授權，請瀏覽 [Microsoft 365 系統管理中心](https://admin.microsoft.com/AdminPortal/#/homepage)的 [計費] > [您的產品]。
+> 如果您購買了訂閱，而且需要 *「立即」* 推出安全性功能，請跳到 [防範威脅](protect-against-threats.md)一文中的步驟。 如果您是訂閱的新手，並且想在開始之前先知道您的授權，請瀏覽 [Microsoft 365 系統管理中心](https://admin.microsoft.com/AdminPortal/#/homepage)的 [計費] > [您的產品]。
 
 Office 365 安全性建立在 EOP 提供的核心保護上。 EOP 存在於任何可找到 Exchange Online 信箱的訂閱中 (請記住，這裡討論的所有安全性產品都是雲端式)。
 
@@ -65,7 +65,7 @@ Office 365 安全性建立在 EOP 提供的核心保護上。 EOP 存在於任�
 
 Office 365 安全性的核心是 EOP 保護。 適用於 Office 365 的 Microsoft Defender P1 在其中包含 EOP。 適用於 Office 365 的 Defender P2 包含 P1 和 EOP。 結構是累積的。 這就是為什麼在設定此產品時，您應該從 EOP 開始，然後使用適用於 Office 365 的 Defender。
 
-雖然電子郵件驗證組態是在公用 DNS 中執行，但設定此功能有助於防範詐騙， *如果您有 EOP，* ***您應該[設定電子郵件驗證](email-validation-and-authentication.md)***。
+雖然電子郵件驗證組態是在公用 DNS 中執行，但設定此功能有助於防範詐騙， *如果您有 EOP，* ***您應該 [設定電子郵件驗證](email-validation-and-authentication.md)***。
 
 如果您有 Office 365 E3 或以下版本，表示您擁有 EOP，但是可選擇透過升級購買獨立版適用於 Office 365 的 Defender P1。 如果您有 Office 365 E5，表示您已經有適用於 Office 365 的 Defender P2。
 
@@ -137,7 +137,7 @@ Office 365 安全性的核心是 EOP 保護。 適用於 Office 365 的 Microsof
 
 - 適用於 Office 365 的 Microsoft Defender 方案 1 隨附於 Microsoft 365 商務進階版。
 
-- 適用於 Office 365 的 Microsoft Defender 方案 1 和適用於 Office 365 的 Defender 方案 2 均以附加元件形式為特定訂閱提供。 若要深入了解，請參閱另一個連結：[適用於 Office 365 的 Microsoft Defender 方案的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 適用於 Office 365 的 Microsoft Defender 方案 1 和適用於 Office 365 的 Defender 方案 2 均以附加元件形式為特定訂閱提供。 若要深入了解，請參閱另一個連結：[適用於 Office 365 的 Microsoft Defender 方案的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 - [安全文件](safe-docs.md)功能僅可供具備 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權 (未包含在適用於 Office 365 的 Microsoft Defender 方案中) 的使用者使用。
 

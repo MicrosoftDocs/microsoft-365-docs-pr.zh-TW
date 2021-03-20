@@ -19,12 +19,12 @@ description: 摘要：為政治活動開發/測試環境建立具備使用者與
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e600b3baf012d416a7b5de974b94111bb6cf90a2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 54d2543313c1a031974876d7fd09b453cc2ec24d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287446"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906537"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>設定政治活動開發/測試環境的群組和使用者
 
@@ -214,4 +214,4 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 [雲端採用測試實驗室指南 (TLG)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[雲端採用和混合式解決方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[雲端採用和混合式解決方案](/office365/enterprise/cloud-adoption-and-hybrid-solutions)

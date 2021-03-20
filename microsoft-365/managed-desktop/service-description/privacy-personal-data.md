@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: e98d42e79ac270e6ccce46e88e3b8ff00f8bfc0a
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 3f1a251d98be5b3a9fefa5c1f6d5d5562516d5d5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712303"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908171"
 ---
 # <a name="privacy-and-personal-data"></a>隱私權和個人資料
 
@@ -32,7 +32,7 @@ Microsoft 受管理的桌面不會使用任何收集的個人資料，做為進�
 Microsoft 受管理的桌面不會自行收集資料，以提供其服務 (，但 [IT 系統管理員連絡人資訊](#it-admin-contact-information)除外。 相反地，Microsoft 受管理的桌面會重複使用其他來源（如 Windows 和 Microsoft Intune）已收集的資料。 Microsoft 受管理的桌面使用這些服務從已註冊的裝置收集的資料：
 
 - Microsoft 受管理的桌面所管理之裝置的 Windows 診斷資料會傳送至 Microsoft 的 Windows 診斷資料儲存區。
-- Microsoft 受管理的桌上型電腦使用 [現代管理](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) 來管理已註冊的裝置。 在「新式管理」的一部分中，裝置必須在租使用者的 Azure Active Directory 中註冊。
+- Microsoft 受管理的桌上型電腦使用 [現代管理](/learn/modules/introduction-to-modern-management-in-microsoft-365/) 來管理已註冊的裝置。 在「新式管理」的一部分中，裝置必須在租使用者的 Azure Active Directory 中註冊。
 - 若要將其高度優化和安全的設定散佈至註冊的裝置，Microsoft 受管理的桌面會使用 Microsoft Intune。
 - Microsoft 受管理的桌面對使用該服務的客戶，使用 Microsoft Defender Advanced Thread Protection 中的安全性智慧資料。
 
@@ -92,11 +92,11 @@ Microsoft 受管理的桌面所用的身分識別資料，會根據組織在訂�
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-Intune 資料可以儲存在一些不同的地區，例如歐洲北美 (愛爾蘭) 和歐洲西部 (荷蘭) 。 您的 IT 系統管理員會建立租使用者帳戶，並選擇當其初次登錄 Intune 服務時，將儲存資料的國家。 如需 Intune 使用的資料中心位置清單，請參閱 [Microsoft Intune-我的客戶資料在哪裡？](http://intunedatacentermap.azurewebsites.net/)。 如需有關 Intune 之資料儲存區和使用的詳細資訊，請參閱 [Intune 中的資料收集](https://docs.microsoft.com/intune/privacy-data-collect)。
+Intune 資料可以儲存在一些不同的地區，例如歐洲北美 (愛爾蘭) 和歐洲西部 (荷蘭) 。 您的 IT 系統管理員會建立租使用者帳戶，並選擇當其初次登錄 Intune 服務時，將儲存資料的國家。 如需 Intune 使用的資料中心位置清單，請參閱 [Microsoft Intune-我的客戶資料在哪裡？](http://intunedatacentermap.azurewebsites.net/)。 如需有關 Intune 之資料儲存區和使用的詳細資訊，請參閱 [Intune 中的資料收集](/intune/privacy-data-collect)。
 
 ### <a name="microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender
 
-Microsoft Defender for Endpoint data 可以儲存在幾個不同的地區。 基於此原因，當 microsoft Azure 資料中心在歐洲同盟、英國和美國（如 [Microsoft Defender For Endpoint）](http://intunedatacentermap.azurewebsites.net/)中所述，在 microsoft Azure 資料中心中進行端點的 endpoint 會在資料儲存位置上運作。 如需資料儲存區與 Defender for Endpoint 使用的詳細資訊，請參閱 [Microsoft Defender For endpoint 收集的資料為何？](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Microsoft Defender for Endpoint data 可以儲存在幾個不同的地區。 基於此原因，當 microsoft Azure 資料中心在歐洲同盟、英國和美國（如 [Microsoft Defender For Endpoint）](http://intunedatacentermap.azurewebsites.net/)中所述，在 microsoft Azure 資料中心中進行端點的 endpoint 會在資料儲存位置上運作。 如需資料儲存區與 Defender for Endpoint 使用的詳細資訊，請參閱 [Microsoft Defender For endpoint 收集的資料為何？](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -126,7 +126,7 @@ Microsoft 受管理的桌面不會使用任何收集的個人資料，做為進�
 
 [GDPR) 的歐盟一般資料保護法規 (](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) ，可將法規中 (已知之人員的權力視為資料主旨) ，以管理由雇主或其他類型的代理商或組織所收集的個人資料 (稱為資料控制者或僅限審計員) 。 依據 GDPR，個人資料的定義非常廣泛，舉凡與已識別或可識別自然人相關的任何資料皆屬之。 GDPR 為資料主體提供其個人資料的特定權限；這些權限包括取得個人資料副本、要求對該資料進行更正、限制對該資料的處理、刪除該資料，或是以電子格式接收該資料以移至另一個控制者。 由資料主體向控制者提出以對其個人資料採取行動的正式要求，稱為資料主體要求或 DSR。
 
-同樣地，CCPA 為加州消費者提供隱私權權利和義務，包含與 GDPR 的資料主體許可權類似的許可權，例如刪除、存取和接收 (可攜性) 其個人資訊的許可權。 CCPA 也會提供某些披露的披露，針對其他分類為 "sales" 的資料傳輸，防範歧視時防範歧視和「自願退出/自願」的需求。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide)和[常見問題集](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide)。
+同樣地，CCPA 為加州消費者提供隱私權權利和義務，包含與 GDPR 的資料主體許可權類似的許可權，例如刪除、存取和接收 (可攜性) 其個人資訊的許可權。 CCPA 也會提供某些披露的披露，針對其他分類為 "sales" 的資料傳輸，防範歧視時防範歧視和「自願退出/自願」的需求。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](/compliance/regulatory/offering-ccpa?view=o365-worldwide)和[常見問題集](/compliance/regulatory/ccpa-faq?view=o365-worldwide)。
 
 下一節將討論 Microsoft Managed Desktop 如何協助控制器尋找、存取及處理 Microsoft 受管理的桌面所使用的個人資料或個人資訊。
 
@@ -143,11 +143,11 @@ Microsoft 受管理的桌面不會使用任何收集的個人資料，做為進�
 
 ### <a name="user-related-personal-data"></a>使用者相關個人資料
 
-除此之外，Microsoft 受管理的電腦不會自行收集個人資料。 相反地，它會依賴和使用其他 Microsoft 企業版線上服務收集的個人資料。 IT 系統管理員希望回應他們的使用者要求以查看、更正和刪除其個人資料，可使用 Microsoft 受管理桌面所依賴之基礎服務的個別功能。 如果您有興趣查看或刪除這些服務所使用的個人資料，請先參閱 GDPR 文章的 [Azure 資料主體要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure) 。
+除此之外，Microsoft 受管理的電腦不會自行收集個人資料。 相反地，它會依賴和使用其他 Microsoft 企業版線上服務收集的個人資料。 IT 系統管理員希望回應他們的使用者要求以查看、更正和刪除其個人資料，可使用 Microsoft 受管理桌面所依賴之基礎服務的個別功能。 如果您有興趣查看或刪除這些服務所使用的個人資料，請先參閱 GDPR 文章的 [Azure 資料主體要求](/compliance/regulatory/gdpr-dsr-Azure) 。
 
 此外，使用下列指導方針來執行 Microsoft 受管理桌面服務的 Dsr，取決於個人資料的集合：
 
-- [Azure Active Directory](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure?view=o365-worldwide)
-- [Microsoft Intune](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-intune?view=o365-worldwide)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Windows 10](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)
+- [Azure Active Directory](/compliance/regulatory/gdpr-dsr-Azure?view=o365-worldwide)
+- [Microsoft Intune](/compliance/regulatory/gdpr-dsr-Intune?view=o365-worldwide)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Windows 10](/windows/privacy/windows-10-and-privacy-compliance)

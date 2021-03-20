@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: 瞭解如何設定小組中的安全內容共同作業，以根據其敏感度來保護您的資料。
-ms.openlocfilehash: c7881328da2ef78d043b12db29f50b961d79b2cb
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 88cb3557f1c150a9c9fd68ba362fcc9c424aa73a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423988"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906465"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全的共同作業
 
@@ -140,7 +140,7 @@ Microsoft 學習的這些訓練模組可協助您瞭解小組和 SharePoint 中�
 |![小組共同作業訓練圖示](../media/manage-team-collaboration-with-microsoft-teams.svg)|使用 Microsoft Teams 管理團隊共同作業會為您介紹 Microsoft Teams 的功能，Microsoft Teams 是 Microsoft 365 中的團隊共同作業中心。 您將了解如何使用 Teams 來促進組織內部和外部的團隊合作和溝通，包括從桌面、平板電腦和手機等各種設備，同時利用 Office 365 應用程式的所有豐富功能。 您將了解 Teams 如何提供全面且靈活的環境，以便在各個應用程式和裝置上共同作業。 這個學習路徑可協助您準備 Microsoft 365 認證：Teams 系統管理員關聯認證。<br><br>2個 hr 17 min-教學路徑-5 模組|
 
 > [!div class="nextstepaction"]
-> [開始 >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+> [開始 >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
 
 #### <a name="sharepoint"></a>SharePoint
 
@@ -149,7 +149,7 @@ Microsoft 學習的這些訓練模組可協助您瞭解小組和 SharePoint 中�
 |![SharePoint 訓練圖示](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|使用 Microsoft SharePoint 管理共用內容，為您提供 SharePoint 的各項功能，以及它如何與 Microsoft 365 搭配使用。 您將了解不同類型的 SharePoint 網站，包括中樞網站，以及資訊保護、報告及監視。 您也將了解如何使用 SharePoint 檔案和資料夾共用，以最佳化共同作業、如何在外部共用檔案，以及如何在 SharePoint 系統管理中心管理 SharePoint 網站。 這個學習路徑可協助您準備 Microsoft 365 認證：團隊工作系統管理員關聯認證。<br><br>1 hr 14 min-教學路徑-4 模組|
 
 > [!div class="nextstepaction"]
-> [開始 >](https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+> [開始 >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
 #### <a name="information-protection"></a>資訊保護
 
@@ -158,7 +158,7 @@ Microsoft 學習的這些訓練模組可協助您瞭解小組和 SharePoint 中�
 |![小組資訊保護訓練圖示](../media/protect-enterprise-information-microsoft-365.svg)|保護您組織資訊的方式比以往更具挑戰性。 使用 Microsoft 365 保護企業資訊學習路徑將討論如何防止您的敏感資訊意外地過度分享或誤用、如何探索和分類資料、如何使用敏感度標籤保護資料，以及如何監視和分析您的敏感資訊以避免資料遺失。 這種教學途徑可協助您準備 Microsoft 365 認證：安全性管理員關聯和 Microsoft 365 認證：企業系統管理專家認證。<br><br>1 hr 教學路徑-5 模組|
 
 > [!div class="nextstepaction"]
-> [開始 >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+> [開始 >](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="identity-and-access"></a>身分識別和存取
 
@@ -167,7 +167,7 @@ Microsoft 學習的這些訓練模組可協助您瞭解小組和 SharePoint 中�
 |![身分識別和存取訓練圖示](../media/protect-identity-and-access-with-microsoft-365.svg)|身分識別和存取學習路徑涵蓋最新的身分識別和存取技術、強化驗證所需的工具，以及組織內部身分識別保護的指導方針。 Microsoft 存取和身分識別技術可讓您保護組織的身分識別 (無論是內部部署或雲端)，還能讓您的使用者從任何位置安全地工作。 這個學習路徑可協助您準備 Microsoft 365 認證：安全性系統管理員助理和 Microsoft 365 認證：企業管理員專家認證。<br><br>2小時 52 min-教學路徑-6 模組|
 
 > [!div class="nextstepaction"]
-> [開始 >](https://docs.microsoft.com/learn/modules/m365-identity-overview/introduction/)
+> [開始 >](/learn/modules/m365-identity-overview/introduction/)
 
 ## <a name="training-for-end-users"></a>適用於終端使用者的訓練
 
@@ -205,8 +205,8 @@ Microsoft 學習的這些訓練模組可協助您瞭解小組和 SharePoint 中�
 
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft 365 安全性文件](https://docs.microsoft.com/microsoft-365/security)
+[Microsoft 365 安全性文件](../security/index.yml)
 
-[Microsoft 365 合規性文件](https://docs.microsoft.com/microsoft-365/compliance)
+[Microsoft 365 合規性文件](../compliance/index.yml)
 
-[歡迎使用 Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+[歡迎使用 Microsoft Teams](/MicrosoftTeams/Teams-overview)

@@ -16,12 +16,12 @@ description: 瞭解如何將信箱設為訴訟暫止，並在調查期間保留�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 4bcb857095a63c06caa6e9762496ca74afeead04
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 046ee6fdc7c42026b1a69805883175982e3100b7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546985"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908397"
 ---
 # <a name="create-a-litigation-hold"></a>建立訴訟資料暫留
 
@@ -58,17 +58,17 @@ ms.locfileid: "47546985"
     
 6. 在 [ **訴訟暫** 止] 頁面上，輸入下列選擇性資訊： 
     
-    - **訴訟暫止持續時間 (天數) ** -使用此方塊可建立以時間為基礎的保留，並指定當信箱處於訴訟暫止狀態時，要保留的信箱專案長度。 持續時間自接收或建立信箱項目的日期開始計算。 特定專案的保留期間到期時，將不再保留該專案。 如果您將此方塊保留空白，則專案會無限期保留，或直到移除保留為止。 請使用天數為單位來指定持續時間。
+    - **訴訟暫止持續時間 (天數)** -使用此方塊可建立以時間為基礎的保留，並指定當信箱處於訴訟暫止狀態時，要保留的信箱專案長度。 持續時間自接收或建立信箱項目的日期開始計算。 特定專案的保留期間到期時，將不再保留該專案。 如果您將此方塊保留空白，則專案會無限期保留，或直到移除保留為止。 請使用天數為單位來指定持續時間。
     
     - **附注** -使用此方塊通知使用者其信箱處於訴訟暫止狀態。 如果使用者是使用 Outlook 2010 或更新版本，則附注會出現在使用者信箱中的 [帳戶資訊] 頁面上。 若要存取此頁面，使用者可以 **按一下 Outlook 中的 [** 檔案]。
     
     - **URL** -使用此方塊可將使用者導向至網站，以取得訴訟暫止的詳細資訊。 如果使用者使用 Outlook 2010 或更新版本，則此 URL 會出現在使用者信箱的 [帳戶資訊] 頁面上。 若要存取此頁面，使用者可以 **按一下 [** Outlook] 中的 [檔案]。
 
-7. 按一下 [**訴訟暫**止] 頁面上的 [**儲存**]，然後按一下 [信箱屬性] 頁面上的 [**儲存**]。
+7. 按一下 [**訴訟暫** 止] 頁面上的 [**儲存**]，然後按一下 [信箱屬性] 頁面上的 [**儲存**]。
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>使用 PowerShell 建立訴訟暫止
 
-您也可以在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令，以建立訴訟暫止狀態。
+您也可以在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令，以建立訴訟暫止狀態。
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
@@ -80,7 +80,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-如需詳細資訊，請參閱 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)。
+如需詳細資訊，請參閱 [Set-Mailbox](/powershell/module/exchange/set-mailbox)。
 
 ## <a name="how-does-litigation-hold-work"></a>訴訟暫止如何運作？
 
@@ -94,4 +94,3 @@ Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <num
 
 > [!NOTE]
 > 如果與 eDiscovery 案例相關聯的封存是放在信箱上，已清除的專案會從 [刪除] 子資料夾移至 DiscoveryHolds 子資料夾，而且會保留，直到信箱從 eDiscovery 保留中釋放為止。
-  

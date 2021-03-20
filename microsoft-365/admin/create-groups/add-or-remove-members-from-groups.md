@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 瞭解如何將成員新增至群組、從群組中移除成員及管理 Microsoft 365 系統管理中心中的群組擁有者狀態。
-ms.openlocfilehash: 34c026bced5563e07a1ae0d13f4c691cfaf3f624
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 997145b85d2990d5bf7184f5e97a0a8d1c86dae9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663240"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907913"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用系統管理中心新增或移除 Microsoft 365 群組中的成員
 
@@ -42,7 +42,7 @@ ms.locfileid: "49663240"
 
 4. 搜尋或選取要新增的成員名稱。
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
 
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>將群組新增至系統管理員中心的成員
 
@@ -54,7 +54,7 @@ ms.locfileid: "49663240"
 
 4. 搜尋或選取您想要新增的群組名稱。
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
 
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>從系統管理中心的群組中移除成員
 
@@ -99,13 +99,13 @@ ms.locfileid: "49663240"
 
 4. 選取擁有者名稱旁邊的 X。
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
 
 ## <a name="more-on-managing-membership"></a>成員資格的其他資訊
 
-- [在 Azure Active Directory 中動態管理群組](https://go.microsoft.com/fwlink/?linkid=847632)：請參閱＜如何動態管理群組的成員資格？＞一節
+- [在 Azure Active Directory 中動態管理群組](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)：請參閱＜如何動態管理群組的成員資格？＞一節
 
-- 若要將成百上千名使用者新增至群組，請使用 [Add-UnifiedGroupLinks](https://docs.microsoft.com/powershell/module/exchange/add-unifiedgrouplinks)。
+- 若要將成百上千名使用者新增至群組，請使用 [Add-UnifiedGroupLinks](/powershell/module/exchange/add-unifiedgrouplinks)。
 
 - [指派新擁有者給孤立的群組](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
@@ -117,6 +117,6 @@ ms.locfileid: "49663240"
 
 - [在 Microsoft 365 群組中管理來賓存取](manage-guest-access-in-groups.md)
 
-- [使用 PowerShell 管理 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)：本文介紹重要 Cmdlet，並提供範例
+- [使用 PowerShell 管理 Microsoft 365 群組](../../enterprise/manage-microsoft-365-groups-with-powershell.md)：本文介紹重要 Cmdlet，並提供範例
 
-- [Microsoft 365 群組命名原則](groups-naming-policy.md)
+- [Microsoft 365 群組命名原則](../../solutions/groups-naming-policy.md)

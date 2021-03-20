@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: 瞭解如何在訂閱間移動使用者。
 ms.date: 07/01/2020
-ms.openlocfilehash: ec9385d10cc1799509c6f1d2fa88059eecf3bd8c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 7eb07bda4fd1a558a8126f11ef3a1fbc4ceb0389
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114666"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907877"
 ---
 # <a name="move-users-to-a-different-subscription"></a>將使用者移至其他訂閱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ ms.locfileid: "50114666"
 
 ## <a name="before-you-begin"></a>開始之前
 
-您必須是全域、授權或使用者系統管理員，才能指派授權。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)。
+您必須是全域、授權或使用者系統管理員，才能指派授權。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../../admin/add-users/about-admin-roles.md?view=o365-worldwide)。
 
 ## <a name="move-users-to-a-different-subscription"></a>將使用者移至其他訂閱
 
@@ -86,8 +86,8 @@ ms.locfileid: "50114666"
 
 ## <a name="related-content"></a>相關內容
 
- (篇文章) \[中指派授權給使用者](../../admin/manage/assign-licenses-to-users.md)
-[從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md) (文章) \
+[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md) (文章)\
+[從您的訂閱中移除授權](../licenses/buy-licenses.md) (文章) \
 [手動變更方案](change-plans-manually.md) (文章) \
 [瞭解 Microsoft 365 for business 中的訂閱和授權](../licenses/subscriptions-and-licenses.md) (文章) \
-[購買其他 Microsoft 365 for business 訂閱](../buy-another-subscription.md) (文章) 
+[購買其他 Microsoft 365 for business 訂閱](../try-or-buy-microsoft-365.md) (文章) 

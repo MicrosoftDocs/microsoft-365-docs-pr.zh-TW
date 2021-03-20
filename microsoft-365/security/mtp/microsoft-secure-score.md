@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 39abcbde82c2902b091b42db3dbc8e1ee2cbd924
-ms.sourcegitcommit: 8b3ff6e9f8931327b6f0541fd882107687cd123e
+ms.openlocfilehash: 236ac67c5a4efeb4d46f59f5fe283b396adb9aa5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49942787"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906731"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -88,7 +88,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 ### <a name="security-defaults"></a>安全性預設
 
-Microsoft Secure 得分已更新改進動作，以支援 [Azure Active Directory 中的安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)，如此可讓您的組織使用預先設定的常見攻擊安全性設定，以協助保護您的組織。
+Microsoft Secure 得分已更新改進動作，以支援 [Azure Active Directory 中的安全性預設值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)，如此可讓您的組織使用預先設定的常見攻擊安全性設定，以協助保護您的組織。
 
 如果您開啟安全性預設值，您會獲得下列改進動作的完整得分：
 

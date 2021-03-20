@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 520a5627d2cd280f28c4e2c3db0e565640a1eace
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7d24d010f7c16d6db0fd4f9e4817768529ed29d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289158"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906743"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
@@ -93,7 +93,7 @@ Microsoft 團隊客戶將會看到「限制匿名使用者加入會議」為安�
 
 - 新增 Azure Active Directory 改進動作
 - 新增 Microsoft Defender 以進行身分識別改進動作
-- 支援 Microsoft Defender for Endpoint [威脅 & 弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全性建議
+- 支援 Microsoft Defender for Endpoint [威脅 & 弱點管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全性建議
     - 現在提供 TVM 提供的所有發行安全性建議
 
 ## <a name="updated-interface-and-functionality"></a>更新的介面及功能

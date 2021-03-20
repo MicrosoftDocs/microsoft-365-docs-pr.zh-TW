@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: 瞭解 Microsoft 合規性管理員如何根據採取的措施來計算個人化分數，以解決風險並改善您的相容性狀況。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f1707e0117d0a61f572716f21d13a02821955401
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 75d340c31b4f5477df845531bfb933883f331198
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262266"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908573"
 ---
 # <a name="compliance-score-calculation"></a>合規性分數計算
 
 **本文內容：** 瞭解合規性管理員如何計算組織的合規性分數。 本文說明如何 **轉譯您的分數**、 **資料保護基準評估** 包含的內容、 **連續監控**，以及 **如何管理和計分不同類型的動作**。
 
 > [!IMPORTANT]
-> 「合規性管理員」的建議不得加以轉譯，以保證法規遵從性。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務須遵守 [線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱 [Microsoft 365 授權指南以取得安全性和合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+> 您不應將 [合規性管理員] 提供的建議視為合規性的保證。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務須遵守 [線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱 [Microsoft 365 授權指南以取得安全性和合規性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="how-to-read-your-compliance-score"></a>如何閱讀您的合規性分數
 
@@ -39,7 +39,7 @@ ms.locfileid: "48262266"
 
 2. **控制分數**：此分數是在控制項內完成改進動作所取得的點數總和。 當控制項同時滿足下列兩個條件時，此總和會整體套用到整體合規性分數：
     - **實施狀態** 等於 [已 **實現** ] 或 [ **替代] 實施**，以及
-    - 已**通過****測試結果**equals。
+    - 已 **通過****測試結果** equals。
 
 3. **評估分數**：此分數是控制項分數的總和。 它是以動作分數計算。 每個 Microsoft 動作和您組織所管理的每個改進動作都會計算一次，不論它在控制項中的參照頻率為何。
 
@@ -61,7 +61,7 @@ ms.locfileid: "48262266"
 
 例如，如果您在 Azure AD 入口網站中開啟多重要素驗證 (MFA) ，合規性管理員會偵測設定，並將其反映在控制存取解決方案的詳細資料中。 相反地，如果您未開啟 MFA，合規性管理員旗標為您採取建議的動作。
 
-深入瞭解 [安全性分數及其運作方式](../security/mtp/microsoft-secure-score-new.md)。
+深入瞭解 [安全性分數及其運作方式](../security/mtp/microsoft-secure-score.md)。
   
 ## <a name="action-types-and-points"></a>動作類型和點
 
@@ -96,7 +96,7 @@ ms.locfileid: "48262266"
 
 ### <a name="mandatory-and-discretionary-actions"></a>強制和自由的動作
 
- - 不能故意或無意中略過強制執行的**動作**。 強制執行動作的範例是一個集中管理的密碼原則，可設定密碼長度、複雜性和到期的需求。 使用者必須遵循這些需求，才能存取系統。
+ - 不能故意或無意中略過強制執行的 **動作**。 強制執行動作的範例是一個集中管理的密碼原則，可設定密碼長度、複雜性和到期的需求。 使用者必須遵循這些需求，才能存取系統。
   
  - **自由動作** 會依據使用者來瞭解和遵循原則。 例如，如果原則要求使用者在其保留時鎖定其電腦，則其為自由的動作，因為它會因使用者而異。
   
@@ -114,9 +114,9 @@ ms.locfileid: "48262266"
 |:-----|:-----|
 | 預防性強制 | 7 |
 | 預防自由 | 9  |
-| 偵探強制 | 個 |
+| 偵探強制 | 3  |
 | 偵探自由 | 1 |
-| 必要修正 | 個 |
+| 必要修正 | 3  |
 | 隨機糾正 | 1 |
   
 ![合規性管理員動作點值](../media/compliance-score-action-scoring.png "合規性管理員動作點值")

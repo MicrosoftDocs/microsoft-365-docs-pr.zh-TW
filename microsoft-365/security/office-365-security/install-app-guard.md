@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 取得最新的硬體隔離。 防止目前和新興的攻擊（如入侵或惡意連結）中斷員工生產力和企業安全性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50065c4c0b9cbac9dee29892d9ebb0c7ce5f20f8
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: a13196080aa0084411b737bfc157bbdb4b243a40
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261522"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907165"
 ---
 # <a name="application-guard-for-office-for-admins"></a>適用于系統管理員的 Office 應用程式防護
 
@@ -43,7 +43,7 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
 * **Office**： Office Current 通道組建版本 2011 16.0.13530.10000 或更新版本。 支援32位和64位版本的 Office。
 * **更新套件**： Windows 10 累計每月安全性更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
-如需詳細的系統需求，請參閱 [Microsoft Defender Application Guard 的系統需求](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 若要深入瞭解 Office 更新通道，請參閱 [Microsoft 365 的更新通道一覽](https://docs.microsoft.com/deployoffice/overview-update-channels)。
+如需詳細的系統需求，請參閱 [Microsoft Defender Application Guard 的系統需求](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 若要深入瞭解 Office 更新通道，請參閱 [Microsoft 365 的更新通道一覽](/deployoffice/overview-update-channels)。
 
 ### <a name="licensing-requirements"></a>授權需求
 
@@ -91,7 +91,7 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
 
    ![診斷和回饋功能表](../../media/ag07a-diagnostic.png)
 
-如需設定 Windows 診斷設定的詳細資訊，請參閱設定 [組織中的 Windows 診斷資料](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management)。
+如需設定 Windows 診斷設定的詳細資訊，請參閱設定 [組織中的 Windows 診斷資料](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management)。
 
 ### <a name="confirm-that-application-guard-for-office-is-enabled-and-working"></a>確認 Office 的應用程式防護已啟用且正常運作
 
@@ -183,7 +183,7 @@ Office 支援下列原則，可讓您設定 Office 應用程式防護的功能�
 
 適用于 Office 的應用程式防護會與 Microsoft Defender for Endpoint 整合，以針對隔離環境中發生的惡意活動提供監控和警示。
 
-Microsoft Defender for Endpoint 是一種安全性平臺，旨在協助商業網路避免、偵測、調查和回應高級威脅。 如需此平臺的詳細資訊，請參閱 [Microsoft Defender For Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 若要深入瞭解如何將裝置上架至此平臺，請參閱 [在 Microsoft Defender For Endpoint service 中的板載裝置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
+Microsoft Defender for Endpoint 是一種安全性平臺，旨在協助商業網路避免、偵測、調查和回應高級威脅。 如需此平臺的詳細資訊，請參閱 [Microsoft Defender For Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 若要深入瞭解如何將裝置上架至此平臺，請參閱 [在 Microsoft Defender For Endpoint service 中的板載裝置](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
 
 您也可以將 Microsoft Defender for Office 365 設定為搭配使用 Defender for Endpoint。 如需詳細資訊，請參閱 [整合 Defender For Office 365 搭配 Microsoft Defender For Endpoint](integrate-office-365-ti-with-wdatp.md)。
 

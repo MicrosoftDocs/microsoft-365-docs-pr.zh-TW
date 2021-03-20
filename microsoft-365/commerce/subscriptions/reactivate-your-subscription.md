@@ -22,25 +22,25 @@ search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: 深入瞭解當您的訂閱到期、停用或取消時，如何重新開機訂閱。
-ms.openlocfilehash: 3e360e37a108c290e13ca3c1a147f8eb099648e6
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: d33b40d0cfb35f19d8894204173212d37dc40666
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766386"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907843"
 ---
 # <a name="reactivate-your-subscription"></a>重新啟動您的訂閱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
 您可以在系統管理中心重新啟用您的訂閱：訂閱已到期、已由 Microsoft 停用，或您已在訂閱期限內取消。
   
-## <a name="before-you-begin"></a>事前準備
+## <a name="before-you-begin"></a>開始之前
 
 您必須是全域或計費系統管理員，才可重新啟用訂閱。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 

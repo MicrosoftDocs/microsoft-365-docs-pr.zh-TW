@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在 Microsoft 365 系統管理中心中填入 [來賓使用者] 清單。
-ms.openlocfilehash: 7610e22be5cf229c9c0b71dd1282f8138452fe67
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: f7baf3f9714df49d045579a66bc947f394e1eda0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126090"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906333"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 admin center 中的來賓使用者
 
@@ -48,12 +48,12 @@ ms.locfileid: "50126090"
 
 ## <a name="add-guests-in-azure-active-directory"></a>在 Azure Active Directory 中新增來賓
 
-若要在 Azure Active Directory 中新增來賓，請參閱 [新增來賓使用者](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
+若要在 Azure Active Directory 中新增來賓，請參閱 [新增來賓使用者](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
 
 在您新增使用者之後，您也可以將其指派給群組，或讓他們存取您組織中的應用程式。 在 Azure AD 入口網站中新增使用者之後，該使用者也會列在 Microsoft 365 系統管理中心的 [ **來賓使用者** ] 頁面上。
 將使用者新增至 [ **來賓使用者** ] 清單後，即可將其 [新增至](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) Microsoft 365 系統管理中心中的群組。
 
-請參閱 [成批新增來賓](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) ，以邀請多個來賓與您的組織共同作業。
+請參閱 [成批新增來賓](/azure/active-directory/b2b/tutorial-bulk-invite) ，以邀請多個來賓與您的組織共同作業。
 
 
 ## <a name="remove-a-guest"></a>移除來賓
@@ -61,4 +61,4 @@ ms.locfileid: "50126090"
 1. 在 Microsoft 365 系統管理中心中，展開 [ **使用者** ]，然後選擇 [ **來賓使用者**]。
 1. 在 [ **來賓使用者** ] 頁面上，選擇您要移除的使用者，然後選擇 [ **刪除使用者**]。 
 
-若要移除 Azure AD 入口網站中的使用者，請參閱 [移除來賓使用者和資源](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。
+若要移除 Azure AD 入口網站中的使用者，請參閱 [移除來賓使用者和資源](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。

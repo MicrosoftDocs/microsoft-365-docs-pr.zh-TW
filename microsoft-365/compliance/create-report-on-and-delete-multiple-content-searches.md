@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 瞭解如何透過 Office 365 的安全性 & 規範中心內的 PowerShell 腳本，以自動化內容搜尋工作，例如建立搜尋及執行報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c467b8ebc5ad3171347b23cad47f563b3634ee29
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 615c6b59ea484a4a0cd5248ce5083e7ee7d817ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546859"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908307"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、報告及刪除多個內容搜尋
 
@@ -34,7 +34,7 @@ ms.locfileid: "47546859"
 
 - 您必須是 Security & 合規性中心內 eDiscovery 管理員角色群組的成員，才可執行本主題中所述的腳本。
 
-- 若要收集組織中您可以在步驟1中新增至 CSV 檔案之商務網站的 OneDrive URLs 清單，請參閱 [建立組織中所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls)。
+- 若要收集組織中您可以在步驟1中新增至 CSV 檔案之商務網站的 OneDrive URLs 清單，請參閱 [建立組織中所有 OneDrive 位置的清單](/onedrive/list-onedrive-urls)。
 
 - 請務必將您在本主題中建立的所有檔案儲存至相同的資料夾。 這樣會使執行腳本變得更容易。
 
@@ -64,7 +64,7 @@ ms.locfileid: "47546859"
 
    ****
 
-   |參數|說明|
+   |參數|描述|
    |---|---|
    |`ExchangeLocation`|使用者信箱的 SMTP 位址。|
    |`SharePointLocation`|使用者的商務用網站 OneDrive URL，或組織中任何網站的 URL。 若為商務用網站的 OneDrive URL，請使用此格式： ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` 。 例如，  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。|
@@ -77,13 +77,13 @@ ms.locfileid: "47546859"
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步驟 2︰連線至安全性與合規性中心 PowerShell
 
-下一步是將組織連線至安全性與合規性中心 PowerShell。 如需逐步指示，請參閱[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+下一步是將組織連線至安全性與合規性中心 PowerShell。 如需逐步指示，請參閱[連線至安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>步驟3：執行腳本以建立及啟動搜尋
 
 此步驟中的腳本會針對您在步驟1中建立的 CSV 檔案中的每一列，建立個別的內容搜尋。 當您執行此腳本時，系統會提示您輸入兩個值：
 
-- **搜尋群組識別碼** -此名稱提供一種簡單的方法，可組織從 CSV 檔案建立的搜尋。 所建立的每個搜尋都是以搜尋群組識別碼命名，然後在搜尋名稱中附加數位。 例如，如果您為搜尋群組識別碼輸入 **ContosoCase** ，則搜尋會命名為 **ContosoCase_1**、 **ContosoCase_2**、 **ContosoCase_3**等。 請注意，您輸入的名稱會區分大小寫。 當您在步驟4和步驟5中使用搜尋群組識別碼時，您必須使用與建立它時相同的大小寫。
+- **搜尋群組識別碼** -此名稱提供一種簡單的方法，可組織從 CSV 檔案建立的搜尋。 所建立的每個搜尋都是以搜尋群組識別碼命名，然後在搜尋名稱中附加數位。 例如，如果您為搜尋群組識別碼輸入 **ContosoCase** ，則搜尋會命名為 **ContosoCase_1**、 **ContosoCase_2**、 **ContosoCase_3** 等。 請注意，您輸入的名稱會區分大小寫。 當您在步驟4和步驟5中使用搜尋群組識別碼時，您必須使用與建立它時相同的大小寫。
 
 - **Csv** 檔案-您在步驟1中建立的 CSV 檔案名。 請務必包含使用完整檔案名，包含 .csv 副檔名;例如，  `ContosoCase.csv` 。
 
@@ -249,7 +249,7 @@ ms.locfileid: "47546859"
 
 3. 在 [ **搜尋群組識別碼** ] 提示中，輸入搜尋組名，然後按 **enter**;例如  `ContosoCase` 。 請記住，這個名稱是區分大小寫的，所以您必須使用在步驟3中執行腳本時所用的相同方式來輸入。
 
-4. 在檔案路徑上，將 **報告儲存至 CSV 檔案 (保留空白以顯示報告) ** 提示，請輸入完整檔案名路徑的檔案名， (包含 .csv 副檔名的檔案名) 如果您想要將報告儲存至 CSV 檔案。 CSV 檔案名（包括 .csv 副檔名）的名稱。 例如，您可以輸入將  `ContosoCaseReport.csv` 其儲存至目前的目錄，或輸入將  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` 其儲存至不同的資料夾。 您也可以將提示保留空白，以顯示報表，但不會將其儲存至檔案。
+4. 在檔案路徑上，將 **報告儲存至 CSV 檔案 (保留空白以顯示報告)** 提示，請輸入完整檔案名路徑的檔案名， (包含 .csv 副檔名的檔案名) 如果您想要將報告儲存至 CSV 檔案。 CSV 檔案名（包括 .csv 副檔名）的名稱。 例如，您可以輸入將  `ContosoCaseReport.csv` 其儲存至目前的目錄，或輸入將  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` 其儲存至不同的資料夾。 您也可以將提示保留空白，以顯示報表，但不會將其儲存至檔案。
 
 5. 按 **Enter**。
 

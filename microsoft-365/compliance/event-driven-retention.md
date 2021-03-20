@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常為記錄管理解決方案的一部分，您可以設定保留標籤，以根據您發現的事件來啟動保留期間。
-ms.openlocfilehash: cf8ce1dc2ca77e2ba028d0c35f58cd0ab419b32d
-ms.sourcegitcommit: 5ce64d510b15c6e2df32b78e6086f77156731e3c
+ms.openlocfilehash: 49fe330fa6844361a77caaebb0e6a411297ee643
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "49477622"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907013"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>事件發生時，開始保留
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 當您保留內容時，保留期間通常是依據內容的存留期。例如，您在文件建立之後保留 7 年，然後刪除。但當您設定[保留標籤](retention.md#retention-labels)，您也可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，有保留標籤套用至該類型事件的所有內容，都會強制執行標籤的保留動作。
   
@@ -89,7 +89,7 @@ ms.locfileid: "49477622"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>步驟 1：建立其保留期間根據事件的標籤
 
-若要建立和設定保留標籤，請使用 [創建和設定保留標籤](create-retention-labels.md#create-and-configure-retention-labels)中的指示。 但特定於事件型的保留，在 [建立保留標籤] 精靈的 **[定義保留設定]** 頁上，在啟動 **[開始保留期依據]** 後，從下拉清單中選取一種預設事件類型，或透過選取 **[建立新事件類型]** 來建立自己的事件類型：
+若要建立和設定保留標籤，請使用 [創建和設定保留標籤](./create-apply-retention-labels.md#create-and-configure-retention-labels)中的指示。 但特定於事件型的保留，在 [建立保留標籤] 精靈的 **[定義保留設定]** 頁上，在啟動 **[開始保留期依據]** 後，從下拉清單中選取一種預設事件類型，或透過選取 **[建立新事件類型]** 來建立自己的事件類型：
 
 ![建立保留標籤的新事件類型](../media/SPRetention6.png)
 
@@ -141,11 +141,11 @@ ms.locfileid: "49477622"
 
 發生該事件類型的特定執行個體時，例如，產品達到其生命週期的結尾，請移至 Microsoft 365 合規性中心的 **[記錄管理]**  >  **[事件]** 頁面，然後選取 **+ 建立** 以建立事件。 您可以在此處建立事件來觸發事件。
 
-![建立事件以觸發事件型保留標籤的保留開始時間](../media/create-event-records-management.png)
+![建立活動以觸發事件型的保留標籤的保留開始時間](../media/create-event-records-management.png)
 
 每個租用戶都支援最多 1 百萬個事件。
 
-### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>步驟 6：選擇與步驟 2 中的標籤所使用的相同事件類型
+### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>步驟 6：選擇與步驟 2 中的標籤所使用相同的事件類型
 
 當您建立事件時，請選擇步驟 2 中保留標籤設定所指定的相同事件類型。 例如，如果為標籤設定選取了 **[產品生命週期]** 作為事件類型，請在建立事件時選取 **[產品生命週期]**。 只有已套用該事件類型保留標籤的內容會觸發其保留期間。
 
@@ -185,24 +185,24 @@ ms.locfileid: "49477622"
 
 您可以使用 PowerShell 指令碼來自動化商務應用程式中以事件為基礎的保留。 適用於事件型保留的 PowerShell Cmdlet：
   
-- [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
+- [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype)
     
-- [New-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873004)
+- [New-ComplianceRetentionEventType](/powershell/module/exchange/new-complianceretentioneventtype)
     
-- [Remove-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873005)
+- [Remove-ComplianceRetentionEventType](/powershell/module/exchange/remove-complianceretentioneventtype)
     
-- [Set-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873006)
+- [Set-ComplianceRetentionEventType](/powershell/module/exchange/set-complianceretentioneventtype)
     
-- [Get-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873001)
+- [Get-ComplianceRetentionEvent](/powershell/module/exchange/get-complianceretentionevent)
     
-- [New-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873003)
+- [New-ComplianceRetentionEvent](/powershell/module/exchange/new-complianceretentionevent)
     
 
 ## <a name="automate-events-by-using-a-rest-api"></a>使用 REST API 讓事件自動化
 
 您可以使用 REST API 自動建立觸發保留時間開始的事件。
 
-REST API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源的建立、擷取、更新、刪除等存取權。 如需詳細資訊，請參閱 [REST API 要求/回應的元件](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)。 透過使用 Microsoft 365 REST API，使用 POST 和 GET 方法可以建立和擷取事件。
+REST API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源的建立、擷取、更新、刪除等存取權。 如需詳細資訊，請參閱 [REST API 要求/回應的元件](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)。 透過使用 Microsoft 365 REST API，使用 POST 和 GET 方法可以建立和擷取事件。
 
 有兩個選項可以使用 REST API：
 
@@ -450,4 +450,3 @@ $event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "ap
 $event | fl *
 
 ```
-

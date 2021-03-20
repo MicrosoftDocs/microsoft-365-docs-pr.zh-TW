@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 使用 PowerShell 指令碼，在 Exchange Online 中執行 Search-UnifiedAuditLog Cmdlet，以搜尋稽核記錄檔。 此指令碼經過最佳化，可傳回大量 (最多50,000 筆) 稽核記錄。 指令碼會將這些記錄匯出為 CSV 檔案，您可以使用 Excel 中的 Power Query 來檢視或轉換。
-ms.openlocfilehash: 3d44054d8d1111fe86e06460f5ca4d442d0d1625
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 7ac3903abffc0bedb28363159c81b1f67a199f32
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233327"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907761"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 指令碼來搜尋稽核記錄
 
 安全性、合規性和稽核已經成為今日 IT 系統管理員的首要要務。 Microsoft 365 有數種內建功能，可協助組織管理安全性、合規性及稽核。 特別是，整合式稽核記錄可協助您調查安全性事件和合規性問題。 您可以使用下列方法來擷取稽核記錄：
 
-- [Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
+- [Office 365 管理活動 API](/office/office-365-management-api/office-365-management-activity-api-reference)
 
 - Microsoft 365 合規性中心中的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)
 
-- Exchange Online PowerShell 中的 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) Cmdlet
+- Exchange Online PowerShell 中的 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) Cmdlet
 
 如果您需要定期擷取稽核記錄，您應考慮使用 Office 365 管理活動 API 的解決方案，因為它為大型組織提供擴充性和效能，以持續擷取上百萬筆稽核記錄。 使用 Microsoft 365 合規性中心中的稽核記錄搜尋工具，可以快速尋找在較短時間範圍內發生的特定作業相關稽核記錄。 在稽核記錄搜尋工具中使用較長的時間範圍，特別是針對大型組織，可能會傳回太多記錄，而無法輕鬆管理或匯出。
 
@@ -56,7 +56,7 @@ ms.locfileid: "50233327"
 
 ## <a name="step-1-connect-to-exchange-online-powershell"></a>步驟 1：連線至 Exchange Online PowerShell
 
-第一個步驟是連線至 Exchange Online PowerShell。 您可以使用新式驗證或多重要素驗證 (MFA) 來連線。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+第一個步驟是連線至 Exchange Online PowerShell。 您可以使用新式驗證或多重要素驗證 (MFA) 來連線。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ## <a name="step-2-modify-and-run-the-script-to-retrieve-audit-records"></a>步驟 2：修改並執行指令碼以擷取稽核記錄
 
@@ -146,12 +146,12 @@ Write-Host "Script complete! Finished retrieving audit records for the date rang
    |`$logFile`|"d:\temp\AuditSearchLog.txt"|指定記錄檔的名稱和位置，其中包含指令碼執行的稽核記錄搜尋進度相關資訊。 此指令碼會將 UTC 時間戳記寫入記錄檔。|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|指定 CSV 檔案的名稱和位置，該檔案包含指令碼所傳回的稽核記錄。|
    |`[DateTime]$start` 和 `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|指定稽核記錄搜尋的日期範圍。 指令碼會傳回在指定日期範圍內發生的稽核活動的記錄。 例如，若要傳回在 2021 年 1 月執行的活動，您可以使用 `"2021-01-01"` 作為開始日期，以及 `"2021-01-31"` 作為結束日期 (請務必用雙引號括住值)。指令碼中的範例值會傳回之前 24 小時內執行之活動的記錄。 如果您未在值中包含時間戳記，則預設時間戳記為指定日期的上午 12:00 (凌晨)。|
-   |`$record`|"AzureActiveDirectory"|指定要搜尋之稽核活動的記錄類型 (又稱為 *作業*)。 此屬性表示在其中觸發活動的服務或功能。 如需可用於此變數的記錄類型清單，請參閱[稽核記錄類型](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。 您可以使用記錄類型名稱或 ENUM 值。 <br/><br/>**提示：** 若要傳回所有記錄類型的稽核記錄，請使用值 `$null` (不含雙引號)。|
+   |`$record`|"AzureActiveDirectory"|指定要搜尋之稽核活動的記錄類型 (又稱為 *作業*)。 此屬性表示在其中觸發活動的服務或功能。 如需可用於此變數的記錄類型清單，請參閱[稽核記錄類型](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。 您可以使用記錄類型名稱或 ENUM 值。 <br/><br/>**提示：** 若要傳回所有記錄類型的稽核記錄，請使用值 `$null` (不含雙引號)。|
    |`$resultSize`|5000|指定指令碼每次呼叫 **Search-UnifiedAuditLog** Cmdlet 所傳回的結果數 (稱為 *結果集*)。 Cmdlet 支援的最大值為 5,000。 將此值保持原樣。|
    |`$intervalMinutes`|60|為了克服傳回 5000 筆記錄的限制，此變數會採用您指定的日期範圍，並將它分成較小的時間間隔。 現在，每個間隔 (而不是整個日期範圍) 都受限於 5000 筆的命令記錄輸出限制。 在日期範圍內每 60 分鐘 5000 筆記錄的預設值應足夠大部分的組織使用。 但是，如果指令碼傳回錯誤`maximum results limitation reached`，請縮短時間間隔 (例如，減少為 30 分鐘甚至 15 分鐘)，然後重新執行指令碼。|
    ||||
 
-   上表中所列的大部分變數對應 **Search-UnifiedAuditLog** Cmdlet 的參數。 如需這些參數的詳細資訊，請參閱 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)。
+   上表中所列的大部分變數對應 **Search-UnifiedAuditLog** Cmdlet 的參數。 如需這些參數的詳細資訊，請參閱 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)。
 
 3. 在您的本機電腦上，開啟 Windows PowerShell，然後移至您儲存修改後的指令碼所在的資料夾。
 

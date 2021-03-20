@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 有關基本行動性和安全性的常見問題。
-ms.openlocfilehash: 5651b9f9742c45f1229e55b298cf78532c835c9a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: a538c0b3f9fa6a4bf1861734fc9dea94030760a3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876873"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906261"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>基本行動及安全性常見問題 (常見問題) 
 
@@ -81,7 +81,7 @@ ms.locfileid: "49876873"
 
 ## <a name="can-i-switch-from-exchange-activesync-device-management-to-basic-mobility-and-security-for-microsoft-365"></a>我是否可以從 Exchange ActiveSync 裝置管理切換至 Microsoft 365 的基本行動及安全性？
 
-如果您已使用 Exchange ActiveSync 原則來管理行動裝置，則可以遵循下列步驟來開始使用基本行動性和安全性：設定基本行動性和安全性。 如需詳細資訊，請參閱 [保護使用者和裝置存取權](https://go.microsoft.com/fwlink/?LinkId=615145) 及 [設定基本行動性和安全性](set-up.md)。
+如果您已使用 Exchange ActiveSync 原則來管理行動裝置，則可以遵循下列步驟來開始使用基本行動性和安全性：設定基本行動性和安全性。 如需詳細資訊，請參閱 [保護使用者和裝置存取權](../../compliance/protect-access-to-data-and-services.md) 及 [設定基本行動性和安全性](set-up.md)。
 
 當您將基本行動性和安全性中所建立的原則套用至使用者群組時，這些原則會覆寫 Exchange ActiveSync 行動裝置信箱原則和您先前在 Exchange 系統管理中心中為這些使用者建立的裝置存取規則。
 

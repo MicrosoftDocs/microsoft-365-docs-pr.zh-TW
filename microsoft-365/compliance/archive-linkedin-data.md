@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 瞭解系統管理員如何設定 & 使用原生連接器將資料從 LinkedIn 公司] 頁面匯入至 Microsoft 365。
-ms.openlocfilehash: 9f6cb2c6d5c47559f1fda13b6d03bfed3afe6fa2
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 40e51424d086b0eee42d1f15ea577b7e8f1648c1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790177"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906143"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>設定連接器來封存 LinkedIn 資料
 
@@ -30,7 +30,7 @@ LinkedIn 公司頁面資料儲存在信箱中之後，您可以將 Microsoft 365
 
 ## <a name="before-you-set-up-a-connector"></a>在您設定連接器之前
 
-- 建立 LinkedIn 公司頁面連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 建立 LinkedIn 公司頁面連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 - 您必須擁有 LinkedIn 使用者帳戶的登入認證 (電子郵件地址或電話號碼和密碼) ，該使用者帳戶是您要封存之 LinkedIn 公司頁面的系統管理員。 當您設定連接器時，您可以使用這些認證登入 LinkedIn。
 
@@ -66,6 +66,6 @@ LinkedIn 公司頁面資料儲存在信箱中之後，您可以將 Microsoft 365
 
 若要查看更多詳細資料，請選取 [ **資料連線器** ] 頁面上清單中的連接器以顯示飛入頁面。 在 [ **狀態**] 下，顯示的日期範圍會指出建立連接器時所選取的年齡篩選。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 LinkedIn 項會匯入至 Microsoft 365 中儲存信箱收件匣的 LinkedIn 子資料夾。 它們會顯示為電子郵件訊息。

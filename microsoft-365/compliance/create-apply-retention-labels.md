@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及發佈保留標籤的指示，以便您日後在應用程式中套用，用以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 67285862756a262233fef934efb377b949fc9d65
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: c327081109fe9d7c4d85d4cf8f01a9e5466432d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423494"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908417"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>建立保留標籤，並在應用程式中套用
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > 所有保留標籤設定 (包括[法規記錄](records-management.md#records)) 都支援此案例。
@@ -111,9 +111,9 @@ ms.locfileid: "50423494"
 ![手動標籤生效的圖](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-如果標籤在七天之後未顯示，請在合規性中心的 **[標籤原則]** 頁面中選取標籤原則，以檢查其 **[狀態]**。 如果您看到 **關閉 (錯誤)** 狀態，且在位置的詳細資料中，看到訊息說明部署原則 (針對 SharePoint) 或嘗試重新部署原則 (針對 OneDrive) 所耗費的時間超過預期，請嘗試執行 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令以重試原則發佈：
+如果標籤在七天之後未顯示，請在合規性中心的 **[標籤原則]** 頁面中選取標籤原則，以檢查其 **[狀態]**。 如果您看到 **關閉 (錯誤)** 狀態，且在位置的詳細資料中，看到訊息說明部署原則 (針對 SharePoint) 或嘗試重新部署原則 (針對 OneDrive) 所耗費的時間超過預期，請嘗試執行 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令以重試原則發佈：
 
-1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. 執行下列命令：
     
@@ -125,7 +125,7 @@ ms.locfileid: "50423494"
 
 在 Exchange Online 中，使用者可透過每 7 天執行一次的程序取得保留標籤。 您可以使用 PowerShell 查看這項程序上次執行的時間，藉此判斷下次的執行時間。
   
-1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773)。
+1. [連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
     
 2. 執行下列命令。
     
@@ -226,7 +226,7 @@ You can also apply a retention label to a folder or document set, and you can se
 After a retention label is applied to an item, you can view it in the details pane when that item's selected.
   
 ![Applied label shown in Details pane](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
-  
+
 For SharePoint, but not OneDrive, you can create a view of the library that contains the **Labels** column or **Item is a Record** column. This view lets you see at a glance the retention labels assigned to all items and which items are records. Note, however, that you can't filter the view by the **Item is a Record** column. For instructions how to add columns, see [Show or hide columns in a list or library](https://support.microsoft.com/en-us/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2).
 
 
@@ -309,5 +309,5 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 Event-based retention is another supported scenario for retention labels. For more information, see the following articles:
 
 - [Start retention when an event occurs](event-driven-retention.md)
-- [Automate event-based retention](automate-event-driven-retention.md)
+- [Automate event-based retention](./event-driven-retention.md#automate-events-by-using-a-rest-api)
 - [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)

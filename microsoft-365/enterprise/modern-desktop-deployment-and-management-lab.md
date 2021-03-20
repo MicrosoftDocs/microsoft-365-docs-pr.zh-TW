@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 9b558ad20a84bc902dd9a4a78ebafdbcecd8a9bb
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288260"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907453"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署實驗室套件
 
@@ -105,13 +105,13 @@ Windows 和 Office 部署實驗室套件的設計目的是協助您規劃、測�
 
   - [來自 Microsoft Mechanics 的桌面部署中心系列影片](https://www.aka.ms/watchhowtoshift)
 
-  - [Microsoft Endpoint Configuration Manager 作業系統部署](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Microsoft Endpoint Configuration Manager 作業系統部署](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [Windows 10 部署計劃](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [Windows 10 部署計劃](/windows/deployment/planning/index)
 
-  - [Microsoft 365 應用程式部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Microsoft 365 應用程式部署指南](/deployoffice/deployment-guide-microsoft-365-apps)
 
-  - [開始使用 Intune](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [開始使用 Intune](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>相關資源
 

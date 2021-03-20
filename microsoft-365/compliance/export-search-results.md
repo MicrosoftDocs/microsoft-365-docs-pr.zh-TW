@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 從 Microsoft 365 規範中心的內容搜尋中，將搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7027593768238b3d9a465eaa6038d92234c32f82
-ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
+ms.openlocfilehash: 3103bfda4269b7d66e4171b4481d259f2ae3e3de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "49992509"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906939"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -49,7 +49,7 @@ ms.locfileid: "49992509"
 
   - Microsoft Edge <sup>2</sup>
   
-    OR
+    「或」
 
   - Microsoft Internet Explorer 10 和更新版本
   
@@ -124,7 +124,7 @@ ms.locfileid: "49992509"
   
 8. 按一下 [ **啟用重復資料** 刪除] 核取方塊，排除重複的郵件。 只有在搜尋的內容來源包含 Exchange 信箱或公用資料夾時，才會出現此選項。 
   
-    如果您選取此選項，則即使在搜尋的信箱中找到多個相同郵件複本，也只會匯出郵件的一個副本。 [匯出結果] 報告 ( # A0) 會包含重複郵件每個副本的列，以便您識別包含重複郵件複本) 的信箱 (或公用資料夾。 如需有關重復資料刪除以及如何識別重複專案的詳細資訊，請參閱 [eDiscovery 搜尋結果中的重復資料](de-duplication-in-ediscovery-search-results.md)刪除。
+    如果您選取此選項，則即使在搜尋的信箱中找到多個相同郵件複本，也只會匯出郵件的一個副本。 [匯出結果報告 (Results.csv]) 會包含重複郵件每個副本的列，以便您識別包含重複郵件複本) 的信箱 (或公用資料夾。 如需有關重復資料刪除以及如何識別重複專案的詳細資訊，請參閱 [eDiscovery 搜尋結果中的重復資料](de-duplication-in-ediscovery-search-results.md)刪除。
   
 9. 按一下 [ **包含版本的 SharePoint 檔** ] 核取方塊，以匯出 SharePoint 檔的所有版本。 只有在搜尋的內容來源包含 SharePoint 或 OneDrive 商務網站時，才會顯示此選項。 
   
@@ -168,7 +168,7 @@ ms.locfileid: "49992509"
   
     **EDiscovery 匯出工具** 會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 以下是匯出搜尋結果的詳細資訊。
   
@@ -226,7 +226,7 @@ ms.locfileid: "49992509"
 
   - **錯誤和警告** 包含匯出期間所發生之檔案的錯誤和警告。 請參閱 [錯誤詳細資料] 欄，以取得每個個別錯誤或警告的特定資訊。
 
-  - **略過的專案** 當您從 SharePoint 和商務用 OneDrive 匯出搜尋結果時，匯出通常會包含「略過的專案」報告 ( # A0) 。 在此報告中提及的專案通常是不會下載的專案，例如資料夾或檔組。 不是依照設計方式匯出這些專案類型。 對於略過的其他專案，[略過的專案] 報告中的「錯誤類型」和「錯誤詳細資料」欄位會顯示略過專案的原因，而且不會與其他搜尋結果一起下載。
+  - **略過的專案** 當您從 SharePoint 和商務用 OneDrive 匯出搜尋結果時，匯出通常會包含 [略過的專案] 報告 (SkippedItems.csv) 。 在此報告中提及的專案通常是不會下載的專案，例如資料夾或檔組。 不是依照設計方式匯出這些專案類型。 對於略過的其他專案，[略過的專案] 報告中的「錯誤類型」和「錯誤詳細資料」欄位會顯示略過專案的原因，而且不會與其他搜尋結果一起下載。
 
   - **追蹤記錄** 檔包含匯出程式的詳細記錄資訊，並可協助在匯出期間發現問題。
   
@@ -285,7 +285,7 @@ ms.locfileid: "49992509"
 
   在腳本中，您必須指定要匯出結果的搜尋名稱。 例如，針對搜尋，將 `SearchAllMailboxes` SEARCHNAME_Export 取代為 `SearchAllMailboxes_Export` 。
 
-  在將搜尋的名稱新增至腳本後，您可以複製腳本文字，然後將其貼到 [已連接至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)的 Windows PowerShell 視窗中。 在您貼上腳本後，電子檔探索匯出工具 (會顯示為當您使用 UI) 下載搜尋結果時，如下所示：
+  在將搜尋的名稱新增至腳本後，您可以複製腳本文字，然後將其貼到 [已連接至安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)的 Windows PowerShell 視窗中。 在您貼上腳本後，電子檔探索匯出工具 (會顯示為當您使用 UI) 下載搜尋結果時，如下所示：
 
   ![eDiscovery 匯出工具](../media/eDiscoveryExportTool.png)
 

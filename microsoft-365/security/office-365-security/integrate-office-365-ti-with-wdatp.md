@@ -19,19 +19,19 @@ description: 搭配使用 Microsoft Defender for Office 365 與 Microsoft Defend
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 035834e1e4855c0e47defed06043a5fdbd0e63bd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 05022b5728b147ea8459cdcb41b2930201e2c7e6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166084"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907093"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>使用適用于 Office 365 的 Microsoft Defender 搭配 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft defender For Office 365](office-365-atp.md) 可以設定為搭配 [Microsoft defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)使用。
+[Microsoft defender For Office 365](office-365-atp.md) 可以設定為搭配 [Microsoft defender for Endpoint](/windows/security/threat-protection)使用。
 
 整合 Microsoft Defender for Office 365 搭配 Microsoft Defender for Endpoint 可協助您的安全性運作小組監視並快速採取行動（如果使用者的裝置面臨危險）。 例如，啟用整合後，您的安全性作業小組將能夠查看偵測到的電子郵件訊息可能影響的裝置，以及為 Microsoft Defender for Endpoint 中的裝置產生多少最近的提醒。
 
@@ -42,7 +42,7 @@ ms.locfileid: "50166084"
 在此範例中，您可以看到偵測到之電子郵件的收件者有四個裝置，一個有警示。 按一下裝置的連結會在 Microsoft Defender Security Center () 中開啟其頁面 <https://securitycenter.windows.com> 。
 
 > [!TIP]
-> **[深入瞭解 Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (也稱為「microsoft Defender for Endpoint 入口網站」。 ) 
+> **[深入瞭解 Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/use)** (也稱為「microsoft Defender for Endpoint 入口網站」。 ) 
 
 ## <a name="requirements"></a>需求
 
@@ -82,4 +82,4 @@ ms.locfileid: "50166084"
 
 [適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
 
-[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection)
+[適用於端點的 Microsoft Defender](/windows/security/threat-protection)

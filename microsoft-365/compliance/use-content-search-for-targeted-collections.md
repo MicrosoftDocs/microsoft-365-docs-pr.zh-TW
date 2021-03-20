@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: 在 Microsoft 365 規範中心使用內容搜尋，以執行目標的集合，以確保專案位於特定信箱或網站資料夾中。
-ms.openlocfilehash: 9c549b3ae418d13b6e1aafbf0cc171c52f89e621
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 376adfd1bec20d3b1ec11dac5e775eb386ea6317
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423454"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907695"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>對目標集合使用內容搜尋
 
@@ -37,9 +37,9 @@ Microsoft 365 規範中心的內容搜尋功能不會在 UI 中提供直接的�
 
 - 您必須是 Security & 合規性中心內 eDiscovery 管理員角色群組的成員，才可執行步驟1中的腳本。 如需詳細資訊，請參閱[指派電子文件探索權限](assign-ediscovery-permissions.md)。
 
-    此外，您必須在 Exchange Online 組織中指派「郵件收件者」角色。 這是執行 **Get-MailboxFolderStatistics** Cmdlet 的必要指令，該指令包含在腳本中。 根據預設，會將「郵件收件者」角色指派給 Exchange Online 中的組織管理和收件者管理角色群組。 如需在 Exchange Online 中指派許可權的相關資訊，請參閱 [Manage role group members](https://go.microsoft.com/fwlink/p/?linkid=692102)。 您也可以建立自訂角色群組、指派「郵件收件者」角色給它，然後新增需要在步驟1中執行腳本的成員。 如需詳細資訊，請參閱 [管理角色群組](https://go.microsoft.com/fwlink/p/?linkid=730688)。
+    此外，您必須在 Exchange Online 組織中指派「郵件收件者」角色。 這是執行 **Get-MailboxFolderStatistics** Cmdlet 的必要指令，該指令包含在腳本中。 根據預設，會將「郵件收件者」角色指派給 Exchange Online 中的組織管理和收件者管理角色群組。 如需在 Exchange Online 中指派許可權的相關資訊，請參閱 [Manage role group members](/exchange/manage-role-group-members-exchange-2013-help)。 您也可以建立自訂角色群組、指派「郵件收件者」角色給它，然後新增需要在步驟1中執行腳本的成員。 如需詳細資訊，請參閱 [管理角色群組](/Exchange/permissions-exo/role-groups)。
 
-- 本文中的腳本支援新式驗證。 如果您是 Microsoft 365 或 Microsoft 365 GCC 組織，您可以將腳本當做-。 如果您是 Office 365 德國組織、Microsoft 365 GCC 高組織或 Microsoft 365 DoD 組織，您必須編輯腳本，以順利執行它。 具體說來，您必須編輯該行 `Connect-ExchangeOnline` 並使用 *ExchangeEnvironmentName* 參數 (，並使用適當的值為您的組織輸入) 以連線至 Exchange Online PowerShell。  此外，您必須編輯該行 `Connect-IPPSSession` 並使用 *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 參數 (以及組織類型的適當值，) 才能連線至安全性 & 規範中心 PowerShell。 如需詳細資訊，請參閱 [connect To Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?#connect-to-exchange-online-powershell-without-using-mfa) 中的範例，並聯機 [至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
+- 本文中的腳本支援新式驗證。 如果您是 Microsoft 365 或 Microsoft 365 GCC 組織，您可以將腳本當做-。 如果您是 Office 365 德國組織、Microsoft 365 GCC 高組織或 Microsoft 365 DoD 組織，您必須編輯腳本，以順利執行它。 具體說來，您必須編輯該行 `Connect-ExchangeOnline` 並使用 *ExchangeEnvironmentName* 參數 (，並使用適當的值為您的組織輸入) 以連線至 Exchange Online PowerShell。  此外，您必須編輯該行 `Connect-IPPSSession` 並使用 *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 參數 (以及組織類型的適當值，) 才能連線至安全性 & 規範中心 PowerShell。 如需詳細資訊，請參閱 [connect To Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) 中的範例，並聯機 [至安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
 
 - 每當您執行腳本時，就會建立新的遠端 PowerShell 會話。 這表示您可以使用所有可用的遠端 PowerShell 會話。 若要避免發生這種情況，請執行下列命令，以中斷使用中遠端 PowerShell 會話的連線。
 
@@ -47,7 +47,7 @@ Microsoft 365 規範中心的內容搜尋功能不會在 UI 中提供直接的�
   Get-PSSession | Remove-PSSession
   ```
 
-    如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)＞。
+    如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)＞。
 
 - 腳本包含最低的錯誤處理。 腳本的主要用途是快速顯示可在內容搜尋的搜尋查詢語法中使用的信箱資料夾 IDs 或網站路徑清單，以執行目標集合。
 

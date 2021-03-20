@@ -23,14 +23,14 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: 瞭解如何在電腦、電話和平板電腦上設定及使用 Microsoft 365。
-ms.openlocfilehash: 437e644190017a0031d7c91d239f5b4f0a8d3773
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142070"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906285"
 ---
-# <a name="get-started"></a>入門
+# <a name="get-started"></a>快速入門
 
 您的組織最近取得 Microsoft 365，現在您需要使用它，所以您可以開始閱讀電子郵件、共用檔等等。 瞭解如何在電腦、電話和平板電腦上設定及使用 Microsoft 365。
   
@@ -58,13 +58,12 @@ ms.locfileid: "50142070"
 
 以下是可協助您開始的一些資源。
   
-- 系統[管理員訓練](https://docs.microsoft.com/microsoft-365/admin)：取得系統管理員免費線上類別的連結。
+- 系統[管理員訓練](../index.yml)：取得系統管理員免費線上類別的連結。
     
-- 系統[管理](https://docs.microsoft.com/microsoft-365/admin/admin-home)說明：取得有關主要工作、「系統管理工具快速入門」及疑難排解問題的資訊。
+- 系統[管理](./admin-overview.md)說明：取得有關主要工作、「系統管理工具快速入門」及疑難排解問題的資訊。
     
 - [聯繫支援人員-系統管理](../contact-support-for-business-products.md) 說明：致電 us，開啟線上要求，或讓社區協助。 
     
 ## <a name="related-articles"></a>相關文章
 
 [設定 Microsoft 365 for business-系統管理說明](../setup/setup.md)
-

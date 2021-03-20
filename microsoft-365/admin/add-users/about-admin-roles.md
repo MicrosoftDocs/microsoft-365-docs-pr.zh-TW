@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員可以透過系統管理中心開啟支援票證。
-ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: cf628ffd05cb7f5d94c932d48bd4e8ae35a47db9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867979"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906369"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
@@ -37,9 +37,9 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 
 ## <a name="before-you-begin"></a>開始之前
 
-正在尋找您可以在 Microsoft 365 系統管理中心管理的詳細 Azure AD 角色描述的完整清單嗎？ 查看 Azure Active Directory 中的系統管理員角色權限。 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+正在尋找您可以在 Microsoft 365 系統管理中心管理的詳細 Azure AD 角色描述的完整清單嗎？ 查看 Azure Active Directory 中的系統管理員角色權限。 [Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
-正在尋找您可以在 Microsoft 365 系統管理中心管理的詳細 Intune 角色描述的完整清單嗎？  請參閱 [使用 Microsoft Intune 的角色型存取控制 (RBAC)](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)。
+正在尋找您可以在 Microsoft 365 系統管理中心管理的詳細 Intune 角色描述的完整清單嗎？  請參閱 [使用 Microsoft Intune 的角色型存取控制 (RBAC)](/mem/intune/fundamentals/role-based-access-control)。
 
 如需在 Microsoft 365 系統管理中心指派角色的詳細資訊，請參閱[指派系統管理員角色](assign-admin-roles.md)。
 
@@ -67,7 +67,7 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 
 ::: moniker-end
 
-您可能只需要在組織中指派下列角色。 根據預設，我們會先顯示大部分組織使用的角色。 如果您找不到某個角色，請移至清單底部，然後選取 [依類別顯示全部]。 (如需詳細資訊，包括與角色相關聯的 Cmdlet，請參閱 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。)
+您可能只需要在組織中指派下列角色。 根據預設，我們會先顯示大部分組織使用的角色。 如果您找不到某個角色，請移至清單底部，然後選取 [依類別顯示全部]。 (如需詳細資訊，包括與角色相關聯的 Cmdlet，請參閱 [Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。)
 
 |系統管理員角色     |誰應獲指派此角色？  |
 |---------|---------|
@@ -92,7 +92,7 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 
 - **服務台代理人**：等同於服務台系統管理員的權限。
 
-在合作夥伴可以將這些角色指派給使用者之前，您必須先將該合作夥伴新增為您帳戶的委派系統管理員。 此程序是由獲授權的合作夥伴初始化。 合作夥伴會傳送電子郵件給您，詢問您是否想要授與其權限，以做為委派的系統管理員。如需指示，請參閱[授權或移除合作夥伴關係](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)。
+在合作夥伴可以將這些角色指派給使用者之前，您必須先將該合作夥伴新增為您帳戶的委派系統管理員。 此程序是由獲授權的合作夥伴初始化。 合作夥伴會傳送電子郵件給您，詢問您是否想要授與其權限，以做為委派的系統管理員。如需指示，請參閱[授權或移除合作夥伴關係](../misc/add-partner.md)。
   
 ## <a name="related-articles"></a>相關文章
 

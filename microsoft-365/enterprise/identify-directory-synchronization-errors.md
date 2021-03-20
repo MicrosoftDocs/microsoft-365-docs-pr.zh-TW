@@ -23,16 +23,16 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: 瞭解如何在 Microsoft 365 系統管理中心中查看目錄同步處理錯誤及可能的修正。
-ms.openlocfilehash: 5103b1f8a8f0514ca30fd71b94dee2530f0b082f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 76717fc158aa0cee47f784919f19a295378bbd5b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688727"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907501"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>在 Microsoft 365 中查看目錄同步處理錯誤
 
-您可以在 Microsoft 365 系統管理中心中查看目錄同步處理錯誤。 只會顯示使用者物件錯誤。 若要使用 PowerShell 查看錯誤，請參閱 [使用 DirSyncProvisioningErrors 識別物件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)。
+您可以在 Microsoft 365 系統管理中心中查看目錄同步處理錯誤。 只會顯示使用者物件錯誤。 若要使用 PowerShell 查看錯誤，請參閱 [使用 DirSyncProvisioningErrors 識別物件](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)。
 
 ## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中查看目錄同步處理錯誤
 
@@ -53,4 +53,3 @@ ms.locfileid: "46688727"
    ![目錄同步處理錯誤詳細資料的範例](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
 查看之後，請參閱 [修正 Microsoft 365 目錄同步處理的問題](fix-problems-with-directory-synchronization.md) ，修正任何已識別的問題。
-

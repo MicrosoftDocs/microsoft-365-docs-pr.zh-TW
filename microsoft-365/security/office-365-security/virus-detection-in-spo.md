@@ -20,12 +20,12 @@ description: 深入瞭解 SharePoint 線上如何在使用者上傳的檔案中�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ba3d19c6b04b93d9b1089540b7483d8b2e7246c
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: a651d198f441c26525cbfb5d7406ae350db8b79e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727496"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908079"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive 和 Microsoft 團隊中內建的病毒防護
 
@@ -62,7 +62,7 @@ Microsoft 365 病毒偵測引擎會以非同步方式執行 (獨立于 SharePoin
 
 > [!NOTE]
 >
-> 系統管理員可以在 SharePoint 線上 PowerShell 的 [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)指令程式上使用 *DisallowInfectedFileDownload* 參數，以防止使用者在未感染的檔案中下載感染的檔案，即使在反病毒警告視窗中也是一樣。 如需相關指示，請參閱 [使用 SharePoint 線上 PowerShell 以避免使用者下載惡意](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)檔案。
+> 系統管理員可以在 SharePoint 線上 PowerShell 的 [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)指令程式上使用 *DisallowInfectedFileDownload* 參數，以防止使用者在未感染的檔案中下載感染的檔案，即使在反病毒警告視窗中也是一樣。 如需相關指示，請參閱 [使用 SharePoint 線上 PowerShell 以避免使用者下載惡意](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)檔案。
 >
 > 一旦您啟用 *DisallowInfectedFileDownload* 參數，就會完全封鎖使用者和系統管理員對偵測到的/封鎖檔案的存取。
 
@@ -76,6 +76,6 @@ OneDrive 同步處理用戶端將不會下載含有病毒的檔案。 同步處�
 
 ## <a name="related-articles"></a>相關文章
 
-[Microsoft 365 中的惡意程式碼和勒索軟體防護](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)
+[Microsoft 365 中的惡意程式碼和勒索軟體防護](/compliance/assurance/assurance-malware-and-ransomware-protection)
 
 如需 SharePoint 線上、OneDrive 和 Microsoft 小組的防病毒相關資訊，請參閱 [防範威脅](protect-against-threats.md) 及 [開啟 SharePoint、OneDrive 及 Microsoft 小組的安全附件](turn-on-atp-for-spo-odb-and-teams.md)。

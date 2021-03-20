@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 瞭解如何使用頁面診斷工具，在 SharePoint 線上新式網站頁面中優化頁面重量。
-ms.openlocfilehash: 64fb3c90db78a23c7f1c3fcfe604c8ef58703be0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 780d8ca0debbc5efb834f8f3543b9a5a8d168108
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688305"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907441"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式網站頁面中最佳化頁面權數
 
@@ -35,7 +35,7 @@ SharePoint Online 新式網站頁面包含轉譯頁面的頁面內容所需的�
 本文可協助您了解如何在新式網站頁面中減少頁面權數。
 
 >[!NOTE]
->如需有關 SharePoint Online 新式入口網站效能的詳細資訊，請參閱 [SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
+>如需有關 SharePoint Online 新式入口網站效能的詳細資訊，請參閱 [SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>使用「適用於 SharePoint 的頁面診斷」工具來分析頁面權數
 
@@ -44,14 +44,14 @@ SharePoint Online 新式網站頁面包含轉譯頁面的頁面內容所需的�
 >[!NOTE]
 >網頁診斷工具只能用於 SharePoint Online，且無法在 SharePoint 系統頁面使用。
 
-當您使用「適用於 SharePoint 的頁面診斷」工具分析 SharePoint 網站頁面時，您可以在 [診斷測試]__ 窗格的 [頁面權數低於 500KB]**** 結果中看到關於頁面的資訊。 如果頁面權數低於基準值，則結果會顯示為綠色，如果頁面權數超過基準值，則會顯示為紅色。
+當您使用「適用於 SharePoint 的頁面診斷」工具分析 SharePoint 網站頁面時，您可以在 [診斷測試] 窗格的 [頁面權數低於 500KB] 結果中看到關於頁面的資訊。 如果頁面權數低於基準值，則結果會顯示為綠色，如果頁面權數超過基準值，則會顯示為紅色。
 
 可能的結果包括：
 
 - **需要注意** (紅色)：頁面權數超過 500KB
 - **不需要任何動作** (綠色)：頁面權數低於 500KB
 
-如果 [頁面權數低於 500KB]**** 結果顯示在 [需要注意]**** 區段中，您可以按一下結果以取得詳細資訊。
+如果 [頁面權數低於 500KB] 結果顯示在 [需要注意] 區段中，您可以按一下結果以取得詳細資訊。
 
 ![對 SharePoint 的要求結果](../media/modern-portal-optimization/pagediag-page-weight.png)
 
@@ -68,7 +68,7 @@ SharePoint Online 新式網站頁面包含轉譯頁面的頁面內容所需的�
 
 您可以在下列文章中找到更多關於限制頁面權數的指導方針：
 
-- [在 SharePoint 中最佳化頁面效能](https://docs.microsoft.com/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint) (英文)
+- [在 SharePoint 中最佳化頁面效能](/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint) (英文)
 
 在您進行頁面修訂以修復效能問題之前，請記下分析結果中的頁面載入時間。 在修訂後再次執行工具，以查看新結果是否在基準標準內，並檢查新頁面的載入時間，以查看是否有改善。
 
@@ -83,7 +83,7 @@ SharePoint Online 新式網站頁面包含轉譯頁面的頁面內容所需的�
 
 [調整 Office 365 效能](tune-microsoft-365-performance.md)
 
-[SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)
 
 [內容傳遞網路](content-delivery-networks.md)
 

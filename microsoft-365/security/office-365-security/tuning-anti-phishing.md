@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Microsoft 365 中識別網頁仿冒郵件的原因，以及如何防止未來的更多網路釣魚郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d3abbafce36c589f60eb164fb29c714c980f8b98
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 84159ef08324ed0a895d84e6c9c19f429e227fa1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286486"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908135"
 ---
 # <a name="tune-anti-phishing-protection"></a>調整防網路釣魚保護
 
@@ -86,10 +86,10 @@ ms.locfileid: "50286486"
 
   - [使用 DMARC 驗證電子郵件](use-dmarc-to-validate-email.md)
 
-- 建議您盡可能將網域的電子郵件直接傳遞至 Microsoft 365。 換句話說，請將您的 Microsoft 365 網域的 MX 記錄指向 Microsoft 365。 Exchange Online Protection (EOP) 能夠在將其郵件直接傳遞至 Microsoft 365 時，為您的雲端使用者提供最佳的保護。 如果您必須在 EOP 前使用協力廠商的電子郵件清潔系統，請使用增強型介面篩選功能。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+- 建議您盡可能將網域的電子郵件直接傳遞至 Microsoft 365。 換句話說，請將您的 Microsoft 365 網域的 MX 記錄指向 Microsoft 365。 Exchange Online Protection (EOP) 能夠在將其郵件直接傳遞至 Microsoft 365 時，為您的雲端使用者提供最佳的保護。 如果您必須在 EOP 前使用協力廠商的電子郵件清潔系統，請使用增強型介面篩選功能。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
 - 使用者應使用 [報告訊息增益集](enable-the-report-message-add-in.md) 或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md) ，向 Microsoft 報告訊息，以進行系統訓練。 系統管理員也應利用 [管理員提交](admin-submission.md) 功能。
 
 - 多重因素驗證 (MFA) 是防範已遭破壞之帳戶的最佳方式。 您應強烈考慮為您的所有使用者啟用 MFA。 針對分段的方法，在您為每個人啟用 MFA 之前，先為最機密的使用者啟用 MFA (系統管理員、行政人員等等 ) 。 如需相關指示，請參閱 [設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 
-- 將規則轉寄給外部收件者通常是被攻擊者用來提取資料。 使用 [Microsoft Secure 得分](../mtp/microsoft-secure-score.md)中的 [**複查信箱轉寄規則**] 資訊，尋找甚至避免將轉寄規則轉接給外部收件者。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) (英文)。
+- 將規則轉寄給外部收件者通常是被攻擊者用來提取資料。 使用 [Microsoft Secure 得分](../mtp/microsoft-secure-score.md)中的 [**複查信箱轉寄規則**] 資訊，尋找甚至避免將轉寄規則轉接給外部收件者。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) (英文)。

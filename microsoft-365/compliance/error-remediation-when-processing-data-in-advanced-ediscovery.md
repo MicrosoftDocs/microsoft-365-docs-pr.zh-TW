@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何使用錯誤修正功能，修正可避免正確處理內容的高級 eDiscovery 中的資料問題。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c6ef1076e44fca0d060d766fc85a435550c40059
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: f2067831a85e3b3a506917fac5b93acfa0b174db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750796"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906981"
 ---
 # <a name="error-remediation-when-processing-data"></a>處理資料時的錯誤補救
 
@@ -60,7 +60,7 @@ ms.locfileid: "49750796"
     ![準備進行錯誤修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
 
     > [!NOTE]
-    > 您必須使用 AzCopy app-v 8.1 才能成功使用 **下載** 檔案頁面上提供的命令。 您也必須使用 AzCopy app-v 8.1 上傳步驟10中的檔案。 若要安裝這 AzCopy 版本，請參閱 [在 Windows 上使用 AzCopy 中的「傳送資料](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)」。 如果提供的 AzCopy 命令失敗，請參閱 [Advanced eDiscovery 中的疑難排解 AzCopy](troubleshooting-azcopy.md)。
+    > 您必須使用 AzCopy app-v 8.1 才能成功使用 **下載** 檔案頁面上提供的命令。 您也必須使用 AzCopy app-v 8.1 上傳步驟10中的檔案。 若要安裝這 AzCopy 版本，請參閱 [在 Windows 上使用 AzCopy 中的「傳送資料](/previous-versions/azure/storage/storage-use-azcopy)」。 如果提供的 AzCopy 命令失敗，請參閱 [Advanced eDiscovery 中的疑難排解 AzCopy](troubleshooting-azcopy.md)。
 
     您選取的檔案會下載到您在步驟5中指定的位置。 在父資料夾中 (例如， **C:\Remediation**) ，會自動建立下列子資料夾結構：
 

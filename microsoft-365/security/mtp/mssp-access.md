@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 security center 中的 microsoft Defender for Endpoint
+title: 提供受管理的安全性服務提供者 (MSSP) 存取權
 description: 深入瞭解 Microsoft Defender Security Center to the Microsoft 365 Security center 中的變更
 keywords: Microsoft 365 security center、OATP、MDATP、MDO、MDE、單一窗格的玻璃、混合入口網站、安全性入口網站、defender 安全性入口網站快速入門
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 96d5a3bdbd0acbf428f01cc3bb5afefaa95950b4
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: db9279ba1bc5fe11f3a31884a05b4403f0cb67f3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242940"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906697"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>提供受管理的安全性服務提供者 (MSSP) 存取權 
 
@@ -33,16 +33,16 @@ ms.locfileid: "50242940"
 
 適用於：
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](./microsoft-threat-protection.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 若要執行多租使用者委派存取解決方案，請執行下列步驟：
 
-1. 在 Microsoft 365 security center 的 Defender for Endpoint 中啟用以 [角色為基礎的存取控制](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac) ，並聯機至 Azure Active Directory (azure AD) 群組。
+1. 在 Microsoft 365 security center 的 Defender for Endpoint 中啟用以 [角色為基礎的存取控制](/windows/security/threat-protection/microsoft-defender-atp/rbac) ，並聯機至 Azure Active Directory (azure AD) 群組。
 
-2. 設定存取要求與布建的控管 [訪問套件](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) 。
+2. 設定存取要求與布建的控管 [訪問套件](/azure/active-directory/governance/identity-governance-overview) 。
 
-3. 在 [Microsoft Myaccess](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve)中管理存取要求和審核。
+3. 在 [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve)中管理存取要求和審核。
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>在 Microsoft 365 安全中心的 Microsoft Defender for Endpoint 中啟用角色型存取控制
 
@@ -69,9 +69,9 @@ ms.locfileid: "50242940"
       執行除 live response 以外的所有動作和管理安全性設定。
 
     - **第2層分析員** <br>
-      與[live 回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)外的第1層功能
+      與[live 回應](/windows/security/threat-protection/microsoft-defender-atp/live-response)外的第1層功能
 
-    如需詳細資訊，請參閱 [使用以角色為基礎的存取控制](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)。
+    如需詳細資訊，請參閱 [使用以角色為基礎的存取控制](/windows/security/threat-protection/microsoft-defender-atp/rbac)。
 
 
 
@@ -91,7 +91,7 @@ ms.locfileid: "50242940"
 
     ![新目錄的影像](../../media/goverance-catalog.png)
 
-    進一步資訊，請參閱 [建立資源的目錄](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-catalog-create)。
+    進一步資訊，請參閱 [建立資源的目錄](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
 
 3. **建立 MSSP 資源的存取套件客戶 AAD：身分識別控管**
@@ -107,7 +107,7 @@ ms.locfileid: "50242940"
 
     ![新訪問套件的影像](../../media/new-access-package.png)
 
-    如需詳細資訊，請參閱 [建立新的 access 套件](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create)。
+    如需詳細資訊，請參閱 [建立新的 access 套件](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
 
 4. **提供存取權要求從客戶 AAD：身分識別控管 MSSP 資源的連結**
@@ -135,4 +135,4 @@ ms.locfileid: "50242940"
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 具有所指派的許可權和角色。
 
 > [!IMPORTANT]
-> Microsoft 365 security center 中的 Microsoft Defender for Endpoint 的委派存取權目前允許存取每個瀏覽器視窗的單一承租人。 
+> Microsoft 365 security center 中的 Microsoft Defender for Endpoint 的委派存取權目前允許存取每個瀏覽器視窗的單一承租人。

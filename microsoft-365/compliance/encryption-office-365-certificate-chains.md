@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 在 Microsoft 365 中查看完整的根憑證和憑證授權 (CAs) 清單。
-ms.openlocfilehash: 3dd85ae9ec4e691c8b3dce03256e1afb1fcb6274
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: c5b00a3a663c2ae4862cfa3d11f92015c0331e59
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068928"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907717"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 加密鏈
 
-Microsoft 365 利用許多不同的憑證提供者。 下列說明當存取 Microsoft 365 時，客戶可能會遇到的已知 Microsoft 365 根憑證的完整清單。 如需您可能需要在自己的基礎結構中安裝之憑證的詳細資訊，請參閱 [Plan For Microsoft 365 的協力廠商 SSL 憑證](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates)。 下列憑證資訊適用于 Microsoft 365 的所有全球和國內雲端實例。
+Microsoft 365 利用許多不同的憑證提供者。 下列說明當存取 Microsoft 365 時，客戶可能會遇到的已知 Microsoft 365 根憑證的完整清單。 如需您可能需要在自己的基礎結構中安裝之憑證的詳細資訊，請參閱 [Plan For Microsoft 365 的協力廠商 SSL 憑證](../enterprise/plan-for-third-party-ssl-certificates.md)。 下列憑證資訊適用于 Microsoft 365 的所有全球和國內雲端實例。
 
 上次更新： **10/16/2020**
 
@@ -35,7 +35,7 @@ Microsoft 365 利用許多不同的憑證提供者。 下列說明當存取 Micr
 
 | **憑證類型** | **P7b 下載** | **CRL 端點** | **OCSP 端點** | **AIA 端點** |
 | --- | --- | --- | --- | --- |
-| 公開信任的根憑證 | [Microsoft 365 的根憑證捆綁 (P7B) ](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20201012.p7b) | crl.globalsign.net<br>www.d-trust.net | 不適用 | 不適用 |
+| 公開信任的根憑證 | [Microsoft 365 的根憑證捆綁 (P7B) ](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20201012.p7b) | crl.globalsign.net<br>www.d-trust.net | N/A | N/A |
 | 公開信任的中級憑證 | [Microsoft 365 中級憑證捆綁 (P7B) ](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
 展開下列的根及中間部分，以查看憑證提供者的其他詳細資料。

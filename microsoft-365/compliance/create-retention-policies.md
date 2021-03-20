@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 02d3fd17e4aac34546e545ec10621bc99b945b31
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 63670b157a66bad963f02355cbed2bdd95690081
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405711"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908287"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 使用保留原則，主動決定是否要保留內容、刪除內容，或保留然後刪除內容，以管理貴組織的資料。
 
@@ -72,7 +72,7 @@ ms.locfileid: "50405711"
 
 3. 對於 **[選擇要套用原則的位置]** 頁面，請為 Teams 選取一個或兩個位置：**Teams 頻道訊息** 和 **Teams 聊天**。
 
-   針對 **Teams 頻道訊息**，會包含來自標準頻道的訊息，但不會包含 [私人頻道](https://docs.microsoft.com/microsoftteams/private-channels)。 目前，保留原則尚未支援 [私人頻道]。
+   針對 **Teams 頻道訊息**，會包含來自標準頻道的訊息，但不會包含 [私人頻道](/microsoftteams/private-channels)。 目前，保留原則尚未支援 [私人頻道]。
 
    根據預設，[所有小組和所有使用者都處於選中狀態](#a-policy-that-applies-to-entire-locations)，但您可以透過選取 [**[選擇]** 和 **[排除]** 選項](#a-policy-with-specific-inclusions-or-exclusions)對其進行優化。
 
@@ -82,7 +82,7 @@ ms.locfileid: "50405711"
 
 5. 完成精靈以儲存您的設定。
 
-如需 Teams 保留原則的詳細資訊，請參閱在 Teams 文件中的 [Microsoft Teams 的保留原則](https://docs.microsoft.com/microsoftteams/retention-policies)。
+如需 Teams 保留原則的詳細資訊，請參閱在 Teams 文件中的 [Microsoft Teams 的保留原則](/microsoftteams/retention-policies)。
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>支援 Teams 所需的其他保留原則
 
@@ -104,7 +104,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 > [!NOTE]
 > Yammer 的保留原則已推出預覽版。 如果您還沒有看到 Yammer 的新位置，請於幾周後再試一次。
 >
-> 若要使用此功能，您的 Yammer 網路必須處於[原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，而非混合模式。
+> 若要使用此功能，您的 Yammer 網路必須處於[原生模式](/yammer/configure-your-yammer-network/overview-native-mode)，而非混合模式。
 
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，選取 **[原則]** >  **[保留]**。
 
@@ -190,7 +190,7 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 例如，針對 contoso 租用戶中使用者名稱為 "rsimone" 的使用者：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
-若要驗證租用戶的語法並識別使用者的 URL，請參閱[取得組織中所有使用者的 OneDrive URL 清單](https://docs.microsoft.com/onedrive/list-onedrive-urls) (部分機器翻譯)。
+若要驗證租用戶的語法並識別使用者的 URL，請參閱[取得組織中所有使用者的 OneDrive URL 清單](/onedrive/list-onedrive-urls) (部分機器翻譯)。
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 群組的設定資訊
 

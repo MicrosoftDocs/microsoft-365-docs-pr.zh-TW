@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何產生包含與 eDiscovery 案例相關聯之所有保留資訊的報告。
-ms.openlocfilehash: 35e432104e7c1358887eb89ae96b9bb0d1d12a0f
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 04282f6f2481d892fa16d685936efeec55feae77
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546975"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908407"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>在電子文件探索案例中的保留建立報表
 
@@ -43,7 +43,7 @@ ms.locfileid: "47546975"
 
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步驟1：連線至安全性 & 規範中心 PowerShell
 
-第一步是連接至組織的安全性 & 規範中心 PowerShell。 如需逐步指示，請參閱[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+第一步是連接至組織的安全性 & 規範中心 PowerShell。 如需逐步指示，請參閱[連線至安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>步驟2：執行腳本以報告與 eDiscovery 案例相關聯的封存
 
@@ -162,9 +162,9 @@ ms.locfileid: "47546975"
 
    ![執行 CaseHoldsReport.ps1 腳本後的輸出](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
-當您執行本文中的腳本時所建立的案例保留報告中，包含每個保留的下列相關資訊。 如先前所述，您必須是 eDiscovery 系統管理員，才能傳回組織中所有保留的資訊。 如需案例保留的詳細資訊，請參閱 [eDiscovery 案例](ediscovery-cases.md)。
+當您執行本文中的腳本時所建立的案例保留報告中，包含每個保留的下列相關資訊。 如先前所述，您必須是 eDiscovery 系統管理員，才能傳回組織中所有保留的資訊。 如需案例保留的詳細資訊，請參閱 [eDiscovery 案例](./get-started-core-ediscovery.md)。
 
 - 保留的名稱和保留相關之 eDiscovery 案例的名稱。
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 瞭解 Exchange Online 和 Microsoft 365 如何使用 (TLS) 和轉寄機密 (FS) 的傳輸層安全性，以保護電子郵件通訊。 也會取得 Microsoft 用於 Exchange Online 之憑證的相關資訊。
-ms.openlocfilehash: 6e23ebc6451b9d139f1b18838007411028a059f3
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: cc7ca631f9322fdc8a85cfaba197e63d06d08aee
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727454"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906949"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Exchange Online 如何使用 TLS 保護電子郵件連線
 
@@ -45,17 +45,17 @@ Exchange Online 伺服器一律會使用 TLS 1.2 加密連往資料中心內其�
   
 ## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>Microsoft 365 如何在 Microsoft 365 與外部的信任合作夥伴之間使用 TLS
 
-根據預設，Exchange Online 一律會使用「隨機 TLS」。 這表示 Exchange Online 一律會先嘗試使用最安全的 TLS 版本加密連線，如果無法成功，便在 TLS 加密清單中尋找下一順位的版本，直到找到雙方都能同意的版本。 除非您已設定 Exchange Online，以確保傳送給該收件者的郵件只是透過安全連線來傳送，否則如果收件者組織不支援 TLS 加密，郵件將會以未加密的方式傳送。 隨機 TLS 對大多數企業而言已足夠。 不過，針對具備法規遵從性需求（例如醫療、銀行或政府組織）的企業，您可以將 Exchange Online 設定為需要（或強制） TLS）。 如需相關指示，請參閱 [使用 Office 365 中的連接器設定郵件流程](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
+根據預設，Exchange Online 一律會使用「隨機 TLS」。 這表示 Exchange Online 一律會先嘗試使用最安全的 TLS 版本加密連線，如果無法成功，便在 TLS 加密清單中尋找下一順位的版本，直到找到雙方都能同意的版本。 除非您已設定 Exchange Online，以確保傳送給該收件者的郵件只是透過安全連線來傳送，否則如果收件者組織不支援 TLS 加密，郵件將會以未加密的方式傳送。 隨機 TLS 對大多數企業而言已足夠。 不過，針對具備法規遵從性需求（例如醫療、銀行或政府組織）的企業，您可以將 Exchange Online 設定為需要（或強制） TLS）。 如需相關指示，請參閱 [使用 Office 365 中的連接器設定郵件流程](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
   
-如果您決定在所屬組織與信任的合作夥伴組織之間設定 TLS，Exchange Online 可以使用「強制 TLS」建立信任的通訊通道。 強制 TLS 會要求合作夥伴組織必須使用安全性憑證向 Exchange Online 進行驗證，才能傳送郵件給您。 您的合作夥伴必須管理自己的憑證，才能執行此動作。 在 Exchange Online 中，我們使用連接器來保護您從未經授權的存取傳送到收件者的電子郵件提供者之前所傳送的郵件。 如需使用連接器來設定郵件流程的詳細資訊，請參閱 [使用 Office 365 中的連接器設定郵件流程](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
+如果您決定在所屬組織與信任的合作夥伴組織之間設定 TLS，Exchange Online 可以使用「強制 TLS」建立信任的通訊通道。 強制 TLS 會要求合作夥伴組織必須使用安全性憑證向 Exchange Online 進行驗證，才能傳送郵件給您。 您的合作夥伴必須管理自己的憑證，才能執行此動作。 在 Exchange Online 中，我們使用連接器來保護您從未經授權的存取傳送到收件者的電子郵件提供者之前所傳送的郵件。 如需使用連接器來設定郵件流程的詳細資訊，請參閱 [使用 Office 365 中的連接器設定郵件流程](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
   
 ## <a name="tls-and-hybrid-exchange-server-deployments"></a>TLS 和混合 Exchange Server 部署
 
-如果您正在管理混合 Exchange 部署，您的內部部署 Exchange 伺服器必須使用安全性憑證向 Microsoft 365 進行驗證，才能傳送郵件給其信箱只在 Office 365 中的收件者。 因此，您必須為內部部署 Exchange 伺服器管理自己的安全性憑證。 您也必須安全地儲存和維護這些伺服器憑證。 如需在混合式部署中管理憑證的詳細資訊，請參閱 [混合部署的憑證需求](https://technet.microsoft.com/library/hh563848%28v=exchg.150%29.aspx)。
+如果您正在管理混合 Exchange 部署，您的內部部署 Exchange 伺服器必須使用安全性憑證向 Microsoft 365 進行驗證，才能傳送郵件給其信箱只在 Office 365 中的收件者。 因此，您必須為內部部署 Exchange 伺服器管理自己的安全性憑證。 您也必須安全地儲存和維護這些伺服器憑證。 如需在混合式部署中管理憑證的詳細資訊，請參閱 [混合部署的憑證需求](/exchange/certificate-requirements)。
   
 ## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>如何在 Office 365 中設定 Exchange Online 的強制 TLS
 
-Exchange Online 客戶若想要使用強制 TLS 保護所有傳送和接收的電子郵件，需要設定多個需要 TLS 的連接器。 一個連接器用於傳送給使用者信箱的電子郵件，另一個連接器用於從使用者信箱寄出的電子郵件。 請在 Office 365 中的 Exchange 系統管理中心建立這些連接器。 如需相關指示，請參閱 [使用 Office 365 中的連接器設定郵件流程](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
+Exchange Online 客戶若想要使用強制 TLS 保護所有傳送和接收的電子郵件，需要設定多個需要 TLS 的連接器。 一個連接器用於傳送給使用者信箱的電子郵件，另一個連接器用於從使用者信箱寄出的電子郵件。 請在 Office 365 中的 Exchange 系統管理中心建立這些連接器。 如需相關指示，請參閱 [使用 Office 365 中的連接器設定郵件流程](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
   
 ## <a name="tls-certificate-information-for-exchange-online"></a>Exchange Online 的 TLS 憑證資訊
 
@@ -111,10 +111,8 @@ Exchange Online 客戶若想要使用強制 TLS 保護所有傳送和接收的�
 
 如需支援的密碼套件清單，請參閱 [技術參考有關加密的詳細資料](technical-reference-details-about-encryption.md)。
   
-[為夥伴組織的安全郵件流程設定連接器](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx)
+[為夥伴組織的安全郵件流程設定連接器](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
   
-[具有增強電子郵件安全性的連接器](https://technet.microsoft.com/library/261d92e4-7371-4555-b781-2062b5bb5278.aspx)
+[具有增強電子郵件安全性的連接器](/previous-versions/exchange-server/exchange-150/dn942516(v=exchg.150))
   
 [Microsoft 365 中的加密](encryption.md)
-  
-

@@ -19,12 +19,12 @@ description: 系統管理員可以瞭解欺騙性智慧洞察力的運作方式�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ca40e2cde08e5ea213d4c19366f038f1da19fa7
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cc53d49401afe3a0d7871bf5f294126315aacfec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407213"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908091"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>逐步解說-Microsoft Defender for Office 365 中的欺騙智慧洞察力
 
@@ -43,7 +43,7 @@ ms.locfileid: "50407213"
 此逐步解說是安全性 & 規範中心的其中一項。 若要瞭解如何導覽報表和真知灼見，請參閱 [相關主題](#related-topics) 區段中的演練。
 
 > [!NOTE]
-> 「欺騙性智慧洞察力」顯示過去7天的資料。 Exchange Online 中的 [欺騙智慧原則](learn-about-spoof-intelligence.md) 和對應的 [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy) Cmdlet PowerShell 顯示過去30天的資料。 [SpoofMailReport](https://docs.microsoft.com/powershell/module/exchange/get-spoofmailreport)顯示最多90天的資料。
+> 「欺騙性智慧洞察力」顯示過去7天的資料。 Exchange Online 中的 [欺騙智慧原則](learn-about-spoof-intelligence.md) 和對應的 [Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy) Cmdlet PowerShell 顯示過去30天的資料。 [SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)顯示最多90天的資料。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -59,7 +59,7 @@ ms.locfileid: "50407213"
 
   如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-  **附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  **附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 - 您可以在 Microsoft Defender for Office 365 中啟用和停用反網路釣魚原則中的欺騙智慧。 預設會啟用欺騙智慧。 如需詳細資訊，請參閱 [Configure Microsoft Defender For Office 365 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 

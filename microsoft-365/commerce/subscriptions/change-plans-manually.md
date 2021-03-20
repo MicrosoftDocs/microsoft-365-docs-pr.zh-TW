@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 購買新的訂閱以手動變更訂閱，並確保訂閱同時列出並使用中。
-ms.openlocfilehash: 1127a48ff23c528e3218bae4ccfd063df5e3c26d
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: d6b0c822f9d3ceeb6c50a6ec872682d1db5decb0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029383"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907901"
 ---
 # <a name="change-plans-manually"></a>手動變更計畫
 
@@ -50,9 +50,9 @@ ms.locfileid: "50029383"
 
 **已購買？** 如果您已有要將使用者移至其中的訂閱，請略過此步驟，然後移至 [ [步驟3：檢查您](#step-3-check-your-new-subscription-and-licenses) 在本主題中的新訂閱與授權]。
 
-OR
+「或」
 
-**購買新的訂閱與授權：** 請遵循 [購買其他 Microsoft 365 for business 訂閱](../buy-another-subscription.md) 中的步驟，購買新的訂閱。
+**購買新的訂閱與授權：** 請遵循 [購買其他 Microsoft 365 for business 訂閱](../try-or-buy-microsoft-365.md) 中的步驟，購買新的訂閱。
 
 請確認您購買的是使用者現在所在組織的訂閱。 例如，檢查您要移動之使用者的電子郵件地址。 如果他們的電子郵件地址包括 \@ contoso.com，您必須購買 contoso.com 的新訂閱。
 針對每個您想要移動的使用者，加入一個授權。
@@ -112,7 +112,7 @@ OR
 
 如果您將所有使用者從一個訂閱移到另一個訂閱，且您不再需要原本的訂閱，可以[取消訂閱](cancel-your-subscription.md)。
 
-如果您只將部分使用者移至不同的訂閱，請移除您不再需要的 [授權](../licenses/remove-licenses-from-subscription.md) 。
+如果您只將部分使用者移至不同的訂閱，請移除您不再需要的 [授權](../licenses/buy-licenses.md) 。
 
 ## <a name="call-support-to-help-you-change-plans"></a>通話支援以協助您變更方案
 [撥打 Microsoft 支援服務](../../admin/contact-support-for-business-products.md)

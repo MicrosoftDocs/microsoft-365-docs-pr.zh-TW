@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 提供在 Microsoft Azure 中部署 Office Server 工作負載時有用資訊的連結清單。
-ms.openlocfilehash: ba294b437d815c81c7747f60b2a82ca0bef05e7a
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 47e885d3db7d9211b917414d03efdc5b716dcd1e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327912"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907489"
 ---
 # <a name="hybrid-solutions"></a>混合式解決方案
 
@@ -31,7 +31,7 @@ ms.locfileid: "48327912"
   
 Azure 中的 Microsoft 365 身分識別基礎結構：
 
-- [針對 SharePoint Server 驗證使用 Azure AD](using-azure-ad-for-sharepoint-server-authentication.md)
+- [針對 SharePoint Server 驗證使用 Azure AD](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
 - [在 Microsoft Azure 中部署 Microsoft 365 目錄同步處理](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
@@ -50,7 +50,7 @@ Azure 中的 Microsoft 365 身分識別基礎結構：
   
 ## <a name="related-topics"></a>相關主題
 
-[Microsoft 365 解決方案與架構中心](../solutions/solution-architecture-center.md)
+[Microsoft 365 解決方案與架構中心](../solutions/index.yml)
   
 [Microsoft Cloud for Enterprise Architects 圖例](../solutions/cloud-architecture-models.md)
   

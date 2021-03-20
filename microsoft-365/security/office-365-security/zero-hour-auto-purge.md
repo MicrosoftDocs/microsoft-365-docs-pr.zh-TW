@@ -22,12 +22,12 @@ ms.custom:
 description: 系統管理員可以瞭解零小時自動清除 (ZAP) 是否可以 retroactively 將 Exchange Online 信箱中已傳遞的郵件移至 [垃圾郵件] 資料夾，或 retroactively 發現為垃圾郵件或網路釣魚的隔離區。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: be47d8dfda68bfb6819b6423542970c7768c6ffb
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b5744fdd4ce371f62fcb4b07a4cbcd003405c3db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820255"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907973"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>在 Exchange Online 中，以零小時自動清除 (ZAP) 
 
@@ -121,4 +121,4 @@ ZAP 無法在獨立 Exchange Online Protection (EOP 中運作) 保護內部部�
 
 ZAP 不會隔離保留信箱中的郵件。 根據為反垃圾郵件原則中的垃圾郵件或網路釣魚所設定的動作，ZAP 可以將郵件移至 [垃圾郵件] 資料夾。
 
-如需 Exchange Online 中的保留的詳細資訊，請參閱 [Exchange online 中的 In-Place 保留和訴訟暫](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds)止。
+如需 Exchange Online 中的保留的詳細資訊，請參閱 [Exchange online 中的 In-Place 保留和訴訟暫](/Exchange/security-and-compliance/in-place-and-litigation-holds)止。

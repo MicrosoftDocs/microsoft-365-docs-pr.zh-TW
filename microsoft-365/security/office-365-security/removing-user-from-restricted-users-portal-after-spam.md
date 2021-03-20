@@ -20,12 +20,12 @@ description: 系統管理員可以從 Office 365 中的 [受限使用者] 入口
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7ebc0cd1d6440673ec453322d3e4c3af2e88a028
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2b4f77f1edf0024a0324736adb2a8bfd6cc51470
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406709"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908215"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>從 Office 365 中的 [受限使用者] 入口網站移除封鎖的使用者
 
@@ -36,9 +36,9 @@ ms.locfileid: "50406709"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-如果使用者超過[服務限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)或[輸出垃圾郵件](configure-the-outbound-spam-policy.md)原則中所指定的輸出傳送限制之一，系統就會限制使用者傳送電子郵件，但他們仍可接收電子郵件。
+如果使用者超過[服務限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)或[輸出垃圾郵件](configure-the-outbound-spam-policy.md)原則中所指定的輸出傳送限制之一，系統就會限制使用者傳送電子郵件，但他們仍可接收電子郵件。
 
-使用者會被新增至安全性與合規性中心的 [受限使用者] 入口網站。 當他們嘗試傳送電子郵件時，系統會以未傳遞回報 (又稱為 NDR 或退回的郵件) 傳回郵件，並包含錯誤碼 [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) 和下列文字：
+使用者會被新增至安全性與合規性中心的 [受限使用者] 入口網站。 當他們嘗試傳送電子郵件時，系統會以未傳遞回報 (又稱為 NDR 或退回的郵件) 傳回郵件，並包含錯誤碼 [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) 和下列文字：
 
 > 「因為您不是認可的有效寄件者，所以無法傳遞您的郵件。 最有可能發生此狀況的原因是您的電子郵件地址有傳送垃圾郵件的嫌疑，因此系統已不允許此電子郵件地址傳送電子郵件。  請連絡您的電子郵件系統管理員以取得協助。 遠端伺服器傳回 ‘550 5.1.8 存取被拒，錯誤的外寄寄件者。’」
 
@@ -48,19 +48,19 @@ ms.locfileid: "50406709"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 **[受限使用者]** 頁面，請使用 <https://protection.office.com/restrictedusers>。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 - 您必須已在 **Exchange Online** 中獲派權限，才能執行此文章中的程序：
   - 若要移除 [受限使用者] 入口網站中的使用者，您必須是 **組織管理** 或 **安全性系統管理員** 角色群組的成員。
   - 若要以唯讀方式存取 [受限使用者] 入口網站，您必須是 **全域讀取者** 或 **安全性讀取者** 角色群組的成員。
 
-  如需詳細資訊，請參閱 [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱 [Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   >
   > - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   >
-  > - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 超過外寄電子郵件限制的寄件者是遭入侵帳戶的指標。 從 [受限使用者] 入口網站移除使用者之前，請務必遵循所需的步驟重新取得該帳戶的控制權。 如需詳細資訊，請參閱[針對 Office 365 電子郵件帳戶洩露的對策](responding-to-a-compromised-email-account.md)。
 
@@ -120,7 +120,7 @@ Get-BlockedSenderAddress
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress)。
+如需詳細的語法及參數資訊，請參閱 [Get-BlockedSenderAddress](/powershell/module/exchange/get-blockedsenderaddress)。
 
 若要從 [受限使用者] 清單中移除使用者，請以其電子郵件地址取代 \<emailaddress\> 並執行下列命令：
 
@@ -128,4 +128,4 @@ Get-BlockedSenderAddress -SenderAddress <emailaddress>
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/remove-blockedsenderaddress)。
+如需詳細的語法及參數資訊，請參閱 [Remove-BlockedSenderAddress](/powershell/module/exchange/remove-blockedsenderaddress)。

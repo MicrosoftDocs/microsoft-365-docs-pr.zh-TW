@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將深入瞭解混合式新式驗證和使用內部部署商務用 Skype 和 Exchange 伺服器的必要條件。
-ms.openlocfilehash: b9b48f591f74bd508b20a851ec48a0d7132d6a84
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097101"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907525"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式驗證概述和使用內部部署商務用 Skype 和 Exchange 伺服器的必要條件
 
@@ -67,7 +67,7 @@ _新式驗證_ 是一種身分識別管理的方法，可提供更安全的使�
 什麼不會變更？ 不論您是在分割網域混合式，還是使用商務用 Skype 和 Exchange server 內部部署，所有使用者都必須先驗證 *內部部署*。 在新式驗證的混合式實施中， _Lyncdiscovery_ 和 _自動_ 探索都指向您的內部部署伺服器。
 
 > [!IMPORTANT]
-> 如果您需要知道麻塞諸塞州支援的特定商務用 Skype 拓撲，已 [在這裡記錄](https://technet.microsoft.com/library/mt803262.aspx)。
+> 如果您需要知道麻塞諸塞州支援的特定商務用 Skype 拓撲，已 [在這裡記錄](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)。
 
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>檢查您的內部部署環境的新式驗證狀態
 <a name="BKMK_CheckStatus"> </a>
@@ -80,7 +80,7 @@ Get-OrganizationConfig | ft OAuth*
 
 如果 _OAuth2ClientProfileEnabled_ 屬性的值為 **False**，則會停用新式驗證。
 
-如需 Get-OrganizationConfig Cmdlet 的詳細資訊，請參閱 [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig)。
+如需 Get-OrganizationConfig Cmdlet 的詳細資訊，請參閱 [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig)。
 
 您可以執行下列 PowerShell 命令，檢查您的商務用 Skype 伺服器：
 
@@ -90,7 +90,7 @@ Get-CSOAuthConfiguration
 
 如果命令傳回空的 _OAuthServers_ 屬性，或是不 **允許** _ClientADALAuthOverride_ 屬性的值，則會停用新式驗證。
 
-如需 Get-CsOAuthConfiguration Cmdlet 的詳細資訊，請參閱 [Get-CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration)。
+如需 Get-CsOAuthConfiguration Cmdlet 的詳細資訊，請參閱 [Get-CsOAuthConfiguration](/powershell/module/skype/get-csoauthconfiguration)。
 
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>您是否符合新式驗證必要條件？
 
@@ -108,7 +108,7 @@ Get-CSOAuthConfiguration
   - 最多兩個不同伺服器版本的部署，如下所示：
     - 商務用 Skype Server 2015
     - 商務用 Skype Server 2019
-  - 所有商務用 Skype 伺服器都必須已安裝最新的累計更新，請參閱 [商務用 Skype Server 更新](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates) ，以尋找並管理所有可用的更新。
+  - 所有商務用 Skype 伺服器都必須已安裝最新的累計更新，請參閱 [商務用 Skype Server 更新](/skypeforbusiness/sfb-server-updates) ，以尋找並管理所有可用的更新。
   - 混合式環境中沒有 Lync Server 2010 或2013。
 
 >[!NOTE]
@@ -136,14 +136,14 @@ Get-CSOAuthConfiguration
   - 您使用的是 Exchange server 2013 CU19、Exchange server 2016 CU8 及更新，或 Exchange Server 2019 CU1 和向上。
   - 環境中沒有 Exchange server 2010。
   - 未設定 SSL 卸載。 支援 SSL 終止和重新加密。
-  - 在您的環境使用 proxy 伺服器基礎結構以允許伺服器連線至網際網路時，請確定所有 Exchange 伺服器的 [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) 屬性中定義了 proxy 伺服器。
+  - 在您的環境使用 proxy 伺服器基礎結構以允許伺服器連線至網際網路時，請確定所有 Exchange 伺服器的 [InternetWebProxy](/powershell/module/exchange/set-exchangeserver) 屬性中定義了 proxy 伺服器。
 
 - **混合式 Office 365 環境中的 Exchange Server 內部部署**
 
   - 如果您使用的是 Exchange Server 2013，至少有一部伺服器必須已安裝信箱和用戶端存取伺服器角色。 雖然您可以在不同的伺服器上安裝信箱和用戶端存取角色，我們強烈建議您在同一部伺服器上安裝這兩種角色，以提供額外的可靠性並改善效能。
   - 如果您使用的是 Exchange server 2016 或更新版本，至少有一部伺服器必須已安裝信箱伺服器角色。
   - 混合式環境中沒有 Exchange server 2007 或2010。
-  - 所有 Exchange 伺服器都必須已安裝最新的累計更新，請參閱 [升級 Exchange 至最新的累計更新](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates) ，以尋找並管理所有可用的更新。
+  - 所有 Exchange 伺服器都必須已安裝最新的累計更新，請參閱 [升級 Exchange 至最新的累計更新](/exchange/plan-and-deploy/install-cumulative-updates) ，以尋找並管理所有可用的更新。
 
 - **Exchange 用戶端和通訊協定需求**
 
@@ -153,9 +153,9 @@ Get-CSOAuthConfiguration
 
   |**用戶端**|**主要通訊協定**|**附註**|
   |:-----|:-----|:-----|
-  |Outlook 2013 和更新版本  <br/> |MAPI over HTTP  <br/> |必須在 Exchange 內啟用 MAPI over HTTP，以利用這些用戶端的新式驗證 (通常會啟用或為 Exchange 2013 Service Pack 1 和更新版本的新安裝啟用或設為 True) ;如需詳細資訊，請參閱 [office 2013 和 office 2016 用戶端應用程式的新式驗證的運作方式](modern-auth-for-office-2013-and-2016.md)。  <br/> 確定您執行的是最小必要組建的 Outlook;請查看 [使用 Windows Installer (MSI) 的 Outlook 版本最新更新 ](https://docs.microsoft.com/officeupdates/outlook-updates-msi)。  <br/> |
+  |Outlook 2013 和更新版本  <br/> |MAPI over HTTP  <br/> |必須在 Exchange 內啟用 MAPI over HTTP，以利用這些用戶端的新式驗證 (通常會啟用或為 Exchange 2013 Service Pack 1 和更新版本的新安裝啟用或設為 True) ;如需詳細資訊，請參閱 [office 2013 和 office 2016 用戶端應用程式的新式驗證的運作方式](modern-auth-for-office-2013-and-2016.md)。  <br/> 確定您執行的是最小必要組建的 Outlook;請查看 [使用 Windows Installer (MSI) 的 Outlook 版本最新更新 ](/officeupdates/outlook-updates-msi)。  <br/> |
   |適用于 Mac 的 Outlook 2016 和更新版本  <br/> |Exchange Web 服務  <br/> |  <br/> |
-  |iOS 和 Android 版 Outlook  <br/> | Microsoft sync 技術 <br/> |如需詳細資訊，請參閱 [使用 Outlook 適用于 Outlook 的混合新式驗證 iOS 和 Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) 。  <br/> |
+  |iOS 和 Android 版 Outlook  <br/> | Microsoft sync 技術 <br/> |如需詳細資訊，請參閱 [使用 Outlook 適用于 Outlook 的混合新式驗證 iOS 和 Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) 。  <br/> |
   |Exchange ActiveSync 用戶端 (例如，iOS11 Mail)   <br/> |Exchange ActiveSync  <br/> |針對支援新式驗證的 Exchange ActiveSync 用戶端，您必須重新建立設定檔，才能從基本驗證切換至新式驗證。  <br/> |
 
     未列出的用戶端和（或）通訊協定 (例如，POP3) 不支援搭配內部部署 Exchange 的新式驗證，而且繼續利用舊版驗證機制，即使在環境中啟用新式驗證之後也是一樣。
@@ -167,7 +167,7 @@ Get-CSOAuthConfiguration
   - 您已設定 Azure AD Connect，以供使用者複寫及同步處理。
   - 您已驗證混合模式是在您的內部部署與 Office 365 環境之間使用 Exchange 傳統混合式拓撲模式設定。 Exchange 混合式的官方支援陳述說，您必須是目前的 CU 或目前的 CU-1。
     > [!NOTE]
-    > [混合式代理程式](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent)不支援混合式新式驗證。
+    > [混合式代理程式](/exchange/hybrid-deployment/hybrid-agent)不支援混合式新式驗證。
 
   - 如果您想要使用現代驗證與 Exchange) ，請確定內部部署測試使用者和 Office 365 中的混合測試使用者都可以登入商務用 Skype 桌面用戶端 (。如果您想要搭配 Exchange 使用新式驗證， () 則可以登入商務用 Skype 桌面用戶端。
 
@@ -181,6 +181,6 @@ Get-CSOAuthConfiguration
 <a name="BKMK_URLListforMA"> </a>
 
 - [如何設定 Exchange Server 內部部署以使用新式驗證](configure-exchange-server-for-hybrid-modern-authentication.md)
-- [新式驗證支援的商務用 Skype 拓撲](https://technet.microsoft.com/library/mt803262.aspx)
+- [新式驗證支援的商務用 Skype 拓撲](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
 - [如何設定商務用 Skype 內部部署以使用新式驗證](configure-skype-for-business-for-hybrid-modern-authentication.md)
 - [從商務用 Skype 與 Exchange 移除或停用混合式新式驗證](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)

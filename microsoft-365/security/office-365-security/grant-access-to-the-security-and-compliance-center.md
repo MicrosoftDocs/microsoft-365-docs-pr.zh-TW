@@ -20,12 +20,12 @@ description: 使用者必須先獲指派 Microsoft 365 Security & 合規性中�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1a619b184c575e3750b2499adc661627b4d27d6
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6ab02773a19e1b5881858104097b0b03e4385b40
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289874"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907217"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>讓使用者能夠存取安全性與合規性中心
 
@@ -64,7 +64,7 @@ ms.locfileid: "50289874"
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用安全性 & 規範中心 PowerShell 授予另一個使用者存取安全性 & 規範中心的許可權
 
-1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 使用下列語法：
 
@@ -94,4 +94,4 @@ ms.locfileid: "50289874"
   Get-RoleGroupMember -Identity "<RoleGroupName>"
   ```
 
-  如需詳細的語法及參數資訊，請參閱 [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)。
+  如需詳細的語法及參數資訊，請參閱 [Get-RoleGroupMember](/powershell/module/exchange/Get-RoleGroupMember)。

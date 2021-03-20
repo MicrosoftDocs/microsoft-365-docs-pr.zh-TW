@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用 PowerShell 建立新的 SharePoint Online 網站，然後將使用者和群組新增至這些網站。
-ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+ms.openlocfilehash: eb6c2817c8760ca222da8a7c2b14cbfcda4eb4b8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594915"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907615"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>使用 PowerShell 建立 SharePoint Online 網站並新增使用者
 
@@ -34,7 +34,7 @@ ms.locfileid: "48594915"
 
 ## <a name="connect-to-sharepoint-online"></a>連線至 SharePoint Online
 
-本主題中的程式需要您連線至 SharePoint。 如需相關指示，請參閱 [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+本主題中的程式需要您連線至 SharePoint。 如需相關指示，請參閱 [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>步驟1：使用 PowerShell 建立新的網站集合
 
@@ -80,7 +80,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. 請注意清單中的新網站集合。 使用我們的範例 CSV 檔案，您會看到下列網站集合： **TeamSite01**、 **Blog01**、 **Project01**及 **Community01**
+4. 請注意清單中的新網站集合。 使用我們的範例 CSV 檔案，您會看到下列網站集合： **TeamSite01**、 **Blog01**、 **Project01** 及 **Community01**
 
 這樣就完成了。 您已使用所建立的 .csv 檔和單一 Windows PowerShell 命令，建立多個網站集合。 您現在已準備好建立及指派使用者至這些網站。
 
@@ -105,7 +105,7 @@ https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
 https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
 https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
-<br/>*承租人*會等於您的租使用者名稱。<br/>
+<br/>*承租人* 會等於您的租使用者名稱。<br/>
 
 2. 將檔案儲存至您的桌面 **GroupsAndPermissions.csv**。<br/>
 
@@ -122,7 +122,7 @@ Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint
 Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
 Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
 ```
-<br/>*租*使用者等於您租使用者名稱，而使用者*名稱等於現有*使用者的使用者名稱。<br/>
+<br/>*租* 使用者等於您租使用者名稱，而使用者 *名稱等於現有* 使用者的使用者名稱。<br/>
 
 4. 將檔案儲存至您的桌面 **Users.csv**。<br/>
 
@@ -160,7 +160,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 ## <a name="see-also"></a>另請參閱
 
-[連線至 SharePoint 線上 PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[連線至 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [使用 PowerShell 管理 SharePoint Online 網站群組](manage-sharepoint-site-groups-with-powershell.md)
 

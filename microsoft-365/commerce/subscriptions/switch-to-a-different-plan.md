@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: 瞭解如何切換至新的 Microsoft 365 for business 訂閱。
-ms.openlocfilehash: 1cbdcafc2ef337546f31d2d8f8fc9ef0bf7722f8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fb0ab9d26a7fe32796307d35af0ed1fc28735fa9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647744"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906225"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>切換到其他的商務用 Microsoft 365 方案
 
@@ -50,19 +50,19 @@ ms.locfileid: "48647744"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">訂閱</a>] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ ms.locfileid: "48647744"
 
 當您使用 [ **切換方案** ] 按鈕時，您可以切換的計畫會根據目前計畫中的服務來顯示。 您只能使用 [ **切換方案** ] 按鈕來切換至具有相同資料相關服務的計畫，或切換至較高的版本。 這可確保在切換過程中使用者不會遺失與這些服務相關的資料。
   
-若要在切換之前比較方案，請參閱 [Microsoft 365 for business 產品比較](https://go.microsoft.com/fwlink/p/?linkid=842056) 頁面。 如需技術規格，請參閱 [Microsoft 365 服務描述](https://go.microsoft.com/fwlink/p/?linkid=842275)。
+若要在切換之前比較方案，請參閱 [Microsoft 365 for business 產品比較](https://go.microsoft.com/fwlink/p/?linkid=842056) 頁面。 如需技術規格，請參閱 [Microsoft 365 服務描述](/office365/servicedescriptions/office-365-service-descriptions-technet-library)。
   
 如果您想要使用較少的服務切換到方案，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電 Microsoft 支援部門](../../admin/contact-support-for-business-products.md) 以尋求協助。
   

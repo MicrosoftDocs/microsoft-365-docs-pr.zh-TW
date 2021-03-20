@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Exchange Online 信箱中設定垃圾郵件設定。 在 Outlook 或 web 上的 Outlook 中，使用者可以使用許多這些設定。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31f247ec74f1780d05aaeb79753abd0075401d9a
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: debd07b1195c2122c8e5042a30097c377bd1c803
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290114"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906501"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>設定 Exchange Online 信箱上的垃圾郵件設定
 
@@ -54,9 +54,9 @@ ms.locfileid: "50290114"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您只可以使用 Exchange Online PowerShell 執行本文中的程式。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+- 您只可以使用 Exchange Online PowerShell 執行本文中的程式。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您必須先在 Exchange Online 中指派許可權，才能執行本文中的程式。 具體說來，您需要「 **郵件** 收件者」角色 (會指派給 **組織管理**、 **收件者管理** 及 **自訂郵件** 收件者角色群組的預設) 或「 **使用者選項** 」角色 (預設會指派給 **組織管理** 及 **服務台** 角色群組的預設) 。 若要將使用者新增至 Exchange Online 中的角色群組，請參閱 [Modify role groups In Exchange online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)。 請注意，具有預設許可權的使用者可以在自己的信箱上執行這些相同的程式，只要他們可以 [存取 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)。
+- 您必須先在 Exchange Online 中指派許可權，才能執行本文中的程式。 具體說來，您需要「 **郵件** 收件者」角色 (會指派給 **組織管理**、 **收件者管理** 及 **自訂郵件** 收件者角色群組的預設) 或「 **使用者選項** 」角色 (預設會指派給 **組織管理** 及 **服務台** 角色群組的預設) 。 若要將使用者新增至 Exchange Online 中的角色群組，請參閱 [Modify role groups In Exchange online](/Exchange/permissions-exo/role-groups#modify-role-groups)。 請注意，具有預設許可權的使用者可以在自己的信箱上執行這些相同的程式，只要他們可以 [存取 Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)。
 
 - 在獨立版 EOP 環境中，EOP 會保護內部部署 Exchange 信箱，您必須在內部部署 Exchange 中設定郵件流程規則 (又稱為傳輸規則) 以轉譯 EOP 垃圾郵件篩選裁決，這樣垃圾郵件規則才可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
@@ -85,7 +85,7 @@ Set-MailboxJunkEmailConfiguration -Identity "Ori Epstein" -Enabled $false
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -Enabled $false}
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)。
+如需詳細的語法及參數資訊，請參閱 [Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration)。
 
 > [!NOTE]
 >
@@ -149,7 +149,7 @@ Set-MailboxJunkEmailConfiguration "Ori Epstein" -BlockedSendersAndDomains @{Add=
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -BlockedSendersAndDomains @{Remove="contoso.com"}}
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)。
+如需詳細的語法及參數資訊，請參閱 [Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration)。
 
 > [!NOTE]
 >

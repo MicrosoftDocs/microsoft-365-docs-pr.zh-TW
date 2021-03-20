@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境以測試身分識別與裝置存取。
-ms.openlocfilehash: ed143341079a55d6bdd1d4a68feea68acb86ef85
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 427b0589da0347008cca0e2004bc23f494bebb29
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233725"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907465"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>您的 Microsoft 365 測試環境的身分識別與裝置存取
 
@@ -35,7 +35,7 @@ ms.locfileid: "50233725"
   - [密碼雜湊同步處理 (PHS) ](phs-prereqs-m365-test-environment.md)
   - [傳遞驗證 (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. 使用 [通用身分識別和裝置存取原則](identity-access-policies.md) ，設定針對測試環境所設定的必要條件建立的原則，並探索及驗證身分識別及裝置的保護。
+2. 使用 [通用身分識別和裝置存取原則](../security/office-365-security/identity-access-policies.md) ，設定針對測試環境所設定的必要條件建立的原則，並探索及驗證身分識別及裝置的保護。
 
 ## <a name="see-also"></a>請參閱
 
@@ -47,4 +47,4 @@ ms.locfileid: "50233725"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

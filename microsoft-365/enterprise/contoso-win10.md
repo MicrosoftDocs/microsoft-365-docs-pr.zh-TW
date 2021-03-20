@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Windows 10 企業版的就地升級。
-ms.openlocfilehash: 0543f24665048d0679bc1b099fdd0a2d431c1e54
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 7907bf64acce3af8b21459202cb6f5cbc1e9f990
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754242"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907683"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 的 Windows 10 企業版部署
 
-在 Microsoft 365 for enterprise 的廣泛展示之前，Contoso 具有 Windows 相容的電腦和裝置，其混合了 Windows 7 (10% ) 、Windows 8.1 (65% ) 和 Windows 10 (25% ) 。Contoso 想要升級其電腦的 Windows 10 企業版利用高級安全性，並從自動部署更新，降低 IT 負荷。 
+在 Microsoft 365 for enterprise 的廣泛展示之前，Contoso 具有 Windows 相容的電腦和裝置，其混合了 Windows 7 (10% ) 、Windows 8.1 (65% ) 和 Windows 10 (25% ) 。 Contoso 想要升級其電腦的 Windows 10 企業版利用高級安全性，並從自動部署更新，降低 IT 負荷。 
 
 在評估基礎架構和業務需求後，Contoso 識別這些部署的關鍵需求：
 
@@ -80,13 +80,13 @@ Contoso 使用 Windows Analytics 中的升級準備，判斷已安裝應用程�
 - 通常位於 Contoso 地區中心辦公室的地區發布點。
 - 在不同位置上的 Windows 電腦和裝置，會根據群組成員資格，針對就地升級或持續更新接收及安裝部署套件。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 瞭解 Contoso 如何利用其 Configuration Manager 基礎結構，在其整個組織中 [部署及保留目前的 Microsoft 365 應用程式](contoso-o365pp.md) 。 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[Windows 10 企業版](https://docs.microsoft.com/windows/deployment/)
+[Windows 10 企業版](/windows/deployment/)
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 

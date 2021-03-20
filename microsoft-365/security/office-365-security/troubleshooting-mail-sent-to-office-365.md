@@ -19,12 +19,12 @@ ms.custom:
 description: 本文提供將電子郵件傳送至 Microsoft 365 收件匣之問題的疑難排解資訊 & 大量郵遞至 Microsoft 365 客戶的最佳作法。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e4a91f70b59debc770a5811638bd64a1eef36dd
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5cebb5ab3f5f4adf321e9c7992fcc5efe40ac2a2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286378"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908147"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>疑難排解傳送至 Microsoft 365 的郵件
 
@@ -62,7 +62,7 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 
 有些傳遞問題是由 Microsoft 封鎖的寄件者的 IP 位址，或是因為先前的垃圾郵件，將使用者帳戶識別為封鎖的寄件者的結果。 如果您認為您已接收到錯誤 NDR，請先遵循 NDR 訊息中的任何指示來解決問題。
 
-如需您收到之錯誤的詳細資訊，請參閱 Exchange Online 中的 [電子郵件未傳遞](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)回報中的錯誤代碼清單。
+如需您收到之錯誤的詳細資訊，請參閱 Exchange Online 中的 [電子郵件未傳遞](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)回報中的錯誤代碼清單。
 
  例如，如果您收到下列 NDR，它表示 Microsoft 已封鎖傳送 IP 位址：
 

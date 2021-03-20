@@ -1,7 +1,7 @@
 - name: Microsoft 365 系統管理中心說明
   href: index.yml
   items:
-    - name: 入門
+    - name: 開始使用
       href: setup/index.yml
       items:
         - name: 註冊
@@ -35,7 +35,7 @@
         - name: 將資料移轉至 Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: 推出 Teams
-          href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
+          href: /microsoftteams/how-to-roll-out-teams?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
         - name: 適合所有人的 App 訓練
           href: 'https://support.microsoft.com/training'
         - name: 我有何種訂閱？
@@ -232,7 +232,7 @@
             - name: Microsoft 365 Apps 健康情況
               href: productivity/apps-health.md
             - name: 端點分析
-              href: 'https://docs.microsoft.com/mem/analytics/productivity-score'
+              href: /mem/analytics/productivity-score
         - name: 變更您的組織連絡人資訊
           href: manage/change-address-contact-and-more.md
         - name: 更新您的系統管理員連絡資訊
@@ -259,6 +259,8 @@
           href: manage/manage-office-scripts-settings.md
         - name: 尋找合作夥伴或轉銷商。
           href: manage/find-your-partner-or-reseller.md
+        - name: 管理 Microsoft Rewards
+          href: manage/manage-microsoft-rewards.md
         - name: 管理訊息中心的訊息
           href: manage/manage-messages.md
         - name: 設定發行選項
@@ -312,7 +314,7 @@
             - name: 設定合規性功能
               href: ../business/set-up-compliance.md
         - name: 安全分數
-          href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
+          href: ../security/mtp/microsoft-secure-score.md
         - name: GDPR 合規性指南
           href: security-and-compliance/gdpr-compliance.md
     - name: 管理裝置和應用程式資料
@@ -321,7 +323,7 @@
         - name: 裝置和應用程式資料保護方法
           href: devices/choose-device-security.md
         - name: Microsoft Intune 文件
-          href: 'https://docs.microsoft.com/mem/intune/'
+          href: /mem/intune/
         - name: Microsoft 365 商務進階版
           items:
             - name: 檢視和編輯原則和裝置
@@ -404,6 +406,6 @@
         - name: 加入包含來賓使用者的 Teams 會議
           href: 'https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8'
     - name: 疑難排解
-      href: 'https://docs.microsoft.com/office/troubleshoot/'
+      href: /office/troubleshoot/
     - name: 連絡客戶支援
       href: contact-support-for-business-products.md

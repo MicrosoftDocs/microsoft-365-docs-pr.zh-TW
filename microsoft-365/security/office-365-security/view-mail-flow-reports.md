@@ -19,12 +19,12 @@ description: 系統管理員可以深入瞭解安全性 & 合規性中心的「�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbbec056203ad816d37f5451115d2c7d172eee92
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: d1fea50ff0eaa5ed7d671485483ecb297b404db9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286714"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906549"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中查看郵件流程報告
 
@@ -43,7 +43,7 @@ ms.locfileid: "50286714"
 
 ## <a name="connector-report"></a>連接器報告
 
-**連接器報告** 會顯示為您的組織設定之 [輸入和輸出連接器](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)上的郵件流程活動。
+**連接器報告** 會顯示為您的組織設定之 [輸入和輸出連接器](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)上的郵件流程活動。
 
 若要查看報告，請開啟 [安全性 & 規範中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **連接器報告**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ConnectorReport> 。
 
@@ -109,7 +109,7 @@ ms.locfileid: "50286714"
 
 - **資料查看依據： Exchange 傳輸規則** \>**分解方式：方向**：此圖顯示受傳輸規則影響的 **輸入** 和 **輸出** 郵件數目。
 
-- **資料查看依據： Exchange 傳輸規則** \>**分解方式：嚴重性**：此圖表顯示 **高嚴重性** 和 **中低嚴重性** 的數目，以及 **低嚴重性** 郵件。 您可以將嚴重性層級設定為規則 ([ **以嚴重性層級** 或 _SetAuditSeverity_) 審核此規則] 中的動作。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](https://docs.microsoft.com//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+- **資料查看依據： Exchange 傳輸規則** \>**分解方式：嚴重性**：此圖表顯示 **高嚴重性** 和 **中低嚴重性** 的數目，以及 **低嚴重性** 郵件。 您可以將嚴重性層級設定為規則 ([ **以嚴重性層級** 或 _SetAuditSeverity_) 審核此規則] 中的動作。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
 - **依下列方式查看資料： DLP Exchange transport rules** \>**分解方式：方向**：此圖顯示受資料遺失防護 (DLP) 傳輸規則所影響的 **輸入** 和 **輸出** 郵件數目。 您可以選取下列選項來進一步精煉圖表：
 
@@ -178,7 +178,7 @@ ms.locfileid: "50286714"
 
 - **顯示資料：轉寄方法**：會顯示下列方法：
 
-  - **傳輸規則**：也稱為「 [郵件流程規則](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)」。
+  - **傳輸規則**：也稱為「 [郵件流程規則](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)」。
   - **信箱規則**：也稱為 [收件匣規則](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59)。
 
   ![轉寄報告中的轉接方法視圖](../../media/forwarding-report-forwarding-methods.png)
@@ -251,7 +251,7 @@ ms.locfileid: "50286714"
 - **3天**
 - **7 天**
 - **15 天**
-- **30 天**
+- **30天**
 
 如果您按一下 **[選擇類別] 以取得詳細資料**，您可以選取下列值：
 

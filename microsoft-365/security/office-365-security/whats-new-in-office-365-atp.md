@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b6175f507f54adf357e40ea44c39f5e495a1b14
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0e2885f4db67f1508f4e7a3f354e11fb361265a3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454486"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907949"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新功能
 
@@ -100,7 +100,7 @@ ms.locfileid: "50454486"
 
 - 使用 Microsoft Defender for Office 365 Plan 2 (的[自動化調查和回應功能](automated-investigation-response-office.md)) 
 
-- 使用 office 365 管理活動 API （ (Defender for Office 365 Plan 2）[整合 Microsoft defender For office 365 自動化調查和回應事件](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)) 
+- 使用 office 365 管理活動 API （ (Defender for Office 365 Plan 2）[整合 Microsoft defender For office 365 自動化調查和回應事件](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)) 
 
 - [查看電子郵件頭，並下載](investigate-malicious-email-that-was-delivered.md) Microsoft Defender for Office 365 Plan 1 或 Plan 2 (的電子郵件內文) 
 
@@ -120,8 +120,8 @@ ms.locfileid: "50454486"
 
 您知道 Microsoft Defender for Office 365 可提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 
-[Microsoft Defender for Office 365 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+[Microsoft Defender for Office 365 服務說明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

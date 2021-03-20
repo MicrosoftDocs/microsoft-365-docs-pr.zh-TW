@@ -20,12 +20,12 @@ description: 在安全性 & 合規性中心尋找及使用 Microsoft Defender fo
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3e5d48f6ac8f6246b65761f5728405c37333d71
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1bc9b31a804507ee303f237f453dabe7da28a538
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286594"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908193"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中，查看 Office 365 報表的 Defender
 
@@ -338,9 +338,9 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 |**Explorer** (microsoft Defender for Office 365 plan 2) 或 **即時** 偵測， (Microsoft Defender for office 365 plan 1) |[威脅總管 (及即時偵測)](threat-explorer.md)|
 |**電子郵件安全性報告**，例如主要寄件者和收件者報告、冒名郵件報告和垃圾郵件偵測報告。|[檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)|
 |**郵件流程報告**，例如轉寄報告、郵件流程狀態報表，以及主要寄件者和收件者報告。|[在安全性 & 規範中心內，查看郵件流程報告](view-mail-flow-reports.md)|
-|**安全連結的 URL 追蹤** (僅 PowerShell) 。 此 Cmdlet 的輸出會顯示過去7天中安全連結動作的結果。|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**EOP 和 Microsoft Defender For Office 365 (的郵件流量結果，** 只 PowerShell) 。 此 Cmdlet 的輸出包含網域、日期、事件種類、方向、動作和郵件數目的相關資訊。|[MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
-|**EOP 和 Defender For Office 365 偵測的郵件詳細資料包告** (僅 PowerShell) 。 此 Cmdlet 的輸出包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|**安全連結的 URL 追蹤** (僅 PowerShell) 。 此 Cmdlet 的輸出會顯示過去7天中安全連結動作的結果。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
+|**EOP 和 Microsoft Defender For Office 365 (的郵件流量結果，** 只 PowerShell) 。 此 Cmdlet 的輸出包含網域、日期、事件種類、方向、動作和郵件數目的相關資訊。|[MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
+|**EOP 和 Defender For Office 365 偵測的郵件詳細資料包告** (僅 PowerShell) 。 此 Cmdlet 的輸出包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看 Office 365 的 Defender 時，需要哪些許可權？
@@ -354,7 +354,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 
@@ -364,4 +364,4 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 [安全性與合規性中心內的智慧型報表和深入解析](reports-and-insights-in-security-and-compliance.md)
 
-[ (Azure Active Directory 的角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[ (Azure Active Directory 的角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

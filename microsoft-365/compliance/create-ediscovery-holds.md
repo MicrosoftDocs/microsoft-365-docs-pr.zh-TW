@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以建立與核心 eDiscovery 案例相關聯的保留，以保留可能與調查相關的內容。
-ms.openlocfilehash: 377a9e7a31864f177f0ccbdc4cf2789fdc1cf373
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ca87b1b2ad35949de01622771b1ae78c5b3038e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423464"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908337"
 ---
 # <a name="create-an-ediscovery-hold"></a>建立電子文件探索保留
 
@@ -134,11 +134,11 @@ ms.locfileid: "50423464"
 > [!IMPORTANT]
 > 在雲端式組織中，參與交談（屬於小組中的聊天室清單）的使用者必須具有 Exchange Online 信箱，才能在信箱置於 eDiscovery 暫止時保留聊天交談。 這是因為 [聊天室] 清單中的交談是儲存在聊天參與者的雲端架構信箱中。 如果聊天參與者沒有 Exchange Online 信箱，您將無法保留這些聊天會話。 例如，在 Exchange 混合式部署中，具有內部部署信箱的使用者，可能能夠加入屬於小組之聊天室清單一部分的交談。 不過，在此情況下，無法保留這些交談的內容，因為這些使用者沒有可以保留的雲端式信箱。
 
-如需有關保留小組內容的詳細資訊，請參閱 [將 Microsoft 團隊使用者或小組設為法定保留](https://docs.microsoft.com/MicrosoftTeams/legal-hold)。
+如需有關保留小組內容的詳細資訊，請參閱 [將 Microsoft 團隊使用者或小組設為法定保留](/MicrosoftTeams/legal-hold)。
 
 ### <a name="preserve-card-content"></a>保留卡片內容
 
-同樣地，小組頻道中的應用程式所產生的卡片內容，1:1 聊天和1： N 群組聊天會儲存在信箱中，而且會在信箱置於 eDiscovery 暫止時保留。 *卡片* 是一個 UI 容器，用於儲存簡短的內容片段。 名片可以有多個屬性和附件，也可以包含觸發卡片動作的按鈕。 如需詳細資訊，請參閱 [卡片](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 與其他 Teams 內容一樣，儲存卡片內容的位置取決於卡片的使用位置。 Teams 頻道中使用的卡片之內容儲存在 Teams 群組信箱中。 1:1 和 1xN 聊天的卡片內容儲存在聊天參與者的信箱中。
+同樣地，小組頻道中的應用程式所產生的卡片內容，1:1 聊天和1： N 群組聊天會儲存在信箱中，而且會在信箱置於 eDiscovery 暫止時保留。 *卡片* 是一個 UI 容器，用於儲存簡短的內容片段。 名片可以有多個屬性和附件，也可以包含觸發卡片動作的按鈕。 如需詳細資訊，請參閱 [卡片](/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 與其他 Teams 內容一樣，儲存卡片內容的位置取決於卡片的使用位置。 Teams 頻道中使用的卡片之內容儲存在 Teams 群組信箱中。 1:1 和 1xN 聊天的卡片內容儲存在聊天參與者的信箱中。
 
 ### <a name="preserve-meeting-and-call-information"></a>保留會議及電話資訊
 
@@ -163,7 +163,7 @@ ms.locfileid: "50423464"
 
 - 如先前所述，若要將位於小組和 Office 365 群組的內容保留，您必須指定與群組或小組相關聯的信箱和 SharePoint 網站。
 
-- 在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行 **set-unifiedgroup 指令程式**，以查看小組和 Office 365 群組的屬性。 若要取得與小組或 Office 365 群組相關聯之網站的 URL，這是一種很好的方式。 例如，下列命令會顯示名為「資深領導團隊」的 Office 365 群組的所選屬性：
+- 在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行 **set-unifiedgroup 指令程式**，以查看小組和 Office 365 群組的屬性。 若要取得與小組或 Office 365 群組相關聯之網站的 URL，這是一種很好的方式。 例如，下列命令會顯示名為「資深領導團隊」的 Office 365 群組的所選屬性：
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -190,10 +190,10 @@ ms.locfileid: "50423464"
 
 ## <a name="preserve-content-in-onedrive-accounts"></a>保留 OneDrive 帳戶中的內容
 
-若要收集組織中商務網站 OneDrive 的 URLs 清單，以便將其新增至與 eDiscovery 案例相關聯的保留或搜尋，請參閱 [建立組織中所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls)。 本文中的腳本會建立一個文字檔，其中包含組織中所有 OneDrive 網站的清單。 若要執行此指令碼，您必須安裝並使用 SharePoint Online 管理命令介面。 請務必將您組織 MySite 網域的 URL 附加至您要搜尋的每個 OneDrive 網站。 這是包含您所有 OneDrive 的網域；例如，`https://contoso-my.sharepoint.com`。 以下是使用者 OneDrive 網站的 URL 範例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
+若要收集組織中商務網站 OneDrive 的 URLs 清單，以便將其新增至與 eDiscovery 案例相關聯的保留或搜尋，請參閱 [建立組織中所有 OneDrive 位置的清單](/onedrive/list-onedrive-urls)。 本文中的腳本會建立一個文字檔，其中包含組織中所有 OneDrive 網站的清單。 若要執行此指令碼，您必須安裝並使用 SharePoint Online 管理命令介面。 請務必將您組織 MySite 網域的 URL 附加至您要搜尋的每個 OneDrive 網站。 這是包含您所有 OneDrive 的網域；例如，`https://contoso-my.sharepoint.com`。 以下是使用者 OneDrive 網站的 URL 範例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
 
 > [!IMPORTANT]
-> 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`) 。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是 eDiscovery 保留的一部分，舊的，且其 UPN 已變更，您必須更新保留，而且必須更新保留，並新增使用者的新 OneDrive URL，並移除舊的。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
+> 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`) 。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是 eDiscovery 保留的一部分，舊的，且其 UPN 已變更，您必須更新保留，而且必須更新保留，並新增使用者的新 OneDrive URL，並移除舊的。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](/onedrive/upn-changes) (英文)。
 
 ## <a name="removing-content-locations-from-an-ediscovery-hold"></a>移除 eDiscovery 保留中的內容位置
 
@@ -231,7 +231,7 @@ ms.locfileid: "50423464"
    > [!NOTE]
    > <sup>1</sup> 若要查看超過1000案例、保留、搜尋或匯出的清單，您可以使用對應的 Office 365 安全性 & 合規性 PowerShell Cmdlet：
    >
-   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
-   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
-   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
-   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)

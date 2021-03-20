@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ce10483f2a2f6e3a461f0ab32eba0ed954cd484
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 583419f6808d5b3d54d1f48d380e5b4110898ded
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766408"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908347"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -46,7 +46,7 @@ ms.locfileid: "50766408"
 
 ![以 EDM 為基礎的分類](../media/EDMClassification.png)
 
-以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日重新整理，而且可以包含最多 1 億資料列。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以對原則使用以 EDM 為基礎的分類，例如[資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或 [Microsoft Cloud App Security 檔案原則](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
+以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日重新整理，而且可以包含最多 1 億資料列。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以對原則使用以 EDM 為基礎的分類，例如[資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或 [Microsoft Cloud App Security 檔案原則](/cloud-app-security/data-protection-policies)。
 
 > [!NOTE]
 > Microsoft 365 資訊保護在預覽版中支援下列雙位元組字元集語言：
@@ -173,7 +173,7 @@ ms.locfileid: "50766408"
 
 在這個範例中，當 `caseInsensitive` 和 `ignoredDelimiters` 均被使用時，EDM 會認爲 **FOO-1234** 和 **fOo#1234** 是一樣的，並且以病歷敏感性資訊類型來分類項目。 
 
-4. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
+4. 使用[連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
 
 5. 若要上傳資料庫結構描述，請執行下列 Cmdlet，一次一個：
 
@@ -204,7 +204,7 @@ ms.locfileid: "50766408"
 
       當您設定規則套件時，請務必正確參照您的 .csv 檔案和 **edm.xml** 檔案。 您可以複製、修改及使用我們的範例。 在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：
 
-      - **RulePack id 與 ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。
+      - **RulePack id 與 ExactMatch id**：使用 [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。
 
       - **資料存放區**：此欄位會指定要使用的 EDM 查閱資料存放區。 您要提供已設定之 EDM 結構描述的資料來源名稱。
 
@@ -308,7 +308,7 @@ ms.locfileid: "50766408"
 
 1. 編輯您的 **edm.xml** 檔案 (這是本文 [定義結構描述](#define-the-schema-for-your-database-of-sensitive-information)這一節所討論的檔案)。
 
-2. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
+2. 使用[連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
 
 3. 若要更新資料庫結構描述，請執行下列 Cmdlet，一次一個：
 
@@ -337,7 +337,7 @@ ms.locfileid: "50766408"
 
 (如有需要) 如果您想要移除 EDM 型分類使用的結構描述，請遵循下列步驟：
 
-1. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
+1. 使用[連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
 
 2. 執行下列 PowerShell Cmdlet，將 "patientrecords" 的資料存放區名稱取代為您要移除的資料存放區名稱：
 
@@ -384,7 +384,7 @@ ms.locfileid: "50766408"
 
 #### <a name="set-up-the-security-group-and-user-account"></a>設定安全性群組和使用者帳戶
 
-1. 以全域系統管理員身分，使用 [適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並建立名為 **EDM\_DataUploaders** 的 [安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
+1. 以全域系統管理員身分，使用 [適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並建立名為 **EDM\_DataUploaders** 的 [安全性群組](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
 
 2. 將一或多個使用者新增至 **EDM\_DataUploaders** 安全性群組。 (這些使用者將管理敏感性資訊的資料庫)。
 
@@ -505,12 +505,12 @@ ms.locfileid: "50766408"
       > [!NOTE]
       > 如果 .csv 檔案的結構 (欄位名稱) 沒有任何變更，重新整理資料時，您不需要對資料庫結構描述檔案進行任何變更。 但如果您必須進行變更，請務必相應地編輯資料庫結構描述和規則套件。
 
-3. 使用[工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page)來將[雜湊及上傳敏感性資料](#part-2-hash-and-upload-the-sensitive-data)程序中的步驟 2 和 3 自動化。 您可以使用數個方法來排程工作：
+3. 使用[工作排程器](/windows/desktop/TaskSchd/task-scheduler-start-page)來將[雜湊及上傳敏感性資料](#part-2-hash-and-upload-the-sensitive-data)程序中的步驟 2 和 3 自動化。 您可以使用數個方法來排程工作：
 
       | 方法             | 處理方式 |
       | ---------------------- | ---------------- |
-      | Windows PowerShell     | 請參閱 [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) 文件，以及本文中的[範例 PowerShell 指令碼](#example-powershell-script-for-task-scheduler) |
-      | 工作排程器 API     | 請參閱[工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)文件                                                                                                                                                                                                                                                                                |
+      | Windows PowerShell     | 請參閱 [ScheduledTasks](/powershell/module/scheduledtasks/?view=win10-ps) 文件，以及本文中的[範例 PowerShell 指令碼](#example-powershell-script-for-task-scheduler) |
+      | 工作排程器 API     | 請參閱[工作排程器](/windows/desktop/TaskSchd/using-the-task-scheduler)文件                                                                                                                                                                                                                                                                                |
       | Windows 使用者介面 | 在 Windows 中，按一下 [開始 **]**，然後輸入「工作排程器」。 然後在結果清單中，以滑鼠右鍵按一下 [工作排程器 **]**，然後選擇 [以系統管理員身分執行 **]**。                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>工作排程器的範例 PowerShell 指令碼
@@ -650,6 +650,6 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [瞭解敏感性資訊類型](sensitive-information-type-learn-about.md)
 - [DLP 原則的概觀](data-loss-prevention-policies.md)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [Microsoft Cloud App Security](/cloud-app-security)
+- [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [修改精確資料比對模式以使用可設定比對](sit-modify-edm-schema-configurable-match.md)

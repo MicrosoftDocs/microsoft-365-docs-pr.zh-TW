@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將會瞭解如何匯出、設定及查看 Microsoft 365 的審計記錄檔記錄。
-ms.openlocfilehash: a7f731bb30ffdddfe7898ee4051060b8e22c093e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 4cea867b46d3bda7d3b3a8cd38f3d01938da8764
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454664"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906863"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>匯出、 設定及檢視稽核記錄檔的記錄
 
@@ -96,7 +96,7 @@ ms.locfileid: "50454664"
 
     - 選取 [ **使用原始欄名稱做為前置** 詞] 核取方塊，以將 AuditData 前置詞加入欄名稱中;例如， **AuditData。 RecordType** 或 **AuditData SourceFileName**。
 
-9. 按一下 [確定]。
+9. 點擊 **[確定]**。
 
     **AuditData** 欄會分割成多個欄。 每個新欄會對應至 AuditData JSON 物件中的屬性。 資料行中的每一列都包含屬性的值。 如果此屬性不包含值，則會顯示 *null* 值。 在 Excel 中，具有 null 值的儲存格是空白的。
   
@@ -104,7 +104,7 @@ ms.locfileid: "50454664"
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>使用 PowerShell 來搜尋和匯出審計記錄記錄
 
-您可以使用 Exchange Online PowerShell 中的 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) Cmdlet，將審核記錄搜尋的結果匯出至 CSV 檔案，而不是在安全性 & 合規性中心使用「審核記錄搜尋」工具。 接著，您可以遵循步驟2所述的相同程式，以使用 Power Query 編輯器來格式化審核記錄檔。 使用 PowerShell Cmdlet 的其中一個優點是，您可以使用 *RecordType* 參數，從特定服務搜尋事件。 以下是一些使用 PowerShell 將審核記錄匯出至 CSV 檔案的範例，因此您可以使用 Power Query 編輯器，依步驟2所述，在 **AuditData** 欄中轉換 JSON 物件。
+您可以使用 Exchange Online PowerShell 中的 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) Cmdlet，將審核記錄搜尋的結果匯出至 CSV 檔案，而不是在安全性 & 合規性中心使用「審核記錄搜尋」工具。 接著，您可以遵循步驟2所述的相同程式，以使用 Power Query 編輯器來格式化審核記錄檔。 使用 PowerShell Cmdlet 的其中一個優點是，您可以使用 *RecordType* 參數，從特定服務搜尋事件。 以下是一些使用 PowerShell 將審核記錄匯出至 CSV 檔案的範例，因此您可以使用 Power Query 編輯器，依步驟2所述，在 **AuditData** 欄中轉換 JSON 物件。
 
 在此範例中，執行下列命令以傳回與 SharePoint 共用作業相關的所有記錄。
 
@@ -118,7 +118,7 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 搜尋結果會匯出至名為 *PowerShellAuditlog* 的 CSV 檔案，該檔案包含四個欄： CreationDate、UserIds、RecordType AuditData) 。
 
-您也可以使用 record 類型的 name 或 enum 值做為 *RecordType* 參數的值。 如需記錄類型名稱及其對應列舉值的清單，請參閱 [Office 365 管理活動 API 架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)中的 *AuditLogRecordType* 表格。
+您也可以使用 record 類型的 name 或 enum 值做為 *RecordType* 參數的值。 如需記錄類型名稱及其對應列舉值的清單，請參閱 [Office 365 管理活動 API 架構](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)中的 *AuditLogRecordType* 表格。
 
 *RecordType* 參數只能包含單一值。 若要搜尋其他記錄類型的審計記錄，您必須再次執行這兩個先前的命令，以指定不同的記錄類型，並將這些結果附加至原始 CSV 檔案。 例如，您可以執行下列兩個命令，將相同日期範圍的 SharePoint 檔案活動新增至 PowerShellAuditlog.csv 檔案。
 

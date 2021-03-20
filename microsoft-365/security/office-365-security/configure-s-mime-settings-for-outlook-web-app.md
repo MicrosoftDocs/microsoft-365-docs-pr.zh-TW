@@ -17,12 +17,12 @@ description: 簡要描述 Exchange Online 系統管理員需要執行哪些動�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ccadfc46e42713601b115c18a119e48dcfdcbf4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6ab1aaabf0e7651a5a84642c178c28961430eea0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290030"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906477"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>在 Exchange Online 中設定 Outlook 網頁版的 S/MIME 設定
 
@@ -33,15 +33,15 @@ ms.locfileid: "50290030"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-如果您是 Exchange Online 的系統管理員，您可以設定 Outlook 網頁版（先前稱為 Outlook Web App），允許傳送和接收 S/MIME 保護的郵件。 在 Exchange Online PowerShell 中使用 **SmimeConfig** 和 **SmimeConfig** Cmdlet 來查看及管理這個功能。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+如果您是 Exchange Online 的系統管理員，您可以設定 Outlook 網頁版（先前稱為 Outlook Web App），允許傳送和接收 S/MIME 保護的郵件。 在 Exchange Online PowerShell 中使用 **SmimeConfig** 和 **SmimeConfig** Cmdlet 來查看及管理這個功能。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-如需詳細的語法及參數資訊，請參閱 [Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/get-smimeconfig) 和 [Set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/set-smimeconfig)。
+如需詳細的語法及參數資訊，請參閱 [Get-SmimeConfig](/powershell/module/exchange/get-smimeconfig) 和 [Set-SmimeConfig](/powershell/module/exchange/set-smimeconfig)。
 
 ## <a name="considerations-for-new-microsoft-edge-chromium-based"></a>新的 Microsoft Edge (Chromium 基礎的考慮) 
 
 若要在 [Microsoft](https://www.microsoft.com/windows/microsoft-edge) 的 Outlook 網頁瀏覽器中使用 S/MIME，您 (或另一個系統管理員) 必須設定及設定名為 **ExtensionInstallForcelist** 的 microsoft Edge browser 原則，以在新的 Microsoft edge 中安裝 microsoft S/MIME 擴充。 原則值為 `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`。 請注意，套用此原則需要加入網域的裝置或 Azure 已加入 Azure 的裝置，所以在新的 Microsoft Edge 瀏覽器中使用 S/MIME，會有效地需要加入網域或 Azure 已加入 Azure 的裝置。
 
-如需詳細的 **ExtensionInstallForcelist** 原則的資訊，請參閱 [ExtensionInstallForcelist](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#extensioninstallforcelist)。
+如需詳細的 **ExtensionInstallForcelist** 原則的資訊，請參閱 [ExtensionInstallForcelist](/DeployEdge/microsoft-edge-policies#extensioninstallforcelist)。
 
 此步驟是使用新的 Microsoft Edge 的必要條件;它不會取代使用者所安裝的 S/MIME 控制項。 在初次使用 S/MIME 時，系統會提示使用者下載並安裝 Outlook 網頁版中的 S/MIME 控制。 或者，使用者可以主動移至 Outlook 網頁版設定中的 **S/MIME**，取得控制的下載連結。
 

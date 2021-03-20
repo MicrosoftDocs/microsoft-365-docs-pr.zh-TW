@@ -13,12 +13,12 @@ ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: 系統管理員可以瞭解如何在獨立 Exchange Online Protection (EOP) 中查看及搜尋管理審核記錄。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab6bf0a2739a88a075b636b990539b24006f3e63
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5ed1d1eb121c06e6f5727e8782ba1d8bc8d23a99
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286474"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908123"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>在獨立版 EOP 中檢視系統管理稽核記錄
 
@@ -44,11 +44,11 @@ ms.locfileid: "50286474"
 
 - 若要開啟 Exchange 系統管理中心，請參閱 [exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體說來，您需要「 **審核記錄** 」或「 **View-Only 審核記錄** 」角色，預設會指派給「 **組織管理**」、「 **合規性管理**」及「 **安全性管理員** 」角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 論壇中尋求協助。
@@ -98,7 +98,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
   - 指定 UTC 的日期/時間值：例如，"2016-05-06 14:30:00z"。
 
-  - 指定 [日期/時間] 值做為公式，以將您的本機時區中的日期/時間轉換成 UTC：例如， `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` 。 如需詳細資訊，請參閱 [Get-Date](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date)。
+  - 指定 [日期/時間] 值做為公式，以將您的本機時區中的日期/時間轉換成 UTC：例如， `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` 。 如需詳細資訊，請參閱 [Get-Date](/powershell/module/microsoft.powershell.utility/get-date)。
 
 - 根據預設，Cmdlet 會傳回最多1000個記錄專案。 使用 _ResultSize_ 參數可指定最多250000個記錄專案。 或者，使用值傳回 `Unlimited` 所有專案。
 
@@ -112,7 +112,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04/2019").ToUniversalTime() -EndDate (Get-Date "10/03/2019").ToUniversalTime()
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)。
+如需詳細的語法及參數資訊，請參閱 [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)。
 
 ### <a name="view-details-of-audit-log-entries"></a>檢視稽核記錄項目的詳細資料
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用 Microsoft 365 for enterprise 的安全性功能。
-ms.openlocfilehash: 5c951a973fbebeff92040f9411ad2c81788f920a
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 31baf61011fb67fbe11394718086d73afa2bc680
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558391"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907659"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 之 Microsoft 365 for enterprise security 的摘要
 
@@ -52,7 +52,7 @@ Contoso 遵循這些步驟來準備其安全性，以供部署 Microsoft 365 for
 
 為了遵循安全性最佳作法和 Microsoft 365 的企業部署需求，Contoso security administrators 和其 IT 部門部署了許多安全性功能，如下列各節所述。
 
-## <a name="identity-and-access-management"></a>身分識別和存取管理 
+## <a name="identity-and-access-management"></a>身分識別與存取管理 
 
 - 專用的全域管理員帳戶 (具有 MFA 和 PIM)
 
@@ -62,7 +62,7 @@ Contoso 遵循這些步驟來準備其安全性，以供部署 Microsoft 365 for
 
   Contoso 安全性管理員指派較低的系統管理員角色給適當于該 IT 工作者工作職能的帳戶。
 
-  如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
+  如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](/office365/admin/add-users/about-admin-roles)。
 
 - 適用於所有使用者帳戶的 MFA
 
@@ -77,53 +77,53 @@ Contoso 遵循這些步驟來準備其安全性，以供部署 Microsoft 365 for
 
 - Windows Hello 企業版
 
-  Contoso 已部署 [Windows Hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) ，最後在執行 Windows 10 企業版的電腦和行動裝置上，透過強雙因素驗證，以消除密碼的需求。
+  Contoso 已部署 [Windows Hello 企業版](/windows/security/identity-protection/hello-for-business/hello-identity-verification) ，最後在執行 Windows 10 企業版的電腦和行動裝置上，透過強雙因素驗證，以消除密碼的需求。
 
 - Windows Defender Credential Guard
 
-  若要以系統管理許可權封鎖在作業系統中執行的目標攻擊和惡意程式碼，Contoso 已透過 AD DS 群組原則啟用 [Windows Defender 身分憑證防護](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) 。
+  若要以系統管理許可權封鎖在作業系統中執行的目標攻擊和惡意程式碼，Contoso 已透過 AD DS 群組原則啟用 [Windows Defender 身分憑證防護](/windows/security/identity-protection/credential-guard/credential-guard) 。
 
 ## <a name="threat-protection"></a>威脅防護
 
 - 使用 Windows Defender 防毒軟體防護惡意程式碼
 
-  Contoso 使用 [Windows Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)，針對執行 Windows 10 企業版的電腦和裝置執行惡意程式碼防護和反惡意程式碼管理。
+  Contoso 使用 [Windows Defender 防毒軟體](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)，針對執行 Windows 10 企業版的電腦和裝置執行惡意程式碼防護和反惡意程式碼管理。
 
 - 使用 Microsoft Defender for Office 365 保護電子郵件流程和信箱審核記錄 
 
-  Contoso 使用 Exchange Online Protection 和 [Defender For Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) ，以防禦透過電子郵件傳輸的未知惡意程式碼、病毒和惡意 URLs。
+  Contoso 使用 Exchange Online Protection 和 [Defender For Office 365](/office365/securitycompliance/office-365-atp) ，以防禦透過電子郵件傳輸的未知惡意程式碼、病毒和惡意 URLs。
 
   Contoso 也啟用信箱審核記錄，以識別登入使用者信箱的人員、傳送郵件，以及由信箱擁有者、委派的使用者或系統管理員所執行的其他活動。
 
 - 使用 Office 365 威脅調查及回應來進行攻擊監視和防護
 
-  Contoso 使用 [Office 365 威脅調查和回應](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) 來保護使用者，方法是讓使用者輕鬆識別並處理攻擊，並避免未來的攻擊。
+  Contoso 使用 [Office 365 威脅調查和回應](/office365/securitycompliance/office-365-ti) 來保護使用者，方法是讓使用者輕鬆識別並處理攻擊，並避免未來的攻擊。
 
 - 使用 Advanced Threat Analytics 來防護縝密的攻擊
 
-  Contoso 使用 [Advanced Threat Analytics (ATA)](https://docs.microsoft.com/advanced-threat-analytics/what-is-ata)，來保護自身免於進階設定目標的攻擊。ATA 會自動分析、學習及識別正常和異常實體 (使用者、裝置及資源) 行為。
+  Contoso 使用 [Advanced Threat Analytics (ATA)](/advanced-threat-analytics/what-is-ata)，來保護自身免於進階設定目標的攻擊。ATA 會自動分析、學習及識別正常和異常實體 (使用者、裝置及資源) 行為。
 
 ## <a name="information-protection"></a>資訊保護
 
 - 使用 Azure 資訊保護標籤來保護機密和高管制數位資產
 
-  Contoso 判斷出三種資料保護層級，並部署了使用者套用至數位資產的 [Microsoft 365 敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) 。 對於其商業機密和其他智慧財產權，Contoso 使用敏感度分組進行高管制的資料。 此程式會加密內容，並限制特定使用者帳戶和群組的存取權。
+  Contoso 判斷出三種資料保護層級，並部署了使用者套用至數位資產的 [Microsoft 365 敏感度標籤](../compliance/sensitivity-labels.md) 。 對於其商業機密和其他智慧財產權，Contoso 使用敏感度分組進行高管制的資料。 此程式會加密內容，並限制特定使用者帳戶和群組的存取權。
 
 - 使用資料外洩防護來防止內部網路資料外洩
 
-  Contoso 設定 Exchange Online、SharePoint 及 OneDrive 的 [資料遺失防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) 原則，以防止使用者意外或故意共用機密資料。
+  Contoso 設定 Exchange Online、SharePoint 及 OneDrive 的 [資料遺失防護](../compliance/data-loss-prevention-policies.md) 原則，以防止使用者意外或故意共用機密資料。
 
 - 使用 Windows 資訊保護來防止裝置資料外洩
 
-  Contoso 使用 [Windows 資訊保護 (WIP) ](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) ，以防止資料洩漏，透過網際網路型應用程式和服務、企業應用程式，以及員工可運作的個人裝置上的資料。
+  Contoso 使用 [Windows 資訊保護 (WIP) ](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) ，以防止資料洩漏，透過網際網路型應用程式和服務、企業應用程式，以及員工可運作的個人裝置上的資料。
 
 - 使用 Microsoft Cloud App Security 來進行雲端監視
 
-  Contoso 使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)，來對應其雲端環境、監視其使用量，以及偵測安全性事件。 *Microsoft 雲端 App 安全性僅在 Microsoft 365 E5 中提供。*
+  Contoso 使用 [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)，來對應其雲端環境、監視其使用量，以及偵測安全性事件。 *Microsoft 雲端 App 安全性僅在 Microsoft 365 E5 中提供。*
 
 - 使用 Microsoft Intune 來進行裝置管理
 
-  Contoso 使用 [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) 來註冊、管理及設定對於行動裝置及在其上執行之應用程式的存取權。裝置型條件式存取原則也會要求核准的應用程式和相容的電腦和行動裝置。
+  Contoso 使用 [Microsoft Intune](/intune/introduction-intune) 來註冊、管理及設定對於行動裝置及在其上執行之應用程式的存取權。裝置型條件式存取原則也會要求核准的應用程式和相容的電腦和行動裝置。
 
 ## <a name="security-management"></a>安全性管理
 
@@ -133,4 +133,4 @@ Contoso 遵循這些步驟來準備其安全性，以供部署 Microsoft 365 for
 
 - 適用於具有 Windows Defender 資訊安全中心之使用者的中央安全性儀表板
 
-  Contoso 將 [Windows 安全性應用程式](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) 部署至其電腦與執行 Windows 10 企業版的裝置，讓使用者可以立即查看其安全性狀況，並採取行動。
+  Contoso 將 [Windows 安全性應用程式](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) 部署至其電腦與執行 Windows 10 企業版的裝置，讓使用者可以立即查看其安全性狀況，並採取行動。

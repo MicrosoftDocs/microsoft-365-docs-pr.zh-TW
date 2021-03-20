@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 description: 了解如何同時新增使用者並指派授權給 Microsoft 365。
 ms.date: 07/01/2020
-ms.openlocfilehash: 71695c47bbc34a94f0040c37dd0c0bb0ab72fbba
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 3c752bd12c0aeb3806ad7d5d90373aad13730944
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741410"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906297"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同時新增使用者並指派授權
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -100,10 +100,10 @@ ms.locfileid: "50741410"
 
 您可以使用下列任一方法，同時新增多個使用者：
 
-- **使用試算表大量新增人員。** 請參閱[同時新增多個使用者](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time)。
-- **將新增帳戶和指派授權自動化。** 請參閱[使用 Microsoft 365 PowerShell 建立使用者帳戶](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell)。 如果您已熟悉使用 Windows PowerShell Cmdlet，請選擇此方法。
-- **使用 ActiveDirectory？** [設定 Microsoft 365 的目錄同步處理](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)。 使用 Azure AD Connect 工具來複製 Microsoft 365 中的 Active Directory 使用者帳戶 (與其他 Active Directory 物件)。 同步只會新增使用者帳戶。 您必須先將授權指派給同步的使用者，之後他們才能使用電子郵件及其他 Office 應用程式。
-- **從 Exchange Server 移轉？** 請參閱[將多個電子郵件帳戶移轉到 Office 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)。 當您使用完全移轉、分段移轉或混合式 Exchange 方法，將多個信箱移轉到 Microsoft 365 時，您會在移轉過程中自動新增使用者。 移轉只會新增使用者帳戶。 您必須先將授權指派給使用者，之後他們才能使用電子郵件及其他 Office 應用程式。 如果您未指派授權給使用者，則其信箱會在 30 天的寬限期後停用。 了解如何[在 Microsoft 365 系統管理中心指派授權指派給使用者](../manage/assign-licenses-to-users.md)。
+- **使用試算表大量新增人員。** 請參閱[同時新增多個使用者](../../enterprise/add-several-users-at-the-same-time.md)。
+- **將新增帳戶和指派授權自動化。** 請參閱[使用 Microsoft 365 PowerShell 建立使用者帳戶](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md)。 如果您已熟悉使用 Windows PowerShell Cmdlet，請選擇此方法。
+- **使用 ActiveDirectory？** [設定 Microsoft 365 的目錄同步處理](../../enterprise/set-up-directory-synchronization.md)。 使用 Azure AD Connect 工具來複製 Microsoft 365 中的 Active Directory 使用者帳戶 (與其他 Active Directory 物件)。 同步只會新增使用者帳戶。 您必須先將授權指派給同步的使用者，之後他們才能使用電子郵件及其他 Office 應用程式。
+- **從 Exchange Server 移轉？** 請參閱[將多個電子郵件帳戶移轉到 Office 365 的方法](/Exchange/mailbox-migration/mailbox-migration)。 當您使用完全移轉、分段移轉或混合式 Exchange 方法，將多個信箱移轉到 Microsoft 365 時，您會在移轉過程中自動新增使用者。 移轉只會新增使用者帳戶。 您必須先將授權指派給使用者，之後他們才能使用電子郵件及其他 Office 應用程式。 如果您未指派授權給使用者，則其信箱會在 30 天的寬限期後停用。 了解如何[在 Microsoft 365 系統管理中心指派授權指派給使用者](../manage/assign-licenses-to-users.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -112,7 +112,7 @@ ms.locfileid: "50741410"
 ## <a name="related-content"></a>相關內容
 
 [將新員工新增至 Microsoft 365](add-new-employee.md) (文章)\
-[同時將多位使用者新增至 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (文章)\
+[同時將多位使用者新增至 Microsoft 365](../../enterprise/add-several-users-at-the-same-time.md) (文章)\
 [在 Microsoft 365 中還原使用者](restore-user.md) (文章)\
 [將授權指派給使用者](../manage/assign-licenses-to-users.md) (文章)\
 [刪除組織中的使用者](delete-a-user.md) (文章)\

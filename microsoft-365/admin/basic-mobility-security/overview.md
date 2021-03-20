@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本行動及安全性設定裝置安全性原則和存取規則。
-ms.openlocfilehash: 177b0769f3cad928d05a41cfe95d5d62ab2b4786
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: e74a5df6d10f8f3fb7b420e428380af97ba75597
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430105"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906249"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Microsoft 365 的基本行動及安全性概述
 
@@ -43,7 +43,7 @@ Microsoft 365 全域管理員必須完成下列步驟，才能啟動和設定基
 
 以下是步驟的摘要：
 
-**步驟1：** 依照 [設定基本行動性和安全性](set-up.md)中的步驟，啟用基本行動性和安全性。
+**步驟1：** 依照  [設定基本行動性和安全性](set-up.md)中的步驟，啟用基本行動性和安全性。
 
 **步驟2：** 例如，建立 APNs 憑證以管理 iOS 裝置，並新增網域名稱系統 (DNS) 的網域名稱系統來支援 Windows phone，以設定基本行動性及安全性。
 
@@ -57,7 +57,7 @@ Microsoft 365 全域管理員必須完成下列步驟，才能啟動和設定基
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>其他管理裝置和應用程式的方法
 
-如果您只需要行動電話應用程式管理 (MAM) （可能是因為人員在自己的裝置上更新工作專案），則 Intune 除了註冊及管理裝置之外，還提供另一個選項。 Intune 訂閱可讓您使用 Azure 入口網站來設定 MAM 原則，即使人員的裝置並未在 Intune 中註冊也是一樣。 如需詳細資訊，請參閱 [App protection 原則一覽](https://go.microsoft.com/fwlink/?LinkId=2132517)。
+如果您只需要行動電話應用程式管理 (MAM) （可能是因為人員在自己的裝置上更新工作專案），則 Intune 除了註冊及管理裝置之外，還提供另一個選項。 Intune 訂閱可讓您使用 Azure 入口網站來設定 MAM 原則，即使人員的裝置並未在 Intune 中註冊也是一樣。 如需詳細資訊，請參閱 [App protection 原則一覽](/mem/intune/apps/app-protection-policy)。
 
 ## <a name="related-topics"></a>相關主題
 

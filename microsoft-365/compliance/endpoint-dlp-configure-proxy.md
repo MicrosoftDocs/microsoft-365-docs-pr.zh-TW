@@ -19,19 +19,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何為端點 DLP 設定裝置 Proxy 和網際網路連線設定。
-ms.openlocfilehash: 1e723adfbf16ba1180558e34b0fe4867e6337c57
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841605"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907003"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>為端點 DLP 設定裝置 Proxy 和網際網路連線設定
 
 Microsoft 端點 DLP 使用 Microsoft Windows HTTP (WinHTTP) 報告資料並與 Microsoft 端點雲端服務通訊。 內嵌的端點 DLP 以 LocalSystem 帳戶在系統內容執行。
 
 > [!TIP]
-> 對於使用 正向 Proxy 作為網際網路閘道的組織，可以使用網路保護來調查 Proxy 背後的情況。 有關詳細資訊，請參閱[調查正向 Proxy 背後發生的連線事件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy)。
+> 對於使用 正向 Proxy 作為網際網路閘道的組織，可以使用網路保護來調查 Proxy 背後的情況。 有關詳細資訊，請參閱[調查正向 Proxy 背後發生的連線事件](/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy)。
 
 WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 設定無關，且只能使用下列自動探索方法來探索 proxy 伺服器：
 
@@ -89,7 +89,7 @@ WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 
 
      `netsh winhttp reset proxy`
 
-若要瞭解詳細資訊。，請參見 [Netsh 命令語法、上下文和格式](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts)。
+若要瞭解詳細資訊。，請參見 [Netsh 命令語法、上下文和格式](/windows-server/networking/technologies/netsh/netsh-contexts)。
 
 
 ## <a name="enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server"></a>在 Proxy 伺服器中啟用對端點 DLP 雲端服務 URL 的存取
@@ -129,7 +129,7 @@ WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 
 如果至少有一個連線選項退回 (200) 適用於端點的 Defender 用戶端可以使用此連線方法與測試的 URL 正確通訊。 
 
 但是，如果連線檢查結果顯示失敗，則會顯示 HTTP 錯誤 (請參閱 HTTP 狀態碼)。 然後可以使用[啟用對端點 DLP 雲端服務 URL 的存取](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server)中所示的表中的 URL。 您將使用的 URL 將取決於上線過程中選取的區域。
-[!NOTE]連線分析程式工具與 ASR 規則不相容[封鎖源自 PSExec 和 WMI 命令的流程建立](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暫時停用此規則才能執行連線工具。
+[!NOTE]連線分析程式工具與 ASR 規則不相容[封鎖源自 PSExec 和 WMI 命令的流程建立](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暫時停用此規則才能執行連線工具。
 
 [!NOTE] 在登錄中或透過群組原則設定 TelemetryProxyServer 時，如果適用於端點的 Defender 無法存取定義的 Proxy，它將回復至 direct。
 相關主題 • 上線 Windows 10 裝置 • Microsoft 端點 DLP 上線問題疑難排解
@@ -145,8 +145,8 @@ WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 
 - [資料外洩防護概觀](data-loss-prevention-policies.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)
-- [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Windows 10 電腦上線的工具及方法 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
+- [適用於端點的 Microsoft Defender](/windows/security/threat-protection/)
+- [Windows 10 電腦上線的工具及方法 ](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 - [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [加入 Azure AD 的裝置](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [加入 Azure AD 的裝置](/azure/active-directory/devices/concept-azure-ad-join)
 - [下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。

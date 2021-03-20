@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 626bc9950512438bfa43e6500adf72940ddcbfec
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: bdad55a98dba868d45ecea383ba379108ee5305a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727562"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906755"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>將帳戶從 Microsoft Defender for Endpoint 重新導向至 Microsoft 365 安全中心
 
@@ -42,7 +42,7 @@ ms.locfileid: "50727562"
 本指南說明如何透過從從前的 Microsoft Defender for 端點入口網站自動重新導向 (securitycenter.windows.com 或 securitycenter.microsoft.com) 至 Microsoft 365 安全性中心入口網站 (security.microsoft.com) ，將帳戶路由傳送至 Microsoft 365 的安全性中心。
 
 > [!NOTE]
-> Microsoft 365 security center 中的 microsoft Defender for Endpoint 可將存取權授與 [受管理的安全性服務提供者。 (MSSPs) ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) 在 [microsoft Defender security center 中授](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)與存取權的方式相同。
+> Microsoft 365 security center 中的 microsoft Defender for Endpoint 可將存取權授與 [受管理的安全性服務提供者。 (MSSPs) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) 在 [microsoft Defender security center 中授](./mssp-access.md)與存取權的方式相同。
 
 ## <a name="what-to-expect"></a>預期的專案
 啟用自動重新導向後，在 securitycenter.windows.com 或 securitycenter.microsoft.com 存取先前的 Microsoft Defender for Endpoint 入口網站的帳戶將會自動路由傳送至 Microsoft 365 security center 入口網站，security.microsoft.com。

@@ -22,12 +22,12 @@ search.appverid:
 description: 使用您的國家或地區所列的電話號碼，或提交線上服務要求，以取得技術和帳單支援。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261332"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907035"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>連絡商務產品客戶支援的方式 - 系統管理說明
 
@@ -36,7 +36,7 @@ ms.locfileid: "50261332"
 > [!IMPORTANT]
 > 您必須是商務版訂閱的管理員才能使用這些支援方式。 如果您不是商務版系統管理員，請使用 [此支援頁面](https://support.microsoft.com/contactus)。
 
-透過 [檢查目前的服務狀況](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health) 以開始。 您可在<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">服務狀況儀表板</a>上查看關於目前和過去問題的詳細資訊。 若遇到未列出的問題，可採用下列其中一種方式獲得支援：
+透過 [檢查目前的服務狀況](../enterprise/view-service-health.md) 以開始。 您可在<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">服務狀況儀表板</a>上查看關於目前和過去問題的詳細資訊。 若遇到未列出的問題，可採用下列其中一種方式獲得支援：
 
 ## <a name="online-support"></a>線上支援人員
 
@@ -214,7 +214,7 @@ ms.locfileid: "50261332"
 
 ## <a name="feature-availability"></a>功能可用性
 
-若要檢視跨 Office 365 規劃的功能可用性，請參閱 [Office 365 服務說明](https://go.microsoft.com/fwlink/p/?linkid=846911)
+若要檢視跨 Office 365 規劃的功能可用性，請參閱 [Office 365 服務說明](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
 
 ## <a name="follow-us-on-wechat"></a>在 WeChat 上關注我們
 
