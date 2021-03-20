@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: a474347a193c7ba630fd9696a478e50f73af14f1
-  ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+  ms.openlocfilehash: 79c9bf21fe480faffac90b6b5f5f134e72eff119
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 01/05/2021
-  ms.locfileid: "49751078"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50916837"
 landingContent:
 - title: 管理資訊保護與管控
   linkLists:
@@ -55,7 +55,7 @@ landingContent:
     - text: 進階電子文件探索
       url: overview-ediscovery-20.md
     - text: 核心電子文件探索
-      url: ediscovery-cases.md
+      url: ./get-started-core-ediscovery.md
     - text: 內容搜尋
       url: search-for-content.md
     - text: 稽核
@@ -67,11 +67,11 @@ landingContent:
     - text: 合規性管理員
       url: compliance-manager.md
     - text: GDPR 合規性行動計畫
-      url: https://docs.microsoft.com/compliance/regulatory/gdpr-action-plan
+      url: /compliance/regulatory/gdpr-action-plan
     - text: ISO 合規性行動計畫
-      url: https://docs.microsoft.com/compliance/regulatory/iso-action-plan
+      url: /compliance/regulatory/iso-action-plan
     - text: NIST 合規性行動計畫
-      url: https://docs.microsoft.com/compliance/regulatory/nist-action-plan
+      url: /compliance/regulatory/nist-action-plan
 - title: 部署合規性解決方案
   linkLists:
   - linkListType: how-to-guide
