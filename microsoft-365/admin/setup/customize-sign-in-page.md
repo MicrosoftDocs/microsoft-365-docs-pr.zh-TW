@@ -1,5 +1,5 @@
 ---
-title: 將貴公司商標新增到登登頁面
+title: 將公司商標新增至登入頁面
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,32 +21,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: 使用 Azure Active Directory 自訂 Microsoft 365 的登錄頁面。 您可以在載入頁面中新增圖例、標誌和文字。
-ms.openlocfilehash: 9a4e18aeb050fe128ded1ea83756256a386a0fb4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 使用 Azure Active Directory 自訂 Microsoft 365 登入頁面。 您可以將圖例、標誌及文字新增至登入頁面。
+ms.openlocfilehash: 1bd9a60c9c3bbe839652785deb2eb52d5b385673
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926903"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914159"
 ---
-# <a name="add-your-company-branding-to-the-sign-in-page"></a><span data-ttu-id="75896-104">將貴公司商標新增到登登頁面</span><span class="sxs-lookup"><span data-stu-id="75896-104">Add your company branding to the Sign In page</span></span>
+# <a name="add-your-company-branding-to-the-sign-in-page"></a><span data-ttu-id="56f69-104">將公司商標新增至登入頁面</span><span class="sxs-lookup"><span data-stu-id="56f69-104">Add your company branding to the Sign In page</span></span>
 
- <span data-ttu-id="75896-105">您現在可以使用 Microsoft 365 訂閱 (Azure Active Directory) AD) 訂閱來自訂使用者看到的載入頁面。</span><span class="sxs-lookup"><span data-stu-id="75896-105">You can now use the Azure Active Directory (AD) subscription that is included with your Microsoft 365 subscription to customize the sign-in page your users see.</span></span> 
+ <span data-ttu-id="56f69-105">您現在可以使用 Microsoft 365 訂閱隨附的 Azure Active Directory (AD) 訂閱，來自訂使用者所看到的登入頁面。</span><span class="sxs-lookup"><span data-stu-id="56f69-105">You can now use the Azure Active Directory (AD) subscription that is included with your Microsoft 365 subscription to customize the sign-in page your users see.</span></span> 
   
-## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a><span data-ttu-id="75896-106">將公司商標新增至登入頁面及存取面板頁面</span><span class="sxs-lookup"><span data-stu-id="75896-106">Add company branding to your sign in page and Access Panel pages</span></span>
+## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a><span data-ttu-id="56f69-106">將公司商標新增至登入頁面及存取面板頁面</span><span class="sxs-lookup"><span data-stu-id="56f69-106">Add company branding to your sign in page and Access Panel pages</span></span>
 
-<span data-ttu-id="75896-107">如果您有商務用 Microsoft 365、Microsoft Dynamics CRM Online、Enterprise Mobility Suite 或其他 Microsoft 服務的付費訂閱，表示您擁有 Azure Active Directory 的免費訂閱。</span><span class="sxs-lookup"><span data-stu-id="75896-107">If you have a paid subscription to Microsoft 365 for business, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Azure Active Directory.</span></span> <span data-ttu-id="75896-108">您可以使用 Azure Active Directory 來建立及管理使用者和群組帳戶，並新增公司商標至您的頁面。</span><span class="sxs-lookup"><span data-stu-id="75896-108">You can use Azure Active Directory to create and manage user and group accounts, and add company branding to your pages.</span></span> <span data-ttu-id="75896-109">若要啟用此訂閱並存取 Microsoft Azure 管理入口網站，您必須完成一次性的註冊程序。</span><span class="sxs-lookup"><span data-stu-id="75896-109">To activate this subscription and access the Microsoft Azure Management Portal, you have to complete a one-time registration process.</span></span> <span data-ttu-id="75896-110">之後，您就可以從使用 Azure Active Directory 的 Microsoft 服務來存取。</span><span class="sxs-lookup"><span data-stu-id="75896-110">Afterward, you can access Azure Active Directory from your Microsoft service that uses it.</span></span> <span data-ttu-id="75896-111">有關如何註冊您的 Microsoft 365 訂閱的指示，請參閱註冊免費的 [Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527966)訂閱，並參閱在 Azure 中管理 [您的 Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=620076) 訂閱目錄以參閱一般管理指示。</span><span class="sxs-lookup"><span data-stu-id="75896-111">For instructions on how to register your Microsoft 365 subscription see [Register your free Azure Active Directory subscription](https://go.microsoft.com/fwlink/p/?LinkID=527966), and see [Manage the directory for your Microsoft 365 subscription in Azure](https://go.microsoft.com/fwlink/p/?LinkId=620076) for general management instructions.</span></span> 
+<span data-ttu-id="56f69-107">如果您已付費訂閱 Microsoft 365 for business、Microsoft Dynamics CRM Online、企業行動性套件或其他 Microsoft 服務，您可以使用 Azure Active Directory 的免費訂閱。</span><span class="sxs-lookup"><span data-stu-id="56f69-107">If you have a paid subscription to Microsoft 365 for business, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Azure Active Directory.</span></span> <span data-ttu-id="56f69-108">您可以使用 Azure Active Directory 來建立及管理使用者和群組帳戶，並新增公司商標至您的頁面。</span><span class="sxs-lookup"><span data-stu-id="56f69-108">You can use Azure Active Directory to create and manage user and group accounts, and add company branding to your pages.</span></span> <span data-ttu-id="56f69-109">若要啟用此訂閱並存取 Microsoft Azure 管理入口網站，您必須完成一次性的註冊程序。</span><span class="sxs-lookup"><span data-stu-id="56f69-109">To activate this subscription and access the Microsoft Azure Management Portal, you have to complete a one-time registration process.</span></span> <span data-ttu-id="56f69-110">之後，您就可以從使用 Azure Active Directory 的 Microsoft 服務來存取。</span><span class="sxs-lookup"><span data-stu-id="56f69-110">Afterward, you can access Azure Active Directory from your Microsoft service that uses it.</span></span> <span data-ttu-id="56f69-111">如需如何註冊 Microsoft 365 訂閱的指示，請參閱 [註冊您的免費 Azure Active Directory 訂閱](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)，並參閱 [在 Azure 中管理 Microsoft 365 訂閱的目錄](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) ，以取得一般管理指示。</span><span class="sxs-lookup"><span data-stu-id="56f69-111">For instructions on how to register your Microsoft 365 subscription see [Register your free Azure Active Directory subscription](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md), and see [Manage the directory for your Microsoft 365 subscription in Azure](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) for general management instructions.</span></span> 
   
-<span data-ttu-id="75896-112">下圖顯示您能在 Azure 中修改登入頁面的哪部分。</span><span class="sxs-lookup"><span data-stu-id="75896-112">The following figure shows which parts of the sign-in page can be modified in Azure.</span></span>
+<span data-ttu-id="56f69-112">下圖顯示您能在 Azure 中修改登入頁面的哪部分。</span><span class="sxs-lookup"><span data-stu-id="56f69-112">The following figure shows which parts of the sign-in page can be modified in Azure.</span></span>
   
-![您可以自訂之簽署頁面的區域。](../../media/screenshotbranding.png)
+![您可以自訂的登入頁面區域。](../../media/screenshotbranding.png)
   
-1. <span data-ttu-id="75896-114">大型插圖及/或其背景色彩</span><span class="sxs-lookup"><span data-stu-id="75896-114">The large illustration and/or its background color</span></span>
+1. <span data-ttu-id="56f69-114">大型插圖及/或其背景色彩</span><span class="sxs-lookup"><span data-stu-id="56f69-114">The large illustration and/or its background color</span></span>
     
-2. <span data-ttu-id="75896-115">橫幅標誌</span><span class="sxs-lookup"><span data-stu-id="75896-115">The banner logo</span></span>
+2. <span data-ttu-id="56f69-115">橫幅標誌</span><span class="sxs-lookup"><span data-stu-id="56f69-115">The banner logo</span></span>
     
-3. <span data-ttu-id="75896-116">您也可以在此區域新增文字</span><span class="sxs-lookup"><span data-stu-id="75896-116">You can also add text to this area</span></span>
+3. <span data-ttu-id="56f69-116">您也可以在此區域新增文字</span><span class="sxs-lookup"><span data-stu-id="56f69-116">You can also add text to this area</span></span>
     
-<span data-ttu-id="75896-117">除了登入頁面外，您還可以自訂 Azure 中的存取面板頁面。</span><span class="sxs-lookup"><span data-stu-id="75896-117">In addition to the sign-in page, you can customize the Access Panel page in Azure.</span></span>
+<span data-ttu-id="56f69-117">除了登入頁面外，您還可以自訂 Azure 中的存取面板頁面。</span><span class="sxs-lookup"><span data-stu-id="56f69-117">In addition to the sign-in page, you can customize the Access Panel page in Azure.</span></span>
   
-<span data-ttu-id="75896-118">如果您已準備好要新增商標、探索 Azure 內容組中的自訂選項：[將公司商標新增至登入及存取面板頁面](https://go.microsoft.com/fwlink/p/?LinkId=620077)。</span><span class="sxs-lookup"><span data-stu-id="75896-118">If you are ready to add branding, explore the customization options in the Azure content set: [Add company branding to your Sign-in and Access Panel pages](https://go.microsoft.com/fwlink/p/?LinkId=620077).</span></span>
+<span data-ttu-id="56f69-118">如果您已準備好要新增商標、探索 Azure 內容組中的自訂選項：[將公司商標新增至登入及存取面板頁面](/azure/active-directory/fundamentals/customize-branding)。</span><span class="sxs-lookup"><span data-stu-id="56f69-118">If you are ready to add branding, explore the customization options in the Azure content set: [Add company branding to your Sign-in and Access Panel pages](/azure/active-directory/fundamentals/customize-branding).</span></span>

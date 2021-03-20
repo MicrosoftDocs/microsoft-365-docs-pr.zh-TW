@@ -11,12 +11,12 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: f9bb89aa0f42f487abcd0d44785c257184024941
-  ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+  ms.openlocfilehash: 07f3d268da44f92ea665e5a1751cad9acf70dfc1
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/03/2020
-  ms.locfileid: "49562918"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50915407"
 landingContent:
 - title: 監控服務的狀態
   linkLists:
@@ -69,7 +69,7 @@ landingContent:
   - linkListType: overview
     links:
     - text: Microsoft Teams 系統管理文件
-      url: https://docs.microsoft.com/en-us/microsoftteams/
+      url: /microsoftteams/
     - text: 搭配使用 Outlook 與 Teams
       url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
   - linkListType: learn
@@ -81,12 +81,12 @@ landingContent:
   - linkListType: overview
     links:
     - text: 適用於 IT 專業人員和系統管理員的 SharePoint 文件
-      url: https://docs.microsoft.com/sharepoint/
+      url: /sharepoint/
     - text: 適用於 IT 專業人員和系統管理員的 OneDrive 文件
-      url: https://docs.microsoft.com/onedrive/
+      url: /onedrive/
   - linkListType: how-to-guide
     links:
     - text: 管理 OneDrive 和 SharePoint 中的共用
-      url: https://docs.microsoft.com/onedrive/manage-sharing
+      url: /onedrive/manage-sharing
     - text: 建立及管理網站
       url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center

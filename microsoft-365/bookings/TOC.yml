@@ -34,7 +34,7 @@
     - name: 取得 Bookings 應用程式
       href: get-bookings-app.md
     - name: Microsoft Teams 中的 Bookings 應用程式和虛擬造訪
-      href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+      href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
     - name: 比較圖表 - web 應用程式與 Teams 應用程式
       href: comparison-chart.md
     - name: 刪除預約行事曆
