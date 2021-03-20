@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，將「ICE 聊天」工具中的資料匯入和封存至 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 79a18017ce7aa3c646fa6c7230bde4b001ddc4c8
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 663b122ec81a3d2d448e8d0abe5da0bdd9dc7313
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790167"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904181"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>設定連接器以封存「我的冰激淩」聊天資料
 
@@ -51,7 +51,7 @@ ms.locfileid: "49790167"
 
 - 「ICE 聊天連接器」可以在一天內匯入200000項總計。 如果 SFTP 網站上的專案超過200000個，將不會將這些專案匯入至 Microsoft 365。
 
-- 在步驟 3 (，以及在步驟 1) 中下載公開金鑰及 IP 位址的系統管理員，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面上新增連接器時，此角色是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟 3 (，以及在步驟 1) 中下載公開金鑰及 IP 位址的系統管理員，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面上新增連接器時，此角色是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>步驟1：取得 SSH 和 PGP 公開金鑰
 

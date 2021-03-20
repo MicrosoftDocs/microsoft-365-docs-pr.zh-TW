@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 瞭解如何管理 Office 365 端點，以與企業組織網路架構搭配運作。
-ms.openlocfilehash: 41dceae78d80a78b023517e8b6c5c5c0d73da2ef
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905282"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905113"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 端點
 
@@ -128,13 +128,13 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
   
 ### <a name="how-do-i-determine-the-location-of-my-tenant"></a>如何判斷我的租用戶位置？
 
- 判斷 **租用戶位置** 的最佳方式是使用我們的 [資料中心地圖](https://aka.ms/datamaps)。
+ 判斷 **租用戶位置** 的最佳方式是使用我們的 [資料中心地圖](./o365-data-locations.md)。
   
 ### <a name="am-i-peering-appropriately-with-microsoft"></a>我與 Microsoft 的對等互連是否適當？
 
  關於 **對等互連位置**，在 [與 Microsoft 對等互連](https://www.microsoft.com/peering)中有更詳細的說明。
   
-有了全球超過 2500 個 ISP 對等互連關聯性及 70 個網路節點，從您的網路連接到我們的網路應該會非常流暢。 您不妨花幾分鐘確認您 ISP 的對等互連關聯性是最佳狀態，[此處提供一些範例](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/)供您了解與我們網路的良好及不佳的對等互連遞交機制。
+有了全球超過 2500 個 ISP 對等互連關聯性及 70 個網路節點，從您的網路連接到我們的網路應該會非常流暢。 您不妨花幾分鐘確認您 ISP 的對等互連關聯性是最佳狀態，[此處提供一些範例](/archive/blogs/onthewire/__guidance)供您了解與我們網路的良好及不佳的對等互連遞交機制。
   
 <a name="bkmk_MissingIP"> </a>
 ### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>我發現網路要求的目的地 IP 位址不在已發佈清單上，我需要提供存取權給這些 IP 位址嗎？
@@ -224,7 +224,7 @@ Office 365 不會提供所有必要網路端點的 IP 位址。 某些僅提供 
   
 [Microsoft 公用 IP 空間](https://www.microsoft.com/download/details.aspx?id=53602)
   
-[Microsoft Intune 的網路基礎結構需求](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
+[Microsoft Intune 的網路基礎結構需求](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
   
 [ExpressRoute 和 Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   

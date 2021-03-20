@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 美國政府雲端的系統管理員可以設定資料連線器，將員工資料從組織的人力資源 (HR) 系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 80998422eba32fe7f9118166f76a61d2d4bd8894
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 16d6d72d557744e30d41795d5f8c8a17db81c6a3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619919"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905925"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>設定連接器以匯入美國政府的 HR 資料
 
@@ -28,11 +28,11 @@ ms.locfileid: "49619919"
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 在步驟3中建立 HR 連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立新的角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟3中建立 HR 連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立新的角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 - 您必須決定如何定期從組織的人力資源系統 (中取得或匯出資料，) 並將其新增至步驟2所述的 CSV 檔案。 您在步驟4中執行的腳本會將 CSV 檔案中的 HR 資料上傳至 Microsoft 雲端。
 
-- 您在步驟4中執行的範例腳本會將 HR 資料上傳至 Microsoft 雲端，以供其他 Microsoft 工具使用，例如有問必答風險管理解決方案。 在任何 Microsoft standard support 計畫或服務下，都不支援此範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
+- 您在步驟4中執行的範例腳本會將 HR 資料上傳至 Microsoft 雲端，以供其他 Microsoft 工具使用，例如有問必答風險管理解決方案。 在任何 Microsoft standard support 計畫或服務下，都不支援此範例腳本。 範例指令碼係依「現狀」提供，不含任何種類的擔保方式。 Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。 使用或操作範例指令碼和文件發生的所有風險，皆屬於您的責任。 Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步驟1：在 Azure Active Directory 中建立應用程式
 
@@ -44,7 +44,7 @@ ms.locfileid: "49619919"
 
 - 租使用者識別碼 (也稱為 *目錄識別碼*) 
 
-如需在 Azure AD 中建立應用程式的逐步指示，請參閱 [使用 Microsoft identity Platform 註冊應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
+如需在 Azure AD 中建立應用程式的逐步指示，請參閱 [使用 Microsoft identity Platform 註冊應用程式](/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>步驟2：使用 HR 資料準備 CSV 檔案
 
@@ -153,7 +153,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
    上載成功時，腳本會顯示 **上傳成功** 郵件。
 
    > [!NOTE]
-   > 如果執行原則時發生問題，請參閱 [關於執行](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) 原則及 [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) ，以取得設定執行原則的指導方針。
+   > 如果執行原則時發生問題，請參閱 [關於執行](/powershell/module/microsoft.powershell.core/about/about_execution_policies) 原則及 [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) ，以取得設定執行原則的指導方針。
 
 ## <a name="step-5-monitor-the-hr-connector"></a>步驟5：監視 HR 連接器
 

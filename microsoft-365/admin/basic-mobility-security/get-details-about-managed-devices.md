@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用 Windows PowerShell 以取得組織中基本行動與安全性裝置的詳細資料。
-ms.openlocfilehash: 7c6a0365dfd573377c3675bbcee8ee8280e33816
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876885"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904249"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>取得基本行動裝置及安全性受管理裝置的詳細資料
 
@@ -47,9 +47,9 @@ ms.locfileid: "49876885"
 
 ### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>步驟1：下載並安裝適用于 Windows PowerShell 的 Azure Active Directory 模組
 
-如需這些步驟的詳細資訊，請參閱 [Connect To Microsoft 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。
+如需這些步驟的詳細資訊，請參閱 [Connect To Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell)。
 
-1. 移至 [IT 專業人員的 Microsoft Online services Sign-In Assistant] RTWl](https://www.microsoft.com/download/details.aspx?id=41950)   ，然後選取 [ **下載 microsoft online services**] 登入小幫手。   
+1. 移至 [IT 專業人員的 Microsoft Online services Sign-In Assistant] RTWl](https://www.microsoft.com/download/details.aspx?id=41950)   ，然後選取 [ **下載 microsoft online services**] 登入小幫手。
 
 2. 以下列步驟安裝適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組：
 
@@ -98,7 +98,7 @@ ms.locfileid: "49876885"
 
     Get-MsolDevice-ReturnRegisteredOwners |Where-Object {$ _。RegisteredOwners-gt 0}
 
-如需更多範例，請參閱  [MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)。
+如需更多範例，請參閱  [MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)。
 
 ## <a name="run-a-script-to-get-device-details"></a>執行腳本以取得裝置詳細資料
 
@@ -108,7 +108,7 @@ ms.locfileid: "49876885"
 
 2.  param (
 
-3.  [PSObject []] $users = @ ( # A1，
+3.  [PSObject []] $users = @ () ，
 
 4.  [切換] $export，
 
@@ -295,7 +295,7 @@ ms.locfileid: "49876885"
 
     $u = Get-MsolGroupMember-SearchString "FinanceStaff" |% {Get-MsolUser-ObjectId $ _。ObjectId}
 
-4. 執行下列命令以啟動腳本。   
+4. 執行下列命令以啟動腳本。
 
     .\Get-MsolUserDeviceComplianceStatus.ps1-使用者 $u 匯出
 
@@ -303,8 +303,8 @@ ms.locfileid: "49876885"
 
 ## <a name="related-topics"></a>相關主題
 
-[已停用 Microsoft Connect](https://docs.microsoft.com/collaborate/connect-redirect)
+[已停用 Microsoft Connect](/collaborate/connect-redirect)
 
 [基本行動與安全性概觀](overview.md)
 
-[MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)
+[MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)

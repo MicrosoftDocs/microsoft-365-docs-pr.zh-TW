@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 描述文件瞭解和表單處理模型之間的差異
-ms.openlocfilehash: a50941ec117480be586ba828e7b49c4a88a310ab
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 9640b028e4b5a9cbd914b183e61de9b8a7ba00bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712291"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905787"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文件瞭解和表單處理模型之間的差異 
 
@@ -34,7 +34,7 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
 雖然這兩種模型通常用於相同用途，但以下列出的關鍵差異會影響您可以使用哪種模型。
 
 > [!NOTE]
-> 如需有關表單處理和文件瞭解案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example)。
+> 如需有關表單處理和文件瞭解案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](./adoption-getstarted.md#form-processing-scenario-example)。
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>結構化、非結構化和半結構化內容
@@ -52,9 +52,9 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
 文件瞭解模型在 SharePoint 內容中心網站中建立和管理。 
 
 > [!NOTE]
-> 如需有關輸入檔的詳細資訊，請參閱[表單處理模型需求和限制](https://docs.microsoft.com/ai-builder/form-processing-model-requirements)。 
+> 如需有關輸入檔的詳細資訊，請參閱[表單處理模型需求和限制](/ai-builder/form-processing-model-requirements)。 
 
-表單處理模型是在 PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview)中建立，但建立是直接從 SharePoint 文件庫啟動。 文件庫必須先啟用表單處理模型建立，使用者才能建立表單處理模型。 系統管理員可以在內容瞭解系統管理員設定中啟用表單處理模型建立。 表單處理模型使用 PowerAutomate 流程以在文件上傳到文件庫時處理這些檔案。
+表單處理模型是在 PowerApps [AI Builder](/ai-builder/overview)中建立，但建立是直接從 SharePoint 文件庫啟動。 文件庫必須先啟用表單處理模型建立，使用者才能建立表單處理模型。 系統管理員可以在內容瞭解系統管理員設定中啟用表單處理模型建立。 表單處理模型使用 PowerAutomate 流程以在文件上傳到文件庫時處理這些檔案。
 
 當您建立文件瞭解模型時，將建立儲存在 SharePoint 內容類型庫中的 [新 SharePoint 內容類型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)。 或者，您可以視需要使用現有內容類型來定義模型。
 
@@ -85,7 +85,7 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
 | 支援的語言| 英文 <br>2021 下半年即將推出：拉丁字母語言 | 模型可支援所有拉丁字母語言。 除了英文之外：德文、瑞典文、法文、西班牙文、義大利文和葡萄牙文。|
 
 ## <a name="see-also"></a>另請參閱
-[訓練：使用 AI Builder 改善商務效能](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[訓練：使用 AI Builder 改善商務效能](/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
 
 

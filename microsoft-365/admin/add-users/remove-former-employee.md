@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '遵循此檢查清單，從 Microsoft 365 中移除員工，並保護資料安全。 '
-ms.openlocfilehash: a875a8b7620067cdae46fcae3bb7ef8ce7d148fa
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 2372056cd6bee2387842c74dc2a35d71b88fae9e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114054"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904393"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>移除或刪除離職員工
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
   
@@ -92,7 +92,7 @@ ms.locfileid: "50114054"
 > [!IMPORTANT]
 > 如果使用者是在網頁上的 Outlook，只要在其信箱中按一下 [流覽]，就不會立即啟用。 當他們選取不同的麻將牌（例如 OneDrive，或重新整理其瀏覽器）時，就會啟動登出。
   
-若要使用 PowerShell 立即將使用者登出，請參閱 [Revoke-AzureADUserAllRefreshToken](https://go.microsoft.com/fwlink/?linkid=841345) Cmdlet。
+若要使用 PowerShell 立即將使用者登出，請參閱 [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) Cmdlet。
   
 如需花費多久時間以將某人退出電子郵件的詳細資訊，請參閱[終止員工的電子郵件工作階段所需注意的事項](#what-you-need-to-know-about-terminating-an-employees-email-session)。
   
@@ -131,7 +131,7 @@ ms.locfileid: "50114054"
 
     非作用中的信箱無法接收電子郵件，也不會顯示於貴組織的共用通訊錄或其他清單中。
 
-    若要瞭解如何對信箱進行保留，請參閱 [在 Exchange Online 中管理非使用中的信箱](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)。
+    若要瞭解如何對信箱進行保留，請參閱 [在 Exchange Online 中管理非使用中的信箱](../../compliance/create-and-manage-inactive-mailboxes.md)。
 
 ## <a name="forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>將離職員工的電子郵件轉寄給另一個員工，或轉換為共用信箱
 
@@ -150,7 +150,7 @@ ms.locfileid: "50114054"
 2. 選取您要封鎖的員工名稱，然後選取 [ **郵件** ] 索引標籤。
 3. 在 [ **電子郵件** 轉寄] 底下，選取 [ **管理電子郵件轉發**]。
 4. 開啟 [ **轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄 **位址** ] 方塊中，輸入即將取得電子郵件之目前員工的電子郵件地址。
-5. 選取 [儲存 **]**。
+5. 選取 [儲存]。
 6. 請記住，不要刪除離職員工的帳戶。
 
 ::: moniker-end
@@ -165,7 +165,7 @@ ms.locfileid: "50114054"
 
 4. 開啟 [ **轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄 **位址** ] 方塊中，輸入目前員工 (的電子郵件地址，或要取得電子郵件) 的共用信箱。
   
-5. 選取 [儲存 **]**。
+5. 選取 [儲存]。
 
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -181,7 +181,7 @@ ms.locfileid: "50114054"
 
 4. 開啟 [ **轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄 **位址** ] 方塊中，輸入目前員工 (的電子郵件地址，或要取得電子郵件) 的共用信箱。
   
-5. 選取 [儲存 **]**。
+5. 選取 [儲存]。
 
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -195,7 +195,7 @@ ms.locfileid: "50114054"
 2. 在 Exchange 系統管理中心中， **流覽至 [** 收件者] [ \> **信箱**]。
 3. 選取使用者，然後在 [行動 **裝置**] 底下，選取 [ **查看詳細資料**]。
 4. 在 [行動 **裝置詳細資料**] 頁面的 [行動 **裝置**] 下，選取行動裝置，選取 [**清除資料** ![ 清除裝置] ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) ，然後選取 [**封鎖**]。
-5. 選取 [儲存 **]**。
+5. 選取 [儲存]。
    > [!TIP]
    > 請務必移除或停用內部部署 Blackberry Enterprise Service 中的使用者。 您也應停用使用者的任何 Blackberry 裝置。 如需有關如何停用使用者的特定步驟，請參閱 Blackberry Business Cloud Services Administration Guide。
 
@@ -282,16 +282,16 @@ ms.locfileid: "50114054"
 2. 選取您要移除授權的訂閱。
 3. 在 [詳細資料] 頁面上，選取 [ **移除授權**]。
 4. 在 [ **移除授權** ] 窗格中的 [新數量] 底下的 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數。 例如，如果您有25個授權，而您想要移除其中一個，請輸入24。
-5. 選取 [儲存 **]**。
+5. 選取 [儲存]。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
 2. 選取 [ **新增/移除** 授權] 以刪除授權，以便在您雇用另一個人之前不必支付。
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。
 2. 選取 [ **新增/移除** 授權] 以刪除授權，以便在您雇用另一個人之前不必支付。
 ::: moniker-end
 
@@ -307,7 +307,7 @@ ms.locfileid: "50114054"
 
 ## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>設定對組織中人員的來電轉接
 
-如果您需要設定終止員工之電話號碼的來電轉接，[呼叫原則] 底下的「來電轉接」設定可以設定轉寄，讓來電可以轉寄給其他使用者或同時撥打另一位人員。 如需詳細資訊，請參閱 [在 Microsoft 小組中呼叫原則](https://docs.microsoft.com/microsoftteams/teams-calling-policy)。
+如果您需要設定終止員工之電話號碼的來電轉接，[呼叫原則] 底下的「來電轉接」設定可以設定轉寄，讓來電可以轉寄給其他使用者或同時撥打另一位人員。 如需詳細資訊，請參閱 [在 Microsoft 小組中呼叫原則](/microsoftteams/teams-calling-policy)。
   
 ## <a name="delete-a-former-employees-user-account"></a>刪除離職員工的使用者帳戶
 
@@ -349,7 +349,7 @@ ms.locfileid: "50114054"
 
 如果您的組織將使用者帳戶從本機 Active Directory 環境同步處理至 Microsoft 365，您必須在本機 Active Directory 服務中刪除及還原這些使用者帳戶。 您不能在 Office 365 刪除或還原使用者帳戶。
   
-若要瞭解如何在 Active Directory 中刪除及還原使用者帳戶，請參閱 [刪除使用者帳戶](https://go.microsoft.com/fwlink/?linkid=841808)。
+若要瞭解如何在 Active Directory 中刪除及還原使用者帳戶，請參閱 [刪除使用者帳戶](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))。
   
 如果您使用的是 Azure Active Directory，請參閱 [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell Cmdlet。
   

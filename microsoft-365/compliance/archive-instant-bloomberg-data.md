@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 瞭解系統管理員如何設定和使用資料連線器，將立即 Bloomberg 聊天室工具中的資料匯入並封存至 Microsoft 365。
-ms.openlocfilehash: b7cd35e0613d9c278e8f36efc194de9dc9b5a5f2
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 6a7f05f592da1b0413d2d40f364f67e7120168b9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790091"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904171"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>設定連接器來封存 Instant Bloomberg 資料
 
@@ -68,7 +68,7 @@ ms.locfileid: "49790091"
 
 - 立即 Bloomberg 連接器可以在一天內匯入200000項總計。 如果 SFTP 網站上的專案超過200000個，將不會將這些專案匯入至 Microsoft 365。
 
-- 在步驟 3 (中建立立即 Bloomberg 連接器，並在步驟 1) 中下載公開金鑰及 IP 位址的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟 3 (中建立立即 Bloomberg 連接器，並在步驟 1) 中下載公開金鑰及 IP 位址的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>步驟1：取得 SSH 和 PGP 公開金鑰
 

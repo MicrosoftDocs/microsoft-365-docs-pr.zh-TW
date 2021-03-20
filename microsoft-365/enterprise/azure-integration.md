@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: 如果您想要使用您的內部部署環境進行密碼同步處理或單一登入，請整合 Microsoft 365 與 Azure AD。
-ms.openlocfilehash: b1f20ebc692421ed6df0d6f7c31a4d80347133e3
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: f977969634401d59d7598136f9323cb0e37f9ece
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384744"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905329"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Azure 與 Microsoft 365 的整合
 
@@ -59,7 +59,7 @@ Azure AD 也提供其他功能（如管理整合式應用程式），您可以�
 
 |**功能**|**描述**|
 |:-----|:-----|
-|整合式應用程式  <br/> |您可以將個別應用程式的存取權授與您的 Microsoft 365 資料，例如郵件、行事曆、連絡人、使用者、群組、檔案及資料夾。 您也可以在全域系統管理員層級授權這些應用程式，並在 Azure AD 中註冊應用程式，以將其提供給整個公司。 Formore 資訊，請參閱 [適用于 Microsoft 365 系統管理員的整合式應用程式和 AZURE AD](integrated-apps-and-azure-ads.md)。  <br/> 另請參閱 [Single sign-on](https://go.microsoft.com/fwlink/p/?LinkId=698604)。  <br/> |
+|整合式應用程式  <br/> |您可以將個別應用程式的存取權授與您的 Microsoft 365 資料，例如郵件、行事曆、連絡人、使用者、群組、檔案及資料夾。 您也可以在全域系統管理員層級授權這些應用程式，並在 Azure AD 中註冊應用程式，以將其提供給整個公司。 Formore 資訊，請參閱 [適用于 Microsoft 365 系統管理員的整合式應用程式和 AZURE AD](integrated-apps-and-azure-ads.md)。  <br/> 另請參閱 [Single sign-on](/azure/active-directory/manage-apps/what-is-single-sign-on)。  <br/> |
 |PowerApps  <br/> | Power app 是可連接到現有資料來源（如 SharePoint 清單和其他資料應用程式）的行動裝置應用程式。 如需詳細資訊，請參閱 [在 SharePoint Online 中建立清單的 PowerApp](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) 和 [PowerApps 頁面](https://powerapps.microsoft.com/) 。  <br/> |
    
 ## <a name="see-also"></a>另請參閱

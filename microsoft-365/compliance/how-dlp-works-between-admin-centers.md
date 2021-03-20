@@ -16,22 +16,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
-description: 瞭解安全性 & 合規性中心的 DLP 如何在 Exchange 系統管理中心中與 DLP 和郵件流程規則（傳輸規則）搭配使用。
+description: 瞭解安全性 & 合規性中心中的 DLP 如何搭配 DLP 和郵件流程規則使用，以在 Exchange 系統管理中心中 (傳輸規則) 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05e3c6342ab6d57c1f22de96e64a01df5fd15131
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: cd8a3eb0e7bb859ab9e10551fadd22cc7dcb2a39
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036194"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905935"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作
 
-在 Office 365 中，您可以在兩個不同的系統管理中心建立資料遺失防護（DLP）原則：
+在 Office 365 中，您可以在兩個不同的系統管理中心建立資料遺失防護 (DLP) 原則：
   
-- 在 [**安全性 & 規範中心**] 中，您可以建立單一 DLP 原則，協助保護 SharePoint、OneDrive、Exchange 及現在 Microsoft 小組中的內容。 建議您盡可能在這裡建立 DLP 原則。 如需詳細資訊，請參閱[安全性 & 規範中心中的 DLP](data-loss-prevention-policies.md)。
+- 在 [ **安全性 & 規範中心**] 中，您可以建立單一 DLP 原則，協助保護 SharePoint、OneDrive、Exchange 及現在 Microsoft 小組中的內容。 建議您盡可能在這裡建立 DLP 原則。 如需詳細資訊，請參閱 [安全性 & 規範中心中的 DLP](data-loss-prevention-policies.md)。
     
-- 在**exchange 系統管理中心**中，您可以建立 DLP 原則，以協助只保護 Exchange 中的內容。 這個原則可以使用 Exchange 郵件流程規則（也稱為傳輸規則），使其具有處理電子郵件時特有的選項。 如需詳細資訊，請參閱[Exchange 系統管理中心的 DLP](https://go.microsoft.com/fwlink/?linkid=852311)。
+- 在 **exchange 系統管理中心** 中，您可以建立 DLP 原則，以協助只保護 Exchange 中的內容。 這項原則可以使用 Exchange 郵件流程規則 (也稱為傳輸規則) ，因此它具有處理電子郵件時特有的選項。 如需詳細資訊，請參閱 [Exchange 系統管理中心的 DLP](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)。
     
 在這些系統管理中心建立的 DLP 策略並排運作-本主題說明如何執行。
   
@@ -58,5 +58,3 @@ ms.locfileid: "44036194"
 如果您已在 Exchange 系統管理中心中設定原則提示，在安全性 & 合規性中心中所設定的任何原則提示，都不會顯示在網頁和 Outlook 2013 和更新版本中 Outlook 的使用者，除非您關閉 Exchange 系統管理中心中的秘訣。 這可確保您目前的 Exchange 郵件流程規則可以繼續運作，直到您選擇切換到安全性 & 規範中心為止。
   
 請注意，當原則提示只能從單一位置繪製時，系統會永遠傳送電子郵件通知，即使您同時在安全性 & 規範中心和 Exchange 系統管理中心中使用 DLP 原則也是一樣。
-  
-

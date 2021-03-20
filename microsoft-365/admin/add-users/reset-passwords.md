@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 瞭解如何在 Microsoft 365 for business 訂閱中重設使用者的密碼。
-ms.openlocfilehash: faae2d31f29eb4817abc31cde1e1ce2bd6a47db1
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 985b9fbae68f12c3f6a23fe8a3e1add4a86df716
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131696"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903697"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -90,9 +90,9 @@ ms.locfileid: "48131696"
 
 2. 在 [ **連絡人詳細資料**] 下，仔細檢查您的 **備選電子郵件** 是否正確，以及您是否已提供行動電話號碼。 如果不是，請立即變更。
 
-3. 登出：在右上角選取您的名稱以登出 \> ** **。
+3. 登出：在右上角選取您的名稱以登出 \> ****。
 
-4. 現在重新登入：請輸入您的使用者名稱 \> **Next** \> ，然後選取 [**忘記密碼**]。
+4. 現在重新登入：請輸入您的使用者名稱 \>  \> ，然後選取 [**忘記密碼**]。
 
 5. 依照嚮導中的步驟來重設您的密碼。 它會使用您的替代連絡人資訊，確認您是正確重設密碼的使用者。
 
@@ -102,7 +102,7 @@ ms.locfileid: "48131696"
 
 - 請確認您已提供替代連絡人資訊，包括行動電話號碼。
 
-- 或者，請 [致電 Microsoft 支援人員](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
+- 或者，請 [致電 Microsoft 支援人員](../contact-support-for-business-products.md)。
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同時為組織中的所有人重設所有商務密碼
 <a name="bkmk_forgot"> </a>
@@ -124,9 +124,9 @@ ms.locfileid: "48131696"
 
 使用 PowerShell！請參閱由 Eyal Doron 撰寫的這篇文章：[使用 PowerShell 管理密碼](https://go.microsoft.com/fwlink/?linkid=853696)。
   
-<!-- Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
+<!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-如需概要資訊，請參閱 [使用 PowerShell 管理 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)。
+如需概要資訊，請參閱 [使用 PowerShell 管理 Microsoft 365](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>針對企業中的所有使用者強制執行密碼變更
 

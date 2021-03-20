@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: '深入瞭解 Office 365 的註冊程式之前，您需要瞭解的知識。 '
-ms.openlocfilehash: 7cbbcecdf3520ce5f8bd266100c3934a9cd7a664
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 93d3f58db24e4233e8d7b2929fd2471707614097
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906272"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904369"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何註冊系統管理員協助
 
@@ -90,7 +90,7 @@ ms.locfileid: "48906272"
 
 移至 [ [比較所有產品](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] 以選擇您想要購買的計畫，並開始註冊嚮導。 
   
-如果您是從免費試用版開始，您可以 [稍後再購買](../../commerce/buy-a-subscription-from-your-free-trial.md)。 所有使用者與試用版的資料仍都會保留。
+如果您是從免費試用版開始，您可以 [稍後再購買](../../commerce/try-or-buy-microsoft-365.md)。 所有使用者與試用版的資料仍都會保留。
   
 您不需要取消試用版。 如果您未購買試用訂閱，它會在試用期結束時自動到期，並且會永久刪除所有資訊。
 
@@ -105,7 +105,7 @@ ms.locfileid: "48906272"
 
 移至 [ [比較所有產品](https://products.office.com/compare-all-microsoft-office-products?tab=2) ] 以選擇您想要購買的計畫，並開始註冊嚮導。 
   
-如果您是從免費試用版開始，您可以 [稍後再購買](../../commerce/buy-a-subscription-from-your-free-trial.md)。 所有使用者與試用版的資料仍都會保留。
+如果您是從免費試用版開始，您可以 [稍後再購買](../../commerce/try-or-buy-microsoft-365.md)。 所有使用者與試用版的資料仍都會保留。
   
 您不需要取消試用版。 如果您未購買試用訂閱，它會在試用期結束時自動到期，並且會永久刪除所有資訊。
   

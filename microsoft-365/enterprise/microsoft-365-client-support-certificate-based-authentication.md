@@ -16,23 +16,23 @@ f1.keywords:
 - NOCSH
 description: 在本文中，尋找有關以憑證為基礎之驗證之 Microsoft 365 用戶端應用程式支援的詳細資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7ab5e4a2575796e37a115b36a4f78add20414ef
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: d5ebef7c10aa61ba28c8fb841468be244f6e8542
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097255"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904990"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 用戶端應用程式支援：憑證型驗證
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-新式驗證是驗證和授權方法組合的傘條款。 包括：
+新式驗證是驗證和授權方法組合的傘條款。 這些方法包括：
 
 - **驗證方法**：多重要素驗證;以用戶端憑證為基礎的驗證。
 - **授權方法**： Microsoft 的開啟授權 (OAuth) 的實施方式。
 
-新式驗證是透過使用驗證程式庫（如 Active Directory 驗證程式庫 (ADAL) 或 Microsoft 驗證程式庫 (MSAL) ）來啟用。 新式驗證是指用戶端用來驗證和授權 Microsoft 365 資源的存取。 新式驗證利用 OAuth，並為用戶端提供一種安全機制，以存取 Microsoft 365 服務，而不需要存取使用者認證。 在登入時，使用者會直接透過 Azure Active Directory 進行驗證，並接收 return 中的存取/重新整理權杖組。 存取權杖會授與用戶端存取權給 Microsoft 365 租使用者中的適當資源。 當目前的存取權杖到期時，會使用重新整理權杖來取得新的 access 或重新整理權杖。
+使用驗證程式庫（如 Active Directory 驗證程式庫 (ADAL) 或 Microsoft 驗證程式庫 (MSAL) ）會啟用新式驗證。 新式驗證是指用戶端用來驗證和授權 Microsoft 365 資源的存取。 新式驗證使用 OAuth，並為用戶端提供一種安全機制，以存取 Microsoft 365 服務，而不需要存取使用者認證。 在登入時，使用者會直接透過 Azure Active Directory 進行驗證，並接收 return 中的存取/重新整理權杖組。 存取權杖會授與用戶端存取權給 Microsoft 365 租使用者中的適當資源。 當目前的存取權杖到期時，會使用重新整理權杖來取得新的 access 或重新整理權杖。
 
 新式驗證支援不同的驗證機制，類似憑證型驗證。 Windows、Android 或 iOS 裝置上的用戶端可以使用憑證型驗證 (CBA) ，以在裝置上使用用戶端憑證來驗證 Azure Active Directory。 使用憑證來從 Azure Active Directory 取得存取/重新整理權杖，而不是一般的使用者名稱/密碼。
 
@@ -44,50 +44,10 @@ ms.locfileid: "50097255"
 <br>
 <br>
 
-| 用戶端 | Android | iOS | Mac| Windows 10 <br> 新式應用程式| Windows 10 <br> 桌上型電腦 |
-|:---|:---:|:---:|:---:|:---:|:---:|
-| Azure Active Directory 系統管理員 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Access | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Azure 系統管理員 | 不適用 | 不適用 | 不適用 | 不適用 | 不適用 |
-| 公司入口網站 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A |
-| Cortana | 計畫 | 計畫 | 不適用 | ![支援](../media/check-mark.png) | N/A |
-| Delve | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Edge<sup>1</sup> | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Excel | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| Exchange Online 系統管理員 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| 表單 | 不適用 | 不適用 | 不適用 | 不適用 | 不適用 |
-| Office 365 系統管理 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |  |
-| Kaizala | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Office Lens| ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) | N/A |
-| Office mobile | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Office 入口網站 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) | N/A |
-| OneDrive | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 計畫 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| OneNote | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| Outlook | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| Planner | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Power Apps | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) | N/A |
-| 自動功耗 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Power BI | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| PowerPoint | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| Project | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Publisher | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| 商務用 Skype | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) |
-| 商務用 Skype 系統管理員 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| SharePoint | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| 線上系統管理員 SharePoint | 計畫 | 計畫 | 不適用 | 不適用 | 不適用 |
-| 粘滯音符 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) | N/A |
-| Stream | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Sway | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) | N/A |
-| Teams | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | 計畫 |
-| To Do | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A |
-| Visio | 不適用 | ![支援](../media/check-mark.png) | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Whiteboard | 計畫 | 計畫 | 不適用 | ![支援](../media/check-mark.png) | N/A |
-| Word | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| 工作場所分析 | 不適用 | 不適用 | 不適用 | 不適用 | 不適用 |
-| Yammer | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 計畫 | 不適用 | 計畫 |
+[!INCLUDE [Certificate-based authentication services support table](../includes/microsoft-365-client-support-certificate-based-authentication-include.md)]
 
 >[!NOTE]
-><sup>1</sup> Edge IOS 和 Android 會在帳戶新增流程中支援以憑證為基礎的驗證。 在針對網站（通常是內部網路網站）進行驗證時，iOS 和 Android 的 Edge 不支援以憑證為基礎的驗證。 <br><br>  在此案例中，使用者會流覽至網站 (通常是內部網路) （網站要求使用者透過憑證進行驗證）。 這根本不涉及新式驗證，也不會利用 Microsoft 驗證程式庫。 這是因為 iOS 所產生的限制如下： iOS 阻止協力廠商應用程式存取儲存憑證的系統金鑰鏈 (只有 Apple 應用程式和 [Safari web 視圖控制器](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) 可以存取系統金鑰鏈) 。 <br><br> 隨著 Edge 依賴用於呈現網站的 [WebKit](https://developer.apple.com/documentation/webkit) 架構，edge 無法存取系統金鑰鏈，並以憑證選擇顯示使用者。 不幸的是，由於 Apple 的架構而設計。
+>在帳戶新增流程中，iOS 和 Android 的 Edge 支援以憑證為基礎的驗證。 在針對網站（通常是內部網路網站）進行驗證時，iOS 和 Android 的 Edge 不支援以憑證為基礎的驗證。 <br><br>  在此案例中，使用者會流覽至網站 (通常是內部網路) （網站要求使用者透過憑證進行驗證）。 這根本不涉及新式驗證，也不會利用 Microsoft 驗證程式庫。 這是因為 iOS 所產生的限制如下： iOS 阻止協力廠商應用程式存取儲存憑證的系統金鑰鏈 (只有 Apple 應用程式和 [Safari web 視圖控制器](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) 可以存取系統金鑰鏈) 。 <br><br> 隨著 Edge 依賴用於呈現網站的 [WebKit](https://developer.apple.com/documentation/webkit) 架構，edge 無法存取系統金鑰鏈，並以憑證選擇顯示使用者。 不幸的是，由於 Apple 的架構而設計。
 
 ## <a name="supported-powershell-modules"></a>支援的 PowerShell 模組
 

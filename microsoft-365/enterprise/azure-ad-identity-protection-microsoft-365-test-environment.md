@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 設定 Azure AD 身分識別保護，並分析您 Microsoft 365 for enterprise 測試環境中目前的帳戶。
-ms.openlocfilehash: 162a6504fb7541874798f5e795bd2ecd590b5035
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 0cb0acf3faee13676573b04178bd6b4d3d36da4d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487705"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905341"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>適用于 Microsoft 365 企業版測試環境的 Azure AD 身分識別保護
 
@@ -55,11 +55,11 @@ ms.locfileid: "48487705"
 4. 在 [ **通知**] 底下，選取 [ **使用者的風險偵測警示**]。
 5. 在 [偵測 **到風險的使用者警示** ] 窗格中，選取 [ **中**]。
 6. **若要將電子郵件傳送給下列使用者**，請選取 [**包含**]，並確認您的全域系統管理員帳戶位於選取的成員清單中。
-7. 選取 **[儲存]**。
+7. 選取 [儲存]。
 
 在 [ **保護**] 底下，選取 [各種原則] 以查看如何進行設定。 如果您建立並啟用原則，請確定其不會封鎖所有使用者的存取，否則您可能無法登入。 若要避免這種情況，請排除特定的使用者帳戶，例如全域管理員。
 
-如需進一步的測試及實驗，請參閱 [模擬風險事件](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook)。
+如需進一步的測試及實驗，請參閱 [模擬風險事件](/azure/active-directory/active-directory-identityprotection-playbook)。
 
 ## <a name="next-step"></a>下一步
 
@@ -73,4 +73,4 @@ ms.locfileid: "48487705"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

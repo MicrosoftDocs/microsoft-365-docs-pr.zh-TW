@@ -20,12 +20,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 取得說明 SharePoint、Exchange、商務用 Skype 和 Lync 的架構模型、部署和平臺選項的 IT 海報。
-ms.openlocfilehash: 6d5cda89fb67f5c41dcf161abe7258c4600ee8ce
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6c8aea1f6389c5007adb1800639488972483d5fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919817"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905509"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>適用於 SharePoint、Exchange、商務用 Skype 和 Lync 的架構模型
 
@@ -46,13 +46,13 @@ ms.locfileid: "48919817"
 - Azure 支援的 Office server 工作負載設定為何？
     
 > [!TIP]
-> 本文中的大部分海報都有多種語言版本。 可用的語言包括中文、英文、法文、德文、義大利文、日文、韓文、葡萄牙文、俄文及西班牙文。 若要下載下列其中一種語言的海報，請在海報縮圖圖像下，選取 [ **其他語言** ]。
+> 本文中的大部分海報都有多種語言版本。 可用的語言包括中文、英文、法文、德文、義大利文、日文、韓文、葡萄牙文、俄文及西班牙文。 若要下載下列其中一種語言的海報，請在海報縮圖圖像下，選取 [ **其他語言**]。
   
 讓我們知道您的想法！ 以 [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)傳送電子郵件。 
   
 使用下列連結可取得所需的海報：
   
-- **架構模型** ：使用這些資源來判斷 SharePoint 2016 和商務用 Skype 2015 的理想平臺和設定。
+- **架構模型**：使用這些資源來判斷 SharePoint 2016 和商務用 Skype 2015 的理想平臺和設定。
     
   - [Microsoft SharePoint 2016 架構模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_ArchModel)
     
@@ -60,7 +60,7 @@ ms.locfileid: "48919817"
     
   - [Microsoft 商務用 Skype 2015 架構模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SfB2015_ArchModel)
     
-- **平臺** ：使用這些資源來判斷適用于 SharePoint 2013、Exchange 2013 和 Lync 2013 的理想平臺和設定。
+- **平臺**：使用這些資源來判斷適用于 SharePoint 2013、Exchange 2013 和 Lync 2013 的理想平臺和設定。
     
   - [SharePoint 2013 平臺選項](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2013_Options)
     
@@ -68,7 +68,7 @@ ms.locfileid: "48919817"
     
   - [Lync 2013 平臺選項](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Lync2013_Options)
     
-- **在 azure 中 SharePoint Server 2013** ：使用這些 IT 海報，在 azure 基礎結構服務中設計及設定 SharePoint Server 2013 工作負載。
+- **在 azure 中 SharePoint Server 2013**：使用這些 IT 海報，在 azure 基礎結構服務中設計及設定 SharePoint Server 2013 工作負載。
     
   - [Azure 中使用 SharePoint Server 2013 的網際網路網站](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Azure_sharepoint2013)
     
@@ -80,13 +80,13 @@ ms.locfileid: "48919817"
 
 SharePoint 2016 和商務用 Skype 2015 的 IT 海報提供一種方法，可在輕鬆列印的格式中比較部署方法。 海報會列出所有設定或平臺選項。 每個選項都提供下列資訊：
   
-- **概覽** ：平臺的簡短摘要，包括概念圖表。
+- **概覽**：平臺的簡短摘要，包括概念圖表。
     
 - **最** 適合：適合平臺的常見案例。
     
-- **授權需求** ：部署所需的授權。
+- **授權需求**：部署所需的授權。
     
-- **架構任務** ：您需要做為架構師的決策。
+- **架構任務**：您需要做為架構師的決策。
     
 - **It 專業** 人員的工作或責任：您的 it 人員需要規劃的每日責任。
     
@@ -95,14 +95,14 @@ SharePoint 2016 和商務用 Skype 2015 的 IT 海報提供一種方法，可在
 
 |項目|描述|
 |---|---|
-|[![SharePoint Server 2016 架構模型海報的縮圖。](../media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [更多語言](https://www.microsoft.com/download/details.aspx?id=52650)|這種 IT 海報描述 business 決策者和解決方案架構設計人員所需瞭解的 SharePoint 線上、Azure 及 SharePoint 內部部署設定。 <br/><br/> - **SharePoint Online (SaaS)** ：透過軟體作為服務 SharePoint (SaaS 訂閱模型。 <br/> - **SharePoint 混合** ：以您自己的節奏將 SharePoint 的網站和應用程式移至雲端。 <br/> - **Azure (中的 SharePoint IaaS)** ：將內部部署環境擴充至 Azure，然後在此部署 SharePoint 2016 伺服器。  (此模型是高可用性或嚴重損壞修復環境和開發/測試環境的建議。 )  <br/> - **SharePoint 內部部署** ：在您維護的資料中心內計畫、部署、維護和自訂您的 SharePoint 環境。|
+|[![SharePoint Server 2016 架構模型海報的縮圖。](../media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [更多語言](https://www.microsoft.com/download/details.aspx?id=52650)|這種 IT 海報描述 business 決策者和解決方案架構設計人員所需瞭解的 SharePoint 線上、Azure 及 SharePoint 內部部署設定。 <br/><br/> - **SharePoint Online (SaaS)**：透過軟體作為服務 SharePoint (SaaS 訂閱模型。 <br/> - **SharePoint 混合**：以您自己的節奏將 SharePoint 的網站和應用程式移至雲端。 <br/> - **Azure (中的 SharePoint IaaS)**：將內部部署環境擴充至 Azure，然後在此部署 SharePoint 2016 伺服器。  (此模型是高可用性或嚴重損壞修復環境和開發/測試環境的建議。 )  <br/> - **SharePoint 內部部署**：在您維護的資料中心內計畫、部署、維護和自訂您的 SharePoint 環境。|
    
 <a name="SP2016_Databases"> </a>
 ### <a name="sharepoint-server-2016-databases"></a>SharePoint Server 2016 資料庫
 
 |項目|描述|
 |---|---|
-|[![SharePoint Server 2016 資料庫海報的縮圖。](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [更多語言](https://www.microsoft.com/download/details.aspx?id=55041)|這種 IT 海報是 SharePoint Server 2016 資料庫的快速參考。 您將會看到每個資料庫的詳細資料： <br/><br/> - 大小 <br/> - 調整大小指導方針 <br/> - I/O 模式 <br/> - 需求： <br/><br/>  第一頁顯示 SharePoint 系統資料庫和具有多個資料庫的服務應用程式。 第二頁會顯示所有只有單一資料庫的服務應用程式。 <br/><br/>  如需詳細資訊，請參閱 [SharePoint Server 2016 中的資料庫類型和描述](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions)。|
+|[![SharePoint Server 2016 資料庫海報的縮圖。](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [更多語言](https://www.microsoft.com/download/details.aspx?id=55041)|這種 IT 海報是 SharePoint Server 2016 資料庫的快速參考。 您將會看到每個資料庫的詳細資料： <br/><br/> - 大小 <br/> - 調整大小指導方針 <br/> - I/O 模式 <br/> - 需求： <br/><br/>  第一頁顯示 SharePoint 系統資料庫和具有多個資料庫的服務應用程式。 第二頁會顯示所有只有單一資料庫的服務應用程式。 <br/><br/>  如需詳細資訊，請參閱 [SharePoint Server 2016 中的資料庫類型和描述](/SharePoint/technical-reference/database-types-and-descriptions)。|
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Microsoft 商務用 Skype 2015 架構模型
@@ -115,13 +115,13 @@ SharePoint 2016 和商務用 Skype 2015 的 IT 海報提供一種方法，可在
 
 SharePoint 2013、Exchange 2013 和 Lync 2013 的 IT 海報提供一種方法，讓您快速比較部署方法。 每個海報都會列出所有設定或平臺選項。 它會針對每個選項提供下列資訊：
   
-- **概覽** ：平臺的簡短摘要，包括概念圖表。
+- **概覽**：平臺的簡短摘要，包括概念圖表。
     
 - **最** 適合：適合平臺的常見案例。
     
-- **授權需求** ：部署所需的授權。
+- **授權需求**：部署所需的授權。
     
-- **架構任務** ：您需要做為架構師的決策。
+- **架構任務**：您需要做為架構師的決策。
     
 - **It 專業** 人員的工作或責任：您的 it 人員需要規劃的每日責任。
     
@@ -174,11 +174,10 @@ Azure 中 SharePoint 的 IT 海報顯示使用 SharePoint Server 2013 的 Azure 
    
 ## <a name="see-also"></a>另請參閱
 
-- [Microsoft 365 解決方案與架構中心](../solutions/solution-architecture-center.md)
+- [Microsoft 365 解決方案與架構中心](../solutions/index.yml)
   
 - [Microsoft 雲端架構模式](../solutions/cloud-architecture-models.md)
   
 - [Microsoft 365 測試實驗室指南](m365-enterprise-test-lab-guides.md)
   
 - [混合式解決方案](hybrid-solutions.md)
-

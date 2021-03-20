@@ -15,12 +15,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: 在本文中，尋找 Microsoft 365 用戶端和服務應用程式支援的詳細資料。
-ms.openlocfilehash: 4e32e39281175ed66970a358ff632c2ddbb3ac1a
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097463"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905005"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365 用戶端及服務應用程式支援
 
@@ -152,4 +152,4 @@ Azure AD 條件式存取規則會套用於每個應用程式，客戶可以根�
 
 我們明白資料的安全性很重要，也承諾透明公開可能會影響 TLS 服務使用的變更。 建議所有用戶端伺服器及瀏覽器-伺服器的組合使用 TLS 1.2 (或更新版本) ，以維護 Office 365 服務的連線。 您可能必須更新特定的用戶端-伺服器及瀏覽器伺服器組合。
 
-如需 TLS 1.2 支援和服務支援的詳細資訊，請參閱在 [office 365 和 office 365 GCC 中準備 TLS 1.2](/microsoft-365/compliance/prepare-tls-1.2-in-office-365)。
+如需 TLS 1.2 支援和服務支援的詳細資訊，請參閱在 [office 365 和 office 365 GCC 中準備 TLS 1.2](../compliance/prepare-tls-1.2-in-office-365.md)。

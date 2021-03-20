@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
-ms.openlocfilehash: 48bb0f3d1a3a239025017fda261945094a3eda79
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 7f733dab02ab3ff33131be96a96451d7d1c14f55
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126078"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904405"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的 Intune 系統管理員角色
 
 您的 Microsoft 365 或 Office 365 訂閱隨附一組系統管理員角色，您可以使用 Microsoft 365 系統管理中心將這些角色指派給組織中的使用者。 每個系統管理員角色會與常見的商務功能對應，並可讓組織中的人員在系統管理中心執行特定工作的權限。
 
-Microsoft 365 系統管理中心可讓您管理某些 Microsoft Intune 角色。 不過，這些角色是 Intune 系統管理中心中可用角色的子集。 正在尋找 Microsoft Intune 的詳細角色描述嗎？ 請參閱 [使用 Microsoft Intune 的角色型存取控制 (RBAC)](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)。
+Microsoft 365 系統管理中心可讓您管理某些 Microsoft Intune 角色。 不過，這些角色是 Intune 系統管理中心中可用角色的子集。 正在尋找 Microsoft Intune 的詳細角色描述嗎？ 請參閱 [使用 Microsoft Intune 的角色型存取控制 (RBAC)](/mem/intune/fundamentals/role-based-access-control)。
 
 如需在 Microsoft 365 系統管理中心指派角色的詳細資訊，請參閱[指派系統管理員角色](assign-admin-roles.md)。
 
@@ -58,7 +58,7 @@ Microsoft 365 系統管理中心可讓您管理某些 Microsoft Intune 角色。
 
 - 有限系統管理，所具權限等同於服務台系統管理員。
 
-在合作夥伴可以將這些角色指派給使用者之前，您必須先將該合作夥伴新增為您帳戶的委派系統管理員。 此程序是由獲授權的合作夥伴初始化。 合作夥伴會傳送電子郵件給您，詢問您是否想要授與其權限，以做為委派的系統管理員。如需指示，請參閱[授權或移除合作夥伴關係](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)。
+在合作夥伴可以將這些角色指派給使用者之前，您必須先將該合作夥伴新增為您帳戶的委派系統管理員。 此程序是由獲授權的合作夥伴初始化。 合作夥伴會傳送電子郵件給您，詢問您是否想要授與其權限，以做為委派的系統管理員。如需指示，請參閱[授權或移除合作夥伴關係](../misc/add-partner.md)。
   
 ## <a name="related-articles"></a>相關文章
 

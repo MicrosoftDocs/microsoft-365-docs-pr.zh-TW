@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用 Windows PowerShell 為使用者設定強式密碼需求。
-ms.openlocfilehash: f9a0b76d024cc18552657144e4ccf8de8a72f0d9
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: e2300e3c94de53cd04d0c1726538fdb8a86a1ccf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655732"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903533"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>關閉使用者的強式密碼需求
 
@@ -40,7 +40,7 @@ ms.locfileid: "48655732"
 
 ## <a name="set-strong-passwords"></a>設定強式密碼
 
-1. [使用 PowerShell 連接至 Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+1. [使用 PowerShell 連接至 Microsoft 365](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 2. 使用 PowerShell，您可以使用下列命令，為所有使用者關閉強式密碼需求：
 
@@ -58,8 +58,8 @@ ms.locfileid: "48655732"
 
 ## <a name="related-content"></a>相關內容
 
-[如何使用 PowerShell 連接至 Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+[如何使用 PowerShell 連接至 Microsoft 365](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-[PowerShell Get-msoluser 命令的詳細資訊](https://docs.microsoft.com/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
+[PowerShell Get-msoluser 命令的詳細資訊](/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
 
-[密碼原則的詳細資訊](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)
+[密碼原則的詳細資訊](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)

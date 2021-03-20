@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中查看、建立、修改和刪除輸出垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 748b274903590c5e28f34ce2fb4e65292d382cd2
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: aec3149a4a91e011c6d6d206d9fc10f36a3d6588
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717619"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903901"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -70,18 +70,18 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定] 頁面，請使用 <https://protection.office.com/antispam>。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已在 **Exchange Online** 中獲派權限，才能執行此文章中的程序：
   - 若要新增、修改和刪除輸出垃圾郵件原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要唯讀的輸出垃圾郵件原則的存取權，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱 [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱 [Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo)。
 
   **附註**：
 
   - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 如需輸出垃圾郵件原則的建議設定，請參閱 [EOP 呼出垃圾郵件篩選原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)。
 
@@ -141,7 +141,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
    - **每位使用者的收件者數目上限**
 
-     有效的值為0到10000。 預設值為0，這表示使用服務預設值。 如需詳細資訊，請參閱傳送 [限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)。
+     有效的值為0到10000。 預設值為0，這表示使用服務預設值。 如需詳細資訊，請參閱傳送 [限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)。
 
      - **外部每小時限制**：每小時的外部收件者數目上限。
 
@@ -171,7 +171,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
    >
    > - 這些設定只適用于雲端架構信箱。
    >
-   > - 停用自動轉寄功能時，收件者會收到未傳遞回報 (也稱為 NDR 或退回郵件) 如果外部寄件者將電子郵件傳送至已就地進行轉接的信箱。 如果郵件是由內部寄件者傳送 **，且** 轉寄方法是 [信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) 轉寄 (又稱為 _SMTP 轉送_) ，則內部寄件者會收到 NDR。 如果因收件匣規則而發生轉接，內部寄件者不會收到 NDR。
+   > - 停用自動轉寄功能時，收件者會收到未傳遞回報 (也稱為 NDR 或退回郵件) 如果外部寄件者將電子郵件傳送至已就地進行轉接的信箱。 如果郵件是由內部寄件者傳送 **，且** 轉寄方法是 [信箱](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) 轉寄 (又稱為 _SMTP 轉送_) ，則內部寄件者會收到 NDR。 如果因收件匣規則而發生轉接，內部寄件者不會收到 NDR。
 
    可用值包括：
 
@@ -309,7 +309,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 此範例會建立名為 Contoso 主管的新輸出垃圾郵件篩選原則，並提供下列設定：
 
-- 收件者速率限制限制為預設值較小的值。 如需詳細資訊，請參閱 [在 Microsoft 365 選項](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)中傳送限制。
+- 收件者速率限制限制為預設值較小的值。 如需詳細資訊，請參閱 [在 Microsoft 365 選項](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)中傳送限制。
 
 - 達到其中一個限制之後，使用者就無法傳送郵件。
 
@@ -317,7 +317,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
 ```
 
-如需詳細的語法及參數資訊，請參閱 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱 [HostedOutboundSpamFilterPolicy](/powershell/module/exchange/new-hostedoutboundspamfilterpolicy)。
 
 #### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a>步驟2：使用 PowerShell 建立輸出垃圾郵件篩選規則
 
@@ -336,7 +336,7 @@ New-HostedOutboundSpamFilterRule -Name "<RuleName>" -HostedOutboundSpamFilterPol
 New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -FromMemberOf "Contoso Executives Group"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterrule)。
+如需詳細的語法及參數資訊，請參閱 [HostedOutboundSpamFilterRule](/powershell/module/exchange/new-hostedoutboundspamfilterrule)。
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a>使用 PowerShell 來查看輸出垃圾郵件篩選原則
 
@@ -358,7 +358,7 @@ Get-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" | Format-List [<Spec
 Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱 [Get-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/get-hostedoutboundspamfilterpolicy)。
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-rules"></a>使用 PowerShell 來查看輸出垃圾郵件篩選規則
 
@@ -396,7 +396,7 @@ Get-HostedOutboundSpamFilterRule -Identity "<RuleName>" | Format-List [<Specific
 Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-如需詳細的語法及參數資訊，請參閱 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterrule)。
+如需詳細的語法及參數資訊，請參閱 [HostedOutboundSpamFilterRule](/powershell/module/exchange/get-hostedoutboundspamfilterrule)。
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>使用 PowerShell 修改輸出垃圾郵件篩選原則
 
@@ -411,7 +411,7 @@ Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱 [Set-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/set-hostedoutboundspamfilterpolicy)。
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a>使用 PowerShell 修改輸出垃圾郵件篩選規則
 
@@ -425,7 +425,7 @@ Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterrule)。
+如需詳細的語法及參數資訊，請參閱 [Set-HostedOutboundSpamFilterRule](/powershell/module/exchange/set-hostedoutboundspamfilterrule)。
 
 ### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>使用 PowerShell 來啟用或停用輸出垃圾郵件篩選規則
 
@@ -449,7 +449,7 @@ Disable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedoutboundspamfilterrule) 和 [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedoutboundspamfilterrule)。
+如需詳細的語法及參數資訊，請參閱 [Enable-HostedOutboundSpamFilterRule](/powershell/module/exchange/enable-hostedoutboundspamfilterrule) 和 [Disable-HostedOutboundSpamFilterRule](/powershell/module/exchange/disable-hostedoutboundspamfilterrule)。
 
 ### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>使用 PowerShell 設定輸出垃圾郵件篩選規則的優先順序
 
@@ -489,7 +489,7 @@ Remove-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>"
 Remove-HostedOutboundSpamFilterPolicy -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱 [Remove-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/remove-hostedoutboundspamfilterpolicy)。
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-rules"></a>使用 PowerShell 移除輸出垃圾郵件篩選規則
 
@@ -507,7 +507,7 @@ Remove-HostedOutboundSpamFilterRule -Identity "<PolicyName>"
 Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterrule)。
+如需詳細的語法及參數資訊，請參閱 [Remove-HostedOutboundSpamFilterRule](/powershell/module/exchange/remove-hostedoutboundspamfilterrule)。
 
 ## <a name="for-more-information"></a>相關資訊
 

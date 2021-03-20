@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7db9b9762830384370a4bedf220d7a52112ab1ea
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 43e341111ad1cb9b64ac257903d0e79bf24df5bd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727208"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903879"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>整合的 Microsoft 365 安全性中心概述
 
@@ -34,18 +34,18 @@ ms.locfileid: "50727208"
 
 適用於：
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](./microsoft-threat-protection.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [適用於 Office 365 的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [適用於 Office 365 的 Microsoft Defender](../office-365-security/office-365-atp.md)
 
-> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) ，或 [在實際執行中執行您的試驗專案](./mtp-pilot.md?ocid=cx-evalpilot)。
 
 改良的 **Microsoft 365 security center** ([https://security.microsoft.com](https://security.microsoft.com)) 會將保護、偵測、調查和回應，加入中央入口網站中的 *電子郵件*、共同作業、身分 *識別* 及 *裝置* 威脅。
 
 Microsoft 365 的安全性中心會將現有 Microsoft 安全性入口網站的功能，例如 Microsoft Defender 安全性中心和 Office 365 安全性 & 合規性中心。 [安全性中心] 強調快速存取訊號、簡化版面配置，以及將相關資訊放在一起，以方便使用。 此中心包括：
 
-- **[Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)** Microsoft Defender for Office 365 可協助組織使用一組預防、偵測、調查和搜尋功能保護其企業，以保護電子郵件和 Office 365 資源。
-- **[Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** 會為組織中的裝置提供預防性保護、入侵後偵測、自動調查和回應。
+- **[Microsoft Defender For Office 365](../office-365-security/office-365-atp.md)** Microsoft Defender for Office 365 可協助組織使用一組預防、偵測、調查和搜尋功能保護其企業，以保護電子郵件和 Office 365 資源。
+- **[Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** 會為組織中的裝置提供預防性保護、入侵後偵測、自動調查和回應。
 - **[Microsoft 365 Defender](microsoft-threat-protection.md)** 是 Microsoft 的 *延伸偵測和回應* (XDR) 解決方案的一部分，利用 microsoft 365 安全性產品群組自動分析跨網域的威脅資料，並在單一儀表板上建立攻擊的圖片。
 
 如果您需要從 Office 365 Security & 合規性中心或 Microsoft Defender 安全中心變更之專案的相關資訊，請參閱：
@@ -103,13 +103,13 @@ Microsoft 365 的安全性中心強調 *unity、清晰度及共同目標* ，因
 
 ![& 角色] 頁面顯示端點角色的許可權 & 群組、角色和裝置群組。](../../media/converged-roles-5.png)
 
- 存取 Microsoft 365 的安全性中心是透過 Azure Active Directory 全域角色或使用自訂角色進行設定。 若為 Defender for Endpoint，請參閱 [將使用者存取指派給 Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access)。 若為 Office 365 的 Defender，請參閱 [microsoft 365 規範中心和 microsoft 365 security center 中的許可權](../office-365-security/permissions-microsoft-365-compliance-security.md)。
+ 存取 Microsoft 365 的安全性中心是透過 Azure Active Directory 全域角色或使用自訂角色進行設定。 若為 Defender for Endpoint，請參閱 [將使用者存取指派給 Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access)。 若為 Office 365 的 Defender，請參閱 [microsoft 365 規範中心和 microsoft 365 security center 中的許可權](../office-365-security/permissions-microsoft-365-compliance-security.md)。
 
 - 深入瞭解如何 [管理 Microsoft 365 Defender 的存取](mtp-permissions.md)
 - 深入瞭解如何在 Microsoft 365 的安全性中心[建立自訂角色](custom-roles.md)
 
 > [!NOTE]
-> Microsoft 365 security center 中的 microsoft Defender for Endpoint 可將存取權授與 [受管理的安全性服務提供者。 (MSSPs) ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) 在 [microsoft Defender security center 中授](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)與存取權的方式相同。
+> Microsoft 365 security center 中的 microsoft Defender for Endpoint 可將存取權授與 [受管理的安全性服務提供者。 (MSSPs) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) 在 [microsoft Defender security center 中授](./mssp-access.md)與存取權的方式相同。
 
 ### <a name="integrated-reports"></a>整合報告
 
@@ -123,10 +123,10 @@ Microsoft 365 的安全性中心強調 *unity、清晰度及共同目標* ，因
 
 這些卡片分為下列類別：
 
-- 身分 **識別-監視** 組織中的身分識別，並追蹤可疑或危險的行為。 [深入瞭解身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+- 身分 **識別-監視** 組織中的身分識別，並追蹤可疑或危險的行為。 [深入瞭解身分識別保護](/azure/active-directory/identity-protection/overview-identity-protection)。
 - **Data** -Help 追蹤可能會導致未經授權的資料洩漏的使用者活動。
 - **裝置** -在您的裝置上獲得最新資訊，提醒、違規活動及其他威脅。
-- **App** -深入瞭解您的組織中使用雲端應用程式的方式。 [深入瞭解已探索 Cloud App Security 的應用程式](https://docs.microsoft.com/cloud-app-security/discovered-apps)。
+- **App** -深入瞭解您的組織中使用雲端應用程式的方式。 [深入瞭解已探索 Cloud App Security 的應用程式](/cloud-app-security/discovered-apps)。
 
 ## <a name="threat-analytics-with-better-data-coverage"></a>更好的資料覆蓋率進行威脅分析
 使用下列 Microsoft 365 Defender 威脅分析整合體驗，追蹤並回應新興威脅：
@@ -175,11 +175,11 @@ Microsoft 365 的安全性中心包含一個教學中心，該中樞會從 Micro
 
 - [管理事件及警示](manage-incidents.md)
 - [使用威脅分析追蹤並回應新興威脅](threat-analytics.md)
-- [重要訊息中心](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-- [尋找跨裝置、電子郵件、應用程式和身分識別的威脅](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
-- [自訂偵測規則](https://docs.microsoft.com/microsoft-365/security/mtp/custom-detection-rules)
-- [電子郵件 & 共同作業警示](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
-- [建立網路釣魚攻擊模擬](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training) ，並 [建立訓練您的小組的負載](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+- [重要訊息中心](./mtp-action-center.md)
+- [尋找跨裝置、電子郵件、應用程式和身分識別的威脅](./advanced-hunting-query-emails-devices.md)
+- [自訂偵測規則](./custom-detection-rules.md)
+- [電子郵件 & 共同作業警示](../../compliance/alert-policies.md#default-alert-policies)
+- [建立網路釣魚攻擊模擬](../office-365-security/attack-simulation-training.md) ，並 [建立訓練您的小組的負載](../office-365-security/attack-simulation-training-payloads.md)
  
 ### <a name="related-information"></a>相關資訊
 - [Microsoft 365 安全性中心](overview-security-center.md)

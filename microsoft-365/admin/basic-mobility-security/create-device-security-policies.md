@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本行動性和安全性來建立保護組織資訊的裝置原則。
-ms.openlocfilehash: 077f1e7e0d763aaecfc38fd4b57d9e8912900a3c
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: f31930f1a753259622520e50da8c255e7cd410e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877065"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904285"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本行動性和安全性中建立裝置安全性原則
 
@@ -35,12 +35,12 @@ ms.locfileid: "49877065"
 > 在您可以建立行動裝置原則之前，您必須啟動並設定基本行動性和安全性。 如需詳細資訊，請參閱基本行動性和安全性概述。
 
 - 深入瞭解基本行動性和安全性所支援的裝置、行動裝置應用程式及安全性設定。 請參閱 [基本行動性和安全性的功能](capabilities.md)。
-- 建立安全性群組，其中包含您想要部署原則的 Microsoft 365 使用者，以及您可能想要排除禁止存取 Microsoft 365 的使用者。 建議您在將新的原則部署至組織之前，先將原則部署至少量的使用者，以測試原則。 您可以建立並使用安全性群組，其中只包含您自己或可以為您測試原則的少數 Microsoft 365 使用者。 若要深入瞭解安全性群組，請參閱 [建立、編輯或刪除安全性群組](https://go.microsoft.com/fwlink/p/?LinkId=518555)。
+- 建立安全性群組，其中包含您想要部署原則的 Microsoft 365 使用者，以及您可能想要排除禁止存取 Microsoft 365 的使用者。 建議您在將新的原則部署至組織之前，先將原則部署至少量的使用者，以測試原則。 您可以建立並使用安全性群組，其中只包含您自己或可以為您測試原則的少數 Microsoft 365 使用者。 若要深入瞭解安全性群組，請參閱 [建立、編輯或刪除安全性群組](../email/create-edit-or-delete-a-security-group.md)。
 - 若要在 Microsoft 365 中建立及部署基本行動及安全性原則，您必須是 Microsoft 365 全域管理員。如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)。
 - 在您部署原則之前，請讓您的組織知道以基本行動性和安全性登錄裝置的潛在影響。 根據您設定原則的方式，可以封鎖不相容的裝置以存取 Microsoft 365 和資料，包括已註冊裝置上已安裝的應用程式、相片和個人資訊，以及可刪除的資料。
 
 >[!NOTE]
->在 Microsoft 365 商務標準的基本行動及安全性中建立的原則和存取規則會覆寫 Exchange 系統管理中心建立的行動裝置信箱原則和裝置存取規則 ActiveSync。 在 Microsoft 365 商務標準的基本行動及安全性中註冊裝置後，會忽略任何 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則套用至裝置。 若要深入瞭解 Exchange ActiveSync，請參閱 exchange [Online 中的 exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=524380)。
+>在 Microsoft 365 商務標準的基本行動及安全性中建立的原則和存取規則會覆寫 Exchange 系統管理中心建立的行動裝置信箱原則和裝置存取規則 ActiveSync。 在 Microsoft 365 商務標準的基本行動及安全性中註冊裝置後，會忽略任何 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則套用至裝置。 若要深入瞭解 Exchange ActiveSync，請參閱 exchange [Online 中的 exchange ActiveSync](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)。
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>步驟1：建立裝置原則並部署至測試群組
 
@@ -54,7 +54,7 @@ ms.locfileid: "49877065"
 
 3. 在 [ **原則設定** ] 頁面上，指定您要套用至組織中行動裝置的需求。
 
-4. **需要管理電子郵件設定檔**：啟用時，未使用基本行動和安全性管理的電子郵件設定檔的裝置會被視為不相容。 裝置沒有正確的目標時，或使用者已手動在裝置上設定電子郵件帳戶時，無法使用受管理的電子郵件設定檔。 當您保持 **未啟用狀態** (預設) 時，此設定不會針對相容性或非規範評估。 如需選取此選項時，使用者如何取得相容性的指示，請參閱 [找到現有的電子郵件帳戶](https://docs.microsoft.com/intune-user-help/existing-company-email-account-found)。
+4. **需要管理電子郵件設定檔**：啟用時，未使用基本行動和安全性管理的電子郵件設定檔的裝置會被視為不相容。 裝置沒有正確的目標時，或使用者已手動在裝置上設定電子郵件帳戶時，無法使用受管理的電子郵件設定檔。 當您保持 **未啟用狀態** (預設) 時，此設定不會針對相容性或非規範評估。 如需選取此選項時，使用者如何取得相容性的指示，請參閱 [找到現有的電子郵件帳戶](/intune-user-help/existing-company-email-account-found)。
 
 5. 在 [ **您要立即套用此原則？** ] 頁面上，選擇您要套用此原則的群組。
 

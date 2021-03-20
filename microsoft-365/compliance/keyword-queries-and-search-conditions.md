@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解您可以使用 Microsoft 365 中的搜尋和 eDiscovery 工具進行搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: d5b558df15cde6be6f87663dcb999efc6ec66f7e
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: e3282cd5b8bcc493e7c423db72c086f953d114ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604029"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903581"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>內容搜尋和 eDiscovery 的關鍵字查詢和搜尋條件
 
@@ -42,7 +42,7 @@ ms.locfileid: "50604029"
 如需如何建立內容搜尋的逐步指示，請參閱 [內容搜尋](content-search.md)。
 
 > [!NOTE]
-> Microsoft 365 規範中心的內容搜尋，以及安全性 & 合規性中心內的對應 **\* new-compliancesearch** Cmdlet PowerShell 使用關鍵字查詢語言 (KQL) 。 如需詳細資訊，請參閱 [關鍵字查詢語言語法參考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
+> Microsoft 365 規範中心的內容搜尋，以及安全性 & 合規性中心內的對應 **\* new-compliancesearch** Cmdlet PowerShell 使用關鍵字查詢語言 (KQL) 。 如需詳細資訊，請參閱 [關鍵字查詢語言語法參考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。 
   
 ## <a name="searchable-email-properties"></a>可搜尋的電子郵件屬性
 
@@ -91,7 +91,7 @@ ms.locfileid: "50604029"
 
 下表列出商務屬性的一些 SharePoint 和 OneDrive，可使用安全性 & 規範中心的內容搜尋功能，或使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** 指令程式來搜尋。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 
   
-如需可搜尋的 SharePoint 屬性完整清單，請參閱 [SharePoint 中的編目和 managed 屬性的概述](https://go.microsoft.com/fwlink/p/?LinkId=331599)。 您可以在可 **查詢** 的資料行中，以 [**是]** 標示的屬性進行搜尋。 
+如需可搜尋的 SharePoint 屬性完整清單，請參閱 [SharePoint 中的編目和 managed 屬性的概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 您可以在可 **查詢** 的資料行中，以 [**是]** 標示的屬性進行搜尋。 
   
 | 屬性	 | 屬性描述 | 範例 | 範例所傳回的搜尋結果 |
 |:-----|:-----|:-----|:-----|
@@ -161,7 +161,7 @@ ms.locfileid: "50604029"
 
   然後，您可以在搜尋屬性中使用識別碼 `SensitiveType` ，傳回含有自訂敏感資料類型的檔; 例如， `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
   
-- 您無法使用敏感資訊類型和 `SensitiveType` 搜尋屬性來搜尋位於 Exchange Online 信箱中的機密資料。 這包括1:1 聊天訊息、1： N 群組聊天訊息，以及 Microsoft 小組中的小組管道交談，因為所有內容都儲存在信箱中。 不過，您可以使用資料遺失防護 (DLP) 原則，以保護傳輸中的敏感電子郵件資料。 如需詳細資訊，請參閱 [資料遺失防護原則](data-loss-prevention-policies.md) 及 [搜尋及尋找個人資料](search-for-and-find-personal-data.md)的概述。
+- 您無法使用敏感資訊類型和 `SensitiveType` 搜尋屬性來搜尋位於 Exchange Online 信箱中的機密資料。 這包括1:1 聊天訊息、1： N 群組聊天訊息，以及 Microsoft 小組中的小組管道交談，因為所有內容都儲存在信箱中。 不過，您可以使用資料遺失防護 (DLP) 原則，以保護傳輸中的敏感電子郵件資料。 如需詳細資訊，請參閱 [資料遺失防護原則](data-loss-prevention-policies.md) 及 [搜尋及尋找個人資料](/compliance/regulatory/gdpr)的概述。
   
 ## <a name="search-operators"></a>搜尋運算子
 
@@ -227,7 +227,7 @@ ms.locfileid: "50604029"
 |:-----|:-----|
 |郵件類型| 要搜尋的郵件類型。 此屬性與 Kind 電子郵件屬性相同。 可能的值：  <br/><br/>  接觸  <br/>  文檔  <br/>  電子郵件  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams  <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|
 |參與者|電子郵件訊息中的所有 [人員] 欄位。 這些欄位是從、To、Cc 和 Bcc。|
-|類型|電子郵件專案的郵件類別屬性。 這是 ItemClass 電子郵件屬性的相同屬性。 也是多值的條件。 因此，若要選取多個郵件類別，請按住 **CTRL** 鍵，然後在下拉式清單中，按一下您要新增至條件的兩個或多個郵件類別。 您在清單中選取的每個郵件類別將會在對應的搜尋查詢中以 **OR** 運算子邏輯連接。  <br/> 如需 Exchange 所使用的郵件 (類別和其對應的郵件類別識別碼) 清單，而您可以在 **郵件類別** 清單中選取，請參閱 [專案類型和郵件類別](https://go.microsoft.com/fwlink/?linkid=848143)。|
+|類型|電子郵件專案的郵件類別屬性。 這是 ItemClass 電子郵件屬性的相同屬性。 也是多值的條件。 因此，若要選取多個郵件類別，請按住 **CTRL** 鍵，然後在下拉式清單中，按一下您要新增至條件的兩個或多個郵件類別。 您在清單中選取的每個郵件類別將會在對應的搜尋查詢中以 **OR** 運算子邏輯連接。  <br/> 如需 Exchange 所使用的郵件 (類別和其對應的郵件類別識別碼) 清單，而您可以在 **郵件類別** 清單中選取，請參閱 [專案類型和郵件類別](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)。|
 |Received|收件者接收到電子郵件的日期。 此屬性與接收的電子郵件屬性相同。|
 |收件者|電子郵件訊息中的所有收件者欄位。 這些欄位是 To、Cc 和 Bcc。|
 |寄件者|電子郵件的寄件者。|

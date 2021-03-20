@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用合規性管理員快速入門手冊可協助您深入瞭解、取得設定，以及使用合規性管理員。
-ms.openlocfilehash: c5159e1e6faa293ba3bd49d82bb06898ec9e0bdd
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: bb40fe0ace2f4b751e24d77f46dc1fc509eb42f4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698426"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906025"
 ---
 # <a name="compliance-manager-quickstart"></a>合規性管理員快速入門
 
 **本文內容：** 使用此快速入門手冊可協助您使用 Microsoft 合規性管理員來管理您的組織與法規、原則及標準的相容性。
 
-合規性管理員會在您第一次造訪時，提供智慧及可操作的資料。 合規性管理員也具有可在您準備時擴充相容性的高級功能。 可用評估取決於您的授權合約; [深入瞭解](https://go.microsoft.com/fwlink/?linkid=2132371)。
+合規性管理員會在您第一次造訪時，提供智慧及可操作的資料。 合規性管理員也具有可在您準備時擴充相容性的高級功能。 可用評估取決於您的授權合約; [深入瞭解](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 不論是第一次使用合規性管理員還是準備好使用一些高級功能，本指南都可以支援您的旅程。
 

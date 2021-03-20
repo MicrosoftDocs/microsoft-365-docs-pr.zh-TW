@@ -9,20 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6cd2c993e0ca9d4c456a2914b866b65b59799afa
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: a26500c1671afffc7b70d509a4242914631b937c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233903"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904837"
 ---
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
-Microsoft 受管理的桌上型電腦使用 [業務 OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise) 作為所有 Microsoft 受管理桌面裝置的雲端儲存服務，以確保裝置盡可能具有無狀態。 不管使用者登入的裝置為何，使用者都能找到他們的檔案。 例如，如果您將 Microsoft 受管理的桌面裝置更換為新的桌面裝置，則檔案會自動同步處理至新的裝置。
+Microsoft 受管理的桌上型電腦使用 [業務 OneDrive](/onedrive/plan-onedrive-enterprise) 作為所有 Microsoft 受管理桌面裝置的雲端儲存服務，以確保裝置盡可能具有無狀態。 不管使用者登入的裝置為何，使用者都能找到他們的檔案。 例如，如果您將 Microsoft 受管理的桌面裝置更換為新的桌面裝置，則檔案會自動同步處理至新的裝置。
 
 在 Microsoft 受管理的裝置上，預設會自動設定這些設定：
 
-- OneDrive 會以無訊息方式設定使用者帳戶，並自動登入 (，但沒有使用者互動) 至用來登入 Windows 的使用者帳戶。 如需詳細資訊，請參閱以 [無訊息方式設定使用者帳戶-OneDrive](https://docs.microsoft.com/onedrive/use-silent-account-configuration)
+- OneDrive 會以無訊息方式設定使用者帳戶，並自動登入 (，但沒有使用者互動) 至用來登入 Windows 的使用者帳戶。 如需詳細資訊，請參閱以 [無訊息方式設定使用者帳戶-OneDrive](/onedrive/use-silent-account-configuration)
 
 - 已啟用檔隨選功能，讓使用者可以在 OneDrive 存取其雲端儲存中的檔案，而不需要不必要地使用磁碟空間。 如需詳細資訊，請參閱 [Save disk space with OneDrive Files On Windows 10](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e)。
 
@@ -49,12 +49,12 @@ Microsoft 受管理的桌上型電腦使用 [業務 OneDrive](https://docs.micro
 
 ## <a name="onedrive-sync-restrictions"></a>OneDrive 同步處理限制
 
-如果您需要限制 OneDrive 同步處理，建議您透過 Azure Active Directory 條件式存取原則來控制存取。 如需詳細資訊，請參閱 [在 OneDrive 同步處理應用程式中啟用條件式存取支援](https://docs.microsoft.com/onedrive/enable-conditional-access)。
+如果您需要限制 OneDrive 同步處理，建議您透過 Azure Active Directory 條件式存取原則來控制存取。 如需詳細資訊，請參閱 [在 OneDrive 同步處理應用程式中啟用條件式存取支援](/onedrive/enable-conditional-access)。
 
 如果您的組織中不能使用 Azure AD 條件式存取原則，您的 IT 系統管理員應該遵循下列步驟：
 
-1. 如果您還沒有知道，請查詢您的租使用者識別碼（如 [ [尋找您的 Microsoft 365 租使用者識別碼](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)] 所述）。
-2. 登入 OneDrive 系統管理中心，然後在左窗格中選取 [ **同步** 處理]。 選取 [ **只允許在加入特定網域的電腦上進行同步** 處理] 核取方塊，然後將租使用者識別碼新增至網域清單。 如需詳細資訊，請參閱 [僅允許同步處理加入特定網域的電腦](https://docs.microsoft.com/onedrive/allow-syncing-only-on-specific-domains)。
+1. 如果您還沒有知道，請查詢您的租使用者識別碼（如 [ [尋找您的 Microsoft 365 租使用者識別碼](/onedrive/find-your-office-365-tenant-id)] 所述）。
+2. 登入 OneDrive 系統管理中心，然後在左窗格中選取 [ **同步** 處理]。 選取 [ **只允許在加入特定網域的電腦上進行同步** 處理] 核取方塊，然後將租使用者識別碼新增至網域清單。 如需詳細資訊，請參閱 [僅允許同步處理加入特定網域的電腦](/onedrive/allow-syncing-only-on-specific-domains)。
 
 > [!NOTE]
 > 此指南只適用于 Microsoft 受管理的電腦中的承租人。 其他使用中的設定不在本文中討論。

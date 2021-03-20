@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的 Azure AD 無縫單一登入。
-ms.openlocfilehash: f98f82de50feb2a9f92d1ecc4775c5307b314a72
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 7fcbc82cfb35c598358c8160dd06427c2a9c59a2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487597"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904861"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的 Azure AD 無縫單一登入
 
 *此測試實驗室指南可用於 enterprise 和 Office 365 企業測試環境的 Microsoft 365。*
 
-Azure AD 無縫單一 Sign-On (無縫 SSO) 會在使用者位於連接至其組織網路的電腦或裝置上時，自動登入使用者。Azure AD 無縫 SSO 可讓使用者輕鬆存取雲端架構應用程式，而不需要任何其他內部部署元件。
+Azure AD 無縫單一 Sign-On (無縫 SSO) 會在使用者位於連接至其組織網路的電腦或裝置上時，自動登入使用者。 Azure AD 無縫 SSO 可讓使用者輕鬆存取雲端架構應用程式，而不需要任何其他內部部署元件。
 
 本文說明如何針對 Azure AD 無縫 SSO 設定 Microsoft 365 測試環境。
 
@@ -66,7 +66,7 @@ Azure AD 無縫單一 Sign-On (無縫 SSO) 會在使用者位於連接至其組�
 
 2. 從 APP1 桌面，執行 Azure AD Connect。
 
-3. 在 [ **歡迎] 頁面**上，選取 [ **設定**]。
+3. 在 [ **歡迎] 頁面** 上，選取 [ **設定**]。
 
 4. 在 [ **其他** 工作] 頁面上，選取 [ **變更使用者登入**]，然後選取 **[下一步]**。
 
@@ -90,17 +90,17 @@ Azure AD 無縫單一 Sign-On (無縫 SSO) 會在使用者位於連接至其組�
  
 2. 在 [ **網際網路選項**] 中，選取 [ **安全性** ] 索引標籤。
 
-3. 選取 [ **本機內部**網路]，然後選取 [ **網站**]。
+3. 選取 [ **本機內部** 網路]，然後選取 [ **網站**]。
 
-4. 在 [ **本機內部**網路] 中，選取 [ **高級**]。
+4. 在 [ **本機內部** 網路] 中，選取 [ **高級**]。
 
-5. 在 **[將此網站新增至] 區域**中，輸入**HTTPs：<span>//</span>autologon.microsoftazuread-sso.com**，然後選取 [**新增**  >  **關閉**  >  **]**[確定  >  **]**。
+5. 在 **[將此網站新增至] 區域** 中，輸入 **HTTPs：<span>//</span>autologon.microsoftazuread-sso.com**，然後選取 [**新增**  >  **關閉**  >  **]**[確定  >  **]**。
 
 6. 登出然後再次登入，這次指定不同的帳戶。
 
 7. 當系統提示您登入時，請指定 <strong>user1@testlab。</strong>\<*your public domain*> 名稱，然後選取 **[下一步]**。 您應該成功以 User1 登入，且系統不會提示您輸入密碼。 這可證明 Azure AD 無縫 SSO 正在執行。
 
-請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是 Azure AD 的全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。
+請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是 Azure AD 的全域管理員。 因此，您不會看到 [管理員] 圖示選項。
 
 以下是您產生的組態：
 
@@ -123,4 +123,4 @@ Azure AD 無縫單一 Sign-On (無縫 SSO) 會在使用者位於連接至其組�
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

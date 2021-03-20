@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何將舊版檔案轉換成 Office 365 (OME) 組織的郵件加密。
-ms.openlocfilehash: bf64d7991a843d2fd3d4f5f927eaa5c4bfef921c
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.openlocfilehash: 0b9c32b8b30753b02a5a0cdaa40b644ca89cfba3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49738030"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905915"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 郵件加密的舊版資訊
 
@@ -71,7 +71,7 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [系統 **管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](/exchange/exchange-admin-center)。
 
 5. 在 [ **名稱**] 中，輸入規則的名稱，例如 [加密 DrToniRamos@hotmail.com 的郵件]。
 
@@ -97,7 +97,7 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 建立郵件流程規則，以加密不含新 OME 功能的電子郵件
 
-1. 連線至 Exchange Online PowerShell。 如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)＞。
+1. 連線至 Exchange Online PowerShell。 如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)＞。
 
 2. 使用 **New-TransportRule** Cmdlet 來建立規則，並將 _ApplyOME_ 參數設為 `$true` 。
 
@@ -113,7 +113,7 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
    - _SentTo_ 參數會指定收件者 (以名稱、電子郵件地址、辨識名稱等等所識別的收件者 ) 。 在此範例中，收件者會透過電子郵件地址 "DrToniRamos@hotmail.com" 加以識別。
    - _SentToScope_ 參數會指定郵件收件者的位置。 在此範例中，收件者的信箱是在 hotmail 中，而且不是組織的一部分，因此 `NotInOrganization` 會使用此值。
 
-   如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)。
+   如需詳細的語法和參數資訊，請參閱 [New-TransportRule](/powershell/module/exchange/New-TransportRule)。
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>從加密的電子郵件回復中移除加密，但不含新的 OME 功能
 
@@ -127,7 +127,7 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [系統 **管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](/exchange/exchange-admin-center)。
 
 5. 在 [ **名稱**] 中，輸入規則的名稱，例如 [移除來自傳入郵件的加密]。
 
@@ -135,11 +135,11 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 7. 在 **執行下列** 動作中，選取 **[修改郵件安全性** \> **移除舊版 OME**]。
 
-8. 選取 [儲存 **]**。
+8. 選取 [儲存]。
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 建立規則，以從加密的電子郵件回復中移除加密，但不使用新的 OME 功能
 
-1. 連線至 Exchange Online PowerShell。 如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)＞。
+1. 連線至 Exchange Online PowerShell。 如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)＞。
 
 2. 使用 **New-TransportRule** Cmdlet 來建立規則，並將 _RemoveOME_ 參數設為 `$true` 。
 
@@ -156,7 +156,7 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
      - 收件者是組織中的信箱、郵件使用者、群組或擁有郵件功能的公用資料夾。
      - 收件者的電子郵件地址位於已設定為授權網域或組織內部轉送網域的公認網域中， _且_ 透過已驗證的連線來傳送或接收郵件。
 
-如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)。
+如需詳細的語法和參數資訊，請參閱 [New-TransportRule](/powershell/module/exchange/New-TransportRule)。
 
 ## <a name="sending-viewing-and-replying-to-messages-encrypted-without-the-new-capabilities"></a>傳送、查看和回復未用新功能加密的郵件
 
@@ -185,9 +185,9 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
   
 **自訂加密電子郵件和加密入口網站與貴組織的品牌**
   
-1. 使用遠端 PowerShell 連接至 Exchange Online （如 [使用遠端 PowerShell 連線到 Exchange online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中所述）。
+1. 使用遠端 PowerShell 連接至 Exchange Online （如 [使用遠端 PowerShell 連線到 Exchange online](/powershell/exchange/connect-to-exchange-online-powershell)中所述）。
 
-2. 依照如下所述使用 Set-OMEConfiguration Cmdlet： [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 或使用下表取得指導方針。
+2. 依照如下所述使用 Set-OMEConfiguration Cmdlet： [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) 或使用下表取得指導方針。
 
    **加密自訂選項**
 
@@ -200,9 +200,9 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 **從加密電子郵件和加密入口網站移除品牌自訂**
   
-1. 使用遠端 PowerShell 連接至 Exchange Online （如 [使用遠端 PowerShell 連線到 Exchange online](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)中所述）。
+1. 使用遠端 PowerShell 連接至 Exchange Online （如 [使用遠端 PowerShell 連線到 Exchange online](/powershell/exchange/connect-to-exchange-online-powershell)中所述）。
 
-2. 使用如下所述的 Set-OMEConfiguration Cmdlet： [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 若要從 DisclaimerText、EmailText 及 PortalText 值中移除組織的署名自訂，請將值設為空字串  `""` 。 針對所有影像值，例如 [標誌]，將值設為  `"$null"` 。
+2. 使用如下所述的 Set-OMEConfiguration Cmdlet： [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration)。 若要從 DisclaimerText、EmailText 及 PortalText 值中移除組織的署名自訂，請將值設為空字串  `""` 。 針對所有影像值，例如 [標誌]，將值設為  `"$null"` 。
 
    **加密自訂選項**
 
@@ -221,9 +221,9 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 | 服務詳細資料 | 描述 |
 |:-----|:-----|
 |用戶端裝置需求  <br/> |您可以在任何用戶端裝置上查看已加密的郵件，只要 HTML 附件可以在支援表單文章的新式瀏覽器中開啟。  <br/> |
-| (FIPS) 相容性的加密演算法和聯邦資訊處理標準  <br/> |Office 365 郵件加密使用的加密金鑰與 Windows Azure Information Rights Management (IRM) ，且支援 SHA-1 系統) 的 RSA 和 256 bits 機碼的加密模式 2 (2K 金鑰。 如需基礎 IRM 加密模式的詳細資訊，請參閱 [AD RMS 密碼編譯模式](https://technet.microsoft.com/library/hh867439%28WS.10%29.aspx)。  <br/> |
-|支援的郵件類型  <br/> |只有具有「IPM」郵件類別識別碼的專案才支援 Office 365 郵件加密 **。附注**。 如需詳細資訊，請參閱 [專案類型和郵件類別](https://msdn.microsoft.com/library/office/ff861573.aspx)。  <br/> |
-|郵件大小限制  <br/> |Office 365 郵件加密可將郵件加密為 25 mb。 如需郵件大小限制的詳細資訊，請參閱 [Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx)。  <br/> |
+| (FIPS) 相容性的加密演算法和聯邦資訊處理標準  <br/> |Office 365 郵件加密使用的加密金鑰與 Windows Azure Information Rights Management (IRM) ，且支援 SHA-1 系統) 的 RSA 和 256 bits 機碼的加密模式 2 (2K 金鑰。 如需基礎 IRM 加密模式的詳細資訊，請參閱 [AD RMS 密碼編譯模式](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))。  <br/> |
+|支援的郵件類型  <br/> |只有具有「IPM」郵件類別識別碼的專案才支援 Office 365 郵件加密 **。附注**。 如需詳細資訊，請參閱 [專案類型和郵件類別](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)。  <br/> |
+|郵件大小限制  <br/> |Office 365 郵件加密可將郵件加密為 25 mb。 如需郵件大小限制的詳細資訊，請參閱 [Exchange Online 限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)。  <br/> |
 |Exchange Online 電子郵件保留原則  <br/> |Exchange Online 不會儲存加密的郵件。  <br/> |
 |Office 365 郵件加密的語言支援  <br/> | Office 365 郵件加密支援 Microsoft 365 語言，如下所示：  <br/>  傳入的電子郵件和附加的 HTML 檔案會根據寄件者的語言設定進行當地語系化。  <br/>  根據收件者的瀏覽器設定來當地語系化查看入口網站。  <br/>  加密郵件的本文 (內容) 並未當地語系化。  <br/> |
 |OME 入口網站和 OME Viewer 應用程式的隱私權資訊  <br/> |[Office 365 郵件加密入口網站隱私權聲明](https://privacy.microsoft.com/privacystatement)提供 Microsoft 對您私人資訊的處理方式及不會有什麼作用的詳細資訊。  <br/> |
@@ -285,7 +285,7 @@ Office 365 郵件加密使用 Rights Management Services (RMS) 作為其加密�
 
 - 如果您使用 Active Directory (AD) RMS 來取得金鑰，則會使用密碼編譯模式 1 或密碼編譯模式 2。使用的方法取決於內部部署 AD RMS 部署。密碼編譯模式 1 是原始的 AD RMS 密碼編譯實作。它支援使用 RSA 1024 進行簽章和加密，也支援使用 SHA-1 進行簽章。這個模式會繼續受到 RMS 所有目前的版本支援。
 
-如需詳細資訊，請參閱 [AD RMS 密碼編譯模式](https://go.microsoft.com/fwlink/p/?LinkId=398616)。
+如需詳細資訊，請參閱 [AD RMS 密碼編譯模式](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))。
   
 **Q。為何有些加密郵件會告訴他們來自** Office365@messaging.microsoft.com？
   
@@ -293,11 +293,11 @@ Office 365 郵件加密使用 Rights Management Services (RMS) 作為其加密�
   
  **問。我是 Exchange Hosted Encryption (EHE) 訂閱者。在哪裡可以深入瞭解 Office 365 郵件加密的升級？**
   
-所有 EHE 客戶都已升級至 Office 365 郵件加密。 如需詳細資訊，請造訪 [Exchange Hosted Encryption Upgrade Center](https://go.microsoft.com/fwlink/p/?LinkID=511077)。
+所有 EHE 客戶都已升級至 Office 365 郵件加密。 如需詳細資訊，請造訪 [Exchange Hosted Encryption Upgrade Center](../security/office-365-security/exchange-online-protection-overview.md)。
   
  **問。我需要開啟組織防火牆中的任何 URLs、IP 位址或埠，以支援 Office 365 郵件加密？**
   
-是。 您必須將 Exchange Online URLs 新增至您組織的允許清單，才能對 Office 365 郵件加密所加密的郵件啟用驗證。 如需 Exchange Online URLs 的清單，請參閱 [Microsoft 365 URLs 和 IP 位址範圍](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
+是。 您必須將 Exchange Online URLs 新增至您組織的允許清單，才能對 Office 365 郵件加密所加密的郵件啟用驗證。 如需 Exchange Online URLs 的清單，請參閱 [Microsoft 365 URLs 和 IP 位址範圍](../enterprise/urls-and-ip-address-ranges.md)。
   
  **問。我可以傳送 Microsoft 365 加密郵件的收件者人數為何？**
   

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 在本文中，瞭解哪些平臺、用戶端和 PowerShell 模組支援 Microsoft 365 的條件式存取。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 969dd9d712fe124458273144b3e7974e03ade9e0
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: c7b0b65ea25091aad01fd8741f9925f2b545e9c4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097243"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904959"
 ---
 # <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 用戶端應用程式支援：條件式存取
 
@@ -34,50 +34,10 @@ ms.locfileid: "50097243"
 ## <a name="supported-clients--platforms"></a>支援的用戶端 & 平臺
 
 下列用戶端和平臺的最新版本支援條件式存取。 如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](/microsoft-365/microsoft-365-and-office-resources)。
-
 <br>
 <br>
 
-| 用戶端 | Android | iOS | Mac| Windows 10 <br> 新式應用程式| Windows 10 <br> 桌上型電腦 |
-|:---|:---:|:---:|:---:|:---:|:---:|
-| Azure Active Directory 系統管理員 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Access | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Azure 系統管理員 | 不適用 | 不適用 | 不適用 | 不適用 | 不適用 |
-| 公司入口網站 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A |
-| Cortana | 計畫 | 計畫 | 不適用 | ![支援](../media/check-mark.png) | N/A |
-| Delve | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| 銳利 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Excel | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| Exchange Online 系統管理員 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| 表單 | 不適用 | 不適用 | 不適用 | 不適用 | 不適用 |
-| Office 365 系統管理 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |  |
-| Kaizala | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Office Lens| ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) | N/A |
-| Office mobile | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Office 入口網站 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) | N/A |
-| OneDrive | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| OneNote | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| Outlook | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| Planner | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Power Apps | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | 計畫 | 不適用 |
-| 自動功耗 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Power BI | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| PowerPoint | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| Project | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Publisher | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| 商務用 Skype | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 ||
-| SharePoint | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| 線上系統管理員 SharePoint | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| 粘滯音符 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) | N/A |
-| Stream | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
-| Sway | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) | N/A |
-| Teams | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) |
-| To Do | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A |
-| Visio | 不適用 | ![支援](../media/check-mark.png) | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Whiteboard | 計畫 | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) | N/A |
-| Word | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
-| 工作場所分析 | 不適用 | 不適用 | 不適用 | 不適用 | 不適用 |
-| Yammer | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) |
+[!INCLUDE [Conditional access services support table](../includes/microsoft-365-client-support-conditional-access-include.md)]
 
 ## <a name="supported-powershell-modules"></a>支援的 PowerShell 模組
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 深入瞭解 Microsoft 365 規範中心的內容搜尋功能限制，例如同時進行的搜尋數目上限。 這些搜尋限制也適用于與核心 eDiscovery 案例相關聯的搜尋。
-ms.openlocfilehash: 7212175dece6956ac825cef273b06603230736ee
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: fd77b12fe8cfc8a53876a3e95ba8f48434ae77b8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717604"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905875"
 ---
 # <a name="limits-for-content-search"></a>內容搜尋限制 
 在 Microsoft 365 規範中心的內容搜尋工具中，各項限制都適用。 這包括「 **內容搜尋** 」頁面上的搜尋執行，以及與 **核心 ediscovery** 頁面上的 eDiscovery 案例相關聯的搜尋。 這些限制可協助維護為組織提供的服務健康情況和品質。 在 Exchange Online 進行搜尋時，也有與電子郵件訊息的索引相關的限制。 您無法修改內容搜尋或電子郵件索引的限制，但您應該知道這些限制，這樣就能在規劃、執行及疑難排解內容搜尋時考慮這些限制。
@@ -99,7 +99,7 @@ Microsoft 會收集所有組織執行之搜尋的效能資訊。 雖然搜尋查
 |Body 中的唯一標記上限  <br/> |1 百萬  <br/> |如先前所述，token 是從內容提取文字、移除標點符號和空格，然後將其分割成) 儲存在索引中的 (稱為 token 的字。 例如，片語  `"cat, mouse, bird, dog, dog"` 包含5個權杖。 但只有4個是唯一的標記。 每封電子郵件都有1000000個唯一的標記限制，這有助於防止索引因過大而無法使用隨機標記。  <br/> |
 |||
   
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 有其他與搜尋內容的不同層面相關的限制，例如內容索引。 如需這些限制的相關資訊，請參閱下列主題：
 
@@ -107,7 +107,7 @@ Microsoft 會收集所有組織執行之搜尋的效能資訊。 雖然搜尋查
 
 - [調查 eDiscovery 中已部分索引的專案](investigating-partially-indexed-items-in-ediscovery.md)
 
-- [SharePoint Online 的搜尋限制](https://docs.microsoft.com/sharepoint/search-limits)
+- [SharePoint Online 的搜尋限制](/sharepoint/search-limits)
 
 如需內容搜尋的相關資訊，請參閱：
   

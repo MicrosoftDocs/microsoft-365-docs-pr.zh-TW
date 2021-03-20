@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a12b2dcf2de472f43e782e2064944ec774bdb9e1
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 1149d8fa614854bdbbd2c154f0e92f6a9c28ce00
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727256"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904064"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>尋找跨裝置、電子郵件、應用程式和身分識別的威脅
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender 中的[高級搜尋](advanced-hunting-overview.md)可讓�
 ### <a name="obtain-user-accounts-from-email-addresses"></a>從電子郵件地址取得使用者帳戶
 在[涵蓋裝置和電子郵件的表格](advanced-hunting-schema-tables.md)建立查詢時，您可能需要取得寄件者或收件者電子郵件地址的使用者帳戶名稱。 您通常可以使用 *本機主機* 從電子郵件地址進行收件者或寄件者位址。
 
-在下方的程式碼片段中，我們使用 [tostring () ](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto 函數，先 `@` 從欄中的從收件者電子郵件地址開始解壓縮本機主機 `RecipientEmailAddress` 。
+在下方的程式碼片段中，我們使用 [tostring () ](/azure/data-explorer/kusto/query/tostringfunction) Kusto 函數，先 `@` 從欄中的從收件者電子郵件地址開始解壓縮本機主機 `RecipientEmailAddress` 。
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -86,7 +86,7 @@ Department, City, Country
 「 [高級搜尋架構](advanced-hunting-schema-tables.md) 」在各種表格中提供大量的裝置資訊。 例如， [DeviceInfo 表格](advanced-hunting-deviceinfo-table.md) 會根據定期匯總的事件資料，提供完整的裝置資訊。 此查詢會使用 `DeviceInfo` 表格來檢查是否有可能已遭破壞的使用者 (`<account-name>`) 已登入任何裝置，然後列出已在那些裝置上觸發的警示。
 
 >[!Tip]
-> 此查詢 `kind=inner` 會使用來指定 [內部聯接](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)，以避免重復資料刪除的左側值 `DeviceId` 。
+> 此查詢 `kind=inner` 會使用來指定 [內部聯接](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)，以避免重復資料刪除的左側值 `DeviceId` 。
 
 ```kusto
 DeviceInfo

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 瞭解如何在 Azure ExpressRoute 中使用 BGP 社區，以管理 Office 365 案例的 IP 首碼數目及所需的頻寬。
-ms.openlocfilehash: 3a1de8725ae967352723649e602d944ca6948310
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9cb6980c1d8cc120f99cac087602856aeacf1adf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688703"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905209"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>在 ExpressRoute for Office 365 案例中使用 BGP 社區
 
@@ -48,7 +48,7 @@ ms.locfileid: "46688703"
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
 |商務用 Skype\*  <br/> |12076:5030  <br/> |Microsoft 團隊服務 & 的商務用 Skype Online  <br/> |
 |其他 Office 365 服務\*  <br/> |12076:5100  <br/> |包含 Azure Active Directory (驗證及目錄同步處理案例) 以及 Office 365 入口網站服務  <br/> |
-|\* ExpressRoute 所包含的服務案例範圍已記錄在 [Office 365 端點](https://aka.ms/o365endpoints) 文章中。  <br/> \*\*未來可能會新增其他服務和 BGP 群組值。 [請參閱目前的 BGP 社區清單](https://azure.microsoft.com/documentation/articles/expressroute-routing/)。  <br/> |
+|\* ExpressRoute 所包含的服務案例範圍已記錄在 [Office 365 端點](./urls-and-ip-address-ranges.md) 文章中。  <br/> \*\*未來可能會新增其他服務和 BGP 群組值。 [請參閱目前的 BGP 社區清單](/azure/expressroute/expressroute-routing)。  <br/> |
 
 ## <a name="what-are-the-most-common-scenarios-for-using-bgp-communities"></a>使用 BGP 社區最常見的案例是什麼？
 
@@ -105,7 +105,7 @@ Woodgrove Bank 是許多 Microsoft 雲端服務（包括 Office 365）的客戶�
 
 - 除了使用 Microsoft 指派的 BGP 社區之外，客戶也可以選擇將自己的 BGP 團體指派給透過 Azure ExpressRoute 所學的 Office 365 IP 首碼，以影響內部路由。 常見的使用案例是針對透過每一種指派的 ExpressRoute 對等位置所獲知的所有路由指派位置，然後使用客戶網路中下游的資訊，將最短或最喜歡的網路路徑與 Microsoft 的網路進行協調。 使用客戶指派的 BGP 社區與 ExpressRoute for Office 365 案例是不在 Microsoft control 或 visibility 範圍範圍內。
 
-您可以使用以下簡短連結回來： [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365) 。
+您可以使用以下簡短連結回來： [https://aka.ms/bgpexpressroute365]() 。
   
 ## <a name="related-topics"></a>相關主題
 
@@ -127,7 +127,7 @@ Woodgrove Bank 是許多 Microsoft 雲端服務（包括 Office 365）的客戶�
   
 [實作 ExpressRoute for Office 365](implementing-expressroute.md)
   
-[支援 BGP 社區](https://azure.microsoft.com/documentation/articles/expressroute-routing/)
+[支援 BGP 社區](/azure/expressroute/expressroute-routing)
   
 [使用基準與效能歷程記錄進行 Office 365 效能調整](performance-tuning-using-baselines-and-history.md)
   

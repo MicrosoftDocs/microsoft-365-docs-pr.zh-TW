@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性可協助您保護和管理行動裝置。
-ms.openlocfilehash: 746131e90e207d7b888a3ddcaf4ff0656606a2c7
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 468f06edf16eb6ea00fd4d26c716bc145474dd25
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877113"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904273"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本行動與安全性的功能
 
@@ -77,7 +77,7 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="基本行動性和安全性存取控制":::
 
 > [!NOTE]
-> 在 Microsoft 365 商務標準的基本行動及安全性中建立的原則和存取規則，會覆寫 exchange 系統管理中心建立的 Exchange ActiveSync 行動裝置信箱原則和裝置存取規則。 在 Microsoft 365 商務標準的基本行動及安全性中註冊裝置後，任何已套用至裝置的 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則都會被忽略。 若要深入瞭解 Exchange ActiveSync，請參閱 exchange [Online 中的 exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=524380)。
+> 在 Microsoft 365 商務標準的基本行動及安全性中建立的原則和存取規則，會覆寫 exchange 系統管理中心建立的 Exchange ActiveSync 行動裝置信箱原則和裝置存取規則。 在 Microsoft 365 商務標準的基本行動及安全性中註冊裝置後，任何已套用至裝置的 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則都會被忽略。 若要深入瞭解 Exchange ActiveSync，請參閱 exchange [Online 中的 exchange ActiveSync](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)。
 
 ## <a name="policy-settings-for-mobile-devices"></a>行動裝置的原則設定
 
@@ -128,7 +128,7 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 
 ## <a name="managed-email-profile-option"></a>受管理的電子郵件設定檔選項 
 
-下列選項可以封鎖使用者在使用手動建立的電子郵件設定檔時存取其 Microsoft 365 電子郵件。 IOS 裝置上的使用者必須先刪除其手動建立的電子郵件設定檔，才能存取其電子郵件。 在刪除設定檔之後，系統會自動在裝置上建立新的設定檔。 如需使用者如何相容的相關指示，請參閱 [找到現有的電子郵件帳戶](https://docs.microsoft.com/intune-user-help/existing-company-email-account-found)。
+下列選項可以封鎖使用者在使用手動建立的電子郵件設定檔時存取其 Microsoft 365 電子郵件。 IOS 裝置上的使用者必須先刪除其手動建立的電子郵件設定檔，才能存取其電子郵件。 在刪除設定檔之後，系統會自動在裝置上建立新的設定檔。 如需使用者如何相容的相關指示，請參閱 [找到現有的電子郵件帳戶](/intune-user-help/existing-company-email-account-found)。
 
 |**設定名稱**|**iOS 7.1 和更新版本**|**Android 5 及更新版本**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -142,8 +142,8 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 |封鎖雲端備份 |是|否|否|
 |封鎖檔同步處理 |是|否|否|
 |封鎖照片同步處理  |是|否|否|
-|允許 Google 備份  |不適用|否|是|
-|允許 Google 帳戶自動同步處理  |不適用|否|是|
+|允許 Google 備份  |N/A|否|是|
+|允許 Google 帳戶自動同步處理  |N/A|否|是|
 
 ## <a name="system-settings"></a>系統設定
 
@@ -169,7 +169,7 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 
 ## <a name="additional-settings"></a>其他設定
 
-您可以使用安全性 & 合規性中心 PowerShell Cmdlet 來設定下列其他原則設定。 如需詳細資訊，請參閱 [安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell)。
+您可以使用安全性 & 合規性中心 PowerShell Cmdlet 來設定下列其他原則設定。 如需詳細資訊，請參閱 [安全性 & 規範中心 PowerShell](/powershell/exchange/scc-powershell)。
 
 |**設定名稱**|**iOS 7.1 和更新版本**|**Android 5 及更新版本**|
 |:-----|:-----|:-----|

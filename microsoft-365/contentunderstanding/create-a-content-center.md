@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何建立內容中心。
-ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 34ba45cd62214743e5a6784893e0f24e9815fdfb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515133"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905821"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中建立內容中心
 
@@ -35,12 +35,12 @@ ms.locfileid: "50515133"
 您可以在[安裝](set-up-content-understanding.md)時建立預設內容中心。 但 SharePoint 系統管理員也可以視需要選擇建立其他中心。 雖然就您想要彙總所有模型活動的環境來說，單一內容中心可能即已足夠，您可能想要有額外的中心，用於組織內的多個部門，而這對其模型可能有不同的要求和權限需求。
 
 > [!NOTE]
-> 在 [Microsoft 365 多地理位置環境](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)中，如果您在中央位置有單一預設內容中心，則只能提供該位置內模型活動的彙總。 您目前無法取得多地理位置環境中跨伺服器域界限的模型活動彙總。 
+> 在 [Microsoft 365 多地理位置環境](../enterprise/microsoft-365-multi-geo.md)中，如果您在中央位置有單一預設內容中心，則只能提供該位置內模型活動的彙總。 您目前無法取得多地理位置環境中跨伺服器域界限的模型活動彙總。 
 
 
 ## <a name="create-a-content-center"></a>建立內容中心
 
-SharePoint 系統管理員可以如同透過系統管理中心的網站佈建面板[建立任何其他 SharePoint 網站](https://docs.microsoft.com/sharepoint/create-site-collection)一般建立內容中心網站。
+SharePoint 系統管理員可以如同透過系統管理中心的網站佈建面板[建立任何其他 SharePoint 網站](/sharepoint/create-site-collection)一般建立內容中心網站。
 
 若要建立新內容中心：
 
@@ -63,7 +63,7 @@ SharePoint 系統管理員可以如同透過系統管理中心的網站佈建面
 
 ### <a name="give-access-to-additional-users"></a>授與其他使用者存取權
  
-建立網站後，您可以透過標準的 [SharePoint 網站權限模型](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions)，為其他使用者提供網站的存取權。
+建立網站後，您可以透過標準的 [SharePoint 網站權限模型](/sharepoint/modern-experience-sharing-permissions)，為其他使用者提供網站的存取權。
 
 ## <a name="see-also"></a>請參閱
 [建立分類器](create-a-classifier.md)
@@ -76,4 +76,4 @@ SharePoint 系統管理員可以如同透過系統管理中心的網站佈建面
 
 [建立表單處理模型](create-a-form-processing-model.md)
 
-[套用模型](apply-a-model.md)    
+[套用模型](apply-a-model.md)

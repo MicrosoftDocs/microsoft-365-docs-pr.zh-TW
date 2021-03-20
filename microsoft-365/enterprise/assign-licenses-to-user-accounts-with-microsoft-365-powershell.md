@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: 在本文中，您將瞭解如何使用 PowerShell 將 Microsoft 365 授權指派給未授權的使用者。
-ms.openlocfilehash: 8c3165b99477afa14e6d2b0da927b5f64c416ef1
-ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
+ms.openlocfilehash: 5fb5f9095d4f732b0bf23f26eebb22eff608b48c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48580937"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905461"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 PowerShell 將 Microsoft 365 授權指派給使用者帳戶
 
@@ -40,10 +40,10 @@ ms.locfileid: "48580937"
 
 - Microsoft 365 系統管理中心
  - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
- - [Azure 入口網站](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory**  >  **使用者**> 使用者帳戶 >**設定檔**  >  **連絡人資訊**  > ) 的**國家或地區**。
+ - [Azure 入口網站](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory**  >  **使用者**> 使用者帳戶 >**設定檔**  >  **連絡人資訊**  > ) 的 **國家或地區**。
 
 >[!Note]
->瞭解如何使用 Microsoft 365 系統管理中心[指派授權給使用者帳戶](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>瞭解如何使用 Microsoft 365 系統管理中心[指派授權給使用者帳戶](../admin/manage/assign-licenses-to-users.md)。 如需其他資源的清單，請參閱 [管理使用者和群組](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
@@ -89,7 +89,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-執行 `Get-MsolAccountSku` 命令，以查看組織中每個計畫可用的授權方案和可用的授權數目。 每個計畫中可用的授權數目**ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits**。 如需授權方案、授權及服務的詳細資訊，請參閱 [使用 PowerShell 查看授權和服務](view-licenses-and-services-with-microsoft-365-powershell.md)。
+執行 `Get-MsolAccountSku` 命令，以查看組織中每個計畫可用的授權方案和可用的授權數目。 每個計畫中可用的授權數目 **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits**。 如需授權方案、授權及服務的詳細資訊，請參閱 [使用 PowerShell 查看授權和服務](view-licenses-and-services-with-microsoft-365-powershell.md)。
 
 >[!Note]
 >PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 **Msol** 的 Cmdlet。 若要繼續使用這些 Cmdlet，您必須從 Windows PowerShell 執行。
@@ -121,7 +121,7 @@ Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 ```
     
-如果您使用 **Get-MsolUser** Cmdlet，而不使用 **-All**參數，則只會傳回前 500 個帳戶。
+如果您使用 **Get-MsolUser** Cmdlet，而不使用 **-All** 參數，則只會傳回前 500 個帳戶。
 
 ### <a name="assigning-licenses-to-user-accounts"></a>指派授權給使用者帳戶
     
@@ -211,7 +211,7 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="see-also"></a>也請參閱
+## <a name="see-also"></a>另請參閱
 
 [以 PowerShell 管理使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

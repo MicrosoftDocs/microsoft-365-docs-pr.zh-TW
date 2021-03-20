@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365 的設計目的是讓全球客戶可以使用網際網路連線來連線至服務。 隨著服務演變，Microsoft 365 的安全性、效能和可靠性會隨著使用網際網路的客戶建立服務的連接而改善。
-ms.openlocfilehash: c0bca2f354d71aa2f4f0c2b6fd05cb4786368b43
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4d80bdf5642b2456ac8293291c720429f7f18fb1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688650"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905473"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>評估 Microsoft 365 網路連線能力
 
@@ -44,7 +44,7 @@ Microsoft 365 的設計目的是讓全球客戶可以使用網際網路連線來
 協助您評估網路的一些資源：
 
 - 如需有關 Microsoft 365 網路的概念資訊，請參閱 [Microsoft 365 網路連線概述](microsoft-365-networking-overview.md) 。
-- 請參閱 [Microsoft 365 網路連線原則](https://aka.ms/o365networkingprinciples) ，以瞭解安全管理 Microsoft 365 流量的連線原則，並取得最佳的效能。
+- 請參閱 [Microsoft 365 網路連線原則](./microsoft-365-network-connectivity-principles.md) ，以瞭解安全管理 Microsoft 365 流量的連線原則，並取得最佳的效能。
 - 註冊 [microsoft FastTrack](https://www.microsoft.com/fasttrack) 以取得 microsoft 365 規劃、設計及部署的指導性協助。 
 - 請參閱下列 [Microsoft 365 connectivity test](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) 一節，以執行基本的連線測試，其可提供有關在指定使用者位置和 Microsoft 365 之間進行的網路連線增強功能的特定指導方針。
 
@@ -107,13 +107,13 @@ Microsoft 365 的設計目的是讓全球客戶可以使用網際網路連線來
 
 您可以閱讀有關 Microsoft 365 連線測試的資訊，並提供 [新的 microsoft 365 connectivity TEST POC](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) 的意見，並提供新的網路設計建議博客文章。 有關此工具及其他 Microsoft 365 網路更新未來更新的資訊將會發佈到 [Office 365 網路](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) 博客。
   
-您可以使用以下簡短連結回來： [ https://aka.ms/o365networkconnectivity 。](https://aka.ms/o365networkconnectivity)
+您可以使用以下簡短連結回來： [ https://aka.ms/o365networkconnectivity 。](./microsoft-365-network-connectivity-principles.md)
   
 ## <a name="related-topics"></a>相關主題
 
 [Microsoft 365 網路連線概況](microsoft-365-networking-overview.md)
 
-[Microsoft 365 網路連線原則](https://aka.ms/o365networkingprinciples)
+[Microsoft 365 網路連線原則](./microsoft-365-network-connectivity-principles.md)
 
 [管理 Office 365 端點](managing-office-365-endpoints.md)
 

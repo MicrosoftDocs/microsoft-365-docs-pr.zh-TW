@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d443334a00b5247525a2cdba98a11cfe0f515193
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 85c41c0bae9590e76801c18b2a33401874cc7cc3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928450"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903949"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>建立應用程式以代表使用者存取 Microsoft 365 Defender APIs
 
@@ -42,7 +42,7 @@ ms.locfileid: "49928450"
 
 如果您需要以程式設計方式存取沒有定義之使用者的 Microsoft 365 Defender (例如，如果您正在撰寫後臺應用程式或幕後程式) ，請參閱 [Create a app to Access Microsoft 365 Defender （沒有使用者](api-create-app-web.md)）。 如果您需要為多個承租人提供存取權，例如，如果您正在服務大型組織或客戶群組，請參閱 Create a [app with a app to access to To Microsoft 365 Defender APIs](api-partner-access.md)。如果您不確定需要哪種類型的存取，請參閱 [入門](api-access.md)。
 
-Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 可協助您自動化工作流程，並使用 Microsoft 365 Defender 的功能。 此 API access 需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 可協助您自動化工作流程，並使用 Microsoft 365 Defender 的功能。 此 API access 需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般來講，您必須採取下列步驟，才能使用這些 APIs：
 
@@ -91,7 +91,7 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
     > [!NOTE]
     > 您必須選取案例的相關許可權。 *讀取所有的事件* 只是一個範例。 若要決定您需要的許可權，請參閱您想要呼叫之 API 中的 [ **許可權** ] 區段。
     >
-    > 例如，若要 [執行高級查詢](api-advanced-hunting.md)，請選取「執行高級查詢」許可權;若要 [隔離裝置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)，請選取「隔離電腦」許可權。
+    > 例如，若要 [執行高級查詢](api-advanced-hunting.md)，請選取「執行高級查詢」許可權;若要 [隔離裝置](/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)，請選取「隔離電腦」許可權。
 
 5. 選取 **[授與系統管理員同意**]。 每次您新增許可權時，都必須選取 **[授與系統管理員同意** ]，才會生效。
 
@@ -103,7 +103,7 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
 
 ## <a name="get-an-access-token"></a>取得存取權杖
 
-如需 Azure Active Directory 標記的詳細資訊，請參閱 [AZURE AD 教學](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
+如需 Azure Active Directory 標記的詳細資訊，請參閱 [AZURE AD 教學](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
 
 ### <a name="get-an-access-token-using-powershell"></a>使用 PowerShell 取得存取權杖
 
@@ -158,4 +158,4 @@ $response.AccessToken
 - [建立具有對 Microsoft 365 Defender APIs 的多承租人合作夥伴存取權的應用程式](api-partner-access.md)
 - [深入瞭解 API 限制和授權](api-terms.md)
 - [瞭解錯誤碼](api-error-codes.md)
-- [OAuth 2.0 使用者登入和 API 存取的授權](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [OAuth 2.0 使用者登入和 API 存取的授權](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

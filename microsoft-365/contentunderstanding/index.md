@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何尋找 Microsoft SharePoint Syntex 的資源。
-ms.openlocfilehash: 21dc0e29e9322b4c009b0f1e63b7bfbc4b92da9a
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 4282da5ca1027eaf041241e90011ead8f2942985
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242697"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905725"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 簡介
 
@@ -42,9 +42,9 @@ Microsoft SharePoint Syntex 是 Office 365 服務，可協助組織：
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|深入了解文件瞭解|[文件瞭解概觀](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)|
-|深入了解表單處理|[表單處理概觀](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)|
-|了解兩種方法的差異︰|[文件瞭解和表單處理模型之間的差異](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|深入了解文件瞭解|[文件瞭解概觀](./document-understanding-overview.md)|
+|深入了解表單處理|[表單處理概觀](./form-processing-overview.md)|
+|了解兩種方法的差異︰|[文件瞭解和表單處理模型之間的差異](./difference-between-document-understanding-and-form-processing-model.md)|
 |查看 Microsoft 技術社群資源中心的資源|[SharePoint Syntex - Microsoft 365 中的内容服務](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |Microsoft 技術社群資源中心的 SharePoint Syntex 常見問題集 |[SharePoint Syntext - 常見問題集](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |如何取得 SharePoint Syntex |[SharePoint Syntex 產品頁面](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
@@ -55,7 +55,7 @@ Microsoft SharePoint Syntex 是 Office 365 服務，可協助組織：
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|了解如何開始規劃以使用 SharePoint Syntex。 |[SharePoint Syntex 採用：開始使用](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted)<br><br>|  
+|了解如何開始規劃以使用 SharePoint Syntex。 |[SharePoint Syntex 採用：開始使用](./adoption-getstarted.md)<br><br>|  
 
 ## <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -63,8 +63,8 @@ Microsoft SharePoint Syntex 是 Office 365 服務，可協助組織：
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|安裝和設定 SharePoint Syntex|[安裝 Microsoft SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding)|
-|了解影像標記和停用方式|[SharePoint Syntex 中的影像標記](https://docs.microsoft.com/microsoft-365/contentunderstanding/image-tagging)|
+|安裝和設定 SharePoint Syntex|[安裝 Microsoft SharePoint Syntex](./set-up-content-understanding.md)|
+|了解影像標記和停用方式|[SharePoint Syntex 中的影像標記](./image-tagging.md)|
 
 ## <a name="models"></a>模型
 
@@ -72,11 +72,11 @@ Microsoft SharePoint Syntex 是 Office 365 服務，可協助組織：
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|了解如何使用模型|[建立內容中心](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[建立分類器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[建立擷取器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[建立表單處理模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[說明類型](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview)<br><br>[套用文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[透過範例模型深入了解文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
-|將保留標籤套用至模型|[將保留標籤套用至文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
-|在建立擷取器時使用受管理的中繼資料服務字詞庫分類法|[在建立擷取器時運用字詞庫分類法](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
-|了解如何查看您模型的資料|[模型流量分析](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
-|瞭解如何在訓練模型時使用協助工具模式|[SharePoint Syntex 協助工具模式](https://docs.microsoft.com/microsoft-365/contentunderstanding/accessibility-mode)|
+|了解如何使用模型|[建立內容中心](./create-a-content-center.md)<br><br>[建立分類器](./create-a-classifier.md)<br><br>[建立擷取器](./create-an-extractor.md)<br><br>[建立表單處理模型](./create-a-form-processing-model.md)<br><br>[說明類型](./explanation-types-overview.md)<br><br>[套用文件瞭解模型](./apply-a-model.md)<br><br>[透過範例模型深入了解文件瞭解模型](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
+|將保留標籤套用至模型|[將保留標籤套用至文件瞭解模型](./apply-a-retention-label-to-a-model.md)|
+|在建立擷取器時使用受管理的中繼資料服務字詞庫分類法|[在建立擷取器時運用字詞庫分類法](./leverage-term-store-taxonomy.md)|
+|了解如何查看您模型的資料|[模型流量分析](./model-usage-analytics.md)|
+|瞭解如何在訓練模型時使用協助工具模式|[SharePoint Syntex 協助工具模式](./accessibility-mode.md)|
 
 ## <a name="premium-services"></a>進階服務
 
@@ -84,8 +84,8 @@ SharePoint Syntex 授權為您的使用者提供進階內容服務，在您的 M
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|了解如何使用基於 Simple Knowledge Organization System 的格式來匯入資料集|[使用 SKOS 格式匯入字詞組](https://docs.microsoft.com/microsoft-365/contentunderstanding/import-term-set-skos)<br><br>[SharePoint 分類法的 SKOS 格式參照](https://docs.microsoft.com/microsoft-365/contentunderstanding/skos-format-reference)<br><br>|
-|了解如何使內容類型更一致地可用於 SharePoint 庫和清單|[將內容類型推入中樞](https://docs.microsoft.com/microsoft-365/contentunderstanding/push-content-type-to-hub)|
-|了解您可用的字詞庫報告|[字詞庫報告](https://docs.microsoft.com/microsoft-365/contentunderstanding/term-store-analytics)|
+|了解如何使用基於 Simple Knowledge Organization System 的格式來匯入資料集|[使用 SKOS 格式匯入字詞組](./import-term-set-skos.md)<br><br>[SharePoint 分類法的 SKOS 格式參照](./skos-format-reference.md)<br><br>|
+|了解如何使內容類型更一致地可用於 SharePoint 庫和清單|[將內容類型推入中樞](./push-content-type-to-hub.md)|
+|了解您可用的字詞庫報告|[字詞庫報告](./term-store-analytics.md)|
 
 ## <a name="see-also"></a>另請參閱

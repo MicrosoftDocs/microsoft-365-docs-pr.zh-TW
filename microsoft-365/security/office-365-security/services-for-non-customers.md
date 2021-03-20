@@ -17,12 +17,12 @@ ms.collection:
 description: 為了協助維護使用者對電子郵件使用的信任，Microsoft 將各種原則和技術放在一起，以協助保護我們的使用者。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 879d2c9d3bc2af0f78a25eb1381a74b67171e939
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3213cae1b04b3f1a1b861e8f2cfc698576013546
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "50290760"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903802"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>將郵件傳送至 Microsoft 365 的非客戶服務
 
@@ -59,7 +59,7 @@ Microsoft 提供數種支援選項，讓使用者在傳送郵件給 Microsoft 36
 
 - 請聯繫您嘗試使用另一種方法傳送電子郵件的客戶，並要求他們聯繫 Microsoft 支援服務，並代表您開啟支援票證。 在某些情況下，由於法律原因，Microsoft 支援必須直接與擁有被封鎖之 IP 空間的寄件者直接通訊。 不過，非客戶通常無法開啟支援票證。
 
-  如需 Microsoft 技術支援 Office 365 的詳細資訊，請參閱 [support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support)。
+  如需 Microsoft 技術支援 Office 365 的詳細資訊，請參閱 [support](/office365/servicedescriptions/office-365-platform-service-description/support)。
 
 ## <a name="anti-spam-ip-delist-portal"></a>Anti-Spam IP 取消列出入口網站
 

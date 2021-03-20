@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，以匯入和封存紅色尾朗讀資料從 Globanet 到 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理協力廠商資料。
-ms.openlocfilehash: ff66f00348bd3e73bdbd607bd4bd0c0f922786cc
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 89b90fd29e089bf61632b22b38e6e10335fda2a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769208"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906057"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>設定連接器以封存資料 Redtail 朗讀資料
 
@@ -45,7 +45,7 @@ Redtail 說資料儲存在使用者信箱之後，您可以套用 Microsoft 365 
 
 - 在步驟2中，您必須指定組織的 SFTP 伺服器。 此步驟是必要的，讓 Globanet Merge1 可以聯繫它以收集 Redtail 透過 SFTP 來朗讀資料。
 
-- 在步驟1中建立 Redtail 朗讀進口商 connector (，並在步驟 3) 中完成的使用者，必須指派給 Exchange Online 中的信箱匯入匯出角色。 在 Microsoft 365 規範中心的 [資料連線器] 頁面上新增連接器時，此角色是必要的。 預設會將此角色指派給 Exchange Online 中的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟1中建立 Redtail 朗讀進口商 connector (，並在步驟 3) 中完成的使用者，必須指派給 Exchange Online 中的信箱匯入匯出角色。 在 Microsoft 365 規範中心的 [資料連線器] 頁面上新增連接器時，此角色是必要的。 預設會將此角色指派給 Exchange Online 中的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="step-1-set-up-the-redtail-speak-connector"></a>步驟1：設定 Redtail 講話連接器
 

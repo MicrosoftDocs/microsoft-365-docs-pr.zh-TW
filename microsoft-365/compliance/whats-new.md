@@ -18,32 +18,32 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案加入至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的合規性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 40140c950bb42078cb1e72ae74762db00a4516b6
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: ed29ad5186972f56609a596d88a48c7c460f295f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233161"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905855"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
 無論是將新的解決方案加入至 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)、根據您的意見反應更新現有的功能，或是推出全新和更新的檔，Microsoft 365 都會協助您不斷掌握不斷變化的相容性形勢。 請參閱下列內容，以查看目前的 Microsoft 365 合規性的新功能。
 
 > [!NOTE]
-> 有些規範功能會以不同的速度向客戶推出。 如果您還沒有看到功能，請嘗試將您新增至 [目標版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)。
+> 有些規範功能會以不同的速度向客戶推出。 如果您還沒有看到功能，請嘗試將您新增至 [目標版本](/office365/admin/manage/release-options-in-office-365)。
 
 > [!TIP]
-> 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+> 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](/office365/admin/whats-new-in-preview)<br>[SharePoint 系統管理中心的新功能](/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新功能](../security/mtp/whats-new.md)<br><br>
 請造訪 [microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，以瞭解已啟動、已開發、已取消或先前發佈的 microsoft 365 功能。
 
 ## <a name="january-2021"></a>2021 年 1 月
 
 ### <a name="support-for-card-content-in-teams"></a>支援小組中的卡片內容
 
-下列 Microsoft 365 規範解決方案現在支援透過小組訊息中的應用程式所產生的 [卡片內容](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards) 的偵測：
+下列 Microsoft 365 規範解決方案現在支援透過小組訊息中的應用程式所產生的 [卡片內容](/microsoftteams/platform/task-modules-and-cards/what-are-cards) 的偵測：
 
-- **核心和高級 eDiscovery**。 現在，卡片內容可以 [保留](create-ediscovery-holds.md#preserve-card-content) 或納入 [搜尋](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#search-for-card-content) (套用至內容搜尋) 。
-- **Audit**。 [卡片] 活動現在會 [記錄到審核記錄](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities)檔。
+- **核心和高級 eDiscovery**。 現在，卡片內容可以 [保留](create-ediscovery-holds.md#preserve-card-content) 或納入 [搜尋](/microsoftteams/ediscovery-investigation#search-for-card-content) (套用至內容搜尋) 。
+- **Audit**。 [卡片] 活動現在會 [記錄到審核記錄](/microsoftteams/audit-log-events#teams-activities)檔。
 - **保留原則**。 現在可以使用保留原則來 [保留和刪除卡片內容](retention-policies-teams.md#whats-included-for-retention-and-deletion)。
 
 ### <a name="information-governance-and-records-management"></a>資訊管理與記錄管理
@@ -98,7 +98,7 @@ Microsoft 365 合規性內容小組正在運作中建立「內容解決方案」
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
-- [在 Azure Purview 中自動標記資料 (預覽) ](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。 您現在可以針對 Azure Purview 中的資產建立和自動套用敏感度標籤，例如 Azure Blob 儲存區中的檔案和 SQL Server 中的資料庫欄。
+- [在 Azure Purview 中自動標記資料 (預覽) ](/azure/purview/create-sensitivity-label)。 您現在可以針對 Azure Purview 中的資產建立和自動套用敏感度標籤，例如 Azure Blob 儲存區中的檔案和 SQL Server 中的資料庫欄。
 - [要求使用者將標籤套用至專案](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。 這個新的選項又稱為「必要標籤」，這項新選項需要使用者選擇並套用特定案例下的靈敏度標籤。
 
 ## <a name="november-2020"></a>2020 年 11 月
@@ -130,7 +130,7 @@ Microsoft 365 合規性內容小組正在運作中建立「內容解決方案」
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
-- [ (預覽) SharePoint 網站的外部共用設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings)。 建立群組和網站所使用的標籤時，您會看到一個選項，可控制已套用標籤的 SharePoint 網站的外部共用。 您可以指定允許任何人、新的和現有的來賓、現有來賓或僅限您組織中的使用者共用。 套用標籤時，標籤設定會取代 [SharePoint 系統管理中心內設定的](https://docs.microsoft.com/sharepoint/change-external-sharing-site)任何外部共用設定。
+- [ (預覽) SharePoint 網站的外部共用設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings)。 建立群組和網站所使用的標籤時，您會看到一個選項，可控制已套用標籤的 SharePoint 網站的外部共用。 您可以指定允許任何人、新的和現有的來賓、現有來賓或僅限您組織中的使用者共用。 套用標籤時，標籤設定會取代 [SharePoint 系統管理中心內設定的](/sharepoint/change-external-sharing-site)任何外部共用設定。
 - [移除已標記檔中的標籤和加密](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document)。 若要從 SharePoint 中的標籤檔中移除標籤和其所強制執行的加密，global admins 和 SharePoint 系統管理員都可以執行新的 `Unlock-SPOSensitivityLabelEncryptedFile` Cmdlet。 即使系統管理員沒有網站或檔案的存取權限，或 Azure Rights Management 服務無法使用，此 Cmdlet 也會執行。
 
 ## <a name="october-2020"></a>2020 年 10 月
@@ -163,7 +163,7 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 ### <a name="communication-compliance"></a>通訊合規性
 
 - [更新的角色群組](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。 通訊相容性角色群組現在符合「內部使用者風險管理」解決方案可用的角色群組結構。
-- [報表儀表板](communication-compliance-feature-reference.md#reports-preview)。 用於查看所有通訊相容性報告的中央位置。 報告構件可讓您快速瞭解對通訊規範活動狀態的整體評估，最常用的洞察力。
+- [報表儀表板](communication-compliance-feature-reference.md#reports)。 用於查看所有通訊相容性報告的中央位置。 報告構件可讓您快速瞭解對通訊規範活動狀態的整體評估，最常用的洞察力。
 - [自動處理電源流程](communication-compliance-feature-reference.md#power-automate-flows)。 設定流程以自動化警示和使用者的工作、在使用者觸發提醒時通知管理員等等。
 - 「[改進分類」修正動作](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)。 包含符合 trainable 分類程式之專案的警示可能會受益于意見反應，有助於減少組織中的誤報。 [ **提升分類** ] 選項可讓您提供偵測到的專案是否符合相關通訊遵循原則中設定的分類器的意見反應。 您甚至可以建議其他分類器與專案產生關聯，以提升未來警示的相符準確度。
 
@@ -189,7 +189,7 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
-[為美國政府客戶提供支援](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 目前只有 Azure 資訊保護統一標籤用戶端和掃描器，才支援 GCC、GCC 高階及 DoD 客戶的靈敏度標籤。
+[為美國政府客戶提供支援](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 目前只有 Azure 資訊保護統一標籤用戶端和掃描器，才支援 GCC、GCC 高階及 DoD 客戶的靈敏度標籤。
 
 ### <a name="trainable-classifiers"></a>可訓練分類器
 
@@ -220,10 +220,10 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
     - 依優先順序的使用者所破壞的安全性原則
     - 不滿的使用者違反安全性原則
 
-- 與 [Microsoft defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 整合可讓您匯入並篩選 microsoft defender，以取得從新的安全性違規原則範本所建立的原則所偵測到的活動的端點警示。 此外，還有相關的 [內幕使用者風險設定](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) ，您可以選擇根據 Microsoft Defender for Endpoint alert 會審狀態，選擇匯入「內幕風險管理」的安全性警示。
+- 與 [Microsoft defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 整合可讓您匯入並篩選 microsoft defender，以取得從新的安全性違規原則範本所建立的原則所偵測到的活動的端點警示。 此外，還有相關的 [內幕使用者風險設定](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) ，您可以選擇根據 Microsoft Defender for Endpoint alert 會審狀態，選擇匯入「內幕風險管理」的安全性警示。
 
     > [!NOTE]
-    > 若要利用 Microsoft Defender 做為端點整合 (包括新的安全性原則違規模板) ，您的組織中必須設定 Microsoft Defender for Endpoint。 您也必須 [在 Microsoft defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)，以啟用內部使用者風險管理的 Microsoft defender 端點。
+    > 若要利用 Microsoft Defender 做為端點整合 (包括新的安全性原則違規模板) ，您的組織中必須設定 Microsoft Defender for Endpoint。 您也必須 [在 Microsoft defender For endpoint 中設定高級功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)，以啟用內部使用者風險管理的 Microsoft defender 端點。
  
 - 自訂 [建立原則時的](insider-risk-management-policies.md#create-a-new-policy)指示器閾值。
 - 設定 [優先順序的使用者群組](insider-risk-management-settings.md#priority-user-groups-preview) ，以定義組織中的使用者，其活動需要根據其位置、敏感資訊存取權或風險歷程等因素進行深入檢查。
@@ -240,7 +240,7 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
-- 針對美國政府租使用者（GCC、GCC-H，和DoD），目前僅支援 Azure 資訊保護統一標籤用戶端和掃描器的敏感標籤。 如需詳細資訊，請參閱 [Azure 資訊保護進階版政府服務描述](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
+- 針對美國政府租使用者（GCC、GCC-H，和DoD），目前僅支援 Azure 資訊保護統一標籤用戶端和掃描器的敏感標籤。 如需詳細資訊，請參閱 [Azure 資訊保護進階版政府服務描述](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
 - 您現在可以 [使用「安全性 & 規範中心」 PowerShell](create-sensitivity-labels.md#use-powershell-for-sensitivity-labels-and-their-policies) 建立及設定您在標記系統管理中心中看到的所有設定。 這表示，除了使用 PowerShell 以用於標籤 admin center 以外的設定，您現在可以完全編寫敏感度標籤和敏感度標籤原則的建立及維護功能。
 
 ### <a name="records-management-content-overhaul"></a>記錄管理：內容徹底檢修

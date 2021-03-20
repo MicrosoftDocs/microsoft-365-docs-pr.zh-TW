@@ -18,16 +18,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性是 Microsoft 365 方案的一部分。
-ms.openlocfilehash: ec3ffa8879bf14ab3116bbbbf5cf2a1a3fd7c6e6
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: b7b1d229e87a313a9567daed87f03452b1925a65
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50053798"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904261"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>選擇基本行動性和安全性或 Intune
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) 是一種獨立的產品，包含在某些 microsoft 365 方案中，基本行動性和安全性都是 Microsoft 365 方案的一部分。
+[Microsoft Intune](/mem/intune/) 是一種獨立的產品，包含在某些 microsoft 365 方案中，基本行動性和安全性都是 Microsoft 365 方案的一部分。
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>基本行動性和安全性及 Intune 的可用性
 
@@ -55,7 +55,7 @@ ms.locfileid: "50053798"
 >[!NOTE]
 >如果您已經在使用 Microsoft Intune，您就無法開始使用基本行動性和安全性。
 
- 如需詳細資訊，請參閱 [Microsoft 365 和 Office 365 平臺服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 
+ 如需詳細資訊，請參閱 [Microsoft 365 和 Office 365 平臺服務說明](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 
 
 ## <a name="differences-in-capabilities"></a>功能上的差異
 
@@ -74,10 +74,10 @@ Microsoft Intune 和內建基本行動性及安全性兩者都能讓您在組織
 |電子郵件設定檔  |在裝置上布建原生電子郵件設定檔。 |是|是|
 |WiFi 設定檔 |在裝置上布建原生 WiFi 設定檔。 |否|是|
 |VPN 設定檔 |在裝置上布建本機 VPN 設定檔。 |否|是|
-|基本行動及安全性應用程式管理  |部署內部企業營運應用程式，以及從應用程式存放區至使用者。 |否|是|
+|行動應用程式管理  |部署內部企業營運應用程式，以及從應用程式存放區至使用者。 |否|是|
 |行動應用程式保護  |讓您的使用者能夠使用所知道的 Office mobile 和商務營運應用程式，安全地存取公司資訊，同時也可以透過協助限制複製、剪下、貼上的動作，以及僅限受核准以取得公司資料的應用程式，以確保資料的安全性。 即使裝置並未註冊為基本行動及安全性，也能運作。 請參閱使用 MAM 原則保護應用程式資料。 |否|是|
 |Managed browser  |使用 Edge app，啟用更安全的 web 流覽功能。 |否|是|
-|零接觸註冊計畫 Autopilot)  |註冊大量公司所擁有的裝置，同時簡化使用者設定。 |否|是|
+|零觸控註冊方案 (AutoPilot)  |註冊大量公司所擁有的裝置，同時簡化使用者設定。 |否|是|
 |||
 
 除了上述表格中所列的功能之外，基本行動性和安全性及 Intune 皆包含一組遠端動作，可透過網際網路將命令傳送至裝置。 例如，您可以從員工的裝置移除 Office 資料，同時保留個人資料 (停用) 、從員工裝置移除 Office app (擦除) 或將裝置重設為其出廠設定 (完全擦除) 。 
@@ -87,20 +87,20 @@ Microsoft Intune 和內建基本行動性及安全性兩者都能讓您在組織
 使用 Intune 時，您可以執行下列一組動作：
 
 -   Autopilot 僅限 Windows (重設
--  [Bitlocker 金鑰輪替](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)  僅限 Windows () 
--  [使用擦除、淘汰或手動 unenrolling 裝置](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
--  [停用啟用 loc](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)  僅 (iOS) 
--  [全新開始](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)  僅限 Windows () 
-- [完整掃描](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)  僅限 Windows 10 () 
-- [尋找裝置](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)  僅 (iOS) 
-- [遺失模式](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)  僅限 (iOS) -[快速掃描](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (僅限 Windows 10) 
-- [Android 的遠端控制](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
-- [遠端鎖定](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)
-- [重新命名裝置](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
--  僅限 Windows) [重設密碼](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset)[重新開機](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)   (
+-  [Bitlocker 金鑰輪替](/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)  僅限 Windows () 
+-  [使用擦除、淘汰或手動 unenrolling 裝置](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
+-  [停用啟用 loc](/mem/intune/remote-actions/device-activation-lock-disable)  僅 (iOS) 
+-  [全新開始](/mem/intune/remote-actions/device-fresh-start)  僅限 Windows () 
+- [完整掃描](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)  僅限 Windows 10 () 
+- [尋找裝置](/mem/intune/remote-actions/device-locate)  僅 (iOS) 
+- [遺失模式](/mem/intune/remote-actions/device-lost-mode)  僅限 (iOS) -[快速掃描](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (僅限 Windows 10) 
+- [Android 的遠端控制](/mem/intune/remote-actions/teamviewer-support)
+- [遠端鎖定](/mem/intune/remote-actions/device-remote-lock)
+- [重新命名裝置](/mem/intune/remote-actions/device-rename)
+-  僅限 Windows) [重設密碼](/mem/intune/remote-actions/device-passcode-reset)[重新開機](/mem/intune/remote-actions/device-restart)   (
 -  僅 (Windows) 更新 Windows Defender 安全性情報
 -  Windows 10 PIN 碼重定 (僅限 Windows) 
--  [傳送自訂通知](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android、iOS、iPad 作業系統) 
--  [同步處理裝置](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)
+-  [傳送自訂通知](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android、iOS、iPad 作業系統) 
+-  [同步處理裝置](/mem/intune/remote-actions/device-sync)
 
-如需 Intune 動作的詳細資訊，請參閱 [Microsoft Intune 檔](https://docs.microsoft.com/mem/intune/)。
+如需 Intune 動作的詳細資訊，請參閱 [Microsoft Intune 檔](/mem/intune/)。

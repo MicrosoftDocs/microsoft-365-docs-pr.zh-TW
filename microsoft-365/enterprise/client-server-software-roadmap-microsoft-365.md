@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 使用此藍圖設定 Microsoft 365 的用戶端和伺服器軟體。
-ms.openlocfilehash: 7ebb48eb474991feae325cab00ebc2a0e9348db8
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: ee101b3ba148f1075939d56904dc9d2ecf14e1b9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48950953"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905197"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 的用戶端與伺服器軟體藍圖
 
@@ -44,41 +44,41 @@ ms.locfileid: "48950953"
 - 不會優化使用 Microsoft 雲端技術，協助您以數位方式轉換您的業務。
 - 不提供最新功能。
 
-適用于企業的 microsoft 365 包括適用于企業的 Microsoft 365 應用程式。 此版本的 Office 用戶端產品可搭配 Microsoft 365 for Enterprise 授權使用。 它已從 Microsoft 雲端安裝並更新。 Microsoft 365 Apps 企業版授權包括安全性更新和最新功能。 如需詳細資訊，請參閱 [關於適用于企業的 Microsoft 365 應用程式](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)。
+適用于企業的 microsoft 365 包括適用于企業的 Microsoft 365 應用程式。 此版本的 Office 用戶端產品可搭配 Microsoft 365 for Enterprise 授權使用。 它已從 Microsoft 雲端安裝並更新。 Microsoft 365 Apps 企業版授權包括安全性更新和最新功能。 如需詳細資訊，請參閱 [關於適用于企業的 Microsoft 365 應用程式](/deployoffice/about-microsoft-365-apps)。
 
 ### <a name="office-2007"></a>Office 2007
 
-若為 office 2007 版本中的 Office 版本，支援的終止已過去。 如需詳細資訊，請參閱 [Office 2007 終止支援藍圖](https://docs.microsoft.com/deployoffice/office-2007-end-support-roadmap)。
+若為 office 2007 版本中的 Office 版本，支援的終止已過去。 如需詳細資訊，請參閱 [Office 2007 終止支援藍圖](/deployoffice/office-2007-end-support-roadmap)。
 
 請考慮採取下列步驟，而不是將執行 Office 2007 的電腦升級至 Office 2010、Office 2013 或 Office 2016：
 
 1. 為您的使用者取得並指派 Microsoft 365 授權。
 2. 在其電腦上卸載 Office 2007。
-3. 安裝 Microsoft 365 應用程式 for enterprise （不論是個別安裝或進行 IT 推廣）。 如需詳細資訊，請參閱 [Microsoft 365 應用程式的部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)。
+3. 安裝 Microsoft 365 應用程式 for enterprise （不論是個別安裝或進行 IT 推廣）。 如需詳細資訊，請參閱 [Microsoft 365 應用程式的部署指南](/deployoffice/deployment-guide-microsoft-365-apps)。
 
 適用于企業的 Microsoft 365 應用程式會自動安裝更新。 它可利用雲端架構服務，以增強安全性和生產力。
 
 ### <a name="office-2010"></a>Office 2010
 
-若為 Office 2010 版本中的 Office 版本，支援已于 *2020 年10月13日* 結束。 如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)。
+若為 Office 2010 版本中的 Office 版本，支援已于 *2020 年10月13日* 結束。 如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](/deployoffice/office-2010-end-support-roadmap)。
 
 您可以考慮將執行 Office 2010 的電腦升級至 Office 2013 或 Office 2016。 不過，這兩個版本都必須手動更新。 所以請改為採取下列步驟：
 
 1. 為您的使用者取得並指派 Microsoft 365 授權。
 2. 在其電腦上卸載 Office 2010。
-3. 安裝 Microsoft 365 應用程式 for enterprise （不論是個別安裝或進行 IT 推廣）。 如需詳細資訊，請參閱 [Microsoft 365 應用程式的部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)。
+3. 安裝 Microsoft 365 應用程式 for enterprise （不論是個別安裝或進行 IT 推廣）。 如需詳細資訊，請參閱 [Microsoft 365 應用程式的部署指南](/deployoffice/deployment-guide-microsoft-365-apps)。
 
 適用于企業的 Microsoft 365 應用程式會自動同時安裝安全性更新和新功能更新。 它可以利用 Microsoft 365 中的雲端式服務，以獲得增強的安全性和生產力。
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 和 Office 2016
 
-請參閱 [Office 2013 的支援終止藍圖](https://docs.microsoft.com/lifecycle/products/microsoft-office-2013)。 尚未判斷 Office 2016 的支援結束。 在這些版本（如 Office 2010）中，您仍然必須 [安裝安全性更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)。 這項工作可能無法正常縮放，視組織的規模而定。
+請參閱 [Office 2013 的支援終止藍圖](/lifecycle/products/microsoft-office-2013)。 尚未判斷 Office 2016 的支援結束。 在這些版本（如 Office 2010）中，您仍然必須 [安裝安全性更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)。 這項工作可能無法正常縮放，視組織的規模而定。
 
 請不要使用 Office 2013 或 Office 2016 的最新安全性更新，或是將電腦從 Office 2013 更新為 Office 2016，而讓電腦保持最新的狀態，請考慮採取下列步驟：
 
 1. 為您的使用者取得並指派 Microsoft 365 授權。
 2. 卸載其電腦上的 Office 2013 或 Office 2016。
-3. 安裝 Microsoft 365 應用程式 for enterprise （不論是個別安裝或進行 IT 推廣）。 如需詳細資訊，請參閱 [Microsoft 365 應用程式的部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)。
+3. 安裝 Microsoft 365 應用程式 for enterprise （不論是個別安裝或進行 IT 推廣）。 如需詳細資訊，請參閱 [Microsoft 365 應用程式的部署指南](/deployoffice/deployment-guide-microsoft-365-apps)。
 
 Microsoft 365 應用程式 enterprise 會自動安裝安全性更新和新功能更新。 它可以利用 Microsoft 365 中的雲端式服務，以獲得增強的安全性和生產力。
 
@@ -95,9 +95,9 @@ Microsoft 365 for Enterprise 包含雲端架構版本的 Office server 服務，
 
 請使用下列資源，以取得針對特定 Microsoft 365 工作負載的使用者和資料進行遷移的相關資訊：
 
-- [將信箱從內部部署 Exchange Server 移至 Exchange Online](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
-- [將 SharePoint 資料從 SharePoint 伺服器遷移至 SharePoint 線上](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
-- [將商務用 Skype Online 遷移至 Microsoft 團隊](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)
+- [將信箱從內部部署 Exchange Server 移至 Exchange Online](/exchange/hybrid-deployment/move-mailboxes)
+- [將 SharePoint 資料從 SharePoint 伺服器遷移至 SharePoint 線上](/sharepointmigration/migrate-to-sharepoint-online)
+- [將商務用 Skype Online 遷移至 Microsoft 團隊](/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
 ### <a name="office-2007-server-products"></a>Office 2007 伺服器產品
 
@@ -106,7 +106,7 @@ Microsoft 365 for Enterprise 包含雲端架構版本的 Office server 服務，
 - [Exchange 2007 終止支援藍圖](exchange-2007-end-of-support.md)
 - [SharePoint Server 2007 終止支援藍圖](sharepoint-2007-end-of-support.md)
 - [Project Server 2007 終止支援藍圖](project-server-2007-end-of-support.md)
-- [Office 通訊伺服器支援終止藍圖](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+- [Office 通訊伺服器支援終止藍圖](/skypeforbusiness/plan-your-deployment/upgrade)
 - [PerformancePoint Server 2007 終止支援藍圖](pps-2007-end-of-support.md)
 
 請考慮採取下列步驟，而不是使用 office 2010、Office 2013 或 2016 Office 的版本中的伺服器產品來升級 Office 2007 版本中的伺服器產品：
@@ -119,7 +119,7 @@ Microsoft 365 for Enterprise 包含雲端架構版本的 Office server 服務，
 
 [Exchange Server 2010](exchange-2010-end-of-support.md)的支援已于 *2020 年10月13日* 結束。
 
-[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 的支援終止日期為 *2021 年 4 月 13 日* 。
+[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 的支援終止日期為 *2021 年 4 月 13 日*。
 
 請考慮採取下列步驟，而不是使用 office 2013 或 Office 2016 的發行版本中的伺服器產品升級這些伺服器2010產品：
 
@@ -147,7 +147,7 @@ Microsoft 365 for Enterprise 包含雲端架構版本的 Office server 服務，
 
 Windows 7 在 *2020 年1月14日* 已結束支援。 若要遷移執行 Windows 7 或 Windows 8.1 的裝置，您可以執行就地升級。
 
-如需其他方法，請參閱 [Windows 10 部署案例](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)。 您也可以自行[規劃 Windows 10 部署](https://aka.ms/planforwin10deployment)。
+如需其他方法，請參閱 [Windows 10 部署案例](/windows/deployment/windows-10-deployment-scenarios)。 您也可以自行[規劃 Windows 10 部署](/windows/deployment/planning/)。
 
 ## <a name="office-2010-clients-and-servers-and-windows-7"></a>Office 2010 用戶端和伺服器及 Windows 7
 

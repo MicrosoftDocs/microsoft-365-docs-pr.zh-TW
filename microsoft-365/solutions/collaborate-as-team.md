@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 了解所需的 Microsoft 365 設定步驟，以在 Teams 中成立團隊並與來賓進行工作、交談和文件共同作業。
-ms.openlocfilehash: 986f9c1f343c8ccc3d76557291938d170923c89b
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712315"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904657"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在團隊中與來賓共同作業
 
@@ -38,7 +38,7 @@ ms.locfileid: "50712315"
 
 ## <a name="azure-external-collaboration-settings"></a>Azure 外部共同作業設定
 
-Microsoft 365 中的共用是由 [Azure Active Directory 中 B2B 外部共同作業設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations) 的最高層級所控管。 如果在 Azure AD 中停用或限制來賓共用，此設定會覆寫您於 Microsoft 365 中設定的任何共用設定。
+Microsoft 365 中的共用是由 [Azure Active Directory 中 B2B 外部共同作業設定](/azure/active-directory/external-identities/delegate-invitations) 的最高層級所控管。 如果在 Azure AD 中停用或限制來賓共用，此設定會覆寫您於 Microsoft 365 中設定的任何共用設定。
 
 檢查 B2B 外部共同作業設定，以確保不會封鎖與來賓共用。
 
@@ -74,7 +74,7 @@ Teams 具備來賓存取的主開啟/關閉開關，以及各種設定，可用�
 5. 確定 [在 Teams 中允許來賓存取] 已設定為 [開啟]。
 6. 對其他來賓設定進行所需的變更，然後按一下 [儲存]。
 
-開啟 Teams 來賓存取後，您可以選擇性地使用敏感度標籤，以控制個別團隊及其相關聯 SharePoint 網站的來賓存取。 如需詳細資訊，請參閱[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+開啟 Teams 來賓存取後，您可以選擇性地使用敏感度標籤，以控制個別團隊及其相關聯 SharePoint 網站的來賓存取。 如需詳細資訊，請參閱[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 > [!NOTE]
 > Teams 來賓設定在開啟後，最慢可能需要 24 小時才會生效。
@@ -187,6 +187,6 @@ Teams 內容 (例如檔案、資料夾和清單) 全部都儲存在 SharePoint �
 
 [使用受管理來賓建立 B2B 外部網路](b2b-extranet.md)
 
-[SharePoint 和 OneDrive 與 Azure AD B2B 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint 和 OneDrive 與 Azure AD B2B 整合](/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[從 SharePoint 或 OneDrive 共用時，共用選項會以灰色顯示](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[從 SharePoint 或 OneDrive 共用時，共用選項會以灰色顯示](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

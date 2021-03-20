@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: 深入瞭解您可以使用 Microsoft 365 系統管理中心取得協助的所有方式。
-ms.openlocfilehash: 23c325aa4a9a0fbf5ec8bfd16bd329540fcd4606
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fdf88c59c640798469a00d17d0c23efe5fe1ce2b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646508"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904333"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "48646508"
 
 * **智慧協助** -由 AI 供電的自我協助
 
-* 網頁上的**指南和文章**-綜合性內容
+* 網頁上的 **指南和文章**-綜合性內容
 
 ## <a name="integrated-help"></a>整合說明
 
@@ -58,4 +58,4 @@ ms.locfileid: "48646508"
 
 ## <a name="guides-and-articles"></a>輔助線和文章
 
-此外，如果您要尋找全面的部署指南、快速逐步程式或 PowerShell Cmdlet，請參閱網頁。 我們經常更新內容，並嘗試為您提供最新資訊。 請參閱 [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/) 網站上的文章和指南。
+此外，如果您要尋找全面的部署指南、快速逐步程式或 PowerShell Cmdlet，請參閱網頁。 我們經常更新內容，並嘗試為您提供最新資訊。 請參閱 [Microsoft 365 檔](../../index.yml) 網站上的文章和指南。

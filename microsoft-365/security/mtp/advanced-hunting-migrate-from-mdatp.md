@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4d29f4f3df3d65ad72a19f059763523d7f7cba31
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 5f356c5861586d4435a619a056a6fa1a0afc53f0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596992"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904135"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>從 Microsoft Defender for Endpoint 遷移高級搜尋查詢
 
@@ -39,7 +39,7 @@ ms.locfileid: "50596992"
 
 - 適用於端點的 Microsoft Defender
 - 適用於 Office 365 的 Microsoft Defender
-- Microsoft 雲端應用程式安全性
+- Microsoft 雲端 App 安全性
 - 適用於身分識別的 Microsoft Defender
 
 >[!NOTE]
@@ -73,7 +73,7 @@ ms.locfileid: "50596992"
 請使用下表來檢查資料 `DeviceAlertEvents` 行對應至 [表格] 中欄的方式 `AlertInfo` `AlertEvidence` 。
 
 >[!TIP]
->除了下表所列的資料行以外，此 `AlertEvidence` 表格還包含許多其他的欄，可提供來自各種來源之更整體的警示。 [查看所有 AlertEvidence 欄](advanced-hunting-alertevidence-table.md) 
+>除了下表中的欄以外，此表格還 `AlertEvidence` 包含許多其他的欄，可提供來自各種來源的更整體警示。 [查看所有 AlertEvidence 欄](advanced-hunting-alertevidence-table.md) 
 
 | DeviceAlertEvents 欄 | 在 Microsoft 365 Defender 中尋找相同資料的位置 |
 |-------------|-----------|-------------|-------------|
@@ -182,4 +182,4 @@ AlertInfo
 - [開啟 Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
-- [Microsoft Defender for Endpoint 中的高級搜尋](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Microsoft Defender for Endpoint 中的高級搜尋](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)

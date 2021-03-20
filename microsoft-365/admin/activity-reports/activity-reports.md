@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: a71ced2dd0aa71179c1b26cec571f3025af1ce05
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 9b58c6fa51fbca5d78680b4b13cbbc2129d9c393
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603849"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903721"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
@@ -136,13 +136,13 @@ ms.locfileid: "50603849"
 
 - [美國政府的 SharePoint 網站活動](sharepoint-activity.md)
   
-- [商務用 Skype Online 活動](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
+- [商務用 Skype Online 活動](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
-- [商務用 Skype Online 會議組織活動](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
+- [商務用 Skype Online 會議組織活動](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
   
-- [商務用 Skype Online 會議參與者活動](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
+- [商務用 Skype Online 會議參與者活動](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
   
-- [商務用 Skype Online 點對點活動](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
+- [商務用 Skype Online 點對點活動](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
   
 ::: moniker range="o365-worldwide"
 
@@ -242,5 +242,4 @@ ms.locfileid: "50603849"
   
 ## <a name="related-articles"></a>相關文章
 
-[安全與合規性中心內的報告](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
-  
+[安全與合規性中心內的報告](../../compliance/reports-in-security-and-compliance.md)

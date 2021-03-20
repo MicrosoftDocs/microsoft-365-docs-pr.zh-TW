@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何在線上 SharePoint 中規劃入口網站啟動，以及成功啟動所需採取的步驟。
-ms.openlocfilehash: e22fa4d9cbfed79841d844f111e3eb91a708512e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d77baac6209a4002bb1c27513d5ccfdf5c4ac28a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688837"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905689"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>在 SharePoint Online 中規劃您的入口網站啟動向外推廣計畫
 
@@ -30,7 +30,7 @@ ms.locfileid: "46688837"
 
 本文說明如何規劃您的部署和外推行計畫，以 SharePoint 線上。 它也會提供在 SharePoint 線上上不允許傳統負載測試時遵循的方法。 SharePoint 線上是雲端服務，且服務的負載、健康情況和整體平衡是由 Microsoft 所管理。
 
-若要協助建立成功的入口網站，請遵循[建立、啟動及維護健康入口網站](https://go.microsoft.com/fwlink/?linkid=2105838)的基本原則、作法和建議 
+若要協助建立成功的入口網站，請遵循[建立、啟動及維護健康入口網站](/sharepoint/portal-health)的基本原則、作法和建議 
 
 部署方法會在下方反白顯示。
 
@@ -52,10 +52,10 @@ SharePoint 線上是跨伺服器陣列進行平衡的共用多 tenanted 環境�
 - 用於雲端消耗的任何頁面/功能/自訂，都應該針對較高的延遲和使用者的分散位置進行優化，這樣不同區域或地區的使用者便可獲得更一致的經驗。 雲端提供優化功能（例如內容傳遞網路） (CDN) 若要針對分散式使用者基礎進行優化，也就是對現代 SharePoint 而言，我們可以使用全新的 (LKG)  (OOTB) 網頁元件。
 
 ### <a name="what-to-do"></a>要執行的動作：
- - 在 SharePoint Online 中的所有網站頁面上使用 [頁面診斷工具](https://aka.ms/perftool)，Chromium 擴充功能可協助分析和提供指導方針。 這可供網站擁有者、編輯者及開發人員使用，因為其設計是要成為分析和優化的起點。
+ - 在 SharePoint Online 中的所有網站頁面上使用 [頁面診斷工具](./page-diagnostics-for-spo.md)，Chromium 擴充功能可協助分析和提供指導方針。 這可供網站擁有者、編輯者及開發人員使用，因為其設計是要成為分析和優化的起點。
  - 開發人員也應該使用像是 F12 瀏覽器開發人員工具的開發工具，以及在新式頁面上的瀏覽器中的 CTRL-F12。 [Fiddler](https://www.telerik.com/download/fiddler) 也可以用來查看大小的長短 (頁面以 mb) 的大小，以及影響整體頁面負載的呼叫和元素數目。 
 
-本節是優化頁面的簡短摘要。  若要深入瞭解，請參閱：  [建立、啟動及維護健康的入口網站](https://go.microsoft.com/fwlink/?linkid=2105838)。
+本節是優化頁面的簡短摘要。  若要深入瞭解，請參閱：  [建立、啟動及維護健康的入口網站](/sharepoint/portal-health)。
 
 ## <a name="follow-a-wave--phased-roll-out-approach"></a>依照波形/分階段的外滾方式
 針對網站發行的傳統大做法做法，將不會允許驗證自訂、外部來源、服務或處理常式已經過適當的縮放。 這並不表示需要數月的時間來啟動，但是建議在至少數天內，取決於您的組織規模。 依照波形向外延展計畫，您可以選擇暫停及解決問題，再繼續進行下一個階段，進而降低受任何問題影響的潛在使用者數目。 SharePoint 為服務會根據使用量和預測使用量來調整您的容量，而不需要您通知我們您的產品發佈，您應該遵循指導方針以確保成功。

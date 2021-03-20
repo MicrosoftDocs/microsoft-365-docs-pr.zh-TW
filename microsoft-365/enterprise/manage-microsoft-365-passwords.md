@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 瞭解如何管理 Microsoft 365 使用者帳戶密碼。
-ms.openlocfilehash: af64002ad54b517a6e8f0b687a00d6bed9ab0214
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328492"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905089"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>管理 Microsoft 365 使用者帳戶密碼
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-您可以根據您的身分識別設定，以數種不同的方式管理 Microsoft 365 使用者帳戶密碼。 您可以在 [Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/add-users/)、Active Directory 網域服務 (AD DS) 或 Azure Active Directory (azure AD) 系統管理中心中管理使用者帳戶。
+您可以根據您的身分識別設定，以數種不同的方式管理 Microsoft 365 使用者帳戶密碼。 您可以在 [Microsoft 365 系統管理中心](../admin/add-users/index.yml)、Active Directory 網域服務 (AD DS) 或 Azure Active Directory (azure AD) 系統管理中心中管理使用者帳戶。
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>規劃管理使用者帳戶密碼的位置和方式
 
@@ -43,7 +43,7 @@ ms.locfileid: "48328492"
 
 您可以在下列情況中管理使用者帳戶密碼：
 
-- [Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/add-users/)
+- [Microsoft 365 系統管理中心](../admin/add-users/index.yml)
 - Azure AD 系統管理中心
     
 ### <a name="hybrid"></a>混合式
@@ -64,13 +64,13 @@ ms.locfileid: "48328492"
 - 公司的特定內部條款
 - 具有特定公司意義的縮寫
 
-您可以在雲端和您的[內部部署 AD DS](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises)[中](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)，禁止不良密碼。
+您可以在雲端和您的[內部部署 AD DS](/azure/active-directory/authentication/concept-password-ban-bad-on-premises)[中](/azure/active-directory/authentication/concept-password-ban-bad)，禁止不良密碼。
 
 ## <a name="simplify-user-sign-in"></a>簡化使用者登入
 
-Azure AD 無縫單一 Sign-On (Azure AD 無縫 SSO) 可搭配 PHS 及透過驗證 (PTA) ，以允許使用者登入使用 Azure AD 使用者帳戶的服務，而不必輸入密碼，而在許多情況下，他們的使用者名稱。 這可讓使用者更容易存取以雲端為基礎的應用程式，例如 Office 365，而不需要任何額外的內部部署元件，例如身分識別同盟伺服器。
+Azure AD 無縫單一 Sign-On (Azure AD 無縫 SSO) 搭配 PHS 及 Pass-Through 驗證 (PTA) ，讓使用者能夠登入使用 Azure AD 使用者帳戶的服務，而不必輸入密碼，而在許多情況下，他們的使用者名稱。 這可讓使用者更容易存取以雲端為基礎的應用程式，例如 Office 365，而不需要任何額外的內部部署元件，例如身分識別同盟伺服器。
 
-您可以使用 Azure AD Connect 工具設定 Azure AD 無縫 SSO。 請參閱[設定 Azure AD 無縫 SSO 的指示](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)。
+您可以使用 Azure AD Connect 工具設定 Azure AD 無縫 SSO。 請參閱[設定 Azure AD 無縫 SSO 的指示](/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)。
 
 <a name="pw_writeback"></a>
 ## <a name="simplify-password-updates-to-ad-ds"></a>簡化 AD DS 的密碼更新
@@ -79,15 +79,14 @@ Azure AD 無縫單一 Sign-On (Azure AD 無縫 SSO) 可搭配 PHS 及透過驗�
 
 為了充分利用 Azure AD Identity Protection 功能 (例如當偵測到高風險的帳戶洩露時，要求使用者變更其內部部署密碼)，需要密碼回寫。
 
-如需詳細資訊和設定指示，請參閱 [Azure AD SSPR 密碼回寫](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback)。
+如需詳細資訊和設定指示，請參閱 [Azure AD SSPR 密碼回寫](/azure/active-directory/active-directory-passwords-writeback)。
 
 >[!Note]
->升級至最新版的 Azure AD Connect，以確保在新版本發行後能夠使用新功能並獲得最佳體驗。如需詳細資訊，請參閱 [Azure AD Connect 的自訂安裝](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom)。
+>升級至最新版的 Azure AD Connect，以確保在新版本發行後能夠使用新功能並獲得最佳體驗。如需詳細資訊，請參閱 [Azure AD Connect 的自訂安裝](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom)。
 >
 
 ## <a name="simplify-password-resets"></a>簡化密碼重設
 
 自助密碼重設 (SSPR) 可讓使用者重設或解除鎖定密碼或帳戶。 您可以使用詳細的報告來追蹤使用者何時存取系統，以及使用通知來警示誤用或濫用。 您必須啟用 [密碼回寫](#pw_writeback) ，才能部署密碼重設。
 
-請參閱[推出密碼重設的指示](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)。
-
+請參閱[推出密碼重設的指示](/azure/active-directory/authentication/howto-sspr-deployment)。

@@ -12,16 +12,16 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: 瞭解如何使用 PowerShell 在您的 Microsoft 365 環境中管理 Exchange Online 多地理位置設定。
-ms.openlocfilehash: 83889b4582d2e305b2cb9f07a64307e85d30be77
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c8f06318313c4192fc2b3a289727933c5a54f3ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406039"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905581"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>管理多地理位置環境中的 Exchange Online 信箱
 
-Exchange Online PowerShell 是在您的 Microsoft 365 環境中查看及設定多地理屬性所需的。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+Exchange Online PowerShell 是在您的 Microsoft 365 環境中查看及設定多地理屬性所需的。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 您需要 [Microsoft Azure Active Directory PowerShell 模組](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) 1.1.166.0 版或使用 1.x 版的更新版本，才能查看使用者物件上的 **PreferredDataLocation** 屬性。 透過 AAD Connect 同步處理至 AAD 的使用者物件，您無法經由 AAD PowerShell 直接修改其 **PreferredDataLocation** 值。 您可以透過 AAD PowerShell 修改僅雲端的使用者物件。 若要連線到 Azure AD PowerShell，請參閱[連線至 PowerShell](connect-to-microsoft-365-powershell.md)。
 
@@ -31,7 +31,7 @@ Exchange Online PowerShell 是在您的 Microsoft 365 環境中查看及設定�
 
 一般而言，Exchange Online PowerShell 將連線到中央地理位置。 不過，您也可以直接連線到衛星地理位置。 由於效能改善，當您僅管理該位置中的使用者時，建議您直接連線到衛星地理位置。
 
-安裝和使用 EXO V2 模組的需求，請參閱 [安裝及維護 EXO V2 模組](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
+安裝和使用 EXO V2 模組的需求，請參閱 [安裝及維護 EXO V2 模組](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
 
 若要將 Exchange Online PowerShell 連線到特定地理位置， *ConnectionUri* 參數與一般連線指示不同。 其餘命令和值則是相同的。
 
@@ -136,7 +136,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 > [!NOTE]
 >
-> - 如先前所述，您無法對內部部署 Active Directory 的同步處理使用者物件使用此程式。 您必須變更 Active Directory 中的 **PreferredDataLocation** 值，並使用 AAD Connect 將它同步處理。 如需詳細資訊，請參閱 [Azure Active Directory Connect 同步處理：設定 Microsoft 365 資源的慣用資料位置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)。
+> - 如先前所述，您無法對內部部署 Active Directory 的同步處理使用者物件使用此程式。 您必須變更 Active Directory 中的 **PreferredDataLocation** 值，並使用 AAD Connect 將它同步處理。 如需詳細資訊，請參閱 [Azure Active Directory Connect 同步處理：設定 Microsoft 365 資源的慣用資料位置](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)。
 >
 > - 將信箱重新定位到新的地理位置所需的時間取決於數個因素：
 >
@@ -148,29 +148,29 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 您無法移動出於相容性目的所保留的非使用中信箱 (例如，使用訴訟暫止) 中的信箱變更其 **PreferredDataLocation** 值。 若要將非使用中的信箱移至不同的地理位置，請執行下列步驟：
 
-1. 復原非使用中的信箱。 如需相關指示，請參閱 [復原非使用中的信箱](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox)。
+1. 復原非使用中的信箱。 如需相關指示，請參閱 [復原非使用中的信箱](../compliance/recover-an-inactive-mailbox.md)。
 
-2. 以信箱的名稱、別名、帳戶或電子郵件地址取代，以防止受管理的資料夾助理處理復原的信箱， \<MailboxIdentity\> 並在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
+2. 以信箱的名稱、別名、帳戶或電子郵件地址取代，以防止受管理的資料夾助理處理復原的信箱， \<MailboxIdentity\> 並在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-3. 將 **Exchange Online Plan 2** 授權指派給復原的信箱。 您必須執行此步驟，才能將信箱還原為訴訟暫止狀態。 如需相關指示，請參閱 [將授權指派給使用者](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+3. 將 **Exchange Online Plan 2** 授權指派給復原的信箱。 您必須執行此步驟，才能將信箱還原為訴訟暫止狀態。 如需相關指示，請參閱 [將授權指派給使用者](../admin/manage/assign-licenses-to-users.md)。
 
 4. 如前一節所述，在信箱上設定 **PreferredDataLocation** 值。
 
-5. 在您確認信箱已經移至新的地理位置之後，請將復原的信箱回復回訴訟暫止狀態。 如需相關指示，請參閱 [將信箱設為訴訟暫止狀態](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold)。
+5. 在您確認信箱已經移至新的地理位置之後，請將復原的信箱回復回訴訟暫止狀態。 如需相關指示，請參閱 [將信箱設為訴訟暫止狀態](../compliance/create-a-litigation-hold.md#place-a-mailbox-on-litigation-hold)。
 
-6. 確認訴訟暫止已到位之後，讓受管理的資料夾助理以 \<MailboxIdentity\> 信箱的名稱、別名、帳戶或電子郵件地址取代，並在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令，以再次處理信箱：
+6. 確認訴訟暫止已到位之後，讓受管理的資料夾助理以 \<MailboxIdentity\> 信箱的名稱、別名、帳戶或電子郵件地址取代，並在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令，以再次處理信箱：
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
     ```
 
-7. 移除與信箱相關聯的使用者帳戶，將信箱停用停用。 如需相關指示，請參閱 [刪除組織中的使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)。 此步驟也會為其他用途發佈 Exchange Online Plan 2 授權。
+7. 移除與信箱相關聯的使用者帳戶，將信箱停用停用。 如需相關指示，請參閱 [刪除組織中的使用者](../admin/add-users/delete-a-user.md)。 此步驟也會為其他用途發佈 Exchange Online Plan 2 授權。
 
-**附注**：當您將非使用中的信箱移至不同的地理位置時，您可能會影響內容的搜尋結果，或從先前的地理位置搜尋該信箱的功能。 如需詳細資訊，請參閱 [在多地理位置環境中搜尋和匯出內容](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments)。
+**附注**：當您將非使用中的信箱移至不同的地理位置時，您可能會影響內容的搜尋結果，或從先前的地理位置搜尋該信箱的功能。 如需詳細資訊，請參閱 [在多地理位置環境中搜尋和匯出內容](../compliance/set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments)。
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>在特定地理位置建立新的雲端信箱
 
@@ -207,11 +207,11 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>將特定地理位置中的現有內部部署信箱上線
 
-您可以使用標準的上線工具和程序，將信箱從內部部署 Exchange 組織移轉至 Exchange Online，包括 [EAC 中的移轉儀表板](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331)，以及 Exchange Online PowerShell 中的 [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch) Cmdlet。
+您可以使用標準的上線工具和程序，將信箱從內部部署 Exchange 組織移轉至 Exchange Online，包括 [EAC 中的移轉儀表板](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331)，以及 Exchange Online PowerShell 中的 [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) Cmdlet。
 
 第一個步驟是驗證要上線的每個信箱均存在使用者物件，並驗證已在 Azure AD 中設定正確的 **PreferredDataLocation** 值。 上線工具會使用 **PreferredDataLocation** 值，並將信箱直接移轉至指定的地理位置。
 
-或者，您可以使用下列步驟，在特定地理位置直接將信箱上線，方法是在 Exchange Online PowerShell 中使用 [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest) Cmdlet。
+或者，您可以使用下列步驟，在特定地理位置直接將信箱上線，方法是在 Exchange Online PowerShell 中使用 [New-MoveRequest](/powershell/module/exchange/new-moverequest) Cmdlet。
 
 1. 驗證要上線的每個信箱均存在使用者物件，並且 Azure AD 中的 **PreferredDataLocation** 已設定為需要的值。 **PreferredDataLocation** 的值會同步處理至 Exchange Online 中對應郵件使用者物件的 **MailboxRegion** 屬性。
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 判斷 Microsoft 365 客戶資料在歐盟內儲存位置
-ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527682"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905677"
 ---
 # <a name="data-locations-for-the-european-union"></a>針對歐盟的資料位置
 
@@ -74,14 +74,14 @@ Microsoft 了解維護貴公司商務資料隱私權和機密性的重要性。 
 
 如果需要暫時傳輸，我們會在傳輸時始終採用最先進的加密技術，並在完成後始終立即將您的資料傳回至您選擇的資料儲存位置。 我們會透過這些暫時傳輸的標準合約條款 (SCC)，以及我們的補充措施來確保資料受到保護，以符合歐洲法律。 
 
-如需深入了解，請參閱[歐盟示範條款](https://docs.microsoft.com/microsoft-365/compliance/offering-eu-model-clauses)。
+如需深入了解，請參閱[歐盟示範條款](/compliance/regulatory/offering-EU-Model-Clauses)。
 
 >[!Note]
 >如果您選擇使用 Sway 和工作場所分析，這些服務的客戶資料將會在美國儲存和運算。
 >
 
 >[!Note]
->Microsoft 365 服務可能在必要時在歐盟以外的地區查詢和儲存部分租用戶的目錄/身分識別資料資訊，以因應特定情況。 例如，在跨地區電子郵件路由、電話路由和驗證的案例中，Microsoft 365 系統可能需要一些關於歐盟收件者的資訊，以便正確路由這些要求。 Microsoft 365 系統也依靠 Azure Active Directory 來提供身分識別和驗證功能。 若要深入瞭解，請參閱 [Azure Active Directory 中的歐洲客戶身分識別資料儲存](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-data-storage-eu) (部分機器翻譯)。
+>Microsoft 365 服務可能在必要時在歐盟以外的地區查詢和儲存部分租用戶的目錄/身分識別資料資訊，以因應特定情況。 例如，在跨地區電子郵件路由、電話路由和驗證的案例中，Microsoft 365 系統可能需要一些關於歐盟收件者的資訊，以便正確路由這些要求。 Microsoft 365 系統也依靠 Azure Active Directory 來提供身分識別和驗證功能。 若要深入瞭解，請參閱 [Azure Active Directory 中的歐洲客戶身分識別資料儲存](/azure/active-directory/fundamentals/active-directory-data-storage-eu) (部分機器翻譯)。
 >
 
 ## <a name="how-microsoft-protects-your-data"></a>Microsoft 如何保護您的資料
@@ -126,8 +126,7 @@ Microsoft 使用多層安全性和加密通訊協定來保護您的資料。 請
 ## <a name="additional-resources"></a>其他資源
  
 - [受信任的資料保護](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) (英文) 說明了使用 Microsoft Online Services 和專業服務時，Microsoft 如何保護您的資料。 此外，建議您參考可管理您使用這些服務的 [Microsoft Online Services 條款 (OST) 和資料保護增補合約 (DPA)](https://www.microsoft.com/licensing/product-licensing/products)。
-- [適用於 GDPR 的 Office 365 資料主體要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365)可協助您使用 Microsoft 365 產品、服務及系統管理工具，找出並處理個人資料或個人資訊以回應 DSR。 
-- [資料保護影響評估：適用於使用 Microsoft Office 365 之資料控制者的指引](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365)可協助您判斷貴組織是否需要草擬 DPIA，提供「作法」指導方針，包含可自訂 DPIA 範本文件，並為許多 Microsoft 365 服務提供 DPIA 服務元素矩陣。
-- [學習課程模組](https://docs.microsoft.com/learn/paths/audit-safeguard-customer-data/) (英文) 是專為尋求全面了解的審計、合規性、風險和法律角色中的人員而設計，提供深入檢閱 Microsoft 365 如何保護客戶資料的基本安全性和隱私權做法。
-- [Microsoft 合規性方案](https://docs.microsoft.com/microsoft-365/compliance/offering-home)說明 Microsoft 365 服務如何協助您的組織符合法規合規性標準。 
-
+- [適用於 GDPR 的 Office 365 資料主體要求](/compliance/regulatory/gdpr-dsr-Office365)可協助您使用 Microsoft 365 產品、服務及系統管理工具，找出並處理個人資料或個人資訊以回應 DSR。 
+- [資料保護影響評估：適用於使用 Microsoft Office 365 之資料控制者的指引](/compliance/regulatory/gdpr-dpia-office365)可協助您判斷貴組織是否需要草擬 DPIA，提供「作法」指導方針，包含可自訂 DPIA 範本文件，並為許多 Microsoft 365 服務提供 DPIA 服務元素矩陣。
+- [學習課程模組](/learn/paths/audit-safeguard-customer-data/) (英文) 是專為尋求全面了解的審計、合規性、風險和法律角色中的人員而設計，提供深入檢閱 Microsoft 365 如何保護客戶資料的基本安全性和隱私權做法。
+- [Microsoft 合規性方案](/compliance/regulatory/offering-home)說明 Microsoft 365 服務如何協助您的組織符合法規合規性標準。

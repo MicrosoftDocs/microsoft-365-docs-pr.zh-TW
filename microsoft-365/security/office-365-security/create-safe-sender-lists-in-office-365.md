@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以瞭解可用及慣用的選項，允許在 Exchange Online Protection (EOP) 中輸入郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 33f4e9ac33f7952612e8b469345e38507ece5f4b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 88c70eea4952eda9315687ae90e2f6834f1edaf8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453738"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903817"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中建立安全的寄件者清單
 
@@ -58,7 +58,7 @@ ms.locfileid: "50453738"
 
 ## <a name="recommended-use-mail-flow-rules"></a>建議的 () 使用郵件流程規則
 
-Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來識別郵件，以及指定應對這些郵件執行的動作。 如需詳細資訊，請參閱 [Mail flow rules (transport rules) In Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
+Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來識別郵件，以及指定應對這些郵件執行的動作。 如需詳細資訊，請參閱 [Mail flow rules (transport rules) In Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
 
 下列範例假設您需要 contoso.com 中的電子郵件，以略過垃圾郵件篩選。 若要這麼做，請設定下列設定：
 

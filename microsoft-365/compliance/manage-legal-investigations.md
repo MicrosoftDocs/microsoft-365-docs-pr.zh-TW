@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 的安全性 & 規範中心使用 eDiscovery 案例，以管理組織的法律調查。
-ms.openlocfilehash: 7a02bd47f93a85e643694efea4dcc140847916e0
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c052daab8de33e21cccc3c638ab4995a007f60fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840702"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903457"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>管理 Microsoft 365 的法律調查
 
@@ -34,7 +34,7 @@ ms.locfileid: "49840702"
 
 eDiscovery 案例可讓您控制哪些人員可以在組織中建立、存取及管理 eDiscovery 案例。 使用案例新增成員並控制其可執行檔動作類型，保留與法律案例相關的內容位置，並使用內容搜尋工具，針對可能會回應您案例的內容，搜尋保留的位置。 然後，您也可以匯出及下載這些結果，以供外部檢閱者進一步調查。
   
-- 針對您的組織必須執行的每個法律調查建立及使用 eDiscovery 案例，以[管理您的 eDiscovery 工作流程](ediscovery-cases.md)。
+- 針對您的組織必須執行的每個法律調查建立及使用 eDiscovery 案例，以[管理您的 eDiscovery 工作流程](./get-started-core-ediscovery.md)。
 
 - [指派 eDiscovery 許可權](assign-ediscovery-permissions.md) ，以控制誰可以在組織中建立及管理 eDiscovery 案例。
 

@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 系統管理員可以瞭解如何在多地理位置環境中管理 SharePoint 和 OneDrive 服務。
-ms.openlocfilehash: 1b6d2cb1cb9511677f717f0e58553abc4473e1ad
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688252"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905593"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置環境
 
@@ -76,17 +76,17 @@ BCS、Secure Store 及應用程式在每個衛星位置中都有個別的執行�
 
 ## <a name="taxonomy"></a>分類
 
-我們使用您公司中央位置主控的主機，針對不同地理位置的企業管理中繼資料，支援統一的[分類法](https://docs.microsoft.com/sharepoint/managed-metadata)。 我們建議您從中央位置管理全域分類法，並只將特定位置的詞彙增到衛星位置的分類法。 全域分類法詞彙將同步到衛星位置。
+我們使用您公司中央位置主控的主機，針對不同地理位置的企業管理中繼資料，支援統一的[分類法](/sharepoint/managed-metadata)。 我們建議您從中央位置管理全域分類法，並只將特定位置的詞彙增到衛星位置的分類法。 全域分類法詞彙將同步到衛星位置。
 
-如需詳細資訊與開發人員指導方針，請參閱[管理多地理位置租用戶中的中繼資料](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-managedmetadata)。
+如需詳細資訊與開發人員指導方針，請參閱[管理多地理位置租用戶中的中繼資料](/sharepoint/dev/solution-guidance/multigeo-managedmetadata)。
 
 ## <a name="user-profile-application"></a>使用者設定檔應用程式
 
-每個地理位置都有一個[使用者設定檔應用程式](https://docs.microsoft.com/sharepoint/manage-user-profiles)。 系統會在每位使用者的地理位置主控其設定檔資訊，且該設定檔資料可供該地理位置的系統管理員使用。
+每個地理位置都有一個[使用者設定檔應用程式](/sharepoint/manage-user-profiles)。 系統會在每位使用者的地理位置主控其設定檔資訊，且該設定檔資料可供該地理位置的系統管理員使用。
 
-如果您有自訂的設定檔屬性，則建議您使用跨地理位置的相同設定檔結構描述，然後在所有的地理位置或所需的位置填入自訂設定檔屬性。 如需如何以程式設計方式填入使用者設定檔資料的指導方針，請參閱[大量使用者設定檔更新 API](https://docs.microsoft.com/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)。
+如果您有自訂的設定檔屬性，則建議您使用跨地理位置的相同設定檔結構描述，然後在所有的地理位置或所需的位置填入自訂設定檔屬性。 如需如何以程式設計方式填入使用者設定檔資料的指導方針，請參閱[大量使用者設定檔更新 API](/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)。
 
-如需詳細資訊與開發人員指導方針，請參閱[在多地理位置租用戶中使用使用者設定檔](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-userprofileexperience)。
+如需詳細資訊與開發人員指導方針，請參閱[在多地理位置租用戶中使用使用者設定檔](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience)。
 
 ## <a name="video-portal"></a>影片入口網站
 

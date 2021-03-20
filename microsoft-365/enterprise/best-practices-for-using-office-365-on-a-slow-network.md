@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 本文會引導您完成在慢速網路上使用 Office 365 的最佳作法。
-ms.openlocfilehash: a0a15191fa0240f24cecc5e595de9a259cacc9f9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: effa1038b03a9fcafc74166a1f53682186688906
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688666"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905257"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>在網路緩慢的情況下使用 Office 365 的最佳做法
 
@@ -82,7 +82,7 @@ ms.locfileid: "46688666"
 
 -  可能的話，請減少 Office 365 的來回行程。 例如，使用搜尋在大型文件庫中尋找檔案並在清單中篩選，直接前往您想要的結果，而不是逐頁瀏覽清單或文件庫。 或者，建立可將頁面載入時間最小化的檢視。 如需更多資訊，請參閱[管理 Office 365 中的大型清單和文件庫](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784#BKMK_PAGES)。
 
-- 如果影片效能不佳，您可以下載影片並在您的裝置上觀看。 您可以使用下載連結，也能夠以滑鼠右鍵按一下影片連結，然後選取 [另存目標]****。
+- 如果影片效能不佳，您可以下載影片並在您的裝置上觀看。 您可以使用下載連結，也能夠以滑鼠右鍵按一下影片連結，然後選取 [另存目標]。
 
  **特定瀏覽器**
   
@@ -117,7 +117,7 @@ ms.locfileid: "46688666"
 
 商務用 OneDrive 已從頭開始設計為在線上或離線處理您的檔案。 設定完成後，當您隨時隨地進行變更時，就會自動且可靠地同步處理變更。 如果網路速度緩慢，您可以使用離線版本的檔案。
   
-商務用 OneDrive 同步處理應用程式隨附於 SharePoint 和 Office 365 商務版訂閱，或者您也可以免費[下載](https://support.microsoft.com/kb/2903984)商務用 OneDrive 同步處理應用程式。 比起使用 [在檔案總管中開啟]**** 或 [上傳]**** 命令，此應用程式也比較快。 如需詳細資訊，請參閱[設定您的電腦在 Office 365 同步處理商務用 OneDrive 檔案](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16)。
+商務用 OneDrive 同步處理應用程式隨附於 SharePoint 和 Office 365 商務版訂閱，或者您也可以免費[下載](https://support.microsoft.com/kb/2903984)商務用 OneDrive 同步處理應用程式。 比起使用 [在檔案總管中開啟] 或 [上傳] 命令，此應用程式也比較快。 如需詳細資訊，請參閱[設定您的電腦在 Office 365 同步處理商務用 OneDrive 檔案](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16)。
   
 以下是使用商務用 OneDrive 同步處理應用程式的一些額外指導方針：
   
@@ -141,7 +141,7 @@ OneNote 的優點是，您可以從任何裝置 (不論是桌上型電腦、膝�
 
 - 避免透過虛擬私人網路 (VPN) 或遠端存取服務 (RAS) 連線來撥打電話。
 
-- 確定已核准您的音訊裝置。 如需詳細資訊，請參閱[合格的 Microsoft Lync 電話與裝置](https://docs.microsoft.com/skypeforbusiness/lync-cert/ip-phones)。
+- 確定已核准您的音訊裝置。 如需詳細資訊，請參閱[合格的 Microsoft Lync 電話與裝置](/skypeforbusiness/lync-cert/ip-phones)。
 
 - 在線上簡報中使用 PowerPoint 時，請降低投影片的大小和複雜度。 如需詳細資訊，請參閱[提升簡報效能的祕訣](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949)。
 
@@ -190,4 +190,3 @@ Microsoft 透過監控網路、測量頻寬和延遲、改善頁面載入時間�
 [管理 Office 365 端點](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Office 365 端點常見問題集](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) (機器翻譯)
- 

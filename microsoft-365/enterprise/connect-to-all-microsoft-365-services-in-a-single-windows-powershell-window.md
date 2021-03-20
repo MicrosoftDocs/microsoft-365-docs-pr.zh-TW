@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要：在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務。
-ms.openlocfilehash: cd030018dabff628af18d173cf542a3d375b27d0
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 18ff8e1789242b4dde3b4b31aaccf2462e4c5d74
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515109"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905125"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務
 
@@ -38,7 +38,7 @@ ms.locfileid: "50515109"
 
 在您可以從 PowerShell 的單一執行個體管理所有 Microsoft 365 之前，請考慮下列先決條件：
   
-- 您使用的 Microsoft 365 公司或學校帳戶必須是 Microsoft 365 系統管理員角色的成員。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。 這是對 Microsoft 365 的 PowerShell 需求，但並非所有其他 Microsoft 365 服務的需求。
+- 您使用的 Microsoft 365 公司或學校帳戶必須是 Microsoft 365 系統管理員角色的成員。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。 這是對 Microsoft 365 的 PowerShell 需求，但並非所有其他 Microsoft 365 服務的需求。
     
 - 您可以使用下列 Windows 64 位元版本：
     
@@ -56,7 +56,7 @@ ms.locfileid: "50515109"
     
   - Windows Server 2008 R2 SP1*
     
-    \*您需要安裝 Microsoft .NET Framework 4.5.*x*，然後安裝 Windows Management Framework 3.0 或4.0。 如需詳細資訊，請參閱 [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview)。
+    \*您需要安裝 Microsoft .NET Framework 4.5.*x*，然後安裝 Windows Management Framework 3.0 或4.0。 如需詳細資訊，請參閱 [Windows Management Framework](/powershell/scripting/windows-powershell/wmf/overview)。
     
     由於商務用 Skype Online 模組和其中一個 Microsoft 365 模組的需求，您需要使用 Windows 64 位元版本。
     
@@ -64,9 +64,9 @@ ms.locfileid: "50515109"
     
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [SharePoint Online 管理命令介面](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-  - [商務用 Skype Online，PowerShell 模組](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
-  - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
-  - [Teams PowerShell 概觀](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [商務用 Skype Online，PowerShell 模組](/microsoftteams/teams-powershell-overview)
+  - [Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Teams PowerShell 概觀](/microsoftteams/teams-powershell-overview)
     
 -  必須設定 PowerShell，才能執行商務用 Skype Online 及安全性與合規性中心的已簽署指令碼。 在提高權限的 PowerShell 工作階段 (**以系統管理員身份執行** 的 PowerShell 執行階段) 中執行以下命令。
     
@@ -128,7 +128,7 @@ ms.locfileid: "50515109"
    ```
 
    > [!Note]
-   > 若要連線至「全球」以外適用於 Microsoft 365 的 Exchange Online 雲端，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+   > 若要連線至「全球」以外適用於 Microsoft 365 的 Exchange Online 雲端，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 7. 執行這些指令以連線至安全性 &amp; 合規性中心。
     
@@ -138,7 +138,7 @@ ms.locfileid: "50515109"
    ```
 
    > [!Note]
-   > 若要連線到 Microsoft 365 雲端 (而非 [Worldwide]) 安全性 &amp; 合規性中心，請參閱 [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+   > 若要連線到 Microsoft 365 雲端 (而非 [Worldwide]) 安全性 &amp; 合規性中心，請參閱 [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 8. 執行這些命令，以連線到 Teams PowerShell。
     
@@ -149,7 +149,7 @@ ms.locfileid: "50515109"
    ```
   
    > [!Note]
-   > 若要連線到 Microsoft Teams 雲端 (而非 *[全球]*)，請參閱 [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams)。
+   > 若要連線到 Microsoft Teams 雲端 (而非 *[全球]*)，請參閱 [Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams)。
   
 
 

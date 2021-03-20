@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ea787adfba0afb425da5f6ea0f6609f96e06b378
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 17fa47fd9998f4097ff323e670b9e442d7126a94
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932151"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903973"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>存取 Microsoft 365 Defender APIs
 
@@ -47,7 +47,7 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
 - 使用權杖來存取 Microsoft 365 Defender API
 
 > [!NOTE]
-> API access 需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+> API access 需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 完成這些步驟之後，即可使用特定內容來存取 Microsoft 365 Defender API。
 
@@ -76,11 +76,11 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
 
 ## <a name="partner-context"></a>夥伴內容
 
-當您需要跨 [多個承租人](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps)向許多使用者提供應用程式時，請使用此內容。
+當您需要跨 [多個承租人](/azure/active-directory/develop/single-and-multi-tenant-apps)向許多使用者提供應用程式時，請使用此內容。
 
 1. 建立 Azure Active Directory 多方租使用者應用程式。
 2. 將所需的許可權指派給應用程式。
-3. 從每個承租人取得應用程式的系統 [管理員同意](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) 。
+3. 從每個承租人取得應用程式的系統 [管理員同意](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) 。
 4. 根據客戶的租使用者識別碼，使用使用者認證取得安全性權杖。
 5. 使用權杖來存取 Microsoft 365 Defender API。
 
@@ -89,6 +89,6 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
 ## <a name="related-articles"></a>相關文章
 
 - [Microsoft 365 Defender APIs 概述](api-overview.md)
-- [OAuth 2.0 使用者登入和 API 存取的授權](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
-- [使用 Azure Key Vault 管理伺服器應用程式中的機密](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [OAuth 2.0 使用者登入和 API 存取的授權](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [使用 Azure Key Vault 管理伺服器應用程式中的機密](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [建立存取 Microsoft 365 APIs 的「Hello world」應用程式](api-hello-world.md)

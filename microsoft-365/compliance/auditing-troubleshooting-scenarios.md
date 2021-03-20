@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何使用 Microsoft 365 審核記錄搜尋工具來協助疑難排解電子郵件帳戶的常見支援問題。
-ms.openlocfilehash: a32633d401156e00a45d15e4b38622b13bcb87cf
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 5f753163b5d4d6c04c121a7ce3fae970690a57b0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787589"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906091"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>搜尋審計記錄檔，以調查常見的支援問題
 
@@ -43,7 +43,7 @@ ms.locfileid: "48787589"
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>使用審核記錄搜尋工具所需的許可權
 
-您必須獲指派「View-Only 審核記錄」或「審核記錄」角色在 Exchange Online 中，才可搜尋審核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限]  頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 Office 365 和 Microsoft 365 中的全域系統管理員會自動新增為 Exchange Online 中「組織管理」角色群組的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
+您必須獲指派「View-Only 審核記錄」或「審核記錄」角色在 Exchange Online 中，才可搜尋審核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 **[權限]** 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 Office 365 和 Microsoft 365 中的全域系統管理員會自動新增為 Exchange Online 中「組織管理」角色群組的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](/Exchange/permissions-exo/role-groups)。
 
 ### <a name="running-audit-log-searches"></a>執行審核記錄搜尋
 
@@ -51,7 +51,7 @@ ms.locfileid: "48787589"
 
 1. 移至 [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) 並使用您的公司或學校帳戶登入。
     
-    [稽核記錄搜尋]  頁面隨即顯示。 
+    **[稽核記錄搜尋]** 頁面隨即顯示。 
     
     ![設定準則，然後選取 [搜尋] 以執行搜尋](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
@@ -67,7 +67,7 @@ ms.locfileid: "48787589"
     
 5. 選取 [ **搜尋** ]，使用您的搜尋準則執行搜尋。 
     
-    搜尋結果會經過載入，然後在 [ **審計記錄檔搜尋** ] 頁面的 [ **結果** ] 底下出現片刻之後。 本文中的每一節都提供在特定疑難排解案例內容中所要尋找之專案的指引。
+    搜尋結果會經過載入，然後在 [**審計記錄檔搜尋**] 頁面的 [**結果**] 底下出現片刻之後。 本文中的每一節都提供在特定疑難排解案例內容中所要尋找之專案的指引。
 
     如需查看、篩選或匯出審計記錄搜尋結果的詳細資訊，請參閱：
 
@@ -81,7 +81,7 @@ ms.locfileid: "48787589"
 
 以下說明如何為此案例設定審核記錄搜尋查詢：
 
-**活動：** 如果與您的案例相關，請選取要搜尋的特定活動。 若要疑難排解已遭破壞的帳戶，請考慮選取 [ **Exchange 信箱活動** ] 底下的 [ **使用者已登入信箱** 活動]。 這會傳回審計記錄，顯示登入信箱時所使用的 IP 位址。 否則，請將此欄位保留空白，以傳回所有活動的審計記錄。 
+**活動：** 如果與您的案例相關，請選取要搜尋的特定活動。 若要疑難排解已遭破壞的帳戶，請考慮選取 [ **Exchange 信箱活動**] 底下的 [**使用者已登入信箱** 活動]。 這會傳回審計記錄，顯示登入信箱時所使用的 IP 位址。 否則，請將此欄位保留空白，以傳回所有活動的審計記錄。 
 
 > [!TIP]
 > 將此欄位保留空白將會傳回 **UserLoggedIn** 活動，也就是 Azure Active Directory 活動，表示某人已登入使用者帳戶。 在搜尋結果中使用篩選來顯示 **UserLoggedIn** 的審計記錄。
@@ -96,7 +96,7 @@ ms.locfileid: "48787589"
 
 ## <a name="determine-who-set-up-email-forwarding-for-a-mailbox"></a>決定信箱的電子郵件轉發設定
 
-為信箱設定電子郵件轉寄時，傳送至信箱的電子郵件會轉送到另一個信箱。 郵件可以轉寄給組織內部或外部的使用者。 在信箱上設定電子郵件轉寄時，所使用的基礎 Exchange Online Cmdlet 會 **Set-Mailbox** 。
+為信箱設定電子郵件轉寄時，傳送至信箱的電子郵件會轉送到另一個信箱。 郵件可以轉寄給組織內部或外部的使用者。 在信箱上設定電子郵件轉寄時，所使用的基礎 Exchange Online Cmdlet 會 **Set-Mailbox**。
 
 以下說明如何為此案例設定審核記錄搜尋查詢：
 
@@ -112,7 +112,7 @@ ms.locfileid: "48787589"
 
 ![篩選審核記錄搜尋的結果](../media/emailforwarding1.png)
 
-此時，您必須查看每個審計記錄的詳細資料，以判斷該活動是否與電子郵件轉寄有關。 選取 [審計記錄] 以顯示 [ **詳細資料** ] 飛出頁面，然後選取 [ **詳細資訊** ]。 下列螢幕擷取畫面和描述會反白顯示指出信箱上已設定電子郵件轉寄的資訊。
+此時，您必須查看每個審計記錄的詳細資料，以判斷該活動是否與電子郵件轉寄有關。 選取 [審計記錄] 以顯示 [ **詳細資料** ] 飛出頁面，然後選取 [ **詳細資訊**]。 下列螢幕擷取畫面和描述會反白顯示指出信箱上已設定電子郵件轉寄的資訊。
 
 ![來自審計記錄的詳細資訊](../media/emailforwarding2.png)
 
@@ -120,7 +120,7 @@ a. 在 [ **ObjectId** ] 欄位中，會顯示已設定電子郵件轉寄功能�
 
 b. 在 [ **參數** ] 欄位中，值 *ForwardingSmtpAddress* 指出信箱上已設定電子郵件轉寄功能。 在此範例中，郵件會轉寄至電子郵件地址 mike@contoso.com，該位址位於 alpinehouse.onmicrosoft.com 組織外。
 
-c. *DeliverToMailboxAndForward* 參數的 *True* 值表示郵件副本會傳遞至 sarad@alpinehouse.onmicrosoft.com *，並* 轉送到 *ForwardingSmtpAddress* 參數所指定的電子郵件地址，在此範例中是 mike@contoso.com。 如果 *DeliverToMailboxAndForward* 參數的值設為 *False* ，則電子郵件只會轉寄給 *ForwardingSmtpAddress* 參數所指定的位址。 它不會傳送至 [ **ObjectId** ] 欄位中指定的信箱。
+c. *DeliverToMailboxAndForward* 參數的 *True* 值表示郵件副本會傳遞至 sarad@alpinehouse.onmicrosoft.com *，並* 轉送到 *ForwardingSmtpAddress* 參數所指定的電子郵件地址，在此範例中是 mike@contoso.com。 如果 *DeliverToMailboxAndForward* 參數的值設為 *False*，則電子郵件只會轉寄給 *ForwardingSmtpAddress* 參數所指定的位址。 它不會傳送至 [ **ObjectId** ] 欄位中指定的信箱。
 
 d. [ **UserId** ] 欄位會指出在 **ObjectId** ] 欄位中指定的信箱上設定電子郵件轉寄的使用者。 此使用者也會顯示在搜尋結果頁面上的 [ **使用者** ] 欄中。 在此情況下，似乎是信箱的擁有者在信箱上設定電子郵件轉寄。
 
@@ -130,7 +130,7 @@ d. [ **UserId** ] 欄位會指出在 **ObjectId** ] 欄位中指定的信箱上�
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-如需與電子郵件轉寄相關之參數的詳細資訊，請參閱 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) 文章。
+如需與電子郵件轉寄相關之參數的詳細資訊，請參閱 [Set-Mailbox](/powershell/module/exchange/set-mailbox) 文章。
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>決定使用者是否刪除電子郵件專案
 
@@ -140,9 +140,9 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 以下說明如何為此案例設定審核記錄搜尋查詢：
 
-**活動：** 在 [ **Exchange 信箱活動** ] 底下，選取下列其中一個或兩個活動：
+**活動：** 在 [ **Exchange 信箱活動**] 底下，選取下列其中一個或兩個活動：
 
-- **從 [刪除的郵件] 資料夾刪除郵件：** 此活動對應于「 **SoftDelete** 信箱審核」動作。 當使用者依序選取專案並按 **Shift+Delete** ，也會記錄此活動。 永久刪除專案之後，使用者可以復原它，直到刪除的專案保留期間到期為止。
+- **從 [刪除的郵件] 資料夾刪除郵件：** 此活動對應于「 **SoftDelete** 信箱審核」動作。 當使用者依序選取專案並按 **Shift+Delete**，也會記錄此活動。 永久刪除專案之後，使用者可以復原它，直到刪除的專案保留期間到期為止。
 
 - 已 **清除信箱中的郵件：** 此活動對應于「 **HardDelete** 信箱審核」動作。 當使用者從 [可復原的專案] 資料夾中清除專案時，就會記錄這種情況。 系統管理員可以使用「安全性與合規性中心」中的內容搜尋工具來搜尋及復原清除的專案，直到已刪除的專案保留期間到期或超過使用者的信箱處於保留狀態為止。
 
@@ -152,7 +152,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 **檔、資料夾或網站：** 請將此欄位保留空白。
 
-執行搜尋之後，您可以篩選搜尋結果，以顯示虛刪除專案或實刪除專案的審計記錄。 選取 [審計記錄] 以顯示 [ **詳細資料** ] 飛出頁面，然後選取 [ **詳細資訊** ]。 在 [ **AffectedItems** ] 欄位中會顯示刪除專案的其他資訊，例如專案的主旨行和位置。 下列螢幕擷取畫面顯示虛刪除專案和實刪除專案 **AffectedItems** 欄位的範例。
+執行搜尋之後，您可以篩選搜尋結果，以顯示虛刪除專案或實刪除專案的審計記錄。 選取 [審計記錄] 以顯示 [ **詳細資料** ] 飛出頁面，然後選取 [ **詳細資訊**]。 在 [ **AffectedItems** ] 欄位中會顯示刪除專案的其他資訊，例如專案的主旨行和位置。 下列螢幕擷取畫面顯示虛刪除專案和實刪除專案 **AffectedItems** 欄位的範例。
 
 **虛刪除專案之 AffectedItems 欄位的範例**
 
@@ -180,7 +180,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 以下說明如何為此案例設定審核記錄搜尋查詢：
 
-**活動：** 在 [ **Exchange 信箱活動** ] 底下，選取 [ **New-InboxRule 建立/修改/啟用/停用收件匣規則** ]。
+**活動：** 在 [ **Exchange 信箱活動**] 底下，選取 [ **New-InboxRule 建立/修改/啟用/停用收件匣規則**]。
 
 **開始日期** 和 **結束日期：** 選取適用于調查的日期範圍。
 
@@ -188,28 +188,28 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 **檔、資料夾或網站：** 請將此欄位保留空白。
 
-執行搜尋後，此活動的任何審計記錄會顯示在搜尋結果中。 選取要顯示 [ **詳細資料** ] 飛出頁面的審計記錄，然後選取 [ **詳細資訊** ]。 [ **參數** ] 欄位中會顯示 [收件匣規則] 設定的相關資訊。 下列螢幕擷取畫面和描述會反白顯示收件匣規則的相關資訊。
+執行搜尋後，此活動的任何審計記錄會顯示在搜尋結果中。 選取要顯示 [ **詳細資料** ] 飛出頁面的審計記錄，然後選取 [ **詳細資訊**]。 [ **參數** ] 欄位中會顯示 [收件匣規則] 設定的相關資訊。 下列螢幕擷取畫面和描述會反白顯示收件匣規則的相關資訊。
 
 ![新收件匣規則的審計記錄](../media/NewInboxRuleRecord.png)
 
 a. 在 [ **ObjectId** ] 欄位中，會顯示 [收件匣規則] 的完整名稱。 此名稱包含使用者信箱的別名 (例如，SaraD) 和收件匣規則的名稱 (例如，「從系統管理員那裡移動郵件」 ) 。
 
-b. 在 [ **參數** ] 欄位中，會顯示 [收件匣規則] 的條件。 在此範例中，條件是由 *From* 參數指定。 為 *From* 參數定義的值表示收件匣規則會作用於 admin@alpinehouse.onmicrosoft.com 所傳送的電子郵件。 如需可用於定義收件匣規則條件的完整參數清單，請參閱 [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) 文章。
+b. 在 [ **參數** ] 欄位中，會顯示 [收件匣規則] 的條件。 在此範例中，條件是由 *From* 參數指定。 為 *From* 參數定義的值表示收件匣規則會作用於 admin@alpinehouse.onmicrosoft.com 所傳送的電子郵件。 如需可用於定義收件匣規則條件的完整參數清單，請參閱 [New-InboxRule](/powershell/module/exchange/new-inboxrule) 文章。
 
-c. *MoveToFolder* 參數會指定收件匣規則的動作。 在此範例中，從 admin@alpinehouse.onmicrosoft.com 收到的郵件會移至名為 *AdminSearch* 的資料夾。 另請參閱 [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) 文章，以取得可用於定義收件匣規則動作的完整參數清單。
+c. *MoveToFolder* 參數會指定收件匣規則的動作。 在此範例中，從 admin@alpinehouse.onmicrosoft.com 收到的郵件會移至名為 *AdminSearch* 的資料夾。 另請參閱 [New-InboxRule](/powershell/module/exchange/new-inboxrule) 文章，以取得可用於定義收件匣規則動作的完整參數清單。
 
 d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收件匣規則的使用者。 此使用者也會顯示在搜尋結果頁面上的 [ **使用者** ] 欄中。
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>調查組織外部使用者成功登入的原因
 
-在審核記錄中檢查審計記錄時，您可能會看到指出外部使用者已透過 Azure Active Directory 驗證，且已成功登入組織的記錄。 例如，contoso.onmicrosoft.com 中的系統管理員可能會看到一個審計記錄，顯示來自不同組織的使用者 (例如，fabrikam.onmicrosoft.com) 成功登入 contoso.onmicrosoft.com。 同樣地，您可能會看到審計記錄指出使用 Microsoft 帳戶的使用者 (MSA) （如 Outlook.com 或 Live.com）成功登入您的組織。 在這些情況下，已審核的活動為 **使用者登入** 。 
+在審核記錄中檢查審計記錄時，您可能會看到指出外部使用者已透過 Azure Active Directory 驗證，且已成功登入組織的記錄。 例如，contoso.onmicrosoft.com 中的系統管理員可能會看到一個審計記錄，顯示來自不同組織的使用者 (例如，fabrikam.onmicrosoft.com) 成功登入 contoso.onmicrosoft.com。 同樣地，您可能會看到審計記錄指出使用 Microsoft 帳戶的使用者 (MSA) （如 Outlook.com 或 Live.com）成功登入您的組織。 在這些情況下，已審核的活動為 **使用者登入**。 
 
 產生此錯誤是系統刻意為之。 當外部使用者嘗試存取 SharePoint 網站或組織中的 OneDrive 位置時，azure Active Directory (Azure AD) （目錄服務）可允許所謂 *的傳遞驗證* 。 當外部使用者嘗試這麼做時，系統會提示他們輸入認證。 Azure AD 使用認證來驗證使用者，這表示只有 Azure AD 驗證使用者是其所聲稱的使用者。 在審計記錄中成功登入的指示是 Azure AD 驗證使用者的結果。 成功的登入並不表示使用者能夠存取任何資源或在您的組織中執行其他任何動作。 它只會指出使用者已由 Azure AD 進行驗證。 為了讓透過使用者能夠存取 SharePoint 或 OneDrive 資源，貴組織中的使用者必須透過傳送共用邀請或匿名共用連結，明確地與外部使用者共用資源。 
 
 > [!NOTE]
 > Azure AD 只允許 *第一方應用程式* 的傳遞驗證，例如 SharePoint 線上和商務 OneDrive。 不允許其他協力廠商應用程式。
 
-以下是已 **登入** 事件（即傳遞驗證的結果）之審核記錄中相關屬性的範例及描述。 選取 [審計記錄] 以顯示 [ **詳細資料** ] 飛出頁面，然後選取 [ **詳細資訊** ]。
+以下是已 **登入** 事件（即傳遞驗證的結果）之審核記錄中相關屬性的範例及描述。 選取 [審計記錄] 以顯示 [ **詳細資料** ] 飛出頁面，然後選取 [ **詳細資訊**]。
 
 ![成功傳遞驗證的審計記錄範例](../media/PassThroughAuth1.png)
 
@@ -223,7 +223,7 @@ d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收�
 
    e. **RecordType** 值為 **15** 表示已審核的活動 (USERLOGGEDIN) 為 (STS) Azure AD 中登入事件的安全權杖服務。
 
-如需 UserLoggedIn 審計記錄中所顯示之其他屬性的詳細資訊，請參閱 [Office 365 管理活動 API 架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)中的 Azure AD 相關架構資訊。
+如需 UserLoggedIn 審計記錄中所顯示之其他屬性的詳細資訊，請參閱 [Office 365 管理活動 API 架構](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)中的 Azure AD 相關架構資訊。
 
 以下兩個範例案例會導致成功的使用者因透過驗證而 **登入** 審核活動： 
 
@@ -256,15 +256,15 @@ d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收�
   
 - 在 Exchange Online 中使用下列 Cmdlet PowerShell:
 
-  - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) 搜尋特定使用者的信箱審核記錄。
+  - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) 搜尋特定使用者的信箱審核記錄。
 
-  - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch) 搜尋特定使用者的信箱審核記錄，並將結果透過電子郵件傳送給指定的收件者。
+  - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) 搜尋特定使用者的信箱審核記錄，並將結果透過電子郵件傳送給指定的收件者。
 
 ## <a name="search-for-mailbox-activities-performed-in-a-specific-mailbox-including-shared-mailboxes"></a>搜尋在特定信箱中執行的信箱活動 (包括共用信箱) 
 
 當您使用「規範中心」的 [審核記錄搜尋工具] 中的 [ **使用者** ] 下拉式清單，或 Exchange Online PowerShell 中的 **Search-UnifiedAuditLog UserIds** ] 命令時，您可以搜尋特定使用者執行的活動。 針對信箱審核活動，這種類型的搜尋會搜尋指定使用者執行的活動。 它不保證在相同信箱中執行的所有活動都會傳回搜尋結果中。 例如，「審核記錄搜尋」不會傳回代理人使用者執行之活動的審計記錄，因為搜尋特定使用者執行的信箱活動不會傳回代理人使用者所執行的活動，該使用者已獲指派許可權來存取另一個使用者的信箱。  (代理人使用者是指配給其他使用者信箱的 SendAs、SendOnBehalf 或 FullAccess 信箱許可權的人員。 ) 
 
-此外，使用 [審計記錄] 搜尋工具或 **Search-UnifiedAuditLog UserIds** 中的 [ **使用者** ] 下拉式清單，不會傳回共用信箱中所執行之活動的結果。
+此外，使用 [審計記錄] 搜尋工具或 **Search-UnifiedAuditLog UserIds** 中的 [**使用者**] 下拉式清單，不會傳回共用信箱中所執行之活動的結果。
 
 若要搜尋在特定信箱中執行的活動，或搜尋共用信箱中執行的活動，請在執行 **Search-UnifiedAuditLog** Cmdlet 時使用下列語法：
 

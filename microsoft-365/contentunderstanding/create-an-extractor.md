@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中建立擷取器。
-ms.openlocfilehash: b0b03d0e8804097f34f9cd5b17504263097d8696
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 8218d04d2f5cb4e8f8f67bdcd744b7f1a4a4d18a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242497"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905809"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中建立擷取器
 
@@ -86,12 +86,12 @@ ms.locfileid: "50242497"
 4. 選取 **[儲存]**。
 
 > [!NOTE]
-> 如需深入了解說明類型，請參閱[說明類型](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview)。  
+> 如需深入了解說明類型，請參閱[說明類型](./explanation-types-overview.md)。  
 
 
 ### <a name="use-the-explanation-library"></a>使用說明文件庫
 
-若要建立日期等項目的說明，[使用說明文件庫](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-the-explanation-library)比手動輸入所有變化要容易得多。 說明文件庫是一組內建的片語和模式說明。 文件庫會嘗試提供所有格式的常用片語或模式清單，例如日期、電話號碼、郵遞區號等等。 
+若要建立日期等項目的說明，[使用說明文件庫](./explanation-types-overview.md#use-the-explanation-library)比手動輸入所有變化要容易得多。 說明文件庫是一組內建的片語和模式說明。 文件庫會嘗試提供所有格式的常用片語或模式清單，例如日期、電話號碼、郵遞區號等等。 
 
 在 *[服務開始日期]* 範例中，使用說明文件庫中，*[日期]* 的內建說明更有效率：
 

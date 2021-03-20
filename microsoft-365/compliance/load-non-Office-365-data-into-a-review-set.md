@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 瞭解如何在高級 eDiscovery 案例中將非 Microsoft 365 資料匯入至審查集，以進行分析。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ad70207bdc015107a5aba074e2df06a42c0618b3
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: d9f705080ad5a769032581a1517b2daee8e822b2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285859"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903499"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>將非 Microsoft 365 資料載入到審閱集
 
@@ -53,7 +53,7 @@ ms.locfileid: "48285859"
 
 - 指派給「eDiscovery 管理員」角色群組 (並新增為 eDiscovery 管理員) 的帳戶。
 
-- 電腦上所安裝的 AzCopy v 8.1 工具，具有非 Microsoft 365 內容資料夾結構的存取權。 若要安裝 AzCopy，請參閱 [在 Windows 上使用 AzCopy app-v 8.1 傳輸資料](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)。 請務必在預設位置（ **% ProgramFiles (x86) % \ Microsoft SDKs\Azure\AzCopy**）安裝 AzCopy。 您必須使用 AzCopy app-v 8.1。 其他版本的 AzCopy 在 [Advanced eDiscovery] 中載入非 Microsoft 365 資料時可能無法運作。
+- 電腦上所安裝的 AzCopy v 8.1 工具，具有非 Microsoft 365 內容資料夾結構的存取權。 若要安裝 AzCopy，請參閱 [在 Windows 上使用 AzCopy app-v 8.1 傳輸資料](/previous-versions/azure/storage/storage-use-azcopy)。 請務必在預設位置（ **% ProgramFiles (x86) % \ Microsoft SDKs\Azure\AzCopy**）安裝 AzCopy。 您必須使用 AzCopy app-v 8.1。 其他版本的 AzCopy 在 [Advanced eDiscovery] 中載入非 Microsoft 365 資料時可能無法運作。
 
 
 ## <a name="upload-non-microsoft-365-content-into-advanced-ediscovery"></a>將非 Microsoft 365 內容上傳至高級電子檔探索
@@ -62,7 +62,7 @@ ms.locfileid: "48285859"
 
 2. 按一下 [ **複查集**]，然後選取要上傳非 Microsoft 365 資料的複查集。  如果您沒有審校集，您可以建立一個。 
  
-3. 在 [檢查] 集中，按一下 [**管理審閱集**]，然後按一下 [在**非 Microsoft 365 資料**格上**查看上傳**]。
+3. 在 [檢查] 集中，按一下 [**管理審閱集**]，然後按一下 [在 **非 Microsoft 365 資料** 格上 **查看上傳**]。
 
 4. 按一下 **[上傳** 檔案] 以啟動 [資料匯入嚮導]。
 
@@ -72,13 +72,13 @@ ms.locfileid: "48285859"
 
    ![非 Microsoft 365 匯入：準備](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
-5. 按 **[下一步：上傳**檔案]。
+5. 按 **[下一步：上傳** 檔案]。
 
 6. 在 [ **上傳** 檔案] 頁面上，執行下列動作：
 
    ![非 Microsoft 365 匯入：上傳檔案](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   a. 在 [檔案 **位置** ] 方塊中，確認或輸入您要上傳的非 Microsoft 365 資料所在根資料夾位置。 例如，在 [ **開始之前] 區段**中所顯示範例檔案的位置之後，您可以輸入 **%USERPROFILE\Downloads\nonO365**。 提供正確的位置，可確保路徑上顯示的 AzCopy 命令已正確更新。
+   a. 在 [檔案 **位置** ] 方塊中，確認或輸入您要上傳的非 Microsoft 365 資料所在根資料夾位置。 例如，在 [ **開始之前] 區段** 中所顯示範例檔案的位置之後，您可以輸入 **%USERPROFILE\Downloads\nonO365**。 提供正確的位置，可確保路徑上顯示的 AzCopy 命令已正確更新。
 
    b. 按一下 [ **複製到剪貼簿** ]，複製方塊中所顯示的命令。
 
@@ -91,7 +91,7 @@ ms.locfileid: "48285859"
 
 8. 回到安全性 & 合規性中心，然後按一下 **[下一步：處理** 檔案]。  這會啟動上傳至 Azure 存放位置的非 Microsoft 365 檔案的處理、文字提取及編制索引。  
 
-9. 在 [ **處理** 檔案] 頁面或 [ **工作** ] 索引標籤上，透過查看名為 [ **新增非 Microsoft 365 資料至審閱集**的工作]，追蹤處理檔的進度。  工作完成後，會在 [檢查] 集中使用新的檔案。
+9. 在 [ **處理** 檔案] 頁面或 [ **工作** ] 索引標籤上，透過查看名為 [ **新增非 Microsoft 365 資料至審閱集** 的工作]，追蹤處理檔的進度。  工作完成後，會在 [檢查] 集中使用新的檔案。
 
    ![非 Microsoft 365 匯入：處理檔](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 

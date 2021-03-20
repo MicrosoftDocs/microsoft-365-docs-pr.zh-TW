@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 在您的 Microsoft 365 for enterprise test 環境中，設定以群組為基礎的授權和動態群組成員資格。
-ms.openlocfilehash: d770e7be3b0b55855f1fee26a45d55260c3074cb
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 26840e2884202a0fa9c4bb563f3d7c653482ef87
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487573"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905365"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>為您的 Microsoft 365 for enterprise 測試環境自動化授權和群組成員資格
 
@@ -63,8 +63,8 @@ ms.locfileid: "48487573"
    - 選取 [ **部門** ] 屬性。
    - 選取 [ **等於** ] 運算子。
    - 在 [ **值** ] 方塊中，輸入 **Sales**。
-10. 選取 **[儲存]**。
-11. 選取 **[建立]**。
+10. 選取 [儲存]。
+11. 選取 [建立]。
 
 接下來，設定 Sales 群組，讓成員自動獲指派 Microsoft 365 E5 授權。
 
@@ -78,22 +78,22 @@ ms.locfileid: "48487573"
 2. 從 [ **Microsoft 365 系統管理中心** ] 索引標籤中，選取 [作用中 **使用者**]。
 3. 在 [作用中 **使用者** ] 頁面上，選取 [ **使用者 4** ] 帳戶。
 4. 在 [**使用者 4** ] 窗格中，選取 [**產品授權**] 的 [**編輯**]。
-5. 在 [**產品授權**] 窗格上，停用**Microsoft 365 E5**授權，然後選取 [**儲存**  >  **關閉**]。
+5. 在 [**產品授權**] 窗格上，停用 **Microsoft 365 E5** 授權，然後選取 [**儲存**  >  **關閉**]。
 6. 在 [使用者 4] 帳戶的內容中，確認未指派任何產品授權，而且沒有群組成員資格。
 7. 如需 **聯繫資訊**，請選取 [ **編輯**]。
 8. 在 [ **編輯連絡人資訊** ] 窗格中，選取 [ **連絡人資訊**]。
-9. 在 [**部門**] 方塊中，輸入**Sales**，然後選取 [**儲存**  >  **關閉**]。
+9. 在 [**部門**] 方塊中，輸入 **Sales**，然後選取 [**儲存**  >  **關閉**]。
 10. 等候幾分鐘，然後定期選取 [使用者 4] [帳戶] 窗格右上角的 [重新整理 **] 圖示。**
 
 及時，您應該會看到：
 
-- 使用**Sales**群組更新的**群組成員資格**屬性。
-- 使用**Microsoft 365 E5**授權更新的**產品授權**屬性。
+- 使用 **Sales** 群組更新的 **群組成員資格** 屬性。
+- 使用 **Microsoft 365 E5** 授權更新的 **產品授權** 屬性。
 
 請參閱下列文章，以在實際執行環境中部署動態群組成員資格和自動授權：
 
-- [在 Azure Active Directory 中以群組為基礎的授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
-- [Azure Active Directory 中的動態群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
+- [在 Azure Active Directory 中以群組為基礎的授權](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+- [Azure Active Directory 中的動態群組](/azure/active-directory/users-groups-roles/groups-create-rule)
 
 ## <a name="next-step"></a>下一步
 
@@ -107,4 +107,4 @@ ms.locfileid: "48487573"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

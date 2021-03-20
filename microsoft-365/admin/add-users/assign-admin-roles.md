@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 瞭解如何將系統管理員角色指派給您公司中的使用者或多位使用者，以便他們可以在系統管理中心執行特定工作。
-ms.openlocfilehash: c0dfef0860e5729a135a142383bdb60aa9d310be
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: cfc4a7e106ca343435777aba1d0b9836f90a6f44
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906248"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904501"
 ---
 # <a name="assign-admin-roles"></a>指派系統管理員角色
 
@@ -61,16 +61,16 @@ ms.locfileid: "48906248"
 
 1. 在系統管理中心中，移至 **角色** > **角色** ，以查看組織可使用的所有系統管理員角色。
 2. 選取您要指派給使用者的系統管理員角色。
-3. 選取 [指派的系統 **管理員** ] [ > **新增** ]。
+3. 選取 [指派的系統 **管理員**] [ > **新增**]。
 4. 輸入使用者的 **顯示名稱** 或使用者名稱，然後從建議 **清單中選取** 使用者。
 5. 在您完成之前，新增多個使用者。
-6. 選取 [ **儲存** ]，然後將使用者新增至指派的系統管理員清單。
+6. 選取 [ **儲存**]，然後將使用者新增至指派的系統管理員清單。
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>指派使用者至使用中使用者的系統管理員角色
 
 1. 在系統管理中心中，移至 [ **使用者** 作用中 > [使用者](https://go.microsoft.com/fwlink/p/?linkid=834822) ] 頁面。
 
-2. 在 [作用中 **使用者** ] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [ **角色** ] 旁邊的 [ **管理角色** ]。
+2. 在 [作用中 **使用者** ] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [ **角色**] 旁邊的 [ **管理角色**]。
 
 3. 選取您要指派給使用者的系統管理員角色。 如果您找不到所要的角色，請選取清單底部的 [ **全部顯示** ]。
 
@@ -80,7 +80,7 @@ ms.locfileid: "48906248"
 
 1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
-2. 在 [作用中 **使用者** ] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [ **角色** ] 旁的 [ **編輯** ]。 
+2. 在 [作用中 **使用者** ] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [ **角色**] 旁的 [ **編輯**]。 
 
     如果您看不到 [ **編輯** ] 選項，則表示您沒有編輯權，也無法將系統管理員角色指派給其他人。 在您的企業中要求全域系統管理員為您指派角色。 在小型企業中，企業擁有者 (購買您訂閱的人員) 是全域系統管理員。在大型企業中，IT 部門的主要人員是全域系統管理員。
 
@@ -92,7 +92,7 @@ ms.locfileid: "48906248"
 
 1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
-2. 在 [作用中 **使用者** ] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [ **角色** ] 旁的 [ **編輯** ]。
+2. 在 [作用中 **使用者** ] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [ **角色**] 旁的 [ **編輯**]。
 
     如果您看不到 [ **編輯** ] 選項，則表示您沒有編輯權，也無法將系統管理員角色指派給其他人。 在您的企業中要求全域系統管理員為您指派角色。 在小型企業中，企業擁有者 (購買您訂閱的人員) 是全域系統管理員。在大型企業中，IT 部門的主要人員是全域系統管理員。
 
@@ -102,7 +102,7 @@ ms.locfileid: "48906248"
 
 ## <a name="assign-admin-roles-to-multiple-users"></a>指派系統管理員角色給多個使用者
 
-如果您知道 PowerShell，請參閱 [使用 PowerShell 指派角色給使用者帳戶](https://go.microsoft.com/fwlink/?linkid=854257)。 這最適合用來指派角色給數百個使用者。
+如果您知道 PowerShell，請參閱 [使用 PowerShell 指派角色給使用者帳戶](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)。 這最適合用來指派角色給數百個使用者。
   
 使用下列指示指派角色給數十個使用者。
 
@@ -114,7 +114,7 @@ ms.locfileid: "48906248"
 
 您可以以兩種不同的方式來檢查系統管理員角色許可權：
 
-- 您可以移至使用者的詳細資料，並在 [ **帳戶** ] 頁面的 [ **角色** ] 中查看。
+- 您可以移至使用者的詳細資料，並在 [**帳戶**] 頁面的 [**角色**] 中查看。
 - 或者，您可以移至 [ **角色** ] 並選取 [管理員] 角色，然後選取 [指派的系統管理員] 以查看指派的使用者。
 
 ::: moniker-end
@@ -123,8 +123,8 @@ ms.locfileid: "48906248"
 
 [關於 Microsoft 365 系統管理員角色](about-admin-roles.md)
 
-[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+[Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-[使用 PowerShell 將角色指派給使用者帳戶](https://docs.microsoft.com/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell)
+[使用 PowerShell 將角色指派給使用者帳戶](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
 
 [授權或移除夥伴關係](../misc/add-partner.md)

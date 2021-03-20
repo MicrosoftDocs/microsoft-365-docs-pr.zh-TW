@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 瞭解如何還原已刪除的使用者帳戶和所有相關聯的資料。
-ms.openlocfilehash: d14995c8ee2d62c1d722ef0bcc7577745a747082
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: f3986ed1ba007dcac87bdfb9322ba5c5bf081b35
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113994"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903709"
 ---
 # <a name="restore-a-user"></a>還原使用者
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
    
@@ -155,4 +155,3 @@ ms.locfileid: "50113994"
 ## <a name="related-articles"></a>相關文章
 
 [刪除使用者](delete-a-user.md)
-  

@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 26e62d6e59f1f90e35d9e18e6eed917a66876645
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: f8dd666c41863192d866693c6860a64064f846e6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453918"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904849"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps 企業版
 
@@ -47,7 +47,7 @@ Microsoft 受管理的桌面不支援部署 M365 應用程式的32位版本的 e
 
 ## <a name="updates-to-microsoft-365-apps"></a>Microsoft 365 應用程式的更新
 
-Microsoft 365 應用程式已設定為在 [每月的 Enterprise 通道](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)上更新。 這項練習每月都會為您的使用者提供新的 Office 功能，但每月只會收到一次更新，且可預測的發行排程。 更新會在每月的第二個星期二發佈;這些更新可包含功能、安全性和品質更新。 這些更新會自動進行，而且會直接從 Office CDN （適用于該特定通道）上抽出。
+Microsoft 365 應用程式已設定為在 [每月的 Enterprise 通道](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)上更新。 這項練習每月都會為您的使用者提供新的 Office 功能，但每月只會收到一次更新，且可預測的發行排程。 更新會在每月的第二個星期二發佈;這些更新可包含功能、安全性和品質更新。 這些更新會自動進行，而且會直接從 Office CDN （適用于該特定通道）上抽出。
 
 Microsoft 受管理的桌面 staggers 每個版本，以找出您環境中的任何潛在問題。 從 Microsoft 365 應用程式產品群組發行的28天后，我們會完成首展。 Microsoft 受管理的桌面排程將更新版本更新成不同的群組，允許驗證和測試的時間如下： 
 
@@ -56,7 +56,7 @@ Microsoft 受管理的桌面 staggers 每個版本，以找出您環境中的任
 - Fast：3天
 - 寬：7天
 
-Microsoft 受管理的桌面會設定裝置的7天 [更新期限](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) 。 更新可供使用後，必須在七天內安裝。 使用者會 [收到](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) 下列數個位置要求的更新：應用程式，在最後期限之前的系統託盤12小時內，而且會在最後期限之前收到15分鐘的警告。 所有 Microsoft 365 應用程式必須關閉，更新才能完成。
+Microsoft 受管理的桌面會設定裝置的7天 [更新期限](/deployoffice/configure-update-settings-microsoft-365-apps) 。 更新可供使用後，必須在七天內安裝。 使用者會 [收到](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) 下列數個位置要求的更新：應用程式，在最後期限之前的系統託盤12小時內，而且會在最後期限之前收到15分鐘的警告。 所有 Microsoft 365 應用程式必須關閉，更新才能完成。
 
 ### <a name="pausing-or-rolling-back-an-update"></a>暫停或回復更新
 
@@ -68,7 +68,7 @@ Microsoft 受管理的桌面會設定裝置的7天 [更新期限](https://docs.m
 
 傳遞優化是 Windows 10 中可用的對等發佈技術。 它可讓裝置共用從 Microsoft 透過網際網路下載之裝置的內容，例如更新。 因為裝置可以從其本機網路上的另一個裝置取得更新的某些部分，而不是完全從 Microsoft 下載更新，所以使用它可協助減少網路頻寬。
 
-預設會在執行 Windows 10 企業版或 Windows 10 教育版的裝置上啟用[傳遞優化](https://docs.microsoft.com/deployoffice/delivery-optimization)。 
+預設會在執行 Windows 10 企業版或 Windows 10 教育版的裝置上啟用[傳遞優化](/deployoffice/delivery-optimization)。 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Microsoft 受管理的桌面所管理的設定
 
@@ -76,7 +76,7 @@ Microsoft 會管理部分設定為服務的一部分。 Microsoft 受管理的�
 
 ### <a name="update-settings"></a>更新設定
 
-Microsoft 受管理的桌面維護受管理裝置的所有 [更新設定](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) ，您應該修改這些設定。
+Microsoft 受管理的桌面維護受管理裝置的所有 [更新設定](/deployoffice/configure-update-settings-microsoft-365-apps) ，您應該修改這些設定。
 
 ### <a name="set-updates-to-occur-automatically"></a>將更新設定為自動進行
 
@@ -88,7 +88,7 @@ Microsoft 受管理的桌面維護受管理裝置的所有 [更新設定](https:
 
 **預設值**：7天
 
-**UpdateDeadline** 原則是用來設定使用者在裝置上強制執行更新之前所用的寬限期。 此期限原則也會觸發 [通知](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) 給使用者，以通知他們其裝置所需的變更。  
+**UpdateDeadline** 原則是用來設定使用者在裝置上強制執行更新之前所用的寬限期。 此期限原則也會觸發 [通知](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) 給使用者，以通知他們其裝置所需的變更。  
 
 ### <a name="defer-updates-on-a-device-for-a-period"></a>推遲裝置上的更新時間
 
@@ -103,7 +103,7 @@ Microsoft 受管理的桌面維護受管理裝置的所有 [更新設定](https:
 
 **預設值**： False
 
-在 Microsoft 受管理的桌面裝置上，[隱藏更新通知] 設定為 **False** ，可在需要更新時 [通知](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) 使用者，以提供最佳的更新體驗。
+在 Microsoft 受管理的桌面裝置上，[隱藏更新通知] 設定為 **False** ，可在需要更新時 [通知](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) 使用者，以提供最佳的更新體驗。
 
 ### <a name="specify-a-location-to-look-for-updates"></a>指定要尋找更新的位置
 
@@ -150,7 +150,7 @@ Microsoft 受管理的桌面也可以隨意設定其他 Microsoft 365 應用程�
 
 ## <a name="settings-you-manage"></a>您管理的設定
 
-Microsoft 受管理的桌面尚未設定許多其他原則成為我們的服務的一部分。 您可以使用使用 [Office Cloud Policy](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Service 的 Microsoft Intune 來設定這些原則。 若要設定這些原則，請遵循下列步驟：
+Microsoft 受管理的桌面尚未設定許多其他原則成為我們的服務的一部分。 您可以使用使用 [Office Cloud Policy](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Service 的 Microsoft Intune 來設定這些原則。 若要設定這些原則，請遵循下列步驟：
 
 1.  登入 Microsoft 端點管理員管理中心。
 2.  **針對 Office app > 建立，選取應用程式 > 原則**

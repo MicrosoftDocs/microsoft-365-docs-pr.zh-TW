@@ -24,16 +24,16 @@ search.appverid:
 - GEA150
 - BCS160
 description: '瞭解如何從試算表或其他 CSV 格式的檔案中的清單，將多個使用者新增至 Microsoft 365 for business。 在說明如何將帳戶新增至 Microsoft 365 的 YouTube 觀看影片。 在此程式結束時，具有帳戶的每位使用者都會有 Microsoft 365 信箱。 '
-ms.openlocfilehash: 7629879990facbce57a6fbca1aa543471ad1b05b
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 6b3e8d885466e44a4aa23427a54cfc98b2eebdf3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877209"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905617"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>同時將多個使用者新增至 Microsoft 365-系統管理說明
 
-小組中的每位人員必須先使用使用者帳戶，才能登入並存取 Microsoft 365 服務，例如電子郵件和 Office。如果您有許多人員，您可以從 Excel 試算表或以 CSV 格式儲存的其他檔案，一次新增他們的帳戶。 [不確定 CSV 格式是什麼](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)？
+小組中的每位人員必須先使用使用者帳戶，才能登入並存取 Microsoft 365 服務，例如電子郵件和 Office。 如果您有許多人員，您可以從 Excel 試算表或以 CSV 格式儲存的其他檔案，一次新增他們的帳戶。 [不確定 CSV 格式是什麼](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)？
   
 > [!NOTE]
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心]** 開關將它開啟。
@@ -134,4 +134,4 @@ CSV 檔案是以逗號區分值的檔案。您可以用任何文字編輯器或�
 
 ## <a name="related-articles"></a>相關文章
 
-[個別或大量將使用者新增至 Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[個別或大量將使用者新增至 Microsoft 365](/office365/admin/add-users/add-users)

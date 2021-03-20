@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 0089210b72f65a05b87446132572de028b2a67a8
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 61d7f3d805bf43fca21dd125e37b179e6284efc9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906868"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904693"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Microsoft Cloud for Enterprise Architects 圖例
 
@@ -58,9 +58,9 @@ IT 結構設計師在使用 Microsoft 服務和平台時，有關混合雲端需
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Microsoft Cloud 租用戶對租用戶移轉的架構方法 
 此系列的主題說明針對合併、併購、分割和其他案例下，可能會導致您移轉到新雲端租用戶的數個架構方法。 下列主題提供企業資源規劃的起始點指導方針。 
 
-|**Item**|**描述**|
+|**項目**|**描述**|
 |:-----|:-----|
-|[![Teams 邏輯架構海報的縮圖影像](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>2020年10月更新    |此模型包含： <ul><li>商務案例與架構方法的對應</li><li>設計考量</li><li>單一事件遷移流程範例</li><li>逐步遷移流程範例</li><li>承租人移動或分割流程範例</li></ul>|
+|[![Teams 邏輯架構海報的縮圖影像](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>2020年10月更新    |此模型包含： <ul><li>商務案例與架構方法的對應</li><li>設計考量</li><li>單一事件遷移流程範例</li><li>逐步遷移流程範例</li><li>承租人移動或分割流程範例</li></ul>|
 
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft cloud security for enterprise architects
@@ -83,7 +83,7 @@ What IT architects need to know about security in Microsoft cloud services and p
 <a name="attacks"></a>
 ### 常見的攻擊和保護您組織的 Microsoft 功能可瞭解最常見的網路攻擊，以及 Microsoft 如何協助您的組織在攻擊的每一個階段。 
 
-|**Item**|**描述**|
+|**項目**|**描述**|
 |:-----|:-----|
 |[![常見攻擊海報的圖例。 ](../media/solutions-architecture-center/common-attacks-model-thumb.png)](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> 2017年8月更新 | 此海報說明常見的攻擊路徑，並描述哪些功能有助於在攻擊的每個階段阻止攻擊者。 <br/>|
 

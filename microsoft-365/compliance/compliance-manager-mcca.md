@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何使用 Microsoft 規範設定分析器，透過 Microsoft 合規性管理員快速開始和執行。
-ms.openlocfilehash: 272477251efed7ebf13bd2e644869eaf2aad1bc2
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: a77f38dcc0c0215e539c868e47135f5d7194f4b6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454684"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906035"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>合規性管理員的 Microsoft 規範設定分析器 (預覽) 
 
@@ -101,7 +101,7 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
     ```
   | Input |  國家/地區 | 
   | :------------- | :------------: |
-  | 1  | 亞太地區 |
+  | 1 | 亞太地區 |
   | 2  | 澳洲 |
   | 3  | 加拿大 |
   | 4  | 歐洲 (除外法國) /中東/非洲 |
@@ -167,4 +167,4 @@ MCCA 會根據合規性管理員中建議的改進動作評估您目前的設定
 
 如需有關安裝、設定和使用 MCCA 的詳細資訊，請參閱 [GitHub (上的讀我檔案指示](https://github.com/OfficeDev/MCCA#overview)) 沒有 GitHub 帳戶。
 
-如需 Windows PowerShell 的詳細資訊，請從 [使用 PowerShell 檔](https://docs.microsoft.com/powershell/scripting/how-to-use-docs?view=powershell-7)開始。 另請參閱 [啟動 Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7)。
+如需 Windows PowerShell 的詳細資訊，請從 [使用 PowerShell 檔](/powershell/scripting/how-to-use-docs?view=powershell-7)開始。 另請參閱 [啟動 Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7)。

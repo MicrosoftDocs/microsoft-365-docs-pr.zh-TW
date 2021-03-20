@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: c3ba9ce6675e81a99309243db251b34a21a4b43f
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454156"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904933"
 ---
 # <a name="create-a-new-topic"></a>建立新主題 
 
@@ -33,7 +33,7 @@ ms.locfileid: "50454156"
 
 若要建立新的主題，您必須：
 - 具有 Viva 主題授權。
-- 具有 [**可建立或編輯主題的人員**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)許可權。 知識系統管理員可以在 Viva 主題主題許可權設定中，將此許可權授與使用者。 
+- 具有 [**可建立或編輯主題的人員**](./topic-experiences-user-permissions.md)許可權。 知識系統管理員可以在 Viva 主題主題許可權設定中，將此許可權授與使用者。 
 
 > [!Note] 
 > 有權管理主題中心主題的使用者 (知識管理員) 已具備建立及編輯主題的許可權。
@@ -126,13 +126,6 @@ ms.locfileid: "50454156"
 
 
 ## <a name="see-also"></a>請參閱
-
-
-
-  
-
-
-
 
 
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全域系統管理員如何變更使用者的電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: 6a5498f4e480802f8770f7b7adde55fe7c996dc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585291"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904477"
 ---
 # <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
@@ -65,7 +65,7 @@ ms.locfileid: "49585291"
 
 3. 在第一個方塊中，輸入新電子郵件地址的前半部。 如果您已將自己的網域新增至 Microsoft 365，您可以使用下拉式清單選擇新電子郵件別名的網域。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
 
 ::: moniker-end
 
@@ -221,7 +221,7 @@ ms.locfileid: "49585291"
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>[找不到符合參數名稱 'EmailAddresses' 的參數]
 
-如果您收到 **[找不到符合參數名稱 'EmailAddresses' 的參數]** 的錯誤訊息，表示需要久一點的時間，才能完成設定您的租用戶或您的自訂網域 (如果您最近剛新增自訂網域的話)。 設定程序最多可能需要 4 個小時才能完成。 請稍候一段時間，讓設定程序完成，然後再試一次。 如果問題仍然存在，請連絡[客戶支援](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)，並要求他們會為您執行完整的同步處理。
+如果您收到 **[找不到符合參數名稱 'EmailAddresses' 的參數]** 的錯誤訊息，表示需要久一點的時間，才能完成設定您的租用戶或您的自訂網域 (如果您最近剛新增自訂網域的話)。 設定程序最多可能需要 4 個小時才能完成。 請稍候一段時間，讓設定程序完成，然後再試一次。 如果問題仍然存在，請連絡[客戶支援](../contact-support-for-business-products.md)，並要求他們會為您執行完整的同步處理。
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>[很抱歉，無法編輯該使用者。 請檢閱使用者資訊，然後再試一次]
 
@@ -249,7 +249,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 > [!TIP]
 > 這會變更人員的 **userPrincipalName** 屬性，且與他們的 Microsoft Online Email Routing Address (MOERA) 電子郵件地址無關。 不過，這是讓人員的登入 UPN 符合其主要 SMTP 地址的最佳做法。 
   
-若要了解如何分別在 Active Directory、Windows Server 2003 及較舊版本中變更使用者名稱，請參閱[重新命名使用者帳戶](https://go.microsoft.com/fwlink/?LinkId=809091)。
+若要了解如何分別在 Active Directory、Windows Server 2003 及較舊版本中變更使用者名稱，請參閱[重新命名使用者帳戶](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10))。
   
 ## <a name="related-articles"></a>相關文章
 

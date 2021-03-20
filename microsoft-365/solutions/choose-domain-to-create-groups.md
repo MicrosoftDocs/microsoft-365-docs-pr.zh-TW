@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 透過設定電子郵件地址原則使用 PowerShell，瞭解如何選擇建立 Microsoft 365 群組時所使用的網域。
-ms.openlocfilehash: 1e56268c3994b1ac822869d154be826326039bfc
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 4908d5bd58ca6d0fbb50151983ddb459f0732284
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612937"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904681"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>選擇建立 Microsoft 365 群組時要使用的網域
 
@@ -30,7 +30,7 @@ ms.locfileid: "49612937"
   
 如果您的組織需要使用者在公司預設的公認網域以外的網域中建立他們的群組，您可以使用 PowerShell 來設定電子郵件地址原則 (EAPs) ，以允許這麼做。
 
-在您可以執行 PowerShell Cmdlet 之前，請下載並安裝可讓您與組織交談的模組。 [使用遠端 PowerShell 查看 [連線至 Exchange Online]](https://go.microsoft.com/fwlink/p/?LinkId=785881)。
+在您可以執行 PowerShell Cmdlet 之前，請下載並安裝可讓您與組織交談的模組。 [使用遠端 PowerShell 查看 [連線至 Exchange Online]](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ## <a name="example-scenarios"></a>範例案例
 
@@ -45,7 +45,7 @@ ms.locfileid: "49612937"
 下列兩個案例會說明如何完成此作業。
 
 > [!NOTE]
-> 當您有多個 EAPs 時，會以優先順序的順序評估。 值為1表示最高優先順序。 EAP 符合後，就不會再評估任何 EAP，而且在群組上加蓋標記的位址，都是根據相符的 EAP。 > 如果沒有 EAPs 符合指定的準則，群組便會在組織的預設公認網域中布建。 請參閱 [管理 Exchange Online 中公認的網域](https://go.microsoft.com/fwlink/p/?LinkId=785428) ，以取得如何新增公認的網域的詳細資料。
+> 當您有多個 EAPs 時，會以優先順序的順序評估。 值為1表示最高優先順序。 EAP 符合後，就不會再評估任何 EAP，而且在群組上加蓋標記的位址，都是根據相符的 EAP。 > 如果沒有 EAPs 符合指定的準則，群組便會在組織的預設公認網域中布建。 請參閱 [管理 Exchange Online 中公認的網域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) ，以取得如何新增公認的網域的詳細資料。
   
 ### <a name="scenario-1"></a>案例 1
 
@@ -100,7 +100,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
   
 ## <a name="hybrid-requirements"></a>混合需求
 
-如果您的組織是在混合案例中設定，請參閱 [使用內部部署 Exchange 混合式設定 Microsoft 365 群組](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) ，以確保您的組織符合建立 Microsoft 365 群組的需求。 
+如果您的組織是在混合案例中設定，請參閱 [使用內部部署 Exchange 混合式設定 Microsoft 365 群組](/exchange/hybrid-deployment/set-up-microsoft-365-groups) ，以確保您的組織符合建立 Microsoft 365 群組的需求。 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>使用電子郵件地址原則群組的其他資訊：
 
@@ -110,7 +110,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
     
 - 管理員和使用者也可以在建立群組時修改網域。
     
-- 使用者群組是使用標準查詢（ (使用者屬性) 已可用）決定。 請查看 [-RecipientFilter 參數](https://docs.microsoft.com/powershell/exchange/recipientfilter-properties) 的可篩選內容，以取得支援的可篩選屬性。 
+- 使用者群組是使用標準查詢（ (使用者屬性) 已可用）決定。 請查看 [-RecipientFilter 參數](/powershell/exchange/recipientfilter-properties) 的可篩選內容，以取得支援的可篩選屬性。 
     
 - 如果您未設定群組的任何 EAPs，則會選取預設的公認網域以建立群組。
     
@@ -124,4 +124,4 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
 
 [建立共同作業管理計畫](collaboration-governance-first.md)
 
-[在系統管理中心建立 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)
+[在系統管理中心建立 Microsoft 365 群組](../admin/create-groups/create-groups.md)

@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 摘要：使用 Microsoft 365 PowerShell，將替代功能變數名稱新增至現有的客戶租使用者。
-ms.openlocfilehash: 23137d2e2461e75a22d0403f9b8246a29e48019f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b6a40f387f9fc7e513137cda4253a62be2455aad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688833"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905569"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>利用適用於委派存取權限 (DAP) 合作夥伴的 Windows PowerShell 新增用戶端租用網域
 
@@ -43,9 +43,9 @@ ms.locfileid: "46688833"
     
 - 您需要客戶的 **TenantId** 。
     
-- FQDN 必須是已向網際網路網域名稱服務 (DNS) 註冊機構註冊的名稱 (如 GoDaddy)。如需公開註冊網域名稱的詳細資訊，請參閱[如何購買網域名稱](https://go.microsoft.com/fwlink/p/?LinkId=532541)。
+- FQDN 必須是已向網際網路網域名稱服務 (DNS) 註冊機構註冊的名稱 (如 GoDaddy)。如需公開註冊網域名稱的詳細資訊，請參閱[如何購買網域名稱](../admin/get-help-with-domains/buy-a-domain-name.md)。
     
-- 您需要知道如何為 DNS 註冊機構將 TXT 記錄新增至已註冊的 DNS 區域。 如需如何新增 TXT 記錄的詳細資訊，請參閱 [ADD DNS record to connect domain](https://go.microsoft.com/fwlink/p/?LinkId=532542)。 如果這些程序不適用，您將需要尋找適合 DNS 註冊機構的程序。
+- 您需要知道如何為 DNS 註冊機構將 TXT 記錄新增至已註冊的 DNS 區域。 如需如何新增 TXT 記錄的詳細資訊，請參閱 [ADD DNS record to connect domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。 如果這些程序不適用，您將需要尋找適合 DNS 註冊機構的程序。
     
 ## <a name="create-domains"></a>建立網域
 
@@ -87,7 +87,7 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
   
 ### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a>將 TXT 記錄新增至公開註冊的 DNS 區域
 
-在 Microsoft 365 開始接受導向至已公開登錄功能變數名稱的流量之前，您必須證明您擁有該網域的系統管理員許可權。 您可以在網域中建立 TXT 記錄，藉此證明擁有該網域。 TXT 記錄在網域中不具任何效果，因此當您建立網域擁有權之後即可予以刪除。 若要建立 TXT 記錄，請遵循 [ [新增 DNS 記錄] 中的程式來連接您的網域](https://go.microsoft.com/fwlink/p/?LinkId=532542)。 如果這些程序不適用，您將需要尋找適合 DNS 註冊機構的程序。
+在 Microsoft 365 開始接受導向至已公開登錄功能變數名稱的流量之前，您必須證明您擁有該網域的系統管理員許可權。 您可以在網域中建立 TXT 記錄，藉此證明擁有該網域。 TXT 記錄在網域中不具任何效果，因此當您建立網域擁有權之後即可予以刪除。 若要建立 TXT 記錄，請遵循 [ [新增 DNS 記錄] 中的程式來連接您的網域](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。 如果這些程序不適用，您將需要尋找適合 DNS 註冊機構的程序。
   
 透過 nslookup 確認成功建立 TXT 記錄。請遵循此語法。
   
@@ -131,4 +131,3 @@ FQDN of new domain     Verified    Managed
 #### 
 
 [合作夥伴說明](https://go.microsoft.com/fwlink/p/?LinkID=533477)
-

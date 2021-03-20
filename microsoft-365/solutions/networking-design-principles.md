@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 175903949b639740ad00b29013d5748b99bdb2de
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: 7de9aec29b0a57e85e3539fc2e99384de545c52a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771844"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904633"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>將 (網路連接至雲端) —一種架構師的視點
 
@@ -70,9 +70,9 @@ ms.locfileid: "49771844"
 
 ### <a name="to-proxy-or-not-to-proxy-that-is-the-question"></a>若為 proxy 或非 proxy，即表示問題
 
-考慮的第一個考慮因素是是否要 proxy 使用者的連線到 Office 365。 這一點很簡單;不 proxy。 Office 365 是透過網際網路存取，但不是網際網路。 它是核心服務的擴充，應視為這樣。 您可以在服務中使用 proxy 執行的任何動作（如 DLP 或反惡意程式碼或內容檢查），而且可以在規模上使用，而不需要破譯 TLS 加密的連線。 不過，如果您真的想要以其他方式控制的流量 proxy，請注意我們的指導方針 [https://aka.ms/pnc](https://aka.ms/pnc) 和流量類別 [https://aka.ms/ipaddrs](https://aka.ms/ipaddrs) 。 我們有三種類型的流量用於 Office 365。 優化和允許真的應該是直接的，並略過您的 proxy。 預設值可為 proxy。 詳細資料位於這些檔中 .。。閱讀。
+考慮的第一個考慮因素是是否要 proxy 使用者的連線到 Office 365。 這一點很簡單;不 proxy。 Office 365 是透過網際網路存取，但不是網際網路。 它是核心服務的擴充，應視為這樣。 您可以在服務中使用 proxy 執行的任何動作（如 DLP 或反惡意程式碼或內容檢查），而且可以在規模上使用，而不需要破譯 TLS 加密的連線。 不過，如果您真的想要以其他方式控制的流量 proxy，請注意我們的指導方針 [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) 和流量類別 [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) 。 我們有三種類型的流量用於 Office 365。 優化和允許真的應該是直接的，並略過您的 proxy。 預設值可為 proxy。 詳細資料位於這些檔中 .。。閱讀。
 
-使用 proxy 的大多數客戶在實際查看其執行內容時，請先意識到當用戶端對 proxy 進行 HTTP 連線要求時，proxy 現在只會有昂貴的額外路由器。 在使用中的通訊協定（例如 MAPI 和 RTC）甚至不是網頁 proxy 所知道的通訊協定，所以即使 TLS 破譯，也不會真正取得任何額外的安全性。 您取得額外 *的* 延遲。 [https://aka.ms/pnc](https://aka.ms/pnc)如需詳細資訊，請參閱，包括 Microsoft 365 流量的優化、允許和預設類別。
+使用 proxy 的大多數客戶在實際查看其執行內容時，請先意識到當用戶端對 proxy 進行 HTTP 連線要求時，proxy 現在只會有昂貴的額外路由器。 在使用中的通訊協定（例如 MAPI 和 RTC）甚至不是網頁 proxy 所知道的通訊協定，所以即使 TLS 破譯，也不會真正取得任何額外的安全性。 您取得額外 *的* 延遲。 [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md)如需詳細資訊，請參閱，包括 Microsoft 365 流量的優化、允許和預設類別。
 
 最後，請考慮 proxy 的整體影響及其對應的回應，以應對這種影響。 隨著透過 proxy 進行越來越多的連線，它可能會降低 TCP 規模因素，使其不需要大量增加流量的緩衝。 我已看到客戶的客戶，其 proxy 因其使用的比例因數為0而超載。 因為縮放比例是指數值，我們喜歡使用8，所以每個比例因數值的減少都會對輸送量造成極大的負面影響。
 
@@ -88,9 +88,9 @@ TLS 檢查是指安全性！ 但不是真的！ 許多具有 proxy 的客戶都�
 
 但不是。 所有與 Office 365 的連線都是透過 TLS。 我們現在已經為您提供了 TLS 1.2，而且即將停用舊版用戶端，因為舊版用戶端仍會使用它們，而且這是一種風險。
 
-強制 TLS 連線（或32）以先透過 VPN 傳送，然後再移至服務，不會增加安全性。 它會增加延遲，並減少整體輸送量。 在某些 VPN 解決方案中，它甚至會強制 UDP 經由 TCP，這會對資料流程流量產生非常負面的影響。 而且，除非您執行 TLS 檢查，否則沒有任何不利的不利因素。 在客戶中，一種非常常見的主題是大多數的員工都是「遠端」，這是因為他們會看到大量的頻寬和效能影響，讓所有使用者都能使用 VPN 來進行連線，而不是設定分割隧道以供 access [優化類別 Office 365 端點](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories)。
+強制 TLS 連線（或32）以先透過 VPN 傳送，然後再移至服務，不會增加安全性。 它會增加延遲，並減少整體輸送量。 在某些 VPN 解決方案中，它甚至會強制 UDP 經由 TCP，這會對資料流程流量產生非常負面的影響。 而且，除非您執行 TLS 檢查，否則沒有任何不利的不利因素。 在客戶中，一種非常常見的主題是大多數的員工都是「遠端」，這是因為他們會看到大量的頻寬和效能影響，讓所有使用者都能使用 VPN 來進行連線，而不是設定分割隧道以供 access [優化類別 Office 365 端點](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)。
 
-這是一種簡單的修復方式，可讓您進行分割，也就是您應該執行的工作。 如需詳細資訊，請確定您已透過 [VPN 分割隧道，針對遠端使用者，查看 [優化 Office 365 的連線能力](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)]。
+這是一種簡單的修復方式，可讓您進行分割，也就是您應該執行的工作。 如需詳細資訊，請確定您已透過 [VPN 分割隧道，針對遠端使用者，查看 [優化 Office 365 的連線能力](../enterprise/microsoft-365-vpn-split-tunnel.md)]。
 
 ## <a name="the-sins-of-the-past"></a>過去的原罪
 
@@ -100,9 +100,9 @@ TLS 檢查是指安全性！ 但不是真的！ 許多具有 proxy 的客戶都�
 
 ## <a name="exceptions-to-the-rules"></a>規則的例外狀況
 
-如果您的組織需要 [租使用者限制](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)，您必須使用具有 TLS 中斷的 proxy，並檢查以強制透過 proxy 執行某些流量，但是您不需要強制所有流量透過它。  這不是全部或任何的主張，所以請注意 proxy 必須修改的內容。
+如果您的組織需要 [租使用者限制](/azure/active-directory/manage-apps/tenant-restrictions)，您必須使用具有 TLS 中斷的 proxy，並檢查以強制透過 proxy 執行某些流量，但是您不需要強制所有流量透過它。  這不是全部或任何的主張，所以請注意 proxy 必須修改的內容。
 
-如果您想要允許分割分割，但同時又使用 proxy 進行一般 web 流量，請確定您的 PAC 檔案定義必須直接走向什麼，以及如何為透過 VPN 隧道定義的有趣流量定義。 我們會提供範例 PAC 檔案 [https://aka.ms/ipaddrs](https://aka.ms/ipaddrs) ，讓這項管理工作變得更容易。
+如果您想要允許分割分割，但同時又使用 proxy 進行一般 web 流量，請確定您的 PAC 檔案定義必須直接走向什麼，以及如何為透過 VPN 隧道定義的有趣流量定義。 我們會提供範例 PAC 檔案 [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) ，讓這項管理工作變得更容易。
 
 ## <a name="conclusion"></a>總結
 
@@ -112,25 +112,25 @@ TLS 檢查是指安全性！ 但不是真的！ 許多具有 proxy 的客戶都�
 
 ## <a name="further-reading"></a>進一步閱讀
 
-[Office 365 網路連接原則](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles)
+[Office 365 網路連接原則](../enterprise/microsoft-365-network-connectivity-principles.md)
 
-[Office 365 URL 與 IP 位址範圍](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
+[Office 365 URL 與 IP 位址範圍](../enterprise/urls-and-ip-address-ranges.md)
 
-[管理 Office 365 端點](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints)
+[管理 Office 365 端點](../enterprise/managing-office-365-endpoints.md)
 
-[Office 365 IP 位址和 URL Web 服務](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-ip-web-service)
+[Office 365 IP 位址和 URL Web 服務](../enterprise/microsoft-365-ip-web-service.md)
 
-[評估 Office 365 的網路連線能力](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
+[評估 Office 365 的網路連線能力](../enterprise/assessing-network-connectivity.md)
 
-[Office 365 網路與效能調整](https://docs.microsoft.com/microsoft-365/enterprise/network-planning-and-performance)
+[Office 365 網路與效能調整](../enterprise/network-planning-and-performance.md)
 
-[評估 Office 365 的網路連線能力](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
+[評估 Office 365 的網路連線能力](../enterprise/assessing-network-connectivity.md)
 
-[使用基準與效能歷程記錄進行 Office 365 效能調整](https://docs.microsoft.com/microsoft-365/enterprise/performance-tuning-using-baselines-and-history)
+[使用基準與效能歷程記錄進行 Office 365 效能調整](../enterprise/performance-tuning-using-baselines-and-history.md)
 
-[Office 365 的效能疑難排解規劃](https://docs.microsoft.com/microsoft-365/enterprise/performance-troubleshooting-plan)
+[Office 365 的效能疑難排解規劃](../enterprise/performance-troubleshooting-plan.md)
 
-[內容傳遞網路](https://docs.microsoft.com/microsoft-365/enterprise/content-delivery-networks)
+[內容傳遞網路](../enterprise/content-delivery-networks.md)
 
 [Microsoft 365 連線測試](https://connectivity.office.com/)
 
@@ -138,6 +138,4 @@ TLS 檢查是指安全性！ 但不是真的！ 許多具有 proxy 的客戶都�
 
 [Office 365 網路部落格](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)
 
-[使用 VPN 分割隧道的遠端使用者的 Office 365 連線能力](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)
-
-
+[使用 VPN 分割隧道的遠端使用者的 Office 365 連線能力](../enterprise/microsoft-365-vpn-split-tunnel.md)

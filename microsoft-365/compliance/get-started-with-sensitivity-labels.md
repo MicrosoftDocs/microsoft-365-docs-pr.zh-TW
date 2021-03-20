@@ -19,22 +19,22 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: ef89cadc09dea7c2186fbf4a0d76d2c690aa8acc
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: b88e32ccfc0f82749ede2b0919001e9c29f7f7be
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597215"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906015"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 如需敏感度標籤為何及其如何可協助您保護組織資料的相關資訊，請參閱[了解敏感度標籤](sensitivity-labels.md)。
 
-如果您有 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)，請判斷是否需要將標籤移轉至統一標籤平台，以及要使用的標籤用戶端：
-- [如何判斷我的租用戶是否在統一標籤平台上？](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [選擇您的 Windows 標籤解決方案](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
+如果您有 [Azure 資訊保護](/azure/information-protection/what-is-information-protection)，請判斷是否需要將標籤移轉至統一標籤平台，以及要使用的標籤用戶端：
+- [如何判斷我的租用戶是否在統一標籤平台上？](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
+- [選擇您的 Windows 標籤解決方案](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
 
 當您準備好要開始使用敏感度標籤來保護組織的資料時：
 
@@ -54,7 +54,7 @@ ms.locfileid: "50597215"
 
 許多不同的訂閱都支援敏感度標籤，以及使用者的授權需求取決於您所使用的功能。
 
-若要查看授權使用者使用 Microsoft 365 合規性功能的選項，請參閱 [Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。 如需敏感度標籤，請參閱[資訊保護](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)一節及相關的 PDF 或 Excel 下載。
+若要查看授權使用者使用 Microsoft 365 合規性功能的選項，請參閱 [Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 如需敏感度標籤，請參閱[資訊保護](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)一節及相關的 PDF 或 Excel 下載。
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>建立和管理敏感度標籤所需的權限
 
@@ -64,7 +64,7 @@ ms.locfileid: "50597215"
 
 除了使用預設角色以外，您可以建立新的角色群組，並將 [敏感度標籤系統管理員] 或 [組織組態] 角色新增至此群組。 唯讀角色請使用 [敏感度標籤讀取器]。 
 
-如需將使用者新增至預設角色或建立您自己的角色群組的指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+如需將使用者新增至預設角色或建立您自己的角色群組的指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有建立及設定敏感度標籤及其標籤原則時，才需要這些權限。 您不需要在應用程式或服務中套用這些標籤。 如果與敏感度標籤相關的特定設定需要其他權限，則這些權限會列在個別的文件指示中。
 
@@ -82,19 +82,19 @@ ms.locfileid: "50597215"
 |我想要...|文件|
 |----------------|---------------|
 |管理 Office 應用程式的敏感度標籤，讓內容標示為已建立 — 包括在所有平台上的手動標籤支援 |[在 Office 應用程式中使用敏感度標籤](sensitivity-labels-office-apps.md)|
-|讓使用者能夠使用 Office 應用程式、檔案總管和 PowerShell，從 Windows 電腦標籤及保護檔案|[適用於 Windows 的 Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
+|讓使用者能夠使用 Office 應用程式、檔案總管和 PowerShell，從 Windows 電腦標籤及保護檔案|[適用於 Windows 的 Azure 資訊保護整合標籤用戶端](/azure/information-protection/rms-client/aip-clientv2)|
 |使用敏感度標籤加密文件和電子郵件，並限制能夠存取該內容的人員以及使用方式 |[使用敏感度標籤來套用加密以限制存取內容](encryption-sensitivity-labels.md)|
 |在網頁上啟用 Office 的敏感度標籤，並提供共同撰寫、電子文件探索、資料遺失防護、搜尋支援，即使文件已加密 | [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)
 |當檔案加密時，在 Office 桌面應用程式中使用共同撰寫和自動儲存 | [針對使用敏感度標籤加密的檔案啟用共同撰寫](sensitivity-labels-coauthoring.md)
 |自動將敏感度標籤套用至文件和電子郵件 | [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)|
 |使用敏感度標籤來保護 Teams 和 SharePoint 中的內容 |[對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤](sensitivity-labels-teams-groups-sites.md)|
 |防止或警告使用者共用具有特定敏感度標籤的檔案或電子郵件 |[使用敏感度標籤作為 DLP 原則中的條件 (預覽)](dlp-sensitivity-label-as-condition.md) |
-|探索、標記和保護儲存在內部部署資料存放區中的檔案 |[部署 Azure 資訊保護掃描器以自動分類和保護檔案](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
-|探索、標記和保護儲存在雲端的資料存放區中的檔案|[探索、分類、標記和保護儲存在雲端中的控管和敏感性資料](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|在 Power BI 中套用和檢視標籤，並在服務外儲存該資料時加以保護|[在 Power BI 套用敏感度標籤](https://docs.microsoft.com/power-bi/admin/service-security-sensitivity-label-overview)|
+|探索、標記和保護儲存在內部部署資料存放區中的檔案 |[部署 Azure 資訊保護掃描器以自動分類和保護檔案](/azure/information-protection/deploy-aip-scanner)|
+|探索、標記和保護儲存在雲端的資料存放區中的檔案|[探索、分類、標記和保護儲存在雲端中的控管和敏感性資料](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|在 Power BI 中套用和檢視標籤，並在服務外儲存該資料時加以保護|[在 Power BI 套用敏感度標籤](/power-bi/admin/service-security-sensitivity-label-overview)|
 |監視並了解組織中使用敏感度標籤的方法|[了解您的資料 - 資料分類概觀](data-classification-overview.md) <br /><br /> [開始使用資料分類](data-classification-overview.md)|
-|將敏感度標籤延伸至第三方應用程式和服務|[Microsoft 資訊保護 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|將敏感度標籤延伸至 Azure Blob 儲存體、Azure 檔案、Azure Data Lake Storage Gen1 和 Azure Data Lake Storage Gen12 中的內容|[在 Azure Purview 中自動為您的內容加上標籤](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+|將敏感度標籤延伸至第三方應用程式和服務|[Microsoft 資訊保護 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|將敏感度標籤延伸至 Azure Blob 儲存體、Azure 檔案、Azure Data Lake Storage Gen1 和 Azure Data Lake Storage Gen12 中的內容|[在 Azure Purview 中自動為您的內容加上標籤](/azure/purview/create-sensitivity-label) |
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度標籤的使用者文件
@@ -111,6 +111,6 @@ ms.locfileid: "50597215"
 - [在 Office 中自動套用或建議敏感度標籤至您的檔案和電子郵件](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [自動套用或建議敏感度標籤的已知問題](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
-- [Azure 資訊保護統一標籤使用者指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-user-guide)
+- [Azure 資訊保護統一標籤使用者指南](/azure/information-protection/rms-client/clientv2-user-guide)
 
-如果您的敏感度標籤為 PDF 文件套用加密，則可在 Windows 或 Mac 上使用 Microsoft Edge 開啟這些文件。 如需詳細資訊及替代閱讀程式，請參閱 [受保護的 PDF 文件支援哪些 PDF 閱讀程式？](https://docs.microsoft.com/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+如果您的敏感度標籤為 PDF 文件套用加密，則可在 Windows 或 Mac 上使用 Microsoft Edge 開啟這些文件。 如需詳細資訊及替代閱讀程式，請參閱 [受保護的 PDF 文件支援哪些 PDF 閱讀程式？](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)

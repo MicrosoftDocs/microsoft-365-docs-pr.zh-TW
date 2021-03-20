@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明如何將 Microsoft 365 授權指派給使用者帳戶（個別或根據群組成員資格）。
-ms.openlocfilehash: a2eed7b3597dcc2531834456a9b05f5aa1b07a23
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 6bba3cd767787f450840c5cae6c30f2be21bed1b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326504"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905437"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>將 Microsoft 365 授權指派給使用者帳戶
 
@@ -47,13 +47,13 @@ ms.locfileid: "48326504"
 
 若要將 Microsoft 365 授權指派給個別使用者帳戶，您可以使用：
 
-- [Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
+- [Microsoft 365 系統管理中心](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
 - Azure AD 系統管理中心
 
 ## <a name="group-based-licensing"></a>群組型授權
 
-您可以在 Azure AD 中設定安全性群組，以自動將一組訂閱的授權指派給群組的所有成員。 這稱為*群組型授權*。 如果在群組中新增或移除使用者帳戶，則將自動指派或從使用者帳戶中取消指派群組訂閱的授權。
+您可以在 Azure AD 中設定安全性群組，以自動將一組訂閱的授權指派給群組的所有成員。 這稱為 *群組型授權*。 如果在群組中新增或移除使用者帳戶，則將自動指派或從使用者帳戶中取消指派群組訂閱的授權。
 
 請確定您有足夠的授權可供所有群組成員使用。 如果您用完了授權，除非有授權可供使用，否則將不會對新使用者指派授權。
 
@@ -61,13 +61,13 @@ ms.locfileid: "48326504"
 >您不應為包含 Azure 企業對企業 (B2B) 帳戶的群組設定以群組為基礎的授權。
 >
 
-如需更多 informaion，請參閱 [在 AZURE AD 中以群組為基礎的授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
+如需更多 informaion，請參閱 [在 AZURE AD 中以群組為基礎的授權](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
 ## <a name="next-steps"></a>後續步驟
 
 使用已獲指派授權的適當使用者帳戶集，您現在可以：
 
-- [實施安全性](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
-- [部署用戶端軟體，例如 Microsoft 365 應用程式](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
+- [實施安全性](../security/office-365-security/security-roadmap.md)
+- [部署用戶端軟體，例如 Microsoft 365 應用程式](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [設定裝置管理](device-management-roadmap-microsoft-365.md)
 - [設定服務和應用程式](configure-services-and-applications.md)

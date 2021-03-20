@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 在 Microsoft 365 系統管理中心管理這些 Azure 系統管理員角色。
-ms.openlocfilehash: 7a4e28667bc16d6619fe87451cd48ea77d89c81d
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126102"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904489"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的 Azure Active Directory 角色
 
-Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 不過，這些角色是 Azure 入口網站中可用角色的子集。 如果您有大型企業，則 Azure 入口網站中的角色可能符合您組織的需求。 正在尋找 Azure AD 的詳細角色描述嗎？ 查看 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 不過，這些角色是 Azure 入口網站中可用角色的子集。 如果您有大型企業，則 Azure 入口網站中的角色可能符合您組織的需求。 正在尋找 Azure AD 的詳細角色描述嗎？ 查看 [Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
 無論您是在 Microsoft 365 系統管理中心或適用於 Windows PowerShell 的 Azure AD 模組中指派角色，已獲指派系統管理員角色的使用者，將對貴組織已訂閱的雲端服務具備相同層級的存取權。
 
@@ -37,7 +37,7 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 
 ## <a name="all-azure-ad-roles"></a>所有 Azure AD 角色
 
-以下是 Microsoft 365 系統管理中心提供的所有可用系統管理員角色的清單。 正在尋找 Microsoft 365 系統管理員的詳細角色描述嗎？ 請查看[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)。
+以下是 Microsoft 365 系統管理中心提供的所有可用系統管理員角色的清單。 正在尋找 Microsoft 365 系統管理員的詳細角色描述嗎？ 請查看[關於系統管理員角色](./about-admin-roles.md?view=o365-worldwide)。
 
 |系統管理員角色     |說明  |
 |---------|---------|
@@ -57,7 +57,7 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 |Exchange 系統管理員     |  完全存取 Exchange Online、建立及管理群組、管理服務要求，以及監視服務健康情況。    |
 |外部身分識別提供者系統管理員    |     設定身分識別提供者以在直接同盟中使用。    |
 |全域系統管理員     |    對所有系統管理中心的所有管理功能和大部分資料具備不受限制的存取權。     |
-|全域讀取者     |    對於系統管理中心的所有管理功能和大部分資料具備唯讀存取權。 如需此角色的存取權限和限制的詳細描述，請參閱 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)。    |
+|全域讀取者     |    對於系統管理中心的所有管理功能和大部分資料具備唯讀存取權。 如需此角色的存取權限和限制的詳細描述，請參閱 [Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)。    |
 |群組系統管理員   |跨系統管理中心建立群組和管理所有群組設定。|
 |來賓邀請者     |    管理 Azure Active Directory B2B 來賓使用者邀請。     |
 |服務台系統管理員     | 重設所有非系統管理員和部分系統管理員角色的密碼和重新驗證、管理服務要求，以及監視服務健康情況。      |
@@ -99,7 +99,7 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 
 - 有限系統管理，所具權限等同於服務台系統管理員。
 
-在合作夥伴可以將這些角色指派給使用者之前，您必須先將該合作夥伴新增為您帳戶的委派系統管理員。 此程序是由獲授權的合作夥伴初始化。 合作夥伴會傳送電子郵件給您，詢問您是否想要授與其權限，以做為委派的系統管理員。如需指示，請參閱[授權或移除合作夥伴關係](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)。
+在合作夥伴可以將這些角色指派給使用者之前，您必須先將該合作夥伴新增為您帳戶的委派系統管理員。 此程序是由獲授權的合作夥伴初始化。 合作夥伴會傳送電子郵件給您，詢問您是否想要授與其權限，以做為委派的系統管理員。如需指示，請參閱[授權或移除合作夥伴關係](../misc/add-partner.md)。
   
 ## <a name="related-articles"></a>相關文章
 

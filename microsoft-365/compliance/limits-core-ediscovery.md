@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明 Microsoft 365 核心 eDiscovery 案例中的限制。
-ms.openlocfilehash: 2699e9b2511c742bb295f69611a976f6a3955980
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e18e1e6c1d9d7ecd78deaf267be72ccdc9d1ba5d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423444"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905885"
 ---
 # <a name="limits-in-core-ediscovery"></a>核心 eDiscovery 的限制
 
-下表列出核心 ediscovery 案例相關聯之核心 eDiscovery 案例和保留專案的限制。 如需核心 eDiscovery 的詳細資訊，請參閱 [核心 Ediscovery 一覽](ediscovery-cases.md)。
+下表列出核心 ediscovery 案例相關聯之核心 eDiscovery 案例和保留專案的限制。 如需核心 eDiscovery 的詳細資訊，請參閱 [核心 Ediscovery 一覽](./get-started-core-ediscovery.md)。
     
   | 限制的描述 | 限制 |
   |:-----|:-----|
@@ -40,9 +40,9 @@ ms.locfileid: "50423444"
    > [!NOTE]
    > <sup>1</sup> 若要查看超過1000案例、保留、搜尋或匯出的清單，您可以使用對應的 Office 365 安全性 & 合規性 PowerShell Cmdlet：
    > 
-   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
-   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
-   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
-   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
 如需與核心 eDiscovery 案例相關聯之內容搜尋與匯出相關限制的相關資訊，請參閱 [內容搜尋和核心 ediscovery 的限制](limits-for-content-search.md)。

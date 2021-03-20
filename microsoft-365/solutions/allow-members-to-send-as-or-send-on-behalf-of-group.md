@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 瞭解如何允許群組成員以 Microsoft 365 群組形式傳送電子郵件，或代表 Microsoft 365 群組傳送電子郵件。
-ms.openlocfilehash: 44a0a7a690c8faa9fe00732e8154f36aa5a6fe6f
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: cc0a9472f127fae94d77f618ed7347d844879ba8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727076"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904741"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允許成員傳送為或代表群組傳送
 
@@ -84,6 +84,6 @@ ms.locfileid: "50727076"
 
 [深入瞭解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
+[Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 
-[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189)
+[Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup)

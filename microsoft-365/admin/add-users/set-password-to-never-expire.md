@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 瞭解如何使用 Windows PowerShell 將部分個人的使用者密碼設為永不過期。
-ms.openlocfilehash: 2d60a8312be070d3f56cfef7cfb93e6c5da32991
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: 564ea3338fcb11d699d385a40c9594f34964edf7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580634"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903637"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>設定個別使用者的密碼永不過期
 
@@ -39,16 +39,16 @@ ms.locfileid: "49580634"
 
 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
 
-Microsoft cloud service 的全域系統管理員可以使用 [ [Azure Active Directory PowerShell For Graph]](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) ，將密碼設為不會到期的特定使用者。 您也可以使用 [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) Cmdlet 來移除永不過期的設定，或查看哪些使用者密碼設定為永不過期。
+Microsoft cloud service 的全域系統管理員可以使用 [ [Azure Active Directory PowerShell For Graph]](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) ，將密碼設為不會到期的特定使用者。 您也可以使用 [AzureAD](/powershell/module/Azuread) Cmdlet 來移除永不過期的設定，或查看哪些使用者密碼設定為永不過期。
 
 本指南適用于其他提供者，例如 Intune 和 Microsoft 365，也就是針對身分識別及目錄服務，也依賴 Azure AD。 [密碼到期] 是原則中唯一可以變更的部分。
 
 > [!NOTE]
-> 只有未透過目錄同步處理同步處理的使用者帳戶密碼才能設定為不會過期。 如需目錄同步作業的詳細資訊，請參閱 [CONNECT ad With AZURE AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。
+> 只有未透過目錄同步處理同步處理的使用者帳戶密碼才能設定為不會過期。 如需目錄同步作業的詳細資訊，請參閱 [CONNECT ad With AZURE AD](/azure/active-directory/connect/active-directory-aadconnect)。
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>如何檢查密碼的到期原則
 
-如需 AzureAD 模組中 Get-AzureADUser 命令的詳細資訊，請參閱參考文章 [AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)。
+如需 AzureAD 模組中 Get-AzureADUser 命令的詳細資訊，請參閱參考文章 [AzureADUser](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)。
 
 執行下列其中一個命令：
 

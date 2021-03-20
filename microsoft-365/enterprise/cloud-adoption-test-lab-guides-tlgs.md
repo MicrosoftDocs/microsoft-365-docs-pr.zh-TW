@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：使用這些測試實驗室指南 (Tlg) 設定 Microsoft 365 的示範、概念證明或開發/測試環境。
-ms.openlocfilehash: 9a8c13cfc89eff0852cc0589448e7745220e47b9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6d6beccf450f3c03e4503bdcb18a189658a1af13
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688402"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905173"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>使用測試實驗室指南 (Tlg) 測試 Microsoft 365
 
@@ -53,6 +53,6 @@ TLG 也會針對應用程式開發和測試建立具有代表性的環境，亦�
     
 ## <a name="related-topics"></a>相關主題
 
-[Microsoft 365 解決方案與架構中心](../solutions/solution-architecture-center.md)
+[Microsoft 365 解決方案與架構中心](../solutions/index.yml)
   
 [混合式解決方案](hybrid-solutions.md)

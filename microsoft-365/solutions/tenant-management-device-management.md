@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 為 Microsoft 365 承租人的裝置和應用程式管理部署正確的選項。
-ms.openlocfilehash: 96412cb52540e87341fa67e20382951db7becfbe
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 994ab7d21ae70307fa78e1f7249d39ac314a7358
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406369"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904609"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 5. 適用于企業承租人的 Microsoft 365 裝置和應用程式管理
 
@@ -34,13 +34,13 @@ Microsoft 365 for enterprise 包含一些功能，可協助您管理裝置，並
 為了協助您保護組織的資源，Microsoft 365 for enterprise 包含協助管理裝置及其存取應用程式的功能。 裝置管理有兩個選項：
 
 - Microsoft Intune，是企業的綜合裝置和應用程式管理解決方案。
-- 基本行動性和安全性，這是包括所有 Microsoft 365 產品的 Intune 服務的子集，用來管理組織中的裝置。 如需詳細資訊，請參閱 [基本行動性和安全性的功能](https://docs.microsoft.com/microsoft-365/admin/basic-mobility-security/capabilities)。
+- 基本行動性和安全性，這是包括所有 Microsoft 365 產品的 Intune 服務的子集，用來管理組織中的裝置。 如需詳細資訊，請參閱 [基本行動性和安全性的功能](../admin/basic-mobility-security/capabilities.md)。
 
 如果您有 Microsoft 365 E3 或 E5，您應該使用 Intune。
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-您可以使用 [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide) 管理使用 MDM 或 MAM 對您組織的存取。 MDM 是使用者在 Intune 中「註冊」其裝置的時間。 裝置註冊後，它就是受管理的裝置，而且可以接收您組織的原則、規則和設定。 例如，您可以安裝特定的應用程式、建立密碼原則、安裝 VPN 連線等等。
+您可以使用 [Microsoft Intune](/mem/intune/fundamentals/planning-guide) 管理使用 MDM 或 MAM 對您組織的存取。 MDM 是使用者在 Intune 中「註冊」其裝置的時間。 裝置註冊後，它就是受管理的裝置，而且可以接收您組織的原則、規則和設定。 例如，您可以安裝特定的應用程式、建立密碼原則、安裝 VPN 連線等等。
 
 具有自己個人裝置的使用者可能不想要註冊其裝置，或由 Intune 和您組織的原則進行管理。 不過，您仍然需要保護組織的資源和資料。 在此案例中，您可以使用 MAM 來保護您的應用程式。 例如，您可以使用需要使用者在存取裝置上的 SharePoint 時輸入 PIN 碼的 MAM 原則。
 

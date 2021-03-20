@@ -16,16 +16,16 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何使用夥伴組織的受管理來賓建立 B2B 外部網路網站或小組。
-ms.openlocfilehash: cfb7cc4310cb83f9ce7761c95f021724b7d75faf
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: f9b8d9326f302233ed85c9d168fdf6f343dc6cbf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613593"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904753"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>使用受管理來賓建立 B2B 外部網路
 
-您可以使用 [Azure Active Directory 的權利管理](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) 建立 B2B 外部網路，以與使用 Azure Active Directory 的夥伴組織共同作業。 這可讓使用者在外部網路網站或小組中自我註冊，並透過核准工作流程接收存取權。
+您可以使用 [Azure Active Directory 的權利管理](/azure/active-directory/governance/entitlement-management-overview) 建立 B2B 外部網路，以與使用 Azure Active Directory 的夥伴組織共同作業。 這可讓使用者在外部網路網站或小組中自我註冊，並透過核准工作流程接收存取權。
 
 透過這種共用資源進行共同作業，合作夥伴組織可以協助維護和核准其結束的客人，減少 IT 部門的負擔，並讓您能夠熟悉共同作業合約，以管理使用者存取。
 
@@ -58,7 +58,7 @@ ms.locfileid: "49613593"
 7. 輸入您要連線之組織的網域，然後按一下 [ **新增**]。
 8. 按一下 **[連線]**，然後按 **[下一步：主辦方**]。
 9. 從您的組織或您要連線的組織，新增您要核准來賓存取權之組織的人員。
-10. 按 **[下一步：審閱 + 建立**]。
+10. 選取 **[下一步 : 檢閱 + 建立]**。
 11. 檢查您所選擇的設定，然後按一下 [ **建立**]。
 
     ![Azure Active Directory 中連線之組織頁面的螢幕擷取畫面](../media/identity-governance-connected-organizations.png)

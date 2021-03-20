@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 在本文中，瞭解如何將系統管理員角色指派給使用者帳戶，以快速輕鬆地使用 PowerShell Microsoft 365。
-ms.openlocfilehash: 7e3292ab26924384beb8d0c7450b7665dccd48fa
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 84e785052c970ca15487540c3904eacdd0e9ca28
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754195"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905377"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 將系統管理員角色指派給 Microsoft 365 使用者帳戶
 
@@ -34,9 +34,9 @@ ms.locfileid: "48754195"
 您可以使用 Microsoft 365 的 PowerShell 輕鬆地將角色指派給使用者帳戶。
 
 >[!Note]
->瞭解如何使用 Microsoft 365 系統管理中心，  [將系統管理員角色指派](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) 給使用者帳戶。
+>瞭解如何使用 Microsoft 365 系統管理中心，  [將系統管理員角色指派](../admin/add-users/assign-admin-roles.md) 給使用者帳戶。
 >
->如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>如需其他資源的清單，請參閱 [管理使用者和群組](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
@@ -45,7 +45,7 @@ ms.locfileid: "48754195"
   
 接下來，識別您想要新增至角色的使用者帳戶登入名稱 (例如： fredsm \@ contoso.com) 。 這也稱為使用者主要名稱 (UPN) 。
 
-接下來，決定角色的名稱。 請參閱 [Azure Active Directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
+接下來，決定角色的名稱。 請參閱 [Azure Active Directory 中的系統管理員角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
 >[!Note]
 >請注意本文中的記事。 某些角色名稱在 Azure Active Directory (Azure AD) PowerShell 上有所不同。 例如，在 Microsoft 365 系統管理中心的 *SharePoint 系統管理員* 角色是 SHAREPOINT Azure AD PowerShell 中的 *服務管理員* 。
@@ -109,7 +109,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
     這個命令會列出您的使用者帳戶顯示名稱，依顯示名稱排序，一次一屏。 您可以使用 **Where** Cmdlet，將清單篩選為較小的集合。 請參閱下列的範例。
 
    >[!Note]
-   >PowerShell 核心不支援 Windows PowerShell 模組的 Microsoft Azure Active Directory 模組，以及其名稱中含有 *Msol* 的 Cmdlet。 從 Windows PowerShell 執行這些 Cmdlet。
+   >PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 *Msol* 的 Cmdlet。 從 PowerShell 執行這些 Cmdlet。
    >
     
   ```powershell
@@ -236,7 +236,7 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 - [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)

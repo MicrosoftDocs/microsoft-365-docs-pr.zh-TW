@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用 Microsoft 365 的 PowerShell，將每位使用者的通訊設定指派給商務用 Skype Online 原則。
-ms.openlocfilehash: 6ee237e5d2ee0c9f472f372a6aa66c9612336265
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514977"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905401"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>將每一使用者商務用 Skype Online 原則指派給 Microsoft 365 的 PowerShell
 
@@ -34,7 +34,7 @@ ms.locfileid: "50514977"
   > [!Note]
    > 商務用 Skype Online 連接器目前是最新 Teams PowerShell 模組的一部分。 如果您使用的是最新的 Teams PowerShell 公開發行版本，則不需要安裝商務用 Skype Online 連接器。
 
-1. 安裝 [團隊 PowerShell 模組](https://docs.microsoft.com/microsoftteams/teams-powershell-install)。
+1. 安裝[Teams PowerShell 模組安裝](/microsoftteams/teams-powershell-install)。
     
 2. 開啟 Windows PowerShell 命令提示字元，然後執行下列命令： 
     
@@ -71,7 +71,7 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-現在，您知道要將哪一個原則指派給 Alex，我們可以使用 [授與 get-csexternalaccesspolicy](https://go.microsoft.com/fwlink/?LinkId=523974) Cmdlet 指派該原則。 範例如下：
+現在，您知道要將哪一個原則指派給 Alex，我們可以使用 [授與 get-csexternalaccesspolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) Cmdlet 指派該原則。 範例如下：
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
@@ -106,7 +106,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 ## <a name="managing-large-numbers-of-users"></a>管理大量使用者
 
-若要管理大量使用者 (1000 或以上) ，您必須使用 [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) Cmdlet 透過腳本區塊批命令。  在先前的範例中，每次執行 Cmdlet 時，必須先設定此呼叫，然後等候結果，再將其傳送回來。  使用腳本區塊時，這可讓 Cmdlet 以遠端方式執行，並在完成之後傳送資料回來。 
+若要管理大量使用者 (1000 或以上) ，您必須使用 [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) Cmdlet 透過腳本區塊批命令。  在先前的範例中，每次執行 Cmdlet 時，必須先設定此呼叫，然後等候結果，再將其傳送回來。  使用腳本區塊時，這可讓 Cmdlet 以遠端方式執行，並在完成之後傳送資料回來。 
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
