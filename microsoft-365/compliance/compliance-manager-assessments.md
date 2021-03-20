@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員中的組建評估，可協助您符合組織重要的規章和憑證需求。
-ms.openlocfilehash: 06b644293c014dafbe46c115b498c2ad2390e99d
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: ff2aa41b91f3cb019dbed542c422d61c79c4ecb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406755"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908593"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>在合規性管理員中建立及管理評估
 
 **本文內容：** 瞭解如何建立及管理 **評估**，以自訂群組織的合規性管理員。 本文將引導您瞭解如何建立評估，如何將其組織成 **群組**、使用 **控制項**、接受 **更新**，以及匯出評估 **報告**。
 
 > [!IMPORTANT]
-> 您的組織可使用的評估取決於您的授權合約。 [查看詳細資料](https://go.microsoft.com/fwlink/?linkid=2132371)。
+> 您的組織可使用的評估取決於您的授權合約。 [查看詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="introduction-to-assessments"></a>評估簡介
 

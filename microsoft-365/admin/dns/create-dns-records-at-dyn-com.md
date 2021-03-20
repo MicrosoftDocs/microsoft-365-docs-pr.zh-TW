@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Dyn.com。
-ms.openlocfilehash: d1b77d6b4f38dd3e0979f448a77b293564841f45
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 432dc630d49cc3494d17b3f007f813d66dc6b1c3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657933"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910327"
 ---
 # <a name="create-dns-records-at-dyncom-for-microsoft"></a>在 Dyn.com 建立 Microsoft 的 DNS 記錄
 
@@ -109,7 +109,7 @@ ms.locfileid: "49657933"
     
     |**Host**|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |*\<domain-key\>* mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **10** 是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)      <br>    如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |*\<domain-key\>* mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **10** 是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)      <br>    如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/> |
    
     ![Dyn-BP-Configure-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   
@@ -230,4 +230,3 @@ ms.locfileid: "49657933"
     
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
-  

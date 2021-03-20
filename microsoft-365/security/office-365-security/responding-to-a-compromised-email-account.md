@@ -20,12 +20,12 @@ search.appverid:
 description: 了解如何使用可用工具辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5dfb40c195cb9df9c8f2ac5d1cfbacdda022d416
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 774d96fb22bb13d4b4edcfab45f27ca9e52c5e88
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406721"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908827"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>回應遭入侵的電子郵件帳戶
 
@@ -102,7 +102,7 @@ ms.locfileid: "50406721"
 >
 > - 如果您的內部部署身分識別與 Microsoft 365 同盟，則必須變更您的內部部署密碼，然後必須通知您的系統管理員相關入侵。
 >
-> - 務必更新應用程式密碼。 使用者帳戶密碼重設時，應用程式密碼未自動撤銷。 使用者應該刪除現有的應用程式密碼，並建立新密碼。 如需指示，請參閱[從其他安全性驗證頁面建立和刪除應用程式密碼](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)。
+> - 務必更新應用程式密碼。 使用者帳戶密碼重設時，應用程式密碼未自動撤銷。 使用者應該刪除現有的應用程式密碼，並建立新密碼。 如需指示，請參閱[從其他安全性驗證頁面建立和刪除應用程式密碼](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)。
 >
 > - 我們強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。 若要深入了解 MFA，請至 [設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft name.com。
-ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 97cc83fe060f8fbfe78decff584bded3102b09b5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657824"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910171"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>在 name.com 建立 Microsoft 的 DNS 記錄
 
@@ -119,7 +119,7 @@ ms.locfileid: "49657824"
     
     |**類型**|**主機**|**答案**|**TTL**|**Prio (優先順序)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(將此欄位保留空白。)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |使用預設值 (300)。  <br/> |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |MX  <br/> |(將此欄位保留空白。)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |使用預設值 (300)。  <br/> |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
@@ -235,8 +235,8 @@ ms.locfileid: "49657824"
     
     |**Type**|**服務**|**Weight**|**TTL**|**Prio (優先順序)**|**Protocol** (通訊協定)|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1 |使用預設值 (300)。|100|tls|443|sipdir.online.lync.com <br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
-    |SRV|sipfederationtls|1 |使用預設值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |SRV|sip|1|使用預設值 (300)。|100|tls|443|sipdir.online.lync.com <br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |SRV|sipfederationtls|1|使用預設值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
    ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以 1&1 IONOS for Microsoft。
-ms.openlocfilehash: 8e2deab05b5ef8d8f22993d2bfdd032999ed9c39
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 123abd6d1d93f80eb73f187b7ff75ccd90d02980
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657993"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910555"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>在 1&1 IONOS 為 Microsoft 建立 DNS 記錄
 
  若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 > [!CAUTION]
-> 請注意，1&1 IONOS 不允許網域同時具有 MX 記錄和最上層自動探索 CNAME 記錄。 這會限制您可為 Microsoft 設定 Exchange Online 的方式。 有一種解決方法，但只有在您已具備在 1&1 IONOS 建立子域的經驗時， **才** 建議使用此方法。 > 如果此 [服務限制](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 您選擇在 1&1 IONOS 管理您自己的 Microsoft DNS 記錄，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。 
+> 請注意，1&1 IONOS 不允許網域同時具有 MX 記錄和最上層自動探索 CNAME 記錄。 這會限制您可為 Microsoft 設定 Exchange Online 的方式。 有一種解決方法，但只有在您已具備在 1&1 IONOS 建立子域的經驗時， **才** 建議使用此方法。 > 如果此 [服務限制](../setup/domains-faq.yml) 您選擇在 1&1 IONOS 管理您自己的 Microsoft DNS 記錄，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。 
   
 在 1&1 IONOS 新增這些記錄之後，您的網域就會設定為與 Microsoft 服務搭配使用。
   
@@ -48,7 +48,7 @@ ms.locfileid: "49657993"
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
   
-請依照下列步驟操作或[觀看影片 (從 0:42 處開始)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
+請依照下列步驟操作或[觀看影片 (從 0:42 處開始)]()。
   
 1. 若要開始使用，請移至您的網域頁面，1&1 IONOS，方法是使用 [此連結](https://my.1and1.com/)。 You'll be prompted to log in.
     
@@ -69,7 +69,7 @@ ms.locfileid: "49657993"
     |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
     |TXT  <br/> | (將此欄位保留空白)   <br/> |MS=ms *XXXXXXXX*  <br/> 請注意：這是一個範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. 選取 **[儲存]**。
+7. 選取 [儲存]。
     
 8. 再次選取 [ **儲存** ]。 
     
@@ -96,7 +96,7 @@ ms.locfileid: "49657993"
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft
 <a name="BKMK_add_MX"> </a>
 
-請依照下列步驟操作或[觀看影片 (從 3:22 處開始)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
+請依照下列步驟操作或[觀看影片 (從 3:22 處開始)]()。
   
 > [!NOTE]
 > 如果您已登錄1und1.de，請 [在這裡登入](https://go.microsoft.com/fwlink/?linkid=859152)。 
@@ -117,11 +117,11 @@ ms.locfileid: "49657993"
     
     |**MX 1**|**優先順序**|
     |:-----|:-----|
-    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  附注：請 \<domain-key\> 從您的 Microsoft 帳戶取得。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | 
+    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  附注：請 \<domain-key\> 從您的 Microsoft 帳戶取得。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/> | 
     
     ![1和 1-設定2和3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. 選取 **[儲存]**。<br/>(您可能需要向下捲動。)<br/>![1 &amp; 1-BP-Configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. 選取 [儲存]。<br/>(您可能需要向下捲動。)<br/>![1 &amp; 1-BP-Configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
 9. 在 [ **編輯 DNS 設定** ] 對話方塊中，選取 **[是]**。<br/>![在 [編輯 DNS 設定] 對話方塊中選取 [是]](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -135,7 +135,7 @@ ms.locfileid: "49657993"
   
 ### <a name="basic-cname-records"></a>基本 CNAME 記錄
 
-請按照下列步驟操作或[觀看影片 (從 3:57 處開始)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
+請按照下列步驟操作或[觀看影片 (從 3:57 處開始)]()。
   
 > [!NOTE]
 > 如果您已登錄1und1.de，請 [在這裡登入](https://go.microsoft.com/fwlink/?linkid=859152)。 
@@ -176,7 +176,7 @@ ms.locfileid: "49657993"
   
 11. 選取 [ **我的感知** 免責聲明] 的核取方塊。<br/>![1 &amp; 1-BP-Configure-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
   
-12. 選取 **[儲存]**。<br/>![1 &amp; 1-BP-Configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
+12. 選取 [儲存]。<br/>![1 &amp; 1-BP-Configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
   
   
 ### <a name="additional-cname-records"></a>額外 CNAME 記錄
@@ -248,9 +248,9 @@ ms.locfileid: "49657993"
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.yml)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](../../enterprise/external-domain-name-system-records.md)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.yml)。 
   
-請依照下列步驟操作或[觀看影片 (從 5:09 處開始)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
+請依照下列步驟操作或[觀看影片 (從 5:09 處開始)]()。
   
 > [!NOTE]
 > 如果您已登錄1und1.de，請 [在這裡登入](https://go.microsoft.com/fwlink/?linkid=859152)。 
@@ -273,15 +273,15 @@ ms.locfileid: "49657993"
     
     ![TXT 記錄](../../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
   
-7. 選取 **[儲存]**。<br/>![新增記錄](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
+7. 選取 [儲存]。<br/>![新增記錄](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
   
-8. 選取 **[儲存]**。<br/>![儲存記錄](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
+8. 選取 [儲存]。<br/>![儲存記錄](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
   
 9. 在 [ **編輯 DNS 設定** ] 對話方塊中，選取 **[是]**。<br/>![在 [編輯 DNS 設定] 對話方塊中選取 [是]](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 
-請依照下列步驟操作或[觀看影片 (從 5:51 處開始)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
+請依照下列步驟操作或[觀看影片 (從 5:51 處開始)]()。
   
 > [!NOTE]
 > 如果您已登錄1und1.de，請 [在這裡登入](https://go.microsoft.com/fwlink/?linkid=859152)。 
@@ -300,14 +300,14 @@ ms.locfileid: "49657993"
     
     |**Type**|**服務**|**Protocol** (通訊協定)|**名稱**|**Host**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV  <br/> |sip  <br/> |tls  <br/> |(將此欄位保留空白。)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (1 小時)  <br/> |
-    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(將此欄位保留空白。)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (1 小時)  <br/> |  
+    |SRV  <br/> |sip  <br/> |tls  <br/> |(將此欄位保留空白。)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (1 小時)  <br/> |
+    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(將此欄位保留空白。)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (1 小時)  <br/> |  
     
     ![1 &amp; 1-BP-Configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
-7. 選取 **[儲存]**。 <br/>![1 &amp; 1-BP-Configure-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
+7. 選取 [儲存]。 <br/>![1 &amp; 1-BP-Configure-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
   
-8. 選取 **[儲存]**。 <br/>![1 &amp; 1-BP-Configure-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
+8. 選取 [儲存]。 <br/>![1 &amp; 1-BP-Configure-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
 9. 在 [ **編輯 DNS 設定** ] 對話方塊中，選取 **[是]**。 <br/>![在 [編輯 DNS 設定] 對話方塊中選取 [是]](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -315,4 +315,3 @@ ms.locfileid: "49657993"
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
-  

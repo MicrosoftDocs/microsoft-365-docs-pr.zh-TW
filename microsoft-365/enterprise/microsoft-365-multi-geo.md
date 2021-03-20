@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 我們將在本文中深入解釋如何使用 Microsoft 365 多地理位置，將 Microsoft 365 的目前狀態拓展至多個地理區域。
-ms.openlocfilehash: 6d16d222a97f309eafdd79a2b107978ce7b4f242
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: 2805470f1a35bb5978f3d25c30aa07523ad21afb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712494"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909547"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -88,4 +88,4 @@ Microsoft 365 多地理位置是適用于企業合約客戶的下列 Microsoft 3
 
 [Exchange Online 中的多地理位置功能](multi-geo-capabilities-in-exchange-online.md)
 
-[多地理位置環境中的 Teams 體驗](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[多地理位置環境中的 Teams 體驗](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

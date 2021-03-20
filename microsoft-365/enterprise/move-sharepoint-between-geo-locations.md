@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解如何將 SharePoint 網站移至多地理位置環境中的不同地理位置，並溝通對使用者所做的變更。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545633"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910927"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>將 SharePoint 網站移至不同的地理位置
 
@@ -145,8 +145,8 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 您可以使用下列 Cmdlet 來判斷您所連線的地理位置中網站移動的狀態：
 
-- [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (非群組連線網站)
-- [SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (群組連線的網站) 
+- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (非群組連線網站)
+- [SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (群組連線的網站) 
 
 使用 `-SourceSiteUrl` 參數來指定您要查看移動狀態的網站。
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Register.com。
-ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 439b96ef7ad2fd70b94c3945519d4fa270e43fd2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657589"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910051"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>在 Register.com 建立 Microsoft 的 DNS 記錄
 
@@ -124,7 +124,7 @@ ms.locfileid: "49657589"
     
     |主機名稱 * * * *|優先順序 * * * *|郵件伺服器 * * * *|
     |:-----|:-----|:-----|
-    |@  <br/> |High (高)  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 從您的 Microsoft 帳戶取得您的 \<*domain-key*\>。 <br> [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High (高)  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 從您的 Microsoft 帳戶取得您的 \<*domain-key*\>。 <br> [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![複製並貼上表格中的值](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -244,8 +244,8 @@ ms.locfileid: "49657589"
     
     |服務 * * * *|Proto * * * *|****名稱****|優先順序 * * * *|體重 * * * *|埠 * * * *|目標 * * * *|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High (高)  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High (高)  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High (高)  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High (高)  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![複製並貼上表格中的值](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
@@ -267,4 +267,3 @@ ms.locfileid: "49657589"
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
-  

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft web.com。
-ms.openlocfilehash: 943070f3790f532a0cc686270e0ecdea08f802fd
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: b667b2e69822fcd69babda7790a6468b640b073b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656888"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909979"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>在 web.com 建立 Microsoft 的 DNS 記錄
 
@@ -131,10 +131,10 @@ ms.locfileid: "49656888"
     
     |**Priority** (優先順序)|**TTL**|**郵件伺服器**|
     |:-----|:-----|:-----|
-    |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。   [如何找到呢？](../get-help-with-domains/information-for-dns-records.md) |
+    |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。   [如何找到呢？](../get-help-with-domains/information-for-dns-records.md) |
    
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
   
 6. 如果 [ **Mx 記錄** ] 區段中列出任何其他 MX 記錄，請選取 [ **刪除**] 底下的記錄旁的核取方塊，然後選取 [ **儲存**]。 
   
@@ -215,8 +215,8 @@ ms.locfileid: "49656888"
         
     |**服務**|**Protocol** (通訊協定)|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip |_tls |3600 | 100|1  |443 |sipfed.online.lync.com  |
-    |_sipfederationtls |_tcp |3600 |100 |1  |5061 | sipfed.online.lync.com |
+    |_sip |_tls |3600 | 100|1 |443 |sipfed.online.lync.com  |
+    |_sipfederationtls |_tcp |3600 |100 |1 |5061 | sipfed.online.lync.com |
 
   
 5. 從資料表的第二列中選擇值，以新增其他 SRV 記錄。 
@@ -228,4 +228,3 @@ ms.locfileid: "49656888"
     
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
-  

@@ -17,12 +17,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: 本文說明在 SharePoint Online 中設計最佳效能的頁面時所應考量的特定事項。
-ms.openlocfilehash: d3a9dedbd5812774b81494af0f8defa5568f7dac
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6f40243c9d6a1657b6716a071288f5b4fb018164
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688755"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909735"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online 效能調整的簡介
 
@@ -162,6 +162,4 @@ SharePoint Online
     
 - [使用 SharePoint Online 的物件快取](using-the-object-cache-with-sharepoint-online.md)
     
-- [操作方法：如何避免在 SharePoint Online 中受到節流控制或封鎖](https://msdn.microsoft.com/library/office/dn889829.aspx)
-    
-
+- [操作方法：如何避免在 SharePoint Online 中受到節流控制或封鎖](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)

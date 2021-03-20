@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用「測試實驗室指南」以設定企業用 Microsoft 365 的示範、概念證明或開發/測試環境。
-ms.openlocfilehash: fefbb18fd108dceba6f387fb8244619c4bb1c167
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: a006f549d0ac68562faee9c935df7f15161b2f12
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487467"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909595"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>企業用 Microsoft 365 測試實驗室指南
 
@@ -31,7 +31,7 @@ ms.locfileid: "48487467"
 
 測試實驗室指南 (TLG) 可協助您快速地了解 Microsoft 產品。它們提供規範的指示，可以設定簡化但是具有代表性的測試環境。您可以將這些環境用於示範、自訂或者針對試用版或付費訂閱持續時間建立複雜的概念證明。
 
-Tlg 設計為模組式。它們相互建立，以建立與您的學習或測試設定需求更接近的多個設定。「我自行建立並運作]，可協助您瞭解新產品或案例的部署需求，讓您能更好地規劃在生產環境中主控。
+Tlg 設計為模組式。 它們相互建立，以建立與您的學習或測試設定需求更接近的多個設定。 「我自行建立並運作]，可協助您瞭解新產品或案例的部署需求，讓您能更好地規劃在生產環境中主控。
 
 您也可以使用 Tlg 來建立具有代表性的環境，以開發及測試應用程式（也稱為開發/測試環境）。
   
@@ -43,7 +43,7 @@ Tlg 設計為模組式。它們相互建立，以建立與您的學習或測試�
 
 ## <a name="base-configuration"></a>基本設定
 
-首先，建立 [Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)的測試環境。您可以建立兩種不同的基本設定類型：
+首先，建立 [Microsoft 365 for enterprise](/microsoft-365-enterprise/)的測試環境。 您可以建立兩種不同的基本設定類型：
 
 - [羽量級基本](lightweight-base-configuration-microsoft-365-enterprise.md) 設定-當您想要在僅雲端環境中為企業功能（不包含任何內部部署元件）設定及示範 Microsoft 365 時，請使用此設定。
 

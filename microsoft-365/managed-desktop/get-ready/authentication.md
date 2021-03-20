@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c1732dc17188427f9a181d1c47abe71bb8f39584
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: f6b1e257fd767fa112fddb41d773065b8002a2a3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841408"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909187"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>為 Microsoft 受管理的電腦準備備內部部署資源存取權
 
@@ -25,7 +25,7 @@ ms.locfileid: "49841408"
 
 Azure Active Directory 可讓您的使用者利用單一 Sign-On (SSO) ，這表示在每次使用資源時，通常不需要提供認證。
 
-如需有關加入 Azure Active Directory 的資訊，請參閱 how [to： Plan a AZURE AD join 實現](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)。 如需有關加入 Azure AD 之裝置上的單一 Sign-On (SSO) 的背景資訊，請參閱 [在 AZURE ad join 裝置上如何運作 sso 與內部部署資源的運作方式](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works)。
+如需有關加入 Azure Active Directory 的資訊，請參閱 how [to： Plan a AZURE AD join 實現](/azure/active-directory/devices/azureadjoin-plan)。 如需有關加入 Azure AD 之裝置上的單一 Sign-On (SSO) 的背景資訊，請參閱 [在 AZURE ad join 裝置上如何運作 sso 與內部部署資源的運作方式](/azure/active-directory/devices/azuread-join-sso#how-it-works)。
 
 
 本文說明您必須檢查哪些專案，以確保依存于本機 Active Directory 連線的應用程式和其他資源能夠與 Microsoft 受管理的電腦順利運作。
@@ -48,21 +48,21 @@ Azure Active Directory 可讓您的使用者利用單一 Sign-On (SSO) ，這表
 
 ### <a name="single-sign-on-by-using-windows-hello-for-business"></a>使用 Windows Hello 企業版的單一 Sign-On
 
-Microsoft 受管理的桌面裝置也會透過使用 Windows Hello 企業版，為您的使用者提供快速、passwordless 的體驗。 為了確保 Windows Hello 企業版能夠運作，而您的使用者必須提供各自的 UPN 和密碼，請造訪 [Configure The AZURE AD join 裝置以供內部部署 Single-Sign 使用 Windows Hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) 來檢查需求，然後遵循這裡提供的步驟進行。
+Microsoft 受管理的桌面裝置也會透過使用 Windows Hello 企業版，為您的使用者提供快速、passwordless 的體驗。 為了確保 Windows Hello 企業版能夠運作，而您的使用者必須提供各自的 UPN 和密碼，請造訪 [Configure The AZURE AD join 裝置以供內部部署 Single-Sign 使用 Windows Hello 企業版](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) 來檢查需求，然後遵循這裡提供的步驟進行。
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>使用驗證的應用程式和資源
 
-請參閱 Azure 內容組中 [應用程式和資源的瞭解考慮](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) ，以取得設定應用程式與 Azure Active Directory 搭配使用的完整指導方針。 總而言之：
+請參閱 Azure 內容組中 [應用程式和資源的瞭解考慮](/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) ，以取得設定應用程式與 Azure Active Directory 搭配使用的完整指導方針。 總而言之：
 
 
 - 如果您使用 **雲端式應用程式**，例如新增至 Azure AD 應用程式庫的應用程式，則不需要進一步準備使用 Microsoft 受管理的電腦。 不過，任何未使用網頁帳戶管理員的 Win32 應用程式 (WAM) 可能仍然會提示使用者進行驗證。
 
-- 若為 **內部部署所主控** 的應用程式，請務必將這些應用程式新增至您的瀏覽器中的 [信任的網站] 清單。 此步驟可讓 Windows 驗證順利運作，而不會提示使用者輸入認證。 若要新增應用程式，請參閱[可設定的設定參考](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref)中的[信任網站](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites)。
+- 若為 **內部部署所主控** 的應用程式，請務必將這些應用程式新增至您的瀏覽器中的 [信任的網站] 清單。 此步驟可讓 Windows 驗證順利運作，而不會提示使用者輸入認證。 若要新增應用程式，請參閱[可設定的設定參考](../working-with-managed-desktop/config-setting-ref.md)中的[信任網站](../working-with-managed-desktop/config-setting-ref.md#trusted-sites)。
 
-- 如果您使用的是 Active Directory 同盟服務，請檢查是否已啟用 SSO，方法是使用 [ [驗證] 和 [管理單一登入與 AD FS](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100))] 中的步驟。 
+- 如果您使用的是 Active Directory 同盟服務，請檢查是否已啟用 SSO，方法是使用 [ [驗證] 和 [管理單一登入與 AD FS](/previous-versions/azure/azure-services/jj151809(v=azure.100))] 中的步驟。 
 
-- 若為 **內部部署和使用舊版通訊協定** 的應用程式，則不需要額外設定，只要裝置可以存取內部部署網域控制站以進行驗證。 不過，若要提供這些應用程式的安全存取，您應該部署 Azure AD 應用程式 Proxy。 如需詳細資訊，請參閱 [透過 Azure Active Directory 應用程式 Proxy 遠端存取內部部署應用程式](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
+- 若為 **內部部署和使用舊版通訊協定** 的應用程式，則不需要額外設定，只要裝置可以存取內部部署網域控制站以進行驗證。 不過，若要提供這些應用程式的安全存取，您應該部署 Azure AD 應用程式 Proxy。 如需詳細資訊，請參閱 [透過 Azure Active Directory 應用程式 Proxy 遠端存取內部部署應用程式](/azure/active-directory/manage-apps/application-proxy)。
 
 - **在內部部署和依賴機器驗證** 的應用程式不受支援，因此您應該考慮將它們取代為更新的版本。
 
@@ -72,7 +72,7 @@ Microsoft 受管理的桌面裝置也會透過使用 Windows Hello 企業版，�
 
 ### <a name="printers"></a>印表機
 
-除非您已設定 [混合式雲端列印](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)，否則 Microsoft 受管理的桌面裝置無法連線至您的內部部署 Active Directory 發佈的印表機。
+除非您已設定 [混合式雲端列印](/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)，否則 Microsoft 受管理的桌面裝置無法連線至您的內部部署 Active Directory 發佈的印表機。
 
 雖然無法在僅雲端環境中自動探索印表機，但只要裝置具有內部部署網域控制站的存取權，您的使用者就可以使用印表機路徑或印表機佇列路徑來使用內部部署印表機。
 

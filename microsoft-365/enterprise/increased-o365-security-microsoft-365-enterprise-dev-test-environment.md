@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南來啟用 Microsoft 365 for enterprise 測試環境中的其他 Microsoft 365 安全性設定。
-ms.openlocfilehash: d385688a6e59ee500442bcf1b815dfd165102242
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 928deae34dc16c70776eb512188d1a36ae169da5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846997"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909783"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>提高您的 Microsoft 365 for enterprise 測試環境的 Microsoft 365 安全性
 
@@ -43,7 +43,7 @@ ms.locfileid: "48846997"
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>階段2：設定增加的 Microsoft 365 安全性
 
-在此階段中，您可以為企業測試環境啟用增強的 Microsoft 365 安全性，以供 Microsoft 365 使用。 如需詳細資訊和設定，請參閱 [Configure a 租使用者以提高安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
+在此階段中，您可以為企業測試環境啟用增強的 Microsoft 365 安全性，以供 Microsoft 365 使用。 如需詳細資訊和設定，請參閱 [Configure a 租使用者以提高安全性](/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>設定線上 SharePoint 封鎖不支援新式驗證的應用程式
 
@@ -55,9 +55,9 @@ ms.locfileid: "48846997"
     
   - 如果您使用模擬的企業 Microsoft 365 測試環境，請使用 [Azure 入口網站](https://portal.azure.com) 連線至 CLIENT1 虛擬機器，然後從 CLIENT1 登入。
  
-2. 在 [新增 **Microsoft 365 系統管理中心** ] 索引標籤的左導覽 **窗格中，** 按一下 [ **SharePoint** ]。
-3. 在 [新增 **SharePoint 系統管理中心** ] 索引標籤上，按一下 [ **原則] > 存取控制** ]。
-4. 按一下 [ **不支援新式驗證的應用程式** ]，選取 [ **封鎖存取** ]，然後按一下 [ **儲存** ]。
+2. 在 [新增 **Microsoft 365 系統管理中心** ] 索引標籤的左導覽 **窗格中，** 按一下 [ **SharePoint**]。
+3. 在 [新增 **SharePoint 系統管理中心** ] 索引標籤上，按一下 [ **原則] > 存取控制**]。
+4. 按一下 [ **不支援新式驗證的應用程式**]，選取 [ **封鎖存取**]，然後按一下 [ **儲存**]。
 
 
 ### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>為 SharePoint、商務 OneDrive 和 Microsoft 小組啟用 Office 365 的 Defender
@@ -66,11 +66,11 @@ ms.locfileid: "48846997"
 
 1. 移至 [安全性 & 合規性中心](https://protection.office.com) ，並以全域系統管理員帳戶登入。
 
-2. 在左功能窗格中的 [ **威脅管理** ] 底下，按一下 [ **原則** ]，然後按一下 [ **安全附件** ]。 
+2. 在左功能窗格中的 [ **威脅管理**] 底下，按一下 [ **原則**]，然後按一下 [ **安全附件**]。 
 
-3. 在 [ **保護 SharePoint、OneDrive 和 Microsoft 小組中的** 檔案] 底下。 選取 [ **開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP** 。
+3. 在 [ **保護 SharePoint、OneDrive 和 Microsoft 小組中的** 檔案] 底下。 選取 [ **開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP**。
 
-4. 按一下 **[儲存]** 。
+4. 按一下 **[儲存]**。
 
 
 ### <a name="enable-anti-malware"></a>啟用反惡意程式碼
@@ -84,8 +84,8 @@ Microsoft 365 具有內建的惡意程式碼和垃圾郵件篩選功能，可協
 1. 按一下瀏覽器上的 [上一步] 按鈕，以回到 [ **原則** ] 頁面。
 2. 按一下 [ **反惡意** 代碼]。
 3. 按兩下名為 **Default** 的原則。
-4. 在 [ **反惡意程式碼原則** ] 視窗中，按一下 [ **設定** ]。
-4. 在 [ **一般附件類型篩選** ] 底下，選取 [ **開啟** ]，然後按一下 [ **儲存** ]。
+4. 在 [ **反惡意程式碼原則** ] 視窗中，按一下 [ **設定**]。
+4. 在 [ **一般附件類型篩選**] 底下，選取 [ **開啟**]，然後按一下 [ **儲存**]。
 
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>階段3：檢查安全性儀表板
@@ -96,22 +96,22 @@ Microsoft 365 中的威脅管理可協助您控制和管理行動裝置對組織
 
 1. 如有需要，請移至 [安全性 & 合規性中心](https://protection.office.com) ，並以全域系統管理員帳戶登入。
 
-2. 在左功能窗格中的 [ **威脅管理** ] 底下，按一下 [ **儀表板** ]。
+2. 在左功能窗格中的 [ **威脅管理**] 底下，按一下 [ **儀表板**]。
 
 請密切瞭解儀表板上的所有卡片，以熟悉所提供的資訊。
 
-如需詳細資訊，請參閱 [安全性儀表板](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-dashboard)。
+如需詳細資訊，請參閱 [安全性儀表板](../security/office-365-security/security-dashboard.md)。
 
 
 ## <a name="phase-4-examine-microsoft-secure-score"></a>階段4：檢查 Microsoft 安全分數
 
 Microsoft Secure 得分會將您的安全性狀況顯示為數字，這表示您目前的層次相對於您訂閱中提供的功能。 此外，它還提供您可以採取以提升分數的改進動作清單。
 
-1. 在您的瀏覽器中建立新的索引標籤，然後移至 [Microsoft 365 的安全性中心](https://security.microsoft.com/)，然後按一下 [ **安全計分** ]。
+1. 在您的瀏覽器中建立新的索引標籤，然後移至 [Microsoft 365 的安全性中心](https://security.microsoft.com/)，然後按一下 [ **安全計分**]。
 2. 在 [ **一覽表**  ] 索引標籤上，記下目前的安全分數，以及其與全域平均及訂閱數量相似之授權的比較方式。
 3. 在 [ **改進動作** ] 索引標籤上，通讀您可以採取的動作清單，以提升您的分數。
 
-如需詳細資訊，請參閱 [Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)。
+如需詳細資訊，請參閱 [Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -123,4 +123,4 @@ Microsoft Secure 得分會將您的安全性狀況顯示為數字，這表示您
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

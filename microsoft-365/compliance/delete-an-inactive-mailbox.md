@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: 當您不再需要保留 Microsoft 365 非使用中信箱的內容時，您可以永久刪除非使用中的信箱。
-ms.openlocfilehash: d5acccbf37ee5b6958d282de14edafc0b9b00182
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: 94a20bee1ca3d11a193a25efeb6d73f356e1d58d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717581"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909923"
 ---
 # <a name="delete-an-inactive-mailbox"></a>刪除非作用中的信箱
 
@@ -36,7 +36,7 @@ ms.locfileid: "50717581"
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>刪除非使用中的信箱之前
 
-- 您必須使用 Exchange Online PowerShell 移除非使用中信箱的訴訟暫止狀態。 您無法使用 Exchange 系統管理中心 (EAC) 。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+- 您必須使用 Exchange Online PowerShell 移除非使用中信箱的訴訟暫止狀態。 您無法使用 Exchange 系統管理中心 (EAC) 。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 - 您可以將非使用中信箱的內容複寫到另一個信箱，然後再移除保留和刪除非使用中的信箱。 如需詳細資訊，請參閱 [Restore a 非使用中的信箱在 Office 365](restore-an-inactive-mailbox.md)。
 
@@ -116,7 +116,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>從特定位置保留原則中移除非使用中的信箱
 
-在 [ [安全性 & 規範 PowerShell 中心](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ] 中執行下列命令，以從明確保留原則中移除非使用中的信箱。
+在 [ [安全性 & 規範 PowerShell 中心](/powershell/exchange/connect-to-scc-powershell) ] 中執行下列命令，以從明確保留原則中移除非使用中的信箱。
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -AddExchangeLocationException <identity of inactive mailbox>
@@ -204,7 +204,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 - **非使用中的信箱是虛刪除信箱的類型。** 在 Exchange Online 中，虛刪除的信箱是已刪除但可在特定保留期間內復原的信箱。 Exchange Online 中的虛刪除信箱保留期間是30天。 這表示信箱可在虛刪除的30天內復原。 30天后，虛刪除的信箱會標示為永久刪除，且無法復原。
 
@@ -212,7 +212,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
 
 - **移除保留後，是否會永久刪除非作用中的信箱？** 如果非使用中信箱的虛刪除日期超過30天，則在您移除保留後，就不會永久刪除該信箱。 信箱將會標示為永久刪除，而且會在下一次處理時刪除。
 
-- **虛刪除信箱保留期間對非使用中信箱的影響如何？** 如果非使用中信箱的虛刪除日期超過超過30天，則在刪除保留的日期之前，會將信箱標記為永久刪除。 不過，如果非使用中的信箱在過去30天內有虛刪除的日期，而且您移除保留，您可以將信箱復原，直到虛刪除的信箱保留期間到期為止。 如需詳細資訊，請參閱 [刪除或還原 Exchange Online 中的使用者信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes)。 當虛刪除的信箱保留期間到期後，您必須遵循復原非使用中信箱的程式。 如需詳細資訊，請參閱 [復原 Office 365 中的非使用中信箱](recover-an-inactive-mailbox.md)。
+- **虛刪除信箱保留期間對非使用中信箱的影響如何？** 如果非使用中信箱的虛刪除日期超過超過30天，則在刪除保留的日期之前，會將信箱標記為永久刪除。 不過，如果非使用中的信箱在過去30天內有虛刪除的日期，而且您移除保留，您可以將信箱復原，直到虛刪除的信箱保留期間到期為止。 如需詳細資訊，請參閱 [刪除或還原 Exchange Online 中的使用者信箱](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes)。 當虛刪除的信箱保留期間到期後，您必須遵循復原非使用中信箱的程式。 如需詳細資訊，請參閱 [復原 Office 365 中的非使用中信箱](recover-an-inactive-mailbox.md)。
 
 - **移除保留後，如何顯示非使用中信箱的相關資訊？** 在移除保留，且非作用中的信箱回復回虛刪除信箱之後，就不會使用  *InactiveMailboxOnly*  參數搭配 **Get-Mailbox** Cmdlet 來傳回。 不過，您可以使用 **Get-Mailbox-SoftDeletedMailbox** 命令來顯示信箱的相關資訊。 例如：
 

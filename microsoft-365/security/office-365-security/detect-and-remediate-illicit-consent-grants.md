@@ -18,12 +18,12 @@ description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a50ce58d91d2ff7b2e31e57830289c870364d9b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 575c0396ccf53cba727bb2a9f37b019a53c132bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288284"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910843"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
@@ -42,7 +42,7 @@ ms.locfileid: "50288284"
 這些攻擊採用一種互動模型，這種模型會假正在呼叫資訊的實體是自動化，而不是人。
 
 > [!IMPORTANT]
-> 您是否懷疑遇到違法的同意問題-從應用程式授與的許可權？ Microsoft Cloud App Security (MCAS) 具有偵測、調查和修正 OAuth 應用程式的工具。 此 MCAS 文章包含的教學課程，說明如何 [調查 OAuth 應用程式的風險](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)。 您也可以設定 [OAuth 的應用程式原則](https://docs.microsoft.com/cloud-app-security/app-permission-policy) ，以調查應用程式要求的許可權，這些許可權是使用者授權這些應用程式，並廣泛核准或禁止這些許可權要求。
+> 您是否懷疑遇到違法的同意問題-從應用程式授與的許可權？ Microsoft Cloud App Security (MCAS) 具有偵測、調查和修正 OAuth 應用程式的工具。 此 MCAS 文章包含的教學課程，說明如何 [調查 OAuth 應用程式的風險](/cloud-app-security/investigate-risky-oauth)。 您也可以設定 [OAuth 的應用程式原則](/cloud-app-security/app-permission-policy) ，以調查應用程式要求的許可權，這些許可權是使用者授權這些應用程式，並廣泛核准或禁止這些許可權要求。
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Office 365 中的非法同意授權攻擊的外觀如何？
 
@@ -123,7 +123,7 @@ ms.locfileid: "50288284"
 
 3. 以系統管理員身分開啟 PowerShell 執行個體，然後開啟您要儲存指令碼的資料夾。
 
-4. 使用 [Connect-AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread) Cmdlet 連線至您的目錄。
+4. 使用 [Connect-AzureAD](/powershell/module/azuread/connect-azuread) Cmdlet 連線至您的目錄。
 
 5. 執行此 PowerShell 命令：
 
@@ -162,9 +162,9 @@ ms.locfileid: "50288284"
 
   - 按一下向下切入中的 [移除]。
 
-- 您可以依照[移除-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant) 中的步驟，使用 PowerShell 撤銷 QAuth 同意授權。
+- 您可以依照[移除-AzureADOAuth2PermissionGrant](/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant) 中的步驟，使用 PowerShell 撤銷 QAuth 同意授權。
 
-- 您可以依照[移除-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment) 中的步驟，使用 PowerShell 撤銷服務應用程式角色指派。
+- 您可以依照[移除-AzureADServiceAppRoleAssignment](/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment) 中的步驟，使用 PowerShell 撤銷服務應用程式角色指派。
 
 - 您也可以完全停用受影響帳戶的登入，這將會進一步停用該帳戶中應用程式對資料的存取權。 當然，這對使用者的生產力並不理想，但是如果您正努力快速限制影響，這會是可行的短期補救。
 
@@ -182,12 +182,12 @@ ms.locfileid: "50288284"
 
 ## <a name="see-also"></a>另請參閱：
 
-- [我的應用程式清單中有未預期的應用程式](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application)，在系統管理員知道有未預期應用程式具有資料存取權之後，此文章可引導系統管理員完成可能需要採取的不同動作。
+- [我的應用程式清單中有未預期的應用程式](/azure/active-directory/application-access-unexpected-application)，在系統管理員知道有未預期應用程式具有資料存取權之後，此文章可引導系統管理員完成可能需要採取的不同動作。
 
-- [整合應用程式與 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent) 是同意與權限的高階概觀。
+- [整合應用程式與 Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) 是同意與權限的高階概觀。
 
-- [開發我的應用程式時發生問題](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map)提供各種同意相關文章的連結。
+- [開發我的應用程式時發生問題](/azure/active-directory/active-directory-application-dev-development-content-map)提供各種同意相關文章的連結。
 
-- [Azure Active Directory (Azure AD) 中的應用程式按服務主體物件](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects)提供應用程式模型核心的應用程式和服務主體物件的概觀。
+- [Azure Active Directory (Azure AD) 中的應用程式按服務主體物件](/azure/active-directory/develop/active-directory-application-objects)提供應用程式模型核心的應用程式和服務主體物件的概觀。
 
-- [管理應用程式的存取權](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps)概述系統管理員用來管理使用者對應用程式的存取權的功能。
+- [管理應用程式的存取權](/azure/active-directory/active-directory-managing-access-to-apps)概述系統管理員用來管理使用者對應用程式的存取權的功能。

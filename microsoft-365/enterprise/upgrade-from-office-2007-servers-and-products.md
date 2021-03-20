@@ -24,12 +24,12 @@ f1.keywords:
 - NOCSH
 description: 本文提供的資源可協助您從 Office 2007 伺服器及用戶端升級，因為 Office 2007 的支援已結束。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28fa1d56ef66297eaf69d2d11b720e3de2d668f7
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 36ae7ab70b8a95a7762f426f5a0d463083e7bc71
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519775"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909283"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>協助您從 Office 2007 伺服器及用戶端升級的資源
 
@@ -43,11 +43,11 @@ Office 2007 產品和服務的支援已結束。 下列藍圖可協助您立即�
 
 |**規劃內容**|**日期支援結束**|
 |:-----|:-----|
-|[Office 2007 終止支援藍圖](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |2017 年 10 月 10 日  <br/> |
+|[Office 2007 終止支援藍圖](/DeployOffice/office-2007-end-support-roadmap) <br/> |2017 年 10 月 10 日  <br/> |
 |[Exchange 2007 終止支援藍圖](exchange-2007-end-of-support.md) <br/> |2017 年 4 月 11 日  <br/> |
 |[SharePoint Server 2007 終止支援藍圖](sharepoint-2007-end-of-support.md) <br/> |2017 年 10 月 10 日  <br/> |
 |[Project Server 2007 終止支援藍圖](project-server-2007-end-of-support.md) <br/> |2017 年 10 月 10 日  <br/> |
-|[從 Office 通訊伺服器升級](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |2018年1月8日  <br/> |
+|[從 Office 通訊伺服器升級](/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |2018年1月8日  <br/> |
 |[PerformancePoint Server 2007 終止支援藍圖](pps-2007-end-of-support.md) <br/> |2018 年 1 月 9 日  <br/> |
    
 Microsoft 產品的支援結束後，還沒有其他專案：
@@ -66,7 +66,6 @@ Microsoft 產品的支援結束後，還沒有其他專案：
 
 [影片：什麼是 Microsoft 365？](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Microsoft 週期原則](https://go.microsoft.com/fwlink/?linkid=865200)
+[Microsoft 週期原則](/lifecycle/)
 
 [規劃從 Office 2007 或 Office 2010 伺服器和用戶端升級](plan-upgrade-previous-versions-office.md)
-  

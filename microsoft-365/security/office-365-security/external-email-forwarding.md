@@ -15,12 +15,12 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77f666e5eeceee3f5b324e5b9b6fac721c10e410
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 4614fc9661c892457800b70e2f04f577b418b417
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286860"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910771"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中控制自動外部電子郵件轉接
 
@@ -38,7 +38,7 @@ Microsoft 365 提供下列自動轉送類型：
 
 - 使用者可以設定 [收件匣規則](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) ，自動將郵件轉寄給外部寄件者 (故意或因遭到破壞的帳戶) 。
 
-- 系統管理員可以設定 [信箱轉送](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (又稱為 _SMTP 轉送_) ，以自動將郵件轉寄給外部收件者。 管理員可以選擇是否只轉寄郵件，或將轉寄郵件的副本保留在信箱中。
+- 系統管理員可以設定 [信箱轉送](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (又稱為 _SMTP 轉送_) ，以自動將郵件轉寄給外部收件者。 管理員可以選擇是否只轉寄郵件，或將轉寄郵件的副本保留在信箱中。
 
 您可以使用輸出垃圾郵件篩選原則來控制自動轉寄給外部收件者。 有三個可用的設定：
 
@@ -60,9 +60,9 @@ Microsoft 365 提供下列自動轉送類型：
 
 若您是系統管理員，您可能已經設定其他控制項，以允許或封鎖自動電子郵件轉發。 例如：
 
-- 可允許或封鎖自動將電子郵件轉寄至部分或所有外部網域的[遠端網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains)。
+- 可允許或封鎖自動將電子郵件轉寄至部分或所有外部網域的[遠端網域](/exchange/mail-flow-best-practices/remote-domains/remote-domains)。
 
-- Exchange [郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) 中的條件和動作 (也稱為傳輸規則) 偵測並封鎖自動轉寄的郵件至外部收件者。
+- Exchange [郵件流程規則](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) 中的條件和動作 (也稱為傳輸規則) 偵測並封鎖自動轉寄的郵件至外部收件者。
 
 遠端網域設定和郵件流程規則獨立于輸出垃圾郵件篩選原則中的設定。 例如：
 

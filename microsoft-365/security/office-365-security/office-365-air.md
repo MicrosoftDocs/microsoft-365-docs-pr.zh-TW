@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 250fba7bdf89425bce601112c7863eb9d1c952be
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3ba9dd3dac97456479b2191ee7f0eb7d97f79fed
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407441"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909043"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查和回應 (AIR) 
 
@@ -110,8 +110,8 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 |工作|需要) 角色 (|
 |---|---|
-|設定 AIR 功能|下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li></ul> <p> 您可以在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)指派這些角色。|
-|開始自動調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)內指派的下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li><li>安全性操作員</li><li>安全性讀取者 <br> --- 且 --- </li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
+|設定 AIR 功能|下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li></ul> <p> 您可以在 [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)指派這些角色。|
+|開始自動調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|在 [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)內指派的下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li><li>安全性操作員</li><li>安全性讀取者 <br> --- 且 --- </li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
 
 ## <a name="required-licenses"></a>必要的授權
 
@@ -128,7 +128,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="整合的動作中心":::
 
-新的和改善的安全性中心會在 [Microsoft defender For Office 365](office-365-atp.md) 和 [Microsoft defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)中共同提供 AIR 功能。 透過這些更新與改進功能，您的安全性運作小組將可以跨整個電子郵件、共同作業內容、使用者帳戶和裝置，查看有關自動化調查和修正動作的詳細資料，全部都位於一個地方。
+新的和改善的安全性中心會在 [Microsoft defender For Office 365](office-365-atp.md) 和 [Microsoft defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)中共同提供 AIR 功能。 透過這些更新與改進功能，您的安全性運作小組將可以跨整個電子郵件、共同作業內容、使用者帳戶和裝置，查看有關自動化調查和修正動作的詳細資料，全部都位於一個地方。
 
 > [!TIP]
 > 新的 Microsoft 365 安全性中心 (<https://security.microsoft.com>) 會取代下列的中心：
@@ -144,10 +144,10 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 |項目|變更的內容為何？|
 |---|---|
-|**調查** 頁面|「更新 **調查** 」頁面與您在 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)中所看到的一致。 您將會看到一些與新的整合 **調查** 視圖相符的一般格式和樣式變更。 例如，調查圖表會有更統一的格式。|
+|**調查** 頁面|「更新 **調查** 」頁面與您在 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)中所看到的一致。 您將會看到一些與新的整合 **調查** 視圖相符的一般格式和樣式變更。 例如，調查圖表會有更統一的格式。|
 |**使用者** ] 索引標籤|[ **使用者** ] 索引標籤現在是 [ **信箱** ] 索引標籤。[ **信箱** ] 索引標籤上會列出使用者的詳細資料。|
 |**電子郵件** ] 索引標籤|已移除 [ **電子郵件** ] 索引標籤;請造訪 [ **實體** ] 索引標籤，以查看電子郵件和電子郵件叢集專案的清單。|
-|**實體** ] 索引標籤|[ **實體** ] 索引標籤具有 tab 鍵] 索引標籤的樣式，其中包含所有摘要視圖，以及按實體類型篩選的功能。 除了 [**在瀏覽器中開啟**] 選項之外，[**實體**] 索引標籤現在還包括「**移搜尋**」選項。 您現在可以使用 [威脅瀏覽器](threat-explorer.md) 或 [高級搜尋](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) 來尋找實體和威脅，並篩選結果。|
+|**實體** ] 索引標籤|[ **實體** ] 索引標籤具有 tab 鍵] 索引標籤的樣式，其中包含所有摘要視圖，以及按實體類型篩選的功能。 除了 [**在瀏覽器中開啟**] 選項之外，[**實體**] 索引標籤現在還包括「**移搜尋**」選項。 您現在可以使用 [威脅瀏覽器](threat-explorer.md) 或 [高級搜尋](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) 來尋找實體和威脅，並篩選結果。|
 |**動作** ] 索引標籤|[更新的 **動作** ] 索引標籤現在包含 [ **暫止動作** ] 索引標籤和 [ **動作記錄** ] 索引卷您可以在選取暫止動作時開啟的側邊窗格中，核准 (或拒絕動作) 。|
 |**證據** ] 索引標籤|新的 [ **證據** ] 索引標籤會顯示與動作相關的主要實體調查結果。 您可以在選取暫止動作時所開啟的側邊窗格中，核准 (或拒絕相關的每個證據的動作) 。|
 |**行動中心**|更新的 **操作中心** (<https://security.microsoft.com/action-center>) 會在電子郵件、裝置和身分識別間，將擱置和完成的動作組合在一起。 若要深入瞭解，請參閱動作中心。  (若要深入瞭解，請參閱 [操作中心](../mtp/mtp-action-center.md)。 ) |

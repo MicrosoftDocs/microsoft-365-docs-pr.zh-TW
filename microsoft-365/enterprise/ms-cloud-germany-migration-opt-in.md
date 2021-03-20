@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '摘要： '
-ms.openlocfilehash: bcec542ad285dcabaf71af1ea8efc28f3f7d6b5a
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 190b020ac683bcb97317a281c520b7f1ac92c721
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780317"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910915"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何選擇加入從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 到新德國資料中心區域中的 Office 365 服務的移轉。
 
@@ -68,7 +68,7 @@ ms.locfileid: "49780317"
 
 [瞭解遷移期間的客戶體驗](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 
@@ -84,6 +84,6 @@ ms.locfileid: "49780317"
 
 雲端應用程式：
 
-- [Dynamics 365 的移轉程式資訊](https://aka.ms/d365ceoptin)
-- [Power BI 移轉程式資訊](https://aka.ms/pbioptin)
-- [開始升級您的 Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 的移轉程式資訊](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 移轉程式資訊](/power-bi/admin/service-admin-migrate-data-germany)
+- [開始升級您的 Microsoft Teams](/microsoftteams/upgrade-start-here)

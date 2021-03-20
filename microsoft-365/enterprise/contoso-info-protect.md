@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 瞭解 Contoso 如何使用 Microsoft 365 for enterprise 中的資訊保護功能，在雲端中保護其數位資產。
-ms.openlocfilehash: 7cc51110a0bc4c87e57e71b2ddb42aa0dbaa288d
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 90a82fbd4dd77ff0f8faa024ced177a640a10b80
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558501"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911035"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的資訊保護
 
-Contoso 對其資訊安全性很重要。對其產品設計和專有製造技術相關的智慧財產權的洩漏或破壞會帶來競爭的劣勢。
+Contoso 對其資訊安全性很重要。 對其產品設計和專有製造技術相關的智慧財產權的洩漏或破壞會帶來競爭的劣勢。
 
 在將其機密數位資產移至雲端之前，Contoso 確定 Microsoft 365 for enterprise 的雲端架構服務是否支援其內部部署資訊分類及保護需求。
 
@@ -34,7 +34,7 @@ Contoso 執行其資料的分析，並確定下列分類層級。
 
 | 第 1 級：基準 | 第 2 級：敏感性 | 第 3 級：高管制 |
 |:-------|:-----|:-----|
-| 資料經過加密並且僅提供給已驗證的使用者。<BR> <BR> 針對所有儲存在內部部署和雲端架構存放區和工作負載中的資料提供。當資料位於服務中，且在服務和用戶端裝置之間傳輸時，會進行加密。 <BR><BR>第 1 級的範例：一般業務通訊 (電子郵件) 和用於行政、銷售和支援員工的檔案之資料。 | 第 1 級再加上增強式驗證及資料遺失保護。<BR> <BR> 強驗證封裝含 Azure AD Multi-Factor 驗證 (MFA) 搭配 SMS 驗證。 資料遺失防護可確保敏感或重要資訊不會在 Microsoft 雲端外移動。<BR><BR>第 2 級的範例：財務和法務資訊以及新產品的研發資料。 | 第 2 級再加上最高層級的加密、驗證及稽核。<BR><BR>對靜態資料和雲端資料的最高層級資料加密，遵循地區法規，結合 MFA 與智慧卡以及細微稽核與警示。<BR> <BR>第3級資料範例包括客戶及合作夥伴個人資訊、產品工程規格，以及專屬的製造技術。  |
+| 資料經過加密並且僅提供給已驗證的使用者。<BR> <BR> 針對所有儲存在內部部署和雲端架構存放區和工作負載中的資料提供。 當資料位於服務中，且在服務和用戶端裝置之間傳輸時，會進行加密。 <BR><BR>第 1 級的範例：一般業務通訊 (電子郵件) 和用於行政、銷售和支援員工的檔案之資料。 | 第 1 級再加上增強式驗證及資料遺失保護。<BR> <BR> 強驗證封裝含 Azure AD Multi-Factor 驗證 (MFA) 搭配 SMS 驗證。 資料遺失防護可確保敏感或重要資訊不會在 Microsoft 雲端外移動。<BR><BR>第 2 級的範例：財務和法務資訊以及新產品的研發資料。 | 第 2 級再加上最高層級的加密、驗證及稽核。<BR><BR>對靜態資料和雲端資料的最高層級資料加密，遵循地區法規，結合 MFA 與智慧卡以及細微稽核與警示。<BR> <BR>第3級資料範例包括客戶及合作夥伴個人資訊、產品工程規格，以及專屬的製造技術。  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Contoso 資訊原則
@@ -115,9 +115,9 @@ Contoso 遵循這些步驟，針對其資訊保護需求準備 Microsoft 365 for
 
 瞭解 Contoso 如何針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用 [跨 Microsoft 365 的安全性功能](contoso-security-summary.md) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[安全性藍圖](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
+[安全性藍圖](../security/office-365-security/security-roadmap.md)
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 

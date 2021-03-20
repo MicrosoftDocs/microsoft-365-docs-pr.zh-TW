@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以深入瞭解 Outlook 中內建的垃圾郵件、非垃圾郵件和網路釣魚電子郵件報告選項，以供 iOS 和 Android。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6e63f534a9f9516c6e1a87ff82d5b0916d25778
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: eda0d8d43244834236a70374df6b7d6ccf0b69ab
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509323"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908815"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>在適用于 Exchange Online 的 iOS 和 Android 的 Outlook 中報告垃圾郵件和網路釣魚電子郵件
 
@@ -37,7 +37,7 @@ ms.locfileid: "50509323"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前，您必須瞭解哪些事項
 
-- 為了獲得最佳的使用者提交經驗，我們建議使用報告訊息和報告網路釣魚增益集。請參閱 [enable The Report Message 增益集](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) 及 [啟用報告網路釣魚增益集](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-phish-add-in) 以取得詳細資訊。
+- 為了獲得最佳的使用者提交經驗，我們建議使用報告訊息和報告網路釣魚增益集。請參閱 [enable The Report Message 增益集](./enable-the-report-message-add-in.md) 及 [啟用報告網路釣魚增益集](./enable-the-report-phish-add-in.md) 以取得詳細資訊。
 
 - 如果您是 Exchange Online 信箱組織中的系統管理員，建議您在安全性 & 規範中心內使用提交入口網站。 如需詳細資訊，請參閱 [使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
 

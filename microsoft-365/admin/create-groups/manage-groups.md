@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何管理 Microsoft 365 群組，包括新增移除群組成員、編輯電子郵件地址、組名或描述，以及自訂群組的運作方式。
-ms.openlocfilehash: 8216b80ba6cd6bffe470f4fe4ace43307afba5f2
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 3ba3dd36ed3929e956ce6359e678d6b684f64bb9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753298"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908707"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中管理群組
 
@@ -50,7 +50,7 @@ ms.locfileid: "48753298"
 
 4. 選擇 [ **新增** ] 以新增人員，或按一下 **X** 以移除某人。
 
-5. 按一下 **[關閉]**。
+5. 按一下 [關閉 **]**。
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>將交談複本傳送至群組成員的收件匣
   
@@ -66,7 +66,7 @@ ms.locfileid: "48753298"
 
 3. 在 [ **設定** ] 索引標籤上，如果您想要讓成員在自己的收件匣接收群組郵件和行事曆專案的副本，請選取 [ **將群組交談和事件的副本傳送至群組成員** ]
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
 
 ## <a name="let-people-outside-the-organization-email-the-group"></a>讓組織外部的人員以電子郵件傳送群組
 
@@ -78,7 +78,7 @@ ms.locfileid: "48753298"
 
 3. 在 [系統管理中心群組] 清單中，選取您要變更之群組的名稱，然後在 [ **設定** ] 索引標籤上，選取 [ **允許外部寄件者以電子郵件傳送此群組**]。
     
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>永久刪除 Microsoft 365 群組
 
@@ -113,4 +113,4 @@ ms.locfileid: "48753298"
 
 [將通訊群組清單升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)
 
-[使用 PowerShell 管理 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[使用 PowerShell 管理 Microsoft 365 群組](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解您可以使用的群組類型。
-ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 8565b567706a70bb014fab42b23e9c55fb0efc45
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727244"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908743"
 ---
 # <a name="compare-groups"></a>比較群組
 
@@ -45,19 +45,19 @@ Microsoft 365 群組用來在公司內部和外部的使用者之間共同作業
 
 只要[系統管理員啟用](manage-guest-access-in-groups.md)這項功能，您就可以將組織外部的人員新增至群組。 您也可以允許外部寄件者將電子郵件傳送到群組電子郵件地址。
 
-Microsoft 365 群組可以[在 Azure Active Directory 中針對動態成員資格設定](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type) (部分機器翻譯)，以便根據使用者屬性 (例如部門、位置、職稱等) 自動新增或移除群組成員。
+Microsoft 365 群組可以[在 Azure Active Directory 中針對動態成員資格設定](/azure/active-directory/users-groups-roles/groups-change-type) (部分機器翻譯)，以便根據使用者屬性 (例如部門、位置、職稱等) 自動新增或移除群組成員。
 
 Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Outlook 和 Android 版 Outlook。
 
-如果[系統管理員已啟用](allow-members-to-send-as-or-send-on-behalf-of-group.md)此功能，則群組成員可以以群組電子郵件地址的身分傳送或代表其傳送。
+如果[系統管理員已啟用](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)此功能，則群組成員可以以群組電子郵件地址的身分傳送或代表其傳送。
 
 ## <a name="distribution-groups"></a>通訊群組
 
-[通訊群組](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)用來傳送通知給一群人。 如果系統管理員已啟用該功能，他們就能接收外部電子郵件。
+[通訊群組](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)用來傳送通知給一群人。 如果系統管理員已啟用該功能，他們就能接收外部電子郵件。
 
 如果您需要將資訊廣播給一群人，例如「大樓 A 的人員」或「Contoso 的每個人」，則最適合使用通訊群組。
 
-可以將通訊群組[升級至 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)。
+可以將通訊群組[升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)。
 
 ## <a name="security-groups"></a>安全性群組
 
@@ -65,7 +65,7 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 
 安全性群組可以包含使用者或裝置。 為裝置建立可搭配行動裝置管理服務 (例如 Intune) 使用的安全性群組。
 
-安全性群組可以[在 Azure Active Directory 中針對動態成員資格設定](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)，以便根據使用者屬性 (例如部門、位置、職稱等) 或裝置屬性 (例如作業系統版本) 自動新增或移除群組成員。
+安全性群組可以[在 Azure Active Directory 中針對動態成員資格設定](/azure/active-directory/users-groups-roles/groups-change-type)，以便根據使用者屬性 (例如部門、位置、職稱等) 或裝置屬性 (例如作業系統版本) 自動新增或移除群組成員。
 
 ## <a name="mail-enabled-security-groups"></a>擁有郵件功能的安全性群組
 

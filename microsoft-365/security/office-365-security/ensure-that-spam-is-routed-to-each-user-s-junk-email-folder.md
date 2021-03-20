@@ -18,12 +18,12 @@ description: 系統管理員可以瞭解如何將垃圾郵件路由傳送至 Exc
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b8fbc1b065e348f759806d80fd85421eb9d66098
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ae6ee551d04b242891c9638d6d99d79240480d27
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288870"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910855"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>設定獨立 EOP，將垃圾郵件傳遞至混合式環境中的 [垃圾郵件] 資料夾
 
@@ -54,27 +54,27 @@ ms.locfileid: "50288870"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您必須在內部部署 Exchange 環境中指派許可權，才能執行這些程式。 具體而言，您必須被指派 **傳輸規則** 角色，預設會指派給 **組織管理**、 **規範管理** 及 **記錄管理** 角色。 如需詳細資訊，請參閱 [將成員新增至角色群組](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group)。
+- 您必須在內部部署 Exchange 環境中指派許可權，才能執行這些程式。 具體而言，您必須被指派 **傳輸規則** 角色，預設會指派給 **組織管理**、 **規範管理** 及 **記錄管理** 角色。 如需詳細資訊，請參閱 [將成員新增至角色群組](/Exchange/permissions/role-group-members#add-members-to-a-role-group)。
 
 - 當郵件傳遞至內部部署 Exchange 組織中的 [垃圾郵件] 資料夾時，由下列設定的組合來控制：
 
-  - Exchange 管理命令介面中 [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) Cmdlet 上的 _SCLJunkThreshold_ 參數值。 預設值為4，表示 SCL 上限為5或以上，則應該會將郵件傳遞至使用者的 [垃圾郵件] 資料夾。
+  - Exchange 管理命令介面中 [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) Cmdlet 上的 _SCLJunkThreshold_ 參數值。 預設值為4，表示 SCL 上限為5或以上，則應該會將郵件傳遞至使用者的 [垃圾郵件] 資料夾。
 
-  - Exchange 管理命令介面中 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) Cmdlet 上的 _SCLJunkThreshold_ 參數值。 預設值為空白 ($null) ，這表示使用組織設定。
+  - Exchange 管理命令介面中 [Set-Mailbox](/powershell/module/exchange/set-mailbox) Cmdlet 上的 _SCLJunkThreshold_ 參數值。 預設值為空白 ($null) ，這表示使用組織設定。
 
-  如需詳細資訊，請參閱 [Exchange 垃圾郵件信賴等級 (SCL) 閾值](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl)。
+  如需詳細資訊，請參閱 [Exchange 垃圾郵件信賴等級 (SCL) 閾值](/Exchange/antispam-and-antimalware/antispam-protection/scl)。
 
-  - 是否已在信箱上啟用垃圾郵件規則 (在 Exchange 管理命令介面) 的 [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)指令程式中 $true _enabled_ 參數值是。 這是垃圾郵件規則，它會在傳送後實際將郵件移至 [垃圾郵件] 資料夾。 依預設，會在信箱上啟用垃圾郵件規則。 如需詳細資訊，請參閱 [設定信箱上的 Exchange 反垃圾郵件設定](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
+  - 是否已在信箱上啟用垃圾郵件規則 (在 Exchange 管理命令介面) 的 [Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration)指令程式中 $true _enabled_ 參數值是。 這是垃圾郵件規則，它會在傳送後實際將郵件移至 [垃圾郵件] 資料夾。 依預設，會在信箱上啟用垃圾郵件規則。 如需詳細資訊，請參閱 [設定信箱上的 Exchange 反垃圾郵件設定](/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
 
-- 若要在 Exchange 伺服器上開啟 EAC，請參閱 exchange [server 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要開啟 Exchange 管理命令介面，請參閱 [open The Exchange Management shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell)。
+- 若要在 Exchange 伺服器上開啟 EAC，請參閱 exchange [server 中的 exchange 系統管理中心](/Exchange/architecture/client-access/exchange-admin-center)。 若要開啟 Exchange 管理命令介面，請參閱 [open The Exchange Management shell](/powershell/exchange/open-the-exchange-management-shell)。
 
 - 如需內部部署 Exchange 中郵件流程規則的相關資訊，請參閱下列主題：
 
-  - [Exchange Server 中的郵件流程規則](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
+  - [Exchange Server 中的郵件流程規則](/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
 
-  - [Exchange Server 中的郵件流程規則條件和例外狀況 (述詞)](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
+  - [Exchange Server 中的郵件流程規則條件和例外狀況 (述詞)](/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-  - [Exchange Server 中的郵件流程規則動作](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/actions)
+  - [Exchange Server 中的郵件流程規則動作](/Exchange/policy-and-compliance/mail-flow-rules/actions)
 
 ## <a name="use-the-eac-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>使用 EAC 來建立郵件流程規則，以設定 EOP 垃圾郵件訊息的 SCL
 
@@ -132,7 +132,7 @@ New-TransportRule -Name "EOP SFV:SKS to SCL 6" -HeaderContainsMessageHeader "X-F
 New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
 ```
 
-如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)。
+如需詳細的語法和參數資訊，請參閱 [New-TransportRule](/powershell/module/exchange/new-transportrule)。
 
 ## <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 

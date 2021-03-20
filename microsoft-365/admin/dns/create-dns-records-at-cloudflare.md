@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Cloudflare。
-ms.openlocfilehash: 8d5dd7779f07fd42dd230ee33c40849da3519d26
-ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
+ms.openlocfilehash: 0a80cf059a3a69dcb8aa48251875410f35684286
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49939269"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910375"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>在 Cloudflare 建立 Microsoft 的 DNS 記錄
 
@@ -132,7 +132,7 @@ ms.locfileid: "49939269"
     
     | 類型 | 姓名 | Mail server (郵件伺服器) | Priority (優先順序) | TTL |
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 365 帳戶取得。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 分鐘  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 365 帳戶取得。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/>|30 分鐘  <br/> |
    
 
   
@@ -219,8 +219,8 @@ ms.locfileid: "49939269"
         
     | Type (類型) | Service (服務) | Protocol (通訊協定) | Name (名稱) | TTL | Priority (優先順序) | Weight (權數) | Port (連接埠) | Target (目標) |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |使用您的 *domain_name*;例如，contoso.com  |30 分鐘 | 100|1  |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|使用您的 *domain_name*;例如，contoso.com   |30 分鐘 |100 |1  |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |使用您的 *domain_name*;例如，contoso.com  |30 分鐘 | 100|1 |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|使用您的 *domain_name*;例如，contoso.com   |30 分鐘 |100 |1 |5061 | sipfed.online.lync.com |
 
   
 5. 選取 [儲存]。
@@ -231,4 +231,3 @@ ms.locfileid: "49939269"
     
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
-  

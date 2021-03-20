@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Names.co.uk。
-ms.openlocfilehash: 51dc9b3271468d42e82f98a1b85de5104416b015
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: ddd7286d983a0f180c9aefdbf5218eb9765c8669
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657812"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910039"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>在 Names.co.uk 建立 Microsoft 的 DNS 記錄
 
@@ -73,7 +73,7 @@ ms.locfileid: "49657812"
        
     ![NamesUK-BP-Verify-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
     
     (您可能需要向下捲動。)
     
@@ -121,11 +121,11 @@ ms.locfileid: "49657812"
     
     |**主機名稱**|**優先順序**|**結果**|
     |:-----|:-----|:-----|
-    |(將此欄位保留空白。)  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]>  *\<domain-key\>*  從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |(將此欄位保留空白。)  <br/> |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]>  *\<domain-key\>*  從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-Configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
     
     (您可能需要向下捲動。)
     
@@ -135,7 +135,7 @@ ms.locfileid: "49657812"
     
     ![NamesUK-BP-Configure-2-3](../../media/f8e43926-b724-4690-94e7-ec4b8d7a8da5.png)
   
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
     
     (您可能需要向下捲動。)
     
@@ -172,7 +172,7 @@ ms.locfileid: "49657812"
        
     ![NamesUK-BP-Configure-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
     
     ![NamesUK-BP-Configure-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
   
@@ -210,7 +210,7 @@ ms.locfileid: "49657812"
        
     ![NamesUK-BP-Configure-4-1](../../media/cfc61387-630e-4aa0-8762-ef36eaeda44a.png)
   
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
     
     (您可能需要向下捲動。)
     
@@ -235,12 +235,12 @@ ms.locfileid: "49657812"
     
     |**名稱**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**結果**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-Configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
     
     (您可能需要向下捲動。)
     
@@ -248,4 +248,3 @@ ms.locfileid: "49657812"
   
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
-  

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft GoDaddy。
-ms.openlocfilehash: 2b53985dc17f3d124ec2b37dbf0047bce229385c
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: d0163447abdc7b9fe5afd4f471f24ee09de40d50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126446"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910243"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>在 Microsoft 的 GoDaddy 建立 DNS 記錄
 
@@ -58,7 +58,7 @@ ms.locfileid: "50126446"
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 選取 **[新增]**。
+3. 選取 **新增**。
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -109,7 +109,7 @@ ms.locfileid: "50126446"
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 選取 **[新增]**。
+3. 選取 **新增**。
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -123,7 +123,7 @@ ms.locfileid: "50126446"
 
     |**記錄類型**|**Host** (主機)|**Points to** (指向)|**Priority** (優先順序)|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (郵件交換程式)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 小時  <br/> |
+    |MX (郵件交換程式)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/> |1 小時  <br/> |
 
 6. 選取 [儲存]。
 
@@ -140,7 +140,7 @@ ms.locfileid: "50126446"
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 選取 **[新增]**。
+3. 選取 **新增**。
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -183,7 +183,7 @@ ms.locfileid: "50126446"
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 選取 **[新增]**。
+3. 選取 **新增**。
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -217,7 +217,7 @@ ms.locfileid: "50126446"
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 選取 **[新增]**。
+3. 選取 **新增**。
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -233,8 +233,8 @@ ms.locfileid: "50126446"
 
     |**記錄類型**|**Name** (名稱)|**Target** (目標)|**Protocol** (通訊協定)|**Service** (服務)|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service) (SRV (服務))  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 小時  <br/> |
-    |SRV (Service) (SRV (服務))  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 小時  <br/> |
+    |SRV (Service) (SRV (服務))  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 小時  <br/> |
+    |SRV (Service) (SRV (服務))  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 小時  <br/> |
 
     ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 

@@ -15,12 +15,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何在獨立 Exchange Online Protection (EOP) 中執行系統管理員角色群組報告。 當系統管理員在系統管理員角色群組中新增或移除成員時，此報告會登入。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d778e807a087a5e29b31645457d4a81bd05c5649
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0281dcb13f5cee0ba8db8c4faed5054f481337cf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288016"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908791"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在獨立版 EOP 中執行系統管理員角色群組報告
 
@@ -39,7 +39,7 @@ ms.locfileid: "50288016"
 
 - 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體說來，您需要「 **審核記錄** 」或「 **View-Only 審核記錄** 」角色，預設會指派給「 **組織管理**」、「 **合規性管理**」及「 **安全性管理員** 」角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 論壇中尋求協助。
@@ -79,7 +79,7 @@ ms.locfileid: "50288016"
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>使用獨立 Exchange Online PowerShell 來搜尋審計記錄專案
 
-您可以使用 Exchange Online PowerShell 來搜尋符合您指定之準則的審計記錄專案。 如需搜尋準則的清單，請參閱 [Search-AdminAuditLog 搜尋準則](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 此程式會使用 **Search-AdminAuditLog** Cmdlet，並以 Exchange Online PowerShell 顯示搜尋結果。 當您需要傳回的一組結果超過 **New-AdminAuditLogSearch** Cmdlet 或 EAC「稽核報告」報告中所定義的限制時，就可以使用這個 Cmdlet。
+您可以使用 Exchange Online PowerShell 來搜尋符合您指定之準則的審計記錄專案。 如需搜尋準則的清單，請參閱 [Search-AdminAuditLog 搜尋準則](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 此程式會使用 **Search-AdminAuditLog** Cmdlet，並以 Exchange Online PowerShell 顯示搜尋結果。 當您需要傳回的一組結果超過 **New-AdminAuditLogSearch** Cmdlet 或 EAC「稽核報告」報告中所定義的限制時，就可以使用這個 Cmdlet。
 
 若要搜尋指定準則的稽核記錄，請使用下列語法。
 
@@ -114,19 +114,19 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 如果您的搜尋傳回許多記錄專案，建議您使用使用 Exchange Online PowerShell 中提供的程式， **來搜尋審計記錄專案，並將結果傳送給** 本文稍後的收件者。 該章節中的程序會以電子郵件附件形式將 XML 檔案傳送給您指定的收件者，讓您更輕鬆擷取感興趣的資料。
 
-如需詳細的語法及參數資訊，請參閱 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)。
+如需詳細的語法及參數資訊，請參閱 [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)。
 
 ### <a name="view-details-of-audit-log-entries"></a>檢視稽核記錄項目的詳細資料
 
-**Search-AdminAuditLog** Cmdlet 會傳回 [審核記錄內容](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)中所述的欄位。 在此指令程式傳回的欄位中， **CmdletParameters** 和 **ModifiedProperties** 兩個欄位包含依預設無法檢視的其他資訊。
+**Search-AdminAuditLog** Cmdlet 會傳回 [審核記錄內容](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)中所述的欄位。 在此指令程式傳回的欄位中， **CmdletParameters** 和 **ModifiedProperties** 兩個欄位包含依預設無法檢視的其他資訊。
 
 若要檢視 **CmdletParameters** 和 **ModifiedProperties** 欄位的內容，請使用下列步驟。 或者，您可以使用 **Exchange Online PowerShell 中的程式來搜尋審計記錄專案，並將結果傳送到** 本文稍後的收件者，以建立 XML 檔案。
 
 此程序採用下列概念：
 
-- [about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
+- [about_Arrays](/powershell/module/microsoft.powershell.core/about/about_arrays)
 
-- [about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
+- [about_Variables](/powershell/module/microsoft.powershell.core/about/about_variables)
 
 1. 決定您要搜尋的準則、執行 **Search-AdminAuditLog** 指令程式，然後使用下列命令將結果儲存在變數中。
 

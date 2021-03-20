@@ -17,12 +17,12 @@ ms.collection:
 description: 瞭解如何使用傳遞集區來保護 Microsoft 365 資料中心的電子郵件伺服器信譽。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89aac1478d3e5840df4379b9f49832b79d0e133a
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5b35474c4d2b00c70e02f6f0127c3191a1e459bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289802"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910723"
 ---
 # <a name="outbound-delivery-pools"></a>輸出傳遞集區
 
@@ -38,7 +38,7 @@ Microsoft 365 資料中心的電子郵件伺服器可能會暫時 guilty 寄送�
 這些案例會產生出現在協力廠商封鎖清單上之受影響的 Microsoft 365 datacenter 伺服器的 IP 位址。 使用這些封鎖清單的目的地電子郵件組織會拒絕來自這些郵件來源的電子郵件。
 
 ## <a name="high-risk-delivery-pool"></a>高風險傳遞集區
-若要防止這種情況，所有來自 Microsoft 365 datacenter server 但決定為垃圾郵件的外寄郵件，或超過 [服務](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) 之傳送限制或 [輸出垃圾郵件原則](configure-the-outbound-spam-policy.md) 的所有外寄郵件都會透過 _高風險傳遞集_ 區來傳送。
+若要防止這種情況，所有來自 Microsoft 365 datacenter server 但決定為垃圾郵件的外寄郵件，或超過 [服務](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) 之傳送限制或 [輸出垃圾郵件原則](configure-the-outbound-spam-policy.md) 的所有外寄郵件都會透過 _高風險傳遞集_ 區來傳送。
 
 「高風險傳遞集區」是外寄電子郵件的個別 IP 位址集區，只用于傳送「低品質」郵件 (例如，垃圾郵件和 [退信攻擊](backscatter-messages-and-eop.md)) 。 使用 [高風險傳遞集區]，可防止輸出電子郵件的一般 IP 位址集區傳送垃圾郵件。 外寄電子郵件的一般 IP 位址集區維持「高品質」郵件的信譽，這會降低這些 IP 位址會出現在 IP 封鎖清單上的可能性。
 
@@ -66,4 +66,4 @@ NDRs 中的電湧可能原因包括：
 
 轉寄或轉送到 Microsoft 365 的郵件會以特殊轉送集區傳送，因為最後目的地不應該將 Microsoft 365 視為實際寄件者。 請務必隔離此流量，因為 autoforwarding 或將電子郵件轉送至 Microsoft 365 時，有合法和不正確案例。 與高風險傳遞集區類似，中繼郵件使用個別的 IP 位址集區。 此位址集區不會發佈，因為它可能經常變更。
 
-Microsoft 365 需要驗證原始寄件者是否合法，讓我們可以自信地傳遞轉寄的郵件。 為了做到這一點，電子郵件驗證 (SPF、DKIM 及) DMARC，都必須傳遞給我們的郵件。 在我們可驗證寄件者的情況下，我們會使用寄件者修正，協助接收器知道轉寄的郵件來自信任的來源。 您可以深入瞭解該作業的運作方式及可執行檔動作，以協助確保傳送網域在 [寄件者修正模式中 (SRS) ](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)中的驗證。
+Microsoft 365 需要驗證原始寄件者是否合法，讓我們可以自信地傳遞轉寄的郵件。 為了做到這一點，電子郵件驗證 (SPF、DKIM 及) DMARC，都必須傳遞給我們的郵件。 在我們可驗證寄件者的情況下，我們會使用寄件者修正，協助接收器知道轉寄的郵件來自信任的來源。 您可以深入瞭解該作業的運作方式及可執行檔動作，以協助確保傳送網域在 [寄件者修正模式中 (SRS) ](/office365/troubleshoot/antispam/sender-rewriting-scheme)中的驗證。

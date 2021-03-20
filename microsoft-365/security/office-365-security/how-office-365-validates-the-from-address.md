@@ -19,12 +19,12 @@ description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Ou
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f8ced200c2e521533c1dec8a9d0917add7ca058f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 71da944c02137024adda48434c5214695c54a817
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287816"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910675"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP 如何驗證寄件者位址以避免網路釣魚
 
@@ -41,7 +41,7 @@ ms.locfileid: "50287816"
 
 - 如果您定期收到的電子郵件來自于本文所述的位址錯誤的組織，請鼓勵這些組織更新他們的電子郵件伺服器，以遵守新式安全性標準。
 
-- 「傳送代理者」和「郵寄清單」使用的相關寄件者欄位 () 不會受到這些需求的影響。 如需詳細資訊，請參閱下列博客文章： [當我們參考電子郵件的「寄件者」時，這是什麼意思？](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)。
+- 「傳送代理者」和「郵寄清單」使用的相關寄件者欄位 () 不會受到這些需求的影響。 如需詳細資訊，請參閱下列博客文章： [當我們參考電子郵件的「寄件者」時，這是什麼意思？](/archive/blogs/tzink/what-do-we-mean-when-we-refer-to-the-sender-of-an-email)。
 
 ## <a name="an-overview-of-email-message-standards"></a>電子郵件訊息標準的概覽
 

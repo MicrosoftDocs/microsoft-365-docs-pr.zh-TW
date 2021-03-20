@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Register365。
-ms.openlocfilehash: 6cefdeff3da1256911d80066b55b00f5bef24055
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: a0bf077a6e034add48e9745711fb37d59e2c8203
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656912"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910003"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>在 Register365 建立 Microsoft 的 DNS 記錄
 
@@ -83,7 +83,7 @@ ms.locfileid: "49656912"
    
     ![在 [Add/Modify DNS 區域] 頁面上輸入值](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
     
     (您可能需要向下捲動。)
     
@@ -131,11 +131,11 @@ ms.locfileid: "49656912"
     
     |**主機名稱**|**優先順序**|**結果**|
     |:-----|:-----|:-----|
-    |(將此欄位保留空白。)  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)     |
+    |(將此欄位保留空白。)  <br/> |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![在 [Add/Modify DNS 區域] 頁面上輸入值](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
     
     (您可能需要向下捲動。)
     
@@ -145,7 +145,7 @@ ms.locfileid: "49656912"
     
     ![Deleting records in the Mail exchange records section](../../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
   
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
     
     (您可能需要向下捲動。)
     
@@ -216,7 +216,7 @@ ms.locfileid: "49656912"
    
     ![在 [Add/Modify DNS 區域] 頁面上輸入值](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
     
     (您可能需要向下捲動。)
     
@@ -241,12 +241,12 @@ ms.locfileid: "49656912"
     
     |**名稱**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**結果**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![在 [服務記錄] 區段中輸入值](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
     
     (您可能需要向下捲動。)
     
@@ -254,4 +254,3 @@ ms.locfileid: "49656912"
   
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
-  

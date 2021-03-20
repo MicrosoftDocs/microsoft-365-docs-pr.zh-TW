@@ -19,12 +19,12 @@ description: 系統管理員可以深入瞭解 Microsoft 365 的安全性 & 規�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 170183cd31a770812f8bf59153123ffc66c8640c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 520aff938110bb7699306b11736ccaa09f32a35b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288834"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908971"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全性與合規性中心中的權限
 
@@ -94,9 +94,9 @@ ms.locfileid: "50288834"
 |**隔離系統管理員**|成員可以存取所有隔離動作。 如需詳細資訊，請參閱 [在 EOP 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)|隔離|
 |**記錄管理**|成員可以設定記錄管理的各個層面，包括保留標籤和處置檢查。|處置管理 <p> RecordManagement <p> 保留管理|
 |**檢閱者**|成員可以存取 [高級 eDiscovery](../../compliance/overview-ediscovery-20.md) 案例中的審閱集。 這個角色群組的成員可以在 Microsoft 365 規範中心的 [ **eDiscovery > 高級** ] 頁面上，查看及開啟案例清單。 使用者存取高級 eDiscovery 案例後，即可選取 [ **複查集** ] 以存取案例資料。 此角色不允許使用者預覽與案例相關聯的集合搜尋結果，或執行其他搜尋或案例管理工作。 這個角色群組的成員只能存取審閱集中的資料。|檢閱|
-|**安全性系統管理員**|成員可以存取 Identity Protection Center、特權身分識別管理、監視 Microsoft 365 服務健康情況及安全性 & 合規性中心的許多安全性功能。 <p> 根據預設，此角色群組可能不會有任何成員。 不過，Azure Active Directory 中的安全性系統管理員角色會指派給此角色群組。 因此，此角色群組會從 Azure Active Directory 繼承安全性管理員角色的功能和成員資格。 <p> 若要集中管理許可權，請在 Azure Active Directory 系統管理中心新增及移除群組成員。 如需詳細資訊，請參閱 [在 Azure Active Directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 如果您在安全性 & 合規性中心編輯此角色群組 (成員資格或角色) ，這些變更只會套用至安全性 & 規範中心，而不會套用至其他任何服務。 <p> 此角色群組包含安全性讀取器角色的所有唯讀許可權，以及相同服務的其他許多管理許可權： Azure 資訊保護、身分識別保護中心、特權身分識別管理、監視 Microsoft 365 服務健康情況，以及安全性 & 合規性中心。|稽核記錄 <p> 裝置管理 <p> DLP 合規性管理 <p> IB 合規性管理 <p> 管理警示 <p> 隔離 <p> 安全性系統管理員 <p> 敏感度標籤系統管理員 <p> 標記參與者 <p> 標記管理員 <p> 標記讀取器 <p> 僅限檢視稽核記錄 <p> 僅限檢視裝置管理 <p> 僅限檢視 DLP 合規性管理 <p> 僅限檢視 IB 合規性管理 <p> 僅限檢視管理警示|
+|**安全性系統管理員**|成員可以存取 Identity Protection Center、特權身分識別管理、監視 Microsoft 365 服務健康情況及安全性 & 合規性中心的許多安全性功能。 <p> 根據預設，此角色群組可能不會有任何成員。 不過，Azure Active Directory 中的安全性系統管理員角色會指派給此角色群組。 因此，此角色群組會從 Azure Active Directory 繼承安全性管理員角色的功能和成員資格。 <p> 若要集中管理許可權，請在 Azure Active Directory 系統管理中心新增及移除群組成員。 如需詳細資訊，請參閱 [在 Azure Active Directory 中的系統管理員角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 如果您在安全性 & 合規性中心編輯此角色群組 (成員資格或角色) ，這些變更只會套用至安全性 & 規範中心，而不會套用至其他任何服務。 <p> 此角色群組包含安全性讀取器角色的所有唯讀許可權，以及相同服務的其他許多管理許可權： Azure 資訊保護、身分識別保護中心、特權身分識別管理、監視 Microsoft 365 服務健康情況，以及安全性 & 合規性中心。|稽核記錄 <p> 裝置管理 <p> DLP 合規性管理 <p> IB 合規性管理 <p> 管理警示 <p> 隔離 <p> 安全性系統管理員 <p> 敏感度標籤系統管理員 <p> 標記參與者 <p> 標記管理員 <p> 標記讀取器 <p> 僅限檢視稽核記錄 <p> 僅限檢視裝置管理 <p> 僅限檢視 DLP 合規性管理 <p> 僅限檢視 IB 合規性管理 <p> 僅限檢視管理警示|
 |**安全性操作員**|成員可以管理安全性警示，也可以檢視安全性功能的報告和設定。|合規性搜尋 <p> 管理警示 <p> 安全性讀取者 <p> 標記參與者 <p> 標記讀取器 <p> 僅限檢視稽核記錄 <p> 僅限檢視裝置管理 <p> 僅限檢視 DLP 合規性管理 <p> 僅限檢視 IB 合規性管理 <p> 僅限檢視管理警示|
-|**安全性讀取者**|成員對身分識別保護中心的許多安全性功能具有唯讀存取權、特權身分識別管理、監視 Microsoft 365 服務健康情況，以及安全性 & 合規性中心。 <p> 根據預設，此角色群組可能不會有任何成員。 不過，Azure Active Directory 的安全性讀取器角色會指派給此角色群組。 因此，此角色群組會從 Azure Active Directory 繼承安全性讀者角色的功能和成員資格。 <p> 若要集中管理許可權，請在 Azure Active Directory 系統管理中心新增及移除群組成員。 如需詳細資訊，請參閱 [在 Azure Active Directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 如果您在安全性 & 合規性中心編輯此角色群組 (成員資格或角色) ，這些變更只會套用至安全性 & 規範中心，而不會套用至其他任何服務。|安全性讀取者 <p> 敏感度標籤讀取器 <p> 標記讀取器 <p> 僅限檢視裝置管理 <p> 僅限檢視 DLP 合規性管理 <p> 僅限檢視 IB 合規性管理 <p> 僅限檢視管理警示|
+|**安全性讀取者**|成員對身分識別保護中心的許多安全性功能具有唯讀存取權、特權身分識別管理、監視 Microsoft 365 服務健康情況，以及安全性 & 合規性中心。 <p> 根據預設，此角色群組可能不會有任何成員。 不過，Azure Active Directory 的安全性讀取器角色會指派給此角色群組。 因此，此角色群組會從 Azure Active Directory 繼承安全性讀者角色的功能和成員資格。 <p> 若要集中管理許可權，請在 Azure Active Directory 系統管理中心新增及移除群組成員。 如需詳細資訊，請參閱 [在 Azure Active Directory 中的系統管理員角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 如果您在安全性 & 合規性中心編輯此角色群組 (成員資格或角色) ，這些變更只會套用至安全性 & 規範中心，而不會套用至其他任何服務。|安全性讀取者 <p> 敏感度標籤讀取器 <p> 標記讀取器 <p> 僅限檢視裝置管理 <p> 僅限檢視 DLP 合規性管理 <p> 僅限檢視 IB 合規性管理 <p> 僅限檢視管理警示|
 |**服務保證使用者**|成員可以存取安全性 & 合規性中心的服務保證區段。 服務保證可提供報告及檔，說明 Microsoft 在 Microsoft 365 中儲存的客戶資料的安全性作法。 此外，它還提供 Microsoft 365 上獨立的協力廠商審核報告。 如需詳細資訊，請參閱 [安全性 & 合規性中心中的服務保證](../../compliance/service-assurance.md)。|服務保證檢視|
 |**主管檢閱**|成員可以建立和管理原則，該原則定義了組織中要被檢視的是那些通訊。 如需詳細資訊，請參閱[設定貴組織的通訊合規性原則](../../compliance/communication-compliance-configure.md)。|主管檢閱系統管理員|
 |
@@ -112,7 +112,7 @@ ms.locfileid: "50288834"
 
 - 攻擊模擬器管理員
 - 攻擊模擬器負載編寫者
-- 通訊
+- 溝通
 - 通訊合規性管理
 - 通訊相容性分析
 - 通訊規範案例管理

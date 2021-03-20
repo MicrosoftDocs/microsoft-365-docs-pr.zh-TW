@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: d2ce8ecc12c73969a6ad9b939dc02c6b9cb360f4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9176bfbbd015243266ba1c8cbad9d04787f6a6cc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288404"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909247"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
@@ -40,7 +40,7 @@ ms.locfileid: "50288404"
 ## <a name="december-2020"></a>2020 年 12 月
 新的或已變更的文章 | 描述
 --- | ---
-[什麼是 Microsoft 受管理的電腦？](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | 更新的文章
+[什麼是 Microsoft 受管理的電腦？](./intro/index.md) | 更新的文章
 [使用報告](working-with-managed-desktop/reports.md) | 更新的文章
 [隱私權和個人資料](service-description/privacy-personal-data.md) | 更新的文章
 [合規性](intro/compliance.md) | 更新的文章
@@ -188,8 +188,8 @@ ms.locfileid: "50288404"
 [使用情況深入解析](working-with-managed-desktop/usage-insights.md) | 新文章
 [可靠深入解析](working-with-managed-desktop/reliability-insights.md) | 新文章
 [Microsoft 受管理的桌面裝置](service-description/device-list.md) | 更新的文章
-[Microsoft 受管理的桌面主版頁面](https://docs.microsoft.com/microsoft-365/managed-desktop/) | 更新的文章
-[什麼是 Microsoft 受管理的電腦？](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | 更新的文章
+[Microsoft 受管理的桌面主版頁面](./index.yml) | 更新的文章
+[什麼是 Microsoft 受管理的電腦？](./intro/index.md) | 更新的文章
 [讓您的使用者準備好使用裝置](get-started/get-started-devices.md) | 更新的文章
 [服務方案的例外狀況](service-description/customizing.md) | 更新的文章
 
@@ -306,5 +306,4 @@ ms.locfileid: "50288404"
 [Microsoft 受管理電腦的支援](service-description/support.md)<br />[Microsoft 受管理電腦的使用者支援](working-with-managed-desktop/end-user-support.md) | 更新以包含澳大利亞。
 
 ## <a name="october-30-2018"></a>2018年10月30日
-已重新組織內容：新增 [Microsoft Managed Desktop service 描述](service-description/index.md)的區段。 
-
+已重新組織內容：新增 [Microsoft Managed Desktop service 描述](service-description/index.md)的區段。

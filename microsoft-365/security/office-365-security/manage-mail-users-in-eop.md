@@ -14,12 +14,12 @@ description: 瞭解如何在 Exchange Online Protection (EOP) 中管理郵件使
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a0dc1c0c343be77c6d6f713ee6b68a08a4fe5be
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 863bde5ef860ee980f768ddc085379180e6a71aa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289910"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910615"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>在獨立版 EOP 中管理郵件使用者
 
@@ -41,13 +41,13 @@ ms.locfileid: "50289910"
 
 - 若要 (EAC) 開啟 Exchange 系統管理中心，請參閱 [exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 當您在 EOP PowerShell 中建立郵件使用者時，可能會遇到節流。 此外，EOP PowerShell Cmdlet 使用的批次處理方法，可導致幾分鐘的傳播延遲，使命令的結果看得見。
 
 - 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體而言，您需要建立 **郵件收件** 者 (建立) 和 **郵件** 收件者， (修改) 角色，預設會指派給 **組織管理** (全域系統管理員) 和 **收件者管理** 角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 Exchange 論壇中尋求協助。 請造訪 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 論壇。
@@ -155,7 +155,7 @@ Get-Recipient -Identity <MailUserIdentity> | Format-List
 Get-User -Identity <MailUserIdentity> | Format-List
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient) 和 [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)。
+如需詳細的語法及參數資訊，請參閱 [Get-Recipient](/powershell/module/exchange/get-recipient) 和 [Get-User](/powershell/module/exchange/get-user)。
 
 ### <a name="use-standalone-eop-powershell-to-create-mail-users"></a>使用獨立 EOP PowerShell 建立郵件使用者
 
@@ -184,7 +184,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
 ```
 
-如需詳細的語法及參數資訊，請參閱 [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser)。
+如需詳細的語法及參數資訊，請參閱 [New-EOPMailUser](/powershell/module/exchange/new-eopmailuser)。
 
 ### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a>使用獨立 EOP PowerShell 修改郵件使用者
 
@@ -211,7 +211,7 @@ $Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser)。
+如需詳細的語法及參數資訊，請參閱 [Set-EOPMailUser](/powershell/module/exchange/set-eopmailuser)。
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>使用獨立 EOP PowerShell 移除郵件使用者
 
@@ -227,7 +227,7 @@ Remove-EOPMailUser -Identity <MailUserIdentity\>
 Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser)。
+如需詳細的語法及參數資訊，請參閱 [Remove-EOPMailUser](/powershell/module/exchange/remove-eopmailuser)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
@@ -263,27 +263,27 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
   - **Outlook 安全寄件者清單和封鎖的寄件者清單**：同步處理至服務時，這些清單將優先于服務中的垃圾郵件篩選。 這可讓使用者管理其個人的安全寄件者清單和封鎖的寄件者清單和個別寄件者和網域專案。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-  - **目錄架構邊緣封鎖 (DBEB)**：如需 DBEB 的詳細資訊，請參閱 [使用目錄架構邊緣封鎖以拒絕傳送至無效收件](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)者的郵件。
+  - **目錄架構邊緣封鎖 (DBEB)**：如需 DBEB 的詳細資訊，請參閱 [使用目錄架構邊緣封鎖以拒絕傳送至無效收件](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)者的郵件。
 
   - **使用者存取隔離**：若要存取隔離的郵件，收件者的服務中必須具有有效的使用者識別碼和密碼。 如需隔離的詳細資訊，請參閱 [尋找及發行隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。
 
-  - **郵件流程規則 (也稱為傳輸規則)**：使用目錄同步處理時，您現有的 Active directory 使用者和群組會自動上傳至雲端，您也可以建立特定使用者和/或群組的郵件流程規則，而不必手動將其新增至服務中。 請注意， [動態通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)無法透過目錄同步作業進行同步處理。
+  - **郵件流程規則 (也稱為傳輸規則)**：使用目錄同步處理時，您現有的 Active directory 使用者和群組會自動上傳至雲端，您也可以建立特定使用者和/或群組的郵件流程規則，而不必手動將其新增至服務中。 請注意， [動態通訊群組](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)無法透過目錄同步作業進行同步處理。
 
-取得必要的許可權並準備目錄同步處理，如 [與 Azure Active directory 混合身分識別的功能](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)所述。
+取得必要的許可權並準備目錄同步處理，如 [與 Azure Active directory 混合身分識別的功能](/azure/active-directory/hybrid/whatis-hybrid-identity)所述。
 
 ### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>同步處理目錄與 Azure Active Directory Connect (AAD Connect) 
 
-1. 啟動目錄同步處理，如 [AZURE AD Connect sync 中所述：瞭解及自訂同步](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)處理。
+1. 啟動目錄同步處理，如 [AZURE AD Connect sync 中所述：瞭解及自訂同步](/azure/active-directory/hybrid/how-to-connect-sync-whatis)處理。
 
-2. 依照 [AZURE AD Connect 先決條件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)中所述，安裝及設定內部部署電腦以執行 AAD connect。
+2. 依照 [AZURE AD Connect 先決條件](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)中所述，安裝及設定內部部署電腦以執行 AAD connect。
 
-3. [選取要用於 AZURE AD Connect 的安裝類型](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation)：
+3. [選取要用於 AZURE AD Connect 的安裝類型](/azure/active-directory/hybrid/how-to-connect-install-select-installation)：
 
-   - [Express](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+   - [Express](/azure/active-directory/hybrid/how-to-connect-install-express)
 
-   - [自訂](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
+   - [自訂](/azure/active-directory/hybrid/how-to-connect-install-custom)
 
-   - [傳遞驗證](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
+   - [傳遞驗證](/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
 
 > [!IMPORTANT]
 > 完成 Azure Active Directory 同步處理工具設定精靈 之後，您的 Active Directory 樹系中會建立 **MSOL_AD_SYNC** 帳戶。此帳戶將用來讀取和同步處理您的內部部署 Active Directory 資訊。為了讓目錄同步作業能夠正確運作，請確定有開啟您的本機目錄同步作業伺服器上的 TCP 443。

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何執行腳本，將商務網站的信箱 & OneDrive 新增至與 Microsoft 365 規範中心內的 eDiscovery 案例相關聯的新保留。
-ms.openlocfilehash: 278e8e051165eca906e9b454268068cbbe6aef05
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: d6e6ff1ca053fd8c729054490e78ef42dc64e829
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175572"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909913"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>使用腳本將使用者新增至核心 eDiscovery 案例中的保留
 
@@ -51,7 +51,7 @@ ms.locfileid: "50175572"
 
 - 腳本會將使用者清單新增至與現有案例關聯的新保留。 在執行腳本之前，請確定您要建立保留的大小寫與所建立的專案。
 
-- 本文中的腳本可在連線至安全性 & 合規性中心 PowerShell 及 SharePoint 線上管理命令介面時，支援新式驗證。 如果您是 Microsoft 365 或 Microsoft 365 GCC 組織，您可以將腳本當做-。 如果您是 Office 365 德國組織、Microsoft 365 GCC 高組織或 Microsoft 365 DoD 組織，您必須編輯腳本，以順利執行它。 具體而言，您必須編輯該行 `Connect-IPPSSession` 並使用 *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 參數 (以及組織類型的適當值) 才能連線至安全性 & 規範中心 PowerShell。 如需詳細資訊，請參閱 [Connect To Security & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)中的範例。
+- 本文中的腳本可在連線至安全性 & 合規性中心 PowerShell 及 SharePoint 線上管理命令介面時，支援新式驗證。 如果您是 Microsoft 365 或 Microsoft 365 GCC 組織，您可以將腳本當做-。 如果您是 Office 365 德國組織、Microsoft 365 GCC 高組織或 Microsoft 365 DoD 組織，您必須編輯腳本，以順利執行它。 具體而言，您必須編輯該行 `Connect-IPPSSession` 並使用 *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 參數 (以及組織類型的適當值) 才能連線至安全性 & 規範中心 PowerShell。 如需詳細資訊，請參閱 [Connect To Security & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)中的範例。
 
 - 腳本會自動中斷與安全性 & 合規性中心的連線 PowerShell 和 SharePoint 線上管理命令介面。
 
@@ -63,7 +63,7 @@ ms.locfileid: "50175572"
 
 第一步是安裝本機電腦上的 SharePoint Online 管理命令介面（如果尚未安裝）。 您不需要在此程式中使用命令介面，但必須安裝它，因為它包含您在步驟3中執行之腳本所需的必要條件。 這些必要條件允許腳本與 SharePoint Online 進行通訊，以取得商務網站 OneDrive 的 URLs。
   
-移至 [設定 SharePoint 線上管理命令介面 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318) ，並執行步驟1和步驟2，在您的本機電腦上安裝 SharePoint 的線上管理命令介面。
+移至 [設定 SharePoint 線上管理命令介面 Windows PowerShell 環境](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) ，並執行步驟1和步驟2，在您的本機電腦上安裝 SharePoint 的線上管理命令介面。
 
 ## <a name="step-2-generate-a-list-of-users"></a>步驟2：產生使用者清單
 

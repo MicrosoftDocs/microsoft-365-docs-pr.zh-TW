@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: 瞭解如何使用 PowerShell 來管理安全性群組。
-ms.openlocfilehash: a52fcf6a20598e92f9d5ac8d673a4b1c026030f8
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 64a02a1472fdeb0d61cfb4f380cbe61dd7b557b6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073204"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909499"
 ---
 # <a name="manage-security-groups-with-powershell"></a>使用 PowerShell 管理安全性群組
 
@@ -75,7 +75,7 @@ $groupName="<display name of the group>"
 Get-AzureADGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-然後，使用「 [AzureADGroup」一](https://docs.microsoft.com/powershell/module/azuread/set-azureadgroup) 文來決定如何變更設定。
+然後，使用「 [AzureADGroup」一](/powershell/module/azuread/set-azureadgroup) 文來決定如何變更設定。
 
 ### <a name="remove-a-security-group"></a>移除安全性群組
 
@@ -159,7 +159,7 @@ $groupName="<display name of the group>"
 Get-MsolGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-然後，使用「 [MsolGroup」一](https://docs.microsoft.com/powershell/module/msonline/set-msolgroup) 文來決定如何變更設定。
+然後，使用「 [MsolGroup」一](/powershell/module/msonline/set-msolgroup) 文來決定如何變更設定。
 
 ### <a name="remove-a-security-group"></a>移除安全性群組
 
@@ -170,11 +170,10 @@ $groupName="<display name of the group>"
 Remove-MsolGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)
-

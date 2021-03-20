@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此測試實驗室指南來建立輕量測試環境，以測試 Microsoft 365 for enterprise。
-ms.openlocfilehash: 2b8505e142c3c1b87578db7342ed299b95d8c049
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 2de0760cef7339f62229575b1e0a54b3c67a4e9f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487385"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909703"
 ---
 # <a name="the-lightweight-base-configuration"></a>輕量型基本組態
 
@@ -79,7 +79,7 @@ ms.locfileid: "48487385"
    記錄您在安全位置輸入的密碼。
    此值將被稱為 **「全域系統管理員名稱」**。
 7. 選取 [ **移至設定**]。
-8. 在 Office 365 E5 設定中，選取 [ **繼續使用 *您的組織*onmicrosoft.com 電子郵件] 和**[登入]，然後選取 [結束]，然後再依序 **繼續**。
+8. 在 Office 365 E5 設定中，選取 [ **繼續使用 *您的組織* onmicrosoft.com 電子郵件] 和**[登入]，然後選取 [結束]，然後再依序 **繼續**。
 
 您應該會看到 Microsoft 365 系統管理中心。
     
@@ -217,10 +217,10 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
   
 ### <a name="virtual-machine-in-azure"></a>Azure 中的虛擬機器
 
-若要在 Microsoft Azure 中建立 Windows 10 虛擬機器，***您必須擁有以 Visual Studio 為基礎的訂閱***，其具有 Windows 10 企業版的影像存取權。其他類型的 Azure 訂閱，例如試用版與付費訂閱，沒有此影像的存取權。如需最新資訊，請參閱[在 Azure 中使用 Windows 用戶端進行開發/測試案例](https://docs.microsoft.com/azure/virtual-machines/windows/client-images)。
+若要在 Microsoft Azure 中建立 Windows 10 虛擬機器，***您必須擁有以 Visual Studio 為基礎的訂閱***，其具有 Windows 10 企業版的影像存取權。其他類型的 Azure 訂閱，例如試用版與付費訂閱，沒有此影像的存取權。如需最新資訊，請參閱 [在 Azure 中使用 Windows 用戶端進行開發/測試案例](/azure/virtual-machines/windows/client-images)。
   
 > [!NOTE]
-> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱[開始使用 Azure PowerShell Cmdlet](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)。 這些命令會將建立一個名為 WIN10 的 Windows 10 企業版虛擬機器，以及其所有必要基礎結構，包括資源群組、儲存體帳戶和虛擬網路。 如果您已熟悉 Azure 基礎結構服務，請將這些指示加以修改，以符合您目前部署的基礎結構。
+> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱[開始使用 Azure PowerShell Cmdlet](/powershell/azureps-cmdlets-docs/)。 這些命令會將建立一個名為 WIN10 的 Windows 10 企業版虛擬機器，以及其所有必要基礎結構，包括資源群組、儲存體帳戶和虛擬網路。 如果您已熟悉 Azure 基礎結構服務，請將這些指示加以修改，以符合您目前部署的基礎結構。
   
 首先，啟動 Microsoft PowerShell 提示字元。
   
@@ -284,7 +284,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 建立實體或虛擬機器的 Windows 10 企業版之後，使用本機系統管理員帳戶登入。
   
 > [!NOTE]
-> 針對 Azure 中的虛擬機器，使用  [這些指示](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon) 來連線至該虛擬機器。
+> 針對 Azure 中的虛擬機器，使用  [這些指示](/azure/virtual-machines/windows/connect-logon) 來連線至該虛擬機器。
   
 接下來，將 WIN10 電腦加入 Microsoft 365 E5 訂閱的 Azure AD 租用戶。
   
@@ -337,4 +337,4 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

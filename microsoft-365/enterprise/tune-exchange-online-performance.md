@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: 本文包含的一般秘訣，以及其他資源的連結，可告訴您如何改善 Exchange Online 的效能。
-ms.openlocfilehash: 495b662aa6ef247a5751febbf2d50e1c1f21a44e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a7d3268f9f3cf1922319b03cf69d3f044272b27f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688695"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909439"
 ---
 # <a name="tune-exchange-online-performance"></a>調整 Exchange Online 效能
 
-本文包含其他資源的一般秘訣和連結，可告訴您如何改善 Exchange Online 的效能，尤其是在遷移之前。 本文是 Office 365 專案的 [網路規劃和效能調整](https://aka.ms/tune) 的一部分。
+本文包含其他資源的一般秘訣和連結，可告訴您如何改善 Exchange Online 的效能，尤其是在遷移之前。 本文是 Office 365 專案的 [網路規劃和效能調整](./network-planning-and-performance.md) 的一部分。
    
 ## <a name="things-to-consider-in-order-to-improve-exchange-online-performance"></a>為了改善 Exchange Online 效能應考慮的事項
 
@@ -51,5 +51,3 @@ ms.locfileid: "46688695"
 - 請確定您的信箱資料符合資料夾的限制，以及專案的數量。
     
 如需 Exchange 遷移效能的詳細資訊，請參閱 [Office 365 遷移效能和最佳作法](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57)。
-  
-

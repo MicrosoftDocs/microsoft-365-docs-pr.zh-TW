@@ -19,12 +19,12 @@ description: 系統管理員可以在 Exchange Online Protection (EOP) 中查看
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8496ae4f1702bb63328be0c494d8829c9ddd8cf2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 112f8a9f0714d962f8ea18ade5455178ba773858
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289398"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908839"
 ---
 # <a name="quarantined-messages-faq"></a>隔離的郵件常見問題
 
@@ -71,7 +71,7 @@ ms.locfileid: "50289398"
 
 在 [安全性 & 規範中心] 中，您可以一次選取及發行最多100封郵件。
 
-系統管理員可以使用 Exchange Online PowerShell 或獨立 EOP PowerShell 中的 [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) 和 [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) Cmdlet，以大量尋找及發行隔離的郵件，並大量報告誤報。
+系統管理員可以使用 Exchange Online PowerShell 或獨立 EOP PowerShell 中的 [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) 和 [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) Cmdlet，以大量尋找及發行隔離的郵件，並大量報告誤報。
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>搜尋隔離郵件時，是否支援萬用字元？ 是否可以搜尋特定網域的隔離郵件？
 
@@ -79,7 +79,7 @@ ms.locfileid: "50289398"
 
 例如，將下列 PowerShell 程式碼複製到 [記事本] 中，並將檔案儲存為. ps1 在輕鬆找到 (的位置，例如 C:\Data\QuarantineRelease.ps1) 。
 
-當您連線至 [Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 或 [exchange online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)之後，請執行下列命令以執行腳本：
+當您連線至 [Exchange online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 或 [exchange online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)之後，請執行下列命令以執行腳本：
 
 ```powershell
 & C:\Data\QuarantineRelease.ps1

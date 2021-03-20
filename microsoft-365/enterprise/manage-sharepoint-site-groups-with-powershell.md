@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 在本文中，尋找使用 PowerShell Microsoft 365 來管理 SharePoint Online 網站群組的程式。
-ms.openlocfilehash: fa9aff769ff84f8567c45b20c7b6c8a078b4a70c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bcc7a00a6114a6fa2ba8aa02520267bd03a0abf5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688714"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909535"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 網站群組
 
@@ -33,9 +33,9 @@ ms.locfileid: "46688714"
 
 雖然您可以使用 Microsoft 365 系統管理中心，但也可以使用 Microsoft 365 的 PowerShell 來管理 SharePoint Online 網站群組。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
-本文中的程式需要您連線至 SharePoint。 如需相關指示，請參閱 [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。
+本文中的程式需要您連線至 SharePoint。 如需相關指示，請參閱 [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。
 
 ## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>使用 Microsoft 365 的 PowerShell 觀看 SharePoint 線上
 
@@ -92,9 +92,9 @@ foreach ($y in $x)
     }
 ```
     
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[連線至 SharePoint 線上 PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[連線至 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [使用 PowerShell 建立 SharePoint Online 網站並新增使用者](create-sharepoint-sites-and-add-users-with-powershell.md)
 
@@ -103,4 +103,3 @@ foreach ($y in $x)
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)
-

@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以深入瞭解 Outlook 網頁版 Outlook 中內建的垃圾郵件、非垃圾郵件和網路釣魚電子郵件報告選項，在 Exchange Online 中) 的 Outlook Web App (，以及如何為使用者停用這些報告選項。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0bd2da9b774b3557ebb820102ba86c17ebe44c69
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6caac60b32910ac06247bb89997ea6dbfc87d4f9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289218"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910627"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在 Exchange Online 中，在 Outlook 網頁版中報告垃圾郵件和網路釣魚電子郵件
 
@@ -87,11 +87,11 @@ ms.locfileid: "50289218"
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您必須先在 Exchange Online 中指派許可權，才能執行本文中的程式。 具體而言，您需要 **收件者原則** 或 **郵件** 收件者角色，預設會指派給 **組織管理** 和 **收件者管理** 角色群組。 如需有關 Exchange Online 中角色群組的詳細資訊，請參閱 exchange online 中 [的許可權](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 及 [修改 exchange online 中的角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)。
+- 您必須先在 Exchange Online 中指派許可權，才能執行本文中的程式。 具體而言，您需要 **收件者原則** 或 **郵件** 收件者角色，預設會指派給 **組織管理** 和 **收件者管理** 角色群組。 如需有關 Exchange Online 中角色群組的詳細資訊，請參閱 exchange online 中 [的許可權](/exchange/permissions-exo/permissions-exo) 及 [修改 exchange online 中的角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups)。
 
-- 每個組織都有一個名為 OwaMailboxPolicy-Default 的預設原則，但您可以建立自訂原則。 在預設原則之前，自訂原則會套用至範圍的使用者。 如需有關 Outlook 網頁信箱原則的詳細資訊，請參閱 [outlook On Exchange Online 中的 web 信箱原則](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies)。
+- 每個組織都有一個名為 OwaMailboxPolicy-Default 的預設原則，但您可以建立自訂原則。 在預設原則之前，自訂原則會套用至範圍的使用者。 如需有關 Outlook 網頁信箱原則的詳細資訊，請參閱 [outlook On Exchange Online 中的 web 信箱原則](/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies)。
 
 - 停用垃圾郵件報告時，並不會移除將郵件標示為垃圾郵件的功能，也不會移除 Outlook 網頁版中的垃圾郵件。 選取 [垃圾郵件] 資料夾中的郵件，然後按一下 [不是垃圾郵件] 中的 [**不** 是垃圾郵件] 會 \> 將郵件傳回收件匣 在任何其他電子郵件資料夾中選取郵件，然後按一下 [**垃圾** \> 郵件]，仍然會將郵件移至 [垃圾郵件] 資料夾。 您無法再使用的是將郵件報告給 Microsoft 的選項。
 
@@ -121,7 +121,7 @@ ms.locfileid: "50289218"
    Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
    ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-owamailboxpolicy) 和 [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy)。
+如需詳細的語法及參數資訊，請參閱 [Get-OwaMailboxPolicy](/powershell/module/exchange/get-owamailboxpolicy) 和 [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy)。
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 

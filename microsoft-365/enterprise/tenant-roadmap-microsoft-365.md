@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: 設定 Microsoft 365 承租人的藍圖。
-ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: fb3b6eecd893a5ab9b71bfa7bdfaea53af43470d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948394"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909451"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 租使用者藍圖
 
@@ -33,7 +33,7 @@ ms.locfileid: "48948394"
 
 確定您的網路可針對內部部署和遠端工作者存取 Microsoft 365 之後，您的下一個重要工作是針對 DNS 功能變數名稱、泛型服務，以及支援安全使用者登入的身分識別基礎結構，設定您的 Microsoft 365 租使用者。
 
-### <a name="plan"></a>方案
+### <a name="plan"></a>規劃
 
 若要規劃租使用者的執行：
 
@@ -49,7 +49,7 @@ ms.locfileid: "48948394"
 
 若要部署您的租使用者： 
 
-- 為您的組織新增 [DNS 網域](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 。
+- 為您的組織新增 [DNS 網域](../admin/setup/add-domain.md) 。
 - 使用 [Microsoft 365 系統管理中心的設定指南](setup-guides-for-microsoft-365.md)。
 - 組建您的身分 [識別基礎結構](identity-roadmap-microsoft-365.md) ，並 [保護使用者登入](microsoft-365-secure-sign-in.md)。
 
@@ -64,7 +64,7 @@ Microsoft 會繼續開啟新的資料中心地理位置， (geos) Microsoft 365 
 
 使用 Microsoft 365 多地理位置，您的組織可以將 Microsoft 365 存在狀態擴展到現有租用戶中的多個地理區域和/或國家/地區。
 
-如需詳細資訊，請參閱 [Microsoft 365 多地理](microsoft-365-multi-geo.md)位置。
+如需詳細資訊，請參閱 [Microsoft 365 多地理位置](microsoft-365-multi-geo.md)。
 
 ## <a name="manage-multiple-microsoft-365-tenants"></a>管理多個 Microsoft 365 承租人 
 

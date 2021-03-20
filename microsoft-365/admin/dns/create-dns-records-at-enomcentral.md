@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft eNomCentral。
-ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 528659667ee062c8cf767bed0989558020032924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658108"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910363"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>在 Microsoft 的 eNomCentral 建立 DNS 記錄
 
@@ -117,7 +117,7 @@ ms.locfileid: "49658108"
 
    |主機名稱|Address (位址)|Pref|
    |---|---|---|
-   |@| *\<domain-key\>*  mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)|
+   |@| *\<domain-key\>*  mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml)|
 
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
@@ -231,8 +231,8 @@ ms.locfileid: "49658108"
 
    |Service (服務)|Protocol (通訊協定)|Priority (優先順序)|Weight (權數)|Port (連接埠)|目標 (主機名稱) |
    |---|---|---|---|---|---|
-   |_sip|_tls|100|1 |443|sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。**|
-   |_sipfederationtls|_tcp|100|1 |5061|sipfed.online.lync.com。  <br/> **此值必須以英文句點 (.) 結尾。**|
+   |_sip|_tls|100|1|443|sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。**|
+   |_sipfederationtls|_tcp|100|1|5061|sipfed.online.lync.com。  <br/> **此值必須以英文句點 (.) 結尾。**|
 
    ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
 

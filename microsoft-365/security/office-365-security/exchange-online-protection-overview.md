@@ -15,12 +15,12 @@ ms.custom:
 description: 深入瞭解 Exchange Online Protection (EOP) 如何協助保護您的內部部署電子郵件組織，以進行獨立和混合式環境。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8e3d44cb39e3569179d4155e32a8c11e0a5be56
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9aa2925ed5a9a6088fab81a09754b479740411cc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286882"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910831"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 
@@ -69,7 +69,7 @@ Exchange Online Protection (EOP) 是雲端架構篩選服務，可協助您的�
 
 - **Exchange Enterprise CAL (含服務)**：如果您有內部部署的 Exchange 組織，且您已購買額外的 Exchange Enterprise CAL (含服務) 授權，EOP 會包含在服務中。
 
-如需所有 EOP 訂閱方案之需求、重要限制和功能可用性的相關資訊，請參閱 [Exchange Online Protection 服務描述](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+如需所有 EOP 訂閱方案之需求、重要限制和功能可用性的相關資訊，請參閱 [Exchange Online Protection 服務描述](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
 ## <a name="setting-up-eop-for-on-premises-email-organizations"></a>設定內部部署電子郵件組織的 EOP
 
@@ -123,6 +123,6 @@ EOP 會在資料中心之間執行負載平衡，但只在一個區域內。如�
 
 - [Exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)：說明如何存取和流覽 Exchange 系統管理中心 (EAC) 管理介面，以便管理 EOP 服務。
 
-- [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell)：提供遠端 PowerShell 的相關資訊，讓您可以從命令列管理 EOP 服務。
+- [Exchange Online Protection PowerShell](/powershell/exchange/exchange-online-protection-powershell)：提供遠端 PowerShell 的相關資訊，讓您可以從命令列管理 EOP 服務。
 
 - [EOP 幫助和支援](help-and-support-for-eop.md) 提供有關取得幫助和技術支援的資訊。

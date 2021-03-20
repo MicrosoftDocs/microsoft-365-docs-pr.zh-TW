@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 87f064627446a0e41f5ed864c2ae37a2f0e60ba4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ed49405aa2933c029f7e62d274119550adc379e8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286810"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910655"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 
@@ -44,8 +44,6 @@ ms.locfileid: "50286810"
 
 [![設定身分識別與裝置存取的常見原則](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
-[查看較大版本的此影像](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
-
 以下是單一頁面 PDF 摘要，具有個別原則的連結：
 
 [![Microsoft 365 講義的身分識別和裝置保護的縮圖影像](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [以 PDF 格式查看](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
@@ -57,7 +55,7 @@ ms.locfileid: "50286810"
 
 為了讓您有時間完成這些工作，建議您依照此表中所列的順序實施基準原則。 不過，針對敏感和高管制保護層級的 MFA 原則，可在任何時候實施。
 
-|保護層級|原則|詳細資訊|
+|保護層級|原則|其他資訊|
 |---|---|---|
 |**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](#require-mfa-based-on-sign-in-risk)||
 ||[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-multi-factor)|未使用新式驗證的用戶端可以略過條件式存取原則，因此請務必封鎖這些設定。|
@@ -147,7 +145,7 @@ ms.locfileid: "50286810"
 
 最後 **，選取 [** **啟用原則**]，然後選擇 [ **建立**]。
 
-此外，請考慮使用 [if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) 工具來測試原則。
+此外，請考慮使用 [if](/azure/active-directory/active-directory-conditional-access-whatif) 工具來測試原則。
 
 ## <a name="block-clients-that-dont-support-multi-factor"></a>封鎖不支援多重因素的用戶端
 
@@ -177,9 +175,9 @@ ms.locfileid: "50286810"
 
 最後 **，選取 [** **啟用原則**]，然後選擇 [ **建立**]。
 
-請考慮使用 [if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) 工具來測試原則。
+請考慮使用 [if](/azure/active-directory/active-directory-conditional-access-whatif) 工具來測試原則。
 
-針對 Exchange Online，您可以使用驗證原則來 [停用基本身份](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)驗證，以強制所有用戶端存取要求使用新式驗證。
+針對 Exchange Online，您可以使用驗證原則來 [停用基本身份](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)驗證，以強制所有用戶端存取要求使用新式驗證。
 
 ## <a name="high-risk-users-must-change-password"></a>高風險使用者必須變更密碼
 
@@ -207,9 +205,9 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 最後，選取 [ **On** for **強制原則**]，然後選擇 [ **儲存**]。
 
-請考慮使用 [if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) 工具來測試原則。
+請考慮使用 [if](/azure/active-directory/active-directory-conditional-access-whatif) 工具來測試原則。
 
-使用此原則搭配 [設定 AZURE AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)，它會偵測並封鎖已知弱密碼和其變種，以及組織特有的其他弱字詞。 使用 Azure AD 密碼保護可確保變更的密碼為強式密碼。
+使用此原則搭配 [設定 AZURE AD 密碼保護](/azure/active-directory/authentication/concept-password-ban-bad)，它會偵測並封鎖已知弱密碼和其變種，以及組織特有的其他弱字詞。 使用 Azure AD 密碼保護可確保變更的密碼為強式密碼。
 
 ## <a name="apply-app-data-protection-policies"></a>套用應用程式資料保護原則
 
@@ -221,52 +219,52 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 - **企業增強型資料保護** (第2級) 引進應用程式資料洩漏防護機制和最低作業系統需求。 這是適用于大多數行動使用者存取工作或學校資料的設定。
 - **企業高資料保護** (第3級) 引進高級資料保護機制、增強型 PIN 設定，以及應用程式行動威脅防護。 這種設定對存取高風險資料的使用者而言是必要的。
 
-若要查看每個設定層級的特定建議，以及必須保護的最小應用程式，請 [使用 app protection 原則，查看資料保護框架](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)。
+若要查看每個設定層級的特定建議，以及必須保護的最小應用程式，請 [使用 app protection 原則，查看資料保護框架](/mem/intune/apps/app-protection-framework)。
 
 使用身分 [識別與裝置存取](microsoft-365-policies-configurations.md)設定中所述的原則，比較基準和機密保護階層與第2級企業增強型資料保護設定緊密對應。 高度管制防護階層密切對應于第3級企業高資料保護設定。
 
-|保護層級|應用程式保護原則|詳細資訊|
+|保護層級|應用程式保護原則|其他資訊|
 |---|---|---|
-|基準|[第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
-|敏感性|[第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
-|高度管制|[第3級企業高資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|在層級3中強制執行的原則設定包括對層級1和2建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制措施，以及比第2級更為複雜的設定。|
+|基準|[第2級增強型資料保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
+|敏感性|[第2級增強型資料保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
+|高度管制|[第3級企業高資料保護](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|在層級3中強制執行的原則設定包括對層級1和2建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制措施，以及比第2級更為複雜的設定。|
 |
 
 若要使用 data protection framework 設定，為每個平臺 (iOS 和 Android) 建立新的應用程式保護原則，您可以：
 
-1. 遵循 [如何使用 Microsoft Intune 建立及部署應用程式保護原則](https://docs.microsoft.com/mem/intune/apps/app-protection-policies)的步驟，手動建立原則。
+1. 遵循 [如何使用 Microsoft Intune 建立及部署應用程式保護原則](/mem/intune/apps/app-protection-policies)的步驟，手動建立原則。
 2. 使用[intune 的 PowerShell 腳本](https://github.com/microsoftgraph/powershell-intune-samples)，匯入範例[Intune App Protection POLICY Configuration Framework JSON 範本](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies)。
 
 ## <a name="require-approved-apps-and-app-protection"></a>需要核准的應用程式和應用程式保護
 
 若要強制執行您在 Intune 中所套用的應用程式保護原則，您必須建立一個條件式存取原則，以要求核准的用戶端應用程式，以及應用程式保護原則中設定的條件。
 
-強制執行應用程式保護原則需要 [使用應用程式保護原則，以具備條件式存取權存取雲端應用](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)程式的原則。 這些原則都包含在此建議的身分識別和存取設定原則組中。
+強制執行應用程式保護原則需要 [使用應用程式保護原則，以具備條件式存取權存取雲端應用](/azure/active-directory/conditional-access/app-protection-based-conditional-access)程式的原則。 這些原則都包含在此建議的身分識別和存取設定原則組中。
 
-若要建立需要經核准的應用程式和應用程式保護的條件式存取原則365，請在 [案例1： microsoft 365 應用程式需要已核准的應用程式搭配應用程式保護原則](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)，以允許 Outlook IOS 和 Android，但封鎖 OAuth 功能的 Exchange ActiveSync 用戶端無法連線至 Exchange Online。
+若要建立需要經核准的應用程式和應用程式保護的條件式存取原則365，請在 [案例1： microsoft 365 應用程式需要已核准的應用程式搭配應用程式保護原則](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)，以允許 Outlook IOS 和 Android，但封鎖 OAuth 功能的 Exchange ActiveSync 用戶端無法連線至 Exchange Online。
 
    > [!NOTE]
    > 這種原則可確保行動使用者可以使用適用的應用程式來存取所有 Office 端點。
 
 如果您要啟用對 Exchange Online 的行動存取，請執行 [封鎖 ActiveSync 用戶端](secure-email-recommended-policies.md#block-activesync-clients)，以防止 Exchange ActiveSync 用戶端利用基本驗證連線至 Exchange Online。 本文頂端的圖例中並未說明這項原則。 它會在 [保護電子郵件的原則建議](secure-email-recommended-policies.md)中說明及描述。
 
-若要建立需要 iOS 和 Android 365 之 Edge 的條件式存取原則，請在 [案例2：瀏覽器應用程式需要已核准的應用程式搭配應用程式保護原則](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)，允許 IOS 和 Android 的 edge，但會封鎖其他行動裝置網頁瀏覽器連線至 Microsoft 365 端點。
+若要建立需要 iOS 和 Android 365 之 Edge 的條件式存取原則，請在 [案例2：瀏覽器應用程式需要已核准的應用程式搭配應用程式保護原則](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)，允許 IOS 和 Android 的 edge，但會封鎖其他行動裝置網頁瀏覽器連線至 Microsoft 365 端點。
 
- 這些原則利用授與控制措施 [需要核准的用戶端應用程式](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) ，並 [要求應用程式保護原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)。
+ 這些原則利用授與控制措施 [需要核准的用戶端應用程式](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) ，並 [要求應用程式保護原則](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)。
 
 最後，封鎖 iOS 和 Android 裝置上其他用戶端應用程式的舊版驗證，以確保這些用戶端無法略過條件式存取原則。 如果您遵循本文的指導方針，您已設定 [封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-multi-factor)。
 
 <!---
-With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
 
 2. If enabling mobile access to Exchange Online, implement [Block ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
 
-   The above policies leverage the grant controls [Require approved client app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
+   The above policies leverage the grant controls [Require approved client app](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
 3. Disable legacy authentication for other client apps on iOS and Android devices. For more information, see [Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication).
 -->
@@ -288,7 +286,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 若要部署裝置規範原則，必須將其指派給使用者群組。 您可以在建立並儲存原則之後加以指派。 在系統管理中心中，選取原則，然後選取 [ **工作分派**]。 選取您想要接收原則的群組之後，請選取 [ **儲存** ] 以儲存該群組指派並部署原則。
 
-如需在 Intune 中建立相容性原則的逐步指引，請參閱在 Intune 檔中 [建立 Microsoft Intune 中的符合性原則](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) 。
+如需在 Intune 中建立相容性原則的逐步指引，請參閱在 Intune 檔中 [建立 Microsoft Intune 中的符合性原則](/mem/intune/protect/create-compliance-policy) 。
 
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Windows 10 和更新版本的建議設定
 
@@ -388,7 +386,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 > [!NOTE]
 > 啟用此原則之前，請先確定您的裝置是否相容。 否則，您可能會收到鎖定，而且將無法變更此原則，直到您的使用者帳戶已新增至條件式存取排除群組為止。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [![步驟3：來賓和外部使用者的原則](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 

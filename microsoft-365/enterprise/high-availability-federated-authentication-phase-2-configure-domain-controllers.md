@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 摘要：在 Microsoft Azure 中設定 Microsoft 365 高可用性同盟驗證的網域控制站與目錄同步處理伺服器。
-ms.openlocfilehash: 1c3fd686ee553a57d66dcfd51a6045167a12de8a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 751d332ce5f5606fe5f833182f002a1f4b6f29ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688643"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909807"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性同盟驗證階段 2：設定網域控制站
 
@@ -46,7 +46,7 @@ ms.locfileid: "46688643"
    
  **表格 M-Azure 中 Microsoft 365 高可用性同盟驗證的虛擬機器**
   
-如需虛擬機器大小的完整清單，請參閱[虛擬機器大小](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes)。
+如需虛擬機器大小的完整清單，請參閱[虛擬機器大小](/azure/virtual-machines/virtual-machines-windows-sizes)。
   
 下列 Azure PowerShell 命令區塊可建立兩個網域控制站的虛擬機器。 指定變數的值，並移除 \< and > 字元。 請注意，此 Azure PowerShell 命令區塊會使用下表中的值︰
   
@@ -65,7 +65,7 @@ ms.locfileid: "46688643"
 請記得您在 [階段1： Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定義的表格 R、V、S、I 和 A。
   
 > [!NOTE]
-> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱 [Azure PowerShell 入門](https://docs.microsoft.com/powershell/azure/get-started-azureps)。 
+> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱 [Azure PowerShell 入門](/powershell/azure/get-started-azureps)。 
   
 當您已經提供所有正確的值時，在 Azure PowerShell 提示中或本機電腦的 PowerShell 整合式指令碼環境 (ISE) 中執行結果區塊。
   
@@ -144,13 +144,13 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> 由於這些虛擬機器是用於內部網路應用程式，並不會指派公用 IP 位址或 DNS 網域名稱標籤，也不會曝露在網際網路上。不過，這也表示您無法透過 Azure 入口網站與虛擬機器連線。當您檢視虛擬機器的屬性時，無法使用**連線**選項。請使用遠端桌面連線附屬應用程式或另一個遠端桌面工具，透過使用其私人 IP 位址或內部網路 DNS 名稱來與虛擬機器連線。
+> 由於這些虛擬機器是用於內部網路應用程式，並不會指派公用 IP 位址或 DNS 網域名稱標籤，也不會曝露在網際網路上。不過，這也表示您無法透過 Azure 入口網站與虛擬機器連線。當您檢視虛擬機器的屬性時，無法使用 **連線** 選項。請使用遠端桌面連線附屬應用程式或另一個遠端桌面工具，透過使用其私人 IP 位址或內部網路 DNS 名稱來與虛擬機器連線。
   
 ## <a name="configure-the-first-domain-controller"></a>設定第一個網域控制站
 
 使用您所選的遠端桌面用戶端，建立第一個網域控制站虛擬機器的遠端桌面連線。請使用其內部網路 DNS 或本機管理員帳戶的電腦名稱和認證。
   
-接下來， **在第一個網域控制站虛擬機器**的 Windows PowerShell 命令提示字元中，使用此命令將額外的資料磁片新增至第一個網域控制站：
+接下來， **在第一個網域控制站虛擬機器** 的 Windows PowerShell 命令提示字元中，使用此命令將額外的資料磁片新增至第一個網域控制站：
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -175,7 +175,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 使用您所選的遠端桌面用戶端，建立第二個網域控制站虛擬機器的遠端桌面連線。請使用其內部網路 DNS 或本機管理員帳戶的電腦名稱和認證。
   
-接下來，您必須使用 **第二個網域控制站虛擬機器上**的 Windows PowerShell 命令提示字元，將額外的資料磁片新增至第二個網域控制站。
+接下來，您必須使用 **第二個網域控制站虛擬機器上** 的 Windows PowerShell 命令提示字元，將額外的資料磁片新增至第二個網域控制站。
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -247,7 +247,7 @@ Restart-Computer
 
 ![Azure 中具有網域控制站之高可用性 Microsoft 365 同盟驗證基礎結構的階段2](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 使用 [階段3：設定 AD FS 伺服器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) 以繼續設定此工作負載。
   
@@ -257,6 +257,4 @@ Restart-Computer
   
 [Microsoft 365 開發/測試環境的同盟身分識別](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 解決方案與架構中心](../solutions/solution-architecture-center.md)
-
-
+[Microsoft 365 解決方案與架構中心](../solutions/index.yml)

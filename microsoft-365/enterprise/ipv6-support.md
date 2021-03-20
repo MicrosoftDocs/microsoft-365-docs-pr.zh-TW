@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 摘要：說明 Microsoft Office 365 元件和 Office 365 政府產品方案中的 IPv6 支援。
-ms.openlocfilehash: f671e8caf868ebbed628a155b73ce6fe413949a9
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 7f06ed6f8df2c6552ee0a331ad958bca289d0a09
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235603"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909679"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 服務中的 IPv6 支援
 
@@ -85,10 +85,10 @@ Microsoft Office 365 政府版產品只適用于2013和更新版本。 如需有
 
 - 如果您使用 Active Directory Federation Services (AD FS) 與 Office 365，則不支援使用 IPv6 來公佈您的 AD FS 網路端點至 Office 365。 使用 Exchange Online 時，請勿在 AD FS DNS 專案中包含 AAAA 記錄。 
 
-您可以使用下列短連結返回這裡：[https://aka.ms/o365ip6](https://aka.ms/o365ip6)
+您可以使用下列短連結返回這裡：[https://aka.ms/o365ip6]()
   
 ## <a name="see-also"></a>另請參閱
 
-[IPv6 學習藍圖](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
+[IPv6 學習藍圖](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
   
 [IPv6 生存指南](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Freenom。
-ms.openlocfilehash: b958a69d1dad9a0b56cf954d12cd42e40d6d4fea
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 8332d63acf34a7f999b549467494b7819cebf092
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657872"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910351"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>在 Freenom 建立 Microsoft 的 DNS 記錄
 
@@ -140,7 +140,7 @@ ms.locfileid: "49657872"
     
     |**名稱**|**類型**|**TTL**|**Target**|**優先順序**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |MX (郵件交換程式)  <br/> |3600 (秒)   <br/> |\<domain-key\>。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(保留空白)  <br/> |MX (郵件交換程式)  <br/> |3600 (秒)   <br/> |\<domain-key\>。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/> |
    
    ![Freenom MX 記錄](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -230,5 +230,3 @@ ms.locfileid: "49657872"
 7. 選取 [ **儲存變更**]。
     
     ![Freenom SPF 儲存變更的 TXT 記錄](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
-  
-

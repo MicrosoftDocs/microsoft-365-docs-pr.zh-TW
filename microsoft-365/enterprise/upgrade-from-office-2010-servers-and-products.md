@@ -23,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: 開始規劃從 Office 2010 伺服器和用戶端應用程式進行的升級，因為支援即將結束，且無法使用自訂支援協定。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9dcf5c36cff5e14828b1a6540ed920577537c49
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 85a6efac9c7e622157b01b02c5d9c38a1e74d5e4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519774"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909295"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可幫助您從 Office 2010 伺服器和用戶端升級的資源
 
@@ -56,11 +56,11 @@ SharePoint 2010 和 Project Server 2010 將於 **2021 年 4月 13日** 終止支
 
 |針對此產品|有此終止支援日期|查看此資源|
 |---|---|---|
-|Office 2010 （包括 Word 2010、Excel 2010、PowerPoint 2010 和 Outlook 2010）|2020年 10月 13日 |[Office 2010 終止支援藍圖](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)|
+|Office 2010 （包括 Word 2010、Excel 2010、PowerPoint 2010 和 Outlook 2010）|2020年 10月 13日 |[Office 2010 終止支援藍圖](/DeployOffice/office-2010-end-support-roadmap)|
 |Exchange Server 2010|2020年 10月 13日|[Exchange 2010 終止支援藍圖](exchange-2010-end-of-support.md)|
 |SharePoint 2010 或 SharePoint Server 2010|2021 年 4月 13日|[從 SharePoint 2010 升級](upgrade-from-sharepoint-2010.md)|
 |Project Server 2010|2021 年 4月 13日|[Project Server 2010 終止支援藍圖](project-server-2010-end-of-support.md)|
-|Lync Server 2010|2021 年 4月 13日|[規劃升級為商務用 Skype Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+|Lync Server 2010|2021 年 4月 13日|[規劃升級為商務用 Skype Server](/skypeforbusiness/plan-your-deployment/upgrade)|
 
 ## <a name="im-a-home-user-what-do-i-do"></a>我是家用版的使用者。 我該怎麼辦？
 
@@ -70,6 +70,6 @@ SharePoint 2010 和 Project Server 2010 將於 **2021 年 4月 13日** 終止支
 
 [影片：什麼是 Microsoft 365？](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
 
-[Microsoft 週期原則](https://go.microsoft.com/fwlink/?linkid=865200)
+[Microsoft 週期原則](/lifecycle/)
 
 [規劃從 Office 2007 或 Office 2010 伺服器和用戶端升級](plan-upgrade-previous-versions-office.md)

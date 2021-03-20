@@ -21,12 +21,12 @@ ms.custom:
 description: 適用於 Office 365 的 Microsoft Defender 包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 741b00a55ee73d16c82abd4806d06660d49be65b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1a2cb40184de170263a52e52b704b30b0731c868
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287662"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909031"
 ---
 # <a name="microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "50287662"
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
-> 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 的商務客戶。 如果您使用 Outlook.com、Microsoft 365 家用版或 Microsoft 365 個人版，並且在尋找 Outlook 中的安全連結或安全附件的相關資訊，請參閱[適用於 Microsoft 365 訂閱者的進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 的商務客戶。 如果您使用 Outlook.com、Microsoft 365 家用版或 Microsoft 365 個人版，並且在尋找 Outlook 中的安全連結或安全附件的相關資訊，請參閱[適用於 Microsoft 365 訂閱者的進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 適用於 Office 365 的 Microsoft Defender 可保護組織防範由電子郵件訊息、連結 (URL) 及共同作業工具所造成的惡意威脅。 適用於 Office 365 的 Defender 包括：
 
@@ -88,7 +88,7 @@ ms.locfileid: "50287662"
 
 - 適用於 Office 365 的 Microsoft Defender 方案 1 隨附於 Microsoft 365 商務進階版。
 
-- 適用於 Office 365 的 Microsoft Defender 方案 1 和適用於 Office 365 的 Microsoft Defender 方案 2 均以附加元件形式為特定訂閱提供。 若要深入了解，請參閱[適用於 Office 365 的 Microsoft Defender 方案的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 適用於 Office 365 的 Microsoft Defender 方案 1 和適用於 Office 365 的 Microsoft Defender 方案 2 均以附加元件形式為特定訂閱提供。 若要深入了解，請參閱[適用於 Office 365 的 Microsoft Defender 方案的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 - [安全文件](safe-docs.md)功能僅可供具備 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權 (未包含在適用於 Office 365 的 Microsoft Defender 方案中) 的使用者使用。
 
@@ -150,8 +150,8 @@ ms.locfileid: "50287662"
 |角色或角色群組|可深入了解的資源|
 |---|---|
 |全域系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派)|[關於 Microsoft 365 系統管理員角色](../../admin/add-users/about-admin-roles.md)|
-|安全性系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派)|[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|
-|Exchange Online 組織管理 (這是在 Exchange Online 中指派)|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|安全性系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派)|[Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|
+|Exchange Online 組織管理 (這是在 Exchange Online 中指派)|[Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
 |搜尋和清除 (僅能在安全性與合規性中心指派)|[安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
@@ -160,9 +160,9 @@ ms.locfileid: "50287662"
 
 適用於 Office 365 的 Microsoft Defender 包含在某些訂閱中，例如 Microsoft 365 E5、Office 365 E5、Office 365 A5 和 Microsoft 365 商務進階版。 如果您的訂閱不包含適用於 Office 365 的 Defender，您可以購買適用於 Office 365 的 Defender 方案 1 或適用於 Office 365 的 Defender 方案 2 做為特定訂閱的附加元件。 若要深入了解，請參閱下列資源：
 
-- [適用於 Office 365 的 Microsoft Defender 可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)，可取得包含適用於 Office 365 的 Defender 方案的訂閱清單。
+- [適用於 Office 365 的 Microsoft Defender 可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)，可取得包含適用於 Office 365 的 Defender 方案的訂閱清單。
 
-- [適用於 Office 365 的 Microsoft Defender 方案的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)，可取得方案 1 和 2 中包含的功能清單。
+- [適用於 Office 365 的 Microsoft Defender 方案的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)，可取得方案 1 和 2 中包含的功能清單。
 
 - [取得合適的適用於 Office 365 的 Microsoft Defender](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content)，可比較方案並購買適用於 Office 365 的 Defender。
 
@@ -174,7 +174,7 @@ ms.locfileid: "50287662"
 
 - [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)提供開發中和正在推出的新功能清單。
 
-- [適用於 Office 365 的 Microsoft Defender 服務描述](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)會描述適用於 Office 365 的 Defender 方案的功能與可用性。
+- [適用於 Office 365 的 Microsoft Defender 服務描述](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)會描述適用於 Office 365 的 Defender 方案的功能與可用性。
 
 ## <a name="see-also"></a>另請參閱
 

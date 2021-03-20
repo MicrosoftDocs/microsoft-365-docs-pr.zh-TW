@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: 本文提供用於設計及執行 Azure 基礎結構服務中主控的 Sharepoint Server 2013 網際網路網站的資源。
-ms.openlocfilehash: 48e0ec38d315aae3d409c3319a4528430331bb94
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f6c7bec1dccc48c1080f76c30bb31b98a473f66e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546615"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909759"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>在 Microsoft Azure 中使用 SharePoint Server 2013 的網際網路網站
 
@@ -45,7 +45,7 @@ Microsoft Azure 提供了極具說服力的選項，可讓您根據 SharePoint S
 
 下列技術說明和文章提供如何使用 SharePoint Server 2013，在 Azure 中設計及實施網際網路網站的相關資訊。
 
-|資源|詳細資訊|
+|資源|其他資訊|
 |---|---|
 |**Azure 中的 SharePoint Server 2013 網際網路網站** <br/> [![Azure 中使用 SharePoint 的網際網路網站影像](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|這種架構模型概述 Azure 中網際網路網站的重要設計活動和建議的架構選項。|
 |**設計範例： Azure 中用於 SharePoint Server 2013 的網際網路網站** <br/> [ ![ 設計範例影像： Microsoft Azure 中用於 SharePoint 2013] 的網際網路網站 ](../media/MS-AZ-InternetSitesDesignSample.jpg) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|使用此設計範例做為您自己架構的起點。|
@@ -54,4 +54,4 @@ Microsoft Azure 提供了極具說服力的選項，可讓您根據 SharePoint S
 
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft 365 解決方案與架構中心](../solutions/solution-architecture-center.md)
+[Microsoft 365 解決方案與架構中心](../solutions/index.yml)

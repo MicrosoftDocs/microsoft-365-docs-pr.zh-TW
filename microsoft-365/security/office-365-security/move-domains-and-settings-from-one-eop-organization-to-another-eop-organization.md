@@ -15,12 +15,12 @@ ms.custom:
 description: 在本文中，您將瞭解如何將網域和設定從一個 Microsoft Exchange Online Protection (EOP) 組織 (承租人) 移至另一個。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 42a212c1826f63f9e7ed8395fe1d6b6564625b7b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 4a9209f71905a858bb631a3c2901b7bfa62551d7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287770"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909055"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>將網域及設定從某個 EOP 組織移到另一個
 
@@ -61,7 +61,7 @@ ms.locfileid: "50287770"
   > [!NOTE]
   > 目前只有 EOP 進階訂閱計劃支援匯出和匯入郵件流程規則集合的指令程式。
 
-收集所有設定最簡單的方法是使用 PowerShell。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+收集所有設定最簡單的方法是使用 PowerShell。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 接下來，您可以收集您的所有設定，並將它們匯出到要匯入目標租用戶的 .xml 檔案。在一般情況下，您可以將每項設定的 **Get** 指令程式輸出輸送到 **Export-Clixml** 指令程式，以將設定儲存在 .xml 檔案中，如下列程式碼範例所示。
 

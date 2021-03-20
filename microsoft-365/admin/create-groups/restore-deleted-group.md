@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 瞭解如何還原已刪除的 Microsoft 365 群組。
-ms.openlocfilehash: 091697be54b1127a5cb336179733d51519947e14
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: f3b6435d82d5beddf44f5920011b076b39c7dcd5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753240"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910543"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>還原已刪除的 Microsoft 365 群組
 
@@ -83,9 +83,9 @@ ms.locfileid: "48753240"
   
 ## <a name="related-articles"></a>相關文章
 
-[使用 PowerShell 管理 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[使用 PowerShell 管理 Microsoft 365 群組](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
   
-[使用 Remove-UnifiedGroup Cmdlet 來刪除群組](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
+[使用 Remove-UnifiedGroup Cmdlet 來刪除群組](/powershell/module/exchange/remove-unifiedgroup)
   
 [管理連接群組的小組網站設定](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (機器翻譯)
   

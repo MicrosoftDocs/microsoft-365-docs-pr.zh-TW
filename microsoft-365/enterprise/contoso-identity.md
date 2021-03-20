@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用身分識別即服務 (IDaaS)，為其員工提供雲端式驗證，為其合作夥伴和客戶提供同盟驗證。
-ms.openlocfilehash: dea0f53ef1c3fdc2ea32256303c6120c614c904d
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: accd60f6699e7ebf04963213128d1ca1ffc8f7fe
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754633"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911069"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的身分識別
 
@@ -42,13 +42,13 @@ Contoso 允許︰
 - 客戶可以使用其 Microsoft、Facebook 或 Google 郵件帳戶登入公司的公開網站。
 - 廠商和協力廠商使用其 LinkedIn、Salesforce 或 Google 郵件帳戶登入公司的外部網路。
 
-以下是包含公用網站、第三個外部網路，以及一組 Active Directory Federation Services (AD FS) 伺服器的 Contoso DMZ。DMZ 會連線到包含客戶、合作夥伴和網際網路服務的網際網路。
+以下是包含公用網站、第三個外部網路，以及一組 Active Directory Federation Services (AD FS) 伺服器的 Contoso DMZ。 DMZ 會連線到包含客戶、合作夥伴和網際網路服務的網際網路。
 
 ![Contoso 支援客戶與合作夥伴的同盟驗證](../media/contoso-identity/contoso-identity-fig2.png)
  
 在 DMZ 中的 AD FS 伺服器，可協助其身分識別提供者驗證客戶認證，以存取公用網站和夥伴驗證，以存取合作夥伴外部網路。
 
-Contoso 決定保留這種基礎結構，並將其專用於客戶及夥伴驗證。Contoso 身分識別架構師正在調查此基礎結構對 Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) 方案的轉換。
+Contoso 決定保留這種基礎結構，並將其專用於客戶及夥伴驗證。 Contoso 身分識別架構師正在調查此基礎結構轉換到 Azure AD [B2B](/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](/azure/active-directory-b2c/solution-articles) 的解決方案。
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>用於雲端式驗證的混合式身分識別和密碼雜湊同步
 
@@ -64,11 +64,11 @@ PHS 會同步處理內部部署 AD DS 樹系與其 Microsoft 365 for enterprise 
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>身分識別和裝置存取的條件式存取原則
 
-Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件式存取原則](identity-access-policies.md)：
+Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件式存取原則](../security/office-365-security/identity-access-policies.md)：
 
 - *基準* 保護適用于所有使用者帳戶。
 - *機密* 保護適用于資深領導人和高層人員。
-- 「*高管制*防護」適用于財務、法律和研究部門中具有高管制資料存取權的特定使用者。
+- 「*高管制* 防護」適用于財務、法律和研究部門中具有高管制資料存取權的特定使用者。
 
 以下是 Contoso 身分識別和裝置條件式存取原則的結果集合。
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 群組。
-ms.openlocfilehash: 75bc743ed8f1965d0ed8a1967e6eac1bd6e0178b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 18cb37a4aae7a163d2e198194251abc727b48848
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453678"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910603"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>系統管理員的 Microsoft 365 群組概觀 (部分機器翻譯)
 
@@ -45,7 +45,7 @@ Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsof
 
 使用 Microsoft 365 群組時，您不需要手動指派每個資源的許可權。 將人員新增至群組時，會自動為他們提供所需的許可權。
 
-除非您將 [群組建立限制于一組特定的人員](manage-creation-of-groups.md)，否則任何使用者都可以建立群組。 如果您限制群組的建立，無法建立群組的使用者將無法建立 SharePoint 網站、規劃人員或小組。 這些服務要求建立群組的人員可以建立群組。 使用者仍可參與群組活動，例如在 Planner 中建立工作或使用小組聊天，但前提是群組的成員。
+除非您將 [群組建立限制于一組特定的人員](../../solutions/manage-creation-of-groups.md)，否則任何使用者都可以建立群組。 如果您限制群組的建立，無法建立群組的使用者將無法建立 SharePoint 網站、規劃人員或小組。 這些服務要求建立群組的人員可以建立群組。 使用者仍可參與群組活動，例如在 Planner 中建立工作或使用小組聊天，但前提是群組的成員。
 
 群組具有下列角色：
 
@@ -57,17 +57,17 @@ Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsof
 
 身為管理員，您可以：
 
-- [指定誰可以建立群組](manage-creation-of-groups.md)
-- [為組織中的群組建立命名原則](groups-naming-policy.md)
-- [選擇建立群組時所要使用的網域](choose-domain-to-create-groups.md)
+- [指定誰可以建立群組](../../solutions/manage-creation-of-groups.md)
+- [為組織中的群組建立命名原則](../../solutions/groups-naming-policy.md)
+- [選擇建立群組時所要使用的網域](../../solutions/choose-domain-to-create-groups.md)
 - [管理群組的來賓存取](manage-guest-access-in-groups.md)
 - 在刪除的30天內，[復原已刪除的群組](restore-deleted-group.md) () 
 
-如果您想要更自動化的方法來管理 Microsoft 365 群組的生命週期，您可以使用到期原則，在特定的時間間隔內到期群組。 群組的擁有者會收到一封電子郵件30、15及1天，允許使用者在仍需要的群組到期時進行更新。 請參閱： [Microsoft 365 群組到期原則](office-365-groups-expiration-policy.md)。
+如果您想要更自動化的方法來管理 Microsoft 365 群組的生命週期，您可以使用到期原則，在特定的時間間隔內到期群組。 群組的擁有者會收到一封電子郵件30、15及1天，允許使用者在仍需要的群組到期時進行更新。 請參閱： [Microsoft 365 群組到期原則](../../solutions/microsoft-365-groups-expiration-policy.md)。
 
-您可以從 Microsoft 365 系統管理中心或 [使用 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)管理您的群組。
+您可以從 Microsoft 365 系統管理中心或 [使用 PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)管理您的群組。
 
-如果您有許多使用者，例如在大型公司或企業中，您可能會有許多使用者出於各種目的建立群組。 強烈建議您複查 [Microsoft 365 群組中](plan-for-groups-governance.md) 的控管計畫，以取得最佳作法。
+如果您有許多使用者，例如在大型公司或企業中，您可能會有許多使用者出於各種目的建立群組。 強烈建議您複查 [Microsoft 365 群組中](../../solutions/collaboration-governance-overview.md) 的控管計畫，以取得最佳作法。
 
 ## <a name="group-limits"></a>群組限制
 
@@ -100,14 +100,14 @@ Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsof
 > [!IMPORTANT]
 > 如果您目前使用的是分類標籤，當啟用敏感度標籤之後，建立群組的使用者將無法再使用這些標籤。 
 
-如需建立、管理及使用敏感度標籤的詳細資訊，請參閱 [使用敏感度標籤來保護 Microsoft 團隊、microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+如需建立、管理及使用敏感度標籤的詳細資訊，請參閱 [使用敏感度標籤來保護 Microsoft 團隊、microsoft 365 群組和 SharePoint 網站中的內容](../../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>哪些 Microsoft 365 方案包含群組？
 
 任何有 Exchange Online 和 SharePoint 線上的 Microsoft 365 訂閱都會支援群組。 其中包括商務基本方案和商務高級方案，以及 Enterprise E1、E3 和 E5 計畫。 群組會接受建立群組 (人員的授權，也稱為群組) 的「召集人」。 只要召集人具有您想要群組擁有的任何功能的適當授權，該授權就會傳遞給群組。
 
 > [!NOTE]
-> 如需 Microsoft 365 服務系列與方案的詳細資訊，請參閱 [microsoft 365 方案選項](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)。
+> 如需 Microsoft 365 服務系列與方案的詳細資訊，請參閱 [microsoft 365 方案選項](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)。
 
 如果您有僅限 Exchange 的計畫，您仍然可以在 Outlook 中取得群組的共用收件匣和共用行事曆功能，但不會取得文件庫、Planner 或任何其他功能。
 
@@ -123,8 +123,8 @@ Microsoft 365 群組使用 Azure Active Directory。 您取得的群組功能取
 
 [將通訊群組清單升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)
 
-[使用 PowerShell 管理 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[使用 PowerShell 管理 Microsoft 365 群組](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
-[SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[SharePoint Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[在 Microsoft Stream 中組織群組和通道](https://docs.microsoft.com/stream/groups-channels-organization)
+[在 Microsoft Stream 中組織群組和通道](/stream/groups-channels-organization)

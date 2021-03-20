@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 選擇不同的 MDM 和 MAM 方法。
-ms.openlocfilehash: 2866aa8cf172361b2b5f5055932717154cd6ddd1
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: c4928f272c0bdd8a7b6883f506cebf9a153e9c49
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941294"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910531"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>保護裝置和應用程式資料的選項
 
@@ -44,7 +44,7 @@ ms.locfileid: "48941294"
  
 - **Microsoft Intune** 是一套獨立的方案，也包含一些 Microsoft 365 for business 或 enterprise plan。 如果您有 Intune 做為獨立或訂閱的一部分，它會提供微調裝置和應用程式資料管理的能力。 如需 Microsoft 365 可用性的相關資訊，請參閱 [Intune 的可用性](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune)。
 
-    Microsoft Intune 是一種雲端式服務，其重點在於行動裝置管理 (MDM) 和行動應用程式管理 (MAM) 。 您可以控制組織裝置的使用方式，包括行動電話、平板電腦和可擕式電腦。 您也可以設定特定原則來控制應用程式。 如需詳細資訊，請參閱 [Microsoft Intune 檔](https://docs.microsoft.com/mem/intune/)。
+    Microsoft Intune 是一種雲端式服務，其重點在於行動裝置管理 (MDM) 和行動應用程式管理 (MAM) 。 您可以控制組織裝置的使用方式，包括行動電話、平板電腦和可擕式電腦。 您也可以設定特定原則來控制應用程式。 如需詳細資訊，請參閱 [Microsoft Intune 檔](/mem/intune/)。
 
 - **Azure Active Directory (AD) 優質** 方案是獨立的方案，也就是一些 Microsoft 365 for business 和 enterprise 方案隨附的獨立方案。 如需詳細資訊，請參閱 [AZURE AD 定價](https://azure.microsoft.com/pricing/details/active-directory/)。
 

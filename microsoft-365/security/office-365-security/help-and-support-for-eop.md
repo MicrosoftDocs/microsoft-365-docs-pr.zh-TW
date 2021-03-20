@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 945f3c4e32a6c41193e3df4813cc4ed4fe9f7b1f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0b48c9fadb53fbb7b392c7d4711efc6136509444
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289790"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910735"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 的說明和支援
 
@@ -33,7 +33,7 @@ ms.locfileid: "50289790"
 
 ## <a name="self-support-options"></a>自我支援選項
 
-登入時，Microsoft 365 系統管理中心會提供您組織服務狀態的相關資訊。 此外，服務健康情況區段會顯示服務的目前狀態、中斷及中斷的詳細資料，並列出已計畫的維護時間。 Microsoft 365 系統管理中心還提供已知問題和預期解決方案的相關資訊。 如果您受到全服務事件的影響，您應該會看到通訊警示 (通常伴隨著鈴鐺圖示)。 建議您詳讀內容並採取適當的行動。 如需服務健康情況區域的詳細資訊，請參閱 [服務健康情況和持續性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您也可以使用這裡所列的工具、論壇及社區網站，尋找您自己的其他協助。
+登入時，Microsoft 365 系統管理中心會提供您組織服務狀態的相關資訊。 此外，服務健康情況區段會顯示服務的目前狀態、中斷及中斷的詳細資料，並列出已計畫的維護時間。 Microsoft 365 系統管理中心還提供已知問題和預期解決方案的相關資訊。 如果您受到全服務事件的影響，您應該會看到通訊警示 (通常伴隨著鈴鐺圖示)。 建議您詳讀內容並採取適當的行動。 如需服務健康情況區域的詳細資訊，請參閱 [服務健康情況和持續性](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您也可以使用這裡所列的工具、論壇及社區網站，尋找您自己的其他協助。
 
 [Exchange Online Protection 產品概觀](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -93,4 +93,4 @@ Microsoft 提供全球產品支援的當地或免付費電話號碼。 許多支
 
 ## <a name="for-more-information-about-eop-documentation"></a>如需 EOP 文件的詳細資訊
 
-[Exchange Online 的協助工具](https://docs.microsoft.com/Exchange/accessibility/accessibility)
+[Exchange Online 的協助工具](/Exchange/accessibility/accessibility)

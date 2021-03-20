@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft 123-reg.co.uk。
-ms.openlocfilehash: 3c9af6909f37082a63170adac94ac3d92b717ad1
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: d1e4d3d01a5e6b4f72c98fe09cf57374dd2417a0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758901"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910423"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>在123-reg.co.uk 建立 Microsoft 的 DNS 記錄
 
@@ -102,11 +102,11 @@ ms.locfileid: "50758901"
     
     |**主機 名**|**Type**|**優先順序**|**Destination MX (目的地 MX)**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **注意：** 從您的 Microsoft 帳戶取得您的 \<domain-key\>。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **注意：** 從您的 Microsoft 帳戶取得您的 \<domain-key\>。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![複製並貼上表格中的值](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
-6. 選取 [新增]。
+6. 選取 **新增**。
     
     ![已選取 [新增] 按鈕之對話方塊的螢幕擷取畫面](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
@@ -141,7 +141,7 @@ ms.locfileid: "50758901"
    
     ![使用目的 CNAME 複製及貼上的螢幕擷取畫面](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
-6. 選取 [新增]。
+6. 選取 **新增**。
     
     ![新增目的地 CNAME 的螢幕擷取畫面](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
@@ -155,7 +155,7 @@ ms.locfileid: "50758901"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請勿為 Microsfot 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.yml)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](../../enterprise/external-domain-name-system-records.md#external-dns-records-required-for-spf)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.yml)。 
   
 1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。 系統會提示您先登入。
     
@@ -175,7 +175,7 @@ ms.locfileid: "50758901"
    
     ![123Reg-BP-Configure-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
-6. 選取 [新增]。
+6. 選取 **新增**。
     
     ![具有目的地 TXT/SPF 的螢幕擷取畫面](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
   
@@ -204,7 +204,7 @@ ms.locfileid: "50758901"
    
     ![使用表格中的 DNS 值的螢幕擷取畫面](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
-6. 選取 [新增]。
+6. 選取 **新增**。
     
     ![新增目的地 SRV 的螢幕擷取畫面](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
   
@@ -214,4 +214,3 @@ ms.locfileid: "50758901"
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
-  

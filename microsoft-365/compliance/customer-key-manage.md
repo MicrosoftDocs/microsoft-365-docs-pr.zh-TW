@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 在您設定客戶金鑰之後，請瞭解如何透過還原 AKV 機碼來管理它，以及管理許可權和您的資料加密原則。
-ms.openlocfilehash: de85edd5c53fc2b76be4361575e1a85655c0f297
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 8f55667254ce7f5cbd9d4de274623ca4a3c4aa9d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547083"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909945"
 ---
 # <a name="manage-customer-key"></a>管理客戶金鑰
 
@@ -26,7 +26,7 @@ ms.locfileid: "47547083"
 
 ## <a name="restore-azure-key-vault-keys"></a>還原 Azure 金鑰保存庫金鑰
 
-執行還原之前，請使用 soft delete 所提供的復原功能。 所有與客戶金鑰搭配使用的金鑰，都必須啟用 [虛刪除]。 虛刪除的運作方式像是回收站，可在不需要還原的情況下，最多可恢復90天。 只需要在極大或不尋常的情況下進行還原，例如，金鑰或金鑰 vault 遺失。 如果您必須還原金鑰以與客戶金鑰搭配使用，請在 Azure PowerShell 中執行 AzureKeyVaultKey Cmdlet，如下所示：
+執行還原之前，請使用 soft delete 所提供的復原功能。 所有與客戶金鑰搭配使用的金鑰，都必須啟用 [虛刪除]。 虛刪除的運作方式像是回收站，可在不需要還原的情況下，最多可恢復90天。 只需要在極大或不尋常的情況下進行還原，例如，金鑰或金鑰 vault 遺失。 如果您必須還原金鑰以與客戶金鑰搭配使用，請在 Azure PowerShell 中執行 Restore-AzureKeyVaultKey Cmdlet，如下所示：
   
 ```powershell
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
@@ -42,9 +42,9 @@ Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O3
   
 ## <a name="manage-key-vault-permissions"></a>管理主要 vault 許可權
 
-有幾個 Cmdlet 可用，可讓您查看並視需要移除重要 vault 的許可權（如有必要）。 您可能需要移除許可權，例如，當員工離開團隊時。 針對上述每項工作，您將使用 Azure PowerShell。 如需 Azure Powershell 的相關資訊，請參閱 [Azure PowerShell 的概述](https://docs.microsoft.com/powershell/azure/)。
+有幾個 Cmdlet 可用，可讓您查看並視需要移除重要 vault 的許可權（如有必要）。 您可能需要移除許可權，例如，當員工離開團隊時。 針對上述每項工作，您將使用 Azure PowerShell。 如需 Azure Powershell 的相關資訊，請參閱 [Azure PowerShell 的概述](/powershell/azure/)。
 
-若要查看主要 vault 許可權，請執行 AzKeyVault Cmdlet。
+若要查看主要 vault 許可權，請執行 Get-AzKeyVault Cmdlet。
 
 ```powershell
 Get-AzKeyVault -VaultName <vault name>
@@ -56,7 +56,7 @@ Get-AzKeyVault -VaultName <vault name>
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
 
-若要移除系統管理員的許可權，請執行 AzKeyVaultAccessPolicy Cmdlet：
+若要移除系統管理員的許可權，請執行 Remove-AzKeyVaultAccessPolicy Cmdlet：
   
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
@@ -74,13 +74,13 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 **Exchange Online 和商務用 Skype：** 您最多可以建立 50 DEPs。 如需相關指示，請參閱 [Create a data encryption policy (DEP) 以搭配 Exchange Online 和商務用 Skype 使用](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business)。
 
-**SharePoint 線上、商務 OneDrive 及小組檔案：** DEP 適用于一個地理位置（也稱為 _地理_位置）中的資料。 如果您使用 Office 365 的多地理位置功能，您可以為每個地理位置建立一個 DEP。 如果您不是使用多地理位置，您可以建立一個 DEP。 一般來說，當您設定客戶金鑰時，您會建立 DEP。 如需相關指示，請參閱為 [商務地區的每一個 SharePoint 線上及 OneDrive 建立資料加密原則 (DEP) ](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo)。
+**SharePoint 線上、商務 OneDrive 及小組檔案：** DEP 適用于一個地理位置（也稱為 _地理_ 位置）中的資料。 如果您使用 Office 365 的多地理位置功能，您可以為每個地理位置建立一個 DEP。 如果您不是使用多地理位置，您可以建立一個 DEP。 一般來說，當您設定客戶金鑰時，您會建立 DEP。 如需相關指示，請參閱為 [商務地區的每一個 SharePoint 線上及 OneDrive 建立資料加密原則 (DEP) ](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo)。
 
 ### <a name="view-the-deps-youve-created-for-exchange-online-and-skype-for-business"></a>查看您為 Exchange Online 和商務用 Skype 建立的 DEPs
 
 若要查看您使用 Get-DataEncryptionPolicy PowerShell Cmdlet 為 Exchange Online 和商務用 Skype 建立的所有 DEPs 清單，請完成下列步驟。
 
-1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 若要傳回組織中的所有 DEPs，請執行不含任何參數的 Get-DataEncryptionPolicy Cmdlet。
 
@@ -88,7 +88,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
    Get-DataEncryptionPolicy
    ```
 
-   如需 Get-DataEncryptionPolicy Cmdlet 的詳細資訊，請參閱 [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy)。
+   如需 Get-DataEncryptionPolicy Cmdlet 的詳細資訊，請參閱 [Get-DataEncryptionPolicy](/powershell/module/exchange/get-dataencryptionpolicy)。
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>將信箱遷移至雲端之前，請先指派 DEP
 
@@ -96,7 +96,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 若要在將 DEP 遷移至 Office 365 之前將其指派給該信箱，請在 Exchange Online 中執行 Set-MailUser Cmdlet PowerShell:
 
-1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 執行 Set-MailUser Cmdlet。
 
@@ -104,19 +104,19 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
    Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
    ```
 
-   其中 *GeneralMailboxOrMailUserIdParameter* 指定信箱，且 *DataEncryptionPolicyIdParameter* 是 DEP 的識別碼。 如需 Set-MailUser Cmdlet 的詳細資訊，請參閱 [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)。
+   其中 *GeneralMailboxOrMailUserIdParameter* 指定信箱，且 *DataEncryptionPolicyIdParameter* 是 DEP 的識別碼。 如需 Set-MailUser Cmdlet 的詳細資訊，請參閱 [Set-MailUser](/powershell/module/exchange/set-mailuser)。
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>決定指派給信箱的 DEP
 
 若要判斷指派給信箱的 DEP，請使用 Get-MailboxStatistics Cmdlet。 Cmdlet 會傳回唯一識別碼 (GUID) 。
   
-1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   其中 *GeneralMailboxOrMailUserIdParameter* 指定信箱和 DataEncryptionPolicyID 會傳回 DEP 的 GUID。 如需 Get-MailboxStatistics Cmdlet 的詳細資訊，請參閱 [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics)。
+   其中 *GeneralMailboxOrMailUserIdParameter* 指定信箱和 DataEncryptionPolicyID 會傳回 DEP 的 GUID。 如需 Get-MailboxStatistics Cmdlet 的詳細資訊，請參閱 [Get-MailboxStatistics](/powershell/module/exchange/get-mailboxstatistics)。
   
 2. 執行 Get-DataEncryptionPolicy Cmdlet，以找出信箱所指派的 DEP 好記名稱。
   
@@ -144,9 +144,9 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 完成信箱移動的時間取決於信箱的大小。 若在您指派新的 DEP 後，客戶機碼尚未從72小時內完全加密，請與 Microsoft 支援部門聯繫以尋求協助。 無法再使用 New-MoveRequest Cmdlet 進行本機信箱移動。 如需詳細資訊，請參閱本次 [宣告](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) 。
 
-### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>驗證 SharePoint 線上、商務 OneDrive 及小組檔案的加密是否已完成
+### <a name="verify-encryption-completes-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>驗證 SharePoint 線上、商務 OneDrive 及小組檔案的加密是否已完成
 
-執行 SPODataEncryptionPolicy 指令程式，以檢查加密的狀態，如下所示：
+執行 Get-SPODataEncryptionPolicy Cmdlet 以檢查加密的狀態，如下所示：
 
 ```powershell
 Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
@@ -160,7 +160,7 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
 - 地理位置的加密狀態。 可能的狀態包括：
 
-  - 取消**註冊：** 尚未套用客戶金鑰加密。
+  - 取消 **註冊：** 尚未套用客戶金鑰加密。
 
   - **註冊：** 已套用客戶金鑰加密，且您的檔案正處於加密過程中。 如果地理位置註冊，您也會顯示地理位置的網站百分比已完成的資訊，讓您可以監視加密進度。
 
@@ -174,7 +174,7 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
 若要使用 Set-Mailbox PowerShell Cmdlet 從信箱中取消指派 DEP，請完成下列步驟。
 
-1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 執行 Set-Mailbox Cmdlet。
 
@@ -207,15 +207,15 @@ Microsoft 365 會審核和驗證資料清除路徑。 如需詳細資訊，請�
 
 1. 從 Azure Key 保存庫移除 "O365 Exchange Online" 的自動換行及解出許可權。
 
-2. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+2. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-3. 針對包含您要刪除之信箱的每個 DEP，執行 [DataEncryptionPolicy 指令程式](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy) ，如下所示。
+3. 針對包含您要刪除之信箱的每個 DEP，執行 [DataEncryptionPolicy 指令程式](/powershell/module/exchange/set-dataencryptionpolicy) ，如下所示。
 
     ```powershell
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>
     ```
 
-   若命令失敗，請確定您已從 Azure Key Vault 的兩個金鑰中移除 Exchange Online 許可權（如本工作先前所指定）。當您使用 DataEncryptionPolicy 指令程式設定 PermanentDataPurgeRequested 參數之後，就無法再將此 DEP 指派給信箱。
+   若命令失敗，請確定您已從 Azure Key Vault 的兩個金鑰中移除 Exchange Online 許可權（如本工作先前所指定）。當您使用 Set-DataEncryptionPolicy Cmdlet 設定 PermanentDataPurgeRequested 參數之後，就無法再將此 DEP 指派給信箱。
 
 4. 請與 Microsoft 支援人員聯繫並要求資料清除 eDocument。
 
@@ -225,7 +225,7 @@ Microsoft 365 會審核和驗證資料清除路徑。 如需詳細資訊，請�
 
     Microsoft 收到法律檔之後，Microsoft 會執行 Cmdlet 以觸發資料清除，這會先刪除原則，並將信箱標記為永久刪除，然後刪除可用性金鑰。 資料清除程式完成後，就無法存取 Exchange Online 中的資料，且無法復原。
 
-### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>吊銷客戶金鑰和 SharePoint 線上、商務 OneDrive 與小組檔案的可用性金鑰
+### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>吊銷客戶金鑰和 SharePoint 線上、商務 OneDrive 與小組檔案的可用性金鑰
 
 若要為 SharePoint 線上、商務用 OneDrive 或小組檔案啟動資料清除路徑，請完成下列步驟：
 
@@ -243,7 +243,7 @@ Microsoft 365 會審核和驗證資料清除路徑。 如需詳細資訊，請�
 
 ## <a name="related-articles"></a>相關文章
 
-- [使用客戶金鑰的服務加密](customer-key-overview.md)
+- [客戶金鑰服務加密](customer-key-overview.md)
 
 - [深入瞭解可用性金鑰](customer-key-availability-key-understand.md)
 

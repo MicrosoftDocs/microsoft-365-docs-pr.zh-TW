@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: 瞭解如何驗證您的網域，以及如何在 Amazon Web 服務上設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft AWS)  (。
-ms.openlocfilehash: bb687b8685aed79f5f768c12d652205bbbed0f59
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 12f9341ab381324266cf2da1ca6b5423df9973dd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657969"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910411"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>在 Amazon Web 服務 (AWS) Microsoft 中建立 DNS 記錄
 
@@ -66,7 +66,7 @@ ms.locfileid: "49657969"
   
     |||||||
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |**名稱** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
+    |**名稱** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**值** <br/> |**Routing Policy** <br/> |
     |(Leave this field empty.)  <br/> |TXT - Text  <br/> |否  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Microsoft 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
    
 6. 選取 [建立]。
@@ -104,7 +104,7 @@ ms.locfileid: "49657969"
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
+    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**值**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |(將此欄位保留空白。)  <br/> |MX - 郵件交換  <br/> |無  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 是指 MX 優先順序值。請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **附注：**\<*domain-key*\>從您的 Microsoft 365 帳戶取得。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
        
@@ -148,7 +148,7 @@ ms.locfileid: "49657969"
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
+    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**值**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |autodiscover.outlook.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |簡易  <br/> |
     |sip  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |簡易  <br/> |
@@ -172,7 +172,7 @@ ms.locfileid: "49657969"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.yml)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](../../enterprise/external-domain-name-system-records.md)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.yml)。 
   
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
     
@@ -213,7 +213,7 @@ ms.locfileid: "49657969"
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
+    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**值**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip._tls|SRV - 服務定位器|無|300|100 1 443 sipdir.online.lync.com. **此值必須以句點 ( 結束。 )**><br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡易|
     |_sipfederationtls._tcp|SRV - 服務定位器|無|300|100 1 5061 sipfed.online.lync.com. **此值必須以英文句點 (.) 結尾。**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡單|
@@ -230,4 +230,3 @@ ms.locfileid: "49657969"
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
-  

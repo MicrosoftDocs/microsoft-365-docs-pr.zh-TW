@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 瞭解如何在 Microsoft Azure 中為 Microsoft 365 的高可用性同盟驗證建立和設定 AD FS 伺服器。
-ms.openlocfilehash: bf8b52f4cd0dead0c264b71363fd5248397ae88d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 388a99aa496c4ecd9145759d4dfb1b9441b4fb2c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688870"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909795"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性同盟驗證階段 3：設定 AD FS 伺服器
 
@@ -48,7 +48,7 @@ ms.locfileid: "46688870"
 請記得您在 [階段2：設定網域控制站](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 和表格 R、V、S、I 及 A [階段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定義的表 M。
   
 > [!NOTE]
-> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱 [Azure PowerShell 入門](https://docs.microsoft.com/powershell/azure/get-started-azureps)。 
+> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱 [Azure PowerShell 入門](/powershell/azure/get-started-azureps)。 
   
 首先，您會為兩個 AD FS 伺服器建立 Azure 內部負載平衡器。 指定變數的值，並移除 \< and > 字元。 當您已提供所有適當的值時，在 Azure PowerShell 命令提示字元上或 PowerShell ISE 中執行結果區塊。
   
@@ -131,7 +131,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> 由於這些虛擬機器是用於內部網路應用程式，並不會指派公用 IP 位址或 DNS 網域名稱標籤，也不會曝露在網際網路上。不過，這也表示您無法透過 Azure 入口網站與虛擬機器連線。當您檢視虛擬機器的屬性時，無法使用**連線**選項。請使用遠端桌面連線附屬應用程式或另一個遠端桌面工具，透過使用其私人 IP 位址或內部網路 DNS 名稱來與虛擬機器連線。
+> 由於這些虛擬機器是用於內部網路應用程式，並不會指派公用 IP 位址或 DNS 網域名稱標籤，也不會曝露在網際網路上。不過，這也表示您無法透過 Azure 入口網站與虛擬機器連線。當您檢視虛擬機器的屬性時，無法使用 **連線** 選項。請使用遠端桌面連線附屬應用程式或另一個遠端桌面工具，透過使用其私人 IP 位址或內部網路 DNS 名稱來與虛擬機器連線。
   
 針對每個虛擬機器，使用您選擇的遠端桌面用戶端，並建立遠端桌面連線。 請使用其內部網路 DNS 或本機管理員帳戶的電腦名稱和認證。
   
@@ -150,7 +150,7 @@ Restart-Computer
 
 ![Azure 中具有 AD FS 伺服器之高可用性 Microsoft 365 同盟驗證基礎結構的階段3](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 使用 [階段4：設定 web 應用程式](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) proxy 以繼續設定此工作負載。
   
@@ -159,5 +159,3 @@ Restart-Computer
 [Azure 中的 Microsoft 365 高可用性同盟驗證](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 [Microsoft 365 開發/測試環境的同盟身分識別](federated-identity-for-your-microsoft-365-dev-test-environment.md)
-
-
