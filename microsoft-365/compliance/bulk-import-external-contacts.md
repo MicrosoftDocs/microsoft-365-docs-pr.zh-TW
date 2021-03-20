@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 瞭解系統管理員如何使用 Exchange Online PowerShell 和 CSV 檔案，以將外部連絡人大容量匯入全域通訊清單。
-ms.openlocfilehash: 475afc3b0622c404b50ebe5549bb5be85af80c5e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 178e3676f8dc5fb59cdad9cc46d7ecbd9dddb90e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423250"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918209"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>將外部連絡人大量匯入到 Exchange Online
 
@@ -71,7 +71,7 @@ ms.locfileid: "50423250"
 
 下一步是使用您在步驟1中建立的 CSV 檔案 PowerShell，將 CSV 檔案中列出的外部連絡人大量匯入 Exchange Online。 
   
-1.  將 PowerShell 連接至您的 Exchange Online 組織。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 當您連線至 Exchange Online PowerShell 時，請務必使用全域系統管理員帳戶的使用者名稱和密碼。 
+1.  將 PowerShell 連接至您的 Exchange Online 組織。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 當您連線至 Exchange Online PowerShell 時，請務必使用全域系統管理員帳戶的使用者名稱和密碼。 
     
 2. 在您將 PowerShell 連接至 Exchange Online 之後，請移至您在步驟1中儲存 CSV 檔案的桌面資料夾;例如 `C:\Users\Administrator\desktop` 。
     
@@ -86,7 +86,7 @@ ms.locfileid: "50423250"
 4. 若要查看新的外部連絡人，請移至 Exchange 系統管理中心 (EAC) ， **然後按一下 [** 收件者 \> **連絡人**]。 
     
     > [!TIP]
-    > 如需連接到 EAC 的指示，請參閱 exchange [Online 中的 exchange 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=328197)。 
+    > 如需連接到 EAC 的指示，請參閱 exchange [Online 中的 exchange 系統管理中心](/exchange/exchange-admin-center)。 
   
 5. 如有必要， **請按一下 [** 重新整理] 以更新清單，並查看已匯入的外部連絡人。 
     
@@ -99,7 +99,7 @@ ms.locfileid: "50423250"
 
 在步驟2中執行此命令之後，會建立外部連絡人，但不會包含任何連絡人或組織資訊，也就是 CSV 檔案中大部分儲存格的資訊。 這是因為當您建立新的外部連絡人時，只會填入必要的屬性。 如果您沒有所有在 CSV 檔案中填入的資訊，請不要擔心。 如果不存在，則不會新增它。
   
-1.  將 PowerShell 連接至您的 Exchange Online 組織。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1.  將 PowerShell 連接至您的 Exchange Online 組織。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
     
 2. 移至您在步驟1中儲存 CSV 檔的 [桌面] 資料夾。例如， `C:\Users\Administrator\desktop` 。
     
@@ -138,7 +138,7 @@ ms.locfileid: "50423250"
 
 有些公司可能只會使用外部連絡人，因此可以新增為通訊群組的成員。 在此案例中，他們可能會想要隱藏共用通訊錄中的外部連絡人。 方法如下：
   
-1.  將 PowerShell 連接至您的 Exchange Online 組織。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1.  將 PowerShell 連接至您的 Exchange Online 組織。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
     
 2. 若要隱藏單一外部連絡人，請執行下列命令。
     

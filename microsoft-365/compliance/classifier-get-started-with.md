@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 本文說明如何建立及訓練自訂的分類器，以及如何重新導流以提高精確度。
-ms.openlocfilehash: a73acd7665cd23f13329bb5db4e890b0f3b0d861
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423292"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918177"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>開始使用可訓練分類器
 
@@ -95,7 +95,7 @@ Trainable 分類器處理足夠的肯定樣本來建立預測模型之後，您�
 
 ## <a name="how-to-create-a-trainable-classifier"></a>如何建立 trainable 的分類器
 
-1. 在 50-500 seed content 專案之間收集。 這兩個範例都必須是強烈代表您想要讓 trainable 分類器正確識別為分類類別中的內容類型的範例。 如需支援的檔案類型，請參閱 [SharePoint Server 中的預設編目副檔名和分析檔案類型](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 。
+1. 在 50-500 seed content 專案之間收集。 這兩個範例都必須是強烈代表您想要讓 trainable 分類器正確識別為分類類別中的內容類型的範例。 如需支援的檔案類型，請參閱 [SharePoint Server 中的預設編目副檔名和分析檔案類型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 。
 
    > [!IMPORTANT]
    > Seed 及 test 範例專案不能加密，必須是英文。
@@ -127,7 +127,7 @@ Trainable 分類器處理足夠的肯定樣本來建立預測模型之後，您�
     > [!div class="mx-imgBorder"]
     > ![trainable 分類器準備好用於測試](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. 請至少收集200測試內容專案 (10000 最大) 以取得最佳結果。 這些專案應該混合使用強陽性、強負片和有些專案，但其性質卻不明顯。 如需支援的檔案類型，請參閱 [SharePoint Server 中的預設編目副檔名和分析檔案類型](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 。
+11. 請至少收集200測試內容專案 (10000 最大) 以取得最佳結果。 這些專案應該混合使用強陽性、強負片和有些專案，但其性質卻不明顯。 如需支援的檔案類型，請參閱 [SharePoint Server 中的預設編目副檔名和分析檔案類型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 。
 
     > [!IMPORTANT]
     > 範例專案不能加密，必須是英文。

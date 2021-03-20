@@ -10,32 +10,35 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: None
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 瞭解如何使用 AllowSelfServicePurchase PowerShell Cmdlet 來開啟或關閉自助購買服務。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 9fb5593855f9523198a3d70548e444a831e82c80
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653710"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918239"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>針對 MSCommerce PowerShell 模組使用 AllowSelfServicePurchase
 
-**MSCommerce** PowerShell 模組現在可用於[PowerShell 圖庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)。 此模組包含**AllowSelfServicePurchase**的**PolicyID**參數值，可讓您控制組織中的使用者是否可以進行自助購買。
+**MSCommerce** PowerShell 模組現在可用於 [PowerShell 圖庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)。 此模組包含 **AllowSelfServicePurchase** 的 **PolicyID** 參數值，可讓您控制組織中的使用者是否可以進行自助購買。
 
-您可以使用**MSCommerce** PowerShell 模組來：
+您可以使用 **MSCommerce** PowerShell 模組來：
 
-- 查看**AllowSelfServicePurchase**參數值的預設狀態，不論它是啟用還是停用
+- 查看 **AllowSelfServicePurchase** 參數值的預設狀態，不論它是啟用還是停用
 - 查看適用產品的清單，以及是否啟用或停用自助購買功能
 - 查看或修改特定產品的目前設定，以啟用或停用
 
 ## <a name="requirements"></a>需求
 
-若要使用**MSCommerce** PowerShell 模組，您需要：
+若要使用 **MSCommerce** PowerShell 模組，您需要：
 
 - Windows 10 裝置
 - 裝置的系統管理員許可權
@@ -43,9 +46,9 @@ ms.locfileid: "46653710"
 
 ## <a name="install-the-mscommerce-powershell-module"></a>安裝 MSCommerce PowerShell 模組
 
-您可以在 Windows 10 裝置上安裝**MSCommerce** PowerShell 模組一次，然後將其匯入您所開始的每個 PowerShell 會話。 從[PowerShell 庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)下載**MSCommerce** PowerShell 模組。
+您可以在 Windows 10 裝置上安裝 **MSCommerce** PowerShell 模組一次，然後將其匯入您所開始的每個 PowerShell 會話。 從 [PowerShell 庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)下載 **MSCommerce** PowerShell 模組。
 
-若要使用**PowerShellGet**安裝**MSCommerce** PowerShell 模組，請執行下列命令：
+若要使用 **PowerShellGet** 安裝 **MSCommerce** PowerShell 模組，請執行下列命令：
 
 ```powershell
 Install-Module -Name MSCommerce
@@ -71,7 +74,7 @@ Connect-MSCommerce
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>查看 AllowSelfServicePurchase 的詳細資料
 
-若要根據您的組織，查看**AllowSelfServicePurchase**參數值的描述及預設狀態，請執行下列命令：
+若要根據您的組織，查看 **AllowSelfServicePurchase** 參數值的描述及預設狀態，請執行下列命令：
 
 ```powershell
 Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
@@ -85,12 +88,14 @@ Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-下表列出可用的產品及其**ProductId**。
+下表列出可用的產品及其 **ProductId**。
 
 | 產品 | ProductId |
 |-----------------------------|--------------|
 | 每位使用者的電源應用程式 | CFQ7TTC0KP0P |
 | 每位使用者的電源自動化 | CFQ7TTC0KP0N |
+| 電源自動化 RPA | CFQ7TTC0KXG6  |
+| Power BI Premium (獨立)  | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
 | 專案方案1 | CFQ7TTC0KXND |
 | 專案計劃3 | CFQ7TTC0KXNC |
@@ -121,7 +126,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>停用 AllowSelfServicePurchase 的範例腳本
 
-下列範例會逐步引導您如何匯入 MSCommerce 模組、以您的帳戶登入、取得自動**MSCommerce**的**ProductId** ，然後針對該產品停用**AllowSelfServicePurchase** 。
+下列範例會逐步引導您如何匯入 MSCommerce 模組、以您的帳戶登入、取得自動的 **ProductId** ，然後針對該產品停用 **AllowSelfServicePurchase** 。
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -142,7 +147,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ### <a name="solution"></a>解決方案
 
-升級到 TLS 1.2：[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+升級到 TLS 1.2： [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

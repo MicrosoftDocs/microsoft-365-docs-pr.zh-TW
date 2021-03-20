@@ -21,12 +21,12 @@ ms.custom:
 description: 系統管理員可以瞭解反垃圾郵件設定和篩選器，有助於防止 Exchange Online Protection 中的垃圾郵件 (EOP) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f82e3f36d00994a68ed579779bed314318c51f47
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6eeecaccd95e11444807bedb142626ae2c0a0877
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288942"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917602"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾郵件保護
 
@@ -81,7 +81,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 
 - 將 **您的 MX 記錄指向 Microsoft 365**：為了讓 EOP 能夠提供最佳保護，我們一定會建議您先將電子郵件傳遞至 microsoft 365。 如需相關指示，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
-  如果 MX 記錄指向其他位置 (例如，協力廠商的反垃圾郵件解決方案或裝置) ，EOP 可提供準確的垃圾郵件篩選功能是很困難的。 在此案例中，您必須設定連接器的增強篩選 (也稱為 _略過清單_) 。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+  如果 MX 記錄指向其他位置 (例如，協力廠商的反垃圾郵件解決方案或裝置) ，EOP 可提供準確的垃圾郵件篩選功能是很困難的。 在此案例中，您必須設定連接器的增強篩選 (也稱為 _略過清單_) 。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
 - **使用電子郵件驗證**：如果您擁有電子郵件網域，您可以使用 DNS 來協助確保來自該網域中寄件者的郵件合法。 若要協助防止垃圾郵件和 EOP 中有害的欺騙性，請使用下列所有電子郵件驗證方法：
 
@@ -119,7 +119,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 
 - **使用可用的安全寄件者清單**：如需詳細資訊，請參閱 [建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
 
-- **驗證使用者在傳送和接收限制內** ，如 Exchange Online 服務描述中的 [接收及傳送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) 所述。
+- **驗證使用者在傳送和接收限制內** ，如 Exchange Online 服務描述中的 [接收及傳送限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) 所述。
 
 - **獨立 EOP：使用目錄同步** 處理：如果您使用獨立 EOP 來協助保護內部部署 Exchange 組織，則應該使用目錄同步處理，將使用者設定與服務同步。 這樣做可確保 EOP 信任您使用者的 [安全寄件者] 清單。 如需詳細資訊，請參閱[使用目錄同步處理來管理郵件使用者](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users)。
 

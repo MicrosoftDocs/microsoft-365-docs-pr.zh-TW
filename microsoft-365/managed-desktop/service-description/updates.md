@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4d8de363cc9111fade719fdf5384519d1236f431
-ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
+ms.openlocfilehash: 5961ac4eb16928754849f5f32ecd06d4d2e4650d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50031336"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917713"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 受管理的電腦中處理更新
 
@@ -26,7 +26,7 @@ ms.locfileid: "50031336"
 Microsoft 受管理的桌面會將所有裝置連接至新式雲端架構基礎結構。 保持最新的 Windows、Office、驅動程式、固件及 Microsoft Store for Business 應用程式是速度和穩定性的平衡。 部署群組將用來確保作業系統更新及原則以安全的方式推出。 如需詳細資訊，請參閱影片 [Microsoft 受管理的桌面變更和發行](https://www.microsoft.com/videoplayer/embed/RE4mWqP)程式。
 
 Microsoft 所發行的更新會累計，而且會分類為品質或功能更新。
-如需詳細資訊，請參閱 [Windows update For Business： Update types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)。 
+如需詳細資訊，請參閱 [Windows update For Business： Update types](/windows/deployment/update/waas-manage-updates-wufb#update-types)。 
 
 ## <a name="update-groups"></a>更新群組
 
@@ -38,7 +38,7 @@ Microsoft 受管理的桌面會使用四個 Azure AD 群組來管理更新：
 - **廣泛**：上一個群組可提供功能和品質更新。 此群組包含租使用者中大部分的使用者，因此會在部署時優先于速度。 在環境最穩定的情況時，應該在這裡進行應用程式的測試。 
 
 ### <a name="moving-devices-between-update-groups"></a>在更新群組之間移動裝置
-您可能想要讓某些裝置接收最後的更新，以及您想要最先移的其他裝置。 若要將這些裝置移至適當的更新群組，請 [提交系統管理員支援要求](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-worldwide) ，我們會為您移動裝置。 
+您可能想要讓某些裝置接收最後的更新，以及您想要最先移的其他裝置。 若要將這些裝置移至適當的更新群組，請 [提交系統管理員支援要求](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) ，我們會為您移動裝置。 
 
 > [!NOTE]
 > 如果您需要將使用者移至不同的更新群組，請提交支援要求。 不要在更新群組之間自行移動裝置。 如果裝置移動不正確，將會造成嚴重的後果。 裝置可能會意外更新，而且原則可能會發生衝突，變更裝置設定。
@@ -68,9 +68,9 @@ Microsoft 受管理的桌面會使用四個 Azure AD 群組來管理更新：
     <tr><td>作業系統的功能更新</td><td>0天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
     <tr><td>驅動程式/固件</td><td colspan="4">遵循品質更新的排程</td></tr>
     <tr><td>防病毒定義</td><td colspan="4">更新每個掃描</td></tr>
-    <tr><td>Microsoft 365 Apps 企業版</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">深入了解</a></td></tr>
-    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">深入了解</a></td></tr>
-    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/teams#updates">深入了解</a></td></tr>
+    <tr><td>Microsoft 365 Apps 企業版</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">深入了解</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">深入了解</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/teams#updates">深入了解</a></td></tr>
 </table>
 
 >[!NOTE]
@@ -86,5 +86,4 @@ Microsoft 受管理的桌面不支援屬於 Windows 預覽體驗計畫的裝置�
 
 ## <a name="bandwidth-management"></a>頻寬管理
 
-我們使用 [傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) 來進行所有作業系統及驅動程式更新。 這可透過從公司網路中的對等機器尋找更新，將 Windows Update service 的下載大小降到最低。
-
+我們使用 [傳遞優化](/windows/deployment/update/waas-delivery-optimization) 來進行所有作業系統及驅動程式更新。 這可透過從公司網路中的對等機器尋找更新，將 Windows Update service 的下載大小降到最低。

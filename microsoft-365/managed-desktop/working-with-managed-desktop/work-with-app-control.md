@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0b76a14a30caeb75cfdcb8acc5715fe6710e0625
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 31cc897fe28f557a65cba9c99e5dcecbf7c2b0e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289456"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917637"
 ---
 # <a name="work-with-app-control"></a>使用應用程式控制
 
@@ -26,10 +26,10 @@ ms.locfileid: "47289456"
 
 若要新增應用程式，請遵循下列步驟：
 
-1. 將 app 新增至 [Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)。
+1. 將 app 新增至 [Microsoft Intune](/mem/intune/apps/apps-win32-app-management)。
 2. 將 app 部署到測試環中的任何裝置。 
 3. 根據標準商務程式測試您的應用程式。 
-4. 在 [ **應用程式和服務 Logs\Microsoft\Windows\AppLocker**] 底下，檢查事件檢視器，尋找任何 **8003** 或 **8006** 事件。 這些事件表示應用程式會遭到封鎖。 如需所有應用程式鎖定事件及其意義的詳細資訊，請參閱 [Using 事件檢視器 With AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)。
+4. 在 [ **應用程式和服務 Logs\Microsoft\Windows\AppLocker**] 底下，檢查事件檢視器，尋找任何 **8003** 或 **8006** 事件。 這些事件表示應用程式會遭到封鎖。 如需所有應用程式鎖定事件及其意義的詳細資訊，請參閱 [Using 事件檢視器 With AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)。
 5. 如果您發現以上任何事件，請使用 Microsoft 受管理的桌面作業開啟簽署者要求。
 
 ## <a name="add-or-remove-a-trusted-signer"></a>新增 (或移除) 信任的簽署者
@@ -45,14 +45,14 @@ ms.locfileid: "47289456"
     - 發行者詳細資料 (例如： "O = <publisher name> ，L = <location> ，S = State，C = Country" )  
 
 > [!NOTE]
-> 若要移除應用程式的信任，請遵循相同的步驟，但設定要*移除*的**變更類型**。
+> 若要移除應用程式的信任，請遵循相同的步驟，但設定要 *移除* 的 **變更類型**。
 
 作業會逐步將原則部署到遵循此排程的部署群組：
 
 
 |部署群組  |原則類型  |時程  |
 |---------|---------|---------|
-|測試     |  審計       |  Day 0       |
+|測試     |  稽核       |  Day 0       |
 |名字     | Enforced        | 第 1 天        |
 |快速     | Enforced        |  第 2 天       |
 |廣泛     | Enforced        |  第 3 天       |
@@ -75,4 +75,4 @@ ms.locfileid: "47289456"
     - 應用程式名稱 
     - 應用程式版本 
     - 描述 
-    - 發行者詳細資料 (例如： "O = <publisher name> ，L = <location> ，S = State，C = Country" )  
+    - 發行者詳細資料 (例如： "O = <publisher name> ，L = <location> ，S = State，C = Country" ) 

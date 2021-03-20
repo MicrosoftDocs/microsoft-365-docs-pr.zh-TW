@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解 dlp 原則狀況和例外狀況
-ms.openlocfilehash: 93311ec369f8dd240b1e76c9e29ef8cc0a144cc2
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 02880a89bf580d94bad4a5dbdce5027b0a194487
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741366"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918009"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>DLP 原則條件、例外狀況和動作 (預覽) 
 
@@ -105,7 +105,7 @@ DLP 原則中的條件和例外情況可識別原則所套用的敏感專案。 
 |郵件大小超過|條件： *MessageSizeOver* <br/> 例外狀況： *ExceptIfMessageSizeOver*| Size    |郵件的總大小 (郵件加上附件) 大於或等於指定的值。 <br/>**附注**：信箱的郵件大小限制會在郵件流程規則之前評估。 信箱過大的郵件會遭到拒絕，但具有此條件的規則才能對郵件採取動作。|
 | 重要性    | 條件： *WithImportance* <br/> 例外狀況： *ExceptIfWithImportance*    | Importance    | 以指定的重要性層級標記的郵件。    |
 | 內容字元集包含文字    | 條件： *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | 具有任何指定之字元集名稱的郵件。    |
-| 具有寄件者覆寫    | 條件： *HasSenderOverride* <br/> 例外狀況： *ExceptIfHasSenderOverride*    | 不適用    | 寄件者已選擇覆寫資料遺失防護 (DLP) 原則的郵件。 如需 DLP 原則的詳細資訊，請參閱 [資料遺失防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)。   |
+| 具有寄件者覆寫    | 條件： *HasSenderOverride* <br/> 例外狀況： *ExceptIfHasSenderOverride*    | 不適用    | 寄件者已選擇覆寫資料遺失防護 (DLP) 原則的郵件。 如需 DLP 原則的詳細資訊，請參閱 [資料遺失防護](./data-loss-prevention-policies.md)。   |
 | 郵件類型符合    | 條件： *MessageTypeMatches* <br/> 例外狀況： *ExceptIfMessageTypeMatches*    | MessageType    | 指定類型的郵件。    |
 
 ## <a name="actions-for-dlp-policies"></a>DLP 原則的動作
@@ -124,7 +124,3 @@ DLP 原則中的條件和例外情況可識別原則所套用的敏感專案。 
 |將寄件者的管理員新增為收件者|AddRecipients | 第一個屬性： *AddedManagerAction*</br>第二個屬性： *欄位* | 將寄件者的管理員新增到郵件中，當作指定的收件者類型 ( 至、抄送、Bcc ) 或將郵件重新導向給寄件者的管理員，而不會通知寄件者或收件者。 只有在 Active Directory 中定義寄件者的管理員屬性時，此動作才有效。 此參數會使用下列語法： @ {AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
 前置主題    |PrependSubject    |字串    |會將指定的文字加入郵件的 [主旨] 欄位的開頭。 請考慮使用空格或冒號 (： ) 做為指定之文字的最後一個字元，以與原始的主旨文字區別。</br>若要防止將相同字串新增至已包含主旨 (中之文字的郵件，例如，回復) 中，新增「主旨包含字」 (ExceptIfSubjectContainsWords) 例外規則。    |
 套用 HTML 免責聲明    |ApplyHtmlDisclaimer    |第一個屬性： *文字*</br>第二個屬性： *位置*</br>第三個屬性： *Fallback 動作*    |將指定的 HTML 免責聲明套用至郵件所需的位置。</br>此參數會使用下列語法： @ {Text = "";Location = <Append \| 前置>;FallbackAction = <Wrap \| 略過 \| 拒絕>}
-
-
-
-

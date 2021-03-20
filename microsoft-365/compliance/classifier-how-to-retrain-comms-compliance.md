@@ -1,5 +1,5 @@
 ---
-title: 如何在通訊合規性中重新培訓分類器
+title: 如何重新定型通訊合規性的分類器
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何在通訊合規性中提供對 trainable 分類器的意見反應。
-ms.openlocfilehash: cdb8787715c3e022dfa0aa17cd83cc405aeef955
-ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
+ms.openlocfilehash: 75fff8220b052618c70a6490b8c3569c11ecc861
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752647"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918144"
 ---
-# <a name="how-to-retrain-a-classifier-in-communications-compliance"></a>如何在通訊合規性中重新培訓分類器
+# <a name="how-to-retrain-a-classifier-in-communications-compliance"></a>如何重新定型通訊合規性的分類器
 
 Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 經過訓練之後，您可以使用它來識別應用 Office 敏感度標籤、通訊合規性原則及保留標籤原則的專案。
 
@@ -94,5 +94,5 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 
 ## <a name="see-also"></a>另請參閱
 
-- [深入瞭解 trainable 的分類器](classifier-learn-about.md)
-- [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [深入了解可訓練分類器](classifier-learn-about.md)
+- [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

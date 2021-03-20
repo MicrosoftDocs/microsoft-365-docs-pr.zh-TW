@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 365 資料外洩防護內部部署掃描器安心掃描資料，並針對內部部署檔案共用和內部部署 SharePoint 資料夾和文件庫執行保護動作。
-ms.openlocfilehash: 34be93f5c9980a7f8ea8ad31b708af14a8725f73
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417343"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917819"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>使用 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)
 
@@ -47,7 +47,7 @@ ms.locfileid: "50417343"
  
 #### <a name="microsoft-365-audit-log"></a>Microsoft 365 稽核記錄
 
-在公開預覽期間，DLP 規則相符項目可在稽核記錄 UI 中取得，請參閱 [在合規性中心內搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md) 或透過 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 存取。
+在公開預覽期間，DLP 規則相符項目可在稽核記錄 UI 中取得，請參閱 [在合規性中心內搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md) 或透過 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 存取。
 
 #### <a name="aip"></a>AIP
 

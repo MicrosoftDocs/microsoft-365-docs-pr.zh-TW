@@ -15,12 +15,12 @@ ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 系統管理員可以瞭解如何設定獨立的 Exchange Online Protection (EOP) ，以保護內部部署的電子郵件環境。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de3c40a15a69eb2430c9c9b0473a983ef7c5354f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: bbad39475f87be27a83edc0c27e2bbe46f8e39ac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290462"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916641"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>設定您的獨立 EOP 服務
 
@@ -29,12 +29,12 @@ ms.locfileid: "50290462"
 **適用於**
 -  [Exchange Online Protection 獨立](exchange-online-protection-overview.md)
 
-本主題說明如何設定獨立 Exchange Online Protection (EOP) 。 如果您從 Office 365 網域精靈進入這裡，而您不希望使用 Exchange Online Protection 的話，請回到 Office 365 網域精靈。 如果您正在尋找如何設定連接器的詳細資訊，請參閱[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
+本主題說明如何設定獨立 Exchange Online Protection (EOP) 。 如果您從 Office 365 網域精靈進入這裡，而您不希望使用 Exchange Online Protection 的話，請回到 Office 365 網域精靈。 如果您正在尋找如何設定連接器的詳細資訊，請參閱[Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 
 > [!NOTE]
 > 本主題假設您擁有內部部署信箱，且您想要使用 EOP 來保護這些信箱 (稱為「獨立」案例)。 如果您想要使用 Exchange Online 來裝載雲端中的所有信箱，您不需要完成本文中的所有步驟。 移至[比較 Exchange Online 方案](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)以註冊及購買雲端信箱。
 >
-> 如果您想要將一部分信箱裝載在內部部署、一部分信箱裝載在雲端中，這稱為「混合」案例。 這需要更進階的郵件流程設定。 [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) 會說明混合郵件流程，並提供一些說明相關設定方式的連結。
+> 如果您想要將一部分信箱裝載在內部部署、一部分信箱裝載在雲端中，這稱為「混合」案例。 這需要更進階的郵件流程設定。 [Exchange Server Hybrid Deployments](/exchange/exchange-hybrid) 會說明混合郵件流程，並提供一些說明相關設定方式的連結。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -44,7 +44,7 @@ ms.locfileid: "50290462"
 
 - 如果您尚未註冊 EOP，請造訪 [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)，並選擇購買或試用服務。
 
-- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 論壇中尋求協助。
@@ -60,15 +60,15 @@ ms.locfileid: "50290462"
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>步驟 2：新增收件者並選擇性地啟用 DBEB
 
-在設定您的郵件來進出 EOP 服務之前，建議您將收件者新增至服務。有許多種作法，請參閱＜[管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md)＞。另外，如果您要啟用目錄架構邊緣封鎖 (DBEB)，以便在服務內新增收件者之後強制驗證收件者，則必須將網域類型設為「授權」。如需 DBEB 的相關資訊，請參閱[Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。
+在設定您的郵件來進出 EOP 服務之前，建議您將收件者新增至服務。有許多種作法，請參閱＜[管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md)＞。另外，如果您要啟用目錄架構邊緣封鎖 (DBEB)，以便在服務內新增收件者之後強制驗證收件者，則必須將網域類型設為「授權」。如需 DBEB 的相關資訊，請參閱[Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>步驟 3：使用 EAC 來設定郵件流程
 
-在 Exchange 系統管理中心 (EAC) 內建立連接器，來啟用 EOP 與您內部部署郵件伺服器之間的郵件流程。 如需詳細指示，請參閱 [設定連接器，以在 Microsoft 365 和您自己的電子郵件伺服器之間路由傳送郵件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。
+在 Exchange 系統管理中心 (EAC) 內建立連接器，來啟用 EOP 與您內部部署郵件伺服器之間的郵件流程。 如需詳細指示，請參閱 [設定連接器，以在 Microsoft 365 和您自己的電子郵件伺服器之間路由傳送郵件](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。
 
 ### <a name="how-do-you-know-this-task-worked"></a>如何才能了解此工作是否正常運作？
 
-檢查服務和環境之間的郵件流程。 如需詳細資訊，請參閱透過 [您的 Microsoft 365 連接器驗證測試郵件流程](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)。
+檢查服務和環境之間的郵件流程。 如需詳細資訊，請參閱透過 [您的 Microsoft 365 連接器驗證測試郵件流程](/exchange/mail-flow-best-practices/test-mail-flow)。
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>步驟 4：允許輸入連接埠 25 SMTP 存取
 
@@ -88,13 +88,13 @@ ms.locfileid: "50290462"
 遵循網域設定步驟，更新您網域的 MX 記錄，讓輸入電子郵件流過 EOP。 請務必直接將 MX 記錄指向 EOP 而非讓協力廠商篩選服務將郵件轉送至 EOP。 如需詳細資訊，請再次參照[建立 Office 365 的 DNS 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
 > [!NOTE]
-> 如果您必須將 MX 記錄指向位於 EOP 前方的另一部伺服器或服務，請參閱 [增強篩選 Exchange Online 中的連接器](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+> 如果您必須將 MX 記錄指向位於 EOP 前方的另一部伺服器或服務，請參閱 [增強篩選 Exchange Online 中的連接器](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
 ### <a name="how-do-you-know-this-task-worked"></a>如何才能了解此工作是否正常運作？
 
 到目前為止，您已確定有正確設定的輸出內部部署連接器可用來進行服務傳遞，並已確認 MX 記錄是指向 EOP。現在您可以選擇執行下列其他測試，以確認服務能夠成功將電子郵件傳遞至您的內部部署環境：
 
-- 檢查服務和環境之間的郵件流程。 如需詳細資訊，請參閱透過 [您的 Microsoft 365 連接器驗證測試郵件流程](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)。
+- 檢查服務和環境之間的郵件流程。 如需詳細資訊，請參閱透過 [您的 Microsoft 365 連接器驗證測試郵件流程](/exchange/mail-flow-best-practices/test-mail-flow)。
 
 - 從任何其網域符合您新增至此服務之網域的 Web 式電子郵件帳戶，傳送電子郵件給您組織中的郵件收件者。使用 Microsoft Outlook 或其他電子郵件用戶端，確認郵件已傳遞至內部部署信箱。
 

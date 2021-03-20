@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 423a65e60ccd11ab7e9fd78ef3b7983ba0c609c2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: cf17b631f8c9f4b6c332fe147ca14d126b8c0146
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288714"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918427"
 ---
 # <a name="compliance"></a>合規性
 
@@ -24,20 +24,20 @@ ms.locfileid: "50288714"
 
 Microsoft 受管理的桌面已達到下列認證：
 
-- [ISO 27001 資訊安全性管理標準 (ISM) ](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27001)
-- [ISO 27701 隱私權資訊管理系統 (PIMS) ](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701)
-- [ISO 27017 資訊安全性控制慣例的程式碼](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27017)
-- [ISO 27018 保護雲端中個人資料的做法程式碼](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018)
-- [ISO 9001 品質管理系統標準](https://docs.microsoft.com/compliance/regulatory/offering-ISO-9001)
-- [ISO 20000-1 資訊技術服務管理](https://docs.microsoft.com/compliance/regulatory/offering-ISO-20000-1-2011)
-- [ISO 22301 商務持續性管理標準](https://docs.microsoft.com/compliance/regulatory/offering-ISO-22301)
-- [雲端安全性聯盟 (CSA) STAR 證明](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
-- [雲端安全性聯盟 (CSA) STAR 認證](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
-- [服務組織控制 (SOC) 1、2、3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
-- [資訊安全性註冊 Assessor 程式 (IRAP) ](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
-- [支付卡行業 (PCI) 資料安全標準 (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
-- [健康保險流通與責任法案 (HIPAA) ](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [狀況資訊信任同盟 (HITRUST) 常見的安全性架構 (CSF) ](https://docs.microsoft.com/compliance/regulatory/offering-hitrust)
+- [ISO 27001 資訊安全性管理標準 (ISM) ](/compliance/regulatory/offering-ISO-27001)
+- [ISO 27701 隱私權資訊管理系統 (PIMS) ](/compliance/regulatory/offering-iso-27701)
+- [ISO 27017 資訊安全性控制慣例的程式碼](/compliance/regulatory/offering-ISO-27017)
+- [ISO 27018 保護雲端中個人資料的做法程式碼](/compliance/regulatory/offering-ISO-27018)
+- [ISO 9001 品質管理系統標準](/compliance/regulatory/offering-ISO-9001)
+- [ISO 20000-1 資訊技術服務管理](/compliance/regulatory/offering-ISO-20000-1-2011)
+- [ISO 22301 商務持續性管理標準](/compliance/regulatory/offering-ISO-22301)
+- [雲端安全性聯盟 (CSA) STAR 證明](/compliance/regulatory/offering-CSA-STAR-Attestation)
+- [雲端安全性聯盟 (CSA) STAR 認證](/compliance/regulatory/offering-CSA-Star-Certification)
+- [服務組織控制 (SOC) 1、2、3](/compliance/regulatory/offering-SOC)
+- [資訊安全性註冊 Assessor 程式 (IRAP) ](/compliance/regulatory/offering-ccsl-irap-australia)
+- [支付卡行業 (PCI) 資料安全標準 (DSS)](/compliance/regulatory/offering-PCI-DSS)
+- [健康保險流通與責任法案 (HIPAA) ](/compliance/regulatory/offering-hipaa-hitech)
+- [狀況資訊信任同盟 (HITRUST) 常見的安全性架構 (CSF) ](/compliance/regulatory/offering-hitrust)
 
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>審計員報告和合規性憑證
@@ -49,4 +49,4 @@ Microsoft 受管理的桌面已達到下列認證：
 
 ## <a name="shared-responsibility"></a>共用責任
 
-雲端服務的相容性是雲端服務提供者與客戶之間的共同責任。 如需詳細資訊，請參閱 [雲端中的共用責任](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility)。
+雲端服務的相容性是雲端服務提供者與客戶之間的共同責任。 如需詳細資訊，請參閱 [雲端中的共用責任](/azure/security/fundamentals/shared-responsibility)。

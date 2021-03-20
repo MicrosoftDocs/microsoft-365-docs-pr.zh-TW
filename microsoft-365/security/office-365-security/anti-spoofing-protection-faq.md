@@ -18,12 +18,12 @@ ms.collection:
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中，查看有關反欺騙保護的常見問題及解答。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2d307d201af8ad09a4faf7a865a29da8942bdf8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7e7163037029761a53a5461de592e46ab5ea0485
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288906"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917555"
 ---
 # <a name="anti-spoofing-protection-faq"></a>反詐騙保護常見問題集
 
@@ -66,7 +66,7 @@ Microsoft 本身會在將新的電子郵件驗證需求部署給客戶之前，�
 
 我們不建議停用反欺詐防護。 停用保護將允許在您的組織中傳遞更多網路釣魚和垃圾郵件。 並非所有網路釣魚皆為欺騙性，而且不會丟失所有的冒牌郵件。 不過，您的風險會更高。
 
-現在可以使用 [增強型連接器篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) ，當您的電子郵件透過另一個服務進行 EOP 之前，我們不再建議您關閉反欺騙保護。
+現在可以使用 [增強型連接器篩選](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) ，當您的電子郵件透過另一個服務進行 EOP 之前，我們不再建議您關閉反欺騙保護。
 
 ## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>反欺騙保護的意思是我會保護所有網路釣魚嗎？
 

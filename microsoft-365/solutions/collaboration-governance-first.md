@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 瞭解如何建立共同作業管理計畫
-ms.openlocfilehash: c27ac401d06808d1a4337e9ec7ec0700bfba19ea
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 89b8ffc1359d79661e2b7cc30f195ea792e7a161
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613293"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916367"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>建立共同作業管理計畫
 
@@ -40,11 +40,11 @@ Microsoft 365 控管應該會對管理內部部署環境的現有原則進行補
 
 考慮先進行控管是指開始將您的旅程遷移至雲端，以取得整體成功的最佳位置。 其中一些決策包括：
 
-- 是否支援外部共用和哪些案例？ [深入了解外部共用](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)。
+- 是否支援外部共用和哪些案例？ [深入了解外部共用](./collaborate-with-people-outside-your-organization.md)。
 
-- 誰可以以及如何布建群組、網站和團隊？ [瞭解如何控制誰具備建立群組的能力](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups)。
+- 誰可以以及如何布建群組、網站和團隊？ [瞭解如何控制誰具備建立群組的能力](./manage-creation-of-groups.md)。
 
-- 哪種類型的內容可以在每種環境中發佈–以及哪些功能需要啟用，以防止使用者在不適當的位置意外發佈資訊？ [深入瞭解 Microsoft 365 中的資訊保護](https://docs.microsoft.com/microsoft-365/compliance/protect-information)。
+- 哪種類型的內容可以在每種環境中發佈–以及哪些功能需要啟用，以防止使用者在不適當的位置意外發佈資訊？ [深入瞭解 Microsoft 365 中的資訊保護](../compliance/information-protection.md)。
 
 這些問題沒有完全答案，正確的答案是用於權衡組織風險和利益的答案。
 
@@ -80,9 +80,9 @@ Microsoft 365 的控管規劃是為了確保您在保護重要的資訊資產時
 
 根據傳統，管理小組已建立長檔，以概括每個控管決定。 不幸的是，這些長檔很少會讀，這表示依賴人員強制執行的控管需求很少起作用。 當您考慮如何交流主要的控管決定時，請嘗試避免建立以多個物件為目標的長檔。 請改為考慮下列選項：
 
-- **直接在您建立的解決方案中內嵌管理決策**。 如果您想要確保機密資訊受到 Microsoft 365 的保護，請執行敏感度標籤，以確保您的使用者不會意外公開其不應該提供的資訊。 封鎖您無法提供適當保護的應用程式。 [深入瞭解敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。
+- **直接在您建立的解決方案中內嵌管理決策**。 如果您想要確保機密資訊受到 Microsoft 365 的保護，請執行敏感度標籤，以確保您的使用者不會意外公開其不應該提供的資訊。 封鎖您無法提供適當保護的應用程式。 [深入瞭解敏感度標籤](../compliance/sensitivity-labels.md)。
 
-- **強化訓練**。 調整方案（如 [microsoft 365 學習路徑](https://docs.microsoft.com/office365/customlearning) ），以確保您的組織特有的預期會與 microsoft 所提供的訓練。
+- **強化訓練**。 調整方案（如 [microsoft 365 學習路徑](/office365/customlearning) ），以確保您的組織特有的預期會與 microsoft 所提供的訓練。
 
 - **以網站形式傳送，而不是檔**。 在 SharePoint 通訊網站中建立您自己的 Microsoft 365 採用中心，以確保您的內容作者和網站和小組擁有者不僅瞭解「如何」，也不只是「應如何」。 建立專門處理不同商務案例的主題特有頁面，以提供指導方針和最佳作法，以利用或啟用 SharePoint 和團隊和其他應用程式中的不同功能，以達成業務結果。
 
@@ -116,7 +116,7 @@ Microsoft 365 的控管規劃是為了確保您在保護重要的資訊資產時
 
 ### <a name="define-roles-and-responsibilities"></a>定義角色與責任
 
-除了您的控管小組之外，還有其他幾個重要的角色或小組，您也想要考慮 Microsoft 365 的成功之地位。 有些角色可能會組合或填滿相同的人員，其他的可能不適合所有的組織。 大多數的組織都有 Microsoft 365 的執行發起者，而且還有一些組織會同時有一個或多個 Microsoft 365 成為整個內部網路的籌畫指導委員會或小組。 [深入瞭解 Microsoft 365 中可用的綜合系統管理員角色和許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
+除了您的控管小組之外，還有其他幾個重要的角色或小組，您也想要考慮 Microsoft 365 的成功之地位。 有些角色可能會組合或填滿相同的人員，其他的可能不適合所有的組織。 大多數的組織都有 Microsoft 365 的執行發起者，而且還有一些組織會同時有一個或多個 Microsoft 365 成為整個內部網路的籌畫指導委員會或小組。 [深入瞭解 Microsoft 365 中可用的綜合系統管理員角色和許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
 ### <a name="revisit-as-business-and-technology-changes"></a>隨著商務和技術變更重新訪
 
@@ -136,10 +136,10 @@ Microsoft 365 的控管不是 "一次，完成"。 有一個計畫可以維持�
 
 [共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Microsoft Cloud 採用架構中用於 Azure 的管理](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
+[Microsoft Cloud 採用架構中用於 Azure 的管理](/azure/cloud-adoption-framework/govern)
 
-[SharePoint 控管概述](https://docs.microsoft.com/sharepoint/governance-overview)
+[SharePoint 控管概述](/sharepoint/governance-overview)
 
 [規劃群組服務的組織及生命週期管理](plan-organization-lifecycle-governance.md)
 
-[在 SharePoint 中使用 Microsoft 365 進行檔案共同作業](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
+[在 SharePoint 中使用 Microsoft 365 進行檔案共同作業](/sharepoint/deploy-file-collaboration)

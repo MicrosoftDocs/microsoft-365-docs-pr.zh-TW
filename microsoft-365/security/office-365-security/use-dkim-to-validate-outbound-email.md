@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55a7bf612d121364ed64c159a450b6cf035d3837
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7894375cf7dd7973a7c3dc0160dbaa084823e9d4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286426"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918639"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -88,7 +88,7 @@ SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽�
 ## <a name="manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>將您的 1024 位元金鑰手動升級至 2048 位元 DKIM 加密金鑰
 <a name="1024to2048DKIM"> </a>
 
-由於 DKIM 金鑰同時支援 1024 和 2048 位元，這些指示會告訴您如何在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 中將您的 1024 位元金鑰升級至 2048。 下列步驟適用於兩個使用案例，請選擇最符合您設定的案例。
+由於 DKIM 金鑰同時支援 1024 和 2048 位元，這些指示會告訴您如何在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 中將您的 1024 位元金鑰升級至 2048。 下列步驟適用於兩個使用案例，請選擇最符合您設定的案例。
 
 - 當您 **已設定 DKIM** 時，您可以執行下列命令來輪轉位元：
 
@@ -115,7 +115,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 
 如果您想要輪轉至第二個選取器，您的選項為 a) 讓 Microsoft 365 服務輪選取器，並在接下來 6 個月內升級到 2048 位元，或是 b) 在 4 天後並確認 2048 位元使用中時，使用上方所列的適當 Cmdlet，手動輪轉第二個選取器金鑰。
 
-如需詳細的語法和參數資訊，請參閱下列文章：[Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)、[New-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/new-dkimsigningconfig) 和 [Get-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/get-dkimsigningconfig)。
+如需詳細的語法和參數資訊，請參閱下列文章：[Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)、[New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig) 和 [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig)。
 
 ## <a name="steps-you-need-to-do-to-manually-set-up-dkim"></a>手動設定 DKIM 時需執行的步驟
 <a name="SetUpDKIMO365"> </a>
@@ -132,7 +132,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 對於要在 DNS 中新增 DKIM 簽章的每個網域，您必須發佈兩個 CNAME 記錄。
 
 > [!NOTE]
-> 如果您還沒有閱讀完整的文章，則可能錯過了這份可節省時間的 PowerShell 連線資訊：[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+> 如果您還沒有閱讀完整的文章，則可能錯過了這份可節省時間的 PowerShell 連線資訊：[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 在 Exchange Online PowerShell 中執行下列命令，以建立選取器記錄：
 
@@ -215,7 +215,7 @@ TTL:                3600
 >:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="「沒有儲存于這個網域的 DKIM 金鑰。」錯誤。":::
 > 如果您是第一次設定 DKIM，並看到螢幕顯示「沒有儲存于這個網域的 DKIM 金鑰。」錯誤 請完成下方的步驟 2 中的命令 (例如，將 *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) 以看到金鑰。
 
-1. [連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 執行下列命令：
 
@@ -266,7 +266,7 @@ TTL:                3600
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>使用 Windows PowerShell 停用 DKIM 簽署原則
 
-1. [連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 為您要停用 DKIM 簽署的每個網域執行下列命令。
 
@@ -359,4 +359,4 @@ Return-Path: <communication@bulkemailprovider.com>
 
 ## <a name="more-information"></a>其他資訊
 
-透過 PowerShell 輪換金鑰 [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)
+透過 PowerShell 輪換金鑰 [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)

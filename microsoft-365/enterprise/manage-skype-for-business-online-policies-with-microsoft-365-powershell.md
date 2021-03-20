@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 摘要：使用 PowerShell，使用原則來管理商務用 Skype Online 使用者帳戶屬性。
-ms.openlocfilehash: ca945bc05e76525b4b2df6fb0b982a8468d87810
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515049"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916699"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>使用 PowerShell 管理商務用 Skype Online 原則
 
@@ -34,7 +34,7 @@ ms.locfileid: "50515049"
   > [!Note]
   > 商務用 Skype Online 連接器目前是最新 Teams PowerShell 模組的一部分。 如果您使用的是最新的 Teams PowerShell 公開發行版本，則不需要安裝商務用 Skype Online 連接器。
 
-1. 安裝 [團隊 PowerShell 模組](https://docs.microsoft.com/microsoftteams/teams-powershell-install)。
+1. 安裝[Teams PowerShell 模組安裝](/microsoftteams/teams-powershell-install)。
     
 2. 開啟 Windows PowerShell 命令提示字元，然後執行下列命令： 
 
@@ -90,11 +90,11 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
   
 若要使用 PowerShell 管理商務用 Skype Online 原則，請參閱下列的 Cmdlet：
 
-- [用戶端原則](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
-- [會議原則](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
-- [行動原則](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
-- [線上語音信箱原則](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
-- [語音路由原則](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+- [用戶端原則](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [會議原則](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [行動原則](/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [線上語音信箱原則](/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [語音路由原則](/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
 
 
 > [!NOTE]
@@ -107,7 +107,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> 這會傳回所有可用的語音原則清單。 不過，請記住，並非所有原則都可以指派給所有使用者。 這是因為授權和地理位置的各種限制。  (所謂的「[使用位置](https://msdn.microsoft.com/library/azure/dn194136.aspx)」。) 如果您想知道可指派給特定使用者的外部存取原則及會議原則，請使用類似下列的命令： 
+> 這會傳回所有可用的語音原則清單。 不過，請記住，並非所有原則都可以指派給所有使用者。 這是因為授權和地理位置的各種限制。  (所謂的「[使用位置](/previous-versions/azure/dn194136(v=azure.100))」。) 如果您想知道可指派給特定使用者的外部存取原則及會議原則，請使用類似下列的命令： 
 
 ```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
@@ -131,4 +131,3 @@ Get-CsClientPolicy -Identity "Global"
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)
-

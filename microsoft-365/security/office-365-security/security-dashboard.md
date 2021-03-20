@@ -19,12 +19,12 @@ ms.custom:
 description: 使用新的安全性儀表板來查看 Office 365 威脅防護狀態，並查看並處理安全性警示。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 72743f1b052d39ac4762dffc0b3e3e694befa8bc
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ccd0950e9d1a896b42253989f50b9fc5186230d2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "50288320"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917365"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
@@ -33,7 +33,7 @@ ms.locfileid: "50288320"
 
 ## <a name="basic-functions-and-how-to-open-security-dashboard"></a>基本功能及如何開啟安全性儀表板
 
-[安全性 & 合規性中心](../../compliance/go-to-the-securitycompliance-center.md)可讓您的組織管理資料保護和符合性。 假設您有必要的許可權，安全性儀表板可讓您檢查威脅防護狀態，以及查看和處理安全性警示。
+[安全性 & 合規性中心](../../compliance/microsoft-365-compliance-center.md)可讓您的組織管理資料保護和符合性。 假設您有必要的許可權，安全性儀表板可讓您檢查威脅防護狀態，以及查看和處理安全性警示。
 
 觀賞影片以取得概要，然後閱讀本文以深入瞭解。
 
@@ -41,7 +41,7 @@ ms.locfileid: "50288320"
 
 根據您組織的訂閱內容，安全性儀表板包含數個小元件，例如威脅管理摘要、威脅防護狀態、全球每週威脅偵測、惡意程式碼等，如下列各節所述。
 
-若要查看安全性儀表板，請在 [安全性 & 合規性中心](../../compliance/go-to-the-securitycompliance-center.md)，移至 [ **威脅管理**] \> **儀表板**。
+若要查看安全性儀表板，請在 [安全性 & 合規性中心](../../compliance/microsoft-365-compliance-center.md)，移至 [ **威脅管理**] \> **儀表板**。
 
 > [!NOTE]
 > 您必須是全域系統管理員、安全性管理員或安全性讀者，才可查看安全性儀表板。 有些小元件需要其他許可權才能進行查看。 若要深入瞭解，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
@@ -96,7 +96,7 @@ ms.locfileid: "50288320"
 
 ![惡意程式碼趨勢及系列類型](../../media/malwarewidgetatpe5.png)
 
-## <a name="insights"></a>深入解析
+## <a name="insights"></a>深入資訊
 
 不只是深入瞭解應該檢查的 surface key 問題，也包括要考慮的建議和動作。
 

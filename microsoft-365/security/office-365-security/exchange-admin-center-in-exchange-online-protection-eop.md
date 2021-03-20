@@ -17,12 +17,12 @@ ms.collection:
 description: 深入瞭解獨立 Exchange Online Protection (EOP) 中的 web 管理介面。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ab834d14673370a39e148aefa568591ff4c50b8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286954"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916991"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>獨立版 EOP 中的 Exchange 系統管理中心
 
@@ -33,7 +33,7 @@ ms.locfileid: "50286954"
 
 Exchange 系統管理中心 (EAC) 是以 web 為基礎的管理主控台，供獨立 Exchange Online Protection (EOP) 。
 
-在尋找本主題的 Exchange Online 版本嗎？ 請參閱[Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
+在尋找本主題的 Exchange Online 版本嗎？ 請參閱[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)。
 
 ## <a name="open-the-eac-in-eop"></a>開啟 EOP 中的 EAC
 
@@ -76,7 +76,7 @@ Exchange 系統管理中心 (EAC) 是以 web 為基礎的管理主控台，供�
 
 - **郵件流程**：這是您管理郵件流程規則 (的所在位置，也稱為傳輸規則) 、公認的網域和連接器，以及您可以前往執行郵件追蹤的位置。
 
-- **混合** 式：這是您可以執行 [混合](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)式設定向導的所在位置，以及您可以在其中安裝 [Exchange Online PowerShell 模組](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)的位置。
+- **混合** 式：這是您可以執行 [混合](/Exchange/hybrid-configuration-wizard)式設定向導的所在位置，以及您可以在其中安裝 [Exchange Online PowerShell 模組](/powershell/exchange/mfa-connect-to-exchange-online-powershell)的位置。
 
 ### <a name="tabs"></a>索引標籤
 

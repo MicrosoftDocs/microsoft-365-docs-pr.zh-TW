@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 753ad703a7949b7901ddd76d0d8c966b170461ea
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 879e5dc96cf19c8070769b62f59cca0e409bf1df
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950315"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917755"
 ---
 # <a name="service-changes-and-communication"></a>服務變更與通訊
 
@@ -48,7 +48,7 @@ ms.locfileid: "47950315"
 
 Microsoft 受管理的桌面變更和通訊是由兩個 Microsoft 原則所制約的：
 - [新式生命週期原則](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
-- [Microsoft 365 變更通訊原則](https://docs.microsoft.com/office365/admin/manage/message-center?redirectSourcePath=%252fen-us%252farticle%252fMessage-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093&view=o365-worldwide)
+- [Microsoft 365 變更通訊原則](/office365/admin/manage/message-center?view=o365-worldwide)
 
 ## <a name="changes-you-make"></a>您所做的變更
 
@@ -70,5 +70,3 @@ Microsoft 受管理的桌面變更和通訊是由兩個 Microsoft 原則所制�
 - 從服務新增或移除使用者
 - 設定不會影響 Microsoft 受管理電腦的傳遞的系統
 - 應用程式版本更新（VPN 或 proxy 應用程式例外）
-
-

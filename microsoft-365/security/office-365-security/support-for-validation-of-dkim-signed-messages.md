@@ -16,12 +16,12 @@ ms.collection:
 description: 深入瞭解 Exchange Online Protection 和 Exchange Online 中的 DKIM 已簽署郵件的驗證
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9da41cc7918b36e1aa6a4a8cc48aea6cd2a865c6
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 111bf169d60e386dc48ef086bbe631b8760201a6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290258"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916523"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>支援 DKIM 簽署郵件的驗證
 
@@ -43,4 +43,4 @@ DKIM 會驗證郵件頭的 DKIM-Signature 標頭中顯示的數位簽署郵件�
 > [!NOTE]
 > 如需 Authentication-Results 標頭的詳細資訊，請參閱 RFC 7001 ([Message Header 欄位，表示郵件驗證狀態](https://www.rfc-editor.org/rfc/rfc7001.txt)。 Microsoft 的 DKIM 實施會與此 RFC 相符。
 
-系統管理員可以在 DKIM 驗證的結果上，建立 Exchange [郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也稱為傳輸規則) 。 這些郵件流程規則可讓系統管理員視需要篩選或路由傳送郵件。
+系統管理員可以在 DKIM 驗證的結果上，建立 Exchange [郵件流程規則](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也稱為傳輸規則) 。 這些郵件流程規則可讓系統管理員視需要篩選或路由傳送郵件。

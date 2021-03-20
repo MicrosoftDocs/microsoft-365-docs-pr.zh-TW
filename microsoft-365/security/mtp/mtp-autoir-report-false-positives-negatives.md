@@ -1,7 +1,7 @@
 ---
-title: 在 Microsoft 365 Defender 中處理 AIR 中的誤誤或漏報
-description: MICROSOFT 365 Defender 中的 AIR 偵測到未接或錯誤？ 瞭解如何將誤誤或漏報提交至 Microsoft 進行分析。
-keywords: 自動化、調查、警示、觸發、動作、補救、誤正、漏報
+title: 在 Microsoft 365 Defender 中處理空氣中的誤報或漏報
+description: Microsoft 365 Defender 中的 AIR 是否已錯過或錯誤地偵測到什麼？ 瞭解如何將誤報或錯誤否定提交給 Microsoft 進行分析。
+keywords: 自動化，調查，警示，修正，誤報，false 負數
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,81 +11,67 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 09/16/2020
+ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: dbef240e28258d1ac4000c05538d0ce073a9d910
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ccfb2c8d9395d3f64b20980b156ed51545967101
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930351"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917067"
 ---
-# <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>在自動化調查與回應功能中處理誤對/負數
+# <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>在自動化調查和回應功能中處理誤報/負片
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 適用於：
 - Microsoft 365 Defender
 
-Microsoft [](mtp-autoir.md) 365 Defender 中的自動化調查與回應功能是否遺漏或誤偵測到某些專案？ 您可以採取一些步驟來修正此問題。 您可以：
+任何威脅防護解決方案都會偶爾發生誤報/負片錯誤。 如果 Microsoft 365 Defender 中的 [自動調查和回應功能](mtp-autoir.md) 未接或錯誤地偵測到某項，則您的安全作業小組可以採取下列步驟：
 
-- [向 Microsoft 報告誤正/負數](#report-a-false-positivenegative-to-microsoft-for-analysis);
+- [向 Microsoft 報告誤報/負數](#report-a-false-positivenegative-to-microsoft-for-analysis)
+- 視需要[調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring) () ;和 
+- [復原對裝置採取的修正動作](#undo-a-remediation-action-that-was-taken-on-a-device)。 
 
-- [如有必要，請 (](#adjust-an-alert-to-prevent-false-positives-from-recurring) 您的) ;和 
+下列各節說明如何執行這些工作。
 
-- [復原在裝置上採取的補救動作](#undo-a-remediation-action-that-was-taken-on-a-device)。 
+## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>將誤報報告給 Microsoft 進行分析
 
-使用這篇文章做為指南。 
-
-## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>向 Microsoft 報告誤正/負數以進行分析
-
-|未接或偵測到錯誤的專案 |服務  |處理方式  |
+|偵測到未接或誤接專案 |服務  |處理方式  |
 |---------|---------|---------|
-|- 電子郵件訊息 <br/>- 電子郵件附件 <br/>- 電子郵件訊息中的 URL<br/>- Office 檔案中的 URL      |[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[將可疑的垃圾郵件、網路釣魚、URL 和檔案提交到 Microsoft 掃描](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
-|裝置上的檔案或應用程式    |[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection)         |[提交檔案至 Microsoft 進行惡意攻擊分析](https://www.microsoft.com/wdsi/filesubmission)         |
+|-電子郵件 <br/>-電子郵件附件 <br/>-電子郵件訊息中的 URL<br/>-Office 檔案中的 URL      |[適用於 Office 365 的 Microsoft Defender](../office-365-security/office-365-atp.md)        |[將可疑的垃圾郵件、網路釣魚、URLs 及檔案提交給 Microsoft 進行掃描](../office-365-security/admin-submission.md)         |
+|裝置上的檔或應用程式    |[適用於端點的 Microsoft Defender](/windows/security/threat-protection)         |[將檔案提交給 Microsoft 以進行惡意程式碼分析](https://www.microsoft.com/wdsi/filesubmission)         |
 
-## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>調整警示以防止誤將重複出現
+## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>調整提醒以避免定期誤報
 
 |案例 |服務 |處理方式 |
 |--------|--------|--------|
-|- 合法使用會觸發警示 <br/>- 通知不正確    |[Microsoft 雲端 App 安全性](https://docs.microsoft.com/cloud-app-security)<br/> 或 <br/>[Azure 進位威脅偵測](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[在雲端 App 安全性入口網站中管理警示](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
-|即使裝置是安全的，檔案、IP 位址、URL 或網域還是會被視為惡意攻擊|[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) |[建立具有「允許」動作的自訂標記](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+|-由合法使用所觸發的警示 <br/>-警示不准確    |[Microsoft Cloud App Security](/cloud-app-security)<br/> 或 <br/>[Azure 高級威脅偵測](/azure/security/fundamentals/threat-detection)         |[在雲端應用程式安全性入口網站中管理提醒](/cloud-app-security/managing-alerts)         |
+|檔案、IP 位址、URL 或網域在裝置上視為惡意程式碼，即使它是安全的|[適用於端點的 Microsoft Defender](/windows/security/threat-protection) |[使用 "Allow" 動作建立自訂指示器](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
+## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>復原裝置上所執行的修復動作
 
-## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>復原在裝置上採取的補救動作
-
-如果在 Windows 10 裝置 (等裝置上採取補救動作) 且該專案實際上並非威脅，您的安全性作業小組可以在控制中心復原補救 [動作](mtp-action-center.md)。
-
-> [!IMPORTANT]
-> 嘗試執行 [下列工作之前](mtp-action-center.md#required-permissions-for-action-center-tasks) ，請確認您擁有必要許可權。
+如果對實體 (採取修正動作，例如裝置或電子郵件訊息) ，且受影響的實體實際上不是威脅，您的安全性作業小組可以復原「 [行動中心](mtp-action-center.md)」中的修復動作。
 
 1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
-
 2. 在功能窗格中，選擇 [控制中心]。 
+3. 在 [ **記錄** ] 索引標籤上，選取您要復原的動作。 其快顯視窗隨即開啟。
+4. 在快顯視窗中，選取 [ **復原**]。
 
-3. 在歷程 **記錄上** ，選取要復原的動作。 這會開啟飛出視窗。<br/>
-    > [!TIP]
-    > 使用篩選來縮小結果清單。 
-
-4. 在選定專案的飛出飛出中，選取開啟 **調查頁面**。
-
-5. 在調查詳細資料檢視中，選取動作 **按鈕** 。
-
-6. 選取狀態為已完成 **的專案**，在決策欄中尋找連結 **，例如****已核准。** 這會開啟一個飛出視窗，包含有關動作的更多詳細資料。
-
-7. 若要復原動作，請選取 Delete **修復**。
+> [!TIP]
+> 請參閱 [復原已完成動作](mtp-autoir-actions.md#undo-completed-actions)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [檢視自動調查的詳細資料和結果](mtp-autoir-results.md)
-- [使用 Microsoft 365 Defender 中的進位搜尋主動搜尋威脅](advanced-hunting-overview.md)
+- [使用 Microsoft 365 Defender 中的高級搜尋主動搜尋威脅](advanced-hunting-overview.md)
+- [在 Microsoft Defender for Endpoint 中處理誤報/負片](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

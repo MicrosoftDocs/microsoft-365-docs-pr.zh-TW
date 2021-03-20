@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: 深入了解如何取消您的商務用 Microsoft 365 試用版或付費訂閱。
 ms.date: ''
-ms.openlocfilehash: 45e953fd415bb2d508554b47fb3226dcae74cb6b
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 7a2de2a261baeb4e64e12742810635f352217933
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741398"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916873"
 ---
 # <a name="cancel-your-subscription"></a>取消您的訂閱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ ms.locfileid: "50741398"
 
 ## <a name="before-you-begin"></a>事前準備
 
-您必須是全域或計費系統管理員，才能執行本文所述的步驟。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+您必須是全域或計費管理員，才能執行本文所述的工作。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="steps-to-cancel-your-subscription"></a>取消您的訂閱的步驟
 

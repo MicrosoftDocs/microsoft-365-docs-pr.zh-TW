@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 瞭解如何在 Microsoft 365 群組、小組、SharePoint 及 Yammer 中管理相關的功能。
-ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b31e9bf1cd46f94343a489497fb5eb00e138ce60
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838464"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916439"
 ---
 # <a name="what-is-collaboration-governance"></a>什麼是共同作業控管？
 
@@ -59,7 +59,7 @@ Microsoft 365 群組包含使用者可用於通訊和共同作業的連結資源
 |[收件匣](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|群組成員之間的電子郵件交談。 此收件匣具有電子郵件地址，可以設定為接受來自群組以外的人員，甚至是組織外的郵件，與傳統的通訊群組清單非常類似。|
 |[OneNote 筆記本](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|收集創意、調查和資訊|
 |[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|在群組成員之間指派及管理專案工作|
-|[Power BI Workspace](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|含儀表板和報告的資料共同作業空間|
+|[Power BI Workspace](/power-bi/collaborate-share/service-new-workspaces)|含儀表板和報告的資料共同作業空間|
 |[專案和藍圖](https://support.microsoft.com/project)|以 Web 為基礎的專案管理工具|
 |[SharePoint 小組網站](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|中央存放庫，提供與群組相關的資訊、連結和內容|
 |[Stream](https://support.microsoft.com/microsoft-stream)|影片傳送服務|
@@ -114,9 +114,10 @@ Microsoft 365 支援三種主要通訊方法：
 
 - **直接在您建立的解決方案中內嵌管理決策** -許多管理決定可以透過開啟或關閉 Microsoft 365 中的功能來實施。
 
+
 - **請先將分階段的方式** 共同作業功能提供給一小小使用者群組。 從他們那裡取得意見反應、觀賞服務台票證，並更新任何必要的設定或處理常式，再繼續進行較大的群組。
 
-- **使用** [microsoft 365 學習路徑](https://docs.microsoft.com/office365/customlearning) 等訓練-調整方案，以確保您的組織特有的預期會與 microsoft 所提供的訓練。
+- **使用** [microsoft 365 學習路徑](/office365/customlearning) 等訓練-調整方案，以確保您的組織特有的預期會與 microsoft 所提供的訓練。
 
 - **有策略可用於通訊組織中的控管原則和指導方針** -在 SharePoint 通迅網站中建立 Microsoft 365 採用中心，以交流原則與程式。
 
@@ -175,7 +176,7 @@ Microsoft 學習的這些訓練模組可協助您瞭解 Microsoft 365 中的管�
 |![資訊保護訓練圖示](../media/information-protection-governance.svg)|目前所產生的資料量會比以往更快，員工們想要在所有工作中完成工作，而且法規形勢會不斷變更。 Microsoft 的資訊保護和控管解決方案可協助組織在保持資料保護和其人員生產力之間達到適當的平衡。 這個學習路徑可協助您準備 Microsoft 365 認證：安全性系統管理員關聯和 Microsoft 365 認證：企業管理專家 認證。<br><br>5小時13分-7 模組|
 
 > [!div class="nextstepaction"]
-> [開始 >](https://docs.microsoft.com/learn/modules/m365-compliance-information-governance/introduction/)
+> [開始 >](/learn/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -184,16 +185,16 @@ Microsoft 學習的這些訓練模組可協助您瞭解 Microsoft 365 中的管�
 |![小組訓練圖示](../media/protect-enterprise-information-microsoft-365.svg)|保護您組織資訊的方式比以往更具挑戰性。 使用 Microsoft 365 保護企業資訊學習路徑將討論如何防止您的敏感資訊意外地過度分享或誤用、如何探索和分類資料、如何使用敏感度標籤保護資料，以及如何監視和分析您的敏感資訊以避免資料遺失。 這種教學途徑可協助您準備 Microsoft 365 認證：安全性管理員關聯和 Microsoft 365 認證：企業系統管理專家認證。<br><br>1 hr 教學路徑-5 模組|
 
 > [!div class="nextstepaction"]
-> [開始 >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+> [開始 >](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>安全性與合規性
 
 |培訓：|示範 Microsoft 365 安全性與合規性功能的基本知識|
 |:---|:---|
-|![安全性與合規性訓練圖示](../media/microsoft-365-security-and-compliance-capabilities.svg)|深入瞭解 Microsoft 365 的安全性和合規性解決方案領域，以及可協助企業保護企業安全及符合法規需求的功能。 如果您不熟悉基本的雲端計算概念，建議您採取雲端 [概念-雲端計算的原則](https://docs.microsoft.com/learn/modules/principles-cloud-computing/index)。<br><br>3小時11分-學習路徑-8 模組|
+|![安全性與合規性訓練圖示](../media/microsoft-365-security-and-compliance-capabilities.svg)|深入瞭解 Microsoft 365 的安全性和合規性解決方案領域，以及可協助企業保護企業安全及符合法規需求的功能。 如果您不熟悉基本的雲端計算概念，建議您採取雲端 [概念-雲端計算的原則](/learn/modules/principles-cloud-computing/index)。<br><br>3小時11分-學習路徑-8 模組|
 
 > [!div class="nextstepaction"]
-> [開始 >](https://docs.microsoft.com/learn/modules/what-is-m365/1-introduction/)
+> [開始 >](/learn/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>插圖
 
@@ -248,6 +249,6 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft 365 安全性文件](https://docs.microsoft.com/microsoft-365/security)
+[Microsoft 365 安全性文件](../security/index.yml)
 
-[Microsoft 365 合規性文件](https://docs.microsoft.com/microsoft-365/compliance)
+[Microsoft 365 合規性文件](../compliance/index.yml)

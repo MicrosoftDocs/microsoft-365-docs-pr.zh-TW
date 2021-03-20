@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 信箱變為非使用中之後，請變更指派給非使用中信箱的保留或 Office 365 保留原則的持續時間。
-ms.openlocfilehash: ec8a4cac7d2ee8e40bd791bd531556d1151c1ad1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 49d133c64763cee12cb26e27d372a16ba4ad7e94
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421632"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918199"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>變更非作用中信箱的保留持續時間
 
@@ -40,9 +40,9 @@ ms.locfileid: "50421632"
     
 - 若要連線至 Exchange Online PowerShell 或安全性 & 規範中心 PowerShell，請參閱下列其中一個主題：
     
-  - [連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+  - [連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
-  - [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+  - [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
     
 - 與 eDiscovery 案例相關聯的保留是無限保留，這表示沒有可以變更的保留期間。 專案會永遠保留，或直到移除保留，並刪除非作用中的信箱為止。
     

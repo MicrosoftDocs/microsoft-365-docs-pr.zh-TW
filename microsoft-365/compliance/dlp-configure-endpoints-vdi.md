@@ -1,5 +1,5 @@
 ---
-title: 板載非持久性虛擬桌面基礎結構 (VDI) 裝置
+title: 上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,17 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: 在虛擬桌面基礎結構 (VDI) 裝置上部署設定套件，使其架至 Microsoft 365 端點資料遺失防護服務。
-ms.openlocfilehash: ce5ad0ba6af3e18a6f6c53e1860fc47a77c38770
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 2a62de6c238c1f681bde8a9bf25ecd596a10d390
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769400"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917949"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>板載非持久性虛擬桌面基礎結構 (VDI) 裝置
+# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
 
-適用於： 
-- [Microsoft 365 端點資料遺失防護 (DLP) ](/microsoft-365/compliance/endpoint-dlp-learn-about)
+適用於：
+- [Microsoft 365 端點資料遺失防護 (DLP) ](./endpoint-dlp-learn-about.md)
 
 - 虛擬桌面基礎結構 (VDI) 裝置
 
@@ -54,11 +54,11 @@ VDI 裝置可以出現在 Microsoft 365 規範中心，您可以：
 >[!WARNING]
 > 對於資源設定低的環境，VDI 引導程式可能會降低 Microsoft 365 端點資料遺失防護上架的速度。 
 
-1.  從服務上架嚮導中，開啟 [VDI 設定套件 .zip 檔案] ( *DeviceCompliancePackage.zip* 所下載的) 。
+1.  從服務上架嚮導中，開啟 [VDI 設定套件 .zip 檔案] (*DeviceCompliancePackage.zip* 所下載的) 。
 
-2.  在功能窗格中，選取 [ **設定** 裝置上架] 上  >  **Device onboarding**  >  **架** 。
+2.  在功能窗格中，選取 [**設定** 裝置上架] 上  >    >  **架**。
 
-3. 在 [ **部署方法** ] 欄位中，選取 **非持續端點的 VDI 上架腳本** 。
+3. 在 [ **部署方法** ] 欄位中，選取 **非持續端點的 VDI 上架腳本**。
 
 5. 按一下 [ **下載套件** ] 並儲存 .zip 檔案。
 
@@ -71,7 +71,7 @@ VDI 裝置可以出現在 Microsoft 365 規範中心，您可以：
     > [!NOTE]
     > 如果您看不到 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 資料夾，它可能是隱藏的。 您必須選擇 [從檔案瀏覽器 **顯示隱藏的檔案和資料夾** ] 選項。
 
-9. 開啟 [本機群組原則編輯器] 視窗，並流覽至 [ **電腦** 設定] [  >  **Windows 設定**  >  **腳本**  >  **啟動** ]。
+9. 開啟 [本機群組原則編輯器] 視窗，並流覽至 [**電腦** 設定] [  >  **Windows 設定**  >  **腳本**  >  **啟動**]。
 
    > [!NOTE]
    > 網域群組原則也可用於上架非持續性的 VDI 裝置。
@@ -82,7 +82,7 @@ VDI 裝置可以出現在 Microsoft 365 規範中心，您可以：
    
    選取 [ **PowerShell 腳本** ] 索引標籤，然後按一下 [ **新增** (Windows Explorer 會直接開啟您在先前複製上架腳本的路徑中) 。 流覽至上架 PowerShell script `Onboard-NonPersistentMachine.ps1` 。
    
-   **針對每個裝置的多個專案** ：
+   **針對每個裝置的多個專案**：
    
    選取 [ **腳本** ] 索引標籤，然後按一下 [ **新增** ] (Windows Explorer 會直接在您先前複製上架腳本的路徑中開啟) 。 流覽至上架 bash 腳本 `DeviceComplianceOnboardingScript.cmd` 。
 
@@ -96,8 +96,8 @@ VDI 裝置可以出現在 Microsoft 365 規範中心，您可以：
 
    1. 使用另一位使用者登入裝置。
       
-   1. **針對每個裝置的單一專案** ：請檢查 Microsoft Defender Security Center 中只有一個專案。<br>
-      **針對每個裝置的多個專案** ：檢查 Microsoft Defender Security Center 中的多個專案。
+   1. **針對每個裝置的單一專案**：請檢查 Microsoft Defender Security Center 中只有一個專案。<br>
+      **針對每個裝置的多個專案**：檢查 Microsoft Defender Security Center 中的多個專案。
 
 6. 按一下功能窗格上的 [ **裝置] 清單** 。
 
@@ -114,9 +114,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 如需 DISM 命令和離線服務的詳細資訊，請參閱下列文章：
-- [使用 DISM 修改 Windows 映像](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [DISM 影像管理 Command-Line 選項](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [縮小離線 Windows 映像中元件存放區的大小](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [使用 DISM 修改 Windows 映像](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [DISM 影像管理 Command-Line 選項](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [縮小離線 Windows 映像中元件存放區的大小](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 如果離線服務不是非持續性的 VDI 環境可行的選項，應採取下列步驟，以確保一致性及感應器的健全狀況：
 
@@ -145,6 +145,6 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ## <a name="related-topics"></a>相關主題
 - [使用群組原則的板載 Windows 10 裝置](dlp-configure-endpoints-gp.md)
 - [使用 Microsoft Endpoint Configuration Manager 的板載 Windows 10 裝置](dlp-configure-endpoints-sccm.md)
-- [使用行動裝置管理工具的板載 Windows 10 裝置](dlp-configure-endpoints-mdm.md)
-- [使用本機腳本的板載 Windows 10 裝置](dlp-configure-endpoints-script.md)
-- [疑難排解 Microsoft Defender 高級威脅防護上架問題](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [使用行動裝置管理工具上線 Windows 10 電腦](dlp-configure-endpoints-mdm.md)
+- [使用本機指令碼上線 Windows 10 裝置](dlp-configure-endpoints-script.md)
+- [疑難排解 Microsoft Defender 高級威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2c7c7d75fad58cab0cd6d19a16a97667ea3641a1
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 1245268b6128aa022a972fd0282009573558ec47
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104485"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917701"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>可設定的設定參考-Microsoft 受管理的電腦
 
@@ -53,20 +53,20 @@ ms.locfileid: "48104485"
 2. 尋找 [Microsoft 受管理的桌面] 區段，選取 [ **設定**]。
 3. 在 [ **設定** 工作區] 中，選取 [ **Browser start pages**]。 
 4. 選取 [ **新增開始頁面**]。
-5. 在 [ **新增瀏覽器開始] 頁面**上，輸入您要使用之網站的 URL，然後選取 [ **新增開始頁面**]。 
+5. 在 [ **新增瀏覽器開始] 頁面** 上，輸入您要使用之網站的 URL，然後選取 [ **新增開始頁面**]。 
 6. 重複步驟1-5 以取得其他瀏覽器開始頁面。 
 7. 選取 [ **階段部署** ] 以儲存變更，並將變更部署至測試群組。
 
 ## <a name="enterprise-mode-site-list-location"></a>企業模式網站清單位置
 
-如果您有與 Microsoft Edge 相容性問題的特定網站和應用程式，您可以使用企業模式網站清單，讓網站自動使用 Internet Explorer 11 開啟。 此外，如果您知道內部網路網站不會與 Microsoft Edge 正確搭配使用，您可以設定所有內部網路網站，以自動開啟使用 Internet Explorer 11。 使用企業模式意味著您可以繼續使用 Microsoft Edge 做為您的預設瀏覽器，同時也可以確保您的應用程式繼續在 Internet Explorer 11 上運作。 如需企業模式網站清單的詳細資訊，請參閱 [Enterprise mode And Enterprise Mode Site lists](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode)。 
+如果您有與 Microsoft Edge 相容性問題的特定網站和應用程式，您可以使用企業模式網站清單，讓網站自動使用 Internet Explorer 11 開啟。 此外，如果您知道內部網路網站不會與 Microsoft Edge 正確搭配使用，您可以設定所有內部網路網站，以自動開啟使用 Internet Explorer 11。 使用企業模式意味著您可以繼續使用 Microsoft Edge 做為您的預設瀏覽器，同時也可以確保您的應用程式繼續在 Internet Explorer 11 上運作。 如需企業模式網站清單的詳細資訊，請參閱 [Enterprise mode And Enterprise Mode Site lists](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode)。 
 
 您可以指定 HTTPs://位置或存放您的企業模式網站清單所在內部共用的位置。 
 
 ### <a name="requirements"></a>需求
 
 企業模式網站清單檔案必須符合下列需求：
-- 檔案格式-符合[檔需求](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)的 XML 檔案
+- 檔案格式-符合[檔需求](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)的 XML 檔案
 - 檔案位置-主機檔案在內部 HTTPs 位置上。 
 - 不允許-不允許在內部檔案共用（如 *//sharename*）上裝載
 
@@ -139,8 +139,8 @@ Proxy 伺服器及 proxy 網站例外必須符合這些需求：
 1. 登入 [Microsoft 端點管理員](https://endpoint.microsoft.com/) ，並流覽至 [ **裝置** ] 功能表
 2. 尋找 [Microsoft 受管理的桌面] 區段，選取 [ **設定**]。
 3. 在 [ **設定** 工作區] 中，選取 **Proxy**。 
-4. 輸入 proxy 伺服器的 **位址** 與 **埠號碼** ，然後選取 [ **新增 proxy 例外**狀況]。 
-5. 輸入有效的 HTTP 網站 URL，然後選取 [ **新增 proxy 例外**狀況]。 
+4. 輸入 proxy 伺服器的 **位址** 與 **埠號碼** ，然後選取 [ **新增 proxy 例外** 狀況]。 
+5. 輸入有效的 HTTP 網站 URL，然後選取 [ **新增 proxy 例外** 狀況]。 
 6. 針對您要新增的每個信任網站，重複步驟1-5。 
 7. 選取 [ **階段部署** ] 以儲存變更，並將變更部署至測試群組。
 

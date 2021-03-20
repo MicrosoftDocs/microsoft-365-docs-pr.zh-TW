@@ -18,12 +18,12 @@ description: 瞭解如何定義安全附件原則，以利用電子郵件中的�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 012c591d620fdf5abe5aad697404bea8cea95d1a
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: d48e373dc95aaa65d0f436f99208d926477aacd6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290546"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918711"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中設定安全附件原則
 
@@ -62,18 +62,18 @@ ms.locfileid: "50290546"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **安全附件** ] 頁面，請使用 <https://protection.office.com/safeattachmentv2> 。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派許可權，才能執行本文中的程式：
   - 若要建立、修改和刪除安全附件原則，您必須是 Security & 合規性中心內的「 **組織管理** 」或「 **安全性管理員** 」角色群組成員， **以及** Exchange Online 中的「 **組織管理** 」角色群組的成員。
   - 針對安全附件原則的唯讀存取，您必須是「安全性 & 規範中心」中 **全域讀取** 者或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md) 和 [Exchange Online 中的許可權](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md) 和 [Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
 
   **附註**：
 
   - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 如需安全附件原則的建議設定，請參閱 [安全附件設定](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)。
 
@@ -254,7 +254,7 @@ New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [
 New-SafeAttachmentPolicy -Name "Contoso All" -Redirect $true -RedirectAddress sec-ops@contoso.com
 ```
 
-如需詳細的語法及參數資訊，請參閱 [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy)。
+如需詳細的語法及參數資訊，請參閱 [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy)。
 
 #### <a name="step-2-use-powershell-to-create-a-safe-attachment-rule"></a>步驟2：使用 PowerShell 建立安全附件規則
 
@@ -275,7 +275,7 @@ New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <
 New-SafeAttachmentRule -Name "Contoso All" -SafeAttachmentPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
-如需詳細的語法及參數資訊，請參閱 [New-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentrule)。
+如需詳細的語法及參數資訊，請參閱 [New-SafeAttachmentRule](/powershell/module/exchange/new-safeattachmentrule)。
 
 ### <a name="use-powershell-to-view-safe-attachment-policies"></a>使用 PowerShell 來查看安全附件原則
 
@@ -297,7 +297,7 @@ Get-SafeAttachmentPolicy
 Get-SafeAttachmentPolicy -Identity "Contoso Executives" | Format-List
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentpolicy)。
+如需詳細的語法及參數資訊，請參閱 [Get-SafeAttachmentPolicy](/powershell/module/exchange/get-safeattachmentpolicy)。
 
 ### <a name="use-powershell-to-view-safe-attachment-rules"></a>使用 PowerShell 來查看安全附件規則
 
@@ -329,7 +329,7 @@ Get-SafeAttachmentRule -State Enabled
 Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentrule)。
+如需詳細的語法及參數資訊，請參閱 [Get-SafeAttachmentRule](/powershell/module/exchange/get-safeattachmentrule)。
 
 ### <a name="use-powershell-to-modify-safe-attachment-policies"></a>使用 PowerShell 修改安全附件原則
 
@@ -343,7 +343,7 @@ Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
 Set-SafeAttachmentPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentpolicy)。
+如需詳細的語法及參數資訊，請參閱 [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safeattachmentpolicy)。
 
 ### <a name="use-powershell-to-modify-safe-attachment-rules"></a>使用 PowerShell 修改安全附件規則
 
@@ -357,7 +357,7 @@ Set-SafeAttachmentPolicy -Identity "<PolicyName>" <Settings>
 Set-SafeAttachmentRule -Identity "<RuleName>" <Settings>
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule)。
+如需詳細的語法及參數資訊，請參閱 [Set-SafeAttachmentRule](/powershell/module/exchange/set-safeattachmentrule)。
 
 ### <a name="use-powershell-to-enable-or-disable-safe-attachment-rules"></a>使用 PowerShell 來啟用或停用安全附件規則
 
@@ -381,7 +381,7 @@ Disable-SafeAttachmentRule -Identity "Marketing Department"
 Enable-SafeAttachmentRule -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Enable-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/enable-safeattachmentrule) 和 [Disable-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/disable-safeattachmentrule)。
+如需詳細的語法及參數資訊，請參閱 [Enable-SafeAttachmentRule](/powershell/module/exchange/enable-safeattachmentrule) 和 [Disable-SafeAttachmentRule](/powershell/module/exchange/disable-safeattachmentrule)。
 
 ### <a name="use-powershell-to-set-the-priority-of-safe-attachment-rules"></a>使用 PowerShell 設定安全附件規則的優先順序
 
@@ -401,7 +401,7 @@ Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
 
 **附注**：若要在建立新規則時設定其優先順序，請改為在 **New-SafeAttachmentRule** Cmdlet 上使用 _priority_ 參數。
 
-如需詳細的語法及參數資訊，請參閱 [Set-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule)。
+如需詳細的語法及參數資訊，請參閱 [Set-SafeAttachmentRule](/powershell/module/exchange/set-safeattachmentrule)。
 
 ### <a name="use-powershell-to-remove-safe-attachment-policies"></a>使用 PowerShell 移除安全附件原則
 
@@ -419,7 +419,7 @@ Remove-SafeAttachmentPolicy -Identity "<PolicyName>"
 Remove-SafeAttachmentPolicy -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safeattachmentpolicy)。
+如需詳細的語法及參數資訊，請參閱 [Remove-SafeAttachmentPolicy](/powershell/module/exchange/remove-safeattachmentpolicy)。
 
 ### <a name="use-powershell-to-remove-safe-attachment-rules"></a>使用 PowerShell 移除安全附件規則
 
@@ -437,7 +437,7 @@ Remove-SafeAttachmentRule -Identity "<PolicyName>"
 Remove-SafeAttachmentRule -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/remove-safeattachmentrule)。
+如需詳細的語法及參數資訊，請參閱 [Remove-SafeAttachmentRule](/powershell/module/exchange/remove-safeattachmentrule)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 

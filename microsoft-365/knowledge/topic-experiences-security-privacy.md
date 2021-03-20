@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何規劃 Microsoft Viva 主題安全性和隱私權
-ms.openlocfilehash: be5be01bce117a80bd95ee268c193889eccea67f
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 9ac7ea085be115ef06244422713099c01ec50a36
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107789"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917341"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva 主題安全性和隱私權
 
@@ -60,7 +60,7 @@ ms.locfileid: "50107789"
 
 ## <a name="best-practices"></a>最佳做法
 
-主題根據使用者對內容的現有許可權，向使用者顯示資訊。 Microsoft 365 提供各種方式，以確保將敏感內容限制于適當的使用者。 除了標準小組或網站許可權之外，您還可以使用 [敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) 或 [資料遺失防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) 來限制存取內容和 [存取權](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) ，以定期查看使用者對機密資訊的存取權。
+主題根據使用者對內容的現有許可權，向使用者顯示資訊。 Microsoft 365 提供各種方式，以確保將敏感內容限制于適當的使用者。 除了標準小組或網站許可權之外，您還可以使用 [敏感度標籤](../compliance/sensitivity-labels.md) 或 [資料遺失防護](../compliance/data-loss-prevention-policies.md) 來限制存取內容和 [存取權](/azure/active-directory/governance/access-reviews-overview) ，以定期查看使用者對機密資訊的存取權。
 
 建議您使用這些工具，以確保您的內容許可權已在組織內適當地設定。 然後，主題經驗可以為您的使用者提供有用且適當的資訊。
 

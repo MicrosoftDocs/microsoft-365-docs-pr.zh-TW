@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中設定連線篩選，以允許或封鎖電子郵件伺服器的電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bdc8033996c41238bb1defe831eb8e8c7650bb44
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 43f6c1b9f3867670810f2c4e2ada13544d39380f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406087"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917055"
 ---
 # <a name="configure-connection-filtering"></a>設定連線篩選
 
@@ -53,18 +53,18 @@ ms.locfileid: "50406087"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定] 頁面，請使用 <https://protection.office.com/antispam>。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須先在 **Exchange Online** 中指派許可權，才能執行本文中的程式：
+- 您必須已在 **Exchange Online** 中獲派權限，才能執行此文章中的程序：
   - 若要修改預設連線篩選原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要對預設連線篩選原則進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取** 器角色群組的成員。
 
-  如需詳細資訊，請參閱 [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱 [Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo)。
 
   **附註**：
 
-  - 將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 中其他功能的必要許可權 _和_ 許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 若要尋找電子郵件伺服器的來源 IP 位址 (您要允許或封鎖的寄件者) ，您可以檢查郵件頭中的 [連接 IP (**CIP**) 標頭欄位。 若要在不同的電子郵件客戶程式中查看郵件頭，請參閱在 [Outlook 中查看網際網路郵件頭](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
@@ -144,7 +144,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList 192.168.1.10,192
 Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2.10","192.169.3.0/24","192.168.4.1-192.168.4.5";Remove="192.168.1.10"}
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedconnectionfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱 [Set-HostedConnectionFilterPolicy](/powershell/module/exchange/set-hostedconnectionfilterpolicy)。
 
 ## <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
@@ -174,7 +174,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 - 規則動作：**修改郵件屬性** \> **設定垃圾郵件信賴等級 (SCL)** \> **略過垃圾郵件篩選**。
 
-您可以審核規則、測試規則、在特定時間期間啟動規則，以及進行其他選擇。 施行規則之前，建議先測試規則一段時間。 如需詳細資訊，請參閱 [在 Exchange Online 中管理郵件流程規則](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
+您可以審核規則、測試規則、在特定時間期間啟動規則，以及進行其他選擇。 施行規則之前，建議先測試規則一段時間。 如需詳細資訊，請參閱 [在 Exchange Online 中管理郵件流程規則](/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
 
 ### <a name="skip-spam-filtering-on-selective-email-domains-from-the-same-source"></a>略過來自相同來源之選擇性電子郵件網域的垃圾郵件篩選
 

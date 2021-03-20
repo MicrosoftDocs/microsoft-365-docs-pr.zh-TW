@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 瞭解如何將非使用中信箱的內容還原 (或合併) Office 365 中的現有信箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d13c034b83fb1e467a77966416b5395d96c339c
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: bc9039d21f76affce7f58f1f83597dd9e5eb4ecf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655838"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917297"
 ---
 # <a name="restore-an-inactive-mailbox"></a>還原非作用中的信箱
 
@@ -42,7 +42,7 @@ ms.locfileid: "48655838"
 
 ## <a name="requirements-to-restore-an-inactive-mailbox"></a>還原非使用中信箱的需求
 
-- 您必須使用 Exchange Online PowerShell 還原非使用中的信箱。 您無法使用 Exchange 系統管理中心 (EAC) 。 如需逐步指示，請參閱 [Connect To Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+- 您必須使用 Exchange Online PowerShell 還原非使用中的信箱。 您無法使用 Exchange 系統管理中心 (EAC) 。 如需逐步指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 - 在 Exchange Online PowerShell 中執行下列命令，以取得組織中非使用中信箱的身分識別資訊。
 
@@ -56,7 +56,7 @@ ms.locfileid: "48655838"
 
 ## <a name="restore-inactive-mailboxes"></a>還原非使用中的信箱
 
-使用 **New-MailboxRestoreRequest** Cmdlet 搭配  _SourceMailbox_ 及  _TargetMailbox_ 參數，將非使用中信箱的內容還原到現有信箱。 如需使用此 Cmdlet 的詳細資訊，請參閱 [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/new-mailboxrestorerequest)。
+使用 **New-MailboxRestoreRequest** Cmdlet 搭配  _SourceMailbox_ 及  _TargetMailbox_ 參數，將非使用中信箱的內容還原到現有信箱。 如需使用此 Cmdlet 的詳細資訊，請參閱 [New-MailboxRestoreRequest](/powershell/module/exchange/new-mailboxrestorerequest)。
 
 1. 建立包含非使用中信箱之屬性的變數。
 
@@ -100,7 +100,7 @@ ms.locfileid: "48655838"
    New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -SourceIsArchive -TargetMailbox newemployee@contoso.com -TargetIsArchive -TargetRootFolder "Inactive Mailbox Archive" -AllowLegacyDNMismatch
    ```
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 - **復原和還原非使用中信箱的主要差異為何？** 當您復原非使用中的信箱時，信箱基本上會轉換為新的信箱、非使用中信箱的內容和資料夾結構會保留，而且信箱會連結至新的使用者帳戶。 復原之後，非使用中的信箱不再存在，對新信箱中的內容所做的任何變更，都會影響原始在非使用中信箱中的內容。 相反地，當您還原非使用中的信箱時，內容只會複製到另一個信箱。 非使用中的信箱會保留並保持非作用中的信箱。 對目標信箱中的內容所做的任何變更，都不會影響保留在非使用中信箱的原始內容。 使用 [內容搜尋工具](content-search.md)仍可搜尋非使用中的信箱，其內容可以還原至另一個信箱，也可以在日後復原或刪除。
 
@@ -112,7 +112,7 @@ ms.locfileid: "48655838"
 
 - **使用訴訟暫止或 Microsoft 365 保留原則，保留非使用中的信箱內容。** 如果您想要在還原非使用中的信箱時保留其狀態，您可以將目標信箱設定為 [訴訟暫](create-a-litigation-hold.md) 止，或套用 [Microsoft 365 保留原則](retention.md) ，再還原非使用中的信箱。 這會在還原至目標信箱後，避免永久刪除非作用中信箱中的任何專案。
 
-- **在還原非使用中的信箱之前，請先在目標信箱上啟用保留功能。** 由於非使用中信箱的信箱專案可能是舊的，因此您可以考慮在還原非使用中的信箱之前，先在目標信箱上啟用保留功能。 當您將信箱設為保留狀態時，將不會處理指派給它的保留原則，除非已移除保留狀態，或保留期間到期。 這可讓目標信箱的擁有者管理非使用中信箱的舊郵件。 否則，保留原則可能會刪除舊專案 (或將專案移至封存信箱（如果已啟用，則會根據為目標信箱設定的保留設定）已到期) 。 如需詳細資訊，請參閱在 [Exchange Online 中將信箱設為保留狀態](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
+- **在還原非使用中的信箱之前，請先在目標信箱上啟用保留功能。** 由於非使用中信箱的信箱專案可能是舊的，因此您可以考慮在還原非使用中的信箱之前，先在目標信箱上啟用保留功能。 當您將信箱設為保留狀態時，將不會處理指派給它的保留原則，除非已移除保留狀態，或保留期間到期。 這可讓目標信箱的擁有者管理非使用中信箱的舊郵件。 否則，保留原則可能會刪除舊專案 (或將專案移至封存信箱（如果已啟用，則會根據為目標信箱設定的保留設定）已到期) 。 如需詳細資訊，請參閱在 [Exchange Online 中將信箱設為保留狀態](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
 
 - **AllowLegacyDNMismatch 參數會執行什麼動作？** 在上述範例中，若要還原非使用中的信箱， **AllowLegacyDNMismatch** 參數會用於允許將非使用中的信箱還原至不同的目標信箱。 在一般還原案例中，目標是還原來源與目標信箱相同信箱的內容。 所以根據預設， **New-MailboxRestoreRequest** 指令程式會檢查，以確保來源和目標信箱上 **LegacyExchangeDN** 屬性的值相同。 這有助於防止您不小心將來源信箱還原至錯誤的目標信箱。 如果您嘗試在未使用 **AllowLegacyDNMismatch** 參數的情況下還原非使用中的信箱，當來源和目標信箱的 **LegacyExchangeDN** 屬性值不同時，此命令可能會失敗。
 

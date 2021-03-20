@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何識別可放在 Microsoft 365 的 Exchange Online 信箱上的不同保留類型。
-ms.openlocfilehash: a5bea8cd279bb980ba2f8a57950c8a66857ba502
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0fdfbd4503a4ddffd2ce2dd97c6af42684aea293
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423624"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917533"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -34,7 +34,7 @@ Microsoft 365 提供數種方式，讓您的組織可以防止信箱內容遭到
 
 - **[eDiscovery 保留](create-ediscovery-holds.md)：** 與安全性與合規性中心中的核心 eDiscovery 案例相關聯的保留。 eDiscovery 保留可以套用到使用者信箱，以及 Microsoft 365 群組和 Microsoft 小組對應的信箱。
 
-- **[保留 In-Place](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)：** 在 Exchange Online 中使用 Exchange 系統管理中心的「In-Place eDiscovery & 保留」工具，將套用至使用者信箱的保留。 
+- **[保留 In-Place](/Exchange/security-and-compliance/create-or-remove-in-place-holds)：** 在 Exchange Online 中使用 Exchange 系統管理中心的「In-Place eDiscovery & 保留」工具，將套用至使用者信箱的保留。 
 
    > [!NOTE]
    > 已停用 In-Place 保留，您也無法再建立 In-Place 保留或將其套用至信箱。 不過，In-Place 保留可能仍會套用到您組織中的信箱，這就是本文所包含的原因。 如需詳細資訊，請參閱 [舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md#in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center)。
@@ -59,7 +59,7 @@ Microsoft 365 提供數種方式，讓您的組織可以防止信箱內容遭到
 
 - **Get-OrganizationConfig：** 使用此 Cmdlet 取得整個組織保留原則的 Guid。
 
-若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -129,7 +129,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 在安全性 & 規範中心 PowerShell 中執行下列命令，以找出套用至信箱的 eDiscovery 暫止狀態。 針對您在步驟1中識別的 eDiscovery 保留，使用 GUID (不包括 UniH 前置詞) 。 
 
-若要連線至安全性 & 合規性中心 PowerShell，請參閱  [connect To security & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+若要連線至安全性 & 合規性中心 PowerShell，請參閱  [connect To security & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 第一個命令會建立包含保留相關資訊的變數。 在其他命令中使用此變數。 第二個命令會顯示與該保留相關聯的 eDiscovery 案例名稱。 第三個命令會顯示保留的名稱，以及保留所套用的信箱清單。
 
@@ -227,7 +227,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 > [!TIP]
 > 在上一個命令中指定非使用中信箱的最佳方式是使用其辨別名稱或 Exchange GUID 值。 使用其中一個值可協助避免意外指定錯誤的信箱。 
 
-如需使用這些參數管理延遲保留的詳細資訊，請參閱 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)。
+如需使用這些參數管理延遲保留的詳細資訊，請參閱 [Set-Mailbox](/powershell/module/exchange/set-mailbox)。
 
 在 [延遲保留] 中管理信箱時，請牢記下列事項：
 
@@ -239,7 +239,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 
 在您識別套用至信箱的保留後，您可以執行工作，例如變更保留期間、暫時或永久移除保留，或排除 Microsoft 365 保留原則中非使用中的信箱。 如需執行與保留相關之工作的詳細資訊，請參閱下列其中一個主題：
 
-- 在安全性 & 規範中心」中執行[Set-RetentionCompliancePolicy Identity \<Policy Name> -AddExchangeLocationException \<user mailbox> ](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy)命令，PowerShell 從整個組織的 Microsoft 365 保留原則中排除信箱。 這個命令僅可用於 *ExchangeLocation* 屬性值等於的保留原則 `All` 。
+- 在安全性 & 規範中心」中執行[Set-RetentionCompliancePolicy Identity \<Policy Name> -AddExchangeLocationException \<user mailbox> ](/powershell/module/exchange/set-retentioncompliancepolicy)命令，PowerShell 從整個組織的 Microsoft 365 保留原則中排除信箱。 這個命令僅可用於 *ExchangeLocation* 屬性值等於的保留原則 `All` 。
 
 - [變更非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)
 

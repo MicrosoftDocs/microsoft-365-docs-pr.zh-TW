@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將瞭解如何使用 Microsoft 365 中的客戶金鑰來處理服務加密。
-ms.openlocfilehash: efb2ba9c2532973a096c509b57639544fc2ddbe5
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 9ed4b523c77cf1fa80d23e8fbe5c93e938f222a2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058486"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916885"
 ---
 # <a name="service-encryption-with-customer-key"></a>客戶金鑰服務加密
 
@@ -56,7 +56,7 @@ Microsoft 365 提供使用 BitLocker 和分散式金鑰管理員 (DKM) 所啟用
 
 **Exchange Online 和商務用 Skype** 每個租使用者最多可以建立 50 DEPs。 您可以將 DEPs 關聯到 Azure Key Vault 中的客戶機碼，然後將 DEPs 指派給個別信箱。 當您為信箱指派 DEP 時：
 
-- 信箱已標記為要移動信箱。 根據此處所述的 Microsoft 365 中的優先順序，在 [microsoft 365 服務中移動要求](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service)。
+- 信箱已標記為要移動信箱。 根據此處所述的 Microsoft 365 中的優先順序，在 [microsoft 365 服務中移動要求](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service)。
 
 - 移動信箱時，會進行加密。 允許信箱的72小時使用新的 DEP 進行加密。 如果信箱在您指派 DEP 的時間之後，等待72小時之後未加密，請與 Microsoft 聯繫。
 

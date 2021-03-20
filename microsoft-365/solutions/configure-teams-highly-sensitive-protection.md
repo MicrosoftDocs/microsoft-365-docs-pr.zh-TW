@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何為小組部署高敏感度資料保護。
-ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: fdc3c1ab2c780289b7405623779b8af89da8ba17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509263"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916283"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>為小組設定高敏感度資料保護
 
@@ -44,8 +44,8 @@ ms.locfileid: "50509263"
 
 如需如何安全地與來賓共用的詳細資訊，請參閱下列資源：
 
-- [在與組織外的人員共用檔案時，限制資訊意外暴露](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [建立安全的來賓共用環境](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [在與組織外的人員共用檔案時，限制資訊意外暴露](./share-limit-accidental-exposure.md)
+- [建立安全的來賓共用環境](./create-secure-guest-sharing-environment.md)
 
 為了允許或封鎖來賓共用，我們會使用敏感度標籤 (適用於小組) 和網站層級共用控制 (適用於相關聯的 SharePoint 網站) 的組合，後面會有這兩種機制的討論。
 
@@ -53,7 +53,7 @@ ms.locfileid: "50509263"
 
 為了獲得高敏感度層級的保護，我們會使用敏感度標籤來分類小組。 此標籤也可用來分類及加密此小組或其他小組中的個別檔案，或是其他檔案位置 (例如 SharePoint 或 OneDrive) 中的個別檔案。 
 
-首先，您必須為 Teams 啟用敏感度標籤。 如需詳細資訊，請參閱[使用敏感度標籤來保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+首先，您必須為 Teams 啟用敏感度標籤。 如需詳細資訊，請參閱[使用敏感度標籤來保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 如果組織已部署敏感度標籤，請考慮這個標籤與整體標籤策略的配合程度。 您可以視需要變更名稱或設定，以符合組織的需求。
 
@@ -76,7 +76,7 @@ ms.locfileid: "50509263"
 14. 在 [定義群組及網站的保護設定 **]** 頁面上，選取 [隱私權和外部使用者存取權設定 **]** 和 [裝置存取權和外部共用設定 **]**，然後按 [下一步 **]**。
 15. 在 [定義隱私權和外部使用者存取權設定 **]** 頁面上，於 [隱私權 **]** 底下選取 [私人 **]** 選項。
 16. 如果您想要允許來賓存取，請在 [外部使用者存取權 **]** 底下，選取 [讓 Microsoft 365 群組擁有者將貴組織外部人員新增到群組做為來賓 **]** 群組。
-17. 按 **[下一步]**。
+17. 按 [下一步 **]**。
 18. 在 [定義外部共用和裝置存取權設定 **]** 頁面上，選取 [從已套用標籤的 SharePoint 網站控制外部共用 **]**。
 19. 如果您要允許來賓存取，在 [內容可以與誰共用 **]** 底下，選擇 [新的及現有的來賓 **]**，或如果您不要允許來賓存取，則選擇 [僅限組織中的人員 **]**。
 20. 在 [從未受控裝置存取 **]** 下，選擇 [封鎖存取 **]**。 (如果您要允許來賓，但來賓沒有受管理的裝置，您可能會想要選擇 [允許受限的僅限 Web 存取]。)
@@ -84,7 +84,7 @@ ms.locfileid: "50509263"
 22. 在 [為資料庫資料行自動加上標籤 **]** 頁面上，按 [下一步 **]**。
 23. 按一下 [建立標籤 **]**，然後按一下 [完成 **]**。
 
-在建立好標籤後，您必須將標籤發佈給將使用該標籤的使用者。 為了獲得敏感度保護，我們會將標籤提供給所有使用者使用。 您可以在 **[資訊保護]** 頁面的 **[標籤原則]** 索引標籤上發佈 Microsoft 365 合規性中心的標籤。 如果您有適用於所有使用者的現有原則，請將這個標籤新增至該原則。 如果您需要建立新原則，請參閱[建立標籤原則來發佈敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)。
+在建立好標籤後，您必須將標籤發佈給將使用該標籤的使用者。 為了獲得敏感度保護，我們會將標籤提供給所有使用者使用。 您可以在 **[資訊保護]** 頁面的 **[標籤原則]** 索引標籤上發佈 Microsoft 365 合規性中心的標籤。 如果您有適用於所有使用者的現有原則，請將這個標籤新增至該原則。 如果您需要建立新原則，請參閱[建立標籤原則來發佈敏感度標籤](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)。
 
 ## <a name="create-a-team"></a>建立小組
 
@@ -108,7 +108,7 @@ ms.locfileid: "50509263"
 2. 在 **[設定]** 索引標籤上展開 **[成員權限]**。
 3. 清除 **[允許成員建立私人頻道]** 核取方塊。
 
-您也可以使用[小組原則](https://docs.microsoft.com/MicrosoftTeams/teams-policies)來控制可以建立私人頻道的人員。
+您也可以使用[小組原則](/MicrosoftTeams/teams-policies)來控制可以建立私人頻道的人員。
 
 ## <a name="sharepoint-settings"></a>SharePoint 設定
 
@@ -135,7 +135,7 @@ ms.locfileid: "50509263"
 6. 在 **[預設的共用連結類型] 底下，清除 [與組織層級設定相同]** 核取方塊，然後選取 **[擁有現有存取權的人員]**。
 7. 按一下 **[儲存]**。
 
-如果您想要將此編寫為團隊建立程序的一部分，則可以使用 [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) 並搭配下列參數：
+如果您想要將此編寫為團隊建立程序的一部分，則可以使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 並搭配下列參數：
 
 - `-SharingCapability Disabled`，以關閉來賓共用 (預設為開啟)
 - `-DefaultSharingLinkType Internal`，以將預設共用連結變更為 *[特定人員]*
@@ -159,5 +159,4 @@ ms.locfileid: "50509263"
 
 ## <a name="see-also"></a>另請參閱
 
-[建立及設定敏感度標籤及其原則](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)
-
+[建立及設定敏感度標籤及其原則](../compliance/create-sensitivity-labels.md)

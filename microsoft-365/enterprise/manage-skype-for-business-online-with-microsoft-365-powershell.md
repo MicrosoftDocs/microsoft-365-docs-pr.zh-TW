@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 使用適用於 Microsoft 365 的 PowerShell 來管理商務用 Skype Online 原則、每一個使用者原則和會議的設定。
-ms.openlocfilehash: 1992edfb6d1c141c7ed4db22064960873b768865
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 4477dadf0ea38a81ac0ae282da3f74fc12f3406f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514953"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916677"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>使用 PowerShell 管理商務用 Skype Online
 
@@ -32,7 +32,7 @@ ms.locfileid: "50514953"
   > [!Note]
    > 商務用 Skype Online 連接器目前是最新 Teams PowerShell 模組的一部分。 如果您使用的是最新的 Teams PowerShell 公開發行版本，則不需要安裝商務用 Skype Online 連接器。
    
-安裝[Teams PowerShell 模組安裝](https://docs.microsoft.com/microsoftteams/teams-powershell-install)。
+安裝[Teams PowerShell 模組安裝](/microsoftteams/teams-powershell-install)。
 
 
 ## <a name="connect-using-admin-credentials"></a>使用系統管理員認證連線
@@ -75,4 +75,4 @@ ms.locfileid: "50514953"
   
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)
 
-[商務用 Skype PowerShell Cmdlet 參考](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)(英文)
+[商務用 Skype PowerShell Cmdlet 參考](/powershell/module/skype/?view=skype-ps)(英文)

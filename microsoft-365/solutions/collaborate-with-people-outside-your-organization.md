@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何設定 Microsoft 365 應用程式，如小組、OneDrive 和 SharePoint，以與組織外部的人員進行共同作業。
-ms.openlocfilehash: 7b8e5e30d8222d055fc5f64472c4083db614d4bd
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 359e72c12c43ca1ea984f93d87ab4868e6d1eb66
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261510"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916391"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>與組織外部的人員共同作業
 
@@ -62,6 +62,6 @@ Microsoft 365 中的外部共用功能可讓您組織中的人員與合作夥伴
 
 ## <a name="related-topics"></a>相關主題
 
-[在 Microsoft 365 中簡介檔共同作業](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
+[在 Microsoft 365 中簡介檔共同作業](/sharepoint/intro-to-file-collaboration)
 
-[使用 Microsoft 365 規劃 SharePoint 中的檔共同作業](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
+[使用 Microsoft 365 規劃 SharePoint 中的檔共同作業](/sharepoint/deploy-file-collaboration)

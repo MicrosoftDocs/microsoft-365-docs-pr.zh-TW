@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 資料外洩防護內部部署掃描器
-ms.openlocfilehash: e0d7bc9eeae7d701c14aaaeeed7a01cab33829ea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417345"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917829"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>開始使用資料外洩防護內部部署掃描器 (預覽)
 
@@ -41,7 +41,7 @@ ms.locfileid: "50417345"
 - Microsoft 365 E5 資訊保護和控管 
 
 
-如需完整授權的詳情，請參閱：[Microsoft 365 安全性與合規性的授權指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+如需完整授權的詳情，請參閱：[Microsoft 365 安全性與合規性的授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ### <a name="permissions"></a>權限
 
@@ -56,13 +56,13 @@ ms.locfileid: "50417345"
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>DLP 內部部署掃描器必要條件
 
 - Azure 資訊保護 (AIP) 掃描器會執行 DLP 原則配對和原則強制執行。 掃描器會安裝為 AIP 用戶端的一部分，因此您的安裝必須符合 AIP、AIP 用戶端和 AIP 統一標籤掃描器的所有必要條件。
-- 部署 AIP 用戶端和掃描器。 如需深入了解 [安裝 AIP 統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) 和 []，請參閱 [設定和安裝 Azure 資訊保護統一標籤掃描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)。
+- 部署 AIP 用戶端和掃描器。 如需深入了解 [安裝 AIP 統一標籤用戶端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) 和 []，請參閱 [設定和安裝 Azure 資訊保護統一標籤掃描器](/azure/information-protection/deploy-aip-scanner-configure-install)。
 - 即使您的所有偵測規則都只以敏感資訊類型為基礎，租用戶中仍至少必須發佈一個標籤和原則。
 
 ## <a name="deploy-the-dlp-on-premises-scanner"></a>部署 DLP 內部部署掃描器
 
-1. 請遵循 [ 安裝 AIP 統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) 中的步驟。 
-2. 請遵循 [設定和安裝 Azure 資訊保護統一標籤掃描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install) 中的步驟以完成掃描器安裝。
+1. 請遵循 [ 安裝 AIP 統一標籤用戶端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) 中的步驟。 
+2. 請遵循 [設定和安裝 Azure 資訊保護統一標籤掃描器](/azure/information-protection/deploy-aip-scanner-configure-install) 中的步驟以完成掃描器安裝。
     1. 網路探索工作設定是選擇性的步驟。 您可以略過它，並定義內容掃描工作要掃描的特定存放庫。
     2. 您必須建立內容掃描工作，並指定裝載著需由 DLP 引擎評估之檔案的存放庫。
     3. 在建立的內容掃描工作中啟用 DLP 規則，並將 **強制** 選項設定 為 **關閉**，但若您要直接進入 DLP 強制階段則例外。
@@ -115,7 +115,7 @@ ms.locfileid: "50417345"
 
 2. 請參閱 [開始使用活動總管](data-classification-activity-explorer.md) 中的程序，以存取及篩選您內部部署掃描器位置的所有資料。
 
-3. 開啟 [合規性中心裡的稽核記錄](https://security.microsoft.com/auditlogsearch)。 在公開預覽期間，DLP 規則相符項目可在稽核記錄 UI 中取得，或可透過 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 存取。 
+3. 開啟 [合規性中心裡的稽核記錄](https://security.microsoft.com/auditlogsearch)。 在公開預覽期間，DLP 規則相符項目可在稽核記錄 UI 中取得，或可透過 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 存取。 
 
 
 ## <a name="next-steps"></a>後續步驟

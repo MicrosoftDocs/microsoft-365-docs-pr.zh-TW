@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 端點管理員來管理受管理的裝置、電腦及其他端點。
-ms.openlocfilehash: bca3e8e79264a2218dd1036e50be1c9ab29d2b8a
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: db06c7d65da1939ffbb04db64ea901e211b074f6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749596"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918335"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步驟 4： 為您的裝置、電腦和其他端點部署端點管理
 
 若雇用遠端工作者，您必須支援日益增加的個人裝置。 端點管理是原則型的安全性方法，要求裝置必須符合特定準則，才能獲得存取資源的授權。 [Microsoft 端點管理員] 提供現代化管理功能，保護您的雲端資料及內部檔案的安全。 
 
-[Microsoft 端點管理員](https://docs.microsoft.com/mem/endpoint-manager-overview)提供可管理行動裝置、電腦、虛擬機器、嵌入式裝置及伺服器的服務和工具，並結合您可能已經知道且正在使用的服務。
+[Microsoft 端點管理員](/mem/endpoint-manager-overview)提供可管理行動裝置、電腦、虛擬機器、嵌入式裝置及伺服器的服務和工具，並結合您可能已經知道且正在使用的服務。
 
 ![Microsoft 365 的端點管理元件](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
@@ -40,13 +40,13 @@ Microsoft Intune 是一種雲端式服務，專門用於 Microsoft 365 隨附的
 
 - **MAM：** 遠端工作者可能不希望您在其個人裝置 (也稱為攜帶您自己的裝置 (BYOD)) 上擁有完全控制權。 您可以提供遠端工作者選項，但是仍然保護貴組織。 例如，如果遠端工作者想要完全存取組織資源，可以註冊其裝置。 或者，如果這些使用者只想要存取電子郵件或 Microsoft Teams，請使用需要多重要素驗證 (MFA) 的應用程式保護原則來使用這些應用程式。
 
-如需詳細資訊，請參閱 [Microsoft Intune 概觀](https://docs.microsoft.com/intune/fundamentals/what-is-intune)。
+如需詳細資訊，請參閱 [Microsoft Intune 概觀](/intune/fundamentals/what-is-intune)。
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
 Configuration Manager 是一種內部部署管理解決方案，可管理網路或網際網路上的桌上型電腦、伺服器和膝上型電腦。 使用 Configuration Manager 部署應用程式、軟體更新及作業系統。 您也可以即時監視合規性、查詢和操作用戶端，以及執行更多動作。 您可以在雲端啟用此功能，讓它與 Intune、Azure AD、適用於端點的 Microsoft Defender 和其他雲端服務整合。 
 
-如需詳細資訊，請參閱 [Configuration Manager 概觀](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)。
+如需詳細資訊，請參閱 [Configuration Manager 概觀](/mem/configmgr/core/understand/introduction)。
 
 ## <a name="co-management"></a>共同管理
 
@@ -54,7 +54,7 @@ Configuration Manager 是一種內部部署管理解決方案，可管理網路�
 
 共同管理使用 Intune 型雲端功能，包括條件式存取權和強制執行裝置合規性。 您可以將部分工作保留在內部部署中，同時雲端中執行其他工作。
 
-如需詳細資訊，請參閱[共同管理概觀](https://docs.microsoft.com/mem/configmgr/comanage/overview)。
+如需詳細資訊，請參閱[共同管理概觀](/mem/configmgr/comanage/overview)。
 
 ## <a name="desktop-analytics"></a>電腦分析
 
@@ -68,7 +68,7 @@ Configuration Manager 是一種內部部署管理解決方案，可管理網路�
 - 建立試驗組，代表最少裝置集的整個應用程式和驅動程式資源。
 - 將 Windows 10 部署到試驗和生產管理的裝置。
 
-如需詳細資訊，請參閱[桌面分析概觀](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)。
+如需詳細資訊，請參閱[桌面分析概觀](/mem/configmgr/desktop-analytics/overview)。
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
@@ -79,13 +79,13 @@ Windows Autopilot 能讓 IT 部門透過簡單易行的流程，幾乎不需要�
 - 從使用者的角度來看，只需要幾個簡單的操作就能將裝置準備就緒。 
 - 從 IT 專業人員的角度，使用者唯一需要進行的互動就是連線網路和驗證認證。
 
-如需詳細資訊，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)。
+如需詳細資訊，請參閱 [Windows Autopilot 概觀](/windows/deployment/windows-autopilot/windows-autopilot)。
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>適用於端點管理的系統管理技術資源
 
 - [Microsoft 365 的裝置管理藍圖](../enterprise/device-management-roadmap-microsoft-365.md)
-- [如何註冊不同的裝置類型以管理行動裝置](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
-- [如何向使用者說明 Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
+- [如何註冊不同的裝置類型以管理行動裝置](/mem/intune/enrollment/device-enrollment)
+- [如何向使用者說明 Microsoft Intune](/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-4"></a>步驟 4 的結果
 

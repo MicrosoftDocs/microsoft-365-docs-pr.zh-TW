@@ -15,12 +15,12 @@ ms.custom:
 description: 在本文中，您將瞭解如何從內部部署電子郵件清潔裝置或雲端式保護服務切換至 Exchange Online Protection (EOP) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cb946fbb60393657aab21195bc4dd723458f16e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a09b64d45d79c81ed95981c20bf75dcb43366d07
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290186"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916475"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP
 
@@ -57,7 +57,7 @@ ms.locfileid: "50290186"
 
 您可能因為業務需求或法規考量，只想要將部分信箱移至雲端。當您部署混合案例時，可根據業務需求將信箱移至雲端。遷移至具有 EOP 保護的混合案例，比移至全雲端案例更加複雜，但 Microsoft 提供了完整的混合支援和豐富的資源，讓您能更加輕鬆地移至混合案例。
 
-如果考慮採用混合式部署，[Exchange Server 混合式部署](https://docs.microsoft.com/exchange/exchange-hybrid)是最佳起點。 此外，還有幾個不同且重要的方式，可讓您在混合案例中路由郵件。 [在 Exchange 混合式部署傳輸路由](https://docs.microsoft.com/exchange/transport-routing)說明每種類型，以便您根據業務需求來選擇最佳路由案例。
+如果考慮採用混合式部署，[Exchange Server 混合式部署](/exchange/exchange-hybrid)是最佳起點。 此外，還有幾個不同且重要的方式，可讓您在混合案例中路由郵件。 [在 Exchange 混合式部署傳輸路由](/exchange/transport-routing)說明每種類型，以便您根據業務需求來選擇最佳路由案例。
 
 ## <a name="migration-planning"></a>移轉規劃
 
@@ -67,7 +67,7 @@ ms.locfileid: "50290186"
 
 - **IP 允許清單和 IP 封鎖清單**：如果您有每一使用者的允許清單和封鎖清單，請在設定過程中留出一些時間將這些清單複製到 EOP。 如需 IP 允許清單和 IP 封鎖清單的詳細資訊，請參閱 [Configure the connection filter policy](configure-the-connection-filter-policy.md)。
 
-- **安全通訊**：如果合作夥伴要求郵件必須加密，建議您在 Exchange 系統管理中心設定此案例。 如要設定此案例，請查閱[設定連接器以保護與合作夥伴間的郵件流程安全](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)。
+- **安全通訊**：如果合作夥伴要求郵件必須加密，建議您在 Exchange 系統管理中心設定此案例。 如要設定此案例，請查閱[設定連接器以保護與合作夥伴間的郵件流程安全](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)。
 
 > [!TIP]
 > 當您從內部部署裝置切換至 EOP 時，有可能將裝置或伺服器保留在原地，以執行業務規則檢查。 例如，若裝置對輸出郵件執行自訂篩選，而且希望繼續這麼做，您可以設定 EOP，在郵件路由傳送至網際網路之前，直接傳送至此裝置進行額外篩選。

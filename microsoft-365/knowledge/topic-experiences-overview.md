@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概觀。
-ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453966"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917377"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概觀 
 
@@ -66,7 +66,7 @@ Viva Topics 使用 Microsoft AI 技術來識別 Microsoft 365 環境中的 **主
 
 您的知識系統管理員可以選擇對租用戶中所有 SharePoint 網站進行主題編目，或只選取特定網站。
 
-請參閱[主題探索與內容篩選](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+請參閱[主題探索與內容篩選](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>角色
 
@@ -108,7 +108,7 @@ Microsoft 365 系統管理中心的系統管理控制項允許您管理知識網
 - 控制哪些使用者可以建立及編輯主題。
 - 控制哪些使用者可以檢視主題。
 
-如需系統管理控制項的詳細資訊，請參閱[指派使用者權限](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)、[管理主題可見度](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)，以及[管理主題探索](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery)。
+如需系統管理控制項的詳細資訊，請參閱[指派使用者權限](./plan-topic-experiences.md#user-permissions)、[管理主題可見度](./topic-experiences-knowledge-rules.md)，以及[管理主題探索](./topic-experiences-discovery.md)。
 
 ## <a name="topic-curation--feedback"></a>主題內容篩選與意見反應
 
@@ -120,8 +120,7 @@ Microsoft 365 系統管理中心的系統管理控制項允許您管理知識網
 
 此外，具有適當權限的使用者可以標記與主題相關的項目 (例如 Yammer 交談)，並將它們新增到特定主題。 
 
-請參閱[主題探索與內容篩選](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+請參閱[主題探索與內容篩選](./topic-experiences-discovery-curation.md)
 
 
 ## <a name="see-also"></a>請參閱
-

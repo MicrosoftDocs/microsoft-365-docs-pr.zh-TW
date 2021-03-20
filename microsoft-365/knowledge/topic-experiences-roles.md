@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 深入瞭解 Viva 主題中的使用者角色。
-ms.openlocfilehash: d5b57e768a1de8bc0447492067371630b2d045f6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453935"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917353"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Microsoft Viva Topics 角色 
 
@@ -34,7 +34,7 @@ ms.locfileid: "50453935"
 主題檢視器是您組織中可以查看其 SharePoint 現代網站中醒目提示的主題的使用者、Microsoft 搜尋透過 SharePoint 和 Office.com 及主題中心。 他們可以在主題頁面上查看主題的詳細資料。 
 
 若要在主題檢視器中看到主題的突出顯示及其主題頁面，使用者必須：
--   由其 Microsoft 365 系統管理員[指派 Viva 主題授權](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)。
+-   由其 Microsoft 365 系統管理員[指派 Viva 主題授權](./set-up-topic-experiences.md#assign-licenses)。
 -   允許具有主題的可見度。 這項工作是由 Microsoft 365 系統管理中心中的 [Viva 主題設定] 頁面上的知識系統管理員所完成。
 
 
@@ -48,8 +48,8 @@ ms.locfileid: "50453935"
 
 若要建立及編輯主題，使用者必須：
 
--   由其 Microsoft 365 系統管理員[指派 Viva 主題授權](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)。
--   [被指派許可權以建立及編輯主題](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)。 這項工作是由 Microsoft 365 系統管理中心中的 [Viva 主題設定] 頁面上的知識系統管理員所完成。
+-   由其 Microsoft 365 系統管理員[指派 Viva 主題授權](./set-up-topic-experiences.md#assign-licenses)。
+-   [被指派許可權以建立及編輯主題](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center)。 這項工作是由 Microsoft 365 系統管理中心中的 [Viva 主題設定] 頁面上的知識系統管理員所完成。
 
 ## <a name="knowledge-managers"></a>知識管理員
 
@@ -63,8 +63,8 @@ ms.locfileid: "50453935"
 此外，知識管理員也可以編輯現有的主題或建立新的主題。
 
 若要管理主題，使用者必須：
--   由其 Microsoft 365 系統管理員[指派 Viva 主題授權](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses)。
--   [被指派管理主題](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)) 的許可權。 這項工作是由 Microsoft 365 系統管理中心中的 [Viva 主題設定] 頁面上的知識系統管理員所完成。
+-   由其 Microsoft 365 系統管理員[指派 Viva 主題授權](./set-up-topic-experiences.md#assign-licenses)。
+-   [被指派管理主題](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center)) 的許可權。 這項工作是由 Microsoft 365 系統管理中心中的 [Viva 主題設定] 頁面上的知識系統管理員所完成。
 
 具有良好整體知識的使用者可能是「知識管理員」角色的良好候選人。 這類人員可能不僅具備知道主題是否有效的知識，還可以知道公司內與這些主題相關的人員。
 
@@ -85,4 +85,3 @@ ms.locfileid: "50453935"
 
 
 ## <a name="see-also"></a>請參閱
-

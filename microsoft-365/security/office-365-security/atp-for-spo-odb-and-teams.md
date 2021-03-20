@@ -23,12 +23,12 @@ ms.custom:
 description: 深入瞭解 Microsoft Defender for Office 365，以瞭解 SharePoint Online 中的檔案、商務 OneDrive，以及 Microsoft 團隊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce73e1fd5c8ecb63bee1db2e9e64aade305b37e9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9b69d2b6f075539f411da971a314c127843b945a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287050"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917567"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 
@@ -72,6 +72,6 @@ Microsoft Defender for Office 365 所識別為惡意的檔案，會顯示 [Micro
 
 - Office 365 的 Defender 不會掃描 SharePoint Online、商務 OneDrive 或 Microsoft 團隊中的每一個檔案。 這是原本設計的做法。 檔會以非同步方式掃描。 此程式會使用共用和來賓活動事件，以及智慧試探法和威脅信號，識別惡意檔案。
 
-- 請確認您的 SharePoint 網站已設定為使用[新式體驗](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。 Office 365 的 Defender 防護會套用是否使用新式經驗或傳統模式;不過，只有在新式的體驗中，才可使用已封鎖檔案的視覺指示器。
+- 請確認您的 SharePoint 網站已設定為使用[新式體驗](/sharepoint/guide-to-sharepoint-modern-experience)。 Office 365 的 Defender 防護會套用是否使用新式經驗或傳統模式;不過，只有在新式的體驗中，才可使用已封鎖檔案的視覺指示器。
 
 - SharePoint、OneDrive 和 Microsoft 團隊的安全附件是組織整體威脅防護策略的一部分，其中包括 Exchange Online Protection (EOP) 中的反垃圾郵件和反惡意程式碼保護，以及 Microsoft Defender for Office 365 中的安全連結和安全附件。 若要深入了解，請參閱[防範 Office 365 中的威脅](protect-against-threats.md)。

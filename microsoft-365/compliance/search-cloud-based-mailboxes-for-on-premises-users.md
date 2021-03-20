@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全性與合規性中心的內容搜尋工具，在 Exchange 混合式部署中搜尋及匯出內部部署使用者的 Microsoft Teams 聊天資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bdcba3a14b2ee6d14210d3525e20ec507166a5d
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 39951ce125f86748beab12cf1998075e26ad734b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029713"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917185"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜尋內部部署使用者的 Teams 聊天資料
 
@@ -97,7 +97,7 @@ ms.locfileid: "50029713"
 
 您可以在安全性與合規性中心 PowerShell 中使用 **New-ComplianceSearch** 和 **Set-ComplianceSearch** Cmdlet 來搜尋內部部署使用者的 Teams 聊天資料。 如先前所述，您不需要提交支援要求，即可使用 PowerShell 來搜尋內部部署使用者的 Teams 聊天資料。
   
-1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 執行下列 PowerShell 命令來建立可搜尋內部部署使用者 Teams 聊天資料的內容搜尋。
 
@@ -117,11 +117,11 @@ ms.locfileid: "50029713"
   
 如需使用這些 Cmdlet 的相關資訊，請參閱：
   
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
+- [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
-- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/set-compliancesearch)
+- [Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
+- [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
 ## <a name="known-issues"></a>已知問題
 
@@ -131,7 +131,7 @@ ms.locfileid: "50029713"
 
 **內部部署使用者的雲端儲存區位在何處？**
   
-Teams 交談資料會儲存在內部部署使用者的慣用資料位置 (PDL)。 PDL 可在單一地理位置和多地理位置環境中採用。 如需詳細資訊，請參閱 [Microsoft 365 多地理位置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)。
+Teams 交談資料會儲存在內部部署使用者的慣用資料位置 (PDL)。 PDL 可在單一地理位置和多地理位置環境中採用。 如需詳細資訊，請參閱 [Microsoft 365 多地理位置](../enterprise/microsoft-365-multi-geo.md)。
   
  **除了提交支援要求外，還有其他需求嗎？**
   

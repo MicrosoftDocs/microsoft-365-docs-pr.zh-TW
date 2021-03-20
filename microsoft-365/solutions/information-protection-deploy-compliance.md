@@ -17,21 +17,21 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 瞭解如何使用合規性分數和合規性管理員，以提升個人資料的保護層級。
-ms.openlocfilehash: f90826795197b392f629eb8eec71b7f27081b697
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 87131ea65661e8285fd7c3b36a87c79b618348d7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791879"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918567"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>使用合規性管理員管理改進動作
 
-Microsoft 合規性管理員可以協助您管理資料隱私權法規（如歐盟一般資料保護法規）的增強功能（如歐盟 [一般資料保護法規） (GDPR) ](../compliance/gdpr.md)、 [加州消費者 Protection 法案 CCPA) ](../compliance/ccpa-faq.md)、HIPAA-高科技 (美國衛生保健隱私權法案) ，以及巴西資料保護法案 (LGPD) 。
+Microsoft 合規性管理員可以協助您管理資料隱私權法規（如歐盟一般資料保護法規）的增強功能（如歐盟 [一般資料保護法規） (GDPR) ](/compliance/regulatory/gdpr)、 [加州消費者 Protection 法案 CCPA) ](/compliance/regulatory/ccpa-faq)、HIPAA-高科技 (美國衛生保健隱私權法案) ，以及巴西資料保護法案 (LGPD) 。
 
 本文提供有關資料隱私權用途的使用此工具的指導方針。
 
 >[!Note]
->您不應將 [合規性管理員] 提供的建議視為合規性的保證。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務須遵守 [線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱 [Microsoft 365 授權指南以取得安全性和合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>您不應將 [合規性管理員] 提供的建議視為合規性的保證。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務須遵守 [線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱 [Microsoft 365 授權指南以取得安全性和合規性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
 ## <a name="getting-started-with-compliance-manager"></a>合規性管理員快速入門

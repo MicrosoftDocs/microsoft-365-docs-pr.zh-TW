@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 在本文中，您將瞭解如何使用 Microsoft 365 的 PowerShell 來管理 SharePoint Online 使用者、群組及網站。
-ms.openlocfilehash: 5252ecc950e5f26d6ad60cd871910a67bf50f187
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: cc977355f1182b18d2f2e90b573683ed69299c1c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688711"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916723"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 使用者和群組
 
@@ -33,7 +33,7 @@ ms.locfileid: "46688711"
 
 如果您是使用大型使用者帳戶或群組清單的 SharePoint Online 系統管理員，而且想要更容易管理，則可以使用 Microsoft 365 PowerShell。 
 
-在您開始之前，本主題中的程式需要您連線至 SharePoint 線上。 如需相關指示，請參閱 [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+在您開始之前，本主題中的程式需要您連線至 SharePoint 線上。 如需相關指示，請參閱 [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>取得網站、群組及使用者的清單
 
@@ -127,7 +127,7 @@ $level = "View Only"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
 
-## <a name="remove-users-from-a-group"></a>從群組中移除使用者
+## <a name="remove-users-from-a-group"></a>從群組移除使用者
 
 有時候，您必須從網站或所有網站中移除使用者。 員工可能會從一個部門移至另一個部門或離開公司。 您可以在 UI 中輕鬆執行這項作業，但是當您必須將一個網站的完整分割移至另一個網站時，就不會這麼輕鬆。
 
@@ -266,7 +266,7 @@ $site = "Project01"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-請注意，我們只需要變更 **$site** 變數。 **$Tenant**變數會透過命令的所有三個執行來保持該值。
+請注意，我們只需要變更 **$site** 變數。 **$Tenant** 變數會透過命令的所有三個執行來保持該值。
 
 不過，如果您想要針對每個網站執行這項操作，該怎麼辦？ 您可以執行這項動作，而不必使用下列命令輸入所有網站：
 
@@ -276,9 +276,9 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 這個報告非常簡單，您可以新增更多的程式碼，以建立包含更多詳細資訊的特定報告或報告。 不過，這會讓您瞭解如何使用 SharePoint Online 管理命令介面來管理 SharePoint 線上環境中的使用者。
    
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[連線至 SharePoint 線上 PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[連線至 SharePoint 線上 PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [使用 PowerShell 管理 SharePoint Online](create-sharepoint-sites-and-add-users-with-powershell.md)
 

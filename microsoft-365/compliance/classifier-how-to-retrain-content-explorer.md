@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何在內容瀏覽器中提供對 trainable 分類器的意見反應。
-ms.openlocfilehash: fabfe8e4df377c25012b358960d7f7ff7ff994bc
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423260"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918099"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新定型內容總管的分類器
 
@@ -109,7 +109,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 
 我們比較 retrained 和發行的分類器之兩組專案的效能值，以提供是否有改進重新發佈的建議。 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [深入了解可訓練分類器](classifier-learn-about.md)
-- [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

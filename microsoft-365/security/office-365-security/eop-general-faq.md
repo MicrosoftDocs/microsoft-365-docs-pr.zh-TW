@@ -15,12 +15,12 @@ ms.custom:
 description: 針對 Exchange Online Protection (EOP) 雲端主控的電子郵件篩選服務，取得最常見的一般問題的答案。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a1ce845ef50d7485113c211b0a8d7770ea57815
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 04246b7c0a241c672328febd1584a56aa11becf2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290018"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916955"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常見問題集
 
@@ -41,7 +41,7 @@ ms.locfileid: "50290018"
 
 - [反惡意程式碼保護常見問題集](anti-malware-protection-faq-eop.md)
 
-- [郵件追蹤常見問題集](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq)
+- [郵件追蹤常見問題集](/exchange/monitoring/trace-an-email-message/message-trace-faq)
 
 ## <a name="what-is-eop"></a>EOP 是什麼？
 
@@ -61,7 +61,7 @@ EOP 是由使用者授權。 如需最新的定價資訊，請參閱 [Exchange O
 
 ## <a name="do-i-have-to-use-all-features-of-microsoft-365-to-use-eop-what-if-i-just-want-eop-protection-and-thats-all"></a>我必須使用 Microsoft 365 的所有功能才能使用 EOP 嗎？ 如果我只想要 EOP 保護，該怎麼辦？
 
-您可以使用 EOP 來保護您的內部部署信箱，而不需要使用 Microsoft 365 的任何其他功能。 這稱為獨立訂閱。 您可以在 [Exchange Online Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)中找到 EOP 功能的清單。
+您可以使用 EOP 來保護您的內部部署信箱，而不需要使用 Microsoft 365 的任何其他功能。 這稱為獨立訂閱。 您可以在 [Exchange Online Protection 服務說明](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)中找到 EOP 功能的清單。
 
 ## <a name="why-do-i-need-a-microsoft-365-tenant-when-signing-up-for-email-filtering-through-eop"></a>為什麼在註冊透過 EOP 的電子郵件篩選時，我需要 Microsoft 365 租使用者？
 
@@ -91,8 +91,8 @@ Microsoft 365 系統管理中心將會包含這項資訊。 如果您受到服�
 
 ## <a name="are-there-any-limits-i-should-be-aware-of-such-as-message-size-limitations"></a>是否有任何應注意的限制，例如郵件大小限制？
 
-是。 如需 EOP 中限制的相關資訊，請參閱 [Exchange Online Protection 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
+是。 如需 EOP 中限制的相關資訊，請參閱 [Exchange Online Protection 限制](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
 
 ## <a name="does-eop-support-powershell"></a>EOP 是否支援 PowerShell？
 
-可以透過使用 Exchange Online 信箱的組織 PowerShell: Exchange Online PowerShell 取得完整的 EOP 功能;獨立 EOP 組織的獨立 EOP PowerShell。 如需詳細資訊，請參閱 [Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) 和 [exchange online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell)。
+可以透過使用 Exchange Online 信箱的組織 PowerShell: Exchange Online PowerShell 取得完整的 EOP 功能;獨立 EOP 組織的獨立 EOP PowerShell。 如需詳細資訊，請參閱 [Exchange online PowerShell](/powershell/exchange/exchange-online-powershell) 和 [exchange online Protection PowerShell](/powershell/exchange/exchange-online-protection-powershell)。

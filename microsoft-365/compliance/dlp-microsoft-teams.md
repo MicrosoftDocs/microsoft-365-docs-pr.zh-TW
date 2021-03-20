@@ -15,19 +15,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: 您現在可以將 DLP 原則套用至 Microsoft 團隊聊天和頻道。 請閱讀本文以深入瞭解其運作方式。
-ms.openlocfilehash: 4b6f0c2e6915e7e96ba862fc6862b69aa0d827fd
-ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
+ms.openlocfilehash: 3a7b228292952bdba3c950b8ab67501c40e99238
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50572659"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917919"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料遺失防護和 Microsoft 團隊
 
 > [!NOTE]
 > 資料遺失防護功能最近新增至 Microsoft 團隊聊天及通道訊息，供使用者授權的 Office 365 E5/A5、Microsoft 365 E5/A5、Microsoft 365 資訊保護和控管或 Office 365 高級規範。 Office 365 和 Microsoft 365 E3 包含 DLP protection，供 SharePoint 線上、OneDrive 和 Exchange Online。 這也包括透過團隊共用的檔案，因為小組會使用 SharePoint 線上及 OneDrive 共用檔案。
 支援小組中的 DLP 保護聊天需要 E5。
-若要深入了解授權需求，請參閱 [Microsoft 365 租用戶層級服務授權指導方針](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)
+若要深入了解授權需求，請參閱 [Microsoft 365 租用戶層級服務授權指導方針](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Microsoft 小組的 DLP 簡介
 
@@ -38,7 +38,7 @@ ms.locfileid: "50572659"
 - **範例1：保護郵件中的機密資訊**。 假設有人嘗試在小組聊天或頻道中與來賓 (外部使用者) 共用機密資訊。 如果您已定義 DLP 原則以避免發生這種情況，就會刪除郵件，其中包含傳送給外部使用者的敏感資訊。 這會根據您設定 DLP 原則的方式，自動進行，並在幾秒內進行。
 
     > [!NOTE]
-    > 當與具有下列專案的 Microsoft 團隊使用者共用時，Microsoft 小組的 DLP 會封鎖機密內容：<br/>- 小組和頻道中的[來賓存取權](https://docs.microsoft.com/MicrosoftTeams/guest-access);或<br/>- 會議和聊天會話中的[外部存取](https://docs.microsoft.com/MicrosoftTeams/manage-external-access)。 <p>如果寄件者和收件者都只是在 [僅限小組] 模式中，且使用 [Microsoft 團隊原生同盟](https://docs.microsoft.com/microsoftteams/manage-external-access)，則僅適用于外部聊天會話。 當商務用 Skype 或非原生同盟聊天會話時，小組的 DLP 不會封鎖 [interop](https://docs.microsoft.com/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) 中的郵件。
+    > 當與具有下列專案的 Microsoft 團隊使用者共用時，Microsoft 小組的 DLP 會封鎖機密內容：<br/>- 小組和頻道中的[來賓存取權](/MicrosoftTeams/guest-access);或<br/>- 會議和聊天會話中的[外部存取](/MicrosoftTeams/manage-external-access)。 <p>如果寄件者和收件者都只是在 [僅限小組] 模式中，且使用 [Microsoft 團隊原生同盟](/microsoftteams/manage-external-access)，則僅適用于外部聊天會話。 當商務用 Skype 或非原生同盟聊天會話時，小組的 DLP 不會封鎖 [interop](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) 中的郵件。
 
 - **範例2：保護檔中的機密資訊**。 假設有人嘗試與 Microsoft 小組通道或聊天中的客人共用檔，而且檔中包含機密資訊。 如果您定義了 DLP 原則以避免發生這種情況，則不會對這些使用者開啟檔。 請注意，在這種情況下，您的 DLP 原則必須包括 SharePoint 和 OneDrive，才可就地保護。  (這是 DLP for DLP for office for SharePoint 的範例，此範例會顯示在 Microsoft 團隊中，因此要求使用者授權使用 office 365 E3) 中包含的 Office 365 DLP (，但不需要使用者授權 Office 365 的「高級規範」。 ) 
 
@@ -144,7 +144,7 @@ ms.locfileid: "50572659"
 
 若要確定包含機密資訊的 SharePoint 檔預設不能由外部來賓存取 SharePoint 或小組，請選取下列各項：
 
-- 您可以在 DLP 掃描時保證檔受到保護，並將新的檔案標記為可安全地加以共用。預設會將 [新的檔案標示為敏感](https://docs.microsoft.com/sharepoint/sensitive-by-default)
+- 您可以在 DLP 掃描時保證檔受到保護，並將新的檔案標記為可安全地加以共用。預設會將 [新的檔案標示為敏感](/sharepoint/sensitive-by-default)
 - 建議的 DLP 原則結構
     - **Conditions**
         - 內容包含下列任何敏感資訊類型： [選取所有套用專案]

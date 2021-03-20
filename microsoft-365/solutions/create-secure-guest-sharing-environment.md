@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 瞭解在 Microsoft 365 中建立安全的來賓共用環境的可用選項，提供來賓存取改善的共同作業。
-ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838670"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918463"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>建立安全的來賓共用環境
 
@@ -39,7 +39,7 @@ ms.locfileid: "50838670"
 - 自動將高敏感性標籤指派給包含敏感性資訊類型的文件。
 - 自動從具有敏感度標籤的檔案移除來賓存取。
 
-本文中所述的部分選項要求來賓在 Azure Active Directory 中擁有帳戶。 若要確保共用檔案和資料夾時目錄中包含來賓，請使用 [SharePoint 和 OneDrive 與 Azure AD B2B 整合 (預覽版)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
+本文中所述的部分選項要求來賓在 Azure Active Directory 中擁有帳戶。 若要確保共用檔案和資料夾時目錄中包含來賓，請使用 [SharePoint 和 OneDrive 與 Azure AD B2B 整合 (預覽版)](/sharepoint/sharepoint-azureb2b-integration-preview)。
 
 請注意，我們不會在本文中討論啟用來賓共用設定。 如需針對不同案例啟用來賓共用的詳細資訊，請參閱[與組織外部人員共同作業](collaborate-with-people-outside-your-organization.md)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "50838670"
 
 ### <a name="more-information"></a>其他資訊
 
-[規劃 Azure AD Multi-Factor Authentication 部署](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[規劃 Azure AD Multi-Factor Authentication 部署](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>為來賓設定使用規定
 
@@ -108,11 +108,11 @@ ms.locfileid: "50838670"
 現在，在來賓首次嘗試存取貴組織中的內容、小組或網站時，必須接受使用規定。
 
 > [!NOTE]
-> 使用條件式存取需要 Azure AD Premium P1 授權。 如需詳細資訊，請參閱[何謂條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
+> 使用條件式存取需要 Azure AD Premium P1 授權。 如需詳細資訊，請參閱[何謂條件式存取](/azure/active-directory/conditional-access/overview)。
 
 ### <a name="more-information"></a>詳細資訊
 
-[Azure Active Directory 使用規定](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
+[Azure Active Directory 使用規定](/azure/active-directory/conditional-access/terms-of-use)
 
 ## <a name="set-up-guest-access-reviews"></a>設定來賓存取權檢閱
 
@@ -145,15 +145,15 @@ ms.locfileid: "50838670"
 
 ### <a name="more-information"></a>詳細資訊
 
-[使用 Azure AD 存取權檢閱來管理來賓存取權](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[使用 Azure AD 存取權檢閱來管理來賓存取權](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[在 Azure AD 存取權檢閱中建立群組或應用程式的存取權檢閱](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+[在 Azure AD 存取權檢閱中建立群組或應用程式的存取權檢閱](/azure/active-directory/governance/create-access-review)
 
 ## <a name="set-up-web-only-access-for-guests"></a>為來賓設定僅限網頁存取
 
 您可以要求來賓僅使用網頁瀏覽器存取小組、網站和檔案，以縮小受攻擊面，並輕鬆進行管理。
 
-若為 Microsoft 365 群組和 Teams，這會使用 Azure AD 條件式存取原則來完成。 若為 SharePoint，這會在 SharePoint 系統管理中心設定。 (您也可以[使用敏感度標籤將來賓限制在僅限 Web 存取](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。)
+若為 Microsoft 365 群組和 Teams，這會使用 Azure AD 條件式存取原則來完成。 若為 SharePoint，這會在 SharePoint 系統管理中心設定。 (您也可以[使用敏感度標籤將來賓限制在僅限 Web 存取](../compliance/sensitivity-labels-teams-groups-sites.md)。)
 
 為群組和小組將來賓限制在僅限 Web 存取：
 
@@ -222,7 +222,7 @@ ms.locfileid: "50838670"
 
 ### <a name="more-information"></a>詳細資訊
 
-[自訂敏感性資訊類型](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
+[自訂敏感性資訊類型](/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## <a name="create-an-auto-labeling-policy-to-assign-a-sensitivity-label-based-on-a-sensitive-information-type"></a>建立自動標籤原則，以根據敏感性資訊類型指派敏感度標籤
 
@@ -252,11 +252,11 @@ ms.locfileid: "50838670"
 
 ### <a name="more-information"></a>其他資訊
 
-[自動將敏感性標籤套用到內容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+[自動將敏感性標籤套用到內容](../compliance/apply-sensitivity-label-automatically.md)
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>建立 DLP 原則以移除高敏感性檔案的來賓存取
 
-您可以使用[資料外洩防護 (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) 以防止不必要的來賓共用敏感性內容。 資料外洩防護可以根據檔案的敏感度標籤採取動作，並移除來賓存取。
+您可以使用[資料外洩防護 (DLP)](../compliance/data-loss-prevention-policies.md) 以防止不必要的來賓共用敏感性內容。 資料外洩防護可以根據檔案的敏感度標籤採取動作，並移除來賓存取。
 
 建立 DLP 規則
 
@@ -287,9 +287,9 @@ ms.locfileid: "50838670"
 
 Microsoft 365 和 Azure Active Directory 中有一些其他選項可以協助保護您的來賓共用環境。
 
-- 您可以建立允許或拒絕共用網域的清單，以限制要共用的使用者。 如需詳細資訊，請參閱[依網域限制 SharePoint 和 OneDrive 內容的共用](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)和[允許或封鎖對特定組織的 B2B 使用者的邀請](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)。
-- 您可以限制使用者可以連線到哪些其他 Azure Active Directory 租用戶。 如需詳細資訊，請參閱[使用租用戶限制管理 SaaS 雲端應用程式的存取](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)。
-- 您可以建立受管理環境，讓合作夥伴能夠協助管理來賓帳戶。 如需詳細資訊，請參閱[建立 B2B 外部網路](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet)。
+- 您可以建立允許或拒絕共用網域的清單，以限制要共用的使用者。 如需詳細資訊，請參閱[依網域限制 SharePoint 和 OneDrive 內容的共用](/sharepoint/restricted-domains-sharing)和[允許或封鎖對特定組織的 B2B 使用者的邀請](/azure/active-directory/b2b/allow-deny-list)。
+- 您可以限制使用者可以連線到哪些其他 Azure Active Directory 租用戶。 如需詳細資訊，請參閱[使用租用戶限制管理 SaaS 雲端應用程式的存取](/azure/active-directory/manage-apps/tenant-restrictions)。
+- 您可以建立受管理環境，讓合作夥伴能夠協助管理來賓帳戶。 如需詳細資訊，請參閱[建立 B2B 外部網路](/Office365/Enterprise/b2b-extranet)。
 
 ## <a name="see-also"></a>另請參閱
 

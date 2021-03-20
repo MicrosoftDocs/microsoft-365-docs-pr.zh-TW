@@ -18,12 +18,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中查看、建立、修改及刪除安全連結原則及全域安全連結設定。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29d777a7f351b9ab33232cb0136703ce3fa29842
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: d23815ab0e6d4c9d98db41695b5dacec4c7a6d5a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290150"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918699"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>設定 Microsoft Defender for Office 365 中的安全連結原則
 
@@ -62,18 +62,18 @@ ms.locfileid: "50290150"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **安全連結** ] 頁面，請使用 <https://protection.office.com/safelinksv2> 。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派許可權，才能執行本文中的程式：
   - 若要建立、修改和刪除安全連結原則，您必須是 Security & 合規性中心內的「 **組織管理** 」或「 **安全性管理員** 」角色群組成員， **以及** Exchange Online 中的「 **組織管理** 」角色群組的成員。
   - 若要對安全連結原則進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md) 和 [Exchange Online 中的許可權](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md) 和 [Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   > 
   > - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  . - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權。
+  . - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權。
 
 - 如需安全連結原則的建議設定，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)。
 
@@ -278,7 +278,7 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
 ```
 
-如需詳細的語法及參數資訊，請參閱 [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy)。
+如需詳細的語法及參數資訊，請參閱 [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy)。
 
 #### <a name="step-2-use-powershell-to-create-a-safe-links-rule"></a>步驟2：使用 PowerShell 建立安全連結規則
 
@@ -299,7 +299,7 @@ New-SafeLinksRule -Name "<RuleName>" -SafeLinksPolicy "<PolicyName>" <Recipient 
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
-如需詳細的語法及參數資訊，請參閱 [New-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/new-safelinksrule)。
+如需詳細的語法及參數資訊，請參閱 [New-SafeLinksRule](/powershell/module/exchange/new-safelinksrule)。
 
 ### <a name="use-powershell-to-view-safe-links-policies"></a>使用 PowerShell 來查看安全連結原則
 
@@ -321,7 +321,7 @@ Get-SafeLinksPolicy | Format-Table Name
 Get-SafeLinksPolicy -Identity "Contoso Executives"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safelinkspolicy)。
+如需詳細的語法及參數資訊，請參閱 [Get-SafeLinksPolicy](/powershell/module/exchange/get-safelinkspolicy)。
 
 ### <a name="use-powershell-to-view-safe-links-rules"></a>使用 PowerShell 來查看安全連結規則
 
@@ -353,7 +353,7 @@ Get-SafeLinksRule -State Enabled
 Get-SafeLinksRule -Identity "Contoso Executives"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/get-safelinksrule)。
+如需詳細的語法及參數資訊，請參閱 [Get-SafeLinksRule](/powershell/module/exchange/get-safelinksrule)。
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>使用 PowerShell 修改安全連結原則
 
@@ -372,7 +372,7 @@ Get-SafeLinksRule -Identity "Contoso Executives"
 Set-SafeLinksPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy)。
+如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy)。
 
 ### <a name="use-powershell-to-modify-safe-links-rules"></a>使用 PowerShell 修改安全連結規則
 
@@ -386,7 +386,7 @@ Set-SafeLinksPolicy -Identity "<PolicyName>" <Settings>
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule)。
+如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule)。
 
 ### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a>使用 PowerShell 來啟用或停用安全連結規則
 
@@ -410,7 +410,7 @@ Disable-SafeLinksRule -Identity "Marketing Department"
 Enable-SafeLinksRule -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Enable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/enable-safelinksrule) 和 [Disable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/disable-safelinksrule)。
+如需詳細的語法及參數資訊，請參閱 [Enable-SafeLinksRule](/powershell/module/exchange/enable-safelinksrule) 和 [Disable-SafeLinksRule](/powershell/module/exchange/disable-safelinksrule)。
 
 ### <a name="use-powershell-to-set-the-priority-of-safe-links-rules"></a>使用 PowerShell 設定安全連結規則的優先順序
 
@@ -431,7 +431,7 @@ Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
 > [!NOTE]
 > 若要在建立新規則時設定其優先順序，請改用 **New-SafeLinksRule** Cmdlet 上的 _priority_ 參數。
 
-如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule)。
+如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule)。
 
 ### <a name="use-powershell-to-remove-safe-links-policies"></a>使用 PowerShell 移除安全連結原則
 
@@ -449,7 +449,7 @@ Remove-SafeLinksPolicy -Identity "<PolicyName>"
 Remove-SafeLinksPolicy -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safelinkspolicy)。
+如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksPolicy](/powershell/module/exchange/remove-safelinkspolicy)。
 
 ### <a name="use-powershell-to-remove-safe-links-rules"></a>使用 PowerShell 移除安全連結規則
 
@@ -467,7 +467,7 @@ Remove-SafeLinksRule -Identity "<PolicyName>"
 Remove-SafeLinksRule -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/remove-safelinksrule)。
+如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule)。
 
 若要確認安全連結正在掃描郵件，請檢查可用的 Microsoft Defender for Office 365 報告。 如需詳細資訊，請參閱 [View For Office 365 的 Defender 報告](view-reports-for-atp.md) 和 [使用 Explorer In Security & 合規性中心](threat-explorer.md)。
 

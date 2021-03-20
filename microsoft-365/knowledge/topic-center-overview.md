@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 54e513fc12a42d2779ee5f35628781676adc0f48
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 558d0fc9279c4b0d9e8c287fe4d99f5ac5884606
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453990"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917485"
 ---
 # <a name="topic-center-overview"></a>主題中心概觀
 
@@ -32,7 +32,7 @@ ms.locfileid: "50453990"
 
 ## <a name="where-is-my-topic-center"></a>主題中心的位置
 
-主題中心是在 Viva 主題設定期間建立。 安裝程式完成後，系統管理員可以在 [ [主題中心管理] 頁面](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings)上找到該 URL。
+主題中心是在 Viva 主題設定期間建立。 安裝程式完成後，系統管理員可以在 [ [主題中心管理] 頁面](./topic-experiences-administration.md#to-access-topics-management-settings)上找到該 URL。
 
 
 1. 在 Microsoft 365 系統管理中心中，按一下 [ **設定**]，然後按一下 [ **組織設定**]。
@@ -94,13 +94,6 @@ ms.locfileid: "50453990"
 
 
 ## <a name="see-also"></a>請參閱
-
-
-
-  
-
-
-
 
 
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 12bdf0df1a5b2f616c5b2bed61d69e8226fa5844
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 51dec80c541cd77a1d4813505d82429487e8381c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097183"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916415"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保護小組聊天、群組和檔案的原則建議
 
@@ -49,8 +49,6 @@ ms.locfileid: "50097183"
 為了保護「聊天」、群組及小組內容，下列圖表說明要從通用身分識別和裝置存取原則更新哪些原則。 針對每個要更新的原則，請確定 cloud app 的指派中包含小組和相依的服務。
 
 [![保護對小組及其相依服務之存取的原則更新摘要](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
-
-[查看較大版本的此影像](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
 這些服務是可納入小組的雲端應用程式指派中的相依服務：
 
@@ -105,13 +103,13 @@ In Azure AD, guest and external users are the same. The user type for both of th
 
 除了您公司或組織內部的使用者原則之外，管理員還可以讓來賓存取允許以使用者為基礎的使用者，在您的公司或組織外部的人員存取小組資源，並與內部人員（例如群組交談、聊天和會議）進行互動。
 
-如需來賓存取及其實施方式的詳細資訊，請參閱  [小組訪客存取](https://docs.microsoft.com/microsoftteams/guest-access)。
+如需來賓存取及其實施方式的詳細資訊，請參閱  [小組訪客存取](/microsoftteams/guest-access)。
 
 ### <a name="external-access-in-teams"></a>小組中的外部存取
 
 外部存取有時候會與來賓存取混淆，所以請務必明確這兩種非內部存取機制是不同的存取類型。
 
-「外部存取」是一種方法，讓團隊使用者可以從整個外部網域尋找、呼叫、聊天及設定小組中的使用者的會議。 小組管理員會設定組織層級的外部存取。 如需詳細資訊，請參閱 [管理 Microsoft 團隊中的外部存取](https://docs.microsoft.com/microsoftteams/manage-external-access)。
+「外部存取」是一種方法，讓團隊使用者可以從整個外部網域尋找、呼叫、聊天及設定小組中的使用者的會議。 小組管理員會設定組織層級的外部存取。 如需詳細資訊，請參閱 [管理 Microsoft 團隊中的外部存取](/microsoftteams/manage-external-access)。
 
 外部存取使用者與透過來賓存取新增的人員相比，具有較少的存取權和功能。 例如，外部存取使用者可以與內部使用者聊天，但無法存取小組通道、檔案或其他資源。
 
@@ -125,23 +123,23 @@ In Azure AD, guest and external users are the same. The user type for both of th
 
 小組和頻道是 Microsoft 小組中的兩個常用元素，也有一些原則可供您用來控制使用者使用團隊和管道時可以執行和不能執行的動作。 雖然您可以建立全域小組，但如果您的組織有5000位使用者或更少的使用者，您很可能會發現，使用小型小組和管道來滿足您的組織需求，以滿足特定目的。
 
-建議您變更預設原則或建立自訂原則，您也可以深入瞭解如何管理您在此連結上的原則： [管理 Microsoft 小組中的團隊原則](https://docs.microsoft.com/microsoftteams/teams-policies)。
+建議您變更預設原則或建立自訂原則，您也可以深入瞭解如何管理您在此連結上的原則： [管理 Microsoft 小組中的團隊原則](/microsoftteams/teams-policies)。
 
 ### <a name="messaging-policies"></a>郵件原則
 
-您也可以透過預設全域原則或透過自訂原則來管理訊息或聊天，這可協助您的使用者以適合組織的方式與彼此進行通訊。 您可以在 [管理小組的郵件原則](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)時查看這項資訊。
+您也可以透過預設全域原則或透過自訂原則來管理訊息或聊天，這可協助您的使用者以適合組織的方式與彼此進行通訊。 您可以在 [管理小組的郵件原則](/microsoftteams/messaging-policies-in-teams)時查看這項資訊。
 
 ### <a name="meeting-policies"></a>會議原則
 
 不需要在小組會議中規劃及實施原則，即可完成小組討論。 會議是小組的基本元件，可讓使用者正式開會及呈現給許多使用者，以及共用會議相關的內容。 在會議上為組織設定正確的原則是必要的。
 
-如需詳細資訊，請參閱 [管理小組中的會議原則](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)。
+如需詳細資訊，請參閱 [管理小組中的會議原則](/microsoftteams/meeting-policies-in-teams)。
 
 ### <a name="app-permission-policies"></a>應用程式許可權原則
 
 小組也可讓您在不同的地方使用應用程式，例如通道或個人聊天。 針對可以新增及使用哪些應用程式，以及在維護內容豐富的環境（也是安全）上都有哪些原則。
 
-如需應用程式許可權原則的相關資訊，請參閱 [管理 Microsoft 小組中的應用程式許可權原則](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)。
+如需應用程式許可權原則的相關資訊，請參閱 [管理 Microsoft 小組中的應用程式許可權原則](/microsoftteams/teams-app-permission-policies)。
 
 ## <a name="next-steps"></a>後續步驟
 

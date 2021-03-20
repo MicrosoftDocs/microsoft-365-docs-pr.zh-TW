@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 購買新的訂閱並確保訂閱已列出且作用中，以手動方式切換 Microsoft 365 的商務訂閱。
-ms.openlocfilehash: 3712f01502362e68d05e6a2eadfcac588f6092b7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b42ebd7edd379ffcb8b2b4967f10fd553c8834c4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647756"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916861"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>手動切換 Microsoft 365 的商務方案
 
@@ -55,7 +55,7 @@ ms.locfileid: "48647756"
   
 - 或
   
- **購買新的訂閱與授權：** 請遵循 [購買其他 Microsoft 365 for business 訂閱](../buy-another-subscription.md) 中的步驟，購買新的訂閱。
+ **購買新的訂閱與授權：** 請遵循 [購買其他 Microsoft 365 for business 訂閱](../try-or-buy-microsoft-365.md) 中的步驟，購買新的訂閱。
   
 請確認您購買的是使用者現在所在組織的訂閱。 例如，檢查您要移動之使用者的電子郵件地址。 如果他們的電子郵件地址包含 @contoso .com，您必須購買 contoso.com 的新訂閱。 針對每個您想要移動的使用者，加入一個授權。
   
@@ -65,19 +65,19 @@ ms.locfileid: "48647756"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">訂閱</a>] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [**帳單**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。
 
 ::: moniker-end
 
@@ -138,13 +138,13 @@ ms.locfileid: "48647756"
   
 5. 針對此使用者不再需要的授權，將開關切換到 [ **關閉** ] 位置。
 
-6. 在 [ **產品授權** ] 窗格的底部，選取 [ **指派** \> **關閉**] [關閉] \> ** **。
+6. 在 [ **產品授權** ] 窗格的底部，選取 [ **指派** \> **關閉**] [關閉] \> ****。
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>一次為多位使用者重新指派授權
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [ **使用者**作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a> ] 頁面。
+1. 在系統管理中心中，移至 [ **使用者** 作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a> ] 頁面。
 
 ::: moniker-end
 
@@ -178,7 +178,7 @@ ms.locfileid: "48647756"
 
 如果您將所有使用者從一個訂閱移到另一個訂閱，且您不再需要原本的訂閱，可以[取消訂閱](cancel-your-subscription.md)。
   
-如果您只將部分使用者移至不同的訂閱，請移除您不再需要的 [授權](../licenses/remove-licenses-from-subscription.md) 。
+如果您只將部分使用者移至不同的訂閱，請移除您不再需要的 [授權](../licenses/buy-licenses.md) 。
   
 ## <a name="call-support-to-help-you-switch-plans"></a>連絡支援服務以協助切換方案
 

@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解針對保留原則及保留標籤原則，每個原則的原則和專案數量上限。
-ms.openlocfilehash: 547c6396fa9bfcba6dbd271f09a7ea59f9acf170
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 53539df4d36fab02171e1ac06ba944ed3bea34e8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261582"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917239"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留原則和保留標籤原則的限制
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 當您使用 [保留原則及保留標籤原則](retention.md#retention-policies-and-retention-labels) 以自動保留或刪除貴組織的資料時，有一些您需要注意的最大值。
 
@@ -79,4 +79,3 @@ SharePoint 範例：
 - **解決方案**：建立 20 個 SharePoint 保留原則，保留期間為 10 年，其中包括 100 個特定網站，並建立 80個 SharePoint 保留原則，保留期間為 4 年，其中包含 100 個特定網站。
     
     因為您不需要保留所有的 SharePoint 網站，您必須建立指定特定網站的保留原則。 由於保留原則不支援超過 100 個指定的網站，因此您必須針對兩個保留期間建立多個原則。 這些保留原則所包含的網站數量為上限，因此需要保留的下一個新網站不論保留期間都會需要新的保留原則。
-

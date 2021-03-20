@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 以系統管理員和郵件寄件者的身分，您可以撤銷使用 Office 365 高級郵件加密所加密的特定電子郵件。
-ms.openlocfilehash: 67582917dd483f6090f5cd369af8faf6cf8a4ea8
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105138"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917195"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>撤銷由高級郵件加密所加密的電子郵件
 
@@ -75,7 +75,7 @@ Microsoft 365 系統管理員請遵循下列一般步驟來撤銷合格的加密
 - 確認您可以撤銷郵件。
 - 撤銷郵件。
 
-### <a name="step-1-obtain-the-message-id-of-the-email"></a>步驟 1： 取得電子郵件的郵件識別碼
+### <a name="step-1-obtain-the-message-id-of-the-email"></a>步驟 1. 取得電子郵件的郵件識別碼
 
 在您可以撤銷加密的郵件之前，請先收集郵件的郵件識別碼。 MessageId 的格式通常如下：
 
@@ -97,13 +97,13 @@ Microsoft 365 系統管理員請遵循下列一般步驟來撤銷合格的加密
 
 3. 按兩下郵件，以查看包含郵件識別碼的詳細資料。
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>步驟 2： 確認郵件是可吊銷的
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>步驟 2. 確認郵件是可吊銷的
 
 若要確認您是否可以吊銷郵件，請在 [安全性與規範中心] 的 [ **詳細資料** ] 表格中，檢查 [吊銷狀態] 欄位是否顯示在加密報告中 &amp; 。
 
 若要確認您是否可以使用 Windows PowerShell 撤銷特定的電子郵件訊息，請完成下列步驟。
 
-1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 依下列方式執行 Get-OMEMessageStatus Cmdlet：
 
@@ -131,7 +131,7 @@ Microsoft 365 系統管理員請遵循下列一般步驟來撤銷合格的加密
 
 若要使用 Windows PowerShell 撤銷電子郵件，請使用 Set-OMEMessageRevocation Cmdlet。
 
-1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 依下列方式執行 Set-OMEMessageRevocation Cmdlet：
 
@@ -157,4 +157,4 @@ Microsoft 365 系統管理員請遵循下列一般步驟來撤銷合格的加密
 
 - [Office 365 Advanced Message Encryption-電子郵件到期](ome-advanced-expiration.md)
 
-- [郵件原則及合規性服務說明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [郵件原則及合規性服務說明](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

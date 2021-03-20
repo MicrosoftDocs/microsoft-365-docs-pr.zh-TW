@@ -1,5 +1,5 @@
 ---
-title: 透過群組原則的板載 Windows 10 裝置
+title: 透過群組原則上線 Windows 10 裝置
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,18 +14,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用群組原則在 Windows 10 裝置上部署設定套件，使其可架至服務。
-ms.openlocfilehash: a9e91f41b6e86e9f75d79d420c0ee830f1e3acf3
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: b786d011a46f69e7bcac846e726e2aeb3031ae08
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769399"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918019"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用群組原則的板載 Windows 10 裝置 
 
-適用於： 
+適用於：
 
-- [Microsoft 365 端點資料遺失防護 (DLP) ](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 端點資料遺失防護 (DLP) ](./endpoint-dlp-learn-about.md)
 - 群組原則
 
 > [!NOTE]
@@ -35,27 +35,27 @@ ms.locfileid: "48769399"
 
 ## <a name="onboard-devices-using-group-policy"></a>使用群組原則的板載裝置
 
-1. 從 [服務上架] 嚮導中，開啟已下載的 GP configuration 套件 .zip 檔案 ( *DeviceComplianceOnboardingPackage.zip* ) 。 您也可以從[Microsoft 規範中心](https://compliance.microsoft.com/compliancesettings/deviceonboarding)取得套件
+1. 從 [服務上架] 嚮導中，開啟已下載的 GP configuration 套件 .zip 檔案 (*DeviceComplianceOnboardingPackage.zip*) 。 您也可以從[Microsoft 規範中心](https://compliance.microsoft.com/compliancesettings/deviceonboarding)取得套件
 
-2. 在功能窗格中，選取 [ **設定**  >  **裝置上架** ]。
+2. 在功能窗格中，選取 [**設定**  >  **裝置上架**]。
 
-3. 在 [ **部署方法** ] 欄位中，選取 [ **群組原則** ]。
+3. 在 [ **部署方法** ] 欄位中，選取 [ **群組原則**]。
 
 4. 按一下 [ **下載套件** ] 並儲存 .zip 檔案。
 
-5. 將 .zip 檔案的內容解壓縮到可供裝置存取的共用唯讀位置。 您應該會有一個稱為 *OptionalParamsPolicy* 的資料夾，以及檔案 *DeviceComplianceLocalOnboardingScript .cmd* 。
+5. 將 .zip 檔案的內容解壓縮到可供裝置存取的共用唯讀位置。 您應該會有一個稱為 *OptionalParamsPolicy* 的資料夾，以及檔案 *DeviceComplianceLocalOnboardingScript .cmd*。
 
-6. 開啟「 [群組原則管理主控台](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯** ]。
+6. 開啟「 [群組原則管理主控台](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
 
-7. 在 [ **群組原則管理編輯器** ] 中，移至 [ **電腦** 設定]、[ **喜好** 設定] 及 [控制台 **設定** ]。
+7. 在 [ **群組原則管理編輯器**] 中，移至 [ **電腦** 設定]、[ **喜好** 設定] 及 [控制台 **設定**]。
 
-8. 以滑鼠右鍵按一下 [ **排程任務** ]，指向 [ **新增** ]，然後按一下 [ **立即工作 (至少為 Windows 7)** 。
+8. 以滑鼠右鍵按一下 [ **排程任務**]，指向 [ **新增**]，然後按一下 [ **立即工作 (至少為 Windows 7)**。
 
-9. 在開啟的 **任務** 視窗中，移至 [ **一般** ] 索引標籤。在 [ **安全性選項** ] 底下，按一下 [ **變更使用者或群組** 和類型系統]，然後按一下 [ **檢查名稱** 然後按一下 **[確定]** NT AUTHORITY\SYSTEM 會顯示為執行工作時所用的使用者帳戶。
+9. 在開啟的 **任務** 視窗中，移至 [**一般**] 索引標籤。在 [**安全性選項**] 底下，按一下 [**變更使用者或群組** 和類型系統]，然後按一下 [**檢查名稱** 然後按一下 **[確定]** NT AUTHORITY\SYSTEM 會顯示為執行工作時所用的使用者帳戶。
 
 10. 選取 [ **執行使用者登入與否** ]，然後選取 [ **以最高特權執行** ] 核取方塊。
 
-11. 移至 [ **動作** ] 索引標籤，然後按一下 [ **新增 ...** ]確定 [ **動作** ] 欄位中已選取 [ **啟動程式** ]。 輸入共用 *WindowsDefenderATPOnboardingScript .cmd* 檔案的檔案名和位置。
+11. 移至 [**動作**] 索引標籤，然後按一下 [**新增 ...** ]確定 [**動作**] 欄位中已選取 [**啟動程式**]。 輸入共用 *WindowsDefenderATPOnboardingScript .cmd* 檔案的檔案名和位置。
 
 12. 按一下 **[確定]** ，然後關閉任何開啟的 GPMC 視窗。
 
@@ -68,25 +68,25 @@ ms.locfileid: "48769399"
 
 1. 從 [Microsoft 規範中心](https://compliance.microsoft.com/compliancesettings/deviceonboarding)取得脫離套件。
 
-2. 在功能窗格中，選取 [ **設定**  >  **//Device 上架**  >  **脫離** ]。
+2. 在功能窗格中，選取 [**設定**  >  **//Device 上架**  >  **脫離**]。
 
-3. 在 [ **部署方法** ] 欄位中，選取 [ **群組原則** ]。
+3. 在 [ **部署方法** ] 欄位中，選取 [ **群組原則**]。
 
 4. 按一下 [ **下載套件** ] 並儲存 .zip 檔案。
 
 5. 將 .zip 檔案的內容解壓縮到可供裝置存取的共用唯讀位置。 您應該有一個名為 *DeviceComplianceOffboardingScript_valid_until_YYYY-mm-dd* 的檔案。
 
-6. 開啟「 [群組原則管理主控台](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯** ]。
+6. 開啟「 [群組原則管理主控台](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
 
-7. 在 [ **群組原則管理編輯器** ] 中，移至 [電腦設定] **、** [ **喜好** 設定] 及 [控制台 **設定** ]。
+7. 在 [ **群組原則管理編輯器**] 中，移至 [電腦設定] **、** [ **喜好** 設定] 及 [控制台 **設定**]。
 
-8. 以滑鼠右鍵按一下 [ **排程任務** ]，指向 [ **新增** ]，然後按一下 [ **立即** 工作]。
+8. 以滑鼠右鍵按一下 [ **排程任務**]，指向 [ **新增**]，然後按一下 [ **立即** 工作]。
 
-9. 在開啟的 **任務** 視窗中，移至 [ **一般** ] 索引標籤。在 [ **安全性選項** ] 底下，選擇 [ (BUILTIN\SYSTEM]) 的 [本機系統] 使用者帳戶。
+9. 在開啟的 **任務** 視窗中，移至 [ **一般** ] 索引標籤。在 [ **安全性選項**] 底下，選擇 [ (BUILTIN\SYSTEM]) 的 [本機系統] 使用者帳戶。
 
 10. 選取 [ **執行使用者登入與否** ]，然後選取 [ **以最高特權執行** ] 核取方塊。
 
-11. 移至 [ **動作** ] 索引標籤，然後按一下 [ **新增 ...** ]。確定 [ **動作** ] 欄位中已選取 [ **啟動程式** ]。 輸入共用  *DeviceComplianceOffboardingScript_valid_until_YYYY-mm-dd* 檔案的檔案名和位置。
+11. 移至 [**動作**] 索引標籤，然後按一下 [**新增 ...**]。確定 [**動作**] 欄位中已選取 [**啟動程式**]。 輸入共用  *DeviceComplianceOffboardingScript_valid_until_YYYY-mm-dd* 檔案的檔案名和位置。
 
 12. 按一下 **[確定]** ，然後關閉任何開啟的 GPMC 視窗。
 
@@ -108,8 +108,8 @@ ms.locfileid: "48769399"
 
 ## <a name="related-topics"></a>相關主題
 - [使用 Microsoft Endpoint Configuration Manager 的板載 Windows 10 裝置](dlp-configure-endpoints-sccm.md)
-- [使用行動裝置管理工具的板載 Windows 10 裝置](dlp-configure-endpoints-mdm.md)
-- [使用本機腳本的板載 Windows 10 裝置](dlp-configure-endpoints-script.md)
-- [板載非持久性虛擬桌面基礎結構 (VDI) 裝置](dlp-configure-endpoints-vdi.md)
-- [在新架的 Microsoft Defender ATP 裝置上執行偵測測試](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [疑難排解 Microsoft Defender 高級威脅防護上架問題](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [使用行動裝置管理工具上線 Windows 10 電腦](dlp-configure-endpoints-mdm.md)
+- [使用本機指令碼上線 Windows 10 裝置](dlp-configure-endpoints-script.md)
+- [上線非持續 Virtual Desktop Infrastructure (VDI) 裝置](dlp-configure-endpoints-vdi.md)
+- [在新架的 Microsoft Defender ATP 裝置上執行偵測測試](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [疑難排解 Microsoft Defender 高級威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

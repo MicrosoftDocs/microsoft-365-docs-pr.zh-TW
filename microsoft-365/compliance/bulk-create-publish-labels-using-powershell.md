@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從命令列使用 PowerShell 建立及發佈保留標籤，而不受 Microsoft 365 合規性中心的影響。
-ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426980"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918219"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 建立及發佈保留標籤
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 在您決定使用 [保留標籤](retention.md) 來協助您保留或刪除 Microsoft 365 中的文件和電子郵件後，您可能會發現您可能有許多，甚至數百個保留標籤供您建立及發佈。 按縮放比例建立保留標籤的建議方法，是使用 Microsoft 365 合規性中心的 [檔案計畫](file-plan-manager.md)。 不過，您也可以使用 [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels)。
   
@@ -51,7 +51,7 @@ ms.locfileid: "47426980"
 
 2. 資料剖析： **資料** 索引標籤 \> **資料行的文字** \> **分隔符號** \> **逗號** \> **一般**
 
-2. 將範例取代為您自行保留標籤和設定的專案。 如需參數值的詳細資訊，請參閱 [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)。
+2. 將範例取代為您自行保留標籤和設定的專案。 如需參數值的詳細資訊，請參閱 [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)。
 
 3. 將工作表另存為 .csv 檔案，以便在後續步驟中輕鬆找到。 例如：C: \>Scripts\Labels.csv
 
@@ -78,7 +78,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. 資料剖析： **資料** 索引標籤 \> **資料行的文字** \> **分隔符號** \> **逗號** \> **一般**
 
-2. 將範例取代為您自行保留標籤原則和其設定的專案。 如需此 Cmdlet 參數值的詳細資訊，請參閱 [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)。
+2. 將範例取代為您自行保留標籤原則和其設定的專案。 如需此 Cmdlet 參數值的詳細資訊，請參閱 [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)。
 
 3. 將工作表另存為 .csv 檔案，以便在後續步驟中輕鬆找到。 例如：`<path>Policies.csv`
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>步驟 4：執行 PowerShell 指令碼
 
-首先，[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+首先，[連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 然後，執行建立並發佈保留標籤的指令碼：
   
@@ -761,5 +761,3 @@ if ($ResultCSV)
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
 ```
-
-

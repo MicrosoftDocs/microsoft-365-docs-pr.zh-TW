@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 瞭解 Exchange 和 SharePoint 中未編制索引的專案，您可以在 Microsoft 365 規範中心執行的 eDiscovery 搜尋中包含這些專案。
-ms.openlocfilehash: 308e0755f1966b8e4559cf6f08b3133a00ea1b5a
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 39f78c9a6e937fc7152b86a67e56cc95c132ad6a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711903"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916805"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>EDiscovery 中已部分索引的專案
 
@@ -57,11 +57,11 @@ ms.locfileid: "50711903"
   
 如需支援和已停用的檔案格式清單，請參閱下列主題：
   
-- **Exchange**  - [Exchange 搜尋編制索引的檔案格式](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange**  - [Exchange 搜尋編制索引的檔案格式](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- **Exchange**  - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange**  - [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
-- **SharePoint**  - [SharePoint 中的預設編目副檔名及分析檔案類型](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint**  - [SharePoint 中的預設編目副檔名及分析檔案類型](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>可在搜尋結果中傳回具有部分索引檔案類型的郵件和檔
 
@@ -110,7 +110,7 @@ ms.locfileid: "50711903"
 
 下表說明可導致電子郵件在 Microsoft 365 的 eDiscovery 搜尋中傳回成部分索引項目目的索引限制。
   
-如需 SharePoint 檔的索引限制清單，請參閱 [線上 SharePoint 的搜尋限制](https://docs.microsoft.com/sharepoint/search-limits)。
+如需 SharePoint 檔的索引限制清單，請參閱 [線上 SharePoint 的搜尋限制](/sharepoint/search-limits)。
   
 |**索引限制**|**最大值**|**描述**|
 |:-----|:-----|:-----|
@@ -139,6 +139,6 @@ ms.locfileid: "50711903"
 
 - 使用 Azure Rights Management 保護的電子郵件會進行索引，如果符合搜尋查詢，將會包含在搜尋結果中。 受版權保護的電子郵件會解密，而且可以預覽及匯出。 這種功能要求您指派 RMS 解密角色，此角色預設會指派給 eDiscover 管理員角色群組。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [調查 eDiscovery 中已部分索引的專案](investigating-partially-indexed-items-in-ediscovery.md)

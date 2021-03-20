@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 5a13af3e78848471b436d44ab051eca945176c74
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2db8654bf7bb1bc5ef4759c1617a84ae2153553a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107693"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917389"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>讓您的環境做好準備 Microsoft Viva 主題的準備
 
@@ -56,10 +56,10 @@ ms.locfileid: "50107693"
 
 ## <a name="1-migrate-content-to-microsoft-365"></a>1. 將內容遷移至 Microsoft 365
 
-您可以使用數種工具和服務來協助您進行遷移-您可以取得如何在將 [內容遷移至 Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)時進行遷移的相關資訊。 遷移工具組括：
+您可以使用數種工具和服務來協助您進行遷移-您可以取得如何在將 [內容遷移至 Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online)時進行遷移的相關資訊。 遷移工具組括：
 
-- [移轉管理員](https://docs.microsoft.com/sharepointmigration/mm-get-started)
-- [SharePoint 移轉工具 (SPMT)](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
+- [移轉管理員](/sharepointmigration/mm-get-started)
+- [SharePoint 移轉工具 (SPMT)](/sharepointmigration/introducing-the-sharepoint-migration-tool)
 - [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)
 - [合作夥伴遷移工具和服務](https://www.microsoft.com/solution-providers)
 
@@ -73,12 +73,12 @@ ms.locfileid: "50107693"
 
 如果您無法遷移部分內容，請使用 Microsoft Graph 進行連線：
 
-- 請考慮實施 [圖形內容連接器](https://docs.microsoft.com/microsoftsearch/connectors-overview)。 您可以使用連接器將外部內容編入 Microsoft Graph，讓使用者可以透過 Microsoft 搜尋探索該內容。
+- 請考慮實施 [圖形內容連接器](/microsoftsearch/connectors-overview)。 您可以使用連接器將外部內容編入 Microsoft Graph，讓使用者可以透過 Microsoft 搜尋探索該內容。
 - 未來的發展會將外部資料引入 Viva 主題。
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. 現代化 SharePoint 頁面
 
-由於主題卡片和高光只會出現在新式頁面上，因此請將您想要包含在 Viva 主題中的任何頁面更新為新式。 請參閱「 [現代化」傳統 SharePoint 網站](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites)。 您可以使用 [SharePoint 現代化掃描器](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) 來準備您的傳統網站，以進行現代化。
+由於主題卡片和高光只會出現在新式頁面上，因此請將您想要包含在 Viva 主題中的任何頁面更新為新式。 請參閱「 [現代化」傳統 SharePoint 網站](/sharepoint/dev/transform/modernize-classic-sites)。 您可以使用 [SharePoint 現代化掃描器](/sharepoint/dev/transform/modernize-scanner) 來準備您的傳統網站，以進行現代化。
 
 如果您有許多傳統網站，請設定高設定檔頁面面的優先順序，以轉換為新式。
 
@@ -89,7 +89,7 @@ ms.locfileid: "50107693"
 
 - 鼓勵網站擁有人複查共用和許可權。
 
-  SharePoint 網站擁有者可以查看其網站的共用報告，該網站會顯示網站上所設定之擁有權限及共用連結的完整詳細資料，請參閱 [共用報告](https://docs.microsoft.com/sharepoint/sharing-reports)。 這會列出內部和外部 (來賓) 使用者。
+  SharePoint 網站擁有者可以查看其網站的共用報告，該網站會顯示網站上所設定之擁有權限及共用連結的完整詳細資料，請參閱 [共用報告](/sharepoint/sharing-reports)。 這會列出內部和外部 (來賓) 使用者。
 
   網站擁有者也可以前往 [ **網站許可權** ] 和 [ **高級許可權設定** ] 頁面，查看誰擁有該網站的許可權。
 

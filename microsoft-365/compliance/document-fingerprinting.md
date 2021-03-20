@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 組織中的資訊工作者在其日常工作中會處理許多不同的敏感資訊。 「文件指紋」可識別您的組織中所使用的標準表單，以協助您保護此類資訊。 本主題說明文件指紋背後的概念，以及如何使用 PowerShell 建立一個概念。
-ms.openlocfilehash: 0c1fb86e4176c042a6ed772b2a18fc14ca81efcd
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1542b956d0a1f662e059ca59ea346a8afc439c83
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547139"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918499"
 ---
 # <a name="document-fingerprinting"></a>文件指紋
 
@@ -53,7 +53,7 @@ ms.locfileid: "47547139"
   
 ### <a name="supported-file-types"></a>支援的檔案類型
 
-檔指紋支援的檔案類型與郵件流程規則中支援的檔案類型相同 (也稱為 transport rules) 。 如需支援的檔案類型清單，請參閱 [郵件流程規則內容檢查支援的檔案類型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。 有關檔案類型的快速附注：郵件流程規則或檔指紋都不支援 dotx 檔案類型，因為這是 Word 的範本檔案，所以很容易混淆。 您在本主題和其他文件指紋主題中所看見的「範本」一詞，都是指您建立為標準表單的文件，而不是範本檔案類型。
+檔指紋支援的檔案類型與郵件流程規則中支援的檔案類型相同 (也稱為 transport rules) 。 如需支援的檔案類型清單，請參閱 [郵件流程規則內容檢查支援的檔案類型](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。 有關檔案類型的快速附注：郵件流程規則或檔指紋都不支援 dotx 檔案類型，因為這是 Word 的範本檔案，所以很容易混淆。 您在本主題和其他文件指紋主題中所看見的「範本」一詞，都是指您建立為標準表單的文件，而不是範本檔案類型。
   
 #### <a name="limitations-of-document-fingerprinting"></a>文件指紋的限制
 
@@ -65,7 +65,7 @@ ms.locfileid: "47547139"
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>使用 PowerShell 建立以檔指紋為基礎的分類規則套件
 
-請注意，目前您可以使用安全性與合規性中心的 PowerShell，只建立檔指紋 &amp; 。 若要連接，請參閱 [connect To Security & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+請注意，目前您可以使用安全性與合規性中心的 PowerShell，只建立檔指紋 &amp; 。 若要連接，請參閱 [connect To Security & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 DLP 使用分類規則套件來偵測敏感內容。 若要根據檔指紋建立分類規則套件，請使用 **新的-DlpFingerprint** 和 **DlpSensitiveInformationType** Cmdlet。 由於 **DlpFingerprint** 的結果不會儲存在資料分類規則之外，因此您必須在相同的 PowerShell 會話中執行 **new-DlpFingerprint** and **new-DlpSensitiveInformationType** 或 **Set DlpSensitiveInformationType** 。 下列範例會根據 C:\My Documents\Contoso Employee Template.docx 檔案建立新的文件指紋。 您可以將新的指紋儲存為變數，以便在同一 PowerShell 會話中搭配 **新的 DlpSensitiveInformationType** Cmdlet 使用。
   
@@ -90,7 +90,7 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-在 Exchange Online 中，您也可以使用郵件流程規則中的資料分類規則套件，如下列範例所示。 若要執行此命令，您必須先連線 [到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 另外請注意，規則套件從安全性合規性中心同步處理至 Exchange 系統管理中心所需的時間 &amp; 。
+在 Exchange Online 中，您也可以使用郵件流程規則中的資料分類規則套件，如下列範例所示。 若要執行此命令，您必須先連線 [到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 另外請注意，規則套件從安全性合規性中心同步處理至 Exchange 系統管理中心所需的時間 &amp; 。
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
@@ -100,8 +100,8 @@ DLP 現在會偵測符合 Contoso 客戶 Form.docx 檔指紋的檔。
   
 如需語法及參數的資訊，請參閱：
 
-- [新 DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/New-DlpFingerprint)
-- [新 DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/New-DlpSensitiveInformationType)
-- [Remove-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Remove-DlpSensitiveInformationType)
-- [Set-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Set-DlpSensitiveInformationType)
-- [DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Get-DlpSensitiveInformationType)
+- [新 DlpFingerprint](/powershell/module/exchange/New-DlpFingerprint)
+- [新 DlpSensitiveInformationType](/powershell/module/exchange/New-DlpSensitiveInformationType)
+- [Remove-DlpSensitiveInformationType](/powershell/module/exchange/Remove-DlpSensitiveInformationType)
+- [Set-DlpSensitiveInformationType](/powershell/module/exchange/Set-DlpSensitiveInformationType)
+- [DlpSensitiveInformationType](/powershell/module/exchange/Get-DlpSensitiveInformationType)

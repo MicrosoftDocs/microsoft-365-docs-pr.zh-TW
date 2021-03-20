@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: 使用本文中的 PowerShell 腳本，可在 Office 365 或 Microsoft 365 中的規範中心內快速複製現有的內容搜尋。
-ms.openlocfilehash: 9bc9329d31ae27736bdcd399c555f5d70bb9c761
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: c64cec2415819dc53f30c303c241e3902f34017d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357901"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918059"
 ---
 # <a name="clone-a-content-search"></a>複製內容搜尋
 
@@ -47,7 +47,7 @@ ms.locfileid: "47357901"
     
 - 此腳本會考慮您要製作的內容搜尋是否與 eDiscovery 案例相關聯。 如果搜尋與案例相關聯，則新的搜尋也會與同一個案例產生關聯。 如果現有的搜尋未與案例相關聯，則新的搜尋會列在「規範中心」的 [ **內容搜尋** ] 頁面上。 
     
-- 在任何 Microsoft standard support 方案或服務下，都不支援本主題中提供的範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
+- 在任何 Microsoft standard support 方案或服務下，都不支援本主題中提供的範例腳本。 範例指令碼係依「現狀」提供，不含任何種類的擔保方式。 Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。 使用或操作範例指令碼和文件發生的所有風險，皆屬於您的責任。 Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
   
 ## <a name="step-1-run-the-script-to-clone-a-search"></a>步驟1：執行腳本以複製搜尋
 
@@ -131,7 +131,7 @@ ms.locfileid: "47357901"
 
 4. 當系統提示您輸入認證時，請輸入您的電子郵件地址和密碼，然後按一下 **[確定]**。
     
-5. 當腳本提示時，請輸入下列資訊。 輸入每一條資訊，然後按 **enter**鍵。
+5. 當腳本提示時，請輸入下列資訊。 輸入每一條資訊，然後按 **enter** 鍵。
     
     - 現有搜尋的名稱。
     
@@ -147,4 +147,4 @@ ms.locfileid: "47357901"
     
 - [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
     
-- [電子文件探索案例](ediscovery-cases.md)
+- [電子文件探索案例](./get-started-core-ediscovery.md)

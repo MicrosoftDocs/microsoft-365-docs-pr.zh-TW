@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 請確保您的遠端工作者能夠存取內部部署資源，同時將 Microsoft 365 雲端服務的存取最佳化。
-ms.openlocfilehash: 43000ce27fc24dbc6c2db3782b0ed40aa66b7fd2
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: ae86013ea1235c6dfd9929fd329cb0b2dba0fb93
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055528"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918347"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步驟 2： 可遠端存取內部部署應用程式和服務
 
@@ -55,7 +55,7 @@ Microsoft 365 流量必須透過貴組織進行間接路由，這可能是從距
 
 您可以利用分割通道設定 VPN 用戶端，以排除透過 VPN 連線傳送到組織網路的特定類型流量。
 
-若要將 Microsoft 365 雲端資源的存取最佳化，請設定分割通道 VPN 用戶端，排除透過 VPN 連線到 **最佳化** 類別 Microsoft 365 端點的流量。 如需詳細資訊，請參閱 [Office 365 端點類別](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories) (部分機器翻譯)。 請參閱[本清單](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)，以了解最佳化類別端點。
+若要將 Microsoft 365 雲端資源的存取最佳化，請設定分割通道 VPN 用戶端，排除透過 VPN 連線到 **最佳化** 類別 Microsoft 365 端點的流量。 如需詳細資訊，請參閱 [Office 365 端點類別](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) (部分機器翻譯)。 請參閱[本清單](../enterprise/urls-and-ip-address-ranges.md)，以了解最佳化類別端點。
 
 以下是產生的流量，其中連至 Microsoft 365 雲端應用程式的大部分流量會略過 VPN 連線。
 
@@ -63,7 +63,7 @@ Microsoft 365 流量必須透過貴組織進行間接路由，這可能是從距
 
 如此可讓 VPN 用戶端直接透過網際網路傳送和接收重要的 Microsoft 365 雲端服務流量，並透過最接近的進入點到 Microsoft 網路。
 
-如需詳細資訊和指導方針，請參閱[使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel??)。
+如需詳細資訊和指導方針，請參閱[使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](../enterprise/microsoft-365-vpn-split-tunnel.md)。
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>當您的所有應用程式都為 Web 應用程式且您擁有混合式身分識別時，部署遠端存取
 
@@ -73,7 +73,7 @@ Microsoft 365 流量必須透過貴組織進行間接路由，這可能是從距
 
 ![Azure AD 應用程式 Proxy 的元件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-如需詳細資訊，請參閱這個 [Azure AD 應用程式 Proxy 概觀](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) (部分機器翻譯)。
+如需詳細資訊，請參閱這個 [Azure AD 應用程式 Proxy 概觀](/azure/active-directory/manage-apps/application-proxy) (部分機器翻譯)。
 
 >[!Note]
 >Azure AD 應用程式 Proxy 未包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
@@ -87,7 +87,7 @@ P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴�
 
 ![Azure P2S VPN 的元件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
-如需詳細資訊，請參閱這個 [P2S VPN 概觀](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about) (部分機器翻譯)。
+如需詳細資訊，請參閱這個 [P2S VPN 概觀](/azure/vpn-gateway/point-to-site-about) (部分機器翻譯)。
 
 >[!Note]
 >Azure P2S VPN 不包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
@@ -99,7 +99,7 @@ P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴�
 
 ![Azure Windows 虛擬桌面元件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-如需詳細資訊，請參閱此 [Windows 虛擬桌面的概觀](https://docs.microsoft.com/azure/virtual-desktop/overview)。 
+如需詳細資訊，請參閱此 [Windows 虛擬桌面的概觀](/azure/virtual-desktop/overview)。 
 
 >[!Note]
 >Windows 虛擬桌面不包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
@@ -116,7 +116,7 @@ P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴�
 ## <a name="admin-technical-resources-for-remote-access"></a>適用於遠端存取的系統管理技術資源
 
 - [如何快速優化遠端員工的 Office 365 流量，並降低基礎結構負載](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571) (英文)
-- [使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)
+- [使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](../enterprise/microsoft-365-vpn-split-tunnel.md)
 
 ## <a name="results-of-step-2"></a>步驟 2 的結果
 
@@ -136,4 +136,3 @@ P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴�
 [![步驟 3：部署 Microsoft 365 安全性與合規性服務](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
 
 繼續進行[步驟 3](empower-people-to-work-remotely-security-compliance.md) 部署 Microsoft 365 安全性與合規性服務，以保護您的應用程式、資料和裝置。
-

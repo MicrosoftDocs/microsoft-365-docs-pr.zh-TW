@@ -18,12 +18,12 @@ description: 瞭解如何在 Office 365 中識別及修復 Outlook 規則和自�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30ddd5f57dee2156504211e76304d346a63e192d
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 0846051b65b34ec26358f87bb4ca49302573e6e7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406697"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917043"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>偵測並修復 Outlook 規則和自訂表單注入攻擊
 
@@ -110,7 +110,7 @@ ms.locfileid: "50406697"
 
 4. 請參閱規則描述，以取得啟動和應用程式或參考的規則動作。Exe。ZIP 檔或啟動 URL。
 
-5. 尋找任何開始使用 Outlook 進程識別碼的新程式。 請參閱 [尋找進程識別碼](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-the-process-id)。
+5. 尋找任何開始使用 Outlook 進程識別碼的新程式。 請參閱 [尋找進程識別碼](/windows-hardware/drivers/debugger/finding-the-process-id)。
 
 ### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>使用 Outlook 用戶端確認表單攻擊的步驟
 
@@ -176,19 +176,19 @@ ms.locfileid: "50406697"
 
 #### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Exchange 伺服器上的信箱步驟
 
-1. 使用遠端 PowerShell 連接至 Exchange 伺服器。 依照 [[使用遠端 PowerShell 連線到 Exchange 伺服器]](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)中的步驟進行。
+1. 使用遠端 PowerShell 連接至 Exchange 伺服器。 依照 [[使用遠端 PowerShell 連線到 Exchange 伺服器]](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)中的步驟進行。
 
-2. 如果您想要完全移除單一規則、多個規則或所有來自信箱的規則，請使用 [Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) Cmdlet。
+2. 如果您想要完全移除單一規則、多個規則或所有來自信箱的規則，請使用 [Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) Cmdlet。
 
-3. 如果您想要保留規則及其內容以進行進一步調查，請使用 [Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) Cmdlet。
+3. 如果您想要保留規則及其內容以進行進一步調查，請使用 [Disable-InboxRule](/powershell/module/exchange/disable-inboxrule) Cmdlet。
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online 中的信箱步驟
 
-1. 依照 [[使用 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中的步驟進行。
+1. 依照 [[使用 PowerShell 連線到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)中的步驟進行。
 
-2. 如果您想要完全移除單一規則、多個規則或所有來自信箱的規則，請使用 [ [移除收件匣規則](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) ] Cmdlet。
+2. 如果您想要完全移除單一規則、多個規則或所有來自信箱的規則，請使用 [ [移除收件匣規則](/powershell/module/exchange/Remove-InboxRule) ] Cmdlet。
 
-3. 如果您想要保留規則及其內容以進行進一步調查，請使用 [Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) Cmdlet。
+3. 如果您想要保留規則及其內容以進行進一步調查，請使用 [Disable-InboxRule](/powershell/module/exchange/disable-inboxrule) Cmdlet。
 
 ## <a name="how-to-minimize-future-attacks"></a>如何最小化未來的攻擊
 
@@ -198,7 +198,7 @@ ms.locfileid: "50406697"
 
 保護使用者帳戶的最佳方法（特別是管理員帳戶）是為 [使用者設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。 您也應該：
 
-- 監視如何 [存取及使用](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)您的使用者帳戶。 您可能不會防止初始遭到破壞，但是您會儘早偵測，以縮短破壞的持續時間和破壞影響。 您可以使用這些 [Office 365 雲端 App 安全性原則](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) ，監控不尋常活動的帳戶和警示：
+- 監視如何 [存取及使用](/azure/active-directory/active-directory-view-access-usage-reports)您的使用者帳戶。 您可能不會防止初始遭到破壞，但是您會儘早偵測，以縮短破壞的持續時間和破壞影響。 您可以使用這些 [Office 365 雲端 App 安全性原則](/cloud-app-security/what-is-cloud-app-security) ，監控不尋常活動的帳戶和警示：
 
   - **多個失敗的登入嘗試**：這個原則設定檔您的環境，當使用者在與所學的基準相關的單一會話中執行多個失敗的登入活動時，便會觸發警示，這可能表示企圖遭到破壞。
 
@@ -226,7 +226,7 @@ ms.locfileid: "50406697"
 
 ### <a name="third-monitor-your-outlook-clients"></a>第三：監控 Outlook 用戶端
 
-請注意，即使已安裝修補程式和更新，攻擊者還是可以變更本機電腦設定，以重新啟用「啟動應用程式」行為。 您可以使用 [高級群組原則管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) ，在用戶端上監視及強制執行本機電腦原則。
+請注意，即使已安裝修補程式和更新，攻擊者還是可以變更本機電腦設定，以重新啟用「啟動應用程式」行為。 您可以使用 [高級群組原則管理](/microsoft-desktop-optimization-pack/agpm/) ，在用戶端上監視及強制執行本機電腦原則。
 
 您可以使用 [Windows 的64位版本](https://support.microsoft.com/help/305097)資訊，查看是否已透過登錄中的覆寫來重新啟用「啟動應用程式」。 請檢查下列子項：
 
@@ -236,7 +236,7 @@ ms.locfileid: "50406697"
 
 尋找機碼 EnableUnsafeClientMailRules。 如果已存在，且已設定為1，Outlook 安全性修補程式已被取代，且電腦受到表單/規則攻擊的影響。 如果值為0，就會停用「啟動應用程式」動作。 如果已安裝更新及修補的 Outlook 版本，但此登錄機碼不存在，系統就不會受到攻擊。
 
-使用內部部署 Exchange 安裝的客戶應考慮封鎖舊版本的 Outlook，但沒有可用的修補程式。 有關此程式的詳細資訊，請參閱 [設定 Outlook 用戶端封鎖](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)一文。
+使用內部部署 Exchange 安裝的客戶應考慮封鎖舊版本的 Outlook，但沒有可用的修補程式。 有關此程式的詳細資訊，請參閱 [設定 Outlook 用戶端封鎖](/exchange/configure-outlook-client-blocking-exchange-2013-help)一文。
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Microsoft 365
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何定義及管理 DLP 原則的警示。
-ms.openlocfilehash: 7bc9d9b59c0424792f995be42591548b758c99ec
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766418"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917859"
 ---
 # <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>設定及查看 DLP 原則的警示 (預覽) 
 
@@ -44,7 +44,7 @@ ms.locfileid: "50766418"
     -   裝置
 -   **高級警示設定選項**：這些選項是 DLP 原則撰寫流程的一部分。 使用它們來建立豐富的警示設定。 您可以根據事件數目或洩漏的資料大小，來建立單一事件警示或匯總警示。
 
-## <a name="before-you-begin"></a>事前準備
+## <a name="before-you-begin"></a>開始之前
 
 開始之前，請確定您具備必要的必要條件：
 
@@ -54,9 +54,9 @@ ms.locfileid: "50766418"
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP 警示管理儀表板的授權
 
-Office 365 DLP 所有合格租使用者皆可存取新的 DLP 警示管理儀表板。 若要開始，您應該具備適用于 Exchange Online、SharePoint 線上和商務 OneDrive 的 Office 365 DLP。 如需有關 Office 365 DLP 授權需求的詳細資訊，請參閱 [哪些授權可為使用者提供從服務受益的許可權？](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
+Office 365 DLP 所有合格租使用者皆可存取新的 DLP 警示管理儀表板。 若要開始，您應該具備適用于 Exchange Online、SharePoint 線上和商務 OneDrive 的 Office 365 DLP。 如需有關 Office 365 DLP 授權需求的詳細資訊，請參閱 [哪些授權可為使用者提供從服務受益的許可權？](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
 
-參與 [端點 dlp](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide) 公開預覽或具備 [團隊 dlp](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide) 資格之使用者的客戶，將會看到其 Endpoint Dlp 原則警示和團隊 dlp 警示管理儀表板中的「dlp 原則警示」。
+參與 [端點 dlp](./endpoint-dlp-learn-about.md?view=o365-worldwide) 公開預覽或具備 [團隊 dlp](./dlp-microsoft-teams.md?view=o365-worldwide) 資格之使用者的客戶，將會看到其 Endpoint Dlp 原則警示和團隊 dlp 警示管理儀表板中的「dlp 原則警示」。
 
 ### <a name="licensing-for-alert-configuration-options"></a>警示設定選項的授權
 
