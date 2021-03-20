@@ -14,12 +14,12 @@ metadata:
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
   ms.date: 07/21/2020
-  ms.openlocfilehash: bdbdd8d2709bc70923eddf54af4c9b719789ad48
-  ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+  ms.openlocfilehash: 13e1804a14bc41365d7c2a8757694f7dfecd7d76
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/11/2020
-  ms.locfileid: "49658161"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50912439"
 title: Microsoft 365 商務進階版常見問題集
 summary: ''
 sections:
@@ -73,7 +73,7 @@ sections:
       **其他權利**：
 
 
-      - Microsoft 365 商務進階版客戶也可以存取 Windows 虛擬桌面和 Office 共用電腦啟用功能。 若要深入了解，請參閱 [Microsoft 365 商務進階版部落格](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另請參閱 [Microsoft 365 for business 服務說明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
+      - Microsoft 365 商務進階版客戶也可以存取 Windows 虛擬桌面和 Office 共用電腦啟用功能。 若要深入了解，請參閱 [Microsoft 365 商務進階版部落格](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另請參閱 [Microsoft 365 for business 服務說明](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
   - question: 誰應考慮採用 Microsoft 365 商務進階版？
     answer: >
       Microsoft 365 商務進階版是一項全面的雲端安全性解決方案，可讓您：
@@ -111,7 +111,7 @@ sections:
       如果您目前執行的硬體執行 Windows 7 專業版或更新版本，它可能符合 Microsoft 365 商務進階版的最低需求。 某些 Windows 10 功能，例如 Cortana、Windows Hello 和多點觸控，需要只有較新的電腦可用的特定硬體。 如需其他資訊，請參閱 [Windows 10 專業版系統需求](https://www.microsoft.com/windows/windows-10-specifications)。
 
 
-      Windows 10 中與現有傳統型 (Win32) 應用程式的相容性很強大，大部分現有的應用程式不需要任何變更就能運作。 客戶及其信任的 IT 顧問應該閱讀建議的應用程式測試程序以了解 [Windows 10 相容性](https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process)，並且檢閱 [Office 系統需求](https://products.office.com/office-system-requirements#subscription-plans-section)以確保順利轉換到 Microsoft 365 商務進階版。
+      Windows 10 中與現有傳統型 (Win32) 應用程式的相容性很強大，大部分現有的應用程式不需要任何變更就能運作。 客戶及其信任的 IT 顧問應該閱讀建議的應用程式測試程序以了解 [Windows 10 相容性](/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process)，並且檢閱 [Office 系統需求](https://products.office.com/office-system-requirements#subscription-plans-section)以確保順利轉換到 Microsoft 365 商務進階版。
   - question: 什麼是 Windows 10 商務版？
     answer: >
       Windows 10 商務版是一組雲端服務和裝置管理功能，這些功能彌補了 Windows 10 專業版的不足，並且啟用 Microsoft 365 商務進階版的集中式管理和安全性控制。
@@ -172,7 +172,7 @@ sections:
   questions:
   - question: 客戶在規劃 Microsoft 365 商務進階版部署時，應考慮哪些事項？
     answer: >
-      成功部署 Microsoft 365 商務進階版的最直接途徑是與 Microsoft 合作夥伴接洽。 他們接受過大量訓練，遇到過各種不同的客戶案例，因此絕對最能了解您的環境和需求。 擁有資深 IT 人員的客戶，可以使用 [Microsoft 365 商務進階版入門](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)來協助進行 Microsoft 365 商務進階版部署。
+      成功部署 Microsoft 365 商務進階版的最直接途徑是與 Microsoft 合作夥伴接洽。 他們接受過大量訓練，遇到過各種不同的客戶案例，因此絕對最能了解您的環境和需求。 擁有資深 IT 人員的客戶，可以使用 [Microsoft 365 商務進階版入門](../microsoft-365-business-overview.md)來協助進行 Microsoft 365 商務進階版部署。
   - question: Microsoft 365 商務進階版是否包含完整的 Microsoft Intune 功能？
     answer: 是的，已授權 Microsoft 365 商務版的訂戶使用完整的 Intune 功能，以供 iOS、Android、macOS 及其他跨平臺裝置管理使用。 在 Microsoft 365 商務版的簡化管理主控台中無法使用的功能，如協力廠商應用程式管理、Wi-Fi 設定檔的設定，以及 VPN 憑證，可在完整的 Intune 主控台中管理。
   - question: Azure Active Directory (Azure AD) 優質 P1 是否隨附 Microsoft 365 商務版 Premium？
@@ -188,7 +188,7 @@ sections:
     answer: 可以新增至 Microsoft 365 商務標準版的所有附加元件，都可以新增至 Microsoft 365 商務進階版。 這表示您可以購買 Office 365 Cloud App Security、Advanced 合規性、威脅情報、MyAnalytics、Power BI Pro 和音訊會議。
   - question: 是否可以將電話系統和通話方案新增至 Microsoft 365 商務進階版？
     answer: >
-      是的，您可以購買商務語音訂閱。 [商務語音](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) 是一種電話語音解決方案，針對最高達300個使用者的中小企業，可捆綁電話系統、音訊會議、國內通話方案等等。 您將取得的電話系統功能包括語音信箱、來電者識別碼、通話駐留、來電轉接、自動語音應答及通話佇列。 <br> 若要瞭解您的國家或地區是否可使用商務語音，請參閱 [商務語音的國家和地區可用性](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)。 如需定價資訊，請參閱 [商務語音的定價](https://go.microsoft.com/fwlink/?linkid=2127221)。
+      是的，您可以購買商務語音訂閱。 [商務語音](/microsoftteams/business-voice/whats-business-voice) 是一種電話語音解決方案，針對最高達300個使用者的中小企業，可捆綁電話系統、音訊會議、國內通話方案等等。 您將取得的電話系統功能包括語音信箱、來電者識別碼、通話駐留、來電轉接、自動語音應答及通話佇列。 <br> 若要瞭解您的國家或地區是否可使用商務語音，請參閱 [商務語音的國家和地區可用性](/microsoftteams/business-voice/country-region-availability)。 如需定價資訊，請參閱 [商務語音的定價](https://go.microsoft.com/fwlink/?linkid=2127221)。
   - question: Microsoft 365 商務版客戶是否可以使用 Microsoft Defender for Endpoint？
     answer: >
       是的，當從 [Microsoft 雲端解決方案提供者](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)購買時，microsoft Defender for Endpoint 可以做為 Microsoft 365 商務版的附加元件。
