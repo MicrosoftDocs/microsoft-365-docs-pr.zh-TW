@@ -11,8 +11,9 @@
         - name: 優先帳戶的安全性建議
           href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: 身分識別與裝置存取設定
-      href: ./office-365-security/microsoft-365-policies-configurations.md
       items:
+        - name: 概觀
+          href: ./office-365-security/microsoft-365-policies-configurations.md
         - name: 必要工作
           href: ./office-365-security/identity-access-prerequisites.md
         - name: 一般身分識別與裝置存取原則
@@ -360,6 +361,8 @@
               href: ./mtp/overview-security-center.md
             - name: 威脅總管 (及即時偵測)
               href: ./office-365-security/threat-explorer.md
+            - name: 電子郵件實體頁面
+              href: ./office-365-security/mdo-email-entity-page.md
             - name: AIR 概觀
               href: ./office-365-security/office-365-air.md
             - name: 自動調查及回應的運作方式
@@ -702,8 +705,8 @@
                 - name: 在獨立版 EOP 中管理角色群組
                   href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 企業版
-      href: 'https://docs.microsoft.com/microsoft-365/enterprise'
+      href: ../enterprise/index.yml
     - name: 商務用 Microsoft 365
-      href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
+      href: ./index.yml
     - name: Microsoft 365 合規性
-      href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+      href: ../compliance/index.yml
