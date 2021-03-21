@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 971382e5da5b8bedf7527a7f30ae81dcbffdebdd
-  ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+  ms.openlocfilehash: 6a670287c98d185e4b9acfeb39715c5e1ddf177a
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/19/2020
-  ms.locfileid: "49356688"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50928973"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -41,15 +41,15 @@ landingContent:
   - linkListType: get-started
     links:
     - text: 保護遠端員工的安全
-      url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
+      url: /enterprise-mobility-security/remote-work/
 - title: 適用於身分識別的 Microsoft Defender
   linkLists:
   - linkListType: overview
     links:
     - text: 什麼是適用於身分識別的 Microsoft Defender？
-      url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
+      url: /azure-advanced-threat-protection/what-is-atp
     - text: 適用於身分識別的 Microsoft Defender 架構
-      url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
+      url: /azure-advanced-threat-protection/atp-architecture
 - title: 適用於 Office 365 的 Microsoft Defender
   linkLists:
   - linkListType: overview
@@ -57,31 +57,31 @@ landingContent:
     - text: 什麼是適用於 Office 365 的 Defender？
       url: office-365-security/office-365-atp.md
     - text: 適用於 Office 365 的 Defender 服務描述
-      url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+      url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
 - title: 適用於端點的 Defender
   linkLists:
   - linkListType: overview
     links:
     - text: 什麼是適用於端點的 Microsoft Defender？
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+      url: /windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
     - text: 功能概觀
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
+      url: /windows/security/threat-protection/microsoft-defender-atp/overview
 - title: Azure Defender
   linkLists:
   - linkListType: overview
     links:
     - text: 什麼是 Azure Defender？
-      url: https://docs.microsoft.com/azure/security-center/security-center-intro
+      url: /azure/security-center/security-center-intro
     - text: 支援的功能
-      url: https://docs.microsoft.com/azure/security-center/security-center-services
+      url: /azure/security-center/security-center-services
 - title: Microsoft Cloud App Security
   linkLists:
   - linkListType: overview
     links:
     - text: 什麼是 Microsoft Cloud App Security?
-      url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+      url: /cloud-app-security/what-is-cloud-app-security
     - text: 開始使用 Microsoft Cloud App Security
-      url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
+      url: /cloud-app-security/getting-started-with-cloud-app-security
 - title: 安全性管理
   linkLists:
   - linkListType: overview
@@ -93,4 +93,4 @@ landingContent:
   - linkListType: overview
     links:
     - text: 什麼是 Azure Sentinel?
-      url: https://docs.microsoft.com/azure/sentinel/overview
+      url: /azure/sentinel/overview
