@@ -20,7 +20,7 @@
       href: subscriptions/renew-your-subscription.md
     - name: 重新啟動您的訂閱
       href: subscriptions/reactivate-your-subscription.md
-    - name: 取消訂閱
+    - name: 取消您的訂閱
       href: subscriptions/cancel-your-subscription.md
     - name: 訂閱到期時該怎麼辦？
       href: subscriptions/what-if-my-subscription-expires.md
@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: 將使用者移至其他訂閱
       href: subscriptions/move-users-different-subscription.md
+    - name: 管理自動聲明原則
+      href: licenses/manage-auto-claim-policies.md
     - name: 了解訂閱與授權
       href: licenses/subscriptions-and-licenses.md
 - name: 帳單與付款
@@ -67,7 +69,7 @@
     - name: 管理計費帳戶
       href: manage-billing-accounts.md
     - name: 建立租用戶與帳單帳戶的關聯
-      href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: 管理與合作夥伴之間的關係
   href: manage-partners.md
 - name: 關閉您的帳戶

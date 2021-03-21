@@ -10,21 +10,21 @@ metadata:
   author: jaimeo
   ms.author: jaimeo
   ms.date: 12/04/2020
-  ms.openlocfilehash: 59d8d4ae0986af58c086ea08f486feca5cb23f71
-  ms.sourcegitcommit: 9d5ddfc856926ce6919498c9c42a7421fef78328
+  ms.openlocfilehash: b2feb587c93d9bc6f0bc208ad48f3bfff8266d5a
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/04/2020
-  ms.locfileid: "49576772"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50920629"
 landingContent:
 - title: 關於 Microsoft 受管理的電腦
   linkLists:
   - linkListType: overview
     links:
     - text: 什麼是 Microsoft 受管理的電腦？
-      url: /microsoft-365/managed-desktop/intro/
+      url: ./intro/index.md
     - text: 服務描述
-      url: /microsoft-365/managed-desktop/service-description
+      url: ./service-description/index.md
   - linkListType: get-started
     links:
     - text: 準備就緒
@@ -32,7 +32,7 @@ landingContent:
     - text: 開始使用
       url: get-started/index.md
     - text: 使用 Microsoft 受管理的電腦
-      url: /microsoft-365/managed-desktop/working-with-managed-desktop/
+      url: ./working-with-managed-desktop/index.md
 - title: 文章和部落格文章
   linkLists:
   - linkListType: learn
