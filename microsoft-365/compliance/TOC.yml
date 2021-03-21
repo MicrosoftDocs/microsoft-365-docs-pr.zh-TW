@@ -604,11 +604,11 @@
               href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: 進階電子文件探索
       items:
-        - name: 進階電子文件探索概觀
+        - name: 概觀
           href: overview-ediscovery-20.md
         - name: 設定進階電子文件探索
           href: get-started-with-advanced-ediscovery.md
-        - name: 建立進階電子文件探索案例
+        - name: 建立和管理案例
           href: create-and-manage-advanced-ediscoveryv2-case.md
         - name: 管理監管人和非監管資料來源
           href: managing-custodians.md
@@ -720,8 +720,6 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: 進階電子文件探索參考資料
           items:
-            - name: 進階電子文件探索對齊 EDRM
-              href: advanced-ediscovery-edrm.md
             - name: 進階電子文件探索限制
               href: limits-ediscovery20.md
             - name: 支援的檔案類型
@@ -787,11 +785,11 @@
         - name: Office 365 管理活動 API
           items:
             - name: Office 365 管理活動 API 參考
-              href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference'
+              href: /office/office-365-management-api/office-365-management-activity-api-reference
             - name: Office 365 管理活動 API 架構
-              href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema'
+              href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 管理活動 API 常見問題和疑難排解
-              href: 'https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api'
+              href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: 信箱稽核
       href: enable-mailbox-auditing.md
     - name: 進階稽核
@@ -846,8 +844,8 @@
         - name: 將 IRM 設定為使用內部部署 AD RMS 伺服器
           href: configure-irm-to-use-an-on-premises-ad-rms-server.md
 - name: Microsoft 365 企業版
-  href: 'https://docs.microsoft.com/microsoft-365/enterprise/'
+  href: ../enterprise/index.yml
 - name: Microsoft 365 安全性
-  href: 'https://docs.microsoft.com/microsoft-365/security/'
+  href: ../security/index.yml
 - name: Microsoft 365 Apps 商務版
-  href: 'https://docs.microsoft.com/office365/admin/admin-home'
+  href: /office365/admin/admin-home
