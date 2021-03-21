@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: 這些概述步驟的設計是為了協助您設定網路、建立您的身分識別、部署 Microsoft 365 應用程式，以及遷移您的資料。
-ms.openlocfilehash: 65465b56c5bf9846dab8678b96e17b0646060c74
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f750b14738de20251e1f218679384dcf8db4d1e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688427"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924889"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>為您的組織部署 Microsoft 365 Enterprise
 
@@ -58,11 +58,11 @@ ms.locfileid: "46688427"
 
    包括判斷 identity model (僅限雲端或混合) ，以及混合身分識別，在您的內部部署 Active Directory 網域服務之間設定目錄同步處理 (AD DS) 和您的 Microsoft 365 訂閱。
 
-3. [實施安全性](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)
+3. [實施安全性](/office365/securitycompliance/security-roadmap)
 
    在前30天、90天和之後，包含針對您的租使用者和身分識別，設定及推出基本和增強的安全性、威脅和資訊保護。
  
-4. [部署用戶端軟體](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
+4. [部署用戶端軟體](/DeployOffice/deployment-guide-microsoft-365-apps)
 
    包括部署 Microsoft 365 Apps for enterprise (以前命名為 Office 365 ProPlus) ，雲端更新及永遠不是目前版本的 Office 套件 (Word、Excel、PowerPoint，以及其他在您的裝置上) 的版本。 每個 Microsoft 365 用戶端授權均包含適用于企業的 Microsoft 365 應用程式的授權。
  
@@ -74,7 +74,7 @@ ms.locfileid: "46688427"
 
    包含有關資料移轉的相關資訊，以及可讓您開始登錄重要 Microsoft 365 生產力應用程式（如 Exchange Online、SharePoint 線上及小組）的文章連結。
  
-7. [訓練您的使用者](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
+7. [訓練您的使用者](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
    包括簡短的影片，可協助您的使用者快速充分利用 Microsoft 365。
  

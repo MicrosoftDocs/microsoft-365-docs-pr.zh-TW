@@ -20,19 +20,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解如何升級為其他計畫。
-ms.openlocfilehash: e1872279ebef49cd0e3b8cf58dbd24b603cc6b3c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 62d6da5713a7785fde9e795bc22956d73616c3c3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114534"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924311"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 

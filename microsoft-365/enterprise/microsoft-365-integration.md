@@ -22,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: 在本文中，您將瞭解如何將 Microsoft 365 與您現有的目錄服務和內部部署環境整合。
-ms.openlocfilehash: 9c5e287ed4a440d1f62081a4c94e39f0f162b4dc
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: c0453b7685254ccbbb301a17749fe48549fae78d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384880"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923963"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 與內部部署環境的整合
 
@@ -64,7 +64,7 @@ ms.locfileid: "48384880"
 
 使用者使用使用者帳戶登入其內部部署環境 (網域 \ 使用者名稱) 。 當他們移至 Microsoft 365 時，他們必須使用其工作或學校帳戶 (user@domain.com) 登入。 這兩個環境中的使用者名稱相同。 當您新增 PHS 或 PTA 時，使用者的兩個環境都具有相同的密碼，但在登入 Microsoft 365 時，必須提供這些認證。 目錄與 PHS 的同步處理是最常使用的目錄同步處理。
 
-若要設定目錄同步處理，請使用 Azure AD Connect。 如需相關指示，請參閱 [設定目錄同步處理 Microsoft 365](set-up-directory-synchronization.md) 和 [Azure AD Connect with express 設定](https://go.microsoft.com/fwlink/p/?LinkId=698537)。
+若要設定目錄同步處理，請使用 Azure AD Connect。 如需相關指示，請參閱 [設定目錄同步處理 Microsoft 365](set-up-directory-synchronization.md) 和 [Azure AD Connect with express 設定](/azure/active-directory/hybrid/how-to-connect-install-express)。
 
 深入瞭解 [準備目錄同步處理至 Microsoft 365](prepare-for-directory-synchronization.md)。
 
@@ -72,13 +72,13 @@ ms.locfileid: "48384880"
 
 使用者可以使用其使用者帳戶登入其內部部署環境。 當他們移至 Microsoft 365 時，他們要麼是自動登入，要麼是使用其內部部署環境所用的相同認證（ (網域 \ 使用者名稱」) ）登入。
 
-若要設定 SSO，您也可以使用 Azure AD Connect。 如需相關指示，請參閱 [AZURE AD Connect 的自訂安裝](https://go.microsoft.com/fwlink/p/?LinkID=698430)。
+若要設定 SSO，您也可以使用 Azure AD Connect。 如需相關指示，請參閱 [AZURE AD Connect 的自訂安裝](/azure/active-directory/hybrid/how-to-connect-install-custom)。
 
-如需詳細資訊，請參閱 [單一登入](https://go.microsoft.com/fwlink/p/?LinkId=698604)。
+如需詳細資訊，請參閱 [單一登入](/azure/active-directory/manage-apps/what-is-single-sign-on)。
 
 ## <a name="azure-ad-connect"></a>Azure AD Connect
 
-Azure AD Connect 取代舊版本的身分識別整合工具，例如 DirSync 和 Azure AD Sync。如果您想要從 Azure Active Directory 同步更新至 Azure AD Connect，請參閱 [升級指示](https://go.microsoft.com/fwlink/p/?LinkId=733240)。 
+Azure AD Connect 取代舊版本的身分識別整合工具，例如 DirSync 和 Azure AD Sync。如果您想要從 Azure Active Directory 同步更新至 Azure AD Connect，請參閱 [升級指示](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started)。 
 
 ## <a name="see-also"></a>另請參閱
 

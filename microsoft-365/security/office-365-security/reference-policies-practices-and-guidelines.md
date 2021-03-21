@@ -17,12 +17,12 @@ ms.collection:
 description: Microsoft 已開發各種原則、程式，並採用數種行業最佳作法，協助保護我們的使用者免受濫用、有害或惡意的電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f53b1c36417b15e366b527dd1c12e4f23c06f632
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 8ed78e4a0f233e8d04fbcfb7d7fa7b3859bc0e17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406593"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925229"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>參考：原則、實務與指導方針
 
@@ -83,7 +83,7 @@ Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 
 
 ## <a name="microsoft-365-limits"></a>Microsoft 365 限制
 
-寄件者必須遵守 [Exchange Online Protection 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)中所列的 Microsoft 365 限制。
+寄件者必須遵守 [Exchange Online Protection 限制](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)中所列的 Microsoft 365 限制。
 
 ## <a name="email-delivery-resources-and-organizations"></a>電子郵件傳遞資源和組織
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 174db150920d2d95c043bb5d6e5a4593ea1ea39d
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 50f112f6e7198136171d070dc483ad5f84d20d57
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145424"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925759"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -39,10 +39,10 @@ ms.locfileid: "50145424"
 
  
 
-[！附注] `AADSignInEventsBeta` 高級搜尋架構中的表格包含 Azure Active Directory 互動和非互動式登入的相關資訊。深入瞭解 [Azure Active Directory 登入活動報告-預覽](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)中的登入。
+[！附注] `AADSignInEventsBeta` 高級搜尋架構中的表格包含 Azure Active Directory 互動和非互動式登入的相關資訊。深入瞭解 [Azure Active Directory 登入活動報告-預覽](/azure/active-directory/reports-monitoring/concept-all-sign-ins)中的登入。
 
 使用這個參考來建立從表格取回之資訊的查詢。
-如需進階搜捕結構描述中其他表格的資訊，請參閱 [進階搜捕參考](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference) (部分內容為機器翻譯)。
+如需進階搜捕結構描述中其他表格的資訊，請參閱 [進階搜捕參考](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference) (部分內容為機器翻譯)。
 
  
 
@@ -100,9 +100,9 @@ ms.locfileid: "50145424"
 
 ## <a name="related-articles"></a>相關文章
 
--   [AADSpnSignInEventsBeta](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-aadspnsignineventsbeta-table)
--   [進階搜捕概觀](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
--   [了解查詢語言](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
--   [了解結構描述](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
+-   [AADSpnSignInEventsBeta](./advanced-hunting-aadspnsignineventsbeta-table.md)
+-   [進階搜捕概觀](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+-   [了解查詢語言](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
+-   [了解結構描述](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
 
  

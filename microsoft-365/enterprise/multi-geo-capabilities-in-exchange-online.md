@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 深入瞭解 Exchange Online 中的多地理位置功能，例如功能限制和信箱位置。
-ms.openlocfilehash: ca7203c72f23fd03512bf23eaa5a4687e4bac1b5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688572"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923729"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
@@ -53,10 +53,10 @@ Exchange Online 會從 Azure AD 將 **PreferredDataLocation** 屬性同步處理
 
 - Mac 版 Outlook 使用者在您將他們的信箱移動到新地理位置時，可能會暫時無法存取其線上封存資料夾。 當使用者的主要信箱和封存信箱位於不同地理位置時，會發生此情況，因為跨地理位置信箱移動可能在不同的時間完成。
 
-- 使用者無法在 Outlook 網頁版 (先前稱為 Outlook Web App 或 OWA) 中跨地理位置共用*信箱資料夾*。 例如，歐盟的使用者無法使用 Outlook 網頁版來開啟位於美國信箱中的共用資料夾。 不過，如同[在另一個瀏覽器視窗中，使用 Outlook Web App 開啟另一個人的信箱](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)中所述，Outlook 網頁版使用者可以使用不同的瀏覽器視窗來開啟不同地理位置的其他信箱**。
+- 使用者無法在 Outlook 網頁版 (先前稱為 Outlook Web App 或 OWA) 中跨地理位置共用 *信箱資料夾*。 例如，歐盟的使用者無法使用 Outlook 網頁版來開啟位於美國信箱中的共用資料夾。 不過，如同[在另一個瀏覽器視窗中，使用 Outlook Web App 開啟另一個人的信箱](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)中所述，Outlook 網頁版使用者可以使用不同的瀏覽器視窗來開啟不同地理位置的其他信箱。
 
   **注意**：Windows 上的 Outlook 中支援跨地理位置信箱資料夾共用。
 
 - 多地理位置組織中支援公用資料夾。 不過，公用資料夾必須保持在中央地理位置。 您無法將公用資料夾移動至衛星地理位置。
 
-- 在地理位置環境中，不支援跨地理位置信箱稽核。 例如，如果指派給使用者的權限可以存取不同地理位置的共用信箱，則該使用者執行的信箱動作不會記錄在共用信箱的信箱稽核記錄中。 如需詳細資訊，請參閱[管理信箱稽核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide)。
+- 在地理位置環境中，不支援跨地理位置信箱稽核。 例如，如果指派給使用者的權限可以存取不同地理位置的共用信箱，則該使用者執行的信箱動作不會記錄在共用信箱的信箱稽核記錄中。 如需詳細資訊，請參閱[管理信箱稽核](../compliance/enable-mailbox-auditing.md?view=o365-worldwide)。

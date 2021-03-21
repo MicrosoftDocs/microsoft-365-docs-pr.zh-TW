@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 瞭解如何使用 PowerShell 一次從來源電子郵件系統移動內容，方法是對 Microsoft 365 執行完全遷移。
-ms.openlocfilehash: 74e7791c4292598e4717e56af25e39b3c8208108
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 60bd3cb246e04aba37be06f7a951abbf25708412
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948193"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924801"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>使用 PowerShell 以完全移轉至 Microsoft 365
 
@@ -28,40 +28,40 @@ ms.locfileid: "47948193"
 
 您可以使用完全遷移，將使用者信箱的內容從來源電子郵件系統移轉至 Microsoft 365。 本文會引導您使用 Exchange Online PowerShell 來進行電子郵件完全移轉的工作。
 
-透過複習主題， [您需要瞭解如何將電子郵件遷移到 Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536688)，您就可以瞭解遷移程式的概況。 在熟悉該文章的內容後，請使用此主題來開始在不同電子郵件系統中移轉信箱。
+透過複習主題， [您需要瞭解如何將電子郵件遷移到 Microsoft 365](/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration)，您就可以瞭解遷移程式的概況。 在熟悉該文章的內容後，請使用此主題來開始在不同電子郵件系統中移轉信箱。
 
 > [!NOTE]
-> 您也可以使用 Exchange 系統管理中心來執行完全移轉。 請參閱 [執行電子郵件的完全遷移至 Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536689)。
+> 您也可以使用 Exchange 系統管理中心來執行完全移轉。 請參閱 [執行電子郵件的完全遷移至 Microsoft 365](/Exchange/mailbox-migration/cutover-migration-to-office-365)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-完成此工作的預估時間：2-5 分鐘來建立遷移批次。 啟動移轉批次之後，移轉所需的時間會依批次中的信箱數目、每個信箱的大小和可用的網路容量而有所不同。 如需其他影響將信箱遷移至 Microsoft 365 的因素的詳細資訊，請參閱 [遷移效能](https://go.microsoft.com/fwlink/p/?LinkId=275079)。
+完成此工作的預估時間：2-5 分鐘來建立遷移批次。 啟動移轉批次之後，移轉所需的時間會依批次中的信箱數目、每個信箱的大小和可用的網路容量而有所不同。 如需其他影響將信箱遷移至 Microsoft 365 的因素的詳細資訊，請參閱 [遷移效能](/Exchange/mailbox-migration/office-365-migration-best-practices)。
 
-您必須已獲指派的權限，才能執行此程序。若要查看您需要哪些權限，請參閱[收件者權限](https://go.microsoft.com/fwlink/p/?LinkId=534105)主題中所含表格的「移轉」項目。
+您必須已獲指派的權限，才能執行此程序。若要查看您需要哪些權限，請參閱[收件者權限](/exchange/recipients-permissions-exchange-2013-help)主題中所含表格的「移轉」項目。
 
-若要使用 Exchange Online PowerShell Cmdlet，您需要登入系統，並將 Cmdlet 匯入您的本機 Windows PowerShell 工作階段。請參閱[使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121) 的指示。
+若要使用 Exchange Online PowerShell Cmdlet，您需要登入系統，並將 Cmdlet 匯入您的本機 Windows PowerShell 工作階段。請參閱[使用遠端 PowerShell 連線到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) 的指示。
 
-若需要移轉命令的完整清單，請參閱[移動與移轉 Cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
+若需要移轉命令的完整清單，請參閱[移動與移轉 Cmdlet](/powershell/exchange/)。
 
 ## <a name="migration-steps"></a>移轉步驟
 
 ### <a name="step-1-prepare-for-a-cutover-migration"></a>步驟 1：準備完全移轉
 <a name="BK_Step1"> </a>
 
-- **將您的內部部署 Exchange 組織新增為 Microsoft 365 組織公認的網域。** 遷移服務會使用內部部署信箱的 SMTP 位址，為新的 Microsoft 365 信箱建立 Microsoft 線上服務使用者識別碼和電子郵件地址。 如果您的 Exchange 網域不是 Microsoft 365 組織的公認網域或主域，遷移將會失敗。 如需詳細資訊，請參閱 [驗證您的網域](https://go.microsoft.com/fwlink/p/?LinkId=534110)。
+- **將您的內部部署 Exchange 組織新增為 Microsoft 365 組織公認的網域。** 遷移服務會使用內部部署信箱的 SMTP 位址，為新的 Microsoft 365 信箱建立 Microsoft 線上服務使用者識別碼和電子郵件地址。 如果您的 Exchange 網域不是 Microsoft 365 組織的公認網域或主域，遷移將會失敗。 如需詳細資訊，請參閱 [驗證您的網域](../admin/setup/add-domain.md)。
 
 - **在內部部署 Exchange 伺服器上設定 Outlook 無所不在。** 電子郵件移轉服務會使用 RPC over HTTP (或 Outlook 無所不在) 連線至您的內部部署 Exchange 伺服器。如需如何為 Exchange 2010、Exchange 2007 和 Exchange 2003 設定 Outlook 無所不在的相關資訊，請參閱下列主題：
 
-  - [Exchange 2010：啟用 Outlook 無所不在](https://go.microsoft.com/fwlink/?LinkID=187249)
+  - [Exchange 2010：啟用 Outlook 無所不在](/previous-versions/office/exchange-server-2010/bb123542(v=exchg.141))
 
-  - [Exchange 2007：如何啟用 Outlook 無所不在](https://go.microsoft.com/fwlink/?LinkID=167210)
+  - [Exchange 2007：如何啟用 Outlook 無所不在](/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
 
-  - [Exchange 2003：RPC over HTTP 的部署案例](https://go.microsoft.com/fwlink/?LinkID=73657)
+  - [Exchange 2003：RPC over HTTP 的部署案例](/previous-versions/tn-archive/bb124876(v=exchg.65))
 
-  - [如何使用 Exchange 2003 設定 Outlook 無所不在](https://go.microsoft.com/fwlink/?LinkID=167209)
+  - [如何使用 Exchange 2003 設定 Outlook 無所不在](/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
 
     > [!IMPORTANT]
-    > 您的 Outlook 無所不在組態必須以信任的憑證授權單位 (CA) 所核發的憑證設定。它無法以自我簽署的憑證設定。如需詳細資訊，請參閱[如何為 Outlook 無所不在設定 SSL](https://go.microsoft.com/fwlink/?LinkID=80875)。
+    > 您的 Outlook 無所不在組態必須以信任的憑證授權單位 (CA) 所核發的憑證設定。它無法以自我簽署的憑證設定。如需詳細資訊，請參閱[如何為 Outlook 無所不在設定 SSL](/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80))。
 
 - **確認您可以使用 Outlook 無所不在連線至 Exchange 組織。** 嘗試下列其中一種方法測試您的連線設定：
 
@@ -100,9 +100,9 @@ ms.locfileid: "47948193"
 ### <a name="step-2-create-a-migration-endpoint"></a>步驟 2：建立移轉端點
 <a name="BK_Step2"> </a>
 
-若要成功遷移電子郵件，Microsoft 365 必須與來源電子郵件系統連線並進行通訊。 若要這樣做，Microsoft 365 會使用遷移端點。 若要建立 Outlook 無所不在移轉端點以進行分段移轉，請先[連線至 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。
+若要成功遷移電子郵件，Microsoft 365 必須與來源電子郵件系統連線並進行通訊。 若要這樣做，Microsoft 365 會使用遷移端點。 若要建立 Outlook 無所不在移轉端點以進行分段移轉，請先[連線至 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-若需要移轉命令的完整清單，請參閱[移動與移轉 Cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
+若需要移轉命令的完整清單，請參閱[移動與移轉 Cmdlet](/powershell/exchange/)。
 
 在 Exchange Online PowerShell 中執行下列命令：
 
@@ -110,7 +110,7 @@ ms.locfileid: "47948193"
 $Credentials = Get-Credential
 ```
 
-此範例使用 [Test-MigrationServerAvailability](https://go.microsoft.com/fwlink/p/?LinkId=534752) Cmdlet 來取得並測試內部部署 Exchange 伺服器的連線設定，然後使用那些連線設定來建立名為 "CutoverEndpoint" 的移轉端點。
+此範例使用 [Test-MigrationServerAvailability](/powershell/module/exchange/test-migrationserveravailability) Cmdlet 來取得並測試內部部署 Exchange 伺服器的連線設定，然後使用那些連線設定來建立名為 "CutoverEndpoint" 的移轉端點。
 
 ```powershell
 $TSMA = Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress administrator@contoso.com -Credentials $credentials
@@ -199,7 +199,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>第 7 節：指派使用者授權
 <a name="BK_Step7"> </a>
 
- **指派授權，為遷移的帳戶啟動 Microsoft 365 使用者帳戶。** 如果您未指派授權，則當寬限期 (30 天) 結束時就會停用信箱。 若要在 Microsoft 365 系統管理中心中指派授權，請參閱 [指派或取消指派授權](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+ **指派授權，為遷移的帳戶啟動 Microsoft 365 使用者帳戶。** 如果您未指派授權，則當寬限期 (30 天) 結束時就會停用信箱。 若要在 Microsoft 365 系統管理中心中指派授權，請參閱 [指派或取消指派授權](../admin/manage/assign-licenses-to-users.md)。
 
 ### <a name="step-8-complete-post-migration-tasks"></a>步驟 8：完成移轉後工作
 <a name="BK_Step8"> </a>
@@ -217,16 +217,14 @@ Remove-MigrationBatch -Identity CutoverBatch
 
   - **目標：** autodiscover.outlook.com
 
-    如需詳細資訊，請參閱 [新增 DNS 記錄以連接您的網域](https://go.microsoft.com/fwlink/p/?LinkId=535028)。
+    如需詳細資訊，請參閱 [新增 DNS 記錄以連接您的網域](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
 - **解除委任內部部署 Exchange 伺服器。** 在您確認所有電子郵件都直接路由傳送至 Microsoft 365 信箱之後，如果您不再需要維護內部部署電子郵件組織，或不需要維護單一登入 (SSO) 解決方案，您可以從伺服器卸載 Exchange，並移除內部部署 Exchange 組織。
 
     如需詳細資訊，請參閱下列各主題：
 
-  - [修改及移除 Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
+  - [修改及移除 Exchange 2010](/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
 
-  - [如何移除 Exchange 2007 組織](https://go.microsoft.com/fwlink/?LinkID=100485)
+  - [如何移除 Exchange 2007 組織](/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
 
-  - [如何解除安裝 Exchange Server 2003](https://go.microsoft.com/fwlink/?LinkID=56561)
-
-
+  - [如何解除安裝 Exchange Server 2003](/previous-versions/tn-archive/bb125110(v=exchg.65))

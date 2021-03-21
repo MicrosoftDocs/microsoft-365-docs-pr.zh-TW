@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 3d083537f3a9337d88d63861e0bf66867f558aba
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 2443319d254130b38bb1047a633c85c160eadd8c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454002"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925997"
 ---
 # <a name="manage-topics-in-the-topic-center"></a>管理主題中心的主題 
 
@@ -52,7 +52,7 @@ ms.locfileid: "50454002"
 若要管理主題中心的主題，您必須：
 - 具有 Viva 主題授權。
 
-- 讓 [**誰可以管理主題**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) 許可權。 知識系統管理員可以在 Viva 主題主題許可權設定中，將此許可權授與使用者。 
+- 讓 [**誰可以管理主題**](./topic-experiences-user-permissions.md) 許可權。 知識系統管理員可以在 Viva 主題主題許可權設定中，將此許可權授與使用者。 
 
 除非您有 **可以管理主題** 許可權的人員，否則您將無法在主題中心中查看「管理主題」頁面。
 
@@ -111,8 +111,4 @@ ms.locfileid: "50454002"
 ## <a name="published-topics"></a>已發佈主題
 已發佈的主題已經過編輯，使特定資訊永遠會出現在頁面出現的任何處。 手動建立的主題也會列在這裡。
 
-   ![管理主題](../media/knowledge-management/manage-topics-new.png) </br> 
-
-
-
-
+   ![管理主題](../media/knowledge-management/manage-topics-new.png) </br>

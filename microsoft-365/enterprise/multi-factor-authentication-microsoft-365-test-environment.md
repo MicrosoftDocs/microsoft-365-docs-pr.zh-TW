@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: 使用 Microsoft 365 for enterprise test 環境中傳送至 smart phone 的文字訊息，設定多重要素驗證。
-ms.openlocfilehash: 4c59405c1ce59cafaf0309e2314e5cbfa4eb080a
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: aeb8940a9499909b8c568d1230f9aa45aee07b3d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558439"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923753"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>適用于 Microsoft 365 企業版測試環境的多重要素驗證
 
@@ -80,7 +80,7 @@ ms.locfileid: "49558439"
     
 2. 請移至 [Microsoft 365 系統管理中心](https://admin.microsoft.com) ，並使用使用者2帳戶名稱和密碼登入。
     
-3. 登入後，系統會提示您設定帳戶以取得詳細資訊。 選取 **[下一步]**。
+3. 登入後，系統會提示您設定帳戶以取得詳細資訊。 選取 [下一步]。
     
 4. 在 [ **其他安全性驗證** ] 頁面上：
     
@@ -90,7 +90,7 @@ ms.locfileid: "49558439"
     
    - 在 **方法** 中，選取 [以 **文字訊息傳送程式碼**]。
     
-5. 選取 **[下一步]**。
+5. 選取 [下一步]。
     
 6. 從 smart phone 上收到的文字訊息中輸入驗證碼，然後選取 [ **驗證**]。
     
@@ -145,4 +145,4 @@ ms.locfileid: "49558439"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

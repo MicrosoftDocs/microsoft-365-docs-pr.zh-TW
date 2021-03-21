@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f438189b4ba9fb66124650782b3de2ee34dfee64
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b9cee02d921ee4d0b9b0b97a109ac9c7141e8aac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928435"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924395"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>建立應用程式以存取沒有使用者的 Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "49928435"
 
 如果您需要以程式設計方式代替一或多個使用者存取 Microsoft 365 Defender，請參閱 [create a app to an a app to Access microsoft 365 Defender APIs 代表使用者](api-create-app-user-context.md) ，並 [建立具有對 Microsoft 365 Defender APIs 的合作夥伴存取的應用程式](api-partner-access.md)。 如果您不確定需要哪種類型的存取，請參閱 [入門](api-access.md)。
 
-Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 可協助您自動化工作流程，並使用 Microsoft 365 Defender 的功能。 此 API access 需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資料和動作。 這些 APIs 可協助您自動化工作流程，並使用 Microsoft 365 Defender 的功能。 此 API access 需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般來講，您必須採取下列步驟，才能使用這些 APIs：
 
@@ -80,7 +80,7 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
     > [!NOTE]
     > 您必須選取案例的相關許可權。 *讀取所有的事件* 只是一個範例。 若要決定您需要的許可權，請參閱您想要呼叫之 API 中的 [ **許可權** ] 區段。
     >
-    > 例如，若要 [執行高級查詢](api-advanced-hunting.md)，請選取「執行高級查詢」許可權;若要 [隔離裝置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)，請選取「隔離電腦」許可權。
+    > 例如，若要 [執行高級查詢](api-advanced-hunting.md)，請選取「執行高級查詢」許可權;若要 [隔離裝置](/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)，請選取「隔離電腦」許可權。
 
 6. 選取 **[授與系統管理員同意**]。 每次您新增許可權時，都必須選取 **[授與系統管理員同意** ]，才會生效。
 
@@ -97,7 +97,7 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
 
    ![建立之應用程式識別碼的影像](../../media/app-and-tenant-ids.png)
 
-9. **僅適用于 microsoft 365 Defender 合作夥伴**： [請遵循下列指示](https://docs.microsoft.com/microsoft-365/security/mtp/api-partner-access) ，透過 microsoft 365 Defender APIs 取得合作夥伴存取權，將您的應用程式設定為多租使用者，以便在您收到系統管理員同意後，可在所有承租人中使用。 協力廠商應用程式 **需要** 合作夥伴存取，例如，如果您要建立的應用程式要在多個客戶的承租人中執行。 如果您建立只想要在租使用者中執行的服務（例如您自己使用的應用程式，只會與您自己的資料互動），就 **不需要** 這樣做。 若要將您的應用程式設為多租使用者：
+9. **僅適用于 microsoft 365 Defender 合作夥伴**： [請遵循下列指示](./api-partner-access.md) ，透過 microsoft 365 Defender APIs 取得合作夥伴存取權，將您的應用程式設定為多租使用者，以便在您收到系統管理員同意後，可在所有承租人中使用。 協力廠商應用程式 **需要** 合作夥伴存取，例如，如果您要建立的應用程式要在多個客戶的承租人中執行。 如果您建立只想要在租使用者中執行的服務（例如您自己使用的應用程式，只會與您自己的資料互動），就 **不需要** 這樣做。 若要將您的應用程式設為多租使用者：
 
     - 移至 [ **驗證**]，然後新增 https://portal.azure.com 為重新 **導向 URI**。
 
@@ -119,10 +119,10 @@ Microsoft 365 Defender 會透過一組程式設計 APIs 來公開其大部分資
 
 ## <a name="get-an-access-token"></a>取得存取權杖
 
-如需 Azure Active Directory 標記的詳細資訊，請參閱 [AZURE AD 教學](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
+如需 Azure Active Directory 標記的詳細資訊，請參閱 [AZURE AD 教學](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
 
 > [!IMPORTANT]
-> 雖然本節中的範例會鼓勵您貼上用於測試目的的機密值，否則您 **不應該將機密硬編碼** 成實際執行中執行的應用程式。 協力廠商可以使用您的機密存取資源。 您可以使用 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates)，協助保護應用程式的機密。 如需如何保護應用程式的實際範例，請參閱 [使用 Azure Key Vault 管理伺服器應用程式中的機密](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)。
+> 雖然本節中的範例會鼓勵您貼上用於測試目的的機密值，否則您 **不應該將機密硬編碼** 成實際執行中執行的應用程式。 協力廠商可以使用您的機密存取資源。 您可以使用 [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates)，協助保護應用程式的機密。 如需如何保護應用程式的實際範例，請參閱 [使用 Azure Key Vault 管理伺服器應用程式中的機密](/learn/modules/manage-secrets-with-azure-key-vault/)。
 
 ### <a name="get-an-access-token-using-powershell"></a>使用 PowerShell 取得存取權杖
 
@@ -195,7 +195,7 @@ appSecret = '' # Paste your own app secret here to test, then store it in a safe
 
 url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
 
-resourceAppIdUri = 'https://api.securitycenter.windows.com'
+resourceAppIdUri = 'https://api.security.microsoft.com'
 
 body = {
     'resource' : resourceAppIdUri,
@@ -226,7 +226,7 @@ aadToken = jsonResponse["access_token"]
 1. 執行下列命令：
 
    ```bash
-   curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
+   curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://api.security.microsoft.com/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
    ```
 
    成功的回應如下所示：
@@ -273,5 +273,5 @@ aadToken = jsonResponse["access_token"]
 - [建立具有對 Microsoft 365 Defender APIs 的多承租人合作夥伴存取權的應用程式](api-partner-access.md)
 - [深入瞭解 API 限制和授權](api-terms.md)
 - [瞭解錯誤碼](api-error-codes.md)
-- [使用 Azure Key Vault 管理伺服器應用程式中的機密](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
-- [OAuth 2.0 使用者登入和 API 存取的授權](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [使用 Azure Key Vault 管理伺服器應用程式中的機密](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [OAuth 2.0 使用者登入和 API 存取的授權](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 適用於系統管理員：了解如何使用網路上傳將多個 PST 檔案大量匯入 Microsoft 365 中的使用者信箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6248fcb96468ecfbb2b5454e40badc6293770003
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: b59ffc9d665091a5de1e5e23ab8e32be6d86f1a5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597080"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925459"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用網路上傳將組織的 PST 檔案匯入 Microsoft 365
 
@@ -49,7 +49,7 @@ ms.locfileid: "50597080"
 
 ## <a name="before-you-import-pst-files"></a>在您匯出 PST 檔案之前
   
-- 您必須在 Exchange Online 中獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增到組織管理角色群組。 或者，可以建立角色群組、指派信箱匯出匯入角色，然後將自己新增為成員。 如需詳細資訊，請參閱[管理角色群組](https://go.microsoft.com/fwlink/p/?LinkId=730688)之＜新增角色至角色群組＞或＜建立角色群組＞一節。
+- 您必須在 Exchange Online 中獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增到組織管理角色群組。 或者，可以建立角色群組、指派信箱匯出匯入角色，然後將自己新增為成員。 如需詳細資訊，請參閱[管理角色群組](/Exchange/permissions-exo/role-groups)之＜新增角色至角色群組＞或＜建立角色群組＞一節。
     
     此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：
     
@@ -233,7 +233,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     | `Mailbox` <br/> |指定將匯入 PST 檔案的信箱電子郵件地址。 您無法指定公用資料夾，因為 PST 匯入服務不支援將 PST 檔案匯入公用資料夾。  <br/> 若要將 PST 檔案匯入非作用中的信箱，您必須為此參數指定信箱 GUID。 若要取得此 GUID，請在 Exchange Online 中執行下列 PowerShell 命令：`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**注意：** 有時候，您可能會有多個信箱具有相同的電子郵件地址，其中一個信箱是作用中信箱，另一個信箱則處於虛刪除 (或非作用中) 狀態。 在這些情況下，您必須指定信箱 GUID，以唯一識別要匯入 PST 檔案的目的地信箱。 若要取得作用中信箱的此 GUID，請執行下列 PowerShell 命令：`Get-Mailbox <identity of active mailbox> | FL Guid` 若要取得虛刪除 (或非作用中) 信箱的 GUID，請執行此命令：`Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`。  <br/> | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | 指定是否要匯入 PST 檔案至使用者的封存信箱。 其中有兩個選項：  <br/><br/>**FALSE：** 將 PST 檔案匯入使用者的主要信箱。  <br/> **TRUE：** 將 PST 檔案匯入使用者的封存信箱。 這會假設[使用者的封存信箱已啟用](enable-archive-mailboxes.md)。 <br/><br/>如果您將此參數設為 `TRUE`，則使用者的封存信箱不會啟用，該使用者的匯入工作會因此失敗。 如果某個使用者的匯入工作失敗 (原因是其封存並未啟用，且此屬性設為 `TRUE`)，匯入工作中的其他使用者不會受到影響。  <br/>  如果您將此參數保留空白，則 PST 檔案會匯入到使用者的主要信箱。  <br/> <br/>**注意：** 若要替主要信箱是內部部署的使用者將 PST 檔案匯入至雲端式封存信箱，只要為此參數指定 `TRUE`，然後替 `Mailbox` 參數指定該使用者之內部部署信箱的電子郵件地址即可。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | 指定要匯入 PST 檔案的信箱資料夾。  <br/> <br/> 若此參數保留空白，PST 檔案將會匯入至名為「已匯入」的新資料夾，其位於信箱的根層級 (與「收件匣」資料夾及其他預設信箱資料夾為相同層級)。  <br/> <br/> 如果您指定 `/`，PST 檔案中的資料夾和項目會匯入目標信箱或封存中的資料夾結構的最上層。 如果目標信箱中有資料夾 (例如，[收件匣]、[寄件備份] 和 [刪除的郵件] 等預設資料夾)，系統會將 PST 中該資料夾的項目合併到目標信箱現有的資料夾。 例如，如果 PST 檔案包含 [收件匣] 資料夾，該資料夾中的項目會匯入到目標信箱中的 [收件匣] 資料夾。 如果新資料夾不存在於目標信箱的資料夾結構中，則會建立新的資料夾。  <br/><br/>  如果指定 `/<foldername>`，則 PST 檔案中的項目和資料夾會匯入名為 *\<foldername\>* 的資料夾。 例如，如果使用 `/ImportedPst`，則會將項目匯入名為 **ImportedPst** 的資料夾。 此資料夾將位於與 [收件匣] 資料夾相同層級的使用者信箱中。  <br/><br/> **秘訣：** 請考慮執行一些測試批次來嘗試使用這個參數，如此您便能決定哪裡是匯入 PST 檔案的最佳資料夾位置。  <br/> |(保留空白)  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |此選用參數可指定用於以 ANSI 檔案格式匯入 PST 檔案的字碼頁數值。 此參數用於從中文、日文和韓文 (CJK) 組織匯入 PST 檔案，因為這些語言通常使用雙位元字元集 (DBCS) 進行字元編碼。 如果此參數不用於匯入使用 DBCS 作為信箱資料夾名稱的語言的 PST 檔案，則匯入後資料夾名稱通常會出現亂碼。  <br/><br/> 如需要用於此參數的支援值清單，請參閱[字碼頁識別碼](https://go.microsoft.com/fwlink/p/?LinkId=328514)。  <br/> <br/>**注意：** 如前所述，這是一個選用參數，您不必將其包含在 CSV 檔案中。 或者您可以包含它並在一或多列中將值保留為空白。  <br/> |(保留空白)  <br/> 或  <br/>  `932` (為 ANSI/OEM 日文的字碼頁識別碼)  <br/> |
+    | `ContentCodePage` <br/> |此選用參數可指定用於以 ANSI 檔案格式匯入 PST 檔案的字碼頁數值。 此參數用於從中文、日文和韓文 (CJK) 組織匯入 PST 檔案，因為這些語言通常使用雙位元字元集 (DBCS) 進行字元編碼。 如果此參數不用於匯入使用 DBCS 作為信箱資料夾名稱的語言的 PST 檔案，則匯入後資料夾名稱通常會出現亂碼。  <br/><br/> 如需要用於此參數的支援值清單，請參閱[字碼頁識別碼](/windows/win32/intl/code-page-identifiers)。  <br/> <br/>**注意：** 如前所述，這是一個選用參數，您不必將其包含在 CSV 檔案中。 或者您可以包含它並在一或多列中將值保留為空白。  <br/> |(保留空白)  <br/> 或  <br/>  `932` (為 ANSI/OEM 日文的字碼頁識別碼)  <br/> |
     | `SPFileContainer` <br/> |針對 PST 匯入，請將此參數保留空白。  <br/> |不適用  <br/> |
     | `SPManifestContainer` <br/> |針對 PST 匯入，請將此參數保留空白。  <br/> |不適用  <br/> |
     | `SPSiteUrl` <br/> |針對 PST 匯入，請將此參數保留空白。  <br/> |不適用  <br/> |
@@ -328,7 +328,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     
   - 啟用[封存信箱](enable-archive-mailboxes.md) 和[自動延長封存](enable-unlimited-archiving.md)，為使用者提供額外的信箱儲存空間，以儲存您匯入的資料。 
     
-  - 將信箱置於[訴訟資料暫留](https://go.microsoft.com/fwlink/?linkid=856286)，以保留您匯入的資料。 
+  - 將信箱置於[訴訟資料暫留](./create-a-litigation-hold.md)，以保留您匯入的資料。 
     
   - 使用 [Microsoft eDiscovery](search-for-content.md) 工具搜尋您匯入的資料。 
     
@@ -360,9 +360,9 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
 
 - 如先前說明，PST 檔案匯入到信箱之後， Office 365 匯入服務的暫停保留設定會開啟 (為無限期)。 這表示 *RetentionHoldEnabled* 屬性設定為 **True**，因此系統不會處理指派給信箱的保留原則。 防止刪除或封存原則可防止刪除或封存較舊的郵件，這讓信箱擁有者有時間管理新匯入的郵件。 這裡是您管理此暫停保留可採取的一些步驟： 
     
-    - 一段時間之後，您可以執行 **Set-Mailbox -RetentionHoldEnabled $false** 命令來關閉暫停保留。 如需指示，請參閱[將信箱設為暫停保留](https://go.microsoft.com/fwlink/p/?LinkId=544749)。
+    - 一段時間之後，您可以執行 **Set-Mailbox -RetentionHoldEnabled $false** 命令來關閉暫停保留。 如需指示，請參閱[將信箱設為暫停保留](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
     
-   - 您可以設定暫停保留，讓它在未來某一天關閉。 方法是執行 **Set-Mailbox -EndDateForRetentionHold *date*** 命令。 例如，假設今天的日期是 2016 年 6 月 1 日，而您想要在 30 天時關閉暫停保留，您可以執行下列命令：**Set-Mailbox -EndDateForRetentionHold 7/1/2016**。 在這個案例中，您會將 **RetentionHoldEnabled** 屬性設定成 *True*。 如需詳細資訊，請參閱 [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317)。
+   - 您可以設定暫停保留，讓它在未來某一天關閉。 方法是執行 **Set-Mailbox -EndDateForRetentionHold *date*** 命令。 例如，假設今天的日期是 2016 年 6 月 1 日，而您想要在 30 天時關閉暫停保留，您可以執行下列命令：**Set-Mailbox -EndDateForRetentionHold 7/1/2016**。 在這個案例中，您會將 **RetentionHoldEnabled** 屬性設定成 *True*。 如需詳細資訊，請參閱 [Set-Mailbox](/powershell/module/exchange/set-mailbox)。
     
    - 您可以變更指派給信箱的保留原則設定，讓匯入的舊項目不會被立即刪除或移至使用者的封存信箱。 例如，您可以延長指派給信箱的刪除或封存原則的保留存留期。 在這個案例中，您會在變更保留原則設定之後，關閉信箱的暫停保留。 如需詳細資訊，請參閱[設定組織中的信箱封存和刪除原則](set-up-an-archive-and-deletion-policy-for-mailboxes.md)。
 

@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 深入瞭解 Exchange Server 2007 的支援終止後，開始規劃遷移至 Microsoft 365、Office 365 或 Exchange 2016。
-ms.openlocfilehash: 3f0a5c8ef9765a184358b932548eaa2ae7c59adc
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: d7e8f50118dab6fcb618273f5c28497c80d4a549
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519842"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924197"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 終止支援藍圖
 
@@ -194,15 +194,15 @@ Microsoft 365 也會先取得新功能並體驗，所以您和您的使用者通
     
 若完整混合式遷移是正確的，請參閱下列資源，以協助您進行遷移：
   
-- [Exchange 部署助理](https://aka.ms/exdeploy)
+- [Exchange 部署助理](/exchange/exchange-deployment-assistant)
     
-- [Exchange Server 混合式部署](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)
+- [Exchange Server 混合式部署](/exchange/exchange-hybrid)
     
-- [混合組態精靈](https://technet.microsoft.com/library/hh529921%28v=exchg.150%29.aspx)
+- [混合組態精靈](/exchange/hybrid-configuration-wizard)
     
-- [混合組態精靈常見問題集](https://technet.microsoft.com/library/mt488940%28v=exchg.150%29.aspx)
+- [混合組態精靈常見問題集](/exchange/hybrid-configuration-wizard-faqs)
     
-- [混合式部署必要條件](https://technet.microsoft.com/library/hh534377%28v=exchg.150%29.aspx)
+- [混合式部署必要條件](/exchange/hybrid-deployment-prerequisites)
     
 ### <a name="migrate-to-a-newer-version-of-exchange-server"></a>遷移至較新版本的 Exchange Server
 
@@ -226,22 +226,22 @@ Microsoft 365 也會先取得新功能並體驗，所以您和您的使用者通
 |Exchange 2010 和2013的遷移路徑。  <br/> |以下是遷移至 Exchange 2010 或 Exchange 2013 的一般階段：  <br/> -將 Exchange 2010 或2013安裝至現有的 Exchange 2007 組織。 <br/>-將服務和其他基礎結構移至 Exchange 2010 或2013。<br/>-將信箱和公用資料夾移至 Exchange 2010 或2013。<br/>-解除委任餘下的 Exchange 2007 伺服器。 |
 |Exchange 2016 的遷移路徑  <br/> |以下是遷移至 Exchange 2016 的一般階段：  <br/> -將 Exchange 2013 安裝到現有的 Exchange 2007 組織。<br/>-將服務和其他基礎結構移至 Exchange 2013。<br/>-將信箱和公用資料夾移至 Exchange 2013。<br/>-解除委任餘下的 Exchange 2007 伺服器。<br/>-將 Exchange 2016 安裝到現有的 Exchange 2013 組織。<br/>-將信箱、公用資料夾、服務及其他基礎結構移至 Exchange 2016 (順序並不重要) 。 解除委任其餘的 Exchange 2013 伺服器。<br/><br/> **附注：** 從 Exchange 2013 遷移至 Exchange 2016 非常簡單。 這兩個版本的硬體需求幾乎相同，而且這些版本都非常相容。 因此，您可以重建為 Exchange 2013 購買的伺服器，並在其上安裝 Exchange 2016。 針對線上信箱移動，大部分使用者甚至不會注意到，使用者的信箱已移離伺服器後再回到 Exchange 2016。           |
 |版本共存  <br/> | 當遷移至 .。。  <br/> **Exchange 2016：** Exchange 2016 無法安裝在包含 Exchange 2007 伺服器的組織中。 您必須先將 exchange 2010 或2013遷移至 Exchange 或 (我們強烈建議 Exchange 2013) 、移除所有 Exchange 2007 伺服器，然後遷移至 Exchange 2016。  <br/> **Exchange 2010 或 exchange 2013：** 您可以將 Exchange 2010 或 Exchange 2013 安裝到現有的 Exchange 2007 組織中。 這可讓您安裝一或多部 Exchange 2010 或2013伺服器，並執行您的遷移。  <br/> |
-|伺服器硬體  <br/> | 伺服器硬體需求已從 Exchange 2007 變更。 請確認您的硬體是否相容。 如需詳細資訊，請參閱：  <br/> [Exchange 2016 系統需求](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Exchange 2013 系統需求](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Exchange 2010 系統需求](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  在較新的伺服器中，您會發現 Exchange 效能的顯著改進，以及計算能力和儲存容量增加，也意味著您可能需要較少的伺服器來支援相同數量的信箱。  <br/> |
-|作業系統版本  <br/> | 每個版本的最低支援作業系統版本為：  <br/> **Exchange 2016** -Windows Server 2012  <br/> **Exchange 2013** -Windows Server 2008 R2 SP1  <br/> **Exchange 2010** -Windows Server 2008 SP2  <br/>  若要瞭解更多關於作業系統支援的資訊，請參閱 Exchange 可支援性 [清單](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx)。  <br/> |
-|Active Directory 樹系功能等級  <br/> | 每個版本的最低支援 Active Directory 樹系功能等級為：  <br/> Exchange 2016 ****：Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  若要瞭解更多關於樹系功能層級支援的資訊，請參閱 [Exchange 支援清單](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx)。  <br/> |
-|Office 用戶端版本  <br/> | 每個版本的最低支援 Office 用戶端版本為：  <br/> **Exchange 2016** -Office 2010 (包含最新的更新)   <br/> **Exchange 2013** -Office 2007 SP3  <br/> **Exchange 2010** -Office 2003  <br/>  若要瞭解更多有關 Office 用戶端支援的資訊，請參閱 [Exchange 支援清單](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx)。  <br/> |
+|伺服器硬體  <br/> | 伺服器硬體需求已從 Exchange 2007 變更。 請確認您的硬體是否相容。 如需詳細資訊，請參閱：  <br/> [Exchange 2016 系統需求](/Exchange/plan-and-deploy/system-requirements) <br/> [Exchange 2013 系統需求](/exchange/exchange-2013-system-requirements-exchange-2013-help) <br/> [Exchange 2010 系統需求](/previous-versions/office/exchange-server-2010/aa996719(v=exchg.141)) <br/>  在較新的伺服器中，您會發現 Exchange 效能的顯著改進，以及計算能力和儲存容量增加，也意味著您可能需要較少的伺服器來支援相同數量的信箱。  <br/> |
+|作業系統版本  <br/> | 每個版本的最低支援作業系統版本為：  <br/> **Exchange 2016** -Windows Server 2012  <br/> **Exchange 2013** -Windows Server 2008 R2 SP1  <br/> **Exchange 2010** -Windows Server 2008 SP2  <br/>  若要瞭解更多關於作業系統支援的資訊，請參閱 Exchange 可支援性 [清單](/Exchange/plan-and-deploy/supportability-matrix)。  <br/> |
+|Active Directory 樹系功能等級  <br/> | 每個版本的最低支援 Active Directory 樹系功能等級為：  <br/> Exchange 2016 ****：Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  若要瞭解更多關於樹系功能層級支援的資訊，請參閱 [Exchange 支援清單](/Exchange/plan-and-deploy/supportability-matrix)。  <br/> |
+|Office 用戶端版本  <br/> | 每個版本的最低支援 Office 用戶端版本為：  <br/> **Exchange 2016** -Office 2010 (包含最新的更新)   <br/> **Exchange 2013** -Office 2007 SP3  <br/> **Exchange 2010** -Office 2003  <br/>  若要瞭解更多有關 Office 用戶端支援的資訊，請參閱 [Exchange 支援清單](/Exchange/plan-and-deploy/supportability-matrix)。  <br/> |
    
 #### <a name="how-do-i-migrate"></a>如何遷移？
 
 如果您決定將電子郵件保留在內部部署中，請使用下列資源來協助您進行遷移：
   
-- [Exchange 部署助理](https://aka.ms/exdeploy)
+- [Exchange 部署助理](/exchange/exchange-deployment-assistant)
     
-- Exchange [2016](https://technet.microsoft.com/library/bb738144%28v=exchg.160%29.aspx)、 [2013](https://technet.microsoft.com/library/bb738144%28v=exchg.150%29.aspx)、 [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)的 Active Directory 架構變更
+- Exchange [2016](/Exchange/plan-and-deploy/active-directory/ad-schema-changes)、 [2013](/exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)、 [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)的 Active Directory 架構變更
     
-- Exchange [2016](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx)、 [2013](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx)、 [2010](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx)的系統需求
+- Exchange [2016](/Exchange/plan-and-deploy/system-requirements)、 [2013](/exchange/exchange-2013-system-requirements-exchange-2013-help)、 [2010](/previous-versions/office/exchange-server-2010/aa996719(v=exchg.141))的系統需求
     
-- Exchange [2016](https://technet.microsoft.com/library/bb691354%28v=exchg.160%29.aspx)、 [2013](https://technet.microsoft.com/library/bb691354%28v=exchg.150%29.aspx)、 [2010](https://technet.microsoft.com/library/bb691354%28v=exchg.141%29.aspx)的必要條件
+- Exchange [2016](/Exchange/plan-and-deploy/prerequisites)、 [2013](/exchange/exchange-2013-prerequisites-exchange-2013-help)、 [2010](/previous-versions/office/exchange-server-2010/bb691354(v=exchg.141))的必要條件
     
 ## <a name="get-help"></a>取得說明
 

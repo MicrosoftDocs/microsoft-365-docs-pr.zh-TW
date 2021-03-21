@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: 3c8f3f30741d4b0fac5c940bc6ec3fb56ea4f79e
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: d8eb1d7d8245aa31cb5429452128cedc0adf4684
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405793"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925701"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -30,9 +30,9 @@ ms.locfileid: "50405793"
 
 ## <a name="who-can-access-compliance-manager"></a>誰可以存取合規性管理員
 
-合規性管理員可供使用 Office 365 和 Microsoft 365 授權的組織使用，以及向美國政府社區雲端 (GCC) 中和 GCC 的高客戶。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](https://go.microsoft.com/fwlink/?linkid=2132371)。
+合規性管理員可供使用 Office 365 和 Microsoft 365 授權的組織使用，以及向美國政府社區雲端 (GCC) 中和 GCC 的高客戶。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 您組織的 Microsoft 365 全域管理員可能是第一個存取合規性管理員的使用者。 我們建議全域管理員登入，並設定第一次造訪合規性管理員時所述的使用者權限。
 
@@ -72,19 +72,19 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>有關 Office 365 安全性 & 規範中心的詳細資訊
 
-深入瞭解 [Office 365 安全性 & 合規性中心的許可權](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
+深入瞭解 [Office 365 安全性 & 合規性中心的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 如果您沒有 Office 365 安全性與合規性中心的存取權，或者您需要在 Microsoft 服務信任入口網站中存取經典版本的合規性管理員，則服務信任入口網站中的系統管理員設定會提供另一種方法， ([view 說明](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)) 中指派角色。 請注意，這些角色在其功能上的限制更為有限。
 
 ##### <a name="more-about-azure-ad"></a>有關 Azure AD 的詳細資訊
 
-若要在 Azure AD 中指派角色和設定許可權，請參閱 [使用 Azure Active Directory 指派系統管理員和非系統管理員角色給使用者](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
+若要在 Azure AD 中指派角色和設定許可權，請參閱 [使用 Azure Active Directory 指派系統管理員和非系統管理員角色給使用者](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
 
 使用 Azure AD 身分識別但未安裝 Office 365 或 Microsoft 365 訂閱的使用者，將無法存取 Microsoft 365 規範中心內的合規性管理員。 若要在存取合規性管理員中尋求協助，請與 [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com)聯繫。
 
 ### <a name="role-types"></a>角色類型
 
-下表顯示合規性管理員中每個角色所允許的功能。 該表也顯示每個 [AZURE AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 如何對應至合規性管理員角色。 使用者必須至少要有合規性管理員讀者角色或 Azure AD 全域讀卡機角色，才可存取合規性管理員。
+下表顯示合規性管理員中每個角色所允許的功能。 該表也顯示每個 [AZURE AD role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 如何對應至合規性管理員角色。 使用者必須至少要有合規性管理員讀者角色或 Azure AD 全域讀卡機角色，才可存取合規性管理員。
 
 
 | 使用者可以： | 合規性管理員角色 | Azure AD 角色 | 
@@ -104,7 +104,7 @@ Microsoft 365 合規性中心的合規性管理員設定可讓您啟用及停用
 
 ### <a name="set-up-automated-testing"></a>設定自動測試
 
-合規性管理員中的某些改進動作也是由 [Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)所監控。 您可以設定進行自動監控的動作自動測試，這表示在安全的分數中測試並更新動作時，這些結果會與合規性管理員中的相同動作同步處理，並在合規性分數中計數。
+合規性管理員中的某些改進動作也是由 [Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)所監控。 您可以設定進行自動監控的動作自動測試，這表示在安全的分數中測試並更新動作時，這些結果會與合規性管理員中的相同動作同步處理，並在合規性分數中計數。
 
 預設會針對合規性管理員的新組織開啟自動測試。 當您第一次部署 Microsoft 365 或 Office 365 時，會花大約7天的時間來完全收集資料，並將其劃分為您的合規性分數。  開啟自動測試時，不會更新動作的測試日期，但會更新其測試狀態。 當建立新的評估時，會自動包含 Microsoft control 得分和安全評分整合。
 
@@ -363,5 +363,5 @@ Microsoft 365 合規性中心的合規性管理員設定可讓您啟用及停用
 
 **深入瞭解：** 請 [參閱如何使用評估範本](compliance-manager-templates.md)。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 [設定評估](compliance-manager-assessments.md)，以自訂合規性管理員。

@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: b8c49c96ace14ac1ba03411b5670d8e77268109a
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: dc344e0263bab287133ddb01ecab262440eb9e10
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453905"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925949"
 ---
 # <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>限制存取 Microsoft Viva 主題中的主題
 
@@ -33,28 +33,21 @@ ms.locfileid: "50453905"
 
 知識管理員可以防止在初始編制索引中找到特定主題的存取權。 有兩種方法可在 Microsoft 365 系統管理中心的 [知識網路系統管理員設定] 中執行這項工作。
  
-- [選取要從主題探索中排除的 SharePoint 網站](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#select-sharepoint-topic-sources)：您可以使用此設定來防止特定 SharePoint 網站在主題中進行編目。
-- [依名稱排除主題](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#exclude-topics-by-name)：系統管理員可以使用此設定，以防止名稱探索特定主題。 在 [知識網路系統管理員] 設定中，系統管理員可以上傳要排除在 CSV 檔案中的主題清單。 您可以排除具有主題名稱的確切或部分相符的主題。
+- [選取要從主題探索中排除的 SharePoint 網站](./topic-experiences-discovery.md#select-sharepoint-topic-sources)：您可以使用此設定來防止特定 SharePoint 網站在主題中進行編目。
+- [依名稱排除主題](./topic-experiences-discovery.md#exclude-topics-by-name)：系統管理員可以使用此設定，以防止名稱探索特定主題。 在 [知識網路系統管理員] 設定中，系統管理員可以上傳要排除在 CSV 檔案中的主題清單。 您可以排除具有主題名稱的確切或部分相符的主題。
 
 ## <a name="prevent-topics-from-being-viewed-by-specific-users"></a>防止特定使用者查看主題
 
-知識系統管理員也可以 [選擇誰可以查看組織中的主題](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)。 此設定可讓您選取哪些授權的使用者可以查看所有主題。 例如，在試驗環境中，您可能只想讓一小組使用者能夠查看主題。
+知識系統管理員也可以 [選擇誰可以查看組織中的主題](./topic-experiences-knowledge-rules.md)。 此設定可讓您選取哪些授權的使用者可以查看所有主題。 例如，在試驗環境中，您可能只想讓一小組使用者能夠查看主題。
 
 ## <a name="remove-topics-from-being-viewed"></a>移除要查看的主題
 
-知識管理員可以選擇 [移除主題](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics) ，讓使用者無法再看到這些主題。 在 **主題中心** 的 [**管理主題**] 頁面上，知識管理員可以選擇拒絕特定主題，以防止其被查看。 您可以移除主題，不論其是否處於建議或確認的狀態。
+知識管理員可以選擇 [移除主題](./manage-topics.md) ，讓使用者無法再看到這些主題。 在 **主題中心** 的 [**管理主題**] 頁面上，知識管理員可以選擇拒絕特定主題，以防止其被查看。 您可以移除主題，不論其是否處於建議或確認的狀態。
 
 如有需要，您可以在以後將移除的主題重新加入為可查看的主題。 
 
 
 ## <a name="see-also"></a>請參閱
-
-
-
-  
-
-
-
 
 
 

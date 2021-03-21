@@ -9,19 +9,19 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8b287200b1c94ff350f7ba00cf0c4e6bc1b4a71f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 18823db8ca8d4bfa82b8ab6265ee8a0902a13e79
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289258"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925889"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在系統管理入口網站中新增和驗證系統管理連絡人
 
 Microsoft 受管理的電腦服務有多種方式可與客戶溝通。 為了簡化溝通並確保我們與正確的人員一起檢查，您必須移工一組系統管理連絡人。 Microsoft 受管理的電腦 IT 作業將會連絡這些人員，以便為您的租用戶協助疑難排解問題。
 
 > [!IMPORTANT]
-> 您可能已經在系統管理入口網站新增這些連絡人。 如果是的話，現在請再次確認連絡人清單使ˋ否正確，因為 Microsoft 受管理的電腦**必須**在發生嚴重事件時能夠連絡到他們。
+> 您可能已經在系統管理入口網站新增這些連絡人。 如果是的話，現在請再次確認連絡人清單使ˋ否正確，因為 Microsoft 受管理的電腦 **必須** 在發生嚴重事件時能夠連絡到他們。
 
 ## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory 存取 Microsoft 受管理電腦的系統管理入口網站
 
@@ -31,7 +31,7 @@ Microsoft 受管理電腦的系統管理入口網站要求存取入口網站的�
 - 全域讀取者
 - 服務支援系統管理員
 
-全域系統管理員必須是在 Microsoft 受管理的電腦中註冊貴組織的人員。 所有五個角色在系統管理入口網站都擁有相同存取權，以初始化和檢視工作。 如需有關在 Azure AD 中指派這些角色的詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
+全域系統管理員必須是在 Microsoft 受管理的電腦中註冊貴組織的人員。 所有五個角色在系統管理入口網站都擁有相同存取權，以初始化和檢視工作。 如需有關在 Azure AD 中指派這些角色的詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
 
 ## <a name="admin-contact-areas-of-focus"></a>系統管理連絡人重點領域
 
@@ -53,15 +53,15 @@ IT 技術支援 | 當我們的支援人員在 Microsoft 受管理的桌面支援
 
 1.  登入 [Microsoft 受管理電腦的入口網站](https://aka.ms/mwaasportal)。 
 
-2.  在 [支援]**** 底下，選取 [系統管理連絡人]****。 
+2.  在 [支援] 底下，選取 [系統管理連絡人]。 
 
     ![在支援功能表，接近頂端選取的系統管理連絡人](../../media/admincontacts.png)
 
-3. 選取 [新增]****。
+3. 選取 [新增]。
 
     ![在系統管理入口網站 [匯出並重新整理] 左方的 [新增]按鈕](../../media/adminadd.png)
 
-4.  選取 [重點領域]**** 並輸入連絡人資訊。 
+4.  選取 [重點領域] 並輸入連絡人資訊。 
 
     ![重點領域清單，例如 [其他]、[應用程式] 和 [安全性]](../../media/areaoffocus.png)
 

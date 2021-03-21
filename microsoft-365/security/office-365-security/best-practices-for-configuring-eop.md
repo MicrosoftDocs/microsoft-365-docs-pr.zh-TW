@@ -12,12 +12,12 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c64a9592d93ef046ad1c023a49bf378ccf6cf503
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6a6a9fd0dfc654ca37fdd5168b3ecc0c4486f9d0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290830"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924453"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>設定獨立 EOP 的最佳作法
 
@@ -55,13 +55,13 @@ ms.locfileid: "50290830"
 |排程惡意程式碼和垃圾郵件報告|是|是||
 |應禁止或監視自動轉送至外部網域|是|是||
 |應啟用整合審計|是|是||
-|[IMAP 與信箱的連線能力](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|停用|停用||
-|[POP 與信箱的連線能力](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|停用|停用||
-|已驗證的 SMTP 提交|停用|停用|已驗證的用戶端 SMTP 提交 (也稱為「用戶端 SMTP 提交」或「SMTP 驗證」) ，POP3 和 IMAP4 的用戶端才能傳送電子郵件。|
-|EWS 至信箱的連接|停用|停用||
-|[PowerShell 連線能力](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|停用|停用|可供信箱使用者或郵件使用者 ([Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) Cmdlet) 所傳回的使用者物件。|
+|[IMAP 與信箱的連線能力](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|已停用|已停用||
+|[POP 與信箱的連線能力](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|已停用|已停用||
+|已驗證的 SMTP 提交|已停用|已停用|已驗證的用戶端 SMTP 提交 (也稱為「用戶端 SMTP 提交」或「SMTP 驗證」) ，POP3 和 IMAP4 的用戶端才能傳送電子郵件。|
+|EWS 至信箱的連接|已停用|已停用||
+|[PowerShell 連線能力](/powershell/exchange/disable-access-to-exchange-online-powershell)|已停用|已停用|可供信箱使用者或郵件使用者 ([Get-User](/powershell/module/exchange/get-user) Cmdlet) 所傳回的使用者物件。|
 |使用 [哄騙情報](learn-about-spoof-intelligence.md) 將寄件者新增至您的允許清單|是|是||
-|[以目錄為基礎的 Edge 封鎖 (DBEB) ](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已啟用|已啟用|網欄位型別 = 權威性|
+|[以目錄為基礎的 Edge 封鎖 (DBEB) ](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已啟用|已啟用|網欄位型別 = 權威性|
 |[設定所有系統管理員帳戶的多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|已啟用|已啟用||
 |
 
@@ -81,4 +81,4 @@ ms.locfileid: "50290830"
 
 當您部署新規則時，請考慮新增其他 [ **產生** 附隨報告] 動作，以監視規則採取的動作。
 
-在您的組織同時包含內部部署 Exchange 和 Exchange Online 的混合式環境中，請考慮您在郵件流程規則中使用的條件。 如果您想要將規則套用至整個組織，請務必使用內部部署 Exchange 和 Exchange Online 中提供的條件。 在這兩種環境中，大部分的條件都是可用的，只在一個環境或另一個環境中提供。 若要深入瞭解，請參閱 [郵件流程規則 (傳輸規則) 在 Exchange Online 中](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
+在您的組織同時包含內部部署 Exchange 和 Exchange Online 的混合式環境中，請考慮您在郵件流程規則中使用的條件。 如果您想要將規則套用至整個組織，請務必使用內部部署 Exchange 和 Exchange Online 中提供的條件。 在這兩種環境中，大部分的條件都是可用的，只在一個環境或另一個環境中提供。 若要深入瞭解，請參閱 [郵件流程規則 (傳輸規則) 在 Exchange Online 中](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。

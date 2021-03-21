@@ -27,12 +27,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含使用 SharePoint Server 2007 之使用者的資訊，以協助他們規劃升級。
-ms.openlocfilehash: 3e37a01f1a2d387cda6723a8df1f73734fa3ba9d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 38c4713b7dfb705c99d970c5f68a37b031c951a5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694951"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924877"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint 2007 要考慮的遷移選項
 
@@ -69,7 +69,7 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已到達支援的結尾。
   
 請記得檢查 [產品生命週期](https://support.microsoft.com/lifecycle/search) 和系統需求，以瞭解升級所用 SharePoint 的任何版本。 如此一來，您就會知道下一次升級是必要的 (例如，如果您在傳統產品（如 SharePoint Server 2010）上暫停以規劃更多升級，請確定您知道其支援日期的結束日期) ，並確定您有支援方案的硬體。 
   
-如果您打算將部分（或全部）的 SharePoint 網站轉換為雲端中的 Microsoft 365，這是一段時間，可將 [microsoft 365 和 Office 365 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)的連結做成書簽。 您將需要服務說明，以瞭解 SharePoint 線上功能，以及它們與內部部署 SharePoint 伺服器的差異。 升級功能 Microsoft Office SharePoint Server 2007 伺服器陣列。 如果您的安裝中有中斷的網站，請在升級之前加以修正。
+如果您打算將部分（或全部）的 SharePoint 網站轉換為雲端中的 Microsoft 365，這是一段時間，可將 [microsoft 365 和 Office 365 服務說明](/office365/servicedescriptions/office-365-service-descriptions-technet-library)的連結做成書簽。 您將需要服務說明，以瞭解 SharePoint 線上功能，以及它們與內部部署 SharePoint 伺服器的差異。 升級功能 Microsoft Office SharePoint Server 2007 伺服器陣列。 如果您的安裝中有中斷的網站，請在升級之前加以修正。
   
 ## <a name="a-note-about-managing-risk"></a>有關管理風險的附注
 
@@ -84,7 +84,7 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已到達支援的結尾。
 In-Place 升級等方法將直接作用於您的 Microsoft Office SharePoint Server 2007 伺服器陣列，讓您更少的選項可放棄路徑，然後再從 pristine 環境重新開始。 您可以盡可能組建一些安全措施， (例如進行原始環境的備份或測試) 。 例如，如果您的 Microsoft Office SharePoint Server 2007 伺服器陣列是虛擬的，且是重複備份及還原的目的，請在升級服務時段之前備份及還原最新的資料庫。 知道您可以還原資料庫備份的選項，並不會使您成為安全保護，但可讓您高枕無憂。
   
 > [!TIP]
-> [Microsoft Office SharePoint Server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx)、 [SharePoint Server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx)、 [SharePoint Server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)及[SharePoint 伺服器 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx)的最佳作法檔都存在於升級中。 您也可以搜尋使用升級或 Microsoft 365 遷移經驗的 [Microsoft 合作夥伴](https://partnercenter.microsoft.com/pcv/search) 。 
+> [Microsoft Office SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc261992(v=office.12))、 [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc261992(v=office.14))、 [SharePoint Server 2013](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013)及[SharePoint 伺服器 2016](/SharePoint/upgrade-and-update/best-practices-for-upgrade)的最佳作法檔都存在於升級中。 您也可以搜尋使用升級或 Microsoft 365 遷移經驗的 [Microsoft 合作夥伴](https://partnercenter.microsoft.com/pcv/search) 。 
   
 ## <a name="make-your-plan"></a>制定計畫
 
@@ -158,7 +158,7 @@ In-Place 升級等方法將直接作用於您的 Microsoft Office SharePoint Ser
     
 - 如果您想要從這裡升級至 SharePoint 線上，請考慮 [FastTrack 協助](https://fasttrack.microsoft.com) 。 
     
-- 決定是否可將任何網站集合卸載至 Microsoft 365 訂閱。  (Microsoft 365 符合許多 [規範標準](https://technet.microsoft.com/library/office-365-compliance.aspx)。 Microsoft 365 具有 [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) ，可透過規範中心進行 [封存](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) 。 )  
+- 決定是否可將任何網站集合卸載至 Microsoft 365 訂閱。  (Microsoft 365 符合許多 [規範標準](/compliance/regulatory/offering-home)。 Microsoft 365 具有 [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) ，可透過規範中心進行 [封存](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) 。 )  
     
 否則，繼續執行 SharePoint Server 2016 的並列升級。
   
@@ -186,5 +186,3 @@ In-Place 升級等方法將直接作用於您的 Microsoft Office SharePoint Ser
 [Microsoft 生命週期原則及生命週期搜尋](https://support.microsoft.com/lifecycle)
   
 [搜尋可協助升級或遷移的 Microsoft 合作夥伴](https://partnercenter.microsoft.com/pcv/search)
-  
-

@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 摘要：使用 Microsoft 365 PowerShell 來建立您無法在 Microsoft 365 系統管理中心內產生的報告。
-ms.openlocfilehash: 10000f62b1d6a747cf0373623c6038b080666e1a
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 12cba74d114ea03804741335bd34ece403926033
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753975"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924693"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>使用 PowerShell 建立 Microsoft 365 報告
 
@@ -33,7 +33,7 @@ Microsoft 365 系統管理中心提供許多不同的報告。 不過，這些�
   
 - 開始使用 Microsoft 365 的 PowerShell 報告：
     
-  - [為什麼您需要使用適用於 Microsoft 365 的 PowerShell](https://technet.microsoft.com/library/dn568034.aspx#reveal)
+  - [為什麼您需要使用適用於 Microsoft 365 的 PowerShell](./why-you-need-to-use-microsoft-365-powershell.md#reveal)
     
     
 - 使用者帳戶和授權的報告：
@@ -48,13 +48,13 @@ Microsoft 365 系統管理中心提供許多不同的報告。 不過，這些�
     
 - SharePoint Online 的報告：
     
-  - [開始使用 SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+  - [開始使用 SharePoint Online 管理命令介面](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
-  - [Get-SPOSiteGroup-取得指定網站集合上的所有群組](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Get-SPOSiteGroup-取得指定網站集合上的所有群組](/powershell/module/sharepoint-online/get-spositegroup)
     
 - Exchange Online 的報告：
     
-  - [使用 Exchange Online PowerShell 顯示信箱](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [使用 Exchange Online PowerShell 顯示信箱](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
     
     
 ## <a name="related-articlesl"></a>相關 articlesl
@@ -66,4 +66,3 @@ Microsoft 365 系統管理中心提供許多不同的報告。 不過，這些�
 [使用 PowerShell 管理 SharePoint](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-  

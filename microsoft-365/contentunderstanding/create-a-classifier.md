@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何建立分類器
-ms.openlocfilehash: bff23807fce18bf4a585dbb1ec47c1502ab686f6
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 13ae099d051ac526dc5b13e4cb55a1dc10eec087
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242685"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925353"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中建立分類器
 
@@ -32,7 +32,7 @@ ms.locfileid: "50242685"
 
 ![合約續約文件](../media/content-understanding/contract-renewal.png)
 
-建立分類器可讓您建立將與該模型相關聯的新 [SharePoint 內容類型](https://docs.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)。
+建立分類器可讓您建立將與該模型相關聯的新 [SharePoint 內容類型](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)。
 
 建立分類器時，您必須建立 *說明* 以定義模型。 這可讓您記錄預期會持續發現此文件類型的常見資料。 
 

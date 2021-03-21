@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: 瞭解如何在 Microsoft 365 和您的內部部署 Active Directory 之間設定目錄同步處理。
-ms.openlocfilehash: 308774dcdbaffc1096ab6ad144484e6920accdfa
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 51cf52bd81004157606c884fd4f0b5d3604b877a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327090"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924901"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>設定 Microsoft 365 的目錄同步處理
 
@@ -72,9 +72,9 @@ Azure AD Connect 會在內部部署伺服器上執行，並與 Azure AD 租使�
 |Windows Server 2008 R2 Service Pack 1 (SP1) * * 或 Windows Server 2012 | -Windows Management Framework 4.0 提供 PowerShell 的最新版本。 在 [Microsoft 下載中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)搜尋。  <br> -您可以在 [Microsoft 下載中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)取得 .net 4.5.1 和更新版本。 |
 |Windows Server 2008 | -您可以在 [Microsoft 下載中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)上使用 Windows Management Framework 3.0，提供最新支援的 PowerShell 版本。  <br> -您可以在 [Microsoft 下載中心](https://go.microsoft.com/fwlink/p/?LinkId=717996)取得 .net 4.5.1 和更新版本。 |
 
-請參閱 [Azure Active Directory connect 的必要條件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites) ，以取得硬體、軟體、帳戶與許可權需求、SSL 憑證需求，以及 Azure AD Connect 的物件限制等詳細資訊。
+請參閱 [Azure Active Directory connect 的必要條件](/azure/active-directory/hybrid/how-to-connect-install-prerequisites) ，以取得硬體、軟體、帳戶與許可權需求、SSL 憑證需求，以及 Azure AD Connect 的物件限制等詳細資訊。
   
-您也可以查看 Azure AD Connect [版本發行歷程記錄](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history) ，以查看每個版本中包含和修正的內容。
+您也可以查看 Azure AD Connect [版本發行歷程記錄](/azure/active-directory/hybrid/reference-connect-version-history) ，以查看每個版本中包含和修正的內容。
 
 ## <a name="2-install-azure-ad-connect-and-configure-directory-synchronization"></a>2. 安裝 Azure AD Connect 及設定目錄同步處理
 
@@ -83,20 +83,20 @@ Azure AD Connect 會在內部部署伺服器上執行，並與 Azure AD 租使�
 - Microsoft 365 全域管理員的使用者名稱和密碼
 - AD DS 域管理員的使用者名稱和密碼
 - 哪種驗證方法 (PHS、PTA、同盟) 
-- 您是否要使用 [AZURE AD 無縫單一登入 (SSO) ](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
+- 您是否要使用 [AZURE AD 無縫單一登入 (SSO) ](/azure/active-directory/hybrid/how-to-connect-sso)
 
 請遵循下列步驟：
 
 1. 登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com) (https://admin.microsoft.com) 並選擇左側導覽中的 [ **使用者**] [作用中 \> **使用者** ]。
-2. 在 [作用中 **使用者** ] 頁面上，選擇 [ **其他** (三個點) \> **目錄同步**處理]。
+2. 在 [作用中 **使用者** ] 頁面上，選擇 [ **其他** (三個點) \> **目錄同步** 處理]。
   
 3. 在 [ **Azure Active Directory 準備** ] 頁面上，選取 [ **移至下載中心] 以取得 Azure AD Connect 工具** 連結開始使用。 
-4. 請遵循 [AZURE Ad connect 和 AZURE Ad Connect Health 安裝藍圖](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap)中的步驟進行。
+4. 請遵循 [AZURE Ad connect 和 AZURE Ad Connect Health 安裝藍圖](/azure/active-directory/hybrid/how-to-connect-install-roadmap)中的步驟進行。
 
 ## <a name="3-finish-setting-up-domains"></a>3. 完成網域的設定
 
-當您管理您的 DNS 記錄以完成網域的設定時，請遵循下列步驟，以 [建立 Microsoft 365 的 dns 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) 。
+當您管理您的 DNS 記錄以完成網域的設定時，請遵循下列步驟，以 [建立 Microsoft 365 的 dns 記錄](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) 。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [將授權指派給使用者帳戶](assign-licenses-to-user-accounts.md)

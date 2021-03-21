@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 network connectivity test 工具 (預覽) '
-ms.openlocfilehash: b29eb29cd390c3febd0992e942cf8ab39f652fb2
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+ms.openlocfilehash: 3597996a74cccc3a178f7a5a637c956e0393641b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49569984"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926115"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 network connectivity test 工具 (預覽) 
 
@@ -202,7 +202,7 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 
 #### <a name="media-connectivity-audio-video-and-application-sharing"></a>Media connectivity (音訊、影片和應用程式共用) 
 
-這會測試對 Microsoft 小組服務前門的 UDP 連線。 如果遭到封鎖，則 Microsoft 小組可能仍然使用 TCP，但音訊和影片會受損。 閱讀更多有關這些 UDP 網路度量的資訊，這些是在[商務用 Skype Online 中的媒體質量和網路連線效能](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)上套用至 Microsoft 小組的。
+這會測試對 Microsoft 小組服務前門的 UDP 連線。 如果遭到封鎖，則 Microsoft 小組可能仍然使用 TCP，但音訊和影片會受損。 閱讀更多有關這些 UDP 網路度量的資訊，這些是在[商務用 Skype Online 中的媒體質量和網路連線效能](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)上套用至 Microsoft 小組的。
 
 #### <a name="packet-loss"></a>封包遺失
 
@@ -218,11 +218,11 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 
 #### <a name="connectivity"></a>連線能力
 
-我們會將使用者辦公室位置的 HTTP 連線測試至所有必要的 Microsoft 365 網路端點。 這些是發佈于 [https://aka.ms/o365ip](https://aka.ms/o365ip) 。 對於任何無法連線的必要網路端點，都會顯示網路洞察力。
+我們會將使用者辦公室位置的 HTTP 連線測試至所有必要的 Microsoft 365 網路端點。 這些是發佈于 [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md) 。 對於任何無法連線的必要網路端點，都會顯示網路洞察力。
 
 在商業網路周邊的 proxy 伺服器、防火牆或其他網路安全裝置可能會封鎖連線能力。 以 HTTP 要求來測試與 TCP 埠80的連線，並使用 HTTPS 要求來測試 TCP 埠443的連線。 如果沒有任何回應，FQDN 會標示為失敗。 如果有 HTTP 回應碼407，FQDN 會標示為失敗。 如果有 HTTP 回應碼403，我們會檢查回應的 Server 屬性，如果它似乎是 proxy 伺服器，我們會將其標記為失敗。 您可以使用 Windows 命令列工具 curl.exe 來模擬我們所執行的測試。
 
-我們會在每個必要的 Microsoft 365 網路端點（已于所定義的 [優化] 或 [允許] 類別中）測試 SSL 憑證 [https://aka.ms/o365ip](https://aka.ms/o365ip) 。 如果任何測試未找到 Microsoft SSL 憑證，則所連接的加密網路必須已被仲介網路裝置截獲。 網路洞察力會顯示在任何截獲的加密網路端點上。
+我們會在每個必要的 Microsoft 365 網路端點（已于所定義的 [優化] 或 [允許] 類別中）測試 SSL 憑證 [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md) 。 如果任何測試未找到 Microsoft SSL 憑證，則所連接的加密網路必須已被仲介網路裝置截獲。 網路洞察力會顯示在任何截獲的加密網路端點上。
 
 如果 Microsoft 未提供 SSL 憑證，我們會顯示測試的 FQDN 和使用中的 SSL 憑證擁有者。 這個 SSL 憑證擁有者可能是 proxy 伺服器廠商，也可能是企業自我簽署憑證。
 

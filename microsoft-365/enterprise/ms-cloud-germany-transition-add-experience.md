@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時的其他客戶體驗資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: 8dcb8b8ab2ec5c3dea105380858d26cfd5537d9c
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 84705eaf78da4d1e8d35f743599f6a4e9e46208f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712279"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924419"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (advanced)  
 
@@ -42,7 +42,7 @@ ms.locfileid: "50712279"
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
 | Microsoft Cloud Deutschland 中的 Azure AD 租使用者已複製到 Office 365 服務。 | Azure AD 會將租使用者複製到 Office 365 服務。 會保留承租人和使用者識別碼。 Azure AD 服務呼叫會從 Microsoft Cloud Deutschland 重新導向至 Office 365 服務，且對服務而言是透明的。 | 所有 Office 客戶 | -一般資料保護法規 (GDPR) 資料主體要求 (Dsr) 會從 Azure Admin 入口網站執行，以供未來的要求使用。 在 Microsoft 雲端 Deutschland 中的任何舊版或非客戶診斷資料會在經過30天之後刪除。 <br><br> -使用與 Active Directory Federation Services 的同盟驗證的客戶 (AD FS) 不應該變更在遷移期間用於所有內部部署 Active Directory 驗證的 issuer URIs。 變更簽發者 URIs 會導致網域中的使用者驗證失敗。 簽發者 URIs 可以直接在 AD FS 中變更，或將網域從 _managed_ 轉換成 _同盟，反之亦然_ 。 我們建議客戶不要新增、移除或轉換已遷移之 Azure AD 租使用者中的同盟網域。 在遷移完全完成後，可以變更發行者 URIs。 <br><br> -多重要素驗證 (，當租使用者複製到 Office 365 服務時，使用 Microsoft 驗證者的 MFA) 要求會顯示為使用者 ObjectID (GUID) 。 雖然這種顯示行為，MFA 要求仍會如期執行。  使用 Office 365 服務端點所啟動的 Microsoft 驗證程式帳戶會顯示使用者主要名稱 (UPN) 。  使用 Microsoft Cloud Deutschland 端點新增的帳戶會顯示使用者 ObjectID，但會同時搭配 Microsoft Cloud Deutschland 和 Office 365 服務端點使用。  |
-| 遷移 Azure 資源。 | 使用 Office 365 和 Azure 資源的客戶 (例如，網路、計算和儲存) 會執行將資源遷移至 Office 365 服務實例。 這種遷移是客戶的責任。 訊息中心文章會通知開始。 在 Office 365 服務環境中完成 Azure AD 組織之前，必須完成遷移。 | Azure 客戶 | 如需 Azure 遷移，請參閱 azure 遷移行動手冊（ [Azure 德國遷移指南的概述](https://docs.microsoft.com/azure/germany/germany-migration-main)）。 |
+| 遷移 Azure 資源。 | 使用 Office 365 和 Azure 資源的客戶 (例如，網路、計算和儲存) 會執行將資源遷移至 Office 365 服務實例。 這種遷移是客戶的責任。 訊息中心文章會通知開始。 在 Office 365 服務環境中完成 Azure AD 組織之前，必須完成遷移。 | Azure 客戶 | 如需 Azure 遷移，請參閱 azure 遷移行動手冊（ [Azure 德國遷移指南的概述](/azure/germany/germany-migration-main)）。 |
 |||||
 
 ### <a name="exchange-online-before-phase-5"></a>第5階段之前的 Exchange Online
@@ -84,7 +84,7 @@ ms.locfileid: "50712279"
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| 從第4階段開始直到階段9完成，電子檔探索搜尋會失敗，或傳回 SharePoint 線上、OneDrive 商務及已遷移之 Exchange Online 位置的0個結果。 | 在遷移期間，客戶可以繼續在 [安全性 & 規範中心](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)（包括 [內容搜尋](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)）中建立案例、保留、搜尋和匯出。  不過，針對已遷移的 SharePoint 線上、OneDrive 商務和 Exchange Online 位置進行搜尋會傳回0個結果或產生錯誤。 如需修正，請參閱 _影響_ 欄。 | 在遷移期間，如果搜尋傳回零結果或發生錯誤，請在線上 SharePoint 執行下列動作： <ul><li>遵循 [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中的指示，直接從 SharePoint Online/OneDrive 取得商務網站下載網站。 此方法將需要 SharePoint 線上系統管理員許可權或網站的唯讀許可權。</li><li>若超出限制（ [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中所述），客戶可以遵循 [與電腦同步 SharePoint 及小組](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)檔案的指導方針，使用 OneDrive 進行商務同步處理用戶端。</li><li>如需詳細資訊，請參閱  [In-Place eDiscovery In Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| 從第4階段開始直到階段9完成，電子檔探索搜尋會失敗，或傳回 SharePoint 線上、OneDrive 商務及已遷移之 Exchange Online 位置的0個結果。 | 在遷移期間，客戶可以繼續在 [安全性 & 規範中心](../compliance/manage-legal-investigations.md)（包括 [內容搜尋](../compliance/search-for-content.md)）中建立案例、保留、搜尋和匯出。  不過，針對已遷移的 SharePoint 線上、OneDrive 商務和 Exchange Online 位置進行搜尋會傳回0個結果或產生錯誤。 如需修正，請參閱 _影響_ 欄。 | 在遷移期間，如果搜尋傳回零結果或發生錯誤，請在線上 SharePoint 執行下列動作： <ul><li>遵循 [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中的指示，直接從 SharePoint Online/OneDrive 取得商務網站下載網站。 此方法將需要 SharePoint 線上系統管理員許可權或網站的唯讀許可權。</li><li>若超出限制（ [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中所述），客戶可以遵循 [與電腦同步 SharePoint 及小組](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)檔案的指導方針，使用 OneDrive 進行商務同步處理用戶端。</li><li>如需詳細資訊，請參閱  [In-Place eDiscovery In Exchange Server](/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 ||||
 
 ## <a name="post-migration"></a>移轉後
@@ -162,7 +162,7 @@ ms.locfileid: "50712279"
 
 [瞭解遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 
@@ -179,6 +179,6 @@ ms.locfileid: "50712279"
 
 雲端應用程式：
 
-- [Dynamics 365 的移轉程式資訊](https://aka.ms/d365ceoptin)
-- [Power BI 移轉程式資訊](https://aka.ms/pbioptin)
-- [開始升級您的 Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 的移轉程式資訊](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 移轉程式資訊](/power-bi/admin/service-admin-migrate-data-germany)
+- [開始升級您的 Microsoft Teams](/microsoftteams/upgrade-start-here)

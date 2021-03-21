@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此測試實驗室指南來建立適用于企業的 Microsoft 365 模擬企業測試環境。
-ms.openlocfilehash: e66ec8c48e309daeb15aad5fcc475edcb2b8bb35
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 8df63e1a580b57aa263c11dccaed947f46f2cbb9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487651"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926041"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模擬企業基本設定
 
@@ -84,7 +84,7 @@ ms.locfileid: "48487651"
 首先，在本機電腦上啟動 Windows PowerShell 命令提示字元。
   
 > [!NOTE]
-> 下列命令集會使用最新版的 Azure PowerShell。請參閱[開始使用 Azure PowerShell Cmdlet](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)。 
+> 下列命令集會使用最新版的 Azure PowerShell。請參閱[開始使用 Azure PowerShell Cmdlet](/powershell/azureps-cmdlets-docs/)。 
   
 使用下列命令登入您的 Azure 帳戶。
   
@@ -160,7 +160,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 接下來，連接至 DC1 虛擬機器：
   
-1. 在[Azure 入口網站](https://portal.azure.com)中，選取 [**資源群組** > <***新資源群組的名稱***> > **DC1**  >  **Connect]**。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [**資源群組**] > <**_新資源群組的名稱_，*> > _* DC1**  >  **Connect]**。
     
 2. 在 [開啟] 窗格中，選取 [ **下載 RDP 檔**]。 開啟所下載的 DC1.rdp 檔案，然後選取 [連線 **]**。
     
@@ -168,11 +168,11 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
    - 對於 Windows 7：
     
-     在 [ **Windows 安全性** ] 對話方塊中，選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入**DC1 \\ ** < *本機系統管理員帳戶名稱*>。
+     在 [ **Windows 安全性** ] 對話方塊中，選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入 **DC1 \\** < *本機系統管理員帳戶名稱*>。
     
    - 對於 Windows 8 或 Windows 10：
     
-     在 [ **Windows 安全性** ] 對話方塊中，選取 [ **更多選項**]，然後選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入**DC1 \\ ** < *本機系統管理員帳戶名稱*>。
+     在 [ **Windows 安全性** ] 對話方塊中，選取 [ **更多選項**]，然後選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入 **DC1 \\** < *本機系統管理員帳戶名稱*>。
     
 4. 在 [ **密碼**] 中，輸入本機系統管理員帳戶的密碼，然後選取 **[確定]**。
     
@@ -197,11 +197,11 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 DC1 重新啟動後，重新連線到 DC1 虛擬機器。
   
-1. 在[Azure 入口網站](https://portal.azure.com)中，選取 [**資源群組** > <*您的資源群組名稱*> > **DC1**  >  **Connect]**。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [**資源群組** > <*您的資源群組名稱*> > **DC1**  >  **Connect]**。
     
 2. 執行已下載的 DC1.rdp 檔案，然後選取 [連線 **]**。
     
-3. 在 [ **Windows 安全性**] 中，選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入**TESTLAB \\ ** < 的*本機系統管理員帳戶名稱*>。
+3. 在 [ **Windows 安全性**] 中，選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入 **TESTLAB \\** < 的 *本機系統管理員帳戶名稱*>。
     
 4. 在 [ **密碼** ] 方塊中，輸入本機系統管理員帳戶的密碼，然後選取 **[確定]**。
     
@@ -337,21 +337,21 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
   
 1. 在 [伺服器管理員] 的樹狀窗格中，選取 [ **本機伺服器**]。
     
-2. 在 [ **CLIENT1 的屬性**] 中，選取 [ **IE 增強式安全性**設定] 旁的 [**開啟**]。
+2. 在 [ **CLIENT1 的屬性**] 中，選取 [ **IE 增強式安全性** 設定] 旁的 [**開啟**]。
     
-3. 在**Internet Explorer 增強式安全性**設定中，為系統**管理員**和**使用者**選取 [**關閉**]，然後選取 **[確定]**。
+3. 在 **Internet Explorer 增強式安全性** 設定中，為系統 **管理員** 和 **使用者** 選取 [**關閉**]，然後選取 **[確定]**。
     
 4. 從 [開始] 畫面中，選取 [ **Internet Explorer**]，然後選取 **[確定]**。
     
-5. 在 [位址] 列中，輸入 [ **HTTP：<span>//</span>app1] testab。** \<*your public domain name*> **/** ，然後按**enter**。 您應該會看到 APP1 的預設網際網路資訊服務網頁。
+5. 在 [位址] 列中，輸入 [ **HTTP：<span>//</span>app1] testab。** \<*your public domain name*> **/** ，然後按 **enter**。 您應該會看到 APP1 的預設網際網路資訊服務網頁。
     
 6. 在桌面工作列上，選取 [檔案瀏覽器] 圖示。
     
-7. 在位址列中，輸入** \\ \\ app1 \\ Files**，然後按**enter**鍵。 您應該會看到資料夾視窗中的 [檔案] 共用資料夾的內容。
+7. 在位址列中，輸入 **\\ \\ app1 \\ Files**，然後按 **enter** 鍵。 您應該會看到資料夾視窗中的 [檔案] 共用資料夾的內容。
     
-8. 在 [檔案]**** 共用資料夾視窗中，按兩下 **Example.txt** 檔案。您應該會看到 Example.txt 檔案的內容。
+8. 在 [檔案] 共用資料夾視窗中，按兩下 **Example.txt** 檔案。您應該會看到 Example.txt 檔案的內容。
     
-9. 關閉 **example.txt - 記事本**以及 [檔案]**** 共用資料夾視窗。
+9. 關閉 **example.txt - 記事本** 以及 [檔案] 共用資料夾視窗。
     
 您目前的設定如下所示：
   
@@ -416,4 +416,4 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 瞭解如何使用 PowerShell，透過一段時間將內容從來源電子郵件系統移轉至 Microsoft 365。
-ms.openlocfilehash: ebf2067fe7ae9fc2d2b58d0aa804c7843295b38a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0c93de181c54fb1c4021d23d787b63577317aad4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688405"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924789"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>使用 PowerShell 以階段移轉至 Microsoft 365
 
@@ -29,20 +29,20 @@ ms.locfileid: "46688405"
 
 您可以使用分段遷移，將使用者信箱的內容從來源電子郵件系統移轉至 Microsoft 365。
   
-本文將引導您逐步完成使用 Exchange Online PowerShell 進行分段電子郵件遷移所涉及的工作。 主題是 [分步電子郵件遷移所需注意的事項](https://go.microsoft.com/fwlink/p/?LinkId=536487)，可讓您瞭解遷移程式。 在熟悉該文章的內容後，請使用此主題來開始在不同電子郵件系統中移轉信箱。
+本文將引導您逐步完成使用 Exchange Online PowerShell 進行分段電子郵件遷移所涉及的工作。 主題是 [分步電子郵件遷移所需注意的事項](/Exchange/mailbox-migration/what-to-know-about-a-staged-migration)，可讓您瞭解遷移程式。 在熟悉該文章的內容後，請使用此主題來開始在不同電子郵件系統中移轉信箱。
   
 > [!NOTE]
-> 您也可以使用 Exchange 系統管理中心來執行分段移轉。 請參閱 [執行將電子郵件分段遷移至 Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536687)。 
+> 您也可以使用 Exchange 系統管理中心來執行分段移轉。 請參閱 [執行將電子郵件分段遷移至 Microsoft 365](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration)。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-完成此工作的預估時間：2-5 分鐘來建立遷移批次。 啟動移轉批次之後，移轉所需的時間會依批次中的信箱數目、每個信箱的大小和可用的網路容量而有所不同。 如需其他影響將信箱遷移至 Microsoft 365 的因素的詳細資訊，請參閱 [遷移效能](https://go.microsoft.com/fwlink/p/?LinkId=275079)。
+完成此工作的預估時間：2-5 分鐘來建立遷移批次。 啟動移轉批次之後，移轉所需的時間會依批次中的信箱數目、每個信箱的大小和可用的網路容量而有所不同。 如需其他影響將信箱遷移至 Microsoft 365 的因素的詳細資訊，請參閱 [遷移效能](/Exchange/mailbox-migration/office-365-migration-best-practices)。
   
-您必須已獲指派的權限，才能執行此程序。若要查看您需要哪些權限，請參閱[收件者權限](https://go.microsoft.com/fwlink/p/?LinkId=534105)主題中的「移轉」項目。
+您必須已獲指派的權限，才能執行此程序。若要查看您需要哪些權限，請參閱[收件者權限](/exchange/recipients-permissions-exchange-2013-help)主題中的「移轉」項目。
   
-若要使用 Exchange Online PowerShell Cmdlet，您需要登入系統，並將 Cmdlet 匯入您的本機 Windows PowerShell 工作階段。請參閱[使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121) 的指示。
+若要使用 Exchange Online PowerShell Cmdlet，您需要登入系統，並將 Cmdlet 匯入您的本機 Windows PowerShell 工作階段。請參閱[使用遠端 PowerShell 連線到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) 的指示。
   
-若需要移轉命令的完整清單，請參閱[移動與移轉 Cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
+若需要移轉命令的完整清單，請參閱[移動與移轉 Cmdlet](/powershell/exchange/)。
   
 ## <a name="migration-steps"></a>移轉步驟
 
@@ -52,14 +52,14 @@ ms.locfileid: "46688405"
   
  在您的內部部署 Exchange Server 上 **設定** Outlook 無所不在 電子郵件移轉服務會使用 Outlook 無所不在 (也稱為 RPC over HTTP) 來連線至您的內部部署 Exchange Server。如需如何針對 Exchange Server 2007 和 Exchange 2003 設定 Outlook 無所不在 的資訊，請參閱下列文章：
   
-- [Exchange 2007：如何啟用 Outlook 無所不在](https://go.microsoft.com/fwlink/?LinkID=167210)
+- [Exchange 2007：如何啟用 Outlook 無所不在](/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
     
-- [如何使用 Exchange 2003 設定 Outlook 無所不在](https://go.microsoft.com/fwlink/?LinkID=167209)
+- [如何使用 Exchange 2003 設定 Outlook 無所不在](/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
     
 > [!IMPORTANT]
-> 您必須在設定 Outlook 無所不在時使用信任的憑證授權單位 (CA) 所發行的憑證。您無法使用自我簽署憑證設定 Outlook 無所不在。如需詳細資訊，請參閱[如何為 Outlook 無所不在設定 SSL](https://go.microsoft.com/fwlink/?LinkID=80875)。 
+> 您必須在設定 Outlook 無所不在時使用信任的憑證授權單位 (CA) 所發行的憑證。您無法使用自我簽署憑證設定 Outlook 無所不在。如需詳細資訊，請參閱[如何為 Outlook 無所不在設定 SSL](/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80))。 
   
- **選擇性：確認可以使用 Outlook 無所不在**連線至您的 Exchange 組織 嘗試使用下列其中一種方法來測試連線設定。
+ **選擇性：確認可以使用 Outlook 無所不在** 連線至您的 Exchange 組織 嘗試使用下列其中一種方法來測試連線設定。
   
 - 從公司網路之外使用 Outlook 連線至您的內部部署 Exchange 信箱。
     
@@ -89,15 +89,15 @@ ms.locfileid: "46688405"
     
 - 獲得儲存使用者信箱的內部部署信箱資料庫的 **Receive As** 權限，以及用來修改內部部署使用者帳戶的 **TargetAddress** 內容的 **WriteProperty** 權限。
     
-如需如何設定這些許可權的指示，請參閱 [指派將信箱遷移至 Microsoft 365 的許可權](https://go.microsoft.com/fwlink/?LinkId=521656)。
+如需如何設定這些許可權的指示，請參閱 [指派將信箱遷移至 Microsoft 365 的許可權](/Exchange/mailbox-migration/assign-permissions-for-migration)。
   
- **停用整合通訊 (UM)** 如果您要移轉的內部部署信箱已開啟 UM，請先關閉 UM 再進行移轉。移轉完成後再開啟信箱的 UM。如需操作步驟，請參閱[如何對使用者停用整合通訊](https://go.microsoft.com/fwlink/?LinkId=521891)。
+ **停用整合通訊 (UM)** 如果您要移轉的內部部署信箱已開啟 UM，請先關閉 UM 再進行移轉。移轉完成後再開啟信箱的 UM。如需操作步驟，請參閱 [如何對使用者停用整合通訊](/previous-versions/office/exchange-server-2007/bb124691(v=exchg.80))。
   
  **使用目錄同步處理來建立 Microsoft 365 中的新使用者。** 您可以使用目錄同步處理來建立 Microsoft 365 組織中的所有內部部署使用者。
   
 您必須授權已建立的使用者。您必須在建立使用者後的 30 天內增加授權。若要增加授權的步驟，請參閱[步驟 8：完成移轉後工作](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Postmigration)。
   
- 您可以使用 Microsoft Azure Active Directory (Azure AD) 同步處理工具或 Microsoft Azure AD Sync 服務同步處理，並在 Microsoft 365 中建立內部部署使用者。 將信箱遷移至 Microsoft 365 之後，您可以在內部部署組織中管理使用者帳戶，並與您的 Microsoft 365 組織同步處理。 如需詳細資訊，請參閱[目錄整合](https://go.microsoft.com/fwlink/?LinkId=521788)。
+ 您可以使用 Microsoft Azure Active Directory (Azure AD) 同步處理工具或 Microsoft Azure AD Sync 服務同步處理，並在 Microsoft 365 中建立內部部署使用者。 將信箱遷移至 Microsoft 365 之後，您可以在內部部署組織中管理使用者帳戶，並與您的 Microsoft 365 組織同步處理。 如需詳細資訊，請參閱[目錄整合](/previous-versions/azure/azure-services/jj573653(v=azure.100))。
   
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>步驟 2：建立分段移轉批次所需的 CSV 檔案
 
@@ -139,9 +139,9 @@ briant@contoso.com,Pa$$w0rd,False
 ### <a name="step-3-create-a-migration-endpoint"></a>步驟 3：建立移轉端點
 <a name="BK_Endpoint"> </a>
 
-若要成功遷移電子郵件，Microsoft 365 必須與來源電子郵件系統連線並進行通訊。 若要這樣做，Microsoft 365 會使用遷移端點。 若要使用 PowerShell 建立 Outlook 無所不在移轉端點以進行分段移轉，請先[連線至 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。 
+若要成功遷移電子郵件，Microsoft 365 必須與來源電子郵件系統連線並進行通訊。 若要這樣做，Microsoft 365 會使用遷移端點。 若要使用 PowerShell 建立 Outlook 無所不在移轉端點以進行分段移轉，請先[連線至 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。 
   
-若需要移轉命令的完整清單，請參閱[移動與移轉 Cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
+若需要移轉命令的完整清單，請參閱[移動與移轉 Cmdlet](/powershell/exchange/)。
   
 若要在 Exchange Online PowerShell 中建立名為 "StagedEndpoint" 的 Outlook 無所不在移轉端點，請執行下列命令：
   
@@ -153,7 +153,7 @@ $Credentials = Get-Credential
 New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscover -EmailAddress administrator@contoso.com -Credentials $Credentials
 ```
 
-如需 **New-MigrationEndpoint** Cmdlet 的詳細資訊，請參閱[New-MigrationEndpoint](https://go.microsoft.com/fwlink/p/?LinkId=536437)。
+如需 **New-MigrationEndpoint** Cmdlet 的詳細資訊，請參閱 [New-MigrationEndpoint](/powershell/module/exchange/new-migrationendpoint)。
   
 > [!NOTE]
 > 藉由使用 **-TargetDatabase** 選項，可以使用 **New-MigrationEndpoint** Cmdlet 來指定要使用之服務的資料庫。否則系統會從管理信箱所在的 Active Directory Federation Services (AD FS) 2.0 網站隨機指派資料庫。
@@ -195,7 +195,7 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List
 Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ```
 
-如需 **Get-MigrationBatch** Cmdlet 的詳細資訊，請參閱[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441)。
+如需 **Get-MigrationBatch** Cmdlet 的詳細資訊，請參閱 [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch)。
   
 ### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>步驟 5：將內部部署信箱轉換成擁有郵件功能的使用者
 <a name="BK_Endpoint"> </a>
@@ -217,7 +217,7 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 Remove-MigrationBatch -Identity StagedBatch1
 ```
 
-如需 **Remove-MigrationBatch** Cmdlet 的詳細資訊，請參閱[Remove-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536481)。
+如需 **Remove-MigrationBatch** Cmdlet 的詳細資訊，請參閱 [Remove-MigrationBatch](/powershell/module/exchange/remove-migrationbatch)。
   
 #### <a name="verify-it-worked"></a>確認是否正常運作
 
@@ -229,12 +229,12 @@ Get-MigrationBatch StagedBatch1
 
 此命令會傳回狀態為 **Removing** 的移轉批次，或傳回錯誤，指出找不到移轉批次而需確認該批次是否已刪除。
   
-如需 **Get-MigrationBatch** Cmdlet 的詳細資訊，請參閱[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441)。
+如需 **Get-MigrationBatch** Cmdlet 的詳細資訊，請參閱 [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch)。
   
 ### <a name="step7-assign-licenses-to-microsoft-365-users"></a>Step7：將授權指派給 Microsoft 365 使用者
 <a name="BK_Endpoint"> </a>
 
-指派授權，為遷移的帳戶啟動 Microsoft 365 使用者帳戶。 如果您未指派授權，則當寬限期 (30 天) 結束時就會停用信箱。 若要在 Microsoft 365 系統管理中心中指派授權，請參閱 [指派或取消指派授權](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+指派授權，為遷移的帳戶啟動 Microsoft 365 使用者帳戶。 如果您未指派授權，則當寬限期 (30 天) 結束時就會停用信箱。 若要在 Microsoft 365 系統管理中心中指派授權，請參閱 [指派或取消指派授權](../admin/manage/assign-licenses-to-users.md)。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>步驟 8：完成移轉後工作
 <a name="BK_Postmigration"> </a>
@@ -247,16 +247,14 @@ Get-MigrationBatch StagedBatch1
     
   - **目標：** autodiscover.outlook.com
     
-    如需詳細資訊，請參閱 [新增 DNS 記錄以連接您的網域](https://go.microsoft.com/fwlink/p/?LinkId=535028)。
+    如需詳細資訊，請參閱 [新增 DNS 記錄以連接您的網域](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
     
 - **解除委任內部部署 Exchange 伺服器。** 在您確認所有電子郵件都直接路由傳送至 Microsoft 365 信箱之後，如果您不再需要維護內部部署電子郵件組織，或不計畫實施 SSO 解決方案，您可以從伺服器卸載 Exchange，並移除內部部署 Exchange 組織。
     
     如需詳細資訊，請參閱下列各主題：
     
-  - [修改及移除 Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
+  - [修改及移除 Exchange 2010](/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
     
-  - [如何移除 Exchange 2007 組織](https://go.microsoft.com/fwlink/?LinkID=100485)
+  - [如何移除 Exchange 2007 組織](/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
     
-  - [如何解除安裝 Exchange Server 2003](https://go.microsoft.com/fwlink/?LinkID=56561)
-    
-
+  - [如何解除安裝 Exchange Server 2003](/previous-versions/tn-archive/bb125110(v=exchg.65))

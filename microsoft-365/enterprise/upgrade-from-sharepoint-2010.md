@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: 尋找要從 SharePoint 2010 和 Sharepoint Server 2010 升級的資訊和資源。 支援在2021年4月13日結束。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fba095a15164f8a09ce1e0a1cbd5ee9cd298aa74
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4fa82fb0e382a244cdc126609ac62d17280b9702
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519760"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925329"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>從 SharePoint 2010 升級
 
@@ -83,7 +83,7 @@ SharePoint Server 2013 和 SharePoint Foundation 2013 可以在您自己的伺�
 
 - 請進行上述兩項操作。
 
-- 實施 [SharePoint 的混合](https://docs.microsoft.com/sharepoint/hybrid/hybrid) 式解決方案。
+- 實施 [SharePoint 的混合](/sharepoint/hybrid/hybrid) 式解決方案。
 
 考慮維護伺服器陣列的隱藏成本，包括維護或遷移自訂專案，以及升級硬體。 如果您已考慮這些因素，將會更容易升級內部部署。 如果您在舊版的 SharePoint 伺服器上執行伺服器陣列，但沒有大量自訂，您可以從規劃的遷移受益于線上 SharePoint。 若為內部部署 SharePoint 伺服器環境，您也可以考慮將部分資料移 SharePoint Online 中，以減少硬體管理的額外負荷。
 
@@ -97,11 +97,11 @@ SharePoint Server 2013 和 SharePoint Foundation 2013 可以在您自己的伺�
 |遷移時成本為一次|每個未來遷移重複的單一時間成本|
 |低擁有權總成本/維護|高擁有權總成本/維護|
 
-當您組織資料並決定要對雲端採取的功能和留下的功能時，將會有較高的成本給 Microsoft 365。 但在遷移資料後，未來升級將會自動進行，因為您將不再需要管理硬體和軟體更新。 伺服器陣列的時間將由 [Microsoft 服務等級協定 (SLA) ](https://go.microsoft.com/fwlink/?linkid=843153)所備份。
+當您組織資料並決定要對雲端採取的功能和留下的功能時，將會有較高的成本給 Microsoft 365。 但在遷移資料後，未來升級將會自動進行，因為您將不再需要管理硬體和軟體更新。 伺服器陣列的時間將由 [Microsoft 服務等級協定 (SLA) ](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement)所備份。
 
 ### <a name="migrate-to-sharepoint-online"></a>移轉至 SharePoint Online
 
-請確定 SharePoint 線上提供您所需的所有功能。 請參閱 [SharePoint 服務描述](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description)。
+請確定 SharePoint 線上提供您所需的所有功能。 請參閱 [SharePoint 服務描述](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description)。
 
 您無法直接從 SharePoint Server 2010 (或 SharePoint Foundation 2010) 遷移，以 SharePoint 線上。 許多遷移工作是手動。 不過，此階段可讓您刪除移動之前不再需要的資料和網站。 您可以將其他資料封存到儲存體。 
 
@@ -114,9 +114,9 @@ SharePoint Server 2013 和 SharePoint Foundation 2013 可以在您自己的伺�
 |Microsoft 提供 SPO 硬體和所有硬體管理。|SharePoint Server 內部部署和 SPO 之間可用的功能可能會有所不同。|
 |您是訂閱的全域系統管理員，而且可以指派系統管理員 SPO 網站。|SharePoint Server 內部部署中的伺服器陣列管理員可使用的某些動作 (或不是必要) Microsoft 365 中的 SharePoint 系統管理員角色。 但 SharePoint 管理、網站集合管理和網站擁有權是您的組織當地的地方。|
 |Microsoft 會對底層的硬體和軟體（包括 SharePoint 線上執行的 SQL server）套用修補程式、修正及更新。|因為在服務中無法存取基礎檔案系統，所以自訂專案有限。|
-|Microsoft 發佈 [服務等級協定](https://go.microsoft.com/fwlink/?linkid=843153) ，並快速移動以解決服務層級事件。|備份與還原及其他修復選項會透過 SharePoint 線上的服務自動進行。 如果不使用，則會覆寫備份。|
+|Microsoft 發佈 [服務等級協定](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) ，並快速移動以解決服務層級事件。|備份與還原及其他修復選項會透過 SharePoint 線上的服務自動進行。 如果不使用，則會覆寫備份。|
 |Microsoft 的安全性測試和伺服器效能調整是在服務上連續執行。|變更使用者介面及其他 SharePoint 功能會由服務安裝，而且可能需要切換開啟或關閉。|
-|Microsoft 365 符合許多行業標準： [microsoft 規範服務](https://go.microsoft.com/fwlink/?linkid=843165)。|遷移的[FastTrack](https://go.microsoft.com/fwlink/?linkid=518597)協助是有限的。  <br/> 大部分的升級是手動或透過 [SharePoint 線上及 OneDrive 遷移內容藍圖](https://go.microsoft.com/fwlink/?linkid=843184)中所述的 SPO 遷移 API。|
+|Microsoft 365 符合許多行業標準： [microsoft 規範服務](/compliance/regulatory/offering-home)。|遷移的[FastTrack](https://go.microsoft.com/fwlink/?linkid=518597)協助是有限的。  <br/> 大部分的升級是手動或透過 [SharePoint 線上及 OneDrive 遷移內容藍圖](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)中所述的 SPO 遷移 API。|
 |Microsoft 支援工程師和資料中心員工不具無限制的系統管理員存取您的訂閱。|若需要升級硬體基礎結構，以支援較新版本的 SharePoint，或若升級需要次要伺服器陣列，可能會有額外的成本。|
 |解決方案供應商可以協助您將資料移轉到線上 SharePoint 的單一時間工作。|您的控制項內並未 SharePoint 線上的所有變更。 遷移後，功能表、文件庫和其他功能的設計差異可能會暫時影響可用性。|
 |線上產品會自動更新整個服務。 功能可能會取代，但沒有真正的支援週期。|SharePoint Server 或 SharePoint Foundation，以及基礎 SQL server 的支援週期。|
@@ -136,23 +136,23 @@ SharePoint Server 2013 和 SharePoint Foundation 2013 可以在您自己的伺�
 
 請記得查看 *支援和不支援的升級路徑*：
 
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
 
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/review-supported-editions-and-products-for-upgrading-to-sharepoint-2013)
 
 如果您有 *自訂*，您必須規劃遷移路徑中的每個步驟，這一點很重要：
 
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
 
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
 
 |內部部署優勢|內部部署缺點|
 |---|---|
 |完全控制 SharePoint 伺服器陣列的所有層面 (及其 SQL) 從伺服器硬體向上。|所有中斷和修正都是貴公司的責任。 不過，如果您的產品尚不支援，您可以接洽付費的 Microsoft 支援服務。|
 |SharePoint Server 內部部署的完整功能集合，具有透過混合方式將內部部署伺服器陣列連線至 SharePoint Online 訂閱的選項。|SharePoint Server 及其 SQL 伺服器陣列的升級、修補程式、安全性修正程式、硬體升級及所有維護都是在內部部署管理。|
-|自訂選項的完整存取權，與 SharePoint 線上的功能更高。|[Microsoft 規範服務](https://go.microsoft.com/fwlink/?linkid=843165) 必須手動設定內部部署。|
+|自訂選項的完整存取權，與 SharePoint 線上的功能更高。|[Microsoft 規範服務](/compliance/regulatory/offering-home) 必須手動設定內部部署。|
 |在您的內部部署中，安全性測試和伺服器效能調整是由您的內部部署所執行。|Microsoft 365 可能會讓 SharePoint 線上使用的功能，不會與內部部署 SharePoint 伺服器互動。|
-|解決方案供應商可以協助將資料移轉至下一版的 SharePoint Server (和) 以外。|您的 SharePoint 伺服器網站不會自動使用 SharePoint Online 中所看到 [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) 憑證。|
+|解決方案供應商可以協助將資料移轉至下一版的 SharePoint Server (和) 以外。|您的 SharePoint 伺服器網站不會自動使用 SharePoint Online 中所看到 [SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) 憑證。|
 |在內部部署中 SharePoint Server 內部部署命名慣例與備份與還原及其他復原選項的完整控制權。|SharePoint Server 內部部署對產品生命週期保密。|
 
 ### <a name="upgrade-resources"></a>升級資源
@@ -163,15 +163,15 @@ SharePoint Server 2013 和 SharePoint Foundation 2013 可以在您自己的伺�
 
 - *硬體/軟體需求：*
 
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14))  | [SharePoint Server 2013](/SharePoint/install/hardware-and-software-requirements-0)  | [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
 
 - *軟體界限和限制：*
 
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14))  | [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits)  | [SharePoint Server 2016](/SharePoint/install/software-boundaries-and-limits-0)
 
 - *下列專案的升級程式概述：*
 
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc303420(v=office.14))  | [SharePoint Server 2013](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)  | [SharePoint Server 2016](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)
 
 ### <a name="create-a-hybrid-solution-with-sharepoint-online-and-sharepoint-server-on-premises"></a>使用 SharePoint 線上及 SharePoint 伺服器內部部署建立混合式解決方案
 
@@ -183,7 +183,7 @@ SharePoint Server 2013 和 SharePoint Foundation 2013 可以在您自己的伺�
 
 |選項|描述|
 |---|---|
-|[Microsoft 規範服務](https://go.microsoft.com/fwlink/?linkid=843165)。|遷移的[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)協助是有限的。<br/><br/> 大部分的升級是手動或透過 [SharePoint 線上及 OneDrive 遷移內容藍圖](https://go.microsoft.com/fwlink/?linkid=843184)中所述的 SPO 遷移 API。|
+|[Microsoft 規範服務](/compliance/regulatory/offering-home)。|遷移的[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)協助是有限的。<br/><br/> 大部分的升級是手動或透過 [SharePoint 線上及 OneDrive 遷移內容藍圖](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)中所述的 SPO 遷移 API。|
 |Microsoft 支援工程師和資料中心員工不具無限制的系統管理員存取您的訂閱。|若需要升級硬體基礎結構以支援較新版本的 SharePoint，或需要次要伺服器陣列時，可能會有額外的成本。|
 |合作夥伴可協助您將資料移轉到線上 SharePoint 的單一時間工作。||
 |線上產品會自動更新整個服務。 功能可能取代，但沒有真正的支援端點。||
@@ -205,27 +205,27 @@ SharePoint Server 2013 和 SharePoint Foundation 2013 可以在您自己的伺�
 
 請記得查看 *支援和不支援的升級路徑*：
 
-- [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
 
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
 
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/review-supported-editions-and-products-for-upgrading-to-sharepoint-2013)
 
 如果您有 *自訂*，請務必規劃遷移路徑中每個步驟的升級：
 
-- [SharePoint 2007](https://go.microsoft.com/fwlink/?linkid=843158)
+- [SharePoint 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263203(v=office.12))
 
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
 
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
 
 |內部部署 pro|內部部署 con|
 |---|---|
 |完全控制 SharePoint 伺服器陣列的所有層面，從伺服器硬體向上。|所有中斷和修正都是貴公司的責任。  (，但是如果您的產品尚不支援，您可以接洽付費的 Microsoft 支援人員。 ) |
 |SharePoint Server 內部部署的完整功能集合，具有透過混合方式將內部部署伺服器陣列連線至 SharePoint Online 訂閱的選項。|升級、修補程式、安全性修正程式，以及 SharePoint 伺服器的所有維護都受內部部署管理。|
-|取得更佳自訂的完整存取權。|[Microsoft 規範服務](https://go.microsoft.com/fwlink/?linkid=843165) 必須手動設定內部部署。|
+|取得更佳自訂的完整存取權。|[Microsoft 規範服務](/compliance/regulatory/offering-home) 必須手動設定內部部署。|
 |在您的內部部署中，安全性測試和伺服器效能調整是由您的內部部署所執行。|Microsoft 365 可能會讓 SharePoint 線上使用的功能，不會與內部部署 SharePoint 伺服器互動。|
-|合作夥伴可協助您將資料移轉至下一版的 SharePoint Server (和) 以外。|您的 SharePoint 伺服器網站不會自動使用 SharePoint Online 中所看到 [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) 憑證。|
+|合作夥伴可協助您將資料移轉至下一版的 SharePoint Server (和) 以外。|您的 SharePoint 伺服器網站不會自動使用 SharePoint Online 中所看到 [SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) 憑證。|
 |在內部部署中 SharePoint Server 內部部署命名慣例與備份與還原及其他復原選項的完整控制權。|SharePoint Server 內部部署對產品生命週期保密。|
 
 ### <a name="upgrade-resources"></a>升級資源
@@ -234,15 +234,15 @@ SharePoint Server 2013 和 SharePoint Foundation 2013 可以在您自己的伺�
 
 - *硬體/軟體需求*：
 
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14))  | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14))  | [SharePoint Server 2013](/SharePoint/install/hardware-and-software-requirements-0)  | [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
 
 - *軟體界限和限制*：
 
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245)  | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262787(v=office.12))  | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14))  | [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits)  | [SharePoint Server 2016](/SharePoint/install/software-boundaries-and-limits-0)
 
 - 下列專案 *的升級程式概述*：
 
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250)  | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc303420(v=office.12))  | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc303420(v=office.14))  | [SharePoint Server 2013](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)  | [SharePoint Server 2016](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)
 
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>在 SharePoint Online 與內部部署之間建立 SharePoint 的混合式解決方案
 
@@ -269,14 +269,14 @@ SharePoint Server 2013 和 SharePoint Foundation 2013 可以在您自己的伺�
 
 [協助您從 Office 2007 或2010伺服器及用戶端升級的資源](upgrade-from-office-2010-servers-and-products.md)
 
-[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/library/mt493301%28v=office.16%29.aspx)
+[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](/SharePoint/upgrade-and-update/overview-of-the-upgrade-process-from-sharepoint-2010-to-sharepoint-2013)
 
-[從 SharePoint 2010 升級至 SharePoint 2013 的最佳作法](https://technet.microsoft.com/library/mt493305%28v=office.16%29.aspx)
+[從 SharePoint 2010 升級至 SharePoint 2013 的最佳作法](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013)
 
-[在 SharePoint 2013 中針對資料庫的升級問題進行疑難排解](https://go.microsoft.com/fwlink/?linkid=843195)
+[在 SharePoint 2013 中針對資料庫的升級問題進行疑難排解](/SharePoint/upgrade-and-update/troubleshoot-database-upgrade-issues-in-sharepoint-2013)
 
 [搜尋 Microsoft 解決方案供應商以協助您升級](https://go.microsoft.com/fwlink/?linkid=841249)
 
-[已更新 SharePoint 2013 的產品服務原則](https://technet.microsoft.com/library/mt493253%28v=office.16%29.aspx)
+[已更新 SharePoint 2013 的產品服務原則](/SharePoint/product-servicing-policy/updated-product-servicing-policy-for-sharepoint-2013)
 
-[已更新 SharePoint Server 2016 的產品服務原則](https://technet.microsoft.com/library/mt782882%28v=office.16%29.aspx)
+[已更新 SharePoint Server 2016 的產品服務原則](/SharePoint/product-servicing-policy/updated-product-servicing-policy-for-sharepoint-server-2016)

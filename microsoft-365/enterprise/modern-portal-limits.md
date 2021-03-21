@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 深入瞭解 SharePoint Online 中新式網站的效能建議，例如限制對 Sharepoint 和外部端點的呼叫。
-ms.openlocfilehash: 2afca20183bef8c8f6dda9bdc35a44e5153ef07c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28c32be276f6c27194d164708e268a5cd36ac957
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688708"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925317"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint 線上新式入口網站限制
 
@@ -44,7 +44,7 @@ ms.locfileid: "46688708"
 本文中的許多指導方針主要致力於最小化及優化 SharePoint 線上的呼叫。 每次載入頁面時進行重複呼叫都會影響使用者的效能，因為資訊會在每次從服務中取得，即使尚未變更。 因此，SharePoint 的要求可以分類為所有使用者或每個個別使用者所需通話的通用通話。 這兩個通話類別的結果應該進行快取，以優化使用者體驗。
 
 >[!NOTE]
->您可以使用 [SharePoint 工具的頁面診斷](https://aka.ms/perftool) ，作為分析 SharePoint 線上網站頁面上的特定效能度量的起點。
+>您可以使用 [SharePoint 工具的頁面診斷](./page-diagnostics-for-spo.md) ，作為分析 SharePoint 線上網站頁面上的特定效能度量的起點。
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>新式入口網站限制與建議
 
@@ -58,19 +58,19 @@ ms.locfileid: "46688708"
 |圖像大小上限  <br/> |每個映射 300 Kb  <br/> |建議您將影像大小限制為300kb 或更小，並使用 CDN 來裝載影像、樣式單及腳本。 <br/>如需詳細資訊，請參閱 [在 SharePoint 線上新式網站頁面上優化影像](modern-image-optimization.md) ，並 [使用 Office 365 內容傳遞網路 (CDN) 搭配 SharePoint Online](use-microsoft-365-cdn-with-spo.md)。  <br/> |
 |具有編輯許可權的使用者  <br/> |每個網站200個使用者  <br/> |SharePoint 入口網站已針對查看和使用內容進行優化。 對入口網站的編輯許可權應該限制為一組限制的使用者，因為編輯許可權會下載其他控制項，因此這些使用者的執行速度會變慢。 大量具有編輯許可權的使用者會影響整體體驗。 <br/> |
 |協力廠商 Iframe  <br/> |每頁2個  <br/> |Iframe 會因載入個別的外部頁面（包括所有相關聯的內容，例如 javascript、CSS 及 framework 元素）而無法預知。 如果您必須使用 Iframe，請將其數目限制為2個或更少的頁面。<br/> 如需詳細資訊，請參閱 [在 SharePoint 線上新式和傳統發佈網站頁面上優化 iframe](modern-iframe-optimization.md)。 <br/> |
-|呼叫 UPA 服務  <br/> |每位使用者每小時1個  <br/> |建議您不要對 UPA (User Profile 應用程式) 服務上的 _每個要求_ 進行呼叫。 [Microsoft GRAPH API](https://docs.microsoft.com/graph/call-api)和[PageCoNtext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest)可用於查詢使用者資訊。  <br/> 如果需要 UPA 服務呼叫，請在必要時進行單一通話，然後快取此資訊，以便在相同的會話中重複使用。 |
+|呼叫 UPA 服務  <br/> |每位使用者每小時1個  <br/> |建議您不要對 UPA (User Profile 應用程式) 服務上的 _每個要求_ 進行呼叫。 [Microsoft GRAPH API](/graph/call-api)和[PageCoNtext](/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest)可用於查詢使用者資訊。  <br/> 如果需要 UPA 服務呼叫，請在必要時進行單一通話，然後快取此資訊，以便在相同的會話中重複使用。 |
 |呼叫分類服務  <br/> |每位使用者每小時5個  <br/> |建議您不要針對分類服務撥打任何 _要求_ 。 如果需要分類服務通話，請快取資訊，以便在相同的會話中重複使用。 <br/> 如需詳細資訊，請參閱 [在 SharePoint 線上新式和傳統發佈網站頁面上優化頁面通話](modern-page-call-optimization.md)。 <br/> |
 
 ## <a name="related-topics"></a>相關主題
 
-[建立狀況良好的 SharePoint 入口網站](https://docs.microsoft.com/sharepoint/portal-health)
+[建立狀況良好的 SharePoint 入口網站](/sharepoint/portal-health)
 
 [調整 SharePoint Online 效能](tune-sharepoint-online-performance.md)
 
 [調整 Office 365 效能](tune-microsoft-365-performance.md)
 
-[SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[SharePoint Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)
 
-[SharePoint Online 入口網站的效能指導方針](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
+[SharePoint Online 入口網站的效能指導方針](/sharepoint/dev/solution-guidance/portal-performance)

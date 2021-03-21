@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何存取 Azure Active Directory，其隨附於貴組織的付費訂閱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5bc1c57c0c40df03d27471aafd222908ba9d5887
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528149"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925449"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>使用您的免費 Azure Active Directory 訂閱
 
@@ -40,16 +40,16 @@ ms.locfileid: "46528149"
 
 1. 移至 [portal.azure.com](https://portal.azure.com) 並使用您的公司或學生帳戶登入。
 
-2. 在 Azure 入口網站的左導覽窗格中，按一下 [Azure Active Directory]****。
+2. 在 Azure 入口網站的左導覽窗格中，按一下 [Azure Active Directory]。
 
     ![按一下 Azure 入口網站左導覽窗格中的 Azure Active Directory。](../media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
 
-    即會顯示 [Azure Active Directory]**** 系統管理中心。
+    即會顯示 [Azure Active Directory] 系統管理中心。
 
 ## <a name="more-information"></a>詳細資訊
 
-- 免費的 Azure Active Directory 訂用帳戶不包含登入活動報告。 若要記錄登入活動 (發生資料外洩時相當實用)，您必須擁有 Azure Active Directory Premium 訂用帳戶。 如需詳細資訊，請參閱 [Azure AD 會將資料儲存多久？](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+- 免費的 Azure Active Directory 訂用帳戶不包含登入活動報告。 若要記錄登入活動 (發生資料外洩時相當實用)，您必須擁有 Azure Active Directory Premium 訂用帳戶。 如需詳細資訊，請參閱 [Azure AD 會將資料儲存多久？](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-- 您也可以從 Microsoft 365 系統管理中心存取 **Azure Active Directory**。 在 Microsoft 365 系統管理中心左側瀏覽窗格，按一下 [系統管理中心]**** \> [Azure Active Directory]****。
+- 您也可以從 Microsoft 365 系統管理中心存取 **Azure Active Directory**。 在 Microsoft 365 系統管理中心左側瀏覽窗格，按一下 [系統管理中心] \> [Azure Active Directory]。
 
-- 如需管理使用者和群組以及執行其他目錄管理工作的詳細資訊，請參閱[管理 Azure AD 目錄](https://docs.microsoft.com/azure/active-directory/active-directory-administer)。
+- 如需管理使用者和群組以及執行其他目錄管理工作的詳細資訊，請參閱[管理 Azure AD 目錄](/azure/active-directory/active-directory-administer)。

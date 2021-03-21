@@ -1,5 +1,5 @@
 ---
-title: 電子文件探索
+title: eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 提供許多不同的 eDiscovery 工具，可供您用來搜尋及保留位於不同位置的內容，例如 Exchange 信箱、SharePoint 和 OneDrive 商務網站、Microsoft 365 群組、Microsoft 團隊和商務用 Skype 交談。
-ms.openlocfilehash: 633679c32b12b0ce6f00ec20723360d911decbb4
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: a7f8a4a7de6c03d37ffa7ac1c66113da63a13775
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841104"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925579"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Microsoft 365 中的 eDiscovery 解決方案
 
@@ -50,7 +50,7 @@ Microsoft 365 提供下列 eDiscovery 工具：
 |[內容搜尋限制](limits-for-content-search.md) <br/> |瞭解內容搜尋工具的限制，例如，您可以一次執行的最大搜尋數目。  <br/> |
 |[內容搜尋中未編制索引的專案](partially-indexed-items-in-content-search.md) <br/> |瞭解 Exchange 和 SharePoint 中未編制索引的專案，當您執行搜尋時，您可以在預估搜尋結果統計資料中包含這些專案。 您也可以在匯出搜尋結果時包含未編制索引的專案。  <br/> |
 |[搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md) <br/> |瞭解如何使用內容搜尋來搜尋和刪除組織中  *所有*  信箱的電子郵件訊息。 這可協助您尋找及移除可能有害或高風險的電子郵件。  <br/> |
-|[在信箱和 OneDrive 帳戶中搜尋使用者清單](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |瞭解如何使用腳本來搜尋信箱，以及一組使用者的商務用網站。 請參閱 [建立所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls) ，以取得如何快速產生您建立及執行內容搜尋時可用於來源內容位置的電子郵件地址清單的步驟。  <br/> |
+|[在信箱和 OneDrive 帳戶中搜尋使用者清單](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |瞭解如何使用腳本來搜尋信箱，以及一組使用者的商務用網站。 請參閱 [建立所有 OneDrive 位置的清單](/onedrive/list-onedrive-urls) ，以取得如何快速產生您建立及執行內容搜尋時可用於來源內容位置的電子郵件地址清單的步驟。  <br/> |
 |[對目標集合使用內容搜尋](use-content-search-for-targeted-collections.md) <br/> |瞭解如何使用本文中的 Windows PowerShell 腳本，使用內容搜尋來執行目標集合。 目標集合表示您要搜尋特定的資料夾，因為您確信專案的回應方式 (或特權專案) 位於該資料夾中。 使用本文中的腳本，取得您要搜尋之特定信箱或網站資料夾的資料夾識別碼或路徑。  <br/> |
 |||
   
@@ -76,10 +76,10 @@ Microsoft 365 (中的「Advanced eDiscovery」方案也稱為「 *Advanced edisc
 |**文章**|**描述**|
 |:-----|:-----|
 |[進階電子文件探索概觀](overview-ediscovery-20.md)|本文介紹高級 eDiscovery，概述使用此工具的業務理由、呈現高級 eDiscovery 架構，並提供高級 eDiscovery 的內建工作流程的高層次概述。|
-|[設定高級電子檔探索](get-started-with-advanced-ediscovery.md)|瞭解如何開始使用「高級 eDiscovery」（包括必要的授權和必要的 eDiscovery 許可權）。|
+|[設定進階電子文件探索](get-started-with-advanced-ediscovery.md)|瞭解如何開始使用「高級 eDiscovery」（包括必要的授權和必要的 eDiscovery 許可權）。|
 |[建立及管理案例](create-and-manage-advanced-ediscoveryv2-case.md)|本文說明如何建立高級 eDiscovery 案例，並提供高級 eDiscovery 工作流程的逐步講解。|
 |[管理監管人](managing-custodians.md)|瞭解如何在高級 eDiscovery 中使用保管人。 本主題連結至逐步指示，將保管人新增至案例、在案例中管理保管人，以及透過搜尋審核記錄檔來查看 Microsoft 365 中的保管人活動。|
-|[管理保管人通訊](managing-custodian-communications.md)|瞭解如何在「高級 eDiscovery」中管理合法保留通知程式。 這包括建立及自動化通知工作流程，以及使用者如何認可保留通知。
+|[管理監管人通訊](managing-custodian-communications.md)|瞭解如何在「高級 eDiscovery」中管理合法保留通知程式。 這包括建立及自動化通知工作流程，以及使用者如何認可保留通知。
 |[管理處理錯誤](processing-data-for-case.md)|深入瞭解高級索引，以及如何從 custodial 和非 custodial 內容位置（例如 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶）修復內容中的索引錯誤。 您可以大量修正錯誤，然後將修正的檔案上傳至複查集，或修正檢查集內的個別處理錯誤。|
 |[收集適用於案例的資料](collecting-data-for-ediscovery.md)|瞭解如何在 custodial 內容位置搜尋內容，然後將相關案例資料新增至審閱集。 當您將內容複寫到審閱集時，會將資料從原始內容位置複製到 Microsoft 提供的 Azure 儲存位置。 這為審閱程式提供一組靜態檔。|
 |[管理檢閱集](managing-review-sets.md)|瞭解如何在審閱集中查看案例資料。 這包括查看、查詢、篩選及標記審閱集中的檔。

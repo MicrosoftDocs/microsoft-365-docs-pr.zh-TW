@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 瞭解您可以在 Microsoft Viva 中搜尋主題的方式。
-ms.openlocfilehash: 484d2477f7e4dbef096a4b8a2d30095708c6cc3f
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 1739923c95b42f192bb2e285245f72c3e09e1c30
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50108291"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925925"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜尋來尋找 Microsoft Viva 主題中的主題
 
@@ -41,11 +41,11 @@ ms.locfileid: "50108291"
 
 在 Viva 主題中，您可以手動編輯主題，以包含其為 <b>替代名稱</b>的縮寫。 這可讓僅以該主題的首字母縮寫的使用者進行搜尋，以找出透過 Microsoft 搜尋的主題答案。
 
-[縮寫的答案](https://docs.microsoft.com/microsoftsearch/manage-acronyms) 是 Microsoft Search 所提供的功能，且與 Viva 主題分開管理。
+[縮寫的答案](/microsoftsearch/manage-acronyms) 是 Microsoft Search 所提供的功能，且與 Viva 主題分開管理。
 
 ## <a name="bookmarks-and-topics"></a>書簽和主題
 
-[書簽](https://docs.microsoft.com/microsoftsearch/manage-bookmarks) 是 Microsoft 搜尋功能，可協助使用者快速尋找重要的網站及工具，只需要搜尋 (例如，其 Microsoft 365) 租使用者以外的外部網站上的旅行預約工具）。 它們是由 Microsoft 365 系統管理中心中的搜尋管理員所建立。 
+[書簽](/microsoftsearch/manage-bookmarks) 是 Microsoft 搜尋功能，可協助使用者快速尋找重要的網站及工具，只需要搜尋 (例如，其 Microsoft 365) 租使用者以外的外部網站上的旅行預約工具）。 它們是由 Microsoft 365 系統管理中心中的搜尋管理員所建立。 
 
 若要尋找可預約工作旅行之相關資訊的使用者：
 
@@ -57,7 +57,4 @@ ms.locfileid: "50108291"
 在使用者搜尋體驗中，當使用者搜尋類似「旅行」的字詞時，搜尋結果將會以 Microsoft 搜尋中的下列優先順序顯示。
 1. 已發佈或已確認的主題 
 2. 書籤
-3. 建議的主題 
-
-
-
+3. 建議的主題

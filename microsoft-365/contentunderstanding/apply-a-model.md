@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 瞭解如何將已發佈的模型套用至 SharePoint 文件庫
-ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 42168537c8d449a075b5e29ef9905b6b98b8d714
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080765"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925397"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中套用文件瞭解模型。
 
@@ -94,7 +94,7 @@ ms.locfileid: "50080765"
 
    ![分類日期欄](../media/content-understanding/class-date-column.png)</br> 
 
-[<b>在 Syntex 內容瞭解模型處理完檔案並更新 [分類日期] 欄位後，透過</b> 觸發](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)執行 Power Automate 流程來分類文件時，使用 [分類日期] 欄位。
+[<b>在 Syntex 內容瞭解模型處理完檔案並更新 [分類日期] 欄位後，透過</b> 觸發](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)執行 Power Automate 流程來分類文件時，使用 [分類日期] 欄位。
 
    ![流程觸發](../media/content-understanding/trigger.png)</br>
 
@@ -108,5 +108,3 @@ ms.locfileid: "50080765"
 [建立擷取器](create-an-extractor.md)
 
 [文件瞭解概觀](document-understanding-overview.md)
-
-

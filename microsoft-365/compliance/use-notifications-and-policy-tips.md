@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何將原則提示新增至資料遺失防護 (DLP) 原則，以通知使用者他們使用與 DLP 原則衝突的內容。
-ms.openlocfilehash: 79435343df2d2cb3bc027a92acce44eb74b4d91c
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 63909be2f88ef5f9c42dcd07e127309b4b5b17e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454528"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925469"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 
@@ -286,7 +286,7 @@ Office 桌面程式會直接從 Office 365 自動同步處理 DLP 原則，然�
 - [資料外洩防護原則概觀](data-loss-prevention-policies.md)
     
 - [從範本建立 DLP 原則](create-a-dlp-policy-from-a-template.md)
-- [DLP 原則條件、例外狀況和動作 (預覽) ](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
+- [DLP 原則條件、例外狀況和動作 (預覽) ](./dlp-microsoft-teams.md?view=o365-worldwide)
     
 - [建立 DLP 原則來保護具有 FCI 或其他屬性的文件](protect-documents-that-have-fci-or-other-properties.md)
     

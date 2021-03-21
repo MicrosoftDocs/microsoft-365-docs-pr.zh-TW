@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何規劃 Microsoft Viva 主題的計畫
-ms.openlocfilehash: 2f7b85399f0b1f49e25aae1f1d4627413594f618
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 19baf8bdcfdd1fe38d64e3c2f259ace1ceab5a4b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150475"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925973"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Microsoft Viva 主題的計畫
 
@@ -60,6 +60,12 @@ Site name,URL
 建議您不要選擇「 **沒有網站** 」，因為這會使主題不會自動建立或更新。 不過，如果您想要設定後續主題，然後再新增網站，您可以選擇此選項。
 
 建議您為使用者或知識管理員建立一個程式，以便在組織中需要從主題探索中移除個別網站。
+
+### <a name="multi-geo"></a>多地理位置
+
+如果您的組織已部署 [Microsoft 365 多地理](/microsoft-365/enterprise/microsoft-365-multi-geo)位置，主題中心會布建于中央位置，且只有位於中央位置的 SharePoint 網站可以做為主題來源使用。  (如果選取 [ **所有網站**]，Viva 主題將使用中央位置中的所有網站。 ) 
+
+內容的所有處理及儲存都是在中央位置進行的。
 
 ## <a name="user-permissions"></a>使用者權限
 

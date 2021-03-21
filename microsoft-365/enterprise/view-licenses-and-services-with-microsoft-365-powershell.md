@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 說明如何使用 PowerShell 來查看您的 Microsoft 365 組織中提供的授權方案、服務和授權的相關資訊。
-ms.openlocfilehash: 3275a513de3c114076e792ab6c5ef86b1413571c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 08f48301001ee6a40318428f3310eab8b0d0a351
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688496"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924633"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>使用 PowerShell 查看 Microsoft 365 授權和服務
 
@@ -39,7 +39,7 @@ ms.locfileid: "46688496"
     
 - **授權** 每個授權方案都包含您購買的授權數目。 您可以將授權指派給使用者，讓他們可以使用授權方案所定義的 Microsoft 365 服務。 每個使用者帳戶至少需要一個授權方案的授權，這樣他們才能登入 Microsoft 365 並使用服務。
     
-您可以使用 Microsoft 365 的 PowerShell，以查看您的 Microsoft 365 組織中可用授權方案、授權及服務的詳細資料。 如需有關不同 Office 365 訂閱中可用之產品、功能和服務的詳細資訊，請參閱 [Office 365 方案選項](https://go.microsoft.com/fwlink/p/?LinkId=691147)。
+您可以使用 Microsoft 365 的 PowerShell，以查看您的 Microsoft 365 組織中可用授權方案、授權及服務的詳細資料。 如需有關不同 Office 365 訂閱中可用之產品、功能和服務的詳細資訊，請參閱 [Office 365 方案選項](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)。
 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
@@ -99,7 +99,7 @@ $licenses[2].ServicePlans
 
 ENTERPRISEPREMIUM 是第三列。 因此，索引值為 (3-1) 或2。
 
-如需授權方案的完整清單 (也稱為產品名稱) 、其包含的服務方案及其對應的易記名稱，請參閱 [產品名稱和服務方案識別碼取得授權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
+如需授權方案的完整清單 (也稱為產品名稱) 、其包含的服務方案及其對應的易記名稱，請參閱 [產品名稱和服務方案識別碼取得授權](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
@@ -143,13 +143,13 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure 版權管理 (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |*先前命名為 Office 365 ProPlus*的 Microsoft 365 應用程式 enterprise ()   <br/> |
+| `OFFICESUBSCRIPTION` <br/> |*先前命名為 Office 365 ProPlus* 的 Microsoft 365 應用程式 enterprise ()   <br/> |
 | `MCOSTANDARD` <br/> |商務用 Skype Online  <br/> |
 | `SHAREPOINTWAC` <br/> |辦公室  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    
-如需授權方案的完整清單 (也稱為產品名稱) 、其包含的服務方案及其對應的易記名稱，請參閱 [產品名稱和服務方案識別碼取得授權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
+如需授權方案的完整清單 (也稱為產品名稱) 、其包含的服務方案及其對應的易記名稱，請參閱 [產品名稱和服務方案識別碼取得授權](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
 若要查看特定授權方案中可用之 Microsoft 365 服務的詳細資料，請使用下列語法。
   
@@ -163,7 +163,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

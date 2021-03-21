@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 摘要：瞭解為何您必須使用 PowerShell 來管理 Microsoft 365，在某些情況下更有效率，在其他情況下也是必要的。
-ms.openlocfilehash: d56a2cc47a06be911f1fd38aea3a557c631d2db0
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: a60220001a148b3a24a996bb6e0154f80214b019
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754103"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924585"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>為什麼您需要使用適用於 Microsoft 365 的 PowerShell
 
@@ -164,7 +164,7 @@ $x | Select DisplayName, UsageLocation
 
 這組 PowerShell 命令的轉譯如下：
 1. 取得目前 Microsoft 365 訂閱中的所有使用者，並將資訊儲存在名為 $x 的變數中 (**$x = AzureADUser**) 。
-1.  顯示變數 *$x*的內容，但只包含每個使用者 (的名稱和位置 **$x |選取 [DisplayName]，UsageLocation**) ]。
+1.  顯示變數 *$x* 的內容，但只包含每個使用者 (的名稱和位置 **$x |選取 [DisplayName]，UsageLocation**) ]。
   
 ## <a name="microsoft-365-has-features-that-you-can-only-configure-with-powershell-for-microsoft-365"></a>Microsoft 365 具有您只能使用 Microsoft 365 PowerShell 所設定的功能
 
@@ -225,7 +225,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceR
   
 5. 在 [ **共用物件** ] 對話方塊中，選取 [ **高級**]。
     
-6. 向下滾動使用者清單，尋找並選取 Ken Myer (假設他具有網站) 的許可權，然後選取 [ **移除使用者**權力]。
+6. 向下滾動使用者清單，尋找並選取 Ken Myer (假設他具有網站) 的許可權，然後選取 [ **移除使用者** 權力]。
     
 這會花費 *很長* 的時間進行數百個網站。
   
@@ -236,7 +236,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> 這個命令需要您安裝 [SharePoint 線上 PowerShell 模組](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。 
+> 這個命令需要您安裝 [SharePoint 線上 PowerShell 模組](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。 
   
 此 PowerShell 命令的轉譯如下：取得目前 Microsoft 365 訂閱中的所有 SharePoint 網站 (**Get-SPOSite**) ，並針對每個網站，從可以存取它的使用者清單中移除 Ken Meyer (**ForEach {Remove-SPOUser-site $ \_ 。Url-LoginName "kenmyer \@ litwareinc.com"}**) 。
   
@@ -417,14 +417,14 @@ Molly Dempsey           False        True               False
 此 PowerShell 腳本的轉譯如下：  
 
 1. 取得目前 Microsoft 365 訂閱中的所有使用者，並將資訊儲存在名為 *$x* 的變數中 (**$x = AzureADUser**) 。
-1. 啟動迴圈，以執行 (**foreach ($i 中 ** 的所有使用者 $x foreach $x) ) 。  
+1. 啟動迴圈，以執行 (**foreach ($i 中** 的所有使用者 $x foreach $x) ) 。  
 1. 定義名為 *$y* 的變數，並將使用者的信箱資訊儲存 (**$y = Get-Mailbox 身分 $i.UserPrincipalName**) 。
-1. 將新屬性新增至名為 *IsMailBoxEnabled*的使用者資訊中。 將它設定為使用者信箱的 IsMailBoxEnabled 屬性值 (**$i | Add-Member-MemberType NoteProperty 名稱 IsMailBoxEnabled-value $Y IsMailBoxEnabled**) 。
-1. 定義名為 *$y*的變數，然後將該使用者的商務用 Skype Online 資訊儲存 (**$Y = Get-CsOnlineUser 識別碼 $i.UserPrincipalName**) 。
-1. 將新屬性新增至名為 *EnabledForSfB*的使用者資訊中。 將它設定為使用者商務用 Skype Online 資訊 (**$i | Add-Member-MemberType NoteProperty-Name EnabledForSfB-value $y** 的 enabled 屬性值。已啟用) 。
+1. 將新屬性新增至名為 *IsMailBoxEnabled* 的使用者資訊中。 將它設定為使用者信箱的 IsMailBoxEnabled 屬性值 (**$i | Add-Member-MemberType NoteProperty 名稱 IsMailBoxEnabled-value $Y IsMailBoxEnabled**) 。
+1. 定義名為 *$y* 的變數，然後將該使用者的商務用 Skype Online 資訊儲存 (**$Y = Get-CsOnlineUser 識別碼 $i.UserPrincipalName**) 。
+1. 將新屬性新增至名為 *EnabledForSfB* 的使用者資訊中。 將它設定為使用者商務用 Skype Online 資訊 (**$i | Add-Member-MemberType NoteProperty-Name EnabledForSfB-value $y** 的 enabled 屬性值。已啟用) 。
 1. 顯示使用者清單，但不論其是否已授權，都只包含他們的名稱，以及是否啟用其信箱的兩個新屬性，以及是否為商務用 Skype Online (**$x |選取 [DisplayName]、Islicensed 內容、IsMailboxEnabled、EnabledforSfB**) 。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)
   

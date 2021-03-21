@@ -22,18 +22,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何識別、監控和自動保護 Office 365 中貴組織中的敏感資訊。
-ms.openlocfilehash: 75c2f4d81b3378d031adc394a9c8f7615d51079c
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7d526d5eeb74f0d31f375974824e7a76344bcd76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682796"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925807"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> 針對已取得 Office 365 進階合規性授權的使用者，系統最近將資料外洩防護功能新增至 Microsoft Teams 聊天和頻道訊息，該功能可作為獨立選項提供，並包含在 Office 365 E5 和 Microsoft 365 E5 合規性中。 若要深入了解授權需求，請參閱 [Microsoft 365 租用戶層級服務授權指導方針](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)
+> 針對已取得 Office 365 進階合規性授權的使用者，系統最近將資料外洩防護功能新增至 Microsoft Teams 聊天和頻道訊息，該功能可作為獨立選項提供，並包含在 Office 365 E5 和 Microsoft 365 E5 合規性中。 若要深入了解授權需求，請參閱 [Microsoft 365 租用戶層級服務授權指導方針](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)
 
 為了符合企業標準和產業規定，組織必須保護敏感性資訊並防止意外洩漏。 敏感性資訊包括財務資料或個人識別資訊 (PII)，例如信用卡號碼、身分證字號或健康記錄。 透過 Office 365 安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
   
@@ -204,7 +204,7 @@ DLP 原則在尋找信用卡號碼等敏感性資訊類型時，並不只是尋�
   
 ![設定事件報告的頁面](../media/Alerts-and-incident-report.png)
 
-DLP 掃描電子郵件的方式不同於 SharePoint Online 或商務用 OneDrive 中的項目。 在 SharePoint Online 和商務用 OneDrive 中，DLP 會掃描現有項目以及新的項目，並在發現相符項目時產生警示和事件報告。 在 Exchange Online 中，DLP 僅會掃描新的電子郵件訊息，並在原則相符時產生報告。 DLP *_不會_* 掃描或比對信箱或封存內儲存的既有電子郵件項目。
+DLP 掃描電子郵件的方式不同於 SharePoint Online 或商務用 OneDrive 中的項目。 在 SharePoint Online 和商務用 OneDrive 中，DLP 會掃描現有項目以及新的項目，並在發現相符項目時產生警示和事件報告。 在 Exchange Online 中，DLP 僅會掃描新的電子郵件訊息，並在原則相符時產生報告。 DLP ***不會*** 掃描或比對信箱或封存內儲存的既有電子郵件項目。
   
 ## <a name="grouping-and-logical-operators"></a>群組和邏輯運算子
 
@@ -240,7 +240,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 
 在群組之間，您可以選擇只要滿足一個群組中的條件，還是必須滿足所有群組的條件，才能將內容視為符合規則。
   
-例如，內建的 *美國 HIPAA* 原則中有一個規則在群組之間使用 **AND** 運算子，以識別包含以下群組的內容： 
+例如，內建的美國 HIPAA 原則中有一個規則在群組之間使用 **AND** 運算子，以識別包含以下群組的內容： 
   
 - 來自 **[PII 識別碼]** 群組 (至少有一個社會安全號碼或 DEA 編號) 
     
@@ -354,20 +354,20 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 
 - 您必須先建立並發佈保留標籤，然後才能嘗試將它做為 DLP 原則中的條件。
 - 已發佈的保留標籤會在一到七天內進行同步處理。如需詳細資訊，關於保留原則中已發佈的保留標籤請參閱 [當保留標籤可以使用時](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) ，關於自動發佈的保留標籤請參閱 [保留標籤要多久才會生效](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)。
-- **僅 SharePoint 和 OneDrive 中的項目才支援** _在原則中使用保留標籤。
+- **僅 SharePoint 和 OneDrive 中的項目才支援***在原則中使用保留標籤。
 
   ![做為條件的標籤](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   如果您的項目受保留與處置的限制，且您也想要對這些項目套用其他控制，則可以在 DLP 原則中使用保留標籤，例如：
 
-  - 您發佈了一個名為 2018 年稅務的保留標籤，該保留標籤會套用至儲存在 SharePoint 中 2018 年的稅務文件，保留 10 年，然後加以處置。 您也不想要在組織外共用這些項目，則可以使用 DLP 原則執行此動作。
+  - 您發佈了一個名為 **2018 年稅務** 的保留標籤，該保留標籤會套用至儲存在 SharePoint 中 2018 年的稅務文件，保留 10 年，然後加以處置。 您也不想要在組織外共用這些項目，則可以使用 DLP 原則執行此動作。
 
   > [!IMPORTANT]
   > 如果您指定保留標籤做為 DLP 原則的條件，且也將 Exchange 和/或 Teams 包含為位置，您會遇到此錯誤：**「不支援保護電子郵件與小組訊息內套用標籤的內容。請移除下列標籤或關閉 Exchange 與 Teams 做為位置。」** 這是因為 Exchange 傳輸不會在提交與傳遞郵件期間評估標籤中繼資料。 
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>使用敏感度標籤做為 DLP 原則的條件
 
-使用敏感度標籤做為 DLP 原則的條件目前處於預覽階段。 [深入了解](https://docs.microsoft.com/microsoft-365/compliance/dlp-sensitivity-label-as-condition)。
+使用敏感度標籤做為 DLP 原則的條件目前處於預覽階段。 [深入了解](./dlp-sensitivity-label-as-condition.md)。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>這項功能與其他功能的關係
 
@@ -497,10 +497,10 @@ DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感
   
 <!-- conflict with a DLP policy is bad wording --> 最後，文件可能會違反 DLP 原則，但也可能會符合 DLP 原則。例如，如果人員在文件中加入信用卡號碼，有可能會導致 DLP 原則自動封鎖文件的存取。但如果人員稍後移除敏感資訊，則會在下次依據原則進行評估時自動復原動作 (在此案例中為封鎖)。
   
-DLP 會評估可編製索引的任何內容。 若要進一步了解依預設會對哪些檔案類型進行編目，請參閱 [SharePoint Server 中的預設編目副檔名和剖析檔案類型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
+DLP 會評估可編製索引的任何內容。 若要進一步了解依預設會對哪些檔案類型進行編目，請參閱 [SharePoint Server 中的預設編目副檔名和剖析檔案類型](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
 
 > [!NOTE]
-> 預設會封鎖 SharePoint中新檔案的外部共用，除非至少有一個DLP原則對新項目進行掃描。 如需詳細資訊，請參閱 [透過預設，將新檔案標示為敏感檔案](https://docs.microsoft.com/sharepoint/sensitive-by-default)。 
+> 預設會封鎖 SharePoint中新檔案的外部共用，除非至少有一個DLP原則對新項目進行掃描。 如需詳細資訊，請參閱 [透過預設，將新檔案標示為敏感檔案](/sharepoint/sensitive-by-default)。 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、Outlook 和 Outlook 網頁版中的原則評估
 
@@ -542,19 +542,19 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
 
 若要對安全性與合規性中心使用大部分 Cmdlet，您必須：
   
-1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](/powershell/exchange/connect-to-scc-powershell)。
     
-2. 使用任何 [policy-and-compliance-dlp Cmdlet](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection)。
+2. 使用任何 [policy-and-compliance-dlp Cmdlet](/powershell/module/exchange/export-dlppolicycollection)。
     
 不過，DLP 報告需要從整個 Microsoft 365 擷取資料，包含 Exchange Online。 有鑑於此，**DLP 報告的 Cmdlet 可在 Exchange Online PowerShell 中使用，但安全性與合規性中心 PowerShell 則不行**。 因此，若要為 DLP 報告使用 Cmdlet，您需要︰
   
-1. [使用遠端 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [使用遠端 PowerShell 連線到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
     
 2. 為 DLP 報告使用下列任何 Cmdlet：
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport)
+    - [Get-DlpDetectionsReport](/powershell/module/exchange/Get-DlpDetectionsReport)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport)
+    - [Get-DlpDetailReport](/powershell/module/exchange/Get-DlpDetailReport)
     
 ## <a name="more-information"></a>詳細資訊
 

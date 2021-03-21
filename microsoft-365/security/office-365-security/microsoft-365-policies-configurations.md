@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: e4b85091366927596a2c8f52c579c369fc9697c3
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5d8d9893da69da9f08666f0468b8f185261c36f4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290714"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924081"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -43,8 +43,8 @@ ms.locfileid: "50290714"
 這些功能及其建議：
 
 - 支援 Microsoft 365 E3 和 Microsoft 365 E5。
-- 會與 [Microsoft 安全分數](../mtp/microsoft-secure-score.md) 和 [Azure AD 中的身分識別分數](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)對齊，並且會為您的組織增加這些分數。
-- 會協助您執行下列 [五個步驟，以保護您的身分識別基礎結構](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。
+- 會與 [Microsoft 安全分數](../mtp/microsoft-secure-score.md) 和 [Azure AD 中的身分識別分數](/azure/active-directory/fundamentals/identity-secure-score)對齊，並且會為您的組織增加這些分數。
+- 會協助您執行下列 [五個步驟，以保護您的身分識別基礎結構](/azure/security/azure-ad-secure-steps)。
 
 如果您的組織有獨特的環境需求或複雜性，請使用這些建議做為開始點。 不過，大多陣列織可依照預定的方式來執行這些建議。
 
@@ -66,7 +66,7 @@ ms.locfileid: "50290714"
 
 所提供的許多建議，都依賴只有 Microsoft 365 E5 才能使用的服務、使用身分識別 & 威脅防護附加元件、EMS E5 或 Azure Premium P2 授權的 Microsoft 365 E3。
 
-對於沒有這些授權的組織，Microsoft 建議您至少執行 [安全性預設值，這些預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)包含在所有 Microsoft 365 方案中。
+對於沒有這些授權的組織，Microsoft 建議您至少執行 [安全性預設值，這些預設值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)包含在所有 Microsoft 365 方案中。
 
 ### <a name="caveats"></a>警告
 
@@ -125,7 +125,7 @@ Azure AD 提供完整的身分識別管理功能套件。 我們建議使用這�
 |[裝置註冊](/azure/active-directory/devices/overview)|您可以在 Azure AD 中註冊裝置，以建立裝置的身分識別。 此身分識別是用來在使用者登入並套用需要加入網域或合規的電腦的條件式存取原則時，用來驗證裝置。 針對此指南，我們使用裝置註冊功能自動註冊加入網域的 Windows 電腦。 裝置註冊是使用 Intune 管理裝置的必要條件。|Microsoft 365 E3 或 E5|
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|可讓您偵測影響組織之身分識別的潛在弱點，並設定自動修正原則為低、中、高的登入風險和使用者風險。 本指南取決於此風險評估，針對多重要素驗證套用條件式存取原則。 本指南也包含條件式存取原則，需要使用者在其帳戶中偵測到高風險的活動時變更其密碼。|Microsoft 365 E5，使用 Identity & 威脅防護附加元件、EMS E5 或 Azure Premium P2 授權的 Microsoft 365 E3|
 |[自助密碼重設 (SSPR) ](/azure/active-directory/authentication/concept-sspr-howitworks)|可讓您的使用者安全地重設其密碼，而不需要協助桌面的干預，只要提供系統管理員可控制的多個驗證方法的驗證。|Microsoft 365 E3 或 E5|
-|[Azure AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)|偵測並封鎖已知弱密碼和其變種，以及組織特有的其他弱字詞。 預設全域禁用密碼清單會自動套用至 Azure AD 租用戶中的所有使用者。 您可以在自訂禁用密碼清單中定義其他條目。 使用者變更或重設密碼時，系統會檢查這些禁用密碼清單，以強制使用強式密碼。|Microsoft 365 E3 或 E5|
+|[Azure AD 密碼保護](/azure/active-directory/authentication/concept-password-ban-bad)|偵測並封鎖已知弱密碼和其變種，以及組織特有的其他弱字詞。 預設全域禁用密碼清單會自動套用至 Azure AD 租用戶中的所有使用者。 您可以在自訂禁用密碼清單中定義其他條目。 使用者變更或重設密碼時，系統會檢查這些禁用密碼清單，以強制使用強式密碼。|Microsoft 365 E3 或 E5|
 |
 
 以下是身分識別與裝置存取的元件，包括 Intune 和 Azure AD 物件、設定和 subservices。
@@ -134,11 +134,11 @@ Azure AD 提供完整的身分識別管理功能套件。 我們建議使用這�
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Intune](https://docs.microsoft.com/intune/introduction-intune) 是 Microsoft 雲端型行動裝置管理服務。 本指南建議使用 Intune 的 Windows 電腦裝置管理，並建議裝置合規性原則設定。 Intune 會判斷是否符合裝置，並將此資料傳送至 Azure AD，以在套用條件式存取原則時使用。
+[Intune](/intune/introduction-intune) 是 Microsoft 雲端型行動裝置管理服務。 本指南建議使用 Intune 的 Windows 電腦裝置管理，並建議裝置合規性原則設定。 Intune 會判斷是否符合裝置，並將此資料傳送至 Azure AD，以在套用條件式存取原則時使用。
 
 #### <a name="intune-app-protection"></a>Intune 應用程式保護
 
-您可以使用[Intune 應用程式保護](https://docs.microsoft.com/intune/app-protection-policy)原則，在行動應用程式中保護您組織的資料，但不需要將裝置登記至管理。 Intune 可協助保護資訊，確保您的員工仍可生產力，並防止資料遺失。 透過實施應用層級原則，您可以限制公司資源的存取權，並將資料放在 IT 部門的控制中。
+您可以使用[Intune 應用程式保護](/intune/app-protection-policy)原則，在行動應用程式中保護您組織的資料，但不需要將裝置登記至管理。 Intune 可協助保護資訊，確保您的員工仍可生產力，並防止資料遺失。 透過實施應用層級原則，您可以限制公司資源的存取權，並將資料放在 IT 部門的控制中。
 
 本指南說明如何建立建議原則，以強制使用已核准的應用程式，以及決定如何將這些應用程式與您的商務資料搭配使用。
 
@@ -204,8 +204,8 @@ Microsoft 建議您不要建立適用于所有應用程式的原則集，因為�
 3. 為來賓和外部使用者設定條件式存取原則。
 4. 針對 microsoft 團隊、Exchange Online 和 SharePoint，設定 Microsoft 365 雲端 app 的條件式存取原則。
 
-在您設定身分識別與裝置存取後，請參閱 [AZURE ad 功能部署指南](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) ，以瞭解其他應考慮的功能和 [Azure AD 身分識別](https://docs.microsoft.com/azure/active-directory/governance/) 控管，以保護、監控和審核存取。
+在您設定身分識別與裝置存取後，請參閱 [AZURE ad 功能部署指南](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) ，以瞭解其他應考慮的功能和 [Azure AD 身分識別](/azure/active-directory/governance/) 控管，以保護、監控和審核存取。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [實施身分識別與裝置存取原則的必要條件工作](identity-access-prerequisites.md)

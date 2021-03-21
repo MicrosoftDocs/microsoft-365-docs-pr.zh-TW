@@ -13,12 +13,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: 瞭解如何在多地理位置環境中，使用指定的慣用資料位置來建立 Microsoft 365 群組。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5af32827d11289f7a966311080d2c15197786799
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 7f02a5eb6d8b30e8381c65d4735812675d35af2b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547731"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923741"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>使用特定的 PDL 建立 Microsoft 365 群組
 
@@ -32,7 +32,7 @@ ms.locfileid: "47547731"
 
 如果您要在澳洲位置建立群組網站，您可以移至 https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement
 
-1. 選取 [+ 建立]****。
+1. 選取 [+ 建立]。
 2. 遵循程序來建立群組網站。
 
 您的群組網站將在與您從中啟動網站建立要求的 SharePoint 系統管理中心對應的地理位置中佈建。 
@@ -57,4 +57,4 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ## <a name="related-topics"></a>相關主題
 
-[連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)

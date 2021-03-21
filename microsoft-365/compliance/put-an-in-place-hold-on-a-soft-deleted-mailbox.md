@@ -14,12 +14,12 @@ ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何為虛刪除的信箱建立 In-Place 保留，使其成為非使用中的信箱，並保留其內容。
-ms.openlocfilehash: 638cc0554f216a0cb552c1f8eacef3d692d9f792
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4cca34ab2ca3a946245f34a9b0d898a07537a722
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423764"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925519"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>在 Exchange Online 中的虛刪除信箱上放置 In-Place
 
@@ -37,7 +37,7 @@ ms.locfileid: "50423764"
 
 - 您必須在 Windows PowerShell 中使用 **New-MailboxSearch** 指令程式，以便在虛刪除的信箱上進行 In-Place 保留。 您無法使用 Exchange 系統管理中心 (EAC) 或 SharePoint Online 中的 eDiscovery Center。 
 
-- 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+- 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 - 執行下列命令，以取得組織中虛刪除信箱的身分識別資訊。 
 
@@ -49,7 +49,7 @@ ms.locfileid: "50423764"
 
 ## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>在虛刪除的信箱上放置 In-Place，使其成為非使用中的信箱
 
-使用 **New-MailboxSearch** Cmdlet 將虛刪除的信箱設為非使用中的信箱。 如需詳細資訊，請參閱 [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx)。
+使用 **New-MailboxSearch** Cmdlet 將虛刪除的信箱設為非使用中的信箱。 如需詳細資訊，請參閱 [New-MailboxSearch](/powershell/module/exchange/new-mailboxsearch)。
   
 1. 建立包含虛刪除信箱之屬性的變數。
 

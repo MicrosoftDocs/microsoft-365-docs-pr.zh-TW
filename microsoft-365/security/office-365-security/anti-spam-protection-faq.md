@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中查看有關反垃圾郵件保護的常見問題及解答。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8abccdac73877c3f24114afaa78c13143e156868
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: cc1aa26832830dce4f529566a589cb8bf3e1df01
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288966"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925217"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾郵件保護常見問題集
 
@@ -92,13 +92,13 @@ ms.locfileid: "50288966"
 
 是，例如，您可以在 Microsoft 365 系統管理中心取得垃圾郵件偵測報告。 報告內容會將呈現垃圾郵件唯一的郵件的樹木。 如需報告的詳細資訊，請參閱下列連結：
 
-Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件追蹤](https://docs.microsoft.com/exchange/monitoring/monitoring) (部分機器翻譯)
+Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件追蹤](/exchange/monitoring/monitoring) (部分機器翻譯)
 
 獨立 EOP 客戶： [在 Exchange Online Protection 中報告和郵件追蹤](reporting-and-message-trace-in-exchange-online-protection.md)
 
 ## <a name="someone-sent-me-a-message-and-i-cant-find-it-i-suspect-that-it-may-have-been-detected-as-spam-is-there-a-tool-that-i-can-use-to-find-out"></a>某人傳送給我訊息，但找不到。 我懷疑它可能被偵測為垃圾郵件。 是否有可用來找出的工具？
 
-有的，郵件追蹤工具可讓您追蹤透過此服務的電子郵件，以了解這些電子郵件的處理情形。 如需關於如何使用郵件追蹤工具來查出郵件為何被標示為垃圾郵件的詳細資訊，請參閱[郵件是否被標示為垃圾郵件？](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam) (部分機器翻譯)
+有的，郵件追蹤工具可讓您追蹤透過此服務的電子郵件，以了解這些電子郵件的處理情形。 如需關於如何使用郵件追蹤工具來查出郵件為何被標示為垃圾郵件的詳細資訊，請參閱[郵件是否被標示為垃圾郵件？](/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam) (部分機器翻譯)
 
 ## <a name="will-the-service-throttle-rate-limit-my-mail-if-my-users-send-outbound-spam"></a>如果我的使用者已傳送輸出垃圾郵件，服務節流是否會) 我的郵件 (速率限制？
 
@@ -110,7 +110,7 @@ Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件�
 
 是。 雖然我們建議您將 MX 記錄指向 Microsoft，但我們意識到有正當的商業原因可將電子郵件路由傳送至 Microsoft first 以外的地方。
 
-- **輸入**：變更您的 MX 記錄以指向協力廠商提供者，然後將郵件重新導向至 EOP 進行其他處理。 如需詳細資訊，請參閱 [在 Exchange Online 中針對連接器的增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+- **輸入**：變更您的 MX 記錄以指向協力廠商提供者，然後將郵件重新導向至 EOP 進行其他處理。 如需詳細資訊，請參閱 [在 Exchange Online 中針對連接器的增強型篩選](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
 - **輸出**：設定從 Microsoft 365 到目的地協力廠商提供者的智慧主機路由。
 

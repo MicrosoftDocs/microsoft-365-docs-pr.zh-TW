@@ -20,16 +20,16 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: 使用集中式部署 PowerShell Cmdlet，協助您部署及管理 Microsoft 365 組織的 Office 增益集。
-ms.openlocfilehash: 659f12d2533601c4b2165a95ddbf59ea521945b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688743"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924669"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中式部署 PowerShell Cmdlet 來管理增益集
 
-做為 Microsoft 365 全域管理員，您可以透過 [集中式部署] 功能將 Office 增益集部署至使用者 (請參閱 [在系統管理中心部署 Office 增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)) 。 除了透過 Microsoft 365 系統管理中心部署 Office 增益集之外，您也可以使用 Microsoft PowerShell。 安裝 [適用于 Windows PowerShell 的 O365 集中式 Add-In 部署模組](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)。 
+做為 Microsoft 365 全域管理員，您可以透過 [集中式部署] 功能將 Office 增益集部署至使用者 (請參閱 [在系統管理中心部署 Office 增益集](../admin/manage/manage-deployment-of-add-ins.md)) 。 除了透過 Microsoft 365 系統管理中心部署 Office 增益集之外，您也可以使用 Microsoft PowerShell。 安裝 [適用于 Windows PowerShell 的 O365 集中式 Add-In 部署模組](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)。 
 
 下載該模組之後，請開啟一般 Windows PowerShell 視窗，並執行下列 Cmdlet：
 
@@ -60,7 +60,7 @@ ms.locfileid: "46688743"
   ```
 
 > [!NOTE]
-> 如需使用 PowerShell 的詳細資訊，請參閱 [Connect To Microsoft 365 with PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585)。 
+> 如需使用 PowerShell 的詳細資訊，請參閱 [Connect To Microsoft 365 with PowerShell](./connect-to-microsoft-365-powershell.md)。 
   
 ## <a name="upload-an-add-in-manifest"></a>上傳增益集資訊清單
 
@@ -88,7 +88,7 @@ New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-
 
 若要決定  _AssetId_ 參數的值，您可以從增益集的 Office STORE 網頁 URL 進行複製。 AssetIds 永遠以 "WA" 開頭，後面接數位。 例如，在上一個範例中，WA104099688 的 AssetId 值來源為增益集的 Office Store 網頁 URL： [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) 。
   
-_Locale_參數和_ContentMarket_參數的值相同，並指出您嘗試安裝增益集的國家/地區。 格式為 en-US，fr-FR。 等等。 
+_Locale_ 參數和 _ContentMarket_ 參數的值相同，並指出您嘗試安裝增益集的國家/地區。 格式為 en-US，fr-FR。 等等。 
   
 > [!NOTE]
 > 從 Office Store 上傳的增益集會在 Office 市集中的最新更新可用幾天內自動更新。 
@@ -101,7 +101,7 @@ _Locale_參數和_ContentMarket_參數的值相同，並指出您嘗試安裝增
 Get-OrganizationAddIn
 ```
 
-使用_ProductId_參數的值來執行**OrganizationAddIn 指令程式**，以指定您要從中取得詳細資料的增益集。 
+使用 _ProductId_ 參數的值來執行 **OrganizationAddIn 指令程式**，以指定您要從中取得詳細資料的增益集。 
   
 ```powershell
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
@@ -115,7 +115,7 @@ foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.Produ
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>開啟或關閉增益集
 
-若要關閉增益集，讓指派給它的使用者和群組不再具有存取權，請使用_ProductId_參數和_Enabled_參數設定為，以執行**OrganizationAddIn 指令程式**， `$false` 如下列範例所示。
+若要關閉增益集，讓指派給它的使用者和群組不再具有存取權，請使用 _ProductId_ 參數和 _Enabled_ 參數設定為，以執行 **OrganizationAddIn 指令程式**， `$false` 如下列範例所示。
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
@@ -129,7 +129,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $
 
 ## <a name="add-or-remove-users-from-an-add-in"></a>新增或移除增益集中的使用者
 
-若要將使用者和群組新增至特定增益集，請使用_ProductId_、 _add_和_Members_參數執行**OrganizationAddInAssignments** Cmdlet。 以逗號分隔成員的電子郵件地址。 
+若要將使用者和群組新增至特定增益集，請使用 _ProductId_、 _add_ 和 _Members_ 參數執行 **OrganizationAddInAssignments** Cmdlet。 以逗號分隔成員的電子郵件地址。 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
@@ -147,7 +147,7 @@ Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-若要將增益集指派給所有人，並回復至先前指派的使用者和群組，您可以執行相同的指令程式，並將 AssignToEveryone 參數的值設為，以關閉_AssignToEveryone_參數 `$false` 。
+若要將增益集指派給所有人，並回復至先前指派的使用者和群組，您可以執行相同的指令程式，並將 AssignToEveryone 參數的值設為，以關閉參數 `$false` 。
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
@@ -155,7 +155,7 @@ Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 
 ## <a name="update-an-add-in"></a>更新增益集
 
-若要從資訊清單更新增益集，請使用_ProductId_、 _ManifestPath_及_Locale_參數執行**OrganizationAddIn 指令程式**，如下列範例所示。 
+若要從資訊清單更新增益集，請使用 _ProductId_、 _ManifestPath_ 及 _Locale_ 參數執行 **OrganizationAddIn 指令程式**，如下列範例所示。 
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
@@ -166,7 +166,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
   
 ## <a name="delete-an-add-in"></a>刪除增益集
 
-若要刪除增益集，請使用_ProductId_參數執行**Remove-OrganizationAddIn** Cmdlet，如下列範例所示。 
+若要刪除增益集，請使用 _ProductId_ 參數執行 **Remove-OrganizationAddIn** Cmdlet，如下列範例所示。 
   
 ```powershell
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
@@ -272,10 +272,8 @@ If an add-in has been deployed, it has to be removed from the cache in each comp
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>取得每個 Cmdlet 的詳細資訊
 
-您可以使用 Get-help 指令程式，查看每個 Cmdlet 的詳細說明。 例如，下列 Cmdlet 提供有關 OrganizationAddIn Cmdlet 的詳細資訊。
+您可以使用 Get-help 指令程式，查看每個 Cmdlet 的詳細說明。 例如，下列 Cmdlet 提供 Remove-OrganizationAddIn Cmdlet 的詳細資訊。
   
 ```powershell
 Get-help Remove-OrganizationAddIn -Full
 ```
-
-

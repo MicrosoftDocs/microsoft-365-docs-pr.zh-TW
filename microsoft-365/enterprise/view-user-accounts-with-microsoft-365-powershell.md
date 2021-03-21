@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 瞭解如何使用 PowerShell 以不同方式來查看、列出或顯示 Microsoft 365 使用者帳戶。
-ms.openlocfilehash: 312e9fb983c4d1f4de8bc74586c88f1e669eb90a
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754069"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924645"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 來查看 Microsoft 365 使用者帳戶
 
@@ -74,9 +74,9 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>查看特定帳戶的其他屬性值
 
-根據預設， **AzureADUser** Cmdlet 只會顯示帳戶的 *ObjectID*、 *DisplayName*及 *UserPrincipalName* 屬性。
+根據預設， **AzureADUser** Cmdlet 只會顯示帳戶的 *ObjectID*、 *DisplayName* 及 *UserPrincipalName* 屬性。
 
-若要更選擇要顯示的內容，請搭配使用 **Select** Cmdlet 搭配 **AzureADUser 指令程式** 。 若要組合這兩個 Cmdlet，請使用 "管道" 字元 ( "|") ，它會通知 Azure Active Directory PowerShell 以取得一個命令的結果，並將其傳送至下一個命令。 以下是一個範例命令，會顯示每個使用者帳戶的 *DisplayName*、 *部門*和 *UsageLocation* ：
+若要更選擇要顯示的內容，請搭配使用 **Select** Cmdlet 搭配 **AzureADUser 指令程式** 。 若要組合這兩個 Cmdlet，請使用 "管道" 字元 ( "|") ，它會通知 Azure Active Directory PowerShell 以取得一個命令的結果，並將其傳送至下一個命令。 以下是一個範例命令，會顯示每個使用者帳戶的 *DisplayName*、 *部門* 和 *UsageLocation* ：
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
@@ -109,13 +109,13 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 - Azure Active Directory (Azure AD) 直接在雲端中建立的 AD 帳戶。
 
 
-下列命令會指示 PowerShell 取得屬性 *DirSyncEnabled* 設定為 *True*的所有使用者。 您可以使用它來尋找與內部部署 AD 同步處理的帳戶。
+下列命令會指示 PowerShell 取得屬性 *DirSyncEnabled* 設定為 *True* 的所有使用者。 您可以使用它來尋找與內部部署 AD 同步處理的帳戶。
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
 ```
 
-下列命令會指示 PowerShell 取得屬性 *DirSyncEnabled* 設定為 *False*的所有使用者。 您可以使用它來尋找僅雲端帳戶。
+下列命令會指示 PowerShell 取得屬性 *DirSyncEnabled* 設定為 *False* 的所有使用者。 您可以使用它來尋找僅雲端帳戶。
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
@@ -133,9 +133,9 @@ Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
   
 1.  (**AzureADUser**) 取得使用者帳戶上的所有資訊，並將其傳送至下一個命令 (**|**) 。
     
-1. 尋找所有未指定使用位置的使用者帳戶， (**其中 {$ \_ 。UsageLocation-eq $Null}**) 。 在大括弧內，此命令會指示 PowerShell 只找出 UsageLocation 使用者帳戶屬性 (的帳戶集** $ \_ 。** 未指定 UsageLocation)  (**-eq $Null**) 。
+1. 尋找所有未指定使用位置的使用者帳戶， (**其中 {$ \_ 。UsageLocation-eq $Null}**) 。 在大括弧內，此命令會指示 PowerShell 只找出 UsageLocation 使用者帳戶屬性 (的帳戶集 **$ \_ 。** 未指定 UsageLocation)  (**-eq $Null**) 。
     
-**UsageLocation**屬性只是與使用者帳戶相關聯的眾多屬性之一。 若要顯示特定使用者帳戶的所有屬性，請使用 **Select** Cmdlet 及萬用字元 ( * ) 。 以下為範例：
+**UsageLocation** 屬性只是與使用者帳戶相關聯的眾多屬性之一。 若要顯示特定使用者帳戶的所有屬性，請使用 **Select** Cmdlet 及萬用字元 ( * ) 。 以下為範例：
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
@@ -148,7 +148,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  在這些範例中， **where** Cmdlet 的語法是 **{$ \_ 。** [user account property name][比較運算子]值 **}**。 > [comparison 運算子] 是 **-eq** for equals，- **ne** 代表不等於，- **lt** 代表小於， **-gt** 代表大於，其他。  [value] 通常是一個字串， (字母、數位及其他字元的順序) 、數值或未指定的 **$Null** 。 如需詳細資訊，請參閱 [Where](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
+>  在這些範例中， **where** Cmdlet 的語法是 **{$ \_ 。** [user account property name][比較運算子]值 **}**。 > [comparison 運算子] 是 **-eq** for equals，- **ne** 代表不等於，- **lt** 代表小於， **-gt** 代表大於，其他。  [value] 通常是一個字串， (字母、數位及其他字元的順序) 、數值或未指定的 **$Null** 。 如需詳細資訊，請參閱 [Where](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
   
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
@@ -164,7 +164,7 @@ Get-MsolUser
 ```
 
 >[!Note]
->PowerShell 核心不支援 Windows PowerShell 模組的 Microsoft Azure Active Directory 模組，以及其名稱中含有 *Msol* 的 Cmdlet。 從 Windows PowerShell 執行這些 Cmdlet。
+>PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 *Msol* 的 Cmdlet。 從 PowerShell 執行這些 Cmdlet。
 >
 
 您應該會收到類似以下的資訊：
@@ -179,7 +179,7 @@ AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-**Get-MsolUser**指令程式也有一組參數，用來篩選顯示的使用者帳戶集。 例如，針對未經許可的使用者清單 (已新增至 Microsoft 365 的使用者，但是尚未獲得授權使用任何服務) ，請執行下列命令：
+**Get-MsolUser** 指令程式也有一組參數，用來篩選顯示的使用者帳戶集。 例如，針對未經許可的使用者清單 (已新增至 Microsoft 365 的使用者，但是尚未獲得授權使用任何服務) ，請執行下列命令：
   
 ```powershell
 Get-MsolUser -UnlicensedUsersOnly
@@ -194,7 +194,7 @@ BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-如需其他參數以篩選顯示的使用者帳戶集合的詳細資訊，請參閱 [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100))。
+如需其他參數以篩選顯示的使用者帳戶集合的詳細資訊，請參閱 [Get-MsolUser](/previous-versions/azure/dn194133(v=azure.100))。
   
 ### <a name="view-a-specific-account"></a>查看特定帳戶
 
@@ -216,7 +216,7 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null}
   
 1. **Get-MsolUser**) 取得使用者帳戶 (的所有資訊，並將其傳送至下一個命令 (**|**) 。
     
-1. 尋找所有未指定使用位置的使用者帳戶， (**其中 {$ \_ 。UsageLocation-eq $Null}**) 。 在大括弧內，此命令會指示 PowerShell 只尋找 UsageLocation 使用者帳戶屬性 (的帳戶集** $ \_ 。** 未指定 UsageLocation)  (**-eq $Null**) 。
+1. 尋找所有未指定使用位置的使用者帳戶， (**其中 {$ \_ 。UsageLocation-eq $Null}**) 。 在大括弧內，此命令會指示 PowerShell 只尋找 UsageLocation 使用者帳戶屬性 (的帳戶集 **$ \_ 。** 未指定 UsageLocation)  (**-eq $Null**) 。
     
 您應該會收到類似以下的資訊：
   
@@ -228,7 +228,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ```
 
-*UsageLocation*屬性只是與使用者帳戶相關聯的眾多屬性之一。 若要查看使用者帳戶的所有屬性，請使用 **Select** Cmdlet 及萬用字元 ( * ) 以顯示特定使用者帳戶的所有屬性。 以下為範例：
+*UsageLocation* 屬性只是與使用者帳戶相關聯的眾多屬性之一。 若要查看使用者帳戶的所有屬性，請使用 **Select** Cmdlet 及萬用字元 ( * ) 以顯示特定使用者帳戶的所有屬性。 以下為範例：
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
@@ -241,7 +241,7 @@ Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  在這些範例中， **where** Cmdlet 的語法是 **{$ \_ 。** [user account property name][比較運算子]值 **}**.  [比較運算子] 的 **-eq** 代表 equals，- **ne** 代表不等於， **-lt** 代表小於， **-gt** 代表大於，其他。  [value] 通常是一個字串， (字母、數位及其他字元的順序) 、數值或未指定的 **$Null** 。 如需詳細資訊，請參閱 [Where](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
+>  在這些範例中， **where** Cmdlet 的語法是 **{$ \_ 。** [user account property name][比較運算子]值 **}**.  [比較運算子] 的 **-eq** 代表 equals，- **ne** 代表不等於， **-lt** 代表小於， **-gt** 代表大於，其他。  [value] 通常是一個字串， (字母、數位及其他字元的順序) 、數值或未指定的 **$Null** 。 如需詳細資訊，請參閱 [Where](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
   
 若要檢查使用者帳戶的封鎖狀態，請使用下列命令：
   
@@ -300,7 +300,7 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Departme
   
 1. 取得 (**Get-MsolUser**) 的使用者帳戶資訊，並將其傳送至下一個命令 (**|**) 。
     
-1. 尋找所有未指定使用位置的使用者帳戶， (**其中 {$ \_ 。UsageLocation-eq $Null}**) ，並將產生的資訊傳送至下一個命令 (**|**) 。 在大括弧內，此命令會指示 PowerShell 只找出 UsageLocation 使用者帳戶屬性 (的帳戶集** $ \_ 。** 未指定 UsageLocation)  (**-eq $Null**) 。
+1. 尋找所有未指定使用位置的使用者帳戶， (**其中 {$ \_ 。UsageLocation-eq $Null}**) ，並將產生的資訊傳送至下一個命令 (**|**) 。 在大括弧內，此命令會指示 PowerShell 只找出 UsageLocation 使用者帳戶屬性 (的帳戶集 **$ \_ 。** 未指定 UsageLocation)  (**-eq $Null**) 。
     
 1. 只顯示使用者帳戶名稱、部門和使用位置， (**選取 DisplayName、部門、UsageLocation**) 。
     
@@ -315,14 +315,14 @@ Scott Wallace            Operations
 
 如果您是使用目錄同步處理來建立及管理 Microsoft 365 使用者，您可以顯示已計畫 Microsoft 365 使用者的本機帳戶。 下列範例假設：
 
-- Azure AD Connect 設定為使用 ObjectGUID 的預設來源錨點。  (如需設定來源錨點的詳細資訊，請參閱 [AZURE AD Connect：設計概念](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)) 。
+- Azure AD Connect 設定為使用 ObjectGUID 的預設來源錨點。  (如需設定來源錨點的詳細資訊，請參閱 [AZURE AD Connect：設計概念](/azure/active-directory/hybrid/plan-connect-design-concepts)) 。
 - 已安裝 PowerShell 的 Active Directory 網域服務模組 (請參閱 [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)) 。
 
 ```powershell
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：瞭解已變更，以在 Microsoft (Cloud Deutschland) 中進行移動，以在新的德國資料中心區域中從 Microsoft cloud 到 Office 365 服務。
-ms.openlocfilehash: 0415f7b95cb9a9f2625798311946dac0f1f7c2c0
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: cadad596011bbcde02b61f01e949c93a5a62a1c3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688609"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923823"
 ---
 # <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>在新的德國資料中心區域中，遷移至 Office 365 服務的變化
 
@@ -66,7 +66,7 @@ ms.locfileid: "49688609"
 
 - 當租使用者轉換成 Office 365 服務時，其德國特定訂閱和授權會以新的 Office 365 服務產品進行標準化。 對應的 Office 365 服務訂閱會為轉接的德國訂閱購買。 具有德國授權的使用者將會被指派 Office 365 服務授權。 完成後，舊版的德國訂閱會取消，並從目前的 Office 365 服務租使用者中移除。
 
-- 在遷移個別工作負載後，其他功能會透過 Office 365 服務 (（例如 Microsoft Planner 和 Microsoft 流量) ）提供，因為這是新的 Office 365 服務訂閱。 如果適用于您的組織，租使用者或授權管理員可以在您規劃變更管理以引進新服務時，停用新的服務方案。 如需如何停用指派給使用者授權之服務方案的指導方針，請參閱 [在指派使用者授權時，停用 Microsoft 365 服務的存取權](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses)。
+- 在遷移個別工作負載後，其他功能會透過 Office 365 服務 (（例如 Microsoft Planner 和 Microsoft 流量) ）提供，因為這是新的 Office 365 服務訂閱。 如果適用于您的組織，租使用者或授權管理員可以在您規劃變更管理以引進新服務時，停用新的服務方案。 如需如何停用指派給使用者授權之服務方案的指導方針，請參閱 [在指派使用者授權時，停用 Microsoft 365 服務的存取權](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses)。
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -87,11 +87,11 @@ Office Online 服務可透過 `office.de` 過渡前後進行存取。 將使用�
 
 ## <a name="skype-for-business-online"></a>商務用 Skype Online
 
-現有的商務用 Skype Online 客戶將會移轉 Microsoft Teams。 如需詳細資訊，請參閱 [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home) 。
+現有的商務用 Skype Online 客戶將會移轉 Microsoft Teams。 如需詳細資訊，請參閱 [https://aka.ms/SkypeToTeams-Home](/microsoftteams/upgrade-start-here) 。
 
 ## <a name="office-365-video"></a>Office 365 影片
 
-在完成將 SharePoint 線上遷移至新的德國資料中心區域之後，office 365 影片會在年3月1日、2021和 Office 365 影片上終止。 Office 365 影片中的內容會隨著 SharePoint 線上之遷移的一部分進行遷移。 不過，在 SharePoint 遷移後，Office 365 影片中的影片不會在 Office 365 的視頻 UI 中播放。 深入瞭解 [Office 365 影片轉接至 Microsoft Stream (古典) 一覽](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)中的遷移時程表。
+在完成將 SharePoint 線上遷移至新的德國資料中心區域之後，office 365 影片會在年3月1日、2021和 Office 365 影片上終止。 Office 365 影片中的內容會隨著 SharePoint 線上之遷移的一部分進行遷移。 不過，在 SharePoint 遷移後，Office 365 影片中的影片不會在 Office 365 的視頻 UI 中播放。 深入瞭解 [Office 365 影片轉接至 Microsoft Stream (古典) 一覽](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)中的遷移時程表。
 
 ## <a name="next-step"></a>後續步驟
 
@@ -113,6 +113,6 @@ Office Online 服務可透過 `office.de` 過渡前後進行存取。 將使用�
 
 雲端應用程式：
 
-- [Dynamics 365 的移轉程式資訊](https://aka.ms/d365ceoptin)
-- [Power BI 移轉程式資訊](https://aka.ms/pbioptin)
-- [開始升級您的 Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 的移轉程式資訊](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 移轉程式資訊](/power-bi/admin/service-admin-migrate-data-germany)
+- [開始升級您的 Microsoft Teams](/microsoftteams/upgrade-start-here)

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務時，其他 Azure Active Directory 資訊。
-ms.openlocfilehash: 4fc5dda95e5e7afc4d69141a9a4debd0a74c492b
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 1e3871dc5a8a8a9ecbef29df21431aa3707871d0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688742"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923847"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的其他 Azure Active Directory 資訊
 
@@ -45,14 +45,14 @@ ms.locfileid: "49688742"
 
 應用程式可能是下列其中一項：
 
-- [單一頁面應用程式 (SPA) ](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
-- [登入使用者的 Web 應用程式](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
-- [呼叫 web APIs 的 web 應用程式](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
-- [受保護的 web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
-- [呼叫 web APIs 的 web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
-- [桌面應用程式](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
-- [後臺應用程式](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
-- [行動應用程式](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
+- [單一頁面應用程式 (SPA) ](/azure/active-directory/develop/scenario-spa-overview)
+- [登入使用者的 Web 應用程式](/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [呼叫 web APIs 的 web 應用程式](/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [受保護的 web API](/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [呼叫 web APIs 的 web API](/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [桌面應用程式](/azure/active-directory/develop/scenario-desktop-overview)
+- [後臺應用程式](/azure/active-directory/develop/scenario-daemon-overview)
+- [行動應用程式](/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > 當應用程式切換成您的授權使用時 `login.microsoftonline.com` ，會以這個新的授權單位簽署權杖。 如果您主控其他應用程式所撥打的任何資源應用程式，您將需要允許進行寬鬆的權杖驗證。 這表示您的應用程式必須允許 Azure AD 德國和 Azure AD 公用雲端所簽署的權杖。 除非所有呼叫您服務的用戶端應用程式都已完全遷移至 Azure AD public cloud，否則需要進行這種寬鬆的權杖驗證。 遷移之後，您的資源應用程式只需要接受由 Azure AD public 雲端簽署的權杖。
@@ -72,10 +72,10 @@ ms.locfileid: "49688742"
 
 5. 更新環境參數，使其 `AzurePublic` (，而不是 `AzureGermany`) 中的系統管理工具和腳本：
 
-    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)
-    - [Azure AD PowerShell (MSOnline) ](https://docs.microsoft.com/powershell/azure/active-directory/overview)
-    - [Azure AD PowerShell (AzureAD) ](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?)
-    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
+    - [Azure PowerShell](/powershell/azure/install-az-ps)
+    - [Azure AD PowerShell (MSOnline) ](/powershell/azure/active-directory/overview)
+    - [Azure AD PowerShell (AzureAD) ](/powershell/azure/active-directory/install-adv2)
+    - [Azure CLI](/cli/azure/install-azure-cli)
  
 **我發佈的應用程式為何？**
 
@@ -112,7 +112,7 @@ ms.locfileid: "49688742"
 
 - Microsoft Cloud Deutschland 使用行動代理程式更新方法進行 MFA 要求的使用者，可看到使用者 ObjectId (GUID) ，而不是 Microsoft 驗證應用程式中的使用者主體名稱 (UPN) 。 在 Office 365 服務中完成 Azure AD 租使用者的遷移後，新的 Microsoft 驗證者啟用會顯示使用者的 Upn。 現有的 Microsoft 驗證者帳戶會繼續顯示使用者 ObjectId，但他們會繼續使用行動代理程式更新。 
 
-- 針對10月 22 2019 日之後建立的承租人，當租使用者遷移至 Office 365 服務時，可能會為租使用者自動啟用安全性預設值。 租使用者管理員可以選擇讓安全性預設值保持啟用並登錄 MFA，也可以停用此功能。 如需詳細資訊，請參閱 [停用安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults)。 
+- 針對10月 22 2019 日之後建立的承租人，當租使用者遷移至 Office 365 服務時，可能會為租使用者自動啟用安全性預設值。 租使用者管理員可以選擇讓安全性預設值保持啟用並登錄 MFA，也可以停用此功能。 如需詳細資訊，請參閱 [停用安全性預設值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults)。 
 
   > [!NOTE]
   > 在遷移期間，未自動啟用的組織可能會在未來自動註冊，因為啟用安全性預設值的功能會在 Office 365 服務中推出。 選擇明確停用或啟用安全性預設值的系統管理員可以在 **Azure Active Directory > 屬性** 下更新功能來執行此動作。 管理員明確啟用該功能之後，將不會自動啟用該功能。
@@ -136,6 +136,6 @@ ms.locfileid: "49688742"
 
 雲端應用程式：
 
-- [Dynamics 365 的移轉程式資訊](https://aka.ms/d365ceoptin)
-- [Power BI 移轉程式資訊](https://aka.ms/pbioptin)
-- [開始升級您的 Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 的移轉程式資訊](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 移轉程式資訊](/power-bi/admin/service-admin-migrate-data-germany)
+- [開始升級您的 Microsoft Teams](/microsoftteams/upgrade-start-here)

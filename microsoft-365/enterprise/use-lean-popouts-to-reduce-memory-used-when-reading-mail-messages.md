@@ -15,16 +15,16 @@ f1.keywords:
 - NOCSH
 description: 本文包含的資訊可讓您使用精益快顯，以改善 Outlook 網頁版中的郵件下載效能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bf53464ac6b2783fbbfc335fd4ff73dbe4435fb
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0fec3e0267b7299e34de541a184cf92e99e260f1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688744"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925253"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>使用精益快顯減少讀取郵件訊息時所使用的記憶體
 
-本文包含改進 Outlook 網頁版中郵件下載效能的資訊。 本文是 Office 365 專案的 [網路規劃和效能調整](https://aka.ms/tune) 的一部分。
+本文包含改進 Outlook 網頁版中郵件下載效能的資訊。 本文是 Office 365 專案的 [網路規劃和效能調整](./network-planning-and-performance.md) 的一部分。
   
 做為 Office 365 全域系統管理員，您可以設定網頁型 Outlook，以在 Microsoft Edge 或 Internet Explorer 中提供 _精益快顯_，這是佔用大量記憶體的特定電子郵件的版本。 當網頁上的 Outlook 設定精益快顯時，會載入伺服器端呈現的元件，以優化效能。
   
@@ -39,9 +39,9 @@ ms.locfileid: "46688744"
   
 ## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>為 Office 365 組織內的所有使用者設定精益快顯
   
-1. [使用遠端 PowerShell 連接至 Exchange Online](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx )。
+1. [使用遠端 PowerShell 連接至 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
   
-2. 使用 LeanPopoutEnabled 參數執行 [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) Cmdlet，如下所示：
+2. 使用 LeanPopoutEnabled 參數執行 [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) Cmdlet，如下所示：
 
   ```powershell
   Set-OrganizationConfig -LeanPopoutEnabled <$true |$false >
