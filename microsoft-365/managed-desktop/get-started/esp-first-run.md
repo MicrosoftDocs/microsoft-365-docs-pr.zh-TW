@@ -10,16 +10,16 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e2340c7c0bf00165bb43740d3d095b5b0402fc0
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: ec3758a2c452b5b20deab3b3776d631ebd48eaef
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126622"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921939"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>使用 Autopilot 和 [註冊狀態] 頁面的初次執行體驗
 
-Microsoft 受管理的桌面會使用 [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) 和 Microsoft Intune 的 [註冊狀態頁面 (ESP) ](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) ，為您的使用者提供最佳的初次執行體驗。
+Microsoft 受管理的桌面會使用 [Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) 和 Microsoft Intune 的 [註冊狀態頁面 (ESP) ](/windows/deployment/windows-autopilot/enrollment-status) ，為您的使用者提供最佳的初次執行體驗。
 
 [註冊狀態] 頁面目前是公開預覽。
 
@@ -38,7 +38,7 @@ Microsoft 受管理的桌面會在用於使用者裝置的 Autopilot 設定檔�
 |---------|---------|
 |部署模式 |  使用者驅動       |
 |加入 Azure AD as     |  Azure AD 已加入       |
-|語言 (地區)      | 作業系統預設值        |
+|語言 (地區)      | 使用者選取        |
 |自動設定鍵盤     | 否        |
 |Microsoft 軟體授權條款     |  隱藏       |
 |隱私權設定     | 隱藏        |
@@ -47,9 +47,6 @@ Microsoft 受管理的桌面會在用於使用者裝置的 Autopilot 設定檔�
 |允許白色 Glove OOBE     |  是       |
 |套用裝置名稱範本     | 是        |
 |輸入名稱     | MMD-% RAND：11%        |
-
-> [!NOTE]
-> [白色 glove] 布建只對已開啟 ESP 的客戶啟用時，Microsoft 受管理的電腦目前不支援此功能。
 
 ## <a name="enrollment-status-page-settings"></a>註冊狀態頁面設定
 
@@ -71,7 +68,7 @@ Microsoft 受管理的桌面會使用這些設定的註冊狀態頁面體驗：
 
 
 
-「註冊狀態」頁面經驗會出現三個階段。 如需詳細資訊，請參閱 [註冊狀態頁面追蹤資訊](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)。
+「註冊狀態」頁面經驗會出現三個階段。 如需詳細資訊，請參閱 [註冊狀態頁面追蹤資訊](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)。
 
 其經驗如下：
 
@@ -85,9 +82,33 @@ Microsoft 受管理的桌面會使用這些設定的註冊狀態頁面體驗：
 
 ![Autopilot 安裝程式的起始頁面，顯示「裝置準備」和「裝置設定」階段。](../../media/mmd-autopilot-screenshot.png)
 
-## <a name="white-glove-provisioning"></a>白色 glove 布建
+## <a name="autopilot-for-pre-provisioned-deployment"></a>預先布建部署的 Autopilot
+> [!NOTE]
+> Microsoft Managed Desktop 中預先布建的部署的 Autopilot 目前處於公開預覽中。
 
-Microsoft 受管理的桌面目前不支援 Windows Autopilot 的「白色 glove」功能。
+## <a name="additional-prerequisites-for-autopilot-for-pre-provisioned-deployment"></a>預先布建部署的額外必要條件 Autopilot
+- 您必須已啟用 [註冊狀態] 頁面 (ESP) 。 如需詳細資訊，請參閱 [初始部署](#initial-deployment)。
+- 裝置必須具有有線網路連接。
+- 如果您有在2020年8月之前使用 Microsoft 受管理的桌面入口網站註冊的裝置，請取消註冊，然後再註冊。
+- 裝置必須具有工廠映射，其中包含11月2020累積更新 [19H1/19H2 2020.11 c](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) 或 [20H1 2020.11 c](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) （如有適當安裝），或必須 reimaged 與最新的 Microsoft 受管理桌面影像。
+- 實體裝置必須支援 TPM 2.0 和裝置證明。 不支援虛擬機器。 預先布建程式會使用 Windows Autopilot 自我部署功能，因此需要使用 TPM 2.0。 TPM 證明程式也需要存取一組 HTTPS URLs，這組 HTTPS 對於每個 TPM 提供者都是唯一的。 如需詳細資訊，請參閱 [Windows Autopilot 網路需求](https://docs.microsoft.com/mem/autopilot/networking-requirements#tpm)中的 Autopilot 自行部署模式和 Autopilot 預先布建部署的專案。
+
+## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>預先布建部署的 Autopilot 中的事件順序
+1. 必要時，IT 系統管理員 reimages 或重設裝置。
+2. IT 系統管理員會引導裝置、達到現成的體驗，並按下 Windows 鍵五次。
+3. IT 系統管理員會選取 [Windows Autopilot 布建]，然後選取 [ **繼續**]。 在 [Windows Autopilot 設定] 畫面上，會顯示裝置的相關資訊。
+5. IT 系統管理員 **會選取 [** 布建]，以啟動布建處理常式。
+6. 裝置啟動 ESP，並透過裝置準備工作和設定階段進行。 在裝置設定階段中，您會視 ESP 設定檔) 的確切設定而定，顯示 (**的應用程式安裝 x** 。
+7. 因為我們停用使用者 ESP，所以 Microsoft Managed 桌面設定中的帳戶設定步驟目前已略過。
+8. 裝置重新開機。
+
+重新開機之後，裝置會顯示綠色的狀態畫面，並提供重新 **封裝** 按鈕。
+
+> [!IMPORTANT]
+> 已知問題： 
+> - 在 Autopilot 預先布建的部署重新封裝功能之後，ESP 不會再次執行。
+> - Autopilot 用於預先布建的部署時，未重新命名裝置。 裝置只會在經過 ESP 使用者流程之後重新命名。
+
 
 ## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>變更為 Autopilot 和註冊狀態頁面設定
 

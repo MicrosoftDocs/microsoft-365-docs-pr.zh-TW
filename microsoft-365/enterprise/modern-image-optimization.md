@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 瞭解如何使用 SharePoint Online 中所包含的工具，在 SharePoint 線上新式網站頁面中優化圖像。
-ms.openlocfilehash: 09122dfd0bc832cf9a09cfb05bf0540e323797d9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a4f2def86e1378a9fb76ae9ecbe6a55da75ecffc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688746"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923013"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式網站頁面中最佳化影像
 
@@ -35,7 +35,7 @@ ms.locfileid: "46688746"
 如需最佳化傳統發布網站中的影像的詳細資訊，請參閱[ SharePoint Online 的影像最佳化](image-optimization-for-sharepoint-online.md)
 
 >[!NOTE]
->如需有關 SharePoint Online 新式入口網站效能的詳細資訊，請參閱 [SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
+>如需有關 SharePoint Online 新式入口網站效能的詳細資訊，請參閱 [SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>使用「適用於 SharePoint 的頁面診斷」工具來分析影像最佳化
 
@@ -44,11 +44,11 @@ ms.locfileid: "46688746"
 >[!NOTE]
 >網頁診斷工具只能用於 SharePoint Online，且無法在 SharePoint 系統頁面使用。
 
-當您使用「適用於 SharePoint 的頁面診斷」工具分析 SharePoint 新式網站時，您可以在 [診斷測試]__ 窗格中看到大型影像的資訊。
+當您使用「適用於 SharePoint 的頁面診斷」工具分析 SharePoint 新式網站時，您可以在 [診斷測試] 窗格中看到大型影像的資訊。
 
 可能的結果包括：
 
-- **需要注意** (紅色)：頁面包含 [一或多個]**** 大小超過 300KB 的影像
+- **需要注意** (紅色)：頁面包含 [一或多個] 大小超過 300KB 的影像
 - **不需要採取動作** (紅色)：頁面未包含大小超過 300KB 的影像
 
 如果大型影像的偵測結果顯示在結果的 [需要注意] 區段，您可以按一下結果來查看其他詳細資料。
@@ -57,7 +57,7 @@ ms.locfileid: "46688746"
 
 ## <a name="remediate-large-image-issues"></a>修正大型影像問題
 
-如果頁面的影像大小超過 300KB，請選取 [偵測到大型影像]**** 結果，以查看哪些影像太大。 在新式 SharePoint Online 頁面中，系統會自動提供影像的轉譯，並根據瀏覽器視窗的大小和用戶端監視器的解析度來調整影像大小。 在上傳至 SharePoint Online 之前，您應隨時最佳化網頁使用的影像。 系統會自動縮小過大的影像和解析度，這可能會導致非預期的轉譯特性。
+如果頁面的影像大小超過 300KB，請選取 [偵測到大型影像] 結果，以查看哪些影像太大。 在新式 SharePoint Online 頁面中，系統會自動提供影像的轉譯，並根據瀏覽器視窗的大小和用戶端監視器的解析度來調整影像大小。 在上傳至 SharePoint Online 之前，您應隨時最佳化網頁使用的影像。 系統會自動縮小過大的影像和解析度，這可能會導致非預期的轉譯特性。
 
 在您進行頁面修訂以修復效能問題之前，請記下分析結果中的頁面載入時間。 在修訂後再次執行工具，以查看新結果是否在基準標準內，並檢查新頁面的載入時間，以查看是否有改善。
 
@@ -72,7 +72,7 @@ ms.locfileid: "46688746"
 
 [調整 Office 365 效能](tune-microsoft-365-performance.md)
 
-[SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)
 
 [內容傳遞網路](content-delivery-networks.md)
 

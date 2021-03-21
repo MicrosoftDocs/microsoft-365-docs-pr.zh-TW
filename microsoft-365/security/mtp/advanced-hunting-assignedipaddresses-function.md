@@ -1,7 +1,7 @@
 ---
-title: AssignedIPAddresses () 函數在 Microsoft 365 Defender 進步搜尋中
-description: 瞭解如何使用 AssignedIPAddresses () 函數，以取得指派給裝置的最新 IP 位址
-keywords: 進一步搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、FileProfile、檔案設定檔、函數、擴充
+title: Microsoft 365 Defender 的高級搜尋中的 AssignedIPAddresses () 功能
+description: 瞭解如何使用 AssignedIPAddresses () 函數來取得指派給裝置的最新 IP 位址
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，FileProfile，file profile，function，豐富
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d16cd7efc49cc2498eff3f705bb43fa62f37d975
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c52f7b8bf5a93a75b3330a3377f3fab34b8e7837
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933015"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922917"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -35,17 +35,17 @@ ms.locfileid: "49933015"
 適用於：
 - Microsoft 365 Defender
 
-在 `AssignedIPAddresses()` 進位搜尋 [查詢中使用此](advanced-hunting-overview.md) 函數來快速取得已指派給裝置的最新 IP 位址。 如果您指定時間戳記引數，此函數會于指定時間取得最新的 IP 位址。 
+使用 `AssignedIPAddresses()` 您的 [高級搜尋](advanced-hunting-overview.md) 查詢中的功能，快速取得指派給裝置的最新 IP 位址。 如果您指定的是 timestamp 引數，此函數會在指定的時間取得最近的 IP 位址。 
 
-此函數會返回具有下列資料行的表格：
+此函數會傳回含下列各欄的資料表：
 
 | 欄 | 資料類型 | 描述 |
 |------------|-------------|-------------|
-| `Timestamp` | datetime | 裝置使用 IP 位址觀察的最近時間 |
+| `Timestamp` | datetime | 使用 IP 位址觀測裝置的最晚時間 |
 | `IPAddress` | string | 裝置使用的 IP 位址 |
-| `IPType` | string | 指出 IP 位址是公用還是私人位址 |
-| `NetworkAdapterType` | int | 已指派 IP 位址之裝置使用的網路介面卡類型。 有關可能的值，請參閱 [此列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `ConnectedNetworks` | int | 具有已指派 IP 位址的介面卡所連接的網路。 每個 JSON 陣列都包含網路名稱、類別 (公用、私人或網域) 、描述及旗標，指出該陣列是否公開連接至網際網路 |
+| `IPType` | string | 指出 IP 位址是否為公用或私人位址 |
+| `NetworkAdapterType` | int | 已獲指派 IP 位址之裝置使用的網路介面卡類型。 如需可能的值，請參閱 [this 列舉](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | int | 與指派之 IP 位址的介面卡相連的網路。 每個 JSON 陣列都包含網路名稱、類別 (public、private 或 domain) 、描述，以及表明其是否已公開連接到網際網路的旗標。 |
 
 ## <a name="syntax"></a>語法
 
@@ -55,19 +55,19 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>引數
 
-- **x** `DeviceId` — `DeviceName` 或識別裝置的值
-- **y**— (時間) 值，指示函數從特定時間取得最近指派的 `Timestamp` IP 位址。 如果未指定，函數會回電最新的 IP 位址。
+- **x** `DeviceId` 或 `DeviceName` 值，用以識別裝置
+- **y**- `Timestamp` (datetime) 值指示函數從特定時間取得最近指派的 IP 位址。 若未指定，該函數會傳回最新的 IP 位址。
 
 ## <a name="examples"></a>範例
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>取得裝置 24 小時前使用的 IP 位址清單
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>取得裝置24小時前使用的 IP 位址清單
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
-### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>取得裝置使用的 IP 位址，並尋找與裝置通訊的裝置
-此查詢會使用函數，取得特定日期或 () 裝置所指派的 IP `AssignedIPAddresses()` `example-device-name` `example-date` 位址 () 。 接著，它會使用 IP 位址尋找由其他裝置啟動之裝置的連接。 
+### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>取得裝置使用的 IP 位址，並尋找與其通訊的裝置
+此查詢使用此 `AssignedIPAddresses()` 函數來取得 `example-device-name` 在特定日期 () 之前或之前的裝置 () 的指派 IP 位址 `example-date` 。 然後，它會使用 IP 位址尋找其他裝置所初始化之裝置的連線。 
 
 ```kusto
 let Date = datetime(example-date);

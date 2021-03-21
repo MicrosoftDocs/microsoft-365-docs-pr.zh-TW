@@ -19,12 +19,12 @@ description: 在安全性與合規性中心使用 Explorer 和即時偵測， &a
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 614cd7c256fe8af5fd7474a2101f937b1ecfd0d3
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3f8f8dfc5cf1066b4ebcf166487bfcdb0a8b2db7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406399"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922495"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -507,7 +507,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 除了本文所述的案例之外，您還可以使用更多報表選項，以供 Explorer (或即時偵測) 。 請參閱下列文章：
 
 - [尋找並調查傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
-- [檢視在 SharePoint Online、OneDrive 和 Microsoft Teams 中偵測到的惡意檔案](malicious-files-detected-in-spo-odb-or-teams.md)
+- [檢視在 SharePoint Online、OneDrive 和 Microsoft Teams 中偵測到的惡意檔案](./atp-for-spo-odb-and-teams.md)
 - [取得威脅瀏覽器中的視圖 (和即時偵測的概覽) ](threat-explorer-views.md)
 - [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
 - [Microsoft 威脅防護的自動化調查及回應](../mtp/mtp-autoir.md)
@@ -528,7 +528,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
   - 安全性管理員 (可以在 Azure Active Directory 系統管理中心 (中指派 <https://aad.portal.azure.com>) 
   - 安全性讀取者
 
-- 若為 Exchange Online，您必須在 Exchange 系統管理中心中指派下列其中一個角色 (<https://admin.protection.outlook.com/ecp/>) 或 [exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)：
+- 若為 Exchange Online，您必須在 Exchange 系統管理中心中指派下列其中一個角色 (<https://admin.protection.outlook.com/ecp/>) 或 [exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)：
 
   - 組織管理
   - 僅限檢視組織管理
@@ -538,14 +538,14 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 若要深入了解角色和權限，請參閱下列資源：
 
 - [安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)
-- [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+- [Exchange Online 中的功能權限](/exchange/permissions-exo/feature-permissions)
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>威脅瀏覽器與即時偵測的差異
 
 - 您可以在 Office 365 的 Defender for Office 方案1中取得 *即時* 偵測報告。 *威脅瀏覽器* 適用于 Office 365 方案2的 Defender。
 - 即時偵測報告可讓您即時查看偵測。 威脅瀏覽器也會這麼做，但也會提供特定攻擊的其他詳細資料。
 - *所有的電子郵件* view 都可用於威脅瀏覽器，但不會出現在即時偵測報告中。
-- 威脅瀏覽器中包含更多篩選功能和可用的動作。 如需詳細資訊，請參閱 [Microsoft defender For office 365 服務說明：每個 Defender For office 365 方案中可用的功能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 威脅瀏覽器中包含更多篩選功能和可用的動作。 如需詳細資訊，請參閱 [Microsoft defender For office 365 服務說明：每個 Defender For office 365 方案中可用的功能](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="other-articles"></a>其他文章
 

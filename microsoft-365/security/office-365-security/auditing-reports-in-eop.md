@@ -13,12 +13,12 @@ ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: '系統管理員可以瞭解 Exchange Online Protection (EOP 中可用的系統管理員審計報告) '
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9508cd843b6986768158b5f036903869ced5a1b1
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 08432f97d196df8b661d63a5d4cdf3680b78e070
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286702"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921285"
 ---
 # <a name="auditing-reports-in-standalone-eop"></a>獨立版 EOP 中的稽核報告
 
@@ -33,4 +33,4 @@ ms.locfileid: "50286702"
 
 - **系統管理員** 角色群組報告：系統管理員角色群組報告可讓您查看使用者何時新增或移除系統管理員角色群組中的成員資格。 您可以使用此報告，來監視已指派給貴組織中使用者之系統管理權限的變更。 如需詳細資訊，請參閱 [在獨立 EOP 中執行系統管理員角色群組報告](run-an-administrator-role-group-report-in-eop-eop.md)。
 
-- **系統管理員審核記錄**：系統管理員審核記錄會根據獨立 EOP PowerShell Cmdlet) 由系統管理員或具有系統管理許可權的使用者，記錄任何動作 (。 如需詳細資訊，請參閱 [在 Exchange Online 中查看系統管理員審核記錄](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)。
+- **系統管理員審核記錄**：系統管理員審核記錄會根據獨立 EOP PowerShell Cmdlet) 由系統管理員或具有系統管理許可權的使用者，記錄任何動作 (。 如需詳細資訊，請參閱 [在 Exchange Online 中查看系統管理員審核記錄](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)。

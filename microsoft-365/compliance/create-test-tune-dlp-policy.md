@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 在本文中，您將瞭解如何根據組織的需求來建立、測試及調整 DLP 原則。
-ms.openlocfilehash: 9b43899969ab0fdc5d67b051db36c0b245f7811e
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: d26412eb54176dfd3c5d881d82076b2a58330ebd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663190"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923449"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
 
@@ -216,7 +216,7 @@ DLP 原則範本並不完全直接離開盒。 您很可能會發現環境中有
 
 ![開啟原則的選項](../media/DLP-create-test-tune-turn-on-policy.png)
  
-如果您想要查看原則何時生效，請連線 [至安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，並執行 [Get-DlpCompliancePolicy Cmdlet](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy) ，以查看 DistributionStatus。
+如果您想要查看原則何時生效，請連線 [至安全性 & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) ，並執行 [Get-DlpCompliancePolicy Cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy) ，以查看 DistributionStatus。
 
 ![在 PowerShell 中執行 Cmdlet](../media/DLP-create-test-tune-PowerShell.png)
 

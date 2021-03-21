@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何使用和管理範本，以在 Microsoft 合規性管理員中建立評估。 使用格式化的 Excel 檔案建立及修改範本。
-ms.openlocfilehash: 9f76ff6202ff9ad4a876c57209748dd7c98877b4
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405827"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922783"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>在合規性管理員中使用評估範本
 
 **本文內容：** 瞭解 **範本的運作方式** ，以及如何從評估範本頁面進行 **管理** 。 取得如何 **建立** 新的範本、 **修改** 現有的範本、 **使用 Excel 格式化範本資料**，以及匯出範本 **報告** 的指示。
 
 > [!IMPORTANT]
-> 您的組織可使用的評估範本取決於您的授權協定。 [查看詳細資料](https://go.microsoft.com/fwlink/?linkid=2132371)。
+> 您的組織可使用的評估範本取決於您的授權協定。 [查看詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="templates-overview"></a>範本概述
 
@@ -38,7 +38,7 @@ ms.locfileid: "50405827"
 
 #### <a name="included-and-premium-templates"></a>包含和精品範本
 
-可供使用的範本是根據您組織的授權協定 ([查看授權詳細資料](https://go.microsoft.com/fwlink/?linkid=2132371)) 。 範本有兩種類別：包括和特優。
+可供使用的範本是根據您組織的授權協定 ([查看授權詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)) 。 範本有兩種類別：包括和特優。
 
 1. **包含的範本** 可做為組織的授權合約的一部分使用。
 2. 您必須購買 **特優範本**，才能建立評估。 購買後，您可以視需要建立來自範本的評估數目。
@@ -60,7 +60,7 @@ ms.locfileid: "50405827"
 
 如果計數器顯示5/2，這表示您的組織超出其限制，需要購買使用中的高級範本3。
 
-如需詳細資訊，請參閱 [合規性管理員授權指南](https://go.microsoft.com/fwlink/?linkid=2132371) 。
+如需詳細資訊，請參閱 [合規性管理員授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 。
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>從 [評估範本] 頁面查看及管理範本
 

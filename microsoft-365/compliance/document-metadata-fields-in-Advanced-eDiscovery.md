@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文針對 Microsoft 365 的「高級 eDiscovery」中的案例，定義了審查集內檔的元資料欄位。
-ms.openlocfilehash: 2bf9773f6c36e53231bb577c30e9900bf3e24df7
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 3f8ac33e3f11557843b590ed2a9f7d903e33f5ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358441"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922057"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>在高級 eDiscovery 中記錄元資料欄位
 
@@ -29,14 +29,14 @@ ms.locfileid: "47358441"
 
 - **功能變數名稱和****顯示功能變數名稱：** [中繼資料] 欄位的名稱，以及在審閱集中查看選取檔的檔案中繼資料時所顯示的功能變數名稱。 在查看檔的檔案中繼資料時，不會包含某些元資料欄位。 這些欄位會反白顯示星號 ( * ) 。
 
-- 可搜尋的**功能變數名稱：** 執行[審閱集查詢](review-set-search.md)時可搜尋的屬性名稱。 空白儲存格表示您無法在「審閱集」查詢中搜尋該欄位。
+- 可搜尋的 **功能變數名稱：** 執行 [審閱集查詢](review-set-search.md)時可搜尋的屬性名稱。 空白儲存格表示您無法在「審閱集」查詢中搜尋該欄位。
 
 - **匯出的功能變數名稱：** 匯出檔時包含的元資料欄位名稱。  空白儲存格表示欄位不會包含在匯出的中繼資料中。
 
 - **描述：** 元資料欄位的描述。
 
 > [!NOTE]
-> 「[複查設定搜尋](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)使用關鍵字查詢語言 (KQL) 中的**關鍵字**] 欄位。 「可搜尋 **欄位名稱** 」欄中所列的欄位可用於審閱集搜尋中的 [ **關鍵字** ] 欄位，以形成複雜的查詢，而不需要使用「查詢建立器」。 如需 KQL 的詳細資訊，請參閱 [關鍵字查詢語言語法參考](https://go.microsoft.com/fwlink/?LinkId=269603)。
+> 「[複查設定搜尋](./review-set-search.md)使用關鍵字查詢語言 (KQL) 中的 **關鍵字**] 欄位。 「可搜尋 **欄位名稱** 」欄中所列的欄位可用於審閱集搜尋中的 [ **關鍵字** ] 欄位，以形成複雜的查詢，而不需要使用「查詢建立器」。 如需 KQL 的詳細資訊，請參閱 [關鍵字查詢語言語法參考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
 
 |**功能變數名稱和****顯示欄位名稱**|**可搜尋的功能變數名稱**|**匯出的功能變數名稱**|**描述**|
 |:-----|:-----|:-----|:-----|
@@ -44,8 +44,8 @@ ms.locfileid: "47358441"
 |附件名稱|AttachmentNames|Attachment_Names|附件的名稱清單。|
 |律師用戶端許可權分數|AttorneyClientPrivilegeScore||律師-用戶端許可權模型內容分數。|
 |作者|作者|Doc_authors|從檔中繼資料製作作者。|
-|密件副本|密件副本|Email_bcc|郵件類型的 [密件副本] 欄位。 Format 為**DisplayName \<SMTPAddress> **。|
-|副本|副本|Email_cc|郵件類型的 [副本] 欄位。 Format 為**DisplayName \<SMTPAddress> **。|
+|密件副本|密件副本|Email_bcc|郵件類型的 [密件副本] 欄位。 Format 為 **DisplayName \<SMTPAddress>**。|
+|副本|副本|Email_cc|郵件類型的 [副本] 欄位。 Format 為 **DisplayName \<SMTPAddress>**。|
 |符合性標籤|ComplianceLabels|Compliance_labels|套用至 Office 365 內容的[保留標籤](retention.md)。|
 |複合路徑|CompoundPath|Compound_path|描述專案來源的人可讀取路徑。|
 |內容|內容||專案的解壓縮文字。|
@@ -71,7 +71,7 @@ ms.locfileid: "47358441"
 |文件範本||Doc_template|檔中繼資料中的範本。|
 |主要主題|DominantTheme|Dominant_theme|針對分析進行計算的主要主題。|
 |重複子集||Duplicate_subset|完全重複的群組識別碼。|
-|EmailAction*||Email_action|值為 **無**、 **回復**或 **轉寄**;根據郵件的主旨行。|
+|EmailAction*||Email_action|值為 **無**、 **回復** 或 **轉寄**;根據郵件的主旨行。|
 |電子郵件送達回執||Email_delivery_receipt|Internet 標頭中提供的傳遞回執的電子郵件地址。|
 |Importance|EmailImportance|Email_importance|郵件的重要性： **0** -低; **1** -Normal; **2** -高|
 |EmailLevel*||Email_level|會指出郵件在其所屬的電子郵件執行緒中的層級;附件繼承其上層郵件的值。|
@@ -95,7 +95,7 @@ ms.locfileid: "47358441"
 |檔案類型|FileType||以副檔名為基礎之專案的檔案類型。|
 |群組識別碼| GroupID|  |群組內容的群組識別碼。|
 |具有附件|HasAttachment|Email_has_attachment|會指出郵件是否有附件。|
-|擁有律師|HasAttorney||當在律師清單中至少找到一個參與者時，**為 True** ，否則為 True。否則，此值為**False**。|
+|擁有律師|HasAttorney||當在律師清單中至少找到一個參與者時，**為 True** ，否則為 True。否則，此值為 **False**。|
 |HasText *||Has_text|會指出專案是否有文字;可能的值為 **True** 和 **False**。|
 |不彈性識別碼||Immutable_ID|這個識別碼可用來唯一識別審閱集內的檔。 此欄位無法用於複查集搜尋中，且無法使用識別碼來存取原生位置中的檔。|
 |包含類型|InclusiveType|Inclusive_type|針對分析計算的非獨佔類型： **0** -無包含; **1** -包含; **2** 個包含減去; **3** 個包含的副本。|
@@ -108,14 +108,14 @@ ms.locfileid: "47358441"
 |專案類別|ItemClass|Item_class|Exchange server 所提供的專案類別;例如， **IPM。記事**|
 |上次修改日期|LastModifiedDate|Doc_date_modified|檔中繼資料的上次修改日期。|
 |載入識別碼|LoadId|Load_ID|專案已新增至審閱集的載入集識別碼。|
-|位置|位置|位置|指出檔來源的位置類型的字串。<br /><br />匯**入的資料**-非 Office 365 資料<br />**團隊** -Microsoft 團隊<br />**Exchange** -exchange 信箱<br />**SharePoint** SharePoint 網站<br />**OneDrive** OneDrive 帳戶|
+|位置|位置|位置|指出檔來源的位置類型的字串。<br /><br />匯 **入的資料**-非 Office 365 資料<br />**團隊** -Microsoft 團隊<br />**Exchange** -exchange 信箱<br />**SharePoint** SharePoint 網站<br />**OneDrive** OneDrive 帳戶|
 |位置名稱|LocationName|Location_name|識別專案來源的字串。 若為 exchange，這將是信箱的 SMTP 位址。針對 SharePoint 和 OneDrive，為網站集合的 URL。|
 |標示為代表|MarkAsRepresentative||每一組確切的重複專案的一個檔會標示為代表。|
 |標示為前置標記案例問題 1 *||Marked_as_pre_tagged_Case_issue_1|標示為相關性的預先標記案例問題1。|
 |標示為植入案例問題 1 *||Marked_as_seed_Case_issue_1|標示為來源相關的種子案例問題1。|
 |會議結束日期|MeetingEndDate|Meeting_end_date|會議的會議結束日期。|
 |會議開始日期|MeetingStartDate|Meeting_start_date|會議的會議開始日期。|
-|郵件類型|MessageKind|Message_kind|要搜尋的郵件類型。 可能的值：連絡人檔： ** <br /> <br /> <br /> <br /> 電子郵件 <br /> externaldata <br /> 傳真 <br /> im 記錄 <br /> <br /> 會議 <br /> microsoftteams** (會傳回來自交談、會議和 Microsoft 團隊通話的專案) ** <br /> 記事 <br /> 文章 <br /> rssfeeds 工作 <br /> <br /> 語音信箱**| 
+|郵件類型|MessageKind|Message_kind|要搜尋的郵件類型。 可能的值：連絡人檔： **<br /> <br /> <br /> <br /> 電子郵件 <br /> externaldata <br /> 傳真 <br /> im 記錄 <br /> <br /> 會議 <br /> microsoftteams** (會傳回來自交談、會議和 Microsoft 團隊通話的專案) **<br /> 記事 <br /> 文章 <br /> rssfeeds 工作 <br /> <br /> 語音信箱**| 
 |原生分機|NativeExtension|Native_extension|專案的原生分機。|
 |原生檔案名|NativeFileName|Native_file_name|專案的原生檔案名。|
 |NativeMD5||Native_MD5|) 檔資料流程的 MD5 雜湊 (128 位雜湊值。|
@@ -148,20 +148,20 @@ ms.locfileid: "47358441"
 |相關性分數|RelevanceScore||以相關性為基礎的檔相關性分數。|
 |相關性標記|RelevanceTag||以相關性為基礎的檔相關性分數。|
 |代表識別碼|RepresentativeId||每一組確切重複專案的數值識別碼。|
-|寄件者|寄件者|Email_sender|寄件者 (來自郵件類型) 欄位。 Format 為**DisplayName \<SmtpAddress> **。|
+|寄件者|寄件者|Email_sender|寄件者 (來自郵件類型) 欄位。 Format 為 **DisplayName \<SmtpAddress>**。|
 |寄件者/作者|SenderAuthor||由專案的寄件者或作者所組成的計算欄位。|
 |寄件者網域|SenderDomain|Email_sender_domain|寄件者的網域。|
 |寄件日期|寄件日期|Email_date_sent|郵件的傳送日期。|
 |設定訂單：先包含|SetOrderInclusivesFirst|Set_order_inclusives_first|排序欄位-電子郵件和附件：計數器-按時間順序;檔：先進行資料透視，再按降冪的相似性分數。|
 |SimilarityPercent||Similarity_percent|會指出檔與接近的重複集的 pivot 的類似程度。|
-|原生檔案大小|大小|Native_size|原生專案的位元組數。|
+|原生檔案大小|Size|Native_size|原生專案的位元組數。|
 |主旨|主旨|Email_subject|郵件的主旨。|
 |主旨/職稱|SubjectTitle||由專案主旨或標題組成的計算欄位。|
 |標記案例問題1||Tagged_by_Case_issue_1|為相關問題1標記此檔的使用者。|
 |標記|標記|標記|套用於審閱集中的標記。|
 |主題清單|ThemesList|Themes_list|針對分析所計算的主題清單。|
 |職稱|職稱|Doc_title|檔中繼資料中的標題。|
-|收件者|收件者|Email_to|郵件類型的 [至] 欄位。 Format 為**DisplayName \<SmtpAddress> **|
+|收件者|收件者|Email_to|郵件類型的 [至] 欄位。 Format 為 **DisplayName \<SmtpAddress>**|
 |電子郵件集中的唯一|UniqueInEmailSet||**False** 表示電子郵件組中的附件重複。|
 |已修正|WasRemediated|Was_Remediated|**True** 是表示如果專案已修正，否則 **為 False**。|
 |字數統計|WordCount|Word_count|專案中的字數。|

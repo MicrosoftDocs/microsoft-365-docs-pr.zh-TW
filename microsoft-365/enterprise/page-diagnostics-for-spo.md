@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: 使用頁面診斷功能 SharePoint 工具，對照一組預先定義的效能準則來 SharePoint 分析線上新式入口網站和傳統發佈頁面。
-ms.openlocfilehash: a6616a7d3f9f27365c7b96bbfb08a17c6d2be030
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b55e5c04f56bac4e6313284de60753d1beaaaed1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820203"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921627"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>針對 SharePoint 工具使用頁面診斷程式
 
@@ -177,7 +177,7 @@ ms.locfileid: "50820203"
 
 [調整 Office 365 效能](tune-microsoft-365-performance.md)
 
-[SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)
 
 [內容傳遞網路](content-delivery-networks.md)
 

@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用攻擊模擬訓練，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 Plan 2 組織中執行模擬網路釣魚和密碼攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38e16ecd8185b9e8542f58613790585b5aab73ee
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 6e344153ef433bc13b16136e584ec4da73fcef6a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820231"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921345"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>開始使用攻擊模擬訓練
 
@@ -40,7 +40,7 @@ ms.locfileid: "50820231"
 
 - 若要開啟 Microsoft 安全中心，請移至 <https://security.microsoft.com/> 。 攻擊模擬訓練可在 **電子郵件和協同** 作業的 \> **攻擊模擬訓練** 中取得。 若要直接進入攻擊模擬訓練，請開啟 <https://security.microsoft.com/attacksimulator> 。
 
-- 如需不同 Microsoft 365 訂閱中的攻擊模擬訓練可用性的相關資訊，請參閱 [Microsoft Defender For Office 365 service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+- 如需不同 Microsoft 365 訂閱中的攻擊模擬訓練可用性的相關資訊，請參閱 [Microsoft Defender For Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
 - 您必須在安全性 & 合規性中心或 Azure Active Directory 中指派許可權，才能執行本文中的程式。 具體說來，您必須是 **組織管理**、 **安全性管理員** 或下列其中一個角色的成員：
   - **攻擊模擬器管理員**：建立及管理攻擊類比活動的所有層面。

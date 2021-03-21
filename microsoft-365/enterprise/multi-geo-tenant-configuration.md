@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 在本文中，了解如何為 Microsoft 365 多地理位置新增衛星位置及設定您的租用戶。
-ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: 9176c66e8d0aa7e893ef137131147f8e0c85d3ac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040565"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923645"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 多地理位置租用戶組態
 
@@ -93,7 +93,7 @@ ms.locfileid: "50040565"
 
 1.  使用租用戶的全域系統管理員認證，[連線並登入](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-2.  使用 [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) Cmdlet 為每個使用者設定慣用資料位置。例如：
+2.  使用 [Set-MsolUser](/powershell/msonline/v1/set-msoluser) Cmdlet 為每個使用者設定慣用資料位置。例如：
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -113,7 +113,7 @@ ms.locfileid: "50040565"
 如果使用者的租用戶中已建立 OneDrive 網站，設定其 PDL 不會自動移動其現有的 OneDrive。 若要移動使用者的 OneDrive，請參閱 [OneDrive 進行商務用異地移動](move-onedrive-between-geo-locations.md)。
 
 > [!NOTE]
-> Exchange Online 會在 PLD 變更且 MailboxRegion 不再符合信箱資料庫地理位置碼時，自動重新安置使用者的信箱。 如需詳細資訊，請參閱 [在多地理位置環境中管理 Exchange Online 信箱](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)。
+> Exchange Online 會在 PLD 變更且 MailboxRegion 不再符合信箱資料庫地理位置碼時，自動重新安置使用者的信箱。 如需詳細資訊，請參閱 [在多地理位置環境中管理 Exchange Online 信箱](./administering-exchange-online-multi-geo.md)。
 
 如果使用者在租用戶中沒有 OneDrive 網站，OneDrive 會根據其 PDL 值進行佈建，並假設使用者的 PDL 符合公司的其中一個衛星位置。
 

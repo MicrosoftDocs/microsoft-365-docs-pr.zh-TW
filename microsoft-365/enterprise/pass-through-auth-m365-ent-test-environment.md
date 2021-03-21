@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的傳遞驗證。
-ms.openlocfilehash: d83de4ece4d1eaeddac882cf46a4fe85b8ba7cd4
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: cdbb6927fb8ca0001e3089c7169ce9046208e8f8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487443"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921525"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的傳遞驗證
 
@@ -64,21 +64,21 @@ ms.locfileid: "48487443"
 
 2.    從 APP1 的桌面執行 Azure AD Connect。
 
-3.    在 [歡迎]**** 頁面上，按一下 [設定]****。
+3.    在 [歡迎] 頁面上，按一下 [設定]。
 
-4.    在 [其他工作] 頁面上，按一下 [變更使用者登入]****，然後按 [下一步]****。
+4.    在 [其他工作] 頁面上，按一下 [變更使用者登入]，然後按 [下一步]。
 
-5.    在 [連線到 Azure AD]**** 頁面上，輸入您的全域管理員帳戶認證，然後按 [下一步]****。
+5.    在 [連線到 Azure AD] 頁面上，輸入您的全域管理員帳戶認證，然後按 [下一步]。
 
-6.    在 [使用者登入]**** 頁面上，按一下 [傳遞驗證]****，然後按 [下一步]****。
+6.    在 [使用者登入] 頁面上，按一下 [傳遞驗證]，然後按 [下一步]。
 
-7.    在 [準備設定]**** 頁面上，按一下 [設定]****。
+7.    在 [準備設定] 頁面上，按一下 [設定]。
 
-8.    在 [組態完成]**** 頁面上，按一下 [結束]****。
+8.    在 [組態完成] 頁面上，按一下 [結束]。
 
-9.    從 Azure 入口網站的左窗格，按一下 [Azure Active Directory > Azure AD Connect]****。確認 [傳遞驗證]**** 功能顯示為 [已啟用]****。
+9.    從 Azure 入口網站的左窗格，按一下 [Azure Active Directory > Azure AD Connect]。確認 [傳遞驗證] 功能顯示為 [已啟用]。
 
-10.    按一下 [傳遞驗證]****。[傳遞驗證]**** 窗格會列出您的驗證代理程式安裝所在的伺服器。您應該會在清單中看到 APP1。關閉 [傳遞驗證]**** 窗格。
+10.    按一下 [傳遞驗證]。[傳遞驗證] 窗格會列出您的驗證代理程式安裝所在的伺服器。您應該會在清單中看到 APP1。關閉 [傳遞驗證] 窗格。
 
 接下來，使用 user1@testlab 測試登入訂閱的功能 <strong>。</strong>\<your public domain> User1 帳戶的使用者名稱。
 
@@ -86,7 +86,7 @@ ms.locfileid: "48487443"
 
 2. 當系統提示輸入使用者名稱和密碼時，指定 <strong>user1@testlab.</strong>\<your public domain> 和 User1 密碼。 您應該可以用 User1 的身分成功登入。
 
-請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。
+請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是全域管理員。 因此，您不會看到 [管理員] 圖示選項。
 
 以下是您產生的組態：
 
@@ -107,4 +107,4 @@ ms.locfileid: "48487443"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

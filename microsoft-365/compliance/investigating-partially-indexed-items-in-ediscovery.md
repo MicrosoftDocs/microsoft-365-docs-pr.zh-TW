@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從組織內的 Exchange、SharePoint 和 OneDrive 中，管理部分索引項目目 (也稱為未編制索引的專案) 。
-ms.openlocfilehash: 6a2a1d042c52a445538903fd7db9fc54305e6c13
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 5d30c0f7c6ae77236ba7fd9f2dbfcc7a0397ae21
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655447"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922577"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>調查 eDiscovery 中已部分索引的專案
 
@@ -167,7 +167,7 @@ ms.locfileid: "49655447"
      }
    ```
 
-2. [連線到安全性與合規性中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084)。
+2. [連線到安全性與合規性中心 PowerShell](/powershell/exchange/exchange-online-powershell)。
 
 3. 在 [安全性 & 規範中心] PowerShell 中，移至您在步驟1中用來儲存腳本的資料夾，然後執行腳本;例如：
 

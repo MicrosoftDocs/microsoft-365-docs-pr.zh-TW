@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的密碼回寫。
-ms.openlocfilehash: b999d50b0e98b11638199327bd7ffe7269b261ce
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: f1118c22ad1f65ea29bb14afacb7506a60d1fe1a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487125"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921477"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼回寫
 
 *此測試實驗室指南僅可用於適用于企業測試環境的 Microsoft 365。*
 
-使用者可以使用密碼寫回以透過 Azure Active Directory (Azure AD) （然後將其複寫至您的本機 Active Directory 網域服務 (AD DS) ）來更新其密碼。使用密碼回寫時，使用者不必透過內部部署 AD DS （儲存其原始使用者帳戶）來更新其密碼。這可協助漫遊或遠端使用者沒有其內部部署網路的遠端存取連線。
+使用者可以使用密碼寫回以透過 Azure Active Directory (Azure AD) （然後將其複寫至您的本機 Active Directory 網域服務 (AD DS) ）來更新其密碼。 使用密碼回寫時，使用者不必透過內部部署 AD DS （儲存其原始使用者帳戶）來更新其密碼。 這可協助漫遊或遠端使用者沒有其內部部署網路的遠端存取連線。
 
 本文說明如何設定您的 Microsoft 365 測試環境，以進行密碼回寫。
 
@@ -44,7 +44,7 @@ ms.locfileid: "48487125"
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理
 
-首先，依照 [ [密碼雜湊同步](password-hash-sync-m365-ent-test-environment.md)處理] 中的指示進行。您產生的設定如下所示：
+首先，依照 [ [密碼雜湊同步](password-hash-sync-m365-ent-test-environment.md)處理] 中的指示進行。 您產生的設定如下所示：
   
 ![使用密碼雜湊同步處理測試環境的模擬企業](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
@@ -84,28 +84,28 @@ ms.locfileid: "48487125"
 
 7. 選取 [ **選取主體**]，輸入 [ **User1**]，然後選取 **[確定]**。
 
-8. 在 [適用於]**** 中，選取 [子系使用者物件]****。
+8. 在 [適用於] 中，選取 [子系使用者物件]。
 
-9. 在 [使用權限]**** 下，選取下列動作：
+9. 在 [使用權限] 下，選取下列動作：
 
     - **變更密碼**
     - **重設密碼**
 
-10. 在 [內容]**** 下，選取下列動作：
+10. 在 [內容] 下，選取下列動作：
     - **撰寫 lockoutTime**
     - **撰寫 pwdLastSet**
 
 11. 選取 **[確定]** 三次，以儲存變更。
 
-12. 關閉 [Active Directory 使用者及電腦]****。
+12. 關閉 [Active Directory 使用者及電腦]。
 
 接著，在 APP1 上設定 Azure AD Connect 以進行密碼回寫。
 
 1. 如有需要，請以 TESTLAB\User1 帳戶連線至 APP1。
 
-2. 從 APP1 的桌面，按兩下 [Azure AD Connect]****。
+2. 從 APP1 的桌面，按兩下 [Azure AD Connect]。
 
-3. 在 [ **歡迎] 頁面**上，選取 [ **設定**]。
+3. 在 [ **歡迎] 頁面** 上，選取 [ **設定**]。
 
 4. 在 [ **其他** 工作] 頁面上，選取 [ **自訂同步處理選項**]，然後選取 **[下一步]**。
 
@@ -142,6 +142,4 @@ ms.locfileid: "48487125"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
-
-
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

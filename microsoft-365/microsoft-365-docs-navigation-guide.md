@@ -9,12 +9,12 @@ ms.custom: ''
 ms.topic: conceptual
 author: samanro
 ms.author: samanro
-ms.openlocfilehash: 0a211b26041d87c3087eab5631fea67a14601cf2
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 07f406a0470c1cdf64ed4dd2b4acee3b793a8a15
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688733"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922421"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 文檔導覽指南
 
@@ -22,7 +22,7 @@ ms.locfileid: "49688733"
 
 ## <a name="hub-page"></a>中樞頁面
 
-您可以在 [Microsoft 365 hub] 頁面上找到 [https://aka.ms/microsoft365docs](https://aka.ms/microsoft365docs) ，也就是尋找相關 Microsoft 365 內容的進入點。
+您可以在 [Microsoft 365 hub] 頁面上找到 [https://aka.ms/microsoft365docs](./index.yml) ，也就是尋找相關 Microsoft 365 內容的進入點。
 
 您可以從 Microsoft 365 技術檔組內每頁頂端的頁首，選取 [ **microsoft 365** ]，以流覽回到此頁面：
 
@@ -70,7 +70,7 @@ Microsoft 365 技術檔會提供其他產品的內容，包括由 21 Vianet (中
 
 您知道，您可以自行編輯 docs.microsoft.com 上的內容嗎？ 如果您這麼做，您不僅可以改進我們的檔，還會將其貸記為頁面的參與者。 若要立即開始，請參閱：
 
-- [Microsoft 檔投稿人指南](https://docs.microsoft.com/contribute/)
+- [Microsoft 檔投稿人指南](/contribute/)
 
 ## <a name="next-steps"></a>後續步驟
 

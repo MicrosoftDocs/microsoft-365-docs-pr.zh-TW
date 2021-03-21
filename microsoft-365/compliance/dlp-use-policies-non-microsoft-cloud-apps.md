@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何對非 Microsoft cloud app 使用 dlp 原則。
-ms.openlocfilehash: 0b588bf27738a0f9a8078999311294f74e5193c0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6787add3ef8b2d6ded22bd05c0ff9658c4b7fbfc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649654"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922079"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>使用非 Microsoft cloud app 的資料遺失防護原則 (預覽) 
 
-資料遺失防護 (DLP) 原則的非 Microsoft cloud 應用程式是 Microsoft 365 DLP 功能套件的一部分;使用這些功能，您可以在 Microsoft 365 服務中探索和保護機密專案。 如需所有 Microsoft DLP 產品的詳細資訊，請參閱 [資料遺失防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)。
+資料遺失防護 (DLP) 原則的非 Microsoft cloud 應用程式是 Microsoft 365 DLP 功能套件的一部分;使用這些功能，您可以在 Microsoft 365 服務中探索和保護機密專案。 如需所有 Microsoft DLP 產品的詳細資訊，請參閱 [資料遺失防護](./data-loss-prevention-policies.md?view=o365-worldwide)。
 
 您可以使用 DLP 原則來監視和偵測敏感專案何時使用，並透過非 Microsoft cloud app 加以共用。 使用這些原則可提供您所需的可見度和控制，以確保它們已正確使用和受到保護，並可協助防範可能會損損的危險行為。
 
@@ -45,17 +45,17 @@ ms.locfileid: "48649654"
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>準備 Cloud App Security 環境
 
-DLP 原則至非 Microsoft cloud App 使用雲端 App Security DLP 功能。 若要使用它，您應該準備 Cloud App Security 環境。 如需相關指示，請參閱為 [您的應用程式設定立即可視性、保護和](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)控管動作。
+DLP 原則至非 Microsoft cloud App 使用雲端 App Security DLP 功能。 若要使用它，您應該準備 Cloud App Security 環境。 如需相關指示，請參閱為 [您的應用程式設定立即可視性、保護和](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)控管動作。
 
 ### <a name="connect-a-non-microsoft-cloud-app"></a>連接非 Microsoft cloud app
 
 若要使用 DLP 原則至特定的非 Microsoft cloud app，該應用程式必須連接至 Cloud App Security。 如需詳細資訊，請參閱：
 
-- [連接框](https://docs.microsoft.com/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
-- [連接 Dropbox](https://docs.microsoft.com/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Connect G 套件](https://docs.microsoft.com/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
-- [連接 Salesforce](https://docs.microsoft.com/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
-- [連接 Cisco Webex](https://docs.microsoft.com/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
+- [連接框](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
+- [連接 Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
+- [Connect G 套件](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [連接 Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
+- [連接 Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
 將雲端應用程式連線至 Cloud App Security 之後，您可以為其建立 Microsoft 365 DLP 原則。
 
@@ -81,10 +81,10 @@ DLP 原則至非 Microsoft cloud App 使用雲端 App Security DLP 功能。 若
 
 ![限制協力廠商應用程式](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
-如需建立及設定 DLP 原則的詳細資訊，請參閱 [Create test and 微調 dlp policy](https://docs.microsoft.com/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide)。
+如需建立及設定 DLP 原則的詳細資訊，請參閱 [Create test and 微調 dlp policy](./create-test-tune-dlp-policy.md?view=o365-worldwide)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立測試並調整 DLP 原則](https://docs.microsoft.com/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide)
-- [預設的 DLP 原則快速入門](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-the-default-dlp-policy?view=o365-worldwide)
-- [從範本建立 DLP 原則](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template?view=o365-worldwide)
+- [建立測試並調整 DLP 原則](./create-test-tune-dlp-policy.md?view=o365-worldwide)
+- [預設的 DLP 原則快速入門](./get-started-with-the-default-dlp-policy.md?view=o365-worldwide)
+- [從範本建立 DLP 原則](./create-a-dlp-policy-from-a-template.md?view=o365-worldwide)

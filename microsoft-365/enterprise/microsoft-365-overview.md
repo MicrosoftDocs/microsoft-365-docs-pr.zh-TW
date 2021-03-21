@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 企業版的元件、方案和部署路徑的簡介。
-ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: 19bc4763f60fae1db914ab7c1f10354e7904cb50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068966"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923167"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -87,7 +87,7 @@ Microsoft 365 E3 使用者可以使用這些附加元件來利用 Microsoft 365 
 
 這些產品已於 **2020 年 10 月 13 日** 進入終止支援：
 
-- [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [Office 2010](/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 將於 **2021 年 4 月 13 日** 到達終止支援。
@@ -120,11 +120,11 @@ Microsoft 365 E3 使用者可以使用這些附加元件來利用 Microsoft 365 
 
 ## <a name="additional-microsoft-365-products"></a>其他 Microsoft 365 產品
 
-- [Microsoft 365 商務進階版](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 商務進階版](../business/index.yml)
 
   將同等級最佳生產力和共同作業功能與裝置管理和安全性解決方案整合在一起，以保護中小型企業的商務資料。
 
-- [Microsoft 365 教育版](https://docs.microsoft.com/education)
+- [Microsoft 365 教育版](/education)
 
   可讓授課者解放創意、提升團隊合作，並在專為教育打造且價格合理的單一解決方案中提供簡單且安全的體驗。
 
@@ -154,7 +154,7 @@ Microsoft 365 E3 使用者可以使用這些附加元件來利用 Microsoft 365 
 
 ![Microsoft 365 基礎概念訓練](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-若要深入瞭解 Microsoft 365 並致力於 Microsoft 365 認證，您可以從 [Microsoft 365 認證：基礎](https://docs.microsoft.com/learn/paths/m365-fundamentals/)開始。
+若要深入瞭解 Microsoft 365 並致力於 Microsoft 365 認證，您可以從 [Microsoft 365 認證：基礎](/learn/paths/m365-fundamentals/)開始。
 
 ## <a name="see-also"></a>另請參閱
 

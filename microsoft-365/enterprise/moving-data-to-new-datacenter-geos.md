@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解新的 Office 365 資料中心 geos，以及如何使用資料派駐選項，將核心資料要求移至新的地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: f752956506df98ea71d0d02886d14dc719ed9413
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349241"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921603"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>將核心資料移至新的 Microsoft 365 datacenter geos
 
@@ -41,14 +41,14 @@ ms.locfileid: "49349241"
 |**印度**| 亞洲/太平洋 | 印度 | 2015 年 10 月 |
 |**加拿大**| 美國 | 加拿大 | 2016 年 5 月 |
 |**英國**| 歐盟 | 英國 | 2016 年 9 月 |
-|**南韓**| 亞洲/太平洋 | 南韓 | 2017 年 4 月 |
+|**南韓**| 亞洲/太平洋 | 韓國 | 2017 年 4 月 |
 |**法國**| 歐盟 | 法國 | 2018 年 3 月 |
 |**阿拉伯聯合大公國**| 歐盟 | 阿拉伯聯合大公國 | 2019 年 6 月 |
 |**南非**| 歐盟 | 南非 | 2019 年 7 月 |
 |**瑞士，列支敦斯登**| 歐盟 | 瑞士 | 2019 年 12 月 |
 |**德國**| 歐盟 | 德國 | 2019 年 12 月 |
 |**挪威**| 歐盟 | 挪威 | 2020 年 4 月 |
-|**巴西**| 美洲地區 | 巴西 | 2020年11月 |
+|**巴西**| 美洲地區 | 巴西 | 2020 年 11 月 |
 
 從10月 1 2020 日到1月1日，含租使用者之 Office 365 教育版訂閱的客戶不適合進行遷移。
 
@@ -72,6 +72,6 @@ ms.locfileid: "49349241"
     
 [資料移動一般常見問題集](data-move-faq.md)
   
-[Microsoft Dynamics CRM Online 的新 datacenter geos](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Microsoft Dynamics CRM Online 的新 datacenter geos](/power-platform/admin/new-datacenter-regions)
   
 [依地區的 Azure 服務](https://azure.microsoft.com/regions/)

@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 瞭解如何為您的 Microsoft 365 租使用者中的所有資料設定客戶金鑰。
-ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: f50986b4e72808d4a1cd4dc8ee0182eb9c0a2455
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838238"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922687"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>在承租人層級 (公開預覽的 Microsoft 365 客戶金鑰概述) 
 
@@ -68,9 +68,9 @@ ms.locfileid: "50838238"
 
 暫時或永久遺失根加密金鑰的功能可能會造成中斷，甚至可能造成資料遺失。 因此，與客戶金鑰搭配使用的資源需要加強保護。 與客戶金鑰搭配使用的所有 Azure 資源，除了預設設定之外，還提供保護機制。 您可以使用 Azure 訂閱進行標記或註冊，以防止立即和不可撤銷的取消。 這稱為註冊強制保留期間。 在必要保留期間內註冊 Azure 訂閱所需的步驟，必須與 Microsoft 共同作業。 此程式最多可長達五個工作日。 先前，這有時候稱為「不要取消」。
   
-在聯繫 Microsoft 365 團隊之前，您必須針對每個用客戶金鑰使用的 Azure 訂閱執行下列步驟。 開始之前，請確定您已安裝 [Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) 模組。
+在聯繫 Microsoft 365 團隊之前，您必須針對每個用客戶金鑰使用的 Azure 訂閱執行下列步驟。 開始之前，請確定您已安裝 [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) 模組。
 
-1. 使用 Azure PowerShell 登入。 如需相關指示，請參閱 [使用 Azure PowerShell 登入](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
+1. 使用 Azure PowerShell 登入。 如需相關指示，請參閱 [使用 Azure PowerShell 登入](/powershell/azure/authenticate-azureps)。
 
 2. 執行 Register-AzProviderFeature Cmdlet 註冊您的訂閱，以使用強制保留期間。 針對每個訂閱執行此動作。
 
@@ -104,7 +104,7 @@ ms.locfileid: "50838238"
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>在每個訂閱中建立高級 Azure 金鑰 Vault
 
-建立主要 vault 的步驟會在 [開始使用 Azure Key vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)時記錄下來，可引導您安裝及啟動 azure PowerShell、連線至 azure 訂閱、建立資源群組，以及在該資源群組中建立金鑰 vault。
+建立主要 vault 的步驟會在 [開始使用 Azure Key vault](/azure/key-vault/general/overview)時記錄下來，可引導您安裝及啟動 azure PowerShell、連線至 azure 訂閱、建立資源群組，以及在該資源群組中建立金鑰 vault。
   
 當您建立金鑰 vault 時，您必須選擇 SKU： [標準] 或 [特優]。 Standard SKU 允許使用軟體來保護 Azure 金鑰 Vault 金鑰-沒有硬體安全性模組 (HSM) 金鑰保護-而且特優 SKU 允許使用 Hsm 來保護主要 Vault 金鑰。 客戶金鑰可接受使用任一 SKU 的金鑰電子倉庫，但 Microsoft 強烈建議您只使用特優 SKU。 使用任何一種類型之機碼的作業成本是相同的，所以每個受 HSM 保護的金鑰只會有每個月的成本差異。 如需詳細資訊，請參閱 [主要 Vault 定價](https://azure.microsoft.com/pricing/details/key-vault/) 。
   
@@ -113,7 +113,7 @@ ms.locfileid: "50838238"
 
 使用主要保管區的一般前置詞，並包含主要 vault 和機碼的使用和範圍的縮寫。 例如，針對存放庫在北美的 Contoso 服務，可能的名稱成對為 Contoso-O365-NA-VaultA1 和 Contoso-O365-NA-VaultA2。 保存庫名稱是 Azure 內全域唯一的字串，因此，您可能需要嘗試所需名稱的變化，以防其他 Azure 客戶已索取所需的名稱。 設定後，就無法變更保存庫名稱，因此最佳作法是設定安裝的書面計畫，然後使用第二個人驗證計畫是否正確執行。
 
-如果可能，請在非成對區域中建立您的電子倉庫。 配對的 Azure 區域可提供跨服務失敗網域的高可用性。 因此，區域配對可以視為彼此的備份區域。 這表示位於某個地區的 Azure 資源會透過成對區域自動取得容錯。 基於此原因，針對在地區是成對的資料加密原則中所使用的兩個保存庫選擇地區時，只會使用兩個可用區域的可用性。 大多數地理有兩個地區，所以尚不能選取非成對區域。 如有可能，請選擇兩個不成對的區域，以用於資料加密原則的兩個保存庫。 其優點是共有四個地區的可用性。 如需詳細資訊，請參閱 [Business 持續性和嚴重損壞修復 (BCDR) ： Azure 成對區域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) 的目前區域配對清單。
+如果可能，請在非成對區域中建立您的電子倉庫。 配對的 Azure 區域可提供跨服務失敗網域的高可用性。 因此，區域配對可以視為彼此的備份區域。 這表示位於某個地區的 Azure 資源會透過成對區域自動取得容錯。 基於此原因，針對在地區是成對的資料加密原則中所使用的兩個保存庫選擇地區時，只會使用兩個可用區域的可用性。 大多數地理有兩個地區，所以尚不能選取非成對區域。 如有可能，請選擇兩個不成對的區域，以用於資料加密原則的兩個保存庫。 其優點是共有四個地區的可用性。 如需詳細資訊，請參閱 [Business 持續性和嚴重損壞修復 (BCDR) ： Azure 成對區域](/azure/best-practices-availability-paired-regions) 的目前區域配對清單。
 
 ### <a name="assign-permissions-to-each-key-vault"></a>將許可權指派給每個金鑰保存庫
 
@@ -124,7 +124,7 @@ ms.locfileid: "50838238"
   > [!IMPORTANT]
   > 指派給主要 vault 管理員的許可權集不包含刪除金鑰的許可權。 這是故意和重要的作法。 刪除加密金鑰通常不會這麼做，因為這樣做會永久銷毀資料。 根據預設，請勿將此許可權授與主要 vault 管理員的最佳作法。 相反地，針對主要 vault 投稿人保留這種情況，而且只要清楚瞭解對結果的瞭解，就只需在短期內將其指派給系統管理員。
   
-  若要將這些許可權指派給組織中的使用者，請使用 Azure PowerShell 登入您的 Azure 訂閱。 如需相關指示，請參閱 [使用 Azure PowerShell 登入](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
+  若要將這些許可權指派給組織中的使用者，請使用 Azure PowerShell 登入您的 Azure 訂閱。 如需相關指示，請參閱 [使用 Azure PowerShell 登入](/powershell/azure/authenticate-azureps)。
 
    執行 Set-AzKeyVaultAccessPolicy Cmdlet 指派必要的許可權。
 
@@ -138,7 +138,7 @@ ms.locfileid: "50838238"
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- 可以變更 Azure Key Vault 自身許可權的 **主要 vault 參與者**。 您必須變更這些許可權，因為員工離職或加入您的小組，或是主要 vault 管理員合法需要刪除或還原機碼的少數情況。 這組重要的 vault 投稿人員必須授與主要 vault 上的投稿人角色。 您可以使用 Azure 資源管理員指派此角色。 如需詳細步驟，請參閱 [Use Role-Based Access Control](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) ，以管理您的 Azure 訂閱資源的存取權。 建立訂閱的系統管理員預設具有這種存取權，以及將其他管理員指派給參與者角色的能力。
+- 可以變更 Azure Key Vault 自身許可權的 **主要 vault 參與者**。 您必須變更這些許可權，因為員工離職或加入您的小組，或是主要 vault 管理員合法需要刪除或還原機碼的少數情況。 這組重要的 vault 投稿人員必須授與主要 vault 上的投稿人角色。 您可以使用 Azure 資源管理員指派此角色。 如需詳細步驟，請參閱 [Use Role-Based Access Control](/azure/active-directory/role-based-access-control-configure) ，以管理您的 Azure 訂閱資源的存取權。 建立訂閱的系統管理員預設具有這種存取權，以及將其他管理員指派給參與者角色的能力。
 
 - Microsoft 365 在租使用者層級執行客戶金鑰工作的 **rest 加密服務資料**。 若要授與 Microsoft 365 的許可權，請使用下列語法執行 **AzKeyVaultAccessPolicy** Cmdlet：
 
@@ -162,9 +162,9 @@ ms.locfileid: "50838238"
   
 若要在金鑰保存庫上啟用虛刪除，請完成下列步驟：
   
-1. 使用 Windows PowerShell 登入您的 Azure 訂閱。 如需相關指示，請參閱 [使用 Azure PowerShell 登入](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
+1. 使用 Windows PowerShell 登入您的 Azure 訂閱。 如需相關指示，請參閱 [使用 Azure PowerShell 登入](/powershell/azure/authenticate-azureps)。
 
-2. 執行 [AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) Cmdlet。 在此範例中， *保存庫名稱* 是您要啟用 soft delete 之主要 vault 的名稱：
+2. 執行 [AzKeyVault](/powershell/module/az.keyvault/get-azkeyvault) Cmdlet。 在此範例中， *保存庫名稱* 是您要啟用 soft delete 之主要 vault 的名稱：
 
    ```powershell
    $v = Get-AzKeyVault -VaultName <vault name>
@@ -183,7 +183,7 @@ ms.locfileid: "50838238"
 
 有兩種方法可以將機碼新增到 Azure Key Vault;您可以直接在 Key Vault 中建立金鑰，也可以匯入金鑰。 直接在 Key Vault 中建立金鑰是不夠複雜的方法，而匯入金鑰會提供如何產生機碼的整體控制權。 使用 RSA 機碼。 Azure 金鑰 Vault 不支援使用橢圓曲線鍵進行換行及解換。
   
-若要直接在金鑰保存庫中建立金鑰，請執行 AzKeyVaultKey 指令 [程式](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) ，如下所示：
+若要直接在金鑰保存庫中建立金鑰，請執行 AzKeyVaultKey 指令 [程式](/powershell/module/az.keyvault/add-azkeyvaultkey) ，如下所示：
   
 ```powershell
 Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
@@ -222,7 +222,7 @@ Microsoft 365 要求 Azure Key Vault 訂閱設定為 [不要取消]，且客戶�
 
 立即建立或變更索引鍵，執行備份及儲存備份的備份，不論是線上還是離線。 不要將離線副本連線到任何網路。 請改為將它們儲存在實體安全或商業儲存設施中。 至少應有一個備份副本儲存在發生嚴重損壞時可存取的位置。 備份 blob 是一種還原重要材料的唯一方法，應永久銷毀主要 Vault 金鑰，否則無法使用。 Azure Key Vault 外部的金鑰和匯入到 Azure Key Vault 的金鑰不會做為備份，因為客戶金鑰使用金鑰所需的中繼資料不存在於外部金鑰。 只有從 Azure 金鑰保存庫取得的備份可用於使用客戶金鑰進行還原作業。 因此，請務必在上載或建立金鑰時進行 Azure 金鑰 Vault 備份。
   
-若要建立 Azure Key Vault 機碼的備份，請執行 [AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey) Cmdlet，如下所示：
+若要建立 Azure Key Vault 機碼的備份，請執行 [AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) Cmdlet，如下所示：
 
 ```powershell
 Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
@@ -245,7 +245,7 @@ Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-N
   
 若要確認您的機碼已啟用 get、wrapKey 及 unwrapKey 作業，請執行下列動作：
   
-執行 [AzKeyVault 指令程式](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) ，如下所示：
+執行 [AzKeyVault 指令程式](/powershell/module/az.keyvault/get-azkeyvault) ，如下所示：
   
 ```powershell
 Get-AzKeyVault -VaultName <vault name>
@@ -265,7 +265,7 @@ Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,un
   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName c066d759-24ae-40e7-a56f-027002b5d3e4
   ```
 
-若要確認沒有為您的金鑰設定到期日，請執行 [AzKeyVaultKey 指令程式](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) ，如下所示：
+若要確認沒有為您的金鑰設定到期日，請執行 [AzKeyVaultKey 指令程式](/powershell/module/az.keyvault/get-azkeyvault) ，如下所示：
   
 ```powershell
 Get-AzKeyVaultKey -VaultName <vault name>
@@ -273,7 +273,7 @@ Get-AzKeyVaultKey -VaultName <vault name>
 
 已到期的金鑰無法由客戶金鑰使用，而且嘗試使用到期金鑰會失敗，而且可能會造成服務中斷。 強烈建議使用與客戶金鑰搭配使用的金鑰沒有到期日。 到期日一經設定，便無法移除，但可以變更為不同的日期。 如果必須使用具有到期日期設定的金鑰，請將 [到期] 值變更為12/31/9999。 到期日設定為日期12/31/9999 以外的金鑰將不會通過 Microsoft 365 驗證。
   
-若要變更已設定為12/31/9999 以外任何值的到期日，請執行 AzKeyVaultKey 指令 [程式](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) ，如下所示：
+若要變更已設定為12/31/9999 以外任何值的到期日，請執行 AzKeyVaultKey 指令 [程式](/powershell/module/az.keyvault/update-azkeyvaultkey) ，如下所示：
   
 ```powershell
 Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date -Date "12/31/9999")
@@ -291,7 +291,7 @@ Azure PowerShell:
 
 ## <a name="set-up-the-customer-key-encryption-policy-for-your-tenant"></a>為您的租使用者設定客戶金鑰加密原則
 
-您必須已獲指派許可權，才能執行這些 Cmdlet。 雖然這篇文章列出指令程式的所有參數，但如果不包含在指派給您的許可權中，您可能無法存取某些參數。 若要尋找在組織中執行任何 Cmdlet 或參數所需的權限，請參閱 [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions)。
+您必須已獲指派許可權，才能執行這些 Cmdlet。 雖然這篇文章列出指令程式的所有參數，但如果不包含在指派給您的許可權中，您可能無法存取某些參數。 若要尋找在組織中執行任何 Cmdlet 或參數所需的權限，請參閱 [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions)。
 
 ### <a name="create-policy"></a>建立原則
 

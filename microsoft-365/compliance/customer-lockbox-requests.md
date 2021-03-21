@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解客戶密碼箱要求，可讓您控制當您遇到問題時，Microsoft 支援工程師可如何存取您的資料。
-ms.openlocfilehash: b475c9af80d0e28961360825788d9e19a426dc69
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 6a6a1d45bfbc8b7c65d9ac8d58eb246643505c4f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48768861"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922707"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 中的客戶加密箱
 
 本文提供客戶加密箱的部署和設定指導。 客戶加密箱支援存取 Exchange Online 中的資料、SharePoint 線上和商務 OneDrive 的要求。 若要建議支援其他服務，請提交 [Office 365 UserVoice](https://office365.uservoice.com/)的要求。
 
-若要查看授權您的使用者受益于 Microsoft 365 規範服務（包含這項服務）2020的選項，請參閱 [microsoft 365 授權指南以取得安全性 & 合規性](https://aka.ms/ComplianceSD)。
+若要查看授權您的使用者受益于 Microsoft 365 規範服務（包含這項服務）2020的選項，請參閱 [microsoft 365 授權指南以取得安全性 & 合規性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 客戶加密箱可確保 Microsoft 無法存取您的內容，即可在未明確核准的情況下執行服務作業。 客戶加密箱會將您帶入核准工作流程，以取得存取內容的要求。
 
@@ -54,7 +54,7 @@ ms.locfileid: "48768861"
 
     ![客戶加密箱電子郵件通知範例](../media/CustomerLockbox1.png)
 
-   在 Microsoft 365 系統管理中心中指派 [客戶密碼箱存取核准者](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) 系統管理員角色的任何人，都可以核准客戶加密箱要求。
+   在 Microsoft 365 系統管理中心中指派 [客戶密碼箱存取核准者](/office365/admin/add-users/about-admin-roles) 系統管理員角色的任何人，都可以核准客戶加密箱要求。
 
 6. 核准者會登入 Microsoft 365 系統管理中心，並核准要求。 此步驟會觸發搜尋審核記錄檔，以建立可使用的審計記錄。 如需詳細資訊，請參閱 [審核客戶密碼箱要求](#auditing-customer-lockbox-requests)。
 
@@ -74,9 +74,9 @@ ms.locfileid: "48768861"
 
 1. 使用指派有全域管理員或 **客戶密碼箱存取核准者** 角色的工作或學校帳戶，移至並登 [https://admin.microsoft.com](https://admin.microsoft.com) 入。
 
-2. 選擇 [ **設定] > 的組織設定** 。
+2. 選擇 [ **設定] > 的組織設定**。
 
-3. 選取 [ **安全性 & 隱私權**  >  **客戶密碼箱**  >  **編輯** ]，然後將開關移至 [ **開啟** ] 或 [ **關閉** ] 開啟或關閉該功能。
+3. 選取 [**安全性 & 隱私權**  >  **客戶密碼箱**  >  **編輯**]，然後將開關移至 [**開啟**] 或 [**關閉**] 開啟或關閉該功能。
 
     ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
@@ -84,7 +84,7 @@ ms.locfileid: "48768861"
 
 1. 使用指派有全域管理員或 **客戶密碼箱存取核准者** 角色的工作或學校帳戶，移至並登 [https://admin.microsoft.com](https://admin.microsoft.com) 入。
 
-2. 選擇 [ **支援 > 客戶加密箱要求** 。
+2. 選擇 [ **支援 > 客戶加密箱要求**。
 
     ![按一下 [支援]，然後按一下 [客戶密碼箱要求]](../media/CustomerLockbox5.png)
 
@@ -92,7 +92,7 @@ ms.locfileid: "48768861"
 
     ![客戶加密箱要求的清單](../media/CustomerLockbox6.png)
 
-3. 選取客戶加密箱要求，然後選擇 [ **核准** ] 或 [ **拒絕** ]。
+3. 選取客戶加密箱要求，然後選擇 [ **核准** ] 或 [ **拒絕**]。
 
     ![核准或拒絕客戶加密箱要求](../media/CustomerLockbox7.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "48768861"
     ![核准或拒絕客戶加密箱要求](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> 使用 AccessToCustomerDataRequest 指令程式來核准、拒絕或取消由 Microsoft 支援工程師控制您的資料存取權的 Microsoft 365 Customer Lockbox 要求。 如需詳細資訊，請參閱 [AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest)。
+> 使用 Set-AccessToCustomerDataRequest Cmdlet 來核准、拒絕或取消由 Microsoft 支援工程師控制您資料存取權的 Microsoft 365 客戶加密箱要求。 如需詳細資訊，請參閱 [AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest)。
 
 
 ## <a name="auditing-customer-lockbox-requests"></a>審核客戶加密箱要求
@@ -110,13 +110,13 @@ ms.locfileid: "48768861"
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>在審計記錄檔中搜尋與客戶加密箱要求相關的活動
 
-在您可以使用「審核記錄檔」追蹤客戶的要求之後，您必須採取一些步驟來設定審核記錄。 如需詳細資訊，請參閱在 [安全性 & 規範中心搜尋審核記錄](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin)檔。 完成安裝後，請使用下列步驟來建立審核記錄搜尋查詢，以傳回與客戶密碼箱相關的審計記錄：
+在您可以使用「審核記錄檔」追蹤客戶的要求之後，您必須採取一些步驟來設定審核記錄。 如需詳細資訊，請參閱在 [安全性 & 規範中心搜尋審核記錄](/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin)檔。 完成安裝後，請使用下列步驟來建立審核記錄搜尋查詢，以傳回與客戶密碼箱相關的審計記錄：
 
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
   
 2. 使用您的公司或學校帳戶登入。
 
-3. 在安全性 & 規範中心的左窗格中，選擇 [ **搜尋 & 調查**  >  **審核記錄搜尋** ]。
+3. 在安全性 & 規範中心的左窗格中，選擇 [**搜尋 & 調查**  >  **審核記錄搜尋**]。
 
     [ **審計記錄檔搜尋** ] 頁面隨即顯示。
 
@@ -132,15 +132,15 @@ ms.locfileid: "48768861"
 
     1. **檔、資料夾或網站** -將此欄位保留空白。
 
-5. 按一下 [搜尋]  以使用您的搜尋準則執行搜尋。
+5. 按一下 **[搜尋]** 以使用您的搜尋準則執行搜尋。
 
-    搜尋結果會經過載入，然後在 [ **審計記錄檔搜尋** ] 頁面的 [ **結果** ] 底下出現一段時間。
+    搜尋結果會經過載入，然後在 [**審計記錄檔搜尋**] 頁面的 [**結果**] 底下出現一段時間。
 
 6. 按一下搜尋結果頁面上的 [ **篩選結果** ]，然後執行下列其中一項動作：
 
-   - 若要顯示與組織中核准或拒絕客戶加密箱要求相關之核准的審計記錄：在 [ **活動** ] 欄下方的方塊中，輸入 **AccessToCustomerDataRequest** 。
+   - 若要顯示與組織中核准或拒絕客戶加密箱要求相關之核准的審計記錄：在 [ **活動** ] 欄下方的方塊中，輸入 **AccessToCustomerDataRequest**。
 
-   - 顯示與 Microsoft 工程師相關的審計記錄，以回應核准的客戶加密箱要求：在 [ **使用者** ] 欄下方的方塊中，輸入 **Microsoft 接線員** 。 [ **活動** ] 欄會顯示工程師所執行的動作。
+   - 顯示與 Microsoft 工程師相關的審計記錄，以回應核准的客戶加密箱要求：在 [ **使用者** ] 欄下方的方塊中，輸入 **Microsoft 接線員**。 [ **活動** ] 欄會顯示工程師所執行的動作。
 
       ![在 "Microsoft 接線員" 上篩選以顯示審計記錄](../media/CustomerLockbox10.png)
 
@@ -158,12 +158,12 @@ ms.locfileid: "48768861"
 | 活動   | Set-AccessToCustomerDataRequest;這是當您核准或拒絕客戶加密箱要求時所記錄的審計活動。                                |
 | 項目       | 客戶加密箱要求的 Guid                             |
 
-下列螢幕擷取畫面顯示對應至已核准客戶加密箱要求的審計記錄檔範例。 如果客戶加密箱要求遭到拒絕，則 **ApprovalDecision** 參數的值將會是 **Deny** 。
+下列螢幕擷取畫面顯示對應至已核准客戶加密箱要求的審計記錄檔範例。 如果客戶加密箱要求遭到拒絕，則 **ApprovalDecision** 參數的值將會是 **Deny**。
 
 ![核准客戶加密箱要求的審計記錄](../media/CustomerLockbox9.png)
 
 > [!TIP]
-> 若要在審計記錄中顯示更詳細的資訊，請按一下 [ **詳細資訊** ]。
+> 若要在審計記錄中顯示更詳細的資訊，請按一下 [ **詳細資訊**]。
 
 ### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Microsoft 工程師所執行動作的審計記錄
 

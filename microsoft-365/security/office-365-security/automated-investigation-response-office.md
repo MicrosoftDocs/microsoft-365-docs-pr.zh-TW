@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a5a1384208141a42459c009952f89d18498cc21e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 4cffbe1a531af05bebaed74811c0e3be08775751
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287922"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921273"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應運作方式
 
@@ -66,10 +66,10 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 接下來，會執行數個威脅調查和搜尋步驟：
 
 - 類似的電子郵件會透過電子郵件聚簇搜尋加以識別。
-- 此信號是與其他平臺（例如 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共用。
+- 此信號是與其他平臺（例如 [Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共用。
 - 決定是否任何使用者已透過可疑電子郵件訊息中的任何惡意連結進行按一下。
 - 在 Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) 和 ([Microsoft Defender for Office 365](office-365-atp.md)) 中進行檢查，以查看使用者是否已報告任何其他類似的郵件。
-- 會執行檢查以查看使用者是否遭到破壞。 這種檢查會利用跨 Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)和 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)的信號，以關聯任何相關的使用者活動異常。
+- 會執行檢查以查看使用者是否遭到破壞。 這種檢查會利用跨 Office 365、 [Microsoft Cloud App Security](/cloud-app-security)和 [Azure Active Directory](/azure/active-directory)的信號，以關聯任何相關的使用者活動異常。
 
 在搜尋階段中，會將風險和威脅指派給各種搜尋步驟。
 
@@ -91,7 +91,7 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 
 ## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>範例：使用 Office 365 管理活動 API，安全性運作小組與其 SIEM 整合 AIR
 
-Microsoft Defender for Office 365 中的 AIR 功能包括 [報告 & 詳細資料](air-view-investigation-results.md) ，安全性作業小組可用以監視和處理威脅。 不過，您也可以整合 AIR 功能與其他解決方案。 範例包括安全性資訊和事件管理 (SIEM) 系統、案例管理系統或自訂報告解決方案。 您可以使用 [Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)來完成這些類型的整合。
+Microsoft Defender for Office 365 中的 AIR 功能包括 [報告 & 詳細資料](air-view-investigation-results.md) ，安全性作業小組可用以監視和處理威脅。 不過，您也可以整合 AIR 功能與其他解決方案。 範例包括安全性資訊和事件管理 (SIEM) 系統、案例管理系統或自訂報告解決方案。 您可以使用 [Office 365 管理活動 API](/office/office-365-management-api/office-365-management-activity-api-reference)來完成這些類型的整合。
 
 例如，在最近，組織會設定安全性作業小組的方式，以查看已由 AIR 處理的使用者報告網路釣魚警報。 其解決方案會將相關的警示與組織的 SIEM 伺服器及其案例管理系統整合在一起。 此解決方案大幅減少誤報的數目，讓他們的安全性運作小組能夠專注于實際威脅的時間和工作。 若要深入瞭解此自訂解決方案，請參閱 [技術社區博客：使用 Microsoft Defender For Office 365 和 O365 管理 API，改善 SOC 的效能](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
 

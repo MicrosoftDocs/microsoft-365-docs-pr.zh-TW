@@ -17,21 +17,21 @@ ROBOTS: NOINDEX
 description: 使用者可以瞭解如何針對已傳送至其許可權之共用信箱的隔離郵件，查看並採取行動。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31fbf9c54c3f28e439f444dde872469918dc29d4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: cb42c887df384a418ab01e3a232cdb1f4a7b6e19
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290138"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922325"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>從共用信箱中查看和發行隔離的郵件
 
 > [!NOTE]
 > 本文中所述的功能目前在預覽中，無法供所有人使用，而且可能會變更。
 
-使用者可以管理被隔離的郵件，而這些郵件是以 [EOP 中的使用者身分發現和發行隔離郵件](find-and-release-quarantined-messages-as-a-user.md)所述的其中一位收件者。 不過，如果使用者擁有信箱的「完整存取」和「代理傳送」或「代理傳送者」許可權（如 [Exchange Online 中的共用信箱](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)所述），共用信箱又該如何做呢？
+使用者可以管理被隔離的郵件，而這些郵件是以 [EOP 中的使用者身分發現和發行隔離郵件](find-and-release-quarantined-messages-as-a-user.md)所述的其中一位收件者。 不過，如果使用者擁有信箱的「完整存取」和「代理傳送」或「代理傳送者」許可權（如 [Exchange Online 中的共用信箱](/exchange/collaboration-exo/shared-mailboxes)所述），共用信箱又該如何做呢？
 
-先前，使用者能夠管理傳送至共用信箱的隔離郵件時，系統管理員可以將自動對應啟用，以供系統管理員在使用者存取另一個信箱) 時，預設會啟用該共用 (信箱。 不過，視使用者有權存取的信箱大小和數目而定，當 Outlooks 嘗試開啟使用者可以存取的 *所有* 信箱時，效能會受到影響。 基於這個理由，許多系統管理員會選擇 [移除共用信箱的自動對應](https://docs.microsoft.com/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
+先前，使用者能夠管理傳送至共用信箱的隔離郵件時，系統管理員可以將自動對應啟用，以供系統管理員在使用者存取另一個信箱) 時，預設會啟用該共用 (信箱。 不過，視使用者有權存取的信箱大小和數目而定，當 Outlooks 嘗試開啟使用者可以存取的 *所有* 信箱時，效能會受到影響。 基於這個理由，許多系統管理員會選擇 [移除共用信箱的自動對應](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
 
 現在，使用者不再需要自動對應來管理傳送至共用信箱的隔離郵件。 它只適用于運作。 有兩種不同的方法可以存取已傳送至共用信箱的隔離郵件：
 
@@ -51,7 +51,7 @@ ms.locfileid: "50290138"
 
 - 目前已傳送至共用信箱的隔離郵件，[**詳細資料**] 浮出器中無法使用 [**封鎖寄件者**] 按鈕。
 
-- 若要管理 [Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中共用信箱的隔離郵件 PowerShell，使用者必須使用 [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) Cmdlet 與共享信箱電子郵件 _RecipientAddress_ 位址，以識別郵件。 例如：
+- 若要管理 [Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)中共用信箱的隔離郵件 PowerShell，使用者必須使用 [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) Cmdlet 與共享信箱電子郵件 _RecipientAddress_ 位址，以識別郵件。 例如：
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com
@@ -69,7 +69,7 @@ ms.locfileid: "50290138"
 
   如需詳細的語法及參數資訊，請參閱下列主題：
 
-  - [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)
-  - [Get-QuarantineMessageHeader](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessageheader)
-  - [預覽-Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage)
-  - [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)
+  - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
+  - [Get-QuarantineMessageHeader](/powershell/module/exchange/get-quarantinemessageheader)
+  - [預覽-Get-quarantinemessage](/powershell/module/exchange/preview-quarantinemessage)
+  - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

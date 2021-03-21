@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 瞭解有時切換方案必須手動完成或通過呼叫支援的原因。
-ms.openlocfilehash: 8e217ad59e6436641af3b2f0151a760da5239839
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d13b7290f4b5f9aede7406cf76ee60cac262c814
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646748"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922265"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>為什麼我無法切換商務方案的 Microsoft 365？
 
@@ -42,12 +42,12 @@ ms.locfileid: "48646748"
   
 ::: moniker range="o365-worldwide"
 
- **需要其他內容嗎？** [購買其他訂閱](../buy-another-subscription.md)  | [取消您的訂閱](cancel-your-subscription.md)  | [訂閱和帳單](../index.yml)  | [電話支援](../../admin/contact-support-for-business-products.md)
+ **需要其他內容嗎？** [購買其他訂閱](../try-or-buy-microsoft-365.md)  | [取消您的訂閱](cancel-your-subscription.md)  | [訂閱和帳單](../index.yml)  | [電話支援](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **需要其他內容嗎？** [購買其他訂閱](../buy-another-subscription.md)  | [取消您的訂閱](cancel-your-subscription.md)  | [訂閱和帳單](../index.yml)  | [電話支援](../../admin/contact-support-for-business-products.md)
+ **需要其他內容嗎？** [購買其他訂閱](../try-or-buy-microsoft-365.md)  | [取消您的訂閱](cancel-your-subscription.md)  | [訂閱和帳單](../index.yml)  | [電話支援](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 

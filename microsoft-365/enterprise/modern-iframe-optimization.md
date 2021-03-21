@@ -19,19 +19,19 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 深入了解如何在 SharePoint Online 新式與傳統發佈網站頁面中最佳化 iFrame 的效能。
-ms.openlocfilehash: 8985eb1038bbdfc53dc3c6a8ea9350fa6df33556
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d6e9aefa23972589c752540959b17f5d20ed0889
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688863"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923052"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>在 SharePoint Online 新式與傳統發佈網站頁面中最佳化 iFrame
 
 iFrame 對於預覽多種格式的內容 (例如影面或其他媒體) 而言相當有用。 不過，因為 iFrame 會在 SharePoint 網站頁面內載入個別頁面，所以在 iFrame 中載入的內容可能包含大量影像、影片或其他元素，以上項目都會影響整體頁面載入時間，而且您無法在頁面上進行控制。 本文可協助您了解如何判斷頁面中的 iFrame 如何影響使用者察覺延遲，以及如何修復常見問題。
 
 >[!NOTE]
->如需有關 SharePoint Online 新式網站效能的詳細資訊，請參閱 [SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
+>如需有關 SharePoint Online 新式網站效能的詳細資訊，請參閱 [SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>使用「適用於 SharePoint 的頁面診斷」工具，透過 iFrame 來分析網頁組件
 
@@ -40,21 +40,21 @@ iFrame 對於預覽多種格式的內容 (例如影面或其他媒體) 而言相
 >[!NOTE]
 >網頁診斷工具只能用於 SharePoint Online，且無法在 SharePoint 系統頁面使用。
 
-當您使用「適用於 SharePoint 的頁面診斷」工具分析 SharePoint 網站頁面時，您可以在 [診斷測試]__ 窗格中看到包含 iFrame 的網頁組件相關資訊。 新式頁面與傳統頁面的基準計量是相同的。
+當您使用「適用於 SharePoint 的頁面診斷」工具分析 SharePoint 網站頁面時，您可以在 [診斷測試] 窗格中看到包含 iFrame 的網頁組件相關資訊。 新式頁面與傳統頁面的基準計量是相同的。
 
 可能的結果包括：
 
-- **需要注意** (紅色)：頁面包含**三個以上**使用 iFrame 的網頁組件
-- **改善機會** (黃色)：頁面包含**一個或兩個**使用 iFrame 的網頁組件
+- **需要注意** (紅色)：頁面包含 **三個以上** 使用 iFrame 的網頁組件
+- **改善機會** (黃色)：頁面包含 **一個或兩個** 使用 iFrame 的網頁組件
 - **不需要任何動作** (綠色)：頁面不包含任何使用 iFrame 的網頁組件
 
-如果 [偵測到使用 iFrame 的網頁組件]**** 結果顯示在 [改善機會]**** 或 [需要注意]**** 區段中，您可以按一下結果以查看包含 iFrame 的網頁組件。
+如果 [偵測到使用 iFrame 的網頁組件] 結果顯示在 [改善機會] 或 [需要注意] 區段中，您可以按一下結果以查看包含 iFrame 的網頁組件。
 
 ![頁面診斷工具結果](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
 
 ## <a name="remediate-iframe-performance-issues"></a>修復 iFrame 效能問題
 
-使用 [頁面診斷] 工具中的 [偵測到使用 iFrame 的網頁組件]**** 結果，以判斷哪些網頁組件包含 iFrame，且可能造成頁面載入時間變慢。
+使用 [頁面診斷] 工具中的 [偵測到使用 iFrame 的網頁組件] 結果，以判斷哪些網頁組件包含 iFrame，且可能造成頁面載入時間變慢。
 
 iFrame 原本就相當緩慢，因為它們會載入個別外部頁面，包括所有相關聯內容，例如 javascript、CSS 及架構元素，其中兩個以上的元素可能會增加網站頁面的負載。
 
@@ -80,4 +80,4 @@ iFrame 原本就相當緩慢，因為它們會載入個別外部頁面，包括�
 
 [調整 Office 365 效能](tune-microsoft-365-performance.md)
 
-[SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)

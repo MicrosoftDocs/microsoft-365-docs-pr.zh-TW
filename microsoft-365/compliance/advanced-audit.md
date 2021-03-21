@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: 012361e8ebbf1961d5ca21cef97357d5150523d5
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 0a77a5c54ce328a3966a952fc8fef08553f42462
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712053"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923483"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
 Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and-compliance.md)，可讓組織深入了解 Microsoft 365 中多種不同服務的多個類型的稽核活動。 進階稽核經由增加進行調查時所需的稽核記錄保留，提供對有助於判斷危害範圍重要事件的存取，以及快速存取 Office 365 管理活動 API，來幫助組織進行鑑定及合規性調查。
 
 > [!NOTE]
-> 進階稽核可供具有 Office 365 E5/G5 或 Microsoft 365 企業版 E5/G5 訂閱的組織使用。 此外，當進階稽核功能需要針對每位使用者進行授權時，您可以將 Microsoft 365 E5 合規性或 E5 電子文件探索和稽核附加元件授權指派給使用者，而針對稽核記錄和存取重要調查事件的長期保留也是如此。 如需有關授權的詳細資訊，請參閱 [Microsoft 365 安全性與合規性的授權指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
+> 進階稽核可供具有 Office 365 E5/G5 或 Microsoft 365 企業版 E5/G5 訂閱的組織使用。 此外，當進階稽核功能需要針對每位使用者進行授權時，您可以將 Microsoft 365 E5 合規性或 E5 電子文件探索和稽核附加元件授權指派給使用者，而針對稽核記錄和存取重要調查事件的長期保留也是如此。 如需有關授權的詳細資訊，請參閱 [Microsoft 365 安全性與合規性的授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
 本文概述了 [進階稽核] 功能，並向您展示了如何為 [進階稽核] 設定使用者。
 
@@ -85,7 +85,7 @@ MailItemsAccessed 信箱動作會取代 Exchange Online 中信箱稽核記錄的
 
 ![在稽核記錄搜尋工具中搜尋 MailItemsAccessed 動作](../media/AdvAudit_MailItemsAccessed.png)
 
-您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) 或 [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) 命令。
+您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) 或 [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) 命令。
 
 ### <a name="send"></a>傳送
 
@@ -103,7 +103,7 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 ![在 [稽核記錄搜尋工具] 中搜尋 [傳送電子郵件] 動作](../media/AdvAudit_SentMessage.png)
 
-您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) 或 [Search-MailboxAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) 命令。
+您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) 或 [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) 命令。
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
@@ -125,7 +125,7 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 ![在 [稽核記錄搜尋工具] 中搜尋 [執行電子郵件搜尋] 動作](../media/AdvAudit_SearchExchange.png)
 
-您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)。
+您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
 > 您必須在 Exchange Online PowerShell 中執行下列命令，以便在稽核記錄搜尋結果中包含 SearchQueryInitiatedExchange 事件 (由指定的 E5 使用者執行)：`Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
@@ -150,7 +150,7 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 ![在 [稽核記錄搜尋工具] 中搜尋 [執行 SharePoint 搜尋] 動作](../media/AdvAudit_SearchSharePoint.png)
 
-您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)。
+您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
 > 您必須在 Exchange Online PowerShell 中執行下列命令，以便在稽核記錄搜尋結果中包含 SearchQueryInitiatedExchange 事件 (由指定的 E5 使用者執行)：`Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
@@ -165,7 +165,7 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 所有組織一開始都會配置每分鐘 2,000 個要求的基準。 視組織的基座數和授權訂閱而定，此限制將會動態增加。 E5 組織可獲得的頻寬大約可達到非 E5 組織的兩倍。 最大頻寬也會有上限，以保護服務的健康情況。
 
-如需詳細資訊，請參閱 [Office 365 管理活動 API 參考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)中的「API 節流」一節。
+如需詳細資訊，請參閱 [Office 365 管理活動 API 參考](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)中的「API 節流」一節。
 
 ## <a name="set-up-advanced-audit-for-users"></a>為使用者設置進階稽核
 
@@ -183,7 +183,7 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
    將在 24 小時內開始記錄使用者的 MailItemsAccessed、Send 和其他重要事件的稽核記錄。
 
-針對使用以群組為基礎授權之指派授權至使用者群組的組織，請務必關閉該群組的 Microsoft 365 進階稽核授權指派。 儲存變更之後，請確認已關閉群組的 Microsoft 365 進階稽核。 然後重新開啟群組的授權指派。 如需以群組為基礎授權的相關指示，請參閱[在 Azure Active Directory 中以群組成員資格指派授權給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)。
+針對使用以群組為基礎授權之指派授權至使用者群組的組織，請務必關閉該群組的 Microsoft 365 進階稽核授權指派。 儲存變更之後，請確認已關閉群組的 Microsoft 365 進階稽核。 然後重新開啟群組的授權指派。 如需以群組為基礎授權的相關指示，請參閱[在 Azure Active Directory 中以群組成員資格指派授權給使用者](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
 此外，如果您已自訂登入到使用者郵箱或共用郵箱的郵箱動作，則不會在這些郵箱上自動稽核新的預設郵箱動作 (如 MailItemsAccessed)。 有關變更為每個登入類型稽核的郵箱動作之資訊，請參閱[管理郵箱稽核](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)中的 [變更或還原預設記錄的郵箱動作] 一節。
 

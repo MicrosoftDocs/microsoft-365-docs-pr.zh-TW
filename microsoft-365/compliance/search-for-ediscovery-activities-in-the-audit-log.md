@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 瞭解當指派電子檔探索許可權的使用者在安全性 & 合規性中心執行內容搜尋和核心 eDiscovery 工作時所記錄的事件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 529e1a0ac3dc66ac15bd1b3fbcde466fb36d5f4e
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7324cf610373202cdc24f48c23dc0647d4a21ea8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357543"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922485"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在稽核記錄中搜尋電子文件探索活動
 
@@ -64,7 +64,7 @@ ms.locfileid: "47357543"
 
 6. 在 [ **使用者** ] 方塊中，選取一或多個要顯示搜尋結果的使用者。 將此方塊保留空白，可傳回所有使用者的專案。
 
-7. 按一下 [搜尋]**** 以使用您的搜尋準則執行搜尋。
+7. 按一下 **[搜尋]** 以使用您的搜尋準則執行搜尋。
 
 8. 搜尋結果顯示後，您可以按一下 [ **篩選結果** ] 以篩選或排序所產生的活動記錄。 不幸的是，您無法使用篩選來明確排除某些活動。 
 
@@ -83,19 +83,19 @@ ms.locfileid: "47357543"
   
 |**易記名稱**|**作業**|**對應 Cmdlet**|**描述**|
 |:-----|:-----|:-----|:-----|
-|新增成員至 eDiscovery 案例  <br/> |CaseMemberAdded  <br/> |載入 ComplianceCaseMember  <br/> |使用者已新增為 eDiscovery 案例的成員。 就像是案例的成員，使用者可以根據是否已獲指派必要許可權來執行各種案例相關的任務。  <br/> |
+|新增成員至 eDiscovery 案例  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |使用者已新增為 eDiscovery 案例的成員。 就像是案例的成員，使用者可以根據是否已獲指派必要許可權來執行各種案例相關的任務。  <br/> |
 |變更的內容搜尋  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |已變更現有的內容搜尋。 變更可包括新增或移除內容位置或編輯搜尋查詢。  <br/> |
 |變更 eDiscovery 系統管理員成員資格  <br/> |CaseAdminUpdated  <br/> |更新-eDiscoveryCaseAdmin  <br/> |您組織中的 eDiscovery 管理員清單已變更。 當 eDiscovery 管理員的清單取代為一組新的使用者時，就會記錄此活動。 如果新增或移除單一使用者，就會記錄 CaseAdminAdded 作業。  <br/> |
 |已變更的 eDiscovery 案例  <br/> |CaseUpdated  <br/> |Set-ComplianceCase  <br/> |電子檔探索案例已變更。 變更包括關閉開啟案例或開啟關閉的案例。  <br/> |
-|變更 eDiscovery 案例成員資格  <br/> |CaseMemberUpdated  <br/> |更新-ComplianceCaseMember  <br/> |電子檔探索案例的成員資格清單已變更。 當所有成員都取代為一組新的使用者時，就會記錄此活動。 如果新增或移除單一成員，則會記錄 CaseMemberAdded 或 CaseMemberRemoved 作業。  <br/> |
+|變更 eDiscovery 案例成員資格  <br/> |CaseMemberUpdated  <br/> |Update-ComplianceCaseMember  <br/> |電子檔探索案例的成員資格清單已變更。 當所有成員都取代為一組新的使用者時，就會記錄此活動。 如果新增或移除單一成員，則會記錄 CaseMemberAdded 或 CaseMemberRemoved 作業。  <br/> |
 |變更的搜尋許可權篩選  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |已變更搜尋許可權篩選。  <br/> |
 |已變更的 eDiscovery 案例保留變更搜尋查詢  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |已變更與 eDiscovery 案例相關聯的查詢型保留。 可能的變更包括編輯查詢或日期範圍以進行查詢型保留。  <br/> |
-|已下載內容搜尋預覽專案  <br/> |PreviewItemDownloaded  <br/> |不適用  <br/> |使用者透過按一下 [ **下載原始專案** ] 連結) 預覽搜尋結果，將專案下載到本機電腦 (。  <br/> |
-|列出的內容搜尋預覽專案  <br/> |PreviewItemListed  <br/> |不適用  <br/> |使用者按一下 [ **預覽搜尋結果** ] 來顯示 [預覽搜尋結果] 頁面，該頁面會從內容搜尋結果列出最多1000個專案。  <br/> |
-|已查看內容搜尋預覽專案  <br/> |PreviewItemRendered  <br/> |不適用  <br/> |EDiscovery 管理員會在預覽搜尋結果時按一下以查看專案。  <br/> |
+|已下載內容搜尋預覽專案  <br/> |PreviewItemDownloaded  <br/> |N/A  <br/> |使用者透過按一下 [ **下載原始專案** ] 連結) 預覽搜尋結果，將專案下載到本機電腦 (。  <br/> |
+|列出的內容搜尋預覽專案  <br/> |PreviewItemListed  <br/> |N/A  <br/> |使用者按一下 [ **預覽搜尋結果** ] 來顯示 [預覽搜尋結果] 頁面，該頁面會從內容搜尋結果列出最多1000個專案。  <br/> |
+|已查看內容搜尋預覽專案  <br/> |PreviewItemRendered  <br/> |N/A  <br/> |EDiscovery 管理員會在預覽搜尋結果時按一下以查看專案。  <br/> |
 |建立內容搜尋  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |已建立新的內容搜尋。  <br/> |
 |已建立 eDiscovery 系統管理員  <br/> |CaseAdminAdded  <br/> |載入 eDiscoveryCaseAdmin  <br/> |使用者已新增為組織中的 eDiscovery 系統管理員。  <br/> |
-|建立的 eDiscovery 案例  <br/> |CaseAdded  <br/> |新 Get-compliancecase  <br/> |已建立 eDiscovery 案例。 當案例建立時，您只需要為其命名。 其他與案例相關的工作，例如新增成員、建立保留，以及建立與案例相關聯的內容搜尋會導致記錄其他事件。  <br/> |
+|建立的 eDiscovery 案例  <br/> |CaseAdded  <br/> |New-ComplianceCase  <br/> |已建立 eDiscovery 案例。 當案例建立時，您只需要為其命名。 其他與案例相關的工作，例如新增成員、建立保留，以及建立與案例相關聯的內容搜尋會導致記錄其他事件。  <br/> |
 |已建立搜尋許可權篩選  <br/> |SearchPermissionCreated  <br/> |New-ComplianceSecurityFilter  <br/> |已建立搜尋許可權篩選。  <br/> |
 |針對 eDiscovery 案例保留建立搜尋查詢  <br/> |HoldCreated  <br/> |New-CaseHoldRule  <br/> |已建立與 eDiscovery 案例相關聯的查詢型保留。  <br/> |
 |刪除的內容搜尋  <br/> |SearchRemoved  <br/> |Remove-ComplianceSearch  <br/> |已刪除現有的內容搜尋。  <br/> |
@@ -103,15 +103,15 @@ ms.locfileid: "47357543"
 |已刪除的 eDiscovery 案例  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |電子檔探索案例已刪除。 在刪除案例之前，必須先移除與案例相關聯的任何保留。  <br/> |
 |已刪除的搜尋許可權篩選  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |已刪除搜尋許可權篩選。  <br/> |
 |已刪除電子檔探索案例保留的搜尋查詢  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |已刪除與 eDiscovery 案例相關聯的查詢型保留。 從保留中移除查詢通常是刪除保留的結果。 當刪除保留或保留查詢時，就會釋放保留的內容位置。  <br/> |
-|下載內容搜尋的匯出  <br/> |SearchExportDownloaded  <br/> |不適用  <br/> |使用者將內容搜尋的結果下載到本機電腦。 在下載搜尋結果之前，必須先啟動「 **內容搜尋** 」活動的「匯出」。  <br/> |
-|預覽內容搜尋的結果  <br/> |SearchPreviewed  <br/> |不適用  <br/> |使用者預覽內容搜尋的結果。  <br/> |
+|下載內容搜尋的匯出  <br/> |SearchExportDownloaded  <br/> |N/A  <br/> |使用者將內容搜尋的結果下載到本機電腦。 在下載搜尋結果之前，必須先啟動「 **內容搜尋** 」活動的「匯出」。  <br/> |
+|預覽內容搜尋的結果  <br/> |SearchPreviewed  <br/> |N/A  <br/> |使用者預覽內容搜尋的結果。  <br/> |
 |已清除的內容搜尋結果  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |使用者透過執行 **New-ComplianceSearchAction-Purge** 命令來清除內容搜尋的結果。  <br/> |
-|已移除內容搜尋的分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-New-compliancesearchaction  <br/> |「內容搜尋準備動作」 (，可為已刪除的「高級 eDiscovery) 準備搜尋結果。 如果準備動作尚未過去兩周，請從 Microsoft Azure 儲存體區域中刪除準備好進行高級 eDiscovery 的搜尋結果。 如果準備動作超過2周，則此事件表示只刪除對應的準備動作。  <br/> |
-|已移除內容搜尋的匯出  <br/> |RemovedSearchExported  <br/> |Remove-New-compliancesearchaction  <br/> |已刪除內容搜尋匯出動作。 如果匯出動作不是兩周以前，則已刪除上傳至 Microsoft Azure 儲存體區域的搜尋結果。 如果匯出動作超過2周，則此事件表示只刪除對應的「匯出」動作。  <br/> |
+|已移除內容搜尋的分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |「內容搜尋準備動作」 (，可為已刪除的「高級 eDiscovery) 準備搜尋結果。 如果準備動作尚未過去兩周，請從 Microsoft Azure 儲存體區域中刪除準備好進行高級 eDiscovery 的搜尋結果。 如果準備動作超過2周，則此事件表示只刪除對應的準備動作。  <br/> |
+|已移除內容搜尋的匯出  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |已刪除內容搜尋匯出動作。 如果匯出動作不是兩周以前，則已刪除上傳至 Microsoft Azure 儲存體區域的搜尋結果。 如果匯出動作超過2周，則此事件表示只刪除對應的「匯出」動作。  <br/> |
 |已從電子檔探索案例中移除成員  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |已移除使用者，成為 eDiscovery 案例的成員。  <br/> |
-|移除內容搜尋的預覽結果  <br/> |RemovedSearchPreviewed  <br/> |Remove-New-compliancesearchaction  <br/> |已刪除內容搜尋預覽動作。  <br/> |
-|已移除在內容搜尋中執行的清除動作  <br/> |RemovedSearchResultsPurged  <br/> |Remove-New-compliancesearchaction  <br/> |已刪除內容搜尋清除動作。  <br/> |
-|已移除搜尋報告  <br/> |SearchReportRemoved  <br/> |Remove-New-compliancesearchaction  <br/> |已刪除「內容搜尋匯出報告」動作。  <br/> |
+|移除內容搜尋的預覽結果  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |已刪除內容搜尋預覽動作。  <br/> |
+|已移除在內容搜尋中執行的清除動作  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |已刪除內容搜尋清除動作。  <br/> |
+|已移除搜尋報告  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |已刪除「內容搜尋匯出報告」動作。  <br/> |
 |開始分析內容搜尋  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |內容搜尋的結果是準備好在高級 eDiscovery 中進行分析。  <br/> |
 |已開始內容搜尋  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |已開始內容搜尋。 當您使用安全性 & 規範中心 GUI 建立或變更內容搜尋時，會自動啟動搜尋。 如果您使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** Cmdlet 來建立或變更搜尋，則必須執行 **Start-ComplianceSearch** 指令程式，以啟動搜尋。  <br/> |
 |已開始匯出內容搜尋  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |使用者匯出內容搜尋的結果。  <br/> |
@@ -163,40 +163,40 @@ ms.locfileid: "47357543"
 > [!TIP]
 > 下 **表的 [作業] 欄中** 的指令程式連結至 TechNet 的對應 Cmdlet 說明主題。 請移至 Cmdlet 說明主題，以取得每個 Cmdlet 可用參數的描述。 與 Cmdlet 搭配使用的參數和參數值，會包含在每個已記錄的 eDiscovery Cmdlet 活動的「審核記錄」專案中。 
   
-|**易記名稱**|**Operation (Cmdlet) **|**描述**|
+|**易記名稱**|**Operation (Cmdlet)**|**描述**|
 |:-----|:-----|:-----|
-|在 eDiscovery 案例中建立保留  <br/> |[New-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823813) <br/> |已針對 eDiscovery 案例建立保留。 您可以使用或不指定內容來源來建立保留。 如果指定內容來源，將會在審計記錄專案中加以識別。  <br/> |
-|已從 eDiscovery 案例刪除保留  <br/> |[Remove-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823814) <br/> |已刪除與 eDiscovery 案例相關聯的保留。 刪除保留會釋放保留中的所有內容位置。 刪除保留也會導致刪除與保留相關聯的案例保留規則 (請參閱下列 **Remove-CaseHoldRule**) 。  <br/> |
-|在 eDiscovery 案例中變更了保留  <br/> |[Set-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823815) <br/> |已變更與 eDiscovery 相關聯的保留。 可能的變更包括新增或移除內容位置或關閉 (停用) 保留。  <br/> |
-|針對 eDiscovery 案例保留建立搜尋查詢  <br/> |[New-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823816) <br/> |已建立與 eDiscovery 案例相關聯的查詢型保留。  <br/> |
-|已刪除電子檔探索案例保留的搜尋查詢  <br/> |[Remove-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823820) <br/> |已刪除與 eDiscovery 案例相關聯的查詢型保留。 從保留中移除查詢通常是刪除保留的結果。 當刪除保留或保留查詢時，就會釋放保留的內容位置。  <br/> |
-|已變更的 eDiscovery 案例保留變更搜尋查詢  <br/> |[Set-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823819) <br/> |已變更與 eDiscovery 案例相關聯的查詢型保留。 可能的變更包括編輯查詢或日期範圍以進行查詢型保留。  <br/> |
-|建立的 eDiscovery 案例  <br/> |[新 Get-compliancecase](https://go.microsoft.com/fwlink/p/?LinkId=823842) <br/> |已建立 eDiscovery 案例。 當案例建立時，您只需要為其命名。 其他與案例相關的工作，例如新增成員、建立保留，以及建立與案例相關聯的內容搜尋會導致記錄其他事件。  <br/> |
-|已刪除的 eDiscovery 案例  <br/> |[Remove-ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823844) <br/> |電子檔探索案例已刪除。 在刪除案例之前，必須先移除與案例相關聯的任何保留。  <br/> |
-|已變更的 eDiscovery 案例  <br/> |[Set-ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823846) <br/> |電子檔探索案例已變更。 變更包括關閉開啟案例或開啟關閉的案例。  <br/> |
-|新增成員至 eDiscovery 案例  <br/> |[載入 ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823848) <br/> |使用者已新增為 eDiscovery 案例的成員。 就像是案例的成員，使用者可以根據是否已獲指派必要許可權來執行各種案例相關的任務。  <br/> |
-|已從電子檔探索案例中移除成員  <br/> |[Remove-ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823849) <br/> |已移除使用者，成為 eDiscovery 案例的成員。  <br/> |
-|變更 eDiscovery 案例成員資格  <br/> |[更新-ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823850) <br/> |電子檔探索案例的成員資格清單已變更。 當所有成員都取代為一組新的使用者時，就會記錄此活動。 如果新增或移除單一成員，將會記錄 **ComplianceCaseMember** 或 **Remove-ComplianceCaseMember** 作業。  <br/> |
-|建立內容搜尋  <br/> |[New-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517935) <br/> |已建立新的內容搜尋。  <br/> |
-|刪除的內容搜尋  <br/> |[Remove-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517936) <br/> |已刪除現有的內容搜尋。  <br/> |
-|變更的內容搜尋  <br/> |[Set-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517937) <br/> |已變更現有的內容搜尋。 變更可包括新增或移除搜尋及編輯搜尋查詢的內容位置。  <br/> |
-|已開始內容搜尋  <br/> |[Start-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517938) <br/> |已開始內容搜尋。 當您使用安全性 & 規範中心 GUI 建立或變更內容搜尋時，會自動啟動搜尋。 如果您使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** Cmdlet 來建立或變更搜尋，則必須執行 **Start-ComplianceSearch** 指令程式，以啟動搜尋。  <br/> |
-|已停止內容搜尋  <br/> |[Stop-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517939) <br/> |已停止執行的內容搜尋。  <br/> |
-|建立內容搜尋動作  <br/> |[New-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=527971) <br/> |已建立內容搜尋動作。 內容搜尋動作包括預覽搜尋結果、匯出搜尋結果、在高級 eDiscovery 中準備搜尋結果以進行分析，以及永久刪除符合內容搜尋之搜尋準則的專案。  <br/> |
-|已刪除內容搜尋動作  <br/> |[Remove-New-compliancesearchaction](https://go.microsoft.com/fwlink/p/?LinkId=824027) <br/> |已刪除內容搜尋動作。  <br/> |
-|已建立搜尋許可權篩選  <br/> |[New-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617542) <br/> |已建立搜尋許可權篩選。  <br/> |
-|已刪除的搜尋許可權篩選  <br/> |[Remove-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617543) <br/> |已刪除搜尋許可權篩選。  <br/> |
-|變更的搜尋許可權篩選  <br/> |[Set-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617544) <br/> |已變更搜尋許可權篩選。  <br/> |
-|已建立 eDiscovery 系統管理員  <br/> |[載入 eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=798217) <br/> |使用者已新增為組織中的 eDiscovery 系統管理員。  <br/> |
-|刪除的 eDiscovery 系統管理員  <br/> |[Remove-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=823945) <br/> |已從您的組織中刪除 eDiscovery 系統管理員。  <br/> |
-|變更 eDiscovery 系統管理員成員資格  <br/> |[更新-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=823946) <br/> |您組織中的 eDiscovery 管理員清單已變更。 當 eDiscovery 管理員的清單取代為一組新的使用者時，就會記錄此活動。 新增或移除單一使用者時，會記錄 **eDiscoveryCaseAdmin** 或 **Remove-eDiscoveryCaseAdmin** 作業。  <br/> |
+|在 eDiscovery 案例中建立保留  <br/> |[New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy) <br/> |已針對 eDiscovery 案例建立保留。 您可以使用或不指定內容來源來建立保留。 如果指定內容來源，將會在審計記錄專案中加以識別。  <br/> |
+|已從 eDiscovery 案例刪除保留  <br/> |[Remove-CaseHoldPolicy](/powershell/module/exchange/remove-caseholdpolicy) <br/> |已刪除與 eDiscovery 案例相關聯的保留。 刪除保留會釋放保留中的所有內容位置。 刪除保留也會導致刪除與保留相關聯的案例保留規則 (請參閱下列 **Remove-CaseHoldRule**) 。  <br/> |
+|在 eDiscovery 案例中變更了保留  <br/> |[Set-CaseHoldPolicy](/powershell/module/exchange/set-caseholdpolicy) <br/> |已變更與 eDiscovery 相關聯的保留。 可能的變更包括新增或移除內容位置或關閉 (停用) 保留。  <br/> |
+|針對 eDiscovery 案例保留建立搜尋查詢  <br/> |[New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule) <br/> |已建立與 eDiscovery 案例相關聯的查詢型保留。  <br/> |
+|已刪除電子檔探索案例保留的搜尋查詢  <br/> |[Remove-CaseHoldRule](/powershell/module/exchange/remove-caseholdrule) <br/> |已刪除與 eDiscovery 案例相關聯的查詢型保留。 從保留中移除查詢通常是刪除保留的結果。 當刪除保留或保留查詢時，就會釋放保留的內容位置。  <br/> |
+|已變更的 eDiscovery 案例保留變更搜尋查詢  <br/> |[Set-CaseHoldRule](/powershell/module/exchange/set-caseholdrule) <br/> |已變更與 eDiscovery 案例相關聯的查詢型保留。 可能的變更包括編輯查詢或日期範圍以進行查詢型保留。  <br/> |
+|建立的 eDiscovery 案例  <br/> |[新 Get-compliancecase](/powershell/module/exchange/new-compliancecase) <br/> |已建立 eDiscovery 案例。 當案例建立時，您只需要為其命名。 其他與案例相關的工作，例如新增成員、建立保留，以及建立與案例相關聯的內容搜尋會導致記錄其他事件。  <br/> |
+|已刪除的 eDiscovery 案例  <br/> |[Remove-ComplianceCase](/powershell/module/exchange/remove-compliancecase) <br/> |電子檔探索案例已刪除。 在刪除案例之前，必須先移除與案例相關聯的任何保留。  <br/> |
+|已變更的 eDiscovery 案例  <br/> |[Set-ComplianceCase](/powershell/module/exchange/set-compliancecase) <br/> |電子檔探索案例已變更。 變更包括關閉開啟案例或開啟關閉的案例。  <br/> |
+|新增成員至 eDiscovery 案例  <br/> |[載入 ComplianceCaseMember](/powershell/module/exchange/add-compliancecasemember) <br/> |使用者已新增為 eDiscovery 案例的成員。 就像是案例的成員，使用者可以根據是否已獲指派必要許可權來執行各種案例相關的任務。  <br/> |
+|已從電子檔探索案例中移除成員  <br/> |[Remove-ComplianceCaseMember](/powershell/module/exchange/remove-compliancecasemember) <br/> |已移除使用者，成為 eDiscovery 案例的成員。  <br/> |
+|變更 eDiscovery 案例成員資格  <br/> |[更新-ComplianceCaseMember](/powershell/module/exchange/update-compliancecasemember) <br/> |電子檔探索案例的成員資格清單已變更。 當所有成員都取代為一組新的使用者時，就會記錄此活動。 如果新增或移除單一成員，將會記錄 **ComplianceCaseMember** 或 **Remove-ComplianceCaseMember** 作業。  <br/> |
+|建立內容搜尋  <br/> |[New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch) <br/> |已建立新的內容搜尋。  <br/> |
+|刪除的內容搜尋  <br/> |[Remove-ComplianceSearch](/powershell/module/exchange/remove-compliancesearch) <br/> |已刪除現有的內容搜尋。  <br/> |
+|變更的內容搜尋  <br/> |[Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch) <br/> |已變更現有的內容搜尋。 變更可包括新增或移除搜尋及編輯搜尋查詢的內容位置。  <br/> |
+|已開始內容搜尋  <br/> |[Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch) <br/> |已開始內容搜尋。 當您使用安全性 & 規範中心 GUI 建立或變更內容搜尋時，會自動啟動搜尋。 如果您使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** Cmdlet 來建立或變更搜尋，則必須執行 **Start-ComplianceSearch** 指令程式，以啟動搜尋。  <br/> |
+|已停止內容搜尋  <br/> |[Stop-ComplianceSearch](/powershell/module/exchange/stop-compliancesearch) <br/> |已停止執行的內容搜尋。  <br/> |
+|建立內容搜尋動作  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |已建立內容搜尋動作。 內容搜尋動作包括預覽搜尋結果、匯出搜尋結果、在高級 eDiscovery 中準備搜尋結果以進行分析，以及永久刪除符合內容搜尋之搜尋準則的專案。  <br/> |
+|已刪除內容搜尋動作  <br/> |[Remove-New-compliancesearchaction](/powershell/module/exchange/remove-compliancesearchaction) <br/> |已刪除內容搜尋動作。  <br/> |
+|已建立搜尋許可權篩選  <br/> |[New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) <br/> |已建立搜尋許可權篩選。  <br/> |
+|已刪除的搜尋許可權篩選  <br/> |[Remove-ComplianceSecurityFilter](/powershell/module/exchange/remove-compliancesecurityfilter) <br/> |已刪除搜尋許可權篩選。  <br/> |
+|變更的搜尋許可權篩選  <br/> |[Set-ComplianceSecurityFilter](/powershell/module/exchange/set-compliancesecurityfilter) <br/> |已變更搜尋許可權篩選。  <br/> |
+|已建立 eDiscovery 系統管理員  <br/> |[載入 eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) <br/> |使用者已新增為組織中的 eDiscovery 系統管理員。  <br/> |
+|刪除的 eDiscovery 系統管理員  <br/> |[Remove-eDiscoveryCaseAdmin](/powershell/module/exchange/remove-ediscoverycaseadmin) <br/> |已從您的組織中刪除 eDiscovery 系統管理員。  <br/> |
+|變更 eDiscovery 系統管理員成員資格  <br/> |[更新-eDiscoveryCaseAdmin](/powershell/module/exchange/update-ediscoverycaseadmin) <br/> |您組織中的 eDiscovery 管理員清單已變更。 當 eDiscovery 管理員的清單取代為一組新的使用者時，就會記錄此活動。 新增或移除單一使用者時，會記錄 **eDiscoveryCaseAdmin** 或 **Remove-eDiscoveryCaseAdmin** 作業。  <br/> |
    
 ## <a name="detailed-properties-for-ediscovery-activities"></a>EDiscovery 活動的詳細屬性
 
-下表說明當您按一下搜尋結果中所列 eDiscovery 活動的 [**詳細**資料] 頁面上的 [**詳細資訊**] 時所包含的屬性。 當您匯出「審核記錄」搜尋結果時，這些屬性也會包含在 CSV 檔案中。 EDiscovery 活動的審計記錄記錄不會包含下列每個詳細的屬性。 
+下表說明當您按一下搜尋結果中所列 eDiscovery 活動的 [**詳細** 資料] 頁面上的 [**詳細資訊**] 時所包含的屬性。 當您匯出「審核記錄」搜尋結果時，這些屬性也會包含在 CSV 檔案中。 EDiscovery 活動的審計記錄記錄不會包含下列每個詳細的屬性。 
   
 > [!TIP]
-> 當您匯出搜尋結果時，CSV 檔案會包含一個名為 **Detail**的欄，其中包含多重值屬性中下表所述的詳細屬性。 您可以使用 Excel 中的 Power Query 功能，將此欄分割成多個欄，使每個屬性都有自己的資料行。 這可讓您排序和篩選其中一個或多個屬性。 如需詳細資訊，請參閱 [搜尋審計記錄](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)檔中的「將搜尋結果匯出至檔案」一節。 
+> 當您匯出搜尋結果時，CSV 檔案會包含一個名為 **Detail** 的欄，其中包含多重值屬性中下表所述的詳細屬性。 您可以使用 Excel 中的 Power Query 功能，將此欄分割成多個欄，使每個屬性都有自己的資料行。 這可讓您排序和篩選其中一個或多個屬性。 如需詳細資訊，請參閱 [搜尋審計記錄](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)檔中的「將搜尋結果匯出至檔案」一節。 
   
 |**屬性**|**描述**|
 |:-----|:-----|

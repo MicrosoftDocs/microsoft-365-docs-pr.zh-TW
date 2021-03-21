@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 摘要：為您的 Office 365 測試環境設定及示範密碼雜湊同步處理並且登入。
-ms.openlocfilehash: 3c20d1997be2ff47f0b449cbba3afb1e6edcd59a
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 9c61745fe322dce4cb2b537b18963634a97c697a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487455"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921501"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>適用於 Office 365 測試環境的密碼雜湊同步處理
 
@@ -59,9 +59,9 @@ ms.locfileid: "48487455"
 
 在這個階段中，新增公用 DNS 網域，然後將其新增至您的訂閱。
 
-首先，請與您的公用 DNS 註冊提供者合作，以根據您目前的功能變數名稱建立新的公用 DNS 功能變數名稱，然後將其新增至您的訂閱。 建議使用 name **testlab <*您的公用網域* > **。 例如，如果您的公用功能變數名稱是** <span>contoso</span>.com**，請新增 public domain name： ** <span>testlab</span>. contoso.com**。
+首先，請與您的公用 DNS 註冊提供者合作，以根據您目前的功能變數名稱建立新的公用 DNS 功能變數名稱，然後將其新增至您的訂閱。 建議使用 name **testlab <*您的公用網域* >**。 例如，如果您的公用功能變數名稱是 **<span>contoso</span>.com**，請新增 public domain name： **<span>testlab</span>. contoso.com**。
   
-接下來，透過網域註冊程式，將 **<testlab*公用網域* > **網域新增至您的 Microsoft 365 試用版或付費訂閱。 這包含在 testlab 中新增額外的 DNS 記錄 **。 <*您的公用網域* > **網域。 如需詳細資訊，請參閱 [Add a domain To Microsoft 365](../admin/setup/add-domain.md)。
+接下來，透過網域註冊程式，將 **<testlab *公用網域* >** 網域新增至您的 Microsoft 365 試用版或付費訂閱。 這包含在 testlab 中新增額外的 DNS 記錄 **。 <*您的公用網域* >** 網域。 如需詳細資訊，請參閱 [Add a domain To Microsoft 365](../admin/setup/add-domain.md)。
 
 您產生的設定如下所示：
   
@@ -122,13 +122,13 @@ ms.locfileid: "48487455"
 
 15. 選取頁面底部的 [ **儲存** ]，然後選取 [ **關閉**]。
     
-接下來，使用 user1@testlab 測試登入訂閱的功能 **。 <*您的網功能變數名稱稱* > **使用者名稱使用者名稱：
+接下來，使用 user1@testlab 測試登入訂閱的功能 **。 <*您的網功能變數名稱稱* >** 使用者名稱使用者名稱：
 
 1. 從 APP1 登出，然後再次登入，這次指定不同的帳戶。
 
-2. 當系統提示您輸入使用者名稱和密碼時，請指定**user1@testlab。 <*您的功能變數名稱* > **和 user1 密碼。 您應該可以用 User1 的身分成功登入。
+2. 當系統提示您輸入使用者名稱和密碼時，請指定 **user1@testlab。 <*您的功能變數名稱* >** 和 user1 密碼。 您應該可以用 User1 的身分成功登入。
  
-請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。 
+請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是全域管理員。 因此，您不會看到 [管理員] 圖示選項。 
 
 您產生的設定如下所示：
 
@@ -150,4 +150,4 @@ ms.locfileid: "48487455"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

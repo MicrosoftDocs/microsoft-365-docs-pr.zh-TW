@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 內容傳遞網路 (CDN) 快速入門
-ms.openlocfilehash: e541b2ea63a69644de22329c45bd6963749964f7
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 3539ad1f11b27c60b5641976ae66a1480ef4be98
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456408"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921591"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 內容傳遞網路 (CDN) 快速入門
 
-您可以使用內建的 **Office 365 內容傳遞網路 (CDN) ** 來主控靜態資產 (影像、JavaScript、樣式表、WOFF 檔) ，以為您的 SharePoint 線上頁面提供更好的效能。 Office 365 CDN 透過將靜態資產快取到更靠近提出要求之瀏覽器的位置 (這有助於加速下載以及減少延遲)，藉此改善效能。 此外，Office 365 CDN 使用 HTTP/2 通訊協定，以提升壓縮和 HTTP 流水線。 Office 365 CDN 服務包含在 SharePoint Online 訂閱的一部分。
+您可以使用內建的 **Office 365 內容傳遞網路 (CDN)** 來主控靜態資產 (影像、JavaScript、樣式表、WOFF 檔) ，以為您的 SharePoint 線上頁面提供更好的效能。 Office 365 CDN 透過將靜態資產快取到更靠近提出要求之瀏覽器的位置 (這有助於加速下載以及減少延遲)，藉此改善效能。 此外，Office 365 CDN 使用 HTTP/2 通訊協定，以提升壓縮和 HTTP 流水線。 Office 365 CDN 服務包含在 SharePoint Online 訂閱的一部分。
 
 如需詳細資訊指引，請參閱 [使用 Office 365 Content 傳遞網路 (CDN) 與 SharePoint 線上](use-microsoft-365-cdn-with-spo.md)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "48456408"
 
 您可以使用 **網頁診斷程式 SharePoint 工具** 瀏覽器延伸名，輕鬆列出可以新增至 CDN 來源的 SharePoint 線上頁面中的資產。
 
-**SharePoint 工具的頁面診斷**功能是新的 Microsoft Edge (和 Chrome 瀏覽器的瀏覽器擴充 https://www.microsoft.com/edge) ，可分析 SharePoint 線上新式入口網站和傳統發佈網站頁面。 該工具會針對每個分析頁面提供一份報告，顯示頁面如何針對定義的效能準則組執行。 若要安裝及了解「適用於 SharePoint 的頁面診斷」工具，請造訪[使用適用於 SharePoint Online 的頁面診斷工具](https://aka.ms/perftool)。
+**SharePoint 工具的頁面診斷** 功能是新的 Microsoft Edge (和 Chrome 瀏覽器的瀏覽器擴充 https://www.microsoft.com/edge) ，可分析 SharePoint 線上新式入口網站和傳統發佈網站頁面。 該工具會針對每個分析頁面提供一份報告，顯示頁面如何針對定義的效能準則組執行。 若要安裝及了解「適用於 SharePoint 的頁面診斷」工具，請造訪[使用適用於 SharePoint Online 的頁面診斷工具](./page-diagnostics-for-spo.md)。
 
 當您在 SharePoint Online 頁面上為 SharePoint 工具執行頁面診斷時，您可以按一下 [ **診斷測試** ] 索引標籤，以查看 CDN 未裝載的資產清單。 這些資產會列于 [標題 **內容傳遞網路] (CDN) 檢查** （如下列螢幕擷取畫面所示）。
 
@@ -50,7 +50,7 @@ ms.locfileid: "48456408"
 
 ## <a name="cdn-overview"></a>CDN 概述
 
-Office 365 CDN 的設計是透過將經常存取的物件（例如影像和 javascript 檔案）散佈于一種高速通用網路上，減少頁面載入時間，並盡可能將主控物件的存取權盡可能接近使用者。 CDN 會從一個稱為 _來源_的位置提取您的資產。 來源可以是可透過 URL 存取的 SharePoint 網站、文件庫或資料夾。
+Office 365 CDN 的設計是透過將經常存取的物件（例如影像和 javascript 檔案）散佈于一種高速通用網路上，減少頁面載入時間，並盡可能將主控物件的存取權盡可能接近使用者。 CDN 會從一個稱為 _來源_ 的位置提取您的資產。 來源可以是可透過 URL 存取的 SharePoint 網站、文件庫或資料夾。
 
 Office 365 CDN 分分為兩種基本類型：
 
@@ -82,12 +82,12 @@ Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 Sharepoint Online 網頁診斷工具](https://aka.ms/perftool)
+[使用 Sharepoint Online 網頁診斷工具](./page-diagnostics-for-spo.md)
 
 [使用 Office 365 內容傳遞網路 (CDN) 搭配 SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
-[內容傳遞網路](https://aka.ms/o365cdns)
+[內容傳遞網路](./content-delivery-networks.md)
 
-[Office 365 的網路規劃和效能調整](https://aka.ms/tune)
+[Office 365 的網路規劃和效能調整](./network-planning-and-performance.md)
 
 [SharePoint 效能系列-Office 365 CDN 影片系列](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

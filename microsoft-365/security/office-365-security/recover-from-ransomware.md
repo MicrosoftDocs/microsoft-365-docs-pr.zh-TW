@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 120dd9ae71f04d6921fae95965f56f0a08f1280c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 21a6dc4cca2aac189740f2dba4ed10dc865792a6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289302"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922893"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 復原勒索軟體攻擊
 
@@ -31,7 +31,7 @@ ms.locfileid: "50289302"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-即使您採取每一種防範措施保護您的組織，您還是可以遭到 [勒索軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) 攻擊的受害人。 勒索軟體是大型企業，攻擊非常複雜。
+即使您採取每一種防範措施保護您的組織，您還是可以遭到 [勒索軟體](/windows/security/threat-protection/intelligence/ransomware-malware) 攻擊的受害人。 勒索軟體是大型企業，攻擊非常複雜。
 
 本文中的步驟可讓您最有可能復原資料，並停止感染的內部傳播。 在您開始之前，請考慮下列項目：
 
@@ -59,9 +59,9 @@ ms.locfileid: "50289302"
 
 若要停用信箱的其他類型的存取，請參閱：
 
-- [啟用或停用信箱的 MAPI](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi)。
+- [啟用或停用信箱的 MAPI](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi)。
 
-- [啟用或停用使用者 POP3 或 IMAP4 存取權](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
+- [啟用或停用使用者 POP3 或 IMAP4 存取權](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
 暫停 OneDrive 同步處理會協助保護您的雲端資料，使其不會受到可能受感染的裝置更新。 如需詳細資訊，請參閱 how [To Pause And Resume sync in OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)。
 
@@ -95,7 +95,7 @@ ms.locfileid: "50289302"
 
 在少數情況下，勒索軟體會刪除所有的電子郵件，您可能會復原已刪除的郵件。 如需詳細資訊，請參閱：
 
-- [復原刪除的郵件使用者的信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
+- [復原刪除的郵件使用者的信箱](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
 - [在 Windows 版 Outlook 復原已刪除的項目](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
@@ -105,7 +105,7 @@ ms.locfileid: "50289302"
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步驟 8 (選用) ：封鎖特定檔案副檔名 OneDrive 同步處理
 
-復原之後，您可以防止商務用戶端的 OneDrive 同步處理此勒索軟體所影響的檔案類型。 如需詳細資訊，請參閱 [Set-SPOTenantSyncClientRestriction](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
+復原之後，您可以防止商務用戶端的 OneDrive 同步處理此勒索軟體所影響的檔案類型。 如需詳細資訊，請參閱 [Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
 ## <a name="report-the-attack"></a>報告攻擊
 
@@ -139,9 +139,9 @@ ms.locfileid: "50289302"
 
 您可以使用數種方法中的其中一種，報告包含勒索軟體的網路釣魚郵件。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
+- [軟體](/windows/security/threat-protection/intelligence/ransomware-malware)
 
 - [勒索軟體回應-支付或不支付費用？](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 

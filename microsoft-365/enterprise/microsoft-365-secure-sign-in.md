@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: 規定使用者以多重要素驗證 (MFA) 和其他功能安全登入。
-ms.openlocfilehash: 8426d902ff8be8541b5d770af6d34cdf71868047
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c470a8bb1e67925ced929225796ac30191db247e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558523"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923133"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>保護 Microsoft 365 租用戶的使用者登入
 
@@ -37,14 +37,14 @@ ms.locfileid: "49558523"
 
 Windows 10 企業版的 Windows Hello 企業版在登入 Windows 裝置時，會使用加強雙因素驗證取代密碼。 雙因素是一種新的使用者認證類型，可與裝置和生物特徵或 PIN 相繫結。
 
-如需詳細資訊，請參閱 [ Windows Hello 企業版概觀](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)。
+如需詳細資訊，請參閱 [ Windows Hello 企業版概觀](/windows/security/identity-protection/hello-for-business/hello-overview)。
 
 
 ## <a name="azure-ad-password-protection"></a>Azure AD 密碼保護
 
 Azure AD 密碼保護可偵測並封鎖已知的弱式密碼及其變體，也會封鎖貴組織特有的額外弱式詞彙。 預設全域禁用密碼清單會自動套用至 Azure AD 租用戶中的所有使用者。 您可以在自訂禁用密碼清單中定義其他條目。 使用者變更或重設密碼時，系統會檢查這些禁用密碼清單，以強制使用強式密碼。
 
-如需詳細資訊，請參閱[設定 Azure AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)。
+如需詳細資訊，請參閱[設定 Azure AD 密碼保護](/azure/active-directory/authentication/concept-password-ban-bad)。
 
 ## <a name="mfa"></a>MFA
 
@@ -52,7 +52,7 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 
 ![正確的密碼加上其他驗證則可導致順利登入](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-使用 MFA 的第一步是***要求所有系統管理員帳戶 (亦即授權帳戶) 都使用 MFA** _。
+使用 MFA 的第一步是 ***要求所有系統管理員帳戶 (亦即授權帳戶) 都使用 MFA***。
 
 除了這個第一步，Microsoft 建議要求所有使用者都使用 MFA。
 
@@ -60,20 +60,20 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 
 | 方案 | 建議 |
 |---------|---------|
-|所有的 Microsoft 365 方案（不含 Azure AD Premium P1 或 P2 授權）     |[在 Azure AD 中啟用安全性預設](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設包含了適用於使用者和系統管理員的 MFA。   |
-|Microsoft 365 E3 （含 Azure AD Premium P1 授權）     | 使用[常見的條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br>- [要求系統管理員使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求所有使用者使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|所有的 Microsoft 365 方案（不含 Azure AD Premium P1 或 P2 授權）     |[在 Azure AD 中啟用安全性預設](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設包含了適用於使用者和系統管理員的 MFA。   |
+|Microsoft 365 E3 （含 Azure AD Premium P1 授權）     | 使用[常見的條件式存取原則](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br>- [要求系統管理員使用 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求所有使用者使用 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [封鎖舊版驗證](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 （含 Azure AD Premium P2 授權）     | 利用 Azure AD Identity Protection，藉由建立下列兩種原則來開始實作 Microsoft [建議的一組條件式存取和相關原則](../security/office-365-security/identity-access-policies.md)：<br> - [登入風險為中或高時，需要 MFA](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高風險使用者必須變更密碼](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### <a name="security-defaults"></a>安全性預設
 
-安全性預設是 2019 年 10 月 21 日之後所建立 Microsoft 365 和 Office 365 付費或試用版訂用帳戶的新功能。 這些訂用帳戶會開啟安全性預設，而 _*_要求所有使用者都必須使用 MFA 與 Microsoft Authenticator 應用程式_*_。
+安全性預設是 2019 年 10 月 21 日之後所建立 Microsoft 365 和 Office 365 付費或試用版訂用帳戶的新功能。 這些訂用帳戶會開啟安全性預設，而 ***要求所有使用者都必須使用 MFA 與 Microsoft Authenticator 應用程式***。
  
 使用者有 14 天的時間可以從其智慧型手機向 Microsoft Authenticator 應用程式註冊 MFA，時間從啟用安全性預設後使用者首次登入時起算。 14 天過後，使用者就無法登入，除非其完成 MFA 註冊。
 
 安全性預設可確保所有組織都具備預設啟用的使用者登入基本層級安全性。 您可以停用安全性預設，改為使用 MFA 與條件式存取原則或改為使用個別帳戶。
 
-如需詳細資訊，請參閱這個[安全性預設概觀](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
+如需詳細資訊，請參閱這個[安全性預設概觀](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
 
 ### <a name="conditional-access-policies"></a>條件式存取原則
 
@@ -87,7 +87,7 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 
 [條件式存取] 需有 Azure AD Premium P1 授權，已附加在 Microsoft 365 E3 和 E5 套裝中。
 
-如需詳細資訊，請參閱這個[條件式存取概觀](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
+如需詳細資訊，請參閱這個[條件式存取概觀](/azure/active-directory/conditional-access/overview)。
 
 ### <a name="using-these-methods-together"></a>共同使用這些方法
 
@@ -100,9 +100,9 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 
 下表顯示啟用 MFA 與安全性預設和條件式存取原則的結果。
 
-| Method | 啟用 | 停用 | 額外驗證方法 |
+| 方法 | 啟用 | 停用 | 額外驗證方法 |
 |:-------|:-----|:-------|:-------|
-| _ *安全性預設**  | 無法使用條件式存取原則 | 可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
+| **安全性預設**  | 無法使用條件式存取原則 | 可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
 | **條件式存取原則** | 如果已啟用任何原則，則無法啟用安全性預設 | 如果已停用所有原則，則可啟用安全性預設  | 在 MFA 註冊期間由使用者指定  |
 ||||
 
@@ -137,16 +137,16 @@ Microsoft 強烈建議您在組織設定並推出身分識別和裝置存取原�
 | 調查可疑事件，並使用系統管理動作加以解決 | 您可以使用安全性事件的相關資訊來調查風險事件。基本工作流程可用於追蹤調查及啟動修復動作，例如密碼重設。 |
 |||
 
-請參閱 [Azure AD Identity Protection 的相關詳細資訊](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)。
+請參閱 [Azure AD Identity Protection 的相關詳細資訊](/azure/active-directory/active-directory-identityprotection)。
 
-請參閱[啟用 Azure AD Identity Protection 的步驟](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)。
+請參閱[啟用 Azure AD Identity Protection 的步驟](/azure/active-directory/active-directory-identityprotection-enable)。
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>適用於 MFA 和身分識別登入的系統管理員技術資源
 
 - [Microsoft 365 適用的 MFA](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 - [Microsoft 365 的身分識別藍圖](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD 訓練影片](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [設定 Azure AD Multi-Factor Authentication 註冊原則](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+- [設定 Azure AD Multi-Factor Authentication 註冊原則](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [身分識別與裝置存取設定](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>下一步

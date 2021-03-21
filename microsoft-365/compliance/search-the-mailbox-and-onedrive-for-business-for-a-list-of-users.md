@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用內容搜尋和本文中的腳本，針對使用者群組搜尋商務網站的信箱和 OneDrive。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e3a10913cc4d8618e3d25bdf34e30c9d55a43324
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 51e668438c6016a0c5f2c914dc2b2e86cc56f49e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357795"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922465"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
 
@@ -44,13 +44,13 @@ ms.locfileid: "47357795"
 
 第一步是安裝 SharePoint 線上管理命令介面。 您不需要在此程式中使用命令介面，但必須安裝它，因為它包含您在步驟3中執行之腳本所需的必要條件。 這些必要條件允許腳本與 SharePoint Online 進行通訊，以取得商務網站 OneDrive 的 URLs。
   
-移至 [設定 SharePoint 線上管理命令介面 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318) ，並執行步驟1和步驟2安裝 SharePoint 線上管理命令介面。
+移至 [設定 SharePoint 線上管理命令介面 Windows PowerShell 環境](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) ，並執行步驟1和步驟2安裝 SharePoint 線上管理命令介面。
   
 ## <a name="step-2-generate-a-list-of-users"></a>步驟2：產生使用者清單
 
 步驟3中的腳本會建立內容搜尋，以搜尋信箱及 OneDrive 帳戶清單中的使用者。 您可以只輸入文字檔中的電子郵件地址，也可以在 Windows PowerShell 中執行命令，以取得電子郵件地址的清單，並將其儲存至相同資料夾中的檔案 (，您將在步驟 3) 中儲存腳本。
   
-以下是 [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) 命令，您可以 runt 以取得組織中所有使用者的電子郵件地址清單，並將其儲存至名為的文字檔 `Users.txt` 。 
+以下是 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 命令，您可以 runt 以取得組織中所有使用者的電子郵件地址清單，並將其儲存至名為的文字檔 `Users.txt` 。 
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
@@ -177,7 +177,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. 當系統提示您輸入認證時，請輸入您的電子郵件地址和密碼，然後按一下 **[確定]**。 
     
-5. 當腳本提示時，請輸入下列資訊。 輸入每一條資訊，然後按 **enter**鍵。
+5. 當腳本提示時，請輸入下列資訊。 輸入每一條資訊，然後按 **enter** 鍵。
     
     - MySite 網域的名稱。 
     
@@ -187,4 +187,4 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
     - 搜尋查詢 (將此專案保持空白，以傳回內容位置) 中的所有專案。
     
-    腳本會為商務網站的每個 OneDrive 取得 URLs，然後建立並啟動搜尋。 您可以在安全性 & 規範中心」中執行 **Get-ComplianceSearch** Cmdlet PowerShell 以顯示搜尋統計資料和結果，也可以前往安全性 & 規範中心的「 **內容搜尋** 」頁面，以查看搜尋的相關資訊。 
+    腳本會為商務網站的每個 OneDrive 取得 URLs，然後建立並啟動搜尋。 您可以在安全性 & 規範中心」中執行 **Get-ComplianceSearch** Cmdlet PowerShell 以顯示搜尋統計資料和結果，也可以前往安全性 & 規範中心的「 **內容搜尋** 」頁面，以查看搜尋的相關資訊。

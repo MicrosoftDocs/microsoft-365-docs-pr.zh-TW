@@ -14,14 +14,14 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: ac8e4b8cdcdfd4d2de0c48a22500338c7a8480a8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454168"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921513"
 ---
-# <a name="edit-an-existing-topic"></a>編輯現有主題 
+# <a name="edit-an-existing-topic"></a>編輯現有的主題 
 
 </br>
 
@@ -38,7 +38,7 @@ ms.locfileid: "50454168"
 
 若要編輯現有的主題，您必須：
 - 具有 Viva 主題授權。
-- 具有 [**可建立或編輯主題的人員**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)許可權。 知識系統管理員可以在 Viva 主題主題許可權設定中，將此許可權授與使用者。 
+- 具有 [**可建立或編輯主題的人員**](./topic-experiences-user-permissions.md)許可權。 知識系統管理員可以在 Viva 主題主題許可權設定中，將此許可權授與使用者。 
 
 > [!Note] 
 > 有權管理主題中心主題的使用者 (知識管理員) 已具備建立及編輯主題的許可權。
@@ -130,13 +130,6 @@ ms.locfileid: "50454168"
 
 
 ## <a name="see-also"></a>請參閱
-
-
-
-  
-
-
-
 
 
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 稽核記錄保留原則是 Microsoft 365 中新增的「進階稽核」功能的一部分。 稽核記錄保留原則可讓您指定要在組織中保留稽核記錄的時間長度。
-ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 53449b6b83373eb2f749a4547845866dbea4a2af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712043"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922849"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理稽核記錄保留原則
 
@@ -104,7 +104,7 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 
 
 > [!IMPORTANT]
-> 若使用 **New UnifiedAuditLogRetentionPolicy** Cmdlet，則可以為儀表版中的 **[建立稽核保留原則]** 工具中不可用的記錄類型或活動建立稽核記錄保留原則。 在這種情況下，您將無法從儀表板中的 **[稽核保留原則]** 中編輯原則 (例如，變更保留期或新增和移除活動)。 您只能在 [合規性中心] 中檢視及刪除原則。 若要編輯策略，必須在安全性與合規性中心 PowerShell 中使用[Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet。<br/><br/>**提示：** 彈出式頁面頂端會顯示一則訊息，指出必須使用 PowerShell 編輯的原則。
+> 若使用 **New UnifiedAuditLogRetentionPolicy** Cmdlet，則可以為儀表版中的 **[建立稽核保留原則]** 工具中不可用的記錄類型或活動建立稽核記錄保留原則。 在這種情況下，您將無法從儀表板中的 **[稽核保留原則]** 中編輯原則 (例如，變更保留期或新增和移除活動)。 您只能在 [合規性中心] 中檢視及刪除原則。 若要編輯策略，必須在安全性與合規性中心 PowerShell 中使用[Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet。<br/><br/>**提示：** 彈出式頁面頂端會顯示一則訊息，指出必須使用 PowerShell 編輯的原則。
 
 ### <a name="delete-policies-in-the-dashboard"></a>在儀表板中刪除原則
 
@@ -118,7 +118,7 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 
 請依照以下步驟，在 PowerShell 中建立稽核記錄保留原則：
 
-1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 執行下列命令以建立稽核記錄保留原則。
 
@@ -142,11 +142,11 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -RecordTypes AzureActiveDirectoryStsLogon -Operations UserLoggedIn -UserIds admin@contoso.onmicrosoft.com -RetentionDuration SixMonths -Priority 25
 ```
 
-如需詳細資訊，請參閱 [New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy)。
+如需詳細資訊，請參閱 [New-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/new-unifiedauditlogretentionpolicy)。
 
 ### <a name="view-policies-in-powershell"></a>在 PowerShell 中查看原則
 
-在安全性與合規性中心 PowerShell 中使用 [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy) Cmdlet 來檢視稽核記錄保留原則。
+在安全性與合規性中心 PowerShell 中使用 [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) Cmdlet 來檢視稽核記錄保留原則。
 
 以下的範例命令可用來顯示組織中所有的稽核記錄保留原則設定。 此命令會將原則的優先順序從最高到最低排序。
 
@@ -159,11 +159,11 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ### <a name="edit-policies-in-powershell"></a>在 PowerShell 中編輯原則
 
-在安全性與合規性中心 PowerShell 中使用 [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) Cmdlet 來編輯現有的稽核記錄保留原則。
+在安全性與合規性中心 PowerShell 中使用 [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) Cmdlet 來編輯現有的稽核記錄保留原則。
 
 ### <a name="delete-policies-in-powershell"></a>在 PowerShell 中刪除原則
 
-在安全性與合規性中心 PowerShell 中使用 [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) Cmdlet 來刪除稽核記錄保留原則。 從貴組織中移除原則可能需要多達 30 分鐘的時間。
+在安全性與合規性中心 PowerShell 中使用 [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) Cmdlet 來刪除稽核記錄保留原則。 從貴組織中移除原則可能需要多達 30 分鐘的時間。
 
 ## <a name="more-information"></a>其他資訊
 

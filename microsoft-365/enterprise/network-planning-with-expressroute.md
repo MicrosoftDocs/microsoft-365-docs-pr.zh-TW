@@ -1,5 +1,5 @@
 ---
-title: 使用 ExpressRoute for Office 365 進行網路規劃
+title: 使用 Office 365 ExpressRoute 進行網路規劃
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,14 +20,14 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: 在本文中，您將瞭解 Office 365 的 Azure ExpressRoute，以及如何使用它進行網路規劃。
-ms.openlocfilehash: 7159640adeae1b4a4ff364683f939a97b6e06a92
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 440d4fafadd7e9b504dc4ffdac1123a2956ed798
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688570"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923573"
 ---
-# <a name="network-planning-with-expressroute-for-office-365"></a>使用 ExpressRoute for Office 365 進行網路規劃
+# <a name="network-planning-with-expressroute-for-office-365"></a>使用 Office 365 ExpressRoute 進行網路規劃
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
@@ -40,7 +40,7 @@ Azure ExpressRoute 會將直接路徑新增至 Microsoft 資料中心內的 Offi
 |**網路規劃的差異**|**網際網路網路連線**|**ExpressRoute 網路連接**|
 |:-----|:-----|:-----|
 | 存取必要的網際網路服務，包含;  <br/>  DNS 名稱解析  <br/>  憑證吊銷驗證  <br/>  內容傳遞網路（CDNs）  <br/> |是  <br/> |對 Microsoft 所擁有的 DNS 和/或 CDN 基礎結構的要求可能會使用 ExpressRoute 網路。  <br/> |
-| 存取 Office 365 服務，包含;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  商務用 Skype Online  <br/>  瀏覽器中的 Office  <br/>  Office 365 入口網站和驗證  <br/> |是，所有的應用程式和功能  <br/> |是的， [特定的應用程式和功能](https://aka.ms/o365endpoints) <br/> |
+| 存取 Office 365 服務，包含;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  商務用 Skype Online  <br/>  瀏覽器中的 Office  <br/>  Office 365 入口網站和驗證  <br/> |是，所有的應用程式和功能  <br/> |是的， [特定的應用程式和功能](./urls-and-ip-address-ranges.md) <br/> |
 |周邊環境中的內部部署安全性。  <br/> |是  <br/> |是  <br/> |
 |高可用性規劃。  <br/> |容錯移轉至備用網際網路網路連線  <br/> |容錯移轉至備用的 ExpressRoute 連接  <br/> |
 |與可預測網路設定檔的直接連線。  <br/> |否  <br/> |是  <br/> |
@@ -52,7 +52,7 @@ Azure ExpressRoute 會將直接路徑新增至 Microsoft 資料中心內的 Offi
 
 如果您使用現有的 Azure ExpressRoute 電路，而且想要透過此線路新增 Office 365 連線，您應該查看電路數目、出局位置和電路大小，以確保其符合您的 Office 365 使用量的需求。 大多數的客戶都需要額外的頻寬，許多需要額外的電路。
   
-若要透過現有 Azure ExpressRoute 電路來啟用 Office 365 的存取權，請 [設定路由篩選器](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) ，以確保 Office 365 服務可供存取。
+若要透過現有 Azure ExpressRoute 電路來啟用 Office 365 的存取權，請 [設定路由篩選器](/azure/expressroute/how-to-routefilter-portal) ，以確保 Office 365 服務可供存取。
   
 Azure ExpressRoute 訂閱是以客戶為中心，這意味著訂閱與客戶密切相關。 身為客戶，您可以有多個 Azure ExpressRoute 電路，而且可以透過這些電路存取許多 Microsoft 雲端資源。 例如，您可以選擇透過一對冗余 Azure ExpressRoute 電路來存取 Azure 主控的虛擬機器、Office 365 測試租使用者和 Office 365 生產租使用者。
   
@@ -76,13 +76,13 @@ Azure ExpressRoute 訂閱是以客戶為中心，這意味著訂閱與客戶密�
   
 當您擁有包括所有網路應用程式的預估基準時，試驗 Office 365 搭配一個小型群組，其中包含組織中人員的不同設定檔，以決定實際使用量，並使用這兩個度量單位來估計每個辦公室位置所需的頻寬量。 如果在測試中發現任何延遲或 TCP 擁塞問題，您可能需要將出口移近離使用 Office 365 的人員，或移除密集的網路掃描（如 SSL 解密/檢查）。
   
-建議使用哪種類型的網路處理的所有建議，適用于 ExpressRoute 和網際網路電路。 在我們的 [效能調整網站](https://aka.ms/tune)上，其餘的指導方針也是如此。
+建議使用哪種類型的網路處理的所有建議，適用于 ExpressRoute 和網際網路電路。 在我們的 [效能調整網站](./network-planning-and-performance.md)上，其餘的指導方針也是如此。
   
 ## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>將安全性控制套用至 Office 365 案例的 Azure ExpressRoute
 
 保護 Azure ExpressRoute 連線能力的方式，會從與保護網際網路連線的原則相同。 許多客戶選擇以 ExpressRoute 路徑來部署網路和周邊控制，將其內部部署網路連接至 Office 365 和其他 Microsoft 雲端。 這些控制項可能包括防火牆、應用程式 proxy、資料洩漏防護、入侵偵測、入侵防護系統等等。 在許多情況下，客戶會將不同層級的控制套用到從內部部署移至 Microsoft 的流量，與從 Microsoft 發起的流量，到客戶的內部部署網路，而不是從內部部署前往一般網際網路目的地的流量。
   
-以下是幾個整合安全性的範例，其中包含您選擇要部署的 [ExpressRoute 連接模型](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) 。
+以下是幾個整合安全性的範例，其中包含您選擇要部署的 [ExpressRoute 連接模型](/azure/expressroute/expressroute-connectivity-models) 。
 
 |**ExpressRoute 整合選項**|**網路安全性周邊模型**|
 |:-----|:-----|
@@ -127,9 +127,9 @@ Woodgrove 的現有基礎結構是可靠的，而且可以處理額外的工作�
   
 ### <a name="service-availability"></a>服務可用性
   
-- Office 365 服務是由完善定義的 [服務層級協定](https://technet.microsoft.com/library/office-365-service-level-agreement.aspx)所涵蓋，其中包含個別服務的正常運作時間和可用性衡量標準。 Office 365 可維護這類高服務可用性層級的原因之一，就是在使用全域 Microsoft 網路的眾多 Microsoft 資料中心之間進行無縫容錯移轉的個別元件。 此容錯移轉可從資料中心和網路延伸至多個網際網路出局點，並可透過使用服務的人員觀點順利地進行容錯移轉。
+- Office 365 服務是由完善定義的 [服務層級協定](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement)所涵蓋，其中包含個別服務的正常運作時間和可用性衡量標準。 Office 365 可維護這類高服務可用性層級的原因之一，就是在使用全域 Microsoft 網路的眾多 Microsoft 資料中心之間進行無縫容錯移轉的個別元件。 此容錯移轉可從資料中心和網路延伸至多個網際網路出局點，並可透過使用服務的人員觀點順利地進行容錯移轉。
 
-- ExpressRoute 會在 Microsoft 網路 Edge 和 ExpressRoute 提供者或夥伴基礎結構之間，于個別專用線路上 [提供99.9% 的可用性 SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_0/) 。 這些服務層級是在 ExpressRoute 電路層級套用，此層級是由 [兩個獨立的互連](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) 網路設備和每個對等位置中的網路提供者設備兩者所組成。
+- ExpressRoute 會在 Microsoft 網路 Edge 和 ExpressRoute 提供者或夥伴基礎結構之間，于個別專用線路上 [提供99.9% 的可用性 SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_0/) 。 這些服務層級是在 ExpressRoute 電路層級套用，此層級是由 [兩個獨立的互連](/azure/expressroute/expressroute-introduction) 網路設備和每個對等位置中的網路提供者設備兩者所組成。
 
 ### <a name="provider-availability"></a>提供者可用性
   
@@ -182,16 +182,16 @@ Woodgrove Bank 上的網路設定是根據幾個重要的原則建立的：
   
 建議您不要將網際網路當作備份設定使用。 這會中斷 Woodgrove 的可靠性原則，並使用連線來產生不一致的經驗。 此外，請務必手動設定，以進行容錯移轉，以考慮已設定的 BGP 播發、NAT 設定、DNS 設定及 proxy 設定。 增加的容錯移轉複雜性可增加復原的時間，並降低其診斷及疑難排解所涉及之步驟的能力。
   
-仍有關于如何規劃及實施流量管理或 Azure ExpressRoute 的問題？ 請閱讀我們 [網路和效能指導](https://aka.ms/tune) 或 [Azure ExpressRoute 常見問題](https://azure.microsoft.com/documentation/articles/expressroute-faqs/)的其餘部分。
+仍有關于如何規劃及實施流量管理或 Azure ExpressRoute 的問題？ 請閱讀我們 [網路和效能指導](./network-planning-and-performance.md) 或 [Azure ExpressRoute 常見問題](/azure/expressroute/expressroute-faqs)的其餘部分。
   
 ## <a name="working-with-azure-expressroute-providers"></a>使用 Azure ExpressRoute 提供者
 <a name="BKMK_high-availability"> </a>
 
-根據頻寬、延遲、安全性和高可用性規劃，選擇電路的位置。 知道您想要讓電路取得的最佳位置之後，即可透過 [地區查看目前的提供者清單](https://azure.microsoft.com/documentation/articles/expressroute-locations/)。
+根據頻寬、延遲、安全性和高可用性規劃，選擇電路的位置。 知道您想要讓電路取得的最佳位置之後，即可透過 [地區查看目前的提供者清單](/azure/expressroute/expressroute-locations)。
   
 請與您的提供者或提供者合作，以選取最佳連線選項、點對點、多點或主控。 請記住，只要頻寬和其他多餘元件支援您的路由和高可用性設計，您就可以混合和比對連線選項。
   
-您可以使用下列短連結返回這裡：[https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+您可以使用下列短連結返回這裡：[https://aka.ms/planningexpressroute365]()
   
 ## <a name="related-topics"></a>相關主題
 <a name="BKMK_high-availability"> </a>

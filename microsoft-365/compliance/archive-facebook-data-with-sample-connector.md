@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何設定 & 使用 Microsoft 365 規範中心內的連接器，將 & 封存資料從 Facebook 商務版頁面匯入至 Microsoft 365。
-ms.openlocfilehash: df86897defa92788399f704c53c00ebb9e4f4269
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 616466a3af83c1558184526aa463f68c10ef9e70
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790147"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921733"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>設定連接器以封存 Facebook 資料 (預覽) 
 
@@ -45,7 +45,7 @@ ms.locfileid: "49790147"
 
 - Facebook 商務頁面的連接器可以一天內匯入200000項總計。 如果一天內有超過200000的 Facebook 商務專案，將不會將這些專案匯入至 Microsoft 365。
 
-- 在步驟 5) 中，設定 Microsoft 365 規範中心 (中的自訂連接器的使用者，必須在 Exchange Online 中指派信箱匯入匯出角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [  [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟 5) 中，設定 Microsoft 365 規範中心 (中的自訂連接器的使用者，必須在 Exchange Online 中指派信箱匯入匯出角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [  [建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步驟1：在 Azure Active Directory 中建立應用程式
 

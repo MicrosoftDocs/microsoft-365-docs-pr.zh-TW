@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
 description: 瞭解如何將促銷代碼套用至您的 Microsoft 365 訂閱，以降低價格，以及如何在發生錯誤時對促銷代碼進行疑難排解。
-ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c526d5fd44db5e653f79c4987a35c72cdd6fdcad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646736"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921753"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>使用您的促銷代碼來降低價格
 
@@ -73,8 +73,8 @@ ms.locfileid: "48646736"
   
 ## <a name="related-articles"></a>相關文章
 
-[從免費試用版購買訂閱](buy-a-subscription-from-your-free-trial.md)
+[從免費試用版購買訂閱](./try-or-buy-microsoft-365.md)
   
-[購買其他訂閱](buy-another-subscription.md)
+[購買其他訂閱](./try-or-buy-microsoft-365.md)
   
 [購買或編輯附加元件](buy-or-edit-an-add-on.md)

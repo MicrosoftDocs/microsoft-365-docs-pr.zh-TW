@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 本文說明 SharePoint 線上中啟用 SharePoint 發佈功能的導覽選項網站。
-ms.openlocfilehash: 86cefc60a26687835fd6a88de7f249143811de4f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b5989bf26ebf7bb1452f983af89a6e6739821d53
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695590"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923621"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online 的導覽選項
 
@@ -39,7 +39,7 @@ ms.locfileid: "46695590"
 
 導覽提供者設定會大幅影響整個網站的效能，而且必須慎重考慮，以挑選流覽提供者和設定，以有效地伸縮 SharePoint 網站的需求。 有兩個現成的導覽提供者和自訂導覽實現。
 
-**如果您開啟網站的結構式流覽**快取，則第一個選項（[**結構導覽**](#using-structural-navigation-in-sharepoint-online)）是 Sharepoint Online for 傳統 SharePoint 網站中的建議流覽選項。 此導覽提供者會顯示目前網站底下的流覽專案，並選擇性地顯示目前網站及其同輩。 它提供額外的功能，例如安全性修整和網站結構列舉。 如果停用快取，這會對效能及擴充性產生負面影響，而且可能會受到節流。
+**如果您開啟網站的結構式流覽** 快取，則第一個選項（[**結構導覽**](#using-structural-navigation-in-sharepoint-online)）是 Sharepoint Online for 傳統 SharePoint 網站中的建議流覽選項。 此導覽提供者會顯示目前網站底下的流覽專案，並選擇性地顯示目前網站及其同輩。 它提供額外的功能，例如安全性修整和網站結構列舉。 如果停用快取，這會對效能及擴充性產生負面影響，而且可能會受到節流。
 
 第二個選項是 [**managed (中繼資料) 導覽**](#using-managed-navigation-and-metadata-in-sharepoint-online)）代表使用受管理的中繼資料字片語流覽專案。 建議您先停用安全修整，除非需要。 啟用此導覽提供者的安全性調整為安全的預設設定;不過，許多網站不需要安全性調整的額外負荷，因為導覽元素通常對網站的所有使用者都是一致的。 使用建議的設定來停用安全修整時，此導覽提供者不需要列舉網站結構，高擴充性會影響到可接受的效能。
 
@@ -52,7 +52,7 @@ ms.locfileid: "46695590"
 |結構導覽  |受管理導覽  |搜尋導向導覽  |自訂導覽提供者  |
 |---------|---------|---------|---------|
 |優<br/><br/>易於維護<br/>已修整安全性<br/>在內容變更時于24小時內自動更新<br/>     |優<br/><br/>易於維護<br/>|優<br/><br/>已修整安全性<br/>新增網站時自動更新<br/>快速載入時間和本機快取導覽結構<br/>|優<br/><br/>可用選項的更寬選擇<br/>正確使用快取時的快速載入<br/>許多選項適用于快速回應頁面設計<br/>|
-|缺點：<br/><br/>**停用緩衝時影響效能**<br/>受制于節流<br/>|缺點：<br/><br/>不會自動更新以反映網站結構<br/>在**啟用安全修整**或流覽流覽結構複雜時影響效能<br/>|缺點：<br/><br/>不能輕鬆地訂購網站<br/>需要自訂主版頁面 (所需的技術技能) <br/>|缺點：<br/><br/>需要自訂開發<br/>需要儲存外部資料源/快取（例如 Azure）<br/>|
+|缺點：<br/><br/>**停用緩衝時影響效能**<br/>受制于節流<br/>|缺點：<br/><br/>不會自動更新以反映網站結構<br/>在 **啟用安全修整** 或流覽流覽結構複雜時影響效能<br/>|缺點：<br/><br/>不能輕鬆地訂購網站<br/>需要自訂主版頁面 (所需的技術技能) <br/>|缺點：<br/><br/>需要自訂開發<br/>需要儲存外部資料源/快取（例如 Azure）<br/>|
 
 網站最適合的選項取決於您的網站需求和您的技術能力。 如果您想要在內容變更時自動更新的易於設定導覽提供者，則 [啟用](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) 快取的結構導覽是一個不錯的選擇。
 
@@ -61,7 +61,7 @@ ms.locfileid: "46695590"
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>在 SharePoint Online 中分析導覽效能
 
-[SharePoint 工具的頁面診斷](https://aka.ms/perftool)功能是 Microsoft Edge 和 Chrome 瀏覽器的瀏覽器擴充，可分析線上新式入口網站與傳統發佈網站頁面的 SharePoint。 此工具僅適用于線上 SharePoint，無法在 SharePoint 系統] 頁面上使用。
+[SharePoint 工具的頁面診斷](./page-diagnostics-for-spo.md)功能是 Microsoft Edge 和 Chrome 瀏覽器的瀏覽器擴充，可分析線上新式入口網站與傳統發佈網站頁面的 SharePoint。 此工具僅適用于線上 SharePoint，無法在 SharePoint 系統] 頁面上使用。
 
 工具會針對每個已分析的頁面產生報表，顯示頁面如何針對預先定義的規則集執行，並在測試結果超出基線值時顯示詳細資訊。 SharePoint 線上管理員和設計者可以使用工具來疑難排解效能問題，以確保新頁面在發佈之前已經過優化。
 
@@ -77,11 +77,11 @@ ms.locfileid: "46695590"
 
 ![選取 [顯示子網站] 的結構導覽](../media/SPONavOptionsStructuredShowSubsites.png)
 
-您可以在網站集合層級或網站層級啟用或停用快取，且預設為啟用。 若要在網站集合層級啟用，請在 [**網站設定**  >  **網站集合管理**  >  **網站集合導覽**] 底下，選取 [**啟用**快取] 方塊。
+您可以在網站集合層級或網站層級啟用或停用快取，且預設為啟用。 若要在網站集合層級啟用，請在 [**網站設定**  >  **網站集合管理**  >  **網站集合導覽**] 底下，選取 [**啟用** 快取] 方塊。
 
 ![在網站層級啟用快取](../media/structural-nav/structural-nav-caching-site-coll.png)
 
-若要在網站層級啟用，請在 [**網站設定**  >  **導覽**] 底下，選取 [**啟用**快取] 方塊。
+若要在網站層級啟用，請在 [**網站設定**  >  **導覽**] 底下，選取 [**啟用** 快取] 方塊。
 
 ![在網站層級啟用快取](../media/structural-nav/structural-nav-caching-site.png)
 
@@ -99,7 +99,7 @@ ms.locfileid: "46695590"
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>如何執行受管理導覽和結果
 
-關於受管理導覽的詳細資料，有數個 docs.microsoft.com 文章。 例如，請參閱 [SharePoint Server 中受管理導覽的概述](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)。
+關於受管理導覽的詳細資料，有數個 docs.microsoft.com 文章。 例如，請參閱 [SharePoint Server 中受管理導覽的概述](/sharepoint/administration/overview-of-managed-navigation)。
 
 為了實施受管理導覽，您可以使用與網站導覽結構相對應的 URLs 來設定字詞。 管理的導覽甚至可以手動策劃，以在許多情況下取代結構性導覽。 例如：
 
@@ -117,7 +117,7 @@ ms.locfileid: "46695590"
 
 資料提供者的範例是使用 **搜尋導向導覽**，這可讓您靈活地列舉流覽節點及有效處理安全性調整。
 
-另外還有其他常見的選項可建立 **自訂導覽提供者**。 如需建立自訂導覽提供者的進一步指導，請參閱 [SharePoint Online 入口網站的導覽解決方案](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) 。
+另外還有其他常見的選項可建立 **自訂導覽提供者**。 如需建立自訂導覽提供者的進一步指導，請參閱 [SharePoint Online 入口網站的導覽解決方案](/sharepoint/dev/solution-guidance/portal-navigation) 。
 
 使用搜尋您可以使用連續編目，利用背景中所建立的索引。 搜尋結果會從搜尋索引中提取，而結果會進行安全修整。 在需要安全性調整時，這通常會比預置的流覽提供者更快速。 使用搜尋結構導覽，尤其是當您有複雜的網站結構時，會大幅加快頁面載入時間。 這透過受管理導覽的主要優點是您可以從安全性調整中受益。
 
@@ -208,7 +208,7 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. 結果會指派給自身的節點陣列，並使用 linq.js 將輸出指派給陣列 self 階層的物件。 此陣列是系結至 HTML 的物件。 若要在 ( toggleView 中完成此動作，您可以將 self 物件傳遞至 applyBinding ( # A3 函式函數。<br/>這會使階層陣列系結至下列 HTML：<br/>
+8. 結果會指派給自身的節點陣列，並使用 linq.js 將輸出指派給陣列 self 階層的物件。 此陣列是系結至 HTML 的物件。 若要在 toggleView () 函數中，將 self 物件傳遞給 applyBinding () 函數，即可完成此動作。<br/>這會使階層陣列系結至下列 HTML：<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
@@ -545,6 +545,6 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
   
 ## <a name="related-topics"></a>相關主題
 
-[SharePoint Server 中受管理導覽的概觀](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
+[SharePoint Server 中受管理導覽的概觀](/sharepoint/administration/overview-of-managed-navigation)
 
 [結構導覽快取和效能](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)

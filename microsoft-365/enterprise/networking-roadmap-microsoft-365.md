@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 實施 Microsoft 365 網路的藍圖。
-ms.openlocfilehash: 2962adf7bdca35d06672696471e0932fd1a7b09c
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: be1691138290a592822bfb4d59286fe795270450
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787748"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923549"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>Microsoft 365 的網路藍圖
 
@@ -45,7 +45,7 @@ Microsoft 365 上架的一個重要部分是，確定您的網路和網際網路
 在網路實施的部署階段：
 
 - [確定您的商業網路已針對 Microsoft 365 連線優化](set-up-network-for-microsoft-365.md)
-- [新增組織的 DNS 網域](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
+- [新增組織的 DNS 網域](../admin/setup/add-domain.md)
 - [優化您與 Microsoft 365 端點的連線能力](microsoft-365-ip-web-service.md)
 - [優化遠端工作者的連線能力](microsoft-365-vpn-split-tunnel.md)
 - 如有需要， [設定 ExpressRoute](azure-expressroute.md)

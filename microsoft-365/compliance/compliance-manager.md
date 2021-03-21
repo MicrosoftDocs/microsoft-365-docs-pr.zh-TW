@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員可協助組織簡化及自動化風險評估，並建議採取的措施以協助解決風險。
-ms.openlocfilehash: 7bff6a2a7a150a08b98fe7a92cd71d266df9fda7
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 80d955f3d321ef8f82fe3654e4d7d08572ec72cc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376544"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922727"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合規性管理員
 
@@ -49,7 +49,7 @@ ms.locfileid: "49376544"
 
 合規性管理員提供下列功能，協助簡化法規遵從性並降低風險：
 
-- 適用于一般行業和地區性標準及法規的預先建評估，或自訂評估以符合您的獨特法規遵從性需求 (可用評估取決於您的授權合約; [深入瞭解](https://go.microsoft.com/fwlink/?linkid=2132371)) 。
+- 適用于一般行業和地區性標準及法規的預先建評估，或自訂評估以符合您的獨特法規遵從性需求 (可用評估取決於您的授權合約; [深入瞭解](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)) 。
 
 - 工作流程功能，可協助您透過單一工具有效率地完成風險評估。
 

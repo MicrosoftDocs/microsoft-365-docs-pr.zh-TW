@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 42ff665e8ba9c369e29eeeafd27affff04b40966
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 033826a7f82278f6e36b422284a1076cba57d584
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841336"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921975"
 ---
 # <a name="new-microsoft-edge-app"></a>新的 Microsoft Edge app
 
@@ -25,15 +25,15 @@ ms.locfileid: "49841336"
 
 若要將 Microsoft 受管理的桌面裝置遷移至新的 Microsoft Edge browser，請透過 Microsoft 受管理的桌面入口網站，將 IT 支援票證檔。 當您為票證進行檔案時，我們會將 Edge 穩定通道部署到測試群組，然後在每個後續的部署群組中每隔24小時部署一次。 若要暫停部署，請 file 另一個票證要求作業保留。
 
-[測試通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)也可在組織中要求代表驗證的要求。 Microsoft 受管理的桌面會依照測試和第一個群組的需要部署應用程式，這樣，除了穩定通道之外，所有使用者都有 Beta 通道。 對於任何需要存取 Beta 通道的其他使用者，請將其新增至 **新式的 Workplace Edge Beta 使用者** 群組，並將其從公司入口網站安裝
+[測試通道](/deployedge/microsoft-edge-channels#beta-channel)也可在組織中要求代表驗證的要求。 Microsoft 受管理的桌面會依照測試和第一個群組的需要部署應用程式，這樣，除了穩定通道之外，所有使用者都有 Beta 通道。 對於任何需要存取 Beta 通道的其他使用者，請將其新增至 **新式的 Workplace Edge Beta 使用者** 群組，並將其從公司入口網站安裝
 
 ## <a name="updates-to-microsoft-edge"></a>Microsoft Edge 的更新
 
-Microsoft 受管理的桌面部署的 Microsoft Edge [穩定通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) ，它會自動更新每六周。 「穩定通道」上的更新會由 Microsoft Edge 產品群組 [逐步](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) 展開，以確保客戶獲得最佳的體驗。 
+Microsoft 受管理的桌面部署的 Microsoft Edge [穩定通道](/deployedge/microsoft-edge-channels#stable-channel) ，它會自動更新每六周。 「穩定通道」上的更新會由 Microsoft Edge 產品群組 [逐步](/deployedge/microsoft-edge-update-progressive-rollout) 展開，以確保客戶獲得最佳的體驗。 
 
-測試和第一個群組中的裝置會部署 [Beta 通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 至組織內的代表驗證。 此通道完全受支援，且每六周大約會以新功能自動更新。
+測試和第一個群組中的裝置會部署 [Beta 通道](/deployedge/microsoft-edge-channels#beta-channel) 至組織內的代表驗證。 此通道完全受支援，且每六周大約會以新功能自動更新。
 
-為了確保 Microsoft Edge 正確更新，請勿修改 Microsoft Edge [更新原則](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
+為了確保 Microsoft Edge 正確更新，請勿修改 Microsoft Edge [更新原則](/deployedge/microsoft-edge-update-policies)。
 
 
 
@@ -96,7 +96,7 @@ Microsoft 受管理的桌面會設定此原則，以防止在受管理的端點�
 
 **預設值：** 禁用
 
-因為有相關的安全性風險，所以不建議使用 Flash。 如果您仍然有依賴 Flash 的進程，請設定 **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** 原則，為需要它的網站啟用 Flash。 如果您無法保留允許的網站清單以使用 Flash，請提交變更要求，以變更值以 **按一下 [播放**]，這可讓使用者選擇適當的時間來執行 flash。
+因為有相關的安全性風險，所以不建議使用 Flash。 如果您仍然有依賴 Flash 的進程，請設定 **[PluginsAllowedForUrls](/deployedge/microsoft-edge-policies#pluginsallowedforurls)** 原則，為需要它的網站啟用 Flash。 如果您無法保留允許的網站清單以使用 Flash，請提交變更要求，以變更值以 **按一下 [播放**]，這可讓使用者選擇適當的時間來執行 flash。
 
 ### <a name="password-manager"></a>密碼管理員
 
@@ -117,7 +117,7 @@ Microsoft 受管理的桌面預設會啟用裝置的 Internet Explorer 模式
 依預設，裝置會設定為使用 Internet Explorer 模式，但您可以將其設定為在獨立的 Internet Explorer 11 視窗中開啟網站。 若要變更此行為，請歸檔支援要求。
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>將網站新增至企業模式網站清單
-若要在 Internet Explorer 模式中開啟網站，您必須將其包含在 [企業網站清單](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist)中。 維護和部署企業網站清單是您的責任。 如需詳細資訊，請參閱 [configure using The Configure Enterprise Mode Site List policy](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
+若要在 Internet Explorer 模式中開啟網站，您必須將其包含在 [企業網站清單](/DeployEdge/edge-ie-mode-sitelist)中。 維護和部署企業網站清單是您的責任。 如需詳細資訊，請參閱 [configure using The Configure Enterprise Mode Site List policy](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>其他設定
 
@@ -142,7 +142,7 @@ Microsoft 受管理的桌面不支援基本或摘要驗證架構。
 
 ## <a name="settings-you-manage"></a>您管理的設定
 
-您可以使用 Microsoft Intune 中的「管理範本」設定檔，部署先前並未描述的任何 Microsoft Edge 設定。 如需詳細資訊，請參閱 [使用 Microsoft Intune 設定 Microsoft Edge 原則設定](https://docs.microsoft.com/deployedge/configure-edge-with-intune)。 如果您想要評估的原則目前未包含在 Intune 的 Microsoft Edge 系統管理範本中，您可以在 Intune 中使用 Windows 10 裝置的自訂設定。
+您可以使用 Microsoft Intune 中的「管理範本」設定檔，部署先前並未描述的任何 Microsoft Edge 設定。 如需詳細資訊，請參閱 [使用 Microsoft Intune 設定 Microsoft Edge 原則設定](/deployedge/configure-edge-with-intune)。 如果您想要評估的原則目前未包含在 Intune 的 Microsoft Edge 系統管理範本中，您可以在 Intune 中使用 Windows 10 裝置的自訂設定。
 
 ### <a name="enabling-specific-chrome-extensions"></a>啟用特定的 Chrome 副檔名
 
@@ -153,14 +153,13 @@ Microsoft 受管理的桌面不支援基本或摘要驗證架構。
 您也可以使用系統管理範本來設定 Microsoft Edge，以安裝分機，而不會提醒使用者。 您可以在 [電腦設定 >] 中找到它， **> 擴充 > 控制以無訊息方式安裝的分機** 號碼。
 
 ### <a name="microsoft-edge-update-policies"></a>Microsoft Edge 更新原則
-為了確保 Microsoft Edge 正確更新，請勿修改 Microsoft Edge [更新原則](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
+為了確保 Microsoft Edge 正確更新，請勿修改 Microsoft Edge [更新原則](/deployedge/microsoft-edge-update-policies)。
 
 ### <a name="other-common-enterprise-policies"></a>其他常見的企業原則
 
 Microsoft Edge 提供許多其他的原則。 以下是一些較為常見的專案：
  
-- [設定企業網站清單和 IE 模式的網站](https://docs.microsoft.com/deployedge/edge-ie-mode-sitelist)
-- [設定啟動、首頁及新的索引標籤頁面設定](https://docs.microsoft.com/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
-- [設定衝浪遊戲設定](https://docs.microsoft.com/deployedge/microsoft-edge-policies#allowsurfgame)
-- [設定 proxy 伺服器設定](https://docs.microsoft.com/deployedge/microsoft-edge-policies#proxy-server)
-
+- [設定企業網站清單和 IE 模式的網站](/deployedge/edge-ie-mode-sitelist)
+- [設定啟動、首頁及新的索引標籤頁面設定](/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
+- [設定衝浪遊戲設定](/deployedge/microsoft-edge-policies#allowsurfgame)
+- [設定 proxy 伺服器設定](/deployedge/microsoft-edge-policies#proxy-server)

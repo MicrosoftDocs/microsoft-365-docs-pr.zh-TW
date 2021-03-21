@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 本文包含有關網路規劃、測試及遷移至 Office 365 的資訊連結。
-ms.openlocfilehash: 2b08b05b8863fd9351510878f9438264bb2999f5
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 99bcc1bd0447b192860fc0bcc67fc18d87c2d5fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948445"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923585"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的網路和移轉規劃
 
@@ -36,9 +36,9 @@ ms.locfileid: "47948445"
   
 在首次部署或移轉至 Office 365 前，您可使用這些主題的資訊來預估您需要的頻寬，然後測試並確認您有足夠頻寬可部署或移轉至 Office 365。
 
-本文是 [Office 365 的網路規劃與效能調整](https://aka.ms/tune)的一部分。
+本文是 [Office 365 的網路規劃與效能調整](./network-planning-and-performance.md)的一部分。
 
-如需針對 Microsoft 365 和其他 Microsoft 雲端平臺及服務優化網路的步驟，請參閱 [Microsoft 雲端網路 For Enterprise 建築師](https://aka.ms/cloudarchnetworking) 海報。
+如需針對 Microsoft 365 和其他 Microsoft 雲端平臺及服務優化網路的步驟，請參閱 [Microsoft 雲端網路 For Enterprise 建築師](../solutions/cloud-architecture-models.md) 海報。
    
 ## <a name="estimate-network-bandwidth-requirements"></a>預估網路頻寬需求
 <a name="EstimateBandwidthRequirements"> </a>
@@ -51,7 +51,7 @@ ms.locfileid: "47948445"
     
 2. 決定哪些 Office 365 服務與功能可供用戶端使用。 您可能需要一組人員搭配不同的服務或使用設定檔。
     
-3. 針對由用戶端組成的試驗群組測量網路使用狀況。 請確保試驗用戶端能代表組織中屬於各種不同設定檔及地理位置的人員。 您可以對照 [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) 和 [Microsoft 小組](https://docs.microsoft.com/microsoftteams/prepare-network) 舊的計算機，或是我們在自己網路上所執行的 [案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) ，來交叉檢查您的結果。 
+3. 針對由用戶端組成的試驗群組測量網路使用狀況。 請確保試驗用戶端能代表組織中屬於各種不同設定檔及地理位置的人員。 您可以對照 [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) 和 [Microsoft 小組](/microsoftteams/prepare-network) 舊的計算機，或是我們在自己網路上所執行的 [案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) ，來交叉檢查您的結果。 
     
 4. 從試驗群組的測量結果推算整個組織的需求，然後重新測試以驗證估計值，再變更您的網路設定。
     
@@ -71,7 +71,7 @@ ms.locfileid: "47948445"
   
 1. 您想立即開始協助您的使用者嗎？ 如果您在使用包含 SharePoint Online、Exchange Online 和 Lync Online 等 Office 365 產品時網路運作不順暢，請參閱[在網路緩慢的情況下使用 Office 365 的最佳做法](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)。 本文含有大量 TechNet 及 Support.office.com 的連結，內容介紹如何最佳化您的 Office 365 體驗，並包含輕鬆自訂網頁的方法，以及如何設定 Internet Explorer 以享受最佳 Office 365 體驗等資訊。 
     
-2. 請閱讀 [Office 365 網路連線原則](https://aka.ms/o365networkingprinciples)，了解安全管理 Office 365 流量以及可能獲取最佳效能的連線原則。 本文將協助您了解以安全方式最佳化 Office 365 的網路連線能力的最新指引。 
+2. 請閱讀 [Office 365 網路連線原則](./microsoft-365-network-connectivity-principles.md)，了解安全管理 Office 365 流量以及可能獲取最佳效能的連線原則。 本文將協助您了解以安全方式最佳化 Office 365 的網路連線能力的最新指引。 
     
 3. 謹慎管理 Windows Updates 排程來改善郵件移轉效能。 您可以批次更新用戶端電腦，確定所有用戶端電腦已在移轉至 Office 365 前更新，以管制網路頻寬的使用。 如需詳細資訊，請參閱[針對 Office 365 手動更新及設定電腦以取得最新更新](https://support.microsoft.com/gp/office-2013-365-update)。
     
@@ -102,7 +102,7 @@ ms.locfileid: "47948445"
     
 - [Office 365 服務中的 IPv6 支援](ipv6-support.md)
     
-- [Office 365 網路連線原則](https://aka.ms/o365networkingprinciples)
+- [Office 365 網路連線原則](./microsoft-365-network-connectivity-principles.md)
     
 - [Office 365 影片網路常見問題集 (FAQ)](office-365-video-networking-faq.md)
     

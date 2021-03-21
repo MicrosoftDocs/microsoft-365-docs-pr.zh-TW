@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 了解 OneDrive for Business 和 SharePoint Online 中的資料安全性加密基本項目。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f0c78a9ca6e6bad1e4aea707f8be5dec818b7a27
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ca93d04fa21487ad054cd9cb924dff1fc15abfbd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817922"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922627"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>商務用 OneDrive 和 SharePoint Online 中的資料加密
 
@@ -54,7 +54,7 @@ Microsoft 365 是高度安全的環境，可提供多層的廣泛保護：實體
   
 當 BitLocker 加密磁碟中的所有資料時，每一檔案的加密會進一步地納入每個檔案唯一的加密金鑰。此外，每個檔案的每次更新都會使用自己的加密金鑰進行加密。在儲存之前，已加密內容的金鑰會儲存在與內容不同的實體位置。此加密的每個步驟都會使用搭配 256 位元機碼的進階加密標準 (AES)，並與聯邦資訊處理標準 (FIPS) 140-2 相容。已加密的內容會分散到資料中心的數個容器中，而且每個容器都有唯一的認證。這些認證會儲存在內容或內容金鑰等不同的實體位置。
   
-如需有關 FIPS 140-2 規範的詳細資訊，請參閱[FIPS 140-2 相容性](https://go.microsoft.com/fwlink/?LinkId=517625)。
+如需有關 FIPS 140-2 規範的詳細資訊，請參閱 [FIPS 140-2 相容性](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105))。
   
 檔案層級的靜態加密會利用 Blob 儲存體提供無限制的虛擬儲存體成長空間，以便提供更全面的保護。OneDrive for Business 和 SharePoint Online 中的所有客戶內容都會移轉至 Blob 儲存體。以下是保護資料的方法：
   

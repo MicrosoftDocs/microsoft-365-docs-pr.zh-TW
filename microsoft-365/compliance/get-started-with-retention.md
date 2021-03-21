@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作保留原則及保留標籤來管理貴組織的資料，但不確定從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: bb73f0871bfc2ad707d31ef6d4d57e18218842a5
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 27f361ba98cdaecb5b7788283c8d4244583ee82c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406513"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922617"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>開始使用保留原則和保留標籤
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 準備好透過保留您要保留的內容，並刪除您不想要的內容，以開始管理貴組織的資料了嗎？ 使用下列高層指導方針以開始進行：
 
@@ -48,7 +48,7 @@ ms.locfileid: "50406513"
 
 許多不同的訂閱都支援保留原則和保留標籤，以及使用者的授權需求取決於您所使用的功能。
 
-若要查看授權使用者使用 Microsoft 365 合規性功能的選項，請參閱 [Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。 如需保留，請參閱 [資訊管轄](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) 一節，以及相關的 PDF 或 Excel 下載功能層級授權需求。
+若要查看授權使用者使用 Microsoft 365 合規性功能的選項，請參閱 [Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 如需保留，請參閱 [資訊管轄](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) 一節，以及相關的 PDF 或 Excel 下載功能層級授權需求。
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>建立和管理保留原則和保留標籤所需權限。
 
@@ -56,9 +56,9 @@ ms.locfileid: "50406513"
 
 除了使用此預設角色之外，您還可以建立新角色群組並將 **[保留管理]** 角色新增到此群組中。 對於唯讀角色，請使用 **[僅檢視保留管理]**。 
 
-如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)。
+如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 
-如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有在建立、設定、和套用保留原則及保留標籤時，才需要求這些權限。 設定這些保留原則和標籤的人員不需要內容的存取權。
 

@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 34b2186ea3f9129ae7bb602aee879d7d23424136
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: cd45d6155fc0e01f6a285f6182aa051281d160e0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841056"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922905"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>為 Microsoft 受管理的電腦準備對應磁碟機
 
@@ -24,7 +24,7 @@ ms.locfileid: "49841056"
 - 遷移小組所用的對應磁片磁碟機，以共用檔案至 SharePoint 線上。 
 - [現代化] 或 [取代] 任何使用內部部署檔案共用的應用程式，以移除該需求。
   
-現代化這些服務可讓 Microsoft 受管理的電腦取得最佳的使用者體驗。 Microsoft FastTrack 服務可協助您使用 Microsoft 雲端服務現代化您的環境。 您可以檢查您是否符合 [合格服務與計畫](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) 的 FastTrack 服務，然後直接與他們聯繫以準備 Microsoft 受管理的電腦。 如需 FastTrack 商務 OneDrive 或 SharePoint 線上遷移的背景，請參閱 [資料移轉](https://docs.microsoft.com/fasttrack/o365-data-migration)。
+現代化這些服務可讓 Microsoft 受管理的電腦取得最佳的使用者體驗。 Microsoft FastTrack 服務可協助您使用 Microsoft 雲端服務現代化您的環境。 您可以檢查您是否符合 [合格服務與計畫](/fasttrack/m365-eligible-services-and-plans) 的 FastTrack 服務，然後直接與他們聯繫以準備 Microsoft 受管理的電腦。 如需 FastTrack 商務 OneDrive 或 SharePoint 線上遷移的背景，請參閱 [資料移轉](/fasttrack/o365-data-migration)。
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Microsoft 受管理電腦上的對應磁片磁碟機
  
@@ -52,4 +52,4 @@ ms.locfileid: "49841056"
 2. 提交名為 "對應的磁片磁碟機部署" 的支援要求，並提供所有必要的檔案共用詳細資料。  
 3. Microsoft 受管理的桌面 IT 作業會在要求完成時，使用支援要求更新通知。 起初，此設定只會部署至測試部署群組中的裝置。  
 4. 您必須測試及確認 Microsoft 受管理的桌面 IT 作業所部署的設定是否如預期的那樣運作。 使用相同支援要求的詳細資料中的 [討論] 索引標籤回復，以在您完成測試時通知 Microsoft 受管理的桌面 IT 作業。  
-5. Microsoft 受管理的桌面 IT 作業小組接著會將設定部署至其他部署群組。 
+5. Microsoft 受管理的桌面 IT 作業小組接著會將設定部署至其他部署群組。

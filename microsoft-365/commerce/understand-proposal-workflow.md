@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解方案，以協助您購買 Microsoft 產品和服務。
 ROBOTS: NOINDEX
-ms.openlocfilehash: d0e8c6fd9973573d4e49f7512e4394f7534bd97c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b7165db7acd33f9175b6d9d3c86b1f93b2486c43
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646796"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921801"
 ---
 # <a name="understand-the-proposal-workflow"></a>瞭解提案工作流程
 
@@ -58,8 +58,8 @@ Microsoft 客戶合約 (MCA) 可讓組織購買 Microsoft 產品和服務。 如
 如果這是新的帳單帳戶，但沒有人接受某項合約，您會自動成為帳單帳戶擁有者，前提是您：
 
 - 是提案中指定的人員 \
-    OR
-- 已是您組織的[Azure Active Directory 全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+    「或」
+- 已是您組織的[Azure Active Directory 全域系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 ## <a name="what-is-the-overall-workflow"></a>整體工作流程為何？
 
@@ -99,13 +99,13 @@ Microsoft 客戶合約 (MCA) 可讓組織購買 Microsoft 產品和服務。 如
 
 ### <a name="your-organization"></a>您的組織
 
-**您的組織**區段會顯示與其相關聯的帳單帳戶。 計費帳戶資訊會從現有的帳單帳戶提取，或是由 Microsoft 代表為您建立。 如果您的組織隸屬于另一個組織，您也會看到具有該組織名稱和位址的 **潛在客戶組織** 區段。
+**您的組織** 區段會顯示與其相關聯的帳單帳戶。 計費帳戶資訊會從現有的帳單帳戶提取，或是由 Microsoft 代表為您建立。 如果您的組織隸屬于另一個組織，您也會看到具有該組織名稱和位址的 **潛在客戶組織** 區段。
 
 如果這是您的組織第一次建立與 Microsoft 的商業關係，而且您尚未簽署 MCA，如果 **組織** 或 **潛在客戶組織** 底下的資訊不正確，請與代表聯繫以進行變更。 在您接受某項 MCA 後，您可以在 Microsoft 365 系統管理中心的 [ [帳單帳戶](https://go.microsoft.com/fwlink/p/?linkid=2084771) ] 頁面上複查和變更組織的位址和連絡人資訊。 如果您的組織名稱變更，請開啟服務要求以更新它。 [瞭解如何開啟服務要求](../admin/contact-support-for-business-products.md)
 
 ### <a name="your-information"></a>您的資訊
 
-如果您是新的客戶，請在 **您的資訊**底下輸入您的姓名、電子郵件地址和電話號碼，然後選取 [ **儲存**]。 如果您是現有的客戶，請確認您的資訊正確無誤。 若要進行更正，請選取 [ **編輯**]，進行必要的變更，然後選取 [ **儲存**]。
+如果您是新的客戶，請在 **您的資訊** 底下輸入您的姓名、電子郵件地址和電話號碼，然後選取 [ **儲存**]。 如果您是現有的客戶，請確認您的資訊正確無誤。 若要進行更正，請選取 [ **編輯**]，進行必要的變更，然後選取 [ **儲存**]。
 
 當您準備好時，請選取 [ **繼續** ] 移至下一個步驟。
 
@@ -138,7 +138,7 @@ Microsoft 客戶合約 (MCA) 可讓組織購買 Microsoft 產品和服務。 如
 
 「結帳」頁面包含下列區段：
 
-### <a name="sold-to"></a>銷售至
+### <a name="sold-to"></a>購買人
 
 本節顯示提案所使用的計費帳戶。 如果您需要變更任何資訊，請選取 [ **編輯** ] 連結。 您也可以使用 [ **編輯** ] 連結，新增您組織的稅號。 納稅識別碼必須與「 **銷售至** 」區段中所列的國家/地區相關。 如果您有免稅，您必須開啟支援票證以要求免稅狀態。
 
@@ -158,7 +158,7 @@ Microsoft 客戶合約 (MCA) 可讓組織購買 Microsoft 產品和服務。 如
 
 - **立即購買** 在提案驗收工作流程結束時結帳時所支付的專案清單。
 
-- **適用于未來費用的折扣 () ** 您在提案中所收到的折扣清單。
+- **適用于未來費用的折扣 ()** 您在提案中所收到的折扣清單。
 
 - **包含** 建議套件中包含的專案清單，而不會另外收費。 有些專案可能會有相關的成本。
 
@@ -172,9 +172,9 @@ Microsoft 客戶合約 (MCA) 可讓組織購買 Microsoft 產品和服務。 如
 
 ## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>步驟4：設定您的新帳單帳戶 (僅限 Azure 客戶) 
 
-如果您是新的客戶，而且已購買 Azure 產品做為提案的一部分，下一步是設定新的帳單帳戶。 若要深入瞭解，請參閱 [設定您的帳單帳戶的 Microsoft 客戶合約](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-setup-account)。
+如果您是新的客戶，而且已購買 Azure 產品做為提案的一部分，下一步是設定新的帳單帳戶。 若要深入瞭解，請參閱 [設定您的帳單帳戶的 Microsoft 客戶合約](/azure/cost-management-billing/manage/mca-setup-account)。
 
-如果您是具有企業合約的現有 Azure 客戶，而且您是第一次簽署 MCA，您下一步是瞭解各協定之間的變更，以及如何使用新的計費帳戶完成工作。 若要深入瞭解，請參閱 [您的帳單帳戶中的完整企業合約任務，以取得 Microsoft 客戶合約](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-enterprise-operations)。
+如果您是具有企業合約的現有 Azure 客戶，而且您是第一次簽署 MCA，您下一步是瞭解各協定之間的變更，以及如何使用新的計費帳戶完成工作。 若要深入瞭解，請參閱 [您的帳單帳戶中的完整企業合約任務，以取得 Microsoft 客戶合約](/azure/cost-management-billing/manage/mca-enterprise-operations)。
 
 ## <a name="understand-invoicing"></a>瞭解開票
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 瞭解 Office 365 全域管理員如何將組織的署名套用至加密的電子郵件，& 加密入口網站的內容。
-ms.openlocfilehash: 56b948fc941da4fb221d929ecd59c5300b135e39
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 3c5dc089363a7dfe895e79f03e5a01cb57c2ad57
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709495"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923503"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>將貴組織的品牌新增至 Microsoft 365，以進行商務郵件加密加密郵件
 
@@ -64,17 +64,17 @@ ms.locfileid: "49709495"
 
 您可以在品牌範本中修改數項功能。 您可以修改預設範本，但不要移除。 如果您有高級郵件加密，您也可以建立、修改及移除自訂範本。 使用 Windows PowerShell 一次可搭配一個署名範本。
 
-- [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-omeconfiguration) -修改預設的署名範本或您建立的自訂商標範本。
-- [Set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) -建立新的署名範本，僅限高級郵件加密。
-- [Set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/remove-omeconfiguration) -移除自訂品牌範本，僅限高級郵件加密。 您無法刪除預設的署名範本。
+- [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) -修改預設的署名範本或您建立的自訂商標範本。
+- [Set-omeconfiguration](/powershell/module/exchange/new-omeconfiguration) -建立新的署名範本，僅限高級郵件加密。
+- [Set-omeconfiguration](/powershell/module/exchange/remove-omeconfiguration) -移除自訂品牌範本，僅限高級郵件加密。 您無法刪除預設的署名範本。
   
 ## <a name="modify-an-ome-branding-template"></a>修改 OME 署名範本
 
 使用 Windows PowerShell 一次修改一個署名範本。 如果您有高級郵件加密，您也可以建立、修改及移除自訂範本。
 
-1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 使用 [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration) 所述的 Set-OMEConfiguration 指令程式，或使用下圖及表格以取得指導方針。
+2. 使用 [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) 所述的 Set-OMEConfiguration 指令程式，或使用下圖及表格以取得指導方針。
 
 ![可自訂的電子郵件元件](../media/ome-template-breakout.png)
 
@@ -93,13 +93,13 @@ ms.locfileid: "49709495"
 
 ## <a name="create-an-ome-branding-template-advanced-message-encryption"></a> (高級郵件加密建立 OME 署名範本) 
 
-如果您有 Office 365 Advanced Message Encryption，您可以使用 [set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) Cmdlet 為您的組織建立自訂商標範本。 建立範本之後，您可以使用 Set-OMEConfiguration Cmdlet 修改範本，如 [modify a OME 署名範本](#modify-an-ome-branding-template)所述。 您可以建立多個範本。
+如果您有 Office 365 Advanced Message Encryption，您可以使用 [set-omeconfiguration](/powershell/module/exchange/new-omeconfiguration) Cmdlet 為您的組織建立自訂商標範本。 建立範本之後，您可以使用 Set-OMEConfiguration Cmdlet 修改範本，如 [modify a OME 署名範本](#modify-an-ome-branding-template)所述。 您可以建立多個範本。
 
 若要建立新的自訂品牌範本：
 
-1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 使用 [set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) Cmdlet 來建立新的範本。
+2. 使用 [set-omeconfiguration](/powershell/module/exchange/new-omeconfiguration) Cmdlet 來建立新的範本。
 
    ```powershell
    New-OMEConfiguration -Identity "<OMEConfigurationName>"
@@ -115,9 +115,9 @@ ms.locfileid: "49709495"
 
 若要從預設範本移除所有修改（包括品牌自訂專案）等等，請完成下列步驟：
   
-1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 使用 [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration)中所述的 **Set-OMEConfiguration** Cmdlet。 若要從 DisclaimerText、EmailText 及 PortalText 值中移除組織的署名自訂，請將值設為空字串 `""` 。 針對所有影像值，例如 [標誌]，將值設為  `"$null"` 。
+2. 使用 [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration)中所述的 **Set-OMEConfiguration** Cmdlet。 若要從 DisclaimerText、EmailText 及 PortalText 值中移除組織的署名自訂，請將值設為空字串 `""` 。 針對所有影像值，例如 [標誌]，將值設為  `"$null"` 。
 
    下表說明加密自訂選項的預設值。
 
@@ -136,7 +136,7 @@ ms.locfileid: "49709495"
 
 若要移除自訂商標範本：
   
-1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 使用 **Remove-set-omeconfiguration 指令程式** ，如下所示：
 
@@ -150,7 +150,7 @@ ms.locfileid: "49709495"
    Remove-OMEConfiguration -Identity "Branding template 1"
    ```
 
-   如需詳細資訊，請參閱 [Remove-set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/remove-omeconfiguration)。
+   如需詳細資訊，請參閱 [Remove-set-omeconfiguration](/powershell/module/exchange/remove-omeconfiguration)。
 
 ## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>建立將自訂品牌套用至加密電子郵件的 Exchange 郵件流程規則
 
@@ -168,7 +168,7 @@ ms.locfileid: "49709495"
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [系統 **管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](/exchange/exchange-admin-center)。
 
 5. 在 [ **名稱**] 中，輸入規則的名稱，例如「銷售部門的商標」。
 
@@ -182,13 +182,13 @@ ms.locfileid: "49709495"
 
 8.  (選用) 您可以設定郵件流程規則套用加密和自訂商標。 從 **執行下列** 動作，選取 **[修改郵件安全性**]，然後選擇 [套用 **Office 365 郵件加密和許可權保護**]。 從清單中選取 RMS 範本，然後選擇 [ **儲存**]，然後選擇 **[確定]**。
   
-   範本清單包含預設範本和選項，以及您建立的任何自訂範本。 如果清單是空的，請確定您已使用新功能設定 Office 365 郵件加密。 如需相關指示，請參閱 [Set up New Office 365 Message Encryption 功能](set-up-new-message-encryption-capabilities.md)。 如需預設範本的相關資訊，請參閱設定 [及管理 Azure 資訊保護的範本](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。 如需有關 [ **不要轉寄** ] 選項的詳細資訊，請參閱 [請勿轉寄選項的電子郵件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 如需只供 **加密** 之選項的詳細資訊，請參閱 [僅限加密選項的電子郵件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
+   範本清單包含預設範本和選項，以及您建立的任何自訂範本。 如果清單是空的，請確定您已使用新功能設定 Office 365 郵件加密。 如需相關指示，請參閱 [Set up New Office 365 Message Encryption 功能](set-up-new-message-encryption-capabilities.md)。 如需預設範本的相關資訊，請參閱設定 [及管理 Azure 資訊保護的範本](/information-protection/deploy-use/configure-policy-templates)。 如需有關 [ **不要轉寄** ] 選項的詳細資訊，請參閱 [請勿轉寄選項的電子郵件](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)。 如需只供 **加密** 之選項的詳細資訊，請參閱 [僅限加密選項的電子郵件](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
    如果您想要指定另一個動作，請選擇 [ **新增動作** ]。
 
 ## <a name="background-color-reference"></a>背景色彩參考
 
-您可以用於背景色彩的色彩名稱是有限的。 您可以使用十六進位代碼值 ( # RRGGBB 格式) 來代替色彩名稱。 您可以使用對應于色彩名稱的十六進位代碼值，也可以使用自訂的十六進位代碼值。 請務必以引號括住十六進位代碼值 (例如， `"#f0f8ff"`) 。
+您可以用於背景色彩的色彩名稱是有限的。 您可以使用十六進位代碼值 (#RRGGBB) ，而不是使用色彩名稱。 您可以使用對應于色彩名稱的十六進位代碼值，也可以使用自訂的十六進位代碼值。 請務必以引號括住十六進位代碼值 (例如， `"#f0f8ff"`) 。
 
 下表說明可用的背景色彩名稱及其對應的十六進位代碼值。
 

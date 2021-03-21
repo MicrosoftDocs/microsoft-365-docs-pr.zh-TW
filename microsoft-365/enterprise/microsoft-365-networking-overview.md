@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 討論為何網路優化對 SaaS 服務、Microsoft 365 網路的目標，以及 SaaS 需要不同的網路與其他工作負載的意義。
-ms.openlocfilehash: 50137e507021a6b6d26468a8a299c35a613a065a
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: d1a2b79f6e4042b97ec5a31d0ff92175baa1218e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456396"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923179"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 網路連線能力一覽
 
@@ -58,13 +58,13 @@ Microsoft 365 網路的最終目標是在用戶端和最接近的 Microsoft 365 
 
 - 新的網路端點類別，讓高緊急的網路流量有別于不受網際網路延遲影響的網路流量。 在最重要的 "Optimize" 類別中，只會有少數 URLs 和支援 IP 位址。
 - Web 服務的腳本使用方式或直接裝置設定，以及 Microsoft 365 網路身分識別的變更管理。 您可以從 web 服務或 RSS 格式，或是使用 Microsoft 流程範本的電子郵件，取得變更。
-- [Office 365 網路合作夥伴計畫](https://aka.ms/Office365NPP) ，可提供遵循 microsoft 365 網路連線性原則的裝置或服務，並具有簡易的設定。
+- [Office 365 網路合作夥伴計畫](./microsoft-365-networking-partner-program.md) ，可提供遵循 microsoft 365 網路連線性原則的裝置或服務，並具有簡易的設定。
 
 ## <a name="securing-microsoft-365-connections"></a>保護 Microsoft 365 連線
 
 傳統網路安全性的目標是強化公司網路周邊網路，免於入侵和惡意攻擊。 大部分的商業網路會利用類似 proxy 伺服器、防火牆、SSL 中斷及檢查、深度封包檢查和資料遺失防護系統等技術，強制進行網際網路流量的網路安全性。 這些技術為一般網際網路要求提供重要的風險降低，但是當套用至 Microsoft 365 端點時，可能會大幅降低效能、延展性和使用者體驗的品質。
 
-Microsoft 365 可協助滿足您組織的內容安全性和資料使用方式相容性的需求，其採用專為 Microsoft 365 功能和工作負載而設計的內建安全性和控管功能。 如需 Microsoft 365 安全性和合規性的詳細資訊，請參閱 [Office 365 安全性藍圖](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)。 如需 Microsoft 的建議和支援位置的詳細資訊，請參閱在 Microsoft 365 流量上執行高級的處理的高級網路解決方案，請參閱 [使用協力廠商網路裝置或 Office 365 流量的解決方案](https://support.microsoft.com/help/2690045)。
+Microsoft 365 可協助滿足您組織的內容安全性和資料使用方式相容性的需求，其採用專為 Microsoft 365 功能和工作負載而設計的內建安全性和控管功能。 如需 Microsoft 365 安全性和合規性的詳細資訊，請參閱 [Office 365 安全性藍圖](/office365/securitycompliance/security-roadmap)。 如需 Microsoft 的建議和支援位置的詳細資訊，請參閱在 Microsoft 365 流量上執行高級的處理的高級網路解決方案，請參閱 [使用協力廠商網路裝置或 Office 365 流量的解決方案](https://support.microsoft.com/help/2690045)。
 
 ## <a name="why-is-microsoft-365-networking-different"></a>為什麼 Microsoft 365 網路是不同的？
 
@@ -87,7 +87,7 @@ Microsoft 365 的設計是要使用端點安全性和加密網路連線以取得
 - 利用用戶端端點安全性和雲端安全性功能，以避免應用冗余網路安全性技術，來保護兩端的連線。
 
 > [!NOTE]
-> _分散式服務前端_基礎結構是 Microsoft 全球網路的高可用性和可伸縮網路 edge，具有地理位置分散的位置。 它會終止使用者連線，並有效地將其路由傳送至 Microsoft 全球網路中。 您可以在 [Microsoft 如何建置其快速且可靠的全域網路](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/) 中，深入了解 Microsoft 全域網路。
+> _分散式服務前端_ 基礎結構是 Microsoft 全球網路的高可用性和可伸縮網路 edge，具有地理位置分散的位置。 它會終止使用者連線，並有效地將其路由傳送至 Microsoft 全球網路中。 您可以在 [Microsoft 如何建置其快速且可靠的全域網路](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/) 中，深入了解 Microsoft 全域網路。
 
 如需瞭解及套用 Microsoft 365 network connectivity 原則的詳細資訊，請參閱 [microsoft 365 網路連線原則](microsoft-365-network-connectivity-principles.md)。
 

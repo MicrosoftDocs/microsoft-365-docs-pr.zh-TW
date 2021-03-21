@@ -20,12 +20,12 @@ ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
 description: 在頻寬規劃、加密 & 服務利用內容傳遞網路 (Cdn) 的方式，尋找一些常見問題的答案。
-ms.openlocfilehash: e08a67988290e7ead87ff30a5ebdf9c8560f4825
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8bc0a69ff744967d24aa7d21ed6daee1a839f159
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695556"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921567"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Office 365 影片的常見問題
 
@@ -52,7 +52,7 @@ Office 365 影片存放庫及流式處理服務可讓組織內的儲存及流式
   
 ## <a name="how-do-content-delivery-networks-cdns-help-video-playback"></a>內容傳遞網路如何 (Cdn) 協助影片播放？
 
-如果相同地理位置內來自相同組織的多個人員已使用相同的影片 (s) 中，則 Cdn 會將這些影片的副本儲存在距離該地理區域更近的位置。 在儲存的影片上，或快取至最接近的位置時，每個人會從最接近的位置，而不是從遠處的位置流向影片。 Office 365 影片使用 Azure 媒體服務來管理 Azure Cdn 中快取的內容，以及多長的時間。 Azure 媒體服務可使用任何 [AZURE CDN 位置](https://azure.microsoft.com/documentation/articles/cdn-pop-locations/) ，將影片片段和資訊清單快取幾天。 如果您組織中的人員繼續觀賞快取的快取影片。 如果沒有人存取影片一天內，則會最後從快取中刪除影片。 下一次有人嘗試觀賞影片時，它會再次快取到最近的 CDN 位置。
+如果相同地理位置內來自相同組織的多個人員已使用相同的影片 (s) 中，則 Cdn 會將這些影片的副本儲存在距離該地理區域更近的位置。 在儲存的影片上，或快取至最接近的位置時，每個人會從最接近的位置，而不是從遠處的位置流向影片。 Office 365 影片使用 Azure 媒體服務來管理 Azure Cdn 中快取的內容，以及多長的時間。 Azure 媒體服務可使用任何 [AZURE CDN 位置](/azure/cdn/cdn-pop-locations) ，將影片片段和資訊清單快取幾天。 如果您組織中的人員繼續觀賞快取的快取影片。 如果沒有人存取影片一天內，則會最後從快取中刪除影片。 下一次有人嘗試觀賞影片時，它會再次快取到最近的 CDN 位置。
   
 在內容快取時，嘗試觀賞影片的每個人都會從影片中快取較近的位置，而在大多數情況下則不會有較低的躍點。 這會改善影片播放速度;不過，它不會變更網路需求以播放影片。
   
@@ -125,4 +125,4 @@ Office 365 影片支援的作業系統和網頁瀏覽器與 [office 365 系統�
   
  ([回到頁首](office-365-video-networking-faq.md)) 
   
-您可以使用下列短連結返回這裡：[https://aka.ms/video365networkfaq](https://aka.ms/video365networkfaq)
+您可以使用下列短連結返回這裡：[https://aka.ms/video365networkfaq]()

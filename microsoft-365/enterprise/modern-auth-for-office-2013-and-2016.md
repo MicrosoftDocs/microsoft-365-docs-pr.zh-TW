@@ -1,5 +1,5 @@
 ---
-title: Office 2013 和 Office 2016 用戶端應用程式的新式驗證運作方式
+title: Office 2013 和 Office 2016 用戶端應用程式的新式驗證方式
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -25,12 +25,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: 瞭解 Office 2013 和2016用戶端應用程式的 Microsoft 365 新式驗證功能的運作方式。
-ms.openlocfilehash: 62aa04e295c2734d705f22bd2f62c6bc5e622426
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3e402f5786a72f3703ab4a1a77df688176f7de61
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688812"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921663"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>新式驗證如何運作 Office 2013、Office 2016 和 Office 2019 用戶端應用程式
 
@@ -47,12 +47,12 @@ ms.locfileid: "46688812"
   
 - 預設 **會開啟 Exchange** Online。 請參閱 [啟用或停用 Exchange Online 中的新式驗證](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) ，以關閉或開啟。 
     
-- 預設**會為 SharePoint 線上開啟。** 
+- 預設 **會為 SharePoint 線上開啟。** 
     
-- **根據**預設，啟用商務用 Skype Online。 請參閱 [啟用新式驗證的商務用 Skype Online ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)以關閉或開啟。
+- **根據** 預設，啟用商務用 Skype Online。 請參閱 [啟用新式驗證的商務用 Skype Online ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)以關閉或開啟。
 
 > [!NOTE]
-> 針對在 2017 年 8 月 1 日**之前**建立的租用戶，將對 Exchange Online 和商務用 Skype Online 預設**關閉**新式驗證。
+> 針對在 2017 年 8 月 1 日 **之前** 建立的租用戶，將對 Exchange Online 和商務用 Skype Online 預設 **關閉** 新式驗證。
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Office 用戶端應用程式的登入行為
 
@@ -65,7 +65,7 @@ ms.locfileid: "46688812"
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
   
-閱讀 [如何使用現代驗證 (ADAL) 搭配商務](https://go.microsoft.com/fwlink/p/?LinkId=785431) 用 skype 來瞭解如何使用商務用 skype。 
+閱讀 [如何使用現代驗證 (ADAL) 搭配商務](./hybrid-modern-auth-overview.md) 用 skype 來瞭解如何使用商務用 skype。 
   
 Office 2016 和 Office 2019 用戶端預設會支援新式驗證，且不需要採取任何動作，用戶端即可使用這些新流程。 不過，需要明確的動作才能使用舊版驗證。
   
@@ -127,11 +127,11 @@ Office 2016 和 Office 2019 用戶端預設會支援新式驗證，且不需要�
 |Office 2013  <br/> |否  <br/> |否  <br/> |僅限 Microsoft Online 登入助理。  <br/> |僅限 Microsoft Online 登入助理。  <br/> |
 |Office 2013  <br/> |是，EnableADAL = 1  <br/> |是  <br/> |先嘗試新式驗證。 如果伺服器拒絕新式驗證連線，則會使用 Microsoft 線上登入 Assistant。 當未啟用商務用 Skype Online 承租人時，伺服器會拒絕新式驗證。  <br/> |僅限 Microsoft Online 登入助理。  <br/> |
    
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[為 Windows 裝置上的 Office 2013 啟用新式驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
+[為 Windows 裝置上的 Office 2013 啟用新式驗證](../admin/security-and-compliance/enable-modern-authentication.md)
 
-[Microsoft 365 的多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
+[Microsoft 365 的多重要素驗證](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 
 [使用多重要素驗證登入 Microsoft 365](https://support.microsoft.com/office/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
 

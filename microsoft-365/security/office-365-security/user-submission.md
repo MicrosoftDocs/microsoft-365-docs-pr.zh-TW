@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37b473e2cfffff3984ff81245f09e98ee18685ea
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 0ac1028ca3485f75518ccca298a1fd85a7bf40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826195"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922387"
 ---
 # <a name="user-submissions-policy"></a>使用者提交原則
 
@@ -75,7 +75,7 @@ ms.locfileid: "50826195"
 - 若要修改使用者提交的設定，您必須是下列其中一個角色群組的成員：
 
   - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 **組織管理**。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的 **組織管理**。
 
 - 您需要存取 Exchange Online PowerShell。 如果您嘗試使用的帳戶無法存取 Exchange Online PowerShell，當您指定提交信箱時，您會收到如下的錯誤訊息：
 
@@ -83,8 +83,8 @@ ms.locfileid: "50826195"
 
   如需啟用或停用 Exchange Online PowerShell 存取權的詳細資訊，請參閱下列主題：
 
-  - [啟用或停用存取 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
-  - [Exchange Online 中的用戶端存取規則](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [啟用或停用存取 Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Exchange Online 中的用戶端存取規則](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全性 & 規範中心設定使用者提交信箱
 
@@ -155,4 +155,3 @@ ms.locfileid: "50826195"
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 不遵循此格式的郵件將無法在提交入口網站中正確顯示。
-

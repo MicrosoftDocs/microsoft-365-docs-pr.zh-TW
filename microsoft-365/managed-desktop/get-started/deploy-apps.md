@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2eb8b984550f301af9d99e738f6db4623aa2cc86
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 8bfc53d46bdcb91c16e9f4a1ddbc8ab3f6dfb47e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769103"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922023"
 ---
 # <a name="deploy-apps-to-devices"></a>將應用程式部署至裝置
 上架至 Microsoft Managed Desktop 的一部分包括新增及部署使用者裝置的應用程式。 使用 Microsoft 受管理的桌面入口網站後，您可以新增及部署應用程式。 
@@ -33,7 +33,7 @@ ms.locfileid: "48769103"
 
 ###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>以 Win32 或 Windows MSI 為基礎的應用程式至 Microsoft 受管理的電腦
 
-您可以將企業營運 (LOB) 應用程式新增至 Microsoft 受管理的桌面入口網站。 如需 Microsoft 受管理的電腦裝置上安裝之應用程式需求的詳細資訊，請參閱 [Microsoft Managed desktop app 需求](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements)。
+您可以將企業營運 (LOB) 應用程式新增至 Microsoft 受管理的桌面入口網站。 如需 Microsoft 受管理的電腦裝置上安裝之應用程式需求的詳細資訊，請參閱 [Microsoft Managed desktop app 需求](../service-description/mmd-app-requirements.md)。
 
 在此程式中，您將選取要新增的應用程式類型，然後設定並上傳應用程式來源。 
 
@@ -42,11 +42,11 @@ ms.locfileid: "48769103"
 您可以登入 Microsoft 受管理的桌面入口網站，或登入 Intune，然後搜尋 Microsoft Managed Desktop。 我們會顯示登入 Microsoft 受管理的桌面入口網站。 
 
 1.    登入 [Microsoft Managed Desktop Admin 入口網站](https://aka.ms/mmdportal)。 
-2.    在 [ **庫存** ] 下，選取 [ **應用程式** ]。
-3.    在 [應用程式工作負載] 中，選取 [ **新增** ]。
-4.    在 [ **新增應用程式** ] 中，選取 [ **企業營運應用程式** ] 或 [ **Windows 應用程式 (Win32)** ]。
-    - 如果您已選取 [企業營運] **應用程式** ，請參閱 [新增 Windows 營運 Windows 應用程式至 Microsoft Intune 以](https://docs.microsoft.com/intune/lob-apps-windows) 取得有關新增及設定企業營運應用程式的指示。
-    - 如果您選取了 [ **Windows 應用程式 (Win32)** ]，請參閱 [Win32 應用程式管理](https://docs.microsoft.com/intune/apps-win32-app-management) 以取得新增及設定 Windows 應用程式的指示。
+2.    在 [ **庫存**] 下，選取 [ **應用程式**]。
+3.    在 [應用程式工作負載] 中，選取 [ **新增**]。
+4.    在 [ **新增應用程式**] 中，選取 [ **企業營運應用程式** ] 或 [ **Windows 應用程式 (Win32)**]。
+    - 如果您已選取 [企業營運] **應用程式**，請參閱 [新增 Windows 營運 Windows 應用程式至 Microsoft Intune 以](/intune/lob-apps-windows) 取得有關新增及設定企業營運應用程式的指示。
+    - 如果您選取了 [ **Windows 應用程式 (Win32)**]，請參閱 [Win32 應用程式管理](/intune/apps-win32-app-management) 以取得新增及設定 Windows 應用程式的指示。
 
 <span id="msfb-apps">
 
@@ -56,20 +56,20 @@ ms.locfileid: "48769103"
 **從商務用 Microsoft Store 購買應用程式**
 
 1. 使用您的 Microsoft Store for Business Admin account，登入 [Microsoft store For business](https://businessstore.microsoft.com) 。
-2. 選取 [ **為我的群組購買** ]。
+2. 選取 [ **為我的群組購買**]。
 3. 使用 [搜尋] 來找出您想要的應用程式，然後選取應用程式。
-4. 在 [產品詳細資料] 中，選取 **[取得應用程式** ]。 Microsoft Store 會將應用程式新增至貴組織的 **產品** 。
+4. 在 [產品詳細資料] 中，選取 **[取得應用程式**]。 Microsoft Store 會將應用程式新增至貴組織的 **產品** 。
 
 **強制 Intune 與 Microsoft Store for Business 之間的同步處理**
 1. 登入 [Microsoft 端點管理員管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 選取 [ **租使用者管理**  >  **連接器] 和 [標記**  >  **Microsoft Store for Business** ]。
+2. 選取 [**租使用者管理**  >  **連接器] 和 [標記**  >  **Microsoft Store for Business**]。
 3. 選取 [ **同步** 處理]，以取得您從 Microsoft 商店購買的應用程式至 Intune。
 
 **確認 Intune 與 Microsoft Store for Business 之間的同步處理已啟用**
 1. 使用您的 Microsoft Store for Business Admin account，登入 [Microsoft store For business](https://businessstore.microsoft.com) 。
-2. 選取 [ **管理** ]。
-3. 選取 [ **設定** ]，然後選取 [ **發佈** ]。
-4. 在 [ **管理工具** ] 下，確認已列出 Intune，且狀態 **為 [作用中]** 。  
+2. 選取 [ **管理**]。
+3. 選取 [ **設定** ]，然後選取 [ **發佈**]。
+4. 在 [ **管理工具**] 下，確認已列出 Intune，且狀態 **為 [作用中]**。  
 
 <span id="2" />
 
@@ -92,10 +92,10 @@ Uninstall |  已從選取群組中的裝置卸載應用程式。 | MMD – *應�
 **若要將應用程式指派給您的使用者**
 
 1. 登入 [Microsoft Managed Desktop Admin 入口網站](https://aka.ms/mmdportal)。
-2. 在 [受管理的桌面] 窗格中，選取 [ **app** ]。
-3. 在 [應用程式工作負載] 中，選取您要指派使用者的應用程式，然後選取 [ **指派使用者群組** ]。
+2. 在 [受管理的桌面] 窗格中，選取 [ **app**]。
+3. 在 [應用程式工作負載] 中，選取您要指派使用者的應用程式，然後選取 [ **指派使用者群組**]。
 4. 針對特定的應用程式，選取 [可用]、[必要]、[卸載]) 中的工作分派 (類型，並指派適當的群組。
-5. 在 [指派應用程式] 窗格中，選取 **[確定]** 。
+5. 在 [指派應用程式] 窗格中，選取 **[確定]**。
 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>開始使用 Microsoft 受管理電腦的步驟

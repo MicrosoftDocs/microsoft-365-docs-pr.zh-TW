@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 本文提供安全地最佳化 Microsoft 365 網路連線的最新指導方針。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6f104f53abd0a9aa2376b09c93af96d7f8178e8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: e0391133721270c0fdfb288b5d26ab23f301a844
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519736"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923287"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 網路連線原則
 
@@ -226,9 +226,9 @@ Microsoft 提供大範圍的 Microsoft 365 安全性功能，並且提供採用�
   - 降低公司 WAN 邊緣的網路安全性需求
   - 仍然需要某些網路周邊安全性裝置 (例如防火牆)，但是負載會減少
   - 確保 Microsoft 365 流量的本機出口
-- 改進可以逐漸實施，如同[增量最佳化](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt)一節中所述。 取決於您的網路架構，某些最佳化技術可能會提供更佳的成本/效益比，因此您應該選擇對組織最有意義的最佳化。
+- 改進可以逐漸實施，如同[增量最佳化](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt)一節中所述。 某些最佳化技術可能會提供更佳的成本/效益比，取決於您的網路架構，您應該選擇對貴組織最有意義的最佳化。
 
-如需有關 Microsoft 365 安全性與合規性的詳細資訊，請參閱文章 [Microsoft 365 安全性](https://docs.microsoft.com/microsoft-365/security)和 [Microsoft 365 合規性](https://docs.microsoft.com/microsoft-365/compliance)。
+如需有關 Microsoft 365 安全性與合規性的詳細資訊，請參閱文章 [Microsoft 365 安全性](../security/index.yml)和 [Microsoft 365 合規性](../compliance/index.yml)。
   
 ## <a name="incremental-optimization"></a>增量最佳化
 <a name="BKMK_IncOpt"> </a>

@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 深入了解如何在 SharePoint Online 新式網站頁面中最佳化自訂延伸模組的效能。
-ms.openlocfilehash: 92d328c64c89a1a01bbcd50fb7ad04affdf69af8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287194"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923051"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式網站頁面中最佳化自訂延伸模組的效能
 
@@ -88,7 +88,7 @@ SharePoint 架構 (SPFx) 延伸模組可用於延伸 SharePoint 使用者體驗�
 
 - **延伸模組大小和相依性**
   - 若要下載最佳的靜態資源，需要使用 Office 365 CDN。 公用 CDN 來源適用於 _js/css_ 檔案。 如需使用 Office 365 CDN 的詳細資訊，請參閱[使用 Office 365 內容傳遞網路 (CDN) 搭配 SharePoint Online](use-microsoft-365-cdn-with-spo.md)。
-  - 重複使用架構，例如隨附於 SharePoint 架構 (SPFx) 的 _React_ 和 _Fabric imports_。 如需詳細資訊，請參閱 [SharePoint 架構的概觀](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview) (英文)。
+  - 重複使用架構，例如隨附於 SharePoint 架構 (SPFx) 的 _React_ 和 _Fabric imports_。 如需詳細資訊，請參閱 [SharePoint 架構的概觀](/sharepoint/dev/spfx/sharepoint-framework-overview) (英文)。
   - 請確保使用最新版本的 SharePoint 架構，並且在新版本可用時升級。
 - **資料擷取/快取**
   - 如果延伸模組依賴額外伺服器呼叫，以擷取資料進行顯示，請確保這些伺服器 API 是快速的及/或實作用戶端快取 (例如針對大型集合使用 _localStorage_ 或 _IndexDB_)。
@@ -115,7 +115,7 @@ SharePoint 架構 (SPFx) 延伸模組可用於延伸 SharePoint 使用者體驗�
 
 [調整 Office 365 效能](tune-microsoft-365-performance.md)
 
-[SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)
 
 [內容傳遞網路](content-delivery-networks.md)
 

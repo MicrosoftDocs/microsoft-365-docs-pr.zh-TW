@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的密碼重設。
-ms.openlocfilehash: 5d98dcc50f16bc08da787a928beeeacf825201c9
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: efcaaf9ed1873c0908bb0e64644b8e10de280a01
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487421"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921489"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼重設
 
@@ -71,11 +71,11 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
 
 1. 從您瀏覽器的私用執行個體開啟 [https://portal.azure.com](https://portal.azure.com)，然後使用全域系統管理員帳戶的認證登入。
 2. 在 azure 入口網站中，選取 [ **azure Active Directory**  >  **群組**] [  >  **新增群組**]。
-3. 將 [群組類型]**** 設為 [安全性]****、[群組名稱]**** 設為 [PWReset]****，以及將 [成員類型]**** 設為 [指派]****。
+3. 將 [群組類型] 設為 [安全性]、[群組名稱] 設為 [PWReset]，以及將 [成員類型] 設為 [指派]。
 4. 選取 [ **成員**]，尋找並選取 [ **使用者 3**]，選取 [ **選取**]，然後選取 [ **建立**]。
-5. 關閉 [群組]**** 窗格。
+5. 關閉 [群組] 窗格。
 6. 在 [Azure Active Directory] 窗格中，選取左側導覽中的 [ **密碼重設** ]。
-7. 在 [密碼重設屬性]**** 窗格中，選擇 [已啟用自助式密碼重設]**** 選項底下的 [已選取]****。
+7. 在 [密碼重設屬性] 窗格中，選擇 [已啟用自助式密碼重設] 選項底下的 [已選取]。
 8. 選取 [**選取群組**]，選取 [ **PWReset** ] 群組，然後選取 [**選取**  >  **儲存**]。
 9. 關閉私用瀏覽器執行個體。
 
@@ -84,13 +84,13 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
 1. 開啟新的私用瀏覽器執行個體，並瀏覽至 [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup)。
 1. 以「使用者 3」的認證登入。
 1. 在 [ **需要詳細資訊**] 中，選取 **[下一步]**。 
-1. 在 [避免您失去帳戶的存取權]**** 中，將認證電話設為您的手機號碼，並將認證電子郵件設為您的公司或個人電子郵件帳戶。
+1. 在 [避免您失去帳戶的存取權] 中，將認證電話設為您的手機號碼，並將認證電子郵件設為您的公司或個人電子郵件帳戶。
 1. 驗證兩者後，選取 [ **看起來不錯**]，然後關閉瀏覽器的私人實例。
 1. 在新的私用瀏覽器實例中，移至 [https://aka.ms/sspr](https://aka.ms/sspr) 。
 1. 輸入使用者3帳戶名稱，並輸入 CAPTCHA 中的字元，然後選取 **[下一步]**。
 1. 若要 **驗證步驟 1**，請選取 [ **電子郵件我的備選電子郵件**]，然後選取 [ **電子郵件**]。 當您收到電子郵件時，請輸入驗證碼，然後選取 **[下一步]**。
 1. 在 [ **回到您的帳戶**] 中，輸入使用者3帳戶的新密碼，然後選取 **[完成]**。 請記下「使用者 3」帳戶變更的密碼，並儲存到安全的位置。
-1. 在相同瀏覽器的新分頁中，前往 [https://portal.office.com](https://portal.office.com)，並以「使用者 3」帳戶名稱及新密碼登入。 您應該會看到 [Microsoft Office 首頁]**** 頁面。
+1. 在相同瀏覽器的新分頁中，前往 [https://portal.office.com](https://portal.office.com)，並以「使用者 3」帳戶名稱及新密碼登入。 您應該會看到 [Microsoft Office 首頁] 頁面。
 
 ## <a name="next-step"></a>下一步
 
@@ -102,4 +102,4 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

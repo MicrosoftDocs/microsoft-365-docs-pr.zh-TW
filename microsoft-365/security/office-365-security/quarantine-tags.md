@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: 系統管理員可以瞭解如何使用隔離標記來控制使用者可對其隔離郵件執行的動作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 207f22c9acaa183e195f5a2ee33be65cdf4991dd
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 8024894cdb4a4718422c250eff87fa6da5443a84
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289410"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922409"
 ---
 # <a name="quarantine-tags"></a>隔離標記
 
@@ -61,7 +61,7 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **隔離標記** ] 頁面，請開啟] <https://protection.office.com/quarantineTags> 。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 若要查看、建立、修改或移除隔離標記，您必須是「[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)」中「**組織管理**」或「**安全性管理員**」角色的成員。
 
@@ -130,13 +130,13 @@ _EndUserQuarantinePermissionsValue_ 參數會使用從二進位值轉換而來�
 
 |權限|沒有存取權|限制存取|完全存取|
 |---|:---:|:---:|:---:|
-|PermissionToAllowSender|0|0|1 |
-|PermissionToBlockSender|0|1 |1 |
-|PermissionToDelete|0|1 |1 |
+|PermissionToAllowSender|0|0|1|
+|PermissionToBlockSender|0|1|1|
+|PermissionToDelete|0|1|1|
 |PermissionToDownload<sup>\*</sup>|0|0|0|
-|PermissionToPreview|0|1 |1 |
-|PermissionToRelease<sup>\*\*</sup>|0|0|1 |
-|PermissionToRequestRelease<sup>\*\*</sup>|0|1 |0|
+|PermissionToPreview|0|1|1|
+|PermissionToRelease<sup>\*\*</sup>|0|0|1|
+|PermissionToRequestRelease<sup>\*\*</sup>|0|1|0|
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |二進位值|00000000|01101010|11101100|
 |要使用的十進位數值|0|106|236|
@@ -155,7 +155,7 @@ New-QuarantineTag -Name NoAccess -EndUserQuarantinePermissionsValue 0
 
 若為自訂許可權，請使用上表取得與您想要的許可權相對應的二進位值。 將二進位值轉換為十進位值，並使用 _EndUserQuarantinePermissionsValue_ 參數的十進位值。
 
-如需詳細的語法及參數資訊，請參閱 [QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag)。
+如需詳細的語法及參數資訊，請參閱 [QuarantineTag](/powershell/module/exchange/new-quarantinetag)。
 
 #### <a name="use-the-enduserquarantinepermissions-parameter"></a>使用 EndUserQuarantinePermissions 參數
 
@@ -203,7 +203,7 @@ $<VariableName> = New-QuarantinePermissions [-PermissionToAllowSender <$true | $
 
 您也可以在建立之後，使用 **QuarantinePermissions** 指令程式來修改現有的權限物件變數。
 
-如需詳細的語法及參數資訊，請參閱 [QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/new-quarantinepermissions) and [Set-QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/set-quarantinepermissions)。
+如需詳細的語法及參數資訊，請參閱 [QuarantinePermissions](/powershell/module/exchange/new-quarantinepermissions) and [Set-QuarantinePermissions](/powershell/module/exchange/set-quarantinepermissions)。
 
 ##### <a name="step-b-use-the-variable-in-the-new-quarantinetag-command"></a>步驟 B：使用 New-QuarantineTag 命令中的變數
 
@@ -219,7 +219,7 @@ New-QuarantineTag -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableN
 New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess
 ```
 
-如需詳細的語法及參數資訊，請參閱 [QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag)。
+如需詳細的語法及參數資訊，請參閱 [QuarantineTag](/powershell/module/exchange/new-quarantinetag)。
 
 ## <a name="step-2-assign-a-quarantine-tag-to-supported-features"></a>步驟2：指派隔離標記至支援的功能
 
@@ -233,7 +233,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 |反網路釣魚原則： <ul><li>_AuthenticationFailAction_ 的 [欺騙情報防護](set-up-anti-phishing-policies.md#spoof-settings) () </li><li>[類比保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)：<sup>\*</sup> <ul><li>**如果由類比的使用者傳送電子郵件** (_TargetedUserProtectionAction_) </li><li>**如果模擬的網域傳送電子郵件** (_TargetedDomainProtectionAction_) </li><li>**信箱智慧** \>**如果由類比的使用者傳送電子郵件** (_MailboxIntelligenceProtectionAction_) </li></ul></li></ul></ul>|否|不適用|
 |[反惡意程式碼原則](configure-anti-malware-policies.md)：永遠會隔離所有偵測到的郵件。|否|不適用|
 |[適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](atp-for-spo-odb-and-teams.md)|否|不適用|
-|[郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也稱為傳輸規則) 具有動作：將 **郵件傳遞至主控隔離** (_隔離_) 。|否|不適用|
+|[郵件流程規則](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也稱為傳輸規則) 具有動作：將 **郵件傳遞至主控隔離** (_隔離_) 。|否|不適用|
 |
 
 <sup>\*</sup> 模擬保護設定只適用于 Microsoft Defender for Office 365 中的反網路釣魚原則。
@@ -291,7 +291,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -SpamQuarantineTag NoAccess -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag NoAction -PhishSpamAction Quarantine -PhishQuarantineTag NoAction -BulkSpamAction Quarantine -BulkQuarantineTag NoAccess
 ```
 
-如需詳細的語法及參數資訊，請參閱 [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱 [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)。
 
 此範例會修改名為「人力資源」的現有垃圾郵件篩選原則。 垃圾郵件隔離判定的動作會設定為 [隔離]，而且會指派名為 NoAccess 的自訂隔離標記。
 
@@ -299,7 +299,7 @@ New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -
 Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine -SpamQuarantineTag NoAccess
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱 [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)。
 
 ## <a name="configure-global-quarantine-notification-settings-in-the-security--compliance-center"></a>在安全性 & 規範中心設定全域隔離通知設定
 
@@ -369,7 +369,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
   Get-QuarantineTag -QuarantineTagType GlobalQuarantineTag
   ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱 [Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy)。
 
 ## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>移除安全性 & 規範中心內的隔離標記
 
@@ -399,7 +399,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 Remove-QuarantineTag -Identity "<TagName>"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/remove-quarantinetag)。
+如需詳細的語法及參數資訊，請參閱 [Remove-QuarantineTag](/powershell/module/exchange/remove-quarantinetag)。
 
 ## <a name="quarantine-tag-permission-details"></a>隔離標記許可權詳細資料
 

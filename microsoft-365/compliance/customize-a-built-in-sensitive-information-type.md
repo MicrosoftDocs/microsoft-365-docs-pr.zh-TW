@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何建立自訂機密資訊類型，讓您能夠使用符合貴組織需求的規則。
-ms.openlocfilehash: 40584b430af6e822b115e014c20481c027222aae
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 79d79a220e0cd8de0755f6cdac99cf7cceb2997f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423402"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922657"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 
@@ -33,7 +33,7 @@ ms.locfileid: "50423402"
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>匯出目前規則的 XML 檔案
 
-若要匯出 XML，您必須[透過遠端 PowerShell 連線到安全性與合規性中心。](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+若要匯出 XML，您必須[透過遠端 PowerShell 連線到安全性與合規性中心。](/powershell/exchange/connect-to-scc-powershell)。
   
 1. 在 PowerShell 中，輸入下列項目以在畫面上顯示貴組織的規則。如果您尚未建立自己的規則，則只會看到標示為「Microsoft 規則套件」的預設、內建規則。
 
@@ -201,7 +201,7 @@ ms.locfileid: "50423402"
   
 1. 以 Unicode 編碼方式將它儲存為 .xml 檔案。這非常重要，因為如果檔案是以其他編碼方式儲存，則規則不會運作。
     
-2. [透過遠端 PowerShell 連線到安全性與合規性中心。](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+2. [透過遠端 PowerShell 連線到安全性與合規性中心。](/powershell/exchange/connect-to-scc-powershell)
     
 3. 在 PowerShell 中，輸入下列命令。
 

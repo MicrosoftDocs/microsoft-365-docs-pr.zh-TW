@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 系統管理員可以了解 Exchange Online Protection (EOP) 中提供的反詐騙功能，可協助緩解來自詐騙寄件者和網域的網路釣魚攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b20ae766ee308e9c59ed0d495df7c5a97c79b00
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1d048a65b34bc97a619855216945d1cc988bf9e2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287062"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921381"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的反詐騙保護
 
@@ -94,7 +94,7 @@ Microsoft 將詐騙郵件區分為兩種類型：
   - 寄件者和收件者位於同一個網域中的子網域：
     > 寄件者：laura@marketing.fabrikam.com <br> 收件者：julia@engineering.fabrikam.com
 
-  - 寄件者和收件者位於隸屬相同組織的不同網域中 (也就是兩個網域都設定為相同組織中[公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) (部分機器翻譯))：
+  - 寄件者和收件者位於隸屬相同組織的不同網域中 (也就是兩個網域都設定為相同組織中[公認的網域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) (部分機器翻譯))：
     > 寄件者: sender @ microsoft.com <br> 收件者: recipient @ bing.com
 
     電子郵件地址中會使用空格，以避免垃圾郵件機器人收集。
@@ -150,7 +150,7 @@ EOP 組織可以在 [安全性與合規性中心] 的 [報告] 儀表板中使�
 
   - 請查看 DMARC.org 上的常見問題集：[我操作郵寄清單，並想要與 DMARC 互相操作，該怎麼做？](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)。
 
-  - 閱讀此部落格文章的指示：[郵寄清單操作人員與 DMARC 互相操作以避免失敗的提示](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)。
+  - 閱讀此部落格文章的指示：[郵寄清單操作人員與 DMARC 互相操作以避免失敗的提示](/archive/blogs/tzink/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures)。
 
   - 若考慮在郵寄清單伺服器上安裝更新以支援 ARC，請參閱 <http://arc-spec.org>。
 

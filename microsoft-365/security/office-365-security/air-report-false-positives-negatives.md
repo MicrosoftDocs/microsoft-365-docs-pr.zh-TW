@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 8a91a55d9598b5e780474315ddf1f7019e593fed
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 755be1dde256bc612ba85e1b1af485cfaacf7da9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406159"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921861"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自動化調查和回應功能中報告誤報/負片
 
@@ -53,9 +53,9 @@ ms.locfileid: "50406159"
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>調整提醒以避免定期誤報
 
-如果透過合法的使用觸發警示，或警示不准確，您可以 [在雲端 App 安全性入口網站中管理提醒](https://docs.microsoft.com/cloud-app-security/managing-alerts)。
+如果透過合法的使用觸發警示，或警示不准確，您可以 [在雲端 App 安全性入口網站中管理提醒](/cloud-app-security/managing-alerts)。
 
-如果您的組織使用的是 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection) ，除了 Office 365 之外，在裝置上會將檔案、IP 位址、URL 或網域視為惡意程式碼，即使它是安全的，您還是可以 [使用裝置的「允許」動作來建立自訂指示器](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)。
+如果您的組織使用的是 [Microsoft Defender For Endpoint](/windows/security/threat-protection) ，除了 Office 365 之外，在裝置上會將檔案、IP 位址、URL 或網域視為惡意程式碼，即使它是安全的，您還是可以 [使用裝置的「允許」動作來建立自訂指示器](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)。
 
 ## <a name="undo-a-remediation-action"></a>復原修正動作
 

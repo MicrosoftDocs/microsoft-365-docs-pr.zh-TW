@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 32686e76018d8b6a361ea99e6b00271b9547ed95
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: ed07361f8c433a318342ae3c8ad750549992c285
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663058"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922047"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>雙機碼的常見問題
 
@@ -73,7 +73,7 @@ DKE 標籤會當地語系化為與 Microsoft 資訊保護中其他敏感度標�
 
 ## <a name="how-do-i-roll-my-dke-keys"></a>我要如何滾我的 DKE 機碼？
 
-如需滾動 (（也稱為「旋轉」或「重新加密」）) 您儲存在 Azure 中的機碼的指示，請參閱 [Azure 資訊保護租使用者金鑰的作業](https://docs.microsoft.com/azure/information-protection/operations-customer-managed-tenant-key)。
+如需滾動 (（也稱為「旋轉」或「重新加密」）) 您儲存在 Azure 中的機碼的指示，請參閱 [Azure 資訊保護租使用者金鑰的作業](/azure/information-protection/operations-customer-managed-tenant-key)。
 
 如需為 DKE 服務建立新機碼的資訊，請參閱 [租使用者和重要設定](double-key-encryption.md#tenant-and-key-settings) 。
 

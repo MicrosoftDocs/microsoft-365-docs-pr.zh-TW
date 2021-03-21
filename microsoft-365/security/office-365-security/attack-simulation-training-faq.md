@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Microsoft 365 E5 或 Microsoft Defender for Office 365 Plan 2 組織中有關攻擊模擬和訓練的部署考慮和常見問題。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b57252252d8a22ade4b8e1a18f42d7fdce91324e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454711"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921369"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻擊模擬訓練部署考慮和常見問題
 
@@ -72,7 +72,7 @@ URL 信譽服務可能會識別攻擊模擬訓練所使用的一或多個 URLs �
 - 來賓使用者。
 - 在 Azure Active Directory (Azure AD) 中不再使用中的使用者。
 
-模擬中只會包含有效的非來賓使用者，具有有效的信箱。 如果您使用通訊群組或擁有郵件功能的安全性群組來為使用者設定目標，您可以使用[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中的[Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember) Cmdlet，以查看和驗證通訊群組成員。
+模擬中只會包含有效的非來賓使用者，具有有效的信箱。 如果您使用通訊群組或擁有郵件功能的安全性群組來為使用者設定目標，您可以使用[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中的[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) Cmdlet，以查看和驗證通訊群組成員。
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>攻擊模擬的訓練報告問題
 

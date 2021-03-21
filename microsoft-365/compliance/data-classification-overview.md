@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類儀表板可讓您深入了解貴組織所發現及分類的敏感性資料。
-ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999393"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922677"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解您的資料 - 資料分類概觀
 
@@ -37,7 +37,7 @@ ms.locfileid: "48999393"
 
 您也可以在 [資料分類] 頁面上管理這些功能：
 - [可訓練分類器](classifier-learn-about.md)
-- [敏感性資訊類型](what-the-sensitive-information-types-look-for.md)
+- [敏感性資訊類型](./sensitive-information-type-entity-definitions.md)
 
 您可以在 [Microsoft 365 合規性中心] 或 [Microsoft 365 安全性中心] > [分類] > [資料分析] 中找到資料分析。
 
@@ -49,7 +49,7 @@ ms.locfileid: "48999393"
 
 ## <a name="prerequisites"></a>必要條件
 
-許多不同的訂閱都支援端點 DLP。 若要查看端點 DLP 的授權選項，請參閱[資訊保護授權以取得指導方針](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。 
+許多不同的訂閱都支援端點 DLP。 若要查看端點 DLP 的授權選項，請參閱[資訊保護授權以取得指導方針](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。 
 
 ### <a name="permissions"></a>權限
 
@@ -89,7 +89,7 @@ Microsoft 365 隨附許多敏感性資訊類型的定義，例如包含社會安
 
 如需敏感度標籤的詳細資訊，請參閱[了解敏感度標籤](sensitivity-labels.md)。
 
-SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資料分類頁面中顯示對應資料。 如需詳細資訊，請參閱[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md) (部分機器翻譯)。
+SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資料分類頁面中顯示對應資料。 如需詳細資訊，請參閱[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
 
 敏感度標籤卡片會依敏感度等級顯示項目數量 (電子郵件或文件)。
 
@@ -97,7 +97,7 @@ SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資�
 
 > [!NOTE]
 > 如果您未建立或發佈任何敏感度標籤，或沒有套用敏感度標籤的內容，則此卡片會顯示「未偵測到敏感度標籤」訊息。 若要開始使用敏感度標籤，請參閱：
->- [開始使用敏感度標籤](get-started-with-sensitivity-labels.md)或針對 AIP [設定 Azure 資訊保護原則](https://docs.microsoft.com/azure/information-protection/configure-policy)
+>- [開始使用敏感度標籤](get-started-with-sensitivity-labels.md)或針對 AIP [設定 Azure 資訊保護原則](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>套用至內容的最高保留標籤
 

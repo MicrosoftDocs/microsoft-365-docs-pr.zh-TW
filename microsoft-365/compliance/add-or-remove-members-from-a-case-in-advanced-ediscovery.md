@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在管理高級 eDiscovery 案例時，新增或移除可以存取案例的成員。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 53119bfa61e259eb7a22dea37ee99b0d7b533da6
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 06199ebfc9bdf24f1e4fb245f3b373c4129ebc9e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423382"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923493"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>從案例新增或移除成員
 
-您可以新增或移除成員，以管理可以存取案例的人員。 不過，您必須將使用者新增至 [安全性與合規性中心] 的 [ **許可權** ] 頁面上的 [ediscovery 管理員] 角色群組，才可存取高級 eDiscovery 案例 (並在案例中執行工作) 。 如需詳細資訊，請參閱 [在安全性 & 規範中心指派 eDiscovery 許可權](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
+您可以新增或移除成員，以管理可以存取案例的人員。 不過，您必須將使用者新增至 [安全性與合規性中心] 的 [ **許可權** ] 頁面上的 [ediscovery 管理員] 角色群組，才可存取高級 eDiscovery 案例 (並在案例中執行工作) 。 如需詳細資訊，請參閱[在安全性與合規性中心指派電子文件探索權限](./assign-ediscovery-permissions.md)。
 
 1. 在 [ **高級 eDiscovery** ] 頁面上，移至您要新增成員的案例。
 
