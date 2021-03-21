@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：設定 Microsoft Azure 基礎結構，以裝載 Microsoft 365 的高可用性同盟驗證。
-ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332337"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929105"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性同盟驗證階段 1：設定 Azure
 
@@ -109,7 +109,7 @@ Azure 必須布建下列基本元件：
 現在，讓我們開始組建 Azure 基礎結構，以裝載 Microsoft 365 的同盟驗證。
   
 > [!NOTE]
-> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱 [Azure PowerShell 入門](https://docs.microsoft.com/powershell/azure/get-started-azureps)。 
+> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱 [Azure PowerShell 入門](/powershell/azure/get-started-azureps)。 
   
 首先，啟動 Azure PowerShell 提示並登入您的帳戶。
   
@@ -253,7 +253,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> 個別使用者的聯盟驗證不會仰賴任何內部部署資源。 不過，如果這種點對點 VPN 連線無法使用，VNet 中的網域控制站將不會收到內部部署 Active Directory 網域服務中所進行之使用者帳戶和群組的更新。 為了確保不會發生這種情況，您可以為網站對網站 VPN 連線設定高可用性。 如需詳細資訊，請參閱[高度可用的跨單位和 VNet-VNet 連線](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> 個別使用者的聯盟驗證不會仰賴任何內部部署資源。 不過，如果這種點對點 VPN 連線無法使用，VNet 中的網域控制站將不會收到內部部署 Active Directory 網域服務中所進行之使用者帳戶和群組的更新。 為了確保不會發生這種情況，您可以為網站對網站 VPN 連線設定高可用性。 如需詳細資訊，請參閱[高度可用的跨單位和 VNet-VNet 連線](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 接著，從顯示的以下命令中，記錄虛擬網路 Azure VPN 閘道的公用 IPv4 位址。
   
@@ -261,7 +261,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-接著，設定內部部署 VPN 裝置與 Azure VPN 閘道連線。如需詳細資訊，請參閱[設定您的 VPN 裝置](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
+接著，設定內部部署 VPN 裝置與 Azure VPN 閘道連線。如需詳細資訊，請參閱[設定您的 VPN 裝置](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
   
 若要設定您的內部部署 VPN 裝置，您需要下列項目︰
   
@@ -314,8 +314,6 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 [Microsoft 365 開發/測試環境的同盟身分識別](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 解決方案與架構中心](../solutions/solution-architecture-center.md)
+[Microsoft 365 解決方案與架構中心](../solutions/index.yml)
 
 [瞭解 Microsoft 365 身分識別和 Azure Active Directory](about-microsoft-365-identity.md)
-
-

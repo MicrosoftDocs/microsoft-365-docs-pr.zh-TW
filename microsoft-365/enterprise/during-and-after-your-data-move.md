@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 資料移動是指 Microsoft 將租使用者的服務和相關資料移至新的資料中心地理位置時，會發生後端作業。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca3159aeb951fb0cb3bf3aba953979dabc6ba024
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: 14563a695e5c092f9bddfbdfdcb758f90cea32c0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349253"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929417"
 ---
 # <a name="during-and-after-your-data-move"></a>資料移動期間和之後
 
@@ -38,7 +38,7 @@ ms.locfileid: "49349253"
 |日本  <br/> |2022年7月1日  <br/> |
 |印度  <br/> |2022年7月1日  <br/> |
 |加拿大  <br/> |2022年7月1日  <br/> |
-|南韓  <br/> |2022年7月1日  <br/> |
+|韓國  <br/> |2022年7月1日  <br/> |
 |英國  <br/> |2022年7月1日  <br/> |
 |法國  <br/> |2022年7月1日  <br/> |
 |阿拉伯聯合大公國  <br/> |2022年7月1日  <br/> |
@@ -114,7 +114,7 @@ ms.locfileid: "49349253"
 
 ## <a name="skype-for-business"></a>商務用 Skype
 
-商務用 Skype 移動已不再可用。  2021年7月31日，[商務用 Skype Online 將會停用](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement)。 在這段時間之後，就無法再存取服務。 
+商務用 Skype 移動已不再可用。  2021年7月31日，[商務用 Skype Online 將會停用](/lifecycle/announcements/skype-for-business-online-retirement)。 在這段時間之後，就無法再存取服務。 
   
 ## <a name="related-topics"></a>相關主題 
  
@@ -122,6 +122,6 @@ ms.locfileid: "49349253"
     
 [資料移動一般常見問題集](data-move-faq.md)
   
-[Microsoft Dynamics CRM Online 的新 datacenter geos](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Microsoft Dynamics CRM Online 的新 datacenter geos](/power-platform/admin/new-datacenter-regions)
   
 [依地區的 Azure 服務](https://azure.microsoft.com/regions/)

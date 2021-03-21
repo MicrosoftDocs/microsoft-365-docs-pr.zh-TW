@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51a6bc33778248a69e533d9e2077365a63b97e30
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ed1eeb29119d477673bb04d9474bd38438db9fd9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50424128"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928937"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
@@ -41,9 +41,9 @@ ms.locfileid: "50424128"
 
 若要管理自訂偵測，您必須被指派其中一個角色：
 
-- **安全性管理員**：具有此 [Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理 Microsoft 365 安全性中心及其他入口網站和服務中的安全性設定。
+- **安全性管理員**：具有此 [Azure Active Directory 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理 Microsoft 365 安全性中心及其他入口網站和服務中的安全性設定。
 
-- **安全操作員**-具有此 [Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理提醒，並具有安全相關功能的全域唯讀許可權，包括 Microsoft 365 Security center 中的所有資訊。 只有在 Microsoft Defender for Endpoint 中關閉以角色為基礎的存取控制 (RBAC) 時，此角色才足以管理自訂偵測。 如果您已設定 RBAC，您也需要使用 Defender for Endpoint 的「 **管理安全性設定** 」許可權。
+- **安全操作員**-具有此 [Azure Active Directory 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理提醒，並具有安全相關功能的全域唯讀許可權，包括 Microsoft 365 Security center 中的所有資訊。 只有在 Microsoft Defender for Endpoint 中關閉以角色為基礎的存取控制 (RBAC) 時，此角色才足以管理自訂偵測。 如果您已設定 RBAC，您也需要使用 Defender for Endpoint 的「 **管理安全性設定** 」許可權。
 
 若要管理必要的許可權， **全域管理員** 可以：
 
@@ -138,17 +138,17 @@ DeviceEvents
 
 #### <a name="actions-on-devices"></a>裝置上的動作
 這些動作會套用至 `DeviceId` 查詢結果欄中的裝置：
-- **隔離裝置**—使用 Microsoft Defender for Endpoint 來套用完整網路隔離，以防止裝置連接至任何應用程式或服務。 [深入瞭解 Microsoft Defender for Endpoint machine 隔離](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- **收集調查套件**—收集 ZIP 檔案中的裝置資訊。 [深入瞭解 Microsoft Defender for Endpoint 調查套件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **隔離裝置**—使用 Microsoft Defender for Endpoint 來套用完整網路隔離，以防止裝置連接至任何應用程式或服務。 [深入瞭解 Microsoft Defender for Endpoint machine 隔離](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **收集調查套件**—收集 ZIP 檔案中的裝置資訊。 [深入瞭解 Microsoft Defender for Endpoint 調查套件](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **執行防病毒掃描**-在裝置上執行完整的 Windows Defender 防病毒掃描
 - **開始調查**--在裝置上開始 [自動調查](mtp-autoir.md)
-- **限制應用程式執行**—設定裝置上的限制，只允許以 Microsoft 發行的憑證簽署的檔案執行。 [深入瞭解 Microsoft Defender for Endpoint 的應用程式限制](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
+- **限制應用程式執行**—設定裝置上的限制，只允許以 Microsoft 發行的憑證簽署的檔案執行。 [深入瞭解 Microsoft Defender for Endpoint 的應用程式限制](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>檔上的動作
 選取此選項時，您可以選擇對查詢結果的、、或欄中的檔案套用 **隔離檔** 動作 `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` 。 此巨集指令會從目前的位置刪除檔案，並將複本放入隔離區。
 
 #### <a name="actions-on-users"></a>使用者的動作
-選取此選項時，會對使用者于、或欄中的查詢結果，對使用者採取「將 **使用者標示為受損** 」動作 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` 。 此動作會在 Azure Active Directory 中將使用者風險層級設為「高」，以觸發對應的身分 [識別保護原則](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+選取此選項時，會對使用者于、或欄中的查詢結果，對使用者採取「將 **使用者標示為受損** 」動作 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` 。 此動作會在 Azure Active Directory 中將使用者風險層級設為「高」，以觸發對應的身分 [識別保護原則](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
 > Microsoft 365 Defender 目前不支援自訂偵測規則的 allow 或 block 動作。

@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 40897185ab885ee2b6880ecd5f25d95fbe3d771e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3c540066a7425c5688ce246ceec1793de87549f5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929571"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928901"
 ---
 # <a name="device-profile-page"></a>裝置設定檔頁面面
 
@@ -60,7 +60,7 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 
 * **裝置詳細資料** -網域、OS、在第一次看到裝置時的時間戳記、IP 位址、資源。 在 Microsoft Defender for Endpoint 中註冊的裝置也會顯示健康狀態。 在 Microsoft Defender 身分識別中註冊的裝置會顯示 SAM 名稱，以及在第一次建立裝置時的時間戳記。
 * **網路活動** -在網路上第一次或最近一次看到裝置的時間戳記。
-* **目錄資料** (*僅針對身分識別*) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) 旗標、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)和群組成員資格的裝置註冊。
+* **目錄資料** (*僅針對身分識別*) - [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) 旗標、 [spn](/windows/win32/ad/service-principal-names)和群組成員資格的裝置註冊。
 
 ## <a name="response-actions"></a>回應動作
 
@@ -69,7 +69,7 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 ![裝置設定檔的動作欄圖像](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * 只有在裝置註冊至 Microsoft Defender for Endpoint 時，才可使用[回應動作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)。
+> * 只有在裝置註冊至 Microsoft Defender for Endpoint 時，才可使用[回應動作](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)。
 > * 在 Microsoft Defender for Endpoint 中註冊的裝置可能會根據裝置的作業系統和版本號碼，顯示不同的回應動作數目。
 
 在裝置設定檔頁面面上可用的動作包括：
@@ -80,8 +80,8 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 * **限制應用程式執行** -防止未由 Microsoft 簽署的應用程式執行。
 * **執行防病毒掃描** -更新 Windows Defender 防病毒定義，並立即執行防病毒掃描。 選擇 [快速掃描] 或 [完全掃描]。
 * 收集有關裝置的 **調查套件** 收集資訊。 完成調查後，您可以下載。
-* **Initiate Live Response Session** -在裝置上載入遠端命令介面，以進行 [深入的安全性調查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)。
-* **啟動自動化調查** -自動 [調查和 remediates 威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 雖然您可以手動觸發從這個頁面執行的自動調查，但 [某些警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) 會自行觸發自動調查。
+* **Initiate Live Response Session** -在裝置上載入遠端命令介面，以進行 [深入的安全性調查](/windows/security/threat-protection/microsoft-defender-atp/live-response)。
+* **啟動自動化調查** -自動 [調查和 remediates 威脅](../office-365-security/office-365-air.md)。 雖然您可以手動觸發從這個頁面執行的自動調查，但 [某些警示原則](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) 會自行觸發自動調查。
 * **動作中心** -顯示目前正在執行之回應動作的相關資訊。
 
 ## <a name="tabs-section"></a>Tabs 區段
@@ -182,5 +182,5 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 
 * [Microsoft 365 Defender 概述](microsoft-threat-protection.md)
 * [開啟 Microsoft 365 Defender](mtp-enable.md)
-* [使用即時回應調查裝置上的實體](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
-* [Office 365 中的自動調查和回應 (AIR) ](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+* [使用即時回應調查裝置上的實體](/windows/security/threat-protection/microsoft-defender-atp/live-response)
+* [Office 365 中的自動調查和回應 (AIR) ](../office-365-security/office-365-air.md)

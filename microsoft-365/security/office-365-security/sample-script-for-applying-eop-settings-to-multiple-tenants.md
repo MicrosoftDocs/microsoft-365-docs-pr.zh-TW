@@ -15,12 +15,12 @@ ms.custom:
 description: 在本文中，您將瞭解如何使用 PowerShell 將設定設定套用至 Microsoft Exchange Online Protection (EOP) 中的承租人。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4823ed09cd8a9d72aef21df3d51213cb4512b4f9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 77a1dce25901845628f8148c44a0d0783088255e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288534"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928505"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>套用 EOP 設定至多個租用戶的範例指令碼
 
@@ -33,7 +33,7 @@ ms.locfileid: "50288534"
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>對多個承租人執行指令碼或指令程式
 
-1. 若尚未安裝，請 [安裝 Exchange Online V2 模組](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
+1. 若尚未安裝，請 [安裝 Exchange Online V2 模組](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
 
 2. 使用試算表應用程式 (例如，Excel) ，使用下列詳細資料建立 .csv 檔案：
 
@@ -69,7 +69,7 @@ ms.locfileid: "50288534"
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> 您可能需要修改 `Connect-IPPSSession` 腳本中的行，使其符合您的環境。 例如，Office 365 德國要求的 _ConnectionUri_ 值不同于腳本中的目前值。 如需詳細資訊，請參閱 Connect to [Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+> 您可能需要修改 `Connect-IPPSSession` 腳本中的行，使其符合您的環境。 例如，Office 365 德國要求的 _ConnectionUri_ 值不同于腳本中的目前值。 如需詳細資訊，請參閱 Connect to [Exchange Online Powershell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

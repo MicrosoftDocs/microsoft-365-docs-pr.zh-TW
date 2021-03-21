@@ -15,12 +15,12 @@ ms.custom:
 description: 系統管理員可以在 Microsoft 合作夥伴和轉銷商的 Microsoft 365 中，查看有關委派管理工作的常見問題及解答。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 304fbba16d6c8e81e965462e3405824bd22982c9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 82fa70a8025f67610032ba59368bc74789b60f84
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405933"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929369"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常見問題集
 
@@ -53,4 +53,4 @@ ms.locfileid: "50405933"
 
 ## <a name="can-i-get-consolidated-reporting-across-all-of-my-subtenants"></a>我是否可以在所有的 subtenants 中取得整合報告？
 
-在您管理的公司內整合報告無法在 Microsoft 365 系統管理中心報告中使用。 不過，您可以使用 [Microsoft Graph](https://docs.microsoft.com/graph/overview)取得報告。
+在您管理的公司內整合報告無法在 Microsoft 365 系統管理中心報告中使用。 不過，您可以使用 [Microsoft Graph](/graph/overview)取得報告。

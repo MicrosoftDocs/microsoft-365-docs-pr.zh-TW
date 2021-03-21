@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: 瞭解如何使用 Microsoft 365 的 PowerShell，將授權指派給使用者帳戶並同時停用特定服務方案。
-ms.openlocfilehash: b027c805638284a78d4e49f4c65518be02e60392
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7486968f6f4822047a1697ee1e05129277fd11a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688476"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929429"
 ---
 # <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>在指派使用者授權時停用 Microsoft 365 服務的存取權
 
@@ -44,7 +44,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 
 接下來，取得您想要新增授權的帳戶登入名稱，也稱為使用者主要名稱 (UPN) 。
 
-接下來，編譯要啟用的服務清單。 如需授權方案的完整清單 (也稱為產品名稱) 、其包含的服務方案及其對應的易記名稱，請參閱 [產品名稱和服務方案識別碼取得授權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
+接下來，編譯要啟用的服務清單。 如需授權方案的完整清單 (也稱為產品名稱) 、其包含的服務方案及其對應的易記名稱，請參閱 [產品名稱和服務方案識別碼取得授權](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
 在下列命令區塊中，填入使用者帳戶的使用者主要名稱、SKU 元件編號，以及要啟用及移除解說文字和字元的服務方案清單 \< and > 。 然後，在 PowerShell 命令提示字元中執行產生的命令。
   
@@ -89,7 +89,7 @@ Get-MsolAccountSku
     
 - **ConsumedUnits** 是您為訂閱指派給使用者的授權數目。
     
-請注意包含您要授權之使用者的 Microsoft 365 訂閱 AccountSkuId。 此外，請確定有足夠的授權，可從**ActiveUnits** ) 指派 (減去**ConsumedUnits** 。
+請注意包含您要授權之使用者的 Microsoft 365 訂閱 AccountSkuId。 此外，請確定有足夠的授權，可從 **ActiveUnits** ) 指派 (減去 **ConsumedUnits** 。
   
 接下來，執行此命令，以查看您所有訂閱中可用之 Microsoft 365 服務方案的詳細資料：
   
@@ -109,13 +109,13 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure 版權管理 (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |*先前命名為 Office 365 ProPlus*的 Microsoft 365 應用程式 enterprise ()   <br/> |
+| `OFFICESUBSCRIPTION` <br/> |*先前命名為 Office 365 ProPlus* 的 Microsoft 365 應用程式 enterprise ()   <br/> |
 | `MCOSTANDARD` <br/> |商務用 Skype Online  <br/> |
 | `SHAREPOINTWAC` <br/> |辦公室   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    
-如需授權方案的完整清單 (也稱為產品名稱) 、其包含的服務方案及其對應的易記名稱，請參閱 [產品名稱和服務方案識別碼取得授權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
+如需授權方案的完整清單 (也稱為產品名稱) 、其包含的服務方案及其對應的易記名稱，請參閱 [產品名稱和服務方案識別碼取得授權](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
    
 現在，您已具備要停用的 AccountSkuId 和服務方案，您可以將授權指派給個別使用者或多位使用者。
   
@@ -184,7 +184,7 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
     
 - 會建立 CSV 檔案，其中包含所有已處理的使用者，並顯示其授權狀態。
     
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 PowerShell 停用 Microsoft 365 服務的存取權](disable-access-to-services-with-microsoft-365-powershell.md)
   

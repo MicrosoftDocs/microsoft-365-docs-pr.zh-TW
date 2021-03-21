@@ -21,19 +21,19 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 瞭解如何使用頁面診斷，在 SharePoint 線上新式網站頁面中優化網頁元件的效能。
-ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287146"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929057"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式網站頁面中最佳化網頁組件效能
 
 SharePoint Online 新式網站頁面包含網頁組件，對整體頁面載入時間有影響。 本文可協助您了解如何判斷頁面中的網頁組件如何影響使用者察覺延遲，以及如何修復常見問題。
 
 >[!NOTE]
->如需有關 SharePoint Online 新式入口網站效能的詳細資訊，請參閱 [SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
+>如需有關 SharePoint Online 新式入口網站效能的詳細資訊，請參閱 [SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>使用「適用於 SharePoint 的頁面診斷」工具來分析網頁組件
 
@@ -80,7 +80,7 @@ SharePoint Online 新式網站頁面包含網頁組件，對整體頁面載入�
   - 使用 _import()_ 陳述式，移動較少使用的案例，並且編輯模式程式碼 (例如屬性窗格) 以分隔區塊。
   - 檢閱 _package.json_ 檔案的相依性，以完全移除任何無作用程式碼。 將任何僅限測試/建置相依性移至 devDependencies。
   - 若要下載最佳的靜態資源，需要使用 Office 365 CDN。 公用 CDN 來源適用於 _js/css_ 檔案。 如需使用 Office 365 CDN 的詳細資訊，請參閱[使用 Office 365 內容傳遞網路 (CDN) 搭配 SharePoint Online](use-microsoft-365-cdn-with-spo.md)。
-  - 重複使用架構，例如隨附於 SharePoint 架構 (SPFx) 的 _React_ 和 _Fabric imports_。 如需詳細資訊，請參閱 [SharePoint 架構的概觀](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview) (英文)。
+  - 重複使用架構，例如隨附於 SharePoint 架構 (SPFx) 的 _React_ 和 _Fabric imports_。 如需詳細資訊，請參閱 [SharePoint 架構的概觀](/sharepoint/dev/spfx/sharepoint-framework-overview) (英文)。
   - 請確保使用最新版本的 SharePoint 架構，並且在新版本可用時升級。
 - 資料提取/快取
   - 若網頁元件依賴額外的伺服器呼叫以取得資料以供顯示，請確定這些伺服器 APIs 快取或) 或執行用戶端快取 (例如，使用 _localStorage_ 或 _IndexedDB_ 以進行較大的集合。
@@ -107,7 +107,7 @@ SharePoint Online 新式網站頁面包含網頁組件，對整體頁面載入�
 
 [調整 Office 365 效能](tune-microsoft-365-performance.md)
 
-[SharePoint 新式體驗中的效能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[SharePoint 新式體驗中的效能](/sharepoint/modern-experience-performance)
 
 [內容傳遞網路](content-delivery-networks.md)
 

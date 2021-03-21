@@ -12,26 +12,26 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: c10a10a5922755db2c901137c3dff8acee5b8445
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 10b29220e49dcb5fda8b1f7d18e52e10513fc599
+ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066856"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50939654"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Microsoft 365 的雙金鑰加密
 
 > *適用于：針對 Microsoft 365 的雙金鑰加密， [microsoft 365 相容性](https://www.microsoft.com/microsoft-365/business/compliance-management)， [Azure 資訊保護](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *相關指示： [Azure 資訊保護統一標籤用戶端 For Windows](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *相關指示： [Azure 資訊保護統一標籤用戶端 For Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
-> *服務說明： [Microsoft 365 合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+> *服務說明： [Microsoft 365 合規性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 雙金鑰加密 (DKE) 會同時使用兩個按鍵來存取受保護的內容。 Microsoft 會在 Microsoft Azure 中儲存一個金鑰，並保留另一個金鑰。 您可以使用 Double 金鑰加密服務，保留其中一個按鍵的「完全控制」。 您可以使用 Azure 資訊保護整合標籤用戶端，套用至高度機密內容的保護。
 
 雙金鑰加密可同時支援雲端和內部部署。 這些部署可協助確保在任何儲存受保護的資料時，加密的資料都保持不透明。
 
-如需預設的雲端型租使用者超級機碼的詳細資訊，請參閱 [規劃及執行 Azure 資訊保護租使用者金鑰](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。
+如需預設的雲端型租使用者超級機碼的詳細資訊，請參閱 [規劃及執行 Azure 資訊保護租使用者金鑰](/azure/information-protection/plan-implement-tenant-key)。
 
 ## <a name="when-your-organization-should-adopt-dke"></a>您的組織應採用 DKE
 
@@ -39,7 +39,7 @@ ms.locfileid: "50066856"
 
 - 傳輸規則包括需要附件查看的反惡意程式碼和垃圾郵件
 - Microsoft Delve
-- 電子文件探索
+- eDiscovery
 - 內容搜尋和索引
 - Office Web Apps （包括合著功能）
 
@@ -57,13 +57,13 @@ Microsoft 資訊保護 SDK 1.7 + 支援雙金鑰加密;與我們的 SDK 整合�
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>DKE 的系統和授權需求
 
-**Microsoft 365 的雙金鑰加密** 與 Microsoft 365 E5 搭配使用。 如果您沒有 Microsoft 365 E5 授權，您可以註冊 [試用版](https://aka.ms/M365E5ComplianceTrial)。 如需這些授權的相關資訊，請參閱 [Microsoft 365 授權指南以取得安全性 & 合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+**Microsoft 365 的雙金鑰加密** 與 Microsoft 365 E5 搭配使用。 如果您沒有 Microsoft 365 E5 授權，您可以註冊 [試用版](https://aka.ms/M365E5ComplianceTrial)。 如需這些授權的相關資訊，請參閱 [Microsoft 365 授權指南以取得安全性 & 合規性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 **Azure 資訊保護**。 DKE 與敏感度標籤搭配運作，需要 Azure 資訊保護。
 
 DKE 敏感度標籤是透過 Office 桌面應用程式中的靈敏度功能區提供給使用者。 在您要保護和使用受保護檔的每一部用戶端電腦上安裝這些必要條件。
 
-**適用于企業的 Microsoft Office 應用程式** 版本12711或更新版本 (Word PowerPoint 的桌上出版本，以及 Windows 上的 Excel) 。
+**適用于企業版的 Microsoft Office 應用程式** 版本2009或更新版本 (Word PowerPoint 的桌上出版本，以及 Windows 上的 Excel) 。
 
 **Azure 資訊保護統一標籤用戶端** 版本2.7.93.0 或更新版本。 從 [Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53018)下載並安裝統一的標籤用戶端。
 
@@ -71,7 +71,7 @@ DKE 敏感度標籤是透過 Office 桌面應用程式中的靈敏度功能區�
 
 **支援的應用程式**。 Windows 上[的 Microsoft 365 應用程式](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product)（包括 Word、Excel 及 PowerPoint）。
 
-**線上內容支援**。 支援在 Microsoft SharePoint 和商務 OneDrive 中線上儲存的檔和檔案。 您可以透過電子郵件共用加密內容，但無法在線上查看加密的檔和檔案。 相反地，您必須使用本機電腦上的桌面應用程式來查看受保護的內容。
+**線上內容支援**。 您可以在 Microsoft SharePoint 和 OneDrive 商務版中，以線上方式，儲存以雙金鑰加密為保護的檔和檔案。 您必須在上傳至這些位置之前，以支援的應用程式來標記及保護 DKE 中的檔及檔案。 您可以透過電子郵件共用加密內容，但無法在線上查看加密的檔和檔案。 相反地，您必須使用本機電腦上支援的桌面應用程式和用戶端來查看受保護的內容。
 
 ## <a name="overview-of-deploying-dke"></a>部署 DKE 的概述
 
@@ -79,7 +79,7 @@ DKE 敏感度標籤是透過 Office 桌面應用程式中的靈敏度功能區�
 
 1. 如本文所述，部署 DKE 服務。
 
-2. 建立具有雙按鍵加密的標籤。 流覽至 [Microsoft 365 規範中心](https://compliance.microsoft.com) 底下的資訊保護，並建立具有雙金鑰加密的新標籤。 請參閱 [使用敏感度標籤限制存取內容以套用加密](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)。
+2. 建立具有雙按鍵加密的標籤。 流覽至 [Microsoft 365 規範中心](https://compliance.microsoft.com) 底下的資訊保護，並建立具有雙金鑰加密的新標籤。 請參閱 [使用敏感度標籤限制存取內容以套用加密](./encryption-sensitivity-labels.md)。
 
 3. 使用雙金鑰加密標籤。 從 Microsoft Office 中的 [敏感度] 功能區中，選取雙機碼加密標籤，以保護資料。
 
@@ -292,7 +292,7 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
     > [!IMPORTANT]
     > 當您複製此內容時，請勿刪除任何 PEM 資料。
 
-9. 在 Visual Studio 程式碼中，流覽至 **Startup.cs** 檔案。 此檔案位於您在本機上複製的 DoubleKeyEncryptionService 存放庫中 DoubleKeyEncryptionService\src\customer-key-store\。
+9. 在 Visual Studio 程式碼中，流覽至 [ **啟動 .cs** ] 檔案。 此檔案位於您在本機上複製的 DoubleKeyEncryptionService 存放庫中 DoubleKeyEncryptionService\src\customer-key-store\。
 
 10. 找到下列行：
 
@@ -312,7 +312,7 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
     結束結果應如下所示。
 
-    ![公開預覽的 startup.cs 檔案](../media/dke-startupcs-usetestkeys.png)
+    ![公開預覽的 .cs 檔案](../media/dke-startupcs-usetestkeys.png)
 
 現在您已經準備好 [建立 DKE 專案](#build-the-project)。
 
@@ -362,7 +362,7 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
 ### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>部署 DKE 服務併發布金鑰存放區
 
-若為生產部署，請在協力廠商雲端部署服務，或 [發佈至內部部署系統](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli)。
+若為生產部署，請在協力廠商雲端部署服務，或 [發佈至內部部署系統](/aspnet/core/tutorials/publish-to-iis?preserve-view=true&tabs=netcore-cli&view=aspnetcore-3.1)。
 
 您可以選擇使用其他方法來部署金鑰。 選取最適合您組織的方法。
 
@@ -391,7 +391,7 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
    - [透過 ZipDeployUI 發佈](#publish-via-zipdeployui)
    - [透過 FTP 發佈](#publish-via-ftp)
-   - [透過 Visual Studio 2019 或更新版本發行](https://docs.microsoft.com/aspnet/core/tutorials/)
+   - [透過 Visual Studio 2019 或更新版本發行](/aspnet/core/tutorials/)
 
 #### <a name="publish-via-zipdeployui"></a>透過 ZipDeployUI 發佈
 
@@ -445,7 +445,7 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
 使用上述其中一種方法來部署 DKE 之後，請驗證部署及主要儲存區設定。
 
-運行：
+執行：
 
 ```powershell
 src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
@@ -500,7 +500,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 9. 在 **[隱含授** 與] 底下，選取 [ **識別碼標記** ] 核取方塊。
 
-10. 選取 **[儲存]** 以儲存變更。
+10. 選取 [儲存 **]** 以儲存變更。
 
 11. 在左窗格中，選取 [ **公開 API**]，然後選取 [應用程式識別碼 URI] 旁的 [ **設定**]。
 
@@ -520,13 +520,15 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
     在新的用戶端應用程式中：
 
-    1. 將用戶端識別碼定義為 **d3590ed6-52b3-4102-aeff-aad2292ab01c**。 這個值是 Microsoft Office 用戶端識別碼，可讓 Office 取得金鑰存放區的存取權杖。
+    1. 將用戶端識別碼定義為 `d3590ed6-52b3-4102-aeff-aad2292ab01c` 。 這個值是 Microsoft Office 用戶端識別碼，可讓 Office 取得金鑰存放區的存取權杖。
 
     2. 在 [ **授權範圍**] 底下，選取 [ **user_impersonation** ] 範圍。
 
     3. 選取 [ **新增應用程式**]。
 
     4. 選取頂端的 [ **儲存** ] 以儲存變更。
+
+    5. 重複這些步驟，但這次將用戶端識別碼定義為 `c00e9d32-3c8d-4a7d-832b-029040e7db99` 。 此值是 Azure 資訊保護統一標籤用戶端識別碼。 
 
 您的 DKE 服務現在已註冊。 [使用 DKE 建立標籤](#create-sensitivity-labels-using-dke)以繼續。
 
@@ -558,6 +560,6 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 ## <a name="migrate-protected-files-from-hyok-labels-to-dke-labels"></a>將受保護的檔案從 HYOK 標籤遷移至 DKE 標籤
 
-當您完成 DKE 的設定之後，您可以使用 HYOK 標籤將已保護的內容遷移至 DKE 標籤。 若要進行遷移，您會使用 AIP 掃描器。 若要開始使用掃描器，請參閱 [Azure 資訊保護統一標記掃描器的功能？](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)。
+當您完成 DKE 的設定之後，您可以使用 HYOK 標籤將已保護的內容遷移至 DKE 標籤。 若要進行遷移，您會使用 AIP 掃描器。 若要開始使用掃描器，請參閱 [Azure 資訊保護統一標記掃描器的功能？](/azure/information-protection/deploy-aip-scanner)。
 
 如果您不遷移內容，您的 HYOK 受保護內容將保持不受影響。

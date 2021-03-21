@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何設定 Microsoft Viva 主題
-ms.openlocfilehash: cc420a0631f5b861341116abcd50cfe90e15450e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 629008e083d71e09632b05e21eaefb011d7d9ce2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551883"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929441"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定 Microsoft Viva 主題
 
@@ -25,7 +25,7 @@ ms.locfileid: "50551883"
 
 您必須 [訂閱 Viva 主題](https://www.microsoft.com/microsoft-viva/topics) ，以及全域管理員或 SharePoint 管理員，才能存取 Microsoft 365 系統管理中心及設定相關主題。
 
-如果您已將 SharePoint 設定為 [需要受管理裝置](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)，請務必設定受管理裝置中的主題。
+如果您已將 SharePoint 設定為 [需要受管理裝置](/sharepoint/control-access-from-unmanaged-devices)，請務必設定受管理裝置中的主題。
 
 ## <a name="video-demonstration"></a>影片示範
 
@@ -48,7 +48,7 @@ ms.locfileid: "50551883"
 
 3. 在 [連線 **人員至知識]** 頁面上，按一下 [ **開始** ]，逐步引導您完成安裝程式。
 
-    ![開始使用](../media/k-get-started.png) 
+    ![快速入門](../media/k-get-started.png) 
 
 4. 在 [ **選擇 Viva 主題如何尋找主題** ] 頁面上，您會設定主題探索。 在 [ **選取 SharePoint 主題來源** ] 區段中，選取要在探索過程中將其編目為主題來源的 SharePoint 網站。 請選擇：
     - **所有網站**：您組織中的所有 SharePoint 網站。 這包括目前和未來的網站。
@@ -123,6 +123,8 @@ ms.locfileid: "50551883"
 
     ![套用的設定](../media/ksetup7.png)    
 
+請注意，第一次啟用主題探索時，可能需要長達兩周的時間，所有建議的主題都會出現在 [管理主題] 視圖中。 主題探索會隨著新內容或內容更新而繼續進行。 當組織中建議的主題數目隨著 Viva 主題評估新資訊的情況，正常情況會發生波動。
+
 ## <a name="assign-licenses"></a>指派授權
 
 當您設定好主題經驗後，您必須指派授權給將要使用主題的使用者。 只有具有授權的使用者可以查看主題的相關資訊，包括要聞、主題卡片、主題頁面和主題中心。 
@@ -137,9 +139,10 @@ ms.locfileid: "50551883"
 
 4. 在 [ **應用程式**] 底下，請確定已選取 [ **使用索引的圖形連接器進行搜尋 (Viva 主題)** 及 **Viva 主題** 。
 
-    ![Microsoft 365 系統管理中心中的 microsoft Viva 主題授權](../media/topic-experiences-licenses.png)
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft 365 系統管理中心中的 microsoft Viva 主題授權](../media/topic-experiences-licenses.png)
 
-5. 按一下 **[儲存變更]**。
+5. 按一下 [儲存變更]。
 
 ## <a name="manage-topic-experiences"></a>管理主題經驗
 

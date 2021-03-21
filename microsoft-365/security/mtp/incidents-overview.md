@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender 中的事件概觀
+title: Microsoft 365 Defender 中的事件概述
 description: 調查在不同裝置、使用者和信箱看到的事件。
 keywords: 事件, 警示, 調查, 關聯, 攻擊, 電腦, 裝置, 使用者, 身分識別, 身分識別, 信箱, 電子郵件, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7fcbecddd5e8f83e9c78d6db90939fbfc2f2df07
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de3fba2692f5b6df7c7192c328a3911287cd7ce2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929279"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928721"
 ---
-# <a name="incidents-overview-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件概觀
+# <a name="incidents-overview-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件概述
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,26 +37,26 @@ ms.locfileid: "49929279"
 適用於：
 - Microsoft 365 Defender
 
-> 想要體驗 Microsoft 365 Defender 嗎？ 您可以在實驗室 [環境中進行評估，](https://aka.ms/mtp-trial-lab) 或在生產 [環境中執行試驗專案](https://aka.ms/m365d-pilotplaybook)。
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) ，或 [在實際執行中執行您的試驗專案](./mtp-pilot.md?ocid=cx-evalpilot)。
 >
 
 
-事件是根據相關的警示。 當在您的網路上發現惡意事件或活動時，系統會產生警示。 個別警示可提供有關進行中攻擊的寶貴線索。 不過，攻擊通常會使用各種向量和技巧以執行外泄。 將個別的線索放在一起可能相當困難且耗時。
+事件是以相關的警示為基礎。 當在您的網路上發現惡意事件或活動時，系統會產生警示。 個別警示提供有關進行中攻擊的重要線索。 不過，攻擊通常會使用各種向量和技術來執行破壞。 將個別的線索 Piecing 在一起可能會非常困難而且耗時。
 
-這段短片提供 Microsoft 365 Defender 中事件概觀。
+這段簡短的影片會概要說明 Microsoft 365 Defender 中的事件。
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-事件是一組相關警示集合，這些警示會指出攻擊事件。 在網路的不同裝置、使用者和信箱實體中發現惡意和可疑事件時，Microsoft 365 Defender 會自動匯總。 將相關警示分組到事件後，安全性維護者可全面查看攻擊。 
+事件是組成攻擊之故事的相關警示集合。 在網路中不同裝置、使用者和信箱實體中找到的惡意和可疑事件，會自動由 Microsoft 365 Defender 進行匯總。 將相關警示分組到事件中，可讓安全性 defenders 整個攻擊的觀點。 
 
-例如，安全性保護人員可以看到攻擊的開始位置、使用的策略，以及攻擊已進入網路多遠。 他們也可以查看攻擊的範圍，例如受攻擊的裝置數量、使用者和信箱數量、影響的範圍，以及受影響實體的其他詳細資料。
+例如，安全性 defenders 可查看攻擊的開始位置、使用的戰術，以及攻擊進入網路的程度。 他們也可以查看受影響的範圍、影響的裝置、使用者和信箱數目、影響的程度，以及受影響實體的其他詳細資料。
 
-如果啟用，Microsoft 365 Defender 可透過自動化和人工智慧自動調查並解決個別警示。 安全性保護者也可以執行額外的修復步驟，直接從事件檢視中解決攻擊。 
+若啟用，Microsoft 365 Defender 便可透過自動化和人工智慧，自動調查和解決個別警示。 安全性 defenders 也可以執行其他修復步驟，以直接從事件檢視解決攻擊。 
 
-過去 30 天的事件會顯示在事件佇列中。 從這裡，安全性維護者可以看到哪些事件應該根據風險等級及其他因素來排列優先順序。 
+過去30天的事件會顯示在事件佇列中。 從這裡，安全性 defenders 可根據風險層級及其他因素，查看應優先考慮哪些事件。 
 
-安全性保護者也可以重新命名事件、將事件指派給個別分析師、將事件分類，以及新增標記到事件，以提供更好的自訂事件管理體驗。
+[安全性 defenders] 也可以重新命名事件，並將其指派給個別分析員、分類，並將標記新增至事件，以獲得更佳和更多自訂的事件管理體驗。
 
 
 

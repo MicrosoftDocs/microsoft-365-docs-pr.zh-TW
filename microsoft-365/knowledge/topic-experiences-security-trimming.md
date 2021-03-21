@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: None
 description: 瞭解如何使用安全性來查看主題。
-ms.openlocfilehash: 12a2ad34c55cd63468266abca1fa053048053dd2
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: a7146592edb356b4d46a5a178b5754dc0de6a7c0
+ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279329"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "50939620"
 ---
 # <a name="microsoft-viva-topics-security-trimming"></a>Microsoft Viva 主題安全性調整 
 
@@ -59,7 +59,7 @@ Viva 主題使用者無法在主題中查看其現有的 Office 365 許可權可
 
 |主題專案|使用者可以看到的內容|
 |:---------|:------------------|
-|主題名稱|使用者可以查看主題中心所有主題的主題名稱。 某些主題若具有對使用者的關聯性很低，可能會看不到。|
+|主題名稱|使用者可以查看主題中心主題的主題名稱。 若使用者沒有來源內容的許可權或對使用者的關聯性很低，某些主題可能不會顯示。|
 |主題描述|只有對來源內容有許可權的使用者才可以看到 AI 產生的描述。 所有使用者皆可看到手動輸入或編輯的描述。|
 |People|所有使用者皆可看到已鎖定的人員。 建議的人員只對具有來源內容許可權的使用者可見。|
 |檔案|只有具有來源內容許可權的使用者才能看到檔案。|

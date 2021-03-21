@@ -22,12 +22,12 @@ ms.custom:
 description: 在中國使用 Office 365 的系統管理員可以瞭解如何使用獨立 Exchange Online Protection (EOP) 來保護其內部部署信箱。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4f27fa9237d76422e936555c9872b83655d7b6b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 4258d64721fc2042297bb15eaeecafa90dcf4bc1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289422"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929285"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>使用獨立版 EOP 保護中國的內部部署信箱
 
@@ -37,7 +37,7 @@ ms.locfileid: "50289422"
 > [!NOTE]
 > 本文僅適用於中國 21Vianet 所營運的 Office 365。
 
-即使您打算將部分或所有信箱裝載在內部部署，您仍然可以使用 Exchange Online Protection (EOP) 保護信箱。 若要設定連接器，您的帳戶必須是全域管理員或 Exchange 公司管理員 (組織管理角色群組) 。 如需 Office 365 權限與 Exchange 權限之關係的相關資訊，請參閱[由 21Vianet 營運的 Office 365 中指派系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet&preserve-view=true)。 如果您的 Exchange 信箱均為內部部署，請遵循以下步驟以設定 EOP 服務。
+即使您打算將部分或所有信箱裝載在內部部署，您仍然可以使用 Exchange Online Protection (EOP) 保護信箱。 若要設定連接器，您的帳戶必須是全域管理員或 Exchange 公司管理員 (組織管理角色群組) 。 如需 Office 365 權限與 Exchange 權限之關係的相關資訊，請參閱[由 21Vianet 營運的 Office 365 中指派系統管理員角色](../../admin/add-users/assign-admin-roles.md?preserve-view=true&view=o365-21vianet)。 如果您的 Exchange 信箱均為內部部署，請遵循以下步驟以設定 EOP 服務。
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步驟 1：使用 Microsoft 365 系統管理中心新增及確認您的網域
 
@@ -46,19 +46,19 @@ ms.locfileid: "50289422"
 2. 請遵循入口網站的步驟，將適用的 DNS 記錄新增到 DNS 主機提供者，以便驗證網域擁有權。
 
 > [!TIP]
-> 當您新增網域至此服務並設定 DNS 時，[新增網域和使用者至 21Vianet 營運的 Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet&preserve-view=true) (部分機器翻譯) 和 [管理您的 DNS 記錄時建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet&preserve-view=true) (部分機器翻譯)，是有用的參考資源。
+> 當您新增網域至此服務並設定 DNS 時，[新增網域和使用者至 21Vianet 營運的 Office 365](../../admin/setup/add-domain.md?preserve-view=true&view=o365-21vianet) (部分機器翻譯) 和 [管理您的 DNS 記錄時建立 Office 365 的 DNS 記錄](../../admin/services-in-china/create-dns-records-when-you-manage-your-dns-records.md?preserve-view=true&view=o365-21vianet) (部分機器翻譯)，是有用的參考資源。
 
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>步驟 2：新增收件者和設定網域類型
 
-在設定您的郵件來進出 EOP 服務之前，建議您將收件者新增至服務。 有許多種作法，請參閱＜[管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md)＞。 另外，如果您要啟用目錄架構邊緣封鎖 (DBEB)，以便在服務內新增收件者之後強制驗證收件者，則必須將網域類型設為「授權」。 如需 DBEB 的相關資訊，請參閱[使用目錄架構邊緣封鎖以拒絕傳送至無效收件者的郵件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) (部分機器翻譯)。
+在設定您的郵件來進出 EOP 服務之前，建議您將收件者新增至服務。 有許多種作法，請參閱＜[管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md)＞。 另外，如果您要啟用目錄架構邊緣封鎖 (DBEB)，以便在服務內新增收件者之後強制驗證收件者，則必須將網域類型設為「授權」。 如需 DBEB 的相關資訊，請參閱[使用目錄架構邊緣封鎖以拒絕傳送至無效收件者的郵件](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) (部分機器翻譯)。
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>步驟 3：使用 EAC 來設定郵件流程
 
-在 Exchange 系統管理中心 (EAC) 內建立連接器，來啟用 EOP 與您內部部署郵件伺服器之間的郵件流程。 如需詳細指示，請參閱 [使用 Office 365 中的連接器設定郵件流程](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) (部分機器翻譯)。
+在 Exchange 系統管理中心 (EAC) 內建立連接器，來啟用 EOP 與您內部部署郵件伺服器之間的郵件流程。 如需詳細指示，請參閱 [使用 Office 365 中的連接器設定郵件流程](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) (部分機器翻譯)。
 
  如何才能了解此工作是否正常運作？
 
- 請參閱[驗證 Office 365 連接器以測試郵件流程](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow) (部分機器翻譯)。
+ 請參閱[驗證 Office 365 連接器以測試郵件流程](/exchange/mail-flow-best-practices/test-mail-flow) (部分機器翻譯)。
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>步驟 4：允許輸入連接埠 25 SMTP 存取
 
@@ -73,11 +73,11 @@ ms.locfileid: "50289422"
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步驟 6：使用 Microsoft 365 系統管理中心將您的 MX 記錄指向 EOP
 
-請遵循 Office 365 網域設定步驟來更新網域的 MX 記錄，以讓輸入電子郵件經過 EOP。 如需詳細資訊，您可以再次參考[管理 DNS 記錄時為 Office 365 建立 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-21vianet&preserve-view=true) (部分機器翻譯)。
+請遵循 Office 365 網域設定步驟來更新網域的 MX 記錄，以讓輸入電子郵件經過 EOP。 如需詳細資訊，您可以再次參考[管理 DNS 記錄時為 Office 365 建立 DNS 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md?preserve-view=true&view=o365-21vianet) (部分機器翻譯)。
 
 如何才能了解此工作是否正常運作？
 
- 請參閱[驗證 Office 365 連接器以測試郵件流程](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow) (部分機器翻譯)。
+ 請參閱[驗證 Office 365 連接器以測試郵件流程](/exchange/mail-flow-best-practices/test-mail-flow) (部分機器翻譯)。
 
 到目前為止，您已確定有正確設定的輸出內部部署連接器可用來進行服務傳遞，並已確認 MX 記錄是指向 EOP。現在您可以選擇執行下列其他測試，以確認服務能夠成功將電子郵件傳遞至您的內部部署環境：
 
@@ -93,4 +93,4 @@ ms.locfileid: "50289422"
 
 您可以選擇混合式案例，以利用雲端式電子郵件給大部分員工使用。 您可以在執行這項作業的同時，將部分信箱裝載在內部部署；例如，針對法務部門。
 
-混合式設定可能會很複雜，但也有許多優點。 若要深入了解如何使用 Exchange 設定混合式案例，請參閱 [Exchange Server 混合式部署](https://docs.microsoft.com/Exchange/exchange-hybrid) (部分機器翻譯)。
+混合式設定可能會很複雜，但也有許多優點。 若要深入了解如何使用 Exchange 設定混合式案例，請參閱 [Exchange Server 混合式部署](/Exchange/exchange-hybrid) (部分機器翻譯)。

@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fe7d986c537cbc5da31811e0b49cf6224815d32c
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: eeb15040f0e47f7d51852dadf68c4b0c37de0975
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509311"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929225"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -103,7 +103,7 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
   >
   > - 預設的反網路釣魚原則和您建立的任何新自訂反網路釣魚原則中，預設會啟用反欺騙保護。
   >
-  > - 如果您的 MX 記錄未指向 Microsoft 365，您就不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+  > - 如果您的 MX 記錄未指向 Microsoft 365，您就不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
   >
   > - 停用反欺騙保護只會停用 [複合驗證](email-validation-and-authentication.md#composite-authentication) 檢查的隱含欺騙保護。 如果寄件者失敗明確的 [DMARC](use-dmarc-to-validate-email.md) 檢查（原則設定為 [隔離] 或 [拒絕]），則郵件仍會被隔離或拒絕。
 
@@ -173,7 +173,7 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
 
   當您將內部或外部電子郵件地址新增至 **要保護的使用者** 清單時，來自這些 **寄件者** 的郵件會受到模仿保護檢查的制約。 **如果** 郵件傳送給收件者的郵件是套用至預設原則的所有 **收件** 者，則會檢查郵件，以進行模擬 (;**適用于** 自訂原則) 中的收件者。 如果在寄件者的電子郵件地址中偵測到模擬，使用者的類比保護動作會套用至郵件 (如何處理該郵件、是否顯示類比的使用者安全提示等等 ) 。
 
-- **要保護的網域**：防止 **在郵件寄件者的網域中** 類比指定的網域。 例如，您擁有的所有網域 ([公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) 或特定網域 (您擁有的網域或夥伴網域) 。 保護自模擬的 **寄件者網域** 清單不同于原則所 **套用的收** 件者清單，以 (預設原則的所有收件者;在 [[原則設定](#policy-settings)] 區段的 [套用 **至**] 設定中設定的特定收件者) 。
+- **要保護的網域**：防止 **在郵件寄件者的網域中** 類比指定的網域。 例如，您擁有的所有網域 ([公認的網域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) 或特定網域 (您擁有的網域或夥伴網域) 。 保護自模擬的 **寄件者網域** 清單不同于原則所 **套用的收** 件者清單，以 (預設原則的所有收件者;在 [[原則設定](#policy-settings)] 區段的 [套用 **至**] 設定中設定的特定收件者) 。
 
   > [!NOTE]
   > 您可以在所有反網路釣魚原則中定義的受保護網域數目上限為50。

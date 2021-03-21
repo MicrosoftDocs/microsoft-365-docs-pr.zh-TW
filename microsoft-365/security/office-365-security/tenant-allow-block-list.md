@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以在安全性入口網站中瞭解如何在承租人允許/封鎖清單中設定允許和封鎖。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20e460f4e93f7b87faaead8b87ba561224e38938
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 2f97308bfc3600e4e85f5ac92d951b12d9a50f24
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515205"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928529"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租用戶允許/封鎖清單中
 
@@ -68,18 +68,18 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 - 根據預設，承租人允許/封鎖清單中的專案會在30天后到期。 您可以指定日期或將其設為永不過期。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已在 **Exchange Online** 中獲派權限，才能執行此文章中的程序：
   - 若要從 [承租人允許/封鎖] 清單中新增及移除值，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要取得租使用者 Allow/封鎖清單的唯讀許可權，您必須是 **全域讀取** 者或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱 [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱 [Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   > 
   > - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  > - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心在承租人允許/封鎖清單中建立 URL 專案
 
@@ -176,7 +176,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
    - **選用附注**：輸入專案的描述性文字。
 
-5. 完成後，按一下 [儲存]。
+5. 完成後，按一下 **[儲存]**。
 
 ## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>使用安全性 & 合規性中心移除租使用者允許/封鎖清單中的封鎖專案
 
@@ -210,7 +210,7 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
-如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)。
+如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 來查看承租人允許/封鎖清單中的專案
 
@@ -232,7 +232,7 @@ Get-TenantAllowBlockListItems -ListType Url -Block
 Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems)。
+如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-modify-block-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 修改承租人 Allow/封鎖清單中的封鎖專案
 
@@ -250,7 +250,7 @@ Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."I
 Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate (Get-Date "5/30/2020 9:30 AM").ToUniversalTime()
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems)。
+如需詳細的語法及參數資訊，請參閱 [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-remove-block-entries-from-the-tenant-allowblock-list"></a>使用 PowerShell 從承租人允許/封鎖清單中移除封鎖專案
 
@@ -266,7 +266,7 @@ Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems)。
+如需詳細的語法及參數資訊，請參閱 [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems)。
 
 ## <a name="url-syntax-for-the-tenant-allowblock-list"></a>承租人允許/封鎖清單的 URL 語法
 
@@ -337,7 +337,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - test.com/contoso.com
   - test.com/q=contoso.com
   - www.contoso.com
-  - www .com/q = a@contoso .com
+  - www.contoso.com/q=a@contoso.com
 
 - **Block match**：
 
@@ -347,7 +347,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - test.com/contoso.com
   - test.com/q=contoso.com
   - www.contoso.com
-  - www .com/q = a@contoso .com
+  - www.contoso.com/q=a@contoso.com
 
 - **不符合的區塊**： abc-contoso.com
 
@@ -375,14 +375,14 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
   - contoso.com/a/b
   - contoso.com/a/b/c
-  - contoso/a/？ q = joe@t .com
+  - contoso.com/a/?q=joe@t.com
 
 - **允許不符合** 或 **不符合的封鎖**：
 
   - contoso.com
   - contoso.com/a
   - www.contoso.com
-  - www .com/q = a@contoso .com
+  - www.contoso.com/q=a@contoso.com
 
 #### <a name="scenario-left-tilde"></a>案例：左波形符
 
@@ -406,7 +406,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 - **允許相符** 和 **區塊相符**：
 
-  - contoso （.com）/？ q = whatever@fabrikam .com
+  - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
   - contoso.com/ab

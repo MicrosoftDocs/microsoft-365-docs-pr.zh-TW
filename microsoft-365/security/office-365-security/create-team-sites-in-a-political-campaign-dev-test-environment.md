@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c12970fb3ff6d5616201ff153085d411068d11c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a8a7002b7d482c987f77907787c5233dcb8d11e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288392"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929381"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治活動開發/測試環境中建立小組網站
 
@@ -64,7 +64,7 @@ ms.locfileid: "50288392"
 
 9. 重複步驟 5-8，逐一設定下列其他標籤：
 
-   - 私人
+   - Private
    - 敏感性
    - 高度機密
 
@@ -370,7 +370,7 @@ ms.locfileid: "50288392"
 
 20. 在 [檢閱您的設定] 窗格中，按一下 [建立]，然後按一下 [關閉]。
 
-遵循[使用 Office 365 系統管理中心啟用 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的指示。
+遵循[使用 Office 365 系統管理中心啟用 Azure RMS](/information-protection/deploy-use/activate-office365) 中的指示。
 
 接著，遵循下列步驟，為 Azure 資訊保護設定新的限域原則與子標籤，以提供保護及權限：
 
@@ -416,7 +416,7 @@ ms.locfileid: "50288392"
 
 您現在準備好開始建立這四個網站中的文件，以及使用不同的使用者帳戶來測試其存取。
 
-若要使用 Azure 資訊保護和此新標籤來保護文件，您必須在測試電腦上 [安裝 Azure 資訊保護用戶端](https://docs.microsoft.com/information-protection/rms-client/install-client-app)，並從系統管理中心安裝 Office，然後使用試用訂用帳戶 **「資深和策略人員」** 群組中的帳戶登入 Microsoft Word。
+若要使用 Azure 資訊保護和此新標籤來保護文件，您必須在測試電腦上 [安裝 Azure 資訊保護用戶端](/information-protection/rms-client/install-client-app)，並從系統管理中心安裝 Office，然後使用試用訂用帳戶 **「資深和策略人員」** 群組中的帳戶登入 Microsoft Word。
 
 ## <a name="see-also"></a>另請參閱
 

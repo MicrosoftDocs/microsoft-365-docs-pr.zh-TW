@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 針對您的 Microsoft 365 承租人遷移您的 Windows 裝置、Office 用戶端應用程式及 Office server。
-ms.openlocfilehash: 85f1c0d927b881c4d1526ce538ae54f5954a0664
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 336dee2e62c6d0917c437252ba1d741c304998fa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406357"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929141"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 4. Microsoft 365 for enterprise 承租人的遷移
 
@@ -40,17 +40,17 @@ ms.locfileid: "50406357"
 
 每個 Microsoft 365 for enterprise license 都包含 Windows 10 企業版的授權。 若要遷移執行 Windows 7 或 Windows 8.1 的裝置，您可以執行就地升級。 Windows 7 在 *2020 年1月14日* 已結束支援。 
 
-如需在就地升級之外安裝 Windows 10 企業版的其他方法，請參閱 [Windows 10 部署案例](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)。 您也可以自行[規劃 Windows 10 部署](https://aka.ms/planforwin10deployment)。
+如需在就地升級之外安裝 Windows 10 企業版的其他方法，請參閱 [Windows 10 部署案例](/windows/deployment/windows-10-deployment-scenarios)。 您也可以自行[規劃 Windows 10 部署](/windows/deployment/planning/)。
 
 ## <a name="migrating-to-microsoft-365-apps-for-enterprise"></a>遷移至適用于企業的 Microsoft 365 應用程式
 
-適用于企業的 microsoft 365 包括 Microsoft 365 應用程式的企業版、Office 用戶端產品的版本 (Word、PowerPoint、Excel 和 Outlook) 已從 Microsoft 雲端安裝及更新。 如需詳細資訊，請參閱 [關於適用于企業的 Microsoft 365 應用程式](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)。
+適用于企業的 microsoft 365 包括 Microsoft 365 應用程式的企業版、Office 用戶端產品的版本 (Word、PowerPoint、Excel 和 Outlook) 已從 Microsoft 雲端安裝及更新。 如需詳細資訊，請參閱 [關於適用于企業的 Microsoft 365 應用程式](/deployoffice/about-microsoft-365-apps)。
 
 請執行下列步驟，而不是讓您的電腦成為 Office 2019 或舊版的最新版本：
 
 1. 為您的使用者取得並指派 Microsoft 365 授權。
 2. 卸載其電腦上的 Office 2013 或 Office 2016。
-3. 安裝 Microsoft 365 應用程式 for enterprise （不論是個別安裝或進行 IT 推廣）。 如需詳細資訊，請參閱 [Microsoft 365 應用程式的部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)。
+3. 安裝 Microsoft 365 應用程式 for enterprise （不論是個別安裝或進行 IT 推廣）。 如需詳細資訊，請參閱 [Microsoft 365 應用程式的部署指南](/deployoffice/deployment-guide-microsoft-365-apps)。
 
 Microsoft 365 應用程式的企業應用程式會自動安裝安全性更新和新功能，並可利用 Microsoft 365 中的雲端式服務，以獲得增強的安全性和生產力。
 
@@ -60,9 +60,9 @@ Microsoft 365 for enterprise 包含雲端架構版本的 Office server 服務，
 
 請使用下列資源，以取得針對特定 Microsoft 365 工作負載的使用者和資料進行遷移的相關資訊：
 
-- [將信箱從內部部署 Exchange Server 移至 Exchange Online](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
-- [將 SharePoint 資料從 SharePoint 伺服器遷移至 SharePoint 線上](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
-- [將商務用 Skype Online 遷移至 Microsoft 團隊](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)
+- [將信箱從內部部署 Exchange Server 移至 Exchange Online](/exchange/hybrid-deployment/move-mailboxes)
+- [將 SharePoint 資料從 SharePoint 伺服器遷移至 SharePoint 線上](/sharepointmigration/migrate-to-sharepoint-online)
+- [將商務用 Skype Online 遷移至 Microsoft 團隊](/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
 ## <a name="transition-your-entire-organization"></a>轉換整個組織
 
@@ -96,7 +96,7 @@ Microsoft 365 for enterprise 包含雲端架構版本的 Office server 服務，
 - 請根據您的 Exchange 信箱遷移狀態，繼續在您的組織中滾動轉換至 Exchange。
 - 請根據您的內部部署 SharePoint 網站遷移狀態，繼續將 Microsoft 365 中 SharePoint 轉換為您的組織。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [![步驟5。部署裝置和應用程式管理](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
 

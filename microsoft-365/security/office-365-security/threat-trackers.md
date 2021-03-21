@@ -18,12 +18,12 @@ ms.collection:
 description: 深入瞭解威脅追蹤器（包括新的重要追蹤追蹤器），以協助您的組織維持在安全性上的關注。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a734085e9bc341424ee40757a21b855442605bcd
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ff0b886ea38d61b20eb46df136c5a133d03acc9c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287386"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929213"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 
@@ -36,7 +36,7 @@ ms.locfileid: "50287386"
 [Office 365 威脅調查和回應](office-365-ti.md) 功能可讓您的組織的安全性小組探索和採取行動，以防範 cybersecurity 威脅。 Office 365 威脅調查和回應功能包括威脅追蹤器功能，包括值得注意的追蹤器。 請閱讀本文，以取得這些新功能及後續步驟的概述。
 
 > [!IMPORTANT]
-> Office 365 威脅情報現在是 Microsoft Defender for Office 365 Plan 2，另外還有其他威脅防護功能。 若要深入瞭解，請參閱 [Microsoft defender For office 365 方案和價格](https://products.office.com/exchange/advance-threat-protection) 和 [Microsoft defender For Office 365 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> Office 365 威脅情報現在是 Microsoft Defender for Office 365 Plan 2，另外還有其他威脅防護功能。 若要深入瞭解，請參閱 [Microsoft defender For office 365 方案和價格](https://products.office.com/exchange/advance-threat-protection) 和 [Microsoft defender For Office 365 服務說明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
 ## <a name="what-are-threat-trackers"></a>何謂威脅追蹤器？
 

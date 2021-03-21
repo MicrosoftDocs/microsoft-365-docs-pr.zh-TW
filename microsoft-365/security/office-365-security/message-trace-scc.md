@@ -14,12 +14,12 @@ ms.custom:
 description: 系統管理員可以在安全性與合規性中心使用郵件追蹤，以了解郵件發生什麼情況。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c3f7e4bc9624b9fae48074203da525d7a504a12
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 587e111a71b321c131d0e63a0510ec7e1afa289a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741572"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929393"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件追蹤
 
@@ -40,7 +40,7 @@ ms.locfileid: "50741572"
 >
 > - 若要執行郵件追蹤，您必須是「組織管理」、「合規性管理」或「服務台」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 >
-> - 結果中顯示的訊息數目上限取決於您選取的報告類型 (請參閱 [選擇報告類型](#choose-report-type) 一節，以取得詳細資料) 。 Exchange Online PowerShell 或獨立 EOP 中的 [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) Cmdlet PowerShell 會傳回結果中的所有郵件。
+> - 結果中顯示的訊息數目上限取決於您選取的報告類型 (請參閱 [選擇報告類型](#choose-report-type) 一節，以取得詳細資料) 。 Exchange Online PowerShell 或獨立 EOP 中的 [Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) Cmdlet PowerShell 會傳回結果中的所有郵件。
 
 ## <a name="open-message-trace"></a>開啟郵件追蹤
 
@@ -231,7 +231,7 @@ ms.locfileid: "50741572"
   > 
   > - 一封已成功傳遞的普通郵件都會在郵件追蹤中產生多個 [事件] 項目。
   > 
-  > - 這份清單不應詳盡。 如需更多事件的說明，請參閱[郵件追蹤記錄中事件種類](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 請注意，此連結是 Exchange Server (內部部署 Exchange) 主題。
+  > - 這份清單不應詳盡。 如需更多事件的說明，請參閱[郵件追蹤記錄中事件種類](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 請注意，此連結是 Exchange Server (內部部署 Exchange) 主題。
 
 - **其他資訊**：此區段包含下列詳細資料：
 
@@ -271,7 +271,7 @@ ms.locfileid: "50741572"
 
 - **directionality**：表示郵件是內送 (1) 到您的組織，或由您的組織外寄 (2)。
 
-- **connector_id**：來源或目的地連接器的名稱。 如需 Exchange Online 中連接器的詳細資訊，請參閱[使用 Office 365 中的連接器設定郵件流程](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
+- **connector_id**：來源或目的地連接器的名稱。 如需 Exchange Online 中連接器的詳細資訊，請參閱[使用 Office 365 中的連接器設定郵件流程](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 
 - **delivery_priority**<sup>*</sup>：傳送優先順序是否為 [高]、[低] 或 [標準] 的郵件。
 
@@ -413,7 +413,7 @@ ms.locfileid: "50741572"
 |---|---|
 |`ETR|ruleId=<guid>`|已符合的規則 ID。|
 |`St=<datetime>`|規則相符時的日期和時間 (以 UTC 表示)。|
-|`Action=<ActionDefinition>`|已套用的動作。 如需可用動作的清單，請參閱 [Exchange Online 中的郵件流程規則動作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
+|`Action=<ActionDefinition>`|已套用的動作。 如需可用動作的清單，請參閱 [Exchange Online 中的郵件流程規則動作](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
 |`Mode=<Mode>`|規則的模式。 有效值為：<ul><li>**強制**：將強制執行規則上的所有動作。</li><li>搭配 **原則提示來測試：**：將會傳送任何原則提示動作，但不會處理其他強制執行動作。</li><li>**無原則提示的測試**：動作將會列在記錄檔中，但是不會以任何方式通知寄件者，而且不會處理強制執行動作。</li></ul>|
 |
 

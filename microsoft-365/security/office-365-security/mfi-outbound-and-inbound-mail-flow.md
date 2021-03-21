@@ -13,12 +13,12 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 系統管理員可以在安全性 & 合規性中心的郵件流程儀表板中瞭解輸出和輸入郵件流程的洞察力。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 87c5bd9ab0d550f50feabbb96176debbe04863e5
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0fe073a314563e51389b087642f913ef099af53c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289446"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929333"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>安全性 & 規範中心內的輸出和輸入郵件流程洞察力
 
@@ -37,7 +37,7 @@ ms.locfileid: "50289446"
 
 小工具中的資訊與 Microsoft 365 中的連接器和 TLS 郵件保護有關。 如需相關資訊，請參閱這些主題：
 
-- [使用連接器設定郵件流程](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- [使用連接器設定郵件流程](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 - [Exchange Online 如何使用 TLS 保護電子郵件連線](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
 - [Microsoft 365 中有關加密的技術參考詳細資料](../../compliance/technical-reference-details-about-encryption.md)
 
@@ -49,7 +49,7 @@ ms.locfileid: "50289446"
 
 目前，TLS 1.2 是 Microsoft 365 提供的最安全 TLS 版本。 通常，您必須知道用於合規性稽核的 TLS 加密為何。 您可能與來源和目的地電子郵件伺服器都沒有直接關係 (您沒有，Microsoft 也沒有)，因此您沒有許多選項可改善那些伺服器使用的 TLS 加密。
 
-不過，您可以使用 [連接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) ，以確保您的電子郵件伺服器和 Microsoft 365 之間傳送的郵件可使用的最佳 TLS 保護。 在 Microsoft 365 和您自己的電子郵件伺服器之間或屬於合作夥伴的伺服器之間的郵件流程，通常比一般郵件更為重要且敏感，所以您會想要對這些郵件套用額外的安全性和 vigilance。
+不過，您可以使用 [連接器](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) ，以確保您的電子郵件伺服器和 Microsoft 365 之間傳送的郵件可使用的最佳 TLS 保護。 在 Microsoft 365 和您自己的電子郵件伺服器之間或屬於合作夥伴的伺服器之間的郵件流程，通常比一般郵件更為重要且敏感，所以您會想要對這些郵件套用額外的安全性和 vigilance。
 
 您可以升級或修正您自己的電子郵件伺服器，以改善正在使用的 TLS 加密，或連絡合作夥伴來執行此相同動作。 **連接器報告** 會顯示使用 Microsoft 365 連接器之郵件的郵件流程數量和 TLS 加密。
 
@@ -60,6 +60,6 @@ ms.locfileid: "50289446"
 
 針對 TLS 1.0 連線，您實際上需要將您的電子郵件伺服器或夥伴的伺服器升級或修復，以避免 Microsoft 365 中的 TLS 1.0 支援最後已被取代的任何問題。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

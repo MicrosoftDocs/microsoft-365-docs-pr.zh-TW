@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 瞭解如何控制可建立 Microsoft 365 群組的使用者。
-ms.openlocfilehash: 04c2b6e738ed41f8d4a2bf96716fb74b1d260497
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838636"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929153"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理能建立 Microsoft 365 群組的使用者
 
@@ -63,7 +63,7 @@ ms.locfileid: "50838636"
 - 允許建立群組的群組成員
 
 > [!NOTE]
-> 如需如何指派 Azure 授權的詳細資訊，請參閱 [在 Azure Active Directory 入口網站中指派或移除授權](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) 。
+> 如需如何指派 Azure 授權的詳細資訊，請參閱 [在 Azure Active Directory 入口網站中指派或移除授權](/azure/active-directory/fundamentals/license-users-groups) 。
 
 下列人員不需要有指派給它們的 Azure AD Premium 或 Azure AD 基本 EDU 授權：
 
@@ -83,19 +83,19 @@ ms.locfileid: "50838636"
 
 4. 完成設定群組，新增您想要在您的組織中建立群組的人員或其他群組。
 
-如需詳細指示，請參閱 [建立、編輯或刪除 Microsoft 365 admin center 中的安全性群組](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group)。
+如需詳細指示，請參閱 [建立、編輯或刪除 Microsoft 365 admin center 中的安全性群組](../admin/email/create-edit-or-delete-a-security-group.md)。
 
 ## <a name="step-2-run-powershell-commands"></a>步驟 2：執行 PowerShell 命令
 
-您必須使用預覽版本的 [ [Azure Active Directory PowerShell For Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (模組名稱 **AzureADPreview**) ，以變更群組層級來賓存取設定：
+您必須使用預覽版本的 [ [Azure Active Directory PowerShell For Graph (AzureAD)](/powershell/azure/active-directory/install-adv2) (模組名稱 **AzureADPreview**) ，以變更群組層級來賓存取設定：
 
-- 如果您之前尚未安裝任何版本的 Azure AD PowerShell 模組，請參閱[安裝 Azure AD 模組](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true)，並遵循指示來安裝公開預覽版本。
+- 如果您之前尚未安裝任何版本的 Azure AD PowerShell 模組，請參閱[安裝 Azure AD 模組](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)，並遵循指示來安裝公開預覽版本。
 
 - 如果您已安裝 Azure AD PowerShell 模組(AzureAD) 的通用版本 2.0，您必須先在 PowerShell 工作階段中執行 `Uninstall-Module AzureAD` 將其解除安裝，然後執行 `Install-Module AzureADPreview` 來安裝預覽版本。
 
 - 如果您已安裝預覽版本，請執行 `Install-Module AzureADPreview` 以確定這是本模組的最新版本。
 
-將下列腳本複製到文字編輯器（例如記事本）或 [Windows POWERSHELL ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)。
+將下列腳本複製到文字編輯器（例如記事本）或 [Windows POWERSHELL ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)。
 
 *\<GroupName\>* 以您建立的群組名稱取代。 例如：
 
@@ -109,7 +109,7 @@ ms.locfileid: "50838636"
 
 `.\GroupCreators.ps1`
 
-系統提示時，請 [使用系統管理員帳戶登入](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) 。
+系統提示時，請 [使用系統管理員帳戶登入](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) 。
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -164,7 +164,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 請使用群組的成員重新嘗試相同的程式。
 
 > [!NOTE]
-> [！注意] 如果群組的成員無法建立群組，請檢查未透過 [OWA 信箱原則](https://go.microsoft.com/fwlink/?linkid=852135)封鎖這些群組。
+> [！注意] 如果群組的成員無法建立群組，請檢查未透過 [OWA 信箱原則](/powershell/module/exchange/set-owamailboxpolicy)封鎖這些群組。
 
 ## <a name="related-topics"></a>相關主題
 
@@ -172,10 +172,10 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 [建立共同作業管理計畫](collaboration-governance-first.md)
 
-[開始使用 Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=808033)
+[開始使用 Office 365 PowerShell](../enterprise/getting-started-with-microsoft-365-powershell.md)
 
-[在 Azure Active Directory 中設定自助群組管理](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
+[在 Azure Active Directory 中設定自助群組管理](/azure/active-directory/users-groups-roles/groups-self-service-management)
 
-[Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+[Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[用於設定群組設定的 Azure Active Directory Cmdlet](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[用於設定群組設定的 Azure Active Directory Cmdlet](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)

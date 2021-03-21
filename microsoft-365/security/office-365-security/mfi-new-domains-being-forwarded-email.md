@@ -12,12 +12,12 @@ ms.assetid: ''
 description: 系統管理員可以瞭解如何使用「安全性 & 規範中心」中郵件流程儀表板中的新網域，以調查他們的使用者是否要將郵件轉寄給已永不轉寄的外部網域。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd026b31b7cb678ff1f091579c67a3958b159c09
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1310350bd4ff6b43d321f5888c9436ac71debb82
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289458"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929345"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心轉寄電子郵件的新網域
 
@@ -44,7 +44,7 @@ ms.locfileid: "50289458"
 
 您也可以在 [ (**報表** 儀表板] 或 [) ] 的 [**熱門洞察力 & 建議**] 區域中按一下 [**全部查看**] 之後，取得此詳細資料頁面 \>  <https://protection.office.com/insightdashboard> 。
 
-若要防止自動將郵件轉送到外部網域，請設定部分或所有外部網域的遠端網域。 如需詳細資訊，請參閱 [管理 Exchange Online 中的遠端網域](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
+若要防止自動將郵件轉送到外部網域，請設定部分或所有外部網域的遠端網域。 如需詳細資訊，請參閱 [管理 Exchange Online 中的遠端網域](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
 
 ## <a name="related-topics"></a>相關主題
 
