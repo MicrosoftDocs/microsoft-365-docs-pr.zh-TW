@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: afa5cd42545eddafb1d0ec1a6d88eb0903e07820
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0184b2c05121e1ea3bf365263df880548f1b9232
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454548"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918867"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender 必要條件
 
@@ -47,18 +47,18 @@ ms.locfileid: "50454548"
 - Office 365 E5 或 A5
 - 適用於端點的 Microsoft Defender
 - 適用於身分識別的 Microsoft Defender 
-- Microsoft 雲端應用程式安全性
+- Microsoft 雲端 App 安全性
 - 適用于 Office 的 Defender 365 (方案 2) 
 
 如需詳細資訊，請 [查看 Microsoft 365 企業版服務方案](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
 
-> 還沒有授權？ [試用或購買 Microsoft 365 訂閱](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
+> 還沒有授權？ [試用或購買 Microsoft 365 訂閱](../../commerce/try-or-buy-microsoft-365.md?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>檢查您現有的授權
 移至 Microsoft 365 系統管理中心 ([admin.microsoft.com](https://admin.microsoft.com/)) 以查看您現有的授權。 在系統管理中心中，移至 **[帳單]** >  **[授權]**。
 
 >[!NOTE]
-> 您必須被指派至 [AZURE AD 中](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)的 **帳務系統管理員** 或 **全域讀取** 者角色，才能看到授權資訊。 如果您遭遇存取的問題，請與全域管理員聯繫。
+> 您必須被指派至 [AZURE AD 中](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)的 **帳務系統管理員** 或 **全域讀取** 者角色，才能看到授權資訊。 如果您遭遇存取的問題，請與全域管理員聯繫。
 
 ## <a name="required-permissions"></a>必要的權限
 您必須是 **全域系統管理員** 或 Azure Active Directory 中的 **安全性系統管理員** ，才可開啟 Microsoft 365 Defender。 如需使用 Microsoft 365 Defender 所需的角色清單，以及如何管制資料存取的相關資訊，請參閱 [管理 Microsoft 365 Defender 的存取](mtp-permissions.md)。

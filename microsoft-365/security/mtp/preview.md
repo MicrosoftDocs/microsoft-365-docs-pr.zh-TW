@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1636b1deb5f35d8286b33238a8f4bbfff0b33521
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 2f5b1a289f55b7237606782afb8e8f5acf6788a2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288122"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918855"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender 預覽功能
 
@@ -69,7 +69,7 @@ Microsoft 365 Defender 服務會不斷更新，以包含新功能增強功能及
 目前預覽版提供下列功能和增強功能：
 
 ### <a name="improved-microsoft-365-security-center"></a>改進的 Microsoft 365 安全中心
-改良的 [Microsoft 365 安全性中心](https://security.microsoft.com)現在可供公開預覽。 這種新的經驗會將 Defender、Office 365 的 Defender、Microsoft 365 Defender 等，帶入 Microsoft 365 的安全性中心。 這是管理安全性控制的新家用。 [了解新功能](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)。
+改良的 [Microsoft 365 安全性中心](https://security.microsoft.com)現在可供公開預覽。 這個新的體驗會將適用於端點的 Defender、適用於 Office 365 的 Defender、Microsoft 365 Defender 和更多功能帶到 Microsoft 365 安全性中心。 這是管理安全性控制的新家用。 [了解新功能](./overview-security-center.md)。
 
 - **[Microsoft 365 Defender 威脅分析報告](threat-analytics.md)** -威脅分析可協助您回應並將主動攻擊的影響降至最低。 您也可以瞭解 Microsoft 365 Defender 解決方案所封鎖的攻擊嘗試，並採取預防措施，緩解進一步披露及提高恢復的風險。 在統一的安全性體驗中，威脅分析現在可用於 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 授權持有者。
 - **[Microsoft 365 Defender APIs](api-overview.md)** -最上層的 Microsoft 365 Defender APIs 可讓您根據共用的事件和高級搜尋表格來自動化工作流程。 

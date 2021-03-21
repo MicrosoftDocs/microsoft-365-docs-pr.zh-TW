@@ -20,12 +20,12 @@ ms.custom:
 description: 本主題將針對影響 Microsoft 365 環境安全性的全租使用者設定，引導您進行建議的設定。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6eff529a4ab2271df30579af227fe0c28691ae58
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 99086bbe28135a3f504986a81cfd5cff303df95c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286342"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920309"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>設定您的 Microsoft 365 租使用者以提高安全性
 
@@ -84,8 +84,8 @@ Exchange 系統管理中心中有許多安全性與保護控制項同時也包�
 
 |範圍|包含預設原則|建議|
 |---|---|---|
-|**郵件流程** (郵件流程規則，又稱為傳輸規則)|否|透過封鎖可執行檔案類型和包含宏的 Office 檔案類型，新增郵件流程規則，以協助抵禦勒索軟體。 如需詳細資訊，請參閱 [在 Exchange Online 中使用郵件流程規則檢查郵件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。 <p> 請參閱下列其他主題： <ul><li>[防範勒索軟體](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[Microsoft 365 中的惡意程式碼和勒索軟體防護](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[從 Office 365 復原勒索軟體攻擊](recover-from-ransomware.md)</li></ul> <p> 建立郵件流程規則來防止郵件自動轉寄至外部網域。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) (英文)。 <p> 其他資訊：[Exchange Online 中的郵件流程規則 (傳輸規則)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**啟用新式驗證**|否|新式驗證是使用多重要素驗證 (MFA) 的必要條件。 MFA 是保護雲端資源存取權 (包括電子郵件) 的建議選項。 <p> 請參閱這些主題： <ul><li>[啟用或停用 Exchange Online 中的新式驗證](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[商務用 Skype Online：針對新式驗證啟用租使用者](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> Office 2016 用戶端、SharePoint Online 和商務用 OneDrive 預設會啟用新式驗證。 <p> 其他資訊：[Office 2013 和 Office 2016 用戶端應用程式的新式驗證運作方式](../../enterprise/modern-auth-for-office-2013-and-2016.md)|
+|**郵件流程** (郵件流程規則，又稱為傳輸規則)|否|透過封鎖可執行檔案類型和包含宏的 Office 檔案類型，新增郵件流程規則，以協助抵禦勒索軟體。 如需詳細資訊，請參閱 [在 Exchange Online 中使用郵件流程規則檢查郵件附件](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。 <p> 請參閱下列其他主題： <ul><li>[防範勒索軟體](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[Microsoft 365 中的惡意程式碼和勒索軟體防護](/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[從 Office 365 復原勒索軟體攻擊](recover-from-ransomware.md)</li></ul> <p> 建立郵件流程規則來防止郵件自動轉寄至外部網域。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) (英文)。 <p> 其他資訊：[Exchange Online 中的郵件流程規則 (傳輸規則)](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**啟用新式驗證**|否|新式驗證是使用多重要素驗證 (MFA) 的必要條件。 MFA 是保護雲端資源存取權 (包括電子郵件) 的建議選項。 <p> 請參閱這些主題： <ul><li>[啟用或停用 Exchange Online 中的新式驗證](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[商務用 Skype Online：針對新式驗證啟用租使用者](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> Office 2016 用戶端、SharePoint Online 和商務用 OneDrive 預設會啟用新式驗證。 <p> 其他資訊：[Office 2013 和 Office 2016 用戶端應用程式的新式驗證運作方式](../../enterprise/modern-auth-for-office-2013-and-2016.md)|
 |
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>設定 SharePoint 系統管理中心的全租用戶共用原則
@@ -100,7 +100,7 @@ Microsoft 建議您從基礎保護開始，逐漸提高 SharePoint 小組網站�
 
 |範圍|包含預設原則|建議|
 |---|---|---|
-|**共用** (SharePoint Online 和商務用 OneDrive)|是|外部共用預設為啟用狀態。 這些為建議設定： <ul><li>允許共用已驗證的外部使用者，並使用匿名存取連結 (預設設定) 。</li><li>匿名存取連結會在數天后到期。 如有需要，請輸入一個數字，例如 30 天。</li><li>預設連結類型—選取 [只) 組織中的內部 (人員]。 想要以匿名連結進行共用的使用者必須從共用功能表中選擇此選項。</li></ul> <p> 其他資訊：[外部共用概觀](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
+|**共用** (SharePoint Online 和商務用 OneDrive)|是|外部共用預設為啟用狀態。 這些為建議設定： <ul><li>允許共用已驗證的外部使用者，並使用匿名存取連結 (預設設定) 。</li><li>匿名存取連結會在數天后到期。 如有需要，請輸入一個數字，例如 30 天。</li><li>預設連結類型—選取 [只) 組織中的內部 (人員]。 想要以匿名連結進行共用的使用者必須從共用功能表中選擇此選項。</li></ul> <p> 其他資訊：[外部共用概觀](/sharepoint/external-sharing-overview)|
 |
 
 SharePoint 系統管理中心與商務用 OneDrive 系統管理中心包含同樣的設定。 任一系統管理中心內的設定都適用於兩者。
@@ -113,7 +113,7 @@ SharePoint 系統管理中心與商務用 OneDrive 系統管理中心包含同�
 
 如果貴組織內有辦公室擁有安全網路存取權，請將信任的 IP 位址範圍新增為 Azure Active Directory 中的具名位置。 這項功能可協助減少誤判為登入風險事件的次數。
 
-請參閱：[Azure Active Directory 中的具名位置](https://docs.microsoft.com/azure/active-directory/active-directory-named-locations)
+請參閱：[Azure Active Directory 中的具名位置](/azure/active-directory/active-directory-named-locations)
 
 ### <a name="block-apps-that-dont-support-modern-authentication"></a>封鎖不支援新式驗證的應用程式
 
@@ -123,7 +123,7 @@ SharePoint 系統管理中心與商務用 OneDrive 系統管理中心包含同�
 
 在此同時，請使用下列其中一項方法，來為 SharePoint Online 和商務用 OneDrive 完成這項作業：
 
-- 使用 PowerShell，請參閱 [封鎖未使用新式驗證的應用程式 (ADAL) ](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block)。
+- 使用 PowerShell，請參閱 [封鎖未使用新式驗證的應用程式 (ADAL) ](/mem/intune/protect/app-modern-authentication-block)。
 
 - 請在 SharePoint 系統管理中心內的 [裝置存取權] 頁面 - [控制不使用新式驗證的應用程式存取權] 進行此設定。 選擇 [封鎖]。
 
@@ -137,11 +137,11 @@ SharePoint 系統管理中心與商務用 OneDrive 系統管理中心包含同�
 
 詳細資訊：
 
-- [部署 Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [部署 Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
 
 - [Microsoft Cloud App Security 的詳細資訊](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-- [什麼是 Cloud App Security？](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+- [什麼是 Cloud App Security？](/cloud-app-security/what-is-cloud-app-security)
 
 ![Cloud App Security 儀表板](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 

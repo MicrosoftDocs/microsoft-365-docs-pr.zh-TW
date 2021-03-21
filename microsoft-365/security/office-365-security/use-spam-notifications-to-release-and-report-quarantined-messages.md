@@ -21,12 +21,12 @@ ms.custom:
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中瞭解隔離郵件的使用者垃圾郵件通知。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb347f7fd3d3793b563714e8116316b30165ef9a
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 617ff9b6325ac2d5d95d8bc591b9e4ebb7f5434d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287542"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921117"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>使用使用者垃圾郵件通知來釋放及報告隔離的郵件
 
@@ -41,7 +41,7 @@ ms.locfileid: "50287542"
 
 根據預設，會停用反垃圾郵件原則中的使用者垃圾郵件通知。 當系統管理員 [啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)時，收件者 (（包含啟用自動對應的共用信箱）) 會收到有關其郵件（已被隔離為垃圾郵件、大量電子郵件，或 (至 2020) 網路釣魚）的定期通知。
 
-在共用信箱中，只有獲授與共享信箱 FullAccess 許可權的使用者才支援使用者垃圾郵件通知。 如需詳細資訊，請參閱 [Use THE EAC to edit shared 信箱委派](https://docs.microsoft.com/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation)。
+在共用信箱中，只有獲授與共享信箱 FullAccess 許可權的使用者才支援使用者垃圾郵件通知。 如需詳細資訊，請參閱 [Use THE EAC to edit shared 信箱委派](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation)。
 
 群組不支援使用者垃圾郵件通知。
 
@@ -65,4 +65,4 @@ ms.locfileid: "50287542"
 ![最終使用者垃圾郵件通知範例](../../media/end-user-spam-notification.png)
 
 > [!NOTE]
-> 封鎖的寄件者仍可傳送您的郵件。 此寄件者傳送給您信箱的任何郵件都會立即移至 [垃圾郵件] 資料夾。 來自此寄件者的未來郵件會移至您的 [垃圾郵件] 資料夾或使用者隔離區。 如果您想要在到達時刪除郵件，而不是隔離這些郵件，請使用 [郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也稱為 transport rules) 以在到達時刪除郵件。
+> 封鎖的寄件者仍可傳送您的郵件。 此寄件者傳送給您信箱的任何郵件都會立即移至 [垃圾郵件] 資料夾。 來自此寄件者的未來郵件會移至您的 [垃圾郵件] 資料夾或使用者隔離區。 如果您想要在到達時刪除郵件，而不是隔離這些郵件，請使用 [郵件流程規則](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也稱為 transport rules) 以在到達時刪除郵件。

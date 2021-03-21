@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bbb3814a973bec53a877bc70d0299ce7b2eb87b5
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727550"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920561"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 管理的桌面封存裝置
 
@@ -75,7 +75,7 @@ ms.locfileid: "50727550"
 
 - 使用 Microsoft 受管理的電腦核准的影像。 當您定購裝置時，請確定您指定的是與 Microsoft 受管理的電腦搭配使用。
 - 尚未完成 Windows 第一次執行體驗。
-- 使用 [Device Registration](https://aka.ms/mmddrhelp) 功能向 Microsoft Managed Desktop 註冊
+- 使用 [Device Registration](../get-started/register-devices-self.md) 功能向 Microsoft Managed Desktop 註冊
 
 #### <a name="more-help"></a>更多説明
 

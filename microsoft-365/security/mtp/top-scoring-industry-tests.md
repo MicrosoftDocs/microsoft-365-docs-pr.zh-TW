@@ -15,27 +15,27 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 32eae12fb9d4bbe57e5e41695527c443976b241d
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: 3b6ae83dc7850f2fd5b85b7bfa2cdfcf378141de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084576"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918687"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行業測試的最大得分
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) ，或 [在實際執行中執行您的試驗專案](./mtp-pilot.md?ocid=cx-evalpilot)。
 >
 
 [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) 技術始終如一地在獨立測試中達成高分，展示其企業威脅防護功能的強度。 Microsoft 的目的是針對這些測試分數做為透明。 此頁面會摘要結果，並提供分析。
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
-[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 是一種整合的後續企業防護套件。 它原本在端點、身分識別、電子郵件和應用程式上協調偵測、防護、調查和回應，以提供整合式防護以防禦複雜的攻擊。
+[Microsoft 365 Defender](./microsoft-threat-protection.md) 是一種整合的後續企業防護套件。 它原本在端點、身分識別、電子郵件和應用程式上協調偵測、防護、調查和回應，以提供整合式防護以防禦複雜的攻擊。
 
-Microsoft 365 Defender 會將 [Microsoft defender For Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)、 [Microsoft defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection)、 [microsoft Defender 身分識別](https://azure.microsoft.com/features/azure-advanced-threat-protection/)、 [Azure Active Directory 身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)和 [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) 的功能合併成單一解決方案。
+Microsoft 365 Defender 會將 [Microsoft defender For Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)、 [Microsoft defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection)、 [microsoft Defender 身分識別](https://azure.microsoft.com/features/azure-advanced-threat-protection/)、 [Azure Active Directory 身分識別保護](/azure/active-directory/identity-protection/overview-identity-protection)和 [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) 的功能合併成單一解決方案。
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE：展示現實世界的偵測、回應，以及對來自高級攻擊的保護
 
@@ -47,9 +47,9 @@ MITRE 測試方法的核心是模擬現實世界的攻擊，瞭解解決方案�
 
 ## <a name="next-generation-protection"></a>下一代保護
 
-[Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) 會始終如一地執行高度獨立的測試，以顯示在防病毒產品市場中最大的選擇。 請記住，這些測試只會提供防病毒的結果，而且不會測試其他安全性保護。
+[Microsoft Defender 防病毒](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) 會始終如一地執行高度獨立的測試，以顯示在防病毒產品市場中最大的選擇。 請記住，這些測試只會提供防病毒的結果，而且不會測試其他安全性保護。
 
-Microsoft Defender 防病毒是[Microsoft Defender For Endpoint Windows 10 安全堆疊](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)中的[下一代保護](https://www.youtube.com/watch?v=Xy3MOxkX_o4)能力，可解決目前最新和最複雜的威脅。 在某些情況下，客戶可能甚至不會知道其受到保護，因為 cyberattack 會 [在活動開始之後停止毫秒](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)。 這是因為 Microsoft Defender 防毒程式和其他 [endpoint protection 平臺 (](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) 的 Defender for endpoint 偵測中的 EPP) 功能，並在第一次看到時會停止惡意程式碼。 他們使用 [電腦學習](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、 [人工情報](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、行為分析和其他高級技術。
+Microsoft Defender 防病毒是[Microsoft Defender For Endpoint Windows 10 安全堆疊](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)中的[下一代保護](https://www.youtube.com/watch?v=Xy3MOxkX_o4)能力，可解決目前最新和最複雜的威脅。 在某些情況下，客戶可能甚至不會知道其受到保護，因為 cyberattack 會 [在活動開始之後停止毫秒](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)。 這是因為 Microsoft Defender 防毒程式和其他 [endpoint protection 平臺 (](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) 的 Defender for endpoint 偵測中的 EPP) 功能，並在第一次看到時會停止惡意程式碼。 他們使用 [電腦學習](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、 [人工情報](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、行為分析和其他高級技術。
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-測試：最近測試的 6.0/6.0 Protection 得分
 
@@ -99,7 +99,7 @@ SE 實驗會測試產品和服務所使用的解決方案範圍，以偵測和/�
 
 ## <a name="endpoint-detection--response"></a>& 回應的端點偵測
 
-Microsoft Defender for Endpoint [endpoint endpoint 偵測和回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) 功能提供接近即時及可行動的高級攻擊偵測。 安全性分析人員可以有效地排定警示的優先順序、深入了解入侵的全貌，並採取回應動作來補救威脅。
+Microsoft Defender for Endpoint [endpoint endpoint 偵測和回應](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) 功能提供接近即時及可行動的高級攻擊偵測。 安全性分析人員可以有效地排定警示的優先順序、深入了解入侵的全貌，並採取回應動作來補救威脅。
 
 Microsoft Defender for Endpoint 的 EDR 和 Endpoint protection 功能已經從行業測試和出版物收到正面結果。 SC Labs 在2020年6月已[評估端點安全性工具](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/)，並給予 Microsoft Defender 端點[5/5 星](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/)。 他們叫用 Microsoft Defender for Endpoint，以利用一組完整的安全性功能，針對新式威脅環境保護組織。 SC Labs 也識別為整體和整合的端點安全性解決方案。 他們也認可端點保護與端點偵測功能的融合，因為攻擊鏈現在已完全涵蓋于解決方案。
 
@@ -117,6 +117,6 @@ MITRE 已測試產品的能力，以偵測目標攻擊群組 APT3 (常用的技�
 
 Microsoft Defender for Endpoint 中的功能提供了 [其他層級的保護](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses) ，不會納入行業防病毒測試，並解決一些最新和最複雜的威脅。 將 AV 與其他端點的 AV 隔離，建立 Microsoft 安全性堆疊在現實世界中運作方式的部分圖片。 例如，攻擊面減量和端點偵測 & 回應功能可協助防止惡意程式碼在第一個位置進入裝置。 我們已證實 [Microsoft defender For Endpoint 元件會捕捉](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA) Microsoft Defender 防毒程式在這些行業測試中錯過的範例。 這對 Microsoft 的安全性套件如何保護現實世界中客戶的效率更具代表性。
 
-[深入瞭解 Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) ，並在您自己的網路中進行評估，方法是註冊 [90 天試用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)，或 [在現有承租人上啟用預覽功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview)。
+[深入瞭解 Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) ，並在您自己的網路中進行評估，方法是註冊 [90 天試用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)，或 [在現有承租人上啟用預覽功能](/windows/security/threat-protection/microsoft-defender-atp/preview)。
 
-[深入瞭解 Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) 或 [開始使用服務](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)。
+[深入瞭解 Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) 或 [開始使用服務](./mtp-enable.md)。

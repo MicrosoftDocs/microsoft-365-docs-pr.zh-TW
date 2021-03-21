@@ -15,19 +15,19 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 使用者可以瞭解如何管理其自助購買服務。
-ms.openlocfilehash: 5f541706c2b4787e5add53b34a90c0f2113efb11
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 73b044ab9954744e89a13ccff0145f35bc1b821b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114678"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920189"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助購買 (使用者)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -39,12 +39,12 @@ ms.locfileid: "50114678"
 
 您可以查看您購買的所有自助服務購買的訂閱清單。
 
-1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>如何購買更多或減少授權
 
-1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取您要為其購買更多或減少授權的訂閱。
 3. 選擇 [ **購買授權** ] 或 [ **移除授權**]。
 4. 在右窗格的 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數，然後選擇 [ **儲存**]。 例如，如果您有100授權，而您想要新增5個，請輸入105。
@@ -71,10 +71,10 @@ ms.locfileid: "50114678"
 
 ## <a name="cancel-a-subscription"></a>取消訂閱
 
-1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 **[產品]** 索引標籤上，找出您要取消的訂閱。 選取 **[更多動作]** (三個點)，然後選取 **[取消訂閱]**。
 3. 在 **取消訂閱** 窗格中，選擇取消的原因。 （選用）提供您所擁有的任何意見反應。
-4. 選取 [儲存 **]**。
+4. 選取 [儲存]。
 
 ## <a name="manage-your-payment-details"></a>管理您的付款詳細資料
 
@@ -107,4 +107,4 @@ ms.locfileid: "50114678"
 
 如需有關自助購買的常見問題，請參閱 [自助購買常見問題](self-service-purchase-faq.md)。
 
-如果您有任何問題或需要協助您購買自助服務，請 [與支援人員聯繫](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
+如果您有任何問題或需要協助您購買自助服務，請 [與支援人員聯繫](../../admin/contact-support-for-business-products.md)。

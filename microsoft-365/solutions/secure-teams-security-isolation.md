@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用唯一的敏感度標籤來建立小組以獲得安全性。
-ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2ecd8e0458f6ebef9ebd1b0c3724195cc70f6378
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405699"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920925"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>為小組設定安全性隔離
 
@@ -40,7 +40,7 @@ ms.locfileid: "50405699"
     - 加密已套用此標籤的文件
 
 > [!IMPORTANT]
-> 請先確定您已啟用[敏感度標籤以保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)，然後再繼續進行本文中的步驟。
+> 請先確定您已啟用[敏感度標籤以保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容](../compliance/sensitivity-labels-teams-groups-sites.md)，然後再繼續進行本文中的步驟。
 
 觀看這段影片以獲取部署程序概觀。
 <br>
@@ -70,8 +70,8 @@ ms.locfileid: "50405699"
 
 如需如何安全地與來賓共用的詳細資訊，請參閱下列資源：
 
-- [在與組織外的人員共用檔案時，限制資訊意外暴露](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [建立安全的來賓共用環境](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [在與組織外的人員共用檔案時，限制資訊意外暴露](./share-limit-accidental-exposure.md)
+- [建立安全的來賓共用環境](./create-secure-guest-sharing-environment.md)
 
 為了允許或封鎖來賓共用，我們會使用敏感度標籤 (適用於小組) 和網站層級共用控制 (適用於相關聯的 SharePoint 網站) 的組合，後面會有這兩種機制的討論。
 
@@ -98,7 +98,7 @@ ms.locfileid: "50405699"
 2. 在 **[設定]** 索引標籤上展開 **[成員權限]**。
 3. 清除 **[允許成員建立私人頻道]** 核取方塊。
 
-您也可以使用[小組原則](https://docs.microsoft.com/MicrosoftTeams/teams-policies)來控制可以建立私人頻道的人員。
+您也可以使用[小組原則](/MicrosoftTeams/teams-policies)來控制可以建立私人頻道的人員。
 
 ## <a name="create-a-sensitivity-label"></a>建立敏感度標籤
 
@@ -194,7 +194,7 @@ ms.locfileid: "50405699"
 
 #### <a name="private-channels"></a>私人頻道
 
-如果您在小組中新增私人頻道，則每個私人頻道都會使用預設的共用設定建立一個新的 SharePoint 網站。 這些網站不會顯示在 SharePoint 系統管理中心內，因此您必須使用 [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) PowerShell Cmdlet 與下列參數來更新來賓共用設定：
+如果您在小組中新增私人頻道，則每個私人頻道都會使用預設的共用設定建立一個新的 SharePoint 網站。 這些網站不會顯示在 SharePoint 系統管理中心內，因此您必須使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) PowerShell Cmdlet 與下列參數來更新來賓共用設定：
 
 - `-SharingCapability Disabled`，以關閉來賓共用 (預設為開啟)
 - `-DefaultSharingLinkType Internal`，以將預設共用連結變更為 *[特定人員]*
@@ -229,10 +229,10 @@ ms.locfileid: "50405699"
 
 Microsoft 365 提供了其他方法來保護您的內容。 請想想下列選項是否有助於改善貴組織的安全性。
 
-- 讓您的來賓同意[使用規定](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
-- 為來賓設定[工作階段逾時原則](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)。
-- 建立[敏感資訊類型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)，並使用[資料外洩防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) 來設定關於存取敏感資訊的原則。
-- 使用 [Azure Active Directory 存取權](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)檢閱來定期檢閱小組的存取權和成員資格。
+- 讓您的來賓同意[使用規定](/azure/active-directory/conditional-access/terms-of-use)。
+- 為來賓設定[工作階段逾時原則](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)。
+- 建立[敏感資訊類型](../compliance/sensitive-information-type-learn-about.md)，並使用[資料外洩防護](../compliance/data-loss-prevention-policies.md) 來設定關於存取敏感資訊的原則。
+- 使用 [Azure Active Directory 存取權](/azure/active-directory/governance/access-reviews-overview)檢閱來定期檢閱小組的存取權和成員資格。
 
 ## <a name="drive-user-adoption-for-team-members"></a>對小組成員推動使用者採用
 
@@ -266,4 +266,4 @@ Microsoft 365 提供了其他方法來保護您的內容。 請想想下列選�
 
 ## <a name="see-also"></a>另請參閱
 
-[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)

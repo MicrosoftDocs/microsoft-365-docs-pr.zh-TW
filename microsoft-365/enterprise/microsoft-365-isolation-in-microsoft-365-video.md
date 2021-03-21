@@ -16,17 +16,17 @@ f1.keywords:
 - NOCSH
 description: 在本文中，將說明租使用者隔離如何將每個租使用者的儲存影片分別保留在 Office 365 影片中。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 626a995fc5a3ac971c48cc87bec1017134e87b88
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: fc67b17aa40b3bca9ce6d73ebb7e18319e780339
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332241"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918927"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Office 365 影片中的租用戶隔離
 
 > [!NOTE]
-> Office 365 影片將會由 Microsoft Stream 取代。 若要深入瞭解將智慧加入影片共同作業的新企業影片服務，並瞭解目前 Microsoft 365 影片客戶的過渡計畫，請參閱 [Office 365 video 中轉至 Microsoft Stream](https://docs.microsoft.com/stream/migrate-from-office-365)。
+> Office 365 影片將會由 Microsoft Stream 取代。 若要深入瞭解將智慧加入影片共同作業的新企業影片服務，並瞭解目前 Microsoft 365 影片客戶的過渡計畫，請參閱 [Office 365 video 中轉至 Microsoft Stream](/stream/migrate-from-office-365)。
 
 ## <a name="introduction"></a>簡介
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 瞭解如何為 Microsoft 365 群組建立命名原則。
-ms.openlocfilehash: acf660375508760bd2e9874a07454709849929b0
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 7fd2ea36b536924d85c7ca09b55593161a24dbe4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759821"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921045"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 群組命名原則
 
@@ -31,7 +31,7 @@ ms.locfileid: "49759821"
 命名原則會套用至所有群組工作負載 (例如 Outlook、Microsoft 團隊、SharePoint、Planner、Yammer 等 ) 上建立的群組。 它會套用至群組名稱和群組別名。 當使用者建立群組時，以及在編輯現有群組的組名、別名、描述或頭像時，也會套用此方式。
 
 > [!TIP]
-> Microsoft 365 群組命名原則只適用于 Microsoft 365 群組。 這不適用於 Exchange Online 中所建立的通訊群組。 若要建立通訊群組的命名原則，請參閱 [建立通訊群組命名原則](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
+> Microsoft 365 群組命名原則只適用于 Microsoft 365 群組。 這不適用於 Exchange Online 中所建立的通訊群組。 若要建立通訊群組的命名原則，請參閱 [建立通訊群組命名原則](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
 
 群組命名原則包含下列功能：
 
@@ -57,7 +57,7 @@ ms.locfileid: "49759821"
 
 您可以使用屬性來識別建立群組的人員，例如 [部門]，以及從 [Country] 建立群組的位置。
 
-範例:
+範例：
 
 - Policy = "GRP [GroupName] [部門]"
 - 使用者的部門 = 工程
@@ -135,4 +135,4 @@ ms.locfileid: "49759821"
 
 [建立共同作業管理計畫](collaboration-governance-first.md)
 
-[用於設定群組設定的 Azure Active Directory Cmdlet](https://go.microsoft.com/fwlink/?linkid=868341)
+[用於設定群組設定的 Azure Active Directory Cmdlet](/azure/active-directory/enterprise-users/groups-settings-cmdlets)

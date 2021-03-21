@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本文列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: d23c6900e9aeb9ad9b550bb069b7a9592faa9b10
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288134"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919709"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -176,12 +176,12 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="definition"></a>定義
 
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
 - 正則運算式 Regex_australia_bank_account_number 找到符合模式的內容。
 - 會找到來自 Keyword_australia_bank_account_number 的關鍵字。
 - 正則運算式 Regex_australia_bank_account_number_bsb 找到符合模式的內容。
 
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
 - 正則運算式 Regex_australia_bank_account_number 找到符合模式的內容。
 
 - 會找到來自 Keyword_australia_bank_account_number 的關鍵字。
@@ -1420,7 +1420,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="definition"></a>定義
 
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
 - 正則運算式 CEP_Regex_AzureRedisCacheConnectionString 找到符合模式的內容。
 - 正則運算式 CEP_CommonExampleKeywords 找不到符合模式的內容。
 
@@ -1514,7 +1514,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="definition"></a>定義
 
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
 - 正則運算式 CEP_Regex_AzureServiceBusConnectionString 找到符合模式的內容。
 - 正則運算式 CEP_CommonExampleKeywords 找不到符合模式的內容。
 
@@ -1822,7 +1822,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 ### <a name="pattern"></a>模式
 
 11位數加上分隔符號：
-- 六位數和兩個選用句點，格式為 YY。MM.DD 出生日期 
+- 六位數和兩個選用句點，格式為 YY。出生日期為 MM 
 - 自點、破折號、空間的選擇性分隔符號 
 - 三個連續數位 (奇數男生，即便是女生)  
 - 自點、破折號、空間的選擇性分隔符號 
@@ -3977,67 +3977,6 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - tin no
 - 錫#
 
-## <a name="croatia-social-security-number-or-equivalent-identification"></a>克羅地亞社會安全號碼或同等身分識別
-這個敏感資訊類型實體只有歐盟社會保險號碼或同等識別碼的敏感資訊類型提供。
-
-### <a name="format"></a>格式
-
-11位數，不含空格及分隔符號
-  
-### <a name="pattern"></a>模式
-
-11位數：
-  
-- 10位數
-- 一個檢查碼
-    
-### <a name="checksum"></a>校驗
-
-是
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-  
-- 函數  `Func_croatia_eu_ssn_or_equivalent` 會找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_croatia_eu_ssn_or_equivalent` 。 
-    
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-  
-- 函數  `Func_croatia_eu_ssn_or_equivalent` 會找到符合模式的內容。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
-
-- 個人身分識別號碼
-- 主機公民號碼
-- 國家識別號碼
-- 社會安全號碼
-- nationalnumber#
-- Ssn#
-- Ssn
-- nationalnumber
-- 安娜#
-- 安娜
-- 個人號碼
-- personalidnumber#
-- oib
-- osobni identifikacijski broj
-
 ## <a name="cyprus-drivers-license-number"></a>賽普勒斯驅動程式授權號碼
 
 ### <a name="format"></a>格式
@@ -4756,66 +4695,6 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 錫#
 - 唯一識別碼
 
-## <a name="czech-social-security-number-or-equivalent-identification"></a>捷克社會安全號碼或同等身分識別
-
-這個敏感資訊類型實體只有歐盟社會保險號碼或同等識別碼的敏感資訊類型提供。
-
-### <a name="format"></a>格式
-
-在指定的模式中，10位數和反斜線
-  
-### <a name="pattern"></a>模式
-
-10位數和反斜線：
-  
-- 對應至出生日期 (YYMMDD) 的六位數： 
-- 反斜線
-- 三位數的數位，對應至在相同日期出生的人員
-- 一個檢查碼
-    
-### <a name="checksum"></a>校驗
-
-是
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_czech_republic_eu_ssn_or_equivalent` 會找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_czech_republic_eu_ssn_or_equivalent` 。 
-    
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_czech_republic_eu_ssn_or_equivalent` 會找到符合模式的內容。 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
-
-- 出生號碼
-- 國家識別號碼
-- 個人身分識別號碼
-- 社會安全號碼
-- nationalnumber#
-- Ssn#
-- Ssn
-- 國家/地區號碼
-- 個人號碼
-- personalidnumber#
-- rč
-- rodné číslo
-- rodne cislo
 
 ## <a name="denmark-drivers-license-number"></a>丹麥駕照編號
 
@@ -5172,62 +5051,6 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - sygesikringsnr
 - sygesikringsnummer
 
-## <a name="denmark-social-security-number-or-equivalent-identification"></a>丹麥社會安全號碼或對等身分識別
-這個敏感資訊類型實體只有歐盟社會保險號碼或同等識別碼的敏感資訊類型。
-
-### <a name="format"></a>格式
-
-在指定的模式中，10位數和連字號
-  
-### <a name="pattern"></a>模式
-
-10位數和連字號：
-  
-- 對應至出生日期 (DDMMYY 的六位數)  
-- 連字號
-- 對應至序號的四位數
-
-### <a name="checksum"></a>校驗
-
-是
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_denmark_eu_ssn_or_equivalent` 會找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_denmark_eu_ssn_or_equivalent` 。 
-    
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_denmark_eu_ssn_or_equivalent` 會找到符合模式的內容。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
-
-- 個人身分識別號碼
-- 國家識別號碼
-- 社會安全號碼
-- nationalnumber#
-- Ssn#
-- Ssn
-- 國家/地區號碼
-- 個人號碼
-- personalidnumber#
-- cpr-nummer
-- personnummer
 
 ## <a name="drug-enforcement-agency-dea-number"></a>藥物執行代理商 (DEA) 號碼
 
@@ -6076,7 +5899,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - [捷克文](#czech-personal-identity-number)
 - [丹麥](#denmark-personal-identification-number)
 - [芬蘭](#finland-national-id)
-- [法國](#france-social-security-number-insee-or-equivalent-identification)
+- [法國](#france-social-security-number-insee)
 - [德國](#germany-identity-card-number)
 - [希臘](#greece-national-id-card)
 - [匈牙利](#hungary-social-security-number-taj)
@@ -6879,7 +6702,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 到期日
 
 
-## <a name="france-social-security-number-insee-or-equivalent-identification"></a>法國社會安全號碼 (INSEE) 或同等身分識別
+## <a name="france-social-security-number-insee"></a>INSEE)  (的法國社會安全號碼
 
 ### <a name="format"></a>格式
 
@@ -8882,11 +8705,11 @@ IPv6 數位格式的複雜模式，其中包含冒號 ()
 - 正則運算式 Regex_ipv6_address 找到符合模式的內容。
 - 找不到 Keyword_ipaddress 的關鍵字。
 
-針對 IPv4，如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是95%：
+針對 IPv4，當鄰近300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的高可信度：
 - 正則運算式 Regex_ipv4_address 找到符合模式的內容。
 - 會找到來自 Keyword_ipaddress 的關鍵字。
 
-針對 IPv6，如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是95%：
+針對 IPv6，當鄰近300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的高可信度：
 - 正則運算式 Regex_ipv6_address 找到符合模式的內容。
 - 找不到 Keyword_ipaddress 的關鍵字。
 
@@ -14971,7 +14794,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - 身份證
-- 識別碼
+- ID
 - 識別 
    
 ## <a name="south-korea-resident-registration-number"></a>韓國居民登記號碼
@@ -15960,67 +15783,6 @@ Foreigners 與 Foreigner 的識別號碼
 - 發行日期
 - 到期日
 
-
-## <a name="sweden-social-security-number-or-equivalent-identification"></a>瑞典社會安全號碼或對等身分識別
-這個敏感資訊類型實體只有歐盟社會保險號碼或同等識別碼的敏感資訊類型提供。
-
-### <a name="format"></a>格式
-
-12位數，不含空格及分隔符號
-  
-### <a name="pattern"></a>模式
-
-12位數：
-  
-- 對應至出生日期 (YYYYMMDD) 的八位數 
-- 對應至序數的三位數，其中： 
-  - 序數中的最後一個數位是由為男指派的奇數和偶數的女數位來表示性別
-  - 在1990之前，將 corresponded 的持有者的序號為出生的縣編號。 或 (如果在 1947) （如有）的使用中，則根據稅收記錄在年1月 1 1947 日的納稅記錄中 (，以特殊的程式碼通常為 immigrants 的第七位數) 9。
-- 一個檢查碼
-    
-### <a name="checksum"></a>校驗
-
-是
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_sweden_eu_ssn_or_equivalent` 會找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_sweden_eu_ssn_or_equivalent` 。 
-    
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_sweden_eu_ssn_or_equivalent` 會找到符合模式的內容。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
-
-- 個人號碼
-- 識別號碼
-- 個人識別碼否
-- identity no
-- 識別碼否
-- 個人身分識別否
-- personnummer 識別碼
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer#
-- identifikationsnumret#
 
 ## <a name="sweden-tax-identification-number"></a>瑞典納稅識別號碼
 此機密資訊類型僅可用於下列專案：
@@ -17031,7 +16793,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - Dls 
 - 民盟 
 - CDLS 
-- 識別碼 
+- ID 
 - IDs 
 - Dl# 
 - Dls# 
@@ -17242,7 +17004,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 函數 Func_randomized_formatted_ssn 找到符合模式的內容。
 - 會找到來自 Keyword_ssn 的關鍵字。
 
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是55%：
+DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信賴度很低：
 - 函數 Func_randomized_unformatted_ssn 找到符合模式的內容。
 - 會找到來自 Keyword_ssn 的關鍵字。
 

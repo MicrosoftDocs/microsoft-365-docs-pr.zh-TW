@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 判斷 Microsoft 365 客戶資料的全球儲存位置
-ms.openlocfilehash: dc74393eadbd5f1abc62efe7411434d0b919e5fe
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: a93f83e7efafa06aa65675342471c26f1b197864
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988101"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920785"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -58,11 +58,11 @@ Microsoft 不會揭露其資料中心的確切地址。 我們建立此原則來
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>客戶資料的位置是否會直接影響使用者的使用體驗？
 
-Microsoft 365 的效能並不只是與使用者距離資料中心位置成比例。 Microsoft 在其全球雲端網路、全球雲端基礎結構和 Microsoft 365 服務架構中的持續投資，可協助為使用者提供單一且一致的體驗，而不受待用客戶資料儲存的位置限制。 如果您的使用者遇到效能問題，您應深入疑難排解這些問題。 Microsoft 已在 [Office 支援網站](https://go.microsoft.com/fwlink/p/?linkid=862645)上發佈指導方針，供 Microsoft 365 客戶規劃並最佳化使用者效能。
+Microsoft 365 的效能並不只是與使用者距離資料中心位置成比例。 Microsoft 在其全球雲端網路、全球雲端基礎結構和 Microsoft 365 服務架構中的持續投資，可協助為使用者提供單一且一致的體驗，而不受待用客戶資料儲存的位置限制。 如果您的使用者遇到效能問題，您應深入疑難排解這些問題。 Microsoft 已在 [Office 支援網站](./network-planning-and-performance.md)上發佈指導方針，供 Microsoft 365 客戶規劃並最佳化使用者效能。
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Microsoft 如何協助我遵守國家、地區和產業特定法規？
 
-為了協助您遵守管理個人資料收集和使用的國家、地區和產業特定需求，Microsoft 365 提供適用於任何全球雲端生產力服務提供者的最全面合規性服務集合。 請檢閱[我們的合規性服務](https://go.microsoft.com/fwlink/p/?linkid=864391)和 Microsoft 信任中心上的 [Microsoft 365 合規性](https://go.microsoft.com/fwlink/p/?linkid=862317)一節中的更多詳細資料。 此外，某些 Microsoft 365 方案可提供更進一步的合規性解決方案，協助您管理資料、遵守法律和法規需求，並監控對資料所採取的動作。
+為了協助您遵守管理個人資料收集和使用的國家、地區和產業特定需求，Microsoft 365 提供適用於任何全球雲端生產力服務提供者的最全面合規性服務集合。 請檢閱[我們的合規性服務](/compliance/regulatory/offering-home)和 Microsoft 信任中心上的 [Microsoft 365 合規性](https://go.microsoft.com/fwlink/p/?linkid=862317)一節中的更多詳細資料。 此外，某些 Microsoft 365 方案可提供更進一步的合規性解決方案，協助您管理資料、遵守法律和法規需求，並監控對資料所採取的動作。
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>誰可以存取您的資料，以及根據什麼規則？
 
@@ -419,7 +419,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -515,7 +515,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2123,7 +2123,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2915,7 +2915,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3059,7 +3059,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4451,7 +4451,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5315,7 +5315,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5555,7 +5555,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5819,7 +5819,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |

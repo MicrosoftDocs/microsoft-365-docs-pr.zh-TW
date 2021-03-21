@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 深入瞭解 Microsoft 365 群組到期原則。
-ms.openlocfilehash: d55cc7fff939cb07ae2eba92de411e8f0d088885
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 8232e7df2a8390b905386773ed0656eb8239d5c5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613651"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920913"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 群組到期原則
 
@@ -44,14 +44,14 @@ ms.locfileid: "49613651"
 請務必知道到期會預設為關閉狀態。 管理員若要使用它，必須為組織啟用該功能。
 
 > [!NOTE]
-> 設定及使用 Microsoft 365 群組的到期原則，需要您擁有但不一定要為已套用到期原則之所有群組的成員指派 Azure AD Premium 授權。 如需詳細資訊，請參閱 [Azure Active Directory Premium 快速](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)入門。
+> 設定及使用 Microsoft 365 群組的到期原則，需要您擁有但不一定要為已套用到期原則之所有群組的成員指派 Azure AD Premium 授權。 如需詳細資訊，請參閱 [Azure Active Directory Premium 快速](/azure/active-directory/active-directory-get-started-premium)入門。
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>誰可以設定及使用 Microsoft 365 群組到期原則？
 
 |角色|可以執行的動作|
 |---------|---------|
 |Office 365 全域管理員 (于 Azure 中，公司系統管理員) ，使用者管理員|建立、讀取、更新或刪除 Microsoft 365 群組到期原則設定。|
-|使用者|更新或 [還原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) 擁有的 Microsoft 365 群組|
+|使用者|更新或 [還原](/azure/active-directory/users-groups-roles/groups-restore-deleted) 擁有的 Microsoft 365 群組|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何設定到期原則
 
@@ -91,4 +91,4 @@ ms.locfileid: "49613651"
 
 [指派新擁有者給孤立的群組](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[設定 Microsoft 365 群組到期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[設定 Microsoft 365 群組到期](/azure/active-directory/active-directory-groups-lifecycle-azure-portal)

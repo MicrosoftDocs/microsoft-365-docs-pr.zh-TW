@@ -12,49 +12,33 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-ediscovery
+- m365solution-aed
 - m365initiative-compliance
+- m365solution-scenario
 search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何設定高級 eDiscovery，讓您可以開始建立及管理案例。 此外，它也會說明必要的 Microsoft 訂閱和授權。 完成一些快速步驟之後，就可以使用「高級 eDiscovery」工具。
-ms.openlocfilehash: 29a220f36a55a04d1c1a24add03b2e013a5c60ba
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 6c6aed482da8f203154d94313ec04519d6a330ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727408"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919741"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>設定 Microsoft 365 Advanced eDiscovery
 
-Microsoft 365 中的「高級 eDiscovery」提供 [端對端工作流程](overview-ediscovery-20.md#advanced-ediscovery-workflow) ，可保留、收集、審查、分析和匯出回應組織內部和外部調查的資料。 不需要部署高級 eDiscovery，但是必須先執行一些必要的工作，IT 系統管理員和 eDiscovery 管理員必須完成，您的組織才可以開始建立及使用高級 eDiscovery 案例來管理調查。
+Microsoft 365 中的「高級 eDiscovery」提供端對端工作流程，可保留、收集、審查、分析和匯出回應組織內部和外部調查的資料。 不需要部署高級 eDiscovery，但是必須先執行一些必要的工作，IT 系統管理員和 eDiscovery 管理員必須完成，您的組織才可以開始建立及使用高級 eDiscovery 案例來管理調查。
 
-本文討論設定高級 eDiscovery 所需的步驟。 這包括確保存取高級 eDiscovery 及將保管人新增至案例，以及將許可權指派給法律和調查小組以供存取及管理案例所需的適當授權。
+本文討論設定高級 eDiscovery 所需的下列步驟。
+
+![設定高級 eDiscovery 的步驟](../media/set-up-advanced-ediscovery.png)
+
+這包括確保存取高級 eDiscovery 及將保管人新增至案例，以及將許可權指派給法律和調查小組以供存取及管理案例所需的適當授權。
 
 ## <a name="step-1-verify-and-assign-appropriate-licenses"></a>步驟1：確認並指派適當的授權
 
-「高級 eDiscovery」的授權需要適當的組織訂閱和每一使用者授權。
-
-- **組織訂閱：** 若要存取 Microsoft 365 規範中心或安全性 & 規範中心的高級 eDiscovery，您的組織必須具備下列其中一項：
-
-  - Microsoft 365 E5 或 Office 365 E5 訂閱
-  
-  - 含 E5 合規性附加元件的 Microsoft 365 E3 訂閱
-
-  - 具有 E5 電子檔探索和審核附加元件的 Microsoft 365 E3 訂閱
-
-  如果您沒有現有的 Microsoft 365 E5 計畫，且想要嘗試使用 Advanced eDiscovery，您可以 [將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Microsoft 365 E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
-
-- **每位使用者授權：** 若要在預先 eDiscovery 案例中將使用者新增為系統管理員，該使用者必須根據您的組織訂閱，被指派下列其中一個授權：
-
-  - Microsoft 365：使用者必須被指派 Microsoft 365 E5 授權、E5 相容性附加元件授權或 E5 eDiscovery 和審核附加元件授權。
-
-  - Office 365：使用者必須獲指派 Office 365 E5 授權。
-
-   如需如何指派授權的詳細資訊，請參閱 [將授權指派給使用者](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
-
-> [!NOTE]
-> 使用者只需要 E5 授權 (或適當的附加元件授權) ，以在高級 eDiscovery 案例中新增為保管人。 IT 系統管理員、eDiscovery 管理員、律師、paralegals 或調查人員，使用高級 eDiscovery 來管理案例及審閱案例資料，不需要 E5 或附加元件授權。
+「高級 eDiscovery」的授權需要適當的組織訂閱和每一使用者授權。 如需高級 eDiscovery 的授權需求清單，請參閱 [訂閱和授權](overview-ediscovery-20.md#subscriptions-and-licensing)。
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步驟2：指派 eDiscovery 許可權
 
@@ -62,7 +46,7 @@ Microsoft 365 中的「高級 eDiscovery」提供 [端對端工作流程](overvi
 
 完成下列步驟，將使用者新增至 eDiscovery 管理員角色群組：
 
-1. 移至 [https://protection.office.com/permissions](https://protection.office.com/permissions) 並使用您的 Microsoft 365 組織中的系統管理員帳戶的認證登入。
+1. 移至 <https://protection.office.com/permissions> 並使用您的 Microsoft 365 組織中的系統管理員帳戶的認證登入。
 
 2. 在 [ **許可權** ] 頁面上，選取 [ **eDiscovery 管理員** ] 角色群組。
 
@@ -80,9 +64,9 @@ Microsoft 365 中的「高級 eDiscovery」提供 [端對端工作流程](overvi
 
 EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間的差異是以範圍為基礎。
 
-- **EDiscovery 管理員：** 可以查看和管理其所建立或其成員的高級 eDiscovery 案例。 如果另一個 eDiscovery 管理員建立了案例，但沒有將第二個 eDiscovery 管理員新增為該案例的成員，則第二個 eDiscovery 管理員將無法在「規範中心」的 [高級 eDiscovery] 頁面上，查看或開啟此案例。 一般說來，您組織中的大部分人員都可以新增至 eDiscovery Manager 子組。
+- **EDiscovery Manager**：可以查看和管理其所建立或其成員的高級 eDiscovery 案例。 如果另一個 eDiscovery 管理員建立了案例，但沒有將第二個 eDiscovery 管理員新增為該案例的成員，則第二個 eDiscovery 管理員將無法在「規範中心」的 [高級 eDiscovery] 頁面上，查看或開啟此案例。 一般說來，您組織中的大部分人員都可以新增至 eDiscovery Manager 子組。
 
-- **EDiscovery 管理員：** 可以執行 eDiscovery 管理員可以執行的所有案例管理工作。 此外，電子檔探索管理員也可以：
+- **Ediscovery 管理員**：可以執行 eDiscovery 管理員可以執行的所有案例管理工作。 此外，電子檔探索管理員也可以：
 
   - 查看 [高級 eDiscovery] 頁面上列出的所有案例。
   

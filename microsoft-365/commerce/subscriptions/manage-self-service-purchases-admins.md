@@ -15,19 +15,19 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何管理組織中使用者所進行的自我服務購買。
-ms.openlocfilehash: 3e04f58c10b14aca8b356c064106b7107f144d91
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 2ce12b7dba4e765745a94fa10f4ba15e7013e3c8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114690"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920177"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助購買 (管理員)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -37,7 +37,7 @@ ms.locfileid: "50114690"
 
 ## <a name="view-self-service-subscriptions"></a>查看自助訂閱
 
-1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
 3. 若要查看訂閱的詳細資料，請從清單中選擇其中一個。
 
@@ -88,7 +88,7 @@ ms.locfileid: "50114690"
 > [!NOTE]
 > 您必須具備您要移動使用者的訂閱中每個使用者的可用授權。
 
-1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
 3. 選取您要接管的訂閱。
 4. 在 [訂閱詳細資料] 頁面的 [ **訂閱與設定** ] 區段中，選取 [ **取得此訂閱的控制權**]。
@@ -102,7 +102,7 @@ ms.locfileid: "50114690"
 
 當您選擇取消自助購買訂閱時，具有授權的使用者將無法存取產品。 最初購買自助購買訂閱的使用者會收到一封電子郵件，指出訂閱已取消。
 
-1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
 3. 選取您要取消的訂閱。
 4. 在 [訂閱詳細資料] 頁面的 [ **訂閱與設定** ] 區段中，選取 [ **取得此訂閱的控制權**]。

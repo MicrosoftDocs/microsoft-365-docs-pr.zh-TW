@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 774f03ebbf12a8bfbf4e2409735352b83e6963aa
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a5eab2aaecd3d0c339fdc2e58af17dcfd9feb199
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421540"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919879"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的通訊法規遵從性
 
@@ -38,6 +38,13 @@ Microsoft 365 中的通訊相容性原則可協助您克服與相容性和內部
 - 法規實施和罰款風險
 
 此外，您的 IT 系統管理員和合規性管理小組之間可能會有不同的職責。 通訊法規遵從性支援原則的設定和郵件的調查與複查之間的分隔。 例如，您組織的 IT 群組可能負責設定通訊符合性角色許可權、群組和原則，以及調查人員和檢閱者，可能負責郵件會審、審閱及緩解動作。
+
+如需通訊相容性的最新 Ignite 簡報，請參閱下列影片：
+
+- [促進安全性和包含與通訊合規性的文化](https://www.youtube.com/watch?v=oLVzxcaef3w)
+- [瞭解如何降低組織內的通訊風險](https://www.youtube.com/watch?v=vzARb1YaxGo)
+- [遵循通訊合規性以滿足法規遵從性需求](https://www.youtube.com/watch?v=gagOhtCBfgU)
+- [更好的 Microsoft 團隊-深入瞭解通訊規範中的最新原生小組整合功能](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 如需溝通相容性的快速綜述，請參閱偵測工作地點騷擾，並以 microsoft Communication[通道](https://www.youtube.com/user/OfficeGarageSeries)的[microsoft 365 影片中的通訊相容性回應](https://youtu.be/z33ji7a7Zho)。
 

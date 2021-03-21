@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 了解如何使用 Office 365 IP 位址和 URL Web 服務來協助您更能識別並區分 Office 365 網路流量。
-ms.openlocfilehash: 03e6eac86e66db6f9e94c3f98e6d7b565ffa0f14
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456456"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918951"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 位址和 URL Web 服務
 
@@ -66,7 +66,7 @@ Office 365 IP 位址和 URL Web 服務可協助您更能識別並區分 Office 3
 - **format=<JSON | CSV>** - 依預設，傳回的資料格式為 JSON。 使用此選擇性參數可以逗點分隔值 (CSV) 格式傳回資料。
 - **ClientRequestId=\<guid>** - 您為用戶端關聯所產生的必要 GUID。 針對每個呼叫 Web 服務的電腦產生唯一 GUID (此頁面上包含的指令碼會為您產生 GUID)。 請勿使用下列範例所示的 GUID，因為未來 Web 服務可能會加以封鎖。 GUID 格式為 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_，其中 x 代表十六進位數字。
 
-  若要產生 GUID，您可以使用 PowerShell 命令 [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)，或使用線上服務，例如[線上 GUID 產生器](https://www.guidgenerator.com/)。
+  若要產生 GUID，您可以使用 PowerShell 命令 [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)，或使用線上服務，例如[線上 GUID 產生器](https://www.guidgenerator.com/)。
 
 ## <a name="version-web-method"></a>版本 Web 方法
 
@@ -250,7 +250,7 @@ Worldwide,2018063000
 
 變更 Web 方法的必要參數為：
 
-- **Version=\<YYYYMMDDNN>** - 必要的 URL 路由參數。 此值是您目前實作的版本。 Web 服務會傳回自該版本後所做的變更。 格式為 _YYYYMMDDNN_，其中 _NN_ 是在一天中必須發佈多個版本時，遞增的自然數，_00_ 代表當天的第一個更新。 Web 服務需要_版本_參數，才能包含確切 10 位數。
+- **Version=\<YYYYMMDDNN>** - 必要的 URL 路由參數。 此值是您目前實作的版本。 Web 服務會傳回自該版本後所做的變更。 格式為 _YYYYMMDDNN_，其中 _NN_ 是在一天中必須發佈多個版本時，遞增的自然數，_00_ 代表當天的第一個更新。 Web 服務需要 _版本_ 參數，才能包含確切 10 位數。
 
 變更 Web 方法的速率限制方式與端點 Web 方法相同。 如果您收到 429 HTTP 回應碼，請先等候 1 小時，再重複您的要求，或是針對要求產生新的 GUID。
 
@@ -607,7 +607,7 @@ else:
 
 - 若要使用 Microsoft Flow 解決方案，請參閱[使用 Microsoft Flow 接收有關 Office 365 IP 位址和 URL 變更的電子郵件](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)。
 - 若要使用 ARM 範本部署 Azure Logic App，請參閱 [Office 365 更新通知 (v1.1)](https://aka.ms/ipurlws-updates-template)。
-- 若要使用 PowerShell 撰寫您自己的通知指令碼，請參閱 [Send-MailMessage](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/send-mailmessage)。
+- 若要使用 PowerShell 撰寫您自己的通知指令碼，請參閱 [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage)。
 
 ## <a name="exporting-a-proxy-pac-file"></a>匯出 Proxy PAC 檔案
 

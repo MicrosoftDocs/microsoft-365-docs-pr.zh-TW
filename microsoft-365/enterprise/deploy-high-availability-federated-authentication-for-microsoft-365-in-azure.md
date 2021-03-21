@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 摘要：在 Microsoft Azure 中為您的 Microsoft 365 訂閱設定高可用性同盟驗證。
-ms.openlocfilehash: abe01445b8963dcdc5693b45a680e273f5084446
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3989ebb06b4ac5dfa1cded5e07c086c4778f94e7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688621"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919149"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Azure 中的 Microsoft 365 高可用性同盟驗證
 
@@ -47,12 +47,12 @@ ms.locfileid: "46688621"
 所有虛擬機器位於單一跨單位 Azure 虛擬網路中 (VNet)。 
   
 > [!NOTE]
-> 個別使用者的聯盟驗證不會仰賴任何內部部署資源。不過，如果跨單位連線無法使用，VNet 中的網域控制站就不會收到使用者帳戶和群組在內部部署 Active Directory Domain Services (AD DS) 中的更新。若要確保不會發生這個情況，您可以設定跨場所連線的高可用性。如需詳細資訊，請參閱[高度可用的跨單位和 VNet-VNet 連線](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)。
+> 個別使用者的聯盟驗證不會仰賴任何內部部署資源。不過，如果跨單位連線無法使用，VNet 中的網域控制站就不會收到使用者帳戶和群組在內部部署 Active Directory Domain Services (AD DS) 中的更新。若要確保不會發生這個情況，您可以設定跨場所連線的高可用性。如需詳細資訊，請參閱[高度可用的跨單位和 VNet-VNet 連線](/azure/vpn-gateway/vpn-gateway-highlyavailable)。
   
 特定角色的每個虛擬機器配對都是位於它自己的子網路和可用性設定組中。
   
 > [!NOTE]
-> 因為此 VNet 會連線到內部部署網路，所以此組態不包含管理子網路上的 Jumpbox 或監視虛擬機器。如需詳細資訊，請參閱＜[執行 N 層架構的 Windows VM](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)＞。 
+> 因為此 VNet 會連線到內部部署網路，所以此組態不包含管理子網路上的 Jumpbox 或監視虛擬機器。如需詳細資訊，請參閱＜[執行 N 層架構的 Windows VM](/azure/guidance/guidance-compute-n-tier-vm)＞。 
   
 這項設定的結果是您將具備所有 Microsoft 365 使用者的同盟驗證，讓他們可以使用其 AD DS 認證來登入，而不是其 Microsoft 365 帳戶。 聯盟驗證基礎結構會使用一組多餘的伺服器，能更輕鬆部署在 Azure 基礎結構服務而不是內部部署邊緣網路中。
   
@@ -109,4 +109,3 @@ ms.locfileid: "46688621"
 ## <a name="next-step"></a>下一步
 
 使用[階段 1：設定 Azure](high-availability-federated-authentication-phase-1-configure-azure.md) 開始設定此工作負載。 
-  

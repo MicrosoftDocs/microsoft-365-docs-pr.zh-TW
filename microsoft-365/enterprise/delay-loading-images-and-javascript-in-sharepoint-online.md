@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: 瞭解如何使用 JavaScript 延遲載入影像和非必要 JavaScript，縮短 SharePoint 線上頁面的載入時間。
-ms.openlocfilehash: ee86ae0813c11fbfd836d7d38ea124c1e3f277d0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 86b93c4e1e102132bb0c1bfb9a413233529adecb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688625"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919161"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>延遲載入 SharePoint Online 中的影像和 JavaScript
 
@@ -46,7 +46,7 @@ ms.locfileid: "46688625"
   
 若要進行上述所有動作，您必須使用 JavaScript。
   
-在文字檔中，定義 **isElementInViewport ( # B1 ** 函數，以檢查元素是否位於使用者可以看見的瀏覽器部分。
+在文字檔中，定義 **isElementInViewport ()** 函數，以檢查元素是否位於使用者可以看見的瀏覽器部分。
   
 ```javascript
 function isElementInViewport(el) {
@@ -62,7 +62,7 @@ function isElementInViewport(el) {
 }
 ```
 
-接下來，在**loadItemsInView ( # B3**函數中使用**IsElementInViewport ( # B1** 。 **LoadItemsInView ( # B1**函數會載入具有資料 src 屬性值的所有影像（如果它們位於使用者可以看見的瀏覽器部分中）。 將下列函數新增至文字檔：
+接下來，在 **loadItemsInView ()** 函數中使用 **isElementInViewport ()** 。 如果資料位於使用者可以看見的瀏覽器中， **loadItemsInView ()** 函數就會載入具有資料 src 屬性值的所有影像。 將下列函數新增至文字檔：
   
 ```javascript
 function loadItemsInView() {
@@ -78,7 +78,7 @@ function loadItemsInView() {
 }
 ```
 
-最後，從 ** ( loadItemsInView ** 中 ( # B1 開始呼叫。 onscroll 如下列範例所示的 **# B3 ** 。 這可確保視區中的任何影像都會在使用者需要時載入，但不會在之前載入。 將下列專案新增至文字檔：
+最後，從 **loadItemsInView ()** 中，撥打 **onscroll ()** 如下列範例所示。 這可確保視區中的任何影像都會在使用者需要時載入，但不會在之前載入。 將下列專案新增至文字檔：
   
 ```javascript
 //Example of calling loadItemsInView() from within window.onscroll()
@@ -101,9 +101,9 @@ $('#s4-workspace').on("scroll", function () {
   
 delayLoadImages.js 寫入完畢後，您可以在 SharePoint 線上中將檔案的內容新增至主版頁面。 若要這麼做，您可以將腳本連結新增至主版頁面的頁首。 在主版頁面中，JavaScript 會套用至所有使用該主版頁面版面配置的 SharePoint Online 網站中的所有頁面。 或者，如果您只想在網站的一個頁面上使用此程式，請使用 [腳本編輯器網頁元件] 將 JavaScript 嵌入頁面中。 如需詳細資訊，請參閱以下主題：
   
-- [操作方法：將主版頁面套用至 SharePoint 2013 的網站](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+- [操作方法：將主版頁面套用至 SharePoint 2013 的網站](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
-- [操作方法：在 SharePoint 2013 中建立頁面配置](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+- [操作方法：在 SharePoint 2013 中建立頁面配置](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)
 
 ### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>範例：從 SharePoint Online 中的主版頁面參考 JavaScript delayLoadImages.js 檔案
   
@@ -121,10 +121,10 @@ delayLoadImages.js 寫入完畢後，您可以在 SharePoint 線上中將檔案�
 
 在 GitHub 上所提供的 [JavaScript 注入](https://go.microsoft.com/fwlink/p/?LinkId=524759) 上，請勿錯過文章和程式碼範例。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Office 2013 和 Microsoft 365 應用程式中支援的瀏覽器](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[操作方法：將主版頁面套用至 SharePoint 2013 的網站](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+[操作方法：將主版頁面套用至 SharePoint 2013 的網站](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
   
-[操作方法：在 SharePoint 2013 中建立頁面配置](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+[操作方法：在 SharePoint 2013 中建立頁面配置](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)

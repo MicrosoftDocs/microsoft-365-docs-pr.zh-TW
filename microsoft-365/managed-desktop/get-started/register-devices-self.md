@@ -7,19 +7,19 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: df6013f2f7fec32e79557a82f9b56fe4ad487786
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 8dc9412de7b682c34a48ae64b676e4b0313dea35
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840678"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920677"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
 Microsoft 受管理的桌上型電腦可以與全新裝置搭配運作，也可以重複使用您已有 (的裝置，而這些裝置將需要) 重新建立映射。 您可以在 Microsoft 的端點管理員入口網站中使用 Microsoft 受管理的桌上型電腦註冊裝置。
 
 > [!NOTE]
-> 與合作夥伴合作來取得裝置嗎？ 若是如此，您就不需要擔心取得硬體雜湊，他們會為您處理。 請確定您的夥伴已在 [夥伴中心](https://partner.microsoft.com/dashboard)與您建立關聯。 您的合作夥伴可在 [合作夥伴中心說明](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)深入了解。 建立這種關聯性後，您的合作夥伴就會代表您直接註冊裝置，您不須採取任何進一步動作。 如果您想要查看詳細資料，或您的合作夥伴有疑問，請參閱[可供合作夥伴註冊裝置的步驟](register-devices-partner.md)。 註冊好裝置後，您可以繼續[檢查映像](#check-the-image)並[將裝置交付](#deliver-the-device)給您的使用者。
+> 與合作夥伴合作來取得裝置嗎？ 若是如此，您就不需要擔心取得硬體雜湊，他們會為您處理。 請確定您的夥伴已在 [夥伴中心](https://partner.microsoft.com/dashboard)與您建立關聯。 您的合作夥伴可在 [合作夥伴中心說明](/partner-center/request-a-relationship-with-a-customer)深入了解。 建立這種關聯性後，您的合作夥伴就會代表您直接註冊裝置，您不須採取任何進一步動作。 如果您想要查看詳細資料，或您的合作夥伴有疑問，請參閱[可供合作夥伴註冊裝置的步驟](register-devices-partner.md)。 註冊好裝置後，您可以繼續[檢查映像](#check-the-image)並[將裝置交付](#deliver-the-device)給您的使用者。
 
 ## <a name="prepare-to-register-brand-new-devices"></a>準備註冊全新的裝置
 
@@ -42,7 +42,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 #### <a name="powershell-script-method"></a>PowerShell 指令碼方法
 
-您可以使用 PowerShell 圖庫網站上的 [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell 腳本。 如需裝置識別及硬體雜湊的詳細資訊，請參閱 [將裝置新增至 Windows Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices#device-identification)。
+您可以使用 PowerShell 圖庫網站上的 [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell 腳本。 如需裝置識別及硬體雜湊的詳細資訊，請參閱 [將裝置新增至 Windows Autopilot](/mem/autopilot/add-devices#device-identification)。
 
 1.  以系統管理權限開啟 PowerShell 提示字元。
 2.  執行 `Install-Script -Name Get-WindowsAutoPilotInfo`
@@ -121,8 +121,3 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 > 將裝置交給使用者之前，請確認您已取得並套用[適合該使用者的授權](../get-ready/prerequisites.md)。
 
 如果已套用所有授權，您可以[讓使用者準備好使用裝置](get-started-devices.md)，然後使用者即可啟動裝置並繼續進行 Windows 設定體驗。
-
-
-
-
-

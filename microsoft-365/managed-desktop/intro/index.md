@@ -9,17 +9,17 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 07d3d50f012b2d93e9f7a75f47b0c35514b51350
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840932"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920617"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
 
-Microsoft 受管理的電腦是雲端式服務，可整合 [Microsoft 365 企業版](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (包含 [Windows 10](https://docs.microsoft.com/windows/windows-10/)企業版及 [Office 365 企業版](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) 並新增以下功能：
+Microsoft 受管理的電腦是雲端式服務，可整合 [Microsoft 365 企業版](../../enterprise/microsoft-365-overview.md) (包含 [Windows 10](/windows/windows-10/)企業版及 [Office 365 企業版](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) 並新增以下功能：
 
 - 使用者裝置部署
 - IT 服務管理和工作
@@ -44,7 +44,7 @@ Microsoft 受管理的電腦為當今企業及其員工面臨的若干挑戰，�
 - Microsoft 受管理電腦裝置啟動時間只有四分之一。
 - 至少兩倍的電池使用時間
 - 裝置的每年當機次數約僅三分之一
-- 透過[企業狀態漫遊](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)提供的裝置可行動性，可讓使用者無論登入何處，都能擁有相同的體驗
+- 透過[企業狀態漫遊](/azure/active-directory/devices/enterprise-state-roaming-overview)提供的裝置可行動性，可讓使用者無論登入何處，都能擁有相同的體驗
 
 您的 IT 管理員可以從以下功能中受益：
 
@@ -58,7 +58,7 @@ Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft
 
 - **硬體：** 您的 IT 部門不必研究並測試裝置 (及其驅動程式)，Microsoft 受管理的電腦會仔細測試特定裝置，從而產生滿足企業效能要求並保證可與服務搭配的精心策劃之 [裝置清單](../service-description/device-list.md)。 您可以自行 (或配合合作夥伴) 取得裝置，或重複使用您已擁有的裝置 (如果它已在核准清單上)。 註冊裝置既簡單且直接，而在部署裝置之前，您也可以為您的使用者[自訂](../working-with-managed-desktop/config-setting-overview.md)裝置體驗的特定層面。
 - **更新：** Microsoft 受管理的電腦會針對 Windows 10 品質和功能更新、驅動程式、韌體、防毒定義，以及用於企業更新的 Microsoft 365 應用程式來設定及管理 [部署群組](../service-description/updates.md)的所有層面。 其中包含所有更新的周延測試和驗證，從而確保已註冊的裝置永遠保持最新狀態並降低系統中斷機率，讓您的 IT 部門擺脫這個無止盡的過程。
-- **應用程式：** 作為 Microsoft 365 企業版的功能一部分，Microsoft 會為您提供 (和管理) 數款關鍵 Microsoft 應用程式。 但是您可能還需要企業所需的其他應用程式。 無需您的 IT 部門進行測試、封裝和部署這些應用程式，Microsoft 可協助您部署之，並在必要時以[電腦 App 保證](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)來協助。 若要深入了解，請前往 [Microsoft 受管理的電腦中的應用程式](../get-ready/apps.md)。
+- **應用程式：** 作為 Microsoft 365 企業版的功能一部分，Microsoft 會為您提供 (和管理) 數款關鍵 Microsoft 應用程式。 但是您可能還需要企業所需的其他應用程式。 無需您的 IT 部門進行測試、封裝和部署這些應用程式，Microsoft 可協助您部署之，並在必要時以[電腦 App 保證](/fasttrack/win-10-desktop-app-assure)來協助。 若要深入了解，請前往 [Microsoft 受管理的電腦中的應用程式](../get-ready/apps.md)。
 
 
 ## <a name="device-monitoring"></a>裝置監視
@@ -79,7 +79,7 @@ Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft
 - [Microsoft 受管理的電腦技術](technologies.md)
 - [Microsoft 受管理的電腦和 ITIL](../MMD-and-ITSM.md)
 - [合規性](compliance.md)
-- [Microsoft 受管理的電腦服務描述](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
+- [Microsoft 受管理的電腦服務描述](../service-description/index.md)
 
 **準備好註冊** 這些主題描述了在組織中為註冊做準備所必須採取的步驟，包含確定您的環境是否滿足關鍵的必備條件，設定網路，設定證書，以及應用程式準備。
 
@@ -114,4 +114,3 @@ Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft
 <!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
- 

@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 34b6fb53095a2c3f52598b84e82cae3083b98f21
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6b7e8f91706a9d12135069f0a6753c76eaff1fb4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423302"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920016"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > [法規記錄](records-management.md#records)不支援此案例。
@@ -158,7 +158,7 @@ ms.locfileid: "50423302"
 
 ![查詢編輯器](../media/new-retention-query-editor.png)
 
-如需使用關鍵字查詢語言 (KQL) 的查詢語法的詳細資訊，請參閱[關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
+如需使用關鍵字查詢語言 (KQL) 的查詢語法的詳細資訊，請參閱[關鍵字查詢語言 (KQL) 語法參考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
 
 查詢式自動套用原則使用與 eDiscovery 內容搜尋相同的搜尋索引來識別內容。 如需有關您可使用的可搜尋屬性詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
 
@@ -166,7 +166,7 @@ ms.locfileid: "50423302"
 
 - SharePoint、OneDrive 和 Exchange 的新增、已修改及既有項目將會自動標示。
 
-- 針對 SharePoint，這些 KQL 查詢不支援編目屬性和自訂屬性，因此您必須僅使用預先定義的受管理屬性。 不過，您可以在租用戶等級使用對應，並使用預設啟用為精簡器的預先定義 Managed 屬性  (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09)。 如需詳細資訊，請參閱[SharePoint 伺服器中的編目及受管理屬性概觀](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)，及如需相關指示，請參閱 [建立新的受管理屬性](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property)。
+- 針對 SharePoint，這些 KQL 查詢不支援編目屬性和自訂屬性，因此您必須僅使用預先定義的受管理屬性。 不過，您可以在租用戶等級使用對應，並使用預設啟用為精簡器的預先定義 Managed 屬性  (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09, and RefinableDouble00-09)。 如需詳細資訊，請參閱[SharePoint 伺服器中的編目及受管理屬性概觀](/SharePoint/technical-reference/crawled-and-managed-properties-overview)，及如需相關指示，請參閱 [建立新的受管理屬性](/sharepoint/manage-search-schema#create-a-new-managed-property)。
 
 - 如果您將自訂屬性對應到其中一個精簡器屬性，使用前請等候 24 小時，再在 KQL 查詢中使用該屬性來保留標籤。
 
@@ -228,7 +228,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams 會議錄製
 
 > [!NOTE]
-> 保留及刪除 Teams 會議錄製的功能已在預覽版中，且必須將錄製儲存到 OneDrive 或 SharePoint，否則無法運作。 如需詳細資訊，請參閱[使用 [商務用 OneDrive] 和 SharePoint Online 或 Stream 進行會議錄製](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change)。
+> 保留及刪除 Teams 會議錄製的功能已在預覽版中，且必須將錄製儲存到 OneDrive 或 SharePoint，否則無法運作。 如需詳細資訊，請參閱[使用 [商務用 OneDrive] 和 SharePoint Online 或 Stream 進行會議錄製](/MicrosoftTeams/tmr-meeting-recording-change)。
 
 若要識別儲存在使用者 OneDrive 帳戶或 SharePoint 中的 Microsoft Teams 會議錄製，請為 **關鍵字查詢編輯器** 指定下列項目：
 
@@ -265,9 +265,9 @@ ProgID:Media AND ProgID:Meeting
   
 ![自動標籤生效時的圖表](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
-如果預期的標籤在七天之後未顯示，請在合規性中心的 [標籤原則 **]** 頁面中選取自動套用原則，以檢查其 [狀態 **]**。 如果您看到 **關閉 (錯誤)** 狀態，且在位置的詳細資料中，看到訊息說明部署原則 (針對 SharePoint) 或嘗試重新部署原則 (針對 OneDrive) 所耗費的時間超過預期，請嘗試執行 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令以重試原則發佈：
+如果預期的標籤在七天之後未顯示，請在合規性中心的 [標籤原則 **]** 頁面中選取自動套用原則，以檢查其 [狀態 **]**。 如果您看到 **關閉 (錯誤)** 狀態，且在位置的詳細資料中，看到訊息說明部署原則 (針對 SharePoint) 或嘗試重新部署原則 (針對 OneDrive) 所耗費的時間超過預期，請嘗試執行 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令以重試原則發佈：
 
-1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 執行下列命令：
     

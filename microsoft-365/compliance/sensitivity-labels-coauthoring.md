@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 開啟可在桌面應用程式中針對 SharePoint 和 OneDrive 中已標記和加密的檔案啟用共同撰寫和自動儲存的設定。
-ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 90c00eb448d6d8f02170a37062af05cb0c0db59d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454634"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919569"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>針對使用敏感度標籤加密的檔案啟用共同撰寫
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > 此功能處於預覽階段，可能會有所變更。 
@@ -58,7 +58,7 @@ ms.locfileid: "50454634"
 
 - 部落格文章：[Microsoft 資訊保護中繼資料儲存空間的近期變更](https://techcommunity.microsoft.com/t5/microsoft-security-and/upcoming-changes-to-microsoft-information-protection-metadata/ba-p/1904418)
 
-- 開啟規格：[2.6.3 LabelInfo 與自訂檔案屬性](https://docs.microsoft.com/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
+- 開啟規格：[2.6.3 LabelInfo 與自訂檔案屬性](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
 由於這些變更，如果您的組織中有任何將標籤中繼資料讀取或寫入舊位置的應用程式、服務、指令碼或工具，請勿啟用此設定。 如果您這麼做，可能會產生一些後果，範例如下：
 
@@ -68,7 +68,7 @@ ms.locfileid: "50454634"
 
 - 如果其他使用者在不支援新標籤中繼資料的 Office 桌面應用程式中開啟已標記和加密的檔案，共同撰寫和自動儲存將無法用於該檔案
 
-- 有一個 [將 Office 附件中的標籤識別為自訂屬性](https://docs.microsoft.com/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) 的 Exchange Online 郵件流程規則，其無法加密電子郵件和附件，或不正確地加密它們
+- 有一個 [將 Office 附件中的標籤識別為自訂屬性](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) 的 Exchange Online 郵件流程規則，其無法加密電子郵件和附件，或不正確地加密它們
 
 請查看下一節，以尋找支援此設定的應用程式和服務清單，以及標籤中繼資料的變更。
 
@@ -108,7 +108,7 @@ ms.locfileid: "50454634"
 
 - [自動標籤原則](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [使用敏感度標籤作為條件的 DLP 原則](dlp-sensitivity-label-as-condition.md)
-- [Microsoft Cloud App Security 已設為套用敏感度標籤](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+- [Microsoft Cloud App Security 已設為套用敏感度標籤](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
 ## <a name="limitations"></a>限制
 
@@ -125,7 +125,7 @@ ms.locfileid: "50454634"
     
     對於具有這些加密設定的標籤，標籤會顯示在 Office 應用程式中。 不過，當使用者選取這些標籤，且沒有其他人在編輯檔案時，系統會警告他們共同撰寫和自動儲存將無法使用。 如果有其他人在編輯文件，使用者會看到「無法套用這些標籤」的訊息。
 
-- 如果您使用 Azure 資訊保護統一標籤用戶端：請查看此標籤用戶端的文件，以取得[更多需求或限制](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview)。
+- 如果您使用 Azure 資訊保護統一標籤用戶端：請查看此標籤用戶端的文件，以取得[更多需求或限制](/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview)。
 
 ## <a name="known-issues-for-this-preview"></a>此預覽的已知問題
 
@@ -171,7 +171,7 @@ ms.locfileid: "50454634"
 
 ![顯示已針對敏感度標籤開啟共同撰寫的選項](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-正如您在此設定開啟時從螢幕擷取畫面中所看到的一樣，您可以聯絡 [Microsoft 支援服務](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) 並要求關閉此設定。 此要求可能需要數天的時間，您必須證明您為租用戶全域系統管理員。 預期需要支付一般支援費用。 
+正如您在此設定開啟時從螢幕擷取畫面中所看到的一樣，您可以聯絡 [Microsoft 支援服務](/office365/admin/contact-support-for-business-products) 並要求關閉此設定。 此要求可能需要數天的時間，您必須證明您為租用戶全域系統管理員。 預期需要支付一般支援費用。 
 
 如果支援工程師針對您的租用戶停用此設定：
 

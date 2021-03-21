@@ -16,16 +16,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 13dee9d5744639149960a16adcf36b7ebe5718f7
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766398"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919669"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感性資訊類型
 
-識別和分類組織控制底下的敏感專案是 [資訊保護訓練科目](protect-information.md)中的第一步。  Microsoft 365 提供三種方式來識別專案，使其可進行分類：
+識別和分類組織控制底下的敏感專案是 [資訊保護訓練科目](./information-protection.md)中的第一步。  Microsoft 365 提供三種方式來識別專案，使其可進行分類：
 
 - 由使用者手動
 - 自動化的模式識別，像是敏感資訊類型

@@ -20,12 +20,12 @@ description: 系統管理員可以瞭解如何為 SharePoint、OneDrive 和 Micr
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9688af82d194b1818d6bd3323d39bde51db20cb2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 300cb3e004010e8ff22de7393d3f3e039bf8cfdd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286366"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921141"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 
@@ -45,7 +45,7 @@ ms.locfileid: "50286366"
 
 - 若要開啟 SharePoint、OneDrive 和 Microsoft 小組的安全附件，您必須是 [安全性 & 規範中心] 中「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-- 若要使用 SharePoint 線上 PowerShell 以避免人員下載惡意檔案，您必須是 [全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 的成員或 Azure AD 中 [SharePoint 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) 角色。
+- 若要使用 SharePoint 線上 PowerShell 以避免人員下載惡意檔案，您必須是 [全域系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 的成員或 Azure AD 中 [SharePoint 系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) 角色。
 
 - 確認已為您的組織啟用審核記錄。 如需詳細資訊，請參閱[開啟或關閉稽核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
 
@@ -61,19 +61,19 @@ ms.locfileid: "50286366"
 
 ### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>使用 Exchange Online PowerShell 開啟 SharePoint、OneDrive 和 Microsoft 小組的安全附件
 
-如果您不想使用 PowerShell 開啟 SharePoint、OneDrive 和 Microsoft 小組的安全附件，請連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) ，然後執行下列命令：
+如果您不想使用 PowerShell 開啟 SharePoint、OneDrive 和 Microsoft 小組的安全附件，請連線 [至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ，然後執行下列命令：
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)。
+如需詳細的語法及參數資訊，請參閱 [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365)。
 
 ## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>步驟2： (建議) 使用 SharePoint 線上 PowerShell 以避免使用者下載惡意檔
 
 根據預設，使用者無法開啟、移動、複製或共用 ATP 所偵測到的惡意檔案。 不過，他們可以刪除及下載惡意檔案。
 
-若要防止使用者下載惡意檔案，請 [連線至 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) 並執行下列命令：
+若要防止使用者下載惡意檔案，請 [連線至 SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) 並執行下列命令：
 
 ```powershell
 Set-SPOTenant -DisallowInfectedFileDownload $true
@@ -84,7 +84,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 - 這項設定會影響使用者和系統管理員。
 - 人員仍可刪除惡意檔。
 
-如需詳細的語法及參數資訊，請參閱 [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)。
+如需詳細的語法及參數資訊，請參閱 [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)。
 
 ## <a name="step-3-recommended-use-the-security--compliance-center-to-create-an-alert-policy-for-detected-files"></a>建議的步驟 3 () 使用安全性 & 合規性中心建立偵測到的檔案的警示原則
 
@@ -125,7 +125,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 ### <a name="use-security--compliance-powershell-to-create-an-alert-policy-for-detected-files"></a>使用安全性 & 合規性 PowerShell 建立偵測到的檔案的警示原則
 
-如果您想要使用 PowerShell 建立與上一節所述相同的警示原則，請連線 [至 Security & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，並執行下列命令：
+如果您想要使用 PowerShell 建立與上一節所述相同的警示原則，請連線 [至 Security & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) ，並執行下列命令：
 
 ```powershell
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
@@ -133,7 +133,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 **附注**：預設 _嚴重性_ 值是 Low。 若要指定「中」或「高」，請在命令中包含 _嚴重性_ 參數和值。
 
-如需詳細的語法及參數資訊，請參閱 [New-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert)。
+如需詳細的語法及參數資訊，請參閱 [New-ActivityAlert](/powershell/module/exchange/new-activityalert)。
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
@@ -147,7 +147,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
     Get-AtpPolicyForO365 | Format-List EnableATPForSPOTeamsODB
     ```
 
-    如需詳細的語法及參數資訊，請參閱 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365)。
+    如需詳細的語法及參數資訊，請參閱 [AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365)。
 
 - 若要確認您是否已成功封鎖人員下載惡意檔案、開啟 SharePoint 線上 PowerShell，並執行下列命令，以確認屬性值：
 
@@ -155,7 +155,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
   Get-SPOTenant | Format-List DisallowInfectedFileDownload
   ```
 
-  如需詳細的語法及參數資訊，請參閱 [Get-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)。
+  如需詳細的語法及參數資訊，請參閱 [Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)。
 
 - 若要確認您是否已成功設定偵測到的檔案的警示原則，請使用下列任何一項步驟：
 
@@ -167,6 +167,6 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
     Get-ActivityAlert -Identity "<AlertPolicyName>"
     ```
 
-    如需詳細的語法及參數資訊，請參閱 [set-activityalert](https://docs.microsoft.com/powershell/module/exchange/get-activityalert)。
+    如需詳細的語法及參數資訊，請參閱 [set-activityalert](/powershell/module/exchange/get-activityalert)。
 
 - 使用「 [威脅防護狀態」報告](view-email-security-reports.md#threat-protection-status-report) 可查看 SharePoint、OneDrive 和 Microsoft 小組中偵測到檔案的相關資訊。 具體而言，您可以使用 **View 資料：內容 \> 惡意程式碼** 視圖。

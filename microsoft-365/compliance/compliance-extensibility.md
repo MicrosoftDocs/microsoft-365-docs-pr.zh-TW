@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何使用協力廠商資料連線器和 Microsoft Graph APIs，擴充 Microsoft 365 合規性解決方案。
-ms.openlocfilehash: 8eeb83013ec412ed82973b37c4c10e2250f5eaf8
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 676c0ba41e517dd0c3692fec29a1d4034641b634
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285739"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919719"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365 合規性擴充性
 
@@ -49,13 +49,13 @@ Microsoft 365 合規性中心有許多可用的資料連線器，可匯入及封
 
 針對 microsoft 第一個合作夥伴提供的 Microsoft 365 規範中心內的資料連線器，您的組織必須與合作夥伴進行業務關係，才能部署連接器。
 
-您可以在 [Microsoft 365 合規性授權比較](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx) 檔中尋找協力廠商資料連線器的授權需求。
+您可以在 [Microsoft 365 合規性授權比較](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx) 檔中尋找協力廠商資料連線器的授權需求。
 
 ## <a name="apis"></a>API
 
 Microsoft 365 合規性 APIs 可在 Microsoft 資訊保護 SDK、Microsoft Graph API 及 Office 365 管理活動 API 中取得。 某些規範 APIs 是一組新的安全性和符合性 APIs 的一部分，可讓 Microsoft 365 客戶、獨立軟體廠商、系統集成商和受管理的安全性服務提供者，建立高價值的安全性和合規性解決方案。
 
-若要深入瞭解如何存取圖形 APIs，請參閱 [Microsoft Graph 一覽](https://docs.microsoft.com/graph/overview)。
+若要深入瞭解如何存取圖形 APIs，請參閱 [Microsoft Graph 一覽](/graph/overview)。
 
 ### <a name="microsoft-information-protection-mip-sdk"></a>Microsoft 資訊保護 (MIP) SDK
 
@@ -69,15 +69,15 @@ MIP SDK 會向協力廠商應用程式和服務，公開卷標和保護服務的
 
 - 可使用 Azure 資訊保護來加密資料的雲端存取安全性經紀人或資料遺失防護解決方案。
 
-若要深入瞭解 MIP SDK、必要條件、其他案例和範例，請參閱 [MIP SDK 一覽](https://docs.microsoft.com/information-protection/develop/overview)。
+若要深入瞭解 MIP SDK、必要條件、其他案例和範例，請參閱 [MIP SDK 一覽](/information-protection/develop/overview)。
 
 ### <a name="microsoft-graph-api-for-teams-dlp"></a>Microsoft Graph API for 小組 DLP
 
 [資料遺失防護 (DLP) ](dlp-microsoft-teams.md) 功能廣泛用於 Microsoft 小組，尤其是當組織已移動至遠端工作時。 今年早些時候，我們宣佈小組中郵件的 Microsoft Graph 變更通知 API [公開預覽](https://developer.microsoft.com/graph/blogs/announcing-change-notifications-for-microsoft-teams-messages/) 。 此 API 可讓開發人員建立應用程式，該應用程式可以以近即時的方式收聽 Microsoft 小組郵件，然後為客戶及合作夥伴實施 DLP 案例。 此外，Microsoft Graph Patch API 可讓您將 DLP 動作套用至小組郵件。
 
-這兩個 APIs 會形成小組 DLP 的 Microsoft Graph API。 您可以從 [範例應用程式](https://github.com/microsoftgraph/csharp-webhook-with-resource-data)開始試用。 如需 Microsoft 團隊郵件 webhooks 的詳細資訊，請參閱 [檔](https://docs.microsoft.com/graph/api/subscription-post-subscriptions)。
+這兩個 APIs 會形成小組 DLP 的 Microsoft Graph API。 您可以從 [範例應用程式](https://github.com/microsoftgraph/csharp-webhook-with-resource-data)開始試用。 如需 Microsoft 團隊郵件 webhooks 的詳細資訊，請參閱 [檔](/graph/api/subscription-post-subscriptions)。
 
-如需小組 DLP 的授權需求，請參閱 [適用于安全性 & 符合性的 Microsoft 365 授權指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams)。
+如需小組 DLP 的授權需求，請參閱 [適用于安全性 & 符合性的 Microsoft 365 授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams)。
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>用於 eDiscovery 的 Microsoft Graph API (預覽) 
 
@@ -87,10 +87,10 @@ MIP SDK 會向協力廠商應用程式和服務，公開卷標和保護服務的
 
 EDiscovery 的第一組圖形 APIs 可用於公開預覽。 我們計畫在行事歷年度結束時新增更多功能。 若要深入瞭解這些 APIs 及其他有關高級 eDiscovery 的更新，請參閱此 [博客](https://aka.ms/Ignite2020AeDAA)。
 
-如需適用于 Advanced eDiscovery 和 API 的授權需求，請參閱《 [安全性 & 相容性的 Microsoft 365 授權指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#ediscovery)》中的「eDiscovery」一節。
+如需適用于 Advanced eDiscovery 和 API 的授權需求，請參閱《 [安全性 & 相容性的 Microsoft 365 授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#ediscovery)》中的「eDiscovery」一節。
 
 ### <a name="microsoft-graph-api-for-teams-export-preview"></a>團隊的 Microsoft Graph API 匯出 (預覽) 
 
-公司資訊封存 (EIA) Microsoft 團隊是我們客戶的重要案例，因為它可讓他們針對法規需求進行求解。 除了在 Microsoft 小組中封存內容的內建功能之外，客戶和合作夥伴現在還可以使用小組匯出 APIs 來解決自訂應用程式和整合案例。 小組匯出 APIs (支援高達每秒/每秒/每秒/每個應用程式/每個租使用者的200要求) 的團隊郵件和郵件附件。 已刪除的郵件也可由 API 在刪除之後30天記憶體取。 如需這些小組匯出 APIs 及如何在應用程式中使用這些小組的詳細資訊，請參閱 [export content With Microsoft 球隊 export APIs](https://docs.microsoft.com/microsoftteams/export-teams-content)。
+公司資訊封存 (EIA) Microsoft 團隊是我們客戶的重要案例，因為它可讓他們針對法規需求進行求解。 除了在 Microsoft 小組中封存內容的內建功能之外，客戶和合作夥伴現在還可以使用小組匯出 APIs 來解決自訂應用程式和整合案例。 小組匯出 APIs (支援高達每秒/每秒/每秒/每個應用程式/每個租使用者的200要求) 的團隊郵件和郵件附件。 已刪除的郵件也可由 API 在刪除之後30天記憶體取。 如需這些小組匯出 APIs 及如何在應用程式中使用這些小組的詳細資訊，請參閱 [export content With Microsoft 球隊 export APIs](/microsoftteams/export-teams-content)。
 
-如需使用小組匯出 APIs 的授權需求，請參閱 [Microsoft 365 授權指南中的安全性 & 相容性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+如需使用小組匯出 APIs 的授權需求，請參閱 [Microsoft 365 授權指南中的安全性 & 相容性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。

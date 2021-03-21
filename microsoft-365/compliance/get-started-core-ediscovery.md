@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何開始使用 Microsoft 365 中的核心 eDiscovery。 指派 eDiscovery 許可權並建立案例之後，您可以新增成員、建立 eDiscovery 保留，然後搜尋並匯出與調查相關的資料。
-ms.openlocfilehash: 94c85987be4cbc5da7a378abb7ea74294f6fe740
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 4a814b2e0019f86e4a4fc0e26d19df4411402749
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357911"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919759"
 ---
 # <a name="get-started-with-core-ediscovery"></a>開始使用核心電子文件探索
 
@@ -40,7 +40,7 @@ Microsoft 365 中的核心 eDiscovery 提供一種基本 eDiscovery 工具，可
 
   - Microsoft 365 E3 或 Office 365 E3 授權或更高版本
 
-   OR
+   「或」
 
   - Office 365 E1 授權搭配 Exchange Online 方案2或 Exchange Online 封存附加元件授權
 
@@ -48,13 +48,13 @@ Microsoft 365 中的核心 eDiscovery 提供一種基本 eDiscovery 工具，可
 
   - Office 365 E1 授權與 SharePoint Online Plan 2 或 OneDrive for Business Plan 2 附加元件授權
   
-  如需如何指派授權的詳細資訊，請參閱 [將授權指派給使用者](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+  如需如何指派授權的詳細資訊，請參閱 [將授權指派給使用者](../admin/manage/assign-licenses-to-users.md)。
 
 如需授權的相關資訊：
 
-- 下載並查看 [Microsoft 365 合規性授權比較](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)中的「探索 & 回應」方案。
+- 下載並查看 [Microsoft 365 合規性授權比較](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)中的「探索 & 回應」方案。
 
-- 請參閱 [安全性 & 規範中心服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
+- 請參閱 [安全性 & 規範中心服務說明](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步驟2：指派 eDiscovery 許可權
 

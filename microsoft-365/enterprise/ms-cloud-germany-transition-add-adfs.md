@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要： Active Directory Federation Services (AD FS) 從 Microsoft Cloud Deutschland 進行遷移的遷移步驟。
-ms.openlocfilehash: 852fc8f93158d7b6080f1add5a05e7367539f889
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838410"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918903"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的 AD FS 遷移步驟
 
@@ -89,7 +89,8 @@ ms.locfileid: "50838410"
 
 ## <a name="ad-fs-disaster-recovery-wid-database"></a> (WID 資料庫) 的 AD FS 災難修復
 
-若要在嚴重損壞的 [ad](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) fs 伺服器陣列中還原 ad fs 伺服器陣列，您必須加以利用。 因此，必須先下載工具，並在開始進行遷移之前，必須先建立備份，並安全地儲存備份。 在此範例中，已執行下列命令來備份在 WID 資料庫上執行的伺服器陣列：
+
+若要在嚴重損壞的 [ad](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) fs 伺服器陣列中還原 ad fs 伺服器陣列，您必須加以利用。 因此，必須先下載工具，並在開始進行遷移之前，必須先建立備份，並安全地儲存備份。 在此範例中，已執行下列命令來備份在 WID 資料庫上執行的伺服器陣列：
 
 <h2 id="backup"></h2>
 
@@ -144,6 +145,6 @@ ms.locfileid: "50838410"
 
 雲端應用程式：
 
-- [Dynamics 365 的移轉程式資訊](https://aka.ms/d365ceoptin)
-- [Power BI 移轉程式資訊](https://aka.ms/pbioptin)
-- [開始升級您的 Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 的移轉程式資訊](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 移轉程式資訊](/power-bi/admin/service-admin-migrate-data-germany)
+- [開始升級您的 Microsoft Teams](/microsoftteams/upgrade-start-here)

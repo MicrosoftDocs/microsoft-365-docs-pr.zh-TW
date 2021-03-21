@@ -19,12 +19,12 @@ description: 疑難排解 Azure AzCopy 的錯誤。在 Advanced eDiscovery 中�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 4a4499bb9790ffeaec6a2be36b5eaff030afc010
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f34b47762601a3cc66b46fd8a2691c0fb87d3354
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546453"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919289"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>在高級 eDiscovery 中 AzCopy 疑難排解
 
@@ -36,7 +36,7 @@ ms.locfileid: "47546453"
 
 ## <a name="the-supported-version-of-azcopy-isnt-installed-on-the-local-computer"></a>本機電腦上未安裝支援的 AzCopy 版本
 
-此時，您必須使用 AzCopy app-v 8.1，在 Advanced eDiscovery 中載入非 Microsoft 365 資料。 如果您不是使用 AzCopy 的第板，則顯示在先前的螢幕擷取畫面所顯示之 [上 **傳** 檔案] 頁面上的 AzCopy 命令會傳回錯誤。 若要安裝此版本，請參閱在 [Windows 上使用 AzCopy app-v 8.1 傳輸資料](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)。
+此時，您必須使用 AzCopy app-v 8.1，在 Advanced eDiscovery 中載入非 Microsoft 365 資料。 如果您不是使用 AzCopy 的第板，則顯示在先前的螢幕擷取畫面所顯示之 [上 **傳** 檔案] 頁面上的 AzCopy 命令會傳回錯誤。 若要安裝此版本，請參閱在 [Windows 上使用 AzCopy app-v 8.1 傳輸資料](/previous-versions/azure/storage/storage-use-azcopy)。
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>本機電腦上未安裝 AzCopy，或其未安裝在預設位置
 
@@ -44,7 +44,7 @@ ms.locfileid: "47546453"
 
 > 系統找不到指定的路徑。
 
-如果本機電腦上未安裝 AzCopy，您可以在 [使用 AzCopy 中的「傳送機 8.1](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)」，在 Windows 上尋找傳送資料的安裝資訊。 請務必將其安裝在預設位置。
+如果本機電腦上未安裝 AzCopy，您可以在 [使用 AzCopy 中的「傳送機 8.1](/previous-versions/azure/storage/storage-use-azcopy)」，在 Windows 上尋找傳送資料的安裝資訊。 請務必將其安裝在預設位置。
 
 如果安裝了 AzCopy，但是安裝的位置與預設位置不同，您可以複製命令、將其貼到文字檔，然後將路徑變更至已安裝 AzCopy 的位置。 例如，如果 Azcopy 位於 `%ProgramFiles%` ，您可以將命令的第一個部分變更 `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` 為 `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` 。 進行此變更後，請從文本檔案複製並執行命令提示字元。
 

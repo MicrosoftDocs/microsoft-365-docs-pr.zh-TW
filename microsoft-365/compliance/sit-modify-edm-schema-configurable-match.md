@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何修改 EDM 結構描述以使用可設定比對。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2211e4d99d97fcce241a5f4c3ea7c9d8122ca9d7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: e00466e4648ebe93f0658383515d1543f858e1b0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656797"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919369"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>修改精確資料比對模式以使用可設定比對
 
@@ -101,7 +101,7 @@ ms.locfileid: "49656797"
 - \"
 - \,
 
-6. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
+6. 使用[連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
 
 7. 一次執行一個下方的 cmdlets 以更新您的結構描述：
 
@@ -129,7 +129,7 @@ ms.locfileid: "49656797"
 
 - [使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 - [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
-- [自訂敏感性資訊類型](custom-sensitive-info-types.md)
+- [自訂敏感性資訊類型](./sensitive-information-type-learn-about.md)
 - [DLP 原則的概觀](data-loss-prevention-policies.md)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [Microsoft Cloud App Security](/cloud-app-security)
+- [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

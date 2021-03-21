@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 部署最新版本的組織如何使用適用於 Windows 10 和 Microsoft 365 Apps 的通道。
-ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 29bda1651a83f0e043cf8a0d2a102c6c2e461bfd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686163"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919071"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>最新版本的廣泛部署範例
 
@@ -61,7 +61,7 @@ ms.locfileid: "46686163"
 
 整體目標是在驗證「發行預覽通道」變更之後，透過一組具代表性使用者及其裝置來執行最新「半年通道」發行的廣泛部署。
 
-如需有關 Windows 10 部署方法和策略的詳細資訊，請參閱 [Windows 10 部署](https://docs.microsoft.com/windows/deployment/)。
+如需有關 Windows 10 部署方法和策略的詳細資訊，請參閱 [Windows 10 部署](/windows/deployment/)。
 
 | 階段 | 通道 | 部署群組 |
 |:-------|:-------|:-----|
@@ -85,7 +85,7 @@ ms.locfileid: "46686163"
 
 整體目標是在驗證「目前通道 (預覽)」變更之後，透過一組具代表性使用者來執行最新「目前通道」發行的廣泛部署。
 
-如需有關 Microsoft 365 Apps 部署方法和策略的詳細資訊，請參閱 [Microsoft 365 Apps 部署](https://docs.microsoft.com/deployoffice/plan-office-365-proplus)。
+如需有關 Microsoft 365 Apps 部署方法和策略的詳細資訊，請參閱 [Microsoft 365 Apps 部署](/deployoffice/plan-office-365-proplus)。
 
 | 階段 | 通道 | 部署群組 |
 |:-------|:-------|:-----|

@@ -19,12 +19,12 @@ search.appverid:
 description: 了解三種您可以用來監視個人資料外洩的工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b51bc5d5d3cbfa8951392f88edc6e178778206df
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290666"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921249"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>監視個人資料的外洩
 
@@ -83,7 +83,7 @@ DLP 報告位於安全性中心和合規性中心。 瀏覽至 [報告] \> [檢�
 
 資訊安全小組也可以搜尋稽核記錄，以調查可疑的資料外洩，並判斷根本原因，以及外洩範圍。此內建功能有助於遵循 GDPR 的第 33 條和第 34 條，這需要在特定時段內將資料外洩通知 GDPR 監理局和資料主體本身。稽核記錄項目只會在服務內保留 90 天 - 通常這是建議的天數，但許多組織需要這些記錄保留更長的一段時間。
 
-可用的解決方案透過 Microsoft Management Activity API 訂閱統一的稽核記錄，同時可以視需要儲存記錄項目，並提供進階儀表板和警示。範例有 [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365)。
+可用的解決方案透過 Microsoft Management Activity API 訂閱統一的稽核記錄，同時可以視需要儲存記錄項目，並提供進階儀表板和警示。範例有 [Microsoft Operations Management Suite (OMS)](/azure/operations-management-suite/oms-solution-office-365)。
 
 警示原則和搜尋稽核記錄的相關資訊：
 
@@ -95,7 +95,7 @@ DLP 報告位於安全性中心和合規性中心。 瀏覽至 [報告] \> [檢�
 
 - [搜尋稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
-- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (Cmdlet)
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (Cmdlet)
 
 - [稽核記錄中的詳細內容](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
@@ -130,11 +130,11 @@ Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用
 
 詳細資訊：
 
-- [部署 Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [部署 Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
 
 - [Microsoft Cloud App Security 的詳細資訊](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-- [禁止使用 Microsoft Cloud App Security Proxy 下載敏感資訊](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [禁止使用 Microsoft Cloud App Security Proxy 下載敏感資訊](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>範例檔案以及偵測個人資料共用的活動原則
 

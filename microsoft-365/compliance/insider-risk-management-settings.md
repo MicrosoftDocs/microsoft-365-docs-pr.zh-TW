@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: eea8454a02667a42020f9ac1d54402e7b8a06b9b
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 1e6642113ddba9c9110a65e9032ec59db435ac7f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820034"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919859"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>開始使用「內幕風險管理」設定
 
@@ -483,7 +483,7 @@ ms.locfileid: "50820034"
 
 如果您在有現有案例後，為「內部人員風險管理」啟用 Microsoft 團隊支援，您必須視需要為每個案例手動建立小組。 在啟用「內幕風險管理」設定中的 Microsoft 團隊支援之後，新案例會自動建立新的 Microsoft 團隊小組。
 
-使用者需要在組織中建立 Microsoft 365 群組的許可權，才能從案例建立 Microsoft 小組小組。 如需管理 Microsoft 365 群組許可權的相關資訊，請參閱 [管理誰可以建立 microsoft 365 群組](/microsoft-365/solutions/manage-creation-of-groups)。
+使用者需要在組織中建立 Microsoft 365 群組的許可權，才能從案例建立 Microsoft 小組小組。 如需管理 Microsoft 365 群組許可權的相關資訊，請參閱 [管理誰可以建立 microsoft 365 群組](../solutions/manage-creation-of-groups.md)。
 
 若要為案例建立小組，當您直接在現有案例中工作時，您會使用 [建立 Microsoft 小組] 控制項。 完成下列步驟以建立新的團隊：
 

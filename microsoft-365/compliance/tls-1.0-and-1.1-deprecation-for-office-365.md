@@ -17,12 +17,12 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 669ab53739bfd108bdbe9077762272e6a4901865
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3d44e178d351942b4a178ddc1954ddd839665639
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233095"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919299"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>停用 Microsoft 365 的 TLS 1.0 和1。1
 
@@ -31,7 +31,7 @@ ms.locfileid: "50233095"
 
 從2018年10月31日到，針對 Microsoft 365 服務，已棄用傳輸層安全性 (TLS) 1.0 和1.1 通訊協定。 對使用者的影響很小。 這項變更已于兩年內公佈，第一次公開宣告于12月2017。 本文僅適用于與 Office 365 服務相關的 Office 365 本地用戶端，但是也可以套用至 Office 和 Office Online Server/Office Web Apps 的內部部署 TLS 問題。
 
-針對 SharePoint 和 OneDrive，您必須更新及設定 .NET 以支援 TLS 1.2。 如需詳細資訊，請參閱 [如何在用戶端上啟用 TLS 1.2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
+針對 SharePoint 和 OneDrive，您必須更新及設定 .NET 以支援 TLS 1.2。 如需詳細資訊，請參閱 [如何在用戶端上啟用 TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
 
 ## <a name="office-365-and-tls-overview"></a>Office 365 和 TLS 概述
 
@@ -52,7 +52,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 > [!NOTE]
 > 未安裝此更新的 Windows 7 使用者會受到2018年10月31日的影響。 [KB 3140245](https://support.microsoft.com/help/3140245) 具有如何變更 WINHTTP 設定以啟用 TLS 通訊協定的詳細資料。
 
-#### <a name="more-information"></a>詳細資訊
+#### <a name="more-information"></a>其他資訊
 
 知識庫文章描述的 **DefaultSecureProtocols** 登錄機碼值，會決定可以使用的網路通訊協定：
 
@@ -86,8 +86,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 
 ## <a name="update-and-configure-the-net-framework-to-support-tls-12"></a>更新及設定 .NET Framework 以支援 TLS 1。2
 
-您必須更新透過 TLS 1.0 或 TLS 1.1 呼叫 Microsoft 365 APIs 的應用程式，才能使用 TLS 1.2。 .NET 4.5 的預設值為 TLS 1.1。 若要更新您的 .NET 設定，請參閱 [如何在用戶端上啟用傳輸層安全性 (TLS) 1.2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
+您必須更新透過 TLS 1.0 或 TLS 1.1 呼叫 Microsoft 365 APIs 的應用程式，才能使用 TLS 1.2。 .NET 4.5 的預設值為 TLS 1.1。 若要更新您的 .NET 設定，請參閱 [如何在用戶端上啟用傳輸層安全性 (TLS) 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 如需詳細資訊，請參閱 [在 Office 365 中準備 TLS 1.2 的強制使用](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。

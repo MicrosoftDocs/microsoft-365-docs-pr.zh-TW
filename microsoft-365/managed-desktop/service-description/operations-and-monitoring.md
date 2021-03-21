@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d7c6a7b836d0044ba9cde188170dd51f117dd2b
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 3e56066f0b4e63fc9b73bbecf5aaa3180ffd2e4f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840370"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920417"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 受管理的桌面作業和監控
 
@@ -81,7 +81,7 @@ Microsoft 受管理的桌面服務是由 Microsoft 在您可能進行其他管�
 
 在內部部署產品中，您的組織會承擔管理安裝程式的所有責任，以及設定和操作活動。
 
-類別 |    Microsoft 會 | 客戶將
+Categories |    Microsoft 會 | 客戶將
 --- | --- | ---
 網路 (proxy、封包檢查、VPN)   | 建議並與客戶一起規劃，以將企業使用者的風險降至最低。 | -建立要求要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。
 服務帳戶 |-實施、安全地儲存和管理認證。<br> -對您的安全性作業小組進行未經授權的存取或使用這些認證。 | -建立要求要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不指派原則、多重要素驗證、條件式存取或應用程式部署至 Microsoft Managed Desktop Service 帳戶。<br>-不要重設密碼或使用認證。<br>-如果在 Intune 或 Azure 審核記錄檔中看到與這些服務帳戶相關的可疑活動，請開啟嚴重度 C 支援要求至 Microsoft Managed Desktop Operations。
@@ -116,6 +116,6 @@ Microsoft 受管理的桌面作業團隊可在必要時，對服務中已登記�
 
 裝置重設後，您可以將其提供給組織中的其他人。 任何先前的使用者資料或企業資料都將會在裝置上。 下一個使用者會進行與新的 Microsoft 受管理的桌面裝置相同的處理常式。
 
-BitLocker 是在此程式中的資料安全性重要元件。 在 Microsoft 受管理的桌面裝置上使用 BitLocker 加密，即使在裝置重設後，磁片磁碟機上的資料仍是安全的。 磁片磁碟機上的所有資料將無法供下一個裝置的使用者使用。 如需詳細資訊，請參閱 [BitLocker 概述](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)。
+BitLocker 是在此程式中的資料安全性重要元件。 在 Microsoft 受管理的桌面裝置上使用 BitLocker 加密，即使在裝置重設後，磁片磁碟機上的資料仍是安全的。 磁片磁碟機上的所有資料將無法供下一個裝置的使用者使用。 如需詳細資訊，請參閱 [BitLocker 概述](/windows/security/information-protection/bitlocker/bitlocker-overview)。
 
-如需詳細資訊，請參閱 [Factory reset a device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device)。 
+如需詳細資訊，請參閱 [Factory reset a device](/intune/remote-actions/devices-wipe#factory-reset-a-device)。

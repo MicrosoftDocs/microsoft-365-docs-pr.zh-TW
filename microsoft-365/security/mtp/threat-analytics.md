@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e27659517f8c7b5cbc7936b825ac867a2888e251
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 288be30aa9592ba7feed92b9ad49955406f59f10
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727149"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918795"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>使用威脅分析追蹤並回應新興威脅 
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727149"
 適用於：
 - Microsoft 365 Defender
 
-> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) ，或 [在實際執行中執行您的試驗專案](./mtp-pilot.md?ocid=cx-evalpilot)。
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -155,7 +155,7 @@ _威脅分析報告的 [防止電子郵件嘗試] 區段_
   - 可能有害的應用程式 (PUA) 保護
   - 即時保護
  
-本節中的緩解資訊包含 [威脅和弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的資料，也就是從報告中各種連結提供的詳細深入資訊。
+本節中的緩解資訊包含 [威脅和弱點管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的資料，也就是從報告中各種連結提供的詳細深入資訊。
 
 ![顯示 ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ 弱點詳細資料之威脅分析報告之「緩解」區段之 [安全設定詳細資料] 的 [威脅分析] 區段的 [緩解] 區段的影像](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -181,4 +181,4 @@ _威脅分析報告的緩解區段_
 ## <a name="related-topics"></a>相關主題
 - [使用高級搜尋主動尋找威脅](advanced-hunting-overview.md) 
 - [瞭解分析報告區段](threat-analytics-analyst-reports.md)
-- [評估並解決安全弱點與洩密問題](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [評估並解決安全弱點與洩密問題](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

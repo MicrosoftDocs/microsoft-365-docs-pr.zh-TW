@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 7b84094fecc1ddbd58bcdfca808df6585958a6dc
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: b6696d15d728e6b66be5e54a9a3c372564c9f187
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771928"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920853"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>您可以 sail 的安全性障礙（一個架構師的視點）
 
@@ -75,14 +75,14 @@ Sail 超過這些障礙的客戶都有良好的作業與控管與安全性與風
 
 為了協助您清除這些障礙，Microsoft 已策劃數個資源，以協助您採取一種安全性原則與實施方式。
 
-|資源   |其他相關資訊  |
+|資源   |其他資訊  |
 |---------|---------|
 |[安全性團隊支援在家工作的最常見工作](../security/top-security-tasks-for-remote-work.md)      | 如果您覺得您突然支援大多數工作中的工作力，這篇文章可協助您快速提升安全性。 它包含根據您的授權方案的最大建議工作。    |
 |[Microsoft 365 商務決策人的安全性](../security/Microsoft-365-security-for-bdm.md)    | 當您有時間進行更全面的計畫時，本文會包含跨越 Microsoft 365 的建議，並依攻擊面劃分優先順序。 它甚至附帶一個試算表，您可以用來排序授權和區域 (例如身分識別、威脅防護和監控) 。  |
-|[Microsoft 安全架構建議](https://docs.microsoft.com/security/compass/compass)    | 如果您是安全性架構架構，請務必查看依學科組織的安全性建議，包括身分識別、網路及安全性作業。   |
-|[Microsoft 安全性作業建議](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)|瞭解設定及執行安全性作業中心 (SOC) 的 Microsoft 建議 |
-|[ (CISO) 研討會訓練的首席資訊安全監察官](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop)   | 如果您是新的雲端安全性，請不要錯過這系列的影片。        |
-|[docs.security.com/security](https://docs.microsoft.com/security/)    | 來自 Microsoft 的技術指導，以取得安全性策略和架構。        |
+|[Microsoft 安全架構建議](/security/compass/compass)    | 如果您是安全性架構架構，請務必查看依學科組織的安全性建議，包括身分識別、網路及安全性作業。   |
+|[Microsoft 安全性作業建議](/security/compass/security-operations-videos-and-decks)|瞭解設定及執行安全性作業中心 (SOC) 的 Microsoft 建議 |
+|[ (CISO) 研討會訓練的首席資訊安全監察官](/security/ciso-workshop/ciso-workshop)   | 如果您是新的雲端安全性，請不要錯過這系列的影片。        |
+|[docs.security.com/security](/security/)    | 來自 Microsoft 的技術指導，以取得安全性策略和架構。        |
 | | |
 
 所有這些資源都是設計用來作為起點，並根據您的組織的需求而改編。

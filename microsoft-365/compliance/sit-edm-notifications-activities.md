@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何建立資料完全相符活動的通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a537cffe253fa20cf6838ddf3fd9a51ec440fe76
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 2e2f67ef0f276211483519bd5e246e4e041b2b15
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766689"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919359"
 ---
 # <a name="create-notifications-for-exact-data-match-activities-preview"></a>建立資料完全相符活動的通知 (預覽)
 
-在[使用資料完全相符 (EDM) 建立自訂敏感性資訊類型時](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)，在[稽核記錄](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)中會建立許多活動。 您可以使用 [New-ProtectionAlert](https://docs.microsoft.com/powershell/module/exchange/new-protectionalert?view=exchange-ps) PowerShell Cmdlet建立通知，讓您知道這些活動何時發生：
+在[使用資料完全相符 (EDM) 建立自訂敏感性資訊類型時](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)，在[稽核記錄](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)中會建立許多活動。 您可以使用 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) PowerShell Cmdlet建立通知，讓您知道這些活動何時發生：
 
 - CreateSchema
 - EditSchema
@@ -54,11 +54,11 @@ ms.locfileid: "50766689"
 - Microsoft 365 E5 合規性
 - Microsoft E5/A5 資訊保護和控管
 
-如要深入了解 DLP 授權，請參閱 [Microsoft 365 安全性與合規性的授權指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+如要深入了解 DLP 授權，請參閱 [Microsoft 365 安全性與合規性的授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 ## <a name="configure-notifications-for-edm-activities"></a>設定 EDM 活動的通知
 
-1. 連線到[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps) 
+1. 連線到[安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell?view=exchange-ps) 
 
 2. 使用您想建立通知的活動執行 `New-ProtectionAlert` Cmdlet。  例如，如果您想要在 **UploadDataCompleted** 動作發生時收到通知，執行
 
@@ -75,4 +75,4 @@ New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUse
 ## <a name="related-articles"></a>相關文章
 
 - [使用資料完全相符 (EDM) 建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-- [New-ProtectionAlert](https://docs.microsoft.com/powershell/module/exchange/new-protectionalert?view=exchange-ps) 
+- [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps)

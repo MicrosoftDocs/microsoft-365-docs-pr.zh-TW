@@ -1,5 +1,5 @@
 ---
-title: 安全性與規範中心的服務保證
+title: 安全性與合規性中心的服務保證
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下載協力廠商審核，瞭解 Microsoft 如何讓客戶資料安全，以及如何在使用 Office 365 時遵循 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: 33ec05512d36ae09d9d31821bf1d49e38aad6de7
-ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
+ms.openlocfilehash: 6d7dafb3493aabe525c266184235a63840ce8785
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49671004"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919559"
 ---
-# <a name="service-assurance-in-the-security--compliance-center"></a>安全性與規範中心的服務保證
+# <a name="service-assurance-in-the-security--compliance-center"></a>安全性與合規性中心的服務保證
 
 使用安全性 & 合規性中心的服務保證來存取描述各種主題的檔，包括： 
   
@@ -95,11 +95,11 @@ ms.locfileid: "49671004"
 ## <a name="get-help-with-service-assurance"></a>取得服務保障的協助
 <a name="addother"> </a>
 
-[連絡商務產品支援 – 系統管理說明](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
+[連絡商務產品支援 – 系統管理說明](../admin/contact-support-for-business-products.md)
   
 ## <a name="frequently-asked-questions"></a>常見問題集
 <a name="addother"> </a>
 
  **為什麼我會收到錯誤訊息，指出服務保證中的檔遭到損毀？**
   
-大部分的服務保證檔都是 PDF 格式。 選擇 [ **儲存** ]，將檔案儲存至，然後從本機電腦開啟檔案。 
+大部分的服務保證檔都是 PDF 格式。 選擇 [ **儲存** ]，將檔案儲存至，然後從本機電腦開啟檔案。

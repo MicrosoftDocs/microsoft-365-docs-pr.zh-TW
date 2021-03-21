@@ -8,18 +8,18 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 729e9dc9ab512a7e93bc291a9a52222c15a42b79
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: b0aa619f09f2d6b32289e037283a0dc6578d0150
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727418"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920501"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的桌面裝置 
 
 Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文列出目前支援的特定裝置。 如需更一般的裝置需求語句，請參閱 [裝置需求](device-requirements.md)。
 
-如需 Microsoft 受管理電腦的詳細資訊，請參閱 [Microsoft 受管理的桌面檔和資源](https://docs.microsoft.com/microsoft-365/managed-desktop/)。 
+如需 Microsoft 受管理電腦的詳細資訊，請參閱 [Microsoft 受管理的桌面檔和資源](../index.yml)。 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -78,11 +78,11 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文列
 
 - 如果裝置需求中列出特定的 SKU，請務必在訂購時使用該 SKU。 這樣做可確保裝置符合 Microsoft 受管理的桌面軟體需求。 
 - 尚未完成 Windows 第一次執行體驗。
-- 使用 [Device Registration](https://aka.ms/mmddrhelp) 功能向 Microsoft Managed Desktop 註冊
+- 使用 [Device Registration](../get-started/register-devices-self.md) 功能向 Microsoft Managed Desktop 註冊
 
 >[!NOTE]
 >裝置使用2.0GHz 或更快的處理器，可為參與這些活動的使用者提供更佳的體驗：
->- 搭配小組使用影片會議。 如需詳細資訊，請參閱 [Microsoft 小組的硬體需求](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) 。
+>- 搭配小組使用影片會議。 如需詳細資訊，請參閱 [Microsoft 小組的硬體需求](/microsoftteams/hardware-requirements-for-the-teams-app) 。
 >-  針對多個不同的工作負載使用一個裝置。
 >- 使用多個監視器。
 
@@ -93,8 +93,3 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文列
 - 如需 Dell 裝置的相關問題，請與 <a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>聯繫。
 
 - 如需 HP 裝置和裝置順序指令的相關問題，請聯繫我們：美洲 (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>) ;歐洲/中東東部/非洲 (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>) ;亞太地區/日本 (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>) ;全域 (<a href="mailto:mmd@hp.com">mmd@hp.com</a>) 
-
-
-
-
-

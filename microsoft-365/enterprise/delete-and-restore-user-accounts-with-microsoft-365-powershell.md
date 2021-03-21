@@ -20,21 +20,21 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: 瞭解如何在 PowerShell 中使用不同的模組，以刪除 Microsoft 365 使用者帳戶。
-ms.openlocfilehash: 39bf57fe7e7aad1bdc9915e503107ad799515030
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 32081d1ce0cbc7aac89b337cf8b5d08bc8e43dfa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754537"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919137"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 刪除 Microsoft 365 使用者帳戶
 
 您可以使用 Microsoft 365 的 PowerShell 來刪除及還原使用者帳戶。
 
 >[!Note]
->瞭解如何使用 Microsoft 365 系統管理中心 [還原使用者帳戶](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) 。
+>瞭解如何使用 Microsoft 365 系統管理中心 [還原使用者帳戶](../admin/add-users/restore-user.md) 。
 >
->如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>如需其他資源的清單，請參閱 [管理使用者和群組](../admin/add-users/index.yml)。
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
@@ -54,7 +54,7 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> **AzureADUser** Cmdlet 中的 *-ObjectID*參數會接受帳戶的登入名稱，也稱為使用者主要名稱或帳戶的物件識別碼。
+> **AzureADUser** Cmdlet 中的 *-ObjectID* 參數會接受帳戶的登入名稱，也稱為使用者主要名稱或帳戶的物件識別碼。
   
 若要根據使用者的名稱顯示帳戶名稱，請使用下列命令︰
   
@@ -63,7 +63,7 @@ $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-本範例會顯示使用者 *Caleb sills 帳戶*的帳戶名稱。
+本範例會顯示使用者 *Caleb sills 帳戶* 的帳戶名稱。
   
 ```powershell
 $userName="Caleb Sills"
@@ -90,10 +90,10 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell 核心不支援 Windows PowerShell 模組的 Microsoft Azure Active Directory 模組，以及其名稱中含有 *Msol* 的 Cmdlet。 從 Windows PowerShell 執行這些 Cmdlet。
+>PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 *Msol* 的 Cmdlet。 從 PowerShell 執行這些 Cmdlet。
 >
 
-本範例會刪除 *BelindaN@litwareinc.com*的使用者帳戶。
+本範例會刪除 *BelindaN@litwareinc.com* 的使用者帳戶。
   
 ```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com

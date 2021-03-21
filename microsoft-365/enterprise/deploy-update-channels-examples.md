@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 範例組織如何使用通道部署及更新。
-ms.openlocfilehash: 88567fedd92f01885c4971acc273a676c3e82de8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a91ee948ca2051ceccb3883b2dd0198c1070bc03
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686151"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919059"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>部署和更新通道範例設定
 
@@ -41,9 +41,9 @@ ms.locfileid: "46686151"
 
 | 客戶/通道服務 | Windows 10 | Microsoft 365 應用程式企業版 (Windows 10) | 範例 |
 |:-------|:-------|:-----|:-------|
-| 適用於想要在版本可供使用時，立即取得最新版本的客戶。 | 半年通道 | [目前通道](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) | [最新版本](deploy-update-channels-examples-rapid-deploy.md) |
-| 適用於想使用具有額外可預見性的最新版本的企業。 | 半年通道 | [每月企業通道](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
-| 適用於在每項技術更新前會需要大量 IT 測試的企業。 | 半年通道 | [半年期企業通道](https://docs.microsoft.com/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
+| 適用於想要在版本可供使用時，立即取得最新版本的客戶。 | 半年通道 | [目前通道](/deployoffice/overview-update-channels#current-channel-overview) | [最新版本](deploy-update-channels-examples-rapid-deploy.md) |
+| 適用於想使用具有額外可預見性的最新版本的企業。 | 半年通道 | [每月企業通道](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
+| 適用於在每項技術更新前會需要大量 IT 測試的企業。 | 半年通道 | [半年期企業通道](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
 |||||
 
 

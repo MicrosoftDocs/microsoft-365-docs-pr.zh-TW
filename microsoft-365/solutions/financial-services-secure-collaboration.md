@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服務機構如何使用 Microsoft 365 與 Teams 維護金融安全合規性並有效地共同作業。
 f1.keywords: NOCSH
-ms.openlocfilehash: 1d1c3886a38636e7e72774f8b2bb5ce574d1c7a6
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 1418eef664f30cf1e3bdffc8ca7856cf825934bb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029951"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921153"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
@@ -109,19 +109,19 @@ FINRA 建議的有效做法包括下列各項：
 
 FINRA 的數位通訊調查結果和觀測值與組織遵守 [SEC 細則 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) 保留所有與業務相關的通訊、FINRA 細則 [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) 和 [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) 監督及審查通訊，以及 Rule Series [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) 保留記錄直接相關。 美國商品期貨交易委員會 (CFTC) 根據 17 CFR 131 頒布了類似的規定。 本文稍後將深入討論這些法規。
 
-***Teams 和 Microsoft 365 安全性與合規性方案的綜合性套件為金融服務機構提供企業數位通訊管道，以便有效執行業務並遵守管理法規。** _ 本文的其餘部分將說明 Microsoft 365 內建用於記錄管理、資訊保護、資訊屏障和監督控制的功能如何為 Teams 提供穩健的工具集，以協助滿足這些法規義務。
+***Teams 和 Microsoft 365 安全性與合規性方案的綜合性套件為金融服務機構提供企業數位通訊頻道，以便有效執行業務並遵守管理法規。*** 本文的其餘部分將說明 Microsoft 365 內建的記錄管理、資訊保護、資訊屏障和監督控制的功能如何為團隊提供強大的工具集，以協助滿足這些法規義務。
 
 ## <a name="protect-modern-collaboration-with-microsoft-365"></a>使用 Microsoft 365 保護新式共同作業
 
 ### <a name="secure-user-identities-and-control-access"></a>保護使用者身分識別及控制存取權
 
-_*_保護對客戶資訊，財務文件和應用程式的存取權始於強化保護使用者身分識別。_*_ 企業必須使用安全的平台來儲存及管理身分識別、提供信任的驗證方式，並動態控制這些應用程式的存取權。
+***保護對客戶資訊，財務文件和應用程式的存取權始於嚴格加強使用者身分識別。*** 企業必須使用安全的平台來儲存及管理身分識別、提供信任的驗證方式，並動態控制這些應用程式的存取權。
 
 員工工作時，他們可能會在應用程式之間移動，或在多個位置和裝置之間移動。 在此過程的每個步驟中，都必須驗證資料存取權。 驗證程序必須支援強大的通訊協定和多重要素驗證 (例如一次性 SMS 密碼、驗證器應用程式和認證)，以確保身分識別不遭到入侵。 實施風險式存取原則對保護財務資料和應用程式不受測試人員威脅、避免不慎資料洩漏和資料外流至關重要。
 
-Microsoft 365 在 [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) 中提供集中儲存並安全管理身分識別的安全身分識別平台。 Azure AD 和許多相關的 Microsoft 365 安全性服務構成了為員工提供安全工作所需的存取權基礎，同時還保護組織免受威脅。
+Microsoft 365 在 [Azure Active Directory (Azure AD)](/azure/active-directory/) 中提供集中儲存並安全管理身分識別的安全身分識別平台。 Azure AD 和許多相關的 Microsoft 365 安全性服務構成了為員工提供安全工作所需的存取權基礎，同時還保護組織免受威脅。
 
-[Azure AD Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) 內建在平台中，並提供額外的驗證證明，以協助確認使用者存取敏感性財務資料和應用程式時的使用者身分識別。 Azure MFA 至少需要兩種形式的驗證，例如密碼加上已知的行動裝置。 其支援多種第二要素驗證，包括：
+[Azure AD Multi-Factor Authentication (MFA)](/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) 內建在平台中，並提供額外的驗證證明，以協助確認使用者存取敏感性財務資料和應用程式時的使用者身分識別。 Azure MFA 至少需要兩種形式的驗證，例如密碼加上已知的行動裝置。 其支援多種第二要素驗證，包括：
 
 - Microsoft Authenticator 應用程式
 - 透過 SMS 傳遞的一次性密碼
@@ -133,14 +133,14 @@ Microsoft 365 在 [Azure Active Directory (Azure AD)](https://docs.microsoft.com
 
 密碼是安全鏈中最弱的連結。 如果沒有其他驗證，密碼可能成為單一失敗點。 Microsoft 支援多種驗證選擇，以滿足金融機構的需求。
 
-_無密碼*方法可協助讓 MFA 更方便使用者使用。 並非所有 MFA 都無密碼，而無密碼技術採用多重要素驗證。 Microsoft、Google 及其他業界領袖已共同開發標準，以在稱為 Fast IDentity Online (FIDO) 的群組中實現跨 Web 和行動裝置的更簡單、更強大的驗證體驗。 最新開發的 FIDO2 標準讓使用者無需密碼，即可輕鬆且安全地驗證，以杜絕網路釣魚。
+*無密碼* 方法可協助讓 MFA 更方便使用者使用。 並非所有 MFA 都無密碼，而無密碼技術採用多重要素驗證。 Microsoft、Google 及其他業界領袖已共同開發標準，以在稱為 Fast IDentity Online (FIDO) 的群組中實現跨 Web 和行動裝置的更簡單、更強大的驗證體驗。 最新開發的 FIDO2 標準讓使用者無需密碼，即可輕鬆且安全地驗證，以杜絕網路釣魚。
 
 無密碼的 Microsoft MFA 方法包括：
-* [Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-overview)：考量靈活性、方便性和成本，我們建議使用 Microsoft Authenticator 行動裝置應用程式。 Microsoft Authenticator 為任何連線至 Azure AD 的應用程式支援生物識別技術、推播通知和一次性密碼。 可從 Apple 和 Android 應用程式市集取得。
-*  [Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)：針對電腦的內建體驗，我們建議您使用 Windows Hello。 其使用生物特徵辨識資訊 (例如臉部或指紋) 來自動登入。  
-* [FIDO2 安全性金鑰](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key)可從以下幾個 Microsoft 合作夥伴取得：Yubico、Feitian Technologies 和 HID Global，並支援 USB、已啟用 NFC 的徽章或生物識別密鑰共用 USB、啟用 NFC 的徽章或生物特徵辨識金鑰。
+* [Microsoft Authenticator](/azure/active-directory/user-help/user-help-auth-app-overview)：考量靈活性、方便性和成本，我們建議使用 Microsoft Authenticator 行動裝置應用程式。 Microsoft Authenticator 為任何連線至 Azure AD 的應用程式支援生物識別技術、推播通知和一次性密碼。 可從 Apple 和 Android 應用程式市集取得。
+*  [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-overview)：針對電腦的內建體驗，我們建議您使用 Windows Hello。 其使用生物特徵辨識資訊 (例如臉部或指紋) 來自動登入。  
+* [FIDO2 安全性金鑰](/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key)可從以下幾個 Microsoft 合作夥伴取得：Yubico、Feitian Technologies 和 HID Global，並支援 USB、已啟用 NFC 的徽章或生物識別密鑰共用 USB、啟用 NFC 的徽章或生物特徵辨識金鑰。
 
-[Azure AD 條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/)提供強大的解決方案，以自動化存取控制決策，並強制執行組織原則以保護公司資產。 一個典型的範例是財務規劃人員需要存取具有敏感性客戶資料的應用程式。 系統會自動要求執行多重要素驗證，以特別存取該應用程式，而且存取必須來自公司管理的裝置。 Azure 條件式存取整合使用者存取要求的相關信號，例如使用者的屬性、裝置、位置和網路，以及使用者嘗試存取的應用程式。 它會根據已設定的原則動態評估存取應用程式的嘗試次數。 如果使用者或裝置風險提高，或不符合其他條件，Azure AD 可自動強制實施原則，例如要求 MFA、要求安全密碼重設，以及限制或封鎖存取權。 這可協助確保敏感性組織資產在不斷變更的環境中受到保護。
+[Azure AD 條件式存取](/azure/active-directory/conditional-access/)提供強大的解決方案，以自動化存取控制決策，並強制執行組織原則以保護公司資產。 一個典型的範例是財務規劃人員需要存取具有敏感性客戶資料的應用程式。 系統會自動要求執行多重要素驗證，以特別存取該應用程式，而且存取必須來自公司管理的裝置。 Azure 條件式存取整合使用者存取要求的相關信號，例如使用者的屬性、裝置、位置和網路，以及使用者嘗試存取的應用程式。 它會根據已設定的原則動態評估存取應用程式的嘗試次數。 如果使用者或裝置風險提高，或不符合其他條件，Azure AD 可自動強制實施原則，例如要求 MFA、要求安全密碼重設，以及限制或封鎖存取權。 這可協助確保敏感性組織資產在不斷變更的環境中受到保護。
  
 Azure AD 和相關的 Microsoft 365 安全性服務提供將新式雲端共同作業平臺推廣到金融機構的基礎，以便保護資料和應用程式的存取安全，並滿足監管機構的合規性義務。 這些工具提供下列關鍵功能：
 
@@ -179,7 +179,7 @@ Microsoft 365 讓所有組織都能透過強大的功能組合來識別組織內
 
 將敏感度標籤套用到文件和電子郵件會內嵌中繼資料，以識別物件內所選的敏感度。 然後，敏感度會和資料一起移動。 因此，即使已加上標籤的文件儲存在使用者的桌上型電腦或內部部署系統中，文件仍受到保護。 此功能可讓其他 Microsoft 365 解決方案 (例如 Microsoft Cloud App Security 或網路 edge 裝置) 識別敏感性資料，並自動強制執行安全性控制。 敏感度標籤的另一個好處是可教育員工組織中哪些資料被視為敏感性資料，以及如何在收到該資料時處理資料。
 
-**[Office 365 資料外洩防護 (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)** 會透過掃描敏感性資料，然後對這些物件強制執行原則，以自動識別包含敏感性資料的文件、電子郵件和交談。 原則是在 SharePoint Online 和商務用 OneDrive 中的文件強制執行。 原則也會在使用者傳送電子郵件時，以及在 Teams 聊天和頻道交談中強制執行。 可以將原則設定為尋找關鍵字、敏感性資料類型、保留標籤，以及資料是在組織內部或外部共用。 提供控制項以協助組織微調 DLP 原則，以減少誤報。 發現敏感性資料時，可對使用 Microsoft 365 應用程式的使用者顯示可自訂的原則提示，通知他們其內容包含敏感性資料，然後建議採取更正動作。 原則也可以防止使用者存取文件、共用文件，或傳送包含特定敏感性資料類型的電子郵件。 Microsoft 365 支援 100 多種內建敏感性資料類型。 組織可以設定自訂敏感性資料類型以滿足其原則。
+**[Office 365 資料外洩防護 (DLP)](../compliance/data-loss-prevention-policies.md?view=o365-worldwide)** 會透過掃描敏感性資料，然後對這些物件強制執行原則，以自動識別包含敏感性資料的文件、電子郵件和交談。 原則是在 SharePoint Online 和商務用 OneDrive 中的文件強制執行。 原則也會在使用者傳送電子郵件時，以及在 Teams 聊天和頻道交談中強制執行。 可以將原則設定為尋找關鍵字、敏感性資料類型、保留標籤，以及資料是在組織內部或外部共用。 提供控制項以協助組織微調 DLP 原則，以減少誤報。 發現敏感性資料時，可對使用 Microsoft 365 應用程式的使用者顯示可自訂的原則提示，通知他們其內容包含敏感性資料，然後建議採取更正動作。 原則也可以防止使用者存取文件、共用文件，或傳送包含特定敏感性資料類型的電子郵件。 Microsoft 365 支援 100 多種內建敏感性資料類型。 組織可以設定自訂敏感性資料類型以滿足其原則。
 
 將 MIP 和 DLP 原則推廣到組織需要周密的規劃和使用者教育計劃，讓員工了解組織的資料分類架構，以及哪些類型的資料被視為敏感性資料。 為員工提供工具和教育計劃可協助他們識別敏感性資料，並了解如何處理這些資料，讓他們成為解決資訊安全風險問題的解決方案的一環。
 
@@ -196,13 +196,13 @@ Microsoft 最近推出 Microsoft 365 Defender 解決方案，旨在保護現代�
 ### <a name="the-intelligent-security-graph"></a>[Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為了應對網路威脅，Intelligent Security Graph 使用進階分析來連結來自 Microsoft 及其合作夥伴的威脅情報和安全性信號。 Microsoft 大規模營運全球服務，並收集數以萬億計的安全性信號，以支援堆疊式防護層。 機器學習模型會評估此情報，並在我們的產品和服務中廣泛共用信號和威脅見解。 這可讓我們迅速偵測並回應威脅，並將可採取動作的警報和資訊提供給客戶，以進行修正。 我們的機器學習模型會不斷接受訓練並以新的見解進行更新，協助我們打造更安全的產品，並提供更主動的安全性。
 
-[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) 提供整合的 Microsoft 365 服務，可保護組織免受透過電子郵件和 Office 文件傳遞的惡意連結和惡意程式碼侵害。 當今影響使用者最常見的攻擊媒介之一是電子郵件網路釣魚攻擊。 這些攻擊可針對特定使用者，而且可能非常具有說服力，並帶有召喚行動，以提示使用者按下惡意連結或開啟含有惡意程式碼的附件。 電腦受到感染後，攻擊者就可以竊取使用者的認證，並在整個組織中移動，或竊取電子郵件和資料以尋找敏感性資訊。 適用於 Office 365 的 Defender 會在按一下文件和連結時加以評估，以尋找潛在的惡意意圖並封鎖存取，以支援安全附件和安全連結。 電子郵件附件會在受保護的沙箱中開啟，再傳送到使用者的信箱。 它也會評估 Office 文件中的連結是否為惡意 URL。 適用於 Office 365 的 Defender 也能保護 SharePoint Online、商務用 OneDrive 及 Teams 中的連結和檔案。 如果偵測到惡意檔案，適用於 Office 365 的 Defender 會自動鎖定該檔案，以降低潛在的損壞。
+[適用於 Office 365 的 Microsoft Defender](../security/office-365-security/office-365-atp.md?view=o365-worldwide) 提供整合的 Microsoft 365 服務，可保護組織免受透過電子郵件和 Office 文件傳遞的惡意連結和惡意程式碼侵害。 當今影響使用者最常見的攻擊媒介之一是電子郵件網路釣魚攻擊。 這些攻擊可針對特定使用者，而且可能非常具有說服力，並帶有召喚行動，以提示使用者按下惡意連結或開啟含有惡意程式碼的附件。 電腦受到感染後，攻擊者就可以竊取使用者的認證，並在整個組織中移動，或竊取電子郵件和資料以尋找敏感性資訊。 適用於 Office 365 的 Defender 會在按一下文件和連結時加以評估，以尋找潛在的惡意意圖並封鎖存取，以支援安全附件和安全連結。 電子郵件附件會在受保護的沙箱中開啟，再傳送到使用者的信箱。 它也會評估 Office 文件中的連結是否為惡意 URL。 適用於 Office 365 的 Defender 也能保護 SharePoint Online、商務用 OneDrive 及 Teams 中的連結和檔案。 如果偵測到惡意檔案，適用於 Office 365 的 Defender 會自動鎖定該檔案，以降低潛在的損壞。
 
-[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是預防性保護、入侵後偵測、自動調查及回應的整合式端點安全性平台。 適用於端點的 Defender 提供內建功能，以在企業端點上探索及保護敏感性資料。
+[適用於端點的 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是預防性保護、入侵後偵測、自動調查及回應的整合式端點安全性平台。 適用於端點的 Defender 提供內建功能，以在企業端點上探索及保護敏感性資料。
 
-[Microsoft Cloud App Security (MCAS)](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 可讓組織以精細的層級強制執行原則，並使用機器學習根據自動定義的個別使用者設定檔來偵測行為異常。 MCAS 原則可建立於 Azure 條件式存取原則，以透過評估與使用者行為和所存取文件的屬性有關的額外信號來保護敏感性公司資產。 一段時間後，MCAS 會了解每位員工在存取資料和使用的應用程式中的典型行為。 根據已知的行為模式，如果的行為超出該行為設定檔，原則便可自動強制執行安全性控制。 例如，如果某位員工通常從星期一至星期五上午 9 點到下午 5 點存取某應用程式，但突然開始在星期天晚上頻繁存取該應用程式，MCAS 可以動態強制執行原則，以要求使用者重新驗證。 這可協助確保使用者的認證不遭到入侵。 MCAS 也可協助識別組織中的「影子 IT」，以協助資訊安全團隊確保員工處理敏感性資料時使用批准的工具。 最後，MCAS 可以保護雲端中任何位置的敏感性資料，甚至是 Microsoft 365 平台以外的資料。 它可讓組織批准 (或取消批准) 特定外部雲端應用程式，並控制存取權及監控使用方式。
+[Microsoft Cloud App Security (MCAS)](/cloud-app-security/what-is-cloud-app-security) 可讓組織以精細的層級強制執行原則，並使用機器學習根據自動定義的個別使用者設定檔來偵測行為異常。 MCAS 原則可建立於 Azure 條件式存取原則，以透過評估與使用者行為和所存取文件的屬性有關的額外信號來保護敏感性公司資產。 一段時間後，MCAS 會了解每位員工在存取資料和使用的應用程式中的典型行為。 根據已知的行為模式，如果的行為超出該行為設定檔，原則便可自動強制執行安全性控制。 例如，如果某位員工通常從星期一至星期五上午 9 點到下午 5 點存取某應用程式，但突然開始在星期天晚上頻繁存取該應用程式，MCAS 可以動態強制執行原則，以要求使用者重新驗證。 這可協助確保使用者的認證不遭到入侵。 MCAS 也可協助識別組織中的「影子 IT」，以協助資訊安全團隊確保員工處理敏感性資料時使用批准的工具。 最後，MCAS 可以保護雲端中任何位置的敏感性資料，甚至是 Microsoft 365 平台以外的資料。 它可讓組織批准 (或取消批准) 特定外部雲端應用程式，並控制存取權及監控使用方式。
  
-[適用於身分識別的 Microsoft Defender](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是利用內部部署 Active Directory 訊號的雲端型安全性解決方案，它會識別、偵測及調查貴組織中的進階威脅、遭入侵的身分識別，以及惡意內部攻擊動作。 AATP 可讓 SecOp 分析師和安全性專業人員偵測混合式環境中的進階攻擊，以達到以下目的：
+[適用於身分識別的 Microsoft Defender](/azure-advanced-threat-protection/what-is-atp) 是利用內部部署 Active Directory 訊號的雲端型安全性解決方案，它會識別、偵測及調查貴組織中的進階威脅、遭入侵的身分識別，以及惡意內部攻擊動作。 AATP 可讓 SecOp 分析師和安全性專業人員偵測混合式環境中的進階攻擊，以達到以下目的：
 * 使用學習式分析來監控使用者、實體行為和活動。
 * 保護儲存在 Active Directory 中的使用者身分識別和認證。
 * 識別並調查整個狙殺鍊中的可疑使用者活動和進階攻擊。
@@ -218,15 +218,15 @@ Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為�
  
 金融機構管理大量資料。 而某些保留期間則由事件觸發，例如合約到期或員工離開組織。 在這種情況下，套用記錄保留原則可能會很困難。 在組織文件中正確指派記錄保留期間的方法可能會有所不同。 有些廣泛套用保留原則，或運用自動分類和機器學習技術。 有些則確定一種需要更精細的程序的方法，將保留期間專門指派給個別文件。
 
-***Microsoft 365 提供靈活的功能來定義保留標籤和原則，以明智地實作記錄管理需求。** _ 記錄管理員可定義保留標籤，其代表傳統保留排程中的「記錄類型」。 保留標籤包含定義這些詳細資料的設定：
+***Microsoft 365 提供靈活的功能來定義保留標籤和原則，以聰明實作記錄管理需求。*** 記錄管理員定義保留標籤，該標籤代表傳統保留排程中的「記錄類型」。 保留標籤包含定義這些詳細資料的設定：
 
 - 記錄保留的時間長度
 - 保留期間到期時，會發生什麼情況 (刪除文件、開始處置檢閱或不採取任何動作)。
 -  觸發保留期間的起始點 (建立日期、上次修改日期、標籤日期或事件) 並將文件或電子郵件標示為記錄 (表示無法編輯或刪除)。
 
-保留標籤便會發佈到 SharePoint 或 OneDrive 網站、Exchange 信箱和 Microsoft 365 群組。 使用者可以手動將保留標籤套用到文件和電子郵件。 記錄管理員可以使用情報來自動套用標籤。 情報功能可根據[九十多種內建敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) (例如 ABA 匯款路徑編號、美國銀行帳號或美國社會安全號碼)。 也可以根據關鍵字或電子郵件中的敏感性資料 (例如信用卡號碼或其他個人辨識資訊) 或根據 SharePoint 中繼資料來自訂。 針對不容易透過手動或自動模式比對來識別的資料，可訓練的分類器可用於根據機器學習技術聰明分類文件。
+保留標籤便會發佈到 SharePoint 或 OneDrive 網站、Exchange 信箱和 Microsoft 365 群組。 使用者可以手動將保留標籤套用到文件和電子郵件。 記錄管理員可以使用情報來自動套用標籤。 情報功能可根據[九十多種內建敏感性資訊類型](../compliance/content-search.md?view=o365-worldwide) (例如 ABA 匯款路徑編號、美國銀行帳號或美國社會安全號碼)。 也可以根據關鍵字或電子郵件中的敏感性資料 (例如信用卡號碼或其他個人辨識資訊) 或根據 SharePoint 中繼資料來自訂。 針對不容易透過手動或自動模式比對來識別的資料，可訓練的分類器可用於根據機器學習技術聰明分類文件。
  
-_ *美國證券交易委員會 (SEC)** 要求經紀商/自營商和其他受監管金融機構保留所有業務相關通訊。 這些要求適用於許多類型的通訊和資料，包括電子郵件、文件、立即訊息、傳真等。 **SEC 細則 17a-4** 定義這些組織在電子資料儲存系統中儲存記錄時必須符合的準則。 SEC 在 2003 年發行了闡明這些要求的版本。 其中包括下列準則：
+**美國證券交易委員會 (SEC)** 要求經紀商/自營商和其他受監管金融機構保留所有業務相關通訊。 這些要求適用於許多類型的通訊和資料，包括電子郵件、文件、立即訊息、傳真等。 **SEC 細則 17a-4** 定義這些組織在電子資料儲存系統中儲存記錄時必須符合的準則。 SEC 在 2003 年發行了闡明這些要求的版本。 其中包括下列準則：
 
 * 電子儲存系統保留的資料必須為不可重複寫入且不可抹除。 這稱為 WORM 要求 (單寫多讀)。
 * 在傳票或其他法律命令的情況下，儲存系統必須能夠儲存超出法規要求的保留期間的資料。
@@ -268,7 +268,7 @@ _ *美國證券交易委員會 (SEC)** 要求經紀商/自營商和其他受監�
 
 最終，這些細則要求組織在涉及銀行服務、銷售或交易的角色之間建立原則並實施資訊屏障，以防止與分析師交換資訊和通訊。
 
-[資訊屏障](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide)能讓您在 Office 365 環境中建立道德管束，讓規範管理員或其他獲授權的管理員定義原則，以允許或防止團隊內使用者群組之間的通訊。 資訊屏障會對特定動作執行檢查，以防止未經授權的通訊。 在內部團隊正在進行合併/收購或敏感性交易，或使用必須嚴格限制的敏感性內部資訊的情況下，資訊屏障也可以限制通訊。
+[資訊屏障](../compliance/information-barriers.md?view=o365-worldwide)能讓您在 Office 365 環境中建立道德管束，讓規範管理員或其他獲授權的管理員定義原則，以允許或防止團隊內使用者群組之間的通訊。 資訊屏障會對特定動作執行檢查，以防止未經授權的通訊。 在內部團隊正在進行合併/收購或敏感性交易，或使用必須嚴格限制的敏感性內部資訊的情況下，資訊屏障也可以限制通訊。
 
 Microsoft 365 中的資訊屏障支援 Teams 中的交談和檔案。 資訊屏障可以防止以下與通訊相關的動作，以協助遵守 FINRA 法規：
 
@@ -319,14 +319,14 @@ Microsoft 365 最近推出了測試人員風險管理解決方案，可將整個
 
 例如，Microsoft 365 中的測試人員風險管理可以將來自使用者 Windows 10 Desktop 的信號 (例如，將檔案複製到 USB 硬碟，或透過電子郵件傳送個人電子郵件帳戶) 和線上服務 (例如 Office 365 電子郵件、SharePoint Online、Microsoft Teams 或 OneDrive) 中的活動相關聯，以識別資料外流模式。 還可以將這些活動與離開組織的員工相關聯，這是一種常見的資料外流模式。 可監視多個活動和一段時間的行為。 常見模式出現時，便可發出警報，並協助調查人員專注於關鍵活動，以高信賴度驗證原則違規。 測試人員風險管理可以對調查人員的資料進行匿名處理，以協助符合資料隱私權法規，同時還可以進行一些關鍵活動，以協助有效有效執行調查。 這可讓研究人員按照一般向上呈報工作流程安全地將關鍵活動資料封裝並傳送到人力資源和法務部門，以執行修正動作。
 
-Microsoft 365 中的測試人員風險管理大幅提升組織監視及調查測試人員風險的能力，同時讓組織仍符合資料隱私權法規，並在案件需要更高級別的動作時遵循已建立的向上呈報途徑。 如需 Microsoft 365 中的內部風險管理的詳細資訊，請參閱 [Microsoft 365 的內部風險管理中的新式風險痛點和工作流程](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide)。
+Microsoft 365 中的測試人員風險管理大幅提升組織監視及調查測試人員風險的能力，同時讓組織仍符合資料隱私權法規，並在案件需要更高級別的動作時遵循已建立的向上呈報途徑。 如需 Microsoft 365 中的內部風險管理的詳細資訊，請參閱 [Microsoft 365 的內部風險管理中的新式風險痛點和工作流程](../compliance/insider-risk-management.md?view=o365-worldwide)。
 
 ![隔間中的客服中心工作者一邊打字一邊看著螢幕。](../media/clo17-call-center-006.jpg)
  
 ### <a name="tenant-restrictions"></a>租用戶限制
 處理敏感性資料並嚴格強調安全性的組織通常希望控制使用者可存取的線上資源。 同時，這些組織希望透過 Office 365 等線上服務實現安全的共同作業。 因此，控制使用者可存取的 Office 365 環境成為一項挑戰，因為非公司的 Office 365 環境可用於惡意或不小心從公司裝置外流資料。 傳統上，組織會限制使用者可從公司裝置存取的網域或 IP 位址。 但這在使用者需要合法存取 Office 365 服務的雲端優先環境中不適用。
 
-Microsoft 365 為租用戶提供解決此挑戰的[限制](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)功能。 租用戶限制可設定為使用 Rogue 身分識別 (不屬於貴公司目錄的身分識別) 來限制員工存取外部 Office 365 企業版租用戶。 目前租用戶限制適用於所有租用戶，只允許存取您設定的清單中顯示的租用戶。 Microsoft 正持續開發這項解決方案，以提高控制的細微性並增強其所提供的保護。
+Microsoft 365 為租用戶提供解決此挑戰的[限制](/azure/active-directory/manage-apps/tenant-restrictions)功能。 租用戶限制可設定為使用 Rogue 身分識別 (不屬於貴公司目錄的身分識別) 來限制員工存取外部 Office 365 企業版租用戶。 目前租用戶限制適用於所有租用戶，只允許存取您設定的清單中顯示的租用戶。 Microsoft 正持續開發這項解決方案，以提高控制的細微性並增強其所提供的保護。
 
 ![GRAPHIC](../media/clo1717-corporate-office-001.jpg)
  

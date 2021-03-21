@@ -14,12 +14,12 @@ ms.reviewer: krowley
 ms.author: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: d4da76268791e36bd01b5d6f6140fd52c70b3b4a
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 16a02985107c5f578d6d6c21bf2efc6e80297951
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454192"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919339"
 ---
 # <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>停用 Microsoft 365 GCC 高和 DoD 中的 TLS 1.0 和1。1
 
@@ -33,17 +33,17 @@ ms.locfileid: "50454192"
 
 [解決 TLS 1.0 問題](https://www.microsoft.com/download/details.aspx?id=55266)
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 從2020年1月15日開始，在 GCC 高端和 DoD 環境中，Microsoft 365 會停用 TLS 1.1 和1.0。
 
 在2020年1月15日，所有用戶端伺服器與瀏覽器伺服器的組合應該使用 TLS 版本 1.2 (或更新版本) ，以確保所有連線都不會向 Microsoft 365 產生任何問題。 這可能需要更新用戶端伺服器與瀏覽器伺服器的某些組合。
 
-針對 SharePoint 和 OneDrive，您必須更新及設定 .NET 以支援 TLS 1.2。 如需詳細資訊，請參閱 [如何在用戶端上啟用 TLS 1.2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
+針對 SharePoint 和 OneDrive，您必須更新及設定 .NET 以支援 TLS 1.2。 如需詳細資訊，請參閱 [如何在用戶端上啟用 TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
 
 您必須更新用戶端電腦，以確保您維護 Office 365 GCC 高和 DoD 的不間斷存取。
 
-您必須更新透過 TLS 1.0 或 TLS 1.1 呼叫 Microsoft 365 APIs 的應用程式，才能使用 TLS 1.2。 .NET 4.5 的預設值為 TLS 1.1。 若要更新您的 .NET 設定，請參閱 [如何在用戶端上啟用傳輸層安全性 (TLS) 1.2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。 如需詳細資訊，請參閱 [在 Office 365 中準備 TLS 1.2 的強制使用](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
+您必須更新透過 TLS 1.0 或 TLS 1.1 呼叫 Microsoft 365 APIs 的應用程式，才能使用 TLS 1.2。 .NET 4.5 的預設值為 TLS 1.1。 若要更新您的 .NET 設定，請參閱 [如何在用戶端上啟用傳輸層安全性 (TLS) 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。 如需詳細資訊，請參閱 [在 Office 365 中準備 TLS 1.2 的強制使用](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
 
 我們知道下列用戶端應用程式無法使用 TLS 1.2：
 

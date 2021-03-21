@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: d81e272cfe50aa8379135406cbe538fbc8a18cb5
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7c3b4f82d94888cfa6c63b25f20130a38f8b4c9f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454226"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919197"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -45,7 +45,7 @@ ms.locfileid: "50454226"
 
 ## <a name="prerequisites"></a>必要條件
 
-跨承租人信箱移動功能需要 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) 才能建立租使用者對特定的 Azure 應用程式，以安全地儲存和存取憑證/機密，以供從一個租使用者對另一個租使用者進行驗證及授權，並移除在承租人間共用憑證/機密的任何需求。 
+跨承租人信箱移動功能需要 [Azure Key Vault](/azure/key-vault/basic-concepts) 才能建立租使用者對特定的 Azure 應用程式，以安全地儲存和存取憑證/機密，以供從一個租使用者對另一個租使用者進行驗證及授權，並移除在承租人間共用憑證/機密的任何需求。 
 
 開始之前，請確定您具備執行部署腳本所需的許可權，才能設定 Azure Key Vault、移動信箱應用程式、EXO 遷移端點，以及 EXO 組織關聯性。 通常，全域管理員具有執行所有設定步驟的許可權。
 
@@ -116,7 +116,7 @@ ms.locfileid: "50454226"
     ||||
 
     >[!Note]
-    > 在執行腳本之前，請確定您已安裝 Azure AD PowerShell 模組。 如需安裝步驟，請參閱 ![ 此處 ](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) 。
+    > 在執行腳本之前，請確定您已安裝 Azure AD PowerShell 模組。 如需安裝步驟，請參閱 ![ 此處 ](/powershell/azure/install-az-ps?view=azps-5.1.0) 。
 
 6. 腳本會暫停，並要求您接受或同意在此程式期間建立的 Exchange 信箱遷移應用程式。 範例如下。
 
@@ -590,7 +590,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 是的，不過我們只會保留這些文章中所述的存放區許可權：
 
-- [Microsoft 檔 |在 Exchange Online 中管理收件者的許可權](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+- [Microsoft 檔 |在 Exchange Online 中管理收件者的許可權](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
 - [Microsoft 支援 |如何在 Office 365 專屬中授與 Exchange 和 Outlook 信箱許可權](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
@@ -604,11 +604,11 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 **若要使用客戶金鑰進行服務加密，該怎麼辦？**
 
-移動之前將會解密信箱。 若仍需要，請確定已在目標租使用者中設定客戶金鑰。 如需詳細資訊，請參閱 [此處](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) 。  
+移動之前將會解密信箱。 若仍需要，請確定已在目標租使用者中設定客戶金鑰。 如需詳細資訊，請參閱 [此處](../compliance/customer-key-overview.md) 。  
 
 **預計的遷移時間為何？**
 
-為了協助您規劃遷移， [此處](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) 所顯示的表格會顯示何時應大量進行大量信箱遷移或個別遷移的指導方針。 這些評估是以先前客戶遷移的資料分析為基礎。 因為每個環境都是唯一的，所以您的實際遷移速度可能會不同。  
+為了協助您規劃遷移， [此處](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) 所顯示的表格會顯示何時應大量進行大量信箱遷移或個別遷移的指導方針。 這些評估是以先前客戶遷移的資料分析為基礎。 因為每個環境都是唯一的，所以您的實際遷移速度可能會不同。  
 
 請記住，這項功能目前正在預覽中，而且 SLA 和任何適用的服務層級不會在此功能的預覽狀態時，套用至任何效能或可用性問題。
 
@@ -733,4 +733,3 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
    | Microsoft Defender for Office 365 (方案 2)     |
    | Office 365 的特殊許可權存取管理           |
    | Office 365 中的高級加密                  |
-    

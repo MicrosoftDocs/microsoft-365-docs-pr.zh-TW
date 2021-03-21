@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c51ebdbcd2a8d6d13f5ba0009d470581e317a365
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840310"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920429"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 受管理的電腦服務描述
 
@@ -23,13 +23,13 @@ Microsoft 受管理的電腦是一種服務，可讓您的使用者使用安全�
 - 裝置設定
 - 讓使用者和裝置保持安全的功能，包括 Windows Hello、BitLocker、SecureBoot 和虛擬化安全性（依照 Microsoft 最佳做法）
 - 裝置安全性監視和修正服務
-- 應用程式相容性，透過 [桌面應用程式保證](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
+- 應用程式相容性，透過 [桌面應用程式保證](/fasttrack/win-10-desktop-app-assure)
 - 管理適用于 Windows 10 和 Microsoft 365 應用程式企業版的應用程式更新
 - 有關裝置和應用程式使用狀況的分析資料
 - 為您的使用者提供 IT 支援
 - 適用于 IT 專業人員的操作支援
 
-如需 Microsoft 受管理的電腦所含特定服務的詳細資訊，請參閱本節的其他文章。 如果您已經決定要使用 Microsoft 受管理的電腦，[ 準備註冊 Microsoft 受管理的電腦中 ](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/)的文章，會提供您準備加入該項服務的步驟。
+如需 Microsoft 受管理的電腦所含特定服務的詳細資訊，請參閱本節的其他文章。 如果您已經決定要使用 Microsoft 受管理的電腦，[ 準備註冊 Microsoft 受管理的電腦中 ](../get-ready/index.md)的文章，會提供您準備加入該項服務的步驟。
 
 - [Microsoft 受管理的電腦支援的地區和語言](regions-languages.md) 說明服務支援哪些地區和語言。
 - 為了保證使用者的最佳體驗，Microsoft 受管理的電腦只支援特定裝置。 [[程式裝置]](device-list.md) 可指定您可以搭配服務使用的確切裝置模型和設定，無論您是提供客戶，還是與合作夥伴合作。

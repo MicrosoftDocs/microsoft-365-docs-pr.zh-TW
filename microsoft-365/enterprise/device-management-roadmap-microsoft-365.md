@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: 設定 Microsoft 365 裝置管理的藍圖。
-ms.openlocfilehash: 79be47d6bc83c124f2203866986e06181a1f7f3d
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749536"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918963"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 的裝置管理藍圖
 
@@ -45,11 +45,11 @@ Microsoft 365 for enterprise 包含的功能可協助您管理組織內的裝置
 
 ## <a name="choose-between-the-two-options"></a>選擇兩個選項
 
-為了協助您更進一步評估最適合您的裝置管理選項，請參閱 [Choose Basic 行動性安全性與 Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)。
+為了協助您更進一步評估最適合您的裝置管理選項，請參閱 [Choose Basic 行動性安全性與 Intune](/office365/securitycompliance/choose-between-mdm-and-intune)。
 
 根據您的評估，使用下列專案開始管理您的裝置：
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Intune](/mem/intune/fundamentals/planning-guide)
 - [設定基本行動與安全性](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>身分識別與裝置存取建議

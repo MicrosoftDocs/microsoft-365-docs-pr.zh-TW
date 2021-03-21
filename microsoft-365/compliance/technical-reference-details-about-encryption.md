@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 深入瞭解 Office 365 和 Microsoft 365 中用於加密的各種憑證、技術及傳輸層安全性 (TLS) 密碼套件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e6b001b308519fb35e0cc835ac03fb4b27db260
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: e7e50ea399cd694f512e0538de3f7e67c63ee0e3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233139"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919349"
 ---
 # <a name="technical-reference-details-about-encryption"></a>關於加密的技術參考詳細資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "50233139"
   
 - 如果您正在尋找概要資訊，請參閱 [在 Office 365 中的加密](encryption.md)。
 - 如果您正在尋找設定資訊，請參閱 [在 Office 365 企業版中設定加密](set-up-encryption.md)。
-- 如需特定 Windows 版本支援之密碼套件的詳細資訊，請參閱 [TLS/SSL (SCHANNEL SSP) 中的密碼套件 ](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
+- 如需特定 Windows 版本支援之密碼套件的詳細資訊，請參閱 [TLS/SSL (SCHANNEL SSP) 中的密碼套件 ](/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
 
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Microsoft Office 365 憑證擁有權和管理
 
@@ -45,7 +45,7 @@ ms.locfileid: "50233139"
 
 ## <a name="fips-compliance-for-office-365"></a>適用于 Office 365 的 FIPS 相容性
 
-Office 365 支援的所有密碼套件都使用 FIPS 140-2 可接受的演算法。 Office 365 會繼承來自 Windows (到 Schannel) 的 FIPS 驗證。 如需 Schannel 的詳細資訊，請參閱 [TLS/SSL (SCHANNEL SSP) 中的密碼套件 ](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
+Office 365 支援的所有密碼套件都使用 FIPS 140-2 可接受的演算法。 Office 365 會繼承來自 Windows (到 Schannel) 的 FIPS 驗證。 如需 Schannel 的詳細資訊，請參閱 [TLS/SSL (SCHANNEL SSP) 中的密碼套件 ](/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Office 365 支援的 TLS 版本
 
@@ -100,7 +100,7 @@ Office 365 會先嘗試使用最安全的密碼套件進行連線，以回應連
 
 ## <a name="related-articles"></a>相關文章
 
-[Windows 10 v1903 中的 TLS 密碼套件](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
+[Windows 10 v1903 中的 TLS 密碼套件](/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Office 365 中的加密](encryption.md)
   
@@ -108,6 +108,6 @@ Office 365 會先嘗試使用最安全的密碼套件進行連線，以回應連
   
 [在 Windows 安全性狀態更新中，TLS 1.0 的 Schannel 執行：11月24日（2015）](https://support.microsoft.com/kb/3117336)
   
-[ (Windows IT 中心的 TLS/SSL 加密增強功能) ](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
+[ (Windows IT 中心的 TLS/SSL 加密增強功能) ](/previous-versions/windows/it-pro/windows-vista/cc766285(v=ws.10))
   
-[在 Office 365 和 Office 365 GCC 中準備 TLS 1.2](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
+[在 Office 365 和 Office 365 GCC 中準備 TLS 1.2](/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)

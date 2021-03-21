@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: ec4ca9a79ee3b5674e1837d14cea4ee504cb57d5
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 985131900a5e07188c0af641fb86f794d558f80b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838208"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919779"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > 如果您在 Teams 訊息中得知保留原則已刪除聊天或訊息，請參閱 [關於保留原則的 Teams 訊息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
@@ -43,7 +43,7 @@ ms.locfileid: "50838208"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留與刪除包含的內容
 
-使用 Teams 保留原則可以保留和删除以下 Teams 項目：聊天訊息和頻道訊息 (包括内嵌影像、表格、超文字連結、指向其他 Teasm 訊息和檔案的連結以及[卡片内容](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards))。 聊天訊息包括聊天中所有人的姓名，頻道訊息包括小組名稱和訊息標題 (如有)。 
+使用 Teams 保留原則可以保留和删除以下 Teams 項目：聊天訊息和頻道訊息 (包括内嵌影像、表格、超文字連結、指向其他 Teasm 訊息和檔案的連結以及[卡片内容](/microsoftteams/platform/task-modules-and-cards/what-are-cards))。 聊天訊息包括聊天中所有人的姓名，頻道訊息包括小組名稱和訊息標題 (如有)。 
 
 > [!NOTE]
 > 包括卡片內容是最近新增的，且目前已完全向租用戶推出。 有關更多資訊，請參閱[透過 Teams 中應用程式之針對調適型卡片內容的 Microsoft 365 合規性功能已上線](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)。
@@ -64,7 +64,7 @@ Teams 保留原則中不包括與 Teams 一起使用的電子郵件和檔案。 
 
 Teams 保留原則不支援的其他信箱類型，例如用於 Teams 會議室的 RoomMailbox。
 
-請務必了解 Teams 使用的聊天服務是由 Azure 所提供，此服務也會儲存 Teams 的資料，且會根據預設永久保存。 因此，如果您因合規性原因而需要刪除 Teams 訊息，建議您使用能夠永久從 Exchange 信箱和基礎 Azure 提供的交談服務中刪除該資料的 Teams 保留原則。 如需詳細資訊，請參閱 [Microsoft Teams 中的安全性與合規性](https://go.microsoft.com/fwlink/?linkid=871258)，特別是[資訊保護架構](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)一節。
+請務必了解 Teams 使用的聊天服務是由 Azure 所提供，此服務也會儲存 Teams 的資料，且會根據預設永久保存。 因此，如果您因合規性原因而需要刪除 Teams 訊息，建議您使用能夠永久從 Exchange 信箱和基礎 Azure 提供的交談服務中刪除該資料的 Teams 保留原則。 如需詳細資訊，請參閱 [Microsoft Teams 中的安全性與合規性](/MicrosoftTeams/security-compliance-overview)，特別是[資訊保護架構](/MicrosoftTeams/security-compliance-overview#information-protection-architecture)一節。
 
 儘管 Teams 聊天和頻道訊息會儲存在信箱中，此 Teams 資料只會透過針對 **Teams 頻道訊息** 和 **Teams 聊天** 位置設定的保留原則包含。 Teams 聊天和頻道訊息不受針對 Exchange 使用者或群組信箱設定的保留原則影響。
 

@@ -15,12 +15,12 @@ ms.custom:
 description: 在本文中，您將瞭解 Microsoft Exchange Online Protection (EOP) 系統管理員可以使用的報告和疑難排解工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 783c7ea0aca47c805daf66592b401a98f739d071
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1307fa1431a4fdd46c9ab070a2986a015891568f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288076"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918675"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的報告和郵件追蹤
 
@@ -65,7 +65,7 @@ ms.locfileid: "50288076"
 
 ## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自訂報告
 
-使用 Microsoft Graph，以程式設計方式建立可在系統管理中心中使用的報告。 如需詳細資訊，請參閱 [Microsoft graph 的概述](https://docs.microsoft.com/graph/overview) 和 [使用 microsoft Graph 中的 Office 365 使用方式報告](https://docs.microsoft.com/graph/api/resources/report)。
+使用 Microsoft Graph，以程式設計方式建立可在系統管理中心中使用的報告。 如需詳細資訊，請參閱 [Microsoft graph 的概述](/graph/overview) 和 [使用 microsoft Graph 中的 Office 365 使用方式報告](/graph/api/resources/report)。
 
 ## <a name="message-trace"></a>郵件追蹤
 

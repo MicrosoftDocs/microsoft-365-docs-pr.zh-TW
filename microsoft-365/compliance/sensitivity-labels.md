@@ -22,16 +22,16 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6cdf7a6b9e75b575abda2c93f7531c45d93a9a51
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838626"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919589"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > 如果您要尋找在 Office 應用程式中看到的敏感度標籤相關資訊，請參閱[在 Office 中將敏感度標籤適用於您的檔案和電子郵件](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。
@@ -49,9 +49,9 @@ ms.locfileid: "50838626"
 若要套用敏感度標籤，使用者必須使用 Microsoft 365 公司或學校帳戶登入。
 
 > [!NOTE]
-> 美國政府租使用者 (GCC 和 GCC-H) 剛開始支援敏感度標籤。 如需詳細資訊，請參閱 Microsoft 365 Apps 企業版版本資訊， [版本2101：1 月 26 日](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26)。
+> 美國政府租使用者 (GCC 和 GCC-H) 剛開始支援敏感度標籤。 如需詳細資訊，請參閱 Microsoft 365 Apps 企業版版本資訊， [版本2101：1 月 26 日](/officeupdates/current-channel#version-2101-january-26)。
 >
-> 如需 Azure 資訊保護的整合式標記用戶端和掃描器，請參閱 [Azure 資訊保護優質政府服務描述](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
+> 如需 Azure 資訊保護的整合式標記用戶端和掃描器，請參閱 [Azure 資訊保護優質政府服務描述](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
 
 您可以使用敏感度標籤來：
   
@@ -118,7 +118,7 @@ ms.locfileid: "50838626"
     
     ![指派必要標籤的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    如需有關當您建立或編輯敏感度標籤時 **自動標籤檔案和電子郵件** 設定的詳細資訊，請參閱針對 Office 應用程式 [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)，和 [自動標籤您在 Azure Purview 的資料](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
+    如需有關當您建立或編輯敏感度標籤時 **自動標籤檔案和電子郵件** 設定的詳細資訊，請參閱針對 Office 應用程式 [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)，和 [自動標籤您在 Azure Purview 的資料](/azure/purview/create-sensitivity-label)。
 
 ### <a name="label-scopes"></a>標籤範圍
 
@@ -134,7 +134,7 @@ ms.locfileid: "50838626"
 
 - **群組和網站**：[為容器啟用敏感度標籤以及同步處理標籤](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Azure Purview 資產 (預覽)**：[在 Azure Purview 中自動為您的內容加上標籤](https://go.microsoft.com/fwlink/?linkid=2148989)
+- **Azure Purview 資產 (預覽)**：[在 Azure Purview 中自動為您的內容加上標籤](/azure/purview/create-sensitivity-label)
 
 如果您變更預設值，使得並未選取所有範圍，則會看到您未選取範圍之組態設定的第一頁，但您無法進行設定。 例如，如果未選取檔案和電子郵件的範圍，您就無法在下一頁選取選項：
 
@@ -178,7 +178,7 @@ ms.locfileid: "50838626"
 
 當您設定標籤原則時，您可以：
 
-- **選擇可看見標籤的使用者和群組。** 可以在 Azure AD 中將標籤發佈到任何特定的使用者或啟用電子郵件功能的安全性群組、通訊群組或 Microsoft 365 群組 (可以有 [動態成員資格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule))。
+- **選擇可看見標籤的使用者和群組。** 可以在 Azure AD 中將標籤發佈到任何特定的使用者或啟用電子郵件功能的安全性群組、通訊群組或 Microsoft 365 群組 (可以有 [動態成員資格](/azure/active-directory/users-groups-roles/groups-create-rule))。
 
 - **套用預設標籤** 至由標籤原則中包含的所有使用者和群組所建立的新文件和未標籤電子郵件，以及將相同或不同的預設標籤套用至容器 (如果您 [已為 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤](sensitivity-labels-teams-groups-sites.md))。 使用這項設定，Azure 資訊保護統一標籤用戶端也會將預設標籤套用至未標記的現有文件。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。
     
@@ -236,7 +236,7 @@ ms.locfileid: "50838626"
 > [!NOTE]
 > Azure 入口網站中 Azure 資訊保護標籤的標籤管理功能即將在 **2021 年 3 月 31 日** 淘汰。 請透過官方的[淘汰聲明](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)深入了解。
 
-如果您因為您的租用戶尚不在[整合標籤平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)中而使用 Azure 資訊保護標籤，建議您在您啟用整合標籤前，避免建立敏感度標籤。 在此情況下，您在 Azure 入口網站中看到的標籤是 Azure 資訊保護標籤，而不是敏感度標籤。 這些標籤可由 Windows 電腦上的 Azure 資訊保護用戶端 (傳統) 使用，但不能由執行 macOS、iOS 或 Android 的裝置使用。 若要解決此問題，請[將這些標籤遷移](/azure/information-protection/configure-policy-migrate-labels)至敏感度標籤。 
+如果您因為您的租用戶尚不在[整合標籤平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)中而使用 Azure 資訊保護標籤，建議您在您啟用整合標籤前，避免建立敏感度標籤。 在此情況下，您在 Azure 入口網站中看到的標籤是 Azure 資訊保護標籤，而不是敏感度標籤。 這些標籤可由 Windows 電腦上的 Azure 資訊保護用戶端 (傳統) 使用，但不能由執行 macOS、iOS 或 Android 的裝置使用。 若要解決此問題，請[將這些標籤遷移](/azure/information-protection/configure-policy-migrate-labels)至敏感度標籤。 
 
 這兩組標籤所套用的中繼資料彼此相容，因此您不須在完成移轉時，重新標記文件和電子郵件。
 
@@ -256,7 +256,7 @@ ms.locfileid: "50838626"
 
 - PowerShell 模組，以探索內部部署檔案中的敏感性資訊，並對這些檔案套用或移除標籤和加密。
 
-如果您是 Azure 資訊保護的新使用者，或您是剛轉移標籤的現有 Azure 資訊保護客戶，請參閱來自 Azure 資訊保護文件的[選擇要用於 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
+如果您是 Azure 資訊保護的新使用者，或您是剛轉移標籤的現有 Azure 資訊保護客戶，請參閱來自 Azure 資訊保護文件的[選擇要用於 Windows 電腦的標籤用戶端](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>敏感性標籤和 Microsoft Cloud App Security
 
@@ -268,11 +268,11 @@ Cloud App Security 適用於 Azure 資訊保護標籤和敏感度標籤：
 
 - 如果標籤系統管理中心未發佈敏感度標籤：使用 Azure 資訊保護標籤。
 
-如需有關使用 Cloud App Security 搭配這些標籤的指示，請參閱 [Azure 資訊保護整合](https://docs.microsoft.com/cloud-app-security/azip-integration)。
+如需有關使用 Cloud App Security 搭配這些標籤的指示，請參閱 [Azure 資訊保護整合](/cloud-app-security/azip-integration)。
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>敏感度標籤和 Microsoft 資訊保護 SDK
 
-由於敏感度標籤是以純文字儲存在文件的中繼資料中，因此協力廠商的應用程式和服務都可讀取和寫入此標籤中繼資料，以補充您的標籤部署。 此外，軟體開發人員可以使用 [Microsoft 資訊保護 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)，完全支援跨多個平臺的標籤和加密功能。 若要深入了解，請參閱[技術社群部落格上的正式版本公告](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144)。 
+由於敏感度標籤是以純文字儲存在文件的中繼資料中，因此協力廠商的應用程式和服務都可讀取和寫入此標籤中繼資料，以補充您的標籤部署。 此外，軟體開發人員可以使用 [Microsoft 資訊保護 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)，完全支援跨多個平臺的標籤和加密功能。 若要深入了解，請參閱[技術社群部落格上的正式版本公告](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144)。 
 
 您也可以了解[與 Microsoft 資訊保護整合的合作夥伴解決方案](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657)。
 

@@ -20,19 +20,19 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: 說明如何使用 PowerShell 來移除先前指派給使用者的 Microsoft 365 授權。
-ms.openlocfilehash: 8ae7ca1013e26a60f16177f2dab7ced4cc8b97a8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9944d1ab056d109b6bf71a44fe01acef78ce1f14
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289590"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920665"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>使用 PowerShell 移除使用者帳戶中的 Microsoft 365 授權
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
 >[!Note]
->瞭解如何使用 Microsoft 365 系統管理中心[移除使用者帳戶中的授權](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>瞭解如何使用 Microsoft 365 系統管理中心[移除使用者帳戶中的授權](../admin/manage/remove-licenses-from-users.md)。 如需其他資源的清單，請參閱 [管理使用者和群組](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
@@ -176,11 +176,10 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 
 若要釋放授權，另一種方法是刪除使用者帳戶。 如需詳細資訊，請參閱 [使用 PowerShell 刪除及還原使用者帳戶](delete-and-restore-user-accounts-with-microsoft-365-powershell.md)。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)
-

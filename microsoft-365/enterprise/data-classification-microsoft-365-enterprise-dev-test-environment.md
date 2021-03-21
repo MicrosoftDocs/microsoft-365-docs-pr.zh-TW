@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南，可在 Microsoft 365 for enterprise 測試環境中的檔上建立及使用保留標籤。
-ms.openlocfilehash: 5cc77167db866d99f0beea5f554a777ecf355046
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 613aa3713b4d72eed1bc0b2d88f70a817d0e7cff
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487729"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919185"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的資料分類
 
@@ -52,8 +52,8 @@ ms.locfileid: "48487729"
 
 1. 使用您的全域系統管理員帳戶登入 [Microsoft 365 的安全性中心](https://security.microsoft.com/homepage) 。
 1. 從瀏覽器的 [**主版-Microsoft 365 安全性**] 索引標籤中，選取 [**分類**  >  **保留標籤**]。
-1. 選取 [建立標籤]****。
-1. 在 [**命名您的標籤**] 窗格中，**輸入您標籤**的 [**內部公用**]，然後選取 **[下一步]**。
+1. 選取 [建立標籤]。
+1. 在 [**命名您的標籤**] 窗格中，**輸入您標籤** 的 [**內部公用**]，然後選取 **[下一步]**。
 1. 在 [ **檔計畫描述項** ] 窗格中，選取 **[下一步]**。
 1. 在 [ **標籤設定** ] 窗格中，視需要將 **保留** 設定為 [ **開啟**]，然後選取 **[下一步]**。
 1. 在 [ **複查您的設定** ] 窗格中，選取 [ **建立標籤**]。
@@ -104,7 +104,7 @@ ms.locfileid: "48487729"
 1. 按一下 [ **全部編輯**]。
 1. 在 [ **Document.docx** ] 窗格中的 [套用 **保留標籤**] 底下，選取 [ **高度機密** ] 標籤，然後選取 [ **儲存**]。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 在您的測試環境中探索其他 [資訊保護](m365-enterprise-test-lab-guides.md#information-protection) 功能和功能。
 
@@ -114,4 +114,4 @@ ms.locfileid: "48487729"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

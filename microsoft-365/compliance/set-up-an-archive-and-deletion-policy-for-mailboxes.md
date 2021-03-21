@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何在 Microsoft 365 中建立封存和刪除原則，以自動將專案移至使用者的封存信箱。
-ms.openlocfilehash: cfe14b0821230831517e78ca6a56175a94d81eec
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: ae48335203968b25a00fda61bfe65ffde85649ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597141"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919529"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>設定組織中的信箱封存和刪除原則
 
@@ -54,7 +54,7 @@ ms.locfileid: "50597141"
 
 - 當您建立新的使用者帳戶並指派 Exchange Online 授權給使用者時，系統會自動為使用者建立信箱。 建立信箱時，會自動將其指派為預設保留原則，名稱為 [預設 MRM 原則]。 在本文中，您將建立新的保留原則，然後將其指派給使用者信箱，取代預設的 MRM 原則。 一個信箱一次只能有一個指派給它的保留原則。
 
-- 若要深入瞭解 Exchange Online 中的保留標記和保留原則，請參閱 [保留標記和保留原則](https://go.microsoft.com/fwlink/p/?LinkId=404424)。
+- 若要深入瞭解 Exchange Online 中的保留標記和保留原則，請參閱 [保留標記和保留原則](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)。
 
 ## <a name="step-1-enable-archive-mailboxes-for-users"></a>步驟1：啟用使用者的封存信箱
 
@@ -237,7 +237,7 @@ ms.locfileid: "50597141"
   
 以下是連接至 Exchange Online PowerShell 的步驟，然後在組織中的每個信箱上執行受管理的資料夾助理。
 
-1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)。
+1. [連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
   
 2. 執行下列兩個命令，以啟動組織中所有使用者信箱的受管理的資料夾助理。
 
@@ -258,7 +258,7 @@ ms.locfileid: "50597141"
 
 在步驟4中，您必須將新的保留原則指派給現有的信箱。 不過，您可以設定 Exchange Online，讓新的保留原則指派給未來建立的新信箱。 您可以使用 Exchange Online PowerShell 來更新組織的預設信箱計畫。 *信箱方案* 是一種範本，可自動設定新信箱的屬性。  在此選用的步驟中，您可以取代指派給信箱計畫的目前保留原則 (預設會使用您在步驟3中建立的保留原則) 預設的 MRM 原則。 在您更新信箱計畫之後，新的保留原則將會指派給新的信箱。
 
-1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)。
+1. [連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 執行下列命令，以顯示組織中信箱計畫的相關資訊。
 
@@ -276,7 +276,7 @@ ms.locfileid: "50597141"
 
 4. 您可以在步驟2中重新執行命令，以驗證指派給預設信箱計畫的保留原則已變更。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 - 保留存留期的計算方式？ 信箱專案的保留天數會從傳遞日期或專案建立的日期開始計算，例如未傳送但由使用者建立的草稿郵件。 當受管理的資料夾助理員處理信箱中的項目時，它會針對其保留標記具有 [刪除並允許復原] 或 [永久刪除] 保留動作的所有項目，加上開始日期和到期日的戳記。 具有封存標籤的專案會以移動日期標記。 
 
@@ -296,4 +296,4 @@ ms.locfileid: "50597141"
 
     > <sup>\*</sup> 使用者可以使用 Outlook 和 Outlook (網頁版中的 [復原刪除的專案] 工具（先前稱為 Outlook Web App）) 在刪除的專案保留期間內復原已刪除的專案，在 Exchange Online 中，預設為14天。 系統管理員可以使用 Windows PowerShell 將刪除的專案保留期間增加至最長30天。 如需詳細資訊，請參閱： [復原 Windows Outlook 中已刪除的郵件](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) ，以及 [變更 Exchange Online 中信箱的已刪除專案保留期間](https://www.microsoft.com/?ref=go)
   
-- 使用 **可復原的專案14天移至** 封存保留標記有助於在使用者主要信箱的 [可復原的專案] 資料夾中釋放儲存空間。 當使用者的信箱處於保留狀態時，這是很有用的，這表示永遠不會永久刪除使用者的信箱。 在不將專案移至封存信箱時，可能會到達主要信箱中 [可復原的專案] 資料夾的儲存配額。 如需這項功能及其避免方式的詳細資訊，請參閱 [增加保留信箱的可復原專案配額](https://go.microsoft.com/fwlink/p/?LinkId=786479)。
+- 使用 **可復原的專案14天移至** 封存保留標記有助於在使用者主要信箱的 [可復原的專案] 資料夾中釋放儲存空間。 當使用者的信箱處於保留狀態時，這是很有用的，這表示永遠不會永久刪除使用者的信箱。 在不將專案移至封存信箱時，可能會到達主要信箱中 [可復原的專案] 資料夾的儲存配額。 如需這項功能及其避免方式的詳細資訊，請參閱 [增加保留信箱的可復原專案配額](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)。

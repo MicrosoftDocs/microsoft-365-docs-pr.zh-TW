@@ -19,12 +19,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解在 Microsoft 365 中限制或停用共用的選項。
-ms.openlocfilehash: 388d354886805f593b1c7815f16d1e0156e12fe0
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233527"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920201"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>在 Microsoft 365 中限制共用
 
@@ -45,9 +45,9 @@ ms.locfileid: "50233527"
 
 您也可以限制人員存取共用內容的條件。 如需詳細資訊，請參閱本文後面的 [條件式存取](#conditional-access)。
 
-雖然您可以使用本文所述的系統管理控制項來限制貴組織中的共用，我們高度建議您考慮使用 Microsoft 365 中提供的安全性與合規性功能，以建立安全的共用環境。 如需詳細資訊，請參閱[在 SharePoint 中使用 Microsoft 365 進行檔案共同作業](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)和[設定具有安全隔離的團隊](secure-teams-security-isolation.md)。
+雖然您可以使用本文所述的系統管理控制項來限制貴組織中的共用，我們高度建議您考慮使用 Microsoft 365 中提供的安全性與合規性功能，以建立安全的共用環境。 如需詳細資訊，請參閱[在 SharePoint 中使用 Microsoft 365 進行檔案共同作業](/sharepoint/deploy-file-collaboration)和[設定具有安全隔離的團隊](secure-teams-security-isolation.md)。
 
-若要了解貴組織使用共用功能的方式，請[執行有關檔案和資料夾共用的報告](https://docs.microsoft.com/sharepoint/sharing-reports)。
+若要了解貴組織使用共用功能的方式，請[執行有關檔案和資料夾共用的報告](/sharepoint/sharing-reports)。
 
 ## <a name="microsoft-365-group-or-team"></a>Microsoft 365 群組或團隊
 
@@ -73,9 +73,9 @@ ms.locfileid: "50233527"
     ![Microsoft 365 系統管理中心中 Microsoft 365 群組共用設定的螢幕擷取畫面](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> 如果想要防止特定群組或團隊的來賓共用，您可以使用 [Microsoft PowerShell](per-group-guest-access.md) 和[敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) 來執行此動作。
+> 如果想要防止特定群組或團隊的來賓共用，您可以使用 [Microsoft PowerShell](per-group-guest-access.md) 和[敏感度標籤](../compliance/sensitivity-labels-teams-groups-sites.md) 來執行此動作。
 
-在 Azure Active Directory 中允許或封鎖網域，即可限制對來自特定網域的使用者進行來賓共用。 如果您已啟用 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)，則這也會影響 SharePoint 中的來賓共用。
+在 Azure Active Directory 中允許或封鎖網域，即可限制對來自特定網域的使用者進行來賓共用。 如果您已啟用 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](/sharepoint/sharepoint-azureb2b-integration-preview)，則這也會影響 SharePoint 中的來賓共用。
 
 僅允許從指定網域共用邀請
 1. 在 Azure Active Directory 的 [概觀] 頁面上，按一下 **[組織關聯]**。
@@ -118,11 +118,11 @@ ms.locfileid: "50233527"
 
 ### <a name="block-access-to-a-site"></a>封鎖網站的存取權
 
-您可以變更網站的鎖定狀態來封鎖網站的存取權，或讓網站變成唯讀。 如需詳細資訊，請參閱 [鎖定和解除封鎖網站](https://docs.microsoft.com/sharepoint/manage-lock-status)。
+您可以變更網站的鎖定狀態來封鎖網站的存取權，或讓網站變成唯讀。 如需詳細資訊，請參閱 [鎖定和解除封鎖網站](/sharepoint/manage-lock-status)。
 
 ### <a name="permissions-inheritance"></a>權限繼承
 
-儘管不建議使用，但您可以使用 [SharePoint 權限繼承](https://docs.microsoft.com/sharepoint/what-is-permissions-inheritance) 自訂網站和子網站的存取等級。
+儘管不建議使用，但您可以使用 [SharePoint 權限繼承](/sharepoint/what-is-permissions-inheritance) 自訂網站和子網站的存取等級。
 
 ## <a name="sharing-with-specific-people"></a>與特定人員共用
 
@@ -193,15 +193,15 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 根據預設，使用者可以建立新網站、群組和小組，從中可能可以共用內容（取決於您的共用設定）。 您可以限制可以建立網站、群組及小組的人員。 請參閱下列參照：
 
-- [在 SharePoint 中管理網站建立](https://docs.microsoft.com/sharepoint/manage-site-creation)
-- [管理能建立 Microsoft 365 群組的使用者](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+- [在 SharePoint 中管理網站建立](/sharepoint/manage-site-creation)
+- [管理能建立 Microsoft 365 群組的使用者](./manage-creation-of-groups.md)
 
 > [!NOTE]
 > 限制群組建立會限制小組建立。
 
 ## <a name="email"></a>電子郵件
 
-您可以使用加密來防止非必要地共用電子郵件。 這麼做會防止將電子郵件轉寄或以其他方式與未經授權的使用者共用。 您可以使用敏感度標籤來啟用電子郵件加密。 如需詳細資料，請參閱[使用敏感度標籤中的加密來限制內容的存取](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)。
+您可以使用加密來防止非必要地共用電子郵件。 這麼做會防止將電子郵件轉寄或以其他方式與未經授權的使用者共用。 您可以使用敏感度標籤來啟用電子郵件加密。 如需詳細資料，請參閱[使用敏感度標籤中的加密來限制內容的存取](../compliance/encryption-sensitivity-labels.md)。
 
 ## <a name="download-or-file-copy"></a>下載或檔案複製
 
@@ -209,12 +209,12 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 ## <a name="conditional-access"></a>條件式存取
 
-Azure Active Directory 條件式存取提供可根據網路位置、裝置健康情況、登入風險及其他因素來限制或防止與人員共用的選項。 請參閲[何謂條件式存取？](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
+Azure Active Directory 條件式存取提供可根據網路位置、裝置健康情況、登入風險及其他因素來限制或防止與人員共用的選項。 請參閲[何謂條件式存取？](/azure/active-directory/conditional-access/overview)。
 
 SharePoint 為未受管理的裝置和網路位置提供與 Azure AD 條件式存取的直接整合。 請參閱下列參照以取得詳細資料：
 
-- [從未受管理的裝置控制存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
-- [根據網路位置控制對 SharePoint 和 OneDrive 資料的存取](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
+- [從未受管理的裝置控制存取](/sharepoint/control-access-from-unmanaged-devices)
+- [根據網路位置控制對 SharePoint 和 OneDrive 資料的存取](/sharepoint/control-access-based-on-network-location)
 
 ## <a name="see-also"></a>請參閱
 

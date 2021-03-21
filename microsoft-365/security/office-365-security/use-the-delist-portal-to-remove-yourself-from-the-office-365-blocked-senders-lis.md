@@ -20,12 +20,12 @@ ms.custom:
 description: 在本文中，您將瞭解如何使用取消列出入口網站，將您自己從 Microsoft 365 封鎖的寄件者清單中移除。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c11fced30ef52315ecb44dda51e6825d36b57c7e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: aef3a5946dee9df7d12232c179f23386db459e06
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287518"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921105"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用取消列出入口網站，將您自己從封鎖寄件者清單中移除
 
@@ -44,7 +44,7 @@ Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件�
 
 當您收到包含錯誤如下的郵件訊息時，您就會知道您已新增至清單：
 
-> 550 5.7.606-649 拒絕存取，禁止傳送 IP _位址 [ip 位址_];若要向此清單要求移除，請流覽 <https://sender.office.com/> 並依照指示執行。 如需詳細資訊，請參閱 [Exchange Online 中的電子郵件未傳遞](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)回報。
+> 550 5.7.606-649 拒絕存取，禁止傳送 IP _位址 [ip 位址_];若要向此清單要求移除，請流覽 <https://sender.office.com/> 並依照指示執行。 如需詳細資訊，請參閱 [Exchange Online 中的電子郵件未傳遞](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)回報。
 
 其中  _IP address_ 是郵件伺服器執行所在之電腦的 IP 位址。
 

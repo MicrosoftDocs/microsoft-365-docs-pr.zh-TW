@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: 如何在安全性 & 規範中心開啟或關閉「審核記錄搜尋」功能，以啟用或停用系統管理員搜尋審核記錄的能力。
-ms.openlocfilehash: 3f3e1b913dd163e74f9e5359de772dfcbf3bd786
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: aecd1d47592b9a5e2f134b1d9db9ff203b815b18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423674"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919279"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>開啟或關閉稽核記錄搜尋
 
@@ -41,7 +41,7 @@ ms.locfileid: "50423674"
     > [!NOTE]
     > 在 Exchange Online 中，必須將許可權指派給使用者，以開啟或關閉審核記錄搜尋。 如果您在安全性 & 合規性中心的 [ **許可權** ] 頁面上指派「審核記錄」角色，則使用者將無法開啟或關閉審核記錄搜尋。 這是因為基準 Cmdlet 是 Exchange Online PowerShell Cmdlet。 
     
-- 如需搜尋審核記錄的逐步指示，請參閱在 [安全性 & 規範中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。 如需 Microsoft 365 管理活動 API 的詳細資訊，請參閱 [開始使用 microsoft 365 管理 APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。
+- 如需搜尋審核記錄的逐步指示，請參閱在 [安全性 & 規範中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。 如需 Microsoft 365 管理活動 API 的詳細資訊，請參閱 [開始使用 microsoft 365 管理 APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)。
 
 - 若要驗證 [稽核記錄搜尋] 已開啟，您可以在 Exchange Online PowerShell 中執行下列命令：
 
@@ -71,7 +71,7 @@ ms.locfileid: "50423674"
 
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>使用 PowerShell 開啟審計記錄搜尋
 
-1. [連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 執行下列 PowerShell 命令，在 Office 365 中開啟審計記錄搜尋。
 
@@ -85,7 +85,7 @@ ms.locfileid: "50423674"
 
 您必須使用 Exchange Online PowerShell 關閉「審核記錄搜尋」。
   
-1. [連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 執行下列 PowerShell 命令，以關閉審核記錄搜尋。
 

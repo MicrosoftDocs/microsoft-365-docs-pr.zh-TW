@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 部署適用于 Microsoft 365 承租人的正確身分識別模型，並強制執行強使用者登入。
-ms.openlocfilehash: ca545e0152b567cd566ce939e369988f864042a9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 18d950bcca0c4f24e4777d0e29bd8e319d0de77f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407167"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920865"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 3. Microsoft 365 for enterprise 承租人的身分識別
 
@@ -66,7 +66,7 @@ ms.locfileid: "50407167"
 | 同盟驗證 | Azure AD 會將要求驗證的用戶端電腦重新導向至另一個身分識別提供者。 |
 |  |  |
 
-若要深入瞭解，請參閱 [選擇正確的驗證方法](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) 。
+若要深入瞭解，請參閱 [選擇正確的驗證方法](/azure/active-directory/hybrid/choose-ad-authn) 。
 
 ## <a name="enforcing-strong-sign-ins"></a>強制執行強式登入
 
@@ -74,11 +74,11 @@ ms.locfileid: "50407167"
 
 | 功能 | 描述 | 其他資訊 | 授權需求 |
 |:-------|:-----|:-----|:-----|:-----|
-| Windows Hello 企業版 | 在 Windows 裝置上進行簽署時，取代具有強雙因素驗證的密碼。 雙因素是一種新的使用者認證類型，可與裝置和生物特徵或 PIN 相繫結。 | [Windows Hello 企業版概觀](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 或 E5 |
-| Azure AD 密碼保護 | 偵測並封鎖已知的弱密碼和其變種，也可以封鎖您組織特有的其他弱字詞。 | [設定 Azure AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 或 E5 |
+| Windows Hello 企業版 | 在 Windows 裝置上進行簽署時，取代具有強雙因素驗證的密碼。 雙因素是一種新的使用者認證類型，可與裝置和生物特徵或 PIN 相繫結。 | [Windows Hello 企業版概觀](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 或 E5 |
+| Azure AD 密碼保護 | 偵測並封鎖已知的弱密碼和其變種，也可以封鎖您組織特有的其他弱字詞。 | [設定 Azure AD 密碼保護](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 或 E5 |
 | 使用多重要素驗證 (MFA) | MFA 要求使用者登入除了使用者帳戶密碼以外的其他驗證，例如使用 smartphone 應用程式的驗證或傳送至 smartphone 的文字訊息。 如需使用者如何設定 MFA 的指示，請參閱 [這段影片](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) 。 | [適用于企業的 Microsoft 365 MFA](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 或 E5 |
 | 身分識別與裝置存取設定 | 設定和原則，包含建議的必要條件功能及其設定，其結合了條件式存取、Intune 和 Azure AD 身分識別保護原則，可決定是否應該授與指定的存取要求，以及在哪些條件下。  | [身分識別與裝置存取設定](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 或 E5 |
-| Azure AD Identity Protection | 防護認證洩露，攻擊者會決定使用者的帳戶名稱和密碼，以取得對組織的雲端服務和資料的存取權。 | [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 或 Microsoft 365 E3，具有身分識別 & 威脅防護附加元件 |
+| Azure AD Identity Protection | 防護認證洩露，攻擊者會決定使用者的帳戶名稱和密碼，以取得對組織的雲端服務和資料的存取權。 | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 或 Microsoft 365 E3，具有身分識別 & 威脅防護附加元件 |
 |  |  |  |
 
 
@@ -107,7 +107,7 @@ ms.locfileid: "50407167"
 - 新增或修改使用者帳戶和群組。 針對僅限雲端的身分識別，您可以使用 Azure AD 工具（例如 Microsoft 365 系統管理中心或 PowerShell）來維護雲端式使用者和群組。 針對混合式身分識別，您可以使用 AD DS 工具維護內部部署使用者和群組。
 - 新增或修改身分識別與裝置存取設定，以強制登入安全性需求。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [![步驟4。遷移您的內部部署 Office 伺服器和資料](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
 

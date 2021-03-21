@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解隔離控制在 Microsoft 365 內的運作方式，允許服務在必要的情況下運作或保持自治。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bb0989f19002267ab92bf184a12a4076f753580e
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 514b12e44d9e81a18b691ebf3196a3d21157e71b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332373"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918939"
 ---
 # <a name="microsoft-365-isolation-controls"></a>Microsoft 365 隔離控制 
 
@@ -31,7 +31,7 @@ Microsoft 365 是由多種服務所組成，可提供重要的商務功能，並
 
 Microsoft 365 的設計原則如下：
 
- - 以**[服務為導向的架構](https://docs.microsoft.com/previous-versions/aa480021(v=msdn.10))：** 以互通性服務的形式設計和開發軟體，以提供完善定義的商務功能。
+ - 以 **[服務為導向的架構](/previous-versions/aa480021(v=msdn.10))：** 以互通性服務的形式設計和開發軟體，以提供完善定義的商務功能。
  - **[運作安全性保證](https://www.microsoft.com/download/details.aspx?id=40872)：** 一種架構，包含透過 microsoft 獨有的各種功能所取得的知識，包括 Microsoft [安全性開發週期](https://www.microsoft.com/sdl/default.aspx)、 [microsoft 安全回應中心](https://technet.microsoft.com/library/dn440717.aspx)，以及 cybersecurity 威脅形勢的深入認知。
 
 Microsoft 365 服務間相互運作，但會加以設計及實施，使其能獨立于自治服務進行部署及運作。 Microsoft segregates Microsoft 365 的責任和責任範圍，以減少未授權或無意修改或誤用組織資產的機會。 Microsoft 365 小組已定義角色，成為綜合角色存取控制機制的一部分。

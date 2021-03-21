@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 群組服務互動
-ms.openlocfilehash: 6d5681b11cdbd837f784b6c8364cce23f964b167
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 331c30c86481b1729251c685de2d663fb14f390b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613223"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921021"
 ---
 # <a name="groups-services-interactions"></a>群組服務互動
 
@@ -113,7 +113,7 @@ Web SharePoint Stream 的 Outlook Planner 專案 Microsoft 小組 Yammer
 |:---|:---|:---|:---|:---|
 |Azure AD|成員資格、群組控制項、來賓|是|是|是|
 |Exchange|行事曆、信箱|是|是|是|
-|Forms|Form|是|否|否|
+|表單|Form|是|否|否|
 |OneNote|筆記本|是|否|否|
 |Planner|工作面板|否|是|是|
 |Power Apps 應用程式|應用程式|是|否|否|
@@ -175,7 +175,7 @@ Azure AD 在 Microsoft 365 中提供基礎的身分識別管理功能。
 
 - 交談
 - 通道 &] 索引標籤
-- Meetings
+- 會議
 
 **小組是否可以建立群組？**
 
@@ -235,7 +235,7 @@ Exchange Online 提供郵件、行事曆、連絡人及相關聯的功能。 在
 
 是的，刪除 Exchange 中的信箱會刪除群組相關聯的服務和內容。
 
-## <a name="forms"></a>Forms
+## <a name="forms"></a>表單
 
 表單提供 web 型問卷調查和測驗。
 
@@ -363,7 +363,7 @@ Planner 是輕量群組任務管理服務。
 是的，因為電源應用程式與 Microsoft 365 群組之間的關聯只會共用–該應用程式仍會與建立者一起存放。
 
 > [!IMPORTANT]
-> [群組必須先啟用安全性，應用程式才能與其共用](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups)。
+> [群組必須先啟用安全性，應用程式才能與其共用](/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups)。
 
 **刪除應用程式時，是否要刪除群組？**
 
@@ -417,7 +417,7 @@ Power BI 提供互動式資料導向儀表板和報告。
 
 **是否有不含群組的 Power BI 傳統工作區？**
 
-否， [POWER BI 中的傳統工作區必須與群組產生關聯](https://docs.microsoft.com/power-bi/collaborate-share/service-collaborate-power-bi-workspace)。
+否， [POWER BI 中的傳統工作區必須與群組產生關聯](/power-bi/collaborate-share/service-collaborate-power-bi-workspace)。
 
 **每個群組是否可以有多個 Power BI 工作區？**
 
@@ -455,7 +455,7 @@ Power BI 提供互動式資料導向儀表板和報告。
 
 **每個群組是否可以有多個工作區？**
 
-是的， [可與單一群組共用 POWER BI 所建立的多個工作區](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace)。
+是的， [可與單一群組共用 POWER BI 所建立的多個工作區](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace)。
 
 **工作區是否可以與多個群組相關聯？**
 
@@ -645,4 +645,3 @@ Yammer 是一種企業社交平臺，可促進組織內部及組織之間的社�
 [共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [建立共同作業管理計畫](collaboration-governance-first.md)
-

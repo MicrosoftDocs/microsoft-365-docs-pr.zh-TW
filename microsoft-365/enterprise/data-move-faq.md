@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 description: 尋找常見問題解答 (FAQs) 將核心資料移至新的 Office 365 datacenter geo。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a7e59622e35604ebd9befbbe17a8a125ed15e101
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: e66c9f29b47c3f1bc8d6e89ebf2f077eee9f4adf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094652"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919125"
 ---
 # <a name="data-move-general-faq"></a>資料移動一般常見問題集
 
@@ -146,8 +146,8 @@ SharePoint 線上和 OneDrive 商務用，無法透過此程式在租使用者�
 
 [Microsoft 365 互動式 datacenter 地圖](https://office.com/datamaps)
 
-[Microsoft 365 支援](https://go.microsoft.com/fwlink/p/?LinkID=522459)
+[Microsoft 365 支援](../admin/contact-support-for-business-products.md)
 
-[Microsoft Dynamics CRM Online 的新 datacenter geos](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Microsoft Dynamics CRM Online 的新 datacenter geos](/power-platform/admin/new-datacenter-regions)
   
 [依地區的 Azure 服務](https://azure.microsoft.com/regions/)

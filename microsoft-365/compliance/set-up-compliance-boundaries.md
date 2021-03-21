@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可在 Microsoft 365 中搜尋的使用者內容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: df582d46472bc7ca6d6e99e823ab94c0884d60a0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 80f1c6705550d21ac54a0fb4dda2b605b497adbc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423894"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919499"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -68,7 +68,7 @@ ms.locfileid: "50423894"
 
 - 使用者信箱的大小必須至少為 10 MB。 如果使用者的信箱小於 10 MB，用來定義您的組織的屬性不會同步到使用者的 OneDrive 帳戶。
 
-- 規範界限和用來建立搜尋許可權篩選的屬性，需要將 Azure Active Directory (Azure AD) 屬性同步處理至使用者信箱。 若要確認您要使用的屬性已同步處理，請在 Exchange Online PowerShell 中執行 [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) Cmdlet。 此 Cmdlet 的輸出會顯示同步到 Exchange Online 的 Azure AD 屬性。
+- 規範界限和用來建立搜尋許可權篩選的屬性，需要將 Azure Active Directory (Azure AD) 屬性同步處理至使用者信箱。 若要確認您要使用的屬性已同步處理，請在 Exchange Online PowerShell 中執行 [Get-User](/powershell/module/exchange/get-user) Cmdlet。 此 Cmdlet 的輸出會顯示同步到 Exchange Online 的 Azure AD 屬性。
 
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>步驟1：識別使用者屬性以定義您的機構
 
@@ -87,7 +87,7 @@ ms.locfileid: "50423894"
 - C (兩個字母的國家代碼) <sup>*</sup>
 
   > [!NOTE]
-  > <sup>*</sup> 此屬性會對應至在 Exchange Online PowerShell 中執行 **Get-User** Cmdlet 所傳回的 CountryOrRegion 屬性。 Cmdlet 會傳回當地語系化的國家名稱，該名稱會從兩個字母的國家碼轉譯。 如需詳細資訊，請參閱 [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user) Cmdlet 參考文章中的 CountryOrRegion 參數描述。
+  > <sup>*</sup> 此屬性會對應至在 Exchange Online PowerShell 中執行 **Get-User** Cmdlet 所傳回的 CountryOrRegion 屬性。 Cmdlet 會傳回當地語系化的國家名稱，該名稱會從兩個字母的國家碼轉譯。 如需詳細資訊，請參閱 [Set-User](/powershell/module/exchange/set-user) Cmdlet 參考文章中的 CountryOrRegion 參數描述。
 
 雖然有其他使用者屬性可供使用（特別是針對 Exchange 信箱），但以上所列的屬性是目前 OneDrive 支援的屬性。
   
@@ -198,7 +198,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>在多地理位置環境中搜尋和匯出內容
 
-搜尋許可權篩選也可讓您控制要匯出內容的位置，以及在 [SharePoint 多地理位置環境](https://go.microsoft.com/fwlink/?linkid=860840)中搜尋內容位置時可搜尋的資料中心。
+搜尋許可權篩選也可讓您控制要匯出內容的位置，以及在 [SharePoint 多地理位置環境](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)中搜尋內容位置時可搜尋的資料中心。
   
 - **匯出搜尋結果：** 您可以從特定資料中心的 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶匯出搜尋結果。 這表示您可以指定要從中匯出搜尋結果的資料中心位置。
 
@@ -267,7 +267,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>使用 SharePoint hub 網站的規範界限
 
-[SharePoint hub 網站](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) 通常會與 eDiscovery 相容性邊界遵循的相同地理位置或代理商界限對齊。 這表示您可以使用 hub 網站的 site ID 屬性來建立符合性界限。 若要這麼做，請在 SharePoint Online PowerShell 中使用 [SPOHubSite 指令程式](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite#examples) ，以取得 hub 網站的 SiteId，然後使用 [部門 ID] 屬性的此值建立搜尋許可權篩選。
+[SharePoint hub 網站](/sharepoint/dev/features/hub-site/hub-site-overview) 通常會與 eDiscovery 相容性邊界遵循的相同地理位置或代理商界限對齊。 這表示您可以使用 hub 網站的 site ID 屬性來建立符合性界限。 若要這麼做，請在 SharePoint Online PowerShell 中使用 [SPOHubSite 指令程式](/powershell/module/sharepoint-online/get-spohubsite#examples) ，以取得 hub 網站的 SiteId，然後使用 [部門 ID] 屬性的此值建立搜尋許可權篩選。
 
 使用下列語法為 SharePoint hub 網站建立搜尋許可權篩選：
 

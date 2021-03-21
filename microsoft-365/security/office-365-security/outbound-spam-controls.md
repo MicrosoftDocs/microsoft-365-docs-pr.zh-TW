@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的外寄垃圾郵件控制項，以及在您需要傳送大宗郵件時要執行的動作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f9d434c858f7c66f82dd4f551bac99458b9e5c8c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 8e87f4625e48024cd217ba5c33d345c2422f109c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287626"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920321"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>EOP 中的外寄垃圾郵件保護
 
@@ -42,7 +42,7 @@ ms.locfileid: "50287626"
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>管理員可控制輸出垃圾郵件的工作
 
-- **使用內建通知**：當使用者超過傳送限制的 [服務](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) 或 [輸出垃圾郵件原則](configure-the-outbound-spam-policy.md) ，且限制傳送電子郵件時，名為「 **使用者限制傳送電子郵件** 的預設警示原則」會傳送電子郵件通知給 **TenantAdmins** (**Global admins**) 群組的成員。 若要設定接收這些通知的人員，請參閱 [驗證受限使用者的警示設定](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 此外，已 **超過名稱電子郵件傳送限制** 的預設警示原則，以及 **可疑的電子郵件傳送模式** ，偵測到 **TenantAdmins** (**Global admins**) 群組的成員傳送電子郵件通知。 如需有關警示原則的詳細資訊，請參閱[安全性與合規性中心中的警示原則](../../compliance/alert-policies.md)。
+- **使用內建通知**：當使用者超過傳送限制的 [服務](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) 或 [輸出垃圾郵件原則](configure-the-outbound-spam-policy.md) ，且限制傳送電子郵件時，名為「 **使用者限制傳送電子郵件** 的預設警示原則」會傳送電子郵件通知給 **TenantAdmins** (**Global admins**) 群組的成員。 若要設定接收這些通知的人員，請參閱 [驗證受限使用者的警示設定](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 此外，已 **超過名稱電子郵件傳送限制** 的預設警示原則，以及 **可疑的電子郵件傳送模式** ，偵測到 **TenantAdmins** (**Global admins**) 群組的成員傳送電子郵件通知。 如需有關警示原則的詳細資訊，請參閱[安全性與合規性中心中的警示原則](../../compliance/alert-policies.md)。
 
 - **複習來自協力廠商電子郵件提供者的垃圾** 郵件：許多電子郵件服務（如 Outlook.com、YAHOO 和 AOL）都會提供反應環，在此情況下，如果服務中的任何使用者將 Microsoft 365 中的電子郵件標記為垃圾郵件，則會將郵件打包並送回我們進行審閱。 若要深入瞭解 Outlook.com 的寄件者支援，請移至 <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> 。
 
@@ -62,7 +62,7 @@ ms.locfileid: "50287626"
 
 在想要傳送大量電子郵件的客戶之間，您很難進行平衡，而不是使用不良的收件者購買做法，保護服務免受遭到攻破的帳戶和大量電子郵件寄件者。 協力廠商 IP 封鎖清單上的 Microsoft 365 電子郵件來源平臺登錄成本，大於封鎖傳送太多電子郵件的使用者。
 
-如 [Exchange Online 服務描述](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)所述，使用 EOP 傳送大量電子郵件並不是支援使用服務，而且只允許以「最大努力」為基礎。 若客戶想要傳送大量電子郵件，建議您執行下列解決方案：
+如 [Exchange Online 服務描述](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)所述，使用 EOP 傳送大量電子郵件並不是支援使用服務，而且只允許以「最大努力」為基礎。 若客戶想要傳送大量電子郵件，建議您執行下列解決方案：
 
 - **透過內部部署電子郵件伺服器傳送大量電子郵件**：這表示客戶將需要維護自己的電子郵件基礎結構以進行大宗郵件。
 

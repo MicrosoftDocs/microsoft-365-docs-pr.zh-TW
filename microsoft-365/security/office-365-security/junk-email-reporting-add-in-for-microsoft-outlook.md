@@ -15,12 +15,12 @@ ms.collection:
 description: 瞭解如何安裝和使用 Microsoft 垃圾郵件回報增益集來向 Microsoft 報告垃圾郵件、非垃圾郵件和網路釣魚郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e22a1364e8d7a1447bbcf518cc339a681c57a8af
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a6386307b24d879cac9dd2390d9080cd2cb8b5b5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286618"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920357"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安裝和使用 Microsoft Outlook 的垃圾郵件回報增益集
 
@@ -122,7 +122,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 1. 在您的電腦上，關閉 Outlook。
 
-2. 在 Windows 10 中，確認已啟用 .NET Framework 2.0。 如需相關指示，請參閱 [Enable the .Net Framework 3.5 In Control Panel](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)。
+2. 在 Windows 10 中，確認已啟用 .NET Framework 2.0。 如需相關指示，請參閱 [Enable the .Net Framework 3.5 In Control Panel](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)。
 
 3. 找到您已下載的 .msi 檔案，然後按兩下它。
 
