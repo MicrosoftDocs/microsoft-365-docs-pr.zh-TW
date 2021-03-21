@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留功能在 SharePoint 以及 OneDrive 中的運作方式。
-ms.openlocfilehash: dd1260df23579ad2e6605805bafe9e36d2274a8e
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 448f3e8e2ab827527b02263fea2b07de4b345dc1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727398"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919769"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>瞭解 SharePoint 和 OneDrive 的保留功能
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 本文中的資訊補充了[瞭解保留功能](retention.md)的資訊，因為其資訊涵蓋了 SharePoint 和 OneDrive 專用的資訊。
 
@@ -49,7 +49,11 @@ ms.locfileid: "50727398"
 > [!TIP]
 > 當您將[帶有自動套用原則的査詢用於保留標籤](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)時，可以使用以下項目排除指定文件庫：`NOT(DocumentLink:"<URL to document library>")`
 
-清單項目不受保留原則支援，但受保留標籤支援 (系統清單中的項目除外)。 這些是 SharePoint 用來管理系統的隱藏清單，並包括主版頁面目錄、解決方案目錄及資料來源。
+清單項目不受保留原則支援，但受保留標籤支援 (系統清單中的項目除外)。 這些是 SharePoint 用來管理系統的隱藏清單，並包括主版頁面目錄、解決方案目錄及資料來源。 當您將保留標籤套用至具有文件附件的支援清單項目時：
+- 針對標準保留標籤 (不將項目宣告為記錄)：
+    - 文件附件不會自動繼承標籤的保留設定，但是可以獨立標記。
+- 針對將項目宣告為記錄的保留標籤： 
+    - 如果文件尚未標記，文件附件會自動從標籤繼承保留設定。
 
 來自保留原則和保留標籤的保留設定，均不適用包含文件庫、清單及資料夾的組織結構。
 

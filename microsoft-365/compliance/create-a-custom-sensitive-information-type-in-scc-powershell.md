@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合規性中心建立及匯入原則的自訂機密資訊類型。
-ms.openlocfilehash: e3735458f3259478a7df36bb3c6ddbc4a5fed719
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7ba807dce8b1d67280aeab929901327b7bfe03ef
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288500"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908531"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 建立自訂機密資訊類型
 
@@ -350,7 +350,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
 
 以前您可能使用 Exchange Online PowerShell 以匯入 DLP 的自訂機密資訊類型。 現在您的自訂機密資訊類型可在 Exchange 系統管理中心和合規性中心使用。 自此增強功能起，您應使用合規性中心 PowerShell 來匯入您的自訂敏感性資訊類型，您再也無法從 Exchange PowerShell 匯入。 自訂機密資訊類型將繼續以與過去相同的方式運作，不過，要讓合規性中心的自訂機密資訊類型的變更顯示在 Exchange 系統管理中心，可能需要一個小時 (最多)。
   
-請注意，在合規性中心中，您使用的是 **[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** Cmdlet 上傳規則套件。 (以前，在 Exchange 系統管理中心中，您使用的是  **ClassificationRuleCollection**` cmdlet。) 
+請注意，在合規性中心中，您使用的是 **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** Cmdlet 上傳規則套件。 (以前，在 Exchange 系統管理中心中，您使用的是  **ClassificationRuleCollection**` cmdlet。) 
   
 ## <a name="upload-your-rule-package"></a>上傳您的規則套件
 
@@ -360,7 +360,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
   
 1. 使用 Unicode 編碼方式將它儲存為 .xml 檔。
     
-2. [連線到合規性中心 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771)。
+2. [連線到合規性中心 PowerShell](/powershell/exchange/exchange-online-powershell)。
     
 3. 使用下列語法：
 
@@ -374,20 +374,20 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
    New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte -ReadCount 0)
    ```
 
-   如需詳細的語法和參數資訊，請參閱 [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)。
+   如需詳細的語法和參數資訊，請參閱 [New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)。
 
    > [!NOTE]
    > 套件支援的規則數量上限為 10 個，但每個套件可以包含多個敏感性資訊類型的定義。
 
 4. 若要確認您已成功建立新的機密資訊類型，請執行下列任一步驟：
 
-   - 執行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) Cmdlet 來驗證新的規則套件，列於：
+   - 執行 [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) Cmdlet 來驗證新的規則套件，列於：
 
      ```powershell
      Get-DlpSensitiveInformationTypeRulePackage
      ``` 
 
-   - 執行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) Cmdlet 來驗證機密資訊類型，列於：
+   - 執行 [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) Cmdlet 來驗證機密資訊類型，列於：
 
      ```powershell
      Get-DlpSensitiveInformationType
@@ -395,7 +395,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
 
      針對自訂敏感資訊類型，Publisher 屬性值將為 Microsoft Corporation 以外的值。
 
-   - 將 \<Name\> 取代為機密資訊類型的 [名稱] 值（例如：員工識別碼），然後執行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet:
+   - 將 \<Name\> 取代為機密資訊類型的 [名稱] 值（例如：員工識別碼），然後執行 [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet:
 
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -429,11 +429,13 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
     
   例如，"(xx)\*" 和 "(xx)+" 不會通過驗證。
   
-- 關鍵字長度最多為 50 個字元。  如果您的群組內有關鍵字超出此限制，建議的解決方案是建立一組字詞，做為[關鍵字字典](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary)，並在檔案中用於比對的實體或 idMatch 部分的 XML 結構內參考關鍵字字典的 GUID。
+- 關鍵字長度最多為 50 個字元。  如果您的群組內有關鍵字超出此限制，建議的解決方案是建立一組字詞，做為[關鍵字字典](./create-a-keyword-dictionary.md)，並在檔案中用於比對的實體或 idMatch 部分的 XML 結構內參考關鍵字字典的 GUID。
 
 - 每個自訂敏感性資訊類型總計最多可以有 2048 個關鍵字。
 
-- 在單一租用戶中，關鍵字字典的大小上限為 100 KB。 在建立自訂敏感性資訊類型時，請視需要盡情參照同一字典。 請先在敏感性資訊類型中建立自訂關鍵字清單，並使用關鍵字字典（如果關鍵字清單中有超過 2048 個關鍵字，或關鍵字長度超過 50 個字元）。
+- 在單一租用戶中，關鍵字字典的大小上限為 1 MB。 在建立自訂敏感性資訊類型時，請視需要盡情參照同一字典。 請先在敏感性資訊類型中建立自訂關鍵字清單，並使用關鍵字字典（如果關鍵字清單中有超過 2048 個關鍵字，或關鍵字長度超過 50 個字元）。
+
+- 租用戶中最多允許 50 個以關鍵字字典為基礎的敏感性資訊類型。
 
 - 請確定每個 Entity 元素都包含 recommendedConfidence 屬性。
 
@@ -453,7 +455,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
 
 Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資訊。 每次上傳 SharePoint Online 和商務用 OneDrive 網站中的內容時，系統即會重新進行編目。 但是，若要在所有現有內容中識別您的新自訂機密資訊類型，該內容必須重新進行編目。
   
-在 Microsoft 365 中，您無法手動要求對整個租用戶重新編目，但是您可以為網站集合、清單或文件庫這麼做，請參閱[手動要求對網站、文件庫或清單進行編目和重新編製索引](https://docs.microsoft.com/sharepoint/crawl-site-content)。
+在 Microsoft 365 中，您無法手動要求對整個租用戶重新編目，但是您可以為網站集合、清單或文件庫這麼做，請參閱[手動要求對網站、文件庫或清單進行編目和重新編製索引](/sharepoint/crawl-site-content)。
   
 ## <a name="remove-a-custom-sensitive-information-type"></a>移除自訂機密資訊類型
 
@@ -466,9 +468,9 @@ Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資
 
 - **移除自訂規則套件及其包含的所有自訂機密資訊類型**：本節會描述此方法。
 
-1. [連線到合規性中心 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771)。
+1. [連線到合規性中心 PowerShell](/powershell/exchange/exchange-online-powershell)。
 
-2. 若要移除自訂規則套件，請使用 [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage) Cmdlet：
+2. 若要移除自訂規則套件，請使用 [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage) Cmdlet：
 
    ```powershell
    Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
@@ -482,17 +484,17 @@ Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資
    Remove-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
    ```
 
-   如需詳細的語法和參數資訊，請參閱 [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage)。
+   如需詳細的語法和參數資訊，請參閱 [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage)。
 
 3. 若要確認您已成功移除自訂機密資訊類型，請執行下列任一步驟：
 
-   - 執行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) Cmdlet，並驗證規則套件，不再列於：
+   - 執行 [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) Cmdlet，並驗證規則套件，不再列於：
 
      ```powershell
      Get-DlpSensitiveInformationTypeRulePackage
      ```
 
-   - 執行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) Cmdlet，並驗證不再列出已移除之規則套件中的機密資訊類型：
+   - 執行 [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) Cmdlet，並驗證不再列出已移除之規則套件中的機密資訊類型：
 
      ```powershell
      Get-DlpSensitiveInformationType
@@ -500,7 +502,7 @@ Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資
 
      針對自訂機密資訊類型，Publisher 屬性值將為 Microsoft Corporation 以外的值。
 
-   - 將 \<Name\> 取代為機密資訊類型的 [名稱] 值（例如：員工識別碼），然後執行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet，以驗證不再列出機密資訊類型：
+   - 將 \<Name\> 取代為機密資訊類型的 [名稱] 值（例如：員工識別碼），然後執行 [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet，以驗證不再列出機密資訊類型：
 
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -516,14 +518,14 @@ Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資
 
 3. 將更新的 XML 檔匯入至現有的規則套件。
 
-若要連線到合規性中心 PowerShell，請參閱[連線到合規性中心 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771)。
+若要連線到合規性中心 PowerShell，請參閱[連線到合規性中心 PowerShell](/powershell/exchange/exchange-online-powershell)。
 
 ### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>步驟 1：將現有規則套件匯出至 XML 檔
 
 > [!NOTE]
 > 如果您有 XML 檔的複本 (例如，您剛建立並匯入它)，則可以跳到下一個步驟來修改 XML 檔。
 
-1. 如果您不清楚，請執行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) Cmdlet 來尋找自訂規則套件的名稱：
+1. 如果您不清楚，請執行 [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtype) Cmdlet 來尋找自訂規則套件的名稱：
 
    ```powershell
    Get-DlpSensitiveInformationTypeRulePackage
@@ -532,7 +534,7 @@ Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資
    > [!NOTE]
    > 包含內建敏感性資訊類型的內建規則套件稱為 Microsoft 規則套件。 此規則套件名為 Microsoft.SCCManaged.CustomRulePack，其中包含您已在合規性中心 UI 中建立的自訂機密資訊類型。
 
-2. 使用 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) Cmdlet，將自訂規則套件儲存至變數：
+2. 使用 [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) Cmdlet，將自訂規則套件儲存至變數：
 
    ```powershell
    $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
@@ -544,7 +546,7 @@ Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資
    $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
    ```
 
-3. 請使用 [Set-Content](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/set-content?view=powershell-6) Cmdlet 將自訂規則套件匯出至 XML 檔：
+3. 請使用 [Set-Content](/powershell/module/microsoft.powershell.management/set-content?view=powershell-6) Cmdlet 將自訂規則套件匯出至 XML 檔：
 
    ```powershell
    Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
@@ -562,13 +564,13 @@ Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資
 
 #### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>步驟 3：將更新的 XML 檔匯入至現有的規則套件。
 
-若要更新的 XML 重新匯入現有規則套件，請使用 [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) Cmdlet：
+若要更新的 XML 重新匯入現有規則套件，請使用 [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) Cmdlet：
 
 ```powershell
 Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
 ```
 
-如需詳細的語法和參數資訊，請參閱 [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage)。
+如需詳細的語法和參數資訊，請參閱 [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage)。
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>參考：規則套件 XML 結構描述定義
 

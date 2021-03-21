@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 782c4fdda7e515d921063937f59b199510beaf08
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 41716fecd0c70c99fd61b090421cb3dc0277cb48
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838609"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919549"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 當您從 Microsoft 365 合規性中心[發佈](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)敏感度標籤後，這些標籤會開始顯示在 Office 應用程式中，讓使用者在建立或編輯資料時分類及保護資料。
 
@@ -35,20 +35,20 @@ ms.locfileid: "50838609"
 
 若要使用 Windows 和 Mac 版 Office 桌面應用程式內建的敏感度標籤，您必須使用 Office 訂閱版本。 此標籤用戶端不支援獨立版本的 Office，例如 Office 2016 或 Office 2019。
 
-若要使用 Windows 電腦上這些獨立版 Office 的敏感度標籤，請安裝[Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) (部分機器翻譯)。
+若要使用 Windows 電腦上這些獨立版 Office 的敏感度標籤，請安裝[Azure 資訊保護統一標籤用戶端](/azure/information-protection/rms-client/aip-clientv2) (部分機器翻譯)。
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>在應用程式中支援敏感度標籤功能
 
 針對每個功能，下表列出使用內建標籤支援敏感度標籤所需的最低 Office 版本。 或者，如果標籤功能為公開預覽，或正在審查中以用於將來版本。 請使用 [Microsoft 365 藍圖](https://aka.ms/MIPC/Roadmap)，以取得有關未來版本的詳細資料。
 
-新版 Office 應用程式會在不同時間提供給不同的更新通道使用。 如需詳細資訊，包括如何設定更新通道，以便測試您感興趣的新標籤功能，請參閱 [Microsoft 365 Apps更新通道的概觀](https://docs.microsoft.com/DeployOffice/overview-update-channels)。 表格中不包含個人預覽版的新功能，但您可以提名您的組織參加 [Microsoft 資訊保護個人預覽版計畫](https://aka.ms/mip-preview)，以加入這些預覽。
+新版 Office 應用程式會在不同時間提供給不同的更新通道使用。 如需詳細資訊，包括如何設定更新通道，以便測試您感興趣的新標籤功能，請參閱 [Microsoft 365 Apps更新通道的概觀](/DeployOffice/overview-update-channels)。 表格中不包含個人預覽版的新功能，但您可以提名您的組織參加 [Microsoft 資訊保護個人預覽版計畫](https://aka.ms/mip-preview)，以加入這些預覽。
 
 > [!NOTE]
-> Office 應用程式的更新通道名稱最近已變更。 例如，每月通道現在稱為目前通道，而 Office 測試人員現在稱為 Beta 版通道。 如需詳細資訊，請參閱 [Microsoft 365 Apps 更新通道的變更](https://docs.microsoft.com/deployoffice/update-channels-changes) (部分機器翻譯)。
+> Office 應用程式的更新通道名稱最近已變更。 例如，每月通道現在稱為目前通道，而 Office 測試人員現在稱為 Beta 版通道。 如需詳細資訊，請參閱 [Microsoft 365 Apps 更新通道的變更](/deployoffice/update-channels-changes) (部分機器翻譯)。
 
 iOS 版 Office 和 Android 版 Office：敏感度標籤內建於 [Office 應用程式](https://www.microsoft.com/zh-TW/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)中。
 
-當您安裝 Azure 資訊保護統一標籤用戶端 (僅在 Windows 電腦上執行) 後，可以使用其他功能。 如需詳細資訊，請參閱[比較 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers) (部分機器翻譯)。
+當您安裝 Azure 資訊保護統一標籤用戶端 (僅在 Windows 電腦上執行) 後，可以使用其他功能。 如需詳細資訊，請參閱[比較 Windows 電腦的標籤用戶端](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers) (部分機器翻譯)。
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Word、Excel 和 PowerPoint 中的敏感度標籤功能
 
@@ -114,33 +114,48 @@ Office 內建標籤用戶端會從下列系統管理中心下載敏感度標籤�
 
 2. 將 **[在 Office 中使用 [敏感度] 功能以套用並檢視敏感度標籤]** 設為 **[0]**。 
  
-使用群組原則或使用 [Office 雲端原則服務](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)來部署此設定。 Office 應用程式重新啟動後，此設定即會生效。
+使用群組原則或使用 [Office 雲端原則服務](/DeployOffice/overview-office-cloud-policy-service)來部署此設定。 Office 應用程式重新啟動後，此設定即會生效。
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 內建標籤用戶端和 Azure 資訊保護用戶端
 
-如果使用者已安裝其中一個 Azure 資訊保護用戶端 ([統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)或[傳統用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client))，預設會關閉其 Office 應用程式中的內建標籤用戶端。 
+如果使用者已安裝其中一個 Azure 資訊保護用戶端 ([統一標籤用戶端](/azure/information-protection/rms-client/aip-clientv2)或[傳統用戶端](/azure/information-protection/rms-client/aip-client))，預設會關閉其 Office 應用程式中的內建標籤用戶端。 
 
-若要使用內建標籤而非適用於 Office 應用程式的 Azure 資訊保護用戶端，請使用上一節的指示，但請將群組原則設定 **[在 Office 中使用 [敏感度] 功能以套用並檢視敏感度標籤]** 設定為 **[1]**。 
+若要使用內建標籤，而非適用於 Office 應用程式的 Azure 資訊保護用戶端，建議您使用群組原則設定 **受控增益集清單**，如同[由於 Office 2013 和 Office 2016 程式的群組原則設定而未載入任何增益集](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)所記載。
 
-或者，停用或移除 Office 增益集：**Azure 資訊保護**。 此方法適用於單一電腦和臨機測試。 如需指示，請參閱[在 Office 程式中檢視、管理及安裝增益集](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
+針對 Microsoft Word 2016、Excel 2016、PowerPoint 2016 和 Outlook 2016，為 Azure 資訊保護用戶端指定下列程式設計識別碼 (ProgID)，並且將選項設定為 [**0：增益集一律停用 (封鎖)**]
 
-當您停用或移除此 Office 增益集後，Azure 資訊保護用戶端會維持安裝狀態，以便您可以繼續在 Office 應用程式外為檔案套用標籤。 例如，使用 [檔案總管] 或 PowerShell。
+|應用程式  |ProgID  |
+|---------|---------|
+|Word     |     `MSIP.WordAddin`    |
+|Excel     |  `MSIP.ExcelAddin`       |
+|PowerPoint     |   `MSIP.PowerPointAddin`      |
+|Outlook | `MSIP.OutlookAddin` |
+| | | 
 
-有關 Azure 資訊保護用戶端和 Office 內建標籤用戶端支援哪些功能的詳細資訊，請參閱 Azure 資訊保護文件中的[選擇您的 Windows 標籤解決方案](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) (部分機器翻譯)。
+使用群組原則或使用 [Office 雲端原則服務](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)來部署此設定。
+
+> [!NOTE]
+> 如果您使用群組原則設定 [**在 Office 中使用敏感性功能以套用並檢視敏感性標籤**]，並且將這個選項設定為 [**1**]，有時候 Azure 資訊保護用戶端可能仍然會在 Office 應用程式中載入。 防止增益集在每個應用程式中載入，以防止發生這種情況。
+
+或者，您可以從 Word、Excel、PowerPoint 和 Outlook 互動地停用或移除 **Microsoft Azure 資訊保護** Office 增益集。 此方法適用於單一電腦和臨機測試。 如需指示，請參閱[在 Office 程式中檢視、管理及安裝增益集](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
+
+無論您選擇哪種方法，變更都是在 Office 應用程式重新啟動時生效。 藉由停用或移除此 Office 增益集後，Azure 資訊保護用戶端會在電腦上維持安裝狀態，以便您可以繼續在 Office 應用程式外為檔案套用標籤。 例如，使用 [檔案總管] 或 PowerShell。
+
+有關 Azure 資訊保護用戶端和 Office 內建標籤用戶端支援哪些功能的詳細資訊，請參閱 Azure 資訊保護文件中的[選擇您的 Windows 標籤解決方案](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) (部分機器翻譯)。
 
 ## <a name="office-file-types-supported"></a>支援的 Office 檔案類型
 
 具有 Word、Excel 和 PowerPoint 檔案內建標籤的 Office 應用程式支援 Open XML 格式 (例如 .docx 和 .xlsx)，但不支援 Microsoft Office 97-2003 格式 (例如 .doc 和 .xls)、Open Document 格式 (例如 .odt 和 .ods) 或其他格式。 當內建標籤不支援檔案類型時，在 Office 應用程式中就無法使用 **[敏感度]** 按鈕。
 
-Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Office 97-2003 格式。 如需詳細資訊，請參閱該用戶端系統管理指南中的 [Azure 資訊保護統一標籤用戶端支援的檔案類型](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) (部分機器翻譯)。
+Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Office 97-2003 格式。 如需詳細資訊，請參閱該用戶端系統管理指南中的 [Azure 資訊保護統一標籤用戶端支援的檔案類型](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) (部分機器翻譯)。
 
 若為其他標籤解決方案，請查看支援檔案類型的文件。
 
 ## <a name="protection-templates-and-sensitivity-labels"></a>保護範本和敏感度標籤
 
-當您使用內建標籤時，在 Office 應用程式中看不到系統管理員定義的[保護範本](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)，例如您為 Office 365 郵件加密定義的範本。 這種簡化的體驗反映出，不需要選取保護範本，因為已啟用加密的敏感度標籤會包含相同的設定。
+當您使用內建標籤時，在 Office 應用程式中看不到系統管理員定義的[保護範本](/azure/information-protection/configure-policy-templates)，例如您為 Office 365 郵件加密定義的範本。 這種簡化的體驗反映出，不需要選取保護範本，因為已啟用加密的敏感度標籤會包含相同的設定。
 
-如果您需要將現有的保護範本轉換為標籤，請使用 Azure 入口網站並遵照下列指示：[將範本轉換為標籤](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels) (部分機器翻譯)。
+如果您需要將現有的保護範本轉換為標籤，請使用 Azure 入口網站並遵照下列指示：[將範本轉換為標籤](/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels) (部分機器翻譯)。
 
 ## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>資訊版權管理 (IRM) 選項和敏感度標籤
 
@@ -157,7 +172,7 @@ Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 - 使用者將 **一般** 標籤套用至文件，且此標籤未設定為套用加密。 然後，此使用者手動設定 IRM 設定，以限制文件的存取。 結果是，文件雖標籤為 **一般**，但也套用了加密，因此某些使用者無法如預期開啟該文件。
 
-如果文件或電子郵件已套用標籤，但內容尚未加密，則使用者可以執行任何這些動作，或者使用者擁有匯出或完全控制的[使用權限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。 
+如果文件或電子郵件已套用標籤，但內容尚未加密，則使用者可以執行任何這些動作，或者使用者擁有匯出或完全控制的[使用權限](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。 
 
 為了獲得更一致的標籤體驗以及有意義的報告，請提供適當的標籤和指引，讓使用者只透過套用標籤來保護文件。 例如：
 
@@ -187,7 +202,7 @@ Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 ## <a name="sensitivity-label-compatibility"></a>敏感度標籤相容性
 
-**使用 RMS 啟發式應用程式**：如果您在不支援敏感度標籤的 [RMS 啟發式應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)中開啟已套用標籤和加密的文件或電子郵件，該應用程式仍然會強制執行加密和版權管理。
+**使用 RMS 啟發式應用程式**：如果您在不支援敏感度標籤的 [RMS 啟發式應用程式](/azure/information-protection/requirements-applications#rms-enlightened-applications)中開啟已套用標籤和加密的文件或電子郵件，該應用程式仍然會強制執行加密和版權管理。
 
 **使用 Azure 資訊保護用戶端**：您可以使用 Azure 資訊保護用戶端，來檢視和變更您使用 Office 內建標籤用戶端套用到文件和電子郵件的敏感度標籤，反之亦然。
 
@@ -211,7 +226,7 @@ Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 除了限制貴組織中使用者的存取權之外，您還可以將存取權延伸至在 Azure Active Directory 中擁有帳戶的其他使用者。 不過，如果您的組織使用條件式存取原則，請參閱[下一節](#conditional-access-policies)了解其他考量事項。
 
-使用者成功驗證後，所有 Office 應用程式和其他[RMS 啟發式應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)就可以開啟加密的文件。 
+使用者成功驗證後，所有 Office 應用程式和其他[RMS 啟發式應用程式](/azure/information-protection/requirements-applications#rms-enlightened-applications)就可以開啟加密的文件。 
 
 如果外部使用者在 Azure Active Directory 中沒有帳戶，他們可以使用您租用戶中的來賓帳戶進行驗證。 當您[在 SharePoint 和 OneDrive 中啟用 Office 檔案的敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)，這些來賓帳戶也可以用來存取 SharePoint 或 OneDrive 中的共用文件：
 
@@ -219,11 +234,11 @@ Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Offic
     
     此選項的優點是您可以在加密設定中指定特定使用者的電子郵件地址，以限制特定使用者的存取權和權限。 缺點是會有帳戶建立與標籤設定協調的系統管理額外負荷。
 
-- 另一個選項是使用 [SharePoint 和 OneDrive 與 Azure AD B2B (預覽) 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)，讓使用者在共用連結時自動建立來賓帳戶。
+- 另一個選項是使用 [SharePoint 和 OneDrive 與 Azure AD B2B (預覽) 整合](/sharepoint/sharepoint-azureb2b-integration-preview)，讓使用者在共用連結時自動建立來賓帳戶。
     
     此選項的優點是系統管理額外負荷最低，因為帳戶會自動建立，而且標籤設定更簡單。 針對此案例，您必須選取 [[新增任何驗證使用者]](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) 加密選項，因為您事先不會知道電子郵件地址。 缺點是此設定無法讓您限制特定使用者的存取和使用權。
 
-當外部使用者使用 Windows 和 Microsoft 365 Apps ([之前稱為 Office 365 應用程式](https://docs.microsoft.com/deployoffice/name-change)) 或 Office 2019 獨立版本時，也可以使用 Microsoft 帳戶開啟加密的文件。 最近也支援其他平台，因此也支援在 macOS (Microsoft 365 Apps 版本 16.42+)、Android (版本 16.0.13029+) 和 iOS (版本 2.42+) 上使用 Microsoft 帳戶開啟加密文件。 例如，貴組織的使用者與組織外部的使用者共用加密文件，而加密設定指定外部使用者的 Gmail 電子郵件地址。 此外部使用者可以使用其 Gmail 電子郵件地址建立自己的 Microsoft 帳戶。 然後，使用這個帳戶登入之後，他們就可以根據指定的使用限制開啟並編輯文件。 如需此案例的逐步指示範例，請參閱[開啟及編輯受保護的文件](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document) (部分機器翻譯)。
+當外部使用者使用 Windows 和 Microsoft 365 Apps ([之前稱為 Office 365 應用程式](/deployoffice/name-change)) 或 Office 2019 獨立版本時，也可以使用 Microsoft 帳戶開啟加密的文件。 最近也支援其他平台，因此也支援在 macOS (Microsoft 365 Apps 版本 16.42+)、Android (版本 16.0.13029+) 和 iOS (版本 2.42+) 上使用 Microsoft 帳戶開啟加密文件。 例如，貴組織的使用者與組織外部的使用者共用加密文件，而加密設定指定外部使用者的 Gmail 電子郵件地址。 此外部使用者可以使用其 Gmail 電子郵件地址建立自己的 Microsoft 帳戶。 然後，使用這個帳戶登入之後，他們就可以根據指定的使用限制開啟並編輯文件。 如需此案例的逐步指示範例，請參閱[開啟及編輯受保護的文件](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document) (部分機器翻譯)。
 
 > [!NOTE]
 > Microsoft 帳戶的電子郵件地址必須與指定來限制加密設定存取權限的電子郵件地址相符。
@@ -233,17 +248,17 @@ Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Offic
 不過，由於複寫延遲，在此案例不會立即建立自動來賓帳戶。 如果您在標籤加密設定中指定個人電子郵件地址，建議您在 Azure Active Directory 中建立對應的來賓帳戶。 然後讓這些使用者知道他們必須使用這個帳戶才能開啟貴組織的加密文件。
 
 > [!TIP]
-> 因為您不確定外部使用者是否會使用支援的 Office 用戶端應用程式，所以在建立來賓帳戶 (針對特定使用者) 之後或使用 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) (針對任何已驗證的使用者) 時，從 SharePoint 和 OneDrive 共用連結，是支援與外部使用者安全共同作業更可靠的方法。
+> 因為您不確定外部使用者是否會使用支援的 Office 用戶端應用程式，所以在建立來賓帳戶 (針對特定使用者) 之後或使用 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](/sharepoint/sharepoint-azureb2b-integration-preview) (針對任何已驗證的使用者) 時，從 SharePoint 和 OneDrive 共用連結，是支援與外部使用者安全共同作業更可靠的方法。
 
 ### <a name="conditional-access-policies"></a>條件式存取原則
 
-如果貴組織已實作 [Azure Active Directory 條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，請檢查那些原則的設定。 如果原則包含 **Microsoft Azure 資訊保護** 且該原則延伸至外部使用者，則這些外部使用者必須在您的租用戶中擁有來賓帳戶，即使他們在自己的租用戶中擁有 Azure AD 帳戶也是如此。
+如果貴組織已實作 [Azure Active Directory 條件式存取原則](/azure/active-directory/conditional-access/overview)，請檢查那些原則的設定。 如果原則包含 **Microsoft Azure 資訊保護** 且該原則延伸至外部使用者，則這些外部使用者必須在您的租用戶中擁有來賓帳戶，即使他們在自己的租用戶中擁有 Azure AD 帳戶也是如此。
 
 如果沒有這個來賓帳戶，他們無法開啟加密文件並會看到錯誤訊息。 訊息文字可能會通知他們，需要在租用戶中將他們的帳戶新增為外部使用者，此案例的錯誤指示是 **登出並使用其他 Azure Active Directory 使用者戶帳戶重新登入**。
 
 如果您無法為需要開啟文件 (該文件使用您的標籤加密) 的外部使用者，在租用戶中建立和設定來賓帳戶，您必須從條件式存取原則移除 Azure 資訊保護，或將外部使用者從該原則中排除。
 
-如需條件式存取和 Azure 資訊保護、敏感度標籤所使用的加密服務的詳細資訊，請參閱常見問題集：[我發現 Azure 資訊保護是列為條件式存取的可用雲端應用程式，這是怎麼運作的呢？](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work) (部分機器翻譯)
+如需條件式存取和 Azure 資訊保護、敏感度標籤所使用的加密服務的詳細資訊，請參閱常見問題集：[我發現 Azure 資訊保護是列為條件式存取的可用雲端應用程式，這是怎麼運作的呢？](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work) (部分機器翻譯)
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office 應用程式何時套用內容標記和加密
 
@@ -333,7 +348,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 > [!IMPORTANT]
 > 也稱為強制套用標籤，並非所有平台上的所有應用程式目前都支援 **要求使用者在電子郵件和文件中套用標籤** 原則設定。
 > 
-> [Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)支援強制套用標籤，且適用於 Office 應用程式內建的標籤，請參閱本頁[功能](#support-for-sensitivity-label-capabilities-in-apps)章節中的表格。
+> [Azure 資訊保護統一標籤用戶端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)支援強制套用標籤，且適用於 Office 應用程式內建的標籤，請參閱本頁[功能](#support-for-sensitivity-label-capabilities-in-apps)章節中的表格。
 
 選取此原則設定時，獲派原則的使用者必須在下列情況下選取並套用敏感度標籤：
 
