@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: b7943259d3a20cbf4fd6d8b0b57ca7c027e74d3f
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: 34cbea7199ed50de8e65a48f8087e6475fb41a50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084654"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926641"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 所有 Microsoft 資訊保護解決方案 (有時候縮寫為 MIP) 是使用[敏感度標籤](sensitivity-labels.md)來實作。 若要建立及發佈這些標籤，請前往標籤系統管理中心，例如 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)。 您也可以使用 Microsoft 365 安全性中心，或安全性與合規性中心。
 
@@ -60,7 +60,7 @@ ms.locfileid: "50084654"
     ![建立敏感度標籤](../media/create-sensitivity-label-full.png)
     
     > [!NOTE]
-    > 根據預設，租使用者沒有任何標籤，您必須建立它們。 範例圖片中的標籤會顯示 [從 Azure 資訊保護中遷移的](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) 預設標籤。
+    > 根據預設，租使用者沒有任何標籤，您必須建立它們。 範例圖片中的標籤會顯示 [從 Azure 資訊保護中遷移的](/azure/information-protection/configure-policy-migrate-labels) 預設標籤。
 
 3. 在 [定義此標籤的範圍 **]** 頁面上，選取的選項會決定您可以進行設定的標籤範圍，以及它們在發佈時顯示的位置：
     
@@ -70,7 +70,7 @@ ms.locfileid: "50084654"
     
     - 如果已選取 [群組和網站 **]**，則可以在此精靈中進行設定，以套用至 Microsoft 365 群組，以及 Teams 和 SharePoint 網站。 如果未選取此選項，精靈會顯示這些設定的第一頁，但是您無法設定，而且使用者無法為群組和網站選取標籤。
     
-    如需 **Azure Purview 資產 (預覽)** 範圍的相關資訊，請參閱 [在 Azure Purview 中自動為您的內容加上標籤](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
+    如需 **Azure Purview 資產 (預覽)** 範圍的相關資訊，請參閱 [在 Azure Purview 中自動為您的內容加上標籤](/azure/purview/create-sensitivity-label)。
 
 4. 按照標籤設定精靈的提示進行。
     
@@ -98,13 +98,13 @@ ms.locfileid: "50084654"
 
 ### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>安全性與合規性中心 PowerShell 的其他標籤設定
 
-您可以使用[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) 中的 [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label) Cmdlet 取得其他標籤設定。
+您可以使用[安全性與合規性中心 PowerShell](/powershell/exchange/scc-powershell) 中的 [Set-Label](/powershell/module/exchange/set-label) Cmdlet 取得其他標籤設定。
 
 例如：
 
 - 對跨國部署使用 *LocaleSettings* 參數，以便使用者能夠利用本地語言查看標籤名稱和工具提示。 [下列章節](#example-configuration-to-configure-a-sensitivity-label-for-different-languages)含有為法文、義大利文與德文指定標籤名稱和工具提示文字的範例設定。
 
-- 僅針對 Azure 資訊保護的整合式標籤用戶端，指定包括設定標籤色彩的[進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，並在套用標籤時套用自訂屬性。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤可用的進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)。
+- 僅針對 Azure 資訊保護的整合式標籤用戶端，指定包括設定標籤色彩的[進階設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，並在套用標籤時套用自訂屬性。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤可用的進階設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)。
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>設定不同語言敏感度標籤的設定範例
 
@@ -112,9 +112,9 @@ ms.locfileid: "50084654"
 
 由於這項設定，若使用者具有使用這些顯示語言的 Office 應用程式，則會以相同的語言查看其標籤名稱和工具提示。 同樣地，如果您已安裝 Azure 資訊保護的整合標籤用戶端，以在檔案瀏覽器中為檔案加上標籤，則擁有這些語言版本 Windows 的使用者就能在使用滑鼠右鍵進行標記時，以本地語言查看其標籤名稱和工具提示。
 
-針對需要支援的語言，請使用 Office [語言識別項](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) (又稱為語言標籤)，然後為標籤名稱和工具提示指定自己的翻譯。
+針對需要支援的語言，請使用 Office [語言識別項](/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) (又稱為語言標籤)，然後為標籤名稱和工具提示指定自己的翻譯。
 
-在 PowerShell 中執行命令之前，您必須先[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+在 PowerShell 中執行命令之前，您必須先[連線至安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 
 ```powershell
@@ -186,26 +186,26 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 這個按鈕會啟動 **[建立原則]** 精靈，這會讓您可以編輯要包含的標籤和標籤設定。 完成精靈時，任何變更都會自動複寫到選取的使用者和服務。
 
-當您使用在 Windows、macOS、iOS 和 Android 上適用於 Office 應用程式的內建標籤時，使用者可在四小時內查看新標籤，並在一小時內於網頁版 Office 中看到新標籤。 不過，對現有標籤所做的變更最多需 24 小時的時間，才能複製到所有使用者和服務。
+當您使用在 Windows、macOS、iOS 和 Android 上適用於 Office 應用程式的內建標籤時，使用者可在四小時內查看新標籤，並在一小時內當您重新整理瀏覽器時，於網頁版 Word、Excel 和 PowerPoint 中看到新標籤。 不過，對現有標籤所做的變更最多需 24 小時的時間，才能複製到所有使用者和服務。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>安全性與合規性中心 PowerShell 的其他標籤原則設定
 
-您可以使用[安全規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) 中的 [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) 指令取得其他標籤原則設定。
+您可以使用[安全規範中心 PowerShell](/powershell/exchange/scc-powershell) 中的 [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) 指令取得其他標籤原則設定。
 
-針對 Azure 資訊保護的 [整合式標籤] 用戶端，您可以指定[[進階設定]](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，其中包括為 Outlook 設定不同的預設標籤，以及在 Outlook 中實作可警告、證明或封鎖要傳送的電子郵件的快顯訊息。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤原則可用的進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)。
+針對 Azure 資訊保護的 [整合式標籤] 用戶端，您可以指定[[進階設定]](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，其中包括為 Outlook 設定不同的預設標籤，以及在 Outlook 中實作可警告、證明或封鎖要傳送的電子郵件的快顯訊息。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤原則可用的進階設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)。
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>將 PowerShell 用於敏感度標籤及其原則
 
-您現在可以使用 [安全規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell)，建立並設定您在標記系統管理中心看到的所有設定。 這表示除了將 PowerShell 用於標籤系統管理中心的設定以外，您現在可以全面編寫敏感度標籤和敏感度標籤原則的建立與維護腳本。 
+您現在可以使用 [安全規範中心 PowerShell](/powershell/exchange/scc-powershell)，建立並設定您在標記系統管理中心看到的所有設定。 這表示除了將 PowerShell 用於標籤系統管理中心的設定以外，您現在可以全面編寫敏感度標籤和敏感度標籤原則的建立與維護腳本。 
 
 如需支援的參數和值，請參閱下列文件：
 
-- [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label)
-- [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy)
-- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label)
-- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy)
+- [New-Label](/powershell/module/exchange/new-label)
+- [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy)
+- [Set-Label](/powershell/module/exchange/set-label)
+- [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy)
 
-如果您需要為刪除敏感度標籤或敏感度標籤原則編寫腳本，您也可以使用 [移除標籤](https://docs.microsoft.com/powershell/module/exchange/remove-label) 和 [移除標籤原則](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy)。 不過，在您刪除敏感度標籤前，請務必先閱讀下列章節。
+如果您需要為刪除敏感度標籤或敏感度標籤原則編寫腳本，您也可以使用 [移除標籤](/powershell/module/exchange/remove-label) 和 [移除標籤原則](/powershell/module/exchange/remove-labelpolicy)。 不過，在您刪除敏感度標籤前，請務必先閱讀下列章節。
 
 ## <a name="removing-and-deleting-labels"></a>移除並刪除標籤
 
@@ -219,7 +219,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 相比之下，當您刪除標籤時：
 
-- 如果標籤已套用加密，則會封存基礎保護範本，以便仍可開啟先前受保護的內容。 由於此已封存保護範本，您將無法使用相同名稱建立新標籤。 雖然您可以使用 [PowerShell](https://docs.microsoft.com/powershell/module/aipservice/remove-aipservicetemplate) 來刪除保護範本，但請不要這麼做，除非您確定不需要開啟使用封存範本加密的內容。
+- 如果標籤已套用加密，則會封存基礎保護範本，以便仍可開啟先前受保護的內容。 由於此已封存保護範本，您將無法使用相同名稱建立新標籤。 雖然您可以使用 [PowerShell](/powershell/module/aipservice/remove-aipservicetemplate) 來刪除保護範本，但請不要這麼做，除非您確定不需要開啟使用封存範本加密的內容。
 
 - 針對桌面應用程式：中繼資料中的標籤資訊會保留，但由於無法再將標籤識別碼標示為名稱，使用者就不會看到已套用的標籤名稱 (例如，在狀態列上)，因此使用者會假設內容未加上標籤。 如果標籤已套用加密，則會保留加密，而在內容開啟時使用者仍可看到目前封存保護範本的名稱與描述。
 

@@ -1,10 +1,8 @@
 ---
-title: >
-  Microsoft 雲端供應項目的訂用帳戶、授權、帳戶及租用戶
+title: Microsoft 雲端供應項目的訂用帳戶、授權、帳戶及租用戶
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -22,15 +20,14 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: 了解所有 Microsoft 雲端產品上的組織、訂閱、授權、使用者帳戶、租用戶之間的關係。
-ms.openlocfilehash: c48e2ecc321f4b6e06ced13f029e344faf12650b
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446028"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909511"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft 雲端供應項目的訂用帳戶、授權、帳戶及租用戶
-
 
 Microsoft 提供組織、訂閱、授權、使用者帳戶的階層，讓所有雲端產品都能使用一致的身分識別和計費方式：
   
@@ -68,7 +65,11 @@ Microsoft 提供組織、訂閱、授權、使用者帳戶的階層，讓所有�
 **圖 2：SaaS 型訂用帳戶中的組織授權**
 
 ![Microsoft SaaS 型雲端供應項目訂用帳戶中多個授權的範例。](../media/Subscriptions/Subscriptions-Fig2.png)
-  
+
+>[!Note]
+>一個安全性最佳作法是使用獲指派用於系統管理功能的特定角色的個別使用者帳戶。 這些專用的系統管理員帳戶不需要獲指派其所管理雲端服務的授權。 例如，SharePoint 系統管理員帳戶不需要獲指派 Microsoft 365 授權。
+>
+
 使用 Azure PaaS 型雲端服務時，服務費用已包含軟體授權。
   
 使用 Azure IaaS  型虛擬機器時，可能會需要額外的授權來使用安裝在虛擬機器映像上的軟體或應用程式。部分虛擬機器映像已安裝軟體的授權版本，費用是由伺服器的每一分鐘費率涵蓋。例如 SQL Server 2014 和 SQL Server 2016 的虛擬機器映像。 
@@ -108,7 +109,6 @@ Azure AD 租用戶是包含帳戶和群組之 Azure AD 的特定執行個體。 
 以下是組織、訂用帳戶、授權、使用者帳戶的關係範例：
   
 - 組織由其公用網域名稱加以識別。
-
     
   - Microsoft 365 E3 訂閱包含使用者授權。
     
@@ -117,7 +117,6 @@ Azure AD 租用戶是包含帳戶和群組之 Azure AD 的特定執行個體。 
     Dynamics 365 訂用帳戶包含使用者授權。
     
     多個 Azure 訂用帳戶。
-
     
   - 組織的使用者帳戶在同一 Azure AD 租用戶中。
     
@@ -157,7 +156,7 @@ Azure AD 租用戶是包含帳戶和群組之 Azure AD 的特定執行個體。 
     
 3. 在 **[新增訂用帳戶]** 頁面上，選取供應項目，並填寫付款資訊和合約。
     
-如果您已另外購買 Azure 與 Microsoft 365 訂閱，並想要從您的 Azure 訂閱存取 Microsoft 365 Azure AD 租用戶，請參閱[將現有的 Azure 訂閱新增至您的 Azure Active Directory 租用戶](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)中的指示。
+如果您已另外購買 Azure 與 Microsoft 365 訂閱，並想要從您的 Azure 訂閱存取 Microsoft 365 Azure AD 租用戶，請參閱[將現有的 Azure 訂閱新增至您的 Azure Active Directory 租用戶](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)中的指示。
  
 ## <a name="see-also"></a>另請參閱
 
@@ -170,4 +169,3 @@ Azure AD 租用戶是包含帳戶和群組之 Azure AD 的特定執行個體。 
 ## <a name="next-step"></a>下一步
 
 [評定 Microsoft 365 網路連線](assessing-network-connectivity.md)
-  
