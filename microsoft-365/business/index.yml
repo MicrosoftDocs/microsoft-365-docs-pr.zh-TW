@@ -12,12 +12,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: ed25671989668d09f7ad3fcc233a6cf8e1e0f1fc
-  ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+  ms.openlocfilehash: 9364b8b46e413d675876a41bd775b063e0a2fafb
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 01/26/2021
-  ms.locfileid: "49988053"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50913267"
 productDirectory:
   title: 使用 Microsoft 365 商務進階版保護遠端工作
   items:
@@ -31,8 +31,8 @@ productDirectory:
     url: https://aka.ms/SMBSecurityKit
   - title: 新功能？
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 現已包含在 Microsoft 365 商務進階版中！
-    url: https://aka.ms/aadp1smbblog
+    summary: Microsoft 365 商務進階版中現已提供防毒管理和通用列印。
+    url: https://aka.ms/M365BPQ1Update
   - title: 加入合作夥伴網路研討會系列
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
     summary: 透過 Microsoft 365 商務進階版的受管服務加速企業成長。
@@ -47,10 +47,10 @@ conceptualContent:
     - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
       text: Microsoft 365 商務進階版訓練
-    - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
+    - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
       text: 比較方案
-    - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+    - url: /office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
       itemType: reference
       text: 服務描述
     - url: support/microsoft-365-business-faqs.yml
@@ -64,7 +64,7 @@ conceptualContent:
     - url: secure-win-10-pcs.md
       itemType: how-to-guide
       text: 2. 保護您的電腦
-    - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
+    - url: /MicrosoftTeams/get-started-with-teams-quick-start
       itemType: video
       text: 3. 設定 Teams
     - url: https://support.microsoft.com/office/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
@@ -95,51 +95,51 @@ conceptualContent:
       text: 價值計算工具
   - title: 管理使用者
     links:
-    - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
+    - url: ../admin/add-users/add-users.md
       itemType: how-to-guide
       text: 新增使用者
-    - url: https://docs.microsoft.com/office365/admin/add-users/remove-former-employee
+    - url: /office365/admin/add-users/remove-former-employee
       itemType: how-to-guide
       text: 移除使用者
-    - url: https://docs.microsoft.com/office365/admin/add-users/reset-passwords
+    - url: /office365/admin/add-users/reset-passwords
       itemType: how-to-guide
       text: 重設某人的密碼
     footerLink:
-      url: https://docs.microsoft.com/office365/admin/admin-home
+      url: /office365/admin/admin-home
       text: 查看更多
   - title: 管理威脅
     links:
-    - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
+    - url: ../security/office-365-security/office-365-atp.md
       itemType: overview
       text: 進階威脅防護
-    - url: set-up-mfa.md
+    - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
       itemType: how-to-guide
       text: 設定 MFA
-    - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
+    - url: ./increase-threat-protection.md#protect-against-ransomware
       itemType: how-to-guide
       text: 防範勒索軟體
-    - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
+    - url: /azure/active-directory/conditional-access/overview
       itemType: overview
       text: 條件式存取
     footerLink:
-      url: https://docs.microsoft.com/office365/admin/admin-home
+      url: /office365/admin/admin-home
       text: 查看更多
   - title: 管理資料
     links:
-    - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
+    - url: ../compliance/data-loss-prevention-policies.md
       itemType: overview
       text: 資料外洩防護
     - url: https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
       itemType: how-to-guide
       text: 傳送加密的電子郵件
-    - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
+    - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
       itemType: how-to-guide
       text: 設定電子郵件保留
     - url: https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
       itemType: video
       text: 建立及使用敏感度標籤
     footerLink:
-      url: https://docs.microsoft.com/microsoft-365/compliance/
+      url: ../compliance/index.yml
       text: 查看更多
   - title: 管理裝置
     links:
@@ -152,7 +152,7 @@ conceptualContent:
     - url: reset-devices-to-factory-settings.md
       itemType: how-to-guide
       text: 抹除並重設
-    - url: https://docs.microsoft.com/intune/index
+    - url: /intune/index
       itemType: overview
       text: Intune
     - url: manage-windows-devices.md
@@ -161,7 +161,7 @@ conceptualContent:
     - url: access-resources.md
       itemType: how-to-guide
       text: 設定 Azure AD Join
-    - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
+    - url: /windows/deployment/windows-autopilot/windows-autopilot
       text: Windows Autopilot
       itemType: overview
     footerLink:
@@ -169,17 +169,17 @@ conceptualContent:
       text: 查看更多
   - title: 監視安全性
     links:
-    - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
+    - url: ../security/mtp/microsoft-secure-score.md
       itemType: how-to-guide
       text: 安全分數
-    - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
+    - url: /intune/apps/app-protection-policies-monitor
       itemType: overview
       text: Inunte 應用程式保護原則報表
-    - url: https://docs.microsoft.com/microsoft-365/enterprise/view-service-health
+    - url: ../enterprise/view-service-health.md
       itemType: how-to-guide
       text: 健康情況監視警示
     footerLink:
-      url: https://docs.microsoft.com/microsoft-365/security/
+      url: ../security/index.yml
       text: 查看更多
   - title: 支援與社群
     links:
