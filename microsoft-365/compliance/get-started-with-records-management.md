@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要適用于 Microsoft 365 的記錄管理解決方案，以管理法律、企業或法規責任的高價值內容，但不確定要從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: 0dc0258ed53aa07df778f5d0883b02b7635f50d8
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: a757cabf13e85731bd16ccd84f1eea3dbe7e432a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682720"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906005"
 ---
 # <a name="get-started-with-records-management"></a>開始使用記錄管理
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 準備好開始使用 Microsoft 365 中的記錄管理解決方案，著手管理貴組織的法律、商務或法規責任的高價值內容嗎？ 使用下列高層指導方針以開始進行：
 
@@ -45,7 +45,7 @@ ms.locfileid: "49682720"
 
 許多不同的訂閱都支援記錄管理，以及使用者的授權需求取決於您所使用的功能。
 
-若要查看授權使用者使用 Microsoft 365 合規性功能的選項，請參閱 [Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。 針對記錄管理，請參閱 [記錄管理](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) 一節，以及相關的 PDF 或 Excel 下載功能層級授權需求。
+若要查看授權使用者使用 Microsoft 365 合規性功能的選項，請參閱 [Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 針對記錄管理，請參閱 [記錄管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) 一節，以及相關的 PDF 或 Excel 下載功能層級授權需求。
 
 ## <a name="permissions-required-for-records-management"></a>記錄管理所需的存取權限。
 
@@ -53,9 +53,9 @@ ms.locfileid: "49682720"
 
 對於唯讀角色，可以建立新的角色群組，並將 **[僅檢視記錄管理]** 角色添加到此群組。 
 
-如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)。
+如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 
-如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有在建立、設定、和套用聲明記錄及管理處置的保留標籤時，才需要求這些權限。 設定這些保留標籤的人員毋須存取內容。
 
@@ -86,6 +86,6 @@ ms.locfileid: "49682720"
 
 記錄管理的保留標籤會在 Microsoft 365 應用程式中顯示為 UI。 在您將保留標籤部署到生產網路前，請務必為使用者和您的技術支援部門提供指導方針。
 
-最有效的使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 保留標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861) (英文)。
+最有效的使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 保留標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
 
 您也會在以下章節中找到基本的使用者指示：[手動套用保留標籤](create-apply-retention-labels.md#manually-apply-retention-labels)。

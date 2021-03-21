@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 602b4b3abd2b07386ad130e4b2cd21bb593eee7e
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261570"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928071"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。例如，使用敏感度標籤的加密設定，您可以保護內容，以便：
 
@@ -49,9 +49,9 @@ ms.locfileid: "50261570"
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的運作方式
 
-加密使用來自 Azure 資訊保護的 Azure 版權管理服務 (Azure RMS)。 此保護解決方案使用加密、身分識別及授權原則。 若要深入了解，請參閱 Azure 資訊保護文件中的[什麼是 Azure 版權管理？](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)。 
+加密使用來自 Azure 資訊保護的 Azure 版權管理服務 (Azure RMS)。 此保護解決方案使用加密、身分識別及授權原則。 若要深入了解，請參閱 Azure 資訊保護文件中的[什麼是 Azure 版權管理？](/azure/information-protection/what-is-azure-rms)。 
 
-使用此加密解決方案時，**超級使用者** 功能可確保獲授權的人員和服務一律可以讀取和檢查已為組織加密的資料。 如有需要，您可以接著將加密移除或變更。 如需詳細資訊，請參閱[為 Azure 資訊保護和探索服務或資料復原設定超級使用者](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
+使用此加密解決方案時，**超級使用者** 功能可確保獲授權的人員和服務一律可以讀取和檢查已為組織加密的資料。 如有需要，您可以接著將加密移除或變更。 如需詳細資訊，請參閱[為 Azure 資訊保護和探索服務或資料復原設定超級使用者](/azure/information-protection/configure-super-users)。
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>如何設定用於加密的標籤
 
@@ -93,8 +93,8 @@ ms.locfileid: "50261570"
 
 請注意，在套用新標籤加密或移除原始加密的情況下，只有在套用標籤的使用者有支援此動作的使用權利或角色時，才會發生這種情況：
 
-- [使用權限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)匯出或完全控制。
-- [版權管理簽發者或版權管理擁有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)的角色，或[超級使用者](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
+- [使用權限](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)匯出或完全控制。
+- [版權管理簽發者或版權管理擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)的角色，或[超級使用者](/azure/information-protection/configure-super-users)。
 
 如果使用者沒有這些權限或角色中的一個，就無法套用標籤，因此會保留原始加密。 使用者會看到下列訊息：**您沒有對敏感度標籤進行變更所需的權限。請連絡內容的擁有者。**
 
@@ -141,7 +141,7 @@ ms.locfileid: "50261570"
 
 除了重新驗證外，還會重新評估原則和使用者群組成員資格。 這表示，如果上次使用者存取內容後，加密設定或群組成員資格發生變更，則這些使用者可能遇到相同的文件或電子郵件，卻有不同的存取結果。
 
-若要了解如何變更預設的 30 天設定，請參閱 [Rights Management 使用授權](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license)。
+若要了解如何變更預設的 30 天設定，請參閱 [Rights Management 使用授權](/azure/information-protection/configure-usage-rights#rights-management-use-license)。
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>將權限指派給特定使用者或群組
 
@@ -163,7 +163,7 @@ ms.locfileid: "50261570"
 
 - 任何已驗證的使用者。 選取此選項之前，請先確認您了解此設定的[需求與限制](#requirements-and-limitations-for-add-any-authenticated-users)。
 
-- Azure AD 中特定使用者或啟用電子郵件功能的安全性群組、通訊群組或 Microsoft 365 群組 ([先前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) (英文)。 Microsoft 365 群組可以有靜態或[動態的成員資格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) (部分機器翻譯)。 請注意，您無法使用 [Exchange 的 動態通訊群組](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) (部分機器翻譯)，因為此群組類型不會同步處理到 Azure AD，且您無法使用未啟用電子郵件功能的安全性群組。
+- Azure AD 中特定使用者或啟用電子郵件功能的安全性群組、通訊群組或 Microsoft 365 群組 ([先前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))。 Microsoft 365 群組可以有靜態或[動態的成員資格](/azure/active-directory/users-groups-roles/groups-create-rule) (部分機器翻譯)。 請注意，您無法使用 [Exchange 的 動態通訊群組](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) (部分機器翻譯)，因為此群組類型不會同步處理到 Azure AD，且您無法使用未啟用電子郵件功能的安全性群組。
 
 - 任何電子郵件地址或網域。 使用此選項來指定另一個組織中使用 Azure AD 的所有使用者，方法是輸入來自該組織的任何網域名稱。 您也可以針對社交提供者使用此選項，方法是輸入其網域名稱，例如 **gmail.com**、**hotmail.com** 或 **outlook.com**。
 
@@ -179,7 +179,7 @@ ms.locfileid: "50261570"
 此設定不會限制能夠存取標籤所加密內容的人員，同時仍會加密內容，並提供限制內容使用方式 (權限) 和存取方式 (到期和離線存取) 的選項。 不過，開啟加密內容的應用程式必須能夠支援所使用的驗證。 因此，同盟社交提供者 (例如 Google) 和一次性密碼驗證僅對電子郵件有效，且僅在您使用 Exchange Online 時才有效。 您可以將 Microsoft 帳戶與 Office 365 應用程式和 [Azure 資訊保護檢視器](https://portal.azurerms.com/#/download)搭配使用。
 
 > [!NOTE]
-> 當為 [SharePoint 和 OneDrive 中的 Office 檔案啟用](sensitivity-labels-sharepoint-onedrive-files.md)敏感度標籤時，請考慮將此設定與 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
+> 當為 [SharePoint 和 OneDrive 中的 Office 檔案啟用](sensitivity-labels-sharepoint-onedrive-files.md)敏感度標籤時，請考慮將此設定與 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](/sharepoint/sharepoint-azureb2b-integration-preview)。
 
 任何已驗證使用者設定的某些典型案例如下:
 
@@ -191,10 +191,10 @@ ms.locfileid: "50261570"
 
 當您選擇要對那些使用者或群組允許的權限時，您可以選取下列任一項：
 
-- [預先定義的權限層級](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，其中有一組預設的權限，例如共同作者或檢閱者。
+- [預先定義的權限層級](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，其中有一組預設的權限，例如共同作者或檢閱者。
 - 自訂權限，您可在此選擇一或多個使用權限。
 
-如需可協助您選取適當權限的詳細資訊，請參閱[使用權限和描述](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
+如需可協助您選取適當權限的詳細資訊，請參閱[使用權限和描述](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
 
 ![選擇預設或自訂權限的選項](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -214,7 +214,7 @@ ms.locfileid: "50261570"
 - Rights Management 簽發者一律可以離線存取文件或電子郵件。
 - Rights Management 簽發者仍可以開啟撤銷後的文件。
 
-如需詳細資訊，請參閱 [Rights Management 簽發者和 Rights Management 擁有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
+如需詳細資訊，請參閱 [Rights Management 簽發者和 Rights Management 擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
 
 ### <a name="double-key-encryption"></a>雙重金鑰加密
 
@@ -229,7 +229,7 @@ ms.locfileid: "50261570"
 
 您可以使用這些選項讓使用者在手動將敏感度標籤套用至內容時指派權限：
 
-- 在 Outlook 中，使用者可以針對所選的收件者選取等同於[不可轉寄](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)選項的限制。
+- 在 Outlook 中，使用者可以針對所選的收件者選取等同於[不可轉寄](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)選項的限制。
 
 - 在 Word、PowerPoint 和 Excel 中，系統會提示使用者為特定使用者、群組或組織選取其自己的權限。
 
@@ -406,7 +406,7 @@ ms.locfileid: "50261570"
 
 - 啟用來自 Azure 資訊保護的保護
     
-    若要讓敏感度標籤套用加密，必須為您的租用戶啟用來自 Azure 資訊保護的保護服務 (Azure 版權管理)。 在較新的租用戶中，這是預設設定，但您可能需要手動啟用該服務。 如需詳細資訊，請參閱[啟用來自 Azure 資訊保護的保護服務](https://docs.microsoft.com/azure/information-protection/activate-service)。
+    若要讓敏感度標籤套用加密，必須為您的租用戶啟用來自 Azure 資訊保護的保護服務 (Azure 版權管理)。 在較新的租用戶中，這是預設設定，但您可能需要手動啟用該服務。 如需詳細資訊，請參閱[啟用來自 Azure 資訊保護的保護服務](/azure/information-protection/activate-service)。
 
 - 設定 Exchange 進行 Azure 資訊保護
     
@@ -416,8 +416,8 @@ ms.locfileid: "50261570"
     
     若要確保 Exchange 可以支援這些額外情節，請參閱下列內容：
     
-    - 針對 Exchange Online，請參閱 [Exchange Online：IRM 設定](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的指示。
-    - 針對 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。 
+    - 針對 Exchange Online，請參閱 [Exchange Online：IRM 設定](/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的指示。
+    - 針對 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](/azure/information-protection/deploy-rms-connector)。 
 
 ## <a name="next-steps"></a>後續步驟
 

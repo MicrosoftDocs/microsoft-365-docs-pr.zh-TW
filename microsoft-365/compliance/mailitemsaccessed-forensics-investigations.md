@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 信箱稽核動作執行遭入侵使用者帳戶的鑑識調查。
-ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: e9dda101b330f6632e66c226156df3497ac38453
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868001"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903479"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用進階稽核調查遭入侵帳戶
 
@@ -31,7 +31,7 @@ ms.locfileid: "49868001"
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>MailItemsAccessed 信箱稽核動作
 
-新 MailItemsAccessed 動作屬於新 [Advanced Audit](advanced-audit.md) 功能。 這是 [Exchange 信箱稽核](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)的功能之一，獲派 Office 365 或 Microsoft 365 E5 授權的使用者或訂閱 Microsoft 365 E5 合規性附加元件的組織依預設會啟用此動作。
+新 MailItemsAccessed 動作屬於新 [Advanced Audit](advanced-audit.md) 功能。 這是 [Exchange 信箱稽核](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)的功能之一，獲派 Office 365 或 Microsoft 365 E5 授權的使用者或訂閱 Microsoft 365 E5 合規性附加元件的組織依預設會啟用此動作。
 
 MailItemsAccessed 信箱稽核動作涵蓋所有郵件通訊協定：POP、IMAP、MAPI、EWS、Exchange ActiveSync 和 REST。 此動作也涵蓋兩種類型的郵件存取：「同步處理」和「繫結」。
 
@@ -67,7 +67,7 @@ MailItemsAccessed 信箱稽核動作涵蓋所有郵件通訊協定：POP、IMAP�
 
 信箱稽核會產生存取電子郵件訊息的稽核記錄，因此您可以確信電子郵件訊息並未遭到入侵。 基於此原因，在不確定某些資料已遭存取的情況下，我們會假設資料已遭存取而記錄下所有的郵件存取活動。
 
-使用 MailItemsAccessed 稽核記錄做為鑑識之用的執行時機通常是在解決資料外洩並驅逐攻擊者之後。 若要開始調查，您應該找出已遭入侵的信箱組，然後判定攻擊者可以存取組織內信箱的時間範圍。 接著，您可以在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 中使用 **Search-UnifiedAuditLog** 或 **Search-MailboxAuditLog** Cmdlet，搜尋對應到資料外洩的稽核記錄。 
+使用 MailItemsAccessed 稽核記錄做為鑑識之用的執行時機通常是在解決資料外洩並驅逐攻擊者之後。 若要開始調查，您應該找出已遭入侵的信箱組，然後判定攻擊者可以存取組織內信箱的時間範圍。 接著，您可以在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 中使用 **Search-UnifiedAuditLog** 或 **Search-MailboxAuditLog** Cmdlet，搜尋對應到資料外洩的稽核記錄。 
 
 您可以執行下列其中一個命令來搜尋 MailItemsAccessed 稽核記錄：
 
@@ -169,7 +169,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 |MailAccessType  | 存取是繫結或同步處理作業。|
 |MailboxUPN      | 遭讀取訊息所在的信箱 UPN。|
 |User            | 讀取訊息的使用者 UPN。|
-|SessionId       | 工作階段識別碼可協助區分同一信箱中攻擊者的動作和每天例行的使用者活動 (在帳戶遭入侵的情況下)。如需有關工作階段的詳細資訊，請參閱[考量攻擊者活動在 Exchange Online 工作階段內的背景](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801) (英文)。|
+|SessionId       | 工作階段識別碼可協助區分同一信箱中攻擊者的動作和每天例行的使用者活動 (在帳戶遭入侵的情況下)。如需有關工作階段的詳細資訊，請參閱[考量攻擊者活動在 Exchange Online 工作階段內的背景](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801)。|
 ||||
 
 ## <a name="identifying-the-access-contexts-of-different-audit-records"></a>找出不同稽核記錄的存取背景
@@ -192,4 +192,4 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 ```powershell
 Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
-``` 
+```

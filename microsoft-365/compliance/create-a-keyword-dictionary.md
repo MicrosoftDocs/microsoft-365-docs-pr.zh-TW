@@ -18,17 +18,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全性與合規性中心建立關鍵字字典的基本步驟。
-ms.openlocfilehash: 488e39921f36a6557378a6214269fcb399114972
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: ff96eda71857b4b0f802462da96e4f4abbaf05f4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921575"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908387"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
 資料外洩防護 (DLP) 可識別、監視及保護您的敏感性項目。 識別敏感性項目有時需要尋找關鍵字，特別是在識別一般內容 (例如醫療保健相關通訊)，或是不適當或偏激的言語。 雖然您可以在敏感性資訊類型中建立關鍵字清單，但關鍵字清單的大小有限，且需要修改 XML 來建立或編輯。 關鍵字字典提供更簡單的關鍵字管理並具有更大的規模，在字典中最多可支援 1 ＭB 的字詞 (壓縮後) 及各式語種。 壓縮後的租用戶限制也是 1 MB。 1MB 的壓縮後限制表示整個租用戶的所有詞典加起來可以接近 1 百萬字元。
   
+> [!NOTE]
+> 每個租用戶可建立的以關鍵字字典為基礎的敏感性資訊類型，限制為 50 個。
+
 > [!NOTE]
 > Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：
 > - 中文 (簡體)
@@ -78,7 +81,7 @@ ms.locfileid: "49921575"
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 從檔案建立關鍵字字典
 
-當您需要建立大型字典時，通常會使用來自檔案或從其他來源匯出清單中的關鍵字。 在此情況下，您會建立一個關鍵字字典，其中包含要在外部電子郵件中過濾的不適當言語清單。 [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+當您需要建立大型字典時，通常會使用來自檔案或從其他來源匯出清單中的關鍵字。 在此情況下，您會建立一個關鍵字字典，其中包含要在外部電子郵件中過濾的不適當言語清單。 [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
   
 1. 將關鍵字複製到文字檔案，並確定每個關鍵字位於個別行。
     
@@ -118,7 +121,7 @@ $terms = $dict.KeywordDictionary.split(',').trim()
 
 現在您將從字典中移除一些字詞。因為範例字典只有幾個關鍵字，所以您可以輕鬆地略過移除，直接匯出字典，並在 [記事本] 中編輯該字典，但字典通常包含大量文字，因此您首先將學習此方法，以在 PowerShell 中輕鬆地編輯它們。
   
-在最後一個步驟中，您已將關鍵字儲存到陣列。有幾種方法可[從陣列中移除字詞](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)) (英文)，但直接方法為建立您要從字典中移除之字詞的陣列，然後只將不在要移除之字詞清單中的字典字詞複製到其中。
+在最後一個步驟中，您已將關鍵字儲存到陣列。有幾種方法可[從陣列中移除字詞](/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10))，但直接方法為建立您要從字典中移除之字詞的陣列，然後只將不在要移除之字詞清單中的字典字詞複製到其中。
   
 執行命令 `$terms` 來顯示目前的字詞清單。命令的輸出看起來像這樣： 
   

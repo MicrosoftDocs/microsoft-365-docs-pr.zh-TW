@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: '了解如何為貴組織的所有或特定使用者設定焦點收件匣。 '
-ms.openlocfilehash: e6c77bdff00e7cd98f5034267699e19d8582db27
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551898"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914279"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>為組織中的每個人設定焦點收件匣
 
@@ -41,9 +41,9 @@ ms.locfileid: "49551898"
   
 下列 PowerShell 範例會 **[關閉]** 組織中的焦點收件匣。 但是，它不會阻止您的使用者使用該功能。 如果使用者想要的話，他們仍然可以在每個用戶端重新啟用焦點收件匣。 
   
-1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1. [使用遠端 PowerShell 連線到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 您需要先獲指派權限，才能執行此程序或各個程序。若要查看您需要哪些權限，請參閱[訊息原則與合規性權限](https://go.microsoft.com/fwlink/p/?LinkId=829796) 中的「傳輸規則」項目。
+2. 您需要先獲指派權限，才能執行此程序或各個程序。若要查看您需要哪些權限，請參閱[訊息原則與合規性權限](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help) 中的「傳輸規則」項目。
 
 3. 執行 **Get-OrganizationConfig** Cmdlet。 
 
@@ -87,7 +87,7 @@ Get-OrganizationConfig
 
 此範例針對 Contoso 組織中的 Tim Matthews 關閉焦點收件匣。 但是，它不會阻止他使用該功能。 如果他想要的話，仍然可以在每個用戶端重新啟用焦點收件匣。 
   
-1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1. [使用遠端 PowerShell 連線到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 需要先指派權限，您才能執行此程序或各個程序。若要查看您需要哪些權限，請參閱訊息原則與合規性權限主題中的「傳輸規則」項目。
 
@@ -130,9 +130,9 @@ Get-OrganizationConfig
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>使用 PowerShell 建立傳輸規則，將電子郵件導向至所有使用者的 [焦點] 檢視
 
-1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1. [使用遠端 PowerShell 連線到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 您需要先獲指派權限，才能執行此程序或各個程序。若要查看您需要哪些權限，請參閱[訊息原則與合規性權限](https://go.microsoft.com/fwlink/p/?LinkId=829796) 中的「傳輸規則」項目。
+2. 您需要先獲指派權限，才能執行此程序或各個程序。若要查看您需要哪些權限，請參閱[訊息原則與合規性權限](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help) 中的「傳輸規則」項目。
 
 3. 例如，執行下列命令，讓來自「薪資部門」的所有郵件傳送到焦點收件匣。
 
@@ -142,7 +142,7 @@ Get-OrganizationConfig
 
 > [!IMPORTANT]
 > 在此範例中，"X-MS-Exchange-Organization-BypassFocusedInbox" 和 "true" 有區分大小寫。
-> 同時，焦點收件匣會受限於略過待過濾郵件的 X 標頭，因此，如果在待過濾郵件中使用此設定，它也將用於焦點收件匣。 如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://go.microsoft.com/fwlink/p/?LinkId=830194)。
+> 同時，焦點收件匣會受限於略過待過濾郵件的 X 標頭，因此，如果在待過濾郵件中使用此設定，它也將用於焦點收件匣。 如需詳細的語法和參數資訊，請參閱 [New-TransportRule](/powershell/module/exchange/new-transportrule)。
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
@@ -172,7 +172,7 @@ Get-OrganizationConfig
 
 切換之後，您的 [待過濾郵件] 資料夾就不會再收到可執行的電子郵件。電子郵件將改為分類至收件匣的 [焦點] 及 [其他] 索引標籤中。用來將郵件移至 [待過濾郵件] 資料夾的相同演算法現在改用來實現焦點收件匣功能，也就是說以前設定為移至 [待過濾郵件] 的任何電子郵件，現在都會移至 [其他]。已經在 [待過濾郵件] 資料夾中的任何郵件仍會留在該資料夾中，直到您決定刪除或移動它們為止。
   
-請參閱 Microsoft 最有價值專家 [Tony Redmond](https://www.petri.com/author/tony-redmond) 的這篇文章： [焦點收件匣如何取代 Office 365 內部的待過濾郵件](https://www.petri.com/focused-inbox-office-365) (英文)。
+請參閱 Microsoft 最有價值專家 [Tony Redmond](https://www.petri.com/author/tony-redmond) 的這篇文章： [焦點收件匣如何取代 Office 365 內部的待過濾郵件](https://www.petri.com/focused-inbox-office-365)。
   
 ### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>可讓使用者各自使用待過濾郵件嗎？ Microsoft 對使用待過濾郵件與焦點收件匣的建議是什麼？
 

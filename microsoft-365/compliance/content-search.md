@@ -21,12 +21,12 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
 description: 使用 Microsoft 365 合規性中心中的內容搜尋工具，搜尋不同 Microsoft 服務中的內容。
-ms.openlocfilehash: b497c584dce02279e0d2a0e68a8f5ada415164e5
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 2e9dcde65a4f2728782fd300f962dfb3e80ed3c9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988203"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908625"
 ---
 # <a name="content-search"></a>內容搜尋
 
@@ -228,9 +228,9 @@ ms.locfileid: "49988203"
   
 ### <a name="searching-onedrive-accounts"></a>搜尋 OneDrive 帳戶
 
-- 若要收集組織中 OneDrive 網站的 URL 清單，請參閱[建立組織中所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls)。 本文章中的這個指令碼會建立文字檔案，其中包含所有 OneDrive 網站的清單。 若要執行此指令碼，您必須安裝並使用 SharePoint Online 管理命令介面。 請務必將您組織 MySite 網域的 URL 附加至您要搜尋的每個 OneDrive 網站。 這是包含您所有 OneDrive 的網域；例如，`https://contoso-my.sharepoint.com`。 以下是使用者 OneDrive 網站的 URL 範例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
+- 若要收集組織中 OneDrive 網站的 URL 清單，請參閱[建立組織中所有 OneDrive 位置的清單](/onedrive/list-onedrive-urls)。 本文章中的這個指令碼會建立文字檔案，其中包含所有 OneDrive 網站的清單。 若要執行此指令碼，您必須安裝並使用 SharePoint Online 管理命令介面。 請務必將您組織 MySite 網域的 URL 附加至您要搜尋的每個 OneDrive 網站。 這是包含您所有 OneDrive 的網域；例如，`https://contoso-my.sharepoint.com`。 以下是使用者 OneDrive 網站的 URL 範例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
     
-    在人員的使用者主體名稱 (UPN) 變更的少數情況下，其 OneDrive 位置的 URL 將會變更以納入新的 UPN。 如果發生這種情況，您必須透過新增使用者的新 OneDrive URL 並移除舊 URL 來修改內容搜尋。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
+    在人員的使用者主體名稱 (UPN) 變更的少數情況下，其 OneDrive 位置的 URL 將會變更以納入新的 UPN。 如果發生這種情況，您必須透過新增使用者的新 OneDrive URL 並移除舊 URL 來修改內容搜尋。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](/onedrive/upn-changes)。
   
 ### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>搜尋 Microsoft Teams 和 Microsoft 365 群組
 
@@ -240,7 +240,7 @@ ms.locfileid: "49988203"
   
 - 若要搜尋位於 Teams 和 Microsoft 365 群組中的內容，您必須指定與團隊或群組相關聯的信箱和 SharePoint 網站。
 
-- 來自私人頻道的內容會儲存在每位使用者的信箱，而不會儲存在小組信箱。 若要搜尋私人頻道中的內容，請參閱[私人頻道進階電子文件探索](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels) (部分機器翻譯)。
+- 來自私人頻道的內容會儲存在每位使用者的信箱，而不會儲存在小組信箱。 若要搜尋私人頻道中的內容，請參閱[私人頻道進階電子文件探索](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels) (部分機器翻譯)。
     
 - 在 Exchange Online 中執行 **Get-UnifiedGroup** Cmdlet，以檢視團隊或 Microsoft 365 群組的內容。 這是取得與團隊或群組相關聯的網站 URL 的絕佳方法。 例如，下列命令會顯示名為「資深領導團隊」的 Microsoft 365 群組的所選屬性： 
     
@@ -296,9 +296,9 @@ ms.locfileid: "49988203"
   
   ![Teams 會議、通話和 1xN 聊天都可在 [類型] 欄位中識別](../media/O365-ContentSearch-Teams-MessageKind.png)
 
-   如需詳細資訊，請參閱 [Microsoft Teams 啟動通話跟會議的電子文件探索](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947) (英文)。
+   如需詳細資訊，請參閱 [Microsoft Teams 啟動通話跟會議的電子文件探索](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947)。
 
-- Teams 頻道、1:1 聊天和 1xN 聊天中的應用程式產生的卡片內容儲存在信箱中，可以進行搜尋。 *卡片* 是一個 UI 容器，用於儲存簡短的內容片段。 卡片可以有多個内容和附件，還可以包含可以觸發卡片動作的按鈕。 如需詳細資訊，請參閱 [卡片](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)。
+- Teams 頻道、1:1 聊天和 1xN 聊天中的應用程式產生的卡片內容儲存在信箱中，可以進行搜尋。 *卡片* 是一個 UI 容器，用於儲存簡短的內容片段。 卡片可以有多個内容和附件，還可以包含可以觸發卡片動作的按鈕。 如需詳細資訊，請參閱 [卡片](/microsoftteams/platform/task-modules-and-cards/what-are-cards)。
 
   與其他 Teams 內容一樣，儲存卡片內容的位置取決於卡片的使用位置。 Teams 頻道中使用的卡片之內容儲存在 Teams 群組信箱中。 1:1 和 1xN 聊天的卡片內容儲存在聊天參與者的信箱中。
 
@@ -412,14 +412,14 @@ ms.locfileid: "49988203"
 
 ### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>在 SharePoint 多地理位置環境中搜尋內容
 
-如果電子文件探索管理員需要在 [SharePoint 多地理位置環境](https://go.microsoft.com/fwlink/?linkid=860840)中的不同區域中搜尋 SharePoint 和 OneDrive 中的內容，則需要執行以下操作才能進行：
+如果電子文件探索管理員需要在 [SharePoint 多地理位置環境](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)中的不同區域中搜尋 SharePoint 和 OneDrive 中的內容，則需要執行以下操作才能進行：
 
 1. 為電子文件探索管理員需要搜尋的每個衛星地理位置建立個別的使用者帳戶。 若要在該地理位置中的網站搜尋內容，電子文件探索管理員必須登入您為該位置建立的帳戶，然後再執行內容搜尋。
 
 2. 為電子文件探索管理員需要搜尋的每個衛星地理位置 (以及相應的使用者帳戶) 建立搜尋權限篩選條件。 當電子文件探索管理員登入與該位置關聯的使用者帳戶時，每一個搜尋權限篩選條件都會將內容搜尋的範圍限制為特定的地理位置。
 
 > [!TIP]
-> 在 [[進階電子文件探索]](overview-ediscovery-20.md) 中使用搜尋工具時，您不必使用此策略。 這是因為在進階電子文件探索中搜尋 SharePoint 網站和OneDrive 帳戶時，會搜尋所有資料中心。 只有在使用內容搜尋工具並執行與[電子文件探索案例](ediscovery-cases.md)相關聯的搜尋時，才必須使用這個特定區域使用者帳戶和搜尋權限篩選器的策略。
+> 在 [[進階電子文件探索]](overview-ediscovery-20.md) 中使用搜尋工具時，您不必使用此策略。 這是因為在進階電子文件探索中搜尋 SharePoint 網站和OneDrive 帳戶時，會搜尋所有資料中心。 只有在使用內容搜尋工具並執行與[電子文件探索案例](./get-started-core-ediscovery.md)相關聯的搜尋時，才必須使用這個特定區域使用者帳戶和搜尋權限篩選器的策略。
 
 例如，假設電子文件探索管理員需要在北美、歐洲和亞太地區的衛星位置搜尋 SharePoint 和 OneDrive 內容。 第一個步驟是建立三個使用者帳戶，每個位置一個。 下一步是建立三個搜尋權限篩選條件，每個位置及相應的使用者帳戶一個。 以下是此案例的三個搜尋權限篩選條件的範例。 在每個範例中，**[區域]** 指定該地理位置的 SharePoint 資料中心位置，**[使用者]** 參數指定相應的使用者帳戶。
 
