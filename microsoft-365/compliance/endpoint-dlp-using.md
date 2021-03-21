@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何設定資料遺失防護（DLP）原則以使用 Microsoft 365 端點資料遺失防護（EPDLP）位置。
-ms.openlocfilehash: 1bb4013069b8f4890ba420f13a0203eb63973121
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 91e8a25c2a15e82cd7f286d1110b1c87bedf31d5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820185"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926431"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端點資料外洩防護
 
@@ -219,10 +219,10 @@ ms.locfileid: "50820185"
 - [資料外洩防護概觀](data-loss-prevention-policies.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)
-- [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Windows 10 電腦上線的工具及方法 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
+- [適用於端點的 Microsoft Defender](/windows/security/threat-protection/)
+- [Windows 10 電腦上線的工具及方法 ](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 - [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [已加入 Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [已加入 Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join)
 - [下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 - [預設的 DLP 原則快速入門](get-started-with-the-default-dlp-policy.md)
 - [從範本建立 DLP 原則](create-a-dlp-policy-from-a-template.md)

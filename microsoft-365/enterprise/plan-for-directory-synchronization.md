@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: 說明與 Microsoft 365、Active Directory 網域服務清理和 Azure Active Directory Connect 工具的目錄同步處理。
-ms.openlocfilehash: 02b594f9db02df7e855a20dfc65b21ab2dbe91c0
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 7b717f65bb434918a5eb0ab2bf4a5acab2d08eea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327376"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927541"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Microsoft 365 的混合式身分識別及目錄同步處理
 
@@ -69,7 +69,7 @@ ms.locfileid: "48327376"
 
 當密碼變更或重設為內部部署時，新的密碼雜湊會同步處理至 Azure AD，這樣您的使用者就可以在雲端資源和內部部署資源中永遠使用相同的密碼。 使用者密碼永遠不會以明文形式傳送至 Azure AD 或儲存在 Azure AD 中。 不論選取哪一種驗證方法，Azure AD 的某些精品功能（例如身分識別保護）都需要 PHS。
   
-若要深入瞭解，請參閱 [選擇正確的驗證方法](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) 。
+若要深入瞭解，請參閱 [選擇正確的驗證方法](/azure/active-directory/hybrid/choose-ad-authn) 。
   
 #### <a name="pass-through-authentication-pta"></a>傳遞驗證 (PTA)
 
@@ -81,7 +81,7 @@ PTA 可讓您的使用者使用內部部署帳戶和密碼，登入內部部署�
 
 PTA 也適用于具有安全性需求的組織，以立即強制執行內部部署使用者帳戶狀態、密碼原則和登入時間。 
   
-若要深入瞭解，請參閱 [選擇正確的驗證方法](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) 。
+若要深入瞭解，請參閱 [選擇正確的驗證方法](/azure/active-directory/hybrid/choose-ad-authn) 。
   
 ### <a name="federated-authentication"></a>同盟驗證
 
@@ -89,13 +89,13 @@ PTA 也適用于具有安全性需求的組織，以立即強制執行內部部�
 
 同盟驗證可支援其他驗證需求，例如智慧卡型驗證或協力廠商的多重要素驗證，而且在組織具備 Azure AD 本身不支援的驗證需求時，通常需要使用。
  
-若要深入瞭解，請參閱 [選擇正確的驗證方法](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) 。
+若要深入瞭解，請參閱 [選擇正確的驗證方法](/azure/active-directory/hybrid/choose-ad-authn) 。
   
 #### <a name="third-party-authentication-and-identity-providers"></a>協力廠商驗證和身分識別提供者
 
 內部部署目錄物件可能會同步處理至 Microsoft 365，而雲端資源存取主要是由協力廠商身分識別提供者 (IdP) 所管理。 如果您的組織使用協力廠商同盟解決方案，您可以將協力廠商同盟解決方案與 Azure AD 相容，以供 Microsoft 365 的解決方案進行登錄。
   
-請參閱 [AZURE AD federation 相容性清單](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) 以深入瞭解。
+請參閱 [AZURE AD federation 相容性清單](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) 以深入瞭解。
   
 ## <a name="ad-ds-preparation"></a>AD DS 準備
 
@@ -104,15 +104,15 @@ PTA 也適用于具有安全性需求的組織，以立即強制執行內部部�
 您的目錄準備工作應該著重于下列工作：
 
 - 移除重複的 **proxyAddress** 和 **userPrincipalName** 屬性。
-- 使用有效的**userPrincipalName**屬性，更新空白及不正確**userPrincipalName**屬性。
-- 移除 **givenName**、姓 ( **sn** ) 、 **sAMAccountName**、 **displayName**、 **mail**、 **proxyAddresses**、 **mailNickname**及 **userPrincipalName** 屬性中的無效且可疑的字元。 如需準備屬性的詳細資訊，請參閱 [由 Azure Active Directory 同步處理工具同步處理的屬性清單](https://go.microsoft.com/fwlink/p/?LinkId=396719)。
+- 使用有效的 **userPrincipalName** 屬性，更新空白及不正確 **userPrincipalName** 屬性。
+- 移除 **givenName**、姓 ( **sn** ) 、 **sAMAccountName**、 **displayName**、 **mail**、 **proxyAddresses**、 **mailNickname** 及 **userPrincipalName** 屬性中的無效且可疑的字元。 如需準備屬性的詳細資訊，請參閱 [由 Azure Active Directory 同步處理工具同步處理的屬性清單](https://go.microsoft.com/fwlink/p/?LinkId=396719)。
 
     > [!NOTE]
     > 這些是 Azure AD Connect 同步處理的相同屬性。 
   
 ## <a name="multi-forest-deployment-considerations"></a>多樹系部署的考慮
 
-若為多個樹系和 SSO 選項，請使用 [AZURE AD Connect 的自訂安裝](https://go.microsoft.com/fwlink/p/?LinkId=698430)。
+若為多個樹系和 SSO 選項，請使用 [AZURE AD Connect 的自訂安裝](/azure/active-directory/hybrid/how-to-connect-install-custom)。
   
 如果您的組織有多個樹系用於驗證 (登入樹系) ，我們強烈建議下列事項：
   
@@ -121,7 +121,7 @@ PTA 也適用于具有安全性需求的組織，以立即強制執行內部部�
 
 如果您無法合併多樹系 AD DS 部署，或正在使用其他目錄服務來管理身分識別，您可以使用 Microsoft 或協力廠商的說明同步處理這些身分識別。
   
-如需詳細資訊，請參閱 [AZURE AD Connect 的拓撲](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies) 。
+如需詳細資訊，請參閱 [AZURE AD Connect 的拓撲](/azure/active-directory/hybrid/plan-connect-topologies) 。
   
 ## <a name="features-that-are-dependent-on-directory-synchronization"></a>依存于目錄同步處理的功能
   
@@ -141,7 +141,6 @@ PTA 也適用于具有安全性需求的組織，以立即強制執行內部部�
   - 您有整合式內部部署智慧卡或多重要素驗證解決方案。
 - 同步處理相片、縮圖、會議室及安全性群組
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 當您準備好部署混合式身分識別時，請參閱 [prepare for 目錄同步](prepare-for-directory-synchronization.md)處理。
-  

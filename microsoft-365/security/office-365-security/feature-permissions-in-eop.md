@@ -13,12 +13,12 @@ ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 深入瞭解獨立 Exchange Online Protection 中的工作所需的許可權
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c24c6f57ea9a7c0e1b3332d2f4b518b232ec0c2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 212a109c792522270b7e5000747bec950b7f4fe2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288296"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926979"
 ---
 # <a name="permissions-in-standalone-eop"></a>獨立版 EOP 中的權限
 
@@ -53,18 +53,18 @@ ms.locfileid: "50288296"
 
 |角色群組|描述|已指派預設角色|
 |---|---|---|
-|ComplianceManagement|設定及管理組織內的規範設定，包括資料遺失防護 (DLP) （如果您的訂閱具有 DLP 功能）。 <p> Azure AD 中的 [合規性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) 角色成員會自動取得此角色群組的許可權。|稽核記錄 <p> 合規性管理 <p> 資訊版權管理 <p> 保留管理 <p> 僅限檢視稽核記錄 <p> 僅限檢視組態 <p> 僅限檢視收件者|
+|ComplianceManagement|設定及管理組織內的規範設定，包括資料遺失防護 (DLP) （如果您的訂閱具有 DLP 功能）。 <p> Azure AD 中的 [合規性系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) 角色成員會自動取得此角色群組的許可權。|稽核記錄 <p> 合規性管理 <p> 資訊版權管理 <p> 保留管理 <p> 僅限檢視稽核記錄 <p> 僅限檢視組態 <p> 僅限檢視收件者|
 |ContentExplorerContentViewer|不會使用。|資料分類內容檢視器|
 |ContentExplorerListViewer|不會使用。|資料分類清單檢視器|
 |HelpDesk|查看和管理郵件使用者。|重設密碼 <p> 使用者選項 <p> 僅限檢視收件者|
 |HygieneManagement|管理保護功能 (反垃圾郵件、反惡意程式碼等 ) 。|傳輸衛生 <p> 僅限檢視組態 <p> 僅限檢視收件者|
 |MailFlowAdministrator|查看及管理公認的網域和連接器|遠端和公認的網域 <p> 僅限檢視收件者|
-|OrganizationManagement|整個組織的系統管理員存取權，以及執行幾乎任何工作的功能。 <p> Azure AD 中 [全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 角色的成員會自動取得此角色群組的許可權。 <p> **重要**：由於 OrganizationManagement 角色群組是功能強大的角色，因此只有執行組織層級管理工作的使用者才應成為這個角色群組的成員。|軟體 <p> 反垃圾郵件 <p> 稽核記錄 <p> 合規性系統管理員 <p> 動態通訊群組 <p> 資訊版權管理 <p> 建立郵件收件者 <p> 郵件收件者 <p> 郵件追蹤 <p> 移轉 <p> 組織用戶端存取 <p> 組織組態 <p> 組織傳輸設定 <p> 隔離 <p> 收件者原則 <p> 遠端和公認的網域 <p> 重設密碼 <p> 保留管理 <p> 角色管理 <p> 安全性系統管理員 <p> 安全性群組建立和成員資格 <p> 安全性讀取者 <p> 敏感度標籤系統管理員 <p> 監督 <p> 傳輸衛生 <p> 傳輸規則 <p> 使用者選項 <p> View-Only 反惡意程式碼 <p> View-Only 反垃圾郵件 <p> 僅限檢視稽核記錄 <p> 僅限檢視組態 <p> View-Only 隔離 <p> 僅限檢視收件者 <p> View-Only 威脅情報|
+|OrganizationManagement|整個組織的系統管理員存取權，以及執行幾乎任何工作的功能。 <p> Azure AD 中 [全域系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 角色的成員會自動取得此角色群組的許可權。 <p> **重要**：由於 OrganizationManagement 角色群組是功能強大的角色，因此只有執行組織層級管理工作的使用者才應成為這個角色群組的成員。|軟體 <p> 反垃圾郵件 <p> 稽核記錄 <p> 合規性系統管理員 <p> 動態通訊群組 <p> 資訊版權管理 <p> 建立郵件收件者 <p> 郵件收件者 <p> 郵件追蹤 <p> 移轉 <p> 組織用戶端存取 <p> 組織組態 <p> 組織傳輸設定 <p> 隔離 <p> 收件者原則 <p> 遠端和公認的網域 <p> 重設密碼 <p> 保留管理 <p> 角色管理 <p> 安全性系統管理員 <p> 安全性群組建立和成員資格 <p> 安全性讀取者 <p> 敏感度標籤系統管理員 <p> 監督 <p> 傳輸衛生 <p> 傳輸規則 <p> 使用者選項 <p> View-Only 反惡意程式碼 <p> View-Only 反垃圾郵件 <p> 僅限檢視稽核記錄 <p> 僅限檢視組態 <p> View-Only 隔離 <p> 僅限檢視收件者 <p> View-Only 威脅情報|
 |QuarantineAdministrator|管理所有收件者的隔離郵件。|隔離|
 |RecipientManagement|建立、管理及移除組織中的收件者物件。|動態通訊群組 <p> 建立郵件收件者 <p> 郵件收件者 <p> 郵件追蹤 <p> 移轉 <p> 收件者原則 <p> 重設密碼|
 |RecordsManagement|設定符合性功能，例如保留原則標記、郵件分類和郵件流程規則 (也稱為傳輸規則) 。|郵件追蹤 <p> 保留管理 <p> 傳輸規則|
-|SecurityAdministrator|設定組織中的所有保護方面 (反垃圾郵件、反惡意程式碼、反欺騙、隔離等等 ) 。 <p> Azure AD 中的 [安全性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色成員會自動取得此角色群組的許可權。|軟體 <p> 反垃圾郵件 <p> 稽核記錄 <p> 隔離 <p> 安全性系統管理員 <p> 敏感度標籤系統管理員 <p> View-Only 反惡意程式碼 <p> View-Only 反垃圾郵件 <p> 僅限檢視稽核記錄 <p> View-Only 隔離 <p> View-Only 威脅情報|
-|SecurityReader|僅可供查看組織中的所有保護方面 (反垃圾郵件、反惡意程式碼、反欺騙、隔離等 ) 的存取權。 <p> Azure AD 中的 [安全性讀者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) 角色成員會自動取得此角色群組的許可權。|安全性讀取者 <p> View-Only 反惡意程式碼 <p> View-Only 反垃圾郵件 <p> View-Only 隔離 <p> View-Only 威脅情報|
+|SecurityAdministrator|設定組織中的所有保護方面 (反垃圾郵件、反惡意程式碼、反欺騙、隔離等等 ) 。 <p> Azure AD 中的 [安全性系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色成員會自動取得此角色群組的許可權。|軟體 <p> 反垃圾郵件 <p> 稽核記錄 <p> 隔離 <p> 安全性系統管理員 <p> 敏感度標籤系統管理員 <p> View-Only 反惡意程式碼 <p> View-Only 反垃圾郵件 <p> 僅限檢視稽核記錄 <p> View-Only 隔離 <p> View-Only 威脅情報|
+|SecurityReader|僅可供查看組織中的所有保護方面 (反垃圾郵件、反惡意程式碼、反欺騙、隔離等 ) 的存取權。 <p> Azure AD 中的 [安全性讀者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) 角色成員會自動取得此角色群組的許可權。|安全性讀取者 <p> View-Only 反惡意程式碼 <p> View-Only 反垃圾郵件 <p> View-Only 隔離 <p> View-Only 威脅情報|
 |TenantAdmins|這個角色群組中的成員資格能跨服務同步，且為集中管理的。 根據預設，此角色群組不會被指派任何角色。 不過，它會是「組織管理」角色群組的成員，並會繼承這些許可權。|無|
 |ViewOnlyOrganizationManagement|查看組織中的收件者、保護和設定物件及其屬性。|合規性系統管理員 <p> 安全性系統管理員 <p> 安全性讀取者 <p> 敏感度標籤系統管理員 <p> 僅限檢視組態 <p> 僅限檢視收件者|
 |

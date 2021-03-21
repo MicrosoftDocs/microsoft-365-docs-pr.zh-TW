@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何在組織內部和外部的人員之間傳送和接收加密的電子郵件。
-ms.openlocfilehash: 8d1803442428f3061c686afa0b790d3f468abde8
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741324"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927711"
 ---
 # <a name="message-encryption"></a>郵件加密
 
@@ -36,7 +36,7 @@ ms.locfileid: "50741324"
 
 本文的其餘部分適用于新的 OME 功能。
 
-Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Management (Azure RMS) （Azure 資訊保護的一部分）上建立。 此服務包含加密、身分識別和授權原則，以協助保護您的電子郵件。 您可以使用 rights management 範本、[ [不要轉寄] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)及 [ [僅限加密] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)來加密郵件。
+Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Management (Azure RMS) （Azure 資訊保護的一部分）上建立。 此服務包含加密、身分識別和授權原則，以協助保護您的電子郵件。 您可以使用 rights management 範本、[ [不要轉寄] 選項](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)及 [ [僅限加密] 選項](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)來加密郵件。
 
 然後，使用者可以使用這些選項來加密電子郵件訊息和各種附件。 如需支援的附件類型的完整清單，請參閱 [irm for email to email to email 中的「irm 原則所涵蓋的檔案類型](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)」。
 
@@ -54,7 +54,7 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 如果受保護郵件的寄件者是在 GCC 高且收件者超出 GCC 的上限內，則包括商業性使用者、Outlook.com 使用者和其他電子郵件提供者（例如 Gmail）的使用者，收件者會收到包裝郵件。 包裝郵件會將收件者導向至 OME 入口網站，以便收件者可以讀取和回復郵件。 否則，如果寄件者和收件者同時位於 GCC 高環境中，即使這些寄件者不在相同的組織中，使用 Outlook 用戶端來讀取郵件的收件者，也會接收加密和許可權保護郵件的本機、第一類閱讀體驗。 如需有關 GCC High 中不同經驗的詳細資訊，請參閱 [比較版本的 OME](ome-version-comparison.md)。
 
-如需您可以使用 OME 加密之郵件和附件大小限制的相關資訊，請參閱 [Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx)。
+如需您可以使用 OME 加密之郵件和附件大小限制的相關資訊，請參閱 [Exchange Online 限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)。
 
 ## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Office 365 Advanced Message Encryption 在 OME 之上的運作方式
 

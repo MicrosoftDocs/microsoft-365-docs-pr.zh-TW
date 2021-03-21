@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 8078f5de698adf437e843a423fe9e82c5e4dd8de
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 708e5dc68b777db42696c6791124b2a8dd1d3b87
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233117"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927949"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>在 Office 365 和 Office 365 GCC 中準備 TLS 1.2
 
@@ -36,7 +36,7 @@ ms.locfileid: "50233117"
 
 為維持 Office 365 服務連線，我們推薦所有用戶端-伺服器及瀏覽器伺服器組合都使用 TLS 1.2（或更新版本）。 您可能必須更新特定的用戶端-伺服器及瀏覽器伺服器組合。
 
-您必須更新透過 TLS 1.0 或 TLS 1.1 呼叫 Microsoft 365 APIs 的應用程式，才能使用 TLS 1.2。 .NET 4.5 的預設值為 TLS 1.1。 若要更新您的 .NET 設定，請參閱 [如何在用戶端上啟用傳輸層安全性 (TLS) 1.2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
+您必須更新透過 TLS 1.0 或 TLS 1.1 呼叫 Microsoft 365 APIs 的應用程式，才能使用 TLS 1.2。 .NET 4.5 的預設值為 TLS 1.1。 若要更新您的 .NET 設定，請參閱 [如何在用戶端上啟用傳輸層安全性 (TLS) 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
 
 已知下列用戶端不能使用 TLS 1.2。 請更新用戶端以確保順利存取服務。
 
@@ -48,7 +48,7 @@ ms.locfileid: "50233117"
 
 ### <a name="tls-12-for-microsoft-teams-rooms-and-surface-hub"></a>適用於 Microsoft Teams 會議室和 Surface Hub 的 TLS 1.2
 
-自 2018 年 12 月開始，Microsoft Teams 會議室 (先前稱為 Skype Room System V2 SRS V2) 已經支援 TLS 1.2。 建議您在會議室裝置安裝 Microsoft Teams 會議室應用程式 4.0.64.0 版或更新版本。 如需詳細資訊，請參閱[版本資訊](https://docs.microsoft.com/microsoftteams/room-systems/srs2-release-note)。 變更可與舊版和新版相容。
+自 2018 年 12 月開始，Microsoft Teams 會議室 (先前稱為 Skype Room System V2 SRS V2) 已經支援 TLS 1.2。 建議您在會議室裝置安裝 Microsoft Teams 會議室應用程式 4.0.64.0 版或更新版本。 如需詳細資訊，請參閱[版本資訊](/microsoftteams/room-systems/srs2-release-note)。 變更可與舊版和新版相容。
 
 2019 年 5 月發行的 Surface Hub 支援 TLS 1.2。
 
@@ -78,4 +78,4 @@ Microsoft Teams 會議室和 Surface Hub 產品還需要在伺服器端程式碼
 - [Exchange Server TLS 指南，第 1 部分：為 TLS 1.2 做好準備](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)
 - [Exchange Server TLS 指南，第 2 部分：正在啟用 TLS 1.2 並辨識不使用 TLS 1.2 的用戶端](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761)
 - [Exchange Server TLS 指南，第 3 部分：關閉 TLS 1.0/1.1](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-3-turning-off-tls-1-0-1-1/ba-p/607898)
-- [啟用 Office Online Server 中的 TLS 1.1 和 TLS 1.2 支援](https://docs.microsoft.com/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)
+- [啟用 Office Online Server 中的 TLS 1.1 和 TLS 1.2 支援](/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)

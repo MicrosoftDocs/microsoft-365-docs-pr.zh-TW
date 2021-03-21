@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 使用 Office 365，您的內容會在靜止時以最強的加密、通訊協定和技術進行加密。 深入瞭解 Office 365 中的加密。
-ms.openlocfilehash: 1aee9d401891e807f572c1eed2bc22a54f39e534
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: c54508434c5ae5126a79eba1cb6dab3851d8f746
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709566"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926441"
 ---
 # <a name="encryption"></a>加密
 
@@ -53,10 +53,10 @@ ms.locfileid: "49709566"
   
 |**內容種類**|**加密技術**|**可深入了解的資源**|
 |:-----|:-----|:-----|
-|裝置上的檔案。 這些檔案可包含儲存于資料夾中的電子郵件、儲存在電腦上的 Office 檔、平板電腦或電話，或儲存至 Microsoft 雲端的資料。  <br/> |在 Microsoft 資料中心中 BitLocker。 您也可以在用戶端電腦上使用 BitLocker，例如 Windows 電腦和平板電腦  <br/> Microsoft 資料中心的分散式金鑰管理員 (DKM)   <br/> Microsoft 365 的客戶金鑰  <br/> |[Windows IT 中心： BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft 信任中心：加密](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [雲端安全性控制數列：加密靜態資料](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online 如何保護您的電子郵件機密資料](exchange-online-secures-email-secrets.md) <br/> [客戶金鑰服務加密](customer-key-overview.md) <br/> |
-|使用者間傳輸的檔案。 這些檔案可包含使用者共用的 Office 檔或 SharePoint 清單專案。  <br/> |傳輸中的檔 TLS  <br/> |[商務用 OneDrive 和 SharePoint Online 中的資料加密](data-encryption-in-odb-and-spo.md) (英文) <br/> [商務用 Skype Online：安全性和封存](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
+|裝置上的檔案。 這些檔案可包含儲存于資料夾中的電子郵件、儲存在電腦上的 Office 檔、平板電腦或電話，或儲存至 Microsoft 雲端的資料。  <br/> |在 Microsoft 資料中心中 BitLocker。 您也可以在用戶端電腦上使用 BitLocker，例如 Windows 電腦和平板電腦  <br/> Microsoft 資料中心的分散式金鑰管理員 (DKM)   <br/> Microsoft 365 的客戶金鑰  <br/> |[Windows IT 中心： BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft 信任中心：加密](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [雲端安全性控制數列：加密靜態資料](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online 如何保護您的電子郵件機密資料](exchange-online-secures-email-secrets.md) <br/> [客戶金鑰服務加密](customer-key-overview.md) <br/> |
+|使用者間傳輸的檔案。 這些檔案可包含使用者共用的 Office 檔或 SharePoint 清單專案。  <br/> |傳輸中的檔 TLS  <br/> |[商務用 OneDrive 和 SharePoint Online 中的資料加密](data-encryption-in-odb-and-spo.md) (英文) <br/> [商務用 Skype Online：安全性和封存](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
 |在收件者之間傳輸電子郵件。 這封電子郵件包含 Exchange Online 所主控的電子郵件。  <br/> |Office 365 郵件加密，包含 Azure Rights Management、S/MIME 和 TLS，以供傳輸電子郵件  <br/> |[Office 365 郵件加密 (OME)](ome.md) <br/> [Office 365 中的電子郵件加密](email-encryption.md) <br/> [Exchange Online 如何使用 TLS 來保護 Office 365 中的電子郵件連線](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
-|使用 Microsoft 團隊在收件者之間傳輸的研討、郵件和檔案。 <br/> |小組使用 TLS 和 MTLS 來加密立即訊息。 媒體流量已使用 Secure RTP (SRTP) 進行加密。 小組使用 FIPS (聯邦資訊處理標準) 相容演算法，以進行加密金鑰交換。 <br/> |[小組的加密](https://docs.microsoft.com/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
+|使用 Microsoft 團隊在收件者之間傳輸的研討、郵件和檔案。 <br/> |小組使用 TLS 和 MTLS 來加密立即訊息。 媒體流量已使用 Secure RTP (SRTP) 進行加密。 小組使用 FIPS (聯邦資訊處理標準) 相容演算法，以進行加密金鑰交換。 <br/> |[小組的加密](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>若要達到安全性和合規性需求，需要更多控制加密，該怎麼辦？
 
@@ -64,9 +64,9 @@ Microsoft 365 針對 Office 365 中的大量加密、檔加密和信箱加密，
   
 若要深入了解，請參閱下列資源：
   
-- [什麼是 Azure 版權管理？](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
+- [什麼是 Azure 版權管理？](/information-protection/understand-explore/what-is-azure-rms)
 
-- [在系統管理中心啟動 Rights Management](https://docs.microsoft.com/microsoft-365/enterprise/activate-rms-in-microsoft-365)
+- [在系統管理中心啟動 Rights Management](../enterprise/activate-rms-in-microsoft-365.md)
 
 - [在 SharePoint 系統管理中心中設定資訊版權管理 (IRM)](set-up-irm-in-sp-admin-center.md)
 
@@ -89,6 +89,6 @@ Microsoft 365 針對 Office 365 中的大量加密、檔加密和信箱加密，
 
 [規劃 Microsoft 365 的安全性和資訊保護功能](plan-for-security-and-compliance.md)
 
-[保護商務用 Microsoft 365 方案的十大方式](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)
+[保護商務用 Microsoft 365 方案的十大方式](/office365/admin/security-and-compliance/secure-your-business-data)
 
-[Microsoft Stream 影片層級加密和播放流程](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)
+[Microsoft Stream 影片層級加密和播放流程](/stream/network-overview#video-level-encryption-and-playback-flow)

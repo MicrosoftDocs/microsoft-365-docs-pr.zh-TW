@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解如何收集 Microsoft 支援案例的 eDiscovery 診斷資訊。
-ms.openlocfilehash: 107309748e2f27b50be5f8e8fc76afcb693989f9
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 842f8baf770f178df3298bbfa911de26ce946ed0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944388"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926553"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>收集電子文件探索診斷資訊
 
@@ -34,7 +34,7 @@ ms.locfileid: "48944388"
 
 收集核心 eDiscovery 的診斷資訊以 Cmdlet 為基礎，因此您必須使用安全性 & 合規性中心 PowerShell。 下列 PowerShell 範例會執行 Cmdlet，然後將輸出儲存至指定的文字檔。 在大多數支援案例中，您只需要執行下列其中一個命令。
 
-若要執行下列 Cmdlet，請連線[至安全性 & 合規性 </span> 中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。 連線之後，請執行下列一或多個命令，並確定以實際的物件名稱取代預留位置。
+若要執行下列 Cmdlet，請連線[至安全性 & 合規性 </span> 中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。 連線之後，請執行下列一或多個命令，並確定以實際的物件名稱取代預留位置。
 
 檢查所產生的文字檔並 redacting 機密資訊之後，將其傳送給 Microsoft 支援工程師，以在您的案例上運作。
 
@@ -77,11 +77,11 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==
 
 在高級 eDiscovery 案例中的 [ **設定** ] 索引標籤可讓您快速複製案例的診斷資訊。 診斷資訊會儲存至剪貼簿，這樣您就可以將其貼到文字檔，並傳送給 Microsoft 支援人員。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [ **顯示所有 > EDiscovery > Advanced** 。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [ **顯示所有 > EDiscovery > Advanced**。
 
 2. 選取案例，然後按一下 [ **設定** ] 索引標籤。
 
-3. 在 [ **案例資訊** ] 下，按一下 [ **選取** ]。
+3. 在 [ **案例資訊**] 下，按一下 [ **選取**]。
 
 4. 在飛入頁面上，按一下 [ **複製診斷資訊** ]，將資訊複製到剪貼簿。
 

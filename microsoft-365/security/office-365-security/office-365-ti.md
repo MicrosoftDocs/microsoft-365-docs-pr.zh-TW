@@ -21,12 +21,12 @@ ms.custom:
 description: 深入瞭解 Microsoft Defender for Office 365 方案中的威脅調查和回應功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a772ed3016bebc8f380cf384257e12497e9eb7c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ef8c445a5a234bdfaaae00824e7ab39dc3f51c26
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287674"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926769"
 ---
 # <a name="threat-investigation-and-response"></a>威脅調查及回應
 
@@ -108,7 +108,7 @@ Microsoft Defender for Office 365 使用以角色為基礎的存取控制。 許
 >
 > - [安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)
 >
-> - [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+> - [Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 ****
 
@@ -118,7 +118,7 @@ Microsoft Defender for Office 365 使用以角色為基礎的存取控制。 許
 |使用 [威脅瀏覽器 (和即時偵測) ](threat-explorer.md) 來分析威脅|下列其中之一： <ul><li>**全域管理員**</li><li>**安全性系統管理員**</li><li>**安全性讀取者**</li></ul> <p> 您可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 系統管理中心 () 中指派這些角色 <https://admin.microsoft.com> 。|
 |View 事件 (也稱為「調查」)  <p> 將電子郵件新增至事件|下列其中之一： <ul><li>**全域管理員**</li><li>**安全性系統管理員**</li><li>**安全性讀取者**</li></ul> <p> 您可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 系統管理中心 () 中指派這些角色 <https://admin.microsoft.com> 。|
 |觸發事件中的電子郵件動作 <p> 尋找和刪除可疑的電子郵件|下列其中之一： <ul><li>**全域管理員**</li><li>**安全性管理員** 和 **搜尋及清除** 角色</li></ul> <p> **全域管理員** 及 **安全性管理員** 角色可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 系統管理中心 () 中指派 <https://admin.microsoft.com> 。 <p> 您必須在安全性 & 規範中心 () 中指派 **搜尋和清除** 角色 <https://protection.office.com> 。|
-|整合 Microsoft Defender for Office 365 方案2與 Microsoft Defender for Endpoint  <p> 整合 Microsoft Defender for Office 365 Plan 2 與 SIEM server|在任何 Azure Active Directory (中所指派的 **全域系統管理員** 或 **安全性管理員** 角色 <https://portal.azure.com>) 或 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) 。 <p> --- **加** --- <p> 在其他應用程式中指派的適當角色 (例如 [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) 或您的 SIEM server) 。|
+|整合 Microsoft Defender for Office 365 方案2與 Microsoft Defender for Endpoint  <p> 整合 Microsoft Defender for Office 365 Plan 2 與 SIEM server|在任何 Azure Active Directory (中所指派的 **全域系統管理員** 或 **安全性管理員** 角色 <https://portal.azure.com>) 或 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) 。 <p> --- **加** --- <p> 在其他應用程式中指派的適當角色 (例如 [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/user-roles) 或您的 SIEM server) 。|
 |
 
 ## <a name="next-steps"></a>後續步驟

@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登陸頁面提供 Office 365 的安全性和合規性的連結及規劃資訊。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3684506b458ea2d40d3ff8b022bfb9e8154accf3
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: f050d8bb7052ec2f62a9e33c35bcbe43546a40c2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399032"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927959"
 ---
 # <a name="plan-for-security-amp-compliance"></a>規劃安全性 &amp; 合規性
 
@@ -32,7 +32,7 @@ ms.locfileid: "48399032"
 
 在 [Office 365 海報的資訊保護] 中，將您自己的資訊保護功能定位在一起。 
   
-[使用 Microsoft 365 部署資料隱私權法規的資訊保護](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
+[使用 Microsoft 365 部署資料隱私權法規的資訊保護](../solutions/information-protection-deploy.md?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>步驟2：檢查您的安全分數
 
@@ -60,7 +60,7 @@ ms.locfileid: "48399032"
 
 安全性與 &amp; 合規性中心提供您用來管理 Microsoft 365 安全性（包括威脅管理、資料管理及搜尋與調查）的控制項單一的視圖。 
   
-- [移至安全性與 &amp; 合規性中心](go-to-the-securitycompliance-center.md)
+- [移至安全性與 &amp; 合規性中心](./microsoft-365-compliance-center.md)
     
 - [安全性與 &amp; 合規性中心的許可權](~/security/office-365-security/protect-against-threats.md)
     

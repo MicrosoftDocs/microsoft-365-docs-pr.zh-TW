@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 58c8d2cdebdef6c0307b0c234951f6d32e5009df
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: f6f01a1bed296b6af2e6be973de6605910809fc3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820163"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926401"
 ---
 # <a name="insider-risk-management-cases"></a>內部人員風險管理案例
 
@@ -241,27 +241,6 @@ ms.locfileid: "50820163"
 當解決案例時，關聯的 Microsoft 團隊會自動封存 (隱藏，並將其變成隻讀) 。
 
 若要深入瞭解 Microsoft 球隊的內幕人士風險管理，請參閱「 [內幕人員風險管理設定」快速](insider-risk-management-settings.md#microsoft-teams-preview)入門。
-
-### <a name="share-the-case"></a>分享案例
-
-共用內部使用者風險管理案例，可讓風險調查人員和分析員輕鬆與組織中的其他合規性專案關係人進行共同作業。 您可以使用「案例管理」區域中的外部利益關係人，快速分享內部使用者風險管理案例的連結。 若要從連結存取「內部使用者風險管理案例」，必須在任何「內幕風險管理」角色群組中包含專案關係人。
-
->[!NOTE]
->感謝您在 ServiceNow 連接器預覽期間進行意見反應和支援。 我們決定在2020年11月30日的「內幕人員風險管理」中結束支援 ServiceNow 連接器的預覽。 我們正在積極評估替代方法，讓客戶在內幕風險管理中 ServiceNow 整合。
-
-可使用的共用選項如下：
-
-- **ServiceNow**：為您的 microsoft 365 組織設定 microsoft 365 ServiceNow 連接器之後，您可以輕鬆地分享案例的連結、開啟事件，或是向您的 ServiceNow 組織要求變更。 若要與 ServiceNow 共用案例，請從案例動作中選取 [**案例動作**]  >  [**共用**]  >  **ServiceNow** 。 ServiceNow 與內幕風險管理的整合支援包含下列案例資訊和動作：
-    - **任務名稱**：新 ServiceNow 任務的名稱。
-    - 工作 **描述**：新增 ServiceNow 任務的描述。 此可編輯的描述欄位會自動包含「內幕風險管理案例」的連結。
-    - 工作 **類型**：新 ServiceNow 任務的工作類型，也就是 *事件* 或 *變更要求* 的任務類型。
-    - **Priority**：新 ServiceNow 工作的優先順序，也就是 *規劃*、 *低*、 *適中*、 *高* 或 *嚴重*。
-    - **到期日**：所要求的完成 ServiceNow 任務的日期。
-
-![與 ServiceNow 的內幕人員風險管理共用](../media/insider-risk-share-servicenow.png)
-
-- **電子郵件**：共用電子郵件中的「內幕人員風險管理案例」連結。 您可以選擇使用此共用選項的任何本機設定的電子郵件用戶端。 若要與電子郵件共用案例連結， 請選取  >  [從案例動作工具列共用 **電子郵件**]。
-- **複製連結**：複製「內部使用者風險管理」案例的連結到您的剪貼簿。 若要將案例連結複製到您的剪貼簿，請選取  >  [案例動作] 工具列中的 [共用 **副本**] 連結。
 
 ### <a name="resolve-the-case"></a>解決案例
 

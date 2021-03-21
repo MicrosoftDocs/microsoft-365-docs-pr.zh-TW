@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: 瞭解如何檢查用戶端電腦連線的記錄，以協助您及早偵測新興的問題。
-ms.openlocfilehash: 2337b14542f894e9a62037b2f032632147e45e09
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 87b1d43df560fc7fea5aadfbf1c422eb22883067
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688520"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928141"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>使用基準與效能歷程記錄調整 Office 365 效能
 
@@ -44,7 +44,7 @@ ms.locfileid: "46688520"
 Office 365 位於高容量、專用的 Microsoft 網路內，但不只是透過自動化，而是由實際人員監控。 維護 Office 365 雲端的一部分角色是建立基礎效能調整，並在可能的地方簡化。 由於 Office 365 雲端的用戶端必須透過網際網路連線，因此也會持續不斷地微調不同 Office 365 服務的效能。 效能的增強功能永遠不會在雲端中停止，而且讓雲端保持良好和快速，有許多積累的經驗。 如果您遇到效能問題，請從您的位置連線到 Office 365，最好不要從支援案例開始，也請稍候。 相反地，您應該開始從 ' 內部向內」調查問題。 也就是說，請從您的網路內部開始，並以您的方式處理至 Office 365。 在您使用 Office 365 支援來開啟案例之前，您可以收集資料，並採取動作，以探索、可能解決問題。
   
 > [!IMPORTANT]
-> 請注意 Office 365 的容量規劃和限制。 當您嘗試解決效能問題時，該資訊會讓您排在曲線的上方。 以下是 [Microsoft 365 和 Office 365 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)的連結。 這是中央中樞，Office 365 提供的所有服務都有從這裡移至其本身服務描述的連結。 也就是說，您必須查看 SharePoint 線上的標準限制，例如，您可以按一下 [ [SharePoint 線上服務描述](https://technet.microsoft.com/library/sharepoint-online-service-description.aspx) ] 並找到其 SharePoint 的「 [線上限制」區段](https://go.microsoft.com/fwlink/p/?LinkID=856113)。 
+> 請注意 Office 365 的容量規劃和限制。 當您嘗試解決效能問題時，該資訊會讓您排在曲線的上方。 以下是 [Microsoft 365 和 Office 365 服務說明](/office365/servicedescriptions/office-365-service-descriptions-technet-library)的連結。 這是中央中樞，Office 365 提供的所有服務都有從這裡移至其本身服務描述的連結。 也就是說，您必須查看 SharePoint 線上的標準限制，例如，您可以按一下 [ [SharePoint 線上服務描述](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) ] 並找到其 SharePoint 的「 [線上限制」區段](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)。 
   
 請務必進行疑難排解，讓您瞭解效能是可調式的比例，它不是 idealized 值，也不會永久維護 (如果您認為這是如此，那麼就像是大量的使用者，或執行大型資料移轉時，可能會非常緊張--因此，請先將效能影響的計畫) 。 您可以，也應該會大致瞭解效能目標，但是許多變數在效能上會有許多作用，因此效能會不同。 這就是效能的性質。 
   
@@ -58,7 +58,7 @@ Office 365 位於高容量、專用的 Microsoft 網路內，但不只是透過�
   
 ![Office 365 Health 儀表板，所有工作負載顯示綠色，除了 Exchange，顯示服務已還原。](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
-此時，Office 365 系統管理員應該檢查 **目前的健全狀況** ，然後 **查看詳細資料和記錄**，以維持我們對系統所執行之維護的最新資訊。 **目前的健全狀況**儀表板是用來更新服務的變更和問題。 在狀況歷史記錄中寫入的附注和說明，可協助您估量影響，並讓您在日常工作中順利發表。 
+此時，Office 365 系統管理員應該檢查 **目前的健全狀況** ，然後 **查看詳細資料和記錄**，以維持我們對系統所執行之維護的最新資訊。 **目前的健全狀況** 儀表板是用來更新服務的變更和問題。 在狀況歷史記錄中寫入的附注和說明，可協助您估量影響，並讓您在日常工作中順利發表。 
   
 ![Office 365 health 儀表板的圖片，說明 Exchange Online 服務已還原，以及原因。](../media/66609554-426a-4448-8be6-ea09817f41ba.PNG)
   
@@ -237,7 +237,7 @@ Office 365 位於高容量、專用的 Microsoft 網路內，但不只是透過�
   
 來回行程時間（或 RTT）是一個數值，用來測量傳送 HTTP 要求給伺服器（如 outlook.office365.com）的時間，並取得回應，以確認伺服器知道您已執行。 您有時會看到此縮寫為 RTT。 這應該是相對短的時間量。
   
-您必須使用 [PSPing](https://technet.microsoft.com/sysinternals/jj729731.aspx) 或其他不使用 Office 365 所封鎖之 ICMP 封包的工具，才能執行此測試。 
+您必須使用 [PSPing](/sysinternals/downloads/psping) 或其他不使用 Office 365 所封鎖之 ICMP 封包的工具，才能執行此測試。 
   
  **如何使用 PsPing 直接從 Office 365 URL 取得整體來回行程時間（以毫秒為單位）**
   
@@ -265,7 +265,7 @@ Office 365 位於高容量、專用的 Microsoft 網路內，但不只是透過�
   
 ![圖形，顯示用戶端對 proxy 的 PSPing，並以2.8 毫秒為單位的往返時間的說明。](../media/96901aea-1093-4f1b-b5a3-6078e9035e6c.png)
   
-如果您不熟悉 proxy 旁路，而且喜歡採取逐步的動作，您必須先找出 proxy 伺服器的名稱。 在 internet Explorer 中，移至 [**工具** \> **網際網路選項**] [連線 \> **Connections** \> **局域網設定**] [ \> **高級**]。 [ **高級** ] 索引標籤是您會看到所列 proxy 伺服器的所在位置。 完成此工作以在命令提示字元上 Ping 該 proxy 伺服器： 
+如果您不熟悉 proxy 旁路，而且喜歡採取逐步的動作，您必須先找出 proxy 伺服器的名稱。 在 internet Explorer 中，移至 [**工具** \> **網際網路選項**] [連線 \>  \> **局域網設定**] [ \> **高級**]。 [ **高級** ] 索引標籤是您會看到所列 proxy 伺服器的所在位置。 完成此工作以在命令提示字元上 Ping 該 proxy 伺服器： 
   
  **Ping proxy 伺服器並取得階段1到2的來回行程值（毫秒）**
   
@@ -327,7 +327,6 @@ Office 365 位於高容量、專用的 Microsoft 網路內，但不只是透過�
   
 若要解決效能問題，  *現在*  您必須在遇到效能問題時進行追蹤。 您必須具有適當的工具來收集記錄，而且您需要一個行動計畫，也就是要採取的疑難排解動作清單，以收集您可以使用的最佳資訊。 您要做的第一件事是記錄測試的日期和時間，使檔案可以儲存在反映該計時的資料夾中。 接下來，向下縮小問題的步驟。 以下是您將用來進行測試的確切步驟。 別忘了基礎：如果問題只是 Outlook 的問題，請務必將問題行為記錄在只有一個 Office 365 服務中發生。 縮小此問題的範圍，可協助您將注意力集中于您可以解決的問題。 
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [管理 Office 365 端點](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
-

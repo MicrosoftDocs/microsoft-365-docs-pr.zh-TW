@@ -19,12 +19,12 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: 在2017年10月10日，project Server 2007、專案公事包伺服器及專案2007的支援結束。 請立即使用本文規劃升級。
-ms.openlocfilehash: f59b319ec39c6b2d1df0876c916332491f1bb0f6
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 12447eb2a021b3f92e3557b2c3ea87e859841346
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519796"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927345"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Project Server 2007 終止支援藍圖
 
@@ -76,7 +76,7 @@ ms.locfileid: "49519796"
   
 - 從 Project Server 2007 **取得 Microsoft 合作夥伴的協助** 會非常困難，而且需要進行許多準備和規劃。 如果您不是最初設定 Project Server 2007 的人員，可能特別有挑戰性。 幸運的是，Microsoft 協力廠商可以協助您，不論您計畫要遷移至 Project Server 2016 或 Project Online。 搜尋 Microsoft 合作夥伴，以協助您在 [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=841249)上進行遷移。 在「  *黃金專案」和「產品群組管理* 」上進行搜尋，以查看所有在 Project 中具備專業知識的 Microsoft 合作夥伴清單。 
     
-- **規劃自訂** -許多您在 project server 2007 環境中所做的自訂，當您遷移至 project server 2016 或 project Online 時，可能無法運作。 在不同的版本之間，Project Server 架構的差異很大。 所支援的作業系統、資料庫伺服器及用戶端網頁瀏覽器也不同。 規劃如何測試或重新建立新環境的自訂專案。 規劃也為考慮是否仍需要每個自訂專案提供了一個不錯的機會。 如需詳細資訊，請參閱＜[Create a plan for current customizations during upgrade to SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=842061)＞。 
+- **規劃自訂** -許多您在 project server 2007 環境中所做的自訂，當您遷移至 project server 2016 或 project Online 時，可能無法運作。 在不同的版本之間，Project Server 架構的差異很大。 所支援的作業系統、資料庫伺服器及用戶端網頁瀏覽器也不同。 規劃如何測試或重新建立新環境的自訂專案。 規劃也為考慮是否仍需要每個自訂專案提供了一個不錯的機會。 如需詳細資訊，請參閱＜[Create a plan for current customizations during upgrade to SharePoint 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)＞。 
     
 - **時間和耐心** 升級的規劃、執行及測試需要時間和精力，尤其是在您升級至 Project Server 2016 時。 例如，如果您從 Project Server 2007 遷移至 Project Server 2016，您必須先遷移至 Project Server 2010，檢查您的資料，然後在遷移至每個後續版本時執行相同的動作。 您可能想要與 Microsoft 合作夥伴核對，以取得所需的時間及成本的預估。
     
@@ -95,7 +95,7 @@ ms.locfileid: "49519796"
 |**資源**|**描述**|
 |:-----|:-----|
 |[Project Online 快速入門](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11) <br/> |如何設定和使用 Project Online <br/> |
-|[Project Online 服務說明](https://go.microsoft.com/fwlink/p/?linkid=829088) <br/> |可供您使用之不同 Project Online 方案的相關資訊 <br/> |
+|[Project Online 服務說明](/office365/servicedescriptions/project-online-service-description/project-online-service-description) <br/> |可供您使用之不同 Project Online 方案的相關資訊 <br/> |
    
 ## <a name="migrate-to-a-newer-on-premises-version-of-project-server"></a>遷移至較新的內部部署版本的 Project Server
 
@@ -124,18 +124,18 @@ Project Server 2007 與 Project Server 2016 之間的架構差異會防止直接
   
 ### <a name="step-1-migrate-from-project-server-2007-to-project-server-2010"></a>步驟1：從 Project Server 2007 遷移至 Project Server 2010
 
-如需從 Project Server 2007 升級至 Project Server 2010 所需執行之作業的完整說明，請參閱 [upgrade To Project server 2010](https://go.microsoft.com/fwlink/p/?linkid=841812)。
+如需從 Project Server 2007 升級至 Project Server 2010 所需執行之作業的完整說明，請參閱 [upgrade To Project server 2010](/previous-versions/office/project-server-2010/gg502590(v=office.14))。
   
 主要資源：
   
 |**資源**|**描述**|
 |:-----|:-----|
-|[Project Server 2010 升級概述](https://go.microsoft.com/fwlink/p/?linkid=841813) <br/> |從 Project Server 2007 升級至 Project Server 2010 時，所需執行之作業的高層次視圖 <br/> |
-|[規劃升級到 Project Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841815) <br/> |從 Project Server 2007 升級為 Project Server 2010 （包括系統需求）時的規劃考慮  <br/> |
+|[Project Server 2010 升級概述](/previous-versions/office/project-server-2010/ee662496(v=office.14)) <br/> |從 Project Server 2007 升級至 Project Server 2010 時，所需執行之作業的高層次視圖 <br/> |
+|[規劃升級到 Project Server 2010](/previous-versions/office/project-server-2010/ff603505(v=office.14)) <br/> |從 Project Server 2007 升級為 Project Server 2010 （包括系統需求）時的規劃考慮  <br/> |
    
 #### <a name="how-do-i-upgrade"></a>如何升級？
 
-如需詳細資訊，請參閱 [升級至 Project Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841812)。 不過，請務必瞭解，您可以使用兩種不同的方法來進行升級：
+如需詳細資訊，請參閱 [升級至 Project Server 2010](/previous-versions/office/project-server-2010/gg502590(v=office.14))。 不過，請務必瞭解，您可以使用兩種不同的方法來進行升級：
   
 - **資料庫附加升級：** 此方法只會升級環境的內容，而不是設定設定。 如果您是從 Office Project Server 2007 （只支援32作業系統的硬體）進行升級，則需要此專案。 資料庫附加升級方法有兩種類型：
     
@@ -147,42 +147,42 @@ Project Server 2007 與 Project Server 2016 之間的架構差異會防止直接
     
 其他資源：
   
-- [Microsoft Project Server 2010 升級的 SuperFlow](https://go.microsoft.com/fwlink/p/?linkid=841277)
+- [Microsoft Project Server 2010 升級的 SuperFlow](/samples/browse/?redirectedfrom=TechNet-Gallery)
     
-- [從 Project Server 2007 遷移至 Project Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841278)
+- [從 Project Server 2007 遷移至 Project Server 2010](/samples/browse/?redirectedfrom=TechNet-Gallery)
     
-- [Project Web App 網頁元件的升級考慮](https://go.microsoft.com/fwlink/p/?linkid=841276)
+- [Project Web App 網頁元件的升級考慮](/previous-versions/office/project-server-2010/gg314581(v=office.14))
     
-- [專案軟體發展工具組 (SDK) ](https://go.microsoft.com/fwlink/p/?linkid=841275)
+- [專案軟體發展工具組 (SDK) ](/previous-versions/office/developer/office-2010/ms481966(v=office.14))
     
 ### <a name="step-2-migrate-to-project-server-2013"></a>步驟2：遷移至 Project Server 2013
 
 在您確認資料順利遷移後，下一步是遷移至 Project Server 2013。
   
-如需從 Project Server 2010 升級至 Project Server 2013 所需執行之作業的完整說明，請參閱 [upgrade To Project server 2013](https://go.microsoft.com/fwlink/p/?linkid=841822)。 
+如需從 Project Server 2010 升級至 Project Server 2013 所需執行之作業的完整說明，請參閱 [upgrade To Project server 2013](/project/upgrade-to-project-server-2016)。 
   
 主要資源：
   
 |**資源**|**描述**|
 |:-----|:-----|
-|[Project Server 2013 升級程式概述](https://go.microsoft.com/fwlink/p/?linkid=841822) <br/> |從 Project Server 2010 升級至 Project Server 2013 時，所需執行的工作  <br/> |
-|[規劃升級到 Project Server 2013](https://go.microsoft.com/fwlink/p/?linkid=841823) <br/> |從 Project Server 2010 升級為 Project Server 2013 （包括系統需求）時的規劃考慮 <br/> |
+|[Project Server 2013 升級程式概述](/project/upgrade-to-project-server-2016) <br/> |從 Project Server 2010 升級至 Project Server 2013 時，所需執行的工作  <br/> |
+|[規劃升級到 Project Server 2013](/project/plan-for-upgrade-to-project-server-2016) <br/> |從 Project Server 2010 升級為 Project Server 2013 （包括系統需求）時的規劃考慮 <br/> |
    
 #### <a name="things-to-know-about-upgrading-to-this-version"></a>升級至此版本的相關事項
 
-[Project Server 2013 升級的新功能](https://go.microsoft.com/fwlink/p/?linkid=841824) 說明此版本升級的重要變更。 最值得注意的是： 
+[Project Server 2013 升級的新功能](/project/what-s-new-in-project-server-2013-upgrade) 說明此版本升級的重要變更。 最值得注意的是： 
   
 - 沒有就地升級至 Project Server 2013。 資料庫附加方法是唯一支援的方法，可從 Project Server 2010 升級至 Project Server 2013。
     
 - 升級程式不僅會將您的 Project Server 2010 資料轉換成 Project Server 2013 格式，還會將這四個 Project Server 2010 資料庫合併成單一 Project Web App 資料庫。
     
-- 在2013版本中，SharePoint Server 和 Project Server 都會變更為宣告式驗證。 如果您使用的是傳統驗證，則必須考慮升級的這一因素。 如需詳細資訊，請參閱＜[在 SharePoint 2013 中從傳統模式移轉至宣告式驗證](https://go.microsoft.com/fwlink/p/?linkid=841825)＞。
+- 在2013版本中，SharePoint Server 和 Project Server 都會變更為宣告式驗證。 如果您使用的是傳統驗證，則必須考慮升級的這一因素。 如需詳細資訊，請參閱＜[在 SharePoint 2013 中從傳統模式移轉至宣告式驗證](/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server)＞。
     
 其他資源：
   
-- [升級到 Project Server 2013 的升級程序概觀](https://go.microsoft.com/fwlink/p/?linkid=841274)
+- [升級到 Project Server 2013 的升級程序概觀](/project/overview-of-the-project-server-2016-upgrade-process)
     
-- [升級您的資料庫與 Project Web App 網站集合 (Project Server 2013)](https://go.microsoft.com/fwlink/p/?linkid=841272)
+- [升級您的資料庫與 Project Web App 網站集合 (Project Server 2013)](/project/upgrading-to-project-server-2016)
     
 - [Microsoft Project Server 升級過程圖表](https://go.microsoft.com/fwlink/p/?linkid=841270)
     
@@ -192,20 +192,20 @@ Project Server 2007 與 Project Server 2016 之間的架構差異會防止直接
 
 在您確認資料順利遷移後，下一步是遷移至 Project Server 2016。
   
-如需從 Project Server 2013 升級至 Project Server 2016 所需執行之作業的完整說明，請參閱 [upgrade To Project server 2016](https://docs.microsoft.com//project/upgrading-to-project-server-2016)。
+如需從 Project Server 2013 升級至 Project Server 2016 所需執行之作業的完整說明，請參閱 [upgrade To Project server 2016](//project/upgrading-to-project-server-2016)。
   
 主要資源：
   
 |**資源**|**描述**|
 |:-----|:-----|
-|[Project Server 2016 升級程序概觀](https://go.microsoft.com/fwlink/p/?linkid=841260) <br/> |從 Project Server 2013 升級至 Project Server 2016 時，所需執行的工作 <br/> |
-|[規劃升級到 Project Server 2016](https://go.microsoft.com/fwlink/p/?linkid=841826) <br/> |從 Project Server 2013 升級為 Project Server 2016 的規劃考慮 <br/> |
+|[Project Server 2016 升級程序概觀](/previous-versions/office/project-server-2010/ee662104(v=office.14)) <br/> |從 Project Server 2013 升級至 Project Server 2016 時，所需執行的工作 <br/> |
+|[規劃升級到 Project Server 2016](/project/plan-for-upgrade-to-project-server-2016) <br/> |從 Project Server 2013 升級為 Project Server 2016 的規劃考慮 <br/> |
    
 #### <a name="things-to-know-about-upgrading-to-this-version"></a>升級至此版本的相關事項
 
-[關於 Project Server 2016 升級，您需要瞭解的事項](https://go.microsoft.com/fwlink/p/?linkid=841827) 會告訴您，此版本的升級有重要的變更，包括：
+[關於 Project Server 2016 升級，您需要瞭解的事項](/project/plan-for-upgrade-to-project-server-2016) 會告訴您，此版本的升級有重要的變更，包括：
   
-- 當您建立要遷移 Project Server 2013 資料的 Project Server 2016 環境時，Project Server 2016 安裝檔案會包含在 SharePoint Server 2016 中。 如需詳細資訊，請參閱 [部署 Project Server 2016](https://go.microsoft.com/fwlink/p/?linkid=841829)。
+- 當您建立要遷移 Project Server 2013 資料的 Project Server 2016 環境時，Project Server 2016 安裝檔案會包含在 SharePoint Server 2016 中。 如需詳細資訊，請參閱 [部署 Project Server 2016](/project/deploy-project-server-2016)。
     
 - 資源計劃在 Project Server 2016 中已被取代。 您的 Project Server 2013 資源計劃將遷移至 Project Server 2016 和 Project Online 中的資源預訂。 如需詳細資訊，請參閱 [綜述： Resource 預訂](https://support.office.com/article/73eefb5a-81fe-42bf-980e-9532b1bdc870) 。 
     
@@ -215,7 +215,7 @@ Project Server 2007 與 Project Server 2016 之間的架構差異會防止直接
   
 其他資源：
   
-- [Project Online 服務說明：](https://go.microsoft.com/fwlink/p/?linkid=841280) 請參閱 Project Server 2016 和 Project Online Premium 中包含的產品群組管理功能。
+- [Project Online 服務說明：](/office365/servicedescriptions/project-online-service-description/project-online-service-description) 請參閱 Project Server 2016 和 Project Online Premium 中包含的產品群組管理功能。
     
 - [Microsoft Office 專案公事包伺服器2007遷移指南。](https://go.microsoft.com/fwlink/p/?linkid=841279)
     
@@ -224,4 +224,3 @@ Project Server 2007 與 Project Server 2016 之間的架構差異會防止直接
 [SharePoint Server 2007 終止支援藍圖](sharepoint-2007-end-of-support.md)
   
 [協助您從 Office 2007 伺服器及用戶端升級的資源](upgrade-from-office-2007-servers-and-products.md)
-  

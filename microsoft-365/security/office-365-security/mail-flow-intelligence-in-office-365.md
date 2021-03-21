@@ -14,12 +14,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 系統管理員可以深入瞭解與使用 (連接器（也稱為「郵件流程情報」) ）相關聯之郵件傳遞的錯誤碼。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32a98459ce3d3494e576b10d5c5b097393ee2335
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: f9cd05664d055b1635583c24000ca4afa604b237
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289660"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926865"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP 中的郵件流程情報
 
@@ -74,7 +74,7 @@ ms.locfileid: "50289660"
 
 - 若您的內部部署環境中未傳遞任何郵件，請按一下警示中的 [ **立即修正** ]，讓 Microsoft 365 可以立即拒絕具有無效收件者的郵件。 這會降低超出組織的配額以取得無效收件者的風險，這可能會影響一般郵件傳遞。 或者，您可以使用下列指示以手動修正問題：
 
-  - 在 [Exchange 系統管理中心中 (EAC) ](https://docs.microsoft.com/Exchange/exchange-admin-center)中，停用或刪除將電子郵件從 Microsoft 365 傳送至您的內部部署電子郵件環境的連接器：
+  - 在 [Exchange 系統管理中心中 (EAC) ](/Exchange/exchange-admin-center)中，停用或刪除將電子郵件從 Microsoft 365 傳送至您的內部部署電子郵件環境的連接器：
 
     1. 在 EAC 中，移至 [ **郵件流程** \> **連接器**]。
 
@@ -84,7 +84,7 @@ ms.locfileid: "50289660"
 
        - 按一下 [ **編輯** ![ 編輯圖示] ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 並清除 [ **關閉**] 以停用連接器。
 
-  - 將與您的內部部署電子郵件環境關聯的 Microsoft 365 中公認的網域從 **內部轉送** 變更為 **權威性**。 如需相關指示，請參閱 [管理 Exchange Online 中公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+  - 將與您的內部部署電子郵件環境關聯的 Microsoft 365 中公認的網域從 **內部轉送** 變更為 **權威性**。 如需相關指示，請參閱 [管理 Exchange Online 中公認的網域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
   **附注**：一般會有30分鐘到1小時的變更才會生效。 一小時後，請確認您不再收到錯誤。
 

@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明如何準備使用目錄同步處理將使用者布建至 Microsoft 365，以及使用此方法的長期優點。
-ms.openlocfilehash: e49cc4472b47320650d8a0ca90395b69ae5b6df7
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 1fe99247a5c50c7bb8fc7eb1347ce6a4cd6aad94
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371621"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927321"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>準備將目錄同步處理至 Microsoft 365
 
@@ -43,7 +43,7 @@ ms.locfileid: "49371621"
 - 選擇性啟用單一登入案例
 - 自動化 Microsoft 365 中的帳戶變更
 
-如需使用目錄同步處理之優點的詳細資訊，請參閱 [混合身分識別搭配 Azure Active directory (AZURE AD) ](https://go.microsoft.com/fwlink/p/?LinkId=525398) 和 [Microsoft 365 的混合身分識別](plan-for-directory-synchronization.md)。
+如需使用目錄同步處理之優點的詳細資訊，請參閱 [混合身分識別搭配 Azure Active directory (AZURE AD) ](/azure/active-directory/hybrid/whatis-hybrid-identity) 和 [Microsoft 365 的混合身分識別](plan-for-directory-synchronization.md)。
 
 不過，目錄同步處理需要規劃及準備，以確保您的 Active Directory 網域服務 (AD DS) 同步處理至您的 Microsoft 365 訂閱的 Azure AD 租使用者，但錯誤最低。
 
@@ -113,7 +113,7 @@ ms.locfileid: "49371621"
   - 屬性值在目錄中必須是唯一的。
 
     > [!NOTE]
-    > 在同步處理名稱中 ( "_" ) 會指出此屬性的原始值包含不正確字元。 如需此屬性的詳細資訊，請參閱 [Exchange alias 屬性](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)。
+    > 在同步處理名稱中 ( "_" ) 會指出此屬性的原始值包含不正確字元。 如需此屬性的詳細資訊，請參閱 [Exchange alias 屬性](/powershell/module/exchange/set-mailbox)。
     >
 
 - **proxyAddresses**

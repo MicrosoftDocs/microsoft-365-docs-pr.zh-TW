@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境，以使用密碼雜湊同步處理驗證的先決條件測試身分識別與裝置存取。
-ms.openlocfilehash: 8e8db4aae39acda0762f9b6394b23ab047727ea5
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3236c79e308f269c07146ff094c7ae27271b97fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233781"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928047"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中密碼雜湊同步處理的先決條件
 
@@ -57,7 +57,7 @@ ms.locfileid: "50233781"
 
 首先，判斷組織使用的公用 IP 位址或位址範圍。
 
-接下來，遵循[在 Azure Active Directory 中設定具名位置](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)中的指示，新增位址或位址範圍做為具名位置。 
+接下來，遵循[在 Azure Active Directory 中設定具名位置](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)中的指示，新增位址或位址範圍做為具名位置。 
 
 ## <a name="phase-4-configure-password-writeback"></a>階段 4：設定密碼回寫
 
@@ -89,11 +89,11 @@ ms.locfileid: "50233781"
 
 ## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>階段7：啟用加入網域的 Windows 電腦的自動裝置註冊 
 
-遵循 [下列指示](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) ，啟用已加入網域之 Windows 電腦的自動裝置註冊。
+遵循 [下列指示](/azure/active-directory/devices/hybrid-azuread-join-plan) ，啟用已加入網域之 Windows 電腦的自動裝置註冊。
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>階段8：設定 Azure AD 密碼保護 
 
-請遵循 [這些指示](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) 來封鎖已知的弱密碼及其變種。
+請遵循 [這些指示](/azure/active-directory/authentication/concept-password-ban-bad) 來封鎖已知的弱密碼及其變種。
 
 ## <a name="phase-9-enable-azure-ad-identity-protection"></a>階段9：啟用 Azure AD 身分識別保護
 
@@ -101,11 +101,11 @@ ms.locfileid: "50233781"
 
 ## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>階段10：為 Exchange Online 和商務用 Skype Online 啟用新式驗證
 
-若為 Exchange Online，請遵循[這些指示](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)。 
+若為 Exchange Online，請遵循[這些指示](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)。 
 
 若為商務用 Skype Online：
 
-1. 連線到[商務用 Skype Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
+1. 連線到[商務用 Skype Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 
 2. 執行此命令。
 
@@ -123,7 +123,7 @@ ms.locfileid: "50233781"
 
 ## <a name="next-step"></a>下一步
 
-使用[一般身分識別與裝置存取原則](identity-access-policies.md)來設定根據先決條件建置的原則，並保護身分識別與裝置。
+使用[一般身分識別與裝置存取原則](../security/office-365-security/identity-access-policies.md)來設定根據先決條件建置的原則，並保護身分識別與裝置。
 
 ## <a name="see-also"></a>請參閱
 
@@ -135,4 +135,4 @@ ms.locfileid: "50233781"
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 企業版文件](/microsoft-365-enterprise/)

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在保管人及其資料來源中放置保留，以保留您的高級 eDiscovery 案例中的相關內容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fbad81e93635f823fab1c4f44867760d00fc59ed
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838584"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926371"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高級 eDiscovery 中管理保留
 
@@ -80,7 +80,7 @@ ms.locfileid: "50838584"
       請參閱 **FAQ** 一節，以取得放置 Microsoft 365 群組和 microsoft 團隊保留的秘訣。
 
       > [!NOTE]
-      > 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`) 。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是非 custodial 保留的一部分，且其 UPN 已變更，您必須更新 [保留] 並指向新的 OneDrive URL。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
+      > 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`) 。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是非 custodial 保留的一部分，且其 UPN 已變更，您必須更新 [保留] 並指向新的 OneDrive URL。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](/onedrive/upn-changes) (英文)。
 
    1. **Exchange 公用資料夾** -將切換開關移至 [全部] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 請注意，您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [ **無** ]。
 
@@ -92,7 +92,7 @@ ms.locfileid: "50838584"
 
     - 按一下 [  **新增** 條件] 以新增一或多個條件，以縮小保留的搜尋查詢。 每個條件都會將子句新增至您建立保留時所建立並執行的 KQL 搜尋查詢。 例如，您可以指定日期範圍，讓在日期範圍內建立的電子郵件或網站檔處於暫止狀態。 條件會以 AND 運算子的邏輯方式連接至關鍵字查詢 (在關鍵字方塊中指定)。 這表示專案必須同時滿足關鍵字查詢和要置於保留狀態的條件。
 
-     如需建立搜尋查詢和使用條件的詳細資訊，請參閱 [內容搜尋的關鍵字查詢和搜尋條件](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions)。
+     如需建立搜尋查詢和使用條件的詳細資訊，請參閱 [內容搜尋的關鍵字查詢和搜尋條件](/office365/SecurityCompliance/keyword-queries-and-search-conditions)。
 
 11. 設定查詢型保留後，請按 **[下一步]**。
 

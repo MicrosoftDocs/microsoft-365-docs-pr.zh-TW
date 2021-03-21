@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: 本文提供匯出 Office 365 審計記錄檔結果時所包含之其他屬性的說明。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 250db03e7d330ed013909925b44f8d9843f1197d
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 69a34f4de948bc9533ef2872d94171134e50ffea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350699"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927071"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>稽核記錄中的詳細內容
 
@@ -32,7 +32,7 @@ ms.locfileid: "49350699"
   
  當您匯出審計記錄搜尋的所有結果時，會將統一審核記錄中的原始資料複製到以逗號分隔的值 (CSV) 檔案會下載至您的本機電腦。 此檔案包含名為 **AuditData** 欄中每個審計記錄的其他資訊。 此資料行包含來自審計記錄檔之多個屬性的多重值屬性。 此多重值屬性中的每個 **屬性：值** 組合都是以逗號分隔。 
   
-下表說明) 多重屬性 **AuditData** ] 欄中發生事件的服務 (所包含的屬性。 **具有此屬性欄的 Office 365 服務** 會指出包含此屬性的使用者或系統管理員) 的服務和活動類型 (。 如需這些屬性的詳細資訊，或是本主題中可能未列出的屬性，請參閱 [Management ACTIVITY API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993)。
+下表說明) 多重屬性 **AuditData** ] 欄中發生事件的服務 (所包含的屬性。 **具有此屬性欄的 Office 365 服務** 會指出包含此屬性的使用者或系統管理員) 的服務和活動類型 (。 如需這些屬性的詳細資訊，或是本主題中可能未列出的屬性，請參閱 [Management ACTIVITY API Schema](/office/office-365-management-api/office-365-management-activity-api-schema)。
   
 > [!TIP]
 > 您可以在 Excel 的 Power Query 中使用 JSON 轉換功能，將 **AuditData** 欄分割成多個欄，使每個屬性都有自己的資料行。 這樣您就可以排序及篩選一或多個屬性。 若要瞭解如何執行這項操作，請參閱 [匯出、設定及查看審核記錄](export-view-audit-log-records.md)檔。 
@@ -45,7 +45,7 @@ ms.locfileid: "49350699"
 |AzureActiveDirectoryEventType|Azure Active Directory 事件的類型。 下列值表示事件的類型。  <br/> **0** -表示帳戶登入事件。<br/> **1** -表示 Azure 應用程式安全性事件。|Azure Active Directory|
 |ChannelGuid|Microsoft 小組通道的識別碼。 通道所在的團隊是由 **TeamName** 和 **TeamGuid** 屬性識別。|Microsoft Teams|
 |ChannelName|Microsoft 小組通道的名稱。 通道所在的團隊是由 **TeamName** 和 **TeamGuid** 屬性識別。|Microsoft Teams|
-|Client|用於登入事件的用戶端裝置、裝置 OS 和裝置瀏覽器 (例如 Nokia Lumia 920;Windows Phone 8;IE Mobile 11) 。|Azure Active Directory|
+|用戶端|用於登入事件的用戶端裝置、裝置 OS 和裝置瀏覽器 (例如 Nokia Lumia 920;Windows Phone 8;IE Mobile 11) 。|Azure Active Directory|
 |ClientInfoString|用於執行作業的電子郵件客戶程式資訊，例如瀏覽器版本、Outlook 版本及行動裝置資訊|Exchange (信箱活動) |
 |ClientIP|記錄活動時所使用之裝置的 IP 位址。 IP 位址會以 IPv4 或 IPv6 位址格式顯示。<br/><br/> 針對某些服務，此內容中顯示的值可能是受信任應用程式的 IP 位址 (例如，web 應用程式上的 Office) 代表使用者呼叫服務，而不是執行活動之人員所使用的裝置 IP 位址。 <br/><br/>此外，針對管理活動 (或由系統帳戶) 針對 Azure Active Directory 相關事件執行的活動，不會記錄 IP 位址，ClientIP 屬性的值則是 `null` 。 |Azure Active Directory、Exchange SharePoint|
 |CreationTime|當使用者執行活動時，在協調世界時 (UTC) 的日期和時間。|全部|
@@ -69,7 +69,7 @@ ms.locfileid: "49350699"
 |OrganizationId|組織的 GUID。|全部|
 |路徑|所存取郵件所在的信箱資料夾名稱。 此屬性也會識別建立郵件所在的資料夾 a 或複製/移至該資料夾。|Exchange (信箱活動) |
 |參數|針對 Exchange 系統管理活動，所有參數的名稱和值都是與 Operation 屬性中識別的指令程式搭配使用。|Exchange (管理活動) |
-|RecordType|由 record 指示的作業類型。 此屬性會指出觸發作業的服務或功能。 如需記錄類型的清單及其對應的列舉值 (是顯示在 [審計記錄]) 中 **RecordType** 屬性的值，請參閱「 [審核記錄」記錄類型](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。| 
+|RecordType|由 record 指示的作業類型。 此屬性會指出觸發作業的服務或功能。 如需記錄類型的清單及其對應的列舉值 (是顯示在 [審計記錄]) 中 **RecordType** 屬性的值，請參閱「 [審核記錄」記錄類型](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。| 
 |ResultStatus|會指出 **作業屬性)** 中 (指定的動作是否成功。  <br/> 若為 Exchange 系統管理員活動，此值為 **True** (成功) 或 **False** () 失敗。|全部  <br/>|
 |SecurityComplianceCenterEventType|表示活動為安全性 & 規範中心事件。 所有安全性 & 規範中心活動的值都為 **0** ，此屬性。|安全性與合規性中心|
 |SharingType|指派給共用資源之使用者的共用許可權類型。 此使用者已在 **UserSharedWith** 屬性中識別。|SharePoint|

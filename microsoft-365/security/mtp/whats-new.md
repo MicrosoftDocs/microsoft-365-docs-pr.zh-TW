@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1f5fa231c371ca7a8d6a22ca0b4ff388fd89004c
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 5de805784b2772b0169b2ad2a503e9378b82fda7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711913"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927093"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) ，或 [在實際執行中執行您的試驗專案](./mtp-pilot.md?ocid=cx-evalpilot)。
 >
 
 在最新版本的 Microsoft 365 Defender 中， (GA) 一般都有下列功能可供使用。
@@ -39,10 +39,10 @@ RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此�
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
-## <a name="march-2021"></a>2021年3月
+## <a name="march-2021"></a>2021 年 3 月
 - [CloudAppEvents 表格](advanced-hunting-cloudappevents-table.md) <br>尋找 Microsoft Cloud App Security 涵蓋的各種雲端應用程式和服務中的事件資訊。 此表格也包含先前在中提供的資訊 `AppFileEvents` 。
 ## <a name="february-2021"></a>2021 年 2 月
--  (預覽) 增強型[Microsoft 365 安全性中心 (https://security.microsoft.com) ](https://security.microsoft.com)現在已提供公開預覽。 這種新的經驗會將適用于 Office 365 的 Defender 和 Defender 帶入中央。 [深入瞭解已變更的](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)專案。
+-  (預覽) 增強型[Microsoft 365 安全性中心 (https://security.microsoft.com) ](https://security.microsoft.com)現在已提供公開預覽。 這種新的經驗會將適用于 Office 365 的 Defender 和 Defender 帶入中央。 [深入瞭解已變更的](./overview-security-center.md)專案。
 
 ## <a name="september-2020"></a>2020 年 9 月
 - [IdentityDirectoryEvents 表格](advanced-hunting-identitydirectoryevents-table.md) <br> 尋找與執行 Active Directory (AD) 之內部部署網域控制站有關的事件。 這個 [高級搜尋](advanced-hunting-overview.md) 架構表涵蓋網域控制站上的身分識別相關事件及系統事件範圍。
@@ -69,4 +69,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2019"></a>2019 年 3 月
 - 進階搜捕 <br> 可讓您主動找到影響電子郵件和資料、裝置和身分識別之威脅的各種搜尋功能的登陸頁面。
 - [Microsoft 安全分數](microsoft-secure-score.md) <br> 度量組織的安全性狀況，其值越高，表示採取的改善動作越多。 遵循安全性分數建議可保護您的組織免受威脅。 
-- [報告](monitoring-and-reporting.md) <br>  可提供一系列的功能，涵蓋安全分析員和系統管理員在日常作業中所追蹤的各種區域。
+- [報告](./overview-security-center.md) <br>  可提供一系列的功能，涵蓋安全分析員和系統管理員在日常作業中所追蹤的各種區域。

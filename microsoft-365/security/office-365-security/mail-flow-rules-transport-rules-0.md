@@ -13,12 +13,12 @@ ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 您可以使用郵件流程規則 (傳輸規則) 識別並對透過您組織的郵件採取動作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d189a9f4b21828fa4e23f7d5a325b4e9c56259bc
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7f3edb8b764df0699a9837fc1ce261837c636255
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289934"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926841"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>獨立版 EOP 中的郵件流程規則 (傳輸規則)
 
@@ -33,17 +33,17 @@ ms.locfileid: "50289934"
 
 本主題說明郵件流程規則的元件和它們的運作方式。
 
-如需建立、複製和管理郵件流程規則的步驟，請參閱 [管理 Exchange Online 中的郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) (部分內容為機器翻譯)。 針對每個規則，您可以選擇強制執行規則、測試規則，或測試規則並通知寄件者。 若要深入了解測試選項，請參閱[測試郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)和 [Exchange Online 中的原則提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips) (部分內容為機器翻譯)。
+如需建立、複製和管理郵件流程規則的步驟，請參閱 [管理 Exchange Online 中的郵件流程規則](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) (部分內容為機器翻譯)。 針對每個規則，您可以選擇強制執行規則、測試規則，或測試規則並通知寄件者。 若要深入了解測試選項，請參閱[測試郵件流程規則](/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)和 [Exchange Online 中的原則提示](/exchange/security-and-compliance/data-loss-prevention/policy-tips) (部分內容為機器翻譯)。
 
-如需符合郵件流程規則之郵件的摘要和詳細報告，請參閱 [Use mail protection reports，以查看有關惡意程式碼、垃圾郵件和規則](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)偵測的資料。
+如需符合郵件流程規則之郵件的摘要和詳細報告，請參閱 [Use mail protection reports，以查看有關惡意程式碼、垃圾郵件和規則](/exchange/monitoring/use-mail-protection-reports)偵測的資料。
 
 若要使用郵件流程規則實作特定的訊息原則，請參閱下列主題︰
 
-- [使用郵件流程規則來檢查 Exchange Online 中的郵件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+- [使用郵件流程規則來檢查 Exchange Online 中的郵件附件](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [設定 Office 365 企業版中的加密](../../compliance/set-up-encryption.md)
 
-- [Exchange Online 中的全組織郵件免責聲明、簽名、頁尾或頁首](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) (部分內容為機器翻譯)
+- [Exchange Online 中的全組織郵件免責聲明、簽名、頁尾或頁首](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) (部分內容為機器翻譯)
 
 - [使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
@@ -63,13 +63,13 @@ ms.locfileid: "50289934"
 
 - **條件**：識別您要套用動作的郵件。 有些條件會檢查郵件標頭欄位 (例如 [收件者]、[寄件者] 或 [副本] 欄位)。 有些條件則會檢查郵件屬性 (例如郵件主旨、內文、附件、郵件大小或郵件分類)。 在使用大部分的條件時，您都必須指定比較運算子 (例如等於、不等於或包含) 以及要比對的值。 如果沒有條件或例外狀況，則規則會套用至所有郵件。
 
-如需獨立 EOP 中郵件流程規則條件的詳細資訊，請參閱 [郵件流程規則條件和例外狀況 () 在 Exchange Online 中](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+如需獨立 EOP 中郵件流程規則條件的詳細資訊，請參閱 [郵件流程規則條件和例外狀況 () 在 Exchange Online 中](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
 - **例外狀況**：選擇性地識別不應該套用動作的郵件。 可在條件中使用的訊息識別碼也可用於例外狀況。 例外狀況可覆寫條件並防止規則動作套用到郵件，即使郵件符合所有設定的條件也是如此。
 
 - **動作**：指定對於符合規則中的條件，但不符合任何例外狀況的郵件，所應採取的動作。 有許多動作可用，例如，拒絕、刪除或重新導向郵件、新增其他收件者、在郵件主旨中新增前置詞，或是將免責聲明插入郵件內文。
 
-如需獨立 EOP 中可用之郵件流程規則動作的詳細資訊，請參閱 [mail flow rule actions In Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+如需獨立 EOP 中可用之郵件流程規則動作的詳細資訊，請參閱 [mail flow rule actions In Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
 - **屬性**：指定其他不是條件、例外狀況或動作的規則設定。 例如，何時應套用規則、是否強制執行或測試規則，以及規則作用中的時間週期。
 
@@ -139,8 +139,8 @@ ms.locfileid: "50289934"
 
 ## <a name="for-more-information"></a>如需詳細資訊
 
-[使用郵件流程規則來檢查 Exchange Online 中的郵件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+[使用郵件流程規則來檢查 Exchange Online 中的郵件附件](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 [Office 365 中的電子郵件加密](../../compliance/email-encryption.md)
 
-[日誌、傳輸和收件匣規則限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)
+[日誌、傳輸和收件匣規則限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 實施 Microsoft 資訊保護 (MIP) 可協助您保護敏感性資訊，無論這些資料儲存在某處在或傳輸中。
-ms.openlocfilehash: b65f5ea2d4c24bc1c2ef2a34e25150446902d940
-ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
+ms.openlocfilehash: 285b5885f56151bcbd877eb6ede04447c7a405dc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50572615"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927037"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>請參閱 Microsoft 365 中的 Microsoft 資訊保護。
 
->*[Microsoft 365 安全性與合規性的授權](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+>*[Microsoft 365 安全性與合規性的授權](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 實施 Microsoft 資訊保護 (MIP) 可協助您探索、分類及保護敏感性資訊，無論這些資料儲存在某處在或傳輸中。
 
@@ -39,7 +39,7 @@ MIP 功能隨附於 Microsoft 365 合規性中，並提供工具以 [了解您�
 ## <a name="know-your-data"></a>了解您的資料
 
 > [!NOTE]
-> 如需在 Azure Purview 中分類資料和為資料加上標籤 (目前處於預覽) 的相關資訊，請參閱[在 Azure Purview 中自動為您的內容加上標籤](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
+> 如需在 Azure Purview 中分類資料和為資料加上標籤 (目前處於預覽) 的相關資訊，請參閱[在 Azure Purview 中自動為您的內容加上標籤](/azure/purview/create-sensitivity-label)。
 > 
 > 如需 Azure Purview 的發行公告，請參閱下列部落格文章：[Microsoft 資訊保護和 Microsoft Azure Purview：Better Together](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481) 和 [Azure Purview at Spring Ignite 2021](https://techcommunity.microsoft.com/t5/azure-purview/azure-purview-at-spring-ignite-2021/ba-p/2175919)。
 
@@ -58,16 +58,16 @@ MIP 功能隨附於 Microsoft 365 合規性中，並提供工具以 [了解您�
 
 |功能|需要解決的問題是什麼？|快速入門|
 |:------|:------------|---------------------|:----------------------------|
-|[敏感度標籤](sensitivity-labels.md)| 應用程式、服務和裝置上的單一解決方案，可讓您的資料在組織內部和外部傳輸時進行標記和保護。 <br /><br />範例案例： <br /> [管理 Office 應用程式的敏感度標籤](sensitivity-labels-office-apps.md)<br /> [加密文件和電子郵件](encryption-sensitivity-labels.md )<br /> [套用和查看 Power BI 中的標籤](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> 如需敏感度標籤的案例完整清單，請參閱 [開始使用文件]。|[開始使用敏感度標籤](get-started-with-sensitivity-labels.md) |
-|[Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| 針對 Windows 電腦，擴充敏感度標籤以瞭解其他功能，包括從檔案瀏覽器和 PowerShell 中標記和保護所有檔案類型。<br /><br /> 範例其他功能：[Azure 資訊保護統一標記用戶端的自訂設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure 資訊保護統一標籤用戶端系統管理員指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
+|[敏感度標籤](sensitivity-labels.md)| 應用程式、服務和裝置上的單一解決方案，可讓您的資料在組織內部和外部傳輸時進行標記和保護。 <br /><br />範例案例： <br /> [管理 Office 應用程式的敏感度標籤](sensitivity-labels-office-apps.md)<br /> [加密文件和電子郵件](encryption-sensitivity-labels.md )<br /> [套用和查看 Power BI 中的標籤](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> 如需敏感度標籤的案例完整清單，請參閱 [開始使用文件]。|[開始使用敏感度標籤](get-started-with-sensitivity-labels.md) |
+|[Azure 資訊保護統一標籤用戶端](/azure/information-protection/rms-client/aip-clientv2)| 針對 Windows 電腦，擴充敏感度標籤以瞭解其他功能，包括從檔案瀏覽器和 PowerShell 中標記和保護所有檔案類型。<br /><br /> 範例其他功能：[Azure 資訊保護統一標記用戶端的自訂設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure 資訊保護統一標籤用戶端系統管理員指南](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[雙重金鑰加密](double-key-encryption.md)| 在所有情況下，只有貴組織能解密受保護的內容，或因為法規要求，您必須在地理邊界內持有加密金鑰。 | [部署雙重金鑰加密](double-key-encryption.md#deploy-dke)|
 |[Office 365 郵件加密 (OME)](ome.md)| 將傳送給任何裝置上任何使用者的電子郵件訊息和附加文件加密，以便只有授權的收件者能讀取電子郵件中的資訊。  <br /><br />範例案例：[撤銷由進階郵件加密所加密的電子郵件](revoke-ome-encrypted-mail.md) | [設定全新的郵件加密功能](set-up-new-message-encryption-capabilities.md)|
 |[客戶金鑰服務加密](customer-key-overview.md) | 防止未經授權的系統或人員檢視資料，並補充 Microsoft 資料中心中的 BitLocker 磁碟機加密。 | [設定 Office 365 客戶金鑰](customer-key-set-up.md)|
 |[SharePoint 資訊版權管理 (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|保護 SharePoint 清單和文件庫，以便當使用者取出文件時，下載的檔案受到保護，因此只有授權人員才能根據您指定的原則檢視和使用檔案。 | [在 SharePoint 系統管理中心中設定資訊版權管理 (IRM)](set-up-irm-in-sp-admin-center.md)|
-[版權管理連接器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |僅限使用 Exchange 或 SharePoint Server 的現有內部部署來部署，或執行 Windows Server 和檔案分類基礎結構的檔案伺服器 (FCI)。 | [部署 RMS 連接器的步驟](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
-|[Azure 資訊保護統一標籤掃瞄器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| 探索、標記和保護駐留於內部部署資料存放區中的敏感性資訊。 | [設定和安裝 Azure 資訊保護統一標籤掃瞄器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
-|[Microsoft 雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| 探索、標記和保護位於雲端資料存放區中的敏感性資訊。 | [探索、分類、標記及保護儲存在雲端的管制資料及敏感性資料](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|[Microsoft 資訊保護 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|將敏感度標籤延伸至第三方應用程式和服務。  <br /><br /> 範例案例：[設定和取得敏感度標籤 (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft 資訊保護 (MIP) SDK 安裝和設定](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+[版權管理連接器](/azure/information-protection/deploy-rms-connector) |僅限使用 Exchange 或 SharePoint Server 的現有內部部署來部署，或執行 Windows Server 和檔案分類基礎結構的檔案伺服器 (FCI)。 | [部署 RMS 連接器的步驟](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
+|[Azure 資訊保護統一標籤掃瞄器](/azure/information-protection/deploy-aip-scanner)| 探索、標記和保護駐留於內部部署資料存放區中的敏感性資訊。 | [設定和安裝 Azure 資訊保護統一標籤掃瞄器](/azure/information-protection/deploy-aip-scanner-configure-install)|
+|[Microsoft 雲端 App 安全性](/cloud-app-security/what-is-cloud-app-security)| 探索、標記和保護位於雲端資料存放區中的敏感性資訊。 | [探索、分類、標記及保護儲存在雲端的管制資料及敏感性資料](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Microsoft 資訊保護 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|將敏感度標籤延伸至第三方應用程式和服務。  <br /><br /> 範例案例：[設定和取得敏感度標籤 (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft 資訊保護 (MIP) SDK 安裝和設定](/information-protection/develop/setup-configure-mip)|
 
 
 ## <a name="prevent-data-loss"></a>防止資料遺失

@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含使用 Office 2007 或 Office 2010 的使用者的資源，可協助他們規劃升級。
-ms.openlocfilehash: 3193be0fb7b386f78ed4bdb9b80f2a2da72102b4
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 65f635e5c6195222ef2e39898cb1da2ee0dc0df0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951136"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927463"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>規劃從 Office 2007 或 Office 2010 伺服器和用戶端升級
 
@@ -47,9 +47,9 @@ Microsoft 365 是一種以不斷提升的裝置和生產力經驗（由 Microsof
 |資源|描述|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|取得 Microsoft 365 版本的相關資訊。|
-|[Microsoft 365 商務版檔](https://docs.microsoft.com/microsoft-365/business/)|取得適用于中小型企業之 Microsoft 365 版本的詳細資訊。|
-|[Microsoft 365 教育版檔](https://docs.microsoft.com/microsoft-365/education/)|取得適用于教育組織之 Microsoft 365 版本的詳細資訊。|
-|[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/enterprise/)|取得適用于企業組織之 Microsoft 365 版本的詳細資訊。|
+|[Microsoft 365 商務版檔](../business/index.yml)|取得適用于中小型企業之 Microsoft 365 版本的詳細資訊。|
+|[Microsoft 365 教育版檔](/microsoft-365/education/)|取得適用于教育組織之 Microsoft 365 版本的詳細資訊。|
+|[適用于企業的 Microsoft 365 檔](./index.yml)|取得適用于企業組織之 Microsoft 365 版本的詳細資訊。|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>如果我不升級，會發生什麼事？
@@ -64,10 +64,10 @@ Microsoft 365 是一種以不斷提升的裝置和生產力經驗（由 Microsof
 
   |Office 2007 產品和服務|Office 2010 產品和服務|
   |---|---|
-  |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (桌面)|[Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (桌面)|
+  |[Office 2007](/DeployOffice/office-2007-end-support-roadmap) (桌面)|[Office 2010](/DeployOffice/office-2010-end-support-roadmap) (桌面)|
   |[Exchange 2007](exchange-2007-end-of-support.md)|[Exchange 2010](exchange-2010-end-of-support.md)|
   |[SharePoint 2007](sharepoint-2007-end-of-support.md)|[SharePoint 2010](upgrade-from-sharepoint-2010.md)|
-  |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+  |[Office Communications Server](/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](/skypeforbusiness/plan-your-deployment/upgrade)|
   |[Project Server 2007](project-server-2007-end-of-support.md)|[Project Server 2010](project-server-2010-end-of-support.md)|
   |[PerformancePoint Server 2007](pps-2007-end-of-support.md)||
  
@@ -83,7 +83,7 @@ Microsoft 365 是一種以不斷提升的裝置和生產力經驗（由 Microsof
 
 - 如果您的組織購買的是限定數目的 Microsoft 365 授權，我們的 FastTrack 小組可協助您完成設定程式。 如需詳細資訊，請參閱 [FastTrack For Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)。
 
-- 如果您是小型組織的一部分，或是您想要自行處理組織的 Office 升級，請參閱將 [Microsoft 365 商務版使用者升級至最新的 office 用戶端](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)。 
+- 如果您是小型組織的一部分，或是您想要自行處理組織的 Office 升級，請參閱將 [Microsoft 365 商務版使用者升級至最新的 office 用戶端](/office365/admin/setup/upgrade-users-to-latest-office-client)。 
   
 ## <a name="im-a-home-user-what-do-i-do"></a>我是家用版的使用者。 我該怎麼辦？
 
@@ -114,4 +114,4 @@ Microsoft 365 是一種以不斷提升的裝置和生產力經驗（由 Microsof
    
 ## <a name="related-topics"></a>相關主題
   
-[Microsoft 週期原則](https://go.microsoft.com/fwlink/?linkid=865200)
+[Microsoft 週期原則](/lifecycle/)

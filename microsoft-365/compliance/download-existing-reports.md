@@ -15,34 +15,34 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: 瞭解如何在安全性與合規性中心下載一或多個現有報告 &amp; 。
-ms.openlocfilehash: 4dd5716bef6f04c5f665b7d3a000362a91f3c31a
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: 92f48ee29b310ca2924b2caf29ef2c062461cfd2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201409"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926609"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>在安全性與 &amp; 合規性中心下載現有報告
 
-在[安全性與 &amp; 合規性中心](https://protection.office.com)中，有數個[報告和洞察力](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)可協助您的組織的安全性小組緩解並解決組織面臨的威脅。 如果您是組織的安全性小組成員，則可以下載一或多個現有報告。 
+在 [安全性與 &amp; 合規性中心](https://protection.office.com)中，有數個 [報告和洞察力](../security/office-365-security/reports-and-insights-in-security-and-compliance.md) 可協助您的組織的安全性小組緩解並解決組織面臨的威脅。 如果您是組織的安全性小組成員，則可以下載一或多個現有報告。 
   
 ## <a name="download-existing-reports"></a>下載現有的報告
 
 > [!IMPORTANT]
-> 確定您具備[安全性與 &amp; 合規性中心所指派](../security/office-365-security/protect-against-threats.md)的必要許可權。 一般說來，全域管理員、安全性管理員及安全性讀者可以存取安全規範中心內的報告 &amp; 。 
+> 確定您具備 [安全性與 &amp; 合規性中心所指派](../security/office-365-security/protect-against-threats.md)的必要許可權。 一般說來，全域管理員、安全性管理員及安全性讀者可以存取安全規範中心內的報告 &amp; 。 
   
-1. 在[安全性與 &amp; 合規性中心](https://protection.office.com)，移至 [**報告** \> **報告] 以下載**。
+1. 在 [安全性與 &amp; 合規性中心](https://protection.office.com)，移至 [ **報告** \> **報告] 以下載**。
 
 2. 選取清單中的一或多個專案。
 
-3. 按一下 [**下載報告**]，然後按一下 [**關閉**]。
+3. 按一下 [ **下載報告**]，然後按一下 [ **關閉**]。
 
 ## <a name="related-topics"></a>相關主題
 
 [安全性與 &amp; 合規性中心內的報告與深入瞭解](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
   
-[在安全性與 &amp; 合規性中心建立報表的排程](../security/office-365-security/create-a-schedule-for-a-report.md)
+[在安全性與 &amp; 合規性中心建立報表的排程](../security/office-365-security/view-reports-for-atp.md)
   
-[在安全性與 &amp; 合規性中心管理報告的計畫](../security/office-365-security/manage-schedules-for-multiple-reports.md)
+[在安全性與 &amp; 合規性中心管理報告的計畫](../security/office-365-security/view-reports-for-atp.md)
   
-[在安全性與 &amp; 合規性中心下載自訂報告](../security/office-365-security/set-up-and-download-a-custom-report.md)
+[在安全性與 &amp; 合規性中心下載自訂報告](../security/office-365-security/view-reports-for-atp.md)

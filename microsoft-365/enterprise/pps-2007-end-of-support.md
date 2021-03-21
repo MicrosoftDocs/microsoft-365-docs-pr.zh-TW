@@ -16,12 +16,12 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007、ProClarity 及 SharePoint Server 2007 已接通支援的終止。 請閱讀本文，以協助規劃您的 BI 解決方案升級。
-ms.openlocfilehash: 4a13e6f8a40de78c0d98b03369b52a78899fc7a9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: aa6adae24d78b6be72f17fd56c272b1293e6fcdc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519594"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927333"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 終止支援藍圖
 
@@ -57,14 +57,14 @@ Microsoft BI 應用程式已有許多變更，自2007起，您必須考慮數個
   
 |**如果您正在使用此 .。。**|**探索下列選項 .。。**|**請記住這一點 .。。**|
 |:-----|:-----|:-----|
-| PerformancePoint Server 2007 監控 &amp; 分析功能，包括：<br/>-PerformancePoint 監控伺服器 <br/>-PerformancePoint 儀表板設計工具<br/>-用於呈現 PerformancePoint 儀表板、計分卡及報表的 SharePoint 服務 (的儀表板檢視器) <br/> |在雲端或內部部署) 中 **，在瀏覽器** 中 (excel。 如需概述，請參閱 [Excel 和 Microsoft 365 中的 BI 功能](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)。<br/><br/> 雲端或內部部署) 中的 **POWER BI** (。 如需簡介，請參閱 [什麼是 POWER BI？](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **SQL Server Reporting Services** (內部部署) 。 如需概述，請參閱 [SQL Server Reporting Services (SSRS) ：建立、部署及管理行動裝置和分頁報告](https://go.microsoft.com/fwlink/?linkid=841342)。 <br/><br/> **PerformancePoint 服務** (內部部署) 。 如需概述，請參閱 [PerformancePoint 服務的新功能 (SharePoint Server 2010) ](https://go.microsoft.com/fwlink/?linkid=841343)。 <br/> |Excel 是以線上 (雲端架構) 或內部部署解決方案的形式提供。 Excel 可滿足許多報表和儀表板的需求。  <br/><br/> Power BI 是以線上或內部部署解決方案提供。 Power BI 並未包含在 Microsoft 365 中。 不過，您可以開始使用 Power BI for free。 稍後，視您的資料使用量和業務需求而定，您可以使用 Microsoft 365 E5 升級至 Power BI Pro。<br/> <br/> 報表服務和 PerformancePoint 服務都是內部部署解決方案。 <br/><br/> PerformancePoint 服務可在 SharePoint Server 2010、SharePoint Server 2013 及 SharePoint Server 2016 中取得。 <br/> <br/> Excel、Power BI、Reporting Services 或 PerformancePoint 服務中無法使用 PerformancePoint Server 2007 中提供的某些功能和報表類型。 請複查可用的功能，以判斷您的業務需求的最佳解決方案。 <br/> |
+| PerformancePoint Server 2007 監控 &amp; 分析功能，包括：<br/>-PerformancePoint 監控伺服器 <br/>-PerformancePoint 儀表板設計工具<br/>-用於呈現 PerformancePoint 儀表板、計分卡及報表的 SharePoint 服務 (的儀表板檢視器) <br/> |在雲端或內部部署) 中 **，在瀏覽器** 中 (excel。 如需概述，請參閱 [Excel 和 Microsoft 365 中的 BI 功能](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)。<br/><br/> 雲端或內部部署) 中的 **POWER BI** (。 如需簡介，請參閱 [什麼是 POWER BI？](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **SQL Server Reporting Services** (內部部署) 。 如需概述，請參閱 [SQL Server Reporting Services (SSRS) ：建立、部署及管理行動裝置和分頁報告](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports)。 <br/><br/> **PerformancePoint 服務** (內部部署) 。 如需概述，請參閱 [PerformancePoint 服務的新功能 (SharePoint Server 2010) ](/previous-versions/office/sharepoint-server-2010/ee661741(v=office.14))。 <br/> |Excel 是以線上 (雲端架構) 或內部部署解決方案的形式提供。 Excel 可滿足許多報表和儀表板的需求。  <br/><br/> Power BI 是以線上或內部部署解決方案提供。 Power BI 並未包含在 Microsoft 365 中。 不過，您可以開始使用 Power BI for free。 稍後，視您的資料使用量和業務需求而定，您可以使用 Microsoft 365 E5 升級至 Power BI Pro。<br/> <br/> 報表服務和 PerformancePoint 服務都是內部部署解決方案。 <br/><br/> PerformancePoint 服務可在 SharePoint Server 2010、SharePoint Server 2013 及 SharePoint Server 2016 中取得。 <br/> <br/> Excel、Power BI、Reporting Services 或 PerformancePoint 服務中無法使用 PerformancePoint Server 2007 中提供的某些功能和報表類型。 請複查可用的功能，以判斷您的業務需求的最佳解決方案。 <br/> |
 | ProClarity 軟體，包括：<br/>-ProClarity 桌面專業版<br/> -ProClarity Analytics Server<br/>-ProClarity SharePoint 檢視器<br/> |**與 Microsoft 合作夥伴合作** ，找出最符合您需求的解決方案。 請造訪 [Microsoft 合作夥伴中心](https://go.microsoft.com/fwlink/?linkid=841249)。 <br/><br/> 您也可以在瀏覽器、Power BI、SQL Server Reporting Services 或 PerformancePoint 服務中考慮使用 Excel 搭配 Excel。  <br/> |有幾個但並非 ProClarity 軟體的所有功能都可用於其他 Microsoft 的產品，包括 Excel、Power BI、Reporting Services 及 PerformancePoint 服務。  <br/> |
 |SharePoint Server 2007 KPIs (也稱為 MOSS KPIs)   <br/> |**Excel Services 的 excel**。 如需簡介，請參閱 [excel 和 Excel Services 中的商務智慧 (SharePoint Server 2013) ](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx)。 <br/> |使用 SharePoint Server 2007 建立的 MOSS KPIs，可用於 SharePoint Server 2010，SharePoint Server 2013，以及 SharePoint 伺服器2016。 不過，您無法建立新的 MOSS KPIs。  <br/> |
 |Excel 2007  <br/> |在雲端或內部部署) 中 (**Excel** 。 如需概要，請參閱 [Excel 和 Office 365 中的 BI 功能](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)。 <br/><br/> 雲端或內部部署) 中的 **POWER BI** (。 如需簡介，請參閱 [什麼是 POWER BI？](https://go.microsoft.com/fwlink/?linkid=841341) <br/> |Excel 和 Power BI 都為您的組織提供雲端架構和內部部署解決方案，並支援各種資料來源。  <br/> |
    
 ### <a name="help-selecting-a-solution"></a>協助您選取解決方案
 
-使用這麼多的 BI 選項時，最好決定哪個選項。 我們有線上指南可提供協助。 請參閱 [選擇 Microsoft 商務智慧 (BI) 工具進行分析與報告](https://go.microsoft.com/fwlink/?linkid=839877)。
+使用這麼多的 BI 選項時，最好決定哪個選項。 我們有線上指南可提供協助。 請參閱 [選擇 Microsoft 商務智慧 (BI) 工具進行分析與報告](/sql/reporting-services/choosing-microsoft-business-intelligence-bi-tools-for-analysis-and-reporting)。
   
 ### <a name="what-if-i-dont-upgrade-now"></a>如果現在不升級，該怎麼辦？
 
@@ -111,7 +111,7 @@ Microsoft BI 應用程式已有許多變更，自2007起，您必須考慮數個
   
 若要深入瞭解您的 SharePoint 升級選項，請參閱 [SharePoint Server 2007 終止支援藍圖](sharepoint-2007-end-of-support.md)。
   
-若要深入瞭解 Excel Services，請參閱 [Excel services 總覽 (SharePoint Server 2010) ](https://go.microsoft.com/fwlink/?linkid=841362)。
+若要深入瞭解 Excel Services，請參閱 [Excel services 總覽 (SharePoint Server 2010) ](/previous-versions/office/sharepoint-server-2010/ee424405(v=office.14))。
   
 ### <a name="use-power-bi-in-the-cloud-or-on-premises"></a>使用雲端或內部部署中的 Power BI () 
 
@@ -121,7 +121,7 @@ Power BI 不是 Microsoft 365 或 SharePoint 伺服器的一部分。 這是個�
   
 ### <a name="use-reporting-services-on-premises"></a>使用 Reporting Services (內部部署) 
 
-SQL Server Reporting Services 提供強大的報表解決方案。 您可以設定純模式或 SharePoint 整合模式中的 Reporting Services。 您可以使用數種不同的工具來編寫報表，包括報表設計工具、報表產生者及 Power View。 使用最新版的 SQL Server，您也可以使用 SQL Server 行動報告發行者來傳送可擴充至任何畫面大小的報告。 這可讓檢視器使用其行動裝置上的報告。 若要深入瞭解，請參閱 [SQL Server Reporting Services (SSRS) ：建立、部署及管理行動裝置和分頁報告](https://go.microsoft.com/fwlink/?linkid=841342)。
+SQL Server Reporting Services 提供強大的報表解決方案。 您可以設定純模式或 SharePoint 整合模式中的 Reporting Services。 您可以使用數種不同的工具來編寫報表，包括報表設計工具、報表產生者及 Power View。 使用最新版的 SQL Server，您也可以使用 SQL Server 行動報告發行者來傳送可擴充至任何畫面大小的報告。 這可讓檢視器使用其行動裝置上的報告。 若要深入瞭解，請參閱 [SQL Server Reporting Services (SSRS) ：建立、部署及管理行動裝置和分頁報告](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports)。
   
 ### <a name="use-performancepoint-services-on-premises"></a> (內部部署) 使用 PerformancePoint 服務
 
@@ -129,7 +129,7 @@ PerformancePoint Server 2007 是與 SharePoint 伺服器2007分開銷售。 從 
   
 若要從 PerformancePoint Server 2007 移至 PerformancePoint 服務，您可以移至 SharePoint 伺服器的更新版本，並設定 PerformancePoint 服務。 您要移動的 SharePoint 伺服器版本，會決定您是否可以將現有的儀表板內容從 PerformancePoint Server 2007 匯入 PerformancePoint 服務。
   
-- 如果您升級為 SharePoint Server 2010，您可以將 PerformancePoint 儀表板內容從 PerformancePoint Server 2007 匯入 SharePoint Server 2010 中的 PerformancePoint 服務。 若要深入瞭解，請參閱匯 [入嚮導： PerformancePoint server 2007 content to SharePoint server 2010](https://go.microsoft.com/fwlink/?linkid=838873)。
+- 如果您升級為 SharePoint Server 2010，您可以將 PerformancePoint 儀表板內容從 PerformancePoint Server 2007 匯入 SharePoint Server 2010 中的 PerformancePoint 服務。 若要深入瞭解，請參閱匯 [入嚮導： PerformancePoint server 2007 content to SharePoint server 2010](/previous-versions/office/sharepoint-server-2010/ee681485(v=office.14))。
     
 - 如果您移至 SharePoint Server 2013 或 SharePoint Server 2016，您很可能需要建立新的儀表板內容， (資料來源、報表、計分卡和儀表板頁面) 。
     
@@ -139,13 +139,13 @@ PerformancePoint Server 2007 是與 SharePoint 伺服器2007分開銷售。 從 
     
 - 當您知道要移動的 SharePoint 版本，請參閱 PerformancePoint 服務的對應文章：
     
-  - [規劃 PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841363)
+  - [規劃 PerformancePoint Services (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/ee681486(v=office.14))
     
-  - [SharePoint Server 2013 的 PerformancePoint Services 概觀](https://go.microsoft.com/fwlink/?linkid=841551)
+  - [SharePoint Server 2013 的 PerformancePoint Services 概觀](/sharepoint/administration/performancepoint-services-overview)
     
-  - [SharePoint Server 2016 中的 PerformancePoint Services 概觀](https://go.microsoft.com/fwlink/?linkid=874704)
+  - [SharePoint Server 2016 中的 PerformancePoint Services 概觀](/sharepoint/administration/performancepoint-services-overview)
     
-當您升級為 PerformancePoint 服務時，您會收到一些新的功能和增強功能。 PerformancePoint 服務提供改良的計分卡;新的視覺化效果，例如分解樹狀目錄及 KPI 詳細資料包表;其他圖表類型;更好的時間智慧篩選功能;並改進輔助功能規格。 若要深入瞭解，請參閱 [PerformancePoint 服務的新功能 (SharePoint Server 2010) ](https://go.microsoft.com/fwlink/?linkid=841343)。
+當您升級為 PerformancePoint 服務時，您會收到一些新的功能和增強功能。 PerformancePoint 服務提供改良的計分卡;新的視覺化效果，例如分解樹狀目錄及 KPI 詳細資料包表;其他圖表類型;更好的時間智慧篩選功能;並改進輔助功能規格。 若要深入瞭解，請參閱 [PerformancePoint 服務的新功能 (SharePoint Server 2010) ](/previous-versions/office/sharepoint-server-2010/ee661741(v=office.14))。
   
 ## <a name="where-can-i-get-help-with-my-upgrade"></a>我可以在哪裡取得有關升級的說明？
 

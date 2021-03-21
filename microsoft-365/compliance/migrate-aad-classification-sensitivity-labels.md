@@ -10,18 +10,18 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 description: 本文討論傳統 Azure Active Directory 分類和敏感度標籤。
-ms.openlocfilehash: 2506e7f467a485878f1e26a23ee1071907b41614
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1be7e31ee4091e561f7eedb34b41958efc69a339
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545657"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926331"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Microsoft 365 群組的 Azure Active Directory 分類和敏感度標籤
 
 本文討論傳統 Azure Active Directory 分類和敏感度標籤。
 
-[這些服務](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#support-for-the-sensitivity-labels)支援敏感性標籤。
+[這些服務](./sensitivity-labels-teams-groups-sites.md#support-for-the-sensitivity-labels)支援敏感性標籤。
 
 如需敏感度標籤的完整資訊，請參閱 [瞭解敏感度標籤](sensitivity-labels.md)。
 
@@ -54,7 +54,7 @@ ms.locfileid: "47545657"
 >
 > 建議您的使用者在舊版本的 Outlook 用戶端升級至較新的版本。
 
-## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>案例2：承租人已使用傳統的 AAD [分類](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>案例2：承租人已使用傳統的 AAD [分類](../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
 ### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>案例 A：承租人永不對檔和電子郵件使用敏感度標籤
 
@@ -93,4 +93,4 @@ ms.locfileid: "47545657"
 
 ## <a name="sample-script"></a>指令碼範例
 
-如需將具有傳統 AAD 標籤的群組遷移至敏感度標籤的範例腳本，請參閱 [傳統 AZURE AD 群組分類](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)。
+如需將具有傳統 AAD 標籤的群組遷移至敏感度標籤的範例腳本，請參閱 [傳統 AZURE AD 群組分類](./sensitivity-labels-teams-groups-sites.md#classic-azure-ad-group-classification)。

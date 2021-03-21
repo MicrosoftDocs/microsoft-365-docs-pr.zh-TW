@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解如何設定 Exchange Server 內部部署以使用混合式新式驗證 (HMA) ，為您提供更安全的使用者驗證和授權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3841f429399500cfc24ebadc89c74d478d2290d9
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 46646f35d3b41821424269f66721fbf829d339f7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780281"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928199"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何設定 Exchange Server 內部部署以使用混合式新式驗證
 
@@ -128,7 +128,7 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
 
-如果任何伺服器和任何四個虛擬目錄中的 OAuth 都缺失，您必須使用相關命令新增它，才能繼續 ([設定 MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-mapivirtualdirectory)、 [Set-WebServicesVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-webservicesvirtualdirectory)、 [Set-OABVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-oabvirtualdirectory)及 [Set-AutodiscoverVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-autodiscovervirtualdirectory)) 。
+如果任何伺服器和任何四個虛擬目錄中的 OAuth 都缺失，您必須使用相關命令新增它，才能繼續 ([設定 MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory)、 [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory)、 [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory)及 [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)) 。
 
 ## <a name="confirm-the-evosts-auth-server-object-is-present"></a>確認 EvoSTS 驗證服務器物件存在
 
@@ -157,7 +157,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 您也應該同時按住 CTRL 鍵，以滑鼠右鍵按一下 Outlook 用戶端 (圖示，也可以在 Windows 通知託盤) 中，然後按一下 [線上狀態]。 根據 ' Authn ' 類型的 ' 載體 ' 尋找用戶端的 SMTP 位址 \* ，它代表 OAuth 中使用的持有者權杖。
 
- **記事** 需要使用 HMA 設定商務用 Skype？ 您將需要兩個文章：一個會列出 [支援的拓撲](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)，另一個說明 [如何進行](configure-skype-for-business-for-hybrid-modern-authentication.md)設定。
+ **記事** 需要使用 HMA 設定商務用 Skype？ 您將需要兩個文章：一個會列出 [支援的拓撲](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)，另一個說明 [如何進行](configure-skype-for-business-for-hybrid-modern-authentication.md)設定。
 
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>對 Outlook for iOS 和 Android 使用混合新式驗證
 
@@ -170,4 +170,4 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 ## <a name="related-topics"></a>相關主題
 
-[從 Office 365 專屬/ITAR 轉換為 vNext 的新式驗證設定需求](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)
+[從 Office 365 專屬/ITAR 轉換為 vNext 的新式驗證設定需求](/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

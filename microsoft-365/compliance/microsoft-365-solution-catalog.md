@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 深入瞭解 Microsoft 365 解決方案目錄（包括其包含的內容，以及如何進行）及後續的步驟。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7d1d52356bd3b165c24f10a20a57373a6171b8b3
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: ea184b406c721601c76829c02496b2d9201eb1d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751468"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926341"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解決方案目錄
 
@@ -69,9 +69,9 @@ Microsoft 365 的規範解決方案是整合功能的集合，您可以用來協
 在這裡，您將會看到下列解決方案的卡片：
 
 - [審核](search-the-audit-log-in-security-and-compliance.md)：記錄組織中的使用者和系統管理員活動，以便您可以搜尋審核記錄，並調查所有位置和服務上的完整活動清單。
-- [資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)：尋找及匯出使用者的個人資料，以協助您回應 GDPR 的資料主體要求。
+- [資料主體要求](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)：尋找及匯出使用者的個人資料，以協助您回應 GDPR 的資料主體要求。
 - [eDiscovery](manage-legal-investigations.md)
-    - [核心 eDiscovery](ediscovery-cases.md)：搜尋內容位置，以識別、保留和匯出資料，以回應法律查詢要求和 eDiscovery 案例。
+    - [核心 eDiscovery](./get-started-core-ediscovery.md)：搜尋內容位置，以識別、保留和匯出資料，以回應法律查詢要求和 eDiscovery 案例。
     - [Advanced ediscovery](overview-ediscovery-20.md)：提供智慧分析和機器學習功能，以協助您進一步分析與探索要求相關的資料，以建立 eDiscovery 的功能。
 
 ## <a name="how-do-i-get-this"></a>如何取得此功能？
@@ -99,7 +99,7 @@ Microsoft 365 的規範解決方案是整合功能的集合，您可以用來協
 - **深入瞭解及建立通訊相容性原則** ，以快速找出並修正公司行為準則原則違規。 請參閱 [通訊相容性](communication-compliance.md)。
 
 - **Microsoft 資訊保護**，請參閱 microsoft 365 解決方案如何協助您探索、分類及保護機密資訊的任何位置或傳播。
-    - **深入瞭解並設定 Microsoft Cloud App Security**。 請參閱 [快速入門： Microsoft Cloud App Security 快速入門](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
+    - **深入瞭解並設定 Microsoft Cloud App Security**。 請參閱 [快速入門： Microsoft Cloud App Security 快速入門](/cloud-app-security/getting-started-with-cloud-app-security)。
     - **立即開始使用類元**。 分類內容，然後將其標示，使其受到保護和正確處理是資訊保護訓練科目的開始位置。 請參閱 [瞭解 trainable 的分類 (預覽) ](classifier-learn-about.md)。
 
 - 請 **經常造訪您的 Microsoft 365 方案目錄**，並務必查看新的解決方案，以協助您符合規範的需求。 在 [https://compliance.microsoft.com](https://compliance.microsoft.com) 左功能窗格中登入，然後選取 [ **目錄** ]。

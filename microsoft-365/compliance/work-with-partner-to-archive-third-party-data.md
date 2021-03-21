@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何設定自訂連接器，以從資料來源（例如 Salesforce 交談、Yahoo Messenger 或 Yammer）匯入協力廠商資料。
-ms.openlocfilehash: 64e903604ea56e5f53e3cc154bd54459a6d8d554
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: adf6583f397296361e8f0cb6f12e7054436fa34f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620209"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928377"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>與合作夥伴配合以封存第三方資料
 
@@ -184,7 +184,7 @@ ms.locfileid: "49620209"
     
 - ICE Chat/YellowJacket
     
-- 搖擺
+- Jive
     
 - Macgregor XIP
 
@@ -198,7 +198,7 @@ ms.locfileid: "49620209"
     
 - Mobile Guard
     
-- 樞紐
+- Pivot
     
 - Salesforce Chatter
 
@@ -334,7 +334,7 @@ ms.locfileid: "49620209"
     
 - Irc
     
-- 搖擺
+- Jive
     
 - Jive 6 Real Time Logging (v6、v7)
     
@@ -372,7 +372,7 @@ ms.locfileid: "49620209"
     
 - Pinterest
     
-- 樞紐
+- Pivot
     
 - Qq
     
@@ -477,16 +477,16 @@ ms.locfileid: "49620209"
   
  **在 Microsoft 365 系統管理中心完成這些工作**
   
-1. 建立使用者帳戶並指派 Exchange Online Plan 2 授權;請參閱 [將使用者新增至 Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=692098)。 若要將信箱設為訴訟暫止或啟用具有無限儲存配額的封存信箱，則需要 Plan 2 授權。
+1. 建立使用者帳戶並指派 Exchange Online Plan 2 授權;請參閱 [將使用者新增至 Microsoft 365](../admin/add-users/add-users.md)。 若要將信箱設為訴訟暫止或啟用具有無限儲存配額的封存信箱，則需要 Plan 2 授權。
     
-2. 將協力廠商資料信箱的使用者帳戶新增至 Microsoft 365 中的 **Exchange 系統管理員** 管理員角色。請參閱 [在 Microsoft 365 中指派系統管理員角色](https://go.microsoft.com/fwlink/p/?LinkId=532393)。
+2. 將協力廠商資料信箱的使用者帳戶新增至 Microsoft 365 中的 **Exchange 系統管理員** 管理員角色。請參閱 [在 Microsoft 365 中指派系統管理員角色](../admin/add-users/assign-admin-roles.md)。
     
     > [!TIP]
     > 請寫下此使用者帳戶的認證。 您需要將它們提供給您的合作夥伴 (如步驟 4 中所述)。 
   
  **在 Exchange 系統管理中心完成這些工作**
   
-1. 從組織中的通訊錄和其他通訊清單中隱藏協力廠商資料信箱;請參閱 [管理使用者信箱](https://go.microsoft.com/fwlink/p/?LinkId=616058)。 或者，您也可以執行下列 PowerShell 命令：
+1. 從組織中的通訊錄和其他通訊清單中隱藏協力廠商資料信箱;請參閱 [管理使用者信箱](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。 或者，您也可以執行下列 PowerShell 命令：
     
     ```powershell
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
@@ -500,7 +500,7 @@ ms.locfileid: "49620209"
     
     - 將協力廠商資料信箱處於 [訴訟暫止] 狀態。 您也可以在安全性與合規性中心套用 Microsoft 365 保留原則。 保留此信箱會將協力廠商資料項目保留 (無限期或指定的持續時間) 並防止從信箱中清除。 請參閱下列其中一個主題：
     
-      - [將信箱設定為訴訟資料暫留狀態](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [將信箱設定為訴訟資料暫留狀態](./create-a-litigation-hold.md)
     
       - [瞭解保留原則和保留標籤](retention.md)
     
@@ -514,7 +514,7 @@ ms.locfileid: "49620209"
     
 2. 將使用者信箱設為訴訟暫止，或套用 Microsoft 365 保留原則;請參閱下列其中一個主題： 
     
-    - [將信箱設定為訴訟資料暫留狀態](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [將信箱設定為訴訟資料暫留狀態](./create-a-litigation-hold.md)
     
     - [瞭解保留原則和保留標籤](retention.md)
     
@@ -536,7 +536,7 @@ ms.locfileid: "49620209"
 
 從2018年9月30日開始，Microsoft 365 中的 Azure 服務會開始使用 Exchange Online 中的新式驗證，以驗證嘗試連線至組織以匯入資料的協力廠商資料連線器。 這種變更的原因是，新式驗證提供的安全性高於目前的方法，這是根據使用先前所述端點連線至 Azure 服務之協力廠商連接器的允許清單。
 
-若要讓協力廠商資料連線器能夠使用全新的新式驗證方法來連線至 Microsoft 365，您組織中的系統管理員必須同意在 Azure Active Directory 中將連接器註冊為受信任的服務應用程式。 若要允許連接器在 Azure Active Directory 中存取組織的資料，請接受許可權要求，以進行這項操作。 在您接受此要求之後，協力廠商資料連線器會新增為 Azure Active Directory 中的企業應用程式，並表示為服務主體。 如需同意程式的詳細資訊，請參閱  [租使用者管理員同意](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
+若要讓協力廠商資料連線器能夠使用全新的新式驗證方法來連線至 Microsoft 365，您組織中的系統管理員必須同意在 Azure Active Directory 中將連接器註冊為受信任的服務應用程式。 若要允許連接器在 Azure Active Directory 中存取組織的資料，請接受許可權要求，以進行這項操作。 在您接受此要求之後，協力廠商資料連線器會新增為 Azure Active Directory 中的企業應用程式，並表示為服務主體。 如需同意程式的詳細資訊，請參閱  [租使用者管理員同意](/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
 
 以下是存取及接受註冊連接器要求的步驟：
 
@@ -557,9 +557,9 @@ ms.locfileid: "49620209"
 
 在您的組織 consents 至許可權要求後，若要在 Azure Active Directory 中註冊協力廠商資料連線器，您的組織可以隨時撤銷該同意。 不過，撤銷連接器的同意表示將不再將協力廠商資料來源的資料匯入 Microsoft 365。
 
-若要撤銷協力廠商資料連線器的同意，您可以從 Azure 入口網站中的「 **企業應用程式** 」刀片式伺服器或使用 Microsoft 365 PowerShell 中的 [ [new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal) ] 刪除對應服務主體) ，以刪除應用程式 (。 您也可以在 Azure Active Directory PowerShell 中使用 [Remove-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal) Cmdlet。
+若要撤銷協力廠商資料連線器的同意，您可以從 Azure 入口網站中的「 **企業應用程式** 」刀片式伺服器或使用 Microsoft 365 PowerShell 中的 [ [new-msolserviceprincipal](/powershell/module/msonline/remove-msolserviceprincipal) ] 刪除對應服務主體) ，以刪除應用程式 (。 您也可以在 Azure Active Directory PowerShell 中使用 [Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) Cmdlet。
   
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 - 如先前所述，協力廠商資料來源的項目是匯入至 Exchange 信箱做為電子郵件訊息。 夥伴連接器會使用 Microsoft 365 API 所需的架構，匯入專案。 下表說明協力廠商資料來源的項目在匯入至 Exchange 信箱當做為電子郵件之後的郵件屬性。 表格也會指出郵件屬性是否為必要的。 必須填入必要屬性。 如果專案缺少強制屬性，則不會將它匯入至 Microsoft 365。 匯入程式會傳回一則錯誤訊息，說明未匯入專案的原因，以及遺漏的屬性。<br/><br/>
     

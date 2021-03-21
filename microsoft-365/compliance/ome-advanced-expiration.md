@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 使用 Office 365 Advanced Message Encryption，透過自訂的署名範本來設定電子郵件的到期日，以擴充電子郵件的安全性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bbd018e55592e5b17149edf1a4dc0907c0184417
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: f936ffa62f31e47f51fc1bcb2765195b0ea809af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769163"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927783"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>為由 Office 365 進階郵件加密所加密的電子郵件設定到期日
 
@@ -40,7 +40,7 @@ Office 365 Advanced Message Encryption 包含在 [Microsoft 365 企業版 e5](ht
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>使用 PowerShell 建立自訂品牌範本以強制郵件到期
 
-1. 使用具備組織中全域系統管理員許可權的帳戶，連線[至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 。
+1. 使用具備組織中全域系統管理員許可權的帳戶，連線[至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 。
 
 2. 執行 New-OMEConfiguration Cmdlet。
 
@@ -60,4 +60,4 @@ Office 365 Advanced Message Encryption 包含在 [Microsoft 365 企業版 e5](ht
 
 - [撤銷由 Office 365 進階郵件加密所加密的電子郵件](revoke-ome-encrypted-mail.md)
 
-- [郵件原則及合規性服務說明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [郵件原則及合規性服務說明](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

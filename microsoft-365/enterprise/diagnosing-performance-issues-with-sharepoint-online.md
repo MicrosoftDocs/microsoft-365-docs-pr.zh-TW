@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: 本文說明如何使用 Internet Explorer 開發人員工具來診斷 SharePoint Online 網站的常見問題。
-ms.openlocfilehash: a8a79afd860006a16874370b1124696550dab029
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6a29b8b2df54d74d8237418828a7aa89efdbcfaf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688484"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927609"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>診斷 SharePoint Online 的效能問題
 
@@ -45,9 +45,9 @@ ms.locfileid: "46688484"
 
 在本文中，我們使用 Internet Explorer 11。 其他瀏覽器上的 F12 開發人員工具的版本具有類似的功能，但看起來可能稍有不同。 如需 F12 開發人員工具的詳細資訊，請參閱：
   
-- [F12 工具的新功能](https://go.microsoft.com/fwlink/p/?LinkId=522545)
+- [F12 工具的新功能](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
 
-- [使用 F12 開發人員工具](https://go.microsoft.com/fwlink/p/?LinkId=522546)
+- [使用 F12 開發人員工具](/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v=vs.85))
 
 若要顯示開發人員工具，請按 **F12** ，然後按一下 Wi-Fi 圖示：
   
@@ -75,7 +75,7 @@ ms.locfileid: "46688484"
 
 ### <a name="to-view-sharepoint-response-header-information"></a>若要查看 SharePoint 回應標頭資訊
   
-1. 確定您已安裝 F12 工具。 如需下載及安裝這些工具的詳細資訊，請參閱 [F12 工具的新功能](https://go.microsoft.com/fwlink/p/?LinkId=522545)。
+1. 確定您已安裝 F12 工具。 如需下載及安裝這些工具的詳細資訊，請參閱 [F12 工具的新功能](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))。
 
 2. 在 [F12 工具] 的 [ **網路** ] 索引標籤上，按綠色的 [播放] 按鈕載入頁面。
 

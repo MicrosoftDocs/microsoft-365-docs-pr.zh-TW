@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解 Microsoft 365 中的「高級 eDiscovery」如何支援中文、日文和韓文 (CJK) 語言，使用雙位元組字元集。
-ms.openlocfilehash: cef91001f48512545ce528d6f43de97c28c4c495
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626931"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926599"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>適用于 Advanced eDiscovery 的 CJK 語言支援
 
@@ -39,7 +39,7 @@ Advanced eDiscovery 支援雙位元組字元集語言 (包括簡化的中文、�
 
 在高級 eDiscovery 中搜尋內容時，您可以使用 CJK 字元做為 [關鍵字搜尋](building-search-queries.md#keyword-searches)、 [關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md) 。 在核心 eDiscovery 和內容搜尋中搜尋內容時，也支援搜尋 CJK 字元。
 
-我們為所有 [搜尋運算子](keyword-queries-and-search-conditions.md#search-operators) 和 [搜尋條件](keyword-queries-and-search-conditions.md#search-conditions)提供 CJK 支援，包括 boolean 運算子 **和**、 **或**、 **NOT**和 **NEAR**。
+我們為所有 [搜尋運算子](keyword-queries-and-search-conditions.md#search-operators) 和 [搜尋條件](keyword-queries-and-search-conditions.md#search-conditions)提供 CJK 支援，包括 boolean 運算子 **和**、 **或**、 **NOT** 和 **NEAR**。
 
 如果您確定內容位置或專案包含 CJK 字元，但是搜尋不會傳回任何結果，請按一下查詢語言-國家/地區圖示。 ![查詢語言-內容搜尋中的國家/地區圖示](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) ，然後選取對應的語言國家地區文化代碼值進行搜尋。 預設的語言-國家/地區為中性。
 
@@ -69,7 +69,7 @@ Advanced eDiscovery 支援雙位元組字元集語言 (包括簡化的中文、�
 
 **我要如何將我的顯示語言變更為中文、日文或韓文？**
 
-如需如何變更顯示語言和時區的詳細資訊，請參閱 how [to 設定 Office 365 的語言和地區設定](https://docs.microsoft.com/office365/troubleshoot/access-management/set-language-and-region)。
+如需如何變更顯示語言和時區的詳細資訊，請參閱 how [to 設定 Office 365 的語言和地區設定](/office365/troubleshoot/access-management/set-language-and-region)。
 
 ## <a name="known-issues"></a>已知問題
 
@@ -81,4 +81,4 @@ Advanced eDiscovery 支援雙位元組字元集語言 (包括簡化的中文、�
 
 - 用於分析資料的 [相關性模組](using-relevance.md) 不支援 CJK 語言。
 
-- CJK 語言不支援[查詢型保留](managing-holds.md#manage-non-custodial-holds)。 
+- CJK 語言不支援[查詢型保留](managing-holds.md#manage-non-custodial-holds)。

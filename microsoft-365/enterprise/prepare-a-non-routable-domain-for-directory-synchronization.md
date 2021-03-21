@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: 如果您有無法路由的網域與您的內部部署使用者帳戶相關聯，您必須先將其與您的 Microsoft 365 租使用者進行同步處理，瞭解如何處理。
-ms.openlocfilehash: dcd941bbae159afeb0cf6ef4f5acbaf409966295
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: e4d0e020c5792c610d501c33e8f3d5131b7a1ff0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780329"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927393"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>準備無法路由傳送的網域，以用於目錄同步處理
 
@@ -37,7 +37,7 @@ ms.locfileid: "49780329"
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>如果我只有「內部」內部部署網域，該怎麼辦？
 
-您可以使用 Azure AD Connect，將 AD DS 同步處理至您的 Microsoft 365 租使用者的 Azure AD 租使用者。 如需詳細資訊，請參閱 [將內部部署身分識別與 AZURE AD 整合](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)。
+您可以使用 Azure AD Connect，將 AD DS 同步處理至您的 Microsoft 365 租使用者的 Azure AD 租使用者。 如需詳細資訊，請參閱 [將內部部署身分識別與 AZURE AD 整合](/azure/architecture/reference-architectures/identity/azure-ad)。
   
 Azure AD Connect 會同步處理您的使用者的 UPN 和密碼，讓使用者可以使用內部部署所使用的相同認證來登入。 不過，Azure AD Connect 只會同步處理使用者至 Microsoft 365 所驗證的網域。 這表示網域也會由 Azure AD 驗證，因為 Microsoft 365 identity 是由 Azure AD 所管理。 換句話說，網域必須是有效的網際網路網域 (例如，.com、org、.net、. us) 。 如果內部 AD DS 只使用不可路由的網域 (例如 "local" ) ，這可能會比對您的 Microsoft 365 租使用者驗證的網域。 您可以在內部部署 AD DS 中變更您的主要網域，或是新增一或多個 UPN 尾碼，以修正此問題。
   
@@ -90,7 +90,7 @@ Azure AD Connect 會同步處理您的使用者的 UPN 和密碼，讓使用者�
    
 ### <a name="use-powershell-to-change-the-upn-suffix-for-all-of-your-users"></a>使用 PowerShell 變更所有使用者的 UPN 尾碼
 
-如果您有許多使用者帳戶需要更新，使用 PowerShell 會比較容易。 下列範例使用 Cmdlet [microsoft.rtc.management.adconnect.schema.aduser](https://go.microsoft.com/fwlink/p/?LinkId=624312) 及 [Set-microsoft.rtc.management.adconnect.schema.aduser](https://go.microsoft.com/fwlink/p/?LinkId=624313) ，將所有 CONTOSO。在 AD DS 中的 contoso.com 的本機尾碼。 
+如果您有許多使用者帳戶需要更新，使用 PowerShell 會比較容易。 下列範例使用 Cmdlet [microsoft.rtc.management.adconnect.schema.aduser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) 及 [Set-microsoft.rtc.management.adconnect.schema.aduser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) ，將所有 CONTOSO。在 AD DS 中的 contoso.com 的本機尾碼。 
 
 例如，您可以執行下列 PowerShell 命令，將所有 contoso。本機尾碼更新為 contoso.com：
     
@@ -99,5 +99,4 @@ Azure AD Connect 會同步處理您的使用者的 UPN 和密碼，讓使用者�
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("@contoso.local","@contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
 
-請參閱 [Active Directory Windows PowerShell 模組](https://go.microsoft.com/fwlink/p/?LinkId=624314) ，以深入瞭解在 AD DS 中使用 Windows PowerShell。 
-
+請參閱 [Active Directory Windows PowerShell 模組](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10)) ，以深入瞭解在 AD DS 中使用 Windows PowerShell。

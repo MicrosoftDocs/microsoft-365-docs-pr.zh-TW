@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 本文可協助說明不同版本的 Office 365 郵件加密之間的差異。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a587e27460d949811f9f30af0244cf325aaadac6
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741334"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927731"
 ---
 # <a name="compare-versions-of-ome"></a>比較 OME 版本
 
@@ -41,7 +41,7 @@ Exchange Online 包含資訊版權管理 (IRM) 功能，可提供線上和離線
 
 ### <a name="prepare-for-ad-rms-deprecation"></a>準備 AD RMS 已過時
 
-如果您已設定 Azure 資訊保護，但您並未使用它，請使用 Exchange Online PowerShell 來啟用服務。 在您的本機電腦上，使用組織中具有全域系統管理員許可權的公司或學校帳戶，在 Windows PowerShell 視窗中連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 。
+如果您已設定 Azure 資訊保護，但您並未使用它，請使用 Exchange Online PowerShell 來啟用服務。 在您的本機電腦上，使用組織中具有全域系統管理員許可權的公司或學校帳戶，在 Windows PowerShell 視窗中連線 [至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 。
 
 若要啟用 Azure 資訊保護，請輸入下列命令，以使用 Set-IrmConfiguration Cmdlet。
 
@@ -49,7 +49,7 @@ Exchange Online 包含資訊版權管理 (IRM) 功能，可提供線上和離線
 Set-IrmConfiguration -AzureRMSLicensingEnabled $true
 ```
 
-如果您的組織尚未設定 Azure 資訊保護，您將需要從 AD RMS 遷移至 Azure 資訊保護。 如需相關指示，請參閱 [從 AD RMS 遷移到 Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)。
+如果您的組織尚未設定 Azure 資訊保護，您將需要從 AD RMS 遷移至 Azure 資訊保護。 如需相關指示，請參閱 [從 AD RMS 遷移到 Azure 資訊保護](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)。
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>功能和功能的並列比較
 

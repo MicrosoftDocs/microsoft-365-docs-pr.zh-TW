@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用適用于 Office 365 的 Defender，您也會取得哪些額外功能？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d635a28c41c9aceb0e3c499301156e53a1e2fa68
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5beceebdc32c3bbc3073e595aa9d25f109cbe85a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289350"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926733"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建議設定
 
@@ -109,7 +109,7 @@ ms.locfileid: "50289350"
 
 若要建立及設定輸出垃圾郵件原則，請參閱 [在 Office 365 中設定輸出垃圾郵件篩選](configure-the-outbound-spam-policy.md)。
 
-如需服務中預設傳送限制的詳細資訊，請參閱傳送 [限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)。
+如需服務中預設傳送限制的詳細資訊，請參閱傳送 [限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)。
 
 ****
 
@@ -132,8 +132,8 @@ ms.locfileid: "50289350"
 |**您是否要在郵件被隔離時通知收件者？** <p> _動作_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
 |**常見附件類型篩選** <p> _EnableFileFilter_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
 |**惡意程式碼零小時自動清除** <p> _ZapEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
-|通知未傳遞郵件的 **內部寄件者** <p> _EnableInternalSenderNotifications_|停用 <p> `$false`|停用 <p> `$false`|停用 <p> `$false`||
-|通知未傳遞郵件的 **外部寄件者** <p> _EnableExternalSenderNotifications_|停用 <p> `$false`|停用 <p> `$false`|停用 <p> `$false`||
+|通知未傳遞郵件的 **內部寄件者** <p> _EnableInternalSenderNotifications_|已停用 <p> `$false`|已停用 <p> `$false`|已停用 <p> `$false`||
+|通知未傳遞郵件的 **外部寄件者** <p> _EnableExternalSenderNotifications_|已停用 <p> `$false`|已停用 <p> `$false`|已停用 <p> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP 預設的反網路釣魚原則設定
@@ -222,7 +222,7 @@ Office 的 Defender for Office 365 中的安全連結包括全域設定，這些
 
 若要設定這些設定，請參閱 [設定 Office 365 的 Defender 中安全連結的通用設定](configure-global-settings-for-safe-links.md)。
 
-在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
+在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
 ****
 
@@ -237,7 +237,7 @@ Office 的 Defender for Office 365 中的安全連結包括全域設定，這些
 
 若要設定這些設定，請參閱 [設定 Microsoft Defender For Office 365 中的安全連結原則](set-up-atp-safe-links-policies.md)。
 
-在 PowerShell 中，您可以使用這些設定的 [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) 和 [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) Cmdlet。
+在 PowerShell 中，您可以使用這些設定的 [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) 和 [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) Cmdlet。
 
 > [!NOTE]
 > 如先前所述，沒有預設的安全連結原則。 [預設] 欄中的值是您建立的新安全連結原則中的預設值。
@@ -263,7 +263,7 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 若要設定這些設定，請參閱在[microsoft 365 E5 中](safe-docs.md)[開啟 SharePoint、OneDrive 和 Microsoft 小組和安全檔的安全附件](turn-on-atp-for-spo-odb-and-teams.md)。
 
-在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
+在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
 ****
 
@@ -278,7 +278,7 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 若要設定這些設定，請參閱 [在 Office 365 的 Defender 中設定安全附件原則](set-up-atp-safe-attachments-policies.md)。
 
-在 PowerShell 中，您可以使用這些設定的 [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) 和 [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) Cmdlet。
+在 PowerShell 中，您可以使用這些設定的 [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy) 和 [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safelinkspolicy) Cmdlet。
 
 > [!NOTE]
 > 如先前所述，沒有預設的安全附件原則。 [預設] 欄中的值是您建立的新安全附件原則中的預設值。
@@ -294,10 +294,10 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 ## <a name="related-articles"></a>相關文章
 
-- 您在尋找 **Exchange 郵件流程規則的最佳作法 (又稱為傳輸規則**) ？ 請參閱 [在 Exchange Online 中設定郵件流程規則的最佳作法](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)。
+- 您在尋找 **Exchange 郵件流程規則的最佳作法 (又稱為傳輸規則**) ？ 請參閱 [在 Exchange Online 中設定郵件流程規則的最佳作法](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)。
 
 - 系統管理員和使用者可以提交誤報 (已標示為錯誤) 和漏報的錯誤電子郵件， (錯誤的電子郵件) Microsoft 進行分析。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 - 請使用下列 **連結，以** 取得如何 **設定** [EOP 服務](set-up-your-eop-service.md)的資訊，以及設定 [Microsoft Defender for Office 365](office-365-atp.md)。 請不要忘記「[防範 Office 365 威脅](protect-against-threats.md)」中的有用指示。
 
-- 您可以在以下位置找到 **適用于 Windows 的安全性基準**：您 [可以在何處取得安全性基準？](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)針對 GPO/內部部署選項，以及 [使用安全性基線，在 intune 中為 intune 型安全性設定 Windows 10 裝置](https://docs.microsoft.com/intune/protect/security-baselines)。 最後，比較 microsoft defender [For endpoint 和 Windows intune 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)時，可使用 microsoft Defender for Endpoint 和 microsoft intune 安全性基準之間的比較。
+- 您可以在以下位置找到 **適用于 Windows 的安全性基準**：您 [可以在何處取得安全性基準？](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)針對 GPO/內部部署選項，以及 [使用安全性基線，在 intune 中為 intune 型安全性設定 Windows 10 裝置](/intune/protect/security-baselines)。 最後，比較 microsoft defender [For endpoint 和 Windows intune 安全性基準](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)時，可使用 microsoft Defender for Endpoint 和 microsoft intune 安全性基準之間的比較。

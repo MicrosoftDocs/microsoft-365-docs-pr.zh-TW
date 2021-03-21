@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 216ec3853f1b55c7fb34de3a236f50094202bca5
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: ef5562aa6f5c7519d19452100b55dd4bc30d4126
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352463"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926321"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>將舊版 eDiscovery 搜尋和保留遷移至 Microsoft 365 規範中心
 
@@ -52,7 +52,7 @@ Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 
 ## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>步驟2：使用 Get-MailboxSearch 取得 In-Place eDiscovery 搜尋的清單
 
-驗證之後，您可以執行**Get-MailboxSearch** Cmdlet，以取得 In-Place eDiscovery 搜尋的清單。 將下列命令複製並貼到 PowerShell，然後執行它。 會列出搜尋的清單，以及其名稱及任何 In-Place 保留狀態。
+驗證之後，您可以執行 **Get-MailboxSearch** Cmdlet，以取得 In-Place eDiscovery 搜尋的清單。 將下列命令複製並貼到 PowerShell，然後執行它。 會列出搜尋的清單，以及其名稱及任何 In-Place 保留狀態。
 
 ```powershell
 Get-MailboxSearch
@@ -64,7 +64,7 @@ Cmdlet 輸出會類似下列所示：
 
 ## <a name="step-3-get-information-about-the-in-place-ediscovery-searches-and-in-place-holds-you-want-to-migrate"></a>步驟3：取得 In-Place eDiscovery 搜尋的相關資訊，以及您要遷移的 In-Place 封存
 
-同樣，您會使用**Get-MailboxSearch** Cmdlet，但這次是取得搜尋的屬性。 您可以將這些屬性儲存在變數中供日後使用。 下列範例會將**Get-MailboxSearch** Cmdlet 的結果儲存在變數中，然後顯示該搜尋的屬性。
+同樣，您會使用 **Get-MailboxSearch** Cmdlet，但這次是取得搜尋的屬性。 您可以將這些屬性儲存在變數中供日後使用。 下列範例會將 **Get-MailboxSearch** Cmdlet 的結果儲存在變數中，然後顯示該搜尋的屬性。
 
 ```powershell
 $search = Get-MailboxSearch -Identity "Search 1"
@@ -79,7 +79,7 @@ $search | FL
 ![使用 Get-MailboxSearch 個別搜尋 PowerShell 輸出的範例](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> 在此範例中，In-Place 保留期間是無限期（*ItemHoldPeriod：無限制*）。 這是 eDiscovery 和法律調查案例的常見功能。 如果保留期間的值與無限期不同，原因可能是因為保留是用於保留案例中的內容。 建議您使用[New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)和[New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule)保留內容，而不是在安全性 & 規範中心中使用 eDiscovery Cmdlet PowerShell 進行保留案例。 使用這些 Cmdlet 的結果會類似使用**New-CaseHoldPolicy**和**New-CaseHoldRule**，但您可以指定保留期間和保留動作，例如在保留期間到期時刪除內容。 此外，使用保留指令程式不需要您將保留封存與 eDiscovery 案例產生關聯。
+> 在此範例中 In-Place 保留期間 (*ItemHoldPeriod：無限制*) 。 這是 eDiscovery 和法律調查案例的常見功能。 如果保留期間的值與無限期不同，原因可能是因為保留是用於保留案例中的內容。 建議您使用 [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) 和 [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) 保留內容，而不是在安全性 & 規範中心中使用 eDiscovery Cmdlet PowerShell 進行保留案例。 使用這些 Cmdlet 的結果會類似使用 **New-CaseHoldPolicy** 和 **New-CaseHoldRule**，但您可以指定保留期間和保留動作，例如在保留期間到期時刪除內容。 此外，使用保留指令程式不需要您將保留封存與 eDiscovery 案例產生關聯。
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>步驟4：在 Microsoft 365 規範中心建立案例
 
@@ -88,7 +88,7 @@ $search | FL
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
-![執行 Get-compliancecase 命令的範例](../media/MigrateLegacyeDiscovery3.png)
+![執行 New-ComplianceCase 命令的範例](../media/MigrateLegacyeDiscovery3.png)
 
 ## <a name="step-5-create-the-ediscovery-hold"></a>步驟5：建立電子檔保存暫止
 
@@ -108,7 +108,7 @@ New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 
 ## <a name="step-6-verify-the-ediscovery-hold"></a>步驟6：確認 eDiscovery 暫止
 
-若要確認建立保留沒有問題，請確認已成功保留分配狀態。 「分配」表示已將保留套用至上一個步驟中*ExchangeLocation*參數所指定的所有內容位置。 若要這麼做，您可以執行**Get-CaseHoldPolicy** Cmdlet。 因為儲存至您在上一個步驟中建立的 *$policy*變數的屬性不會在變數中自動更新，所以您需要重新執行 Cmdlet，以確認分配是否成功。 若要成功發佈案例保留原則，可能需要5分鐘到24小時的時間。
+若要確認建立保留沒有問題，請確認已成功保留分配狀態。 「分配」表示已將保留套用至上一個步驟中 *ExchangeLocation* 參數所指定的所有內容位置。 若要這麼做，您可以執行 **Get-CaseHoldPolicy** Cmdlet。 因為儲存至您在上一個步驟中建立的 *$policy* 變數的屬性不會在變數中自動更新，所以您需要重新執行 Cmdlet，以確認分配是否成功。 若要成功發佈案例保留原則，可能需要5分鐘到24小時的時間。
 
 執行下列命令，確認已成功發佈 eDiscovery 封存。
 
@@ -116,13 +116,13 @@ New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
 ```
 
-*DistributionStatus*屬性的**Success**值表示已成功將保留放在內容位置上。 如果分配尚未完成，則會顯示 [**未決**] 的值。
+*DistributionStatus* 屬性的 **Success** 值表示已成功將保留放在內容位置上。 如果分配尚未完成，則會顯示 [ **未決** ] 的值。
 
 ![PowerShell Get-CaseHoldPolicy 範例](../media/MigrateLegacyeDiscovery5.png)
 
 ## <a name="step-7-create-the-search"></a>步驟7：建立搜尋
 
-最後一個步驟是重新建立您在步驟3中識別的搜尋，並將它與案例建立關聯。 在您建立搜尋之後，您可以使用**Start-ComplianceSearch** Cmdlet 來執行它，或稍後執行它。
+最後一個步驟是重新建立您在步驟3中識別的搜尋，並將它與案例建立關聯。 在您建立搜尋之後，您可以使用 **Start-ComplianceSearch** Cmdlet 來執行它，或稍後執行它。
 
 ```powershell
 New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxes -ContentMatchQuery $search.SearchQuery -Case $case.name
@@ -136,38 +136,38 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![Microsoft 365 規範中心電子檔探索](../media/MigrateLegacyeDiscovery7.png)
 
-您在步驟3中建立的案例會列在**核心 eDiscovery**頁面上。 開啟案例，然後注意您在 [**保留**] 索引標籤的 [步驟 4] 中所建立的保留。您可以按一下 [保留] 以查看詳細資料，包括保留所用的信箱數目及發行狀態。
+您在步驟3中建立的案例會列在 **核心 eDiscovery** 頁面上。 開啟案例，然後注意您在 [ **保留** ] 索引標籤的 [步驟 4] 中所建立的保留。您可以按一下 [保留] 以查看詳細資料，包括保留所用的信箱數目及發行狀態。
 
 ![Microsoft 365 規範中心的 eDiscovery 保留](../media/MigrateLegacyeDiscovery8.png)
 
-您在步驟7中建立的搜尋列在 eDiscovery 案例的 [搜尋] 索引標籤上的 [**搜尋**] 索引標籤上。
+您在步驟7中建立的搜尋列在 eDiscovery 案例的 [搜尋] 索引標籤上的 [ **搜尋** ] 索引標籤上。
 
 ![Microsoft 365 規範中心的 eDiscovery 案例搜尋](../media/MigrateLegacyeDiscovery9.png)
 
 如果您遷移的是 In-Place eDiscovery 搜尋，但沒有將其與 eDiscovery 案例產生關聯，它會列在 Microsoft 365 規範中心的 [內容搜尋] 頁面上。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 - 如需 Exchange 系統管理中心中 In-Place eDiscovery & 保留的詳細資訊，請參閱：
   
-  - [就地電子文件](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+  - [就地電子文件](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [就地保留與訴訟暫止](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds)
+  - [就地保留與訴訟資料暫留](/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 - 如需本文中所用 PowerShell Cmdlet 的詳細資訊，請參閱：
 
-  - [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch)
+  - [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch)
   
-  - [新 Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/new-compliancecase)
+  - [新 Get-compliancecase](/powershell/module/exchange/new-compliancecase)
 
-  - [New-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/new-caseholdpolicy)
+  - [New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy)
   
-  - [New-CaseHoldRule](https://docs.microsoft.com/powershell/module/exchange/new-caseholdrule)
+  - [New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule)
 
-  - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
+  - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
   
-  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
+  - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
-  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
+  - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- 如需 Microsoft 365 規範中心的詳細資訊，請參閱[microsoft 365 規範中心概述](microsoft-365-compliance-center.md)。
+- 如需 Microsoft 365 規範中心的詳細資訊，請參閱 [microsoft 365 規範中心概述](microsoft-365-compliance-center.md)。

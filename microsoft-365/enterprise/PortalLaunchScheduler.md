@@ -17,26 +17,26 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: 66912f5730c580bd75282a64124fefcdf262d738
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.openlocfilehash: e39f00dbc63ae7f1dcaf907d9c67df2c1683efc6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864873"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926139"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>使用入口網站啟動計畫程式啟動入口網站
 
 入口網站是您內部網路上的 SharePoint 網站，擁有大量網站檢視者在該網站上取用內容。 以波形的式啟動入口網站是確保使用者能夠存取新 SharePoint 線上入口網站的流暢且具能力的經驗的重要部分。 
 
-以聲波發射是一種重要方式，可讓您在 [線上 SharePoint 中規劃入口網站發佈的計畫](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)，以逐步展示您的入口網站。 入口網站啟動排程程式的設計目的是為了協助您追蹤新入口網站的重新導向，以進行波形/逐步化方法。 在每個波形期間，您可以在每個部署浪潮期間收集使用者意見反應並監控效能。 這具有逐步引入入口網站的優勢，讓您可以選擇暫停及解決問題，再繼續進行下一個浪潮，最後確保使用者的取得積極的經驗。 
+以聲波發射是一種重要方式，可讓您在 [線上 SharePoint 中規劃入口網站發佈的計畫](./planportallaunchroll-out.md?view=o365-worldwide)，以逐步展示您的入口網站。 入口網站啟動排程程式的設計目的是為了協助您追蹤新入口網站的重新導向，以進行波形/逐步化方法。 在每個波形期間，您可以在每個部署浪潮期間收集使用者意見反應並監控效能。 這具有逐步引入入口網站的優勢，讓您可以選擇暫停及解決問題，再繼續進行下一個浪潮，最後確保使用者的取得積極的經驗。 
 
 重新導向的類型有兩種： 
 - 雙向：啟動新的現代 SharePoint 線上入口網站以取代現有的 SharePoint 傳統或新式入口網站 
 - 暫時頁面重新導向：使用沒有現有 SharePoint 入口網站的新新式 SharePoint 線上入口網站啟動
 
-入口網站啟動排程器僅可啟動新式 SharePoint Online 入口網站 (（例如，) 的通訊）。 啟動時間必須預先排程至少7天。 所需的無線電波數目取決於預期的使用者數目。 在排程入口網站之前，必須執行 [SharePoint 工具的頁面診斷](https://aka.ms/perftool) ，以驗證入口網站上的首頁狀況良好。 在入口網站的最後一開始，所有具有網站許可權的使用者都可以存取新網站。 
+入口網站啟動排程器僅可啟動新式 SharePoint Online 入口網站 (（例如，) 的通訊）。 啟動時間必須預先排程至少7天。 所需的無線電波數目取決於預期的使用者數目。 在排程入口網站之前，必須執行 [SharePoint 工具的頁面診斷](./page-diagnostics-for-spo.md) ，以驗證入口網站上的首頁狀況良好。 在入口網站的最後一開始，所有具有網站許可權的使用者都可以存取新網站。 
 
-如需有關啟動成功入口網站的詳細資訊，請遵循 [建立、啟動及維護健康入口網站](https://docs.microsoft.com/sharepoint/portal-health)的基本原則、作法和建議。 
+如需有關啟動成功入口網站的詳細資訊，請遵循 [建立、啟動及維護健康入口網站](/sharepoint/portal-health)的基本原則、作法和建議。 
 
 > [!NOTE]
 > 這項功能不適用於 Office 365 德國、由世紀運作的 Office 365 (中國) 或 Microsoft 365 美國政府方案。
@@ -138,4 +138,4 @@ ms.locfileid: "49864873"
 2. 驗證所有使用者都不會進行重新導向。
 
 ## <a name="learn-more"></a>深入了解
-[在 SharePoint Online 中規劃您的入口網站啟動向外推廣計畫](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
+[在 SharePoint Online 中規劃您的入口網站啟動向外推廣計畫](./planportallaunchroll-out.md)

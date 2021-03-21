@@ -16,12 +16,12 @@ ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 深入了解如何在與組織外的人員共用檔案時，限制資訊意外暴露。
-ms.openlocfilehash: 430c00d46fa3801d0869b05a651fadd3bf5dea28
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 952337790ce2f0418dd5ab637435f1523b27b562
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49029966"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928409"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在與組織外的人員共用檔案時，限制資訊意外暴露。
 
@@ -47,7 +47,7 @@ ms.locfileid: "49029966"
 
    ![組織層級 SharePoint 網站外部共用設定的螢幕擷取畫面](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 
-3. 按一下 **[儲存]** 。
+3. 按一下 [儲存]。
 
 若要關閉網站的 [任何人] 連結
 1. 在 SharePoint 管理中心中，在左側導覽窗格中展開 [網站]，然後按一下 [使用中網站]。
@@ -77,30 +77,30 @@ ms.locfileid: "49029966"
 
    ![依網域的 SharePoint 限制外部共用設定的螢幕擷取畫面](../media/sharepoint-sharing-block-domain.png)
 
-5. 按一下 **[儲存]** 。
+5. 按一下 [儲存]。
 
-如果您想要依據比 SharePoint 和 OneDrive 還要高層級的網域限制共用，您可以在 Azure Active Directory 中[允許或封鎖對特定組織的 B2B 使用者的邀請](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)。 (您必須設定 [SharePoint 和 OneDrive 與 Azure AD B2B 整合 (預覽版)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)，讓這些設定影響 SharePoint 和 OneDrive。)
+如果您想要依據比 SharePoint 和 OneDrive 還要高層級的網域限制共用，您可以在 Azure Active Directory 中[允許或封鎖對特定組織的 B2B 使用者的邀請](/azure/active-directory/b2b/allow-deny-list)。 (您必須設定 [SharePoint 和 OneDrive 與 Azure AD B2B 整合 (預覽版)](/sharepoint/sharepoint-azureb2b-integration-preview)，讓這些設定影響 SharePoint 和 OneDrive。)
 
 ## <a name="limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups"></a>將與組織外的人員共用的檔案、資料夾和網站限制為指定的安全性群組
 
 您可以將與組織外的人員共用的檔案、資料夾和網站限制為指定的安全性群組的成員。 如果您想要啟用外部共用，但是有核准工作流程或要求程序，這個選項相當有用。 或者，您可能會要求您的使用者在加入安全性群組並允許外部人員共用之前，先完成訓練課程。
 
 將外部共用限制為安全性群組的成員
-1. 在 [SharePoint 系統管理中心](https://admin.microsoft.com/sharepoint) 中，在左側導覽窗格中， **[政策]** 的下方，按一下 **[共用]** 。
-2. 在 **[外部共用]** 底下，展開 **更多外部共用設定** 。
+1. 在 [SharePoint 系統管理中心](https://admin.microsoft.com/sharepoint) 中，在左側導覽窗格中， **[政策]** 的下方，按一下 **[共用]**。
+2. 在 **[外部共用]** 底下，展開 **更多外部共用設定**。
 
-3. 選取 **[只允許特定安全性群組中的使用者對外共用]** ，然後選取 **[管理安全性群組]** 。
+3. 選取 **[只允許特定安全性群組中的使用者對外共用]**，然後選取 **[管理安全性群組]**。
 
-    ![管理安全性群組窗格的螢幕擷取畫面](https://docs.microsoft.com/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![管理安全性群組窗格的螢幕擷取畫面](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. 在 **[新增安全性群組]** 方塊中，輸入安全性群組的名稱。 [安全性群組] 方塊會隨即顯示。
 
 5. 在安全性群組名稱旁邊，自 **[可以共用的對象]** 下拉式功能表，請選取下列其中一項：
 
-    - **僅限已驗證的來賓** (預設)
+    - **僅限已驗證的來賓**(預設)
     - **任何人**
 
-6. 選取 **[儲存]** 。
+6. 選取 **[儲存]**。
 
 請注意，這會影響檔案、資料夾和網站，但是不會影響 Microsoft 365 群組或 Teams。 當成員邀請來賓加入私人 Microsoft 365 群組或 Microsoft Teams 中的私人小組時，邀請會傳送給群組或小組擁有者進行核准。
 

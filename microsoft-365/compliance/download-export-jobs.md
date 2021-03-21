@@ -17,18 +17,18 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
 description: 安裝和使用 Azure Storage Explorer，以從 Advanced eDiscovery 的審閱集中下載已匯出的檔。
-ms.openlocfilehash: 094dcb4ecc8b1ca73a7ec0238ed20b27d4c16e72
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 0a73d157b2661202507883dd6542cdf6c6b482f8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751290"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926619"
 ---
 # <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>在高級 eDiscovery 案例中下載匯出工作
 
 當您在高級 eDiscovery 案例中從審閱集匯出檔時，會將檔上傳至 Microsoft 提供的 Azure 存放區位置，或組織所管理的 Azure 儲存體位置。 使用的 Azure 儲存位置類型取決於匯出檔時選取的選項。
 
-本文提供如何使用 Microsoft Azure Storage Explorer 連線到 Azure 存放位置，以流覽及下載匯出的檔的指示。 如需 Azure Storage Explorer 的詳細資訊，請參閱 [快速入門：使用 Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)。
+本文提供如何使用 Microsoft Azure Storage Explorer 連線到 Azure 存放位置，以流覽及下載匯出的檔的指示。 如需 Azure Storage Explorer 的詳細資訊，請參閱 [快速入門：使用 Azure Storage explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)。
 
 ## <a name="step-1-install-the-azure-storage-explorer"></a>步驟1：安裝 Azure Storage Explorer
 
@@ -66,7 +66,7 @@ ms.locfileid: "49751290"
 
     請注意，SAS URL 的一部分會顯示在 [ **顯示名稱** ] 方塊中。 在您連接至儲存位置後，會將此名稱當做 **儲存帳戶** 下所建立之容器的顯示名稱使用。 這個名稱是由高級 eDiscovery 案例的識別碼所組成，也就是唯一的識別碼。 您可以保留預設顯示名稱或加以變更。 如果您進行變更，顯示名稱必須是唯一的。
 
-5. 按 **[下一步]**。
+5. 按 [下一步 **]**。
 
     隨即會顯示 [連線 **摘要** ] 頁面。
 

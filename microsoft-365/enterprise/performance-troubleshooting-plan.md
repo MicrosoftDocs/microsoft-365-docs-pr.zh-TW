@@ -22,12 +22,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: 本文可協助您疑難排解 Office 365 效能問題，甚至修正一些最常見的問題。
-ms.openlocfilehash: 4f66ed43df2da47c9ea1931b8508dfecf4546b1c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 588a19e86d903a7ab709a7f0d0131da6e2a77f47
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948385"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928233"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 的效能疑難排解規劃
 
@@ -48,7 +48,7 @@ ms.locfileid: "47948385"
 - 安裝用來收集及錄製資訊的工具：
   - 安裝 [Netmon 3.4](https://www.microsoft.com/download/details.aspx?id=4865) (或使用對等網路追蹤工具) 。
   - 安裝 [HTTPWatch](https://www.httpwatch.com/download/) 的免費基本版本 (或使用對等網路追蹤工具) 。
-  - 使用螢幕錄製器或執行 [步驟記錄器] ( Windows Vista 和更新版本隨附的 # A0) ，以便保留測試期間所採取的步驟記錄。
+  - 使用螢幕錄製器或執行步驟記錄器 (PSR.exe Windows Vista 和更新版本隨附的) ，以便記錄測試期間所採取的步驟。
 
 ### <a name="log-the-performance-issue"></a>記錄效能問題
 
@@ -104,7 +104,7 @@ Microsoft 的網路監控工具 ([Netmon](https://www.microsoft.com/download/det
 
 4. 再現呈現效能問題的步驟。
 
-5. 按一下 [**停止**檔案 \> **File** \> **另存**新檔]。 請記得為日期和時間提供時區，並提及其是否有不良或良好的效能。
+5. 按一下 [**停止** 檔案 \>  \> **另存** 新檔]。 請記得為日期和時間提供時區，並提及其是否有不良或良好的效能。
 
 ## <a name="httpwatch"></a>HTTPWatch
 
@@ -135,7 +135,7 @@ HTTPWatch 為瀏覽器外掛程式，所以在瀏覽器中公開工具，每個�
 
 步驟記錄器或 PSR.exe 可讓您記錄發生的問題。 這是非常實用的工具，而且非常易於執行。
 
-### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>執行問題步驟錄影機 ( # A0) 錄製您的工作
+### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>執行問題步驟錄影機 (PSR.exe) 錄製您的工作
 
 1. 使用 **開始** \> **執行** \> 類型 **PSR.exe** \> **確定**，或按一下 **Windows 鍵** \> 類型 **PSR.exe** \> 然後按 ENTER 鍵。
 
@@ -143,7 +143,7 @@ HTTPWatch 為瀏覽器外掛程式，所以在瀏覽器中公開工具，每個�
 
 3. 完成步驟後，按一下 [ **停止錄製** ]。 如果效能問題是頁面轉譯，請等到頁面轉譯後，再停止錄製。
 
-4. 按一下 [儲存]****。
+4. 按一下 **[儲存]**。
 
 ![步驟記錄器或 PSR.exe 的螢幕擷取畫面。](../media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
 
@@ -174,7 +174,7 @@ Netmon 追蹤可能會有許多流量。 如果您沒有閱讀過的經驗，您
 如果發生問題時，您只是使用 Netmon 追蹤，也沒關係。 若要自行確定方向，請使用類似或的篩選 `ContainsBin(FrameData, ASCII, "office")` `ContainsBin(FrameData, ASCII, "outlook")` 。 您可以從追蹤檔案錄製您的框架編號。 您也可以將 [ _框架摘要_ ] 窗格向右移動，並尋找 [交談識別碼] 欄。 您也可以在此顯示特定交談的識別碼，以日後進行記錄和查看。 請記得先移除此篩選器，再套用其他任何篩選。
 
 > [!TIP]
-> Netmon 具有許多有用的內建篩選。 嘗試 [_顯示_篩選] 窗格頂端的 [**負載篩選**] 按鈕。
+> Netmon 具有許多有用的內建篩選。 嘗試 [_顯示_ 篩選] 窗格頂端的 [**負載篩選**] 按鈕。
 
 ![在用戶端電腦上的命令列中使用 PSPing，尋找您的 IP。](../media/4c43ac67-e28e-4536-842d-7add7aa28847.PNG)
 
@@ -244,7 +244,7 @@ Netmon 追蹤可能會有許多流量。 如果您沒有閱讀過的經驗，您
 舉例來說，Netmon 中的篩選器看起來可能像是 Wireshark 中的篩選器  `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12`  `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12` 。
 
 > [!TIP]
-> 不知道追蹤中的 IP 位址是否屬於您的 DNS 伺服器？ 請嘗試在命令列上查看。 按一下 [ **開始** \> **執行**]， \> 輸入 **cmd**，或按 **Windows 鍵** \> 並輸入 **cmd**。 在提示字元下輸入  `nslookup <the IP address from the network trace>` 。 若要測試，對您自己的電腦 IP 位址使用 nslookup。 > 若要查看 Microsoft 的 IP 範圍清單，請參閱 [Office 365 URLs 和 IP 位址範圍](https://technet.microsoft.com/library/hh373144.aspx)。
+> 不知道追蹤中的 IP 位址是否屬於您的 DNS 伺服器？ 請嘗試在命令列上查看。 按一下 [ **開始** \> **執行**]， \> 輸入 **cmd**，或按 **Windows 鍵** \> 並輸入 **cmd**。 在提示字元下輸入  `nslookup <the IP address from the network trace>` 。 若要測試，對您自己的電腦 IP 位址使用 nslookup。 > 若要查看 Microsoft 的 IP 範圍清單，請參閱 [Office 365 URLs 和 IP 位址範圍](./urls-and-ip-address-ranges.md)。
 
 如果發生問題，預期會出現長時間偏移，在此情況下 (Outlook Online) ，尤其是在 TLS：顯示應用程式資料之 (的 TLS 封包例如，在 Netmon 中，您可以透過) 尋找應用程式資料封包  `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"` 。 您應該會在會話間看到一段時間的順利進展。 如果您在重新整理 Outlook Online 時看到長時間延遲，這可能是因為傳送高重設。
 
@@ -281,7 +281,7 @@ Netmon 追蹤可能會有許多流量。 如果您沒有閱讀過的經驗，您
 1. Ping URL， `ping outlook.office365.com` 然後在結果中記錄已傳送 ping 要求之 DNS 伺服器的名稱和 IP 位址。
 2. 網路追蹤開啟頁面，或執行使您產生效能問題的動作，或者，如果您在 ping 上看到過高的延遲，它本身就是網路追蹤。
 3. 在 Netmon 中開啟追蹤並篩選 DNS (此篩選也可在 Wireshark 中運作，但對) 大小寫敏感 `-- dns` 。 由於您知道從您的 ping 知道 DNS 伺服器的名稱，因此您也可以在 Netmon 中篩選更多 speedily，如下所示： `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")` 在 Wireshark DNS 及 frame 包含 "namnorthwest" 的情況下，它看起來就像這樣。<br/>開啟回應封包，然後在 [Netmon **框架詳細資料** ] 視窗中，按一下 [ **DNS** ] 以展開詳細資訊。 在 [DNS 資訊] 中，您會找到要求在 Office 365 中進入之 DNS 伺服器的 IP 位址。 您將需要此 IP 位址進行下一個步驟 (PsPing 工具) 。 移除篩選，以滑鼠右鍵按一下 Netmon 中的 DNS 回應 (**框架摘要** \> **尋找交談** \> **dns**) 以並排查看 dns 查詢和回應。
-4. 在 Netmon 中，也請記下 DNS 要求和回應之間的時間位移欄。 在下一個步驟中，易於安裝和使用的 [PsPing](https://technet.microsoft.com/sysinternals/jj729731.aspx) 工具會非常方便，因為這兩者是因為 ICMP 通常會封鎖在防火牆上，而且因為 PsPing elegantly 追蹤延遲（以毫秒為單位）。 PsPing 會在我們的案例開啟埠 443) 中完成 TCP 連線到位址及埠 (。
+4. 在 Netmon 中，也請記下 DNS 要求和回應之間的時間位移欄。 在下一個步驟中，易於安裝和使用的 [PsPing](/sysinternals/downloads/psping) 工具會非常方便，因為這兩者是因為 ICMP 通常會封鎖在防火牆上，而且因為 PsPing elegantly 追蹤延遲（以毫秒為單位）。 PsPing 會在我們的案例開啟埠 443) 中完成 TCP 連線到位址及埠 (。
 5. 安裝 PsPing。
 6. \> \> 在您安裝 PsPing 以執行 PsPing 命令的目錄上，開啟命令提示字元 (Start Run type Cmd 或 Windows Key \> type cmd) 並將目錄變更為您安裝的目錄。 在 [我的範例] 中，您可以看到 I 是 C 的根的「Perf」資料夾。您可以使用相同的快速存取。
 7. 輸入命令，讓您從舊版的 Netmon 追蹤（包括埠號碼） PsPing Office 365 DNS 伺服器的 IP 位址 `psping -n 20 132.245.24.82:445` 。 這可讓您在 PsPing 停止時，為您提供20個 ping 的抽樣，並平均延遲時間。
@@ -299,7 +299,7 @@ Netmon 追蹤可能會有許多流量。 如果您沒有閱讀過的經驗，您
 ![Netmon 中的一般延遲，並將 Netmon 預設時間差異欄位新增至框架摘要。](../media/7ad17380-8527-4bc2-9b9b-6310cf19ba6b.PNG)
 
 > [!NOTE]
-> 您的 IP 位址可能不同于這裡顯示的 ip 位址，例如，您的 ping 可能會傳回如 157.56.0.0/16 或類似範圍的內容。 如需 Office 365 所用範圍的清單，請參閱 [office 365 URLs 和 IP 位址範圍](https://technet.microsoft.com/library/hh373144.aspx)。
+> 您的 IP 位址可能不同于這裡顯示的 ip 位址，例如，您的 ping 可能會傳回如 157.56.0.0/16 或類似範圍的內容。 如需 Office 365 所用範圍的清單，請參閱 [office 365 URLs 和 IP 位址範圍](./urls-and-ip-address-ranges.md)。
 
 請記得展開所有節點，如果您想要搜尋，請在此) 的上方 (按鈕（例如，132.245）。
 
@@ -328,7 +328,7 @@ Proxy 驗證是您的出口 proxy 伺服器上的設定。 如果是導致 Offic
 2. 按一下 **[選擇欄**]。
 3. 在清單中找出 _NTLMSSP 摘要_ 和 _時間 Delta_ ，然後按一下 [ **新增**]。
 4. 將新的欄移至 [ _描述_ ] 欄之前或之後的位置，以便您可以並列閱讀。
-5. 按一下 **[確定]**。
+5. 點擊 **[確定]**。
 
 即使您沒有新增欄，Netmon 篩選也會運作。 不過，如果您可以看到您在哪個驗證階段，您的疑難排解會變得更容易。
 
@@ -345,7 +345,7 @@ Proxy 驗證中的4秒延遲（如 Wireshark 所示）。 在 [框架詳細資�
 若要在國外進行 DNS 名稱解析，則可以在頁面負載中增加秒數。 理想狀況下，名稱解析會出現在100ms 之下。 如果不是，您應該進行進一步的調查。
 
 > [!TIP]
-> 不確定 Client Connectivity in Office 365 的運作方式？ 請參閱下列的用戶端連線[參考檔。](https://technet.microsoft.com/library/dn741250.aspx)
+> 不確定 Client Connectivity in Office 365 的運作方式？ 請參閱下列的用戶端連線[參考檔。](/previous-versions//dn741250(v=technet.10))
 
 #### <a name="tools"></a>工具
 
@@ -369,7 +369,7 @@ DNS 流量是以 TCP 及 UDP 要求和回應明確標示，其識別碼會協助
 2. 按一下 **[選擇欄**]。
 3. 找到清單中的 _時間差_ ，然後按一下 [ **新增**]。
 4. 將新欄移至 [ _描述_ ] 欄前面或後面的位置，以便您可以並列閱讀。
-5. 按一下 **[確定]**。
+5. 點擊 **[確定]**。
 
 如果您找到感興趣的查詢，請考慮在 [框架詳細資料] 面板中以滑鼠右鍵按一下該查詢以隔離它，然後選擇 [ **尋找交談** \> **DNS**]。 請注意，網路交談面板會直接跳至其 UDP 流量記錄中的特定交談。
 
@@ -467,7 +467,7 @@ TCP 最大區段大小 (MSS) 為網路追蹤中的三向握手的另一個參數
 Lync online 一次有一個以上的 dC 中有主動節點。 當您傳送 Lync online 實例的要求時，Microsoft 的 DNS 會判斷要求在世界上的位置，並傳回最近使用 Lync online 之地區 dC 中的 IP 位址。
 
 > [!TIP]
-> 需要進一步瞭解用戶端如何連接至 Office 365？ 請參閱 [Client Connectivity](https://technet.microsoft.com/library/dn741250.aspx) reference 文章 (及其有説明的圖形) 。
+> 需要進一步瞭解用戶端如何連接至 Office 365？ 請參閱 [Client Connectivity](/previous-versions//dn741250(v=technet.10)) reference 文章 (及其有説明的圖形) 。
 
 #### <a name="tools"></a>工具
 
@@ -496,7 +496,7 @@ Lync online 一次有一個以上的 dC 中有主動節點。 當您傳送 Lync 
 - HTTPWatch
 - 瀏覽器中的 F12 主控台
 
-在此網路特有的文章中，我們並未涵蓋應用程式特定疑難排解中所用的工具。 不過，您會找到您*可以*[在此頁面上使用的](https://support.office.com/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848)資源。
+在此網路特有的文章中，我們並未涵蓋應用程式特定疑難排解中所用的工具。 不過，您會找到您 *可以*[在此頁面上使用的](https://support.office.com/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848)資源。
 
 ## <a name="related-topics"></a>相關主題
 

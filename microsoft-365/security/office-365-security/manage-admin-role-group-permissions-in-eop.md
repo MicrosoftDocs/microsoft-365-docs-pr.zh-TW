@@ -13,12 +13,12 @@ ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 系統管理員可以瞭解如何在 exchange Online Protection 中指派或移除 Exchange 系統管理中心 (EAC) 中的許可權。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce272985f195f44c57848e6861cefb64431698b9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5e712c47d49508934ec7dd2438beff00eb6e1a20
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289922"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926877"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>在獨立版 EOP 中管理角色群組
 
@@ -35,11 +35,11 @@ ms.locfileid: "50289922"
 
 - 若要 (EAC) 開啟 Exchange 系統管理中心，請參閱 [exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要開啟獨立 EOP PowerShell，請參閱 [Connect To Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要開啟獨立 EOP PowerShell，請參閱 [Connect To Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體說來，您需要 **角色管理** 角色，其預設會指派給「 **組織管理** 」角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 論壇中尋求協助。
@@ -141,7 +141,7 @@ Get-RoleGroup -Identity "Recipient Administrators" | Format-List
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup)。
+如需詳細的語法及參數資訊，請參閱 [Get-RoleGroup](/powershell/module/exchange/Get-RoleGroup)。
 
 ### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>使用獨立 EOP PowerShell 建立角色群組
 
@@ -190,7 +190,7 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
      New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
      ```
 
-如需詳細的語法及參數資訊，請 [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup)。
+如需詳細的語法及參數資訊，請 [New-RoleGroup](/powershell/module/exchange/New-RoleGroup)。
 
 ### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>使用獨立 EOP PowerShell 修改角色群組中的成員清單
 
@@ -220,7 +220,7 @@ Update-RoleGroupMember -Identity "Help Desk" -Members "Gabriela Laureano","Hyun-
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember)。
+如需詳細的語法及參數資訊，請參閱 [Update-RoleGroupMember](/powershell/module/exchange/Update-RoleGroupMember)。
 
 ### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>使用獨立 EOP PowerShell 移除角色群組
 
@@ -238,7 +238,7 @@ Remove-RoleGroup -Identity "<Role Group Name>" [-BypassSecurityGroupManagerCheck
 Remove-RoleGroup -Identity "Training Administrators"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup)。
+如需詳細的語法及參數資訊，請參閱 [Remove-RoleGroup](/powershell/module/exchange/Remove-RoleGroup)。
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 

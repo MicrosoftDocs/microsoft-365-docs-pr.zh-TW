@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place 保留、訴訟暫止和 Microsoft 365 保留原則可讓您保留信箱內容，以符合法規遵從性和 eDiscovery 需求。
-ms.openlocfilehash: c864a963bec7a7d342a8ad90b6edc57c88f5205b
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: f00ed951fb68778b9c62ae874c2cca964bd6cb5c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588504"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927939"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>保留電子文件探索密件副本與展開的通訊群組收件者
   
-In-Place 保留、訴訟暫止及 [Microsoft 365 保留原則](https://go.microsoft.com/fwlink/?LinkID=827811) (以安全性 & 合規性中心建立) 可讓您保留信箱內容，以符合法規遵從性和 eDiscovery 需求。 預設會在郵件的 [收件者] 和 [副本] 欄位中包含收件者的相關資訊。 不過，您的組織可能需要能夠搜尋並再現郵件之所有收件者的詳細資料。 這包括：
+In-Place 保留、訴訟暫止及 [Microsoft 365 保留原則](./retention.md) (以安全性 & 合規性中心建立) 可讓您保留信箱內容，以符合法規遵從性和 eDiscovery 需求。 預設會在郵件的 [收件者] 和 [副本] 欄位中包含收件者的相關資訊。 不過，您的組織可能需要能夠搜尋並再現郵件之所有收件者的詳細資料。 這包括：
   
 - **使用郵件的 [密件副本] 欄位進行位址** 的收件者：密件副本收件者會儲存在寄件者信箱中的郵件中，但不會包含在傳送給收件者之郵件的標頭中。 
     
@@ -84,7 +84,7 @@ Exchange Online 和 Exchange Server 2013 (累計更新7和更新版本) 會保�
   
  **問。如何確定已展開的通訊群組收件者永遠都能保留？**
   
-答： 為了確保展開的通訊群組成員永遠會保留郵件，請 [將所有信箱](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) 保留或建立整個組織的 Microsoft 365 保留原則。 
+答： 為了確保展開的通訊群組成員永遠會保留郵件，請 [將所有信箱](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) 保留或建立整個組織的 Microsoft 365 保留原則。 
   
  **問。支援的群組類型為何？**
   

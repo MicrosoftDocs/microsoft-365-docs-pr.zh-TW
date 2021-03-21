@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 摘要：說明用來連線至 Office 365 之網路容量、WAN 加速器及負載平衡裝置的考慮。
-ms.openlocfilehash: a4ea75eb294d74004125be4d258dbe86d7d89810
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e1209c13eb24d11a2cc9692957bc4ee5f6310f41
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688505"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927497"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>連線到 Office 365 服務的網路裝置的計劃
 
@@ -31,13 +31,13 @@ ms.locfileid: "46688505"
   
 有些網路硬體可能會限制支援的並行會話數目。 對於擁有超過2000使用者的組織，建議他們監視其網路裝置，以確保它們能夠處理其他 Office 365 服務流量。 簡易網路管理通訊協定 (SNMP) 監視軟體可協助您執行這項作業。
 
-本文是 [Office 365 的網路規劃與效能調整](https://aka.ms/tune)的一部分。
+本文是 [Office 365 的網路規劃與效能調整](./network-planning-and-performance.md)的一部分。
 
 內部部署外寄網際網路 proxy 設定也會影響用戶端應用程式的 Office 365 服務連線能力。 您也必須設定網路 proxy 裝置，以允許 Microsoft cloud services URLs 和應用程式的連線。 每個組織都不同。 若要瞭解 Microsoft 如何管理此程式以及我們提供的頻寬量，請 [閱讀案例分析](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)。
   
 下列商務用 Skype 說明文章具有商務用 Skype 設定的詳細資訊：
   
-- [疑難排解系統管理員的商務用 Skype Online 登入錯誤](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
+- [疑難排解系統管理員的商務用 Skype Online 登入錯誤](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [您無法連線至商務用 Skype，或某些功能無法運作，因為內部部署防火牆會封鎖連線](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
@@ -68,7 +68,7 @@ ms.locfileid: "46688505"
 
 如需設定防火牆和代理伺服器以連線至 Office 365 的詳細資訊，請參閱 [管理 office 365 端點](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)、 [評估 Office 365 網路](assessing-network-connectivity.md)連線，以及 [office 365 端點常見問題](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) 以深入瞭解裝置和電路選項。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Office 365 服務的安裝指南](setup-guides-for-microsoft-365.md)
 

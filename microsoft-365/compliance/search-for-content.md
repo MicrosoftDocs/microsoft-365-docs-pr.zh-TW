@@ -13,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用安全性 & 合規性中心的內容搜尋 eDiscovery 工具，可在 Exchange 信箱、SharePoint 網站中的檔，以及在商務用 Skype 中 OneDrive 位置和立即訊息交談中快速尋找電子郵件。
-ms.openlocfilehash: 6a82846514b3510c4ff9f9b79eeff20b789ad0ad
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: a6aa416768e7910e546b39d5866f884d2d532732
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422852"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927589"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>使用內容搜尋工具搜尋內容
 
@@ -46,7 +46,7 @@ ms.locfileid: "49422852"
 
 - [重試內容搜尋](retry-failed-content-search.md) 以解決內容位置錯誤
 
-- [保留密件副本](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) 收件者，以便進行搜尋 
+- [保留密件副本](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) 收件者，以便進行搜尋 
 
 ## <a name="perform-actions-on-content-you-find"></a>對所找到的內容執行動作
 

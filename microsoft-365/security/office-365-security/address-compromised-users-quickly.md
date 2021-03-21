@@ -15,12 +15,12 @@ ms.date: 02/25/2020
 description: 瞭解如何使用 Microsoft Defender for Office 365 方案2中的自動調查和回應功能，以加速偵測和解決已遭破壞之使用者帳戶的處理常式。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1dda8c9b4aec30fd35efa153aaf032eee23b5e8a
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a6aa14eca1e9fb1e06dd3290e23a46908b21516d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288738"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927081"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>利用自動調查和回應來處理已遭破壞的使用者帳戶
 
@@ -105,6 +105,6 @@ ms.locfileid: "50288738"
 
 - [在 Office 365 中尋找並調查惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
 
-- [深入瞭解 Microsoft Defender for Endpoint 中的 AIR](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [深入瞭解 Microsoft Defender for Endpoint 中的 AIR](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 - [造訪 Microsoft 365 藍圖，查看即將推出的功能](https://www.microsoft.com/microsoft-365/roadmap?filters=)

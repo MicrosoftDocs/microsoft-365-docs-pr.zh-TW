@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何使用合規性中心來啟用封存信箱，以便支援組織的郵件保留、電子文件探索和保留需求。
-ms.openlocfilehash: d7506b92cc16120f1d40a6d5a1744ab38d446a76
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 2bc80d347d1324a317cc2cc2712d475781adc492
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233813"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926513"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>啟用合規性中心的封存信箱
 
@@ -102,7 +102,7 @@ Microsoft 365 中的封存 (也稱為 *就地封存*) 可為使用者提供額�
 
 您也可以使用 Exchange Online PowerShell 來啟用封存信箱。 使用 PowerShell 的主要原因是您可以為組織中的所有使用者快速啟用封存信箱。
 
-第一個步驟是連線至 Exchange Online PowerShell。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+第一個步驟是連線至 Exchange Online PowerShell。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 連線到 Exchange Online 後，您可以執行下列各節中的命令，以便啟用或停用封存信箱。
 
@@ -150,8 +150,8 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 - 如需封存信箱及 Exchange 保留原則的詳細資訊，請參閱：
 
-  - [Exchange Online 中的保留標記和保留原則](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+  - [Exchange Online 中的保留標記和保留原則](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
-  - [Exchange Online 中的預設保留原則](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
+  - [Exchange Online 中的預設保留原則](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
   - [設定組織中的信箱封存和刪除原則](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

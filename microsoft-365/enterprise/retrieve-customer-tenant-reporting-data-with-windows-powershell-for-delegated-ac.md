@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 摘要：使用遠端 Windows PowerShell for Microsoft Exchange Online 從個別客戶租用戶擷取報告。
-ms.openlocfilehash: 24d56fffa60232c4ea39f4fe7769131cab23be2f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8ea5f9834bfcc0d517fc1e0938c3547d88d1d8a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688319"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927213"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>利用適用於委派存取權限 (DAP) 合作夥伴的 Windows PowerShell 擷取客戶租用戶報告資料
 
@@ -35,7 +35,7 @@ ms.locfileid: "46688319"
  
 ## <a name="before-you-begin"></a>開始之前
 
-- 您需要使用遠端 Windows PowerShell 連接 Exchange Online 租用戶。如需詳細指示，請參閱[利用適用於委派存取權限 (DAP) 合作夥伴的遠端 Windows PowerShell 連線至 Exchange Online 租用戶](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)。
+- 您需要使用遠端 Windows PowerShell 連接 Exchange Online 租用戶。如需詳細指示，請參閱[利用適用於委派存取權限 (DAP) 合作夥伴的遠端 Windows PowerShell 連線至 Exchange Online 租用戶](/powershell/exchange/connect-to-exchange-online-powershell)。
     
 ## <a name="run-the-get-stalemailboxreport-sample"></a>執行 Get-StaleMailboxReport 範例
 
@@ -51,9 +51,8 @@ Exchange Online、Lync Online 及 SharePoint Online 另有其他許多適用的�
 
 #### 
 
-[Office 365 報告 Web 服務](https://go.microsoft.com/fwlink/p/?LinkId=532777)
+[Office 365 報告 Web 服務](/previous-versions/office/developer/o365-enterprise-developers/jj984325(v=office.15))
   
-[Exchange Online 中的報告 Cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=526430)
+[Exchange Online 中的報告 Cmdlet](/powershell/module/exchange/get-csclientdevicedetailreport)
   
 [合作夥伴說明](https://go.microsoft.com/fwlink/p/?LinkID=533477)
-

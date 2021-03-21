@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 部署 Microsoft 365 安全性和合規性功能，並保護您的個人資訊。
-ms.openlocfilehash: a5bba79f8ab382707b6fd5e448003a0271d690c6
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 657b3c9c6416c8a38629a0d26253e1222aa6d242
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597235"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928469"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保護受資料隱私權法規制約的資訊
 
@@ -38,7 +38,7 @@ ms.locfileid: "50597235"
 ![保護受資料隱私權法規制約之個人資訊的重要服務](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
->此解決方案說明安全性和合規性功能，以保護受資料隱私權法規制約的資訊。 如需 Microsoft 365 中安全性功能的完整清單，請參閱 [microsoft 365 安全性檔案](https://docs.microsoft.com/microsoft-365/security/)。 如需 Microsoft 365 中符合性功能的完整清單，請參閱 [microsoft 365 規範檔](https://docs.microsoft.com/microsoft-365/compliance/)。
+>此解決方案說明安全性和合規性功能，以保護受資料隱私權法規制約的資訊。 如需 Microsoft 365 中安全性功能的完整清單，請參閱 [microsoft 365 安全性檔案](../security/index.yml)。 如需 Microsoft 365 中符合性功能的完整清單，請參閱 [microsoft 365 規範檔](../compliance/index.yml)。
 >
 
 ## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>影響資訊保護控制的資料隱私權法規
@@ -68,7 +68,7 @@ ms.locfileid: "50597235"
 Microsoft [資訊保護解決方案](../compliance/information-protection.md) 包含許多 microsoft 365、microsoft Azure 和 microsoft Windows 的整合式功能。 在 Microsoft 365 中，資訊保護解決方案包括：
 
 - [客戶金鑰服務加密](../compliance/customer-key-overview.md)
-- [敏感資訊類型](../compliance/what-the-sensitive-information-types-look-for.md) (會在 [評估資料隱私權風險及識別敏感專案文章](information-protection-deploy-assess.md) 中所述) 
+- [敏感資訊類型](../compliance/sensitive-information-type-entity-definitions.md) (會在 [評估資料隱私權風險及識別敏感專案文章](information-protection-deploy-assess.md) 中所述) 
 - [敏感度標籤](../compliance/sensitivity-labels.md) 
   - 服務/容器層級
   - 用戶端/內容層級
@@ -81,10 +81,10 @@ Microsoft [資訊保護解決方案](../compliance/information-protection.md) �
 
 如需 Microsoft 365 以外的其他資訊保護功能資訊，請參閱：
 
-- [Microsoft Cloud Application Security (MCAS) ](https://docs.microsoft.com/cloud-app-security/)
-- [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
+- [Microsoft Cloud Application Security (MCAS) ](/cloud-app-security/)
+- [Azure 資訊保護](/azure/information-protection/what-is-information-protection)
 - [Microsoft 端點管理員](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
-- [Windows 資訊保護](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+- [Windows 資訊保護](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 ## <a name="sensitivity-labels"></a>敏感度標籤
 

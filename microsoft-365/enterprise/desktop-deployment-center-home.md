@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 如何取得與已被取代的桌面部署中心同等的資源。
-ms.openlocfilehash: 1b930bae76c510108556947977aa1393ae9bd86b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: c4456d0f17e38920e77c855e31205e51025f111b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398828"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928165"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>已棄用的桌面部署中心 () 
 
@@ -26,9 +26,9 @@ ms.locfileid: "48398828"
 
 使用這些資源來部署現代桌面：
 
-- [Windows 10 部署](https://docs.microsoft.com/windows/deployment/)
-- [部署 Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
-- [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Windows 10 部署](/windows/deployment/)
+- [部署 Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [身分識別與裝置存取原則](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 您也可以 [從 Microsoft 結構中查看桌面部署數列](https://www.aka.ms/watchhowtoshift)影片。

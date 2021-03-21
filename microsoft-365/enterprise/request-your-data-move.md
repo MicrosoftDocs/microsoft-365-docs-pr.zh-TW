@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 現有的 Office 365 客戶必須先提交要求，然後才將其 Microsoft 365 服務資料移至新的地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 216cd3b0cb55cbbe6be89945b98a01ae469ec4e2
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: e68feeca842061c43c7be70d9b8b930f068d8e4e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349229"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927309"
 ---
 # <a name="how-to-request-your-data-move"></a>如何要求資料移動
 
@@ -38,14 +38,14 @@ ms.locfileid: "49349229"
 |印度  <br/> |2020年1月1日  <br/> |2020 年 6 月 30 日  <br/> |
 |加拿大  <br/> |2020年1月1日  <br/> |2020 年 6 月 30 日  <br/> |
 |英國  <br/> |2020年1月1日  <br/> |2020 年 6 月 30 日  <br/> |
-|南韓  <br/> |2020年1月1日  <br/> |2020 年 6 月 30 日  <br/> |
+|韓國  <br/> |2020年1月1日  <br/> |2020 年 6 月 30 日  <br/> |
 |法國  <br/> |2020年1月1日  <br/> |2020 年 6 月 30 日  <br/> |
 |阿拉伯聯合大公國  <br/> |2019 年 7 月 15 日  <br/> |2020 年 6 月 30 日  <br/> |
 |南非  <br/> |2019 年 7 月 25 日  <br/> |2020 年 6 月 30 日  <br/> |
 |瑞士，列支敦斯登  <br/> |2019 年 12 月 10 日  <br/> |2020 年 6 月 30 日  <br/> |
 |挪威  <br/> |2020 年 4 月 15 日  <br/> |2020年10月31日  <br/> |
 |德國  <br/> |2020年11月1日  <br/> |2021年4月30日  <br/> |
-|巴西  <br/> |2020年11月18日  <br/> |2021年5月31日  <br/> |
+|巴西  <br/> |2020 年 11 月 18 日  <br/> |2021年5月31日  <br/> |
 
 ## <a name="how-to-request-a-move"></a>如何要求移動
 
@@ -76,8 +76,6 @@ ms.locfileid: "49349229"
 
 [資料移動一般常見問題集](data-move-faq.md)
 
-[Microsoft Dynamics CRM Online 的新 datacenter geos](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Microsoft Dynamics CRM Online 的新 datacenter geos](/power-platform/admin/new-datacenter-regions)
   
 [依地區的 Azure 服務](https://azure.microsoft.com/regions/)
-  
-

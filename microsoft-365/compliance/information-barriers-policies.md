@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 65fa24d0a69e43cbdb2deeed8362b83d6b097413
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b245a0f7ca0845024fec0c498aca4c7d447f14ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838356"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928013"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -60,7 +60,7 @@ ms.locfileid: "50838356"
 - 目錄資料-確保您的組織結構反映在目錄資料中。 若要採取此動作，請確定已在 Azure Active Directory (或 Exchange Online) 中正確填入使用者帳戶屬性（如群組成員資格、部門名稱等）。 若要深入了解，請參閱下列資源：
   - [資訊屏障原則的屬性](information-barriers-attributes.md)
   - [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-  - [使用 Office 365 PowerShell 中設定使用者帳戶屬性](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+  - [使用 Office 365 PowerShell 中設定使用者帳戶屬性](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
 - 範圍型目錄搜尋-在您定義組織的第一個資訊障礙原則之前，您必須 [在 Microsoft 小組中啟用範圍型目錄搜尋](/MicrosoftTeams/teams-scoped-directory-search)。 在您設定或定義資訊屏障原則之前，請先等候至少24小時後，再啟用範圍目錄搜尋。
 
@@ -124,7 +124,7 @@ ms.locfileid: "50838356"
 決定您的組織目錄資料中所要用來定義段落的屬性。 您可以使用 *部門*、 *MemberOf* 或任何支援的屬性。 請確定您為使用者選取的屬性中有值。 [請參閱資訊障礙的支援屬性清單](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
-> **繼續進行下一節之前，請確定您的目錄資料具有可用於定義區段之屬性的值**。 如果您的目錄資料沒有您想要使用的屬性值，則必須更新使用者帳戶，以包含該資訊，然後再繼續進行資訊障礙。 若要取得這項協助，請參閱下列資源：<br/>- [使用 Office 365 PowerShell 設定使用者帳戶屬性](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **繼續進行下一節之前，請確定您的目錄資料具有可用於定義區段之屬性的值**。 如果您的目錄資料沒有您想要使用的屬性值，則必須更新使用者帳戶，以包含該資訊，然後再繼續進行資訊障礙。 若要取得這項協助，請參閱下列資源：<br/>- [使用 Office 365 PowerShell 設定使用者帳戶屬性](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>使用 PowerShell 定義線段
 

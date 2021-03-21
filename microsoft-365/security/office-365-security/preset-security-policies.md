@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 的保護功能上套用標準和嚴格的原則設定
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b49b980d217d60865029c8e64ad02ed722f6b86e
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: b57c13517d9fd41bcafea5c9d672da0e6b581ad7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407453"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926757"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的預先設定安全性原則
 
@@ -107,15 +107,15 @@ ms.locfileid: "50407453"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **預先設定的安全性原則** ] 頁面，請使用 <https://protection.office.com/presetSecurityPolicies> 。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您必須先在 **Exchange Online** 中指派許可權，才能執行本文中的程式：
+- 您必須已在 **Exchange Online** 中獲派權限，才能執行此文章中的程序：
   - 若要設定預先設定的安全性原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要針對預設安全性原則進行唯讀存取，您必須是 **全域讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱 [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱 [Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo)。
 
-  **附注**：將使用者新增至 microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 microsoft 365 中其他功能的必要許可權 _和_ 許可權。 如需詳細資訊，請參閱[系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  **附注**：將使用者新增至 microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 microsoft 365 中其他功能的必要許可權 _和_ 許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>使用安全性 & 規範中心，將預先設定的安全性原則指派給使用者
 

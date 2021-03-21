@@ -15,12 +15,12 @@ ms.custom:
 description: Admins in 獨立 Exchange Online Protection (EOP) 組織可以瞭解如何建立、修改及移除 Exchange 系統管理中心內的通訊群組和擁有郵件功能的安全性群組 (EAC) 和獨立 Exchange Online Protection (EOP) PowerShell。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d03b8a5129eb3b070f30de46b9b9c7bcc8e9898d
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 3b97e3fac0840753edada964252875a6e3a4fa04
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286798"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926829"
 ---
 # <a name="manage-groups-in-eop"></a>管理 EOP 中的群組
 
@@ -47,13 +47,13 @@ ms.locfileid: "50286798"
 
 - 若要開啟 Exchange 系統管理中心，請參閱 [exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 當您在獨立 EOP PowerShell 中管理群組時，可能會遇到節流。 本文中的 PowerShell 程式使用的批次處理方法，可導致幾分鐘的傳播延遲，使命令的結果看得見。
 
 - 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體說來，您需要 **通訊群組** 角色，預設會指派給 **組織管理** 和 **收件者管理** 角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 論壇中尋求協助。
@@ -156,7 +156,7 @@ Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurit
 Get-DistributionGroupMember -Identity <GroupIdentity>
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient) 和 [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember)。
+如需詳細的語法及參數資訊，請參閱 [Get-Recipient](/powershell/module/exchange/get-recipient) 和 [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember)。
 
 ### <a name="use-standalone-eop-powershell-to-create-groups"></a>使用獨立 EOP PowerShell 建立群組
 
@@ -182,7 +182,7 @@ New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","User
 New-EOPDistributionGroup -Name "IT Administrators" -Alias itadmin -Members @("michelle@contoso.com","laura@contoso.com","julia@contoso.com") -ManagedBy "chris@contoso.com"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/New-EOPDistributionGroup)。
+如需詳細的語法及參數資訊，請參閱 [New-EOPDistributionGroup](/powershell/module/exchange/New-EOPDistributionGroup)。
 
 ### <a name="use-standalone-eop-powershell-to-modify-groups"></a>使用獨立 EOP PowerShell 修改群組
 

@@ -13,12 +13,12 @@ description: 系統管理員可以深入瞭解安全性 & 規範中心的郵件�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7432eca577fb264126b9fc8f10bdd83de32711cf
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ce252535d472cc4941a1353aa2be94759daebf4a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289672"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926853"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
 
@@ -69,7 +69,7 @@ ms.locfileid: "50289672"
 
 - 安全性 & 規範中心內的 **組織管理** (全域管理員) 。
 
-- Azure Active Directory 中的 **[Exchange 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)**。
+- Azure Active Directory 中的 **[Exchange 系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)**。
 
 - 郵件流程安全性 & 規範中心的 **系統管理員**。 如果該帳戶並非也是「組織管理」或「Exchange 管理員」角色群組的成員，請考慮下列問題：
   - 使用者必須直接登入安全性 & 合規性中心 <https://protection.office.com> 。

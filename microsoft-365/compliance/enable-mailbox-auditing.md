@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: 預設情況下，在 Microsoft 365 (也稱為預設信箱審計或信箱審計的信箱審計記錄是開啟的) 。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
-ms.openlocfilehash: 8b97e18a6c5d24bd74bb04eecc91999c4aa61bb9
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 4b2016b4eee68d336cc2f77f2eb6fef6f3ee2fd9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175582"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927853"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
@@ -45,7 +45,7 @@ ms.locfileid: "50175582"
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>驗證預設開啟的信箱審核
 
-若要確認您組織的預設信箱審核已開啟，請在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
+若要確認您組織的預設信箱審核已開啟，請在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
 
 ```PowerShell
 Get-OrganizationConfig | Format-List AuditDisabled
@@ -342,7 +342,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 ## <a name="more-information"></a>其他資訊
 
-- 雖然預設會為所有組織啟用信箱審核記錄，但只有具有 E5 授權的使用者才會在 [安全性 & 合規性中心](search-the-audit-log-in-security-and-compliance.md) 或透過 [Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) **的「** 審核記錄」搜尋中，傳回信箱審核記錄事件。
+- 雖然預設會為所有組織啟用信箱審核記錄，但只有具有 E5 授權的使用者才會在 [安全性 & 合規性中心](search-the-audit-log-in-security-and-compliance.md) 或透過 [Office 365 管理活動 API](/office/office-365-management-api/office-365-management-activity-api-reference) **的「** 審核記錄」搜尋中，傳回信箱審核記錄事件。
 
   若要取得沒有 E5 授權之使用者的信箱審計記錄專案，您可以：
 
@@ -353,19 +353,19 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
   
   - 在 Exchange Online 中使用下列 Cmdlet PowerShell:
 
-    - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) 搜尋特定使用者的信箱審核記錄。
+    - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) 搜尋特定使用者的信箱審核記錄。
 
-    - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch) 搜尋特定使用者的信箱審核記錄，並將結果透過電子郵件傳送給指定的收件者。
+    - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) 搜尋特定使用者的信箱審核記錄，並將結果透過電子郵件傳送給指定的收件者。
 
   - 在 Exchange Online 中使用 Exchange 系統管理中心 (EAC) 進行下列動作：
 
-    - [匯出信箱稽核記錄](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
+    - [匯出信箱稽核記錄](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
-    - [執行非擁有者信箱存取報告](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+    - [執行非擁有者信箱存取報告](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 
 - 依預設，信箱審核記錄記錄會在刪除之前保留90天。 您可以使用 Exchange Online PowerShell 中 **Set-Mailbox** Cmdlet 上的 *AuditLogAgeLimit* 參數，來變更審核記錄記錄的保留天數。 不過，增加此值不會讓您在審核記錄中搜尋超過90天的事件。
 
-  如果您增加保留天數，您必須在 Exchange Online 中使用 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) 指令程式 PowerShell 來搜尋使用者的信箱審核記錄中超過90天的記錄。
+  如果您增加保留天數，您必須在 Exchange Online 中使用 [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) 指令程式 PowerShell 來搜尋使用者的信箱審核記錄中超過90天的記錄。
 
 - 如果您已在信箱審核之前將信箱的 *AuditLogAgeLimit* 屬性變更為已開啟組織的預設值，則信箱的現有審核記錄保留時間限制不會變更。 換句話說，依預設，信箱審計不會影響信箱審計記錄的目前保留限制。
 
@@ -379,7 +379,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
     - 信箱會指派給規範中心內的保留原則。
 
-  - 信箱審計記錄也會計入 [[可復原的專案] 資料夾的資料夾限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limits)。 ) 可以儲存在「審計] 子資料夾中 (的審計記錄中，最多可以儲存3000000個專案。
+  - 信箱審計記錄也會計入 [[可復原的專案] 資料夾的資料夾限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limits)。 ) 可以儲存在「審計] 子資料夾中 (的審計記錄中，最多可以儲存3000000個專案。
 
     > [!NOTE]
     > 根據預設，信箱審核可能會影響儲存配額或 [可復原的專案] 資料夾的資料夾限制。

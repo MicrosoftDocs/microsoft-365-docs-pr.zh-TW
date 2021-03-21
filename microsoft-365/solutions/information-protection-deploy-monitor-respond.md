@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用審核和警示原則及資料主體要求來監視及回應個人資料事件。
-ms.openlocfilehash: 3ae0f2a6528f6188500c7cee7732c6447013eaa6
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 4070cd772d243bcfba33bfb164fd05e1f0911b3b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749584"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928421"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>監視和回應組織中的資料隱私權事件
 
@@ -40,12 +40,12 @@ Microsoft 365 的功能可協助您在 operationalize 相關功能時，監控�
 
 - LGPD 文章46
 - LGPD 文章48
-- GDPR 文章 (5) # B2 1) # B4 f) 
-- GDPR 文章 (15) # B2 1) # B4 e) 
-- HIPAA-高科技 (45 C.F.R。 164.308 () # B2 1) # B4 ii) # B6 D) # A8
-- HIPAA-高科技 (45 C.F.R。 164.308 () # B2 6) # B4 ii) 
-- HIPAA-高科技 (45 C.F.R。 164.312 (b) # A2
-- CCPA (1798.105 (c) # A3
+- GDPR 文章 (5)  (1)  (f) 
+- GDPR 文章 (15)  (1)  (e) 
+- HIPAA-高科技 (45 C.F.R。 164.308 ()  (1)  (ii)  (D) ) 
+- HIPAA-高科技 (45 C.F.R。 164.308 ()  (6)  (ii) 
+- HIPAA-高科技 (45 C.F.R。 164.312 (b) ) 
+- CCPA (1798.105 (c) ) 
 
 如需詳細資訊，請參閱 [評估資料隱私權風險及識別敏感資訊](information-protection-deploy-assess.md)。
 
@@ -72,11 +72,11 @@ Microsoft 365 的功能可協助您在 operationalize 相關功能時，監控�
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的資料主體要求
 
-請參閱 [GDPR 和 CCPA 的資料主體要求](../compliance/gdpr-dsr-office365.md) ，以取得在 Microsoft 365 中回應 DSR 的資訊。
+請參閱 [GDPR 和 CCPA 的資料主體要求](/compliance/regulatory/gdpr-dsr-Office365) ，以取得在 Microsoft 365 中回應 DSR 的資訊。
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>在 Microsoft Stream 中管理已刪除的使用者
 
-在 Microsoft Stream 中，當使用者從 Azure Active Directory (Azure AD) 中刪除時，如果其名稱在該點之前與發佈的資料流程影片相關聯，則其電子郵件地址仍會與影片產生關聯。 請參閱 [管理從 Microsoft Stream 刪除的使用者](https://docs.microsoft.com/stream/managing-deleted-users) 以將其移除。
+在 Microsoft Stream 中，當使用者從 Azure Active Directory (Azure AD) 中刪除時，如果其名稱在該點之前與發佈的資料流程影片相關聯，則其電子郵件地址仍會與影片產生關聯。 請參閱 [管理從 Microsoft Stream 刪除的使用者](/stream/managing-deleted-users) 以將其移除。
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>以調查工具為內部的內幕風險管理
 

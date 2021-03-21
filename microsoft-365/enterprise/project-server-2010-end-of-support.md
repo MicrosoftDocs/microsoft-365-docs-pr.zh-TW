@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 的支援結束于4月13日（2021）。 使用本文做為升級至 Project Online 或更新版本 Project Server 內部部署的指南。
-ms.openlocfilehash: 239b3d93cfa6a1184ea21225fa97732712b8eb14
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 807c09bff0cb6331b872474acc22f8d2c622a6c6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519699"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927369"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 終止支援藍圖
 
@@ -90,7 +90,7 @@ Project Professional 2010 使用者也可以遷移至 Project Online 桌面用�
 
 您也可以從 Project Professional 2010 或 Project Standard 2010 遷移至以 Project 訂閱為基礎的線上方案。 這兩個專案方案3和方案5都包括 Project Online 及最新的雲端方案（ [適用于 web](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1)）。 兩者都提供值得探索的新功能和優點。
 
-如需功能和授權的詳細資訊，請參閱 [Microsoft Project service 描述](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description)。
+如需功能和授權的詳細資訊，請參閱 [Microsoft Project service 描述](/office365/servicedescriptions/project-online-service-description/project-online-service-description)。
 
 ## <a name="important-considerations-for-migrating-from-project-server-2010"></a>從 Project Server 2010 進行遷移時的重要考慮
 
@@ -98,7 +98,7 @@ Project Professional 2010 使用者也可以遷移至 Project Online 桌面用�
 
 - **從 Microsoft 解決方案供應商取得協助** -從 Project Server 2010 升級可能是一項挑戰。 它需要大量的準備工作和規劃。 如果您不是原始設定 Project Server 2010 的人員，可能特別有挑戰性。 您可以使用 Microsoft 解決方案提供者來協助您，是否要遷移至 Project Server 2019 或 Project Online。 在 [Microsoft 解決方案供應商中心](https://go.microsoft.com/fwlink/p/?linkid=841249)搜尋解決方案提供者。
 
-- **規劃自訂** -當您遷移至 project server 2019 或 project Online 時，project server 2010 環境中的自訂功能可能無法運作。 在不同的版本之間，Project Server 架構的差異很大。 此外，使用版本的必要作業系統、資料庫伺服器及網頁瀏覽器也不同。 規劃如何在新環境中測試或重建自訂專案。 採取此機會判斷是否仍需要特定的自訂專案。 如需詳細資訊，請參閱＜[Create a plan for current customizations during upgrade to SharePoint 2013](https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013)＞。
+- **規劃自訂** -當您遷移至 project server 2019 或 project Online 時，project server 2010 環境中的自訂功能可能無法運作。 在不同的版本之間，Project Server 架構的差異很大。 此外，使用版本的必要作業系統、資料庫伺服器及網頁瀏覽器也不同。 規劃如何在新環境中測試或重建自訂專案。 採取此機會判斷是否仍需要特定的自訂專案。 如需詳細資訊，請參閱＜[Create a plan for current customizations during upgrade to SharePoint 2013](/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013)＞。
 
 - **時間和耐心** 升級的規劃、執行及測試需要相當長的時間和精力，尤其是升級至 Project Server 2019。 如果您要從 Project Server 2010 遷移至 Project Server 2019，您必須先遷移至 Project Server 2013，檢查您的資料，然後再遷移至 Project Server 2016，然後再到 Project Server 2019。 您可能想要與 Microsoft 解決方案提供者聯繫以取得協助的時間範圍和預估成本。
 
@@ -117,7 +117,7 @@ Project Professional 2010 使用者也可以遷移至 Project Online 桌面用�
 |資源|描述|
 |---|---|
 |[Project Online 快速入門](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)|如何設定和使用 Project Online|
-|[Project Online 服務說明](https://go.microsoft.com/fwlink/p/?linkid=829088)|可供使用之不同 Project Online 方案的相關資訊|
+|[Project Online 服務說明](/office365/servicedescriptions/project-online-service-description/project-online-service-description)|可供使用之不同 Project Online 方案的相關資訊|
 
 ## <a name="migrate-to-a-newer-on-premises-version-of-project-server"></a>遷移至較新的內部部署版本的 Project Server
 
@@ -128,7 +128,7 @@ Project Professional 2010 使用者也可以遷移至 Project Online 桌面用�
 完成每項遷移後，請確定您的資料已順利遷移。
 
 > [!NOTE]
-> 如果您局限于內部部署解決方案，而且只考慮遷移至 Project Server 2013，請注意，此版本只會有幾年以上的支援。 Project Server 2013 的支援日期結束時間為10月13日 Service Pack 2，2023。 如需終止支援日期的詳細資訊，請參閱 [Microsoft 產品生命週期原則](https://go.microsoft.com/fwlink/p/?linkid=842066)。
+> 如果您局限于內部部署解決方案，而且只考慮遷移至 Project Server 2013，請注意，此版本只會有幾年以上的支援。 Project Server 2013 的支援日期結束時間為10月13日 Service Pack 2，2023。 如需終止支援日期的詳細資訊，請參閱 [Microsoft 產品生命週期原則](/lifecycle/)。
 
 ### <a name="how-do-i-migrate-to-project-server-2019"></a>如何遷移至 Project Server 2019？
 
@@ -144,18 +144,18 @@ Project Server 2010 與 Project Server 2019 之間的架構差異會防止直接
 
 ### <a name="step-1-migrate-to-project-server-2013"></a>步驟1：遷移至 Project Server 2013
 
-如需從 Project Server 2010 升級至 Project Server 2013 的完整資訊，請參閱 [Upgrade To Project server 2013](https://go.microsoft.com/fwlink/p/?linkid=841822)。
+如需從 Project Server 2010 升級至 Project Server 2013 的完整資訊，請參閱 [Upgrade To Project server 2013](/project/upgrade-to-project-server-2016)。
 
 主要資源：
 
-- [Project Server 2013 升級程式概述](https://go.microsoft.com/fwlink/p/?linkid=841822)
+- [Project Server 2013 升級程式概述](/project/upgrade-to-project-server-2016)
 
   取得如何從 Project Server 2010 升級至 Project Server 2013 的高層次概述。
-- [規劃升級到 Project Server 2013](https://go.microsoft.com/fwlink/p/?linkid=841823)
+- [規劃升級到 Project Server 2013](/project/plan-for-upgrade-to-project-server-2016)
 
   請參閱從 Project Server 2010 升級至 Project Server 2013 （包括系統需求）時的規劃考慮。
 
-- [Project Server 2013 的新功能更新](https://go.microsoft.com/fwlink/p/?linkid=841824) 涵蓋此版本的重要變更，包括：
+- [Project Server 2013 的新功能更新](/project/what-s-new-in-project-server-2013-upgrade) 涵蓋此版本的重要變更，包括：
 
    - 沒有就地升級至 Project Server 2013。 資料庫附加方法是從 Project Server 2010 升級至 Project Server 2013 的唯一支援方式。
 
@@ -165,9 +165,9 @@ Project Server 2010 與 Project Server 2019 之間的架構差異會防止直接
 
 主要資源：
 
-- [升級到 Project Server 2013 的升級程序概觀](https://go.microsoft.com/fwlink/p/?linkid=841274)
+- [升級到 Project Server 2013 的升級程序概觀](/project/overview-of-the-project-server-2016-upgrade-process)
 
-- [升級您的資料庫與 Project Web App 網站集合 (Project Server 2013)](https://go.microsoft.com/fwlink/p/?linkid=841272)
+- [升級您的資料庫與 Project Web App 網站集合 (Project Server 2013)](/project/upgrading-to-project-server-2016)
 
 - [Microsoft Project Server 升級過程圖表](https://go.microsoft.com/fwlink/p/?linkid=841270)
 
@@ -177,21 +177,21 @@ Project Server 2010 與 Project Server 2019 之間的架構差異會防止直接
 
 移至 Project Server 2013，並確認您的資料已成功遷移後，下一步是遷移至 Project Server 2016。
 
-如需詳細資訊，請參閱 [升級至 Project Server 2016](https://docs.microsoft.com/Project/upgrade-to-project-server-2016)。
+如需詳細資訊，請參閱 [升級至 Project Server 2016](/Project/upgrade-to-project-server-2016)。
 
 主要資源：
 
-- [Project Server 2016 升級程序概觀](https://docs.microsoft.com/Project/overview-of-the-project-server-2016-upgrade-process)
+- [Project Server 2016 升級程序概觀](/Project/overview-of-the-project-server-2016-upgrade-process)
 
   瞭解從 Project Server 2013 升級至 Project Server 2016 所需執行的動作。
 
-- [規劃升級到 Project Server 2016](https://docs.microsoft.com/Project/plan-for-upgrade-to-project-server-2016)
+- [規劃升級到 Project Server 2016](/Project/plan-for-upgrade-to-project-server-2016)
 
   請參閱從 Project Server 2013 升級至 Project Server 2016 時所應進行的規劃考慮。
 
-若要[瞭解 Project Server 2016 升級的相關事項](https://docs.microsoft.com/project/plan-for-upgrade-to-project-server-2016#thingknow)，請涵蓋升級至此版本的重要變更，包括：
+若要[瞭解 Project Server 2016 升級的相關事項](/project/plan-for-upgrade-to-project-server-2016#thingknow)，請涵蓋升級至此版本的重要變更，包括：
 
-- 當您建立 Project Server 2016 環境時，請注意，Project Server 2016 安裝檔會包含在 SharePoint Server 2016 中。 如需詳細資訊，請參閱 [部署 Project Server 2016](https://go.microsoft.com/fwlink/p/?linkid=841829)。
+- 當您建立 Project Server 2016 環境時，請注意，Project Server 2016 安裝檔會包含在 SharePoint Server 2016 中。 如需詳細資訊，請參閱 [部署 Project Server 2016](/project/deploy-project-server-2016)。
 
 - 資源計劃在 Project Server 2016 中已被取代。 您的 Project Server 2013 資源計劃將遷移至 Project Server 2016 和 Project Online 中的資源預訂。 如需詳細資訊，請參閱 [綜述： Resource 預訂](https://support.office.com/article/73eefb5a-81fe-42bf-980e-9532b1bdc870) 。
 
@@ -199,27 +199,27 @@ Project Server 2010 與 Project Server 2019 之間的架構差異會防止直接
 
 在您遷移至 Project Server 2016 並確認您的資料順利遷移後，下一步是將您的資料移轉至 Project Server 2019。
 
-若要瞭解從 Project Server 2016 升級至 Project Server 2019 所需執行的動作，請參閱 [升級至 Project server 2019](https://docs.microsoft.com/Project/upgrade-to-project-server-2016)。
+若要瞭解從 Project Server 2016 升級至 Project Server 2019 所需執行的動作，請參閱 [升級至 Project server 2019](/Project/upgrade-to-project-server-2016)。
 
 主要資源：
 
-- [Project Server 2019 升級程式概述](https://docs.microsoft.com/project/overview-of-the-project-server-2019-upgrade-process)
+- [Project Server 2019 升級程式概述](/project/overview-of-the-project-server-2019-upgrade-process)
 
   深入瞭解從 Project Server 2013 升級至 Project Server 2016 所需執行的動作。
 
-- [規劃升級至 Project Server 2019](https://docs.microsoft.com/project/plan-for-upgrade-to-project-server-2019)
+- [規劃升級至 Project Server 2019](/project/plan-for-upgrade-to-project-server-2019)
 
   請查看從 Project Server 2016 升級至 Project Server 2019 的規劃考慮。
 
-- [您需要瞭解的有關 Project Server 2019 升級的事項](https://go.microsoft.com/fwlink/p/?linkid=841827)<br/><br/>深入瞭解升級至此版本的重要變更，包括：
+- [您需要瞭解的有關 Project Server 2019 升級的事項](/project/plan-for-upgrade-to-project-server-2016)<br/><br/>深入瞭解升級至此版本的重要變更，包括：
 
    - 升級程式會將您的資料從 Project Server 2016 資料庫移轉至 SharePoint 伺服器2019內容資料庫。  Project Server 2019 將不再在 SharePoint 伺服器陣列中建立自己的 Project Server 資料庫。
 
-   - 升級之後，請留意 Project Web App 中的數項變更。  如需詳細資訊，請參閱 [Project Server 2019 的新功能](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)。
+   - 升級之後，請留意 Project Web App 中的數項變更。  如需詳細資訊，請參閱 [Project Server 2019 的新功能](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)。
 
 **其他資源**：
 
-- [Project Online 服務說明](https://go.microsoft.com/fwlink/p/?linkid=841280)：請參閱 project Server 2016 隨附的產品群組管理功能和 Project Online Premium。
+- [Project Online 服務說明](/office365/servicedescriptions/project-online-service-description/project-online-service-description)：請參閱 project Server 2016 隨附的產品群組管理功能和 Project Online Premium。
 
 - [Microsoft Office 專案公事包伺服器2010遷移指南](https://go.microsoft.com/fwlink/p/?linkid=841279)
 

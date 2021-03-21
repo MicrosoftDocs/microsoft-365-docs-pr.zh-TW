@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時，服務的其他裝置資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: 151fcac882dc91d96df3ece000c28d1a7abe1d1f
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 21188372f03af394fe1c0e227c1adeabbad02a85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780293"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928153"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 遷移的其他裝置資訊
 
@@ -270,7 +270,7 @@ Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者�
 
 使用者可以移至個別應用程式，例如 Outlook、小組和 OneDrive，以及從這些應用程式中移除帳戶。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 
@@ -287,6 +287,6 @@ Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者�
 
 雲端應用程式：
 
-- [Dynamics 365 的移轉程式資訊](https://aka.ms/d365ceoptin)
-- [Power BI 移轉程式資訊](https://aka.ms/pbioptin)
-- [開始升級您的 Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 的移轉程式資訊](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 移轉程式資訊](/power-bi/admin/service-admin-migrate-data-germany)
+- [開始升級您的 Microsoft Teams](/microsoftteams/upgrade-start-here)

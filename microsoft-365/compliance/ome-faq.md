@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09d9293cfb1b574b4c179a0b486d436dab99edf2
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: fdfcc2e7454b1243016754ba32dcc2622b876672
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741344"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927751"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
-有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。 此外，請參閱 [Azure 資訊保護中有關資料](https://docs.microsoft.com/information-protection/get-started/faqs-rms) 保護的常見問題解答，以取得 Azure 資訊保護中有關資料保護服務（Azure 版權管理）問題的答案。
+有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。 此外，請參閱 [Azure 資訊保護中有關資料](/information-protection/get-started/faqs-rms) 保護的常見問題解答，以取得 Azure 資訊保護中有關資料保護服務（Azure 版權管理）問題的答案。
 
 ## <a name="what-is-office-365-message-encryption-ome"></a>什麼是 Office 365 郵件加密 (OME) ？
 
@@ -38,7 +38,7 @@ OME 結合電子郵件加密和版權管理功能。 Rights management 功能由
 
 - 如果您已設定 OME 和 IRM，則當您從 Azure 資訊保護使用 Azure Rights Management 服務時，您可以使用這些步驟。
 
-- 如果您使用 Exchange Online 與 Active Directory Rights Management service (AD RMS) ，您就無法立即啟用這些新功能。 相反地，您必須先將 [AD RMS 遷移到 Azure 資訊保護](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) 。 當您完成遷移時，您可以成功設定 OME。
+- 如果您使用 Exchange Online 與 Active Directory Rights Management service (AD RMS) ，您就無法立即啟用這些新功能。 相反地，您必須先將 [AD RMS 遷移到 Azure 資訊保護](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) 。 當您完成遷移時，您可以成功設定 OME。
 
   如果您選擇繼續搭配使用內部部署 AD RMS 與 Exchange Online，而不是遷移至 Azure 資訊保護，您將無法使用這些新功能。
 
@@ -52,13 +52,13 @@ OME 結合電子郵件加密和版權管理功能。 Rights management 功能由
 
 - 每個使用者從 Office 365 郵件加密中所受益的使用者，都必須經過授權才能享受功能。
 
-- 如需完整清單，請參閱 Office 365 郵件加密的 [Exchange Online 服務說明](https://technet.microsoft.com/library/exchange-online-service-description.aspx) 。
+- 如需完整清單，請參閱 Office 365 郵件加密的 [Exchange Online 服務說明](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) 。
 
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>我可以搭配使用 Exchange Online，在 Azure 資訊保護中引入您自己的金鑰 (BYOK) ？
 
 可以！ Microsoft 建議您完成設定 BYOK 之前設定 OME 的步驟。
   
-如需 BYOK 的詳細資訊，請參閱 [規劃及執行 Azure 資訊保護租使用者金鑰](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)。
+如需 BYOK 的詳細資訊，請參閱 [規劃及執行 Azure 資訊保護租使用者金鑰](/information-protection/plan-design/plan-implement-tenant-key)。
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>使用 Azure 資訊保護執行 OME 和 BYOK 變更 Microsoft 對協力廠商資料要求的處理方式，例如 subpoenas？
 
@@ -88,11 +88,11 @@ Office 365 郵件加密的新功能是現有 IRM 和舊版 OME 解決方案的�
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>我的組織使用 Active Directory Rights Management，是否可以使用此功能？
 
-否。 如果您使用 Exchange Online 與 Active Directory Rights Management service (AD RMS) ，您就無法立即啟用這些新功能。 相反地，您必須先將 [AD RMS 遷移到 Azure 資訊保護](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) 。
+否。 如果您使用 Exchange Online 與 Active Directory Rights Management service (AD RMS) ，您就無法立即啟用這些新功能。 相反地，您必須先將 [AD RMS 遷移到 Azure 資訊保護](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) 。
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>我的組織有 Exchange 混合式部署。 我可以使用此功能嗎？
 
-內部部署使用者可以使用 Exchange Online 郵件流程規則傳送加密郵件。 為了達到此目的，您需要透過 Exchange Online 路由傳送電子郵件。 如需詳細資訊，請參閱 [第2部分：將郵件設定為從您的電子郵件伺服器流向 Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)。
+內部部署使用者可以使用 Exchange Online 郵件流程規則傳送加密郵件。 為了達到此目的，您需要透過 Exchange Online 路由傳送電子郵件。 如需詳細資訊，請參閱 [第2部分：將郵件設定為從您的電子郵件伺服器流向 Microsoft 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)。
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>我需要使用哪些電子郵件客戶程式才能建立 OME 加密郵件？ 傳送受保護的郵件支援哪些應用程式？
 
@@ -108,11 +108,11 @@ Microsoft 365 使用者可以使用 Outlook 版本2019和 Microsoft 365 的 Outl
 
 ## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>您可以使用 OME 來傳送的郵件是否有大小限制？
 
-是。 您可以使用 OME 傳送的郵件大小上限（包括附件）為 25 MB。 如需詳細資訊，請參閱 [郵件限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)。
+是。 您可以使用 OME 傳送的郵件大小上限（包括附件）為 25 MB。 如需詳細資訊，請參閱 [郵件限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)。
 
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>受保護電子郵件中的附件支援何種檔案類型？ 附件是否繼承與受保護的電子郵件相關聯的保護原則？
 
-您可以將任何檔案類型附加到受保護的郵件。 只需一個例外狀況，保護原則只會套用至 [Azure 資訊保護用戶端支援的檔案類型](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)中所述的檔案格式。 OME 不支援下列 Office 程式的97-2003 版本： Word ( .doc) 、Excel ( .xls) 及 PowerPoint () 。
+您可以將任何檔案類型附加到受保護的郵件。 只需一個例外狀況，保護原則只會套用至 [Azure 資訊保護用戶端支援的檔案類型](/information-protection/rms-client/client-admin-guide-file-types)中所述的檔案格式。 OME 不支援下列 Office 程式的97-2003 版本： Word ( .doc) 、Excel ( .xls) 及 PowerPoint () 。
 
 如果支援檔案格式（例如 Word、Excel 或 PowerPoint 檔案），檔案會永遠受到保護，即使收件者已下載附件也是一樣。 例如，假設附件的保護不是轉寄。 原始收件者會下載該檔案，並建立郵件給新的收件者，並附加該檔。 當新收件者收到檔案時，收件者將無法開啟受保護的檔案。
   
@@ -124,7 +124,7 @@ Microsoft 365 使用者可以使用 Outlook 版本2019和 Microsoft 365 的 Outl
 
 Outlook 桌面不會以本機方式支援 PDF 檔案附件的加密。 相反地，您必須設定 Exchange 郵件流程規則或 DLP，以先將加密套用至 PDF 附件。 當您使用 PDF 附件從 Outlook Desktop 傳送郵件時，用戶端會先將郵件與附件一起傳送給服務。 當服務接收到檔案時，服務會在 Exchange Online 中將 OME 保護的資料遺失防護 (DLP) 原則或郵件流程規則。 接下來，Exchange Online 會傳送包含受保護的 PDF 檔附件的郵件。
 
-若要啟用 PDF 附件的加密，請在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
+若要啟用 PDF 附件的加密，請在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
@@ -196,7 +196,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 | 平台 | 讀取郵件 | 查看電子郵件附件 |
 |----------|-----------|------------------------|
 | Outlook 網頁版 | 是 | 是                |
-|  Outlook for Windows| 是 | 是                |
+| Windows 版 Outlook| 是 | 是                |
 | Mac 版 Outlook    | 是 | 是                |
 | Outlook for Android| 是 | 否                 |
 | iOS 版 Outlook    | 是 | 否                 |
@@ -210,7 +210,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 
 **指派使用者至共用信箱**
 
-1. [使用遠端 PowerShell 連接至 Exchange Online](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx)。
+1. [使用遠端 PowerShell .aspx) 連接至 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)。
 
 2. 使用自動對應參數執行 Add-MailboxPermission Cmdlet。 此範例會將 Ayla 的「完整存取」許可權授予支援信箱。
 

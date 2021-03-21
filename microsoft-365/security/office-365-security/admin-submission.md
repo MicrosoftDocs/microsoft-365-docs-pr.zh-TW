@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b4e6dfcb5900ed41ad3ab0b44fada93599f0b4b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: beeca51b50a7a60db9663220d9a5b3cee2eac56f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288786"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927105"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -57,7 +57,7 @@ ms.locfileid: "50288786"
 
   - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
 
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 **組織管理**。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的 **組織管理**。
 
     請注意，此角色群組的成員資格是 [查看使用者送至自訂信箱的使用者](#view-user-submissions-to-the-custom-mailbox) ，如本文稍後所述。
 
@@ -164,12 +164,12 @@ ms.locfileid: "50288786"
 
 在系統管理報送中送出的郵件會重新掃描，並顯示在 [詳細資料] 快顯視窗中的結果：
 
-- 傳遞時，如果寄件者的電子郵件驗證失敗。
-- 有關可能影響或覆寫郵件之任何原則點擊內容的資訊。
-- 目前的引爆結果，以查看郵件中所包含的 URLs 或檔案是否惡意。
+- 寄件者在傳遞電子郵件時，電子郵件驗證是否失敗。
+- 任何有關可能會影響或覆寫郵件決策的原則點擊的資訊。
+- 目前的引爆結果，查看郵件中所含的 URL 或檔案是否惡意。
 - Graders 的意見反應。
 
-如果找到覆寫，重新掃描應該會在幾分鐘內完成。 如果電子郵件驗證或傳遞中沒有問題，則不會受到覆寫的影響，來自 graders 的意見反應可能需要一天。
+如果發現覆寫，則應該會在幾分鐘內完成重新掃描。 如果電子郵件驗證或傳遞中沒有問題，則不會受到覆寫的影響，來自 graders 的意見反應可能需要一天。
 
 ### <a name="view-admin-url-submissions"></a>查看管理 URL 提交
 

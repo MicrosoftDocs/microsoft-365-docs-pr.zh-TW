@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但具有代表性的全球組織如何採用 Microsoft 365 for enterprise。
-ms.openlocfilehash: 9e02469c644c3107e964d0f5defa08043091e28f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e14c2747837ed91a63e7609ce46307b0f38aa758
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166426"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927577"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>適用于 Contoso Corporation 的 Microsoft 365 for enterprise
 
@@ -77,7 +77,7 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
   若要為最大機密專案建立安全的共同作業環境，Contoso 使用了具有安全性隔離的團隊。
 
-- [Teams 語音移轉](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Teams 語音移轉](/MicrosoftTeams/voice-case-study-overview)
 
   瞭解 Contoso 如何將其內部部署使用者遷移至 Microsoft 小組，以進行統一通訊、共同作業和語音。
 
@@ -85,7 +85,7 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
   瞭解 Contoso 如何快速設定適用于 Microsoft 小組、Exchange 及 Yammer 通訊的冒犯性語言原則。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 深入瞭解 [Contoso 公司](contoso-overview.md) ，以及在部署 Microsoft 365 for enterprise 時所解決的設計考慮。
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 保留標籤和原則來管理您的 Microsoft 365 環境中的個人資料。
-ms.openlocfilehash: c2a933e556213ae4b78db9dc5f903885df969b27
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377042"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928433"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>管理資料隱私權法規的使用資訊
 
@@ -38,11 +38,11 @@ ms.locfileid: "48377042"
 
 以下是可能與資訊管理控制相關之資料隱私權法規的範例清單：
 
-- GDPR 文章 (13) # B2 2) # B4 a) 
-- GDPR 文章 (5) # B2 1) # B4 f) 
-- HIPAA-高科技 (45 CFR 164.312 (c) # B3 2) # A5
-- HIPAA-高科技 (45 CFR 164.316 (b) # B3 1) # B5 i) # A7
-- HIPAA-高科技 (45 CFR 164.316 (b) # B3 1) # B5 ii) # A7
+- GDPR 文章 (13)  (2)  () 
+- GDPR 文章 (5)  (1)  (f) 
+- HIPAA-高科技 (45 CFR 164.312 (c)  (2) ) 
+- HIPAA-高科技 (45 CFR 164.316 (b)  (1)  (i) ) 
+- HIPAA-高科技 (45 CFR 164.316 (b)  (1)  (ii) ) 
 - LGPD 文章46
 
 如需這些法規的詳細資訊，請參閱 [評估資料隱私權風險及識別敏感資訊文章](information-protection-deploy-assess.md)。
@@ -68,7 +68,7 @@ ms.locfileid: "48377042"
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>管理 Microsoft 365 中的資訊管理
 
-若要開始，請參閱管理 Microsoft 365 中的 [資訊](../compliance/manage-information-governance.md) 管理和 [資料保留、刪除和銷毀](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)。
+若要開始，請參閱管理 Microsoft 365 中的 [資訊](../compliance/manage-information-governance.md) 管理和 [資料保留、刪除和銷毀](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)。
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>開發容器、電子郵件和內容的資料保留時間表
 
@@ -91,4 +91,3 @@ ms.locfileid: "48377042"
 使用可宣告內容 a 記錄的保留標籤，以對 Microsoft 365 中的資料執行 [記錄管理解決方案](../compliance/records-management.md) 。
 
 針對資料隱私權，合法系所收到的資料主體要求 (Dsr) 會宣告一筆記錄，而且可以使用大量儲存或處置憑證，以遵守法規活動的保留規格。
-

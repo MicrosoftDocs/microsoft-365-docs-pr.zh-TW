@@ -12,12 +12,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 已到達支援終止。 使用此規劃藍圖準備升級到 Exchange Online 或更新版本的 Exchange Server 內部部署。
-ms.openlocfilehash: 23384d93c4e65fb25a66ca6f2f0bcbe46b34ee18
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: f3531802283368e533ba6646415d4acc019687bd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519688"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926991"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 終止支援藍圖
 
@@ -114,8 +114,8 @@ Microsoft 365 也會先取得新功能並體驗，讓您的組織立即開始使
 
 若要深入瞭解遷移的詳細資訊，請參閱：
 
-- [轉換電子郵件遷移所需注意的事項](https://docs.microsoft.com/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration)
-- [執行電子郵件的完全遷移至 Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/cutover-migration-to-office-365)
+- [轉換電子郵件遷移所需注意的事項](/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration)
+- [執行電子郵件的完全遷移至 Office 365](/Exchange/mailbox-migration/cutover-migration-to-office-365)
 
 ### <a name="minimal-hybrid-migration"></a>基本混合式移轉
 
@@ -130,7 +130,7 @@ Microsoft 365 也會先取得新功能並體驗，讓您的組織立即開始使
 - 您將需要 Microsoft 365 許可證，其中包含您要遷移之每個使用者信箱的 Exchange Online。
 - 使用者不需要在大部分的裝置上設定新的 Outlook 設定檔，不過某些老式的 Android 手機可能需要新的設定檔。 使用者不需要 redownload 他們的電子郵件。
 
-如需詳細資訊，請參閱 [使用最小混合式以快速將 Exchange 信箱遷移至 Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。
+如需詳細資訊，請參閱 [使用最小混合式以快速將 Exchange 信箱遷移至 Office 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。
 
 ### <a name="full-hybrid"></a>完整混合式
 
@@ -159,11 +159,11 @@ Microsoft 365 也會先取得新功能並體驗，讓您的組織立即開始使
 
 如果完整的混合式遷移是正確的，請參閱下列有用資源：
 
-- [Exchange 部署助理](https://aka.ms/exdeploy)
-- [Exchange Server 混合式部署](https://docs.microsoft.com/exchange/exchange-hybrid)
-- [混合組態精靈](https://docs.microsoft.com/exchange/hybrid-configuration-wizard)
-- [混合組態精靈常見問題集](https://docs.microsoft.com/exchange/hybrid-configuration-wizard-faqs)
-- [混合式部署必要條件](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites)
+- [Exchange 部署助理](/exchange/exchange-deployment-assistant)
+- [Exchange Server 混合式部署](/exchange/exchange-hybrid)
+- [混合組態精靈](/exchange/hybrid-configuration-wizard)
+- [混合組態精靈常見問題集](/exchange/hybrid-configuration-wizard-faqs)
+- [混合式部署必要條件](/exchange/hybrid-deployment-prerequisites)
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>升級至較新版本的 Exchange Server 內部部署
 
@@ -184,23 +184,23 @@ Exchange 2016 包含舊版 Exchange 的所有功能。 雖然有些功能只能�
 ||改善的資料庫恢復|
 ||線上文件共同作業|
 
-|考量事項|其他相關資訊|
+|考量事項|其他資訊|
 |---|---|
 |終止支援日期|就像 Exchange 2010，每個 Exchange 版本都有自己的支援終止日期：<br/><br/>Exchange 2013 - 2023 年 4 月<br/>Exchange 2016 - 2025 年 10 月<br/><br/>更早的支援終止日期，您將需要執行另一個遷移。 2023 年 4 月其實不如想像中的遙遠！|
 |移轉到 Exchange 2013 或 Exchange 2016 的方法|無論您選擇的是 Exchange 2013 或 Exchange 2016，從 Exchange 2010 移轉到更新版本的方法都是相同的：<br/><br/>將 Exchange 2013 或2016安裝到現有的 Exchange 2010 組織。<br/>將服務和其他基礎結構移至 Exchange 2013 或2016。<br/>將信箱和公用資料夾移至 Exchange 2013 或2016解除委任保留 Exchange 2010 伺服器。|
 |版本共存|當移轉至 Exchange 2013 或 Exchange 2016 時，您可以將任一版本安裝到現有的 Exchange 2010 組織中。 這可讓您安裝一或多部 Exchange 2013 或 Exchange 2016 伺服器，並進行遷移。|
-|伺服器硬體|自 Exchange 2010 起，伺服器硬體需求已變更。 請確認您的硬體是否相容。 若要瞭解更多關於每個版本的硬體需求，請參閱：<br/><br/>[Exchange 2016 系統需求](https://docs.microsoft.com/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016)<br/>[Exchange 2013 系統需求](https://docs.microsoft.com/Exchange/exchange-2013-system-requirements-exchange-2013-help)<br/><br/>隨著 Exchange 效能的大幅改善，以及較新伺服器中的計算能力和儲存容量增加，您可能需要較少的伺服器來支援相同數量的信箱。|
-|作業系統版本|每個版本的最低支援作業系統版本為：<br/><br/>Exchange 2016-Windows Server 2012<br/>Exchange 2013-Windows Server 2008 R2 SP1<br/><br/>如需作業系統支援的相關詳細資訊，請參閱 [Exchange Server 支援性總表](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix)。|
-|Active Directory 樹系功能等級|每個版本的最低支援 Active Directory 樹系功能等級為：<br/><br/>Exchange 2016-Windows Server 2008 R2 SP1<br/>Exchange 2013-Windows Server 2003<br/><br/>如需樹系功能等級支援的相關詳細資訊，請參閱 [Exchange Server 支援性總表](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix)。|
-|Office 用戶端版本|每個版本的最低支援 Office 用戶端版本為：<br/><br/>Exchange 2016-Office 2010 (包含最新的更新) <br/>Exchange 2013-Office 2007 SP3<br/><br/>若要瞭解更多有關 Office 用戶端支援的資訊，請參閱 [Exchange 支援清單](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix)。||| 
+|伺服器硬體|自 Exchange 2010 起，伺服器硬體需求已變更。 請確認您的硬體是否相容。 若要瞭解更多關於每個版本的硬體需求，請參閱：<br/><br/>[Exchange 2016 系統需求](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016)<br/>[Exchange 2013 系統需求](/Exchange/exchange-2013-system-requirements-exchange-2013-help)<br/><br/>隨著 Exchange 效能的大幅改善，以及較新伺服器中的計算能力和儲存容量增加，您可能需要較少的伺服器來支援相同數量的信箱。|
+|作業系統版本|每個版本的最低支援作業系統版本為：<br/><br/>Exchange 2016-Windows Server 2012<br/>Exchange 2013-Windows Server 2008 R2 SP1<br/><br/>如需作業系統支援的相關詳細資訊，請參閱 [Exchange Server 支援性總表](/exchange/plan-and-deploy/supportability-matrix)。|
+|Active Directory 樹系功能等級|每個版本的最低支援 Active Directory 樹系功能等級為：<br/><br/>Exchange 2016-Windows Server 2008 R2 SP1<br/>Exchange 2013-Windows Server 2003<br/><br/>如需樹系功能等級支援的相關詳細資訊，請參閱 [Exchange Server 支援性總表](/exchange/plan-and-deploy/supportability-matrix)。|
+|Office 用戶端版本|每個版本的最低支援 Office 用戶端版本為：<br/><br/>Exchange 2016-Office 2010 (包含最新的更新) <br/>Exchange 2013-Office 2007 SP3<br/><br/>若要瞭解更多有關 Office 用戶端支援的資訊，請參閱 [Exchange 支援清單](/exchange/plan-and-deploy/supportability-matrix)。||| 
 
 
 請使用下列資源協助您進行遷移：
 
-- [Exchange 部署助理](https://aka.ms/exdeploy)
-- 適用於 Exchange [2016](https://docs.microsoft.com/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016)、[2013](https://docs.microsoft.com/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help) 的 Active Directory 結構描述變更
-- 適用於 Exchange [2016](https://docs.microsoft.com/exchange/plan-and-deploy/system-requirements?view=exchserver-2016)、[2013](https://docs.microsoft.com/Exchange/exchange-2013-system-requirements-exchange-2013-help) 的系統需求
-- 適用於 Exchange [2016](https://docs.microsoft.com/exchange/plan-and-deploy/prerequisites?view=exchserver-2016)、[2013](https://docs.microsoft.com/Exchange/exchange-2013-prerequisites-exchange-2013-help) 的先決條件
+- [Exchange 部署助理](/exchange/exchange-deployment-assistant)
+- 適用於 Exchange [2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016)、[2013](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help) 的 Active Directory 結構描述變更
+- 適用於 Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016)、[2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help) 的系統需求
+- 適用於 Exchange [2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016)、[2013](/Exchange/exchange-2013-prerequisites-exchange-2013-help) 的先決條件
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>適用於 Office 2010 用戶端與伺服器和 Windows 7 的選項摘要
 

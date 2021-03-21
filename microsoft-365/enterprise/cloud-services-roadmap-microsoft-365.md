@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 設定 Microsoft 365 的雲端服務的藍圖。
-ms.openlocfilehash: 9d28b03f17aa0b9de955af824939d0db28faa057
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 5049d24a2cff696ee44429f809b2b91c15a4b4d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775132"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928257"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Microsoft 365 的雲端服務藍圖
 
@@ -33,12 +33,12 @@ ms.locfileid: "47775132"
 - [立即準備服務](configure-services-and-applications.md)
 - [將您的內部部署資料移轉至 Microsoft 365](migrate-data-to-office-365.md)
 - 為您的使用者設定您的雲端服務
-  - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
-  - [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
-  - [商務用 Skype](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
-  - [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+  - [Exchange Online](/Exchange/exchange-online)
+  - [SharePoint Online](/sharepoint/sharepoint-online)
+  - [商務用 Skype](/SkypeForBusiness/skype-for-business-online)
+  - [Microsoft Teams](/MicrosoftTeams/Teams-overview)
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
-- [訓練您的使用者](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
+- [訓練您的使用者](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
 ## <a name="manage"></a>管理
 
@@ -47,10 +47,10 @@ ms.locfileid: "47775132"
 - [檢查您的服務健康情況](view-service-health.md)
 - [瞭解您的支援選項](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - 管理雲端服務
-  - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
+  - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint Online](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
-  - [商務用 Skype](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
-  - [Microsoft Teams](https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide)
+  - [商務用 Skype](/SkypeForBusiness/skype-for-business-online)
+  - [Microsoft Teams](//MicrosoftTeams/quality-of-experience-review-guide)
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [為您的雲端服務執行效能調整](tune-microsoft-365-performance.md)
 
