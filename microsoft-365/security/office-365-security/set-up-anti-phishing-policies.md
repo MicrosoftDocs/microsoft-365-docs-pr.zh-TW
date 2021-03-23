@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eeb15040f0e47f7d51852dadf68c4b0c37de0975
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3458d6702dab48072e4846038400b087b1a4a8f1
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929225"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994579"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -206,17 +206,21 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
   - **類比網域**：寄件者位址包含受保護的網域。
   - 不 **尋常的字元**： From 位址包含不尋常的字元集 (例如數學符號和文字，或是混合的大小寫字母) 在受保護的寄件者或網域中。
 
-
   > [!IMPORTANT]
   >
-  > **在寄件者與 (收件者之間的初次聯繫時所顯示的安全性提示的建議)**：即使已關閉模擬安全性秘訣， **我們還是建議您使用** 郵件流程規則 (也稱為 transport rule) ，以新增名為 **X-MS-EnableFirstContactSafetyTip** 的郵件頭，並對郵件 **啟用** 值。 當收件者第一次從寄件者收到郵件時，或是不經常從寄件者取得郵件時，安全提示會通知收件者。 這項功能會針對潛在的模仿攻擊，新增額外的安全性防護層。 
+  > 即使已關閉模擬安全性秘訣， **我們還是建議您使用** 郵件流程規則 (也稱為傳輸規則) ，以將名為 **X-MS-EnableFirstContactSafetyTip** 的郵件頭新增為郵件的 [ **啟用** 值]。 當收件者第一次從寄件者收到郵件時，或是不經常從寄件者取得郵件時，安全提示會通知收件者。 這項功能會針對潛在的模仿攻擊，新增額外的安全性防護層。
+  >
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="具有多個收件者之類比保護的安全性秘訣文字。":::
 
-- **信箱智慧**：啟用或停用使用者的智慧 (AI) ，可決定使用者的電子郵件模式與經常的連絡人。 此設定可協助 AI 區分合法和欺騙的電子郵件與這些連絡人。 信箱智慧只適用于 Exchange Online 信箱。
+- **信箱智慧**：啟用或停用使用者的智慧 (AI) ，可決定使用者的電子郵件模式與經常的連絡人。 此設定可協助 AI 辨別來自合法和模擬寄件者的郵件。
 
-- **信箱智慧** 型模擬保護：根據每個使用者的個人寄件者地圖，啟用或停用增強型類比結果。 這種智慧可讓 Microsoft 365 自訂使用者模擬偵測，並更好地處理誤報。 偵測到使用者模擬時，您可以定義要對郵件採取的特定動作：
+  例如，Gabriela Laureano (glaureano@contoso.com) 是您公司的 CEO，所以您可以將其新增為使用者的受保護寄件者， **以保護** 原則的設定。 不過，原則所套用的某些收件者會定期與另一個名為 Gabriela Laureano 的廠商進行通訊，)  (glaureano@fabrikam.com。 因為這些收件者有 glaureano@fabrikam.com 的通訊歷程記錄，所以信箱智慧不會將 glaureano@fabrikam.com 的郵件識別為對這些收件者進行 glaureano@contoso.com 的模仿嘗試。
 
-  - **不要套用任何動作**
+  若要使用由信箱智慧所學到的常用連絡人 (，但缺乏其) 來協助保護使用者免受模擬攻擊，您可以開啟 **信箱智慧類比防護**，並指定當您也開啟 **信箱智慧****時** 所要採取的動作。
+
+- **信箱智慧型類比保護**：開啟此設定可指定要對郵件進行類比偵測時從信箱智慧結果採取的動作：
+
+  - **請勿套用任何動作**：請注意，此值的結果與開啟 **信箱智慧** ，但是關閉 **信箱智慧型類比保護** 的結果相同。
   - **將郵件重新導向至其他電子郵件地址**
   - **將郵件移至 [垃圾郵件] 資料夾**
   - **隔離郵件**

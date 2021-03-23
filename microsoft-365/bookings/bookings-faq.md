@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 預定常見問題。
-ms.openlocfilehash: c7bf14c35626eeeec781f6a9f45769e0ead1730e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
+ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913823"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50999526"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 預定常見問題
 
@@ -37,7 +37,7 @@ Microsoft 365 商務高級版、Microsoft 365 Business Standard、A3、A5、E3 �
 
 ### <a name="how-do-i-change-a-bookable-attribute-under-manage-staff"></a>如何變更 [管理人員] 底下的 bookable 屬性？
 
-新增教職員工成員時，他們會收到電子郵件，以接受或拒絕要求。 他們可以開啟相同的電子郵件，並選取 [拒絕]，讓它們成為非 bookable。 目前我們沒有從應用程式內切換的方式。
+新增教職員工成員時，他們會收到電子郵件，以接受或拒絕要求。 他們可以開啟相同的電子郵件並選取 [拒絕]，使其不會 bookable。 目前我們沒有從應用程式內切換的方式。
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>使用者如何存取預定應用程式？
 
@@ -61,15 +61,15 @@ Microsoft 365 商務版、Microsoft 365 Business Standard、A3、A5、E3、E5 �
 
 ### <a name="is-bookings-customizable"></a>是否可自訂預訂？
 
-是的，可自訂且可用於各種不同案例的預定。 當您設定預定的行事歷時，Web 排程頁面的許多方面，您可以自訂您的商務資訊、人員詳細資料、服務類型和排程原則。
+是的，可自訂且可用於各種案例的預訂。 當您設定預定的行事歷時，Web 排程頁面的許多方面，您可以自訂您的商務資訊、人員詳細資料、服務類型和排程原則。
 
 ### <a name="is-all-the-functionality-of-the-original-bookings-web-app-available-in-microsoft-teams"></a>原始預約 Web app 的所有功能是否皆可供 Microsoft 團隊使用？
 
-「輕量的預約」現在提供為小組中的應用程式。 請在 [這裡](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/)尋找初始宣告。 您可以在 Web 應用程式中向外彈出快捷方式，並在安裝程式完成前的預約使用，而不需要離開小組。 跨平臺的資訊流程。
+「輕量的預約」現在提供為小組中的應用程式。 初始宣告 [如下](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/)。 您可以在 Web 應用程式中向外彈出快捷方式，並在安裝程式完成前的預約使用，而不需要離開小組。 跨平臺的資訊流程。
 
 ### <a name="is-bookings-a-small-business-offering-or-an-enterprise-offering-or-both"></a>是否為預定小型企業服務或企業服務？
 
-對於企業和小型企業客戶而言，預約是各行業的理想解決方案。 使用案例包括：
+預約是企業和小型企業客戶的最佳解決方案，可跨越不同的行業。 使用案例包括：
 
 - 財務服務
     - 磋商
@@ -118,7 +118,7 @@ Microsoft 365 商務版、Microsoft 365 Business Standard、A3、A5、E3、E5 �
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>如何取得 Microsoft 預定？
 
-可在 Microsoft 365 中提供預約，以供使用 Microsoft 365 商務版的客戶使用。 Microsoft 365 Business Standard、A3、A5、E3 和 E5 授權，以及 iOS 和 Android 一起使用的應用程式。 不能以獨立應用程式形式進行預訂。 必須啟用 outlook Web App 或 Web 上的 Outlook，才能使用預定，因為它會將資料儲存在 Outlook 內。
+可在 Microsoft 365 中提供預約，以供使用 Microsoft 365 商務版的客戶使用。 Microsoft 365 Business Standard、A3、A5、E3 和 E5 授權，以及 iOS 和 Android 一起使用的應用程式。 不能以獨立的應用程式形式進行預定。 必須啟用 outlook Web App 或 Web 上的 Outlook，才能使用預定，因為它會將資料儲存在 Outlook 內。
 
 預約授權為產品提供完整功能，包括建立及管理行事曆。 當使用者新增為系統管理員或查看者角色中的人員時，也可讓使用者查看及編輯現有的行事曆。
 
@@ -144,7 +144,7 @@ Microsoft 365 商務版、Microsoft 365 Business Standard、A3、A5、E3、E5 �
 
 如果已透過預約 Web app 排定約會，則儲存區員工在預訂中也會顯示為 [無法使用]。 透過預約預定的約會會反映為員工在預約中的行事曆上的忙碌狀態。 具有非預約啟用授權的人員仍然可以讓其個人行事曆影響其在預約中的可用性，但前提是在相同的承租人內。
 
-來賓角色中的人員可以查看客戶在初始約會建立中所提供的任何資訊。 例如，如果預約預約預約的商店代表需要在約會之前呼叫客戶，他們就可以存取在排程過程中客戶所提供的資訊。 已預約的職員可以存取所有出現在確認電子郵件中的資訊，以及如客戶電話號碼) 所輸入的 (ics calendar 事件。
+來賓角色中的人員可以查看客戶在初始約會建立中所提供的任何資訊。 例如，如果預約預約預約的商店代表需要在約會之前呼叫客戶，他們就可以存取在排程過程中客戶所提供的資訊。 預約的職員可以存取確認電子郵件中顯示的所有資訊，以及如客戶的電話號碼) 所輸入的 (ics calendar 事件。
 
 訪客角色中的人員將無法存取預定 Web 應用程式來變更設定或查看及管理約會 (新增、取消和重排) 。 不過，他們可以使用「自助」頁面代表客戶製作約會，其方式與客戶建立約會的方式相同。
 
@@ -176,7 +176,7 @@ Microsoft 365 商務版、Microsoft 365 Business Standard、A3、A5、E3、E5 �
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>預約如何在時區內運作？
 
-所有時間皆位於商務時區中 (當地時區) 預設。 這表示您為預約行事曆中設定的任何設定，例如工作時間，將會出現在這個時區。 「自助」頁面能夠在使用者時區內顯示所有約會時間，如果需要，可以關閉此功能。 如果 [預約] 頁面索引標籤上的 [ **永遠在上班時間中顯示時段** ]，則在 [預約] 頁面] 索引標籤上會保持未勾選的時間段
+所有時間皆位於商務時區中 (當地時區) 預設。 您為預約行事曆中設定的任何設定（例如工作時間）都會出現在這個時區。 「自助」頁面能夠在使用者時區內顯示所有約會時間，如果需要，可以關閉此功能。 如果 [預約] 頁面索引標籤上的 [ **永遠在上班時間中顯示時段** ]，則在 [預約] 頁面] 索引標籤上會保持未勾選的時間段
 
 :::image type="content" source="media/bookings-faq-region.png" alt-text="預定地區和時區設定":::
 
@@ -244,7 +244,7 @@ Microsoft 365 商務版、Microsoft 365 Business Standard、A3、A5、E3、E5 �
 
 ### <a name="where-is-bookings-data-stored"></a>預定資料儲存在哪裡？
 
-「預定」是 Microsoft 365 應用程式，表示所有資料都儲存在 Microsoft 365 平臺和 Exchange 中。 預約是由 Microsoft 所設定的所有資料儲存原則，也就是所有 Office 應用程式後面的相同原則。 預定使用 Exchange 中的共用信箱來儲存客戶、人員、服務及約會詳細資料。 Exchange 中共用信箱的相容性原則也適用于預定信箱。 所有客戶資料 (，包括客戶在預約) 會在預訂中取得預約時所提供的資訊，並儲存在應用程式中，因此會儲存在 Exchange 中。 Microsoft 預約使用的是 Microsoft 365 所用的相同原則，您可以在 [這裡找到。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+「預定」是 Microsoft 365 應用程式，表示所有資料都儲存在 Microsoft 365 平臺和 Exchange 中。 「預定」會遵循 Microsoft 所設定的所有資料儲存原則，這些原則與所有 Office 應用程式遵循的原則相同。 預定使用 Exchange 中的共用信箱來儲存客戶、人員、服務及約會詳細資料。 Exchange 中共用信箱的相容性原則也適用于預定信箱。 所有客戶資料 (，包括客戶在預約) 會在預訂中取得預約時所提供的資訊，並儲存在應用程式中，因此會儲存在 Exchange 中。 Microsoft 預約使用的是 Microsoft 365 所用的相同原則，您可以在 [這裡找到。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
 
 ### <a name="is-there-a-way-to-centrally-manage-bookings-calendars-for-all-users"></a>是否有任何方式可以集中管理所有使用者的預約行事曆？
 
@@ -274,7 +274,7 @@ GDPR 合規性已存在此功能。 「預約」頁面具有「自訂同意」�
 
 您可以使用下列命令來取回所有預訂信箱的資訊及具有存取權的使用者。
 
-`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '@')}`
+`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '*@*')}`
 
 ## <a name="technical-questions"></a>技術問題
 

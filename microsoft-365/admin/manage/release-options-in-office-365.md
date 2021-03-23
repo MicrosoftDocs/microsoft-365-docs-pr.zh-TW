@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 瞭解如何在 Microsoft 365 系統管理中心中，設定新產品及功能更新的發行選項。
-ms.openlocfilehash: f500aac89495c55d27fc4afb699254653786422d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e909cdf35ba9dd8282540783f7c362e5ae49212e
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915203"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034076"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>設定標準或目標發行選項
 
@@ -117,3 +117,7 @@ ms.locfileid: "50915203"
 ## <a name="learn-more"></a>深入了解
 
 探索如何在[microsoft 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)[管理郵件](/office365/admin/manage/message-center)，以取得即將推出之 microsoft 365 更新及發行的通知。
+
+## <a name="related-articles"></a>相關文章
+
+[Office 測試人員](https://insider.office.com/join/windows)

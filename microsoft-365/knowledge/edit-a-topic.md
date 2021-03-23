@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 36af6e0f882c87d05c5f397982533fb48875b0da
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921513"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994603"
 ---
 # <a name="edit-an-existing-topic"></a>編輯現有的主題 
 
@@ -67,11 +67,11 @@ ms.locfileid: "50921513"
 
     ![Description 區段](../media/knowledge-management/description.png)</br>
 
-4. 在 [ <b>固定人員</b> ] 區段中，您可以「鎖定」人員，將其顯示為主題上的主題專家。 請先在 [ <b>新增使用者</b> ] 方塊中輸入他們的名稱或電子郵件地址，然後從搜尋結果中選取您要新增的使用者。 您也可以從使用者卡片上選取 [ <b>從清單移除</b> ] 圖示來「解除固定」。
+4. 在 [ <b>固定人員</b> ] 區段中，您可以「鎖定」人員，以將主題顯示為已連線的 (例如，已連線資源的擁有者) 。 請先在 [ <b>新增使用者</b> ] 方塊中輸入他們的名稱或電子郵件地址，然後從搜尋結果中選取您要新增的使用者。 您也可以從使用者卡片上選取 [ <b>從清單移除</b> ] 圖示來「解除固定」。
  
     ![新增固定人員](../media/knowledge-management/pinned-people.png)</br>
 
-    [ <b>建議人員</b> ] 區段會向使用者顯示 AI 思考可能成為主題相關主題的主題專家的使用者。 您可以選取使用者卡片上的 pin 圖示，將其狀態變更為 [已建議] （已鎖定）。
+    [ <b>建議人員</b> ] 區段顯示的使用者，AI 會將其連線至主題的相關資源的連結。 您可以選取使用者卡片上的 pin 圖示，將其狀態變更為 [已建議] （已鎖定）。
 
    ![固定建議人員](../media/knowledge-management/suggested-people.png)</br>
 

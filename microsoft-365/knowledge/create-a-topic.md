@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6a182556c68a472145f9d4eac69c8915653a67df
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904933"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994591"
 ---
 # <a name="create-a-new-topic"></a>建立新主題 
 
@@ -66,7 +66,7 @@ ms.locfileid: "50904933"
 
     ![主題的描述](../media/knowledge-management/description.png)</br>
 
-4. 在 [ <b>固定人員</b> ] 區段中，您可以「鎖定」人員，將其顯示為主題上的主題專家。 請先在 [ <b>新增使用者</b> ] 方塊中輸入他們的名稱或電子郵件地址，然後從搜尋結果中選取您要新增的使用者。 您也可以從使用者卡片上選取 [ <b>從清單移除</b> ] 圖示來「解除固定」。 您也可以拖曳人員，以變更人員清單的顯示順序。
+4. 在 [ <b>固定人員</b> ] 區段中，您可以「固定」人員，將其顯示為與主題的連線 (例如，連接資源的擁有者) 。 請先在 [ <b>新增使用者</b> ] 方塊中輸入他們的名稱或電子郵件地址，然後從搜尋結果中選取您要新增的使用者。 您也可以從使用者卡片上選取 [ <b>從清單移除</b> ] 圖示來「解除固定」。 您也可以拖曳人員，以變更人員清單的顯示順序。
  
     ![固定人員](../media/knowledge-management/pinned-people.png)</br>
 

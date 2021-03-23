@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何規劃 Microsoft Viva 主題安全性和隱私權
-ms.openlocfilehash: 9ac7ea085be115ef06244422713099c01ec50a36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917341"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994543"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva 主題安全性和隱私權
 
@@ -51,7 +51,7 @@ ms.locfileid: "50917341"
 
 |主題專案|使用者可以看到的內容|
 |:---------|:------------------|
-|主題名稱|使用者可以查看主題中心所有主題的主題名稱。 某些主題若具有對使用者的關聯性很低，可能會看不到。|
+|主題名稱|使用者可以查看主題中心主題的主題名稱。 若使用者沒有來源內容的許可權或對使用者的關聯性很低，某些主題可能不會顯示。|
 |主題描述|只有對來源內容有許可權的使用者才可以看到 AI 產生的描述。 所有使用者皆可看到手動輸入或編輯的描述。|
 |People|所有使用者皆可看到已鎖定的人員。 建議的人員只對具有來源內容許可權的使用者可見。|
 |檔案|只有具有來源內容許可權的使用者才能看到檔案。|

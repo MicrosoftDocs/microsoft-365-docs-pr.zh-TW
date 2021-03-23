@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何建立、修改及刪除使用 Microsoft Defender for Office 365 的組織中可用的高級反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2985766cf3388382dbe1d2217843504b2bfd1a1c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f9fe04b2c3b6db3681212d678c8e827f6a83f41
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906585"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994567"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中設定反網路釣魚原則
 
@@ -149,10 +149,10 @@ ms.locfileid: "50906585"
 
 4. **原則設定**：按一下 [ **編輯** ]，修改當您在上一節中 [建立原則](#use-the-security--compliance-center-to-create-anti-phishing-policies-in-microsoft-defender-for-office-365) 時可用的相同設定：
 
-   - **名稱**
+   - **Name**
    - **描述**
    - **套用對象**
-   - **檢查您的設定**
+   - **檢視您的設定**
 
    完成後，按一下 [ **儲存** ] 任何頁面。
 
@@ -220,11 +220,11 @@ ms.locfileid: "50906585"
 
      - **啟用信箱智慧？**：預設值為 **On**。 若要將它關閉，請將開關滑動至 [ **關閉**]。
 
-     - **啟用信箱智慧型類比保護？**：此設定只有在 [ **啟用信箱智慧？** 已 **開啟**] 時才可用。
+     - **啟用信箱智慧型類比保護？**： [ **啟用信箱智慧？** 已 **開啟**] 時，此設定才可用。 開啟此設定可指定要對郵件進行來自信箱智慧結果的模仿偵測郵件採取的動作。
 
-       在 **類比的使用者傳送電子郵件時**，您可以指定下列其中一項動作，對信箱智慧失敗的郵件執行 (與受保護的使用者與受保護的網域) 的相同動作：
+       在 **類比使用者傳送電子郵件時**，您可以指定下列其中一個動作 (對受保護的使用者和受保護的網域) 使用的相同動作：
 
-       - **不要套用任何動作**
+       - **請勿套用任何動作**：請注意，此值的結果與開啟 [ **啟用信箱智慧？** ] 的結果相同，但是關閉 [ **啟用信箱智慧型類比保護？**]。
        - **將郵件重新導向至其他電子郵件地址**
        - **將郵件移至 [垃圾郵件] 資料夾**
        - **隔離郵件**
