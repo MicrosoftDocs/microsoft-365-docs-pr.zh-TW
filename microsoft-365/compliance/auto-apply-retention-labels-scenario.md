@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 如何使用中繼資料分類內容、自動套用標籤，以及使用事件式保留來啟動保留期間，以便在 SharePoint 中使用保留標籤來管理文件生命週期。
-ms.openlocfilehash: 5962b02468b31dda247d03807ef184955c53b83c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6c58658378fd0def9a56783e7b8b35db3323b135
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907855"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034212"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留標籤來管理儲存在 SharePoint 中的文件生命週期
 
@@ -269,7 +269,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 您可以在 Microsoft 365 合規性中心，移至 **[記錄管理]** > **[事件]**，以手動建立事件。 您可以選擇事件類型、設定正確的資產識別碼，並輸入事件的日期。 如需詳細資訊，請參閱[事件發生時，開始保留](event-driven-retention.md)。
 
-但是在此案例中，我們將從外部生產系統自動產生事件。 此系統是一份簡單的 SharePoint 清單，可指出產品是否已投入生產。 與清單相關聯的 [Power Automate](/flow/getting-started) 流程將會觸發事件。 在現實案例中，您可以使用多種系統產生事件，例如 HR 或 CRM 系統。 Power Automate 包含許多可供 Microsoft 365 工作負載使用的現成互動和建置區塊，例如 Microsoft Exchange、SharePoint、Teams 和 Dynamics 365，以及協力廠商應用程式，例如 Twitter、Box、Salesforce 和 Workdays。 此功能可讓您輕鬆地將 Power Automate 與多種系統整合在一起。 如需詳細資訊，請參閱[自動化事件導向保留](./event-driven-retention.md#automate-events-by-using-a-rest-apiautomate-events-by-using-a-rest-api)。
+但是在此案例中，我們將從外部生產系統自動產生事件。 此系統是一份簡單的 SharePoint 清單，可指出產品是否已投入生產。 與清單相關聯的 [Power Automate](/flow/getting-started) 流程將會觸發事件。 在現實案例中，您可以使用多種系統產生事件，例如 HR 或 CRM 系統。 Power Automate 包含許多可供 Microsoft 365 工作負載使用的現成互動和建置區塊，例如 Microsoft Exchange、SharePoint、Teams 和 Dynamics 365，以及協力廠商應用程式，例如 Twitter、Box、Salesforce 和 Workdays。 此功能可讓您輕鬆地將 Power Automate 與多種系統整合在一起。 如需詳細資訊，請參閱[自動化事件導向保留](./event-driven-retention.md#automate-events-by-using-a-rest-api)。
 
 下列螢幕擷取畫面顯示將用於觸發事件的 SharePoint 清單：
 

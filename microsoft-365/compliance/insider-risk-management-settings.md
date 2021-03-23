@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1e6642113ddba9c9110a65e9032ec59db435ac7f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ee4f18342304cf46f97a6ae7aa6e1ba76685bccd
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919859"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994615"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>開始使用「內幕風險管理」設定
 
@@ -217,7 +217,7 @@ ms.locfileid: "50919859"
     - 檔、資料夾、與外部網域共用的網站
     - 使用 Microsoft Edge browser (上傳至外部網域的檔案) 
 
-    在 [設定] 中指定允許的網域時，此活動與這些網域的處理方式類似于處理內部組織活動的方式。 例如，在此新增的網域會對應至活動，例如，將內容與組織外部的人員共用 (例如，使用 gmail.com 位址) 傳送電子郵件給某人。 您不能將 SharePoint 網站加入為允許的網域。 
+    在 [設定] 中指定允許的網域時，此活動與這些網域的處理方式類似于處理內部組織活動的方式。 例如，在此新增的網域會對應至活動，例如，將內容與組織外部的人員共用 (例如，使用 gmail.com 位址) 傳送電子郵件給某人。
 
 - **協力廠商網域：** 如果您的組織使用協力廠商網域來進行商務目的 (例如雲端儲存體) ，請將其包含在這裡，這樣您就可以接收與裝置指示器相關之活動的警示。請 *使用瀏覽器從協力廠商網站下載內容*。
 
@@ -244,7 +244,7 @@ ms.locfileid: "50919859"
 | 類別 | 警示的類別是 *InsiderRiskManagement*。 此類別可用於辨別來自其他安全性 & 合規性警示的警示。 |
 | 註解 | 警示的預設批註。 值是在建立警示時所記錄的 *新警示* () 並在更新警示) 時， (記錄 *警示更新* 。 使用 AlertID 來關聯警示的更新。 |
 | 資料 | 警示的資料，包含使用者的唯一識別碼、使用者主體名稱，以及在使用者被觸發到原則時 (UTC) 的日期和時間。 |
-| 姓名 | 產生警示之有問必答風險管理原則的原則名稱。 |
+| 名稱 | 產生警示之有問必答風險管理原則的原則名稱。 |
 | PolicyId | 觸發警示的「有問必答風險管理」原則的 GUID。 |
 | 嚴重性 | 警示的嚴重性。 值為 *高*、 *中* 或 *低*。 |
 | 來源 | 警示的來源。 其值為 *Office 365 的安全性 & 符合性*。 |

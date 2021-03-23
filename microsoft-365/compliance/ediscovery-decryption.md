@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解 Microsoft 365 電子檔探索工具如何處理附加至電子郵件的加密檔，並儲存在 SharePoint 線上和商務 OneDrive 中。
-ms.openlocfilehash: 4ddc66d595b9d2129a7ba1b75e69586ccbd130f7
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ad7ee9816e83caa49e437e1723655162a44c93fa
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423816"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034066"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365 eDiscovery tools 中的解密
 
@@ -29,7 +29,7 @@ ms.locfileid: "50423816"
 
 若要在加密內容上執行一般 eDiscovery 工作，請 eDiscovery 管理員在從內容搜尋、核心 eDiscovery 案例及高級 eDiscovery 案例中匯出電子郵件內容時，必須加以解密。 在匯出內容之前，不會提供用 Microsoft 加密技術加密的內容供複查。
 
-為了讓您更容易管理 eDiscovery 工作流程中的加密內容，Microsoft 365 eDiscovery 工具現在整合了附加至電子郵件訊息並在 Exchange Online 中傳送的加密檔解密。 此外，儲存在 SharePoint 線上和商務 OneDrive 中的加密檔會在「高級 eDiscovery」中解密。 
+為了讓您更容易管理 eDiscovery 工作流程中的加密內容，Microsoft 365 eDiscovery 工具現在整合了附加至電子郵件訊息並在 Exchange Online 中傳送的加密檔解密。 此外，儲存在 SharePoint 線上和商務 OneDrive 中的加密檔會在「高級 eDiscovery」中解密。
 
 在此新功能之前，只會解密由 rights management (及未附加) 所保護的電子郵件內容。 在 eDiscovery 工作流程中無法解密 SharePoint 和 OneDrive 中的加密檔。 現在，如果以 Microsoft 加密技術加密的檔案是附加到電子郵件訊息或是位於 SharePoint 或 OneDrive 帳戶上，當搜尋結果準備好供預覽時，就會解密這些加密的專案，並將其新增至高級 eDiscovery 中的審閱集，然後匯出。 這可讓 eDiscovery 管理員在預覽搜尋結果時，查看加密電子郵件附件和網站檔的內容，並在將其新增至高級 eDiscovery 中的審閱集之後加以複查。
 
@@ -39,14 +39,14 @@ Microsoft eDiscovery 工具支援以 Microsoft 加密技術加密的專案。 �
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>支援加密專案的 eDiscovery 活動
 
-下表識別可在 Microsoft 365 eDiscovery tools 中對 massages 和 OneDrive SharePoint 中的電子郵件和加密檔所執行的加密檔案所支援的工作。 在符合搜尋準則的加密檔上可以執行這些支援的工作。 值， `N/A` 表示在對應的 eDiscovery 工具中無法使用該功能。
+下表識別可在 Microsoft 365 eDiscovery tools 中對電子郵件和加密檔（SharePoint 和 OneDrive 中的加密檔）所執行的支援工作。 在符合搜尋準則的加密檔上可以執行這些支援的工作。 值， `N/A` 表示在對應的 eDiscovery 工具中無法使用該功能。
 
 |eDiscovery 任務  |內容搜尋  |核心電子文件探索  |進階電子文件探索  |
 |:---------|:---------|:---------|:---------|
 |在電子郵件和網站中搜尋加密檔中的內容     |是      |是      |是      |
 |預覽附加至電子郵件的加密檔     |是      |是     |是       |
 |在 SharePoint 和 OneDrive 中預覽加密檔|否      |否    |是       |
-|查看審閱集中的加密檔    |N/A      |不適用        | 是        |
+|查看審閱集中的加密檔    |不適用      |不適用        | 是        |
 |匯出附加至電子郵件的加密檔    |是       |是  |是    |
 |在 SharePoint 和 OneDrive 中匯出加密檔    |否       |否  |是    |
 |||||

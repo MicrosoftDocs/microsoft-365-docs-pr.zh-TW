@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 48cc75276e4e3791fa16520df5a4c392c23a0cd5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 298300de8581d3eea185f05b92bb69cb6e7a69eb
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919909"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034202"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -41,7 +41,7 @@ ms.locfileid: "50919909"
 
 原則範本是預先定義的原則設定，可讓您快速建立原則，以解決常見的相容性案例。 這兩個範本的條件和範圍各有不同，而且所有範本都使用相同的掃描信號類型。 您可以從下列原則範本中選擇：
 
-|**適用範圍**|**原則範本**|**詳細資料**|
+|**區域**|**原則範本**|**詳細資料**|
 |:-----|:-----|:-----|
 | **冒犯性語言和反騷擾** | 監視冒犯性語言的通訊 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：100% <br> -條件：冒犯性語言分類程式 |
 | **敏感性資訊** | 監視敏感資訊的通訊 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：10% <br> -條件：機密資訊、現成的內容模式和類型、自訂字典選項、大於 1 MB 的附件 |
@@ -78,7 +78,7 @@ ms.locfileid: "50919909"
 - 主管檢閱系統管理員
 - 案例管理
 - 合規性系統管理員
-- Review
+- 檢閱
 
 若要針對新的角色群組結構更新這些使用者的角色，以及將使用者的存取權和管理許可權分開，您可以考慮三個新的群組和相關聯的新角色群組指派：
 
@@ -526,6 +526,21 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Disco
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
 ```
+
+通訊相容性原則相符專案會儲存在每個原則的監督信箱中。 在某些情況下，您可能需要檢查原則的監管信箱大小，以確定您未接近目前的 50 GB 限制。 若達到信箱限制，將不會捕獲原則比對，您必須使用相同的設定來建立新的原則 () 繼續捕獲相同活動的相符專案。
+
+若要檢查原則的監督信箱大小，請完成下列步驟：
+
+1. 在 Exchange Online PowerShell V2 模組中使用 [connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) Cmdlet，以使用新式驗證連線至 Exchange Online PowerShell。
+2. 在 PowerShell: 中執行下列工作
+
+    ```PowerShell
+    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name) 
+    {
+       "<Name of your communication compliance policy>: " + $p.Name
+       Get-MailboxStatistics $p.ReviewMailbox | ft ItemCount,TotalItemSize
+    }
+    ```
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>從 Office 365 的監察過渡
 
