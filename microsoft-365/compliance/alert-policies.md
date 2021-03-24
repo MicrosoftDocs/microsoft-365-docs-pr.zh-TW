@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
-ms.openlocfilehash: e2f0749efc78ccb2129294bc14c8b7a0a8511e8b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: acdda84ff23755a664bc599fa737e68098c797aa
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920107"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052153"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心的警示原則
 
@@ -67,7 +67,7 @@ ms.locfileid: "50920107"
 - **活動：警示是追蹤** -您可以建立原則來追蹤活動，或在某些情況下，使用一些相關的活動，例如與外部使用者共用檔案、指派存取權限，或建立匿名連結。 當使用者執行原則所定義的活動時，系統會根據警示閾值設定觸發警示。
 
     > [!NOTE]
-    > 您可以追蹤的活動取決於組織的 Office 365 Enterprise or Office 365 US 政府方案。 一般說來，惡意程式碼活動與網路釣魚攻擊相關的活動，需要具有 E5/G5 訂閱或 E1/F1/G1 或 E3/F3/G3 訂閱與 [Office 365](../security/office-365-security/office-365-atp.md) 方案2附加元件訂閱的 Defender。
+    > 您可以追蹤的活動取決於組織的 Office 365 Enterprise or Office 365 US 政府方案。 一般說來，惡意程式碼活動與網路釣魚攻擊相關的活動，需要具有 E5/G5 訂閱或 E1/F1/G1 或 E3/F3/G3 訂閱與 [Office 365](../security/defender-365-security/defender-for-office-365.md) 方案2附加元件訂閱的 Defender。
 
 - **活動狀況** -針對大部分活動，您可以定義必須滿足的其他條件，以觸發警示。 常見的情況包括 IP 位址 (，這樣當使用者在具有特定 IP 位址或 IP 位址) 範圍的電腦上執行活動時，就會觸發警示，是否要在特定使用者或使用者執行該活動時觸發警示，以及是否要在特定的檔案名或 URL 上執行該活動。 您也可以設定條件，當組織中的任何使用者執行活動時，就會觸發警示。 可用的條件取決於所選的活動。
 
@@ -113,16 +113,16 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 
 | 預設警示原則 | 描述 | 類別 | 企業訂閱 |
 |:-----|:-----|:-----|:-----|
-|**偵測到可能的惡意 URL 按一下**|當您組織中的 [安全連結](../security/office-365-security/atp-safe-links.md) 保護的使用者按一下惡意連結時，會產生警示。 當 Microsoft Defender for Office 365 或使用者覆寫 [安全連結] 頁面 (時，會觸發此事件，以供您組織的 Microsoft 365 for business 安全連結原則) 使用。 此警示原則具有 **高** 嚴重性設定。 若為 Office 365 P2，E5，G5 客戶，此警示會自動觸發 [Office 365 中的自動調查和回應](../security/office-365-security/office-365-air.md)。 如需觸發此警示之事件的詳細資訊，請參閱 [設定安全連結原則](../security/office-365-security/set-up-atp-safe-links-policies.md)。|威脅管理|E5/G5 或 Defender for Office 365 P2 附加元件訂閱|
-|**已完成系統管理員提交結果**|當系統 [管理員提交](../security/office-365-security/admin-submission.md) 完成已送出之實體的重新掃描時產生警示。 每當系統管理員提交轉譯重新掃描結果時，就會觸發警示。 這些提醒會提醒您 [複查先前提交的結果](https://protection.office.com/reportsubmission)、提交使用者報告的郵件以取得最新的原則檢查和重新掃描 verdicts，以及協助您判斷組織中的篩選原則是否有預期的影響。 這個原則的嚴重性設定 **低** 。|威脅管理|E1/F1、E3/F3 或 E5|
-|**管理員已觸發手動調查電子郵件**|當系統管理員觸發手動調查來自威脅瀏覽器的電子郵件時產生警示。 如需詳細資訊，請參閱 [範例：安全性管理員會觸發從威脅瀏覽器進行的調查] (https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) 。 此警示會通知您的組織已開始調查。 警示會提供觸發它之人員的相關資訊，並包含調查的連結。 這個原則有 **資訊性** 嚴重性設定。|威脅管理| E5/G5 或 Microsoft Defender for Office 365 P2 附加元件訂閱| 
+|**偵測到可能的惡意 URL 按一下**|當您組織中的 [安全連結](../security/defender-365-security/safe-links.md) 保護的使用者按一下惡意連結時，會產生警示。 當 Microsoft Defender for Office 365 或使用者覆寫 [安全連結] 頁面 (時，會觸發此事件，以供您組織的 Microsoft 365 for business 安全連結原則) 使用。 此警示原則具有 **高** 嚴重性設定。 若為 Office 365 P2，E5，G5 客戶，此警示會自動觸發 [Office 365 中的自動調查和回應](../security/defender-365-security/office-365-air.md)。 如需觸發此警示之事件的詳細資訊，請參閱 [設定安全連結原則](../security/defender-365-security/set-up-safe-links-policies.md)。|威脅管理|E5/G5 或 Defender for Office 365 P2 附加元件訂閱|
+|**已完成系統管理員提交結果**|當系統 [管理員提交](../security/defender-365-security/admin-submission.md) 完成已送出之實體的重新掃描時產生警示。 每當系統管理員提交轉譯重新掃描結果時，就會觸發警示。 這些提醒會提醒您 [複查先前提交的結果](https://protection.office.com/reportsubmission)、提交使用者報告的郵件以取得最新的原則檢查和重新掃描 verdicts，以及協助您判斷組織中的篩選原則是否有預期的影響。 這個原則的嚴重性設定 **低** 。|威脅管理|E1/F1、E3/F3 或 E5|
+|**管理員已觸發手動調查電子郵件**|當系統管理員觸發手動調查來自威脅瀏覽器的電子郵件時產生警示。 如需詳細資訊，請參閱 [範例：安全性管理員會觸發從威脅瀏覽器進行的調查] (https://docs.microsoft.com/microsoft-365/security/defender-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) 。 此警示會通知您的組織已開始調查。 警示會提供觸發它之人員的相關資訊，並包含調查的連結。 這個原則有 **資訊性** 嚴重性設定。|威脅管理| E5/G5 或 Microsoft Defender for Office 365 P2 附加元件訂閱| 
 |**建立轉送/重新導向規則**|當您組織中的人員建立信箱的收件匣規則，將郵件轉寄或重新導向至另一個電子郵件帳戶時，會產生警示。 這個原則只追蹤在先前稱為 Outlook Web App) 或 Exchange Online PowerShell 上，使用 Outlook 在 (網頁上建立的收件匣規則。 這個原則的嚴重性設定 **低** 。 如需使用收件匣規則來轉寄及重新導向 web 上 Outlook 中電子郵件的詳細資訊，請參閱 [使用 outlook 網頁版中的規則，將郵件自動轉寄至另一個帳戶](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
 |**已啟動或匯出 eDiscovery 搜尋**|當有人在安全性與合規性中心使用內容搜尋工具時產生警示。 執行下列內容搜尋活動時，會觸發警示： <br/><br/>* 已啟動內容搜尋<br/>* 匯出內容搜尋的結果<br/>* 內容搜尋報告已匯出<br/><br/>在與 eDiscovery 案例關聯的先前內容搜尋活動執行時，也會觸發警示。 這個原則的嚴重性設定是「 **中** 」。 如需內容搜尋活動的詳細資訊，請參閱在 [審核記錄中搜尋 eDiscovery 活動](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
 |**提升 Exchange 系統管理員許可權**|在您的 Exchange Online 組織中有指派系統管理許可權的人時產生警示。 例如，當使用者新增至 Exchange Online 中的「組織管理」角色群組時。 這個原則的嚴重性設定 **低** 。|權限|E1/F1/G1、E3/F3/G3 或 E5/G5|
-|**傳遞後移除包含惡意程式碼的電子郵件**|會在包含惡意程式碼的任何郵件傳送至組織中的信箱時產生警示。 如果發生此事件，Microsoft 會使用 [零小時自動清除](../security/office-365-security/zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。 這個原則的 **資訊** 嚴重性設定會自動觸發 [Office 365 中的自動調查和回應](../security/office-365-security/office-365-air.md)。|威脅管理|E5/G5 或 Microsoft Defender for Office 365 P2 附加元件訂閱|
-|**傳遞後移除包含網路釣魚 URLs 的電子郵件**|將包含網路釣魚詐騙的郵件傳送給組織中的信箱時，會產生警示。 如果發生此事件，Microsoft 會使用 [零小時自動清除](../security/office-365-security/zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。 這個原則的 **資訊** 嚴重性設定會自動觸發 [Office 365 中的自動調查和回應](../security/office-365-security/office-365-air.md)。|威脅管理|E5/G5 或 Defender for Office 365 P2 附加元件訂閱|
-|**使用者報告為惡意程式碼或網路釣魚網路的電子郵件**|當您組織中的使用者使用報告訊息增益集將郵件報告為網路釣魚電子郵件時，就會產生警示。 這個原則有 **資訊性** 嚴重性設定。 如需此增益集的詳細資訊，請參閱 [Use The Report Message 增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 若為 Office 365 P2，E5，G5 客戶，此警示會自動觸發 [Office 365 中的自動調查和回應](../security/office-365-security/office-365-air.md)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
-|**超過電子郵件傳送限制**|當您組織中的某人傳送的郵件超過輸出垃圾郵件原則所允許的郵件時，就會產生警示。 這通常表示使用者傳送太多電子郵件，或可能會危及帳戶。 這個原則的嚴重性設定是「 **中** 」。 如果您收到此警示原則產生的警示，最好 [檢查使用者帳戶是否遭到破壞](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
+|**傳遞後移除包含惡意程式碼的電子郵件**|會在包含惡意程式碼的任何郵件傳送至組織中的信箱時產生警示。 如果發生此事件，Microsoft 會使用 [零小時自動清除](../security/defender-365-security/zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。 這個原則的 **資訊** 嚴重性設定會自動觸發 [Office 365 中的自動調查和回應](../security/defender-365-security/office-365-air.md)。|威脅管理|E5/G5 或 Microsoft Defender for Office 365 P2 附加元件訂閱|
+|**傳遞後移除包含網路釣魚 URLs 的電子郵件**|將包含網路釣魚詐騙的郵件傳送給組織中的信箱時，會產生警示。 如果發生此事件，Microsoft 會使用 [零小時自動清除](../security/defender-365-security/zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。 這個原則的 **資訊** 嚴重性設定會自動觸發 [Office 365 中的自動調查和回應](../security/defender-365-security/office-365-air.md)。|威脅管理|E5/G5 或 Defender for Office 365 P2 附加元件訂閱|
+|**使用者報告為惡意程式碼或網路釣魚網路的電子郵件**|當您組織中的使用者使用報告訊息增益集將郵件報告為網路釣魚電子郵件時，就會產生警示。 這個原則有 **資訊性** 嚴重性設定。 如需此增益集的詳細資訊，請參閱 [Use The Report Message 增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 若為 Office 365 P2，E5，G5 客戶，此警示會自動觸發 [Office 365 中的自動調查和回應](../security/defender-365-security/office-365-air.md)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
+|**超過電子郵件傳送限制**|當您組織中的某人傳送的郵件超過輸出垃圾郵件原則所允許的郵件時，就會產生警示。 這通常表示使用者傳送太多電子郵件，或可能會危及帳戶。 這個原則的嚴重性設定是「 **中** 」。 如果您收到此警示原則產生的警示，最好 [檢查使用者帳戶是否遭到破壞](../security/defender-365-security/responding-to-a-compromised-email-account.md)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
 |**由於可能的網路釣魚嘗試封鎖表單**|當您組織中的某人因偵測到重複的網路釣魚嘗試行為而受到限制，無法使用 Microsoft 表單共用表單及收集回應時產生警示。 這個原則具有 **高嚴重性** 設定。|威脅管理|E1、E3/F3 或 E5|
 |**已標記為網路釣魚的表單並確認**|當您從組織內部建立的 Microsoft Forms 中的表單被識別為 Microsoft 的潛在網路釣魚時，會產生警示。 這個原則具有 **高** 嚴重性設定。|威脅管理|E1、E3/F3 或 E5|
 |**郵件已延遲**|當 Microsoft 無法使用連接器將電子郵件傳送至您的內部部署組織或夥伴伺服器時，產生警示。 發生這種情況時，郵件會在 Office 365 中排入佇列。 當有2000封以上的郵件已排入佇列超過一小時時，就會觸發此警示。 這個原則具有 **高** 嚴重性設定。|郵件流程|E1/F1/G1、E3/F3/G3 或 E5/G5|
@@ -132,11 +132,11 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 |**因為已停用 ZAP，所以惡意程式碼不會 zapped**| 會在 Microsoft 偵測到將惡意程式碼傳遞至信箱時產生警示，因為網路釣魚郵件的 Zero-Hour 自動清除功能已停用。 這個原則有 **資訊性** 嚴重性設定。 |威脅管理|E5/G5 或 Defender for Office 365 P2 附加元件訂閱|
 |**因為停用使用者的垃圾郵件資料夾，所以已傳遞網路釣魚**|會在 Microsoft 偵測到使用者的垃圾郵件資料夾被停用時產生警示，允許將高可信度的網路釣魚郵件傳遞至信箱。 這個原則有 **資訊性** 嚴重性設定。|威脅管理|E5/G5 或適用于 Office 365 P1 或 P2 附加元件訂閱的 Defender|
 |**由於 ETR 覆寫而傳送網路釣魚詐騙**|當 Microsoft 偵測到 Exchange Transport Rule (ETR) ，允許將高可信度的網路釣魚郵件傳遞至信箱時，會產生警示。 這個原則有 **資訊性** 嚴重性設定。 如需 Exchange Transport Rules)  (郵件流程規則的詳細資訊，請參閱 [mail flow rules (Transport rules) In Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。|威脅管理|E5/G5 或適用于 Office 365 P1 或 P2 附加元件訂閱的 Defender|
-|**由於 IP 允許原則，網路釣魚詐騙已傳送**|當 Microsoft 偵測允許將高可信度網路釣魚郵件傳遞至信箱的 IP 允許原則時，會產生警示。 這個原則有 **資訊性** 嚴重性設定。 如需 IP 允許原則 (連線篩選) 的詳細資訊，請參閱 [Configure the default connection filter policy-Office 365](../security/office-365-security/configure-the-connection-filter-policy.md)。|威脅管理|E5/G5 或適用于 Office 365 P1 或 P2 附加元件訂閱的 Defender|
+|**由於 IP 允許原則，網路釣魚詐騙已傳送**|當 Microsoft 偵測允許將高可信度網路釣魚郵件傳遞至信箱的 IP 允許原則時，會產生警示。 這個原則有 **資訊性** 嚴重性設定。 如需 IP 允許原則 (連線篩選) 的詳細資訊，請參閱 [Configure the default connection filter policy-Office 365](../security/defender-365-security/configure-the-connection-filter-policy.md)。|威脅管理|E5/G5 或適用于 Office 365 P1 或 P2 附加元件訂閱的 Defender|
 |**因為已停用 ZAP，所以無法 zapped 網路釣魚**| 因為網路釣魚郵件的 Zero-Hour 自動清除已停用，所以 Microsoft 偵測到信箱的高可信度郵件會產生警示。 這個原則有 **資訊性** 嚴重性設定。|威脅管理|E5/G5 或 Defender for Office 365 P2 附加元件訂閱|
 |**由於租使用者或使用者覆寫1，網路釣魚詐騙已傳送**<sup></sup>|當 Microsoft 偵測到系統管理員或使用者覆寫，允許將網路釣魚郵件傳遞至信箱時，會產生警示。 覆寫的範例包括允許來自特定寄件者或網域之郵件的收件匣或郵件流程規則，或是允許來自特定寄件者或網域之郵件的反垃圾郵件原則。 這個原則具有 **高** 嚴重性設定。|威脅管理|E5/G5 或 Defender for Office 365 P2 附加元件訂閱|
-|**可疑的電子郵件轉送活動**|當您組織中的人員已將電子郵件 autoforwarded 至可疑的外部帳戶時，會產生警示。 這是一種針對可能會指出帳戶已遭破壞，但不足以限制使用者之行為的早期警告。 這個原則的嚴重性設定是「 **中** 」。 雖然這種情況很少見，但由此原則產生的警示可能是反常的。 最好 [檢查使用者帳戶是否受損](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
-|**偵測到電子郵件傳送模式**|當貴組織中的某人傳送了可疑的電子郵件，並有限制傳送電子郵件的風險時，會產生警示。 這是一種針對可能表示帳戶已遭到破壞，但不足以限制使用者之行為的早期警告。 這個原則的嚴重性設定是「 **中** 」。 雖然這種情況很少見，但由此原則產生的警示可能是反常的。 不過，最好 [檢查使用者帳戶是否受損](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5  |
+|**可疑的電子郵件轉送活動**|當您組織中的人員已將電子郵件 autoforwarded 至可疑的外部帳戶時，會產生警示。 這是一種針對可能會指出帳戶已遭破壞，但不足以限制使用者之行為的早期警告。 這個原則的嚴重性設定是「 **中** 」。 雖然這種情況很少見，但由此原則產生的警示可能是反常的。 最好 [檢查使用者帳戶是否受損](../security/defender-365-security/responding-to-a-compromised-email-account.md)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
+|**偵測到電子郵件傳送模式**|當貴組織中的某人傳送了可疑的電子郵件，並有限制傳送電子郵件的風險時，會產生警示。 這是一種針對可能表示帳戶已遭到破壞，但不足以限制使用者之行為的早期警告。 這個原則的嚴重性設定是「 **中** 」。 雖然這種情況很少見，但由此原則產生的警示可能是反常的。 不過，最好 [檢查使用者帳戶是否受損](../security/defender-365-security/responding-to-a-compromised-email-account.md)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5  |
 |**受限制的租使用者傳送電子郵件**|當您組織中的大部分電子郵件流量偵測到可疑，而且 Microsoft 已限制您的組織傳送電子郵件時，會產生警示。 調查任何可能遭到破壞的使用者和系統管理員帳戶、新連接器或開啟的中繼，然後聯繫 Microsoft 支援部門以解除封鎖您的組織。 這個原則具有 **高** 嚴重性設定。 如需有關組織遭到封鎖原因的詳細資訊，請參閱 [在 Exchange Online 中修正錯誤碼為 5.7.7 xx 的電子郵件傳遞問題](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750)。|威脅管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
 |**不尋常的外部使用者檔案活動**|當您組織外部的使用者在 SharePoint 或 OneDrive 中執行大量的活動時，會產生警示。 這包括存取檔、下載檔案和刪除檔案等活動。 這個原則具有 **高** 嚴重性設定。|資訊控管|E5/G5、Microsoft Defender for Office 365 P2 或 Microsoft 365 E5 附加元件訂閱|
 |**外部檔案共用的數量不尋常**|當 SharePoint 或 OneDrive 中的大量檔案與組織外的使用者共用時，會產生警示。 這個原則的嚴重性設定是「 **中** 」。|資訊控管|E5/G5、Office 365 P2 的 Defender 或 Microsoft 365 E5 附加元件訂閱|
@@ -148,7 +148,7 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 |||||
 
 > [!NOTE]
-> <sup>1</sup> 我們已根據客戶的意見反應，暫時移除此預設的警示原則。 我們正在努力改進它，並在近期將其取代為新的版本。 在此之前，您可以使用下列設定來建立自訂的警示原則以取代此功能：<br/>&nbsp; * 活動是指傳遞時偵測到的網路釣魚電子郵件<br/>&nbsp; * 郵件並非 ZAP<br/>&nbsp; * 郵件方向為輸入<br/>&nbsp; * 郵件傳遞狀態已傳遞<br/>&nbsp; * 偵測技術是惡意 URL 保留、URL 引爆、高級網路釣魚篩選、一般網路釣魚篩選、網域模擬、使用者模擬和品牌模擬<br/><br/>&nbsp;&nbsp;&nbsp;如需有關 Office 365 中的反網路釣魚的詳細資訊，請參閱 [設定反網路釣魚和反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。<br/><br/><sup>2</sup> 若要重新建立此警示原則，請遵循上一個註腳中的指導方針，但選擇 [使用者模擬] 做為唯一的偵測技術。
+> <sup>1</sup> 我們已根據客戶的意見反應，暫時移除此預設的警示原則。 我們正在努力改進它，並在近期將其取代為新的版本。 在此之前，您可以使用下列設定來建立自訂的警示原則以取代此功能：<br/>&nbsp; * 活動是指傳遞時偵測到的網路釣魚電子郵件<br/>&nbsp; * 郵件並非 ZAP<br/>&nbsp; * 郵件方向為輸入<br/>&nbsp; * 郵件傳遞狀態已傳遞<br/>&nbsp; * 偵測技術是惡意 URL 保留、URL 引爆、高級網路釣魚篩選、一般網路釣魚篩選、網域模擬、使用者模擬和品牌模擬<br/><br/>&nbsp;&nbsp;&nbsp;如需有關 Office 365 中的反網路釣魚的詳細資訊，請參閱 [設定反網路釣魚和反網路釣魚原則](../security/defender-365-security/set-up-anti-phishing-policies.md)。<br/><br/><sup>2</sup> 若要重新建立此警示原則，請遵循上一個註腳中的指導方針，但選擇 [使用者模擬] 做為唯一的偵測技術。
 
 某些內建原則所監控的非尋常活動，取決於與先前所述之警示閾值設定相同的處理常式。 Microsoft 會建立一個基準值，以定義「一般」活動的一般頻率。 當內建警示原則追蹤的活動頻率大幅超過基準值時，就會觸發警示。
 
@@ -172,7 +172,7 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 
 - **類別。** 使用此篩選器顯示一或多個警示類別中的警示。
 
-- **標籤。** 使用此篩選器顯示一或多個使用者標記中的警示。 標記會根據出現在警示中的標籤信箱或使用者而反映。 請參閱 [Office 356 ATP 中的使用者標記](..\security\office-365-security\user-tags.md) 以深入瞭解。
+- **標籤。** 使用此篩選器顯示一或多個使用者標記中的警示。 標記會根據出現在警示中的標籤信箱或使用者而反映。 請參閱 [Office 356 ATP 中的使用者標記](../security/defender-365-security/user-tags.md) 以深入瞭解。
 
 - **源。** 使用此篩選器顯示由 Office 365 雲端 App 安全性原則或兩者所觸發的安全性與合規性中心或警示中的警示原則所觸發的警示。 如需有關 Office 365 雲端 App 安全性警示的詳細資訊，請參閱 [查看 Cloud App security 警示](#viewing-cloud-app-security-alerts)。
 

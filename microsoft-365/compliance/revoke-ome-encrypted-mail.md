@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 以系統管理員和郵件寄件者的身分，您可以撤銷使用 Office 365 高級郵件加密所加密的特定電子郵件。
-ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 340a9e73dba50e28223ee561db749a089c649df6
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917195"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051715"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>撤銷由高級郵件加密所加密的電子郵件
 
@@ -91,7 +91,7 @@ Microsoft 365 系統管理員請遵循下列一般步驟來撤銷合格的加密
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>若要在安全性與 &amp; 合規性中心使用 Office 郵件加密報告識別您想要吊銷之電子郵件的郵件識別碼
 
-1. 在 [安全性與 &amp; 合規性中心] 中，流覽至 [ **郵件加密] 報告**。 如需此報告的詳細資訊，請參閱 [在安全性與 &amp; 規範中心中查看電子郵件安全性報告](../security/office-365-security/view-email-security-reports.md)。
+1. 在 [安全性與 &amp; 合規性中心] 中，流覽至 [ **郵件加密] 報告**。 如需此報告的詳細資訊，請參閱 [在安全性與 &amp; 規範中心中查看電子郵件安全性報告](../security/defender-365-security/view-email-security-reports.md)。
 
 2. 選擇 [ **查看詳細資料** ] 表格，並識別您要撤銷的郵件。
 

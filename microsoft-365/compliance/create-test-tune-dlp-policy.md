@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 在本文中，您將瞭解如何根據組織的需求來建立、測試及調整 DLP 原則。
-ms.openlocfilehash: d26412eb54176dfd3c5d881d82076b2a58330ebd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923449"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052081"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
 
@@ -50,7 +50,7 @@ DLP 會檢查電子郵件和檔案的敏感資訊，例如信用卡號碼。 使
 
 使用 **VIEW-ONLY Dlp 相容性管理** 角色來建立具有 DLP 原則和 dlp 報告之只供查看許可權的角色群組。
 
-如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 若要建立及套用 DLP 原則，不會強制執行原則，這些許可權是必要的。
 

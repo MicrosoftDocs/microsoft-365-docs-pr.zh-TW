@@ -16,16 +16,16 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ef09fbf7a517950ae182472e4b4d5ef896d65e5
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 4ef3fce82a10792c8289a4a3c4e3cb5639a4d178
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126540"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051875"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的資訊障礙
 
-Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假設您想要限制兩個群組之間的通訊和共同作業，以避免組織中發生利益衝突。 或者，您可能想要限制組織內特定人員之間的通訊和共同作業，以保護內部資訊。 Microsoft 365 可跨群組和組織進行通訊及共同作業，所以有一種方式可以限制特定使用者群組之間的通訊和共同作業（必要時）？ 透過資訊障礙，您可以！
+Microsoft 雲端服務包括強大的通訊和共同作業功能。 不過，假設您想要限制兩個群組之間的通訊和共同作業，以避免組織中發生利益衝突。 或者，您可能想要限制組織內特定人員之間的通訊和共同作業，以保護內部資訊。 Microsoft 365 可跨群組和組織進行通訊及共同作業，所以有一種方式可以限制特定使用者群組之間的通訊和共同作業（必要時）？ 透過資訊障礙，您可以！
 
 Microsoft 小組、SharePoint 線上及 OneDrive 商務支援資訊障礙。 假設您的 [訂閱](#required-licenses-and-permissions) 包含資訊障礙、合規性管理員或資訊屏障管理員可以定義原則，以允許或防止 Microsoft 小組中的使用者群組之間的通訊。 資訊屏障原則可以用於下列情況：
 
@@ -53,14 +53,14 @@ Microsoft 小組、SharePoint 線上及 OneDrive 商務支援資訊障礙。 假
 
 當資訊屏障原則到位時，不應該與其他特定使用者通訊或共用檔案的使用者將無法找到、選取、聊天或呼叫這些使用者。 透過資訊障礙，檢查功能已到位，可防止未經授權的通訊和協同作業。 
 
-資訊障礙適用于 Microsoft 小組 (聊天和頻道) ，SharePoint 線上及 OneDrive。 在 Microsoft 小組中，資訊障礙原則決定並防止下列未授權的通訊類型：
+資訊障礙適用于 Microsoft 小組 (聊天和頻道) ，SharePoint 線上及 OneDrive。 在 Microsoft Teams 中，資訊屏障原則決定並防止以下種類的未經授權的通訊：
 
 - 搜尋使用者
 - 新增成員至團隊
-- 與某人開始聊天會話
+- 開始與其他人的聊天工作階段
 - 開始群組聊天
-- 邀請某人加入會議
-- 共用畫面
+- 邀請其他人加入會議
+- 共用螢幕
 - 撥打電話
 - 與其他使用者共用檔案
 - 透過共用連結存取檔案
@@ -97,7 +97,7 @@ Microsoft 小組、SharePoint 線上及 OneDrive 商務支援資訊障礙。 假
 - 合規性系統管理員
 - IB 合規性管理
 
- (若要深入瞭解角色和許可權，請參閱 [Office 365 Security & 合規性中心的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。 ) 
+ (若要深入瞭解角色和許可權，請參閱 [Office 365 Security & 合規性中心的許可權](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。 ) 
 
 您必須熟悉 PowerShell Cmdlet，才能定義、驗證或編輯資訊障礙原則。 雖然我們在操作 [方法文章](information-barriers-policies.md)中提供了幾個 PowerShell Cmdlet 範例，但您將需要知道組織的其他詳細資料，例如參數。
 

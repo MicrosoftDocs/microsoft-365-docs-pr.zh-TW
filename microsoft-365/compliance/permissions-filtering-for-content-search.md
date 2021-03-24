@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: 使用內容搜尋許可權篩選，讓 eDiscovery 管理員只搜尋您組織中信箱和網站的子集。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be1daa4785f67ef54f107319bf88438c134896ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 78d36ccd602ea546099e768d7e91594a668df586
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927981"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051725"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>設定內容搜尋的權限篩選
 
@@ -45,7 +45,7 @@ ms.locfileid: "50927981"
 
 ## <a name="requirements-to-configure-permissions-filtering"></a>設定許可權篩選的需求
 
-- 若要執行相容性安全性篩選 Cmdlet，您必須是 Security & 合規性中心中「組織管理」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+- 若要執行相容性安全性篩選 Cmdlet，您必須是 Security & 合規性中心中「組織管理」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 - 若要使用相容性安全性篩選 Cmdlet，您必須連線至 Exchange Online 及 Security & 合規性中心 PowerShell。 這是必要的，因為這些指令程式需要存取信箱內容，這就是為什麼您必須連線到 Exchange Online PowerShell。 請參閱下一節中的步驟。
 

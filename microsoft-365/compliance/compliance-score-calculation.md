@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 瞭解 Microsoft 合規性管理員如何根據採取的措施來計算個人化分數，以解決風險並改善您的相容性狀況。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d340c31b4f5477df845531bfb933883f331198
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908573"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052111"
 ---
 # <a name="compliance-score-calculation"></a>合規性分數計算
 
@@ -61,7 +61,7 @@ ms.locfileid: "50908573"
 
 例如，如果您在 Azure AD 入口網站中開啟多重要素驗證 (MFA) ，合規性管理員會偵測設定，並將其反映在控制存取解決方案的詳細資料中。 相反地，如果您未開啟 MFA，合規性管理員旗標為您採取建議的動作。
 
-深入瞭解 [安全性分數及其運作方式](../security/mtp/microsoft-secure-score.md)。
+深入瞭解 [安全性分數及其運作方式](../security/defender/microsoft-secure-score.md)。
   
 ## <a name="action-types-and-points"></a>動作類型和點
 
@@ -96,7 +96,7 @@ ms.locfileid: "50908573"
 
 ### <a name="mandatory-and-discretionary-actions"></a>強制和自由的動作
 
- - 不能故意或無意中略過強制執行的 **動作**。 強制執行動作的範例是一個集中管理的密碼原則，可設定密碼長度、複雜性和到期的需求。 使用者必須遵循這些需求，才能存取系統。
+ - 不能故意或無意中略過強制執行的 **動作**。 強制執行動作的範例是一個集中管理的密碼原則，可設定密碼長度、複雜性和到期的需求。 使用者必須遵循這些需求來存取系統。
   
  - **自由動作** 會依據使用者來瞭解和遵循原則。 例如，如果原則要求使用者在其保留時鎖定其電腦，則其為自由的動作，因為它會因使用者而異。
   

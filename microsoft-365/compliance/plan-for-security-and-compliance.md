@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登陸頁面提供 Office 365 的安全性和合規性的連結及規劃資訊。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f050d8bb7052ec2f62a9e33c35bcbe43546a40c2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 90f4083bdf38f4b1390ee31d0853ad65e3fe236f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927959"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051705"
 ---
 # <a name="plan-for-security-amp-compliance"></a>規劃安全性 &amp; 合規性
 
@@ -38,7 +38,7 @@ ms.locfileid: "50927959"
 
 設定您的 Microsoft 365 訂閱後，請記下您的開始分數。 安全分數提供您可以採取的設定建議，以提升您的分數。 目標是瞭解您可以採取以保護您的環境，而不會對使用者生產力造成不良影響的機會。
   
-- [Office 365 安全分數簡介](../security/mtp/microsoft-secure-score.md)
+- [Office 365 安全分數簡介](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>步驟3：規劃身分識別與裝置的存取保護
 
@@ -46,7 +46,7 @@ ms.locfileid: "50927959"
   
 - [保護 Office 365 中的資料與服務存取權](protect-access-to-data-and-services.md)
     
-- [安全的電子郵件原則和設定](../security/office-365-security/secure-email-recommended-policies.md)
+- [安全的電子郵件原則和設定](../security/defender-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多語言](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -62,15 +62,15 @@ ms.locfileid: "50927959"
   
 - [移至安全性與 &amp; 合規性中心](./microsoft-365-compliance-center.md)
     
-- [安全性與 &amp; 合規性中心的許可權](~/security/office-365-security/protect-against-threats.md)
+- [安全性與 &amp; 合規性中心的許可權](~/security/defender-365-security/protect-against-threats.md)
     
-- [讓使用者能夠存取安全性與 &amp; 合規性中心](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [讓使用者能夠存取安全性與 &amp; 合規性中心](~/security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>步驟6：使用端對端安全性案例做為開始點
 
 使用這些建議的設定作為企業規模或複雜的 access 安全性案例的起點。
   
-- [安全的電子郵件原則和設定](../security/office-365-security/secure-email-recommended-policies.md)
+- [安全的電子郵件原則和設定](../security/defender-365-security/secure-email-recommended-policies.md)
     
 - [Microsoft 雲端中的 Contoso](../enterprise/contoso-case-study.md)
     

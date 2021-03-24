@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fdfcc2e7454b1243016754ba32dcc2622b876672
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13d4181482bf8ad7460480a70c762fe60fd28ad0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927751"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051745"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -165,7 +165,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>是否有任何報告功能或加密電子郵件的洞察力？
 
-在安全性與合規性中心有一個加密報告。 請參閱 [在安全性 & 規範中心中查看電子郵件安全性報告](../security/office-365-security/view-email-security-reports.md)。
+在安全性與合規性中心有一個加密報告。 請參閱 [在安全性 & 規範中心中查看電子郵件安全性報告](../security/defender-365-security/view-email-security-reports.md)。
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>是否可以使用郵件加密搭配電子檔探索等相容性功能？
 

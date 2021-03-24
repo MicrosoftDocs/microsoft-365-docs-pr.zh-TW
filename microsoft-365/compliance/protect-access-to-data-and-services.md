@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 瞭解如何保護使用者和裝置存取 Microsoft 365 的資料和服務，並防止資料遺失。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd8bbb62bc87ff59594e2fb2a3e21311c2452d9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9ff7bd2ff8b4b333eb30a6cc82797a8968941e0b
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925539"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051695"
 ---
 # <a name="protect-user-and-device-access"></a>保護使用者和裝置存取權
 
@@ -38,7 +38,7 @@ ms.locfileid: "50925539"
 
 僅使用管理員帳戶來開始。 系統管理員應該要有個別的使用者帳戶，以進行一般的非系統管理，而且只有在必要時才使用系統管理帳戶，才可完成與工作職能相關聯的工作。
 
-使用多重要素驗證和條件式存取來保護您的系統管理員帳戶。 如需詳細資訊，請參閱 [保護系統管理員帳戶](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts)。 
+使用多重要素驗證和條件式存取來保護您的系統管理員帳戶。 如需詳細資訊，請參閱 [保護系統管理員帳戶](../security/defender-365-security/identity-access-prerequisites.md#protecting-administrator-accounts)。 
 
 接下來，在 Office 365 中設定特殊許可權存取管理。 「特權存取管理」可讓您透過 Office 365 中的版權管理工作進行精細存取控制。 它可以協助保護您的組織不會因可能使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。
 
@@ -50,7 +50,7 @@ ms.locfileid: "50925539"
 最後，您可以在您的租使用者中建立兩個或多個緊急存取帳戶，以減輕意外缺乏管理存取的影響。 請參閱 [管理 AZURE AD 中的緊急存取帳戶](/azure/active-directory/users-groups-roles/directory-emergency-access)。 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>步驟3：設定建議的身分識別和裝置存取原則
-多重要素驗證 (MFA) 和條件式存取原則，都是一些強大的工具，可減輕受到損害的帳戶和未經授權的存取。 建議您實施一組已一起測試的原則。 如需詳細資訊，包括部署步驟，請參閱 [Identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md)設定。
+多重要素驗證 (MFA) 和條件式存取原則，都是一些強大的工具，可減輕受到損害的帳戶和未經授權的存取。 建議您實施一組已一起測試的原則。 如需詳細資訊，包括部署步驟，請參閱 [Identity and device access](../security/defender-365-security/microsoft-365-policies-configurations.md)設定。
 
  這些原則會執行下列功能：
 - 單行因素驗證
@@ -63,7 +63,7 @@ ms.locfileid: "50925539"
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>步驟4：設定 SharePoint 裝置存取原則
 
-Microsoft 建議您使用裝置存取控制，以機密和高管制內容來保護 SharePoint 網站中的內容。 如需詳細資訊，請參閱 [保護 SharePoint 網站和檔案的原則建議](../security/office-365-security/sharepoint-file-access-policies.md)。
+Microsoft 建議您使用裝置存取控制，以機密和高管制內容來保護 SharePoint 網站中的內容。 如需詳細資訊，請參閱 [保護 SharePoint 網站和檔案的原則建議](../security/defender-365-security/sharepoint-file-access-policies.md)。
 
 
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: d8eb1d7d8245aa31cb5429452128cedc0adf4684
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925701"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052131"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -72,7 +72,7 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>有關 Office 365 安全性 & 規範中心的詳細資訊
 
-深入瞭解 [Office 365 安全性 & 合規性中心的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+深入瞭解 [Office 365 安全性 & 合規性中心的許可權](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 如果您沒有 Office 365 安全性與合規性中心的存取權，或者您需要在 Microsoft 服務信任入口網站中存取經典版本的合規性管理員，則服務信任入口網站中的系統管理員設定會提供另一種方法， ([view 說明](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)) 中指派角色。 請注意，這些角色在其功能上的限制更為有限。
 
@@ -104,7 +104,7 @@ Microsoft 365 合規性中心的合規性管理員設定可讓您啟用及停用
 
 ### <a name="set-up-automated-testing"></a>設定自動測試
 
-合規性管理員中的某些改進動作也是由 [Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)所監控。 您可以設定進行自動監控的動作自動測試，這表示在安全的分數中測試並更新動作時，這些結果會與合規性管理員中的相同動作同步處理，並在合規性分數中計數。
+合規性管理員中的某些改進動作也是由 [Microsoft 安全分數](../security/defender/microsoft-secure-score.md)所監控。 您可以設定進行自動監控的動作自動測試，這表示在安全的分數中測試並更新動作時，這些結果會與合規性管理員中的相同動作同步處理，並在合規性分數中計數。
 
 預設會針對合規性管理員的新組織開啟自動測試。 當您第一次部署 Microsoft 365 或 Office 365 時，會花大約7天的時間來完全收集資料，並將其劃分為您的合規性分數。  開啟自動測試時，不會更新動作的測試日期，但會更新其測試狀態。 當建立新的評估時，會自動包含 Microsoft control 得分和安全評分整合。
 
@@ -363,5 +363,5 @@ Microsoft 365 合規性中心的合規性管理員設定可讓您啟用及停用
 
 **深入瞭解：** 請 [參閱如何使用評估範本](compliance-manager-templates.md)。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 [設定評估](compliance-manager-assessments.md)，以自訂合規性管理員。
