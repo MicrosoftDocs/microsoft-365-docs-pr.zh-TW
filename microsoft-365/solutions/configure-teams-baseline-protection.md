@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用基準層級的保護來部署小組。
-ms.openlocfilehash: 4f38bf286b8ebd3edf6f7705299008566d2b7c8f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 678e9824682339afda32342e70848492b738ec6d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916331"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052502"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>為小組設定基準保護
 
@@ -31,15 +31,15 @@ ms.locfileid: "50916331"
 
 ## <a name="initial-protections"></a>初始保護
 
-我們所建議的第一個步驟是設定基本身分識別和裝置存取原則。 如需詳細資訊，請參閱[用來保護 Teams 聊天、群組和檔案的原則建議](../security/office-365-security/teams-access-policies.md)。
+我們所建議的第一個步驟是設定基本身分識別和裝置存取原則。 如需詳細資訊，請參閱[用來保護 Teams 聊天、群組和檔案的原則建議](../security/defender-365-security/teams-access-policies.md)。
 
 我們也建議您開啟基本的適用於 Office 365 的 Defender 功能，以防範文件、附件和連結中的惡意程式碼。 建議您開啟下表中的每個選項。
 
 |選項|資訊|
 |:------|:-----------|
-|適用於 SPO、OneDrive 和 Teams 的安全附件|[安全附件](../security/office-365-security/atp-safe-attachments.md)<br>[適用於 Office 365 的 Defender - SharePoint、OneDrive 和 Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)|
-|安全文件|[適用於 Office 365 的 Microsoft Defender 中的安全文件](../security/office-365-security/safe-docs.md)|
-|適用於 Teams 的安全連結|[Teams 中的 Office 365 安全連結](../security/office-365-security/atp-safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[安全連結](../security/office-365-security/atp-safe-links.md)|
+|適用於 SPO、OneDrive 和 Teams 的安全附件|[安全附件](../security/defender-365-security/safe-attachments.md)<br>[適用於 Office 365 的 Defender - SharePoint、OneDrive 和 Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)|
+|安全文件|[適用於 Office 365 的 Microsoft Defender 中的安全文件](../security/defender-365-security/safe-docs.md)|
+|適用於 Teams 的安全連結|[Teams 中的 Office 365 安全連結](../security/defender-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[安全連結](../security/defender-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Teams 來賓共用
 

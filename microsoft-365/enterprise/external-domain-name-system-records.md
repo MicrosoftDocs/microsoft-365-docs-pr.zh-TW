@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 規劃 Office 365 部署時使用的外部網域名稱系統記錄參考清單。
-ms.openlocfilehash: c2384f1e330692d43c923a7932db4c3ff2bc99ae
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3aa6bf3362005eb0dae5bca40322fe2178d5d69f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924209"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051375"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部網域名稱系統記錄
 
@@ -103,7 +103,7 @@ Office 365 中電子郵件需要數個不同的記錄，所有的客戶應使用
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> SPF 是設計來協助防止詐騙，但是有 SPF 無法防護的詐騙技術。為了防止這些項目，設定 SPF 之後，您也應該為 Office 365 設定 DKIM 和 DMARC。若要開始使用，請參閱[使用 DKIM 驗證從 Office 365 中的網域傳送的輸出電子郵件](../security/office-365-security/use-dkim-to-validate-outbound-email.md)。接下來，請參閱[使用 DMARC 來驗證 Office 365 中的電子郵件](../security/office-365-security/use-dmarc-to-validate-email.md)。
+> SPF 是設計來協助防止詐騙，但是有 SPF 無法防護的詐騙技術。為了防止這些項目，設定 SPF 之後，您也應該為 Office 365 設定 DKIM 和 DMARC。若要開始使用，請參閱[使用 DKIM 驗證從 Office 365 中的網域傳送的輸出電子郵件](../security/defender-365-security/use-dkim-to-validate-outbound-email.md)。接下來，請參閱[使用 DMARC 來驗證 Office 365 中的電子郵件](../security/defender-365-security/use-dmarc-to-validate-email.md)。
   
 SPF 記錄是 TXT 記錄，有助於防止他人使用您的網域來傳送垃圾郵件或其他惡意電子郵件。寄件者原則架構 (SPF) 記錄的運作方式是識別取得從網域傳送電子郵件之授權的伺服器。
   
@@ -125,7 +125,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 在您不只使用 Office 365 的 Exchange Online 電子郵件的情況下，(例如，當您也使用來自 SharePoint Online 的電子郵件時)，使用下表來決定要包含在記錄值中的內容。
   
 > [!NOTE]
-> 如果您有複雜的案例，包含例如在您的防火牆管理電子郵件流量的 Edge 電子郵件伺服器，您將需要設定更詳細的 SPF 記錄。了解如何：[在 Office 365 中設定 SPF 記錄以協助防範詐騙](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)。您也可以了解更多有關 SPF 使用 Office 365 的方式，請閱讀 [Office 365 如何使用寄件者原則架構 (SPF) 協助防範詐騙](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md)。
+> 如果您有複雜的案例，包含例如在您的防火牆管理電子郵件流量的 Edge 電子郵件伺服器，您將需要設定更詳細的 SPF 記錄。了解如何：[在 Office 365 中設定 SPF 記錄以協助防範詐騙](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)。您也可以了解更多有關 SPF 使用 Office 365 的方式，請閱讀 [Office 365 如何使用寄件者原則架構 (SPF) 協助防範詐騙](../security/defender-365-security/how-office-365-uses-spf-to-prevent-spoofing.md)。
   
 | 數字|如果您正在使用...  <br/> |用途  <br/> |新增這些包含項目  <br/> |
 |:-----|:-----|:-----|:-----|
@@ -181,6 +181,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-以下是一些常見的範例，當您將網域新增至電子郵件的 Office 365 時，可協助您調整現有的 SPF 記錄。如果您有複雜的案例，包含例如在您的防火牆管理電子郵件流量的 Edge 電子郵件伺服器，您將需要設定更詳細的 SPF 記錄。了解如何：[在 Office 365 中設定 SPF 記錄以協助防範詐騙](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
+以下是一些常見的範例，當您將網域新增至電子郵件的 Office 365 時，可協助您調整現有的 SPF 記錄。如果您有複雜的案例，包含例如在您的防火牆管理電子郵件流量的 Edge 電子郵件伺服器，您將需要設定更詳細的 SPF 記錄。了解如何：[在 Office 365 中設定 SPF 記錄以協助防範詐騙](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
   
 您可以使用下列短連結返回這裡：[https://aka.ms/o365edns]()

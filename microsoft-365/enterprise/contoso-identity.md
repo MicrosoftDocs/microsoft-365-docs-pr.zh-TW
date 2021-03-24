@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用身分識別即服務 (IDaaS)，為其員工提供雲端式驗證，為其合作夥伴和客戶提供同盟驗證。
-ms.openlocfilehash: accd60f6699e7ebf04963213128d1ca1ffc8f7fe
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f3c8746345683652ce601400ae7297e96fff2ee3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911069"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051517"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的身分識別
 
@@ -64,7 +64,7 @@ PHS 會同步處理內部部署 AD DS 樹系與其 Microsoft 365 for enterprise 
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>身分識別和裝置存取的條件式存取原則
 
-Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件式存取原則](../security/office-365-security/identity-access-policies.md)：
+Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件式存取原則](../security/defender-365-security/identity-access-policies.md)：
 
 - *基準* 保護適用于所有使用者帳戶。
 - *機密* 保護適用于資深領導人和高層人員。

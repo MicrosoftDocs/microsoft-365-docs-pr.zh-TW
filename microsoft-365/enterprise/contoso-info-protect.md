@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 瞭解 Contoso 如何使用 Microsoft 365 for enterprise 中的資訊保護功能，在雲端中保護其數位資產。
-ms.openlocfilehash: 90a82fbd4dd77ff0f8faa024ced177a640a10b80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911035"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051493"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的資訊保護
 
@@ -41,7 +41,7 @@ Contoso 執行其資料的分析，並確定下列分類層級。
 下表列出 Contoso 資訊原則。
 
 
-| 值 | Access | 資料保留 | 資訊保護 |
+| 值 | 存取 | 資料保留 | 資訊保護 |
 |:-------|:-----|:-----|:-----|
 | 低商業價值 (第 1 級：基準) | 允許存取所有。  | 6 個月 | 使用加密。 |
 | 中等商業價值 (第 2 級：敏感性) | 允許存取 Contoso 員工、分包商和合作夥伴。 <BR><BR> 使用 MFA、傳輸層安全性 (TLS) 和行動裝置應用程式管理 (MAM)。 | 2 年  | 使用雜湊值以確保資料完整。  |
@@ -76,9 +76,9 @@ Contoso 遵循這些步驟，針對其資訊保護需求準備 Microsoft 365 for
 
 在 Exchange Online 和 SharePoint 的部署過程中，Contoso 設定下列一組條件式存取原則，並將它們套用至適當的群組：
 
-- [裝置原則的受控和非受控應用程式存取](../security/office-365-security/identity-access-policies.md)
-- [Exchange Online 存取原則](../security/office-365-security/secure-email-recommended-policies.md)
-- [SharePoint 存取原則](../security/office-365-security/sharepoint-file-access-policies.md)
+- [裝置原則的受控和非受控應用程式存取](../security/defender-365-security/identity-access-policies.md)
+- [Exchange Online 存取原則](../security/defender-365-security/secure-email-recommended-policies.md)
+- [SharePoint 存取原則](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 以下是設定資訊保護的 Contoso 原則所產生的結果。
 
@@ -117,7 +117,7 @@ Contoso 遵循這些步驟，針對其資訊保護需求準備 Microsoft 365 for
 
 ## <a name="see-also"></a>另請參閱
 
-[安全性藍圖](../security/office-365-security/security-roadmap.md)
+[安全性藍圖](../security/defender-365-security/security-roadmap.md)
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 

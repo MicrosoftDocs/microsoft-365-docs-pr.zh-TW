@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 的身分識別、裝置和威脅防護服務，避免個人資料遭到破壞。
-ms.openlocfilehash: 321b60efbdabe62b14502df4a16dd2dcec4b9cef
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 145b8a59f7eafb95adf71dc24613ee15ef1c2cca
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847175"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052347"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>使用資料隱私權規定的身分識別、裝置和威脅防護
 
@@ -30,7 +30,7 @@ Microsoft 365 提供許多身分識別、裝置和威脅防護功能，組織可
 
 ## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>身分識別、裝置和威脅防護與資料隱私權規定的關聯方式
 
-資料隱私權規定在其明確的程度上有所不同時，其所呼叫的實質是會包含在 GDPR 的第 5 (1) # B2 f) 中，這會指出： 
+資料隱私權規定在其明確的程度上有所不同時，其所呼叫的實質是會包含在 GDPR 的第 5 (1)  (f) 中，這會指出：
 
 - 個人資料的處理方式是為了確保個人資料的適當安全性，包括防止未經授權或非法處理的保護，以及防止意外遺失、損毀或損毀，使用適當的技術或組織量值 ( ' 誠信和機密性」 ) 。
 
@@ -70,7 +70,7 @@ Microsoft 365 提供許多身分識別、裝置和威脅防護功能，組織可
 - 要求行動裝置在非活動狀態時鎖定。
 - 要求行動裝置會在多個登入失敗時擦章。
 
-針對 [ **防護威脅** ] 類別使用 [Exchange Online Protection 和 Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md) ，您可以：
+針對 [**防護威脅**] 類別使用 [Exchange Online Protection 和 Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md) ，您可以：
 
 - 啟用寄件者驗證 (SPF、DMARC 及 DKIM) 。
 - 設定 Microsoft Defender for Office 365 反網路釣魚原則。
@@ -81,8 +81,8 @@ Microsoft 365 提供許多身分識別、裝置和威脅防護功能，組織可
 
 ### <a name="references"></a>引用：
 
-- [一般身分識別與裝置存取原則](../security/office-365-security/identity-access-policies.md)
+- [一般身分識別與裝置存取原則](../security/defender-365-security/identity-access-policies.md)
 - [保護 Office 365 中的威脅](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [安全附件](../security/office-365-security/atp-safe-attachments.md)
-- [安全連結](../security/office-365-security/atp-safe-links.md)
-- [安全文件](../security/office-365-security/safe-docs.md)
+- [安全附件](../security/defender-365-security/safe-attachments.md)
+- [安全連結](../security/defender-365-security/safe-links.md)
+- [安全文件](../security/defender-365-security/safe-docs.md)

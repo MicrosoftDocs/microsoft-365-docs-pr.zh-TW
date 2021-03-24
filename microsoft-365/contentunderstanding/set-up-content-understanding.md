@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: db6340e8bf4dc23163b67e749f60567f7841a943
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc6fbfbfc130cc6e64b5d7c30e0a9db5f39036ac
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911183"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051564"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -52,6 +52,14 @@ ms.locfileid: "50911183"
 - Common Data Service for SharePoint Syntex
 
 如果您在日後 (或您的試用版到期) 取消 SharePoint Syntex 訂閱，使用者將不再可建立或執行文件瞭解模型或表單處理模型，且內容中心範本將不再可用。 此外，字詞庫報告、SKOS 分類法匯入和內容類型推送將不再可用。 不會刪除任何內容，且不會變更網站權限。
+
+### <a name="ai-builder-credits"></a>AI Builder 點數
+
+如果貴組織中的 SharePoint Syntex 有 300 個或更多 SharePoint Syntex 授權，您將會獲一百萬的 AI Builder 點數。 如果您的授權少於 300 個，您必須購買 AI Builder 點數，才能使用表單處理。
+
+您可以使用 [AI Builder  計算機](https://powerapps.microsoft.com/ai-builder-calculator)，來估計最適合您的 AI Builder 容量。
+
+請移至 [Power Platform 系統管理中心](https://admin.powerplatform.microsoft.com/resources/capacity)查看您的點數和使用狀況。
 
 ## <a name="to-set-up-sharepoint-syntex"></a>若要設定 SharePoint Syntex
 
@@ -112,14 +120,6 @@ ms.locfileid: "50911183"
     > ![Microsoft 365 系統管理中心中的 SharePoint Syntex 授權](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. 按一下 **[儲存變更]**。
-
-## <a name="ai-builder-credits"></a>AI Builder 點數
-
-如果貴組織中的 SharePoint Syntex 有 300 個或更多 SharePoint Syntex 授權，您將會獲一百萬的 AI Builder 點數。 如果您的授權少於 300 個，您必須購買 AI Builder 點數，才能使用表單處理。
-
-您可以使用 [AI Builder  計算機](https://powerapps.microsoft.com/ai-builder-calculator)，來估計最適合您的 AI Builder 容量。
-
-請移至 [Power Platform 系統管理中心](https://admin.powerplatform.microsoft.com/resources/capacity)查看您的點數和使用狀況。
 
 ## <a name="see-also"></a>另請參閱
 

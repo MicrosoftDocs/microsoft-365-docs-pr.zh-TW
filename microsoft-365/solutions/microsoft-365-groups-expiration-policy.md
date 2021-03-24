@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 深入瞭解 Microsoft 365 群組到期原則。
-ms.openlocfilehash: 8232e7df2a8390b905386773ed0656eb8239d5c5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920913"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052299"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 群組到期原則
 
@@ -38,6 +38,8 @@ ms.locfileid: "50920913"
 - Outlook-加入群組，從群組讀取或寫入群組郵件，與郵件 (Outlook 網頁上) 。
 - 團隊-來訪小組頻道。
 
+請注意，會觸發自動群組更新的唯一 Yammer 活動是在社區內的 SharePoint 上傳檔。
+
 > [!IMPORTANT]
 > 當您變更到期原則時，服務會重新計算每個群組的到期日。 它永遠從建立群組的日期開始計數，然後套用新的到期原則。
 
@@ -51,7 +53,7 @@ ms.locfileid: "50920913"
 |角色|可以執行的動作|
 |---------|---------|
 |Office 365 全域管理員 (于 Azure 中，公司系統管理員) ，使用者管理員|建立、讀取、更新或刪除 Microsoft 365 群組到期原則設定。|
-|使用者|更新或 [還原](/azure/active-directory/users-groups-roles/groups-restore-deleted) 擁有的 Microsoft 365 群組|
+|User|更新或 [還原](/azure/active-directory/users-groups-roles/groups-restore-deleted) 擁有的 Microsoft 365 群組|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何設定到期原則
 

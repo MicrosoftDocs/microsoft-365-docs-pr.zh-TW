@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: 設定 Microsoft 365 裝置管理的藍圖。
-ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918963"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051457"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 的裝置管理藍圖
 
@@ -54,10 +54,10 @@ Microsoft 365 for enterprise 包含的功能可協助您管理組織內的裝置
  
 ## <a name="identity-and-device-access-recommendations"></a>身分識別與裝置存取建議
 
-Microsoft 會針對[身分識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)提供一組建議，以確保安全且具有生產力的員工。 如需裝置存取，請使用下列文章中的建議和設定：
+Microsoft 會針對[身分識別與裝置存取](../security/defender-365-security/microsoft-365-policies-configurations.md)提供一組建議，以確保安全且具有生產力的員工。 如需裝置存取，請使用下列文章中的建議和設定：
 
-- [必要條件](../security/office-365-security/identity-access-prerequisites.md)
-- [一般身分識別與裝置存取原則](../security/office-365-security/identity-access-policies.md)
+- [必要條件](../security/defender-365-security/identity-access-prerequisites.md)
+- [一般身分識別與裝置存取原則](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 如何對 Microsoft 365 進行裝置管理
 

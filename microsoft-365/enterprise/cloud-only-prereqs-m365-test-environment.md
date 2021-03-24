@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境，以使用僅限雲端驗證的先決條件測試身分識別與裝置存取。
-ms.openlocfilehash: 3e5a9ef1f610bf3dc6d23c9e584e179fb8ab9ca9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 537718eb0efcffc296162a4458158efcbdad9986
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905137"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051541"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中僅限雲端的先決條件
 
 *此測試實驗室指南僅可用於適用于企業測試環境的 Microsoft 365。*
 
-身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組建議的設定和條件式存取原則，可保護對與 Azure Active Directory (azure AD) 整合的所有服務的存取。
+身分[識別與裝置存取](../security/defender-365-security/microsoft-365-policies-configurations.md)設定是一組建議的設定和條件式存取原則，可保護對與 Azure Active Directory (azure AD) 整合的所有服務的存取。
 
-本文說明如何設定符合[僅限雲端先決條件組態](../security/office-365-security/identity-access-prerequisites.md#prerequisites)需求、用於身分識別與裝置存取的 Microsoft 365 測試環境。
+本文說明如何設定符合[僅限雲端先決條件組態](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)需求、用於身分識別與裝置存取的 Microsoft 365 測試環境。
 
 設定此測試環境有八個階段：
 
@@ -109,11 +109,11 @@ ms.locfileid: "50905137"
   Get-CsOAuthConfiguration
   ```
 
-結果是一種測試環境，可滿足身分識別與裝置存取之 [僅雲端](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 必要條件設定的需求。 
+結果是一種測試環境，可滿足身分識別與裝置存取之 [僅雲端](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) 必要條件設定的需求。 
 
 ## <a name="next-step"></a>下一步
 
-使用[一般身分識別與裝置存取原則](../security/office-365-security/identity-access-policies.md)來設定根據先決條件建置的原則，並保護身分識別與裝置。
+使用[一般身分識別與裝置存取原則](../security/defender-365-security/identity-access-policies.md)來設定根據先決條件建置的原則，並保護身分識別與裝置。
 
 ## <a name="see-also"></a>請參閱
 

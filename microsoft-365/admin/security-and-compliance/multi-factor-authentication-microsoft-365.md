@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 深入瞭解 Microsoft 365 中的多重要素驗證。
-ms.openlocfilehash: e1635e48e3948425a6d91f80fd07d50c474b73d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 080251efa7d7d3bda6ad89e95960e43dd38d076d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914507"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050663"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 的多重要素驗證
 
@@ -127,7 +127,7 @@ ms.locfileid: "50914507"
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-使用 Azure AD Identity Protection，您可以建立額外的條件式存取原則，以在登 [入風險為中低或高時，要求進行 MFA](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)。
+使用 Azure AD Identity Protection，您可以建立額外的條件式存取原則，以在登 [入風險為中低或高時，要求進行 MFA](../../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)。
 
 您可以使用 Azure AD 身分識別保護和以風險為基礎的條件式存取原則：
 

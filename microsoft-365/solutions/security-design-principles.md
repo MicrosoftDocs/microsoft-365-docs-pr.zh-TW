@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b6696d15d728e6b66be5e54a9a3c372564c9f187
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7cd9098766024093a0b9fa2d6e95131bf13d09df
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920853"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052479"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>您可以 sail 的安全性障礙（一個架構師的視點）
 
@@ -49,7 +49,7 @@ Sail 超過這些障礙的客戶都有良好的作業與控管與安全性與風
 
 接下來，採用零信任架構方法。 這始于建立現代化的身分識別安全性周邊性。 設計一種安全性架構，不論是在部署或雲端上的每次存取嘗試，都是在驗證之前（「永不相信，永遠驗證」）視為不受信任。 這種設計方法不僅能提高安全性和生產力，也可讓使用者從任何裝置類型的任何地方運作。 Microsoft 365 隨附的完善的雲端控制項，可協助您保護使用者的身分識別，同時根據使用者風險層級控制寶貴資源的存取。
 
-如需建議的設定，請參閱 [Identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md)configuration。
+如需建議的設定，請參閱 [Identity and device access](../security/defender-365-security/microsoft-365-policies-configurations.md)configuration。
 
 ## <a name="transition-security-controls-to-the-cloud"></a>將安全性控制轉換為雲端
 
@@ -75,7 +75,7 @@ Sail 超過這些障礙的客戶都有良好的作業與控管與安全性與風
 
 為了協助您清除這些障礙，Microsoft 已策劃數個資源，以協助您採取一種安全性原則與實施方式。
 
-|資源   |其他資訊  |
+|資源   |詳細資訊  |
 |---------|---------|
 |[安全性團隊支援在家工作的最常見工作](../security/top-security-tasks-for-remote-work.md)      | 如果您覺得您突然支援大多數工作中的工作力，這篇文章可協助您快速提升安全性。 它包含根據您的授權方案的最大建議工作。    |
 |[Microsoft 365 商務決策人的安全性](../security/Microsoft-365-security-for-bdm.md)    | 當您有時間進行更全面的計畫時，本文會包含跨越 Microsoft 365 的建議，並依攻擊面劃分優先順序。 它甚至附帶一個試算表，您可以用來排序授權和區域 (例如身分識別、威脅防護和監控) 。  |

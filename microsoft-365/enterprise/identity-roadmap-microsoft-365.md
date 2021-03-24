@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Microsoft 365 的身分識別藍圖。
-ms.openlocfilehash: c79b7babbfbd97a13979de1ed23052ac572d9ded
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 456841bfc15d143409535140f2b5a63ee72e99d2
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446284"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051303"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的身分識別藍圖
 
@@ -41,7 +41,7 @@ ms.locfileid: "48446284"
 
 您也可以 [下載此標牌](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) ，並以 letter、法律或卡片 (11 x 17) 格式來列印。
 
-## <a name="plan"></a>規劃
+## <a name="plan"></a>方案
 
 若要規劃您的身分識別實現：
 
@@ -60,10 +60,10 @@ ms.locfileid: "48446284"
 
 ### <a name="identity-and-device-access-recommendations"></a>身分識別與裝置存取建議
 
-為了協助確保安全且有效的工作力，Microsoft 會為身分 [識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)提供一組建議。 若為身分識別，請使用下列文章中的建議與設定：
+為了協助確保安全且有效的工作力，Microsoft 會為身分 [識別與裝置存取](../security/defender-365-security/microsoft-365-policies-configurations.md)提供一組建議。 若為身分識別，請使用下列文章中的建議與設定：
 
-- [必要條件](../security/office-365-security/identity-access-prerequisites.md)
-- [一般身分識別與裝置存取原則](../security/office-365-security/identity-access-policies.md)
+- [必要條件](../security/defender-365-security/identity-access-prerequisites.md)
+- [一般身分識別與裝置存取原則](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="manage"></a>管理
 
@@ -73,7 +73,7 @@ ms.locfileid: "48446284"
 - [授權](assign-licenses-to-user-accounts.md)
 - [密碼](manage-microsoft-365-passwords.md)
 - [群組](manage-microsoft-365-groups.md)
-- [管理](manage-microsoft-365-identity-governance.md)
+- [Governance](manage-microsoft-365-identity-governance.md)
 - [目錄同步處理](view-directory-synchronization-status.md)
 
 ## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Microsoft 對 Microsoft 365 的身分識別方式
