@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: b88e32ccfc0f82749ede2b0919001e9c29f7f7be
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a6b04bcce7d0fe505173a807fbc2d4105831419c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906015"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051885"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -64,7 +64,7 @@ ms.locfileid: "50906015"
 
 除了使用預設角色以外，您可以建立新的角色群組，並將 [敏感度標籤系統管理員] 或 [組織組態] 角色新增至此群組。 唯讀角色請使用 [敏感度標籤讀取器]。 
 
-如需將使用者新增至預設角色或建立您自己的角色群組的指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需將使用者新增至預設角色或建立您自己的角色群組的指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有建立及設定敏感度標籤及其標籤原則時，才需要這些權限。 您不需要在應用程式或服務中套用這些標籤。 如果與敏感度標籤相關的特定設定需要其他權限，則這些權限會列在個別的文件指示中。
 

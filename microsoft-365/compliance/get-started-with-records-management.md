@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要適用于 Microsoft 365 的記錄管理解決方案，以管理法律、企業或法規責任的高價值內容，但不確定要從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: a757cabf13e85731bd16ccd84f1eea3dbe7e432a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ab5eaa494094dcbf0723f426fcbd644901c22bb
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906005"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051895"
 ---
 # <a name="get-started-with-records-management"></a>開始使用記錄管理
 
@@ -53,9 +53,9 @@ ms.locfileid: "50906005"
 
 對於唯讀角色，可以建立新的角色群組，並將 **[僅檢視記錄管理]** 角色添加到此群組。 
 
-如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
+如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 
-如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有在建立、設定、和套用聲明記錄及管理處置的保留標籤時，才需要求這些權限。 設定這些保留標籤的人員毋須存取內容。
 

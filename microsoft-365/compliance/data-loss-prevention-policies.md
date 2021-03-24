@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何識別、監控和自動保護 Office 365 中貴組織中的敏感資訊。
-ms.openlocfilehash: 7d526d5eeb74f0d31f375974824e7a76344bcd76
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9ef369786aa4b79dbdec551c9750500f9c092906
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925807"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052071"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -534,7 +534,7 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
 
 您也可以透過授予 [僅限檢視 DLP 合規性管理] 角色，來建立擁有 DLP 原則和 DLP 報告的僅限檢視權限角色群組。
 
-如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 需要這些權限才能建立及套用 DLP 原則。 原則強制執行不需要內容的存取權。
   

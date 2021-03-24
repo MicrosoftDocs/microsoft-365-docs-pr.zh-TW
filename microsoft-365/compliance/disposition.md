@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 無論您使用處置檢閱或根據設定自動刪除內容，監視和管理內容的處置。
-ms.openlocfilehash: d2c2e4e469efe16277f34a902f6720dc2b39e908
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d9786b5e93801153e168784d51e37a00ee1822bc
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918039"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051925"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -44,7 +44,7 @@ ms.locfileid: "50918039"
 
 此外，要在處置程序中檢視項目的內容，請將使用者新增到以下兩個角色群組：**[內容總管內容檢視器]** 和 **[內容總管清單檢視器]**。 如果使用者沒有這些角色群組的存取權限，他們仍然可以選取處置檢閱動作來完成處置檢閲，但不能從合規性中心檢視項目的內容。
 
-如需設定這些權限的相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需設定這些權限的相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 ### <a name="enable-auditing"></a>啟用稽核
 
