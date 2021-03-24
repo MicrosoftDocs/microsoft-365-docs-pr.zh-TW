@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何使用具有安全性隔離的小組進行重要專案，以開發新的產品和服務套件。
-ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: d5ab2808251ff6a53f8975ea868431691d3301e2
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656064"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051003"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 的最大機密專案的隔離團隊
 
@@ -40,7 +40,7 @@ Contoso IT 人員使用具有專案2的 [安全性隔離的團隊](secure-teams-
 
 ## <a name="step-1-created-a-private-team"></a>步驟1：建立私人團隊
 
-首先，為了保護小組的底層 SharePoint 網站的存取權，Contoso IT 管理員設定建議的 [SharePoint 存取原則](../security/office-365-security/sharepoint-file-access-policies.md)。
+首先，為了保護小組的底層 SharePoint 網站的存取權，Contoso IT 管理員設定建議的 [SharePoint 存取原則](../security/defender-365-security/sharepoint-file-access-policies.md)。
 
 接下來，Contoso IT 管理員建立一個名為 Project 2 的新私人團隊，並新增專案2個人的使用者帳戶為成員。 他們也會設定小組，使只有專案2小組擁有者可以建立專用通道。
 
@@ -64,7 +64,7 @@ Contoso admins 建立一個名為「 **專案 2** 」的新敏感度標籤：
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>步驟3：設定基礎 SharePoint 網站
 
-首先，為了保護小組的底層 SharePoint 網站的存取權，Contoso IT 管理員設定建議的 [SharePoint 存取原則](../security/office-365-security/sharepoint-file-access-policies.md)。
+首先，為了保護小組的底層 SharePoint 網站的存取權，Contoso IT 管理員設定建議的 [SharePoint 存取原則](../security/defender-365-security/sharepoint-file-access-policies.md)。
 
 接下來，他們為網站設定其他許可權設定：
 
@@ -100,7 +100,7 @@ Contoso 安全性人員會在必要課程中訓練專案2小組成員：
 
 由於小組的共同作業環境和 Microsoft 365 的安全性功能，Project 2X 的詳細資料會在專案期間內保密。 Contoso 宣告其計畫，而且正在將新產品及服務推出給其客戶和投資者的愉悅感，以及其競爭者的 chagrin。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 在您的組織中[部署具有安全性隔離的團隊](secure-teams-security-isolation.md)。
 

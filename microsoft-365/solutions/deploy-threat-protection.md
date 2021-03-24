@@ -16,18 +16,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 3156e6bc7715db9847b295add7850dcbd0ff6642
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b5dba3aa5db6a687a195f866d1cabe1138f9aa66
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918403"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050895"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 部署威脅防護功能
 
 [惡意](/windows/security/threat-protection/intelligence/understanding-malware)代碼和複雜的 cyberattacks （例如 [fileless 威脅](/windows/security/threat-protection/intelligence/fileless-threats)）都是常見的時機。 企業必須以有效的 IT 安全性功能來保護自己及其客戶。 Cyberattacks 可能會造成組織的主要問題，包括從失去信任到財務 woes、業務威脅停機等等。 防護威脅很重要，但決定組織的時間、精力和資源的位置，可能會有很大的難度。 
 
-Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「自動化」和「機器學習」功能可減少安全性小組的負載，以確保處理適當的專案。 Microsoft 安全性解決方案的強項是以 trillions 在我們每天處理的 [智慧安全性圖形](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中的信號來建立。 Microsoft 365 的安全性解決方案包括 [microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md)，此解決方案會透過您的電子郵件、資料、裝置和身分識別，以繪製您組織的高級威脅圖片。
+Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「自動化」和「機器學習」功能可減少安全性小組的負載，以確保處理適當的專案。 Microsoft 安全性解決方案的強項是以 trillions 在我們每天處理的 [智慧安全性圖形](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中的信號來建立。 Microsoft 365 的安全性解決方案包括 [microsoft 365 Defender](../security/defender/microsoft-365-defender.md)，此解決方案會透過您的電子郵件、資料、裝置和身分識別，以繪製您組織的高級威脅圖片。
 
 
 觀看這段影片以獲取部署程序概觀。
@@ -58,7 +58,7 @@ Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「
 |適用於身分識別的 Microsoft Defender     |  利用內部部署 Active Directory 網域服務 (AD DS) 信號來識別、偵測和調查您組織中的高級威脅、已遭破壞的身分識別和惡意有問必答行動的雲端式安全性解決方案。 著重于 Microsoft Defender for Identity，因為它會保護您的內部部署和雲端基礎結構、沒有相依性或必要條件，而且可以提供立即的安全性效益。 | 
 |適用於 Office 365 的 Microsoft Defender     | 保護您的組織免受電子郵件訊息、連結 (URLs) 和共同作業工具帶來的惡意威脅。 針對惡意程式碼、網路釣魚、欺騙及其他攻擊類型的保護。 建議您先設定 Microsoft Defender for Office 365，因為變更控制、從委任系統移轉設定，以及其他考慮可能需要較長時間進行部署。 <br><br>附注：請務必設定所有 Office 365 訂閱中所包含的威脅防護功能 (Exchange Online Protection) 。       |
 |適用於端點的 Microsoft Defender    | Endpoint protection 平臺，可協助避免、偵測、調查和回應高級威脅。  Defender for Endpoint 可能需要一些時間才能部署，但設定可與其他功能同時進行。   |
-|Microsoft 雲端 App 安全性     |   雲端存取安全性經紀人，用於探索、調查和控管。 您可以及早啟用 Microsoft Cloud App Security，以開始收集資料和洞察力。 在您的 SaaS 應用程式中實施資訊和其他有針對性的保護，需要規劃，而且可能需要更多時間。       | 
+|Microsoft 雲端應用程式安全性     |   雲端存取安全性經紀人，用於探索、調查和控管。 您可以及早啟用 Microsoft Cloud App Security，以開始收集資料和洞察力。 在您的 SaaS 應用程式中實施資訊和其他有針對性的保護，需要規劃，而且可能需要更多時間。       | 
 
 > [!TIP]
 > 具有多個安全小組的組織可以並存執行這些功能。

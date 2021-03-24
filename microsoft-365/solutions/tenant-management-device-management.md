@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 為 Microsoft 365 承租人的裝置和應用程式管理部署正確的選項。
-ms.openlocfilehash: 994ab7d21ae70307fa78e1f7249d39ac314a7358
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0351f6be3f191e1a131da5b0b665a205a0abda8c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904609"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050991"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>步驟 5. 適用于企業承租人的 Microsoft 365 裝置和應用程式管理
 
@@ -48,7 +48,7 @@ Microsoft 365 for enterprise 包含一些功能，可協助您管理裝置，並
 
 ## <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
-Microsoft 提供一組身分 [識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md) 設定，以確保安全且生產力的工作力。 這些設定包括使用：
+Microsoft 提供一組身分 [識別與裝置存取](../security/defender-365-security/microsoft-365-policies-configurations.md) 設定，以確保安全且生產力的工作力。 這些設定包括使用：
 
 - Azure AD 條件式存取原則
 - Microsoft Intune 裝置合規性和應用程式保護原則
@@ -61,8 +61,8 @@ Microsoft 提供一組身分 [識別與裝置存取](../security/office-365-secu
 
 如需裝置存取和應用程式管理，請使用下列文章中的設定：
 
-- [必要條件](../security/office-365-security/identity-access-prerequisites.md)
-- [一般身分識別與裝置存取原則](../security/office-365-security/identity-access-policies.md)
+- [必要條件](../security/defender-365-security/identity-access-prerequisites.md)
+- [一般身分識別與裝置存取原則](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="results-of-step-5"></a>步驟 5 的結果
 

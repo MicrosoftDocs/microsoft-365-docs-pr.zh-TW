@@ -1,0 +1,290 @@
+- name: Microsoft 365 安全性
+  href: index.yml
+  expanded: true
+  items:
+    - name: Microsoft 安全分數
+      items:
+        - name: 安全分數概觀
+          href: microsoft-secure-score.md
+        - name: 評估您的安全性狀態
+          href: microsoft-secure-score-improvement-actions.md
+        - name: 追蹤您的分數記錄並達成目標
+          href: microsoft-secure-score-history-metrics-trends.md
+        - name: 即將推出的功能
+          href: microsoft-secure-score-whats-coming.md
+        - name: 新增功能
+          href: microsoft-secure-score-whats-new.md
+    - name: Microsoft 365 Defender
+      items:
+        - name: 概觀
+          items:
+            - name: 什麼是 Microsoft 365 Defender?
+              href: microsoft-365-defender.md
+            - name: Microsoft 365 Defender 的新功能
+              href: whats-new.md
+            - name: 預覽功能
+              href: preview.md
+            - name: Microsoft 365 安全性中心
+              href: overview-security-center.md
+            - name: 針對問題進行疑難排解
+              href: troubleshoot.md
+            - name: 產業測試
+              href: top-scoring-industry-tests.md
+        - name: 規劃
+          items:
+            - name: 必要條件
+              href: prerequisites.md
+            - name: 資料安全性及隱私權
+              href: data-privacy.md
+            - name: Microsoft 安全性入口網站
+              href: portals.md
+        - name: 評估功能
+          items:
+            - name: 試用實驗室簡介
+              href: m365d-evaluation.md
+            - name: 準備
+              href: prepare-m365d-eval.md
+            - name: 設定
+              href: setup-m365deval.md
+            - name: 設定和上線
+              href: config-m365d-eval.md
+            - name: 開始使用 Microsoft 365 Defender 服務
+              href: 'https://docs.microsoft.com/microsoft-365/security/defender/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
+            - name: 產生測試提醒
+              href: generate-test-alert.md
+        - name: 部署
+          items:
+            - name: 開啟 Microsoft 威脅防護
+              href: m365d-enable.md
+            - name: 在生產環境中執行試驗專案
+              items:
+                - name: 試驗概覽
+                  href: m365d-pilot.md
+                - name: 方案
+                  href: m365d-pilot-plan.md
+                - name: 準備
+                  href: prepare-m365d-eval.md
+                - name: 類比攻擊
+                  href: m365d-pilot-simulate.md
+                - name: 結束和摘要
+                  href: m365d-pilot-close.md
+            - name: 部署支援服務
+              href: deploy-supported-services.md
+        - name: 操作指南
+          items:
+            - name: 建立試用實驗室或試驗環境
+              href: m365d-evaluation.md
+            - name: 執行試驗劇本
+              href: m365d-pilot.md
+            - name: 開啟常見問題集
+              href: m365d-enable-faq.md
+            - name: 事件
+              items:
+                - name: 概觀
+                  href: incidents-overview.md
+                - name: 設定事件優先順序
+                  href: incident-queue.md
+                - name: 調查事件
+                  items:
+                    - name: 調查事件
+                      href: investigate-incidents.md
+                    - name: 管理事件
+                      href: manage-incidents.md
+                - name: 取得電子郵件通知
+                  href: get-incident-notifications.md
+            - name: 自動調查及回應
+              items:
+                - name: 自動調查及回應概觀
+                  href: m365d-autoir.md
+                - name: 設定自動調查及回應功能
+                  href: m365d-configure-auto-investigation-response.md
+                - name: 補救動作
+                  href: m365d-remediation-actions.md
+                - name: 造訪重要訊息中心
+                  href: m365d-action-center.md
+                - name: 檢閱或拒絕擱置的補救動作
+                  href: m365d-autoir-actions.md
+                - name: 檢視自動調查的詳細資料和結果
+                  href: m365d-autoir-results.md
+                - name: 回報誤判/漏報
+                  href: m365d-autoir-report-false-positives-negatives.md
+            - name: 進階搜捕
+              items:
+                - name: 進階搜捕概觀
+                  href: advanced-hunting-overview.md
+                - name: 瞭解、訓練與取得範例
+                  items:
+                    - name: 瞭解查詢語言
+                      href: advanced-hunting-query-language.md
+                    - name: 取得專家訓練
+                      href: advanced-hunting-expert-training.md
+                    - name: 使用共用查詢
+                      href: advanced-hunting-shared-queries.md
+                    - name: 跨裝置、電子郵件、應用程式和身分識別搜捕
+                      href: advanced-hunting-query-emails-devices.md
+                    - name: 搜捕勒索軟體
+                      href: advanced-hunting-find-ransomware.md
+                    - name: 自適用於端點的 Defender 轉換
+                      href: advanced-hunting-migrate-from-mde.md
+                - name: 使用查詢結果工作
+                  href: advanced-hunting-query-results.md
+                - name: 對查詢結果採取動作
+                  href: advanced-hunting-take-action.md
+                - name: 開始搜補
+                  href: advanced-hunting-go-hunt.md
+                - name: 優化查詢並處理錯誤
+                  items:
+                    - name: 套用查詢最佳做法
+                      href: advanced-hunting-best-practices.md
+                    - name: 處理錯誤
+                      href: advanced-hunting-errors.md
+                    - name: 配額和使用量參數
+                      href: advanced-hunting-limits.md
+                - name: 延伸資料涵蓋範圍
+                  href: advanced-hunting-extend-data.md
+                - name: 資料結構描述
+                  items:
+                    - name: 了解結構描述
+                      href: advanced-hunting-schema-tables.md
+                    - name: AADSignInEventsBeta
+                      href: advanced-hunting-aadsignineventsbeta-table.md
+                    - name: AADSpnSignInEventsBeta
+                      href: advanced-hunting-aadspnsignineventsbeta-table.md
+                    - name: 架構命名變更
+                      href: advanced-hunting-schema-changes.md
+                    - name: AlertEvidence
+                      href: advanced-hunting-alertevidence-table.md
+                    - name: AlertInfo
+                      href: advanced-hunting-alertinfo-table.md
+                    - name: AppFileEvents
+                      href: advanced-hunting-appfileevents-table.md
+                    - name: CloudAppEvents
+                      href: advanced-hunting-cloudappevents-table.md
+                    - name: DeviceEvents
+                      href: advanced-hunting-deviceevents-table.md
+                    - name: DeviceFileCertificateInfo
+                      href: advanced-hunting-devicefilecertificateinfo-table.md
+                    - name: DeviceFileEvents
+                      href: advanced-hunting-devicefileevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceInfo
+                      href: advanced-hunting-deviceinfo-table.md
+                    - name: DeviceLogonEvents
+                      href: advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceNetworkInfo
+                      href: advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: advanced-hunting-deviceregistryevents-table.md
+                    - name: DeviceTvmSecureConfigurationAssessment
+                      href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
+                    - name: DeviceTvmSecureConfigurationAssessmentKB
+                      href: advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                    - name: DeviceTvmSoftwareInventoryVulnerabilities
+                      href: advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
+                    - name: DeviceTvmSoftwareVulnerabilitiesKB
+                      href: advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
+                    - name: EmailAttachmentInfo
+                      href: advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailEvents
+                      href: advanced-hunting-emailevents-table.md
+                    - name: EmailPostDeliveryEvents
+                      href: advanced-hunting-emailpostdeliveryevents-table.md
+                    - name: EmailUrlInfo
+                      href: advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityDirectoryEvents
+                      href: advanced-hunting-identitydirectoryevents-table.md
+                    - name: IdentityInfo
+                      href: advanced-hunting-identityinfo-table.md
+                    - name: IdentityLogonEvents
+                      href: advanced-hunting-identitylogonevents-table.md
+                    - name: IdentityQueryEvents
+                      href: advanced-hunting-identityqueryevents-table.md
+                - name: 函式
+                  items:
+                    - name: AssignedIPAddresses()
+                      href: advanced-hunting-assignedipaddresses-function.md
+                    - name: DeviceFromIP()
+                      href: advanced-hunting-devicefromip-function.md
+                    - name: FileProfile()
+                      href: advanced-hunting-fileprofile-function.md
+                - name: 自訂偵測
+                  items:
+                    - name: 自訂偵測概觀
+                      href: custom-detections-overview.md
+                    - name: 建立與管理偵測規則
+                      href: custom-detection-rules.md
+            - name: 報告
+              items:
+                - name: 監視及檢視報告
+                  href: overview-security-center.md
+                - name: 身分識別監視與報告
+                  href: overview-security-center.md
+                - name: 資料監視與報告
+                  href: overview-security-center.md
+                - name: 裝置監視與報告
+                  href: overview-security-center.md
+                - name: 應用程式監視與報告
+                  href: overview-security-center.md
+        - name: 參考
+          items:
+            - name: 權限與設定
+              items:
+                - name: 管理存取權
+                  href: m365d-permissions.md
+                - name: 設定時區
+                  href: m365d-time-zone.md
+                - name: 檢視裝置設定檔
+                  href: device-profile.md
+                - name: 提供意見反應
+                  href: feedback.md
+                - name: 建立 ServiceNow 票證和工作
+                  items:
+                    - name: ServiceNow 整合概述
+                      href: tickets.md
+            - name: Microsoft 365 Defender API (預覽版)
+              items:
+                - name: Microsoft 365 Defender API 概觀 (預覽版)
+                  href: api-overview.md
+                - name: 開始使用 Microsoft 365 Defender API (預覽版)
+                  items:
+                    - name: Microsoft 365 Defender API 授權和使用條款
+                      href: api-terms.md
+                    - name: 存取 Microsoft 365 Defender API
+                      href: api-access.md
+                    - name: Hello World 範例
+                      href: api-hello-world.md
+                    - name: 使用應用程式內容取得存取權
+                      href: api-create-app-web.md
+                    - name: 使用使用者內文取得存取權
+                      href: api-create-app-user-context.md
+                    - name: 取得夥伴應用程式存取權
+                      href: api-partner-access.md
+                    - name: 其他 API 資源
+                      href: api-articles.md
+                - name: Microsoft 365 Defender API 與結構描述 (預覽版)
+                  items:
+                    - name: 支援的 Microsoft 365 Defender API
+                      href: api-supported.md
+                    - name: 常見的 REST API 錯誤碼
+                      href: api-error-codes.md
+                    - name: 進階搜捕 API
+                      href: api-advanced-hunting.md
+                    - name: 事件 API
+                      items:
+                        - name: 事件方法和屬性
+                          href: api-incident.md
+                        - name: 列出事件
+                          href: api-list-incidents.md
+                        - name: 更新事件
+                          href: api-update-incidents.md
+            - name: 新的 Microsoft 365 安全性中心
+              href: overview-security-center.md
+    - name: 參考
+      items:
+        - name: 瞭解最新的攻擊技術
+          href: latest-attack-campaigns.md

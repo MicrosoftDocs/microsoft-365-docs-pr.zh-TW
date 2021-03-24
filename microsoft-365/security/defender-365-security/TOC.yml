@@ -1,0 +1,67 @@
+- name: Microsoft 365 安全性
+  href: index.yml
+  expanded: true
+  items:
+    - name: Office 365 安全性
+      href: index.yml
+      items:
+        - name: 概觀
+          items:
+            - name: 安全性藍圖
+              href: security-roadmap.md
+            - name: Exchange Online Protection
+              items:
+                - name: Exchange Online Protection 概觀
+                  href: exchange-online-protection-overview.md
+                - name: EOP 功能
+                  href: eop-features.md
+                - name: 獨立版 EOP 中的權限
+                  href: feature-permissions-in-eop.md
+                - name: 獨立版 EOP 中的 Exchange 系統管理中心
+                  href: exchange-admin-center-in-exchange-online-protection-eop.md
+                - name: 在獨立版 EOP 中管理收件者
+                  href: manage-recipients-in-eop.md
+                - name: EOP 中的郵件流程
+                  href: mail-flow-in-eop.md
+                - name: 隔離
+                  href: quarantine-email-messages.md
+                - name: 獨立版 EOP 中的稽核報告
+                  href: auditing-reports-in-eop.md
+            - name: 適用於 Office 365 的 Defender
+              href: defender-for-office-365.md
+            - name: 適用於 Office 365 的 Defender 的新增功能
+              href: whats-new-in-defender-for-office-365.md
+            - name: SharePoint、OneDrive 和 Microsoft Teams 的適用於 Office 365 的 Defender
+              href: mdo-for-spo-odb-and-teams.md
+            - name: 新的 Microsoft 365 安全性中心
+              href: threat-explorer.md
+            - name: AIR 概觀
+              href: office-365-air.md
+            - name: 自動調查及回應的運作方式
+              href: automated-investigation-response-office.md
+            - name: 補救動作
+              href: air-remediation-actions.md
+            - name: 反惡意程式碼保護
+              href: anti-malware-protection.md
+            - name: 反垃圾郵件保護
+              href: anti-spam-protection.md
+            - name: 防網路釣魚保護
+              href: anti-phishing-protection.md
+            - name: 反詐騙保護
+              href: anti-spoofing-protection.md
+            - name: 適用於 Office 365 的 Defender 中的安全附件
+              href: safe-attachments.md
+            - name: 適用於 Office 365 的 Defender 中的安全連結
+              href: safe-links.md
+            - name: 輸出垃圾郵件保護
+              href: outbound-spam-controls.md
+            - name: '[安全性儀表板] 概觀'
+              href: security-dashboard.md
+            - name: 威脅調查及回應的運作方式
+              href: office-365-ti.md
+            - name: Office 365 安全性事件回應
+              href: office365-security-incident-response-overview.md
+            - name: 安全性與合規性中心內的郵件流程深入解析
+              href: mail-flow-insights-v2.md
+            - name: 適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南
+              href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
