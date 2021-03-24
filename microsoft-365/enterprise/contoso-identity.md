@@ -14,74 +14,74 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用身分識別即服務 (IDaaS)，為其員工提供雲端式驗證，為其合作夥伴和客戶提供同盟驗證。
-ms.openlocfilehash: accd60f6699e7ebf04963213128d1ca1ffc8f7fe
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f3c8746345683652ce601400ae7297e96fff2ee3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911069"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051517"
 ---
-# <a name="identity-for-the-contoso-corporation"></a><span data-ttu-id="ed124-103">Contoso Corporation 的身分識別</span><span class="sxs-lookup"><span data-stu-id="ed124-103">Identity for the Contoso Corporation</span></span>
+# <a name="identity-for-the-contoso-corporation"></a><span data-ttu-id="58539-103">Contoso Corporation 的身分識別</span><span class="sxs-lookup"><span data-stu-id="58539-103">Identity for the Contoso Corporation</span></span>
 
-<span data-ttu-id="ed124-104">Microsoft 透過 Azure Active Directory (Azure AD) ，以服務 (IDaaS) 所有雲端產品。</span><span class="sxs-lookup"><span data-stu-id="ed124-104">Microsoft provides Identity as a Service (IDaaS) across its cloud offerings through Azure Active Directory (Azure AD).</span></span> <span data-ttu-id="ed124-105">為了採用 Microsoft 365 for enterprise，Contoso IDaaS 解決方案必須使用內部部署身分識別提供者，並包含與其現有信任的協力廠商身分識別提供者的同盟驗證。</span><span class="sxs-lookup"><span data-stu-id="ed124-105">To adopt Microsoft 365 for enterprise, the Contoso IDaaS solution had to use their on-premises identity provider and include federated authentication with their existing trusted, third-party identity providers.</span></span>
+<span data-ttu-id="58539-104">Microsoft 透過 Azure Active Directory (Azure AD) ，以服務 (IDaaS) 所有雲端產品。</span><span class="sxs-lookup"><span data-stu-id="58539-104">Microsoft provides Identity as a Service (IDaaS) across its cloud offerings through Azure Active Directory (Azure AD).</span></span> <span data-ttu-id="58539-105">為了採用 Microsoft 365 for enterprise，Contoso IDaaS 解決方案必須使用內部部署身分識別提供者，並包含與其現有信任的協力廠商身分識別提供者的同盟驗證。</span><span class="sxs-lookup"><span data-stu-id="58539-105">To adopt Microsoft 365 for enterprise, the Contoso IDaaS solution had to use their on-premises identity provider and include federated authentication with their existing trusted, third-party identity providers.</span></span>
 
-## <a name="the-contoso-active-directory-domain-services-forest"></a><span data-ttu-id="ed124-106">Contoso Active Directory 網域服務樹系</span><span class="sxs-lookup"><span data-stu-id="ed124-106">The Contoso Active Directory Domain Services forest</span></span>
+## <a name="the-contoso-active-directory-domain-services-forest"></a><span data-ttu-id="58539-106">Contoso Active Directory 網域服務樹系</span><span class="sxs-lookup"><span data-stu-id="58539-106">The Contoso Active Directory Domain Services forest</span></span>
 
-<span data-ttu-id="ed124-107">Contoso 會使用單一 Active Directory 網域服務，將 contoso com 的單一 Active Directory 網域 (服務) 樹系 \. 與7個子域搭配使用，一個用於世界各地區的一個。</span><span class="sxs-lookup"><span data-stu-id="ed124-107">Contoso uses a single Active Directory Domain Services (AD DS) forest for contoso\.com with seven subdomains, one for each region of the world.</span></span> <span data-ttu-id="ed124-108">總部、地區中心辦公室和衛星辦公室包含用於本機驗證與授權的網域控制站。</span><span class="sxs-lookup"><span data-stu-id="ed124-108">The headquarters, regional hub offices, and satellite offices contain domain controllers for local authentication and authorization.</span></span>
+<span data-ttu-id="58539-107">Contoso 會使用單一 Active Directory 網域服務，將 contoso com 的單一 Active Directory 網域 (服務) 樹系 \. 與7個子域搭配使用，一個用於世界各地區的一個。</span><span class="sxs-lookup"><span data-stu-id="58539-107">Contoso uses a single Active Directory Domain Services (AD DS) forest for contoso\.com with seven subdomains, one for each region of the world.</span></span> <span data-ttu-id="58539-108">總部、地區中心辦公室和衛星辦公室包含用於本機驗證與授權的網域控制站。</span><span class="sxs-lookup"><span data-stu-id="58539-108">The headquarters, regional hub offices, and satellite offices contain domain controllers for local authentication and authorization.</span></span>
 
-<span data-ttu-id="ed124-109">以下是 Contoso 樹系，具有地區性網域，包含區域中樞的不同部分。</span><span class="sxs-lookup"><span data-stu-id="ed124-109">Here's the Contoso forest with regional domains for the different parts of the world that contain regional hubs.</span></span>
+<span data-ttu-id="58539-109">以下是 Contoso 樹系，具有地區性網域，包含區域中樞的不同部分。</span><span class="sxs-lookup"><span data-stu-id="58539-109">Here's the Contoso forest with regional domains for the different parts of the world that contain regional hubs.</span></span>
 
 ![Contoso 的樹系和世界各地的網域](../media/contoso-identity/contoso-identity-fig1.png)
  
-<span data-ttu-id="ed124-111">Contoso 決定使用 contoso com 樹系中的帳戶和群組 \. ，以進行 Microsoft 365 工作負載和服務的驗證和授權。</span><span class="sxs-lookup"><span data-stu-id="ed124-111">Contoso decided to use the accounts and groups in the contoso\.com forest for authentication and authorization for its Microsoft 365 workloads and services.</span></span>
+<span data-ttu-id="58539-111">Contoso 決定使用 contoso com 樹系中的帳戶和群組 \. ，以進行 Microsoft 365 工作負載和服務的驗證和授權。</span><span class="sxs-lookup"><span data-stu-id="58539-111">Contoso decided to use the accounts and groups in the contoso\.com forest for authentication and authorization for its Microsoft 365 workloads and services.</span></span>
 
-## <a name="the-contoso-federated-authentication-infrastructure"></a><span data-ttu-id="ed124-112">Contoso 同盟驗證基礎結構</span><span class="sxs-lookup"><span data-stu-id="ed124-112">The Contoso federated authentication infrastructure</span></span>
+## <a name="the-contoso-federated-authentication-infrastructure"></a><span data-ttu-id="58539-112">Contoso 同盟驗證基礎結構</span><span class="sxs-lookup"><span data-stu-id="58539-112">The Contoso federated authentication infrastructure</span></span>
 
-<span data-ttu-id="ed124-113">Contoso 允許︰</span><span class="sxs-lookup"><span data-stu-id="ed124-113">Contoso allows:</span></span>
+<span data-ttu-id="58539-113">Contoso 允許︰</span><span class="sxs-lookup"><span data-stu-id="58539-113">Contoso allows:</span></span>
 
-- <span data-ttu-id="ed124-114">客戶可以使用其 Microsoft、Facebook 或 Google 郵件帳戶登入公司的公開網站。</span><span class="sxs-lookup"><span data-stu-id="ed124-114">Customers to use their Microsoft, Facebook, or Google Mail accounts to sign in to the company's public web site.</span></span>
-- <span data-ttu-id="ed124-115">廠商和協力廠商使用其 LinkedIn、Salesforce 或 Google 郵件帳戶登入公司的外部網路。</span><span class="sxs-lookup"><span data-stu-id="ed124-115">Vendors and partners to use their LinkedIn, Salesforce, or Google Mail accounts to sign in to the company's partner extranet.</span></span>
+- <span data-ttu-id="58539-114">客戶可以使用其 Microsoft、Facebook 或 Google 郵件帳戶登入公司的公開網站。</span><span class="sxs-lookup"><span data-stu-id="58539-114">Customers to use their Microsoft, Facebook, or Google Mail accounts to sign in to the company's public web site.</span></span>
+- <span data-ttu-id="58539-115">廠商和協力廠商使用其 LinkedIn、Salesforce 或 Google 郵件帳戶登入公司的外部網路。</span><span class="sxs-lookup"><span data-stu-id="58539-115">Vendors and partners to use their LinkedIn, Salesforce, or Google Mail accounts to sign in to the company's partner extranet.</span></span>
 
-<span data-ttu-id="ed124-116">以下是包含公用網站、第三個外部網路，以及一組 Active Directory Federation Services (AD FS) 伺服器的 Contoso DMZ。</span><span class="sxs-lookup"><span data-stu-id="ed124-116">Here's the Contoso DMZ containing a public web site, a partner extranet, and a set of Active Directory Federation Services (AD FS) servers.</span></span> <span data-ttu-id="ed124-117">DMZ 會連線到包含客戶、合作夥伴和網際網路服務的網際網路。</span><span class="sxs-lookup"><span data-stu-id="ed124-117">The DMZ is connected to the internet that contains customers, partners, and internet services.</span></span>
+<span data-ttu-id="58539-116">以下是包含公用網站、第三個外部網路，以及一組 Active Directory Federation Services (AD FS) 伺服器的 Contoso DMZ。</span><span class="sxs-lookup"><span data-stu-id="58539-116">Here's the Contoso DMZ containing a public web site, a partner extranet, and a set of Active Directory Federation Services (AD FS) servers.</span></span> <span data-ttu-id="58539-117">DMZ 會連線到包含客戶、合作夥伴和網際網路服務的網際網路。</span><span class="sxs-lookup"><span data-stu-id="58539-117">The DMZ is connected to the internet that contains customers, partners, and internet services.</span></span>
 
 ![Contoso 支援客戶與合作夥伴的同盟驗證](../media/contoso-identity/contoso-identity-fig2.png)
  
-<span data-ttu-id="ed124-119">在 DMZ 中的 AD FS 伺服器，可協助其身分識別提供者驗證客戶認證，以存取公用網站和夥伴驗證，以存取合作夥伴外部網路。</span><span class="sxs-lookup"><span data-stu-id="ed124-119">AD FS servers in the DMZ facilitate authentication of customer credentials by their identity providers for access to the public web site and partner credentials for access to the partner extranet.</span></span>
+<span data-ttu-id="58539-119">在 DMZ 中的 AD FS 伺服器，可協助其身分識別提供者驗證客戶認證，以存取公用網站和夥伴驗證，以存取合作夥伴外部網路。</span><span class="sxs-lookup"><span data-stu-id="58539-119">AD FS servers in the DMZ facilitate authentication of customer credentials by their identity providers for access to the public web site and partner credentials for access to the partner extranet.</span></span>
 
-<span data-ttu-id="ed124-120">Contoso 決定保留這種基礎結構，並將其專用於客戶及夥伴驗證。</span><span class="sxs-lookup"><span data-stu-id="ed124-120">Contoso decided to keep this infrastructure and dedicate it to customer and partner authentication.</span></span> <span data-ttu-id="ed124-121">Contoso 身分識別架構師正在調查此基礎結構轉換到 Azure AD [B2B](/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](/azure/active-directory-b2c/solution-articles) 的解決方案。</span><span class="sxs-lookup"><span data-stu-id="ed124-121">Contoso identity architects are investigating the conversion of this infrastructure to Azure AD [B2B](/azure/active-directory/b2b/hybrid-organizations) and [B2C](/azure/active-directory-b2c/solution-articles) solutions.</span></span>
+<span data-ttu-id="58539-120">Contoso 決定保留這種基礎結構，並將其專用於客戶及夥伴驗證。</span><span class="sxs-lookup"><span data-stu-id="58539-120">Contoso decided to keep this infrastructure and dedicate it to customer and partner authentication.</span></span> <span data-ttu-id="58539-121">Contoso 身分識別架構師正在調查此基礎結構轉換到 Azure AD [B2B](/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](/azure/active-directory-b2c/solution-articles) 的解決方案。</span><span class="sxs-lookup"><span data-stu-id="58539-121">Contoso identity architects are investigating the conversion of this infrastructure to Azure AD [B2B](/azure/active-directory/b2b/hybrid-organizations) and [B2C](/azure/active-directory-b2c/solution-articles) solutions.</span></span>
 
-## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a><span data-ttu-id="ed124-122">用於雲端式驗證的混合式身分識別和密碼雜湊同步</span><span class="sxs-lookup"><span data-stu-id="ed124-122">Hybrid identity with password hash synchronization for cloud-based authentication</span></span>
+## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a><span data-ttu-id="58539-122">用於雲端式驗證的混合式身分識別和密碼雜湊同步</span><span class="sxs-lookup"><span data-stu-id="58539-122">Hybrid identity with password hash synchronization for cloud-based authentication</span></span>
 
-<span data-ttu-id="ed124-123">Contoso 想要將其內部部署 AD DS 樹系用於 Microsoft 365 雲端資源的驗證。</span><span class="sxs-lookup"><span data-stu-id="ed124-123">Contoso wanted to use its on-premises AD DS forest for authentication to Microsoft 365 cloud resources.</span></span> <span data-ttu-id="ed124-124">它決定使用密碼雜湊同步處理 (PHS) 。</span><span class="sxs-lookup"><span data-stu-id="ed124-124">It decided to use password hash synchronization (PHS).</span></span>
+<span data-ttu-id="58539-123">Contoso 想要將其內部部署 AD DS 樹系用於 Microsoft 365 雲端資源的驗證。</span><span class="sxs-lookup"><span data-stu-id="58539-123">Contoso wanted to use its on-premises AD DS forest for authentication to Microsoft 365 cloud resources.</span></span> <span data-ttu-id="58539-124">它決定使用密碼雜湊同步處理 (PHS) 。</span><span class="sxs-lookup"><span data-stu-id="58539-124">It decided to use password hash synchronization (PHS).</span></span>
 
-<span data-ttu-id="ed124-125">PHS 會同步處理內部部署 AD DS 樹系與其 Microsoft 365 for enterprise 訂閱的 Azure AD 租使用者，並複製使用者和群組帳戶，以及散列版本的使用者帳戶密碼。</span><span class="sxs-lookup"><span data-stu-id="ed124-125">PHS synchronizes the on-premises AD DS forest with the Azure AD tenant of their Microsoft 365 for enterprise subscription, copying user and group accounts and a hashed version of user account passwords.</span></span>
+<span data-ttu-id="58539-125">PHS 會同步處理內部部署 AD DS 樹系與其 Microsoft 365 for enterprise 訂閱的 Azure AD 租使用者，並複製使用者和群組帳戶，以及散列版本的使用者帳戶密碼。</span><span class="sxs-lookup"><span data-stu-id="58539-125">PHS synchronizes the on-premises AD DS forest with the Azure AD tenant of their Microsoft 365 for enterprise subscription, copying user and group accounts and a hashed version of user account passwords.</span></span>
 
-<span data-ttu-id="ed124-126">為了進行目錄同步處理，Contoso 已在其巴黎 datacenter 中的伺服器上部署 Azure AD Connect 工具。</span><span class="sxs-lookup"><span data-stu-id="ed124-126">To do directory synchronization, Contoso deployed the Azure AD Connect tool on a server in its Paris datacenter.</span></span>
+<span data-ttu-id="58539-126">為了進行目錄同步處理，Contoso 已在其巴黎 datacenter 中的伺服器上部署 Azure AD Connect 工具。</span><span class="sxs-lookup"><span data-stu-id="58539-126">To do directory synchronization, Contoso deployed the Azure AD Connect tool on a server in its Paris datacenter.</span></span>
 
-<span data-ttu-id="ed124-127">以下是執行 Azure AD Connect 的伺服器輪詢 Contoso AD DS 樹系的變更，然後與 Azure AD 租使用者同步處理這些變更。</span><span class="sxs-lookup"><span data-stu-id="ed124-127">Here's the server running Azure AD Connect polling the Contoso AD DS forest for changes and then synchronizing those changes with the Azure AD tenant.</span></span>
+<span data-ttu-id="58539-127">以下是執行 Azure AD Connect 的伺服器輪詢 Contoso AD DS 樹系的變更，然後與 Azure AD 租使用者同步處理這些變更。</span><span class="sxs-lookup"><span data-stu-id="58539-127">Here's the server running Azure AD Connect polling the Contoso AD DS forest for changes and then synchronizing those changes with the Azure AD tenant.</span></span>
 
 ![Contoso PHS 目錄同步處理基礎結構](../media/contoso-identity/contoso-identity-fig4.png)
  
-## <a name="conditional-access-policies-for-identity-and-device-access"></a><span data-ttu-id="ed124-129">身分識別和裝置存取的條件式存取原則</span><span class="sxs-lookup"><span data-stu-id="ed124-129">Conditional Access policies for identity and device access</span></span>
+## <a name="conditional-access-policies-for-identity-and-device-access"></a><span data-ttu-id="58539-129">身分識別和裝置存取的條件式存取原則</span><span class="sxs-lookup"><span data-stu-id="58539-129">Conditional Access policies for identity and device access</span></span>
 
-<span data-ttu-id="ed124-130">Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件式存取原則](../security/office-365-security/identity-access-policies.md)：</span><span class="sxs-lookup"><span data-stu-id="ed124-130">Contoso created a set of Azure AD and Intune [Conditional Access policies](../security/office-365-security/identity-access-policies.md) for three protection levels:</span></span>
+<span data-ttu-id="58539-130">Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件式存取原則](../security/defender-365-security/identity-access-policies.md)：</span><span class="sxs-lookup"><span data-stu-id="58539-130">Contoso created a set of Azure AD and Intune [Conditional Access policies](../security/defender-365-security/identity-access-policies.md) for three protection levels:</span></span>
 
-- <span data-ttu-id="ed124-131">*基準* 保護適用于所有使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="ed124-131">*Baseline* protections apply to all user accounts.</span></span>
-- <span data-ttu-id="ed124-132">*機密* 保護適用于資深領導人和高層人員。</span><span class="sxs-lookup"><span data-stu-id="ed124-132">*Sensitive* protections apply to senior leadership and executive staff.</span></span>
-- <span data-ttu-id="ed124-133">「*高管制* 防護」適用于財務、法律和研究部門中具有高管制資料存取權的特定使用者。</span><span class="sxs-lookup"><span data-stu-id="ed124-133">*Highly Regulated* protections apply to specific users in the finance, legal, and research departments who have access to highly regulated data.</span></span>
+- <span data-ttu-id="58539-131">*基準* 保護適用于所有使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="58539-131">*Baseline* protections apply to all user accounts.</span></span>
+- <span data-ttu-id="58539-132">*機密* 保護適用于資深領導人和高層人員。</span><span class="sxs-lookup"><span data-stu-id="58539-132">*Sensitive* protections apply to senior leadership and executive staff.</span></span>
+- <span data-ttu-id="58539-133">「*高管制* 防護」適用于財務、法律和研究部門中具有高管制資料存取權的特定使用者。</span><span class="sxs-lookup"><span data-stu-id="58539-133">*Highly Regulated* protections apply to specific users in the finance, legal, and research departments who have access to highly regulated data.</span></span>
 
-<span data-ttu-id="ed124-134">以下是 Contoso 身分識別和裝置條件式存取原則的結果集合。</span><span class="sxs-lookup"><span data-stu-id="ed124-134">Here's the resulting set of Contoso identity and device Conditional Access policies.</span></span>
+<span data-ttu-id="58539-134">以下是 Contoso 身分識別和裝置條件式存取原則的結果集合。</span><span class="sxs-lookup"><span data-stu-id="58539-134">Here's the resulting set of Contoso identity and device Conditional Access policies.</span></span>
 
 ![Contoso 的身分識別及裝置條件式存取原則](../media/contoso-identity/contoso-identity-fig5.png)
  
-## <a name="next-step"></a><span data-ttu-id="ed124-136">下一步</span><span class="sxs-lookup"><span data-stu-id="ed124-136">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="58539-136">下一步</span><span class="sxs-lookup"><span data-stu-id="58539-136">Next step</span></span>
 
-<span data-ttu-id="ed124-137">瞭解 Contoso 如何使用其 Microsoft 端點 Configuration Manager 基礎結構，在其整個組織中 [部署及保留目前的 Windows 10 企業版](contoso-win10.md) 。</span><span class="sxs-lookup"><span data-stu-id="ed124-137">Learn how Contoso uses its Microsoft Endpoint Configuration Manager infrastructure to [deploy and keep current Windows 10 Enterprise](contoso-win10.md) across its organization.</span></span>
+<span data-ttu-id="58539-137">瞭解 Contoso 如何使用其 Microsoft 端點 Configuration Manager 基礎結構，在其整個組織中 [部署及保留目前的 Windows 10 企業版](contoso-win10.md) 。</span><span class="sxs-lookup"><span data-stu-id="58539-137">Learn how Contoso uses its Microsoft Endpoint Configuration Manager infrastructure to [deploy and keep current Windows 10 Enterprise](contoso-win10.md) across its organization.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ed124-138">另請參閱</span><span class="sxs-lookup"><span data-stu-id="ed124-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="58539-138">另請參閱</span><span class="sxs-lookup"><span data-stu-id="58539-138">See also</span></span>
 
-[<span data-ttu-id="ed124-139">Microsoft 365 的身分識別藍圖</span><span class="sxs-lookup"><span data-stu-id="ed124-139">Identity roadmap for Microsoft 365</span></span>](identity-roadmap-microsoft-365.md)
+[<span data-ttu-id="58539-139">Microsoft 365 的身分識別藍圖</span><span class="sxs-lookup"><span data-stu-id="58539-139">Identity roadmap for Microsoft 365</span></span>](identity-roadmap-microsoft-365.md)
 
-[<span data-ttu-id="ed124-140">Microsoft 365 企業版概觀</span><span class="sxs-lookup"><span data-stu-id="ed124-140">Microsoft 365 for enterprise overview</span></span>](microsoft-365-overview.md)
+[<span data-ttu-id="58539-140">Microsoft 365 企業版概觀</span><span class="sxs-lookup"><span data-stu-id="58539-140">Microsoft 365 for enterprise overview</span></span>](microsoft-365-overview.md)
 
-[<span data-ttu-id="ed124-141">測試實驗室指南</span><span class="sxs-lookup"><span data-stu-id="ed124-141">Test lab guides</span></span>](m365-enterprise-test-lab-guides.md)
+[<span data-ttu-id="58539-141">測試實驗室指南</span><span class="sxs-lookup"><span data-stu-id="58539-141">Test lab guides</span></span>](m365-enterprise-test-lab-guides.md)

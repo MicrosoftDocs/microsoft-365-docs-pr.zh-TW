@@ -1,0 +1,73 @@
+---
+title: 從其他保護服務切換至 EOP
+f1.keywords:
+- NOCSH
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date: ''
+audience: ITPro
+ms.topic: how-to
+localization_priority: Normal
+ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您將瞭解如何從內部部署電子郵件清潔裝置或雲端式保護服務切換至 Exchange Online Protection (EOP) 。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e1a5df0b11c258ebe633868bb5abca5b20552a33
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51057840"
+---
+# <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a><span data-ttu-id="2b1fa-103">從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP</span><span class="sxs-lookup"><span data-stu-id="2b1fa-103">Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+<span data-ttu-id="2b1fa-104">**適用於**</span><span class="sxs-lookup"><span data-stu-id="2b1fa-104">**Applies to**</span></span>
+- [<span data-ttu-id="2b1fa-105">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="2b1fa-105">Exchange Online Protection</span></span>](exchange-online-protection-overview.md)
+- [<span data-ttu-id="2b1fa-106">適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2</span><span class="sxs-lookup"><span data-stu-id="2b1fa-106">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](defender-for-office-365.md)
+- [<span data-ttu-id="2b1fa-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2b1fa-107">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
+
+ <span data-ttu-id="2b1fa-p101">本主題的目的在於協助您了解從內部部署電子郵件檢疫裝置或雲端保護服務切換到 Exchange Online Protection (EOP) 的程序，然後提供給您開始使用的說明資源。有許多垃圾郵件篩選解決方案，但在大多數情況下，切換到 EOP 的程序類型很類似。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-p101">The purpose of this topic is to help you understand the process for switching to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service, and then to provide you with help resources to get started. There are many spam-filtering solutions, but the process for switching to EOP is similar in most cases.</span></span>
+
+<span data-ttu-id="2b1fa-110">如果您是初次使用 EOP 而且想要在決定切換前閱讀其功能概觀，請從[Exchange Online Protection 概觀](exchange-online-protection-overview.md)主題開始。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-110">If you are new to EOP and you want to read an overview of its features before you decide to switch, start with the [Exchange Online Protection overview](exchange-online-protection-overview.md) topic.</span></span>
+
+<span data-ttu-id="2b1fa-p102">在您切換到 EOP 之前，請思考要在雲端 (使用 Exchange Online)、內部部署或在混合案例中託管 EOP 保護的信箱 (「混合」的意思是，有些信箱裝載於內部部署，有些信箱裝載於 Exchange Online)。每個託管案例：雲端、內部部署和混合式部署都可行，但設定步驟有所不同。下列考量可協助您選擇適當的部署：</span><span class="sxs-lookup"><span data-stu-id="2b1fa-p102">Before you switch to EOP, it's important to think about whether you want to host your EOP-protected mailboxes in the cloud, with Exchange Online, on-premises, or in a hybrid scenario. (Hybrid means that you have some mailboxes hosted on-premises and another portion hosted with Exchange Online.) Each of these hosting scenarios: cloud, on-premises, and hybrid, is possible, but the setup steps can vary. Here are a few considerations to help you choose the appropriate deployment:</span></span>
+
+- <span data-ttu-id="2b1fa-114">**內部部署信箱的 EOP 保護**：如果有想要使用的現有郵件託管基礎結構，或有將信箱保留在內部部署的業務需求，而且想要使用 EOP 做為您雲端電子郵件的保護，則適合使用此案例。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-114">**EOP protection with on-premises mailboxes**: This scenario is appropriate if you have existing mail-hosting infrastructure you want to use, or you have business requirements to keep mailboxes on-premises, and you want to use EOP as your cloud-based email protection.</span></span> <span data-ttu-id="2b1fa-115">[切換至 Exchange Online](#switch-to-eop-standalone) 詳細說明此案例。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-115">[Switch to EOP standalone](#switch-to-eop-standalone) describes this scenario in more detail.</span></span>
+
+- <span data-ttu-id="2b1fa-116">**Exchange Online 信箱的 EOP 保護**：如果您想要 EOP 保護而所有信箱都裝載在雲端，則適合使用此案例。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-116">**EOP protection with Exchange Online mailboxes**: This scenario is appropriate if you want EOP protection and all of your mailboxes hosted in the cloud.</span></span> <span data-ttu-id="2b1fa-117">這可協助您降低複雜度，因為您不需維護內部部署的郵件伺服器。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-117">It can help you reduce complexity, because you don't have to maintain on-premises messaging servers.</span></span> <span data-ttu-id="2b1fa-118">[切換至 Exchange Online](#switch-to-exchange-online) 說明此案例。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-118">[Switch to Exchange Online](#switch-to-exchange-online) describes this scenario.</span></span>
+
+- <span data-ttu-id="2b1fa-119">**混合信箱的 EOP 保護**：也許您想要雲端信箱，但您必須將某些使用者的信箱保留在內部部署。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-119">**EOP protection with hybrid mailboxes**: Perhaps you want cloud mailboxes, but you need to keep mailboxes for some users on-premises.</span></span> <span data-ttu-id="2b1fa-120">如果您希望有些信箱裝載於內部部署，而有些信箱裝載於 Exchange Online，則選擇此案例。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-120">Choose this scenario if you want some mailboxes hosted on-premises and another portion hosted with Exchange Online.</span></span> <span data-ttu-id="2b1fa-121">[切換至混合解決方案](#switch-to-a-hybrid-solution)說明此案例。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-121">[Switch to a hybrid solution](#switch-to-a-hybrid-solution) describes this scenario.</span></span>
+
+## <a name="switch-to-eop-standalone"></a><span data-ttu-id="2b1fa-122">切換至獨立式 EOP</span><span class="sxs-lookup"><span data-stu-id="2b1fa-122">Switch to EOP standalone</span></span>
+
+<span data-ttu-id="2b1fa-p106">如果您目前將信箱託管於內部部署，而且使用內部部署保護裝置或雲端郵件保護服務，即可切換至 EOP，充分利用其保護功能和可用性。若要在獨立環境中設定 EOP (這表示您將信箱託管於內部部署並使用 EOP 提供郵件保護)，可以遵循[設定 EOP 服務](set-up-your-eop-service.md)中簡述的步驟。本主題檢視設定 EOP 保護的步驟，包含註冊、新增網域以及設定郵件流程與連接器。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-p106">If you currently host your mailboxes on premises and use an on-premises protection appliance or a cloud messaging-protection service, you can switch to EOP to take advantage of its protection features and availability. To set up EOP in a standalone scenario, which means you host your mailboxes on premises and use EOP to provide email protection, you can follow the steps outlined in [Set up your EOP service](set-up-your-eop-service.md). The topic outlines the steps for setting up EOP protection, which include sign up, adding your domain, and setting up mail flow with connectors.</span></span>
+
+## <a name="switch-to-exchange-online"></a><span data-ttu-id="2b1fa-126">切換至 Exchange Online</span><span class="sxs-lookup"><span data-stu-id="2b1fa-126">Switch to Exchange Online</span></span>
+
+<span data-ttu-id="2b1fa-127">您的內部部署信箱可能具有內部部署的裝置，而且您想要跳到 Exchange Online 雲端託管信箱，並 EOP protection，以利用 Microsoft 365 雲端郵件和保護功能。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-127">Perhaps you have on-premises mailboxes protected by an on-premises appliance, and you want to jump to Exchange Online cloud-hosted mailboxes and EOP protection to take advantage of Microsoft 365 cloud messaging and protection features.</span></span> <span data-ttu-id="2b1fa-128">若要開始，您可以註冊 Microsoft 365 並新增您的網域。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-128">To get started, you can sign up for Microsoft 365 and add your domain.</span></span> <span data-ttu-id="2b1fa-129">此案例不需要您設定連接器，因為沒有任何路由傳送至內部部署信箱。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-129">This scenario doesn't require you to set up connectors, because there isn't any routing to on-premises mailboxes.</span></span> <span data-ttu-id="2b1fa-130">請從 [Microsoft 365 獲得最新的高級功能](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) ，以進行註冊，並熟悉其功能。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-130">Begin at [Get the latest advanced features with Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) to sign-up and get familiar with its features.</span></span>
+
+<span data-ttu-id="2b1fa-131">在 Microsoft 365 安裝程式中，您將建立雲端式信箱使用者。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-131">During the Microsoft 365 setup process, you will create your cloud-based mailbox users.</span></span>
+
+## <a name="switch-to-a-hybrid-solution"></a><span data-ttu-id="2b1fa-132">切換至混合解決方案</span><span class="sxs-lookup"><span data-stu-id="2b1fa-132">Switch to a hybrid solution</span></span>
+
+<span data-ttu-id="2b1fa-p108">您可能因為業務需求或法規考量，只想要將部分信箱移至雲端。當您部署混合案例時，可根據業務需求將信箱移至雲端。遷移至具有 EOP 保護的混合案例，比移至全雲端案例更加複雜，但 Microsoft 提供了完整的混合支援和豐富的資源，讓您能更加輕鬆地移至混合案例。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-p108">You may want to move only a portion of your mailboxes to the cloud because of business requirements or regulatory considerations. When you deploy a hybrid scenario, you can move mailboxes to the cloud as your business requirements dictate. Migrating to a hybrid scenario with EOP protection is more complicated than moving to an all-cloud scenario, but Microsoft provides full hybrid support and ample resources to make the move to hybrid easier.</span></span>
+
+<span data-ttu-id="2b1fa-136">如果考慮採用混合式部署，[Exchange Server 混合式部署](/exchange/exchange-hybrid)是最佳起點。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-136">The best place to start, if you are considering a hybrid deployment, is [Exchange Server hybrid deployments](/exchange/exchange-hybrid).</span></span> <span data-ttu-id="2b1fa-137">此外，還有幾個不同且重要的方式，可讓您在混合案例中路由郵件。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-137">Additionally, there are a few different ways you can route mail in a hybrid scenario that are important to understand.</span></span> <span data-ttu-id="2b1fa-138">[在 Exchange 混合式部署傳輸路由](/exchange/transport-routing)說明每種類型，以便您根據業務需求來選擇最佳路由案例。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-138">[Transport Routing in Exchange hybrid deployments](/exchange/transport-routing) explains each type, so you can choose the best routing scenario, based on your business requirements.</span></span>
+
+## <a name="migration-planning"></a><span data-ttu-id="2b1fa-139">移轉規劃</span><span class="sxs-lookup"><span data-stu-id="2b1fa-139">Migration planning</span></span>
+
+<span data-ttu-id="2b1fa-140">當您決定切換至 EOP 時，請務必提供下列方面的特殊考量：</span><span class="sxs-lookup"><span data-stu-id="2b1fa-140">When you decide to switch to EOP, make sure you give special consideration to the following areas:</span></span>
+
+- <span data-ttu-id="2b1fa-141">**自訂篩選規則**：如果您有自訂篩選或商務原則規則來找出特定的垃圾郵件，我們建議您在遷移規則之前，先嘗試使用預設設定 EOP 一段時間。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-141">**Custom Filtering Rules**: If you have custom filtering or business-policy rules to catch specific spam, we recommend that you try EOP with the default settings for a period of time before you migrate your rules.</span></span> <span data-ttu-id="2b1fa-142">EOP 提供具有預設設定的企業級垃圾郵件保護，結果可能是您不需要將部分規則遷移至 EOP。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-142">EOP offers enterprise-level spam protection with the default settings, it may turn out that you don't need to migrate some of your rules to EOP.</span></span> <span data-ttu-id="2b1fa-143">當然，如果現有的規則會強制執行特定自訂業務原則，即可建立這些原則。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-143">Of course, if you have rules in place that enforce specific custom business policies, you can create those.</span></span> <span data-ttu-id="2b1fa-144">[Exchange Online Protection 中的郵件流程規則（傳輸規則）](mail-flow-rules-transport-rules-0.md)提供在 EOP 建立郵件流程規則的詳細指示。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-144">[Mail flow rules (transport rules) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) provides detailed instructions for creating mail flow rules in EOP.</span></span>
+
+- <span data-ttu-id="2b1fa-145">**IP 允許清單和 IP 封鎖清單**：如果您有每一使用者的允許清單和封鎖清單，請在設定過程中留出一些時間將這些清單複製到 EOP。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-145">**IP allow lists and IP block lists**: If you have per-user allow lists and block lists, allow some time to copy the lists to EOP as part of your setup process.</span></span> <span data-ttu-id="2b1fa-146">如需 IP 允許清單和 IP 封鎖清單的詳細資訊，請參閱 [Configure the connection filter policy](configure-the-connection-filter-policy.md)。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-146">For more information about the IP Allow List and IP Block List, see [Configure the connection filter policy](configure-the-connection-filter-policy.md).</span></span>
+
+- <span data-ttu-id="2b1fa-147">**安全通訊**：如果合作夥伴要求郵件必須加密，建議您在 Exchange 系統管理中心設定此案例。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-147">**Secure Communication**: If you have a partner that requires encrypted messaging, we recommend that you set this up in the Exchange admin center.</span></span> <span data-ttu-id="2b1fa-148">如要設定此案例，請查閱[設定連接器以保護與合作夥伴間的郵件流程安全](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-148">To configure this scenario, see [Set up connectors for secure mail flow with a partner organization](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).</span></span>
+
+> [!TIP]
+> <span data-ttu-id="2b1fa-149">當您從內部部署裝置切換至 EOP 時，有可能將裝置或伺服器保留在原地，以執行業務規則檢查。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-149">When you switch from an on-premises appliance to EOP, it is possible to leave your appliance or a server in place that performs business rule checks.</span></span> <span data-ttu-id="2b1fa-150">例如，若裝置對輸出郵件執行自訂篩選，而且希望繼續這麼做，您可以設定 EOP，在郵件路由傳送至網際網路之前，直接傳送至此裝置進行額外篩選。</span><span class="sxs-lookup"><span data-stu-id="2b1fa-150">For instance, if your appliance performs custom filtering on outbound mail, and you want it to continue doing so, you can configure EOP to send mail directly to the appliance for additional filtering, before it is routed to the internet.</span></span>
