@@ -1,0 +1,104 @@
+### YamlMime:Landing
+title: Microsoft Defender for Endpoint 檔
+summary: Microsoft Defender for Endpoint 提供預防性保護、入侵後偵測、自動調查和回應。
+metadata:
+  title: Microsoft Defender for Endpoint 檔
+  description: '深入瞭解 Microsoft Defender for Endpoint，並最大化內建的安全性功能來保護裝置、偵測惡意活動，並修正威脅 # Required;搜尋結果中顯示的文章描述。 < 160 個字元。'
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  author: mjcaparas
+  ms.author: macapara
+  ms.date: 02/5/2021
+  localization_priority: Priority
+  ms.openlocfilehash: a183f4d09b596f6dbecf2dc0636ff516b1b26eb6
+  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 03/23/2021
+  ms.locfileid: "51060123"
+landingContent:
+- title: 適用於端點的 Microsoft Defender
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什麼是適用於端點的 Microsoft Defender？
+      url: microsoft-defender-advanced-threat-protection.md
+  - linkListType: whats-new
+    links:
+    - text: Microsoft Defender for Endpoint 中的新功能
+      url: whats-new-in-microsoft-defender-atp.md
+  - linkListType: video
+    links:
+    - text: 概述影片
+      url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
+- title: 評估部署服務的 &
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 評估 Microsoft Defender for Endpoint
+      url: evaluation-lab.md
+    - text: 規劃您的部署
+      url: deployment-strategy.md
+  - linkListType: deploy
+    links:
+    - text: 部署指南
+      url: deployment-phases.md
+    - text: 上架支援的裝置
+      url: onboard-configure.md
+  - linkListType: how-to-guide
+    links:
+    - text: 移轉指南
+      url: migration-guides.md
+  - linkListType: video
+    links:
+    - text: 上架影片
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr
+- title: 安全性作業
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 端點偵測及回應
+      url: overview-endpoint-detection-response.md
+    - text: Behavioural 封鎖和包含專案
+      url: behavioral-blocking-containment.md
+    - text: '自動調查和回應 (AIR) '
+      url: automated-investigations.md
+    - text: 進階搜捕
+      url: advanced-hunting-overview.md
+    - text: Microsoft 威脅專家
+      url: microsoft-threat-experts.md
+    - text: 威脅分析
+      url: threat-analytics.md
+- title: 在其他平臺上使用 Microsoft Defender for Endpoint
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mac 版端點的 Microsoft Defender
+      url: microsoft-defender-endpoint-mac.md
+    - text: 用於 iOS 的 Microsoft Defender for Endpoint
+      url: microsoft-defender-endpoint-ios.md
+    - text: 適用于 Linux 的 Microsoft Defender for Endpoint
+      url: microsoft-defender-endpoint-linux.md
+    - text: 適用于 Android 的 Microsoft Defender Endpoint
+      url: microsoft-defender-endpoint-android.md
+- title: 參考資料
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 管理和 APIs
+      url: management-apis.md
+    - text: 合作夥伴整合
+      url: partner-integration.md
+- title: 安全性管理
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 威脅 & 弱點管理
+      url: next-gen-threat-and-vuln-mgt.md
+    - text: 受攻擊面縮小
+      url: overview-attack-surface-reduction.md
+    - text: 下一代保護
+      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
