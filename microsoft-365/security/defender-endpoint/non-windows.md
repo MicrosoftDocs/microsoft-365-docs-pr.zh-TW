@@ -1,0 +1,78 @@
+---
+title: Microsoft Defender 用於非 Windows 平臺的 ATP
+description: 深入瞭解非 Windows 平臺的 Microsoft Defender ATP 功能
+keywords: 非 windows，mac，macos，linux，android
+search.product: eADQiWindows 10XVcnh
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: 6d9d376f63f35fb86641a7f805860eb448d7460d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51056904"
+---
+# <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a><span data-ttu-id="70e3a-104">非 Windows 平臺的 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="70e3a-104">Microsoft Defender for Endpoint for non-Windows platforms</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+<span data-ttu-id="70e3a-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="70e3a-105">**Applies to:**</span></span>
+- [<span data-ttu-id="70e3a-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="70e3a-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [<span data-ttu-id="70e3a-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="70e3a-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+
+> <span data-ttu-id="70e3a-108">想要體驗 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="70e3a-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="70e3a-109">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="70e3a-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+<span data-ttu-id="70e3a-110">Microsoft 已在伺服器上擴充其業界領先的端點安全性功能，使其超越 Windows 和 Windows Server，以 macOS、Linux、Android 及不久 iOS。</span><span class="sxs-lookup"><span data-stu-id="70e3a-110">Microsoft has been on a journey to extend its industry leading endpoint security capabilities beyond Windows and Windows Server to macOS, Linux, Android, and soon iOS.</span></span>
+
+<span data-ttu-id="70e3a-111">組織面臨不同平臺和裝置的威脅。</span><span class="sxs-lookup"><span data-stu-id="70e3a-111">Organizations face threats across a variety of platforms and devices.</span></span> <span data-ttu-id="70e3a-112">我們的小組致力於建立並非 microsoft *的* 安全性解決方案，但 *在* microsoft 也致力於讓客戶能夠保護和保護其異構環境。</span><span class="sxs-lookup"><span data-stu-id="70e3a-112">Our teams have committed to building security solutions not just *for* Microsoft, but also *from* Microsoft to enable our customers to protect and secure their heterogenous environments.</span></span> <span data-ttu-id="70e3a-113">我們正在聆聽客戶的意見反應，並與我們的客戶密切合作，以建立符合其需求的解決方案。</span><span class="sxs-lookup"><span data-stu-id="70e3a-113">We're listening to customer feedback and partnering closely with our customers to build solutions that meet their needs.</span></span>
+
+<span data-ttu-id="70e3a-114">透過 Microsoft Defender for Endpoint，客戶可以在 Microsoft Defender Security Center 中的所有威脅和警示，以及跨 Windows 和非 Windows 平臺的整合視圖中受益，讓他們能夠更快速地評估及回應威脅。</span><span class="sxs-lookup"><span data-stu-id="70e3a-114">With Microsoft Defender for Endpoint, customers benefit from a unified view of all threats and alerts in the Microsoft Defender Security Center, across Windows and non-Windows platforms, enabling them to get a full picture of what's happening in their environment, which empowers them to more quickly assess and respond to threats.</span></span>
+
+## <a name="microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="70e3a-115">macOS 上的 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="70e3a-115">Microsoft Defender for Endpoint on macOS</span></span> 
+
+<span data-ttu-id="70e3a-116">MacOS 上的 Microsoft Defender for Endpoint 提供了防毒軟體和端點偵測和回應， (EDR) 的最新發行版本本 macOS 功能。</span><span class="sxs-lookup"><span data-stu-id="70e3a-116">Microsoft Defender for Endpoint on macOS offers antivirus and endpoint detection and response (EDR) capabilities for the three latest released versions of macOS.</span></span> <span data-ttu-id="70e3a-117">客戶可以透過 Microsoft 端點管理員和 Jamf 來部署及管理解決方案。</span><span class="sxs-lookup"><span data-stu-id="70e3a-117">Customers can deploy and manage the solution through Microsoft Endpoint Manager and Jamf.</span></span> <span data-ttu-id="70e3a-118">就像 macOS 的 Microsoft Office 應用程式一樣，Microsoft 自動更新是用來管理 Mac 更新上的 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="70e3a-118">Just like with Microsoft Office applications on macOS, Microsoft Auto Update is used to manage Microsoft Defender for Endpoint on Mac updates.</span></span> <span data-ttu-id="70e3a-119">如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。</span><span class="sxs-lookup"><span data-stu-id="70e3a-119">For information about the key features and benefits, read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS).</span></span>
+
+<span data-ttu-id="70e3a-120">如需如何開始的詳細資訊，請造訪 macOS [檔](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)上的 Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="70e3a-120">For more details on how to get started, visit the Defender for Endpoint on macOS [documentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac).</span></span>
+
+## <a name="microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="70e3a-121">Linux 上的 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="70e3a-121">Microsoft Defender for Endpoint on Linux</span></span>
+
+<span data-ttu-id="70e3a-122">Linux 上的 Microsoft Defender for Endpoint 會為 Linux 伺服器提供預防性 (AV) 功能。</span><span class="sxs-lookup"><span data-stu-id="70e3a-122">Microsoft Defender for Endpoint on Linux offers preventative (AV) capabilities for Linux servers.</span></span> <span data-ttu-id="70e3a-123">這包括完整的命令列體驗，可供您設定及管理代理程式、起始掃描及管理威脅。</span><span class="sxs-lookup"><span data-stu-id="70e3a-123">This includes a full command line experience to configure and manage the agent, initiate scans, and manage threats.</span></span> <span data-ttu-id="70e3a-124">我們支援最常見的六個舊版 Linux 伺服器發行： RHEL 7.2 +、CentOS Linux 7.2 +、Ubuntu 16 LTS 或更高 LTS、SLES 12 +、Debian 9 + 及 Oracle Linux 7.2。</span><span class="sxs-lookup"><span data-stu-id="70e3a-124">We support recent versions of the six most common Linux Server distributions: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS, or higher LTS, SLES 12+, Debian 9+, and Oracle Linux 7.2.</span></span> <span data-ttu-id="70e3a-125">您可以使用 Puppet、Ansible 或使用現有的 Linux 設定管理工具，部署及設定 Linux 上的 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="70e3a-125">Microsoft Defender for Endpoint on Linux can be deployed and configured using Puppet, Ansible, or using your existing Linux configuration management tool.</span></span> <span data-ttu-id="70e3a-126">如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)。</span><span class="sxs-lookup"><span data-stu-id="70e3a-126">For information about the key features and benefits, read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux).</span></span>
+
+<span data-ttu-id="70e3a-127">如需如何開始的詳細資訊，請流覽 Linux [檔](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux)上的 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="70e3a-127">For more details on how to get started, visit the Microsoft Defender for Endpoint on Linux [documentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux).</span></span>
+
+## <a name="microsoft-defender-for-endpoint-on-android"></a><span data-ttu-id="70e3a-128">Android 上的 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="70e3a-128">Microsoft Defender for Endpoint on Android</span></span>
+
+<span data-ttu-id="70e3a-129">Android 上的 Microsoft Defender for Endpoint 是我們的行動威脅防護解決方案，適用于執行 Android 6.0 和更高版本的裝置。</span><span class="sxs-lookup"><span data-stu-id="70e3a-129">Microsoft Defender for Endpoint on Android is our mobile threat defense solution for devices running Android 6.0 and higher.</span></span> <span data-ttu-id="70e3a-130">支援 Android Enterprise (工作設定檔) 和裝置管理員模式。</span><span class="sxs-lookup"><span data-stu-id="70e3a-130">Both Android Enterprise (Work Profile) and Device Administrator modes are supported.</span></span> <span data-ttu-id="70e3a-131">在 Android 上，我們提供 web 保護，包括反網路釣魚、封鎖不安全的連線，以及自訂指示器的設定。</span><span class="sxs-lookup"><span data-stu-id="70e3a-131">On Android, we offer web protection, which includes anti-phishing, blocking of unsafe connections, and setting of custom indicators.</span></span> <span data-ttu-id="70e3a-132">解決方案會將惡意程式碼和潛在有害的應用程式掃描 (PUA) ，並透過與 Microsoft 端點管理員和條件式存取的整合，提供額外的侵犯防護功能。</span><span class="sxs-lookup"><span data-stu-id="70e3a-132">The solution scans for malware and potentially unwanted applications (PUA) and offers additional breach prevention capabilities through integration with Microsoft Endpoint Manager and Conditional Access.</span></span> <span data-ttu-id="70e3a-133">如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)。</span><span class="sxs-lookup"><span data-stu-id="70e3a-133">For information about the key features and benefits, read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android).</span></span>
+
+<span data-ttu-id="70e3a-134">如需如何開始的詳細資訊，請流覽 Android [檔](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-android)上的 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="70e3a-134">For more details on how to get started, visit the Microsoft Defender for Endpoint on Android [documentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-android).</span></span>
+
+## <a name="microsoft-defender-for-endpoint-on-ios"></a><span data-ttu-id="70e3a-135">iOS 上的 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="70e3a-135">Microsoft Defender for Endpoint on iOS</span></span>
+
+<span data-ttu-id="70e3a-136">IOS 的 Microsoft Defender for Endpoint 是我們的行動威脅防護解決方案，適用于執行 iOS 11.0 和更高版本的裝置。</span><span class="sxs-lookup"><span data-stu-id="70e3a-136">Microsoft Defender for Endpoint on iOS is our mobile threat defense solution for devices running iOS 11.0 and higher.</span></span> <span data-ttu-id="70e3a-137">支援受監視和 Unsupervised 裝置。</span><span class="sxs-lookup"><span data-stu-id="70e3a-137">Both Supervised and Unsupervised devices are supported.</span></span> <span data-ttu-id="70e3a-138">在 iOS 上，我們提供 web 保護，包括反網路釣魚、封鎖不安全的連線，以及設定自訂指示器。</span><span class="sxs-lookup"><span data-stu-id="70e3a-138">On iOS, we offer web protection which includes anti-phishing, blocking unsafe connections, and setting custom indicators.</span></span> <span data-ttu-id="70e3a-139">如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。</span><span class="sxs-lookup"><span data-stu-id="70e3a-139">For more information about the key features and benefits, read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).</span></span> 
+
+<span data-ttu-id="70e3a-140">如需如何開始的詳細資訊，請流覽 iOS [檔](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-ios)上的 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="70e3a-140">For more details on how to get started, visit the Microsoft Defender for Endpoint on iOS [documentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-ios).</span></span>
+
+## <a name="licensing-requirements"></a><span data-ttu-id="70e3a-141">授權需求</span><span class="sxs-lookup"><span data-stu-id="70e3a-141">Licensing requirements</span></span> 
+
+<span data-ttu-id="70e3a-142">合格授權的使用者最多可在最多五個並行裝置上使用 Microsoft Defender 端點。</span><span class="sxs-lookup"><span data-stu-id="70e3a-142">Eligible Licensed Users may use Microsoft Defender for Endpoint on up to five concurrent devices.</span></span> <span data-ttu-id="70e3a-143">Microsoft Defender for Endpoint 也可從雲端解決方案供應商購買 (CSP) 。</span><span class="sxs-lookup"><span data-stu-id="70e3a-143">Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).</span></span>
+
+<span data-ttu-id="70e3a-144">客戶可以透過獨立的 Microsoft Defender for Endpoint 授權，在 macOS 上取得 Microsoft Defender for Endpoint，作為 Microsoft 365 A5/E5 或 Microsoft 365 安全性的一部分。</span><span class="sxs-lookup"><span data-stu-id="70e3a-144">Customers can obtain Microsoft Defender for Endpoint on macOS through a standalone Microsoft Defender for Endpoint license, as part of Microsoft 365 A5/E5, or Microsoft 365 Security.</span></span>
+
+<span data-ttu-id="70e3a-145">最近宣佈的適用于 Android 和 iOS 的 Microsoft Defender Endpoint for Endpoint 的功能，包含在適用于合格授權使用者之五個合格裝置的一部分中。</span><span class="sxs-lookup"><span data-stu-id="70e3a-145">Recently announced capabilities of Microsoft Defender for Endpoint for Android and iOS are included in the above mentioned offers as part of the five qualified devices for eligible licensed users.</span></span>
+
+<span data-ttu-id="70e3a-146">您可以透過適用于商業及教育版客戶的 Defender for Endpoint Server SKU，取得 Linux 上的 defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="70e3a-146">Defender for Endpoint on Linux is available through the Defender for Endpoint Server SKU that is available for both commercial and education customers.</span></span>
+
+<span data-ttu-id="70e3a-147">如需定價及其他資格需求，請與您的帳戶小組或 CSP 聯繫。</span><span class="sxs-lookup"><span data-stu-id="70e3a-147">Please contact your account team or CSP for pricing and additional eligibility requirements.</span></span>

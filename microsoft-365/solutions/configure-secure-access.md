@@ -12,13 +12,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 11cd4222978487b23a12262ec3b7e8d6a0fcf230
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8c31aa5bd255fa1c220ae3e7643ffe5b2e4b0b25
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916355"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050883"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="cdc46-103">設定 Microsoft 365 服務的安全存取權</span><span class="sxs-lookup"><span data-stu-id="cdc46-103">Configure secure access to Microsoft 365 services</span></span>
+# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="704cf-103">設定 Microsoft 365 服務的安全存取權</span><span class="sxs-lookup"><span data-stu-id="704cf-103">Configure secure access to Microsoft 365 services</span></span>
 
-<span data-ttu-id="cdc46-104">此方案是以「[M365 黃金 config](../security/office-365-security/microsoft-365-policies-configurations.md)」為基礎，針對三種保護層級實施 MFA、條件式存取和相關原則的指導方針：比較基準、敏感、高敏感度。</span><span class="sxs-lookup"><span data-stu-id="cdc46-104">This solution is based on the "[M365 golden config](../security/office-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
+<span data-ttu-id="704cf-104">此方案是以「[M365 黃金 config](../security/defender-365-security/microsoft-365-policies-configurations.md)」為基礎，針對三種保護層級實施 MFA、條件式存取和相關原則的指導方針：比較基準、敏感、高敏感度。</span><span class="sxs-lookup"><span data-stu-id="704cf-104">This solution is based on the "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
