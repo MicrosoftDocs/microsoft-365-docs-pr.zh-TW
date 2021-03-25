@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41716fecd0c70c99fd61b090421cb3dc0277cb48
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72b5422de2ee4b01e3209ec78ea0c10f1285d682
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919549"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034192"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -63,7 +63,7 @@ iOS 版 Office 和 Android 版 Office：敏感度標籤內建於 [Office 應用�
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[使用變數動態標記](#dynamic-markings-with-variables)                                              | 2010           | 16.42+     | 2.42+ | 16.0.13328+ | 審查中 |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 | 16.35+   | 審查中   | 審查中         | 審查中                                                        |
+|[讓使用者指派權限：<br /> - 提示使用者](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 審查中   | 審查中         | 審查中                                                        |
 |[稽核標籤相關的使用者活動](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | 逐步推出：16.0.13628+ | 是 <sup>\*</sup>                                                        |
 |[要求使用者在電子郵件和文件中套用標籤](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 逐步推出：16.45+         | 預覽：[Beta 版通道](https://office.com/insider) | 逐步推出：16.0.13628+ | 審查中                                            
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 逐步推出：16.44+ | 審查中 | 審查中 | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -87,7 +87,8 @@ iOS 版 Office 和 Android 版 Office：敏感度標籤內建於 [Office 應用�
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[使用變數動態標記](#dynamic-markings-with-variables)                                              | 審查中                     | 審查中                 | 審查中         | 審查中           | 審查中               |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[讓使用者指派權限：<br /> - 不可轉寄](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[讓使用者指派權限：<br /> - 僅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 審查中 | 審查中  | 審查中 | 推出中 |
 |[要求使用者在電子郵件和文件中套用標籤](#require-users-to-apply-a-label-to-their-email-and-documents)   | 逐步推出：2101+                        | 16.43+ <sup>\*</sup>                    | 審查中            | 審查中                | 是                |
 |[稽核標籤相關的使用者活動](data-classification-activity-explorer.md) | 2011+ | 審查中 | 審查中           | 審查中               | 審查中 |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 審查中           | 審查中               | 是 |
@@ -120,7 +121,7 @@ Office 內建標籤用戶端會從下列系統管理中心下載敏感度標籤�
 
 如果使用者已安裝其中一個 Azure 資訊保護用戶端 ([統一標籤用戶端](/azure/information-protection/rms-client/aip-clientv2)或[傳統用戶端](/azure/information-protection/rms-client/aip-client))，預設會關閉其 Office 應用程式中的內建標籤用戶端。 
 
-若要使用內建標籤，而非適用於 Office 應用程式的 Azure 資訊保護用戶端，建議您使用群組原則設定 **受控增益集清單**，如同[由於 Office 2013 和 Office 2016 程式的群組原則設定而未載入任何增益集](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)所記載。
+若要使用內建標籤，而非適用於 Office 應用程式的 Azure 資訊保護用戶端，建議您使用群組原則設定 **受控增益集清單**，如同 [由於 Office 2013 和 Office 2016 程式的群組原則設定而未載入任何增益集](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)所記載。
 
 針對 Microsoft Word 2016、Excel 2016、PowerPoint 2016 和 Outlook 2016，為 Azure 資訊保護用戶端指定下列程式設計識別碼 (ProgID)，並且將選項設定為 [**0：增益集一律停用 (封鎖)**]
 

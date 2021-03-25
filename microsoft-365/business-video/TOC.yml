@@ -103,6 +103,8 @@
           href: view-bill.md
         - name: 購買新的授權
           href: buy-licenses.md
+        - name: 移除現有的授權
+          href: remove-existing-licenses.md
         - name: 更新​​您的付款方式
           href: update-payment.md
         - name: 重設使用者密碼

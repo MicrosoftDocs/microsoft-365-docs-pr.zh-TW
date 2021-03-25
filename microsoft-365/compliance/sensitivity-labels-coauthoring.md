@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 開啟可在桌面應用程式中針對 SharePoint 和 OneDrive 中已標記和加密的檔案啟用共同撰寫和自動儲存的設定。
-ms.openlocfilehash: 90c00eb448d6d8f02170a37062af05cb0c0db59d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 34c674dc5fb9be9cb5572ce1f14e11a0f8ab14ae
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919569"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034222"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>針對使用敏感度標籤加密的檔案啟用共同撰寫
 
@@ -83,8 +83,8 @@ ms.locfileid: "50919569"
 - 必須為租用戶啟用 [SharePoint 和 OneDrive 中 Office 檔案](sensitivity-labels-sharepoint-onedrive-files.md) 的敏感度標記。 如果此功能尚未啟用，當您選取設定以開啟具有敏感度標籤的檔案共同撰寫時，就會自動啟用此功能。
 
 - Microsoft 365 Apps 企業版：
-    - **Windows**：[目前通道 (預覽)](https://office.com/insider) 搭配最小組建 16.0.13801.20182，或 [Beta 通道](https://office.com/insider)搭配最小組建 16.0.13819.20006
-    - **macOS**：[Beta 通道](https://office.com/insider)搭配最小組建 16.47.218.0
+    - **Windows**：預覽：[目前通道 (預覽)](https://office.com/insider)
+    - **macOS**：預覽：[Beta 版通道](https://office.com/insider)
     - **iOS**：尚未支援
     - **Android**：尚未支援
 
