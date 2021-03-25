@@ -182,7 +182,7 @@
         - name: 適用於商務的 Microsoft 365 安全性 (BDM)
           href: 'https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 身分識別與裝置存取設定
-          href: 'https://docs.microsoft.com/microsoft-365/security/defender-365-security/microsoft-365-policies-configurations?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-365-policies-configurations?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 部署適用於端點的 Microsoft Defender
           href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 合規性

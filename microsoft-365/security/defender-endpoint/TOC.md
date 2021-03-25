@@ -385,7 +385,7 @@
 
 ### [使用稽核模式](audit-windows-defender.md)
 
-## 參考資料
+## 參考
 ### [管理和 APIs]()
 #### [管理和 APIs 概述](management-apis.md)
 #### [Microsoft Defender for Endpoint API]()
@@ -583,3 +583,7 @@
 #### [疑難排解攻擊面減少問題]()
 ##### [網路保護](troubleshoot-np.md)
 ##### [受攻擊面縮小規則](troubleshoot-asr.md)
+
+# [Microsoft 365 安全性](../index.yml)
+# [Microsoft 365 Defender](../defender/index.yml)
+# [適用於 Office 365 的 Defender](../office-365-security/overview.md)
