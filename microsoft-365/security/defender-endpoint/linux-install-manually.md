@@ -19,194 +19,194 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6726671a1e38d80a91787f495d3e09884bc879f4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: cf903bd1b09370dd7de2706b078778137ea029fb
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058388"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187814"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a><span data-ttu-id="3f2ec-104">手動部署 Microsoft Defender for Linux 端點</span><span class="sxs-lookup"><span data-stu-id="3f2ec-104">Deploy Microsoft Defender for Endpoint for Linux manually</span></span>
+# <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a><span data-ttu-id="e719c-104">手動部署 Microsoft Defender for Linux 端點</span><span class="sxs-lookup"><span data-stu-id="e719c-104">Deploy Microsoft Defender for Endpoint for Linux manually</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="3f2ec-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="3f2ec-105">**Applies to:**</span></span>
-- [<span data-ttu-id="3f2ec-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="3f2ec-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [<span data-ttu-id="3f2ec-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3f2ec-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="e719c-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="e719c-105">**Applies to:**</span></span>
+- [<span data-ttu-id="e719c-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="e719c-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="e719c-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e719c-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="3f2ec-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="3f2ec-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="3f2ec-109">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="e719c-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="e719c-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="e719c-109">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="e719c-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-<span data-ttu-id="3f2ec-110">本文說明如何手動為 Linux 部署 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-110">This article describes how to deploy Microsoft Defender for Endpoint for Linux manually.</span></span> <span data-ttu-id="3f2ec-111">成功的部署需要完成下列所有工作：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-111">A successful deployment requires the completion of all of the following tasks:</span></span>
+<span data-ttu-id="e719c-110">本文說明如何手動為 Linux 部署 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="e719c-110">This article describes how to deploy Microsoft Defender for Endpoint for Linux manually.</span></span> <span data-ttu-id="e719c-111">成功的部署需要完成下列所有工作：</span><span class="sxs-lookup"><span data-stu-id="e719c-111">A successful deployment requires the completion of all of the following tasks:</span></span>
 
-- [<span data-ttu-id="3f2ec-112">手動部署 Microsoft Defender for Linux 端點</span><span class="sxs-lookup"><span data-stu-id="3f2ec-112">Deploy Microsoft Defender for Endpoint for Linux manually</span></span>](#deploy-microsoft-defender-for-endpoint-for-linux-manually)
-  - [<span data-ttu-id="3f2ec-113">必要條件和系統需求</span><span class="sxs-lookup"><span data-stu-id="3f2ec-113">Prerequisites and system requirements</span></span>](#prerequisites-and-system-requirements)
-  - [<span data-ttu-id="3f2ec-114">設定 Linux 軟體存放庫</span><span class="sxs-lookup"><span data-stu-id="3f2ec-114">Configure the Linux software repository</span></span>](#configure-the-linux-software-repository)
-    - [<span data-ttu-id="3f2ec-115">RHEL 和變種 (CentOS 和 Oracle Linux) </span><span class="sxs-lookup"><span data-stu-id="3f2ec-115">RHEL and variants (CentOS and Oracle Linux)</span></span>](#rhel-and-variants-centos-and-oracle-linux)
-    - [<span data-ttu-id="3f2ec-116">SLES 和變種</span><span class="sxs-lookup"><span data-stu-id="3f2ec-116">SLES and variants</span></span>](#sles-and-variants)
-    - [<span data-ttu-id="3f2ec-117">Ubuntu 和 Debian 系統</span><span class="sxs-lookup"><span data-stu-id="3f2ec-117">Ubuntu and Debian systems</span></span>](#ubuntu-and-debian-systems)
-  - [<span data-ttu-id="3f2ec-118">應用程式安裝</span><span class="sxs-lookup"><span data-stu-id="3f2ec-118">Application installation</span></span>](#application-installation)
-  - [<span data-ttu-id="3f2ec-119">下載上架套件</span><span class="sxs-lookup"><span data-stu-id="3f2ec-119">Download the onboarding package</span></span>](#download-the-onboarding-package)
-  - [<span data-ttu-id="3f2ec-120">用戶端設定</span><span class="sxs-lookup"><span data-stu-id="3f2ec-120">Client configuration</span></span>](#client-configuration)
-  - [<span data-ttu-id="3f2ec-121">Installer 腳本</span><span class="sxs-lookup"><span data-stu-id="3f2ec-121">Installer script</span></span>](#installer-script)
-  - [<span data-ttu-id="3f2ec-122">記錄安裝問題</span><span class="sxs-lookup"><span data-stu-id="3f2ec-122">Log installation issues</span></span>](#log-installation-issues)
-  - [<span data-ttu-id="3f2ec-123">作業系統升級</span><span class="sxs-lookup"><span data-stu-id="3f2ec-123">Operating system upgrades</span></span>](#operating-system-upgrades)
-  - [<span data-ttu-id="3f2ec-124">卸載</span><span class="sxs-lookup"><span data-stu-id="3f2ec-124">Uninstallation</span></span>](#uninstallation)
+- [<span data-ttu-id="e719c-112">手動部署 Microsoft Defender for Linux 端點</span><span class="sxs-lookup"><span data-stu-id="e719c-112">Deploy Microsoft Defender for Endpoint for Linux manually</span></span>](#deploy-microsoft-defender-for-endpoint-for-linux-manually)
+  - [<span data-ttu-id="e719c-113">必要條件和系統需求</span><span class="sxs-lookup"><span data-stu-id="e719c-113">Prerequisites and system requirements</span></span>](#prerequisites-and-system-requirements)
+  - [<span data-ttu-id="e719c-114">設定 Linux 軟體存放庫</span><span class="sxs-lookup"><span data-stu-id="e719c-114">Configure the Linux software repository</span></span>](#configure-the-linux-software-repository)
+    - [<span data-ttu-id="e719c-115">RHEL 和變種 (CentOS 和 Oracle Linux) </span><span class="sxs-lookup"><span data-stu-id="e719c-115">RHEL and variants (CentOS and Oracle Linux)</span></span>](#rhel-and-variants-centos-and-oracle-linux)
+    - [<span data-ttu-id="e719c-116">SLES 和變種</span><span class="sxs-lookup"><span data-stu-id="e719c-116">SLES and variants</span></span>](#sles-and-variants)
+    - [<span data-ttu-id="e719c-117">Ubuntu 和 Debian 系統</span><span class="sxs-lookup"><span data-stu-id="e719c-117">Ubuntu and Debian systems</span></span>](#ubuntu-and-debian-systems)
+  - [<span data-ttu-id="e719c-118">應用程式安裝</span><span class="sxs-lookup"><span data-stu-id="e719c-118">Application installation</span></span>](#application-installation)
+  - [<span data-ttu-id="e719c-119">下載上架套件</span><span class="sxs-lookup"><span data-stu-id="e719c-119">Download the onboarding package</span></span>](#download-the-onboarding-package)
+  - [<span data-ttu-id="e719c-120">用戶端設定</span><span class="sxs-lookup"><span data-stu-id="e719c-120">Client configuration</span></span>](#client-configuration)
+  - [<span data-ttu-id="e719c-121">Installer 腳本</span><span class="sxs-lookup"><span data-stu-id="e719c-121">Installer script</span></span>](#installer-script)
+  - [<span data-ttu-id="e719c-122">記錄安裝問題</span><span class="sxs-lookup"><span data-stu-id="e719c-122">Log installation issues</span></span>](#log-installation-issues)
+  - [<span data-ttu-id="e719c-123">作業系統升級</span><span class="sxs-lookup"><span data-stu-id="e719c-123">Operating system upgrades</span></span>](#operating-system-upgrades)
+  - [<span data-ttu-id="e719c-124">卸載</span><span class="sxs-lookup"><span data-stu-id="e719c-124">Uninstallation</span></span>](#uninstallation)
 
-## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="3f2ec-125">必要條件和系統需求</span><span class="sxs-lookup"><span data-stu-id="3f2ec-125">Prerequisites and system requirements</span></span>
+## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="e719c-125">必要條件和系統需求</span><span class="sxs-lookup"><span data-stu-id="e719c-125">Prerequisites and system requirements</span></span>
 
-<span data-ttu-id="3f2ec-126">開始之前，請參閱 [Microsoft Defender For Linux](microsoft-defender-endpoint-linux.md) 以取得目前軟體版本之必要條件和系統需求的描述。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-126">Before you get started, see [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.</span></span>
+<span data-ttu-id="e719c-126">開始之前，請參閱 [Microsoft Defender For Linux](microsoft-defender-endpoint-linux.md) 以取得目前軟體版本之必要條件和系統需求的描述。</span><span class="sxs-lookup"><span data-stu-id="e719c-126">Before you get started, see [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.</span></span>
 
-## <a name="configure-the-linux-software-repository"></a><span data-ttu-id="3f2ec-127">設定 Linux 軟體存放庫</span><span class="sxs-lookup"><span data-stu-id="3f2ec-127">Configure the Linux software repository</span></span>
+## <a name="configure-the-linux-software-repository"></a><span data-ttu-id="e719c-127">設定 Linux 軟體存放庫</span><span class="sxs-lookup"><span data-stu-id="e719c-127">Configure the Linux software repository</span></span>
 
-<span data-ttu-id="3f2ec-128">您可以從下列其中一個通道部署適用于 Linux 的 Endpoint， (如下所示的 *[通道]*) ：「 *內部人員-快*」、「 *預覽人員-慢速*」或「 *生產*」。每個通道都會對應至 Linux 軟體存放庫。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-128">Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.</span></span> <span data-ttu-id="3f2ec-129">以下提供設定裝置使用其中一種存放庫的指示。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-129">Instructions for configuring your device to use one of these repositories are provided below.</span></span>
+<span data-ttu-id="e719c-128">您可以從下列其中一個通道部署適用于 Linux 的 Endpoint， (如下所示的 *[通道]*) ：「 *內部人員-快*」、「 *預覽人員-慢速*」或「 *生產*」。每個通道都會對應至 Linux 軟體存放庫。</span><span class="sxs-lookup"><span data-stu-id="e719c-128">Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.</span></span> <span data-ttu-id="e719c-129">以下提供設定裝置使用其中一種存放庫的指示。</span><span class="sxs-lookup"><span data-stu-id="e719c-129">Instructions for configuring your device to use one of these repositories are provided below.</span></span>
 
-<span data-ttu-id="3f2ec-130">通道選擇會決定提供給裝置的更新類型及頻率。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-130">The choice of the channel determines the type and frequency of updates that are offered to your device.</span></span> <span data-ttu-id="3f2ec-131">在內部版本中的裝置 *快* 用的第一種方法是接收更新及新功能，然後是上一個程式 *-速度慢* ，最後透過 *生產*。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-131">Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.</span></span>
+<span data-ttu-id="e719c-130">通道選擇會決定提供給裝置的更新類型及頻率。</span><span class="sxs-lookup"><span data-stu-id="e719c-130">The choice of the channel determines the type and frequency of updates that are offered to your device.</span></span> <span data-ttu-id="e719c-131">在內部版本中的裝置 *快* 用的第一種方法是接收更新及新功能，然後是上一個程式 *-速度慢* ，最後透過 *生產*。</span><span class="sxs-lookup"><span data-stu-id="e719c-131">Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.</span></span>
 
-<span data-ttu-id="3f2ec-132">為了預覽新功能並提供及早的意見反應，建議您將企業中的部分裝置設定為使用 *預覽人員-快* 或內部的 *速度緩慢*。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-132">In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.</span></span>
+<span data-ttu-id="e719c-132">為了預覽新功能並提供及早的意見反應，建議您將企業中的部分裝置設定為使用 *預覽人員-快* 或內部的 *速度緩慢*。</span><span class="sxs-lookup"><span data-stu-id="e719c-132">In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="3f2ec-133">初次安裝後切換通道需要重新安裝產品。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-133">Switching the channel after the initial installation requires the product to be reinstalled.</span></span> <span data-ttu-id="3f2ec-134">若要切換產品通道，請執行下列動作：卸載現有的套件、重新設定裝置以使用新通道，然後依照此檔中的步驟，從新位置安裝套件。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-134">To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.</span></span>
+> <span data-ttu-id="e719c-133">初次安裝後切換通道需要重新安裝產品。</span><span class="sxs-lookup"><span data-stu-id="e719c-133">Switching the channel after the initial installation requires the product to be reinstalled.</span></span> <span data-ttu-id="e719c-134">若要切換產品通道，請執行下列動作：卸載現有的套件、重新設定裝置以使用新通道，然後依照此檔中的步驟，從新位置安裝套件。</span><span class="sxs-lookup"><span data-stu-id="e719c-134">To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.</span></span>
 
-### <a name="rhel-and-variants-centos-and-oracle-linux"></a><span data-ttu-id="3f2ec-135">RHEL 和變種 (CentOS 和 Oracle Linux) </span><span class="sxs-lookup"><span data-stu-id="3f2ec-135">RHEL and variants (CentOS and Oracle Linux)</span></span>
+### <a name="rhel-and-variants-centos-and-oracle-linux"></a><span data-ttu-id="e719c-135">RHEL 和變種 (CentOS 和 Oracle Linux) </span><span class="sxs-lookup"><span data-stu-id="e719c-135">RHEL and variants (CentOS and Oracle Linux)</span></span>
 
-- <span data-ttu-id="3f2ec-136">`yum-utils`若尚未安裝，請安裝：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-136">Install `yum-utils` if it isn't installed yet:</span></span>
+- <span data-ttu-id="e719c-136">`yum-utils`若尚未安裝，請安裝：</span><span class="sxs-lookup"><span data-stu-id="e719c-136">Install `yum-utils` if it isn't installed yet:</span></span>
 
     ```bash
     sudo yum install yum-utils
     ```
 
-- <span data-ttu-id="3f2ec-137">請記下您的發行和版本，並找出最接近的專案 (依主要、次要) `https://packages.microsoft.com/config/` 。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-137">Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/`.</span></span> <span data-ttu-id="3f2ec-138">例如，RHEL 7.9 比對7.4 更近。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-138">For instance, RHEL 7.9 is closer to 7.4 than to 8.</span></span>
+- <span data-ttu-id="e719c-137">請記下您的發行和版本，並找出最接近的專案 (依主要、次要) `https://packages.microsoft.com/config/` 。</span><span class="sxs-lookup"><span data-stu-id="e719c-137">Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/`.</span></span> <span data-ttu-id="e719c-138">例如，RHEL 7.9 比對7.4 更近。</span><span class="sxs-lookup"><span data-stu-id="e719c-138">For instance, RHEL 7.9 is closer to 7.4 than to 8.</span></span>
 
-    <span data-ttu-id="3f2ec-139">在下列命令中，將 *[distro]* 和 *[version]* 取代為您識別的資訊：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-139">In the below commands, replace *[distro]* and *[version]* with the information you've identified:</span></span>
+    <span data-ttu-id="e719c-139">在下列命令中，將 *[distro]* 和 *[version]* 取代為您識別的資訊：</span><span class="sxs-lookup"><span data-stu-id="e719c-139">In the below commands, replace *[distro]* and *[version]* with the information you've identified:</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="3f2ec-140">如果是 Oracle Linux，請將 *[distro]* 取代為 "rhel"。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-140">In case of Oracle Linux, replace *[distro]* with “rhel”.</span></span>
+    > <span data-ttu-id="e719c-140">如果是 Oracle Linux，請將 *[distro]* 取代為 "rhel"。</span><span class="sxs-lookup"><span data-stu-id="e719c-140">In case of Oracle Linux, replace *[distro]* with “rhel”.</span></span>
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    <span data-ttu-id="3f2ec-141">例如，如果您正在執行 CentOS 7，且想要從 *生產* 通道部署 MDE for Linux：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-141">For example, if you are running CentOS 7 and wish to deploy MDE for Linux from the *prod* channel:</span></span>
+    <span data-ttu-id="e719c-141">例如，如果您正在執行 CentOS 7，且想要從 *生產* 通道部署 MDE for Linux：</span><span class="sxs-lookup"><span data-stu-id="e719c-141">For example, if you are running CentOS 7 and wish to deploy MDE for Linux from the *prod* channel:</span></span>
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    <span data-ttu-id="3f2ec-142">或者，如果您想要在選取的裝置上探索新的功能，您可能想要將 MDE Linux 部署至 *內部使用者-fast* 通道：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-142">Or if you wish to explore new features on selected devices, you might want to deploy MDE for Linux to *insiders-fast* channel:</span></span>
+    <span data-ttu-id="e719c-142">或者，如果您想要在選取的裝置上探索新的功能，您可能想要將 MDE Linux 部署至 *內部使用者-fast* 通道：</span><span class="sxs-lookup"><span data-stu-id="e719c-142">Or if you wish to explore new features on selected devices, you might want to deploy MDE for Linux to *insiders-fast* channel:</span></span>
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
     ```
 
-- <span data-ttu-id="3f2ec-143">安裝 Microsoft GPG 公用機碼：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-143">Install the Microsoft GPG public key:</span></span>
+- <span data-ttu-id="e719c-143">安裝 Microsoft GPG 公用機碼：</span><span class="sxs-lookup"><span data-stu-id="e719c-143">Install the Microsoft GPG public key:</span></span>
 
     ```bash
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
-- <span data-ttu-id="3f2ec-144">下載並使所有的中繼資料都可供目前啟用的 yum 存放庫使用：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-144">Download and make usable all the metadata for the currently enabled yum repositories:</span></span>
+- <span data-ttu-id="e719c-144">下載並使所有的中繼資料都可供目前啟用的 yum 存放庫使用：</span><span class="sxs-lookup"><span data-stu-id="e719c-144">Download and make usable all the metadata for the currently enabled yum repositories:</span></span>
 
     ```bash
     yum makecache
     ```
 
-### <a name="sles-and-variants"></a><span data-ttu-id="3f2ec-145">SLES 和變種</span><span class="sxs-lookup"><span data-stu-id="3f2ec-145">SLES and variants</span></span>
+### <a name="sles-and-variants"></a><span data-ttu-id="e719c-145">SLES 和變種</span><span class="sxs-lookup"><span data-stu-id="e719c-145">SLES and variants</span></span>
 
-- <span data-ttu-id="3f2ec-146">請記下您的發行和版本，並找出最接近的專案 (依主要、次要) `https://packages.microsoft.com/config/` 。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-146">Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/config/`.</span></span>
+- <span data-ttu-id="e719c-146">請記下您的發行和版本，並找出最接近的專案 (依主要、次要) `https://packages.microsoft.com/config/` 。</span><span class="sxs-lookup"><span data-stu-id="e719c-146">Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/config/`.</span></span>
 
-    <span data-ttu-id="3f2ec-147">在下列命令中，將 *[distro]* 和 *[version]* 取代為您識別的資訊：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-147">In the following commands, replace *[distro]* and *[version]* with the information you've identified:</span></span>
+    <span data-ttu-id="e719c-147">在下列命令中，將 *[distro]* 和 *[version]* 取代為您識別的資訊：</span><span class="sxs-lookup"><span data-stu-id="e719c-147">In the following commands, replace *[distro]* and *[version]* with the information you've identified:</span></span>
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    <span data-ttu-id="3f2ec-148">例如，如果您正在執行 SLES 12，且想要從 *生產* 通道部署 MDE for Linux：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-148">For example, if you are running SLES 12 and wish to deploy MDE for Linux from the *prod* channel:</span></span>
+    <span data-ttu-id="e719c-148">例如，如果您正在執行 SLES 12，且想要從 *生產* 通道部署 MDE for Linux：</span><span class="sxs-lookup"><span data-stu-id="e719c-148">For example, if you are running SLES 12 and wish to deploy MDE for Linux from the *prod* channel:</span></span>
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
     ```
 
-- <span data-ttu-id="3f2ec-149">安裝 Microsoft GPG 公用機碼：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-149">Install the Microsoft GPG public key:</span></span>
+- <span data-ttu-id="e719c-149">安裝 Microsoft GPG 公用機碼：</span><span class="sxs-lookup"><span data-stu-id="e719c-149">Install the Microsoft GPG public key:</span></span>
 
     ```bash
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
-### <a name="ubuntu-and-debian-systems"></a><span data-ttu-id="3f2ec-150">Ubuntu 和 Debian 系統</span><span class="sxs-lookup"><span data-stu-id="3f2ec-150">Ubuntu and Debian systems</span></span>
+### <a name="ubuntu-and-debian-systems"></a><span data-ttu-id="e719c-150">Ubuntu 和 Debian 系統</span><span class="sxs-lookup"><span data-stu-id="e719c-150">Ubuntu and Debian systems</span></span>
 
-- <span data-ttu-id="3f2ec-151">`curl`若尚未安裝，請安裝：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-151">Install `curl` if it isn't installed yet:</span></span>
+- <span data-ttu-id="e719c-151">`curl`若尚未安裝，請安裝：</span><span class="sxs-lookup"><span data-stu-id="e719c-151">Install `curl` if it isn't installed yet:</span></span>
 
     ```bash
     sudo apt-get install curl
     ```
 
-- <span data-ttu-id="3f2ec-152">`libplist-utils`若尚未安裝，請安裝：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-152">Install `libplist-utils` if it isn't installed yet:</span></span>
+- <span data-ttu-id="e719c-152">`libplist-utils`若尚未安裝，請安裝：</span><span class="sxs-lookup"><span data-stu-id="e719c-152">Install `libplist-utils` if it isn't installed yet:</span></span>
 
     ```bash
     sudo apt-get install libplist-utils
     ```
 
-- <span data-ttu-id="3f2ec-153">請記下您的發行和版本，並找出最接近的專案 (依主要、次要) `https://packages.microsoft.com/config` 。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-153">Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config`.</span></span>
+- <span data-ttu-id="e719c-153">請記下您的發行和版本，並找出最接近的專案 (依主要、次要) `https://packages.microsoft.com/config` 。</span><span class="sxs-lookup"><span data-stu-id="e719c-153">Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config`.</span></span>
 
-    <span data-ttu-id="3f2ec-154">在下列命令中，將 *[distro]* 和 *[version]* 取代為您識別的資訊：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-154">In the below command, replace *[distro]* and *[version]* with the information you've identified:</span></span>
+    <span data-ttu-id="e719c-154">在下列命令中，將 *[distro]* 和 *[version]* 取代為您識別的資訊：</span><span class="sxs-lookup"><span data-stu-id="e719c-154">In the below command, replace *[distro]* and *[version]* with the information you've identified:</span></span>
 
     ```bash
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
-    <span data-ttu-id="3f2ec-155">例如，如果您正在執行 Ubuntu 18.04，並希望從 *生產* 通道部署 MDE for Linux：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-155">For example, if you are running Ubuntu 18.04 and wish to deploy MDE for Linux from the *prod* channel:</span></span>
+    <span data-ttu-id="e719c-155">例如，如果您正在執行 Ubuntu 18.04，並希望從 *生產* 通道部署 MDE for Linux：</span><span class="sxs-lookup"><span data-stu-id="e719c-155">For example, if you are running Ubuntu 18.04 and wish to deploy MDE for Linux from the *prod* channel:</span></span>
 
     ```bash
     curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
     ```
 
-- <span data-ttu-id="3f2ec-156">安裝存放庫設定：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-156">Install the repository configuration:</span></span>
+- <span data-ttu-id="e719c-156">安裝存放庫設定：</span><span class="sxs-lookup"><span data-stu-id="e719c-156">Install the repository configuration:</span></span>
 
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
-    <span data-ttu-id="3f2ec-157">例如，如果您選擇 [ *生產* ] 通道：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-157">For example, if you chose *prod* channel:</span></span>
+    <span data-ttu-id="e719c-157">例如，如果您選擇 [ *生產* ] 通道：</span><span class="sxs-lookup"><span data-stu-id="e719c-157">For example, if you chose *prod* channel:</span></span>
     
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
     ```   
 
-- <span data-ttu-id="3f2ec-158">`gpg`若尚未安裝套件，請安裝：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-158">Install the `gpg` package if not already installed:</span></span>
+- <span data-ttu-id="e719c-158">`gpg`若尚未安裝套件，請安裝：</span><span class="sxs-lookup"><span data-stu-id="e719c-158">Install the `gpg` package if not already installed:</span></span>
 
     ```bash
     sudo apt-get install gpg
     ```
 
-  <span data-ttu-id="3f2ec-159">若 `gpg` 無法使用，請安裝 `gnupg` 。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-159">If `gpg` is not available, then install `gnupg`.</span></span>
+  <span data-ttu-id="e719c-159">若 `gpg` 無法使用，請安裝 `gnupg` 。</span><span class="sxs-lookup"><span data-stu-id="e719c-159">If `gpg` is not available, then install `gnupg`.</span></span>
 
-- <span data-ttu-id="3f2ec-160">安裝 Microsoft GPG 公用機碼：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-160">Install the Microsoft GPG public key:</span></span>
+- <span data-ttu-id="e719c-160">安裝 Microsoft GPG 公用機碼：</span><span class="sxs-lookup"><span data-stu-id="e719c-160">Install the Microsoft GPG public key:</span></span>
 
     ```bash
     curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
     ```
 
-- <span data-ttu-id="3f2ec-161">若尚未出現 HTTPs 驅動程式，請加以安裝：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-161">Install the https driver if it's not already present:</span></span>
+- <span data-ttu-id="e719c-161">若尚未出現 HTTPs 驅動程式，請加以安裝：</span><span class="sxs-lookup"><span data-stu-id="e719c-161">Install the https driver if it's not already present:</span></span>
 
     ```bash
     sudo apt-get install apt-transport-https
     ```
 
-- <span data-ttu-id="3f2ec-162">更新存放庫中繼資料：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-162">Update the repository metadata:</span></span>
+- <span data-ttu-id="e719c-162">更新存放庫中繼資料：</span><span class="sxs-lookup"><span data-stu-id="e719c-162">Update the repository metadata:</span></span>
 
     ```bash
     sudo apt-get update
     ```
 
-## <a name="application-installation"></a><span data-ttu-id="3f2ec-163">應用程式安裝</span><span class="sxs-lookup"><span data-stu-id="3f2ec-163">Application installation</span></span>
+## <a name="application-installation"></a><span data-ttu-id="e719c-163">應用程式安裝</span><span class="sxs-lookup"><span data-stu-id="e719c-163">Application installation</span></span>
 
-- <span data-ttu-id="3f2ec-164">RHEL 和 variant (CentOS 和 Oracle Linux) ：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-164">RHEL and variants (CentOS and Oracle Linux):</span></span>
+- <span data-ttu-id="e719c-164">RHEL 和 variant (CentOS 和 Oracle Linux) ：</span><span class="sxs-lookup"><span data-stu-id="e719c-164">RHEL and variants (CentOS and Oracle Linux):</span></span>
 
     ```bash
     sudo yum install mdatp
     ```
 
-    <span data-ttu-id="3f2ec-165">如果您已在裝置上設定多個 Microsoft 存放庫，您可以專門瞭解要從其中安裝套件的存放庫。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-165">If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from.</span></span> <span data-ttu-id="3f2ec-166">下列範例會顯示如何在 `production` `insiders-fast` 此裝置上設定了存放庫通道時，從通道安裝套件。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-166">The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device.</span></span> <span data-ttu-id="3f2ec-167">當您在裝置上使用多個 Microsoft 產品時，可能會發生這種情況。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-167">This situation can happen if you are using multiple Microsoft products on your device.</span></span> <span data-ttu-id="3f2ec-168">根據發佈和伺服器的版本而定，存放庫別名可能與下列範例中的不同。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-168">Depending on the distribution and the version of your server, the repository alias might be different than the one in the following example.</span></span>
+    <span data-ttu-id="e719c-165">如果您已在裝置上設定多個 Microsoft 存放庫，您可以專門瞭解要從其中安裝套件的存放庫。</span><span class="sxs-lookup"><span data-stu-id="e719c-165">If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from.</span></span> <span data-ttu-id="e719c-166">下列範例會顯示如何在 `production` `insiders-fast` 此裝置上設定了存放庫通道時，從通道安裝套件。</span><span class="sxs-lookup"><span data-stu-id="e719c-166">The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device.</span></span> <span data-ttu-id="e719c-167">當您在裝置上使用多個 Microsoft 產品時，可能會發生這種情況。</span><span class="sxs-lookup"><span data-stu-id="e719c-167">This situation can happen if you are using multiple Microsoft products on your device.</span></span> <span data-ttu-id="e719c-168">根據發佈和伺服器的版本而定，存放庫別名可能與下列範例中的不同。</span><span class="sxs-lookup"><span data-stu-id="e719c-168">Depending on the distribution and the version of your server, the repository alias might be different than the one in the following example.</span></span>
 
     ```bash
     # list all repositories
@@ -223,13 +223,13 @@ ms.locfileid: "51058388"
     sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
     ```
 
-- <span data-ttu-id="3f2ec-169">SLES 和變種：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-169">SLES and variants:</span></span>
+- <span data-ttu-id="e719c-169">SLES 和變種：</span><span class="sxs-lookup"><span data-stu-id="e719c-169">SLES and variants:</span></span>
 
     ```bash
     sudo zypper install mdatp
     ```
 
-    <span data-ttu-id="3f2ec-170">如果您已在裝置上設定多個 Microsoft 存放庫，您可以專門瞭解要從其中安裝套件的存放庫。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-170">If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from.</span></span> <span data-ttu-id="3f2ec-171">下列範例會顯示如何在 `production` `insiders-fast` 此裝置上設定了存放庫通道時，從通道安裝套件。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-171">The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device.</span></span> <span data-ttu-id="3f2ec-172">當您在裝置上使用多個 Microsoft 產品時，可能會發生這種情況。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-172">This situation can happen if you are using multiple Microsoft products on your device.</span></span>
+    <span data-ttu-id="e719c-170">如果您已在裝置上設定多個 Microsoft 存放庫，您可以專門瞭解要從其中安裝套件的存放庫。</span><span class="sxs-lookup"><span data-stu-id="e719c-170">If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from.</span></span> <span data-ttu-id="e719c-171">下列範例會顯示如何在 `production` `insiders-fast` 此裝置上設定了存放庫通道時，從通道安裝套件。</span><span class="sxs-lookup"><span data-stu-id="e719c-171">The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device.</span></span> <span data-ttu-id="e719c-172">當您在裝置上使用多個 Microsoft 產品時，可能會發生這種情況。</span><span class="sxs-lookup"><span data-stu-id="e719c-172">This situation can happen if you are using multiple Microsoft products on your device.</span></span>
 
     ```bash
     zypper repos
@@ -246,13 +246,13 @@ ms.locfileid: "51058388"
     sudo zypper install packages-microsoft-com-prod:mdatp
     ```
 
-- <span data-ttu-id="3f2ec-173">Ubuntu 和 Debian 系統：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-173">Ubuntu and Debian system:</span></span>
+- <span data-ttu-id="e719c-173">Ubuntu 和 Debian 系統：</span><span class="sxs-lookup"><span data-stu-id="e719c-173">Ubuntu and Debian system:</span></span>
 
     ```bash
     sudo apt-get install mdatp
     ```
 
-    <span data-ttu-id="3f2ec-174">如果您已在裝置上設定多個 Microsoft 存放庫，您可以專門瞭解要從其中安裝套件的存放庫。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-174">If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from.</span></span> <span data-ttu-id="3f2ec-175">下列範例會顯示如何在 `production` `insiders-fast` 此裝置上設定了存放庫通道時，從通道安裝套件。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-175">The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device.</span></span> <span data-ttu-id="3f2ec-176">當您在裝置上使用多個 Microsoft 產品時，可能會發生這種情況。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-176">This situation can happen if you are using multiple Microsoft products on your device.</span></span>
+    <span data-ttu-id="e719c-174">如果您已在裝置上設定多個 Microsoft 存放庫，您可以專門瞭解要從其中安裝套件的存放庫。</span><span class="sxs-lookup"><span data-stu-id="e719c-174">If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from.</span></span> <span data-ttu-id="e719c-175">下列範例會顯示如何在 `production` `insiders-fast` 此裝置上設定了存放庫通道時，從通道安裝套件。</span><span class="sxs-lookup"><span data-stu-id="e719c-175">The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device.</span></span> <span data-ttu-id="e719c-176">當您在裝置上使用多個 Microsoft 產品時，可能會發生這種情況。</span><span class="sxs-lookup"><span data-stu-id="e719c-176">This situation can happen if you are using multiple Microsoft products on your device.</span></span>
 
     ```bash
     cat /etc/apt/sources.list.d/*
@@ -265,18 +265,18 @@ ms.locfileid: "51058388"
     sudo apt -t bionic install mdatp
     ```
 
-## <a name="download-the-onboarding-package"></a><span data-ttu-id="3f2ec-177">下載上架套件</span><span class="sxs-lookup"><span data-stu-id="3f2ec-177">Download the onboarding package</span></span>
+## <a name="download-the-onboarding-package"></a><span data-ttu-id="e719c-177">下載上架套件</span><span class="sxs-lookup"><span data-stu-id="e719c-177">Download the onboarding package</span></span>
 
-<span data-ttu-id="3f2ec-178">從 Microsoft Defender 安全中心下載上架套件：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-178">Download the onboarding package from Microsoft Defender Security Center:</span></span>
+<span data-ttu-id="e719c-178">從 Microsoft Defender 安全中心下載上架套件：</span><span class="sxs-lookup"><span data-stu-id="e719c-178">Download the onboarding package from Microsoft Defender Security Center:</span></span>
 
-1. <span data-ttu-id="3f2ec-179">在 Microsoft Defender Security Center 中，移至 [ **設定] > 裝置管理 > 上架**]。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-179">In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.</span></span>
-2. <span data-ttu-id="3f2ec-180">在第一個下拉式功能表中，選取 [ **Linux 伺服器** ] 做為作業系統。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-180">In the first drop-down menu, select **Linux Server** as the operating system.</span></span> <span data-ttu-id="3f2ec-181">在第二個下拉式功能表中，選取 [ **本機腳本 (，最多10個裝置)** 做為部署方法。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-181">In the second drop-down menu, select **Local Script (for up to 10 devices)** as the deployment method.</span></span>
-3. <span data-ttu-id="3f2ec-182">選取 [ **下載上架] 套件**。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-182">Select **Download onboarding package**.</span></span> <span data-ttu-id="3f2ec-183">將檔案儲存為 WindowsDefenderATPOnboardingPackage.zip。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-183">Save the file as WindowsDefenderATPOnboardingPackage.zip.</span></span>
+1. <span data-ttu-id="e719c-179">在 Microsoft Defender Security Center 中，移至 [ **設定] > 裝置管理 > 上架**]。</span><span class="sxs-lookup"><span data-stu-id="e719c-179">In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.</span></span>
+2. <span data-ttu-id="e719c-180">在第一個下拉式功能表中，選取 [ **Linux 伺服器** ] 做為作業系統。</span><span class="sxs-lookup"><span data-stu-id="e719c-180">In the first drop-down menu, select **Linux Server** as the operating system.</span></span> <span data-ttu-id="e719c-181">在第二個下拉式功能表中，選取 [ **本機腳本 (，最多10個裝置)** 做為部署方法。</span><span class="sxs-lookup"><span data-stu-id="e719c-181">In the second drop-down menu, select **Local Script (for up to 10 devices)** as the deployment method.</span></span>
+3. <span data-ttu-id="e719c-182">選取 [ **下載上架] 套件**。</span><span class="sxs-lookup"><span data-stu-id="e719c-182">Select **Download onboarding package**.</span></span> <span data-ttu-id="e719c-183">將檔案儲存為 WindowsDefenderATPOnboardingPackage.zip。</span><span class="sxs-lookup"><span data-stu-id="e719c-183">Save the file as WindowsDefenderATPOnboardingPackage.zip.</span></span>
 
     ![Microsoft Defender 安全中心螢幕擷取畫面](images/atp-portal-onboarding-linux.png)
 
-4. <span data-ttu-id="3f2ec-185">在命令提示字元中，確認您有檔案。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-185">From a command prompt, verify that you have the file.</span></span>
-    <span data-ttu-id="3f2ec-186">解壓縮封存的內容：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-186">Extract the contents of the archive:</span></span>
+4. <span data-ttu-id="e719c-185">在命令提示字元中，確認您有檔案。</span><span class="sxs-lookup"><span data-stu-id="e719c-185">From a command prompt, verify that you have the file.</span></span>
+    <span data-ttu-id="e719c-186">解壓縮封存的內容：</span><span class="sxs-lookup"><span data-stu-id="e719c-186">Extract the contents of the archive:</span></span>
 
     ```bash
     ls -l
@@ -296,66 +296,66 @@ ms.locfileid: "51058388"
     ```
 
 
-## <a name="client-configuration"></a><span data-ttu-id="3f2ec-187">用戶端設定</span><span class="sxs-lookup"><span data-stu-id="3f2ec-187">Client configuration</span></span>
+## <a name="client-configuration"></a><span data-ttu-id="e719c-187">用戶端設定</span><span class="sxs-lookup"><span data-stu-id="e719c-187">Client configuration</span></span>
 
-1. <span data-ttu-id="3f2ec-188">將 MicrosoftDefenderATPOnboardingLinuxServer.py 複製到目標裝置。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-188">Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target device.</span></span>
+1. <span data-ttu-id="e719c-188">將 MicrosoftDefenderATPOnboardingLinuxServer.py 複製到目標裝置。</span><span class="sxs-lookup"><span data-stu-id="e719c-188">Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target device.</span></span>
 
-    <span data-ttu-id="3f2ec-189">最初，用戶端裝置不會與組織產生關聯。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-189">Initially the client device is not associated with an organization.</span></span> <span data-ttu-id="3f2ec-190">請注意， *orgId* 屬性是空白的：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-190">Note that the *orgId* attribute is blank:</span></span>
+    <span data-ttu-id="e719c-189">最初，用戶端裝置不會與組織產生關聯。</span><span class="sxs-lookup"><span data-stu-id="e719c-189">Initially the client device is not associated with an organization.</span></span> <span data-ttu-id="e719c-190">請注意， *orgId* 屬性是空白的：</span><span class="sxs-lookup"><span data-stu-id="e719c-190">Note that the *orgId* attribute is blank:</span></span>
 
     ```bash
     mdatp health --field org_id
     ```
 
-2. <span data-ttu-id="3f2ec-191">執行 MicrosoftDefenderATPOnboardingLinuxServer.py，請注意，為了執行此命令，您必須 `python` 安裝在裝置上：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-191">Run MicrosoftDefenderATPOnboardingLinuxServer.py, and note that, in order to run this command, you must have `python` installed on the device:</span></span>
+2. <span data-ttu-id="e719c-191">執行 MicrosoftDefenderATPOnboardingLinuxServer.py，請注意，為了執行此命令，您必須 `python` 安裝在裝置上：</span><span class="sxs-lookup"><span data-stu-id="e719c-191">Run MicrosoftDefenderATPOnboardingLinuxServer.py, and note that, in order to run this command, you must have `python` installed on the device:</span></span>
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-3. <span data-ttu-id="3f2ec-192">請確認裝置現在與您的組織有關聯，並報告有效的組織識別碼：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-192">Verify that the device is now associated with your organization and reports a valid organization identifier:</span></span>
+3. <span data-ttu-id="e719c-192">請確認裝置現在與您的組織有關聯，並報告有效的組織識別碼：</span><span class="sxs-lookup"><span data-stu-id="e719c-192">Verify that the device is now associated with your organization and reports a valid organization identifier:</span></span>
 
     ```bash
     mdatp health --field org_id
     ```
 
-4. <span data-ttu-id="3f2ec-193">完成安裝後幾分鐘之後，您可以執行下列命令來查看狀態。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-193">A few minutes after you complete the installation, you can see the status by running the following command.</span></span> <span data-ttu-id="3f2ec-194">傳回值 `1` 表示產品如預期般運作：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-194">A return value of `1` denotes that the product is functioning as expected:</span></span>
+4. <span data-ttu-id="e719c-193">完成安裝後幾分鐘之後，您可以執行下列命令來查看狀態。</span><span class="sxs-lookup"><span data-stu-id="e719c-193">A few minutes after you complete the installation, you can see the status by running the following command.</span></span> <span data-ttu-id="e719c-194">傳回值 `1` 表示產品如預期般運作：</span><span class="sxs-lookup"><span data-stu-id="e719c-194">A return value of `1` denotes that the product is functioning as expected:</span></span>
 
     ```bash
     mdatp health --field healthy
     ```
 
     > [!IMPORTANT]
-    > <span data-ttu-id="3f2ec-195">產品第一次啟動時，會下載最新的反惡意程式碼定義。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-195">When the product starts for the first time, it downloads the latest antimalware definitions.</span></span> <span data-ttu-id="3f2ec-196">視您的網際網路連線而定，這可能需要幾分鐘的時間。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-196">Depending on your Internet connection, this can take up to a few minutes.</span></span> <span data-ttu-id="3f2ec-197">在這段時間內，上述命令會傳回值 `false` 。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-197">During this time the above command returns a value of `false`.</span></span> <span data-ttu-id="3f2ec-198">您可以使用下列命令來檢查定義更新的狀態：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-198">You can check the status of the definition update using the following command:</span></span>
+    > <span data-ttu-id="e719c-195">產品第一次啟動時，會下載最新的反惡意程式碼定義。</span><span class="sxs-lookup"><span data-stu-id="e719c-195">When the product starts for the first time, it downloads the latest antimalware definitions.</span></span> <span data-ttu-id="e719c-196">視您的網際網路連線而定，這可能需要幾分鐘的時間。</span><span class="sxs-lookup"><span data-stu-id="e719c-196">Depending on your Internet connection, this can take up to a few minutes.</span></span> <span data-ttu-id="e719c-197">在這段時間內，上述命令會傳回值 `false` 。</span><span class="sxs-lookup"><span data-stu-id="e719c-197">During this time the above command returns a value of `false`.</span></span> <span data-ttu-id="e719c-198">您可以使用下列命令來檢查定義更新的狀態：</span><span class="sxs-lookup"><span data-stu-id="e719c-198">You can check the status of the definition update using the following command:</span></span>
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > <span data-ttu-id="3f2ec-199">請注意，在完成初始安裝之後，您可能還需要設定 proxy。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-199">Please note that you may also need to configure a proxy after completing the initial installation.</span></span> <span data-ttu-id="3f2ec-200">請參閱 [Configure Defender for configuration For Linux for 靜態 proxy 探索：安裝後設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-200">See [Configure Defender for Endpoint for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).</span></span>
+    > <span data-ttu-id="e719c-199">請注意，在完成初始安裝之後，您可能還需要設定 proxy。</span><span class="sxs-lookup"><span data-stu-id="e719c-199">Please note that you may also need to configure a proxy after completing the initial installation.</span></span> <span data-ttu-id="e719c-200">請參閱 [Configure Defender for configuration For Linux for 靜態 proxy 探索：安裝後設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。</span><span class="sxs-lookup"><span data-stu-id="e719c-200">See [Configure Defender for Endpoint for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).</span></span>
 
-5. <span data-ttu-id="3f2ec-201">執行偵測測試，確認裝置已正確架及報表服務。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-201">Run a detection test to verify that the device is properly onboarded and reporting to the service.</span></span> <span data-ttu-id="3f2ec-202">在新的架裝置上執行下列步驟：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-202">Perform the following steps on the newly onboarded device:</span></span>
+5. <span data-ttu-id="e719c-201">執行偵測測試，確認裝置已正確架及報表服務。</span><span class="sxs-lookup"><span data-stu-id="e719c-201">Run a detection test to verify that the device is properly onboarded and reporting to the service.</span></span> <span data-ttu-id="e719c-202">在新的架裝置上執行下列步驟：</span><span class="sxs-lookup"><span data-stu-id="e719c-202">Perform the following steps on the newly onboarded device:</span></span>
 
-    - <span data-ttu-id="3f2ec-203">確定即時保護已啟用 (由執行下列命令的結果所表示 `1`) ：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-203">Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):</span></span>
+    - <span data-ttu-id="e719c-203">確定即時保護已啟用 (由執行下列命令的結果所表示 `1`) ：</span><span class="sxs-lookup"><span data-stu-id="e719c-203">Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):</span></span>
 
         ```bash
         mdatp health --field real_time_protection_enabled
         ```
 
-    - <span data-ttu-id="3f2ec-204">開啟終端視窗。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-204">Open a Terminal window.</span></span> <span data-ttu-id="3f2ec-205">複製並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-205">Copy and execute the following command:</span></span>
+    - <span data-ttu-id="e719c-204">開啟終端視窗。</span><span class="sxs-lookup"><span data-stu-id="e719c-204">Open a Terminal window.</span></span> <span data-ttu-id="e719c-205">複製並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="e719c-205">Copy and execute the following command:</span></span>
 
         ``` bash
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - <span data-ttu-id="3f2ec-206">檔案應該已被用於 Linux 的 Endpoint 的 Defender 隔離。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-206">The file should have been quarantined by Defender for Endpoint for Linux.</span></span> <span data-ttu-id="3f2ec-207">使用下列命令列出所有偵測到的威脅：</span><span class="sxs-lookup"><span data-stu-id="3f2ec-207">Use the following command to list all the detected threats:</span></span>
+    - <span data-ttu-id="e719c-206">檔案應該已被用於 Linux 的 Endpoint 的 Defender 隔離。</span><span class="sxs-lookup"><span data-stu-id="e719c-206">The file should have been quarantined by Defender for Endpoint for Linux.</span></span> <span data-ttu-id="e719c-207">使用下列命令列出所有偵測到的威脅：</span><span class="sxs-lookup"><span data-stu-id="e719c-207">Use the following command to list all the detected threats:</span></span>
 
         ```bash
         mdatp threat list
         ```
 
-## <a name="installer-script"></a><span data-ttu-id="3f2ec-208">Installer 腳本</span><span class="sxs-lookup"><span data-stu-id="3f2ec-208">Installer script</span></span>
+## <a name="installer-script"></a><span data-ttu-id="e719c-208">Installer 腳本</span><span class="sxs-lookup"><span data-stu-id="e719c-208">Installer script</span></span>
 
-<span data-ttu-id="3f2ec-209">或者，您也可以使用我們[公開 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/)中提供的自動[安裝程式 bash 腳本](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh)。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-209">Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).</span></span>
-<span data-ttu-id="3f2ec-210">腳本會識別發行及版本，並設定裝置以拉入最新的套件並加以安裝。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-210">The script identifies the distribution and version, and sets up the device to pull the latest package and install it.</span></span>
-<span data-ttu-id="3f2ec-211">您也可以使用所提供的腳本進行上架。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-211">You can also onboard with a provided script.</span></span>
+<span data-ttu-id="e719c-209">或者，您也可以使用我們[公開 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/)中提供的自動[安裝程式 bash 腳本](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh)。</span><span class="sxs-lookup"><span data-stu-id="e719c-209">Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).</span></span>
+<span data-ttu-id="e719c-210">腳本會識別發行及版本，並設定裝置以拉入最新的套件並加以安裝。</span><span class="sxs-lookup"><span data-stu-id="e719c-210">The script identifies the distribution and version, and sets up the device to pull the latest package and install it.</span></span>
+<span data-ttu-id="e719c-211">您也可以使用所提供的腳本進行上架。</span><span class="sxs-lookup"><span data-stu-id="e719c-211">You can also onboard with a provided script.</span></span>
 
 ```bash
 ❯ ./mde_installer.sh --help
@@ -374,16 +374,16 @@ Options:
 -h|--help         display help
 ```
 
-<span data-ttu-id="3f2ec-212">若要 [深入閱讀](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)，請參閱。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-212">Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).</span></span>
+<span data-ttu-id="e719c-212">若要 [深入閱讀](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)，請參閱。</span><span class="sxs-lookup"><span data-stu-id="e719c-212">Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).</span></span>
 
-## <a name="log-installation-issues"></a><span data-ttu-id="3f2ec-213">記錄安裝問題</span><span class="sxs-lookup"><span data-stu-id="3f2ec-213">Log installation issues</span></span>
+## <a name="log-installation-issues"></a><span data-ttu-id="e719c-213">記錄安裝問題</span><span class="sxs-lookup"><span data-stu-id="e719c-213">Log installation issues</span></span>
 
-<span data-ttu-id="3f2ec-214">如需如何找到錯誤發生時所建立的自動產生記錄，請參閱 [記錄安裝的問題](linux-resources.md#log-installation-issues) 。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-214">See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.</span></span>
+<span data-ttu-id="e719c-214">如需如何找到錯誤發生時所建立的自動產生記錄，請參閱 [記錄安裝的問題](linux-resources.md#log-installation-issues) 。</span><span class="sxs-lookup"><span data-stu-id="e719c-214">See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.</span></span>
 
-## <a name="operating-system-upgrades"></a><span data-ttu-id="3f2ec-215">作業系統升級</span><span class="sxs-lookup"><span data-stu-id="3f2ec-215">Operating system upgrades</span></span>
+## <a name="operating-system-upgrades"></a><span data-ttu-id="e719c-215">作業系統升級</span><span class="sxs-lookup"><span data-stu-id="e719c-215">Operating system upgrades</span></span>
 
-<span data-ttu-id="3f2ec-216">將您的作業系統升級為新的主要版本時，您必須先卸載適用于 Linux 的 Endpoint 的 Defender，安裝升級，最後在裝置上為 Linux 重新設定 Defender for Linux。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-216">When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.</span></span>
+<span data-ttu-id="e719c-216">將您的作業系統升級為新的主要版本時，您必須先卸載適用于 Linux 的 Endpoint 的 Defender，安裝升級，最後在裝置上為 Linux 重新設定 Defender for Linux。</span><span class="sxs-lookup"><span data-stu-id="e719c-216">When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.</span></span>
 
-## <a name="uninstallation"></a><span data-ttu-id="3f2ec-217">卸載</span><span class="sxs-lookup"><span data-stu-id="3f2ec-217">Uninstallation</span></span>
+## <a name="uninstallation"></a><span data-ttu-id="e719c-217">卸載</span><span class="sxs-lookup"><span data-stu-id="e719c-217">Uninstallation</span></span>
 
-<span data-ttu-id="3f2ec-218">如需如何從用戶端裝置移除適用于 Linux 之 Defender 的詳細資訊，請參閱 [Uninstall](linux-resources.md#uninstall) 。</span><span class="sxs-lookup"><span data-stu-id="3f2ec-218">See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint for Linux from client devices.</span></span>
+<span data-ttu-id="e719c-218">如需如何從用戶端裝置移除適用于 Linux 之 Defender 的詳細資訊，請參閱 [Uninstall](linux-resources.md#uninstall) 。</span><span class="sxs-lookup"><span data-stu-id="e719c-218">See [Uninstall](linux-resources.md#uninstall) for details on how to remove Defender for Endpoint for Linux from client devices.</span></span>

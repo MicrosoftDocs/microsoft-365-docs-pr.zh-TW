@@ -65,4 +65,4 @@
 - name: 安全性事件管理
   items:
     - name: 回應遭入侵的電子郵件帳戶
-      href: ../security/defender-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
+      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json

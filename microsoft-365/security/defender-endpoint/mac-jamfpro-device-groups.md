@@ -18,38 +18,38 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3e330f135e391214ffe25289d58c2d0de3257be0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 36db18ba16bb51f3be0cbaba7d4ca4d27195e85d
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057403"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187658"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-for-macos-device-groups-in-jamf-pro"></a><span data-ttu-id="2ac10-104">在 Jamf Pro 中為 macOS 裝置群組設定 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="2ac10-104">Set up Microsoft Defender for Endpoint for macOS device groups in Jamf Pro</span></span>
+# <a name="set-up-microsoft-defender-for-endpoint-for-macos-device-groups-in-jamf-pro"></a><span data-ttu-id="e708f-104">在 Jamf Pro 中為 macOS 裝置群組設定 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="e708f-104">Set up Microsoft Defender for Endpoint for macOS device groups in Jamf Pro</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="2ac10-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="2ac10-105">**Applies to:**</span></span>
-- [<span data-ttu-id="2ac10-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="2ac10-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [<span data-ttu-id="2ac10-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2ac10-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="e708f-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="e708f-105">**Applies to:**</span></span>
+- [<span data-ttu-id="e708f-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="e708f-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="e708f-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e708f-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="2ac10-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="2ac10-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="2ac10-109">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="2ac10-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="e708f-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="e708f-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="e708f-109">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="e708f-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-<span data-ttu-id="2ac10-110">設定裝置群組，類似于群組原則組織統一 (Ou) 、Microsoft 端點 Configuration Manager 的裝置集合，以及 Intune 的裝置群組。</span><span class="sxs-lookup"><span data-stu-id="2ac10-110">Set up the device groups similar to Group policy  organizational unite (OUs), Microsoft Endpoint Configuration Manager's device collection, and Intune's device groups.</span></span>
+<span data-ttu-id="e708f-110">設定裝置群組，類似于群組原則組織統一 (Ou) 、Microsoft 端點 Configuration Manager 的裝置集合，以及 Intune 的裝置群組。</span><span class="sxs-lookup"><span data-stu-id="e708f-110">Set up the device groups similar to Group policy  organizational unite (OUs), Microsoft Endpoint Configuration Manager's device collection, and Intune's device groups.</span></span>
 
-1. <span data-ttu-id="2ac10-111">流覽至 [ **靜態電腦群組**]。</span><span class="sxs-lookup"><span data-stu-id="2ac10-111">Navigate to **Static Computer Groups**.</span></span>
+1. <span data-ttu-id="e708f-111">流覽至 [ **靜態電腦群組**]。</span><span class="sxs-lookup"><span data-stu-id="e708f-111">Navigate to **Static Computer Groups**.</span></span>
 
-2. <span data-ttu-id="2ac10-112">選取 [ **新增**]。</span><span class="sxs-lookup"><span data-stu-id="2ac10-112">Select **New**.</span></span> 
+2. <span data-ttu-id="e708f-112">選取 [ **新增**]。</span><span class="sxs-lookup"><span data-stu-id="e708f-112">Select **New**.</span></span> 
 
     ![Jamf Pro1 的影像](images/jamf-pro-static-group.png)
 
-3. <span data-ttu-id="2ac10-114">提供顯示名稱，然後選取 [ **儲存**]。</span><span class="sxs-lookup"><span data-stu-id="2ac10-114">Provide a display name and select **Save**.</span></span>
+3. <span data-ttu-id="e708f-114">提供顯示名稱，然後選取 [ **儲存**]。</span><span class="sxs-lookup"><span data-stu-id="e708f-114">Provide a display name and select **Save**.</span></span>
 
     ![Jamf Pro2 的影像](images/jamfpro-machine-group.png)
 
-4. <span data-ttu-id="2ac10-116">現在，您會在 [**靜態電腦群組**] 底下看到 **Contoso 的電腦群組**。</span><span class="sxs-lookup"><span data-stu-id="2ac10-116">Now you will see the **Contoso's Machine Group** under **Static Computer Groups**.</span></span>
+4. <span data-ttu-id="e708f-116">現在，您會在 [**靜態電腦群組**] 底下看到 **Contoso 的電腦群組**。</span><span class="sxs-lookup"><span data-stu-id="e708f-116">Now you will see the **Contoso's Machine Group** under **Static Computer Groups**.</span></span>
 
     ![Jamf Pro3 的影像](images/contoso-machine-group.png)
 
-## <a name="next-step"></a><span data-ttu-id="2ac10-118">下一步</span><span class="sxs-lookup"><span data-stu-id="2ac10-118">Next step</span></span>
-- [<span data-ttu-id="2ac10-119">為 Jamf Pro 中的 macOS 原則設定 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="2ac10-119">Set up Microsoft Defender for Endpoint for macOS policies in Jamf Pro</span></span>](mac-jamfpro-policies.md)
+## <a name="next-step"></a><span data-ttu-id="e708f-118">下一步</span><span class="sxs-lookup"><span data-stu-id="e708f-118">Next step</span></span>
+- [<span data-ttu-id="e708f-119">為 Jamf Pro 中的 macOS 原則設定 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="e708f-119">Set up Microsoft Defender for Endpoint for macOS policies in Jamf Pro</span></span>](mac-jamfpro-policies.md)
