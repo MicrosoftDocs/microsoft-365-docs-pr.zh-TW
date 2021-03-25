@@ -18,16 +18,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43324b0f3a0d5d351d7164bb05415899bf7d181c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dc3d775aced2ea3da42312cbf5a4d5e5af9fae50
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057487"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198774"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Linux 中的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## <a name="1012364-30121021123640"></a>101.23.64 (30.121021.12364.0) 
+
+- 將整個掛接點新增至防病毒排除清單的情況，提高效能。 在此版本之前，來自裝載點的檔案活動仍由產品處理。 從這個版本開始，已排除的裝載點的檔案活動會遭到抑制，進而提升產品效能。
+- 將新的選項新增至命令列工具，以查看上次隨選掃描的相關資訊。 若要查看上次隨選掃描的相關資訊，請執行 `mdatp health --details antivirus`
+- & 錯誤修正的其他效能增強功能
 
 ## <a name="1011853"></a>101.18.53
 

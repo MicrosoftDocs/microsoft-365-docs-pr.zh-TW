@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f0e0bf29068bea0f213f8b00403213969f5b9106
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dada110faca71c9e8fcf384eb5bb0a78faefaad9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059636"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199134"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>準備您的 Microsoft 365 Defender 試用實驗室或試驗環境
 
@@ -85,10 +85,10 @@ ms.locfileid: "51059636"
 4. 流覽至 **Express 設定**。
 ![快速設定頁面的圖像](../../media/mtp-eval-4.png) <br>
 
-5. 輸入您的全域系統管理員認證。 按 [下一步 **]**。
+5. 輸入您的全域系統管理員認證。 按 [下一步]。
 ![您應輸入全域系統管理員認證的 [連線到 Azure AD] 頁面影像](../../media/mtp-eval-5.png) <br>
 
-6. 輸入您的 Active Directory 網域服務企業系統管理員認證。 按 [下一步 **]**。
+6. 輸入您的 Active Directory 網域服務企業系統管理員認證。 按 [下一步]。
 ![您應輸入認證的 [連線到 AD DS] 頁面影像](../../media/mtp-eval-6.png) <br>
 
 7. 按一下 [ **安裝** ] 以確認設定。
@@ -105,9 +105,9 @@ ms.locfileid: "51059636"
 
 | 元件                               | 描述                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 設定順序排名 |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-|適用於 Office 365 的 Microsoft Defender|適用於 Office 365 的 Microsoft Defender 可保護組織防範由電子郵件訊息、連結 (URL) 及共同作業工具所造成的惡意威脅。 <br> [瞭解更多資訊。](/microsoft-365/security/defender-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
+|適用於 Office 365 的 Microsoft Defender|適用於 Office 365 的 Microsoft Defender 可保護組織防範由電子郵件訊息、連結 (URL) 及共同作業工具所造成的惡意威脅。 <br> [瞭解更多資訊。](/microsoft-365/security/office-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
 |適用於身分識別的 Microsoft Defender|Microsoft Defender for Identity 使用 Active Directory 信號來識別、偵測和調查您組織中的高級威脅、已遭破壞的身分識別，以及惡意的有問必答行為。 <br> [深入了解](/azure-advanced-threat-protection/)。| 2  |
-|Microsoft 雲端應用程式安全性| Microsoft Cloud App Security 是一種雲端存取安全性代理人 (CASB)，可在多個雲端上運作。 它提供對資料傳輸的可見性和控制力，以及完善的分析功能，以識別和應變您的所有雲端服務中的網路威脅。 <br> [深入了解](/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                    |
+|Microsoft Cloud App Security| Microsoft Cloud App Security 是一種雲端存取安全性代理人 (CASB)，可在多個雲端上運作。 它提供對資料傳輸的可見性和控制力，以及完善的分析功能，以識別和應變您的所有雲端服務中的網路威脅。 <br> [深入了解](/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                    |
 |適用於端點的 Microsoft Defender | 適用於端點的 Microsoft Defender 偵測和回應功能可提供近乎即時並可採取行動的進階攻擊偵測。 安全性分析人員可以有效地排定警示的優先順序、深入了解入侵的全貌，並採取回應動作來補救威脅。 <br> [瞭解更多資訊。](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>下一步

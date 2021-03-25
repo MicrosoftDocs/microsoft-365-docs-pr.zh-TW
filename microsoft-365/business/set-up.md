@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 探索 Microsoft 365 商務版 Premium 的設定步驟，包括新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: 4d49ba7ccdb65691756aaa505d0856deb115595b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a06fb48ef5e1386a5c7b4df08500125f37943df6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052227"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198424"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安裝精靈中設定 Microsoft 365 商務版 Premium
 
@@ -107,7 +107,7 @@ ms.locfileid: "51052227"
 
 您在嚮導中設定的原則會自動套用至稱為「*所有使用者*」的 [安全性群組](/office365/admin/create-groups/compare-groups#security-groups)。 您也可以在系統管理中心建立其他群組，以指派原則。
 
-1. 在 [ **加強來自高級網路威脅的保護**] 中，建議您接受預設值，讓 [Office 365 的高級威脅防護](../security/defender-365-security/defender-for-office-365.md) 掃描 office 應用程式中的檔案和連結。
+1. 在 [ **加強來自高級網路威脅的保護**] 中，建議您接受預設值，讓 [Office 365 的高級威脅防護](../security/office-365-security/defender-for-office-365.md) 掃描 office 應用程式中的檔案和連結。
 
     ![[增加保護] 頁面的螢幕擷取畫面。](../media/increasetreatprotection.png)
 

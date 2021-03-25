@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 深入瞭解 Microsoft 365 商務版 Premium 隨附的安全性功能，協助保護電腦、電話和平板電腦上的資料。
-ms.openlocfilehash: d641fc66e27f3c5e0a7c8609e4fa25fac93d8561
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f04a998c74128edac306167617e073c412fce2ea
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052247"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198404"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商務版安全性和合規性功能
 
@@ -63,7 +63,7 @@ Microsoft 365 商務版特優提供簡化的安全性功能，以協助保護電
 
 Microsoft 365 商務進階版中的進階功能可協助您保護您的企業免受網路威脅並保護敏感性資訊。
   
-- **[適用於 Office 365 的 Microsoft Defender](../security/defender-365-security/defender-for-office-365.md)**
+- **[適用於 Office 365 的 Microsoft Defender](../security/office-365-security/defender-for-office-365.md)**
     
     Microsoft Defender for Office 365 可協助您的企業防禦複雜的網路釣魚和勒索軟體攻擊，其設計是為了損害員工或客戶資訊。 功能包括：
     

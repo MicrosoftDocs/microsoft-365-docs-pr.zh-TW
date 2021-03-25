@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南來啟用 Microsoft 365 for enterprise 測試環境中的其他 Microsoft 365 安全性設定。
-ms.openlocfilehash: 186452396af4227a94a7f6cd0fa0109e9d6a7e17
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d1bff8b736e5074f621a173d206f7c5f77841b25
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051267"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198348"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>提高您的 Microsoft 365 for enterprise 測試環境的 Microsoft 365 安全性
 
@@ -47,7 +47,7 @@ ms.locfileid: "51051267"
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>設定線上 SharePoint 封鎖不支援新式驗證的應用程式
 
-不支援新式驗證的應用程式不能有套用身分 [識別和裝置存取](../security/defender-365-security/microsoft-365-policies-configurations.md) 設定，這是保護您的 Microsoft 365 訂閱及其數位資產的重要元素。 
+不支援新式驗證的應用程式不能有套用身分 [識別和裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md) 設定，這是保護您的 Microsoft 365 訂閱及其數位資產的重要元素。 
 
 1. 移至 Microsoft 365 系統管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com)) 並以全域系統管理員帳戶登入您的 microsoft 365 測試實驗室訂閱。
     
@@ -77,7 +77,7 @@ ms.locfileid: "51051267"
 
 惡意程式碼是由病毒和間諜軟體組成。 病毒會感染其他程式和資料，同時會擴散到整個電腦，找尋可攻擊的程式。 間諜軟體會收集您的個人資訊 (如登入資訊和個人資料)，並將其傳回給惡意程式碼作者。 
 
-Microsoft 365 具有內建的惡意程式碼和垃圾郵件篩選功能，可協助保護來自惡意軟體的輸入和輸出郵件，並協助您防範垃圾郵件。 如需詳細資訊，請參閱 [反垃圾郵件 & 反惡意程式碼保護](../security/defender-365-security/anti-spam-and-anti-malware-protection.md)。
+Microsoft 365 具有內建的惡意程式碼和垃圾郵件篩選功能，可協助保護來自惡意軟體的輸入和輸出郵件，並協助您防範垃圾郵件。 如需詳細資訊，請參閱 [反垃圾郵件 & 反惡意程式碼保護](../security/office-365-security/anti-spam-and-anti-malware-protection.md)。
 
 若要確定在具有共同附件檔案類型的檔案上執行反惡意程式碼處理：
 
@@ -100,7 +100,7 @@ Microsoft 365 中的威脅管理可協助您控制和管理行動裝置對組織
 
 請密切瞭解儀表板上的所有卡片，以熟悉所提供的資訊。
 
-如需詳細資訊，請參閱 [安全性儀表板](../security/defender-365-security/security-dashboard.md)。
+如需詳細資訊，請參閱 [安全性儀表板](../security/office-365-security/security-dashboard.md)。
 
 
 ## <a name="phase-4-examine-microsoft-secure-score"></a>階段4：檢查 Microsoft 安全分數

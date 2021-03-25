@@ -12,12 +12,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 19e501ff95b32841cab53bff4ef2d1b69d0bd433
-  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+  ms.openlocfilehash: d53a1a75439fc1922f4b3facebb483298cfe9919
+  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/23/2021
-  ms.locfileid: "51050827"
+  ms.lasthandoff: 03/25/2021
+  ms.locfileid: "51198110"
 productDirectory:
   title: 使用 Microsoft 365 商務進階版保護遠端工作
   items:
@@ -109,7 +109,7 @@ conceptualContent:
       text: 查看更多
   - title: 管理威脅
     links:
-    - url: ../security/defender-365-security/defender-for-office-365.md
+    - url: ../security/office-365-security/defender-for-office-365.md
       itemType: overview
       text: 進階威脅防護
     - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md

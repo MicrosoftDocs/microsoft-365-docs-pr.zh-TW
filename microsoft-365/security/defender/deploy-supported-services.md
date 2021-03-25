@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0902dce0af3c101cbaf7ff526beb71e9f46a1bf4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 434c318be404ffb04cac7a05664c8f001bb46507
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187514"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198858"
 ---
 # <a name="deploy-supported-services"></a>部署支援服務
 
@@ -78,7 +78,7 @@ Microsoft 365 E5，E5 Security，A5，or A5 安全性授權或有效的授權組
 | 服務 | 布建指示 | 初始設定 |
 | ------ | ------ | ------ |
 | 適用於端點的 Microsoft Defender | [Microsoft Defender for Endpoint 部署指南](../defender-endpoint/deployment-phases.md) | *請參閱布建指示* |
-|適用於 Office 365 的 Microsoft Defender | *無，使用 Office 365 布建* | [設定適用於 Office 365 的 Microsoft Defender 原則](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) |
+|適用於 Office 365 的 Microsoft Defender | *無，使用 Office 365 布建* | [設定適用於 Office 365 的 Microsoft Defender 原則](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 | 適用於身分識別的 Microsoft Defender | [快速入門：建立您的 Microsoft Defender for Identity 實例](/azure-advanced-threat-protection/install-atp-step1) | *請參閱布建指示* |
 | Microsoft Cloud App Security | *無* | [快速入門： Microsoft Cloud App Security 快速入門](/cloud-app-security/getting-started-with-cloud-app-security) |
 
@@ -89,6 +89,6 @@ Microsoft 365 E5，E5 Security，A5，or A5 安全性授權或有效的授權組
 - [Microsoft 365 Defender 概述](microsoft-365-defender.md)
 - [開啟 Microsoft 365 Defender](m365d-enable.md)
 - [Microsoft Defender for Endpoint 簡介](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Microsoft Defender for Office 365 簡介](../defender-365-security/defender-for-office-365.md)
+- [Microsoft Defender for Office 365 簡介](../office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security 概觀](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender 身分識別概述](/azure-advanced-threat-protection/what-is-atp)

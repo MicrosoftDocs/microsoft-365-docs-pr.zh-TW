@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定 Microsoft Defender for Office 365，並保護機密資料，避免網路釣魚、惡意程式碼和其他威脅。
-ms.openlocfilehash: 80ad3767b277e4808b6df4bdd977688794649e11
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6526ed9a849e83f19f74656004978089ce367ea9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050839"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198384"
 ---
 # <a name="increase-threat-protection"></a>加強威脅防護
 
@@ -57,7 +57,7 @@ ms.locfileid: "51050839"
 
 6. 選取 [ **儲存]。**
 
-如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](../security/defender-365-security/anti-malware-protection.md)。
+如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](../security/office-365-security/anti-malware-protection.md)。
 
 ## <a name="protect-against-ransomware"></a>防範勒索軟體
 
@@ -79,7 +79,7 @@ ms.locfileid: "51050839"
 
 5. 針對規則套用下表中的設定。 除非您想要變更預設值，否則請對其他設定使用預設值。
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
 
 |設定|開啟 Office 檔案的附件之前警告使用者||
 |---|---|---|
@@ -111,7 +111,7 @@ ms.locfileid: "51050839"
 
 5. 套用下表中的設定。 除非您想要變更預設值，否則請對其他設定使用預設值。
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
 
 |設定|開啟 Office 檔案的附件之前警告使用者|
 |---|---|
@@ -138,7 +138,7 @@ ms.locfileid: "51050839"
 
 4. 在 [ **反網路釣魚** ] 頁面上，選取 [ **+ 建立**]。 嚮導會啟動以逐步逐步定義您的反網路釣魚原則。
 
-5. 依照下表的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](../security/defender-365-security/set-up-anti-phishing-policies.md)。
+5. 依照下表的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 6. 檢查您的設定之後，請選擇 [ **建立這個原則** ] 或 [ **儲存**] （如適用）。
 
@@ -181,7 +181,7 @@ ms.locfileid: "51050839"
 |在偵測時重新導向附件|啟用重新導向 (選取此方塊) 輸入系統管理員帳戶或隔離的信箱設定。          若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。 (選取此方塊) 。|
 |套用對象|收件者網域是。 . . 選取您的網域。|
 
-如需詳細資訊，請參閱 [在 Microsoft Defender For Office 365 中設定反網路釣魚原則](../security/defender-365-security/set-up-anti-phishing-policies.md)。
+如需詳細資訊，請參閱 [在 Microsoft Defender For Office 365 中設定反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>使用安全連結防禦網路釣魚攻擊
 
@@ -207,7 +207,7 @@ ms.locfileid: "51050839"
 
 2. 在 [ **電子郵件除外，套用至內容**] 底下，選取 [適用于 **企業的 Microsoft 365 應用程式、Office iOS 和 Android**]。
 
-3. 選取 **[儲存]**。
+3. 選取 [儲存]。
 
 若要建立新的原則針對您網域中的所有收件者：
 
@@ -215,7 +215,7 @@ ms.locfileid: "51050839"
 
 2. 套用下表所列的設定。
 
-3. 選取 **[儲存]**。
+3. 選取 [儲存]。
 
 |設定或選項|建議的設定|
 |---|---|
@@ -224,7 +224,7 @@ ms.locfileid: "51050839"
 |使用安全附件掃描可下載的內容|選取此方塊。|
 |套用對象|收件者網域是。 . . 選取您的網域。|
 
-如需詳細資訊，請參閱 [安全連結](../security/defender-365-security/safe-links.md)。
+如需詳細資訊，請參閱 [安全連結](../security/office-365-security/safe-links.md)。
 
 ## <a name="go-to-intune-admin-center"></a>移至 Intune 系統管理中心
 

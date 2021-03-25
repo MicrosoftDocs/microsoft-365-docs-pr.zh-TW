@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何只用兩個測試帳戶來試驗自訂365網域的電子郵件功能。
-ms.openlocfilehash: e710218a2a5cb9821abb213eb2ebb0c92c9bdc42
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bdcf86474a7f2edb458075e884c20e56d231df6d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050687"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197836"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>從我的自訂網域試驗 Microsoft 365
 
@@ -115,7 +115,7 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 
 確認您已在 Microsoft 365 或 Office 365 中完成下列作業：
 
-1. 若要設定連接器，您需要指派的權限才可以開始。 若要檢查所需的權限，請參閱 [EOP 中的功能權限](https://docs.microsoft.com/microsoft-365/security/defender-365-security/feature-permissions-in-eop)主題中的 Microsoft 365 和 Office 365 連接器項目。
+1. 若要設定連接器，您需要指派的權限才可以開始。 若要檢查所需的權限，請參閱 [EOP 中的功能權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop)主題中的 Microsoft 365 和 Office 365 連接器項目。
 
 2. 如果您想要 EOP 或 Exchange Online，將您電子郵件伺服器的電子郵件轉送至網際網路，請執行下列其中一項：
 

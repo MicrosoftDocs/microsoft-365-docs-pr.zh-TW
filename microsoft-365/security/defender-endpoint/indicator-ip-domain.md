@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0196148c9dbf3ec769594d714524a3fd9e4d18fd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185954"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198480"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>為 IPs 和 URLs/網域建立指示器 
 
@@ -34,7 +34,8 @@ ms.locfileid: "51185954"
 
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
 Defender for Endpoint 可以封鎖 Microsoft 認為是惡意 IPs/URLs、透過 Windows Defender SmartScreen Microsoft browser，以及透過網路瀏覽器以外的網路保護或瀏覽器以外的呼叫進行保護。
@@ -57,8 +58,10 @@ Defender for Endpoint 可以封鎖 Microsoft 認為是惡意 IPs/URLs、透過 W
 
 > [!IMPORTANT]
 > 只有外部 Ip 可以新增至 [標記] 清單。 無法為內部 Ip 建立指示器。
-> 在 web 保護案例中，我們建議您在 Microsoft Edge 中使用內建功能。 Microsoft Edge 利用 [網路保護](network-protection.md) 檢查網路流量，並允許 TCP、HTTP 及 HTTPS (TLS) 的封鎖。 對於所有其他程式，web 保護案例會利用網路保護進行檢查及強制執行： <br>
-> 注意：
+> 在 web 保護案例中，我們建議您在 Microsoft Edge 中使用內建功能。 Microsoft Edge 利用 [網路保護](network-protection.md) 檢查網路流量，並允許 TCP、HTTP 及 HTTPS (TLS) 的封鎖。 如果有衝突的 URL 指示器原則，則會套用較長的路徑。 例如，URL 指示器原則的 `https:\\support.microsoft.com/en-us/office` 優先順序會高於 url 指示器原則 `https:\\support.microsoft.com` 。
+
+> [!NOTE]
+> 對於所有其他程式，web 保護案例會利用網路保護進行檢查及強制執行： 
 > - 所有三種通訊協定都支援 IP
 > -  (沒有 CIDR 區塊或 IP 範圍，只支援單一 IP 位址) 
 > - 已加密 URLs (完整路徑) 只能在第一方瀏覽器 (Internet Explorer，Edge) 

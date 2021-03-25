@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/08/2021
-ms.openlocfilehash: 3d278c7fd06b2dd14bd9a8c0dcbe639d3c911828
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054572"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198966"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調查的詳細資料和結果
 
@@ -42,7 +42,7 @@ ms.locfileid: "51054572"
 
 ## <a name="new-unified-investigation-page"></a> (NEW！ ) 整合調查頁面
 
-調查頁面最近已經過更新，可納入整個裝置、電子郵件及共同作業內容的資訊。 新的整合調查頁面會定義一種通用語言，並提供跨 [Microsoft defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 和 [Microsoft defender for Office 365](../defender-365-security/defender-for-office-365.md)進行自動調查的整合體驗。 若要存取「統一調查」頁面，請選取您將在黃色橫幅中看到的連結：
+調查頁面最近已經過更新，可納入整個裝置、電子郵件及共同作業內容的資訊。 新的整合調查頁面會定義一種通用語言，並提供跨 [Microsoft defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 和 [Microsoft defender for Office 365](../office-365-security/defender-for-office-365.md)進行自動調查的整合體驗。 若要存取「統一調查」頁面，請選取您將在黃色橫幅中看到的連結：
 - Office 365 安全性 & 規範中心 (中的任何調查頁面 [https://protection.office.com](https://protection.office.com)) 
 - Microsoft Defender Security Center 中的任何調查頁面 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 
 - 在改進的 Microsoft 365 安全性中心 (中的任何事件或動作中心經驗 [https://security.microsoft.com](https://security.microsoft.com)) 

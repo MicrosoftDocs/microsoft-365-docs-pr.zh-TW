@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: 深入瞭解將協助您快速開始使用 Microsoft 365 中的合規性的工作。
-ms.openlocfilehash: b8a6f98a38dcb6096287cbc2389648c0e7457e5c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 503e15c8b363dcd63c010d31384565f6e1a8af61
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052101"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197920"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>開始使用 Microsoft 365 合規性的快速工作
 
@@ -34,7 +34,7 @@ ms.locfileid: "51052101"
 
 從為組織中的人員指派合規性許可權開始，讓他們能夠執行這些工作，並防止未經授權的人員存取其責任以外的區域。 在您開始設定及執行 Microsoft 365 隨附的規範解決方案之前，您會想確定已將適當的人員指派給 **合規性資料管理員** 和 **合規性管理員** 管理員角色。 您也需要指派 Azure Active Directory 全域讀取器角色的使用者，以在合規性管理員中查看資料。
 
-如需設定許可權並指派系統管理員角色的逐步指引，請參閱 [安全性 & 合規性中心的許可權](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
+如需設定許可權並指派系統管理員角色的逐步指引，請參閱 [安全性 & 合規性中心的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="task-2-know-your-state-of-compliance"></a>工作2：知道您的合規性狀態
 
@@ -49,7 +49,7 @@ ms.locfileid: "51052101"
 >
 >在 Microsoft 365 security center 中檢查您的 [microsoft 365 安全分數](../security/defender/microsoft-secure-score.md) ，並完成下列文章中所述的工作：
 >
-> - [安全性藍圖-前30天、90天和之後的頭等大事](../security/defender-365-security/security-roadmap.md)
+> - [安全性藍圖-前30天、90天和之後的頭等大事](../security/office-365-security/security-roadmap.md)
 > - [最常見的12個任務，可供安全性小組用來支援在家運作](../security/top-security-tasks-for-remote-work.md)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>工作3：為您的組織啟用審核
@@ -146,7 +146,7 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 
 如需定義自訂敏感資訊類型的逐步指引，請參閱在 [安全性 & 規範中心建立自訂機密資訊類型](./create-a-custom-sensitive-information-type.md)。
 
-### <a name="prevent-data-loss"></a>防止資料外洩
+### <a name="prevent-data-loss"></a>防止資料遺失
 
 [資料遺失防護 (DLP) 原則](data-loss-prevention-policies.md) 可讓您識別、監視和自動保護 Microsoft 365 組織內的敏感資訊。 使用 DLP 原則來識別跨 Microsoft 服務的敏感專案、防止意外共用機密專案，以及協助使用者瞭解如何保持相容性，而不中斷其工作流程。
 

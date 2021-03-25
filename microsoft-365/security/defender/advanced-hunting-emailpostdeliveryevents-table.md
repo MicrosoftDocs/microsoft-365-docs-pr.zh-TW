@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 25f1a177571862e92c502b584bbd51801141069a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8940d1dd370f804f8539bf4e753b1112d3c8d3bf
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060592"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198194"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -58,8 +58,8 @@ ms.locfileid: "51060592"
 ## <a name="supported-event-types"></a>支援的事件種類
 此表格會捕獲具有下列值的事件 `ActionType` ：
 
-- **手動修正** –系統管理員會在電子郵件傳送至使用者信箱後，手動對該電子郵件採取動作。 這包括透過 [威脅瀏覽器](../defender-365-security/threat-explorer.md) 手動採取的動作，或核准 [ (AIR) 動作的自動調查和回應](m365d-autoir-actions.md)。
-- **網路釣魚 ZAP** – [零小時自動清除 (ZAP)](../defender-365-security/zero-hour-auto-purge.md) 會在傳送後對網路釣魚電子郵件採取動作。
+- **手動修正** –系統管理員會在電子郵件傳送至使用者信箱後，手動對該電子郵件採取動作。 這包括透過 [威脅瀏覽器](../office-365-security/threat-explorer.md) 手動採取的動作，或核准 [ (AIR) 動作的自動調查和回應](m365d-autoir-actions.md)。
+- **網路釣魚 ZAP** – [零小時自動清除 (ZAP)](../office-365-security/zero-hour-auto-purge.md) 會在傳送後對網路釣魚電子郵件採取動作。
 - **惡意程式碼 ZAP** –零小時自動清除 (ZAP) 在傳送後，包含惡意程式碼的電子郵件上採取的動作。
 
 ## <a name="related-topics"></a>相關主題

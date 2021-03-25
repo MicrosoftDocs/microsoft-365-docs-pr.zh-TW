@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登陸頁面提供 Office 365 的安全性和合規性的連結及規劃資訊。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90f4083bdf38f4b1390ee31d0853ad65e3fe236f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3e5e0f5f13511e0890a69c48ab7738f2b1ebab60
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051705"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198056"
 ---
 # <a name="plan-for-security-amp-compliance"></a>規劃安全性 &amp; 合規性
 
@@ -46,7 +46,7 @@ ms.locfileid: "51051705"
   
 - [保護 Office 365 中的資料與服務存取權](protect-access-to-data-and-services.md)
     
-- [安全的電子郵件原則和設定](../security/defender-365-security/secure-email-recommended-policies.md)
+- [安全的電子郵件原則和設定](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多語言](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -62,15 +62,15 @@ ms.locfileid: "51051705"
   
 - [移至安全性與 &amp; 合規性中心](./microsoft-365-compliance-center.md)
     
-- [安全性與 &amp; 合規性中心的許可權](~/security/defender-365-security/protect-against-threats.md)
+- [安全性與 &amp; 合規性中心的許可權](~/security/office-365-security/protect-against-threats.md)
     
-- [讓使用者能夠存取安全性與 &amp; 合規性中心](~/security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [讓使用者能夠存取安全性與 &amp; 合規性中心](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>步驟6：使用端對端安全性案例做為開始點
 
 使用這些建議的設定作為企業規模或複雜的 access 安全性案例的起點。
   
-- [安全的電子郵件原則和設定](../security/defender-365-security/secure-email-recommended-policies.md)
+- [安全的電子郵件原則和設定](../security/office-365-security/secure-email-recommended-policies.md)
     
 - [Microsoft 雲端中的 Contoso](../enterprise/contoso-case-study.md)
     

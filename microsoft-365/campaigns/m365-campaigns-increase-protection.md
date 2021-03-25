@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 取得在 Microsoft 365 中提高保護層級的協助
-ms.openlocfilehash: 0e8b63fec3b764f10039e9f738fd047ff2c513a4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 61ac32d3debe391794e85df8c129e5df72887e9e
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052203"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198372"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>增強 Microsoft 365 訂閱的威脅防護
 
@@ -58,7 +58,7 @@ ms.locfileid: "51052203"
 
 6. 按一下 [儲存]。
 
-如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](../security/defender-365-security/anti-malware-protection.md)。
+如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](../security/office-365-security/anti-malware-protection.md)。
 
 ## <a name="protect-against-ransomware"></a>防範勒索軟體
 
@@ -138,7 +138,7 @@ ms.locfileid: "51052203"
 
 4. 在 [ **反網路釣魚** ] 頁面上，選取 [ **+ 建立**]。 嚮導會啟動以逐步逐步定義您的反網路釣魚原則。
 
-5. 請依照下表中的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](../security/defender-365-security/set-up-anti-phishing-policies.md)。
+5. 請依照下表中的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 6. 檢查您的設定之後，請選擇 [ **建立這個原則** ] 或 [ **儲存**] （如適用）。
 
@@ -153,7 +153,7 @@ ms.locfileid: "51052203"
 |新增受信任的寄件者與網域|您可以在這裡新增您自己的網域或任何其他受信任的網域。|
 |套用對象|請選取 **[收件者的網域是]**。 在 **[任一項]** 底下選取 **[選擇]**。 選取 **[+ 新增]**。 選取功能變數名稱（例如 contoso）旁的核取方塊 *。 <span> <span>com*，在清單中，然後選取 [**新增**]。 選取 **[完成]**。|
 
-如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](../security/defender-365-security/set-up-anti-phishing-policies.md)。
+如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 ## <a name="protect-against-malicious-attachments-files-and-links-with-defender-for-office-365"></a>使用適用于 Office 的 Defender，防止惡意附件、檔案及連結的 Office 365
 
@@ -207,7 +207,7 @@ ms.locfileid: "51052203"
 |在偵測時重新導向附件|啟用重新導向 (選取此方塊)  <br/> 輸入用於隔離的系統管理員帳戶或信箱設定。 <br/> 若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。 (選取此方塊) 。|
 |套用對象|收件者網域是。 . . 選取您的網域。|
 
-如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](../security/defender-365-security/set-up-anti-phishing-policies.md)。
+如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](../security/office-365-security/set-up-anti-phishing-policies.md)。
 
 ### <a name="set-up-safe-links-in-the-security--compliance-center"></a>在安全性 & 規範中心設定安全連結
 
@@ -250,7 +250,7 @@ ms.locfileid: "51052203"
 |使用安全附件掃描可下載的內容|選取此方塊。|
 |套用對象|收件者網域是。 . . 選取您的網域。|
 
-如需詳細資訊，請參閱 [Office 365 的 Defender 中的安全連結](../security/defender-365-security/safe-links.md)。
+如需詳細資訊，請參閱 [Office 365 的 Defender 中的安全連結](../security/office-365-security/safe-links.md)。
 
 ## <a name="turn-on-the-unified-audit-log"></a>開啟整合的審計記錄檔
 

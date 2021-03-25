@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 目前針對其 Microsoft 365 環境所面臨之組織的常見威脅和攻擊案例，以及緩解這些風險的建議動作。
-ms.openlocfilehash: 328bd4c079531ee57b41422fd2d3f2c53ef8dc18
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 504a2d4628c265b387941e2e4de0461f7ac3be9b
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051087"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199038"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>適用于商務決策者 (Bdm) 的 Microsoft 365 安全性
 
@@ -70,7 +70,7 @@ Microsoft 會在您的租使用者中提供安全評分工具，以根據您的�
 
 |建議  |E3  |E5  |
 |---------|---------|---------|
-|**設定多重要素驗證，並使用建議的條件式存取原則，包括登入風險原則**。 Microsoft 建議並測試一組共同運作的原則，以保護所有 cloud app （包括 Office 365 和 Microsoft 365 服務）。 請參閱身分 [識別與裝置存取](./defender-365-security/microsoft-365-policies-configurations.md)設定。 | |![綠色核取記號](../media/green-check-mark.png)|
+|**設定多重要素驗證，並使用建議的條件式存取原則，包括登入風險原則**。 Microsoft 建議並測試一組共同運作的原則，以保護所有 cloud app （包括 Office 365 和 Microsoft 365 服務）。 請參閱身分 [識別與裝置存取](./office-365-security/microsoft-365-policies-configurations.md)設定。 | |![綠色核取記號](../media/green-check-mark.png)|
 |**所有使用者都需要多重要素驗證**。 如果您沒有必要的授權來執行建議的條件式存取原則，至少需要所有使用者的多重要素驗證。|![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|
 |**提升郵件中惡意程式碼的保護層級**。 您的 Office 365 或 Microsoft 365 環境包括防範惡意程式碼，但是您可以使用常見於惡意程式碼的檔案類型來封鎖附件，以提升這種保護。|![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|
 |**保護您的電子郵件免受目標網路釣魚攻擊**。 如果您已為 Office 365 或 Microsoft 365 環境設定一或多個自訂網域，您可以設定目標的反網路釣魚防護。 防網路釣魚保護，Office 365 的部分 Defender 可協助保護您的組織免受惡意模擬型網路釣魚攻擊和其他網路釣魚攻擊。 若尚未設定自訂網域，您不需要執行此動作。| |![綠色核取記號](../media/green-check-mark.png)|
@@ -116,7 +116,7 @@ Microsoft 365 資訊保護功能可協助您探索您有哪些資訊、儲存的
 
 |建議 |E3|E5 |
 |---------|---------|---------|
-|**檢查和優化您的條件式存取和相關原則，以符合零信任網路的目標**。 防範已知威脅包括實施一組建議的 [原則](./defender-365-security/microsoft-365-policies-configurations.md)。 請複查這些原則的實施，以確保您保護應用程式和資料，以防範已取得您網路存取權的駭客。 請注意，建議使用 Windows 10 的 Intune 應用程式保護原則，啟用 Windows 資訊保護 (WIP) 。 WIP 可防止透過應用程式和服務（例如電子郵件、社交媒體和公用雲端）意外洩漏組織資料。 |         |![綠色核取記號](../media/green-check-mark.png)|
+|**檢查和優化您的條件式存取和相關原則，以符合零信任網路的目標**。 防範已知威脅包括實施一組建議的 [原則](./office-365-security/microsoft-365-policies-configurations.md)。 請複查這些原則的實施，以確保您保護應用程式和資料，以防範已取得您網路存取權的駭客。 請注意，建議使用 Windows 10 的 Intune 應用程式保護原則，啟用 Windows 資訊保護 (WIP) 。 WIP 可防止透過應用程式和服務（例如電子郵件、社交媒體和公用雲端）意外洩漏組織資料。 |         |![綠色核取記號](../media/green-check-mark.png)|
 |**停用外部電子郵件轉發**。 取得使用者信箱存取權的駭客可將信箱設定為自動轉寄電子郵件，以竊取您的郵件。 即使沒有使用者的認知，也可能會發生這種情況。 您可以設定郵件流程規則，避免發生這種情況。|![綠色核取記號](../media/green-check-mark.png) |![綠色核取記號](../media/green-check-mark.png)|
 |**停用匿名外部行事曆共用**。 預設允許外部匿名日曆共用。 [停用行事曆共用](/exchange/sharing/sharing-policies/modify-a-sharing-policy) ，以減少機密資訊的可能洩漏。|![綠色核取記號](../media/green-check-mark.png) |![綠色核取記號](../media/green-check-mark.png)|
 |**設定敏感性資料的資料遺失防護原則**。 在安全性與合規性中心建立資料遺失防護原則 &amp; ，以探索和保護機密資料，例如信用卡號碼、社會保險號碼和銀行帳戶號碼。 Microsoft 365 包含許多您可以在資料遺失防護原則中使用的預先定義的機密資訊類型。 您也可以為環境所自訂的機密資料，建立您自己的敏感資訊類型。 |![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|

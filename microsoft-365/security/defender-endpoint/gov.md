@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 31928deddc2a504cc0b6c91af287e4977791c920
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1fd128a9b734606039438db1f6d9fbc36e93a3b9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059196"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199005"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>適用于美國政府客戶的 Microsoft Defender for Endpoint
 
@@ -76,25 +76,25 @@ DoD (預覽)  | https://securitycenter.microsoft.us
 作業系統版本 | GCC | GCC High | DoD (預覽) 
 :---|:---|:---|:---
 Windows 10，version 20H2 (搭配 [KB4586853](https://support.microsoft.com/help/4586853))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 10，版本 2004 (，含 [KB4586853](https://support.microsoft.com/help/4586853))  | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows 10，版本 1909 (，含 [KB4586819](https://support.microsoft.com/help/4586819))  | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows 10，版本 1903 (，含 [KB4586819](https://support.microsoft.com/help/4586819))  | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows 10，版本 1809 (，含 [KB4586839](https://support.microsoft.com/help/4586839))  | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows 10，版本 1803 (，含 [KB4598245](https://support.microsoft.com/help/4598245))  | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows 10，版本1709 | ![否](/security/defender-endpoint/images/svg/check-no)<br>附注：不支援 | ![Yes ](/security/defender-endpoint/images/svg/check-yes) With [KB4499147](https://support.microsoft.com/help/4499147)<br>附注：已 [過時](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)，請升級 | ![否](/security/defender-endpoint/images/svg/check-no)<br>附注：不支援
-Windows 10、版本1703及更早版本 | ![否](/security/defender-endpoint/images/svg/check-no)<br>附注：不支援 | ![否](/security/defender-endpoint/images/svg/check-no)<br>附注：不支援 | ![否](/security/defender-endpoint/images/svg/check-no)<br>附注：不支援
-使用 [KB4586839](https://support.microsoft.com/help/4586839)) 的 Windows Server 2019 ( | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2016 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2012 R2 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2008 R2 SP1 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows 8.1 企業版 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows 8 Pro | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows 7 SP1 企業版 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows 7 SP1 Pro | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Linux | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發
-macOS | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發
-Android | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作
-iOS | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作
+Windows 10，版本 2004 (，含 [KB4586853](https://support.microsoft.com/help/4586853))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10，版本 1909 (，含 [KB4586819](https://support.microsoft.com/help/4586819))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10，版本 1903 (，含 [KB4586819](https://support.microsoft.com/help/4586819))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10，版本 1809 (，含 [KB4586839](https://support.microsoft.com/help/4586839))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10，版本 1803 (，含 [KB4598245](https://support.microsoft.com/help/4598245))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10，版本1709 | ![否](images/svg/check-no.svg)<br>附注：不支援 | ![Yes ](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br>附注：已 [過時](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)，請升級 | ![否](images/svg/check-no.svg)<br>附注：不支援
+Windows 10、版本1703及更早版本 | ![否](images/svg/check-no.svg)<br>附注：不支援 | ![否](images/svg/check-no.svg)<br>附注：不支援 | ![否](images/svg/check-no.svg)<br>附注：不支援
+使用 [KB4586839](https://support.microsoft.com/help/4586839)) 的 Windows Server 2019 ( | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 8.1 企業版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 8 Pro | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 7 SP1 企業版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 7 SP1 Pro | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Linux | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+macOS | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+Android | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
+iOS | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
 
 > [!NOTE]
 > 若已指定修補程式，必須在裝置上架之前部署，才能將 Defender 設定為正確的環境。
@@ -107,9 +107,9 @@ iOS | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積
 
 作業系統版本 | GCC | GCC High | DoD (預覽) 
 :---|:---|:---|:---
-Windows Server 2016 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2012 R2 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2008 R2 SP1 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
+Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 
 <br>
 
@@ -147,24 +147,24 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 
 功能名稱 | GCC | GCC High | DoD (預覽) 
 :---|:---|:---|:---
-自動化調查和修正： Live 回應 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-自動化調查和修正：回應 Office 365 警示 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作
-電子郵件通知 | ![否](/security/defender-endpoint/images/svg/check-no) 正在推出 | ![否](/security/defender-endpoint/images/svg/check-no) 正在推出 | ![否](/security/defender-endpoint/images/svg/check-no) 正在推出
-評估實驗室 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-管理和 APIs：裝置健康情況與符合性報告 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-管理和 APIs：整合協力廠商產品 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發
-管理和 APIs：資料流程 API | ![是](/security/defender-endpoint/images/svg/check-yes) | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發
-管理和 APIs：威脅防護報告 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-威脅 & 弱點管理 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-威脅分析 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Web 內容篩選 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發
-整合： Azure Sentinel | ![是](/security/defender-endpoint/images/svg/check-yes) | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發
-整合： Microsoft Cloud App Security | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作
-整合： Microsoft 合規性管理員 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作
-整合： Microsoft Defender 身分識別 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作
-整合： Microsoft Defender for Office 365 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作
-整合： Microsoft 端點 DLP | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作
-整合： Microsoft Intune | ![是](/security/defender-endpoint/images/svg/check-yes) | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發
-整合： Microsoft Power 自動化 & Azure 邏輯應用程式 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![否](/security/defender-endpoint/images/svg/check-no) 在開發 | ![否](/security/defender-endpoint/images/svg/check-no) 在開發
-整合：商務用 Skype/小組 | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes) | ![是](/security/defender-endpoint/images/svg/check-yes)
-Microsoft 威脅專家 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作 | ![否](/security/defender-endpoint/images/svg/check-no) 在工程處理積壓工作
+自動化調查和修正： Live 回應 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+自動化調查和修正：回應 Office 365 警示 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
+電子郵件通知 | ![否](images/svg/check-no.svg) 正在推出 | ![否](images/svg/check-no.svg) 正在推出 | ![否](images/svg/check-no.svg) 正在推出
+評估實驗室 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+管理和 APIs：裝置健康情況與符合性報告 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+管理和 APIs：整合協力廠商產品 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+管理和 APIs：資料流程 API | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+管理和 APIs：威脅防護報告 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+威脅 & 弱點管理 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+威脅分析 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Web 內容篩選 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+整合： Azure Sentinel | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+整合： Microsoft Cloud App Security | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
+整合： Microsoft 合規性管理員 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
+整合： Microsoft Defender 身分識別 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
+整合： Microsoft Defender for Office 365 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
+整合： Microsoft 端點 DLP | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
+整合： Microsoft Intune | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+整合： Microsoft Power 自動化 & Azure 邏輯應用程式 | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+整合：商務用 Skype/小組 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Microsoft 威脅專家 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作

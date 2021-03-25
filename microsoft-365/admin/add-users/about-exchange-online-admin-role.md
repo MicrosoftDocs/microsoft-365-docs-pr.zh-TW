@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 系統管理員會管理您組織的電子郵件和信箱。 例如，他們會在使用者的信箱中復原已刪除的郵件。 '
-ms.openlocfilehash: 5b63f2b0a58fdce75e5d70e329b8a0d02fb94a1a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4dc1f435571650ae4a805198782c3c24a92024fb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050967"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197646"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>關於 Exchange Online 系統管理員角色
 
@@ -48,7 +48,7 @@ ms.locfileid: "51050967"
 
 - [建立共用信箱](../email/create-a-shared-mailbox.md) ，讓一群組人員可以從共同的電子郵件地址監視及傳送電子郵件。
 
-- 組織的[電子郵件反垃圾郵件保護](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-spam-protection)和惡意程式碼篩選器。
+- 組織的[電子郵件反垃圾郵件保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection)和惡意程式碼篩選器。
 
 - 管理 Microsoft 365 群組
 

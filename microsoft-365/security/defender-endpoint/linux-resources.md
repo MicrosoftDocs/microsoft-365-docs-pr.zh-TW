@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08dd8a3ff5f0b55d7fec8decd41f1120ca05077a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7196053ffef3dffc3c737d0df26a5d12bdfe8a4c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059124"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187754"
 ---
 # <a name="resources"></a>資源
 
@@ -32,7 +32,7 @@ ms.locfileid: "51059124"
 
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -104,22 +104,22 @@ ms.locfileid: "51059124"
 
 |Group                 |案例                                                |命令                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
-|設定         |開啟/關閉即時保護                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|設定         |開啟/關閉雲端保護                            |`mdatp config cloud --value [enabled\|disabled]`                       |
-|設定         |開啟/關閉產品診斷程式                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
-|設定         |開啟/關閉自動範例提交                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
-|設定         |開啟/關閉 AV 被動式模式                             |`mdatp config passive-mode --value [enabled\|disabled]`                |
-|設定         |新增/移除副檔名的防病毒排除  |`mdatp exclusion extension [add\|remove] --name [extension]`           |
-|設定         |新增/移除檔案的防病毒排除            |`mdatp exclusion file [add\|remove] --path [path-to-file]`             |
-|設定         |新增/移除目錄的防病毒排除       |`mdatp exclusion folder [add\|remove] --path [path-to-directory]`      |
-|設定         |新增/移除處理常式的防病毒排除         |`mdatp exclusion process [add\|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add\|remove] --name [process-name]` |
-|設定         |列出所有防病毒排除                           |`mdatp exclusion list`                                                 |
-|設定         |新增威脅名稱至允許清單                   |`mdatp threat allowed add --name [threat-name]`                        |
-|設定         |從允許的清單中移除威脅名稱              |`mdatp threat allowed remove --name [threat-name]`                     |
-|設定         |列出所有允許的威脅名稱                           |`mdatp threat allowed list`                                            |
-|設定         |開啟 PUA 保護                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
-|設定         |關閉 PUA 保護                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
-|設定         |開啟 PUA 保護的審計模式                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
+|組態         |開啟/關閉即時保護                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|組態         |開啟/關閉雲端保護                            |`mdatp config cloud --value [enabled\|disabled]`                       |
+|組態         |開啟/關閉產品診斷程式                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
+|組態         |開啟/關閉自動範例提交                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
+|組態         |開啟/關閉 AV 被動式模式                             |`mdatp config passive-mode --value [enabled\|disabled]`                |
+|組態         |新增/移除副檔名的防病毒排除  |`mdatp exclusion extension [add\|remove] --name [extension]`           |
+|組態         |新增/移除檔案的防病毒排除            |`mdatp exclusion file [add\|remove] --path [path-to-file]`             |
+|組態         |新增/移除目錄的防病毒排除       |`mdatp exclusion folder [add\|remove] --path [path-to-directory]`      |
+|組態         |新增/移除處理常式的防病毒排除         |`mdatp exclusion process [add\|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add\|remove] --name [process-name]` |
+|組態         |列出所有防病毒排除                           |`mdatp exclusion list`                                                 |
+|組態         |新增威脅名稱至允許清單                   |`mdatp threat allowed add --name [threat-name]`                        |
+|組態         |從允許的清單中移除威脅名稱              |`mdatp threat allowed remove --name [threat-name]`                     |
+|組態         |列出所有允許的威脅名稱                           |`mdatp threat allowed list`                                            |
+|組態         |開啟 PUA 保護                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
+|組態         |關閉 PUA 保護                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
+|組態         |開啟 PUA 保護的審計模式                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
 |診斷           |變更記錄層級                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
 |診斷           |產生診斷記錄                                |`mdatp diagnostic create --path [directory]`                           |
 |健康情況                |檢查產品的健康情況                              |`mdatp health`                                                         |

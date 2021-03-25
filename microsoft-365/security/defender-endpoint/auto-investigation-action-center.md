@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: af9e9315088a8dd5da9740b33135551d28664ed7
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f8dd48364f60da789ac95638018245cf46434822
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186110"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197634"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>流覽行動中心以查看修正動作
 
@@ -46,7 +46,7 @@ ms.locfileid: "51186110"
 
 |新的整合的動作中心  |上一個操作中心  |
 |---------|---------|
-|列出裝置和電子郵件在一個位置的擱置和完成的動作 <br/> ([Microsoft defender For Endpoint](microsoft-defender-endpoint.md) 加 [Microsoft defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)) |列出裝置的擱置及已完成的動作 <br/> 僅限 [端點的 Microsoft Defender](microsoft-defender-endpoint.md) ()    |
+|列出裝置和電子郵件在一個位置的擱置和完成的動作 <br/> ([Microsoft defender For Endpoint](microsoft-defender-endpoint.md) 加 [Microsoft defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)) |列出裝置的擱置及已完成的動作 <br/> 僅限 [端點的 Microsoft Defender](microsoft-defender-endpoint.md) ()    |
 |位於：<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |位於：<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
 | 在 Microsoft 365 的 [安全性中心] 中，選擇 [ **動作中心**]。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="流覽至 Microsoft 365 安全中心的動作中心"::: | 在 Microsoft Defender Security Center 中，選擇 [**自動調查**]  >  **動作中心**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="從 Microsoft Defender Security Center 流覽至 [行動中心]":::  |
 
@@ -54,7 +54,7 @@ ms.locfileid: "51186110"
 
 如果您有適當的許可權以及下列一或多項訂閱，您可以使用統一的行動中心：
 - [適用於端點的 Defender](microsoft-defender-endpoint.md)
-- [適用於 Office 365 的 Defender](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)
+- [適用於 Office 365 的 Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
 
 > [!TIP]

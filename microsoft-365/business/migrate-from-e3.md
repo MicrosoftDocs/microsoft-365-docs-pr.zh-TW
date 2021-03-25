@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何將您的業務移至 Microsoft 365 商務版，從 Office 365 E3。
-ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cb70260201686cae02428c715ac98ffe2f88787f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164526"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198090"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務版 Premium
 
@@ -122,7 +122,7 @@ Microsoft 365 商務版 Premium 在使用 Exchange Online Plan 1 時，具有 50
 
 ### <a name="threat-protection"></a>威脅防護
 
-在遷移至 Microsoft 365 商務版 Premium 後，您可以使用 Defender for Office 365。 如需概要，請參閱 [Microsoft Defender For Office 365](../security/defender-365-security/defender-for-office-365.md) 。 若要設定，請參閱 [設定安全連結](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)， [設定安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，並 [在 Office 365 的 Defender 中設定反網路釣魚](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
+在遷移至 Microsoft 365 商務版 Premium 後，您可以使用 Defender for Office 365。 如需概要，請參閱 [Microsoft Defender For Office 365](../security/office-365-security/defender-for-office-365.md) 。 若要設定，請參閱 [設定安全連結](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)， [設定安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，並 [在 Office 365 的 Defender 中設定反網路釣魚](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 

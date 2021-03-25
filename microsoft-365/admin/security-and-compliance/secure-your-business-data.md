@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。 '
-ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050675"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197848"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保護商務用 Microsoft 365 方案的十大方式
 
@@ -132,7 +132,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 6. 選取 [ **儲存]。**
 
-如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection)。
+如需詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection)。
 
 ## <a name="5-protect-against-ransomware"></a>5：防禦勒索軟體
 <a name="ransomware"> </a>
@@ -157,7 +157,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 針對每個規則套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
     
 | 設定 | 開啟 Office 檔案的附件之前警告使用者 | 封鎖可能包含勒索代碼或其他惡意程式碼的檔案類型 |
 |:-----|:-----|:-----|
@@ -193,7 +193,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
 
 |設定|拒絕自動轉寄電子郵件至外部網域|
 |---|---|
@@ -254,7 +254,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 
 4. 在 [反網路釣魚] 頁面上，選取 [ **+ 建立**]。 嚮導會啟動以逐步逐步定義您的反網路釣魚原則。
 
-5. 請依照下表中的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies) 。
+5. 請依照下表中的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱 [瞭解 Microsoft Defender For Office 365 選項中的反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) 。
 
 6. 檢查您的設定之後，請選取 [ **建立這個原則** ] 或 [ **儲存**] （視需要）。
 
@@ -270,7 +270,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 |套用對象|請選取 **[收件者的網域是]**。 在 **[任一項]** 底下選取 **[選擇]**。 選取 **[+ 新增]**。 選取功能變數名稱（例如，contoso.com，在清單中）旁的核取方塊，然後選取 [ **新增**]。 選取 **[完成]**。|
 |
 
-如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)。
+如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9：防止惡意附件和檔案使用安全附件
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 |套用對象|收件者網域是。 . . 選取您的網域。|
 |
 
-如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)。
+如需詳細資訊，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10：防禦安全連結的網路釣魚攻擊
 <a name="phishingatp"> </a>
@@ -331,7 +331,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 
 3. 在 [ **電子郵件除外，套用至內容**] 底下，選取 [ **Office 365 應用程式**]， **當使用者按一下 [安全連結] 時請勿追蹤**，而且不要 **讓使用者按一下 [指向原始 URL 的安全連結**]。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
 
 若要建立新的原則針對您網域中的所有收件者：
 
@@ -339,7 +339,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 
 2. 套用下表所列的設定。
 
-3. 選取 **[儲存]**。
+3. 選取 [儲存]。
 
 |設定或選項|建議的設定|
 |---|---|
@@ -349,4 +349,4 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 |套用對象|收件者網域是。 . . 選取您的網域。|
 |
 
-如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的安全連結](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links)。
+如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的安全連結](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)。
