@@ -23,12 +23,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 85e9a47c0180fd7582b2bc107ddf7d78f57e6329
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ef625e813961c09bb6f74d85fd5a7c8033f9c2a
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059899"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183870"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中處理誤報/負片
 
@@ -55,7 +55,7 @@ ms.locfileid: "51059899"
 ![解決誤報和負片的步驟](images/false-positives-step-diagram.png)
 
 > [!NOTE]
-> 本文適用于使用 [Microsoft Defender For Endpoint](microsoft-defender-advanced-threat-protection.md)的安全性操作員及安全性管理員的指導方針。
+> 本文適用于使用 [Microsoft Defender For Endpoint](microsoft-defender-endpoint.md)的安全性操作員及安全性管理員的指導方針。
 
 ## <a name="part-1-review-and-classify-alerts"></a>第1部分：檢查和分類警示
 
@@ -355,7 +355,7 @@ Microsoft Defender for Endpoint 提供各種各樣的選項，包括微調各種
 > [!IMPORTANT]
 > 建議使用 *完整的自動化* ，以進行自動調查和修復。 請勿關閉這些功能，因為是誤報。 相反地，使用 ["allow" 標記來定義例外](#indicators-for-microsoft-defender-for-endpoint)狀況，並將自動調查和修正設定為自動採取適當的動作。 遵循 [此指南](automation-levels.md#levels-of-automation) 可協助減少您的安全作業小組必須處理的提醒數目。 
 
-## <a name="still-need-help"></a>仍需要協助嗎？
+## <a name="still-need-help"></a>是否仍需要協助？
 
 如果您已完成本文中的所有步驟，但仍需要協助，請與技術支援人員聯繫。
 
