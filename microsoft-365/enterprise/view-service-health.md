@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 請先查看 Microsoft 365 服務的健康狀態，再致電支援人員，查看是否有使用中的服務中斷狀態。
-ms.openlocfilehash: 3802ca01902d5b0d457d2a3d75b784d38f71bd42
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 30b677a80e5a08d75534a91aa04d735443660f18
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924681"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215477"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何檢查 Microsoft 365 服務健康情況
 
@@ -47,7 +47,7 @@ ms.locfileid: "50924681"
 1. 移至 Microsoft 365 系統管理中心 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) ，並以系統管理員帳戶登入。
 
     > [!NOTE]
-    > 被指派全域系統管理員或服務系統管理員角色的人員方可檢視服務健康情況。 若要允許 Exchange、SharePoint 以及商務用 Skype 管理員檢視服務健康情況，必須同時將服務系統管理員角色指派給他們。 如需可查看服務健康情況之角色的詳細資訊，請參閱 [關於系統管理員角色](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)。
+    > 被指派全域系統管理員或服務系統管理員角色的人員方可檢視服務健康情況。 若要允許 Exchange、SharePoint 以及商務用 Skype 管理員檢視服務健康情況，必須同時將服務系統管理員角色指派給他們。 如需可查看服務健康情況之角色的詳細資訊，請參閱 [關於系統管理員角色](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)。
   
 2. 如果您不是使用新的系統管理中心，請在 **首頁** 上，選取 [ **嘗試以新系統管理中心** 切換] 右上角。
 
@@ -153,4 +153,5 @@ ms.locfileid: "50924681"
 ## <a name="related-topics"></a>相關主題
 
 [Microsoft 365 系統管理中心](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- 的活動報告[訊息中心喜好](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences11)設定
+ 的活動報告[訊息中心喜好](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)設定<br/>
+[如何在系統管理中心檢查 Windows 版本健康情況](https://docs.microsoft.com/windows/deployment/update/check-release-health)

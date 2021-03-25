@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以管理 SharePoint Online、商務 OneDrive 和 Microsoft 小組中的隔離檔案。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c606daccfd037cad4d894ab7f33ff02fcf172b5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203497"
+ms.locfileid: "51215532"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -197,6 +197,8 @@ ms.locfileid: "51203497"
 
 - **下載郵件**：在出現的飛出窗格中，選取 [我了解下載此郵件的風險] 以使用 .eml 格式儲存郵件的本機複本。
 
+- **封鎖寄件者**：這會封鎖寄件者，將電子郵件傳送給系統管理收件者信箱。
+
 - **Submit message**：在出現的飛入窗格中，選擇下列選項：
 
   - **物件類型**： **電子郵件** (預設) 、 **URL** 或 **附件**。
@@ -307,6 +309,6 @@ ms.locfileid: "51203497"
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [預覽-get-quarantinemessage](/powershell/module/exchange/preview-quarantinemessage)：請注意，此 Cmdlet 只適用于郵件，而不是來自 SharePoint、OneDrive 和 Microsoft 小組之安全附件的惡意程式碼檔案。
+- [預覽-get-quarantinemessage](/powershell/module/exchange/preview-quarantinemessage)：請注意，此 Cmdlet 只適用于郵件，而不是從 SharePoint、OneDrive 和 Microsoft 小組的安全附件隔離檔案。
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
