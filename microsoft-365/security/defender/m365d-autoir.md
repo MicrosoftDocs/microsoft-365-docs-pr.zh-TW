@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: c12937c016875c26a7212117e41aac4349cb540d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059212"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199630"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 的自動化調查和回應
 
@@ -90,7 +90,7 @@ ms.locfileid: "51059212"
 |實體 |威脅防護服務  |
 |:---------|:---------|
 |裝置 (也稱為端點，有時也稱為機器)      |[適用於端點的 Microsoft Defender](../defender-endpoint/automated-investigations.md)<br/>[適用於身分識別的 Microsoft Defender](/azure-advanced-threat-protection/what-is-atp) |      
-|電子郵件內容 (可以包含檔案和 URLs 的電子郵件)      |[適用於 Office 365 的 Microsoft Defender](../defender-365-security/defender-for-office-365.md)         |
+|電子郵件內容 (可以包含檔案和 URLs 的電子郵件)      |[適用於 Office 365 的 Microsoft Defender](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
 > 並非每個提醒都會觸發自動調查，而並非每項調查都會產生自動修復動作。這取決於組織如何設定自動調查和回應。 請參閱 [設定 Microsoft 365 Defender 中的自動化調查和回應功能](m365d-configure-auto-investigation-response.md)。

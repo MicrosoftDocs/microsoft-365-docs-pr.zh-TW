@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fa73756aa9f350793c00a7e4a960c215627b712f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c81f824a0faaca1c228aa650c003576cce210a67
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058619"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199204"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的修正動作
 
@@ -45,7 +45,7 @@ ms.locfileid: "51058619"
 > 是否自動採取修復動作，也取決於特定設定，例如自動化程度。 若要深入瞭解，請參閱下列文章：
 > - [在 Microsoft 365 Defender 中設定您的自動化調查和回應功能](m365d-configure-auto-investigation-response.md)
 > - [如何在裝置上修正威脅](../defender-endpoint/automated-investigations.md)
-> - [電子郵件 & 共同作業內容的威脅和修正動作](../defender-365-security/air-remediation-actions.md#threats-and-remediation-actions)
+> - [電子郵件 & 共同作業內容的威脅和修正動作](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
 下表摘要說明 Microsoft 365 Defender 目前支援的修復動作： 
 
@@ -76,7 +76,7 @@ ms.locfileid: "51058619"
 - 手動裝置動作，例如裝置隔離或檔隔離。
 - 手動電子郵件動作，例如虛刪除的電子郵件訊息。 
 - 裝置或電子郵件上的[高級搜尋](../defender-endpoint/advanced-hunting-overview.md)動作。
-- [Explorer](../defender-365-security/threat-explorer.md) 對電子郵件內容的動作，例如將電子郵件移至垃圾郵件、虛刪除的電子郵件或實刪除的電子郵件。
+- [Explorer](../office-365-security/threat-explorer.md) 對電子郵件內容的動作，例如將電子郵件移至垃圾郵件、虛刪除的電子郵件或實刪除的電子郵件。
 - 手動 [即時回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) 動作，例如刪除檔案、停止程式及移除排程的任務。
 - [Microsoft Defender For Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)的即時回應動作，例如隔離裝置、執行防病毒掃描，以及取得檔案的相關資訊。 
 

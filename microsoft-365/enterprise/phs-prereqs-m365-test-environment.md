@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境，以使用密碼雜湊同步處理驗證的先決條件測試身分識別與裝置存取。
-ms.openlocfilehash: 2ca83b6ab715a752d3d9620af631263eb5d84fa3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a3b02167bc3c1d2e7bc809d227ce5537114ffff9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051243"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199438"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中密碼雜湊同步處理的先決條件
 
 *此測試實驗室指南僅可用於適用于企業測試環境的 Microsoft 365。*
 
-身分[識別與裝置存取](../security/defender-365-security/microsoft-365-policies-configurations.md)設定是一組設定和條件式存取原則，可保護所有與 Azure Active Directory (azure AD) 整合的 365 Microsoft 企業版服務的存取。
+身分[識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)設定是一組設定和條件式存取原則，可保護所有與 Azure Active Directory (azure AD) 整合的 365 Microsoft 企業版服務的存取。
 
-本文說明如何針對身分識別與裝置存取， [使用密碼雜湊同步驗證](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) 必要條件設定，設定符合混合式需求的 Microsoft 365 測試環境。
+本文說明如何針對身分識別與裝置存取， [使用密碼雜湊同步驗證](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 必要條件設定，設定符合混合式需求的 Microsoft 365 測試環境。
 
 設定此測試環境有10個階段：
 
@@ -119,11 +119,11 @@ ms.locfileid: "51051243"
   Get-CsOAuthConfiguration
   ```
 
-結果會是符合[具有密碼雜湊同步處理的 Active Directory 先決條件組態](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)需求、用於身分識別與裝置存取的測試環境。 
+結果會是符合[具有密碼雜湊同步處理的 Active Directory 先決條件組態](../security/office-365-security/identity-access-prerequisites.md#prerequisites)需求、用於身分識別與裝置存取的測試環境。 
 
 ## <a name="next-step"></a>下一步
 
-使用[一般身分識別與裝置存取原則](../security/defender-365-security/identity-access-policies.md)來設定根據先決條件建置的原則，並保護身分識別與裝置。
+使用[一般身分識別與裝置存取原則](../security/office-365-security/identity-access-policies.md)來設定根據先決條件建置的原則，並保護身分識別與裝置。
 
 ## <a name="see-also"></a>請參閱
 

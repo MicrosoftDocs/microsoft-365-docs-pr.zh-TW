@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 17d55a434cc0499b9b24039f19ec7ed3c94310e8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6582e4e940dc9910e7d341c92b525379b924f35b
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054579"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199954"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Microsoft 365 Defender 角色型存取控制中的自訂角色
 
@@ -53,7 +53,7 @@ ms.locfileid: "51054579"
 您可以建立自訂角色和許可權，並透過下列各項安全性入口網站進行個別管理： 
 
 - Microsoft Defender for Endpoint – [編輯 Microsoft defender For endpoint 中的角色](../defender-endpoint/user-roles.md)
-- Microsoft Defender for Office 365 – [Security & 合規性中心的許可權](../defender-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
+- Microsoft Defender for Office 365 – [Security & 合規性中心的許可權](../office-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
 - Microsoft Cloud App Security- [管理系統管理員存取權](/cloud-app-security/manage-admins)
 
 透過個別入口網站所建立的每個自訂角色，都可以存取相關的產品入口網站的資料。 例如，透過 Microsoft Defender for Endpoint 所建立的自訂角色，只會允許 access Defender 的端點資料。

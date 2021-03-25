@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ab4019751a26507fcc80007d3262f20f861d25c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057987"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199226"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>為您的試用實驗室或試驗環境設定 Microsoft 365 Defender 支柱
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的
 本節會引導您設定下列專案：
 -   適用於 Office 365 的 Microsoft Defender
 -   適用於身分識別的 Microsoft Defender 
--   Microsoft 雲端應用程式安全性
+-   Microsoft Cloud App Security
 -   適用於端點的 Microsoft Defender
 
 
@@ -71,14 +71,14 @@ Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的
 
    ![Image of_Office 365 Security & 合規性中心威脅管理原則頁面](../../media/mtp-eval-32.png)
  
-2. 按一下 [ **反網路釣魚**]，選取 [ **建立** 並填入原則名稱和描述]。 按 [下一步 **]**。
+2. 按一下 [ **反網路釣魚**]，選取 [ **建立** 並填入原則名稱和描述]。 按 [下一步]。
 
    ![Image of_Office 365 Security & 合規性中心反網路釣魚原則頁面，您可以在其中命名原則](../../media/mtp-eval-33.png)
 
    > [!NOTE]
    > 在 Microsoft Defender for Office 365 中編輯您的高級防網路釣魚原則。 將 **高級網路釣魚閥值** 變更為 **2-嚴格**。
 
-3. 按一下 [ **新增條件** ] 下拉式功能表，然後選取您的網域 (s) 做為收件者網域。 按 [下一步 **]**。
+3. 按一下 [ **新增條件** ] 下拉式功能表，然後選取您的網域 (s) 做為收件者網域。 按 [下一步]。
 
    ![Image of_Office 365 Security & 合規性中心反網路釣魚原則頁面，您可以在其中新增其應用程式的條件](../../media/mtp-eval-34.png)
  
@@ -96,7 +96,7 @@ Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的
  
 7. 接下來，選取 [ **安全連結** 原則]，然後按一下鉛筆圖示以編輯預設原則。
 
-8. 請確定未選取 [ **不要在使用者按一下安全連結時進行追蹤** ] 選項，而會選取其餘的選項。 如需詳細資訊，請參閱 [安全連結設定](/microsoft-365/security/defender-365-security/recommended-settings-for-eop-and-office365) 。 按一下 **[儲存]**。 
+8. 請確定未選取 [ **不要在使用者按一下安全連結時進行追蹤** ] 選項，而會選取其餘的選項。 如需詳細資訊，請參閱 [安全連結設定](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) 。 按一下 **[儲存]**。 
 
    ![Image of_Office 365 Security & 相容性中心] 頁面，顯示未選取 [使用者按一下安全時不會追蹤] 選項](../../media/mtp-eval-38.png)
 
@@ -208,7 +208,7 @@ Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的
 
    ![Microsoft 365 Security Center 頁面中的影像 of_Microsoft Defender Security Center 選項](../../media/mtp-eval-58.png)
  
-2. 遵循 Microsoft Defender for Endpoint 嚮導。 按 [下一步 **]**。 
+2. 遵循 Microsoft Defender for Endpoint 嚮導。 按 [下一步]。 
 
    ![Microsoft Defender 安全中心歡迎使用嚮導頁面上的影像 of_the](../../media/mtp-eval-59.png)
 
@@ -219,7 +219,7 @@ Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的
    > [!NOTE]
    > 您無法變更某些設定，例如，以後的資料儲存位置。 
 
-   按 [下一步 **]**。 
+   按 [下一步]。 
 
 4. 按一下 [ **繼續** ]，它會布建您的 Microsoft Defender for Endpoint 租使用者。
 

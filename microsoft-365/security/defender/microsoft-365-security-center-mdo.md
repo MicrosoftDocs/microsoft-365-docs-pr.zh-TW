@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 6a40b80faef124a3a03e84a749b901a01791f6fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 85afc0dedd4fea9ea11c378ca35523d668acc84c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165078"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199180"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心中的適用於 Office 365 的 Microsoft Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165078"
 **適用於：**
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [適用於 Office 365 的 Microsoft Defender](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [適用於 Office 365 的 Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 位於 [https://security.microsoft.com](https://security.microsoft.com) 經改善的 [Microsoft 365 安全性中心](./overview-security-center.md)結合了來自現有 Microsoft 安全性入口網站的安全性功能，包括 Microsoft Defender 資訊安全中心和 Office 365 安全性與合規性中心。 此改善的中心可協助安全性小組更有效且有效率地地保護其組織免受威脅。
 
@@ -49,18 +49,18 @@ ms.locfileid: "51165078"
 
 |**區域**  |**變更的描述**  |
 |---------|---------|
-| [電子郵件實體頁面](../defender-365-security/mdo-email-entity-page.md) | 此頁面 **整合** 了過去散落在不同頁面或檢視中的電子郵件資訊。 調查電子郵件是否有威脅和趨勢將會 *集中*。 標頭資訊和電子郵件預覽可透過相同的電子郵件頁面來存取，還有其他實用的電子郵件相關資訊。 同樣地，您可以在相同頁面的分頁上找到惡意檔案附件或 URL 的引爆狀態。 電子郵件實體頁面讓系統管理員和安全性作業小組能夠快速了解電子郵件威脅及其狀態，然後快速採取行動以判斷處理方式。  |
-| [調查](../defender-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | 將[適用於 Office 365 的 Defender](/microsoft-365/security/defender-365-security/defender-for-office-365) 和[適用於端點的 Defender](../defender-endpoint/automated-investigations.md) 的 AIR 功能結合在一起。 有了這些更新與改善功能，您的安全性作業小組就能在單一位置檢視電子郵件、共同作業內容、使用者帳戶和裝置上的自動化調查和補救動作的詳細資訊。  | 
+| [電子郵件實體頁面](../office-365-security/mdo-email-entity-page.md) | 此頁面 **整合** 了過去散落在不同頁面或檢視中的電子郵件資訊。 調查電子郵件是否有威脅和趨勢將會 *集中*。 標頭資訊和電子郵件預覽可透過相同的電子郵件頁面來存取，還有其他實用的電子郵件相關資訊。 同樣地，您可以在相同頁面的分頁上找到惡意檔案附件或 URL 的引爆狀態。 電子郵件實體頁面讓系統管理員和安全性作業小組能夠快速了解電子郵件威脅及其狀態，然後快速採取行動以判斷處理方式。  |
+| [調查](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | 將[適用於 Office 365 的 Defender](/microsoft-365/security/office-365-security/defender-for-office-365) 和[適用於端點的 Defender](../defender-endpoint/automated-investigations.md) 的 AIR 功能結合在一起。 有了這些更新與改善功能，您的安全性作業小組就能在單一位置檢視電子郵件、共同作業內容、使用者帳戶和裝置上的自動化調查和補救動作的詳細資訊。  | 
 | [警示檢視](../../compliance/alert-policies.md) | Office 安全性與合規性中心的 [檢視警示 **]** 飛出視窗窗格中現在會包含 Microsoft 365 安全性中心的連結。 按一下 [開啟警示頁面 **]** 連結，Microsoft 365 安全性中心隨即會開啟。 您可以按一下 [警示] 佇列中的任何 Office 365 警示來存取 [檢視警示 **]** 頁面。 |
-| [攻擊模擬訓練](../defender-365-security/attack-simulation-training-insights.md)   | 使用攻擊模擬訓練在組織中執行真實化的攻擊案例。 這些模擬攻擊可協助在真實的攻擊影響您的組織之前訓練您的員工。 攻擊模擬訓練包括更多選項、增強的報告，以及改善的訓練流程，可協助讓您的攻擊模擬與訓練案例更易於傳遞和管理。  |
+| [攻擊模擬訓練](../office-365-security/attack-simulation-training-insights.md)   | 使用攻擊模擬訓練在組織中執行真實化的攻擊案例。 這些模擬攻擊可協助在真實的攻擊影響您的組織之前訓練您的員工。 攻擊模擬訓練包括更多選項、增強的報告，以及改善的訓練流程，可協助讓您的攻擊模擬與訓練案例更易於傳遞和管理。  |
 
 這些區域沒有變更：
-- [總管](../defender-365-security/threat-explorer.md)
+- [總管](../office-365-security/threat-explorer.md)
 - [原則與規則](../../compliance/alert-policies.md)
-- [行銷活動](../defender-365-security/campaigns.md)
-- [提交](../defender-365-security/admin-submission.md)
+- [行銷活動](../office-365-security/campaigns.md)
+- [提交](../office-365-security/admin-submission.md)
 - [檢閱](./m365d-action-center.md)
-- [威脅追蹤程式](../defender-365-security/threat-trackers.md)
+- [威脅追蹤程式](../office-365-security/threat-trackers.md)
 
 此外，請查看本文底部的 **相關資訊** 一節。
 
@@ -135,7 +135,7 @@ ms.locfileid: "51165078"
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender 的進階搜捕範例
 想要開始使用進階搜捕來搜尋電子郵件威脅嗎？ 嘗試這樣做：
 
-[適用於 Office 365 的 Microsoft Defender 文章](/microsoft-365/security/defender-365-security/defender-for-office-365)的[快速入門](/microsoft-365/security/defender-365-security/defender-for-office-365.md#getting-started)小節包含的邏輯早期設定區塊，看起來像這樣：
+[適用於 Office 365 的 Microsoft Defender 文章](/microsoft-365/security/office-365-security/defender-for-office-365)的[快速入門](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started)小節包含的邏輯早期設定區塊，看起來像這樣：
 
 1. 為各個項目設定含有「反」的名稱。
 - 反惡意軟體
@@ -147,7 +147,7 @@ ms.locfileid: "51165078"
 3. 保護工作負載 (例如: SharePoint Online、OneDrive 和 Teams)
 4. 使用 [零時差自動清除] 進行保護
 
-還有可直接進入並在第 1 天便完成設定的[連結](../defender-365-security/protect-against-threats.md)。
+還有可直接進入並在第 1 天便完成設定的[連結](../office-365-security/protect-against-threats.md)。
 
 **快速入門** 的最後一個步驟會使用 **零時差自動清除** (也稱為 ZAP) 來保護使用者。 了解您對可疑或惡意郵件執行的 ZAP 在傳遞後是否成功非常重要。
 
@@ -182,4 +182,4 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 - [電子郵件與共同作業警示](../../compliance/alert-policies.md#default-alert-policies)
 - [跨裝置、電子郵件、應用程式和身分識別搜捕威脅](./advanced-hunting-query-emails-devices.md)
 - [自訂偵測規則](/microsoft-365/security/defender-endpoint/custom-detection-rules)
-- [建立網路釣魚攻擊模擬](../defender-365-security/attack-simulation-training.md)並[建立用於訓練您的人員的承載](../defender-365-security/attack-simulation-training-payloads.md)
+- [建立網路釣魚攻擊模擬](../office-365-security/attack-simulation-training.md)並[建立用於訓練您的人員的承載](../office-365-security/attack-simulation-training-payloads.md)

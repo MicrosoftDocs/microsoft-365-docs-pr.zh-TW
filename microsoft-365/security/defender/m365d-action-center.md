@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/01/2021
-ms.openlocfilehash: c91e5152fc7a64c8d26363383192d6b8d74611b8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186758"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199594"
 ---
 # <a name="the-action-center"></a>重要訊息中心
 
@@ -61,7 +61,7 @@ ms.locfileid: "51186758"
 如果您有適當的許可權以及下列一或多項訂閱，您可以使用統一的行動中心：
 
 - [適用於端點的 Defender](../defender-endpoint/microsoft-defender-endpoint.md)
-- [適用於 Office 365 的 Defender](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [適用於 Office 365 的 Defender](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
 > [!TIP]
@@ -113,11 +113,11 @@ ms.locfileid: "51186758"
 | 動作來源值 | 描述 |
 |:-----|:---|
 | **手動裝置動作** | 在裝置上執行的手動動作。 範例包括 [裝置隔離](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) 或 [檔隔離](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files)。 |
-| **手動電子郵件動作** | 手動對電子郵件採取的動作。 包含虛刪除電子郵件訊息或 [修正電子郵件訊息](../defender-365-security/remediate-malicious-email-delivered-office-365.md)的範例。 |
+| **手動電子郵件動作** | 手動對電子郵件採取的動作。 包含虛刪除電子郵件訊息或 [修正電子郵件訊息](../office-365-security/remediate-malicious-email-delivered-office-365.md)的範例。 |
 | **自動裝置動作** | 對實體（如檔案或處理常式）採取的自動動作。 自動動作的範例包括將檔案傳送至隔離區、停止處理常式，以及移除登錄機碼。  (查看 [Microsoft Defender For Endpoint 中的修復動作](../defender-endpoint/manage-auto-investigation.md#remediation-actions)。 )  |
-| **自動化的電子郵件動作** | 對電子郵件內容採取的自動動作，例如電子郵件訊息、附件或 URL。 自動動作的範例包括虛刪除的電子郵件、封鎖 URLs 和關閉外部郵件轉發。  (參閱 [適用于 Office 365 的 Microsoft Defender 中的修復動作](../defender-365-security/air-remediation-actions.md)。 )  |
+| **自動化的電子郵件動作** | 對電子郵件內容採取的自動動作，例如電子郵件訊息、附件或 URL。 自動動作的範例包括虛刪除的電子郵件、封鎖 URLs 和關閉外部郵件轉發。  (參閱 [適用于 Office 365 的 Microsoft Defender 中的修復動作](../office-365-security/air-remediation-actions.md)。 )  |
 | **高級搜尋動作** | 使用 [高級搜尋](./advanced-hunting-overview.md)對裝置或電子郵件採取的動作。 |
-| **Explorer 動作** | 使用 [Explorer](../defender-365-security/threat-explorer.md)對電子郵件內容採取的動作。 |
+| **Explorer 動作** | 使用 [Explorer](../office-365-security/threat-explorer.md)對電子郵件內容採取的動作。 |
 | **手動即時回應動作** | 在具有 [即時回應](../defender-endpoint/live-response.md)的裝置上採取的動作。 範例包括刪除檔案、停止程式及移除排程的任務。 |
 | **即時回應動作** | 使用 [Microsoft Defender For Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)對裝置執行的動作。 動作範例包括隔離裝置、執行防病毒掃描，以及取得檔案的相關資訊。 |
 
@@ -128,7 +128,7 @@ ms.locfileid: "51186758"
 |補救動作 |必要角色和權限 |
 |--|----|
 |Microsoft Defender for Endpoint 修復 (裝置)  |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 指派 **安全性系統管理員** 角色<br/>--- 或 ---<br/>在 Microsoft Defender for Endpoint 中指派作用中的 **修正動作** 角色 <br/> <br/> 若要深入了解，請參閱下列資源： <br/>- [Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [建立及管理角色型存取控制 (Microsoft Defender for Endpoint) ](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365 修正 (Office 內容和電子郵件)   |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 指派 **安全性系統管理員** 角色<br/>--- 且 --- <br/>**搜尋及清除** 已指派安全性 & 規範中心 (的角色 [https://protection.office.com](https://protection.office.com))  <br/><br/>**重要**：如果您已在 Office 365 安全性 & 合規性中心內指派 **安全性系統管理員** 角色 ([https://protection.office.com](https://protection.office.com)) ，您將無法存取「行動中心」或「Microsoft 365 Defender」功能。 您必須具有在 Azure Active Directory 或 Microsoft 365 系統管理中心中指派的 **安全性系統管理員** 角色。 <br/><br/>若要深入了解，請參閱下列資源： <br/>- [Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [安全性 & 規範中心的許可權](/microsoft-365/security/defender-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Office 365 修正 (Office 內容和電子郵件)   |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 指派 **安全性系統管理員** 角色<br/>--- 且 --- <br/>**搜尋及清除** 已指派安全性 & 規範中心 (的角色 [https://protection.office.com](https://protection.office.com))  <br/><br/>**重要**：如果您已在 Office 365 安全性 & 合規性中心內指派 **安全性系統管理員** 角色 ([https://protection.office.com](https://protection.office.com)) ，您將無法存取「行動中心」或「Microsoft 365 Defender」功能。 您必須具有在 Azure Active Directory 或 Microsoft 365 系統管理中心中指派的 **安全性系統管理員** 角色。 <br/><br/>若要深入了解，請參閱下列資源： <br/>- [Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [安全性 & 規範中心的許可權](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > 在 Azure Active Directory 中指派為 **全域管理員** 角色的使用者可核准或拒絕重要訊息中心的任何擱置中動作。 不過，最佳作法是，您的組織應該限制已指派 **全域系統管理員** 角色的人員人數。 建議使用 **安全性系統管理員**、作用中的 **修復動作**，以及上表中所列的「動作中心」許可權所列的 **搜尋及清除** 角色。

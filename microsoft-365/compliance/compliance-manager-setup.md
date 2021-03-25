@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052131"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199216"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -72,7 +72,7 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>有關 Office 365 安全性 & 規範中心的詳細資訊
 
-深入瞭解 [Office 365 安全性 & 合規性中心的許可權](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
+深入瞭解 [Office 365 安全性 & 合規性中心的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 如果您沒有 Office 365 安全性與合規性中心的存取權，或者您需要在 Microsoft 服務信任入口網站中存取經典版本的合規性管理員，則服務信任入口網站中的系統管理員設定會提供另一種方法， ([view 說明](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)) 中指派角色。 請注意，這些角色在其功能上的限制更為有限。
 

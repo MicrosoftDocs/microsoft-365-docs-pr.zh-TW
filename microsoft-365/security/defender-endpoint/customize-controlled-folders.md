@@ -12,19 +12,17 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 03/24/2021
 ms.technology: mde
-ms.openlocfilehash: 64f96544361a672881c590716adea80f40777c6e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.topic: how-to
+ms.openlocfilehash: 0962913df63e6837664cdb8ff79710d66e66977c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163336"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199900"
 ---
 # <a name="customize-controlled-folder-access"></a>自訂受控資料夾存取
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -120,7 +118,7 @@ ms.locfileid: "51163336"
 
 4. 選取 [ **新增允許的應用程式** ]，然後依照提示新增應用程式。
 
-    ![如何新增允許的應用程式按鈕的螢幕擷取畫面](/microsoft-365/security/defender-endpoint/images/cfa-allow-app)
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="[新增允許的應用程式] 按鈕":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>使用群組原則允許特定的應用程式
 
@@ -149,7 +147,7 @@ ms.locfileid: "51163336"
 
    繼續使用將 `Add-MpPreference -ControlledFolderAccessAllowedApplications` 更多應用程式新增至清單。 使用此 Cmdlet 新增的應用程式會出現在 Windows 安全應用程式中。
 
-![已輸入上述 Cmdlet 的 PowerShell 視窗的螢幕擷取畫面](/microsoft-365/security/defender-endpoint/images/cfa-allow-app-ps)
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="允許應用程式的 PowerShell Cmdlet":::
 
 > [!IMPORTANT]
 > 用於 `Add-MpPreference` 附加或新增應用程式至清單。 使用此 `Set-MpPreference` Cmdlet 將會覆寫現有清單。

@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 5ee19b96823d1cdba0f6523686e8deefed79ba99
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 66e1bfa8007a972a1963745857a25e1e255634b6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057976"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200182"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft 安全性入口網站和系統管理中心
 
@@ -42,7 +42,7 @@ ms.locfileid: "51057976"
 |---|---|---| 
 | Microsoft 365 安全性中心 | 透過[Microsoft 365 Defender](microsoft-365-defender.md)監視和回應威脅活動，並透過您的身分識別、電子郵件、資料、端點和應用程式加強安全性狀況 | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender 安全中心 | 使用[Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)提供的功能，監控並回應您端點上的威脅活動 | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
-| 安全性與合規性中心 | 管理 [Exchange Online Protection](../defender-365-security/exchange-online-protection-overview.md?view=o365-worldwide) 和 [Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365?view=o365-worldwide) ，以保護您的電子郵件和共同作業服務，並確保各種資料處理規章的合規性 | [protection.office.com](https://protection.office.com) |
+| 安全性與合規性中心 | 管理 [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md?view=o365-worldwide) 和 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide) ，以保護您的電子郵件和共同作業服務，並確保各種資料處理規章的合規性 | [protection.office.com](https://protection.office.com) |
 | Azure Defender 入口網站 | 使用 [Azure Defender](/azure/security-center/security-center-intro) 加強您的資料中心的安全性狀況，以及雲端中的混合工作負載 | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Microsoft Defender 身分識別入口網站 | 使用 Active Directory 信號搭配[Microsoft Defender](/azure-advanced-threat-protection/what-is-atp)身分識別，識別、偵測和調查高級威脅、受到損害的身分識別和惡意內幕程式動作 | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Cloud App Security 入口網站 | 使用 [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) 取得豐富的知名度、控制資料旅行和完善的分析，以在雲端服務上識別及打擊 cyberthreats | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |

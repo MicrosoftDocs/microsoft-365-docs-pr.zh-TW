@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 746ca59fd0e9eb0d93d93c00b6a279a9156cc524
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: da70bbfe5c4dfa4f9eda16adec709826de1247b7
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050735"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200014"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>至身分識別和超過-一種架構師的視點
 
@@ -135,7 +135,7 @@ Azure AD 的原則引擎是使用條件式 [存取原則](/azure/active-director
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
 - [適用於身分識別的 Microsoft Defender](/azure-advanced-threat-protection/)
 - [適用於端點的 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [適用於 Office 365 的 Microsoft Defender](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [適用於 Office 365 的 Microsoft Defender](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS) 
 - [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
@@ -227,7 +227,7 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 
 ### <a name="security-and-compliance-center-scc"></a> (SCC) 的安全性與合規性中心
 
-[Office 365 Security & 合規性中心的許可權](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) 是「角色群組」的集合，這些群組與 Azure AD role 是分開和不同的。 這可能會令人困惑，因為某些角色群組的名稱與 Azure AD role 相同 (例如，安全性讀取器) ，但它們可以具有不同的成員資格。 我喜歡使用 Azure AD 角色。 每個角色群組都是由一或多個「角色」所組成 (請參閱關於重複使用相同字的含義為何？ ) 和具有來自 Azure AD 的成員，也就是具有電子郵件功能的物件。 此外，您可以建立與角色具有相同名稱的角色群組，這可能會包含該角色， (避免) 混淆。
+[Office 365 Security & 合規性中心的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) 是「角色群組」的集合，這些群組與 Azure AD role 是分開和不同的。 這可能會令人困惑，因為某些角色群組的名稱與 Azure AD role 相同 (例如，安全性讀取器) ，但它們可以具有不同的成員資格。 我喜歡使用 Azure AD 角色。 每個角色群組都是由一或多個「角色」所組成 (請參閱關於重複使用相同字的含義為何？ ) 和具有來自 Azure AD 的成員，也就是具有電子郵件功能的物件。 此外，您可以建立與角色具有相同名稱的角色群組，這可能會包含該角色， (避免) 混淆。
 
 在某種意義上，這是 Exchange 角色群組模型的演變。 不過，Exchange Online 有其自己的 [角色群組管理](/exchange/permissions-exo) 介面。 Exchange Online 中的某些角色群組會從 Azure AD 或安全性 & 合規性中心進行鎖定和管理，但其他使用者可能會有相同或類似的名稱，並在 Exchange Online 中管理 (新增至混淆) 。 建議您避免使用 Exchange Online 使用者介面，除非您需要 Exchange 管理的範圍。
 

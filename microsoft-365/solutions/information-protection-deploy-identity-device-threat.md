@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 的身分識別、裝置和威脅防護服務，避免個人資料遭到破壞。
-ms.openlocfilehash: 145b8a59f7eafb95adf71dc24613ee15ef1c2cca
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052347"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199462"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>使用資料隱私權規定的身分識別、裝置和威脅防護
 
@@ -70,7 +70,7 @@ Microsoft 365 提供許多身分識別、裝置和威脅防護功能，組織可
 - 要求行動裝置在非活動狀態時鎖定。
 - 要求行動裝置會在多個登入失敗時擦章。
 
-針對 [**防護威脅**] 類別使用 [Exchange Online Protection 和 Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md) ，您可以：
+針對 [**防護威脅**] 類別使用 [Exchange Online Protection 和 Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) ，您可以：
 
 - 啟用寄件者驗證 (SPF、DMARC 及 DKIM) 。
 - 設定 Microsoft Defender for Office 365 反網路釣魚原則。
@@ -81,8 +81,8 @@ Microsoft 365 提供許多身分識別、裝置和威脅防護功能，組織可
 
 ### <a name="references"></a>引用：
 
-- [一般身分識別與裝置存取原則](../security/defender-365-security/identity-access-policies.md)
+- [一般身分識別與裝置存取原則](../security/office-365-security/identity-access-policies.md)
 - [保護 Office 365 中的威脅](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [安全附件](../security/defender-365-security/safe-attachments.md)
-- [安全連結](../security/defender-365-security/safe-links.md)
-- [安全文件](../security/defender-365-security/safe-docs.md)
+- [安全附件](../security/office-365-security/safe-attachments.md)
+- [安全連結](../security/office-365-security/safe-links.md)
+- [安全文件](../security/office-365-security/safe-docs.md)

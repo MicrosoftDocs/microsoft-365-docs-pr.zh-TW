@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41c97d122362ec1fa945fc012ab7a1da46a43b68
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ed6f6b42570a908a1f4a83d46ef5b2de0c558692
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165582"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199738"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -141,7 +141,7 @@ ms.locfileid: "51165582"
 > [!NOTE]
 > 您必須具有適當的授權，才能啟用此功能。
 
-若要在 Office 365 威脅情報中接收上下文相關的裝置整合，您必須在安全性 & 規範儀表板中啟用 [Endpoint for Endpoint] 設定。 如需詳細資訊，請參閱 [威脅調查和回應](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-ti)。
+若要在 Office 365 威脅情報中接收上下文相關的裝置整合，您必須在安全性 & 規範儀表板中啟用 [Endpoint for Endpoint] 設定。 如需詳細資訊，請參閱 [威脅調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)。
 
 ## <a name="microsoft-threat-experts"></a>Microsoft 威脅專家
 
@@ -150,7 +150,7 @@ ms.locfileid: "51165582"
 > [!NOTE]
 > 適用于 Microsoft 的 Defender for Endpoint 的 Microsoft 威脅專家功能，具有 E5 授權 for [Enterprise 可移動性 + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)。
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft 雲端應用程式安全性
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 啟用此設定時，會將 Defender for Endpoint 信號轉寄至 Microsoft Cloud App Security，以提供 Cloud 應用程式使用狀況的更深入可視性。 轉寄的資料會與您的雲端應用程式安全性資料儲存在相同的位置。
 

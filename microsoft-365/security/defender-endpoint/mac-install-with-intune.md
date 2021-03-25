@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb2923c3f2cb3f27a864fdc3c5070107998823d5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059684"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199534"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>以 Intune 為基礎的 Microsoft Defender for Mac 部署
 
@@ -137,7 +137,7 @@ ms.locfileid: "51059684"
 
 1. 確認裝置管理。
 
-    ![確認裝置管理螢幕擷取畫面](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-3-confirmdevicemgmt)
+    ![確認裝置管理螢幕擷取畫面](./images/mdatp-3-confirmdevicemgmt.png)
 
     選取 [ **開啟系統喜好** 設定]，然後在清單中尋找 [ **管理設定檔** ]，然後選取 [ **核准 ...**]。您的管理設定檔會顯示為 **已驗證**：
 
@@ -160,9 +160,9 @@ ms.locfileid: "51059684"
 
 2. 選擇設定檔的名稱。 將 **平臺** 改為 MacOS **配置檔案類型 = 分機**。 選取 [建立]。
 
-3. 在 [索引標籤 `Basics` ] 中，為此新設定檔指定名稱。
+3. 在 [ **基礎** ] 索引標籤中，提供此新設定檔的名稱。
 
-4. 在 [ `Configuration settings` ] 索引標籤中，在區段中新增下列專案 `Allowed system extensions` ：
+4. 在 [ **設定設定** ] 索引標籤的 [允許的 **系統擴充** ] 區段中，新增下列專案：
 
     束識別碼         | 小組識別碼
     --------------------------|----------------
@@ -170,9 +170,9 @@ ms.locfileid: "51059684"
     wdav netext | UBF8T346G9
 
     > [!div class="mx-imgBorder"]
-    > ![[設定設定] 索引標籤的螢幕擷取畫面，包含允許的「小組識別碼」區段](images/mac-system-extension-intune2.png)
+    > ![[基礎] 索引標籤的 [設定設定] 中的副檔名設定螢幕擷取畫面](images/mac-system-extension-intune2.png)
 
-5. 在 [索引標籤 `Assignments` ] 中，將此設定檔指派給所有 **使用者 & 所有裝置**。
+5. 在 [ **工作分派** ] 索引標籤中，將此設定檔指派給所有 **使用者 & 所有裝置**。
 
 6. 複查和建立此設定設定檔。
 
@@ -186,7 +186,7 @@ ms.locfileid: "51059684"
 
 4. 選取 [確定]。
 
-    ![系統設定檔的螢幕擷取畫面](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![從自訂設定設定檔的檔案中匯入設定](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
 
 5. 選取 [**管理**  >  **指派**]。 在 [ **包含** ] 索引標籤中，選取 [ **指派給所有使用者 & 所有裝置**]。
 
@@ -194,14 +194,14 @@ ms.locfileid: "51059684"
 
 7. 建立另一個設定檔，並提供名稱，並上傳 intune/WindowsDefenderATPOnboarding.xml 檔。
 
-8. `fulldisk.mobileconfig`從[我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)下載，並將其儲存為 `tcc.xml` 。 建立另一個設定檔，並提供任何名稱，並將此檔案上傳至該設定檔。<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
+8. 從 [我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)下載 **fulldisk** ，並將其儲存為 **tcc.xml**。 建立另一個設定檔，並提供任何名稱，並將此檔案上傳至該設定檔。<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
 
    > [!CAUTION]
    > macOS 10.15 (Catalina) 包含新的安全性和隱私權增強功能。 從這個版本開始，依預設，應用程式無法存取磁片 (上的某些位置，例如檔、下載、桌面等 ) 不經明確同意。 在缺少這種同意的情況下，Microsoft Defender for Endpoint 無法完全保護您的裝置。
    >
    > 此設定設定檔會授與 Microsoft Defender for Endpoint 的完整磁片存取權。 如果您先前已透過 Intune 設定 Microsoft Defender for Endpoint，建議您使用此設定檔更新部署。
 
-9. 做為端點偵測和回應功能的一部分，Mac 版端點的 Microsoft Defender 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。 `netfilter.mobileconfig`從[我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)下載、將其儲存為 netext.xml，並使用與上述各節相同的步驟進行部署。 <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. 做為端點偵測和回應功能的一部分，Mac 版端點的 Microsoft Defender 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。 從 [我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)下載 **netfilter** ，將其儲存為 netext.xml，然後使用與上述各節相同的步驟進行部署。 <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
 10. 若要允許 Microsoft Defender for Mac 和 Microsoft 自動更新在 macOS 10.15 (Catalina) 上的 UI 中顯示通知，請 `notif.mobileconfig` 從 [我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) 下載並將其匯入為自訂的負載。 <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
@@ -210,7 +210,7 @@ ms.locfileid: "51059684"
 當 Intune 變更傳播至已註冊的裝置後，您可以在 [**監視**  >  **裝置狀態**] 底下看到它們：
 
 > [!div class="mx-imgBorder"]
-> ![Kext-裝置狀態的螢幕擷取畫面](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade)
+> ![監視器中裝置狀態的視圖](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>發佈應用程式
 
@@ -222,7 +222,7 @@ ms.locfileid: "51059684"
 
 4. 選取 [ **設定** 並新增必要的資訊]。
 
-5. 使用 **MacOS 高塞拉里昂 10.13** 做為最小作業系統。
+5. 使用 **MacOS 高塞拉里昂 10.14** 做為最小作業系統。
 
 6. 將 [ *忽略應用程式版本* ] 設定為 **[是]**。 其他設定可以是任意值。
 
@@ -232,12 +232,12 @@ ms.locfileid: "51059684"
     > 如果 Intune 上傳的版本低於裝置上的版本，則會安裝較低的版本，因此會有效地將 Microsoft Defender 用於端點。 這可能會導致非運作的應用程式。 如需如何更新產品的其他資訊，請參閱 [部署 Microsoft Defender For Mac 的更新](mac-updates.md) 。 如果您部署了將「忽略」 *應用程式版本* 設定為 [ **否**] 的 Microsoft Defender 端點，請將它變更為 **[是]**。 若仍無法在用戶端裝置上安裝 Microsoft Defender for Endpoint，請卸載 Microsoft Defender for Endpoint，然後推入更新的原則。
      
     > [!div class="mx-imgBorder"]
-    > ![[新增應用程式] 對話方塊中的 [設定應用程式資訊] 選項的螢幕擷取畫面](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
+    > ![在應用程式新增中顯示應用程式資訊](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
 
 7. 選取 **[確定]** 並 **新增**]。
 
     > [!div class="mx-imgBorder"]
-    > ![範例概述的螢幕擷取畫面](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
+    > ![在 [通知] 視窗中顯示的裝置狀態](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
 
 8. 可能需要幾分鐘才能上傳套件。 完成後，請從清單中選取套件，然後移至 [ **工作分派** ] 和 [ **新增群組**]。
 

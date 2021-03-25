@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d78f90e78a50d5902070f441a1d60693a5f531c8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35a0b66a4cdc4cf39c15329eda2e0aafced79f34
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185716"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199606"
 ---
 # <a name="create-indicators-for-files"></a>建立檔案的指示器
 
@@ -35,7 +35,8 @@ ms.locfileid: "51185716"
 
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 您可以 banning 潛在的惡意檔案或可疑惡意程式碼，以避免進一步傳播您組織中的攻擊。 如果您知道可能是惡意遷移的可執行檔 (PE) file，您可以將它封鎖。 此作業可防止在組織中的機器上讀取、寫入或執行此作業。
 
@@ -52,13 +53,13 @@ ms.locfileid: "51185716"
 - 若要開始封鎖檔案，您必須先在 [設定] 中 [關閉 [ **封鎖] 或 [允許** ] 功能](advanced-features.md) 。
 - 這項功能的設計是為了防止可疑的惡意程式碼 (或可能的惡意檔案) 從網頁下載。 它目前支援可遷移的可執行檔 (PE) 檔案（包括 _.exe_ 和 _.dll_ 檔案）。 覆蓋範圍會隨著時間擴充。
 
->[!IMPORTANT]
->- 如果檔案的分類存在於 allow 或封鎖動作之前的設備快取上，則無法在檔案上執行 allow 或 block 功能 
->- 受信任的簽署檔會以不同方式處理。 已優化用於處理惡意檔的 Defender for Endpoint。 嘗試封鎖信任的簽署檔案，在某些情況下，可能會有效能的含義。
+如果您要將大型檔案從網路共用複製到您的本機裝置，尤其是透過 VPN 連線時，可能會影響效能。 
 
- 
->[!NOTE]
->通常會在幾分鐘內強制執行檔封鎖，但可長達30分鐘。
+> [!IMPORTANT]
+> - 如果檔案的分類存在於 allow 或封鎖動作之前的設備快取上，則無法在檔案上執行 allow 或 block 功能 
+> - 受信任的簽署檔會以不同方式處理。 已優化用於處理惡意檔的 Defender for Endpoint。 嘗試封鎖信任的簽署檔案，在某些情況下，可能會有效能的含義。
+> - 通常會在幾分鐘內強制執行檔封鎖，但可長達30分鐘。
+> - 如果有衝突的檔指示器原則，則會套用更安全原則的強制原則。 例如，如果兩個雜湊類型都定義相同的檔案，則 SHA-256 檔案雜湊指標原則會優先于 MD5 檔案雜湊指標原則。
 
 ### <a name="create-an-indicator-for-files-from-the-settings-page"></a>從 [設定] 頁面建立檔案的指標
 
