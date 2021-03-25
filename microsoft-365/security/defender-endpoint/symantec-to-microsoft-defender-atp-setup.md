@@ -21,17 +21,17 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 3fbe7ca11ca168f2af75b76252acf4d3a97b35f0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6a5e5c10e92d5c8c017360033d7c3fc23b707730
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059668"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185476"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>從 Symantec 遷移-階段2：設定 Microsoft Defender for Endpoint
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |[![階段1：準備](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[階段1：準備](symantec-to-microsoft-defender-atp-prepare.md) |![階段2：設定](images/phase-diagrams/setup.png)<br/>階段2：設定 |[![階段3：板載](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[階段3：板載](symantec-to-microsoft-defender-atp-onboard.md) |
@@ -87,7 +87,7 @@ ms.locfileid: "51059668"
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> 仍需要協助嗎？ 請參閱 [Windows Server 2016 和2019上的 Microsoft Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
+> 是否仍需要協助？ 請參閱 [Windows Server 2016 和2019上的 Microsoft Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>在 Windows Server 上將 Microsoft Defender 防毒軟體設定為被動模式
 

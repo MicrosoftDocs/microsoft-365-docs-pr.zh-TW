@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 6caa1cfe08a20aa824d85966c104a25988b8be53
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: af9e9315088a8dd5da9740b33135551d28664ed7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165354"
+ms.locfileid: "51186110"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>流覽行動中心以查看修正動作
 
@@ -46,14 +46,14 @@ ms.locfileid: "51165354"
 
 |新的整合的動作中心  |上一個操作中心  |
 |---------|---------|
-|列出裝置和電子郵件在一個位置的擱置和完成的動作 <br/> ([Microsoft defender For Endpoint](microsoft-defender-advanced-threat-protection.md) 加 [Microsoft defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)) |列出裝置的擱置及已完成的動作 <br/> 僅限 [端點的 Microsoft Defender](microsoft-defender-advanced-threat-protection.md) ()    |
+|列出裝置和電子郵件在一個位置的擱置和完成的動作 <br/> ([Microsoft defender For Endpoint](microsoft-defender-endpoint.md) 加 [Microsoft defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)) |列出裝置的擱置及已完成的動作 <br/> 僅限 [端點的 Microsoft Defender](microsoft-defender-endpoint.md) ()    |
 |位於：<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |位於：<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
 | 在 Microsoft 365 的 [安全性中心] 中，選擇 [ **動作中心**]。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="流覽至 Microsoft 365 安全中心的動作中心"::: | 在 Microsoft Defender Security Center 中，選擇 [**自動調查**]  >  **動作中心**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="從 Microsoft Defender Security Center 流覽至 [行動中心]":::  |
 
 整合的動作中心會跨 Defender 的 Defender 和 Defender for Office 365，將修正動作彙集在一起。 它會定義所有修正動作的共同語言，並提供統一的調查經驗。 
 
 如果您有適當的許可權以及下列一或多項訂閱，您可以使用統一的行動中心：
-- [適用於端點的 Defender](microsoft-defender-advanced-threat-protection.md)
+- [適用於端點的 Defender](microsoft-defender-endpoint.md)
 - [適用於 Office 365 的 Defender](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
 

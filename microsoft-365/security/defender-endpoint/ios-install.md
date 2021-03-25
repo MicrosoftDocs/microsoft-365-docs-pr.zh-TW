@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c7f60df38ce9f34fecae975be40206d7270b0863
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7887f26cb8ca7e0e769249a10f008308149aaa42
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057528"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186686"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>為 iOS 部署 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -128,7 +128,7 @@ Intune 可讓您透過應用程式設定原則設定 iOS 應用程式的 Defende
 
    部署至使用者群組時，使用者必須先登入裝置，然後才能套用原則。
 
-   按 [下一步 **]**。
+   按 [下一步]。
 
 1. 當您完成時，請在 [ **複查 + 建立** ] 頁面上，選擇 [ **建立**]。 新的設定檔會顯示在設定檔的清單中。
 
@@ -140,7 +140,7 @@ Intune 可讓您透過應用程式設定原則設定 iOS 應用程式的 Defende
     > ![Microsoft 端點管理員系統管理員 Center7 的影像](images/ios-deploy-7.png)
 
     - 提供設定檔的名稱。 當系統提示您匯入設定設定檔檔案時，請選取上述下載的檔案。
-    - 在 [ **工作分派** ] 區段中，選取您要套用此設定檔的裝置群組。 最佳作法是將此套用至所有受管理的 iOS 裝置。 按 [下一步 **]**。
+    - 在 [ **工作分派** ] 區段中，選取您要套用此設定檔的裝置群組。 最佳作法是將此套用至所有受管理的 iOS 裝置。 按 [下一步]。
     - 當您完成時，請在 [ **複查 + 建立** ] 頁面上，選擇 [ **建立**]。 新的設定檔會顯示在設定檔的清單中。
 
 ## <a name="next-steps"></a>後續步驟

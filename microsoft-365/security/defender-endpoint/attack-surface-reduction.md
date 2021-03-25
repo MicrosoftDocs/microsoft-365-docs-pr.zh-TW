@@ -15,12 +15,12 @@ ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 2bd8442dd8e119a57c490773b6e01a7c5f7adcac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62f1f5f2d47482f642f00c870b3e0f3112f5f639
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059952"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185764"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
@@ -112,7 +112,7 @@ ms.locfileid: "51059952"
 - Windows Server， [版本 1803 (半年通道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 或更新版本
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-雖然攻擊面降減規則不需要 [Windows e5 授權](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)，但如果您有 windows e5，您就會取得高級管理功能。 這些功能僅適用于 Windows E5，包含可用於 [端點的](microsoft-defender-advanced-threat-protection.md)監控、分析和工作流程，以及 [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center)中的報告和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用 [事件檢視器] 和 [Microsoft Defender 防病毒記錄] 來查看攻擊面減少規則事件。
+雖然攻擊面降減規則不需要 [Windows e5 授權](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)，但如果您有 windows e5，您就會取得高級管理功能。 這些功能僅適用于 Windows E5，包含可用於 [端點的](microsoft-defender-endpoint.md)監控、分析和工作流程，以及 [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center)中的報告和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用 [事件檢視器] 和 [Microsoft Defender 防病毒記錄] 來查看攻擊面減少規則事件。
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>在 Microsoft Defender 安全中心檢查攻擊面減少事件
 

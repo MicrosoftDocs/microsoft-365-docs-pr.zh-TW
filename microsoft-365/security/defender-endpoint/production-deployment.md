@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e5430d409f1f8212491657b0e4ff7ec52622576
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4af84c21977e4b90c8b6d9ec4c785339ff229e7d
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058211"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186146"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>設定 Microsoft Defender for Endpoint 部署
 
@@ -32,7 +32,7 @@ ms.locfileid: "51058211"
 
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -106,7 +106,7 @@ ms.locfileid: "51058211"
 
     ![設定中的地理位置影像](images/setup-preferences.png)
 
-5. 選取 **[下一步]**。
+5. 選取 [下一步]。
 
      ![最終喜好設定的影像](images/setup-preferences2.png)
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4dcaa8063ea11ab2ca43330a761783fead829d3e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ef6e387d4e945afb71f1fa6ecef9d78ba2d74a55
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060087"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185680"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-for-macos-devices-into-jamf-pro"></a>在 Jamf Pro 中註冊用於 macOS 裝置的 Microsoft Defender for Endpoint 
 
@@ -31,7 +31,7 @@ ms.locfileid: "51060087"
 
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)

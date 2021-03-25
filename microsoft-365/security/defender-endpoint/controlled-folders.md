@@ -16,12 +16,12 @@ ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: ae50d53fbc9bf01d4cd16b939461eecc9ec1a568
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cd662dc130adc37b3bf8bd06839242ccc9a49f8e
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165174"
+ms.locfileid: "51185966"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控資料夾存取權來保護重要資料夾
 
@@ -40,7 +40,7 @@ ms.locfileid: "51165174"
 > [!NOTE]
 > 腳本引擎是不受信任的，您無法允許他們存取受控制的受保護資料夾。  例如，即使您允許使用 [憑證及檔指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates)，「受控資料夾存取」也不會信任 PowerShell。 
 
-「受管理的資料夾存取」最適合使用 [Microsoft Defender For Endpoint](microsoft-defender-advanced-threat-protection.md)」，可讓您在一般 [警示調查案例](investigate-alerts.md)中深入報告，以進行受控資料夾存取事件和區塊。
+「受管理的資料夾存取」最適合使用 [Microsoft Defender For Endpoint](microsoft-defender-endpoint.md)」，可讓您在一般 [警示調查案例](investigate-alerts.md)中深入報告，以進行受控資料夾存取事件和區塊。
 
 > [!TIP]
 > [受管理的資料夾存取封鎖] 不會在 [ [警示] 佇列](alerts-queue.md)中產生警示。 不過，您可以在 [裝置時程表視圖](investigate-machines.md)中，使用 [高級搜尋](advanced-hunting-overview.md)或 [自訂偵測規則](custom-detection-rules.md)，查看受控資料夾存取模組的相關資訊。

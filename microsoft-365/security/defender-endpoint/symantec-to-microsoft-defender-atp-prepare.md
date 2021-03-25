@@ -21,17 +21,17 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 9bea2f8ac7948b14bbcbdef196a7573d5ca6623b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8784c8d608666946461ddc27aa2e7f2b740276a0
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056711"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185487"
 ---
 # <a name="migrate-from-symantec---phase-1-prepare-for-your-migration"></a>從 Symantec 遷移-階段1：準備遷移
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |![階段1：準備](images/phase-diagrams/prepare.png)<br/>階段1：準備 |[![階段2：設定](images/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[階段2：設定](symantec-to-microsoft-defender-atp-setup.md) |[![階段3：板載](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[階段3：板載](symantec-to-microsoft-defender-atp-onboard.md) |

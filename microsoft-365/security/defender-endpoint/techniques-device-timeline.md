@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6e2c18bd3710e659b5f9887844bc92528da4607
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6b080c209292c8cac1aa64d748926734f4be964c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057312"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185464"
 ---
 # <a name="techniques-in-the-device-timeline"></a>裝置時程表中的技術
 
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 您可以透過分析特定裝置上發生的事件，在調查中取得更深入的洞察力。 首先，從 [ [裝置] 清單](machines-view-overview.md)中選取感興趣的裝置。 在 [裝置] 頁面上，您可以選取 [ **時程表** ] 索引標籤，以查看裝置上發生的所有事件。

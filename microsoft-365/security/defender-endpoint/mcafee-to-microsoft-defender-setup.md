@@ -22,17 +22,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 50e87eb188b64c99372d1a141f6a70e6748ecd2b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: be39d64743979fe903193a388ce491523819f299
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058747"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185608"
 ---
 # <a name="migrate-from-mcafee---phase-2-set-up-microsoft-defender-for-endpoint"></a>從 McAfee 遷移-階段2：設定 Microsoft Defender for Endpoint
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |[![階段1：準備](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[階段1：準備](mcafee-to-microsoft-defender-prepare.md) |![階段2：設定](images/phase-diagrams/setup.png)<br/>階段2：設定 |[![階段3：板載](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[階段3：板載](mcafee-to-microsoft-defender-onboard.md) |
@@ -113,7 +113,7 @@ ms.locfileid: "51058747"
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> 仍需要協助嗎？ 請參閱 [Windows Server 2016 和2019上的 Microsoft Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
+> 是否仍需要協助？ 請參閱 [Windows Server 2016 和2019上的 Microsoft Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>在 Windows Server 上將 Microsoft Defender 防毒軟體設定為被動模式
 

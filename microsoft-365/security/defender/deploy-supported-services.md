@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d0b7b600e0880bacda3588598387e5b1e8c82958
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0902dce0af3c101cbaf7ff526beb71e9f46a1bf4
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054578"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187514"
 ---
 # <a name="deploy-supported-services"></a>部署支援服務
 
@@ -49,7 +49,7 @@ Microsoft 365 E5，E5 Security，A5，or A5 安全性授權或有效的授權組
 | 適用於端點的 Microsoft Defender | 以強大行為感應器、雲端分析和威脅智慧為基礎的 Endpoint protection 套件 |
 |適用於 Office 365 的 Microsoft Defender | Office 365 中的應用程式和資料的高級保護，包括電子郵件和其他共同作業工具 |
 | 適用於身分識別的 Microsoft Defender | 使用關聯的 Active Directory 信號，防禦高級威脅、遭到破壞的身分識別，以及惡意內幕用。 |
-| Microsoft 雲端應用程式安全性 | 在您的 Microsoft 和協力廠商雲端服務之間識別及打擊 cyberthreats |
+| Microsoft Cloud App Security | 在您的 Microsoft 和協力廠商雲端服務之間識別及打擊 cyberthreats |
 
 ## <a name="deployed-services-and-functionality"></a>部署的服務和功能
 當您部署更支援的服務時，Microsoft 365 Defender 可提供更好的可見度、關聯性和修正能力。
@@ -70,7 +70,7 @@ Microsoft 365 E5，E5 Security，A5，or A5 安全性授權或有效的授權組
 | 適用於端點的 Microsoft Defender | -端點狀態和原始事件<br />-端點偵測和警示，包含防毒程式、EDR、攻擊面降低<br />-在端點上觀察到的檔案及其他實體的資訊 | 端點 |
 |適用於 Office 365 的 Microsoft Defender | -郵件和信箱狀態和原始事件<br />-電子郵件、附件及連結偵測 | -信箱<br />-Microsoft 365 帳戶 |
 | 適用於身分識別的 Microsoft Defender | -Active Directory 信號，包括驗證事件<br />-身分識別相關的行為偵測 | 身分識別 |
-| Microsoft 雲端應用程式安全性 | -偵測 unsanctioned cloud app and services (shadow) <br />-向雲端應用程式公開資料<br />-Cloud app 相關聯的威脅活動 | 雲端應用程式 |
+| Microsoft Cloud App Security | -偵測 unsanctioned cloud app and services (shadow) <br />-向雲端應用程式公開資料<br />-Cloud app 相關聯的威脅活動 | 雲端應用程式 |
 
 ## <a name="deploy-the-services"></a>部署服務
 部署每個服務時，通常需要為您的租使用者和某些初始設定提供布建。 請參閱下表以瞭解各項服務的部署方式。
@@ -80,7 +80,7 @@ Microsoft 365 E5，E5 Security，A5，or A5 安全性授權或有效的授權組
 | 適用於端點的 Microsoft Defender | [Microsoft Defender for Endpoint 部署指南](../defender-endpoint/deployment-phases.md) | *請參閱布建指示* |
 |適用於 Office 365 的 Microsoft Defender | *無，使用 Office 365 布建* | [設定適用於 Office 365 的 Microsoft Defender 原則](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) |
 | 適用於身分識別的 Microsoft Defender | [快速入門：建立您的 Microsoft Defender for Identity 實例](/azure-advanced-threat-protection/install-atp-step1) | *請參閱布建指示* |
-| Microsoft 雲端應用程式安全性 | *無* | [快速入門： Microsoft Cloud App Security 快速入門](/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Cloud App Security | *無* | [快速入門： Microsoft Cloud App Security 快速入門](/cloud-app-security/getting-started-with-cloud-app-security) |
 
 部署支援的服務之後，請 [開啟 Microsoft 365 Defender](m365d-enable.md)。
 
@@ -88,7 +88,7 @@ Microsoft 365 E5，E5 Security，A5，or A5 安全性授權或有效的授權組
 
 - [Microsoft 365 Defender 概述](microsoft-365-defender.md)
 - [開啟 Microsoft 365 Defender](m365d-enable.md)
-- [Microsoft Defender for Endpoint 簡介](../defender-endpoint/microsoft-defender-advanced-threat-protection.md)
+- [Microsoft Defender for Endpoint 簡介](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Microsoft Defender for Office 365 簡介](../defender-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security 概觀](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender 身分識別概述](/azure-advanced-threat-protection/what-is-atp)

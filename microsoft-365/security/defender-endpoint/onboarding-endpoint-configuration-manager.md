@@ -18,19 +18,19 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e6f3cfbf471e7b99e2ce5215491e32c955e3833
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 31c946ccad84aca3b2fc86c95655cea9e66e182f
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056799"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186398"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 上架
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -106,7 +106,7 @@ ms.locfileid: "51056799"
 
     ![Microsoft 端點 Configuration Manager 的圖像 wizard8](images/configmgr-membership-rules.png)
 
-9. 選取 **[下一步]**。
+9. 選取 [下一步]。
 
     ![Microsoft 端點 Configuration Manager 的圖像 wizard9](images/configmgr-confirm.png)
 
@@ -154,7 +154,7 @@ ms.locfileid: "51056799"
 
 9. 流覽至上述步驟4下載檔案的位置。
 
-10. 按 [下一步 **]**。
+10. 按 [下一步]。
 11. 以適當的範例設定代理 (**無** 或 **所有檔案類型**) 。
 
     ![設定 settings1 的影像](images/configmgr-config-settings.png)

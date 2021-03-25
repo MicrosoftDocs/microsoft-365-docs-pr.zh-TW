@@ -21,17 +21,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 71428db81d5cd98e02cdb7c878c1f60562653ae3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fb6edf33b02671396fa4d078770d5b502e59d087
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056732"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185512"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>切換至 Microsoft Defender for Endpoint-階段2：設定
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |[![階段1：準備](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[階段1：準備](switch-to-microsoft-defender-prepare.md) |![階段2：設定](images/phase-diagrams/setup.png)<br/>階段2：設定 |[![階段3： Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[階段3：板載](switch-to-microsoft-defender-onboard.md) |
@@ -100,7 +100,7 @@ ms.locfileid: "51056732"
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> 仍需要協助嗎？ 請參閱 [Windows Server 上的 Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
+> 是否仍需要協助？ 請參閱 [Windows Server 上的 Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>在 Windows Server 上將 Microsoft Defender 防毒軟體設定為被動模式
 

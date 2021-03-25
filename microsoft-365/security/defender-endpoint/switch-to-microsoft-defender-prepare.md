@@ -21,17 +21,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: faaf8aefca7cb3b2e0583ed080e66f5129488d37
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d5339ce795bff1451d6f4caaf37de39f996890be
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059671"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185524"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>切換至 Microsoft Defender 的端點-階段1：準備
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 | ![階段1：準備](images/phase-diagrams/prepare.png)<br/>階段1：準備 | [![階段2：設定](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[階段2：設定](switch-to-microsoft-defender-setup.md) | [![階段3：板載](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[階段3：板載](switch-to-microsoft-defender-onboard.md) |

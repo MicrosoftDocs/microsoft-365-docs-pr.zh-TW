@@ -22,17 +22,17 @@ ms.topic: conceptual
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 7cbe74843e0a71cc1e20cb0b57d9bb838704e19a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 53d9e68fa357d07cf70ab2282de9cee9fc0bd90d
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059675"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185632"
 ---
 # <a name="migrate-from-mcafee-to-microsoft-defender-for-endpoint"></a>從 McAfee 遷移至 Microsoft Defender for Endpoint
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 如果您打算從 McAfee 端點安全性 (McAfee) 至 [Microsoft defender For endpoint](https://docs.microsoft.com/windows/security/threat-protection))  (microsoft defender for endpoint，您就是在正確的位置。 使用本文做為指南。

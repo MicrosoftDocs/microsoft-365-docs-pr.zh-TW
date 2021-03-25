@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 44105ae8d1872c3ecefcf84a5e2efef122849b8c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 645c3657bdd1540ac95b68460b4dff6d25627c2c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059476"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185920"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-for-mac"></a>疑難排解適用于 Mac 的 Microsoft Defender for Endpoint 的授權問題
 
@@ -33,7 +33,7 @@ ms.locfileid: "51059476"
 **適用於：**
 
 - [Mac 版端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)

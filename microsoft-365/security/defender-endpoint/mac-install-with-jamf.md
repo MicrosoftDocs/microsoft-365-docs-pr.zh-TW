@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0d4d0e46bf563c392d1c00f00491ec5511ef0f92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 56f5e860bd2a9dd47ce16379b5e1ca1a263d62d0
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057404"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187406"
 ---
 # <a name="deploying-microsoft-defender-for-endpoint-for-macos-with-jamf-pro"></a>使用 Jamf Pro 為 macOS 部署 Microsoft Defender for Endpoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "51057404"
 
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)

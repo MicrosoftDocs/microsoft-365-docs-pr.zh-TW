@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 521c24c24ecc46c81f74e0bab28642aaf581274d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5152a1fa13562f25a8e55617655cab934e886ff0
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057048"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186614"
 ---
 # <a name="microsoft-defender-security-center"></a>Microsoft Defender 安全中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -41,7 +41,7 @@ Microsoft Defender 安全中心是可讓您存取 Microsoft Defender for Endpoin
 
 主題 | 描述
 :---|:---
-入門  |  瞭解基本需求、驗證授權和完整的設定、瞭解預覽功能、瞭解資料儲存與隱私權，以及如何指派使用者對入口網站的存取權。
+快速入門  |  瞭解基本需求、驗證授權和完整的設定、瞭解預覽功能、瞭解資料儲存與隱私權，以及如何指派使用者對入口網站的存取權。
 [板載裝置](onboard-configure.md) | 深入瞭解上架用戶端、伺服器和非 Windows 裝置。 瞭解如何執行偵測測試、設定 proxy 和網際網路連線設定，以及如何對潛在的上架問題進行疑難排解。
 [瞭解入口網站](use.md) | 瞭解安全性作業、安全分數和威脅分析儀表板，以及如何流覽入口網站。
 調查和修正威脅 | 調查警示、裝置，並採取反應行動以修正威脅。
