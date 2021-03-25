@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 95b2e4bfc0eca58d6c71670b21ded81affcc219f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cc005c559e0f91f1c5888f8d7e4e7a2a420894db
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185500"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218697"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>從 Symantec 遷移-階段3：板載至 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185500"
 || |*您在這裡！* |
 
 
-**歡迎您 [從 Symantec 遷移至 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)的階段 3**。 此遷移階段包含下列步驟：
+**歡迎您 [從 Symantec 遷移至 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)的階段 3**。 此遷移階段包含下列步驟：
 
 1. [板載裝置至 Microsoft Defender For Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint)。
 2. [執行偵測測試](#run-a-detection-test)。
@@ -105,6 +105,6 @@ ms.locfileid: "51185500"
 
 ## <a name="next-steps"></a>後續步驟
 
-**恭喜**！ 您已完成 [從 Symantec 遷移至 Microsoft Defender For Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)！ 
+**恭喜**！ 您已完成 [從 Symantec 遷移至 Microsoft Defender For Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)！ 
 - 請造訪 Microsoft Defender Security Center () 中的[安全性作業儀表板](security-operations-dashboard.md) [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 
 - [管理 Microsoft Defender For Endpoint，後期遷移](manage-atp-post-migration.md)。
