@@ -1,19 +1,19 @@
 ---
 title: Microsoft 受管理的桌面裝置
 description: 本文列出已核准 Microsoft 受管理桌面之裝置的規格。
-keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b0aa619f09f2d6b32289e037283a0dc6578d0150
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920501"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218661"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的桌面裝置 
 
@@ -37,13 +37,13 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文列
 
 | Model    | 最低規格  | 其他需求    | 封存日期   | 退休日期   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Latitude 5310/5310 2-1-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年4月28日  | 2025年4月28日 |
+| **\*[Dell Latitude 5320/5320 2-1-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5320-laptop-or-2-in-1/spd/latitude-13-5320-2-in-1-laptop?)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2023年1月22日  | 2026年1月22日 |
 | [Dell Latitude 3510](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-3510-business-laptop/spd/latitude-15-3510-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年4月28日 | 2025年4月28日  |
-| [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年4月28日 | 2025年4月28日  |
+| **\*[Dell Latitude 5420](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5420-laptop/spd/latitude-5420-laptop?)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2023年1月2日 | 2026年1月2日  |
 | [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年4月28日 | 2025年4月28日 |
 | [Dell Latitude 7310/7310 2-1-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年5月4日  | 2025年5月4日  |
 | **\*[Dell Latitude 7420/7420 2-1-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-7420-business-laptop-or-2-in-1/spd/latitude-14-7420-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2023年3月22日  | 2026年3月22日  |
-| [Dell Latitude 9410 2-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 5月5日2022  | 5月5日2025  |
+| **\*[Dell Latitude 9420 2-1](https://www.dell.com/en-us/work/shop/scc/sr/laptops/latitude-laptops?~ck=mn)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | Apr 2023  | Apr 2026  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 5月5日2022  | 5月5日2025  |
 | [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB/Intel i3/8 GB RAM | 無 | 2022年5月27日  | 2025年5月27日  |
 | [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB/Intel i3/8 GB RAM | 無 | 2022年5月15日  | 2025年5月15日  |
@@ -63,7 +63,7 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文列
 | [HP Z2 微型 G5 工作站](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB/Intel i5/8 GB RAM | 具有8QR48AV 的 SKU| 2021年12月31日 | 2024年12月31日 |
 | **\*[HP ZBook Firefly 14/15 G7 移動工作站](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 GB/Intel i5/8 GB RAM | SKU 與9MZ22AV，需要 IR 相機 | 2021年11月30日 | 2024年11月30日 |
 
-### <a name="microsoft"></a>微軟
+### <a name="microsoft"></a>Microsoft
 
 | Model    | 最低規格  | 其他需求    | 封存日期   | 退休日期   |
 |----------|----------------|---------------------------|----------------|--------------------|

@@ -22,12 +22,12 @@ ms.custom: migrationguides
 ms.date: 02/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 6e5b79e447579631e4aa2eaf02352dc3fa6a8daa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2c6029a1aada8f5f5fb27723c868f28c3de6f8aa
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059307"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218649"
 ---
 # <a name="make-the-switch-from-a-non-microsoft-endpoint-solution-to-microsoft-defender-for-endpoint"></a>將非 Microsoft 端點解決方案切換至 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51059307"
 
 > [!TIP]
 > - 如果您目前使用 McAfee 端點安全性 (McAfee) ，請參閱 [從 McAfee 遷移至 Microsoft Defender For Endpoint](mcafee-to-microsoft-defender-migration.md)。
-> - 如果您目前正在使用 Symantec Endpoint Protection (Symantec) ，請參閱 [從 Symantec 遷移至 Microsoft Defender For Endpoint](symantec-to-microsoft-defender-atp-migration.md)。
+> - 如果您目前正在使用 Symantec Endpoint Protection (Symantec) ，請參閱 [從 Symantec 遷移至 Microsoft Defender For Endpoint](symantec-to-microsoft-defender-endpoint-migration.md)。
 
 ## <a name="the-migration-process"></a>遷移程式
 

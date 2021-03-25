@@ -13,12 +13,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e5da8ec3e4555af062aad1a4ebfa96d972bee23b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059199"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218745"
 ---
 # <a name="evaluate-controlled-folder-access"></a>評估受控資料夾存取權
 
@@ -76,5 +76,5 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ## <a name="see-also"></a>另請參閱
 
 * [使用受控資料夾存取權來保護重要資料夾](controlled-folders.md)
-* [評估 Microsoft Defender for Endpoint](evaluate-atp.md)
+* [評估 Microsoft Defender for Endpoint](evaluate-mde.md)
 * [使用稽核模式](audit-windows-defender.md)

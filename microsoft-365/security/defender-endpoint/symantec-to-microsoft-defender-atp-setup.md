@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6a5e5c10e92d5c8c017360033d7c3fc23b707730
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6d45e3aa0d3bf938e43201aca969613876ef1f31
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185476"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218709"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>從 Symantec 遷移-階段2：設定 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185476"
 ||*您在這裡！* | |
 
 
-**歡迎使用 [從 Symantec 遷移至 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)的安裝階段**。 此階段包含下列步驟：
+**歡迎使用 [從 Symantec 遷移至 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)的安裝階段**。 此階段包含下列步驟：
 1. [針對某些版本的 Windows) 啟用或重新安裝 Microsoft Defender 防病毒 (](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows)。
 2. [啟用 Microsoft Defender 防毒軟體](#enable-microsoft-defender-antivirus)。
 3. [取得 Microsoft Defender 防毒軟體的更新](#get-updates-for-microsoft-defender-antivirus)。
@@ -228,5 +228,5 @@ CMPivot 是 Configuration Manager 的內部主控台公用程式。 CMPivot 可�
 
 ## <a name="next-step"></a>下一步
 
-**恭喜**！ 您已完成 [從 Symantec 遷移至 Microsoft Defender For Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)的設定階段！
+**恭喜**！ 您已完成 [從 Symantec 遷移至 Microsoft Defender For Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)的設定階段！
 - [繼續進行階段3：板載至 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-onboard.md)
