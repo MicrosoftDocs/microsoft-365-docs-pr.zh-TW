@@ -377,7 +377,7 @@
               href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
-        - name: Globanet 資料連接器
+        - name: Veritas 資料連線器
           items:
             - name: CellTrust
               href: archive-celltrust-data.md
@@ -411,10 +411,10 @@
               href: archive-symphony-data.md
             - name: 文字分隔
               href: archive-text-delimited-data.md
-            - name: 網頁
-              href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
+            - name: 網頁
+              href: archive-webpagecapture-data.md
             - name: Facebook Workplace
               href: archive-workplacefromfacebook-data.md
             - name: XIP
