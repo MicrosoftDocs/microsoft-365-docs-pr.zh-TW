@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 423840ae62d0531da76044238bbeef05078a82c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc526371fdf12314f762c885ba1775fcf3f00d00
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907985"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215549"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生產力圖例
 
@@ -33,7 +33,7 @@ Microsoft 365 企業版解決方案系列提供實施 Microsoft 365 功能的指
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>適用於 IT 結構設計師的 Microsoft 365 中的群組
-對於 Microsoft 365 中的群組，IT 結構設計師需要知道的事項
+此圖例包含有關 Microsoft 365 群組的 IT 架構師資訊。 若要瞭解如何設定及管理組織中共同作業的 Microsoft 365 群組和小組，請參閱 [設定與 Microsoft 365 的安全](/microsoft-365/solutions/setup-secure-collaboration-with-teams) 共同作業，以及 [什麼是協同作業](/microsoft-365/solutions/collaboration-governance-overview)控管？。
 
 | 項目 | 描述 |
 |:-----|:-----|
@@ -52,7 +52,7 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>適用於多區域組織的安全性與資訊保護
-適用於多區域組織，且具有單一 Microsoft 365 租用戶的安全性與資訊保護
+具有單一 Microsoft 365 租使用者之多地區組織的安全性和資訊保護
 
 | 項目 | 描述 |
 |:-----|:-----|
