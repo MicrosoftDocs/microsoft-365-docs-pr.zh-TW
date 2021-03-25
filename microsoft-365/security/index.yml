@@ -3,7 +3,7 @@ title: Microsoft 365 安全性文件
 summary: 了解 Microsoft 365 安全性中強大的安全性解決方案與服務，讓您能夠更進一步全方面保護企業免受攻擊。
 metadata:
   title: Microsoft 365 安全性文件
-  description: 了解 Microsoft 365 安全性中強大的安全性解決方案與服務，讓您能夠更進一步全方面保護企業免受攻擊
+  description: 了解適用於端點的 Microsoft Defender - 其如何保護端點免受網路威脅，並提供安全性作業小組補救威脅的功能。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -11,34 +11,34 @@ metadata:
   ms.collection: m365-security-compliance
   author: mjcaparas
   ms.author: macapara
-  ms.date: 09/13/2019
+  ms.date: 02/05/2021
   localization_priority: Priority
-  ms.openlocfilehash: 6a670287c98d185e4b9acfeb39715c5e1ddf177a
-  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+  ms.openlocfilehash: 7d8ccae1b9185beacef027e6e0c73db2a1fdd017
+  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/19/2021
-  ms.locfileid: "50928973"
+  ms.lasthandoff: 03/23/2021
+  ms.locfileid: "51052407"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
   - linkListType: overview
     links:
     - text: 什麼是 Microsoft 365 Defender？
-      url: mtp/microsoft-threat-protection.md
+      url: defender/microsoft-365-defender.md
     - text: Microsoft 365 安全性中心
-      url: mtp/overview-security-center.md
+      url: defender/overview-security-center.md
 - title: 免費開始試用
   linkLists:
-  - linkListType: overview
+  - linkListType: get-started
     links:
     - text: 評估 Microsoft 365 Defender
-      url: mtp/mtp-evaluation.md
+      url: defender/m365d-evaluation.md
     - text: Microsoft 365 Defender 試驗劇本
-      url: mtp/mtp-pilot.md
+      url: defender/m365d-pilot.md
 - title: 保護遠端員工的安全
   linkLists:
-  - linkListType: get-started
+  - linkListType: how-to-guide
     links:
     - text: 保護遠端員工的安全
       url: /enterprise-mobility-security/remote-work/
@@ -55,10 +55,10 @@ landingContent:
   - linkListType: overview
     links:
     - text: 什麼是適用於 Office 365 的 Defender？
-      url: office-365-security/office-365-atp.md
+      url: defender-365-security/defender-for-office-365.md
     - text: 適用於 Office 365 的 Defender 服務描述
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-- title: 適用於端點的 Defender
+- title: 適用於端點的 Microsoft Defender
   linkLists:
   - linkListType: overview
     links:
@@ -87,7 +87,7 @@ landingContent:
   - linkListType: overview
     links:
     - text: 安全分數
-      url: mtp/microsoft-secure-score.md
+      url: defender/microsoft-secure-score.md
 - title: Azure Sentinel
   linkLists:
   - linkListType: overview
