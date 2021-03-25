@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: 使用者可以瞭解如何針對已傳送至其許可權之共用信箱的隔離郵件，查看並採取行動。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9490a9d5b2b4191d6c039be2758e2e0ba0c981cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6e3bf4c84e7a762f7f54f42ff61f0fbdb9dc1edd
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203772"
+ms.locfileid: "51215501"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>從共用信箱中查看和發行隔離的郵件
 
@@ -50,6 +50,8 @@ ms.locfileid: "51203772"
 - 第一個作用於隔離郵件的使用者，會決定所有使用共用信箱之使用者的郵件 fate。 例如，如果有10位使用者存取共用信箱，而且使用者決定刪除隔離郵件，則會刪除所有10位使用者的郵件。 同樣地，如果使用者決定要放開郵件，該郵件就會發佈至共用信箱，並可供共用信箱的其他所有使用者存取。
 
 - 目前已傳送至共用信箱的隔離郵件，[**詳細資料**] 浮出器中無法使用 [**封鎖寄件者**] 按鈕。
+
+- 關於共用信箱的隔離作業，如果您使用嵌套安全性群組來授與共享信箱的存取權，我們建議不多於兩層的嵌套群組。 例如，群組 A 是群組 B 的成員，也就是 C 群組的成員。若要指派許可權給共用信箱，請勿將使用者新增至群組 A，然後將群組 C 指派給共用信箱。  
 
 - 若要管理 [Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)中共用信箱的隔離郵件 PowerShell，使用者必須使用 [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) Cmdlet 與共享信箱電子郵件 _RecipientAddress_ 位址，以識別郵件。 例如：
 

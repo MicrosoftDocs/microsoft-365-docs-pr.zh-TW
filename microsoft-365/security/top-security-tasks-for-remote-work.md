@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: 4bc465af99f02edf91dacceaae14d39b3156e103
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9d24381b5947049c506b19553a2ab3d77b95d7c8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052419"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200314"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -74,7 +74,7 @@ ms.locfileid: "51052419"
 |---|---|
 |Microsoft 365 方案 (沒有 Azure AD P1 或 P2) |[在 Azure AD 中啟用安全性預設](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設包含了適用於使用者和系統管理員的 MFA。|
 |Microsoft 365 E3 (與 Azure AD P1) |使用[常見的條件式存取原則](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br/>- [要求系統管理員使用 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [要求所有使用者使用 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [封鎖舊版驗證](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (使用 Azure AD P2) |利用 Azure AD Identity Protection，藉由建立下列兩種原則來開始實作 Microsoft [建議的一組條件式存取和相關原則](./defender-365-security/identity-access-policies.md)：<br/> - [登入風險為中或高時，需要 MFA](./defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [封鎖不支援新式驗證的用戶端](./defender-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [高風險使用者必須變更密碼](./defender-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (使用 Azure AD P2) |利用 Azure AD Identity Protection，藉由建立下列兩種原則來開始實作 Microsoft [建議的一組條件式存取和相關原則](./office-365-security/identity-access-policies.md)：<br/> - [登入風險為中或高時，需要 MFA](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [封鎖不支援新式驗證的用戶端](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [高風險使用者必須變更密碼](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## <a name="2-protect-against-threats"></a>2：防禦威脅
@@ -86,7 +86,7 @@ ms.locfileid: "51052419"
 - 防網路釣魚保護
 - 反垃圾郵件保護
 
-請參閱 [防禦 Office 365 中的威脅](defender-365-security/protect-against-threats.md) 以取得您可以做為起點的指導方針。
+請參閱 [防禦 Office 365 中的威脅](office-365-security/protect-against-threats.md) 以取得您可以做為起點的指導方針。
 
 ## <a name="3-configure-microsoft-defender-for-office-365"></a>3：設定 Microsoft Defender for Office 365
 
@@ -98,17 +98,17 @@ Microsoft Defender for Office 365：
 - 透過識別及封鎖小組網站和文件庫中的惡意檔案，在使用者共同作業及共用檔案時，保護您的組織。
 - 套用機器學習模型和高級模擬偵測演算法，以防止網路釣魚攻擊。
 
-如需概要，包含計畫的摘要，請參閱 [Office 365 的 Defender](./defender-365-security/defender-for-office-365.md)。
+如需概要，包含計畫的摘要，請參閱 [Office 365 的 Defender](./office-365-security/defender-for-office-365.md)。
 
 您的全域系統管理員可以設定下列保護：
 
-- [設定安全連結原則](defender-365-security/set-up-safe-links-policies.md)
-- [設定安全連結的通用設定](defender-365-security/configure-global-settings-for-safe-links.md)
-- [設定安全附件原則](defender-365-security/set-up-safe-attachments-policies.md)
+- [設定安全連結原則](office-365-security/set-up-safe-links-policies.md)
+- [設定安全連結的通用設定](office-365-security/configure-global-settings-for-safe-links.md)
+- [設定安全附件原則](office-365-security/set-up-safe-attachments-policies.md)
 
 您需要與 Exchange Online 系統管理員和 SharePoint Online 管理員合作，為下列工作負載設定 Office 365 的 Defender：
 
-- [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](defender-365-security/mdo-for-spo-odb-and-teams.md)
+- [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4：設定 Microsoft Defender 身分識別
 
@@ -141,10 +141,10 @@ Microsoft Intune 行動應用程式管理 (MAM) 可讓您在不管理這些裝�
 
 更好的是，Microsoft 會以一組條件式存取和相關原則協調此應用程式保護框架。我們建議所有組織都使用做為開始點。 如果您已使用本文中的指導方針實施 MFA，您會有這麼的做法！
 
-若要設定行動應用程式保護，請使用 [常見身分識別和裝置存取](./defender-365-security/identity-access-policies.md)原則中的指導方針：
+若要設定行動應用程式保護，請使用 [常見身分識別和裝置存取](./office-365-security/identity-access-policies.md)原則中的指導方針：
 
- 1. 使用 [套用 [應用程式資料保護](./defender-365-security/identity-access-policies.md#apply-app-data-protection-policies) 原則] 指導方針為 IOS 和 Android 建立原則。 第2級 (增強型資料保護) 建議用於基準保護。
- 2. 建立條件式存取規則，以 [要求核准的應用程式和應用程式保護](./defender-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)。
+ 1. 使用 [套用 [應用程式資料保護](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) 原則] 指導方針為 IOS 和 Android 建立原則。 第2級 (增強型資料保護) 建議用於基準保護。
+ 2. 建立條件式存取規則，以 [要求核准的應用程式和應用程式保護](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)。
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7：設定來賓的 MFA 和條件式存取（包括 Intune 行動應用程式保護）
 
@@ -155,7 +155,7 @@ Microsoft Intune 行動應用程式管理 (MAM) 可讓您在不管理這些裝�
 - 建立新的條件式存取規則，以要求對來賓和外部使用者進行 MFA。
 - 更新以排除來賓和外部使用者為基礎之風險的 MFA 條件式存取規則。
 
-使用更新共同原則的指導方針， [允許和保護來賓和外部存取](./defender-365-security/identity-access-policies-guest-access.md) ，以瞭解來賓存取如何與 Azure AD 搭配運作，以及如何更新受影響的原則。
+使用更新共同原則的指導方針， [允許和保護來賓和外部存取](./office-365-security/identity-access-policies-guest-access.md) ，以瞭解來賓存取如何與 Azure AD 搭配運作，以及如何更新受影響的原則。
 
 您建立的 Intune 行動裝置應用程式保護原則，以及要求核准的應用程式和應用程式保護的條件式存取規則，都可以套用到來賓帳戶，並協助保護您的組織資料。
 
@@ -173,12 +173,12 @@ Microsoft Intune 行動應用程式管理 (MAM) 可讓您在不管理這些裝�
 - [使用 Autopilot 在 Intune 中註冊 Windows 裝置](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [使用 apple Business Manager (ABM) 在 Intune 中登記 iOS/iPadOS 裝置的 apple 公司裝置註冊功能](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
-註冊裝置後，請使用一般身分 [識別和裝置存取原則](./defender-365-security/identity-access-policies.md) 中的指導方針來建立下列原則：
+註冊裝置後，請使用一般身分 [識別和裝置存取原則](./office-365-security/identity-access-policies.md) 中的指導方針來建立下列原則：
 
-- [定義裝置相容性原則](./defender-365-security/identity-access-policies.md#define-device-compliance-policies) -Windows 10 的建議設定包括要求病毒防護。 如果您有 Microsoft 365 E5，請使用 Microsoft Defender for Endpoint 來監視員工裝置的健康情況。 請確定其他作業系統的相容性原則包括防防毒保護和端點保護軟體。
-- [需要相容的電腦](./defender-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) -這是 Azure AD 中強制執行裝置合規性原則的條件式存取規則。
+- [定義裝置相容性原則](./office-365-security/identity-access-policies.md#define-device-compliance-policies) -Windows 10 的建議設定包括要求病毒防護。 如果您有 Microsoft 365 E5，請使用 Microsoft Defender for Endpoint 來監視員工裝置的健康情況。 請確定其他作業系統的相容性原則包括防防毒保護和端點保護軟體。
+- [需要相容的電腦](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) -這是 Azure AD 中強制執行裝置合規性原則的條件式存取規則。
 
-只有一個組織可以管理裝置，因此請務必從 Azure AD 中的條件式存取規則中排除來賓帳戶。 如果您未從需要裝置規範的原則中排除來賓和外部使用者，這些原則將會封鎖這些使用者。 如需詳細資訊，請參閱 [更新共同原則以允許及保護來賓和外部存取](./defender-365-security/identity-access-policies-guest-access.md)。
+只有一個組織可以管理裝置，因此請務必從 Azure AD 中的條件式存取規則中排除來賓帳戶。 如果您未從需要裝置規範的原則中排除來賓和外部使用者，這些原則將會封鎖這些使用者。 如需詳細資訊，請參閱 [更新共同原則以允許及保護來賓和外部存取](./office-365-security/identity-access-policies-guest-access.md)。
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9：針對 cloud connectivity 優化您的網路
 

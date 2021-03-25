@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服務機構如何使用 Microsoft 365 與 Teams 維護金融安全合規性並有效地共同作業。
 f1.keywords: NOCSH
-ms.openlocfilehash: f0d5697e5582c8e165e35920cf010648ea942274
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f7e32502994f89451d8016ed5664ebe3591dcc8d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052515"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200338"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
@@ -196,7 +196,7 @@ Microsoft 最近推出 Microsoft 365 Defender 解決方案，旨在保護現代�
 ### <a name="the-intelligent-security-graph"></a>[Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為了應對網路威脅，Intelligent Security Graph 使用進階分析來連結來自 Microsoft 及其合作夥伴的威脅情報和安全性信號。 Microsoft 大規模營運全球服務，並收集數以萬億計的安全性信號，以支援堆疊式防護層。 機器學習模型會評估此情報，並在我們的產品和服務中廣泛共用信號和威脅見解。 這可讓我們迅速偵測並回應威脅，並將可採取動作的警報和資訊提供給客戶，以進行修正。 我們的機器學習模型會不斷接受訓練並以新的見解進行更新，協助我們打造更安全的產品，並提供更主動的安全性。
 
-[適用於 Office 365 的 Microsoft Defender](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide) 提供整合的 Microsoft 365 服務，可保護組織免受透過電子郵件和 Office 文件傳遞的惡意連結和惡意程式碼侵害。 當今影響使用者最常見的攻擊媒介之一是電子郵件網路釣魚攻擊。 這些攻擊可針對特定使用者，而且可能非常具有說服力，並帶有召喚行動，以提示使用者按下惡意連結或開啟含有惡意程式碼的附件。 電腦受到感染後，攻擊者就可以竊取使用者的認證，並在整個組織中移動，或竊取電子郵件和資料以尋找敏感性資訊。 適用於 Office 365 的 Defender 會在按一下文件和連結時加以評估，以尋找潛在的惡意意圖並封鎖存取，以支援安全附件和安全連結。 電子郵件附件會在受保護的沙箱中開啟，再傳送到使用者的信箱。 它也會評估 Office 文件中的連結是否為惡意 URL。 適用於 Office 365 的 Defender 也能保護 SharePoint Online、商務用 OneDrive 及 Teams 中的連結和檔案。 如果偵測到惡意檔案，適用於 Office 365 的 Defender 會自動鎖定該檔案，以降低潛在的損壞。
+[適用於 Office 365 的 Microsoft Defender](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide) 提供整合的 Microsoft 365 服務，可保護組織免受透過電子郵件和 Office 文件傳遞的惡意連結和惡意程式碼侵害。 當今影響使用者最常見的攻擊媒介之一是電子郵件網路釣魚攻擊。 這些攻擊可針對特定使用者，而且可能非常具有說服力，並帶有召喚行動，以提示使用者按下惡意連結或開啟含有惡意程式碼的附件。 電腦受到感染後，攻擊者就可以竊取使用者的認證，並在整個組織中移動，或竊取電子郵件和資料以尋找敏感性資訊。 適用於 Office 365 的 Defender 會在按一下文件和連結時加以評估，以尋找潛在的惡意意圖並封鎖存取，以支援安全附件和安全連結。 電子郵件附件會在受保護的沙箱中開啟，再傳送到使用者的信箱。 它也會評估 Office 文件中的連結是否為惡意 URL。 適用於 Office 365 的 Defender 也能保護 SharePoint Online、商務用 OneDrive 及 Teams 中的連結和檔案。 如果偵測到惡意檔案，適用於 Office 365 的 Defender 會自動鎖定該檔案，以降低潛在的損壞。
 
 [適用於端點的 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是預防性保護、入侵後偵測、自動調查及回應的整合式端點安全性平台。 適用於端點的 Defender 提供內建功能，以在企業端點上探索及保護敏感性資料。
 

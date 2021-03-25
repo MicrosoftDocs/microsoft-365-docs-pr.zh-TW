@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed6f6b42570a908a1f4a83d46ef5b2de0c558692
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199738"
+ms.locfileid: "51215525"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -206,7 +206,7 @@ ms.locfileid: "51199738"
 
 將端點安全性警示和其會審狀態轉寄給 Microsoft 規範中心，讓您能夠使用預警增強內幕風險管理原則，並在內部風險造成損害之前加以修正。 轉寄的資料會處理並儲存于 Office 365 資料所在的相同位置。
 
-在「內幕風險管理」設定中設定 [安全性原則違規指示器](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) 後，就會與適用使用者的「內部使用者風險管理」共用端點警示。
+在「內幕風險管理」設定中設定 [安全性原則違規指示器](/microsoft-365/compliance/insider-risk-management-settings#indicators) 後，就會與適用使用者的「內部使用者風險管理」共用端點警示。
 
 ## <a name="related-topics"></a>相關主題
 
