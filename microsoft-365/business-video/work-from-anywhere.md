@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 如何協助您在任何地方運作的概述。
-ms.openlocfilehash: 7c3a0ee4b69f7fa4e07064f0adc108afe70bd54d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: f68c2f4b05437dd5cb29a3588a4878f464c5566a
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421678"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164558"
 ---
 # <a name="work-from-anywhere---overview"></a>隨處運作-簡介
 
@@ -33,7 +33,11 @@ ms.locfileid: "50421678"
 
 **Pro 提示：** 在您的個人裝置上，關閉工作應用程式的通知，以維持您的工作壽命平衡檢查。
 
-使用下列四個秘訣來運作：下載資訊圖表以取得從任意位置工作的秘訣： [PDF](https://go.microsoft.com/fwlink/?linkid=2079451)， [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
+請使用下列四個秘訣，在任何位置運作。
+
+下載資訊圖表以取得從任意位置工作的秘訣： 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079451)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
 **想要定期從家裡運作嗎？**
 

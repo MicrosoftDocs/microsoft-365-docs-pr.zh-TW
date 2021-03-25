@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解如何升級為其他計畫。
-ms.openlocfilehash: 62d6da5713a7785fde9e795bc22956d73616c3c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924311"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164446"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案
 
@@ -92,7 +92,7 @@ ms.locfileid: "50924311"
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>您的使用者數目超過授權，所以您現在無法升級訂閱。
 
-若要自動升級計畫，您必須為您的所有使用者指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [ **升級** ] 索引標籤上所列的計畫。如果不是，您可以 [手動變更計畫](change-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
+若要自動升級計畫，您必須為您的所有使用者指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../commerce/licenses/buy-licenses.md)。 解決任何授權衝突後，您應該會看到 [ **升級** ] 索引標籤上所列的計畫。如果不是，您可以 [手動變更計畫](change-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>您現在無法升級訂閱，因為此訂閱未完全設定或服務無法使用。
 

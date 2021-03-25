@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 瞭解如何將您的企業從 Microsoft 365 商務版移至 Microsoft 365 E3。
-ms.openlocfilehash: 019a422bb879389f42a32cf30f9a8094f776078a
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 10630671f3deb7eff0ad0f601d301b90743ee35f
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126194"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164506"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>從 Microsoft 365 商務進階版移轉至 Microsoft 365 E3
 
@@ -57,10 +57,9 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | Teams    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
 | 商務用 OneDrive    | 每個使用者 1 TB 的儲存空間限制    | 無限制 | 
 | Yammer、SharePoint 線上、Planner、Stream    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
-| MileIQ    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | | 
 | **威脅防護**        | | | 
 | 攻擊面降減功能    | [請參閱此清單](#threat-protection) | Microsoft Edge 的硬體隔離的企業管理 | 
-| 適用于 Office 的 Defender 365 方案1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
+| 適用於 Office 365 的 Defender 方案 1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
 | **身分識別管理**        | | | 
 | 混合式 Azure Active Directory 的自助密碼重設 (Azure AD) 帳戶，Azure AD 多重要素驗證 (MFA) ，條件式存取，針對內部部署身分識別的密碼回寫。|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
 | 雲端應用程式探索，Azure AD Connect Health    |     | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
@@ -104,10 +103,6 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 您的使用者現在可以在 Exchange Online 信箱和商務資料夾的 OneDrive 中享受無限儲存體。
 
 您可以開始針對超過10個應用程式使用雲端應用程式探索、Azure AD Connect Health 和 SSO。
-
->[!Note]
->遷移至 Microsoft 365 E3 的使用者無法再使用 MileIQ。
->
 
 <a name="threat-protection"></a>
 ### <a name="threat-protection"></a>威脅防護

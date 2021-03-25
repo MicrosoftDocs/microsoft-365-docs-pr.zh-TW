@@ -13,19 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 當您使用有效的工作或學校帳戶登入時，使用者可在 Microsoft 365 體驗中取得使用 Cortana 的雲端協助服務，以符合 Office 365 的企業級隱私權、安全性和合規性承諾。
-ms.openlocfilehash: 00702724a44cd75bc68e9f7adac7170d81c080fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a45f23c022474ff39eca891eec03139dda936027
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914795"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164666"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 

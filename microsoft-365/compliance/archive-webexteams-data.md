@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理員可以設定連接器，以在 Microsoft 365 中從 Globanet 的 Webex 小組連接器匯入及封存資料。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: d284ea9688af325d95b9e2b6d5fc455acc5fca68
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 系統管理員可以設定連接器，以在 Microsoft 365 中從 Veritas 的 Webex 小組連接器匯入及封存資料。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
+ms.openlocfilehash: 654ca53fd4cd7c6091ff74360545ba335f753ffd
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920807"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163895"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>設定連接器以封存 Webex 小組資料
 
-使用 Microsoft 365 規範中心內的 Globanet 連接器，將 Webex 小組的資料匯入並封存至您的 Microsoft 365 組織中的使用者信箱。 Globanet 提供 [Webex 小組](https://globanet.com/webex-teams/) 連接器，設定為捕獲 Webex 小組通訊專案，並將其匯入至 Microsoft 365。 連接器會將來自 Webex 小組的內容，例如1:1 聊天、群組交談、通道交談及附件從組織的 Webex 小群組帳戶轉換成電子郵件訊息格式，然後再將這些專案匯入 Microsoft 365 中的使用者信箱。
+使用 Microsoft 365 規範中心內的 Veritas 連接器，將 Webex 小組的資料匯入並封存至您的 Microsoft 365 組織中的使用者信箱。 Veritas 會提供 [Webex 小組](https://globanet.com/webex-teams/) 連接器，設定為捕獲 Webex 小組通訊專案，並將其匯入至 Microsoft 365。 連接器會將來自 Webex 小組的內容，例如1:1 聊天、群組交談、通道交談及附件從組織的 Webex 小群組帳戶轉換成電子郵件訊息格式，然後再將這些專案匯入 Microsoft 365 中的使用者信箱。
 
 在將 Webex 小組資料儲存在使用者信箱之後，您可以套用 Microsoft 365 合規性功能，例如訴訟暫止、eDiscovery、保留原則和保留標籤，以及通訊法規遵從性。 使用 Webex 小組連接器來匯入和封存 Microsoft 365 中的資料，可協助您的組織遵守政府和法規原則。
 
@@ -33,15 +33,15 @@ ms.locfileid: "50920807"
 
 1. 您的組織與 Webex 小組合作，以設定和設定 Webex 小組網站。
 
-2. 每24小時一次，Webex 團隊專案會複製到 Globanet Merge1 網站。 連接器也會將 Webex 小組專案轉換成電子郵件訊息格式。
+2. 每24小時一次，Webex 小組專案會複製到 Veritas Merge1 網站。 連接器也會將 Webex 小組專案轉換成電子郵件訊息格式。
 
-3. 您在 Microsoft 365 規範中心建立的 Webex 小組連接器，會每天連線到 Globanet Merge1，並將 Webex 團隊專案傳送至 Microsoft 雲端中的安全 Azure 存放位置。
+3. 您在 Microsoft 365 規範中心建立的 Webex 小組連接器，會每天連線到 Veritas Merge1，然後將 Webex 小組專案傳送至 Microsoft 雲端中的安全 Azure 存放位置。
 
 4. 連接器會使用自動使用者對應的 *電子郵件* 屬性值，將專案匯入至特定使用者的信箱，如 [步驟 3](#step-3-map-users-and-complete-the-connector-setup)所述。 在使用者信箱中，會建立名為 **Webex 小組** 收件匣資料夾中的子資料夾，並將這些專案匯入該資料夾。 連接器會使用 *Email* 屬性的值來執行此動作。 每個 Webex 團隊專案都包含此屬性，其會填入專案的每個參與者的電子郵件地址。
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 為 Microsoft connector 建立 Globanet Merge1 帳戶。 若要建立此帳戶，請與 [Globanet 客戶支援](https://globanet.com/ms-connectors-contact)人員聯繫。 當您在步驟1中建立連接器時，您會登入此帳戶。
+- 建立 Microsoft 連接器的 Veritas Merge1 帳戶。 若要建立此帳戶，請與 [Veritas 客戶支援](https://globanet.com/ms-connectors-contact)聯繫。 當您在步驟1中建立連接器時，您會登入此帳戶。
 
 - 在中建立應用程式 [https://developer.webex.com/](https://developer.webex.com) ，以從 Webex 小群組帳戶提取資料。 如需建立應用程式的逐步指示，請參閱[Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf) 。
 
@@ -63,7 +63,7 @@ ms.locfileid: "50920807"
 
 5. 登入您的 Merge1 帳戶以設定連接器。
 
-## <a name="step-2-configure-the-webex-teams-connector-on-the-globanet-merge1-site"></a>步驟2：設定 Globanet Merge1 網站上的 Webex 小組連接器
+## <a name="step-2-configure-the-webex-teams-connector-on-the-veritas-merge1-site"></a>步驟2：設定 Veritas Merge1 網站上的 Webex 小組連接器
 
 第二個步驟是設定 Merge1 網站上的 Webex 小組連接器。 如需如何設定 Webex 小組連接器的詳細資訊，請參閱 [Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf)。
 

@@ -22,14 +22,14 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何將您的業務移至 Microsoft 365 商務版，從 Office 365 E3。
-ms.openlocfilehash: f655037891bf8ec42e7b927256025c89c9354e98
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912935"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164526"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務版 Premium 
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務版 Premium
 
 Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合了最佳的雲端式生產力應用程式與簡單的裝置管理和安全性。 如果您目前已有 Office 365 E3 訂閱，但沒有超過300名員工，請考慮切換至 Microsoft 365 商務版 Premium，以加入安全性功能。
 
@@ -49,7 +49,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | 商務用 OneDrive    | 每個使用者 1 TB 的儲存空間限制    | 無限制 | 
 | Yammer、SharePoint 線上、Planner、Stream    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
-| Outlook 客戶經理，MileIQ    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | | 
+| Outlook Customer Manager    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | | 
 | **威脅防護**        | | | 
 | 適用於 Office 365 的 Defender 方案 1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
 | **身分識別管理**        | | | 
@@ -122,7 +122,7 @@ Microsoft 365 商務版 Premium 在使用 Exchange Online Plan 1 時，具有 50
 
 ### <a name="threat-protection"></a>威脅防護
 
-在遷移至 Microsoft 365 商務版 Premium 後，您可以使用 Defender for Office 365。 如需概要，請參閱 [Microsoft Defender For Office 365](../security/office-365-security/office-365-atp.md) 。 若要設定，請參閱 [設定安全連結](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)， [設定安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，並 [在 Office 365 的 Defender 中設定反網路釣魚](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
+在遷移至 Microsoft 365 商務版 Premium 後，您可以使用 Defender for Office 365。 如需概要，請參閱 [Microsoft Defender For Office 365](../security/defender-365-security/defender-for-office-365.md) 。 若要設定，請參閱 [設定安全連結](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)， [設定安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，並 [在 Office 365 的 Defender 中設定反網路釣魚](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 

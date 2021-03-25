@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何將「社交媒體平臺」、「立即訊息平臺」及「檔共同作業平臺」的協力廠商資料匯入至 Microsoft 365 信箱。
-ms.openlocfilehash: 18fb9c757652cbebb456da18285444272766167f
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 83ba81907a9db8dd1f4e95e5df3306366838c1ba
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722856"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163648"
 ---
 # <a name="archive-third-party-data"></a>封存第三方資料
 
@@ -40,7 +40,7 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 > [!TIP]
 > 按一下 **協力廠商資料** 欄中的連結，以取得針對該資料類型建立連接器的逐步指示。
 
-|協力廠商資料  |訴訟暫止|電子文件探索  |保留設定  |記錄管理  |通訊合規性  |內部風險管理  |
+|協力廠商資料  |訴訟暫止|eDiscovery  |保留設定  |記錄管理  |通訊合規性  |內部風險管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Android <sup>1</sup>](archive-android-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[在&T 網路 <sup>1</sup>](archive-att-network-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
@@ -84,7 +84,7 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 ||||||||
 
 > [!NOTE]
-> TeleMessage 提供的<sup>1</sup>個資料連線器。 您必須使用 TeleMessage 來為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。<br/><br/>Globanet 提供的<sup>2</sup>個資料連線器。 您必須使用 Globanet 來為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。
+> TeleMessage 提供的<sup>1</sup>個資料連線器。 您必須使用 TeleMessage 來為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。<br/><br/><sup>2</sup> 由 Veritas 提供的資料連線器。 您必須與 Veritas 合作為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。
 
 上表所列的協力廠商資料 (，但 HR 資料和實體聲譽徽章授予資料) 會匯入使用者信箱中。 支援協力廠商資料的對應相容性解決方案會套用至儲存資料的使用者信箱。
 
@@ -96,7 +96,7 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 
 您在使用者信箱上進行 [訴訟暫](create-a-litigation-hold.md) 止，以保留協力廠商資料。 當您建立保留時，您可以指定保留期間 (也稱為以 *時間為基礎的保留*) ，如此一來，刪除及修改的協力廠商資料會保留指定的期間，然後從信箱中永久刪除。 或者，您可以只保留未 (稱為 *無限期保留*) 或移除訴訟暫止的內容。
 
-### <a name="ediscovery"></a>電子文件探索
+### <a name="ediscovery"></a>eDiscovery
 
 Microsoft 365 中的三個主要 eDiscovery 工具組括內容搜尋、核心 eDiscovery 和高級 eDiscovery。
 

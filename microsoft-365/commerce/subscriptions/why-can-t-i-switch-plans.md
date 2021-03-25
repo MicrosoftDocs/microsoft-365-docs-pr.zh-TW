@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 瞭解有時切換方案必須手動完成或通過呼叫支援的原因。
-ms.openlocfilehash: d13b7290f4b5f9aede7406cf76ee60cac262c814
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0880337e4879c093119b98f4d0108ca65c17e705
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922265"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164458"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>為什麼我無法切換商務方案的 Microsoft 365？
 
@@ -63,19 +63,19 @@ ms.locfileid: "50922265"
 
 ::: moniker range="o365-worldwide"
 
-若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
+若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../commerce/licenses/buy-licenses.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
+若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../commerce/licenses/buy-licenses.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
+若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../commerce/licenses/buy-licenses.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
 
 ::: moniker-end
 

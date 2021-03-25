@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案加入至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的合規性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ed29ad5186972f56609a596d88a48c7c460f295f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c695bc2632e766eb6f14c4e9f7eabbbddff66fd2
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905855"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164972"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
@@ -33,7 +33,7 @@ ms.locfileid: "50905855"
 > 有些規範功能會以不同的速度向客戶推出。 如果您還沒有看到功能，請嘗試將您新增至 [目標版本](/office365/admin/manage/release-options-in-office-365)。
 
 > [!TIP]
-> 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](/office365/admin/whats-new-in-preview)<br>[SharePoint 系統管理中心的新功能](/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新功能](../security/mtp/whats-new.md)<br><br>
+> 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](/office365/admin/whats-new-in-preview)<br>[SharePoint 系統管理中心的新功能](/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新功能](../security/defender/whats-new.md)<br><br>
 請造訪 [microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，以瞭解已啟動、已開發、已取消或先前發佈的 microsoft 365 功能。
 
 ## <a name="january-2021"></a>2021 年 1 月
@@ -66,7 +66,7 @@ Microsoft 365 合規性內容小組正在運作中建立「內容解決方案」
 - [內部擁有風險解決方案的新登陸頁面](insider-risk-solution-overview.md)。 包含解決方案可協助緩解、授權需求、部署順序、架構圖例、訓練資源等方面的風險的詳細資料。
 - 每個有問必答風險解決方案的新概述文章。 可協助您瞭解、規劃、部署及管理每個解決方案的文章指引及連結：
   - [通訊合規性](communication-compliance-solution-overview.md)
-  - [內部風險管理](insider-risk-management-solution-overview.md)
+  - [有問必答風險管理](insider-risk-management-solution-overview.md)
   - [資訊屏障](information-barriers-solution-overview.md)
   - [特殊權限存取管理](privileged-access-management-solution-overview.md)
   
@@ -78,7 +78,7 @@ Microsoft 365 合規性內容小組正在運作中建立「內容解決方案」
 
 ### <a name="data-connectors"></a>資料連線器
 
-已[發行四個新的 Globanet 連接器](archiving-third-party-data.md#third-party-data-connectors)： Redtail 發言、Salesforce 交談、ServiceNow 及 Yieldbroker。
+已[發行四個新的 Veritas 連接器](archiving-third-party-data.md#third-party-data-connectors)： Redtail 講話、Salesforce 交談、ServiceNow 及 Yieldbroker。
 
 ### <a name="encryption"></a>加密
 
@@ -122,7 +122,7 @@ Microsoft 365 合規性內容小組正在運作中建立「內容解決方案」
 
 ### <a name="data-connectors"></a>資料連線器
 
-[預覽中的五個新 Globanet 連接器](archiving-third-party-data.md#third-party-data-connectors)。 新的連接器包括 Reuters 處理、Reuters FX、CellTrust、XIP、泛型 MS SQL 資料庫資料。
+[預覽中的五個新 Veritas 連接器](archiving-third-party-data.md#third-party-data-connectors)。 新的連接器包括 Reuters 處理、Reuters FX、CellTrust、XIP、泛型 MS SQL 資料庫資料。
 
 ### <a name="retention-labels-disposition-review"></a>保留標籤 (處置評審) 
 
@@ -169,14 +169,14 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 
 ### <a name="data-connectors"></a>資料連線器
 
-- [新增協力廠商資料連線器](archiving-third-party-data.md#third-party-data-connectors)。 25個新的資料連線器，包含從 Globanet 到8的14個連接器，從 Telemessage。
+- [新增協力廠商資料連線器](archiving-third-party-data.md#third-party-data-connectors)。 25個新的資料連線器，包含來自 Veritas 和8的14個連接器，從 Telemessage。
 - [實體聲譽徽章授予連接器](import-physical-badging-data.md)。 匯入實體聲譽徽章授予資料，例如員工的原始實體存取事件，或是組織之聲譽徽章授予系統所產生的任何實體存取告警。 範例包括辦公樓、伺服器機房或資料中心的專案。 「內部使用者風險管理」解決方案可使用實體聲譽徽章授予資料，協助保護您的組織免受惡意活動或組織內的資料竊取。
 
 ### <a name="insider-risk-management"></a>內部風險管理
 
 - [Microsoft 小組整合](insider-risk-management-settings.md#microsoft-teams-preview)。 當團隊整合在「內幕風險設定」中開啟時，您可以與工作小組中的其他專案關係人協調及共同作業，例如安全共用和儲存與個別案例相關的資料、追蹤及檢查分析員和調查人員的回應活動等等。
 - [自動處理電源流程](insider-risk-management-settings.md#power-automate-flows-preview)。 設定流程以自動化案例和使用者的重要工作，例如，檢索使用者、警示及案例資訊，以與專案關係人和其他應用程式共用、自動化動作（如張貼至案例記事）等等）。
-- [活動瀏覽器](insider-risk-management-alerts.md#activity-explorer-preview)。 可用於審閱提醒時，活動 explorer 會提供調查人員和分析工具，以深入查看每個警示的綜合分析工具。 快速查看偵測到風險的啟用時間表，並識別及篩選與提醒相關聯的所有風險活動。
+- [活動總管](insider-risk-management-alerts.md#activity-explorer-preview)。 可用於審閱提醒時，活動 explorer 會提供調查人員和分析工具，以深入查看每個警示的綜合分析工具。 快速查看偵測到風險的啟用時間表，並識別及篩選與提醒相關聯的所有風險活動。
 
 ### <a name="retention-policies-and-retention-labels"></a>保留原則和保留標籤
 
@@ -200,9 +200,9 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 > [!NOTE]
 > 針對所有功能，如果您至少提供30項回饋回應，我們會建立該分類程式的 retrained 版本，您可以進行查看。 如果有改進，您可以重新發佈分類器。
 
-- [Trainable 分類](classifier-learn-about.md#retraining-classifiers)符。 若要改善發佈的分類程式的準確性，您可以提供偵測到的專案是否符合分類程式的意見反應。
+- [可訓練分類器](classifier-learn-about.md#retraining-classifiers)。 若要改善發佈的分類程式的準確性，您可以提供偵測到的專案是否符合分類程式的意見反應。
 - [通訊相容性](classifier-how-to-retrain-comms-compliance.md)。 新增的「 **改進分類** 修復」動作可讓您提供意見，以徵求通訊相容性警示中的專案是否符合通訊合規性原則中設定的分類器。
-- [內容瀏覽器](classifier-how-to-retrain-content-explorer.md)。 如果您設定保留自動標記原則，以自動將標籤套用至符合 trainable 分類程式的電子郵件，您可以使用內容瀏覽器來查看已標示的專案，並提供專案是否符合分類器的意見反應。
+- [內容總管](classifier-how-to-retrain-content-explorer.md)。 如果您設定保留自動標記原則，以自動將標籤套用至符合 trainable 分類程式的電子郵件，您可以使用內容瀏覽器來查看已標示的專案，並提供專案是否符合分類器的意見反應。
 
 ## <a name="august-2020"></a>2020年 8月
 
@@ -210,7 +210,7 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 
 這個月的公開預覽的一些新增及增強功能：
 
-**內部風險管理**
+**有問必答風險管理**
 
 - 查看我們的六個新 [原則範本](insider-risk-management-policies.md#policy-templates)：
     - 依優先使用者的資料洩漏

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何設定自訂連接器，以從資料來源（例如 Salesforce 交談、Yahoo Messenger 或 Yammer）匯入協力廠商資料。
-ms.openlocfilehash: adf6583f397296361e8f0cb6f12e7054436fa34f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e93ff765129296f62b43c93937701169bbf4b03
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928377"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164938"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>與合作夥伴配合以封存第三方資料
 
@@ -70,7 +70,7 @@ ms.locfileid: "50928377"
   
 [ArchiveSocial](#archivesocial)
   
-[Globanet](#globanet)
+[Software](#veritas)
   
 [OpenText](#opentext)
   
@@ -142,9 +142,9 @@ ms.locfileid: "50928377"
     
 - Vimeo
   
-### <a name="globanet"></a>Globanet
+### <a name="veritas"></a>Software
 
-[Globanet](https://www.globanet.com) 支援下列協力廠商資料來源： 
+[Veritas](https://www.globanet.com) 支援下列協力廠商資料來源： 
   
 - 含樞紐分析用戶端的 AOL 
     
@@ -198,7 +198,7 @@ ms.locfileid: "50928377"
     
 - Mobile Guard
     
-- Pivot
+- 樞紐
     
 - Salesforce Chatter
 
@@ -372,7 +372,7 @@ ms.locfileid: "50928377"
     
 - Pinterest
     
-- Pivot
+- 樞紐
     
 - Qq
     
@@ -559,7 +559,7 @@ ms.locfileid: "50928377"
 
 若要撤銷協力廠商資料連線器的同意，您可以從 Azure 入口網站中的「 **企業應用程式** 」刀片式伺服器或使用 Microsoft 365 PowerShell 中的 [ [new-msolserviceprincipal](/powershell/module/msonline/remove-msolserviceprincipal) ] 刪除對應服務主體) ，以刪除應用程式 (。 您也可以在 Azure Active Directory PowerShell 中使用 [Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) Cmdlet。
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 - 如先前所述，協力廠商資料來源的項目是匯入至 Exchange 信箱做為電子郵件訊息。 夥伴連接器會使用 Microsoft 365 API 所需的架構，匯入專案。 下表說明協力廠商資料來源的項目在匯入至 Exchange 信箱當做為電子郵件之後的郵件屬性。 表格也會指出郵件屬性是否為必要的。 必須填入必要屬性。 如果專案缺少強制屬性，則不會將它匯入至 Microsoft 365。 匯入程式會傳回一則錯誤訊息，說明未匯入專案的原因，以及遺漏的屬性。<br/><br/>
     

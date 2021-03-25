@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 系統管理員可以設定連接器，將 ServiceNow 資料從 Globanet 匯入至 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理協力廠商資料。
-ms.openlocfilehash: d9cc40e8d7660be96cefb8ec0d13e2b95bb8f31a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 系統管理員可以設定連接器，將 ServiceNow 資料從 Veritas 匯入至 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理協力廠商資料。
+ms.openlocfilehash: 8f1f56f79d3cdd0e198f03d948837249d3e0ff3b
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925105"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164035"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>設定連接器以封存 ServiceNow 資料
 
-使用 Microsoft 365 規範中心內的 Globanet 連接器，將 ServiceNow 平臺的資料匯入至您的 Microsoft 365 組織中的使用者信箱。 Globanet 提供的 [ServiceNow](https://globanet.com/servicenow/) 連接器會從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 連接器會將實況郵件、附件及 ServiceNow 文章等內容轉換成電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的使用者信箱。
+使用 Microsoft 365 規範中心的 Veritas 連接器，將 ServiceNow 平臺的資料匯入和封存至您的 Microsoft 365 組織中的使用者信箱。 Veritas 提供的 [ServiceNow](https://globanet.com/servicenow/) 連接器會從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 連接器會將實況郵件、附件及 ServiceNow 文章等內容轉換成電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的使用者信箱。
 
 ServiceNow 資料儲存在使用者信箱之後，您可以套用 Microsoft 365 合規性功能，例如訴訟暫止、eDiscovery、保留原則及保留標籤。 在 Microsoft 365 中使用 ServiceNow 連接器匯入和封存資料，可協助您的組織符合政府和法規原則。
 
@@ -33,15 +33,15 @@ ServiceNow 資料儲存在使用者信箱之後，您可以套用 Microsoft 365 
 
 1. 您的組織與 ServiceNow 搭配設定及設定 ServiceNow 網站。
 
-2. 每24小時一次，ServiceNow 的專案會複製到 Globanet Merge1 網站。 連接線也會將 ServiceNow 專案轉換成電子郵件訊息格式。
+2. 每24小時一次，ServiceNow 的專案會複製到 Veritas Merge1 網站。 連接線也會將 ServiceNow 專案轉換成電子郵件訊息格式。
 
-3. 您在 Microsoft 365 合規性中心建立的 ServiceNow 連接器每天都會連線到 Globanet Merge1 網站，並將 ServiceNow 內容傳送至 Microsoft 雲端中的安全 Azure 儲存位置。
+3. 您在 Microsoft 365 規範中心建立的 ServiceNow 連接器每天都會連線到 Veritas Merge1 網站，並將 ServiceNow 內容傳送至 Microsoft 雲端中的安全 Azure 儲存位置。
 
 4. 連接器會使用 [[步驟 3](#step-3-map-users-and-complete-the-connector-setup)] 中所述之自動使用者對應的 *電子郵件* 屬性值，將轉換後的專案匯入至特定使用者的信箱。 在使用者信箱中建立名為 **ServiceNow** [收件匣] 資料夾中的子資料夾，並將專案匯入該資料夾。 連接器會使用 *Email* 屬性的值來決定要匯入專案的信箱。 每個 ServiceNow 專案都包含此屬性，其會填入專案的每個參與者的電子郵件地址。
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 建立 Microsoft 連接器的 Merge1 帳戶。 若要建立帳戶，請與 [Globanet 客戶支援](https://globanet.com/contact-us/)人員聯繫。 當您在步驟1中建立連接器時，您必須登入此帳戶。
+- 建立 Microsoft 連接器的 Merge1 帳戶。 若要建立帳戶，請與 [Veritas 客戶支援](https://www.veritas.com/content/support/)聯繫。 當您在步驟1中建立連接器時，您必須登入此帳戶。
 
 - 建立 ServiceNow 的應用程式以從您的 ServiceNow 帳戶取得資料。 如需建立應用程式的逐步指示，請參閱 [Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)。
 
@@ -61,9 +61,9 @@ ServiceNow 資料儲存在使用者信箱之後，您可以套用 Microsoft 365 
 
 5. 登入您的 Merge1 帳戶以設定連接器。
 
-## <a name="step-2-configure-the-servicenow-on-the-globanet-merge1-site"></a>步驟2：設定 Globanet Merge1 網站上的 ServiceNow
+## <a name="step-2-configure-the-servicenow-on-the-veritas-merge1-site"></a>步驟2：設定 Veritas Merge1 網站上的 ServiceNow
 
-第二個步驟是設定 Globanet Merge1 網站上的 ServiceNow 連接器。 如需如何設定 ServiceNow 連接器的詳細資訊，請參閱 [Merge1 Third-Party 連接器 User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)。
+第二個步驟是設定 Veritas Merge1 網站上的 ServiceNow 連接器。 如需如何設定 ServiceNow 連接器的詳細資訊，請參閱 [Merge1 Third-Party 連接器 User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)。
 
 按一下 **[儲存] & 完成之後，** 就會顯示 Microsoft 365 規範中心內 [連接器] 嚮導中的 [ **使用者對應** ] 頁面。
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解哪一種 Microsoft 365 訂閱適合您的組織。
-ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19da01142bfe0abf2ad02c3a0ccab4ef25e09df4
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913751"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164642"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>選擇 Microsoft 365 訂閱
 
@@ -54,7 +54,6 @@ ms.locfileid: "50913751"
 | **社交、影片、網站** | Stream、Yammer、Planner、SharePoint Online \* 、PowerApps \* 、Microsoft Flow\* | 是 | 是 | 是 |
 | **商務應用程式** | 排程應用程式-預定\*\* | 是 | 是 | 是 |
 |
- | 商務應用程式-MileIQ\*\* | 是 | 是 | 否 |
 | **威脅防護** | Office 365 進階威脅防護 | 否 | 是 | 否 |
  | Windows Exploit Guard 強制執行 | 否 | 是 | 否 |
 | **身分識別管理** | 混合式 Azure Active Directory 帳戶的自助密碼重設 | 否 | 是 | 否 |
