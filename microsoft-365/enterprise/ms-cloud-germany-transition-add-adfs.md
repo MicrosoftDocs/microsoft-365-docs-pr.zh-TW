@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要： Active Directory Federation Services (AD FS) 從 Microsoft Cloud Deutschland 進行遷移的遷移步驟。
-ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918903"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165654"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的 AD FS 遷移步驟
 
@@ -59,11 +59,11 @@ ms.locfileid: "50918903"
 
 8. 針對 AD FS 2012：在 [ **選擇發行授權規則**] 上，[保留 **允許所有使用者存取此信賴憑證方** ]，然後按 **[下一步]**。
 
-8. 針對 AD FS 2016 和 AD FS 2019：在 [ **選擇存取控制原則** ] 頁面上，選取適當的存取控制原則，然後按 **[下一步]**。 若未選擇 [無]，信賴憑證者信任將 **無法** 運作。
+9. 針對 AD FS 2016 和 AD FS 2019：在 [ **選擇存取控制原則** ] 頁面上，選取適當的存取控制原則，然後按 **[下一步]**。 若未選擇 [無]，信賴憑證者信任將 **無法** 運作。
 
-9. 在 [**準備新增信任**] 頁面上，按一下 **[下一步**] 完成該嚮導。
+10. 在 [**準備新增信任**] 頁面上，按一下 **[下一步**] 完成該嚮導。
 
-10. 按一下 [**完成]** 頁面上的 [**關閉**]。
+11. 按一下 [**完成]** 頁面上的 [**關閉**]。
 
 關閉嚮導後，就會建立與 Office 365 泛型服務的信賴憑證者信任。 不過，尚未設定發行轉換規則。
 
@@ -74,7 +74,19 @@ ms.locfileid: "50918903"
 
 1. Run 在 [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)說明上執行 [**產生宣告**]，並使用腳本右上角的 [**複製**] 選項來複製 PowerShell 腳本。
 
-2. 請遵循在 Ad fs 伺服器陣列中執行 PowerShell 腳本以產生全域信賴憑證者信任的 [AD fs](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 說明中所述的步驟。
+2. 請遵循在 Ad fs 伺服器陣列中執行 PowerShell 腳本以產生全域信賴憑證者信任的 [AD fs](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 說明中所述的步驟。 在執行腳本之前，請將下列程式程式碼取代產生的腳本，如下所示：
+
+   ```powershell
+   # AD FS Help generated value
+   $claims = Get-AdfsRelyingPartyTrust -Identifier $(Get-RpIdentifier) | Select-Object IssuanceTransformRules;
+   # replace with
+   $claims = Get-AdfsRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline | Select-Object IssuanceTransformRules;
+
+   # AD FS Help generated value
+   Set-AdfsRelyingPartyTrust -TargetIdentifier $(Get-RpIdentifier) -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   # replace with
+   Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   ```
 
 3. 確認有兩個信賴 PartyTtrusts 存在;一個用於 Microsoft Cloud Deutschland，另一個適用于 Office 365 全域服務。 您可以利用下列命令進行檢查。 它應傳回兩列以及各自的名稱和識別碼。
 
@@ -86,9 +98,7 @@ ms.locfileid: "50918903"
 
 5. 當您的租使用者處於遷移時，請定期確認 AD FS 驗證使用的是 Microsoft Cloud Deutschland and Microsoft Global Cloud in 各種支援的遷移步驟。
 
-
 ## <a name="ad-fs-disaster-recovery-wid-database"></a> (WID 資料庫) 的 AD FS 災難修復
-
 
 若要在嚴重損壞的 [ad](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) fs 伺服器陣列中還原 ad fs 伺服器陣列，您必須加以利用。 因此，必須先下載工具，並在開始進行遷移之前，必須先建立備份，並安全地儲存備份。 在此範例中，已執行下列命令來備份在 WID 資料庫上執行的伺服器陣列：
 
@@ -112,7 +122,6 @@ ms.locfileid: "50918903"
 
 4. 將備份安全地儲存在所需的目的地。
 
-
 ### <a name="restore-an-ad-fs-farm"></a>還原 AD FS 伺服器陣列
 
 如果您的伺服器陣列完全失敗，且無法返回舊的伺服器陣列，請執行下列動作。 
@@ -127,8 +136,7 @@ ms.locfileid: "50918903"
 
 3. 將新的 DNS 記錄或負載平衡器指向新的 AD FS 伺服器。
 
-
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 開始：
 

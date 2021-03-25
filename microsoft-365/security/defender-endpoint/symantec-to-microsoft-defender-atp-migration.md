@@ -22,18 +22,18 @@ ms.topic: conceptual
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6cab09547501da9b533c49b7096389e13dbf1f87
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35f1ce4bccbf2229106ef4b8417a44fe7c37cde5
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056687"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183702"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>從 Symantec 遷移至 Microsoft Defender for Endpoint
 如果您打算從 Symantec Endpoint Protection (Symantec) 切換至 [Microsoft defender For endpoint](https://docs.microsoft.com/windows/security/threat-protection))  (microsoft defender for endpoint，您就是在正確的位置。 使用本文做為指南。
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 :::image type="content" source="images/symantec-mde-migration.png" alt-text="從 Symantec 遷移至 Defender for Endpoint 的概覽":::

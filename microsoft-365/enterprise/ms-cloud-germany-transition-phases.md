@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 5e1bf9257cfd4751333e2e01789bb7dbaf2685fa
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939632"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165630"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (一般) 
 
@@ -37,15 +37,15 @@ ms.locfileid: "50939632"
 |:--------|:--------|:--------|:--------|
 |Opt-In|小時|客戶|選擇您的組織進入遷移。|
 |預備工作|天|客戶|完成準備使用者、工作站和網路以進行遷移所需的工作。|
-|Azure Active Directory (Azure AD) |1-2 天|微軟|將 Azure AD 組織遷移至全球。|
+|Azure Active Directory (Azure AD) |1-2 天|Microsoft|將 Azure AD 組織遷移至全球。|
 |Azure|星期|客戶|建立新的全球性 Azure 訂閱和轉換 Azure 服務。|
-|訂閱 & 授權轉換|1-2 天|微軟|購買全球訂閱、取消 Microsoft Cloud Deutschland 訂閱及轉換使用者授權。|
-|SharePoint 和 OneDrive|15 + 天|微軟|遷移 SharePoint 和 OneDrive 以取得商務內容，保留 sharepoint.de URLs。|
-|Exchange Online|15 + 天|微軟|將 Exchange Online 內容和轉換遷移至全球 URLs。|
-|安全性與合規性|1-2 天|微軟|轉換安全性 & 合規性原則和內容。|
-|商務用 Skype|1-2 天|微軟|從商務用 Skype 切換至 Microsoft 團隊。|
-|Power BI & Dynamics 365|15 + 天|微軟|遷移 Power BI 及 Dynamics 365 內容。|
-|完成 Azure AD|1-2 天|微軟|完成租使用者切換為全球。|
+|訂閱 & 授權轉換|1-2 天|Microsoft|購買全球訂閱、取消 Microsoft Cloud Deutschland 訂閱及轉換使用者授權。|
+|SharePoint 和 OneDrive|15 + 天|Microsoft|遷移 SharePoint 和 OneDrive 以取得商務內容，保留 sharepoint.de URLs。|
+|Exchange Online|15 + 天|Microsoft|將 Exchange Online 內容和轉換遷移至全球 URLs。|
+|安全性與合規性|1-2 天|Microsoft|轉換安全性 & 合規性原則和內容。|
+|商務用 Skype|1-2 天|Microsoft|從商務用 Skype 切換至 Microsoft 團隊。|
+|Power BI & Dynamics 365|15 + 天|Microsoft|遷移 Power BI 及 Dynamics 365 內容。|
+|完成 Azure AD|1-2 天|Microsoft|完成租使用者切換為全球。|
 |Clean-Up|1-2 天|客戶|清除舊版連線至 Microsoft Cloud Deutschland，例如 Active Directory Federation Services (AD FS) 信賴憑證者信任、Azure AD Connect 及 Office 用戶端重新開機。|
 
 階段和其動作可確保重要資料和經驗已遷移至 Office 365 泛型服務。 租使用者新增至遷移佇列後，每個工作負載都會以後端服務執行的一組步驟完成。 某些工作負載可能需要管理員 (或使用者) ，否則遷移可能會影響[如何組織遷移時](ms-cloud-germany-transition.md#how-is-the-migration-organized)所執行和討論之階段的使用狀況？
@@ -62,7 +62,7 @@ ms.locfileid: "50939632"
 
 ## <a name="before-the-migration-starts"></a>在遷移開始之前
 
-請務必熟悉 [針對所有客戶套用的遷移準備步驟](ms-cloud-germany-transition-add-pre-work.md#applies-to-everyone)。
+請務必熟悉 [適用于所有客戶的遷移準備步驟](ms-cloud-germany-transition-add-pre-work.md)。
 
 若您已在您擁有的一或多個 DNS 命名空間中設定稱為 _msoid_ 的 DNS CNAME，必須先移除 CNAME，直到最後一個階段8結束。 您可以在階段8結束之前的任何時間移除 CNAME _msoid_ 。 請參閱 [DNS 的準備](ms-cloud-germany-transition-add-pre-work.md#dns)工作。
 
@@ -111,7 +111,7 @@ ms.locfileid: "50939632"
 
 當 [！注意事項] 當郵件中心通知發佈完成時， **遷移階段 9** () ，您必須使用 Office 365 全球化設定重新執行 HCW，將內部部署系統指向 Office 365 泛型服務。
 
-如果您想要在第5階段修改使用者相片，請參閱 [UserPhoto](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
+如果您想要在第5階段中修改使用者相片，請參閱[階段5的 Exchange Online Set-UserPhoto](ms-cloud-germany-transition-add-experience.md#exchange-online-set-userphoto-during-phase-5) 。
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
@@ -211,11 +211,11 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 轉換至地區 "德國" 的 office 365 租使用者要求所有使用者關閉、登出 Office 365，然後重新登出所有 Office 桌面應用程式 (Word、Excel、PowerPoint、Outlook 等等 ) 和 OneDrive 在租使用者遷移到達階段9之後。 登出和簽出，可讓 Office 服務從全域 Azure AD 服務取得新的驗證權杖。
 
-請確定您已完成行動 [裝置](ms-cloud-germany-transition-add-pre-work.md#mobile) 的準備工作。
+請確定您已完成行動 [裝置](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) 的準備工作。
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| 用戶端，office Online 在 Office 用戶端轉換時，Azure AD 已完成租使用者範圍以指向 Office 365 服務。 | 這種設定變更可讓 Office 用戶端更新並指向 Office 365 服務端點。 | <ul><li>通知使用者關閉 _所有_ Office 應用程式，然後重新登入 (或強制用戶端重新開機，或強制使用者登入) ，以讓 Office 用戶端選擇變更。 </li><li>通知使用者和問訊台人員使用者 *可能會* 看到 office 橫幅，提示他們在轉換的72小時內重新啟用 office 應用程式。 </li><li>必須關閉個人電腦上的所有 Office 應用程式，且使用者必須登出後再登入。 在黃色啟用欄中，登入以重新啟用 Office 365 服務。</li><li>共用電腦需要與個人電腦類似的動作，而且不需要特殊的程式。 </li><li>在行動裝置上，使用者必須登出應用程式，並將其關閉，然後再次登入。 </li></ul>|
+| 用戶端，office Online 在 Office 用戶端轉換時，Azure AD 已完成租使用者範圍以指向 Office 365 服務。 | 這種設定變更可讓 Office 用戶端更新並指向 Office 365 服務端點。 | <ul><li>通知使用者關閉 _所有_ Office 應用程式，然後重新登入 (或強制用戶端重新開機，或強制使用者登入) ，以讓 Office 用戶端選擇變更。 </li><li>通知使用者和問訊台人員使用者 *可能會* 看到 office 橫幅，提示他們在轉換的72小時內重新啟用 office 應用程式。 </li><li>必須關閉個人電腦上的所有 Office 應用程式，且使用者必須登出後再登入。 在黃色啟用欄中，登入以重新啟用 Office 365 服務。</li><li>共用電腦需要與個人電腦類似的動作，而且不需要特殊的程式。 </li><li>在行動裝置上，使用者必須登出應用程式，並將其關閉，然後再次登入。</li></ul>|
 ||||
 
 ## <a name="line-of-business-apps"></a>企業營運應用程式
@@ -230,7 +230,7 @@ Office 中的最近使用 (MRU) 服務，是從 Microsoft Cloud Deutschland 轉�
 
 請確定您已閱讀 [遷移後活動](ms-cloud-germany-transition-add-experience.md#post-migration) 文章，並據此加以執行。
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 開始：
 

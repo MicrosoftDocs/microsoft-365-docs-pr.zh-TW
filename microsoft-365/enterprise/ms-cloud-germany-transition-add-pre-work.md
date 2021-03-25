@@ -18,80 +18,115 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的準備工作。
-ms.openlocfilehash: 37fde0119dfc84cbe9120cf922cbac469a0a50f1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d05b3fc06c4530a69c49962b0d2b793353033c99
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923835"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165606"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的準備工作
 
 使用下列連結可取得與貴組織相關的預備工作步驟：
 
-- 針對所有在 Microsoft Cloud Deutschland 中使用 Office 365 的客戶，請執行 [下列步驟](#applies-to-everyone)。
-- 如果您使用的是 Exchange Online 或 Exchange 混合式，請執行 [此步驟](#exchange-online)。
-- 如果您使用的是 SharePoint 線上，請執行 [此步驟](#sharepoint-online)。
-- 如果您正在使用協力廠商行動裝置管理 (MDM) 解決方案，請執行 [此步驟](#mobile)。
-- 如果您使用的是協力廠商服務或企業營運 (LOB) 與 Office 365 整合的應用程式，請執行 [此步驟](#line-of-business-apps)。
-- 如果您同時使用的是 Office 365 訂閱隨附的 Azure 服務，請執行 [此步驟](#microsoft-azure)。
-- 如果您也是使用 Dynamics 365，請執行 [此步驟](#dynamics365)。
-- 如果您也是使用 Power BI，請執行 [此步驟](#power-bi)。
-- 若為 DNS 變更，請執行 [此步驟](#dns)。
-- 如果您使用的是同盟身分識別，請執行 [下列步驟](#federated-identity)。
+- 針對 **所有** 在 Microsoft Cloud Deutschland 中使用 Office 365 的客戶，請執行 [下列步驟](#general-tenant-migration-considerations)。
+- 若為 **DNS 變更**，請執行 [此步驟](#dns)。
+- 如果您是在內部部署使用 **Active Directory Federation Services** ，請執行 [下列步驟](#active-directory-federation-services-ad-fs)。
+- 如果您使用的是 **SharePoint 線上**，請執行 [此步驟](#sharepoint-online)。
+- 如果您使用的是 **Exchange Online** 或 **exchange 混合** 式，請執行 [此步驟](#exchange-online)。
+- 如果您使用 **的是商務用 Skype Online**，請執行 [此步驟](#skype-for-business-online)
+- 如果您正在使用協力廠商行動裝置管理 (MDM) 解決方案，請執行 [此步驟](#mobile-device-management)。
+- 如果您使用的是 **協力廠商服務** 或 **企業營運 (LOB)** 與 Office 365 整合的應用程式，請執行 [此步驟](#line-of-business-apps)。
+- 如果您也是使用 **Dynamics 365**，請執行 [此步驟](#dynamics365)。
+- 如果您也是使用 **POWER BI**，請執行 [此步驟](#power-bi)。
+- 如果您也是使用 **Azure 服務** 與 Office 365 訂閱，請執行 [此步驟](#microsoft-azure)。
 
-## <a name="applies-to-everyone"></a>適用于所有人
+## <a name="general-tenant-migration-considerations"></a>一般承租人遷移考慮
+
+**適用于：** 在 Microsoft Deutschland 雲端實例中使用 Office 365 的所有客戶
+
+遷移期間會保留 Office 365 租使用者和使用者識別碼。 Azure AD 服務呼叫會從 Microsoft Cloud Deutschland 重新導向至 Office 365 泛型服務，而且對於 Office 365 服務是透明的。
+
+- 一般資料保護法規 (GDPR) 資料主體要求 (Dsr) 會從 Azure Admin 入口網站執行，以供未來的要求使用。 在 Microsoft 雲端 Deutschland 中的任何舊版或非客戶診斷資料會在經過30天之後刪除。
+- 多重要素驗證 (MFA) 要求會在將租使用者複製到 Office 365 服務時，以使用者身分顯示 GUID) ，ObjectID (GUID。 雖然這種顯示行為，MFA 要求仍會如期執行。  使用 Office 365 服務端點所啟動的 Microsoft 驗證程式帳戶會顯示使用者主要名稱 (UPN) 。  使用 Microsoft Cloud Deutschland 端點新增的帳戶會顯示使用者 ObjectID，但會同時搭配 Microsoft Cloud Deutschland 和 Office 365 服務端點使用。
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
 | 準備在遷移後，通知使用者如何重新開機和登出用戶端。 | Office 用戶端授權會從 Microsoft Cloud Deutschland 轉換為遷移中的 Office 365 服務。 用戶端登出及簽入 Office 用戶端後，用戶端會挑選新的有效授權。 | 使用者的 Office 產品需要重新整理 Office 365 服務的授權。 如果未重新整理授權，Office 產品可能會遇到授權驗證錯誤。 |
-| 確定 Office 365 服務的網路連線能力 [URLs 及 IP 位址](./urls-and-ip-address-ranges.md)。 | 由客戶所主控的所有用戶端和服務，用來存取 Office 365 服務，必須能夠存取 Office 365 泛型服務端點。 <br>在此情況下，您或您的共同作業夥伴有適當的防火牆規則，可防止存取 Office 365 服務中所列的 URLs 和 IP 位址 [URLs 和 ip 位址](./urls-and-ip-address-ranges.md) 必須變更防火牆規則，以允許存取 Office 365 全域服務端點| 如果不是在階段4之前完成，則可能會發生服務或用戶端軟體失敗  |
+| 確定 Office 365 服務的網路連線能力 [URLs 及 IP 位址](https://aka.ms/o365urls)。 | 由客戶所主控的所有用戶端和服務，用來存取 Office 365 服務，必須能夠存取 Office 365 泛型服務端點。 <br>若您或您的共同作業夥伴有適當的防火牆規則，可防止存取 Office 365 服務中所列的 URLs 和 IP 位址 [URLs 和 ip 位址](https://aka.ms/o365urls) 必須變更防火牆規則，以允許存取 Office 365 全域服務端點| 如果不是在階段4之前完成，則可能會發生服務或用戶端軟體失敗  |
 | 取消所有的試用訂閱。 | 不會遷移試用訂閱，而且會封鎖付費訂閱的轉接。 | 若使用者在取消後存取，試用版服務會到期且無法運作。 |
-| 分析 Microsoft Cloud Deutschland 與 Office 365 服務之間授權功能的差異。 | Office 365 服務包含目前 Microsoft Cloud Deutschland 中無法使用的其他功能和服務。 在訂閱轉移期間，使用者將可以使用新功能。 | <ul><li> 分析 Microsoft Cloud Deutschland 和 Office 365 服務的授權所提供的不同功能。 開始使用 [Office 365 平臺服務說明](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> 判斷是否應該開始停用 Office 365 服務的任何新功能，以限制使用者或使用者變更管理的影響，並視需要變更使用者授權指派。 </li><li>準備使用者及服務台人員，以取得 Office 365 服務提供的新服務和功能。 |
-| 建立整個組織 [保留原則](../compliance/retention.md) ，以防止在遷移期間因無意中刪除內容。  |<ul><li>為了確保使用者不會在遷移期間由使用者意外刪除內容，客戶可以選擇啟用整個組織的保留原則。 </li><li>雖然不需要保留，但在遷移期間可隨時使用保留原則，但具有保留原則是備份的安全性機制。 同時，所有客戶可能不會使用保留原則，尤其是有關保留原則的使用者。</li></ul>| 如 [深入瞭解保留原則和保留標籤](../compliance/retention.md)所述套用保留原則。 如果這不是在第4階段中執行，則可能會發生服務或用戶端軟體失敗。 </li></ul>|
-| 正確的授權 overages | 在某些情況下，客戶可能會使用超過所購買的服務。 這種情況稱為授權超額。 Microsoft 無法從 Microsoft Cloud Deutschland 到德國資料中心區域，將客戶的授權超額的情況轉移。 為了確保連續存取服務和資料，每個指派的使用者都需要授權。 | 所有客戶 | 客戶必須透過購買其他授權或從使用者取消指派授權，來評估並解決授權超額的情況。 |
+| 分析 Microsoft Cloud Deutschland 與 Office 365 泛型服務之間授權功能的差異。 | Office 365 服務包含目前 Microsoft Cloud Deutschland 中無法使用的其他功能和服務。 在訂閱轉移期間，使用者將可以使用新功能。 | <ul><li> 分析 Microsoft Cloud Deutschland 和 Office 365 泛型服務的授權所提供的不同功能。 開始使用 [Office 365 平臺服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> 判斷是否應該開始停用 Office 365 服務的任何新功能，以限制使用者或使用者變更管理的影響，並視需要變更使用者授權指派。 </li><li>準備使用者及服務台人員，以取得 Office 365 服務提供的新服務和功能。 |
+| 建立整個組織 [保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention) ，以防止在遷移期間因無意中刪除內容。  |<ul><li>為了確保使用者不會在遷移期間由使用者意外刪除內容，客戶可以選擇啟用整個組織的保留原則。 </li><li>雖然不需要保留，但在遷移期間可隨時使用保留原則，但具有保留原則是備份的安全性機制。 同時，所有客戶可能不會使用保留原則，尤其是有關保留原則的使用者。</li></ul>| 如 [深入瞭解保留原則和保留標籤](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)所述套用保留原則。 如果這不是在第4階段中執行，則可能會發生服務或用戶端軟體失敗。 </li></ul>|
 |||||
+
+## <a name="dns"></a>DNS
+
+<!-- before phase 9 -->
+
+**適用于**：在自己的 DNS 網域中設定自訂 _msoid_ CNAME 的客戶
+
+若設定， _msoid_ CNAME 只會影響使用 Office 桌面用戶端的客戶 (Microsoft 365 應用程式、office 365 ProPlus、office 2019、2016、... ) 。
+
+若您已在您擁有的一或多個 DNS 命名空間中設定稱為 _msoid_ 的 DNS CNAME，必須先移除 CNAME，直到最後一個階段8結束。 您可以在階段8結束之前的任何時間移除 CNAME _msoid_ 。
+
+若要確認您是否已在 DNS 命名空間中設定 CNAME，請遵循下列步驟，並以您自己的功能變數名稱取代 _contoso.com_ ：
+
+```console
+nslookup -querytype=CNMAE msoid.contoso.com
+```
+
+如果命令列傳回 DNS 記錄，請從您的網域中移除 _msoid_ CNAME。
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
 
-**適用于**：使用 AD FS 內部部署的客戶，以驗證連線至 Microsoft Office 365 的使用者
+<!-- before phase 4 -->
 
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| [備份 Active Directory Federation Services (AD FS) 伺服器](ms-cloud-germany-transition-add-adfs.md#backup) 陣列以取得嚴重損壞修復案例。 | 客戶必須適當備份 AD FS 伺服器陣列，以確保在不觸及網域之發行者 URI 的情況下，對全域 & 的信賴憑證者信任可以還原。 Microsoft 建議在伺服器陣列的備份中使用 AD FS 快速還原（如有必要）。 | 必要的動作。 當客戶的 AD FS 伺服器陣列失敗時，Inaction 將會在遷移期間產生服務影響。 如需詳細資訊，請參閱 [ADFS 遷移步驟](./ms-cloud-germany-transition-add-adfs.md) |
-||||
+**適用于**：使用 AD FS 內部部署的客戶，以驗證連線至 Microsoft Office 365 的使用者<br>
+套用 **時**：第4階段之前的任何時間
 
-## <a name="exchange-online"></a>Exchange Online
-
-**適用** 于：已啟用共用行事曆和可用性位址空間的 Exchange Online 客戶。
-
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 通知外部合作夥伴即將進行的轉換至 Office 365 服務。 | 可用性位址空間設定允許與 Office 365 共用空閒/忙碌資訊。 | 若失敗，可能會導致服務或用戶端在後續的遷移階段失敗。 |
-|||||
-
-### <a name="exchange-online-hybrid-configuration"></a>Exchange Online 混合式設定
-
-**適用** 于：具有主動 exchange 混合式設定的 Exchange Online 客戶
-
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 在您的租使用者進入遷移階段5之前，更新至最新版本的混合式設定向導 (HCW) 。 您可以在收到您的 Office 365 承租人遷移已開始的訊息中心通知之後，立即啟動此活動。<br><br> Microsoft Cloud Deutschland 混合式 Exchange Online 客戶必須先卸載舊版的 HCW，然後 (17.0.5378.0 或以上) 中安裝及執行最新版本 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 |<ul><li>最新版本的 HCW 包含必要更新，以支援從 Microsoft Cloud Deutschland 轉換為 Office 365 服務的客戶。</li><li> 更新包括傳送連接器和接收連接器的內部部署憑證設定變更。</li><li> Exchange 管理員必須在 (Exchange 遷移) 開始之前的第5階段中，隨時重新安裝 HCW。<br>在階段5之前執行 HCW 時，請在 [office _365 Exchange Online_ ] 下的清單方塊的第2頁面上，選取 office _365 組織_ 位於下列清單中的 [Office 365： Exchange Online]。</li><li>**附注**：完成 Office 365 租使用者遷移後，您將會再次移除並重新安裝 HCW，這次是使用 HCW 的第二頁上的「Office 365 世界」設定，以 Exchange Online 泛型服務完成混合式設定。</li></ul>|在 Exchange 遷移)  (第5階段之前執行 HCW 可能會導致服務或用戶端失敗。 |
-||||
+讀取及套用 [ADFS 遷移步驟](ms-cloud-germany-transition-add-adfs.md)
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-**適用于**：在內部部署使用 SharePoint 2013 的客戶
+<!-- before phase 4 -->
 
+**適用于**：使用 SharePoint 2013 內部部署的客戶<br>
+套用 **時**：第4階段之前的任何時間
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
 | 限制 SharePoint 2013 工作流程，在 SharePoint 線上遷移期間使用。 | 減少 SharePoint 2013 工作流程，並在轉換之前完成航班中的工作流程。 | Inaction 可能會造成使用者混淆和問訊台通話。 |
 ||||
 
+## <a name="exchange-online"></a>Exchange Online
+
+<!-- before phase 5 -->
+
+**適用** 于：已啟用共用行事曆和可用性位址空間的 Exchange Online 客戶<br>
+套用 **時**：階段9結束之前的任何時間
+
+| 步驟 (s)  | 描述 | 影響 |
+|:-------|:-------|:-------|
+| 通知外部合作夥伴即將進行的轉換至 Office 365 服務。 | 可用性位址空間設定允許與 Office 365 共用空閒/忙碌資訊。 | 若失敗，可能會導致服務或用戶端在後續的遷移階段失敗。 |
+||||
+
+### <a name="exchange-online-hybrid-configuration"></a>Exchange Online 混合式設定
+
+**適用于：** 所有在內部部署 Exchange 伺服器皆使用 Exchange 混合式設定的客戶<br>
+套用 **時**：第5階段之前的任何時間
+
+| 步驟 (s)  | 描述 | 影響 |
+|:-------|:-------|:-------|
+| 在您的租使用者進入遷移階段5之前，更新至最新版本的混合式設定向導 (HCW) 。 您可以在收到您的 Office 365 租使用者遷移已開始 (階段 1) 之後，立即啟動此活動。<br>您的 Exchange 系統管理員必須先卸載舊版的 HCW，然後 (17.0.5378.0 或以上) 中安裝及執行最新版本 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 |<ul><li>最新版本的 HCW 包含必要更新，以支援從 Microsoft Cloud Deutschland 實例將 Exchange Online 遷移至 Office 365 泛型服務。</li><li> 更新包括 _傳送連接器_ 和 _接收連接器_ 的內部部署憑證設定變更。</li><li>在階段5之前執行 HCW 時，請在 [office _365 Exchange Online_ ] 下的清單方塊的第2頁面上，選取 office _365 組織_ 位於下列清單中的 [Office 365： Exchange Online]。</li><li>**附注**：完成 Office 365 租使用者的階段9後，您將會再次移除並重新安裝 HCW，這次是使用 HCW 的第二頁上的「Office 365 全球」設定，以透過 Exchange Online 泛型服務完成混合式設定。</li></ul>|在 Exchange 遷移)  (第5階段之前執行 HCW 可能會導致服務或用戶端失敗。 |
+| 建立 Set-authserver 內部部署指向全域安全性 Token 服務 (STS) 進行驗證 | 這可確保來自以混合式內部部署環境為目標之遷移狀態之使用者的 Exchange 可用性要求的驗證要求已驗證，可存取內部部署服務。 同樣地，這可確保從內部部署到 Office 365 全域服務端點的要求驗證。 | Azure AD 遷移 (階段 2) 完成之後，內部部署 Exchange (混合) 拓撲的系統管理員必須為 Office 365 泛型服務新增新的驗證服務端點。 使用此命令從 Exchange PowerShell，取代 `<TenantID>` Azure Active Directory 上 azure 入口網站中找到的組織租使用者識別碼。<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> 無法完成此工作可能會導致混合空閒忙碌要求無法為已從 Microsoft Cloud Deutschland 遷移至 Office 365 服務的信箱使用者提供資訊。  |
+||||
+
 ## <a name="skype-for-business-online"></a>商務用 Skype Online
 
-**適用于**：商務用 Skype Online 客戶
+<!-- before phase 7 -->
+
+**適用于**：商務用 Skype Online 客戶<br>
+套用 **時**：第7階段之前的任何時間
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
@@ -100,9 +135,11 @@ ms.locfileid: "50923835"
 | 準備使用者和管理的訓練和準備工作，以轉換至 Microsoft 團隊。 | 在您計畫使用者的通訊和準備工作時，從 Skype 切換至小組成功。 | <ul><li>用戶端必須注意新服務，以及如何在將其服務轉換成 Office 365 服務後使用。 </li><li>在對客戶虛名網域和初始網域進行 DNS 變更之後，使用者就會登入商務用 Skype，並看到他們現在已遷移到小組。 這也會在背景中為小組下載桌面用戶端。 </li></ul>|
 ||||
 
-## <a name="mobile"></a>行動裝置
+## <a name="mobile-device-management"></a>行動裝置管理
 
-如果您正在使用協力廠商行動裝置管理 (MDM) 解決方案：
+<!-- before phase 5 -->
+**適用于：** 使用協力廠商行動裝置管理 (MDM) 解決方案的客戶<br>
+套用 **時**：第5階段之前的任何時間
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -112,7 +149,10 @@ ms.locfileid: "50923835"
 
 ## <a name="line-of-business-apps"></a>企業營運應用程式
 
-如果您使用的是協力廠商服務或企業營運 (LOB) 與 Office 365 整合的應用程式： 
+**適用于：** 使用企業營運 (LOB) 應用程式與 Microsoft Cloud Deutschland 提供之端點的客戶<br>
+套用 **時**：在階段2完成之後和階段9結束之前
+
+如果您使用的是協力廠商服務或企業營運 (LOB) 與 Office 365 整合的應用程式，則必須解決 Microsoft Cloud Deutschland 實例所提供之端點上的任何相依性。 例如，如果您的 LOB 應用程式正在連線 `https://graph.microsoft.de/` ，您必須將端點變更為 `https://graph.microsoft.com/` 。 在第2階段後，您的租使用者便可使用 Microsoft Office 365 泛型服務的端點。
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
@@ -121,7 +161,7 @@ ms.locfileid: "50923835"
 
 ## <a name="dynamics-365"></a>Dynamics 365
 
-**適用于**：使用 Microsoft Dynamics 的客戶
+**適用于**：使用 Microsoft Dynamics 365 的客戶
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
@@ -130,31 +170,21 @@ ms.locfileid: "50923835"
 
 ## <a name="power-bi"></a>Power BI
 
-**適用于**： Power BI 客戶 
+**適用于**：使用 power BI 的客戶
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
 | 從 Power BI 訂閱移除不會從 Power BI Microsoft Cloud Deutschland 遷移至 Office 365 服務的物件。 | 遷移 Power BI 服務需要客戶採取行動，以刪除特定的專案，例如資料集和儀表板。 | <ul><li>管理員可能必須將下列專案從其訂閱中移除： </li><li>Real-Time 資料集 (例如，流式傳送或推入資料集)  </li><li>Power BI 內部部署資料閘道設定和資料來源 </li></ul>|
 ||||
 
-## <a name="dns"></a>DNS
-
-**適用于**：使用 Office 桌面用戶端的客戶 (Microsoft 365 應用程式，office 365 ProPlus，office 2019，2016，... ) <br>
-移除 MSOID，在 Azure Active Directory (Azure AD) 剪下一個時，從客戶擁有的 DNS CName。 可以設定為5分鐘的 TTL，使變更能快速生效。
-
-## <a name="federated-identity"></a>同盟身分識別
-
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 新增單一登入 (SSO) 至現有的信賴憑證者信任，並停用 AD FS 中繼資料自動更新的識別碼。 | 開始遷移之前，必須先將識別碼新增至 AD FS 信賴憑證者信任。 若要避免意外移除信賴憑證方識別碼，請停用中繼資料更新的自動更新。 <br><br> 在 AD FS 伺服器上以單一命令列的身分執行這個命令： <br>`Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de', 'https://login.microsoftonline.de/extSTS.srf', 'https://login.microsoftonline.de') -AutoUpdate $False`
-| 同盟驗證組織 | 必要的動作。 Inaction SharePoint (第4階段之前 9) 會在遷移期間產生服務影響。  |
-| 為全域 Azure AD 端點產生信賴憑證者信任。 | 客戶必須手動建立信賴憑證者信任 (RPT) 到 [全域](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) 端點。 方法是透過 GUI 新增 RPT，方法是利用全域同盟中繼資料 URL，然後使用 [AZURE AD RPT 宣告規則](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (于 AD FS 說明中) 產生宣告規則並將其匯入 RPT。 | 同盟驗證組織 | 必要的動作。 Inaction 會在遷移期間產生服務影響。 |
-|||||
-
 ## <a name="microsoft-azure"></a>Microsoft Azure
 
 如果您使用的是 Office 365 和 Microsoft Azure 的相同 Azure Active Directory 身分識別分割區，請確定您準備好進行 Microsoft Azure 服務的客戶導向遷移。
-您的 Microsoft Azure 服務遷移必須在您的 Office 365 租使用者達到遷移階段3之前啟動，且必須在完成遷移階段8之前完成。
+
+> [!NOTE]
+> 您的 Microsoft Azure 服務遷移必須在您的 Office 365 租使用者達到遷移階段3之前啟動，且必須在完成遷移階段8之前完成。
+
+使用 Office 365 和 Azure 資源的客戶 (例如，網路、計算和儲存) 會執行將資源遷移至 Office 365 服務實例。 這種遷移是客戶的責任。 訊息中心文章會通知開始。 在 Office 365 服務環境中完成 Azure AD 組織之前，必須完成遷移。 如需 Azure 遷移，請參閱 azure 遷移行動手冊（ [Azure 德國遷移指南的概述](https://docs.microsoft.com/azure/germany/germany-migration-main)）。
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
@@ -181,7 +211,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 開始：
 
