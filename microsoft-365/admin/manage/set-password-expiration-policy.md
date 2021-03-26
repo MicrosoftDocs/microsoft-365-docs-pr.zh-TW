@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解如何在 Microsoft 365 系統管理中心設定組織的密碼到期原則。
-ms.openlocfilehash: ffe3ca74ce901eef359e1bcb80c4044ce4bf9ad7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74b23b4a1b67ecd5c9199388985e8e38c3231239
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915071"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221820"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
 
@@ -41,7 +41,7 @@ ms.locfileid: "50915071"
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../admin-overview/admin-overview.md)
+本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
 
 您必須是[全域系統管理員](../add-users/about-admin-roles.md)才能執行這些步驟。
 

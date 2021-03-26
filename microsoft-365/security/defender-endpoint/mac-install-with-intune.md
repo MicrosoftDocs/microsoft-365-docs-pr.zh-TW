@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 08cb16f6ae6e259d1bc92e7d2bed96f093a435f0
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199534"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222510"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>以 Intune 為基礎的 Microsoft Defender for Mac 部署
 
@@ -136,8 +136,6 @@ ms.locfileid: "51199534"
 在標準 [公司入口網站安裝](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)以外，您不需要 Mac 裝置的任何特殊布建。
 
 1. 確認裝置管理。
-
-    ![確認裝置管理螢幕擷取畫面](./images/mdatp-3-confirmdevicemgmt.png)
 
     選取 [ **開啟系統喜好** 設定]，然後在清單中尋找 [ **管理設定檔** ]，然後選取 [ **核准 ...**]。您的管理設定檔會顯示為 **已驗證**：
 

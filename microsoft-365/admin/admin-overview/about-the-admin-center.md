@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用系統管理中心在雲端設定您的組織並管理使用者和訂閱。 請以系統管理員權限登入帳戶以開始使用。
-ms.openlocfilehash: 7d326629de4859819784af015292f99b044658d0
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: ef606565d7cad94bc0c7ff81630ef6c2fe8a6fc4
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215489"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222084"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 
@@ -71,7 +71,7 @@ ms.locfileid: "51215489"
 
 ## <a name="admin-center-features-and-settings"></a>系統管理中心功能和設定
 
-以下是您可在系統管理中心左側瀏覽列中找到的功能與設定。 深入了解[系統管理說明](./admin-overview.md)中的系統管理工作。
+以下是您可在系統管理中心左側瀏覽列中找到的功能與設定。 深入了解[系統管理說明](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)中的系統管理工作。
   
 |**功能表**|**功能**|
 |-----|-----|

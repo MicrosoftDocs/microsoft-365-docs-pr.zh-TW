@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 深入瞭解 Viva 主題中的使用者角色。
-ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e91eda6807634ad27bf6c15c2dd0d1c9434ce299
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917353"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222764"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Microsoft Viva Topics 角色 
 
@@ -49,7 +49,7 @@ ms.locfileid: "50917353"
 若要建立及編輯主題，使用者必須：
 
 -   由其 Microsoft 365 系統管理員[指派 Viva 主題授權](./set-up-topic-experiences.md#assign-licenses)。
--   [被指派許可權以建立及編輯主題](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center)。 這項工作是由 Microsoft 365 系統管理中心中的 [Viva 主題設定] 頁面上的知識系統管理員所完成。
+-   [被指派許可權以建立及編輯主題](./topic-experiences-user-permissions.md)。 這項工作是由 Microsoft 365 系統管理中心中的 [Viva 主題設定] 頁面上的知識系統管理員所完成。
 
 ## <a name="knowledge-managers"></a>知識管理員
 
@@ -64,7 +64,7 @@ ms.locfileid: "50917353"
 
 若要管理主題，使用者必須：
 -   由其 Microsoft 365 系統管理員[指派 Viva 主題授權](./set-up-topic-experiences.md#assign-licenses)。
--   [被指派管理主題](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center)) 的許可權。 這項工作是由 Microsoft 365 系統管理中心中的 [Viva 主題設定] 頁面上的知識系統管理員所完成。
+-   [被指派管理主題](./topic-experiences-user-permissions.md)) 的許可權。 這項工作是由 Microsoft 365 系統管理中心中的 [Viva 主題設定] 頁面上的知識系統管理員所完成。
 
 具有良好整體知識的使用者可能是「知識管理員」角色的良好候選人。 這類人員可能不僅具備知道主題是否有效的知識，還可以知道公司內與這些主題相關的人員。
 

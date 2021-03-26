@@ -1,6 +1,6 @@
 ---
-title: 設定 Microsoft Defender ATP 部署
-description: 瞭解如何設定 Microsoft Defender ATP 的部署
+title: 設定 Microsoft Defender for Endpoint 部署
+description: 瞭解如何設定 Microsoft Defender for Endpoint 的部署
 keywords: 部署、安裝、授權驗證、租使用者設定、網路設定
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4af84c21977e4b90c8b6d9ec4c785339ff229e7d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186146"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222438"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>設定 Microsoft Defender for Endpoint 部署
 
@@ -52,7 +52,7 @@ ms.locfileid: "51186146"
 
 
 >[!NOTE]
->為便於您透過一般部署，此案例只會涵蓋 Microsoft 端點 Configuration Manager 的使用。 Defender for Endpoint 支援使用其他上架工具，但不會涵蓋部署指南中的那些案例。 如需詳細資訊，請參閱 [在 Microsoft Defender For Endpoint 中的板載裝置](onboard-configure.md)。
+>為便於您透過一般部署，此案例只會涵蓋 Microsoft 端點 Configuration Manager 的使用。 Defender for Endpoint 支援使用其他上架工具，但不涵蓋部署指南中的那些案例。 如需詳細資訊，請參閱 [在 Microsoft Defender For Endpoint 中的板載裝置](onboard-configure.md)。
 
 ## <a name="check-license-state"></a>檢查授權狀態
 
@@ -98,7 +98,7 @@ ms.locfileid: "51186146"
 
 4. 設定偏好設定。
 
-   **資料儲存位置** -請務必正確設定。 決定客戶想要主要寄存的位置：美國、歐盟或 UK。 您無法變更此設定之後的位置，Microsoft 也不會從指定的地理位置傳輸資料。 
+   **資料儲存位置** -請務必正確設定。 決定客戶想要主要寄存的位置：美國、歐盟或 UK。 您無法變更此設定之後的位置，而且 Microsoft 不會從指定的地理位置傳輸資料。 
 
     **資料保留** -預設值為六個月。
 
@@ -124,10 +124,7 @@ ms.locfileid: "51186146"
 
 -   Web Proxy 自動探索通訊協定 (WPAD) 
 
-如果已在網路拓撲中執行透明 proxy 或 WPAD，則不需要特殊的設定。 如需 proxy 中 Microsoft Defender for Endpoint URL 排除專案的詳細資訊，請參閱本檔中的「附錄」區段中的 URLs 允許清單或 [Microsoft](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)檔。
-
-> [!NOTE]
-> 如需需要允許的 URLs 詳細清單，請參閱 [本文](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
+如果已在網路拓撲中執行透明 proxy 或 WPAD，則不需要特殊的設定。 如需 proxy 中 Microsoft Defender for Endpoint URL 排除專案的詳細資訊，請參閱本檔中的 [Proxy 服務 URLs](production-deployment.md#proxy-service-urls) 一節，以取得 URLs Allowlist 或 [設定裝置 Proxy 和網際網路連線設定](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 
 **手動靜態 Proxy 組態：**
 
@@ -137,7 +134,7 @@ ms.locfileid: "51186146"
 
 ### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>使用基於登錄的靜態 Proxy 手動設定 Proxy 伺服器
 
-設定登錄型靜態 proxy，只允許 Microsoft Defender for Endpoint 感應器報告診斷資料，並在電腦不允許連線至網際網路時，與 Microsoft Defender for Endpoint service 通訊。 靜態 Proxy 可以透過群組原則 (GP) 設定。 可以在以下位置找到群組原則：
+設定登錄型靜態 proxy，只允許 Microsoft Defender for Endpoint 感應器報告診斷資料，並在電腦不允許連線至網際網路時，與 Microsoft Defender 的端點服務通訊。 靜態 Proxy 可以透過群組原則 (GP) 設定。 可以在以下位置找到群組原則：
 
  - 系統管理範本 \> Windows 元件 \> 資料收集和預覽組建 \> 設定連線使用者經驗和遙測服務的已驗證 Proxy 使用方式
      - 設定為 **啟用** ，並選取 [ **停用已驗證的 Proxy 使用**
@@ -207,24 +204,27 @@ Down-Level 裝置包含 windows 7 SP1 和 Windows 8.1 工作站，以及 windows
 |![Microsoft Defender for Endpoint URLs 試算表的縮圖影像](images/mdatp-urls.png)<br/>  | 服務位置、地理位置和作業系統的特定 DNS 記錄試算表。 <br><br>[在這裡下載試算表。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
-###  <a name="microsoft-defender-for-endpoint-service-backend-ip-range"></a>Microsoft Defender for Endpoint service 後端 IP 範圍
+###  <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Microsoft Defender for Endpoint service 後端 IP 範圍
 
-如果網路裝置不支援上一節所列的 URLs，您可以使用下列資訊。
+如果您的網路裝置不支援以 DNS 為基礎的規則，請改為使用 IP 範圍。
 
-在 Azure cloud 上建立端點的 Defender，部署于下列地區：
+已于 Azure cloud 中建立端點 for Endpoint，部署于下列地區：
 
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
+- AzureCloud.eastus
+- AzureCloud.eastus2
+- AzureCloud.westcentralus
+- AzureCloud.northeurope
+- AzureCloud.westeurope
+- AzureCloud.uksouth
+- AzureCloud.ukwest
 
-您可以在 [Microsoft Azure 資料中心 IP 範圍](https://www.microsoft.com/en-us/download/details.aspx?id=41653)上找到 Azure IP 範圍。
+您可以在 [AZURE Ip 範圍和服務標記–公用雲端](https://www.microsoft.com/download/details.aspx?id=56519)中找到 azure ip 範圍。
 
 > [!NOTE]
-> 作為雲端式解決方案，IP 位址範圍可能會變更。 建議您移至 DNS 解析設定。
+> 作為雲端式解決方案，IP 位址範圍可能會變更。 建議您移至以 DNS 為基礎的規則。
+
+> [!NOTE]
+> 如果您是美國政府客戶，請參閱適用于 US 政府頁面的 [Defender For Endpoint](gov.md#service-backend-ip-ranges) 中的對應章節。
 
 ## <a name="next-step"></a>下一步
 

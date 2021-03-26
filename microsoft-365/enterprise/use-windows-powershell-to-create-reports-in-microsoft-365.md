@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 摘要：使用 Microsoft 365 PowerShell 來建立您無法在 Microsoft 365 系統管理中心內產生的報告。
-ms.openlocfilehash: 12cba74d114ea03804741335bd34ece403926033
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dc183ae8a315bf788befc85474d0647802ac91ee
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924693"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222776"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>使用 PowerShell 建立 Microsoft 365 報告
 
@@ -33,7 +33,7 @@ Microsoft 365 系統管理中心提供許多不同的報告。 不過，這些�
   
 - 開始使用 Microsoft 365 的 PowerShell 報告：
     
-  - [為什麼您需要使用適用於 Microsoft 365 的 PowerShell](./why-you-need-to-use-microsoft-365-powershell.md#reveal)
+  - [為什麼您需要使用適用於 Microsoft 365 的 PowerShell](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
 - 使用者帳戶和授權的報告：

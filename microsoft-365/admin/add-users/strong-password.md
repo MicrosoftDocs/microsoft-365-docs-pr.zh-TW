@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用 Windows PowerShell 為使用者設定強式密碼需求。
-ms.openlocfilehash: e2300e3c94de53cd04d0c1726538fdb8a86a1ccf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: de2f47bb88fe4cb3d00e45698fe006035faa4e5c
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903533"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222070"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>關閉使用者的強式密碼需求
 
@@ -34,7 +34,7 @@ ms.locfileid: "50903533"
 
 ## <a name="before-you-begin"></a>開始之前
 
-本文適用于管理企業、學校或非盈利性密碼原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [什麼是系統管理員帳戶？](../admin-overview/admin-overview.md) 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
+本文適用于管理企業、學校或非盈利性密碼原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [什麼是系統管理員帳戶？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
 
 您也必須使用 PowerShell 連接至 Microsoft 365。
 

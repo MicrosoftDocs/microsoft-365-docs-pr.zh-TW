@@ -16,20 +16,18 @@ ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 30e664aed74ed01944c67b139e6268fc3340ada4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057172"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222608"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Windows 虛擬桌面中的板載 Windows 10 多會話裝置 
 6分鐘可供讀取 
 
 適用於： 
 - 在 Windows 虛擬機器上執行的 windows 10 多會話 (WVD)  
-> [!IMPORTANT]
-> 歡迎使用 Microsoft Defender for Endpoint，Microsoft Defender for Endpoint 的新名稱。 請參閱這裡以深入了解其他最新消息。 我們將於近期在產品和文件中更新名稱。
 
 > [!WARNING]
 > Windows 虛擬桌面多會話案例的 Microsoft Defender for Endpoint 支援目前正在預覽中，且每個主機/VM 最多可同時限制25個同時會話。 不過，已完全支援 Windows 虛擬桌面上的單一會話案例。
@@ -109,7 +107,7 @@ Microsoft 建議將 Microsoft Defender for Endpoint 上架腳本新增至 WVD �
 
 當您建立黃金影像時，您可能也想要設定初始保護設定。 如需詳細資訊，請參閱 [其他建議的配置設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-gp#other-recommended-configuration-settings)。 
 
-此外，如果您使用 FSlogix 的使用者設定檔，建議您從永遠開啟的保護中排除下列檔案： 
+此外，如果您使用的是 FSlogix 的使用者設定檔，建議您從永遠開啟的保護中排除下列檔： 
 
 **排除檔案：** 
 

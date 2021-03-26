@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b9ce376736e5f00ee0f6a4f308d783e75052357
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 97a64c8537ff2a6f9948ed6ed056b8aa7379ce69
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163291"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222332"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>向 SIEM 工具提取偵測
 
@@ -53,7 +53,7 @@ SIEM 的 Defender 目前是透過專用的 SIEM 整合模型，支援下列特�
 
 - [在 Defender for Endpoint 中啟用 SIEM 整合](enable-siem-integration.md)
 - 設定支援的 SIEM 工具：
-     - [設定 HP ArcSight 以拉入 Defender 以進行端點偵測](configure-arcsight.md)
+     - [設定微焦點 ArcSight 以拉入 Defender for Endpoint 偵測](configure-arcsight.md)
      - 設定 IBM QRadar 若要深入瞭解端點偵測以取得資訊，請參閱 [Ibm 知識中心](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)。
 
-如需在偵測 API 中公開的欄位清單的詳細資訊，請參閱， [Defender For Endpoint 偵測欄位](api-portal-mapping.md)。
+如需在偵測 API 中公開的欄位清單的詳細資訊，請參閱 [Defender For Endpoint 偵測欄位](api-portal-mapping.md)。

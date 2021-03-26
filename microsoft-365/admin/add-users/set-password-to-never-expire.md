@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 瞭解如何使用 Windows PowerShell 將部分個人的使用者密碼設為永不過期。
-ms.openlocfilehash: 564ea3338fcb11d699d385a40c9594f34964edf7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c70fce1c3ea9cb1dea66982a27ddb24e2b2de255
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903637"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222060"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>設定個別使用者的密碼永不過期
 
@@ -35,7 +35,7 @@ ms.locfileid: "50903637"
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../admin-overview/admin-overview.md) 
+本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) 
 
 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
 

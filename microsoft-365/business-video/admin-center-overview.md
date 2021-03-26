@@ -2,8 +2,8 @@
 title: Microsoft 365 系統管理中心-簡介
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,18 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 admin center。
-ms.openlocfilehash: b936a42629086c8674bd2d89454e98e387b15efc
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5ae72b51657cea1ce635c622e875cdf736ee1598
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423032"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221758"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心概觀
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
 Microsoft 365 系統管理中心是您在雲端管理貴公司的所在位置。 您可以完成新增及移除使用者、變更授權，以及重設密碼等工作。 
+
+專業工作區（如安全性或裝置管理），允許更細微的控制。 如需系統管理中心如何共同運作的詳細資訊，請參閱本文中 [的特定類型的 IT 角色和其他工作區（如安全性、裝置管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。
 
 若要取得 Microsoft 365 系統管理中心，請移至 [admin.microsoft.com](https://admin.microsoft.com) ，或者，如果您已登入，請選取應用程式啟動器，然後選擇 [系統 **管理**]。
 
@@ -51,3 +53,112 @@ Microsoft 365 系統管理中心是您在雲端管理貴公司的所在位置。
 如果您隨時需要支援，請選擇 [ **需要協助**]。 請輸入您的問題，然後查看顯示的連結。 如果您未在這裡看到答案，請選擇 [ **聯繫支援** ] 以開啟服務要求。 
 
 如需管理帳單、密碼、使用者及系統管理員的詳細資訊，請參閱本課程中的其他課程。
+
+## <a name="who-is-an-admin"></a>誰是系統管理員？ 
+
+依預設，註冊和購買 Microsoft 365 for business 訂閱的人員會取得系統管理員許可權。 該人員可將系統管理員許可權指派給其他人員，以協助他們管理其組織的 Microsoft 365。
+
+如果您收到「您沒有 **存取此頁面或執行此動作的許可權**」的訊息，表示您不是系統管理員。
+<br><br>    
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
+  
+### <a name="who-has-admin-permissions-in-my-business"></a>誰擁有我公司裡的系統管理員權限？
+<a name="bkmk_admin"> </a>
+
+當您尋找系統管理員以便要求對方重設密碼、刪除帳戶或執行其他工作時，請與以下人員連絡：
+  
+- **大學與學校** ：請與您的技術支援小組連絡。 一般來說，您可以在大學網站上找到相關連結。 在較小的學校中，可能只有少數個人具有系統管理員許可權。 
+    
+- **大型企業** ：請與內部技術服務人員/技術支援人員連絡。 
+    
+- **小型企業** ：請與企業經營者/共同擁有者連絡。這些人員通常會將系統管理權限授與 IT 顧問 (負責維護企業電腦的人員)。 
+  
+如果您不知道您的工作或學校要取得協助，請嘗試詢問您的使用者帳戶和密碼的人員。
+
+> [!NOTE]
+> 目標版本系統管理員必須先存取新功能。 新功能會稍後向所有系統管理員推出。 這表示您可能看不到系統管理中心，也可能與說明文章中描述的不一樣。 若要在第一個查看新功能的情況下，請參閱下列的系統管理中心。 
+
+## <a name="turn-on-targeted-release"></a>開啟目標版本
+
+1. 在 [admin.microsoft.com](https://admin.microsoft.com)中登入，移至功能窗格，然後選取 [ **設定** \> **組織設定檔**]。
+
+2. 移至 [ **發行偏好** 設定卡]，然後選取 [ **編輯**]。 
+    
+3. **為所選使用者** 選取 [所有人] 或 [目標版本]**的 [目標版本**]。 如果您為選取的使用者選擇 [目標版本]，請務必在您的組織中新增您的系統管理員帳戶 (和任何其他系統管理員，以加入) 至選取的使用者清單。
+    
+## <a name="admin-center-feedback"></a>系統管理員中心意見反應
+
+[！附注] 在系統管理中心中，您可以在每一頁底部的 [**需要協助 ...** ] 按鈕上，選取 [**提供意見** 反應]，以提供有關您的體驗的 Microsoft 意見反應。 請告訴我們您喜歡的專案，以及我們能夠做什麼。 此外，您還可以從向下取得整體印象或新發佈之特定經驗的時間，取得彈出的調查。 您也可以在本文結束時提供意見反應，請選取 [ **此資訊是否有説明？**
+
+## <a name="frequently-asked-questions"></a>常見問題集
+
+您不會在這裡看到您的問題答案？ 請移至此頁面底部的 [ **意見** 反應] 區段，並詢問您的問題。 
+  
+### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些 Microsoft 365 方案可供試用或購買？
+
+Microsoft 365 是完整的智慧解決方案，包括 Office 365、Windows 10 和企業行動性 + 安全性，可讓每個人都有創造性且安全地協同運作。 您可以在系統管理中心使用下列 Microsoft 365 訂閱，讓您立即嘗試或購買：
+  
+- Microsoft 365 商務版
+- Microsoft 365 企業版 E3
+- Microsoft 365 企業版 E5
+    
+如需詳細資訊，請參閱 [嘗試或購買 Microsoft 365 訂閱](../commerce/try-or-buy-microsoft-365.md)。
+
+### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>我發現 bug 或我想要要求功能增強功能。 如何讓 Microsoft 知道？
+
+我們喜歡聽到您的來信！ 報告錯誤和共用意見反應可協助我們改善 Microsoft 365 系統管理中心。 若要提供意見反應，請選取頁面底部的 [ **意見** 反應] 按鈕，並使用表單將您的想法傳送給我們。 如果您希望 Microsoft 365 系統管理中心小組的人員追蹤您的意見，請選取核取方塊，並確認您的電子郵件地址。 我們無法承諾跟進每一項意見反應，但我們要嘗試！ 
+  
+您也可以從系統管理中心以外的 UserVoice 論壇中提供意見反應。 您可以使用此頁面來進行其他論壇使用者可投票的功能建議： [新系統管理中心的 UserVoice 論壇](https://go.microsoft.com/fwlink/?linkid=2024994)。
+
+### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>IT 角色的特定類型及其他工作區（如安全性、裝置管理或 Exchange）的情況為何？
+
+Microsoft 365 系統管理中心是所有用來管理 Microsoft 365 的團隊和角色的一般進入點。 您可以針對每個系統管理員和角色，量身定制和自訂經驗、資訊和控制項。 此外，專業工作區允許深度、精細的控制。 這些專家工作區包括 SharePoint、小組 &amp; Skype、Exchange、安全性、規範、裝置管理和 Azure Active Directory。 您可以從 Microsoft 365 系統管理中心的流覽窗格中，找到專家工作區 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。
+
+### <a name="what-language-options-are-available-the-admin-center"></a>系統管理中心可使用哪些語言選項？
+
+Microsoft 365 系統管理中心已完全當地語系化為40語言。
+
+|語言 |Locale |
+|---------|---------|
+|阿拉伯文 | Ar |
+|保加利亞文 | Bg |
+|加泰隆尼亞文 | 約 |
+|捷克文 | Cs |
+|丹麥文 | 大 |
+|德文 | 德 |
+|希臘文 | el |
+|西班牙文 | e |
+|英文 | 途中 |
+|愛沙尼亞文 | et |
+|巴斯克文 | 歐盟 |
+|芬蘭文 | wi-fi |
+|法文 | fr |
+|加利西亞文 | Gl |
+|希伯來文 | 他 |
+|克羅埃西亞文 | hr |
+|匈牙利文 | 胡 |
+|印尼文  | id |
+|義大利文 | 會 |
+|日文 | ja |
+|韓文 | ko-kr |
+|立陶宛文 | 淺色 |
+|拉脫維亞文 | 低壓 |
+|荷蘭文 | 吧 |
+|挪威文 | 否 |
+|波蘭文 | Pl |
+|巴西 ( 葡萄牙文)  | 鉑 |
+|葡萄牙文 (葡萄牙) | pt-pt |
+|羅馬尼亞文 | Ro |
+|俄文 | 如 |
+|斯洛伐克文 | Sk |
+|斯洛維尼亞文 | sl |
+|塞爾維亞文 (斯拉夫)  | sr-1 cyrl |
+|Serbian Latin | 鍶 |
+|瑞典文 | Sv |
+|泰文 | k |
+|土耳其文 | Tr |
+|烏克蘭文 | 英國 |
+|越南文 | 六 |
+|Chinese Simplified | zh-cn-hans |
+|Chinese Traditional | zh-cn-hant |
+  

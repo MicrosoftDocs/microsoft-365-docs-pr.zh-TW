@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表單處理
-ms.openlocfilehash: 84aeb7c4e3fc850e5e4c2336e576ff3bce3ecf4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e3cf8298a2db9383e5b88dde737efc84e75c7f19
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928305"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222254"
 ---
 # <a name="form-processing-overview"></a>表單處理概觀
 
@@ -30,7 +30,7 @@ Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI Builder](/ai-builder/
 組織通常從各種來源收到大量發票，如郵件、傳真、電子郵件等。處理這些文件並將其手動輸入資料庫可能需要相當長的時間。 透過使用 AI 來擷取文件中的文字、鑰匙/值對和表格，表單處理就能自動化這個流程。 
 
 > [!NOTE]
-> 如需有關表單處理案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](./adoption-getstarted.md#form-processing-scenario-example)。
+> 如需有關表單處理案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](./adoption-getstarted.md)。
 
 例如，可以建立一個識別上傳到文件庫的所有採購訂單文件的表單處理模型。 然後，您可以從每個採購訂單中擷取並顯示對您很重要的特定資料，例如 *採購單號*、*日期* 或 *總成本*。
 
@@ -40,7 +40,7 @@ Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI Builder](/ai-builder/
 
 訓練併發布模型之後，您的模型會建立 [Power Automate 流程](/power-automate/getting-started)。 文件上傳至 SharePoint 文件庫時，將執行流程，並擷取在模型中識別的資料。 擷取的資料會顯示在模型文件庫檢視中的欄中。
 
-Office 365 系統管理員需要為 SharePoint 文件庫[啟用表單處理](./set-up-content-understanding.md#to-set-up-content-understanding)，以便用戶能够在其中[建立表單處理模型](create-a-form-processing-model.md)。 您可以在設定期間選取網站，或之後在管理設定中進行設定。
+Office 365 系統管理員需要為 SharePoint 文件庫[啟用表單處理](./set-up-content-understanding.md)，以便用戶能够在其中[建立表單處理模型](create-a-form-processing-model.md)。 您可以在設定期間選取網站，或之後在管理設定中進行設定。
 
 ### <a name="file-limitations"></a>檔案限制
 

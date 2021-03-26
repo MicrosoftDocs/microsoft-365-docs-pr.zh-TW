@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 瞭解如何使用 Office 365 內容傳遞網路 (CDN) 以加速 SharePoint 線上資產的傳遞。
-ms.openlocfilehash: 6b740fc1429613627e0597dc6ecf2e150c015989
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17c80b8718ea46c9dfba9f803093974e8ce3e706
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924813"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222680"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>使用 Office 365 內容傳遞網路 (CDN) 搭配 SharePoint Online
 
@@ -888,7 +888,7 @@ spo cdn set --type Public --enabled false
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> 一般說來，您不應該直接對 CDN 中的資產進行硬編碼 URLs。 不過，您可以視需要，以手動方式為公用來源中的資產建立 URLs。 如需詳細資訊，請參閱 [HARDCODING CDN URLs 的公開資產](use-microsoft-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets)。
+> 一般說來，您不應該直接對 CDN 中的資產進行硬編碼 URLs。 不過，您可以視需要，以手動方式為公用來源中的資產建立 URLs。 如需詳細資訊，請參閱 [HARDCODING CDN URLs 的公開資產](use-microsoft-365-cdn-with-spo.md)。
 
 若要瞭解如何驗證資產是否從 CDN 服務，請參閱如何在[疑難排解 Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)一節中，[確認 CDN 是由 cdn 所服務](use-microsoft-365-cdn-with-spo.md#CDNConfirm)。
 

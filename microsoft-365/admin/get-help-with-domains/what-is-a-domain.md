@@ -22,12 +22,13 @@ description: 瞭解網域的定義，以及如何購買網域，或使用貴公�
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 9afc38aeda32870a248212f7b67f2fb4af8fd960
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 2527389634cda9912f45ecdcd3213f7d987b7bb8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658072"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221868"
 ---
 # <a name="what-is-a-domain"></a>何謂網域？
 

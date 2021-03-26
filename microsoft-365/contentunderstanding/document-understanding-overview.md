@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 取得 Microsoft SharePoint Syntex 中文件瞭解的概覽。
-ms.openlocfilehash: e3b239260953837f70663bb6f7e2dba1676c49eb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 73e217e458fb9e1ccad8b64ffc81a6c9522a04f4
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911195"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222752"
 ---
 # <a name="document-understanding-overview"></a>文件瞭解概觀
 
@@ -31,7 +31,7 @@ ms.locfileid: "50911195"
 文件瞭解使用人工智慧 (AI) 模型來自動分類檔案及擷取資訊。 它最適用於非結構化文件，如信件或合约。 這些文件必須具有可根據片語或模式識別的文字。 所識別的文字指定了檔案的類型（它的分類）和您想要擷取的內容（它的擷取器）。
 
 > [!NOTE]
-> 如需有關文件瞭解案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](./adoption-getstarted.md#document-understanding-scenario-example)。
+> 如需有關文件瞭解案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](./adoption-getstarted.md)。
 
 文件瞭解模型是在一種稱為 *内容中心* 的 SharePoint 網站中建立和管理的。 當套用至 SharePoint 文件庫時，模型與一個具有存儲所擷取資訊的欄的內容類型相關聯。 您建立的內容類型儲存在 SharePoint 內容類型庫中。 您也可以選擇使用現有內容類型來使用其架構。
 

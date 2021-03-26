@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 瞭解如何在 Microsoft 365 for business 訂閱中重設使用者的密碼。
-ms.openlocfilehash: 985b9fbae68f12c3f6a23fe8a3e1add4a86df716
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: da2f2b7aced29cd121f7d597af5a518462d2623d
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903697"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222048"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -40,7 +40,7 @@ ms.locfileid: "50903697"
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../admin-overview/admin-overview.md)
+本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
 
 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
 

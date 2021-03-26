@@ -22,12 +22,12 @@ search.appverid:
 description: 使用您的國家或地區所列的電話號碼，或提交線上服務要求，以取得技術和帳單支援。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e355a07584d45a85c363956d1bb4e45eae708be
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907035"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222036"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>連絡商務產品客戶支援的方式 - 系統管理說明
 
@@ -42,7 +42,7 @@ ms.locfileid: "50907035"
 
 線上開始您的服務要求以節省時間。 我們將協助您找到解決方案或為您提供技術支援。
 
-1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 如果您收到訊息說明您沒有權限存取此頁面或執行此動作，則您不是系統管理員。[誰擁有公司的系統管理員權限？](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 如果您收到訊息說明您沒有權限存取此頁面或執行此動作，則您不是系統管理員。[誰擁有公司的系統管理員權限？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)
 
 2. 選取 [需要協助嗎?] 按鈕。
 

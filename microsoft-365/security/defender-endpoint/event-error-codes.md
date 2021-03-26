@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 98c0f790c228989b261b95f3b87cdc9d18e4fa76
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060552"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222647"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>使用事件檢視器審閱事件和錯誤
 
@@ -38,7 +38,7 @@ ms.locfileid: "51060552"
 
 您可以在個別裝置的 [事件檢視器](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) 中審閱事件 IDs。
 
-例如，如果裝置未出現在 [裝置] **清單** 中，您可能需要在裝置上尋找事件 IDs。 您可以使用此表格來決定進一步的疑難排解步驟。
+例如，如果裝置未出現在 [ **裝置] 清單** 中，您可能需要在裝置上尋找事件 IDs。 您可以使用此表格來決定進一步的疑難排解步驟。
 
 **開啟事件檢視器，並尋找 Microsoft Defender for Endpoint service 事件記錄檔：**
 
@@ -57,14 +57,14 @@ ms.locfileid: "51060552"
 <tbody style="vertical-align:top;">
 <tr>
 <th>事件識別碼</th>
-<th>郵件</th>
+<th>訊息</th>
 <th>描述</th>
 <th>動作</th>
 </tr>
 <tr>
 <td>1</td>
 <td>Microsoft Defender for Endpoint service 已開始 (版本 <code>variable</code>) 。</td>
-<td>在系統啟動、關機及 onbboarding 期間發生。</td>
+<td>發生于系統啟動、關機和上架期間。</td>
 <td>正常運作通知;不需要任何動作。</td>
 </tr>
 <tr>
@@ -96,7 +96,7 @@ ms.locfileid: "51060552"
 <tr>
 <td>6 </td>
 <td>Microsoft Defender for Endpoint service 未架，且找不到任何上架參數。</td>
-<td>裝置上架不正確，不會向入口網站回報。</td>
+<td>裝置沒有正確板載，而且不會向入口網站回報。</td>
 <td>在啟動服務之前，必須先執行上架。<br>
 檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
 請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
@@ -104,7 +104,7 @@ ms.locfileid: "51060552"
 <tr>
 <td>7 </td>
 <td>Microsoft Defender for Endpoint service 無法讀取上架參數。 失敗： <code>variable</code> 。</td>
-<td>Variable = 詳細的錯誤描述。 裝置上架不正確，不會向入口網站回報。</td>
+<td>Variable = 詳細的錯誤描述。 裝置沒有正確板載，而且不會向入口網站回報。</td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
 請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
@@ -119,14 +119,14 @@ ms.locfileid: "51060552"
 <tr>
 <td>9 </td>
 <td>Microsoft Defender for Endpoint service 無法變更其啟動類型。 失敗代碼： <code>variable</code> 。</td>
-<td><b>在上架期間：</b> 裝置上架不正確，不會向入口網站回報。 <br><br><b>脫離時：</b> 無法變更服務啟動類型。 脫離處理常式會繼續進行。 </td>
+<td><b>在上架期間：</b> 裝置沒有正確板載，而且不會向入口網站回報。 <br><br><b>脫離時：</b> 無法變更服務啟動類型。 脫離處理常式會繼續進行。 </td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
 請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
 <td>10 </td>
 <td>Microsoft Defender for Endpoint service 無法保留上架資訊。 失敗代碼： <code>variable</code> 。</td>
-<td>裝置上架不正確，不會向入口網站回報。</td>
+<td>裝置沒有正確板載，而且不會向入口網站回報。</td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
 請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
@@ -186,7 +186,7 @@ ms.locfileid: "51060552"
 <tr>
 <td>0.25</td>
 <td>Microsoft Defender for Endpoint service 無法重設登錄中的健康狀態。 失敗代碼： <code>variable</code> 。</td>
-<td>裝置上架不正確。
+<td>裝置沒有正確板載。
 它會向入口網站回報，但服務可能不會顯示在 SCCM 或登錄中的註冊。</td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
 請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
@@ -194,7 +194,7 @@ ms.locfileid: "51060552"
 <tr>
 <td>得到</td>
 <td>Microsoft Defender for Endpoint service 無法在登錄中設定上架狀態。 失敗代碼： <code>variable</code> 。</td>
-<td>裝置上架不正確。<br>
+<td>裝置沒有正確板載。<br>
 它會向入口網站回報，但服務可能不會顯示在 SCCM 或登錄中的註冊。</td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
 請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
@@ -341,6 +341,270 @@ ms.locfileid: "51060552"
 <td>無法將提供者新增至 ETW 會話。 因此，不會報告提供者事件。</td>
 <td>檢查錯誤碼。 如果此錯誤仍然存在，請聯繫支援人員。</td>
 </tr>
+</tr>
+<tr>
+   <td>49</td>
+   <td>接收和忽略的雲端設定命令無效。 版本： %1，狀態： %2，錯誤碼： %3，郵件： %4</td>
+   <td>從已忽略的雲端服務接收到不正確設定檔。</td>
+   <td>如果此錯誤仍然存在，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>50</td>
+   <td>已成功套用新的雲端設定。 版本： %1。</td>
+   <td>已成功從雲端服務套用新設定。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>51</td>
+   <td>無法套用新的雲端設定，版本： %1。 已成功套用最後一個已知良好的設定，版本 %2。</td>
+   <td>從雲端服務接收到錯誤的設定檔。 已成功套用上一個正確的設定。</td>
+   <td>如果此錯誤仍然存在，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>52</td>
+   <td>無法套用新的雲端設定，版本： %1。 也無法套用最後一個已知良好的設定，版本 %2。 已成功套用預設設定。</td>
+   <td>從雲端服務接收到錯誤的設定檔。 無法套用最近一次的正確設定，且已套用預設設定。</td>
+   <td>服務會在5分鐘內嘗試下載新的設定檔。 如果您看不到事件 #50-請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>53</td>
+   <td>從持久性儲存體載入雲端設定，版本： %1。</td>
+   <td>在服務啟動時從持久性儲存體載入設定。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>55</td>
+   <td>無法建立安全的 ETW 自動記錄器。 失敗代碼： %1</td>
+   <td>無法建立安全的 ETW 記錄記錄。</td>
+   <td>重新開機裝置。 如果此錯誤仍然存在，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>56</td>
+   <td>無法移除 Secure ETW 自動記錄器。 失敗代碼： %1</td>
+   <td>無法在脫離時移除 secure ETW 會話。</td>
+   <td>聯繫支援人員。</td>
+</tr>
+<tr>
+   <td>57</td>
+   <td>出於疑難排解目的，捕獲機器的快照。</td>
+   <td>會收集調查套件（也稱為取證套件）。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>59</td>
+   <td>開始命令： %1</td>
+   <td>開始回應命令的執行。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>60</td>
+   <td>無法執行命令 %1，錯誤： %2。</td>
+   <td>無法執行回應命令。</td>
+   <td>如果此錯誤仍然存在，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>61</td>
+   <td>資料收集命令參數無效： SasUri： %1，compressionLevel： %2。</td>
+   <td>無法讀取或剖析資料收集命令引數 (不正確引數) 。</td>
+   <td>如果此錯誤仍然存在，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>62</td>
+   <td>無法啟動連線使用者體驗和遙測服務。 失敗代碼： %1</td>
+   <td>連線的使用者經驗和遙測 (diagtrack) 服務無法啟動。 不會從此機器傳送非 Microsoft Defender for Endpoint 遙測。</td>
+   <td>請參閱事件記錄檔中的更多疑難排解提示： Microsoft-Windows-UniversalTelemetryClient/Operational。</td>
+</tr>
+<tr>
+   <td>63</td>
+   <td>更新外部服務的啟動類型。 名稱： %1，實際啟動類型： %2，預期啟動類型： %3，退出程式碼： %4</td>
+   <td>更新的外部服務啟動類型。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>64</td>
+   <td>開始已停止的外部服務。 名稱： %1，退出程式碼： %2</td>
+   <td>啟動外部服務。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>65</td>
+   <td>無法載入 Microsoft Security 事件元件微篩選器驅動程式。 失敗代碼： %1</td>
+   <td>無法載入 MsSecFlt.sys 的 filesystem 微篩選器。</td>
+   <td>重新開機裝置。 如果此錯誤仍然存在，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>66</td>
+   <td>原則更新：延遲模式-%1</td>
+   <td>已更新 C&C connection frequency 原則。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>68</td>
+   <td>服務的啟動類型是意外的。 服務名稱： %1，實際啟動類型： %2，預期啟動類型： %3</td>
+   <td>意外的外部服務啟動類型。</td>
+   <td>修正外部服務啟動類型。</td>
+</tr>
+<tr>
+   <td>69</td>
+   <td>服務已停止。 服務名稱： %1</td>
+   <td>停止外部服務。</td>
+   <td>啟動外部服務。</td>
+</tr>
+<tr>
+   <td>70</td>
+   <td>原則更新：允許範例集合-%1</td>
+   <td>已更新範例集合原則。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>71</td>
+   <td>已成功執行命令： %1</td>
+   <td>已成功執行命令。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>72</td>
+   <td>嘗試傳送第一個完整的電腦設定檔報告。 結果代碼： %1</td>
+   <td>僅供參考。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>73</td>
+   <td>平臺： %1 的感知開始</td>
+   <td>僅供參考。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>74</td>
+   <td>登錄中的裝置標記超過長度限制。 標記名稱： %2。 長度限制： %1。</td>
+   <td>Device 標記超過長度限制。</td>
+   <td>使用較短的裝置標記。</td>
+</tr>
+<tr>
+   <td>81</td>
+   <td>無法建立 Windows Defender 高級威脅防護 ETW 自動記錄器。 失敗代碼： %1</td>
+   <td>無法建立 ETW 會話。</td>
+   <td>重新開機裝置。 如果此錯誤仍然存在，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>82</td>
+   <td>無法移除 Windows Defender 高級威脅防護 ETW 自動記錄器。 失敗代碼： %1</td>
+   <td>無法刪除 ETW 會話。</td>
+   <td>聯繫支援人員。</td>
+</tr>
+<tr>
+   <td>84</td>
+   <td>設定 Windows Defender 防毒程式執行模式。 強制被動模式： %1，結果代碼： %2。</td>
+   <td>設定 (主動或被動) 的 defender 執行模式。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>85</td>
+   <td>無法觸發 Windows Defender 高級威脅防護可執行檔。 失敗代碼： %1</td>
+   <td>Starring SenseIR 可執行檔失敗。</td>
+   <td>重新開機裝置。 如果此錯誤仍然存在，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>86</td>
+   <td>重新開始已停止應啟動的外部服務。 名稱： %1，退出程式碼： %2</td>
+   <td>重新開機外部服務。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>87</td>
+   <td>無法啟動外部服務。 名稱： %1</td>
+   <td>無法啟動外部服務。</td>
+   <td>聯繫支援人員。</td>
+</tr>
+<tr>
+   <td>88</td>
+   <td>重新更新外部服務的啟動類型。 名稱： %1，實際啟動類型： %2，預期啟動類型： %3，退出程式碼： %4</td>
+   <td>已更新外部服務的啟動類型。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>89</td>
+   <td>無法更新外部服務的啟動類型。 名稱： %1，實際啟動類型： %2，預期啟動類型： %3</td>
+   <td>無法更新外部服務的啟動類型。</td>
+   <td>聯繫支援人員。</td>
+</tr>
+<tr>
+   <td>90</td>
+   <td>無法設定 System Guard Runtime Monitor 以連接地理區域 %1 中的雲端服務。 失敗代碼： %2</td>
+   <td>System Guard Runtime Monitor 不會將證明資料傳送至雲端服務。</td>
+   <td>檢查註冊路徑的許可權： "HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm"。 若未發現任何問題，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>91</td>
+   <td>無法移除 System Guard Runtime Monitor 地理區域資訊。 失敗代碼： %1</td>
+   <td>System Guard Runtime Monitor 不會將證明資料傳送至雲端服務。</td>
+   <td>檢查註冊路徑的許可權： "HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm"。 若未發現任何問題，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>92</td>
+   <td>因為超過資料配額，所以停止傳送感應器網路資料配額。 會在配額週期過後繼續傳送。 狀態遮罩： %1</td>
+   <td>超過節流限制。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>93</td>
+   <td>繼續傳送感應器網路資料。 狀態遮罩： %1</td>
+   <td>繼續網路資料提交。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>94</td>
+   <td>已開始 Windows Defender 高級威脅防護可執行檔</td>
+   <td>SenseCE 可執行檔已開始。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>95</td>
+   <td>Windows Defender 高級威脅防護可執行檔已結束</td>
+   <td>SenseCE 可執行檔已結束。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>96</td>
+   <td>已呼叫 Windows Defender 高級威脅防護初始化。 結果代碼： %2</td>
+   <td>SenseCE 可執行檔叫用 MCE 初始化。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>97</td>
+   <td>DLP 案例中的雲端存在連線性問題</td>
+   <td>存在會影響 DLP 分類流程的網路連線問題。</td>
+   <td>請檢查網路連線性。</td>
+</tr>
+<tr>
+   <td>98</td>
+   <td>已還原 DLP 案例的雲端連接</td>
+   <td>已還原網路的連線，且 DLP 分類流程可以繼續。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>99</td>
+   <td>在與伺服器通訊時，感知發生下列錯誤： (% 1) 。 結果： (% 2) </td>
+   <td>發生通訊錯誤。</td>
+   <td>如需詳細資訊，請參閱事件記錄檔中的下列事件。</td>
+</tr>
+<tr>
+   <td>100</td>
+   <td>無法啟動 Windows Defender 高級威脅防護可執行檔。 失敗代碼： %1</td>
+   <td>SenseCE 可執行檔無法啟動。</td>
+   <td>重新開機裝置。 如果此錯誤仍然存在，請與支援人員聯繫。</td>
+</tr>
+<tr>
+   <td>102</td>
+   <td>Windows Defender 高級威脅防護網路偵測和回應可執行檔已開始</td>
+   <td>SenseNdr 可執行檔已開始。</td>
+   <td>正常運作通知;不需要任何動作。</td>
+</tr>
+<tr>
+   <td>103</td>
+   <td>Windows Defender 高級威脅防護網路偵測和回應可執行檔已結束</td>
+   <td>SenseNdr 可執行檔已結束。</td>
+   <td>正常運作通知;不需要任何動作。</td>
 </tr>
 </tbody>
 </table>

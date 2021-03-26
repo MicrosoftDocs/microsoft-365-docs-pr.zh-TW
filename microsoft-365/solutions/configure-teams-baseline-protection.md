@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用基準層級的保護來部署小組。
-ms.openlocfilehash: cd5a88069b9947bd4dcb01f6ca76620bb8ed9a52
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200290"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222740"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>為小組設定基準保護
 
@@ -39,7 +39,7 @@ ms.locfileid: "51200290"
 |:------|:-----------|
 |適用於 SPO、OneDrive 和 Teams 的安全附件|[安全附件](../security/office-365-security/safe-attachments.md)<br>[適用於 Office 365 的 Defender - SharePoint、OneDrive 和 Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
 |安全文件|[適用於 Office 365 的 Microsoft Defender 中的安全文件](../security/office-365-security/safe-docs.md)|
-|適用於 Teams 的安全連結|[Teams 中的 Office 365 安全連結](../security/office-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[安全連結](../security/office-365-security/safe-links.md)|
+|適用於 Teams 的安全連結|[Teams 中的 Office 365 安全連結](../security/office-365-security/safe-links.md)<br>[安全連結](../security/office-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Teams 來賓共用
 

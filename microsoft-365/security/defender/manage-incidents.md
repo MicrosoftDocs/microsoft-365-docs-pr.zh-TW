@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4e216f841c8728b1cabd98a931e7326f53344a74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3edc7e52e93bc08d46536a520bf57735983f493b
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058600"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222620"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
 
@@ -82,4 +82,4 @@ ms.locfileid: "51058600"
 新增的註解會立即顯示在窗格中。
 
 ## <a name="add-incident-tags"></a>新增事件標籤
-您可以為事件新增自訂標籤，例如使用常見特性來標記一組事件。 您可以稍後篩選包含特定標籤的所有事件的事件佇列。
+您可以將自訂標記新增至事件，例如標示具有共同特性的事件群組。 您可以稍後篩選包含特定標籤的所有事件的事件佇列。

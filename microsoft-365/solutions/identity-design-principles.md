@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: da70bbfe5c4dfa4f9eda16adec709826de1247b7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c94b387bbd73e2c4f9b3de243131ae023ddb4cb8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200014"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222522"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>至身分識別和超過-一種架構師的視點
 
@@ -231,7 +231,7 @@ Azure AD 具有詳細的 [審計及報告](/azure/active-directory/reports-monit
 
 在某種意義上，這是 Exchange 角色群組模型的演變。 不過，Exchange Online 有其自己的 [角色群組管理](/exchange/permissions-exo) 介面。 Exchange Online 中的某些角色群組會從 Azure AD 或安全性 & 合規性中心進行鎖定和管理，但其他使用者可能會有相同或類似的名稱，並在 Exchange Online 中管理 (新增至混淆) 。 建議您避免使用 Exchange Online 使用者介面，除非您需要 Exchange 管理的範圍。
 
-您無法建立自訂角色。 角色是由 Microsoft 所建立的服務所定義，而且會隨著新服務引進而成長。 這在概念上與 Azure AD 中 [的應用程式所定義的角色](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) 類似。 啟用新的服務時，通常需要建立新的角色群組，以授與或委派對這些 (的存取權，例如，「 [內幕人員風險管理](../compliance/insider-risk-management-configure.md?view=o365-worldwide#step-1-required-enable-permissions-for-insider-risk-management) 」) 。
+您無法建立自訂角色。 角色是由 Microsoft 所建立的服務所定義，而且會隨著新服務引進而成長。 這在概念上與 Azure AD 中 [的應用程式所定義的角色](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) 類似。 啟用新的服務時，通常需要建立新的角色群組，以授與或委派對這些 (的存取權，例如，「 [內幕人員風險管理](../compliance/insider-risk-management-configure.md?view=o365-worldwide) 」) 。
 
 這些角色群組也需要直接成員資格，而且不能包含 Azure AD 群組。 不幸的是，目前 Azure AD PIM 不支援這些角色群組。 就像 Azure AD 角色一樣，我一般是透過 APIs 或像 Saviynt 或其他合作夥伴的控管產品來推薦這些內容。
 

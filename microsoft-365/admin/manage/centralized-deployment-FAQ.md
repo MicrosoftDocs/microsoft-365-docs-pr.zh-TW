@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 系統管理中心，回顧有關集中式部署的常見問題解答。
-ms.openlocfilehash: 9f4841508701d4dd5878e99fcc51a436bc5824e2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06e3b7973a209cdf40446c5a9511713d779373b8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915467"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221832"
 ---
 # <a name="centralized-deployment-faq"></a>集中式部署常見問題集
 
@@ -72,7 +72,7 @@ ms.locfileid: "50915467"
 
 是。 系統管理員可以上傳新的資訊清單檔案，以支援系統管理員部署的 LOB 增益集的中繼資料變更。增益集會在下次啟動 Office 應用程式時更新。 Web 應用程式可以隨時變更。  
  
-如需詳細資訊，請參閱企業營運營運 [增益集](./manage-addins-in-the-admin-center.md#more-about-office-add-ins-security)。  
+如需詳細資訊，請參閱企業營運營運 [增益集](./manage-addins-in-the-admin-center.md)。  
 
 ## <a name="can-admins-turn-off-add-ins"></a>系統管理員是否可以關閉增益集？  
 

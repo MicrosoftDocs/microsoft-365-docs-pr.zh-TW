@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 描述文件瞭解和表單處理模型之間的差異
-ms.openlocfilehash: 9640b028e4b5a9cbd914b183e61de9b8a7ba00bc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f12cc46e1ffcbc610f50ba327e22ad46a2591521
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905787"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222266"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文件瞭解和表單處理模型之間的差異 
 
@@ -34,7 +34,7 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
 雖然這兩種模型通常用於相同用途，但以下列出的關鍵差異會影響您可以使用哪種模型。
 
 > [!NOTE]
-> 如需有關表單處理和文件瞭解案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](./adoption-getstarted.md#form-processing-scenario-example)。
+> 如需有關表單處理和文件瞭解案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](./adoption-getstarted.md)。
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>結構化、非結構化和半結構化內容

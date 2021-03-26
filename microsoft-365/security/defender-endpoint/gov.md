@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1fd128a9b734606039438db1f6d9fbc36e93a3b9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 059ff9ca6f0c93c6adbac3b1d552cbedcf308759
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199005"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222704"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>適用于美國政府客戶的 Microsoft Defender for Endpoint
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for the us the us the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the
+Microsoft Defender for the the the the the the the the the the the 政府客戶在 Azure US 政府環境中所使用的基礎技術，與 Azure 商業銀行中的 Defender for Endpoint 相同。
 
 這種服務可供 GCC、GCC 高階及 DoD 客戶使用，並以與商業性版本相同的預防、偵測、調查和修正功能為基礎。 不過，此服務的功能可用性有一些差異。
 
@@ -42,8 +42,8 @@ Microsoft Defender for the us the us the the the the the the the the the the the
 GCC | GCC High | DoD
 :---|:---|:---
 Windows 10 企業版 E5 GCC | 適用于 GCC 高版的 Windows 10 企業版 E5 | DOD 的 Windows 10 企業版 E5
-| | 適用于 GCC 高版的 Microsoft 365 E5 | 
-| | 適用于 GCC 高版的 Microsoft 365 G5 安全性 | 
+| | 適用于 GCC 高版的 Microsoft 365 E5 | Microsoft 365 G5 （DOD）
+| | 適用于 GCC 高版的 Microsoft 365 G5 安全性 | DOD 的 Microsoft 365 G5 安全性
 Microsoft Defender for Endpoint-GCC | 適用于 GCC 高版的 Microsoft Defender for Endpoint | DOD 的 Microsoft Defender 端點
 
 ### <a name="server-licensing"></a>伺服器授權
@@ -51,9 +51,6 @@ GCC | GCC High | DoD
 :---|:---|:---
 Microsoft Defender for Endpoint Server GCC | 適用于 GCC 高版的 Microsoft Defender for Endpoint Server | 用於 DOD 的 Microsoft Defender for Endpoint Server
 伺服器的 Azure Defender | 伺服器的 Azure Defender-政府 | 伺服器的 Azure Defender-政府
-
-> [!NOTE]
-> DoD 授權只會在 DoD 正式供貨時提供。
 
 <br>
 
@@ -64,7 +61,7 @@ Microsoft Defender for Endpoint Server GCC | 適用于 GCC 高版的 Microsoft D
 :---|:---
 GCC | https://gcc.securitycenter.microsoft.us
 GCC High | https://securitycenter.microsoft.us
-DoD (預覽)  | https://securitycenter.microsoft.us
+DoD | https://securitycenter.microsoft.us
 
 <br>
 
@@ -73,7 +70,7 @@ DoD (預覽)  | https://securitycenter.microsoft.us
 ### <a name="standalone-os-versions"></a>獨立作業系統版本
 支援下列作業系統版本：
 
-作業系統版本 | GCC | GCC High | DoD (預覽) 
+作業系統版本 | GCC | GCC High | DoD
 :---|:---|:---|:---
 Windows 10，version 20H2 (搭配 [KB4586853](https://support.microsoft.com/help/4586853))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 10，版本 2004 (，含 [KB4586853](https://support.microsoft.com/help/4586853))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -91,8 +88,8 @@ Windows 8.1 企業版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/che
 Windows 8 Pro | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 7 SP1 企業版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Linux | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
-macOS | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+Linux | ![否](images/svg/check-no.svg) 推出中 | ![否](images/svg/check-no.svg) 推出中 | ![否](images/svg/check-no.svg) 推出中
+macOS | ![否](images/svg/check-no.svg) 推出中 | ![否](images/svg/check-no.svg) 推出中 | ![否](images/svg/check-no.svg) 推出中
 Android | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
 iOS | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
 
@@ -105,7 +102,7 @@ iOS | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](image
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>針對伺服器使用 Azure Defender 時的作業系統版本
 [針對伺服器使用 Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp)時，可支援下列作業系統版本：
 
-作業系統版本 | GCC | GCC High | DoD (預覽) 
+作業系統版本 | GCC | GCC High | DoD
 :---|:---|:---|:---
 Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -125,14 +122,30 @@ Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/sv
 如需詳細資訊，請參閱 [Configure device proxy And Internet connectivity settings](configure-proxy-internet.md)。
 
 > [!NOTE]
-> 試算表也包含商用 URLs，請務必檢查「US .Gov」索引標籤。 <br> 篩選時，請查看標示為「US .Gov」的記錄，以及 geography 欄底下的特定雲端。
+> 試算表也包含商用 URLs，請務必檢查「US .Gov」索引標籤。
+> 
+> 篩選時，請查看標示為「US .Gov」的記錄，以及 geography 欄底下的特定雲端。
+
+### <a name="service-backend-ip-ranges"></a>服務後端 IP 範圍
+
+如果您的網路裝置不支援以 DNS 為基礎的規則，請改為使用 IP 範圍。
+
+適用于美國政府客戶的 Defender （位於 Azure US 政府環境中）是在下列地區部署的：
+
+- AzureCloud.usgovtexas
+- AzureCloud.usgovvirginia
+
+您可以在 [AZURE Ip 範圍和服務標記-美國政府雲端](https://www.microsoft.com/download/details.aspx?id=57063)中找到 azure ip 範圍。
+
+> [!NOTE]
+> 作為雲端式解決方案，IP 位址範圍可能會變更。 建議您移至以 DNS 為基礎的規則。
 
 <br>
 
 ## <a name="api"></a>API
 您必須使用下列 URIs，而不是 [API 檔](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro)中列出的公用 URIs：
 
-端點類型 | GCC |  (預覽) 的 GCC High & DoD
+端點類型 | GCC | GCC 高 & DoD
 :---|:---|:---
 登錄 | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
 適用于 Endpoint API 的 Defender | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
@@ -141,18 +154,18 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 <br>
 
 ## <a name="feature-parity-with-commercial"></a>具有商業性的功能同位
-「！的 Defender」已具備商務用產品的完整同位。 雖然我們的目標是將所有商業功能提供給我們的美國政府客戶，但仍有一些尚未提供的功能可供您選擇。
+適用于美國政府客戶的 Defender （適用于美國政府客戶）沒有完整的與商業產品的效驗。 雖然我們的目標是將所有商業功能提供給我們的美國政府客戶，但仍有一些尚未提供的功能可供您選擇。
 
-以下是2021年2月的已知空隙：
+以下是2021年3月的已知空隙：
 
-功能名稱 | GCC | GCC High | DoD (預覽) 
+功能名稱 | GCC | GCC High | DoD
 :---|:---|:---|:---
 自動化調查和修正： Live 回應 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 自動化調查和修正：回應 Office 365 警示 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
-電子郵件通知 | ![否](images/svg/check-no.svg) 正在推出 | ![否](images/svg/check-no.svg) 正在推出 | ![否](images/svg/check-no.svg) 正在推出
+電子郵件通知 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 評估實驗室 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 管理和 APIs：裝置健康情況與符合性報告 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-管理和 APIs：整合協力廠商產品 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+管理和 APIs：整合協力廠商產品 | ![否](images/svg/check-no.svg) 推出中 | ![否](images/svg/check-no.svg) 推出中 | ![否](images/svg/check-no.svg) 推出中
 管理和 APIs：資料流程 API | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 管理和 APIs：威脅防護報告 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 威脅 & 弱點管理 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
