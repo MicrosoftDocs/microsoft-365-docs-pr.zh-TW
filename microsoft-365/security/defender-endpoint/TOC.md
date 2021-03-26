@@ -33,7 +33,7 @@
 #### [階段 2：設定](mcafee-to-microsoft-defender-setup.md)
 #### [第 3 階段：導入](mcafee-to-microsoft-defender-onboard.md)
 ### [從 Symantec 切換至適用於端點的 Microsoft Defender]()
-#### [移轉概觀](symantec-to-microsoft-defender-atp-migration.md)
+#### [移轉概觀](symantec-to-microsoft-defender-endpoint-migration.md)
 #### [階段 1：準備](symantec-to-microsoft-defender-atp-prepare.md)
 #### [階段 2：設定](symantec-to-microsoft-defender-atp-setup.md)
 #### [第 3 階段：導入](symantec-to-microsoft-defender-atp-onboard.md)
@@ -115,7 +115,7 @@
 ##### [啟用受控資料夾存取權](enable-controlled-folders.md)
 ##### [自訂受控資料夾存取權](customize-controlled-folders.md)
 
-### [適用於 Mac 的 Microsoft Defender 進階威脅防護]()
+### [Mac 版適用於端點的 Microsoft Defender]()
 #### [Mac 版適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-mac.md)
 #### [新增功能](mac-whatsnew.md)
 
@@ -378,6 +378,8 @@
 ##### [正在登出裝置](offboard-machines.md)
 
 #### [設定 Microsoft Defender 資訊安全中心時區設定](time-settings.md)
+
+### [解決適用於端點的 Microsoft Defender 中的誤判](defender-endpoint-false-positives-negatives.md)
 
 ### [設定與其他 Microsoft 解決方案的整合]()
 #### [設定條件式存取](configure-conditional-access.md)

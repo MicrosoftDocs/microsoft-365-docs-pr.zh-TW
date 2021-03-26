@@ -452,7 +452,7 @@
         - name: 商務用 Skype
           href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: //MicrosoftTeams/quality-of-experience-review-guide
+          href: 'https://docs.microsoft.com/microsoftteams/upgrade-monitor-quality'
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
         - name: 效能調整
@@ -477,7 +477,11 @@
             - name: 效能疑難排解規劃
               href: performance-troubleshooting-plan.md
 - name: Windows 10
-  href: /windows/deployment/
+  items:
+    - name: 如何查看發行版本健康狀態
+      href: 'https://docs.microsoft.com/windows/deployment/update/check-release-health'
+    - name: 部署及更新
+      href: /windows/deployment/
 - name: 企業版 Microsoft 365 應用程式
   href: /deployoffice/deployment-guide-microsoft-365-apps
 - name: Surface 裝置
