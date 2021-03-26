@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 瞭解 Microsoft 365 中提供的來賓共用設定，這可能會影響與組織外部人員共用。
-ms.openlocfilehash: c87f1d0ea8a35d7685f91c1b20a709c58ec4d040
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bdb86dd7545c00f0ed24552b22062a983e450b47
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920213"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215561"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 來賓共用設定參考
 
@@ -35,7 +35,7 @@ ms.locfileid: "50920213"
 Azure Active Directory 是 Microsoft 365 所使用的目錄服務。 Azure Active Directory 組織關聯性設定會直接影響 Teams、Microsoft 365 群組、SharePoint 和 OneDrive 中的共用。
 
 > [!NOTE]
-> 這些設定只有在已設定 [SharePoint 和 OneDrive 整合搭配 Azure AD B2B (預覽)](/sharepoint/sharepoint-azureb2b-integration-preview) 時才會影響 SharePoint。 下表假設已進行此設定。
+> 這些設定只有在已設定 [SharePoint 和 OneDrive 整合搭配 Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) 時才會影響 SharePoint。 下表假設已進行此設定。
 
 ### <a name="organizational-relationships-settings"></a>組織關聯性設定
 
@@ -43,7 +43,7 @@ Azure Active Directory 是 Microsoft 365 所使用的目錄服務。 Azure Activ
 
 ![Azure Active Directory 組織關聯性設定頁面的螢幕擷取畫面](../media/azure-ad-organizational-relationships-settings.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |來賓使用者權限受限|是|此設定會影響來賓可以執行的目錄工作。|
 |系統管理員與來賓邀請者角色中的使用者可以邀請|是|設為 [是] 時，系統管理員可以透過 Azure AD 和透過 Microsoft 365 共用體驗 (例如 Teams 和 SharePoint) 邀請來賓；設為 [否] 時則無法。|
@@ -66,7 +66,7 @@ Microsoft 365 系統管理中心有用於共用和用於 Microsoft 365 群組的
 
 ![Microsoft 365 系統管理中心的安全性與隱私權來賓共用設定的螢幕擷取畫面](../media/sharepoint-security-privacy-sharing-setting.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |讓使用者將新的來賓新增到組織|開啟|設為 [是] 時，Azure AD 成員可以透過 Azure AD 邀請來賓；設為 [否] 時，則無法邀請。 設為 [是] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓；設為 [否] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓，但擁有者必須是全域系統管理員，才能進行核准。 <br><br>請注意，**成員可以邀請** 是指 Azure AD 中的成員 (相對於來賓)，而非 Microsoft 365 中的網站或群組成員。 <br><br>這與 Azure Active Directory 組織關聯性設定中的 [成員可以邀請] 設定完全相同。|
 
@@ -76,7 +76,7 @@ Microsoft 365 系統管理中心有用於共用和用於 Microsoft 365 群組的
 
 ![Microsoft 365 系統管理中心中 Microsoft 365 群組來賓設定的螢幕擷取畫面](../media/office-365-groups-guest-settings.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |讓貴組織外部的群組成員存取群組內容|開啟|設為 [開啟] 時，來賓可以存取群組內容；設為 [否] 時，則無法存取。 針對來賓會與 Microsoft 365 群組或 Teams 互動的案例，此設定應該為 **[開啟]**。|
 |讓群組擁有者將貴組織外部的人員新增到群組|開啟|[開啟] 時，Microsoft 365 群組或 Teams 的擁有者可以邀請新來賓加入群組。 [關閉] 時，擁有者只能邀請已在目錄中的來賓。|
@@ -95,7 +95,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 ![Teams 來賓存取切換的螢幕擷取畫面](../media/teams-guest-access-toggle.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |在 Teams 中允許來賓存取|關閉|為 Teams 整體開啟或關閉來賓存取。 一旦變更，此設定可能需要 24 小時才會生效。|
 
@@ -105,7 +105,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 ![Teams 來賓呼叫選項的螢幕擷取畫面](../media/teams-guest-calling-setting.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |進行私人通話|開啟|[開啟] 時，來賓可以在 Teams 中進行點對點呼叫；[關閉] 時則無法。|
 
@@ -115,7 +115,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 ![Teams 來賓會議設定的螢幕擷取畫面](../media/teams-guest-meeting-settings.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |允許 IP 視訊|開啟|[開啟] 時，來賓可以在通話與會議中使用影片；[關閉] 時則無法。|
 |螢幕畫面分享模式|整個螢幕|[已停用] 時，來賓無法在 Teams 中共用螢幕畫面。 設為 [單一應用程式] 時，來賓只可以在其螢幕上共用單一應用程式。 設為 [整個螢幕] 時，來賓可以選擇共用應用程式或其整個螢幕。|
@@ -127,7 +127,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 ![Teams 來賓訊息設定的螢幕擷取畫面](../media/teams-guest-messaging-settings.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |編輯已傳送的訊息|開啟|[開啟] 時，來賓可以編輯其之前傳送的郵件；[關閉] 時則無法。|
 |刪除已傳送的訊息|開啟|[開啟] 時，來賓可以刪除其之前傳送的郵件；[關閉] 時則無法。|
@@ -152,7 +152,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 ![SharePoint 組織層級共用設定的螢幕擷取畫面](../media/sharepoint-organization-external-sharing-controls.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |SharePoint|任何人|指定對 SharePoint 網站允許的最寬鬆共用權限。|
 |OneDrive|任何人|指定對 OneDrive 網站允許的最寬鬆共用權限。 此設定不能較 SharePoint 設定更寬鬆。|
@@ -163,7 +163,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 ![SharePoint 組織層級其他共用設定的螢幕擷取畫面](../media/sharepoint-organization-advanced-sharing-settings.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |依網域限制外部共用|關閉|此設定可讓您針對共用指定允許或封鎖的網域清單。 指定允許的網域時，則只可以將共用邀請傳送至這些網域。 指定拒絕的網域時，則無法將共用邀請傳送至這些網域。<br><br> 此設定會影響組織中的所有 SharePoint 和 OneDrive 網站。|
 |來賓必須使用傳送共用邀請的相同帳戶登入|關閉|防止來賓使用與邀請所傳送對象不同的電子郵件地址兌換網站共用邀請。<br><br>[SharePoint 和 OneDrive 整合搭配 Azure AD B2B (預覽)](/sharepoint/sharepoint-azureb2b-integration-preview) 不會使用此設定，因為所有來賓都會根據傳送邀請的目標電子郵件地址新增至目錄。 備用電子郵件地址無法用來存取網站。|
@@ -177,7 +177,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 ![SharePoint 組織層級檔案和資料夾共用設定的螢幕擷取畫面](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |檔案與資料夾連結|擁有連結的任何人|指定當使用者共用檔案或資料夾時，預設要顯示的共用連結。 使用者可以於共用之前變更選項 (如果想要)。 如果預設值設為 [擁有連結的任何人]，並且對特定網站不允許 [任何人] 共用，那麼，[只有貴組織中的人員] 將顯示為該網站的預設值。|
 |這些連結必須在此天數內過期|關閉 (無到期日)|指定建立 [任何人] 連結後，其到期的天數。 無法更新到期的連結。 若要在超過到期日時繼續共用，請建立新連結。|
@@ -192,7 +192,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 ![SharePoint 組織層級共用安全性群組設定的螢幕擷取畫面](../media/sharepoint-organization-external-sharing-security-groups.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |只讓所選安全性群組中的使用者與已驗證的外部使用者共用|關閉|**[開啟]** 時，只有特定安全組中的人員才能與組織外部的人員共用。 只有 *特定人員* 連結可供使用。 除非 [只有所選安全性群組中的使用者可以與已驗證之外部使用者和使用匿名連結的使用者進行共用] 也為 [開啟]，否則會停用 [任何人] 共用|
 |只有所選安全性群組中的使用者可以與已驗證之外部使用者和使用匿名連結的使用者進行共用|關閉|[開啟] 時，只有在特定安全性群組中的人員可以與來賓共用。 [任何人] 和 [特定人員] 連結都可供使用。|
@@ -215,7 +215,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 ![SharePoint 網站外部共用設定的螢幕擷取畫面](../media/sharepoint-site-external-sharing-settings.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |網站內容可以與誰共用|因網站類型而異 (請參閱下表)|表示對此網站允許的外部共用類型。 此處可用的選項取決於 SharePoint 的組織層級共用設定。|
 
@@ -227,7 +227,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 ![SharePoint 網站層級共用設定的螢幕擷取畫面](../media/sharepoint-site-link-sharing-settings.png)
 
-|**設定**|**預設值**|**描述**|
+| 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
 |依網域限制共用|關閉|此設定可讓您針對共用指定允許或封鎖的網域清單。 指定允許的網域時，則只可以將共用邀請傳送至這些網域。 指定拒絕的網域時，則無法將共用邀請傳送至這些網域。<br><br> 此設定不能用來覆寫在組織或 Azure AD 層級設定的網域限制。|
 |預設的共用連結類型|與組織層級設定相同|此設定可讓您指定要向此網站中使用者顯示的預設共用連結。 [與組織層級設定相同] 選項，是透過組織和網站共用設定的組合定義。|
@@ -238,7 +238,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 下表顯示每個網站類型的預設共用設定的。
 
-|**網站類型**|**預設共用設定**|
+| 網站類型 | 預設共用設定 |
 |:-----|:-----|
 |傳統|**只有貴組織中的人員**|
 |OneDrive|**任何人**|

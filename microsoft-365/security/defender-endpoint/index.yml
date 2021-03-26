@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft Defender for Endpoint 檔
-summary: Microsoft Defender for Endpoint 提供預防性保護、入侵後偵測、自動調查和回應。
+title: 適用於端點的 Microsoft Defender 文件
+summary: 適用於端點的 Microsoft Defender 提供預防性保護、入侵後偵測、自動調查及回應。
 metadata:
-  title: Microsoft Defender for Endpoint 檔
-  description: '深入瞭解 Microsoft Defender for Endpoint，並最大化內建的安全性功能來保護裝置、偵測惡意活動，並修正威脅 # Required;搜尋結果中顯示的文章描述。 < 160 個字元。'
+  title: 適用於端點的 Microsoft Defender 文件
+  description: 了解適用於端點的 Microsoft Defender，並最大化內建安全性功能來保護裝置、偵測惡意活動，並補救威脅#必要項；顯示在搜尋結果中的文章描述。 < 160 個字元。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: efa23f4c40021d95185203c22c8bba5009e15f2f
   ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 03/24/2021
   ms.locfileid: "51185740"
@@ -28,17 +28,17 @@ landingContent:
       url: microsoft-defender-endpoint.md
   - linkListType: whats-new
     links:
-    - text: Microsoft Defender for Endpoint 中的新功能
+    - text: 適用於端點的 Microsoft Defender 新功能
       url: whats-new-in-microsoft-defender-atp.md
   - linkListType: video
     links:
-    - text: 概述影片
+    - text: 概觀影片
       url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
-- title: 評估部署服務的 &
+- title: 評估和部署服務
   linkLists:
   - linkListType: get-started
     links:
-    - text: 評估 Microsoft Defender for Endpoint
+    - text: 評估適用於端點的 Microsoft Defender
       url: evaluation-lab.md
     - text: 規劃您的部署
       url: deployment-strategy.md
@@ -46,7 +46,7 @@ landingContent:
     links:
     - text: 部署指南
       url: deployment-phases.md
-    - text: 上架支援的裝置
+    - text: 將支援的裝置上線
       url: onboard-configure.md
   - linkListType: how-to-guide
     links:
@@ -54,7 +54,7 @@ landingContent:
       url: migration-guides.md
   - linkListType: video
     links:
-    - text: 上架影片
+    - text: 上線影片
       url: https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr
 - title: 安全性作業
   linkLists:
@@ -62,9 +62,9 @@ landingContent:
     links:
     - text: 端點偵測及回應
       url: overview-endpoint-detection-response.md
-    - text: Behavioural 封鎖和包含專案
+    - text: 行為封鎖和包含專案
       url: behavioral-blocking-containment.md
-    - text: '自動調查和回應 (AIR) '
+    - text: 自動調查及回應 (AIR)
       url: automated-investigations.md
     - text: 進階搜捕
       url: advanced-hunting-overview.md
@@ -72,23 +72,23 @@ landingContent:
       url: microsoft-threat-experts.md
     - text: 威脅分析
       url: threat-analytics.md
-- title: 在其他平臺上使用 Microsoft Defender for Endpoint
+- title: 在其他平台上使用適用於端點的 Microsoft Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: Mac 版端點的 Microsoft Defender
+    - text: Mac 版適用於端點的 Microsoft Defender
       url: microsoft-defender-endpoint-mac.md
-    - text: 用於 iOS 的 Microsoft Defender for Endpoint
+    - text: iOS 版適用於端點的 Microsoft Defender
       url: microsoft-defender-endpoint-ios.md
-    - text: 適用于 Linux 的 Microsoft Defender for Endpoint
+    - text: Linux 版適用於端點的 Microsoft Defende
       url: microsoft-defender-endpoint-linux.md
-    - text: 適用于 Android 的 Microsoft Defender Endpoint
+    - text: Android 版適用於端點的 Microsoft Defender
       url: microsoft-defender-endpoint-android.md
 - title: 參考資料
   linkLists:
   - linkListType: reference
     links:
-    - text: 管理和 APIs
+    - text: 管理與 API
       url: management-apis.md
     - text: 合作夥伴整合
       url: partner-integration.md
@@ -96,9 +96,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 威脅 & 弱點管理
+    - text: 威脅與漏洞管理
       url: next-gen-threat-and-vuln-mgt.md
-    - text: 受攻擊面縮小
+    - text: 攻擊面縮小
       url: overview-attack-surface-reduction.md
-    - text: 下一代保護
+    - text: 新一代保護技術
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
