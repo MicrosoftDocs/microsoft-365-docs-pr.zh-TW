@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8080a282ef734490214dc5f2b9e18a1946b314c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f670a3cdefb7b6cd78d24a17fc2e6276274efff3
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185824"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222416"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容
 
@@ -228,21 +228,21 @@ ms.locfileid: "51185824"
 ## <a name="let-users-assign-permissions"></a>讓使用者指派權限
 
 > [!IMPORTANT]
-> 並非所有的標籤用戶端都支援讓使用者指派自己權限的所有選項。 使用本章節深入瞭解。
+> 並非所有的標籤用戶端都支援讓使用者自行指派權限的所有選項。 使用本章節深入瞭解。
 
 您可以使用下列選項讓使用者在手動將敏感度標籤套用至內容時指派權限：
 
-- 在 Outlook 中，使用者可以針對所選的收件者選取等同於[不可轉寄](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)選項或[僅加密](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) (目前正在推出) 的限制。
+- 在 Outlook 中，使用者可以針對所選的收件者選取等同於 [[不可轉寄]](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) 選項或 [[僅加密]](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) 的限制。
     
-    所有支援敏感度標籤的電子郵件客戶都支援 [不可轉寄] 選項。 不過，使用敏感度標籤套用 **僅加密** 選項是最新的發行版本，僅支援內建標籤，且不支援 Azure 資訊保護統一標籤用戶端。 對於不支援此功能的電子郵件客戶客戶，將不會顯示標籤。
+    所有支援敏感度標籤的電子郵件用戶端都支援 [不可轉寄] 選項。 不過，使用敏感度標籤套用 **[僅加密]** 選項是一款新發行版本的做法，該版本僅支援內建標籤，且不支援 Azure 資訊保護統一標籤用戶端。 對於不支援此功能的電子郵件用戶端，將不會顯示標籤。
     
-    若要檢查哪些使用內建標籤的 Outlook 應用程式支援將僅加密選項與敏感度標籤一併使用，請使用 [Outlook 的 功能表格](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) 和列 **讓使用者指派權限： - 僅加密**。
+    若要檢查哪些使用內建標籤的 Outlook 應用程式支援將僅加密選項與敏感度標籤一併使用，請使用 [Outlook 的 功能表格](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook)和 **[讓使用者指派權限：- 僅加密]** 列。
 
 - 在 Word、PowerPoint 和 Excel 中，系統會提示使用者為特定使用者、群組或組織選取其自己的權限。
 
-    此選項受 Azure 資訊保護整合標籤用戶端和部分使用內建標籤的應用程式支援。 對於不支援此功能的應用程式，該標籤將不會顯示給使用者，或為顯示一致的標籤，但無法在套用時為使用者提供說明訊息。
+    此選項受 Azure 資訊保護整合標籤用戶端和部分使用內建標籤的應用程式支援。 對於不支援此功能的應用程式，該標籤不會對使用者顯示，或也可能為維持一致性而顯示，但無法在套用時為使用者提供說明訊息。
     
-    若要檢查哪些應用程式使用內建標籤支援此選項，請使用 [Word、Excel 和 PowerPoint 的功能表格](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)，以及列 **讓使用者指派權限： - 提示使用者**。
+    若要檢查哪些應用程式使用內建標籤支援此選項，請使用 [Word、Excel 和 PowerPoint 的功能表格](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)，以及 **[讓使用者指派權限：- 提示使用者]** 列。
 
 支援這些選項時，請使用下表來識別使用者何時可看到敏感度標籤：
 
@@ -261,7 +261,7 @@ ms.locfileid: "51185824"
 
 ### <a name="outlook-restrictions"></a>Outlook 限制
 
-在 Outlook 中，當使用者套用的敏感標籤可允許他們指派郵件的權限時，您可選擇 **[不可轉寄] 選項** 或 **[僅加密]**。 使用者會在郵件頂端看到標籤名稱和描述，指出內容已受到保護。 與 Word、PowerPoint 和 Excel 不同的是 (請參閱[下一節](#word-powerpoint-and-excel-permissions))，使用者不會收到選取特定權限的提示。
+在 Outlook 中，當使用者套用的敏感標籤可允許他們指派郵件的權限時，您可選擇 **[不可轉寄]** 選項或 **[僅加密]**。 使用者會在郵件頂端看到標籤名稱和描述，指出內容已受到保護。 與 Word、PowerPoint 和 Excel 不同的是 (請參閱[下一節](#word-powerpoint-and-excel-permissions))，使用者不會收到選取特定權限的提示。
 
 ![套用至 Outlook 郵件的敏感度標籤](../media/sensitivity-label-outlook-protection-applied.png)
 
@@ -269,11 +269,11 @@ ms.locfileid: "51185824"
 
 - **不可轉寄**：收件者無法轉寄、列印或複製電子郵件。 例如，在 Outlook 用戶端中，無法使用 [轉寄] 按鈕、[另存新檔] 和 [列印] 功能表選項，且您無法在 [收件人]、[副本] 或 [密件副本] 方塊中新增或變更收件者。
     
-    若需更多資訊說明此選項運作的方式，請參閱 [電子郵件的不可轉寄選項](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)。
+    若需更多資訊說明此選項運作的方式，請參閱[電子郵件的不可轉寄選項](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)。
 
-- **僅加密**：收件者擁有除了另存新檔、匯出及完全控制以外的所有使用權利。 此使用權利的組合表示收件者沒有限制，除非他們無法移除保護。 例如，收件者可以從電子郵件複製、列印，然後轉轉。
+- **僅加密**：收件者擁有除了另存新檔、匯出及完全控制以外的所有使用權利。 此使用權利的組合表示收件者沒有限制，除非他們無法移除保護。 例如，收件者可以從電子郵件複製、列印，然後轉寄。
     
-    若需更多資訊說明此選項運作的方式，請參閱 [電子郵件的僅加密選項](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)。
+    若需更多資訊說明此選項運作的方式，請參閱[電子郵件的僅加密選項](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)。
 
 附加到電子郵件的未加密 Office 文件會自動繼承相同的限制。 針對 [不可轉寄]，套用至這些文件的使用權限是 [編輯內容]、[編輯]；[儲存]；[檢視]、[開啟]、[讀取]；和 [允許巨集]。 如果使用者想要不同的附件使用權限，或者附件不是支援此繼承保護的 Office 文件，則使用者需要在將檔案附加到電子郵件之前加密該檔案。
 
