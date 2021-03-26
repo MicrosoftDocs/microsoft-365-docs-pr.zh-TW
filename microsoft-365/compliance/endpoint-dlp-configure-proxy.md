@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何為端點 DLP 設定裝置 Proxy 和網際網路連線設定。
-ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907003"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199272"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>為端點 DLP 設定裝置 Proxy 和網際網路連線設定
 
@@ -96,7 +96,7 @@ WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 
 
 如果 Proxy 或防火牆在預設情況下封鎖所有流量，並且只允許特定網域通過，請將可下載工作表中列出的網域新增到允許的網域清單中。
 
-此[可下載的試算表](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)列出了網路必須能夠連線至的服務及其關聯的 URL。 應該確保沒有防火牆或網路篩選規則會拒絕存取這些 URL，或者可能需要專門為它們建立允許規則。
+此[可下載的試算表](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)列出了網路必須能夠連線至的服務及其關聯的 URL。 應該確保沒有防火牆或網路篩選規則會拒絕存取這些 URL，或者可能需要專門為它們建立允許規則。
 
 如果 Proxy 或防火牆啟用了 HTTPS 掃描 (SSL 檢查)，則從 HTTPS 掃描中排除上表中列出的網域。
 如果 Proxy 或防火牆封鎖匿名流量，因為端點 DLP 是從系統内容連線的，請確保前面列出的 URL 中允許匿名流量。
@@ -123,7 +123,7 @@ WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 
 
 6.  開啟 **MDATPClientAnalyzerResult.txt** 並驗證是否已執行 Proxy 設定步驟以啟用伺服器發現和對服務 URL 的存取。  該工具檢查適用於端點的 Defender 用戶端設定為與之互動的適用於端點的 Defender 服務 URL 的連線性。 然後，它將結果列印到每個可能用於與適用於端點的 Defender 服務進行通訊之 URL 的 **MDATPClientAnalyzerResult.txt** 文件中。 例如：
 
-    **測試 URL：https://xxx.microsoft.com/xxx</br>1 - 預設 Proxy：成功 (200) </br>2 - Proxy自動發現 (WPAD)：成功 (200) </br> 3 - 停用 Proxy：成功 (200) </br> 4 - 命名的 Proxy：不存在 </br> 5 - 命令列 Proxy：不存在**</br>
+    **測試 URL：https://xxx.microsoft.com/xxx</br>1 - 預設 Proxy：成功 (200) </br>2 - Proxy 自動探索 (WPAD)：成功 (200) </br> 3 - 停用 Proxy：成功 (200) </br> 4 - 指定的 Proxy：不存在 </br> 5 - 命令列 Proxy：不存在**</br>
 
 
 如果至少有一個連線選項退回 (200) 適用於端點的 Defender 用戶端可以使用此連線方法與測試的 URL 正確通訊。 
