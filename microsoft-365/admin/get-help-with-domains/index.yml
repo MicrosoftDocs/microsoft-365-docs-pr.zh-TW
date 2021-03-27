@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: 管理網域
+summary: 請使用常見的網域工作查看這些資源，或查看左邊的流覽窗格，以取得完整清單。
+metadata:
+  title: 管理網域
+  description: 在 Microsoft 365 中管理網域的各個層面。
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: pebaum
+  ms.author: pebaum
+  ms.date: 03/25/2021
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: 2ca0bc79cc70ce738603dcdb7cb09ea1d238e4c9
+  ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 03/26/2021
+  ms.locfileid: "51379704"
+landingContent:
+- title: 管理網域
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: '網域常見問題解答 (常見問題) '
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq
+  - linkListType: how-to-guide
+    links:
+    - text: 新增網域
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+    - text: 購買網域名稱
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name
+    - text: 移除網域
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/remove-a-domain
+- title: 傳輸網域
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 將網域從 Microsoft 轉接至其他主機
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host
+- title: 試驗 Microsoft 365
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 從我的自訂網域試驗 Microsoft 365
+      url: https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain
+- title: 主機指定的指示
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 在任一 DNS 主機變更名稱伺服器
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar
+    - text: 在任一 DNS 主機建立 DNS 記錄
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider
+- title: 疑難排解
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 尋找並修正新增網域或 DNS 記錄之後所發生的問題
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-and-fix-issues
