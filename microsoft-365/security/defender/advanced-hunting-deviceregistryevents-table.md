@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b9bb95f8220327e3be7cc2598f2f49fd868d1b89
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 129ed0340dc8324bfa8e68a9f5e1532f92262ac8
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057995"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382826"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -65,6 +65,12 @@ ms.locfileid: "51057995"
 | `InitiatingProcessMD5` | 字串 | 啟動事件之程式 (映射檔) 的 MD5 雜湊 |
 | `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
 | `InitiatingProcessFileSize` | long | 執行事件處理常式的檔案大小 |
+| `InitiatingProcessVersionInfoCompanyName` | string | 處理常式 (映射檔的版本資訊中) 負責事件的公司名稱 |
+| `InitiatingProcessVersionInfoProductName` | string | 處理常式 (映射檔的版本資訊中的產品名稱) 該事件的負責人 |
+|` InitiatingProcessVersionInfoProductVersion` | string |  (映射檔的版本資訊中的產品版本) 負責事件的處理常式 |
+|` InitiatingProcessVersionInfoInternalFileName` | string | 處理常式 (映射檔的版本資訊中的內部檔案名) 負責事件 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 處理常式 (映射檔的版本資訊中的原始檔案名) 負責事件。 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 處理常式 (映射檔的版本資訊的描述) 該事件的負責人 |
 | `InitiatingProcessId` | int | 啟動事件之程式的進程識別碼 (PID)  |
 | `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
 | `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |

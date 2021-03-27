@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 46efb531331cf76472c67c769c96804d11fb9e4b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d56710f4933a8971230c78d7b3570f14b9bda335
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058024"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382622"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -55,10 +55,10 @@ ms.locfileid: "51058024"
 | `AadObjectId` | string | Azure AD 中裝置的唯一識別碼 |
 | `LoggedOnUsers` | string | 以 JSON 陣列格式出現事件時，在機器上記錄的所有使用者清單 |
 | `RegistryDeviceTag` | string | 透過登錄加入的電腦標記 |
-| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
-|`AdditionalFields` | string | 有關 JSON 陣列格式之事件的其他資訊 |
 | `OSVersion` | 字串 | 電腦上執行的作業系統版本。 |
 | `MachineGroup` | 字串 | 機器的電腦群組。 這個群組是由以角色為基礎的存取控制用來判斷對機器的存取權 |
+| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
+|`AdditionalFields` | string | 有關 JSON 陣列格式之事件的其他資訊 |
 
 `DeviceInfo`表格提供以心跳方式（即來自裝置的定期報告或信號）為基礎的裝置資訊。 每十五分鐘，裝置會傳送部分心跳，其中包含經常變更的屬性，如 `LoggedOnUsers` 。 一天一次，會傳送包含裝置之屬性的完整心跳。
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a04f3be1f13fb57cd76cda7115d014f2ba3aa8d6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 670c6449c1121bc329b1dfb37cd1d9948c99a3f8
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198822"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379295"
 ---
 # <a name="create-indicators"></a>建立指示器
 
@@ -65,7 +65,7 @@ Defender for Endpoint 的雲端偵測引擎會定期掃描收集的資料，並�
 
 
 > [!NOTE]
-> 每個租使用者的指示器限制為15000。 檔案和憑證指示器不會封鎖 [為 Microsoft Defender 防病毒定義的排除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)。 Microsoft Defender 防毒軟體中不支援指示器是被動模式。 
+> 每個租使用者的指示器限制為15000。 檔案和憑證指示器不會封鎖 [為 Microsoft Defender 防病毒定義的排除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)。 Microsoft Defender 防病毒在被動模式時不支援指示器。 
 
 
 ## <a name="related-topics"></a>相關主題

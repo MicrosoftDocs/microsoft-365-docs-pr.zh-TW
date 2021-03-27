@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 83a56a74ff949b23843417942923d2b4b810b4ee
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1386809778edeb92521a8656e9ece78591a682a4
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185921"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382898"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>適用于 Mac 的 Microsoft Defender 端點隱私權
 
@@ -156,6 +156,18 @@ Microsoft Defender for Endpoint client 軟體有兩個層級的診斷資料，�
 | reason           | 更新的歸檔時的錯誤訊息。 |
 
 #### <a name="product-and-service-performance-data-events"></a>產品和服務效能資料事件
+
+**非預期的應用程式結束 (當機)**
+
+在應用程式意外退出時，收集系統資訊和應用程式的狀態。
+
+下列是收集的欄位：
+
+| 欄位                          | 描述 |
+| ------------------------------ | ----------- |
+| v1_crash_count                 | 在用戶端電腦上，V1 引擎處理常式每小時崩潰的次數  |
+| v2_crash_count                 | 在用戶端電腦上，V2 引擎處理常式每小時崩潰的次數  |
+| EDR_crash_count                | 在用戶端電腦上，EDR 處理常式每小時崩潰的次數        |
 
 **內核擴充統計資料**
 

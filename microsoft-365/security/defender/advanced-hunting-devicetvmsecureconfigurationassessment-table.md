@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cf37fe2aeac193c6b45f55fd5f5c850470ba6da4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3d991bc5e78fc7b33e20df1f86471a0969b7345f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057992"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382588"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -54,7 +54,7 @@ ms.locfileid: "51057992"
 | `IsCompliant` | 布林值 | 指出設定或原則是否已正確設定 |
 | `IsApplicable` | 布林值 | 指出設定或原則是否適用于裝置 |
 | `Context` | string | 有關設定或原則的其他相關資訊 |
-| `IsExpectedUserImpactCompliant` | 布林值 | 指出如果套用設定或原則，是否會影響使用者 |
+| `IsExpectedUserImpact` | 布林值 | 指出如果套用設定或原則，是否會影響使用者 |
 
 ## <a name="related-topics"></a>相關主題
 

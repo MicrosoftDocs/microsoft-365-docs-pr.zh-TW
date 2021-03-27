@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e511c12240512af772b3552f63ad9ed98ff105af
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a9ca0af0c522205309ffdcbfd1ac28638bd197c7
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057303"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382790"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -38,23 +38,24 @@ ms.locfileid: "51057303"
 `FileProfile()`函數是[高級搜尋](advanced-hunting-overview.md)中的豐富函數，可將下列資料新增至查詢所找到的檔案。
 
 | 欄 | 資料類型 | 描述 |
-|------------|-------------|-------------|
-| SHA1 | 字串 | 記錄動作已套用的檔案 SHA-1 |
-| SHA256 | string | 錄製的動作所套用的檔案 SHA-256 |
-| MD5 | string | 錄製的動作所套用的檔案 MD5 雜湊 |
-| FileSize | int | 檔案大小（以位元組為單位） |
-| GlobalPrevalence | int | 由 Microsoft 全域觀測的實體實例數目 |
-| GlobalFirstSeen | datetime | Microsoft 全球第一次觀測實體的日期和時間 |
-| GlobalLastSeen | datetime | Microsoft 全球最後觀測實體的日期和時間 |
-| 簽名 | string | 檔案的簽署者相關資訊 |
-| 發行者 | string | 發證憑證授權 (CA 的相關資訊)  |
-| SignerHash | string | 識別簽署者的唯一雜湊值 |
-| IsCertificateValid | 布林值 | 用於簽署檔的憑證是否有效 |
-| IsRootSignerMicrosoft | 布林值 | 會指出根憑證的簽署者是否為 Microsoft |
-| IsExecutable | 布林值 | 檔案是否為可遷移的可執行檔 (PE) file |
-| ThreatName | string | 找到的任何惡意程式碼或其他威脅的偵測名稱 |
-| 發行者 | string | 發佈檔的組織名稱 |
-| SoftwareName | 字串 | 軟體產品名稱 |
+|------------|---------------|-------------|
+| `SHA1` | 字串 | 記錄動作已套用的檔案 SHA-1 |
+| `SHA256` | 字串 | 錄製的動作所套用的檔案 SHA-256 |
+| `MD5` | string | 錄製的動作所套用的檔案 MD5 雜湊 |
+| `FileSize` | int | 檔案大小（以位元組為單位） |
+| `GlobalPrevalence` | int | 由 Microsoft 全域觀測的實體實例數目 |
+| `GlobalFirstSeen` | datetime | Microsoft 全球第一次觀測實體的日期和時間 |
+| `GlobalLastSeen` | datetime | Microsoft 全球最後觀測實體的日期和時間 |
+| `Signer` | string | 檔案的簽署者相關資訊 |
+| `Issuer` | string | 發證憑證授權 (CA 的相關資訊)  |
+| `SignerHash` | string | 識別簽署者的唯一雜湊值 |
+| `IsCertificateValid` | 布林值 | 用於簽署檔的憑證是否有效 |
+| `IsRootSignerMicrosoft` | 布林值 | 會指出根憑證的簽署者是否為 Microsoft |
+| `SignatureState` | string | 檔簽章的狀態： SignedValid-已使用有效的簽章簽署檔案，SignedInvalid-已簽署該檔案，但憑證無效，未簽署-檔案不會簽署，無法進行檔案的未知資訊
+| `IsExecutable` | 布林值 | 檔案是否為可遷移的可執行檔 (PE) file |
+| `ThreatName` | string | 找到的任何惡意程式碼或其他威脅的偵測名稱 |
+| `Publisher` | string | 發佈檔的組織名稱 |
+| `SoftwareName` | 字串 | 軟體產品名稱 |
 
 ## <a name="syntax"></a>語法
 

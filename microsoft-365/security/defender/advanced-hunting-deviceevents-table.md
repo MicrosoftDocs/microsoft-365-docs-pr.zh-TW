@@ -20,22 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48958726528d3db00d705f5d7db9a3315bf52213
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4926b6e742be273637150ebe2fa700e5d4e6f54e
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058036"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382874"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **適用於：**
 - Microsoft 365 Defender
-
-
 
 Advanced 搜尋架構中的 [其他裝置] 事件或 `DeviceEvents` 表格包含各種事件種類的相關資訊，包括安全性控制（如 Windows Defender 防毒程式和 exploit protection）所觸發的事件。 [](advanced-hunting-overview.md) 使用這個參考來建立從此表格取回之資訊的查詢。
 
@@ -56,6 +53,7 @@ Advanced 搜尋架構中的 [其他裝置] 事件或 `DeviceEvents` 表格包含
 | `SHA1` | 字串 | 記錄動作已套用的檔案 SHA-1 |
 | `SHA256` | 字串 | 記錄動作已套用的檔案 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
 | `MD5` | 字串 | 錄製的動作所套用的檔案 MD5 雜湊 |
+| `FileSize` | long | 檔案大小（以位元組為單位） |
 | `AccountDomain` | string | 帳戶的網域 |
 | `AccountName` | string | 帳戶的使用者名稱 |
 | `AccountSid` | string | 帳戶的安全性識別碼 (SID)  |
@@ -75,28 +73,33 @@ Advanced 搜尋架構中的 [其他裝置] 事件或 `DeviceEvents` 表格包含
 | `LocalPort` | int | 通訊期間使用的本機電腦上的 TCP 埠 |
 | `FileOriginUrl` | string | 下載檔案所在的 URL |
 | `FileOriginIP` | string | 從中下載檔案的 IP 位址 |
-| `AdditionalFields` | string | 有關 JSON 陣列格式之事件的其他資訊 |
-| `InitiatingProcessFileSize` | long | 執行事件處理常式的檔案大小 |
-| `FileSize` | long | 檔案大小（以位元組為單位） |
 | `InitiatingProcessSHA1` | string | 啟動事件) 的處理常式 (映射檔 SHA-1 |
 | `InitiatingProcessSHA256` | string | 啟動事件) 的處理常式 (映射檔 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
-| `InitiatingProcessFileName` | 字串 | 啟動事件的進程名稱 |
+| `InitiatingProcessMD5` | 字串 | 啟動事件之程式 (映射檔) 的 MD5 雜湊 |
+| `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
+| `InitiatingProcessFileSize` | long | 執行事件處理常式的檔案大小 |
 | `InitiatingProcessFolderPath` | string | 包含初始化事件之處理 (映射檔) 程式的資料夾 |
 | `InitiatingProcessId` | int | 啟動事件之程式的進程識別碼 (PID)  |
 | `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
 | `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |
-| `InitiatingProcessParentId` | int | 產生負責事件之處理常式之父進程的進程識別碼 (PID)  |
-| `InitiatingProcessParentFileName` | string | 產生負責事件之處理常式的父進程名稱 |
-| `InitiatingProcessParentCreationTime` | datetime | 啟動事件之處理常式的父項時的日期和時間 |
-| `InitiatingProcessMD5` | string | 啟動事件之程式 (映射檔) 的 MD5 雜湊 |
 | `InitiatingProcessAccountDomain` | string | 執行負責事件之處理常式之帳戶的網域 |
 | `InitiatingProcessAccountName` | string | 負責事件之處理常式的帳戶使用者名稱 |
 | `InitiatingProcessAccountSid` | string | 執行事件負責處理之帳戶的安全性識別碼 (SID)  |
 | `InitiatingProcessAccountUpn` | string | 執行事件負責之帳戶的使用者主要名稱 (UPN)  |
 | `InitiatingProcessAccountObjectId` | string | 執行負責事件之處理常式之使用者帳戶的 Azure AD 物件識別碼 |
+| `InitiatingProcessVersionInfoCompanyName` | string | 處理常式 (映射檔的版本資訊中) 負責事件的公司名稱 |
+| `InitiatingProcessVersionInfoProductName` | string | 處理常式 (映射檔的版本資訊中的產品名稱) 該事件的負責人 |
+| `InitiatingProcessVersionInfoProductVersion` | string |  (映射檔的版本資訊中的產品版本) 負責事件的處理常式 |
+|` InitiatingProcessVersionInfoInternalFileName` | string | 處理常式 (映射檔的版本資訊中的內部檔案名) 負責事件 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 處理常式 (映射檔的版本資訊中的原始檔案名) 負責事件。 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 處理常式 (映射檔的版本資訊的描述) 該事件的負責人 |
+| `InitiatingProcessParentId` | int | 產生負責事件之處理常式之父進程的進程識別碼 (PID)  |
+| `InitiatingProcessParentFileName` | string | 產生負責事件之處理常式的父進程名稱 |
+| `InitiatingProcessParentCreationTime` | datetime | 啟動事件之處理常式的父項時的日期和時間 |
 | `InitiatingProcessLogonId` | string | 啟動事件之處理常式的登入會話識別碼。 只有在重新開機時，此識別碼在同一部電腦上是唯一的 |
 | `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
 | `AppGuardContainerId` | string | Application Guard 用來隔離瀏覽器活動的虛擬容器識別碼 |
+| `AdditionalFields` | string | 有關 JSON 陣列格式之事件的其他資訊 |
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1c8a3f3ab91add9e057c4661677997e658f42386
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9a3806d3e2bff66e04f4adb50217fc1c6f267364
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058016"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382592"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -46,7 +46,6 @@ ms.locfileid: "51058016"
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
 | `DeviceId` | string | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
-| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
 | `NetworkAdapterName` | string | 網路介面卡的名稱 |
 | `MacAddress` | string | 網路介面卡的 MAC 位址 |
 | `NetworkAdapterType` | string | 網路介面卡類型。 如需可能的值，請參閱 [this 列舉](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
@@ -58,6 +57,7 @@ ms.locfileid: "51058016"
 | `IPv6Dhcp` | string | DHCP 伺服器的 IPv6 位址 |
 | `DefaultGateways` | string | 以 JSON 陣列格式的預設閘道位址 |
 | `IPAddresses` | string | 包含所有指派給該配接器之 IP 位址的 JSON 陣列，以及其各自的子網前置詞和 IP 位址空間，例如 public、private 或 link 本機。 |
+| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7196053ffef3dffc3c737d0df26a5d12bdfe8a4c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ab5400a197a1f0ac61c8b298a06165d217f44fd1
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187754"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394731"
 ---
 # <a name="resources"></a>資源
 
@@ -105,6 +105,7 @@ ms.locfileid: "51187754"
 |Group                 |案例                                                |命令                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |組態         |開啟/關閉即時保護                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|組態         |開啟/關閉行為監控                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
 |組態         |開啟/關閉雲端保護                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |組態         |開啟/關閉產品診斷程式                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |組態         |開啟/關閉自動範例提交                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |

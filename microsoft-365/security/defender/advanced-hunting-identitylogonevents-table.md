@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 556e408eb176a2c215252379d539ec82b67e85cc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2d6904d47e58a7cf7a1b7fce5083da43c9a01a76
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060423"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382504"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -49,8 +49,8 @@ ms.locfileid: "51060423"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
 | `ActionType` | string | 觸發事件的活動類型。 如需詳細資訊，請參閱[入口網站內架構參考](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
-| `LogonType` | string | 登入會話的類型，特別：<br><br> - **互動式** 使用者會使用本機鍵盤和畫面，以實際方式與機器互動<br><br> - **遠端互動 (RDP)** 登入-使用者利用遠端桌面、終端機服務、遠端協助或其他 RDP 用戶端從遠端與機器互動<br><br> - 使用 PsExec 存取機器時，或在機器上共用資源（如印表機和共用資料夾）存取時，所啟動的 **網路** 會話<br><br> - 由排程任務所啟動的 **批次** 會話<br><br> - **服務** -啟動時由服務啟動的會話 |
 | `Application` | string | 執行錄製動作的應用程式 |
+| `LogonType` | string | 登入會話的類型，特別：<br><br> - **互動式** 使用者會使用本機鍵盤和畫面，以實際方式與機器互動<br><br> - **遠端互動 (RDP)** 登入-使用者利用遠端桌面、終端機服務、遠端協助或其他 RDP 用戶端從遠端與機器互動<br><br> - 使用 PsExec 存取機器時，或在機器上共用資源（如印表機和共用資料夾）存取時，所啟動的 **網路** 會話<br><br> - 由排程任務所啟動的 **批次** 會話<br><br> - **服務** -啟動時由服務啟動的會話 |
 | `Protocol` | string | 使用的網路通訊協定 |
 | `FailureReason` | string | 說明錄製的動作失敗原因的資訊 |
 | `AccountName` | string | 帳戶的使用者名稱 |

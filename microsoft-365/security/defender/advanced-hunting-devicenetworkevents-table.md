@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3e09ace7130e5a58d3c386a57951dbf2ea5f5f2a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ffa79ea7e3c75887531020e83d081ee3206d1a11
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058020"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382850"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -63,6 +63,12 @@ ms.locfileid: "51058020"
 | `InitiatingProcessMD5` | 字串 | 啟動事件之程式 (映射檔) 的 MD5 雜湊 |
 | `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
 | `InitiatingProcessFileSize` | long | 執行事件處理常式的檔案大小 |
+| `InitiatingProcessVersionInfoCompanyName` | string | 處理常式 (映射檔的版本資訊中) 負責事件的公司名稱 |
+| `InitiatingProcessVersionInfoProductName` | string | 處理常式 (映射檔的版本資訊中的產品名稱) 該事件的負責人 |
+| `InitiatingProcessVersionInfoProductVersion` | string |  (映射檔的版本資訊中的產品版本) 負責事件的處理常式 |
+| `InitiatingProcessVersionInfoInternalFileName` | string | 處理常式 (映射檔的版本資訊中的內部檔案名) 負責事件 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 處理常式 (映射檔的版本資訊中的原始檔案名) 負責事件。 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 處理常式 (映射檔的版本資訊的描述) 該事件的負責人 |
 | `InitiatingProcessId` | int | 啟動事件之程式的進程識別碼 (PID)  |
 | `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
 | `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |
@@ -74,6 +80,7 @@ ms.locfileid: "51058020"
 | `InitiatingProcessAccountName` | string | 負責事件之處理常式的帳戶使用者名稱 |
 | `InitiatingProcessAccountSid` | string | 執行事件負責處理之帳戶的安全性識別碼 (SID)  |
 | `InitiatingProcessAccountUpn` | string | 執行事件負責之帳戶的使用者主要名稱 (UPN)  |
+| `InitiatingProcessAccountObjectId` | string | 執行負責事件之處理常式之使用者帳戶的 Azure AD 物件識別碼 |
 | `InitiatingProcessIntegrityLevel` | string | 啟動事件之處理常式的完整性層級。 Windows 會根據特定的特性，例如從網際網路下載啟動，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
 | `InitiatingProcessTokenElevation` | string | 指出是否存在使用者存取控制的 Token 類型 (UAC) 許可權提升會套用至啟動事件的程式。 |
 | `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |

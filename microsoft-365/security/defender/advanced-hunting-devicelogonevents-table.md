@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c1c9bac0fe29587bbc02c7974b83e2725a69c02b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e1d1284fa6132e37b31245bd45557e180d0135f2
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058023"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382670"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -50,19 +50,18 @@ ms.locfileid: "51058023"
 | `DeviceId` | string | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
 | `ActionType` | string |觸發事件的活動類型 |
+| `LogonType` | string | 登入會話的類型，特別：<br><br> - **互動式** 使用者會使用本機鍵盤和畫面，以實際方式與機器互動<br><br> - **遠端互動 (RDP)** 登入-使用者利用遠端桌面、終端機服務、遠端協助或其他 RDP 用戶端從遠端與機器互動<br><br> - 使用 PsExec 存取機器時，或在機器上共用資源（如印表機和共用資料夾）存取時，所啟動的 **網路** 會話<br><br> - 由排程任務所啟動的 **批次** 會話<br><br> - **服務** -啟動時由服務啟動的會話<br> |
 | `AccountDomain` | string | 帳戶的網域 |
 | `AccountName` | string | 帳戶的使用者名稱 |
 | `AccountSid` | string | 帳戶的安全性識別碼 (SID)  |
 | `Protocol` | string | 通訊期間使用的通訊協定 |
 | `FailureReason` | string | 說明錄製的動作失敗原因的資訊 |
-| `LogonType` | string | 登入會話的類型，特別：<br><br> - **互動式** 使用者會使用本機鍵盤和畫面，以實際方式與機器互動<br><br> - **遠端互動 (RDP)** 登入-使用者利用遠端桌面、終端機服務、遠端協助或其他 RDP 用戶端從遠端與機器互動<br><br> - 使用 PsExec 存取機器時，或在機器上共用資源（如印表機和共用資料夾）存取時，所啟動的 **網路** 會話<br><br> - 由排程任務所啟動的 **批次** 會話<br><br> - **服務** -啟動時由服務啟動的會話<br> |
+| `IsLocalAdmin` | 布林值 | 布林值指標，表示使用者是否為電腦上的本機系統管理員 |
 | `LogonId` | string | 登入會話的識別碼。 只有在重新開機時，此識別碼在同一部電腦上是唯一的 |
 | `RemoteDeviceName` | string | 在受影響的機器上執行遠端作業的機器名稱。 根據所報告的事件，此名稱可以是完整功能變數名稱 (FQDN) 、NetBIOS 名稱或沒有網域資訊的主機名稱。 |
 | `RemoteIP` | 字串 | 連線到的 IP 位址 |
 | `RemoteIPType` | string | IP 位址的類型，例如 Public、Private、Reserved、環回、Teredo、FourToSixMapping 及廣播 |
 | `RemotePort` | int | 連線的遠端裝置上的 TCP 埠 |
-| `AdditionalFields` | string | 有關 JSON 陣列格式之事件的其他資訊 |
-| `InitiatingProcessFileSize` | long | 執行事件處理常式的檔案大小 |
 | `InitiatingProcessAccountDomain` | string | 執行負責事件之處理常式之帳戶的網域 |
 | `InitiatingProcessAccountName` | string | 負責事件之處理常式的帳戶使用者名稱 |
 | `InitiatingProcessAccountSid` | string | 執行事件負責處理之帳戶的安全性識別碼 (SID)  |
@@ -74,6 +73,13 @@ ms.locfileid: "51058023"
 | `InitiatingProcessSHA256` | string | 啟動事件) 的處理常式 (映射檔 SHA-256。 通常不會填入此欄位，可使用 SHA1] 欄位 |
 | `InitiatingProcessMD5` | string | 啟動事件之程式 (映射檔) 的 MD5 雜湊 |
 | `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
+| `InitiatingProcessFileSize` | long | 執行事件處理常式的檔案大小 |
+| `InitiatingProcessVersionInfoCompanyName` | string | 處理常式 (映射檔的版本資訊中) 負責事件的公司名稱 |
+| `InitiatingProcessVersionInfoProductName` | string | 處理常式 (映射檔的版本資訊中的產品名稱) 該事件的負責人 |
+| `InitiatingProcessVersionInfoProductVersion` | string |  (映射檔的版本資訊中的產品版本) 負責事件的處理常式 |
+| `InitiatingProcessVersionInfoInternalFileName` | string | 處理常式 (映射檔的版本資訊中的內部檔案名) 負責事件 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 處理常式 (映射檔的版本資訊中的原始檔案名) 負責事件。 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 處理常式 (映射檔的版本資訊的描述) 該事件的負責人 |
 | `InitiatingProcessId` | int | 啟動事件之程式的進程識別碼 (PID)  |
 | `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
 | `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |
@@ -83,7 +89,7 @@ ms.locfileid: "51058023"
 | `InitiatingProcessParentCreationTime` | datetime | 啟動事件之處理常式的父項時的日期和時間 |
 | `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
 | `AppGuardContainerId` | string | Application Guard 用來隔離瀏覽器活動的虛擬容器識別碼 |
-| `IsLocalAdmin` | 布林值 | 布林值指標，表示使用者是否為電腦上的本機系統管理員 |
+| `AdditionalFields` | string | 有關 JSON 陣列格式之事件的其他資訊 |
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

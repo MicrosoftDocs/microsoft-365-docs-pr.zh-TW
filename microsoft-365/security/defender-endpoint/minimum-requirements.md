@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c6afa48fcee80c0b8fb7ed0563264932566b6321
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185788"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379487"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的基本需求
 
@@ -31,12 +31,10 @@ ms.locfileid: "51185788"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 對服務上架裝置的一些基本需求。 深入瞭解授權、硬體和軟體需求，以及對服務的板載裝置的其他設定。
-
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)。
 
 > [!TIP]
 > - 深入瞭解 endpoint for endpoint the defender 的最新增強功能： [defender For Endpoint 社區](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)。
@@ -80,7 +78,6 @@ Microsoft Defender for Endpoint 需要下列其中一個 Microsoft 大量授權�
 您可以透過瀏覽器來存取端點，以支援下列瀏覽器：
 
 - Microsoft Edge
-- Internet Explorer 版本11
 - Google Chrome
 
 > [!NOTE]
@@ -112,7 +109,7 @@ Microsoft Defender for Endpoint 需要下列其中一個 Microsoft 大量授權�
 針對支援的版本，裝置上之 Endpoint 的 Defender 的硬體需求是相同的。
 
 > [!NOTE]
-> 不支援執行行動 Windows mobile 版本的機器 (例如 Windows CE 和 Windows 10 行動電話) 。
+> 不支援執行行動 Windows mobile 版本 Windows 的機器 (例如 Windows CE 和 Windows 10 行動) 。
 >
 > 執行 Windows 10 企業版 2016 LTSB 的虛擬機器在非 Microsoft 虛擬化平臺上執行時，可能會遇到效能問題。
 >
@@ -121,11 +118,12 @@ Microsoft Defender for Endpoint 需要下列其中一個 Microsoft 大量授權�
 
 ### <a name="other-supported-operating-systems"></a>其他支援的作業系統
 - Android
+- iOS
 - Linux
 - macOS
 
 > [!NOTE]
-> 您將需要知道與使用 Defender for Endpoint 相容的確切 Linux 發行和版本，以及與整合運作相關的 macOS。
+> 您必須確認 Linux 的發行和版本的 Android、iOS 和 macOS 與您的電腦上的 Defender for Endpoint 相容，以供整合運作。
 
 
 
@@ -164,7 +162,7 @@ Microsoft Defender for Endpoint 需要下列其中一個 Microsoft 大量授權�
    ![Diagtrack 的 sc 查詢命令的結果](images/windefatp-sc-qc-diagtrack.png)
 
 
-如果 **START_TYPE** 不是設為 **AUTO_START**，您必須將服務設定為自動啟動。
+如果 **START_TYPE** 未設定為 **AUTO_START**，您必須將服務設定為自動啟動。
 
 
 **使用命令列將 Windows 10 診斷資料服務設定為自動啟動：**
@@ -191,7 +189,7 @@ Microsoft Defender for Endpoint 需要下列其中一個 Microsoft 大量授權�
 #### <a name="internet-connectivity"></a>網際網路連線能力
 必須直接或透過 proxy，在裝置上的網際網路連線。
 
-您可以利用每日平均的頻率為 5 MB，以與 Endpoint 雲端服務和報告網路資料的 Defender 通訊。 在此每日平均頻寬中不會包含一項單一關閉活動，例如檔案上傳和調查套件集合。
+「！使用條款」的 Defender for Endpoint 感應器可以使用每日平均頻寬為 5 MB，以與 Endpoint 雲端服務和報告網路資料的 Defender 進行通訊。 在此每日平均頻寬中不會包含一項一次性活動，例如檔案上傳和調查套件集合。
 
 如需其他 proxy 設定設定的詳細資訊，請參閱 [Configure device proxy And Internet connectivity settings](configure-proxy-internet.md)。
 
@@ -203,11 +201,11 @@ Microsoft Defender for Endpoint 需要下列其中一個 Microsoft 大量授權�
 
 在 Defender for Endpoint 裝置上設定安全性智慧更新，是否 Microsoft Defender 防病毒是使用中的反惡意程式碼。 如需詳細資訊，請參閱 [管理 Microsoft Defender 防病毒更新及套用基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
 
-當 Microsoft Defender 防毒程式不是您組織中使用的反惡意軟體，且您使用 Defender for Endpoint service 時，Microsoft Defender 防毒程式會進入被動模式。
+當 Microsoft Defender 防毒程式不是您組織中使用的反惡意程式碼，且您使用 Defender for Endpoint service 時，Microsoft Defender 防毒程式會進入被動模式。
 
 如果您的組織已透過群組原則或其他方法關閉 Microsoft Defender 防病毒，則必須從此群組原則排除架裝置。
 
-如果您是上架伺服器，而 Microsoft Defender 防毒程式不是伺服器上使用中的反惡意程式碼，則 Microsoft Defender 防毒軟體必須設定為進入被動模式或已卸載。 設定取決於伺服器版本。 如需詳細資訊，請參閱 [Microsoft Defender 防毒程式相容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)。
+如果您是上架伺服器，而 Microsoft Defender 防毒軟體不是伺服器上使用中的反惡意程式碼，則 Microsoft Defender 防毒軟體必須設定為進入被動模式或已卸載。 設定取決於伺服器版本。 如需詳細資訊，請參閱 [Microsoft Defender 防毒程式相容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)。
 
 > [!NOTE]
 > 您的一般群組原則不會套用到防篡改保護，當防篡改保護開啟時，將會忽略對 Microsoft Defender 防病毒設定所做的變更。

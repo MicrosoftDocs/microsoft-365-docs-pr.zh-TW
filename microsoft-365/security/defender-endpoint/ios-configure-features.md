@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 90e65c57321fa05a62bc94f4f56d92062d0826a1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 18fbc13614753ae57856a124d76bbad682ab88e5
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186698"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379346"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-for-ios-features"></a>設定 iOS 功能端點的 Microsoft Defender
 
@@ -102,3 +102,9 @@ IOS 的 Defender for Endpoint 可讓系統管理員也在 iOS 裝置上設定自
 ## <a name="report-unsafe-site"></a>報告不安全的網站
 
 網路釣魚網站會為了取得您的個人或財務資訊，模仿可信的網站。 如果您想要報告可能是網路釣魚網站的網站，請造訪 [ [提供有關網路保護的意見](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) 反應] 頁面。
+
+## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>安裝 Microsoft Defender for Endpoint 時 iOS 的電池消耗問題
+
+應用程式的電池使用量是根據許多因素（包括 CPU 和網路使用量）計算而來。 Microsoft Defender for Endpoint 會在背景中使用本機/環路傳回 VPN，檢查任何惡意網站或連線的網頁流量。 任何應用程式的網路封包都會進行此項檢查，從而導致無法準確計算 Microsoft Defender for Endpoint 的電池使用量。 這為使用者提供了錯誤的印象。 Microsoft Defender for Endpoint 的實際電池消耗小於裝置上的 [電池設定] 頁面上顯示的數目。 這是以 Microsoft Defender for Endpoint app 所進行的測試為基礎，以瞭解電池消耗。
+
+此外，使用的 VPN 也是本機 VPN，與傳統的 vpn 不同的是，網路流量不會傳送到裝置外。

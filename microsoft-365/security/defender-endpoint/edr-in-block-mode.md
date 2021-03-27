@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b31e7aeb9178cb6021434319e55ddef927d7c263
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7bee6c99d2c1c5ad3cec8f2e317b729a0a4e1f8b
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165870"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379475"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>封鎖模式中的端點偵測和回應 (EDR) 
 
@@ -133,9 +133,12 @@ ms.locfileid: "51165870"
 
 3. 在結果清單中的 [ **狀態** ] 列中，確認服務正在執行中。
 
+### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>封鎖模式中要停用的 EDR 需要多少時間？
+如果您選擇在封鎖模式中停用 EDR，系統可能需要30分鐘的時間，才能停用此功能。
+
 ## <a name="see-also"></a>另請參閱
 
 - [技術社區博客：在封鎖模式中引入 EDR：在其蹤跡中停止攻擊](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
-- [行為封鎖和包容](behavioral-blocking-containment.md)
+- [行為封鎖和包含專案](behavioral-blocking-containment.md)
 - [更好搭配： Microsoft Defender 防病毒和 Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

@@ -1,6 +1,6 @@
 ---
-title: 疑難排解 Microsoft Defender ATP for Mac 中的內核擴充問題
-description: 疑難排解 Microsoft Defender ATP for Mac 中的內核擴充相關問題。
+title: 疑難排解 Microsoft Defender for Mac 中的內核擴充問題
+description: 疑難排解 Microsoft Defender for Mac 中的內核擴充相關問題。
 keywords: microsoft，defender，atp，mac，內核，擴充
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bdd5c6309a19863339b00e846c1c2670fc4f261b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187598"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379501"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>疑難排解 Microsoft Defender for Mac 中的內核擴充問題
 
@@ -32,7 +32,7 @@ ms.locfileid: "51187598"
 
 **適用於：**
 
-- [Mac 版端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [Mac 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -44,9 +44,9 @@ ms.locfileid: "51187598"
 
 如果您在部署/安裝 Mac 的 Microsoft Defender for Endpoint 時未核准核心擴充，應用程式會顯示橫幅，提示您啟用它：
 
-   ![RTP 停用的螢幕擷取畫面](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-32-main-app-fix)
+   ![RTP 停用的螢幕擷取畫面](images/mdatp-32-main-app-fix.png)
 
-您也可以執行 ```mdatp health``` 。 它會報告是否已啟用即時保護，但無法使用。 這表示內核擴充未獲核准，無法在您的裝置上執行。
+您也可以執行 ```mdatp health``` 。 它會報告是否已啟用即時保護，但無法使用。 這表示未核准在您的裝置上執行內核擴充。
 
 ```bash
 mdatp health
@@ -65,7 +65,7 @@ real_time_protection_available              : true
 請參閱您用來部署產品的管理工具對應的指示：
 
 - [以 JAMF 為基礎的部署](mac-install-with-jamf.md)
-- [以 Microsoft Intune 為基礎的部署](mac-install-with-intune.md#create-system-configuration-profiles)
+- [Microsoft Intune 型部署](mac-install-with-intune.md#create-system-configuration-profiles)
 
 ## <a name="manual-deployment"></a>手動部署
 
@@ -73,11 +73,11 @@ real_time_protection_available              : true
 
 如果您未看到此提示，表示已超過30分鐘或更多分鐘，且尚未核准內核擴充，無法在您的裝置上執行：
 
-![提示到期的螢幕擷取畫面之後的安全性和隱私權視窗](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-33-securityprivacysettings-noprompt)
+![提示到期的螢幕擷取畫面之後的安全性和隱私權視窗](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 在此情況下，您必須執行下列步驟，以再次觸發核准流程。
 
-1. 在終端中，嘗試安裝驅動程式。 下列作業將會失敗，因為內核擴充未獲核准，無法在裝置上執行。 不過，它會再次觸發核准流程。
+1. 在終端中，嘗試安裝驅動程式。 下列作業將會失敗，因為未核准在裝置上執行內核擴充。 不過，它會再次觸發核准流程。
 
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext

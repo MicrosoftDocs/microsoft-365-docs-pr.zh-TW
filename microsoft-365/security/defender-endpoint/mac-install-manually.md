@@ -1,6 +1,6 @@
 ---
-title: 手動部署 macOS 的 Microsoft Defender ATP
-description: 從命令列手動安裝 macOS 的 Microsoft Defender ATP。
+title: macOS 的 Microsoft Defender 端點的手動部署
+description: 從命令列手動為 macOS 安裝 Microsoft Defender for Endpoint。
 keywords: microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamf，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2629eb3d13e6eb908644dfcade46a7ac2768637
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187442"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379421"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>macOS 的 Microsoft Defender 端點的手動部署
 
@@ -64,20 +64,20 @@ ms.locfileid: "51187442"
 
 1. 流覽至 Finder 中已下載的 wdav，然後開啟它。
 
-    ![App 安裝 screenshot1](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall)
+    ![App 安裝 screenshot1](images/mdatp-28-appinstall.png)
 
 2. 選取 [ **繼續**]，同意授權條款，然後在出現提示時輸入密碼。
 
-    ![App 安裝 screenshot2](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-29-appinstalllogin)
+    ![App 安裝 screenshot2](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
    > 系統會提示您允許安裝來自 Microsoft 的驅動程式， (「系統擴充封鎖」或「保留安裝」或兩者皆有）。 必須允許安裝驅動程式。
 
-   ![App 安裝 screenshot3](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-30-systemextension)
+   ![App 安裝 screenshot3](images/mdatp-30-systemextension.png)
 
 3. 選取 [ **開啟安全性** 設定] 或 [ **開啟系統偏好設定] > 安全性 & 隱私權**。 選取 [ **允許**]：
 
-    ![安全性和隱私權視窗螢幕擷取畫面](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-31-securityprivacysettings)
+    ![安全性和隱私權視窗螢幕擷取畫面](images/mdatp-31-securityprivacysettings.png)
 
    安裝會繼續進行。
 
@@ -139,7 +139,7 @@ ms.locfileid: "51187442"
 
 安裝之後，您會在右上角的 macOS 狀態列中看到 Microsoft Defender 圖示。
 
-   ![狀態列上的 Microsoft Defender 圖示螢幕擷取畫面](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+   ![狀態列上的 Microsoft Defender 圖示螢幕擷取畫面](images/mdatp-icon-bar.png)
    
 
 ## <a name="how-to-allow-full-disk-access"></a>如何允許完整磁片存取

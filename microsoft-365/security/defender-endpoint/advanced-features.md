@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215525"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394743"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -63,6 +63,14 @@ ms.locfileid: "51215525"
 ## <a name="live-response-unsigned-script-execution"></a>Live response 未簽署的腳本執行
 
 啟用此功能可讓您在即時回應會話中執行未簽署的腳本。
+
+
+## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制範圍內裝置群組的關聯
+開啟此設定時，警示會根據其範圍內的裝置群組，與個別的事件相關聯。 依預設，會在整個承租人範圍內進行事件關聯。
+
+>[!NOTE]
+>變更此設定只會影響未來的警示關聯。
+
 
 ## <a name="autoresolve-remediated-alerts"></a>自動解析修正的警示
 
@@ -112,7 +120,7 @@ ms.locfileid: "51215525"
 
 開啟此功能，讓您可以看到儲存在 Azure Active Directory 中的使用者詳細資料。 詳細資料包括調查使用者帳戶實體時，使用者的圖片、名稱、標題及部門資訊。 您可以在下列視圖中尋找使用者帳戶資訊：
 
-- 安全性操作儀表板
+-  安全性操作儀表板
 - 警示佇列
 - 裝置詳細資料頁面
 
@@ -150,7 +158,7 @@ ms.locfileid: "51215525"
 > [!NOTE]
 > 適用于 Microsoft 的 Defender for Endpoint 的 Microsoft 威脅專家功能，具有 E5 授權 for [Enterprise 可移動性 + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)。
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-cloud-app-security"></a>Microsoft 雲端 App 安全性
 
 啟用此設定時，會將 Defender for Endpoint 信號轉寄至 Microsoft Cloud App Security，以提供 Cloud 應用程式使用狀況的更深入可視性。 轉寄的資料會與您的雲端應用程式安全性資料儲存在相同的位置。
 

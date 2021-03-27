@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 247b8b8d8e18c8eecb09029581635ae907433f55
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: df96b57b9898dd973fab053918d763d1972bd50d
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060431"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382802"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>取得高級搜尋的專家訓練
 
@@ -36,7 +36,6 @@ ms.locfileid: "51060431"
 - Microsoft 365 Defender
 
 透過 _追蹤敵人_，以提升您的高級搜尋知識，獲得新安全性分析師和經驗豐富威脅 hunters 的網路廣播系列。 該數列會逐步引導您建立您自己複雜的查詢的基本方法。 先從第一個影片開始，或跳到更多符合您經驗水準的視頻。
-
 
 | 職稱 | 描述 | Watch | 查詢 | 
 |--|--|--|--|

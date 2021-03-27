@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: fc4c15d2e391176ed0b4420c13fb865674da0361
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 48b1f1bf9506acc8491887fca49295d5e4ccbd69
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163584"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382706"
 ---
 # <a name="create-custom-detection-rules"></a>建立自訂偵測規則
 
@@ -98,8 +98,8 @@ DeviceEvents
 - **每3小時**，每3小時執行一次，檢查過去6個小時的資料
 - **每小時-每小時執行一次**，檢查過去2個小時的資料
 
-> [!IMPORTANT]
-> 變更已排定為自訂偵測的查詢時，會立即執行的後續執行將會有30天的 lookback 視窗，就像是建立新的查詢一樣。 變更大量查詢，而且時間篩選器的時間篩選高於選取頻率的預設 lookback 持續時間，可能會影響高級搜尋的整體配額消耗，並導致耗盡每日配額。
+當您編輯規則時，會根據您設定的頻率，在下一個執行時間執行所套用的變更。
+
 
 > [!TIP]
 > 使查詢中的時間篩選與 lookback 持續時間相符。 Lookback 持續時間以外的結果會被忽略。

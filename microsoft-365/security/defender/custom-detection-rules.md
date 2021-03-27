@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9699b5e2bc2e33b94795b7c23bd3f34f0383a8cc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 12a35a9f80da6b401495fcae7c245436b35b991c
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056669"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382886"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
@@ -116,12 +116,16 @@ DeviceEvents
 - **建議動作**-回應者可能會採取以回應警示的其他動作
 
 #### <a name="rule-frequency"></a>規則頻率
-當您儲存或編輯新規則時，它會執行並檢查過去30天的資料是否相符。 然後，此規則會以固定間隔重新執行，並根據您選擇的頻率套用 lookback 持續時間：
+當您儲存新規則時，它會執行並檢查過去30天的資料是否相符。 然後，此規則會以固定間隔重新執行，並根據您選擇的頻率套用 lookback 持續時間：
 
 - **每24小時**-每24小時執行一次，檢查過去30天的資料
 - **每12小時**-每12小時執行一次，檢查過去24小時的資料
 - **每3小時**，每3小時執行一次，檢查過去6個小時的資料
 - **每小時-每小時執行一次**，檢查過去2個小時的資料
+
+當您編輯規則時，會根據您設定的頻率，在下一個執行時間執行所套用的變更。
+
+
 
 >[!TIP]
 > 使查詢中的時間篩選與 lookback 持續時間相符。 Lookback 持續時間以外的結果會被忽略。  

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 10009edab33d04ca01da9459c394634d0622cf3d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62989eca2fd00757ea02d03bf24a0049135d97b0
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058032"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382862"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -63,11 +63,19 @@ ms.locfileid: "51058032"
 | `InitiatingProcessAccountName` | string | 負責事件之處理常式的帳戶使用者名稱 |
 | `InitiatingProcessAccountSid` | string | 執行事件負責處理之帳戶的安全性識別碼 (SID)  |
 | `InitiatingProcessAccountUpn` | string | 執行事件負責之帳戶的使用者主要名稱 (UPN)  |
+| `InitiatingProcessAccountObjectId` | string | 執行負責事件之處理常式之使用者帳戶的 Azure AD 物件識別碼 |
 | `InitiatingProcessMD5` | string | 啟動事件之程式 (映射檔) 的 MD5 雜湊 |
 | `InitiatingProcessSHA1` | string | 啟動事件) 的處理常式 (映射檔 SHA-1 |
 | `InitiatingProcessSHA256` | string | 啟動事件) 的處理常式 (映射檔 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
 | `InitiatingProcessFolderPath` | 字串 | 包含初始化事件之處理 (映射檔) 程式的資料夾 |
 | `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
+| `InitiatingProcessFileSize` | long | 初始化事件之處理 (映射檔) 的大小 |
+| `InitiatingProcessVersionInfoCompanyName` | string | 處理常式 (映射檔的版本資訊中) 負責事件的公司名稱 |
+| `InitiatingProcessVersionInfoProductName` | string | 處理常式 (映射檔的版本資訊中的產品名稱) 該事件的負責人 |
+|` InitiatingProcessVersionInfoProductVersion` | string |  (映射檔的版本資訊中的產品版本) 負責事件的處理常式 |
+|` InitiatingProcessVersionInfoInternalFileName` | string | 處理常式 (映射檔的版本資訊中的內部檔案名) 負責事件 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 處理常式 (映射檔的版本資訊中的原始檔案名) 負責事件。 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 處理常式 (映射檔的版本資訊的描述) 該事件的負責人 |
 | `InitiatingProcessId` | int | 啟動事件之程式的進程識別碼 (PID)  |
 | `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
 | `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |
@@ -77,20 +85,19 @@ ms.locfileid: "51058032"
 | `InitiatingProcessParentFileName` | string | 產生負責事件之處理常式的父進程名稱 |
 | `InitiatingProcessParentCreationTime` | datetime | 啟動事件之處理常式的父項時的日期和時間 |
 | `RequestProtocol` | string | 用於啟動活動的網路通訊協定（如果適用）：未知、本機、SMB 或 NFS |
-| `ShareName` | string | 包含檔案的共用資料夾名稱 |
 | `RequestSourceIP` | string | 啟動活動之遠端裝置的 IPv4 或 IPv6 位址 |
 | `RequestSourcePort` | string | 啟動活動的遠端裝置上的來源埠 |
 | `RequestAccountName` | string | 遠端啟動活動所用的帳戶使用者名稱 |
 | `RequestAccountDomain` | string | 用於遠端啟動活動之帳戶的網域 |
 | `RequestAccountSid` | string | 遠端啟動活動所使用之帳戶的安全性識別碼 (SID)  |
-| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用。 |
-| `AppGuardContainerId` | string | Application Guard 用來隔離瀏覽器活動的虛擬容器識別碼 |
-| `AdditionalFields` | string | 實體或事件的其他資訊 |
+| `ShareName` | string | 包含檔案的共用資料夾名稱 |
 | `InitiatingProcessFileSize` | long | 執行事件處理常式的檔案大小 |
 | `SensitivityLabel` | string | 套用至電子郵件、檔案或其他內容的標籤，以分類資訊保護 |
 | `SensitivitySubLabel` | string | 套用至電子郵件、檔案或其他內容的 Sublabel，以分類資訊保護;敏感度分組是以靈敏度標籤群組，但是會個別處理 |
 | `IsAzureInfoProtectionApplied` | 布林值 | 指出檔案是否由 Azure 資訊保護所加密 |
-
+| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用。 |
+| `AppGuardContainerId` | string | Application Guard 用來隔離瀏覽器活動的虛擬容器識別碼 |
+| `AdditionalFields` | string | 實體或事件的其他資訊 |
 >[!NOTE]
 > 檔案雜湊資訊會在可用時永遠顯示。 不過，有數個可能的原因是無法計算 SHA1、SHA256 或 MD5。 例如，檔案可能位於遠端存放區、已壓縮或已標記為虛擬的另一個處理常式鎖定。 在這些情況下，檔雜湊資訊會顯示空白。
 

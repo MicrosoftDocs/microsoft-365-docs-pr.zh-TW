@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79db436c2017c00e1b5d669797c5fb025f651a8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 563dd2a5102ec66a1e953ae6ab30d56ea4f99036
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186230"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382931"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的夥伴應用程式 
 
@@ -98,6 +98,7 @@ Microsoft Defender for Endpoint 會與現有的安全性解決方案無縫整合
 ![Aruba ClearPass Policy Manager 標誌的影像](images/aruba-logo.png) | [Aruba ClearPass 原則管理員](https://go.microsoft.com/fwlink/?linkid=2127544) | 在允許存取網路之前，請確定每個端點上已安裝並更新了 Endpoint
 ![網路標誌的藍色六邊形影像](images/bluehexagon-logo.png) | [網路的藍色六邊形](https://go.microsoft.com/fwlink/?linkid=2104613) | 藍色的六邊形已經為網路威脅防護建立了業界第一個即時深入學習平臺
 ![CyberMDX 標誌的影像](images/cybermdx-logo.png) | [CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620) | 網路 MDX 會將完整的醫療保健資產可視性、威脅防護和 repose 整合至您的 Endpoint for Endpoint 環境
+![HYAS 保護標誌的影像](images/hyas-logo.png) | [HYAS 保護](https://go.microsoft.com/fwlink/?linkid=2156763) | HYAS 防護會利用攻擊者基礎結構的權威知識，以主動保護 Microsoft Defender 對來自 cyberattacks 的端點端點。
 ![Vectra 網路偵測和回應 (NDR) 標誌的影像](images/vectra-logo.png) |[Vectra 網路偵測和回應 (NDR) ](https://go.microsoft.com/fwlink/?linkid=866934)| Vectra 會套用 AI & 安全性研究，以即時偵測及回應網路攻擊。
 
 

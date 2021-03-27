@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ce77d55ece955fbf97b5c9f32859514b55acb5a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb0cffb9716b2d0940e816dc69217486fd51a21d
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187646"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379325"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-mac"></a>針對 Mac 設定及驗證 Microsoft Defender for Endpoint 的排除專案
 
@@ -79,7 +79,7 @@ ms.locfileid: "51187646"
 
 開啟 Defender for Endpoint 應用程式，並流覽至 [**管理設定**] [  >  **新增或移除排除 ...**]，如下列螢幕擷取畫面所示：
 
-![管理排除螢幕擷取畫面](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-37-exclusions)
+![管理排除螢幕擷取畫面](images/mdatp-37-exclusions.png)
 
 選取您要新增的排除類型，然後依照提示進行。
 

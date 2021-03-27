@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd92b44892b49a007316acb97296a44514db0578
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057112"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379345"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint service 的板載 Windows 伺服器
 
@@ -89,7 +89,10 @@ ms.locfileid: "51057112"
  - 此外，針對 Windows Server 2008 R2 SP1，請確定您符合下列需求：
     - 安裝 [二月份每月更新彙總套件](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
     - 安裝 [.net framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (或更新版本) 或 [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
-
+   
+   > [!NOTE]
+    > 如果您使用 SCCM 管理 Windows Server 2008 R2 SP1，則 SCCM 用戶端代理程式會安裝 .Net Framework 4.5.2。 因此，您不需要安裝 .NET framework 4.5 (或更新版本) 。
+   
  - 若為 Windows Server 2008 R2 SP1 和 Windows Server 2012 R2： [設定及更新 System Center Endpoint Protection 用戶端](#configure-and-update-system-center-endpoint-protection-clients)。
 
     > [!NOTE]
@@ -280,8 +283,8 @@ Defender for Endpoint 收集的資料會儲存在提供期間所識別的承租�
 <br>
 
 ## <a name="related-topics"></a>相關主題
-- [板載 Windows 10 裝置](configure-endpoints.md)
-- [板載非 Windows 裝置](configure-endpoints-non-windows.md)
-- [設定 proxy 和網際網路連線設定](configure-proxy-internet.md)
+- [將 Windows 10 裝置上線](configure-endpoints.md)
+- [將非 Windows 裝置上線](configure-endpoints-non-windows.md)
+- [設定 Proxy 和網際網路連接設定](configure-proxy-internet.md)
 - [在新的架 Defender for Endpoint 裝置上執行偵測測試](run-detection-test.md)
 - [疑難排解 Microsoft Defender 的端點上架問題](troubleshoot-onboarding.md)
