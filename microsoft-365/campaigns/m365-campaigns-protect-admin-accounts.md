@@ -2,10 +2,10 @@
 title: 保護您的系統管理員帳戶
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何設定和保護您的系統管理員帳戶。
-ms.openlocfilehash: ec5b971ba4f1fdc8834e10ddf90ff219f763f805
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d687407fad1cec5da49dbc33ffeb84366f1c309
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912171"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398238"
 ---
 # <a name="protect-your-administrator-accounts"></a>保護您的系統管理員帳戶
 
@@ -76,12 +76,11 @@ ms.locfileid: "50912171"
 3. 展開 [ **角色** ] 區段，然後選擇 [ **使用者 (無管理存取)**]。
 4. 在 [ **產品授權** ] 區段中，將 **Microsoft 365 商務** 版的選取器移至 [ **開啟**]。
 
-## <a name="register-each-of-these-accounts-for-multi-factor-authentication"></a>針對多重要素驗證註冊這些帳戶
+## <a name="turn-on-security-defaults"></a>開啟安全性預設值
 
-請確定這些帳戶使用 [多重要素驗證](m365-campaigns-multifactor-authenication.md)。
+安全性預設值可提供 Microsoft 代表組織所管理的預先設定安全性設定，協助保護您的組織免受身分識別相關的攻擊。 這些設定包括針對所有系統管理員和使用者帳戶啟用多重要素驗證 (MFA) 。 如需安全性預設值的詳細資訊，以及若要瞭解如何啟用它們，請參閱 [開啟安全性預設值](m365-campaigns-conditional-access.md)。
 
 ## <a name="additional-recommendations"></a>其他建議
 
-- 請確定系統管理員帳戶也設定為進行多重要素驗證。 我們將在 [設定條件式存取原則](m365-campaigns-conditional-access.md)中示範如何執行此動作。
 - 使用系統管理員帳戶之前，請先關閉所有不相關的瀏覽器會話和應用程式（包括個人電子郵件帳戶）。 您也可以在私人或 incognito 瀏覽器視窗中使用。
 - 完成系統管理工作之後，請務必登出瀏覽器會話。

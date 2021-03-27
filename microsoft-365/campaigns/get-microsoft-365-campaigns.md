@@ -2,10 +2,10 @@
 title: 取得 Microsoft 365 的行銷活動
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 取得 Microsoft 365 的行銷活動，讓您可以保護您的活動，使您的 cybersecurity 威脅成為電子郵件、資料和通訊。
-ms.openlocfilehash: 5a7c0e0a31d6a456d405093f8da32ae557563d1f
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 3d70fef721417dd823dc272bbb7b08c04c037f98
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044639"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398310"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>取得 Microsoft 365 的行銷活動
 
@@ -39,7 +39,7 @@ ms.locfileid: "50044639"
 - 美國和紐西蘭的國內或聯邦政治活動
 - 美國州範圍的政治活動 (例如：針對調控器、州 legislature 或律師一般) 的行銷活動） *
 
-    * 由於本機法規的原因，我們目前無法在下列狀態中提供 M365 的活動：共同、DE、IL、OK、WI & WY。 我們建議這些狀態的活動，以在 [Microsoft 365 for business](https://www.office.com/business)中探索其他產品。
+    * 由於當地法規的原因，我們目前無法在下列狀態提供 Microsoft 365 的行銷活動： CO、DE、IL、OK、WI & WY。 我們建議這些狀態的活動，以在 [Microsoft 365 for business](https://www.office.com/business)中探索其他產品。
 
 - 美國的州層級政治雙方
 

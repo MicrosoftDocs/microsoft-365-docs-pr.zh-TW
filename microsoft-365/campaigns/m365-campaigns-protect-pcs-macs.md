@@ -1,11 +1,11 @@
 ---
-title: 保護非受管理的 Windows 10 Pc 和 Mac
+title: 保護未受管理的 Windows 10 PC 和 Mac
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 365 (BYOD) 保護非受管理或附帶的裝置。
-ms.openlocfilehash: 5c27b29b5bb4fb445655e671d8c654ad8e9abc6b
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 430f5446f86c26cb1f0fd1c7f34613cddec473b2
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044381"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398250"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>保護非受管理的 Windows 10 Pc 和 Mac
+# <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>保護未受管理的 Windows 10 PC 和 Mac
 
 您可以在 Microsoft Intune 中註冊 Windows 10 Pc 和 Mac，讓您在存取環境中的資料之前確保其健康和安全。 不過，許多的行銷活動和小型企業包含的人員會將自己的裝置 (BYOD) ，而不會由組織管理。 針對這些未受管理的電腦和 Mac，請使用本文，以確保已設定最基本的安全性功能。
 
@@ -64,7 +64,7 @@ Windows Update 會自動下載 Windows 安全性更新，以協助您保持電�
 如果您有舊版 Windows，且正在使用 Microsoft Security Essentials，最好移至 Windows 安全性。 如需詳細資訊，請參閱 [使用 Windows 安全性協助保護我的裝置](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)。
 
 **開啟 Windows 防火牆**<p>
-即使已開啟另一個防火牆，您還是應該無條件執行 Windows 防火牆。 關閉 Windows 防火牆可能會讓您的裝置 (和您的網路，如果您有一個) 更容易遭到未經授權的存取。 請參閱 [開啟或關閉 Windows 防火牆](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) 以取得指示
+即使已開啟另一個防火牆，您還是應該無條件執行 Windows 防火牆。 關閉 Windows 防火牆可能會讓您的裝置 (和您的網路，如果您有一個) 更容易遭到未經授權的存取。 請參閱 [開啟或關閉 Windows 防火牆](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) 以取得指示。
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 

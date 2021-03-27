@@ -10,26 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何管理組織中使用者所進行的自我服務購買。
-ms.openlocfilehash: 2ce12b7dba4e765745a94fa10f4ba15e7013e3c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920177"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398171"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助購買 (管理員)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 身為系統管理員，您可以看到組織中人員所進行的自我服務購買。 您會看到產品名稱、購買購買的訂閱、到期日、購買價格，以及每個自助購買的指派使用者。 如果您的組織需要，您可以透過 PowerShell 關閉以每個產品為基礎的自助購買服務。 透過自助購買或集中購買的產品，您可以使用相同的資料管理和存取原則。
 
@@ -37,13 +35,49 @@ ms.locfileid: "50920177"
 
 ## <a name="view-self-service-subscriptions"></a>查看自助訂閱
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心，移至 [帳單 **]** > [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **帳單** > **產品** ] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **帳單** > **產品** ] 頁面。
+
+::: moniker-end
+
 2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
 3. 若要查看訂閱的詳細資料，請從清單中選擇其中一個。
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>查看誰有自助購買訂閱的授權
 
-1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
+> [!NOTE]
+> 身為系統管理員，您無法指派或取消指派組織中使用者購買之自助購買訂閱的授權。 您可以 [接管自助購買訂閱](#take-over-a-self-service-purchase-subscription)，然後指派或取消指派授權。
+
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **帳單** > **授權** ] 頁面。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **帳單** > **授權** ] 頁面。
+
+::: moniker-end
+
 2. 選取 [篩選] 圖示，然後選擇 [ **自我服務**]。
 3. 選取產品以查看指派給人員的授權。
     > [!NOTE]
@@ -67,7 +101,24 @@ ms.locfileid: "50920177"
 
 您可以指派現有的授權，或透過現有的合約針對指派給自助購買之使用者的現有協定來購買其他訂閱。 在您指派這些已集中購買的授權之後，您可以要求購買者取消其現有的訂閱。
 
-1. 在系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a> ] 頁面。
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心中，移至 [ **帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a> ] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **帳單** > **購買服務** ] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **帳單** > **購買服務** ] 頁面。
+
+::: moniker-end
+
 2. 尋找並選擇您想要購買的產品，然後選擇 [ **購買**]。
 3. 完成其餘步驟以完成購買。
 4. 請遵循 View the [自助購買訂閱授權的](#view-who-has-licenses-for-a-self-service-purchase-subscription) 使用者，在下一個步驟中將使用者清單匯出為參考的使用者。
@@ -88,7 +139,24 @@ ms.locfileid: "50920177"
 > [!NOTE]
 > 您必須具備您要移動使用者的訂閱中每個使用者的可用授權。
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心，移至 [帳單 **]** > [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **帳單** > **產品** ] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **帳單** > **產品** ] 頁面。
+
+::: moniker-end
+
 2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
 3. 選取您要接管的訂閱。
 4. 在 [訂閱詳細資料] 頁面的 [ **訂閱與設定** ] 區段中，選取 [ **取得此訂閱的控制權**]。
@@ -102,7 +170,24 @@ ms.locfileid: "50920177"
 
 當您選擇取消自助購買訂閱時，具有授權的使用者將無法存取產品。 最初購買自助購買訂閱的使用者會收到一封電子郵件，指出訂閱已取消。
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心，移至 [帳單 **]** > [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **帳單** > **產品** ] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **帳單** > **產品** ] 頁面。
+
+::: moniker-end
+
 2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
 3. 選取您要取消的訂閱。
 4. 在 [訂閱詳細資料] 頁面的 [ **訂閱與設定** ] 區段中，選取 [ **取得此訂閱的控制權**]。

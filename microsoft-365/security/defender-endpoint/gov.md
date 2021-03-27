@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 089614fab57950af5f60181ce7ed2116046ad347
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 320913058f1d3cab36b3a279996443c2e4ef117f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379367"
+ms.locfileid: "51382910"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>適用於美國政府客戶的適用於端點的 Microsoft Defender
 
@@ -100,7 +100,7 @@ iOS | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](image
 > 使用 [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)嘗試使用 windows 10 或 windows Server 2019 之前的板載 windows 裝置？ 如果使用 [設定向導](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)，或是使用 [命令列](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) 或 [腳本](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) -將 "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" 參數設定為1，則需要在 "Azure CLOUD" 底下選擇「azure US 政府」。
 
 > [!NOTE]
-> 針對 Linux，您需要版本101.25.72 及更新版本，以及 macOS 的版本101.25.69 和更新版本。 在預覽時，這些版本只適用于「內幕人士快速」通道。 如需指示，請參閱設定 [Linux 軟體存放庫](linux-install-manually.md#configure-the-linux-software-repository) 或 [設定通道名稱 (macOS) ](mac-updates.md#set-the-channel-name) 。
+> 針對 Linux，您需要版本101.25.72 及更新版本，以及 macOS 的版本101.25.69 和更新版本。 在預覽期間，這些版本只適用于「內幕人士快速」通道。 如需指示，請參閱設定 [Linux 軟體存放庫](linux-install-manually.md#configure-the-linux-software-repository) 或 [設定通道名稱 (macOS) ](mac-updates.md#set-the-channel-name) 。
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>針對伺服器使用 Azure Defender 時的作業系統版本
 [針對伺服器使用 Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp)時，可支援下列作業系統版本：
@@ -168,7 +168,7 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 電子郵件通知 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 評估實驗室 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 管理和 APIs：裝置健康情況與符合性報告 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-管理和 APIs：整合協力廠商產品 | ![否](images/svg/check-no.svg) 推出中 | ![否](images/svg/check-no.svg) 推出中 | ![否](images/svg/check-no.svg) 推出中
+管理和 APIs：整合協力廠商產品 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 管理和 APIs：資料流程 API | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 管理和 APIs：威脅防護報告 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 威脅與漏洞管理 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)

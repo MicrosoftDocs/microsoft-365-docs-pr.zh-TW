@@ -1,11 +1,11 @@
 ---
-title: 設定條件式存取原則
+title: 開啟安全性預設值
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,62 +23,65 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何要求 MFA 和設定適用于商務用 Microsoft 365 的條件式存取原則。
-ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 瞭解安全性預設如何協助您提供預先設定的安全性設定，以保護您的組織免受身分識別相關的攻擊。
+ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912183"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398288"
 ---
-# <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重要素驗證並設定條件式存取原則
+# <a name="turn-on-security-defaults"></a>開啟安全性預設值
 
-您可以使用多重要素驗證和條件式存取原則來保護您的資料存取權。 這會增加大量額外的安全性。 Microsoft 提供一組為所有客戶建議的基準條件式存取原則。 基準原則是一組預先定義的原則，可協助保護組織不受許多常見的攻擊。 這些常見的攻擊可能包括密碼噴塗、重新顯示和網路釣魚。
+安全性預設值可提供 Microsoft 代表組織所管理的預先設定安全性設定，協助保護您的組織免受身分識別相關的攻擊。 這些設定包括針對所有系統管理員和使用者帳戶啟用多重要素驗證 (MFA) 。 對大多數的組織而言，安全性預設值提供好的額外登入安全性。
 
-這些原則要求系統管理員和使用者輸入另一種形式的驗證 (稱為多重要素驗證，或在某些情況下進行 MFA) 。 例如，如果您組織中的使用者企圖從不同的國家/地區或從未知的裝置登入 Microsoft 365，該登入可能會被視為危險。 使用者必須提供另一種形式的驗證 (例如指紋或程式碼) ，以證明其身分識別。
+如需安全性預設值及其強制原則的詳細資訊，請參閱 [安全性預設值為何？](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-目前的基準原則包括下列原則：
+如果您的訂閱是在10月22日2019（或後）完成，則會自動啟用安全性預設值，您 &mdash; 應該檢查您的設定以確認。
 
-- 在 Microsoft 365 系統管理中心中設定：
-  - **需要對系統管理員進行 MFA**：對特權最高的系統管理員角色（包括全域管理員）需要多重要素驗證。
-  - **使用者保護**：只有在登入危險時，才需要使用者的多重要素驗證。 
-- 在 Azure Active Directory 入口網站中設定：
-  - **封鎖舊版驗證**：舊版用戶端應用程式和某些新的應用程式不會使用較新、更安全的驗證通訊協定。 這些繼承應用程式可略過條件式存取原則，並對您的環境進行未授權的存取。 這個原則會封鎖不支援條件式存取之用戶端的存取權。 
-  - **需要 MFA 進行服務管理**：在存取管理工具（包括 Azure 入口網站 (，以) 設定基準原則）時，需要多重要素驗證。
+若要在 Azure Active Directory 中啟用安全性預設值 (Azure AD) 或查看是否已啟用：
 
-建議您啟用所有的基準原則。 啟用這些原則之後，系統會提示系統管理員和使用者註冊 Azure AD 多重要素驗證。
+1. 使用全域系統管理員認證登入 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> 。
 
-如需這些原則的詳細資訊，請參閱 [什麼是基準原則](/azure/active-directory/conditional-access/concept-baseline-protection)？
+2. 在左窗格中，選取 [ **全部顯示]，** 然後在 [系統 **管理中心**] 底下，選取 [ **Azure Active Directory**]。
 
-## <a name="require-mfa"></a>需要 MFA
+3. 在 **Azure Active directory 系統管理中心** 的左窗格中，選取 [ **azure active directory**]。
 
-若要要求所有使用者使用第二種形式的 ID: 登入
+4. 從儀表板的左側功能表中，選取 [ **管理** ] 區段中的 [ **屬性**]。
 
-1. 移至 [系統管理中心] <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然後選擇 [ **設定**]。
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Azure Active Directory 系統管理中心的螢幕擷取畫面，顯示 [屬性] 功能表項目目的位置。":::
 
-2. 在 [安裝] 頁面上，選擇 [**建立更安全** 的智慧卡] 中的 [**查看**]。
+5. 在 [ **屬性** ] 頁面的底部，選取 [ **管理安全性預設值**]。
 
-    ![讓登入更安全的卡片。](../media/setupmfa.png)
-3. 在 [使登入更安全] 頁面上，選擇 [ **入門**]。
-
-4. 在 [強化登入安全性] 窗格中，選取 [ **需要系統管理員的多重要素驗證** ] 旁的核取方塊，並 **要求使用者註冊多重要素驗證，並在偵測到風險時，封鎖存取權**。
-    請務必在 [**尋找使用者**] 方塊中，從 MFA 要求中排除 [緊急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)或「中斷玻璃」管理帳戶。
-
-    ![增強內建安全性頁面。](../media/requiremfa.png)
-
-5. 選擇頁面底部的 [ **建立原則** ]。
-
-## <a name="set-up-baseline-policies"></a>設定基準原則
-
-1. 移至 [azure 入口網站](https://portal.azure.com)，然後流覽至 **azure Active Directory** \> **安全性** \> **條件式存取** ，以建立 **新的原則**。
-
-請參閱下列每個原則的特定指示： <br>
-    - [需要對系統管理員進行 MFA](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [使用者需要 MFA](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [封鎖舊版驗證](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [需要 MFA 進行服務管理](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+6. 在右窗格中，您將會看到 [ **啟用安全性預設值** ] 設定。 如果選取 **[是]** ，則安全性預設值已啟用，不需要進一步的動作。 如果目前未啟用安全性預設值，請選取 **[是]** 加以啟用，然後選取 [ **儲存**]。
 
 > [!NOTE]
-> 預覽原則已不存在，使用者將需要建立其本身的原則。
+> 如果您已使用條件式存取原則，則必須在使用安全性預設值之前將其關閉。
+>
+> 您可以使用安全性預設值或條件式存取原則，但不能同時使用這兩種原則。
 
-您可以設定額外的原則，例如要求核准的用戶端應用程式。 如需詳細資訊，請參閱 [條件式存取檔](/azure/active-directory/conditional-access/)。
+## <a name="consider-using-conditional-access"></a>考慮使用條件式存取
+
+如果您的組織有複雜的安全性需求，或需要更細微地控制安全性原則，則應該考慮使用條件式存取，而不是安全性預設值，以取得類似或更高的安全性狀況。 
+
+條件式存取可讓您建立及定義回應登入事件並在使用者獲准存取應用程式或服務之前要求其他動作的原則。 條件式存取原則可以細微且特定，可讓使用者在任何時刻和何地都能獲得生產力，但同時也會保護您的組織。
+
+安全性預設值可供所有客戶使用，而條件式存取需要授權執行下列其中一個計畫：
+
+- Azure Active Directory Premium P1 或 P2
+- Microsoft 365 商務進階版
+- Microsoft 365 E3 或 E5
+- 企業行動性 & 安全性 E3 或 E5
+
+如果您想要使用條件式存取來設定與安全性預設啟用的原則同等的原則，請參閱下列逐步指南：
+
+- [要求系統管理員使用 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [Azure 管理需要 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+- [封鎖舊版驗證](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [要求所有使用者使用 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [需要 AZURE AD MFA 註冊](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) -需要 Azure Ad Identity Protection，也就是 Azure Active Directory Premium P2 的一部分
+
+若要深入瞭解條件式存取，請參閱 [什麼是條件式存取？](/azure/active-directory/conditional-access/overview) 如需建立條件式存取原則的詳細資訊，請參閱 [建立條件式存取原則](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。
+
+> [!NOTE]
+> 如果您有提供條件式存取的計畫或授權，但尚未建立任何條件式存取原則，您可以使用安全性預設值。 不過，您必須先關閉安全性預設值，才能使用條件式存取原則。

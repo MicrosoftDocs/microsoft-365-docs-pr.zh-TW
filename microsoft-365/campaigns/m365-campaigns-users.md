@@ -2,10 +2,10 @@
 title: 這些安全性建議如何影響您的使用者
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 商務版的安全性建議如何影響您的使用者並保護您的資料。
-ms.openlocfilehash: 91f6b1fb9ddd5938eb8a788ce7594ec8ab9908c3
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: b8464396887daa408e94cfb6c151d998dd8b1ae2
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044227"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398226"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>這些安全性建議如何影響您的使用者
 

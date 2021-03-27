@@ -5,42 +5,35 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
-- commerce
 ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
+- okr_smb
+- commerce
 search.appverid:
 - MET150
 description: 瞭解如何從使用者帳戶取消指派授權。
 ms.date: 07/01/2020
-ms.openlocfilehash: 858daaf0069ecba3e6ff65ce957462764b45c22c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 550136c2cfa8d81a31e52a4313dc9c967a55d56e
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915191"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398190"
 ---
 # <a name="unassign-licenses-from-users"></a>取消指派給使用者的授權
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 您可以從 [作用中 **使用者** ] 頁面或 [ **授權** ] 頁面上的使用者取消指派授權。 您所使用的方法，取決於您是否要從特定使用者取消指派產品授權，或從特定產品取消指派使用者授權。
 
-::: moniker-end
+> [!NOTE]
+> 身為系統管理員，您無法指派或取消指派組織中使用者購買之自助購買訂閱的授權。 您可以 [接管自助購買訂閱](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)，然後指派或取消指派授權。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -48,21 +41,31 @@ ms.locfileid: "50915191"
 - 您可以[使用 Office 365 PowerShell 移除使用者帳戶中的授權](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)。
 - 您也可以刪除已獲指派授權的 [使用者帳戶](../add-users/delete-a-user.md) ，讓其他使用者可以使用授權。 當您刪除使用者帳戶時，他們的授權會立即可指派給其他人。
 
-::: moniker range="o365-worldwide"
-
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>使用授權頁面以取消指派授權
 
 當您使用 [ **授權** ] 頁面取消指派授權時，您會取消指派最多20個使用者之特定產品的授權。
 
+::: moniker range="o365-worldwide"
+
 1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **帳單** > **授權** ] 頁面。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **帳單** > **授權** ] 頁面。
+
+::: moniker-end
+
 2. 選取您要指派授權的產品。
 3. 選取您要指派授權的使用者。
 4. 選取 [未 **指派的授權**]。
 5. 在 [未 **指派的授權** ] 方塊中，選取 [ **取消指派**]。
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>使用 [作用中使用者] 頁面以取消指派授權
 
@@ -70,71 +73,52 @@ ms.locfileid: "50915191"
 
 ### <a name="unassign-licenses-from-one-user"></a>從某位使用者取消指派授權
   
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **帳單** 作用中 > **使用者** ] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **帳單** 作用中 > **使用者** ] 頁面。
+
+::: moniker-end
+
 2. 選取您要取消指派授權之使用者的列。
 3. 在右窗格中，選取 **[授權與應用程式]**。
 4. 展開 [ **授權** ] 區段，然後清除您要取消指派之授權的方塊，然後選取 [ **儲存變更**]。
 
+###  <a name="unassign-licenses-from-multiple-users"></a>從多位使用者取消指派授權
+
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-## <a name="unassign-licenses-from-one-user"></a>從某位使用者取消指派授權
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
-2. 挑選您要取消指派授權的使用者。
-3. 在右側的 [ **產品授權** ] 列中，選取 [ **編輯**]。
-4. 在 [ **產品授權** ] 窗格中，針對您想要取消指派給使用者的授權，將開關切換到 [ **關閉** ] 位置。 例如，如果您關閉 Office 365 企業版 E3 授權，它會在該使用者的授權和該授權下 unassigns 所有服務。
-5. 在 **[產品授權]** 窗格底部，選擇 **[儲存]** \> **[關閉]** \> **[關閉]**。
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **帳單** 作用中 > **使用者** ] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-## <a name="unassign-licenses-from-one-user"></a>從某位使用者取消指派授權
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
-2. 挑選您要取消指派授權的使用者。
-3. 在右側的 [ **產品授權** ] 列中，選取 [ **編輯**]。
-4. 在 [ **產品授權** ] 窗格中，針對您想要取消指派給使用者的授權，將開關切換到 [ **關閉** ] 位置。 例如，如果您關閉 Office 365 企業版 E3 授權，它會在該使用者的授權和該授權下 unassigns 所有服務。
-5. 在 **[產品授權]** 窗格底部，選擇 **[儲存]** \> **[關閉]** \> **[關閉]**。
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **帳單** 作用中 > **使用者** ] 頁面。
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-###  <a name="unassign-licenses-from-multiple-users"></a>從多位使用者取消指派授權
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 2. 選取您要取消指派授權的使用者名稱旁邊的圓圈。
 3. 在頂端，選取 **[更多選項(...)]**，然後選取 **[管理產品授權]**。
 4. 在 **[管理產品授權]** 窗格中，選取 **[取得現有產品授權指派]** \> **[下一步]**。
 5. 在 [ **取代現有產品** ] 窗格的底部，選取 [ **從選取的使用者移除所有產品授權** ] 核取方塊，然後選取 [ **取代** \> **Close**]。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-##  <a name="unassign-licenses-from-multiple-users"></a>從多位使用者取消指派授權
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
-2. 選取您要取消指派所有授權的使用者名稱旁的方塊。
-3. 在 **[大量動作]** 窗格中，選取 **[編輯產品授權]**。
-4. 在 [ **取代現有產品** ] 窗格中，選取 [ **取代現有產品授權指派** \> **] [下一步]**。
-5. 在 [ **取代現有產品** ] 窗格的底部，選取 [ **從選取的使用者移除所有產品授權** ] 核取方塊，然後選取 [ **取代** \> **關閉**] [關閉] \> ****。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-##  <a name="unassign-licenses-from-multiple-users"></a>從多位使用者取消指派授權
-  
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
-2. 選取您要取消指派所有授權的使用者名稱旁的方塊。
-3. 在 **[大量動作]** 窗格中，選取 **[編輯產品授權]**。
-4. 在 [ **取代現有產品** ] 窗格中，選取 [ **取代現有產品授權指派** \> **] [下一步]**。
-5. 在 [ **取代現有產品** ] 窗格的底部，選取 [ **從選取的使用者移除所有產品授權** ] 核取方塊，然後選取 [ **取代** \> **關閉**] [關閉] \> ****。
-
-::: moniker-end
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>當您移除授權時，使用者的資料會發生什麼事？
 
