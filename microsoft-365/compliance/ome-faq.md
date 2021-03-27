@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d4181482bf8ad7460480a70c762fe60fd28ad0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051745"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394681"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -62,7 +62,7 @@ OME 結合電子郵件加密和版權管理功能。 Rights management 功能由
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>使用 Azure 資訊保護執行 OME 和 BYOK 變更 Microsoft 對協力廠商資料要求的處理方式，例如 subpoenas？
 
-否。 OME 和提供和控制您自己的加密金鑰（稱為 BYOK）的選項，Azure 資訊保護並非設計用來回應法律強制執行 subpoenas。 OME （搭配 BYOK for Azure 資訊保護）是專為以規範為重點的客戶而設計。 Microsoft 會非常認真地對客戶資料採取協力廠商要求。 作為雲端服務提供者，我們永遠提倡客戶資料的隱私權。 當我們取得傳票時，我們一定會嘗試將協力廠商重新導向至客戶以取得資訊。  (請閱讀 Brad Smith 的博客： [防止來自政府窺探) 的客戶資料](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) 。 我們會定期發佈我們所收到之要求的詳細資訊。 如需協力廠商資料要求的詳細資訊，請參閱 [回應政府和法律強制要求，以](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) 在 Microsoft 信任中心存取客戶資料。 此外，請參閱 [線上服務條款 (OST) ](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的「客戶資料洩漏」。
+否。 OME 和提供和控制您自己的加密金鑰（稱為 BYOK）的選項，Azure 資訊保護並非設計用來回應法律強制執行 subpoenas。 OME （搭配 BYOK for Azure 資訊保護）是專為以規範為重點的客戶而設計。 Microsoft 會認真對待客戶資料的協力廠商要求。 作為雲端服務提供者，我們永遠提倡客戶資料的隱私權。 當我們取得傳票時，我們一定會嘗試將協力廠商重新導向至客戶以取得資訊。  (讀取 Brad Smith 的博客： [防止客戶資料) 政府窺探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) 。 我們會定期發佈我們所收到之要求的詳細資訊。 如需協力廠商資料要求的詳細資訊，請參閱 [回應政府和法律強制要求，以](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) 在 Microsoft 信任中心存取客戶資料。 此外，請參閱 [線上服務條款 (OST) ](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的「客戶資料洩漏」。
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>如何與舊版 Office 365 郵件加密相關的此項功能 (OME) 和資訊版權管理 (IRM) 功能？
 
@@ -120,7 +120,7 @@ Microsoft 365 使用者可以使用 Outlook 版本2019和 Microsoft 365 的 Outl
 
 這個簡短的答案是肯定！ PDF 加密可讓您透過安全通訊或安全共同作業來保護機密 PDF 檔。 當您傳送電子郵件時，Office 365 服務會加密 PDF 檔案附件而非 Outlook 用戶端。
 
-針對網頁版 outlook、Outlook for iOS 和 Outlook for Android，您可以加密您傳送的 Pdf，而不需要任何其他步驟。 這些用戶端原本都支援 PDF 加密。
+針對網頁版 outlook、Outlook for iOS 和 Outlook for Android，您可以加密您傳送的 Pdf，而不需要執行任何其他步驟。 這些用戶端原本都支援 PDF 加密。
 
 Outlook 桌面不會以本機方式支援 PDF 檔案附件的加密。 相反地，您必須設定 Exchange 郵件流程規則或 DLP，以先將加密套用至 PDF 附件。 當您使用 PDF 附件從 Outlook Desktop 傳送郵件時，用戶端會先將郵件與附件一起傳送給服務。 當服務接收到檔案時，服務會在 Exchange Online 中將 OME 保護的資料遺失防護 (DLP) 原則或郵件流程規則。 接下來，Exchange Online 會傳送包含受保護的 PDF 檔附件的郵件。
 
@@ -165,7 +165,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>是否有任何報告功能或加密電子郵件的洞察力？
 
-在安全性與合規性中心有一個加密報告。 請參閱 [在安全性 & 規範中心中查看電子郵件安全性報告](../security/defender-365-security/view-email-security-reports.md)。
+在安全性與合規性中心有一個加密報告。 請參閱 [在安全性 & 規範中心中查看電子郵件安全性報告](../security/office-365-security/view-email-security-reports.md)。
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>是否可以使用郵件加密搭配電子檔探索等相容性功能？
 
@@ -173,7 +173,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 
 ## <a name="can-i-remove-encryption-from-email"></a>我可以從電子郵件移除加密嗎？
 
-系統管理員可以設定郵件流程規則，以移除加密。 您無法從其他組織所套用的郵件中，使用郵件流程規則來移除加密，除非郵件是 enrypted 使用僅限加密的保護。
+系統管理員可以設定郵件流程規則，以移除加密。 您無法從其他組織所套用的郵件中，使用郵件流程規則來移除加密，除非郵件是以加密保護的方式加密。
 
 ## <a name="is-delegated-access-supported"></a>是否支援委派存取？
 

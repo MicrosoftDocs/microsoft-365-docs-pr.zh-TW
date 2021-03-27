@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將瞭解如何使用 Microsoft 365 中的客戶金鑰來處理服務加密。
-ms.openlocfilehash: 9ed4b523c77cf1fa80d23e8fbe5c93e938f222a2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 21291dc45cd634cd5b6a88c4e58972c17486724f
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916885"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394721"
 ---
 # <a name="service-encryption-with-customer-key"></a>客戶金鑰服務加密
 
@@ -37,7 +37,7 @@ Microsoft 365 提供使用 BitLocker 和分散式金鑰管理員 (DKM) 所啟用
 
 ## <a name="customer-key-encrypts-data-at-rest-in-office-365"></a>客戶金鑰會在 Office 365 中加密靜態資料
 
-使用您提供的金鑰，客戶金鑰加密：
+使用您提供的金鑰，應用層級的客戶機碼會加密：
 
 - SharePoint 線上、商務及小組檔案的 OneDrive。
 - 上傳至商務 OneDrive 的檔案。

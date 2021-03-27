@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 瞭解 Office 365 全域管理員如何將組織的署名套用至加密的電子郵件，& 加密入口網站的內容。
-ms.openlocfilehash: 3c5dc089363a7dfe895e79f03e5a01cb57c2ad57
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2898e12ad00d11cd9eb2f3be5d817ef113607e79
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923503"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394711"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>將貴組織的品牌新增至 Microsoft 365，以進行商務郵件加密加密郵件
 
@@ -121,14 +121,13 @@ ms.locfileid: "50923503"
 
    下表說明加密自訂選項的預設值。
 
-   **將加密體驗的這項功能回復為預設文字和影像**|**使用這些命令**|
+   |將加密體驗的這項功能回復為預設文字和影像|使用這些命令|
    |:-----|:-----|
-   |附帶加密電子郵件的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **範例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |附帶加密電子郵件的預設文字。  預設文字會出現在檢視加密郵件的指示上方。|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **範例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
    |包含加密訊息之電子郵件中的免責聲明|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <br/> **範例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
    |出現在加密郵件檢視入口網站上方的文字|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <br/> **範例回復為預設值：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
    |標誌|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <br/> **範例回復為預設值：** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
    |背景色彩|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <br/> **範例回復為預設值：** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
-   |
 
 ## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a> (高級郵件加密移除自訂商標範本) 
 

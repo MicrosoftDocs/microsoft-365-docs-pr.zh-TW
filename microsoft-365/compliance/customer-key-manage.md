@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 在您設定客戶金鑰之後，請瞭解如何透過還原 AKV 機碼來管理它，以及管理許可權和您的資料加密原則。
-ms.openlocfilehash: 8f55667254ce7f5cbd9d4de274623ca4a3c4aa9d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 284a8ff24fef2f7e8b807477c99e20aaf593552e
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909945"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394663"
 ---
 # <a name="manage-customer-key"></a>管理客戶金鑰
 
@@ -168,9 +168,11 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
   - **滾動：** 正在進行金鑰擲入。 如果地理位置的機碼正在進行滾動，您也會在網站的多少百分比上顯示完成金鑰滾動作業的資訊，讓您能夠監控進度。
 
-## <a name="unassign-a-dep-from-a-mailbox"></a>從信箱取消指派 DEP
+## <a name="roll-back-from-customer-key-to-microsoft-managed-keys"></a>從客戶金鑰回復至 Microsoft 受管理的金鑰
 
-您可以使用 [設定信箱] PowerShell Cmdlet 從信箱取消指派 DEP，並將設定 `DataEncryptionPolicy` 為 `$NULL` 。 執行此 Cmdlet unassigns 目前指派的 DEP，並使用與預設 Microsoft 管理金鑰相關聯的 DEP 來 reencrypts 信箱。 您無法取消指派 Microsoft managed 機碼所用的 DEP。 如果您不想使用 Microsoft 受管理的金鑰，您可以將另一個 DEP 指派給信箱。
+針對承租人層級的客戶機碼，您需要使用客戶金鑰中的「脫離」要求與 Microsoft 聯繫。 要求會由「呼叫工程小組」處理。
+
+針對應用層級的用戶端機碼，您可以使用 [設定信箱] PowerShell Cmdlet，從信箱取消指派 DEP，然後將設定 `DataEncryptionPolicy` 為 `$NULL` 。 執行此 Cmdlet unassigns 目前指派的 DEP，並使用與預設 Microsoft 管理金鑰相關聯的 DEP 來 reencrypts 信箱。 您無法取消指派 Microsoft managed 機碼所用的 DEP。 如果您不想使用 Microsoft 受管理的金鑰，您可以將其他客戶金鑰 DEP 指派給信箱。
 
 若要使用 Set-Mailbox PowerShell Cmdlet 從信箱中取消指派 DEP，請完成下列步驟。
 
@@ -184,7 +186,7 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>撤銷您的金鑰，並啟動資料清除路徑處理常式
 
-您可以控制所有根機碼（包括可用性機碼）的吊銷。 客戶金鑰可讓您控制法規需求對您的結束規劃方面。 如果您決定撤銷您的金鑰以清除您的資料並退出服務，服務會在資料清除程式完成之後刪除可用性金鑰。
+您可以控制所有根機碼（包括可用性機碼）的吊銷。 客戶金鑰可讓您控制法規需求對您的結束規劃方面。 如果您決定撤銷您的金鑰以清除您的資料並退出服務，服務會在資料清除程式完成之後刪除可用性金鑰。 您無法執行租使用者層級原則的資料清除。
 
 Microsoft 365 會審核和驗證資料清除路徑。 如需詳細資訊，請參閱 [服務信任入口網站](https://servicetrust.microsoft.com/)上可用的 SSAE 18 SOC 2 報告。 此外，Microsoft 建議下列檔：
 

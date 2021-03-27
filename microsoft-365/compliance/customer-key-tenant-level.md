@@ -3,7 +3,7 @@ title: 租用戶等級的 Microsoft 365 客戶金鑰 (公開預覽)
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 2/17/2021
+ms.date: 3/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: 瞭解如何為您的 Microsoft 365 租使用者中的所有資料設定客戶金鑰。
-ms.openlocfilehash: f50986b4e72808d4a1cd4dc8ee0182eb9c0a2455
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 瞭解如何在租使用者層級為 Microsoft 365 中的資料設定客戶金鑰。
+ms.openlocfilehash: 811b153d5b0a472c6e542851fec45f1f42bca59b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922687"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394701"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>在承租人層級 (公開預覽的 Microsoft 365 客戶金鑰概述) 
 
-使用您提供的金鑰，您可以建立資料加密原則 (DEP) 並指派給租使用者。 DEP 會針對這些工作負載在租使用者上進行資料加密：
+使用您提供的金鑰，您可以建立資料加密原則 (DEP) 並指派給租使用者。 您建立的租使用者型 DEP 會加密下列資料：
 
 - 小組聊天訊息 (1:1 聊天、群組交談、會議聊天及通道交談) 
 - 小組媒體郵件 (影像、程式碼片段、影片郵件、音訊訊息、wiki 影像) 
@@ -34,39 +34,51 @@ ms.locfileid: "50922687"
 - 小組狀態郵件
 - Exchange Online 的使用者和信號資訊
 - Exchange Online 信箱，但在應用層級尚未加密客戶金鑰 DEPs
+- MIP exact data match (EDM) 資料– (資料檔案架構、規則套件和 salts 用來散列敏感性資料) 
 
-針對 Microsoft 小組，租使用者層級的客戶機碼會從 DEP 指派給租使用者時，加密新的資料。 公開預覽不支援加密過去的資料。 針對 Exchange Online，客戶金鑰會加密所有現有和新的資料。
+針對 Microsoft 資訊保護和 Microsoft 小組，租使用者層級的客戶機碼會從您指派 DEP 給租使用者時，加密新的資料。 公開預覽不支援加密過去的資料。 針對 Exchange Online，客戶金鑰會加密所有現有和新的資料。
 
-您可以為每個租使用者建立多個 DEPs，但在任何時間點都只能指定一個 DEP。 當您指派 DEP 時，系統會自動開始加密，但可能需要一些時間才能完成，具體取決於您的承租人的大小。
+您可以為每個租使用者建立多個 DEPs，但一次只能指派一個 DEP。 當您指派 DEP 時，加密會自動開始，但需要一些時間才能完成，具體取決於您的承租人的大小。
 
 ## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>承租人層級原則新增更多控制至 Microsoft 365 的客戶機碼
 
 如果您已設定 Exchange Online 和 Sharepoint Online 的客戶金鑰，以下是新租使用者層級公開預覽的方式。
 
-您建立的承租人層級加密原則會加密 microsoft 團隊和 Microsoft 365 中的 Exchange Online 工作負載的所有資料。 不過，對於 Exchange Online，如果您已將客戶金鑰 DEPs 指派給個別信箱，則租使用者層級原則不會覆寫這些 DEPs。 租使用者層級原則只會加密尚未指定信箱層級客戶金鑰 DEP 的信箱。
+您建立的承租人層級加密原則會加密 microsoft 團隊和 Microsoft 365 中的 Exchange Online 工作負載的所有資料。 不過，對於 Exchange Online，如果您已將客戶金鑰 DEPs 指派給個別信箱，則租使用者層級原則不會覆寫這些 DEPs。 租使用者層級原則只會加密尚未指定信箱層級客戶金鑰 DEP 的信箱。 當您使用租使用者層級 DEP 加密使用者信箱時，其所有內容都會加密。 如需在應用層級使用 DEP 加密的相關資訊，請參閱 [Service encryption With Customer Key](customer-key-overview.md)。
 
-例如，Microsoft 小組檔案和部分小組的呼叫和會議錄製會儲存在商務用 OneDrive 中，SharePoint 是由 SharePoint 線上 DEP 加密。 單一 SharePoint 線上 DEP 會加密單一地理位置內的內容。
+## <a name="data-that-isnt-encrypted-with-customer-key-at-the-tenant-level"></a>未在租使用者層級使用客戶金鑰加密的資料
+
+客戶機碼不會加密租使用者層級的下列資料類型。 相反地，Microsoft 365 會使用其他類型的加密來保護此資料。
+
+- 您已在應用層級使用客戶金鑰 DEP 加密的 Exchange online 信箱。 未指派客戶金鑰 DEP 的信箱將會以租使用者層級 DEP 加密。 這種相片順序表示您可以使用租使用者層級 DEP 來加密某些信箱，並使用應用層級 DEPs 加密某些信箱。
+- SharePoint 和 OneDrive 商務在應用層級使用客戶金鑰。 單一 DEP 會為單一地理位置的 SharePoint 加密內容。
+- Microsoft 小組檔案和部分小組通話和會議錄製儲存在商務用 OneDrive 中，且 SharePoint 是由 SharePoint 線上 DEP 所加密。
+
+Microsoft 365 客戶機碼目前不支援的任何工作負載或案例。
+
+- 其他 Microsoft 365 工作負載（如 Yammer、Planner 等等）。
+- 小組現場事件和 Q&即時事件中。 對於小組，此案例是唯一不是由租使用者金鑰在租使用者上加密的案例。
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>在承租人層級設定客戶機碼 (公開預覽) 
 
-這些步驟類似，但與在應用層級設定客戶機碼的步驟並不相同。 您應只對測試承租人中的測試資料使用此公開預覽。 請勿在生產資料或您的實際執行環境中使用此版本。 如果您已具備客戶金鑰的實際執行部署，請使用下列步驟，在測試環境中的承租人層級設定客戶機碼。 指派租使用者層級的 DEP 給租使用者後，您就可以開始驗證程式並 m365ck@microsoft.com 任何問題或考慮事項。 您也可以在 [Microsoft 365 的靜態加密驗證指示](https://aka.ms/CustomerKey/PublicPreviewValidation)的公開預覽中，找到已記錄的驗證步驟。
+這些步驟類似，但與在應用層級設定客戶機碼的步驟並不相同。 請只搭配測試承租人中的測試資料使用此公開預覽。 請勿在生產資料或您的實際執行環境中使用此版本。 如果您已具備客戶金鑰的實際執行部署，請使用下列步驟，在測試環境中的承租人層級設定客戶機碼。 在您將租使用者層級 DEP 指派給租使用者之後，您可以開始驗證程式並與 m365ck@microsoft.com 聯繫，以提出任何問題或考慮。 您也可以在 [Microsoft 365 的靜態加密驗證指示](https://aka.ms/CustomerKey/PublicPreviewValidation)的公開預覽中，找到已記錄的驗證步驟。
 
 您可以遠端連線至 Azure PowerShell，以完成大部分的工作。 為了獲得最佳結果，請使用版本4.4.0 或更新版本的 Azure PowerShell。
 
-開始之前，請確定下列各項：
+開始之前：
 
 - 您必須使用具有合規性系統管理員角色的工作或學校帳戶，以在租使用者層級設定客戶金鑰。
-- 確定您的組織有適當的授權。 使用企業合約或雲端服務提供者，以支付已開發票的 Azure 訂閱。 客戶機碼不支援使用「隨付」方案或信用卡使用信用卡購買的 Azure 訂閱。 從 office 365 的2020年4月1日開始，于 office 365 E5，M365 E5，M365 E5 規範，以及 M365 E5 & 控管 SKUs 中提供的資訊保護。 Office 365 Advanced 相容性 SKU 已無法再提供購置新的授權。 現有的 Office 365 Advanced 相容性授權會繼續受到支援。 雖然在具有適當授權的承租人下可以啟用服務，但您仍然應該確定所有從服務受益的使用者都有適當的授權。
+- 確定您的組織有適當的授權。 使用企業合約或雲端服務提供者，以支付已開發票的 Azure 訂閱。 客戶機碼不支援使用「隨付」方案或信用卡使用信用卡購買的 Azure 訂閱。 從 office 365 的2020年4月1日開始，于 office 365 E5、Microsoft 365 E5、Microsoft 365 E5 規範，以及 Microsoft 365 E5 資訊保護 & 控管 SKUs。 Office 365 Advanced 合規性 SKU 已無法再提供新的授權。 現有的 Office 365 Advanced 相容性授權會繼續受到支援。 雖然租使用者必須至少有一個適當授權的使用者才能啟用服務，但您仍然應該確定所有從服務受益的使用者都有適當的授權。
 
 ### <a name="create-two-new-azure-subscriptions"></a>建立兩個新的 Azure 訂閱
 
-客戶金鑰需要每個資料加密原則 (DEP) 的兩個金鑰。 若要做到這一點，您必須建立兩個 Azure 訂閱。 建議的最佳作法是，您組織中的個別成員可以在每個訂閱中設定一個金鑰。 請只使用這些 Azure 訂閱來管理 Microsoft 365 的加密金鑰。 這會保護您的組織，以防其中一個操作員意外、故意或惡意刪除，或 mismanages 其負責的金鑰。
+客戶金鑰需要每個資料加密原則 (DEP) 的兩個金鑰。 若要建立兩個金鑰，您必須建立兩個 Azure 訂閱。 建議的最佳作法是，您組織中的個別成員可以在每個訂閱中設定一個金鑰。 請只使用這些 Azure 訂閱來管理 Microsoft 365 的加密金鑰。 遵循這些指導方針有助於保護您的組織，以防其中一個操作員意外、故意或惡意刪除，或 mismanages 其負責的金鑰。
 
 您可以為組織建立的 Azure 訂閱數目沒有實際的限制。 遵循這項最佳作法可協助將「因人」錯誤所造成的影響降至最低，以協助管理客戶金鑰所使用的資源。
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>註冊 Azure 訂閱以使用強制保留期間
 
-暫時或永久遺失根加密金鑰的功能可能會造成中斷，甚至可能造成資料遺失。 因此，與客戶金鑰搭配使用的資源需要加強保護。 與客戶金鑰搭配使用的所有 Azure 資源，除了預設設定之外，還提供保護機制。 您可以使用 Azure 訂閱進行標記或註冊，以防止立即和不可撤銷的取消。 這稱為註冊強制保留期間。 在必要保留期間內註冊 Azure 訂閱所需的步驟，必須與 Microsoft 共同作業。 此程式最多可長達五個工作日。 先前，這有時候稱為「不要取消」。
+暫時或永久遺失根加密金鑰的功能可能會造成中斷，甚至可能造成資料遺失。 因此，與客戶金鑰搭配使用的資源需要加強保護。 與客戶金鑰搭配使用的所有 Azure 資源，除了預設設定之外，還提供保護機制。 您可以使用 Azure 訂閱進行標記或註冊，以防止立即和不可撤銷的取消。 此程式稱為註冊強制保留期間。 在必要保留期間內註冊 Azure 訂閱所需的步驟，必須與 Microsoft 共同作業。 此程式最多可長達五個工作日。 先前，此程式有時稱為「不要取消」。
   
 在聯繫 Microsoft 365 團隊之前，您必須針對每個用客戶金鑰使用的 Azure 訂閱執行下列步驟。 開始之前，請確定您已安裝 [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) 模組。
 
@@ -79,7 +91,7 @@ ms.locfileid: "50922687"
    Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
-3. 請與 Microsoft 聯繫以在 [m365ck@microsoft.com](mailto:m365ck@microsoft.com)完成此程式。 在您的電子郵件中包含下列專案：
+3. 請與 Microsoft 聯繫以在 [m365ck@microsoft.com](mailto:m365ck@microsoft.com)完成此程式。 在您的電子郵件中包含下列內容：
 
    主旨 **：客戶** 金鑰\<*Your tenant's fully-qualified domain name*\>
 
@@ -113,11 +125,11 @@ ms.locfileid: "50922687"
 
 使用主要保管區的一般前置詞，並包含主要 vault 和機碼的使用和範圍的縮寫。 例如，針對存放庫在北美的 Contoso 服務，可能的名稱成對為 Contoso-O365-NA-VaultA1 和 Contoso-O365-NA-VaultA2。 保存庫名稱是 Azure 內全域唯一的字串，因此，您可能需要嘗試所需名稱的變化，以防其他 Azure 客戶已索取所需的名稱。 設定後，就無法變更保存庫名稱，因此最佳作法是設定安裝的書面計畫，然後使用第二個人驗證計畫是否正確執行。
 
-如果可能，請在非成對區域中建立您的電子倉庫。 配對的 Azure 區域可提供跨服務失敗網域的高可用性。 因此，區域配對可以視為彼此的備份區域。 這表示位於某個地區的 Azure 資源會透過成對區域自動取得容錯。 基於此原因，針對在地區是成對的資料加密原則中所使用的兩個保存庫選擇地區時，只會使用兩個可用區域的可用性。 大多數地理有兩個地區，所以尚不能選取非成對區域。 如有可能，請選擇兩個不成對的區域，以用於資料加密原則的兩個保存庫。 其優點是共有四個地區的可用性。 如需詳細資訊，請參閱 [Business 持續性和嚴重損壞修復 (BCDR) ： Azure 成對區域](/azure/best-practices-availability-paired-regions) 的目前區域配對清單。
+如果可能，請在非成對區域中建立您的電子倉庫。 配對的 Azure 區域可提供跨服務失敗網域的高可用性。 因此，區域配對可以視為彼此的備份區域。 位於某個地區的 Azure 資源會透過成對區域自動取得容錯。 在地區是成對的資料加密原則中，選擇用於兩個電子倉庫的地區，這表示僅有兩個可用區域的可用性。 大多數地理有兩個地區，所以尚不能選取非成對區域。 如有可能，請選擇兩個不成對的區域，以用於資料加密原則的兩個保存庫。 此案例的主要優點是共有四個地區的可用性。 如需詳細資訊，請參閱 [Business 持續性和嚴重損壞修復 (BCDR) ： Azure 成對區域](/azure/best-practices-availability-paired-regions) 的目前區域配對清單。
 
 ### <a name="assign-permissions-to-each-key-vault"></a>將許可權指派給每個金鑰保存庫
 
-針對每個金鑰保存庫，您必須根據您的實施，為客戶機碼定義三組不同的許可權。 例如，您必須為下列各項專案定義一組許可權：
+針對每個金鑰保存庫，您必須根據您的實施，為客戶機碼定義三組不同的許可權。 例如，您必須為下列各項定義一組許可權：
   
 - **主要 vault 系統管理員** ，會針對您的組織執行重要 vault 的日常管理。 這些工作包括備份、建立、取得、匯入、清單及還原。
 
@@ -208,7 +220,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>檢查機碼的恢復層級
 
-Microsoft 365 要求 Azure Key Vault 訂閱設定為 [不要取消]，且客戶機碼使用的金鑰已啟用 [虛刪除]。 您可以查看金鑰上的復原層級，確認這一點。
+Microsoft 365 要求 Azure Key Vault 訂閱設定為 [不要取消]，且客戶機碼使用的金鑰已啟用 [虛刪除]。 您可以查看金鑰上的復原層級，以確認這些設定。
   
 若要檢查機碼的復原層級，請在 Azure PowerShell 中執行 Get-AzKeyVaultKey Cmdlet，如下所示：
   
@@ -220,7 +232,7 @@ Microsoft 365 要求 Azure Key Vault 訂閱設定為 [不要取消]，且客戶�
 
 ### <a name="back-up-azure-key-vault"></a>備份 Azure Key Vault
 
-立即建立或變更索引鍵，執行備份及儲存備份的備份，不論是線上還是離線。 不要將離線副本連線到任何網路。 請改為將它們儲存在實體安全或商業儲存設施中。 至少應有一個備份副本儲存在發生嚴重損壞時可存取的位置。 備份 blob 是一種還原重要材料的唯一方法，應永久銷毀主要 Vault 金鑰，否則無法使用。 Azure Key Vault 外部的金鑰和匯入到 Azure Key Vault 的金鑰不會做為備份，因為客戶金鑰使用金鑰所需的中繼資料不存在於外部金鑰。 只有從 Azure 金鑰保存庫取得的備份可用於使用客戶金鑰進行還原作業。 因此，請務必在上載或建立金鑰時進行 Azure 金鑰 Vault 備份。
+立即建立或變更機碼，然後備份機碼，並在線上及離線的情況下，儲存備份的副本。 不要將離線副本連線到任何網路。 請改為將它們儲存在實體安全或商業儲存設施中。 至少應有一個備份副本儲存在發生嚴重損壞時可存取的位置。 備份 blob 是一種還原重要材料的唯一方法，應永久銷毀主要 Vault 金鑰，否則無法使用。 Azure Key Vault 外部的金鑰和匯入到 Azure Key Vault 的金鑰，不會做為備份的限制，因為客戶金鑰使用金鑰所需的中繼資料並不存在於外部金鑰。 只有從 Azure 金鑰保存庫取得的備份可用於使用客戶金鑰進行還原作業。 所以，您必須在上傳或建立金鑰時進行 Azure 金鑰保存庫備份。
   
 若要建立 Azure Key Vault 機碼的備份，請執行 [AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) Cmdlet，如下所示：
 
@@ -311,7 +323,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 
 | 名稱 | 描述 | 選用 (Y/N)  |
 |----------|----------|---------|
-|姓名|資料加密原則的易記名稱|N|
+|名稱|資料加密原則的易記名稱|N|
 |AzureKeyIDs|指定 Azure Key Vault 機碼的兩個 URI 值，以逗號分隔，以與資料加密原則產生關聯|N|
 |描述|資料加密原則的描述|N|
 
@@ -321,7 +333,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
-描述：此指令程式用於設定預設資料加密原則。 這個原則將用來加密所有支援工作負載中的資料。 
+描述：此指令程式用於設定預設資料加密原則。 這個原則將用來加密所有支援工作負載中的資料。
 
 範例：
 
@@ -403,11 +415,11 @@ Get-M365DataAtRestEncryptionPolicyAssignment
 
 描述：此 Cmdlet 會列出目前指派給承租人的原則。
 
-## <a name="offboarding-from-customer-key"></a>從客戶金鑰脫離
+## <a name="offboarding-from-customer-key-at-the-tenant-level"></a>從承租人層級的客戶機碼脫離
 
 如果您需要回復至 Microsoft 受管理的金鑰，您可以。 當您下架時，會使用每個個別工作負載支援的預設加密來重新加密您的資料。 例如，Exchange Online 支援使用 Microsoft 管理金鑰的預設加密。
 
-如果您決定在承租人層級從客戶機碼下架租使用者，請透過電子郵件要求 [停用] [m365ck@microsoft.com](mailto:m365ck@microsoft.com)的承租人服務。
+如果您決定從承租人層級的客戶機碼下架您的租使用者，請以電子郵件 [m365ck@microsoft.com](mailto:m365ck@microsoft.com) 要求為「停用」承租人的服務。
 
 > [!IMPORTANT]
 > 脫離會與資料清除相同。 資料清除會永久加密-從 Microsoft 365 刪除您組織的資料，而脫離不會。 您無法執行租使用者層級原則的資料清除。 如需資料清除路徑的詳細資訊，請參閱 [撤銷您的金鑰及開始資料清除路徑](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)程式。
@@ -418,9 +430,13 @@ Get-M365DataAtRestEncryptionPolicyAssignment
 
 ## <a name="key-rotation"></a>金鑰輪替
 
-如需隨客戶金鑰使用的旋轉或滾動機碼的相關資訊，請參閱 [滾或輪替客戶金鑰或可用性金鑰](customer-key-availability-key-roll.md)。 當您更新 DEP 以使用新版本的金鑰時，會執行 Set-M365DataAtRestEncryptionPolicy Cmdlet，如本文稍早所述。
+如需使用客戶金鑰旋轉或滾動機碼的相關資訊，請參閱 [滾或輪替客戶金鑰或可用性金鑰](customer-key-availability-key-roll.md)。 當您更新 DEP 以使用新版本的金鑰時，會執行 Set-M365DataAtRestEncryptionPolicy Cmdlet，如本文稍早所述。
 
-## <a name="related-articles"></a>相關文章：
+## <a name="known-issues"></a>已知問題
+
+當您在承租人層級啟用客戶金鑰時，您無法在 Microsoft 團隊中建立新的團隊。
+
+## <a name="related-articles"></a>相關文章
 
 - [客戶金鑰服務加密](customer-key-overview.md)
 
