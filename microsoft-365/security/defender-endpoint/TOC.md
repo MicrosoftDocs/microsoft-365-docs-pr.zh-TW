@@ -140,7 +140,7 @@
 ###### [裝置控制概觀](mac-device-control-overview.md)
 ###### [JAMF 範例](mac-device-control-jamf.md)
 ###### [Intune 範例](mac-device-control-intune.md)
-##### [排程掃描](mac-schedule-scan-atp.md)
+##### [排程掃描](mac-schedule-scan.md)
 
 #### [疑難排解]()
 ##### [安裝問題的疑難排解](mac-support-install.md)
@@ -354,7 +354,7 @@
 #### [一般]()
 ##### [確認資料儲存位置並更新資料保留設定](data-retention-settings.md)
 ##### [設定警示通知](configure-email-notifications.md)
-##### [設定進位功能] (advanced-features.md
+##### [設定進階功能](advanced-features.md)
 
 #### [權限]()
 ##### [使用基本權限存取入口網站](basic-permissions.md)
@@ -587,5 +587,5 @@
 ##### [受攻擊面縮小規則](troubleshoot-asr.md)
 
 # [Microsoft 365 安全性](../index.yml)
-# [Microsoft 365 Defender](../defender/index.yml)
+# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 # [適用於 Office 365 的 Defender](../office-365-security/overview.md)
