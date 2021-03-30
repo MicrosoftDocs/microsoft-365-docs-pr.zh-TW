@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc9e5fb29518207c5360d5fbe29b8b4848d350e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 18e43d8e38c24a8aa28c6455dc1a769b8da0df2b
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060015"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408620"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -34,7 +34,9 @@ ms.locfileid: "51060015"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-「 `DeviceTvmSoftwareInventory` 高級搜尋」架構中的表格包含目前安裝在網路裝置上之軟體的 [威脅 & 漏洞管理](next-gen-threat-and-vuln-mgt.md) 清單，包括支援資訊的結束。 例如，您可以針對與目前具有漏洞軟體版本一起安裝的裝置，尋找相關事件。 使用這個參考來建立從表格取回之資訊的查詢。
+「 `DeviceTvmSoftwareInventory` 高級搜尋」架構中的表格包含目前安裝在網路裝置上的軟體 [威脅和弱點管理](next-gen-threat-and-vuln-mgt.md) 清單，包括支援資訊的結束。 例如，您可以針對與目前具有漏洞軟體版本一起安裝的裝置，尋找相關事件。 使用這個參考來建立從表格取回之資訊的查詢。
+
+DeviceTVMSoftwareInventory 包含威脅和弱點管理可以比對通用平臺列舉 (CPE) –不論是否有影響的軟體。
 
 >[!NOTE]
 >`DeviceTvmSoftwareInventory`和 `DeviceTvmSoftwareVulnerabilities` tables 已取代 `DeviceTvmSoftwareInventoryVulnerabilities` 表格。 前兩個表格一起包含更多資料行，您可以用來協助通知您的漏洞管理活動。
@@ -43,18 +45,16 @@ ms.locfileid: "51060015"
 
 | 資料行名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `DeviceId` | string | 服務中裝置的唯一識別碼 |
-| `DeviceName` | string | 裝置的完整功能變數名稱 (FQDN)  |
+| `DeviceId` | string | 服務中裝置的唯一識別碼。 |
+| `DeviceName` | string | 裝置 (FQDN) 的完整功能變數名稱。 |
 | `OSPlatform` | string | 裝置上所執行作業系統的平臺。 這表示特定作業系統，包括相同家族內的變化，例如 Windows 10 和 Windows 7。 |
-| `OSVersion` | 字串 | 裝置上所執行的作業系統版本 |
-| `OSArchitecture` | string | 裝置上所執行作業系統的架構 |
-| `SoftwareVendor` | string | 軟體廠商的名稱 |
-| `SoftwareName` | 字串 | 軟體產品名稱 |
-| `SoftwareVersion` | 字串 | 軟體產品的版本號碼 |
-| `EndOfSupportStatus` | 字串 | 會指出軟體產品的生命週期階段相對於其指定的支援終止 (EOS) 或生命週期 (EOL) 日期 |
-| `EndOfSupportDate` | string | 支援終止 (EOS) 或使用壽命結束 (EOL) 軟體產品的日期 |
-
-
+| `OSVersion` | 字串 | 裝置上所執行作業系統的版本。 |
+| `OSArchitecture` | string | 裝置上所執行作業系統的架構。 |
+| `SoftwareVendor` | string | 軟體廠商的名稱。 |
+| `SoftwareName` | string | 軟體產品的名稱。 |
+| `SoftwareVersion` | string | 軟體產品的版本號碼。 |
+| `EndOfSupportStatus` | string | 會指出軟體產品的生命週期階段相對於其指定的支援終止 (EOS) 或生命週期 (EOL) 日期。 |
+| `EndOfSupportDate` | string | 支援終止 (EOS) 或壽命週期 (EOL) 軟體產品的日期。 |
 
 ## <a name="related-topics"></a>相關主題
 
@@ -62,4 +62,3 @@ ms.locfileid: "51060015"
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [了解結構描述](advanced-hunting-schema-reference.md)
 - [威脅與弱點管理的概觀](next-gen-threat-and-vuln-mgt.md)
-

@@ -3,7 +3,7 @@ title: 21Vianet 運作的 Office 365 的 URL 和 IP 位址範圍
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 08/28/2020
+ms.date: 03/29/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: 本文列出在中國的世紀運作時，Office 365 的 URLs 和 IP 位址範圍。
 hideEdit: true
-ms.openlocfilehash: 3f3d42b7a87e1d0e6341d0b2ca6036f7e2387ce6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ed9b6fdbef1ca121ccf53b635768ebdaab89763a
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920689"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418043"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet 運作的 Office 365 的 URL 和 IP 位址範圍
 
@@ -38,7 +38,7 @@ ms.locfileid: "50920689"
   
 |||
 |:-----|:-----|
-|**上次更新：** 08/28/2020- ![ RSS ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [變更記錄訂閱](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**下載：** 一個 [JSON 格式](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)清單中所有必要與選用的目的地。  <br/> |
+|**上次更新：** 03/29/2021- ![ RSS ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [變更記錄訂閱](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**下載：** 一個 [JSON 格式](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)清單中所有必要與選用的目的地。  <br/> |
 
 從[管理 Office 365 端點](managing-office-365-endpoints.md)開始，以了解我們針對在使用此資料管理網路連線能力方面的建議。 端點資料會在每個月初根據需要進行更新，並在上線前 30 天發布新的 IP 位址和 URL。  這讓尚未進行自動更新的客戶，能在需要新連線前完成該程序。  如果需要解決支援升級、安全性事件或其他即時操作需求，則還可以在該月內更新端點。  本頁下方顯示的資料全部來自基於 REST 的 Web 服務。 如果您正使用指令碼或網路裝置來存取本資料，您應直接前往 [Web 服務](microsoft-365-ip-web-service.md)。
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 深入瞭解 Office 365 運作的 Azure 資訊保護 (AIP) ，以及如何為中國的客戶設定該功能。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 77790249cbd544b2f11e9a16dd77bab297cac509
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bddba69ecc8b7b80d2b2c7c48d820ec22d293362
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914315"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418029"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>由世紀運作之 Office 365 的 Azure 資訊保護支援
 
@@ -148,16 +148,24 @@ Windows 上的 AIP 應用程式需要下列登錄機碼，將其指向正確的 
 
 安裝 AIP 內部部署掃描器，以掃描您的網路和內容共用的機密資料，並套用組織原則中所設定的分類及保護標籤。
 
-安裝掃描程式並管理內容掃描工作時，請使用下列 Cmdlet，而不是商務用產品所用的 Azure 入口網站介面：<br><br>
+- 當您建立及設定 Azure AD 應用程式的 [AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 命令時，[ **要求 API 許可權** ] 窗格會顯示 [ **我的組織使用** ] 索引標籤，而非 [ **Microsoft APIs** ] 索引標籤的 APIs。選取 [ **我的組織所用的 APIs** ]，然後選取 [ **Azure Rights Management 服務**]。
 
-| 指令程式 | 描述 |
-|--|--|
-| [載入 AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | 將新的存放庫加入至內容掃描工作。 |
-| [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | 取得內容掃描工作的詳細資料。 |
-| [AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | 取得針對內容掃描工作定義之存放庫的詳細資料。 |
-| [Remove-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | 會刪除您的內容掃描工作。 |
-| [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | 從內容掃描工作中移除存放庫。 |
-| [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | 定義內容掃描工作的設定。 |
-| [AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | 定義內容掃描工作中現有存放庫的設定。 |
+- 安裝掃描程式並管理內容掃描工作時，請使用下列 Cmdlet，而不是商務用產品所用的 Azure 入口網站介面：<br><br>
 
+    | 指令程式 | 描述 |
+    |--|--|
+    | [載入 AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | 將新的存放庫加入至內容掃描工作。 |
+    | [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | 取得內容掃描工作的詳細資料。 |
+    | [AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | 取得針對內容掃描工作定義之存放庫的詳細資料。 |
+    | [Remove-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | 會刪除您的內容掃描工作。 |
+    | [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | 從內容掃描工作中移除存放庫。 |
+    | [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | 定義內容掃描工作的設定。 |
+    | [AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | 定義內容掃描工作中現有存放庫的設定。 |
+    | | |
+
+> [!TIP]
+> [安裝掃描器](/azure/information-protection/deploy-aip-scanner-configure-install#install-the-scanner)時，請在[AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner)命令中使用相同的叢集名稱，以將多個掃描器節點與相同的叢集產生關聯。 對多個掃描器節點使用相同的叢集，可讓多個掃描器一起運作，以執行掃描。
+> 
+> 使用 [AIPScannerConfiguration 指令程式](/powershell/module/azureinformationprotection/get-aipscannerconfiguration) 可傳回有關您的叢集的詳細資料。
+> 
 如需詳細資訊，請參閱 [何謂 Azure 資訊保護統一的標記掃描器？](/azure/information-protection/deploy-aip-scanner) 和 [使用 PowerShell 管理內容掃描工作](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)。

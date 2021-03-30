@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 系統管理員可以了解 Exchange Online Protection (EOP) 中提供的反詐騙功能，可協助緩解來自詐騙寄件者和網域的網路釣魚攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e2fe73360fa3c2308c2df72523ff4bd1ae80a2f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 746b00c7fbf1a90f8bda56c1ba031777f6dee409
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203472"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408608"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的反詐騙保護
 

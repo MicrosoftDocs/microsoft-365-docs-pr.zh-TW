@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394743"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418113"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -72,6 +72,9 @@ ms.locfileid: "51394743"
 >變更此設定只會影響未來的警示關聯。
 
 
+## <a name="enable-edr-in-block-mode"></a>在封鎖模式中啟用 EDR
+端點偵測和回應 (EDR) 在封鎖模式中時，即使 Microsoft Defender 防病毒是以被動模式執行，也能防範惡意的資料。 開啟時，分塊模式中的 EDR 會封鎖在裝置上偵測到的惡意的偽像或行為。 組塊模式中的 EDR 可在幕後運作，以修正偵測到遭到破壞的惡意作品。
+
 ## <a name="autoresolve-remediated-alerts"></a>自動解析修正的警示
 
 針對在 Windows 10、版本1809上建立的承租人，預設會設定自動調查和修正功能，以解決自動分析結果狀態為「沒有發現威脅」或「修正」的警示。  如果您不想要自動解決的提醒，您必須手動關閉該功能。
@@ -115,6 +118,14 @@ ms.locfileid: "51394743"
 
 > [!NOTE]
 > 網路保護會利用信譽服務處理要求的位置，這些位置可能位於您為您的 Defender for Endpoint data 所選取的位置以外。
+
+
+## <a name="tamper-protection"></a>防篡改保護
+在某些網路攻擊中，不良的演員會嘗試停用電腦上的安全性功能，例如防防毒保護。 不良的演員，例如停用您的安全性功能，以更輕鬆地存取資料、安裝惡意程式碼，或利用您的資料、身分識別及裝置。
+
+防篡改保護基本上會鎖定 Microsoft Defender 防病毒，並防止您的安全性設定透過應用程式和方法進行變更。
+
+使防篡改保護保持開啟，以避免安全性解決方案及其基本功能的不想要的變更。
 
 ## <a name="show-user-details"></a>顯示使用者詳細資料
 

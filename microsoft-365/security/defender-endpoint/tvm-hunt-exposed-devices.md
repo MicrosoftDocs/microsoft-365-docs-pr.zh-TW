@@ -1,5 +1,5 @@
 ---
-title: 尋找公開的裝置
+title: 搜尋暴露的裝置
 description: 瞭解如何使用威脅和弱點管理來協助安全性系統管理員、IT 系統管理員和 SecOps 共同作業。
 keywords: mdatp-tvm 案例、mdatp、tvm、tvm 案例、減少威脅 & 弱點嚴重性、減少威脅和弱點、改善安全性設定、增加 Microsoft 安全分數的裝置、增加威脅 & 弱點 Microsoft 安全評分
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9af7464d9cae06dc53abb019aa0b189d6e72e749
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 99e59005bc01a113567e64c921ddcdc1d66785d2
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056681"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408288"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>尋找公開的裝置-威脅和弱點管理
 
@@ -43,13 +43,13 @@ ms.locfileid: "51056681"
 
 ### <a name="schema-tables"></a>結構描述表格
 
-- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) -安裝于裝置上的軟體清單，包括其版本資訊和支援終止狀態
+- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) -安裝在裝置上的軟體清單，包括其版本資訊和支援終止狀態。
 
-- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) -在裝置上找到的軟體弱點，以及解決每個弱點的可用安全性更新清單。
+- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) -裝置上的軟體弱點，以及解決每個弱點的可用安全性更新清單。
 
-- [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) -公開披露之弱點的知識基底，包含是否公開利用程式碼
+- [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) -公開披露之弱點的知識基底，包含是否公開使用漏洞。
 
-- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) -威脅和弱點管理評估事件，指出裝置上的各種安全性設定狀態
+- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) -威脅和弱點管理評估事件，指出裝置上各種安全性設定的狀態。
 
 - [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) -威脅 & 漏洞管理所使用之各種安全性設定的知識基底，以評估裝置;包含各種標準和基準的對應
 

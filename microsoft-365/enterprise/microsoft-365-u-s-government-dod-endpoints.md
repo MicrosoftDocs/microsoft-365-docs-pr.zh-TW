@@ -3,7 +3,7 @@ title: Office 365 美國政府 DOD 端點
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 01/28/2021
+ms.date: 03/29/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ f1.keywords:
 description: Office 365 需要連接至網際網路。 下列端點應可供使用 Office 365 美國政府 DoD 方案的客戶使用。
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 925ec5940bd6c2ead7f94e162311f65e67afc502
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e236a41833f09684ce69330d78138160c2ddb2b2
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923975"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418091"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 美國政府 DoD 端點
 
@@ -39,7 +39,7 @@ ms.locfileid: "50923975"
   
 |||
 |:-----|:-----|
-|**上次更新：** 01/28/2021- ![ RSS ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [變更記錄訂閱](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下載：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整清單 <br/> |
+|**上次更新：** 03/29/2021- ![ RSS ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [變更記錄訂閱](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下載：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整清單 <br/> |
 
  從[管理 Office 365 端點](managing-office-365-endpoints.md)開始，以了解我們針對在使用此資料管理網路連線能力方面的建議。 端點資料會在每個月初根據需要進行更新，並在上線前 30 天發布新的 IP 位址和 URL。  這樣一來，客戶就可以在需要新的連線之前，尚未有自動更新，就能完成他們的處理常式。 如果需要解決支援升級、安全性事件或其他即時操作需求，則還可以在該月內更新端點。  本頁下方顯示的資料全部來自基於 REST 的 Web 服務。 如果您正使用指令碼或網路裝置來存取本資料，您應直接前往 [Web 服務](microsoft-365-ip-web-service.md)。
 

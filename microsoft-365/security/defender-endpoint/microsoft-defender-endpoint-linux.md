@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84d85b723d4dcbdfc07a074c40241242c57bc390
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185584"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408334"
 ---
-# <a name="microsoft-defender-for-endpoint-for-linux"></a>適用于 Linux 的 Microsoft Defender for Endpoint
+# <a name="microsoft-defender-for-endpoint-for-linux"></a>Linux 版適用於端點的 Microsoft Defende
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -83,6 +83,11 @@ ms.locfileid: "51185584"
   > 不支援以其他方式的安全性解決方案為基礎，針對 Linux 的端點執行 Defender `fanotify` 。 這可能會造成無法預期的結果，包括懸掛作業系統。
 
 - 磁碟空間：1GB
+- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可執行檔許可權。 如需詳細資訊，請參閱 [Microsoft DEFENDER ATP For Linux 的安裝問題疑難排解](/microsoft-365/security/defender-endpoint/linux-support-install)中的「確定守護程式具有可執行檔許可權」。
+- 記憶體：1GB
+    > [!NOTE]
+    > 請確認您在/var. 中有可用的磁碟空間。
+
 - 目前的解決方案為下列檔案系統類型提供即時保護：
 
   - `btrfs`

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 的商務協助
+title: 適用於 Microsoft 365 的 Business Assist
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 深入瞭解 Microsoft 商務協助計畫，以及它如何協助您的組織改善 Microsoft 365 for Business 的說明和用法。
-ms.openlocfilehash: eb0309ae68bf4569d4cba8dd8501343304389e80
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+description: 深入瞭解商務協助計畫，以及它如何協助您的組織改善 Microsoft 365 for Business 的說明和用法。
+ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034275"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408522"
 ---
-# <a name="business-assist-for-microsoft-365"></a>Microsoft 365 的商務協助
+# <a name="business-assist-for-microsoft-365"></a>適用於 Microsoft 365 的 Business Assist
 
 使用來自小型企業專家的專家建議，充分利用您的訂閱。
 
-**Microsoft 365 的商務協助** 是專為不超過5位使用者的企業設計的服務，可讓您和您的員工在成長業務（從上架到日常使用）時，讓您和員工能夠全天候存取小型商務專家。
+**Microsoft 365 的商務協助** 是專為擁有不到5位使用者的企業設計，可讓您和員工在成長時存取小型商務專家，從上架到日常使用。
 
 ## <a name="business-assist-services"></a>商務協助服務
 
@@ -38,7 +38,7 @@ ms.locfileid: "51034275"
 | | | |
 
 > [!div class="nextstepaction"]
-> [立即購買](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [立即購買](https://go.microsoft.com/fwlink/p/?linkid=2158423)
 
 ## <a name="eligibility-for-business-assist"></a>商務用資格協助
 
@@ -58,4 +58,4 @@ ms.locfileid: "51034275"
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot：從 [購買服務] 頁面上的 [附加元件] 區段購買商務援助":::
 
 > [!div class="nextstepaction"]
-> [立即購買](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [立即購買](https://go.microsoft.com/fwlink/p/?linkid=2158423)

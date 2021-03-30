@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926093"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408402"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
@@ -148,6 +148,10 @@ Microsoft 已從數個 Office 桌面和網頁用戶端，提供支援 Microsoft 
 
 > [!div class="mx-imgBorder"]
 > ![位置特定詳細資料](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+
+## <a name="sharing-network-assessment-data-with-microsoft"></a>與 Microsoft 共用網路評估資料
+
+根據預設，貴組織和網路洞察力的網路評估是與 Microsoft 員工共用。 這不包括來自您員工的任何個人資料，但僅限於您的 office 位置之系統管理中心中所顯示的特定網路評估計量和網路洞察力。 此外，它也不會包含您的 office 位置名稱或街道位址，因此您需要告訴他們您想要討論之 office 的城市和支援識別碼。 如果關閉此功能，表示您與其討論網路連線的 Microsoft 工程師無法查看任何這項資訊。 啟用此設定只會在您啟用之後，共用未來所開始的資料。
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>LAN 子網辦公位置的 CSV 匯入
 

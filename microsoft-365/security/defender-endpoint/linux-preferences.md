@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ed28d3b5b7bafaea2d72b7a8c45f66bf69033bc2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a8595bae216911350d3f18fcceef729ef020a424
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187790"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408162"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>為 Linux 設定 Microsoft Defender for Endpoint 的喜好設定
 
@@ -61,6 +61,7 @@ ms.locfileid: "51187790"
 | **Key** | antivirusEngine |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
+|||
 
 #### <a name="enable--disable-real-time-protection"></a>啟用/停用即時保護
 
@@ -71,6 +72,7 @@ ms.locfileid: "51187790"
 | **Key** | enableRealTimeProtection |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
+|||
 
 #### <a name="enable--disable-passive-mode"></a>啟用/停用被動模式
 
@@ -87,6 +89,7 @@ ms.locfileid: "51187790"
 | **資料類型** | 布林值 |
 | **可能值** | false (預設)  <br/> 真 |
 | **Comments** | 在100.67.60 或更高版本的 Defender 中提供。 |
+|||
 
 #### <a name="exclusion-merge-policy"></a>排除合併原則
 
@@ -98,6 +101,7 @@ ms.locfileid: "51187790"
 | **資料類型** | 字串 |
 | **可能值** | merge (預設值)  <br/> admin_only |
 | **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
+|||
 
 #### <a name="scan-exclusions"></a>掃描排除
 
@@ -108,6 +112,7 @@ ms.locfileid: "51187790"
 | **Key** | 排除 |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
+|||
 
 **排除的類型**
 
@@ -118,6 +123,7 @@ ms.locfileid: "51187790"
 | **Key** | $type |
 | **資料類型** | 字串 |
 | **可能值** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
+|||
 
 **排除內容的路徑**
 
@@ -129,6 +135,7 @@ ms.locfileid: "51187790"
 | **資料類型** | 字串 |
 | **可能值** | 有效路徑 |
 | **Comments** | 僅適用于 *excludedPath* *$type* |
+|||
 
 **(檔/目錄的路徑類型)**
 
@@ -140,6 +147,7 @@ ms.locfileid: "51187790"
 | **資料類型** | 布林值 |
 | **可能值** | false (預設)  <br/> 真 |
 | **Comments** | 僅適用于 *excludedPath* *$type* |
+|||
 
 **從掃描排除的副檔名**
 
@@ -151,6 +159,7 @@ ms.locfileid: "51187790"
 | **資料類型** | 字串 |
 | **可能值** | 有效的副檔名 |
 | **Comments** | 僅適用于 *excludedFileExtension* *$type* |
+|||
 
 **從掃描排除的處理常式**
 
@@ -162,6 +171,7 @@ ms.locfileid: "51187790"
 | **資料類型** | 字串 |
 | **可能值** | 任何字串 |
 | **Comments** | 僅適用于 *excludedFileName* *$type* |
+|||
 
 #### <a name="allowed-threats"></a>允許的威脅
 
@@ -171,6 +181,7 @@ ms.locfileid: "51187790"
 |:---|:---|
 | **Key** | allowedThreats |
 | **資料類型** | 字串陣列 |
+|||
 
 #### <a name="disallowed-threat-actions"></a>不允許的威脅動作
 
@@ -182,6 +193,7 @@ ms.locfileid: "51187790"
 | **資料類型** | 字串陣列 |
 | **可能值** | 允許 (限制使用者允許威脅)  <br/> restore (會限制使用者從隔離區還原威脅)  |
 | **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
+|||
 
 #### <a name="threat-type-settings"></a>威脅類型設定
 
@@ -192,6 +204,7 @@ ms.locfileid: "51187790"
 | **Key** | threatTypeSettings |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
+|||
 
 **威脅類型**
 
@@ -202,6 +215,7 @@ ms.locfileid: "51187790"
 | **Key** | 機碼 |
 | **資料類型** | 字串 |
 | **可能值** | potentially_unwanted_application <br/> archive_bomb |
+|||
 
 **要採取的動作**
 
@@ -216,6 +230,7 @@ ms.locfileid: "51187790"
 | **Key** | 數值 |
 | **資料類型** | 字串 |
 | **可能值** | 審核 (預設)  <br/> 塊 <br/> 遠離 |
+|||
 
 #### <a name="threat-type-settings-merge-policy"></a>威脅類型設定合併原則
 
@@ -227,6 +242,7 @@ ms.locfileid: "51187790"
 | **資料類型** | 字串 |
 | **可能值** | merge (預設值)  <br/> admin_only |
 | **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
+|||
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>防病毒掃描記錄保留 (天數) 
 
@@ -238,6 +254,7 @@ ms.locfileid: "51187790"
 | **資料類型** | 字串 |
 | **可能值** | 90 (預設) 。 允許的值介於1天到180天。 |
 | **Comments** | 在101.04.76 或更高版本的 Defender 中提供。 |
+|||
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>防病毒掃描歷程記錄中的專案數上限
 
@@ -249,6 +266,7 @@ ms.locfileid: "51187790"
 | **資料類型** | 字串 |
 | **可能值** | 10000 (預設) 。 允許的值是從5000專案到15000專案。 |
 | **Comments** | 在101.04.76 或更高版本的 Defender 中提供。 |
+|||
 
 ### <a name="cloud-delivered-protection-preferences"></a>雲端提供的保護偏好設定
 
@@ -259,6 +277,7 @@ ms.locfileid: "51187790"
 | **Key** | cloudService |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
+|||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>啟用/停用雲端已傳送保護
 
@@ -269,6 +288,7 @@ ms.locfileid: "51187790"
 | **Key** | 啟用 |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
+|||
 
 #### <a name="diagnostic-collection-level"></a>診斷集合層級
 
@@ -279,6 +299,7 @@ ms.locfileid: "51187790"
 | **Key** | diagnosticLevel |
 | **資料類型** | 字串 |
 | **可能值** | 選用 (預設)  <br/> 必要 |
+|||
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>啟用/停用自動範例報送
 
@@ -293,6 +314,7 @@ ms.locfileid: "51187790"
 | **Key** | automaticSampleSubmissionConsent |
 | **資料類型** | 字串 |
 | **可能值** | 無 <br/> 安全 (預設)  <br/> 所有 |
+|||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>啟用/停用自動安全性智慧更新
 
@@ -303,6 +325,7 @@ ms.locfileid: "51187790"
 | **Key** | automaticDefinitionUpdateEnabled |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
+|||
 
 ## <a name="recommended-configuration-profile"></a>建議的設定設定檔
 
@@ -339,6 +362,7 @@ ms.locfileid: "51187790"
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true
+      "proxy":"http://proxy.server:port/"
    }
 }
 ```
@@ -399,6 +423,7 @@ ms.locfileid: "51187790"
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true
+      "proxy": "http://proxy.server:port/"
    }
 }
 ```
@@ -412,6 +437,17 @@ python -m json.tool mdatp_managed.json
 ```
 
 如果 JSON 格式正確，上述命令會將其輸出到終端，並傳回的退出程式碼 `0` 。 否則，會顯示描述問題的錯誤，且命令會傳回的退出程式碼 `1` 。
+
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>驗證檔案上的 mdatp_managed.js是否如預期般運作
+若要確認您的/etc/opt/microsoft/mdatp/managed/mdatp_managed.js開啟中是否正常運作，您應該會在下列設定旁看到「[managed]」：  
+- cloud_enabled
+- cloud_automatic_sample_submission_consent
+- passice_mode_enabled
+- real_time_protection_enabled
+- automatic_definition_update_enabled
+
+> [!NOTE]
+> 為使 mdatp_managed.js生效，不需要重新開機 wdavdaemon。
 
 ## <a name="configuration-profile-deployment"></a>設定設定檔部署
 
