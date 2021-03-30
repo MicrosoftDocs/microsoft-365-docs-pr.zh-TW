@@ -57,7 +57,7 @@
     - name: Microsoft 365 系統管理中心概觀
       items:
         - name: 系統管理中心概觀
-          href: admin-overview/about-the-admin-center.md
+          href: ../business-video/admin-center-overview.md
         - name: 關於系統管理員角色
           href: add-users/about-admin-roles.md
         - name: 系統管理行動 App
