@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 10b29220e49dcb5fda8b1f7d18e52e10513fc599
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939654"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408174"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Microsoft 365 的雙金鑰加密
 
@@ -39,7 +39,7 @@ ms.locfileid: "50939654"
 
 - 傳輸規則包括需要附件查看的反惡意程式碼和垃圾郵件
 - Microsoft Delve
-- eDiscovery
+- 電子文件探索
 - 內容搜尋和索引
 - Office Web Apps （包括合著功能）
 
@@ -242,6 +242,8 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+> [!NOTE]
+> 如果您想要啟用對金鑰存放區的外部 B2B 存取，您也必須將這些外部承租人包含在有效的 issuer ' 清單中。
 
 找到 `JwtAudience` 。 取代 `<yourhostname>` DKE 服務將執行的機器的主機名稱。 例如：
 
@@ -500,7 +502,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 9. 在 **[隱含授** 與] 底下，選取 [ **識別碼標記** ] 核取方塊。
 
-10. 選取 [儲存 **]** 以儲存變更。
+10. 選取 **[儲存]** 以儲存變更。
 
 11. 在左窗格中，選取 [ **公開 API**]，然後選取 [應用程式識別碼 URI] 旁的 [ **設定**]。
 

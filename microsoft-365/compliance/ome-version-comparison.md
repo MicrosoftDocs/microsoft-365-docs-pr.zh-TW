@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 本文可協助說明不同版本的 Office 365 郵件加密之間的差異。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5c8b0852220b2144c4ab92ec9b692299c9d2c860
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927731"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408566"
 ---
 # <a name="compare-versions-of-ome"></a>比較 OME 版本
 
@@ -35,31 +35,19 @@ ms.locfileid: "50927731"
 
 ## <a name="overview-of-ad-rms-deprecation-in-exchange-online"></a>Exchange Online 中的 AD RMS 棄用情況概述
 
-Exchange Online 包含資訊版權管理 (IRM) 功能，可提供線上和離線保護電子郵件訊息和附件。 根據預設，Exchange Online 會使用 Azure Azure 資訊保護。 不過，您的組織可能已將 Exchange Online IRM 設定為使用內部部署 Active Directory Rights Management Service (AD RMS) 。 Exchange Online 中的 AD RMS 支援已退休。 相反地，Azure 資訊保護完全會取代 AD RMS。
+Exchange Online 包含資訊版權管理 (IRM) 功能，可提供線上和離線保護電子郵件訊息和附件。 根據預設，Exchange Online 會使用 Azure 資訊保護。 不過，您的組織可能已將 Exchange Online IRM 設定為使用內部部署 Active Directory Rights Management Service (AD RMS) 。 Exchange Online 中的 AD RMS 支援已退休。 相反地，Azure 資訊保護完全會取代 AD RMS。
 
-開始之前，請先檢查並評估組織的影響。 如果您的組織已在 Exchange Online 中使用 Azure 資訊保護來加密電子郵件，則不需要執行任何動作。 如果您使用 Exchange 郵件流程規則（例如使用 Office 365 郵件加密）來加密您的電子郵件，則不需要變更您的安全電子郵件。 否則，您必須透過切換 Azure 資訊保護來準備 AD RMS 棄用。
+若要評估此項是否會影響您的組織，請參閱 how [to 將 AD RMS 遷移至 Exchange Online 中的 AZURE rms](https://support.microsoft.com/help/5001237)。 本文提供遷移選項的建議。
 
-### <a name="prepare-for-ad-rms-deprecation"></a>準備 AD RMS 已過時
-
-如果您已設定 Azure 資訊保護，但您並未使用它，請使用 Exchange Online PowerShell 來啟用服務。 在您的本機電腦上，使用組織中具有全域系統管理員許可權的公司或學校帳戶，在 Windows PowerShell 視窗中連線 [至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 。
-
-若要啟用 Azure 資訊保護，請輸入下列命令，以使用 Set-IrmConfiguration Cmdlet。
-
-```powershell
-Set-IrmConfiguration -AzureRMSLicensingEnabled $true
-```
-
-如果您的組織尚未設定 Azure 資訊保護，您將需要從 AD RMS 遷移至 Azure 資訊保護。 如需相關指示，請參閱 [從 AD RMS 遷移到 Azure 資訊保護](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)。
-
-## <a name="side-by-side-comparison-of-features-and-capabilities"></a>功能和功能的並列比較
+## <a name="side-by-side-comparison-of-ome-features-and-capabilities"></a>OME 功能與功能的並列比較
 
 |           **情況**           | **舊版 OME**    | **AD RMS 中的 IRM**        | **新的 OME 功能** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |*傳送加密郵件*        |透過 Exchange 郵件流程規則|使用者從 Outlook desktop 或網頁型 Outlook 啟動;或透過 Exchange 郵件流程規則|使用者從 Outlook desktop、Mac 版 Outlook 或網頁型 Outlook 啟動;透過 Exchange 郵件流程規則 (也稱為傳輸規則) 和資料遺失防護 (DLP) |
-|*Rights management 範本*       |   N/A      |[不要轉寄] 選項及自訂範本|[不要轉寄] 選項、[只供加密] 選項及自訂範本|
+|*Rights management 範本*       |   不適用      |[不要轉寄] 選項及自訂範本|[不要轉寄] 選項、[只供加密] 選項及自訂範本|
 |*收件者類型*                   |內部和外部收件者|僅限內部收件者         |內部和外部收件者|
 |*內部收件者的經驗*|收件者會收到 HTML 郵件，其可在網頁瀏覽器或行動裝置應用程式中下載及開啟|Outlook 用戶端中的原生內嵌體驗|使用 Outlook 用戶端的相同組織中收件者的原生內嵌經驗。  收件者可以使用 Outlook 以外的用戶端，從 OME 入口網站讀取郵件 () 不需要下載或應用程式。|
-|*外部收件者的經驗*|收件者會收到 HTML 郵件，其可在網頁瀏覽器或行動裝置應用程式中下載及開啟|N/A|Microsoft 365 收件者的原生內聯體驗。 所有其他收件者都可以從 OME 入口網站讀取訊息 (不需要下載或應用程式) 。|
+|*外部收件者的經驗*|收件者會收到 HTML 郵件，其可在網頁瀏覽器或行動裝置應用程式中下載及開啟|不適用|Microsoft 365 收件者的原生內聯體驗。 所有其他收件者都可以從 OME 入口網站讀取訊息 (不需要下載或應用程式) 。|
 |*附件許可權*           |不限制附件|附件受到保護|[不要轉寄] 選項及自訂範本會保護附件。 系統管理員可以選擇是否要保護只供加密之選項的附件。|
 |*在 BYOK) 支援中引入您自己的金鑰 (*|無                |無               |支援 BYOK          |
 ||

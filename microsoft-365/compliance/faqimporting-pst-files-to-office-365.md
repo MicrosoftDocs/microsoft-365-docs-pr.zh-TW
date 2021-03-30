@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
 description: 本文包含一些常見問題的解答，系統管理員會使用 Office 365 匯入服務，將 PST 檔案匯入 PST 檔案至 Microsoft 365。
-ms.openlocfilehash: adcc84df7aed25f0d51c8fb6a1899bfa56453854
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d775e7cadb71e47cc916a064386971ecd3d08afc
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906787"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408632"
 ---
 # <a name="faq-about-importing-pst-files"></a>匯入 PST 檔案的常見問題集
 
 **本文適用于系統管理員。您是否要將 PST 檔案匯入您自己的信箱？請參閱 [從 Outlook .pst 檔案匯入電子郵件、連絡人及行事曆](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
-   
+
 以下是一些有關使用 Office 365 Import Service 將 PST 檔案大量匯入 Microsoft 365 信箱的常見問題。 如需如何匯入 PST 檔案的詳細資訊，請參閱 [將 pst 檔案匯入至 Office 365 的概述](./importing-pst-files-to-office-365.md)。
   
 ## <a name="using-network-upload-to-import-pst-files"></a>使用網路上傳來匯入 PST 檔案
@@ -83,7 +83,7 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
 
  **匯入 PST 檔案時，是否有郵件大小限制？**
   
-是。 如果 PST 檔案包含大於 150 MB 的信箱項目，該項目會在匯入程序執行時略過。
+是。 若 PST 檔案包含大於 150 MB 的信箱專案，則會在匯入程式期間略過此專案，且不會匯入。 不會匯入大於 150 MB 的專案，因為 150 MB 是 Exchange Online 中的郵件大小限制。 如需詳細資訊，請參閱 [Exchange Online 中的郵件限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
   
  **PST 檔案匯入 Microsoft 365 信箱時是否會保留訊息屬性 (例如訊息的傳送或接收時間、收件者清單、和其他屬性)？**
   
@@ -156,7 +156,7 @@ Microsoft Enterprise Agreement (EA) 提供將 PST 檔案匯入至 Microsoft 365 
   
  **硬碟送達 Microsoft 資料中心後，需要多久的時間才能將我的 PST 檔案上傳到 Azure？**
   
-當您在 Microsoft 資料中心接收到硬碟後，需要7到10個工作日才能將 PST 檔案上傳至組織的 Azure 存放區。 PST 檔案會上傳到名為 `ingestiondata` 的 Azure Blob 容器。 
+當您在 Microsoft 資料中心接收到硬碟後，需要7到10個工作日才能將 PST 檔案上傳至組織的 Azure 存放區。 PST 檔案會上傳到名為 `ingestiondata` 的 Azure Blob 容器。
   
  **需要多久的時間才能將 PST 檔案匯入信箱？**
   
@@ -178,12 +178,12 @@ PST 檔案上傳到 Azure 儲存體區域之後，Microsoft 365 會以安全的�
   
  **匯入 PST 檔案時，是否有郵件大小限制？**
   
-是。 如果 PST 檔案包含大於 150 MB 的信箱項目，該項目會在匯入程序執行時略過。
+是。 若 PST 檔案包含大於 150 MB 的信箱專案，則會在匯入程式期間略過此專案，且不會匯入。 不會匯入大於 150 MB 的專案，因為 150 MB 是 Exchange Online 中的郵件大小限制。 如需詳細資訊，請參閱 [Exchange Online 中的郵件限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
   
   PST 匯入處理程序如何處理重複的電子郵件項目?
 
 PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則 PST 檔案中的所有項目將會重新匯入。
- 
+
  **PST 檔案匯入 Microsoft 365 信箱時是否會保留訊息屬性 (例如訊息的傳送或接收時間、收件者清單、和其他屬性)？**
   
 是。 匯入程序不會變更任何原始的訊息中繼資料
@@ -224,6 +224,6 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
   
 是。
   
- **如果我需要將硬碟寄到其他國家/地區，我需要採取什麼動作嗎？**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-您寄給 Microsoft 的硬碟可能會跨國際邊界。在這種情況下，您必須負責確保硬碟和當中的資料可依據相關法律進口和/或出口。寄送硬碟之前，請與您的顧問確認磁碟機和當中的資料可以合法地寄到指定的 Microsoft 資料中心，以確保 Microsoft 能夠及時收到您的硬碟。
+The hard drive that you ship to Microsoft might have to cross international borders. 如果是的話，您負責確定要匯入和/或匯出的硬碟及其資料，依照適用的法律。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

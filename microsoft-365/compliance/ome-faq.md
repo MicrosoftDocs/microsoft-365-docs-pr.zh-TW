@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 589a28690d1654576ace45edd482b8d67161d616
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394681"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408588"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -118,7 +118,7 @@ Microsoft 365 使用者可以使用 Outlook 版本2019和 Microsoft 365 的 Outl
   
 ## <a name="are-pdf-file-attachments-supported"></a>是否支援 PDF 檔案附件？
 
-這個簡短的答案是肯定！ PDF 加密可讓您透過安全通訊或安全共同作業來保護機密 PDF 檔。 當您傳送電子郵件時，Office 365 服務會加密 PDF 檔案附件而非 Outlook 用戶端。
+這個簡短的答案是肯定！ 若啟用，PDF 加密可讓您透過安全通訊或安全共同作業來保護機密 PDF 檔。 當您傳送電子郵件時，Office 365 服務會加密 PDF 檔附件。 Outlook 用戶端不會加密 PDF 檔附件。
 
 針對網頁版 outlook、Outlook for iOS 和 Outlook for Android，您可以加密您傳送的 Pdf，而不需要執行任何其他步驟。 這些用戶端原本都支援 PDF 加密。
 

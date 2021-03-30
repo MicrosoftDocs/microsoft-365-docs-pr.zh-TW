@@ -1,5 +1,5 @@
 ---
-title: 'DLP 原則條件、例外狀況和動作 (預覽) '
+title: DLP 原則狀況、例外狀況及動作
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解 dlp 原則狀況和例外狀況
-ms.openlocfilehash: 02880a89bf580d94bad4a5dbdce5027b0a194487
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf9bc4ea220c319233a5eaec09352045190883e2
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918009"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418019"
 ---
-# <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>DLP 原則條件、例外狀況和動作 (預覽) 
+# <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP 原則狀況、例外狀況及動作
 
 DLP 原則中的條件和例外情況可識別原則所套用的敏感專案。 動作會定義符合例外狀況的結果會產生什麼影響。
 
@@ -56,13 +56,15 @@ DLP 原則中的條件和例外情況可識別原則所套用的敏感專案。 
 | 寄件者位址符合模式    | 條件： *FromAddressMatchesPatterns* <br/> 例外狀況： *ExceptFromAddressMatchesPatterns*       |      模式   |  寄件者的電子郵件地址包含符合指定正則運算式之文字模式的郵件。  |
 |Sender domain 是  |  條件： *SenderDomainIs* <br/> 例外狀況： *ExceptIfSenderDomainIs*       |DomainName         |     寄件者電子郵件地址的網域符合指定值的郵件。 如果您需要尋找 *包含* 指定網域的寄件者網域 (例如，網域的任何子域) ，請使用 **寄件者位址符合** (*FromAddressMatchesPatterns*) 條件，並使用語法： ' \. domain \. com $ ' 指定網域。    |
 |寄件者範圍    | 條件： *FromScope* <br/> 例外狀況： *ExceptIfFromScope*    | UserScopeFrom    |    由內部或外部寄件者所傳送的郵件。    |
+|寄件者的指定摘要資訊包含任何這些字詞|條件： *SenderADAttributeContainsWords* <br/> 例外狀況： *ExceptIfSenderADAttributeContainsWords*|第一個屬性： `ADAttribute` <p> 第二個屬性： `Words`|寄件者指定之 Active Directory 屬性包含任何指定文字的郵件。|
+|寄件者指定的摘要資訊符合這些文字模式|條件： *SenderADAttributeMatchesPatterns* <br/> 例外狀況： *ExceptIfSenderADAttributeMatchesPatterns*|第一個屬性： `ADAttribute` <p> 第二個屬性： `Patterns`|寄件者的指定 Active Directory 屬性包含符合指定正則運算式的文字模式的郵件。|
 
 ### <a name="recipients"></a>收件者
 
 |**DLP 中的條件或例外狀況**| **Microsoft 365 PowerShell 中的條件/例外參數** |    **屬性類型** | **描述**|
 |---------|---------|---------|---------|
 |收件者為|  條件： *SentTo* <br/> 例外狀況： *ExceptIfSentTo* | Addresses | 其中一位收件者是組織中指定的信箱、郵件使用者或郵件連絡人的郵件。 收件者可以位於郵件 **的 [收** 件者 **]、[** 副本] 或 [ **密件副本** ] 欄位。|
-|收件者網域為|   條件： *RecipientDomainIs* <br/> 例外狀況： *ExceptIfRecipientDomainIs* |   DomainName |    寄件者電子郵件地址的網域符合指定值的郵件。|
+|收件者網域為|   條件： *RecipientDomainIs* <br/> 例外狀況： *ExceptIfRecipientDomainIs* |   DomainName |    收件者的電子郵件地址的網域符合指定值的郵件。|
 |收件者位址包含文字|  條件： *AnyOfRecipientAddressContainsWords* <br/> 例外狀況： *ExceptIfAnyOfRecipientAddressContainsWords*|  Words|  在收件者的電子郵件地址中包含指定文字的郵件。 <br/>**注意事項**：這種情況並未考慮傳送至收件者 Proxy 位址的郵件。而只比對傳送至收件者主要電子郵件地址的郵件。|
 |收件者位址符合模式| 條件： *AnyOfRecipientAddressMatchesPatterns* <br/> 例外狀況： *ExceptIfAnyOfRecipientAddressMatchesPatterns*| 模式    |收件者的電子郵件地址包含符合指定正則運算式之文字模式的郵件。 <br/> **注意事項**：這種情況並未考慮傳送至收件者 Proxy 位址的郵件。而只比對傳送至收件者主要電子郵件地址的郵件。|
 |傳送給隸屬的| 條件： *SentToMemberOf* <br/> 例外狀況： *ExceptIfSentToMemberOf*|  Addresses|  郵件包含的收件者屬於指定通訊群組、擁有郵件功能的安全性群組或 Microsoft 365 群組的成員。 群組可以位於郵件的 [ **收件者**] **、[** 副本] 或 [ **密件副本** ] 欄位中。|
@@ -90,6 +92,8 @@ DLP 原則中的條件和例外情況可識別原則所套用的敏感專案。 
 |檔案名稱符合模式|條件： *DocumentNameMatchesPatterns* <br/> 例外狀況： *ExceptIfDocumentNameMatchesPatterns*|    模式    |附件的檔案名包含符合指定正則運算式之文字模式的郵件。|
 |文件屬性為|條件： *ContentPropertyContainsWords* <br/> 例外狀況： *ExceptIfContentPropertyContainsWords* |Words| 附件的副檔名符合任何指定文字的郵件或檔。|
 |檔案大小等於或大於| 條件： *DocumentSizeOver* <br/> 例外狀況： *ExceptIfDocumentSizeOver*|    Size    |任何附件大於或等於指定值的郵件。|
+|任何附件的內容包含下列任何文字| 條件： *DocumentContainsWords* <br/> 例外狀況： *ExceptIfDocumentContainsWords* |`Words`|附件包含指定文字的郵件。|
+|任何附件內容符合這些文字模式|條件： *DocumentMatchesPatterns* <br/> 例外狀況： *ExceptIfDocumentMatchesPatterns* |`Patterns`|附件包含符合指定正則運算式之文字模式的郵件。 |
 
 ### <a name="message-headers"></a>郵件頭
 
@@ -102,11 +106,11 @@ DLP 原則中的條件和例外情況可識別原則所套用的敏感專案。 
 
 |**DLP 中的條件或例外狀況**| **Microsoft 365 PowerShell 中的條件/例外參數**| **屬性類型**   |**描述**|
 |---------|---------|---------|---------|
-|郵件大小超過|條件： *MessageSizeOver* <br/> 例外狀況： *ExceptIfMessageSizeOver*| Size    |郵件的總大小 (郵件加上附件) 大於或等於指定的值。 <br/>**附注**：信箱的郵件大小限制會在郵件流程規則之前評估。 信箱過大的郵件會遭到拒絕，但具有此條件的規則才能對郵件採取動作。|
 | 重要性    | 條件： *WithImportance* <br/> 例外狀況： *ExceptIfWithImportance*    | Importance    | 以指定的重要性層級標記的郵件。    |
 | 內容字元集包含文字    | 條件： *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | 具有任何指定之字元集名稱的郵件。    |
 | 具有寄件者覆寫    | 條件： *HasSenderOverride* <br/> 例外狀況： *ExceptIfHasSenderOverride*    | 不適用    | 寄件者已選擇覆寫資料遺失防護 (DLP) 原則的郵件。 如需 DLP 原則的詳細資訊，請參閱 [資料遺失防護](./data-loss-prevention-policies.md)。   |
 | 郵件類型符合    | 條件： *MessageTypeMatches* <br/> 例外狀況： *ExceptIfMessageTypeMatches*    | MessageType    | 指定類型的郵件。    |
+|郵件大小大於或等於| 條件： *MessageSizeOver* <br/> 例外狀況： *ExceptIfMessageSizeOver* |`Size`|郵件的總大小 (郵件加上附件) 大於或等於指定的值。 **附注**：信箱的郵件大小限制會在郵件流程規則之前評估。 信箱過大的郵件會遭到拒絕，但具有此條件的規則才能對郵件採取動作。|
 
 ## <a name="actions-for-dlp-policies"></a>DLP 原則的動作
 
@@ -118,9 +122,10 @@ DLP 原則中的條件和例外情況可識別原則所套用的敏感專案。 
 |設定標頭|SetHeader|第一個屬性： *標頭名稱* </br> 第二個屬性： *標頭值*|SetHeader 參數會指定 DLP 規則的動作，以新增或修改郵件頭中的標頭欄位和值。 這個參數使用語法 "HeaderName： HeaderValue"。 您可以指定多個標頭名稱及以逗號分隔的值組|
 |移除標頭| RemoveHeader| 第一個屬性： *MessageHeaderField*</br> 第二個屬性： *字串*|  RemoveHeader 參數會指定 DLP 規則的動作，該規則會從郵件頭中移除標頭欄位。 這個參數使用語法 "HeaderName" 或 "HeaderName： HeaderValue"。您可以指定多個標頭名稱或標頭名稱及用逗號分隔的值組|
 |將郵件重新導向至特定使用者|*RedirectMessageTo*|Addresses| 將郵件重新導向至指定的收件者。 郵件不會傳遞給原始的收件者，也不會傳送任何通知給寄件者或原始的收件者。|
-|轉寄郵件以核准給寄件者的管理員| 仲裁|第一個屬性： *ModerateMessageByManager*</br> 第二個屬性： *Boolean*|適中參數會指定將電子郵件訊息傳送給仲裁者的 DLP 規則動作。 這個參數使用下列語法： @ {ModerateMessageByManager = <$true \| $false>;|
-|將郵件轉寄給特定核准者| 仲裁|第一個屬性： *ModerateMessageByUser*</br>第二個屬性： *位址*|適中參數會指定將電子郵件訊息傳送給仲裁者的 DLP 規則動作。 這個參數會使用下列語法： @ {ModerateMessageByUser = @ ( "emailaddress1"，"emailaddress2",... "emailaddressN" ) }|
+|轉寄郵件以核准給寄件者的管理員| 中等|第一個屬性： *ModerateMessageByManager*</br> 第二個屬性： *Boolean*|適中參數會指定將電子郵件訊息傳送給仲裁者的 DLP 規則動作。 這個參數使用下列語法： @ {ModerateMessageByManager = <$true \| $false>;|
+|將郵件轉寄給特定核准者| 中等|第一個屬性： *ModerateMessageByUser*</br>第二個屬性： *位址*|適中參數會指定將電子郵件訊息傳送給仲裁者的 DLP 規則動作。 這個參數會使用下列語法： @ {ModerateMessageByUser = @ ( "emailaddress1"，"emailaddress2",... "emailaddressN" ) }|
 |新增收件者|AddRecipients|第一個屬性： *欄位*</br>第二個屬性： *位址*| 在郵件的 [收件者/Cc/Bcc] 欄位中新增一或多個收件者。 這個參數使用下列語法： @ {<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
 |將寄件者的管理員新增為收件者|AddRecipients | 第一個屬性： *AddedManagerAction*</br>第二個屬性： *欄位* | 將寄件者的管理員新增到郵件中，當作指定的收件者類型 ( 至、抄送、Bcc ) 或將郵件重新導向給寄件者的管理員，而不會通知寄件者或收件者。 只有在 Active Directory 中定義寄件者的管理員屬性時，此動作才有效。 此參數會使用下列語法： @ {AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
-前置主題    |PrependSubject    |字串    |會將指定的文字加入郵件的 [主旨] 欄位的開頭。 請考慮使用空格或冒號 (： ) 做為指定之文字的最後一個字元，以與原始的主旨文字區別。</br>若要防止將相同字串新增至已包含主旨 (中之文字的郵件，例如，回復) 中，新增「主旨包含字」 (ExceptIfSubjectContainsWords) 例外規則。    |
-套用 HTML 免責聲明    |ApplyHtmlDisclaimer    |第一個屬性： *文字*</br>第二個屬性： *位置*</br>第三個屬性： *Fallback 動作*    |將指定的 HTML 免責聲明套用至郵件所需的位置。</br>此參數會使用下列語法： @ {Text = "";Location = <Append \| 前置>;FallbackAction = <Wrap \| 略過 \| 拒絕>}
+前置主題    |PrependSubject    |字串    |會將指定的文字加入郵件的 [主旨] 欄位的開頭。 請考慮使用空格或冒號 (： ) 做為指定之文字的最後一個字元，以與原始的主旨文字區別。</br>若要防止將相同字串新增至已包含主旨 (中之文字的郵件，例如，回復) 中，新增「主旨包含字」 (ExceptIfSubjectContainsWords) 例外規則。    
+|套用 HTML 免責聲明    |ApplyHtmlDisclaimer    |第一個屬性： *文字*</br>第二個屬性： *位置*</br>第三個屬性： *Fallback 動作*    |將指定的 HTML 免責聲明套用至郵件所需的位置。</br>此參數會使用下列語法： @ {Text = "";Location = <Append \| 前置>;FallbackAction = <Wrap \| 略過 \| 拒絕>}
+|移除 Office 365 郵件加密和許可權保護    | RemoveRMSTemplate | 不適用| 移除套用在電子郵件上的 Office 365 加密|
