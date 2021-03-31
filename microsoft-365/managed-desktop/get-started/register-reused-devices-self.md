@@ -1,18 +1,23 @@
 ---
 title: 自行註冊現有裝置
 description: 登錄您可能已經使用的裝置，使其可由 Microsoft 受管理的電腦進行管理
-ms.prod: w10
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: medium
-ms.openlocfilehash: c2ba687b38f1de4d2ed09b0bd690e02b43f15f8d
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
+ms.openlocfilehash: 1703e4ed4ea0f3306edf6fdf07ab9c97a9266d4f
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840512"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445563"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 

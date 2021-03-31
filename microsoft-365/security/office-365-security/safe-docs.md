@@ -16,12 +16,12 @@ ms.collection:
 description: 深入瞭解 Microsoft 365 E5 或 Microsoft 365 E5 Security 中的安全檔。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1dc6c5dc54acd73b68fcd6241a270d2abdcc5c1
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 78ae99158e30046923d24897e7ab9b45adff31d0
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203572"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445393"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文件
 
@@ -31,7 +31,7 @@ ms.locfileid: "51203572"
 - [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全檔是 Microsoft 365 E5 或 Microsoft 365 E5 安全性中的一項功能，可使用 [Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 來掃描在 [受保護的檢視](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)中開啟的檔和檔案。
+安全檔是 Microsoft 365 E5 或 Microsoft 365 E5 安全性中的一項功能，可使用 [Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 來掃描在 [受保護的檢視](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) 或 [Office 的應用程式防護](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)中開啟的檔和檔案。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -93,6 +93,12 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ```
 
 如需詳細的語法及參數資訊，請參閱 [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365)。
+
+### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>已在 Microsoft Defender for Endpoint Service 上板載以啟用審核功能
+
+若要部署 Microsoft Defender for Endpoint，您需要經歷各個部署階段。 在上架之後，您可以在安全性 & 規範中心設定審核功能。
+
+若要深入瞭解，請參閱 [在 Microsoft Defender For Endpoint service 上的板載](/microsoft-365/security/defender-endpoint/onboarding)。 如果您需要其他協助，請參閱 [疑難排解 Microsoft Defender 的端點上架問題](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)。
 
 ### <a name="how-do-i-know-this-worked"></a>如何知道這是否正常運作？
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8b68e6b6dc42de5730aa634386406d4762b1fa2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163680"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445361"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>在 Microsoft Defender ATP 中設定警示通知
 
@@ -51,9 +51,9 @@ ms.locfileid: "51163680"
 您可以建立規則來決定裝置及警示嚴重性，以傳送電子郵件通知及通知收件者。
 
 
-1. 在功能窗格中，選取 [**設定**  >  **警示通知**]。
+1. 在功能窗格中，選取 [**設定**  >  **電子郵件通知**]。
 
-2. 按一下 [ **新增通知規則**]。
+2. 按一下 [ **新增專案**]。
 
 3. 指定一般資訊：
     - **規則名稱** -指定通知規則的名稱。
@@ -67,7 +67,7 @@ ms.locfileid: "51163680"
     - **裝置** -選擇是否要將收件者的警示通知給收件者 (全域系統管理員角色只) 或選取的裝置群組。 如需詳細資訊，請參閱 [Create and manage device groups](machine-groups.md)。
     - **警示嚴重性** -選擇警示嚴重性層級。
 
-4. 按 [下一步 **]**。
+4. 按 [下一步]。
     
 5. 輸入收件者的電子郵件地址，然後按一下 [ **新增收件** 者]。 您可以新增多個電子郵件地址。
 
@@ -103,4 +103,4 @@ ms.locfileid: "51163680"
 
 ## <a name="related-topics"></a>相關主題
 - [更新資料保留設定](data-retention-settings.md)
-- [設定高級功能](advanced-features.md)
+- [設定進階功能](advanced-features.md)

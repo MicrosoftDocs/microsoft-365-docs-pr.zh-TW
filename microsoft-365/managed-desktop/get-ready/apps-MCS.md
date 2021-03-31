@@ -1,20 +1,23 @@
 ---
 title: 使用 Microsoft 諮詢服務
-description: 使用 MCS 封裝應用程式的準備工作和步驟
-keywords: Microsoft 受管理的電腦、Microsoft 365、服務、文件、應用程式、MCS、封裝
+description: 準備使用 MCS 以封裝應用程式的準備工作和步驟
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04b0c7905c83be2afa46abcfb2d4bb5cd9735e06
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 1441ca3305a5f3e5a83ddd5e1547812f08d7d96b
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909223"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445693"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>使用 Microsoft 諮詢服務
 
@@ -31,7 +34,7 @@ ms.locfileid: "50909223"
 **MCS 將處理下列動作：**
 
 - 檢查此應用程式在 Microsoft 受管理的電腦環境中是否禁止或受限制。
-- 測試安裝、啟動及解除安裝應用程式，以確保與 Windows 10 相容。 如果 MCS 發現相容性問題，會將應用程式交付到[桌面應用程式保證](/fasttrack/win-10-desktop-app-assure)以進行修復。
+- 測試安裝、啟動及解除安裝應用程式，以確保與 Windows 10 相容。 如果 MCS 發現相容性問題，將會將應用程式提交給應用程式，以 [確保](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) 修復程式的執行。
 - 以您的規格封裝應用程式，然後使用 Microsoft Intune 測試應用程式部署。
 
 ## <a name="app-delivery-schedule"></a>應用程式交付排程

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 167db9b5da841528e95f167b3af6a840b6c71eb4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165558"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445283"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
 
@@ -48,8 +48,11 @@ ms.locfileid: "51165558"
 
 在端點入口網站中，VDI 裝置可以出現為下列其中一種：
 
-- 每個裝置單一專案。  
-請注意，在此情況下，建立會話時必須設定 *相同* 的裝置名稱，例如使用自動回應檔案。
+- 每個裝置單一專案。
+
+  > [!NOTE]
+  > 在此情況下，您必須在建立會話時設定 *相同* 的裝置名稱，例如使用無人值守的回應檔案。
+
 - 每個裝置的多個專案-每個會話一個。
 
 下列步驟會引導您完成上架 VDI 裝置，並將會反白顯示單一和多個專案的步驟。
@@ -84,14 +87,15 @@ ms.locfileid: "51165558"
    > [!NOTE]
    > 網域群組原則也可用於上架非持續性的 VDI 裝置。
 
-4. 請根據您想要執行的方法，遵循適當的步驟： <br>
-   **針對每個裝置的單一專案**：<br>
+4. 請根據您想要執行的方法，遵循適當的步驟：
+
+   - 針對每個裝置的單一專案：
    
-   選取 [ **PowerShell 腳本** ] 索引標籤，然後按一下 [ **新增** (Windows Explorer 會直接開啟您在先前複製上架腳本的路徑中) 。 流覽至上架 PowerShell script `Onboard-NonPersistentMachine.ps1` 。
+     選取 [ **PowerShell 腳本** ] 索引標籤，然後按一下 [ **新增** (Windows Explorer 會直接開啟您在先前複製上架腳本的路徑中) 。 流覽至上架 PowerShell script `Onboard-NonPersistentMachine.ps1` 。 不需要指定另一個檔案，因為會自動觸發該檔案。
    
-   **針對每個裝置的多個專案**：
+   - 針對每個裝置的多個專案：
    
-   選取 [ **腳本** ] 索引標籤，然後按一下 [ **新增** ] (Windows Explorer 會直接在您先前複製上架腳本的路徑中開啟) 。 流覽至上架 bash 腳本 `WindowsDefenderATPOnboardingScript.cmd` 。
+     選取 [ **腳本** ] 索引標籤，然後按一下 [ **新增** ] (Windows Explorer 會直接在您先前複製上架腳本的路徑中開啟) 。 流覽至上架 bash 腳本 `WindowsDefenderATPOnboardingScript.cmd` 。
 
 5. 測試您的解決方案：
 
@@ -103,8 +107,15 @@ ms.locfileid: "51165558"
 
    1. 使用另一位使用者登入裝置。
       
-   1. **針對每個裝置的單一專案**：請檢查 Microsoft Defender Security Center 中只有一個專案。<br>
-      **針對每個裝置的多個專案**：檢查 Microsoft Defender Security Center 中的多個專案。
+   1. 請根據您想要執行的方法，遵循適當的步驟：
+   
+      - 針對每個裝置的單一專案： 
+    
+        檢查 Microsoft Defender Security Center 中的一個專案。
+
+      - 針對每個裝置的多個專案： 
+       
+        檢查 Microsoft Defender Security Center 中的多個專案。
 
 6. 按一下功能窗格上的 [ **裝置] 清單** 。
 
@@ -118,14 +129,14 @@ ms.locfileid: "51165558"
 
 1. 將登錄值設定為：
 
-    ```reg
+    ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
     ```
 
     或者使用命令列：
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 

@@ -19,12 +19,12 @@ description: 在安全性與合規性中心使用 Explorer 和即時偵測， &a
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f48bad9d8ae6fc6d68ae27a655f4bdfdefd819d0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 47bb14b90a94d0c8b542b12268bd6d5ed6e5c05a
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203741"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445717"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -58,7 +58,7 @@ ms.locfileid: "51203741"
 現在，如果您從警示流覽至威脅瀏覽器，它就會在瀏覽器中開啟篩選的視圖，並以警示原則識別碼篩選 (原則識別碼為警示原則) 的唯一識別碼。
 在威脅瀏覽器和即時偵測中引入警示識別碼，使這項整合更為相關 (在威脅瀏覽器和即時偵測中看到警示) 識別碼的範例，這樣您就能看到與特定警示相關的訊息，以及電子郵件的計數。 您也可以查看郵件是否為警示的一部分，以及從該郵件流覽至特定警示。  
 
-當您查看個別的警示時，URL 內可使用警示識別碼;範例是 `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+當您查看個別的警示時，URL 內可使用警示識別碼;範例為 `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` 。
 
 > [!div class="mx-imgBorder"]
 > ![警示識別碼的篩選](../../media/AlertID-Filter.png)
@@ -177,7 +177,6 @@ ms.locfileid: "51203741"
 > - **偵測技術** 和 **其他動作** 會有新的欄位和值，尤其是針對 ZAP 案例) 所做的 (。 您將需要評估現有的已儲存查詢和追蹤的查詢，以確保它們能夠使用新的值。
 
 > [!div class="mx-imgBorder"]
-
 > ![瀏覽器中的其他動作](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>系統覆寫
@@ -185,9 +184,13 @@ ms.locfileid: "51203741"
 *系統覆寫* 可讓您對郵件的預定送達位置產生例外狀況。 您可以根據威脅及篩選堆疊所識別的其他偵測，覆寫系統所提供的傳遞位置。 系統覆寫可透過租使用者或使用者原則加以設定，以依照原則所建議的方式傳遞郵件。 覆寫可識別因設定缺口而無意間傳遞的惡意郵件，例如使用者設定的過於廣泛的安全寄件者原則。 這些覆寫值可以是：
 
 - 使用者原則允許：使用者在信箱層級建立原則，以允許網域或寄件者。
+
 - 使用者原則封鎖：使用者會在信箱層級建立原則，以封鎖網域或寄件者。
+
 - 組織原則允許：組織的安全小組設定原則或 Exchange 郵件流程規則 (也稱為傳輸規則) ，可允許寄件者和網域的組織中的使用者。 這可供一組使用者或整個組織使用。
+
 - 由組織原則封鎖：組織的安全小組會設定原則或郵件流程規則，以封鎖組織中使用者的寄件者、網域、郵件語言或來源 Ip。 這可以套用到一組使用者或整個組織。
+
 - 組織原則封鎖的檔案副檔名：組織的安全性小組會透過反惡意程式碼原則設定封鎖副檔名。 這些值現在會顯示在電子郵件詳細資料中，以協助調查。 Secops 小組也可以使用 rtf 篩選功能來篩選封鎖的副檔名。
 
 [![瀏覽器中的系統覆寫](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
@@ -233,7 +236,8 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 > [!IMPORTANT]
 > 依使用者標記篩選和排序目前是公開預覽。 在正式發行之前，您可能會充分修改此功能。 Microsoft 對本所提供的資訊不提供任何明示或默示的保證。
 
-![瀏覽器中的標記欄](../../media/threat-explorer-tags.png)
+> [!div class="mx-imgBorder"]
+> ![瀏覽器中的標記欄](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>時區改進
 
@@ -282,21 +286,20 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 您將能看到 GUID 及已套用至郵件的傳輸規則名稱。 您將能夠使用傳輸規則的名稱來搜尋郵件。 這是「包含」搜尋，也就是您也可以進行部分搜尋。
 
-#### <a name="important-note"></a>重要注意事項：
-
-ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具有下列其中一個角色/許可權，才能查看 ETR 名稱和搜尋。 如果您未指派任何這些角色，您就無法看到傳輸規則的名稱，或使用 ETR 名稱來搜尋郵件。 不過，您可以在電子郵件詳細資料中看到 ETR 標籤及 GUID 資訊。 其他記錄流覽的電子郵件格線、電子郵件 flyouts、篩選和匯出不會受到影響。
-
-- 僅限 EXO-資料遺失防護：全部
-- 僅限 EXO-O365SupportViewConfig： All
-- Microsoft Azure Active Directory 或 EXO-安全性系統管理員： All
-- AAD 或 EXO-Security Reader： All
-- 僅限 EXO-Transport Rules： All
-- 僅限 EXO-View-Only 設定： All
-
-在電子郵件格線、詳細資料浮出和匯出的 CSV 中，ETRs 會以如下所示的名稱/GUID 呈現。
-
-> [!div class="mx-imgBorder"]
-> ![Exchange 傳輸規則](../../media/ETR_Details.png)
+> [!IMPORTANT]
+> ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具有下列其中一個角色/許可權，才能查看 ETR 名稱和搜尋。 如果您未指派任何這些角色，您就無法看到傳輸規則的名稱，或使用 ETR 名稱來搜尋郵件。 不過，您可以在電子郵件詳細資料中看到 ETR 標籤及 GUID 資訊。 其他記錄流覽的電子郵件格線、電子郵件 flyouts、篩選和匯出不會受到影響。
+> 
+> - 僅限 EXO-資料遺失防護：全部
+> - 僅限 EXO-O365SupportViewConfig： All
+> - Microsoft Azure Active Directory 或 EXO-安全性系統管理員： All
+> - AAD 或 EXO-Security Reader： All
+> - 僅限 EXO-Transport Rules： All
+> - 僅限 EXO-View-Only 設定： All
+> 
+> 在電子郵件格線、詳細資料浮出和匯出的 CSV 中，ETRs 會以如下所示的名稱/GUID 呈現。
+> 
+> > [!div class="mx-imgBorder"]
+> > ![Exchange 傳輸規則](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>輸入連接器
 
@@ -334,18 +337,23 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 4. 在 [電子郵件] 索引標籤 > 詳細資料] 索引標籤下，選取任何郵件的主旨，以查看類比網域/偵測到的位置等其他類比
 
-5. **或** 選取 [模擬 **使用者** ]，然後在 textbox 中輸入受保護使用者的電子郵件地址。
+    **OR** 
 
-6. 在 [**電子郵件** 索引標籤詳細資料] 索引標籤中選取任何 **郵件的主旨**  >   ，以查看有關使用者或網域的其他模擬資訊和偵測 *到的位置*。
+    選取 [模擬 **使用者** ]，然後在 textbox 中輸入受保護使用者的電子郵件地址。
 
-:::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="顯示偵測位置之受保護使用者的威脅瀏覽器詳細資料窗格，以及偵測到使用者) 的網路釣魚模擬 (所偵測到的威脅。":::
+    > [!TIP]
+    > **為了獲得最佳結果**，請使用 *完整電子郵件地址* 來搜尋受保護的使用者。 當您搜尋 *firstname.lastname@contoso.com* 時（例如，調查使用者模擬時），您可以更快速且更順利地找到您的受保護的使用者。 搜尋受保護的網域時，搜尋會以根域 (contoso.com，例如) ，以及功能變數名稱 (*contoso*) 。 搜尋根網域 *contoso.com* 將同時傳回 *contoso.com* 和功能變數名稱 *contoso* 的 impersonations。
 
-> [!TIP]
-> **為了獲得最佳結果**，請使用 *完整電子郵件地址* 來搜尋受保護的使用者。 當您搜尋 *firstname.lastname@contoso.com* 時（例如，調查使用者模擬時），您可以更快速且更順利地找到您的受保護的使用者。 搜尋受保護的網域時，搜尋會以根域 (contoso.com，例如) ，以及功能變數名稱 (*contoso*) 。 搜尋根網域 *contoso.com* 將同時傳回 *contoso.com* 和功能變數名稱 *contoso* 的 impersonations。
+5. 在 [**電子郵件** 索引標籤詳細資料] 索引標籤中選取任何 **郵件的主旨**  >   ，以查看有關使用者或網域的其他模擬資訊和偵測 *到的位置*。
+
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="顯示偵測位置之受保護使用者的威脅瀏覽器詳細資料窗格，以及偵測到使用者) 的網路釣魚模擬 (所偵測到的威脅。":::
+
+> [!NOTE]
+> 在步驟3或5中，如果您選擇 [**偵測技術**]，並分別選取 [**類比網域**] 或 [模擬 **使用者**]，則使用者或網域的 [**電子郵件]** 索引標籤詳細資料] 索引標籤中的資訊，  >  只會顯示在 [*反網路釣魚原則***]** 頁面上所列之使用者或網域相關聯的訊息。  
 
 ### <a name="preview-email-header-and-download-email-body"></a>預覽電子郵件標頭和下載電子郵件內文
 
-您現在可以預覽電子郵件頭，並下載威脅瀏覽器管理員的電子郵件內文。系統管理員可以分析已下載的標頭/電子郵件，以取得威脅。 因為下載電子郵件可能會危及資訊的危險性，所以此程式是由以角色為基礎的存取控制 (RBAC) 所控制。 新的角色、 *預覽*，必須新增至其他角色群組 (例如安全作業或安全性系統管理員) ，以授與透過所有電子郵件消息查看下載郵件的能力。 不過，若要在威脅瀏覽器) 中查看郵件所需的 (以外，查看電子郵件標頭並不需要任何其他角色。
+您現在可以預覽電子郵件頭，並下載威脅瀏覽器中的電子郵件內文。 系統管理員可以分析已下載的郵件頭/電子郵件，以取得威脅。 因為下載電子郵件可能會危及資訊的危險性，所以此程式是由以角色為基礎的存取控制 (RBAC) 所控制。 新的角色、 *預覽*，必須新增至其他角色群組 (例如安全作業或安全性系統管理員) ，以授與透過所有電子郵件消息查看下載郵件的能力。 不過，若要在威脅瀏覽器) 中查看郵件所需的 (以外，查看電子郵件標頭並不需要任何其他角色。
 
 瀏覽器和即時偵測也會取得新的欄位，可提供您的電子郵件所在位置更完整的畫面。 這些變更可使搜尋更輕鬆進行安全性 Op。 不過，主要結果是您可以快速知道問題電子郵件訊息的位置。
 

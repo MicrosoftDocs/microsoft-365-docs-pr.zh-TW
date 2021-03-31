@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 瞭解如何從已加入 Azure Active Directory 的 Windows 10 裝置，存取內部部署資源（如商務線應用程式、檔案共用及印表機）。
-ms.openlocfilehash: b78509d72cbd9b3c121039c4965625bf5c21c7e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1bca0beb3ccc78e670ad33ce446b9b3f7c372ba7
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913515"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445341"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>從 Microsoft 365 商務版 Premium 中已加入 Azure AD 的裝置存取內部部署資源
 
@@ -64,3 +64,7 @@ ms.locfileid: "50913515"
 - 使用者可能無法對依存于 Active Directory 驗證的應用程式進行驗證。 評估繼承應用程式，並考慮更新至使用新式驗證的應用程式（如有可能）。
 
 - Active Directory 印表機探索無法運作。 您可以為所有使用者提供直接印表機路徑，或使用 [通用列印](/universal-print/)。
+
+### <a name="related-articles"></a>相關文章
+
+[Azure AD Connect 的必要條件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)

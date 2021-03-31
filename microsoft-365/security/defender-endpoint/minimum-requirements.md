@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1b203a29083aaa4a1f86abcd7e2c7b24bd63f186
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379487"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445741"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的基本需求
 
@@ -54,6 +54,7 @@ Microsoft Defender for Endpoint 需要下列其中一個 Microsoft 大量授權�
 > [!NOTE]
 > 合格授權的使用者最多可在最多五個並行裝置上使用 Microsoft Defender 端點。
 > Microsoft Defender for Endpoint 也可從雲端解決方案供應商購買 (CSP) 。
+> RDSH Vm 不需要個別的 Defender for Endpoint 授權。
 
 伺服器的 Microsoft Defender 端點需要下列其中一個授權選項：
 
