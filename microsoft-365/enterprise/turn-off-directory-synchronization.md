@@ -21,29 +21,29 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: 在本文中，請尋找使用 PowerShell 關閉 Microsoft 365 目錄同步處理的資訊。
-ms.openlocfilehash: 036130b70382e28ad9d8cb10786ad5e266375c20
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 26f8729078ea06657ced565db780b57c7e537aa4
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909307"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445705"
 ---
-# <a name="turn-off-directory-synchronization-for-microsoft-365"></a><span data-ttu-id="de23f-103">關閉 Microsoft 365 的目錄同步處理</span><span class="sxs-lookup"><span data-stu-id="de23f-103">Turn off directory synchronization for Microsoft 365</span></span>
-<span data-ttu-id="de23f-104">您可以使用 PowerShell 關閉目錄同步處理。</span><span class="sxs-lookup"><span data-stu-id="de23f-104">You can use PowerShell to turn off directory synchronization.</span></span> <span data-ttu-id="de23f-105">不過，不建議您關閉目錄同步處理做為疑難排解步驟。</span><span class="sxs-lookup"><span data-stu-id="de23f-105">However, it is not recommended that you turn off directory synchronization as a troubleshooting step.</span></span> <span data-ttu-id="de23f-106">如果您需要協助進行目錄同步處理，請參閱 [修正 Microsoft 365 文章的目錄同步處理問題](fix-problems-with-directory-synchronization.md) 。</span><span class="sxs-lookup"><span data-stu-id="de23f-106">If you need assistance with troubleshooting directory synchronization, see the [Fixing problems with directory synchronization for Microsoft 365](fix-problems-with-directory-synchronization.md) article.</span></span> 
+# <a name="turn-off-directory-synchronization-for-microsoft-365"></a><span data-ttu-id="c2da3-103">關閉 Microsoft 365 的目錄同步處理</span><span class="sxs-lookup"><span data-stu-id="c2da3-103">Turn off directory synchronization for Microsoft 365</span></span>
+<span data-ttu-id="c2da3-104">您可以使用 PowerShell 關閉目錄同步處理，並將同步處理的使用者轉換為僅限雲端。</span><span class="sxs-lookup"><span data-stu-id="c2da3-104">You can use PowerShell to turn off directory synchronization and convert your synchronized users to cloud-only.</span></span> <span data-ttu-id="c2da3-105">不過，不建議您關閉目錄同步處理做為疑難排解步驟。</span><span class="sxs-lookup"><span data-stu-id="c2da3-105">However, it is not recommended that you turn off directory synchronization as a troubleshooting step.</span></span> <span data-ttu-id="c2da3-106">如果您需要協助進行目錄同步處理，請參閱 [修正 Microsoft 365 文章的目錄同步處理問題](fix-problems-with-directory-synchronization.md) 。</span><span class="sxs-lookup"><span data-stu-id="c2da3-106">If you need assistance with troubleshooting directory synchronization, see the [Fixing problems with directory synchronization for Microsoft 365](fix-problems-with-directory-synchronization.md) article.</span></span> 
   
-<span data-ttu-id="de23f-107">如有需要，[請聯絡](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)商務產品的支援人員。</span><span class="sxs-lookup"><span data-stu-id="de23f-107">[Contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) for business products if needed.</span></span>
+<span data-ttu-id="c2da3-107">如有需要，[請聯絡](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)商務產品的支援人員。</span><span class="sxs-lookup"><span data-stu-id="c2da3-107">[Contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) for business products if needed.</span></span>
   
-## <a name="turn-off-directory-synchronization"></a><span data-ttu-id="de23f-108">關閉目錄同步處理</span><span class="sxs-lookup"><span data-stu-id="de23f-108">Turn off directory synchronization</span></span>  
-<span data-ttu-id="de23f-109">若要關閉目錄同步處理：</span><span class="sxs-lookup"><span data-stu-id="de23f-109">To turn off Directory synchronization:</span></span>
+## <a name="turn-off-directory-synchronization"></a><span data-ttu-id="c2da3-108">關閉目錄同步處理</span><span class="sxs-lookup"><span data-stu-id="c2da3-108">Turn off directory synchronization</span></span>  
+<span data-ttu-id="c2da3-109">若要關閉目錄同步處理：</span><span class="sxs-lookup"><span data-stu-id="c2da3-109">To turn off Directory synchronization:</span></span>
   
-1. <span data-ttu-id="de23f-110">首先，安裝必要的軟體，並聯機至您的 Microsoft 365 訂閱。</span><span class="sxs-lookup"><span data-stu-id="de23f-110">First, install the required software and connect to your Microsoft 365 subscription.</span></span> <span data-ttu-id="de23f-111">如需相關指示，請參閱 [Connect The Microsoft Azure Active Directory Module For Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="de23f-111">For instructions, see [Connect with the Microsoft Azure Active Directory Module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+1. <span data-ttu-id="c2da3-110">首先，安裝必要的軟體，並聯機至您的 Microsoft 365 訂閱。</span><span class="sxs-lookup"><span data-stu-id="c2da3-110">First, install the required software and connect to your Microsoft 365 subscription.</span></span> <span data-ttu-id="c2da3-111">如需相關指示，請參閱 [Connect The Microsoft Azure Active Directory Module For Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="c2da3-111">For instructions, see [Connect with the Microsoft Azure Active Directory Module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
     
-2. <span data-ttu-id="de23f-112">使用 [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) 停用目錄同步處理：</span><span class="sxs-lookup"><span data-stu-id="de23f-112">Use [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) to disable directory synchronization:</span></span> 
+2. <span data-ttu-id="c2da3-112">使用 [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) 停用目錄同步處理：</span><span class="sxs-lookup"><span data-stu-id="c2da3-112">Use [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) to disable directory synchronization:</span></span> 
     
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
   ```
 
 >[!Note]
-><span data-ttu-id="de23f-113">如果您使用此命令，您必須等候72小時，您才能重新開啟目錄同步處理。</span><span class="sxs-lookup"><span data-stu-id="de23f-113">If you use this command, you must wait 72 hours before you can turn directory synchronization back on.</span></span>
+><span data-ttu-id="c2da3-113">如果您使用此命令，您必須等候72小時，您才能重新開啟目錄同步處理。</span><span class="sxs-lookup"><span data-stu-id="c2da3-113">If you use this command, you must wait 72 hours before you can turn directory synchronization back on.</span></span>
 >
