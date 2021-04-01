@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以建立與核心 eDiscovery 案例相關聯的保留，以保留可能與調查相關的內容。
-ms.openlocfilehash: c84d0be5a4a659ff9b64af14052bcf4033e2ed24
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 1026de3b5357c3417a00a69b4ae6890e8036c091
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470474"
+ms.locfileid: "51488242"
 ---
 # <a name="create-an-ediscovery-hold"></a>建立電子文件探索保留
 
@@ -131,8 +131,8 @@ ms.locfileid: "51470474"
 
 或者，屬於「 *1:1 交談* 」或「 *1： N 群組聊天* 」) 之 (小組中 [交談] 清單一部分的交談，都是儲存在參與聊天的使用者信箱中。 與在聊天交談中的使用者共用的檔案，會儲存在共用該檔案之使用者的 OneDrive 帳戶中。 因此，您必須將個別的使用者信箱和 OneDrive 帳戶新增至 eDiscovery 暫止，以保留聊天清單中的交談和檔案。 除了放置小組信箱和網站保留狀態之外，還建議您保留 Microsoft 小組成員的信箱。
 
-> [!IMPORTANT]
-> 在雲端式組織中，參與交談（屬於小組中的聊天室清單）的使用者必須具有 Exchange Online 信箱，才能在信箱置於 eDiscovery 暫止時保留聊天交談。 這是因為 [聊天室] 清單中的交談是儲存在聊天參與者的雲端架構信箱中。 如果聊天參與者沒有 Exchange Online 信箱，您將無法保留這些聊天會話。 例如，在 Exchange 混合式部署中，具有內部部署信箱的使用者，可能能夠加入屬於小組之聊天室清單一部分的交談。 不過，在此情況下，無法保留這些交談的內容，因為這些使用者沒有可以保留的雲端式信箱。
+> [!NOTE]
+> 如果您的組織有 Exchange 混合式部署 (或您的組織同步處理內部部署 Exchange 組織與 Office 365) ，且已啟用 Microsoft 團隊，則內部部署使用者可以使用「小組聊天」應用程式，並參與1:1 聊天和1： N 群組聊天。 這些交談儲存在與內部部署使用者相關聯的雲端式儲存中。 如果內部部署使用者處於 eDiscovery 暫止狀態，小組會保留雲端式儲存區中的內容。 如需詳細資訊，請參閱[搜尋內部部署使用者的 Teams 聊天資料](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 如需有關保留小組內容的詳細資訊，請參閱 [將 Microsoft 團隊使用者或小組設為法定保留](/MicrosoftTeams/legal-hold)。
 

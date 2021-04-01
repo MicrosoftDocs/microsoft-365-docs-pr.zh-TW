@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 深入瞭解自動擴充封存，為 Exchange Online 信箱提供無限制的封存儲存。
-ms.openlocfilehash: 9692ba27c64f41ac584bb4008a8b860daab031f5
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: d61d3649ed65a93298928cced21180bbeca6aa95
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029429"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476264"
 ---
 # <a name="overview-of-unlimited-archiving"></a>無限制封存概觀
 
@@ -90,7 +90,8 @@ Microsoft 365 (中的「無限封存」功能稱為「 *自動展開* 封存」)
 
 - 您可以存取封存信箱中的任何資料夾，包括已移至自動擴充儲存區域的資料夾。
 
-- 在 web 上的 Outlook 中可使用自動展開的封存功能。 類似于線上封存，您可以搜尋目前的資料夾本身，搜尋移至其他儲存體區域的專案。 這表示您必須選取 [資料夾清單] 中的 [封存] 資料夾，然後選取單一資料夾作為搜尋範圍。 同樣地，如果自動擴充的儲存體區域中的資料夾包含子資料夾，您必須分別搜尋每個子資料夾。
+- 在 Outlook for web (OWA) 中，可使用自動展開的封存搜尋。 類似于線上封存，您可以搜尋移至其他儲存體區域的專案。 選取 [封存] 做為 OWA 的搜尋範圍時，所有的封存 (（包括自動展開的封存）都會搜尋) 及其對應的子資料夾。
+
 - 您可以在目前的頻道 (預覽) 中，在 Outlook Desktop 中使用自動擴充的封存搜尋。 在此預覽中，目前的信箱範圍可供使用，因此可讓您搜尋自動展開的封存。 如需此和其他 Microsoft 搜尋支援功能的相關資訊，請參閱 [Outlook For Windows To Exchange Online 如何利用 Microsoft 搜尋](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)。 
 
 - Outlook 中的專案計數和已讀取/未讀取的計數 (在自動展開的封存中的 Outlook 和 Outlook 網頁) 中，可能不會準確。
@@ -111,6 +112,6 @@ Microsoft 365 (中的「無限封存」功能稱為「 *自動展開* 封存」)
 
 - 匯 **入服務：** 您可以使用 Office 365 匯入服務，將 PST 檔案匯入至使用者的自動擴充封存。 您可以將最多 100 GB 的資料從 PST 檔案匯入至使用者的封存信箱。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他相關資訊
 
 如需自動展開封存的相關技術詳細資訊，請參閱 [Microsoft 365：自動展開的封存常見問題](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)。

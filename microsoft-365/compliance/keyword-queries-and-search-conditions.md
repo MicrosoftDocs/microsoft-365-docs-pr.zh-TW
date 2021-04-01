@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解您可以使用 Microsoft 365 中的搜尋和 eDiscovery 工具進行搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: e3282cd5b8bcc493e7c423db72c086f953d114ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b3b2410c899ec98f39a4f89e5ea0a86537e5b666
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903581"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488298"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>內容搜尋和 eDiscovery 的關鍵字查詢和搜尋條件
 
@@ -55,7 +55,7 @@ ms.locfileid: "50903581"
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|附加至電子郵件的檔案名稱。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |具有名為 annualreport.ppt 的附加檔案的郵件。 在第二個範例中，使用萬用字元會傳回附件的檔案名中包含 "年曆" 一詞的郵件。 第三個範例會傳回所有包含 .pptx 副檔名的附件。|
 |密件副本|電子郵件訊息的 [密件副本] 欄位。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有範例都傳回具有 Pilar Pinilla 的郵件，包含在 [密件副本] 欄位中。|
-|類別| 要搜尋的類別。 使用者可以使用先前稱為 Outlook Web App) 上 (的 Outlook 或 Outlook 來定義類別。 可能的值為：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙  <br/>  紫色  <br/>  紅  <br/>  黃色|`category:"Red Category"`|來源信箱中已指派紅色類別的郵件。|
+|Category| 要搜尋的類別。 使用者可以使用先前稱為 Outlook Web App) 上 (的 Outlook 或 Outlook 來定義類別。 可能的值為：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙  <br/>  紫色  <br/>  紅  <br/>  黃色|`category:"Red Category"`|來源信箱中已指派紅色類別的郵件。|
 |副本|電子郵件訊息的 [副本] 欄位。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在這兩個範例中，在 [副本] 欄位中指定 Pilar Pinilla 的郵件。|
 |Folderid|特定信箱資料夾 (GUID) 的資料夾識別碼。 如果您使用此屬性，請務必搜尋指定資料夾所在的信箱。 只會搜尋指定的資料夾。 不會搜尋資料夾中的任何子資料夾。 若要搜尋子資料夾，您必須使用 Folderid 屬性做為您想要搜尋的子資料夾。  <br/> 如需搜尋 Folderid 屬性和使用腳本來取得特定信箱之資料夾 IDs 的詳細資訊，請參閱 [使用內容搜尋來尋找目標集合](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一個範例會傳回指定之信箱資料夾中的所有專案。 第二個範例會傳回 garthf@contoso.com 所傳送或接收的指定信箱資料夾中的所有專案。|
 |寄件者|電子郵件的寄件者。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|指定的使用者所傳送或從指定的網域傳送的郵件。|
@@ -105,7 +105,7 @@ ms.locfileid: "50903581"
 |FileName|檔案的名稱。|`filename:"marketing plan"`  <br/> `filename:estimate`|第一個範例會傳回標題中具有精確片語 "行銷 plan" 的檔案。 第二個範例會傳回檔案名中包含 "預估" 一字的檔案。|
 |LastModifiedTime|上次變更專案的日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一個範例會傳回在2016年5月1日或之後變更的專案。 第二個範例會傳回在5月1日、2016和6月1日（2016）之間變更的專案。|
 |ModifiedBy|上次變更專案的人員。 請務必使用此屬性的使用者顯示名稱。|`modifiedby:"Garth Fort"`|由 Garth Fort 最後變更的所有專案。|
-|路徑|SharePoint 或 OneDrive for Business site 中特定網站的路徑 (URL) 。  <br/> 若要傳回位於您為 path 屬性指定之網站的資料夾中的專案，您必須新增/ \* 至指定網站的 URL; 例如，  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **附注：** 使用此  `Path` 屬性來搜尋 OneDrive 位置，不會在搜尋結果中傳回媒體檔案，例如 .png、tiff 或 .wav 檔案。 在搜尋查詢中使用不同的 site 屬性可搜尋 OneDrive 資料夾中的媒體檔案。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一個範例會傳回 Business site 的指定 OneDrive 中的所有專案。 第二個範例會傳回指定網站中的檔 (和包含在檔案名中包含 "保密" 字樣的網站) 中的資料夾。|
+|路徑|SharePoint 或 OneDrive for Business site 中特定網站的路徑 (URL) 。<br/><br/>若要只從指定的網站傳回專案，您必須將尾部新增 `/` 至 URL; 的結尾（例如， `path: "https://contoso.sharepoint.com/sites/international/"` <br/><br/> 若要傳回位於路徑屬性指定之網站的資料夾中的專案，您必須新增 `/*` 至 URL; 的結尾（例如，  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/><br/> **附注：** 使用此  `Path` 屬性來搜尋 OneDrive 位置，不會在搜尋結果中傳回媒體檔案，例如 .png、tiff 或 .wav 檔案。 在搜尋查詢中使用不同的 site 屬性可搜尋 OneDrive 資料夾中的媒體檔案。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一個範例會傳回 Business site 的指定 OneDrive 中的所有專案。 第二個範例會傳回指定網站中的檔 (和包含在檔案名中包含 "保密" 字樣的網站) 中的資料夾。|
 |SharedWithUsersOWSUser|已與指定的使用者共用，並顯示在使用者的 OneDrive 商務版網站 **] 頁面上** 的檔。 這些是組織中其他人員與指定的使用者明確共用的檔。 當您匯出符合使用 SharedWithUsersOWSUser 屬性之搜尋查詢的檔時，檔會從與指定使用者共用檔之人員的原始內容位置匯出。 如需詳細資訊，請參閱 [搜尋組織內共用的網站內容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|這兩個範例會傳回與 Garth Fort 明確共用的所有內部檔，並顯示在 Garth Fort 的 Business account OneDrive 中的 [ **與我共用** ] 頁面上。|
 |網站|組織中的網站或網站群組的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一個範例會傳回組織中所有使用者之商務網站的 OneDrive 的專案。 第二個範例會傳回所有小組網站中的專案。|
 |Size|專案的大小（以位元組為單位）。|`size>=1`  <br/> `size:1..10000`|第一個範例會傳回大於1個位元組的專案。 第二個範例會傳回大小介於1到10000位元組的專案。|
@@ -167,11 +167,11 @@ ms.locfileid: "50903581"
 
 布林值搜尋運算子（例如 **AND**、 **OR**、 **NOT**）可協助您在搜尋查詢中包含或排除特定的字詞，以定義更為精確的搜尋。 其他技術（如使用屬性運算子 (例如 `>=` or `..`) 、引號、括弧及萬用字元）可協助您精煉搜尋查詢。 下表列出您可以用來縮小或拓寬搜尋結果的運算子。 
   
-| 運算子 | Usage | 描述 |
+| 運算子 | 使用 | 描述 |
 |:-----|:-----|:-----|
 |AND|keyword1 與 keyword2|會傳回包含所有指定關鍵字或運算式的專案  `property:value` 。 例如，  `from:"Ann Beebe" AND subject:northwind` 會傳回 Beebe 中，包含主旨行中的「northwind」一詞的所有郵件。 <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|會 *傳回包含* `keyword2` 或 `keyword3` 同時包含的專案 `keyword1` 。   因此，此範例相當於查詢  `(keyword2 OR keyword3) AND keyword1` 。  <br/> 在  `keyword1 + keyword2` 符號) 之後的查詢 (與 **+** 使用 **AND** 運算子不同。 此查詢相當於並傳回  `"keyword1 + keyword2"` 精確階段的專案  `"keyword1 + keyword2"` 。|
-|「或」|keyword1 或 keyword2|會傳回包含一或多個指定關鍵字或運算式的專案  `property:value` 。 <sup>2</sup>|
+|或|keyword1 或 keyword2|會傳回包含一或多個指定關鍵字或運算式的專案  `property:value` 。 <sup>2</sup>|
 |不|keyword1 未 keyword2  <br/> 不是來自： "王 Beebe"  <br/> 非類型： im|排除關鍵字或運算式所指定的專案  `property:value` 。 在第二個範例中，排除王小姐 Beebe 所傳送的郵件。 第三個範例會排除任何立即訊息交談，例如儲存至 [交談歷程記錄] 信箱資料夾的商務用 Skype 交談。 <sup>2</sup>|
 |-|keyword1 -keyword2|與 **NOT** 運算子相同。 所以此查詢會傳回包含的專案，  `keyword1` 並將包含的專案排除  `keyword2` 。|
 |附近|keyword1 NEAR (n) keyword2|會傳回彼此接近的字詞，其中 n 等於文字相隔的專案數。 例如，傳回 `best NEAR(5) worst` 任何文字 "惡化" 位於5字 "最佳" 以內的專案。 若未指定數值，則預設的距離為八個字。 <sup>2</sup>|
@@ -446,3 +446,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - 若要從搜尋結果中排除以特定屬性值標示的內容，請在屬性名稱前面加上減號 ( ) 。 例如， `-from:"Sara Davis"` 排除在 Sara Davis 所傳送的任何郵件。
 
 - 您可以根據郵件類型匯出專案。 例如，若要在 Microsoft 小組中匯出 Skype 交談和聊天，請使用語法 `kind:im` 。 若只要傳回電子郵件訊息，您會使用 `kind:email` 。 若要傳回 Microsoft 小組中的研討、會議及通話，請使用 `kind:microsoftteams` 。
+
+- 如先前所述，當搜尋網站時， `/` 當使用此 `path` 屬性只傳回指定的網站中的專案時，您必須將尾部新增至 URL 的結尾。 如果您未包含尾部 `/` ，也會傳回具有類似路徑名稱之網站的專案。 例如，如果您使用的是， `path:sites/HelloWorld` 來自名為或的網站的專案 `sites/HelloWorld_East` 也會 `sites/HelloWorld_West` 傳回。 若要只從 HelloWorld 網站傳回專案，您必須使用 `path:sites/HelloWorld/` 。

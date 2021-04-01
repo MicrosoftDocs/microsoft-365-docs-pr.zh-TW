@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: aa3af1e3cf507178a5747cca28fbda543aecd334
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e4dcbeeda50c6229935bae8003d8db129d852451
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052121"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488200"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -112,7 +112,7 @@ ms.locfileid: "51052121"
 
 9. 選取 **[關閉]** 以完成步驟。
 
-如需角色群組和權限的詳細資訊，請參閱[規範中心的權限](../security/defender-365-security/protect-against-threats.md)。
+如需角色群組和權限的詳細資訊，請參閱[規範中心的權限](../security/office-365-security/protect-against-threats.md)。
 
 ## <a name="step-2-required-enable-the-audit-log"></a>步驟 2 (必要) ：啟用審核記錄檔
 
@@ -134,9 +134,6 @@ ms.locfileid: "51052121"
 當您指派原則中的通訊群組時，該原則會監控通訊群組中每個使用者的所有電子郵件和團隊聊天。 當您在原則中指派 Microsoft 365 群組時，原則會監控傳送至該群組的所有電子郵件和團隊聊天，而不是每個群組成員所收到的個別電子郵件和聊天。
 
 如果您是具有 Exchange 內部部署或外部電子郵件提供者的組織，且您想要為使用者監視 Microsoft 團隊聊天，您必須為使用內部部署或外部信箱進行監視的使用者建立通訊群組。 在上述步驟中，您會將此通訊群組指派為 [原則嚮導] 中的 [授與 **群組** ] 選擇。
-
->[!IMPORTANT]
->您必須向 Microsoft 支援服務提交要求，才能讓組織使用安全性與合規性中心的圖形化使用者介面來搜尋內部部署使用者的 Teams 聊天資料。 如需詳細資訊，請參閱針對 [內部部署使用者搜尋雲端架構信箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 若要管理大型企業組織中的監督使用者，您可能需要跨大型群組監控所有使用者。 您可以使用 PowerShell 為指派的群組設定全域通訊符合性原則的通訊群組。 這可讓您以單一原則監控成千上萬的使用者，並在新員工加入您的組織時，維持通訊相容性原則的更新。
 
@@ -252,7 +249,7 @@ ms.locfileid: "51052121"
 
 4. 若要啟用匿名，請選取 [ **顯示匿名版本的使用者名**]。
 
-5. 選取 [儲存]。
+5. 選取 [儲存 **]**。
 
 6. 流覽至 [ **公告範本** ] 索引標籤，然後選取 [ **建立公告範本**]。
 
