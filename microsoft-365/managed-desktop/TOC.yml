@@ -15,7 +15,7 @@
     - name: Microsoft 受管理的電腦服務描述
       href: service-description/index.md
       items:
-        - name: 支援的地區和語言
+        - name: 支援的地區
           href: service-description/regions-languages.md
         - name: 產品生命週期
           href: service-description/device-lifecycle.md
@@ -96,6 +96,8 @@
           href: get-started/company-portal.md
         - name: 啟用企業狀態漫遊
           href: get-started/enterprise-state-roaming.md
+        - name: 當地語系化使用者體驗
+          href: get-started/localization.md
         - name: 設定裝置
           href: get-started/set-up-devices.md
           items:
