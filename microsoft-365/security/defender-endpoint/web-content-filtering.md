@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a8ab1ba1f0dc1bb629e438380b7b77e1ed221f08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 16f0d96b75ec7035ca133f75a83df1f284ee5c4b
+ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186026"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51484741"
 ---
 # <a name="web-content-filtering"></a>Web 內容篩選
 
@@ -60,7 +60,7 @@ Web 內容篩選可在主要網頁瀏覽器上使用，且由 Windows Defender S
 
 在嘗試此功能之前，請確定您有下列需求：
 
-- Windows 10 企業版 E5 授權或 Microsoft 365 E3 + Microsoft 365 E5 Security 附加元件。
+- Windows 10 企業版 E5，Microsoft 365 E5，Microsoft 365 E5 Security，Microsoft 365 E3 + Microsoft 365 E5 Security 附加元件或 Microsoft Defender for Endpoint 獨立授權。 
 - 存取 Microsoft Defender 安全中心入口網站
 - 執行 Windows 10 周年的裝置更新 (版本 1607) 或更新版本，包含最新的 MoCAMP 更新。
 
@@ -160,9 +160,11 @@ Web 內容篩選原則會指定哪些網站類別會封鎖在哪些裝置群組�
 
 - 未指派的裝置會在報告中顯示不正確的資料。 在 [報告詳細資料] 中 > 裝置群組時，您可能會看到具有空白裝置群組欄位的列。 在進入指定群組之前，此群組包含未指派的裝置。 此列的報表可能不包含正確的裝置或存取計數。
 
+- 「Web 內容篩選」報告目前僅限於顯示前5000記錄。 例如，如果適用的話，「網域」報告只會針對指定的篩選器查詢顯示最大上限為5000的網域。 
+
 ## <a name="related-topics"></a>相關主題
 
-- [Web 保護一覽](web-protection-overview.md)
+- [Web 保護概觀](web-protection-overview.md)
 - [網頁威脅防護](web-threat-protection.md)
-- [監視 web 安全性](web-protection-monitoring.md)
-- [回應 web 威脅](web-protection-response.md)
+- [監視 Web 安全性](web-protection-monitoring.md)
+- [回應 Web 威脅](web-protection-response.md)

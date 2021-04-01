@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務。
-ms.openlocfilehash: 18df7c43e21fb186dee56dabc29a67654f0f6882
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7e170967e1670433a7d28753430f0cb15818039b
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923765"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476634"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務
 
@@ -63,9 +63,9 @@ Office 365 影片即將于年 2021年 3月 1日停用。 如果您選擇將 Offi
 
 ## <a name="how-is-the-migration-organized"></a>遷移如何進行組織？
 
-下圖顯示遷移至新德文資料中心的九個階段。
+下圖顯示遷移至新德文資料中心的十大階段。
 
-![遷移至新的德國資料中心的九個階段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![遷移至新的德國資料中心的十大階段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 當您 [選擇要進行遷移](./ms-cloud-germany-migration-opt-in.md)時，這些階段便會開始。 大多數的遷移階段都是以執行後端服務作業的方式執行，並在另一個階段之後執行。 在遷移過程中，會透過 Microsoft 365 系統管理中心的郵件中心來傳送其他用戶端的任務和整體遷移狀態的開始。 工作的範例可能包括客戶管理的 DNS 更新、重新設定 Exchange 混合式客戶的混合式設定或 Azure 遷移。
 
@@ -93,6 +93,8 @@ Office 365 影片即將于年 2021年 3月 1日停用。 如果您選擇將 Offi
 - Dynamics 完成
 - Power BI 完成
 - 服務的最後一次轉換已完成
+
+在將 Azure AD 的最後一個轉換為全球服務後，就會將所有的用戶端和應用程式完全轉換為使用正確的端點。 最後一次轉換後，會有30天的時段，繼續從 Microsoft Cloud Deutschland service 取得 Azure AD 權杖的可能性。 當30天的時段到期時，用戶端和應用程式將不再能夠存取 Microsoft Cloud Deutschland 的 Azure AD 端點。 應用程式或使用者存取將無法從此點失敗。 您必須確定在此時間視窗關閉之前，所有使用者和應用程式都已遷移到正確的端點。 
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>移至新的德國資料中心區域
 
@@ -330,11 +332,11 @@ Microsoft 受管理的 IP 範圍和 DNS 區域會在遷移期間和全域服務�
 
 
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [選擇加入移轉](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 開始：
 

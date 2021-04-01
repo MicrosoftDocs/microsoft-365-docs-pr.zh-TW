@@ -1,5 +1,5 @@
 ---
-title: Windows 虛擬桌面中的板載 Windows 10 多會話裝置
+title: 在 Windows 虛擬桌面中上將 Windows 10 多工作階段裝置上線
 description: 如需 Windows 虛擬機器中上架 Windows 10 多會話裝置的詳細資訊，請參閱本文。
 keywords: Windows Virtual Desktop、WVD、microsoft defender、端點、板載
 search.product: eADQiWindows 10XVcnh
@@ -13,24 +13,20 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222608"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488142"
 ---
-# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Windows 虛擬桌面中的板載 Windows 10 多會話裝置 
+# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虛擬桌面中上將 Windows 10 多工作階段裝置上線 
 6分鐘可供讀取 
 
 適用於： 
 - 在 Windows 虛擬機器上執行的 windows 10 多會話 (WVD)  
-
-> [!WARNING]
-> Windows 虛擬桌面多會話案例的 Microsoft Defender for Endpoint 支援目前正在預覽中，且每個主機/VM 最多可同時限制25個同時會話。 不過，已完全支援 Windows 虛擬桌面上的單一會話案例。
 
 Microsoft Defender for Endpoint 支援同時監控 VDI 和 Windows 虛擬桌面會話。 根據組織的需求，您可能需要執行 VDI 或 Windows 虛擬桌面會話，以協助員工從未受管理的裝置、遠端位置或類似案例中存取公司資料和應用程式。 使用 Microsoft Defender for Endpoint，您可以監視這些虛擬機器，以進行反常的活動。
 

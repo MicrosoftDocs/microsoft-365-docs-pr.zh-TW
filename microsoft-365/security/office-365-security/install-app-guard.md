@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 取得最新的硬體隔離。 防止目前和新興的攻擊（如入侵或惡意連結）中斷員工生產力和企業安全性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c066805bc21a941673fd1157dc87bd95bcd2c711
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d0fa6ad884c6b21457c8359cf82e32e4b8c100ba
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203433"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488308"
 ---
 # <a name="application-guard-for-office-for-admins"></a>適用于系統管理員的 Office 應用程式防護
 
@@ -40,10 +40,11 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
 ### <a name="minimum-software-requirements"></a>基本軟體需求
 
 * **Windows 10**： Windows 10 Enterprise Edition，Client Build version 2004 (20H1) 組建19041或更新版本
-* **Office**： Office Current 通道組建版本 2011 16.0.13530.10000 或更新版本。 支援32位和64位版本的 Office。
+* **Office**： Office Current 通道和每月的 Enterprise 通道，組建版本 2011 16.0.13530.10000 或更新版本。 支援32位和64位版本的 Office。
 * **更新套件**： Windows 10 累計每月安全性更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
-如需詳細的系統需求，請參閱 [Microsoft Defender Application Guard 的系統需求](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 若要深入瞭解 Office 更新通道，請參閱 [Microsoft 365 的更新通道一覽](/deployoffice/overview-update-channels)。
+如需詳細的系統需求，請參閱 [Microsoft Defender Application Guard 的系統需求](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 此外，請參閱電腦製造商的指南，以瞭解如何啟用虛擬化技術。
+若要深入瞭解 Office 更新通道，請參閱 [Microsoft 365 的更新通道一覽](/deployoffice/overview-update-channels)。
 
 ### <a name="licensing-requirements"></a>授權需求
 
@@ -76,6 +77,9 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
 4. 重新開機系統。
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>設定診斷 & 傳送完整資料的意見
+
+> [!NOTE]
+> 不過，這不是必要的，但設定選用的診斷資料將有助於診斷報告的問題。
 
 此步驟可確保識別和修正問題所需的資料是在 Microsoft。 請遵循下列步驟，在 Windows 裝置上啟用診斷：
 
@@ -115,7 +119,9 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
 
 ## <a name="configure-application-guard-for-office"></a>設定 Office 的應用程式防護
 
-Office 支援下列原則，可讓您設定 Office 應用程式防護的功能。 您可以透過「群組原則」或 Office cloud policy service 來設定這些原則。
+Office 支援下列原則，可讓您設定 Office 應用程式防護的功能。 您可以透過「群組原則」或 [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service)來設定這些原則。
+請參閱使用者設定系統管理範本中的群組原則設定 [  **\\ \\ Microsoft Office 2016 \\ 安全性設定 \\ 信任中心 \\ 應用程式防護**]，以查看管理員設定的設定。
+
 
 > [!NOTE]
 > 設定這些原則可以停用 Office 的應用程式防護中開啟檔案的某些功能。
@@ -183,13 +189,15 @@ Office 支援下列原則，可讓您設定 Office 應用程式防護的功能�
 
 適用于 Office 的應用程式防護會與 Microsoft Defender for Endpoint 整合，以針對隔離環境中發生的惡意活動提供監控和警示。
 
+[Microsoft E365 E5 中的安全檔](/microsoft-365/security/office-365-security/safe-docs) 是一種功能，可使用 microsoft Defender for Endpoint 來掃描在 Office 的應用程式防護中開啟的檔。 若為其他保護層級，使用者在決定掃描的結果之後，就無法保留 Office 的應用程式防護。
+
 Microsoft Defender for Endpoint 是一種安全性平臺，旨在協助商業網路避免、偵測、調查和回應高級威脅。 如需此平臺的詳細資訊，請參閱 [Microsoft Defender For Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 若要深入瞭解如何將裝置上架至此平臺，請參閱 [在 Microsoft Defender For Endpoint service 中的板載裝置](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
 
 您也可以將 Microsoft Defender for Office 365 設定為搭配使用 Defender for Endpoint。 如需詳細資訊，請參閱 [整合 Defender For Office 365 搭配 Microsoft Defender For Endpoint](integrate-office-365-ti-with-mde.md)。
 
 ## <a name="limitations-and-considerations"></a>限制和考慮
 
-* 適用于 Office 的應用程式防護是一種限制模式，可隔離不可信的檔，使其無法存取電腦上信任的公司資源、內部網路、使用者的身分識別及任意檔案。 因此，如果使用者嘗試存取的功能具有對此存取的相依性（例如，從磁片上的本機檔案插入圖片），access 就會失敗，並產生如下列範例所示的提示。 若要讓不可信的檔能夠存取受信任的資源，使用者必須從檔中移除 Application Guard protection。
+* 適用于 Office 的應用程式防護是一種受保護的模式，可隔離不受信任的檔，使其無法存取受信任的公司資源、內部網路、使用者的身分識別，以及電腦上的任意檔案。 因此，如果使用者嘗試存取的功能具有對此存取的相依性（例如，從磁片上的本機檔案插入圖片），access 就會失敗，並產生如下列範例所示的提示。 若要讓不可信的檔能夠存取受信任的資源，使用者必須從檔中移除 Application Guard protection。
 
   ![對話方塊說可協助您保護安全，但無法使用此功能](../../media/ag10-limitations.png)
 
@@ -227,4 +235,5 @@ Application Guard 會使用虛擬容器，將不受信任的檔與系統隔離�
 
 * 選取 [網路連結] (`http` 或 `https`) 並不會開啟瀏覽器。
 * 目前不支援在使用應用程式防護開啟的 Office 檔中 (RTF) 內容或圖像貼上 rtf 格式。
-* 更新 .NET 導致檔案無法在應用程式防護中開啟。 作為解決方法，使用者可以在發生這種失敗時，重新開機其裝置。 深入瞭解 [當嘗試開啟 Windows Defender 應用程式防護或 Windows 沙箱時，收到錯誤訊息時](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)，有關問題的詳細資訊。
+* 不受支援的檔案類型保護原則的預設設定為封鎖開啟不受信任的資訊版權管理檔案類型 (IRM) 、CSV 或 HTML。
+* 更新 .NET 可能會導致檔無法在應用程式防護中開啟。 作為解決方法，使用者可以在發生這種失敗時，重新開機其裝置。 深入瞭解 [當嘗試開啟 Windows Defender 應用程式防護或 Windows 沙箱時，收到錯誤訊息時](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)，有關問題的詳細資訊。

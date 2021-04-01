@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可協助您在 Microsoft 365 中實作記錄管理解決方案的記錄。
-ms.openlocfilehash: 52ca56436686faac1d414dac47e2e9e16c36fa90
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 5c828f06f2ce9e2bd18869f897f1f372c1a62f21
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408556"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471122"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用記錄版本設定來更新儲存在 SharePoint 或 OneDrive 中的記錄
 
@@ -45,8 +45,8 @@ ms.locfileid: "51408556"
 
   - **維護包含所有版本的長青文件。** 根據預設，每個 SharePoint 和 OneDrive 文件在項目功能表上都會有版本歷程記錄。 在這個版本歷程記錄中，您可以輕鬆查看記錄的版本，並檢視這些文件。
 
-> [!NOTE]
-> 當您將記錄版本設定與具有刪除動作的保留標籤一起使用時，建議您也將 [開始保留期依據:**]** 設定為 [標示項目時 **]**。 利用此標籤設定，將重設每個新記錄版本保留期間的開始，這可確保較舊的版本會在較新版本之前刪除。
+> [!TIP]
+> 當您將記錄版本設定與具有刪除動作的保留標籤一起使用時，建議您將保留設定的 **[開始保留期間的依據:]** 設定為 **[標籤項目時]**。 利用此標籤設定，每個新記錄版本保留期間的開始將會重設，這可確保較舊的版本會在較新版本之前刪除。
 
 如果任何文件的保留標籤會將項目標示為記錄，則會自動提供記錄版本設定。 當使用者透過 [詳細資料] 窗格檢視文件內容時，系統會將 [記錄狀態] 從 [鎖定] 切換為 [解除鎖定]。 此動作會在 [文件保留庫] 的 [記錄] 資料夾中建立記錄，該記錄將在保留期的剩餘時間內保留在其中。 
 

@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ca24fff5e8b18128c55288352e65aa3cecfe3d81
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165630"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476610"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (一般) 
 
-從 Microsoft Cloud Deutschland 的承租人遷移 (MCD) Microsoft Office 365 全域服務的地區 "德國"，會做為每一個工作負載的一組階段和各自設定的動作執行。 下圖顯示遷移至新德文資料中心的九個階段。
+從 Microsoft Cloud Deutschland 的承租人遷移 (MCD) Microsoft Office 365 全域服務的地區 "德國"，會做為每一個工作負載的一組階段和各自設定的動作執行。 下圖顯示遷移至新德文資料中心的十大階段。
 
-![遷移至新的德國資料中心的九個階段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![遷移至新的德國資料中心的十大階段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 根據組織的整體規模和複雜度，遷移程式會在數周內完成。 進行遷移時，使用者與系統管理員可以繼續利用本檔中詳細資訊的服務。 在遷移期間，圖形和表格會定義階段和步驟。
 
@@ -47,6 +47,8 @@ ms.locfileid: "51165630"
 |Power BI & Dynamics 365|15 + 天|Microsoft|遷移 Power BI 及 Dynamics 365 內容。|
 |完成 Azure AD|1-2 天|Microsoft|完成租使用者切換為全球。|
 |Clean-Up|1-2 天|客戶|清除舊版連線至 Microsoft Cloud Deutschland，例如 Active Directory Federation Services (AD FS) 信賴憑證者信任、Azure AD Connect 及 Office 用戶端重新開機。|
+|已停用端點|30 天|Microsoft|完成 Azure AD 後30天之後，Microsoft Cloud Deutschland Azure AD 服務將停止已轉換組織的端點存取。 端點要求（例如驗證）會從這個點向前失敗，以進行 Microsoft Cloud Deutschland service。 |
+
 
 階段和其動作可確保重要資料和經驗已遷移至 Office 365 泛型服務。 租使用者新增至遷移佇列後，每個工作負載都會以後端服務執行的一組步驟完成。 某些工作負載可能需要管理員 (或使用者) ，否則遷移可能會影響[如何組織遷移時](ms-cloud-germany-transition.md#how-is-the-migration-organized)所執行和討論之階段的使用狀況？
 
@@ -118,6 +120,7 @@ ms.locfileid: "51165630"
 |停止或刪除任何上架或脫離信箱移動，亦不會在 Exchange 內部部署和 Exchange Online 之間移動信箱。  | 這可確保信箱移動要求不會失敗，併發生錯誤。 | 若失敗，可能會導致服務或 Office 用戶端失敗。 |
 | Exchange Online 信箱會從 Microsoft Cloud Deutschland 移至 Office 365 泛型服務。| Exchange Online 設定會將新的隨用本機德文區域新增至轉換的組織。 Office 365 泛型服務區域會設定為預設值，這可讓內部負載平衡服務將信箱重新分配至 Office 365 服務中的適當預設區域。 在此轉換中，任何一側 (MCD 或全域服務) 的使用者都位於相同的組織中，而且可以使用 URL 端點。 |<ul><li>將使用者和服務從舊版 MCD URLs (outlook.office.de) 轉換為新的 Office 365 服務 URLs (`https://outlook.office365.com`) 。</li><li>使用者可能會在遷移期間，繼續透過舊版 MCD URLs 存取服務，但在完成遷移時，需要停止使用舊版 URLs。</li><li>使用者應使用「全球 Office 入口網站」功能（ (行事曆、郵件、人員) ）轉換為 Office Online 功能。 流覽至尚未遷移至 Office 365 服務的服務，在遷移之前將無法運作。 </li><li>在遷移期間，Outlook Web App 不會提供公用資料夾體驗。 </li></ul>|
 | 更新 AutoDiscover 的自訂 DNS 設定| 在 Exchange Online 階段 (階段 5) 時，必須更新目前指向 Microsoft Cloud Deutschland 之 AutoDiscover 的客戶管理 DNS 設定，以參照 Office 365 全域端點。 <br> 必須更新具有指向 autodiscover-outlook.office.de 之 CNAME 的現有 DNS 專案，以指向 autodiscover.outlook.com。 |  可用性要求和服務探索呼叫透過 AutoDiscover 直接指向 Office 365 服務。 在遷移完成後，未執行這些 DNS 更新的客戶可能會遇到自動探索服務的問題。 |
+| 使用者必須更新 POP3、IMAP4、SMTP 用戶端設定。 | 具有裝置連線至 Microsoft 雲端 Deutschland 端點的使用者通訊協定 POP3、IMAP4、SMTP 是必要的，以手動更新其用戶端裝置，以透過信箱遷移至 Office 365 德國地區的方式，手動更新其用戶端裝置以切換至 [office 365 全球端點](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) 。 <br> smtp.office365.com： SMTP (TCP： 587) ，outlook.office365.com： IMAP4 (TCP： 993) ，POP3 (TCP： 995) | 這些通訊協定的使用者必須在信箱已 transioned 的情況下切換至使用 Outlook mobile 或 Outlook，然後在用戶端裝置上更新 IMAP4、POP3、將用戶端裝置上的 SMTP 設定新增至新端點。 若失敗更新用戶端端點，將會在遷移使用者信箱時，對 Microsoft Cloud Deutschland 造成用戶端連線失敗。 |
 ||||
 
 其他考慮：
@@ -205,6 +208,18 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 \*\* (i) 使用 Microsoft Power BI 的客戶必須採取遷移程式所定義的遷移程式，採取行動。  (ii) 客戶採取行動的失敗即表示 Microsoft 將無法完成遷移。  (iii) 當 Microsoft 因客戶的 inaction 而無法完成遷移時，客戶的訂閱會在2021年10月29日到期。
 
+## <a name="azure-ad-finalization-phase-9-10"></a>Azure AD 終止 (階段9，10) 
+
+**適用于：** 所有客戶
+
+當 Office 365 租使用者完成遷移的最後一個步驟 [Azure AD 完成 (階段 9) ] 所有服務都會轉換為全球。 任何應用程式或使用者都不應該存取任何 Microsoft Cloud Deutschland 端點的承租人資源。 自動，30天完成終止後，Microsoft Cloud Deutschland Azure AD 服務將停止已轉換租使用者的端點存取。 端點要求（例如驗證）會從這個點向前失敗，以進行 Microsoft Cloud Deutschland service。 
+
+| 步驟 (s)  | 描述 | 影響 |
+|:-------|:-------|:-------|
+| 更新使用者端點 | 確定所有使用者都使用適當的 Microsoft 全球端點存取服務 |在遷移完成後30天之後，Microsoft Cloud Deutschland 端點會停止接受要求;用戶端或應用程式流量將會失敗。  |
+| 更新 Azure AD 應用程式端點 | 您必須更新驗證、Azure Active Directory (Azure AD) Graph，以及應用程式的 MS Graph 端點，以供 Microsoft 全球服務使用。 | 在遷移完成後30天之後，Microsoft Cloud Deutschland 端點會停止接受要求;用戶端或應用程式流量將會失敗。 |
+||||
+
 ## <a name="office-apps"></a>Office 應用程式
 
 **適用于：** 所有使用 Office 桌面應用程式的客戶 (Word、Excel、PowerPoint、Outlook ... ) 
@@ -230,7 +245,7 @@ Office 中的最近使用 (MRU) 服務，是從 Microsoft Cloud Deutschland 轉�
 
 請確定您已閱讀 [遷移後活動](ms-cloud-germany-transition-add-experience.md#post-migration) 文章，並據此加以執行。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>詳細資訊
 
 開始：
 

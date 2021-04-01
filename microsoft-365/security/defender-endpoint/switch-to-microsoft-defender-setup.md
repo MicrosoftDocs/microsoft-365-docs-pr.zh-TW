@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: fb6edf33b02671396fa4d078770d5b502e59d087
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6f2104e38bd55806e0873166b07a31aff46e9c24
+ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185512"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51484753"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>切換至 Microsoft Defender for Endpoint-階段2：設定
 
@@ -34,7 +34,7 @@ ms.locfileid: "51185512"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![階段1：準備](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[階段1：準備](switch-to-microsoft-defender-prepare.md) |![階段2：設定](images/phase-diagrams/setup.png)<br/>階段2：設定 |[![階段3： Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[階段3：板載](switch-to-microsoft-defender-onboard.md) |
+|[![階段 1：準備](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[階段 1：準備](switch-to-microsoft-defender-prepare.md) |![階段 2：設定](images/phase-diagrams/setup.png)<br/>階段 2：設定 |[![階段3： Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[第 3 階段：導入](switch-to-microsoft-defender-onboard.md) |
 |--|--|--|
 ||*您在這裡！* | |
 
@@ -128,7 +128,7 @@ ms.locfileid: "51185512"
 |---------|---------|
 |[Intune](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**附注**： Intune 現在是 Microsoft 端點管理員。 |1. 移至 [Microsoft 端點管理員管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) 並登入。<br/>2. 選取 [**裝置** 設定配置  >  **檔**]，然後選取您要設定的配置檔案類型。 如果您尚未建立裝置限制配置檔案類型，或者您想要建立新的 **裝置限制** 配置檔案類型，請參閱 [在 Microsoft Intune 中設定裝置限制設定](https://docs.microsoft.com/intune/device-restrictions-configure)。<br/>3. 選取 [ **屬性**]，然後選取 [ **設定設定：編輯**]。<br/>4. 展開 **Microsoft Defender 防毒軟體**。 <br/>5. 啟用 **雲端提供的保護**。<br/>6. 在 [ **範例提交前提示使用者** ] 下拉式清單中，選取 [ **自動傳送所有範例**]。<br/>7. 在 [偵測 **可能有害的應用程式** ] 下拉式功能表中，選取 [ **啟用** ] 或 [ **審計**]。<br/>8. 選取 [ **審閱 + 儲存**]，然後選擇 [ **儲存**]。<br/>**提示**：如需 Intune 裝置設定檔的詳細資訊，包括如何建立和設定其設定，請參閱 [什麼是 Microsoft Intune 裝置設定檔？](https://docs.microsoft.com/intune/device-profiles)。|
 |Windows 中的控制台     |遵循下列指導： [開啟 Microsoft Defender 防毒軟體](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows)。 <br/>**附注**：在某些 windows 版本中，您可能會看到 *Windows defender 防病毒* ，而不是 *Microsoft Defender 防毒軟體* 。        |
-|[高級群組原則管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>或<br/>[群組原則管理主控台](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. 移至 `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` 。 <br/>2. 尋找稱為關閉 **Microsoft Defender 防病毒** 程式的原則。<br/>3. 選擇 [ **編輯原則設定**]，並確定已停用原則。 這會啟用 Microsoft Defender 防毒軟體。 <br/>**附注**：在某些 windows 版本中，您可能會看到 *Windows defender 防病毒* ，而不是 *Microsoft Defender 防毒軟體* 。 |
+|[高級群組原則管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>或<br/>[群組原則管理主控台](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. 移至 **電腦設定系統**  >  **管理範本**  >  **Windows 元件**  >  **Microsoft Defender 防毒軟體**。 <br/>2. 尋找稱為關閉 **Microsoft Defender 防病毒** 程式的原則。<br/>3. 選擇 [ **編輯原則設定**]，並確定已停用原則。 這會啟用 Microsoft Defender 防毒軟體。 <br/>**附注**：在某些 windows 版本中，您可能會看到 *Windows defender 防病毒* ，而不是 *Microsoft Defender 防毒軟體* 。 |
 
 ### <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode"></a>確認 Microsoft Defender 防病毒處於被動模式
 
@@ -182,7 +182,7 @@ ms.locfileid: "51185512"
 |--|--|
 |[Intune](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**附注**： Intune 現在是 Microsoft 端點管理員。 |1. 移至 [Microsoft 端點管理員管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) 並登入。<br/>2. 選取 [**裝置** 設定配置  >  **檔**]，然後選取您要設定的設定檔。<br/>3. 在 [ **管理**] 下，選取 [ **屬性**]。 <br/>4. 選取 **設定設定：編輯**。<br/>5. 展開 [ **Microsoft Defender 防病毒** 程式]，然後展開 [ **Microsoft Defender 防病毒排除**]。<br/>6. 指定要從 Microsoft Defender 防病毒掃描中排除的檔案和資料夾、副檔名及處理常式。 如需參考，請參閱 [Microsoft Defender 防病毒排除](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)。<br/>7. 選擇 [ **審閱 + 儲存**]，然後選擇 [ **儲存**]。  |
 |[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/) |1. 使用 [Configuration Manager 主控台](https://docs.microsoft.com/mem/configmgr/core/servers/manage/admin-console)，移至 [**資產和合規性**  >  **端點保護**  >  的 **反惡意程式碼原則**]，然後選取您要修改的原則。 <br/>2. 指定要從 Microsoft Defender 防病毒掃描中排除的檔案和資料夾、副檔名及處理常式的排除設定。 |
-|[群組原則物件](https://docs.microsoft.com/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. 在您的群組原則管理電腦上，開啟「 [群組原則管理主控台](https://technet.microsoft.com/library/cc731212.aspx)」，以滑鼠右鍵按一下您要設定的群組原則物件，然後按一下 [ **編輯**]。<br/>2. 在 [**群組原則管理編輯器**] 中，移至 [電腦設定]，然後按一下 [**系統****管理範本**]。<br/>3. 展開樹狀目錄至 **Windows 元件 > Microsoft Defender 防病毒 > 排除**。<br/>**附注**：在某些 windows 版本中，您可能會看到 *Windows defender 防病毒* ，而不是 *Microsoft Defender 防毒軟體* 。<br/>4. 按兩下 [ **路徑排除** ] 設定，並新增排除。<br/>-將選項設定為 [ **啟用**]。<br/>-在 [ **選項** ] 區段下方，按一下 [ **顯示 ...**]。<br/>-在 [ **值名稱** ] 欄底下，指定各自列的每一個資料夾。<br/>-如果您指定的是檔案，請務必輸入檔案的完整路徑，包含磁碟機號、資料夾路徑、檔案名及副檔名。 在 [**值**] 欄中輸入 **0** 。<br/>5. 按一下 **[確定]**。<br/>6. 按兩下 [ **副檔名排除** ] 設定，並新增排除。<br/>-將選項設定為 [ **啟用**]。<br/>-在 [ **選項** ] 區段下方，按一下 [ **顯示 ...**]。<br/>-在 [ **值名稱** ] 欄位底下的獨佔行中輸入每個副檔名。  在 [**值**] 欄中輸入 **0** 。<br/>7. 按一下 **[確定]**。 |
+|[群組原則物件](https://docs.microsoft.com/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. 在您的群組原則管理電腦上，開啟「 [群組原則管理主控台](https://technet.microsoft.com/library/cc731212.aspx)」，以滑鼠右鍵按一下您要設定的群組原則物件，然後按一下 [ **編輯**]。<br/>2. 在 [**群組原則管理編輯器**] 中，移至 [電腦設定]，然後按一下 [**系統****管理範本**]。<br/>3. 展開樹狀目錄至 **Windows 元件**  >  **Microsoft Defender 防病毒**  >  **排除**。<br/>**附注**：在某些 windows 版本中，您可能會看到 *Windows defender 防病毒* ，而不是 *Microsoft Defender 防毒軟體* 。<br/>4. 按兩下 [ **路徑排除** ] 設定，並新增排除。<br/>-將選項設定為 [ **啟用**]。<br/>-在 [ **選項** ] 區段下方，按一下 [ **顯示 ...**]。<br/>-在 [ **值名稱** ] 欄底下，指定各自列的每一個資料夾。<br/>-如果您指定的是檔案，請務必輸入檔案的完整路徑，包含磁碟機號、資料夾路徑、檔案名及副檔名。 在 [**值**] 欄中輸入 **0** 。<br/>5. 按一下 **[確定]**。<br/>6. 按兩下 [ **副檔名排除** ] 設定，並新增排除。<br/>-將選項設定為 [ **啟用**]。<br/>-在 [ **選項** ] 區段下方，按一下 [ **顯示 ...**]。<br/>-在 [ **值名稱** ] 欄位底下的獨佔行中輸入每個副檔名。  在 [**值**] 欄中輸入 **0** 。<br/>7. 按一下 **[確定]**。 |
 |本機組策略物件 |1. 在端點或裝置上，開啟 [本機群組原則編輯器]。 <br/>2. 移至 [電腦設定]**系統**  >  **管理範本**  >  **Windows 元件**  >  **Microsoft Defender 防病毒**  >  **排除**。 <br/>**附注**：在某些 windows 版本中，您可能會看到 *Windows defender 防病毒* ，而不是 *Microsoft Defender 防毒軟體* 。<br/>3. 指定您的路徑與處理常式排除。 |
 |登錄機碼 |1. 匯出下列登錄機 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` 碼：<br/>2. 匯入登錄機碼。 以下列出兩個範例：<br/>-本機路徑： `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>-網路共用： `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
 
