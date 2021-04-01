@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 瞭解如何在瀏覽器和 Power BI Desktop 中自訂報告。
-ms.openlocfilehash: 18b4352d3aaa2fd16b74f78e1f80da3ee98367a6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d36e07a19b0ebda0d154b11723630e38b746eb8d
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914003"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471086"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用方式分析中自訂報告
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使用者採用和使用 Microsoft 365 的方式。 儀表板只是與使用狀況資料互動的起點。 您可以自訂報告，以獲得更多個人化洞察力。
   

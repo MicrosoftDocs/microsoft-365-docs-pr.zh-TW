@@ -23,21 +23,14 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '透過將自訂麻將牌新增至應用程式啟動器，建立電子郵件、檔、應用程式、SharePoint 網站、外部網站及其他資源的快速連結。 '
-ms.openlocfilehash: cc4edbfadc5c9555e04d04de8f7368dd86aa9974
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b6ae4deed1566492574e30cf8cb66a750c9858c8
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915431"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470628"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>新增自訂磚至 App 啟動器
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 在 Microsoft 365 中，您可以使用 App 啟動器快速且輕鬆地取得您的電子郵件、行事曆、檔及應用程式 ([深入瞭解](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)) 。 這些是您從 Microsoft 365 取得的應用程式，以及您從 [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) 或 [Azure AD](/previous-versions/office/office-365-api/)新增的自訂應用程式。
   

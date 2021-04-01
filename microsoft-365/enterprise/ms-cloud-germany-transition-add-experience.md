@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時的其他客戶體驗資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: ecc549ca4d0bb8122de3bf092c004c919e958d5e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8e28b9d6c8cc23e128234973039a4873b327e9fd
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165642"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476364"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (advanced) 
 
-從 Microsoft Cloud Deutschland 將租使用者遷移至 Microsoft Office 365 服務的德國地區時，會做為每一個工作負載的一組階段和各自設定的動作執行。 下圖顯示遷移至新德文資料中心的九個階段。
+從 Microsoft Cloud Deutschland 將租使用者遷移至 Microsoft Office 365 服務的德國地區時，會做為每一個工作負載的一組階段和各自設定的動作執行。 下圖顯示遷移至新德文資料中心的十大階段。
 
-![遷移至新的德國資料中心的九個階段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![遷移至新的德國資料中心的十大階段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 下列各節將提供客戶經驗的其他資訊，從 Microsoft Cloud 德國 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務。
 
@@ -138,7 +138,7 @@ ms.locfileid: "51165642"
 
 [瞭解遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>詳細資訊
 
 開始：
 

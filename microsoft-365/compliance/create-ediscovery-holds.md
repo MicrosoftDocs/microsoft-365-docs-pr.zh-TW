@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以建立與核心 eDiscovery 案例相關聯的保留，以保留可能與調查相關的內容。
-ms.openlocfilehash: ca87b1b2ad35949de01622771b1ae78c5b3038e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c84d0be5a4a659ff9b64af14052bcf4033e2ed24
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908337"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470474"
 ---
 # <a name="create-an-ediscovery-hold"></a>建立電子文件探索保留
 
@@ -193,7 +193,7 @@ ms.locfileid: "50908337"
 若要收集組織中商務網站 OneDrive 的 URLs 清單，以便將其新增至與 eDiscovery 案例相關聯的保留或搜尋，請參閱 [建立組織中所有 OneDrive 位置的清單](/onedrive/list-onedrive-urls)。 本文中的腳本會建立一個文字檔，其中包含組織中所有 OneDrive 網站的清單。 若要執行此指令碼，您必須安裝並使用 SharePoint Online 管理命令介面。 請務必將您組織 MySite 網域的 URL 附加至您要搜尋的每個 OneDrive 網站。 這是包含您所有 OneDrive 的網域；例如，`https://contoso-my.sharepoint.com`。 以下是使用者 OneDrive 網站的 URL 範例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
 
 > [!IMPORTANT]
-> 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`) 。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是 eDiscovery 保留的一部分，舊的，且其 UPN 已變更，您必須更新保留，而且必須更新保留，並新增使用者的新 OneDrive URL，並移除舊的。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](/onedrive/upn-changes) (英文)。
+> 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`) 。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是 eDiscovery 保留的一部分，舊的，且其 UPN 已變更，您必須更新保留，而且必須更新保留，並新增使用者的新 OneDrive URL，並移除舊的。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](/onedrive/upn-changes)。
 
 ## <a name="removing-content-locations-from-an-ediscovery-hold"></a>移除 eDiscovery 保留中的內容位置
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1757160b37500e97586fbb6dfb16d81303bc54e4
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379345"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476478"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint service 的板載 Windows 伺服器
 
@@ -204,7 +204,7 @@ ms.locfileid: "51379345"
 - 自動上架-當架至 Azure Security Center 的 Windows Server 上，會自動啟用端點感應器的 Defender。 如需 Azure 安全性中心上架的詳細資訊，請參閱 [板載 To Azure Security Center Standard for security 的增強](https://docs.microsoft.com/azure/security-center/security-center-onboarding)功能。
 
     > [!NOTE]
-    > 自動上架只適用于 Windows Server 2008 R2 SP1、Windows Server 2012 R2 和 Windows Server 2016。
+    > Azure Defender for Server 和 Microsoft Defender for 端點之間的整合已擴充，可支援 [Windows Server 2019 和 Windows Virtual Desktop (WVD) ](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)。
 
 - Azure Security center 監控的 Windows 伺服器也會在 Endpoint Azure Security Center 中提供，以無縫地連接至使用者和伺服器的 Defender。  此外，Azure Security Center 主控台也可使用 Defender for Endpoint 警示。
 - 伺服器調查-Azure Security Center 客戶可以存取 Microsoft Defender Security Center，以執行詳細的調查，以找出可能遭到破壞的範圍。

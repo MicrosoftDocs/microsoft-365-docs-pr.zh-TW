@@ -14,13 +14,14 @@ ms.author: v-maave
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
+ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7685bd70d85ecebe759ade762b78ee2c3639cea8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057160"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476445"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>攻擊面減少常見問題解答 (常見問題) 
 
@@ -37,7 +38,7 @@ ASR 最初是一項利用方式防護功能套件，在 Windows 10 版本1709中
 
 ## <a name="do-i-need-to-have-an-enterprise-license-to-run-asr-rules"></a>我需要有企業版授權才能執行 ASR 規則嗎？
 
-只有具備 Windows 10 企業版授權時，才支援完整的 ASR 規則和功能集。 在沒有企業版授權的情況下，有限的規則數目可以運作。 如果您有 Microsoft 365 業務，請將 Microsoft Defender 防病毒設定為主要的安全性解決方案，並透過 PowerShell 啟用規則。 不過，未正式支援沒有 enterprise 授權的 ASR 使用，且無法使用 ASR 的完整功能。
+只有具備 Windows 10 企業版授權時，才支援完整的 ASR 規則和功能集。 在沒有企業版授權的情況下，有限的規則數目可以運作。 如果您有 Microsoft 365 業務，請將 Microsoft Defender 防病毒設定為主要的安全性解決方案，並透過 PowerShell 啟用規則。 未正式支援使用沒有企業版授權的 ASR，而且您將無法使用 ASR 的完整功能。
 
 若要深入瞭解 Windows 授權，請參閱 [windows 10 授權](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) 並取得 [Windows 10 的大量授權指南](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
 
@@ -49,11 +50,56 @@ ASR 最初是一項利用方式防護功能套件，在 Windows 10 版本1709中
 
 E5 也支援使用 E3 支援的所有規則。
 
-E5 也新增了與 Defender for Endpoint 的整合更強大。 透過 E5，您可以 [使用 Defender For Endpoint 來監視和查看](https://docs.microsoft.com/microsoft-365/security/defender/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) 即時、微調規則排除、設定 ASR 規則，以及查看附隨報告清單中的警示。
+E5 增加了與 Defender for Endpoint 的整合。 透過 E5，您可以即時查看提醒、微調規則排除、設定 ASR 規則，以及查看附隨報告清單。
 
 ## <a name="what-are-the-currently-supported-asr-rules"></a>目前支援的 ASR 規則為何？
+ASR 目前支援下列所有規則。
 
-ASR 目前支援下列所有規則：
+## <a name="what-rules-to-enable-all-or-can-i-turn-on-individual-rules"></a>要啟用哪些規則？ 全部，還是可以開啟個別規則？
+為了協助您找出最適合您環境的功能，建議您在 [稽核模式](audit-windows-defender.md)中啟用 ASR 規則。 使用此方法時，您將會決定組織的可能影響。 例如，您的企業營運應用程式。
+
+## <a name="how-do-asr-rules-exclusions-work"></a>ASR 規則排除的運作方式？
+針對 ASR 規則，如果您新增一個排除，它會影響每個 ASR 規則。
+下列兩個特定的規則不支援排除：
+
+|規則名稱|GUID|File & 資料夾排除|
+|:--|:--|:--|
+|從啟動下載的可執行內容封鎖 JavaScript 或 VBScript|D3E037E1-3EB8-44C8-A917-57927947596D|不支援|
+|透過 WMI 事件訂閱封鎖持久性|e6db77e5-3df2-4cf1-b95a-636979351e5b|不支援|
+
+ASR 規則排除支援萬用字元、路徑及環境變數。 如需如何在 ASR 規則中使用萬用字元的詳細資訊，請參閱 [根據副檔名和資料夾位置來設定及驗證排除](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。
+
+請注意下列有關 ASR 規則排除 (（包括萬用字元和 env）的專案。 變數) ：
+
+- ASR 規則排除獨立于 Defender AV 排除
+- 不能使用萬用字元來定義磁碟機號
+- 如果您想要排除一個以上的資料夾，請在路徑中使用多個 \* \ 實例來表示多個嵌套資料夾 (例如，C:\Folder \* \* \Test) 
+- Microsoft 端點 *Configuration Manager 不* 支援萬用字元 ( * 或？ ) 
+- 如果您想要排除的檔案中包含隨機字元 (自動檔案產生) ，您可以使用 '？ ' 符號 (例如，C:\Folder\fileversion？。.docx) 
+- 群組原則中的 ASR 排除項不支援引號 (引擎會以本機方式處理長路徑、空格等，因此不需要使用引號) 
+- ASR 規則會在 NT AUTHORITY\SYSTEM 帳戶下執行，所以環境變數會限制于電腦變數。
+
+
+
+## <a name="how-do-i-know-what-i-need-to-exclude"></a>如何知道我需要排除哪些專案？
+不同的 ASR 規則會有不同的保護流程。 請務必考慮您要設定的 ASR 規則的保護方式，以及實際執行流程的平移方式。
+
+範例：封鎖從從本機安全授權子系統讀取 **的 Windows 本機安全性群組子系統** (LSASS) 程式可能會造成安全性風險，因為這可能會造成公司認證。
+
+此規則可防止不受信任的處理常式直接存取 LSASS 記憶體。 每當處理常式嘗試使用 OpenProcess () 函數存取 LSASS 時（PROCESS_VM_READ 的存取權），該規則會特別封鎖該存取許可權。
+
+:::image type="content" source="images/asrfaq1.png" alt-text="封鎖認證竊取 LSASS":::
+
+查看上述範例，如果您確實需要為封鎖存取權的處理常式建立例外狀況，新增檔案名及完整路徑會使其不會遭到封鎖，並且允許存取 LSASS 處理常式記憶體。 值為0表示 ASR 規則將忽略此檔案/進程，但不會封鎖/審計。
+
+:::image type="content" source="images/asrfaq2.png" alt-text="排除檔 asr":::
+
+## <a name="what-are-the-rules-microsoft-recommends-enabling"></a>Microsoft 建議啟用的規則為何？
+
+建議您啟用每一種可能的規則。 不過，在某些情況下，您不應啟用規則。 例如，如果您使用的是 Microsoft 端點設定管理員 (或 System Center Configuration Manager-SCCM) 以管理您的端點，我們不建議啟用從 PSExec 和 WMI 命令規則產生的封鎖處理常式建立。
+
+我們強烈建議您閱讀我們 [公開檔](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md)中提供的每一個規則特定資訊和/或警告。
+跨越多個保護的一個支柱，例如 Office、認證、腳本、E-Mail 等等。Windows 1709 和更新版本都支援所有 ASR 規則（封鎖和透過 WMI 事件訂閱除外）：
 
 * [從電子郵件客戶程式和 web 郵件封鎖可執行檔內容](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
 * [封鎖所有 Office 應用程式以建立子流程](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
@@ -136,7 +182,7 @@ ASR 使用 Microsoft Defender 防病毒來封鎖應用程式。 目前無法將 
 ## <a name="see-also"></a>另請參閱
 
 * [攻擊面減少綜述](attack-surface-reduction.md)
-* [評估攻擊面減少規則](evaluate-attack-surface-reduction.md)
-* [自訂攻擊面降減規則](customize-attack-surface-reduction.md)
-* [啟用攻擊面減少規則](enable-attack-surface-reduction.md)
+* [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
+* [自訂受攻擊面縮小規則](customize-attack-surface-reduction.md)
+* [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
 * [Microsoft Defender 與其他防病毒/反惡意程式碼的相容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 9ded0294912a3c3c99e62913bcdc349de7bae1b5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 996ef34f1fc8d9663f6fa59f13a56a169b7edd11
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915383"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470520"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在系統管理中心部署增益集
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 Office 增益集可以協助您將文件個人化，也可以簡化您存取網路資訊的方式 (請參閱[開始使用 Office 增益集](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862))。 身為系統管理員，您可以使用 Microsoft 365 系統管理中心的 [集中式部署] 功能，為組織中的使用者部署 Office 增益集。 若要將增益集部署至組織內的使用者和群組，[集中式部署] 是建議和功能最豐富的方法。
 

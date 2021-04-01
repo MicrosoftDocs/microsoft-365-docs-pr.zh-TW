@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 670c6449c1121bc329b1dfb37cd1d9948c99a3f8
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379295"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470890"
 ---
 # <a name="create-indicators"></a>建立指示器
 
@@ -50,6 +50,9 @@ Defender for Endpoint 的雲端偵測引擎會定期掃描收集的資料，並�
 
 **自動化調查和修正引擎**<BR>
 自動調查和修正行為相同。 如果指示器設定為 "Allow"，則自動調查和修正功能將會忽略對它的「不良」判定。 如果設為 "封鎖"，自動化調查和修正會將其視為「不良」。
+
+> [!NOTE]
+> EnableFileHashComputation 設定會在檔掃描期間，計算憑證和檔案 IoC 的檔案雜湊。 它支援對散列和證書的強制執行屬於信任的應用程式。 它會同時使用 allow 或 block file 設定進行啟用與停用。 EnableFileHashComputation 是透過群組原則手動啟用，且預設為停用。
 
 
 目前支援的動作如下：

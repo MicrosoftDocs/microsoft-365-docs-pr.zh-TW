@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: overview
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.IngestionHelp
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何在安全性與合規性中心使用[匯入]服務來將電子郵件資料 (PST 檔案) 大量匯入至使用者信箱。
-ms.openlocfilehash: 6d0bca6d76a0eccb9bc8181e73f2c36c51acaf77
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c645228598eb9cf0e6edca7104b8977e7eaf72f7
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911317"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408534"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>將組織的 PST 檔案匯入的概觀
 
@@ -66,7 +66,7 @@ ms.locfileid: "50911317"
     
 4. **建立 PST 匯入工作** - 下一個步驟是在安全性與合規性中心的 [匯入] 頁面建立 PST 匯入工作，然後提交上一個步驟中建立的 PST 匯入對應檔案。 若為網路上傳 (因為 PST 檔案已上傳到 Azure)，Microsoft 365 會分析 PST 檔案中的資料，然後讓您設定篩選條件，以控制哪些資料會實際匯入 PST 匯入對應檔案中指定的信箱。 
     
-    若為磁碟機寄送，此時程序中會發生一些其他事項。
+    針對磁碟機寄送，在此程序中會發生一些其他事項。
     
     - 您實際將硬碟寄送給 Microsoft 資料中心 (建立匯入工作時，會顯示 Microsoft 資料中心的寄送地址)。
     
@@ -178,7 +178,7 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
  
  **匯入 PST 檔案時，是否有郵件大小限制？**
   
-是。 如果 PST 檔案包含大於 150 MB 的信箱項目，該項目會在匯入程序執行時略過。
+是。 如果 PST 檔案包含大於 150 MB 的信箱項目，在匯入程序執行時將略過該項目而不會匯入。 大於 150 MB 的項目不會匯出，因為 150 MB 是 Exchange Online 中的訊息大小限制。 如需詳細資訊，請參閱 [Exchange Online 中的訊息限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
   
  **PST 檔案匯入 Microsoft 365 信箱時是否會保留訊息屬性 (例如訊息的傳送或接收時間、收件者清單、和其他屬性)？**
   
@@ -271,7 +271,7 @@ PST 檔案上傳到 Azure 儲存體區域之後，Microsoft 365 會以安全的�
   
  **匯入 PST 檔案時，是否有郵件大小限制？**
   
-是。 如果 PST 檔案包含大於 150 MB 的信箱項目，該項目會在匯入程序執行時略過。
+是。 如果 PST 檔案包含大於 150 MB 的信箱項目，在匯入程序執行時將略過該項目而不會匯入。 大於 150 MB 的項目不會匯出，因為 150 MB 是 Exchange Online 中的訊息大小限制。 如需詳細資訊，請參閱 [Exchange Online 中的訊息限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
   
   PST 匯入處理程序如何處理重複的電子郵件項目?
 
@@ -317,6 +317,6 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
   
 是。
   
- **如果我需要將硬碟寄到其他國家/地區，我需要採取什麼動作嗎？**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-您寄給 Microsoft 的硬碟可能會跨國際邊界。在這種情況下，您必須負責確保硬碟和當中的資料可依據相關法律進口和/或出口。寄送硬碟之前，請與您的顧問確認磁碟機和當中的資料可以合法地寄到指定的 Microsoft 資料中心，以確保 Microsoft 能夠及時收到您的硬碟。
+The hard drive that you ship to Microsoft might have to cross international borders. 在這種情況下，您必須負責確保硬碟機和它所包含的資料，會根據適用的法律匯入和/或匯出。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

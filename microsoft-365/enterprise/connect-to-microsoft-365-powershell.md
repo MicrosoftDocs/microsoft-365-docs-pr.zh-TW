@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用適用於 Microsoft 365 的 PowerShell 連線至您的 Microsoft 365 租用戶，以從命令列執行系統管理中心工作。
-ms.openlocfilehash: 58af42958e9b50ee8e39cbd7bd5aab53812e444c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08005ba1cbdcbfec14585d22614129a9b33352b9
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919173"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445753"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 連線至 Microsoft 365
 
@@ -84,7 +84,20 @@ ms.locfileid: "50919173"
     Install-Module -Name AzureAD
     ```
 
-   如果系統提示您從不受信任的存放庫安裝模組，請鍵入 **Y** 並按 Enter 鍵。
+  根據預設，PowerShell 資源庫 (PSGallery) 未針對 **PowerShellGet** 設定為受信賴的存放庫。 第一次使用 PSGallery 時，您會看到下列訊息：
+
+```console
+Untrusted repository
+
+You are installing the modules from an untrusted repository. If you trust this repository, change
+its InstallationPolicy value by running the `Set-PSRepository` cmdlet.
+
+Are you sure you want to install the modules from 'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
+```
+
+回答 [是] 或 [全部皆是] 以繼續安裝。
+
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>步驟 2：連接到您的 Microsoft 365 訂閱的 Azure AD
 

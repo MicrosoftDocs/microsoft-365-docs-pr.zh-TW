@@ -22,21 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 瞭解如何在 Microsoft 365 系統管理中心中，設定新產品及功能更新的發行選項。
-ms.openlocfilehash: e909cdf35ba9dd8282540783f7c362e5ae49212e
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 6c5d505f0ece47b0a47df8b7ed1dc015afe93e82
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034076"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470568"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>設定標準或目標發行選項
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 > [!IMPORTANT]
 > 本文所述的 Microsoft 365 更新適用于 Microsoft 365、SharePoint Online 和 Exchange Online。 這些版本選項是針對目標的，將變更發佈至 Microsoft 365 的最佳操作方式，但在任何時間或所有更新皆無法保證。 它們不適用於 Microsoft 365 應用程式、商務用 Skype、Microsoft 小組和相關的服務。 如需 Microsoft 365 應用程式之版本選項的詳細資訊，請參閱 [microsoft 365 應用程式的更新通道概述](/deployoffice/overview-update-channels)。

@@ -21,17 +21,14 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: 瞭解如何將發票要求提交給世紀發票管理系統，然後再將其付款于中國由世紀運作的 Office 365。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 681d2d79c510c773d7597c62811256458e3d166d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d9f75dfd00bb547e9d2e0f53826e5bc50926de39
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914471"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470950"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>適用于由世紀運作的 Office 365 發票
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 您可以將您的發票要求提交至世紀發票管理系統，大約在您支付後三天。 在您提交發票要求之後，它會在兩天內處理。
   

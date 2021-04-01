@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87190d9e0bb62d42642374bd7c9f6f3acad3c80a
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 6ff93b44627cf876384522f0c4f25d22347c8661
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379380"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476252"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>疑難排解 Microsoft Defender for Mac 的性能問題
 
@@ -48,7 +48,7 @@ ms.locfileid: "51379380"
 
 1. 使用下列其中一種方法來停用即時保護，並觀察效能是否提高。 這種方法可協助縮小 Microsoft Defender for Mac 是否對效能問題造成的影響。
 
-    如果您的裝置不是由您的組織管理，則可以使用下列其中一個選項停用即時保護：
+      如果您的裝置不是由您的組織管理，則可以使用下列其中一個選項停用即時保護：
 
     - 從使用者介面。 開啟 Mac 版的 Microsoft Defender 端點，並流覽至 [ **管理設定**]。
 
@@ -60,10 +60,100 @@ ms.locfileid: "51379380"
       mdatp config real-time-protection --value disabled
       ```
 
-    如果您的裝置是由您的組織管理，您的系統管理員可以使用 [Microsoft Defender For Mac 的設定偏好設定](mac-preferences.md)中的指示，停用即時保護。
+      如果您的裝置是由您的組織管理，您的系統管理員可以使用 [Microsoft Defender For Mac 的設定偏好設定](mac-preferences.md)中的指示，停用即時保護。
+      
+      如果在即時保護關閉時出現效能問題，則問題的來源可能是端點偵測和回應元件。 在此情況下，請與客戶支援部門聯繫以取得進一步的指示和緩解。
 
 2. 開啟 Finder，並流覽至 **應用程式**  >  **公用程式**。 開啟 **活動監視器** 並分析哪些應用程式正在使用您系統上的資源。 典型範例包括軟體 updaters 及編譯器。
 
-3. 針對影響效能問題及重新啟用即時保護的處理常式或磁片位置，針對 Mac 設定 Microsoft Defender for Mac 的排除專案。
+1. 若要找出觸發大多數掃描的應用程式，您可以使用由 Defender for Mac 所收集的即時統計資料。
 
-    如需詳細資訊，請參閱 [設定及驗證 Microsoft Defender For Mac 的排除](mac-exclusions.md) 專案。
+      > [!NOTE]
+      > 100.90.70 或更新版本中提供此功能。
+      在 **Dogfood** 和 **InsiderFast** 通道上，此功能預設為啟用。 如果您是使用不同的更新通道，可以從命令列啟用此功能：
+      ```bash
+      mdatp config real-time-protection-statistics  --value enabled
+      ```
+
+      這項功能需要啟用即時保護。 若要檢查即時保護的狀態，請執行下列命令：
+
+      ```bash
+      mdatp health --field real_time_protection_enabled
+      ```
+
+    確認 **real_time_protection_enabled** 專案為 true。 否則，請執行下列命令來啟用它：
+
+      ```bash
+      mdatp config real-time-protection --value enabled
+      ```
+
+      ```output
+      Configuration property updated
+      ```
+
+      若要收集目前的統計資料，請執行：
+
+      ```bash
+      mdatp config real-time-protection --value enabled
+      ```
+
+      > [!NOTE]
+      > 使用 **--輸出 json** (請注意，雙劃線) 可確保輸出格式準備好進行分析。
+      這個命令的輸出會顯示所有程式及其相關聯的掃描活動。
+
+1. 在您的 Mac 系統上，使用命令下載範例 Python 分析程式 high_cpu_parser py：
+
+    ```bash
+    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    ```
+
+    此命令的輸出應類似下列所示：
+
+    ```Output
+    --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.
+    mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
+    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.xxx.xxx
+    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)| 151.101.xxx.xxx| :443... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: 1020 [text/plain]
+    Saving to: 'high_cpu_parser.py'
+    100%[===========================================>] 1,020    --.-K/s   in 
+    0s
+    ```
+
+1. 接下來，輸入下列命令：
+
+      ```bash
+        chmod +x high_cpu_parser.py
+      ```
+
+      ```bash
+        cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
+      ```
+
+      以上的輸出是效能問題的最熱門貢獻因素清單。 第一欄是進程識別碼 (PID) ，第二欄是 te 進程名稱，最後一欄是依影響排序的掃描檔數目。
+
+      例如，命令的輸出會如下所示：
+
+      ```output
+        ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
+        27432 None 76703
+        73467 actool     1249
+        73914 xcodebuild 1081
+        73873 bash 1050
+        27475 None 836
+        1    launchd    407
+        73468 ibtool     344
+        549  telemetryd_v1   325
+        4764 None 228
+        125  CrashPlanService 164
+      ```
+
+      若要改善用於 Mac 之 Defender 的 Defender 的效能，請在 [已掃描的檔案總數] 列底下找到最高號碼的，並為其新增排除。 如需詳細資訊，請參閱 [Configure and validate 的 Defender For Endpoint For Linux](linux-exclusions.md)。
+
+      > [!NOTE]
+      > 應用程式會將統計資料儲存在記憶體中，且只會在啟動之後繼續追蹤檔活動，並啟用即時保護。 在即時保護關閉之前或期間所啟動的處理常式不會計算在內。 此外，只會計算觸發掃描的事件。
+      > 
+1. 針對影響效能問題及重新啟用即時保護的處理常式或磁片位置，針對 Mac 設定 Microsoft Defender for Mac 的排除專案。
+
+     如需詳細資訊，請參閱 [設定及驗證 Microsoft Defender For Mac 的排除](mac-exclusions.md) 專案。

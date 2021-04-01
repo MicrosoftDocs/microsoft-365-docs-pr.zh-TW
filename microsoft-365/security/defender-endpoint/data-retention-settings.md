@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c0e8adde9b1ed66e401348d998ae5c1ad8a7442
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b83e6682ce0c11d076e0bbef60fdef365c9be564
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166002"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471098"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>確認 Microsoft Defender for Endpoint 的資料儲存位置和更新資料保留設定
 
@@ -46,6 +46,8 @@ ms.locfileid: "51166002"
 
 ## <a name="update-data-retention-settings"></a>更新資料保留設定
 
+您可以更新資料保留設定。 依預設，保留期間是180天。 
+
 1. 在功能窗格中，選取 [**設定**  >  **資料保留**]。
 
 2. 從下拉式清單中選取資料保留期間。
@@ -59,4 +61,4 @@ ms.locfileid: "51166002"
 ## <a name="related-topics"></a>相關主題
 - [更新資料保留設定](data-retention-settings.md)
 - [在 Defender for Endpoint 中設定警示通知](configure-email-notifications.md)
-- [設定高級功能](advanced-features.md)
+- [設定進階功能](advanced-features.md)

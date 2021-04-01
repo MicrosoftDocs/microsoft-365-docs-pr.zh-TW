@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的準備工作。
-ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445599"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476346"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的準備工作
 
@@ -102,12 +102,13 @@ nslookup -querytype=CNMAE msoid.contoso.com
 
 <!-- before phase 5 -->
 
-**適用** 于：已啟用共用行事曆和可用性位址空間的 Exchange Online 客戶<br>
+**適用** 于： Exchange Online 客戶<br>
 套用 **時**：階段9結束之前的任何時間
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| 通知外部合作夥伴即將進行的轉換至 Office 365 服務。 | 可用性位址空間設定允許與 Office 365 共用空閒/忙碌資訊。 | 若失敗，可能會導致服務或用戶端在後續的遷移階段失敗。 |
+| 通知外部合作夥伴即將進行的轉換至 Office 365 服務。 |  客戶必須告知其合作夥伴已啟用共用行事曆和可用性位址空間設定 (允許與 Office 365) 共用空閒/忙碌資訊。 Exchange Online 遷移完成時，可用性設定必須轉換成使用 [Office 365 全球端點](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) 。 | 若失敗，可能會導致服務或用戶端在後續的遷移階段失敗。 |
+| 通知使用者必要的 IMAP4/POP3/SMTP 用戶端變更。 | 具有裝置連線至 Microsoft 雲端 Deutschland 端點的使用者通訊協定 IMAP4 POP3，SMTP 是必要手動更新其用戶端裝置以切換至 [Office 365 全球端點](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)的使用者。 | 將這種相依性傳遞給這些通訊協定的使用者，並確保在遷移期間，他們可以切換成使用 Outlook mobile 或 Outlook 網頁版。 若失敗更新用戶端端點，將會在遷移使用者信箱時，對 Microsoft Cloud Deutschland 造成用戶端連線失敗。 |
 ||||
 
 ### <a name="exchange-online-hybrid-configuration"></a>Exchange Online 混合式設定

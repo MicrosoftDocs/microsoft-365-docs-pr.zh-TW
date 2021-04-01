@@ -21,21 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 瞭解如何對組織設定檔進行變更，例如組織名稱、位址、電話、技術連絡人及電子郵件。
-ms.openlocfilehash: 9813e7a959579223f27efa082b1ef11efe6ed06d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93f0777ba5f1cd20cca6e286a4b4366c403fc9da
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915419"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470556"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>變更貴組織的地址、技術連絡人等等
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
   
 您可以對組織設定檔進行變更，例如組織名稱、位址、電話及技術連絡人。 **您必須是全域系統管理員才能更新這項資訊。**
   

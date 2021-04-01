@@ -390,6 +390,7 @@
 ## 參考資料
 ### [管理與 API]()
 #### [管理和 API 概觀](management-apis.md)
+#### [API 版本資訊](api-release-notes.md)
 #### [適用於端點的 Microsoft Defender API]()
 ##### [開始使用]()
 ###### [適用於端點的 Microsoft Defender API 授權和條款](api-terms-of-use.md)
@@ -586,6 +587,5 @@
 ##### [網路保護](troubleshoot-np.md)
 ##### [受攻擊面縮小規則](troubleshoot-asr.md)
 
-# [Microsoft 365 安全性](../index.yml)
-# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+# [Microsoft 365 Defender](../index.yml)
 # [適用於 Office 365 的 Defender](../office-365-security/overview.md)

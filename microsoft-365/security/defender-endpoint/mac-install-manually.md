@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: a9e75441a8c4a336e8c657d27330c118fcac4788
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379421"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476302"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>macOS 的 Microsoft Defender 端點的手動部署
 
@@ -119,7 +119,7 @@ ms.locfileid: "51379421"
 
 1. 將 wdav pkg 和 MicrosoftDefenderATPOnboardingMacOs.py 複製到您為 macOS 部署 Microsoft Defender for Endpoint 的裝置。
 
-    用戶端裝置與 orgId 未關聯。 請注意， *orgId* 屬性是空白的。
+    用戶端裝置不會與 org_id 產生關聯。 請注意， *org_id* 屬性是空白的。
 
     ```bash
     mdatp health --field org_id
@@ -131,23 +131,96 @@ ms.locfileid: "51379421"
     /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     ```
 
-3. 請確認裝置現在與您的組織有關聯，並報告有效的 *orgId*：
+3. 確認裝置現在與您的組織有關聯，並報告有效的組織 ID:
 
     ```bash
     mdatp health --field org_id
     ```
 
-安裝之後，您會在右上角的 macOS 狀態列中看到 Microsoft Defender 圖示。
+    安裝之後，您會在右上角的 macOS 狀態列中看到 Microsoft Defender 圖示。
+    
+    > [!div class="mx-imgBorder"]
+    > ![狀態列上的 Microsoft Defender 圖示螢幕擷取畫面](images/mdatp-icon-bar.png)
 
-   ![狀態列上的 Microsoft Defender 圖示螢幕擷取畫面](images/mdatp-icon-bar.png)
-   
 
 ## <a name="how-to-allow-full-disk-access"></a>如何允許完整磁片存取
 
 > [!CAUTION]
 > macOS 10.15 (Catalina) 包含新的安全性和隱私權增強功能。 從這個版本開始，依預設，應用程式無法存取磁片 (上的某些位置，例如檔、下載、桌面等 ) 不經明確同意。 在缺少這種同意的情況下，Microsoft Defender for Endpoint 無法完全保護您的裝置。
 
-若要授與同意，請開啟系統偏好設定-> 安全性 & 隱私權-> 隱私權-> 完整磁片存取。 按一下鎖定圖示，在對話方塊的底部 () 。 選取 [Microsoft Defender for Endpoint]。
+1. 若要授與同意，請開啟 **系統偏好** 設定  >  **安全性 & 隱私權**  >  **隱私權**  >  **完整磁片存取**。 按一下鎖定圖示，在對話方塊的底部 () 。 選取 [Microsoft Defender for Endpoint]。
+
+2. 執行 AV 偵測測試，以確認裝置已正確架及報表服務。 在新的架裝置上執行下列步驟：
+
+    1. 確定即時保護已啟用 (由1所組成的結果，由1執行下列命令) ：
+
+        ```bash
+        mdatp health --field real_time_protection_enabled
+        ```
+
+    1. 開啟終端視窗。 複製並執行下列命令：
+
+        ```bash
+        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        ```
+
+    1. 檔案應該已被 Mac 的 Defender for Mac 隔離。 使用下列命令列出所有偵測到的威脅：
+
+        ```bash
+        mdatp threat list
+        ```
+
+3. 執行 EDR 偵測測試，以確認裝置已正確架及報表服務。 在新的架裝置上執行下列步驟：
+
+   1. 在您的瀏覽器中（例如 Microsoft Edge for Mac 或 Safari）。
+
+   1. 下載 MDATP MacOS DIY.zip https://aka.ms/mdatpmacosdiy ，並從中解壓縮。
+
+      您可能會收到提示：
+
+      > 您想要允許在「mdatpclientanalyzer.blob.core.windows.net」上下載嗎？<br/>
+      > 您可以變更可在網站偏好設定中下載檔案的網站。
+
+4. 按一下 [ **允許**]。
+
+5. 開啟 **下載**。
+
+6. 您應該會看到 **MDATP MACOS DIY**。
+
+   > [!TIP]
+   > 如果您按兩下，將會收到下列訊息：
+   > 
+   > > **無法開啟 "MDATP MacOS DIY"，因為開發人員無法成為驗證程式。**<br/>
+   > > macOS 無法驗證此應用程式是否沒有惡意程式碼。<br/>
+   > > **\[ 移至垃圾桶 \]** **\[ 取消 \]** 
+  
+7. 按一下 [取消]。
+
+8. 以滑鼠右鍵按一下 [ **MDATP MACOS DIY**]，然後按一下 [ **開啟**]。 
+
+    系統應該會顯示下列訊息：
+
+    > **macOS 無法驗證 **MDATP MACOS DIY** 的開發人員。您確定要開啟它嗎？**<br/>
+    > 開啟此應用程式後，您將覆寫系統安全性，其可能會對您的電腦和個人資訊公開惡意程式碼，可能會損害您的 Mac 或危及您的隱私。
+
+10. 按一下 [開啟]。
+
+    系統應該會顯示下列訊息：
+
+    > Microsoft Defender ATP-macOS EDR DIY test file<br/>
+    > 對應的警示將會出現在 MDATP 入口網站中。
+
+11. 按一下 [開啟]。
+
+    在幾分鐘內，應引發名為 "macOS EDR Test Alert" 的警示。
+
+12. 移至 Microsoft Defender Security Center (https://SecurityCenter.microsoft.com) 。
+
+13. 移至警示佇列。
+
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="MacOS EDR 測試警示的範例，顯示嚴重性、類別、偵測來源及動作的折疊功能表。":::
+    
+    查看警示詳細資料和裝置時程表，並執行定期調查步驟。
 
 ## <a name="logging-installation-issues"></a>記錄安裝問題
 

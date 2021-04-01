@@ -20,21 +20,15 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 在系統管理中心更新您的系統管理員電話號碼和電子郵件地址。 如果您想要重設自己的系統管理員密碼，您將需要此資訊。
-ms.openlocfilehash: a5b1548ee6ac0fa6bac976758ea8f6753ea2853c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914987"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470914"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新您的系統管理員電話號碼和電子郵件地址
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 本文說明您的系統管理員可以如何在 Microsoft 365 中變更您的商務電話和電子郵件地址。
   
 如果您想了解如何變更公司設定檔資訊 (如公司名稱與地址、公司電話號碼和技術連絡人資訊)，請參閱[變更貴組織地址、技術連絡人電子郵件和其他資訊](change-address-contact-and-more.md)。

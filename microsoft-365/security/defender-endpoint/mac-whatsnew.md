@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be906baca3a54183e22fa3b4ee424a9d8fc6957a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198690"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476622"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Mac 版端點的 Microsoft Defender 新增功能
 
@@ -39,7 +39,12 @@ ms.locfileid: "51198690"
 > 在 macOS 11 (Big Sur) 上，Microsoft Defender for Endpoint 需要其他設定設定檔。 如果您是現有的客戶從舊版的 macOS 升級，請務必部署 [此頁面](mac-sysext-policies.md)所列的其他設定檔。
 
 > [!IMPORTANT]
-> 10.13 年2月 15 2021 日 macOS， (高階) 的支援將會終止。
+> 10.13 年2月 15 2021 日 (高端) 的支援 macOS 已停產。
+
+## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
+
+- 將新的選項新增至命令列工具，以查看上次隨選掃描的相關資訊。 若要查看上次隨選掃描的相關資訊，請執行 `mdatp health --details antivirus`
+- 效能 & bug 修正的增強功能
 
 ## <a name="1012279-20121012122790"></a>101.22.79 (20.121012.12279.0) 
 

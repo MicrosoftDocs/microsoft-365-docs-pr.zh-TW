@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解 Microsoft 365 中的高級 eDiscovery 解決方案的大小寫限制、索引限制和搜尋限制。
-ms.openlocfilehash: 9b36407868a0f426b71a0a551d2f702d0a20b777
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 145d5de5027a9d6171215c0602a733ced5265657
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423434"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445319"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>進階電子文件探索的限制
 
@@ -36,10 +36,12 @@ ms.locfileid: "50423434"
 |在案例) 中，所有審閱集可以新增到案例中的檔總數目 (。  <br/> |3 百萬 <br/> |
 |每個負載集的檔案大小總計。 這包括將非 Office 365 載入至審閱集。  <br/> |300 GB <br/> |
 |每天組織中的所有審閱集合中載入的資料總量。<br/> |2 TB <br/> |
-|每個案例的載入集數目上限。  <br/> |200 <br/> |
+|每個案例的負載集數目上限。  <br/> |200 <br/> |
 |每個案例的審閱集數目上限。  <br/> |共 <br/> |
 |每個案例的標記群組數目上限。  <br/> |1000 <br/> |
 |每個案例的標記數目上限。  <br/> |1000 <br/> |
+|您的組織中可將內容新增至審閱集的最大並行工作。 這些工作稱為 **將資料新增至審閱集** ，並顯示在 [ **工作** ] 索引標籤的案例中。| 10 <sup>4</sup> |
+|將內容新增至每位使用者之審閱集的最大並行工作。 這些工作稱為 **將資料新增至審閱集** ，並顯示在 [ **工作** ] 索引標籤的案例中。 | 3  |
 |||
 
 ## <a name="hold-limits"></a>保留限制
@@ -107,16 +109,14 @@ Microsoft 會收集所有組織執行之搜尋的效能資訊。 雖然搜尋查
 |可在原生檢視器中查看的 Excel 檔案大小上限。  <br/> |4 MB  <br/> |
 |||
 
-## <a name="export-limits"></a>匯出限制
+## <a name="export-limits---final-export-out-of-review-set"></a>匯出限制-最終匯出缺考核集
+
+本節所述的限制與從審閱集匯出檔相關。
 
 | 限制的描述 | 限制 |
 |:-----|:-----|
 |單一匯出的大小上限。|3000000檔或 100 GB （以較少者為准）|
-|單一一天的資料量上限。 | 2 TB |
-|您的組織中同時匯出的最大值。 | 10 <sup>4</sup> |
-|每個使用者的最大同步輸出數目。 | 3  |
-|單一 PST 檔案的大小上限。 | 10GB |
-|每個審閱集的併發匯出上限。 | 1  |
+|每個審閱集的併發匯出上限。 | 1 |
 |||
 
 ## <a name="review-set-download-limits"></a>複查設定的下載限制
@@ -136,7 +136,7 @@ Microsoft 會收集所有組織執行之搜尋的效能資訊。 雖然搜尋查
 >
 > <sup>3</sup> ：非片語查詢 (關鍵字值，但不使用雙引號) 我們使用特殊的前置詞索引。 這會告訴我們檔中的字詞，但不會出現在檔中。 若要執行片語查詢 (關鍵字值使用雙引號) ，我們需要比較檔內的字詞中的文字的位置。 這表示我們無法使用關鍵字查詢的首碼索引。 在此情況下，我們會以內部首碼擴充的任何可能的字來內部展開查詢;例如， **time \* *_ 可以展開為 _*"time 或 timer OR time 或 timex or timeboxed or ..."**。 10000的限制是 word 可以擴充的變種數目上限，而不是符合查詢的檔數目上限。 非片語字詞沒有上限。
 >
-> <sup>4</sup> 此限制是在所有 eDiscovery 工具間共用。 這表示會針對此限制套用內容搜尋、核心 eDiscovery 和高級 eDiscovery 中的併發匯出。
+> <sup>4</sup> 在其他 eDiscovery 工具中匯出內容時，會共用此限制。 這表示在 [內容搜尋] 和 [核心 eDiscovery] 中的併發匯出 (，並將內容新增至「高級 eDiscovery) 中的審閱集，都是針對此限制套用。
 >
 > <sup>5</sup> 此限制適用于從審閱集下載選取的檔。 它不會套用到從審閱集匯出檔。 如需下載及匯出檔的詳細資訊，請參閱 [在高級 eDiscovery 中匯出案例資料](exporting-data-ediscover20.md)。
 >

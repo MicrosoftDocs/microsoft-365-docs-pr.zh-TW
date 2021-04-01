@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可協助您在 Microsoft 365 中實作記錄管理解決方案的記錄。
-ms.openlocfilehash: f622e7e6a75cacf5b9cf283847e6b3eea718d542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 52ca56436686faac1d414dac47e2e9e16c36fa90
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925569"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408556"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用記錄版本設定來更新儲存在 SharePoint 或 OneDrive 中的記錄
 
@@ -44,6 +44,9 @@ ms.locfileid: "50925569"
   - **將記錄自動儲存在位於網站集合內的就地記錄儲存庫中。** SharePoint 和 OneDrive 中的每個網站集合會在其 [文件保留庫] 中保留內容。 記錄版本會儲存在此文件庫的 [記錄] 資料夾中。
 
   - **維護包含所有版本的長青文件。** 根據預設，每個 SharePoint 和 OneDrive 文件在項目功能表上都會有版本歷程記錄。 在這個版本歷程記錄中，您可以輕鬆查看記錄的版本，並檢視這些文件。
+
+> [!NOTE]
+> 當您將記錄版本設定與具有刪除動作的保留標籤一起使用時，建議您也將 [開始保留期依據:**]** 設定為 [標示項目時 **]**。 利用此標籤設定，將重設每個新記錄版本保留期間的開始，這可確保較舊的版本會在較新版本之前刪除。
 
 如果任何文件的保留標籤會將項目標示為記錄，則會自動提供記錄版本設定。 當使用者透過 [詳細資料] 窗格檢視文件內容時，系統會將 [記錄狀態] 從 [鎖定] 切換為 [解除鎖定]。 此動作會在 [文件保留庫] 的 [記錄] 資料夾中建立記錄，該記錄將在保留期的剩餘時間內保留在其中。 
 
@@ -75,7 +78,7 @@ ms.locfileid: "50925569"
 
 ## <a name="record-versions"></a>記錄版本
 
-每次使用者解鎖記錄時，系統會將最新版本複製到 [文件保留庫] 的 [記錄] 資料夾中，而該版本則會在版本歷程記錄的 [註解] 欄位中包含 [記錄] 的值。
+每次使用者解鎖記錄時，系統會將最新版本複製到 [文件保留庫]，而該版本的版本歷程記錄的 [註解 **]** 欄位中會包含 [記錄 **]** 一值。
 <br/><br/>
 
 ![在 [文件保留庫] 中顯示的記錄](../media/recordversioning10.png)
@@ -93,16 +96,13 @@ ms.locfileid: "50925569"
 
 ![[文件保留庫] 中的記錄資料夾](../media/recordversioning12.png)
 
-只有網站集合系統管理員才能看到 [文件保留庫]。 此外，預設不存在 [文件保留庫]。 只有在網站集中第一次刪除具有保留標籤或保留原則的內容時，才會建立。
+如需文件保留庫如何運作的詳細資訊，請參閱[保留如何用於 SharePoint 和 OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)。
 
 ## <a name="searching-the-audit-log-for-record-versioning-events"></a>搜尋記錄版本設定事件的稽核記錄
 
-鎖定和解鎖記錄的動作會記錄在稽核記錄中。 您可以搜尋 [已將記錄狀態變更為「鎖定」] 和 [已將記錄狀態變更為「未鎖定」] 的特定活動，其位於 [安全性與合規性中心] 的 [稽核記錄搜尋] 頁面上，[檔案與頁面活動] 區段的 [活動] 下拉式清單中。
-<br/><br/>
+鎖定和解鎖記錄的動作會記錄在稽核記錄中。 從 [檔案和頁面活動 **]**，選取 [已將記錄狀態變更為鎖定 **]** 和 [已將記錄狀態變更為未鎖定 **]**。
 
-![搜尋記錄版本設定事件的稽核記錄](../media/recordversioning13.png)
-
-如需搜尋這些活動的詳細資訊，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)中的「檔案和頁面活動」一節。
+如需搜尋這些事件的詳細資訊，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)。
 
 ## <a name="next-steps"></a>後續步驟
 

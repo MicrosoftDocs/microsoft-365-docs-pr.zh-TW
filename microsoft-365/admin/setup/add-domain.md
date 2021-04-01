@@ -26,21 +26,14 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Microsoft 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: 30bce7dd207532c441fdfaf572add44baec16d8d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 747de5f61dc9fce53f82f52b65f701572a56f8d4
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914267"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470878"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>新增網域至 Microsoft 365
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
  若您找不到所需內容，請 **[查看網域常見問題集](domains-faq.yml)**。 
   
@@ -118,7 +111,7 @@ ms.locfileid: "50914267"
 
 5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
     
-6. 選取 [儲存]。
+6. 選取 [儲存 **]**。
 
 ## <a name="registrars-with-domain-connect"></a>使用網域連接的註冊機構
 

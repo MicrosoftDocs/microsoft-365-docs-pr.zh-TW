@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何修改 EDM 結構描述以使用可設定比對。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e00466e4648ebe93f0658383515d1543f858e1b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dea641072983163c6fbbcc5888d5ee6ea91f6990
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919369"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408312"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>修改精確資料比對模式以使用可設定比對
 
@@ -102,6 +102,9 @@ ms.locfileid: "50919369"
 - \,
 
 6. 使用[連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
+
+> [!NOTE]
+> 如果組織已在[租用戶層級 (公開預覽) 設定 Microsoft 365 的客戶金鑰](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)，精確資料比對將會自動使用其加密功能。 這僅適用商業雲端中的 E5 授權租用戶。
 
 7. 一次執行一個下方的 cmdlets 以更新您的結構描述：
 

@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a540529c174cc12b0e037be4af4e08c29e3835ea
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919589"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408598"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -49,9 +49,9 @@ ms.locfileid: "50919589"
 若要套用敏感度標籤，使用者必須使用 Microsoft 365 公司或學校帳戶登入。
 
 > [!NOTE]
-> 美國政府租使用者 (GCC 和 GCC-H) 剛開始支援敏感度標籤。 如需詳細資訊，請參閱 Microsoft 365 Apps 企業版版本資訊， [版本2101：1 月 26 日](/officeupdates/current-channel#version-2101-january-26)。
+> 針對美國政府租用戶，敏感度標籤[現在支援 GCC 和 GCC High 環境](/officeupdates/current-channel#version-2101-january-26)，並且目前正針對 DoD 環境推出。
 >
-> 如需 Azure 資訊保護的整合式標記用戶端和掃描器，請參閱 [Azure 資訊保護優質政府服務描述](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
+> 如果您對這些環境使用 Azure 資訊保護的整合式標記用戶端和掃描器，請參閱 [Azure 資訊保護 Premium 政府服務描述](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
 
 您可以使用敏感度標籤來：
   

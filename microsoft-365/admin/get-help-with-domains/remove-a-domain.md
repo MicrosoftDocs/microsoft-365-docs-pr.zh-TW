@@ -22,21 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 瞭解如何從 Microsoft 365 移除舊的網域，以及將使用者和群組移至另一個網域。
-ms.openlocfilehash: f4281eb793e6a832e3bd7f31484a97ccd5065bf5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 916730975e9e17c42b01d9fa0ff55b3cb7078f66
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915611"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470962"
 ---
 # <a name="remove-a-domain"></a>移除網域
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
   
  若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   

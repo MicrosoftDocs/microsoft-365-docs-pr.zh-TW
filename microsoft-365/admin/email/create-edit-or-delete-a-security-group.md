@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 瞭解如何建立、編輯或刪除安全性群組。
-ms.openlocfilehash: d2cc749acaf7b2e23674156f6ad9a200ec7b386d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4ea97683e47f7f0ef8f196db32df8e22f9b1a0b9
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915815"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470974"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中建立、編輯或刪除安全性群組
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 在 [Microsoft 365 **群組** ] 頁面上，您可以建立使用者帳戶群組，供您在 SharePoint ONLINE 和 CRM online 中指派相同的許可權。 例如，管理員可以建立安全性群組以授與 SharePoint 網站存取權給特定群組的人員。 只有全域及使用者管理管理員擁有建立、編輯或刪除安全性群組的權限；如需管理員角色的詳細資訊，請參閱 [指派管理員角色](../add-users/assign-admin-roles.md)。 
   

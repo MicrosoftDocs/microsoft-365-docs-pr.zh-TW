@@ -28,26 +28,14 @@
           href: ./office-365-security/sharepoint-file-access-policies.md
         - name: SaaS 應用程式的建議 MCAS 原則
           href: ./office-365-security/mcas-saas-access-policies.md
-    - name: Microsoft 365 安全性中心
-      href: defender/overview-security-center.md
-    - name: Microsoft 安全分數
-      items:
-        - name: 安全分數概觀
-          href: defender/microsoft-secure-score.md
-        - name: 評估您的安全性狀態
-          href: defender/microsoft-secure-score-improvement-actions.md
-        - name: 追蹤您的分數記錄並達成目標
-          href: defender/microsoft-secure-score-history-metrics-trends.md
-        - name: 即將推出的功能
-          href: defender/microsoft-secure-score-whats-coming.md
-        - name: 新增功能
-          href: defender/microsoft-secure-score-whats-new.md
     - name: Microsoft 365 Defender
       items:
         - name: 概觀
           items:
             - name: 什麼是 Microsoft 365 Defender?
               href: defender/microsoft-365-defender.md
+            - name: Microsoft 365 安全性中心
+              href: defender/overview-security-center.md
             - name: Microsoft 365 Defender 的新功能
               href: defender/whats-new.md
             - name: Microsoft 365 安全性中心中的適用於端點的 Defender
@@ -116,6 +104,18 @@
               href: defender/m365d-pilot.md
             - name: 開啟常見問題集
               href: defender/m365d-enable-faq.md
+            - name: Microsoft 安全分數
+              items:
+                - name: 安全分數概觀
+                  href: defender/microsoft-secure-score.md
+                - name: 評估您的安全性狀態
+                  href: defender/microsoft-secure-score-improvement-actions.md
+                - name: 追蹤您的分數記錄並達成目標
+                  href: defender/microsoft-secure-score-history-metrics-trends.md
+                - name: 即將推出的功能
+                  href: defender/microsoft-secure-score-whats-coming.md
+                - name: 新增功能
+                  href: defender/microsoft-secure-score-whats-new.md
             - name: 威脅分析
               items:
                 - name: 威脅分析概觀

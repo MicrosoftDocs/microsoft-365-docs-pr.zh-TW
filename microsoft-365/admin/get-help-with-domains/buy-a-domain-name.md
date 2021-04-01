@@ -23,21 +23,14 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 瞭解如何在 Microsoft 365 中購買功能變數名稱。
-ms.openlocfilehash: 24c6ac017cf25e1a40148e7a2c982e9d1068664b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: eb0520f605715c3403e1ce0134aa60abed0f6751
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915671"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470508"
 ---
 # <a name="buy-a-domain-name"></a>購買網域名稱
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
  *若要新增、修改或移除網域，您 **必須** 是 [企業或企業方案](https://products.office.com/business/office)的 **全域系統管理員**。這些變更會影響整個承租人、*自訂* 的系統管理員或 *一般使用者* 無法進行這些變更。*  
 

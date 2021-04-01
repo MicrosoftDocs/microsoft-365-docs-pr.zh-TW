@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222438"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476298"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>設定 Microsoft Defender for Endpoint 部署
 
@@ -39,7 +39,7 @@ ms.locfileid: "51222438"
 
 為端點部署 Defender 是三個階段的處理常式：
 
-| [![部署階段-準備](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[階段1：準備](prepare-deployment.md) | ![部署階段-安裝程式](images/phase-diagrams/setup.png)<br>階段2：設定 | [![部署階段-板載](images/phase-diagrams/onboard.png)](onboarding.md)<br>[階段3：板載](onboarding.md) |
+| [![部署階段-準備](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[階段 1：準備](prepare-deployment.md) | ![部署階段-安裝程式](images/phase-diagrams/setup.png)<br>階段 2：設定 | [![部署階段-板載](images/phase-diagrams/onboard.png)](onboarding.md)<br>[第 3 階段：導入](onboarding.md) |
 | ----- | ----- | ----- |
 | | *您在這裡！*||
 
@@ -106,7 +106,7 @@ ms.locfileid: "51222438"
 
     ![設定中的地理位置影像](images/setup-preferences.png)
 
-5. 選取 [下一步]。
+5. 選取 **[下一步]**。
 
      ![最終喜好設定的影像](images/setup-preferences2.png)
 
@@ -124,11 +124,11 @@ ms.locfileid: "51222438"
 
 -   Web Proxy 自動探索通訊協定 (WPAD) 
 
-如果已在網路拓撲中執行透明 proxy 或 WPAD，則不需要特殊的設定。 如需 proxy 中 Microsoft Defender for Endpoint URL 排除專案的詳細資訊，請參閱本檔中的 [Proxy 服務 URLs](production-deployment.md#proxy-service-urls) 一節，以取得 URLs Allowlist 或 [設定裝置 Proxy 和網際網路連線設定](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
+如果已在網路拓撲中執行透明 proxy 或 WPAD，則不需要特殊的設定。 如需 proxy 中 Microsoft Defender for Endpoint URL 排除專案的詳細資訊，請參閱本檔中的 [Proxy 服務 URLs](production-deployment.md#proxy-service-urls) 一節，以取得 URLs 允許清單或 [設定裝置 Proxy 和網際網路連線設定](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 
 **手動靜態 Proxy 組態：**
 
--   以登錄為基礎的設定
+-   基於登錄的設定
 
 -   使用 netsh 命令設定 WinHTTP <br> 僅適用于穩定拓撲中的桌上型電腦 (例如，公司網路中位於相同 proxy 的桌面) 
 
@@ -172,7 +172,7 @@ ms.locfileid: "51222438"
 > - 這將影響所有應用程式，包括使用帶預設 Proxy 之 WinHTTP 的 Windows 服務。</br>
 > - 變更拓撲的膝上型電腦 (例如：從 office 到 home) ，將無法使用 netsh。 使用基於登錄的靜態 Proxy 設定。
 
-1. 開啟已提升許可權的命令列：
+1. 開啟提高權限的命令列：
 
     1. 轉至 **[開始]** 並鍵入 **「cmd」**。
 

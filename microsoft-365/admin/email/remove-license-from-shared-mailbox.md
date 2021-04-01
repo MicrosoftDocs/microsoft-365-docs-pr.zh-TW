@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '從共用信箱中移除授權，將其指派給其他使用者。 '
-ms.openlocfilehash: 1acd549936212db7f722355ed1f2518ff6bbac18
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 82ec863d5c2ae550fb401e71744715a27c89d382
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915683"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470616"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>從共用信箱移除授權
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 共用信箱通常不需要授權。 請遵循下列指示，從共用信箱中移除授權，以便將其指派給使用者或傳回授權，這樣您就不會支付您不需要的授權。
 
@@ -80,7 +73,7 @@ ms.locfileid: "50915683"
 
 3. [ **產品授權** ] 頁面上，針對您想要移除的授權，將切換設定為 [ **關閉** ]。
 
-4. 選取 [儲存]。
+4. 選取 [儲存 **]**。
 
 5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
 
@@ -99,7 +92,7 @@ ms.locfileid: "50915683"
 
 3. [ **產品授權** ] 頁面上，針對您想要移除的授權，將切換設定為 [ **關閉** ]。
 
-4. 選取 [儲存]。
+4. 選取 [儲存 **]**。
 
 5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
 

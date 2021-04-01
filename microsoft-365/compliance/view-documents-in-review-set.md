@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 選擇您在高級 eDiscovery 中查看內容的方式，例如文字、批註、轉換或原生視圖。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ba66b64460a4aa9cf76641c6d84f0282195b85e9
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: aa8e8e9ea22469ab6d0b223c1bcc9285e2c2ef40
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286049"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471066"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>在高級電子檔探索中的審閱集中查看檔
 
@@ -30,7 +30,6 @@ ms.locfileid: "48286049"
 - 原生視圖
 - 文字視圖
 - 批註視圖
-- 轉換的視圖
 
 ## <a name="file-metadata"></a>檔中繼資料
 

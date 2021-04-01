@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 7c3b4f82d94888cfa6c63b25f20130a38f8b4c9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f24f519ec3bb12622d74c1d02fbc0bb017aa2b24
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919197"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476406"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -455,44 +455,32 @@ Get-MoveRequest -Flags "CrossTenant"
 
 ```powershell
 #Dumps out the test mailboxes from SourceTenant 
-#Note, the filter applied on GetMailbox is for an attribute set on CA1 = “ProjectKermit” 
+#Note, the filter applied on Get-Mailbox is for an attribute set on CustomAttribute1 = "ProjectKermit" 
 #These are the ‘target’ users to be moved to the Northwind org tenant #################################################################  
-$outFile = "$home\desktop\UserListToImport.csv" 
-$outArray = @() 
+$outFileUsers = "$home\desktop\userstomigrate.txt"
+$outFileUsersXML = "$home\desktop\userstomigrate.xml"
 #output the test objects 
-$Mailboxes = get-mailbox -filter "CustomAttribute1 -like ‘ProjectKermit'" -resultsize unlimited  
-#created these mailboxes in adv using separate scripts but you get the idea on how to define the user list to move 
-Foreach ($i in $Mailboxes)  
-{ 
-    $user = get-Recipient $i.alias 
-    $myobj = New-Object System.Object 
-    $myObj | Add-Member -type NoteProperty -name primarysmtpaddress -value $i.PrimarySMTPAddress 
-    $myObj | Add-Member -type NoteProperty -name alias -value $i.alias 
-    $myObj | Add-Member -type NoteProperty -name FirstName -value $User.FirstName 
-    $myObj | Add-Member -type NoteProperty -name LastName -value $User.LastName 
-    $myObj | Add-Member -type NoteProperty -name DisplayName -value $User.DisplayName 
-    $myObj | Add-Member -type NoteProperty -name Name -value $i.Name 
-    $myObj | Add-Member -type NoteProperty -name SamAccountName -value $i.SamAccountName 
-    $myObj | Add-Member -type NoteProperty -name legacyExchangeDN -value $i.legacyExchangeDN    $myObj | Add-Member -type NoteProperty -name ExchangeGuid -value $i.ExchangeGuid 
-    $outArray += $myObj 
-} 
-$outArray | Export-CSV $outfile -notypeinformation  
+Get-Mailbox -Filter "CustomAttribute1 -like 'ProjectKermit'" -ResultSize Unlimited | Select-Object -ExpandProperty Alias | Out-File $outFileUsers
+$mailboxes = Get-Content $outFileUsers
+$mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML
+
 ################################################################# 
 #Copy the file $outfile to the desktop of the target on-premises 
 #then run the below to create MEU in Target 
 #################################################################  
-$ImportUserList = import-csv "$home\desktop\UserListToImport.csv" 
-$pwstr = "Something 98053 Random!!"; 
-$pw = new-object "System.Security.SecureString"; 
-for ($i=0; $i -lt $pwstr.Length; $i++) {$pw.AppendChar($pwstr[$i])} foreach ($user in $ImportUserList) { 
-     $tmpUser = $null 
-    $UPNSuffix = "@northwindtraders.com"    $UPN = $user.Alias+$upnsuffix 
-    $tmpUser = New-MailUser -organization -UserPrincipalName $upn -ExternalEmailAddress $user.primarysmtpaddress -FirstName $user.FirstName ` 
-                 -LastName $user.LastName -SamAccountName $user.SamAccountName -ResetPasswordOnNextLogon $false ` 
-                 -Alias $user.alias -PrimarySmtpAddress $UPN -Name $User.Name -DisplayName $user.DisplayName ` 
-                 -OrganizationalUnit "OU=ContosoUsers,OU=MLB,DC=ContosoLab,DC=net" -Password $pw       $x500 = "x500:" + $user.legacyExchangeDN 
-    $tmpUser | Set-MailUser -ExchangeGuid $user.ExchangeGuid -EmailAddresses @{Add=$x500} -CustomAttribute1 "ProjectKermit" 
-}  
+$mailboxes = Import-Clixml $home\desktop\userstomigrate.xml
+
+foreach ($m in $mailboxes) {
+    $organization = "@contoso.onmicrosoft.com"
+    $mosi = $m.Alias+$organization
+    $Password = [System.Web.Security.Membership]::GeneratePassword(16,4) | ConvertTo-SecureString -AsPlainText -Force
+    $x500 = "x500:" +$m.LegacyExchangeDn
+    $tmpUser = New-MailUser -MicrosoftOnlineServicesID $mosi -PrimarySmtpAddress $mosi -ExternalEmailAddress $m.PrimarySmtpAddress -FirstName $m.FirstName -LastName $m.LastName -Name $m.Name -DisplayName $m.DisplayName -Alias $m.Alias -Password $Password
+    $tmpUser | Set-MailUser -EmailAddresses @{add=$x500} -ExchangeGuid $m.ExchangeGuid -ArchiveGuid $m.ArchiveGuid -CustomAttribute1 "ProjectKermit"
+    $tmpx500 = $m.EmailAddresses | ?{$_ -match "x500"}
+    $tmpx500 | %{Set-MailUser $m.Alias -EmailAddresses @{add="$_"}}
+    }
+
 ################################################################# 
 # On AADSync machine, run AADSync 
 #################################################################  
@@ -701,7 +689,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
    - 當 msExchRemoteRecipientType 設定為 8 (DeprovisionMailbox) 時，針對遷移到目標租使用者的內部部署 MailUsers，Azure 中的 proxy 清理邏輯會移除 nonowned 網域，並將 primarySMTP 重設為擁有的網域。 清除內部部署 MailUser 中的 [msExchRemoteRecipientType]，便不再套用 proxy 清理邏輯。 <br/><br>以下是包括 Exchange Online 之一組可能的完整服務方案。
 
-   | 姓名                                              |
+   | 名稱                                              |
    |---------------------------------------------------|
    | 高級 eDiscovery 儲存 (500GB)                |
    | 客戶加密箱                                  |

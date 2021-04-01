@@ -23,21 +23,14 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 瞭解如何還原已刪除的使用者帳戶和所有相關聯的資料。
-ms.openlocfilehash: f3986ed1ba007dcac87bdfb9322ba5c5bf081b35
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 75e664c68dec13b857e4bd308d49e5b58d5edfc8
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903709"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471010"
 ---
 # <a name="restore-a-user"></a>還原使用者
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
    
 只要在刪除使用者帳戶後的 30 天內還原，該帳戶及其所有相關資料都會全部還原。使用者可以透過相同的公司或學校帳戶登入。信箱的內容會完全還原。若您要查詢某個使用者帳戶還剩多少時間可以還原，[請連絡我們](../contact-support-for-business-products.md)。
   

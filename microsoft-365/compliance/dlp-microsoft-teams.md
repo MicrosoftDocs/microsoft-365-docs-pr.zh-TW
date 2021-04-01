@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 您現在可以將 DLP 原則套用至 Microsoft 團隊聊天和頻道。 請閱讀本文以深入瞭解其運作方式。
-ms.openlocfilehash: 3a7b228292952bdba3c950b8ab67501c40e99238
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 40c55ed486efc75619b514a60b707ac75554953b
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917919"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445661"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料遺失防護和 Microsoft 團隊
 
@@ -31,7 +31,10 @@ ms.locfileid: "50917919"
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Microsoft 小組的 DLP 簡介
 
-最近， [資料遺失防護](data-loss-prevention-policies.md) (DLP) 功能已擴充為包括 Microsoft 團隊聊天和通道訊息， **包括私人通道訊息**。
+最近， [資料遺失防護](data-loss-prevention-policies.md) (DLP) 功能已擴充為包括 Microsoft 團隊聊天和通道訊息， **包括私人通道訊息**。 
+
+> [!IMPORTANT]
+> DLP 目前只適用于聊天或通道執行緒中的實際郵件。 活動通知--其中包括簡短的訊息預覽，而且會根據使用者的通知設定而出現，這次 **不** 會包含在小組 DLP 中。 即使已套用 DLP 原則及移除郵件本身的機密 inforamtion，在預覽中出現的郵件部分中所出現的任何敏感資訊都仍會顯示在通知中。
 
 如果您的組織有 DLP，您現在可以定義原則，以防止人員在 Microsoft 小組通道或聊天會話中共用機密資訊。 以下是此保護運作方式的一些範例：
 
@@ -56,7 +59,8 @@ ms.locfileid: "50917919"
 
 傳回我們的範例（即寄件者在小組頻道中共用社會保險號碼），以下是收件者看到的功能：
 
-![封鎖郵件](../media/dlp-teams-blockedmessage-notification-to-user.png)
+> [!div class="mx-imgBorder"]
+> ![封鎖郵件](../media/dlp-teams-blockedmessage-notification-to-user.png)
 
 [ **這是什麼？** ] 連結會開啟有關 DLP 原則的 [文章](data-loss-prevention-policies.md) ，協助說明郵件封鎖的原因。
 
@@ -70,9 +74,15 @@ ms.locfileid: "50917919"
 
 3. 選取原則，然後按一下 [ **原則設定**] 旁的 [ **編輯**]。
 
-4. 請建立新的規則，或編輯原則的現有規則。<br/>![編輯原則的規則](../media/dlp-teams-editrule.png)<br/>
+4. 請建立新的規則，或編輯原則的現有規則。
 
-5. 在 [ **使用者通知** ] 索引標籤上，選取 [ **自訂電子郵件文字** 和/或 **自訂原則提示文字** 選項]。<br/>![自訂使用者通知和原則提示](../media/dlp-teams-editrule-usernotifications.png)<br/>  
+    > [!div class="mx-imgBorder"]
+    > ![編輯原則的規則](../media/dlp-teams-editrule.png)
+
+5. 在 [ **使用者通知** ] 索引標籤上，選取 [ **自訂電子郵件文字** 和/或 **自訂原則提示文字** 選項]。
+
+    > [!div class="mx-imgBorder"]
+    > ![自訂使用者通知和原則提示](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
 6. 指定您要用於電子郵件通知和/或原則提示的文字，然後選擇 [ **儲存**]。
 
@@ -89,20 +99,25 @@ ms.locfileid: "50917919"
 
 2. 選擇 [**資料遺失防護**]  >  **原則**。
 
-3. 選取原則，並查看 [ **位置**] 底下的值。 如果您看到 **小組聊天及通道訊息**，您就會全部設定。 如果不是，請按一下 [ **編輯**]。<br/>![現有原則的位置](../media/dlp-teams-editexistingpolicy.png)<br/>
+3. 選取原則，並查看 [ **位置**] 底下的值。 如果您看到 **小組聊天及通道訊息**，您就會全部設定。 如果不是，請按一下 [ **編輯**]。
 
-4. 在 [ **狀態** ] 欄中，為 **小組聊天和頻道訊息** 開啟原則。<br/>![適用于小組聊天和頻道的 DLP](../media/dlp-teams-addteamschatschannels.png)<br/>
+    > [!div class="mx-imgBorder"]
+    > ![現有原則的位置](../media/dlp-teams-editexistingpolicy.png)
+
+4. 在 [ **狀態** ] 欄中，為 **小組聊天和頻道訊息** 開啟原則。
+
+    > [!div class="mx-imgBorder"]
+    > ![適用于小組聊天和頻道的 DLP](../media/dlp-teams-addteamschatschannels.png)
 
 5. 在 [ **選擇位置** ] 索引標籤上，保留 [所有帳戶] 的預設設定，或選取 **[讓我選擇特定位置**]。 您可以指定：
+
     1. 包含或排除的個別帳戶最多1000個
     1. 要包含或排除的通訊群組清單和安全性群組。 **這是公開預覽功能。**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
     
 6. 接著選擇 [下一步]。
 
-
-
-6. 按一下 **[儲存]**。
+7. 按一下 **儲存**。
 
 針對您的變更，允許大約一小時以透過您的資料中心進行，並同步處理至使用者帳戶。
 <!-- again, why user accounts? -->
@@ -115,26 +130,39 @@ ms.locfileid: "50917919"
 
 2. 選擇 [**資料遺失防護**  >  **原則**  >  **+ 建立原則**]。
 
-3. 選擇 [範本](data-loss-prevention-policies.md#dlp-policy-templates)，然後選擇 **[下一步]**。<br/>在我們的範例中，我們選擇美國個人身分識別資訊資料範本。<br/>![DLP 原則的隱私權範本](../media/dlp-teams-createnewpolicy-template.png)<br/>
+3. 選擇 [範本](data-loss-prevention-policies.md#dlp-policy-templates)，然後選擇 **[下一步]**。
+
+    在我們的範例中，我們選擇美國個人身分識別資訊資料範本。
+
+    > [!div class="mx-imgBorder"]
+    > ![DLP 原則的隱私權範本](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
 4. 在 [ **命名您的原則** ] 索引標籤上，指定原則的名稱和描述，然後選擇 **[下一步]**。
 
 5. 在 [ **選擇位置** ] 索引標籤上，保留 [所有帳戶] 的預設設定，或選取 **[讓我選擇特定位置**]。 您可以指定：
+
     1. 包含或排除的個別帳戶最多1000個
     1. 要包含或排除的通訊群組清單和安全性群組。 **這是公開預覽功能。**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
-![DLP 原則位置](../media/dlp-teams-selectlocationsnewpolicy.png)
+    ![DLP 原則位置](../media/dlp-teams-selectlocationsnewpolicy.png)
 
-> [!NOTE]
-> 如果您想要確定包含機密資訊的檔不會在小組中正確共用，請確定已開啟 **SharePoint 的網站** 和 **OneDrive 帳戶** ，以及 **小組聊天及通道訊息**。
-
+    > [!NOTE]
+    > 如果您想要確定包含機密資訊的檔不會在小組中正確共用，請確定已開啟 **SharePoint 的網站** 和 **OneDrive 帳戶** ，以及 **小組聊天及通道訊息**。
 
 6. 在 [ **原則設定** ] 索引標籤的 **[自訂您要保護的內容類型**] 底下，保留預設的簡單設定，或選擇 [ **使用高級設定**]，然後選擇 [ **下一步]**。 如果您選擇 [高級設定]，您可以建立或編輯原則的規則。  (若要取得此相關協助，請參閱 [簡易設定與高級設定](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)。 ) 
 
-7.  在 [ **原則設定** ] 索引標籤的 [ **如果偵測到機密資訊，您要做什麼？**] 中，複查設定。  (這裡是您可以選擇保留預設 [原則提示和電子郵件通知](use-notifications-and-policy-tips.md)，或加以自訂的位置。 ) <br/>![具有提示與通知的 DLP 原則設定](../media/dlp-teams-policysettings-tipsemails.png)<br/>完成複查或編輯設定後，請選擇 **[下一步]**。
+7.  在 [ **原則設定** ] 索引標籤的 [ **如果偵測到機密資訊，您要做什麼？**] 中，複查設定。  (這裡是您可以選擇保留預設 [原則提示和電子郵件通知](use-notifications-and-policy-tips.md)，或加以自訂的位置。 ) 
 
-8. 在 [ **原則設定** ] 索引標籤上的 [ **您要先開啟原則或測試內容嗎？**] 中，選擇是否要開啟原則、 [先進行測試](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)，或是現在保持關閉狀態，然後選擇 **[下一步]**。<br/>![指定是否要開啟原則](../media/dlp-teams-policysettings-turnonnow.png)<br/>
+    > [!div class="mx-imgBorder"]
+    > ![具有提示與通知的 DLP 原則設定](../media/dlp-teams-policysettings-tipsemails.png)
+
+    完成複查或編輯設定後，請選擇 **[下一步]**。
+
+8. 在 [ **原則設定** ] 索引標籤上的 [ **您要先開啟原則或測試內容嗎？**] 中，選擇是否要開啟原則、 [先進行測試](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)，或是現在保持關閉狀態，然後選擇 **[下一步]**。
+
+    > [!div class="mx-imgBorder"]
+    > ![指定是否要開啟原則](../media/dlp-teams-policysettings-turnonnow.png)
 
 9. 在 [ **複查您的設定** ] 索引標籤上，複查新原則的設定。 選擇 [ **編輯** ] 進行變更。 完成作業後，請選擇 [ **建立**]。
 
@@ -144,26 +172,38 @@ ms.locfileid: "50917919"
 
 若要確定包含機密資訊的 SharePoint 檔預設不能由外部來賓存取 SharePoint 或小組，請選取下列各項：
 
-- 您可以在 DLP 掃描時保證檔受到保護，並將新的檔案標記為可安全地加以共用。預設會將 [新的檔案標示為敏感](/sharepoint/sensitive-by-default)
+- 您可以在 DLP 掃描時，確保檔受到保護，並將新的檔案標示 [為機密](/sharepoint/sensitive-by-default)，將其標記為安全可供共用。
+
 - 建議的 DLP 原則結構
+
     - **Conditions**
         - 內容包含下列任何敏感資訊類型： [選取所有套用專案]
+        
         - 內容是從 Microsoft 365 與組織外部的人員共用
-        <br/>![偵測敏感內容的外部共用的 DLP 條件](../media/dlp-teams-external-sharing/external-condition.png)<br/>
-
+        
+          > [!div class="mx-imgBorder"]
+          > ![偵測敏感內容的外部共用的 DLP 條件](../media/dlp-teams-external-sharing/external-condition.png)
 
     - **動作**
         - 限制外部使用者的內容存取權
+        
         - 使用電子郵件和原則提示通知使用者
-        - 將附隨報告傳送給系統管理員    
-        <br/>![DLP 巨集指令以封鎖敏感內容的外部共用](../media/dlp-teams-external-sharing/external-action.png)<br/>
+        
+        - 將附隨報告傳送給系統管理員
+        
+        > [!div class="mx-imgBorder"]
+        > ![DLP 巨集指令以封鎖敏感內容的外部共用](../media/dlp-teams-external-sharing/external-action.png)
 
 當嘗試在包含外部來賓的敏感資訊 SharePoint 中共用檔時，執行中的 DLP 原則：
-<br/>![封鎖外部共用](../media/dlp-teams-external-sharing/external-sharing-blocked.png)<br/>
+
+> [!div class="mx-imgBorder"]
+> ![封鎖外部共用](../media/dlp-teams-external-sharing/external-sharing-blocked.png)
 
 
 DLP 原則的動作當來賓嘗試在具有封鎖外部的小組中開啟檔時：
-<br/>![封鎖外部存取](../media/dlp-teams-external-sharing/external-access-blocked.png)<br/>
+
+> [!div class="mx-imgBorder"]
+> ![封鎖外部存取](../media/dlp-teams-external-sharing/external-access-blocked.png)
 
 ## <a name="related-articles"></a>相關文章
 

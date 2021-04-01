@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 583419f6808d5b3d54d1f48d380e5b4110898ded
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908347"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408642"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
+
+
 
 [自訂敏感性資訊類型](sensitive-information-type-learn-about.md)用於協助識別敏感性項目，使得您可以防止不小心或不適當地將其與他人共用。 您可以根據下列項目來定義自訂機密資訊類型：
 
@@ -35,7 +37,7 @@ ms.locfileid: "50908347"
 
  這類自訂敏感性資訊類型符合許多組織的業務需求。
 
-但是，如果您想要一種使用精確數據值的自定義敏感信息類型，而非根據通用模式找到的匹配，該怎麼辦？ 使用以精確資料比對 (EDM) 為基礎的分類，您可以建立其設計目的為以下的自訂敏感性資訊類型：
+但是，如果您想要使用精確資料值的自訂敏感性資訊類型 (SIT)，而非根據泛型模式所找到的類型，該怎麼做？ 使用以精確資料比對 (EDM) 為基礎的分類，您可以建立其設計目的為以下的自訂敏感性資訊類型：
 
 - 充滿活力並可以輕鬆刷新;
 - 更可以調整的；
@@ -56,6 +58,7 @@ ms.locfileid: "50908347"
 > - 日文
 > 
 > 這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
+ 
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
@@ -369,7 +372,10 @@ ms.locfileid: "50908347"
 如果您不想公開明文機密的資料檔，可以在安全位置的電腦上雜湊，然後將雜湊檔和鹽檔複製到可直接連線到 Microsoft 365 租用者的電腦。 在這個案例中，您將需要在兩部電腦上都有 EDMUploadAgent。
 
 > [!IMPORTANT]
-> 如果您使用完全符合結構描述和資料類型精靈建立結構描述和模式檔案，您 ***必須** 下載此程式的結構描述。
+> 如果您使用「精確資料比對」結構描述和敏感性資訊類型精靈來建立結構描述和模式檔案，則 ***必須*** 下載此程序的結構描述。
+
+> [!NOTE]
+> 如果組織已在[租用戶層級 (公開預覽) 設定 Microsoft 365 的客戶金鑰](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)，精確資料比對將會自動使用其加密功能。 這僅適用商業雲端中的 E5 授權租用戶。
 
 #### <a name="prerequisites"></a>必要條件
 

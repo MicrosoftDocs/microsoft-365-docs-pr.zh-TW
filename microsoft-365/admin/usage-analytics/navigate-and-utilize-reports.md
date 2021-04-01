@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: 瞭解如何使用流覽索引標籤及篩選器來查看報告。
-ms.openlocfilehash: d3f080bdf2ec5544a0ef9d06139cad682962d57d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 921b32448deeb13b33d58112183002bace44c430
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913907"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471042"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>導覽和運用 Microsoft 365 使用情況分析中的報告
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 儀表板可為您提供主要使用情況和採用數據的快速概觀。 透過選取最上層的計量，您可以存取提供更多詳細資料和深入分析的報表。 每個報告索引標籤都包含組織使用狀況和採用狀況的特定資料視覺效果。 收集的資料會在每個報告的標題中說明，而且會出現一個拼貼，其中包含您正在查看之 [報表] 索引標籤上的視覺化效果的進一步資訊。
 
