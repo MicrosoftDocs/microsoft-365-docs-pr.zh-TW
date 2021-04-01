@@ -95,7 +95,7 @@
         - name: 預設安全性
           href: secure-by-default.md
         - name: 在適用於 Office 365 的 Microsoft Defender 中設定防網路釣魚原則
-          href: configure-atp-anti-phishing-policies.md
+          href: configure-mdo-anti-phishing-policies.md
         - name: 設定反惡意程式碼原則
           href: configure-anti-malware-policies.md
         - name: 設定反垃圾郵件原則
