@@ -8,7 +8,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
+ms.author: maccruz
 author: lomayor
 localization_priority: Normal
 manager: dansimp
@@ -17,60 +17,60 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 25538e1866db8f4a7bff24ac336005bf2e1ce78b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b3fb862ac6e845ed4a3f5b72bae902f00c125b53
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058768"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498295"
 ---
-# <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a><span data-ttu-id="e8ab1-104">透過模擬攻擊體驗 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="e8ab1-104">Experience Microsoft Defender for Endpoint through simulated attacks</span></span> 
+# <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a><span data-ttu-id="ffb35-104">透過模擬攻擊體驗 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="ffb35-104">Experience Microsoft Defender for Endpoint through simulated attacks</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="e8ab1-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="e8ab1-105">**Applies to:**</span></span>
-- [<span data-ttu-id="e8ab1-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="e8ab1-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [<span data-ttu-id="e8ab1-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e8ab1-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="ffb35-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="ffb35-105">**Applies to:**</span></span>
+- [<span data-ttu-id="ffb35-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="ffb35-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [<span data-ttu-id="ffb35-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="ffb35-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-><span data-ttu-id="e8ab1-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="e8ab1-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="e8ab1-109">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
+><span data-ttu-id="ffb35-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="ffb35-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="ffb35-109">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="ffb35-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
 
 >[!TIP]
->- <span data-ttu-id="e8ab1-110">深入瞭解 Microsoft Defender ATP 中的最新增強功能： [用於端點的 Defender 新增功能？](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-110">Learn about the latest enhancements in Microsoft Defender ATP: [What's new in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).</span></span>
->- <span data-ttu-id="e8ab1-111">在最近的 MITRE 評估中，以試用版的端點示範業界一流的光學器件和偵測功能。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-111">Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation.</span></span> <span data-ttu-id="e8ab1-112">Read： [來自 MITRE ATT 的 Insights&以 CK 為基礎的評估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-112">Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).</span></span>
+>- <span data-ttu-id="ffb35-110">深入瞭解 Microsoft Defender ATP 中的最新增強功能： [用於端點的 Defender 新增功能？](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)。</span><span class="sxs-lookup"><span data-stu-id="ffb35-110">Learn about the latest enhancements in Microsoft Defender ATP: [What's new in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).</span></span>
+>- <span data-ttu-id="ffb35-111">在最近的 MITRE 評估中，以試用版的端點示範業界一流的光學器件和偵測功能。</span><span class="sxs-lookup"><span data-stu-id="ffb35-111">Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation.</span></span> <span data-ttu-id="ffb35-112">Read： [來自 MITRE ATT 的 Insights&以 CK 為基礎的評估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。</span><span class="sxs-lookup"><span data-stu-id="ffb35-112">Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).</span></span>
 
-<span data-ttu-id="e8ab1-113">您可能想要在將許多裝置上架到服務之前，體驗端點的 Defender。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-113">You might want to experience Defender for Endpoint before you onboard more than a few devices to the service.</span></span> <span data-ttu-id="e8ab1-114">若要這麼做，您可以在一些測試裝置上執行受控制的攻擊模擬。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-114">To do this, you can run controlled attack simulations on a few test devices.</span></span> <span data-ttu-id="e8ab1-115">在執行模擬後的攻擊之後，您可以查看 Endpoint 的 Endpoint 面對惡意活動的反應，以及如何啟用有效的回應。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-115">After running the simulated attacks, you can review how Defender for Endpoint surfaces malicious activity and explore how it enables an efficient response.</span></span>
+<span data-ttu-id="ffb35-113">您可能想要在將許多裝置上架到服務之前，體驗端點的 Defender。</span><span class="sxs-lookup"><span data-stu-id="ffb35-113">You might want to experience Defender for Endpoint before you onboard more than a few devices to the service.</span></span> <span data-ttu-id="ffb35-114">若要這麼做，您可以在一些測試裝置上執行受控制的攻擊模擬。</span><span class="sxs-lookup"><span data-stu-id="ffb35-114">To do this, you can run controlled attack simulations on a few test devices.</span></span> <span data-ttu-id="ffb35-115">在執行模擬後的攻擊之後，您可以查看 Endpoint 的 Endpoint 面對惡意活動的反應，以及如何啟用有效的回應。</span><span class="sxs-lookup"><span data-stu-id="ffb35-115">After running the simulated attacks, you can review how Defender for Endpoint surfaces malicious activity and explore how it enables an efficient response.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="e8ab1-116">開始之前</span><span class="sxs-lookup"><span data-stu-id="e8ab1-116">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="ffb35-116">開始之前</span><span class="sxs-lookup"><span data-stu-id="ffb35-116">Before you begin</span></span>
 
-<span data-ttu-id="e8ab1-117">若要執行提供的任何模擬，您至少需要 [一個架裝置](onboard-configure.md)。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-117">To run any of the provided simulations, you need at least [one onboarded device](onboard-configure.md).</span></span> 
+<span data-ttu-id="ffb35-117">若要執行提供的任何模擬，您至少需要 [一個架裝置](onboard-configure.md)。</span><span class="sxs-lookup"><span data-stu-id="ffb35-117">To run any of the provided simulations, you need at least [one onboarded device](onboard-configure.md).</span></span> 
 
-<span data-ttu-id="e8ab1-118">閱讀每個攻擊案例中提供的逐步檔。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-118">Read the walkthrough document provided with each attack scenario.</span></span> <span data-ttu-id="e8ab1-119">每個檔都包括作業系統和應用程式需求，以及針對攻擊案例的詳細指示。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-119">Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario.</span></span>
+<span data-ttu-id="ffb35-118">閱讀每個攻擊案例中提供的逐步檔。</span><span class="sxs-lookup"><span data-stu-id="ffb35-118">Read the walkthrough document provided with each attack scenario.</span></span> <span data-ttu-id="ffb35-119">每個檔都包括作業系統和應用程式需求，以及針對攻擊案例的詳細指示。</span><span class="sxs-lookup"><span data-stu-id="ffb35-119">Each document includes OS and application requirements as well as detailed instructions that are specific to an attack scenario.</span></span>
 
-## <a name="run-a-simulation"></a><span data-ttu-id="e8ab1-120">執行模擬</span><span class="sxs-lookup"><span data-stu-id="e8ab1-120">Run a simulation</span></span>
+## <a name="run-a-simulation"></a><span data-ttu-id="ffb35-120">執行模擬</span><span class="sxs-lookup"><span data-stu-id="ffb35-120">Run a simulation</span></span>
 
-1. <span data-ttu-id="e8ab1-121">在 **[** 說明  >  **模擬 & 教學** 課程] 中，選取您要模擬的哪個可用攻擊案例：</span><span class="sxs-lookup"><span data-stu-id="e8ab1-121">In **Help** > **Simulations & tutorials**, select which of the available attack scenarios you would like to simulate:</span></span>
+1. <span data-ttu-id="ffb35-121">在 **[** 說明  >  **模擬 & 教學** 課程] 中，選取您要模擬的哪個可用攻擊案例：</span><span class="sxs-lookup"><span data-stu-id="ffb35-121">In **Help** > **Simulations & tutorials**, select which of the available attack scenarios you would like to simulate:</span></span>
 
-   - <span data-ttu-id="e8ab1-122">**案例1：檔丟掉後門** -模擬 socially 工程的引誘檔的傳遞。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-122">**Scenario 1: Document drops backdoor** - simulates delivery of a socially engineered lure document.</span></span> <span data-ttu-id="e8ab1-123">檔會啟動巧盡心思的後門，可提供駭客控制權。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-123">The document launches a specially crafted backdoor that gives attackers control.</span></span>
+   - <span data-ttu-id="ffb35-122">**案例1：檔丟掉後門** -模擬 socially 工程的引誘檔的傳遞。</span><span class="sxs-lookup"><span data-stu-id="ffb35-122">**Scenario 1: Document drops backdoor** - simulates delivery of a socially engineered lure document.</span></span> <span data-ttu-id="ffb35-123">檔會啟動巧盡心思的後門，可提供駭客控制權。</span><span class="sxs-lookup"><span data-stu-id="ffb35-123">The document launches a specially crafted backdoor that gives attackers control.</span></span>
 
-   - <span data-ttu-id="e8ab1-124">**案例2： fileless 進攻中的 PowerShell 腳本** -模擬 fileless 攻擊，其受 PowerShell、showcasing 攻擊面不足和裝置教育偵測惡意記憶體活動的偵測。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-124">**Scenario 2: PowerShell script in fileless attack** - simulates a fileless attack that relies on PowerShell, showcasing attack surface reduction and device learning detection of malicious memory activity.</span></span>
+   - <span data-ttu-id="ffb35-124">**案例2： fileless 進攻中的 PowerShell 腳本** -模擬 fileless 攻擊，其受 PowerShell、showcasing 攻擊面不足和裝置教育偵測惡意記憶體活動的偵測。</span><span class="sxs-lookup"><span data-stu-id="ffb35-124">**Scenario 2: PowerShell script in fileless attack** - simulates a fileless attack that relies on PowerShell, showcasing attack surface reduction and device learning detection of malicious memory activity.</span></span>
     
-   - <span data-ttu-id="e8ab1-125">**案例3：自動化事件回應** -觸發自動調查，它會自動 hunts 及 remediates 違犯的專案，以調整您的事件回應容量。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-125">**Scenario 3: Automated incident response** - triggers automated investigation, which automatically hunts for and remediates breach artifacts to scale your incident response capacity.</span></span>
+   - <span data-ttu-id="ffb35-125">**案例3：自動化事件回應** -觸發自動調查，它會自動 hunts 及 remediates 違犯的專案，以調整您的事件回應容量。</span><span class="sxs-lookup"><span data-stu-id="ffb35-125">**Scenario 3: Automated incident response** - triggers automated investigation, which automatically hunts for and remediates breach artifacts to scale your incident response capacity.</span></span>
 
-2. <span data-ttu-id="e8ab1-126">下載並閱讀您所選案例中提供的對應逐步檔。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-126">Download and read the corresponding walkthrough document provided with your selected scenario.</span></span>
+2. <span data-ttu-id="ffb35-126">下載並閱讀您所選案例中提供的對應逐步檔。</span><span class="sxs-lookup"><span data-stu-id="ffb35-126">Download and read the corresponding walkthrough document provided with your selected scenario.</span></span>
 
-3. <span data-ttu-id="e8ab1-127">流覽以 **協助**  >  **模擬 & 教學** 課程，以下載模擬檔案或複製類比腳本。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-127">Download the simulation file or copy the simulation script by navigating to **Help** > **Simulations & tutorials**.</span></span> <span data-ttu-id="e8ab1-128">您可以選擇在測試裝置上下載檔案或腳本，但這不是必要的。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-128">You can choose to download the file or script on the test device but it's not mandatory.</span></span>
+3. <span data-ttu-id="ffb35-127">流覽以 **協助**  >  **模擬 & 教學** 課程，以下載模擬檔案或複製類比腳本。</span><span class="sxs-lookup"><span data-stu-id="ffb35-127">Download the simulation file or copy the simulation script by navigating to **Help** > **Simulations & tutorials**.</span></span> <span data-ttu-id="ffb35-128">您可以選擇在測試裝置上下載檔案或腳本，但這不是必要的。</span><span class="sxs-lookup"><span data-stu-id="ffb35-128">You can choose to download the file or script on the test device but it's not mandatory.</span></span>
 
-4. <span data-ttu-id="e8ab1-129">依照練習檔中的指示，在測試裝置上執行類比檔或腳本。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-129">Run the simulation file or script on the test device as instructed in the walkthrough document.</span></span>
+4. <span data-ttu-id="ffb35-129">依照練習檔中的指示，在測試裝置上執行類比檔或腳本。</span><span class="sxs-lookup"><span data-stu-id="ffb35-129">Run the simulation file or script on the test device as instructed in the walkthrough document.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e8ab1-130">類比檔或腳本模仿攻擊活動，但實際上卻是良性的，且不會損害或損害測試裝置。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-130">Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.</span></span>
+> <span data-ttu-id="ffb35-130">類比檔或腳本模仿攻擊活動，但實際上卻是良性的，且不會損害或損害測試裝置。</span><span class="sxs-lookup"><span data-stu-id="ffb35-130">Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.</span></span>
 > 
 > 
-> <span data-ttu-id="e8ab1-131">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="e8ab1-131">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="e8ab1-132">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="e8ab1-132">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
+> <span data-ttu-id="ffb35-131">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="ffb35-131">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="ffb35-132">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="ffb35-132">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
 
 
-## <a name="related-topics"></a><span data-ttu-id="e8ab1-133">相關主題</span><span class="sxs-lookup"><span data-stu-id="e8ab1-133">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="ffb35-133">相關主題</span><span class="sxs-lookup"><span data-stu-id="ffb35-133">Related topics</span></span>
 
-- [<span data-ttu-id="e8ab1-134">板載裝置</span><span class="sxs-lookup"><span data-stu-id="e8ab1-134">Onboard devices</span></span>](onboard-configure.md)
-- [<span data-ttu-id="e8ab1-135">板載 Windows 10 裝置</span><span class="sxs-lookup"><span data-stu-id="e8ab1-135">Onboard Windows 10 devices</span></span>](configure-endpoints.md)
+- [<span data-ttu-id="ffb35-134">板載裝置</span><span class="sxs-lookup"><span data-stu-id="ffb35-134">Onboard devices</span></span>](onboard-configure.md)
+- [<span data-ttu-id="ffb35-135">將 Windows 10 裝置上線</span><span class="sxs-lookup"><span data-stu-id="ffb35-135">Onboard Windows 10 devices</span></span>](configure-endpoints.md)
