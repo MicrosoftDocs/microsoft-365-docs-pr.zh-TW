@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何識別、監控和自動保護 Office 365 中貴組織中的敏感資訊。
-ms.openlocfilehash: 9ef369786aa4b79dbdec551c9750500f9c092906
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 737e556972ca8ab0f82e1c4fe9e8602f09e91fc8
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052071"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445427"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -96,9 +96,14 @@ DLP 原則套用於跨 Microsoft 365 位置的敏感性項目，並且可以如�
 |Microsoft Cloud App Security |執行個體 |
 
 
- 如果您選擇在 Exchange 中包含特定通訊群組，DLP 原則將只會限定至該群組的成員。 類似地排除通訊群組會從原則評估中排除該通訊群組的所有成員。 您可以選擇將原則限定至通訊清單、動態通訊群組和安全性群組的成員。 DLP 原則最多可包含 50 項此類的包含和排除。
+如果您選擇在 Exchange 中包含特定通訊群組，DLP 原則將只會限定至該群組的成員。 類似地排除通訊群組會從原則評估中排除該通訊群組的所有成員。 您可以選擇將原則限定至通訊清單、動態通訊群組和安全性群組的成員。 DLP 原則最多可包含 50 項此類的包含和排除。
 
-如果您選擇包含或排除特定 SharePoint 網站或 OneDrive 帳戶，則 DLP 原則只能包含不超過 100 項此類包含或排除。 雖然有這個限制，但您可以套用全組織原則或套用到整個位置的原則來超過這些限制。
+如果您選擇包含或排除特定 SharePoint 網站，則 DLP 原則只能包含不超過 100 項此類包含或排除。 雖然有這個限制，但您可以套用全組織原則或套用到整個位置的原則來超過這些限制。
+
+如果您選擇包含或排除特定的 OneDrive 帳戶或群組，則 DLP 原則不能包含超過 100 個使用者帳戶或 50 個群組作為包含或排除。
+
+> [!NOTE]
+> 使用帳戶或群組的商務用 OneDrive 原則範圍目前處於公開預覽。 在此階段期間，您可以隨著 DLP 原則包含或排除使用者帳戶和群組。 不支援在相同原則中同時使用包含和排除。
   
 ### <a name="rules"></a>規則
 
@@ -201,8 +206,9 @@ DLP 原則在尋找信用卡號碼等敏感性資訊類型時，並不只是尋�
 規則相符時，您可以將含有警示詳細資料的警示電子郵件傳送給您的法務人員 (或是您選擇的任何人)。 這份警示電子郵件將帶有 [DLP 警示管理儀表板](dlp-configure-view-alerts-policies.md)的連結，法務人員可以打開連結以檢視警示和活動的詳細資料。 儀表板包含觸發警示的事件詳細資料，以及相符的 DLP 原則詳細資料和已偵測到的敏感性內容。
 
 此外，您也可以傳送事件詳細資料的事件報告。 這份報告包含相符項目的相關資訊、符合規則的實際內容，以及上次修改內容的人員名稱。 若是電子郵件訊息，報告則會以附件的方式提供與 DLP 原則相符的原始郵件。
-  
-![設定事件報告的頁面](../media/Alerts-and-incident-report.png)
+
+> [!div class="mx-imgBorder"]
+> ![設定事件報告的頁面](../media/Alerts-and-incident-report.png)
 
 DLP 掃描電子郵件的方式不同於 SharePoint Online 或商務用 OneDrive 中的項目。 在 SharePoint Online 和商務用 OneDrive 中，DLP 會掃描現有項目以及新的項目，並在發現相符項目時產生警示和事件報告。 在 Exchange Online 中，DLP 僅會掃描新的電子郵件訊息，並在原則相符時產生報告。 DLP ***不會*** 掃描或比對信箱或封存內儲存的既有電子郵件項目。
   
@@ -252,13 +258,15 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>處理規則的優先順序
 
-當您在原則中建立規則時，每個規則都會根據建立時間指派優先順序，也就是說，第一個建立的規則具有第一優先順序，第二個建立的規則具有第二優先順序，依此類推。 
-  
-![依優先順序排列的規則](../media/dlp-rules-in-priority-order.png)
+當您在原則中建立規則時，每個規則都會根據建立時間指派優先順序，也就是說，第一個建立的規則具有第一優先順序，第二個建立的規則具有第二優先順序，依此類推。
+
+> [!div class="mx-imgBorder"]
+> ![依優先順序排列的規則](../media/dlp-rules-in-priority-order.png)
   
 您設定一個以上的 DLP 原則之後，可以變更一或多個原則的優先順序。 若要這樣做，請選取原則，選擇 **[編輯原則]**，然後使用 **[優先順序]** 清單來指定優先順序。
 
-![設定原則的優先順序](../media/dlp-set-policy-priority.png)
+> [!div class="mx-imgBorder"]
+> ![設定原則的優先順序](../media/dlp-set-policy-priority.png)
 
 以規則評估內容時，系統會依優先順序處理規則。 如果內容符合多條規則，系統會依優先順序進行處理，並強制執行限制最嚴苛的動作。 舉例來說，如果內容符合下列所有規則，系統會強制執行規則 3，因為它是優先順序最高、最嚴格的規則：
   
@@ -295,8 +303,9 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 ### <a name="instance-count"></a>執行個體計數
 
 執行個體計數指的是特定敏感性資訊類型必須在內容中出現多少次才能符合規則的次數。 例如，如果識別出 1 到 9 個之間的不重複美國或英國護照號碼， 內容就符合以下顯示的規則。
-  
-請注意，執行個體計數僅包含符合敏感性資訊類型的 **不重複** 關鍵字。 例如，如果有一封電子郵件內出現 10 次同一組信用卡號碼，這 10 次只會採計為該信用卡號碼出現一次。 
+
+> [!NOTE]
+> 執行個體計數僅包含符合敏感性資訊類型和關鍵字的 **不重複** 項目。 例如，如果有一封電子郵件內出現 10 次同一組信用卡號碼，這 10 次只會採計為該信用卡號碼出現一次。
   
 使用執行個體計數來調整規則的指導方針非常簡單：
   
@@ -443,7 +452,8 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 
     您也可以變更原則中多個規則的優先順序。 若要這樣做，請開啟原則進行編輯。 在規則列中，選擇省略符號 (**...**)，然後選擇一個選項，例如 **[下移]** 或 **[移至最後]**。
 
-    ![設定規則優先順序](../media/dlp-set-rule-priority.png)
+    > [!div class="mx-imgBorder"]
+    > ![設定規則優先順序](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP 報告
 
@@ -534,7 +544,7 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
 
 您也可以透過授予 [僅限檢視 DLP 合規性管理] 角色，來建立擁有 DLP 原則和 DLP 報告的僅限檢視權限角色群組。
 
-如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 需要這些權限才能建立及套用 DLP 原則。 原則強制執行不需要內容的存取權。
   

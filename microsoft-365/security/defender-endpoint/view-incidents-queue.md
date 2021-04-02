@@ -1,5 +1,5 @@
 ---
-title: 查看和組織事件佇列
+title: 查看及組織事件佇列
 ms.reviewer: ''
 description: 請參閱事件清單，並瞭解如何套用篩選來限制清單，並取得更具焦點的視圖。
 keywords: view，組織，事件，匯總，調查，佇列，ttp
@@ -9,20 +9,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f25189ac6550d9c3349e08f7e7ac685d4b8031fc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 93aa685f12e0241758bf86d3aa956717db052e5f
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058128"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499930"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>查看和組織 Microsoft Defender for Endpoint 事件佇列
 
@@ -65,7 +65,7 @@ ms.locfileid: "51058128"
 ## <a name="assigned-to"></a>指派給
 您可以選取指派給任何人或指派給您來篩選清單。
 
-### <a name="category"></a>類別
+### <a name="category"></a>Category
 根據 cybersecurity kill 鏈所在階段的描述來分類事件。 此視圖可協助威脅分析人員判斷根據內容部署的優先順序、緊急性和對應的回應策略。
 
 ### <a name="status"></a>狀態

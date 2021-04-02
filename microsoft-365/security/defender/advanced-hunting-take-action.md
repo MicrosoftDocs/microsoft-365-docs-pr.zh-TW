@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4c90441bb7a492ac38c5fcb560d9246b3a0005b0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ee35bcc29ef8a283b6b04cb34ab97705d5dd15f4
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058624"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498230"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>對高級搜尋查詢結果採取動作
 
@@ -42,7 +42,7 @@ ms.locfileid: "51058624"
 - 在裝置上執行各種動作
 - 隔離檔
 
-## <a name="required-permissions"></a>必要的權限
+## <a name="required-permissions"></a>必要權限
 若要能夠透過「高級搜尋」採取行動，您必須在 Microsoft Defender for Endpoint 中有一個角色，具有 [在裝置上提交修正動作的許可權](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。 如果您無法採取行動，請洽詢全域管理員以取得下列許可權：
 
 *使用中修復的動作 > 威脅和弱點管理-修正處理*

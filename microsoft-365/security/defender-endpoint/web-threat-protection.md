@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7754fa586b24fdedaa9691b45f5da4654c882a5b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185978"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499902"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>保護您的組織免受網頁威脅
 
@@ -36,9 +36,9 @@ ms.locfileid: "51185978"
 Web 威脅防護是用於端點之 [web 保護](web-protection-overview.md) 的一部分。 它會使用 [網路保護](network-protection.md) 來保護您的裝置免受網頁威脅。 透過與 Microsoft Edge 和流行的協力廠商瀏覽器（如 Chrome 和 Firefox）整合，網頁威脅防護會停止網頁 proxy 以外的網頁威脅，並在離開或內部部署時保護裝置。 Web 威脅防護會停止存取網路釣魚網站、惡意程式碼向量、exploit 網站、不信任或低信譽網站，以及您在 [自訂指示器清單](manage-indicators.md)中封鎖的網站。
 
 >[!Note]
->最多可能需要一個小時，裝置才可接收新的客戶指示器。
+>裝置接收新的自訂指示器時，最多可能需要一小時。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 Web 保護使用網路保護，在 Microsoft Edge 和協力廠商網頁瀏覽器上提供 web 流覽安全性。
 
 開啟裝置上的網路保護：
@@ -50,8 +50,8 @@ Web 保護使用網路保護，在 Microsoft Edge 和協力廠商網頁瀏覽器
 
 ## <a name="related-topics"></a>相關主題
 
-- [Web 保護一覽](web-protection-overview.md)
+- [Web 保護概觀](web-protection-overview.md)
 - [網頁威脅防護](web-threat-protection.md)
-- [監視 web 安全性](web-protection-monitoring.md)
-- [回應 web 威脅](web-protection-response.md)
+- [監視 Web 安全性](web-protection-monitoring.md)
+- [回應 Web 威脅](web-protection-response.md)
 - [網路保護](network-protection.md)

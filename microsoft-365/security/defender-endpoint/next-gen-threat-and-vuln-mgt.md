@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: d1402d8486725559335a5edc5ee13c78a0125932
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186422"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499061"
 ---
 # <a name="threat-and-vulnerability-management"></a>威脅與弱點管理
 
@@ -88,9 +88,9 @@ ms.locfileid: "51186422"
 **儀表板**   | 取得組織公開分數、Microsoft 安全分數、裝置洩密發佈、主要安全性建議、熱門的軟體、熱門的修復活動，以及主要公開裝置資料的高層次的視圖。
 [**安全性建議**](tvm-security-recommendation.md) | 請參閱安全性建議和相關威脅資訊的清單。 當您從清單中選取專案時，會開啟彈出面板，其中包含弱點詳細資料、開啟軟體頁面的連結，以及修正和例外狀況選項。 如果您的裝置透過 Azure Active Directory 加入，而且您已在 Defender for Endpoint 中啟用 Intune 連線，您也可以在 Intune 中開啟票證。
 [**修復**](tvm-remediation.md) | 請參閱您已建立的修復活動和建議的例外狀況。
-[**軟體清查**](tvm-software-inventory.md) | 查看您組織中有缺陷的軟體清單，以及弱點和威脅資訊。
+[**軟體庫存**](tvm-software-inventory.md) | 查看您組織中有缺陷的軟體清單，以及弱點和威脅資訊。
 [**弱點**](tvm-weaknesses.md) | 請參閱您組織中 (Cve) 的常見漏洞與洩密清單。
-[**事件時程表**](threat-and-vuln-mgt-event-timeline.md) | 查看可能影響組織風險的事件。
+[**活動時間表**](threat-and-vuln-mgt-event-timeline.md) | 查看可能影響組織風險的事件。
 
 ## <a name="apis"></a>API
 
@@ -98,16 +98,16 @@ ms.locfileid: "51186422"
 
 相關 APIs 請參閱下列文章：
 
-- [支援的 Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
+- [受支援的適用於端點的 Microsoft Defender API](exposed-apis-list.md)
 - [電腦 APIs](machine.md)
 - [建議 APIs](vulnerability.md)
 - [分數 APIs](score.md)
 - [軟體 APIs](software.md)
 - [弱點 APIs](vulnerability.md)
-- [依機器及軟體列出弱點](get-all-vulnerabilities-by-machines.md)
+- [列出電腦和軟體的弱點](get-all-vulnerabilities-by-machines.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [支援的作業系統和平臺](tvm-supported-os.md)
+- [支援的作業系統和平台](tvm-supported-os.md)
 - [威脅與弱點管理儀表板](tvm-dashboard-insights.md)
 - [博客： Microsoft 的威脅 & 弱點管理現在可協助成千上萬的客戶即時探索、優先考慮和修復弱點。](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)

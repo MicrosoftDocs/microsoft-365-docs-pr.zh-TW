@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199216"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499027"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -32,7 +32,7 @@ ms.locfileid: "51199216"
 
 合規性管理員可供使用 Office 365 和 Microsoft 365 授權的組織使用，以及向美國政府社區雲端 (GCC) 中和 GCC 的高客戶。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 您組織的 Microsoft 365 全域管理員可能是第一個存取合規性管理員的使用者。 我們建議全域管理員登入，並設定第一次造訪合規性管理員時所述的使用者權限。
 
@@ -91,7 +91,7 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 | :------------- | :-------------: | :------------: |
 | **讀取但不編輯資料**| 合規性管理員讀取者  | Azure AD 全域讀取器，安全性讀取器 | 
 | **編輯資料**| 合規性管理員貢獻 | 合規性系統管理員 | 
-| **編輯測試結果**| 合規性管理員評估 | 合規性系統管理員 | 
+| **編輯測試結果**| 合規性管理員評定員 | 合規性系統管理員 | 
 | **管理評估、範本及租使用者資料**| 合規性管理員管理 | 合規性管理員、規範資料管理員、安全性管理員  | 
 | **指派使用者**| 全域系統管理員 | 全域系統管理員 | 
 

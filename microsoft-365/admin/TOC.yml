@@ -241,6 +241,8 @@
           href: manage/pin-apps-to-app-launcher.md
         - name: 將使用者升級到最新的應用程式
           href: setup/upgrade-users-to-latest-office-client.md
+        - name: 在 Microsoft 365 系統管理中心測試及部署 Microsoft 365 Apps
+          href: manage/test-and-deploy-microsoft-365-apps.md
         - name: 增益集的集中式部署
           items:
             - name: 增益集集中式部署的必要條件

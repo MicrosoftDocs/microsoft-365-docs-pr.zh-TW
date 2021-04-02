@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dd566de3ba4b4281b19c423b8623f081c378bca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204795"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499325"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -122,9 +122,9 @@ ms.locfileid: "51204795"
 
    ![附件提交範例](../../media/submission-file-flyout.PNG)
 
-## <a name="view-admin-submissions"></a>查看系統管理員報送
+## <a name="view-items-submitted-for-analysis"></a>查看提交進行分析的專案
 
-在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **提交**]，確認您在 [系統 **管理提交** ] 索引標籤上，然後按一下 [ **新增提交**]。
+在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **報送**]，確認您已在 [已 **提交進行分析** ] 索引標籤上
 
 在頁面頂端附近，您可以輸入開始日期、結束日期和 (預設值) 您可以依 **提交識別碼** (指派給每個提交) 的 GUID 值進行篩選，方法是在方塊中輸入值，然後按一下 [重新整理] ![ 按鈕 ](../../media/scc-quarantine-refresh.png) 。 Update
 
@@ -254,6 +254,9 @@ ms.locfileid: "51204795"
 在頁面頂端附近，您可以輸入開始日期、結束日期，也可以透過在方塊中輸入值，然後按一下 [重新整理] 按鈕 **來篩選** ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要匯出結果，請按一下頁面頂端附近的 [ **匯出** ]，然後選取 [ **圖表資料** 或 **表格**]。 在出現的對話方塊中，儲存 .csv 檔案。
+
+> [!NOTE]
+> 如果組織已設定為僅傳送至自訂信箱，將不會傳送報告的郵件以進行重新掃描，而且使用者報告的郵件入口網站將永遠會是空的。
 
 ## <a name="undo-user-submissions"></a>撤銷使用者報送
 

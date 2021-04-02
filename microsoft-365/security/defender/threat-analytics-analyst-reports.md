@@ -11,8 +11,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc534b7bec27784ccf25f92ab0282fdbecdc9196
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f916137be71dffeaed7e3718286032a17c9f8e04
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059628"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498474"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>瞭解威脅分析中的分析報告
 
@@ -35,7 +35,7 @@ ms.locfileid: "51059628"
 **適用於：**
 - Microsoft 365 Defender
 
-> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ，或 [在實際執行中執行您的試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
+> 想要體驗 Microsoft 365 Defender 嗎？ 您可以[在實驗室環境中評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[在生產環境中執行試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]

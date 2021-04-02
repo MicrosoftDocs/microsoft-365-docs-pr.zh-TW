@@ -1,5 +1,5 @@
 ---
-title: 啟用攻擊面減少規則
+title: 啟用受攻擊面縮小規則
 description: 啟用攻擊面減少 (ASR) 規則，保護您的裝置免受使用宏、腳本及一般插入技術的攻擊。
 keywords: 攻擊面降減，hips，主機入侵防護系統，保護規則，反侵入，antiexploit，exploit，感染防護，啟用，開啟
 search.product: eADQiWindows 10XVcnh
@@ -14,14 +14,14 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1deec767c6af777b23ab5a91c9e719f690e0c048
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf4fa88b3fbbf5d977d54a78c480129665049b23
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165138"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499397"
 ---
-# <a name="enable-attack-surface-reduction-rules"></a>啟用攻擊面減少規則
+# <a name="enable-attack-surface-reduction-rules"></a>啟用受攻擊面縮小規則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -137,7 +137,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
 2. 在 [**群組原則管理編輯器**] 中，移至 [電腦設定]，然後選取 [**系統****管理範本**]。
 
-3. 將樹狀目錄展開為 **windows 元件**  >  **Microsoft defender 防病毒**  >  **Windows defender 利用防護**  >  **攻擊面減少**。
+3. 將樹狀目錄展開為 **Windows 元件**  >  **microsoft defender 防病毒**  >  **microsoft defender 利用防護防護**  >  **攻擊面降減**。
 
 4. 選取 [ **設定攻擊面減少規則** ]，然後選取 [ **啟用**]。 然後，您可以在 [選項] 區段中，為每個規則設定個別的狀態。
 
@@ -211,4 +211,4 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
 - [評估攻擊面減少](evaluate-attack-surface-reduction.md)
 
-- [攻擊面減少常見問題](attack-surface-reduction.md)
+- [受攻擊面縮小常見問題集](attack-surface-reduction.md)

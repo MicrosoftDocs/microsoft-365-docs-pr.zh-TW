@@ -1,5 +1,5 @@
 ---
-title: 適用于裝置的 Microsoft 安全分數
+title: 裝置用 Microsoft 安全分數
 description: 您的裝置得分會顯示跨應用程式、作業系統、網路、帳戶及安全性控制裝置的集合安全性設定狀態。
 keywords: 適用于裝置的 microsoft 安全分數，mdatp Microsoft 安全計分的裝置、安全分數、設定分數、威脅與弱點管理、安全性控制、改進機會、安全性設定分數、安全性狀況、基準
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d9ccd4f7dcc8b1546772a756aaf850dadfc87905
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fcf33b309045b9ca763b0d3cabc44fb13505ee0b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058136"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500060"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>適用于裝置的 Microsoft 安全分數
+# <a name="microsoft-secure-score-for-devices"></a>裝置用 Microsoft 安全分數
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -112,5 +112,5 @@ ms.locfileid: "51058136"
 
 - [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [儀表板](tvm-dashboard-insights.md)
-- [披露分數](tvm-exposure-score.md)
+- [暴險分數](tvm-exposure-score.md)
 - [安全性建議](tvm-security-recommendation.md)

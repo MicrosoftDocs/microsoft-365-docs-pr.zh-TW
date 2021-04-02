@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 無論您使用處置檢閱或根據設定自動刪除內容，監視和管理內容的處置。
-ms.openlocfilehash: d9786b5e93801153e168784d51e37a00ee1822bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051925"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488166"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -44,7 +44,7 @@ ms.locfileid: "51051925"
 
 此外，要在處置程序中檢視項目的內容，請將使用者新增到以下兩個角色群組：**[內容總管內容檢視器]** 和 **[內容總管清單檢視器]**。 如果使用者沒有這些角色群組的存取權限，他們仍然可以選取處置檢閱動作來完成處置檢閲，但不能從合規性中心檢視項目的內容。
 
-如需設定這些權限的相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需設定這些權限的相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 ### <a name="enable-auditing"></a>啟用稽核
 
@@ -124,16 +124,21 @@ ms.locfileid: "51051925"
 
 ## <a name="disposition-of-records"></a>記錄處置
 
-使用 **[記錄管理]** 頁面中的 **[處置]** 索引標籤，以找出現在已自動刪除，或在處置檢閱之後刪除的記錄。 這些項目會在 **[類型]** 欄中顯示 **[記錄已處置]**。 例如：
+使用 **[記錄管理]** 頁面中的 **[處置]** 索引標籤來識別：
+
+- 因處置檢閱而刪除的項目。
+- 標示為記錄或法規記錄的項目，會在保留期間結束時自動刪除。
+
+這些項目會在 **[類型]** 欄中顯示 **[記錄已處置]**。 例如：
 
 ![未經處置檢閱而處置的項目](../media/records-disposed2.png)
 
-記錄標籤的 **[已處置項目]** 索引標籤中顯示的項目在處置後最多可保存七年，在此期間，每個記錄限制保存一百萬個項目。 如果您看到 **[計數]** 數字接近上限一百萬，而且您需要記錄的處置證明，請與 [Microsoft 支援服務](/office365/admin/contact-support-for-business-products)聯繫。
+**[已處置項目]** 索引標籤中顯示的項目在處置後最多可保存七年，在此期間，每個記錄限制保存一百萬個項目。 如果您看到 **[計數]** 數字接近上限一百萬，而且您需要記錄的處置證明，請與 [Microsoft 支援服務](/office365/admin/contact-support-for-business-products)聯繫。
 
 > [!NOTE]
-> 此功能基於來自[整合稽核記錄](search-the-audit-log-in-security-and-compliance.md)的資訊，因此需要[啟用並搜尋](turn-audit-log-search-on-or-off.md)稽核，以便擷取相應的事件。
+> 此功能使用來自[整合稽核記錄](search-the-audit-log-in-security-and-compliance.md)的資訊，因此需要[啟用並搜尋](turn-audit-log-search-on-or-off.md)稽核，以便擷取相應的事件。
 
-若要進行稽核，請在 **[檔案和頁面活動]** 類別中搜尋 **[標示為記錄的已刪除檔案]**。 此稽核事件適用於文件和電子郵件。
+針對標示為記錄或法規記錄的已刪除項目稽核，請搜尋 **[檔案和頁面活動]** 類別中的 **[標示為記錄的已刪除檔案]**。 此稽核事件適用於文件和電子郵件。
 
 ## <a name="filter-and-export-the-views"></a>篩選及匯出檢視
 

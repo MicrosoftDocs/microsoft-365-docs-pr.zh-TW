@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1559d8dca6b6909f22473c5a8f4d25d4bac501d1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: be01d5908e4c79f642cdbbddd75115f6ebc2c713
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057388"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499612"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-for-macos-policies-in-jamf-pro"></a>在 Jamf Pro 中設定 macOS 原則的 Microsoft Defender for Endpoint
 
@@ -125,7 +125,7 @@ ms.locfileid: "51057388"
 
     ![目標影像](images/jamfpro-targets.png) 
 
-11. 選取 **[儲存]**。
+11. 選取 [儲存 **]**。
 
     ![部署目的電腦的映射](images/jamfpro-deployment-target.png)
 
@@ -318,7 +318,7 @@ ms.locfileid: "51057388"
     >![配置設定的映射 intune 檔案上傳](images/8e69f867664668796a3b2904896f0436.png)
 
 
-11. 選取 **[儲存]**。 
+11. 選取 [儲存 **]**。 
 
     ![配置設定的影像儲存影像](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -349,60 +349,51 @@ ms.locfileid: "51057388"
 
 這些步驟適用于 macOS 10.15 (Catalina) 或更新版本。
 
-1. `notif.mobileconfig`從[我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig)下載
+1. 在 Jamf Pro 儀表板中，選取 [ **電腦**]，然後選取 [設定 **設定檔**]。
 
-2. 將其儲存為 `MDATP_MDAV_notification_settings.plist` 。
-
-3. 在 Jamf Pro 儀表板中，選取 **[一般**]。 
-       
-4. 輸入下列詳細資料：
-
-    **一般** 
+2. 按一下 [ **新增**]，然後輸入下列 **選項** 的詳細資料：
     
-    - 名稱： MDATP MDAV 通知設定
-    - 描述： macOS 10.15 (Catalina) 或更新版本
-    - 類別：無 (預設) 
-    - 分配方法：自動安裝 (預設) 
-    - 層級：電腦層級 (預設) 
+    - 索引標籤 **一般**： 
+        - **名稱**： MDATP MDAV 通知設定
+        - **描述**： macOS 10.15 (Catalina) 或更新版本
+        - **類別**：無 *(預設)*
+        - **分配方法**：自動安裝 *(預設)*
+        - **層級**：電腦層級 *(預設)*
 
-    ![配置設定 mdatpmdav 的影像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![配置設定 mdatpmdav 的影像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
+    - [索引標籤 **通知**] 中，按一下 [ **新增**]，然後輸入下列值：
+        - **束識別碼**： `com.microsoft.wdav.tray`
+        - **嚴重警示**：按一下 [**停** 用]
+        - **通知**：按一下 [**啟用**]
+        - **橫幅警示類型**：選取 [ **包含** 與 **臨時** *(預設值])*
+        - **鎖定畫面上的通知**：按一下 [**隱藏**]
+        - **通知中心的通知**：按一下 [**顯示**]
+        - **徽章應用程式圖示**：按一下 [**顯示**]
 
-5. 選取 **[上傳檔案 (PLIST** 檔案]) 。
+        ![設定 mdatpmdav 通知盤的配置設定影像](images/7f9138053dbcbf928e5182ee7b295ebe.png)
 
-    ![上傳 plistfile 的配置設定影像](images/7f9138053dbcbf928e5182ee7b295ebe.png)
- 
+    - 索引標籤 **通知**，請按一下 [ **增加** 一次]，向下滾動至 **新的通知設定**
+        - **束識別碼**： `com.microsoft.autoupdate2`
+        - 將其餘設定設定為與上述值相同
 
-6. 選取 **[選擇** 檔案  >  **MDATP_MDAV_Notification_Settings。 plist**]。
+        ![設定 mdatpmdav 通知 mau 的映射](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
 
+        請注意，現在有兩個「資料表」具有通知設定，一個用於 **捆綁 ID: wdav**，另一個用於 **ID: autoupdate2 的捆綁**。 雖然您可以根據您的需求來設定警示設定，但捆綁 IDs 必須與之前所述完全相同，且 **包含** 參數必須 **開啟** 以取得 **通知**。
 
-    ![設定 mdatpmdav notsettings 的映射](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
-
-
-    ![設定 mdatpmdav notifsettings 的映射](images/20e33b98eb54447881dc6c89e58b890f.png)
-
-7. 選取  >  **[開啟上傳**]。
-
-    ![Upl img 的配置設定影像](images/7697c33b9fd376ae5a8023d01f9d3857.png)
-
-
-    ![配置設定 upl 影像的影像](images/2bda9244ec25d1526811da4ea91b1c86.png)
-
-8. 選取 [ **範圍** ] 索引標籤，然後選取 [ **新增**]。
+3. 選取 [ **範圍** ] 索引標籤，然後選取 [ **新增**]。
 
     ![設定範圍新增的映射](images/441aa2ecd36abadcdd8aed03556080b5.png)
 
+4. 選取 [ **Contoso 的電腦群組**]。 
 
-9. 選取 [ **Contoso 的電腦群組**]。 
-
-10. 選取 [ **新增**]，然後選取 [ **儲存**]。
+5. 選取 [ **新增**]，然後選取 [ **儲存**]。
     
     ![設定設定 contoso 機器 grp 儲存的影像](images/09a275e321268e5e3ac0c0865d3e2db5.png)
-
     
     ![設定的配置圖像新增儲存](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
-11. 選取 **[完成]**。 您將會看到新的設定 **設定檔**。
+6. 選取 **[完成]**。 您將會看到新的設定 **設定檔**。
     ![設定的圖像配置設定完成 img](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## <a name="step-5-configure-microsoft-autoupdate-mau"></a>步驟5：設定 Microsoft AutoUpdate (MAU) 
@@ -469,7 +460,7 @@ ms.locfileid: "51057388"
 
     ![設定 uplimg 的影像](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. 選取 **[儲存]**。
+11. 選取 [儲存 **]**。
 
     ![設定 saveimg 的影像](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -570,7 +561,7 @@ ms.locfileid: "51057388"
 
 15. 選取 [新增]。 
 
-16. 選取 **[儲存]**。 
+16. 選取 [儲存 **]**。 
     
 17. 選取 **[完成]**。
     
@@ -578,8 +569,12 @@ ms.locfileid: "51057388"
     
     ![設定 donimg2 的影像](images/6c8b406ee224335a8c65d06953dc756e.png)
 
+或者，您也可以下載 [fulldisk](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) ，並將其上傳至 JAMF 設定檔，如 [使用 JAMF Pro 部署自訂設定設定檔中所述）。方法2：將設定檔上傳至 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a>步驟7：核准 Microsoft Defender for Endpoint 的內核擴充
+
+> [!CAUTION]
+> Apple 矽 (M1) 裝置不支援 KEXT。 在這些裝置上安裝包含 KEXT 原則的設定檔將會失敗。
 
 1. 在設定配置 **檔** 中，選取 [ **+ 新增**]。
 
@@ -621,7 +616,7 @@ ms.locfileid: "51057388"
 
     ![配置設定的影像新增影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 選取 **[儲存]**。
+9. 選取 [儲存 **]**。
 
     ![配置設定 saveimag 的影像](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -629,6 +624,7 @@ ms.locfileid: "51057388"
 
     ![配置設定 doneimag 的影像](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
+或者，您也可以下載 [kext](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) ，並將其上傳至 JAMF 設定檔，如 [使用 JAMF Pro 部署自訂設定設定檔中所述）。方法2：將設定檔上傳至 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-8-approve-system-extensions-for-microsoft-defender-for-endpoint"></a>步驟8：核准 Microsoft Defender for Endpoint 的系統擴充
 
@@ -675,7 +671,7 @@ ms.locfileid: "51057388"
 
    ![配置設定 addima 的影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 選取 **[儲存]**。
+9. 選取 [儲存 **]**。
 
    ![配置設定 sysext 範圍的影像](images/sysext-scope.png)
 
@@ -687,57 +683,53 @@ ms.locfileid: "51057388"
 
 做為端點偵測和回應功能的一部分，Mac 版端點的 Microsoft Defender 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。
 
->[!NOTE]
->JAMF 不具備內容篩選原則的內建支援，這些是可讓 Microsoft Defender Endpoint for Mac 在裝置上安裝的網路分機之前的必要條件。 此外，JAMF 有時會變更所要部署之原則的內容。
->如此一來，下列步驟會提供對設定設定檔進行簽章的解決方法。
+這些步驟適用于 macOS 10.15 (Catalina) 或更新版本。
 
-1. `netfilter.mobileconfig`從[我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)下載至您的裝置，並將它儲存為`com.microsoft.network-extension.mobileconfig`
+1. 在 Jamf Pro 儀表板中，選取 [ **電腦**]，然後選取 [設定 **設定檔**]。
 
-2. 遵循 [此頁面](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) 上的指示，以使用 JAMF 的內建憑證授權單位建立簽署憑證。
+2. 按一下 [ **新增**]，然後輸入下列 **選項** 的詳細資料：
 
-3. 在建立憑證並將其安裝至裝置後，請從 macOS 裝置的終端執行下列命令：
+    - 索引標籤 **一般**： 
+        - **名稱**： MICROSOFT Defender ATP 網路擴充
+        - **描述**： macOS 10.15 (Catalina) 或更新版本
+        - **類別**：無 *(預設)*
+        - **分配方法**：自動安裝 *(預設)*
+        - **層級**：電腦層級 *(預設)*
 
-   ```bash
-   $ security cms -S -N "<certificate name>" -i com.microsoft.network-extension.mobileconfig -o com.microsoft.network-extension.signed.mobileconfig
-   ```
+    - 索引標籤 **內容篩選**：
+        - **篩選名稱**： MICROSOFT Defender ATP 內容篩選器
+        - **識別碼**： `com.microsoft.wdav`
+        - 保留 *未* 選取 **服務位址**、**組織**、**使用者名稱**、**密碼**、**憑證** 空白 (**包含**) 
+        - **篩選順序**： Inspector
+        - **通訊端篩選**： `com.microsoft.wdav.netext`
+        - **通訊端篩選指定的需求**： `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+        - *不* 會選取 [**網路篩選** 欄位] [空白 (**包含**]) 
 
-   ![使用命令建立已簽署設定的終端視窗](images/netext-create-profile.png)
+        請注意，「 **識別碼**」、「 **通訊端篩選** 」及「 **通訊端篩選」指定的需求** 會如上所指定的
 
-4. 在 JAMF 入口網站中，流覽至 [設定 **設定檔** ]，然後按一下 [ **上傳** ] 按鈕。 
+        ![配置設定 mdatpmdav 的影像](images/netext-create-profile.png)
 
-   ![上傳視窗的影像](images/netext-upload-file.png)
-
-5. 選取 **[選擇** 檔案]，然後選取 `microsoft.network-extension.signed.mobileconfig` 。
-
-   ![上傳視窗的圖像 netext 選擇檔案](images/netext-choose-file.png)
-
-6. 選取 **[上傳**]。
-
-   ![上傳視窗的圖像 netext 上傳 file2](images/netext-upload-file2.png)
-
-7. 上傳檔案之後，您會被重新導向至新的頁面，以完成此設定檔的建立。
-
-   ![新設定檔 netext 設定檔頁面面的圖像](images/netext-profile-page.png)
-
-8. 選取 [ **範圍** ] 索引標籤。
+3. 選取 [ **範圍** ] 索引標籤。
 
    ![設定設定的圖像 [sco] 索引標籤](images/0df36fc308ba569db204ee32db3fb40a.png)
 
-9. 選取 **[+ 新增]**。
+4. 選取 **[+ 新增]**。
 
-10. 選取 [>**群組名稱**] 下的 [**電腦群組**] > 選取 [ **Contoso 的機器群組**]。
+5. 選取 [>**群組名稱**] 下的 [**電腦群組**] > 選取 [ **Contoso 的機器群組**]。
 
-11. 選取 **[+ 新增]**。
+6. 選取 **[+ 新增]**。
 
     ![配置設定 adim 的影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-12. 選取 **[儲存]**。
+7. 選取 [儲存 **]**。
 
     ![設定 savimg netextscop 的映射](images/netext-scope.png)
 
-13. 選取 **[完成]**。
+8. 選取 **[完成]**。
 
     ![配置設定 netextfinal 的影像](images/netext-final.png)
+
+或者，您也可以下載 [netfilter](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) ，並將其上傳至 JAMF 設定檔，如 [使用 JAMF Pro 部署自訂設定設定檔中所述）。方法2：將設定檔上傳至 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-for-mac"></a>步驟10：使用 Mac 的 Microsoft Defender 端點排程掃描
 依照 [Microsoft Defender For Mac 的排程掃描](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)的指示。
@@ -786,7 +778,7 @@ ms.locfileid: "51057388"
     
      ![[設定設定] [限制] 索引標籤的影像](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-8. 選取 **[儲存]**。 套件已上傳至 Jamf Pro。 
+8. 選取 [儲存 **]**。 套件已上傳至 Jamf Pro。 
 
    ![Configuration settings pack upl jamf pro 映射](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -814,7 +806,7 @@ ms.locfileid: "51057388"
     ![重複簽入設定設定的影像](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
   
-13. 選取 **[儲存]**。 
+13. 選取 [儲存 **]**。 
  
 14. 選取 **> 設定的套件**。
  
@@ -824,7 +816,7 @@ ms.locfileid: "51057388"
 
     ![設定 MDATP 和 MDA 新增的影像](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. 選取 **[儲存]**。
+16. 選取 [儲存 **]**。
 
     ![設定 settingssavimg 的影像](images/9d6e5386e652e00715ff348af72671c6.png)
 

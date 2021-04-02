@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3a20f0a356a32eddc05b3792c0c04c23197a7b0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185692"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498958"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>使用不同的行動裝置管理來進行部署 (MDM) 系統（適用于 Mac 的 Microsoft Defender for Endpoint）
 
@@ -43,7 +43,7 @@ ms.locfileid: "51185692"
 ## <a name="approach"></a>方法
 
 > [!CAUTION]
-> 目前，Microsoft oficially 只支援 Intune 和 JAMF，以進行 Microsoft Defender for Mac 的部署和管理。 Microsoft 對本所提供的資訊不提供任何明示或默示的保證。
+> 目前，Microsoft 正式支援僅限 Intune 和 JAMF，以針對 Mac 的 Microsoft Defender 進行部署和管理。 Microsoft 對本所提供的資訊不提供任何明示或默示的保證。
 
 如果您的組織使用的行動裝置管理 (未正式支援的 MDM) 解決方案，這並不表示您無法為 Mac 部署或執行 Microsoft Defender for Endpoint。
 
@@ -84,6 +84,10 @@ MDM 使用它將設定檔案部署至用戶端裝置上的 **/Library/Managed �
 ### <a name="kernel-extension-policy"></a>內核擴充原則
 
 設定 KEXT 或內核擴充原則。 使用小組識別碼 **UBF8T346G9** ，允許 Microsoft 提供的內核擴充。
+
+> [!CAUTION]
+> 如果您的環境是由 Apple 矽 (M1) 裝置組成，這些機器就不會收到具有 KEXT 原則的設定檔。
+> Apple 不支援這些電腦上的 KEXT，在 M1 電腦上部署這類設定檔時將會失敗。
 
 ### <a name="system-extension-policy"></a>系統擴充原則
 

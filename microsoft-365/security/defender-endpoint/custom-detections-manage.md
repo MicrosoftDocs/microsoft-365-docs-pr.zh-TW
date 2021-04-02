@@ -9,20 +9,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6a7fc4d4141b19f9c5129eea9b89943d07695b2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b36521ada55fa3d60538beb981d487b153e7b1f9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165774"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498749"
 ---
 # <a name="view-and-manage-custom-detection-rules"></a>查看及管理自訂偵測規則
 
@@ -36,7 +36,7 @@ ms.locfileid: "51165774"
 
 管理您現有的 [自訂偵測規則](custom-detection-rules.md) ，以確保它們有效地尋找威脅並採取動作。 探索如何查看規則清單、檢查先前的執行，並複查其觸發的警示。 您也可以根據需要執行規則，並加以修改。
 
-## <a name="required-permissions"></a>必要的權限
+## <a name="required-permissions"></a>必要權限
 
 若要建立或管理自訂的偵測， [您的角色](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) 必須具有「 **管理安全性設定** 」許可權。
 

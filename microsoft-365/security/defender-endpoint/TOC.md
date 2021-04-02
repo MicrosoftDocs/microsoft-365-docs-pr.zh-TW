@@ -145,6 +145,7 @@
 #### [疑難排解]()
 ##### [安裝問題的疑難排解](mac-support-install.md)
 ##### [為績效問題疑難排解](mac-support-perf.md)
+##### [為雲端連線能力疑難排解](troubleshoot-cloud-connect-mdemac.md)
 ##### [為核心擴充功能問題疑難排解](mac-support-kext.md)
 ##### [為授權問題疑難排解](mac-support-license.md)
 
@@ -586,6 +587,7 @@
 #### [為攻擊面縮小問題疑難排解]()
 ##### [網路保護](troubleshoot-np.md)
 ##### [受攻擊面縮小規則](troubleshoot-asr.md)
+##### [移轉至攻擊面縮小規則](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
 # [適用於 Office 365 的 Defender](../office-365-security/overview.md)

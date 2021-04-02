@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 端點資料外洩防護可擴充檔案活動的監視以及這些檔案到端點的保護動作。 在 Microsoft 365 合規性中心解決方案中可看到檔案 '
-ms.openlocfilehash: d4a3fef03322912bf169cd195984a17d8dfe3b17
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5aaed57574f1ecabdf28442b30dcd42677243df1
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907047"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445273"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>深入了解 Microsoft 365 端點資料外洩防護
 
@@ -36,7 +36,7 @@ ms.locfileid: "50907047"
 
 Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用者會在執行 Windows 10 的裝置上透過這些活動使用敏感度專案。 
 
-|活動 |描述  | 可稽核的/可限制的|
+|活動 |描述  | 可稽核/可限制|
 |---------|---------|---------|
 |上傳到雲端服務，或透過不允許的瀏覽器存取    | 使用者嘗試將項目上載到受限服務域或透過瀏覽器存取項目時偵測。  如果他們使用的瀏覽器在 DLP 中列為不允許使用的瀏覽器，則上載活動將被封鎖，使用者將被重新導向到使用Edge Chromium。 然後，Edge Chromium 將基於 DLP 原則設定允許或封鎖上載或存取         |可稽核與可限制|
 |複製到其他應用程式    |使用者嘗試從受保護項目複製資訊，然後將其貼上到另一個應用程式、流程或項目中時偵測。 此活動不會偵測到在同一應用程式、流程或項目中複製和貼上資訊。         | 可稽核與可限制|
@@ -67,7 +67,7 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 - .h 檔案
 - .java 檔案
  
-根據預設，端點 DLP 會稽核這些檔案類型的活動（即使沒有相符原則）。 如果您只想要從相符原則監控資料，您可以關閉端點 DLP 全域設定中的 **[一律稽核裝置的檔案活動]**。 無論如何，Word、PowerPoint、Excel、PDF 和 .csv 檔案中的相符活動都將一律受到稽核。
+根據預設，端點 DLP 會稽核這些檔案類型的活動（即使沒有相符原則）。 如果您只想要從相符原則監控資料，您可以關閉端點 DLP 全域設定中的 **[一律稽核裝置的檔案活動]**。 如果已開啟此設定，則會持續稽核任何 Word、PowerPoint、Excel、PDF 和 .csv 檔案上的活動，即使裝置未由任何原則為鎖定亦然。
 
 [端點 DLP] 可監視基於 MIME 類型的活動，因此即使副檔名變更，也能截取活動。 
 
@@ -102,15 +102,15 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 
 ### <a name="viewing-endpoint-dlp-data"></a>查看端點 DLP 資料
 
-
-
 您可以移至 [DLP 警示管理儀表板](dlp-configure-view-alerts-policies.md)，檢視與在端點裝置上強制執行的 DLP 原則相關的警示。
 
-![警示資訊](../media/Alert-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![警示資訊](../media/Alert-info-1.png)
 
 您還可以在同一個儀表板中檢視具有豐富中繼資料的關聯事件的詳細資訊
 
-![活動資訊](../media/Event-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![事件資訊](../media/Event-info-1.png)
 
 當裝置登入時，在您設定並部署任何被裝置視為位置的 DLP 原則之前，稽核活動的相關資訊便會導入 [活動總管]。
 

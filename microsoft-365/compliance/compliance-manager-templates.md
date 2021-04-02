@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何使用和管理範本，以在 Microsoft 合規性管理員中建立評估。 使用格式化的 Excel 檔案建立及修改範本。
-ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922783"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499025"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>在合規性管理員中使用評估範本
 
@@ -38,17 +38,17 @@ ms.locfileid: "50922783"
 
 #### <a name="included-and-premium-templates"></a>包含和精品範本
 
-可供使用的範本是根據您組織的授權協定 ([查看授權詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)) 。 範本有兩種類別：包括和特優。
+可供使用的範本是根據您組織的授權協定 ([查看授權詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)) 。 範本有兩種類別：包括和特優。
 
 1. **包含的範本** 可做為組織的授權合約的一部分使用。
-2. 您必須購買 **特優範本**，才能建立評估。 購買後，您可以視需要建立來自範本的評估數目。
+2. 您必須購買 **特優範本**，才能建立評估。 購買後，您可以視需要建立來自範本的評估數目。 [瞭解您可以如何購買精品範本](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
 
 #### <a name="active-and-inactive-templates"></a>使用中和非使用中範本
 
 範本會顯示啟用狀態為 [使用中] 或 [非使用中]：
 
 - **當您** 從該範本建立評估之後，就會將範本視為作用中。
-- 如果您的組織未使用範本做為評估的架構，則會將範本視為 **非** 使用中。
+- 如果您的組織未將範本用於評估，便會將其視為 **非** 使用中。
 
 當您購買高階範本並從中建立評估時，該範本會在一年中使用。 除非您取消更新，否則您的購買將會自動更新。
 
@@ -60,7 +60,7 @@ ms.locfileid: "50922783"
 
 如果計數器顯示5/2，這表示您的組織超出其限制，需要購買使用中的高級範本3。
 
-如需詳細資訊，請參閱 [合規性管理員授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 。
+如需詳細資訊，請參閱 [合規性管理員授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) 。
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>從 [評估範本] 頁面查看及管理範本
 

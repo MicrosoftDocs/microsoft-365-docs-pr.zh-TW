@@ -90,7 +90,7 @@
           items:
             - name: 概觀
               href: defender/get-started.md
-            - name: 開啟 Microsoft 威脅防護
+            - name: 開啟 Microsoft 365 Defender
               href: defender/m365d-enable.md
             - name: 部署支援服務
               href: defender/deploy-supported-services.md
@@ -140,6 +140,12 @@
                       href: defender/investigate-users.md
                 - name: 取得電子郵件通知
                   href: defender/get-incident-notifications.md
+            - name: Microsoft 威脅專家
+              items:
+                - name: Microsoft 威脅專家概觀
+                  href: mtp/microsoft-threat-experts.md
+                - name: 設定和管理 Microsoft 威脅專家功能
+                  href: mtp/configure-microsoft-threat-experts.md
             - name: 自動調查及回應
               items:
                 - name: 自動調查及回應概觀
@@ -422,7 +428,7 @@
             - name: 預設安全性
               href: ./office-365-security/secure-by-default.md
             - name: 在適用於 Office 365 的 Microsoft Defender 中設定防網路釣魚原則
-              href: ./office-365-security/configure-atp-anti-phishing-policies.md
+              href: ./office-365-security/configure-mdo-anti-phishing-policies.md
             - name: 設定反惡意程式碼原則
               href: ./office-365-security/configure-anti-malware-policies.md
             - name: 設定反垃圾郵件原則

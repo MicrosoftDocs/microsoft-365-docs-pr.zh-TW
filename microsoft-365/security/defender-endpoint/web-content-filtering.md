@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 16f0d96b75ec7035ca133f75a83df1f284ee5c4b
-ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
+ms.openlocfilehash: c5f44b4ab8354330ec9701261e8fb0dcc2e9fe52
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51484741"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499968"
 ---
 # <a name="web-content-filtering"></a>Web 內容篩選
 
@@ -56,7 +56,7 @@ Web 內容篩選可在主要網頁瀏覽器上使用，且由 Windows Defender S
 
 為了獲得更友好的使用者流覽體驗，請考慮使用 Microsoft Edge。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 在嘗試此功能之前，請確定您有下列需求：
 
