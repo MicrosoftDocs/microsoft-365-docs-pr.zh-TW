@@ -2,8 +2,8 @@
 title: 以來賓身分加入團隊
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,31 +20,31 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在 Microsoft 小組中以來賓的身分加入團隊。
-ms.openlocfilehash: 51f287361877cb0b427a38c48683c064bda99126
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 9e60882907021c11d906ce9cd778a0f1eef32beb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603957"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578852"
 ---
-# <a name="join-a-team-as-a-guest"></a><span data-ttu-id="fa48f-103">以來賓身分加入團隊</span><span class="sxs-lookup"><span data-stu-id="fa48f-103">Join a team as a guest</span></span>
+# <a name="join-a-team-as-a-guest"></a><span data-ttu-id="249b7-103">以來賓身分加入團隊</span><span class="sxs-lookup"><span data-stu-id="249b7-103">Join a team as a guest</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys?autoplay=false]
 
-## <a name="try-it"></a><span data-ttu-id="fa48f-104">試試看吧！</span><span class="sxs-lookup"><span data-stu-id="fa48f-104">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="249b7-104">試試看吧！</span><span class="sxs-lookup"><span data-stu-id="249b7-104">Try it!</span></span>
 
-<span data-ttu-id="fa48f-105">如果您收到加入小組的 Microsoft 小組邀請，請執行一些步驟來接受邀請。</span><span class="sxs-lookup"><span data-stu-id="fa48f-105">If you receive a Microsoft Teams invitation to join a team, there are a couple of steps to accept the invitation.</span></span>
+<span data-ttu-id="249b7-105">如果您收到加入小組的 Microsoft 小組邀請，請執行一些步驟來接受邀請。</span><span class="sxs-lookup"><span data-stu-id="249b7-105">If you receive a Microsoft Teams invitation to join a team, there are a couple of steps to accept the invitation.</span></span>
 
-1. <span data-ttu-id="fa48f-106">開啟電子郵件邀請，然後選取 [  **開啟 Microsoft 小組**]。</span><span class="sxs-lookup"><span data-stu-id="fa48f-106">Open the email invitation, and select  **Open Microsoft Teams**.</span></span> <span data-ttu-id="fa48f-107">如果您沒有看到邀請，請檢查您的垃圾郵件資料夾。</span><span class="sxs-lookup"><span data-stu-id="fa48f-107">If you don't see the invitation, check your junk or spam folder.</span></span>
-  1. <span data-ttu-id="fa48f-108">如果您的電子郵件地址先前未用來建立 Microsoft 帳戶，則您必須建立一個。</span><span class="sxs-lookup"><span data-stu-id="fa48f-108">If your email address has not previously been used to create a Microsoft account, you'll need to create one.</span></span>
+1. <span data-ttu-id="249b7-106">開啟電子郵件邀請，然後選取 [  **開啟 Microsoft 小組**]。</span><span class="sxs-lookup"><span data-stu-id="249b7-106">Open the email invitation, and select  **Open Microsoft Teams**.</span></span> <span data-ttu-id="249b7-107">如果您沒有看到邀請，請檢查您的垃圾郵件資料夾。</span><span class="sxs-lookup"><span data-stu-id="249b7-107">If you don't see the invitation, check your junk or spam folder.</span></span>
+  1. <span data-ttu-id="249b7-108">如果您的電子郵件地址先前未用來建立 Microsoft 帳戶，則您必須建立一個。</span><span class="sxs-lookup"><span data-stu-id="249b7-108">If your email address has not previously been used to create a Microsoft account, you'll need to create one.</span></span>
 
-     <span data-ttu-id="fa48f-109">在 [  **建立帳戶**  ] 對話方塊中，選取  **[下一步** ]，建立密碼，然後選取  **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="fa48f-109">On the  **Create account**  dialog, select  **Next** , create a password, and select  **Next**.</span></span>
-  1. <span data-ttu-id="fa48f-110">若要驗證您的電子郵件地址，請開啟驗證電子郵件，然後複製安全性代碼。</span><span class="sxs-lookup"><span data-stu-id="fa48f-110">To verify your email address, open the verification email, and copy the security code.</span></span>
-  1. <span data-ttu-id="fa48f-111">在 [**驗證電子郵件**] 對話方塊中輸入您的安全性代碼，選取 **[下一步]** ，在 [**輸入您看到的字元**] 列中輸入 CAPTCHA，選取 **[下一步]** ，然後 **接受**</span><span class="sxs-lookup"><span data-stu-id="fa48f-111">Enter your security code in the  **Verify email**  dialog, select  **Next** , enter the CAPTCHA in the  **Enter the characters you see**  line, select  **Next** , then  **Accept**.</span></span>
-1. <span data-ttu-id="fa48f-112">如果您不想要下載 Microsoft 團隊應用程式，請選取 [  **使用 web 應用程式**]。</span><span class="sxs-lookup"><span data-stu-id="fa48f-112">If you don't want to download the Microsoft Teams app, select  **Use the web app instead**.</span></span>
-1. <span data-ttu-id="fa48f-113">在 [小組 web  **app] 中**  ，您可以查看或回復文章，或建立您自己的文章，然後選取 [檔案] 索引標籤，以查看或編輯小組檔。</span><span class="sxs-lookup"><span data-stu-id="fa48f-113">In the Teams web app you can view or reply to posts, or create your own posts, and select  **Files**  tab to view or edit team documents.</span></span>
+     <span data-ttu-id="249b7-109">在 [  **建立帳戶**  ] 對話方塊中，選取  **[下一步** ]，建立密碼，然後選取  **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="249b7-109">On the  **Create account**  dialog, select  **Next** , create a password, and select  **Next**.</span></span>
+  1. <span data-ttu-id="249b7-110">若要驗證您的電子郵件地址，請開啟驗證電子郵件，然後複製安全性代碼。</span><span class="sxs-lookup"><span data-stu-id="249b7-110">To verify your email address, open the verification email, and copy the security code.</span></span>
+  1. <span data-ttu-id="249b7-111">在 [**驗證電子郵件**] 對話方塊中輸入您的安全性代碼，選取 **[下一步]** ，在 [**輸入您看到的字元**] 列中輸入 CAPTCHA，選取 **[下一步]** ，然後 **接受**</span><span class="sxs-lookup"><span data-stu-id="249b7-111">Enter your security code in the  **Verify email**  dialog, select  **Next** , enter the CAPTCHA in the  **Enter the characters you see**  line, select  **Next** , then  **Accept**.</span></span>
+1. <span data-ttu-id="249b7-112">如果您不想要下載 Microsoft 團隊應用程式，請選取 [  **使用 web 應用程式**]。</span><span class="sxs-lookup"><span data-stu-id="249b7-112">If you don't want to download the Microsoft Teams app, select  **Use the web app instead**.</span></span>
+1. <span data-ttu-id="249b7-113">在 [小組 web  **app] 中**  ，您可以查看或回復文章，或建立您自己的文章，然後選取 [檔案] 索引標籤，以查看或編輯小組檔。</span><span class="sxs-lookup"><span data-stu-id="249b7-113">In the Teams web app you can view or reply to posts, or create your own posts, and select  **Files**  tab to view or edit team documents.</span></span>
 
-    <span data-ttu-id="fa48f-114">如果您已在組織中使用「小組」應用程式，加入團隊為來賓是很簡單的工作。</span><span class="sxs-lookup"><span data-stu-id="fa48f-114">If you already use the Teams app in your organization joining a team as a guest is a lot simpler.</span></span>
+    <span data-ttu-id="249b7-114">如果您已在組織中使用「小組」應用程式，加入團隊為來賓是很簡單的工作。</span><span class="sxs-lookup"><span data-stu-id="249b7-114">If you already use the Teams app in your organization joining a team as a guest is a lot simpler.</span></span>
 
-1. <span data-ttu-id="fa48f-115">只需開啟「Microsoft 團隊」應用程式，然後選擇  **[是]**  切換至受邀的團隊。</span><span class="sxs-lookup"><span data-stu-id="fa48f-115">Just open Microsoft Teams app and choose  **Yes**  to switch to the team you are invited to.</span></span>  <span data-ttu-id="fa48f-116">現在，您可以在團隊中的專案上進行共同作業。</span><span class="sxs-lookup"><span data-stu-id="fa48f-116">Now you can collaborate on the project in Teams.</span></span>
-2. <span data-ttu-id="fa48f-117">若要切換回公司的小組，請從  **組織**  下拉式清單中選取。</span><span class="sxs-lookup"><span data-stu-id="fa48f-117">To switch back to your company's team, select it from the  **Organization**  drop-down.</span></span>
+1. <span data-ttu-id="249b7-115">只需開啟「Microsoft 團隊」應用程式，然後選擇  **[是]**  切換至受邀的團隊。</span><span class="sxs-lookup"><span data-stu-id="249b7-115">Just open Microsoft Teams app and choose  **Yes**  to switch to the team you are invited to.</span></span>  <span data-ttu-id="249b7-116">現在，您可以在團隊中的專案上進行共同作業。</span><span class="sxs-lookup"><span data-stu-id="249b7-116">Now you can collaborate on the project in Teams.</span></span>
+2. <span data-ttu-id="249b7-117">若要切換回公司的小組，請從  **組織**  下拉式清單中選取。</span><span class="sxs-lookup"><span data-stu-id="249b7-117">To switch back to your company's team, select it from the  **Organization**  drop-down.</span></span>

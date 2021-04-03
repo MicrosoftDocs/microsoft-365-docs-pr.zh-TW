@@ -21,25 +21,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解如何變更您為商務版訂閱收費的頻率。
-ms.openlocfilehash: ae3e3b4d0231fc5992215d243e141fb643d13626
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7d2f60e25611025e5b06d4e78555d59c486626d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911887"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579791"
 ---
-# <a name="change-your-billing-frequency"></a><span data-ttu-id="c93bf-103">變更您的帳單頻率</span><span class="sxs-lookup"><span data-stu-id="c93bf-103">Change your billing frequency</span></span>
+# <a name="change-your-billing-frequency"></a><span data-ttu-id="c619b-103">變更您的帳單頻率</span><span class="sxs-lookup"><span data-stu-id="c619b-103">Change your billing frequency</span></span>
 
-::: moniker range="o365-21vianet"
+<span data-ttu-id="c619b-104">當您購買訂閱時，請選擇每月或每年帳單。</span><span class="sxs-lookup"><span data-stu-id="c619b-104">When you buy a subscription, you choose monthly or annual billing.</span></span> <span data-ttu-id="c619b-105">若要變更您為訂閱收費的頻率，請使用下列步驟。</span><span class="sxs-lookup"><span data-stu-id="c619b-105">To change how often you are billed for a subscription, use the following steps.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="c93bf-104">系統管理中心正在變更。</span><span class="sxs-lookup"><span data-stu-id="c93bf-104">The admin center is changing.</span></span> <span data-ttu-id="c93bf-105">如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。</span><span class="sxs-lookup"><span data-stu-id="c93bf-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).</span></span>
-
-::: moniker-end
-
-<span data-ttu-id="c93bf-106">當您購買訂閱時，請選擇每月或每年帳單。</span><span class="sxs-lookup"><span data-stu-id="c93bf-106">When you buy a subscription, you choose monthly or annual billing.</span></span> <span data-ttu-id="c93bf-107">若要變更您為訂閱收費的頻率，請使用下列步驟。</span><span class="sxs-lookup"><span data-stu-id="c93bf-107">To change how often you are billed for a subscription, use the following steps.</span></span>
-
-1. <span data-ttu-id="c93bf-108">在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="c93bf-108">In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
-2. <span data-ttu-id="c93bf-109">在 **[產品]** 索引標籤上，選擇您想要變更的訂閱。</span><span class="sxs-lookup"><span data-stu-id="c93bf-109">On the **Products** tab, select the subscription that you want to change.</span></span>
-3. <span data-ttu-id="c93bf-110">在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **編輯帳單頻率**]。</span><span class="sxs-lookup"><span data-stu-id="c93bf-110">On the subscription details page, in the **Subscription and payment settings** section, select **Edit billing frequency**.</span></span>
-4. <span data-ttu-id="c93bf-111">在 [ **編輯計費頻率** ] 窗格中，選擇您要計費的頻率選項，然後選取 [ **變更**]。</span><span class="sxs-lookup"><span data-stu-id="c93bf-111">In the **Edit billing frequency** pane, choose the option for how often you want to be billed, then select **Change**.</span></span>
+1. <span data-ttu-id="c619b-106">在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="c619b-106">In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+2. <span data-ttu-id="c619b-107">在 **[產品]** 索引標籤上，選擇您想要變更的訂閱。</span><span class="sxs-lookup"><span data-stu-id="c619b-107">On the **Products** tab, select the subscription that you want to change.</span></span>
+3. <span data-ttu-id="c619b-108">在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **編輯帳單頻率**]。</span><span class="sxs-lookup"><span data-stu-id="c619b-108">On the subscription details page, in the **Subscription and payment settings** section, select **Edit billing frequency**.</span></span>
+4. <span data-ttu-id="c619b-109">在 [ **編輯計費頻率** ] 窗格中，選擇您要計費的頻率選項，然後選取 [ **變更**]。</span><span class="sxs-lookup"><span data-stu-id="c619b-109">In the **Edit billing frequency** pane, choose the option for how often you want to be billed, then select **Change**.</span></span>
