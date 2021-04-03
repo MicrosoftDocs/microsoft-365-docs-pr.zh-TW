@@ -2,8 +2,8 @@
 title: 系統管理中心的 Microsoft 365 報告-SharePoint 網站使用狀況
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得「SharePoint 網站使用量」報告，瞭解使用者在 SharePoint 網站中儲存的檔案數目、使用的數目，以及使用的總儲存空間。
-ms.openlocfilehash: 403ebfd75fca5ba5777832140155bb09734db3c7
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: cfae7e1fc02d769328af46f75fdafc143467630b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233505"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579503"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>系統管理中心的 Microsoft 365 報告-SharePoint 網站使用狀況
 
-做為 Microsoft 365 系統管理員，[ **報告** ] 儀表板會顯示您組織中各種產品的活動概況。 此功能可讓您更深入解析各項產品的特定活動。 例如，您可以從 SharePoint 中取得您所取得之價值的高層級視圖、使用者儲存在 SharePoint 網站中的檔案總數、使用的檔案數目，以及所有這些網站所使用的儲存空間。 然後，您可以深入查看「SharePoint 網站流量」報告，以瞭解所有網站的趨勢及每個網站層級的詳細資料。 
+做為 Microsoft 365 系統管理員，[ **報告** ] 儀表板會顯示您組織中各種產品的活動概況。 此功能可讓您更深入解析各項產品的特定活動。 例如，您可以從 SharePoint 中取得您所取得之價值的高層級視圖、使用者儲存在 SharePoint 網站中的檔案總數、使用的檔案數目，以及所有這些網站所使用的儲存空間。 接著，您可以深入 SharePoint 網站流量報告來了解使用趨勢，以及所有網站每個網站層級的詳細資料。 
   
 > [!NOTE]
 > 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。
@@ -53,7 +53,7 @@ ms.locfileid: "50233505"
 |:-----|:-----|
 |**計量**|**定義**|
 |網站 URL  <br/> |網站的完整 URL。 <br/> |
-|刪除  <br/> |網站的刪除狀態。 網站標示為已刪除至少需要7天。  <br/> |
+|已刪除  <br/> |網站的刪除狀態。 網站標示為已刪除至少需要7天。  <br/> |
 |網站擁有人  <br/> |網站主要擁有人的使用者名稱。   <br/> |
 |網站擁有者主要名稱  <br/> |網站擁有者的電子郵件地址。 <br/> |
 |上次活動日期 (UTC)   <br/> | 上次偵測到檔案活動的日期，或在網站上查看頁面。  <br/> |

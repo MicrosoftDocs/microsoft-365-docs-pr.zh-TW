@@ -2,8 +2,8 @@
 title: Admin center 中的 Microsoft 365 報告-Business activity OneDrive
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得組織的 OneDrive 使用方式報告，並瞭解每個 OneDrive 使用者的活動、共用的檔案數目及儲存使用量。
-ms.openlocfilehash: e83ec835f0aa4a453f14a44d9582edcfd5aa6433
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7b6173b3a86187e4612aaaa51bafbfbe965a6cfa
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649767"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579527"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Admin center 中的 Microsoft 365 報告-Business activity OneDrive
 
@@ -59,7 +59,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |同步處理的檔案  <br/> |已從使用者的本機裝置同步處理至 OneDrive 帳戶的檔案數目。 <br/> |
 |內部共用的檔案  <br/> | 與組織內的使用者共用的檔案數目，或與可能包含外部使用者)  (的群組中的使用者共用的檔案數目。  <br/> |
 |外部共用檔案  <br/> |與組織外的使用者共用的檔案數目。 <br/>|
-|刪除  <br/> | 這表示已移除使用者的授權。  <br/> 附注：只要使用者在選取的時段內授權，則已刪除之使用者的活動仍會顯示在報告中。 [ **已刪除** ] 資料行可協助您注意使用者可能不再使用中，但會對報表中的資料提供貢獻。  <br/> |
+|已刪除  <br/> | 這表示已移除使用者的授權。  <br/> 附注：只要使用者在選取的時段內授權，則已刪除之使用者的活動仍會顯示在報告中。 [ **已刪除** ] 資料行可協助您注意使用者可能不再使用中，但會對報表中的資料提供貢獻。  <br/> |
 |刪除日期  <br/> |移除使用者授權的日期。 <br/>|
 |指派的產品  <br/> |授權給使用者的 Microsoft 365 產品。|
 |||

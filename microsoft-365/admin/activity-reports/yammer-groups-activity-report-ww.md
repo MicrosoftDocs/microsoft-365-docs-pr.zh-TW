@@ -2,8 +2,8 @@
 title: Admin center 中的 Microsoft 365 報告-Yammer 群組活動報告
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得 Yammer 群組活動報告，以瞭解您的組織中所建立及使用之 Yammer 群組的數目，以及其活動。
-ms.openlocfilehash: db2136e049e448b1727dc4612256288da2c64402
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 3d6d5b140c34855e50660df1d5a074bb8093ebac
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779293"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579443"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Admin center 中的 Microsoft 365 報告-Yammer 群組活動報告
 
@@ -54,7 +54,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |**計量**|**定義**|
 |群組名稱  <br/> |群組的名稱。 <br/> |
 |群組管理員  <br/> |群組管理員或擁有者的名稱。  <br/> |
-|刪除  <br/> |已刪除 Yammer 群組的數目。 如果群組已刪除，但報告期間此群組有活動，那麼它會出現在格線中並被標幟為 True。  <br/> |
+|已刪除  <br/> |已刪除 Yammer 群組的數目。 如果群組已刪除，但報告期間此群組有活動，那麼它會出現在格線中並被標幟為 True。  <br/> |
 |類型  <br/> |群組的類型為 public 或 private。 <br/> |
 |連接到 Office 365  <br/> |會指出 Yammer 群組是否也是 Microsoft 365 群組。 <br/> |
 |上次活動日期 (UTC)   <br/> | 最近一天已閱讀郵件、已由群組傳送或贊的日期。  <br/> |

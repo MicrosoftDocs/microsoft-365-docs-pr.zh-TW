@@ -2,8 +2,8 @@
 title: 新增、變更或刪除訂閱顧問合作夥伴
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 瞭解如何在 Microsoft 365 購買時，新增訂閱顧問合作夥伴作為記錄的合作夥伴，變更合作夥伴或從訂閱刪除合作夥伴。
-ms.openlocfilehash: 9734ee5f23af24ec701b8ae1fbd448d6bedb63fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914927"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579227"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>新增、變更或刪除訂閱顧問合作夥伴
 
@@ -102,7 +102,7 @@ ms.locfileid: "50914927"
 1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取您要編輯的訂閱。
 3. 在 [訂閱詳細資料] 頁面的 [ **合作夥伴資訊**] 下，輸入 **夥伴網路識別碼**。 您可以詢問合作夥伴，以取得協力廠商的 Microsoft 合作夥伴網路識別碼。
-4. 選取 **新增**。
+4. 選取 [新增]。
 
 ::: moniker-end
 
@@ -136,7 +136,7 @@ ms.locfileid: "50914927"
 1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [訂閱詳細資料] 頁面的 [ **合作夥伴資訊**] 底下，選取 [ **移除**]。
 3. 輸入新合作夥伴的 **Microsoft 合作夥伴網路識別碼** 。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
-4. 選取 **新增**。
+4. 選取 [新增]。
   
 ::: moniker-end
 

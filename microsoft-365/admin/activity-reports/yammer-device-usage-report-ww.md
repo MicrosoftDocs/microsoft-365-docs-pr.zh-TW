@@ -2,8 +2,8 @@
 title: Admin center 中的 Microsoft 365 報告-Yammer 裝置使用方式報告
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得 Yammer 裝置使用方式報告，以瞭解您的使用者在使用 Yammer 的裝置。
-ms.openlocfilehash: fae76e9ef769248217140c059004efc7ad330928
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 01749c21dd0f8355556718ee9179244fb250c97a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779331"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579467"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Admin center 中的 Microsoft 365 報告-Yammer 裝置使用方式報告
 
@@ -58,7 +58,7 @@ Yammer 裝置使用量報告提供您的使用者在哪些裝置上使用 Yammer
 |使用者狀態  <br/> |三個值之一： [作用中]、[已刪除] 或 [已擱置]。 這些報告顯示作用中、已停權及已刪除的使用者。 報告不會反映出擱置中使用者，因為擱置中的使用者不能張貼訊息、閱讀訊息或對訊息按讚。   <br/> |
 |狀態變更日期 (UTC)   <br/> |在 Yammer 中變更使用者狀態的日期。  <br/> |
 |上次活動日期 (UTC)   <br/> |使用者參與 Yammer 活動的最後一個日期 (UTC) 。  <br/> |
-|網址  <br/> |會指出使用者是否已在網頁上使用 Yammer。  <br/> |
+|網頁版  <br/> |會指出使用者是否已在網頁上使用 Yammer。  <br/> |
 |Windows phone  <br/> | 會指出使用者是否已在 Windows phone 上使用 Yammer。  <br/> |
 |Android 手機  <br/> |會指出使用者是否已在 Android 手機上使用 Yammer。 <br/>|
 |Iphone <br/> | 會指出使用者是否已在 iPhone 上使用 Yammer。  <br/> |

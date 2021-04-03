@@ -2,8 +2,8 @@
 title: 系統管理中心的 Microsoft 365 報告-Business 使用 OneDrive
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '取得商務使用狀況報告的 OneDrive，以瞭解整個組織所使用的檔案和儲存總數。 '
-ms.openlocfilehash: 3855c7d06d202ee4d0590fcf5b8ca758d8120133
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 54a3b1e041ee6155b5ce89d6cd5bc73233d1f69b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649766"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579539"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>系統管理中心的 Microsoft 365 報告-Business 使用 OneDrive
 
@@ -54,7 +54,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |:-----|:-----|
 |**計量**|**定義**|
 |URL  <br/> |使用者的 OneDrive 網址。 <br/> |
-|刪除  <br/> |OneDrive 的刪除狀態。 帳戶至少要 7 天才會標示為已刪除。  <br/> |
+|已刪除  <br/> |OneDrive 的刪除狀態。 帳戶至少要 7 天才會標示為已刪除。  <br/> |
 |擁有者  <br/> |OneDrive 主要系統管理員的使用者名稱。   <br/> |
 |擁有者主要名稱  <br/> |OneDrive 擁有者的電子郵件地址。 <br/> |
 |上次活動日期 (UTC)   <br/> | 在 OneDrive 中執行檔案活動的最晚日期。 如果 OneDrive 最近沒有檔案活動，值將會是空白。  <br/> |

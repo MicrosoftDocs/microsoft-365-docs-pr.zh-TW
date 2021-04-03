@@ -2,8 +2,8 @@
 title: 建立並使用範本來新增使用者
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以建立並使用範本，以在您新增多個使用者時節省時間和標準化設定。
-ms.openlocfilehash: aef5085da603c38b37544b76c5336c9bfe4edd24
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123414"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579383"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>建立並使用範本來新增使用者
 

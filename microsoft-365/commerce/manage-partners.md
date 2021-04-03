@@ -15,21 +15,14 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 瞭解如何與 Microsoft 認證的解決方案提供者合作，) 為組織或學校購買及管理產品及服務的 (合作夥伴。
-ms.openlocfilehash: 3297b2322983eabb793116a450a618b3a62a5a9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911395"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579731"
 ---
 # <a name="manage-partner-relationships"></a>管理合作夥伴關係
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 您可以使用 Microsoft 認證的解決方案提供者 (合作夥伴) 購買及管理組織或學校的產品和服務。 有幾個步驟可讓您設定相關專案。
 
@@ -37,7 +30,7 @@ ms.locfileid: "50911395"
 2. 合作夥伴將電子郵件要求傳送給客戶，以建立合作夥伴關係。
 3. 客戶接受 Microsoft 365 系統管理中心的邀請，並開始與合作夥伴合作。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 您必須是全域或計費系統管理員，才可執行這些步驟。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。
 
@@ -45,7 +38,7 @@ ms.locfileid: "50911395"
 
 有幾種方式可以讓合作夥伴與您搭配運作。 根據您的既定業務需求，他們會在傳送要求以與您合作時，選擇其中一種類型。
 
-| 合作夥伴類型 | 描述 |
+| 合作夥伴類型 | 說明 |
 | ------ | ------------------- |
 | 轉銷商 | 向您的組織或學校銷售 Microsoft 產品的合作夥伴。 |
 | 委派的管理員 | 可管理組織或學校產品及服務的合作夥伴。 在 Azure Active Directory (AD) 中，該夥伴是您租使用者的全域管理員。 此角色可讓他們管理服務，例如建立使用者帳戶、指派及管理授權，以及密碼重設。 |

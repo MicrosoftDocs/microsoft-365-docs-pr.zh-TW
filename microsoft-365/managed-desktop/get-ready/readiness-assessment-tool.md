@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0311450386f3b7c9f950276340901daacc06b2a8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+audience: Admin
+ms.openlocfilehash: caf9274284548a179e088131930ae832c098b521
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453931"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579395"
 ---
 # <a name="readiness-assessment-tools"></a>準備工作評估工具
 
@@ -34,7 +35,7 @@ ms.locfileid: "50453931"
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
-|支票  |描述  |
+|支票  |說明  |
 |---------|---------|
 |Autopilot 部署設定檔     | 驗證 Autopilot 部署設定檔的指派是否不會套用到所有的裝置 (設定檔 *不應該指派* 給任何 Microsoft 受管理的桌面裝置。 )        |
 |憑證連接器     | 檢查憑證連接器的狀態，以確保它們為作用中狀態。   |
@@ -56,7 +57,7 @@ ms.locfileid: "50453931"
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 設定
 
-|支票  |描述  |
+|支票  |說明  |
 |---------|---------|
 |企業狀態漫遊的「Ad hoc」訂閱     | 建議您如何檢查是否 (如果設定為 "false" ) 設定為 "false" 可使企業狀態漫遊無法正常運作  |
 |企業狀態漫遊     | 建議如何檢查是否已啟用企業狀態漫遊       |
@@ -71,7 +72,7 @@ ms.locfileid: "50453931"
 
 ## <a name="microsoft-365-apps-for-enterprise-settings"></a>Microsoft 365 應用程式的企業版設定
 
-|支票  |描述  |
+|支票  |說明  |
 |---------|---------|
 |商務用 OneDrive     | 檢查商務用 OneDrive 是否使用不支援的設定。        |
 
@@ -82,10 +83,22 @@ ms.locfileid: "50453931"
 |結果  |意義  |
 |---------|---------|
 |就緒     | 完成註冊之前，不需要執行任何動作。        |
-|諮詢    | 請遵循工具中的步驟，以取得註冊和使用者的最佳體驗。 您 *可以* 完成註冊，但是必須先修正這些問題，再部署第一個裝置。        |
+|公告    | 請遵循工具中的步驟，以取得註冊和使用者的最佳體驗。 您 *可以* 完成註冊，但是必須先修正這些問題，再部署第一個裝置。        |
 |未就緒 | 如果您未修正這些問題，*註冊將會失敗*。 請遵循工具中的步驟加以解決。        |
 |錯誤 | 您所使用的 Azure Active Director (AD) 角色，沒有足夠的許可權可執行這種檢查。 |
 
 ## <a name="after-enrollment"></a>註冊後
 
 在 Microsoft Managed Desktop 中完成註冊後，請記得回復並調整特定的 Intune 和 Azure AD 設定。 如需詳細資訊，請參閱 [在登記後調整設定](../get-started/conditional-access.md)。
+
+## <a name="steps-to-get-ready"></a>準備就緒的步驟
+
+1. 檢查 [Microsoft 受管理的桌面的必要條件](prerequisites.md)。
+2. 使用 [準備工作評估工具](readiness-assessment-tool.md)。  (本文) 
+3. [來賓帳戶的先決條件](guest-accounts.md)
+4. [Microsoft 受管理電腦的網路設定](network.md)
+5. [為 Microsoft 受管理的電腦準備認證和網路設定檔](certs-wifi-lan.md)
+6. [為 Microsoft 受管理的電腦準備備內部部署資源存取權](authentication.md)
+7. [Microsoft 受管理電腦中的應用程式](apps.md)
+8. [為 Microsoft 受管理的電腦準備對應磁碟機](mapped-drives.md)
+9. [為 Microsoft 受管理的電腦準備列印資源](printing.md)

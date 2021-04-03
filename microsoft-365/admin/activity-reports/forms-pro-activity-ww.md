@@ -2,8 +2,8 @@
 title: 系統管理中心的 Microsoft 365 報告-Dynamics 365 客戶語音活動
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用 Microsoft 365 系統管理中心的 [Microsoft 365 報告] 儀表板，取得 Microsoft Dynamics 365 客戶語音活動報告。
-ms.openlocfilehash: 0a854c7a89977a96e11d8ec28fd7789e8418c1cf
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 1647379216d5021ab3fa6b55f1c5f32f57cdac91
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988907"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579659"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>系統管理中心的 Microsoft 365 報告-Dynamics 365 客戶語音活動
 

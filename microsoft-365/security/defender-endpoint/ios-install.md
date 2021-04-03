@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7887f26cb8ca7e0e769249a10f008308149aaa42
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: c076a64b1e35978f09999b288b6849580df24972
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186686"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579695"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>為 iOS 部署 Microsoft Defender for Endpoint
 
@@ -38,7 +38,7 @@ ms.locfileid: "51186686"
 
 本主題說明如何在 Intune 公司入口網站註冊裝置上為 iOS 的端點部署 Defender。 如需 Intune 裝置註冊的詳細資訊，請參閱 [在 intune 中註冊 iOS/iPadOS 裝置](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 - 確定您可以存取 [Microsoft 端點管理員管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "51186686"
     > [!div class="mx-imgBorder"]
     > ![Microsoft 端點管理員系統管理員 Center1 的影像](images/ios-deploy-1.png)
 
-1. 在 [新增應用程式] 頁面上，按一下 [ **搜尋應用程式存放區** ]，然後在搜尋列中輸入 **Microsoft Defender ATP** 。 在 [搜尋結果] 區段中，按一下 [ *Microsoft DEFENDER ATP* ]，然後按一下 [ **選取**]。
+1. 在 [新增應用程式] 頁面上，按一下 [ **搜尋應用程式存放區** ]，然後在搜尋列中輸入 **Microsoft Defender 端點** 。 在 [搜尋結果] 區段中，按一下 [ *Microsoft Defender 端點* ]，然後按一下 [ **選取**]。
 
 1. 選取 [ **iOS 11.0** ] 做為最小作業系統。 查看應用程式的其餘資訊，然後按 **[下一步]**。
 

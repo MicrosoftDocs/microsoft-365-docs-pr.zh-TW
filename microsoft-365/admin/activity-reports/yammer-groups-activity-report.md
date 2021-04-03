@@ -2,8 +2,8 @@
 title: Admin center 中的 Microsoft 365 報告-Yammer 群組活動報告
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 94dd92ec-ea73-43c6-b51f-2a11fd78aa31
 description: 取得 Yammer 群組活動報告，以瞭解您的組織中所建立及使用之 Yammer 群組的數目，以及其活動。
-ms.openlocfilehash: 4e579fdf6a62dafc3f9a6b58d098d9094e62226b
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 7cd06c76b8a1a38eb7ebe1c45d099f7f554acdb3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779188"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579431"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Admin center 中的 Microsoft 365 報告-Yammer 群組活動報告
 
@@ -39,7 +39,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。
 
     
-2. 從 [ **選取報告** ] 下拉式清單中，選取 [ **Yammer** \> **群組活動** ]。
+2. 從 [ **選取報告** ] 下拉式清單中，選取 [ **Yammer** \> **群組活動**]。
   
 ## <a name="interpret-the-yammer-groups-activity-report"></a>解讀 Yammer 群組活動報告
 
@@ -52,8 +52,8 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |3.  <br/> |[ **群組** ] 視圖會顯示已存在的群組總數，以及已執行的「小組交談」活動數目。  <br/> |
 |4.  <br/> |[ **活動** ] 視圖會顯示您在群組中張貼、讀取和贊的「Yammer」郵件數目。  <br/> |
 |5.  <br/> | 在 [ **群組** ] 圖表上，Y 軸是總或使用中群組的計數。  <br/>  在 [ **活動** ] 圖表上，Y 軸是 Yammer 群組的指定活動計數。  <br/>  這三個圖表上的 X 軸都代表該特定報告的已選取日期範圍。  <br/> |
-|6.  <br/> |您可以選取圖例中的專案，以篩選您在圖表上看到的數列。 例如，在 [ **群組** ] 圖表中，選取 [ **總計** **] 或 [使用中的** 總數] 和 [作用中圖示]， ![ ](../../media/8eebd496-5955-4419-8d53-5f3ba1ad1c88.png) 以查看只與各項相關的資訊。   變更此選取項目並不會變更格線資料表中的資訊。  <br/> |
-|7.  <br/> | 所顯示的群組清單是在最長報告時間範圍 (180 天) 內的所有現有 (未被刪除的) 群組。活動的數量 (收到的訊息數) 會因日期選取範圍而有所不同。  <br/> 附注：您可能不會在欄中看到下列清單中的所有專案，直到您新增這些專案為止。<br/>**組名** 是群組的名稱。  <br/> **群組管理員** 是群組管理員或擁有者的名稱。  <br/> **Deleted** 是已刪除的 Yammer 群組數目。 如果群組已刪除，但報告期間此群組有活動，那麼它會出現在格線中並被標幟為 True。  <br/> **Type** 是 group、public 或 private 的類型。  <br/> **連接到 Office 365** 會指出 Yammer 群組是否也是 Microsoft 365 群組。  <br/> [ **上次活動日期** ] 是指由群組讀取、張貼或贊郵件的最近日期。  <br/> **Members** 是群組中的成員數目。  <br/> 「 **張貼** 」是在報表期間的 Yammer 群組中張貼的郵件數目。  <br/> **Read** 是在報告期間，Yammer 群組中讀取之交談的數目。  <br/> 「 **贊** 」是透過報告期間的 Yammer 群組中所贊的郵件數目。 <br/> **網路名稱** 是群組所屬之網路的完整名稱。 <br/>  如果貴組織的原則防止您檢視可識別之使用者資訊的報告，您可以變更所有這類報告的隱私權設定。 請參閱 [Microsoft 365 系統管理中心的活動報告中](activity-reports.md)的 [ **我要如何隱藏使用者層級詳細資料？** ] 區段。  <br/> |
+|6.  <br/> |您可以選取圖例中的專案，以篩選您在圖表上看到的數列。 例如，在 [**群組**] 圖表中，選取 [**總計** **] 或 [使用中的** 總數] 和 [作用中圖示]， ![ ](../../media/8eebd496-5955-4419-8d53-5f3ba1ad1c88.png) 以查看只與各項相關的資訊。   變更此選取項目並不會變更格線資料表中的資訊。  <br/> |
+|7.  <br/> | 所顯示的群組清單是在最長報告時間範圍 (180 天) 內的所有現有 (未被刪除的) 群組。活動的數量 (收到的訊息數) 會因日期選取範圍而有所不同。  <br/> 附注：您可能不會在欄中看到下列清單中的所有專案，直到您新增這些專案為止。<br/>**組名** 是群組的名稱。  <br/> **群組管理員** 是群組管理員或擁有者的名稱。  <br/> **Deleted** 是已刪除的 Yammer 群組數目。 如果群組已刪除，但報告期間此群組有活動，那麼它會出現在格線中並被標幟為 True。  <br/> **Type** 是 group、public 或 private 的類型。  <br/> **連接到 Office 365** 會指出 Yammer 群組是否也是 Microsoft 365 群組。  <br/> [**上次活動日期**] 是指由群組讀取、張貼或贊郵件的最近日期。  <br/> **Members** 是群組中的成員數目。  <br/> 「**張貼**」是在報表期間的 Yammer 群組中張貼的郵件數目。  <br/> **Read** 是在報告期間，Yammer 群組中讀取之交談的數目。  <br/> 「**贊**」是透過報告期間的 Yammer 群組中所贊的郵件數目。 <br/> **網路名稱** 是群組所屬之網路的完整名稱。 <br/>  如果貴組織的原則防止您檢視可識別之使用者資訊的報告，您可以變更所有這類報告的隱私權設定。 請參閱 [Microsoft 365 系統管理中心的活動報告中](activity-reports.md)的 [**我要如何隱藏使用者層級詳細資料？** ] 區段。  <br/> |
 |8.  <br/> |選取 [ **欄** ]，以新增或移除報告中的欄。  <br/> ![Yammer groups activity - choose columns](../../media/c56c807f-fbc0-4d37-8bd3-e779bd0606a7.png)|
 |9.  <br/> |您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。  <br/> |
 |||

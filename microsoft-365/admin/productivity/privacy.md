@@ -2,8 +2,8 @@
 title: Microsoft 生產力分數-隱私權
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 隱私權對生產力分數的保護方式。
-ms.openlocfilehash: b522c40cba746f3a4ede2404cf671607d62a3282
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 5b5997532ddcd1fdf43b4124f8e2d8183bb3d89e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406557"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579167"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>生產力分數的隱私權控制
 

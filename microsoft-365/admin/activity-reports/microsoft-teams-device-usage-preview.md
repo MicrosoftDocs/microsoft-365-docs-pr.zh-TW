@@ -2,8 +2,8 @@
 title: 系統管理中心的 microsoft 365 報告-Microsoft 團隊裝置使用量
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 報告取得 Microsoft 團隊應用程式使用方式報告，深入瞭解組織中所使用的 Microsoft 團隊應用程式。
-ms.openlocfilehash: 54219b060767193e711c839d25780dd3b4a618bf
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 096954ad246f3b10369dfbf683d04b6c81950b5e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233431"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579635"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>系統管理中心的 microsoft 365 報告-Microsoft 團隊裝置使用量
 
@@ -60,7 +60,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |Android 手機  <br/> | 如果使用者在適用于 Android 的團隊行動用戶端使用中，則為選取狀態。  <br/> |
 |Chrome 作業系統  <br/> |如果使用者是在 ChromeOS 電腦上的團隊桌面用戶端使用中，則選取此選項。|
 |Linux  <br/> | 如果使用者是在 Linux 電腦上的小組桌面用戶端中使用中，則選取此選項。  <br/> |
-|網址  <br/> |如果使用者是在裝置上的小組網頁用戶端使用中，則選取此選項。|
+|網頁版  <br/> |如果使用者是在裝置上的小組網頁用戶端使用中，則選取此選項。|
 |上次活動日期 (UTC)   <br/> |使用者參與小組活動的最後一個日期 (UTC) 。  <br/> |
 |已授權|如果使用者授權使用小組，則選取此選項。|
 |||

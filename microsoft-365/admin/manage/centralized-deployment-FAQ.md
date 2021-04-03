@@ -2,8 +2,8 @@
 title: 集中式部署常見問題集
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 系統管理中心，回顧有關集中式部署的常見問題解答。
-ms.openlocfilehash: 06e3b7973a209cdf40446c5a9511713d779373b8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 60d7a91da738803976b6823009450124d7b57814
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221832"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579299"
 ---
 # <a name="centralized-deployment-faq"></a>集中式部署常見問題集
 

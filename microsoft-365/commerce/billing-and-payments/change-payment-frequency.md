@@ -21,21 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解如何變更您為商務版訂閱收費的頻率。
-ms.openlocfilehash: ae3e3b4d0231fc5992215d243e141fb643d13626
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7d2f60e25611025e5b06d4e78555d59c486626d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911887"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579791"
 ---
 # <a name="change-your-billing-frequency"></a>變更您的帳單頻率
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 當您購買訂閱時，請選擇每月或每年帳單。 若要變更您為訂閱收費的頻率，請使用下列步驟。
 

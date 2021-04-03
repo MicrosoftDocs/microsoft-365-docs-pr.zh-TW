@@ -2,8 +2,8 @@
 title: Microsoft 生產力分數-會議
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 會議的詳細資料-人員體驗生產力分數。
-ms.openlocfilehash: 09b0682593c0e5a623e9b17712754c4bea2a6672
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: 803173fbbd8489802b3a3c9c11473918e0d7a858
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712540"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579179"
 ---
 # <a name="meetings--people-experiences"></a>會議–人員經驗
 

@@ -2,8 +2,8 @@
 title: 系統管理中心的 Microsoft 365 報告-表單活動
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用 Microsoft 365 系統管理中心的 [Microsoft 365 報告] 儀表板來取得 Microsoft Forms 活動報告。
-ms.openlocfilehash: 17d56e3974b877e15b81af5d4e195985c4985155
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: f4cd021003ad9d9bca4f986a33f49e62e2df1889
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988908"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579683"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>系統管理中心的 Microsoft 365 報告-表單活動
 

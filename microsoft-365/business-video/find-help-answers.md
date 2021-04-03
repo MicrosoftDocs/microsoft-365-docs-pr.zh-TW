@@ -2,8 +2,8 @@
 title: 尋找解答和說明
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何尋找 Microsoft 365 商務版的系統管理員說明。
-ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d16f3ece9782a33c3377e4a6bc2a93b29d54c1a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913631"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578900"
 ---
 # <a name="find-answers-and-help-for-admins"></a>尋找系統管理員的答案及協助
 

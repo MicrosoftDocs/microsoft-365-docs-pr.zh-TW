@@ -1,7 +1,7 @@
 ---
 title: Admin center 中的 microsoft 365 報告-Microsoft 365 群組
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: 取得「Microsoft 365 群組」報告，以瞭解群組及其活動。
-ms.openlocfilehash: 4a89f09f89e399905d0cb6927eca76c1242dfc62
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: fd3aa664b5a40bb5fffe0ed23e07ba6f1a5907c2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611903"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579563"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Admin center 中的 microsoft 365 報告-Microsoft 365 群組
 
@@ -50,7 +50,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |:-----|:-----|
 |**計量**|**定義**|
 |群組名稱  <br/> |群組的名稱。  <br/> |
-|刪除  <br/> |已刪除的群組數目。 如果群組已刪除，但報告期間此群組有活動，那麼它會出現在格線中並被標幟為 True。  <br/> |
+|已刪除  <br/> |已刪除的群組數目。 如果群組已刪除，但報告期間此群組有活動，那麼它會出現在格線中並被標幟為 True。  <br/> |
 |群組擁有者  <br/> |群組擁有者的名稱。  <br/> |
 |上次活動日期 (UTC)   <br/> |最近一天群組收到郵件的日期。 這是電子郵件交談、Yammer 或網站上發生之活動的上次日期。  <br/> |
 |類型  <br/> |群組的類型。 這可以是私人群組或公開群組。  <br/> |

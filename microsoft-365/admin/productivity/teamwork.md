@@ -2,8 +2,8 @@
 title: Microsoft 生產力分數-共同團隊
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 團隊合作的詳細資料-人員體驗生產力分數。
-ms.openlocfilehash: f64f60a6c9717d3d55ee2ac5cc6f507d4927fe18
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: 0924114a73a9bcf55a74744ee371de8c2d326d1c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712552"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579155"
 ---
 # <a name="teamwork--people-experiences"></a>團隊合作–人員經驗
 

@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解如何設定 Exchange Server 內部部署以使用混合式新式驗證 (HMA) ，為您提供更安全的使用者驗證和授權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46646f35d3b41821424269f66721fbf829d339f7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9393b457c219fb03ae2e8a35c3f795c324919f27
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928199"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579719"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何設定 Exchange Server 內部部署以使用混合式新式驗證
 
@@ -50,7 +50,7 @@ ms.locfileid: "50928199"
 
 1. 由於商務用 Skype 和 Exchange 皆是許多 **必要條件** ，所以 [混合新式驗證概述和必要條件搭配內部部署商務用 Skype 和 Exchange 伺服器使用它](hybrid-modern-auth-overview.md)。 在您開始進行本文中的任何步驟之前，請先執行此動作。
 
-1. 將內部部署 web 服務 URLs 新增為 **服務主體名稱 (** Azure AD 中的 spn) 。
+1. 將內部部署 web 服務 URLs 新增為 **服務主體名稱 (** Azure AD 中的 spn) 。 在 NM-EXCH-UM-2ND 與 **多個承租人** 混合的情況下，這些內部部署 web 服務 URLs 必須新增為與 nm-exch-um-2nd 混合的所有承租人 Azure AD 中的 spn。
 
 1. 確保所有虛擬目錄都已啟用 HMA
 
@@ -58,7 +58,9 @@ ms.locfileid: "50928199"
 
 1. 啟用 NM-EXCH-UM-2ND 中的 HMA。
 
- **記事** 您的 Office 版本是否支援 MA？ 請參閱 [如何在 office 2013 和 office 2016 用戶端應用程式中運作新式驗證](modern-auth-for-office-2013-and-2016.md)。
+> [!NOTE]
+> 您的 Office 版本是否支援 MA？ 請參閱 [如何在 office 2013 和 office 2016 用戶端應用程式中運作新式驗證](modern-auth-for-office-2013-and-2016.md)。
+
 
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>請確認您符合所有必要條件
 
@@ -79,11 +81,12 @@ Get-AutodiscoverVirtualDirectory | FL server,*url*
 Get-OutlookAnywhere | FL server,*url*
 ```
 
-確定用戶端可以連線的 URLs 已列為 AAD 中的 HTTPS 服務主體名稱。
+確定用戶端可以連線的 URLs 已列為 AAD 中的 HTTPS 服務主體名稱。 在 NM-EXCH-UM-2ND 與 **多個承租人** 混合的情況下，這些 HTTPS spn 應新增在與 nm-exch-um-2nd 混合之所有承租人的 AAD 中。
 
 1. 首先，使用 [這些指示](connect-to-microsoft-365-powershell.md)連接至 AAD。
 
-   **記事** 您必須使用此頁面上的 _Connect-MsolService_ 選項，才能使用下列命令。
+    > [!NOTE]
+    > 您必須使用此頁面上的 _Connect-MsolService_ 選項，才能使用下列命令。
 
 2. 若為 Exchange 相關的 URLs，請輸入下列命令：
 
@@ -140,6 +143,9 @@ Get-AuthServer | where {$_.Name -eq "EvoSts"}
 
 您的輸出應顯示名稱為 EvoSts 的 Set-authserver，且 [Enabled] 狀態應該為 True。 如果您未看到此內容，您應該下載並執行最新版本的混合式設定向導。
 
+> [!NOTE]
+> 在 NM-EXCH-UM-2ND 與 **多個承租人** 混合的情況下，您的輸出應該會顯示每個承租人中每個租使用者名稱 EvoSts {GUID} 的 set-authserver，且所有 set-authserver 物件的「Enabled」狀態應該是 True。
+
  **重要事項** 如果您正在環境中執行 Exchange 2010，將不會建立 EvoSTS 驗證提供者。
 
 ## <a name="enable-hma"></a>啟用 HMA
@@ -151,19 +157,31 @@ Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
+如果 NM-EXCH-UM-2ND 版本為 Exchange 2016 (CU18 或更高版本) 或 Exchange 2019 (CU7 或更高版本) 和混合已設定 HCW 在2020年9月之後下載，請在 Exchange 管理命令介面（內部部署）上執行下列命令：
+
+```powershell
+Set-AuthServer -Identity "EvoSTS - {GUID}" -Domain "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
+Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
+```
+
+> [!NOTE]
+> 在 NM-EXCH-UM-2ND 與 **多個承租人** 混合的情況下，nm-exch-um-2nd 中有多個 set-authserver 物件會與每個租使用者對應的網域一起存在。  **IsDefaultAuthorizationEndpoint** 旗標應設定為 true (使用 **IsDefaultAuthorizationEndpoint** 指令程式) 以上任何一個 set-authserver 物件。 即使其中一個 Set-authserver 物件的 **IsDefaultAuthorizationEndpoint** 旗標設定為 true，這個旗標也不能設定為 True，set-authserver 物件和 HMA 都會啟用。
+
 ## <a name="verify"></a>驗證
 
 一旦您啟用 HMA，用戶端的下一個登入將會使用新的驗證流程。 請注意，只要開啟 HMA，就不會對任何用戶端觸發重新驗證。 用戶端會根據驗證權杖和/或憑證的存留時間來驗證。
 
 您也應該同時按住 CTRL 鍵，以滑鼠右鍵按一下 Outlook 用戶端 (圖示，也可以在 Windows 通知託盤) 中，然後按一下 [線上狀態]。 根據 ' Authn ' 類型的 ' 載體 ' 尋找用戶端的 SMTP 位址 \* ，它代表 OAuth 中使用的持有者權杖。
 
- **記事** 需要使用 HMA 設定商務用 Skype？ 您將需要兩個文章：一個會列出 [支援的拓撲](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)，另一個說明 [如何進行](configure-skype-for-business-for-hybrid-modern-authentication.md)設定。
+> [!NOTE]
+> 需要使用 HMA 設定商務用 Skype？ 您將需要兩個文章：一個會列出 [支援的拓撲](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)，另一個說明 [如何進行](configure-skype-for-business-for-hybrid-modern-authentication.md)設定。
+
 
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>對 Outlook for iOS 和 Android 使用混合新式驗證
 
-如果您是使用 TCP 443 上 Exchange server 的內部部署客戶，請略過下列 IP 範圍的流量處理：
+如果您是使用 TCP 443 上 Exchange server 的內部部署客戶，請略過下列 IP 位址範圍的流量處理：
 
-```text
+```
 52.125.128.0/20
 52.127.96.0/23
 ```

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 使用方式報告中的作用中使用者
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: 深入瞭解 Microsoft 365 流量分析、活動報告和採用度量的使用者。
-ms.openlocfilehash: 7b8d15a88568c9af8b11a157dad2ec5f76ace6d3
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 21663722d1a3850389db2ad79321daf363d314c6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603969"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579071"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Microsoft 365 使用方式報告中的作用中使用者
 

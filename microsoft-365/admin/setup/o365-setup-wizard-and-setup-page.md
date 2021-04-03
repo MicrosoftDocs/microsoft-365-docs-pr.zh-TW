@@ -2,8 +2,8 @@
 title: 安裝精靈與安裝頁面之間的差異
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 瞭解安裝精靈與設定頁面之間的差異。
-ms.openlocfilehash: dd04920c1c686cd0082b0d3c11cc7869e5d3f4eb
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: 5e081df7800b5e1f3400f1525afddf2c230a13e4
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245922"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579107"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>安裝精靈與安裝頁面之間的差異
 
@@ -38,7 +38,7 @@ Microsoft 365 提供兩種安裝體驗：
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>使用設定向導完成初始設定工作
 
-若要設定您的帳戶，請移至系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)，選取左功能窗格中的 [**安裝**]，然後選取 [**設定**] 頁面上的 [**引導安裝程式**]。
+若要設定您的帳戶，請移至系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)，選取左功能窗格中的 [**安裝**]，然後選取 [**設定**] 頁面上的 [**引導安裝程式**]。
 
 ![啟動 Microsoft 365 應用程式商務版安裝精靈](../../media/o365b-guided-setup.png)
 
@@ -54,7 +54,7 @@ Microsoft 365 提供兩種安裝體驗：
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>使用設定頁面以完成並管理您的設定
 
-若要存取系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)的 [**設定**] 頁面，請在功能窗格中選取 [**安裝**]。 根據您已購買的產品、您已設定的功能和系統管理員角色，可在這裡呈現來自 Microsoft 365 的工作和相關資訊。
+若要存取系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)的 [**設定**] 頁面，請在功能窗格中選取 [**安裝**]。 根據您已購買的產品、您已設定的功能和系統管理員角色，可在這裡呈現來自 Microsoft 365 的工作和相關資訊。
 
 您會看到依邏輯類別排列的完整安裝工作清單，包括您在安裝精靈中完成的工作。
 
@@ -62,7 +62,7 @@ Microsoft 365 提供兩種安裝體驗：
 
 選擇 [View] （ **查看** ）任何工作以取得一覽資訊，例如任務描述、使用者影響、必要條件、實施工作以及安全性和採用統計資料，以協助您在繼續進行之前瞭解結果和影響。
 
-您也會看到 (**已開始**、尚未 **開始**或 **已完成**) 的任務狀態。 如果您是多工作、在數天內執行工作，或是有多個系統管理員在處理任務，您可以快速查看已完成的工作，以及哪些任務仍需要注意，以追蹤完成。 
+您也會看到 (**已開始**、尚未 **開始** 或 **已完成**) 的任務狀態。 如果您是多工作、在數天內執行工作，或是有多個系統管理員在處理任務，您可以快速查看已完成的工作，以及哪些任務仍需要注意，以追蹤完成。 
 
 若要存取有關您所設定之功能的綜合性文章，請選取任何 [ **深入瞭解** ] 連結。 工作的集合永遠都在這裡，所以您可以隨時回到 **Setup** 頁面以進一步探索資源。
 

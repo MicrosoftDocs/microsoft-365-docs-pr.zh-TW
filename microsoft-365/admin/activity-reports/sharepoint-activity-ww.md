@@ -2,8 +2,8 @@
 title: Admin center 中的 Microsoft 365 報告-SharePoint 活動
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得「SharePoint 活動使用方式」報告，以瞭解每個 SharePoint 使用者的活動、共用的檔案數目及儲存使用量。
-ms.openlocfilehash: 1d4b288fed9e15139c92bc7e43795393d03ba2fb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 71cea1e4b5875c0c00dd6dc6cb564e01b84cfb77
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649775"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579515"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Admin center 中的 Microsoft 365 報告-SharePoint 活動
 
@@ -60,7 +60,7 @@ ms.locfileid: "48649775"
 |內部共用的檔案  <br/> | 與組織內的使用者共用的檔案數目，或與可能包含外部使用者) 的群組 (中的使用者共用的檔案數目。  <br/> |
 |外部共用檔案  <br/> |與組織外的使用者共用的檔案數目。 <br/>|
 |訪問的頁面  <br/> |使用者對獨特頁面的訪問權。 <br/>|
-|刪除  <br/> | 這表示已移除使用者的授權。  <br/>  **附注：** 已刪除使用者的活動只要在選取的時段內某一時刻授權，系統仍會顯示在報告中。 [已刪除] 欄可提醒您該名使用者可能已停止使用，但仍對報告中的資料有影響。  <br/> |
+|已刪除  <br/> | 這表示已移除使用者的授權。  <br/>  **附注：** 已刪除使用者的活動只要在選取的時段內某一時刻授權，系統仍會顯示在報告中。 [已刪除] 欄可提醒您該名使用者可能已停止使用，但仍對報告中的資料有影響。  <br/> |
 |刪除日期  <br/> |移除使用者授權的日期。 <br/>|
 |指派的產品  <br/> |授權給使用者的 Microsoft 365 產品。|
 |||

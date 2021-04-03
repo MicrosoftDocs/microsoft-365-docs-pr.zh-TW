@@ -2,8 +2,8 @@
 title: Microsoft 生產力分數-通訊
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通訊人員經驗的詳細資料。
-ms.openlocfilehash: de59a57f1c856d94836b59eba6a4869831fe700a
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: 6ecde5fbbffe65a80c980c70f8195b8e31507f03
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099709"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579191"
 ---
 # <a name="communication--people-experiences"></a>通訊–人員經驗
 

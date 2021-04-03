@@ -1,7 +1,7 @@
 ---
 title: Admin center 中的 microsoft 365 報告-Microsoft 365 應用程式使用量
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 瞭解如何使用 microsoft 365 系統管理中心的 [Microsoft 365 報告] 儀表板，取得 Microsoft 365 應用程式的使用方式報告。
-ms.openlocfilehash: 0c30cee0c1abd76553d3adfebebb8fe38e92c56a
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 88ef5e1291c35bbac050609e26e2ac5adef9d981
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611870"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579587"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Admin center 中的 microsoft 365 報告-Microsoft 365 應用程式使用量
 

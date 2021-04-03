@@ -2,8 +2,8 @@
 title: Admin center 中的 Microsoft 365 報告-Yammer 活動報告
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得 Yammer 活動報告，並深入瞭解使用 Yammer 發佈、贊或讀取郵件的使用者人數。
-ms.openlocfilehash: fc6bf252892cc9b3f30cdcf464cd44cfc83c4f75
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 636e5fae9a71fc819a032743e06127dace25f0a4
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779325"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579491"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Admin center 中的 Microsoft 365 報告-Yammer 活動報告
 
-如 Microsoft 365 admin，「 **報告** 」儀表板會顯示您組織內產品使用狀況的資料。 請參閱系統 [管理中心的活動報告](activity-reports.md)。 透過 **Yammer 活動報告** ，您可以查看使用 yammer 發佈的獨特使用者人數，例如或讀取郵件，以及整個組織產生的活動數量，以瞭解您的組織對 yammer 的參與程度。 
+如 Microsoft 365 admin，「 **報告** 」儀表板會顯示您組織內產品使用狀況的資料。 請參閱系統 [管理中心的活動報告](activity-reports.md)。 透過 **Yammer 活動報告**，您可以查看使用 yammer 發佈的獨特使用者人數，例如或讀取郵件，以及整個組織產生的活動數量，以瞭解您的組織對 yammer 的參與程度。 
   
 > [!NOTE]
 > 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。  
