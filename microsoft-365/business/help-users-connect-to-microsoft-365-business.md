@@ -2,8 +2,8 @@
 title: 協助使用者連接至 Microsoft 365 商務版 Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -28,21 +28,21 @@ search.appverid:
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: 深入瞭解商務雲端套件設定完成後，您的預設裝置原則已就緒且可以套用。
-ms.openlocfilehash: d3aad182f7e233f239b35e35c032e8ca09c57769
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d3e47247197f2688388ed50057b16fde53e7e830
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400915"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578440"
 ---
-# <a name="help-users-connect-to-microsoft-365-business-premium"></a><span data-ttu-id="bea70-103">協助使用者連接至 Microsoft 365 商務版 Premium</span><span class="sxs-lookup"><span data-stu-id="bea70-103">Help users connect to Microsoft 365 Business Premium</span></span>
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a><span data-ttu-id="f89b3-103">協助使用者連接至 Microsoft 365 商務版 Premium</span><span class="sxs-lookup"><span data-stu-id="f89b3-103">Help users connect to Microsoft 365 Business Premium</span></span>
 
-<span data-ttu-id="bea70-104">完成安裝之後，您的預設裝置原則已就緒，可以套用。</span><span class="sxs-lookup"><span data-stu-id="bea70-104">After you complete setup, your default device policies are in place and ready to apply.</span></span> <span data-ttu-id="bea70-105">在行動裝置上，使用者下載 Office 應用程式。</span><span class="sxs-lookup"><span data-stu-id="bea70-105">On mobile devices, users download Office apps.</span></span> <span data-ttu-id="bea70-106">然後，當使用者使用他們的公司或學校帳戶登入時，便會套用原則。</span><span class="sxs-lookup"><span data-stu-id="bea70-106">Policies are then applied when the user signs in with their work or school account.</span></span> <span data-ttu-id="bea70-107">在原則套用至 Windows 電腦前，還有一些工作要做，例如就地升級。</span><span class="sxs-lookup"><span data-stu-id="bea70-107">There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade.</span></span> <span data-ttu-id="bea70-108">請參閱和分享下列主題，以協助使用者設定及連線：</span><span class="sxs-lookup"><span data-stu-id="bea70-108">See and share the following topics to help users get set up and connected:</span></span>
+<span data-ttu-id="f89b3-104">完成安裝之後，您的預設裝置原則已就緒，可以套用。</span><span class="sxs-lookup"><span data-stu-id="f89b3-104">After you complete setup, your default device policies are in place and ready to apply.</span></span> <span data-ttu-id="f89b3-105">在行動裝置上，使用者下載 Office 應用程式。</span><span class="sxs-lookup"><span data-stu-id="f89b3-105">On mobile devices, users download Office apps.</span></span> <span data-ttu-id="f89b3-106">然後，當使用者使用他們的公司或學校帳戶登入時，便會套用原則。</span><span class="sxs-lookup"><span data-stu-id="f89b3-106">Policies are then applied when the user signs in with their work or school account.</span></span> <span data-ttu-id="f89b3-107">在原則套用至 Windows 電腦前，還有一些工作要做，例如就地升級。</span><span class="sxs-lookup"><span data-stu-id="f89b3-107">There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade.</span></span> <span data-ttu-id="f89b3-108">請參閱和分享下列主題，以協助使用者設定及連線：</span><span class="sxs-lookup"><span data-stu-id="f89b3-108">See and share the following topics to help users get set up and connected:</span></span>
   
-[<span data-ttu-id="bea70-109">為 Microsoft 365 商務版使用者設定 Windows 裝置</span><span class="sxs-lookup"><span data-stu-id="bea70-109">Set up Windows devices for Microsoft 365 Business Premium users</span></span>](set-up-windows-devices.md)
+[<span data-ttu-id="f89b3-109">為 Microsoft 365 商務版使用者設定 Windows 裝置</span><span class="sxs-lookup"><span data-stu-id="f89b3-109">Set up Windows devices for Microsoft 365 Business Premium users</span></span>](set-up-windows-devices.md)
   
-[<span data-ttu-id="bea70-110">使用逐步指南新增 Autopilot 裝置和設定檔</span><span class="sxs-lookup"><span data-stu-id="bea70-110">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
+[<span data-ttu-id="f89b3-110">使用逐步指南新增 Autopilot 裝置和設定檔</span><span class="sxs-lookup"><span data-stu-id="f89b3-110">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
   
-[<span data-ttu-id="bea70-111">為 Microsoft 365 商務版使用者設定行動裝置</span><span class="sxs-lookup"><span data-stu-id="bea70-111">Set up mobile devices for Microsoft 365 Business Premium users</span></span>](set-up-mobile-devices.md)
+[<span data-ttu-id="f89b3-111">為 Microsoft 365 商務版使用者設定行動裝置</span><span class="sxs-lookup"><span data-stu-id="f89b3-111">Set up mobile devices for Microsoft 365 Business Premium users</span></span>](set-up-mobile-devices.md)
   
 
