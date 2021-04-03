@@ -2,8 +2,8 @@
 title: 使用 Outlook 和團隊共同作業
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用 Outlook 和 Microsoft 小組共同作業。
-ms.openlocfilehash: dd1030833a10678b4630d9e86905c98d30ac15fe
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dc0eaf1b47796becf62222fb93ccd071cc197a1c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913655"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580663"
 ---
 # <a name="use-outlook-and-teams-together"></a>搭配使用 Outlook 與 Teams
 

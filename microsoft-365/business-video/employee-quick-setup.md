@@ -2,8 +2,8 @@
 title: 員工快速設定-指南
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 協助您的員工瞭解如何使用 Microsoft 365 商務版 Premium 設定所取得的 Office 應用程式。
-ms.openlocfilehash: c336e12e05a0bb2f0967c7e7591913cbb2ce6742
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 72b05435de13ef0d020be74f619a140e188f79d8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422756"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580615"
 ---
 # <a name="employee-quick-setup"></a>員工快速設定
 

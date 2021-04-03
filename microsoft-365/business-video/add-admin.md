@@ -2,8 +2,8 @@
 title: 新增系統管理員
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何新增另一個系統管理員。
-ms.openlocfilehash: 83b4432858f33f8132647840b746bb5aa23d68b5
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: f6f50f65a886d3c094a162349496a7e0c13562f1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423174"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580723"
 ---
 # <a name="add-an-admin"></a>新增系統管理員
 
@@ -50,11 +50,11 @@ ms.locfileid: "50423174"
 
 1. 在 Microsoft 365 系統管理中心中，選取 [ **使用者**]、[作用中的 **使用者**]，然後 **新增使用者**。
 1. 在 [ **設定基本概念** ] 頁面上，輸入使用者的名稱、顯示名稱和使用者名稱。
-1. 選取 [ **完成時以電子郵件傳送密碼** ] 核取方塊，以將使用者的密碼以電子郵件傳送給他們。 輸入他們的電子郵件地址。 使用分號分隔多個位址。 選取 [下一步]。
+1. 選取 [ **完成時以電子郵件傳送密碼** ] 核取方塊，以將使用者的密碼以電子郵件傳送給他們。 輸入他們的電子郵件地址。 使用分號分隔多個位址。 選取 **[下一步]**。
 1. 在 [ **選取位置** ] 下拉式清單中，選擇使用者的位置。
-1. 選取 [ **建立不含產品許可證的使用者** ] 核取方塊。 您不需要為此使用者指派授權，因為他們只會管理 Microsoft 365 服務，而且不會使用這些服務。 選取 [下一步]。
-1. 展開 [ **角色** ] 區段。 清除使用者目前角色旁的核取方塊，然後選擇 [ **全域管理員**]。 選取 [下一步]。
+1. 選取 [ **建立不含產品許可證的使用者** ] 核取方塊。 您不需要為此使用者指派授權，因為他們只會管理 Microsoft 365 服務，而且不會使用這些服務。 選取 **[下一步]**。
+1. 展開 [ **角色** ] 區段。 清除使用者目前角色旁的核取方塊，然後選擇 [ **全域管理員**]。 選取 **[下一步]**。
 1. 請複查您的設定，然後選取 **[完成新增]**。
-1. 選取 **[關閉]**。
+1. 選取 [關閉]。
 
 您的新全域管理員現在可以協助您管理 Microsoft 365 服務。

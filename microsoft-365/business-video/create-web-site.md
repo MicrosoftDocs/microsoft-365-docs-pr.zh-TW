@@ -2,8 +2,8 @@
 title: 為您的公司建立網站
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何為您的企業建立 GoDaddy 網站。
-ms.openlocfilehash: 64b8b7bacaf218f95a0fb89d03eb280f755f1f2f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8f7057fcb7ed85502ce856fb50349a91466e0d6c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422732"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580639"
 ---
 # <a name="create-a-website"></a>建立網站
 

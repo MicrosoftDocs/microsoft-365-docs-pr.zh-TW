@@ -2,8 +2,8 @@
 title: Microsoft 365 流量分析疑難排解
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: 瞭解如何疑難排解 Microsoft 365 使用方式分析範本應用程式的問題。
-ms.openlocfilehash: bf8e4ece7b1e310d91f418f5388cae9aa27f2aa7
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: bc7f1f7188a209188f1a67a20bf79477c6e1d4a0
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841432"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580735"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Microsoft 365 流量分析疑難排解
 
@@ -40,11 +40,11 @@ ms.locfileid: "48841432"
   
  **原因：** 在您可以連線至應用程式之前，您必須訂閱 Microsoft 365 系統管理中心中的資料。 若未執行此步驟，則即使您提供 Microsoft 365 租使用者識別碼，也無法連線至範本應用程式。 
   
- **若要修正此錯誤：** 若要訂閱資料，請移至 [系統管理中心] \> **報告** 的 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用狀況</a> ，並在主要儀表板頁面上找到 [Microsoft 365 流量分析] 磚。 選取 [ **開始** 使用] 按鈕，然後在所開啟的 [ **報告** ] 窗格中，開啟 [ **讓資料可365用於 Power BI 的流量分析** ] 設定及 [ **儲存** ]。
+ **若要修正此錯誤：** 若要訂閱資料，請移至 [系統管理中心] \> **報告** 的 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用狀況</a> ，並在主要儀表板頁面上找到 [Microsoft 365 流量分析] 磚。 選取 [ **開始** 使用] 按鈕，然後在所開啟的 [ **報告** ] 窗格中，開啟 [ **讓資料可365用於 Power BI 的流量分析** ] 設定及 [ **儲存**]。
   
 ## <a name="we-are-processing-your-data"></a>我們正在處理您的資料
 
- **您將在其中看到此訊息的位置：** 在 Microsoft 365 系統管理中心的 [ **使用狀況** ] 儀表板上的 [ **microsoft 365 流量分析** ] 磚中。 
+ **您將在其中看到此訊息的位置：** 在 Microsoft 365 系統管理中心的 [**使用狀況**] 儀表板上的 [ **microsoft 365 流量分析**] 磚中。 
   
  **原因：** 當您選擇從 Microsoft 365 系統管理中心 [查看範本應用程式中的資料](enable-usage-analytics.md) 時，Microsoft 365 系統會開始為您的組織產生歷史使用方式資料。 視您的租用戶大小而定，此步驟可能需要 2 到 48 個小時才能完成。 
   
@@ -98,7 +98,7 @@ ms.locfileid: "48841432"
   
  **原因：** 授權碼失敗，因為嘗試連線至範本應用程式的使用者不具備存取此資料的適當驗證層級。 
   
- **若要修正此錯誤：** 提供 **全域系統管理員** 、 **Exchange 系統管理員** 、商務用 **Skype** 系統管理員、SharePoint 系統 **管理員** 、 **全域讀取器** 或 **報告讀取器** 的使用者認證，以連接至範本應用程式。 如需詳細資訊，請參閱 [關於系統管理員角色](../add-users/about-admin-roles.md) 。 
+ **若要修正此錯誤：** 提供 **全域系統管理員**、 **Exchange 系統管理員**、商務用 **Skype** 系統管理員、SharePoint 系統 **管理員**、 **全域讀取器** 或 **報告讀取器** 的使用者認證，以連接至範本應用程式。 如需詳細資訊，請參閱 [關於系統管理員角色](../add-users/about-admin-roles.md) 。 
   
 ## <a name="refresh-failed"></a>重新整理失敗
 

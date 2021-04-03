@@ -2,8 +2,8 @@
 title: 將使用者新增至 Microsoft 365 for business
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在 Microsoft 365 for business 中新增使用者。
-ms.openlocfilehash: 8f3b0076b04066e4d67f00b92c04cd364e40e05d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d1167241a7b4c6012663f900973cb2fdbb7792bb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423068"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580711"
 ---
 # <a name="add-a-new-user"></a>新增使用者
 
@@ -41,7 +41,7 @@ ms.locfileid: "50423068"
 1. 輸入使用者 **名稱**。 這將是新使用者的電子郵件地址。 如果您有一個以上的網域，請從下拉式清單中選取正確的網域。
 1. 若要自動建立密碼，請選取 [ **自動產生密碼**]。
 1. 若要要求使用者變更其密碼，請選取 [ **要求此使用者在第一次登入時變更其密碼** ] 核取方塊。
-1. 如果您想要以電子郵件傳送帳戶詳細資料，請選取 [ **完成時以電子郵件傳送密碼** ] 核取方塊。 您的電子郵件名稱將會自動新增，但是您可以新增使用者的備選電子郵件地址，讓他們也會收到帳戶詳細資料。 選取 [下一步]。
+1. 如果您想要以電子郵件傳送帳戶詳細資料，請選取 [ **完成時以電子郵件傳送密碼** ] 核取方塊。 您的電子郵件名稱將會自動新增，但是您可以新增使用者的備選電子郵件地址，讓他們也會收到帳戶詳細資料。 選取 **[下一步]**。
 1. 從下拉式清單中選取您的位置，然後選取您想要使用者使用之訂閱旁的核取方塊。 選取 **Nex** t。
 1. 如果您想要讓使用者成為系統管理員，請展開 [ **角色**]，然後清除 [ **使用者 (無管理員存取)** ] 核取方塊，然後從清單中選取系統管理員角色。 如需系統管理員角色及其設定方式的詳細資訊，請參閱 [什麼是系統管理員](what-is-admin.md)？
 1. 在 [ **設定檔資訊**] 下，輸入使用者工作、部門、office 等的詳細資料。  (您或新使用者隨時可以新增此資訊。 ) 選取 **[下一步]**。

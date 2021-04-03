@@ -2,8 +2,8 @@
 title: Microsoft 小組中的開始和 pin 聊天
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在 Microsoft 小組中開始和固定聊天。
-ms.openlocfilehash: 8026c71ebda6c6d65c953fa4983180d80a5df536
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8755abfa3e961ef5408ab612f6712dbeef948074
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913595"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580375"
 ---
 # <a name="chat-with-employees-and-customers"></a>與員工和客戶聊天
 

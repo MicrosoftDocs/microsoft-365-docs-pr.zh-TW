@@ -2,8 +2,8 @@
 title: Microsoft 365 使用情況分析資料模型
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '瞭解流量分析如何連接至 API，並提供各種 Microsoft 365 服務的每月使用趨勢。  '
-ms.openlocfilehash: 1975fc0bdba279b281fb45c8aec22255579ef414
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 877ad005e3ff7f7537247963fafcab5fb1ff6c74
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913847"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580747"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情況分析資料模型
 

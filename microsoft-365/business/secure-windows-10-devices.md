@@ -2,8 +2,8 @@
 title: 保護 Windows 10 裝置
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: 瞭解設定 Windows 10 裝置在登入其工作或學校帳戶時，可接收之預設裝置原則的設定。
-ms.openlocfilehash: 85383b1e1d2f2af3fd49d4a0c56c5d99586d607d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912603"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579967"
 ---
 # <a name="secure-windows-10-devices"></a>保護 Windows 10 裝置
 
@@ -46,7 +46,7 @@ ms.locfileid: "50912603"
   
 |||
 |:-----|:-----|
-|設定  <br/> |描述  <br/> |
+|設定  <br/> |說明  <br/> |
 |使用 Windows Defender 防毒軟體來協助保護電腦免於遭受病毒與其他威脅的侵害  <br/> |需要開啟 Windows Defender 防毒軟體，以保護電腦免於遭受連接至網際網路時的安全威脅。  <br/> |
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |開啟 Microsoft Edge 中的設定，以協助保護使用者免受惡意網站與下載檔案的威脅。  <br/> |
 |利用 BitLocker 來協助您保護電腦上的檔案和資料夾，抵擋未經授權的存取行為  <br/> |Bitlocker 能為電腦硬碟加密來保護資料，以及在電腦遺失或遭竊時保護資料來避免資料外洩。 如需詳細資訊，請參閱 [BITLOCKER FAQ](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)。  <br/> |

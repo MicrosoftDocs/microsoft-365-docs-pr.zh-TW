@@ -2,8 +2,8 @@
 title: 協助您的使用者在 Windows 10 裝置上安裝 Office
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 協助您的使用者在 Windows 10 裝置上安裝 Office 應用程式，並在 Microsoft 365 系統管理中心輕鬆安裝 Windows 10 電腦上的 Office。
-ms.openlocfilehash: 5337c8ef008c1af79490eb6b6705d450055d24fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 35588589cf0b816bcbd686c69684d82b62383f17
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913339"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580207"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>協助您的使用者在 Windows 10 裝置上安裝 Office
 

@@ -2,8 +2,8 @@
 title: 將電腦連線至 Microsoft 365 商務進階版
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何將您的電腦連線至 Microsoft 365 商務。
-ms.openlocfilehash: d1c53feb0940e3ec8fcd040bb119ec3d285a615f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 7afbf3a1a515b1f023d660e72a77144b93d66a89
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422792"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580651"
 ---
 # <a name="connect-your-pc-to-microsoft-365-business-premium"></a>將您的電腦連線至 Microsoft 365 商務版
 

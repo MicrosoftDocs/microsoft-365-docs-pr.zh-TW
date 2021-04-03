@@ -2,8 +2,8 @@
 title: 保護裝置上的工作檔案
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: '瞭解預設設定及新增應用程式管理原則，以保護使用者個人行動裝置上的公司資料。 '
-ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 7e3967dad47508e938b760d0eb96ba8685d886a1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470900"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580027"
 ---
 # <a name="protect-work-files-on-devices"></a>保護裝置上的工作檔案
 

@@ -2,8 +2,8 @@
 title: 將檔案移至商務用 OneDrive
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: 瞭解如何將個人工作檔案和機密公司檔案移至 OneDrive 以進行商務用，只需幾個簡單的步驟即可完成。
-ms.openlocfilehash: 561c9dee1080a50dea695f136df10be8e5d52959
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: d6bcf2b41f1052c521fda50557aac4bf6a3800fa
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785905"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580067"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>將檔案移至商務用 OneDrive
 
@@ -48,7 +48,7 @@ ms.locfileid: "44785905"
 
 2. 按一下應用程式啟動器 ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) ，然後移至 OneDrive。 
     
-3. 在功能表列中選擇 [**上傳**上傳 ![ ](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) ]，然後流覽至您要儲存的檔案。 
+3. 在功能表列中選擇 [**上傳** 上傳 ![ ](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) ]，然後流覽至您要儲存的檔案。 
     
 若要傳輸使用者個人資料和重要檔案，您也可以使用協力廠商工具，例如 ForensiT。此外，您也必須將產生的檔案上傳至商務用 OneDrive。
   
