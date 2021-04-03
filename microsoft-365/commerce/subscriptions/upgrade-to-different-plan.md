@@ -20,21 +20,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解如何升級為其他計畫。
-ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164446"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580975"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 當您的公司變更或需要更多功能時，您可以升級計畫。 若要執行此作業，最簡單的方法是使用系統管理中心的 [ **升級** ] 索引標籤。 不過，並非所有情況都支援使用 [ **升級** ] 索引標籤。 在某些情況下，您可能可以手動變更方案。
 

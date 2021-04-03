@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要連線到網際網路。客戶必須可使用 Office 365 方案取得下列端點，包括 Government Community Cloud (GCC)。
 hideEdit: true
-ms.openlocfilehash: 1c0a2a486bf6964edc9b94fd670c96ade161cacd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b4b256e9138f89cd9d44182a08dd22050b17f7c2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925265"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581103"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 位址範圍
 
@@ -66,6 +66,7 @@ Office 365 需具有網際網路的連線能力。使用　Office 365 方案的�
 >
 
 ## <a name="related-topics"></a>相關主題
+[Office 365 IP 位址和 URL Web 服務中未包含的其他端點](https://docs.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide)
 
 [管理 Office 365 端點](managing-office-365-endpoints.md)
 

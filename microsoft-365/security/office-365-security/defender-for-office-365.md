@@ -21,12 +21,12 @@ ms.custom:
 description: 適用於 Office 365 的 Microsoft Defender 包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec60fc7063bdd4a2656385ed86098d6ae2b4abc0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dad2722a1f9e99fad53c83348d049fa9a60f8b62
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203665"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580987"
 ---
 # <a name="microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender
 
@@ -52,7 +52,7 @@ ms.locfileid: "51203665"
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender 互動式指南
 在此互動式指南中，您將了解如何使用適用於 Office 365 的 Microsoft Defender 來保護貴組織的安全。 您會看到適用於 Office 365 的 Defender 如何協助您定義保護原則、分析組織面臨的威脅，以及回應攻擊。
 
-> [!VIDEO https://aka.ms/MSDO-IG]
+[查看互動指南](https://aka.ms/MSDO-IG)
 
 ## <a name="getting-started"></a>快速入門
 
@@ -97,6 +97,8 @@ ms.locfileid: "51203665"
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>設定適用於 Office 365 的 Microsoft Defender 原則
 
 有了適用於 Office 365 的 Microsoft Defender，組織的安全性小組就能在安全性與合規性中心中定義原則來設定防護 (移至 <https://protection.office.com> \> **[威脅管理]** \> **[原則]**。)
+
+觀看[此影片](https://www.youtube.com/watch?v=vivvTmWJ_3c)瞭解更多資訊。 
 
 > [!TIP]
 > 如需要定義的原則快速清單，請參閱[防範威脅](protect-against-threats.md)。

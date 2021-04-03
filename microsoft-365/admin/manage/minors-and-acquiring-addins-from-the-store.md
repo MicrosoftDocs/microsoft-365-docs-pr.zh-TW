@@ -2,8 +2,8 @@
 title: 對存放區中的增益集進行未成年人和取得
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 深入瞭解一般資料保護法規 (GDPR) 管理未成年人之個人資料的規章。
-ms.openlocfilehash: c49ea719bc85166cc8082200eb833273b0ab5835
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e7f53a5a6b64f29f5029f0080fef44439c926edb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915251"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580915"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>對存放區中的增益集進行未成年人和取得
 
@@ -48,7 +48,7 @@ ms.locfileid: "50915251"
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
-|Office 網頁版  <br/> |N/A  <br/> |
+|Office 網頁版  <br/> |不適用  <br/> |
    
  **Outlook**： 
   
@@ -59,7 +59,7 @@ ms.locfileid: "50915251"
 |Office 2016 for Mac  <br/> |16.0.9318.1000  <br/> |
 |iOS 的 Outlook mobile  <br/> |2.75.0  <br/> |
 |適用于 Android 的 Outlook mobile  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |N/A  <br/> |
+|Outlook.com  <br/> |不適用  <br/> |
 
  **Office 2013 需求**
   

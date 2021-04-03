@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f789053e0922ee81155a243bbaa7b3ab5b0f6d87
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058591"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581079"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "51058591"
 **適用於：**
 - Microsoft 365 Defender
 
-> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ，或 [在實際執行中執行您的試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
+> 想要體驗 Microsoft 365 Defender 嗎？ 您可以[在實驗室環境中評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[在生產環境中執行試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
 Microsoft 365 Defender 是一個統一缺口前和缺口後的企業防禦套件，該套件可在本地協調端點、身份、電子郵件和應用程式之間的偵測、預防、調查和回應，以針對複雜攻擊提供完善的保護。
@@ -56,7 +56,7 @@ Microsoft 365 Defender 是一個統一缺口前和缺口後的企業防禦套件
 
 在此互動指南中，您將瞭解如何使用 Microsoft 365 Defender 保護您的組織。 您將會看到 Microsoft 365 Defender 如何協助您偵測安全性風險、調查對您組織的攻擊，並自動避免有害的活動。
 
-> [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
+[查看互動式輔助線](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 
@@ -92,7 +92,7 @@ Microsoft 365 Defender 跨產品功能包括：
 - **跨產品威脅搜尋** -安全小組可以透過透過各種保護產品所收集的原始資料來建立自己的自訂查詢，利用其獨特的組織知識來尋找損害的跡象。 Microsoft 365 Defender 提供以查詢為基礎的存取權，可對30天的歷史原始信號進行存取，並在端點和 Microsoft Defender for Office 365 資料中提供警示資料。 
 
 
-## <a name="get-started"></a>入門
+## <a name="get-started"></a>開始使用
 若要在 Microsoft 365 security center 中啟用服務，必須符合 microsoft 365 Defender 授權需求，才能在 [security.microsoft.com](https://security.microsoft.com)上啟用服務。 如需詳細資訊，請參閱：
 - [授權需求](prerequisites.md#licensing-requirements)
 - [開啟 Microsoft 365 Defender](m365d-enable.md)

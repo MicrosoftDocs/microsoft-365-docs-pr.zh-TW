@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender 安全中心概述
+title: Microsoft Defender 資訊安全中心概觀
 description: 深入瞭解 Microsoft Defender Security Center 的功能，包括警示的運作方式，以及如何調查可能的破壞和攻擊的建議。
 keywords: 儀表板、警示佇列、管理提醒、調查、調查提醒、調查裝置、提交檔案、深入分析、高、中、低、嚴重性、ioc、ioa
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b490159d12bebdb95b6f168671393f8939da33be
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ee6fd4bd8d60f828bb474fc80cb987f4f94edcbe
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060599"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581091"
 ---
-# <a name="overview-of-microsoft-defender-security-center"></a>Microsoft Defender 安全中心概述
+# <a name="overview-of-microsoft-defender-security-center"></a>Microsoft Defender 資訊安全中心概觀
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,13 +46,13 @@ Microsoft Defender 安全中心是可讓您存取 Microsoft Defender for Endpoin
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Microsoft Defender for Endpoint 互動指南
 在此互動式指南中，您將瞭解如何使用 Microsoft Defender for Endpoint 來調查組織的威脅。 您將會看到 Microsoft Defender for Endpoint 如何協助您識別可疑的活動、調查組織面臨的風險，以及修正威脅。
 
-> [!VIDEO https://aka.ms/MSDE-IG]
+[查看互動式輔助線](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>本節內容
 
-主題 | 描述
+主題 | 說明
 :---|:---
-[入口網站概述](portal-overview.md) | 瞭解入口網站版面配置與區域描述。
+[入口網站概觀](portal-overview.md) | 瞭解入口網站版面配置與區域描述。
 [View the Security operations 儀表板](security-operations-dashboard.md) | Microsoft Defender for Endpoint  **Security operations 儀表板** 提供您網路的快照。 您可以查看警示的合計、網路上裝置的整體狀態、調查裝置、檔案及 URLs，以及查看裝置上看到之威脅的快照。
 [查看威脅 & 漏洞管理儀表板](tvm-dashboard-insights.md) | **威脅 & 弱點管理儀表板** 可讓您透過最高安全性建議、軟體弱點、修復活動和公開的裝置，並排查看裝置的公開和 Microsoft 安全評分。
 [查看威脅分析儀表板並採取建議的緩解動作](threat-analytics.md) | **威脅分析** 儀表板可協助您不斷評估和控制威脅面臨的風險。 使用圖表快速識別裝置是否已存在或沒有緩解。

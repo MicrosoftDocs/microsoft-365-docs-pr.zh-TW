@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499325"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581067"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -55,7 +55,7 @@ ms.locfileid: "51499325"
 
 - 若要將郵件和檔案提交給 Microsoft，您必須是下列其中一個角色群組的成員：
 
-  - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
+  - 在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)內的 **組織管理** 或 **安全性讀者**。
 
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的 **組織管理**。
 

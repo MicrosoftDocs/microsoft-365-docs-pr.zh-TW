@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell 以完全移轉至 Microsoft 365
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 瞭解如何使用 PowerShell 一次從來源電子郵件系統移動內容，方法是對 Microsoft 365 執行完全遷移。
-ms.openlocfilehash: 60bd3cb246e04aba37be06f7a951abbf25708412
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e59ac4d590208e0faed22e94cabe05601b17f18
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924801"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581055"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>使用 PowerShell 以完全移轉至 Microsoft 365
 

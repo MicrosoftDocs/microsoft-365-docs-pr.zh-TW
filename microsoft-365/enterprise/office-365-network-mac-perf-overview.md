@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408402"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581127"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
@@ -205,6 +205,10 @@ Microsoft 365 服務前端是 Microsoft 全球網路的進入點，Office 用戶
 ### <a name="what-is-an-internet-egress-location"></a>何謂網際網路出口的位置？
 
 網際網路出局位置是網路流量結束商業網路並連接到網際網路的位置。 此位置也會識別為您具有網路位址轉譯 (NAT) 裝置的位置，通常是您與網際網路服務提供者 (ISP) 的位置。 如果您看到位置和網際網路出局位置之間有長距離的距離，則這可能表示有重要的 WAN backhaul。
+
+### <a name="what-license-is-needed-for-this-capability"></a>這項功能所需的授權為何？
+
+您需要可提供 Microsoft 365 系統管理中心存取權的授權。
 
 ## <a name="related-topics"></a>相關主題
 

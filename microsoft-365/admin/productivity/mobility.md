@@ -2,8 +2,8 @@
 title: Microsoft 生產力分數-行動性
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 行動人員經歷生產力分數的詳細資料。
-ms.openlocfilehash: e632bb4960ef36acf2c81373f34947ababc8b903
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712564"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580843"
 ---
 # <a name="mobility--people-experiences"></a>行動性–人員經驗
 

@@ -2,8 +2,8 @@
 title: 尋找您的合作夥伴或轉銷商
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: '瞭解如何尋找新的 Microsoft 365 合作夥伴，或取得您已在過去使用之合作夥伴的連絡人資訊。 '
-ms.openlocfilehash: fad16990df7783908f59a6e3dd59cb0a1a13572e
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 189eda83f3eca957e6f9fa720e2f6ccdd07db171
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780106"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580939"
 ---
 # <a name="find-your-partner-or-reseller"></a>尋找您的合作夥伴或轉銷商
 
@@ -53,7 +53,7 @@ ms.locfileid: "44780106"
 
 1. 在系統管理中心中，移至 [**設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作夥伴關係</a>] 頁面。
   
-2. 如果您有合作夥伴，合作夥伴的名稱和組織的關聯性將會列在這裡。 若要查看夥伴連絡人資訊（電話號碼和電子郵件地址），請選取合作夥伴名稱。
+2. 如果您有合作夥伴，合作夥伴的名稱和組織的關聯性將會列在這裡。 若要查看夥伴連絡人資訊 (電話號碼和電子郵件地址) ，請選取合作夥伴名稱。
     
 ## <a name="more-resources"></a>其他資源
 

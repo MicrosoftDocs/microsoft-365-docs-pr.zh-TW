@@ -2,8 +2,8 @@
 title: Microsoft 生產力分數-Microsoft 365 應用程式健康情況
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 應用程式健康情況技術經驗的詳細資料。
-ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562940"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580867"
 ---
-# <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 應用程式健康情況–技術經驗
+# <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 應用程式健康情況 – 科技體驗
 
 生產力分數透過使用 Microsoft 365 和支援 it 的技術體驗，提供您組織的數位轉換旅程的洞察力。 組織的分數反映人員和技術經驗度量，可與類似組織的基準進行比較。 應用程式健康情況類別是技術經驗範圍內的一部分度量。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
 

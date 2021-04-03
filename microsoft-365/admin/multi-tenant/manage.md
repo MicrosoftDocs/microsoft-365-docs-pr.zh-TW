@@ -1,9 +1,9 @@
 ---
-title: 管理多個承租人
+title: 管理多個租用戶
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用承租人切換器和多租使用者視圖。
-ms.openlocfilehash: 0b73665159fbc6ce2d1aa99ba1518dc257d88ec8
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 21b51a5e0c79496bf73e60c04aea68def3cf8ad6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790135"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580879"
 ---
 # <a name="multi-tenant-management"></a>多租使用者管理
 
