@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 0338e87c103bef0f12a45277a14152ef429d0067
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3aa964f8e213d64f583738d8957899c1b7b5146c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060416"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501094"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>使用 Microsoft 365 Defender 中的高級搜尋主動搜尋威脅
 
@@ -36,7 +36,7 @@ ms.locfileid: "51060416"
 **適用於：**
 - Microsoft 365 Defender
 
-> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ，或 [在實際執行中執行您的試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
+> 想要體驗 Microsoft 365 Defender 嗎？ 您可以[在實驗室環境中評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[在生產環境中執行試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
 進階搜捕是一種查詢式威脅搜捕工具，可讓您探索最多 30 天的原始資料。 您可以主動檢查您網路中的事件，以找出威脅指示器和實體。 對資料的靈活存取可對已知和潛在的威脅進行無限制的搜尋。
@@ -50,7 +50,7 @@ ms.locfileid: "51060416"
 
 - 適用於端點的 Microsoft Defender
 - 適用於 Office 365 的 Microsoft Defender
-- Microsoft 雲端應用程式安全性
+- Microsoft Cloud App Security
 - 適用於身分識別的 Microsoft Defender
 
 若要使用高級搜尋，請 [開啟 Microsoft 365 Defender](m365d-enable.md)。

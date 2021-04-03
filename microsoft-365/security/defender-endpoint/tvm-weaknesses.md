@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b42e25c409ba19639e77e95fafc3d939514511ea
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 775592cd2ed9c29df79b04e07cb53efb7bea82d6
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060484"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501237"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織中的漏洞-威脅和弱點管理
 
@@ -154,6 +154,6 @@ Cve 未受到威脅 & 漏洞管理所支援的軟體，仍然存在於劣勢頁�
 
 - [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [安全性建議](tvm-security-recommendation.md)
-- [軟體清查](tvm-software-inventory.md)
-- [儀表板 insights](tvm-dashboard-insights.md)
+- [軟體庫存](tvm-software-inventory.md)
+- [儀表板深入解析](tvm-dashboard-insights.md)
 - [查看和組織 Microsoft Defender for Endpoint Devices 清單](machines-view-overview.md)

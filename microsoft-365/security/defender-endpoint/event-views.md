@@ -1,5 +1,5 @@
 ---
-title: 查看攻擊面減少事件
+title: 查看攻擊面縮小事件
 description: 匯入自訂視圖，以查看攻擊面降低事件。
 keywords: 事件檢視、入侵防護、審核、複查、事件
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: de605a667284c1218a3efe6e388d99b26b42e333
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060551"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569740"
 ---
-# <a name="view-attack-surface-reduction-events"></a>查看攻擊面減少事件
+# <a name="view-attack-surface-reduction-events"></a>查看攻擊面縮小事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -72,11 +72,11 @@ ms.locfileid: "51060551"
 
     ![動畫顯示 [事件檢視器] 視窗中的 [建立自訂視圖] 選項](/windows/security/threat-protection/images/events-create)
 
-3. 移至 [XML] 索引標籤，然後選取 [ **手動編輯查詢**]。 您會看到一則警告，指出您使用 [XML] 選項時，您無法使用 [ **篩選** ] 索引標籤編輯查詢。 選取 [是]。
+3. 移至 [XML] 索引標籤，然後選取 [ **手動編輯查詢**]。 您會看到一則警告，指出您使用 [XML] 選項時，您無法使用 [ **篩選** ] 索引標籤編輯查詢。 選取 **[是]**。
 
 4. 將您要篩選事件的功能的 XML 程式碼貼到 XML 區段中。
 
-5. 選取 [確定]。 指定篩選的名稱。
+5. 選取 **[確定]**。 指定篩選的名稱。
 
 6. 它會建立自訂視圖，篩選為只顯示與該功能相關的事件。
 
@@ -145,34 +145,34 @@ ms.locfileid: "51060551"
 
    ![使用事件檢視器顯示的動畫](/windows/security/threat-protection/images/event-viewer)
 
-功能 | 提供者/來源 | 事件識別碼 | 描述
+功能 | 提供者/來源 | 事件識別碼 | 說明
 :-|:-|:-:|:-
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 1 | ACG 審核
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 2  | ACG 強制執行
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 3  | 不允許子進程審核
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 4  | 不允許子進程區塊
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 5  | 封鎖低誠信影像的審計
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 6  | 封鎖低誠信影像區塊
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 7  | 封鎖遠端影像審計
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 8  | 封鎖遠端影像區塊
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 9  | 停用 win32k 系統通話審計
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 10  | 停用 win32k 系統通話封鎖
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 11  | 程式碼完整性保護審計
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 12  | 程式碼完整性防護區塊
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 13 | EAF 審計
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 14  | 強制執行 EAF
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 15  | EAF + audit
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 16  | EAF + 強制執行
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 17  | IAF 審計
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 18  | 強制執行 IAF
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 19 | ROP StackPivot audit
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 共 | ROP StackPivot 強制執行
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  |  21 | ROP CallerCheck audit
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 22 | ROP CallerCheck 強制執行
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 至 | ROP SimExec audit
-Exploit protection | Security-Mitigations (核心模式/使用者模式)  | 24 | ROP SimExec 強制執行
-Exploit protection | WER-Diagnostics | 5  | CFG 區塊
-Exploit protection | Win32K (運作)  | 260 | 不信任的字型
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 1 | ACG 審核
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 第 | ACG 強制執行
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 個 | 不允許子進程審核
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 4  | 不允許子進程區塊
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 5  | 封鎖低誠信影像的審計
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 6  | 封鎖低誠信影像區塊
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 7  | 封鎖遠端影像審計
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 8  | 封鎖遠端影像區塊
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 9  | 停用 win32k 系統通話審計
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 10  | 停用 win32k 系統通話封鎖
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 11  | 程式碼完整性保護審計
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 12  | 程式碼完整性防護區塊
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 13 | EAF 審計
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 14  | 強制執行 EAF
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 15  | EAF + audit
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 16  | EAF + 強制執行
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 17  | IAF 審計
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 18  | 強制執行 IAF
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 19 | ROP StackPivot audit
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 共 | ROP StackPivot 強制執行
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  |  21 | ROP CallerCheck audit
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 22 | ROP CallerCheck 強制執行
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 至 | ROP SimExec audit
+入侵防護 | Security-Mitigations (核心模式/使用者模式)  | 24 | ROP SimExec 強制執行
+入侵防護 | WER-Diagnostics | 5  | CFG 區塊
+入侵防護 | Win32K (運作)  | 260 | 不信任的字型
 網路保護 | Windows Defender (運作)  | 5007 | 設定變更時的事件
 網路保護 | Windows Defender (運作)  | 1125 | 在稽核模式中觸發網路保護時的事件
 網路保護 | Windows Defender (運作)  | 1126 | 在封鎖模式中激發網路保護時的事件
@@ -181,6 +181,6 @@ Exploit protection | Win32K (運作)  | 260 | 不信任的字型
 受控資料夾存取權 | Windows Defender (運作)  | 1123 | 封鎖的受管理資料夾存取事件
 受控資料夾存取權 | Windows Defender (運作)  | 1127 | 封鎖的受管理資料夾存取區域寫入區塊事件
 受控資料夾存取權 | Windows Defender (運作)  | 1128 | 已審核的受管理資料夾存取區域寫入區塊事件
-受攻擊面縮小 | Windows Defender (運作)  | 5007 | 設定變更時的事件
-受攻擊面縮小 | Windows Defender (運作)  | 1122 | 在稽核模式中觸發規則時的事件
-受攻擊面縮小 | Windows Defender (運作)  | 1121 | 在組塊模式中激發規則時的事件
+攻擊面縮小 | Windows Defender (運作)  | 5007 | 設定變更時的事件
+攻擊面縮小 | Windows Defender (運作)  | 1122 | 在稽核模式中觸發規則時的事件
+攻擊面縮小 | Windows Defender (運作)  | 1121 | 在組塊模式中激發規則時的事件

@@ -1,8 +1,8 @@
 ---
-title: Mac 版 Microsoft Defender ATP
+title: Mac 版適用於端點的 Microsoft Defender
 ms.reviewer: ''
 description: 瞭解如何針對 Mac 安裝、設定、更新及使用 Microsoft Defender for Endpoint。
-keywords: microsoft、defender、atp、mac、安裝、部署、卸載、intune、jamf、macos、big sur、catalina、mojave
+keywords: microsoft、defender、atp、mac、安裝、部署、卸載、intune、jamf、macos、big sur、catalina、mojave、mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34150088379445d66006c757b2c8ea607865bf4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 22d35a42eb7fb7eadbba686c292729772951c05c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198990"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500681"
 ---
-# <a name="microsoft-defender-for-endpoint-for-mac"></a>Mac 版端點的 Microsoft Defender
+# <a name="microsoft-defender-for-endpoint-for-mac"></a>Mac 版適用於端點的 Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,11 +39,11 @@ ms.locfileid: "51198990"
 本主題說明如何安裝、設定、更新和使用適用于 Mac 的端點的 Defender。
 
 > [!CAUTION]
-> 執行其他協力廠商的 endpoint protection 產品及 Defender for Mac 的 Endpoint，都可能會導致效能問題和不可預期的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則您仍然可以在將 Mac 防病毒功能設定為以 [被動式模式](mac-preferences.md#enable--disable-passive-mode)執行之前，放心地利用 MDATP FOR mac EDR 功能。
+> 執行其他協力廠商端點保護產品及 Microsoft Defender for Mac，都可能會導致效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以 [被動式模式](mac-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以安全地利用適用于 Mac EDR 功能的 Defender。
 
 ## <a name="whats-new-in-the-latest-release"></a>最新版本中的新功能
 
-[Microsoft Defender for Endpoint 中的新功能](whats-new-in-microsoft-defender-atp.md)
+[適用於端點的 Microsoft Defender 新功能](whats-new-in-microsoft-defender-atp.md)
 
 [Mac 版端點的 Microsoft Defender 新增功能](mac-whatsnew.md)
 
@@ -54,7 +54,7 @@ ms.locfileid: "51198990"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-mac"></a>如何針對 Mac 安裝 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 
 - 用於端點訂閱和 Microsoft Defender Security Center 入口網站存取權的 Defender
 - macOS 和 BASH 腳本中的初級層級體驗
@@ -65,7 +65,7 @@ ms.locfileid: "51198990"
 您可以使用數種方法和部署工具，為 Mac 安裝和設定 Defender。
 
 - 協力廠商管理工具：
-    - [以 Microsoft Intune 為基礎的部署](mac-install-with-intune.md)
+    - [Microsoft Intune 型部署](mac-install-with-intune.md)
     - [以 JAMF 為基礎的部署](mac-install-with-jamf.md)
     - [其他 MDM 產品](mac-install-with-other-mdm.md)
 

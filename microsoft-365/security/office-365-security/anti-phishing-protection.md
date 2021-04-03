@@ -21,12 +21,12 @@ ms.custom:
 description: 系統管理員可以瞭解 Exchange Online Protection 中的反網路釣魚防護功能 (EOP) 和 Microsoft Defender for Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b0ca7a83e8e8d66bd58fddfc46f53df32f4f623c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a100e28ddee1629b2fe35e28742a43b891d13e57
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204892"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570609"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚保護
 
@@ -43,7 +43,7 @@ ms.locfileid: "51204892"
 
 - **Whaling** 是導向組織中的主管或其他高價值目標，以達到最大效果。
 
-- **商務電子郵件洩漏 (BEC)** 使用偽造的信任寄件者 (財務主管、客戶、信任的協力廠商等。 ) 欺騙收件者以核准付款、轉帳基金或透露客戶資料。
+- **商務電子郵件洩漏 (BEC)** 使用偽造的信任寄件者 (財務主管、客戶、信任的協力廠商等。 ) 欺騙收件者以核准付款、轉帳基金或透露客戶資料。 若要深入瞭解，請觀看 [這段影片](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2)。
 
 - 在網路釣魚郵件中，加密您的資料和要求付款以進行解密的 **勒索軟體** 幾乎永遠不會開始。 反網路釣魚保護無法協助您解密加密的檔案，但可協助偵測與勒索軟體相關的初始網路釣魚郵件。 如需從勒索軟體攻擊復原的詳細資訊，請參閱 [從 Microsoft 365 的勒索軟體攻擊復原](recover-from-ransomware.md)。
 

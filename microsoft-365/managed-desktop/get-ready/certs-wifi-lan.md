@@ -1,6 +1,6 @@
 ---
 title: 為 Microsoft 受管理的電腦準備認證和網路設定檔
-description: 證書/wifi/局域網
+description: 憑證需求和 wi-fi 連線能力
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -11,12 +11,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9f4490711c1ea051afe9d8efb081a2f7a141f8ba
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: a59add6f6821824f189703b3dedd35fda313ec31
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909115"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574580"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>為 Microsoft 受管理的電腦準備認證和網路設定檔  
  
@@ -86,3 +87,14 @@ ms.locfileid: "50909115"
 4. 為每個公司 VPN 建立設定檔 (請參閱 [windows 10 和 Windows 全息裝置設定，以使用 Intune) 新增 VPN](/intune/vpn-settings-windows-10) 連線。
 5. 使用 Microsoft Managed Desktop Admin 入口網站，將名為「憑證部署」或「Wi-Fi 設定檔部署」的支援要求提交至 Microsoft 受管理的桌面系統管理員入口網站，以複查及部署「新式工作」裝置–測試」的設定設定檔。 Microsoft 受管理的桌面 IT 作業可讓您在系統管理員入口網站中透過支援要求完成要求時，告知您。 
  
+## <a name="steps-to-get-ready"></a>準備就緒的步驟
+
+1. 檢查 [Microsoft 受管理的桌面的必要條件](prerequisites.md)。
+2. 使用 [準備工作評估工具](readiness-assessment-tool.md)。
+3. [來賓帳戶的先決條件](guest-accounts.md)
+4. [Microsoft 受管理電腦的網路設定](network.md)
+5. [為 Microsoft 受管理的桌面準備憑證和網路設定檔](certs-wifi-lan.md) (本文) 
+6. [為 Microsoft 受管理的電腦準備備內部部署資源存取權](authentication.md)
+7. [Microsoft 受管理電腦中的應用程式](apps.md)
+8. [為 Microsoft 受管理的電腦準備對應磁碟機](mapped-drives.md)
+9. [為 Microsoft 受管理的電腦準備列印資源](printing.md) 

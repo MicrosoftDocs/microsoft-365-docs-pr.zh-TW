@@ -1,5 +1,5 @@
 ---
-title: 取得披露分數
+title: 取得暴險分數
 description: 會檢索組織公開分數。
 keywords: api、graph api、支援的 api、get、洩密分數、組織公開分數
 search.product: eADQiWindows 10XVcnh
@@ -7,22 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e7037e49a7f750597af15cfb16e1552aeb98859a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c6b3f965c7abb1cb9208f0bfa157c1fd8aa3f891
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166395"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500715"
 ---
-# <a name="get-exposure-score"></a>取得披露分數
+# <a name="get-exposure-score"></a>取得暴險分數
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

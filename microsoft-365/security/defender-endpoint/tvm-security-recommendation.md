@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1bc8fb7dad16d141d6da3efc55200fce40a76900
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 97d496271c1ef7185419f7d39956da0429f070aa
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058676"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500482"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全性建議-威脅和弱點管理
 
@@ -163,8 +163,8 @@ ms.locfileid: "51058676"
 
 - [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [儀表板](tvm-dashboard-insights.md)
-- [披露分數](tvm-exposure-score.md)
-- [適用于裝置的 Microsoft 安全分數](tvm-microsoft-secure-score-devices.md)
-- [修正弱點](tvm-remediation.md)
+- [暴險分數](tvm-exposure-score.md)
+- [裝置用 Microsoft 安全分數](tvm-microsoft-secure-score-devices.md)
+- [修正安全性漏洞](tvm-remediation.md)
 - [建立及查看安全性建議的例外狀況](tvm-exception.md)
-- [事件時程表](threat-and-vuln-mgt-event-timeline.md)
+- [活動時間表](threat-and-vuln-mgt-event-timeline.md)

@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64defeaa1e8cf4a08610742571a01ea527163d14
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44472d49936f400ee16227f3f29141738ad28daa
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203556"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571017"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -93,7 +93,7 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
 
 ## <a name="spoof-settings"></a>欺騙設定
 
-哄騙是指電子郵件中的寄件者位址 (電子郵件客戶程式中所顯示的寄件者位址) 不會符合電子郵件來源的網域。 如需有關欺騙的詳細資訊，請參閱 [Microsoft 365 中的反欺騙保護](anti-spoofing-protection.md)。
+哄騙是指電子郵件中的寄件者位址 (電子郵件客戶程式中顯示的寄件者位址) 不符合電子郵件來源的網域。 如需有關欺騙的詳細資訊，請參閱 [Microsoft 365 中的反欺騙保護](anti-spoofing-protection.md)。
 
 下列欺騙設定可用於 EOP 和 Microsoft Defender for Office 365 中的反網路釣魚原則：
 

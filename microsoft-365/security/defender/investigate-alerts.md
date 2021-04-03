@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: maccruz
-author: schmurky
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bc325f88ec41861c2adc4d5147e94d2d2d5b1ebe
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 989574a860bea798c48e077f5633c31eb857e85e
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054581"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500939"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的警示
 
@@ -68,7 +68,7 @@ ms.locfileid: "51054581"
 
 當您選取相關實體時，[詳細資料] 窗格會變更，以顯示所選實體類型的相關資訊、可用的歷史資訊，以及直接從 [警示] 頁面採取動作的選項。
 
-### <a name="manage-alerts"></a>管理提醒
+### <a name="manage-alerts"></a>管理警示
 
 當您完成調查提醒後，您可以回到您已開始的警示，將警示的狀態標示為 [已解決]，然後將其歸類為「錯誤警示」或「True 警示」。 分類提醒可協助調整您的產品，以提供更真實的警示及不太虛假的提醒。
 
@@ -99,7 +99,7 @@ ms.locfileid: "51054581"
 
 - 嚴重性
 - 狀態
-- 類別
+- Category
 - 偵測來源
 - 原則
 - 受影響資產

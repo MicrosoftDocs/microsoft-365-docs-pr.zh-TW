@@ -1,5 +1,5 @@
 ---
-title: 評估攻擊面減少規則
+title: 評估受攻擊面縮小規則
 description: 請參閱攻擊面降低會如何阻擋並防止使用自訂示範工具進行攻擊。
 keywords: 攻擊面減少，hips，主機入侵防護系統，保護規則，反惡意攻擊，antiexploit，exploit，感染防護，評估，測試，示範
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 13b1ac5f71f2bc24ad6f52af6722e12fab935270
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 07573fd92643ce5fdf3e9140031bf5f15ae8f7aa
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060159"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570336"
 ---
-# <a name="evaluate-attack-surface-reduction-rules"></a>評估攻擊面減少規則
+# <a name="evaluate-attack-surface-reduction-rules"></a>評估受攻擊面縮小規則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -70,13 +70,13 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 若要查看已封鎖的應用程式，請在 Microsoft-Windows Defender/運作性記錄檔中開啟事件檢視器並篩選事件識別碼1121。 下表列出所有網路保護事件。
 
-事件識別碼 | 描述
+事件識別碼 | 說明
 -|-
  5007 | 設定變更時的事件
  1121 | 在封鎖模式中激發攻擊面降低規則時的事件
  1122 | 在稽核模式中引發攻擊面降低規則時的事件
 
-## <a name="customize-attack-surface-reduction-rules"></a>自訂攻擊面降減規則
+## <a name="customize-attack-surface-reduction-rules"></a>自訂受攻擊面縮小規則
 
 在評估過程中，您可能會想要個別設定每個規則，或排除某些檔案和進程，以供功能評估使用。
 
@@ -86,4 +86,4 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 * [使用攻擊面減少規則來減少攻擊面](attack-surface-reduction.md)
 * [使用稽核模式評估 Windows Defender](audit-windows-defender.md)
-* [攻擊面減少常見問題](attack-surface-reduction.md)
+* [受攻擊面縮小常見問題集](attack-surface-reduction.md)

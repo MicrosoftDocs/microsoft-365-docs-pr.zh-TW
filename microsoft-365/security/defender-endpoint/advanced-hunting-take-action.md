@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: 79d720a8b996f826548b79834e5d5c2048e28c2b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d1dbe226cef5e94b36fcd6c35b839118b200f85e
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059968"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500528"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>對高級搜尋查詢結果採取動作
 
@@ -36,7 +36,7 @@ ms.locfileid: "51059968"
 - 在裝置上執行各種動作
 - 隔離檔
 
-## <a name="required-permissions"></a>必要的權限
+## <a name="required-permissions"></a>必要權限
 
 若要透過「高級搜尋」採取行動，您需要具有在 [裝置上提交修正動作之許可權](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/user-roles#permission-options)的「在 Defender」中的角色。 如果您無法採取行動，請洽詢全域管理員以取得下列許可權：
 

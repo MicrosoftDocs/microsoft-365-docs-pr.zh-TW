@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3decc7d67decc5557e7921e68108e2ddb447f0fd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 971644aafabda733bf745fae278bdfeeed3282e3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924549"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574544"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>為 Microsoft 受管理的電腦準備列印資源
 
@@ -37,3 +38,15 @@ ms.locfileid: "50924549"
 3.  您可以使用系統管理入口網站，告知您要求完成的時間。 起初，我們只會將設定部署至測試部署群組中的裝置。
 4.  您必須測試及確認設定是否如預期那樣運作。 使用支援要求中的 [ **討論** ] 索引標籤回復我們，以告知您完成測試的時間。
 5.  然後，我們會將設定部署至其他部署群組。
+
+## <a name="steps-to-get-ready"></a>準備就緒的步驟
+
+1. 檢查 [Microsoft 受管理的桌面的必要條件](prerequisites.md)。
+2. 使用 [準備工作評估工具](readiness-assessment-tool.md)。
+3. [來賓帳戶的先決條件](guest-accounts.md)
+4. [Microsoft 受管理電腦的網路設定](network.md)
+5. [為 Microsoft 受管理的電腦準備認證和網路設定檔](certs-wifi-lan.md)
+6. [為 Microsoft 受管理的電腦準備備內部部署資源存取權](authentication.md)
+7. [Microsoft 受管理電腦中的應用程式](apps.md)
+8. [為 Microsoft 受管理的電腦準備對應磁碟機](mapped-drives.md)
+9. [準備列印 Microsoft Managed Desktop 的資源](printing.md) (本文) 

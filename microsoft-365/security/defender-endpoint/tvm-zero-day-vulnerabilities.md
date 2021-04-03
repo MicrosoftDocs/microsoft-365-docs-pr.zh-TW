@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b2092f24e4ee3e35918fbdc54b68570ef29fd08e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 941e4989dcb91ff9240131f5980d0e1eced2b21d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060467"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501230"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>減少零天的漏洞-威脅和弱點管理
 
@@ -110,5 +110,5 @@ ms.locfileid: "51060467"
 - [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [儀表板](tvm-dashboard-insights.md)
 - [安全性建議](tvm-security-recommendation.md)
-- [軟體清查](tvm-software-inventory.md)
-- [組織中的漏洞](tvm-weaknesses.md)
+- [軟體庫存](tvm-software-inventory.md)
+- [我組織中的弱點](tvm-weaknesses.md)

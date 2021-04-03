@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: e1ccd4404eb94193695239def7f26ba64e70d51d
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 93e900423fcef1fd357ca50db70e250ef6082dc7
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476510"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570575"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>透過 Microsoft 365 Defender 設定及管理 Microsoft 威脅專家功能
 
@@ -28,11 +28,11 @@ ms.locfileid: "51476510"
 **適用於：**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 > [!IMPORTANT]
 > 在您套用之前，請務必與您的 Microsoft 技術服務提供者和客戶團隊討論 Microsoft 威脅專家的資格需求–目標攻擊通知受管理的威脅搜尋服務。
@@ -168,4 +168,4 @@ Microsoft 威脅專家的回應會隨著您的查詢而異。 您通常會收到
 
 ## <a name="see-also"></a>另請參閱
 
-- [Microsoft 威脅專家概述](microsoft-threat-experts.md)
+- [Microsoft 威脅專家概觀](microsoft-threat-experts.md)

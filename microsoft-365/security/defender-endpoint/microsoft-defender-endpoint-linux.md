@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP （適用于 Linux）
+title: Linux 版適用於端點的 Microsoft Defende
 ms.reviewer: ''
 description: 說明如何安裝及使用 Microsoft Defender ATP for Linux。
 keywords: microsoft，defender，atp，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: cc2f5be700395f6d88c05481d74501f4d9d92b76
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408334"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500680"
 ---
 # <a name="microsoft-defender-for-endpoint-for-linux"></a>Linux 版適用於端點的 Microsoft Defende
 
@@ -39,11 +39,11 @@ ms.locfileid: "51408334"
 本主題說明如何針對 Linux 安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 針對 Linux 執行其他協力廠商端點保護產品及 Microsoft Defender for Linux，都可能會造成效能問題和不可預期的系統錯誤。
+> 在 Microsoft Defender for Linux 中執行其他協力廠商端點保護產品時，可能會造成效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以 [被動式模式](linux-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以安全地利用適用于 Linux EDR 功能的 Defender。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>如何為 Linux 安裝 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 
 - 存取 Microsoft Defender 安全中心入口網站
 - 使用 [systemd](https://systemd.io/) 系統管理員的 Linux 發行
@@ -110,8 +110,8 @@ ms.locfileid: "51408334"
 在您啟用服務之後，您可能需要設定網路或防火牆，以允許它和您的端點之間的輸出連線。
 
 - 必須啟用審核架構 (`auditd`) 。
-  >[!NOTE]
-  > 新增至審核記錄的規則所捕獲的系統事件 `audit.logs` 會將其新增至審核記錄，而且可能會影響主機審核和上游集合。 Microsoft Defender for Endopoint for Linux 新增的事件將會以 `mdatp` 金鑰標示。
+  > [!NOTE]
+  > 新增至的規則所捕獲的系統事件 `/etc/audit/rules.d/` 會新增至 `audit.log` (s) ，而且可能會影響主機審核和上游集合。 Microsoft Defender for Linux 所新增的事件將會以 `mdatp` 金鑰標示。
 
 ### <a name="network-connections"></a>網路連線
 

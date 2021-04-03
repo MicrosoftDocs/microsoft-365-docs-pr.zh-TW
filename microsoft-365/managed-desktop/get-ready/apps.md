@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ea0990e5f30aa45ec48bb2e6a7c957c187c74ebb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: d970ac1a28c62703f648e4fbf6f66e2f825a6188
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922941"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574616"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的應用程式
 
@@ -75,3 +76,16 @@ Microsoft 將為適用于企業應用程式的包含 Microsoft 365 應用程式�
 ## <a name="deploying-apps"></a>部署應用程式
 
 任何您用來取得應用程式打包方式的方法完成之後，您就可以遵循將 [應用程式部署至 Microsoft 受管理的桌面裝置](../get-started/deploy-apps.md)中的步驟進行。
+
+
+## <a name="steps-to-get-ready"></a>準備就緒的步驟
+
+1. 檢查 [Microsoft 受管理的桌面的必要條件](prerequisites.md)。
+2. 使用 [準備工作評估工具](readiness-assessment-tool.md)。
+3. [來賓帳戶的先決條件](guest-accounts.md)
+4. [Microsoft 受管理電腦的網路設定](network.md)
+5. [為 Microsoft 受管理的電腦準備認證和網路設定檔](certs-wifi-lan.md)
+6. [為 Microsoft 受管理的電腦準備備內部部署資源存取權](authentication.md)
+7. [Microsoft Managed Desktop 中的應用程式](apps.md) (本文) 
+8. [為 Microsoft 受管理的電腦準備對應磁碟機](mapped-drives.md)
+9. [為 Microsoft 受管理的電腦準備列印資源](printing.md)

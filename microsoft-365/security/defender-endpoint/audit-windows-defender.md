@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: dda0e58e587add2693f8448dd0833ce17706786c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7ce652d58be2d9ff28d82c088d5471a7bffdf6dc
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059939"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570969"
 ---
 # <a name="test-how-microsoft-defender-for-endpoint-features-work-in-audit-mode"></a>測試 Microsoft Defender for Endpoint 功能在稽核模式中的運作方式
 
@@ -48,13 +48,13 @@ ms.locfileid: "51059939"
  **審核選項** | **如何啟用稽核模式** | **如何查看事件**
 |---------|---------|---------|
 | 審核適用于所有事件 | [啟用受控資料夾存取權](enable-controlled-folders.md) | [受控資料夾存取事件](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
-| 審核適用于個別規則 | [啟用攻擊面減少規則](enable-attack-surface-reduction.md) | [攻擊面減少規則事件](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
+| 審核適用于個別規則 | [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md) | [攻擊面減少規則事件](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
 | 審核適用于所有事件 | [啟用網路保護](enable-network-protection.md) | [網路保護事件](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
-| 審核適用于個別的緩解 | [啟用 exploit protection](enable-exploit-protection.md) | [Exploit protection 事件](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
+| 審核適用于個別的緩解 | [啟用入侵防護](enable-exploit-protection.md) | [Exploit protection 事件](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
 
 ## <a name="related-topics"></a>相關主題
 
-* [保護裝置免受攻擊](exploit-protection.md)
+* [保護裝置不受利用](exploit-protection.md)
 * [使用攻擊面減少規則來減少攻擊面](attack-surface-reduction.md)
 * [保護您的網路](network-protection.md)
 * [保護重要的資料夾](controlled-folders.md)

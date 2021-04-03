@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f6b1e257fd767fa112fddb41d773065b8002a2a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 6df23e0d7e3ea0ecd7ebacd96f00cb47b9e0aa84
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909187"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574592"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>為 Microsoft 受管理的電腦準備備內部部署資源存取權
 
@@ -77,3 +78,14 @@ Microsoft 受管理的桌面裝置也會透過使用 Windows Hello 企業版，�
 雖然無法在僅雲端環境中自動探索印表機，但只要裝置具有內部部署網域控制站的存取權，您的使用者就可以使用印表機路徑或印表機佇列路徑來使用內部部署印表機。
 
 <!--add fuller material on printers when available-->
+## <a name="steps-to-get-ready"></a>準備就緒的步驟
+
+1. 檢查 [Microsoft 受管理的桌面的必要條件](prerequisites.md)。
+2. 使用 [準備工作評估工具](readiness-assessment-tool.md)。
+3. [來賓帳戶的先決條件](guest-accounts.md)
+4. [Microsoft 受管理電腦的網路設定](network.md)
+5. [為 Microsoft 受管理的電腦準備認證和網路設定檔](certs-wifi-lan.md)
+6. [準備內部部署資源 access For Microsoft Managed Desktop](authentication.md) (本文) 
+7. [Microsoft 受管理電腦中的應用程式](apps.md)
+8. [為 Microsoft 受管理的電腦準備對應磁碟機](mapped-drives.md)
+9. [為 Microsoft 受管理的電腦準備列印資源](printing.md)

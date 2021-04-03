@@ -8,17 +8,17 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218745"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569902"
 ---
 # <a name="evaluate-controlled-folder-access"></a>評估受控資料夾存取權
 
@@ -58,7 +58,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 下列的受控資料夾存取事件會出現在 Windows 事件檢視器中的 [Microsoft/Windows/Windows Defender/操作] 資料夾底下。
 
-事件識別碼 | 描述
+事件識別碼 | 說明
 -|-
  5007 | 設定變更時的事件
  1124 | 已審核的受管理資料夾存取事件
@@ -76,5 +76,5 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ## <a name="see-also"></a>另請參閱
 
 * [使用受控資料夾存取權來保護重要資料夾](controlled-folders.md)
-* [評估 Microsoft Defender for Endpoint](evaluate-mde.md)
+* [評估適用於端點的 Microsoft Defender](evaluate-mde.md)
 * [使用稽核模式](audit-windows-defender.md)

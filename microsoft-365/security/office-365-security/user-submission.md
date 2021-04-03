@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d3f2640752f2dae152ef4be8b9ac2d2996c802a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d86c79f0f0ab74d1dfbb88e7803f4ee4d691ea73
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203700"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501175"
 ---
 # <a name="user-submissions-policy"></a>使用者提交原則
 
@@ -119,6 +119,9 @@ ms.locfileid: "51203700"
 
         > [!NOTE]
         > 美國政府組織 (GCC、GCC 和 DoD) 只能設定 **自訂信箱**。 其他兩個選項會停用。
+
+        > [!NOTE]
+        > 如果組織已設定為僅傳送至自訂信箱，將不會傳送報告的郵件以進行重新掃描，而且使用者報告的郵件入口網站將永遠會是空的。
 
       完成後，請按一下 [ **確認**]。
 

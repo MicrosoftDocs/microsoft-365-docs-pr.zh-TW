@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解如何在 Microsoft 365 系統管理中心設定組織的密碼到期原則。
-ms.openlocfilehash: 74b23b4a1b67ecd5c9199388985e8e38c3231239
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0280f4fd43034f9ffb70104771fa4a099943af2d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221820"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500239"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
 
@@ -43,16 +43,15 @@ ms.locfileid: "51221820"
 
 本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
 
+身為系統管理員，您可以將使用者密碼設為在指定天數後過期，或將密碼設為永不過期。 根據預設，貴組織的密碼會設定為永不過期。
+
+最新研究強烈指出強制密碼變更的弊大於利。 它們會讓使用者選擇較弱的密碼、重複使用密碼或以容易被駭客猜測到的方式更新舊密碼。 建議您啟用[多重要素驗證](../security-and-compliance/set-up-multi-factor-authentication.md)。
+
 您必須是[全域系統管理員](../add-users/about-admin-roles.md)才能執行這些步驟。
 
 如果您是使用者，則無權將密碼設為永不到期。 請要求貴公司或學校的技術支援人員，為您執行本文所述的步驟。
 
-身為系統管理員，您可以將使用者密碼設為在指定天數後過期，或將密碼設為永不過期。
-
 ## <a name="set-password-expiration-policy"></a>設定密碼到期原則
-
-> [!Tip]
-> 根據預設，密碼會設定為在 90 天內過期。 最新研究強烈指出強制密碼變更的弊大於利。 它們會讓使用者選擇較弱的密碼、重複使用密碼或以容易被駭客猜測到的方式更新舊密碼。 如果將密碼設定為永不到期，建議您啟用[多重要素驗證](../security-and-compliance/set-up-multi-factor-authentication.md)。
 
 如果您要將使用者密碼設定在指定的時間量後到期，請遵循下列步驟進行。
 

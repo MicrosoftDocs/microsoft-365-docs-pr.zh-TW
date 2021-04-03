@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,26 +21,26 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 98f335a38b2e4f581d4b08def39353e53e1bafd4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058567"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570460"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
+Microsoft 安全分數是組織安全性狀況的度量單位，數字越高，表示需要採取更多的改善動作。 可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
 
-遵循安全分數建議可保護您的組織免受威脅。 在 Microsoft 365 安全中心的中央儀表板中，組織可以監視及處理其 Microsoft 365 身分識別、應用程式和裝置的安全性。
+遵循安全分數建議可保護貴組織免受威脅。 在 Microsoft 365 安全中心的中央儀表板中，組織可以監視及處理其 Microsoft 365 身分識別、應用程式和裝置的安全性。
 
 安全分數可協助組織：  
 
-* 報告組織安全狀況的目前狀態。
-* 提供探索性、可見度、指導方針和控制，以提升安全性狀況。  
-* 請與基準進行比較，並建立 (KPIs) 的重要效能指標。
+* 報告組織安全性態勢的目前狀態。
+* 提供可搜索性、可見度、指引和控制措施，以改善其安全性態勢。  
+* 與基準比較並建立關鍵績效指標 (KPI)。
 
 組織可以存取穩定的衡量方式和趨勢、與其他 Microsoft 產品的整合、與類似組織的分數比較，以及更多。 分數也可以反映協力廠商的解決方案如何解決建議的動作。
 
@@ -56,7 +56,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 有些改進動作只會在完全完成時提供積分。 有些是在某些裝置或使用者已完成時，有些點會產生部分點。 如果您無法或不想要制定其中一個 [改進] 動作，您可以選擇接受風險或剩餘風險。
 
-如果您有其中一個支援的 Microsoft 產品的授權，您會看到這些產品的建議。 不管授權版、訂閱或計畫為何，我們都會向您展示產品的完整一組可能改進。 如此一來，您就可以瞭解安全性最佳作法，並改善您的分數。 不管您的組織擁有的特定產品授權為何，您的絕對安全性狀態（以安全分數表示）都會保持不變。 請記住，安全性應該與可用性進行平衡，而不是每個建議都適用于您的環境。
+如果您有其中一個支援的 Microsoft 產品的授權，您會看到這些產品的建議。 不管授權版、訂閱或計畫為何，我們都會向您展示產品的完整一組可能改進。 如此一來，您就可以瞭解安全性最佳作法，並改善您的分數。 不管您的組織擁有的特定產品授權為何，您的絕對安全性狀態（以安全分數表示）都會保持不變。 請記位，安全性應該與可用性達成平衡，並非每個建議都適用於您的環境。
 
 您的分數會即時更新，以反映 [視覺化效果] 和 [改進動作] 頁面中顯示的資訊。 安全分數也會每天同步處理每個動作的取得點數的系統資料。
 
@@ -99,7 +99,7 @@ Microsoft Secure 得分已更新改進動作，以支援 [Azure Active Directory
 >[!IMPORTANT]
 >安全性預設值包括可提供類似安全性的安全性功能，以「登入風險原則」和「使用者風險原則」改進動作。 我們建議您將這些原則的安全性設定更新為「透過替代的緩解」來解決，而不是在安全性預設的上方進行。
 
-## <a name="required-permissions"></a>必要的權限
+## <a name="required-permissions"></a>必要權限
 
 若要具有存取 Microsoft Secure 得分的許可權，您必須在 Azure Active Directory 中為下列其中一個角色指派。
 

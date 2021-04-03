@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218757"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571005"
 ---
 # <a name="enable-controlled-folder-access"></a>啟用受控資料夾存取權
 
@@ -140,5 +140,5 @@ ms.locfileid: "51218757"
 ## <a name="see-also"></a>另請參閱
 
 * [使用受控資料夾存取權來保護重要資料夾](controlled-folders.md)
-* [自訂受控資料夾存取](customize-controlled-folders.md)
-* [評估 Microsoft Defender for Endpoint](evaluate-mde.md)
+* [自訂受控資料夾存取權](customize-controlled-folders.md)
+* [評估適用於端點的 Microsoft Defender](evaluate-mde.md)

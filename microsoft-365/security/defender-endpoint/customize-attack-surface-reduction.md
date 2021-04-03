@@ -1,5 +1,5 @@
 ---
-title: 自訂攻擊面降減規則
+title: 自訂受攻擊面縮小規則
 description: 個別設定審核、封鎖或已停用模式中的規則，以及新增應從攻擊面減少規則排除的檔案和資料夾
 keywords: 攻擊面減少，hips，主機入侵防護系統，保護規則，反惡意攻擊，antiexploit，exploit，感染防護，自訂，設定，排除
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 99a88a869c8a79f79cbc3a16fc73bf556416c51a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 52a51b1035f1aa0fb152cf17dc9561cce378d59d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163290"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570348"
 ---
-# <a name="customize-attack-surface-reduction-rules"></a>自訂攻擊面降減規則
+# <a name="customize-attack-surface-reduction-rules"></a>自訂受攻擊面縮小規則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -116,6 +116,6 @@ ms.locfileid: "51163290"
 ## <a name="related-topics"></a>相關主題
 
 * [使用攻擊面減少規則來減少攻擊面](attack-surface-reduction.md)
-* [啟用攻擊面減少規則](enable-attack-surface-reduction.md)
-* [評估攻擊面減少規則](evaluate-attack-surface-reduction.md)
-* [攻擊面減少常見問題](attack-surface-reduction.md)
+* [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
+* [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
+* [受攻擊面縮小常見問題集](attack-surface-reduction.md)

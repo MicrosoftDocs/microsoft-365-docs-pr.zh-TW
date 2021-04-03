@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員中的組建評估，可協助您符合組織重要的規章和憑證需求。
-ms.openlocfilehash: ff2aa41b91f3cb019dbed542c422d61c79c4ecb5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8051a036f2ffda2f3a2840880318466a2ec71af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908593"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500638"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>在合規性管理員中建立及管理評估
 
@@ -53,7 +53,7 @@ ms.locfileid: "50908593"
 3. [建立您自己的自訂評估](#create-your-own-custom-assessment)。
 
 > [!NOTE]
-> 只有擁有全域管理員或合規性管理員管理角色的使用者，才可以建立及修改評估。 深入瞭解 [角色和許可權](compliance-manager-setup.md#set-user-permissions-and-assign-roles)。
+> 只有擁有全域管理員、合規性管理員管理或合規性管理員 Assessor 角色的使用者，才可以建立及修改評估。 深入瞭解 [角色和許可權](compliance-manager-setup.md#set-user-permissions-and-assign-roles)。
 
 **使用預先建立的評估**
 
