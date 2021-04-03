@@ -2,8 +2,8 @@
 title: 員工快速設定-指南
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,69 +21,69 @@ search.appverid:
 - MET150
 - MOE150
 description: 協助您的員工瞭解如何使用 Microsoft 365 商務版 Premium 設定所取得的 Office 應用程式。
-ms.openlocfilehash: c336e12e05a0bb2f0967c7e7591913cbb2ce6742
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 72b05435de13ef0d020be74f619a140e188f79d8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422756"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580615"
 ---
-# <a name="employee-quick-setup"></a><span data-ttu-id="07909-103">員工快速設定</span><span class="sxs-lookup"><span data-stu-id="07909-103">Employee quick setup</span></span>
+# <a name="employee-quick-setup"></a><span data-ttu-id="b2abe-103">員工快速設定</span><span class="sxs-lookup"><span data-stu-id="b2abe-103">Employee quick setup</span></span>
 
-<span data-ttu-id="07909-104">您是 Microsoft 365 for business 的新功能嗎？</span><span class="sxs-lookup"><span data-stu-id="07909-104">Are you new to Microsoft 365 for business?</span></span> :::image type="icon" source="../media/video-call-icon.png" border="false":::請 [觀看這段影片](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) 以瞭解。 <span data-ttu-id="07909-106">接著執行下列步驟。</span><span class="sxs-lookup"><span data-stu-id="07909-106">Then follow these steps.</span></span>
+<span data-ttu-id="b2abe-104">您是 Microsoft 365 for business 的新功能嗎？</span><span class="sxs-lookup"><span data-stu-id="b2abe-104">Are you new to Microsoft 365 for business?</span></span> :::image type="icon" source="../media/video-call-icon.png" border="false":::請 [觀看這段影片](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) 以瞭解。 <span data-ttu-id="b2abe-106">接著執行下列步驟。</span><span class="sxs-lookup"><span data-stu-id="b2abe-106">Then follow these steps.</span></span>
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="顯示快速員工設定步驟的圖像。":::
 
-## <a name="1-sign-in-to-office"></a><span data-ttu-id="07909-108">1. 登入 Office</span><span class="sxs-lookup"><span data-stu-id="07909-108">1. Sign in to Office</span></span>
+## <a name="1-sign-in-to-office"></a><span data-ttu-id="b2abe-108">1. 登入 Office</span><span class="sxs-lookup"><span data-stu-id="b2abe-108">1. Sign in to Office</span></span>
 
-1. <span data-ttu-id="07909-109">移至 [Office.com](https://office.com) ，然後選擇 [登 **入**]。</span><span class="sxs-lookup"><span data-stu-id="07909-109">Go to [Office.com](https://office.com) and choose **Sign in**.</span></span>
-1. <span data-ttu-id="07909-110">輸入您的 Microsoft 365 電子郵件和密碼，然後再登 **入**。</span><span class="sxs-lookup"><span data-stu-id="07909-110">Type your Microsoft 365 email and password, then **Sign in**.</span></span>
+1. <span data-ttu-id="b2abe-109">移至 [Office.com](https://office.com) ，然後選擇 [登 **入**]。</span><span class="sxs-lookup"><span data-stu-id="b2abe-109">Go to [Office.com](https://office.com) and choose **Sign in**.</span></span>
+1. <span data-ttu-id="b2abe-110">輸入您的 Microsoft 365 電子郵件和密碼，然後再登 **入**。</span><span class="sxs-lookup"><span data-stu-id="b2abe-110">Type your Microsoft 365 email and password, then **Sign in**.</span></span>
 
-## <a name="2-download-and-install-office-apps"></a><span data-ttu-id="07909-111">2. 下載及安裝 Office app</span><span class="sxs-lookup"><span data-stu-id="07909-111">2. Download and install Office apps</span></span>
+## <a name="2-download-and-install-office-apps"></a><span data-ttu-id="b2abe-111">2. 下載及安裝 Office app</span><span class="sxs-lookup"><span data-stu-id="b2abe-111">2. Download and install Office apps</span></span>
 
-1. <span data-ttu-id="07909-112">選擇右上角的 [ **安裝 Office** ]。</span><span class="sxs-lookup"><span data-stu-id="07909-112">Choose **Install Office** in the upper right.</span></span>
-    - <span data-ttu-id="07909-113">在 Chrome 中，移至頁面底部的 [下載]，然後選擇 [ **開啟**]。</span><span class="sxs-lookup"><span data-stu-id="07909-113">In Chrome, go to the download on the bottom of the page and choose **Open**.</span></span>
-    - <span data-ttu-id="07909-114">在 Microsoft Edge/IE 中，選擇 [ **儲存** ]，然後按 [ **執行**]。</span><span class="sxs-lookup"><span data-stu-id="07909-114">In Microsoft Edge/IE, choose **Save** then **Run**.</span></span>
+1. <span data-ttu-id="b2abe-112">選擇右上角的 [ **安裝 Office** ]。</span><span class="sxs-lookup"><span data-stu-id="b2abe-112">Choose **Install Office** in the upper right.</span></span>
+    - <span data-ttu-id="b2abe-113">在 Chrome 中，移至頁面底部的 [下載]，然後選擇 [ **開啟**]。</span><span class="sxs-lookup"><span data-stu-id="b2abe-113">In Chrome, go to the download on the bottom of the page and choose **Open**.</span></span>
+    - <span data-ttu-id="b2abe-114">在 Microsoft Edge/IE 中，選擇 [ **儲存** ]，然後按 [ **執行**]。</span><span class="sxs-lookup"><span data-stu-id="b2abe-114">In Microsoft Edge/IE, choose **Save** then **Run**.</span></span>
     
-        <span data-ttu-id="07909-115">如果要求讓應用程式進行變更，請選擇 **[是]**。</span><span class="sxs-lookup"><span data-stu-id="07909-115">If asked to allow the app to make changes, choose **Yes**.</span></span> <span data-ttu-id="07909-116">開始執行 Office 安裝程式。</span><span class="sxs-lookup"><span data-stu-id="07909-116">Let Office setup begin.</span></span>
-    - <span data-ttu-id="07909-117">在 Mac 上，開啟 Microsoft **Office_2016_Installer.pkg**</span><span class="sxs-lookup"><span data-stu-id="07909-117">On a Mac, open Microsoft **Office_2016_Installer.pkg**</span></span>
+        <span data-ttu-id="b2abe-115">如果要求讓應用程式進行變更，請選擇 **[是]**。</span><span class="sxs-lookup"><span data-stu-id="b2abe-115">If asked to allow the app to make changes, choose **Yes**.</span></span> <span data-ttu-id="b2abe-116">開始執行 Office 安裝程式。</span><span class="sxs-lookup"><span data-stu-id="b2abe-116">Let Office setup begin.</span></span>
+    - <span data-ttu-id="b2abe-117">在 Mac 上，開啟 Microsoft **Office_2016_Installer.pkg**</span><span class="sxs-lookup"><span data-stu-id="b2abe-117">On a Mac, open Microsoft **Office_2016_Installer.pkg**</span></span>
 
-## <a name="3-open-outlook-and-add-your-account"></a><span data-ttu-id="07909-118">3. 開啟 Outlook 並新增您的帳戶</span><span class="sxs-lookup"><span data-stu-id="07909-118">3. Open Outlook and add your account</span></span>
+## <a name="3-open-outlook-and-add-your-account"></a><span data-ttu-id="b2abe-118">3. 開啟 Outlook 並新增您的帳戶</span><span class="sxs-lookup"><span data-stu-id="b2abe-118">3. Open Outlook and add your account</span></span>
 
-1. <span data-ttu-id="07909-119">開啟電腦上的 **Outlook**。</span><span class="sxs-lookup"><span data-stu-id="07909-119">Open **Outlook** on your computer.</span></span> <span data-ttu-id="07909-120">在 [告知我] 欄位中，輸入 **帳戶** 然後 **新增帳戶**。</span><span class="sxs-lookup"><span data-stu-id="07909-120">In the Tell me field, type **account** then **Add Account**.</span></span>
+1. <span data-ttu-id="b2abe-119">開啟電腦上的 **Outlook**。</span><span class="sxs-lookup"><span data-stu-id="b2abe-119">Open **Outlook** on your computer.</span></span> <span data-ttu-id="b2abe-120">在 [告知我] 欄位中，輸入 **帳戶** 然後 **新增帳戶**。</span><span class="sxs-lookup"><span data-stu-id="b2abe-120">In the Tell me field, type **account** then **Add Account**.</span></span>
 
     :::image type="content" source="../media/add-outlook-account.png" alt-text="顯示如何將帳戶新增至 Outlook 的圖表。":::
 
-1. <span data-ttu-id="07909-122">輸入您的姓名、電子郵件和密碼，然後按 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="07909-122">Type your name, email, and password then **Next**.</span></span>
+1. <span data-ttu-id="b2abe-122">輸入您的姓名、電子郵件和密碼，然後按 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="b2abe-122">Type your name, email, and password then **Next**.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="07909-123">若要匯入您的舊電子郵件，請先將它匯出為 PST 檔案再進行匯入，就像這樣。</span><span class="sxs-lookup"><span data-stu-id="07909-123">To import your old email, export it to a PST file, then import it, like this.</span></span>
+> <span data-ttu-id="b2abe-123">若要匯入您的舊電子郵件，請先將它匯出為 PST 檔案再進行匯入，就像這樣。</span><span class="sxs-lookup"><span data-stu-id="b2abe-123">To import your old email, export it to a PST file, then import it, like this.</span></span>
 
-## <a name="4-save-or-copy-files-to-onedrive"></a><span data-ttu-id="07909-124">4. 儲存或複製檔案至 OneDrive</span><span class="sxs-lookup"><span data-stu-id="07909-124">4. Save or copy files to OneDrive</span></span>
+## <a name="4-save-or-copy-files-to-onedrive"></a><span data-ttu-id="b2abe-124">4. 儲存或複製檔案至 OneDrive</span><span class="sxs-lookup"><span data-stu-id="b2abe-124">4. Save or copy files to OneDrive</span></span>
 
-- <span data-ttu-id="07909-125">從 Office app 中的 [**另存** 新檔] 功能表，將檔儲存至 **OneDrive** 。</span><span class="sxs-lookup"><span data-stu-id="07909-125">Save documents to **OneDrive** from the **Save As** menu in Office apps.</span></span>
+- <span data-ttu-id="b2abe-125">從 Office app 中的 [**另存** 新檔] 功能表，將檔儲存至 **OneDrive** 。</span><span class="sxs-lookup"><span data-stu-id="b2abe-125">Save documents to **OneDrive** from the **Save As** menu in Office apps.</span></span>
     :::image type="content" source="../media/save-onedrive.png" alt-text="Imge 如何儲存為 OneDrive。":::
 
-- <span data-ttu-id="07909-127">或將檔案從您的桌面或檔案複製到 **OneDrive**。</span><span class="sxs-lookup"><span data-stu-id="07909-127">Or copy files from your Desktop or Documents to **OneDrive**.</span></span>
+- <span data-ttu-id="b2abe-127">或將檔案從您的桌面或檔案複製到 **OneDrive**。</span><span class="sxs-lookup"><span data-stu-id="b2abe-127">Or copy files from your Desktop or Documents to **OneDrive**.</span></span>
 
     :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="顯示如何儲存至 [檔] 資料夾中 OneDrive 的圖像。":::
 
     > [!TIP]
-    > <span data-ttu-id="07909-129">您也可以將檔儲存在 Microsoft 365 的 [網站](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) 上。</span><span class="sxs-lookup"><span data-stu-id="07909-129">You can also store files on [sites](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) in Microsoft 365.</span></span>
+    > <span data-ttu-id="b2abe-129">您也可以將檔儲存在 Microsoft 365 的 [網站](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) 上。</span><span class="sxs-lookup"><span data-stu-id="b2abe-129">You can also store files on [sites](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) in Microsoft 365.</span></span>
 
-## <a name="5-share-documents"></a><span data-ttu-id="07909-130">5. 共用檔</span><span class="sxs-lookup"><span data-stu-id="07909-130">5. Share Documents</span></span>
+## <a name="5-share-documents"></a><span data-ttu-id="b2abe-130">5. 共用檔</span><span class="sxs-lookup"><span data-stu-id="b2abe-130">5. Share Documents</span></span>
 
-1. <span data-ttu-id="07909-131">選擇 [ **共用**]，與其他人共用您的檔。</span><span class="sxs-lookup"><span data-stu-id="07909-131">Share your documents with others by choosing **Share**.</span></span>
+1. <span data-ttu-id="b2abe-131">選擇 [ **共用**]，與其他人共用您的檔。</span><span class="sxs-lookup"><span data-stu-id="b2abe-131">Share your documents with others by choosing **Share**.</span></span>
 
     :::image type="content" source="../media/share-office-doc.png" alt-text="在 Office 應用程式中共用圖示。":::
 
-1. <span data-ttu-id="07909-133">輸入他們的電子郵件地址，選擇 [讀取] 或 [編輯]，包含郵件及 **共用**。</span><span class="sxs-lookup"><span data-stu-id="07909-133">Type their email address, choose read or edit, include a message and **Share**.</span></span>
-1. <span data-ttu-id="07909-134">或選擇畫面底部的 [ **取得共用] 連結** 。</span><span class="sxs-lookup"><span data-stu-id="07909-134">Or choose **Get sharing link** on the bottom of the screen.</span></span>
+1. <span data-ttu-id="b2abe-133">輸入他們的電子郵件地址，選擇 [讀取] 或 [編輯]，包含郵件及 **共用**。</span><span class="sxs-lookup"><span data-stu-id="b2abe-133">Type their email address, choose read or edit, include a message and **Share**.</span></span>
+1. <span data-ttu-id="b2abe-134">或選擇畫面底部的 [ **取得共用] 連結** 。</span><span class="sxs-lookup"><span data-stu-id="b2abe-134">Or choose **Get sharing link** on the bottom of the screen.</span></span>
 
-## <a name="6-get-outlook-on-your-phone"></a><span data-ttu-id="07909-135">6. 在您的手機取得 Outlook</span><span class="sxs-lookup"><span data-stu-id="07909-135">6. Get Outlook on your phone</span></span>
+## <a name="6-get-outlook-on-your-phone"></a><span data-ttu-id="b2abe-135">6. 在您的手機取得 Outlook</span><span class="sxs-lookup"><span data-stu-id="b2abe-135">6. Get Outlook on your phone</span></span>
 
-- <span data-ttu-id="07909-136">從應用程式存放區或 Google Play 商店從您的手機取得 **Outlook** 。</span><span class="sxs-lookup"><span data-stu-id="07909-136">Get **Outlook** on your phone from App store or Google Play store.</span></span> <span data-ttu-id="07909-137">開啟它，然後選擇 [ **開始** ]，並新增您的電子郵件和密碼。</span><span class="sxs-lookup"><span data-stu-id="07909-137">Open it, and choose **Get Started** and add your email and password.</span></span>
-- <span data-ttu-id="07909-138">或者，在 iOS 或 Android 裝置上開啟 Outlook，然後移至 [ **設定**]。</span><span class="sxs-lookup"><span data-stu-id="07909-138">Or, open Outlook on an iOS or Android device and go to **Settings**.</span></span>
+- <span data-ttu-id="b2abe-136">從應用程式存放區或 Google Play 商店從您的手機取得 **Outlook** 。</span><span class="sxs-lookup"><span data-stu-id="b2abe-136">Get **Outlook** on your phone from App store or Google Play store.</span></span> <span data-ttu-id="b2abe-137">開啟它，然後選擇 [ **開始** ]，並新增您的電子郵件和密碼。</span><span class="sxs-lookup"><span data-stu-id="b2abe-137">Open it, and choose **Get Started** and add your email and password.</span></span>
+- <span data-ttu-id="b2abe-138">或者，在 iOS 或 Android 裝置上開啟 Outlook，然後移至 [ **設定**]。</span><span class="sxs-lookup"><span data-stu-id="b2abe-138">Or, open Outlook on an iOS or Android device and go to **Settings**.</span></span>
 
-    <span data-ttu-id="07909-139">選擇 [ **新增帳戶** 然後 **新增電子郵件帳戶** ]，然後輸入您的電子郵件和密碼。</span><span class="sxs-lookup"><span data-stu-id="07909-139">Choose **Add Account** then **Add Email Account** then type your email and password.</span></span>
-- <span data-ttu-id="07909-140">在 **Windows Phone** 上，選擇 **[設定**]、[ **電子郵件 + 帳戶**]、[ **新增帳戶**]，然後再按一下 [ **Exchange**]。</span><span class="sxs-lookup"><span data-stu-id="07909-140">On a **Windows Phone**, choose **Settings**, **Email + accounts**, **Add an account**, and then **Exchange**.</span></span>
+    <span data-ttu-id="b2abe-139">選擇 [ **新增帳戶** 然後 **新增電子郵件帳戶** ]，然後輸入您的電子郵件和密碼。</span><span class="sxs-lookup"><span data-stu-id="b2abe-139">Choose **Add Account** then **Add Email Account** then type your email and password.</span></span>
+- <span data-ttu-id="b2abe-140">在 **Windows Phone** 上，選擇 **[設定**]、[ **電子郵件 + 帳戶**]、[ **新增帳戶**]，然後再按一下 [ **Exchange**]。</span><span class="sxs-lookup"><span data-stu-id="b2abe-140">On a **Windows Phone**, choose **Settings**, **Email + accounts**, **Add an account**, and then **Exchange**.</span></span>
