@@ -23,28 +23,21 @@ search.appverid:
 - MET150
 description: 瞭解如何在 Microsoft 365 訂閱中新增及減少檔存放區。 使用額外的檔案存放區，您可以在 SharePoint 線上及 OneDrive 中儲存更多內容。
 ms.date: ''
-ms.openlocfilehash: b170924f40d517cb6bbdf8635ad3e163eadc8643
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d65677b9c078026343410b53acd48932258cb4b1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911923"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576958"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>新增您訂閱的儲存空間
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 如果您快要用完 SharePoint Online 網站集合的儲存空間，而您有合格方案的話，可以將儲存空間新增至您的訂閱。 如果您在可用的附加元件清單中看不到 **Office 365 額外檔案儲存空間** ，表示您的計畫不合格。 如需詳細資訊，請參閱 [我的方案是否可享有？](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
 > 如果您透過大量授權或 CSP 購買訂閱，您就無法直接從 Microsoft 為您的組織購買 **Office 365 額外檔案存放區** 。 請與您的代表或合作夥伴聯繫以取得協助。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 您必須是全域或 SharePoint 的系統管理員，才可執行本文中的工作。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。
 
@@ -84,7 +77,7 @@ ms.locfileid: "50911923"
 3. 在 [產品詳細資料] 頁面的 [ **附加** 元件] 區段中，選取 [ **管理載入** 宏]。
 4. 在 [ **管理** 增益集] 窗格中，選擇 [ **附加** 元件] 清單中的 [ **Office 365 額外檔案儲存**]。
 5. 在 [ **數量** ] 文字方塊中，輸入您要用於訂閱的 gb 儲存空間數目。
-6. 選取 [儲存]。
+6. 選取 **[儲存]**。
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>我的方案是否符合 Office 365 額外檔案儲存空間的資格？
 
@@ -111,5 +104,5 @@ Office 365 額外檔案儲存空間適用於下列訂閱︰
 
 ## <a name="related-content"></a>相關內容
 
-[管理網站儲存量限制](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (篇文章) \
+[管理網站儲存量限制](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (篇文章) \
 [設定 OneDrive 使用者 (文章的預設儲存空間](/onedrive/set-default-storage-space)) 

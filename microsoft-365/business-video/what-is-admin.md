@@ -2,8 +2,8 @@
 title: Microsoft 365 for business 中的系統管理員
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解 Microsoft 365 for business 中的系統管理員角色。
-ms.openlocfilehash: 87d9db451ca38bc8d8045b0bb257461e8f8c4647
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a4fcb60218069d73fe658a6dc4ef681a659ec70b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421654"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578552"
 ---
 # <a name="what-is-a-microsoft-365-admin"></a>何謂 Microsoft 365 系統管理員？
 
@@ -58,8 +58,8 @@ ms.locfileid: "50421654"
 1. 在左功能窗格中，選取 [ **使用者**]，然後選取 [作用中的 **使用者**]。
 1. 選取 [ **新增使用者**]。
 1. 輸入使用者的 **名字**、**姓氏**、**顯示名稱****和使用者名稱，然後** 選取 **[下一步]**。
-1. 選擇 [ **建立沒有產品許可證的使用者**]。 這會新增使用者，但您不需要每月付費訂閱。 選取 [下一步]。
+1. 選擇 [ **建立沒有產品許可證的使用者**]。 這會新增使用者，但您不需要每月付費訂閱。 選取 **[下一步]**。
 1. 開啟 **角色**。
-1. 清除核取方塊，然後選取其中一個系統管理員角色。 選取 [下一步]。
+1. 清除核取方塊，然後選取其中一個系統管理員角色。 選取 **[下一步]**。
 1. 請複查資訊，然後選取 **[完成新增]**。
-1. 選取 **[關閉]**。
+1. 選取 [關閉]。

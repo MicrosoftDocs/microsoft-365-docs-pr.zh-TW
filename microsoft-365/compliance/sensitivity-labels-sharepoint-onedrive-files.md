@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: b4c6a0e3bbe9bae60bc3ccc7fceea04c65382373
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c4b77b8f66d31bc735d04d2b232964ce35ab4ddb
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919539"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569812"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤，讓使用者可以將您的 [靈敏度卷](sensitivity-labels.md) 標套用至網頁上的 office。 啟用此功能時，使用者會看到功能區上的 **靈敏度** 按鈕，讓他們可以套用標籤，並在狀態列上查看任何已套用的標籤名稱。
+在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤，讓使用者可以在您的 Office 中套用您的 [靈敏度卷](sensitivity-labels.md) 標。 啟用此功能時，使用者會看到功能區上的 **靈敏度** 按鈕，讓他們可以套用標籤，並在狀態列上查看任何已套用的標籤名稱。
 
 啟用此功能也會導致 SharePoint，而且 OneDrive 可以處理使用敏感度標籤加密之檔案的內容。 標籤可以套用於用於 web 的 Office 或 Office 桌面應用程式中，並上傳或儲存在 SharePoint 和 OneDrive 中。 在您啟用此功能之前，這些服務無法處理加密的檔案，這表示合著、eDiscovery、資料遺失防護、搜尋及其他協同作業功能不適用於這些檔案。
 
@@ -40,7 +40,7 @@ ms.locfileid: "50919539"
 
 - 當使用者將已標記和加密的檔案上傳至 SharePoint 或 OneDrive 時，他們至少必須具有這些檔案的「查看」許可權。 例如，他們可以在 SharePoint 外開啟檔案。 如果使用者未使用此最小值，請上載成功，但服務無法辨識標籤，也無法處理檔案內容。
 
-- 使用 web 上的 Office (Word、Excel PowerPoint) 開啟及編輯具有套用加密之敏感度標籤的 Office 檔案。 會強制執行以加密指派的許可權。 您也可以對這些檔使用 [自動標籤](apply-sensitivity-label-automatically.md) 。
+- 使用 Office for web (Word、Excel PowerPoint) 開啟及編輯具有套用加密之敏感度標籤的 Office 檔案。 會強制執行以加密指派的許可權。 您也可以對這些檔使用 [自動標籤](apply-sensitivity-label-automatically.md) 。
 
 - 外部使用者可以使用 guest 帳戶存取以加密標記的檔。 如需詳細資訊，請參閱 [對外部使用者的支援和標示的內容](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。 
 
@@ -86,26 +86,26 @@ ms.locfileid: "50919539"
     - **使用者的內容存取權到期日** 設定為 **永不** 以外的值。
     - **使用雙重金鑰加密** 已選取。
     
-    針對具有上述任何加密設定的標籤，網頁上的 Office 使用者不會看到標籤。 此外，新功能也無法與已有這些加密設定的已標記檔一起使用。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
+    針對具有上述任何加密設定的標籤，使用者不會向 Office 中的網站顯示標籤。 此外，新功能也無法與已有這些加密設定的已標記檔一起使用。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
+
+- 使用者可能會在下列另存為案例中體驗開啟加密檔的延遲：使用桌上出版本的 Office，使用者選擇 [另存新檔]，以用於具有敏感度標籤以套用加密的檔。 使用者選取該位置的 SharePoint 或 OneDrive，然後立即嘗試在該網頁的 Office 中開啟該檔。 如果服務仍在處理加密，使用者會看到一則訊息，指出必須在其桌面應用程式中開啟檔。 如果他們在幾分鐘後再試一次，該檔就會在 Office 中成功地開啟網頁。 
 
 - 對於加密檔，不支援列印。
 
 - 針對授與使用者編輯許可權的加密檔，在 Office 應用程式的 web 版本中無法封鎖複製。
-
-- 不支援 Azure 資訊保護檔追蹤網站。
 
 - 根據預設，Office 桌面應用程式和行動應用程式不支援共同撰寫以加密標記的檔案。 這些應用程式會繼續以獨佔編輯模式開啟標籤和加密的檔案。
     
     > [!NOTE]
     > 現在預覽中支援共同撰寫。 如需詳細資訊，請參閱對 [使用敏感度標籤加密的檔案啟用共同撰寫](sensitivity-labels-coauthoring.md)。
 
-- 如果系統管理員變更已套用至使用者同步處理用戶端之檔案的已發行標籤設定，則使用者可能無法在其 OneDrive Sync 資料夾中儲存對檔案所做的變更。 此案例適用于以加密標示標籤的檔案，也就是從沒有套用加密標籤的標籤所做的標籤變更時。 使用者看到 [紅色圓圈時出現白色的交叉圖示錯誤](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，並且要求您將新的變更儲存為個別的副本。 相反地，他們可以關閉並重新開啟檔案，或在網頁上使用 Office。
+- 如果系統管理員變更已套用至使用者同步處理用戶端之檔案的已發行標籤設定，則使用者可能無法在其 OneDrive Sync 資料夾中儲存對檔案所做的變更。 此案例適用于以加密標示標籤的檔案，也就是從沒有套用加密標籤的標籤所做的標籤變更時。 使用者看到 [紅色圓圈時出現白色的交叉圖示錯誤](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，並且要求您將新的變更儲存為個別的副本。 相反地，他們可以關閉並重新開啟檔案，或使用 Office for web。
 
-- 如果已標示的檔上傳至 SharePoint 或 OneDrive，且標籤是使用服務主體名稱的帳戶來套用加密，則無法在網頁上開啟該檔。 範例案例包括 Microsoft Cloud App Security，以及透過電子郵件傳送給小組的檔案。
+- 如果已標示的檔上傳至 SharePoint 或 OneDrive，且標籤是使用服務主體名稱中的帳戶來套用加密，則無法在 Office 中開啟該檔。 範例案例包括 Microsoft Cloud App Security，以及透過電子郵件傳送給小組的檔案。
 
 - 使用者可能會在離線或轉入睡眠模式後遇到儲存問題，而不是使用 web Office 時，他們會使用桌面和行動應用程式進行 Word、Excel 或 PowerPoint。 針對這些使用者，當他們繼續其 Office 應用程式會話並嘗試儲存變更時，會看到上傳失敗訊息，並有一個選項可儲存副本，而不是儲存原始檔案。 
 
-- 以下列方式加密的檔無法在 web 上的 Office 中開啟：
+- 以下列方式加密的檔無法在網頁版 Office 中開啟：
     - 使用內部部署金鑰 ( 「保留您自己的金鑰」或 HYOK) 的加密
     - 使用[雙重金鑰加密](double-key-encryption.md)所套用的加密
     - 獨立于標籤所套用的加密，例如直接套用 Rights Management protection 範本。
@@ -200,9 +200,9 @@ ms.locfileid: "50919539"
 
 - 如果您上傳的檔案包含套用加密的靈敏度標籤，則 SharePoint 無法處理這些檔案的內容，因此這些檔案不支援合著、eDiscovery、DLP 和 search。
 
-- 如果您使用 web 上的 Office 來標記檔案，則會強制執行標籤的任何加密設定。 支援這些檔案、共同撰寫、eDiscovery、DLP 及搜尋。
+- 如果您使用 Office 為 web 標記檔案，則會強制執行標籤的任何加密設定。 支援這些檔案、共同撰寫、eDiscovery、DLP 及搜尋。
 
-- 如果您下載使用網頁上的 Office 標示的檔案，則會保留標籤，並強制執行標籤的任何加密設定，而不是 IRM 限制設定。
+- 如果您下載的檔案是使用 Office for web 進行標記，則會保留標籤，並強制執行標籤的任何加密設定，而不是 IRM 限制設定。
 
 - 如果您下載未使用敏感度標籤加密的 Office 或 PDF 檔案，則會套用 IRM 設定。
 

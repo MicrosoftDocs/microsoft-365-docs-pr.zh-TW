@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在保管人及其資料來源中放置保留，以保留您的高級 eDiscovery 案例中的相關內容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926371"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570587"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高級 eDiscovery 中管理保留
 
@@ -66,7 +66,7 @@ ms.locfileid: "50926371"
  
 6.  (選用) 在 [ **描述** ] 方塊中，新增保留的描述。
   
-7. 按 [下一步 **]**。
+7. 按 [下一步]。
   
 8. 選擇您要保留的內容位置。 您可以將信箱、網站和公用資料夾放入暫止狀態。
 
@@ -76,11 +76,9 @@ ms.locfileid: "50926371"
       > 當您按一下 **[選擇使用者、群組或小組** 以指定要保留的信箱] 時，顯示的信箱選擇器會是空的。 這項設計的目的是提升效能。 若要將人員新增至此清單，請在搜尋方塊中輸入 (至少3個字元) 名稱。
 
    1. **SharePoint 網站** -按一下 **[選擇網站** ]，然後按一下 **[選擇網站** ]，以指定要保留之商務網站的 SharePoint 和 OneDrive。 輸入您要保留之每個網站的 URL。 您也可以為 Microsoft 365 群組或 Microsoft 團隊新增 SharePoint 網站的 URL。 按一下 **[選擇**]，然後按一下 [ **完成**]。
-    
-      請參閱 **FAQ** 一節，以取得放置 Microsoft 365 群組和 microsoft 團隊保留的秘訣。
 
       > [!NOTE]
-      > 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`) 。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是非 custodial 保留的一部分，且其 UPN 已變更，您必須更新 [保留] 並指向新的 OneDrive URL。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](/onedrive/upn-changes) (英文)。
+      > 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`) 。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是非 custodial 保留的一部分，且其 UPN 已變更，您必須更新 [保留] 並指向新的 OneDrive URL。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](/onedrive/upn-changes)。
 
    1. **Exchange 公用資料夾** -將切換開關移至 [全部] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 請注意，您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [ **無** ]。
 
@@ -118,7 +116,7 @@ ms.locfileid: "50926371"
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>在 Microsoft 團隊和 Office 365 群組上進行保留
 
-Microsoft 團隊是以 Office 365 群組為基礎。 因此，在「高級 eDiscovery」中放置它們是非常類似的。 
+Microsoft 團隊是以 Office 365 群組為基礎。 因此，在「高級 eDiscovery」中放置它們是非常類似的。
 
 - **如何將其他 Microsoft 365 群組或 Microsoft 小組網站對應至保管人？如何在 Microsoft 365 群組和 Microsoft 團隊上放置非 Custodial 保留？** Microsoft 團隊是以 Microsoft 365 群組為基礎。 因此，將其保留在 eDiscovery 案例中非常類似。 將 Microsoft 365 群組和 Microsoft 小組置於暫止狀態時，請記住下列事項。
   - 若要將 Microsoft 365 群組和 Microsoft 小組中的內容設為暫止狀態，您必須指定與群組或小組相關聯的信箱和 SharePoint 網站。

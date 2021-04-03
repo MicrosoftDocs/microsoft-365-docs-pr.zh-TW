@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何在 Microsoft 合規性管理員中執行控制項的實施及測試。 指派工作、儲存檔，以及匯出報告。
-ms.openlocfilehash: c465a574ed9c1a8ad8ef9e2bfc7f864545ae28d9
-ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
+ms.openlocfilehash: e761d8d4410f1c52bb79d4a225eec407f1fd6a6e
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49849590"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570382"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>在合規性管理員中指派及完成改進動作
 
@@ -56,7 +56,9 @@ ms.locfileid: "49849590"
 
 2. 在 [編輯狀態] 飛入窗格中，選取 [ **指派物件** ] 方塊，以顯示 **建議的人員** 清單。 您可以從清單中選取使用者，或輸入要指派給其的人員的電子郵件地址。
 
-3. 選取 [ **儲存並關閉**]。 指派的使用者會收到一封電子郵件，說明已將改進動作指派給他們，並直接連結到 [改進] 動作。  (注意：在指派動作給美國政府團體 (GCC) 高的客戶時，將不會收到電子郵件。 ) 
+3. 選取 [ **儲存並關閉**]。 指派的使用者會收到一封電子郵件，說明已將改進動作指派給他們，並直接連結到 [改進] 動作。 
+> [!NOTE]
+> 美國政府社區 (GCC) 高和國防部門 (DoD) 客戶在指派改進動作時，將不會收到電子郵件。
 
 然後，已指派的使用者可以執行建議的動作。
 

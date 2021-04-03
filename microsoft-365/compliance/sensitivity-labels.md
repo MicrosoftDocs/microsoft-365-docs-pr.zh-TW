@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a540529c174cc12b0e037be4af4e08c29e3835ea
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 467960f2faf6c6262083ff238ee3b085e0e99129
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408598"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499671"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -229,20 +229,7 @@ ms.locfileid: "51408598"
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>敏感度標籤和 Azure 資訊保護
 
-如果您已使用 Azure 資訊保護部署標籤，請在開始使用敏感度標籤之前，先使用下列各節中的指引。
-
-### <a name="azure-information-protection-labels"></a>Azure 資訊保護標籤
-
-> [!NOTE]
-> Azure 入口網站中 Azure 資訊保護標籤的標籤管理功能即將在 **2021 年 3 月 31 日** 淘汰。 請透過官方的[淘汰聲明](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)深入了解。
-
-如果您因為您的租用戶尚不在[整合標籤平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)中而使用 Azure 資訊保護標籤，建議您在您啟用整合標籤前，避免建立敏感度標籤。 在此情況下，您在 Azure 入口網站中看到的標籤是 Azure 資訊保護標籤，而不是敏感度標籤。 這些標籤可由 Windows 電腦上的 Azure 資訊保護用戶端 (傳統) 使用，但不能由執行 macOS、iOS 或 Android 的裝置使用。 若要解決此問題，請[將這些標籤遷移](/azure/information-protection/configure-policy-migrate-labels)至敏感度標籤。 
-
-這兩組標籤所套用的中繼資料彼此相容，因此您不須在完成移轉時，重新標記文件和電子郵件。
-
-### <a name="azure-information-protection-clients"></a>Azure 資訊保護用戶端
-
-當您在 Windows 電腦上的 Microsoft 365 Apps 企業版應用程式中使用敏感度標籤時，您可以選擇使用 Azure 資訊保護用戶端，或使用 Office 內建的標記功能。
+當您在 Windows 電腦上的 Microsoft 365 Apps 中使用敏感度標籤時，您可以選擇使用 Office 內建的標記功能或 Azure 資訊保護用戶端。
 
 根據預設，安裝 Azure 資訊保護用戶端時，這些應用程式中的內建標記功能會關閉。 如需詳細資訊，包括如何變更此預設行為，請參閱 [Office 內建標籤用戶端和 Azure 資訊保護用戶端](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)。
 
@@ -258,21 +245,16 @@ ms.locfileid: "51408598"
 
 如果您是 Azure 資訊保護的新使用者，或您是剛轉移標籤的現有 Azure 資訊保護客戶，請參閱來自 Azure 資訊保護文件的[選擇要用於 Windows 電腦的標籤用戶端](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
 
-## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>敏感性標籤和 Microsoft Cloud App Security
+### <a name="azure-information-protection-labels"></a>Azure 資訊保護標籤
 
-您可以使用 Cloud App Security (CAS) 來探索、分類、加標籤，以及保護內容的第三方服務和應用程式 (例如 SalesForce、Box 或 Dropbox) 中的內容。 
+> [!NOTE]
+> Azure 入口網站中 Azure 資訊保護標籤的標籤管理功能已在 **2021 年 3 月 31 日** 遭取代。 請透過官方的[淘汰注意事項](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)深入了解。
 
-Cloud App Security 適用於 Azure 資訊保護標籤和敏感度標籤：
-
-- 如果標籤系統管理中心已將一或多個敏感度標籤[發佈](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)給至少一個使用者：使用敏感度標籤。
-
-- 如果標籤系統管理中心未發佈敏感度標籤：使用 Azure 資訊保護標籤。
-
-如需有關使用 Cloud App Security 搭配這些標籤的指示，請參閱 [Azure 資訊保護整合](/cloud-app-security/azip-integration)。
+如果您的租用戶尚未使用[統一標籤平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)，您必須先啟動統一標籤，才能使用敏感度標籤。 如需說明，請參閱[如何將 Azure 資訊保護標籤移轉至統一的敏感度標籤](/azure/information-protection/configure-policy-migrate-labels)。 
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>敏感度標籤和 Microsoft 資訊保護 SDK
 
-由於敏感度標籤是以純文字儲存在文件的中繼資料中，因此協力廠商的應用程式和服務都可讀取和寫入此標籤中繼資料，以補充您的標籤部署。 此外，軟體開發人員可以使用 [Microsoft 資訊保護 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)，完全支援跨多個平臺的標籤和加密功能。 若要深入了解，請參閱[技術社群部落格上的正式版本公告](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144)。 
+由於敏感度標籤是儲存在文件的中繼資料中，因此協力廠商的應用程式和服務都可讀取和寫入此標籤中繼資料，以補充您的標籤部署。 此外，軟體開發人員可以使用 [Microsoft 資訊保護 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)，完全支援跨多個平臺的標籤和加密功能。 若要深入了解，請參閱[技術社群部落格上的正式版本公告](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144)。 
 
 您也可以了解[與 Microsoft 資訊保護整合的合作夥伴解決方案](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657)。
 

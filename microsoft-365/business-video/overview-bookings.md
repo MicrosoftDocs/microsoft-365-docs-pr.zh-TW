@@ -2,8 +2,8 @@
 title: Microsoft 預約-簡介
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 預定。
-ms.openlocfilehash: 681667d8f399c0bf5ba1b84ee67352a30d10d78d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 826cb84acace03aaf18bcb9d3a58fa5a518d71ee
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422336"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578744"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Microsoft 預約簡介
 

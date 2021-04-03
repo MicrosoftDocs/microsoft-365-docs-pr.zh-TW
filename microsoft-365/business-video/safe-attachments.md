@@ -2,8 +2,8 @@
 title: 管理安全附件
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何管理安全附件。
-ms.openlocfilehash: 89297ec7daeca4b20c01baa9f9554d4574d9df6a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 9afbdef2c7b400cf0bee5ae1e1ac3a9de6588cb8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422276"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578708"
 ---
 # <a name="manage-safe-attachments"></a>管理安全附件
 
@@ -43,7 +43,7 @@ Microsoft Defender for Office 365 （以前稱為 Microsoft 365 ATP 或「高級
 1. 向右下向。 選擇 [ **啟用重新導向**]，然後輸入您的電子郵件地址或您想要查看封鎖附件的人員位址。
 1. 選取 [套用 **于**]，然後選取您的功能變數名稱。
 1. 選擇您所擁有的任何其他網域 (例如您要套用規則的 onmicrosoft.com 網域) 。 選取 [ **新增**]，然後按一下 **[確定]**。
-1. 選取 [儲存]。
+1. 選取 **[儲存]**。
 
 您的 ATP 安全附件規則已更新。
 

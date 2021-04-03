@@ -21,21 +21,14 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 44cb7b09c76ee5e49d2f556df104e55150212f30
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 582ecb0f9b46d877c30aa29334b30b9209c93993
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911779"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576934"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>如何支付您的訂閱費用
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 您可以使用信用卡或轉帳卡，或是銀行帳戶來支付您的訂閱費用。 在某些情況下，您可以使用支票或電匯 (EFT) 以透過發票付款。 如果您有帳單設定檔，您的選項會稍有不同。 如需詳細資訊，請參閱[如何使用帳單設定檔來支付您的訂閱費用](pay-for-subscription-billing-profile.md)。 如果您不確定您的帳戶是否有帳單設定檔，請參閱[了解帳單設定檔](manage-billing-profiles.md)。
 

@@ -2,8 +2,8 @@
 title: 設定 Microsoft 365 商務版特優訂閱
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何設定 Microsoft 365 商務版 Premium。
-ms.openlocfilehash: f8c40cc5bf5ef062826abc7ca04935950895ef43
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 2e6cdf3c2280b527571d62f5e3535dcea6ad3523
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422012"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578648"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>設定 Microsoft 365 商務進階版
 

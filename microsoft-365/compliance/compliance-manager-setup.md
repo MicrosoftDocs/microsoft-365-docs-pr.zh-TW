@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499027"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570555"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -30,7 +30,7 @@ ms.locfileid: "51499027"
 
 ## <a name="who-can-access-compliance-manager"></a>誰可以存取合規性管理員
 
-合規性管理員可供使用 Office 365 和 Microsoft 365 授權的組織使用，以及向美國政府社區雲端 (GCC) 中和 GCC 的高客戶。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+合規性管理員可供使用 Office 365 和 Microsoft 365 授權的組織使用，以及向美國政府社區雲端 (GCC)  (DoD) 客戶。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="before-you-begin"></a>在您開始之前
 
@@ -52,7 +52,7 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 擁有組織之全域系統管理員角色的人員可以設定合規性管理員的使用者權限。 您可以在 Office 365 安全性 & 規範中心以及 Azure Active Directory (Azure AD) 中設定許可權。
 
 > [!NOTE]
-> 美國政府社區中的客戶 (GCC) 高環境只能在 Azure AD 中為合規性管理員設定使用者權限和角色。 請參閱下列 Azure AD 指示和角色類型定義。
+> 美國政府社區中的客戶 (GCC) 高和國防部門 (DoD) 環境只能在 Azure AD 中為合規性管理員設定使用者權限和角色。 請參閱下列 Azure AD 指示和角色類型定義。
 
 若要在 Office 365 安全性 & 規範中心設定許可權並指派角色，請執行下列步驟：
 
@@ -100,7 +100,7 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 Microsoft 365 合規性中心的合規性管理員設定可讓您啟用及停用自動改進動作的測試。 這些設定也可讓您管理與改進動作相關聯之使用者的資料，包括將「改進」動作重新指派給其他使用者的功能。  只有具有全域系統管理員或合規性管理員角色的人員才能存取合規性管理員設定。
 
 > [!NOTE]
-> 因為在這些環境中無法使用安全分數，所以在 GCC 高環境中，客戶無法使用自動測試功能。 GCC 高的客戶必須手動實施並測試其改進動作。
+> 因為在這些環境中無法使用安全分數，所以在 GCC 高端和 DoD 環境中，客戶無法使用自動測試功能。 GCC 高和 DoD 的客戶必須手動實施並測試其改進動作。
 
 ### <a name="set-up-automated-testing"></a>設定自動測試
 

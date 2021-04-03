@@ -14,26 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 瞭解如何在 Microsoft 365 系統管理中心中啟動和管理協力廠商應用程式。
-ms.openlocfilehash: f560b23871fc6d6ecb319a5704453f2400cb9982
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911407"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576910"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理組織的協力廠商應用程式訂閱
 
 您可以在新的 Microsoft 365 系統管理中心中管理協力廠商應用程式的授權和帳單。 更新的功能包括增強型訂閱管理、改進的計費資訊存取，以及更高的管理帳單的彈性。 訂閱管理是以 Microsoft 更新的商務平臺為基礎。 這適用于客戶直接購買的軟體即服務應用程式，或來自協力廠商提供者。
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
-
 您可以在已開啟預覽模式的 Microsoft 365 系統管理中心中管理協力廠商應用程式的授權和帳單。 更新的功能包括增強型訂閱管理、改進的計費資訊存取，以及更高的管理帳單的彈性。 訂閱管理是以 Microsoft 更新的商務平臺為基礎。 這適用于客戶直接購買的軟體即服務應用程式，或來自協力廠商提供者。
-
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>如何取得軟體即服務應用程式
 

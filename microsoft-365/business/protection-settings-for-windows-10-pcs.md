@@ -2,8 +2,8 @@
 title: 編輯或建立 Windows 10 電腦的裝置保護設定
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 瞭解 Microsoft 365 for business 中可用的設定，以保護 Windows 10 裝置。
-ms.openlocfilehash: db310731ef996500de61535b5b9f99e240ec75ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912795"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578220"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>編輯或建立 Windows 10 電腦的裝置保護設定
 
@@ -70,7 +70,7 @@ ms.locfileid: "50912795"
   
 |||
 |:-----|:-----|
-|設定  <br/> |描述  <br/> |
+|設定  <br/> |說明  <br/> |
 |使用 Windows Defender 防毒軟體來協助保護電腦免於遭受病毒與其他威脅的侵害  <br/> |需要開啟 Windows Defender 防毒軟體，以保護電腦免於遭受連接至網際網路時的安全威脅。  <br/> |
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |開啟 Microsoft Edge 中的設定，以協助保護使用者免受惡意網站與下載檔案的威脅。  <br/> |
 |使用能減少裝置受攻擊面的規則  <br/> |設定為 [開啟] 時，受攻擊面縮減能協助系統封鎖惡意程式碼通常會用來感染裝置的動作和 App。只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。請參閱[縮減受攻擊面](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)以深入了解。  <br/> |

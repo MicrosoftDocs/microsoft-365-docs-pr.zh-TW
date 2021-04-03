@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員可協助組織簡化及自動化風險評估，並建議採取的措施以協助解決風險。
-ms.openlocfilehash: 80d955f3d321ef8f82fe3654e4d7d08572ec72cc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f938bb6b82ee7e24dd58b66597f0af7a3a00a9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922727"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570450"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合規性管理員
 
@@ -30,7 +30,7 @@ ms.locfileid: "50922727"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新功能：相容性管理員的公開發行版
 
-合規性管理員現在已 (GA) 成為 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)內的端對端規範管理解決方案。 在此版本中，合規性管理員會從 Microsoft 服務信任入口網站中的先前位置轉換。 合規性管理員現在也可供美國政府社區 (GCC) 適中和 GCC 高的客戶。
+合規性管理員現在已 (GA) 成為 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)內的端對端規範管理解決方案。 在此版本中，合規性管理員會從 Microsoft 服務信任入口網站中的先前位置轉換。 合規性管理員也可供美國政府社區 (GCC) 適中、GCC 高及國防部門 (DoD) 客戶。
 
 公開的合規性分數的公開預覽已演變成集中式工具，其具有增強的合規性管理功能和更輕鬆使用。  GA 發行版本提供了更大的預先構建評估集合，可協助您擴大合規性活動。
 
@@ -97,9 +97,9 @@ ms.locfileid: "50922727"
 
 評估是指來自特定法規、標準或原則的控制項群組。 完成評估內的動作可協助您符合標準、法規或法律的需求。 例如，您可能會有一個評估，當您完成其中的所有動作時，可協助您將 Microsoft 365 設定放入符合 ISO 27001 的需求。
 
-評估包含數個元件：
+評定有數個元件：
 
-- **範圍內的服務**：適用于評估的特定 Microsoft 服務集合
+- **範圍內服務**：適用於評定的特定一組 Microsoft 服務
 - **Microsoft managed controls**： microsoft 雲端服務的控制項，microsoft 代表您執行的動作
 - **您的控制項**：有時候稱為客戶管理控制項，這些是由您的組織所實施及管理的控制項。
 - **共用控制項**：這些是您的組織和 Microsoft 共同共同執行的控制措施
@@ -113,7 +113,7 @@ ms.locfileid: "50922727"
 
 ### <a name="templates"></a>範本
 
-合規性管理員提供範本，協助您快速建立評估。 您可以修改這些範本，以依據您的需求建立評估優化。 您也可以建立具有您自己的控制項和動作的範本，以建立自訂評估。 例如，您可能想要範本涵蓋內部的商務程式控制，或是一個 150 + 預先建立的評估範本未涵蓋的地區性資料保護標準。
+合規性管理員提供範本，協助您快速建立評估。 您可以修改這些範本，以依據您的需求建立評估優化。 您也可以建立具有您自己的控制項和動作的範本，以建立自訂評估。 例如，您可能會想要範本涵蓋內部的商務程式控制，或不是由其中一個 325 + 預先建立的評估範本所涵蓋的地區性資料保護標準。
 
 ##### <a name="learn-more"></a>深入了解
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何使用 Microsoft 規範設定分析器，透過 Microsoft 合規性管理員快速開始和執行。
-ms.openlocfilehash: a77f38dcc0c0215e539c868e47135f5d7194f4b6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b91ac274d7270f5be9530742cf711a3918b287d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906035"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570372"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>合規性管理員的 Microsoft 規範設定分析器 (預覽) 
 
@@ -33,7 +33,7 @@ MCCA 可協助您快速查看合規性管理員中的哪些改進動作適用于
 
 若要瞭解 MCCA 的其他資源，請造訪 [GitHub 上的讀我檔案指示](https://github.com/OfficeDev/MCCA#overview)。 此頁面提供有關必要條件的詳細資訊，並提供完整的安裝指示。 您不需要 GitHub 帳戶即可存取此頁面。
 
-**可用性**： MCCA 可供所有使用 Office 365 和 Microsoft 365 授權和美國政府社區 (GCC) 適中和 GCC 高客戶的組織使用，並提供將服務擴充為 DOD 客戶的計畫。
+**可用性**： MCCA 可供所有使用 Office 365 和 Microsoft 365 授權和美國政府社區 (GCC)  (DoD) 客戶的組織使用。
 
 ## <a name="install-mcca-and-run-a-report"></a>安裝 MCCA 並執行報告
 
@@ -102,8 +102,8 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
   | Input |  國家/地區 | 
   | :------------- | :------------: |
   | 1 | 亞太地區 |
-  | 2  | 澳洲 |
-  | 3  | 加拿大 |
+  | 第 | 澳洲 |
+  | 個 | 加拿大 |
   | 4  | 歐洲 (除外法國) /中東/非洲 |
   | 5  | 法國 |
   | 6  | 印度 |
@@ -113,7 +113,7 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 10  | 南美洲 |
   | 11  | 南非 |
   | 12  | 瑞士 |
-  | 13  | 阿拉伯聯合大公國 |
+  | 13 | 阿拉伯聯合大公國 |
   | 14  | 英國 |
 
 
@@ -129,10 +129,10 @@ C:\Users \<username> \AppData\Local\Microsoft\MCCA。
 ![MCCA 角色](../media/compliance-manager-mcca-roles.png "MCCA 角色")
 
 例外狀況：
-1. 使用者將無法產生「用於 Exchange Online 的 IRM」一節中的 IP 報告。
-2. 使用者將能夠產生「用於 Exchange Online 的 IRM」一節中的 IP 報告。
+1. 使用者無法產生「用於 Exchange Online 的 IRM」一節中的 IP 報告。
+2. 使用者將能夠產生「將 IRM 用於 Exchange Online」一節中的 IP 報告。
 3. 使用者將能夠對「在 O365 啟用通訊法規遵從性」一節中，產生 IP 的報告。
-4. 使用者將無法產生「在 Office 365 中啟用審核」一節中的 IP 報告。
+4. 使用者無法產生「在 Office 365 中啟用審核」一節中的 IP 報告。
 5. 使用者將會產生「在 Office 365 中啟用審核」一節中的 IP 報告。
 
 #### <a name="solutions-summary-section"></a>解決方案摘要區段

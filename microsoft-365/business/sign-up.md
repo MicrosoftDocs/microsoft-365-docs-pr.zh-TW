@@ -2,8 +2,8 @@
 title: 註冊取得 Microsoft 365 商務進階版
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解 Microsoft 365 商務版 Premium 包含的專案，並取得註冊 Microsoft 365 商務版 Premium 的逐步指引。
-ms.openlocfilehash: 54a8e92ccced24f446e73a96f75e4aa1531a95aa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4aa1ae9ea48863434c960da69e41ffb2d3a0a89
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912503"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578100"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>註冊取得 Microsoft 365 商務進階版
 
@@ -62,7 +62,7 @@ ms.locfileid: "50912503"
 2. 在下一個頁面上，找出每月成本，然後向下翻頁以進一步瞭解 Microsoft 365 中包含的專案。 在 [Microsoft 365 商務版精品] 底下，選取 [ **立即購買**]。
 3. 在 [ **謝謝您選擇 Microsoft 365 商務版** ] 頁面上，輸入您的資訊以開始。
 4. 在 **步驟 1** 中，輸入您已經使用的電子郵件地址。 這可以是您目前的工作電子郵件地址或您想要 Microsoft 用來在安裝期間與您通訊的任何位址。 也就是我們傳送帳單和續訂資訊的位址。 然後選取 [ **設定帳戶**]。
-5. 在 [ **步驟 2**] 中，輸入您的姓名、商務電話號碼、公司名稱和位置。 您的國家或地區決定您從 Microsoft 取得的確切服務，而且在您完成此步驟後，就無法變更。 選取 [下一步]。
+5. 在 [ **步驟 2**] 中，輸入您的姓名、商務電話號碼、公司名稱和位置。 您的國家或地區決定您從 Microsoft 取得的確切服務，而且在您完成此步驟後，就無法變更。 選取 **[下一步]**。
     > [!NOTE]
     > 我們會在系統管理中心顯示您的公司名稱;這是您管理 Microsoft 365 使用者、授權等等的所在位置。 我們也會將其包含在任何內部 (SharePoint) 網站 URLs。
 6. 在 [ **步驟 3**：

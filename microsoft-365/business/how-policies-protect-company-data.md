@@ -2,8 +2,8 @@
 title: Microsoft 365 for business 中的原則如何保護公司資料
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: 若要保護使用者個人裝置上的公司資料，請使用以特定裝置和安全性群組為目標的原則。
-ms.openlocfilehash: 18bf29d82b8020d31fec681b2114af86f52cad9c
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 5c6a4b85b080c6c1afaf6ac5bec046f2a539ee20
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471152"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578420"
 ---
 # <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Microsoft 365 for business 中的原則如何保護公司資料
 

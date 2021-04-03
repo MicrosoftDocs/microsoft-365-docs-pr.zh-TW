@@ -2,8 +2,8 @@
 title: 安全地共用您公司以外的檔案
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在外部安全地共用您的商務檔案。
-ms.openlocfilehash: e023ccc48d4489d7d50ea688c9e5b16c1b9a3758
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 317267b4051b4e250cf53f2fbc375b9277c7d000
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422084"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578672"
 ---
 # <a name="securely-share-files-externally"></a>安全地於外部共用檔案
 

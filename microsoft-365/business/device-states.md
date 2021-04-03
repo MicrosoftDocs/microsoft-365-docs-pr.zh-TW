@@ -2,8 +2,8 @@
 title: 裝置狀態
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: 深入瞭解 Microsoft 365 for business 中的 [系統管理] 主裝置的 [裝置動作] 清單中的各種裝置狀態。
-ms.openlocfilehash: 64138e2b6ae73c067709cde1912a96615d08ebf1
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: e6f1b428413d094e0a1ce3afb026528074038736
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471172"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578460"
 ---
 # <a name="device-states"></a>裝置狀態
 
@@ -52,7 +52,7 @@ Devices in the **Device actions** list (Admin home \> **Device actions**) can ha
 |抹除進行中  <br/> |已發出重設成出廠預設值。  <br/> |
 |抹除失敗  <br/> |無法進行原始重設。  <br/> |
 |取消擦除  <br/> |已取消工廠清除。  <br/> |
-|狀況不良  <br/> |動作暫止（或進行中），但裝置尚未簽入時30天。  <br/> |
+|狀況不良  <br/> |動作處於擱置狀態 (或正在進行中) ，但裝置尚未檢查30天以上的時間。  <br/> |
 |刪除擱置中  <br/> |刪除動作擱置中。  <br/> |
 |已探索  <br/> |Microsoft 365 商務版 Premium 已偵測到裝置。  <br/> |
    

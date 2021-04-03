@@ -2,8 +2,8 @@
 title: 將 Windows 10 裝置重設成出廠預設值
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: 瞭解如何使用 Microsoft 365 for business 以原始方式重設您管理的 Windows 10 裝置，並在購買時將其還原為原始設定。
-ms.openlocfilehash: 6b82f502f8fdcbbd2338b2a0e2ad69d230a693cb
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 29d5b8758ef7d86c7ac283460d0a1a87bffaf5f3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470800"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578200"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>將 Windows 10 裝置重設成出廠預設值
 
@@ -39,11 +39,11 @@ ms.locfileid: "44470800"
   
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
     
-2. 在左側導覽中，選擇 [**裝置** \> **管理**]。
+2. 在左側導覽中，選擇 [ **裝置** \> **管理**]。
 
-3. 在 [**管理**] 頁面上，選取您想要從中移除資料之裝置旁的核取方塊，然後在 [**管理**] 下拉式清單中選擇 [**原廠重設**]。
+3. 在 [ **管理** ] 頁面上，選取您想要從中移除資料之裝置旁的核取方塊，然後在 [ **管理** ] 下拉式清單中選擇 [ **原廠重設**]。
     
-4. 在 [**您確定要原廠重設下列裝置**] 窗格中，選擇 [**確認** \> **關閉**]。
+4. 在 [ **您確定要原廠重設下列裝置** ] 窗格中，選擇 [ **確認** \> **關閉**]。
     
   
 

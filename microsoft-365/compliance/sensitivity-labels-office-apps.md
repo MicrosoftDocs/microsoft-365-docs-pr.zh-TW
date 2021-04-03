@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72b5422de2ee4b01e3209ec78ea0c10f1285d682
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034192"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498823"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -119,7 +119,7 @@ Office 內建標籤用戶端會從下列系統管理中心下載敏感度標籤�
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 內建標籤用戶端和 Azure 資訊保護用戶端
 
-如果使用者已安裝其中一個 Azure 資訊保護用戶端 ([統一標籤用戶端](/azure/information-protection/rms-client/aip-clientv2)或[傳統用戶端](/azure/information-protection/rms-client/aip-client))，預設會關閉其 Office 應用程式中的內建標籤用戶端。 
+如果使用者[已安裝 Azure 資訊保護用戶端](/azure/information-protection/rms-client/aip-clientv2)，預設會關閉其 Office 應用程式中的內建標籤用戶端。 
 
 若要使用內建標籤，而非適用於 Office 應用程式的 Azure 資訊保護用戶端，建議您使用群組原則設定 **受控增益集清單**，如同 [由於 Office 2013 和 Office 2016 程式的群組原則設定而未載入任何增益集](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)所記載。
 

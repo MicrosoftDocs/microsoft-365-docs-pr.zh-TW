@@ -2,8 +2,8 @@
 title: 建立具有來賓的小組
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在 Microsoft 小組中建立具有來賓的團隊。
-ms.openlocfilehash: 795e236ca94a8ac585b3c5ba3be90cf56ecb0751
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a6d30684bed3a750a11e311f4e47d88940adbd0f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421784"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578588"
 ---
 # <a name="create-a-team-with-guests"></a>建立具有來賓的小組
 

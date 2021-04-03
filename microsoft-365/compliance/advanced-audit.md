@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: 0a77a5c54ce328a3966a952fc8fef08553f42462
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923483"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574652"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
@@ -153,7 +153,7 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
-> 您必須在 Exchange Online PowerShell 中執行下列命令，以便在稽核記錄搜尋結果中包含 SearchQueryInitiatedExchange 事件 (由指定的 E5 使用者執行)：`Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
+> 您必須在 Exchange Online PowerShell 中執行下列命令，以便在稽核記錄搜尋結果中包含 SearchQueryInitiatedSharePoint 事件 (由指定的 E5 使用者執行)：`Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
 在多地理位置環境中，您必須在使用者信箱所在的樹系中執行 **Set-Mailbox** 命令。 若要識別使用者的信箱位置，請執行下列命令：`Get-Mailbox <user identity> | FL MailboxLocations`。
 如果 `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` 命令之前曾在與使用者信箱所在位置不同的樹系中執行，則您必須從使用者的信箱移除 SearchQueryInitiated 值 (透過執行 `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`)，然後將該命令新增至使用者信箱所在位置樹系中的使用者信箱中。
 

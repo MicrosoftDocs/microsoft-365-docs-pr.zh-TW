@@ -2,8 +2,8 @@
 title: 設定 Outlook 以收發電子郵件
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何設定適用于 Microsoft 365 電子郵件的 Outlook。
-ms.openlocfilehash: b27f59e50190a4f355ff1f4c346161b8efc4219e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 9dc0ed41df4aaadee060e0c7606600ba5512df09
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421988"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578636"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>為商務用 Microsoft 365 電子郵件設定 Outlook 
 

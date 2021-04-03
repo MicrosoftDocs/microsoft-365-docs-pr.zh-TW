@@ -2,8 +2,8 @@
 title: AutoPilot 裝置錯誤疑難排解
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
 description: 瞭解如何疑難排解在使用 Microsoft 365 商務版 Premium 中的 AutoPilot 裝置檔案時，可能會看到的錯誤。
-ms.openlocfilehash: bec5126696ee322db42e4b7c5cd8e0df485ab2c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1078ab74b07952e4bb565555a081b98ecce9db5c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403403"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578080"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>AutoPilot 裝置錯誤疑難排解
 

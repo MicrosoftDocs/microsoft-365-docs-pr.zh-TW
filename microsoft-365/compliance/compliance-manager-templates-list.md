@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員提供範本，以建立與國家、地區和行業法規、標準及法律相關的評估。
-ms.openlocfilehash: b83ad63de34217ac7c469dc784ca85644f6a5e3d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8cdeb6da09a42ad0331690b843ab4f039a5c2bf6
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922817"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570565"
 ---
 # <a name="compliance-manager-templates-list"></a>合規性管理員範本清單
 
@@ -60,7 +60,7 @@ ms.locfileid: "50922817"
 - NIST 800-53 Rev 4
 
 > [!NOTE]
-> 針對美國政府社區 (GCC) 中和 GCC 高的客戶，除了上述範本之外，還會包括 Cybersecurity 成熟度模型憑證 (CMMC) 等級1到5範本。
+> 針對美國政府社區 (GCC) 適中、GCC 高階及國防部門 (DoD) 客戶：除了以上所列的範本之外，還會包含 Cybersecurity 成熟度模型認證 (CMMC) 階層1到5範本。
 
 ## <a name="premium-templates"></a>精品範本
 
