@@ -57,23 +57,6 @@
       items:
         - name: Microsoft 受管理電腦的先決條件
           href: get-ready/prerequisites.md
-        - name: 準備網路
-          href: get-ready/network.md
-        - name: 準備內部部署資源存取
-          href: get-ready/authentication.md
-        - name: 準備對應磁碟機
-          href: get-ready/mapped-drives.md
-        - name: 準備憑證和網路設定檔
-          href: get-ready/certs-wifi-lan.md
-        - name: 來賓帳戶的先決條件
-          href: get-ready/guest-accounts.md
-        - name: 準備列印資源
-          href: get-ready/printing.md
-        - name: 準備應用程式
-          href: get-ready/apps.md
-          items:
-            - name: 使用 Microsoft 諮詢服務
-              href: get-ready/apps-MCS.md
         - name: 使用整備評估工具
           href: get-ready/readiness-assessment-tool.md
           items:
@@ -81,6 +64,23 @@
               href: get-ready/readiness-assessment-fix.md
             - name: 可下載的整備評估檢查程式
               href: get-ready/readiness-assessment-downloadable.md
+        - name: 來賓帳戶的先決條件
+          href: get-ready/guest-accounts.md
+        - name: 準備網路
+          href: get-ready/network.md
+        - name: 準備憑證和網路設定檔
+          href: get-ready/certs-wifi-lan.md
+        - name: 準備內部部署資源存取
+          href: get-ready/authentication.md
+        - name: 準備應用程式
+          href: get-ready/apps.md
+          items:
+            - name: 使用 Microsoft 諮詢服務
+              href: get-ready/apps-MCS.md
+        - name: 準備對應磁碟機
+          href: get-ready/mapped-drives.md
+        - name: 準備列印資源
+          href: get-ready/printing.md
     - name: 開始使用 Microsoft 受管理的電腦
       href: get-started/index.md
       items:

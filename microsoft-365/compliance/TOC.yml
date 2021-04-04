@@ -710,6 +710,8 @@
               href: download-documents-from-review-set.md
             - name: 從檢閱集匯出文件
               href: export-documents-from-review-set.md
+            - name: 將文件匯出至 Azure 儲存體帳戶
+              href: download-export-jobs.md
         - name: 管理工作
           href: managing-jobs-ediscovery20.md
         - name: 設定案例設定
