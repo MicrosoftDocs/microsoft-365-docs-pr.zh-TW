@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 深入瞭解 Microsoft 365 群組到期原則。
-ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fdef06918ec2c35547c084e5f431aa7bef8d6a8c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052299"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587620"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 群組到期原則
 
@@ -53,7 +53,7 @@ ms.locfileid: "51052299"
 |角色|可以執行的動作|
 |---------|---------|
 |Office 365 全域管理員 (于 Azure 中，公司系統管理員) ，使用者管理員|建立、讀取、更新或刪除 Microsoft 365 群組到期原則設定。|
-|User|更新或 [還原](/azure/active-directory/users-groups-roles/groups-restore-deleted) 擁有的 Microsoft 365 群組|
+|使用者|更新或 [還原](/azure/active-directory/users-groups-roles/groups-restore-deleted) 擁有的 Microsoft 365 群組|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何設定到期原則
 
@@ -63,7 +63,7 @@ ms.locfileid: "51052299"
 
 如果群組沒有擁有者，到期電子郵件將會移至指定的系統管理員。
 
-您可以設定所有群組的原則，只為選取的群組，或透過選取 [ **無**] 完全關閉。 請注意，目前您不能針對不同的群組使用不同的原則。
+您可以設定所有群組的原則、只 () 的群組，或選取 [ **無**] 500 以完全關閉。 請注意，目前您不能針對不同的群組使用不同的原則。
 
 ![Azure Active Directory 中群組到期設定的螢幕擷取畫面](../media/azure-groups-expiration-settings.png)
 

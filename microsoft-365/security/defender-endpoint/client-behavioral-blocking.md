@@ -1,6 +1,6 @@
 ---
 title: 用戶端行為封鎖
-description: 用戶端行為封鎖是 Microsoft Defender ATP 中行為封鎖和包容功能的一部分
+description: 用戶端行為封鎖是 Microsoft Defender for Endpoint 中行為封鎖和包容功能的一部分
 keywords: 行為封鎖，快速保護，用戶端行為，Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c37a1180f9def51daa4229418b05abe7cf787aa3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 9fcff96b2583c6ef6bec05429ec50a71f3872e43
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165258"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587104"
 ---
 # <a name="client-behavioral-blocking"></a>用戶端行為封鎖
 
@@ -85,17 +85,17 @@ ms.locfileid: "51165258"
 
 - [裝置架至 Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure)
 
-- [組塊模式中的 EDR](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
+- [封鎖模式中的 EDR](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 
-- [受攻擊面縮小](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+- [攻擊面縮減](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
 - [下一代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (防病毒) 
 
 ## <a name="related-articles"></a>相關文章
 
-- [行為封鎖和包容](behavioral-blocking-containment.md)
+- [行為封鎖和包含專案](behavioral-blocking-containment.md)
 
-- [意見反應-環路封鎖](feedback-loop-blocking.md)
+- [意見反應迴圈封鎖](feedback-loop-blocking.md)
 
 - [ (博客) 行為封鎖與包容：將光學器件轉換成保護](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
 

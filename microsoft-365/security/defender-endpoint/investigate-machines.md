@@ -1,5 +1,5 @@
 ---
-title: 調查在 Defender 中的 Endpoint Defender ATP 裝置清單中的裝置
+title: 調查 [Defender for Endpoint Devices] 清單中的裝置
 description: 查看警示、網路連線資訊、新增裝置標記和群組，以及檢查服務健康情況，以調查受影響的裝置。
 keywords: 裝置，標記，群組，端點，警示佇列，警示，裝置名稱，網域，最後查看的，內部 IP，作用中的警示，威脅類別，篩選，排序，檢查警示，網路，連線，類型，stealer，勒索軟體，exploit，low，low，嚴重性，服務健康情況
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f5415b6337d21b780a75a192a565078a6cacc06
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185728"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587716"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>調查 Microsoft Defender for Endpoint Devices 清單中的裝置
 
@@ -45,7 +45,7 @@ ms.locfileid: "51185728"
 
 - [裝置清單](investigate-machines.md)
 - [警示佇列](alerts-queue.md)
-- [安全性操作儀表板](security-operations-dashboard.md)
+- [ 安全性操作儀表板](security-operations-dashboard.md)
 - 任何個別警示
 - 任何個別檔詳細資料檢視
 - 任何 IP 位址或網域詳細資料檢視
@@ -67,10 +67,10 @@ ms.locfileid: "51185728"
 
 回應動作會沿著特定裝置頁面的頂端執行，並包含：
 
-- 管理標記
+- 管理標籤
 - 隔離裝置
 - 限制應用程式執行
-- 執行防病毒掃描
+- 執行防毒掃描
 - 收集調查套件
 - 啟動 Live Response Session
 - 啟動自動調查
@@ -151,7 +151,7 @@ ms.locfileid: "51185728"
 
 ![安全性建議的圖像] 索引標籤](images/security-recommendations-device.png)
 
-### <a name="software-inventory"></a>軟體清查
+### <a name="software-inventory"></a>軟體庫存
 
 [ **軟體清查** ] 索引標籤可讓您在裝置上查看軟體，以及任何弱點或威脅。 選取軟體的名稱會帶您前往 [軟體詳細資料] 頁面，您可以在此頁面上查看安全性建議、發現的漏洞、已安裝的裝置及版本發行。 詳細資訊請參閱[軟體清查](tvm-software-inventory.md)
 
@@ -201,4 +201,4 @@ ms.locfileid: "51185728"
 - [調查與 Defender for Endpoint alert 相關聯的網域](investigate-domain.md)
 - [調查 Endpoint for Endpoint 中的使用者帳戶](investigate-user.md)
 - [安全性建議](tvm-security-recommendation.md)
-- [軟體清查](tvm-software-inventory.md)
+- [軟體庫存](tvm-software-inventory.md)

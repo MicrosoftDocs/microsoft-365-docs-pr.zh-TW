@@ -1,6 +1,6 @@
 ---
-title: 行為封鎖和包容
-description: 深入瞭解 Microsoft Defender ATP 中的行為封鎖和包容功能
+title: 行為封鎖和包含專案
+description: 深入瞭解 Microsoft Defender for Endpoint 中的行為封鎖和包容功能
 keywords: Microsoft Defender ATP，EDR in 封鎖模式，被動模式封鎖
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: dcad3b7233f2efd444d41c15916eaae195634c8c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7cea65292c427cb953e2e8e3ca866c89f83128b1
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166230"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587164"
 ---
-# <a name="behavioral-blocking-and-containment"></a>行為封鎖和包容
+# <a name="behavioral-blocking-and-containment"></a>行為封鎖和包含專案
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "51166230"
 
 行為封鎖和包容功能可在威脅已開始執行時，根據其行為和程式樹，協助識別及停止威脅。 下一代保護、EDR 和 Defender for Endpoint 元件和功能可搭配行為封鎖和包容功能一起運作。 
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="行為封鎖和包容":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="行為封鎖和包含專案":::
 
 行為封鎖和包容功能可與使用的 Defender 的多個元件和功能搭配使用，以立即停止攻擊，並防止攻擊的進展。
 

@@ -1,5 +1,5 @@
 ---
-title: 調查在正向 proxy 之後發生的連接事件
+title: 調查正向 Proxy 背後發生的連線事件。
 description: 瞭解如何在 Microsoft Defender ATP 中透過網路保護使用高級 HTTP 層級監控，它會向實際目標（而非 proxy）進行曲面。
 keywords: proxy，網路保護，轉寄 proxy，網路事件，審核，封鎖，功能變數名稱，網域
 search.product: eADQiWindows 10XVcnh
@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7eaa4bb76d7607f0b55c87482d1104a0897c9d36
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 28d8a113ed77e9624bd914571b1af4a7ece2aa5c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186086"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587560"
 ---
-# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>調查在正向 proxy 之後發生的連接事件
+# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>調查正向 Proxy 背後發生的連線事件。
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

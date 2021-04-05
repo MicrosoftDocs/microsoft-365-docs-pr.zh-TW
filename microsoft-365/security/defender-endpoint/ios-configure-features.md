@@ -1,5 +1,5 @@
 ---
-title: 設定 Microsoft Defender ATP 以取得 iOS 功能
+title: 設定 iOS 功能端點的 Microsoft Defender
 description: 說明如何部署 Microsoft Defender ATP 以取得 iOS 功能
 keywords: microsoft，defender，atp，ios，設定，功能，ios
 search.product: eADQiWindows 10XVcnh
@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18fbc13614753ae57856a124d76bbad682ab88e5
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 8f74d4799bcb02051cddd09b80ed6ab50258302b
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379346"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587224"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-for-ios-features"></a>設定 iOS 功能端點的 Microsoft Defender
 

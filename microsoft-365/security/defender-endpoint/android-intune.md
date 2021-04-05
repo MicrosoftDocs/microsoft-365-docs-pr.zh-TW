@@ -1,7 +1,7 @@
 ---
-title: 使用 Microsoft Intune 部署適用于 Android 的 Microsoft Defender ATP
-description: 說明如何使用 Microsoft Intune 部署 Microsoft Defender ATP for Android
-keywords: microsoft、defender、atp、android、安裝、部署、卸載、
+title: 使用 Microsoft Intune 部署 Android 版適用於端點的 Microsoft Defender
+description: 說明如何使用 Microsoft Intune 為 Android 部署 Microsoft Defender
+keywords: microsoft、defender、atp、mde、android、安裝、部署、卸載
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e557f60346b2f68354df621b6e4812eac775d812
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fdfc6e63945e15ce2d1f1a293c377f641eeb9bc4
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165666"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587692"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>使用 Microsoft Intune 部署適用于 Android 的 Microsoft Defender 端點 
+# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>使用 Microsoft Intune 部署 Android 版適用於端點的 Microsoft Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,7 +55,7 @@ ms.locfileid: "51165666"
 
 2. 在 [ **新增應用程式** ] 頁面上，于 [ *應用程式資訊* ] 區段中輸入： 
 
-   - **Name** 
+   - **名稱** 
    - **描述**
    - **發行者** 為 Microsoft。
    - **應用商店 url** 為 https://play.google.com/store/apps/details?id=com.microsoft.scmx 端點應用程式 GOOGLE Play Store url (Defender)  
@@ -261,5 +260,5 @@ ms.locfileid: "51165666"
 
 
 ## <a name="related-topics"></a>相關主題
-- [適用于 Android 的 Microsoft Defender 端點簡介](microsoft-defender-endpoint-android.md)
-- [針對 Android 功能設定 Microsoft Defender for Endpoint 功能](android-configure.md)
+- [Android 版適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-android.md)
+- [設定 Android 版適用於端點的 Microsoft Defender 功能](android-configure.md)

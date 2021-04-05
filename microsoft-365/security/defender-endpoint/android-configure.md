@@ -1,7 +1,7 @@
 ---
-title: 設定適用于 Android 功能的 Microsoft Defender ATP
-description: 說明如何設定適用于 Android 的 Microsoft Defender ATP
-keywords: microsoft、defender、atp、android、configuration
+title: 設定 Android 版適用於端點的 Microsoft Defender 功能
+description: 說明如何為 Android 設定 Microsoft Defender for Endpoint
+keywords: microsoft、defender、atp、mde、android、configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4325020e653f14898ece4192e03cbf8b90131136
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c395aafc8a468cfdeaea973ab02421212870192a
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163444"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587212"
 ---
 # <a name="configure-defender-for-endpoint-for-android-features"></a>為 Android 功能設定 Defender for Endpoint
 
@@ -52,5 +51,5 @@ ms.locfileid: "51163444"
 > 適用于 Android 的 Defender for Android 會使用 VPN，以便提供 Web 保護功能。 這不是一般 VPN，也就是本機/自我迴圈的 VPN，不會對裝置以外的流量進行流量。 如需詳細資訊，請參閱 [在執行 Android 的裝置上設定 web 保護](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android)。
 
 ## <a name="related-topics"></a>相關主題
-- [適用于 Android 的 Microsoft Defender 端點簡介](microsoft-defender-endpoint-android.md)
-- [使用 Microsoft Intune 部署適用于 Android 的 Microsoft Defender 端點](android-intune.md)
+- [Android 版適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-android.md)
+- [使用 Microsoft Intune 部署 Android 版適用於端點的 Microsoft Defender](android-intune.md)

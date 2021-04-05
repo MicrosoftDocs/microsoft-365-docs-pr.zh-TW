@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea6beba2d17b72f100703d26dd4106d0537c6fa6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a72b742d8f4a69d2e38cf4fa234ba5b7e2961ac6
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058075"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587608"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新功能
+# <a name="whats-new-in-microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender 新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -53,22 +52,22 @@ ms.locfileid: "51058075"
 - [Windows 虛擬桌面](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint 現在會新增對 Windows 虛擬桌面的支援。
 
 ## <a name="december-2020"></a>2020 年 12 月
-- [用於 iOS 的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 現在新增 iOS 的支援。 瞭解如何為 iOS 安裝、設定、更新及使用 Microsoft Defender for Endpoint。
+- [iOS 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 現在新增 iOS 的支援。 瞭解如何為 iOS 安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 
 ## <a name="september-2020"></a>2020 年 9 月
-- [適用于 Android 的 Microsoft Defender Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 現在新增了 Android 的支援。 瞭解如何安裝、設定、更新和使用適用于 Android 的 Microsoft Defender for Endpoint。
+- [Android 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 現在新增了 Android 的支援。 瞭解如何安裝、設定、更新和使用適用于 Android 的 Microsoft Defender for Endpoint。
 - [威脅與弱點管理 macOS 支援](tvm-supported-os.md)<br> MacOS 的威脅和弱點管理現在位於公開預覽中，而且會持續偵測 macOS 裝置上的漏洞，以協助您著重于風險，以協助您優先考慮修正。 若要深入瞭解，請參閱 [Microsoft 技術社區的博客文章](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)。
 
 
 ## <a name="august-2020"></a>2020年 8月
-- [適用于 Android 的 Microsoft Defender Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 現在新增了 Android 的支援。 瞭解如何安裝、設定及使用適用于 Android 的 Microsoft Defender for Endpoint。
+- [Android 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 現在新增了 Android 的支援。 瞭解如何安裝、設定及使用適用于 Android 的 Microsoft Defender for Endpoint。
 
 
 ## <a name="july-2020"></a>2020 年 7 月
-- [為憑證建立指示器](manage-indicators.md) <br> 建立指示器以允許或封鎖憑證。 
+- [建立憑證的指示器](manage-indicators.md) <br> 建立指示器以允許或封鎖憑證。 
 
 ## <a name="june-2020"></a>2020 年 6 月
-- [適用于 Linux 的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint 現在新增了對 Linux 的支援。 瞭解如何針對 Linux 安裝、設定、更新及使用 Microsoft Defender for Endpoint。
+- [Linux 版適用於端點的 Microsoft Defende](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint 現在新增了對 Linux 的支援。 瞭解如何針對 Linux 安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 
 - [評估實驗室中的攻擊模擬器](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint 已與各種威脅模擬平臺產生合作，讓您能輕鬆地從入口網站中測試平臺的功能。
 
@@ -79,7 +78,7 @@ ms.locfileid: "51058075"
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [Mac 版端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Mac 會將下一代保護帶入 Mac 裝置。 整合端點安全性平臺的核心元件現在可用於 Mac 裝置，包括 [端點偵測和回應](microsoft-defender-endpoint-mac.md)。
+- [Mac 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Mac 會將下一代保護帶入 Mac 裝置。 整合端點安全性平臺的核心元件現在可用於 Mac 裝置，包括 [端點偵測和回應](microsoft-defender-endpoint-mac.md)。
  
 - [威脅 & 弱點管理應用程式和應用程式版本的週期結束資訊](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>已到達生命週期結束的應用程式和應用程式版本會加以標記或標示為如此，這樣您就會發現不再支援這些應用程式和應用程式，而且可以採取動作進行卸載或更換。 這樣做有助於減少因未修補的應用程式而造成的各種弱點洩密相關的風險。
 
@@ -134,14 +133,14 @@ ms.locfileid: "51058075"
 ## <a name="april-2019"></a>2019 年 4 月
 - [Microsoft 威脅專家目標攻擊通知功能](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts#targeted-attack-notification) <BR> Microsoft 威脅專家針對組織提供的目標攻擊通知警示，可提供盡可能快速傳遞的資訊，使其不會引起網路的重要威脅，包括時程表、破壞範圍和入侵方法。
 
-- [Microsoft Defender for Endpoint API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) <BR> Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 可讓您根據 Microsoft Defender for Endpoint 功能來自動化工作流程及創新。 
+- [適用於端點的 Microsoft Defender API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) <BR> Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 可讓您根據 Microsoft Defender for Endpoint 功能來自動化工作流程及創新。 
 
 
 
 ## <a name="february-2019"></a>2019 年 2 月
 - [事件](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> 事件是 Microsoft Defender for Endpoint 中的新實體，它會將所有相關的警示和相關實體組合在一起，以敘述更廣泛的攻擊案例，讓分析員更深入瞭解複雜威脅的 purview。 
 
-- [板載舊版 Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> 板載支援的 Windows 裝置版本，讓他們可以將感應器資料傳送至 Microsoft Defender for Endpoint 感應器。
+- [將上一版 Windows 上線](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> 板載支援的 Windows 裝置版本，讓他們可以將感應器資料傳送至 Microsoft Defender for Endpoint 感應器。
 
 
 ## <a name="october-2018"></a>2018 年 10 月
@@ -174,7 +173,7 @@ ms.locfileid: "51058075"
 
   
 ## <a name="march-2018"></a>2018 年 3 月
-- [高級搜尋](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
+- [進階搜捕](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
 使用 Microsoft Defender for Endpoint 中的高級搜尋查詢資料。
 
 - [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
@@ -198,7 +197,7 @@ ms.locfileid: "51058075"
 - [受控資料夾存取權](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
 您現在可以封鎖不受信任的處理常式，不需要使用可控資料夾存取寫入磁片區。
 
-- [板載非 Windows 裝置](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
+- [將非 Windows 裝置上線](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
     Microsoft Defender for Endpoint 提供 Windows 和非 Windows 平臺的集中式安全性作業體驗。 您可以在 Microsoft Defender Security Center 中查看不同支援作業系統 (OS) 中的警示，並更好地保護組織的網路。
 
 - [角色型存取控制 (RBAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)<BR>

@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ce8599556b1d0c8efbd020d525b30ed2cedaa9cb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b529b1c7fa5c4f9f81cb6bfbb5f1a6bd7823a9ad
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165462"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587596"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>設定裝置 proxy 和網際網路連線設定
 
@@ -225,5 +224,5 @@ Ods.opinsights.azure.com、oms.opinsights.azure.com 和 *. agentsvc.azure-automa
 
 ## <a name="related-topics"></a>相關主題
 
-- [板載 Windows 10 裝置](configure-endpoints.md)
+- [將 Windows 10 裝置上線](configure-endpoints.md)
 - [疑難排解 Microsoft Defender 的端點上架問題](troubleshoot-onboarding.md)

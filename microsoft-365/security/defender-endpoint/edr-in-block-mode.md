@@ -1,7 +1,7 @@
 ---
 title: 封鎖模式中的端點偵測和回應
 description: 深入瞭解封鎖模式中的端點偵測和回應
-keywords: Microsoft Defender ATP，EDR in 封鎖模式，被動模式封鎖
+keywords: Microsoft Defender ATP，mde，EDR in 組塊模式，被動模式封鎖
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 7bee6c99d2c1c5ad3cec8f2e317b729a0a4e1f8b
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379475"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587200"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>封鎖模式中的端點偵測和回應 (EDR) 
 
