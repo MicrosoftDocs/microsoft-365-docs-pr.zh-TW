@@ -16,47 +16,46 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eca9727676fec9b716724719c182ca958b22ec85
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0a4dd551da8fcb38559360307a878edde3b3a1ba
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187802"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587632"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-with-ansible"></a><span data-ttu-id="47c92-104">使用 Ansible 為 Linux 部署 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="47c92-104">Deploy Microsoft Defender for Endpoint for Linux with Ansible</span></span>
+# <a name="deploy-microsoft-defender-for-endpoint-for-linux-with-ansible"></a><span data-ttu-id="8ddbe-104">使用 Ansible 為 Linux 部署 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="8ddbe-104">Deploy Microsoft Defender for Endpoint for Linux with Ansible</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="47c92-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="47c92-105">**Applies to:**</span></span>
-- [<span data-ttu-id="47c92-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="47c92-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="47c92-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="47c92-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="8ddbe-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="8ddbe-105">**Applies to:**</span></span>
+- [<span data-ttu-id="8ddbe-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="8ddbe-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="8ddbe-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8ddbe-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="47c92-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="47c92-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="47c92-109">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="47c92-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="8ddbe-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="8ddbe-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="8ddbe-109">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-<span data-ttu-id="47c92-110">本文說明如何使用 Ansible 為 Linux 部署 Defender。</span><span class="sxs-lookup"><span data-stu-id="47c92-110">This article describes how to deploy Defender for Endpoint for Linux using Ansible.</span></span> <span data-ttu-id="47c92-111">成功的部署需要完成下列所有工作：</span><span class="sxs-lookup"><span data-stu-id="47c92-111">A successful deployment requires the completion of all of the following tasks:</span></span>
+<span data-ttu-id="8ddbe-110">本文說明如何使用 Ansible 為 Linux 部署 Defender。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-110">This article describes how to deploy Defender for Endpoint for Linux using Ansible.</span></span> <span data-ttu-id="8ddbe-111">成功的部署需要完成下列所有工作：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-111">A successful deployment requires the completion of all of the following tasks:</span></span>
 
-- [<span data-ttu-id="47c92-112">下載上架套件</span><span class="sxs-lookup"><span data-stu-id="47c92-112">Download the onboarding package</span></span>](#download-the-onboarding-package)
-- [<span data-ttu-id="47c92-113">建立 Ansible YAML 檔案</span><span class="sxs-lookup"><span data-stu-id="47c92-113">Create Ansible YAML files</span></span>](#create-ansible-yaml-files)
-- [<span data-ttu-id="47c92-114">部署</span><span class="sxs-lookup"><span data-stu-id="47c92-114">Deployment</span></span>](#deployment)
-- [<span data-ttu-id="47c92-115">參考資料</span><span class="sxs-lookup"><span data-stu-id="47c92-115">References</span></span>](#references)
+- [<span data-ttu-id="8ddbe-112">下載上架套件</span><span class="sxs-lookup"><span data-stu-id="8ddbe-112">Download the onboarding package</span></span>](#download-the-onboarding-package)
+- [<span data-ttu-id="8ddbe-113">建立 Ansible YAML 檔案</span><span class="sxs-lookup"><span data-stu-id="8ddbe-113">Create Ansible YAML files</span></span>](#create-ansible-yaml-files)
+- [<span data-ttu-id="8ddbe-114">部署</span><span class="sxs-lookup"><span data-stu-id="8ddbe-114">Deployment</span></span>](#deployment)
+- [<span data-ttu-id="8ddbe-115">參考資料</span><span class="sxs-lookup"><span data-stu-id="8ddbe-115">References</span></span>](#references)
 
-## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="47c92-116">必要條件和系統需求</span><span class="sxs-lookup"><span data-stu-id="47c92-116">Prerequisites and system requirements</span></span>
+## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="8ddbe-116">必要條件和系統需求</span><span class="sxs-lookup"><span data-stu-id="8ddbe-116">Prerequisites and system requirements</span></span>
 
-<span data-ttu-id="47c92-117">開始之前，請參閱 [《主要 Defender For Linux」頁面](microsoft-defender-endpoint-linux.md) ，以取得目前軟體版本之必要條件和系統需求的描述。</span><span class="sxs-lookup"><span data-stu-id="47c92-117">Before you get started, see [the main Defender for Endpoint for Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.</span></span>
+<span data-ttu-id="8ddbe-117">開始之前，請參閱 [《主要 Defender For Linux」頁面](microsoft-defender-endpoint-linux.md) ，以取得目前軟體版本之必要條件和系統需求的描述。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-117">Before you get started, see [the main Defender for Endpoint for Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.</span></span>
 
-<span data-ttu-id="47c92-118">此外，針對 Ansible 部署，您必須熟悉 Ansible 管理工作、Ansible 設定，以及瞭解如何部署行動手冊和工作。</span><span class="sxs-lookup"><span data-stu-id="47c92-118">In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks.</span></span> <span data-ttu-id="47c92-119">Ansible 有許多方式可完成相同的工作。</span><span class="sxs-lookup"><span data-stu-id="47c92-119">Ansible has many ways to complete the same task.</span></span> <span data-ttu-id="47c92-120">這些指示假設支援的 Ansible 模組（如 *apt* 和 *unarchive* ）可用，以協助部署套件。</span><span class="sxs-lookup"><span data-stu-id="47c92-120">These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package.</span></span> <span data-ttu-id="47c92-121">您的組織可能會使用不同的工作流程。</span><span class="sxs-lookup"><span data-stu-id="47c92-121">Your organization might use a different workflow.</span></span> <span data-ttu-id="47c92-122">如需詳細資訊，請參閱 [Ansible 檔](https://docs.ansible.com/) 。</span><span class="sxs-lookup"><span data-stu-id="47c92-122">Refer to the [Ansible documentation](https://docs.ansible.com/) for details.</span></span>
+<span data-ttu-id="8ddbe-118">此外，針對 Ansible 部署，您必須熟悉 Ansible 管理工作、Ansible 設定，以及瞭解如何部署行動手冊和工作。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-118">In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks.</span></span> <span data-ttu-id="8ddbe-119">Ansible 有許多方式可完成相同的工作。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-119">Ansible has many ways to complete the same task.</span></span> <span data-ttu-id="8ddbe-120">這些指示假設支援的 Ansible 模組（如 *apt* 和 *unarchive* ）可用，以協助部署套件。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-120">These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package.</span></span> <span data-ttu-id="8ddbe-121">您的組織可能會使用不同的工作流程。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-121">Your organization might use a different workflow.</span></span> <span data-ttu-id="8ddbe-122">如需詳細資訊，請參閱 [Ansible 檔](https://docs.ansible.com/) 。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-122">Refer to the [Ansible documentation](https://docs.ansible.com/) for details.</span></span>
 
-- <span data-ttu-id="47c92-123">Ansible 必須至少安裝在一部電腦上 (我們會將其叫) 主要電腦。</span><span class="sxs-lookup"><span data-stu-id="47c92-123">Ansible needs to be installed on at least one computer (we will call it the primary computer).</span></span>
-- <span data-ttu-id="47c92-124">必須為主要電腦和所有用戶端之間的系統管理員帳戶設定 SSH，而且建議使用公開金鑰驗證加以設定。</span><span class="sxs-lookup"><span data-stu-id="47c92-124">SSH must be configured for an administrator account between the primary computer and all clients, and it is recommended be configured with public key authentication.</span></span>
-- <span data-ttu-id="47c92-125">所有用戶端上都必須安裝下列軟體：</span><span class="sxs-lookup"><span data-stu-id="47c92-125">The following software must be installed on all clients:</span></span>
-  - <span data-ttu-id="47c92-126">捲曲</span><span class="sxs-lookup"><span data-stu-id="47c92-126">curl</span></span>
-  - <span data-ttu-id="47c92-127">python-apt</span><span class="sxs-lookup"><span data-stu-id="47c92-127">python-apt</span></span>
+- <span data-ttu-id="8ddbe-123">Ansible 必須至少安裝在一部電腦上 (我們會將其叫) 主要電腦。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-123">Ansible needs to be installed on at least one computer (we will call it the primary computer).</span></span>
+- <span data-ttu-id="8ddbe-124">必須為主要電腦和所有用戶端之間的系統管理員帳戶設定 SSH，而且建議使用公開金鑰驗證加以設定。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-124">SSH must be configured for an administrator account between the primary computer and all clients, and it is recommended be configured with public key authentication.</span></span>
+- <span data-ttu-id="8ddbe-125">所有用戶端上都必須安裝下列軟體：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-125">The following software must be installed on all clients:</span></span>
+  - <span data-ttu-id="8ddbe-126">捲曲</span><span class="sxs-lookup"><span data-stu-id="8ddbe-126">curl</span></span>
+  - <span data-ttu-id="8ddbe-127">python-apt</span><span class="sxs-lookup"><span data-stu-id="8ddbe-127">python-apt</span></span>
 
-- <span data-ttu-id="47c92-128">所有主機都必須在或相關檔案中以下列格式列出 `/etc/ansible/hosts` ：</span><span class="sxs-lookup"><span data-stu-id="47c92-128">All hosts must be listed in the following format in the `/etc/ansible/hosts` or relevant file:</span></span>
+- <span data-ttu-id="8ddbe-128">所有主機都必須在或相關檔案中以下列格式列出 `/etc/ansible/hosts` ：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-128">All hosts must be listed in the following format in the `/etc/ansible/hosts` or relevant file:</span></span>
 
     ```bash
     [servers]
@@ -64,23 +63,23 @@ ms.locfileid: "51187802"
     host2 ansible_ssh_host=51.143.50.51
     ```
 
-- <span data-ttu-id="47c92-129">Ping 測試：</span><span class="sxs-lookup"><span data-stu-id="47c92-129">Ping test:</span></span>
+- <span data-ttu-id="8ddbe-129">Ping 測試：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-129">Ping test:</span></span>
 
     ```bash
     ansible -m ping all
     ```
 
-## <a name="download-the-onboarding-package"></a><span data-ttu-id="47c92-130">下載上架套件</span><span class="sxs-lookup"><span data-stu-id="47c92-130">Download the onboarding package</span></span>
+## <a name="download-the-onboarding-package"></a><span data-ttu-id="8ddbe-130">下載上架套件</span><span class="sxs-lookup"><span data-stu-id="8ddbe-130">Download the onboarding package</span></span>
 
-<span data-ttu-id="47c92-131">從 Microsoft Defender 安全中心下載上架套件：</span><span class="sxs-lookup"><span data-stu-id="47c92-131">Download the onboarding package from Microsoft Defender Security Center:</span></span>
+<span data-ttu-id="8ddbe-131">從 Microsoft Defender 安全中心下載上架套件：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-131">Download the onboarding package from Microsoft Defender Security Center:</span></span>
 
-1. <span data-ttu-id="47c92-132">在 Microsoft Defender Security Center 中，移至 [ **設定] > 裝置管理 > 上架**]。</span><span class="sxs-lookup"><span data-stu-id="47c92-132">In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.</span></span>
-2. <span data-ttu-id="47c92-133">在第一個下拉式功能表中，選取 [ **Linux 伺服器** ] 做為作業系統。</span><span class="sxs-lookup"><span data-stu-id="47c92-133">In the first drop-down menu, select **Linux Server** as the operating system.</span></span> <span data-ttu-id="47c92-134">在第二個下拉式功能表中，選取 **您偏好的 Linux 設定管理工具** 做為部署方法。</span><span class="sxs-lookup"><span data-stu-id="47c92-134">In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.</span></span>
-3. <span data-ttu-id="47c92-135">選取 [ **下載上架] 套件**。</span><span class="sxs-lookup"><span data-stu-id="47c92-135">Select **Download onboarding package**.</span></span> <span data-ttu-id="47c92-136">將檔案儲存為 WindowsDefenderATPOnboardingPackage.zip。</span><span class="sxs-lookup"><span data-stu-id="47c92-136">Save the file as WindowsDefenderATPOnboardingPackage.zip.</span></span>
+1. <span data-ttu-id="8ddbe-132">在 Microsoft Defender Security Center 中，移至 [ **設定] > 裝置管理 > 上架**]。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-132">In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.</span></span>
+2. <span data-ttu-id="8ddbe-133">在第一個下拉式功能表中，選取 [ **Linux 伺服器** ] 做為作業系統。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-133">In the first drop-down menu, select **Linux Server** as the operating system.</span></span> <span data-ttu-id="8ddbe-134">在第二個下拉式功能表中，選取 **您偏好的 Linux 設定管理工具** 做為部署方法。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-134">In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.</span></span>
+3. <span data-ttu-id="8ddbe-135">選取 [ **下載上架] 套件**。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-135">Select **Download onboarding package**.</span></span> <span data-ttu-id="8ddbe-136">將檔案儲存為 WindowsDefenderATPOnboardingPackage.zip。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-136">Save the file as WindowsDefenderATPOnboardingPackage.zip.</span></span>
 
     ![Microsoft Defender 安全中心螢幕擷取畫面](images/atp-portal-onboarding-linux-2.png)
 
-4. <span data-ttu-id="47c92-138">在命令提示字元中，確認您有檔案。</span><span class="sxs-lookup"><span data-stu-id="47c92-138">From a command prompt, verify that you have the file.</span></span> <span data-ttu-id="47c92-139">解壓縮封存的內容：</span><span class="sxs-lookup"><span data-stu-id="47c92-139">Extract the contents of the archive:</span></span>
+4. <span data-ttu-id="8ddbe-138">在命令提示字元中，確認您有檔案。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-138">From a command prompt, verify that you have the file.</span></span> <span data-ttu-id="8ddbe-139">解壓縮封存的內容：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-139">Extract the contents of the archive:</span></span>
 
     ```bash
     ls -l
@@ -97,11 +96,11 @@ ms.locfileid: "51187802"
     inflating: mdatp_onboard.json
     ```
 
-## <a name="create-ansible-yaml-files"></a><span data-ttu-id="47c92-140">建立 Ansible YAML 檔案</span><span class="sxs-lookup"><span data-stu-id="47c92-140">Create Ansible YAML files</span></span>
+## <a name="create-ansible-yaml-files"></a><span data-ttu-id="8ddbe-140">建立 Ansible YAML 檔案</span><span class="sxs-lookup"><span data-stu-id="8ddbe-140">Create Ansible YAML files</span></span>
 
-<span data-ttu-id="47c92-141">建立加入行動手冊或工作的子任務或角色檔案。</span><span class="sxs-lookup"><span data-stu-id="47c92-141">Create a subtask or role files that contribute to an playbook or task.</span></span>
+<span data-ttu-id="8ddbe-141">建立加入行動手冊或工作的子任務或角色檔案。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-141">Create a subtask or role files that contribute to an playbook or task.</span></span>
 
-- <span data-ttu-id="47c92-142">建立上架任務 `onboarding_setup.yml` ：</span><span class="sxs-lookup"><span data-stu-id="47c92-142">Create the onboarding task, `onboarding_setup.yml`:</span></span>
+- <span data-ttu-id="8ddbe-142">建立上架任務 `onboarding_setup.yml` ：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-142">Create the onboarding task, `onboarding_setup.yml`:</span></span>
 
     ```bash
     - name: Create MDATP directories
@@ -128,23 +127,23 @@ ms.locfileid: "51187802"
       when: not mdatp_onboard.stat.exists
     ```
 
-- <span data-ttu-id="47c92-143">新增適用于端點存放庫和金鑰的 Defender。</span><span class="sxs-lookup"><span data-stu-id="47c92-143">Add the Defender for Endpoint repository and key.</span></span>
+- <span data-ttu-id="8ddbe-143">新增適用于端點存放庫和金鑰的 Defender。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-143">Add the Defender for Endpoint repository and key.</span></span>
 
-    <span data-ttu-id="47c92-144">您可以從下列其中一個通道部署適用于 Linux 的 Endpoint， (如下所示的 *[通道]*) ：「 *內部人員-快*」、「 *預覽人員-慢速*」或「 *生產*」。每個通道都會對應至 Linux 軟體存放庫。</span><span class="sxs-lookup"><span data-stu-id="47c92-144">Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.</span></span>
+    <span data-ttu-id="8ddbe-144">您可以從下列其中一個通道部署適用于 Linux 的 Endpoint， (如下所示的 *[通道]*) ：「 *內部人員-快*」、「 *預覽人員-慢速*」或「 *生產*」。每個通道都會對應至 Linux 軟體存放庫。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-144">Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.</span></span>
 
-    <span data-ttu-id="47c92-145">通道選擇會決定提供給裝置的更新類型及頻率。</span><span class="sxs-lookup"><span data-stu-id="47c92-145">The choice of the channel determines the type and frequency of updates that are offered to your device.</span></span> <span data-ttu-id="47c92-146">在內部版本中的裝置 *快* 用的第一種方法是接收更新及新功能，然後是上一個程式 *-速度慢* ，最後透過 *生產*。</span><span class="sxs-lookup"><span data-stu-id="47c92-146">Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.</span></span>
+    <span data-ttu-id="8ddbe-145">通道選擇會決定提供給裝置的更新類型及頻率。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-145">The choice of the channel determines the type and frequency of updates that are offered to your device.</span></span> <span data-ttu-id="8ddbe-146">在內部版本中的裝置 *快* 用的第一種方法是接收更新及新功能，然後是上一個程式 *-速度慢* ，最後透過 *生產*。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-146">Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.</span></span>
 
-    <span data-ttu-id="47c92-147">為了預覽新功能並提供及早的意見反應，建議您將企業中的部分裝置設定為使用 *預覽人員-快* 或內部的 *速度緩慢*。</span><span class="sxs-lookup"><span data-stu-id="47c92-147">In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.</span></span>
+    <span data-ttu-id="8ddbe-147">為了預覽新功能並提供及早的意見反應，建議您將企業中的部分裝置設定為使用 *預覽人員-快* 或內部的 *速度緩慢*。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-147">In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.</span></span>
 
     > [!WARNING]
-    > <span data-ttu-id="47c92-148">初次安裝後切換通道需要重新安裝產品。</span><span class="sxs-lookup"><span data-stu-id="47c92-148">Switching the channel after the initial installation requires the product to be reinstalled.</span></span> <span data-ttu-id="47c92-149">若要切換產品通道，請執行下列動作：卸載現有的套件、重新設定裝置以使用新通道，然後依照此檔中的步驟，從新位置安裝套件。</span><span class="sxs-lookup"><span data-stu-id="47c92-149">To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.</span></span>
+    > <span data-ttu-id="8ddbe-148">初次安裝後切換通道需要重新安裝產品。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-148">Switching the channel after the initial installation requires the product to be reinstalled.</span></span> <span data-ttu-id="8ddbe-149">若要切換產品通道，請執行下列動作：卸載現有的套件、重新設定裝置以使用新通道，然後依照此檔中的步驟，從新位置安裝套件。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-149">To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.</span></span>
 
-    <span data-ttu-id="47c92-150">請記下您的發行及版本，並為其指定最接近的專案 `https://packages.microsoft.com/config/` 。</span><span class="sxs-lookup"><span data-stu-id="47c92-150">Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.</span></span>
+    <span data-ttu-id="8ddbe-150">請記下您的發行及版本，並為其指定最接近的專案 `https://packages.microsoft.com/config/` 。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-150">Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.</span></span>
 
-    <span data-ttu-id="47c92-151">在下列命令中，將 *[distro]* 和 *[version]* 取代為您識別的資訊。</span><span class="sxs-lookup"><span data-stu-id="47c92-151">In the following commands, replace *[distro]* and *[version]* with the information you've identified.</span></span>
+    <span data-ttu-id="8ddbe-151">在下列命令中，將 *[distro]* 和 *[version]* 取代為您識別的資訊。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-151">In the following commands, replace *[distro]* and *[version]* with the information you've identified.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="47c92-152">如果是 Oracle Linux，請將 *[distro]* 取代為 "rhel"。</span><span class="sxs-lookup"><span data-stu-id="47c92-152">In case of Oracle Linux, replace *[distro]* with “rhel”.</span></span>
+    > <span data-ttu-id="8ddbe-152">如果是 Oracle Linux，請將 *[distro]* 取代為 "rhel"。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-152">In case of Oracle Linux, replace *[distro]* with “rhel”.</span></span>
 
   ```bash
   - name: Add Microsoft APT key
@@ -178,9 +177,9 @@ ms.locfileid: "51187802"
   when: ansible_os_family == "RedHat"
   ```
 
-- <span data-ttu-id="47c92-153">建立 Ansible 安裝和卸載 YAML 檔案。</span><span class="sxs-lookup"><span data-stu-id="47c92-153">Create the Ansible install and uninstall YAML files.</span></span>
+- <span data-ttu-id="8ddbe-153">建立 Ansible 安裝和卸載 YAML 檔案。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-153">Create the Ansible install and uninstall YAML files.</span></span>
 
-    - <span data-ttu-id="47c92-154">針對 apt 發行使用下列 YAML 檔案：</span><span class="sxs-lookup"><span data-stu-id="47c92-154">For apt-based distributions use the following YAML file:</span></span>
+    - <span data-ttu-id="8ddbe-154">針對 apt 發行使用下列 YAML 檔案：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-154">For apt-based distributions use the following YAML file:</span></span>
 
         ```bash
         cat install_mdatp.yml
@@ -207,7 +206,7 @@ ms.locfileid: "51187802"
                 state: absent
         ```
 
-    - <span data-ttu-id="47c92-155">針對 yum 發行使用下列 YAML 檔案：</span><span class="sxs-lookup"><span data-stu-id="47c92-155">For yum-based distributions use the following YAML file:</span></span>
+    - <span data-ttu-id="8ddbe-155">針對 yum 發行使用下列 YAML 檔案：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-155">For yum-based distributions use the following YAML file:</span></span>
 
         ```bash
         cat install_mdatp_yum.yml
@@ -234,20 +233,20 @@ ms.locfileid: "51187802"
                 state: absent
         ```
 
-## <a name="deployment"></a><span data-ttu-id="47c92-156">部署</span><span class="sxs-lookup"><span data-stu-id="47c92-156">Deployment</span></span>
+## <a name="deployment"></a><span data-ttu-id="8ddbe-156">部署</span><span class="sxs-lookup"><span data-stu-id="8ddbe-156">Deployment</span></span>
 
-<span data-ttu-id="47c92-157">現在執行任務檔案 `/etc/ansible/playbooks/` 或相關目錄。</span><span class="sxs-lookup"><span data-stu-id="47c92-157">Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.</span></span>
+<span data-ttu-id="8ddbe-157">現在執行任務檔案 `/etc/ansible/playbooks/` 或相關目錄。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-157">Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.</span></span>
 
-- <span data-ttu-id="47c92-158">安裝：</span><span class="sxs-lookup"><span data-stu-id="47c92-158">Installation:</span></span>
+- <span data-ttu-id="8ddbe-158">安裝：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-158">Installation:</span></span>
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
     ```
 
 > [!IMPORTANT]
-> <span data-ttu-id="47c92-159">產品第一次啟動時，會下載最新的反惡意程式碼定義。</span><span class="sxs-lookup"><span data-stu-id="47c92-159">When the product starts for the first time, it downloads the latest antimalware definitions.</span></span> <span data-ttu-id="47c92-160">視您的網際網路連線而定，這可能需要幾分鐘的時間。</span><span class="sxs-lookup"><span data-stu-id="47c92-160">Depending on your Internet connection, this can take up to a few minutes.</span></span>
+> <span data-ttu-id="8ddbe-159">產品第一次啟動時，會下載最新的反惡意程式碼定義。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-159">When the product starts for the first time, it downloads the latest antimalware definitions.</span></span> <span data-ttu-id="8ddbe-160">視您的網際網路連線而定，這可能需要幾分鐘的時間。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-160">Depending on your Internet connection, this can take up to a few minutes.</span></span>
 
-- <span data-ttu-id="47c92-161">驗證/設定：</span><span class="sxs-lookup"><span data-stu-id="47c92-161">Validation/configuration:</span></span>
+- <span data-ttu-id="8ddbe-161">驗證/設定：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-161">Validation/configuration:</span></span>
 
     ```bash
     ansible -m shell -a 'mdatp connectivity test' all
@@ -256,26 +255,26 @@ ms.locfileid: "51187802"
     ansible -m shell -a 'mdatp health' all
     ```
 
-- <span data-ttu-id="47c92-162">卸載：</span><span class="sxs-lookup"><span data-stu-id="47c92-162">Uninstallation:</span></span>
+- <span data-ttu-id="8ddbe-162">卸載：</span><span class="sxs-lookup"><span data-stu-id="8ddbe-162">Uninstallation:</span></span>
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## <a name="log-installation-issues"></a><span data-ttu-id="47c92-163">記錄安裝問題</span><span class="sxs-lookup"><span data-stu-id="47c92-163">Log installation issues</span></span>
+## <a name="log-installation-issues"></a><span data-ttu-id="8ddbe-163">記錄安裝問題</span><span class="sxs-lookup"><span data-stu-id="8ddbe-163">Log installation issues</span></span>
 
-<span data-ttu-id="47c92-164">如需如何找到錯誤發生時所建立的自動產生記錄，請參閱 [記錄安裝的問題](linux-resources.md#log-installation-issues) 。</span><span class="sxs-lookup"><span data-stu-id="47c92-164">See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.</span></span>
+<span data-ttu-id="8ddbe-164">如需如何找到錯誤發生時所建立的自動產生記錄，請參閱 [記錄安裝的問題](linux-resources.md#log-installation-issues) 。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-164">See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.</span></span>
 
-## <a name="operating-system-upgrades"></a><span data-ttu-id="47c92-165">作業系統升級</span><span class="sxs-lookup"><span data-stu-id="47c92-165">Operating system upgrades</span></span>
+## <a name="operating-system-upgrades"></a><span data-ttu-id="8ddbe-165">作業系統升級</span><span class="sxs-lookup"><span data-stu-id="8ddbe-165">Operating system upgrades</span></span>
 
-<span data-ttu-id="47c92-166">將您的作業系統升級為新的主要版本時，您必須先卸載適用于 Linux 的 Endpoint 的 Defender，安裝升級，最後在裝置上為 Linux 重新設定 Defender for Linux。</span><span class="sxs-lookup"><span data-stu-id="47c92-166">When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.</span></span>
+<span data-ttu-id="8ddbe-166">將您的作業系統升級為新的主要版本時，您必須先卸載適用于 Linux 的 Endpoint 的 Defender，安裝升級，最後在裝置上為 Linux 重新設定 Defender for Linux。</span><span class="sxs-lookup"><span data-stu-id="8ddbe-166">When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.</span></span>
 
-## <a name="references"></a><span data-ttu-id="47c92-167">參考</span><span class="sxs-lookup"><span data-stu-id="47c92-167">References</span></span>
+## <a name="references"></a><span data-ttu-id="8ddbe-167">參考</span><span class="sxs-lookup"><span data-stu-id="8ddbe-167">References</span></span>
 
-- [<span data-ttu-id="47c92-168">新增或移除 YUM 存放庫</span><span class="sxs-lookup"><span data-stu-id="47c92-168">Add or remove YUM repositories</span></span>](https://docs.ansible.com/ansible/2.3/yum_repository_module.html)
+- [<span data-ttu-id="8ddbe-168">新增或移除 YUM 存放庫</span><span class="sxs-lookup"><span data-stu-id="8ddbe-168">Add or remove YUM repositories</span></span>](https://docs.ansible.com/ansible/2.3/yum_repository_module.html)
 
-- [<span data-ttu-id="47c92-169">使用 yum 套件管理員管理套件</span><span class="sxs-lookup"><span data-stu-id="47c92-169">Manage packages with the yum package manager</span></span>](https://docs.ansible.com/ansible/latest/modules/yum_module.html)
+- [<span data-ttu-id="8ddbe-169">使用 yum 套件管理員管理套件</span><span class="sxs-lookup"><span data-stu-id="8ddbe-169">Manage packages with the yum package manager</span></span>](https://docs.ansible.com/ansible/latest/modules/yum_module.html)
 
-- [<span data-ttu-id="47c92-170">新增和移除 APT 存放庫</span><span class="sxs-lookup"><span data-stu-id="47c92-170">Add and remove APT repositories</span></span>](https://docs.ansible.com/ansible/latest/modules/apt_repository_module.html)
+- [<span data-ttu-id="8ddbe-170">新增和移除 APT 存放庫</span><span class="sxs-lookup"><span data-stu-id="8ddbe-170">Add and remove APT repositories</span></span>](https://docs.ansible.com/ansible/latest/modules/apt_repository_module.html)
 
-- [<span data-ttu-id="47c92-171">管理 apt-套件</span><span class="sxs-lookup"><span data-stu-id="47c92-171">Manage apt-packages</span></span>](https://docs.ansible.com/ansible/latest/modules/apt_module.html)
+- [<span data-ttu-id="8ddbe-171">管理 apt-套件</span><span class="sxs-lookup"><span data-stu-id="8ddbe-171">Manage apt-packages</span></span>](https://docs.ansible.com/ansible/latest/modules/apt_module.html)
