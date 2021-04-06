@@ -274,15 +274,15 @@
           items:
             - name: 概觀
               href: ms-cloud-germany-transition.md
+            - name: 將會有什麼變更
+              href: ms-cloud-germany-transition-experience.md
             - name: 選擇加入移轉
               href: ms-cloud-germany-migration-opt-in.md
-            - name: 有什麼變更
-              href: ms-cloud-germany-transition-experience.md
-            - name: 準備工作
+            - name: 移轉之前
               href: ms-cloud-germany-transition-add-pre-work.md
-            - name: 移轉階段的動作與影響 (一般)
+            - name: 移轉階段的動作與影響
               href: ms-cloud-germany-transition-phases.md
-            - name: 移轉階段的動作與影響 (進階)
+            - name: 移轉之後
               href: ms-cloud-germany-transition-add-experience.md
             - name: 其他資訊
               items:
@@ -292,6 +292,8 @@
                   href: ms-cloud-germany-transition-add-devices.md
                 - name: AD FS 移轉步驟
                   href: ms-cloud-germany-transition-add-adfs.md
+                - name: 電子文件探索
+                  href: ms-cloud-germany-transition-add-scc.md
 - name: 身分識別
   items:
     - name: 藍圖
