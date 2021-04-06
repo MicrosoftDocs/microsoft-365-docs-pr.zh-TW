@@ -19,17 +19,17 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '摘要： '
-ms.openlocfilehash: 190b020ac683bcb97317a281c520b7f1ac92c721
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b99238b588363203f7aac07b3fb056d7a37e19f
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910915"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592069"
 ---
-# <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何選擇加入從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 到新德國資料中心區域中的 Office 365 服務的移轉。
+# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何加入宣告新的從 Microsoft Cloud 德國遷移 (Microsoft Cloud Deutschland) 到新的德國資料中心區域的 Office 365 服務
 
->[!Note]
->本文僅適用于 Microsoft cloud 德國 (Microsoft cloud Deutschland) 客戶。
+> [!NOTE]
+> 本文僅適用于 Microsoft cloud 德國 (Microsoft cloud Deutschland) 客戶。
 >
 
 ## <a name="how-to-request-migration"></a>如何要求移轉
@@ -64,11 +64,11 @@ ms.locfileid: "50910915"
 
 客戶與合作夥伴租使用者系統管理員可在 Microsoft 365 系統管理中心內選擇要進行遷移的使用者，讓遷移程式可以儘早開始。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [瞭解遷移期間的客戶體驗](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 開始：
 

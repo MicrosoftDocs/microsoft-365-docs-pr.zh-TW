@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/8/2019
+ms.date: 04/05/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Priority
@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df380c739724ed285401af4af451b610129c382c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5b5122984969113ec0c0533952ea3bf18bff5e5c
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203720"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592105"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -60,11 +60,11 @@ Microsoft 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這�
 
 - [DKIM 防止惡意詐騙的效用為何優於單獨使用 SPF](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
 
-- [將您的 1024 位元金鑰手動升級至 2048 位元 DKIM 加密金鑰](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
+- [將 1024 位元金鑰手動升級至 2048 位元 DKIM 加密金鑰的步驟](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
 
 - [手動設定 DKIM 時需執行的步驟](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
-- [為多個自訂網域設定 DKIM](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
+- [為多個自訂網域設定 DKIM 的步驟](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
 - [停用自訂網域 DKIM 簽署原則](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
 
@@ -85,7 +85,7 @@ SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽�
 
 重要事實：DKIM 會使用私密金鑰將加密的簽章插入郵件標頭中。 登入網域 (或輸出網域) 會在標頭中插入作為 **d=** 欄位的值。 驗證網域 (或收件者網域) 隨後會使用 **d=** 欄位來查閱來自 DNS 的公開金鑰，並驗證郵件。 如果訊息通過驗證，即可通過 DKIM 檢查。
 
-## <a name="manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>將您的 1024 位元金鑰手動升級至 2048 位元 DKIM 加密金鑰
+## <a name="steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>將 1024 位元金鑰手動升級至 2048 位元 DKIM 加密金鑰的步驟
 <a name="1024to2048DKIM"> </a>
 
 由於 DKIM 金鑰同時支援 1024 和 2048 位元，這些指示會告訴您如何在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 中將您的 1024 位元金鑰升級至 2048。 下列步驟適用於兩個使用案例，請選擇最符合您設定的案例。
@@ -192,7 +192,7 @@ TTL:                3600
 > 建立第二筆記錄很重要，但建立時只能使用其中一個選取器。 基本上，第二個選取器可能會指向尚未建立的位址。 我們還是建議您建立第二筆 CNAME 記錄，因為您的金鑰輪換會較流暢。
 
 
-### <a name="enable-dkim-signing-for-your-custom-domain"></a>為自訂網域啟用 DKIM 簽署
+### <a name="steps-to-enable-dkim-signing-for-your-custom-domain"></a>為自訂網域啟用 DKIM 簽署的步驟
 <a name="EnableDKIMinO365"> </a>
 
 在 DNS 中發佈 CNAME 記錄後，您即可透過 Microsoft 365 啟用 DKIM 簽署。 您可以透過 Microsoft 365 系統管理中心或使用 PowerShell 來執行此作業。
@@ -201,13 +201,13 @@ TTL:                3600
 
 1. 請使用工作或學校帳戶[登入 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
-2. 選取左上角的應用程式啟動器圖示，然後選擇 [管理員]。
+2. 請根據您使用的入口網站移至 [protection.office.com](https://protection.office.com) 或 [security.microsoft.com](https://security.microsoft.com)，然後按照以下路徑進行操作。
 
-3. 在導覽的左下角展開 [管理員]，然後選擇 [Exchange]。
+|protection.office.com  |security.microsoft.com  |
+|---------|---------|
+| [威脅管理] > [原則] > [其他原則] > [DKIM]     | [電子郵件與共同作業] > [原則與規則] > [威脅原則] > [其他原則] > [DKIM]        | 
 
-4. 移至 [保護] \> [dkim]。
-
-5. 選取要啟用 DKIM 的網域，然後，針對 [使用 DKIM 簽章簽署此網域的郵件]，選擇 [啟用]。 對每個自訂網域重複此步驟。
+3. 選取要啟用 DKIM 的網域，然後，針對 [使用 DKIM 簽章簽署此網域的郵件]，選擇 [啟用]。 對每個自訂網域重複此步驟。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>使用 PowerShell 為自訂網域啟用 DKIM 簽署
 

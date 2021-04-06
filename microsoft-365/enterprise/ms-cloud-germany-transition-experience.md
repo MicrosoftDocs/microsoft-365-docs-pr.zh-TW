@@ -1,5 +1,5 @@
 ---
-title: 在新的德國資料中心區域中，遷移至 Office 365 服務的變化
+title: 在新的德國資料中心區域遷移至 Office 365 服務之後，會有什麼變更？
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -19,23 +19,23 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：瞭解已變更，以在 Microsoft (Cloud Deutschland) 中進行移動，以在新的德國資料中心區域中從 Microsoft cloud 到 Office 365 服務。
-ms.openlocfilehash: cadad596011bbcde02b61f01e949c93a5a62a1c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923823"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591777"
 ---
-# <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>在新的德國資料中心區域中，遷移至 Office 365 服務的變化
+# <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>在新的德國資料中心區域遷移至 Office 365 服務之後，會有什麼變更？
 
 承租人遷移的設計是要對管理員和使用者造成最小影響。 不過，每個工作負載都有需要考慮的事項。 請參閱下列各節，以更深入瞭解工作負載的遷移經驗。
 
 以下是在新的德國資料中心區域中，Microsoft Cloud Deutschland 與 Office 365 服務之間的主要差異。
 
-| 類別 | Microsoft Cloud Deutschland (Microsoft Cloud Deutschland)  | 新德國資料中心區域中的 Office 365 服務 |
+| Category | Microsoft Cloud Germany (Microsoft Cloud Deutschland) | 新德國資料中心區域中的 Office 365 服務 |
 |:-------|:-----|:-------|
 | Microsoft 365 服務可供訂閱，且只有一個 Office 365 租用戶 | 15個服務 | 29個服務 <br><br> 如需詳細資訊，請參閱 [不同 Office 365 雲端服務產品之間的服務可用性為何？](ms-cloud-germany-transition.md#serv-avail)。 |
-| 新功能 | 沒有新功能。 | 新功能將可與 Office 365 服務一致。 |
+| 新功能 | 將不會提供任何新功能。 | 新功能將可與 Office 365 服務一致。 |
 | 資料信任者 | 是 | 否 |
 | 與全球 Office 365 租用戶的跨租用戶共同作業 | 否 | 是 |
 | 客戶資料存留處 | 客戶資料只會儲存在德國資料中心內。 | Microsoft 會以獨佔方式在德國存放下列客戶資料： <ul><li> Exchange Online 信箱內容 (電子郵件內文、行事曆專案和電子郵件附件的內容)  </li><li> SharePoint 線上網站內容和儲存在該網站中的檔案，以及上傳至商務 OneDrive 的檔案。 </li></ul> |
@@ -80,6 +80,8 @@ ms.locfileid: "50923823"
 
 Office Online 服務可透過 `office.de` 過渡前後進行存取。 將使用者的信箱轉換成 Office 365 服務後，使用者應開始使用 Office 365 服務 URLs。 當後續工作負載遷移至 Office 365 服務時，其來自 office.com 入口網站的介面將開始運作。
 
+Office 中的最近使用 (MRU) 服務，是從 Microsoft Cloud Deutschland 轉換成 Office 365 全域服務，而非遷移。 從 Office.com 入口網站遷移後，只會顯示從 Office 365 泛型服務端的 MRU 連結。 Microsoft Cloud Deutschland 中的 MRU 連結在 Office 365 全域服務中不會顯示為 MRU 連結。 在 Office 365 全域服務中，只有在租使用者遷移到達階段9之後，才能存取 MRU 連結。
+
 ## <a name="exchange-online-protection"></a>Exchange Online Protection
 
 - 後端 Exchange Online Protection (EOP) 功能會複製到新的德國地區。
@@ -93,11 +95,11 @@ Office Online 服務可透過 `office.de` 過渡前後進行存取。 將使用�
 
 在完成將 SharePoint 線上遷移至新的德國資料中心區域之後，office 365 影片會在年3月1日、2021和 Office 365 影片上終止。 Office 365 影片中的內容會隨著 SharePoint 線上之遷移的一部分進行遷移。 不過，在 SharePoint 遷移後，Office 365 影片中的影片不會在 Office 365 的視頻 UI 中播放。 深入瞭解 [Office 365 影片轉接至 Microsoft Stream (古典) 一覽](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)中的遷移時程表。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [瞭解遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 開始：
 

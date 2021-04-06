@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f6b085f200d3b0c71bb3608f8e5ba9ed85632676
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a6c7e7e920d18d9d8bf29d71d317008ea0c37bbf
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500332"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592093"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的事件
 
@@ -85,6 +85,10 @@ Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據從
 ![事件機器索引標籤影像](../../media/incident-machines.png)
 
 選取 [時間表] 索引標籤可讓您捲動電腦時程表，並以時間順序檢視電腦上觀測到的所有活動和行為，以及散布其中的警示。
+
+> [!TIP]
+> 您可以在裝置頁面上執行手動掃描。 在 Microsoft 365 的 [安全性中心] 中，選擇 [ **設備清查**]。 選取具有警示的裝置，然後執行防病毒掃描。 在 [ **裝置庫存** ] 頁面上追蹤並顯示的動作（例如防病毒掃描）。 若要深入瞭解，請參閱 [在裝置上執行 Microsoft Defender 防病毒掃描](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
+
 
 ## <a name="users"></a>使用者
 

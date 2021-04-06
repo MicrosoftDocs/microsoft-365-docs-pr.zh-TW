@@ -1,5 +1,5 @@
 ---
-title: '從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (advanced) '
+title: 從 Microsoft Cloud Deutschland 進行遷移後的遷移後活動
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,48 +17,21 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時的其他客戶體驗資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: 8e28b9d6c8cc23e128234973039a4873b327e9fd
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+description: 摘要：從 Microsoft Cloud 德國移 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務後，遷移後的活動。
+ms.openlocfilehash: 745589c1c997540094fc4a770e437de89015f88a
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476364"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591753"
 ---
-# <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (advanced) 
+# <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移後的遷移後活動
 
-從 Microsoft Cloud Deutschland 將租使用者遷移至 Microsoft Office 365 服務的德國地區時，會做為每一個工作負載的一組階段和各自設定的動作執行。 下圖顯示遷移至新德文資料中心的十大階段。
+下列各節會在從 Microsoft Cloud 德國 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務後，提供多項服務的遷移後活動。
 
-![遷移至新的德國資料中心的十大階段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+## <a name="azure-ad"></a>Azure AD
 
-下列各節將提供客戶經驗的其他資訊，從 Microsoft Cloud 德國 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務。
-
-## <a name="office-365-portal-services-between-phase-2-and-phase-3"></a>階段2和階段3之間的 Office 365 入口網站服務
-
-在階段2和階段3之間，可能無法存取夥伴入口網站。 在這段時間內，合作夥伴可能無法存取合作夥伴入口網站上的承租人資訊。 由於每個遷移都不同，以協助工具的持續時間可能是以小時為單位。
-
-### <a name="ediscovery-phase-4-to-the-end-of-phase-9"></a>eDiscovery 階段4至階段9結束
-
-**適用于：** 所有使用 eDiscovery 的客戶
-
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 從第4階段開始直到階段9完成，電子檔探索搜尋會失敗，或傳回 SharePoint 線上、OneDrive 商務及已遷移之 Exchange Online 位置的0個結果。 | 在遷移期間，客戶可以繼續在 [安全性 & 規範中心](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)（包括 [內容搜尋](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)）中建立案例、保留、搜尋和匯出。 不過，針對已遷移的 SharePoint 線上、OneDrive 商務和 Exchange Online 位置進行搜尋會傳回0個結果或產生錯誤。 如需修正，請參閱 _影響_ 欄。 | 在遷移期間，如果搜尋傳回零結果或發生錯誤，請在線上 SharePoint 執行下列動作： <ul><li>遵循 [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中的指示，直接從 SharePoint 線上或商務 OneDrive 取得網站。 此方法將需要 SharePoint 線上系統管理員許可權或網站的唯讀許可權。</li><li>若超出限制（ [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中所述），客戶可以遵循 [與電腦同步 SharePoint 及小組](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)檔案的指導方針，使用 OneDrive 進行商務同步處理用戶端。</li><li>如需詳細資訊，請參閱  [在 Exchange Server 中 In-Place eDiscovery](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
-||||
-
-## <a name="exchange-online-set-userphoto-during-phase-5"></a>第5階段的 Exchange Online Set-UserPhoto
-
-**適用于：** 所有客戶都將使用者相片儲存在 Exchange Online 中，且使用 **UserPhoto**：
-
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 新的地區 "德國" 會新增至現有的 Exchange Online 組織設定，並將信箱移至 Office 365 服務。 | Exchange Online 設定會將新的隨用本機德文區域新增至轉換的組織。 此 Office 365 服務區域已設定為預設值，可讓內部負載平衡服務將信箱重新分配至 Office 365 服務中的適當預設區域。 在此轉換中，任何一側 (德國或 Office 365 服務) 的使用者都位於相同的組織中，而且可以使用 URL 端點。 | 如果使用者信箱已遷移，但系統管理員信箱尚未遷移，或反過來，系統管理員將無法執行 **UserPhoto**，請使用 PowerShell Cmdlet。 在此情況下，系統管理員必須 `ConnectionUri` 使用下列語法，在連接設定期間傳遞另一個字串： <br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br> 其中 `<user_email>` 是使用者的電子郵件識別碼的預留位置，其相片需要使用 **UserPhoto** 加以變更。 |
-||||
-
-## <a name="post-migration"></a>移轉後
-
-### <a name="azure-ad-phase-9"></a>Azure AD 階段9
-
+### <a name="azure-ad-connect"></a>Azure AD Connect
 **適用于：** 與 Azure AD connect 同步處理的所有客戶
 
 | 步驟 (s)  | 描述 | 影響 |
@@ -66,7 +39,8 @@ ms.locfileid: "51476364"
 | 更新 Azure AD Connect。 | 在完成剪下 Azure AD 後，組織就完全使用 Office 365 服務，而且不再連接至 Microsoft 雲端 Deutschland。 此時，客戶必須確定已完成的 delta 同步處理常式，然後在該程式中，將 `AzureInstance` Deutschland Microsoft Cloud) 中的字串 (值變更為登錄路徑中的 0 `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` 。 | 變更登錄機碼的值 `AzureInstance` 。 若無法這麼做，將在不再提供 Microsoft Cloud Deutschland 端點後，導致物件不會進行同步處理。 |
 |||||
 
-**適用于：** 使用 ADFS 同盟驗證的所有客戶
+### <a name="azure-ad-federated-authentication-with-ad-fs"></a>Azure AD 同盟驗證與 AD FS
+**適用于：** 所有使用同盟驗證與 AD FS 的客戶
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
@@ -77,6 +51,7 @@ ms.locfileid: "51476364"
     Question from ckinder
     The following paragraph is not clear
 -->
+### <a name="group-approvals"></a>群組核准
 **適用于：** 在遷移前30天內，未核准 Azure AD 群組核准要求的使用者 
 
 | 步驟 (s)  | 描述 | 影響 |
@@ -88,6 +63,7 @@ ms.locfileid: "51476364"
     Question from ckinder
     The following paragraph is not clear
 -->
+## <a name="custom-dns-updates"></a>自訂 DNS 更新
 **適用于：**  所有客戶都管理自己的 DNS 區域
 
 | 步驟 (s)  | 描述 | 影響 |
@@ -95,6 +71,7 @@ ms.locfileid: "51476364"
 | 更新 Office 365 服務端點的內部部署 DNS 服務。 | 客戶管理的 DNS 專案（指向 Microsoft Cloud Deutschland）必須更新，以指向 Office 365 泛型服務端點。 | 若失敗，可能會導致服務或軟體用戶端失敗。 |
 ||||
 
+## <a name="third-party-services"></a>協力廠商服務
 **適用于：** 使用協力廠商服務的 Office 365 服務端點的客戶
 
 | 步驟 (s)  | 描述 | 影響 |
@@ -102,7 +79,8 @@ ms.locfileid: "51476364"
 | 更新合作夥伴及 Office 365 服務端點的協力廠商服務。 | <ul><li>指向 Office 365 德國的協力廠商服務和合作夥伴必須更新，以指向 Office 365 服務端點。 範例：請重新註冊，以與您的廠商和協力廠商（應用程式的畫廊應用程式版本）搭配使用（如果有的話）。 </li><li>將所有利用 Graph API 的自訂應用程式指向 `graph.microsoft.de` `graph.microsoft.com` 。 其他含有已變更端點的 APIs 也必須更新（如果利用）。 </li><li>變更所有非協力廠商企業應用程式，以重新導向全球端點。 </li></ul>| 必要的動作。 若失敗，可能會導致服務或軟體用戶端失敗。 |
 ||||
 
-### <a name="sharepoint-online-post-migration"></a>SharePoint 線上後遷移
+## <a name="sharepoint-online"></a>SharePoint Online
+**適用于**：使用 SharePoint 2013 工作流程的客戶
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
@@ -110,51 +88,9 @@ ms.locfileid: "51476364"
 | 透過 Outlook 共用專案 | 在租使用者切換後，可在 SharePoint Online 和商務 OneDrive 中透過 Outlook 共用的專案不再運作。 |<ul><li>在 SharePoint 線上和商務 OneDrive 中，您可以透過 Outlook 共用專案。 按下 Outlook 按鈕之後，會建立可共用的連結，並將其推入至 Outlook Web App 中的新郵件。</li><li>租使用者轉換後，這種共用方法將無法運作。 我們承認這是已知的問題。 不過，由於此 Outlook 功能是在被否決的路徑中，因此在完成棄用之前，不會規劃修復此問題。 </li></ul>|
 ||||
 
-### <a name="exchange-online-post-migration"></a>Exchange Online 後遷移
-
-如果您使用的是混合式 Exchange 設定：
+## <a name="exchange-online"></a>Exchange Online
+**適用于**：使用混合式 Exchange 設定的客戶
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
 | 針對 Office 365 服務，重新執行混合式設定向導 (HCW) 。 | 現有的 HCW 設定是為了支援 Microsoft Cloud Deutschland。 隨著 Exchange 服務的遷移完成，我們會將內部部署設定從 Microsoft Cloud Deutschland 中分離出來。 |<ul><li>必要的動作。 若失敗，可能會導致服務或軟體用戶端失敗。 在 Exchange 信箱遷移開始 (，但有5天或以上的通知) ，請通知用戶端他們應該停止並刪除其信箱的任何上架或脫離移動。  如果不是，他們會在移動要求中看到錯誤。 </li><li>Exchange 信箱遷移完成後，請通知用戶端他們可以繼續上架和脫離移動。 <br> 在從 Microsoft Cloud Deutschland 將 Exchange 遷移至 Office 365 服務時，執行 **MigrationServerAvailabiilty 指令程式**，會執行 PowerShell Cmdlet。 不過，遷移完成後，它會正常運作。 </li><li>如果在遷移信箱之後，用戶端遇到認證或授權問題，使用者可以執行 `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` ，或是使用 Exchange 控制台 (ECP) ，在遷移端點中重新輸入其內部部署系統管理員認證。 </li></ul>|
-
-### <a name="ediscovery-post-migration"></a>eDiscovery 後遷移
-
-**適用于：** 使用 eDiscovery 的所有客戶
-
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-|  所有的 SharePoint 線上、商務 OneDrive 和 Exchange Online 位置都與安全性與合規性中心一起遷移， (SCC) 。 | 所有 eDiscovery 活動都應該從世界租使用者執行。 搜尋現在會是100% 成功。  任何失敗或錯誤都應該遵循正常支援通道。 | 無 |
-||||
-
-**適用于：**  所有在遷移前步驟中套用保留原則的客戶
-
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 移除在遷移前步驟中建立的全組織保留原則 | 客戶可以移除在客戶的預先遷移工作中所建立的全組織保留原則。 | 無 |
-||||
-
-## <a name="next-step"></a>下一步
-
-[瞭解遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
-
-## <a name="more-information"></a>詳細資訊
-
-開始：
-
-- [從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務](ms-cloud-germany-transition.md)
-- [Microsoft Cloud Deutschland 移轉協助](https://aka.ms/germanymigrateassist)
-- [如何選擇加入移轉](ms-cloud-germany-migration-opt-in.md)
-- [遷移期間的客戶體驗](ms-cloud-germany-transition-experience.md)
-
-在轉換中移動：
-
-- [移轉階段的動作與影響](ms-cloud-germany-transition-phases.md)
-- [其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
-- [AZURE AD](ms-cloud-germany-transition-azure-ad.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
-
-雲端應用程式：
-
-- [Dynamics 365 的移轉程式資訊](/dynamics365/get-started/migrate-data-german-region)
-- [Power BI 移轉程式資訊](/power-bi/admin/service-admin-migrate-data-germany)
-- [開始升級您的 Microsoft Teams](/microsoftteams/upgrade-start-here)

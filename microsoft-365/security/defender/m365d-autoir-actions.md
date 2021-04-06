@@ -20,14 +20,13 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/29/2021
 ms.technology: m365d
-ms.openlocfilehash: d78bf3689020b5a24863e5a0f1ec817af50178ad
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7106f5d2e740d2b4cacbcaeb0b9391095bbeb356
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059215"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592021"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在行動中心中查看及管理動作
 
@@ -52,8 +51,11 @@ Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作
 ![核准或拒絕動作](../../media/air-actioncenter-itemselected.png)
 
 1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
+
 2. 在功能窗格中，選擇 [重要訊息中心]。 
+
 3. 在重要訊息中心的 [擱置中] 索引標籤上，選取清單中的一個項目。 其快顯視窗隨即開啟。
+
 4. 查看彈出窗格中的資訊，然後執行下列其中一個步驟：
    - 選取 [ **開啟調查] 頁面** ，以查看有關調查的詳細資料。
    - 選取 [ **核准** ] 以啟動暫止的動作。
@@ -71,19 +73,25 @@ Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作
 ### <a name="undo-one-remediation-action"></a>復原一個修正動作
 
 1. 請移至「行動中心」 ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 並登入。
+
 2. 在 [ **記錄** ] 索引標籤上，選取您要復原的動作。
+
 3. 在螢幕右側的窗格中，選取 [ **復原**]。
 
 ### <a name="undo-multiple-remediation-actions"></a>復原多項修復動作
 
 1. 請移至「行動中心」 (https://security.microsoft.com/action-center) 並登入。
+
 2. 在 [ **記錄** ] 索引標籤上，選取您要復原的動作。 請務必選取具有相同動作類型的專案。 隨即開啟彈出窗格。
+
 3. 在快顯視窗中，選取 [ **復原**]。
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>在多個裝置間移除隔離檔 
 
 1. 請移至「行動中心」 ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 並登入。
+
 2. 在 [ **記錄** ] 索引標籤上，選取具有 [ **隔離** 檔] 動作類型的檔案。
+
 3. 在螢幕右側的窗格中，選取 [套用至此檔案 **的 X 個實例**]，然後選取 [ **復原**]。
 
 ## <a name="next-steps"></a>後續步驟

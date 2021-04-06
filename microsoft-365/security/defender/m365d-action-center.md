@@ -20,13 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/01/2021
-ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199594"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592081"
 ---
 # <a name="the-action-center"></a>重要訊息中心
 
@@ -96,12 +95,12 @@ ms.locfileid: "51199594"
 
 - 收集調查套件 
 - 隔離裝置 (此動作可復原)  
-- 下架機 
+- 下機 
 - 發行程式碼執行 
 - 從隔離區發行 
 - 要求範例 
 - 限制程式碼執行 (可以復原此動作)  
-- 執行防病毒掃描 
+- 執行防毒掃描 
 - 停止和隔離 
 
 除了自動 [調查](m365d-autoir.md)所做的修正動作之外，「動作中心」也會追蹤安全小組採取的動作，以解決偵測到的威脅，以及 Microsoft 365 Defender 中威脅防護功能的結果所採取的動作。 如需自動和手動修正動作的相關資訊，請參閱 [修復動作](m365d-remediation-actions.md)。

@@ -1,5 +1,5 @@
 ---
-title: 自動調查的詳細資料和結果
+title: 檢視自動調查的詳細資料和結果
 description: 在自動調查過程中和完成之後，您就可以查看結果和重要結果
 keywords: 自動, 調查, 結果, 分析, 詳細資料, 修正, autoair
 search.appverid: met150
@@ -21,17 +21,16 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/02/2021
-ms.openlocfilehash: 57a515fec2baabba7146959a43737771ef5c8cfe
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8ecf39090d368427c103c7ec78e22bc13f7c339f
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197766"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591765"
 ---
-# <a name="details-and-results-of-an-automated-investigation"></a>自動調查的詳細資料和結果
+# <a name="view-the-details-and-results-of-an-automated-investigation"></a>檢視自動調查的詳細資料和結果
 
-**適用於：**
+適用於：
 - 適用於端點的 Microsoft Defender
 
 使用 Microsoft Defender for Endpoint 時，當 [自動調查](automated-investigations.md) 執行時，該調查的詳細資料就會在自動調查程式期間和之後使用。 如果您擁有必要權限，您可以在調查詳細資料檢視中查看這些詳細資料。 調查詳細資料檢視可提供您最新的狀態，以及核准任何待核准動作的能力。 

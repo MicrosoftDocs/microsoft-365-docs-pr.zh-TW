@@ -1,5 +1,5 @@
 ---
-title: 從 Microsoft Cloud Deutschland 進行遷移的準備工作
+title: 從 Microsoft Cloud Deutschland 進行遷移的預先遷移活動
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -18,28 +18,32 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的準備工作。
-ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: e04246626088d9fca653c98246fd4a5b81bc1d30
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476346"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591871"
 ---
-# <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的準備工作
+# <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的預先遷移活動
 
-使用下列連結可取得與貴組織相關的預備工作步驟：
+使用下列連結可取得與貴組織相關的預先遷移步驟。
 
-- 針對 **所有** 在 Microsoft Cloud Deutschland 中使用 Office 365 的客戶，請執行 [下列步驟](#general-tenant-migration-considerations)。
-- 若為 **DNS 變更**，請執行 [此步驟](#dns)。
-- 如果您是在內部部署使用 **Active Directory Federation Services** ，請執行 [下列步驟](#active-directory-federation-services-ad-fs)。
-- 如果您使用的是 **SharePoint 線上**，請執行 [此步驟](#sharepoint-online)。
-- 如果您使用的是 **Exchange Online** 或 **exchange 混合** 式，請執行 [此步驟](#exchange-online)。
-- 如果您使用 **的是商務用 Skype Online**，請執行 [此步驟](#skype-for-business-online)
-- 如果您正在使用協力廠商行動裝置管理 (MDM) 解決方案，請執行 [此步驟](#mobile-device-management)。
-- 如果您使用的是 **協力廠商服務** 或 **企業營運 (LOB)** 與 Office 365 整合的應用程式，請執行 [此步驟](#line-of-business-apps)。
-- 如果您也是使用 **Dynamics 365**，請執行 [此步驟](#dynamics365)。
-- 如果您也是使用 **POWER BI**，請執行 [此步驟](#power-bi)。
-- 如果您也是使用 **Azure 服務** 與 Office 365 訂閱，請執行 [此步驟](#microsoft-azure)。
+如果您正在使用
+
+- **Office 365 在 Microsoft Cloud Deutschland 中**，執行 [下列步驟](#general-tenant-migration-considerations)。
+- **自訂網域**，請執行 [此步驟](#dns-entries-for-custom-domains)。
+
+- **SharePoint 線上**，請執行 [此步驟](#sharepoint-online)。
+- **Exchange Online** 或 **exchange 混合** 式，請執行 [此步驟](#exchange-online)。
+- **商務用 Skype Online**，請執行 [此步驟](#skype-for-business-online)。
+- **Dynamics 365**，請執行 [此步驟](#dynamics365)。
+- **POWER BI**，請執行 [此步驟](#power-bi)。
+
+- 適用于 Azure AD Connect 的 **Active Directory Federation Services** ，請執行 [下列步驟](#active-directory-federation-services-ad-fs)。
+- **協力廠商服務** 或 **企業營運 (LOB)** 與 Office 365 整合的應用程式，請執行 [此步驟](#line-of-business-apps)。
+- 協力廠商行動裝置管理 (MDM) 解決方案，請執行 [此步驟](#mobile-device-management)。
+- **Azure 服務** 與您的 Office 365 訂閱，請執行 [此步驟](#microsoft-azure)。
 
 ## <a name="general-tenant-migration-considerations"></a>一般承租人遷移考慮
 
@@ -59,7 +63,7 @@ ms.locfileid: "51476346"
 | 建立整個組織 [保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention) ，以防止在遷移期間因無意中刪除內容。  |<ul><li>為了確保使用者不會在遷移期間由使用者意外刪除內容，客戶可以選擇啟用整個組織的保留原則。 </li><li>雖然不需要保留，但在遷移期間可隨時使用保留原則，但具有保留原則是備份的安全性機制。 同時，所有客戶可能不會使用保留原則，尤其是有關保留原則的使用者。</li></ul>| 如 [深入瞭解保留原則和保留標籤](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)所述套用保留原則。 如果這不是在第4階段中執行，則可能會發生服務或用戶端軟體失敗。 </li></ul>|
 |||||
 
-## <a name="dns"></a>DNS
+## <a name="dns-entries-for-custom-domains"></a>自訂網域的 DNS 專案
 
 <!-- before phase 9 -->
 
@@ -72,7 +76,7 @@ ms.locfileid: "51476346"
 若要確認您是否已在 DNS 命名空間中設定 CNAME，請遵循下列步驟，並以您自己的功能變數名稱取代 _contoso.com_ ：
 
 ```console
-nslookup -querytype=CNMAE msoid.contoso.com
+nslookup -querytype=CNAME msoid.contoso.com
 ```
 
 如果命令列傳回 DNS 記錄，請從您的網域中移除 _msoid_ CNAME。

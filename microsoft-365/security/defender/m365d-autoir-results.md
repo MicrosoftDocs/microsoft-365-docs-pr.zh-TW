@@ -1,6 +1,6 @@
 ---
 title: 自動調查的詳細資料和結果
-description: 在自動調查過程中和完成之後，您就可以查看結果和重要結果
+description: 在 Microsoft 365 Defender 中查看自動調查的結果和重要結果
 keywords: 自動, 調查, 結果, 分析, 詳細資料, 修正, autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/08/2021
-ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ca023ea49a8d92123467be640a097a72233d3198
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198966"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592117"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調查的詳細資料和結果
 
@@ -61,8 +60,11 @@ ms.locfileid: "51198966"
 > 您必須具有核准、拒絕或復原動作的 [特定許可權](m365d-action-center.md#required-permissions-for-action-center-tasks) 。
 
 1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
+
 2. 在功能窗格中，選擇 [控制中心]。 
+
 3. 在 [待核准] 或 [歷史記錄] 索引標籤上，選取一個項目。 其快顯視窗隨即開啟。
+
 4. 查看彈出窗格中的資訊，然後執行下列其中一個步驟：
    - 選取 [ **開啟調查] 頁面** ，以查看有關調查的詳細資料。
    - 選取 [ **核准** ] 以啟動暫止的動作。
@@ -76,9 +78,13 @@ ms.locfileid: "51198966"
 ![事件詳細資料](../../media/mtp-incidentdetails-tabs.png)
 
 1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
+
 2. 在功能窗格中，選擇 [**事件] & 警示**  >  **事件**。 
+
 3. 選取清單中的專案，然後選擇 [ **開啟事件] 頁面**。
+
 4. 選取 [ **調查** ] 索引標籤，然後在清單中選取調查。 其快顯視窗隨即開啟。
+
 5. 選取 [ **開啟調查] 頁面**。 
 
 ## <a name="investigation-details"></a>調查詳細資料
