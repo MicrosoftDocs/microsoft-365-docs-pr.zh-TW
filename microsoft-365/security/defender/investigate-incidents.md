@@ -22,103 +22,107 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f6b085f200d3b0c71bb3608f8e5ba9ed85632676
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a6c7e7e920d18d9d8bf29d71d317008ea0c37bbf
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500332"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592093"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a><span data-ttu-id="1ee5e-104">調查 Microsoft 365 Defender 中的事件</span><span class="sxs-lookup"><span data-stu-id="1ee5e-104">Investigate incidents in Microsoft 365 Defender</span></span>
+# <a name="investigate-incidents-in-microsoft-365-defender"></a><span data-ttu-id="42bad-104">調查 Microsoft 365 Defender 中的事件</span><span class="sxs-lookup"><span data-stu-id="42bad-104">Investigate incidents in Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="1ee5e-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="1ee5e-105">**Applies to:**</span></span>
+<span data-ttu-id="42bad-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="42bad-105">**Applies to:**</span></span>
 
-- <span data-ttu-id="1ee5e-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="1ee5e-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="42bad-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="42bad-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="1ee5e-107">Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據從您的裝置、使用者和信箱集中在一起，讓您全面瞭解攻擊的整體廣度。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-107">Microsoft 365 Defender aggregates all related alerts, assets, investigations and evidence from across your devices, users, and mailboxes to give you a comprehensive look into the entire breadth of an attack.</span></span>
+<span data-ttu-id="42bad-107">Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據從您的裝置、使用者和信箱集中在一起，讓您全面瞭解攻擊的整體廣度。</span><span class="sxs-lookup"><span data-stu-id="42bad-107">Microsoft 365 Defender aggregates all related alerts, assets, investigations and evidence from across your devices, users, and mailboxes to give you a comprehensive look into the entire breadth of an attack.</span></span>
 
-<span data-ttu-id="1ee5e-108">調查影響您網路的警示、了解其含義，並彙整與該事件相關聯的證據，以便設計有效的修復方案。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-108">Investigate the alerts that affect your network, understand what they mean, and collate evidence associated with the incidents so that you can devise an effective remediation plan.</span></span>
+<span data-ttu-id="42bad-108">調查影響您網路的警示、了解其含義，並彙整與該事件相關聯的證據，以便設計有效的修復方案。</span><span class="sxs-lookup"><span data-stu-id="42bad-108">Investigate the alerts that affect your network, understand what they mean, and collate evidence associated with the incidents so that you can devise an effective remediation plan.</span></span>
 
-## <a name="investigate-an-incident"></a><span data-ttu-id="1ee5e-109">調查事件</span><span class="sxs-lookup"><span data-stu-id="1ee5e-109">Investigate an incident</span></span>
+## <a name="investigate-an-incident"></a><span data-ttu-id="42bad-109">調查事件</span><span class="sxs-lookup"><span data-stu-id="42bad-109">Investigate an incident</span></span>
 
-1. <span data-ttu-id="1ee5e-110">從事件佇列中選取事件。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-110">Select an incident from the incident queue.</span></span> <BR> <span data-ttu-id="1ee5e-111">側邊面板隨即開啟，並預覽重要資訊（例如狀態、嚴重性、類別及受影響的實體）。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-111">A side panel opens and gives a preview of important information such as status, severity, categories, and the impacted entities.</span></span>
+1. <span data-ttu-id="42bad-110">從事件佇列中選取事件。</span><span class="sxs-lookup"><span data-stu-id="42bad-110">Select an incident from the incident queue.</span></span> <BR> <span data-ttu-id="42bad-111">側邊面板隨即開啟，並預覽重要資訊（例如狀態、嚴重性、類別及受影響的實體）。</span><span class="sxs-lookup"><span data-stu-id="42bad-111">A side panel opens and gives a preview of important information such as status, severity, categories, and the impacted entities.</span></span>
 
     ![事件側邊面板影像](../../media/incident-side-panel.png)
 
-2. <span data-ttu-id="1ee5e-113">選取 **開啟事件頁面**。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-113">Select **Open incident page**.</span></span> <BR> <span data-ttu-id="1ee5e-114">這會開啟 [事件] 頁面，您可以在其中找到詳細資訊事件詳細資料、批註和動作、索引標籤 (總覽、警示、裝置、使用者、調查、證據) 。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-114">This opens the incident page where you'll find more information incident details, comments, and actions, tabs (overview, alerts, devices, users, investigations, evidence).</span></span>
+2. <span data-ttu-id="42bad-113">選取 **開啟事件頁面**。</span><span class="sxs-lookup"><span data-stu-id="42bad-113">Select **Open incident page**.</span></span> <BR> <span data-ttu-id="42bad-114">這會開啟 [事件] 頁面，您可以在其中找到詳細資訊事件詳細資料、批註和動作、索引標籤 (總覽、警示、裝置、使用者、調查、證據) 。</span><span class="sxs-lookup"><span data-stu-id="42bad-114">This opens the incident page where you'll find more information incident details, comments, and actions, tabs (overview, alerts, devices, users, investigations, evidence).</span></span>
 
-3. <span data-ttu-id="1ee5e-115">檢閱涉及事件的警示、裝置、使用者和其他實體。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-115">Review the alerts, devices, users, other entities involved in the incident.</span></span>
+3. <span data-ttu-id="42bad-115">檢閱涉及事件的警示、裝置、使用者和其他實體。</span><span class="sxs-lookup"><span data-stu-id="42bad-115">Review the alerts, devices, users, other entities involved in the incident.</span></span>
 
-## <a name="incident-overview"></a><span data-ttu-id="1ee5e-116">事件概觀</span><span class="sxs-lookup"><span data-stu-id="1ee5e-116">Incident overview</span></span>
+## <a name="incident-overview"></a><span data-ttu-id="42bad-116">事件概觀</span><span class="sxs-lookup"><span data-stu-id="42bad-116">Incident overview</span></span>
 
-<span data-ttu-id="1ee5e-117">概觀頁面可讓您一覽無遺地了解事件的主要內容。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-117">The overview page gives you a snapshot glance into the top things to notice about the incident.</span></span>
+<span data-ttu-id="42bad-117">概觀頁面可讓您一覽無遺地了解事件的主要內容。</span><span class="sxs-lookup"><span data-stu-id="42bad-117">The overview page gives you a snapshot glance into the top things to notice about the incident.</span></span>
 
 ![事件概觀頁面影像](../../media/incidents-overview.png)
 
-<span data-ttu-id="1ee5e-119">「攻擊類別」可讓您直觀和數值的方式，顯示攻擊如何對 kill 鏈進行的進展。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-119">The attack categories give you a visual and numeric view of how advanced the attack has progressed against the kill chain.</span></span> <span data-ttu-id="1ee5e-120">與其他 Microsoft 安全性產品一樣，Microsoft 365 Defender 會對應至[MITRE ATT&CK &trade; ](https://attack.mitre.org/) framework。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-120">As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework.</span></span>
+<span data-ttu-id="42bad-119">「攻擊類別」可讓您直觀和數值的方式，顯示攻擊如何對 kill 鏈進行的進展。</span><span class="sxs-lookup"><span data-stu-id="42bad-119">The attack categories give you a visual and numeric view of how advanced the attack has progressed against the kill chain.</span></span> <span data-ttu-id="42bad-120">與其他 Microsoft 安全性產品一樣，Microsoft 365 Defender 會對應至[MITRE ATT&CK &trade; ](https://attack.mitre.org/) framework。</span><span class="sxs-lookup"><span data-stu-id="42bad-120">As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework.</span></span>
 
-<span data-ttu-id="1ee5e-121">範圍區段會顯示屬於此事件中影響最大的資產清單。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-121">The scope section gives you a list of top impacted assets that are part of this incident.</span></span> <span data-ttu-id="1ee5e-122">如果關於此資產的特定資訊，例如風險層級、調查優先順序以及資產上的任何標記，本區段也將會顯示這項資訊。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-122">If there is specific information regarding this asset, such as risk level, investigation priority as well as any tagging on the assets this will also surface in this section.</span></span>
+<span data-ttu-id="42bad-121">範圍區段會顯示屬於此事件中影響最大的資產清單。</span><span class="sxs-lookup"><span data-stu-id="42bad-121">The scope section gives you a list of top impacted assets that are part of this incident.</span></span> <span data-ttu-id="42bad-122">如果關於此資產的特定資訊，例如風險層級、調查優先順序以及資產上的任何標記，本區段也將會顯示這項資訊。</span><span class="sxs-lookup"><span data-stu-id="42bad-122">If there is specific information regarding this asset, such as risk level, investigation priority as well as any tagging on the assets this will also surface in this section.</span></span>
 
-<span data-ttu-id="1ee5e-123">警示時間表可讓您先預覽警示發生的時間順序，以及這些警示與此事件相關聯的原因。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-123">The alerts timeline provides a sneak peek into the chronological order in which the alerts occurred, as well as the reasons that these alerts linked to this incident.</span></span>
+<span data-ttu-id="42bad-123">警示時間表可讓您先預覽警示發生的時間順序，以及這些警示與此事件相關聯的原因。</span><span class="sxs-lookup"><span data-stu-id="42bad-123">The alerts timeline provides a sneak peek into the chronological order in which the alerts occurred, as well as the reasons that these alerts linked to this incident.</span></span>
 
-<span data-ttu-id="1ee5e-124">最後，證據區段提供事件中包含多少不同成品以及其修復狀態摘要，因此您可以立即識別是否需要採取任何動作。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-124">And last - the evidence section provides a summary of how many different artifacts were included in the incident and their remediation status, so you can immediately identify if any action is needed on your end.</span></span>
+<span data-ttu-id="42bad-124">最後，證據區段提供事件中包含多少不同成品以及其修復狀態摘要，因此您可以立即識別是否需要採取任何動作。</span><span class="sxs-lookup"><span data-stu-id="42bad-124">And last - the evidence section provides a summary of how many different artifacts were included in the incident and their remediation status, so you can immediately identify if any action is needed on your end.</span></span>
 
-<span data-ttu-id="1ee5e-125">此概觀藉由提供您應該注意的事件主要特性深入解析，可協助對事件進行初步分級。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-125">This overview can assist in the initial triage of the incident by providing insight to the top characteristics of the incident that you should be aware of.</span></span>
+<span data-ttu-id="42bad-125">此概觀藉由提供您應該注意的事件主要特性深入解析，可協助對事件進行初步分級。</span><span class="sxs-lookup"><span data-stu-id="42bad-125">This overview can assist in the initial triage of the incident by providing insight to the top characteristics of the incident that you should be aware of.</span></span>
 
-## <a name="alerts"></a><span data-ttu-id="1ee5e-126">警示</span><span class="sxs-lookup"><span data-stu-id="1ee5e-126">Alerts</span></span>
+## <a name="alerts"></a><span data-ttu-id="42bad-126">警示</span><span class="sxs-lookup"><span data-stu-id="42bad-126">Alerts</span></span>
 
-<span data-ttu-id="1ee5e-127">您可以查看與該事件相關的所有警示及其他相關資訊，例如警示中所涉及的嚴重性、實體、 (Microsoft Defender for Identity、Microsoft Defender for Endpoint、microsoft defender for Office 365) ，以及連結在一起的原因。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-127">You can view all the alerts related to the incident and other information about them such as severity, entities that were involved in the alert, the source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365) and the reason they were linked together.</span></span>
+<span data-ttu-id="42bad-127">您可以查看與該事件相關的所有警示及其他相關資訊，例如警示中所涉及的嚴重性、實體、 (Microsoft Defender for Identity、Microsoft Defender for Endpoint、microsoft defender for Office 365) ，以及連結在一起的原因。</span><span class="sxs-lookup"><span data-stu-id="42bad-127">You can view all the alerts related to the incident and other information about them such as severity, entities that were involved in the alert, the source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365) and the reason they were linked together.</span></span>
 
 ![事件警示頁面影像](../../media/incident-alerts.png)
 
-<span data-ttu-id="1ee5e-129">根據預設，警示會依時間順序排列，讓您首先檢視攻擊如何隨時間推移而進行。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-129">By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time.</span></span> <span data-ttu-id="1ee5e-130">按一下每個警示會產生相關的警示頁面，您可以在其中對該警示進行深入調查。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-130">Clicking on each alert will lead you to the relevant alert page where you can conduct an in-depth investigation of that alert.</span></span> <span data-ttu-id="1ee5e-131">瞭解如何在[調查提醒](investigate-alerts.md)中使用警示頁面和整合提醒佇列</span><span class="sxs-lookup"><span data-stu-id="1ee5e-131">Learn how to use alert pages and the unified alert queue in [Investigate alerts](investigate-alerts.md)</span></span>
+<span data-ttu-id="42bad-129">根據預設，警示會依時間順序排列，讓您首先檢視攻擊如何隨時間推移而進行。</span><span class="sxs-lookup"><span data-stu-id="42bad-129">By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time.</span></span> <span data-ttu-id="42bad-130">按一下每個警示會產生相關的警示頁面，您可以在其中對該警示進行深入調查。</span><span class="sxs-lookup"><span data-stu-id="42bad-130">Clicking on each alert will lead you to the relevant alert page where you can conduct an in-depth investigation of that alert.</span></span> <span data-ttu-id="42bad-131">瞭解如何在[調查提醒](investigate-alerts.md)中使用警示頁面和整合提醒佇列</span><span class="sxs-lookup"><span data-stu-id="42bad-131">Learn how to use alert pages and the unified alert queue in [Investigate alerts](investigate-alerts.md)</span></span>
 
-## <a name="devices"></a><span data-ttu-id="1ee5e-132">裝置</span><span class="sxs-lookup"><span data-stu-id="1ee5e-132">Devices</span></span>
+## <a name="devices"></a><span data-ttu-id="42bad-132">裝置</span><span class="sxs-lookup"><span data-stu-id="42bad-132">Devices</span></span>
 
-<span data-ttu-id="1ee5e-133">裝置索引標籤會列出所有顯示事件相關警示的裝置。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-133">The devices tab lists all the devices where alerts related to the incident are seen.</span></span>
+<span data-ttu-id="42bad-133">裝置索引標籤會列出所有顯示事件相關警示的裝置。</span><span class="sxs-lookup"><span data-stu-id="42bad-133">The devices tab lists all the devices where alerts related to the incident are seen.</span></span>
 
-<span data-ttu-id="1ee5e-134">按一下執行攻擊的電腦名稱，引導您至其 [電腦] 頁面，您可以其中查看觸發的警示，以及提供的相關事件，以便輕鬆調查。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-134">Clicking the name of the machine where the attack was conducted navigates you to its Machine page where you can see alerts that were triggered on it and related events provided to ease investigation.</span></span>
+<span data-ttu-id="42bad-134">按一下執行攻擊的電腦名稱，引導您至其 [電腦] 頁面，您可以其中查看觸發的警示，以及提供的相關事件，以便輕鬆調查。</span><span class="sxs-lookup"><span data-stu-id="42bad-134">Clicking the name of the machine where the attack was conducted navigates you to its Machine page where you can see alerts that were triggered on it and related events provided to ease investigation.</span></span>
 
 ![事件機器索引標籤影像](../../media/incident-machines.png)
 
-<span data-ttu-id="1ee5e-136">選取 [時間表] 索引標籤可讓您捲動電腦時程表，並以時間順序檢視電腦上觀測到的所有活動和行為，以及散布其中的警示。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-136">Selecting the Timeline tab enables you to scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.</span></span>
+<span data-ttu-id="42bad-136">選取 [時間表] 索引標籤可讓您捲動電腦時程表，並以時間順序檢視電腦上觀測到的所有活動和行為，以及散布其中的警示。</span><span class="sxs-lookup"><span data-stu-id="42bad-136">Selecting the Timeline tab enables you to scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.</span></span>
 
-## <a name="users"></a><span data-ttu-id="1ee5e-137">使用者</span><span class="sxs-lookup"><span data-stu-id="1ee5e-137">Users</span></span>
+> [!TIP]
+> <span data-ttu-id="42bad-137">您可以在裝置頁面上執行手動掃描。</span><span class="sxs-lookup"><span data-stu-id="42bad-137">You can do on-demand scans on a device page.</span></span> <span data-ttu-id="42bad-138">在 Microsoft 365 的 [安全性中心] 中，選擇 [ **設備清查**]。</span><span class="sxs-lookup"><span data-stu-id="42bad-138">In the Microsoft 365 security center, choose **Device inventory**.</span></span> <span data-ttu-id="42bad-139">選取具有警示的裝置，然後執行防病毒掃描。</span><span class="sxs-lookup"><span data-stu-id="42bad-139">Select a device that has alerts, and then run an antivirus scan.</span></span> <span data-ttu-id="42bad-140">在 [ **裝置庫存** ] 頁面上追蹤並顯示的動作（例如防病毒掃描）。</span><span class="sxs-lookup"><span data-stu-id="42bad-140">Actions, such as antivirus scans, are tracked and are visible on the **Device inventory** page.</span></span> <span data-ttu-id="42bad-141">若要深入瞭解，請參閱 [在裝置上執行 Microsoft Defender 防病毒掃描](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。</span><span class="sxs-lookup"><span data-stu-id="42bad-141">To learn more, see [Run Microsoft Defender Antivirus scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).</span></span>
 
-<span data-ttu-id="1ee5e-138">查看已識別為指定事件一部分或與相關的使用者。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-138">See users that have been identified to be part of, or related to a given incident.</span></span>
 
-<span data-ttu-id="1ee5e-139">按一下使用者名稱以引導您至使用者的雲端 App 安全性頁面，可在頁面中執行進一步的調查。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-139">Clicking the username navigates you to the user's Cloud App Security page where further investigation can be conducted.</span></span>
+## <a name="users"></a><span data-ttu-id="42bad-142">使用者</span><span class="sxs-lookup"><span data-stu-id="42bad-142">Users</span></span>
+
+<span data-ttu-id="42bad-143">查看已識別為指定事件一部分或與相關的使用者。</span><span class="sxs-lookup"><span data-stu-id="42bad-143">See users that have been identified to be part of, or related to a given incident.</span></span>
+
+<span data-ttu-id="42bad-144">按一下使用者名稱以引導您至使用者的雲端 App 安全性頁面，可在頁面中執行進一步的調查。</span><span class="sxs-lookup"><span data-stu-id="42bad-144">Clicking the username navigates you to the user's Cloud App Security page where further investigation can be conducted.</span></span>
 
 ![事件使用者索引標籤影像](../../media/incident-users.png)
 
-## <a name="mailboxes"></a><span data-ttu-id="1ee5e-141">信箱</span><span class="sxs-lookup"><span data-stu-id="1ee5e-141">Mailboxes</span></span>
+## <a name="mailboxes"></a><span data-ttu-id="42bad-146">信箱</span><span class="sxs-lookup"><span data-stu-id="42bad-146">Mailboxes</span></span>
 
-<span data-ttu-id="1ee5e-142">調查已識別為指定事件一部分或與相關的信箱。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-142">Investigate mailboxes that's been identified to be part of, or related to an incident.</span></span> <span data-ttu-id="1ee5e-143">若要進行進一步的調查工作，選取郵件相關的警示會開啟 Microsoft Defender for Office 365，您可以採取修正動作。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-143">To do further investigative work, selecting the mail-related alert will open Microsoft Defender for Office 365 where you can take remediation actions.</span></span>
+<span data-ttu-id="42bad-147">調查已識別為指定事件一部分或與相關的信箱。</span><span class="sxs-lookup"><span data-stu-id="42bad-147">Investigate mailboxes that's been identified to be part of, or related to an incident.</span></span> <span data-ttu-id="42bad-148">若要進行進一步的調查工作，選取郵件相關的警示會開啟 Microsoft Defender for Office 365，您可以採取修正動作。</span><span class="sxs-lookup"><span data-stu-id="42bad-148">To do further investigative work, selecting the mail-related alert will open Microsoft Defender for Office 365 where you can take remediation actions.</span></span>
 
 ![事件信箱索引標籤影像](../../media/incident-mailboxes.png)
 
-## <a name="investigations"></a><span data-ttu-id="1ee5e-145">調查</span><span class="sxs-lookup"><span data-stu-id="1ee5e-145">Investigations</span></span>
+## <a name="investigations"></a><span data-ttu-id="42bad-150">調查</span><span class="sxs-lookup"><span data-stu-id="42bad-150">Investigations</span></span>
 
-<span data-ttu-id="1ee5e-146">選取 [ **調查** ]，以查看此事件中的警示所觸發的所有自動調查。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-146">Select **Investigations** to see all the automated investigations triggered by alerts in this incident.</span></span> <span data-ttu-id="1ee5e-147">調查會執行修正動作，或等候分析員的動作批准，視您如何設定自動調查以在 Microsoft Defender for Endpoint 和 Defender for Office 365 中執行。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-147">The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.</span></span>
+<span data-ttu-id="42bad-151">選取 [ **調查** ]，以查看此事件中的警示所觸發的所有自動調查。</span><span class="sxs-lookup"><span data-stu-id="42bad-151">Select **Investigations** to see all the automated investigations triggered by alerts in this incident.</span></span> <span data-ttu-id="42bad-152">調查會執行修正動作，或等候分析員的動作批准，視您如何設定自動調查以在 Microsoft Defender for Endpoint 和 Defender for Office 365 中執行。</span><span class="sxs-lookup"><span data-stu-id="42bad-152">The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.</span></span>
 
 ![事件調查索引標籤影像](../../media/incident-investigations.png)
 
-<span data-ttu-id="1ee5e-149">選取調查以瀏覽至 [調查詳細資料] 頁面，取得調查和修復狀態的完整資訊。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-149">Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status.</span></span> <span data-ttu-id="1ee5e-150">如果有任何動作出于調查的一部分而待核准，它們就會出現在 [擱置的動作] 索引標籤中。採取動作做為事件修復的一部分。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-150">If there are any actions pending for approval as part of the investigation, they will appear in the Pending actions tab. Take action as part of incident remediation.</span></span>
+<span data-ttu-id="42bad-154">選取調查以瀏覽至 [調查詳細資料] 頁面，取得調查和修復狀態的完整資訊。</span><span class="sxs-lookup"><span data-stu-id="42bad-154">Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status.</span></span> <span data-ttu-id="42bad-155">如果有任何動作出于調查的一部分而待核准，它們就會出現在 [擱置的動作] 索引標籤中。採取動作做為事件修復的一部分。</span><span class="sxs-lookup"><span data-stu-id="42bad-155">If there are any actions pending for approval as part of the investigation, they will appear in the Pending actions tab. Take action as part of incident remediation.</span></span>
 
-## <a name="evidence"></a><span data-ttu-id="1ee5e-151">證據</span><span class="sxs-lookup"><span data-stu-id="1ee5e-151">Evidence</span></span>
+## <a name="evidence"></a><span data-ttu-id="42bad-156">證據</span><span class="sxs-lookup"><span data-stu-id="42bad-156">Evidence</span></span>
 
-<span data-ttu-id="1ee5e-152">Microsoft 365 Defender 會自動調查警示中的所有事件支援事件和可疑實體，以提供 autoresponse 及重要檔案、程式、服務、電子郵件等相關資訊。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-152">Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with autoresponse and information about the important files, processes, services, emails, and more.</span></span> <span data-ttu-id="1ee5e-153">可協助您快速偵測並封鎖事件中的潛在威脅。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-153">This helps quickly detect and block potential threats in the incident.</span></span>
+<span data-ttu-id="42bad-157">Microsoft 365 Defender 會自動調查警示中的所有事件支援事件和可疑實體，以提供 autoresponse 及重要檔案、程式、服務、電子郵件等相關資訊。</span><span class="sxs-lookup"><span data-stu-id="42bad-157">Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with autoresponse and information about the important files, processes, services, emails, and more.</span></span> <span data-ttu-id="42bad-158">可協助您快速偵測並封鎖事件中的潛在威脅。</span><span class="sxs-lookup"><span data-stu-id="42bad-158">This helps quickly detect and block potential threats in the incident.</span></span>
 
 ![事件證據索引標籤影像](../../media/incident-evidence.png)
 
-<span data-ttu-id="1ee5e-155">系統會將每個經分析的實體標示為判定結果 (惡意、可疑、清除) 以及修復狀態。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-155">Each of the analyzed entities will be marked with a verdict (Malicious, Suspicious, Clean) as well as a remediation status.</span></span> <span data-ttu-id="1ee5e-156">可協助您了解整個事件的修復狀態，以及進一步修復可採取的步驟。</span><span class="sxs-lookup"><span data-stu-id="1ee5e-156">This assists you in understanding the remediation status of the entire incident and what are the next steps that can be taken to further remediate.</span></span>
+<span data-ttu-id="42bad-160">系統會將每個經分析的實體標示為判定結果 (惡意、可疑、清除) 以及修復狀態。</span><span class="sxs-lookup"><span data-stu-id="42bad-160">Each of the analyzed entities will be marked with a verdict (Malicious, Suspicious, Clean) as well as a remediation status.</span></span> <span data-ttu-id="42bad-161">可協助您了解整個事件的修復狀態，以及進一步修復可採取的步驟。</span><span class="sxs-lookup"><span data-stu-id="42bad-161">This assists you in understanding the remediation status of the entire incident and what are the next steps that can be taken to further remediate.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="1ee5e-157">相關主題</span><span class="sxs-lookup"><span data-stu-id="1ee5e-157">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="42bad-162">相關主題</span><span class="sxs-lookup"><span data-stu-id="42bad-162">Related topics</span></span>
 
-- [<span data-ttu-id="1ee5e-158">事件概觀</span><span class="sxs-lookup"><span data-stu-id="1ee5e-158">Incidents overview</span></span>](incidents-overview.md)
-- [<span data-ttu-id="1ee5e-159">設定事件優先順序</span><span class="sxs-lookup"><span data-stu-id="1ee5e-159">Prioritize incidents</span></span>](incident-queue.md)
-- [<span data-ttu-id="1ee5e-160">管理事件</span><span class="sxs-lookup"><span data-stu-id="1ee5e-160">Manage incidents</span></span>](manage-incidents.md)
+- [<span data-ttu-id="42bad-163">事件概觀</span><span class="sxs-lookup"><span data-stu-id="42bad-163">Incidents overview</span></span>](incidents-overview.md)
+- [<span data-ttu-id="42bad-164">設定事件優先順序</span><span class="sxs-lookup"><span data-stu-id="42bad-164">Prioritize incidents</span></span>](incident-queue.md)
+- [<span data-ttu-id="42bad-165">管理事件</span><span class="sxs-lookup"><span data-stu-id="42bad-165">Manage incidents</span></span>](manage-incidents.md)
 
