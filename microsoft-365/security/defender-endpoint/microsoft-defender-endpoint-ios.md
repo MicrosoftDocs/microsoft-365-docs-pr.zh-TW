@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 72c3cfd51e472bbbda61f0084e131c4298633193
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 7d4bc095a9fbc0b9cd166d3133ed291a2c8c01da
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186986"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615420"
 ---
-# <a name="microsoft-defender-for-endpoint-for-ios"></a>用於 iOS 的 Microsoft Defender for Endpoint
+# <a name="microsoft-defender-for-endpoint-for-ios"></a>iOS 版適用於端點的 Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -78,7 +78,7 @@ ms.locfileid: "51186986"
 
 ## <a name="resources"></a>資源
 
-- 請造訪我們的 [博客](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)，以及時瞭解即將推出的版本。
+- 透過為 iOS 或我們的博客[取得 Microsoft Defender For Endpoint 的新功能](ios-whatsnew.md)，以瞭解即將[](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)推出的版本。
 
 - 透過應用程式內的意見反應系統或透過[SecOps 入口網站](https://securitycenter.microsoft.com)提供意見反應
 

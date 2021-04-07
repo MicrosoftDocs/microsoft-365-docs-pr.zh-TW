@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以深入瞭解 Outlook 網頁版 Outlook 中內建的垃圾郵件、非垃圾郵件和網路釣魚電子郵件報告選項，在 Exchange Online 中) 的 Outlook Web App (，以及如何為使用者停用這些報告選項。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77a1233b85ad213091ac84ac6f7e8eb93d9145af
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 933387dd32a6c1ca1e27ee11e4a9384615e8fdec
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203589"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615206"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在 Exchange Online 中，在 Outlook 網頁版中報告垃圾郵件和網路釣魚電子郵件
 
@@ -33,9 +33,11 @@ ms.locfileid: "51203589"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在包含 Exchange Online 信箱的 Microsoft 365 組織中，您可以在 Outlook 網頁版 Outlook 中使用內建的報告選項， (之前稱為 Outlook Web App) 若要提交誤報 (良好的電子郵件) 、誤報 (不良電子郵件允許) 和網路釣魚郵件到 Exchange Online Protection (EOP) 。
+在使用 [混合式新式驗證](../../enterprise/hybrid-modern-auth-overview.md)的 Exchange online 或內部部署信箱中具有信箱的 Microsoft 365 組織中，您可以提交誤報 (已標示為垃圾郵件的適當電子郵件) 、false 不利 (允許的電子郵件) ，以及網路釣魚郵件至 Exchange Online PROTECTION (EOP) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
+
+- 為了獲得最佳的使用者提交經驗，我們建議使用報告訊息和報告網路釣魚增益集。請參閱 [enable The Report Message 增益集](./enable-the-report-message-add-in.md) 及 [啟用報告網路釣魚增益集](./enable-the-report-phish-add-in.md) 以取得詳細資訊。
 
 - 如果您是 Exchange Online 信箱組織中的系統管理員，建議您在安全性 & 規範中心內使用提交入口網站。 如需詳細資訊，請參閱 [使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
 
@@ -44,42 +46,6 @@ ms.locfileid: "51203589"
 - 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱 [使用者報送原則](user-submission.md)。
 
 - 如需將郵件報告給 Microsoft 的詳細資訊，請參閱 [將郵件和檔案報告給 microsoft](report-junk-email-messages-to-microsoft.md)。
-
-## <a name="report-spam-and-phishing-messages-in-outlook-on-the-web"></a>在 Outlook 網頁版中報告垃圾郵件和網路釣魚郵件
-
-1. 對於收件匣或任何其他電子郵件資料夾（除了垃圾郵件）以外的郵件，請使用下列其中一種方法來報告垃圾郵件和網路釣魚郵件：
-
-   - 選取郵件，按一下工具列上的 [ **垃圾** 郵件]，然後選取 [ **垃圾** 郵件] 或 [ **網路釣魚**]。
-
-     ![從功能區報告垃圾郵件或網路釣魚電子郵件](../../media/owa-report-junk.png)
-
-   - 選取一或多封郵件、按一下滑鼠右鍵，然後選取 [ **標記為垃圾** 郵件]。
-
-2. 在出現的對話方塊中，按一下 [ **報表**]。 如果您變更主意，請按一下 [ **不報告**]。
-
-   |垃圾|網路釣魚|
-   |:---:|:---:|
-   |![報告為垃圾郵件對話方塊](../../media/owa-report-as-junk-dialog.png)|![報告為網路釣魚對話方塊](../../media/owa-report-as-phishing-dialog.png)|
-
-3. 選取的郵件會傳送給 Microsoft 進行分析。 若要確認郵件已提交，請開啟 **[寄件備份]** 資料夾，以檢視已提交的郵件。
-
-## <a name="report-non-spam-and-phishing-messages-from-the-junk-email-folder-in-outlook-on-the-web"></a>從網頁型 Outlook 中的 [垃圾郵件] 資料夾報告非垃圾郵件和網路釣魚郵件
-
-1. 在 [垃圾郵件] 資料夾中，使用下列其中一種方法來報告垃圾郵件誤報或網路釣魚郵件：
-
-   - 選取郵件，按一下工具列上的 [ **非垃圾** 郵件]，然後選取 [ **不是垃圾** 郵件或 **網路釣魚**]。
-
-     ![從功能區報告不是垃圾郵件或沒有網路釣魚電子郵件](../../media/owa-report-not-junk.png)
-
-   - 選取一或多封郵件、按一下滑鼠右鍵，然後選取 [ **標記為非垃圾** 郵件]。
-
-2. 在出現的對話方塊中，閱讀資訊，然後按一下 [ **報告**]。 如果您變更主意，請按一下 [ **不報告**]。
-
-   |非垃圾郵件|網路釣魚|
-   |:---:|:---:|
-   |![[報告為非垃圾郵件] 對話方塊](../../media/owa-report-as-not-junk-dialog.png)|![報告為網路釣魚對話方塊](../../media/owa-report-as-phishing-dialog.png)|
-
-3. 選取的郵件會傳送給 Microsoft 進行分析。 若要確認郵件已提交，請開啟 **[寄件備份]** 資料夾，以檢視已提交的郵件。
 
 ## <a name="disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>在 web 上的 Outlook 中停用或啟用垃圾郵件報告
 

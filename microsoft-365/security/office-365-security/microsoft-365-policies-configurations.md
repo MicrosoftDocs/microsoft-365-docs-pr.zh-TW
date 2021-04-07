@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 9d7170ff261a53ba5755134973a912221363b3c8
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 104ef919d356642985e7b34d16650c27a8141e86
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599804"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615096"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -201,7 +201,7 @@ Microsoft 建議您不要建立適用于所有應用程式的原則集，因為�
 1. 設定必要身分識別功能及其設定。
 2. 設定通用身分識別和存取條件式存取原則。
 3. 為來賓和外部使用者設定條件式存取原則。
-4. 針對 microsoft 團隊、Exchange Online 和 SharePoint，設定 Microsoft 365 雲端 app 的條件式存取原則。
+4. 設定 Microsoft 365 cloud apps （如 Microsoft 團隊、Exchange Online 和 SharePoint ─）和 Microsoft Cloud App Security 原則的條件式存取原則。
 
 在您設定身分識別與裝置存取後，請參閱 [AZURE ad 功能部署指南](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) ，以瞭解其他應考慮的功能和 [Azure AD 身分識別](/azure/active-directory/governance/) 控管，以保護、監控和審核存取。
 

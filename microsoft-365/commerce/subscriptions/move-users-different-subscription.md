@@ -20,33 +20,40 @@ search.appverid:
 - MET150
 description: 瞭解如何在訂閱間移動使用者。
 ms.date: 07/01/2020
-ms.openlocfilehash: 31deb1b81e1f9605210b50036441f98dc3b6a811
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: e0c6aabbdfd50fa66d846c76d317d940dc0cd819
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408300"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615108"
 ---
 # <a name="move-users-to-a-different-subscription"></a>將使用者移至其他訂閱
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的經驗與您在此處所呈現的詳細資料不符，請參閱 [Microsoft 365 系統管理中心](../../business-video/admin-center-overview.md)。
-
-::: moniker-end
 
 如果您有多個訂閱，讓使用者擁有一個訂閱的授權，但想要將其移至另一個訂閱，您可以將現有的授權取代為其他訂閱。
 
 ## <a name="before-you-begin"></a>開始之前
 
-您必須是全域、授權或使用者系統管理員，才能指派授權。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../../admin/add-users/about-admin-roles.md?view=o365-worldwide)。
+您必須是全域、授權或使用者系統管理員，才能指派授權。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="move-users-to-a-different-subscription"></a>將使用者移至其他訂閱
 
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+
+::: moniker-end
 
 2. 選取您要取代現有授權的使用者名稱旁的圓圈。
 
@@ -55,44 +62,6 @@ ms.locfileid: "51408300"
 4. 在 [ **管理產品授權** ] 窗格中，選取 [ **取代**  ]，然後選取您要指派給使用者的授權。
 
 5. 在底部，選取 [ **儲存變更**] [ \> **關閉**]。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
-
-2. 選取您要取代現有授權的使用者名稱旁的方塊。
-
-3. 在 **[大量動作]** 窗格中，選取 **[編輯產品授權]**。
-
-4. 在 **[指派產品]** 窗格中，選取 **[取代現有產品授權指派]** \> **[下一步]**。
-
-5. 針對您要指派授權的使用者，將開關切換到 **[開啟]** 位置。
-
-    您可以限制使用者能使用的服務。 針對您不想讓使用者使用的服務，將開關切換至 **[關閉]** 位置。 將移除任何先前指派給所選使用者的授權。
-
-6. 在 **[取代現有產品]** 窗格的底部，選取 **[取代]** \> **[關閉]** \> **[關閉]**。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
-
-2. 選取您要取代現有授權的使用者名稱旁的方塊。
-
-3. 在 **[大量動作]** 窗格中，選取 **[編輯產品授權]**。
-
-4. 在 **[指派產品]** 窗格中，選取 **[取代現有產品授權指派]** \> **[下一步]**。
-
-5. 針對您要指派授權的使用者，將開關切換到 **[開啟]** 位置。
-
-    您可以限制使用者能使用的服務。 針對您不想讓使用者使用的服務，將開關切換至 **[關閉]** 位置。 將移除任何先前指派給所選使用者的授權。
-
-6. 在 **[取代現有產品]** 窗格的底部，選取 **[取代]** \> **[關閉]** \> **[關閉]**。
-
-::: moniker-end
 
 ## <a name="next-steps"></a>後續步驟
 

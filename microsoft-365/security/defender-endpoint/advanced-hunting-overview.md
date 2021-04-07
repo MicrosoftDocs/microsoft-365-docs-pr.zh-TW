@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4883a4f04f06774d02aa0d942edc841867eb36b6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9e5f29874ae42f2b82906a5ac0d2e615009d499f
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499514"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615480"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>使用高級搜尋主動搜尋威脅
 
@@ -43,7 +43,8 @@ ms.locfileid: "51499514"
 您可以使用相同的威脅搜尋查詢來建立自訂的偵測規則。 這些規則會自動執行，以檢查是否有可疑的破壞活動、錯誤設定的機器及其他發現的回應。
 
 >[!TIP]
->[在 Microsoft 威脅防護中使用高級搜尋](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)，以搜尋使用來自 Defender for Endpoint、microsoft Defender for Office 365、Microsoft Cloud App Security 及 microsoft Defender 身分識別的資料的威脅。 [開啟 Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+>使用 [microsoft 365 Defender 中的 [高級搜尋](/microsoft-365/security/defender/advanced-hunting-overview) ]，以搜尋使用來自 Defender for Endpoint、microsoft Defender for Office 365、Microsoft Cloud App Security 及 microsoft Defender 身分識別的資料威脅。 [開啟 Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。<br><br>
+深入瞭解如何將您的高級搜尋工作流程從 Microsoft Defender for Endpoint 移至 Microsoft 365 Defender，以 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)。
 
 ## <a name="get-started-with-advanced-hunting"></a>開始使用進階搜捕
 

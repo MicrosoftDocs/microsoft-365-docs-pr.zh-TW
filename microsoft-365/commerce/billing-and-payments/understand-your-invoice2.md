@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 了解如何解讀商務用 Microsoft 365 帳單或發票上的費用、計費和付款資訊，以及如何變更採購單編號。
-ms.openlocfilehash: 99b52928d458e7883919ee46aaafaa7a66278447
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911683"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615372"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解您的商務用 Microsoft 365 帳單或發票
 
@@ -106,36 +106,24 @@ ms.locfileid: "50911683"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
-
-2. 如果您在 [表格 **]** 檢視中，請選取 [卡片 **]** 以切換檢視。
-
-3. 尋找您要變更的訂閱。
-
-4. 在 [帳單 **]** 區段的 [發票 **]** 旁，選取 [編輯 **]**。
-
-5. 在 [編輯付款明細 **]** 窗格底部，輸入您的 PO 編號，然後選取 [儲存 **]**。
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
-
-2. 選取您要變更的訂閱，然後在 [付款方式 **]** 區段中，選取 [變更付款明細 **]**。
-
-3. 在 [變更付款明細 **]** 窗格底部，輸入您的 PO 編號，然後選取 [提交 **]**。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
-
-2. 選取您要變更的訂閱，然後在 [付款方式 **]** 區段中，選取 [變更付款明細 **]**。
-
-3. 在 [變更付款明細 **]** 窗格底部，輸入您的 PO 編號，然後選取 [提交 **]**。
-
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
 ::: moniker-end
+
+1. 在 **[產品]** 索引標籤上，選擇您想要變更的訂閱。
+
+1. 在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **編輯發票**]。 
+
+1. 在 [ **編輯詳細資料的詳細資料** ] 窗格的底部，輸入您的訂單編號，然後選取 [ **儲存**]。
 
 ## <a name="related-articles"></a>相關文章
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 5cd1f64d006b5462634dd47df9083e1a89db0e8c
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476622"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615207"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Mac 版端點的 Microsoft Defender 新增功能
 
@@ -38,8 +38,10 @@ ms.locfileid: "51476622"
 > [!IMPORTANT]
 > 在 macOS 11 (Big Sur) 上，Microsoft Defender for Endpoint 需要其他設定設定檔。 如果您是現有的客戶從舊版的 macOS 升級，請務必部署 [此頁面](mac-sysext-policies.md)所列的其他設定檔。
 
-> [!IMPORTANT]
-> 10.13 年2月 15 2021 日 (高端) 的支援 macOS 已停產。
+## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
+
+- Microsoft Defender for Mac 的端點現在可供美國政府客戶預覽。 如需詳細資訊，請參閱 [適用于美國政府客戶的 Microsoft Defender For Endpoint](gov.md)。
+- 在使用 XCode 模擬器應用程式) & bug 修正時，特別針對狀況的效能增強 (
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
 

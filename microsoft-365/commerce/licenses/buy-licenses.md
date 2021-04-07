@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: 瞭解如何購買更多授權，或減少用於商務用 Microsoft 365 訂閱的授權數目。
 ms.date: ''
-ms.openlocfilehash: 904444790a7984ebce4f549c77bfd22e8f459c9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911539"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615132"
 ---
 # <a name="buy-or-remove-licenses"></a>購買或移除授權
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 您可以使用下列步驟，購買更多授權或減少訂閱的授權數目。
 
@@ -60,29 +53,24 @@ ms.locfileid: "50911539"
 
 ::: moniker range="o365-worldwide"
 
-1. 在 Microsoft 365 系統管理中心中，移至 [帳單 **]  [** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a>] 頁面。
-2. 在 [ **產品** ] 索引標籤上，尋找您要購買或移除授權的訂閱。 選取 [ **更多** (三點) 的動作，然後選取 [ **購買授權**]。 [如果看不到 [購買授權] 或 [移除授權] 按鈕，該怎麼辦？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. 如果您想要減少授權數目，請在 [ **購買授權** ] 窗格的頂端，選取 [ **移除授權**]。
-4. 若要購買或移除授權，請在 [**授權總數**] 方塊中的 [**新數量**] 下，輸入此訂閱所需的授權總數。 例如，如果您有100授權，而您想要新增5個，請輸入105。 如果您想要移除五個，請輸入95。
-5. 選取 [儲存]。
-
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
-2. 在 [ **訂閱** ] 頁面上，選取您要購買或移除授權的訂閱，然後選取 [ **新增/移除授權**]。 [如果看不到 [購買授權] 或 [移除授權] 按鈕，該怎麼辦？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. 在 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數，然後選取 [ **提交** \> **關閉**]。 例如，如果您有100授權，而您想要新增5個，請輸入105。 如果您想要移除五個授權，請輸入95。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。
-2. 在 [ **訂閱** ] 頁面上，選取您要購買或移除授權的訂閱，然後選取 [ **新增/移除授權**]。 [如果看不到 [購買授權] 或 [移除授權] 按鈕，該怎麼辦？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. 在 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數，然後選取 [ **提交** \> **關閉**]。 For example, if you have 100 licenses and you need to add 5 more, enter 105. 如果您想要移除5項，請輸入95。
-
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
 ::: moniker-end
+
+2. 在 [ **產品** ] 索引標籤上，尋找您要購買或移除授權的訂閱。 選取 [ **更多** (三點) 的動作，然後選取 [ **購買授權**]。 [如果看不到 [購買授權] 或 [移除授權] 按鈕，該怎麼辦？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+3. 如果您想要減少授權數目，請在 [ **購買授權** ] 窗格的頂端，選取 [ **移除授權**]。
+4. 若要購買或移除授權，請在 [**授權總數**] 方塊中的 [**新數量**] 下，輸入此訂閱所需的授權總數。 例如，如果您有100授權，而您想要新增5個，請輸入105。 如果您想要移除五個，請輸入95。
+5. 選取 **[儲存]**。
 
 > [!NOTE]
 > 若所有授權都已指派給使用者，您就無法減少訂閱的授權數目。 若要減少授權數目，請先 [從使用者取消指派一或多個授權](../../admin/manage/remove-licenses-from-users.md)，然後從訂閱中移除授權。

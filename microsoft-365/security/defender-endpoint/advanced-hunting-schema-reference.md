@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: ce87b6e9e462ba5bd1bab1542c41ac72092dabd4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 38fe205227089acaec1ba0cbecffdfb76acf6a24
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500596"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615468"
 ---
-# <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
+# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>瞭解 Microsoft Defender for Endpoint 中的高級搜尋架構
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -75,6 +75,9 @@ ms.locfileid: "51500596"
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | 威脅與弱點管理評定事件，可表示裝置上的各種安全性設定狀態 |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | 由威脅與弱點管理所使用之各種安全性設定的知識庫來評定裝置，包含各種標準和效能評定的對應 |
 
+>[!TIP]
+>使用 [microsoft 365 Defender 中的 [高級搜尋](/microsoft-365/security/defender/advanced-hunting-overview) ]，以搜尋使用來自 Defender for Endpoint、microsoft Defender for Office 365、Microsoft Cloud App Security 及 microsoft Defender 身分識別的資料威脅。 [開啟 Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)<br><br>
+深入瞭解如何將您的高級搜尋工作流程從 Microsoft Defender for Endpoint 移至 Microsoft 365 Defender，以 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)。
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

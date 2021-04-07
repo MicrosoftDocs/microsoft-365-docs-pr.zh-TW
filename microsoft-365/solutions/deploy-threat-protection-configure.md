@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 847dd2d090fb26c5558d4a3496a79cf4829881fb
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: 81a1a4ce2e99caaca1025c6ddbbdfdc7ab7c449d
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604390"
+ms.locfileid: "51615504"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 設定威脅防護功能
 
@@ -128,11 +128,8 @@ Microsoft 365 Defender 在工作負載中統一的提醒、事件、自動化調
 ![為端點部署 Microsoft Defender 的程式](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
 1. 為[Microsoft Defender For Endpoint 準備您的環境](../security/defender-endpoint/deployment-phases.md)。
-
 2. [部署 Microsoft Defender For Endpoint](../security/defender-endpoint/production-deployment.md)。
-
 3. [在 Microsoft Defender For Endpoint service 上架](../security/defender-endpoint/onboarding.md)上。
-
 4. [完成最常見的安全性系統管理](../security/defender-endpoint/tvm-security-recommendation.md)工作。
 
 ### <a name="more-information-about-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的詳細資訊
@@ -149,11 +146,8 @@ Microsoft 365 Defender 在工作負載中統一的提醒、事件、自動化調
 ![部署 Microsoft Cloud App Security 的程式](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
 1. [設定入口網站和其他基本需求](/cloud-app-security/general-setup)。
-
 2. [設定 cloud discovery](/cloud-app-security/set-up-cloud-discovery) 和 [connect 應用程式](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)。
-
 3. [為特色式應用程式部署條件式存取應用程式控制](/cloud-app-security/proxy-deployment-aad)。
-
 4. [使用調查工具及儀表板](/cloud-app-security/investigate)。
 
 ### <a name="more-information-about-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的詳細資訊

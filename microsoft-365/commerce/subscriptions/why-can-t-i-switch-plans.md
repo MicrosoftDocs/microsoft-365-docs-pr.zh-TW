@@ -24,81 +24,31 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 瞭解有時切換方案必須手動完成或通過呼叫支援的原因。
-ms.openlocfilehash: 0880337e4879c093119b98f4d0108ca65c17e705
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 41cc0511b1c04249a6c359054b2fdc829ca40713
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164458"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615324"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>為什麼我無法切換商務方案的 Microsoft 365？
 
-::: moniker range="o365-worldwide"
 > [!NOTE]
 > 本文適用于舊版系統管理中心。 若要查看有關系統管理中心的 (預覽) 的相關文章，請參閱 [為什麼無法升級方案？](upgrade-to-different-plan.md#why-cant-i-upgrade-plans)。 預覽可供所有 Microsoft 365 系統管理員使用，您可以選取 [嘗試使用位於首頁頂端的 **預覽** 切換] 進行選擇。 如需詳細資訊，請參閱[關於新的 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md)。
-::: moniker-end
 
 如果您看不到 [ **切換方案** ] 按鈕，就無法自動切換您的計畫。 在某些情況下，您可能能夠解決問題，使您可以使用 [ **切換方案** ] 按鈕，否則您也可以改為 [手動切換方案](switch-plans-manually.md)。 將滑鼠移到 info 圖示上，以查看訊息，說明 [ **切換方案** ] 按鈕無法使用的原因。 您可以使用本文中的資訊以解決問題。
-  
-::: moniker range="o365-worldwide"
 
  **需要其他內容嗎？** [購買其他訂閱](../try-or-buy-microsoft-365.md)  | [取消您的訂閱](cancel-your-subscription.md)  | [訂閱和帳單](../index.yml)  | [電話支援](../../admin/contact-support-for-business-products.md)
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- **需要其他內容嗎？** [購買其他訂閱](../try-or-buy-microsoft-365.md)  | [取消您的訂閱](cancel-your-subscription.md)  | [訂閱和帳單](../index.yml)  | [電話支援](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- **需要其他內容嗎？** [購買或試用由世紀](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  運作之 Office 365 的訂閱[取消您的訂閱](cancel-your-subscription.md)  | [電話支援](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
 
 ## <a name="why-isnt-the-switch-plans-button-available-for-my-subscription"></a>為什麼 [切換方案] 按鈕無法用於我的訂閱？
 
 ### <a name="you-cant-switch-subscriptions-now-because-you-have-more-users-than-licenses"></a>您的使用者數量超過授權數量，因此您目前無法切換訂閱。
 
-::: moniker range="o365-worldwide"
-
 若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../commerce/licenses/buy-licenses.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../commerce/licenses/buy-licenses.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../commerce/licenses/buy-licenses.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
-
-::: moniker-end
 
 ### <a name="you-cant-switch-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>這個訂閱尚未完成設定，或是系統無法提供相關服務，因此您目前無法切換訂閱。
 
-
-::: moniker range="o365-worldwide"
-
 若要查看是否有提供或服務健康情況問題，請移至 [ <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">服務健康</a> 情況] 頁面，或選取 [ **狀況** \> **服務健康情況**]。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-若要查看是否有提供或服務健康情況問題365，請移至 [ <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">服務健康</a> 情況] 頁面，或選取 [ **狀況** \> **服務健康情況**]。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-若要查看是否有提供或服務健康情況問題365，請移至 [ <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">服務健康</a> 情況] 頁面，或選取 [ **狀況** \> **服務健康情況**]。
-
-::: moniker-end
 
 如果您發現有服務尚未佈建完畢，或是有服務健康情況的問題，請稍候數小時，待服務正常提供後再試。 如果仍有問題，請 [致電支援人員](../../admin/contact-support-for-business-products.md)。
   

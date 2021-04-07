@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: 瞭解如何使用產品金鑰新增授權或擴充訂閱。
-ms.openlocfilehash: 583014c98207f98abc55248159aafd371c96b6c0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 15fac17df66b0c23e3188eff9acc2d8f617ca226
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545781"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615145"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>新增授權或擴充使用產品金鑰支付的訂閱
 
@@ -40,60 +40,46 @@ ms.locfileid: "47545781"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
-2. 在 [ **產品** ] 索引標籤上，選取您要新增授權的訂閱。
-3. 在 [訂閱詳細資料] 頁面的 [ **授權** ] 區段中，選取 [ **新增更多授權**]。
-4. 在 [**新增更多授權] 窗格**中，選取 [**使用新和未使用的產品金鑰**]，然後選取 **[下一步]**
-5. 輸入產品金鑰，然後選取 **[下一步]**。
-    > [!NOTE]
-    > 如果您有一個以上的產品金鑰，您可以選取 [ **新增其他產品金鑰** ] 加以輸入。
-6. 請複查您的訂單詳細資料，然後選取 [ **兌換**]。
-
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
-
-2. 尋找您要新增授權的訂閱。 選取 [ **其他動作** ] 下拉式清單，然後選擇 [ **使用權杖更新] 或 [新增授權**]。
-
-3. 在 [ **更新或新增使用者授權** ] 頁面上，選取 [ **使用新的和未使用的產品金鑰**]，然後選取 **[下一步]**。
-
-4. 輸入產品金鑰，然後選取 **[下一步]**。
-
-    > [!NOTE]
-    > 如果您有一個以上的產品金鑰，您可以選取 [ **新增其他產品金鑰** ] 加以輸入。
-
-5. 選擇將使用者新增至訂閱，然後選取 **[下一步]**。
-
-6. 請複查您的訂單詳細資料，然後選取 [ **兌換**]。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">產品 & 服務</a>] 頁面。  
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
+::: moniker-end
 
-2. 尋找您要新增授權的訂閱。 選取 [ **其他動作** ] 下拉式清單，然後選擇 [ **使用權杖更新] 或 [新增授權**]。
-
-3. 在 [ **更新或新增使用者授權** ] 頁面上，選取 [ **使用新的和未使用的產品金鑰**]，然後選取 **[下一步]**。
-
-4. 輸入產品金鑰，然後選取 **[下一步]**。
-
+2. 在 [ **產品** ] 索引標籤上，選取您要新增授權的訂閱。
+3. 在 [訂閱詳細資料] 頁面的 [ **授權** ] 區段中，選取 [ **新增更多授權**]。
+4. 在 [**新增更多授權] 窗格** 中，選取 [**使用新和未使用的產品金鑰**]，然後選取 **[下一步]**
+5. 輸入產品金鑰，然後選取 **[下一步]**。
     > [!NOTE]
     > 如果您有一個以上的產品金鑰，您可以選取 [ **新增其他產品金鑰** ] 加以輸入。
-
-5. 選擇將使用者新增至訂閱，然後選取 **[下一步]**。
-
 6. 請複查您的訂單詳細資料，然後選取 [ **兌換**]。
-
-::: moniker-end
   
 ## <a name="extend-the-expiration-date-of-your-subscription"></a>延長您訂閱的到期日
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
+::: moniker-end
+
 2. 在 [ **產品** ] 索引標籤上，選取您要擴充的訂閱。
 3. 在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **延長結束日期**]。
 4. 在 [ **更新或新增使用者授權** ] 頁面上，選取 [ **使用新的和未使用的產品金鑰**]，然後選取 **[下一步]**。
@@ -101,46 +87,6 @@ ms.locfileid: "47545781"
     > [!NOTE]
     > 如果您有一個以上的產品金鑰，您可以選取 [ **新增其他產品金鑰** ] 加以輸入。
 6. 請複查您的訂單詳細資料，然後選取 [ **兌換**]。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
-
-2. 尋找您要擴充的訂閱。 選取 [ **其他動作** ] 下拉式清單，然後選取 [ **使用權杖更新或新增授權**]。
-
-3. 在 [ **更新或新增使用者授權** ] 頁面上，選取 [ **使用新的和未使用的產品金鑰**]，然後選取 **[下一步]**。
-
-4. 輸入產品金鑰，然後選取 **[下一步]**。
-
-    > [!NOTE]
-    > 如果您有一個以上的產品金鑰，您可以選取 [ **新增其他產品金鑰** ] 加以輸入。
-
-5. 選擇 [擴充訂閱到期日]，然後選取 **[下一步]**。
-
-6. 請複查您的訂單詳細資料，然後選取 [ **兌換**]。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
-
-2. 尋找您要擴充的訂閱。 選取 [ **其他動作** ] 下拉式清單，然後選取 [ **使用權杖更新或新增授權**]。
-
-3. 在 [ **更新或新增使用者授權** ] 頁面上，選取 [ **使用新的和未使用的產品金鑰**]，然後選取 **[下一步]**。
-
-4. 輸入產品金鑰，然後選取 **[下一步]**。
-
-    > [!NOTE]
-    > 如果您有一個以上的產品金鑰，您可以選取 [ **新增其他產品金鑰** ] 加以輸入。
-
-5. 選擇 [擴充訂閱到期日]，然後選取 **[下一步]**。
-
-6. 請複查您的訂單詳細資料，然後選取 [ **兌換**]。
-
-::: moniker-end
 
 ## <a name="related-articles"></a>相關文章
 
