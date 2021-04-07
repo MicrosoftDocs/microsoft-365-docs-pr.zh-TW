@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: cb3c6bf6e19088be2771747af12932fa4e80431a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9d7170ff261a53ba5755134973a912221363b3c8
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204916"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599804"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -43,14 +43,13 @@ ms.locfileid: "51204916"
 這些功能及其建議：
 
 - 支援 Microsoft 365 E3 和 Microsoft 365 E5。
-- 會與 [Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) 和 [Azure AD 中的身分識別分數](/azure/active-directory/fundamentals/identity-secure-score)對齊，並且會為您的組織增加這些分數。
+- 會與 [Microsoft 安全分數](../defender/microsoft-secure-score.md) 和 [Azure AD 中的身分識別分數](/azure/active-directory/fundamentals/identity-secure-score)對齊，並且會為您的組織增加這些分數。
 - 會協助您執行下列 [五個步驟，以保護您的身分識別基礎結構](/azure/security/azure-ad-secure-steps)。
 
 如果您的組織有獨特的環境需求或複雜性，請使用這些建議做為開始點。 不過，大多陣列織可依照預定的方式來執行這些建議。
 
 觀賞這段影片，快速流覽 Microsoft 365 for enterprise 的身分識別與裝置存取設定。
-<br>
-<br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1460deef11a87044530c54c8b10637284829a0cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204760"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599460"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查和回應 (AIR) 
 
@@ -81,11 +81,9 @@ AIR 功能包含在 [適用于 Office 365 的 Microsoft Defender](defender-for-o
 - [反惡意程式碼原則](protect-against-threats.md#part-1---anti-malware-protection)
 - [Antiphishing 保護](protect-against-threats.md#part-2---anti-phishing-protection)
 - [反垃圾郵件保護](protect-against-threats.md#part-3---anti-spam-protection)
-- [Antiphishing 保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-2---anti-phishing-protection)
-- [反垃圾郵件保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-3---anti-spam-protection)
-- [安全連結和安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [電子郵件自動清除零小時](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop)
+- [安全連結和安全附件](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [電子郵件自動清除零小時](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
 此外，請務必 [檢查您組織的警示原則](../../compliance/alert-policies.md)，尤其是「 [威脅管理」類別中的預設原則](../../compliance/alert-policies.md#default-alert-policies)。
 
@@ -93,8 +91,8 @@ AIR 功能包含在 [適用于 Office 365 的 Microsoft Defender](defender-for-o
 
 Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系統管理員許可權濫用、惡意程式碼活動、潛在的外部和內部威脅，以及資訊控管風險。 某些預設的 [報警原則](../../compliance/alert-policies.md#default-alert-policies) 可以觸發自動調查。 下表說明觸發自動調查的警示、在 Microsoft 365 安全性中心的嚴重性，以及產生的方式：
 
-|警報|嚴重性|警示的產生方式|
-|:---|:---|:---|
+|警示|嚴重性|警示的產生方式|
+|---|---|---|
 |偵測到可能的惡意 URL 按一下|**High**|發生下列任何情況時，就會產生此警示： <ul><li>由組織中 [安全連結](safe-links.md) 所保護的使用者按一下惡意連結</li><li>URLs 的判定變更是由 Microsoft Defender for Office 365 所識別</li><li>根據組織的 [安全連結原則](set-up-safe-links-policies.md)) ，使用者會覆寫安全連結警告頁面 (。</li></ul> <p> 如需觸發此警示之事件的詳細資訊，請參閱 [設定安全連結原則](set-up-safe-links-policies.md)。|
 |使用者報告電子郵件訊息為惡意程式碼或網路釣魚網路|**資訊**|當您組織中的使用者使用 [報告郵件增益集](enable-the-report-message-add-in.md) 或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md)，將郵件報告為網路釣魚電子郵件時，就會產生此警示。|
 |傳遞後移除包含惡意程式碼的電子郵件|**資訊**|當包含惡意程式碼的電子郵件訊息傳送至組織中的信箱時，就會產生此警示。 如果發生此事件，Microsoft 會使用 [零小時自動清除](zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。|
@@ -113,7 +111,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 |工作|需要) 角色 (|
 |---|---|
 |設定 AIR 功能|下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li></ul> <p> 您可以在 [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)指派這些角色。|
-|開始自動調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|在 [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)內指派的下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li><li>安全性操作員</li><li>安全性讀取者 <br> --- 且 --- </li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
+|開始自動化調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|在 [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)內指派的下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li><li>安全性操作員</li><li>安全性讀取者 <br> --- 且 --- </li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
 
 ## <a name="required-licenses"></a>必要的授權
 
@@ -122,7 +120,6 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 - 安全性管理員 (包括全域管理員) 
 - 組織的安全性運作小組 (包括安全性讀者和具有 **搜尋和清除** 角色的使用者) 
 - 使用者
-
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>您的安全性中心即將推出變更
 
@@ -152,9 +149,9 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 |**實體** ] 索引標籤|[ **實體** ] 索引標籤具有 tab 鍵] 索引標籤的樣式，其中包含所有摘要視圖，以及按實體類型篩選的功能。 除了 [**在瀏覽器中開啟**] 選項之外，[**實體**] 索引標籤現在還包括「**移搜尋**」選項。 您現在可以使用 [威脅瀏覽器](threat-explorer.md) 或 [高級搜尋](../defender-endpoint/advanced-hunting-overview.md) 來尋找實體和威脅，並篩選結果。|
 |**動作** ] 索引標籤|[更新的 **動作** ] 索引標籤現在包含 [ **暫止動作** ] 索引標籤和 [ **動作記錄** ] 索引卷您可以在選取暫止動作時開啟的側邊窗格中，核准 (或拒絕動作) 。|
 |**證據** ] 索引標籤|新的 [ **證據** ] 索引標籤會顯示與動作相關的主要實體調查結果。 您可以在選取暫止動作時所開啟的側邊窗格中，核准 (或拒絕相關的每個證據的動作) 。|
-|**控制中心**|更新的 **操作中心** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 會在電子郵件、裝置和身分識別間，將擱置和完成的動作組合在一起。 若要深入瞭解，請參閱動作中心。  (若要深入瞭解，請參閱 [操作中心](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center)。 ) 
-|**事件** 頁面|[ **事件** ] 頁面現在可將多項調查與多項調查進行關聯，以提供更佳的調查觀點。  ([深入瞭解事件](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview)。 ) 
-
+|**控制中心**|更新的 **操作中心** ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 會在電子郵件、裝置和身分識別間，將擱置和完成的動作組合在一起。 若要深入瞭解，請參閱動作中心。  (若要深入瞭解，請參閱 [操作中心](../defender/m365d-action-center.md)。 ) |
+|**事件** 頁面|[ **事件** ] 頁面現在可將多項調查與多項調查進行關聯，以提供更佳的調查觀點。  ([深入瞭解事件](../defender/incidents-overview.md)。 ) |
+|
 
 ## <a name="next-steps"></a>後續步驟
 

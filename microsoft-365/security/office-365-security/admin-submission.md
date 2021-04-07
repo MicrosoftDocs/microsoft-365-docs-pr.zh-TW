@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581067"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599872"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -78,7 +78,7 @@ ms.locfileid: "51581067"
    - 檔案：按一下 **[選擇** 檔案]。 在開啟的對話方塊中，尋找並選取 .eml 或 .msg 檔案，然後按一下 [ **開啟**]。
 
    > [!NOTE]
-   > 管理員搭配 Office 的 Defender for Office 365 方案1或計畫2可將郵件提交為30天的舊郵件。 其他系統管理員只可以回復7天。
+   > 將郵件送出多久30天，已暫時為 Office 365 客戶的 Defender 停用。 系統管理員只可以回復7天。
 
 2. **在 [收** 件者] 區段中，指定您想要執行原則檢查的一或多個收件者。 原則檢查會決定是否因使用者或組織原則而略過掃描的電子郵件。
 

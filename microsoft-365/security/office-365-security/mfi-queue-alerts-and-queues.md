@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 系統管理員可以瞭解如何使用 Security & 合規性中心內郵件流程儀表板中的 [佇列] 小工具，以透過輸出連接器監視其內部部署或夥伴組織的失敗郵件流程。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14cadd0e8611fbbc65c3bdc9849beebf3a3eb34d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 65452b0ad7c31673c910ba48c9c6709995e563ce
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204921"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599980"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心內佇列的洞察力
 
@@ -87,7 +87,7 @@ Microsoft 365 會繼續重新嘗試傳遞24小時。 24小時後，郵件會到�
 - **目的地伺服器**
 - **最後一個 IP 位址**
 - **上一個錯誤**
-- **如何修正**：共有問題和解決方案可供使用。 如果 [ **立即修復它** ] 連結可用，請按一下它以修正此問題。 否則，請按一下任何可用的連結，以取得有關錯誤及可能解決方案的詳細資訊。
+- **如何修正**：共有問題和解決方案可供使用。 如果 [ **立即修正此** 連結] 連結可供使用，請按一下它以修正此問題。 否則，請按一下任何可用的連結，以取得有關錯誤及可能解決方案的詳細資訊。
 
 ![按一下郵件流程儀表板中佇列洞察力之後的詳細資料](../../media/mfi-queues-details.png)
 

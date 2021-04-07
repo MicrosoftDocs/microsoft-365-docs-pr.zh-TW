@@ -19,12 +19,12 @@ ms.custom:
 description: 了解如何更新網域名稱服務 (DNS) 記錄，以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aff62792be86b9c77430777c23edc655fe3bb9b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0a2c400e77c83fa61e276dee1d870835d466b5af
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203479"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599544"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>設定 SPF 以協助防止詐騙
 
@@ -137,6 +137,6 @@ SPF 會識別哪些郵件伺服器可以代表您傳送郵件。 基本上，SPF
 
  SPF 旨在協助防止詐騙，但是仍有 SPF 無法防護的詐騙技術。 為了防範這些騙術，設定 SPF 之後，應該為 Office 365 設定 DKIM 和 DMARC。
 
-[DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide) 電子郵件驗證的目標是證明郵件的內容沒有被篡改。
+[DKIM](use-dkim-to-validate-outbound-email.md) 電子郵件驗證的目標是證明郵件的內容沒有被篡改。
 
-[DMARC](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide) 電子郵件驗證的目標是確保 SPF 和 DKIM 資訊與寄件者地址相符。
+[DMARC](use-dmarc-to-validate-email.md) 電子郵件驗證的目標是確保 SPF 和 DKIM 資訊與寄件者地址相符。

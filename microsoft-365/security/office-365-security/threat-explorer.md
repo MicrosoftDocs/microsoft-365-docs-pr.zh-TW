@@ -19,12 +19,12 @@ description: 在安全性與合規性中心使用 Explorer 和即時偵測， &a
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570981"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599884"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -113,7 +113,7 @@ ms.locfileid: "51570981"
 > [!div class="mx-imgBorder"]
 > ![URL 標記](../../media/tags-urls.png)
 > 
-若要深入瞭解，請觀看 [這段影片](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)。 
+觀看[此影片](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)瞭解更多資訊。 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>對即將推出之威脅搜尋體驗的增強 () 
 
@@ -520,7 +520,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 - [檢視在 SharePoint Online、OneDrive 和 Microsoft Teams 中偵測到的惡意檔案](./mdo-for-spo-odb-and-teams.md)
 - [取得威脅瀏覽器中的視圖 (和即時偵測的概覽) ](threat-explorer-views.md)
 - [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft 威脅防護的自動化調查及回應](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Microsoft 威脅防護的自動化調查及回應](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 

@@ -15,12 +15,12 @@ ms.custom:
 description: Admins in 獨立 Exchange Online Protection (EOP) 組織可以瞭解如何建立、修改及移除 Exchange 系統管理中心內的通訊群組和擁有郵件功能的安全性群組 (EAC) 和獨立 Exchange Online Protection (EOP) PowerShell。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b97e3fac0840753edada964252875a6e3a4fa04
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b9d83f2fb59ee8f8d2d3035045ed438d5ba45851
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203439"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599566"
 ---
 # <a name="manage-groups-in-eop"></a>管理 EOP 中的群組
 
@@ -102,7 +102,7 @@ ms.locfileid: "51203439"
 
 3. 在開啟的 [通訊群組內容] 頁面上，按一下下列其中一個索引標籤，以查看或變更屬性。
 
-   完成後，請按一下 **[儲存]**。
+   完成後，按一下 **[儲存]**。
 
 #### <a name="general"></a>一般
 
@@ -216,7 +216,7 @@ $CurrentMemberNames += "Tyson Fawcett"
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-eopdistributiongroup) 和 [EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/update-eopdistributiongroupmember)。
+如需詳細的語法及參數資訊，請參閱 [Set-EOPDistributionGroup](/powershell/module/exchange/set-eopdistributiongroup) 和 [EOPDistributionGroupMember](/powershell/module/exchange/update-eopdistributiongroupmember)。
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>使用遠端 Windows PowerShell 移除群組
 
@@ -226,7 +226,7 @@ Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMem
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/remove-eopdistributiongroup)。
+如需詳細的語法及參數資訊，請參閱 [Remove-EOPDistributionGroup](/powershell/module/exchange/remove-eopdistributiongroup)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 

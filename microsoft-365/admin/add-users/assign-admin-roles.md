@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 瞭解如何將系統管理員角色指派給您公司中的使用者或多位使用者，以便他們可以在系統管理中心執行特定工作。
-ms.openlocfilehash: cfc4a7e106ca343435777aba1d0b9836f90a6f44
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5c40199823c93968be97302efc8e2d404f3cfed1
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904501"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604330"
 ---
 # <a name="assign-admin-roles"></a>指派系統管理員角色
 
@@ -59,7 +59,7 @@ ms.locfileid: "50904501"
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>使用角色將系統管理員角色指派給使用者
 
-1. 在系統管理中心中，移至 **角色** > **角色** ，以查看組織可使用的所有系統管理員角色。
+1. 在系統管理中心中，移至 [ **角色**]。 選擇 [ **AZURE AD** ] 或 [ **Intune** ] 索引標籤，以查看組織可使用的系統管理員角色。
 2. 選取您要指派給使用者的系統管理員角色。
 3. 選取 [指派的系統 **管理員**] [ > **新增**]。
 4. 輸入使用者的 **顯示名稱** 或使用者名稱，然後從建議 **清單中選取** 使用者。
@@ -70,7 +70,7 @@ ms.locfileid: "50904501"
 
 1. 在系統管理中心中，移至 [ **使用者** 作用中 > [使用者](https://go.microsoft.com/fwlink/p/?linkid=834822) ] 頁面。
 
-2. 在 [作用中 **使用者** ] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [ **角色**] 旁邊的 [ **管理角色**]。
+2. 在 [作用中 **使用者** ] 頁面上，選取您要變更其系統管理員角色的使用者。 在快顯視窗窗格中的 [ **角色**] 下，選取 [ **管理角色**]。
 
 3. 選取您要指派給使用者的系統管理員角色。 如果您找不到所要的角色，請選取清單底部的 [ **全部顯示** ]。
 

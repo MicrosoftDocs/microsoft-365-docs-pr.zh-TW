@@ -16,22 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1526190116c55ba6916b690583f224ee1e86fd8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5869e8406158eb6d6b2f48b3083cb9011bb3951d
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186158"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604342"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>設定 Microsoft Defender 安全性中心設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 >想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
@@ -46,3 +44,4 @@ ms.locfileid: "51186158"
 API | 啟用 intel 和 SIEM 整合的威脅。
 規則 | 設定禁止顯示規則和自動化設定。
 裝置管理 | 板載和下架裝置。
+網路評估 | 選擇要定期掃描的裝置，並將其新增至裝置庫存。

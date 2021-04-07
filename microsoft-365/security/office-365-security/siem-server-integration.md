@@ -18,12 +18,12 @@ ms.custom:
 description: 深入瞭解安全性資訊和事件管理 (SIEM) 伺服器與您的 Microsoft 365 雲端服務和應用程式整合
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d060b3c12304f6a23ad9421bb43e54c4cd561af5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204844"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599944"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>安全性資訊和事件管理 (SIEM) 伺服器與 Microsoft 365 服務和應用程式整合
 
@@ -58,7 +58,7 @@ SIEM server 可以從各種各樣的 Microsoft 365 服務和應用程式接收�
 |Microsoft 365 服務或應用程式|SIEM 伺服器的輸入/方法|可深入了解的資源|
 |---|---|---|
 |[適用於 Office 365 的 Microsoft Defender](defender-for-office-365.md)|稽核記錄|[SIEM 與 Microsoft Defender for Office 365 的整合](siem-integration-with-office-365-ti.md)|
-|[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)|Azure 中主控的 HTTPS 端點 <p> REST API|[將提醒納入您的 SIEM 工具](../defender-endpoint/configure-siem.md)|
+|[適用於端點的 Microsoft Defender](/windows/security/threat-protection/)|Azure 中主控的 HTTPS 端點 <p> REST API|[將提醒納入您的 SIEM 工具](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|記錄整合|[SIEM 與 Microsoft Cloud App Security 的整合](/cloud-app-security/siem)|
 |
 

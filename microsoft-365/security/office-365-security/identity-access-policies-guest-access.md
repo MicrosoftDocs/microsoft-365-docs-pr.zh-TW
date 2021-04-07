@@ -5,6 +5,7 @@ ms.prod: m365-security
 ms.topic: article
 ms.author: josephd
 author: JoeDavies-MSFT
+audience: Admin
 manager: Laurawi
 f1.keywords:
 - NOCSH
@@ -18,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 9d3a47752efc86c8ced32905bda851b7d8157f82
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0baefab441b17aa4a9527536cead181bae8f8948
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203500"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599992"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>允許來賓存取和 B2B 外部使用者存取的原則
 
@@ -41,7 +42,7 @@ ms.locfileid: "51203500"
 
 下表列出您需要建立和更新的原則。 通用身分 [識別與裝置存取原則](identity-access-policies.md) 文章中相關之設定指示的常見原則連結。
 
-|保護層級|原則|詳細資訊|
+|保護層級|原則|其他資訊|
 |---|---|---|
 |**Baseline**|[需要對來賓和外部使用者無條件進行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|建立這個新原則，並設定下列專案： <ul><li>若為 **> 使用者和群組 > 包含的工作分派**，請選擇 [ **選取使用者和群組**]，然後選取 [ **所有來賓和外部使用者**]。</li><li>**> 條件的工作分派 > 登入**，請將所有選項保留未勾選狀態，以永遠強制執行多重要素驗證 (MFA) 。</li></ul>|
 ||[當登入風險為 *中* 或 *高* 時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|修改此原則，以排除來賓和外部使用者。|
@@ -51,7 +52,7 @@ ms.locfileid: "51203500"
 
 ![用於排除來賓和外部使用者的控制項的畫面捕獲](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>來賓和 Microsoft 小組的外部使用者存取
 

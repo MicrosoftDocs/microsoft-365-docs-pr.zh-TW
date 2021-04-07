@@ -12,12 +12,12 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dfd0b7290bdcded887ef6b81d5b0d4acbdd6cddb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 94586d409d6d8b53ba68c22b6b4f62d2b72266db
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203446"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599469"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>設定獨立 EOP 的最佳作法
 
@@ -60,7 +60,7 @@ ms.locfileid: "51203446"
 |[IMAP 與信箱的連線能力](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|停用|停用||
 |[POP 與信箱的連線能力](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|停用|停用||
 |已驗證的 SMTP 提交|停用|停用|已驗證的用戶端 SMTP 提交 (也稱為「用戶端 SMTP 提交」或「SMTP 驗證」) ，POP3 及 IMAP4 的用戶端和應用程式以及產生及傳送電子郵件的裝置也是必要的。 <p> 如需全域或選擇性地啟用和停用 SMTP 驗證的指示，請參閱 [在 Exchange Online 中啟用或停用已驗證用戶端 smtp 提交](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)。|
-|EWS 至信箱的連接|停用|停用|Outlook 會針對空閒/忙碌、外出時設定和行事曆共用使用 Exchange Web 服務。 如果您不能全域停用 EWS，您可以使用下列選項： <ul><li>若您的用戶端支援新式驗證 (新式 auth) ，請使用 [驗證原則](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) ，以防止 EWS 使用基本驗證。</li><li>使用 [用戶端存取規則](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) ，將 EWS 限制在特定使用者或來源 IP 位址。</li><li>控制全域或每位使用者對特定應用程式的 EWS 存取。 如需相關指示，請參閱 [Control access TO EWS In Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)。</li></ul> <p> [報告訊息增益集](enable-the-report-message-add-in.md)和[報告網路釣魚增益集](enable-the-report-phish-add-in.md)預設會在支援的環境中使用 REST，但是如果無法使用，則會回到 EWS。 使用 REST 的支援環境如下：<ul><li>Exchange Online</li><li>Exchange 2019 或 Exchange 2016</li><li>Microsoft 365 訂閱或單一時間購買 Outlook 2019 的目前 Windows Outlook for Windows。</li><li>Microsoft 365 訂閱的目前 Outlook for Mac，或單一時間購買 Outlook for Mac 2016 或更新版本。</li><li>iOS 和 Android 版 Outlook</li><li>Outlook 網頁版</li></ul>|
+|EWS 至信箱的連接|停用|停用|Outlook 會針對空閒/忙碌、外出時設定和行事曆共用使用 Exchange Web 服務。 如果您不能全域停用 EWS，您可以使用下列選項： <ul><li>若您的用戶端支援新式驗證 (新式 auth) ，請使用 [驗證原則](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) ，以防止 EWS 使用基本驗證。</li><li>使用 [用戶端存取規則](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) ，將 EWS 限制在特定使用者或來源 IP 位址。</li><li>控制全域或每位使用者對特定應用程式的 EWS 存取。 如需相關指示，請參閱 [Control access TO EWS In Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)。</li></ul> <p> [報告訊息增益集](enable-the-report-message-add-in.md)和[報告網路釣魚增益集](enable-the-report-phish-add-in.md)預設會在支援的環境中使用 REST，但是如果無法使用，則會回到 EWS。 使用 REST 的支援環境如下：<ul><li>Exchange Online</li><li>Exchange 2019 或 Exchange 2016</li><li>Microsoft 365 訂閱或單一時間購買 Outlook 2019 的目前 Windows Outlook for Windows。</li><li>Microsoft 365 訂閱的目前 Outlook for Mac，或單一時間購買 Outlook for Mac 2016 或更新版本。</li><li>iOS 和 Android 版 Outlook</li><li>Outlook 網頁版</li></ul>|
 |[PowerShell 連線能力](/powershell/exchange/disable-access-to-exchange-online-powershell)|停用|停用|可供信箱使用者或郵件使用者 ([Get-User](/powershell/module/exchange/get-user) Cmdlet) 所傳回的使用者物件。|
 |使用 [哄騙情報](learn-about-spoof-intelligence.md) 將寄件者新增至您的允許清單|是|是||
 |[以目錄為基礎的 Edge 封鎖 (DBEB) ](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已啟用|已啟用|網欄位型別 = 權威性|

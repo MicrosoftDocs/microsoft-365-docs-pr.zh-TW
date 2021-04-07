@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何設定 Microsoft 365 應用程式，如小組、OneDrive 和 SharePoint，以與組織外部的人員進行共同作業。
-ms.openlocfilehash: 359e72c12c43ca1ea984f93d87ab4868e6d1eb66
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 85aa77982fa15adb62bd587856546d2828edb942
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916391"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599816"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>與組織外部的人員共同作業
 
@@ -33,6 +33,8 @@ Microsoft 365 中的外部共用功能可讓您組織中的人員與合作夥伴
 
 - **啟用共用** -透過 Azure Active Directory、小組、Microsoft 365 群組和 SharePoint 設定共用控制，以允許您的組織所需的共用層級。
 - **啟用其他安全性** -雖然基本共用功能可設定為要求組織外部的人員進行驗證，但 Microsoft 365 提供許多額外的安全性和合規性功能，可協助您保護您的資料，並在外部共用時維護您的管理原則。
+
+已閱讀 [ [設定與 microsoft 365 和 Microsoft 團隊的安全](/microsoft-365/solutions/setup-secure-collaboration-with-teams) 共同作業]，瞭解外部共用如何與整體 Microsoft 365 共同作業指導方針。
 
 ## <a name="enable-sharing"></a>啟用共用
 

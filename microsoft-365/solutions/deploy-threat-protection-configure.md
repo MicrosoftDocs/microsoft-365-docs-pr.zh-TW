@@ -1,12 +1,13 @@
 ---
 title: 設定跨 Microsoft 365 之威脅防護功能的步驟
-description: 瞭解如何在 Microsoft 365 E5 中部署威脅防護服務和功能。
+description: 使用本文作為實施威脅防護解決方案的指南。 瞭解如何在 Microsoft 365 E5 中部署威脅防護服務和功能。
+keywords: security，setup，configuration，Microsoft 365 E5，高級威脅防護
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
 localization_priority: Normal
@@ -16,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: bd7c98f5888f8dc93a8aa341b186ea744d5b2882
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 925c62e1c6201c54fcf09d0dd98b06906d9e057f
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199930"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599860"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 設定威脅防護功能
 
@@ -30,7 +31,7 @@ ms.locfileid: "51199930"
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>步驟1：設定多重要素驗證和條件式存取原則
 
-[多重要素驗證](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) 要求使用者使用撥打電話或驗證器應用程式來驗證其身分識別。 [條件式存取原則](/azure/active-directory/conditional-access/overview) 定義必須滿足的特定需求，使用者才能存取 Microsoft 365 中的應用程式和資料。 MFA 和條件式存取原則共同運作，以保護您的組織。 例如，如果有人嘗試使用未啟用 MFA 的帳戶登入行動裝置，且條件式存取原則要求 MFA 生效，該使用者將無法登入。  
+[多重要素驗證](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) 要求使用者使用電話或驗證器應用程式來驗證其身分識別。 [條件式存取原則](/azure/active-directory/conditional-access/overview) 定義必須滿足的特定需求，使用者才能存取 Microsoft 365 中的應用程式和資料。 MFA 和條件式存取原則共同運作，以保護您的組織。 例如，如果有人嘗試使用未啟用 MFA 的帳戶登入行動裝置，且條件式存取原則要求 MFA 生效，該使用者便無法登入。  
 
 Microsoft 已測試並建議一組特定的條件式存取和相關原則，以保護所有 SaaS 應用程式的存取，尤其是 Microsoft 365。 建議使用原則進行基準、機密和高管制的保護。 從執行基準保護的原則開始。 
 
@@ -53,7 +54,7 @@ Microsoft 已測試並建議一組特定的條件式存取和相關原則，以�
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>步驟2：設定 Microsoft Defender 身分識別
 
-[Microsoft Defender For Identity](/azure-advanced-threat-protection/what-is-atp) 是雲端式的安全性解決方案，可搭配您的內部部署 Active Directory 網域服務與您的內部部署 Active Directory 網域服務 (AD DS) 信號來識別、偵測和調查組織中的高級威脅、遭到破壞的身分識別，以及惡意的內幕程式列動。
+[Microsoft Defender For Identity](/defender-for-identity/what-is) 是雲端式的安全性解決方案，可搭配您的內部部署 Active Directory 網域服務與您的內部部署 Active Directory 網域服務 (AD DS) 信號來識別、偵測和調查組織中的高級威脅、遭到破壞的身分識別，以及惡意的內幕程式列動。
 
 Microsoft Defender for Identity 可讓安全性作業 (SecOps) 分析員和安全性專業人員，以偵測混合式環境中的高級攻擊：
 - 使用以教學為基礎的分析來監控使用者、實體行為和活動。
@@ -79,7 +80,7 @@ Microsoft Defender for Identity 可讓安全性作業 (SecOps) 分析員和安�
 
 [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md) 會將信號和分割功能結合成單一解決方案。 透過整合的 Microsoft 365 Defender 解決方案，安全性專業人員可以結合每一種產品接收及決定威脅的完整範圍和影響，以結合威脅。如何進入環境、受到影響的內容，以及目前對組織的影響。 Microsoft 365 Defender 採取自動動作，以防止或停止攻擊及自我修復受影響的信箱、端點和使用者身分識別。
 
-Microsoft 365 Defender 在工作負載中統一的提醒、事件、自動化調查和回應，以及高級搜尋 (Microsoft Defender for Identity、Microsoft Defender for Office 365、Microsoft Defender for Endpoint 及 Microsoft Cloud App Security) 成為單一玻璃體驗的單一窗格。 在您設定一或多個 Office 365 服務的 Defender 後，請開啟 Microsoft 365 Defender。 新功能會連續新增至 Microsoft 365 Defender;請考慮改為接收預覽功能。
+Microsoft 365 Defender 在工作負載中統一的提醒、事件、自動化調查和回應，以及高級搜尋 (Microsoft Defender for Identity、Microsoft Defender for Office 365、Microsoft Defender for Endpoint 及 Microsoft Cloud App Security) 成為單一玻璃體驗的單一窗格。 新功能會連續新增至 Microsoft 365 Defender;請考慮改為接收預覽功能。
 
 ### <a name="to-set-up-microsoft-365-defender"></a>設定 Microsoft 365 Defender
 
@@ -161,7 +162,7 @@ Microsoft 365 Defender 在工作負載中統一的提醒、事件、自動化調
 
 ![Microsoft 365 安全性中心](../media/solutions-architecture-center/m365-security-center.png)
 
-Microsoft 365 的安全性中心專為安全性管理員及安全性作業小組特別設計。 在 Microsoft 365 的安全性中心，您可以：
+Microsoft 365 的安全性中心是針對安全性管理員和安全性作業小組而設計。 在 Microsoft 365 的安全性中心，您可以：
 - 以 [安全得分](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)查看組織的整體安全性健康情況。
 - [監視和查看](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) 您的身分識別、資料、裝置、應用程式和基礎結構狀態的報告。
 - 透過 [事件](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)連接警示上的點。

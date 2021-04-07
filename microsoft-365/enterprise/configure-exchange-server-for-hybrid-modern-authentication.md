@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解如何設定 Exchange Server 內部部署以使用混合式新式驗證 (HMA) ，為您提供更安全的使用者驗證和授權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9393b457c219fb03ae2e8a35c3f795c324919f27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0a0e521f4ac81a8aa113b2e945045d31f2c1952
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579719"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599496"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何設定 Exchange Server 內部部署以使用混合式新式驗證
 
@@ -65,6 +65,9 @@ ms.locfileid: "51579719"
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>請確認您符合所有必要條件
 
 由於商務用 Skype 和 Exchange 一般都有許多必要條件，所以請參閱 [混合式新式驗證概述和使用內部部署商務用 skype 和 Exchange 伺服器的必要條件](hybrid-modern-auth-overview.md)。 在您開始進行本文中的任何步驟之前，請  *先*  執行此動作。
+
+> [!NOTE]
+> Outlook Web App 和 Exchange 控制台無法與混合式新式驗證一起運作。
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>在 Azure AD 中將內部部署 web 服務 URLs 當做 Spn 新增
 
@@ -185,6 +188,8 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 52.125.128.0/20
 52.127.96.0/23
 ```
+
+適用于 iOS 和 Android 的 Outlook 應用程式是設計為使用 Microsoft 服務在行動裝置上體驗 Microsoft 365 或 Office 365 的最佳方式，以協助您尋找、規劃及設定每日生命週期和工作的優先順序。 如需詳細資訊，請參閱對 [使用 Outlook 的混合新式驗證 iOS 和 Android](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)。
 
 ## <a name="related-topics"></a>相關主題
 

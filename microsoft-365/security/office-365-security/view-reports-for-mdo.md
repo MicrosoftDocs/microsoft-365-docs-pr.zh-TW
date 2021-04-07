@@ -20,12 +20,12 @@ description: 在安全性 & 合規性中心尋找及使用 Microsoft Defender fo
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28978dbca3f9e4039b4f8c21c49a2963802afa54
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0b3e1ddf48ccd74b36c594d232c6761b921dee8c
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203548"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599896"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中，查看 Office 365 報表的 Defender
 
@@ -100,7 +100,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
   - **收件者位址**
   - **寄件者位址**
   - **郵件識別碼**：郵件頭的 **Message-ID** 標頭欄位中可用，且應該是唯一的。 範例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (記下角括弧) 。
-  - **File**
+  - **檔案**
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
 
@@ -113,7 +113,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
   - **收件者位址**
   - **寄件者位址**
   - **郵件識別碼**
-  - **File**
+  - **檔案**
   - **主旨**
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改結果：
@@ -182,7 +182,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
   - **收件者位址**
   - **寄件者位址**
   - **郵件識別碼**
-  - **File**
+  - **檔案**
   - **主旨**
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改結果：
@@ -196,7 +196,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
   - **收件者位址**
   - **寄件者位址**
   - **郵件識別碼**
-  - **File**
+  - **檔案**
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
 
@@ -282,8 +282,8 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 - **URL 按一下保護動作**：顯示組織中的使用者按下 URL 按一下數目及按一下的結果：
 
   - **封鎖** (禁止使用者流覽至 URL) 
-  - **封鎖並按一下**
-  - **在掃描期間按一下**
+  - 在使用者選擇繼續導覽 URL 的 (**封鎖和點擊**) 
+  - 在 **掃描期間按一下流覽** (使用者已在掃描完成之前按一下連結) 
 
   按一下表示使用者已透過封鎖頁面按一下至惡意網站 (系統管理員可以停用 [安全連結) 原則] 中的 click。
 
@@ -350,7 +350,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 - **組織管理**
 - **安全性系統管理員**
 - **安全性讀取者**
-- **全域讀取器**
+- **全域讀取者**
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 

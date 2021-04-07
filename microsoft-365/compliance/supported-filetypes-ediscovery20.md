@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 Advanced eDiscovery 中支援的檔案類型清單，包括「高級 eDiscovery」中的 OCR 功能支援的圖像檔案類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a552e6cf0d32e77c2a21bc959ae313e6fc53d4eb
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 719a0474d45825114cf4ea3fbd19082bb8df7622
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817126"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599828"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高級 eDiscovery 中支援的檔案類型
 
@@ -113,7 +113,7 @@ ms.locfileid: "47817126"
 
 | Mime 類型 | 檔識別 | 中繼資料解壓縮 | 文字提取 | 原生檢視器 | 批註檢視器 | 可能的分機 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/onenote | 是 | 是 | 是 | 是 | 否 | 。 one |
+|application/onenote | 是 | 是 | 是 | 否 | 否 | 。 one |
 ||||||||
 
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint

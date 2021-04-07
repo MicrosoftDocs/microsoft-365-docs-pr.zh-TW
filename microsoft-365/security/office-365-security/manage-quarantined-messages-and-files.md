@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以管理 SharePoint Online、商務 OneDrive 和 Microsoft 小組中的隔離檔案。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215532"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599531"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -189,7 +189,6 @@ ms.locfileid: "51215532"
 - **檢視郵件標頭**：選擇此連結來查看郵件標頭文字。 若要深入分析標頭欄位和值，請將郵件標頭文字複製到您的剪貼簿，然後選擇 [Microsoft 郵件標頭分析器] 來移至遠端連線分析程式 (如果您想在不離開 Microsoft 365 的情況下完成這項工作，請按一下滑鼠右鍵並選擇 [在新索引標籤中開啟])。 將郵件標頭貼至 [郵件標頭分析器] 區段的頁面上，並選擇 [分析標頭]：
 
 - **預覽郵件**：在出現的飛出窗格中，選擇下列其中一個選項：
-
   - **原始碼檢視**：顯示已停用所有連結的郵件內文 HTML 版本。
   - **文字檢視**：以純文字顯示郵件內文。
 
@@ -197,7 +196,7 @@ ms.locfileid: "51215532"
 
 - **下載郵件**：在出現的飛出窗格中，選取 [我了解下載此郵件的風險] 以使用 .eml 格式儲存郵件的本機複本。
 
-- **封鎖寄件者**：這會封鎖寄件者，將電子郵件傳送給系統管理收件者信箱。
+- **封鎖寄件者**：防止寄件者傳送郵件給組織中的收件者。
 
 - **Submit message**：在出現的飛入窗格中，選擇下列選項：
 

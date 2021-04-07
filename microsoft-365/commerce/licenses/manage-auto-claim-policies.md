@@ -1,5 +1,5 @@
 ---
-title: 管理自動宣告原則
+title: 管理自動聲明原則
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -18,14 +18,14 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911467"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599448"
 ---
-# <a name="manage-auto-claim-policies"></a>管理自動宣告原則
+# <a name="manage-auto-claim-policies"></a>管理自動聲明原則
 
 自動宣告原則可讓使用者在第一次登入至應用程式時，自動宣告產品的授權。 身為系統管理員，您一般會以手動方式或使用以群組為基礎的授權，將授權指派給使用者。 使用自動宣告原則，可管理使用者可自動宣告授權的產品。 您也可以控制哪些授權來源的產品。
 
@@ -43,7 +43,7 @@ ms.locfileid: "50911467"
 
 ## <a name="before-you-begin"></a>開始之前
 
-您必須是全域系統管理員，才能建立及管理自動宣告原則。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+您必須是全域、使用者或授權系統管理員，才可建立及管理自動宣告原則。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>開啟或關閉自動理賠原則功能
 
@@ -55,6 +55,8 @@ ms.locfileid: "50911467"
 2. 在頁面的中央，選取 [ **開啟設定** ] 按鈕。
 
 ### <a name="turn-off-auto-claim-policies"></a>關閉自動宣告原則
+
+只有全域系統管理員可以關閉自動宣告原則設定。
 
 1. 在系統管理中心中，移至 [ **設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">組織設定</a> ] 頁面。
 2. 在表格底部附近，選取 [ **使用者擁有的應用程式和服務**]。
@@ -76,7 +78,7 @@ ms.locfileid: "50911467"
 3. 在 [ **名稱此自動宣告原則** ] 頁面上，輸入原則的名稱，然後選取 **[下一步]**。
 4. 在 [ **設定自動宣告應用程式和產品** ] 頁面上，選取要指派授權的應用程式和訂閱。
 5. 如果您想要新增備份產品，請選取 [ **新增備份產品至這個原則**]，然後從清單中選取產品。
-6. 選取 [下一步]。
+6. 選取 **[下一步]**。
 7. 在 [ **選取應用程式** ] 頁面上，清除或選取要排除或包含在授權中的應用程式方塊，然後選取 **[下一步]**。
 8. 如果您已新增一或多個備份產品，請對每個產品重複步驟7。 否則，請移至步驟9。
 9. 在 [ **檢查和完成]** 頁面上，確認新的原則資訊，進行必要的變更，然後選取 [ **建立原則**]。
