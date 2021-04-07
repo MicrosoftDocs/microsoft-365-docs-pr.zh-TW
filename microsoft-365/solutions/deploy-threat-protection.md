@@ -1,6 +1,6 @@
 ---
 title: 跨 Microsoft 365 部署威脅防護功能
-description: 深入瞭解 Microsoft 365 E5 中的威脅防護服務和安全性。
+description: 深入瞭解 Microsoft 365 E5 中的威脅防護服務和安全性功能。 使用 Microsoft 365 E5 保護您的使用者帳戶、裝置、電子郵件內容等等。
 keywords: 威脅防護、安全性、E5、cyberattack、惡意程式碼、M365、解決方案
 ms.author: deniseb
 author: denisebmsft
@@ -17,16 +17,20 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 922e7b7ea8bceced7085af49485b3479a671d5cd
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599956"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604375"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>跨 Microsoft 365 E5 部署威脅防護功能
 
-[惡意](/windows/security/threat-protection/intelligence/understanding-malware)代碼和複雜的 cyberattacks （例如 [fileless 威脅](/windows/security/threat-protection/intelligence/fileless-threats)）都是常見的時機。 企業必須以有效的 IT 安全性功能來保護自己及其客戶。 Cyberattacks 可能會造成組織的主要問題，包括從失去信任到財務 woes、業務威脅停機等等。 防護威脅很重要，但決定組織的時間、精力和資源的位置，可能會有很大的難度。 
+此解決方案說明跨 Microsoft 365 E5 強大的威脅防護功能。 請閱讀此方案，以取得其包含內容、運作方式，以及如何開始在組織中部署這些功能的概覽。
+
+## <a name="why-protecting-against-threats-is-important"></a>為何防護威脅很重要 
+
+[惡意](/windows/security/threat-protection/intelligence/understanding-malware)代碼和複雜的 cyberattacks （例如 [fileless 威脅](/windows/security/threat-protection/intelligence/fileless-threats)）都是常見的時機。 企業必須以有效的 IT 安全性功能來保護自己及其客戶。 Cyberattacks 可能會造成組織的主要問題，包括從失去信任到財務 woes、業務威脅停機等等。 防護威脅很重要，但決定組織的時間、精力和資源的位置，可能會有很大的難度。 Microsoft 365 E5 可提供協助。 
 
 Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「自動化」和「機器學習」功能可減少安全性小組的負載，以確保處理適當的專案。 Microsoft 安全性解決方案的強項是以 trillions 在我們每天處理的 [智慧安全性圖形](/graph/security-concept-overview)中的信號來建立。 Microsoft 365 的安全性解決方案包括 [microsoft 365 Defender](../security/defender/microsoft-365-defender.md)，此解決方案會透過您的電子郵件、資料、裝置和身分識別，以繪製您組織的高級威脅圖片。
 
@@ -45,11 +49,13 @@ Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「
 
 Microsoft 365 Defender 會將信號和資料一起帶入整合的 [Microsoft 365 安全性中心](/microsoft-365/security/defender/overview-security-center)。 
 
-![Microsoft 365 Defender 儀表板的概念性插圖](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft 365 Defender 儀表板的概念性插圖](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
 
 下圖描述部署這些個別功能的建議路徑。 
 
-![M365 威脅防護信號](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
+> [!div class="mx-imgBorder"]
+> ![M365 威脅防護信號](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
 
 |解決方案/功能  |描述  |
 |---------|---------|
@@ -62,29 +68,27 @@ Microsoft 365 Defender 會將信號和資料一起帶入整合的 [Microsoft 365
 > [!TIP]
 > 具有多個安全小組的組織可以平行執行這些功能。 
 
-## <a name="deploy-your-threat-protection-solution"></a>部署威脅防護解決方案
+## <a name="plan-to-deploy-your-threat-protection-solution"></a>規劃部署威脅防護解決方案
 
- 下圖說明部署威脅防護功能的高層級流程。 
+下圖說明部署威脅防護功能的高層級流程。 
 
 ![部署威脅防護功能的程式](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
 
-若要確定您的組織有可能獲得最佳保護，請使用包含下列步驟的程式來設定和部署您的安全性解決方案：
+若要確定您的組織有可能獲得最佳保護，請使用包含下列步驟的程式來設定及部署您的安全性解決方案：
 
-1. [設定多重要素驗證和條件式存取原則](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
-2. [設定 Microsoft Defender 身分識別](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
-3. [開啟 Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)
-4. [設定 Office 365 的 Defender](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
-5. [設定 Microsoft Defender for Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
-6. [設定 Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
-7. [監視狀態並採取動作](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
-8. [訓練使用者](deploy-threat-protection-configure.md#step-8-train-users)
+1. [設定多重要素驗證和條件式存取原則](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)。
+2. [設定 Microsoft Defender 身分識別](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)。
+3. [開啟 Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)。
+4. [設定 Office 365 的 Defender](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)。
+5. [設定 Microsoft Defender For Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)。
+6. [設定 Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)。
+7. [監視狀態並採取動作](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)。
+8. [訓練使用者](deploy-threat-protection-configure.md#step-8-train-users)。
 
 您可以平行設定威脅防護功能，因此，如果您有多個網路安全小組負責不同的服務，則可以同時設定組織的保護功能。
 
 ## <a name="next-step"></a>下一步
 
+繼續 [跨 Microsoft 365 設定威脅防護功能](deploy-threat-protection-configure.md)。
 
-![部署威脅防護功能的程式](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
-
-繼續 [設定跨 Microsoft 365 的威脅防護功能](deploy-threat-protection-configure.md)
 
