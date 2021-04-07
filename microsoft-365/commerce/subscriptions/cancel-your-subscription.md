@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: 深入了解如何取消您的商務用 Microsoft 365 試用版或付費訂閱。
 ms.date: ''
-ms.openlocfilehash: 7a2de2a261baeb4e64e12742810635f352217933
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916873"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615384"
 ---
 # <a name="cancel-your-subscription"></a>取消您的訂閱
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 *資格：* 如果您指派給使用者的授權少於 25 個，您可以隨時在 Microsoft 365 系統管理中心線上取消商務用 Microsoft 365 試用版或付費訂閱。 如果您指派給使用者的授權超過 25 個，請減少為少於 25 個，或[連絡支援人員以取消您的訂閱](../../admin/contact-support-for-business-products.md)。
 
@@ -53,46 +46,26 @@ ms.locfileid: "50916873"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [**計費**] \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a>頁面，然後選取 [**產品**] 索引標籤。
-2. 尋找您要取消的訂閱。 選取 **[更多動作]** (三個點)，然後選取 **[取消訂閱]**。
-3. 在 **取消訂閱** 窗格中，選擇取消的原因。 您也可以選擇提供任何意見反應。
-4. 選取 **[儲存]**。
-
-您的訂閱現在會顯示成 [**已停用**] 狀態，且在訂閱被刪除前只會提供精簡功能。 如需當商務用 Microsoft 365 付費訂閱取消時可預期狀況的詳細資訊，請參閱[當我的商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
-
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
-
-2. 在 [**訂閱**] 頁面上選取訂閱。
-
-3. 從 [**其他動作**] 功能表中，選取 [**取消訂閱**]。
-
-    ![[其他動作] 功能表的特寫。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. 檢閱重要日期，提供您取消原因的相關意見反應，然後選取 [**取消訂閱**]。
-
-    您的訂閱現在會顯示成 [**已停用**] 狀態，且在訂閱被刪除前只會提供精簡功能。 如需當商務用 Microsoft 365 付費訂閱取消時可預期狀況的詳細資訊，請參閱[當我的商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[您的產品]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。
-
-2. 在 [**訂閱**] 頁面上選取訂閱。
-
-3. 從 [**其他動作**] 功能表中，選取 [**取消訂閱**]。
-
-    ![[其他動作] 功能表的特寫。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. 檢閱重要日期，提供您取消原因的相關意見反應，然後選取 [**取消訂閱**]。
-
-    您的訂閱現在會顯示成 [**已停用**] 狀態，且在訂閱被刪除前只會提供精簡功能。 如需當商務用 Microsoft 365 付費訂閱取消時可預期狀況的詳細資訊，請參閱[當我的商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
-
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
+
+2. 選取 **[產品]** 索引標籤。
+3. 尋找您要取消的訂閱。 選取 **[更多動作]** (三個點)，然後選取 **[取消訂閱]**。
+4. 在 **取消訂閱** 窗格中，選擇取消的原因。 您也可以選擇提供任何意見反應。
+5. 選取 **[儲存]**。
+
+您的訂閱現在會顯示成 [**已停用**] 狀態，且在訂閱被刪除前只會提供精簡功能。 如需當商務用 Microsoft 365 付費訂閱取消時可預期狀況的詳細資訊，請參閱[當我的商務用 Microsoft 365 訂閱結束時，我的資料與存取權會如何？](what-if-my-subscription-expires.md)
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>取消訂閱時會發生什麼情況
 

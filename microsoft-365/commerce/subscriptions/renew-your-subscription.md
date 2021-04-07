@@ -21,21 +21,14 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 瞭解如何透過關閉或開啟定期計費來續約您的 Microsoft 365。
-ms.openlocfilehash: 8b38336ccb7a0a29b5782e55117389f6a19a0d80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 76be85fe3cbeafb275478e6236e051b6a252c099
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903521"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615168"
 ---
 # <a name="renew-microsoft-365-for-business"></a>續約商務用 Microsoft 365
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet) (英文)。
-
-::: moniker-end
 
 本文僅適用於大部分的付費商務用 Microsoft 365 訂閱。
   
@@ -53,6 +46,19 @@ ms.locfileid: "50903521"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[您的產品]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
+::: moniker-end
+
 2. 選擇您想要管理週期性計費的訂閱。
 3. 在訂閱詳細資料頁面的 **訂閱與付款** 設定底下，選取 **編輯週期性計費**。
 4. 在 **編輯週期性計費的設定** 窗格中,選取 **其位於** 上的, **開啟, 但續約一次**, 或 **關閉**。
@@ -63,46 +69,6 @@ ms.locfileid: "50903521"
     > - 當 **週期性計費** 關閉時，該訂閱不會被取消。 如果您想要保持訂閱有效，您必須手動付款帳單。
     > - 如果您關閉 **週期性帳單**，訂閱會一直持續有效，直到到期為止。 您可以在 **訂閱和付款設置** 區的訂閱詳細訊息頁面上查看到期日期。
     > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-  
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
-
-2. 選擇您想要管理週期性計費的訂閱。
-
-3. 若要開啟 **[週期性帳單]**，請將開關切換到 **[開啟]**。
-
-    ![已開啟週期性計費的訂閱卡特寫。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    您可以將開關切換到 **[關閉]**，關閉 **[週期性計費]**。
-
-    > [!NOTE]
-    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須 [重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
-    > - 當 **[週期性計費]** 關閉時，不會立即取消訂閱。 在到期之前，它會一直保持有效。 您可以查看訂閱卡上的到期日
-    > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-  
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
-
-2. 選擇您想要管理週期性計費的訂閱。
-
-3. 若要開啟 **[週期性帳單]**，請將開關切換到 **[開啟]**。
-
-    ![已開啟週期性計費的訂閱卡特寫。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    您可以將開關切換到 **[關閉]**，關閉 **[週期性計費]**。
-
-    > [!NOTE]
-    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須 [重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
-    > - 當 **[週期性計費]** 關閉時，不會立即取消訂閱。 在到期之前，它會一直保持有效。 您可以查看訂閱卡上的到期日。
-    > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
-
-::: moniker-end
 
 ## <a name="related-articles"></a>相關文章
 
