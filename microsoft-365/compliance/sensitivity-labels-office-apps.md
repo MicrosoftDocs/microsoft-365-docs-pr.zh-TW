@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3aa5c8065b882dff670d6b829141955bf615d933
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498823"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599838"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -85,18 +85,20 @@ iOS 版 Office 和 Android 版 Office：敏感度標籤內建於 [Office 應用�
 |[要求變更標籤的理由](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[提供自訂說明頁面的說明連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[使用變數動態標記](#dynamic-markings-with-variables)                                              | 審查中                     | 審查中                 | 審查中         | 審查中           | 審查中               |
+|[使用變數動態標記](#dynamic-markings-with-variables) <sup>1</sup>                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[讓使用者指派權限：<br /> - 不可轉寄](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[讓使用者指派權限：<br /> - 僅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 審查中 | 審查中  | 審查中 | 推出中 |
-|[要求使用者在電子郵件和文件中套用標籤](#require-users-to-apply-a-label-to-their-email-and-documents)   | 逐步推出：2101+                        | 16.43+ <sup>\*</sup>                    | 審查中            | 審查中                | 是                |
+|[要求使用者在電子郵件和文件中套用標籤](#require-users-to-apply-a-label-to-their-email-and-documents)   | 逐步推出：2101+                        | 16.43+ <sup>2</sup>                    | 審查中            | 審查中                | 是                |
 |[稽核標籤相關的使用者活動](data-classification-activity-explorer.md) | 2011+ | 審查中 | 審查中           | 審查中               | 審查中 |
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 審查中           | 審查中               | 是 |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>2</sup>                    | 審查中           | 審查中               | 是 |
 |
 
 **註腳：**
 
-<sup>\*</sup> 需要[新的 Mac 版 Outlook](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+<sup>1</sup> 目前僅支援 [Item.Label 和 If.App 變數](#dynamic-markings-with-variables)
+<br />
+<sup>2</sup> 需要[新的 Mac 版 Outlook](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 內建標籤用戶端和其他標籤解決方案
@@ -293,18 +295,18 @@ Office 應用程式會根據您使用的應用程式，以不同方式使用敏�
 > [!IMPORTANT]
 > 目前，並非所有平台上的應用程式都支援您可以為頁首、頁尾及浮水印指定的動態內容標記。 對於不支援此功能的應用程式，它們會以標籤設定中指定的原始文字來套用標記，而不是解析變數。
 > 
-> Azure 資訊保護統一標籤用戶端支援動態標記。 如需 Office 內建的標籤功能，請參閱本頁面[功能](#support-for-sensitivity-label-capabilities-in-apps)章節中的表格。
+> Azure 資訊保護統一標籤用戶端支援動態標記以及所有列出的變數。 針對 Office 內建的標籤，請參閱此頁面上[功能](#support-for-sensitivity-label-capabilities-in-apps)一節中的表格，以了解最低版本，然後請參閱下表找出支援的變數。
 
 當您設定內容標記的敏感度標籤時，您可以在文字字串中針對頁首、頁尾或浮水印使用下列變數：
 
 | 變數 | 描述 | 套用標籤後的範例 |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | 套用標籤的標籤顯示名稱| **一般**|
-| `${Item.Name}` | 要套用標籤之內容的檔案名稱或電子郵件主旨 | **Sales.docx** |
-| `${Item.Location}` | 要套用標籤之文件的路徑和檔案名稱，或要套用標籤之電子郵件的電子郵件主旨 | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | 正在套用標籤之使用者的顯示名稱| **Richard Simone** |
-| `${User.PrincipalName}` | 正在套用標籤之使用者的 Azure AD 使用者主體名稱 (UPN) | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | 內容套用標籤的日期和時間，位於套用標籤之使用者的本地時區 | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | 套用標籤的標籤顯示名稱 <br /><br> 內建標籤：Word、Excel、PowerPoint 和 Outlook 支援 | **一般**|
+| `${Item.Name}` | 要套用標籤之內容的檔案名稱或電子郵件主旨 <br /><br> 內建標籤：Word、Excel、PowerPoint 支援 | **Sales.docx** |
+| `${Item.Location}` | 要套用標籤之文件的路徑和檔案名稱，或要套用標籤之電子郵件的電子郵件主旨 <br /><br> 內建標籤：Word、Excel、PowerPoint 支援 | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | 正在套用標籤之使用者的顯示名稱 <br /><br> 內建標籤：Word、Excel、PowerPoint 支援 | **Richard Simone** |
+| `${User.PrincipalName}` | 正在套用標籤之使用者的 Azure AD 使用者主體名稱 (UPN) <br /><br> 內建標籤：Word、Excel、PowerPoint 支援  | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | 內容套用標籤的日期和時間，位於套用標籤之使用者的本地時區 <br /><br> 內建標籤：Word、Excel、PowerPoint 支援  | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > 這些變數的語法區分大小寫。
@@ -312,9 +314,6 @@ Office 應用程式會根據您使用的應用程式，以不同方式使用敏�
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>為 Word、Excel、PowerPoint 和 Outlook 設定不同的視覺標記
 
 做為額外的變數，您可以在文字字串中使用 "If.App" 變數陳述式來設定每個 Office 應用程式類型的視覺標記，以及使用 **Word**、**Excel**、**PowerPoint** 或 **Outlook** 值來識別應用程式類型。 如果您想要在同一個 If.App 陳述式中指定多個值，也可以將這些值縮寫。
-
-> [!NOTE]
-> 為了完整性，雖然目前只有 Azure 資訊保護統一標籤用戶端支援，但仍會包含適用於 Outlook 的指示。
 
 使用下列語法：
 

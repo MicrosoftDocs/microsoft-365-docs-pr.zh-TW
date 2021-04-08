@@ -115,6 +115,8 @@
 ##### [啟用受控資料夾存取權](enable-controlled-folders.md)
 ##### [自訂受控資料夾存取權](customize-controlled-folders.md)
 
+### [網路裝置](network-devices.md)
+
 ### [Mac 版適用於端點的 Microsoft Defender]()
 #### [Mac 版適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-mac.md)
 #### [新增功能](mac-whatsnew.md)
