@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: 監視寄件者或寄件者對具有高業務影響之帳戶的失敗及延遲的電子郵件。
-ms.openlocfilehash: 0bba1f87f80de9fea249ce2604e83ceeadfb79ee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f67b9c6f0eaa229b650026670cf1b2adf88ab3c0
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050639"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632177"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>管理和監視優先帳戶
 
@@ -26,12 +26,18 @@ ms.locfileid: "51050639"
 
 為了協助您的組織保護這些帳戶，您現在可以將特定使用者指定為優先順序帳戶，並利用可提供額外保護的應用程式特定功能。 在未來，其他應用程式和功能將支援優先順序帳戶，若要開始，我們已宣告兩項功能： **優先順序帳戶保護** 和 **優質郵件流程監控**。
 
-- **優先順序帳戶保護** -Microsoft Defender for office 365 (過去是 office 365 的「高級威脅防護」) 支援優先順序帳戶，作為可在警示、報告和調查篩選中使用的標記。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的使用者標記](../../security/defender-365-security/user-tags.md)。
+- **優先順序帳戶保護** -Microsoft Defender for office 365 (過去是 office 365 的「高級威脅防護」) 支援優先順序帳戶，作為可在警示、報告和調查篩選中使用的標記。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的使用者標記](../../security/office-365-security/user-tags.md)。
+
+  「自然問題」是「所有使用者都不是優先順序？ 為何不將所有使用者指定為優先順序帳戶？ 是的，所有使用者都是優先順序，但優先順序帳戶保護提供下列額外優點：
+
+  - **其他試探法**：我們在 Microsoft 資料中心內分析郵件流程，表示公司主管的郵件流程模式與平均員工不同。 「優先順序帳戶保護」提供額外的試探法，特別針對公司主管所定制，對一般員工沒有益處。
+  - **報表的其他可見度**：實際上，所有使用者的資訊 (或所有受影響的使用者) ，都已存在於警示、報告和調查中。 [優先順序帳戶] 標記為篩選，可讓您特別瞄準調查。
+
 - **優質郵件流程監控** -狀況良好的郵件流程對商務成功來說可能很重要，且傳遞延遲或失敗可能對業務造成負面影響。 您可以針對失敗或延遲的電子郵件選擇臨界值，當超過該臨界值時接收通知，然後查看優先順序帳戶的電子郵件問題報告。 如需詳細資訊，請參閱 [新式 EAC 中優先順序帳戶報告的電子郵件問題](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-如需優先順序帳戶的安全性最佳作法，請參閱 [優先順序帳戶的安全性建議](../../security/defender-365-security/security-recommendations-for-priority-accounts.md)。
+如需優先順序帳戶的安全性最佳作法，請參閱 [優先順序帳戶的安全性建議](../../security/office-365-security/security-recommendations-for-priority-accounts.md)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>事前準備
 
 本主題中所述的「 **優先順序帳戶保護** 」功能僅適用于符合下列需求的組織：
 
@@ -44,6 +50,8 @@ ms.locfileid: "51050639"
 
 > [!NOTE]
 > 您可以監控最多250個優先順序的帳戶。
+
+當您對信箱套用優先順序帳戶保護時，您也應該對擁有信箱存取權的使用者套用優先順序帳戶保護 (例如，CEO 及 CEO 的執行助理負責管理 CEO 的行事曆) 。
 
 ### <a name="add-priority-accounts-from-the-setup-page"></a>從設定頁面新增優先順序帳戶
 

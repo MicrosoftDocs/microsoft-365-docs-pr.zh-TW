@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 判斷 Microsoft 365 客戶資料在歐盟內儲存位置
-ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19df44a702d842d4171d867946fb818d3f36fd80
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905677"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615228"
 ---
 # <a name="data-locations-for-the-european-union"></a>針對歐盟的資料位置
 
@@ -92,7 +92,7 @@ Microsoft 使用多層安全性和加密通訊協定來保護您的資料。 請
 
 根據預設，Microsoft 管理金鑰可保護客戶資料。 持續存在於任何實體媒體的資料，都會使用相容於 FIPS 140-2 的加密通訊協定來加密。 您也可以使用客戶管理的金鑰 (CMK)、[雙重加密](../compliance/double-key-encryption.md)和/或硬體安全模組 (HSM) 以加強資料保護。
 
-資料中心之間的所有資料流量也受到 IEEE 802.1 AE MAC 安全性標準的保護，以防止實體「中間人」攻擊。
+此外，Microsoft 默認情況下會使用 [傳輸層安全性 (TLS)](https://wikipedia.org/wiki/Transport_Layer_Security) 通訊協定對在雲端服務和客戶之間傳輸的資料進行加密。 Microsoft 服務與連線到 Microsoft 365 服務的用戶端系統協商TLS 連線。 
 
 為了防止對資料中心進行未經授權的實體存取，我們使用了嚴格的操作控制和流程，其中包括 24×7 錄影監控、訓練有素的安全人員和流程，以及智慧卡或生物識別多因素存取控制。 在生命週期結束時，資料磁碟會被徹底清除和銷毀。 如果儲存空間的磁碟機遭到硬體故障的影響，或到達生命週期結束時，系統會將其安全刪除或銷毀。 磁碟機上的資料會完全覆寫，以確保無法以任何方式恢復資料。 當這些裝置退役時，系統會按照 NIST SP 800-88 R1 (媒體資料銷毀指導方針) 將其徹底清除和銷毀。 銷毀記錄會保留並進行檢閱，這是 Microsoft 審計與合規性流程的一部分。 所有 Microsoft 365 服務都使用經核准的媒體儲存空間和處置管理服務。
 
@@ -106,7 +106,7 @@ Microsoft 使用多層安全性和加密通訊協定來保護您的資料。 請
 
 除了在您使用線上服務時儲存和處理您的資料，Microsoft 還會產生服務資料以監控系統健康情況，並執行服務作業，例如疑難排解。 由於隱私權防護措施，Microsoft 會產生並依賴於此服務產生資料中的匿名化識別碼，以便能夠區別使用者，而不需識別實際的使用者。 匿名化識別碼不會直接識別某位人員，而能夠將匿名化識別碼對應至實際使用者的資訊，也作為資料的一部分受到保護。
 
-若要深入瞭解，請參閱 [誰可以存取您的資料](https://www.microsoft.com/trust-center/privacy/data-access) (英文)，以及存取條件為何，以及[轉承包處理者和資料隱私權](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4qVL2) (英文)。
+若要深入瞭解，請參閱 [誰可以存取您的資料](https://www.microsoft.com/trust-center/privacy/data-access)，以及存取條件為何，以及[轉承包處理者和資料隱私權](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4qVL2)。
 
 ## <a name="how-microsoft-handles-government-requests"></a>Microsoft 處理政府機關要求的方式
 
@@ -117,16 +117,16 @@ Microsoft 使用多層安全性和加密通訊協定來保護您的資料。 請
 - 如果 Microsoft 受到法律強制披露客戶資料，除非法律上禁止 Microsoft 這樣做，否則系統會立即通知您，並提供要求的複本。
 - Microsoft 會針對其收到的每個要求，按照當地法律和標準進行當地法律檢閱。 Microsoft 也會定期檢閱全球的篩選程序，以確保遵守當地司法程序並適用其全球人權聲明。
 
-如需有關 Microsoft 承諾符合歐盟 GDPR 的詳細資訊，請參閱[保護資料的新步驟](https://blogs.microsoft.com/on-the-issues/2020/11/19/defending-your-data-edpb-gdpr/) (英文)。 
+如需有關 Microsoft 承諾符合歐盟 GDPR 的詳細資訊，請參閱[保護資料的新步驟](https://blogs.microsoft.com/on-the-issues/2020/11/19/defending-your-data-edpb-gdpr/)。 
 
-當政府機關或執法機構向客戶資料提出合法要求時，Microsoft 將致力於透明性並限制其披露的內容。 一年兩次，我們公佈來自全球執法機關對客戶資料的法律要求數量。 請參閱[執法機關要求報告](https://www.microsoft.com/corporate-responsibility/law-enforcement-requests-report) (英文)。 此報告不會透露特定要求的詳細資料，包括有爭議的客戶。 一年兩次，我們也會公佈我們從美國政府取得的法律要求相關資料。 請參閱[美國國家安全命令報告](https://www.microsoft.com/corporate-responsibility/us-national-security-orders-report) (英文)，以取得最新報告。  
+當政府機關或執法機構向客戶資料提出合法要求時，Microsoft 將致力於透明性並限制其披露的內容。 一年兩次，我們公佈來自全球執法機關對客戶資料的法律要求數量。 請參閱[執法機關要求報告](https://www.microsoft.com/corporate-responsibility/law-enforcement-requests-report)。 此報告不會透露特定要求的詳細資料，包括有爭議的客戶。 一年兩次，我們也會公佈我們從美國政府取得的法律要求相關資料。 請參閱[美國國家安全命令報告](https://www.microsoft.com/corporate-responsibility/us-national-security-orders-report)，以取得最新報告。  
 
-若要深入瞭解，請參閱關於政府和執法機關的[常見問題集](https://blogs.microsoft.com/datalaw/our-practices/) (英文)，包括關於雲端法案的問題。
+若要深入瞭解，請參閱關於政府和執法機關的[常見問題集](https://blogs.microsoft.com/datalaw/our-practices/)，包括關於雲端法案的問題。
 
 ## <a name="additional-resources"></a>其他資源
  
-- [受信任的資料保護](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) (英文) 說明了使用 Microsoft Online Services 和專業服務時，Microsoft 如何保護您的資料。 此外，建議您參考可管理您使用這些服務的 [Microsoft Online Services 條款 (OST) 和資料保護增補合約 (DPA)](https://www.microsoft.com/licensing/product-licensing/products)。
+- [受信任的資料保護](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) 說明了使用 Microsoft Online Services 和專業服務時，Microsoft 如何保護您的資料。 此外，建議您參考可管理您使用這些服務的 [Microsoft Online Services 條款 (OST) 和資料保護增補合約 (DPA)](https://www.microsoft.com/licensing/product-licensing/products)。
 - [適用於 GDPR 的 Office 365 資料主體要求](/compliance/regulatory/gdpr-dsr-Office365)可協助您使用 Microsoft 365 產品、服務及系統管理工具，找出並處理個人資料或個人資訊以回應 DSR。 
 - [資料保護影響評估：適用於使用 Microsoft Office 365 之資料控制者的指引](/compliance/regulatory/gdpr-dpia-office365)可協助您判斷貴組織是否需要草擬 DPIA，提供「作法」指導方針，包含可自訂 DPIA 範本文件，並為許多 Microsoft 365 服務提供 DPIA 服務元素矩陣。
-- [學習課程模組](/learn/paths/audit-safeguard-customer-data/) (英文) 是專為尋求全面了解的審計、合規性、風險和法律角色中的人員而設計，提供深入檢閱 Microsoft 365 如何保護客戶資料的基本安全性和隱私權做法。
+- [學習課程模組](/learn/paths/audit-safeguard-customer-data/) 是專為尋求全面了解的審計、合規性、風險和法律角色中的人員而設計，提供深入檢閱 Microsoft 365 如何保護客戶資料的基本安全性和隱私權做法。
 - [Microsoft 合規性方案](/compliance/regulatory/offering-home)說明 Microsoft 365 服務如何協助您的組織符合法規合規性標準。

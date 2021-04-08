@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: 了解所有 Microsoft 雲端產品上的組織、訂閱、授權、使用者帳戶、租用戶之間的關係。
-ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 34e920e6b5a48adaffcc31150090e96f9c8d8b0e
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909511"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604318"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft 雲端供應項目的訂用帳戶、授權、帳戶及租用戶
 
@@ -88,7 +88,7 @@ Microsoft 提供組織、訂閱、授權、使用者帳戶的階層，讓所有�
   
 ### <a name="tenants"></a>租用戶
 
-針對 SaaS 雲端產品，租用戶是指存放提供雲端服務之伺服器的區域位置。 例如，Contoso Corporation 選擇歐洲區域來裝載它的 Microsoft 365、EMS 和 Dynamics 365 租用戶，供巴黎總公司的 15,000 名員工使用。
+針對 SaaS 雲端產品，租用戶是指存放提供雲端服務之伺服器的區域位置。 例如，Contoso Corporation 選擇歐洲區域來裝載它的 Microsoft 365、EMS 和 Dynamics 365 訂閱，供巴黎總公司的 15,000 名員工使用。
   
 Azure PaaS 服務和虛擬機器的工作負載裝載於 Azure IaaS 中，可以將租用戶放在世界各地的 Azure 資料中心內。當您建立 Azure PaaS 應用程式或服務或 IaaS 工作負載的元素時，由您指定 Azure 資料中心 (稱為「位置」)。
   

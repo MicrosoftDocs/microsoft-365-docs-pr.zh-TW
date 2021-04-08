@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 您現在可以將 DLP 原則套用至 Microsoft 團隊聊天和頻道。 請閱讀本文以深入瞭解其運作方式。
-ms.openlocfilehash: 40c55ed486efc75619b514a60b707ac75554953b
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: bd6fa1c04a57f64997d5646374007641afa0f958
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445661"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632235"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料遺失防護和 Microsoft 團隊
 
@@ -34,7 +34,7 @@ ms.locfileid: "51445661"
 最近， [資料遺失防護](data-loss-prevention-policies.md) (DLP) 功能已擴充為包括 Microsoft 團隊聊天和通道訊息， **包括私人通道訊息**。 
 
 > [!IMPORTANT]
-> DLP 目前只適用于聊天或通道執行緒中的實際郵件。 活動通知--其中包括簡短的訊息預覽，而且會根據使用者的通知設定而出現，這次 **不** 會包含在小組 DLP 中。 即使已套用 DLP 原則及移除郵件本身的機密 inforamtion，在預覽中出現的郵件部分中所出現的任何敏感資訊都仍會顯示在通知中。
+> DLP 目前只適用于聊天或通道執行緒中的實際郵件。 活動通知--其中包括簡短的訊息預覽，而且會根據使用者的通知設定而出現，這次 **不** 會包含在小組 DLP 中。 預覽中出現的郵件部分中的任何敏感資訊，即使已套用 DLP 原則並移除郵件本身的機密資訊之後，也會在通知中看到。
 
 如果您的組織有 DLP，您現在可以定義原則，以防止人員在 Microsoft 小組通道或聊天會話中共用機密資訊。 以下是此保護運作方式的一些範例：
 
@@ -184,7 +184,7 @@ ms.locfileid: "51445661"
           > [!div class="mx-imgBorder"]
           > ![偵測敏感內容的外部共用的 DLP 條件](../media/dlp-teams-external-sharing/external-condition.png)
 
-    - **動作**
+    - **Actions**
         - 限制外部使用者的內容存取權
         
         - 使用電子郵件和原則提示通知使用者
