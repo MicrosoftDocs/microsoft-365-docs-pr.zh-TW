@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解您的使用者可以針對 Microsoft 產品傳送給 Microsoft 的意見反應。
-ms.openlocfilehash: 0a6c895eacd7a1cf8077141c6a848236a53818e7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644798"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650054"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>深入瞭解 Microsoft 對您組織的意見
 
@@ -49,9 +49,9 @@ ms.locfileid: "51644798"
 
 使用者也可以評價其經驗，並透過系統啟動的問卷調查提示提供其經驗的其他相關資訊。 這些提示會在 Microsoft 365 產品中從一開始時間。 出現提示時，使用者可以選擇是否要提供意見反應。 調查提示通常會出現在 app 的右下方。 如果使用者決定提供意見反應、關閉提示，或是讓提示自行消失，該使用者將不會再次看到一次調查。 Microsoft 也會利用控管程式來限制這些系統發起問卷的數目。  控管的目的是為了確保使用者未受到調查提示數目的淹沒。
 
-:::image type="content" source="../../media/feedback-outlook-example.png" alt-text="螢幕擷取畫面： Outlook 的產品內回饋的範例":::
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="螢幕擷取畫面：您推薦 Microsoft 365 調查的可能性":::
-:::image type="content" source="../../media/feedback-in-product1.png" alt-text="螢幕擷取畫面：產品型回饋頁面範例":::
+:::image type="content" source="../../media/feedback-love.png" alt-text="螢幕擷取畫面：產品型回饋要求的範例":::
+
+:::image type="content" source="../../media/feedback-excel.png" alt-text="螢幕擷取畫面：產品型回饋要求的範例":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>哪種意見反應最適合？
 
@@ -90,3 +90,7 @@ Microsoft 使用意見反應來改進 Microsoft 產品。 我們會以問題、�
 我們確定所收到的意見反應是以 Microsoft 控管規則儲存和處理，而且只能針對核准的使用加以存取。
 
 我們利用便於使用的工具和清晰的選項，讓您控制隱私權。 我們對收集和使用資料的方式很透明，所以您可以對您要共用的專案做出明智的決策。 我們會以強大的安全性和加密方式保護您 entrust 的資料。 我們尊重當地隱私權法律，並以人工方式抵制隱私權的法律保護。 我們不會使用您的電子郵件、聊天、檔案或其他個人內容來瞄準廣告。 當我們收集資料時，我們會使用它來改善您的體驗。 深入瞭解 Microsoft [在這裡](https://privacy.microsoft.com/)隱私權的方法。 深入瞭解我們的 [隱私權](/compliance/assurance/assurance-privacy)。
+
+## <a name="how-can-i-see-my-users-feedback"></a>如何查看我的使用者意見反應？
+
+即將推出，我們將會分享我們為您的 Microsoft 產品收集的意見反應資料。 我們使用的是 Microsoft 365 系統管理中心的新體驗，讓您可以查看、刪除及匯出組織的意見反應資料。 這可讓您直接透明並深入瞭解使用者對 Microsoft 365 產品的體驗。

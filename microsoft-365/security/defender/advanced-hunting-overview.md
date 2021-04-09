@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3aa964f8e213d64f583738d8957899c1b7b5146c
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3532fd461fff02fac54e96e0a1a1e69c39c16907
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501094"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657016"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>使用 Microsoft 365 Defender 中的高級搜尋主動搜尋威脅
 
@@ -50,10 +50,21 @@ ms.locfileid: "51501094"
 
 - 適用於端點的 Microsoft Defender
 - 適用於 Office 365 的 Microsoft Defender
-- Microsoft Cloud App Security
+- Microsoft 雲端 App 安全性
 - 適用於身分識別的 Microsoft Defender
 
 若要使用高級搜尋，請 [開啟 Microsoft 365 Defender](m365d-enable.md)。
+
+### <a name="before-you-begin"></a>開始之前
+
+使用者需要下列其中一層許可權才能存取 Microsoft Defender：
+
+-  (讀寫) 的完整存取權
+- 唯讀存取權
+
+**完全存取**：具有完整存取權的使用者可以儲存、修改及共用查詢。 指派完整存取權限時，需要將使用者新增至 Azure Active Directory (AAD) 中的「安全性管理員」或「全域管理員」內建角色。
+
+**唯讀許可權**：具有唯讀存取權的使用者可以登入並查看所有警示和相關資訊。 他們將無法儲存、修改或共用查詢。 指派唯讀存取權限時，需要將使用者新增至 AAD 中的「安全性讀取器」內建角色。
 
 ## <a name="get-started-with-advanced-hunting"></a>開始使用進階搜捕
 

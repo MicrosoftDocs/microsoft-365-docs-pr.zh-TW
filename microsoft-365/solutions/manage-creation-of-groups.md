@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 瞭解如何控制可建立 Microsoft 365 群組的使用者。
-ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 092ff821911ef0af2b7867e1b870b68b1b6355b3
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929153"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656982"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理能建立 Microsoft 365 群組的使用者
 
@@ -43,7 +43,7 @@ ms.locfileid: "50929153"
 - Power BI (傳統) 
 - Web/藍圖的專案
 
-本文中的步驟不會防止某些角色的成員建立群組。 Office 365 全域系統管理員可以透過任何方式建立群組，例如 Microsoft 365 系統管理中心、Planner、小組、Exchange 及 SharePoint 線上。 其他角色可以透過有限的方式建立群組，如下所列。
+本文中的步驟不會防止某些角色的成員建立群組。 Office 365 全域系統管理員可以透過 Microsoft 365 系統管理中心、Planner、Exchange 及 SharePoint 線上建立群組。 其他角色可以透過有限的方式建立群組，如下所列。
 
 - Exchange 管理員： Exchange Admin center，Azure AD
 - 合作夥伴第1層支援： Microsoft 365 系統管理中心、Exchange 系統管理中心、Azure AD

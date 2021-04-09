@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理您的使用者可以傳送給 Microsoft 有關 Microsoft 產品的意見反應。
-ms.openlocfilehash: 9c6ed46b21a5ee697c4c512c09defd66e6b961c9
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644824"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650013"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>管理組織的 Microsoft 意見反應
 
@@ -32,7 +32,7 @@ ms.locfileid: "51644824"
 
 若要深入瞭解意見類型及 Microsoft 如何使用使用者意見反應，請參閱 [瞭解 microsoft 對您組織的意見](../misc/feedback-user-control.md)。
 
-下表代表哪些應用程式和服務目前已連接至下一個意見反應原則表格中所示的意見反應原則。
+下表代表哪些應用程式和服務目前已連接至下一個意見反應原則表格中所示的意見反應原則。 如需螢幕擷取畫面範例，請參閱下表。
 
 |**應用程式 & 服務**|**產品內意見反應** <br> |**產品內調查** <br> |**元資料集合** <br> |**客戶接洽** <br> |
 |:-----|:-----|:-----|:-----|:-----|
@@ -51,15 +51,7 @@ ms.locfileid: "51644824"
 |**Visio**|是|是|是|是|
 |**Yammer**|是|是|是|是|
 
-以下是一些產品意見反應範例。
-
-**產品內意見反應**
-
-:::image type="content" source="../../media/feedback-in-product-help.png" alt-text="螢幕擷取畫面：產品內説明範例":::
-
-**產品內調查**
-
-:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="螢幕擷取畫面： Microsoft app 產品內調查範例":::
+[請參閱這裡的部分產品調查和意見反應範例。](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
 
 **元資料集合**
 

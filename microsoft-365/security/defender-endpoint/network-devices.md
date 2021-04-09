@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06b52e937dd0260a50883c45c36389a6a955ad0e
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604495"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657037"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>網路設備探索和弱點管理
 
@@ -46,7 +46,7 @@ ms.locfileid: "51604495"
 
 會在每個網段上使用指定的 Microsoft Defender for Endpoint 裝置，對預先設定的網路裝置執行定期驗證掃描。 一旦探索，Defender 的威脅和弱點管理功能會提供整合的工作流程，以保護探索到的交換器、路由器、WLAN 控制器、防火牆和 VPN 閘道。  
 
-一旦探索網路裝置並分類，安全性系統管理員就能接收最新的安全性建議，並回顧最近發現的 foron 網路裝置，以在其組織中部署的所有漏洞。
+一旦發現網路裝置並分類，安全性系統管理員就能接收最新的安全性建議，並在其組織中的網路裝置上回顧最近發現的漏洞。
 
 ## <a name="approach"></a>方法
 
@@ -95,9 +95,9 @@ ms.locfileid: "51604495"
     - login.windows.net  
     - securitycenter.windows.com
     - login.microsoftonline.com
-    - *。 blob.core.windows.net/networkscannerstable/*
+    - * blob.core.windows.net/networkscannerstable/*
 
-    附注：這些 URLs 不會在已記錄的 Defender for Endpoint 中指定允許的資料收集的清單。
+    附注：並非所有的 URLs 在已記錄端點的 Endpoint 記錄清單中指定允許的資料收集。
 
 ## <a name="permissions"></a>權限
 
