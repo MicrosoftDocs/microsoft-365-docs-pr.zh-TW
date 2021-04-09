@@ -6,6 +6,8 @@
       items:
         - name: 適用於 Office 365 的 Defender
           href: defender-for-office-365.md
+        - name: 適用於 Office 365 的 Defender 中的逐步威脅防護
+          href: protection-stack-microsoft-defender-for-office365.md
         - name: 評估適用於 Office 365 的 Defender
           href: office-365-evaluation.md
         - name: 適用於 Office 365 的 Defender 的新增功能
