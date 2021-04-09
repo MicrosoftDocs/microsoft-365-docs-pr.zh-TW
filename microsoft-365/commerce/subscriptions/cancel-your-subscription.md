@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 深入了解如何取消您的商務用 Microsoft 365 試用版或付費訂閱。
 ms.date: ''
-ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615384"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644641"
 ---
 # <a name="cancel-your-subscription"></a>取消您的訂閱
 
@@ -47,6 +47,15 @@ ms.locfileid: "51615384"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+2. 尋找您要取消的訂閱。 選取 **[更多動作]** (三個點)，然後選取 **[取消訂閱]**。
+3. 在 **取消訂閱** 窗格中，選擇取消的原因。 您也可以選擇提供任何意見反應。
+4. 選取 **[儲存]**。
+
+您的訂閱現在會顯示成 [**已停用**] 狀態，且在訂閱被刪除前只會提供精簡功能。 如需當商務用 Microsoft 365 付費訂閱取消時可預期狀況的詳細資訊，請參閱[當我的商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
+
+> [!NOTE]
+> 如果您明確刪除訂閱，它會略過到期和停用階段，而 SharePoint Online 資料和內容 (包括 OneDrive) 會立即刪除。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"

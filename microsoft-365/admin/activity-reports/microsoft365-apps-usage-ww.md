@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 瞭解如何使用 microsoft 365 系統管理中心的 [Microsoft 365 報告] 儀表板，取得 Microsoft 365 應用程式的使用方式報告。
-ms.openlocfilehash: 88ef5e1291c35bbac050609e26e2ac5adef9d981
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579587"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644264"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Admin center 中的 microsoft 365 報告-Microsoft 365 應用程式使用量
 
@@ -33,7 +33,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 
 
  > [!NOTE]
- > 您必須是 Microsoft 365 或 Exchange、SharePoint 或商務用 Skype 系統管理員的全域系統管理員、全域讀取器或報告讀取器，才能查看報告。
+ > 您必須是 Microsoft 365 或 Exchange、SharePoint 或商務用 Skype 系統管理員的全域系統管理員、全域讀取器或報告讀取器，才能查看報告。 在此報告中，不支援共用電腦啟用。
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>如何取得 Microsoft 365 應用程式使用方式報告
 
@@ -44,7 +44,8 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 
 您可以查看 [ **使用者** ] 和 [ **平臺** ] 圖表，以取得使用者的 Microsoft 365 應用程式活動。
 
-![Microsoft 365 應用程式使用方式報告](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft 365 應用程式使用方式報告](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
 |項目|描述|
  |:-----|:-----|

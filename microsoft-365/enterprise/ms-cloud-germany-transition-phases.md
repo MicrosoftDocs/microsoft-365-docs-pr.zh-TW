@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 0cf1358b4170b69d3506062c336a1cf67a2da2de
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e3ed1d76a755ce6326ac6ae53b990136a10b564a
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591729"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644713"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
@@ -128,7 +128,7 @@ ms.locfileid: "51591729"
 
 **適用于：** 所有使用 Exchange Online 的客戶
 
-如果您使用的是 Exchange Online 混合式： Exchange Online 混合管理員  **必須執行混合式設定向導 (HCW)** 做為這項轉換的一部分。 **在遷移步驟階段5開始之前**，套用 [Exchange 預備](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-configuration)事項。 Exchange Online 混合式客戶必須執行最新版本的 Exchange 混合式設定向導 (HCW) in 「Office 365 德國」模式，準備用於遷移至 Office 365 泛型服務的內部部署設定。
+如果您使用的是 Exchange Online 混合式： Exchange Online 混合管理員  **必須執行混合式設定向導 (HCW)** 做為這項轉換的一部分。 **在遷移步驟階段5開始之前**，套用 [Exchange 預備](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers)事項。 Exchange Online 混合式客戶必須執行最新版本的 Exchange 混合式設定向導 (HCW) in 「Office 365 德國」模式，準備用於遷移至 Office 365 泛型服務的內部部署設定。
 
 當 [！注意事項] 當郵件中心通知發佈完成時， **遷移階段 9** () ，您必須使用 Office 365 全球化設定重新執行 HCW，將內部部署系統指向 Office 365 泛型服務。
 

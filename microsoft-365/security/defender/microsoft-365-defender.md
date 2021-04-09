@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 86bc6ef03438b637f62cf0e2a46e418dbea7a3c1
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581079"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650275"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender 是一個統一缺口前和缺口後的企業防禦套件
 
 在此互動指南中，您將瞭解如何使用 Microsoft 365 Defender 保護您的組織。 您將會看到 Microsoft 365 Defender 如何協助您偵測安全性風險、調查對您組織的攻擊，並自動避免有害的活動。
 
-[查看互動式輔助線](https://aka.ms/M365Defender-InteractiveGuide)
+[查看互動指南](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 
@@ -92,7 +92,11 @@ Microsoft 365 Defender 跨產品功能包括：
 - **跨產品威脅搜尋** -安全小組可以透過透過各種保護產品所收集的原始資料來建立自己的自訂查詢，利用其獨特的組織知識來尋找損害的跡象。 Microsoft 365 Defender 提供以查詢為基礎的存取權，可對30天的歷史原始信號進行存取，並在端點和 Microsoft Defender for Office 365 資料中提供警示資料。 
 
 
-## <a name="get-started"></a>開始使用
+## <a name="get-started"></a>快速入門
 若要在 Microsoft 365 security center 中啟用服務，必須符合 microsoft 365 Defender 授權需求，才能在 [security.microsoft.com](https://security.microsoft.com)上啟用服務。 如需詳細資訊，請參閱：
 - [授權需求](prerequisites.md#licensing-requirements)
 - [開啟 Microsoft 365 Defender](m365d-enable.md)
+
+
+## <a name="see-also"></a>另請參閱
+- [跨 Microsoft 365 E5 部署威脅防護功能](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)

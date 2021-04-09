@@ -21,12 +21,12 @@ ms.custom:
 description: 系統管理員可以瞭解反垃圾郵件設定和篩選器，有助於防止 Exchange Online Protection 中的垃圾郵件 (EOP) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f19330d7af9c4a6601baa9562766eb5a6e7052a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204873"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650263"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾郵件保護
 
@@ -91,7 +91,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 
   - **DMARC**：以網域為基礎的郵件驗證、報告及符合性，可協助目的地電子郵件系統判斷如何處理因 SPF 或 DKIM 檢查失敗的郵件，並為您的電子郵件合作夥伴提供另一個信任層級。 如需詳細資訊，請參閱 [使用 DMARC 驗證 Microsoft 365 中的電子郵件](use-dmarc-to-validate-email.md)。
 
-- **確認您的大量電子郵件設定**：您在反垃圾郵件原則中設定的大量相容層級 (BCL) 臨界值會決定是否大量電子郵件 (也稱為 _灰色郵件_) 標示為垃圾郵件。 預設的 PowerShell 設定 _MarkAsSpamBulkMail_ 也會對結果產生貢獻。 如需詳細資訊，請參閱 [在 Microsoft 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+- **請確認您的大量電子郵件設定**：您在反垃圾郵件原則中設定的大量投訴層級 (BCL) 閾值，會決定大量電子郵件 (也稱為 _灰色郵件_) 標示為垃圾郵件。 預設的 PowerShell 設定 _MarkAsSpamBulkMail_ 也會對結果產生貢獻。 如需詳細資訊，請參閱 [在 Microsoft 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>避免將垃圾郵件傳遞至收件匣
 

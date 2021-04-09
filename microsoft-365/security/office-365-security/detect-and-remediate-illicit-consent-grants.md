@@ -18,12 +18,12 @@ description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a9b3ff11acb32a4b3038cc18922f8e22fda0b4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203661"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644677"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
@@ -86,7 +86,7 @@ ms.locfileid: "51203661"
 
 您可以使用 [Azure Active Directory 入口網站](https://portal.azure.com/)來查閱任何個人使用者已獲授權的應用程式。
 
-1. 使用系統管理權限登入 Azure 入口網站。
+1. 使用系統管理許可權登入 Azure 入口網站。
 
 2. 選取 [Azure Active Directory] 刀鋒視窗。
 
@@ -128,7 +128,7 @@ ms.locfileid: "51203661"
 5. 執行此 PowerShell 命令：
 
    ```powershell
-   Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
+   .\Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
 指令碼會產生一個名為「Permissions.csv」的檔案。 依照下列步驟尋找非法應用程式權限授權：

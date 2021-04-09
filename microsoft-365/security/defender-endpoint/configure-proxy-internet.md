@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b529b1c7fa5c4f9f81cb6bfbb5f1a6bd7823a9ad
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587596"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644701"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>設定裝置 proxy 和網際網路連線設定
 
@@ -57,6 +57,13 @@ WinHTTP 設定設定與 Windows Internet (WinINet) Internet 流覽 proxy 設定�
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>使用基於登錄的靜態 Proxy 手動設定 Proxy 伺服器
 
 設定登錄型靜態 proxy，只允許當電腦不允許連線至網際網路時，僅限 Defender for Endpoint 感應器報告診斷資料，並與 Defender for Endpoint service 通訊。
+
+> [!NOTE]
+> - 在 Windows 10 或 Windows Server 2019 上使用此選項時，建議您在下列 (或更新版本) 組建和累計更新彙總套件：</br>
+> Windows 10，版本 1909- https://support.microsoft.com/kb/4601380</br>
+> Windows 10，版本 2004- https://support.microsoft.com/kb/4601382</br>
+> Windows 10，版本 20H2- https://support.microsoft.com/kb/4601382</br>
+> 這些更新會改善 CnC (命令和控制) 通道的連線和可靠性。</br>
 
 靜態 Proxy 可以透過群組原則 (GP) 設定。 可以在以下位置找到群組原則：
 

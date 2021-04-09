@@ -1,7 +1,7 @@
 ---
 title: 設定跨 Microsoft 365 之威脅防護功能的步驟
 description: 使用本文作為實施威脅防護解決方案的指南。 在 Microsoft 365 E5 上部署威脅防護服務和功能。
-keywords: security，setup，configuration，Microsoft 365 E5，高級威脅防護
+keywords: 安全性解決方案、設定、設定、Microsoft 365 E5、高級威脅防護、defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 81a1a4ce2e99caaca1025c6ddbbdfdc7ab7c449d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: a0c728e5f273752792f851c72df2dfe243116221
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615504"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650215"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 設定威脅防護功能
 

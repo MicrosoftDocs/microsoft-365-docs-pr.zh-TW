@@ -20,12 +20,12 @@ description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 189325dab37a548c717cd554ecd1d37c19ae57ea
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2df88df9f1f0e2c14c0adcf0d5772189a1276e9d
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203612"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650227"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -60,7 +60,7 @@ ms.locfileid: "51203612"
 |反垃圾郵件保護|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |電子郵件的零小時自動清除 () |[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |保護電子郵件和 Office 檔中的惡意 URLs 和檔案 (安全連結和安全附件) |[適用於 Office 365 的 Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的安全附件|[適用于 Office 的 Defender 365 ](turn-on-mdo-for-spo-odb-and-teams.md)|
+|開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的安全附件|[適用於 Office 365 的 Defender](turn-on-mdo-for-spo-odb-and-teams.md)|
 |高級反網路釣魚保護|[適用於 Office 365 的 Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色及權限
@@ -96,7 +96,7 @@ ms.locfileid: "51203612"
 
     - 在 [ **一般附件類型篩選** ] 區段中，選擇 [ **開啟**]。
 
-4. 按一下 **[儲存]**。
+4. 按一下 **儲存**。
 
 若要深入瞭解反惡意程式碼原則選項，請參閱 [設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
@@ -150,7 +150,7 @@ ms.locfileid: "51203612"
 
    - 在 [ **允許清單** ] 區段中，複查 (和/或編輯) 允許的寄件者和網域。
 
-4. 按一下 **[儲存]**。
+4. 按一下 **儲存**。
 
 若要深入瞭解您的反垃圾郵件原則選項，請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
@@ -188,7 +188,7 @@ ms.locfileid: "51203612"
    - **當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
    - **不要讓使用者點擊 [安全連結至原始 URL**]：確認已開啟此設定： ![ 開啟開啟 ](../../media/scc-toggle-on.png) 。
 
-   完成後，請按一下 **[儲存]**。
+   完成後，按一下 **[儲存]**。
 
 2. 回到 [主要安全連結] 頁面上，按一下 [ **建立**]。
 

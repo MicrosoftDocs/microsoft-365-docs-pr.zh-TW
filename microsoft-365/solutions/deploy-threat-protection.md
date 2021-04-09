@@ -1,7 +1,7 @@
 ---
 title: 跨 Microsoft 365 部署威脅防護功能
 description: 深入瞭解 Microsoft 365 E5 中的威脅防護服務和安全性功能。 使用 Microsoft 365 E5 保護您的使用者帳戶、裝置、電子郵件內容等等。
-keywords: 威脅防護、安全性、E5、cyberattack、惡意程式碼、M365、解決方案
+keywords: 高級威脅防護，安全性，microsoft 365 E5，方案，保護裝置，defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604375"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650311"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>跨 Microsoft 365 E5 部署威脅防護功能
 
@@ -63,7 +63,7 @@ Microsoft 365 Defender 會將信號和資料一起帶入整合的 [Microsoft 365
 |適用於身分識別的 Microsoft Defender     |  利用內部部署 Active Directory 網域服務 (AD DS) 信號來識別、偵測和調查您組織中的高級威脅、已遭破壞的身分識別和惡意有問必答行動的雲端式安全性解決方案。 著重于 Microsoft Defender for Identity，因為它會保護您的內部部署和雲端基礎結構、沒有相依性或必要條件，而且可以提供立即的安全性效益。 | 
 |適用於 Office 365 的 Microsoft Defender     | 保護您的組織免受電子郵件訊息、連結 (URLs) 和共同作業工具帶來的惡意威脅。 針對惡意程式碼、網路釣魚、欺騙及其他攻擊類型的保護。 建議您先設定 Microsoft Defender for Office 365，因為變更控制、從委任系統移轉設定，以及其他考慮可能需要較長時間進行部署。 <p>**附注**：請務必設定所有 Office 365 訂閱中所包含的威脅防護功能 (Exchange Online protection) 。       |
 |適用於端點的 Microsoft Defender    | Endpoint protection 平臺，可協助避免、偵測、調查和回應高級威脅。  Defender for Endpoint 可能需要一些時間才能部署，但設定可與其他功能同時進行。   |
-|Microsoft Cloud App Security     |   雲端存取安全性經紀人，用於探索、調查和控管。 您可以及早啟用 Microsoft Cloud App Security，以開始收集資料和洞察力。 在您的 SaaS 應用程式中實施資訊和其他有針對性的保護，需要規劃，而且可能需要更多時間。       | 
+|Microsoft 雲端 App 安全性     |   雲端存取安全性經紀人，用於探索、調查和控管。 您可以及早啟用 Microsoft Cloud App Security，以開始收集資料和洞察力。 在您的 SaaS 應用程式中實施資訊和其他有針對性的保護，需要規劃，而且可能需要更多時間。       | 
 
 > [!TIP]
 > 具有多個安全小組的組織可以平行執行這些功能。 

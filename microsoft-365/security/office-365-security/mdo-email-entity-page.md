@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5 和 ATP P2 客戶現在可以透過電子郵件實體頁面取得每個電子郵件的360度的觀點。
-ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 7797e9f5965f43b856c2c34df1f99fddf72d5df5
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599484"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650335"
 ---
 # <a name="the-email-entity-page"></a>電子郵件實體頁面
 
@@ -119,7 +119,7 @@ Microsoft Defender for Office 365 (或 MDO) E5，而 MDO P1 和 P2 具有使用 
   - 當信箱上啟用垃圾郵件規則時，Exchange Online Protection (EOP) 可以根據某些準則將郵件移至垃圾郵件。 移動可以以垃圾郵件篩選判定動作 *將郵件移至 [垃圾郵件] 資料夾*，或信箱上的 [封鎖寄件者] 清單中。 停用垃圾郵件規則，可防止郵件傳遞至 [垃圾郵件] 資料夾（根據信箱上的 [ *安全寄件者* ] 清單）。
   - 當信箱上的垃圾郵件規則 *停用* 時，EOP 無法根據垃圾郵件篩選判定動作將郵件移至垃圾郵件資料夾。 *將郵件移至垃圾郵件資料夾* 或信箱上的安全清單集合。
 
-- *大量相容層級 (BCL)*：郵件的大量抱怨層級 (BCL) 。 較高的 BCL 表示大宗郵件訊息，如果電子郵件可能是垃圾郵件) ，就很可能會產生意見 (自然結果。
+- *大量投訴層級 (BCL)*：郵件的大量抱怨層級 (BCL) 。 較高的 BCL 表示大宗郵件訊息，如果電子郵件可能是垃圾郵件) ，就很可能會產生意見 (自然結果。
 
 - *垃圾郵件信賴等級 (SCL)*：郵件的垃圾郵件信賴等級 (SCL) 。 此值越高，表示郵件越有可能是垃圾郵件。
 

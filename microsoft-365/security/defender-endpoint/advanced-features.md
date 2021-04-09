@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
-ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
+ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51418113"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650287"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -64,6 +64,11 @@ ms.locfileid: "51418113"
 
 啟用此功能可讓您在即時回應會話中執行未簽署的腳本。
 
+## <a name="always-remediate-pua"></a>永遠修正 PUA
+可能有害的應用程式 (PUA) 是一種軟體類別，可導致您的機器執行緩慢、顯示未預期的廣告，或是最壞的軟體安裝可能是意外或不需要的軟體。 
+
+開啟此功能，以便在租使用者中的所有裝置上修正 (PUA) 可能有害的應用程式，即使裝置上未設定 PUA 保護也是一樣。 這有助於防止使用者不小心在其裝置上安裝不需要的應用程式。 關閉時，修正取決於裝置設定。 
+
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制範圍內裝置群組的關聯
 開啟此設定時，警示會根據其範圍內的裝置群組，與個別的事件相關聯。 依預設，會在整個承租人範圍內進行事件關聯。
@@ -71,9 +76,9 @@ ms.locfileid: "51418113"
 >[!NOTE]
 >變更此設定只會影響未來的警示關聯。
 
-
 ## <a name="enable-edr-in-block-mode"></a>在封鎖模式中啟用 EDR
 端點偵測和回應 (EDR) 在封鎖模式中時，即使 Microsoft Defender 防病毒是以被動模式執行，也能防範惡意的資料。 開啟時，分塊模式中的 EDR 會封鎖在裝置上偵測到的惡意的偽像或行為。 組塊模式中的 EDR 可在幕後運作，以修正偵測到遭到破壞的惡意作品。
+
 
 ## <a name="autoresolve-remediated-alerts"></a>自動解析修正的警示
 
@@ -119,13 +124,13 @@ ms.locfileid: "51418113"
 > [!NOTE]
 > 網路保護會利用信譽服務處理要求的位置，這些位置可能位於您為您的 Defender for Endpoint data 所選取的位置以外。
 
-
 ## <a name="tamper-protection"></a>防篡改保護
 在某些網路攻擊中，不良的演員會嘗試停用電腦上的安全性功能，例如防防毒保護。 不良的演員，例如停用您的安全性功能，以更輕鬆地存取資料、安裝惡意程式碼，或利用您的資料、身分識別及裝置。
 
 防篡改保護基本上會鎖定 Microsoft Defender 防病毒，並防止您的安全性設定透過應用程式和方法進行變更。
 
 使防篡改保護保持開啟，以避免安全性解決方案及其基本功能的不想要的變更。
+
 
 ## <a name="show-user-details"></a>顯示使用者詳細資料
 
@@ -137,6 +142,7 @@ ms.locfileid: "51418113"
 
 如需詳細資訊，請參閱 [調查使用者帳戶](investigate-user.md)。
 
+
 ## <a name="skype-for-business-integration"></a>商務用 Skype 整合
 
 啟用商務用 Skype 的整合功能可讓您與使用商務用 Skype、電子郵件或電話的使用者進行通訊。 當您需要與使用者通訊並減輕風險時，這會很便利。
@@ -144,7 +150,7 @@ ms.locfileid: "51418113"
 > [!NOTE]
 > 當裝置與網路隔離時，會有一個快顯視窗，您可以在其中選擇啟用 Outlook 和 Skype 通訊，以便在使用者與網路中斷連線時，允許與該使用者通訊。 當裝置處於隔離模式時，此設定會套用到 Skype 和 Outlook 通訊。
 
-## <a name="azure-advanced-threat-protection-integration"></a>Azure 高級威脅防護整合
+## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender 用於身分識別整合
 
 與 Azure 高級威脅防護的整合，可讓您直接在 Microsoft Identity security 產品中直接旋轉。 Azure 高級威脅防護增強了有關可疑的帳戶和相關資源之其他深入資訊的調查。 透過啟用這項功能，您就可以透過從識別的觀點來切換網路，來充實裝置型調查功能。
 
@@ -162,13 +168,12 @@ ms.locfileid: "51418113"
 
 若要在 Office 365 威脅情報中接收上下文相關的裝置整合，您必須在安全性 & 規範儀表板中啟用 [Endpoint for Endpoint] 設定。 如需詳細資訊，請參閱 [威脅調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)。
 
-## <a name="microsoft-threat-experts"></a>Microsoft 威脅專家
+## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 威脅專家-目標攻擊通知
 
 除了兩個 Microsoft 威脅專家元件，已設定目標攻擊通知是在正式發行時。 專家隨選功能仍在預覽中。 如果您已套用預覽，且已核准您的應用程式，您只能使用專家隨選功能。 您可以從 Microsoft 威脅專家透過您的端點入口網站的 [提醒] 儀表板，以及透過電子郵件（如果您設定它）來接收目標攻擊通知。
 
 > [!NOTE]
 > 適用于 Microsoft 的 Defender for Endpoint 的 Microsoft 威脅專家功能，具有 E5 授權 for [Enterprise 可移動性 + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)。
-
 ## <a name="microsoft-cloud-app-security"></a>Microsoft 雲端 App 安全性
 
 啟用此設定時，會將 Defender for Endpoint 信號轉寄至 Microsoft Cloud App Security，以提供 Cloud 應用程式使用狀況的更深入可視性。 轉寄的資料會與您的雲端應用程式安全性資料儲存在相同的位置。
@@ -176,13 +181,10 @@ ms.locfileid: "51418113"
 > [!NOTE]
 > 這項功能可搭配執行 Windows 10、版本 1709 (OS 組建16299.1085 （ [) 含](https://support.microsoft.com/help/4493441) [KB4493464](https://support.microsoft.com/help/4493464)) 1809、windows 10、版本 1803 (Os 組建17134.704 搭配[KB4489899](https://support.microsoft.com/help/4489899) (或更新版本的 windows 10 版本）之裝置上的[Enterprise 可移動性 + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)的 E5 授權。
 
-## <a name="azure-information-protection"></a>Azure 資訊保護
-
-開啟此設定可允許將信號轉送到 Azure 資訊保護。 它可讓資料擁有者和系統管理員看到架裝置上受保護的資料和裝置風險評級。
-
 ## <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
 將 Microsoft Defender for Endpoint 信號轉寄給 microsoft 365 安全性中心內的 Microsoft Secure 得分。 開啟此功能可讓 Microsoft 安全分數看到裝置的安全性狀況。 轉寄的資料會與您的 Microsoft 安全分數資料儲存在相同的位置。
+
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>從 Microsoft Defender for Identity 入口網站啟用 Microsoft Defender for Endpoint 整合
 
@@ -196,6 +198,17 @@ ms.locfileid: "51418113"
 
 完成這兩個入口網站的整合步驟之後，您可以在 [裝置詳細資料] 或 [使用者詳細資料] 頁面看到相關的警示。
 
+## <a name="web-content-filtering"></a>Web 內容篩選
+封鎖包含有害內容之網站的存取，並追蹤所有網域中的 web 活動。 若要指定您要封鎖的 web 內容類別別，請建立 [web 內容篩選原則](https://security.microsoft.com/preferences2/web_content_filtering_policy)。 在部署 [Microsoft Defender For Endpoint security 基準](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)時，確保您具有封鎖模式中的網路保護。
+
+
+## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>與 Microsoft 規範中心共用端點警示
+將端點安全性警示和其會審狀態轉寄給 Microsoft 規範中心，讓您能夠使用預警增強內幕風險管理原則，並在內部風險造成損害之前加以修正。 轉寄的資料會處理並儲存于 Office 365 資料所在的相同位置。
+
+在「內幕風險管理」設定中設定 [安全性原則違規指示器](/microsoft-365/compliance/insider-risk-management-settings#indicators) 後，就會與適用使用者的「內部使用者風險管理」共用端點警示。
+
+
+
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune 連線
 
 可以與 [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) 整合的 Endpoint for Endpoint，以 [啟用裝置風險的條件式存取](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 當您 [開啟此功能](configure-conditional-access.md)時，您可以使用 Intune 與 Intune 共用 Defender 裝置資訊，進而增強原則的執行能力。
@@ -207,6 +220,7 @@ ms.locfileid: "51418113"
 
 - 適用于 Enterprise 可移動性 + Security E3 的授權租使用者，以及 Windows E5 (或 Microsoft 365 企業版 E5) 
 - 使用 Intune 管理 Windows 10 裝置的使用中 Microsoft Intune 環境， [Azure 已加入 Azure](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)。
+
 
 ### <a name="conditional-access-policy"></a>條件式存取原則
 
@@ -221,11 +235,8 @@ ms.locfileid: "51418113"
 
 您將可以存取即將推出的功能，您可以在其中提供意見反應，以協助改善整體體驗，使其成為一般可用功能。
 
-## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>與 Microsoft 規範中心共用端點警示
 
-將端點安全性警示和其會審狀態轉寄給 Microsoft 規範中心，讓您能夠使用預警增強內幕風險管理原則，並在內部風險造成損害之前加以修正。 轉寄的資料會處理並儲存于 Office 365 資料所在的相同位置。
 
-在「內幕風險管理」設定中設定 [安全性原則違規指示器](/microsoft-365/compliance/insider-risk-management-settings#indicators) 後，就會與適用使用者的「內部使用者風險管理」共用端點警示。
 
 ## <a name="related-topics"></a>相關主題
 

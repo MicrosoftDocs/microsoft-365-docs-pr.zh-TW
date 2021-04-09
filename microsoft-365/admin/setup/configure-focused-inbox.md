@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: '了解如何為貴組織的所有或特定使用者設定焦點收件匣。 '
-ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914279"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644509"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>為組織中的每個人設定焦點收件匣
 
-  如果您負責為企業中的每個人設定電子郵件的運作方式，本文就是為您準備的！ 本文說明如何為您的企業自訂或關閉焦點收件匣，以及回答[常見問題集](#faq-for-focused-inbox)。  <br/> 如果您只想要關閉自己的焦點收件匣，請參閱[關閉焦點收件匣](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2)。  
+如果您負責為企業中的每個人設定電子郵件的運作方式，本文就是為您準備的！ 本文說明如何為您的企業自訂或關閉焦點收件匣，以及回答[常見問題集](#faq-for-focused-inbox)。
+
+如果您只想要關閉自己的焦點收件匣，請參閱[關閉焦點收件匣](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2)。  
 
 如果您想要確認您的使用者接收特定商務電子郵件訊息 (例如 HR 或薪資資料)，您可以設定焦點收件匣，讓這些訊息可送往 [焦點] 檢視。您也可以控制您組織中的使用者是否會在信箱中看到焦點收件匣。
   
@@ -37,7 +39,7 @@ ms.locfileid: "50914279"
 
 您可以使用 PowerShell 為組織中的每個人開啟或關閉焦點收件匣。 您要在 Microsoft 365 系統管理中心執行這個動作嗎？ 讓我們的工程小組知道。 **[在這裡投票！](https://go.microsoft.com/fwlink/?linkid=862489)**
   
- **關閉焦點收件匣：**
+**關閉焦點收件匣：**
   
 下列 PowerShell 範例會 **[關閉]** 組織中的焦點收件匣。 但是，它不會阻止您的使用者使用該功能。 如果使用者想要的話，他們仍然可以在每個用戶端重新啟用焦點收件匣。 
   
@@ -47,9 +49,9 @@ ms.locfileid: "50914279"
 
 3. 執行 **Get-OrganizationConfig** Cmdlet。 
 
- ``` PowerShell
-Get-OrganizationConfig
- ```
+    ```powershell
+    Get-OrganizationConfig
+    ```
 
 4. 尋找 **FocusedInboxOn** 以檢視其目前的設定： 
 
@@ -57,20 +59,20 @@ Get-OrganizationConfig
   
 5. 執行下列 Cmdlet 關閉焦點收件匣。
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-OrganizationConfig -FocusedInboxOn $false
+    ```
 
 6. 再次執行 **Get-OrganizationConfig** cmdlet ，您就會看到 FocusedInboxOn 設為 $false，這表示它已經關閉。 
 
- **開啟焦點收件匣：**
+**開啟焦點收件匣：**
   
 - 在上方步驟 5 中，執行下列 cmdlet 可開啟焦點收件匣。
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $true
- ```
-
+  ```powershell
+  Set-OrganizationConfig -FocusedInboxOn $true
+  ```
+    
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>開啟焦點收件匣之後，使用者會看見什麼？
 
 當使用者關閉並重新啟動 Outlook 之後，只會看到 [焦點] 檢視。當他們重新啟動 Outlook 後，就會在 Outlook 使用者介面看見一則提示，提供他們使用新焦點收件匣的選項。
@@ -93,9 +95,9 @@ Get-OrganizationConfig
 
 3. 執行 **Get-FocusedInbox** cmdlet，例如： 
 
- ``` PowerShell
- Get-FocusedInbox -Identity <tim@contoso.com>
- ```
+    ```powershell
+    Get-FocusedInbox -Identity <tim@contoso.com>
+    ```
 
 4. 尋找 FocusedInboxOn 以檢視其目前的設定：
 
@@ -103,15 +105,15 @@ Get-OrganizationConfig
   
 5. 執行下列 Cmdlet 關閉焦點收件匣：
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
+    ```
 
-6. 或者，執行下列 Cmdlet 將它開啟：
+    或者，執行下列 Cmdlet 將它開啟：
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
+    ```
 
 ## <a name="use-the-ui-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>使用 UI 建立傳輸規則，將電子郵件導向至所有使用者的 [焦點] 檢視。
 
@@ -125,8 +127,8 @@ Get-OrganizationConfig
 
     ![focusedinbox 薪資](../../media/focusedinbox-transport-rule.PNG)
 
-> [!NOTE]
-> 在此範例中的郵件標頭值文字為，**X-MS-Exchange-Organization-BypassFocusedInbox**。
+    > [!NOTE]
+    > 在此範例中的郵件標頭值文字為，**X-MS-Exchange-Organization-BypassFocusedInbox**。
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>使用 PowerShell 建立傳輸規則，將電子郵件導向至所有使用者的 [焦點] 檢視
 
@@ -136,9 +138,9 @@ Get-OrganizationConfig
 
 3. 例如，執行下列命令，讓來自「薪資部門」的所有郵件傳送到焦點收件匣。
 
- ``` PowerShell
- New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
- ```
+    ```powershell
+    New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
+    ```
 
 > [!IMPORTANT]
 > 在此範例中，"X-MS-Exchange-Organization-BypassFocusedInbox" 和 "true" 有區分大小寫。
@@ -147,6 +149,10 @@ Get-OrganizationConfig
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
 您可以檢查電子郵件訊息標題，以查看電子郵件是否由於略過焦點收件匣傳輸規則，而在收件箱中登陸。 從組織中已套用焦點收件匣傳輸規則的信箱中，選擇一封電子郵件。 查看郵件上的標題，您應該會看到 **X-MS-Exchange-Organization-BypassFocusedInbox: true** 標題。 這表示略過正常運作。 如需如何尋找標題資訊的詳細資訊，請查看 [檢視電子郵件的網際網路標題資訊](https://go.microsoft.com/fwlink/p/?LinkId=822530) 文章。
+
+### <a name="what-will-the-user-see"></a>使用者會看到什麼？
+
+如果傳輸規則已就位，將會顯示進行覆蓋的通知。 Outlook 網頁版將會停用「一律移至其他」，並顯示工具提示。 桌面版 Outlook 用戶端將允許選取「一律移至其他」，並彈出對話方塊。
 
 ## <a name="turn-onoff-clutter"></a>開啟/關閉 [待過濾郵件]
 
@@ -200,4 +206,5 @@ Outlook 會透過選擇具有最新時間戳記的 Cmdlet 來顯示體驗。根�
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>是否可以執行指令碼以查看誰開啟焦點收件匣？
 
-否，這是預設的設計。焦點收件匣啟用為用戶端設定，因此 Cmdlet 只能告訴您使用者的信箱是否符合用戶端體驗的資格。有可能發生某些用戶端啟用焦點收件匣，但某些用戶端停用這項功能的情況，比方說，在 Outlook App 啟用焦點收件匣，但在 Outlook 網頁版停用此功能。
+否，這是預設的設計。 焦點收件匣啟用為用戶端設定，因此 Cmdlet 只能告訴您使用者的信箱是否符合用戶端體驗的資格。 有可能發生某些用戶端啟用焦點收件匣，但某些用戶端停用這項功能的情況，比方說，在 Outlook App 啟用焦點收件匣，但在 Outlook 網頁版停用此功能。
+

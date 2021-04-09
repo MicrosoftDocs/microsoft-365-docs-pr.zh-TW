@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解當商務用 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
-ms.openlocfilehash: ee83e237d17dc2de60b08b8d4dbdc46c98fc8251
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615396"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644653"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>若要深入了解，請參閱當商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？
 
@@ -68,6 +68,9 @@ ms.locfileid: "51615396"
 > [!IMPORTANT]
 > 如果您想要在一般的「已停用」階段結束之前刪除您的訂閱資料，可以[關閉帳戶](../close-your-account.md)。
   
+> [!NOTE]
+> 如果您明確刪除訂閱，它會略過到期和停用階段，而 SharePoint Online 資料和內容 (包括 OneDrive) 會立即刪除。
+
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>我的訂閱即將到期時，我有哪些選擇？
 
 當訂閱為使用中時，您和使用者可以正常存取您的資料、電子郵件、商務用 OneDrive 和 Office 應用程式等服務。 如果您是系統管理員，當您的訂閱接近到期日時，您將會透過電子郵件和系統管理中心收到一系列通知。

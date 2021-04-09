@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 針對組織中的使用者和群組，從 Microsoft 365 系統管理中心的整合式應用程式入口網站，尋找、測試及部署 Microsoft 和 Microsoft 合作夥伴應用程式。
-ms.openlocfilehash: f806d48e0ed582b1b5c1ee262058ce987125bd99
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: da67cbe5f8b6e5f2da42e1f4b57a55d7d4a768fb
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488286"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644473"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>測試及部署整合式應用程式入口網站中的合作夥伴的 Microsoft 365 應用程式
 
@@ -29,7 +29,7 @@ Microsoft 365 系統管理中心可讓您靈活地從單一位置部署單一存
 
 如需合作夥伴如何建立這些應用程式的詳細資訊，請參閱 how [to plan a SaaS plan for the 商業性 marketplace](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-整合式應用程式入口網站只有全域系統管理員才能存取，僅供全球客戶使用。 以及主權和政府雲彩不提供此功能。
+整合式應用程式入口網站只有全域系統管理員才能存取，僅供全球範圍的客戶使用。 以及主權和政府雲彩不提供此功能。
 
 整合式應用程式入口網站會顯示應用程式的清單，其中包含部署組織之協力廠商的單一應用程式和 Microsoft 365 應用程式。 只會列出 web 應用程式、SPFx 應用程式、Office 增益集和團隊應用程式。 針對 web 應用程式，我們可以看到2種應用程式。
 

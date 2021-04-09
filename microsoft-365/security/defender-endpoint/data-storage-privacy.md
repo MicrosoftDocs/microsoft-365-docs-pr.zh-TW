@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 228a8813bcfff052c7f861dcd2962a94cb58c0fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: e19c64c01c892a8a5f47f5892882feab1242f897
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165964"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644485"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint data storage and 隱私權
 
@@ -94,6 +94,9 @@ Microsoft 不會使用您的資料進行廣告。
 
 **合同終止或到期**<br>
 您的資料將會保留，並可供您使用，但授權是在寬限期間或暫留模式下。 在此期間結束時，將會從 Microsoft 系統中清除該資料，使其無法復原，不得超過180天的合約終止或到期時間。
+
+**高級搜尋資料**<br>
+進階搜捕是一種查詢式威脅搜捕工具，可讓您探索最多 30 天的原始資料。
 
 
 ## <a name="can-microsoft-help-us-maintain-regulatory-compliance"></a>Microsoft 是否可以協助我們維護法規遵從性？
