@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Defender ATP 威脅分析追蹤和回應新興威脅
+title: 使用 Microsoft Defender for Endpoint 威脅分析追蹤和回應新興威脅
 ms.reviewer: ''
 description: 深入瞭解新興的威脅和攻擊技巧，以及如何加以阻止。 評估其對您組織的影響，並評估您的組織恢復能力。
 keywords: 威脅分析、風險評估、OS 緩解、微碼緩解、緩解狀態
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 853a862556825e714bb06e51839f9c026e0cc0e0
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 61b6b0c19730045468c77e5f24bf18470aa5dbd5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501193"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688258"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>使用威脅分析追蹤並回應新興威脅 
 

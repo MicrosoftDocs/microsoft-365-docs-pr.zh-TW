@@ -1,7 +1,7 @@
 ---
-title: Mac 版適用於端點的 Microsoft Defender
+title: Mac 上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 瞭解如何針對 Mac 安裝、設定、更新及使用 Microsoft Defender for Endpoint。
+description: 瞭解如何在 Mac 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 keywords: microsoft、defender、atp、mac、安裝、部署、卸載、intune、jamf、macos、big sur、catalina、mojave、mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 22d35a42eb7fb7eadbba686c292729772951c05c
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 406a0e699ea563670f41355d122aa54ba8667a0e
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500681"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687742"
 ---
-# <a name="microsoft-defender-for-endpoint-for-mac"></a>Mac 版適用於端點的 Microsoft Defender
+# <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,10 +36,10 @@ ms.locfileid: "51500681"
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-本主題說明如何安裝、設定、更新和使用適用于 Mac 的端點的 Defender。
+本主題說明如何在 Mac 上安裝、設定、更新和使用 Defender for Endpoint。
 
 > [!CAUTION]
-> 執行其他協力廠商端點保護產品及 Microsoft Defender for Mac，都可能會導致效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以 [被動式模式](mac-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以安全地利用適用于 Mac EDR 功能的 Defender。
+> 在 Mac 上執行其他協力廠商端點保護產品及 Microsoft Defender for Mac 時，可能會造成效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以 [被動式模式](mac-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以安全地利用適用于 Mac EDR 功能的 Defender。
 
 ## <a name="whats-new-in-the-latest-release"></a>最新版本中的新功能
 
@@ -48,13 +48,13 @@ ms.locfileid: "51500681"
 [Mac 版端點的 Microsoft Defender 新增功能](mac-whatsnew.md)
 
 > [!TIP]
-> 如果您有任何想要分享的意見反應，請在您的裝置上開啟 Microsoft Defender for Mac 的端點，然後流覽以 **協助**  >  **傳送意見** 反應，以提交。
+> 如果您有任何您想要分享的意見反應，請在您的裝置上開啟 Microsoft Defender for Mac 上的端點，然後流覽以 **協助**  >  **傳送意見** 反應，以提交。
 
 若要取得最新的功能，包括預覽功能 (例如 Mac 裝置的端點偵測和回應) ，請將執行 Microsoft Defender for Endpoint 的 macOS 裝置設定為「有問必答」裝置。
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-for-mac"></a>如何針對 Mac 安裝 Microsoft Defender for Endpoint
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>如何在 Mac 上為端點安裝 Microsoft Defender
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 - 用於端點訂閱和 Microsoft Defender Security Center 入口網站存取權的 Defender
 - macOS 和 BASH 腳本中的初級層級體驗
@@ -62,7 +62,7 @@ ms.locfileid: "51500681"
 
 ### <a name="installation-instructions"></a>安裝指示
 
-您可以使用數種方法和部署工具，為 Mac 安裝和設定 Defender。
+您可以使用數種方法和部署工具，在 Mac 上為端點安裝和設定 Defender。
 
 - 協力廠商管理工具：
     - [Microsoft Intune 型部署](mac-install-with-intune.md)
@@ -91,7 +91,7 @@ ms.locfileid: "51500681"
 
 ### <a name="licensing-requirements"></a>授權需求
 
-適用于 Mac 的 microsoft Defender 端點需要下列其中一項 Microsoft 大量授權服務：
+Mac 版上的 microsoft Defender Endpoint 需要下列其中一項 Microsoft 大量授權：
 
 - Microsoft 365 E5 (M365 E5) 
 - Microsoft 365 E5 安全性
@@ -121,7 +121,7 @@ Microsoft Defender for Endpoint 可使用下列探索方法探索 proxy 伺服�
 > [!WARNING]
 > 不支援已驗證的 proxy。 確定只使用 PAC、WPAD 或靜態 proxy。
 >
-> 出於安全性原因，也不支援 SSL 檢查和截取 proxy。 設定 SSL 檢查和 proxy 伺服器的例外狀況，以直接將 Microsoft Defender for Mac 的資料傳遞至相關的 URLs，而不需要截獲。 將您的截取憑證新增至全域存放區將不允許截取。
+> 出於安全性原因，也不支援 SSL 檢查和截取 proxy。 設定 SSL 檢查和 proxy 伺服器的例外狀況，以直接透過 Microsoft Defender for Endpoint for Endpoint URLs to to to to to to to to macOS，而不需要截獲。 將您的截取憑證新增至全域存放區將不允許截取。
 
 若要測試連接未封鎖，請 [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) 在瀏覽器中開啟和。
 
@@ -145,20 +145,20 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
 mdatp connectivity test
 ```
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-for-mac"></a>如何更新 Mac 版的 Microsoft Defender 端點
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>如何在 Mac 上更新 Microsoft Defender for Endpoint
 
-Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供新功能。 若要更新 Microsoft Defender for Mac 的端點，使用名為 Microsoft AutoUpdate (MAU) 的程式。 若要深入瞭解，請參閱 [Deploy Microsoft Defender For Mac For Endpoint 的更新](mac-updates.md)。
+Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供新功能。 若要在 Mac 上更新 Microsoft Defender for Endpoint，使用名為 Microsoft AutoUpdate (MAU) 的程式。 若要深入瞭解，請參閱 [在 Mac 上部署 Microsoft Defender For Endpoint 的更新](mac-updates.md)。
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-for-mac"></a>如何針對 Mac 設定 Microsoft Defender for Endpoint
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-mac"></a>如何在 Mac 上為端點設定 Microsoft Defender
 
-有關如何在企業環境中設定產品的指引，可在 [設定 Microsoft Defender For Mac 的首選項中取得](mac-preferences.md)。
+有關如何在企業環境中設定產品的指引，可于 [Mac 上的 Microsoft Defender For Endpoint 的 [設定偏好設定](mac-preferences.md)] 中取得。
 
 ## <a name="macos-kernel-and-system-extensions"></a>macOS 內核和系統擴充
 
-隨著 macOS 演變，我們準備好 Microsoft Defender for Mac 更新，以利用系統擴充，而不是核心擴充。 如需相關的詳細資訊，請參閱 [Microsoft Defender For Mac 的新功能](mac-whatsnew.md)。
+在與 macOS 演變對齊時，我們正在準備使用系統擴充（而非核心擴充）的 Microsoft Defender for Mac 更新的端點。 如需相關詳細資料，請參閱 Mac 版的 [Microsoft Defender For Endpoint 中的新功能](mac-whatsnew.md)。
 
 ## <a name="resources"></a>資源
 
-- 如需有關記錄、卸載或其他主題的詳細資訊，請參閱適用于 [Mac 的 Microsoft Defender 端點資源](mac-resources.md)。
+- 如需有關記錄、卸載或其他主題的詳細資訊，請參閱 [Mac 上 Microsoft Defender For Endpoint 的資源](mac-resources.md)。
 
-- 適用于[Mac 的 Microsoft Defender 端點隱私權](mac-privacy.md)。
+- [Mac 上的 Microsoft Defender For Endpoint 的隱私權](mac-privacy.md)。

@@ -1,6 +1,6 @@
 ---
 title: 將 Microsoft Defender for Endpoint 事件的資料流程傳遞給您的儲存體帳戶
-description: 瞭解如何設定 Microsoft Defender ATP，以將高級搜尋事件傳輸至您的儲存體帳戶。
+description: 瞭解如何設定 Microsoft Defender for Endpoint to stream Advanced 搜尋事件至您的儲存體帳戶。
 keywords: 原始資料匯出，流式 API，API，事件中心，Azure 儲存體，儲存體帳戶，高級搜尋，原始資料共用
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9f1eb79bbf617afad58b7e4d70e1f40e422f9046
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 19fe0c9c3dc6f2e4226a4aa9a6cd983bc95bae3a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058187"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688786"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>設定 Microsoft Defender for Endpoint to stream Advanced 搜尋事件至您的儲存體帳戶
 

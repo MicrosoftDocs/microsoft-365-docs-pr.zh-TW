@@ -1,6 +1,6 @@
 ---
 title: 電子郵件保護的順序和優先順序
-keywords: 安全性，惡意程式碼，Microsoft 365，M365，安全性中心，ATP，Microsoft Defender ATP，Office 365 ATP，Azure ATP
+keywords: security，惡意程式碼，Microsoft 365，M365，security center，ATP，Microsoft Defender for Endpoint，Office 365 ATP，Azure ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的保護應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2a72420340993c027ec99820dcd3edddab1a304
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3419cba5781e7ab1042f7312c721069d88fb8767
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203501"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687646"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子郵件保護的順序和優先順序
 
@@ -46,8 +46,8 @@ ms.locfileid: "51203501"
   |優先順序|電子郵件保護|類別|要管理的位置|
   |---|---|---|---|
   |1|惡意程式碼|CAT： MALW|[在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
-  |2 |網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
-  |3 |高信賴度的垃圾郵件|CAT： HSPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |第|網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |個|高信賴度的垃圾郵件|CAT： HSPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |4 |詐騙|CAT：欺騙|[在 EOP 中設定欺騙情報](learn-about-spoof-intelligence.md)|
   |位<sup>\*</sup>| (受保護的使用者模擬使用者模擬) |UIMP|[在 Microsoft Defender for Office 365 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
   |6<sup>\*</sup>|網域模擬 (受保護的網域) |DIMP|[在 Microsoft Defender for Office 365 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
@@ -68,7 +68,7 @@ ms.locfileid: "51203501"
   |原則名稱|優先順序|使用者模擬|反詐騙|
   |---|---|---|---|
   |原則 A|1|開啟|關閉|
-  |原則 B|2 |關閉|開啟|
+  |原則 B|第|關閉|開啟|
   |
 
 1. 郵件會標示及視為欺騙性，因為哄騙具有比使用者模擬 (5) 更高優先順序的 (4) 。

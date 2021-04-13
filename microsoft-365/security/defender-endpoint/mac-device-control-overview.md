@@ -1,6 +1,6 @@
 ---
 title: macOS 的裝置控制項
-description: 瞭解如何設定 Microsoft Defender for Mac 以減少可移動儲存區（如 USB 裝置）的威脅。
+description: 瞭解如何針對 Mac 設定 Microsoft Defender for Endpoint，以減少可移動儲存區（如 USB 裝置）的威脅。
 keywords: microsoft，defender，atp，mac，裝置，控制，usb，可移動，媒體
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 098eb30764870e69c5b1b6c2cec3cf8e5cb11691
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186566"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688678"
 ---
 # <a name="device-control-for-macos"></a>macOS 的裝置控制項
 
@@ -52,7 +52,7 @@ MacOS 的裝置控制具有下列必要條件：
 >   ```bash
 >   mdatp health --field real_time_protection_subsystem 
 >   ```
-> - 您的裝置必須位於 `Beta` 先前稱為 `InsiderFast`) Microsoft AutoUpdate 更新通道的 (。 如需詳細資訊，請參閱 [Deploy Microsoft Defender For Mac For Endpoint 的更新](mac-updates.md)。
+> - 您的裝置必須位於 `Beta` 先前稱為 `InsiderFast`) Microsoft AutoUpdate 更新通道的 (。 如需詳細資訊，請參閱 [在 Mac 上部署 Microsoft Defender For Endpoint 的更新](mac-updates.md)。
 > 
 >   您可以使用下列命令來檢查更新通道： 
 > 
@@ -66,7 +66,7 @@ MacOS 的裝置控制具有下列必要條件：
 >    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
 >    ```
 >
->    或者，如果您在受管理的環境 (JAMF 或 Intune) 中，您可以從遠端設定更新通道。 如需詳細資訊，請參閱 [Deploy Microsoft Defender For Mac For Endpoint 的更新](mac-updates.md)。 
+>    或者，如果您在受管理的環境 (JAMF 或 Intune) 中，您可以從遠端設定更新通道。 如需詳細資訊，請參閱 [在 Mac 上部署 Microsoft Defender For Endpoint 的更新](mac-updates.md)。 
 
 ## <a name="device-control-policy"></a>裝置控制項原則
 
@@ -76,7 +76,7 @@ MacOS 的裝置控制具有下列必要條件：
 
 在設定設定檔中，裝置控制項原則是在下列區段中定義：
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | deviceControl |
@@ -96,7 +96,7 @@ MacOS 的裝置控制具有下列必要條件：
 
 當使用者按一下此通知時，網頁會在預設瀏覽器中開啟。 您可以設定使用者按一下通知時所開啟的 URL。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | navigationTarget |
@@ -110,7 +110,7 @@ MacOS 的裝置控制具有下列必要條件：
 > [!NOTE]
 > 目前支援下列類型的卸除式媒體，而且可以包含在 [原則： USB 儲存裝置] 中。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | removableMediaPolicy |
@@ -143,7 +143,7 @@ MacOS 的裝置控制具有下列必要條件：
 - `audit` -如果限制存取裝置，則會向使用者顯示通知，但仍然可以使用該裝置。 此強制等級可用於評估原則的效能。
 - `block` -在此強制性層級下，使用者可以在裝置上執行的作業，會限制在原則中定義的專案。 此外，會對使用者提出通知。 
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | enforcementLevel |
@@ -168,7 +168,7 @@ MacOS 的裝置控制具有下列必要條件：
 > [!NOTE]
 > `execute`許可權只是指 Mach-O 二進位檔案的執行。 不包含執行腳本或其他類型的負載。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 許可 |
@@ -183,7 +183,7 @@ MacOS 的裝置控制具有下列必要條件：
 
 `vendors`字典包含一或多個專案，每個專案都是由廠商識別碼識別。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 供應商 |
@@ -191,7 +191,7 @@ MacOS 的裝置控制具有下列必要條件：
 
 針對每個廠商，您可以為該廠商的裝置指定所需的許可權等級。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 許可 |
@@ -200,7 +200,7 @@ MacOS 的裝置控制具有下列必要條件：
 
 此外，您可以選擇性地指定屬於該廠商的產品集合，其定義更為細微的許可權。 `products`字典包含一或多個專案，每個專案都是由產品識別碼所識別。 
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 產品 |
@@ -208,7 +208,7 @@ MacOS 的裝置控制具有下列必要條件：
 
 針對每個產品，您可以指定該產品所需的許可權等級。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 許可 |
@@ -219,7 +219,7 @@ MacOS 的裝置控制具有下列必要條件：
 
 `serialNumbers`字典包含一或多個專案，每個專案都是由序號來識別。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | serialNumbers |
@@ -227,7 +227,7 @@ MacOS 的裝置控制具有下列必要條件：
 
 針對每個序數，您可以指定所需的許可權等級。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 許可 |
@@ -336,7 +336,7 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>裝置控制項原則部署
 
-裝置控制原則必須包含在其他產品設定旁，如 [設定 Mac 版 Microsoft Defender 的首選項](mac-preferences.md)所述。
+裝置控制項原則必須包含在其他產品設定旁，如在 macOS 的 [ [設定 Microsoft Defender For Endpoint](mac-preferences.md)] 的 [喜好設定] 中所述。
 
 您可以使用 [Configuration profile 部署](mac-preferences.md#configuration-profile-deployment)中所列的指示來部署此設定檔。
 

@@ -17,14 +17,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 64a19e9dd3d373c8092553ca9d60c711bfb500bc
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 7d9dd82d8c1beee77ea1f95b11a12bcddf01115f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186410"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688330"
 ---
-# <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>非 Windows 平臺的 Microsoft Defender for Endpoint
+# <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>非 Windows 平台版適用於端點的 Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -71,7 +71,7 @@ IOS 的 Microsoft Defender for Endpoint 是我們的行動威脅防護解決方�
 
 客戶可以透過獨立的 Microsoft Defender for Endpoint 授權，在 macOS 上取得 Microsoft Defender for Endpoint，作為 Microsoft 365 A5/E5 或 Microsoft 365 安全性的一部分。
 
-最近宣佈的適用于 Android 和 iOS 的 Microsoft Defender Endpoint for Endpoint 的功能，包含在適用于合格授權使用者之五個合格裝置的一部分中。
+在 Android 和 iOS 上的 Microsoft Defender for Endpoint 的最近宣告功能，包含在適用于合格授權使用者之五個合格裝置的一部分中。
 
 您可以透過適用于商業及教育版客戶的 Defender for Endpoint Server SKU，取得 Linux 上的 defender for Endpoint。
 

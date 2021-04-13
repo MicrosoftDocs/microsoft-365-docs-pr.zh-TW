@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a6f2e2057ca78cb0e1114ed86829cd931dc1cd2b
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: e7ac620896bad9adb73308223e28976e219d36d0
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587548"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687862"
 ---
-# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-for-linux"></a>使用 Microsoft Defender for Linux，偵測並封鎖可能有害的應用程式
+# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上使用 Microsoft Defender for Endpoint 偵測並封鎖可能有害的應用程式
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

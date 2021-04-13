@@ -1,7 +1,6 @@
 ---
 title: 自行註冊現有裝置
 description: 登錄您可能已經使用的裝置，使其可由 Microsoft 受管理的電腦進行管理
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1703e4ed4ea0f3306edf6fdf07ab9c97a9266d4f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445563"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689218"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
@@ -150,9 +149,11 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 請遵循下列步驟：
 
 1. 在 [檔案上傳] 中，提供您先前建立的 CSV 檔案路徑。
+2. 在下拉式功能表中選取 [裝置設定檔](../service-description/profiles.md) 。
+3. 選取 [註冊裝置]。 系統會將裝置新增至 [裝置] 刀鋒視窗上標示為 [註冊擱置]的裝置清單。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
 
-1. 選取 [註冊裝置]。 系統會將裝置新增至 [裝置] 刀鋒視窗上標示為 [註冊擱置]的裝置清單。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
-
+> [!NOTE]
+> 如果您手動變更裝置的 Azure Active Directory (AAD) 群組成員資格，它會自動重新指派給其裝置設定檔的群組，並將其從任何衝突的群組中移除。
 
 您可以在主頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
 

@@ -1,6 +1,6 @@
 ---
-title: 監視 Microsoft Defender ATP 中的 web 流覽安全性
-description: 在 Microsoft Defender ATP 中使用 web 保護以監視網頁流覽安全性
+title: 監視 Microsoft Defender for Endpoint 中的 web 流覽安全性
+description: 在 Microsoft Defender for Endpoint 中使用 web 保護以監視網頁流覽安全性
 keywords: web 保護，網頁威脅防護，網頁流覽，監控，報表，卡片，網域清單，安全性，網路釣魚，惡意程式碼，exploit，網站，網路保護，Edge，Internet Explorer，Chrome，Firefox，網頁瀏覽器
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 629e18c7387f6063254f3482f93a5e17023c7316
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: ee6388c779d2c5bc09a82f5e9064d1b981e885cb
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499951"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687420"
 ---
 # <a name="monitor-web-browsing-security"></a>監視網頁流覽安全性
 

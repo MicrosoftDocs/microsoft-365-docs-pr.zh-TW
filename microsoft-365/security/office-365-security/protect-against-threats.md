@@ -20,12 +20,12 @@ description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2df88df9f1f0e2c14c0adcf0d5772189a1276e9d
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: b55391247bf7d21c68c67e29f93bac1b7088b035
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650227"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687084"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -60,8 +60,8 @@ ms.locfileid: "51650227"
 |反垃圾郵件保護|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |電子郵件的零小時自動清除 () |[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |保護電子郵件和 Office 檔中的惡意 URLs 和檔案 (安全連結和安全附件) |[適用於 Office 365 的 Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的安全附件|[適用於 Office 365 的 Defender](turn-on-mdo-for-spo-odb-and-teams.md)|
-|高級反網路釣魚保護|[適用於 Office 365 的 Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的安全附件|[適用於 Office 365 的 Microsoft Defender](turn-on-mdo-for-spo-odb-and-teams.md)|
+|高級反網路釣魚保護|[適用於 Office 365 的 Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色及權限
 

@@ -1,5 +1,5 @@
 ---
-title: 手動部署 Microsoft Defender for Linux 端點
+title: 手動在 Linux 上部署 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 說明如何從命令列手動部署 Microsoft Defender ATP for Linux。
 keywords: microsoft，defender，atp，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c695eb0d786e73da5adb95bbca5c1747243d6203
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 78ea8b106253098791d71ef9ff788b7cf1df4ec7
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644737"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688402"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>手動部署 Microsoft Defender for Linux 端點
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>手動在 Linux 上部署 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,9 +36,9 @@ ms.locfileid: "51644737"
 
 > 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-本文說明如何手動為 Linux 部署 Microsoft Defender for Endpoint。 成功的部署需要完成下列所有工作：
+本文說明如何手動在 Linux 上部署 Microsoft Defender for Endpoint。 成功的部署需要完成下列所有工作：
 
-- [手動部署 Microsoft Defender for Linux 端點](#deploy-microsoft-defender-for-endpoint-for-linux-manually)
+- [手動在 Linux 上部署 Microsoft Defender for Endpoint](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [必要條件和系統需求](#prerequisites-and-system-requirements)
   - [設定 Linux 軟體存放庫](#configure-the-linux-software-repository)
     - [RHEL 和變種 (CentOS 和 Oracle Linux) ](#rhel-and-variants-centos-and-oracle-linux)
@@ -54,7 +54,7 @@ ms.locfileid: "51644737"
 
 ## <a name="prerequisites-and-system-requirements"></a>必要條件和系統需求
 
-開始之前，請參閱 [Microsoft Defender For Linux](microsoft-defender-endpoint-linux.md) 以取得目前軟體版本之必要條件和系統需求的描述。
+開始之前，請參閱 [Linux 上的 Microsoft Defender For Endpoint](microsoft-defender-endpoint-linux.md) ，以取得目前軟體版本的必要條件和系統需求的描述。
 
 ## <a name="configure-the-linux-software-repository"></a>設定 Linux 軟體存放庫
 

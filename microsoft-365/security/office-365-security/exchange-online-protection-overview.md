@@ -15,12 +15,12 @@ ms.custom:
 description: 深入瞭解 Exchange Online Protection (EOP) 如何協助保護您的內部部署電子郵件組織，以進行獨立和混合式環境。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3df7b376d559535e168bfa21d2a8770b19569c4f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b699c0d6353d725b8d03cf4cf556a3e2ac798041
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204820"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687050"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 
@@ -70,6 +70,9 @@ Exchange Online Protection (EOP) 是雲端架構篩選服務，可協助您的�
 - **Exchange Enterprise CAL (含服務)**：如果您有內部部署的 Exchange 組織，且您已購買額外的 Exchange Enterprise CAL (含服務) 授權，EOP 會包含在服務中。
 
 如需所有 EOP 訂閱方案之需求、重要限制和功能可用性的相關資訊，請參閱 [Exchange Online Protection 服務描述](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+
+> [!NOTE]
+> 如果您有 **Office 365 E3 訂閱，它會包含 EOP**。 如需在您的訂閱中設定 EOP 安全性功能的步驟，以及新增 Microsoft Defender for Office 365 訂閱的安全性資訊，請參閱防禦 [威脅](protect-against-threats.md)。 安裝程式的 EOP 功能建議設定可在 [ [建議](best-practices-for-configuring-eop.md) ] 文章中找到，其中 EOP 設定會明確呼叫。
 
 ## <a name="setting-up-eop-for-on-premises-email-organizations"></a>設定內部部署電子郵件組織的 EOP
 

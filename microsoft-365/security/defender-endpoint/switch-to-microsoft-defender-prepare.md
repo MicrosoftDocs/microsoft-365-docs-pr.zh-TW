@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: d5339ce795bff1451d6f4caaf37de39f996890be
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: de0d5ca756cdd8fe6eaf82968d04d143a098269c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185524"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688066"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>切換至 Microsoft Defender 的端點-階段1：準備
 
@@ -34,7 +34,7 @@ ms.locfileid: "51185524"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| ![階段1：準備](images/phase-diagrams/prepare.png)<br/>階段1：準備 | [![階段2：設定](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[階段2：設定](switch-to-microsoft-defender-setup.md) | [![階段3：板載](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[階段3：板載](switch-to-microsoft-defender-onboard.md) |
+| ![階段 1：準備](images/phase-diagrams/prepare.png)<br/>階段 1：準備 | [![階段 2：設定](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[階段 2：設定](switch-to-microsoft-defender-setup.md) | [![第 3 階段：導入](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[第 3 階段：導入](switch-to-microsoft-defender-onboard.md) |
 |--|--|--|
 |*您在這裡！*| | |
 
@@ -104,10 +104,10 @@ Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/
 |--|--|--|
 |[端點偵測和回應](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR)  |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 或更新版本](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)  |[設定電腦 proxy 和網際網路連線設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet) |
 |EDR |- [Windows Server 2016](https://docs.microsoft.com/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>- [Windows Server 2012 R2](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows 8.1](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows 7 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[設定 proxy 和網際網路連線設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |macOS： <br/>-10.15 (Catalina) <br/>-10.14 (Mojave)  <br/>-10.13 (高塞拉里昂)   |[Mac 版端點的 Microsoft Defender：網路連接](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
+|EDR  |macOS： <br/>-10.15 (Catalina) <br/>-10.14 (Mojave)  <br/>-10.13 (高塞拉里昂)   |[MacOS 上的 Microsoft Defender for Endpoint： Network connections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
 |[Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 或更新版本](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) <br/>- [Windows Server 2016](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-2016) |[設定及驗證 Microsoft Defender 防毒軟體網路連線](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)<br/> |
-|防毒 |macOS： <br/>-10.15 (Catalina) <br/>-10.14 (Mojave)  <br/>-10.13 (高塞拉里昂)  |[Mac 版端點的 Microsoft Defender：網路連接](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
-|防毒 |Linux： <br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |[適用于 Linux 的 Microsoft Defender Endpoint：網路連線](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux#network-connections) |
+|防毒 |macOS： <br/>-10.15 (Catalina) <br/>-10.14 (Mojave)  <br/>-10.13 (高塞拉里昂)  |[MacOS 上的 Microsoft Defender for Endpoint： Network connections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
+|防毒 |Linux： <br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |[Linux 上的 Microsoft Defender for Endpoint： Network connections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux#network-connections) |
 
 ## <a name="next-step"></a>下一步
 

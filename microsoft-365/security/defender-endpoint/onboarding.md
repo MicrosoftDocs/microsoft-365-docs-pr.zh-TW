@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP 服務的板載
-description: 深入瞭解如何在 Microsoft Defender ATP 服務上架端點
+title: 在 Microsoft Defender for Endpoint service 上架
+description: 深入瞭解如何在 Microsoft Defender for Endpoint service 上進行板載端點服務
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56a62ca4ebbd140f507d1735c663924014ca4771
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: cc538c887397d5bbea78f63c8a8acd318ec7fe9f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445729"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689530"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>在 Microsoft Defender for Endpoint service 上架
 
@@ -71,7 +71,7 @@ ms.locfileid: "51445729"
 
 | 端點     | 工具選項                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [本機腳本 (最多10個裝置) ](configure-endpoints-script.md) <br>  [群組原則](configure-endpoints-gp.md) <br>  [Microsoft 端點管理員/行動裝置管理員](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 腳本](configure-endpoints-vdi.md)   |
+| **Windows**  |  [本機腳本 (最多10個裝置) ](configure-endpoints-script.md) <br>  [群組原則](configure-endpoints-gp.md) <br>  [Microsoft 端點管理員/行動裝置管理員](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 腳本](configure-endpoints-vdi.md) <br> [Azure 資訊安全中心](configure-server-endpoints.md#integration-with-azure-security-center) |
 | **macOS**    | [本機腳本](mac-install-manually.md) <br> [Microsoft 端點管理員](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [行動裝置管理](mac-install-with-other-mdm.md) |
 | **Linux 伺服器** | [本機腳本](linux-install-manually.md) <br> [木偶](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [以應用程式為基礎](ios-install.md)                                |

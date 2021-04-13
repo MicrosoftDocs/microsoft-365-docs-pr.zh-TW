@@ -1,6 +1,6 @@
 ---
-title: 疑難排解 Microsoft Defender ATP 中的 SIEM 工具整合問題
-description: 疑難排解搭配 Microsoft Defender ATP 使用 SIEM 工具時可能發生的問題。
+title: 疑難排解 Microsoft Defender for Endpoint 中的 SIEM 工具整合問題
+description: 疑難排解搭配 Microsoft Defender for Endpoint 使用 SIEM 工具時可能發生的問題。
 keywords: 疑難排解、siem、用戶端密碼、機密
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: c1c8fdb0b6e84d4265defb95d91b59a584b7f4c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185776"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689446"
 ---
-# <a name="troubleshoot-siem-tool-integration-issues"></a>疑難排解 SIEM 工具整合問題
+# <a name="troubleshoot-siem-tool-integration-issues"></a>為 SIEM 工具整合問題疑難排解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -53,7 +53,7 @@ ms.locfileid: "51185776"
 
 5. 選取機 **碼** 區段，然後提供重要描述並指定金鑰有效期限。
 
-6. 按一下 **[儲存]**。 會顯示機碼值。
+6. 按一下 **儲存**。 會顯示機碼值。
 
 7. 複製此值，並將其儲存在安全的位置。
 
@@ -74,7 +74,7 @@ ms.locfileid: "51185776"
    - 英國： `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
    - 美國：  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` 。
  
-6. 按一下 **[儲存]**。
+6. 按一下 **儲存**。
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>啟用 SIEM 連接器應用程式時發生錯誤
 如果您嘗試啟用 SIEM 連接器應用程式時遇到錯誤，請檢查瀏覽器的快顯封鎖器設定。 當您啟用功能時，它可能會封鎖所開啟的新視窗。

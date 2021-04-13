@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445361"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687886"
 ---
-# <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>在 Microsoft Defender ATP 中設定警示通知
+# <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定警示通知
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51445361"
 > [!NOTE]
 > 只有具有「管理安全性設定」許可權的使用者才能設定電子郵件通知。 如果您已選擇使用基本版權管理，具有安全性管理員或全域系統管理員角色的使用者便可以設定電子郵件通知。
 
-您可以設定觸發通知的警示嚴重性層級。 您也可以新增或移除電子郵件通知的收件者。 新增的收件者會收到有關新增提醒之後所發生之提醒的通知。 如需提醒的詳細資訊，請參閱 [查看和組織警示佇列](alerts-queue.md)。
+您可以設定觸發通知的警示嚴重性層級。 您也可以新增或移除電子郵件通知的收件者。 新增的收件者會在新增通知之後通知您。 如需提醒的詳細資訊，請參閱 [查看和組織警示佇列](alerts-queue.md)。
 
 如果您是使用角色型存取控制 (RBAC) ，收件者只會根據通知規則中設定的裝置群組來接收通知。
 具有適當許可權的使用者只能建立、編輯或刪除局限于其裝置群組管理範圍的通知。
@@ -71,7 +71,7 @@ ms.locfileid: "51445361"
     
 5. 輸入收件者的電子郵件地址，然後按一下 [ **新增收件** 者]。 您可以新增多個電子郵件地址。
 
-6. 選取 [ **傳送測試電子郵件**]，檢查電子郵件收件者是否能夠接收電子郵件通知。
+6. 選取 [ **傳送測試電子郵件**]，檢查電子郵件收件者是否可接收電子郵件通知。
 
 7. 按一下 [ **儲存通知規則**]。
 
@@ -98,7 +98,7 @@ ms.locfileid: "51445361"
 **解決方案：** 請確定電子郵件篩選器沒有封鎖通知：
 
 1. 檢查 [Defender for Endpoint email] 通知是否未傳送至 [垃圾郵件] 資料夾。 將它們標示為非垃圾郵件。
-2. 請檢查您的電子郵件安全產品是否沒有封鎖來自 Defender for Endpoint 的電子郵件通知。
+2. 請檢查您的電子郵件安全性產品未阻止來自 Defender for Endpoint 的電子郵件通知。
 3. 請檢查您的電子郵件應用程式規則，可能會為您的 Defender 寄出或移動您的 Defender 電子郵件通知。
 
 ## <a name="related-topics"></a>相關主題

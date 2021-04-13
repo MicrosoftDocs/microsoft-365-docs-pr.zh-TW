@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: 在本文中，瞭解 Azure ExpressRoute 路由需求、電路，以及與 Office 365 搭配使用的路由網域。
-ms.openlocfilehash: 9d3c381cfb6e24c1c87ef3dcfb83a9b93f991b93
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222404"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687166"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>使用 Office 365 的 ExpressRoute 進行路由傳送
 
@@ -106,7 +106,7 @@ ms.locfileid: "51222404"
 
 通常，PAC 檔案的目的是為了將網路要求直接傳送至線路，將所有其他網路要求傳送至您 proxy 的 ExpressRoute。 如果您正在設定 PAC 檔案，如下列所示，請依下列順序撰寫 PAC 檔案：
   
-1. 在您的 PAC 檔案的頂端，包含上表中第二欄的子 Fqdn，將流量傳送給您的 proxy。 我們已為您建立範例 PAC 檔案，供您在本文中 [管理 Office 365 端點](./managing-expressroute-for-connectivity.md)時使用。
+1. 在您的 PAC 檔案的頂端，包含上表中第二欄的子 Fqdn，將流量傳送給您的 proxy。 我們已為您建立範例 PAC 檔案，供您在本文中 [管理 Office 365 端點](./managing-office-365-endpoints.md)時使用。
 
 2. 在 [本文](./urls-and-ip-address-ranges.md) 的第一節的下方，包含已標示 ExpressRoute 為「已宣告」的所有 fqdn，以直接將流量傳送至您的 ExpressRoute 電路。
 

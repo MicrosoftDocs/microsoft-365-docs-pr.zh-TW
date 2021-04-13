@@ -1,7 +1,7 @@
 ---
 title: 建立及查看安全性建議的例外狀況-威脅和弱點管理
 description: 針對威脅和弱點管理中的安全性建議建立及監視例外狀況。
-keywords: microsoft defender atp tvm 修復，mdatp tvm，威脅和弱點管理，威脅 & 漏洞管理，威脅 & 漏洞管理修正，tvm 修正 intune，tvm 修正 sccm
+keywords: microsoft defender for endpoint tvm 修復，mdatp tvm，威脅和弱點管理，威脅 & 漏洞管理，威脅 & 漏洞管理修正，tvm 修正 intune，tvm 修正 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13ac09b1ad918ed945edec6167fd57ea02b616ea
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500189"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689410"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>建立及查看安全性建議的例外狀況-威脅和弱點管理
 
@@ -84,7 +84,7 @@ ms.locfileid: "51500189"
 
 ### <a name="global-exceptions"></a>全域例外狀況
 
-如果您有全域管理員許可權 (稱為「Microsoft Defender ATP 系統管理員」) ，您就可以建立和取消全域例外狀況。 它會影響組織中的 **所有** 目前和未來裝置群組，且只有具有類似許可權的使用者才能加以變更。 建議狀態會從「active」變更為「完整例外狀況」。
+如果您有全域系統管理員許可權，您就可以建立和取消全域例外狀況。 它會影響組織中的 **所有** 目前和未來裝置群組，且只有具有類似許可權的使用者才能加以變更。 建議狀態會從「active」變更為「完整例外狀況」。
 
 ![顯示全域例外狀況選項。](images/tvm-exception-global.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Live response 命令範例
+title: 即時回應命令範例
 description: 瞭解如何對 Microsoft Defender for Endpoint 執行基本或高級 live 回應命令，並查看其使用方式的範例。
 keywords: 範例，command，cli，remote，shell，connection，live，response，real time，command，script，修正，搜尋，匯出，記錄，刪除，下載，檔案
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e00464b5d5dcf348fcc76a3f093ac8bac373627
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f08f20753a1f0926abbbce01fe97f20ef1c07f2c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187706"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689086"
 ---
-# <a name="live-response-command-examples"></a>Live response 命令範例
+# <a name="live-response-command-examples"></a>即時回應命令範例
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -198,7 +198,11 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
-
+>[!NOTE]
+>
+> 針對長時間執行命令，例如 "**run**" 或 "**getfile**"，您可能想要在命令的結尾使用 ' **&** ' 符號，以在背景中執行該動作。
+> 這可讓您繼續調查機器，並在使用 '**fg**' [basic 命令](live-response.md#basic-commands)完成時，回到背景命令。
+>
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```

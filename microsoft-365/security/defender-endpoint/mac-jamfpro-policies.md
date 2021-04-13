@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be01d5908e4c79f642cdbbddd75115f6ebc2c713
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9b00d81d3d51c343565ec4eb743181baa2750b01
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499612"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687730"
 ---
-# <a name="set-up-the-microsoft-defender-for-endpoint-for-macos-policies-in-jamf-pro"></a>在 Jamf Pro 中設定 macOS 原則的 Microsoft Defender for Endpoint
+# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf Pro 的 macOS 原則上設定 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,9 +56,9 @@ ms.locfileid: "51499612"
 
 9. [設定網路擴充](#step-9-configure-network-extension)
 
-10. [使用 Mac 的 Microsoft Defender 端點排程掃描](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [在 macOS 上使用 Microsoft Defender for Endpoint 排程掃描](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [為 macOS 部署 Microsoft Defender for Endpoint](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
+11. [在 macOS 上部署 Microsoft Defender for Endpoint](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>步驟1：取得 Microsoft Defender for Endpoint 上架套件
@@ -125,7 +125,7 @@ ms.locfileid: "51499612"
 
     ![目標影像](images/jamfpro-targets.png) 
 
-11. 選取 [儲存 **]**。
+11. 選取 **[儲存]**。
 
     ![部署目的電腦的映射](images/jamfpro-deployment-target.png)
 
@@ -318,7 +318,7 @@ ms.locfileid: "51499612"
     >![配置設定的映射 intune 檔案上傳](images/8e69f867664668796a3b2904896f0436.png)
 
 
-11. 選取 [儲存 **]**。 
+11. 選取 **[儲存]**。 
 
     ![配置設定的影像儲存影像](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -360,7 +360,7 @@ ms.locfileid: "51499612"
         - **分配方法**：自動安裝 *(預設)*
         - **層級**：電腦層級 *(預設)*
 
-        ![配置設定 mdatpmdav 的影像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![設定設定檔設定 mdatpmdav 的影像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - [索引標籤 **通知**] 中，按一下 [ **新增**]，然後輸入下列值：
         - **束識別碼**： `com.microsoft.wdav.tray`
@@ -460,7 +460,7 @@ ms.locfileid: "51499612"
 
     ![設定 uplimg 的影像](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. 選取 [儲存 **]**。
+11. 選取 **[儲存]**。
 
     ![設定 saveimg 的影像](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -561,7 +561,7 @@ ms.locfileid: "51499612"
 
 15. 選取 [新增]。 
 
-16. 選取 [儲存 **]**。 
+16. 選取 **[儲存]**。 
     
 17. 選取 **[完成]**。
     
@@ -616,7 +616,7 @@ ms.locfileid: "51499612"
 
     ![配置設定的影像新增影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 選取 [儲存 **]**。
+9. 選取 **[儲存]**。
 
     ![配置設定 saveimag 的影像](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -671,7 +671,7 @@ ms.locfileid: "51499612"
 
    ![配置設定 addima 的影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 選取 [儲存 **]**。
+9. 選取 **[儲存]**。
 
    ![配置設定 sysext 範圍的影像](images/sysext-scope.png)
 
@@ -681,7 +681,7 @@ ms.locfileid: "51499612"
 
 ## <a name="step-9-configure-network-extension"></a>步驟9：設定網路擴充
 
-做為端點偵測和回應功能的一部分，Mac 版端點的 Microsoft Defender 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。
+在端點偵測和回應功能中，Microsoft Defender for Endpoint on macOS 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。
 
 這些步驟適用于 macOS 10.15 (Catalina) 或更新版本。
 
@@ -707,7 +707,7 @@ ms.locfileid: "51499612"
 
         請注意，「 **識別碼**」、「 **通訊端篩選** 」及「 **通訊端篩選」指定的需求** 會如上所指定的
 
-        ![配置設定 mdatpmdav 的影像](images/netext-create-profile.png)
+        ![設定 mdatpmdav 的影像](images/netext-create-profile.png)
 
 3. 選取 [ **範圍** ] 索引標籤。
 
@@ -721,7 +721,7 @@ ms.locfileid: "51499612"
 
     ![配置設定 adim 的影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. 選取 [儲存 **]**。
+7. 選取 **[儲存]**。
 
     ![設定 savimg netextscop 的映射](images/netext-scope.png)
 
@@ -731,10 +731,10 @@ ms.locfileid: "51499612"
 
 或者，您也可以下載 [netfilter](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) ，並將其上傳至 JAMF 設定檔，如 [使用 JAMF Pro 部署自訂設定設定檔中所述）。方法2：將設定檔上傳至 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
-## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-for-mac"></a>步驟10：使用 Mac 的 Microsoft Defender 端點排程掃描
-依照 [Microsoft Defender For Mac 的排程掃描](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)的指示。
+## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>步驟10：使用 macOS 上的 Microsoft Defender for Endpoint 排程掃描
+依照 [macOS 上的 [Microsoft Defender For Endpoint] 進行排程掃描](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)的指示進行。
 
-## <a name="step-11-deploy-microsoft-defender-for-endpoint-for-macos"></a>步驟11：為 macOS 部署 Microsoft Defender for Endpoint
+## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>步驟11：在 macOS 上部署 Microsoft Defender for Endpoint
 
 1. 流覽至您儲存的位置 `wdav.pkg` 。
 
@@ -778,7 +778,7 @@ ms.locfileid: "51499612"
     
      ![[設定設定] [限制] 索引標籤的影像](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-8. 選取 [儲存 **]**。 套件已上傳至 Jamf Pro。 
+8. 選取 **[儲存]**。 套件已上傳至 Jamf Pro。 
 
    ![Configuration settings pack upl jamf pro 映射](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -806,7 +806,7 @@ ms.locfileid: "51499612"
     ![重複簽入設定設定的影像](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
   
-13. 選取 [儲存 **]**。 
+13. 選取 **[儲存]**。 
  
 14. 選取 **> 設定的套件**。
  
@@ -816,7 +816,7 @@ ms.locfileid: "51499612"
 
     ![設定 MDATP 和 MDA 新增的影像](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. 選取 [儲存 **]**。
+16. 選取 **[儲存]**。
 
     ![設定 settingssavimg 的影像](images/9d6e5386e652e00715ff348af72671c6.png)
 

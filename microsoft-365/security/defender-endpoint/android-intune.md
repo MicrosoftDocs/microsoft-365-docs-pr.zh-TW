@@ -1,6 +1,6 @@
 ---
-title: 使用 Microsoft Intune 部署 Android 版適用於端點的 Microsoft Defender
-description: 說明如何使用 Microsoft Intune 為 Android 部署 Microsoft Defender
+title: 在 Android 上使用 Microsoft Intune 部署 Microsoft Defender for Endpoint
+description: 說明如何在 Android 上使用 Microsoft Intune 部署 Microsoft Defender for Endpoint
 keywords: microsoft、defender、atp、mde、android、安裝、部署、卸載
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fdfc6e63945e15ce2d1f1a293c377f641eeb9bc4
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 350345acbaadcdd6bc8ef901f03c419a7f8decff
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587692"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687718"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>使用 Microsoft Intune 部署 Android 版適用於端點的 Microsoft Defender 
+# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>在 Android 上使用 Microsoft Intune 部署 Microsoft Defender for Endpoint 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -55,12 +55,12 @@ ms.locfileid: "51587692"
 
 2. 在 [ **新增應用程式** ] 頁面上，于 [ *應用程式資訊* ] 區段中輸入： 
 
-   - **名稱** 
+   - **Name** 
    - **描述**
    - **發行者** 為 Microsoft。
    - **應用商店 url** 為 https://play.google.com/store/apps/details?id=com.microsoft.scmx 端點應用程式 GOOGLE Play Store url (Defender)  
 
-   其他欄位是選用的。 選取 **[下一步]**。
+   其他欄位是選用的。 選取 [下一步]。
 
    ![Microsoft 端點管理員系統管理中心的圖像新增應用程式資訊](images/mda-addappinfo.png)
 
@@ -104,7 +104,7 @@ ms.locfileid: "51587692"
 
 **目前，具有工作設定檔和公司所擁有的完整管理使用者裝置註冊的個人擁有裝置可支援部署。**
 
-## <a name="add-microsoft-defender-for-endpoint-for-android-as-a-managed-google-play-app"></a>將適用于 Android 的 Microsoft Defender 端點新增為受管理的 Google Play 應用程式
+## <a name="add-microsoft-defender-for-endpoint-on-android-as-a-managed-google-play-app"></a>在 Android 上將 Microsoft Defender for Endpoint 新增為受管理的 Google Play 應用程式
 
 請遵循下列步驟，將 Microsoft Defender for Endpoint 應用程式新增至您的受管理 Google Play。
 
@@ -240,7 +240,7 @@ ms.locfileid: "51587692"
 
 ## <a name="complete-onboarding-and-check-status"></a>完成上架和支票狀態
 
-1. 按一下 [ **裝置安裝狀態**]，以確認 Android 的 Microsoft Defender 端點的安裝狀態。 驗證裝置是否顯示在這裡。
+1. 按一下 [ **裝置安裝狀態**]，以確認 Android 上 Microsoft Defender for Endpoint 的安裝狀態。 驗證裝置是否顯示在這裡。
 
     > [!div class="mx-imgBorder"]
     > ![裝置安裝狀態的影像](images/900c0197aa59f9b7abd762ab2b32e80c.png)
@@ -260,5 +260,5 @@ ms.locfileid: "51587692"
 
 
 ## <a name="related-topics"></a>相關主題
-- [Android 版適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-android.md)
-- [設定 Android 版適用於端點的 Microsoft Defender 功能](android-configure.md)
+- [Android 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md)
+- [在 Android 功能上設定 Microsoft Defender for Endpoint](android-configure.md)

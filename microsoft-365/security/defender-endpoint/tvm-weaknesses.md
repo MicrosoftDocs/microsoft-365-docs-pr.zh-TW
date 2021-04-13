@@ -1,6 +1,6 @@
 ---
 title: 組織中的漏洞-威脅和弱點管理
-description: 列出常見的漏洞和披露 (CVE) 組織中執行的軟體弱點的識別碼。 由 Microsoft Defender ATP 威脅和弱點管理功能探索。
+description: 列出常見的漏洞和披露 (CVE) 組織中執行的軟體弱點的識別碼。 由 Microsoft Defender for Endpoint 威脅和弱點管理功能探索。
 keywords: mdatp 威脅 & 漏洞管理、威脅和弱點管理、mdatp tvm 弱點頁面、透過 tvm 尋找弱點、tvm 弱點清單、tvm 中的弱點詳細資料
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 775592cd2ed9c29df79b04e07cb53efb7bea82d6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0f573b2425764876e877de44555691979a0e1fcf
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501237"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689398"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織中的漏洞-威脅和弱點管理
 

@@ -1,5 +1,5 @@
 ---
-title: 適用于 Android 的 Microsoft Defender ATP
+title: Android 上的 Microsoft Defender ATP
 ms.reviewer: ''
 description: 說明如何安裝和使用適用于 Android 的 Microsoft Defender ATP
 keywords: microsoft、defender、atp、android、安裝、部署、卸載、intune
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e2432dc4aa2c67fadc9112512a080f24c0064df4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 32c42691b3a2b43f9740da26084bf45af0ee80f5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187610"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687778"
 ---
-# <a name="microsoft-defender-for-endpoint-for-android"></a>適用于 Android 的 Microsoft Defender Endpoint
+# <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "51187610"
 > 針對 Android 的 Endpoint for Endpoint 執行其他協力廠商端點保護產品可能會造成效能問題和不可預期的系統錯誤。
 
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-for-android"></a>如何為 Android 安裝 Microsoft Defender for Endpoint
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>如何在 Android 上安裝 Microsoft Defender for Endpoint
 
 ### <a name="prerequisites"></a>必要條件
 
@@ -62,7 +62,7 @@ ms.locfileid: "51187610"
     -   存取 Microsoft Defender Security Center 入口網站。
 
         > [!NOTE]
-        > Microsoft Intune 是唯一支援的行動裝置管理 (MDM) 解決方案，可為 Android 部署 Microsoft Defender for Endpoint。 目前只有已註冊的裝置才支援在 Intune 中強制執行 Android 相關裝置相容性原則的端點。 
+        > Microsoft Intune 是唯一支援的行動裝置管理 (MDM) 解決方案，可在 Android 上部署 Microsoft Defender for Endpoint。 目前只有已註冊的裝置才支援在 Intune 中強制執行 Android 相關裝置相容性原則的端點。 
 
     -   存取 [Microsoft 端點管理員管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，將應用程式部署至組織中已註冊的使用者群組。
 
@@ -73,23 +73,23 @@ ms.locfileid: "51187610"
 
 ### <a name="installation-instructions"></a>安裝指示
 
-適用于 Android 的 Microsoft Defender Endpoint 支援在已註冊裝置的兩種模式上安裝-傳統裝置管理員和 Android 企業模式。
-**目前，在 Android Enterprise 中支援具有工作設定檔及公司所擁有的完整管理使用者裝置 enrolments 的個人擁有裝置。在準備好時，將會宣佈對其他 Android 企業模式的支援。**
+在 Android 上的 Microsoft Defender for Endpoint 支援在已註冊裝置的兩種模式上安裝-傳統裝置管理員和 Android 企業模式。
+**目前，在 Android Enterprise 中支援具有工作設定檔及公司所擁有的完整管理使用者裝置註冊的個人擁有裝置。在準備好時，將會宣佈對其他 Android 企業模式的支援。**
 
-Microsoft Intune for Android 的部署是透過 Microsoft Intune (MDM) 進行部署。
-如需詳細資訊，請參閱 [使用 Microsoft Intune 部署適用于 Android 的 Microsoft Defender For Endpoint](android-intune.md)。
+在 Android 上部署 Microsoft Defender for Endpoint 是透過 Microsoft Intune (MDM) 。
+如需詳細資訊，請參閱 [在 Android 上使用 Microsoft Intune 部署 Microsoft Defender For Endpoint](android-intune.md)。
 
 
 > [!NOTE]
-> **[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)現在已提供適用于 Android 的 Microsoft Defender 端點。** <br> 您可以從 Intune 連線到 Google，以部署 Microsoft Defender for Endpoint 應用程式、跨裝置管理員和 Android Enterprise entrollment 模式。 
+> **在 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx) 上現在可以使用 Android 上的 Microsoft Defender for Endpoint。** <br> 您可以從 Intune 連線到 Google，以部署 Microsoft Defender for Endpoint 應用程式、跨裝置管理員和 Android Enterprise entrollment 模式。 
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-for-android"></a>如何設定適用于 Android 的 Microsoft Defender for Endpoint
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>如何在 Android 上設定 Microsoft Defender for Endpoint
 
-設定適用于 android 功能的 [microsoft](android-configure.md)defender for endpoint 功能的指導方針。
+設定 android 功能上的 [microsoft](android-configure.md)defender for endpoint，可取得如何針對 android 功能設定 microsoft Defender for endpoint 功能的指導方針。
 
 
 
 ## <a name="related-topics"></a>相關主題
-- [使用 Microsoft Intune 部署 Microsoft Defender for Endpoint](android-intune.md)
-- [針對 Android 功能設定 Microsoft Defender for Endpoint 功能](android-configure.md)
+- [在 Android 上使用 Microsoft Intune 部署 Microsoft Defender for Endpoint](android-intune.md)
+- [在 Android 功能上設定 Microsoft Defender for Endpoint](android-configure.md)
 

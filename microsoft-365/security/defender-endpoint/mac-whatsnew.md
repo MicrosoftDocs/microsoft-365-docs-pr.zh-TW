@@ -1,6 +1,6 @@
 ---
 title: Mac 版端點的 Microsoft Defender 新增功能
-description: 瞭解舊版 Microsoft Defender for Mac 的主要變更。
+description: 瞭解舊版 Microsoft Defender for Mac 上版本的主要變更。
 keywords: microsoft、defender、atp、mac、安裝、macos、whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cd1f64d006b5462634dd47df9083e1a89db0e8c
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 67bbc987dc339c0e1f0354e07d6d2db8c39ec8b9
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615207"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689038"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Mac 版端點的 Microsoft Defender 新增功能
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 版端點的 Microsoft Defender 新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "51615207"
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
-- Microsoft Defender for Mac 的端點現在可供美國政府客戶預覽。 如需詳細資訊，請參閱 [適用于美國政府客戶的 Microsoft Defender For Endpoint](gov.md)。
+- 在 macOS 上的 Microsoft Defender for Endpoint 現在可供美國政府客戶預覽。 如需詳細資訊，請參閱 [適用于美國政府客戶的 Microsoft Defender For Endpoint](gov.md)。
 - 在使用 XCode 模擬器應用程式) & bug 修正時，特別針對狀況的效能增強 (
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
@@ -61,7 +61,7 @@ ms.locfileid: "51615207"
 > [!NOTE]
 > 舊的命令列工具語法已被取代，此版本已被取代。 如需新語法的詳細資訊，請參閱 [Resources](mac-resources.md#configuring-from-the-command-line)。
 
-- 新增命令列參數，以停用網路分機： `mdatp system-extension network-filter disable` 。 此命令可用於疑難排解 Microsoft Defender for Mac 可能相關的網路問題
+- 新增命令列參數，以停用網路分機： `mdatp system-extension network-filter disable` 。 此命令可用於疑難排解 Microsoft Defender for Mac 上可能相關的網路相關問題。
 - 效能 & bug 修正的增強功能
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0) 
@@ -94,7 +94,7 @@ ms.locfileid: "51615207"
 
 - 本產品版本已在 macOS 大型 Sur 11 Beta 9 上驗證
 
-- `mdatp`命令列工具的新語法現在是預設的語法。 如需新語法的詳細資訊，請參閱適用于 [Mac 的 Microsoft Defender 端點的資源](mac-resources.md#configuring-from-the-command-line)
+- `mdatp`命令列工具的新語法現在是預設的語法。 如需新語法的詳細資訊，請參閱 [macOS 上的 Microsoft Defender For Endpoint 的資源](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
   > 舊的命令列工具語法會在 **2021 年1月1日** 從產品中移除。
@@ -159,7 +159,7 @@ ms.locfileid: "51615207"
 
 ## <a name="1009027"></a>100.90.27
 
-- 您現在可以為 Mac 的 Microsoft Defender 端點 [設定更新通道](mac-updates.md#set-the-channel-name) ，該通道與系統範圍的更新通道不同
+- 您現在可以在不同于整個系統更新通道的 macOS 上，設定 Microsoft Defender for Endpoint 的 [更新通道](mac-updates.md#set-the-channel-name) 。
 - 新產品圖示
 - 其他使用者經驗增強功能
 - 錯誤修正
@@ -196,7 +196,7 @@ ms.locfileid: "51615207"
 
 ## <a name="1007942"></a>100.79.42
 
-- 已修正此問題： Mac 版端點的 Microsoft Defender 有時會干擾時間機器
+- 已修正此問題： Mac 版的 Microsoft Defender Endpoint 有時候會干擾時間機器
 - 新增切換至命令列公用程式，以測試與後端服務的連線能力
   ```bash
   mdatp connectivity test

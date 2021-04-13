@@ -1,6 +1,6 @@
 ---
-title: 疑難排解 Microsoft Defender for Mac 的性能問題
-description: 疑難排解 Microsoft Defender for Mac 中的效能問題。
+title: 疑難排解 Microsoft Defender for Endpoint on macOS 的效能問題
+description: 在 macOS 上疑難排解 Microsoft Defender for Endpoint 中的效能問題。
 keywords: microsoft、defender、atp、mac、效能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,39 +18,39 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ff93b44627cf876384522f0c4f25d22347c8661
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 18bde560543fd1344a64cf1edd64f02f12831c25
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476252"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689098"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>疑難排解 Microsoft Defender for Mac 的性能問題
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 Microsoft Defender for Endpoint on macOS 的效能問題
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用於：**
 
-- [Mac 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-本主題提供一些一般步驟，可用來縮小 Microsoft Defender for Mac 之相關的效能問題。
+本主題提供一些一般步驟，可用來縮小 macOS 上與 Microsoft Defender for Endpoint 相關的效能問題。
 
-即時保護 (RTP) 是適用于 Mac 的 Microsoft Defender 端點的功能，可持續監視和保護您的裝置免受威脅。 它包含檔案和程式監視及其他試探法。
+[！注意] 即時保護 (RTP) 是一種 macOS 上的 Microsoft Defender for Endpoint 的功能，可以持續監視和保護您的裝置免受威脅。 它包含檔案和程式監視及其他試探法。
 
-視您執行的應用程式和裝置特性而定，當您執行 Microsoft Defender for Mac 時，可能會遇到效能效能。 特別是，透過簡短的 timespan 存取許多資源的應用程式或系統進程，可能會導致 Microsoft Defender for Mac 中的效能問題。
+視您執行的應用程式和裝置特性而定，在 macOS 上執行 Microsoft Defender for Endpoint 時，可能會遇到效能效能。 特別是，透過簡短的 timespan 存取許多資源的應用程式或系統進程，可能會導致 macOS 中的端點的效能問題。
 
 下列步驟可用於疑難排解及緩解下列問題：
 
-1. 使用下列其中一種方法來停用即時保護，並觀察效能是否提高。 這種方法可協助縮小 Microsoft Defender for Mac 是否對效能問題造成的影響。
+1. 使用下列其中一種方法來停用即時保護，並觀察效能是否提高。 這種方法可協助縮小 macOS 上的 Microsoft Defender for Endpoint 是否會影響效能問題。
 
       如果您的裝置不是由您的組織管理，則可以使用下列其中一個選項停用即時保護：
 
-    - 從使用者介面。 開啟 Mac 版的 Microsoft Defender 端點，並流覽至 [ **管理設定**]。
+    - 從使用者介面。 在 macOS 上開啟 Microsoft Defender for Endpoint，然後流覽至 [ **管理設定**]。
 
       ![管理即時保護螢幕擷取畫面](images/mdatp-36-rtp.png)
 
@@ -60,7 +60,7 @@ ms.locfileid: "51476252"
       mdatp config real-time-protection --value disabled
       ```
 
-      如果您的裝置是由您的組織管理，您的系統管理員可以使用 [Microsoft Defender For Mac 的設定偏好設定](mac-preferences.md)中的指示，停用即時保護。
+      如果您的裝置是由您的組織管理，則系統管理員可以使用 [macOS 上 Microsoft Defender For Endpoint 的 [設定偏好設定](mac-preferences.md)] 中的指示來停用即時保護。
       
       如果在即時保護關閉時出現效能問題，則問題的來源可能是端點偵測和回應元件。 在此情況下，請與客戶支援部門聯繫以取得進一步的指示和緩解。
 
@@ -154,6 +154,6 @@ ms.locfileid: "51476252"
       > [!NOTE]
       > 應用程式會將統計資料儲存在記憶體中，且只會在啟動之後繼續追蹤檔活動，並啟用即時保護。 在即時保護關閉之前或期間所啟動的處理常式不會計算在內。 此外，只會計算觸發掃描的事件。
       > 
-1. 針對影響效能問題及重新啟用即時保護的處理常式或磁片位置，針對 Mac 設定 Microsoft Defender for Mac 的排除專案。
+1. 針對影響效能問題及重新啟用即時保護的處理常式或磁片位置，以排除 macOS，設定 Microsoft Defender for Endpoint on。
 
-     如需詳細資訊，請參閱 [設定及驗證 Microsoft Defender For Mac 的排除](mac-exclusions.md) 專案。
+     如需詳細資訊，請參閱 [設定及驗證 macOS 的 Microsoft Defender For Endpoint 的排除](mac-exclusions.md) 專案。

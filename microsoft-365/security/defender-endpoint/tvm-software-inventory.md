@@ -1,7 +1,7 @@
 ---
 title: 威脅和弱點管理中的軟體清查
-description: Microsoft Defender ATP 威脅和弱點管理的軟體清單頁面會顯示在軟體中偵測到多少弱點和弱點。
-keywords: 威脅及弱點管理，microsoft defender atp，microsoft defender atp 軟體清查，mdatp 威脅 & 漏洞管理，mdatp 威脅 & 弱點管理軟體庫存，mdatp tvm 軟體清查，tvm 軟體清查
+description: Microsoft Defender for Endpoint 的威脅和弱點管理的軟體清查頁面顯示軟體中偵測到多少弱點和弱點。
+keywords: 威脅和弱點管理，microsoft defender for endpoint，microsoft defender for endpoint 軟體清查，mdatp 威脅 & 漏洞管理，mdatp 威脅 & 弱點管理軟體清查，mdatp tvm 軟體清查，tvm 軟體清查
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 02d7810ef27b495e69fd6d8ca72baf40df13ee93
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a4ceb7cc4d39dbddbb4cd325491c16f4503bfc52
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500455"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689374"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>軟體清查-威脅和弱點管理
 

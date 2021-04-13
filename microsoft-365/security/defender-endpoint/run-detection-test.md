@@ -1,6 +1,6 @@
 ---
-title: 在新架的 Microsoft Defender ATP 裝置上執行偵測測試
-description: 在新架裝置上執行偵測腳本，確認已正確架至 Microsoft Defender ATP 服務。
+title: 在新架的 Microsoft Defender for Endpoint 裝置上執行偵測測試
+description: 在新架裝置上執行偵測腳本，確認已正確架至 Microsoft Defender for Endpoint service。
 keywords: 偵測測試，偵測，powershell，script，verify，上架，microsoft defender for endpoint 上架，用戶端，伺服器，測試
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 10154a734bb4c3d8b26fffb8618484aeb11f907a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 89b8ac7d99cfcd4c5e5e647e5ba54e14184ef0bd
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059308"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688114"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新架的 Microsoft Defender for Endpoint 裝置上執行偵測測試 
 
@@ -61,6 +61,6 @@ ms.locfileid: "51059308"
 [命令提示字元] 視窗將會自動關閉。 如果成功，則偵測測試會標示為已完成，並且在架裝置的入口網站中大約10分鐘會出現新的警示。
 
 ## <a name="related-topics"></a>相關主題
-- [板載 Windows 10 裝置](configure-endpoints.md)
+- [將 Windows 10 裝置上線](configure-endpoints.md)
 - [上架伺服器](configure-server-endpoints.md)
 - [疑難排解 Microsoft Defender 的端點上架問題](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

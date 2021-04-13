@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d4bc095a9fbc0b9cd166d3133ed291a2c8c01da
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 6bf9691f390173ec86dcadd19707c980aa66336f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615420"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687766"
 ---
-# <a name="microsoft-defender-for-endpoint-for-ios"></a>iOS 版適用於端點的 Microsoft Defender
+# <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51615420"
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-適用于 **iOS 的 Microsoft Defender for** a，可提供網站、電子郵件及應用程式的網路釣魚和不安全網路連線防護。 所有提醒都會透過 Microsoft Defender Security Center 中的單一玻璃窗格獲得。 入口網站讓安全性小組能夠集中查看 iOS 裝置上的威脅及其他平臺。
+**IOS 上的 Microsoft Defender For Endpoint** 會提供保護，以防範來自網站、電子郵件和應用程式的網路釣魚和不安全網路連線。 所有提醒都會透過 Microsoft Defender Security Center 中的單一玻璃窗格獲得。 入口網站讓安全性小組能夠集中查看 iOS 裝置上的威脅及其他平臺。
 
 > [!CAUTION]
 > 對 iOS 執行其他協力廠商端點保護產品及 Defender for Endpoint，都可能會造成效能問題和不可預期的系統錯誤。
@@ -58,7 +58,7 @@ ms.locfileid: "51615420"
 - 存取 Microsoft Defender Security Center 入口網站。
 
     > [!NOTE]
-    > Microsoft Intune 是唯一支援的行動裝置管理 (MDM) 方案，可為 iOS 部署 Microsoft Defender for Endpoint。 目前只有已註冊的裝置才支援在 Intune 中強制執行 iOS 相關裝置規範原則的端點。
+    > Microsoft Intune 是唯一支援的行動裝置管理 (MDM) 方案，可在 iOS 上部署 Microsoft Defender for Endpoint。 目前只有已註冊的裝置才支援在 Intune 中強制執行 iOS 相關裝置規範原則的端點。
 
 - 存取 [Microsoft 端點管理員管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，將應用程式部署至組織中已註冊的使用者群組。
 
@@ -73,16 +73,16 @@ ms.locfileid: "51615420"
 
 ## <a name="installation-instructions"></a>安裝指示
 
-透過 Microsoft Intune (MDM) 部署 Microsoft Defender for iOS，並支援受監視和 unsupervised 裝置。
-如需詳細資訊，請參閱為 [IOS 部署 Microsoft Defender For Endpoint](ios-install.md)。
+在 iOS 上部署 Microsoft Defender for Endpoint 是透過 Microsoft Intune (MDM) ，且支援受監視和 unsupervised 裝置。
+如需詳細資訊，請參閱 [在 iOS 上部署 Microsoft Defender For Endpoint](ios-install.md)。
 
 ## <a name="resources"></a>資源
 
-- 透過為 iOS 或我們的博客[取得 Microsoft Defender For Endpoint 的新功能](ios-whatsnew.md)，以瞭解即將[](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)推出的版本。
+- 在 iOS 或我們的[博客](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)上，造訪[Microsoft Defender for Endpoint 中的新功能](ios-whatsnew.md)，以瞭解即將推出的版本。
 
 - 透過應用程式內的意見反應系統或透過[SecOps 入口網站](https://securitycenter.microsoft.com)提供意見反應
 
 ## <a name="next-steps"></a>後續步驟
 
-- [為 iOS 部署 Microsoft Defender for Endpoint](ios-install.md)
-- [設定 iOS 功能端點的 Microsoft Defender](ios-configure-features.md)
+- [在 iOS 上部署 Microsoft Defender for Endpoint](ios-install.md)
+- [在 iOS 功能上設定 Microsoft Defender for Endpoint](ios-configure-features.md)

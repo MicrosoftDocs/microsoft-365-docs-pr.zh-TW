@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender ATP 中回應 web 威脅
+title: 在 Microsoft Defender for Endpoint 中回應 web 威脅
 description: 回應與惡意網站和有害網站相關的提醒。 瞭解網頁威脅防護如何透過網頁瀏覽器和 Windows 通知通知使用者
 keywords: web 保護，網頁威脅防護，網頁流覽，警示，回應，安全性，網路釣魚，惡意程式碼，exploit，網站，網路保護，Edge，Internet Explorer，Chrome，Firefox，網頁瀏覽器，通知，使用者，Windows 通知，封鎖頁面
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b0e6bb0d71c14bf7742f8d6508fbb95b76b10a34
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 110b379863b4c6e23c947c56faf831e136231237
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498361"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688474"
 ---
 # <a name="respond-to-web-threats"></a>回應 Web 威脅
 

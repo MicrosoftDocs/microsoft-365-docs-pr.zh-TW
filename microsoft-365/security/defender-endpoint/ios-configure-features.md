@@ -1,5 +1,5 @@
 ---
-title: 設定 iOS 功能端點的 Microsoft Defender
+title: 在 iOS 功能上設定 Microsoft Defender for Endpoint
 description: 說明如何部署 Microsoft Defender ATP 以取得 iOS 功能
 keywords: microsoft，defender，atp，ios，設定，功能，ios
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8f74d4799bcb02051cddd09b80ed6ab50258302b
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 0e351f6500d5076e724653d0fde1940592dd1ae5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587224"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687482"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-for-ios-features"></a>設定 iOS 功能端點的 Microsoft Defender
+# <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上設定 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51587224"
 > IOS 的 Defender for the 會使用 VPN，以便提供 Web 保護功能。 這不是一般 VPN，也就是本機/自我迴圈的 VPN，不會對裝置以外的流量進行流量。
 
 ## <a name="conditional-access-with-defender-for-endpoint-for-ios"></a>使用 iOS 之 Defender for Endpoint 的條件式存取  
-Microsoft Defender for iOS 與 Microsoft Intune 和 Azure Active Directory 可根據裝置風險層級強制實施裝置合規性和條件式存取原則。 Defender for Endpoint 是行動威脅防護 (MTD) 解決方案，您可以透過 Intune 部署此功能，以利用這項功能。
+Microsoft Defender for Endpoint on iOS 搭配 Microsoft Intune 和 Azure Active Directory 可根據裝置風險層級強制實施裝置規範和條件式存取原則。 Defender for Endpoint 是行動威脅防護 (MTD) 解決方案，您可以透過 Intune 部署此功能，以利用這項功能。
 
 如需如何設定 iOS 的使用 Defender for Endpoint 的條件式存取的相關資訊，請參閱 [Defender For endpoint And Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)。
 
@@ -68,7 +68,7 @@ Apple iOS 不支援多個全裝置的 Vpn 同時作用中。 雖然裝置上可�
 為了保護公司資料無法在已越獄的 iOS 裝置上存取，我們建議您在 Intune 上設定下列符合性原則。
 
 > [!NOTE]
-> 在此情況下，iOS 的 Microsoft Defender for Endpoint 不會針對 jailbreak 案例提供防護。 若在已越獄的裝置上使用，則在特定案例中，如您公司的電子郵件識別碼及公司設定檔圖片，該應用程式所使用的資料會 (如果可以在本機公開可用) 
+> 在此時間，iOS 上的 Microsoft Defender for Endpoint 不會針對 jailbreak 案例提供防護。 若在已越獄的裝置上使用，則在特定案例中，如您公司的電子郵件識別碼及公司設定檔圖片，該應用程式所使用的資料會 (如果可以在本機公開可用) 
 
 請遵循下列步驟，建立對已越獄裝置的相容性原則。
 

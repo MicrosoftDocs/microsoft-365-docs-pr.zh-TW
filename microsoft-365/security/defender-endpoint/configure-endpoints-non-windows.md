@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c292c57c179a832728b03a7fc94fb7085d3ea0ec
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 71f230f557792d75659dc4dbfc5911811514d5ea
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166074"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687874"
 ---
-# <a name="onboard-non-windows-devices"></a>板載非 Windows 裝置
+# <a name="onboard-non-windows-devices"></a>將非 Windows 裝置上線
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,23 +41,20 @@ ms.locfileid: "51166074"
 Defender for Endpoint 提供 Windows 和非 Windows 平臺的集中式安全性作業體驗。 您可以在 Microsoft Defender Security Center 中查看不同支援作業系統 (OS) 中的警示，並更好地保護組織的網路。 
 
 您將需要知道與 distros 的 Defender for Endpoint 相容的確切 Linux 和 macOS 版本，以供整合運作。 如需詳細資訊，請參閱：
-- [適用于 Linux 系統需求的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md#system-requirements)  
-- [Mac 系統需求的 Microsoft Defender 端點](microsoft-defender-endpoint-mac.md#system-requirements)。
+- [Linux 系統需求上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md#system-requirements)  
+- [MacOS 系統需求上的 Microsoft Defender For Endpoint](microsoft-defender-endpoint-mac.md#system-requirements)。
 
 ## <a name="onboarding-non-windows-devices"></a>上架非 Windows 裝置
 您必須對板載非 Windows 裝置採取下列步驟：
 1. 選取您慣用的上架方式：
 
-   - 若為 macOS 裝置，您可以選擇透過 Microsoft Defender ATP 或透過協力廠商解決方案進行板載。 如需詳細資訊，請參閱 [Microsoft Defender For Mac 的 Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)。
+   - 若為 macOS 裝置，您可以選擇透過 Microsoft Defender ATP 或透過協力廠商解決方案進行板載。 如需詳細資訊，請參閱 [Microsoft Defender For Mac 的 Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
+
    - 如果是其他非 Windows 裝置，請 **透過協力廠商整合選擇板載非 Windows 裝置**。   
-       
-     1. 在功能窗格中，選取 [**互通性**  >  **夥伴**]。 請確定已列出協力廠商解決方案。
-
-        2. 在 [ **夥伴應用程式** ] 索引標籤中，選取支援非 Windows 裝置的合作夥伴。
-
-        3. 選取 [ **開啟夥伴頁面** ] 以開啟夥伴的頁面。 依照頁面上提供的指示進行。
-
-        4. 建立帳戶或訂閱夥伴解決方案之後，您應該會進入一個階段，您的組織中的承租人全域管理員要求接受來自夥伴應用程式的許可權要求。 請仔細閱讀許可權要求，確定它已與您所需的服務對齊。 
+    1. 在功能窗格中，選取 [**互通性**  >  **夥伴**]。 請確定已列出協力廠商解決方案。
+    2. 在 [ **夥伴應用程式** ] 索引標籤中，選取支援非 Windows 裝置的合作夥伴。
+    3. 選取 [ **開啟夥伴頁面** ] 以開啟夥伴的頁面。 依照頁面上提供的指示進行。
+    4. 建立帳戶或訂閱夥伴解決方案之後，您應該會進入一個階段，您的組織中的承租人全域管理員要求接受來自夥伴應用程式的許可權要求。 請仔細閱讀許可權要求，確定它已與您所需的服務對齊。 
 
         
 2. 遵循協力廠商解決方案的指示執行偵測測試。
@@ -74,7 +71,7 @@ Defender for Endpoint 提供 Windows 和非 Windows 平臺的集中式安全性�
 
 
 ## <a name="related-topics"></a>相關主題
-- [板載 Windows 10 裝置](configure-endpoints.md)
+- [將 Windows 10 裝置上線](configure-endpoints.md)
 - [上架伺服器](configure-server-endpoints.md)
-- [設定 proxy 和網際網路連線設定](configure-proxy-internet.md)
+- [設定 Proxy 和網際網路連接設定](configure-proxy-internet.md)
 - [疑難排解 Microsoft Defender 的端點上架問題](troubleshoot-onboarding.md)

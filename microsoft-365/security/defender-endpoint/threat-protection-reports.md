@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 中的威脅防護報告
+title: Microsoft Defender for Endpoint 中的威脅防護報告
 description: 使用威脅防護報告追蹤警示偵測、類別和嚴重性
 keywords: 警示偵測、來源、警示（依類別、警示嚴重性、警示分類、判斷）
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4ecd2df31e1e03da5134d3d4180dcba75d3cee26
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d32ab04f4acda60f65316719a4607c6c9bbd6447
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183834"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688978"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的威脅防護報告
 
@@ -44,7 +44,7 @@ ms.locfileid: "51183834"
 區段 | 說明 
 :---|:---
 1 | 警示趨勢
-2  | 警示摘要
+第 | 警示摘要
 
 ## <a name="alert-trends"></a>警示趨勢
 根據預設，警示趨勢會顯示30天期間的警示資訊，最後一整天結束。 若要深入瞭解組織中發生的趨勢，您可以調整顯示的時段，以微調報告期間。 若要調整時段，請從下拉式選項中選取時間範圍：

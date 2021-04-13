@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender ATP 中對裝置採取回應動作
+title: 在 Microsoft Defender for Endpoint 中對裝置採取回應動作
 description: 在裝置（例如隔離裝置、收集調查套件、管理標記、執行 av 掃描及限制應用程式執行）上採取回應動作。
 keywords: 回應、隔離、隔離裝置、收集調查套件、動作中心、限制、管理標記、av 掃描、限制應用程式
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f918d1673ef8a83c54f365dd06406c33bcc4d983
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f538bd33ad2f595aa9b3dafa8a13a5682161b52f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056767"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688318"
 ---
 # <a name="take-response-actions-on-a-device"></a>在裝置上採取回應動作
 
@@ -36,11 +36,11 @@ ms.locfileid: "51056767"
 
 回應動作會沿著特定裝置頁面的頂端執行，並包含：
 
-- 管理標記
+- 管理標籤
 - 啟動自動調查
 - 啟動 Live Response Session
 - 收集調查套件
-- 執行防病毒掃描
+- 執行防毒掃描
 - 限制應用程式執行
 - 隔離裝置
 - 諮詢威脅專家
@@ -59,7 +59,7 @@ ms.locfileid: "51056767"
 > - 這些回應動作只適用于 Windows 10 版本1703或更新版本上的裝置。 
 > - 針對非 Windows 平臺，回應功能 (例如裝置隔離) 取決於協力廠商功能。
 
-## <a name="manage-tags"></a>管理標記
+## <a name="manage-tags"></a>管理標籤
 
 新增或管理標記以建立邏輯群組從屬關係。 裝置標記支援正確的網路對應，可讓您附加不同的標記以捕獲內容，並在事件中啟用動態清單建立。
 
@@ -159,7 +159,7 @@ Live response 的設計目的是讓您可以收集法律調查資料、執行腳
 
 ![應用程式限制的影像](images/atp-app-restriction.png)
 
-## <a name="isolate-devices-from-the-network"></a>從網路隔離裝置
+## <a name="isolate-devices-from-the-network"></a>將裝置與網路隔離
 
 根據攻擊的嚴重性和裝置的靈敏度，您可能想要將裝置與網路隔離。 此巨集指令可協助防止攻擊者控制已遭破壞的裝置，以及執行其他活動，例如資料 exfiltration 及橫向移動。
 
@@ -193,7 +193,7 @@ Live response 的設計目的是讓您可以收集法律調查資料、執行腳
 如需詳細資訊，請參閱查看 [Microsoft 威脅專家](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 。
 
 
-## <a name="check-activity-details-in-action-center"></a>檢查重要訊息中心的活動詳細資料
+## <a name="check-activity-details-in-action-center"></a>檢查控制中心的活動詳細資料
 
 「 **行動中心** 」提供對裝置或檔案所採取動作的資訊。 您將可以查看下列詳細資料：
 

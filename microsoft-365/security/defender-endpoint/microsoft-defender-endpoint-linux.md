@@ -1,5 +1,5 @@
 ---
-title: Linux 版適用於端點的 Microsoft Defende
+title: Linux 上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 說明如何安裝及使用 Microsoft Defender ATP for Linux。
 keywords: microsoft，defender，atp，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc2f5be700395f6d88c05481d74501f4d9d92b76
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0fea9d4dd46be2a77ea27728787a43b5273f92f5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500680"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687754"
 ---
-# <a name="microsoft-defender-for-endpoint-for-linux"></a>Linux 版適用於端點的 Microsoft Defende
+# <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,14 +36,14 @@ ms.locfileid: "51500680"
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-本主題說明如何針對 Linux 安裝、設定、更新及使用 Microsoft Defender for Endpoint。
+本主題說明如何在 Linux 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Microsoft Defender for Linux 中執行其他協力廠商端點保護產品時，可能會造成效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以 [被動式模式](linux-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以安全地利用適用于 Linux EDR 功能的 Defender。
+> 在 Linux 上執行其他協力廠商端點保護產品及 Microsoft Defender for Endpoint 時，可能會造成效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以 [被動式模式](linux-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以安全地利用適用于 Linux EDR 功能的 Defender。
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>如何為 Linux 安裝 Microsoft Defender for Endpoint
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安裝 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 - 存取 Microsoft Defender 安全中心入口網站
 - 使用 [systemd](https://systemd.io/) 系統管理員的 Linux 發行
@@ -52,19 +52,19 @@ ms.locfileid: "51500680"
 
 ### <a name="installation-instructions"></a>安裝指示
 
-您可以使用數種方法和部署工具，為 Linux 安裝和設定 Microsoft Defender for Endpoint。
+您可以使用數種方法和部署工具，在 Linux 上安裝及設定 Microsoft Defender for Endpoint。
 
 一般說來，您必須採取下列步驟：
 
 - 確定您有 Microsoft Defender for Endpoint 訂閱，且您可以存取 [Microsoft defender For endpoint 入口網站](microsoft-defender-security-center.md)。
-- 使用下列其中一個部署方法，為 Linux 部署 Microsoft Defender for Linux：
+- 使用下列其中一個部署方法，在 Linux 上部署 Microsoft Defender for Endpoint：
   - 命令列工具：
     - [手動部署](linux-install-manually.md)
   - 協力廠商管理工具：
     - [使用 Puppet 建構管理工具進行部署](linux-install-with-puppet.md)
     - [使用 Ansible 建構管理工具進行部署](linux-install-with-ansible.md)
 
-如果您遇到任何安裝失敗，請參閱 [Microsoft Defender For Linux 中的疑難排解安裝失敗](linux-support-install.md)。
+如果您遇到任何安裝失敗問題，請參閱在 [Linux 上的 Microsoft Defender For Endpoint 中的安裝失敗疑難排解](linux-support-install.md)。
 
 ### <a name="system-requirements"></a>系統需求
 
@@ -111,7 +111,7 @@ ms.locfileid: "51500680"
 
 - 必須啟用審核架構 (`auditd`) 。
   > [!NOTE]
-  > 新增至的規則所捕獲的系統事件 `/etc/audit/rules.d/` 會新增至 `audit.log` (s) ，而且可能會影響主機審核和上游集合。 Microsoft Defender for Linux 所新增的事件將會以 `mdatp` 金鑰標示。
+  > 新增至的規則所捕獲的系統事件 `/etc/audit/rules.d/` 會新增至 `audit.log` (s) ，而且可能會影響主機審核和上游集合。 在 Linux 上由 Microsoft Defender for Endpoint 新增的事件將會以 `mdatp` 金鑰標示。
 
 ### <a name="network-connections"></a>網路連線
 
@@ -133,17 +133,17 @@ ms.locfileid: "51500680"
 > [!WARNING]
 > 不支援 PAC、WPAD 及已驗證的 proxy。 確定只使用靜態 proxy 或透明 proxy。
 >
-> 出於安全性原因，也不支援 SSL 檢查和截取 proxy。 設定 SSL 檢查和 proxy 伺服器的例外狀況，以直接透過來自 Linux 的 Defender 的資料傳遞至相關的 URLs，而不需截獲。 將您的截取憑證新增至全域存放區將不允許截取。
+> 出於安全性原因，也不支援 SSL 檢查和截取 proxy。 設定 SSL 檢查和 proxy 伺服器的例外狀況，以直接將來自 Linux 之 Defender 的資料傳遞至相關的 URLs，而不需截獲。 將您的截取憑證新增至全域存放區將不允許截取。
 
-如需疑難排解步驟，請參閱 [疑難排解 Microsoft Defender for a For Linux 之 cloud connectivity connectivity 的問題](linux-support-connectivity.md)。
+如需疑難排解步驟，請參閱 [疑難排解 Microsoft Defender for a For Endpoint On Linux 上的 cloud connectivity connectivity 問題](linux-support-connectivity.md)。
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-for-linux"></a>如何為 Linux 更新 Microsoft Defender for Endpoint
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上更新 Microsoft Defender for Endpoint
 
-Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供新功能。 若要更新 Microsoft Defender for Linux，請參閱為 [Linux 部署 Microsoft defender For endpoint 的更新](linux-updates.md)。
+Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供新功能。 若要在 Linux 上更新 Microsoft Defender for Endpoint，請參閱 [在 linux 上為 Microsoft defender For Endpoint 部署更新](linux-updates.md)。
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-for-linux"></a>如何為 Linux 設定 Microsoft Defender for Endpoint
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上設定 Microsoft Defender for Endpoint
 
-有關如何在企業環境中設定產品的指引，可在 [設定 Microsoft Defender For Linux 的首選項中取得](linux-preferences.md)。
+有關如何在企業環境中設定產品的指引，可在 [Linux 上的 Microsoft Defender For Endpoint 的 [設定偏好設定](linux-preferences.md)] 中取得。
 
 ## <a name="resources"></a>資源
 

@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6e65e847403160d24eac04a553ca16a46314e33d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cf61c6a501a53ac03d3c4cc28068f7af4c0f88d6
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187418"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688102"
 ---
-# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-for-mac"></a>使用 Microsoft Defender for Mac 偵測和封鎖可能有害的應用程式
+# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用 Microsoft Defender for Endpoint 偵測並封鎖可能有害的應用程式
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51187418"
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Microsoft Defender for Mac 中可能有害的應用程式 (PUA) 保護功能可偵測並封鎖您網路中端點上的 PUA 檔案。
+MacOS 上的 Microsoft Defender for Endpoint (PUA) 保護功能可偵測並封鎖您網路中端點上的 PUA 檔案。
 
 這些應用程式不會被視為病毒、惡意程式碼或其他類型的威脅，但是可能會對對其效能或使用不良影響的端點執行動作。 PUA 也可以參考被視為具有不良信譽的應用程式。
 
@@ -44,13 +44,13 @@ Microsoft Defender for Mac 中可能有害的應用程式 (PUA) 保護功能可�
 
 ## <a name="how-it-works"></a>運作方式
 
-Microsoft Defender for Mac 可以偵測並報告 PUA 檔案。 當以封鎖模式設定時，PUA 檔案會移至隔離區。
+MacOS 上的 Microsoft Defender for Endpoint 可以偵測及報告 PUA 檔案。 當以封鎖模式設定時，PUA 檔案會移至隔離區。
 
-在端點上偵測到 PUA 時，Mac 版端點的 Microsoft Defender 會向使用者呈現通知，除非已停用通知。 威脅名稱會包含 "Application" 一詞。
+當在端點上偵測到 PUA 時，macOS 上的 Microsoft Defender for Endpoint 會向使用者呈現通知，除非已停用通知。 威脅名稱會包含 "Application" 一詞。
 
 ## <a name="configure-pua-protection"></a>設定 PUA 保護
 
-您可以採用下列其中一種方式，設定 Microsoft Defender for Mac 中的 PUA 保護：
+您可以透過下列其中一種方式，設定 macOS 的 Microsoft Defender for Endpoint 中的 PUA 保護：
 
 - **Off**：已停用 PUA 保護。
 - **Audit**： PUA files 會在產品記錄中報告，但不會在 Microsoft Defender Security Center 中報告。 使用者不會呈現任何通知，產品也不會採取任何動作。
@@ -71,8 +71,8 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>使用管理主控台來設定 PUA 保護：
 
-在您的企業中，您可以從管理主控台（如 JAMF 或 Intune）設定 PUA 防護，類似于設定其他產品設定的方式。 如需詳細資訊，請參閱[Microsoft Defender For Mac 的首選項設定](mac-preferences.md)的[威脅類型設定](mac-preferences.md#threat-type-settings)區段主題。
+在您的企業中，您可以從管理主控台（如 JAMF 或 Intune）設定 PUA 防護，類似于設定其他產品設定的方式。 如需詳細資訊，請參閱[macOS 主題上的 Microsoft Defender For Endpoint 的 Set 喜好設定](mac-preferences.md)中的[威脅類型設定](mac-preferences.md#threat-type-settings)一節。
 
 ## <a name="related-topics"></a>相關主題
 
-- [設定 Mac 的 Microsoft Defender 端點偏好設定](mac-preferences.md)
+- [在 macOS 上設定 Microsoft Defender for Endpoint 的喜好設定](mac-preferences.md)

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Linux 中的新功能
-description: Microsoft Defender ATP for Linux 的主要變更清單。
+title: Linux 上的 Microsoft Defender for Endpoint 中的新功能
+description: 在 Linux 上的 Microsoft Defender ATP 主要變更清單。
 keywords: microsoft，defender，atp，linux，whatsnew，發行
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7a55d254c20506913d0995bffc941a67bb34a38e
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 2866cd0c9ee9b40aa9c08c4ff7dce64f745d3d03
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615432"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688628"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Linux 中的新功能
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 中的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 
 
-- Microsoft Defender for Linux 的端點現在可供美國政府客戶預覽。 如需詳細資訊，請參閱 [適用于美國政府客戶的 Microsoft Defender For Endpoint](gov.md)。
-- 已修正此問題：在具有保險絲檔案系統的系統上使用 Linux 的 Microsoft Defender 端點時，作業系統會懸掛
+- 在 Linux 上的 Microsoft Defender for Endpoint 現在可供美國政府客戶預覽。 如需詳細資訊，請參閱 [適用于美國政府客戶的 Microsoft Defender For Endpoint](gov.md)。
+- 已修正此問題：在具有保險絲檔案系統的系統上，使用 Linux 上的端點的使用方式會導致作業系統掛起
 - 其他錯誤修正 & 的效能增強功能
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0) 

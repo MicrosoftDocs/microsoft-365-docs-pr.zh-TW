@@ -1,6 +1,6 @@
 ---
 title: Stream Microsoft Defender for Endpoint 事件
-description: 瞭解如何設定 Microsoft Defender ATP，以將高級搜尋事件傳輸至事件中心或 Azure 儲存體帳戶
+description: 瞭解如何設定 Microsoft Defender for Endpoint to stream Advanced 搜尋事件至事件中心或 Azure 儲存體帳戶
 keywords: 原始資料匯出，流式 API，API，事件中心，Azure 儲存體，儲存體帳戶，高級搜尋，原始資料共用
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 22f4e4c974b60e291273eb9bebfa34583f4e2fb7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f6a45629d610ea3cc3ca7d517021a215b72b1439
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058184"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688750"
 ---
 # <a name="raw-data-streaming-api"></a>原始資料流程式處理 API
 

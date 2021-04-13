@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: c1f7b67bb49aff8d6656798d80636d9de5858877
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7d1dc1af6e845ccfe2fb0e8f5701a2cd3018c308
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165834"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687528"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>在 Microsoft Viva 主題中建立新的主題
 
@@ -42,82 +42,77 @@ ms.locfileid: "51165834"
 
 您可以從兩個位置建立新的主題：
 
-- 主題中心首頁：具有 **可建立或編輯主題** 許可權 (參與者的任何授權使用者) 可以從主題中心建立新的主題，方法是選取 [ <b>新增</b> ] 功能表，然後選取 [ <b>主題] 頁面</b>。</br> 
+- 主題中心首頁：具有 **可建立或編輯主題** 許可權 (參與者的任何授權使用者) 可以從主題中心建立新的主題，方法是選取 [ **新增** ] 功能表，然後選取 [ **主題] 頁面**。 
 
-    ![主題中心的新主題](../media/knowledge-management/new-topic.png) </br> 
+    ![主題中心的新主題](../media/knowledge-management/new-topic.png)  
 
-- 「管理主題」頁面：任何有 **權管理主題** 許可權的授權使用者 (知識管理員) 可以從主題中心的 [管理主題] 頁面，選取 [ <b>新增主題] 頁面</b>，以建立新的主題。</br> 
+- 「管理主題」頁面：任何有 **權管理主題** 許可權的授權使用者 (知識管理員) 可以從主題中心的 [管理主題] 頁面，選取 [ **新增主題] 頁面**，以建立新的主題。 
 
-    ![管理主題中的新主題](../media/knowledge-management/new-topic-topic-center.png) </br> 
+    ![管理主題中的新主題](../media/knowledge-management/new-topic-topic-center.png)  
 
 ### <a name="to-create-a-new-topic"></a>若要建立新的主題：
 
 1. 從 [管理主題] 頁面上的功能區中，選取用來建立新主題頁面的選項。
 
-2.   在 [ **名稱這個主題** ] 區段中，輸入新主題的名稱。
+2.  在 [ **名稱這個主題** ] 區段中，輸入新主題的名稱。
 
-    ![名稱本主題](../media/knowledge-management/k-new-topic-page.png) </br> 
+    ![名稱本主題](../media/knowledge-management/k-new-topic-page.png)  
 
+3. 在 [ **替代名稱** ] 區段中，輸入該主題可能參考的任何其他名稱。 
 
-3. 在 [ <b>替代名稱</b> ] 區段中，輸入該主題可能參考的任何其他名稱。 
+    ![替代名稱](../media/knowledge-management/alt-names.png)  
 
-    ![替代名稱](../media/knowledge-management/alt-names.png) </br> 
-4. 在 [ <b>描述</b> ] 區段中，輸入一些描述主題的句子。 
+4. 在 [ **描述** ] 區段中，輸入一些描述主題的句子。 
 
-    ![主題的描述](../media/knowledge-management/description.png)</br>
+    ![主題的描述](../media/knowledge-management/description.png)
 
-4. 在 [ <b>固定人員</b> ] 區段中，您可以「固定」人員，將其顯示為與主題的連線 (例如，連接資源的擁有者) 。 請先在 [ <b>新增使用者</b> ] 方塊中輸入他們的名稱或電子郵件地址，然後從搜尋結果中選取您要新增的使用者。 您也可以從使用者卡片上選取 [ <b>從清單移除</b> ] 圖示來「解除固定」。 您也可以拖曳人員，以變更人員清單的顯示順序。
+4. 在 [ **固定人員** ] 區段中，您可以「固定」人員，將其顯示為與主題的連線 (例如，連接資源的擁有者) 。 請先在 [ **新增使用者** ] 方塊中輸入他們的名稱或電子郵件地址，然後從搜尋結果中選取您要新增的使用者。 您也可以從使用者卡片上選取 [ **從清單移除** ] 圖示來「解除固定」。 您也可以將人員拖曳到清單中的另一個位置。
  
-    ![固定人員](../media/knowledge-management/pinned-people.png)</br>
+    ![固定人員](../media/knowledge-management/pinned-people.png)
 
+5. 在 [ **附加的檔案與頁面** ] 區段中，您可以新增或「固定」與主題相關聯的檔案或 SharePoint 網站] 頁面。
 
-5. 在 [ <b>附加的檔案與頁面</b> ] 區段中，您可以新增或「固定」與主題相關聯的檔案或 SharePoint 網站] 頁面。
-
-   ![釘選的檔案和頁面](../media/knowledge-management/pinned-files-and-pages.png)</br>
+   ![釘選的檔案和頁面](../media/knowledge-management/pinned-files-and-pages.png)
  
-    若要新增檔案，請選取 [ <b>新增</b>]，選取您經常或已追蹤網站的 SharePoint 網站，然後從網站的文件庫中選取檔案。
+    若要新增檔案，請選取 [ **新增**]，選取您經常或已追蹤網站的 SharePoint 網站，然後從網站的文件庫中選取檔案。
 
-    您也可以透過提供 URL，使用 [ <b>發件</b> 人] 中的 [連結] 選項來新增檔或頁面。 
+    您也可以透過提供 URL，使用 [ **發件** 人] 中的 [連結] 選項來新增檔或頁面。 
 
     > [!Note] 
     > 您新增的檔案和頁面必須位於相同的 Microsoft 365 租使用者內。 如果您想要在主題中新增外部資源的連結，您可以透過步驟8中的 canvas 圖示加以新增。
 
 
-6.  [ <b>相關網站</b> ] 區段會顯示網站，其中包含主題的相關資訊。 
+6.  [ **相關網站** ] 區段會顯示網站，其中包含主題的相關資訊。 
 
-    ![相關網站區段](../media/knowledge-management/related-sites.png)</br>
+    ![相關網站區段](../media/knowledge-management/related-sites.png)
 
-    您可以選取 [ <b>新增</b> ]，然後搜尋網站，或從您經常或最近的網站清單中進行選取，以新增相關的網站。</br>
+    您可以選取 [ **新增** ]，然後搜尋網站，或從您經常或最近的網站清單中進行選取，以新增相關的網站。
     
-    ![選取網站](../media/knowledge-management/sites.png)</br>
+    ![選取網站](../media/knowledge-management/sites.png)
 
-7. [ <b>相關主題</b> ] 區段會顯示主題之間存在的連線。 您可以選取 [ <b>連線至相關主題]</b> 按鈕，然後輸入相關主題的名稱，然後再從搜尋結果中進行選取，以新增與其他主題的連接。 
+7. [ **相關主題** ] 區段會顯示主題之間存在的連線。 您可以選取 [ **連線至相關主題]** 按鈕，然後輸入相關主題的名稱，然後再從搜尋結果中進行選取，以新增與其他主題的連接。 
 
-   ![相關主題](../media/knowledge-management/related-topic.png)</br>  
+   ![相關主題](../media/knowledge-management/related-topic.png)  
 
-    您可以接著提供相關主題的相關描述，然後選取 [ <b>更新</b>]。</br>
+    您可以接著提供相關主題的相關描述，然後選取 [ **更新**]。
 
-   ![相關主題描述](../media/knowledge-management/related-topics-update.png)</br> 
+   ![相關主題描述](../media/knowledge-management/related-topics-update.png) 
 
    您新增的相關主題會顯示為連線的主題。
 
-   ![連線的相關主題](../media/knowledge-management/related-topics-final.png)</br> 
+   ![連線的相關主題](../media/knowledge-management/related-topics-final.png) 
 
-   若要移除相關主題，請選取您要移除的主題，然後選取 <b>移除主題</b> 圖示。</br>
+   若要移除相關主題，請選取您要移除的主題，然後選取 **移除主題** 圖示。
  
-   ![移除相關主題](../media/knowledge-management/remove-related.png)</br>  
+   ![移除相關主題](../media/knowledge-management/remove-related.png)  
 
-   然後選取 [ <b>移除</b>]。</br>
+   然後選取 [ **移除**]。
 
-   ![確認移除](../media/knowledge-management/remove-related-confirm.png)</br> 
-     
- 
-
+   ![確認移除](../media/knowledge-management/remove-related-confirm.png) 
 
 8. 您也可以選取 [畫布] 圖示，將靜態專案新增至頁面 (例如文字、圖像或連結) ，您可以在簡短描述下方找到該圖示。 選取它會開啟 SharePoint 工具箱，您可以從中選擇要新增至頁面的專案。
 
-   ![畫布圖示](../media/knowledge-management/webpart-library.png)</br> 
-
+   ![畫布圖示](../media/knowledge-management/webpart-library.png) 
 
 9. 選取 [ **發佈** ] 以儲存變更。 
 

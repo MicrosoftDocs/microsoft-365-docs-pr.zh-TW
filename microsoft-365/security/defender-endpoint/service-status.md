@@ -1,6 +1,6 @@
 ---
-title: 檢查 Microsoft Defender ATP 服務健康情況
-description: 檢查 [Microsoft Defender ATP service health]，查看服務是否發生問題，並檢查先前已解決的問題。
+title: 檢查 Microsoft Defender for Endpoint service health
+description: 檢查 Microsoft Defender for Endpoint service health，查看服務是否發生問題，並檢查先前已解決的問題。
 keywords: 儀表板、服務、問題、服務健康情況、目前狀態、狀態史、影響摘要、初始根本原因、解析度、解決時間、預期的解決時間
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45782fcce51e15adf61757d836d313d229558571
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b4545daace5df1a1a9c6e827f7d8f1b522a690c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058700"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687622"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>檢查 Microsoft Defender for Endpoint service health
 

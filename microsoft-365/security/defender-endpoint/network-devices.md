@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: 43ade52e18ffc8e5db890cb0776090e9b32419e2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657037"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687670"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>網路設備探索和弱點管理
 
@@ -97,7 +97,7 @@ ms.locfileid: "51657037"
     - login.microsoftonline.com
     - * blob.core.windows.net/networkscannerstable/*
 
-    附注：並非所有的 URLs 在已記錄端點的 Endpoint 記錄清單中指定允許的資料收集。
+    附注：並非所有 URLs 都是在 Defender for Endpoint 記錄的資料收集清單中指定的。
 
 ## <a name="permissions"></a>權限
 

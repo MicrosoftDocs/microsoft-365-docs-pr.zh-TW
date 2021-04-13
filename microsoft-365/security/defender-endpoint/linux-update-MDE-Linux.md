@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4c2e4d80628dab40de9e99abb27237176b9f171
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a967333a58f74938ea70e32e0c48d2decb597e98
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057495"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688798"
 ---
-# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>排程 Microsoft Defender for Endpoint (Linux) 的更新
+# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>為於端點的 Microsoft Defender 排程更新 (Linux)
 
-若要在 Microsoft Defender for Linux 上執行更新，請參閱 [部署 Microsoft defender For linux 的更新](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)。
+若要在 Linux 上的端點上執行 Microsoft Defender 的更新，請參閱在 [linux 上為 Microsoft defender For Endpoint 部署更新](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)。
 
 Linux (和 Unix) 有一個稱為 **crontab** (的工具，類似于工作排程器，) 能夠執行排程的任務。
 

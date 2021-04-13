@@ -18,28 +18,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 578830d44a9a69c3ccafd78ceaf59ddfe100e43f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 951c51c767ba09ebc6056481b4fac45da09c5671
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060708"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688546"
 ---
-# <a name="set-preferences-for-microsoft-defender-for-endpoint-for-mac"></a>設定 Mac 的 Microsoft Defender 端點偏好設定
+# <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上設定 Microsoft Defender for Endpoint 的喜好設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用於：**
 
-- [Mac 版端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 
 >[!IMPORTANT]
->本文包含如何針對企業組織中的 Mac 設定 Microsoft Defender for Mac 的首選項的指示。 若要使用命令列介面設定 Microsoft Defender for Mac 的端點，請參閱 [Resources](mac-resources.md#configuring-from-the-command-line)。
+>本文包含如何針對企業組織中 macOS 之 Microsoft Defender for Endpoint 設定偏好設定的指示。 若要在使用命令列介面的 macOS 上設定 Microsoft Defender for Endpoint，請參閱 [Resources](mac-resources.md#configuring-from-the-command-line)。
 
 ## <a name="summary"></a>摘要
 
-在企業組織中，可透過使用其中一種管理工具部署的設定檔來管理 Microsoft Defender for Mac 的端點。 安全作業小組所管理的喜好設定優先順序高於裝置上本機設定的喜好設定。 變更透過設定設定檔設定的喜好設定時，需要提升許可權，且不需要系統管理許可權的使用者才能使用。
+在企業組織中，可透過使用其中一種管理工具部署的設定檔來管理 macOS 上的 Microsoft Defender for Endpoint。 安全作業小組所管理的喜好設定優先順序高於裝置上本機設定的喜好設定。 變更透過設定設定檔設定的喜好設定時，需要提升許可權，且不需要系統管理許可權的使用者才能使用。
 
 本文說明設定檔的結構，包含您可以用來開始使用的建議設定檔，並提供如何部署設定檔的指示。
 
@@ -56,7 +56,7 @@ ms.locfileid: "51060708"
 
 設定設定檔的 [ *antivirusEngine* ] 區段是用來管理 Microsoft Defender for Endpoint 之防病毒元件的喜好設定。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | antivirusEngine |
@@ -67,7 +67,7 @@ ms.locfileid: "51060708"
 
 指定是否要啟用即時保護，以在存取檔時進行掃描。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | enableRealTimeProtection |
@@ -83,7 +83,7 @@ ms.locfileid: "51060708"
 - 已開啟安全性智慧更新
 - 隱藏狀態功能表圖示
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | passiveMode |
@@ -95,7 +95,7 @@ ms.locfileid: "51060708"
 
 指定排除的合併原則。 這可以是管理員定義和使用者定義排除 (的組合， `merge`) 或僅限系統管理員定義的排除 (`admin_only`) 。 您可以使用此設定來限制本機使用者定義自己的排除專案。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | exclusionsMergePolicy |
@@ -107,7 +107,7 @@ ms.locfileid: "51060708"
 
 指定排除在掃描之外的實體。 您可以使用完整路徑、副檔名或檔案名來指定排除。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 排除 |
@@ -118,7 +118,7 @@ ms.locfileid: "51060708"
 
 指定 [依類型掃描排除的內容]。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | $type |
@@ -129,7 +129,7 @@ ms.locfileid: "51060708"
 
 指定以完整檔案路徑掃描排除的內容。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 路徑 |
@@ -141,7 +141,7 @@ ms.locfileid: "51060708"
 
 指出 *path* 屬性參照的是檔案或目錄。 
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | isDirectory |
@@ -153,7 +153,7 @@ ms.locfileid: "51060708"
 
 指定 [依副檔名掃描排除的內容]。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 擴展 |
@@ -165,7 +165,7 @@ ms.locfileid: "51060708"
 
 指定從掃描排除所有檔案活動的處理常式。 您可以透過名稱指定程式 (例如 `cat`) 或完整路徑 (例如 `/bin/cat`) 。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | name |
@@ -177,7 +177,7 @@ ms.locfileid: "51060708"
 
 依名稱指定不會被 Defender for Mac 的 Endpoint 封鎖的威脅。 這些威脅都會允許執行。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | allowedThreats |
@@ -187,7 +187,7 @@ ms.locfileid: "51060708"
 
 限制偵測到威脅時，裝置的本機使用者可以採取的動作。 在此清單中包含的動作不會顯示在使用者介面中。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | disallowedThreatActions |
@@ -197,9 +197,9 @@ ms.locfileid: "51060708"
 
 #### <a name="threat-type-settings"></a>威脅類型設定
 
-指定 Microsoft Defender for Mac 的終結點處理特定威脅類型的方式。
+指定 macOS 上的 Microsoft Defender for Endpoint 處理特定威脅類型的方式。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | threatTypeSettings |
@@ -210,7 +210,7 @@ ms.locfileid: "51060708"
 
 指定威脅類型。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 機碼 |
@@ -225,7 +225,7 @@ ms.locfileid: "51060708"
 - **封鎖**：您的裝置會受到此威脅類型的保護，而且您會收到使用者介面及安全性主控台的通知。
 - **Off**：您的裝置不會受到這種威脅類型的保護，而且不會記錄任何內容。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 數值 |
@@ -236,7 +236,7 @@ ms.locfileid: "51060708"
 
 指定威脅類型設定的合併原則。 這可以是管理員定義和使用者定義設定的組合， (`merge`) 或只 () 的系統管理員定義的設定 `admin_only` 。 此設定可用來限制本機使用者針對不同威脅類型定義自己的設定。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | threatTypeSettingsMergePolicy |
@@ -248,7 +248,7 @@ ms.locfileid: "51060708"
 
 指定在裝置上的掃描歷程記錄中保留結果的天數。 舊的掃描結果會從歷史記錄中移除。 也會從磁片中移除的舊隔離檔案。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | scanResultsRetentionDays |
@@ -260,7 +260,7 @@ ms.locfileid: "51060708"
 
 指定要保留在掃描記錄中的專案數上限。 專案包括過去執行的所有按需掃描及所有防病毒偵測。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | scanHistoryMaximumItems |
@@ -270,9 +270,9 @@ ms.locfileid: "51060708"
 
 ### <a name="cloud-delivered-protection-preferences"></a>雲端提供的保護偏好設定
 
-為 Mac 設定 Microsoft Defender for Endpoint 的雲端驅動保護功能。
+設定 macOS 上的 Microsoft Defender for Endpoint 的雲端驅動保護功能。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | cloudService |
@@ -283,7 +283,7 @@ ms.locfileid: "51060708"
 
 指定是否要對裝置啟用雲端提供保護。 若要改善服務的安全性，建議您保持此功能開啟。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 啟用 |
@@ -294,7 +294,7 @@ ms.locfileid: "51060708"
 
 診斷資料是用來保持 Microsoft Defender 的端點安全且最新、偵測、診斷與修正問題，也可讓產品改進。 此設定會決定 Microsoft Defender for Microsoft Defender 所傳送的診斷層級。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | diagnosticLevel |
@@ -305,7 +305,7 @@ ms.locfileid: "51060708"
 
 會決定是否有可疑的範例 (可能包含) 傳送給 Microsoft 的威脅。 如果提交的檔案可能包含個人資訊，系統會提示您。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | automaticSampleSubmission |
@@ -316,7 +316,7 @@ ms.locfileid: "51060708"
 
 決定是否自動安裝安全性智慧更新：
 
-|||
+|區段|值|
 |:---|:---|
 | **Key** | automaticDefinitionUpdateEnabled |
 | **資料類型** | 布林值 |
@@ -324,9 +324,9 @@ ms.locfileid: "51060708"
 
 ### <a name="user-interface-preferences"></a>使用者介面偏好設定
 
-管理 Microsoft Defender for Mac 之使用者介面的喜好設定。
+管理 macOS 上之 Microsoft Defender for Endpoint 之使用者介面的喜好設定。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | userInterface |
@@ -337,7 +337,7 @@ ms.locfileid: "51060708"
 
 指定是否要顯示或隱藏螢幕右上角的 [狀態] 功能表圖示。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | hideStatusMenuIcon |
@@ -348,7 +348,7 @@ ms.locfileid: "51060708"
 
 指定使用者是否可以前往提交對 Microsoft 的意見反應 `Help`  >  `Send Feedback` 。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | userInitiatedFeedback |
@@ -358,9 +358,9 @@ ms.locfileid: "51060708"
 
 ### <a name="endpoint-detection-and-response-preferences"></a>端點偵測和回應喜好設定
 
-管理 Mac 之 Microsoft Defender for Endpoint 的端點偵測和回應 (EDR) 元件的喜好設定。
+管理 macOS 上之 Microsoft Defender for Endpoint 的端點偵測和回應 (EDR) 元件的喜好設定。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | edr |
@@ -373,7 +373,7 @@ ms.locfileid: "51060708"
 
 - GROUP 標記，以指定的值標記裝置。 標記會反映在入口網站的 [裝置] 頁面底下，可用於篩選和群組裝置。
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 標籤 |
@@ -384,7 +384,7 @@ ms.locfileid: "51060708"
 
 會指定標記的類型
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 機碼 |
@@ -395,7 +395,7 @@ ms.locfileid: "51060708"
 
 指定 tag 的值
 
-|||
+|區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
 | **Key** | 數值 |
@@ -542,7 +542,7 @@ ms.locfileid: "51060708"
 
 ## <a name="full-configuration-profile-example"></a>完整設定檔範例
 
-下列範本包含本檔中所述所有設定的專案，而且可用於更高級的案例，您想要更進一步控制 Mac 的 Microsoft Defender 端點。
+下列範本包含本檔中所述所有設定的專案，而且可用於更高級的案例，您想要在 macOS 上進一步控制端點的 Microsoft Defender。
 
 ### <a name="property-list-for-jamf-configuration-profile"></a>JAMF 設定檔的屬性清單
 
@@ -829,7 +829,7 @@ com.microsoft.wdav.plist: OK
 
 5. 開啟設定設定檔，並上傳 `com.microsoft.wdav.xml` 檔。  (此檔案是在步驟3中建立。 ) 
 
-6. 選取 [確定]。
+6. 選取 **[確定]**。
 
 7. 選取 [**管理**  >  **指派**]。 在 [ **包含** ] 索引標籤中，選取 [ **指派給所有使用者 & 所有裝置**]。
 

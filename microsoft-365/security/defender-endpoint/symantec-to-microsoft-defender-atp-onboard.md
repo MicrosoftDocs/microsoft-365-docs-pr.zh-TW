@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: cc005c559e0f91f1c5888f8d7e4e7a2a420894db
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 1d332f6b0d6338d18c5a85dcf737f968f00f275f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218697"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689518"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>從 Symantec 遷移-階段3：板載至 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "51218697"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![階段1：準備](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[階段1：準備](symantec-to-microsoft-defender-atp-prepare.md) |[![階段2：設定](images/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[階段2：設定](symantec-to-microsoft-defender-atp-setup.md) |![階段3：板載](images/phase-diagrams/onboard.png)<br/>階段3：板載 |
+|[![階段 1：準備](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[階段 1：準備](symantec-to-microsoft-defender-atp-prepare.md) |[![階段 2：設定](images/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[階段 2：設定](symantec-to-microsoft-defender-atp-setup.md) |![第 3 階段：導入](images/phase-diagrams/onboard.png)<br/>第 3 階段：導入 |
 |--|--|--|
 || |*您在這裡！* |
 
@@ -46,7 +46,7 @@ ms.locfileid: "51218697"
 3. [卸載 Symantec](#uninstall-symantec)。
 4. [請確定 Microsoft Defender For Endpoint 處於主動模式](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode)。
 
-## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 上的板載裝置
+## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>將裝置上線至適用於端點的 Microsoft Defender
 
 1. 請移至 Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) 並登入。
 2. 選擇 [**設定**  >  **裝置管理** 上  >  **架**]。 
@@ -63,7 +63,7 @@ ms.locfileid: "51218697"
 |-Windows 8.1 企業版 <br/>-Windows 8.1 Pro <br/>-Windows 7 SP1 企業版 <br/>-Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)<br/><br/>**附注**： Microsoft Monitoring Agent 現在是 Azure 記錄分析代理程式。 若要深入瞭解，請參閱 [Log Analytics agent 一覽](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent)。        |
 |-Windows Server 2019 和更新版本 <br/>-Windows Server 2019 core edition <br/>-Windows Server 版本1803和更新版本 |- [本機腳本](configure-endpoints-script.md) <br/>- [群組原則](configure-endpoints-gp.md) <br/>- [Configuration Manager](/configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)<br/>- [非持久性裝置的 VDI 上架腳本](configure-endpoints-vdi.md) <br/><br/>**附注**：本機腳本適用于概念證明，但不適用於實際執行部署。 在實際執行部署中，我們建議使用群組原則、Microsoft 端點設定管理員或 Intune。    |
 |-Windows Server 2016 <br/>-Windows Server 2012 R2 <br/>-Windows Server 2008 R2 SP1  |- [Microsoft Defender 安全中心](configure-server-endpoints.md)<br/>- [Azure 安全性中心](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
-|macOS<br/>-10.15 (Catalina) <br/>-10.14 (Mojave) <br/>-10.13 (高塞拉里昂) <br/><br/>iOS<br/><br/>Linux：<br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |[板載非 Windows 裝置](configure-endpoints-non-windows.md)  |
+|macOS<br/>-10.15 (Catalina) <br/>-10.14 (Mojave) <br/>-10.13 (高塞拉里昂) <br/><br/>iOS<br/><br/>Linux：<br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |[將非 Windows 裝置上線](configure-endpoints-non-windows.md)  |
 
 ## <a name="run-a-detection-test"></a>執行偵測測試
 
@@ -72,8 +72,8 @@ ms.locfileid: "51218697"
 |作業系統  |指導方針  |
 |---------|---------|
 |-Windows 10 <br/>-Windows Server 2019 <br/>-Windows Server，版本1803 <br/>-Windows Server 2016 <br/>-Windows Server 2012 R2     |請參閱 [執行偵測測試](run-detection-test.md)。 <br/><br/>流覽 Microsoft Defender for Endpoint 示範案例網站 ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) 並嘗試一或多個案例。 例如，嘗試 **雲端提供的保護** 示範案例。         |
-|macOS<br/>-10.15 (Catalina) <br/>-10.14 (Mojave) <br/>-10.13 (高塞拉里昂)      |下載並使用 DIY 應用程式 [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <br/><br/>如需詳細資訊，請參閱 [Microsoft Defender For Mac 的 Endpoint](microsoft-defender-endpoint-mac.md)。        |
-|Linux：<br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |1. 執行下列命令，並尋找 **1** 的結果： <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. 開啟終端視窗，並執行下列命令： <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. 執行下列命令，列出任何偵測到的威脅： <br/>`mdatp threat list`. <br/><br/>如需詳細資訊，請參閱 [Microsoft Defender For Linux 的 Endpoint](microsoft-defender-endpoint-linux.md)。 |
+|macOS<br/>-10.15 (Catalina) <br/>-10.14 (Mojave) <br/>-10.13 (高塞拉里昂)      |下載並使用 DIY 應用程式 [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <br/><br/>如需詳細資訊，請參閱 [macOS 上的 Microsoft Defender For Endpoint](microsoft-defender-endpoint-mac.md)。        |
+|Linux：<br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |1. 執行下列命令，並尋找 **1** 的結果： <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. 開啟終端視窗，並執行下列命令： <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. 執行下列命令，列出任何偵測到的威脅： <br/>`mdatp threat list`. <br/><br/>如需詳細資訊，請參閱 [Linux 上的 Microsoft Defender For Endpoint](microsoft-defender-endpoint-linux.md)。 |
 
 ## <a name="uninstall-symantec"></a>卸載 Symantec
 

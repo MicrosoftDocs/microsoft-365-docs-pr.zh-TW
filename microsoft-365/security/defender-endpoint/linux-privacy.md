@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b56e8a74875b3377b6f3228bbefb339680dbc6e1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aaf537c84adaba3d632367567cc569069650d21a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187778"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688354"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-for-linux"></a>適用于 Linux 的 Microsoft Defender 端點隱私權
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的隱私權
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何�
 
 本主題說明產品內可用的隱私權控制，如何使用原則設定管理這些控制項，以及收集的資料事件的詳細資料。
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Linux 之隱私權控制的概覽
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上的 Microsoft Defender for Endpoint 中取得隱私權控制的概覽
 
 本節說明用於 Linux 之 Defender for Endpoint 所收集的不同資料類型的隱私權控制。
 

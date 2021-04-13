@@ -1,6 +1,6 @@
 ---
-title: 針對 Mac 的 Microsoft Defender for Endpoint 進行 cloud connectivity 問題疑難排解
-description: 本主題說明如何疑難排解 Microsoft Defender for Mac 的雲端連線問題
+title: 疑難排解 macOS 上的 Microsoft Defender for Endpoint 的 cloud connectivity 問題
+description: 本主題說明如何針對 macOS 上的 Microsoft Defender for Endpoint 進行 cloud connectivity 問題疑難排解
 keywords: microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamf，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e522495fa86b5a71faa9f25cc863c29cc5d124c0
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: a8871274cabae0762cecc2ff513afe93c2d4811f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476664"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688498"
 ---
-# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-for-mac"></a>針對 Mac 的 Microsoft Defender for Endpoint 進行 cloud connectivity 問題疑難排解
+# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 macOS 上的 Microsoft Defender for Endpoint 的 cloud connectivity 問題
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51476664"
 
 **平臺** macOS
 
-本主題說明如何針對 Mac 的 Microsoft Defender for Endpoint 進行 cloud connectivity 問題的疑難排解。
+本主題說明如何針對 macOS 中的 Microsoft Defender for Endpoint 進行 cloud connectivity 問題的疑難排解。
 
 ## <a name="run-the-connectivity-test"></a>執行連線測試
 若要測試 Mac 版的 Endpoint 是否可以使用目前的網路設定與雲端通訊，請從命令列執行連線測試：
@@ -72,7 +72,7 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 如果 proxy 或防火牆封鎖匿名流量，請確定先前所列的 URLs 允許匿名流量。
 
 > [!WARNING]
-> 不支援已驗證的 proxy。 確定只使用 PAC、WPAD 或靜態 proxy。 出於安全性原因，也不支援 SSL 檢查和截取 proxy。 設定 SSL 檢查和 proxy 伺服器的例外狀況，以直接將 Microsoft Defender for Mac 的資料傳遞至相關的 URLs，而不需要截獲。 將您的截取憑證新增至全域存放區將不允許截取。
+> 不支援已驗證的 proxy。 確定只使用 PAC、WPAD 或靜態 proxy。 出於安全性原因，也不支援 SSL 檢查和截取 proxy。 設定 SSL 檢查和 proxy 伺服器的例外狀況，以直接透過 Microsoft Defender for Endpoint for Endpoint URLs to to to to to to to to macOS，而不需要截獲。 將您的截取憑證新增至全域存放區將不允許截取。
 若要測試是否未封鎖連線：在 Microsoft Edge for Mac 或 Safari 開啟和中的瀏覽器 https://x.cp.wd.microsoft.com/api/report 中 https://cdn.x.cp.wd.microsoft.com/ping 。
 
 （選用）在 [終端] 中執行下列命令：

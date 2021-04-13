@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: a4c92d27d45208634f99f9bfb2f756cfc5792fac
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186650"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689122"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS Catalina 和更新版本 macOS 的新設定設定檔
 
@@ -36,9 +36,9 @@ ms.locfileid: "51186650"
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-隨著 macOS 演變，我們準備好 Microsoft Defender for Mac 更新，以利用系統擴充，而不是核心擴充。 此更新只適用于 macOS Catalina (10.15.4) 和更新版本的 macOS。
+在 macOS 演變的情況下，我們正在準備使用系統擴充（而不是核心擴充）的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新只適用于 macOS Catalina (10.15.4) 和更新版本的 macOS。
 
-如果您已透過 JAMF、Intune 或另一個 MDM 方案) 在受管理的 (環境中部署 Microsoft Defender for Mac 的端點，您必須部署新的設定檔。 若無法執行這些步驟，將會導致使用者取得核准提示以執行這些新元件。
+如果您已在受管理環境 (透過 JAMF、Intune 或另一個 MDM 方案) 部署 Microsoft Defender for Endpoint macOS，您必須部署新的設定檔。 若無法執行這些步驟，將會導致使用者取得核准提示以執行這些新元件。
 
 ## <a name="jamf"></a>JAMF
 
@@ -69,10 +69,10 @@ ms.locfileid: "51186650"
 
 ### <a name="network-extension-policy"></a>網路擴充原則
 
-做為端點偵測和回應功能的一部分，Mac 版端點的 Microsoft Defender 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。
+在端點偵測和回應功能中，Microsoft Defender for Endpoint on macOS 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。
 
 >[!NOTE]
->JAMF 不具備內容篩選原則的內建支援，這些是可讓 Microsoft Defender Endpoint for Mac 在裝置上安裝的網路分機之前的必要條件。 此外，JAMF 有時會變更所要部署之原則的內容。
+>JAMF 不具備內容篩選原則的內建支援，也就是在裝置上安裝 Microsoft Defender for Endpoint for the macOS 的網路分機。 此外，JAMF 有時會變更所要部署之原則的內容。
 >如此一來，下列步驟會提供對設定設定檔進行簽章的解決方法。
 
 1. 使用文字編輯器，將下列內容儲存到您的裝置 `com.microsoft.network-extension.mobileconfig` ：
@@ -308,7 +308,7 @@ sysext.xml: OK
 1.  在 Intune 中，開啟 [**管理**  >  **裝置** 設定]。 選取 [**管理**  >  **設定檔**  >  **建立設定檔**]。
 2. 選擇設定檔的名稱。 變更 **平臺 = macOS** 和 **配置檔案類型 = 自訂**。 選取 [ **設定**]。
 3.  開啟設定設定檔，並上傳 **sysext.xml**。 此檔案是在上述步驟中建立的。
-4.  選取 [確定]。
+4.  選取 **[確定]**。
 
     ![Intune 螢幕擷取畫面中的系統擴充](images/mac-system-extension-intune.png)
 

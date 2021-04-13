@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 99f507ad381ee21ba91753716439180fafe37c24
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3321c1bd181b89c53e2618fc20fa7f733a20cfc1
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059415"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689050"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-for-mac"></a>為 Mac 部署 Microsoft Defender for Endpoint 的更新
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用於：**
 
-- [Mac 版端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ ms.locfileid: "51059415"
 
 Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供新功能。
 
-若要更新 Microsoft Defender for Mac 的端點，使用名為 Microsoft AutoUpdate (MAU) 的程式。 根據預設，MAU 會每日自動檢查更新，但您可以將其變更為每週、每月或手動。
+若要在 macOS 上更新 Microsoft Defender for Endpoint，請使用名為 Microsoft AutoUpdate (MAU) 的程式。 根據預設，MAU 會每日自動檢查更新，但您可以將其變更為每週、每月或手動。
 
 ![MAU 螢幕擷取畫面](images/MDATP-34-MAU.png)
 
@@ -50,7 +50,7 @@ Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供�
 
 MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理員設計，讓使用者可以更精確地控制何時套用更新。 如何使用此工具的指示，可在 [使用 msupdate 的更新 Office For Mac](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)中找到。
 
-在 MAU 中，Mac 版端點的應用程式識別碼是 *WDAV00*。 若要下載並安裝適用于 Mac 的 Microsoft Defender for Endpoint 的最新更新，請從終端視窗執行下列命令：
+在 MAU 中，Microsoft Defender for Endpoint on macOS 上的應用程式識別碼是 *WDAV00*。 若要在 macOS 上下載並安裝 Microsoft Defender for Endpoint 的最新更新，請從終端視窗執行下列命令：
 
 ```
 ./msupdate --install --apps wdav00
@@ -76,7 +76,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 >[!TIP]
 >為了預覽新功能並提供及早的意見反應，建議您將企業中的一些裝置設定為 `Beta` 或 `Preview` 。
 
-|||
+|區段|值|
 |:--|:--|
 | **網域** | autoupdate2 |
 | **Key** | ChannelName |
@@ -85,7 +85,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 |||
 
 >[!WARNING]
->此設定會變更透過 Microsoft AutoUpdate 更新之所有應用程式的通道。 若要變更僅適用于 Mac 的 Microsoft Defender 端點的通道，請在取代為 `[channel-name]` 所需的通道後執行下列命令：
+>此設定會變更透過 Microsoft AutoUpdate 更新之所有應用程式的通道。 若要將 macOS 上的通道只變更為 Microsoft Defender for Endpoint，請在取代為 `[channel-name]` 所需的通道後執行下列命令：
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
@@ -94,63 +94,63 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 
 變更 MAU 搜尋更新的頻率。
 
-|||
+|區段|值|
 |:--|:--|
 | **網域** | autoupdate2 |
 | **Key** | UpdateCheckFrequency |
 | **資料類型** | 整數 |
 | **預設值** | 720 (分鐘)  |
 | **Comment** | 此值是以分鐘為單位設定。 |
-|||
+
 
 ### <a name="change-how-mau-interacts-with-updates"></a>變更 MAU 與更新互動的方式
 
 變更 MAU 搜尋更新的方式。
 
-|||
+|區段|值|
 |:--|:--|
 | **網域** | autoupdate2 |
 | **Key** | HowToCheck |
 | **資料類型** | 字串 |
 | **可能值** | 手動 <br/> AutomaticCheck <br/> AutomaticDownload |
 | **Comment** |  請注意，如果可能的話，AutomaticDownload 將會以靜默方式下載及安裝。 |
-|||
+
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>變更是否已啟用「檢查更新」按鈕
 
 變更 [Microsoft AutoUpdate] 使用者介面中的「檢查更新」選項是否可供本機使用者按一下。
 
-|||
+|區段|值|
 |:--|:--|
 | **網域** | autoupdate2 |
 | **Key** | EnableCheckForUpdatesButton |
 | **資料類型** | 布林值 |
 | **可能值** | True (預設)  <br/> False |
-|||
+
 
 ### <a name="disable-insider-checkbox"></a>停用「有問必答] 核取方塊
 
 設定為 true 可使「加入 Office 測試人員計畫 ...」核取方塊無法使用/向使用者顯示灰色。
 
-|||
+|區段|值|
 |:--|:--|
 | **網域** | autoupdate2 |
 | **Key** | DisableInsiderCheckbox |
 | **資料類型** | 布林值 |
 | **可能值** | False (預設)  <br/> 對 |
-|||
+
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>限制從 MAU 傳送的遙測
 
 設定為 false 以傳送最少的心跳資料、不使用應用程式，且沒有環境細節。
 
-|||
+|區段|值|
 |:--|:--|
 | **網域** | autoupdate2 |
 | **Key** | SendAllTelemetryEnabled |
 | **資料類型** | 布林值 |
 | **可能值** | True (預設)  <br/> False |
-|||
+
 
 ## <a name="example-configuration-profile"></a>設定檔範例
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP 的新功能
-description: 請參閱最新版本的 Microsoft Defender ATP 中 (GA) 可用的功能，以及 Windows 10 和 Windows Server 中的安全性功能。
-keywords: microsoft defender atp 中的新功能，ga，一般可用，功能，可用，新
+title: 適用於端點的 Microsoft Defender 新功能
+description: 請參閱最新版的 Microsoft Defender for Endpoint，以及 Windows 10 和 Windows Server 中的安全性功能，可 (GA) 中的一般功能。
+keywords: microsoft defender for endpoint 中的新功能，ga，一般可用，功能，可用，新
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a72b742d8f4a69d2e38cf4fa234ba5b7e2961ac6
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c9f4c0689739224b00c9c14db1482d54faab3512
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587608"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688234"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender 新功能
 
@@ -52,22 +52,22 @@ ms.locfileid: "51587608"
 - [Windows 虛擬桌面](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint 現在會新增對 Windows 虛擬桌面的支援。
 
 ## <a name="december-2020"></a>2020 年 12 月
-- [iOS 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 現在新增 iOS 的支援。 瞭解如何為 iOS 安裝、設定、更新及使用 Microsoft Defender for Endpoint。
+- [iOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 現在新增 iOS 的支援。 瞭解如何在 iOS 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 
 ## <a name="september-2020"></a>2020 年 9 月
-- [Android 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 現在新增了 Android 的支援。 瞭解如何安裝、設定、更新和使用適用于 Android 的 Microsoft Defender for Endpoint。
+- [Android 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 現在新增了 Android 的支援。 瞭解如何在 Android 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 - [威脅與弱點管理 macOS 支援](tvm-supported-os.md)<br> MacOS 的威脅和弱點管理現在位於公開預覽中，而且會持續偵測 macOS 裝置上的漏洞，以協助您著重于風險，以協助您優先考慮修正。 若要深入瞭解，請參閱 [Microsoft 技術社區的博客文章](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)。
 
 
 ## <a name="august-2020"></a>2020年 8月
-- [Android 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 現在新增了 Android 的支援。 瞭解如何安裝、設定及使用適用于 Android 的 Microsoft Defender for Endpoint。
+- [Android 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 現在新增了 Android 的支援。 瞭解如何在 Android 上安裝、設定及使用 Microsoft Defender for Endpoint。
 
 
 ## <a name="july-2020"></a>2020 年 7 月
 - [建立憑證的指示器](manage-indicators.md) <br> 建立指示器以允許或封鎖憑證。 
 
 ## <a name="june-2020"></a>2020 年 6 月
-- [Linux 版適用於端點的 Microsoft Defende](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint 現在新增了對 Linux 的支援。 瞭解如何針對 Linux 安裝、設定、更新及使用 Microsoft Defender for Endpoint。
+- [Linux 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint 現在新增了對 Linux 的支援。 瞭解如何在 Linux 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 
 - [評估實驗室中的攻擊模擬器](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint 已與各種威脅模擬平臺產生合作，讓您能輕鬆地從入口網站中測試平臺的功能。
 
@@ -78,7 +78,7 @@ ms.locfileid: "51587608"
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [Mac 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Mac 會將下一代保護帶入 Mac 裝置。 整合端點安全性平臺的核心元件現在可用於 Mac 裝置，包括 [端點偵測和回應](microsoft-defender-endpoint-mac.md)。
+- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) <BR> MacOS 上的 Microsoft Defender for Endpoint 會將下一代保護帶入 Mac 裝置。 整合端點安全性平臺的核心元件現在可用於 Mac 裝置，包括 [端點偵測和回應](microsoft-defender-endpoint-mac.md)。
  
 - [威脅 & 弱點管理應用程式和應用程式版本的週期結束資訊](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>已到達生命週期結束的應用程式和應用程式版本會加以標記或標示為如此，這樣您就會發現不再支援這些應用程式和應用程式，而且可以採取動作進行卸載或更換。 這樣做有助於減少因未修補的應用程式而造成的各種弱點洩密相關的風險。
 

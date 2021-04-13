@@ -1,6 +1,6 @@
 ---
 title: 保護您的組織免受網頁威脅
-description: 深入瞭解 Microsoft Defender ATP 中的 web 保護，以及它如何保護您的組織。
+description: 深入瞭解 Microsoft Defender for Endpoint 中的 web 保護，以及它如何保護您的組織。
 keywords: 網頁防護，網頁威脅防護，網頁流覽，安全性，網路釣魚，惡意程式碼，exploit，網站，網路保護，Edge，Internet Explorer，Chrome，Firefox，網頁瀏覽器
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0c42c05e318390741b94b6d7d1b5394fca961714
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499902"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688942"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>保護您的組織免受網頁威脅
 
@@ -38,7 +38,7 @@ Web 威脅防護是用於端點之 [web 保護](web-protection-overview.md) 的�
 >[!Note]
 >裝置接收新的自訂指示器時，最多可能需要一小時。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 Web 保護使用網路保護，在 Microsoft Edge 和協力廠商網頁瀏覽器上提供 web 流覽安全性。
 
 開啟裝置上的網路保護：
