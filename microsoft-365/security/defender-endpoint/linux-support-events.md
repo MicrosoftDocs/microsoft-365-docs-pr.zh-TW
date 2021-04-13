@@ -18,37 +18,37 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e489d5bece292065ad2e82a7eb9011747733b4f6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5981cb75b4c835390e27d902b5950e3c68305200
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059115"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687451"
 ---
-# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-for-linux"></a><span data-ttu-id="cf28b-104">針對適用于 Linux 的 Microsoft Defender for Endpoint 進行遺失的事件或警示問題進行疑難排解</span><span class="sxs-lookup"><span data-stu-id="cf28b-104">Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint for Linux</span></span>
+# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="bf9bd-104">針對 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警示問題進行疑難排解</span><span class="sxs-lookup"><span data-stu-id="bf9bd-104">Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="cf28b-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="cf28b-105">**Applies to:**</span></span>
+<span data-ttu-id="bf9bd-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="bf9bd-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="cf28b-106">適用于 Linux 的 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="cf28b-106">Microsoft Defender for Endpoint for Linux</span></span>](microsoft-defender-endpoint-linux.md)
+- [<span data-ttu-id="bf9bd-106">Linux 上的 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="bf9bd-106">Microsoft Defender for Endpoint on Linux</span></span>](microsoft-defender-endpoint-linux.md)
 
-<span data-ttu-id="cf28b-107">本文提供一些一般步驟，以減輕 [安全性中心](https://securitycenter.windows.com/) 入口網站中遺失的事件或警示。</span><span class="sxs-lookup"><span data-stu-id="cf28b-107">This article provides some general steps to mitigate missing events or alerts in the [security center](https://securitycenter.windows.com/) portal.</span></span>
+<span data-ttu-id="bf9bd-107">本文提供一些一般步驟，以減輕 [安全性中心](https://securitycenter.windows.com/) 入口網站中遺失的事件或警示。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-107">This article provides some general steps to mitigate missing events or alerts in the [security center](https://securitycenter.windows.com/) portal.</span></span>
 
-<span data-ttu-id="cf28b-108">在裝置上正確安裝 **Microsoft Defender For Endpoint** 後，就會在入口網站中產生 _裝置頁面_ 。</span><span class="sxs-lookup"><span data-stu-id="cf28b-108">Once **Microsoft Defender for Endpoint** has been installed properly on a device, a _device page_ will be generated in the portal.</span></span> <span data-ttu-id="cf28b-109">您可以在 [裝置] 頁面上的 [時程表] 索引標籤或 [高級搜尋] 頁面中，複查所有錄製的事件。</span><span class="sxs-lookup"><span data-stu-id="cf28b-109">You can review all recorded events in the timeline tab in the device page, or in advanced hunting page.</span></span> <span data-ttu-id="cf28b-110">此區段用於診斷部分或所有預期事件的情況缺失。</span><span class="sxs-lookup"><span data-stu-id="cf28b-110">This section troubleshoots the case of some or all expected events are missing.</span></span>
-<span data-ttu-id="cf28b-111">例如，如果所有的 _CreatedFile_ 事件都缺失。</span><span class="sxs-lookup"><span data-stu-id="cf28b-111">For instance, if all _CreatedFile_ events are missing.</span></span>
+<span data-ttu-id="bf9bd-108">在裝置上正確安裝 **Microsoft Defender For Endpoint** 後，就會在入口網站中產生 _裝置頁面_ 。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-108">Once **Microsoft Defender for Endpoint** has been installed properly on a device, a _device page_ will be generated in the portal.</span></span> <span data-ttu-id="bf9bd-109">您可以在 [裝置] 頁面上的 [時程表] 索引標籤或 [高級搜尋] 頁面中，複查所有錄製的事件。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-109">You can review all recorded events in the timeline tab in the device page, or in advanced hunting page.</span></span> <span data-ttu-id="bf9bd-110">此區段用於診斷部分或所有預期事件的情況缺失。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-110">This section troubleshoots the case of some or all expected events are missing.</span></span>
+<span data-ttu-id="bf9bd-111">例如，如果所有的 _CreatedFile_ 事件都缺失。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-111">For instance, if all _CreatedFile_ events are missing.</span></span>
 
-## <a name="missing-network-and-login-events"></a><span data-ttu-id="cf28b-112">遺失網路和登入事件</span><span class="sxs-lookup"><span data-stu-id="cf28b-112">Missing network and login events</span></span>
+## <a name="missing-network-and-login-events"></a><span data-ttu-id="bf9bd-112">遺失網路和登入事件</span><span class="sxs-lookup"><span data-stu-id="bf9bd-112">Missing network and login events</span></span>
 
-<span data-ttu-id="cf28b-113">Microsoft Defender for a Endpoint 利用 `audit` framework （來自 linux）以追蹤網路和登入活動。</span><span class="sxs-lookup"><span data-stu-id="cf28b-113">Microsoft Defender for Endpoint utilized `audit` framework from linux to track network and login activity.</span></span>
+<span data-ttu-id="bf9bd-113">Microsoft Defender for a Endpoint 利用 `audit` framework （來自 linux）以追蹤網路和登入活動。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-113">Microsoft Defender for Endpoint utilized `audit` framework from linux to track network and login activity.</span></span>
 
-1. <span data-ttu-id="cf28b-114">請確定審核架構是否正常運作。</span><span class="sxs-lookup"><span data-stu-id="cf28b-114">Make sure audit framework is working.</span></span>
+1. <span data-ttu-id="bf9bd-114">請確定審核架構是否正常運作。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-114">Make sure audit framework is working.</span></span>
 
     ```bash
     service auditd status
     ```
 
-    <span data-ttu-id="cf28b-115">期望的輸出：</span><span class="sxs-lookup"><span data-stu-id="cf28b-115">expected output:</span></span>
+    <span data-ttu-id="bf9bd-115">期望的輸出：</span><span class="sxs-lookup"><span data-stu-id="bf9bd-115">expected output:</span></span>
 
     ```output
     ● auditd.service - Security Auditing Service
@@ -67,33 +67,33 @@ ms.locfileid: "51059115"
             └─16671 /opt/microsoft/mdatp/sbin/mdatp_audisp_plugin -d
     ```
 
-2. <span data-ttu-id="cf28b-116">如果 `auditd` 標示為已停止，請啟動它。</span><span class="sxs-lookup"><span data-stu-id="cf28b-116">If `auditd` is marked as stopped, start it.</span></span>
+2. <span data-ttu-id="bf9bd-116">如果 `auditd` 標示為已停止，請啟動它。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-116">If `auditd` is marked as stopped, start it.</span></span>
 
     ```bash
     service auditd start
     ```
 
-<span data-ttu-id="cf28b-117">**在 SLES 系統上** ，可能預設會停用的 SYSCALL 審核，而且可能會 `auditd` 考慮遺失的事件。</span><span class="sxs-lookup"><span data-stu-id="cf28b-117">**On SLES** systems, SYSCALL auditing in `auditd` might be disabled by default and can be accounted for missing events.</span></span>
+<span data-ttu-id="bf9bd-117">**在 SLES 系統上** ，可能預設會停用的 SYSCALL 審核，而且可能會 `auditd` 考慮遺失的事件。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-117">**On SLES** systems, SYSCALL auditing in `auditd` might be disabled by default and can be accounted for missing events.</span></span>
 
-1. <span data-ttu-id="cf28b-118">若要驗證 SYSCALL 審核未停用，請列出目前的審計規則：</span><span class="sxs-lookup"><span data-stu-id="cf28b-118">To validate that SYSCALL auditing is not disabled, list the current audit rules:</span></span>
+1. <span data-ttu-id="bf9bd-118">若要驗證 SYSCALL 審核未停用，請列出目前的審計規則：</span><span class="sxs-lookup"><span data-stu-id="bf9bd-118">To validate that SYSCALL auditing is not disabled, list the current audit rules:</span></span>
 
     ```bash
     sudo auditctl -l
     ```
 
-    <span data-ttu-id="cf28b-119">如果出現下列行，請將其移除或進行編輯，讓 Microsoft Defender for Endpoint 能夠追蹤特定 SYSCALLs。</span><span class="sxs-lookup"><span data-stu-id="cf28b-119">if the following line is present, remove it or edit it to enable Microsoft Defender for Endpoint to track specific SYSCALLs.</span></span>
+    <span data-ttu-id="bf9bd-119">如果出現下列行，請將其移除或進行編輯，讓 Microsoft Defender for Endpoint 能夠追蹤特定 SYSCALLs。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-119">if the following line is present, remove it or edit it to enable Microsoft Defender for Endpoint to track specific SYSCALLs.</span></span>
 
     ```output
     -a task, never
     ```
 
-    <span data-ttu-id="cf28b-120">審核規則位於 `/etc/audit/rules.d/audit.rules` 。</span><span class="sxs-lookup"><span data-stu-id="cf28b-120">audit rules are located at `/etc/audit/rules.d/audit.rules`.</span></span>
+    <span data-ttu-id="bf9bd-120">審核規則位於 `/etc/audit/rules.d/audit.rules` 。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-120">audit rules are located at `/etc/audit/rules.d/audit.rules`.</span></span>
 
-## <a name="missing-file-events"></a><span data-ttu-id="cf28b-121">遺失檔案事件</span><span class="sxs-lookup"><span data-stu-id="cf28b-121">Missing file events</span></span>
+## <a name="missing-file-events"></a><span data-ttu-id="bf9bd-121">遺失檔案事件</span><span class="sxs-lookup"><span data-stu-id="bf9bd-121">Missing file events</span></span>
 
-<span data-ttu-id="cf28b-122">檔案事件是以 `fanotify` 架構收集。</span><span class="sxs-lookup"><span data-stu-id="cf28b-122">File events are collected with `fanotify` framework.</span></span> <span data-ttu-id="cf28b-123">若部分或所有檔案事件遺失，請確定已 `fanotify` 在裝置上啟用，且 [支援](microsoft-defender-endpoint-linux.md#system-requirements)檔案系統。</span><span class="sxs-lookup"><span data-stu-id="cf28b-123">In case some or all file events are missing, make sure `fanotify` is enabled on the device and that the file system is [supported](microsoft-defender-endpoint-linux.md#system-requirements).</span></span>
+<span data-ttu-id="bf9bd-122">檔案事件是以 `fanotify` 架構收集。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-122">File events are collected with `fanotify` framework.</span></span> <span data-ttu-id="bf9bd-123">若部分或所有檔案事件遺失，請確定已 `fanotify` 在裝置上啟用，且 [支援](microsoft-defender-endpoint-linux.md#system-requirements)檔案系統。</span><span class="sxs-lookup"><span data-stu-id="bf9bd-123">In case some or all file events are missing, make sure `fanotify` is enabled on the device and that the file system is [supported](microsoft-defender-endpoint-linux.md#system-requirements).</span></span>
 
-<span data-ttu-id="cf28b-124">列出電腦上的檔案系統：</span><span class="sxs-lookup"><span data-stu-id="cf28b-124">List the filesystems on the machine with:</span></span>
+<span data-ttu-id="bf9bd-124">列出電腦上的檔案系統：</span><span class="sxs-lookup"><span data-stu-id="bf9bd-124">List the filesystems on the machine with:</span></span>
 
 ```bash
 df -Th
