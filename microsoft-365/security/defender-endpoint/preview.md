@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4aab7f12b250c1415ad65a9e706edf6b68050b2f
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 4a91fa3c8ff55f46619c7b49eaf973ad94f60bfe
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222646"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698183"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint preview 功能
 
@@ -61,6 +61,12 @@ Endpoint service 的 Defender 服務不斷更新，以包含新功能增強功�
 ## <a name="preview-features"></a>預覽功能
 
 預覽版包含以下功能：
+
+- [裝置探索](device-discovery.md) <br> 協助您找出連接至公司網路的非管理裝置，不需要額外裝置或繁瑣的處理常式變更。 使用架裝置，您可以在網路中尋找未受管理的裝置，並評估漏洞和風險。 然後，您可以將已探索的裝置上架，以降低網路中具有非受管理端點的相關風險。
+
+   > [!IMPORTANT]
+   > Standard discovery 會成為所有開始5月 10 2021 日的預覽客戶的預設模式。 您可以選擇透過 [設定] 頁面保留基本模式。 
+
 
 - [Web 內容篩選](web-content-filtering.md) <br> Web 內容篩選是 Microsoft Defender for Endpoint 中的 web 保護功能的一部分。 它可讓您的組織根據其內容類別別來追蹤和控制網站的存取權。 許多這類網站雖然並非惡意，但因相容性法規、頻寬使用量或其他考慮而可能會造成問題。
 

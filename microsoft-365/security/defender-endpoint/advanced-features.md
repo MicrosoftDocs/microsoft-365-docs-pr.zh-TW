@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650287"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698265"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -228,6 +228,10 @@ ms.locfileid: "51650287"
 
 > [!NOTE]
 > Intune 所建立的傳統 CA 原則與新式條件式 [存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)不同，用來設定端點。
+
+
+## <a name="device-discovery"></a>裝置探索
+協助您找出連接至公司網路的非管理裝置，不需要額外裝置或繁瑣的處理常式變更。 使用架裝置，您可以在網路中尋找未受管理的裝置，並評估漏洞和風險。 如需詳細資訊，請參閱 [Device discovery](device-discovery.md)。
 
 ## <a name="preview-features"></a>預覽功能
 

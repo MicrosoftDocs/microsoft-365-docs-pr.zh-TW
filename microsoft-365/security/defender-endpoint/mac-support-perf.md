@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18bde560543fd1344a64cf1edd64f02f12831c25
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689098"
+ms.locfileid: "51698217"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 Microsoft Defender for Endpoint on macOS 的效能問題
 
@@ -149,7 +149,7 @@ ms.locfileid: "51689098"
         125  CrashPlanService 164
       ```
 
-      若要改善用於 Mac 之 Defender 的 Defender 的效能，請在 [已掃描的檔案總數] 列底下找到最高號碼的，並為其新增排除。 如需詳細資訊，請參閱 [Configure and validate 的 Defender For Endpoint For Linux](linux-exclusions.md)。
+      若要改善 Mac 上的 Defender for Endpoint 的效能，請在 [已掃描的檔案總數] 列中找出最高編號的，並為其新增排除。 如需詳細資訊，請參閱 [設定及驗證 Linux 上的 Defender For Endpoint 的排除](linux-exclusions.md)專案。
 
       > [!NOTE]
       > 應用程式會將統計資料儲存在記憶體中，且只會在啟動之後繼續追蹤檔活動，並啟用即時保護。 在即時保護關閉之前或期間所啟動的處理常式不會計算在內。 此外，只會計算觸發掃描的事件。

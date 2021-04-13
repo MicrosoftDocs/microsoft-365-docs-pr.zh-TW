@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32c42691b3a2b43f9740da26084bf45af0ee80f5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8311cb703bc5232e1421d19892fec9cdbc94b052
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687778"
+ms.locfileid: "51698185"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint
 
@@ -36,10 +36,10 @@ ms.locfileid: "51687778"
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-本主題說明如何針對 Android 安裝、設定、更新和使用 Defender for Endpoint。
+本主題說明如何在 Android 上安裝、設定、更新和使用 Defender for Endpoint。
 
 > [!CAUTION]
-> 針對 Android 的 Endpoint for Endpoint 執行其他協力廠商端點保護產品可能會造成效能問題和不可預期的系統錯誤。
+> 在 Android 上執行其他協力廠商端點防護產品及 Defender for Endpoint 時，可能會造成效能問題和不可預期的系統錯誤。
 
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>如何在 Android 上安裝 Microsoft Defender for Endpoint

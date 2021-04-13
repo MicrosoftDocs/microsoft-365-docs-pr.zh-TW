@@ -11,17 +11,17 @@ localization_priority: Normal
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d88da04e91875e24b13478b17d6a1e3862e1062e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8790d959dc41e3edea684c66e556a2ec67f85ae1
+ms.sourcegitcommit: 0fe5989b7ee2f7ae0181f2781e31db7f58689441
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197658"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697524"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
@@ -80,7 +80,7 @@ ms.locfileid: "51197658"
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>不支援警告模式的情況
 
-下列攻擊面減少規則不支援警告模式：
+當您在 Microsoft 端點管理員中進行設定時，三個攻擊面降減規則不支援警告模式。  (如果使用群組原則來設定攻擊面降低規則，則會支援警告模式。在 Microsoft 端點管理員中設定這些規則時，請 ) 三個規則不支援警告模式，如下所示：
 
 - [封鎖 JavaScript 或 VBScript 啟動下載的可執行內容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`) 
 - [透過 WMI 事件訂閱封鎖的封鎖](#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`) 
@@ -135,7 +135,7 @@ DeviceEvents
 2. 在 [開始] 功能表中輸入文字 [ *事件查看* 器]，以開啟 Windows 事件檢視器。
 3. 在 [ **動作**] 下，選取 [匯 **入自訂視圖 ...**]。
 4. 從解壓縮的位置選取檔案 *cfa-events.xml* 。 或者， [直接複製 XML](event-views.md)。
-5. 選取 [確定]。
+5. 選取 **[確定]**。
 
 您可以建立篩選事件只顯示下列事件的自訂視圖，這些事件都與「受控資料夾存取」有關：
 
@@ -466,7 +466,7 @@ GUID:： `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 ## <a name="see-also"></a>另請參閱
 
-- [攻擊面減少常見問題](attack-surface-reduction-faq.md)
-- [啟用攻擊面減少規則](enable-attack-surface-reduction.md)
-- [評估攻擊面減少規則](evaluate-attack-surface-reduction.md)
+- [受攻擊面縮小常見問題集](attack-surface-reduction-faq.md)
+- [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
+- [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
 - [Microsoft Defender 防毒軟體與其他防病毒/反惡意程式碼解決方案的相容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
