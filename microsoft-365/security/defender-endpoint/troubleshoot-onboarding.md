@@ -1,6 +1,6 @@
 ---
-title: 疑難排解 Microsoft Defender ATP 上架問題
-description: 疑難排解裝置上架或 Microsoft Defender ATP 服務可能發生的問題。
+title: 疑難排解 Microsoft Defender 的端點上架問題
+description: 疑難排解裝置上架或 Microsoft Defender for Endpoint service 時可能發生的問題。
 keywords: 疑難排解上架、上架問題、事件檢視器、資料收集和預覽組建、感應器資料和診斷
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3b2c944cd7fc9d629b47947db9d6e8856729e0d7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059275"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689662"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>疑難排解 Microsoft Defender 的端點上架問題
 
@@ -167,7 +167,7 @@ ID | 嚴重性 | 事件說明 | 疑難排解步驟
 
 6. 可指出問題的事件會出現在 **操作** 窗格中。 您可以根據下表中的解決方案，嘗試進行疑難排解：
 
-事件識別碼 | 郵件 | 解決步驟
+事件識別碼 | 訊息 | 解決步驟
 :---:|:---|:---
  `5` | Microsoft Defender for Endpoint service 無法在 _變數_ 上連接至伺服器 | [確定裝置具有網際網路存取權](#ensure-the-device-has-an-internet-connection)。
  `6` | Microsoft Defender for Endpoint service 未架，且找不到任何上架參數。 失敗代碼： _variable_ | [再次執行上架腳本](configure-endpoints-script.md)。
@@ -455,6 +455,6 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
 
 ## <a name="related-topics"></a>相關主題
 
-- [疑難排解 Microsoft Defender for Endpoint](troubleshoot-mdatp.md)
+- [為適用於端點的 Microsoft Defender 疑難排解](troubleshoot-mdatp.md)
 - [板載裝置](onboard-configure.md)
 - [設定裝置 proxy 和網際網路連線設定](configure-proxy-internet.md)

@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 37d31fe93a849871e7da92fff521b6a75beac531
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 71ebe48fdbb8f9995ef2f3429cb8a824ed76f244
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187634"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689638"
 ---
-# <a name="resources-for-microsoft-defender-for-endpoint-for-mac"></a>Mac 版端點的 Microsoft Defender 資源
+# <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 資源
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -80,7 +80,7 @@ ms.locfileid: "51187634"
 
 ## <a name="uninstalling"></a>卸載
 
-有幾種方式可以為 Mac 卸載 Microsoft Defender for Endpoint。 請注意，在 JAMF 中提供集中式管理的卸載時，Microsoft Intune 仍無法使用它。
+有幾種方式可以在 macOS 上卸載 Microsoft Defender for Endpoint。 請注意，在 JAMF 中提供集中式管理的卸載時，Microsoft Intune 仍無法使用它。
 
 ### <a name="interactive-uninstallation"></a>互動式卸載
 
@@ -143,7 +143,7 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- 執行下列命令以啟用 Microsoft Defender for Mac 的自動完成功能，並重新啟動終端會話：
+- 執行下列命令，在 macOS 上啟用 Microsoft Defender for Endpoint 的自動完成功能，並重新啟動終端機：
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions

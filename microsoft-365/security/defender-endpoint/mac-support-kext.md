@@ -1,6 +1,6 @@
 ---
-title: 疑難排解 Microsoft Defender for Mac 中的內核擴充問題
-description: 疑難排解 Microsoft Defender for Mac 中的內核擴充相關問題。
+title: 疑難排解 macOS 中的 Microsoft Defender for Endpoint 的內核擴充問題
+description: 疑難排解 macOS 中的 Microsoft Defender for Endpoint 中的內核擴充相關問題。
 keywords: microsoft，defender，atp，mac，內核，擴充
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,31 +18,31 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 32a4819f7a607c69b4dbf45b3284b2f4ea66ffc4
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379501"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689650"
 ---
-# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>疑難排解 Microsoft Defender for Mac 中的內核擴充問題
+# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 macOS 中的 Microsoft Defender for Endpoint 的內核擴充問題
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **適用於：**
 
-- [Mac 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-本文提供如何疑難排解安裝為 Mac 之 Microsoft Defender for Mac 之一部分之核心擴充問題的資訊。
+本文提供如何疑難排解在 macOS 的 Microsoft Defender for Endpoint 中安裝之核心擴充問題的相關資訊。
 
 從 macOS 高的塞拉里昂 (10.13) 開始，macOS 需要明確核准所有內核擴充，才能允許在裝置上執行。
 
-如果您在部署/安裝 Mac 的 Microsoft Defender for Endpoint 時未核准核心擴充，應用程式會顯示橫幅，提示您啟用它：
+如果您未在 macOS 上部署/安裝 Microsoft Defender for Endpoint 時核准核心擴充，應用程式會顯示橫幅，提示您加以啟用：
 
    ![RTP 停用的螢幕擷取畫面](images/mdatp-32-main-app-fix.png)
 
@@ -58,7 +58,7 @@ real_time_protection_available              : true
 ...
 ```
 
-下列各節提供如何解決此問題的指導方針，取決於您用來部署 Microsoft Defender for Mac 的方法。
+下列各節提供如何解決此問題的指引，取決於您用來在 macOS 上部署 Microsoft Defender for Endpoint 的方法。
 
 ## <a name="managed-deployment"></a>受管理的部署
 

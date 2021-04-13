@@ -1,6 +1,6 @@
 ---
-title: 以 Intune 為基礎的 Microsoft Defender for Mac 部署
-description: 使用 Microsoft Intune 安裝適用于 Mac 的 Microsoft Defender 端點。
+title: 在 macOS 上以 Intune 為基礎之 Microsoft Defender for Endpoint 的部署
+description: 使用 Microsoft Intune 在 macOS 上安裝 Microsoft Defender for Endpoint。
 keywords: microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamf，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,27 +18,27 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd74f3a487de4febecb2086cb126c50b8432c342
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 7486bde0886506a5966a95cdb0b85fc009858801
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379557"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689746"
 ---
-# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>以 Intune 為基礎的 Microsoft Defender for Mac 部署
+# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上以 Intune 為基礎之 Microsoft Defender for Endpoint 的部署
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 > [!NOTE]
 > 本檔說明舊版在 macOS 裝置上部署及設定 Microsoft Defender for Endpoint 的方法。 在 MEM 主控台中現在可以使用原生體驗。 在 MEM 主控台中，原生使用者介面的發行方式，可讓系統管理員設定及部署應用程式，並將其傳送至 macOS 裝置。 <br> <br>
->博客文章 [MEM 可簡化 macOS 的 Microsoft Defender For Endpoint 的部署，以](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) 說明新功能。 若要設定應用程式，請移至 [microsoft InTune 中的 Mac 版端點的設定](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos)。 若要部署應用程式，請移至 [使用 Microsoft Intune 的 macOS 裝置新增 Microsoft Defender For Endpoint](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)。
+>博客文章 [MEM 可簡化 macOS 的 Microsoft Defender For Endpoint 的部署，以](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) 說明新功能。 若要設定應用程式，請移至 [microsoft InTune 中 macOS 的 Microsoft Defender For Endpoint 的設定](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos)。 若要部署應用程式，請移至 [使用 Microsoft Intune 的 macOS 裝置新增 Microsoft Defender For Endpoint](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)。
 
 **適用於：**
 
-- [Mac 版適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 
-本主題說明如何透過 Intune 為 Mac 版端點部署 Microsoft Defender。 成功的部署需要完成下列所有步驟：
+本主題說明如何透過 Intune 在 macOS 上部署 Microsoft Defender for Endpoint。 成功的部署需要完成下列所有步驟：
 
 1. [下載安裝和上架套件](#download-installation-and-onboarding-packages)
 1. [用戶端裝置設定](#client-device-setup)
@@ -48,7 +48,7 @@ ms.locfileid: "51379557"
 
 ## <a name="prerequisites-and-system-requirements"></a>必要條件和系統需求
 
-開始之前，請參閱 [《 Microsoft Defender For Mac 的主要端點」頁面](microsoft-defender-endpoint-mac.md) ，以取得目前軟體版本之必要條件和系統需求的描述。
+開始之前，請參閱 [macOS 頁面上的主要 Microsoft Defender For Endpoint](microsoft-defender-endpoint-mac.md) ，以取得目前軟體版本之必要條件和系統需求的描述。
 
 ## <a name="overview"></a>概觀
 
@@ -184,7 +184,7 @@ ms.locfileid: "51379557"
 
 3. 開啟設定檔，並上傳 intune/kext.xml。 此檔案是在上述其中一個區段中建立的。
 
-4. 選取 [確定]。
+4. 選取 **[確定]**。
 
     ![從自訂設定設定檔的檔案中匯入設定](images/mdatp-6-systemconfigurationprofiles.png)
 
@@ -201,9 +201,9 @@ ms.locfileid: "51379557"
    >
    > 此設定設定檔會授與 Microsoft Defender for Endpoint 的完整磁片存取權。 如果您先前已透過 Intune 設定 Microsoft Defender for Endpoint，建議您使用此設定檔更新部署。
 
-9. 做為端點偵測和回應功能的一部分，Mac 版端點的 Microsoft Defender 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。 從 [我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)下載 **netfilter** ，將其儲存為 netext.xml，然後使用與上述各節相同的步驟進行部署。 <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. 在端點偵測和回應功能中，Microsoft Defender for Endpoint on macOS 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。 從 [我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)下載 **netfilter** ，將其儲存為 netext.xml，然後使用與上述各節相同的步驟進行部署。 <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
-10. 若要允許 Microsoft Defender for Mac 和 Microsoft 自動更新在 macOS 10.15 (Catalina) 上的 UI 中顯示通知，請 `notif.mobileconfig` 從 [我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) 下載並將其匯入為自訂的負載。 <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
+10. 若要讓 Microsoft Defender for Endpoint on macOS 和 Microsoft 自動更新在 macOS 10.15 (Catalina) 上顯示通知，請 `notif.mobileconfig` 從 [我們的 GitHub 存放庫](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) 下載，然後將其匯入為自訂的負載。 <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
 11. 選取 [ **管理 > 指派**]。  在 [ **包含** ] 索引標籤中，選取 [ **指派給所有使用者 & 所有裝置**]。
 
@@ -227,9 +227,9 @@ ms.locfileid: "51379557"
 6. 將 [ *忽略應用程式版本* ] 設定為 **[是]**。 其他設定可以是任意值。
 
     > [!CAUTION]
-    > 設定 [ *忽略應用程式版本* ] **不** 會影響應用程式透過 Microsoft AutoUpdate 接收更新的能力。 如需如何更新產品的其他資訊，請參閱 [部署 Microsoft Defender For Mac 的更新](mac-updates.md) 。
+    > 設定 [ *忽略應用程式版本* ] **不** 會影響應用程式透過 Microsoft AutoUpdate 接收更新的能力。 如需有關如何更新產品的其他資訊，請參閱 [在 macOS 上部署 Microsoft Defender For Endpoint 的更新](mac-updates.md) 。
     >
-    > 如果 Intune 上傳的版本低於裝置上的版本，則會安裝較低的版本，因此會有效地將 Microsoft Defender 用於端點。 這可能會導致非運作的應用程式。 如需如何更新產品的其他資訊，請參閱 [部署 Microsoft Defender For Mac 的更新](mac-updates.md) 。 如果您部署了將「忽略」 *應用程式版本* 設定為 [ **否**] 的 Microsoft Defender 端點，請將它變更為 **[是]**。 若仍無法在用戶端裝置上安裝 Microsoft Defender for Endpoint，請卸載 Microsoft Defender for Endpoint，然後推入更新的原則。
+    > 如果 Intune 上傳的版本低於裝置上的版本，則會安裝較低的版本，因此會有效地將 Microsoft Defender 用於端點。 這可能會導致非運作的應用程式。 如需有關如何更新產品的其他資訊，請參閱 [在 macOS 上部署 Microsoft Defender For Endpoint 的更新](mac-updates.md) 。 如果您部署了將「忽略」 *應用程式版本* 設定為 [ **否**] 的 Microsoft Defender 端點，請將它變更為 **[是]**。 若仍無法在用戶端裝置上安裝 Microsoft Defender for Endpoint，請卸載 Microsoft Defender for Endpoint，然後推入更新的原則。
      
     > [!div class="mx-imgBorder"]
     > ![在應用程式新增中顯示應用程式資訊](images/mdatp-8-intuneappinfo.png)
@@ -282,4 +282,4 @@ ms.locfileid: "51379557"
 
 ## <a name="uninstallation"></a>卸載
 
-請參閱 [卸載](mac-resources.md#uninstalling) 以取得如何從用戶端裝置移除 Microsoft Defender for Mac 之端點的詳細資料。
+請參閱 [卸載](mac-resources.md#uninstalling) 以取得如何在 macOS 從用戶端裝置移除 Microsoft Defender for Endpoint 的詳細資料。

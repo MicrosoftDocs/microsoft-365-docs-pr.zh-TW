@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c94c6839c17b3bbb432cef12fe58723d0cc2ecff
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 6cfd2953e752ed9c96f7f16a3ec7ea1fd8862ab2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587236"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689734"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>為 iOS 部署 Microsoft Defender for Endpoint
+# <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -91,7 +91,7 @@ ms.locfileid: "51587236"
 
 ## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>針對監督模式設定 Microsoft Defender for Endpoint
 
-IPadOS 應用程式的 Microsoft Defender for iOS Endpoint 具備特定的功能，可在受監督的 iOS/裝置上進行特殊的功能，但前提是這些裝置類型的平臺已增加管理功能。 若要利用這些功能，終結點應用程式必須知道裝置是否處於監督模式。
+在 iOS 應用程式上的 Microsoft Defender for Endpoint 具有 iOS/iPadOS 裝置的特殊能力，但前提是這些裝置類型的平臺已增加管理功能。 若要利用這些功能，終結點應用程式必須知道裝置是否處於監督模式。
 
 ### <a name="configure-supervised-mode-via-intune"></a>透過 Intune 設定監督模式
 

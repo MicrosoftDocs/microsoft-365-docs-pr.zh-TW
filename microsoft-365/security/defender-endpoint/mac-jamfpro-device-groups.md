@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 36db18ba16bb51f3be0cbaba7d4ca4d27195e85d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6c1d6ae5d4635186bf0a1cbb55c7f906e8584f01
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187658"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689686"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-for-macos-device-groups-in-jamf-pro"></a>在 Jamf Pro 中為 macOS 裝置群組設定 Microsoft Defender for Endpoint
+# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>在 Jamf Pro 中的 macOS 裝置群組上設定 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,4 +52,4 @@ ms.locfileid: "51187658"
     ![Jamf Pro3 的影像](images/contoso-machine-group.png)
 
 ## <a name="next-step"></a>下一步
-- [為 Jamf Pro 中的 macOS 原則設定 Microsoft Defender for Endpoint](mac-jamfpro-policies.md)
+- [在 Jamf Pro 的 macOS 原則上設定 Microsoft Defender for Endpoint](mac-jamfpro-policies.md)

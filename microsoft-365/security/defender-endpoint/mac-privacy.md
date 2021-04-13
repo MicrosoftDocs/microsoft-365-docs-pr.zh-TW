@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d1d4aa871438e10aed86ddd436757072fb6b5cc4
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 93715f761beded95cfaa91b4747a2e4b5a3c61c1
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587500"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689674"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>適用于 Mac 的 Microsoft Defender 端點隱私權
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 隱私權
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,13 +35,13 @@ ms.locfileid: "51587500"
 > 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何在使用 Microsoft Defender for Mac 時收集和使用資料。
+Microsoft 致力於為您提供您所需的資訊和控制項，讓您選擇在 macOS 上使用 Microsoft Defender 做為端點時，如何收集和使用資料。
 
 本主題說明產品內可用的隱私權控制，如何使用原則設定管理這些控制項，以及收集的資料事件的詳細資料。
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-for-mac"></a>適用于 Mac 的端點 Microsoft Defender 中的隱私權控制
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-macos"></a>Microsoft Defender for Endpoint on macOS 的隱私權控制的概覽
 
-本節說明 Microsoft Defender for Mac 所收集的不同資料類型的隱私權控制。
+本節說明 Microsoft Defender for Endpoint on macOS 所收集之不同資料類型的隱私權控制。
 
 ### <a name="diagnostic-data"></a>診斷資料
 
@@ -73,7 +73,7 @@ Microsoft Defender for Endpoint client 軟體有兩個層級的診斷資料，�
 
 如果您是 IT 管理員，您可能會想要在企業層級設定這些控制項。 
 
-在 [Microsoft Defender For Mac 的「設定偏好設定](mac-preferences.md)」中，會詳細說明上述各節所述各類資料的隱私權控制。
+在 [macOS 上的 Microsoft Defender For Endpoint 的 [設定偏好設定](mac-preferences.md)] 中，詳細說明上述各節所述各類資料的隱私權。
 
 就像任何新的原則設定一樣，您應該在有限的受控環境中仔細測試這些設定，以確保您設定的設定在您的組織中更廣泛地實施原則設定之前具有適當的效果。
 
@@ -94,7 +94,7 @@ Microsoft Defender for Endpoint client 軟體有兩個層級的診斷資料，�
 | org_id                  | 與裝置所屬之企業相關聯的唯一識別碼。 可讓 Microsoft 識別問題是否會影響一組選擇的企業，以及受影響的企業數目。 |
 | 主機 名                | 本機裝置名稱 (，但沒有 DNS 尾碼) 。 可讓 Microsoft 識別問題是否會影響一組選取的安裝，以及受到影響的使用者人數。 |
 | product_guid            | 產品的唯一識別碼。 可讓 Microsoft 區分影響不同產品風格的問題。 |
-| app_version             | Mac 應用程式的 Microsoft Defender 端點版本。 可讓 Microsoft 找出顯示問題的產品版本，使其可正確地設定優先順序。|
+| app_version             | MacOS 應用程式上的 Microsoft Defender for Endpoint 版本。 可讓 Microsoft 找出顯示問題的產品版本，使其可正確地設定優先順序。|
 | sig_version             | 安全性情報資料庫的版本。 可讓 Microsoft 找出顯示問題的安全性情報版本，使其可正確地設定優先順序。 |
 | supported_compressions  | 例如，應用程式支援的壓縮演算法清單 `['gzip']` 。 可讓 Microsoft 瞭解哪些類型的 compressions 可以在與應用程式通訊時使用。 |
 | release_ring            | 裝置與 (相關聯的環，例如，內幕人士快、內幕人士緩慢、實際執行) 。 可讓 Microsoft 識別可能發生問題的發行環，使其可正確地設定優先順序。 |
@@ -174,7 +174,7 @@ Microsoft Defender for Endpoint client 軟體有兩個層級的診斷資料，�
 
 | 欄位            | 描述 |
 | ---------------- | ----------- |
-| 版本          | Mac 版的 Microsoft Defender for Endpoint。 |
+| 版本          | MacOS 上的 Microsoft Defender for Endpoint 版本。 |
 | instance_id      | 在內核擴充啟動時產生的唯一識別碼。 |
 | trace_level      | 內核擴充的追蹤層級。 |
 | 子系統        | 用於即時保護的底層子系統。 |
@@ -189,8 +189,8 @@ Microsoft Defender for Endpoint client 軟體有兩個層級的診斷資料，�
 僅當使用者同意提交功能時，才會收集診斷記錄。 下列檔案會收集為支援記錄檔的一部分：
 
 - */Library/Logs/Microsoft/mdatp/* 下的所有檔案
-- Microsoft Defender for Mac 所建立及使用之 */Library/Application 支援/Microsoft/Defender/* 所用的檔子集
-- Microsoft Defender for Mac 所使用之 */Library/Managed 偏好* 設定下的檔案子集
+- */Library/Application 支援/microsoft/Defender/* （由 microsoft Defender for Endpoint on macOS 所建立及使用）下的檔案子集
+- MacOS 上的 Microsoft Defender for Endpoint 所使用之 [ */Library/Managed 偏好* 設定] 底下的檔案子集
 - /Library/Logs/Microsoft/autoupdate.log
 - $HOME/Library/Preferences/com.microsoft.autoupdate2.plist
 
