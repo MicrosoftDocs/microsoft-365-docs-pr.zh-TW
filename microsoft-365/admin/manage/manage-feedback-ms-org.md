@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理您的使用者可以傳送給 Microsoft 有關 Microsoft 產品的意見反應。
-ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650013"
+ms.locfileid: "51657004"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>管理組織的 Microsoft 意見反應
 
