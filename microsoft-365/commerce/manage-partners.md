@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 瞭解如何與 Microsoft 認證的解決方案提供者合作，) 為組織或學校購買及管理產品及服務的 (合作夥伴。
-ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f4c270e179a3d52616f6d7efb049beac4d1a8e03
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579731"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51749851"
 ---
 # <a name="manage-partner-relationships"></a>管理合作夥伴關係
 
@@ -30,7 +30,7 @@ ms.locfileid: "51579731"
 2. 合作夥伴將電子郵件要求傳送給客戶，以建立合作夥伴關係。
 3. 客戶接受 Microsoft 365 系統管理中心的邀請，並開始與合作夥伴合作。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 您必須是全域或計費系統管理員，才可執行這些步驟。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。
 
@@ -38,7 +38,7 @@ ms.locfileid: "51579731"
 
 有幾種方式可以讓合作夥伴與您搭配運作。 根據您的既定業務需求，他們會在傳送要求以與您合作時，選擇其中一種類型。
 
-| 合作夥伴類型 | 說明 |
+| 合作夥伴類型 | 描述 |
 | ------ | ------------------- |
 | 轉銷商 | 向您的組織或學校銷售 Microsoft 產品的合作夥伴。 |
 | 委派的管理員 | 可管理組織或學校產品及服務的合作夥伴。 在 Azure Active Directory (AD) 中，該夥伴是您租使用者的全域管理員。 此角色可讓他們管理服務，例如建立使用者帳戶、指派及管理授權，以及密碼重設。 |
@@ -85,7 +85,7 @@ ms.locfileid: "51579731"
 
 您可以隨時移除夥伴中的系統管理員角色。 移除系統管理員角色並不會移除夥伴關聯。 他們仍然可以使用不同的容量，例如轉銷商。 如果您決定不想要再使用合作夥伴，請與您的夥伴聯繫以結束關聯。
 
-1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作夥伴關係</a>] 頁面。
+1. 在系統管理中心中，移至 [**設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作夥伴關係</a>] 頁面。
 2. 在 [ **合作夥伴關係** ] 頁面上，選取包含您要移除之夥伴名稱的列。
 3. 選取包含同伴名稱的列。
 4. 在 [合作夥伴] 頁面上，選取 [ **移除角色**]。

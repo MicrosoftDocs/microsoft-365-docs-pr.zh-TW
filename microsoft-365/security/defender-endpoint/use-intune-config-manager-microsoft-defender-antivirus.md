@@ -15,12 +15,14 @@ ms.date: 10/26/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 16cd8492ceedaba200dea70a29c83401467ae8ee
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 647bda97cfbec5e1583ef66ebd3e9d445371d540
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690144"
+ms.locfileid: "51749863"
 ---
 # <a name="use-microsoft-endpoint-manager-and-microsoft-intune-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 Microsoft 端點管理員和 Microsoft Intune 來設定及管理 Microsoft Defender 防毒程式
 

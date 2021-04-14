@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員可以透過系統管理中心開啟支援票證。
-ms.openlocfilehash: e0155ee9e263d4b62dced0e2bd943781ccf93a4c
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644252"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755615"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
@@ -61,11 +61,7 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 
 ## <a name="commonly-used-microsoft-365-admin-center-roles"></a>常用的 Microsoft 365 系統管理中心角色
 
-::: moniker range="o365-worldwide"
-
 在 Microsoft 365 系統管理中心中，您可以移至 [角色]，然後選取任何角色來開啟其詳細資料窗格。 選取 [權限] 索引標籤，以檢視系統管理員指派該角色具備權限之工作的詳細清單。 選取 [已指派] 或 [指派的系統管理員] 索引標籤來將使用者新增至角色。
-
-::: moniker-end
 
 您可能只需要在組織中指派下列角色。 根據預設，我們會先顯示大部分組織使用的角色。 如果您找不到某個角色，請移至清單底部，然後選取 [依類別顯示全部]。 (如需詳細資訊，包括與角色相關聯的 Cmdlet，請參閱 [Azure Active Directory 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。)
 

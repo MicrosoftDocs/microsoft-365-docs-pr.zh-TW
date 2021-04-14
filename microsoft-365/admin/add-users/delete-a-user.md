@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 瞭解如何刪除使用者帳戶。 決定要如何處理使用者的電子郵件和 OneDrive 內容。 並決定是否要保留產品授權或停止付款。
-ms.openlocfilehash: 5c647d353f807f20a35c889ba1d6f7715343c5cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0069577b83c318fa57eaceddccc93b5832e634e0
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904441"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755549"
 ---
 # <a name="delete-a-user-from-your-organization"></a>刪除貴組織中的使用者
   
@@ -59,15 +59,21 @@ ms.locfileid: "50904441"
 由於引導體驗逐步逐步完成刪除使用者的步驟，以下是如何開始的方式。
 
 ::: moniker range="o365-worldwide"
+
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+
 ::: moniker-end
 
 2. 選取您要刪除的使用者，然後選取 [ **刪除使用者**]。
@@ -113,7 +119,7 @@ ms.locfileid: "50904441"
   
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。 如果您未看到此選項，則表示您不是全域系統管理員或計費系統管理員，且無法執行此步驟。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。 如果您未看到此選項，則表示您不是全域系統管理員或計費系統管理員，且無法執行此步驟。
 
 2. 在 [ **產品** ] 索引標籤上，選取您要移除授權的訂閱。
 
@@ -121,7 +127,7 @@ ms.locfileid: "50904441"
 
 4. 在 [ **移除授權** ] 窗格中的 [ **新數量**] 底下的 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數。 例如，如果您有100授權，而且想要移除五個，請輸入95。
 
-5. 選取 [儲存]。
+5. 選取 **[儲存]**。
 
 稍後當您執行步驟以將其他人員新增至您的公司時，系統會提示您同時購買授權，只需一個步驟即可！
 

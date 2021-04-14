@@ -10,16 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/31/2021
+ms.date: 04/13/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6c411507b834bd7f09f4688bda11e3ece9f6d7c8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: b8122807b8e26a848781f9f66f8e13032345f3fd
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690168"
+ms.locfileid: "51749911"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>使用群組原則設定來設定及管理 Microsoft Defender 防毒程式
 
@@ -87,9 +89,9 @@ ms.locfileid: "51690168"
 | 修復 | 指定一天中執行計畫完整掃描以完成修復的時間 | [設定排定的 Microsoft Defender 防病毒掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | 報告 | 關閉增強型通知 | [設定出現在端點上的通知](configure-notifications-microsoft-defender-antivirus.md)
 | 根 | 關閉 Microsoft Defender 防毒程式 | 未使用 (此設定必須設定為 [ **未** 設定]，以確保任何已安裝的協力廠商防病毒應用程式正確運作) 
-| 根 | 定義位址以略過 proxy 伺服器 | 不再相關 |
-| 根 | 定義 proxy 自動設定 (。用於連線至網路的 pac)  | 不再相關 |
-| 根 | 定義用來連線到網路的 proxy 伺服器 | 不再相關 |
+| 根 | 定義位址以略過 proxy 伺服器 | 未使用 |
+| 根 | 定義 proxy 自動設定 (。用於連線至網路的 pac)  | 未使用 |
+| 根 | 定義用來連線到網路的 proxy 伺服器 | 未使用 |
 | 根 | 設定清單的本機系統管理員合併行為 | [防止或允許使用者本機修改原則設定](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 根 | 允許反惡意軟體服務以一般優先順序啟動 | [設定 Microsoft Defender 防病毒掃描的修復](configure-remediation-microsoft-defender-antivirus.md) |
 | 根 | 允許反惡意程式碼服務持續保持執行狀態 | [設定 Microsoft Defender 防病毒掃描的修復](configure-remediation-microsoft-defender-antivirus.md) |

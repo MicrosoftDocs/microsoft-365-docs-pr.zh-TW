@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8871274cabae0762cecc2ff513afe93c2d4811f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: fbe9d0006a2f1779e1bad60dc283a5a40429dbdd
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688498"
+ms.locfileid: "51750013"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 macOS 上的 Microsoft Defender for Endpoint 的 cloud connectivity 問題
 
@@ -38,7 +38,7 @@ ms.locfileid: "51688498"
 本主題說明如何針對 macOS 中的 Microsoft Defender for Endpoint 進行 cloud connectivity 問題的疑難排解。
 
 ## <a name="run-the-connectivity-test"></a>執行連線測試
-若要測試 Mac 版的 Endpoint 是否可以使用目前的網路設定與雲端通訊，請從命令列執行連線測試：
+若要測試 Mac 上的 Endpoint for Endpoint 是否可以使用目前的網路設定與雲端通訊，請從命令列執行連線測試：
 
 ```Bash
 mdatp connectivity test

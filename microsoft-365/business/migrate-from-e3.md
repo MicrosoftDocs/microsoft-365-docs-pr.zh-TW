@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何將您的業務移至 Microsoft 365 商務版，從 Office 365 E3。
-ms.openlocfilehash: ffb82fa40f05383260ac1b97ed0bdf5f2f30c1df
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f2b7962918186f4a1063c5a66596135c2972ec71
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578320"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51749993"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務版 Premium
 
@@ -49,7 +49,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | 商務用 OneDrive    | 每個使用者 1 TB 的儲存空間限制    | 無限制 | 
 | Yammer、SharePoint 線上、Planner、Stream    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
-| Outlook Customer Manager    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | | 
+| MileIQ    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | | 
 | **威脅防護**        | | | 
 | 適用於 Office 365 的 Defender 方案 1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
 | **身分識別管理**        | | | 
@@ -60,7 +60,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | 從 Win 7/8.1 Pro 授權到 Windows 10 專業版的升級許可權|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    || 
 | **資訊保護**        | | |
 |Office 365 資料外洩防護|    ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)|![隨附于 Office 365 E3](../media/check-mark.png)|
-|Azure 資訊保護方案1，Bitlocker 強制執行|![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)||
+|Azure 資訊保護方案1，BitLocker 強制執行|![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)||
 |Azure 資訊保護方案1，敏感度標籤|![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)||
 |**用戶端存取許可證 (CAL 許可權)**|||
 |Enterprise CAL 套件 (Exchange、SharePoint、Skype) ||![隨附于 Office 365 E3](../media/check-mark.png)|

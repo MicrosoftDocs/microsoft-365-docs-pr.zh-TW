@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: 9b58c6fa51fbca5d78680b4b13cbbc2129d9c393
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903721"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755581"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
@@ -42,7 +42,6 @@ ms.locfileid: "50903721"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。
-
 
 ::: moniker-end
 
@@ -143,66 +142,26 @@ ms.locfileid: "50903721"
 - [商務用 Skype Online 會議參與者活動](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
   
 - [商務用 Skype Online 點對點活動](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
-  
-::: moniker range="o365-worldwide"
 
 - [Yammer 活動](yammer-activity-report-ww.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [美國政府的 Yammer 活動](yammer-activity-report.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 - [Yammer 裝置使用量](yammer-device-usage-report-ww.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [美國政府的 Yammer 裝置使用量](yammer-device-usage-report.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 - [Yammer 群組活動報告](yammer-groups-activity-report-ww.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [美國政府的 Yammer 群組活動報告](yammer-groups-activity-report.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 - [Microsoft Teams 使用者活動](microsoft-teams-user-activity-preview.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [適用於美國政府的 Microsoft Teams 使用者活動](microsoft-teams-user-activity.md)
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 - [Microsoft Teams 裝置使用量](microsoft-teams-device-usage-preview.md)
 
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 - [適用於美國政府的 Microsoft Teams 裝置使用量 ](microsoft-teams-device-usage.md)
-
-::: moniker-end
 
 ## <a name="how-to-view-licensing-information"></a>如何檢視授權資訊
 

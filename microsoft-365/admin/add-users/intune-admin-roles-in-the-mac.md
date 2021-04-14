@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
-ms.openlocfilehash: 7f733dab02ab3ff33131be96a96451d7d1c14f55
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 60a1f21e65df007e78077d8c3bb22161313c1073
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904405"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755723"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的 Intune 系統管理員角色
 
@@ -31,11 +31,7 @@ Microsoft 365 系統管理中心可讓您管理某些 Microsoft Intune 角色。
 
 如需在 Microsoft 365 系統管理中心指派角色的詳細資訊，請參閱[指派系統管理員角色](assign-admin-roles.md)。
 
-::: moniker range="o365-worldwide"
-
 在 Microsoft 365 系統管理中心中，您可以移至 [角色]，然後選取任何角色來開啟其詳細資料窗格。 選取 [權限] 索引標籤，以檢視系統管理員指派該角色具備權限之工作的詳細清單。 選取 [已指派] 或 [指派的系統管理員] 索引標籤來將使用者新增至角色。
-
-::: moniker-end
 
 ## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心提供的 Microsoft Intune 角色
 

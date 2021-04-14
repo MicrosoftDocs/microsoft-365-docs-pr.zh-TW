@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 瞭解如何在人員離開組織時保留員工的檔案和電子郵件。
-ms.openlocfilehash: 38cc44bbe602f3c8c38ca54391d0967fbafbfcf7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17911e4a4551bba07d2c2ad034941bba737dcc1d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906309"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755603"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>存取及備份離職使用者的資料
 
@@ -44,8 +44,22 @@ ms.locfileid: "50906309"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。  
-    
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+
+::: moniker-end
+
 2. 選取使用者。
 
 3. 在右窗格中，選取 [ **OneDrive**]。 在 [ **存取** 檔案] 底下，選取 [ **建立檔的連結**]。
@@ -56,69 +70,27 @@ ms.locfileid: "50906309"
 > 您一次最多可以移動或複製 500 MB 的檔案和資料夾。<br/>
 > 當您移動或複製具有版本記錄的檔時，只會移動最新的版本。  
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。  
-
-2. 選取使用者。
-
-3. 在右窗格中，展開 [ **OneDrive 設定**]，然後按一下 [ **存取**] 旁的 [ **存取** 檔案]。
-
-4. 選取連結以開啟檔案位置。 將檔案下載至您的電腦，或選取 [ **移至** ] 或 [ **複製至** ] 以移動或複製至您自己的 OneDrive 或共用文件庫。 
-
-> [!NOTE]
-> 您一次最多可以移動或複製 500 MB 的檔案和資料夾。<br/>
-> 當您移動或複製具有版本記錄的檔時，只會移動最新的版本。  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。 
-
-2. 選取使用者。
-
-3. 在右窗格中，展開 [ **OneDrive 設定**]，然後按一下 [ **存取**] 旁的 [ **存取** 檔案]。
-
-4. 選取連結以開啟檔案位置。 將檔案下載至您的電腦，或選取 [ **移至** ] 或 [ **複製至** ] 以移動或複製至您自己的 OneDrive 或共用文件庫。  
-
-> [!NOTE]
-> 您一次最多可以移動或複製 500 MB 的檔案和資料夾。<br/>
-> 當您移動或複製具有版本記錄的檔時，只會移動最新的版本。  
-
-::: moniker-end
-    
-
-
 ## <a name="revoke-admin-access-to-a-users-onedrive"></a>撤銷使用者 OneDrive 的系統管理員存取權
 
 如同全域系統管理員，您可以在使用者的 OneDrive 中存取內容，但您可能想要在不再需要時移除存取權。 
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">以全域</a>系統管理員身分登入系統管理員或 SharePoint 管理員。 
-
-    如果您收到的訊息您沒有存取系統管理中心的許可權，則您的組織不具備系統管理員許可權。
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">以全域</a>系統管理員身分登入系統管理員或 SharePoint 管理員。
-
-    如果您收到的訊息您沒有存取系統管理中心的許可權，則您的組織不具備系統管理員許可權。
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的系統管理中心。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">以全域</a>系統管理員身分登入系統管理員或 SharePoint 管理員。
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 的系統管理中心。
 
-    如果您收到的訊息您沒有存取系統管理中心的許可權，則您的組織不具備系統管理員許可權。
-
-::: moniker-end
+::: moniker-end 
 
 2. 在左窗格中，選取 [系統 **管理中心**] \> **SharePoint**。 (您可能需要選取 [全部顯示] 才能查看系統管理中心的清單。)
 
