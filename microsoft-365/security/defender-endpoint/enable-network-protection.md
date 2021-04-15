@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a513013c4b5f41cf95b876648882cb56ba818b32
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570993"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768995"
 ---
 # <a name="turn-on-network-protection"></a>開啟網路保護
 
@@ -28,20 +28,24 @@ ms.locfileid: "51570993"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [網路保護](network-protection.md) 可協助防止員工使用任何應用程式存取可能會在網際網路上主控網路釣魚詐騙、入侵和其他惡意內容的危險網域。 您可以在測試環境中 [審核網路保護](evaluate-network-protection.md) ，以查看在啟用之前將封鎖哪些應用程式。
 
-[深入瞭解網路篩選設定選項](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[深入瞭解網路篩選設定選項](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## <a name="check-if-network-protection-is-enabled"></a>檢查是否已啟用網路保護
 
 使用登錄編輯程式檢查是否已在本機裝置上啟用網路保護。
 
 1. 選取工作列中的 [ **開始** ] 按鈕，然後輸入 **regedit** 開啟登錄編輯程式
-1. 選擇側邊功能表中的 [ **HKEY_LOCAL_MACHINE**
-1. 流覽嵌套的功能表至 **軟體**  >  **原則**  >  **Microsoft**  >  **Windows defender**  >  **windows defender 利用防護**  >  **網路保護**
-1. 選取 [ **EnableNetworkProtection** ]，以查看裝置上目前的網路保護狀態。
+
+2. 選擇側邊功能表中的 [ **HKEY_LOCAL_MACHINE**
+
+3. 流覽嵌套的功能表至 **軟體**  >  **原則**  >  **Microsoft**  >  **Windows defender**  >  **windows defender 利用防護**  >  **網路保護**
+
+4. 選取 [ **EnableNetworkProtection** ]，以查看裝置上目前的網路保護狀態。
 
     * 0或 **關閉**
     * 1或 **開啟**
@@ -83,9 +87,9 @@ ms.locfileid: "51570993"
 
 1. 登入 Microsoft 端點管理員管理中心 (https://endpoint.microsoft.com)
 
-2. 建立或編輯 [endpoint protection 設定檔](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
+2. 建立或編輯 [endpoint protection 設定檔](/mem/intune/protect/endpoint-protection-configure)
 
-3. 在設定檔流程中的「設定設定」下，移至 **Microsoft Defender 利用防護**  >  **網路篩選**  >  **網路保護**  >  **啟用** 或 **僅限審核**
+3. 在設定檔流程中的 [**設定設定**] 底下，移至 [ **Microsoft Defender exploit**  >  protection **網路篩選**]  >  **網路保護**  >  **啟用** 或 **僅限審核**
 
 ### <a name="group-policy"></a>群組原則
 
@@ -116,7 +120,7 @@ ms.locfileid: "51570993"
 
 1. 選取 [ **啟動** ] 並輸入 **Regedit** 以開啟 **登錄編輯程式**。
 
-2. 流覽至 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection**
+2. 流覽至 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
 
 3. 選取 **EnableNetworkProtection** 並確認值：
    * 0 = 關閉

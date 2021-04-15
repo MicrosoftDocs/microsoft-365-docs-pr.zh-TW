@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 287ad9adeccd527b756bdd5304d3c89fc1b2d789
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7d12afd27288655f4f5a82eeed24686f27171a7a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060488"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765392"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解決方案
 
@@ -45,12 +45,12 @@ Microsoft Defender for Endpoint 提供綜合的伺服器保護解決方案，包
 Microsoft Defender for Endpoint connector 可讓您將來自 Microsoft Defender for Endpoint 的警示資料流程成 Azure Sentinel。 這可讓您更深入地分析整個組織的安全性事件，並建立行動行動以取得有效且立即的回應。
 
 ### <a name="azure-information-protection"></a>Azure 資訊保護
-將敏感性資料保持安全，同時透過資料探索和資料保護在工作場所中實現生產力。
+近來，我們最近取代 Azure 資訊保護整合，因為在端點 DLP 功能中，會針對儲存在端點裝置上的機密資料，結合使用已改善的探索和保護解決方案，以更深入的方式與解決方案之間的整合。 這已于下列 [博客](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555)宣告。 我們建議客戶移至使用端點 DLP。
 
 ### <a name="conditional-access"></a>條件式存取
 Microsoft Defender for Endpoint 的動態裝置風險分數已整合到條件式存取評估中，以確保只有安全裝置能夠存取資源。 
 
-### <a name="microsoft-cloud-app-security"></a>Microsoft 雲端應用程式安全性
+### <a name="microsoft-cloud-app-security"></a>Microsoft 雲端 App 安全性
 Microsoft Cloud App Security 利用 Microsoft Defender for Endpoint endpoint 信號來允許直接查看 cloud 應用程式使用情形，包括使用不受支援的雲端服務 (陰影它) 從所有 Microsoft Defender for Endpoint 受監視裝置。
 
 ### <a name="microsoft-defender-for-identity"></a>適用於身分識別的 Microsoft Defender

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18422f74d87bbadf014de24849235ce5c25bd614
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920465"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768887"
 ---
 # <a name="device-requirements"></a>裝置需求
 
@@ -38,7 +38,7 @@ Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 
 - 戴爾
 - 惠普
 - 聯想
-- 微軟
+- Microsoft
 
 
 ### <a name="installed-software"></a>已安裝軟體
@@ -46,7 +46,7 @@ Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 
 裝置必須預先安裝此軟體：
 
 - Windows 10 企業版、專業版或專業版工作站版
-- Microsoft Office 隨選即用的64位版本 
+- 適用于企業的 Microsoft 365 應用程式的64位版本 
 - 所有適用的裝置驅動程式
 
 
@@ -57,7 +57,7 @@ Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 
 - 啟用 UEFI 安全引導 
 - 受信任的平臺模組2。0 
 - 具備虛擬化的安全性 
-- 支援管理程式保護的程式碼完整性 
+- [虛擬機器監控程式-BIOS 支援的受保護程式碼完整性](/windows-hardware/drivers/bringup/device-guard-and-credential-guard)
 
 如需這些功能及服務所使用之相關技術的詳細資訊，請參閱 [Microsoft 受管理的桌面技術](../intro/technologies.md)。
 
@@ -72,12 +72,13 @@ Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 
 
 如果裝置是在2020年6月1日之後進行，也應同時有紅外相機、指紋辨識器或兩者，以便支援 [Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)。
 
-## <a name="recommended-requirements"></a>建議的需求
+## <a name="recommended-features"></a>建議功能
 
-雖然這不是絕對的需求，但如果您選擇具備這些功能的裝置，您的使用者將有更好的體驗：
+如果您選擇具有這些功能的裝置，您的使用者將有更好的體驗：
 
 - Intel vPro 平臺處理器或 AMD Ryzen Pro 處理器
 - SSD 類型的啟動磁片磁碟機，其容量至少為 256 GB
+- 內部裝置記憶體 (RAM) 至少 16 GB
 - 支援新式待命
 - 裝置屬於安全核心電腦類型
 - 支援內核 DMA 保護

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581127"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768623"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
@@ -39,9 +39,9 @@ Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者
 
 當您第一次流覽至 [網路性能] 頁面時，您會看到 [一覽表] 窗格，其中包含全域網路效能對應、整個承租人範圍的網路評估，以及目前問題的清單。 您可以從 [概述] 中深入查看特定的網路效能度量和依位置的問題。 如需詳細資訊，請參閱 [Microsoft 365 系統管理中心的網路效能概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
-您可能需要代表您的組織加入此功能的公開預覽。 接受通常會立即發生，然後您就會看到 [網路連接] 頁面。 
+您可能需要代表您的組織加入此功能的公開預覽。 驗收通常會立即發生，之後您會看到 [網路連接] 頁面。 
 
-流覽至 [網路連線] 頁面時，您會看到 [一覽表] 窗格，其中包含全域網路效能對應、整個承租人範圍的網路評估，以及目前問題的清單。 若要存取此頁面，您必須是 Microsoft 365 內組織的管理員。 報告讀取器系統管理角色對此資訊具有「讀取」許可權。 若要設定網路連線的位置和其他元素，系統管理員必須是伺服器管理員角色的一部分，例如服務支援系統管理員角色。 您可以從 [概述] 中深入查看特定的網路效能度量和依位置的問題。 如需詳細資訊，請參閱 [Microsoft 365 系統管理中心的網路連線概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
+流覽至 [網路連線] 頁面時，您會看到 [一覽表] 窗格，其中包含全域網路效能對應、整個租使用者的網路評估，以及以遠端方式與現場運作之使用者的百分比，以及要採取行動的目前問題清單，以及要進一步調查的目前問題清單。 若要存取此頁面，您必須是 Microsoft 365 內組織的管理員。 報告讀取器系統管理角色對此資訊具有「讀取」許可權。 若要設定網路連線的位置和其他元素，系統管理員必須是伺服器管理員角色的一部分，例如服務支援系統管理員角色。 您可以從 [概述] 中深入查看特定的網路效能度量和依位置的問題。 
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>顯示網路連線評估的先決條件
 
@@ -49,7 +49,7 @@ Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者
 
 ### <a name="1-enable-windows-location-services"></a>1. 啟用 Windows 位置服務
 
-針對此選項，您必須至少要有兩部電腦在支援先決條件的辦公室位置執行。 Windows 版本的 OneDrive 必須是最新的，且已安裝在每一部電腦上。 如需 OneDrive 版本的詳細資訊，請參閱 [OneDrive 版本](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)資訊。 在近期的 Office 365 用戶端應用程式中，計畫加入網路度量。
+針對此選項，您必須至少要有兩部電腦在支援先決條件的辦公室位置執行。 Windows 版本的 OneDrive 必須是最新的，且已安裝在每一部電腦上。 如需 OneDrive 版本的詳細資訊，請參閱 [OneDrive 版本](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)資訊。 在近期，網路度量計畫可以新增至其他 Office 365 用戶端應用程式。
 
 Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應用程式並自行尋找，以測試這種情況。 可在具有設定的單一機器上啟用 **|隱私權 |** 必須啟用設定 _允許應用程式存取您的位置_ 的位置。 您可以使用 MDM 或群組原則，將 Windows Location 服務同意部署至使用設定 _LetAppsAccessLocation_ 的電腦。
 
@@ -61,17 +61,17 @@ Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應�
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. 新增位置及提供 LAN 子網資訊
 
-若為此選項，則不需要 Windows Location 服務和 Wi-Fi。 您的 Windows 版本 OneDrive 必須是最新的，且安裝在每個電腦上的位置。
+若為此選項，則不需要 Windows Location 服務和 Wi-Fi。 您的 Windows 版本 OneDrive 必須是最新的，且至少安裝在同一位置的一部電腦上。
 
-您也需要在系統管理中心的 [網路連線] 頁面中新增位置，或從 CSV 檔案匯入這些位置。 新增的位置必須包含您的 office LAN 子網資訊。
+您也需要在 [ **位置] 頁面** 中新增位置，或從 CSV 檔案匯入這些位置。 新增的位置必須包含您的 office LAN 子網資訊。
 
-自您新增位置後，您可以在城市內定義多個辦事處。
+此選項可讓您在城市內定義多個辦公室。
 
 來自用戶端電腦的所有測試度量，都包括 LAN 子網資訊，與您輸入的 office 位置詳細資料相關聯。 在符合這些先決條件後，應會在24小時內開始顯示度量範例和辦公室位置。
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. 使用 Microsoft 365 network connectivity test 工具手動收集測試報告
 
-針對此選項，您必須在每個位置識別人員。 要求使用者在其具有系統管理許可權的 Windows 電腦上流覽至 [Microsoft 365 網路連線測試](https://connectivity.office.com) 。 在網站上，他們必須登入其 Office 365 帳戶，以取得您想要查看結果的相同組織。 然後，他們應該按一下 [ **執行測試**]。 在測試期間，有一個已下載的 Connectivity test EXE。 他們也需要開啟並執行這種情況。 測試完成後，測試結果會上傳至 Office 365。
+針對此選項，您必須在每個位置識別人員。 要求使用者在其具有系統管理許可權的 Windows 電腦上流覽至 [Microsoft 365 網路連線測試](https://connectivity.office.com) 。 在網站上，他們必須登入其 Office 365 帳戶，以取得您想要查看結果的相同組織。 然後，他們應該按一下 [ **執行測試**]。 在測試期間，有一個已下載的 Connectivity test EXE。 他們必須開啟並執行該程式。 測試完成後，測試結果便會上傳至系統管理中心。
 
 測試報告如果是以 LAN 子網資訊新增，則會連結至該位置，否則只會顯示在城市位置。
 
@@ -79,7 +79,7 @@ Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應�
 
 ## <a name="how-do-i-use-this-information"></a>如何使用此資訊？
 
-**網路洞察力**，其相關的效能建議和網路評估是為了協助您為辦公室位置設計網路周邊。 每個洞察力都會針對使用者存取租使用者時，針對每個地理位置的特定一般問題，提供有關效能特性的詳細資料。 每個網路洞察力的 **效能建議** 提供特定的網路架構設計變更，以改進與 Microsoft 365 網路連接相關的使用者體驗。 網路評估顯示網路連線影響使用者經驗的方式，允許比較不同的使用者位置網路連接。
+**網路洞察力**，其相關的效能建議和網路評估是為了協助您為辦公室位置設計網路周邊。 每個洞察力都會針對使用者存取租使用者時，針對每個地理位置的特定常見網路問題，提供其效能特性的詳細資料。 每個網路洞察力的 **效能建議** 提供特定的網路架構設計變更，以改進與 Microsoft 365 網路連接相關的使用者體驗。 網路評估顯示網路連線影響使用者經驗的方式，允許比較不同的使用者位置網路連接。
 
 **網路評估** 會將許多網路效能度量的集合提煉成商業網路健康情況的快照，以點數從 0-100。 網路評估同時適用于整個承租人和每個地理位置，讓使用者可以從該位置連線到您的租使用者，為 Microsoft 365 系統管理員提供一種簡單的方法來立即抓住商業網路健康情況的 gestalt，並快速深入查看任何全球辦公室位置的詳細報告。
 
@@ -93,13 +93,13 @@ Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應�
 > [!div class="mx-imgBorder"]
 > ![客戶網路到雲端](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-許多企業的網路周邊設定已經成長，主要是用來容納員工網際網路網站存取，而大多數網站卻不會事先知道，而且不受信任。 「主要」和「必要」的重點是避免來自這些未知網站的惡意程式碼和釣魚攻擊。 這個網路設定策略在安全性方面很有説明，可能會導致 Microsoft 365 使用者效能和使用者體驗的降級。
+許多企業的網路周邊設定已經成長，主要是用來容納員工網際網路網站存取，而大多數網站卻不會事先知道，而且不受信任。 必要和必要的重點是避免來自這些未知網站的惡意程式碼和網路釣魚攻擊。 這個網路設定策略在安全性方面很有説明，可能會導致 Microsoft 365 使用者效能和使用者體驗的降級。
 
 ## <a name="how-we-can-solve-these-challenges"></a>我們可如何解決這些難題
 
 企業可以遵循 [Office 365 連線原則](./microsoft-365-network-connectivity-principles.md) ，以及使用 Microsoft 365 系統管理中心的網路連線功能，來改善一般使用者經驗並保護其環境。 在大多數情況下，遵循這些一般原則會對使用者的延遲（服務可靠性和 Microsoft 365 的整體效能）產生重大的積極影響。
 
-Microsoft 有時候會要求您調查大型企業客戶的 Microsoft 365 的網路效能問題，這些問題通常會與客戶網路周邊基礎結構相關的根本原因。 當找到客戶網路周邊問題的常見根本原因時，我們會搜尋識別它所識別的簡單測試度量。 使用識別特定問題的測量臨界值進行測試是非常有價值的，因為我們可以在任何位置測試相同的度量，判斷是否存在此根本原因，並加以共用，以與系統管理員的網路洞察力共用。
+Microsoft 有時候會要求您調查適用于大型企業客戶的 Microsoft 365 網路效能問題，這些問題通常會與客戶的網路周邊基礎結構相關的根本原因。 當找到客戶網路周邊問題的常見根本原因時，我們會搜尋識別它所識別的簡單測試度量。 使用識別特定問題的測量臨界值進行測試是非常有價值的，因為我們可以在任何位置測試相同的度量，判斷是否存在此根本原因，並加以共用，以與系統管理員的網路洞察力共用。
 
 有些網路洞察力只會指出需要進一步調查的問題。 網路洞察力：我們有足夠的測試顯示特定的修正動作，以修正根本原因，會列為建議的 **動作**。 這些建議會根據即時度量，顯示在預先確定的臨界值以外的值，比一般的最佳作法建議更為重要，因為它們是特定于您的環境，而且會在進行建議的變更之後顯示實際的改進。
 
@@ -117,7 +117,7 @@ Microsoft 已從數個 Office 桌面和網頁用戶端，提供支援 Microsoft 
 > [!div class="mx-imgBorder"]
 > ![網路評估](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-您可以在 [位置] 索引標籤中，查看可篩選、排序及編輯之位置的表格視圖。具有特定建議的位置也會包含估計的潛在延遲改進。 這是透過在該位置取得組織使用者的中間延遲，並減去同一個城市中所有組織的中間延遲。
+您可以在 [ **位置** ] 索引標籤中，查看可篩選、排序及編輯之位置的表格視圖。具有特定建議的位置也會包含估計的潛在延遲改進。 這是透過在該位置取得組織使用者的中間延遲，並減去同一個城市中所有組織的中間延遲。
 
 > [!div class="mx-imgBorder"]
 > ![網路洞察力位置](../media/m365-mac-perf/m365-mac-perf-locations.png)
@@ -149,6 +149,7 @@ Microsoft 已從數個 Office 桌面和網頁用戶端，提供支援 Microsoft 
 > [!div class="mx-imgBorder"]
 > ![位置特定詳細資料](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
+
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>與 Microsoft 共用網路評估資料
 
 根據預設，貴組織和網路洞察力的網路評估是與 Microsoft 員工共用。 這不包括來自您員工的任何個人資料，但僅限於您的 office 位置之系統管理中心中所顯示的特定網路評估計量和網路洞察力。 此外，它也不會包含您的 office 位置名稱或街道位址，因此您需要告訴他們您想要討論之 office 的城市和支援識別碼。 如果關閉此功能，表示您與其討論網路連線的 Microsoft 工程師無法查看任何這項資訊。 啟用此設定只會在您啟用之後，共用未來所開始的資料。
@@ -157,7 +158,7 @@ Microsoft 已從數個 Office 桌面和網頁用戶端，提供支援 Microsoft 
 
 針對 LAN 子網的 office 身分識別，您必須預先新增每個位置。 您可以從 CSV 檔案匯入這些位置，而不是在 [ **位置** ] 索引標籤中新增個別的 office 位置。 您可以從其他儲存的地方取得此資料，例如通話品質儀表板或 Active Directory 網站和服務
 
-在 CSV 檔案中，已發現的城市位置會顯示在 [userEntered] 欄中為空白，手動新增的 office 位置會顯示為1。
+在 CSV 檔案中，發現的城市位置會顯示在 [userEntered] 欄中為空白，而手動新增的 office 位置會顯示為1。
 
 1. 在 [主要 _連接至 Microsoft 365_ ] 視窗中，按一下 [ **位置** ] 索引標籤。
 
@@ -170,7 +171,8 @@ Microsoft 已從數個 Office 桌面和網頁用戶端，提供支援 Microsoft 
 
 1. 開啟 CSV 並新增您的位置，方法是針對您想要新增的每個位置，在新行上填上下欄欄位。 保留所有其他欄位為空白;您在其他欄位中輸入的值將會被忽略。
 
-   1. **userEntered** (必要) ：必須為1，以供新的 LAN 子網辦公位置使用
+   1. **userEntered** (必要) ：必須為1，以加入新的局域網子網辦公地點。
+   1. **Name** (必要) ：辦公室位置的名稱
    1. **Address** (必要) ： office 的實體位址
    1. **Latitude** (選用) ：以 Bing 地圖（如果空白）的查閱來填入。
    1. **經度** (選用) ：填入的 Bing 地圖中的位址若為空白
@@ -179,12 +181,12 @@ Microsoft 已從數個 Office 桌面和網頁用戶端，提供支援 Microsoft 
    
 1. 當您已新增辦公室位置並儲存檔案後，請按一下 [**上傳完成**] 欄位旁邊的 [**流覽]** 按鈕，然後選取儲存的 CSV 檔案。
 
-1. 檔案將會自動驗證。 如果有驗證錯誤，您會看到錯誤訊息在匯 _入檔案中有一些錯誤。請複查錯誤，修正匯入檔，然後再試一次。_ 按一下 [連結] 中的 [ **開啟錯誤詳細資料** ]，以取得特定欄位驗證錯誤的清單。
+1. 檔案將會自動驗證。 如果有驗證錯誤，您會看到錯誤訊息：匯 _入檔案中有一些錯誤。請複查錯誤，修正匯入檔，然後再試一次。_ 按一下 [連結] 中的 [ **開啟錯誤詳細資料** ]，以取得特定欄位驗證錯誤的清單。
 
    > [!div class="mx-imgBorder"]
    > ![CSV 匯入錯誤訊息](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
-1. 如果檔案中沒有錯誤，您將會看到 _[報告已就緒] 的訊息。找到要新增的 x 位置和要更新的 x 位置。_ 按一下 [匯 **入** ] 按鈕上傳 CSV。
+1. 如果檔案中沒有錯誤，您會看到訊息： _報告已就緒。找到要新增的 x 位置和要更新的 x 位置。_ 按一下 [匯 **入** ] 按鈕上傳 CSV。
 
    > [!div class="mx-imgBorder"]
    > ![CSV 匯入準備郵件](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
@@ -200,11 +202,11 @@ Microsoft 365 服務前端是 Microsoft 全球網路的進入點，Office 用戶
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>何謂最優的 Microsoft 365 服務前門？
 
-最佳的 Microsoft 365 服務前端是最接近您的網路出局，通常是在您的城市或大都市區域中。 使用 [Microsoft 365 connectivity test 工具 (預覽) ](office-365-network-mac-perf-onboarding-tool.md) ，以判斷您的使用中的 microsoft 365 服務前門和最優服務前端門的位置。 如果工具判斷您的使用中的前門是最優的，您就會以最優化方式連線至 Microsoft 的全球網路。
+最佳的 Microsoft 365 服務前端是最接近您的網路出局，通常是在您的城市或大都市區域中。 使用 [Microsoft 365 connectivity test 工具 (預覽) ](office-365-network-mac-perf-onboarding-tool.md) ，以判斷您的使用中的 microsoft 365 服務前門和最優服務前端門的位置。 如果工具判斷您的使用中的前門是最優的，您會以最佳方式連線至 Microsoft 的全域網路。
 
 ### <a name="what-is-an-internet-egress-location"></a>何謂網際網路出口的位置？
 
-網際網路出局位置是網路流量結束商業網路並連接到網際網路的位置。 此位置也會識別為您具有網路位址轉譯 (NAT) 裝置的位置，通常是您與網際網路服務提供者 (ISP) 的位置。 如果您看到位置和網際網路出局位置之間有長距離的距離，則這可能表示有重要的 WAN backhaul。
+網際網路出局位置是網路流量結束商業網路並連接到網際網路的位置。 此位置也會識別為您具有網路位址轉譯 (NAT) 裝置的位置，通常是您與網際網路服務提供者 (ISP) 的位置。 如果您看到位置和網際網路出局位置之間的距離很長，這可能表示有重要的 WAN backhaul。
 
 ### <a name="what-license-is-needed-for-this-capability"></a>這項功能所需的授權為何？
 

@@ -1,5 +1,5 @@
 ---
-title: iOS 的 Microsoft Defender ATP 簡介
+title: iOS 上的 Microsoft Defender ATP
 ms.reviewer: ''
 description: 說明如何為 iOS 安裝及使用 Microsoft Defender ATP
 keywords: microsoft，defender，atp，ios，綜述，安裝，部署，卸載，intune
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1f20a81f5205c5734387214822fa87ac5cf9a09c
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: bc28c40443a6cae2815ad97126073df4579c494c
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698205"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768779"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 

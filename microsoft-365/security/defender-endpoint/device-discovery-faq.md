@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7165d943fd39e298894531f1dabdec408144898d
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698421"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764996"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>裝置探索常見問題
 
@@ -70,7 +70,7 @@ ms.locfileid: "51698421"
  隨著裝置探索使用被動式方法探索網路中的裝置，您可以在庫存中探索與架裝置通訊的任何裝置，並在庫存中列出。 您可以只從作用中的探查排除裝置。
 
 ## <a name="how-frequent-is-the-active-probing"></a>使用中探查的頻率如何？
- 當觀察到裝置特性的變更時，裝置會積極進行探測，並一週一次，以確定現有的資訊已是最新狀態。
+ 當顯示裝置特性的變更時，將會主動探測裝置 (每1到3周) 以確定現有的資訊是最新的。
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>我的安全性工具在其所啟動的 UnicastScanner.ps1 或埠掃描活動上發出警示，我該怎麼做？
  使用中的探查腳本是由 Microsoft 簽署且安全的。 您可以將下列路徑新增至您的排除清單： `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`

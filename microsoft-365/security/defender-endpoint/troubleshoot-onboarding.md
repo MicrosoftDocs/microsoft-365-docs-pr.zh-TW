@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4f3b2b54370e3481699a540dd8fd2acc30be7514
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760161"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768875"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>疑難排解 Microsoft Defender 的端點上架問題
 
@@ -302,8 +302,8 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
 
 如果您在上架伺服器時遇到問題，請執行下列驗證步驟，以解決可能的問題。
 
-- [確定已安裝並設定 Microsoft Monitoring Agent (MMA) ，且設定為將感應器資料包告給服務](configure-server-endpoints.md#server-mma)
-- [確定已正確設定伺服器 proxy 和網際網路連線設定](configure-server-endpoints.md#server-proxy)
+- [確定已安裝並設定 Microsoft Monitoring Agent (MMA) ，且設定為將感應器資料包告給服務](configure-server-endpoints.md)
+- [確定已正確設定伺服器 proxy 和網際網路連線設定](configure-server-endpoints.md)
 
 您可能還需要檢查下列專案：
 

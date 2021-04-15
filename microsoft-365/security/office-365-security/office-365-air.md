@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9850506771f53b125c08b1df2149ee024191d823
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599460"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768863"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查和回應 (AIR) 
 
@@ -123,7 +123,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>您的安全性中心即將推出變更
 
-如果您已在 Microsoft Defender for Office 365 中使用 AIR 功能，您就會看到 [改進的 Microsoft 365 安全性中心](../defender/overview-security-center.md)的一些變更。 
+如果您已在 Microsoft Defender for Office 365 中使用 AIR 功能，您就會看到 [改進的 Microsoft 365 安全性中心](../defender/overview-security-center.md)的一些變更。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="整合的動作中心":::
 

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何在 Microsoft Viva 主題中管理主題探索。
-ms.openlocfilehash: 36b64433726479dc2a46c809ae9504c6f12f4ab8
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 53e304dc69ccf2ca6fe01d29f0997c539406b0fe
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107755"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768971"
 ---
 # <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>在 Microsoft Viva 主題中管理主題探索
 
@@ -55,7 +55,7 @@ Site name,URL
 
     ![SharePoint 主題來源使用者介面的螢幕擷取畫面](../media/k-manage-select-topic-source.png)
    
-3. 按一下 **[儲存]**。
+3. 按一下 **儲存**。
 
 ## <a name="exclude-topics-by-name"></a>依名稱排除主題
 
@@ -64,7 +64,7 @@ Site name,URL
 1. 在 [ **主題探索** ] 索引標籤上，選取 [ **排除主題**] 下的 [ **編輯**]。
 2. 按一下 [ **依名稱排除主題**]。
 3. 如果您需要建立清單，請下載 .csv 範本並新增您要排除的主題 (請參閱下列) *使用 .csv 範本* 。 當檔案準備好時，請按一下 **[流覽]** 並上傳檔案。 如果有現有清單，您可以下載包含清單的 .csv。
-4. 按一下 **[儲存]**。
+4. 按一下 **儲存**。
 
     ![排除主題使用者介面的螢幕擷取畫面](../media/km-manage-exclude-topics.png)
 
@@ -79,7 +79,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 在 CSV 範本中，輸入您要排除之主題的下列相關資訊：
 
 - **名稱**：輸入您要排除的主題名稱。 方法有兩種：
-    - 完全相符：您可以包含確切的名稱或縮寫 (例如， *Contoso* 或 *ATL*) 。
+    - 完全相符：您可以排除確切的名稱或縮寫 (例如， *Contoso* 或 *ATL*) 。
     - 部分相符：您可以排除包含特定單字的所有主題。  例如， *弧線* 會排除具有文字 *弧線* 的所有主題，例如 *弧線圓形*、 *等離子弧線焊接* 或 *訓練弧*。請注意，它不會排除包含文字（如 *架構*）一部分的主題。
 - **代表 (選用)**：若要排除縮寫，請輸入縮寫所代表的字。
 - **MatchType-Exact/partial**：輸入您輸入的名稱是 *完全* 或 *部分* 相符類型。

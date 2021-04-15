@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 7b802556e051200bf39bc4bd9b97974d4d2d4c47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222000"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768683"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -49,6 +49,27 @@ ms.locfileid: "51222000"
 - [SharePoint 系統管理中心的新功能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](/OfficeUpdates/)
 - [如何檢查 Windows 版本健康情況](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+
+## <a name="april-2021"></a>2021年4月
+
+### <a name="admin-mobile-app"></a>系統管理行動 App
+
+### <a name="manage-licenses-and-bills-from-the-admin-mobile-app"></a>從 Admin 行動應用程式管理授權和帳單
+
+- 您現在可以查看您訂閱的所有可用和指派的授權。 您也可以指派或取消指派授權給使用者，以及新增或移除授權。
+- 您現在可以查看應用程式中的詳細發票。
+- 這些更新同時適用于 [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) 和 [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) 裝置。
+
+:::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="螢幕擷取畫面：「管理行動應用程式指派授權」頁面":::
+:::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="螢幕擷取畫面：具有使用者及其授權的系統管理員行動應用程式畫面":::
+:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="螢幕擷取畫面：系統管理員行動應用程式發票摘要頁面":::
+
+### <a name="updated-message-center-feed-in-the-admin-mobile-app"></a>已更新 Admin 行動應用程式中的郵件中心摘要
+
+- 您現在具有更靈活的郵件中心摘要的閱讀體驗。 現在，您可以根據服務或標記篩選郵件，並將郵件標示為最愛。 也新增了將郵件標示為已讀取、未讀取或已封存的大量動作。
+- 這些更新同時適用于 [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) 和 [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) 裝置。
+
+:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="螢幕擷取畫面：系統管理行動應用程式訊息中心頁面":::
 
 ## <a name="ignite-2021-march"></a>Ignite 2021 (三月份) 
 
@@ -206,7 +227,7 @@ ms.locfileid: "51222000"
 
 ### <a name="keeping-up-with-office-whats-new-management"></a>保持 Office 的新管理功能
 
-在幾個月之前，我們新增了一個設定，可讓您管理 [使用者的 Office 應用程式中顯示的新訊息](#office-whats-new-management)。 本月，我們發行的是新的首頁卡片，可協助您快速行動並追蹤您要向組織中的使用者顯示的 **新** 訊息。
+在幾個月之前，我們新增了一個設定，可讓您管理使用者的 Office 應用程式中顯示的新訊息。 本月，我們發行的是新的首頁卡片，可協助您快速行動並追蹤您要向組織中的使用者顯示的 **新** 訊息。
 
 ### <a name="docs-training-and-videos-june"></a> (年6月的檔、訓練和影片) 
 
@@ -398,46 +419,3 @@ ms.locfileid: "51222000"
 - **Microsoft 365 vcd 系列的新** 功能：本月，我們著重于 SharePoint 線上的自訂搜尋功能，這是 Office 「全新」的管理功能，可讓您透過應用程式的 [說明] 窗格中的使用者顯示或隱藏特定功能、Yammer 中的最新安全性和相容性更新等等。 以下是最新的劇集： [Microsoft 365 的新功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 - 檔 **移動**：我們會結合使用 Microsoft 365 內容的 Office 365 管理網頁文章，而且您可能會注意到新的 URL。 例如，本文的用途是： **docs.microsoft.com/Office365/Admin/whats-new-in-preview**，但 URL 現在是： **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**。 如果您已將頁面加上書簽，則應該更新連結;不過，內容連結會重新導向至新的內容儲存機制。
-
-## <a name="january-2020---happy-new-year"></a>2020年1月-新年快樂
-
-> [!NOTE]
-> 您是否知道 YouTube 上的 Microsoft 365 影片系列有 [哪些新功能](https://go.microsoft.com/fwlink/p/?linkid=2118096) ？ 它會強調我們為使用者推出的最新功能。 我們每月都會開始連結至 [影片 [、訓練及](#videos-training-and-docs) 檔] 區段中的最新劇集。 <br> <br> 以下是最新的劇集： [Microsoft 365 的新功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
-
-### <a name="dark-mode"></a>深色模式
-
-當我們第一次推出深色模式時，只有首頁可用。 深色模式現在已退出預覽，且位於系統管理中心內大多數頁面的目標版本。
-
-1. 首先，您需要開啟目標版本：移至 [**設定**] [ \>  \> **組織設定檔** \> **發佈喜好** 設定]。
-1. ，然後開啟深色模式，移至 **首頁** ，然後選取 [ **深色模式]** 按鈕。  ([ **搜尋** ] 欄位旁，以及本文的 [ **新功能** ] 連結。 ) 
-1. 針對具有深色模式的任何頁面，按鈕位於頁面頂端，位於新的系統 **管理中心** 切換旁邊。
-
-### <a name="office-whats-new-management"></a>Office 的新功能管理
-
-管理員想要控制 Microsoft 如何在 Office app 中向其使用者傳達「新功能」，您現在可以使用該控制項。 移至 [ **設定**] [ \> **新增 Office 的新增功能管理] 預覽**。 選取可查看其詳細資料的功能，如果您不想讓使用者看到特定的「新增功能」訊息，您可以選取 [ **從使用者隱藏** ] 按鈕。 例如，您的組織可能會等候使用者瞭解功能，直到您組織中的每個人都有訓練為止。
-
-![Office 的螢幕抓圖功能的 [詳細資料] 窗格已開啟的新增預覽。](../media/whatsnew-officemgmt-preview.png)
-
-這項功能初次發佈為在11月內預覽，但有一些應該知道的功能更新： [Office 最近更新現在可使用的管理預覽更新](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
-
-### <a name="partners"></a>協力程式
-
-Howdy，合作夥伴！  (無法幫您自己。 ) 我們也為您提供此月的更新。 這是一項新功能，可讓合作夥伴讓 CSP 客戶在系統管理中心的 [ **計費帳戶** ] 區段中，接受其 Microsoft 客戶合約 (MCA) 的選項。 在這項全新體驗中：
-
-1. 客戶會收到邀請電子郵件，其中包含可接受夥伴關聯性和 MCA 的連結。
-2. 在客戶登入後，他們就可以在系統管理中心中查看和接受 MCA 和合作夥伴許可權。
-
-### <a name="resource-mailboxes"></a>資源信箱
-
-資源信箱清單已更新為新的樣式。 在 Microsoft 365 系統管理中心中，移至 [ **資源** \> **聊天室] & 設備**]。
-
-### <a name="videos-training-and-docs-january"></a> (一月) 的影片、訓練及檔
-
-查看我們于1月發行的小型企業系統管理員訓練。
-
-- [建立您的商務網站](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [尋找解答和說明](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [取得說明或支援](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [刪除使用者](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [選擇 Microsoft 訂閱](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Microsoft 365 商務版安全性概述](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)

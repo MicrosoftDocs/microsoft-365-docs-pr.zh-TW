@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: ae7dbea7d476e8a8f6198378e1d1bb29e24c37a2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688342"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768911"
 ---
 # <a name="protect-your-network"></a>保護您的網路
 
@@ -35,7 +35,7 @@ ms.locfileid: "51688342"
 
 網路保護可協助從網際網路型事件降低裝置的受攻擊面。 它可防止員工使用任何應用程式來存取可能在網際網路上主控網路釣魚詐騙、利用方式及其他惡意內容的危險網域。 網路保護可擴充 [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 的範圍，以封鎖嘗試連線至低信譽來源的所有輸出 HTTP (s) 流量， (根據網域或主機名稱) 。
 
-Windows 10 版本1709開始支援網路保護。 其他作業系統尚未支援網路保護，但是會使用以 Chromium 為基礎的新 Microsoft Edge 支援 web 保護。 若要深入瞭解，請參閱 [Web 保護](web-protection-overview.md)。
+Windows 10 版本1709開始支援網路保護。 在其他作業系統上尚不支援網路保護，但使用以 Chromium 為基礎的新 Microsoft Edge 支援 web 保護。 若要深入瞭解，請參閱 [Web 保護](web-protection-overview.md)。
 
 網路保護將 [Web 保護](web-protection-overview.md) 的保護擴充至作業系統層級。 它提供與其他支援的瀏覽器和非瀏覽器應用程式 Edge 的 web 保護功能。 此外，網路保護也會在與 [端點偵測和回應](overview-endpoint-detection-response.md)搭配使用時，提供與封鎖 (IOCs) 遭到損害的可見度和封鎖。 例如，網路保護可與您的 [自訂指示器](manage-indicators.md)搭配運作。
 
