@@ -1,24 +1,26 @@
 ---
-title: 設定 Microsoft Defender AV 掃描的排除專案
+title: 設定 Microsoft Defender 防病毒掃描的排除專案
 description: 您可以排除檔案 (包含由 Microsoft Defender AV 掃描的指定程式所修改的檔案) 和資料夾。 使用 PowerShell 驗證您的排除專案。
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: ksarens
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 47db9b4451a885c92ca4fda0f87f0150415d3338
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 08f7f9d4a6e9e70d3ef071f30712b2ae53f4ea52
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690239"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764660"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>設定及驗證 Microsoft Defender 防病毒掃描的排除專案
 
@@ -40,7 +42,8 @@ ms.locfileid: "51690239"
 - [針對由進程開啟的檔案，設定及驗證排除](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)專案。 這可讓您從特定進程所開啟的掃描中排除檔案。
 
 ## <a name="recommendations-for-defining-exclusions"></a>定義排除的建議
-
+[!IMPORTANT]
+Microsoft Defender 防毒軟體會根據已知的作業系統行為和一般管理檔案（例如企業管理、資料庫管理及其他企業案例及案例中所使用的管理檔案），包含許多自動排除。  
 定義排除項會降低 Microsoft Defender 防毒軟體所提供的保護。 您應時刻評估與執行排除相關的風險，您應該只排除您確信不會惡意的檔案。
 
 以下是定義排除時，應謹記的建議清單：  

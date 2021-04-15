@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 18564b2a5a47b2cf4a8bbd94a3e3a315c8f269ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bf8fdb2a8a42ef7b70b744cbbb5663e6afe51989
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200254"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764374"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>開啟 Microsoft 365 Defender
 
@@ -77,7 +77,7 @@ Microsoft 365 Defender 會將資料儲存並處理于 [Microsoft Defender For En
 - [高級搜尋](advanced-hunting-overview.md) 功能
 - 威脅分析
 
-![Microsoft 365 security center 導覽窗格與 Microsoft 365 Defender 的影像功能 ](../../media/mtp-enable/mtp-on.png)
+![Microsoft 365 security center 導覽窗格與 Microsoft 365 Defender 的影像功能 ](../../media/overview-incident.png)
  *microsoft 365 security center with 事件管理和其他 Microsoft 365 Defender 功能*
 
 ### <a name="getting-microsoft-defender-for-identity-data"></a>取得 Microsoft Defender 的身分識別資料 

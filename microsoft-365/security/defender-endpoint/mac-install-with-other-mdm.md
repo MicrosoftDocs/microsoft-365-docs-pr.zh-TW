@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 58e3b14dcb80db961f01b92f038ce4d32da7e2e8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3343eb433a6ae5c708651abf298bd4f061817543
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689698"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764130"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>使用不同的行動裝置管理，針對 macOS 上的 Microsoft Defender for Endpoint (MDM) 系統進行部署
 
@@ -40,9 +40,11 @@ ms.locfileid: "51689698"
 
 開始之前，請參閱 [macOS 頁面上的主要 Microsoft Defender For Endpoint](microsoft-defender-endpoint-mac.md) ，以取得目前軟體版本之必要條件和系統需求的描述。
 
+
 ## <a name="approach"></a>方法
 
 > [!CAUTION]
+
 > 目前，Microsoft 正式支援在 macOS 上部署及管理 Microsoft Defender for Endpoint 的 Intune 和 JAMF。 Microsoft 對本所提供的資訊不提供任何明示或默示的保證。
 
 如果您的組織使用的行動裝置管理 (不是正式支援的 MDM) 解決方案，這並不表示您無法在 macOS 上部署或執行 Microsoft Defender for Endpoint。
@@ -72,7 +74,9 @@ MacOS 上的 Microsoft Defender for Endpoint 不會取決於任何廠商特有�
 
 ### <a name="license-settings"></a>授權設定
 
-設定 [系統設定檔](mac-install-with-jamf.md)。 您的 MDM 解決方案可能會呼叫它，例如「自訂設定設定檔」，因為 macOS 中的 Microsoft Defender for Endpoint 不是 macOS 的一部分。
+設定 [系統設定檔](mac-install-with-jamf.md)。 
+
+您的 MDM 解決方案可能會呼叫它，例如「自訂設定設定檔」，因為 macOS 中的 Microsoft Defender for Endpoint 不是 macOS 的一部分。
 
 使用 [屬性] 清單中的 jamf/WindowsDefenderATPOnboarding plist，可從 [Microsoft Defender 安全中心](mac-install-with-jamf.md)下載的上架套件中解壓縮。
 您的系統可能支援 XML 格式的任意屬性清單。 在該情況下，您可以上傳 jamf/WindowsDefenderATPOnboarding plist 檔案。

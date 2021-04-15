@@ -28,7 +28,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755603"
+ms.locfileid: "51759987"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>存取及備份離職使用者的資料
 

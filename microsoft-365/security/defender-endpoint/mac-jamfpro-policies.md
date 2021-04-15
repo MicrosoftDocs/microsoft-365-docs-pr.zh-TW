@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b00d81d3d51c343565ec4eb743181baa2750b01
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687730"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765128"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf Pro 的 macOS 原則上設定 Microsoft Defender for Endpoint
 
@@ -731,8 +731,10 @@ ms.locfileid: "51687730"
 
 或者，您也可以下載 [netfilter](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) ，並將其上傳至 JAMF 設定檔，如 [使用 JAMF Pro 部署自訂設定設定檔中所述）。方法2：將設定檔上傳至 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
+
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>步驟10：使用 macOS 上的 Microsoft Defender for Endpoint 排程掃描
 依照 [macOS 上的 [Microsoft Defender For Endpoint] 進行排程掃描](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)的指示進行。
+
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>步驟11：在 macOS 上部署 Microsoft Defender for Endpoint
 

@@ -28,9 +28,9 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755639"
+ms.locfileid: "51759879"
 ---
-# <a name="get-started"></a>快速入門
+# <a name="get-started"></a>開始使用
 
 您的組織最近取得 Microsoft 365，現在您需要使用它，所以您可以開始閱讀電子郵件、共用檔等等。 瞭解如何在電腦、電話和平板電腦上設定及使用 Microsoft 365。
 

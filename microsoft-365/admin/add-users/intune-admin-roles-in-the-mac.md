@@ -21,7 +21,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755723"
+ms.locfileid: "51759903"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的 Intune 系統管理員角色
 

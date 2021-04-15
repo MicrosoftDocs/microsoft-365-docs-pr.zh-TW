@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1282543a68ce4cb5c322423656d33c5db12b97b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2281fccfb97d38dbdc218799b087290433deff30
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688582"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764154"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>設定及驗證 macOS 上的 Microsoft Defender for Endpoint 的排除專案
 
@@ -39,18 +39,18 @@ ms.locfileid: "51688582"
 本文提供有關如何定義適用于隨選掃描和即時保護和監控之排除的資訊。
 
 >[!IMPORTANT]
->本文中所述的排除項不適用於 Mac 功能的其他 Defender，包括 (EDR) 的端點偵測和回應。 使用本文所述方法排除的檔案，仍然可以觸發 EDR 警示及其他偵測。
+>本文所述的排除項不適用於 Mac 功能上的其他 Defender for Endpoint，包括端點偵測和回應 (EDR) 。 使用本文所述方法排除的檔案，仍然可以觸發 EDR 警示及其他偵測。
 
-您可以從 Defender for Mac 掃描中排除某些檔案、資料夾、處理常式和以進程開啟的檔案。
+您可以從 Mac 掃描上的 Endpoint for Endpoint 中排除某些檔案、資料夾、處理常式及處理常式開啟的檔案。
 
-排除在您的組織中，避免對檔或軟體的錯誤偵測非常有用。 它們也可用於減輕由 Defender for Mac 所導致的效能問題。
+排除在您的組織中，避免對檔或軟體的錯誤偵測非常有用。 它們也可用於減輕 Mac 上的 Defender for Endpoint 所導致的效能問題。
 
 >[!WARNING]
->定義排除項會降低 Defender for Mac 的 Endpoint 所提供的保護。 您應時刻評估與執行排除相關的風險，您應該只排除您確信不會惡意的檔案。
+>定義排除項會降低在 Mac 上的 Defender for Endpoint 所提供的保護。 您應時刻評估與執行排除相關的風險，您應該只排除您確信不會惡意的檔案。
 
 ## <a name="supported-exclusion-types"></a>支援的排除類型
 
-下表顯示適用于 Mac 的 Defender for Endpoint 所支援的排除類型。
+下表顯示 Mac 上的 Defender for Endpoint 所支援的排除類型。
 
 排除 | 定義 | 範例
 ---|---|---
@@ -93,7 +93,7 @@ ms.locfileid: "51688582"
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-如果 Mac 版 Defender 的 Endpoint 報告惡意程式碼，則規則不會正常運作。 如果沒有惡意程式碼的報表，而且下載的檔案存在，則排除作業正常運作。 您可以開啟檔案，確認內容與 [eicar.txt test file 網站](http://2016.eicar.org/86-0-Intended-use.html)上所述的內容相同。
+如果 Mac 上的 Defender for Endpoint 報告惡意程式碼，則規則不會正常運作。 如果沒有惡意程式碼的報表，而且下載的檔案存在，則排除作業正常運作。 您可以開啟檔案，確認內容與 [eicar.txt test file 網站](http://2016.eicar.org/86-0-Intended-use.html)上所述的內容相同。
 
 如果您沒有網際網路存取權，可以建立您自己的 EICAR.TXT 測試檔案。 使用下列 Bash 命令，將 EICAR.TXT 字串寫入新的文字檔：
 

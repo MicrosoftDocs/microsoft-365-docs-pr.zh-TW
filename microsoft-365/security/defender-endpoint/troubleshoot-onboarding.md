@@ -21,7 +21,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755783"
+ms.locfileid: "51760161"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>疑難排解 Microsoft Defender 的端點上架問題
 

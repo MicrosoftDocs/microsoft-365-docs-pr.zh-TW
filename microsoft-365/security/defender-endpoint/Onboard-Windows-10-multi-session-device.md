@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 0ef80e2aaccbf25a79083c2f95ea7399e30ea651
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760083"
+ms.locfileid: "51764314"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虛擬桌面中上將 Windows 10 多工作階段裝置上線 
 6分鐘可供讀取 
@@ -76,62 +76,75 @@ Microsoft 建議將 Microsoft Defender for Endpoint 上架腳本新增至 WVD �
 
 1. 開啟「群組原則管理主控台 (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
 
-1. 在 [群組原則管理編輯器] 中，移至 [ **電腦** 設定 \> **偏好** 設定] [控制台 \> **設定**]。 
+2. 在 [群組原則管理編輯器] 中，移至 [ **電腦** 設定 \> **偏好** 設定] [控制台 \> **設定**]。 
 
-1. 以滑鼠右鍵按一下 [ **排程任務**]，按一下 [ **新增**]，然後按一下 [ **立即** 工作 (至少) Windows 7]。 
+3. 以滑鼠右鍵按一下 [ **排程任務**]，按一下 [ **新增**]，然後按一下 [ **立即** 工作 (至少) Windows 7]。 
 
-1. 在開啟的任務視窗中，移至 [ **一般** ] 索引標籤。在 [ **安全性選項** ] 底下，按一下 [ **變更使用者或群組** ，然後輸入系統]。 按一下 [ **檢查名稱** ]，然後按一下 [確定]。 NT AUTHORITY\SYSTEM 會顯示為執行工作時所用的使用者帳戶。 
+4. 在開啟的任務視窗中，移至 [ **一般** ] 索引標籤。在 [ **安全性選項** ] 底下，按一下 [ **變更使用者或群組** ，然後輸入系統]。 按一下 [ **檢查名稱** ]，然後按一下 [確定]。 NT AUTHORITY\SYSTEM 會顯示為執行工作時所用的使用者帳戶。 
 
-1. 選取 [ **執行使用者登入與否** ]，然後選取 [ **以最高特權執行** ] 核取方塊。 
+5. 選取 [ **執行使用者登入與否** ]，然後選取 [ **以最高特權執行** ] 核取方塊。 
 
-1. 移至 [ **動作** ] 索引標籤，然後按一下 [ **新增**]。 確定 [動作] 欄位中已選取 [ **啟動程式** ]。 輸入下列專案： 
+6. 移至 [ **動作** ] 索引標籤，然後按一下 [ **新增**]。 確定 [動作] 欄位中已選取 [ **啟動程式** ]。 輸入下列專案： 
 
-    > Action = "Start a program" <br>
-    > Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-    > Add 引數 (optional) =-ExecutionPolicy 旁路-command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+   `Action = "Start a program"`
 
-1. 按一下 **[確定]** ，然後關閉任何開啟的 GPMC 視窗。
+   `Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe`
+
+   `Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"`
+
+   然後選取 **[確定]** ，然後關閉任何開啟的 GPMC 視窗。
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*案例3：使用管理工具上架*
 
 如果您打算使用管理工具來管理您的機器，您可以使用 Microsoft 端點 Configuration Manager 將裝置上架在一起。
 
-如需詳細資訊，請參閱 [使用 Configuration Manager 的板載 Windows 10 裝置](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm)。 
+如需詳細資訊，請參閱 [使用 Configuration Manager 的板載 Windows 10 裝置](configure-endpoints-sccm.md)。
 
 > [!WARNING]
-> 如果您想要使用 [攻擊面減少規則](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)，請注意，不應該使用「[從 PSExec 和 WMI 命令產生的](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)程式建立」原則，因為此規則會封鎖 Configuration manager 用戶端用來正確運作的 WMI 命令。 
+> 如果您打算使用 [攻擊面減少規則](attack-surface-reduction.md)，請注意，不應該使用規則「[封鎖從 PSExec 和 WMI 命令](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)產生的程式建立」，因為該規則與透過 Microsoft 端點 Configuration Manager 的管理不相容。 規則會封鎖 Configuration Manager 用戶端用來正確運作的 WMI 命令。 
 
 > [!TIP]
-> 在裝置上架後，您可以選擇執行偵測測試，以確認裝置已正確架至服務。 如需詳細資訊，請參閱 [在新架的 Microsoft Defender For Endpoint 裝置上執行偵測測試](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test)。 
+> 在裝置上架後，您可以選擇執行偵測測試，以確認裝置已正確架至服務。 如需詳細資訊，請參閱 [在新架的 Microsoft Defender For Endpoint 裝置上執行偵測測試](run-detection-test.md)。 
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>在建立黃金影像時標記您的電腦 
 
-在您的上架中，您可能會想要考慮設定機器標記，以在 Microsoft 的「安全性中心」中更輕鬆地讓 WVD 電腦與眾不同。 如需詳細資訊，請參閱設定登錄機 [碼值以新增裝置標記](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value)。 
+在您的上架中，您可能會想要考慮設定機器標記，以在 Microsoft 的「安全性中心」中更輕鬆地讓 WVD 電腦與眾不同。 如需詳細資訊，請參閱設定登錄機 [碼值以新增裝置標記](machine-tags.md#add-device-tags-by-setting-a-registry-key-value)。 
 
 #### <a name="other-recommended-configuration-settings"></a>其他建議的設定 
 
-當您建立黃金影像時，您可能也想要設定初始保護設定。 如需詳細資訊，請參閱 [其他建議的配置設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-gp#other-recommended-configuration-settings)。 
+當您建立黃金影像時，您可能也想要設定初始保護設定。 如需詳細資訊，請參閱 [其他建議的配置設定](configure-endpoints-gp.md#other-recommended-configuration-settings)。 
 
 此外，如果您使用的是 FSlogix 的使用者設定檔，建議您從永遠開啟的保護中排除下列檔： 
 
 **排除檔案：** 
 
-> %ProgramFiles% \FSLogix\Apps\frxdrv.sys <br>
-> %ProgramFiles% \FSLogix\Apps\frxdrvvt.sys <br>
-> %ProgramFiles% \FSLogix\Apps\frxccd.sys <br>
-> %TEMP% \* 。VHD <br>
-> %TEMP% \* 。.VHDX <br>
-> %Windir%\TEMP \* 。VHD <br>
-> %Windir%\TEMP \* 。.VHDX <br>
-> \\net\share \* \* 的 storageaccount。VHD <br>
-> \\net\share \* \* 的 storageaccount。.VHDX <br>
+`%ProgramFiles%\FSLogix\Apps\frxdrv.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxdrvvt.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxccd.sys`
+
+`%TEMP%\*.VHD`
+
+`%TEMP%\*.VHDX`
+
+`%Windir%\TEMP\*.VHD`
+
+`%Windir%\TEMP\*.VHDX`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHD`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHDX`
 
 **排除處理常式：**
 
-> %ProgramFiles% \FSLogix\Apps\frxccd.exe <br>
-> %ProgramFiles% \FSLogix\Apps\frxccds.exe <br>
-> %ProgramFiles% \FSLogix\Apps\frxsvc.exe <br>
+`%ProgramFiles%\FSLogix\Apps\frxccd.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxccds.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxsvc.exe`
 
 #### <a name="licensing-requirements"></a>授權需求 
 
-Windows 10 多重會話是用戶端作業系統。 Microsoft Defender for endpoint 的授權需求可在下列位置找到： [授權要求](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。
+授權上的附注：使用 Windows 10 企業多會話時，您可以選擇讓每位使用者的端點 (所有使用者) 、Windows Enterprise E5、Microsoft 365 Security 或 Microsoft 365 E5 取得授權，或透過 Azure Defender 授權 VM。
+Microsoft Defender for endpoint 的授權需求可在下列位置找到： [授權要求](minimum-requirements.md#licensing-requirements)。
