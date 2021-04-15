@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 02/02/2021
+ms.date: 04/07/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,18 +19,16 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 142bc305950f9322c90e0d207f255c14abbc6b8c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d89e5dc29bfe7f980d40a9a5b139884750a966bc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197930"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760011"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>整合的 Microsoft 365 安全性中心概述
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **適用於：**
 
@@ -38,7 +36,7 @@ ms.locfileid: "51197930"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [適用於 Office 365 的 Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ，或 [在實際執行中執行您的試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
+> 想要體驗 Microsoft 365 Defender 嗎？ 您可以[在實驗室環境中評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[在生產環境中執行試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
 
 改良的 **Microsoft 365 security center** ([https://security.microsoft.com](https://security.microsoft.com)) 會將保護、偵測、調查和回應，加入中央入口網站中的 *電子郵件*、共同作業、身分 *識別* 及 *裝置* 威脅。
 
@@ -57,14 +55,14 @@ Microsoft 365 的安全性中心會將現有 Microsoft 安全性入口網站的�
 
 您可以在 Office 365 安全性與合規性中心中使用的所有安全性內容 (protection.office.com) 和 Microsoft Defender security center (securitycenter.microsoft.com) 現在可以在 *microsoft 365 的安全性中心* 內找到。
 
-Microsoft 365 的安全性中心可協助安全小組調查從不同工作負載的信號到單一整合體驗，以調查和回應攻擊 brining：
+Microsoft 365 的安全性中心可協助安全小組調查攻擊，方法是將不同工作負載的信號引入一組整合體驗：
 
 - 事件 & 警示
 - 搜捕
 - 重要訊息中心
 - 威脅分析
 
-Microsoft 365 的安全性中心強調 *unity、清晰度及共同目標* ，因為它會合並 microsoft Defender for Office 365 和 microsoft Defender for Endpoint。 合併是以下列所列的優先順序為基礎，而不犧牲每個安全性套件加入組合的功能：
+Microsoft 365 的安全性中心強調 *unity、清晰度及共同目標* ，因為它會合並 microsoft Defender for Office 365 和 microsoft Defender for Endpoint。 合併是以下列所列的優先順序為基礎，而不犧牲每個安全性套件所加入的功能：
 
 - 萬用群組建區塊
 - 常見術語
@@ -73,23 +71,23 @@ Microsoft 365 的安全性中心強調 *unity、清晰度及共同目標* ，因
 
 ## <a name="unified-investigations"></a>整合調查
 
-簡化安全性中心會建立單一窗格，以調查整個 Microsoft 365 組織中的任何事件。 主要範例是 Microsoft 365 安全性中心的快速啟動上的 [ **事件** ] 節點。
+彙聚安全性中心建立單一位置，以調查跨 Microsoft 365 的安全性事件。 主要範例是 Microsoft 365 安全中心的快速啟動上，**事件 & 警示** 的 **事件**。
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="MDO 中的 [事件] 頁面。":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Microsoft 365 security center 中的 [事件] 頁面。":::
 
-例如，按兩下具有 **高** 嚴重性的事件名稱，會帶您前往示範彙聚中心優勢的頁面。
+選取 [事件名稱] 會顯示一個頁面，其中會示範「整合」安全中心的價值。
 
-![針對多個端點的許可權提升的多階段事件，顯示查看16個受影響裝置和9個受影響的使用者。](../../media/converged-incident-info-3.png)
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Microsoft 365 安全中心內事件摘要頁面的範例":::
 
-> [!TIP]
-> [收斂 **使用者** ] 索引標籤是開始查詢的好地方。 這個單一頁面) 會從聚合工作負載 (Microsoft Defender for Endpoint，Microsoft Defender for Identity，以及 MCAS 的使用者呈現資訊，例如內部部署 Active Directory、Azure Active directory、同步處理、本機和協力廠商使用者等來源。 深入瞭解 [新的使用者經驗](investigate-users.md)。
+<!--
+![Example of the Summary page for an incident in the Microsoft 365 security center](../../media/converged-incident-info-3.png)
+--> 
 
-事件資訊顯示使用者/身分識別資訊，以及存在風險的信箱旁的使用者/身分識別。 它也會與任何 **調查資訊** 及收集的 **證據** 相關。 這可讓系統管理員和安全性運作小組更輕鬆地從一個高風險的警示到受影響的使用者和信箱。 查看此頁面頂端的 [ **事件** ] 索引標籤，可從這個單一位置取得其他重要的安全性轉動。
+在 [事件] 頁面的頂端，您會看到 **摘要**、 **警示**、 **裝置**、 **使用者**、 **信箱**、 **調查** 和 **證據** 索引標籤。 如需詳細資訊，請選取這些索引標籤。 例如，[ **使用者** ] 索引標籤會顯示聚合工作負載 (microsoft Defender for Endpoint、microsoft Defender 身分識別，以及 Microsoft Cloud App Security) 和來源範圍（如內部部署 Active Directory 網域服務 (AD DS) 、Azure Active Directory (azure AD) 和協力廠商身分識別提供者）的使用者資訊。 如需詳細資訊，請參閱 [調查使用者](investigate-users.md)。
 
-> [!IMPORTANT]
-> 在特定事件的任何頁面上方，您都會看到 **摘要**、 **警示**、 **裝置**、 **使用者**、 **信箱**、 **調查** 和 **證據** 索引標籤。
+花時間複習您環境中的事件、深入查看這些索引標籤，並練習如何針對不同類型的威脅存取針對事件所提供的資訊。
 
-選取「 **調查** 」會開啟一個頁面，其中會提供分析所用的圖形，並列出狀態 (例如 **待決核准**) 以進行修正）。 花時間在您的環境中選取特定的事件，深入查看這些索引標籤，並練習建立不同類型威脅的設定檔。 熟悉將會受益于以後的任何調查。
+如需詳細資訊，請參閱 [Microsoft 365 security center 中的事件](incidents-overview.md)。
 
 ## <a name="improved-processes"></a>改進的處理常式
 

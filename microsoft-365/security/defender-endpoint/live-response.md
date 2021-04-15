@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 784e73467efc114f05ebdfca9bc4034e2d75f6c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185704"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760413"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用即時回應調查裝置上的實體
 
@@ -144,11 +144,13 @@ Live response 的設計目的是讓您的安全性作業小組收集法律資料
 |`connections` | 顯示所有使用中的連線。 |
 |`dir` | 顯示目錄中的檔案及子目錄清單。 |
 |`download <file_path> &` | 會在背景中下載檔案。 |
-司機 |  顯示裝置上安裝的所有驅動程式。 |
-|`fg <command ID>` | 將檔案下載傳回前景。 |
+|`drivers` |  顯示裝置上安裝的所有驅動程式。 |
+|`fg <command ID>` | 將指定的工作置於前臺，使其成為目前工作。 <br> 附注： fg 採用工作中提供的「命令識別碼」，而不是 PID |
 |`fileinfo` | 取得檔案的相關資訊。 |
 |`findfile` | 以指定的名稱在裝置上尋找檔案。 |
+|`getfile <file_path>` | 下載檔案。 |
 |`help` | 提供即時回應命令的説明資訊。 |
+|`jobs` | 顯示目前執行中的工作、其識別碼和狀態。 |
 |`persistence` | 顯示裝置上所有已知的持久性方法。 |
 |`processes` | 顯示裝置上執行的所有進程。 |
 |`registry` | 顯示登錄值。 |
@@ -162,7 +164,6 @@ Live response 的設計目的是讓您的安全性作業小組收集法律資料
 | 命令 | 描述 |
 |---|---|
 | `analyze` | 分析具有各種 incrimination 引擎的實體，以達到判定。 |
-| `getfile` | 從裝置取得檔案。 <br> 注意：此命令具有必要條件命令。 您可以搭配使用此 `-auto` 命令 `getfile` ，以自動執行必要條件命令。 |
 | `run` | 從裝置上的文件庫執行 PowerShell 腳本。 |
 | `library` | 列出已上傳至 live response library 的檔案。 |
 | `putfile` | 將檔案從文件庫放入裝置。 檔案儲存在工作資料夾中，而且會在預設重新開機裝置時刪除。 |
@@ -303,10 +304,9 @@ processes > output.txt
 
 ## <a name="limitations"></a>限制
 
-- Live 回應會話一次僅限10個 live 回應會話。
-- 不支援大規模命令執行。
-- Live response session 非使用中超時值為5分鐘。 
-- 使用者一次只能啟動一個會話。
+- Live 回應會話一次僅限25個即時回應會話。
+- Live response session 非使用中超時值為30分鐘。 
+- 使用者最多可以啟動10個同時會話。
 - 一個裝置一次只能在一個會話中。
 - 適用下列檔案大小限制：
    - `getfile` 限制： 3 GB
@@ -314,4 +314,4 @@ processes > output.txt
    - `library` 限制： 250 MB
 
 ## <a name="related-article"></a>相關文章
-- [Live response 命令範例](live-response-command-examples.md)
+- [即時回應命令範例](live-response-command-examples.md)

@@ -19,18 +19,16 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: ab6ce0e8572fc20d3e5dd9f36e84ce9894280fe2
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 6535493efb844f1413c569a28ebf36ddb05c167d
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498189"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51760197"
 ---
 # <a name="investigate-users-in-microsoft-365-security-center"></a>在 Microsoft 365 安全性中心調查使用者
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **適用於：**
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
-ms.openlocfilehash: 8df1b8b46b4b2ec4f8f686f6422851b5f186f2ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3c55619dc1193d7c41f8a52fc027f03f13f3c9ad
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903733"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759951"
 ---
 # <a name="get-started-with-the-roles-page"></a>「角色」頁面快速入門
 
@@ -33,7 +33,7 @@ ms.locfileid: "50903733"
 ![顯示系統管理員角色的圖形](../../media/roles-main-page.png)
 
 > [!TIP]
-> 正在尋找詳細的角色描述嗎？ 請參閱 [Azure Active Directory 中的系統管理員角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 和相關的系統 [管理角色](/office365/admin/add-users/about-admin-roles)。
+> 正在尋找詳細的角色描述嗎？ 請參閱 [Azure Active Directory 中的系統管理員角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 和相關的系統 [管理角色](/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="about-the-admin-roles-page"></a>關於系統管理員角色頁面
 
@@ -56,23 +56,23 @@ ms.locfileid: "50903733"
 
 ### <a name="exchange-admin"></a>Exchange 系統管理員
 
-將 Exchange 系統管理員角色指派給需要查看及管理使用者的電子郵件信箱、Microsoft 365 群組和 Exchange Online 的使用者。 他們也可以開啟和管理 Microsoft 支援服務要求。 [深入了解](/office365/admin/add-users/about-exchange-online-admin-role)
+將 Exchange 系統管理員角色指派給需要查看及管理使用者的電子郵件信箱、Microsoft 365 群組和 Exchange Online 的使用者。 他們也可以開啟和管理 Microsoft 支援服務要求。 [深入了解](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>全域系統管理員
 
-將全域系統管理員角色指派給需要透過 Microsoft online 服務對大部分管理功能和資料進行全域存取的使用者。 授與太多的使用者全域存取權會造成安全性風險，因此建議您擁有 2 到 4 個之間的全域系統管理員。 只有全域系統管理員可以重設所有使用者的密碼，並新增及管理網域。 他們也可以開啟和管理 Microsoft 支援服務要求。 註冊 Microsoft online services 的人員會自動成為全域系統管理員。 [深入瞭解](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+將全域系統管理員角色指派給需要透過 Microsoft online 服務對大部分管理功能和資料進行全域存取的使用者。 授與太多的使用者全域存取權會造成安全性風險，因此建議您擁有 2 到 4 個之間的全域系統管理員。 只有全域系統管理員可以重設所有使用者的密碼，並新增及管理網域。 他們也可以開啟和管理 Microsoft 支援服務要求。 註冊 Microsoft online services 的人員會自動成為全域系統管理員。 [深入瞭解](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="global-reader"></a>全域讀取者
 
-將全域讀取者系統管理員角色指派給使用者必須在全域管理員可以查看之所有系統管理中心中查看系統管理功能和設定的使用者。 全域讀取器系統管理員角色無法編輯任何設定。 [深入了解](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+將全域讀取者系統管理員角色指派給使用者必須在全域管理員可以查看之所有系統管理中心中查看系統管理功能和設定的使用者。 全域讀取器系統管理員角色無法編輯任何設定。 [深入了解](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="helpdesk-admin"></a>服務台系統管理員
 
-將「服務台管理員」角色指派給想要重設密碼的使用者，強制使用者登出任何安全性問題。 他們也可以開啟和管理 Microsoft 支援服務要求。 服務台管理員只會協助非系統管理員的使用者和使用者指派這些角色：目錄讀取者、來賓 inviter、服務台管理員、郵件中心讀取程式和報告讀取器。 [深入了解](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+將「服務台管理員」角色指派給想要重設密碼的使用者，強制使用者登出任何安全性問題。 他們也可以開啟和管理 Microsoft 支援服務要求。 服務台管理員只會協助非系統管理員的使用者和使用者指派這些角色：目錄讀取者、來賓 inviter、服務台管理員、郵件中心讀取程式和報告讀取器。 [深入了解](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="service-admin"></a>服務系統管理員
 
-將服務系統管理員角色指派給需要建立 Azure、Microsoft 365 和 Office 365 服務之服務要求的使用者。 [深入了解](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+將服務系統管理員角色指派給需要建立 Azure、Microsoft 365 和 Office 365 服務之服務要求的使用者。 [深入了解](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>SharePoint 系統管理員
 
@@ -84,9 +84,7 @@ ms.locfileid: "50903733"
 
 ### <a name="user-admin"></a>使用者系統管理員
 
-將使用者系統管理員角色指派給您想要存取和管理使用者密碼重設及管理使用者和群組的使用者。 他們也可以開啟和管理 Microsoft 支援服務要求。 [深入了解](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
-
-::: moniker range="o365-worldwide"
+將使用者系統管理員角色指派給您想要存取和管理使用者密碼重設及管理使用者和群組的使用者。 他們也可以開啟和管理 Microsoft 支援服務要求。 [深入了解](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ## <a name="compare-roles"></a>比較角色
 
@@ -97,8 +95,6 @@ ms.locfileid: "50903733"
 - 最多選取3個角色，然後選擇 [ **比較角色** ]，以查看每個角色擁有的許可權。
 
 ![顯示系統管理員角色比較的圖形](../../media/compare-roles-list.png)
-
-::: moniker-end
 
 ## <a name="related-topics"></a>相關主題
 

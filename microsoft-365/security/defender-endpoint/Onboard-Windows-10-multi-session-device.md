@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488142"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760083"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虛擬桌面中上將 Windows 10 多工作階段裝置上線 
 6分鐘可供讀取 
@@ -54,7 +54,7 @@ Microsoft 建議將 Microsoft Defender for Endpoint 上架腳本新增至 WVD �
 #### <a name="scenario-1-using-local-group-policy"></a>*案例1：使用本機組策略*
 此案例需要將腳本放在黃金映射中，並使用本機組策略在啟動程式的初期執行。
 
-使用 [板載非持久性虛擬桌面基礎結構 VDI 裝置](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)中的指示。
+使用 [板載非持久性虛擬桌面基礎結構 VDI 裝置](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)中的指示。
 
 遵循每個裝置的單一專案指示。
 
@@ -62,32 +62,41 @@ Microsoft 建議將 Microsoft Defender for Endpoint 上架腳本新增至 WVD �
 此案例使用以網域為基礎的群組原則來執行集中放置的腳本。 您也可以將腳本放在黃金影像中，並以相同的方式執行。
 
 **從 Windows Defender 安全中心下載 WindowsDefenderATPOnboardingPackage.zip 檔案**
+
 1. 開啟 VDI configuration 套件 .zip 檔案 (WindowsDefenderATPOnboardingPackage.zip)   
-    - 在 Microsoft Defender 安全性中心導覽窗格中，選取 [**設定**] [上  >  **架**]。 
-    - 選取 [Windows 10] 做為作業系統。 
-    - 在 [ **部署方法** ] 欄位中，選取非持續端點的 VDI 上架腳本。 
-    - 按一下 [ **下載套件** ] 並儲存 .zip 檔案。 
+
+    1. 在 Microsoft Defender 安全性中心導覽窗格中，選取 [**設定**] [上  >  **架**]。 
+    1. 選取 [Windows 10] 做為作業系統。 
+    1. 在 [ **部署方法** ] 欄位中，選取非持續端點的 VDI 上架腳本。 
+    1. 按一下 [ **下載套件** ] 並儲存 .zip 檔案。 
+
 2. 將 .zip 檔案的內容解壓縮到可供裝置存取的共用唯讀位置。 您應該會有一個稱為 **OptionalParamsPolicy** 的資料夾，以及檔案 **WindowsDefenderATPOnboardingScript** 和 **Onboard-NonPersistentMachine.ps1**。
 
 **在虛擬機器啟動時使用群組原則管理主控台執行腳本**
+
 1. 開啟「群組原則管理主控台 (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
+
 1. 在 [群組原則管理編輯器] 中，移至 [ **電腦** 設定 \> **偏好** 設定] [控制台 \> **設定**]。 
+
 1. 以滑鼠右鍵按一下 [ **排程任務**]，按一下 [ **新增**]，然後按一下 [ **立即** 工作 (至少) Windows 7]。 
+
 1. 在開啟的任務視窗中，移至 [ **一般** ] 索引標籤。在 [ **安全性選項** ] 底下，按一下 [ **變更使用者或群組** ，然後輸入系統]。 按一下 [ **檢查名稱** ]，然後按一下 [確定]。 NT AUTHORITY\SYSTEM 會顯示為執行工作時所用的使用者帳戶。 
+
 1. 選取 [ **執行使用者登入與否** ]，然後選取 [ **以最高特權執行** ] 核取方塊。 
+
 1. 移至 [ **動作** ] 索引標籤，然後按一下 [ **新增**]。 確定 [動作] 欄位中已選取 [ **啟動程式** ]。 輸入下列專案： 
 
-> Action = "Start a program" <br>
-> Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-> Add 引數 (optional) =-ExecutionPolicy 旁路-command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+    > Action = "Start a program" <br>
+    > Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
+    > Add 引數 (optional) =-ExecutionPolicy 旁路-command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
 
-按一下 **[確定]** ，然後關閉任何開啟的 GPMC 視窗。
+1. 按一下 **[確定]** ，然後關閉任何開啟的 GPMC 視窗。
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*案例3：使用管理工具上架*
 
 如果您打算使用管理工具來管理您的機器，您可以使用 Microsoft 端點 Configuration Manager 將裝置上架在一起。
 
-如需詳細資訊，請參閱： [使用 Configuration Manager 的板載 Windows 10 裝置](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
+如需詳細資訊，請參閱 [使用 Configuration Manager 的板載 Windows 10 裝置](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm)。 
 
 > [!WARNING]
 > 如果您想要使用 [攻擊面減少規則](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)，請注意，不應該使用「[從 PSExec 和 WMI 命令產生的](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)程式建立」原則，因為此規則會封鎖 Configuration manager 用戶端用來正確運作的 WMI 命令。 

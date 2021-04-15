@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689662"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755783"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>疑難排解 Microsoft Defender 的端點上架問題
 
@@ -292,8 +292,9 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
     ![Microsoft Defender 防病毒之登錄機碼的影像](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
-   > 此外，您必須確定 wdfilter.sys 和 wdboot.sys 設定為 "0" 的預設起始值。
+   > 所有 Windows Defender 服務 (wdboot、wdfilter、wdnisdrv、wdnissvc 和 windefend) 應處於其預設狀態。 不支援變更這些服務的啟動，而且可能會強制您重設系統的映射。
    >
+   > WdBoot 與 WdFilter 的預設設定範例：
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 

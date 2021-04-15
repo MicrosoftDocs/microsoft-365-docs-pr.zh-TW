@@ -18,14 +18,15 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7486bde0886506a5966a95cdb0b85fc009858801
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: dbb4e3a558256f19594ab0aa4efbd2c9eed6b7f8
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689746"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764212"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上以 Intune 為基礎之 Microsoft Defender for Endpoint 的部署
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,9 +51,10 @@ ms.locfileid: "51689746"
 
 開始之前，請參閱 [macOS 頁面上的主要 Microsoft Defender For Endpoint](microsoft-defender-endpoint-mac.md) ，以取得目前軟體版本之必要條件和系統需求的描述。
 
+
 ## <a name="overview"></a>概觀
 
-下表摘要說明透過 Intune 部署及管理 Mac 的 Microsoft Defender 端點時，所需採取的步驟。 以下是更詳細的步驟。
+下表摘要說明在 Mac 上透過 Intune 部署及管理 Microsoft Defender for Endpoint 時，所需採取的步驟。 以下是更詳細的步驟。
 
 | 步驟 | 範例檔案名 | BundleIdentifier |
 |-|-|-|

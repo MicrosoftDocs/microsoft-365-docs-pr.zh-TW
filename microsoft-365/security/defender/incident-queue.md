@@ -22,34 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5aba1ab4bed0eeb5f6127ab865ceea674e8d5902
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 12207d69b0a1565caf762a265c1a0d32158ca291
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500997"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759836"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的事件優先順序
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **適用於：**
 - Microsoft 365 Defender
 
+Microsoft 365 Defender 會將關聯性分析和匯總相關的警示和自動調查套用到事件中。 除了 Microsoft 365 Defender 跨整個產品套件的端對端知名度時，microsoft 365 Defender 也會針對活動，觸發唯一警示。 這種觀點可讓您的安全性分析更廣泛的攻擊案例，以協助他們更好地瞭解及處理整個組織中的複雜威脅。
 
+[ **事件] 佇列** 顯示跨裝置、使用者和信箱建立的事件集合。 可協助您設定事件優先順序及制定明智的網路安全回應決策。 
 
-Microsoft 365 Defender 會套用關聯性分析，並將不同產品的所有相關警示和調查彙集到一個事件中。 Microsoft 365 defender 也會觸發唯一的警示，可在 Microsoft 365 Defender 跨整個房地產及產品套件的端對端可視性時，識別出惡意的活動。 此視圖讓安全性分析分析員成為廣泛的攻擊案例，可協助他們更好地瞭解及處理整個組織中的複雜威脅。
+您可以從事件中取得事件佇列 **& 警示 >** Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上的事件。
 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件佇列的範例":::
 
-**事件佇列** 顯示由各裝置、使用者和信箱標示的事件集合。 可協助您設定事件優先順序及制定明智的網路安全回應決策。
+根據預設，Microsoft 365 security center 中的佇列會顯示過去六個月所看到的事件。 最近的事件是在清單頂端，您可以先查看此專案。
 
-
-![事件佇列的影像](../../media/incidents-queue.png) 
-
-根據預設，Microsoft 365 security center 中的佇列會顯示過去30天內看到的事件。 最近的事件是在清單頂端，您可以先查看此專案。
-
-事件佇列公開可自訂的欄，可讓您深入瞭解事件或所包含之實體的不同特性。 這可協助您作出決定要處理之事件優先順序的相關決定。
+事件佇列具有可自訂的欄 (選取 **[選擇欄** ]) ，可讓您深入瞭解事件或受影響的實體的不同特性。 這可協助您針對 anaylsis 的事件優先順序作出明智的決策。
 
 如需更深入的洞察力，自動事件命名功能會根據警示屬性（如受影響的端點數目、受影響的使用者、偵測來源或類別），產生事件名稱。 這可讓您快速瞭解事件的範圍。
 
@@ -62,52 +59,64 @@ Microsoft 365 Defender 會套用關聯性分析，並將不同產品的所有相
 
 ## <a name="available-filters"></a>可用的篩選
 
-### <a name="assigned-to"></a>指派給
-您可以選擇顯示指派給您或「自動化」所處理的警示。
+您可以從預設的事件佇列中，選取 [ **篩選** ] 以查看篩選窗格，您可以從該窗格中查看篩選的事件集。 範例如下。
 
-### <a name="categories"></a>類別
-選擇 [類別]，以著重顯示特定的戰術、技術或攻擊元件。 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="事件佇列之篩選窗格的範例":::
 
-### <a name="classification"></a>分類
-根據相關警示的設定分類來篩選事件。 其值包括 true 警示、false 警示或未設定。
+此表列出可用的篩選器名稱。
 
-### <a name="data-sensitivity"></a>資料敏感度
-某些攻擊鎖定外洩機密敏感性資料或重要資料。 透過套用篩選來查看事件是否涉及敏感性資料，您可以快速判斷敏感性資訊是否已遭入侵，並優先處理這些事件。
+| 篩選名稱 | 描述 |
+|:-------|:-----|
+| 指派給 | 您可以選擇顯示指派給您或「自動化」所處理的警示。 |
+| 類別 | 選擇 [類別]，以著重顯示特定的戰術、技術或攻擊元件。 |
+| 分類 | 根據相關警示的設定分類來篩選事件。 其值包括 true 警示、false 警示或未設定。 |
+| 資料敏感度 | 某些攻擊鎖定外洩機密敏感性資料或重要資料。 透過套用篩選來查看事件是否涉及敏感性資料，您可以快速判斷敏感性資訊是否已遭入侵，並優先處理這些事件。 <br><br> 只有在開啟 Microsoft 資訊保護時才適用。|
+| 裝置群組 | 依定義的裝置群組篩選。 |
+| 調查狀態 | 依自動調查的狀態來篩選事件。  |
+| 多個類別 | 您可以選擇只查看已對應至多個類別的事件，進而可能造成更大的損毀。 |
+| 多個服務來源  | 篩選，只會查看包含不同來源之警示的事件， (Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365) 。 |
+| 作業系統平臺 | 依作業系統限制事件佇列查看。 |
+| 服務來源 | 透過選擇特定來源，便可專注於包含來自至少一個所選來源警示的事件。 |
+| 嚴重性 | 事件的嚴重性是指它可對資產造成的影響。 嚴重性越高，影響就越大，而且通常需要最直接的注意。 |
+| 狀態 | 您可以根據事件狀態來限制顯示的事件清單，以查看哪些事件為作用中或已解決。 |
+|||
 
->[!NOTE]
->只有在開啟 Microsoft 資訊保護時才適用。
+## <a name="incident-response-workflow"></a>事件回應工作流程
 
-### <a name="device-group"></a>裝置群組
-依定義的裝置群組篩選。
+以下是回應事件的一般工作流程：
 
-### <a name="investigation-state"></a>調查狀態
-依自動調查的狀態來篩選事件。 
+1. 識別及會審最高優先順序的事件，以進行調查和解決。
+2. 針對每個高優先順序事件，開始進行 [調查](investigate-incidents.md)：
 
-### <a name="multiple-categories"></a>多個類別 
-您可以選擇只查看已對應至多個類別的事件，進而可能造成更大的損毀。 
+   a. 請查看事件摘要，以瞭解其範圍、哪些實體受到影響，以及 [ **摘要** ] 索引標籤) 中的嚴重性 (。
 
-### <a name="multiple-service-sources"></a>多個服務來源 
-篩選，只會查看包含不同來源之警示的事件， (Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365) 。
+   b. 請開始查看提醒，瞭解其來源、範圍和嚴重性 (**警示** ] 索引標籤) 。
 
-### <a name="os-platform"></a>作業系統平臺
-依作業系統限制事件佇列查看。
+   c. 如有需要，請在 [ **裝置**]、[ **使用者**] 和 [ **信箱** ] 索引標籤)  (，收集受影響裝置、使用者和信箱的資訊。
 
-### <a name="service-sources"></a>服務來源
-透過選擇特定來源，便可專注於包含來自至少一個所選來源警示的事件。 
+   d. 請參閱 Microsoft 365 Defender 如何在「 **調查** 」索引標籤) 上，自動解決某些警示 (。
+   
+   e. 如有需要，請使用事件資料組中的資訊，以取得 (**證據與回應** ] 索引標籤) 的詳細資訊。
 
-### <a name="severity"></a>嚴重性
-事件的嚴重性是指它可對資產造成的影響。 嚴重性越高，影響就越大，而且通常需要最直接的注意。 
+當您進行調查時，您應該注意下列事項：
 
-### <a name="status"></a>狀態
-您可以根據事件狀態來限制顯示的事件清單，以查看哪些事件為作用中或已解決。
+- 包容：減少對租使用者的任何其他影響。
+- Eradication：移除安全性威脅。
+- 復原：將租使用者資源還原為攻擊之前的狀態。
 
+在您解決事件後，請花一點時間來深入瞭解：
 
+- 瞭解攻擊的類型及其影響。
+- 調查安全性攻擊趨勢的安全性社區中的攻擊。
+- 召回您用來解決事件的工作流程，並視需要更新您的標準工作流程和 plalbooks。
 
+以下是基本程式的摘要。
 
-## <a name="next-steps"></a>後續步驟
-決定優先順序最高的事件後，便可繼續進行事件的調查工作。
-- [調查事件](investigate-incidents.md)
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="調查事件的基本程式":::
 
+## <a name="next-step"></a>下一步
+
+決定需要最高優先順序的事件後，請先選取它，然後開始進行 [調查](investigate-incidents.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [事件概觀](incidents-overview.md)

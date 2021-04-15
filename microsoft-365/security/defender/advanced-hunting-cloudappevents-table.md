@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2aa592e70bce7bb469f851bedc542ee58cac0037
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 83b9eec37648ba48aa8e6931e836e8a5e22458c8
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498669"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51760023"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -37,7 +37,7 @@ ms.locfileid: "51498669"
 
 
 
-[！附注] `CloudAppEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含 Microsoft cloud App Security、特別是 Dropbox、Exchange Online、OneDrive、Microsoft 團隊及 SharePoint 所涵蓋的各種雲端應用程式和服務中的活動相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `CloudAppEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含 Microsoft cloud App Security 所涵蓋之各種雲端應用程式和服務中的活動相關資訊。 如需完整清單，請跳至 [應用程式和服務涵蓋](#apps-and-services-covered)。 使用這個參考來建立從此表格取回之資訊的查詢。 
 
 >[!IMPORTANT]
 >此表格包含可用於表格的資訊 `AppFileEvents` 。 從2021年3月7日起，使用者在此日期以外的雲端服務中搜尋與檔案相關的活動，應改為使用 `CloudAppEvents` 表格。 <br><br>請務必搜尋查詢和自訂偵測規則，該規則仍會使用 `AppFileEvents` 該表，並進行編輯，以使用 `CloudAppEvents` 該表。 若要瞭解轉換受影響查詢的相關指引，請參閱 [使用 Microsoft 365 Defender advanced 搜尋跨 cloud app Activity 搜尋](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
@@ -71,6 +71,19 @@ ms.locfileid: "51498669"
 | `RawEventData` | string | 來源應用程式或服務中 JSON 格式的原始事件資訊 |
 | `AdditionalFields` | string | 實體或事件的其他資訊 |
 
+## <a name="apps-and-services-covered"></a>應用程式和服務涵蓋
+
+- Dropbox
+- Dynamics 365
+- Exchange Online
+- Microsoft Teams
+- 商務用 OneDrive
+- Power Automate
+- Power BI
+- SharePoint Online
+- 商務用 Skype
+- Office 365
+- Yammer 
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

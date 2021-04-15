@@ -11,26 +11,26 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/26/2021
-ms.reviewer: ''
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 34bebddcf052a643529f1d2b8a8a869a0ffe4a91
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.topic: how-to
+ms.openlocfilehash: 9efc42441c2cb30f35abf658071088f7f7bbaf00
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183813"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760095"
 ---
 # <a name="troubleshoot-network-protection"></a>疑難排解網路保護
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!TIP]
 > 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
@@ -103,9 +103,29 @@ ms.locfileid: "51183813"
    mpcmdrun -getfiles
    ```
 
-3. 根據預設，會將其儲存至 C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab。 將檔案附加到提交表單。
+3. 將檔案附加到提交表單。 根據預設，診斷記錄會儲存在 `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。 
 
-## <a name="related-topics"></a>相關主題
+## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>解決 (E5 客戶之網路保護的連線問題) 
+
+由於網路保護的執行環境，Microsoft 無法看到您的作業系統 proxy 設定。 在某些情況下，網路保護用戶端無法到達雲端服務。 若要解決網路保護的連線問題，請設定下列其中一個登錄機碼，讓網路防護知道 proxy 設定：
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+```
+
+---或---
+
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+```
+
+您可以使用 [PowerShell]、[Microsoft 端點管理員] 或「群組原則」來設定登錄機碼。 以下是一些可協助的資源：
+- [使用登錄機碼](/powershell/scripting/samples/working-with-registry-keys)
+- [設定 Endpoint Protection 的自訂用戶端設定](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [使用群組原則設定來管理 Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+
+## <a name="see-also"></a>另請參閱
 
 - [網路保護](network-protection.md)
 - [評估網路保護](evaluate-network-protection.md)

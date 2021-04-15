@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的準備工作。
-ms.openlocfilehash: 3172c76288a8b9957f106f17e6cd34ccaf024067
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: ce7aad932482d7a9d1681957c06b85ab22a82149
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644725"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760389"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的預先遷移活動
 
@@ -67,7 +67,7 @@ ms.locfileid: "51644725"
 
 <!-- before phase 9 -->
 
-**適用于**：在自己的 DNS 網域中設定自訂 _msoid_ CNAME 的客戶
+**適用于**：在自己的 DNS 網域中設定自訂 _msoid_ CNAME 或使用 Exchange Online 網域的客戶
 
 若設定， _msoid_ CNAME 只會影響使用 Office 桌面用戶端的客戶 (Microsoft 365 應用程式、office 365 ProPlus、office 2019、2016、... ) 。
 
@@ -80,6 +80,9 @@ nslookup -querytype=CNAME msoid.contoso.com
 ```
 
 如果命令列傳回 DNS 記錄，請從您的網域中移除 _msoid_ CNAME。
+
+> [!NOTE]
+> 如果您使用的是 Exchange Online 的自訂網域，您必須可以存取您的 DNS 主機服務提供者。 請確定您可以存取和編輯您的 DNS 設定，您會在遷移期間修改 DNS 記錄。
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
 
@@ -111,8 +114,8 @@ nslookup -querytype=CNAME msoid.contoso.com
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| 通知外部合作夥伴即將進行的轉換至 Office 365 服務。 |  客戶必須告知其合作夥伴已啟用共用行事曆和可用性位址空間設定 (允許與 Office 365) 共用空閒/忙碌資訊。 Exchange Online 遷移完成時，可用性設定必須轉換成使用 [Office 365 全球端點](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) 。 | 若失敗，可能會導致服務或用戶端在後續的遷移階段失敗。 |
-| 通知使用者必要的 IMAP4/POP3/SMTP 用戶端變更。 | 具有裝置連線至 Microsoft 雲端 Deutschland 端點的使用者通訊協定 IMAP4 POP3，SMTP 是必要手動更新其用戶端裝置以切換至 [Office 365 全球端點](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)的使用者。 | 將這種相依性傳遞給這些通訊協定的使用者，並確保在遷移期間，他們可以切換成使用 Outlook mobile 或 Outlook 網頁版。 若失敗更新用戶端端點，將會在遷移使用者信箱時，對 Microsoft Cloud Deutschland 造成用戶端連線失敗。 |
+| 通知外部合作夥伴即將進行的轉換至 Office 365 服務。 |  客戶必須告知其合作夥伴已啟用共用行事曆和可用性位址空間設定 (允許與 Office 365) 共用空閒/忙碌資訊。 Exchange Online 遷移完成時，可用性設定必須轉換成使用 [Office 365 全球端點](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) 。 | 若失敗，可能會導致服務或用戶端在後續的遷移階段失敗。 |
+| 通知使用者必要的 IMAP4/POP3/SMTP 用戶端變更。 | 具有裝置連線至 Microsoft 雲端 Deutschland 端點的使用者通訊協定 IMAP4，POP3，SMTP 是必要手動更新其用戶端裝置以切換到 [Exchange Online 伺服器名稱](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes)的使用者。 | 將這種相依性傳遞給這些通訊協定的使用者，並確保在遷移期間，他們可以切換成使用 Outlook mobile 或 Outlook 網頁版。 若失敗更新用戶端端點，將會在遷移使用者信箱時，對 Microsoft Cloud Deutschland 造成用戶端連線失敗。 |
 ||||
 
 ### <a name="exchange-online-hybrid-customers"></a>Exchange Online 混合式客戶
@@ -120,14 +123,13 @@ nslookup -querytype=CNAME msoid.contoso.com
 **適用于：** 所有在內部部署 Exchange 伺服器皆使用 Exchange 混合式設定的客戶<br>
 套用 **時**：第5階段之前的任何時間
 
-具有 Exchange Online 混合式部署和內部部署 Exchange 伺服器的企業客戶執行混合式設定向導 (HCW) 和 AAD Connect，以維護及建立混合設定。 從 Microsoft Cloud Deutschland 轉換至 Office 365 德國地區時，系統管理員必須在 Exchange 遷移 (階段 5) 開始之前，在「Office 365 德國」模式中重新執行 HCW 的最新組建。 然後，在完成階段5後，在「Office 365 世界」模式中再次執行 HCW，以完成內部部署與 Office 365 德國地區設定。 使用內部部署透過 AAD Connect，在 Office 365 和 Azure AD 之間同步處理目錄屬性。 
+具有 Exchange Online 混合式部署和內部部署 Exchange 伺服器的企業客戶執行混合式設定向導 (HCW) 和 AAD Connect，以維護及建立混合設定。 Exchange Online 混合式管理員  **必須執行混合式設定向導 (HCW)** 做為這項轉換的一部分）。 從 Microsoft Cloud Deutschland 轉換至 Office 365 德國地區時，系統管理員必須在 Exchange 遷移 (階段 5) 開始之前，在「Office 365 德國」模式中重新執行 HCW 的最新組建。 然後，在完成階段5後，在「Office 365 世界」模式中再次執行 HCW，以完成內部部署與 Office 365 德國地區設定。 HCW 執行不能在階段5執行，請務必執行 HCW，直到階段5完成。
+使用內部部署透過 AAD Connect，在 Office 365 和 Azure AD 之間同步處理目錄屬性。 
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| 使用 Office 365 德國設定 (前置階段 5) 重新執行 HCW <br><br> <i>您可以在收到您的 Office 365 租使用者遷移已開始 (階段 1) 之後，立即啟動此活動。</i>| 卸載及重新執行 HCW (17.0.5378.0 或以上) 從 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 第5階段開始，可確保您的內部部署設定準備好使用 Microsoft Cloud Deutschland 使用者和遷移至 Office 365 德國地區的使用者來傳送和接收郵件。 <p><li> 在 HCW 中， **office 365 組織** 底下的清單方塊是由所主控，選取 [ **office 365 德國]。** | 在階段 5 [Exchange 遷移] 開始之前無法完成此工作，可能會導致您的內部部署 Exchange 部署和 Office 365 之間的郵件路由 NDRs。  
-| 使用 Office 365 全球設定 (後期階段 5) 重新執行 HCW <br><br> <i>您可以在接收到 Exchange 遷移完成 (階段 5) 中的訊息中心通知之後，啟動此活動。</i>| 在階段5之後卸載及重新執行 HCW， [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 將會重設只有 Office 365 global 的混合式設定的內部部署設定。 <p><li> 在「 **我的 Office 365 組織**」下的清單方塊中，選取 [ **office 365 全球**]。 | 在第9階段之前無法完成此工作 [遷移完成] 可能會導致 NDRs 內部部署 Exchange 部署和 Office 365 之間路由傳送郵件。  
-| 建立 Set-authserver 內部部署指向全域安全性 Token 服務 (STS) 進行驗證 | 這可確保來自以混合式內部部署環境為目標之遷移狀態之使用者的 Exchange 可用性要求的驗證要求已驗證，可存取內部部署服務。 同樣地，這可確保從內部部署到 Office 365 全域服務端點的要求驗證。 | Azure AD 遷移 (階段 2) 完成之後，內部部署 Exchange (混合) 拓撲的系統管理員必須為 Office 365 泛型服務新增新的驗證服務端點。 使用此命令從 Exchange PowerShell，取代 `<TenantID>` Azure Active Directory 上 azure 入口網站中找到的組織租使用者識別碼。<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> 無法完成此工作可能會導致混合空閒忙碌要求無法為已從 Microsoft Cloud Deutschland 遷移至 Office 365 服務的信箱使用者提供資訊。  |
-|  (前置階段 5) 保留共用信箱設定 | 有些混合式客戶已使用 Exchange Online 命令將雲端使用者信箱轉換成「共用」信箱。 此雲端信箱設定會寫入信箱和本機 Exchange Online 目錄，但它不會透過 AAD Connect 同步處理回客戶的 Active Directory。 結果是信箱 RemoteRecipientType 和 RemoteDisplayType 值的 Active Directory 標記法之間的差異，以及 Exchange Online 中將信箱定義為共用。 <br><br> 客戶負責確定已使用、或將所有共用信箱正確布建 `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` `Set-RemoteMailbox -Shared` 。  請參閱此參考以瞭解如何 [在混合式環境中轉換使用者的信箱](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)。| 無法在階段 5 [Exchange Online 遷移] 之前完成此工作，可能會對共用信箱造成 NDRs，將其轉換回未授權的信箱，並遺失受影響信箱的共用存取權。 [在 exchange 混合式部署中執行目錄同步處理之後，共用信箱會意外轉換為使用者信箱](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) 。在 Exchange Online 遷移完成之前，不會解決此影響的影響。  
+| 使用 Office 365 德國設定重新執行 HCW <br><br> <i>您可以在收到您的 Office 365 租使用者遷移已開始 (階段 1) 之後，立即啟動此活動。</i>| 卸載及重新執行 HCW (17.0.5378.0 或以上) 從 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 第5階段開始，可確保您的內部部署設定準備好使用 Microsoft Cloud Deutschland 使用者和遷移至 Office 365 德國地區的使用者來傳送和接收郵件。 <p><li> 在 HCW 中， **office 365 組織** 底下的清單方塊是由所主控，選取 [ **office 365 德國]。** | 在階段 5 [Exchange 遷移] 開始之前無法完成此工作，可能會導致您的內部部署 Exchange 部署和 Office 365 之間的郵件路由 NDRs。  
+| 保留共用信箱設定 | 有些混合式客戶已使用 Exchange Online 命令將雲端使用者信箱轉換成「共用」信箱。 此雲端信箱設定會寫入信箱和本機 Exchange Online 目錄，但它不會透過 AAD Connect 同步處理回客戶的 Active Directory。 結果是信箱 RemoteRecipientType 和 RemoteDisplayType 值的 Active Directory 標記法之間的差異，以及 Exchange Online 中將信箱定義為共用。 <br><br> 客戶負責確定已使用、或將所有共用信箱正確布建 `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` `Set-RemoteMailbox -Shared` 。  請參閱此參考以瞭解如何 [在混合式環境中轉換使用者的信箱](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)。| 無法在階段 5 [Exchange Online 遷移] 之前完成此工作，可能會對共用信箱造成 NDRs，將其轉換回未授權的信箱，並遺失受影響信箱的共用存取權。 [在 exchange 混合式部署中執行目錄同步處理之後，共用信箱會意外轉換為使用者信箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) 。在 Exchange Online 遷移完成之前，不會解決此影響的影響。  
 ||||
 
 ## <a name="skype-for-business-online"></a>商務用 Skype Online

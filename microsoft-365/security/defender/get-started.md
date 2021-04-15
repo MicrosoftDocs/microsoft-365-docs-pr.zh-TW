@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a6fe207773d2682ab68392269ac915030c67fa4b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f408ed0fe77034f69fc6e51ada75012f752ee2e7
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057983"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51759819"
 ---
 # <a name="get-started-with-microsoft-365-for-defender"></a>立即開始使用適用于 Defender 的 Microsoft 365
 
@@ -32,8 +32,6 @@ ms.locfileid: "51057983"
 
 **適用於：**
 - Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft 365 Defender 是一種統一的體驗，您可以在其中監視和管理整個企業的安全性。 透過 identity、端點、資料、應用程式、電子郵件及共同作業工具的整合式提醒，現在會在中心位置進行調查和回應威脅。 
 
@@ -61,7 +59,7 @@ Microsoft 365 Defender 是一種統一的體驗，您可以在其中監視和管
 | 適用於端點的 Microsoft Defender | 以強大行為感應器、雲端分析和威脅智慧為基礎的 Endpoint protection 套件 |
 |適用於 Office 365 的 Microsoft Defender | Office 365 中的應用程式和資料的高級保護，包括電子郵件和其他共同作業工具 |
 | 適用於身分識別的 Microsoft Defender | 使用關聯的 Active Directory 信號，防禦高級威脅、遭到破壞的身分識別，以及惡意內幕用。 |
-| Microsoft 雲端應用程式安全性 | 在您的 Microsoft 和協力廠商雲端服務之間識別及打擊 cyberthreats |
+| Microsoft 雲端 App 安全性 | 在您的 Microsoft 和協力廠商雲端服務之間識別及打擊 cyberthreats |
 
 
 

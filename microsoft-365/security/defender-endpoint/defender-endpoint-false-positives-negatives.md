@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: ddd10e6164a8fae5d0d3d60c04ca854ef9771dba
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688738"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759867"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解決適用於端點的 Microsoft Defender 中的誤判
 
@@ -125,9 +125,11 @@ ms.locfileid: "51688738"
 其他動作（例如啟動防病毒掃描或收集調查套件）會手動或透過 [即時回應](live-response.md)進行。 透過 Live Response 採取的動作無法復原。
 
 在您檢查提醒後，下一步是 [複查修復動作](manage-auto-investigation.md)。 如果因誤報而採取任何動作，您可以復原大多數類型的修復動作。 具體說來，您可以：
-- [一次撤銷一個動作](#undo-an-action);
-- [一次撤銷多個動作](#undo-multiple-actions-at-one-time);和 
-- [在多個裝置間移除隔離區中的](#remove-a-file-from-quarantine-across-multiple-devices)檔案。 
+
+- [從行動中心還原隔離的檔案](#restore-a-quarantined-file-from-the-action-center)
+- [一次撤銷多個動作](#undo-multiple-actions-at-one-time)
+- [在多個裝置間移除隔離區中的](#remove-a-file-from-quarantine-across-multiple-devices)檔案。  及 
+- [從隔離區還原檔案](#restore-file-from-quarantine)
 
 當您完成檢查並撤銷因誤報而採取的動作時，請繼續 [審閱或定義排除](#part-3-review-or-define-exclusions)。
 
@@ -139,7 +141,7 @@ ms.locfileid: "51688738"
 
 3. 選取專案，以查看有關所採取之修正動作的詳細資料。
 
-### <a name="undo-an-action"></a>復原動作
+### <a name="restore-a-quarantined-file-from-the-action-center"></a>從行動中心還原隔離的檔案
 
 1. 請移至「行動中心」 ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)) 並登入。
 
@@ -164,7 +166,33 @@ ms.locfileid: "51688738"
 
 2. 在 [ **記錄** ] 索引標籤上，選取具有 [ **隔離** 檔] 動作類型的檔案。
 
+3. 在螢幕右側的窗格中，選取 [套用至此檔案 **的 X 個實例**]，然後選取 [ **復原**]。
+
+### <a name="restore-file-from-quarantine"></a>從隔離區還原檔案
+
+如果您已決定在調查之後清除檔案，您可以從隔離區復原檔案並將其移除。 在隔離檔案的每個裝置上執行下列命令。
+
+1. 在裝置上開啟已提升許可權的命令列提示：
+
+   1. 轉至 **[開始]** 並鍵入 _「cmd」_。
+
+   1. 以滑鼠右鍵按一下 [ **命令提示** 字元]，然後選取 [ **以管理員身分執行**]。
+
+2. 輸入下列命令，然後按 **enter**：
+
+    ```console
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    ```
+
+    > [!NOTE]
+    > 在某些情況下， **ThreatName** 可能會顯示為： `EUS:Win32/
+CustomEnterpriseBlock!cl` 。 在過去30天內，在此裝置上已隔離的所有自訂封鎖檔案都會還原為端點。
+
+    > [!IMPORTANT]
+    > 被隔離成可能網路威脅的檔案可能無法復原。 如果使用者嘗試在隔離後還原檔案，該檔案可能無法存取。 這可能是因為系統已無法再有存取該檔案的網路認證。 一般來說，這是暫時登入系統或共用資料夾，且存取權杖已到期的結果。
+
 3. 在螢幕右側的窗格中，選取 [套用至此檔案 **的 X 個實例**]，然後選取 [ **復原**]。 
+
 
 ## <a name="part-3-review-or-define-exclusions"></a>第3部分：審閱或定義排除專案
 

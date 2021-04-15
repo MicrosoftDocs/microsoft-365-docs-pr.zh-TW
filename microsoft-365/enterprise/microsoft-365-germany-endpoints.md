@@ -20,18 +20,22 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: 在本文中，您將會發現在德國使用 Office 365 之客戶可以到達的端點。
 hideEdit: true
-ms.openlocfilehash: 8d3e8bfe2a52027b412aff87e063f2458ca47f74
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d96300e77c67ac05ea18ab23d63c01d4f840dfb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923987"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759891"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany 端點
 
  *適用版本： Office 365 系統管理員*
 
 Office 365 需要連接至網際網路。 下列端點應可供使用 **Office 365 德國** 方案的客戶使用。
+
+> [!NOTE]
+> 若為客戶（位於德國的新 Microsoft 365 資料中心區域過渡），端點將會變更。
+> 如需其他資訊，請參閱 [從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務](ms-cloud-germany-transition.md)。
   
  **Office 365 端點：** [全球 (包括 GCC)](urls-and-ip-address-ranges.md)  | [21 Vianet 提供的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 德國* |  [Office 365 美國政府 DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 美國政府 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   

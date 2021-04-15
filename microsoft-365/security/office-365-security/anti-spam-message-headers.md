@@ -18,12 +18,12 @@ description: 系統管理員可以透過 Exchange Online Protection （EOP）瞭
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04b98ad6b1ca136429395dfd1636b43bbbc6878a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 469f28acb40017f3d431e3545c81877126f50c18
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204880"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688450"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 的反垃圾郵件標頭
 
@@ -74,7 +74,7 @@ ms.locfileid: "51204880"
 |`LANG`|撰寫郵件所用的語言，如國碼所指定 (例如，ru_RU 代表俄文)。|
 |`PTR:[ReverseDNS]`|來源 IP 位址的 PTR 記錄 (又稱為反向 DNS 查閱)。|
 |`SCL`|郵件的垃圾郵件信賴等級 (SCL)。 此值越高，表示郵件越有可能是垃圾郵件。 如需詳細資訊，請參閱[垃圾郵件信賴等級 (SCL)](spam-confidence-levels.md)。|
-|`SFTY`|郵件已被識別為網路釣魚，並且也會標示為以下其中一個值： <ul><li>9.1：預設值。 郵件包含下列部分或所有元素：網路釣魚 URL、其他網路釣魚內容，或是由內部部署 Exchange 標記為網路釣魚。</li><li>9.11：[組織內部或自我詐騙](anti-spoofing-protection.md#different-types-of-spoofing)。 組織內部詐騙的安全提示會新增至郵件。</li><li>9.19：網域冒充。 傳送端網域嘗試[模擬受保護的網域](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 網域模擬的安全提示會新增至郵件 (如果已啟用)。</li><li>9.20：使用者冒充。 寄件端使用者嘗試冒充收件者組織中的使用者，或適用於 Office 365 的 Microsoft Defender 防網路釣魚原則中指定的受保護使用者。 使用者模擬的安全提示會新增至郵件 (如果已啟用)。</li><li>9.21：[跨網域詐騙](anti-spoofing-protection.md#different-types-of-spoofing)。 郵件無法通過反詐騙檢查。 [寄件者] 標頭中的寄者件電子郵件網域未驗證，而且是外部網域。 結合[複合驗證](#authentication-results-message-header-fields)使用。</li><li>9.22：與 9.21 相同，唯一不同的是使用者的安全寄件者遭到覆寫。</li><li>9.23：與 9.22 相同，唯一不同的是組織允許遭到覆寫的寄件者或網域。</li><li>9.24：與 9.23 相同，唯一不同的是使用者的 Exchange 郵件流程規則 (又稱為傳輸規則) 遭到覆寫。</li></ul>|
+|`SFTY`|郵件已被識別為網路釣魚，並且也會標示為以下其中一個值： <ul><li>9.19：網域冒充。 傳送端網域嘗試[模擬受保護的網域](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 網域模擬的安全提示會新增至郵件 (如果已啟用)。</li><li>9.20：使用者冒充。 寄件端使用者嘗試冒充收件者組織中的使用者，或適用於 Office 365 的 Microsoft Defender [防網路釣魚原則中指定的受保護使用者](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 使用者模擬的安全提示會新增至郵件 (如果已啟用)。</li></ul>|
 |`SFV:BLK`|已略過篩選，但封鎖郵件，因為該郵件是從使用者的封鎖寄件者清單上的地址傳送。 <p> 如需系統管理員如何管理使用者的封鎖寄件者清單的詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。|
 |`SFV:NSPM`|垃圾郵件篩選已將郵件標示為非垃圾郵件，並將郵件傳送給預期的收件者。|
 |`SFV:SFE`|已略過篩選，但允許郵件，因為該郵件是從使用者的安全寄件者清單上的地址傳送。 <p> 如需系統管理員如何管理使用者的安全寄件者清單的詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。|

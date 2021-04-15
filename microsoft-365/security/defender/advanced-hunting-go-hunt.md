@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 392db06aa517e3e970f85ccc971c3a6a6bc6e548
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0f09f74a1cefad5a9b6b438752ebe57e583397c7
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498293"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759975"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>使用 go 搜尋快速尋找實體或事件資訊
 
@@ -39,7 +39,7 @@ ms.locfileid: "51498293"
 
 每當顯示事件或實體詳細資料時，就會在安全性中心的各個區段中使用「 *繼續搜尋* 」動作。 例如，您可以使用下列各節的「 *繼續搜尋* 」：
 
-- 在 [ [事件] 頁面](investigate-incidents.md#incident-overview)中，您可以查看使用者、裝置及其他許多與事件相關聯之實體的詳細資料。 當您選取實體時，您會收到其他資訊，以及您在該 entitity 上可以採取的各種動作。 在下列範例中，會選取一個信箱，顯示信箱的詳細資料，也就是尋找該信箱的詳細資訊的選項。
+- 在 [ [事件] 頁面](investigate-incidents.md#summary)中，您可以查看使用者、裝置及其他許多與事件相關聯之實體的詳細資料。 當您選取實體時，您會收到其他資訊，以及您在該 entitity 上可以採取的各種動作。 在下列範例中，會選取一個信箱，顯示信箱的詳細資料，也就是尋找該信箱的詳細資訊的選項。
 
     ![使用 [搜尋] 選項顯示信箱詳細資料的影像](../../media/mtp-ah/go-hunt-email.png)
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 在 Microsoft 365 系統管理中心管理這些 Azure 系統管理員角色。
-ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72835a0f9fdf9a15fc3ffa07c0fab6ca6f0260cb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904489"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759939"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的 Azure Active Directory 角色
 
@@ -29,15 +29,11 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 
 無論您是在 Microsoft 365 系統管理中心或適用於 Windows PowerShell 的 Azure AD 模組中指派角色，已獲指派系統管理員角色的使用者，將對貴組織已訂閱的雲端服務具備相同層級的存取權。
 
-::: moniker range="o365-worldwide"
-
 在 Microsoft 365 系統管理中心中，您可以移至 [角色]，然後選取任何角色來開啟其詳細資料窗格。 選取 [權限] 索引標籤，以檢視系統管理員指派該角色具備權限之工作的詳細清單。 選取 [已指派] 或 [指派的系統管理員] 索引標籤來將使用者新增至角色。 如需在 Microsoft 365 系統管理中心指派角色的詳細資訊，請參閱[指派系統管理員角色](assign-admin-roles.md)。
-
-::: moniker-end
 
 ## <a name="all-azure-ad-roles"></a>所有 Azure AD 角色
 
-以下是 Microsoft 365 系統管理中心提供的所有可用系統管理員角色的清單。 正在尋找 Microsoft 365 系統管理員的詳細角色描述嗎？ 請查看[關於系統管理員角色](./about-admin-roles.md?view=o365-worldwide)。
+以下是 Microsoft 365 系統管理中心提供的所有可用系統管理員角色的清單。 正在尋找 Microsoft 365 系統管理員的詳細角色描述嗎？ 請查看[關於系統管理員角色](./about-admin-roles.md)。
 
 |系統管理員角色     |說明  |
 |---------|---------|
