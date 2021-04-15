@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,49 +15,49 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3975a18c2986ac7766664194a6d4b80ee1a503b1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f2b3060d7f0d9daf0f923c674f2fe45ba976fdfc
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690131"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764732"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a><span data-ttu-id="ba686-104">收集 Microsoft Defender AV 評估的更新規範診斷資料</span><span class="sxs-lookup"><span data-stu-id="ba686-104">Collect Update Compliance diagnostic data for Microsoft Defender AV Assessment</span></span>
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a><span data-ttu-id="61dc8-104">收集 Microsoft Defender AV 評估的更新規範診斷資料</span><span class="sxs-lookup"><span data-stu-id="61dc8-104">Collect Update Compliance diagnostic data for Microsoft Defender AV Assessment</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="ba686-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="ba686-105">**Applies to:**</span></span>
+<span data-ttu-id="61dc8-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="61dc8-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="ba686-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="ba686-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="61dc8-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="61dc8-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="ba686-107">本文說明如何收集可供 Microsoft 支援人員和工程小組使用的診斷資料，以協助疑難排解在更新規範增益集中使用 Microsoft Defender AV 評估區段時可能會遇到的問題。</span><span class="sxs-lookup"><span data-stu-id="ba686-107">This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV Assessment section in the Update Compliance add-in.</span></span>
+<span data-ttu-id="61dc8-107">本文說明如何收集可供 Microsoft 支援人員和工程小組使用的診斷資料，以協助疑難排解在更新規範增益集中使用 Microsoft Defender AV 評估區段時可能會遇到的問題。</span><span class="sxs-lookup"><span data-stu-id="61dc8-107">This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV Assessment section in the Update Compliance add-in.</span></span>
 
-<span data-ttu-id="ba686-108">嘗試此程式之前，請先確定您已閱讀「 [Microsoft Defender 防病毒報告](troubleshoot-reporting.md)」的疑難排解，並符合所有需要的必要條件，並採取任何其他建議的疑難排解步驟。</span><span class="sxs-lookup"><span data-stu-id="ba686-108">Before attempting this process, ensure you have read [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.</span></span>
+<span data-ttu-id="61dc8-108">嘗試此程式之前，請先確定您已閱讀「 [Microsoft Defender 防病毒報告](troubleshoot-reporting.md)」的疑難排解，並符合所有需要的必要條件，並採取任何其他建議的疑難排解步驟。</span><span class="sxs-lookup"><span data-stu-id="61dc8-108">Before attempting this process, ensure you have read [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.</span></span>
 
-<span data-ttu-id="ba686-109">在至少兩部未報告或顯示更新規範的裝置上，採取下列步驟取得 .cab 診斷檔案：</span><span class="sxs-lookup"><span data-stu-id="ba686-109">On at least two devices that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by taking the following steps:</span></span>
+<span data-ttu-id="61dc8-109">在至少兩部未報告或顯示更新規範的裝置上，採取下列步驟取得 .cab 診斷檔案：</span><span class="sxs-lookup"><span data-stu-id="61dc8-109">On at least two devices that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by taking the following steps:</span></span>
 
-1. <span data-ttu-id="ba686-110">以下列方式開啟命令提示字元的系統管理員層級版本：</span><span class="sxs-lookup"><span data-stu-id="ba686-110">Open an administrator-level version of the command prompt as follows:</span></span>
+1. <span data-ttu-id="61dc8-110">以下列方式開啟命令提示字元的系統管理員層級版本：</span><span class="sxs-lookup"><span data-stu-id="61dc8-110">Open an administrator-level version of the command prompt as follows:</span></span>
         
-    <span data-ttu-id="ba686-111">a.</span><span class="sxs-lookup"><span data-stu-id="ba686-111">a.</span></span> <span data-ttu-id="ba686-112">開啟 [ **開始** ] 功能表。</span><span class="sxs-lookup"><span data-stu-id="ba686-112">Open the **Start** menu.</span></span>
+    <span data-ttu-id="61dc8-111">a.</span><span class="sxs-lookup"><span data-stu-id="61dc8-111">a.</span></span> <span data-ttu-id="61dc8-112">開啟 [ **開始** ] 功能表。</span><span class="sxs-lookup"><span data-stu-id="61dc8-112">Open the **Start** menu.</span></span>
 
-    <span data-ttu-id="ba686-113">b.</span><span class="sxs-lookup"><span data-stu-id="ba686-113">b.</span></span> <span data-ttu-id="ba686-114">輸入 **cmd**。</span><span class="sxs-lookup"><span data-stu-id="ba686-114">Type **cmd**.</span></span> <span data-ttu-id="ba686-115">在 **命令提示** 字元上按一下滑鼠右鍵，然後按一下 [以 **系統管理員身分執行**]。</span><span class="sxs-lookup"><span data-stu-id="ba686-115">Right-click on **Command Prompt** and click **Run as administrator**.</span></span>
+    <span data-ttu-id="61dc8-113">b.</span><span class="sxs-lookup"><span data-stu-id="61dc8-113">b.</span></span> <span data-ttu-id="61dc8-114">輸入 **cmd**。</span><span class="sxs-lookup"><span data-stu-id="61dc8-114">Type **cmd**.</span></span> <span data-ttu-id="61dc8-115">在 **命令提示** 字元上按一下滑鼠右鍵，然後按一下 [以 **系統管理員身分執行**]。</span><span class="sxs-lookup"><span data-stu-id="61dc8-115">Right-click on **Command Prompt** and click **Run as administrator**.</span></span>
 
-    <span data-ttu-id="ba686-116">c.</span><span class="sxs-lookup"><span data-stu-id="ba686-116">c.</span></span> <span data-ttu-id="ba686-117">輸入系統管理員認證或核准提示。</span><span class="sxs-lookup"><span data-stu-id="ba686-117">Enter administrator credentials or approve the prompt.</span></span>
+    <span data-ttu-id="61dc8-116">c.</span><span class="sxs-lookup"><span data-stu-id="61dc8-116">c.</span></span> <span data-ttu-id="61dc8-117">輸入系統管理員認證或核准提示。</span><span class="sxs-lookup"><span data-stu-id="61dc8-117">Enter administrator credentials or approve the prompt.</span></span>
         
-2. <span data-ttu-id="ba686-118">流覽至 [Windows Defender] 目錄。</span><span class="sxs-lookup"><span data-stu-id="ba686-118">Navigate to the Windows Defender directory.</span></span> <span data-ttu-id="ba686-119">此為預設值 `C:\Program Files\Windows Defender` 。</span><span class="sxs-lookup"><span data-stu-id="ba686-119">By default, this is `C:\Program Files\Windows Defender`.</span></span>
+2. <span data-ttu-id="61dc8-118">流覽至 [Windows Defender] 目錄。</span><span class="sxs-lookup"><span data-stu-id="61dc8-118">Navigate to the Windows Defender directory.</span></span> <span data-ttu-id="61dc8-119">此為預設值 `C:\Program Files\Windows Defender` 。</span><span class="sxs-lookup"><span data-stu-id="61dc8-119">By default, this is `C:\Program Files\Windows Defender`.</span></span>
 
-3. <span data-ttu-id="ba686-120">輸入下列命令，然後按 **enter**</span><span class="sxs-lookup"><span data-stu-id="ba686-120">Type the following command, and then press **Enter**</span></span>
+3. <span data-ttu-id="61dc8-120">輸入下列命令，然後按 **enter**</span><span class="sxs-lookup"><span data-stu-id="61dc8-120">Type the following command, and then press **Enter**</span></span>
         
     ```Dos
     mpcmdrun -getfiles
     ```
     
-4. <span data-ttu-id="ba686-121">會產生包含各種診斷記錄的 .cab 檔案。</span><span class="sxs-lookup"><span data-stu-id="ba686-121">A .cab file will be generated that contains various diagnostic logs.</span></span> <span data-ttu-id="ba686-122">會在命令提示字元的輸出中指定檔案的位置。</span><span class="sxs-lookup"><span data-stu-id="ba686-122">The location of the file will be specified in the output in the command prompt.</span></span> <span data-ttu-id="ba686-123">根據預設，位置是 `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。</span><span class="sxs-lookup"><span data-stu-id="ba686-123">By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.</span></span>
+4. <span data-ttu-id="61dc8-121">會產生包含各種診斷記錄的 .cab 檔案。</span><span class="sxs-lookup"><span data-stu-id="61dc8-121">A .cab file will be generated that contains various diagnostic logs.</span></span> <span data-ttu-id="61dc8-122">會在命令提示字元的輸出中指定檔案的位置。</span><span class="sxs-lookup"><span data-stu-id="61dc8-122">The location of the file will be specified in the output in the command prompt.</span></span> <span data-ttu-id="61dc8-123">根據預設，位置是 `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。</span><span class="sxs-lookup"><span data-stu-id="61dc8-123">By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.</span></span>
 
-5. <span data-ttu-id="ba686-124">將這些 .cab 檔案複製到可供 Microsoft 支援人員存取的位置。</span><span class="sxs-lookup"><span data-stu-id="ba686-124">Copy these .cab files to a location that can be accessed by Microsoft support.</span></span> <span data-ttu-id="ba686-125">例如，您可以將密碼保護的 OneDrive 資料夾與我們共用。</span><span class="sxs-lookup"><span data-stu-id="ba686-125">An example could be a password-protected OneDrive folder that you can share with us.</span></span>
+5. <span data-ttu-id="61dc8-124">將這些 .cab 檔案複製到可供 Microsoft 支援人員存取的位置。</span><span class="sxs-lookup"><span data-stu-id="61dc8-124">Copy these .cab files to a location that can be accessed by Microsoft support.</span></span> <span data-ttu-id="61dc8-125">例如，您可以將密碼保護的 OneDrive 資料夾與我們共用。</span><span class="sxs-lookup"><span data-stu-id="61dc8-125">An example could be a password-protected OneDrive folder that you can share with us.</span></span>
 
-6. <span data-ttu-id="ba686-126">使用 <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">更新規範支援電子郵件範本</a>傳送電子郵件，並使用下列資訊填寫範本：</span><span class="sxs-lookup"><span data-stu-id="ba686-126">Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Update Compliance support email template</a>, and fill out the template with the following information:</span></span>
+6. <span data-ttu-id="61dc8-126">使用 <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">更新規範支援電子郵件範本</a>傳送電子郵件，並使用下列資訊填寫範本：</span><span class="sxs-lookup"><span data-stu-id="61dc8-126">Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Update Compliance support email template</a>, and fill out the template with the following information:</span></span>
   
     ```
     I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:
@@ -69,6 +69,6 @@ ms.locfileid: "51690131"
     Please contact me at:
     ```
 
-## <a name="see-also"></a><span data-ttu-id="ba686-127">另請參閱</span><span class="sxs-lookup"><span data-stu-id="ba686-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="61dc8-127">另請參閱</span><span class="sxs-lookup"><span data-stu-id="61dc8-127">See also</span></span>
 
-- [<span data-ttu-id="ba686-128">Windows Defender Microsoft Defender 防病毒報告疑難排解</span><span class="sxs-lookup"><span data-stu-id="ba686-128">Troubleshoot Windows Defender Microsoft Defender Antivirus reporting</span></span>](troubleshoot-reporting.md)
+- [<span data-ttu-id="61dc8-128">Windows Defender Microsoft Defender 防病毒報告疑難排解</span><span class="sxs-lookup"><span data-stu-id="61dc8-128">Troubleshoot Windows Defender Microsoft Defender Antivirus reporting</span></span>](troubleshoot-reporting.md)
