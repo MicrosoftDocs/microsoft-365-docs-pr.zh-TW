@@ -140,6 +140,7 @@
 
 #### 疑難排解 Microsoft Defender 防毒軟體
 ##### [疑難排解更新合規性中的 Microsoft Defender 防毒軟體報告](troubleshoot-reporting.md)
+##### [疑難排解效能問題](troubleshoot-performance-issues.md)
 ##### [檢查事件記錄和錯誤碼以疑難排解 Microsoft Defender 防毒軟體的問題](troubleshoot-microsoft-defender-antivirus.md)
 ##### [從協力廠商解決方案移轉時疑難排解 Microsoft Defender 防毒軟體](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -249,6 +250,7 @@
 ##### [偵測並封鎖潛在的垃圾應用程式](linux-pua.md)
 ##### [在 Linux 上使用適用於端點的 Microsoft Defender 排程掃描](linux-schedule-scan-atp.md)
 ##### [為於端點的 Microsoft Defender 排程更新 (Linux)](linux-update-MDE-Linux.md)
+##### [使用 Chef 在 Linux 上部署適用於端點的 Defender](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [疑難排解]()
 ##### [安裝問題的疑難排解](linux-support-install.md)
