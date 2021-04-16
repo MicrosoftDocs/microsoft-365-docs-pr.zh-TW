@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 系統管理員可以了解 Exchange Online Protection (EOP) 中提供的反詐騙功能，可協助緩解來自詐騙寄件者和網域的網路釣魚攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b94e2d2cc0395ce7a9785887c253df3addf7fa
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688774"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769019"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的反詐騙保護
 
@@ -120,10 +120,10 @@ Microsoft 將詐騙郵件區分為兩種類型：
 
   - `reason=000` 表示郵件未通過明確電子郵件驗證。 `reason=001` 值表示郵件未通過隱含電子郵件驗證。
 
-  - SFTY 是郵件的安全層級。 9 表示網路釣魚，22 表示跨網域詐騙。
+  - `SFTY` 是郵件的安全層級。 9 表示網路釣魚，22 表示跨網域詐騙。
 
 > [!NOTE]
-> 如果您收到類似 ***compauth=fail reason=###** _ 的訊息，並且需要了解綜合驗證 (compauth) 以及與詐騙相關的值，請參閱[_Microsoft 365* 的反垃圾郵件標頭](anti-spam-message-headers.md)。 或者直接前往 [*理由*](anti-spam-message-headers.md)代碼。
+> 如果您收到類似 ***compauth=fail reason=###** _ 的訊息，並且需要了解綜合驗證 (compauth) 以及與詐騙相關的值，請參閱 [_Microsoft 365* 的反垃圾郵件標頭](anti-spam-message-headers.md)。 或者直接前往 [*理由*](anti-spam-message-headers.md)代碼。
 
 如需 DMARC 的詳細資訊，請參閱[在 Microsoft 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)。
 
