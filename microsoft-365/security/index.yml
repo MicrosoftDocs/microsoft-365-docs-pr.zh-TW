@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft 365 安全性文件
-summary: 了解 Microsoft 365 安全性中強大的安全性解決方案與服務，讓您能夠更進一步全方面保護企業免受攻擊。
+summary: Microsoft 365 安全性中心將多個安全性技術統合在一個完整的系統管理主控台中，並增強以保護企業。
 metadata:
   title: Microsoft 365 安全性文件
   description: 了解適用於端點的 Microsoft Defender - 其如何保護端點免受網路威脅，並提供安全性作業小組補救威脅的功能。
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/05/2021
   localization_priority: Priority
-  ms.openlocfilehash: c7ec3e0bb970d74d9e33c3d74eb0cd18aaf8d16c
-  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+  ms.openlocfilehash: a8d2e2c5ec41436bba7f013304daa8f259db9444
+  ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "51200350"
+  ms.lasthandoff: 04/15/2021
+  ms.locfileid: "51768551"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:

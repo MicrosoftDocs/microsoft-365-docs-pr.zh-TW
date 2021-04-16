@@ -9,7 +9,7 @@
 ### [Microsoft Defender 資訊安全中心概觀](use.md)
 ### [入口網站概觀](portal-overview.md)
 ### [適用於美國政府客戶的適用於端點的 Microsoft Defender](gov.md)
-### [非 Windows 平台版適用於端點的 Microsoft Defender](non-windows.md)
+### [非 Windows 平台版上適用於端點的 Microsoft Defender](non-windows.md)
 
 ## [評估功能](evaluation-lab.md)
 
@@ -85,6 +85,65 @@
 ##### [自訂受攻擊面縮小規則](customize-attack-surface-reduction.md)
 ##### [查看攻擊面縮小事件](event-views.md)
 
+### 新一代保護
+#### [Microsoft Defender 防毒軟體概觀](microsoft-defender-antivirus-in-windows-10.md)
+#### [Windows Server 上的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-on-windows-server.md)
+#### [相得益彰：Microsoft Defender 防毒軟體與適用於端點的 Microsoft Defender](why-use-microsoft-defender-antivirus.md)
+#### [相得益彰：Microsoft Defender 防毒軟體與 Office 365](office-365-microsoft-defender-antivirus.md)
+#### [雲端提供的保護與 Microsoft Defender 防毒軟體](cloud-protection-microsoft-defender-antivirus.md)
+#### [評估 Microsoft Defender 防毒軟體](evaluate-microsoft-defender-antivirus.md)
+#### [設定 Microsoft Defender 防毒軟體功能](configure-microsoft-defender-antivirus-features.md)
+##### [開啟雲端提供的保護](enable-cloud-protection-microsoft-defender-antivirus.md)
+##### [指定雲端提供的保護層級](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [設定及驗證 Microsoft Defender 防毒軟體網路連線](configure-network-connections-microsoft-defender-antivirus.md)
+##### [使用竄改防護來保護安全性設定](prevent-changes-to-security-settings-with-tamper-protection.md)
+##### [第一次看見時開啟封鎖](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+##### [設定雲端封鎖逾時期間](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
+##### [設定行為、啟發學習法和即時保護](configure-protection-features-microsoft-defender-antivirus.md)
+##### [偵測並封鎖潛在的垃圾應用程式](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+##### [在群組原則中啟用和設定 Microsoft Defender 防毒軟體一律開啟保護](configure-real-time-protection-microsoft-defender-antivirus.md)
+##### [設定 Microsoft Defender 防毒軟體偵測的補救](configure-remediation-microsoft-defender-antivirus.md)
+##### [設定排程的快速或完整 Microsoft Defender 防毒軟體掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+##### [在 Microsoft Defender 防毒軟體中使用有限的定期掃描](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [與其他安全性產品的相容性](microsoft-defender-antivirus-compatibility.md)
+
+#### [取得您的防毒軟體和反惡意程式碼更新](manage-updates-baselines-microsoft-defender-antivirus.md)
+##### [管理 Microsoft Defender 防毒軟體保護更新的來源](manage-protection-updates-microsoft-defender-antivirus.md)
+##### [管理何時應下載並套用保護更新的排程](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [管理 Microsoft Defender 防毒軟體更新和掃描已過時的端點](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+##### [管理事件型強制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
+##### [管理行動裝置和虛擬機器 (VM) 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+
+#### [管理組織的 Microsoft Defender 防毒軟體](configuration-management-reference-microsoft-defender-antivirus.md)
+##### [使用 Microsoft 端點管理員來管理 Microsoft Defender 防毒軟體](use-intune-config-manager-microsoft-defender-antivirus.md)
+##### [使用群組原則設定來管理 Microsoft Defender 防毒軟體](use-group-policy-microsoft-defender-antivirus.md)
+##### [使用 PowerShell Cmdlet 來管理 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+##### [使用 Windows Management Instrumentation (WMI) 來管理 Microsoft Defender 防毒軟體](use-wmi-microsoft-defender-antivirus.md)
+##### [使用 mpcmdrun.exe 工具來管理 Microsoft Defender 防毒軟體](command-line-arguments-microsoft-defender-antivirus.md)
+
+#### [在 Microsoft Defender 防毒軟體上部署和報告](deploy-manage-report-microsoft-defender-antivirus.md)
+##### [部署和啟用 Microsoft Defender 防毒軟體](deploy-microsoft-defender-antivirus.md)
+##### [虛擬桌面基礎結構 (VDI) 環境中 Microsoft Defender 防毒軟體的部署指南](deployment-vdi-microsoft-defender-antivirus.md)
+##### [在 Microsoft Defender 防毒軟體上報告](report-monitor-microsoft-defender-antivirus.md)
+
+#### [掃描和修復](review-scan-results-microsoft-defender-antivirus.md)
+##### [設定和執行隨選 Microsoft Defender 防毒軟體掃描](run-scan-microsoft-defender-antivirus.md)
+##### [執行和檢查 Microsoft Defender Offline 掃描的結果](microsoft-defender-offline.md)
+##### [設定 Microsoft Defender 防毒軟體掃描選項](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+##### [在 Microsoft Defender 防毒軟體中還原隔離的檔案](restore-quarantined-files-microsoft-defender-antivirus.md)
+
+#### [Microsoft Defender 防毒軟體排除](configure-exclusions-microsoft-defender-antivirus.md)
+##### [根據副檔名和資料夾位置排除](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+##### [依程序開啟的檔案排除](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Windows Server 的排除](configure-server-exclusions-microsoft-defender-antivirus.md)
+##### [定義排除時應避免的常見錯誤](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+
+#### 疑難排解 Microsoft Defender 防毒軟體
+##### [疑難排解更新合規性中的 Microsoft Defender 防毒軟體報告](troubleshoot-reporting.md)
+##### [檢查事件記錄和錯誤碼以疑難排解 Microsoft Defender 防毒軟體的問題](troubleshoot-microsoft-defender-antivirus.md)
+##### [從協力廠商解決方案移轉時疑難排解 Microsoft Defender 防毒軟體](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
+
+
 #### [硬體隔離]()
 ##### [Windows 10 中的硬體隔離](overview-hardware-based-isolation.md)
 
@@ -115,16 +174,23 @@
 ##### [啟用受控資料夾存取權](enable-controlled-folders.md)
 ##### [自訂受控資料夾存取權](customize-controlled-folders.md)
 
+
+### [裝置探索]()
+#### [裝置探索概觀](device-discovery.md)
+#### [設定裝置探索](configure-device-discovery.md)
+#### [裝置探索常見問題集](device-discovery-faq.md)
+
+
 ### [網路裝置](network-devices.md)
 
-### [Mac 版適用於端點的 Microsoft Defender]()
-#### [Mac 版適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-mac.md)
+### [macOS 上適用於端點的 Microsoft Defender]()
+#### [macOS 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-mac.md)
 #### [新增功能](mac-whatsnew.md)
 
 #### [部署]()
 ##### [Microsoft Intune 型部署](mac-install-with-intune.md)
 ##### [JAMF Pro 型部署]()
-###### [使用 Jamf Pro 部署 macOS 版適用於端點的 Microsoft Defender](mac-install-with-jamf.md)
+###### [在 macOS 上使用 Jamf Pro 部署適用於端點的 Microsoft Defender](mac-install-with-jamf.md)
 ###### [登入 Jamf Pro](mac-install-jamfpro-login.md)
 ###### [設定裝置群組](mac-jamfpro-device-groups.md)
 ###### [設定原則](mac-jamfpro-policies.md)
@@ -154,19 +220,19 @@
 #### [隱私權](mac-privacy.md)
 #### [資源](mac-resources.md)
 
-### [iOS 版適用於端點的 Microsoft Defender]()
-#### [iOS 版適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-ios.md)
+### [iOS 上適用於端點的 Microsoft Defender]()
+#### [iOS 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-ios.md)
 
 #### [部署]()
-##### [透過 Intune 部署 iOS 版適用於端點的 Microsoft Defender](ios-install.md)
+##### [在 iOS 上透過 Intune 部署適用於端點的 Microsoft Defender](ios-install.md)
 
 #### [設定]()
 ##### [設定 iOS 功能](ios-configure-features.md)
 #### [隱私權](ios-privacy.md)
 
 
-### [Linux 版適用於端點的 Microsoft Defende]()
-#### [Linux 版適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-linux.md)
+### [Linux 上適用於端點的 Microsoft Defender]()
+#### [Linux 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-linux.md)
 #### [新功能](linux-whatsnew.md)
 #### [部署]()
 ##### [手動部署](linux-install-manually.md)
@@ -180,7 +246,7 @@
 ##### [靜態 Proxy 組態](linux-static-proxy-configuration.md)
 ##### [設定喜好設定](linux-preferences.md)
 ##### [偵測並封鎖潛在的垃圾應用程式](linux-pua.md)
-##### [使用 Linux 版適用於端點的 Microsoft Defender 排程掃描](linux-schedule-scan-atp.md)
+##### [在 Linux 上使用適用於端點的 Microsoft Defender 排程掃描](linux-schedule-scan-atp.md)
 ##### [為於端點的 Microsoft Defender 排程更新 (Linux)](linux-update-MDE-Linux.md)
 
 #### [疑難排解]()
@@ -192,17 +258,17 @@
 #### [隱私權](linux-privacy.md)
 #### [資源](linux-resources.md)
 
-### [Android 版適用於端點的 Microsoft Defender]()
-#### [Android 版適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-android.md)
+### [Android 上適用於端點的 Microsoft Defender]()
+#### [Android 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-android.md)
 
 #### [部署]()
-##### [使用 Microsoft Intune 部署 Android 版適用於端點的 Microsoft Defender](android-intune.md)
+##### [在 Android 上使用 Microsoft Intune 部署適用於端點的 Microsoft Defender](android-intune.md)
 
 #### [設定]()
-##### [設定 Android 版適用於端點的 Microsoft Defender 功能](android-configure.md)
+##### [在 Android 上設定適用於端點的 Microsoft Defender 功能](android-configure.md)
 
 #### [隱私權]()
-##### [Android 版適用於端點的 Microsoft Defender - 隱私權資訊](android-privacy.md)
+##### [Android 上適用於端點的 Microsoft Defender - 隱私權資訊](android-privacy.md)
 
 #### [疑難排解]()
 ##### [針對問題進行疑難排解](android-support-signin.md)
