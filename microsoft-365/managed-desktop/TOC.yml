@@ -30,6 +30,8 @@
               href: service-description/archived-device-list.md
         - name: 裝置服務
           href: service-description/device-services.md
+        - name: 裝置設定檔
+          href: service-description/profiles.md
         - name: 裝置設定
           href: service-description/device-policies.md
         - name: 安全性技術
@@ -153,6 +155,8 @@
           href: working-with-managed-desktop/manage-apps.md
         - name: 使用應用程式控制
           href: working-with-managed-desktop/work-with-app-control.md
+        - name: 變更裝置設定檔
+          href: working-with-managed-desktop/change-device-profile.md
         - name: 可設定的設定
           href: working-with-managed-desktop/config-setting-overview.md
           items:

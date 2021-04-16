@@ -245,6 +245,8 @@
               href: dlp-on-premises-scanner-learn.md
             - name: 了解 Microsoft 合規性中心擴充功能 (預覽)
               href: dlp-chrome-learn-about.md
+            - name: 了解資料外洩防護警示儀表板
+              href: dlp-alerts-dashboard-learn.md
         - name: 開始使用 DLP
           items:
             - name: 開始使用預設的 DLP 原則
@@ -261,6 +263,8 @@
               href: endpoint-dlp-configure-proxy.md
             - name: 開始使用 Microsoft 合規性中心擴充功能 (預覽)
               href: dlp-chrome-get-started.md
+            - name: 開始使用資料外洩防護警示儀表板
+              href: dlp-alerts-dashboard-get-started.md
             - name: Windows 10 裝置的端點 DLP 上線工具及方法
               items:
                 - name: Windows 10 裝置的上線工具及方法
@@ -594,6 +598,8 @@
               href: ediscovery-decryption.md
             - name: 收集電子文件探索診斷資訊
               href: ediscovery-diagnostic-info.md
+            - name: 疑難排解電子文件探索保留錯誤
+              href: hold-distribution-errors.md
             - name: 疑難排解常見的電子文件探索問題
               href: ediscovery-troubleshooting-common-issues.md
             - name: 重新嘗試失敗的搜尋
@@ -748,6 +754,8 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: 電子文件探索工具的解密
               href: ediscovery-decryption.md
+            - name: 疑難排解電子文件探索保留錯誤
+              href: hold-distribution-errors.md
             - name: 收集電子文件探索診斷資訊
               href: ediscovery-diagnostic-info.md
             - name: 在稽核記錄中搜尋電子文件探索活動
@@ -766,6 +774,8 @@
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: 增加保留信箱的可復原項目配額
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: 疑難排解電子文件探索保留錯誤
+      href: hold-distribution-errors.md
     - name: 保留密件副本與展開的通訊群組收件者
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 管理稽核和警示原則
