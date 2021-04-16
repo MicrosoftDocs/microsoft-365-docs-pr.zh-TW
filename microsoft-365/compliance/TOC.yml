@@ -301,7 +301,7 @@
               href: how-dlp-works-between-admin-centers.md
             - name: 設定和檢視 DLP 原則的警示 (預覽)
               href: dlp-configure-view-alerts-policies.md
-            - name: 使用敏感度標籤作為 DLP 原則中的條件 (預覽)
+            - name: 使用敏感度標籤作為 DLP 原則中的條件
               href: dlp-sensitivity-label-as-condition.md
             - name: 針對非 Microsoft 雲端應用程式使用資料外洩防護原則
               href: dlp-use-policies-non-microsoft-cloud-apps.md
@@ -385,8 +385,12 @@
           items:
             - name: CellTrust
               href: archive-celltrust-data.md
-            - name: Cisco Jabber
+            - name: MS SQL 上的 Cisco Jabber
               href: archive-ciscojabberonmssql-data.md
+            - name: Oracle 上的 Cisco Jabber (預覽)
+              href: archive-ciscojabberonoracle-data.md
+            - name: PostgreSQL 上的 Cisco Jabbe (預覽)
+              href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX Connect
