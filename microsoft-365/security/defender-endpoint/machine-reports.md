@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 中的裝置健康情況和符合性報告
+title: Microsoft Defender for Endpoint 中的裝置健康情況和符合性報告
 description: 使用裝置健康情況和合規性報告追蹤裝置健康狀態偵測、防病毒狀態、作業系統平臺及 Windows 10 版本
 keywords: 健康狀態、防毒程式、作業系統平臺、windows 10 版本、版本、健康情況、規範、狀態
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5229ba068672035c2dce3afee1919f9c2d7f9e44
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35100a4b8bdaee23c427816450e948ced9ed3191
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186446"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860288"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的裝置健康情況和符合性報告
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186446"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 裝置狀態報表提供組織中裝置的高層級資訊。 報告包含趨勢資訊，顯示感應器狀況狀態、防病毒狀態、作業系統平臺及 Windows 10 版本。
 
@@ -42,7 +42,7 @@ ms.locfileid: "51186446"
 區段 | 說明
 :---|:---
 1 | 裝置趨勢
-2  | 目前日期 (裝置摘要) 
+第 | 目前日期 (裝置摘要) 
  
  
 ## <a name="device-trends"></a>裝置趨勢 

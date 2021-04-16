@@ -1,6 +1,6 @@
 ---
 title: 受管理的安全性服務提供者 (MSSP) 合作機會
-description: '瞭解 Microsoft Defender ATP 如何與受管理的安全性服務提供者整合 (MSSP) '
+description: '瞭解 Microsoft Defender for Endpoint 如何與受管理的安全性服務提供者整合 (MSSP) '
 keywords: mssp、整合、受管理、安全性、服務、提供者
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3f357553e259075b3a47d6866faee06c98036a8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 790abaad5506a77b70cb8d772e83289d8dbd791f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186578"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860782"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>受管理的安全性服務提供者合作機會
 
@@ -32,7 +32,7 @@ ms.locfileid: "51186578"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 
 安全性被辨識為執行企業的重要元件，但是有些組織可能不具備讓專用安全作業小組管理其端點和網路安全性的容量或專業知識，其他人可能會想要使用第二組紅眼來查看其網路中的警示。

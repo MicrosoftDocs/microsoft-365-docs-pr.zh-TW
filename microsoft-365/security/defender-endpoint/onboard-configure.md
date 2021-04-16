@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 服務的板載裝置
+title: 適用于 Microsoft Defender for Endpoint service 的板載裝置
 description: 板載 Windows 10 裝置、伺服器、非 Windows 裝置，並瞭解如何執行偵測測試。
 keywords: 上架，microsoft defender 用於端點上架，windows atp 上架，sccm，群組原則，mdm，本機腳本，偵測測試
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b7a225e29b4b79b2e6caf95332cb91da3dade7f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4aa3e30f34e7d9dc362cc0bbb277aaee5834b4fe
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186950"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861368"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>適用于 Microsoft Defender for Endpoint service 的板載裝置
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186950"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 您必須前往端點入口網站的上架區段，以上架任何支援的裝置。 視裝置而定，您將會以適當的步驟進行指導，並提供適用于裝置的管理和部署工具選項。 
 
@@ -63,12 +63,12 @@ ms.locfileid: "51186950"
 ## <a name="in-this-section"></a>本節內容
 主題 | 描述
 :---|:---
-[板載舊版 Windows](onboard-downlevel.md)| 板載 Windows 7 和 Windows 8.1 裝置到 Defender for Endpoint。 
-[板載 Windows 10 裝置](configure-endpoints.md) | 您需要有板載裝置，才能向其報告「Defender for Endpoint service」。 深入瞭解您可以用來設定企業中裝置的工具和方法。
+[將上一版 Windows 上線](onboard-downlevel.md)| 板載 Windows 7 和 Windows 8.1 裝置到 Defender for Endpoint。 
+[將 Windows 10 裝置上線](configure-endpoints.md) | 您需要有板載裝置，才能向其報告「Defender for Endpoint service」。 深入瞭解您可以用來設定企業中裝置的工具和方法。
 [上架伺服器](configure-server-endpoints.md) |  板載 Windows Server 2008 R2 SP1，Windows Server 2012 R2，Windows Server 2016，Windows Server (SAC) 版本1803和更新版本、Windows Server 2019 和更新版本，以及 Windows Server 2019 core edition to Defender for Endpoint。
-[板載非 Windows 裝置](configure-endpoints-non-windows.md) | Defender for Endpoint 提供 Windows 和非 Windows 平臺的集中式安全性作業體驗。 您可以在 Microsoft Defender Security Center 中查看不同支援作業系統 (OS) 中的警示，並更好地保護組織的網路。 這種經驗利用於協力廠商的安全性產品的感應器資料。 
-[在新架裝置上執行偵測測試](run-detection-test.md) | 在新的架裝置上執行腳本，以驗證它是否已正確報告至端點服務的 Defender。
+[將非 Windows 裝置上線](configure-endpoints-non-windows.md) | Defender for Endpoint 提供 Windows 和非 Windows 平臺的集中式安全性作業體驗。 您可以在 Microsoft Defender Security Center 中查看不同支援作業系統 (OS) 中的警示，並更好地保護組織的網路。 這種經驗利用於協力廠商的安全性產品的感應器資料。 
+[在新上線的裝置上執行偵測測試](run-detection-test.md) | 在新的架裝置上執行腳本，以驗證它是否已正確報告至端點服務的 Defender。
 [設定 proxy 和網際網路設定](configure-proxy-internet.md)| 設定 proxy 和網際網路連線設定，以啟用與 Defender for Endpoint cloud service 的通訊。
-[疑難排解上架問題](troubleshoot-onboarding.md) | 深入瞭解如何解決上架期間可能發生的問題。
+[為上線問題疑難排解](troubleshoot-onboarding.md) | 深入瞭解如何解決上架期間可能發生的問題。
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

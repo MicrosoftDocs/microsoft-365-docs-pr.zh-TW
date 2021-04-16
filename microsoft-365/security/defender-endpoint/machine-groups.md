@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender ATP 中建立及管理裝置群組
+title: 在 Microsoft Defender for Endpoint 中建立及管理裝置群組
 description: 透過 confiring 在群組上套用的規則，建立裝置群組並設定其上的自動修正層級。
 keywords: 裝置群組、群組、修正、層級、規則、aad 群組、角色、指派、排名
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dfc7c04bbde2b7061c92f5a25115b75a2f5b47b5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059412"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860300"
 ---
 # <a name="create-and-manage-device-groups"></a>建立及管理裝置群組
 
@@ -32,7 +32,7 @@ ms.locfileid: "51059412"
 - Azure Active Directory
 - Office 365
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 在企業案例中，一般會為安全性運作小組指派一組裝置。 這些裝置會根據一組屬性（如其網域、電腦名稱稱或指定的標記）組合在一起。

@@ -1,6 +1,6 @@
 ---
-title: 適用于 Mac 的 Microsoft Defender ATP 隱私權
-description: 隱私權控制，如何設定會影響隱私權的原則設定，以及 Microsoft Defender ATP for Mac 中所收集的診斷資料的相關資訊。
+title: 適用于 Mac 的 Microsoft Defender 端點隱私權
+description: 隱私權控制，如何設定會影響隱私權的原則設定，以及 Microsoft Defender for Mac 中所收集之診斷資料的相關資訊。
 keywords: microsoft、defender、atp、mac、隱私權、診斷
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bf837dca5f05310045c06178b8fc587f3fc55137
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 26ae83dc8a8b3bb7d686e3674437a12999b5146f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765776"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862232"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 隱私權
 
@@ -32,7 +32,7 @@ ms.locfileid: "51765776"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 Microsoft 致力於為您提供您所需的資訊和控制項，讓您選擇在 macOS 上使用 Microsoft Defender 做為端點時，如何收集和使用資料。
 

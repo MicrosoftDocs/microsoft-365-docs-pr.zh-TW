@@ -1,8 +1,8 @@
 ---
 title: 端點偵測和回應功能的概覽
 ms.reviewer: ''
-description: 深入瞭解 Microsoft Defender ATP 中的端點偵測和回應功能
-keywords: ''
+description: 深入瞭解 Microsoft Defender for Endpoint 中的端點偵測和回應功能
+keywords: microsoft defender for endpoint，endpoint 偵測和回應，回應，偵測，cybersecurity，保護
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a5a665fac1883016ac222197ba8322f78e2558f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 138a6afde9e8c601fd41811928580644b85bf2e2
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186170"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861716"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>端點偵測和回應概述
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186170"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint endpoint 偵測和回應功能提供接近即時及可行動的高級攻擊偵測。 安全性分析人員可以有效地排定警示的優先順序、深入了解入侵的全貌，並採取回應動作來補救威脅。
 
@@ -47,7 +47,7 @@ Defender for Endpoint endpoint 偵測和回應功能提供接近即時及可行�
 
 
 ## <a name="related-topics"></a>相關主題
-- [安全性操作儀表板](security-operations-dashboard.md)
+- [ 安全性操作儀表板](security-operations-dashboard.md)
 - [事件佇列](view-incidents-queue.md)
 - [警示佇列](alerts-queue.md)
 - [裝置清單](machines-view-overview.md)

@@ -1,6 +1,6 @@
 ---
-title: 疑難排解 Microsoft Defender ATP for Linux 的效能問題
-description: 疑難排解 Microsoft Defender ATP for Linux 中的效能問題。
+title: 疑難排解 Microsoft Defender for Linux 的效能問題
+description: 疑難排解 Linux 中 Microsoft Defender 端點的效能問題。
 keywords: microsoft、defender、atp、linux、效能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8865da0c8080213f6a2b82f78a6b31983c50409
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: cb43fd383606ab26ba2688ad5704bb7653e82a7f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688618"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860336"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>疑難排解 Linux 上 Microsoft Defender for Endpoint 的效能問題
 
@@ -32,7 +32,7 @@ ms.locfileid: "51688618"
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 本文提供一些一般步驟，可用來縮小與適用于 Linux 之 Defender 相關的效能問題。
 

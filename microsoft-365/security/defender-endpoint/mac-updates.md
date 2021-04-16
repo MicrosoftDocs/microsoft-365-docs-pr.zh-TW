@@ -1,6 +1,6 @@
 ---
-title: 部署適用于 Mac 的 Microsoft Defender ATP 更新
-description: 在企業環境中控制 Microsoft Defender ATP for Mac 的更新。
+title: 為 Mac 部署 Microsoft Defender for Endpoint 的更新
+description: 在企業環境中控制 Microsoft Defender for Mac 的端點的更新。
 keywords: microsoft，defender，atp，mac，更新，部署
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3321c1bd181b89c53e2618fc20fa7f733a20cfc1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9d373594771efe4eb647c007db3a26efe83e330e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689050"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860312"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -32,11 +32,11 @@ ms.locfileid: "51689050"
 
 **適用於：**
 
-- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 上適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供新功能。
 
@@ -78,7 +78,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 
 |區段|值|
 |:--|:--|
-| **網域** | autoupdate2 |
+| **網域** | `com.microsoft.autoupdate2` |
 | **Key** | ChannelName |
 | **資料類型** | 字串 |
 | **可能值** | Beta 版 <br/> 預覽 <br/> 目前 |
@@ -96,7 +96,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 
 |區段|值|
 |:--|:--|
-| **網域** | autoupdate2 |
+| **網域** | `com.microsoft.autoupdate2` |
 | **Key** | UpdateCheckFrequency |
 | **資料類型** | 整數 |
 | **預設值** | 720 (分鐘)  |
@@ -109,7 +109,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 
 |區段|值|
 |:--|:--|
-| **網域** | autoupdate2 |
+| **網域** | `com.microsoft.autoupdate2` |
 | **Key** | HowToCheck |
 | **資料類型** | 字串 |
 | **可能值** | 手動 <br/> AutomaticCheck <br/> AutomaticDownload |
@@ -122,7 +122,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 
 |區段|值|
 |:--|:--|
-| **網域** | autoupdate2 |
+| **網域** | `com.microsoft.autoupdate2` |
 | **Key** | EnableCheckForUpdatesButton |
 | **資料類型** | 布林值 |
 | **可能值** | True (預設)  <br/> False |
@@ -134,7 +134,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 
 |區段|值|
 |:--|:--|
-| **網域** | autoupdate2 |
+| **網域** | `com.microsoft.autoupdate2` |
 | **Key** | DisableInsiderCheckbox |
 | **資料類型** | 布林值 |
 | **可能值** | False (預設)  <br/> 對 |
@@ -146,7 +146,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 
 |區段|值|
 |:--|:--|
-| **網域** | autoupdate2 |
+| **網域** | `com.microsoft.autoupdate2` |
 | **Key** | SendAllTelemetryEnabled |
 | **資料類型** | 布林值 |
 | **可能值** | True (預設)  <br/> False |

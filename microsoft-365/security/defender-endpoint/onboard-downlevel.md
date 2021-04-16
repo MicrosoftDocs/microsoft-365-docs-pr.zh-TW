@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP 上的板載 Windows 版本
-description: 上架支援的舊版 Windows 裝置，使其可將感應器資料傳送至 Microsoft Defender ATP 感應器
+title: Microsoft Defender for Endpoint 上的上架舊版 Windows
+description: 上架支援的舊版 Windows 裝置，使其可將感應器資料傳送至 Microsoft Defender for Endpoint 感應器
 keywords: 板載，windows，7，81，oms，sp1，enterprise，pro，跌層級
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b180e7555bb3339324d3b99956d8f8ad73dc13c3
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186386"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861356"
 ---
-# <a name="onboard-previous-versions-of-windows"></a>板載舊版 Windows
+# <a name="onboard-previous-versions-of-windows"></a>將上一版 Windows 上線
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -102,7 +102,7 @@ Defender for Endpoint 會與 System Center Endpoint Protection 整合，以提�
 
 完成後，您應該會在一個小時內看到入口網站中的架端點。
 
-### <a name="configure-proxy-and-internet-connectivity-settings"></a>設定 proxy 和網際網路連線設定
+### <a name="configure-proxy-and-internet-connectivity-settings"></a>設定 Proxy 和網際網路連接設定
  
 - 每個 Windows 端點都必須能夠使用 HTTPS 連接至網際網路。 這種連線可以直接使用 proxy，也可以透過 [OMS 閘道](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)。
 - 如果一個 proxy 或防火牆預設會封鎖所有流量，而且只允許特定網域透過或 HTTPS 掃描 (已啟用 SSL 檢查) ，請確定您已啟用 [Endpoint service URLs 的存取權](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。

@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft Defender ATP 事件
+title: 管理 Microsoft Defender for Endpoint 事件
 description: 指派事件、更新其狀態或設定其分類，以管理事件。
 keywords: 事件、管理、指派、狀態、分類、true 警示、錯誤警示
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8b5e806d09f08a12c090a1055f2c165f25b7ea1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: abb538972b48f8790286c0a546eecdd69fc83fb5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185804"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862136"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>管理 Microsoft Defender for Endpoint 事件
 
@@ -34,7 +34,7 @@ ms.locfileid: "51185804"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 管理事件是每個 cybersecurity 作業的重要部分。 您可以從 [ **事件] 佇列** 或 [ **事件管理] 窗格** 中選取事件，以管理事件。 
 
@@ -82,5 +82,5 @@ ms.locfileid: "51185804"
 
 ## <a name="related-topics"></a>相關主題
 - [事件佇列](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [查看和組織事件佇列](view-incidents-queue.md)
+- [查看及組織事件佇列](view-incidents-queue.md)
 - [調查事件](investigate-incidents.md)

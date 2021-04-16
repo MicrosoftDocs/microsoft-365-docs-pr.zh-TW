@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 瞭解如何在系統管理中心建立連絡人，以及如何管理您的全域通訊清單。
-ms.openlocfilehash: 74618056c0b8635922c9f957dc8cd6d16c320fe3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6eae98472d6be947d3f0698bd2e7a9409b56824b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914807"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860592"
 ---
 # <a name="quick-help-contacts"></a>快速說明：連絡人
 
@@ -50,7 +50,7 @@ ms.locfileid: "50914807"
   
 ## <a name="can-anyone-create-and-edit-these-organizational-contacts"></a>任何人都可以建立和編輯這些組織的連絡人嗎？
 
-否。 只有 **全域** 和 **Exchange** 系統管理員可以建立、編輯或刪除這些連絡人。 其他人只能檢視它們。
+不對。 只有 **全域** 和 **Exchange** 系統管理員可以建立、編輯或刪除這些連絡人。 其他人只能檢視它們。
   
 ## <a name="can-i-use-this-to-manage-my-business-clients"></a>我可以用它來管理公司客戶嗎？
 
@@ -62,4 +62,4 @@ ms.locfileid: "50914807"
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>如果仍沒有回答到我的問題該怎麼辦？
 
-請瀏覽我們[系統管理說明](/microsoft-365/admin/misc/index)的其他部分，或在下方給予您的意見反應。
+請瀏覽我們[系統管理說明](https://docs.microsoft.com/microsoft-365/admin/)的其他部分，或在下方給予您的意見反應。

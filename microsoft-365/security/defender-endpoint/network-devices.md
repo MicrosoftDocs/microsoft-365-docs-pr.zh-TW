@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43ade52e18ffc8e5db890cb0776090e9b32419e2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687670"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862064"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>網路設備探索和弱點管理
 
@@ -40,7 +40,10 @@ ms.locfileid: "51687670"
 > 此預覽版本提供時沒有服務等級協定，不建議用於實際執行工作負載。 某些功能可能不受支援，或可能具有有限的功能。
 > 如需詳細資訊，請參閱 [Microsoft Defender For Endpoint preview 功能](preview.md)。
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
+> [!NOTE]  
+> 「 [網路設備探索」和「安全性漏洞評估](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) 」博客 \( 發佈 \) 的04-13-2021 可深入瞭解如何在適用于 Endpoint 的 Defender 中進行新的 **網路設備探索** 功能。 本文提供 **網路裝置探索** 的設計目的問題，以及如何開始使用這些新功能的詳細資訊的概述。
 
 網路探索功能可在 Microsoft 365 安全性中心和 Microsoft Defender 安全性中心主控台的 [ **裝置庫存** ] 區段中取得。  
 
@@ -97,20 +100,22 @@ ms.locfileid: "51687670"
     - login.microsoftonline.com
     - * blob.core.windows.net/networkscannerstable/*
 
-    附注：並非所有 URLs 都是在 Defender for Endpoint 記錄的資料收集清單中指定的。
+    > [!NOTE]
+    > 並非所有 URLs 都已在已記錄的 Endpoint 中指定允許的資料收集的清單。
 
 ## <a name="permissions"></a>權限
 
-若要設定評估工作，需要下列使用者許可權選項： **管理安全性中心的安全性設定**。 您可以移至 [**設定**] 角色，找到該許可權  >  ****。 如需詳細資訊，請參閱 [建立及管理以角色為基礎的存取控制角色](user-roles.md)
+若要設定評估工作，需要下列使用者許可權選項： **管理安全性中心的安全性設定**。 您可以移至 [**設定**] 角色，找到該許可權  >  ****。 如需詳細資訊，請參閱 [建立及管理以角色為基礎的存取控制角色](user-roles.md)。
 
 ## <a name="install-the-network-scanner"></a>安裝網路掃描程式
 
-1. 移至「網路評估」 )  (底下的 **Microsoft 365 安全性**  >  **設定**  >  **端點**  >  **評估工作**。
+1. 移至 [網路評估) ] 底下 (的 [ **Microsoft 365 安全性**  >  **設定**]  >  **端點**  >  **評估工作**。 
     1. 在 Microsoft Defender Security Center 中，移至 [設定] > 評估工作] 頁面。
 
 2. 下載網路掃描程式，並將其安裝在「指定的 Defender for Endpoint 評估」裝置上。
 
-![下載掃描器按鈕](images/assessment-jobs-download-scanner.png)
+    > [!div class="mx-imgBorder"]
+    > ![下載掃描器按鈕](images/assessment-jobs-download-scanner.png)
 
 ## <a name="network-scanner-installation--registration"></a>網路掃描器安裝 & 註冊
 
@@ -119,7 +124,9 @@ ms.locfileid: "51687670"
 若要完成網路掃描程式註冊程式：
 
 1. 複製並追蹤出現在命令列上的 URL，並使用提供的安裝程式碼完成註冊程式。
-    - 附注：您可能需要變更命令提示字元設定，才能複製 URL。
+
+    > [!NOTE]
+    > 您可能需要變更命令提示字元設定，才能複製 URL。
 
 2. 使用「管理安全性中心的安全性設定」許可權的 Microsoft 帳戶輸入程式碼並登入。
 
@@ -131,13 +138,17 @@ ms.locfileid: "51687670"
 
 若要防止網路設備清查中的裝置重複，請確定每個 IP 位址在多個評估裝置中只設定一次。
 
-![新增網路評估工作按鈕](images/assessment-jobs-add.png)
+> [!div class="mx-imgBorder"]
+> ![新增網路評估工作按鈕](images/assessment-jobs-add.png)
 
 新增網路評估工作步驟：
 
-1. 選擇「評估工作」名稱和安裝網路掃描器的「評估裝置」。 此裝置會執行定期驗證掃描。 
+1. 選擇「評估工作」名稱和安裝網路掃描器的「評估裝置」。 此裝置會執行定期驗證掃描。
+
 2. 新增要掃描的目標網路裝置的 IP 位址 (或) 部署這些裝置的子網。 
+
 3. 新增目標網路裝置所需的 SNMP 認證。 
+
 4. 儲存新設定的網路評估工作，以啟動定期網路掃描。 
 
 ### <a name="scan-and-add-network-devices"></a>掃描及新增網路裝置
@@ -157,13 +168,14 @@ ms.locfileid: "51687670"
 
 新發現的裝置會顯示在 [**裝置庫存**] 頁面的 [新增 **網路裝置**] 索引標籤底下。 在新增評估工作之前，可能需要長達兩小時，直到裝置更新為止。
 
-![裝置庫存中的 [網路裝置] 區段](images/assessment-jobs-device-inventory.png)
+> [!div class="mx-imgBorder"]
+> ![裝置庫存中的 [網路裝置] 區段](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>疑難排解
 
 ### <a name="network-scanner-installation-has-failed"></a>網路掃描器安裝失敗
 
-確認所需的 URLs 已新增至防火牆設定中的允許網域。 此外，請確定已依照[設定裝置 proxy 和網際網路連線設定](configure-proxy-internet.md)中所述的方式設定 proxy 設定
+確認所需的 URLs 已新增至防火牆設定中的允許網域。 此外，請確定已依照 [設定裝置 proxy 和網際網路連線設定](configure-proxy-internet.md)中所述的方式來設定 proxy 設定。
 
 ### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>未顯示 Microsoft.com/devicelogin 網頁
 

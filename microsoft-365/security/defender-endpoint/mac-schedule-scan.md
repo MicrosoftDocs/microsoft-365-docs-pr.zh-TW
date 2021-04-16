@@ -1,6 +1,6 @@
 ---
 title: 如何使用 MDATP 為 macOS 排程掃描
-description: 瞭解如何在 macOS 中安排 Microsoft Defender ATP 的自動掃描時間，以更好地保護組織的資產。
+description: 瞭解如何為 macOS 中的 Microsoft Defender for Endpoint 排程自動掃描時間，以便更好地保護組織的資產。
 keywords: microsoft、defender、atp、mac、掃描、防毒程式
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ecfae62bdc092a0b2544bf6f6a76dad1e86b8ab4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 71576c777f58aa193f2a73db7edea832d29a97c6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689590"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860920"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用 Microsoft Defender for Endpoint 排程掃描
 
@@ -33,7 +33,7 @@ ms.locfileid: "51689590"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 雖然您可以在任何時候使用 Microsoft Defender for Endpoint 開始進行威脅掃描，但您的企業可能會受益于排程或定時掃描。 例如，您可以在每個 workday 或每週開始排程掃描，以執行。 
 

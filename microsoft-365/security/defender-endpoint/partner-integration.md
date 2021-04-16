@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP 協力廠商的機遇與案例
+title: Microsoft Defender for Endpoint partner 機遇和案例
 ms.reviewer: ''
-description: 瞭解如何將現有的安全性產品擴充到開放架構的上方，以及豐富的 APIs，以利用 Microsoft Defender ATP 建立分機和整合
+description: 瞭解如何將現有的安全性產品擴充到開放架構的上方，以及一組豐富的 APIs，以建立分機並與 Microsoft Defender for Endpoint 整合
 keywords: API，partner，extend，開放式架構，api，擴充，整合，偵測，管理，回應，漏洞，智慧
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1db82afa06fd0b6b3d7228aaf3020c5496ed69e7
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: be2f33514a568f290a3fc5cf0adc62db72243a6f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186890"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861104"
 ---
 # <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Microsoft Defender for Endpoint partner 機遇和案例
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186890"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 合作夥伴可以輕鬆地將其現有的安全性產品擴充到開放架構的上方，以及豐富且完整的 APIs 集合，以使用 Defender for Endpoint 來建立分機和整合。 
@@ -63,4 +63,4 @@ Orchestration 方案可協助您建立行動手冊，並整合用於端點 APIs 
 請遵循 [成為 Microsoft defender For endpoint partner](get-started-partner-integration.md) 中的步驟，以在 Defender for endpoint 中整合您的解決方案。
 
 ## <a name="related-topic"></a>相關主題
-- [管理和 APIs 概述](management-apis.md)
+- [管理和 API 概觀](management-apis.md)

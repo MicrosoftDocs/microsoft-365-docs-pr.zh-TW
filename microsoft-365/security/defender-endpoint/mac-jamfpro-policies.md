@@ -1,6 +1,6 @@
 ---
-title: 在 Jamf Pro 中為 macOS 原則設定 Microsoft Defender ATP
-description: 瞭解如何在 Jamf Pro 中設定 Microsoft Defender ATP 以取得 macOS 原則
+title: 在 Jamf Pro 中設定 macOS 原則的 Microsoft Defender for Endpoint
+description: 瞭解如何在 Jamf Pro 中設定 macOS 原則的 Microsoft Defender 端點
 keywords: 原則，microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765128"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862268"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf Pro 的 macOS 原則上設定 Microsoft Defender for Endpoint
 
@@ -125,7 +125,7 @@ ms.locfileid: "51765128"
 
     ![目標影像](images/jamfpro-targets.png) 
 
-11. 選取 **[儲存]**。
+11. 選取 [儲存]。
 
     ![部署目的電腦的映射](images/jamfpro-deployment-target.png)
 
@@ -318,7 +318,7 @@ ms.locfileid: "51765128"
     >![配置設定的映射 intune 檔案上傳](images/8e69f867664668796a3b2904896f0436.png)
 
 
-11. 選取 **[儲存]**。 
+11. 選取 [儲存]。 
 
     ![配置設定的影像儲存影像](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -360,7 +360,7 @@ ms.locfileid: "51765128"
         - **分配方法**：自動安裝 *(預設)*
         - **層級**：電腦層級 *(預設)*
 
-        ![設定設定檔設定 mdatpmdav 的影像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![新 macOS 設定設定檔畫面的影像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - [索引標籤 **通知**] 中，按一下 [ **新增**]，然後輸入下列值：
         - **束識別碼**： `com.microsoft.wdav.tray`
@@ -460,7 +460,7 @@ ms.locfileid: "51765128"
 
     ![設定 uplimg 的影像](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. 選取 **[儲存]**。
+11. 選取 [儲存]。
 
     ![設定 saveimg 的影像](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -561,7 +561,7 @@ ms.locfileid: "51765128"
 
 15. 選取 [新增]。 
 
-16. 選取 **[儲存]**。 
+16. 選取 [儲存]。 
     
 17. 選取 **[完成]**。
     
@@ -616,7 +616,7 @@ ms.locfileid: "51765128"
 
     ![配置設定的影像新增影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 選取 **[儲存]**。
+9. 選取 [儲存]。
 
     ![配置設定 saveimag 的影像](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -671,7 +671,7 @@ ms.locfileid: "51765128"
 
    ![配置設定 addima 的影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 選取 **[儲存]**。
+9. 選取 [儲存]。
 
    ![配置設定 sysext 範圍的影像](images/sysext-scope.png)
 
@@ -721,7 +721,7 @@ ms.locfileid: "51765128"
 
     ![配置設定 adim 的影像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. 選取 **[儲存]**。
+7. 選取 [儲存]。
 
     ![設定 savimg netextscop 的映射](images/netext-scope.png)
 
@@ -780,7 +780,7 @@ ms.locfileid: "51765128"
     
      ![[設定設定] [限制] 索引標籤的影像](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-8. 選取 **[儲存]**。 套件已上傳至 Jamf Pro。 
+8. 選取 [儲存]。 套件已上傳至 Jamf Pro。 
 
    ![Configuration settings pack upl jamf pro 映射](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -808,7 +808,7 @@ ms.locfileid: "51765128"
     ![重複簽入設定設定的影像](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
   
-13. 選取 **[儲存]**。 
+13. 選取 [儲存]。 
  
 14. 選取 **> 設定的套件**。
  
@@ -818,7 +818,7 @@ ms.locfileid: "51765128"
 
     ![設定 MDATP 和 MDA 新增的影像](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. 選取 **[儲存]**。
+16. 選取 [儲存]。
 
     ![設定 settingssavimg 的影像](images/9d6e5386e652e00715ff348af72671c6.png)
 

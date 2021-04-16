@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768623"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860860"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
@@ -97,7 +97,7 @@ Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應�
 
 ## <a name="how-we-can-solve-these-challenges"></a>我們可如何解決這些難題
 
-企業可以遵循 [Office 365 連線原則](./microsoft-365-network-connectivity-principles.md) ，以及使用 Microsoft 365 系統管理中心的網路連線功能，來改善一般使用者經驗並保護其環境。 在大多數情況下，遵循這些一般原則會對使用者的延遲（服務可靠性和 Microsoft 365 的整體效能）產生重大的積極影響。
+企業可以遵循 [Office 365 連線原則](./microsoft-365-network-connectivity-principles.md) ，以及使用 Microsoft 365 系統管理中心的網路連線功能，來改善一般使用者經驗並保護其環境。 在大多數情況下，遵循這些一般原則，會對使用者延隔時間產生顯著的積極影響、服務可靠性和 Microsoft 365 的整體效能。
 
 Microsoft 有時候會要求您調查適用于大型企業客戶的 Microsoft 365 網路效能問題，這些問題通常會與客戶的網路周邊基礎結構相關的根本原因。 當找到客戶網路周邊問題的常見根本原因時，我們會搜尋識別它所識別的簡單測試度量。 使用識別特定問題的測量臨界值進行測試是非常有價值的，因為我們可以在任何位置測試相同的度量，判斷是否存在此根本原因，並加以共用，以與系統管理員的網路洞察力共用。
 
@@ -121,6 +121,14 @@ Microsoft 已從數個 Office 桌面和網頁用戶端，提供支援 Microsoft 
 
 > [!div class="mx-imgBorder"]
 > ![網路洞察力位置](../media/m365-mac-perf/m365-mac-perf-locations.png)
+
+## <a name="remote-worker-assessment-and-user-connection-metrics"></a>遠端工作者評估和使用者連線度量
+
+我們會將網路流量記錄分類為遠端或現場使用者，並在 [一覽表] 窗格的 [使用者連線度量] 區段中顯示其百分比。 對於您有遠端使用者的城市，當您開啟該位置的頁面時，您會發現位置特定的遠端網路評估分數。 [位置] 清單會同時包含辦公室位置和遠端工作者城市，可以進行篩選和排序。 我們提供了遠端工作者評估分數，其中包含 Exchange、SharePoint 和團隊的分數細分。
+
+家用使用者網路洞察力會在城市階層進行匯總和報告，並限制在至少有5個遠端員工的城市。 我們不會識別在家運作的個別員工。
+
+位置是自動分類為 [現場] 或 [遠端]，不過，您可以選擇手動輸入所有的上門出口 IP 位址，以確保100% 分類。 如果您決定移至此路由，您必須在新增您的所有出局 IP 位址後，檢查 [位置設定] 浮出] 中的 [ **手動輸入所有現場輸出 ip 位址** ] 核取方塊。 完成此動作後，來自您已標示為「在現場」之出局 IP 位址的所有網路流量記錄都會永遠歸為「辦公室」，而每個其他出口 IP 位址都會分類為「遠端」。
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>特定的辦公室位置網路效能摘要和洞察力
 

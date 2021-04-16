@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768911"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861143"
 ---
 # <a name="protect-your-network"></a>保護您的網路
 
@@ -31,7 +31,7 @@ ms.locfileid: "51768911"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 網路保護可協助從網際網路型事件降低裝置的受攻擊面。 它可防止員工使用任何應用程式來存取可能在網際網路上主控網路釣魚詐騙、利用方式及其他惡意內容的危險網域。 網路保護可擴充 [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 的範圍，以封鎖嘗試連線至低信譽來源的所有輸出 HTTP (s) 流量， (根據網域或主機名稱) 。
 
@@ -42,7 +42,7 @@ Windows 10 版本1709開始支援網路保護。 在其他作業系統上尚不�
 如需如何啟用網路保護的詳細資訊，請參閱 [enable network protection](enable-network-protection.md)。 使用群組原則、PowerShell 或 MDM Csp 來啟用和管理網路中的網路保護。
 
 > [!TIP]
-> 請參閱 Microsoft Defender ATP testground site at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) ，以查看網路保護的運作方式。
+> 請參閱 Microsoft Defender for Endpoint testground site at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) ，以查看網路保護的運作方式。
 
 網路保護適用于 [Microsoft Defender For Endpoint](microsoft-defender-endpoint.md)，可讓您在 [警示調查案例](investigate-alerts.md)中深入報告以利用保護事件和區塊。
 
@@ -82,7 +82,7 @@ DeviceEvents
 
 1. [直接複製 XML](event-views.md)。
 
-2. 選取 **[確定]**。
+2. 選取 [確定]。
 
 此程式會建立自訂視圖，篩選為只顯示下列與網路保護相關的事件：
 

@@ -1,6 +1,6 @@
 ---
-title: 疑難排解適用于 Mac 的 Microsoft Defender ATP 安裝問題
-description: 疑難排解 Microsoft Defender ATP for Mac 中的安裝問題。
+title: 疑難排解適用于 Mac 的 Microsoft Defender 端點安裝問題
+description: 疑難排解 Microsoft Defender for Mac 中的安裝問題。
 keywords: microsoft、defender、atp、mac、安裝
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 754f389f37bce3be1c5a636f1911b5d0fb3fd29c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d2ad3160c9f36a27dc98f44365433de5f8b26bb2
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689614"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861416"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 macOS 上的 Microsoft Defender for Endpoint 的安裝問題
 
@@ -32,11 +32,11 @@ ms.locfileid: "51689614"
 
 **適用於：**
 
-- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 上適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="installation-failed"></a>安裝失敗
 

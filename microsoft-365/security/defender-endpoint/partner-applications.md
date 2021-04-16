@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 中的夥伴應用程式
+title: Microsoft Defender for Endpoint 中的夥伴應用程式
 ms.reviewer: ''
 description: 流覽支援的合作夥伴應用程式，以加強平臺的偵測、調查和威脅智慧功能
 keywords: 合作夥伴、應用程式、協力廠商、連接、sentinelone、注意、bitdefender、corrata、morphisec、paloalto、ziften、更佳行動裝置
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 563dd2a5102ec66a1e953ae6ab30d56ea4f99036
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 60a2eca25090f60414e91eacfed090bc86a4cf93
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382931"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862208"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的夥伴應用程式 
 
@@ -33,7 +33,7 @@ ms.locfileid: "51382931"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint 支援協力廠商應用程式，協助增強平臺的偵測、調查和威脅智慧功能。
 

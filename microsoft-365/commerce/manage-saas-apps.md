@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 瞭解如何在 Microsoft 365 系統管理中心中啟動和管理協力廠商應用程式。
-ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576910"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860532"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理組織的協力廠商應用程式訂閱
 
@@ -31,7 +31,7 @@ ms.locfileid: "51576910"
 
 有幾種方式可購買協力廠商應用程式。
 
-- **直接購買** –客戶可以直接從 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)購買訂閱，或 [AppSource](https://www.appsource.com/)。
+- **直接購買** –客戶可以直接從 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)購買訂閱，或 [AppSource](https://appsource.microsoft.com/)。
 - **合作夥伴購買** –透過合作夥伴中心與合作夥伴合作以購買訂閱。
 - **Microsoft 策劃書** –從 Microsoft Sales （包括協力廠商應用程式）回應提案。
 

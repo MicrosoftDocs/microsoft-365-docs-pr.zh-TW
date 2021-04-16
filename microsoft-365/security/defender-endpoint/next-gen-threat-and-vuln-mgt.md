@@ -1,7 +1,7 @@
 ---
 title: 威脅與弱點管理
 description: 這項新功能使用以遊戲為基礎的風險方式，來探索、優先順序和修正端點漏洞與錯誤配置。
-keywords: 威脅 & 漏洞管理、威脅和弱點管理、MDATP TVM、MDATP-TVM、弱點管理、弱點評估、威脅和弱點掃描、安全設定評估、microsoft defender atp、microsoft defender atp、端點漏洞、下一代
+keywords: 威脅 & 漏洞管理、威脅和弱點管理、MDATP TVM、MDATP-TVM、弱點管理、弱點評估、威脅和弱點掃描、安全設定評估、microsoft defender for endpoint、microsoft defender atp、端點漏洞、下一代
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: e9c575aa8968b8cab2c5d91b9fe0b1cb46b292d3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499061"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860758"
 ---
 # <a name="threat-and-vulnerability-management"></a>威脅與弱點管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "51499061"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 有效地識別、評估和修正端點弱點，是在執行健康的安全性計畫及降低組織風險方面 pivotal。 威脅和弱點管理是一種能降低組織暴露程度、強化端點表面區域，並提高組織彈性的基礎結構。
 

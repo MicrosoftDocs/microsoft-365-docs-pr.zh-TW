@@ -1,7 +1,7 @@
 ---
 title: 適用於端點的 Microsoft Defender
 description: Microsoft Defender for Endpoint 是企業端點安全性平臺，可協助防禦高級持續性威脅。
-keywords: microsoft defender for Endpoint 簡介，microsoft defender Advanced 威脅防護簡介，Microsoft Defender ATP 簡介，cybersecurity，Advanced persistent 威脅，企業安全性，機器行為感應器，cloud security，analytics，威脅情報，攻擊面降低，安全分數，高級搜尋，microsoft 威脅防護，網路威脅搜尋
+keywords: microsoft defender for Endpoint 簡介，microsoft defender Advanced 威脅防護簡介，Microsoft Defender for Endpoint，cybersecurity，Advanced persistent 威脅，企業安全性，機器行為感應器，cloud security，analytics，威脅情報，攻擊面降低，下一代保護，自動化調查和修正，網路威脅防護，網路威脅搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8c5d02a4d76ae7e031ad9f3af0db282cc4cb45ed
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187108"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861824"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender
 
@@ -31,7 +31,7 @@ ms.locfileid: "51187108"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > 如需 Windows 10 Enterprise Edition 功能及功能的相關資訊，請參閱 [windows 10 enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy)。
 
@@ -84,12 +84,12 @@ Defender for Endpoint 使用 Windows 10 和 Microsoft 強健雲端服務內建�
 
 <a name="asr"></a>
 
-**[受攻擊面縮小](overview-attack-surface-reduction.md)**<br>
+**[攻擊面縮減](overview-attack-surface-reduction.md)**<br>
 攻擊面降減功能集可提供堆疊中的第一項防護。 透過確定設定設定正確，並套用利用緩解技術，這些功能會讓攻擊和利用。 這組功能也包含 [網路保護](network-protection.md) 和 [web 保護](web-protection-overview.md)，可控制對惡意 IP 位址、網域和 URLs 的存取。 
 
 <a name="ngp"></a>
 
-**[下一代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[新一代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 若要進一步鞏固網路的安全性周邊，Microsoft Defender for Endpoint 會使用下一代保護，以捕捉所有類型的新威脅。
 
 <a name="edr"></a>
@@ -104,7 +104,7 @@ Defender for Endpoint 使用 Windows 10 和 Microsoft 強健雲端服務內建�
 
 <a name="ss"></a>
 
-**[適用于裝置的 Microsoft 安全分數](tvm-microsoft-secure-score-devices.md)**<br>
+**[裝置用 Microsoft 安全分數](tvm-microsoft-secure-score-devices.md)**<br>
 
 用於裝置的 Defender 包括 Microsoft 安全分數，可協助您動態評估商業網路的安全性狀態、找出未受保護的系統，並採取建議的動作，以改善組織的整體安全性。
 

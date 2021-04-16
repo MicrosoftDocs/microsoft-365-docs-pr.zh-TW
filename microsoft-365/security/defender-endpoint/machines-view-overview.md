@@ -1,5 +1,5 @@
 ---
-title: 查看和組織 Microsoft Defender ATP 裝置清單
+title: 查看和組織 Microsoft Defender for Endpoint devices 清單
 description: 深入瞭解您可以從 [裝置] 清單中使用的功能，例如排序、篩選和匯出清單，以加強調查。
 keywords: 排序、篩選、匯出、csv、裝置名稱、網域、最後一次查看的內部 IP、健康狀態、作用中警示、作用中的惡意程式碼偵測、威脅類別、審閱警示、網路、連線、惡意程式碼、一般惡意程式碼、stealer、勒索軟體、攻擊、威脅、一般惡意程式碼、不需要的軟體
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9068983b5f61305b1f3da4d076e99e71974e8df4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a031a35929f319e87a9ad1a9ca48d6bf95a3ef72
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185668"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861572"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>查看和組織 Microsoft Defender for Endpoint Devices 清單
 
@@ -32,7 +32,7 @@ ms.locfileid: "51185668"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
 
 
 [ **裝置] 清單** 會顯示您網路中產生警示的裝置清單。 依預設，佇列會顯示過去30天內看到的裝置。  

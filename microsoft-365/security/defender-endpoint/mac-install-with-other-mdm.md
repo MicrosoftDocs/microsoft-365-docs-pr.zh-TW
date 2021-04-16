@@ -1,6 +1,6 @@
 ---
-title: 使用不同的行動裝置管理來部署 (MDM) 系統（適用于 Mac 的 Microsoft Defender ATP）
-description: 在其他管理解決方案上安裝適用于 Mac 的 Microsoft Defender ATP。
+title: 使用不同的行動裝置管理來進行部署 (MDM) 系統（適用于 Mac 的 Microsoft Defender for Endpoint）
+description: 在其他管理解決方案上安裝適用于 Mac 的 Microsoft Defender 端點。
 keywords: microsoft，defender，atp，mac，安裝，deploy，macos，catalina，mojave，high 塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3343eb433a6ae5c708651abf298bd4f061817543
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e929c17ada761a334700f6e66d2921483686834b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764130"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861560"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>使用不同的行動裝置管理，針對 macOS 上的 Microsoft Defender for Endpoint (MDM) 系統進行部署
 
@@ -34,7 +34,7 @@ ms.locfileid: "51764130"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>必要條件和系統需求
 

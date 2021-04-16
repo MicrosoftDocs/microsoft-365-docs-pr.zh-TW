@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender 用於非 Windows 平臺的 ATP
-description: 深入瞭解非 Windows 平臺的 Microsoft Defender ATP 功能
+title: 非 Windows 平台版適用於端點的 Microsoft Defender
+description: 深入瞭解 Microsoft Defender for a 非 Windows 平臺的端點功能
 keywords: 非 windows，mac，macos，linux，android
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7d9dd82d8c1beee77ea1f95b11a12bcddf01115f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: dce9a3d41d8a9d7c260cda8a930867da8c2ae8ac
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688330"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862244"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>非 Windows 平台版適用於端點的 Microsoft Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "51688330"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft 已在伺服器上擴充其業界領先的端點安全性功能，使其超越 Windows 和 Windows Server，以 macOS、Linux、Android 及不久 iOS。
 
@@ -41,25 +41,25 @@ Microsoft 已在伺服器上擴充其業界領先的端點安全性功能，使�
 
 透過 Microsoft Defender for Endpoint，客戶可以在 Microsoft Defender Security Center 中的所有威脅和警示，以及跨 Windows 和非 Windows 平臺的整合視圖中受益，讓他們能夠更快速地評估及回應威脅。
 
-## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 
+## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 上適用於端點的 Microsoft Defender 
 
 MacOS 上的 Microsoft Defender for Endpoint 提供了防毒軟體和端點偵測和回應， (EDR) 的最新發行版本本 macOS 功能。 客戶可以透過 Microsoft 端點管理員和 Jamf 來部署及管理解決方案。 就像 macOS 的 Microsoft Office 應用程式一樣，Microsoft 自動更新是用來管理 Mac 更新上的 Microsoft Defender for Endpoint。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
 
 如需如何開始的詳細資訊，請造訪 macOS [檔](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)上的 Defender for Endpoint。
 
-## <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint
+## <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上適用於端點的 Microsoft Defender
 
 Linux 上的 Microsoft Defender for Endpoint 會為 Linux 伺服器提供預防性 (AV) 功能。 這包括完整的命令列體驗，可供您設定及管理代理程式、起始掃描及管理威脅。 我們支援最常見的六個舊版 Linux 伺服器發行： RHEL 7.2 +、CentOS Linux 7.2 +、Ubuntu 16 LTS 或更高 LTS、SLES 12 +、Debian 9 + 及 Oracle Linux 7.2。 您可以使用 Puppet、Ansible 或使用現有的 Linux 設定管理工具，部署及設定 Linux 上的 Microsoft Defender for Endpoint。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)。
 
 如需如何開始的詳細資訊，請流覽 Linux [檔](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux)上的 Microsoft Defender for Endpoint。
 
-## <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint
+## <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上適用於端點的 Microsoft Defender
 
 Android 上的 Microsoft Defender for Endpoint 是我們的行動威脅防護解決方案，適用于執行 Android 6.0 和更高版本的裝置。 支援 Android Enterprise (工作設定檔) 和裝置管理員模式。 在 Android 上，我們提供 web 保護，包括反網路釣魚、封鎖不安全的連線，以及自訂指示器的設定。 解決方案會將惡意程式碼和潛在有害的應用程式掃描 (PUA) ，並透過與 Microsoft 端點管理員和條件式存取的整合，提供額外的侵犯防護功能。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)。
 
 如需如何開始的詳細資訊，請流覽 Android [檔](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-android)上的 Microsoft Defender for Endpoint。
 
-## <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
+## <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上適用於端點的 Microsoft Defender
 
 IOS 的 Microsoft Defender for Endpoint 是我們的行動威脅防護解決方案，適用于執行 iOS 11.0 和更高版本的裝置。 支援受監視和 Unsupervised 裝置。 在 iOS 上，我們提供 web 保護，包括反網路釣魚、封鎖不安全的連線，以及設定自訂指示器。 如需重要功能和優點的詳細資訊，請閱讀我們的 [宣告](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。 
 

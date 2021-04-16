@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Defender ATP 中的即時回應調查裝置上的實體
+title: 使用 Microsoft Defender for Endpoint 中的即時回應調查裝置上的實體
 description: 使用安全的遠端命令介面連線存取裝置，以執行調查工作並即時立即對裝置採取回應動作。
 keywords: remote，shell，connection，live，response，real，command，script，修正，搜尋，匯出，記錄，刪除，下載，檔案，
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760413"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860794"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用即時回應調查裝置上的實體
 
@@ -32,7 +32,7 @@ ms.locfileid: "51760413"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Live response 讓安全性運作小組能夠暫態存取裝置 (也稱為) 使用遠端命令介面連線的電腦。 這可讓您在深入調查工作中做為您的力量，並立即採取回應動作，及時包含已識別的威脅（即時）。 
 

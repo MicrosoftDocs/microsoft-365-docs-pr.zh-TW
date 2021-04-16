@@ -1,6 +1,6 @@
 ---
-title: 將 Microsoft Defender ATP macOS 裝置登記至 Jamf Pro
-description: 將 Microsoft Defender ATP macOS 裝置登記至 Jamf Pro
+title: 在 Jamf Pro 中註冊用於 macOS 裝置的 Microsoft Defender for Endpoint
+description: 在 Jamf Pro 中註冊用於 macOS 裝置的 Microsoft Defender for Endpoint
 keywords: microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea71875dedf7e8706c9022420abd63bc5eb20c69
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e832493159649cb6721320da53c25f57855baa4f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689722"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861644"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 裝置上為 Jamf Pro 註冊 Microsoft Defender for Endpoint 
 
@@ -34,7 +34,7 @@ ms.locfileid: "51689722"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="enroll-macos-devices"></a>註冊 macOS 裝置
 

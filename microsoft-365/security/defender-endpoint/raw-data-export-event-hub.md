@@ -1,6 +1,6 @@
 ---
 title: 將 Microsoft Defender for Endpoint 事件的資料流程傳遞給 Azure 事件中心
-description: 瞭解如何設定 Microsoft Defender ATP，以將高級搜尋事件傳輸至您的事件中樞。
+description: 瞭解如何設定 Microsoft Defender for Endpoint to stream to to Event Hub 中的高級搜尋事件。
 keywords: 原始資料匯出，流式 API，API，Azure 事件中心，Azure 儲存體，儲存體帳戶，高級搜尋，原始資料共用
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 231ba79e1d66eee263b6c1a4335f0a7b54eeb75d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: df305c9fcc7fb9249f2387567600adb899f8c49a
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058196"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861044"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>設定 Microsoft Defender for Endpoint to stream Advanced Advanced events to a Azure Event 中樞
 
@@ -32,7 +32,7 @@ ms.locfileid: "51058196"
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
 ## <a name="before-you-begin"></a>開始之前：
 

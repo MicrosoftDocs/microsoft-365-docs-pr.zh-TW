@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 瞭解如何使用 microsoft 365 系統管理中心的 [Microsoft 365 報告] 儀表板，取得 Microsoft 365 應用程式的使用方式報告。
-ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d41a1680b46709c3f41b5238d309794c68101cee
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644264"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860746"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Admin center 中的 microsoft 365 報告-Microsoft 365 應用程式使用量
 
@@ -33,7 +33,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 
 
  > [!NOTE]
- > 您必須是 Microsoft 365 或 Exchange、SharePoint 或商務用 Skype 系統管理員的全域系統管理員、全域讀取器或報告讀取器，才能查看報告。 在此報告中，不支援共用電腦啟用。
+ > 您必須是 Microsoft 365 或 Exchange、SharePoint 或商務用 Skype 系統管理員的全域系統管理員、全域讀取器或報告讀取器，才能查看報告。 這份報告中並未包含共用電腦啟用。
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>如何取得 Microsoft 365 應用程式使用方式報告
 
@@ -50,7 +50,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |項目|描述|
  |:-----|:-----|
  |1. <br/> |**Microsoft 365 應用程式使用方式** 報告可查看過去7天、30天、90天或180天的趨勢。 不過，如果您在報告中選取某一天，則 table (7) 會從目前的日期顯示最多28天的資料， (不是) 產生報表的日期。 <br/> |
- |2. <br/> |每個報告中的資料通常會涵蓋過去7天。 <br/> |
+ |2. <br/> |每個報告中的資料通常最多涵蓋過去兩天。 每隔六天，我們會以次要更新重新整理報告，以確保資料品質。 <br/> |
  |3. <br/> |[ **使用者** ] 視圖會顯示每個應用程式的作用中使用者數目的趨勢-Outlook、Word、Excel、PowerPoint、OneNote 和團隊。 「作用中使用者」是指任何在這些應用程式中執行任何故意動作的使用者。 <br/> |
  |4. <br/> |[ **平臺** ] 視圖會顯示每個平臺（Windows、Mac、Web 及行動裝置）上的每個應用程式中使用中使用者的趨勢。 <br/> |
  |5.<br/>|在 [ **使用者** ] 圖表上，Y 軸是個別應用程式的唯一作用中使用者數目。 在 [ **平臺**]   圖表上，Y 軸是個別平臺的唯一使用者數目。 這兩張圖表的 X 軸都是在指定的平臺上使用應用程式的日期。<br/>|

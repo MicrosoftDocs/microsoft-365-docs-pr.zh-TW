@@ -1,7 +1,7 @@
 ---
-title: 為 Linux 部署 Microsoft Defender ATP 更新
+title: 為 Linux 部署 Microsoft Defender for Endpoint 的更新
 ms.reviewer: ''
-description: 說明如何在企業環境中部署 Microsoft Defender ATP for Linux 的更新。
+description: 說明如何在企業環境中為適用于 Linux 的 Microsoft Defender 端點部署更新。
 keywords: microsoft，defender，atp，linux，更新，部署
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2e4ea4942446317aef90288da9fb181935503fa9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 77b428e359596e73e08dc04f15190ecf68db29be
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687463"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861142"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -35,7 +35,7 @@ ms.locfileid: "51687463"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供新功能。
 

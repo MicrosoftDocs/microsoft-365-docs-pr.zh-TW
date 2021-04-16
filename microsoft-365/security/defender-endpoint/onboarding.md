@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft Defender for Endpoint service 上架
 description: 深入瞭解如何在 Microsoft Defender for Endpoint service 上進行板載端點服務
-keywords: ''
+keywords: microsoft defender for endpoint，板載，deploy
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cc538c887397d5bbea78f63c8a8acd318ec7fe9f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2a3325a290dc985bdb99a5a843b4b9e1f642a62b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689530"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861800"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>在 Microsoft Defender for Endpoint service 上架
 
@@ -34,7 +34,7 @@ ms.locfileid: "51689530"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 瞭解部署 Microsoft Defender for Endpoint 的各個階段，以及如何設定解決方案內的功能。 
 

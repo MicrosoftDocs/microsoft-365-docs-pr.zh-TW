@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 12207d69b0a1565caf762a265c1a0d32158ca291
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759836"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861600"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的事件優先順序
 
@@ -44,9 +44,9 @@ Microsoft 365 Defender 會將關聯性分析和匯總相關的警示和自動調
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件佇列的範例":::
 
-根據預設，Microsoft 365 security center 中的佇列會顯示過去六個月所看到的事件。 最近的事件是在清單頂端，您可以先查看此專案。
+根據預設，Microsoft 365 security center 中的事件佇列會顯示過去六個月所看到的事件。 最近的事件是在清單頂端，您可以先查看此專案。
 
-事件佇列具有可自訂的欄 (選取 **[選擇欄** ]) ，可讓您深入瞭解事件或受影響的實體的不同特性。 這可協助您針對 anaylsis 的事件優先順序作出明智的決策。
+事件佇列具有可自訂的欄 (選取 **[選擇欄** ]) ，可讓您深入瞭解事件或受影響的實體的不同特性。 這可協助您作出有關分析的事件優先順序決定。
 
 如需更深入的洞察力，自動事件命名功能會根據警示屬性（如受影響的端點數目、受影響的使用者、偵測來源或類別），產生事件名稱。 這可讓您快速瞭解事件的範圍。
 
@@ -108,7 +108,7 @@ Microsoft 365 Defender 會將關聯性分析和匯總相關的警示和自動調
 
 - 瞭解攻擊的類型及其影響。
 - 調查安全性攻擊趨勢的安全性社區中的攻擊。
-- 召回您用來解決事件的工作流程，並視需要更新您的標準工作流程和 plalbooks。
+- 召回您用來解決事件的工作流程，並視需要更新您的標準工作流程與行動手冊。
 
 以下是基本程式的摘要。
 

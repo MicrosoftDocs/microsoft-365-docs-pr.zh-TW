@@ -1,6 +1,6 @@
 ---
-title: 設定及驗證 Microsoft Defender ATP for Mac 的排除專案
-description: 針對 Mac 提供和驗證 Microsoft Defender ATP 的排除專案。 您可以為檔案、資料夾及處理常式設定排除。
+title: 針對 Mac 設定及驗證 Microsoft Defender for Endpoint 的排除專案
+description: 針對 Mac 提供和驗證 Microsoft Defender for Endpoint 的排除專案。 您可以為檔案、資料夾及處理常式設定排除。
 keywords: microsoft、defender、atp、mac、排除、掃描、防毒程式
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2281fccfb97d38dbdc218799b087290433deff30
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 7b5254e9b4289219a08730d736c8f9738e7a65f0
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764154"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861584"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>設定及驗證 macOS 上的 Microsoft Defender for Endpoint 的排除專案
 
@@ -34,7 +34,7 @@ ms.locfileid: "51764154"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 本文提供有關如何定義適用于隨選掃描和即時保護和監控之排除的資訊。
 

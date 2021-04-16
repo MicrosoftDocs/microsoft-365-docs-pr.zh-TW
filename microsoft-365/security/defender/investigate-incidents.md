@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5fe594dca935b7377a385b487f1464c3f0a91151
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760279"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861858"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的事件
 
@@ -38,7 +38,7 @@ ms.locfileid: "51760279"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據從您的裝置、使用者和信箱彙集到事件中，讓您全面瞭解攻擊的整體廣度。
+Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據，集中于您的裝置、使用者和信箱，以讓您全面瞭解攻擊的整體廣度。
 
 在事件內，您可以調查影響網路的警示、瞭解其含義，以及對照證據來設計有效的修復計畫。
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據從
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="從核取記號欄中選取事件的範例":::
 
-當您這麼做時，會開啟摘要窗格，其中會顯示事件的重要資訊，例如嚴重性、指派的人員，以及[MITRE ATT&CK &trade; ](https://attack.mitre.org/)類別的事件。 以下為範例。
+當您這麼做時，會開啟摘要窗格，其中會顯示事件的重要資訊（例如嚴重性），以及[MITRE ATT&CK &trade; ](https://attack.mitre.org/)類別的事件。 以下為範例。
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="事件摘要窗格的範例":::
 
@@ -70,7 +70,7 @@ Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據從
 
 提醒時程表會提供 sneak，以即時查看警示的發生順序，以及這些警示連結至此事件的原因。
 
-最後，證據區段提供事件中包含多少不同成品以及其修復狀態摘要，因此您可以立即識別是否需要採取任何動作。
+和 last-「證據」區段會摘要說明事件中包含多少不同的專案以及其修復狀態，所以您可以立即識別您是否需要任何動作。
 
 這項功能可讓您瞭解應注意的事件最重要特性，以協助您進行事件的初始診斷。
 

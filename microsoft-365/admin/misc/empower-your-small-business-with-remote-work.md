@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: 針對使用 Microsoft 365 的企業，尋找最新的操作方法、提示、資源及指導方針。
-ms.openlocfilehash: eac86583a1e72b70399024354f9adc7ad24e1047
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 3ef8bb3527e6be258eda8d745d841e8bd81cdd6c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034266"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860580"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>利用遠端工作為您的小型企業提供強大功能
 
@@ -87,7 +87,7 @@ Microsoft 365 商務版的技術檔中樞會以新的安全的遠端工作指導
 
 ## <a name="need-to-ask-a-question"></a>需要提出問題嗎？ 
 
-請向 [小組論壇](https://answers.microsoft.com/msteams/forum) 或 Office 系統 [管理員論壇](https://answers.microsoft.com/msoffice/forum/msoffice_o365Admin)尋求。
+請向 [小組論壇](https://answers.microsoft.com/msteams/forum) 或 Office 系統 [管理員論壇](https://answers.microsoft.com)尋求。
 
 > [!NOTE]
 > 本文中的大部分工作和影片都可以使用 Microsoft 365 商務版 (以前的 Office 365) 商務基本版訂閱來完成，但是有些需要高階訂閱。 

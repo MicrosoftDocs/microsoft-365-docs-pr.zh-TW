@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 深入瞭解如何將 Microsoft Office 升級為組織中使用者的最新 Office 用戶端。
-ms.openlocfilehash: 14be8d63b2acb3e4838640dc399595c0ba3f97f5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d2d5e54506d06662c6c2feef0d142f1e195163f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913991"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860568"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>將您的 Microsoft 365 for business 使用者升級至最新的 Office 用戶端
 
@@ -91,7 +91,7 @@ Office 2010 在10月13日，2020已到達支援的結束。 Microsoft 將無法�
 
 **選項2：購買 Office 的個別購買一次，或透過大量授權購買 Office**
 
- - 購買 Office 的個別購買一次。 請參閱 [Office 家用 &amp; Business](https://products.office.com/home-and-business) Or [office 專業版](https://products.office.com/professional)
+ - 購買 Office 的個別購買一次。 請參閱 [Office 家用 &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) Or [office 專業版](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
      「或」
 

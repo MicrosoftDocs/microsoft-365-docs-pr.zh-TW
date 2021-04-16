@@ -1,6 +1,6 @@
 ---
-title: 受管理的安全性服務提供者
-description: 請參閱 Microsoft Defender ATP 整合的 MSSPs 清單
+title: 支援的受管理安全性服務提供者
+description: 請參閱與 Microsoft Defender for Endpoint 整合的 MSSPs 清單。
 keywords: 受管理的安全性服務提供者、mssp、configure、integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 16b238a1d38e1aad70a4286d4ce8ecae1aae9a21
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 71db42f4bd651f4e9d4236e1f4d794aeb99dfa9f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186602"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862148"
 ---
-# <a name="supported-managed-security-service-providers"></a>受管理的安全性服務提供者
+# <a name="supported-managed-security-service-providers"></a>支援的受管理安全性服務提供者
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 您可以透過入口網站存取下列受管理的安全性服務提供者。 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP 服務中的下架裝置
-description: Microsoft Defender ATP 服務中的板載 Windows 10 裝置、伺服器、非 Windows 裝置
+title: Microsoft Defender for Endpoint service 中的下架裝置
+description: Microsoft Defender for Endpoint service 中的板載 Windows 10 裝置、伺服器、非 Windows 裝置
 keywords: 脫離，microsoft defender 用於端點脫離，windows atp 脫離
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a95ff5214ea9f696622ea184ece1c5aa9fb3db2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 18c708904e0fbfceafa2aeb387ffa9ce26e83c87
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186962"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861116"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint service 中的下架裝置
 
@@ -38,7 +38,7 @@ ms.locfileid: "51186962"
 - Windows Server 2012 R2
 - Windows Server 2016
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-offboarddevices-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-offboarddevices-abovefoldlink)
 
 請根據您慣用的部署方法，依照對應的指示進行。
 

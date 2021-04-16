@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender ATP 中開啟預覽體驗
+title: 在 Microsoft Defender for Endpoint 中開啟預覽體驗
 description: 在 Microsoft Defender for Endpoint 中開啟預覽體驗，以嘗試即將推出的功能。
 keywords: 高級功能、設定、封鎖檔
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e492ce155fd39532d9fa04ebc09b3029931d1c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 9e8b5a2cf26c3ba99b528695c3296f7a83d5bc22
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186134"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861080"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中開啟預覽體驗
 
@@ -32,7 +32,7 @@ ms.locfileid: "51186134"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
 
 開啟預覽體驗設定，成為第一批嘗試即將推出的功能的人。
 

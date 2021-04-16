@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: 在變更 Microsoft 365 方案之前，請先備份 Outlook、OneDrive、Yammer 及 SharePoint 內容。
-ms.openlocfilehash: d29d4e739a9328a63a491696ba26bee5b1947f0a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ecfd17d779cbb39ff786b192f72621bc94677776
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924057"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860520"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>切換 Microsoft 365 for business 方案之前備份資料
 
@@ -66,6 +66,6 @@ https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 
 _\<orgDomain\>_ 組織的 URL 位於何處。
   
-例如，如果組織的網域為 contoso.onmicrosoft.com，小組網站的直接 URL 就會是 https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx 。
+例如，如果組織的網域為 contoso.onmicrosoft.com，小組網站的直接 URL 就會是 `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx` 。
   
 當然，使用者也可以將 SharePoint 線上檔從 SharePoint 小組網站下載至他們的本機電腦，也可以在任何時間從其他位置下載。

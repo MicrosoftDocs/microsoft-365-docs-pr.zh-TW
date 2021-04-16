@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760061"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861728"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
 
@@ -65,12 +65,12 @@ ms.locfileid: "51760061"
 
 ## <a name="edit-the-incident-name"></a>編輯事件名稱
 
-事件會根據警示屬性（如受影響的端點數目、受影響的使用者、偵測來源或類別）自動指派名稱。 這可讓您快速瞭解事件的範圍。 例如：多 *個來源所報告之多個端點上的多階段事件。*
+Microsoft 365 Defender 會根據警示屬性（如受影響的端點數目、受影響的使用者、偵測來源或類別）自動指派名稱。 這可讓您快速瞭解事件的範圍。 例如：多 *個來源所報告之多個端點上的多階段事件。*
 
 您可以在 [**管理事件**] 窗格上的 [**事件名稱**] 欄位中編輯事件名稱。
 
 > [!NOTE]
-> 在自動事件命名功能的展示中，已存在的事件將保留其名稱。
+> 在自動事件命名功能的展示中所發生的事件，會保留其名稱。
 
 ## <a name="add-incident-tags"></a>新增事件標籤
 
@@ -96,4 +96,10 @@ ms.locfileid: "51760061"
 
 ## <a name="add-comments"></a>新增註解
 
-您可以使用 [ **批註** ] 欄位，將多個批註新增至事件。 每個評語都會新增至事件的歷史事件。 您可以在 [**摘要**] 頁面上，看到 [**批註和記錄**] 連結中的事件批註和記錄。
+您可以使用 [ **批註** ] 欄位，將多個批註新增至事件。 每個評論都會新增至事件的歷史事件。 您可以在 [**摘要**] 頁面上，看到 [**批註和記錄**] 連結中的事件批註和記錄。
+
+## <a name="related-topics"></a>相關主題
+
+- [事件概觀](incidents-overview.md)
+- [設定事件優先順序](incident-queue.md)
+- [調查事件](investigate-incidents.md)

@@ -1,7 +1,7 @@
 ---
-title: 管理和 APIs 概述
+title: 管理和 API 概觀
 ms.reviewer: ''
-description: 深入瞭解 Microsoft Defender ATP 中的管理工具和 API 類別
+description: 深入瞭解 Microsoft Defender for Endpoint 中的管理工具和 API 類別
 keywords: 上架，api，siem，rbac，access，portal，integration，調查，回應，實體，實體，使用者內容，應用程式內容，資料流程
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cfe1cc053be896c137e0c0b9ee02ea53dd2717
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187550"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862088"
 ---
-# <a name="overview-of-management-and-apis"></a>管理和 APIs 概述 
+# <a name="overview-of-management-and-apis"></a>管理和 API 概觀 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "51187550"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mgt-apis-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mgt-apis-abovefoldlink)
 
 
 的 Defender for Endpoint 支援各種選項，以確保客戶可以輕鬆採用此平臺。 
@@ -57,7 +57,7 @@ Microsoft Defender for Endpoint 方案是以整合就緒平臺為基礎。
 
 Endpoint APIs 的 Defender 可以分為三種：
 - Microsoft Defender for Endpoint APIs 
-- 原始資料流程式處理 API
+- 原始資料串流 API
 - SIEM 整合
 
 ## <a name="microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint APIs
@@ -71,7 +71,7 @@ Defender for Endpoint 提供分層 API 模型，以結構化、清晰且便於�
 
 **回應 API** 公開在服務和裝置上採取動作的能力，讓客戶能夠攝取指示器、管理設定、警示狀態，以及在裝置上採取回應動作，例如隔離裝置與網路、隔離檔案等等。 
 
-## <a name="raw-data-streaming-api"></a>原始資料流程式處理 API 
+## <a name="raw-data-streaming-api"></a>原始資料串流 API 
 使用 Defender for Endpoint raw data stream API，可讓客戶在單一資料流程中發生即時事件及警示，以提供低延遲、高輸送量傳遞機制。
 
 將 Endpoint 事件資訊的 Defender 事件資訊直接推入 Azure 存放區，以進行長期資料保留，或透過視覺化服務或其他資料處理引擎使用 Azure 事件中心以取得消耗。 

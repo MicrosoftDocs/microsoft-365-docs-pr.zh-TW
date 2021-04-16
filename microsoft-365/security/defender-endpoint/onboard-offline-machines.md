@@ -1,7 +1,7 @@
 ---
 title: 沒有網際網路存取 Microsoft Defender for Endpoint 的板載裝置
 ms.reviewer: ''
-description: 沒有網際網路存取的板載裝置，使其可將感應器資料傳送至 Microsoft Defender ATP 感應器
+description: 沒有網際網路存取的板載裝置，使其可將感應器資料傳送至 Microsoft Defender for Endpoint 感應器
 keywords: 板載、伺服器、vm、內部部署、oms 閘道、記錄分析、azure 記錄分析、mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b31705a4e6dc8cdd480c8b43c2154a2d6ddacddd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb5a9a4d35af2d400cdff1e417727e662738514e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186938"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861344"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>沒有網際網路存取 Microsoft Defender for Endpoint 的板載裝置
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186938"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 若沒有網際網路存取的板載裝置，您必須採取下列一般步驟：
@@ -48,7 +48,7 @@ ms.locfileid: "51186938"
 > - 如需離線更新 Ctl 的詳細資訊，請參閱 [Configure a file or web server To CONFIGURE CTL files](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。
 
 如需上架方法的詳細資訊，請參閱下列文章：
-- [板載舊版 Windows](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel)
+- [將上一版 Windows 上線](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel)
 - [Microsoft Defender for Endpoint service 的板載伺服器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [設定裝置 proxy 和網際網路連線設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 

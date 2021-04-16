@@ -1,6 +1,6 @@
 ---
-title: 設定 Mac 版 Microsoft Defender ATP 的喜好設定
-description: 在企業組織中設定適用于 Mac 的 Microsoft Defender ATP。
+title: 設定 Mac 的 Microsoft Defender 端點偏好設定
+description: 針對企業組織中的 Mac 設定 Microsoft Defender for Mac。
 keywords: microsoft，defender，atp，mac，management，喜好設定，enterprise，intune，jamf，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 951c51c767ba09ebc6056481b4fac45da09c5671
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d2bea469031e2c5932e859fbad7d442ebe4d34ed
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688546"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860916"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上設定 Microsoft Defender for Endpoint 的喜好設定
 
@@ -32,7 +32,7 @@ ms.locfileid: "51688546"
 
 **適用於：**
 
-- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 上適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 
 >[!IMPORTANT]
 >本文包含如何針對企業組織中 macOS 之 Microsoft Defender for Endpoint 設定偏好設定的指示。 若要在使用命令列介面的 macOS 上設定 Microsoft Defender for Endpoint，請參閱 [Resources](mac-resources.md#configuring-from-the-command-line)。
@@ -829,7 +829,7 @@ com.microsoft.wdav.plist: OK
 
 5. 開啟設定設定檔，並上傳 `com.microsoft.wdav.xml` 檔。  (此檔案是在步驟3中建立。 ) 
 
-6. 選取 **[確定]**。
+6. 選取 [確定]。
 
 7. 選取 [**管理**  >  **指派**]。 在 [ **包含** ] 索引標籤中，選取 [ **指派給所有使用者 & 所有裝置**]。
 

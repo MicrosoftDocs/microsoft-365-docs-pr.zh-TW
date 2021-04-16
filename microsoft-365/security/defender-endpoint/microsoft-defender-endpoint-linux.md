@@ -1,7 +1,7 @@
 ---
-title: Linux 上的 Microsoft Defender for Endpoint
+title: Linux 上適用於端點的 Microsoft Defender
 ms.reviewer: ''
-description: 說明如何安裝及使用 Microsoft Defender ATP for Linux。
+description: 說明如何為 Linux 安裝及使用 Microsoft Defender for Endpoint。
 keywords: microsoft，defender，atp，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0fea9d4dd46be2a77ea27728787a43b5273f92f5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687754"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861392"
 ---
-# <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint
+# <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上適用於端點的 Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51687754"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 本主題說明如何在 Linux 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 
@@ -83,7 +83,7 @@ ms.locfileid: "51687754"
   > 不支援以其他方式的安全性解決方案為基礎，針對 Linux 的端點執行 Defender `fanotify` 。 這可能會造成無法預期的結果，包括懸掛作業系統。
 
 - 磁碟空間：1GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可執行檔許可權。 如需詳細資訊，請參閱 [Microsoft DEFENDER ATP For Linux 的安裝問題疑難排解](/microsoft-365/security/defender-endpoint/linux-support-install)中的「確定守護程式具有可執行檔許可權」。
+- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可執行檔許可權。 如需詳細資訊，請參閱 [疑難排解 Microsoft Defender for The Linux 的安裝問題](/microsoft-365/security/defender-endpoint/linux-support-install)中的「確保守護程式具有可執行檔許可權」。
 - 記憶體：1GB
     > [!NOTE]
     > 請確認您在/var. 中有可用的磁碟空間。

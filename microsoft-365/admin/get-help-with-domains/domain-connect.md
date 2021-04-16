@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: 瞭解如何使用啟用網域連線的註冊機構，並將您的網域新增至 Microsoft 365。
-ms.openlocfilehash: 109255d82100e636e3472242866a519ff64a9e54
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 5dec69f70273e6a9430ce5926ed07888e197adcd
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655609"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860652"
 ---
 # <a name="using-domain-connect"></a>使用網域連接
 
@@ -49,7 +49,7 @@ ms.locfileid: "49655609"
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - 使用 SecureServer DNS 主機的 SecureServer 或 WildWestDomains (GoDaddy 轉銷商) 
-    - [MadDog 網域](https://www.maddogdomains.com/)
+    - [MadDog Web 主控](https://maddogwebhosting.com/domains/)
     - [CheapNames](https://www.cheapnames.com)
 
 ## <a name="what-happens-to-my-email-and-website"></a>我的電子郵件和網站會發生什麼情況？
