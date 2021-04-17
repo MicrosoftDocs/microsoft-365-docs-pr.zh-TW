@@ -18,12 +18,12 @@ description: 系統管理員可以瞭解如何使用 Exchange Online Protection 
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX
-ms.openlocfilehash: 09e07d8406b470fd3dac25944d013b997f2f90c1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9d737472be5da2af0a0a36beb4b7914b8bfe3a10
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760426"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876062"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>設定將協力廠商網路釣魚模擬的傳遞給使用者及未篩選的郵件以 SecOps 信箱
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760426"
 > [!NOTE]
 > 本文所述的功能都是在預覽中，並非每個人都可以使用，而且可能會變更。
 
-我們想要讓您的組織成為 [預設安全性](secure-by-default.md)，因此 Exchange Online PROTECTION (EOP) 不允許對導致惡意程式碼或高可信度網路釣魚 verdicts 的郵件執行安全清單或篩選旁路。 不過，我們意識到有需要傳遞未篩選郵件的特定案例。 例如：
+若要讓您 [的組織成為預設安全性](secure-by-default.md)，Exchange Online PROTECTION (EOP) 不允許對導致惡意程式碼或高可信度網路釣魚 verdicts 的郵件進行安全清單或篩選旁路。 不過，有些特定案例需要傳遞未篩選的郵件。 例如：
 
 - **協力廠商網路釣魚模擬**：模擬的攻擊可協助您在實際攻擊影響組織之前，識別有漏洞的使用者。
 - **(SecOps 的安全性作業) 信箱**：安全小組用來收集及分析未篩選郵件 (良好和不良) 的專用信箱。
@@ -47,8 +47,8 @@ ms.locfileid: "51760426"
 - 在這些情況下，不會觸發[預設系統警示](alerts.md)。
 - [在 365 Office 的 Defender 中的 AIR 和](office-365-air.md) 叢集會忽略這些訊息。
 - 特別是協力廠商網路釣魚模擬：
-  - 系統[管理報送](admin-submission.md)會產生自動回應，表明郵件屬於網路釣魚模擬活動的一部分，而且不是實際威脅。 不會觸發警示和空氣。
-  - [在 Office 365 的 Defender 中的安全連結](safe-links.md) ，不會封鎖或引爆這些郵件中明確識別的 URLs。
+  - 系統[管理報送](admin-submission.md)會產生自動回應，表示郵件屬於網路釣魚模擬活動的一部分，而且不是實際威脅。 不會觸發警示和空氣。
+  - [在 Office 365 的 Defender 中的安全連結](safe-links.md) ，不會在這些郵件中封鎖或引爆明確識別的 URLs。
   - [在 Office 365 的 Defender 中的安全附件](safe-attachments.md) 不會引爆這些郵件中的附件。
 
 <sup>\*</sup> 您無法略過惡意程式碼篩選或 ZAP 惡意程式碼。
@@ -98,7 +98,7 @@ ms.locfileid: "51760426"
 
 3. 在開啟的 **SecOps 信箱** 快顯視窗中，輸入您要指定為 SecOps 信箱的現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。
 
-4. 完成後，按一下 **[儲存]**。
+4. 完成後，請按一下 **[儲存]**。
 
 您設定的 SecOps 信箱專案會顯示在 [ **SecOps 信箱** ] 索引標籤上。若要進行變更，請按一下索引標籤上的 [ **編輯** ]。
 
@@ -106,8 +106,8 @@ ms.locfileid: "51760426"
 
 除了高級傳遞原則可以協助您使用的兩種情形之外，還有其他情況可能需要您略過篩選：
 
-- **協力廠商篩選**：如果您網域的 MX 記錄沒有指向 Office 365 (郵件會先在其他地方傳送) ，否則無法使用 [secure](secure-by-default.md) 。
+- **協力廠商篩選器**：如果您網域的 MX 記錄 *沒有* 指向 Office 365 (郵件會先在其他地方傳送) ，否則 *無法使用* [secure](secure-by-default.md) 。
 
   若要繞過協力廠商篩選所評估之郵件的 Microsoft 篩選功能，請使用郵件流程規則 (也稱為傳輸規則) ，請參閱 [使用郵件流程規則來設定郵件中的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
 
-- **審核** 中的誤報：您可能想要暫時允許 Microsoft 透過系統 [管理員提交](admin-submission.md) 進行的某些郵件仍要進行分析，以報告未正確標記為壞于 microsoft (誤報) 的已知良好郵件。 就像所有覆寫一樣，強烈建議這些余量是暫時的。
+- **審核** 中的誤報：您可能想要暫時允許 Microsoft 透過系統 [管理員提交](admin-submission.md) 進行的某些郵件仍要進行分析，以報告未正確標記為壞于 microsoft (誤報) 的已知良好郵件。 就像所有覆寫一樣， **_強烈建議您_** 暫時進行這些折中。

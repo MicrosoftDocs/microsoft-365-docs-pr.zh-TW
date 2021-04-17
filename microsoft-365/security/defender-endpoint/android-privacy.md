@@ -16,23 +16,25 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d38d7a54aa860049e1968e5b92c801107bea0514
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687958"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876106"
 ---
-#  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 版上的 Microsoft Defender for Endpoint-隱私權資訊
+#  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上適用於端點的 Microsoft Defender - 隱私權資訊
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-適用于 Android 的 defender for Android 會從您設定的 Android 裝置收集資訊，並將其儲存在您擁有 Defender for Endpoint 的相同承租人中。
+適用于 Android 的 defender for Android 會從您設定的 Android 裝置收集資訊，並將其儲存在您擁有 Defender for Endpoint 的相同承租人中。 收集此資訊有助於讓 iOS 安全、更新、如期執行，以及支援服務的情況下，取得端點的資訊。
+
+如需資料儲存區的詳細資訊，請參閱 [Microsoft Defender Endpoint data storage and 隱私權](data-storage-privacy.md)。
 
 收集的資訊可協助您保持 Android 的 Defender 安全、更新、如期執行，以及支援服務。
 
@@ -42,7 +44,7 @@ ms.locfileid: "51687958"
 
 ### <a name="app-information"></a>應用程式資訊
 
-裝置上 (APKs) 的 Android 應用程式套件相關資訊，包括
+裝置上 (APKs) 的 **惡意** Android 應用程式套件相關資訊，包括
 
 -  安裝來源
 -  APK 的儲存位置 (檔案路徑) 
@@ -50,7 +52,7 @@ ms.locfileid: "51687958"
 
 ### <a name="web-page--network-information"></a>網頁/網路資訊
 
-- 支援的瀏覽器) 上的完整 URL (，當按一下時）
+- 僅當偵測到惡意的連線或網頁時，才會完成網站的完整 URL。
 - 連接資訊
 - 通訊協定類型 (例如 HTTP、HTTPS 等 ) 
 
@@ -73,6 +75,9 @@ ms.locfileid: "51687958"
     -   使用者主要名稱–使用者的電子郵件識別碼
 
 ### <a name="product-and-service-usage-data"></a>產品和服務使用方式資料
+
+僅針對裝置上安裝的 Microsoft Defender for Endpoint 應用程式收集下列資訊。 
+
 -   應用程式套件資訊，包括名稱、版本及應用程式升級狀態
 
 -   在應用程式中執行的動作
