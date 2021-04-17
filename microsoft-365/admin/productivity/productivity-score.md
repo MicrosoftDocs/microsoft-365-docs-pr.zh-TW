@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生產力分數概觀。
-ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0eac22eadd099ebe4c7efbdf1198f6dc576dc080
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914579"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876128"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生產力分數 
 
@@ -155,3 +155,11 @@ Microsoft 致力於保護個人隱私。 這份[隱私權文件](privacy.md)說�
 ## <a name="we-want-to-hear-from-you"></a>我們想知道您的想法
 
 分享您對生產力分數的想法以及如何改善它。 使用產品中的 **[意見反應]** 區段和/或透過 prodscorefeedback@microsoft.com 連絡生產力分數小組。
+
+## <a name="related-content"></a>相關內容
+
+[使用報告來監視 Microsoft 365 活動](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports) (文章)
+
+[啟用 Microsoft 365 使用情況分析](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (文章)
+
+[Microsoft 365 系統管理中心概觀](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (影片)
