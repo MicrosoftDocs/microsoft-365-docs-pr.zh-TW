@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 560eeb1e1099576f9f4babf02cc38eb842094fd1
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862380"
+ms.locfileid: "51876334"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>疑難排解與即時保護相關的效能問題
 
@@ -60,7 +60,7 @@ ms.locfileid: "51862380"
 
 | 欄位名稱 | 描述 |
 |---|---|
-|ProcessImageName   | 處理常式影像名稱 |
+|ProcessImageName | 處理常式影像名稱 |
 | TotalTime | 掃描此程式所存取之檔案所花費的累計持續時間（毫秒） |
 |計數 | 此處理程式存取的掃描檔數目 |
 |MaxTime |  此程式存取之檔案的最長單一掃描的持續時間（毫秒） |
@@ -69,13 +69,13 @@ ms.locfileid: "51862380"
 
 如果效能影響很高，請遵循 [Configure and validate the The Microsoft Defender 防病毒掃描](collect-diagnostic-data.md)中的步驟，嘗試將此程式新增至路徑/進程排除。
 
-如果上一個步驟沒有解決問題，您可以在下列各節中透過「程式 [監視器](#capture-process-logs-using-process-monitor) 」或「 [Windows 效能記錄器](#capture-performance-logs-using-windows-performance-recorder) 」來收集詳細資訊。 
+如果上一個步驟沒有解決問題，您可以在下列各節中透過「程式 [監視器](#capture-process-logs-using-process-monitor) 」或「 [Windows 效能記錄器](#capture-performance-logs-using-windows-performance-recorder) 」來收集詳細資訊。
      
 ## <a name="capture-process-logs-using-process-monitor"></a>使用進程監視器捕獲處理常式記錄
 
-Process Monitor (ProcMon) 是一種可顯示即時處理程式的高級監控工具。 您可以使用此功能，在出現效能問題時進行捕獲。 
+Process Monitor (ProcMon) 是一種可顯示即時處理程式的高級監控工具。 您可以使用此功能，在出現效能問題時進行捕獲。
 
-1. 下載程式將 [3.60](/sysinternals/downloads/procmon) 至資料夾（如所示） `C:\temp` 。 
+1. 下載程式將 [3.60](/sysinternals/downloads/procmon) 至資料夾（如所示） `C:\temp` 。
 
 2. 若要移除檔案的網站標記：
     1. 以滑鼠右鍵按一下 [ **ProcessMonitor.zip** ]，然後選取 [ **屬性**]。
@@ -188,7 +188,9 @@ WPR 是 Windows 評估和部署套件 (Windows ADK) 的一部分，而且可以�
 6. 選取 [ **新增設定檔** ]，然後流覽至檔案的路徑 `WD.wprp` 。
 
 7. 之後，您應該會在它底下的 [ *Microsoft Defender For Endpoint analysis* *] 下看到* 新的設定檔集。
+
     ![檔內](images/wpr-infile.png)
+
     >[!WARNING]
     >如果您的 Windows 伺服器有 64 GB 或以上的 RAM，請使用自訂度量， `Microsoft Defender for Endpoint analysis for large servers` 而不要使用 `Microsoft Defender for Endpoint analysis` 。 否則，您的系統可能會耗用大量的非分頁集區記憶體或緩衝區，可能會導致系統不穩定。 您可以透過展開 **資源分析** 來選擇要新增的設定檔。 這個自訂設定檔提供深入效能分析所需的內容。
  
@@ -227,8 +229,8 @@ WPR 是 Windows 評估和部署套件 (Windows ADK) 的一部分，而且可以�
 
     ![填滿詳細資料](images/wpr-12.png)
 
-    1. 選取檔案名 **：** 以決定儲存追蹤檔案的位置。 根據預設，1.is 會儲存至 `%user%\Documents\WPR Files\` 。 
-    1. 選取 [儲存]。 
+    1. 選取檔案名 **：** 以決定儲存追蹤檔案的位置。 根據預設，1.is 會儲存至 `%user%\Documents\WPR Files\` 。
+    1. 選取 [儲存]。
 
 14. 正在合併追蹤，請稍候。
 

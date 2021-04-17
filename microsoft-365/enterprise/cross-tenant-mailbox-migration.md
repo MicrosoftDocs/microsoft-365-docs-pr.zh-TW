@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f24f519ec3bb12622d74c1d02fbc0bb017aa2b24
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: d52a0ca4a2dc9b799a32f70962416ffe190e16db
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476406"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876184"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -436,6 +436,10 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 
 是的，您應該在來源租使用者信箱移至目標租使用者時，更新來源內部部署使用者的 targetAddress (RemoteRoutingAddress/ExternalEmailAddress) 。  雖然郵件路由可以追蹤多個具有不同 targetAddresses 之郵件使用者的參考，但 Free/Busy 郵件使用者的查閱，都必須以信箱使用者的位置為目標。 Free/Busy 查閱將不會跟蹤多個重新導向。 
 
+**團隊會議是否要遷移跨承租人？**  
+
+會議會移動，但是小組會議 URL 不會更新當專案遷移跨承租人。 由於 URL 在目標租使用者中將會無效，所以您需要移除並重新建立團隊會議。
+
 **小組聊天資料夾內容是否要遷移跨承租人？**  
 
 否，小組聊天資料夾內容不會遷移跨承租人。  
@@ -572,7 +576,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 **來源和目標租使用者是否可以使用相同功能變數名稱？**  
 
-否。 來源和目標租使用者功能變數名稱必須是唯一的。 例如，contoso.com 的來源網域和 fourthcoffee.com 的目標網域。
+不對。 來源和目標租使用者功能變數名稱必須是唯一的。 例如，contoso.com 的來源網域和 fourthcoffee.com 的目標網域。
 
 **共用信箱會移動而且仍然可以運作嗎？**
 
@@ -689,7 +693,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
    - 當 msExchRemoteRecipientType 設定為 8 (DeprovisionMailbox) 時，針對遷移到目標租使用者的內部部署 MailUsers，Azure 中的 proxy 清理邏輯會移除 nonowned 網域，並將 primarySMTP 重設為擁有的網域。 清除內部部署 MailUser 中的 [msExchRemoteRecipientType]，便不再套用 proxy 清理邏輯。 <br/><br>以下是包括 Exchange Online 之一組可能的完整服務方案。
 
-   | 名稱                                              |
+   | 姓名                                              |
    |---------------------------------------------------|
    | 高級 eDiscovery 儲存 (500GB)                |
    | 客戶加密箱                                  |
