@@ -1,7 +1,7 @@
 - name: Microsoft 365 系統管理中心說明
   href: index.yml
   items:
-    - name: 開始使用
+    - name: 入門
       href: setup/index.yml
       items:
         - name: 註冊
@@ -201,7 +201,7 @@
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: 網域常見問題集
           href: setup/domains-faq.yml
-        - name: 主機指定的指示
+        - name: DNS 詳細指引
           items:
             - name: 在任一 DNS 主機變更名稱伺服器
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
