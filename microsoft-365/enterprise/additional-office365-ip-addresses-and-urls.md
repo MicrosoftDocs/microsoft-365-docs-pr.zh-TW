@@ -3,7 +3,7 @@ title: Office 365 IP 位址和 URL Web 服務中未包含的其他端點
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/29/2020
+ms.date: 04/19/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新端點 Web 服務不包含特定案例的少量端點。
 hideEdit: true
-ms.openlocfilehash: e9c9f28749691a8a2585c0865895718ea86d7141
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6c545b6060b44ebe234baaebd3ae1eb2fdb0fb89
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927003"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887206"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 位址和 URL Web 服務中未包含的其他端點
 
@@ -46,8 +46,8 @@ ms.locfileid: "50927003"
 | 列 | 用途 | 目的地 | 類型 |
 |:-----|:-----|:-----|:-----|
 | 1  | PST 的[匯入服務](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6)和檔案擷取 | 如需其他需求的資訊，請參閱[匯入服務](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6)。 | 另類外寄範例 |
-| 2   | [適用於 Office 365 的 Microsoft 支援及修復小幫手](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | 外寄伺服器流量 |
-| 3   | Azure AD Connect (含 SSO 選項) – WinRM 和遠端 PowerShell | 客戶 STS 環境 (AD FS 伺服器和 AD FS Proxy) \| TCP 通訊埠 80 和 443 | 內送伺服器流量 |
+| 第  | [適用於 Office 365 的 Microsoft 支援及修復小幫手](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | 外寄伺服器流量 |
+| 個  | Azure AD Connect (含 SSO 選項) – WinRM 和遠端 PowerShell | 客戶 STS 環境 (AD FS 伺服器和 AD FS Proxy) \| TCP 通訊埠 80 和 443 | 內送伺服器流量 |
 | 4   | STS，例如 AD FS Proxy 伺服器 (僅適用於同盟客戶) | 客戶 STS (例如 AD FS Proxy) \| 通訊埠 TCP 443 或 TCP 49443 (含 ClientTLS) | 內送伺服器流量 |
 | 5   | [Exchange Online 整合通訊/SBC 整合](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers) | 在內部部署工作階段邊界控制器與 *.um.outlook.com 之間為雙向 | 僅限外寄伺服器的流量 |
 | 6   | 信箱移轉。當您啟動從內部部署 [Exchange 混合式](/exchange/exchange-deployment-assistant)將信箱移轉至 Office 365，Office 365 會連線到已發佈的 Exchange Web 服務 (EWS)/信箱複寫服務 (MRS) 伺服器。如果您需要 Exchange Online 伺服器所使用的 NAT IP 位址，以限制特定來源 IP 範圍的輸入連線，其會列在「Exchange Online」服務區域底下的 [Office 365 URL 與 IP 範圍](urls-and-ip-address-ranges.md)。請務必注意，在限制特定來源 IP 範圍的 TCP 443 連線之前，先確保 MRS Proxy 解析為個別 FQDN 和公用 IP 位址，以確保存取已發佈的 EWS 端點 (如 OWA) 時不會受到影響。 | 客戶內部部署 EWS/MRS Proxy<br> TCP 通訊埠 443 | 內送伺服器流量 |
@@ -57,7 +57,7 @@ ms.locfileid: "50927003"
 | 10   | 自動偵測服務用於 [Exchange 混合式](/exchange/exchange-deployment-assistant)案例，搭配 [iOS 版 Outlook 和 Android 的混合式新式驗證](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | 客戶在 TCP 443 上內部部署 Exchange 伺服器 | 內送伺服器流量 |
 | 11   | Exchange 混合式 Azure AD 驗證 | msappproxy.net | 僅限 TCP 輸出伺服器流量 |
 | 12   | Office 2016 中的商務用 Skype 包含使用 UDP 通訊埠根據螢幕共用的視訊。Office 2013 及較舊版本中的商務用 Skype 用戶端在 TCP 通訊埠 443 上使用 RDP。 | TCP 通訊埠 443 開放給 52.112.0.0/14 | Office 2013 及較舊版本中的商務用 Skype 更舊用戶端版本 |
-| 13   | 商務用 Skype 混合式內部部署伺服器連線至商務用 Skype Online | 13.107.64.0/18、52.112.0.0/14  <BR> UDP 連接埠 50,000-59,999 <BR>  TCP 連接埠 50,000-59,999；5061 | 商務用 Skype 內部部署伺服器輸出連線 |
+| 13  | 商務用 Skype 混合式內部部署伺服器連線至商務用 Skype Online | 13.107.64.0/18、52.112.0.0/14  <BR> UDP 連接埠 50,000-59,999 <BR>  TCP 連接埠 50,000-59,999；5061 | 商務用 Skype 內部部署伺服器輸出連線 |
 | 14   | 具有內部部署混合式連線的 Cloud PSTN 要求開啟內部部署主機的網路連線。如需商務用 Skype Online 混合式設定的詳細資料，  | 請參閱[規劃商務用 Skype Server 和 Office 365 之間的混合式連線](/skypeforbusiness/hybrid/plan-hybrid-connectivity) (英文) | 商務用 Skype 內部部署混合式輸入 |
 | 15   | **驗證與身分識別 FQDN** <br> FQDN ```secure.aadcdn.microsoftonline-p.com``` 必須在您用戶端的 Internet Explorer (IE) 或 Microsoft Edge 信任的網站區域中才能正常運作。 |  | 信任的網站 |
 | 16   |  **Microsoft Teams FQDN** <br> 如果您使用的是 Internet Explorer 或 Microsoft Edge，您需要啟用第一和第三方 Cookie，並將 Teams 的 FQDN 新增到您的 [信任的網站] 中。這是列 14 所列之跨套件 FQDN、CDN 和遙測之外的項目。如需詳細資訊，請參閱 [Microsoft Teams 的已知問題](/microsoftteams/known-issues)。 |  | 信任的網站 |
@@ -74,7 +74,7 @@ ms.locfileid: "50927003"
 
 [管理 Office 365 端點](managing-office-365-endpoints.md)
   
-[監視 Microsoft 365 連線能力](./monitor-connectivity.md?view=o365-worldwide)
+[監視 Microsoft 365 連線能力](./monitor-connectivity.md)
   
 [用戶端連線](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
   

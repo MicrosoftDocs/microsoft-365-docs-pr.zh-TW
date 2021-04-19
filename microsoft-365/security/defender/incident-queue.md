@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876196"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887254"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的事件優先順序
 
@@ -102,7 +102,7 @@ Microsoft 365 Defender 會將關聯性分析和匯總相關的警示和自動調
 
    - 包容：減少對租使用者的任何其他影響。
    - Eradication：移除安全性威脅。
-   - 復原：將租使用者資源還原為攻擊之前的狀態。
+   - 復原：將租使用者資源還原到事件之前的狀態。
 
 3. 解決事件後，請花時間進行下列作業：
 
