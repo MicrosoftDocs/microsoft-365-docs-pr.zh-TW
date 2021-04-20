@@ -18,26 +18,35 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務後，遷移後的活動。
-ms.openlocfilehash: 745589c1c997540094fc4a770e437de89015f88a
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: ee8dedf7ffaf6bfc4246b1a8cc2522c15d763cd1
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591753"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899361"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移後的遷移後活動
 
 下列各節會在從 Microsoft Cloud 德國 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務後，提供多項服務的遷移後活動。
 
 ## <a name="azure-ad"></a>Azure AD
+<!-- This AAD Endpoints comparison table could be added to the documentation, not finally decided.
+### Azure AD Endpoints
+**Applies to:** All customers
 
-### <a name="azure-ad-connect"></a>Azure AD Connect
-**適用于：** 與 Azure AD connect 同步處理的所有客戶
+After the cut over to Azure AD is complete, the organization is fully using Office 365 services and is no longer connected to Microsoft Cloud Deutschland and the endpoints cannot be used anymore. At this point, the customer needs to ensure that all applications are using the endpoints for the new German datacenter region.
+The following table provides an overview about which endpoints will replace the previously used endpoints in Microsoft Cloud Germany (Microsoft Cloud Deutschland). 
 
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 更新 Azure AD Connect。 | 在完成剪下 Azure AD 後，組織就完全使用 Office 365 服務，而且不再連接至 Microsoft 雲端 Deutschland。 此時，客戶必須確定已完成的 delta 同步處理常式，然後在該程式中，將 `AzureInstance` Deutschland Microsoft Cloud) 中的字串 (值變更為登錄路徑中的 0 `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` 。 | 變更登錄機碼的值 `AzureInstance` 。 若無法這麼做，將在不再提供 Microsoft Cloud Deutschland 端點後，導致物件不會進行同步處理。 |
-|||||
+|Endpoint in Microsoft Cloud Germany  |Endpoint in the new German datacenter region  |
+|:---------|:---------|
+|becws.microsoftonline.de<br>provisioningapi.microsoftonline.de |becws.microsoftonline.com<br>provisioningapi.microsoftonline.com |
+|adminwebservice.microsoftonline.de |adminwebservice.microsoftonline.com |
+|login.microsoftonline.de<br>logincert.microsoftonline.de<br>sts.microsoftonline.de |login.microsoftonline.com<br>login.windows.net<br>logincert.microsoftonline.com<br>accounts.accesscontrol.windows.net |
+|enterpriseregistration.microsoftonline.de |enterpriseregistration.windows.net |
+|graph.cloudapi.de |graph.windows.net |
+|graph.microsoft.de |graph.microsoft.com |
+|||
+-->
 
 ### <a name="azure-ad-federated-authentication-with-ad-fs"></a>Azure AD 同盟驗證與 AD FS
 **適用于：** 所有使用同盟驗證與 AD FS 的客戶

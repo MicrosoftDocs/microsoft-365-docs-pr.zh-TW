@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: cd83d2abcc061562047aeb384856cc9ab04dcad3
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 121f2059e4a13684169ab40b7bfdaae13ef6045e
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760035"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899245"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
@@ -131,11 +131,8 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 其他考慮：
 
 - 如果您的組織仍然使用 SharePoint 2010 工作流程，他們將無法再在 2021 12 月31日之後運作。 SharePoint 2013 工作流程仍然受到支援，不過預設為從 2020 1 月1日開始的新承租人關閉。 在完成 SharePoint 線上服務的遷移之後，建議您移至 [電源自動化] 或其他支援的解決方案。
- 
-- 尚未遷移其 SharePoint 線上實例的 Microsoft 雲端 Deutschland 客戶必須保持 SharePoint 線上 PowerShell module SharePointOnline/16.0.20616.12000 版本或下列的版本。 否則，透過 PowerShell 或用戶端物件模型的 SharePoint 線上連線將會失敗。
-
+ - 尚未遷移其 SharePoint 線上實例的 Microsoft 雲端 Deutschland 客戶必須保持 SharePoint 線上 PowerShell module SharePointOnline/16.0.20616.12000 版本或下列的版本。 否則，透過 PowerShell 或用戶端物件模型的 SharePoint 線上連線將會失敗。
 - 在此階段中，SharePoint URLs 背後的 IP 位址會變更。 轉換至 Office 365 全域服務後，保留之租使用者的位址 URLs (例如， `contoso.sharepoint.de` `contoso-my.sharepoint.de`) 將變更為 [全球的 Microsoft 365 URLs 及 IP 位址範圍 (SharePoint 線上及 OneDrive 的商務) ](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)。
-
 
 > [!NOTE]
 > 若您使用 eDiscovery，請確定您已知道 [ediscovery 遷移經驗](ms-cloud-germany-transition-add-scc.md)。
@@ -150,7 +147,8 @@ Office 365 泛型服務區域會設定為預設值，這可讓內部負載平衡
 - 將您傳統 MCD URLs () 中的使用者和服務轉換 `https://outlook.office.de` 為新 Office 365 服務 URLs (`https://outlook.office365.com`) 。
 -  Exchange Online services (Outlook Web Access 和 Exchange Admin Center) 新的德國資料中心區域可供此階段使用，在此階段中將無法使用。
 - 使用者可能會在遷移期間，繼續透過舊版 MCD URLs 存取服務，但在完成遷移時，需要停止使用舊版 URLs。
-- 使用者應使用「全球 Office 入口網站」功能（ (行事曆、郵件、人員) ）轉換為 Office Online 功能。 流覽至尚未遷移至 Office 365 服務的服務，在遷移之前將無法運作。
+- 使用者應使用「全球 Office 入口網站」功能（ (行事曆、郵件、人員) ）轉換為 Office Online 功能。 流覽至尚未遷移至 Office 365 服務的服務，在遷移之前將無法運作。 
+- 這項限制也適用于背景服務，例如「我的帳戶」。 在階段9完成後，就可以使用 My Global 服務的帳戶。 在此之前，使用者必須使用 MCD 入口網站來管理其帳戶設定。
 - 在遷移期間，Outlook Web App 不會提供公用資料夾體驗。
 
 如果您想要在第5階段中修改使用者相片，請參閱 [階段5的 Exchange Online PowerShell-Set-UserPhoto](#exchange-online-powershell)。
@@ -158,9 +156,12 @@ Office 365 泛型服務區域會設定為預設值，這可讓內部負載平衡
 ### <a name="dns-record-for-autodiscover-in-exchange-online"></a>Exchange Online 中的自動探索 DNS 記錄
 **適用于：** 使用 Exchange Online 與自訂網域的客戶
 
-在 Exchange Online 階段 (階段 5) 時，必須更新目前指向 Microsoft Cloud Deutschland 之 AutoDiscover 的客戶管理 DNS 設定，以參照 Office 365 全域端點。 <br> 必須更新具有指向 autodiscover-outlook.office.de 之 CNAME 的現有 DNS 專案，以指向 **autodiscover.outlook.com**。
+在 Exchange Online 階段 (階段 5) 時，必須更新目前指向 Microsoft Cloud Deutschland 之自動探索的客戶管理 DNS 設定，以參考 Office 365 全域端點。 <br> 必須更新具有指向 autodiscover-outlook.office.de 之 CNAME 的現有 DNS 專案，以指向 **autodiscover.outlook.com**。
 
 在 **遷移階段9完成時，** 未執行這些 DNS 更新的客戶可能會在遷移完成時遇到服務問題。
+
+> [!NOTE]
+> 可忽略自動探索專案之自訂網域之系統管理中心的驗證錯誤。 只有當 CNAME 記錄變更為 autodiscover.outlook.com 時，服務才能正常運作。
 
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **適用于：** Exchange Online 系統管理員使用 Exchange Online PowerShell
@@ -182,29 +183,21 @@ New-PSSession
  其中 `<user_email>` 是使用者信箱之電子郵件識別碼的預留位置。 
 
 其他考慮：
-<!--
-    The statement below is not clear. What does myaccount.microsoft.com mean?
-
-
-- `myaccount.microsoft.com` will only work after the tenant cutover in phase 9. Links will produce "something went wrong" error messages until that time.
--->
 - 在其他環境中存取共用信箱的 Outlook Web App 使用者 (例如，MCD 環境中的使用者存取全域環境中的共用信箱) 會提示您第二次驗證。 使用者必須先驗證並存取其信箱 `outlook.office.de` ，然後開啟中的共用信箱 `outlook.office365.com` 。 當存取另一個服務中所主控的共用資源時，他們將需要第二次進行驗證。
 - 針對現有的 Microsoft Cloud Deutschland 客戶或過渡版，當您使用檔案 > 資訊將共用信箱新增至 Outlook 時 **> 新增帳戶**，查看行事曆許可權可能會失敗 (Outlook 用戶端嘗試使用 Rest API `https://outlook.office.de/api/v2.0/Me/Calendars`) 。 若要新增帳戶以查看行事曆許可權的客戶，可以新增登錄機碼，如在 [Outlook 中共用行事曆的使用者經驗變更](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) 中所述，以確保此動作可成功。 使用群組原則，可在整個組織中部署此登錄機碼。
+- 所有使用 active Exchange 混合式設定的客戶都無法將信箱從內部部署 Exchange Server 移至 Exchange Online，既不是 Microsoft 雲端 Deutschland，也不能從德國的新資料中心區域移至 Exchange Online。 客戶必須確定進行中的信箱移動已在階段5之前完成，並且在完成此階段後會繼續進行。
 - 請確定所有使用舊版通訊協定的使用者，在其裝置的 Exchange 信箱移至新的德國資料中心區域之後，在其用戶端中 (POP3/IMAP4/SMTP) 已準備好變更其用戶端中的端點，如 [Exchange Online 的預先遷移步驟](ms-cloud-germany-transition-add-pre-work.md#exchange-online)中所述。
+- 在遷移信箱之後，無法再使用 Outlook Web App 排程商務用 Skype 會議。 如有必要，使用者必須改用 Outlook。
 
 若要深入瞭解遷移中組織和遷移 Exchange Online 資源之後的差異，請在 [新的德國資料中心區域遷移至 Office 365 服務期間，查看客戶經驗](ms-cloud-germany-transition-experience.md)中的資訊。
-
 
 ## <a name="phase-6-exchange-online-protection--security-and-compliance"></a>階段6： Exchange Online Protection/安全性與合規性
 
 **適用于：** 所有使用 Exchange Online 的客戶<br>
 
-後端 Exchange Online Protection (EOP) 功能會複製到新的地區 "德國"。
+後端 Exchange Online Protection (EOP) 功能會複製到新的地區 "德國"。 Exchange Online 可從外部主機路由傳送至 Office 365，而 historial 租使用者的詳細資料也會遷移，也就是針對安全性和合規性功能的後端服務。
 
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 遷移 Exchange Online 路由及歷史郵件詳細資料。 | Exchange Online 可讓您從外部主機路由傳送至 Office 365。 外部 MX 記錄會轉換成路由傳送至 EOP 服務。 會遷移租使用者設定及歷史記錄詳細資料。 |<ul><li>Microsoft-managed DNS 專案會從 Office 365 德國 EOP 更新為 Office 365 服務。</li><li>客戶應該等候30天之後，EOP 雙重寫入以進行 EOP 遷移。 否則，可能會遺失資料。</li></ul>|
-||||
+僅使用 Exchange Online 功能的客戶 (非混合) 不需要在此階段中注意。
 
 ### <a name="exchange-online-hybrid-deployments"></a>Exchange Online 混合式部署
 **適用于：** 所有在內部部署 Exchange 伺服器皆使用 Exchange 混合式設定的客戶
@@ -223,19 +216,18 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 
 **適用于：** 所有使用商務用 Skype Online 的客戶
 
-請確認您熟悉 [商務用 Skype Online 遷移](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) 程式的準備工作準備工作。
+請複查 [商務用 Skype Online 遷移的預先遷移步驟](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) ，並確定您已完成所有步驟。
+在此階段中，商務用 Skype 會遷移至 Microsoft 團隊。 現有商務用 Skype 客戶會遷移至歐洲的 Office 365 全球服務，然後轉換為 Office 365 服務地區 "德國" 的 Microsoft 小組。
 
-<!--
-    Question from ckinder
-    the PowerShell command seems to be incomplete
--->
+- 使用者將無法在遷移日期登入商務用 Skype。 在遷移前10天內，客戶會在系統管理中心收到訊息，該訊息會宣佈進行遷移的時間，以及遷移開始時的時間。
+- 已遷移原則設定。
+- 使用者將會遷移到小組，而且在遷移後將無法再存取商務用 Skype。
+- 使用者必須已安裝 Microsoft 團隊桌面用戶端。 安裝將透過商務用 Skype 基礎結構上的原則進行，但如果失敗，使用者仍需下載用戶端或使用支援的瀏覽器進行連線。
+- 連絡人和會議會遷移至 Microsoft 團隊。
+- 使用者將無法在時間服務轉換為 Office 365 服務時登入商務用 Skype，而不會在客戶 DNS 專案完成之前登入。
+- 連絡人和現有的會議將繼續充當商務用 Skype 會議。
 
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 將商務用 Skype 遷移至小組。 | 現有商務用 Skype 客戶會遷移至歐洲的 Office 365 全球服務，然後轉換為 Office 365 服務地區 "德國" 的 Microsoft 小組。 |<ul><li>使用者將無法在遷移日期登入商務用 Skype。 遷移前的10天，我們會發佈到系統管理中心，讓您瞭解何時進行遷移，以及當我們開始遷移時，會發生什麼情況。</li><li> 已遷移原則設定。 </li><li>使用者將會遷移到小組，並且在遷移後將不再有商務用 Skype。 </li><li>使用者必須已安裝團隊桌面用戶端。 安裝將透過商務用 Skype 基礎結構上的原則進行，但如果失敗，使用者仍需下載用戶端或使用支援的瀏覽器進行連線。 </li><li>連絡人和會議會遷移到小組。</li><li>使用者將無法在時間服務轉換為 Office 365 服務時登入商務用 Skype，而不會在客戶 DNS 專案完成之前登入。 </li><li>連絡人和現有的會議將繼續充當商務用 Skype 會議。 </li></ul>|
-||||
-
-如果您必須在遷移階段9完成後，使用 PowerShell 連線到商務用 Skype Online，請使用下列程式碼來連接：
+如果您必須在遷移階段9完成之後，使用 PowerShell 連線到商務用 Skype Online，請使用下列 PowerShell 程式碼來連接：
 
 ```powershell
 Import-Module MicrosoftTeams
@@ -294,13 +286,21 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 **適用于：** 所有客戶
 
-當 Office 365 租使用者完成遷移的最後一個步驟 [Azure AD 完成 (階段 9) ] 所有服務都會轉換為全球。 任何應用程式或使用者都不應該存取任何 Microsoft Cloud Deutschland 端點的承租人資源。 自動，30天完成終止後，Microsoft Cloud Deutschland Azure AD 服務將停止已轉換租使用者的端點存取。 端點要求（例如驗證）會從這個點向前失敗，以進行 Microsoft Cloud Deutschland service。 
+當 Office 365 租使用者完成遷移的最後一個步驟時 (Azure AD 終結 (階段 9) ) 所有服務都會轉換為全球。 任何應用程式或使用者都不應該存取任何 Microsoft Cloud Deutschland 端點的承租人資源。 自動，30天完成終止後，Microsoft Cloud Deutschland Azure AD 服務將停止已轉換租使用者的端點存取。 端點要求（例如驗證）會從這個點向前失敗，以進行 Microsoft Cloud Deutschland service。 
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
 | 更新使用者端點 | 確定所有使用者都使用適當的 Microsoft 全球端點存取服務 |在遷移完成後30天之後，Microsoft Cloud Deutschland 端點會停止接受要求;用戶端或應用程式流量將會失敗。  |
 | 更新 Azure AD 應用程式端點 | 您必須更新驗證、Azure Active Directory (Azure AD) Graph，以及應用程式的 MS Graph 端點，以供 Microsoft 全球服務使用。 | 在遷移完成後30天之後，Microsoft Cloud Deutschland 端點會停止接受要求;用戶端或應用程式流量將會失敗。 |
 ||||
+
+### <a name="azure-ad-connect"></a>Azure AD Connect
+**適用于：** 與 Azure AD connect 同步處理的所有客戶
+
+| 步驟 (s)  | 描述 | 影響 |
+|:-------|:-------|:-------|
+| 更新 Azure AD Connect。 | 在完成剪下 Azure AD 後，組織就完全使用 Office 365 服務，而且不再連接至 Microsoft 雲端 Deutschland。 此時，客戶必須確定已完成的 delta 同步處理常式，然後在該程式中，將 `AzureInstance` Deutschland Microsoft Cloud) 中的字串 (值變更為登錄路徑中的 0 `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` 。 | 變更登錄機碼的值 `AzureInstance` 。 若無法這麼做，將在不再提供 Microsoft Cloud Deutschland 端點後，導致物件不會進行同步處理。 |
+|||||
 
 ## <a name="post-migration"></a>遷移後
 

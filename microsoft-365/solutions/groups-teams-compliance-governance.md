@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 深入瞭解 Microsoft 365 群組、小組和 SharePoint 共同作業的規範選項。
-ms.openlocfilehash: 88083d88b274e750e0fc6f1907268c996312163c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920889"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899349"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 群組、小組和 SharePoint 共同作業的相容性選項
 
@@ -28,7 +28,7 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 下表提供 Microsoft 365 中可用之相容性控制措施的快速參考。 以下各節提供進一步的資訊。
 
-|類別|描述|參考|
+|類別|描述|參考資料|
 |:-------|:----------|:--------|
 |資訊保留|||
 ||保留郵件和 SharePoint 內容的群組|[了解 SharePoint 和 OneDrive 的保留原則](../compliance/retention-policies-sharepoint.md)|
@@ -60,7 +60,7 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 - [Microsoft Teams 中的保留原則](/microsoftteams/retention-policies)
 
-單一保留原則可以設定為套用至 Microsoft 365 群組、小組聊天及小組通道訊息。 
+單一保留原則可以設定為套用到小組聊天和團隊通道郵件。 
 
 其他資源：
 
@@ -82,7 +82,7 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 - [使用敏感度標籤來套用加密以限制存取內容](../compliance/encryption-sensitivity-labels.md)
 
-- [為小組設定安全性隔離](./secure-teams-security-isolation.md)
+- [為團隊設定安全性隔離](./secure-teams-security-isolation.md)
 
 其他資源：
 

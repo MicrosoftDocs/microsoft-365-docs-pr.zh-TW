@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 964b7ee01277f396760543c45de8e6207df6bfcb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8c5173da14e1b1ae1820f00e79feb966ba7f15f6
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057984"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899337"
 ---
 # <a name="provide-feedback-on-microsoft-365-defender"></a>在 Microsoft 365 Defender 上提供意見反應
 
@@ -36,6 +36,11 @@ ms.locfileid: "51057984"
 - Microsoft 365 Defender
 
 您的意見反應可協助我們從高級攻擊中保護您的環境。 提供意見反應，分享您的體驗、印象和要求。
+
+請查看這段影片，以瞭解提供意見反應的難易程度。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LWeP]
+
 
 1. 從入口網站的任何部分中，選取 [ **提供意見** 反應]。 
 
