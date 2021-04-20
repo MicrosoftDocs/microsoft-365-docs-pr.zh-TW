@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: a24dc4ef23d32b19de9d2871b7d87aae90d05828
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3a26951a796d72237f992e520e1b793654e467e3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059111"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893398"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>修正 Microsoft Defender for Endpoint 中的狀況不良感應器
 
@@ -32,11 +32,11 @@ ms.locfileid: "51059111"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
 分類為設定錯誤或非使用中的裝置會因原因不同而加以標記。 本節提供一些有關可能導致裝置分類為非使用中或設定不當的說明。
 
-## <a name="inactive-devices"></a>非使用中裝置
+## <a name="inactive-devices"></a>非使用中的裝置
 
 非使用中的裝置不一定會因問題而標示。 對裝置執行下列動作可能會造成裝置分類為非使用中：
 
@@ -55,7 +55,7 @@ ms.locfileid: "51059111"
 
 您期望裝置處於「主動」狀態嗎？ [開啟支援票證](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561)。
 
-## <a name="misconfigured-devices"></a>設定錯誤的裝置
+## <a name="misconfigured-devices"></a>錯誤的裝置
 設定錯誤的裝置可進一步分類為：
 - 受損的通訊
 - 無感應器資料
@@ -68,7 +68,7 @@ ms.locfileid: "51059111"
 - [確定裝置具有網際網路連線](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
   Windows Defender ATP 感應器需要 Microsoft Windows HTTP (WinHTTP) 報告感應器資料，並與 Microsoft Defender for Endpoint service 進行通訊。
 
-- [驗證 Endpoint service URLs 的用戶端與 Microsoft Defender 的連線能力](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
+- [驗證 Endpoint service URLs 的用戶端與 Microsoft Defender 的連線能力](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   驗證 proxy 設定是否順利完成，該 WinHTTP 可以透過您環境中的 proxy 伺服器探索和通訊，而且 proxy 伺服器允許流量至 Microsoft Defender for Endpoint service URLs。
 
 如果您採取了糾正動作但裝置狀態仍設定不正確，請 [開啟支援票證](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)。
@@ -80,7 +80,7 @@ ms.locfileid: "51059111"
 - [確定裝置具有網際網路連線](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
   Windows Defender ATP 感應器需要 Microsoft Windows HTTP (WinHTTP) 報告感應器資料，並與 Microsoft Defender for Endpoint service 進行通訊。
 
-- [驗證 Endpoint service URLs 的用戶端與 Microsoft Defender 的連線能力](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
+- [驗證 Endpoint service URLs 的用戶端與 Microsoft Defender 的連線能力](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   驗證 proxy 設定是否順利完成，該 WinHTTP 可以透過您環境中的 proxy 伺服器探索和通訊，而且 proxy 伺服器允許流量至 Microsoft Defender for Endpoint service URLs。
 
 - [確定已啟用診斷資料服務](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>

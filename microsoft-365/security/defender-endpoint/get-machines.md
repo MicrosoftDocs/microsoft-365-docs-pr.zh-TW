@@ -1,6 +1,6 @@
 ---
 title: 列出電腦 API
-description: 瞭解如何使用清單電腦 API，以取得與 Microsoft Defender ATP 雲端通訊的電腦集合。
+description: 瞭解如何使用清單電腦 API，以取得與 Microsoft Defender for Endpoint cloud 通訊的電腦集合。
 keywords: api、graph api、支援的 api、get、裝置
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 23997cf4997ccfea8ee89a9b9ec5cc991dfa1ed0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 01e36427116ad7bd845901e7da7f5aa152bd44f9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200374"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893350"
 ---
 # <a name="list-machines-api"></a>列出電腦 API
 
@@ -27,7 +27,7 @@ ms.locfileid: "51200374"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

@@ -14,27 +14,24 @@ audience: ITPro
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 20d4767f9813b741c55109d617f78302feaa0f7e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 8350db473580fd4d1728c3473742da5b63196c52
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765020"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893574"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>偵測並封鎖可能有害的應用程式
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 
-> [!NOTE]
-> 可能有害的應用程式 (PUA) 是一種軟體類別，可導致您的機器執行緩慢、顯示未預期的廣告，或是最壞的軟體安裝可能是意外或不需要的軟體。 依預設，在 Windows 10 (版本2004和更新版本) 中，Microsoft Defender 防毒程式會封鎖視為 PUA 的應用程式，適用于 Enterprise (E5) 裝置。
-
-可能不需要的應用程式 (PUA) 不會被視為病毒、惡意程式碼或其他類型的威脅，但他們可能會對不會影響端點效能或使用的端點執行動作。 _PUA_ 也可以參考具有不良信譽的應用程式，因為這種不良行為會因某些類型的不良行為而評估。
+可能有害的應用程式 (PUA) 是一種軟體類別，可導致您的機器執行緩慢、顯示未預期的廣告或最壞的軟體安裝可能是意外或不需要的其他軟體。 PUA 不會被視為病毒、惡意程式碼或其他類型的威脅，但它可能會對對端點效能或使用造成不良影響的端點執行動作。 除了某些不良行為， *PUA* 字詞也可以參考具有不良信譽的應用程式，因為它是由 Microsoft Defender for Endpoint 所評估。
 
 以下為一些範例：
 
@@ -45,7 +42,7 @@ ms.locfileid: "51765020"
 > [!TIP]
 > 如需更多範例，以及我們用於標示應用程式以特別注意安全性功能的準則，請參閱 [Microsoft 如何識別惡意程式碼和潛在的有害應用程式](/windows/security/threat-protection/intelligence/criteria)。
 
-可能有害的應用程式可能會增加網路受到實際惡意程式碼感染的風險，使惡意程式碼感染難於識別，或浪費 IT 資源以加以清除。 Windows 10、Windows Server 2019 及 Windows Server 2016 都支援 PUA 保護。
+可能有害的應用程式可能會增加網路受到實際惡意程式碼感染的風險，使惡意程式碼感染難於識別，或浪費 IT 資源以加以清除。 Windows 10、Windows Server 2019 及 Windows Server 2016 都支援 PUA 保護。 在 Windows 10 (版本2004和更新版本) 中，Microsoft Defender 防毒程式預設會封鎖視為企業 (E5) 裝置的 PUA 的應用程式。
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -55,8 +52,10 @@ ms.locfileid: "51765020"
 
 雖然 Microsoft Edge 中可能有害的應用程式保護 (以 Chromium 為基礎的版本 80.0.361.50) 會預設為關閉，但是可以從瀏覽器中輕鬆地開啟此功能。
 
-1. 選取省略號，然後選擇 [ **設定**]。
+1. 在您的 Edge browser 中，選取省略號，然後選擇 [ **設定**]。
+
 2. 選取 [ **隱私權]、[搜尋] 及 [服務**]。
+
 3. 在 [ **安全性** ] 區段中，開啟 [ **封鎖可能有害的應用程式**]。
 
 > [!TIP]
@@ -68,7 +67,7 @@ ms.locfileid: "51765020"
 
 安全性管理員可以 [設定](/DeployEdge/configure-microsoft-edge) microsoft Edge 和 Microsoft Defender SmartScreen 如何共同運作，以保護使用者群組免受 PUA 關聯的 URLs。 有幾個 [群組原則設定](/DeployEdge/microsoft-edge-policies#smartscreen-settings) 會明確用於 Microsoft Defender SmartScreen，包括 [一個用於封鎖 PUA 的](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled)群組原則設定。 此外，系統管理員可以使用「群組原則」設定將 microsoft defender SmartScreen 開啟或關閉，以整體 [設定 Microsoft defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) 。
 
-雖然 Microsoft Defender for Endpoint 有其自己的封鎖清單是根據 Microsoft 所管理的資料集而定，您可以根據您自己的威脅情報來自訂此清單。 如果您在 Microsoft Defender for Endpoint 入口網站中 [建立及管理指示器](/microsoft-365/security/defender-endpoint/manage-indicators) ，microsoft defender SmartScreen 會尊重新設定。
+雖然 Microsoft Defender for Endpoint 會根據 Microsoft 所管理的資料集，自行 blocklist，您可以根據您自己的威脅智慧自訂此清單。 如果您在 Microsoft Defender for Endpoint 入口網站中 [建立及管理指示器](manage-indicators.md) ，microsoft defender SmartScreen 會尊重新設定。
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft Defender 防病毒
 
@@ -123,7 +122,7 @@ PUA 目前的分支) 中的 Microsoft 端點管理員 (預設會啟用 [保護]�
 
 7. 選取 [ **啟用** ] 以啟用 PUA 保護。
 
-8. 在 [ **選項**] 中，選取 [ **封鎖** ] 以封鎖可能不需要的應用程式，或選取 [ **核查模式]** 以測試設定在您的環境中的運作 選取 **[確定]**。
+8. 在 [ **選項**] 中，選取 [ **封鎖** ] 以封鎖可能不需要的應用程式，或選取 [ **核查模式]** 以測試設定在您的環境中的運作 選取 [確定]。
 
 9. 像往常一樣部署您的群組原則物件。
 
@@ -135,7 +134,7 @@ PUA 目前的分支) 中的 Microsoft 端點管理員 (預設會啟用 [保護]�
 Set-MpPreference -PUAProtection Enabled
 ```
 
-設定此 Cmdlet 的值可 `Enabled` 在已停用時開啟此功能。
+設定此 Cmdlet 的值， `Enabled` 開啟功能（如果已停用）。
 
 ##### <a name="to-set-pua-protection-to-audit-mode"></a>將 PUA 防護設定為稽核模式
 
@@ -153,7 +152,7 @@ Set-MpPreference -PUAProtection AuditMode
 Set-MpPreference -PUAProtection Disabled
 ```
 
-設定此 Cmdlet 的值，以 `Disabled` 關閉該功能（如果已啟用）。
+設定此 Cmdlet 的值， `Disabled` 關閉功能（如果已啟用）。
 
 如需如何使用 Microsoft Defender 防病毒 PowerShell 的詳細資訊，請參閱 [Use PowerShell Cmdlet 來設定及執行 Microsoft Defender 防病毒](use-powershell-cmdlets-microsoft-defender-antivirus.md) 程式和 [Defender Cmdlet](/powershell/module/defender/index) 。
 
@@ -180,6 +179,17 @@ PSComputerName   :
 
 如需查看 Microsoft Defender 防病毒事件的詳細資訊，請參閱 [事件 IDs 疑難排解](troubleshoot-microsoft-defender-antivirus.md) 。 PUA 事件會記錄在事件識別碼 **1160** 底下。
 
+如果您是使用 Microsoft Defender for Endpoint，您可以使用高級搜尋查詢來查看 PUA 事件。 以下是範例查詢：
+
+```console
+DeviceEvents
+| where ActionType == "AntivirusDetection"
+| extend x = parse_json(AdditionalFields)
+| evaluate bag_unpack(x)
+| where ThreatName startswith_cs 'PUA:'
+| project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
+```
+
 ## <a name="excluding-files"></a>排除檔案
 
 有時，PUA 保護會錯誤地封鎖檔案，或需要 PUA 的功能才能完成任務。 在這些情況下，您可以將檔案新增至排除清單。
@@ -188,5 +198,5 @@ PSComputerName   :
 
 ## <a name="see-also"></a>另請參閱
 
-- [新一代保護技術](microsoft-defender-antivirus-in-windows-10.md)
-- [設定行為、啟發式和即時保護](configure-protection-features-microsoft-defender-antivirus.md)
+- [新一代保護](microsoft-defender-antivirus-in-windows-10.md)
+- [設定行為、啟發學習法和即時保護](configure-protection-features-microsoft-defender-antivirus.md)

@@ -1,6 +1,6 @@
 ---
-title: 與 Microsoft Defender ATP 支援人員聯繫
-description: 瞭解如何聯繫 Microsoft Defender ATP 支援
+title: 聯絡適用於端點的 Microsoft Defender 支援
+description: 瞭解如何聯繫 Microsoft Defender for Endpoint support
 keywords: 支援、聯繫、premier 支援、解決方案、問題、案例
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c44e2c73eabcb89c178235bc3ce6738d2322dfa
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: eaf26c566b54b21e63af5ecbfe3603f2b1389208
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768983"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892838"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>聯絡適用於端點的 Microsoft Defender 支援
 
@@ -32,7 +32,7 @@ ms.locfileid: "51768983"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 端點的 Defender 最近已升級支援程式，以提供更新式和高級的支援經驗。 
 

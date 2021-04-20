@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: b477f302855cb5d4b00e0502bcfa9aa3aeb6b5c2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3550bec28945ab888efbe2ca46f12ca7f96aab4a
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165570"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892860"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 上線 Windows 10 裝置
 
@@ -35,7 +35,7 @@ ms.locfileid: "51165570"
 - Microsoft 端點 Configuration Manager 目前的分支
 - System Center 2012 R2 Configuration Manager
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## <a name="supported-client-operating-systems"></a>支援的用戶端作業系統
 
@@ -223,7 +223,7 @@ Value: 0 or 1
 
     ![顯示沒有錯誤之成功部署的 Configuration Manager](images/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-atp-service"></a>檢查裝置是否符合 Microsoft Defender ATP 服務
+### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>檢查裝置是否符合 Microsoft Defender for Endpoint service
 
 您可以設定 System Center 2012 R2 Configuration Manager 中設定專案的符合性規則，以監視您的部署。
 
@@ -244,5 +244,5 @@ Value: "1"
 - [使用行動裝置管理工具上線 Windows 10 電腦](configure-endpoints-mdm.md)
 - [使用本機指令碼上線 Windows 10 裝置](configure-endpoints-script.md)
 - [上線非持續 Virtual Desktop Infrastructure (VDI) 裝置](configure-endpoints-vdi.md)
-- [在新架的 Microsoft Defender ATP 裝置上執行偵測測試](run-detection-test.md)
+- [在新架的 Microsoft Defender for Endpoint 裝置上執行偵測測試](run-detection-test.md)
 - [疑難排解 Microsoft Defender 的端點上架問題](troubleshoot-onboarding.md)

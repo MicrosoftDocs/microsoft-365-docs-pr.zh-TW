@@ -1,6 +1,6 @@
 ---
-title: 取得架至 Microsoft Defender ATP 的裝置
-description: 追蹤 Intune 管理裝置的上架至 Microsoft Defender ATP，並增加上架速率。
+title: 取得架至 Microsoft Defender for Endpoint 的裝置
+description: 追蹤 Intune 管理裝置的上架至 Microsoft Defender for Endpoint，並增加上架速率。
 keywords: 板載，Intune management，MDATP，WDATP，Microsoft Defender，Windows Defender，高級威脅防護，設定管理
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6145acd5e8e2743ff42dce3cf01af0128e8ca225
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5e20c424f15561c8b6f0544b80aca6e30c56409d
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166086"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893326"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>取得架至 Microsoft Defender for Endpoint 的裝置
 
@@ -31,7 +31,7 @@ ms.locfileid: "51166086"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 每個架裝置會新增額外的端點偵測和回應 (EDR) 感應器，並在網路中增強遭到侵犯活動的知名度。 上架也可讓您檢查裝置是否有易受攻擊的元件，以及安全性設定問題，並可在攻擊期間接收重要的修復動作。
 
@@ -71,9 +71,9 @@ ms.locfileid: "51166086"
 
 如需詳細資訊，請 [參閱使用 Intune 裝置設定設定檔將「板載裝置」設定為使用 Defender For Endpoint](https://docs.microsoft.com/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)。
 
->想要體驗 Microsoft Defender ATP？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>想要體驗 Microsoft Defender ATP？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>相關主題
-- [確定您的裝置設定正確](configure-machines.md)
+- [確保您的裝置已正確設定](configure-machines.md)
 - [將合規性提升至 Endpoint security 基準的 Defender](configure-machines-security-baseline.md)
 - [優化 ASR 規則的部署和偵測](configure-machines-asr.md)

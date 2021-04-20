@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 預定常見問題。
-ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
-ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
+ms.openlocfilehash: 5338d710fa58ff9eba88b068f4fb412cecb83ae1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50999526"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892914"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 預定常見問題
 
@@ -118,7 +118,7 @@ Microsoft 365 商務版、Microsoft 365 Business Standard、A3、A5、E3、E5 �
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>如何取得 Microsoft 預定？
 
-可在 Microsoft 365 中提供預約，以供使用 Microsoft 365 商務版的客戶使用。 Microsoft 365 Business Standard、A3、A5、E3 和 E5 授權，以及 iOS 和 Android 一起使用的應用程式。 不能以獨立的應用程式形式進行預定。 必須啟用 outlook Web App 或 Web 上的 Outlook，才能使用預定，因為它會將資料儲存在 Outlook 內。
+預定可供使用 Office 365 A3、A5、E3 和 E5 的客戶使用，以及 Microsoft 365 商務標準、Microsoft 365 商務版、A3、A5、E3 和 E5。 您可以使用預約搭配 iOS 和 Android 配套應用程式。 不能以獨立的應用程式形式進行預定。 必須啟用 outlook Web App 或 Web 上的 Outlook，才能使用預定，因為它會將資料儲存在 Outlook 內。
 
 預約授權為產品提供完整功能，包括建立及管理行事曆。 當使用者新增為系統管理員或查看者角色中的人員時，也可讓使用者查看及編輯現有的行事曆。
 

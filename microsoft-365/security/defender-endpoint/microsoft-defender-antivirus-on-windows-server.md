@@ -1,5 +1,5 @@
 ---
-title: Windows Server 上的 Microsoft Defender 防病毒
+title: Windows Server 上的 Microsoft Defender 防毒軟體
 description: 瞭解如何在 Windows Server 2016 和 Windows Server 2019 上啟用和設定 Microsoft Defender 防毒軟體。
 keywords: windows defender、伺服器、scep、system center endpoint protection、伺服器2016、目前分支、伺服器2012
 search.product: eADQiWindows 10XVcnh
@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d9452b6d2eeaad3880894b9ec66c8bc71797b429
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 50e6f9b16dbc633e75e86acdc54ac43580107ae3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764600"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893374"
 ---
-# <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上的 Microsoft Defender 防病毒
+# <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上的 Microsoft Defender 防毒軟體
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -181,7 +181,7 @@ sc query Windefend
 
 如果您使用的是 Windows Server，版本1803或 Windows Server 2019，您可以設定下列登錄機碼，將 Microsoft Defender 防毒軟體設定為被動式模式：
 - 路徑： `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- 名稱：`ForcePassiveMode`
+- 名稱：`ForceDefenderPassiveMode`
 - 類型： `REG_DWORD`
 - 值：`1`
 

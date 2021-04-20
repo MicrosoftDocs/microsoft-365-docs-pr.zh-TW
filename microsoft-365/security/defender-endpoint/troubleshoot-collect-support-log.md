@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 8b7fe8f0973cabfb5f5268be28ac606dfc4c6387
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 07593fac6ed9a3fbc00d904718380b386f31dba3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183714"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893410"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>使用 live 回應收集 Microsoft Defender for Endpoint 中的支援記錄 
 
@@ -30,7 +30,7 @@ ms.locfileid: "51183714"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 當您聯繫支援時，可能會要求您提供 Microsoft Defender for Endpoint Client Analyzer 工具的輸出套件。
@@ -66,7 +66,7 @@ ms.locfileid: "51183714"
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
     ```
 
-    ![命令圖像](images/analyzer-commands.png)
+    [![命令 ](images/analyzer-commands.png) 圖像](images/analyzer-commands.png#lightbox)
 
 
 >[!NOTE]
@@ -82,4 +82,4 @@ ms.locfileid: "51183714"
 >   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
 >   ```
 > 
-> - 如需在機器本機上收集資料的詳細資訊，以防機器未與 Microsoft Defender for Endpoint 雲端服務通訊，或未如預期顯示在 Microsoft Defender for Endpoint portal，請參閱 [Verify client connectivity to connectivity To Microsoft defender For endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)。
+> - 如需在機器本機上收集資料的詳細資訊，以防機器未與 Microsoft Defender for Endpoint 雲端服務通訊，或未如預期顯示在 Microsoft Defender for Endpoint portal，請參閱 [Verify client connectivity to connectivity To Microsoft defender For endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)。

@@ -1,6 +1,6 @@
 ---
 title: 設定裝置 proxy 和網際網路連線設定
-description: 設定 Microsoft Defender ATP proxy 和網際網路設定，以啟用與雲端服務的通訊。
+description: 設定 Microsoft Defender for Endpoint proxy 和 internet 設定，以啟用與雲端服務之間的通訊。
 keywords: 設定、proxy、internet、internet 連線、設定、proxy 設定、netsh、winHTTP、proxy 伺服器
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644701"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893598"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>設定裝置 proxy 和網際網路連線設定
 
@@ -32,7 +32,7 @@ ms.locfileid: "51644701"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 您必須使用 Microsoft Windows HTTP (WinHTTP) 來報告感應器資料，並與 Defender for Endpoint service 進行通訊，才能使用該 Endpoint 感應器的 Defender。
 
@@ -178,7 +178,7 @@ Ods.opinsights.azure.com、oms.opinsights.azure.com 和 *. agentsvc.azure-automa
 > [!NOTE]
 > 在透過 Azure Security Center 上架的情況下 (ASC) 中，可能會使用多個工作區。 您必須在每個工作區的架電腦上執行上述 TestCloudConnection.exe 程式 (，以判斷是否) 工作區之間的 blob.core.windows.net URLs 的任何變更。
 
-## <a name="verify-client-connectivity-to-microsoft-defender-atp-service-urls"></a>驗證用戶端與 Microsoft Defender ATP service 的連線能力 URLs
+## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>驗證 Endpoint service URLs 的用戶端與 Microsoft Defender 的連線能力
 
 驗證 Proxy 設定是否成功完成，WinHTTP 是否可以在您的環境中發現 Proxy 伺服器並透過 Proxy 伺服器進行通訊，以及 Proxy 伺服器是否允許到適用於端點的 Defender 服務 URL 的通訊息。
 

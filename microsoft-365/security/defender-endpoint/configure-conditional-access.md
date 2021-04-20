@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender ATP 中設定條件式存取
+title: 在 Microsoft Defender for Endpoint 中設定條件式存取
 description: 深入瞭解在 Intune、Microsoft Defender Security Center 和 Azure 中執行條件式存取所需的步驟
 keywords: 條件式存取、條件化、存取、裝置風險、風險層級、整合、intune 整合
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0185d7875ac149909ef088d041383a1cf36a8a3a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 482f86d4a0a181b72a0a33eeb1a857dce0664584
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165858"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893646"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定條件式存取
 
@@ -31,7 +31,7 @@ ms.locfileid: "51165858"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 本節會引導您完成所有必須執行的步驟，才能正確地執行條件式存取。
 
@@ -79,7 +79,7 @@ ms.locfileid: "51165858"
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
 2. 選取 [**裝置規範**] [  >  **Microsoft Defender ATP**]。
 3. 將 **[連線 Windows 10.0.15063 + 裝置至 Microsoft Defender 高級威脅防護]** 設定為 [ **開啟**]。
-4. 按一下 **[儲存]**。
+4. 按一下 [儲存]。
 
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>步驟3：在 Intune 中建立相容性原則
@@ -116,4 +116,4 @@ ms.locfileid: "51165858"
 
 如需詳細資訊，請參閱 [在 Intune 中使用條件式存取啟用 Microsoft DEFENDER ATP](https://docs.microsoft.com/intune/advanced-threat-protection)。
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

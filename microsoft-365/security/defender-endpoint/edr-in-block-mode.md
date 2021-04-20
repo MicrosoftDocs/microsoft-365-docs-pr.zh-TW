@@ -1,7 +1,7 @@
 ---
 title: 封鎖模式中的端點偵測和回應
 description: 深入瞭解封鎖模式中的端點偵測和回應
-keywords: Microsoft Defender ATP，mde，EDR in 組塊模式，被動模式封鎖
+keywords: Microsoft Defender for Endpoint，mde，EDR in 封鎖模式，被動模式封鎖
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: a2fbb8f1b48dacb27468f8f088f5000da9fcb3b9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587200"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893562"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>封鎖模式中的端點偵測和回應 (EDR) 
 
@@ -35,7 +35,7 @@ ms.locfileid: "51587200"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>什麼是區塊模式中的 EDR？
 
@@ -140,5 +140,5 @@ ms.locfileid: "51587200"
 
 - [技術社區博客：在封鎖模式中引入 EDR：在其蹤跡中停止攻擊](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [行為封鎖和包含專案](behavioral-blocking-containment.md)
-- [更好搭配： Microsoft Defender 防病毒和 Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
+- [相得益彰：Microsoft Defender 防毒軟體與適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

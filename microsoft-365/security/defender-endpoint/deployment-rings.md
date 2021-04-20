@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d34b984436b3ed0537af2eebcd8475ec270cd8e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165786"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893482"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在環中部署 Microsoft Defender for Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165786"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 您可以使用以環為基礎的部署方法來部署 Microsoft Defender for Endpoint。 
 
@@ -75,7 +75,7 @@ Evaluate | Ring 1：識別試驗測試的50系統
 
 
 ### <a name="pilot"></a>試驗
-Microsoft Defender ATP 支援各種端點，您可以在服務上架。 在此震鈴中，根據您所定義的允出準則，識別多個裝置，並決定繼續進行下一個部署環。
+Microsoft Defender for Endpoint 支援您可以在服務上架的各種端點。 在此震鈴中，根據您所定義的允出準則，識別多個裝置，並決定繼續進行下一個部署環。
 
 下表顯示支援的端點，以及您可以用於板載裝置裝置至服務的對應工具。 
 
@@ -94,11 +94,11 @@ Microsoft Defender ATP 支援各種端點，您可以在服務上架。 在此�
 在此階段中，您可以使用 [計畫部署](deployment-strategy.md) 材料來協助您規劃部署。 
 
 
-使用下列材料，選取最適合您組織的 Microsoft Defender ATP 架構。
+使用下列材料，為最適合您組織的端點架構選取適當的 Microsoft Defender。
 
-|**項目**|**描述**|
+|**Item**|**描述**|
 |:-----|:-----|
-|[![Microsoft Defender ATP 部署策略的縮圖](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | 架構材料可協助您規劃下列架構的部署： <ul><li> 雲端-原生 </li><li> 共同管理 </li><li> 內部部署</li><li>評估與本機上架</li>
+|[![Microsoft Defender for Endpoint 部署策略的縮圖影像](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | 架構材料可協助您規劃下列架構的部署： <ul><li> 雲端-原生 </li><li> 共同管理 </li><li> 內部部署</li><li>評估與本機上架</li>
 
 
 

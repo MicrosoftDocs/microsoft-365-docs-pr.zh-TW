@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4de1d173a26005d32fb07117d93ee78582b77d54
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b2976fc643eb433039d9595bc8e9632fd8cb60ea
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689206"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893470"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
@@ -77,7 +77,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
+### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
 在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 在 [Microsoft 受管理的桌面裝置] 工作區中，選取 [ **+ 註冊裝置**]，這會開啟飛入以註冊新裝置。
 

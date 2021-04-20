@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4f3b2b54370e3481699a540dd8fd2acc30be7514
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 84caa39b44a4e0706b1fe4a103d8a8a14c52daed
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768875"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892954"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>疑難排解 Microsoft Defender 的端點上架問題
 
@@ -35,7 +35,7 @@ ms.locfileid: "51768875"
 - Windows Server 2016
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 如果您遇到問題，您可能需要對 Microsoft Defender for Endpoint 上架進行疑難排解。
 此頁面提供疑難排解在使用裝置上可能發生的其中一個部署工具和常見錯誤進行部署時，可能會發生之上架問題的詳細步驟。
@@ -255,7 +255,7 @@ Windows Defender ATP 感應器需要 Microsoft Windows HTTP (WinHTTP) 報告感�
 
 WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用程式，而且必須能夠偵測出您的特定環境中提供的 proxy 伺服器。
 
-若要確定感應器具有服務連線能力，請遵循 [驗證用戶端連線至 Microsoft Defender For Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls) 主題中所述的步驟。
+若要確定感應器具有服務連線能力，請遵循 [驗證用戶端連線至 Microsoft Defender For Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) 主題中所述的步驟。
 
 若驗證失敗，且您的環境使用 proxy 來連線至網際網路，請遵循 [設定 proxy 和網際網路連線設定](configure-proxy-internet.md) 主題中所述的步驟。
 

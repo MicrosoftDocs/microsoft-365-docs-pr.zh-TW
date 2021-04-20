@@ -1,6 +1,6 @@
 ---
 title: 板載非 Windows 裝置至 Microsoft Defender for Endpoint service
-description: 設定非 Windows 裝置，使其可將感應器資料傳送至 Microsoft Defender ATP 服務。
+description: 設定非 Windows 裝置，使其可將感應器資料傳送至 Microsoft Defender for Endpoint service。
 keywords: 板載非 Windows 裝置，macos，linux，裝置管理，設定 Windows ATP 裝置，設定 Microsoft Defender for Endpoint 裝置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71f230f557792d75659dc4dbfc5911811514d5ea
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: c78779cd4a8a329864b6ac7e0debfc30ca0b3a56
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687874"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893586"
 ---
 # <a name="onboard-non-windows-devices"></a>將非 Windows 裝置上線
 
@@ -36,7 +36,7 @@ ms.locfileid: "51687874"
 - macOS
 - Linux
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
 Defender for Endpoint 提供 Windows 和非 Windows 平臺的集中式安全性作業體驗。 您可以在 Microsoft Defender Security Center 中查看不同支援作業系統 (OS) 中的警示，並更好地保護組織的網路。 
 
@@ -48,7 +48,7 @@ Defender for Endpoint 提供 Windows 和非 Windows 平臺的集中式安全性�
 您必須對板載非 Windows 裝置採取下列步驟：
 1. 選取您慣用的上架方式：
 
-   - 若為 macOS 裝置，您可以選擇透過 Microsoft Defender ATP 或透過協力廠商解決方案進行板載。 如需詳細資訊，請參閱 [Microsoft Defender For Mac 的 Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
+   - 若為 macOS 裝置，您可以選擇透過 Microsoft Defender for Endpoint 或協力廠商解決方案來進行板載。 如需詳細資訊，請參閱 [Microsoft Defender For Mac 的 Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
 
    - 如果是其他非 Windows 裝置，請 **透過協力廠商整合選擇板載非 Windows 裝置**。   
     1. 在功能窗格中，選取 [**互通性**  >  **夥伴**]。 請確定已列出協力廠商解決方案。

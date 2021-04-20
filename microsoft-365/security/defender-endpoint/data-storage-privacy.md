@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint data storage and 隱私權
 description: 瞭解 Microsoft Defender for Endpoint 如何處理隱私權和其收集的資料。
-keywords: Microsoft Defender for Endpoint，Microsoft Defender ATP，data storage and 隱私權，storage，隱私權，授權，地理位置，資料保留，資料
+keywords: Microsoft Defender for endpoint，Microsoft Defender for Endpoint，data storage and 隱私權，storage，隱私權，授權，地理位置，資料保留，資料
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e19c64c01c892a8a5f47f5892882feab1242f897
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 2b191c4a24ce170d23fc3d9e43293cc7bbe59e80
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644485"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892814"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint data storage and 隱私權
 
@@ -31,7 +31,7 @@ ms.locfileid: "51644485"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 本節涵蓋一些有關隱私權和用於 Defender 的資料處理的最常見常見問題。
 > [!NOTE]
@@ -86,7 +86,7 @@ Microsoft 不會使用您的資料進行廣告。
 
 
 ## <a name="is-data-shared-with-other-customers"></a>資料是否與其他客戶共用？
-否。 客戶資料會與其他客戶隔離，而且不會共用。 不過，Microsoft 處理所產生的資料或不包含任何客戶特有資料的深入資訊，可能會與其他客戶共用。 每個客戶只能存取來自其自身組織的資料，以及 Microsoft 所提供的一般資料。
+不對。 客戶資料會與其他客戶隔離，而且不會共用。 不過，Microsoft 處理所產生的資料或不包含任何客戶特有資料的深入資訊，可能會與其他客戶共用。 每個客戶只能存取來自其自身組織的資料，以及 Microsoft 所提供的一般資料。
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft 將資料儲存多久？ 什麼是 Microsoft 的資料保留原則？
 **在服務上架**<br>
@@ -107,4 +107,4 @@ Microsoft 為客戶提供 Microsoft 安全性與合規性計畫的詳細資訊�
 
 如需有關 Defender for Endpoint 認證報告的詳細資訊，請參閱 [Microsoft 信任中心](https://servicetrust.microsoft.com/)。 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-datastorage-belowfoldlink) 
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-datastorage-belowfoldlink) 

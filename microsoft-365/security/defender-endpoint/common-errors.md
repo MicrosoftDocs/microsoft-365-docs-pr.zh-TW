@@ -1,6 +1,6 @@
 ---
-title: 常見的 Microsoft Defender ATP API 錯誤
-description: 包含說明的常見 Microsoft Defender ATP API 錯誤清單。
+title: 常見 Microsoft Defender for Endpoint API 錯誤
+description: 使用說明的常見 Microsoft Defender 的端點 API 錯誤清單。
 keywords: api、mdatp api、錯誤、疑難排解
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ddbbe07bc477ae3a5016feb795b5bad5ed82a30a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4fc2aeb6ee5a95f7eb121abdcf4431dc6d34cd49
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058451"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893458"
 ---
 # <a name="common-rest-api-error-codes"></a>常見的 REST API 錯誤碼
 
@@ -32,9 +32,9 @@ ms.locfileid: "51058451"
 * 郵件是可變更的普通文字。
 * 在頁面底部，您可以找到回應範例。
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-錯誤碼 |HTTP 狀態碼 |郵件 
+錯誤碼 |HTTP 狀態碼 |訊息 
 :---|:---|:---
 BadRequest | BadRequest (400)  | 一般錯誤要求錯誤訊息。
 ODataError | BadRequest (400)  | OData URI 查詢無效 () 指定特定錯誤。

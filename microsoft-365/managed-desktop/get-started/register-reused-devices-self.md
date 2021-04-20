@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689218"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893272"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
@@ -136,7 +136,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 將雜湊資料合併到一個 CSV 檔案中，您現在可以繼續 [註冊裝置](#register-devices-by-using-the-admin-portal)。
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
+## <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
 在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 在 [Microsoft 受管理的桌面裝置] 工作區中，選取 [ **+ 註冊裝置**]，這會開啟飛入以註冊新裝置。
 
@@ -165,7 +165,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 | 作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 這也表示使用者經常使用該裝置。 |
 | 非作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 不過，使用者最近尚未使用裝置 (在過去 7 天內)。  | 
 
-#### <a name="troubleshooting-device-registration"></a>針對裝置註冊進行疑難排解
+### <a name="troubleshooting-device-registration"></a>針對裝置註冊進行疑難排解
 
 | 錯誤訊息 | 詳細資料 |
 |---------------|-------------|
@@ -175,13 +175,13 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 | 其他組織所宣告的裝置 | 此裝置已經由其他組織所宣告。 請洽詢您的裝置供應商。 |
 | 未預期的錯誤 | 無法自動處理您的要求。 連絡客戶支援並提供要求識別碼：<requestId> |
 
-### <a name="check-the-image"></a>檢查映像
+## <a name="check-the-image"></a>檢查映像
 
 如果您的裝置來自 Microsoft 受管理的電腦合作夥伴供應商，映射應是正確的。
 
 如果您想要的話，也歡迎您自行套用映像。 若要開始使用，請連絡您的 Microsoft 代表，他們會將映像的位置及其套用步驟提供給您。
 
-### <a name="deliver-the-device"></a>交付裝置
+## <a name="deliver-the-device"></a>交付裝置
 
 > [!IMPORTANT]
 > 將裝置交給使用者之前，請確認您已取得並套用[適合該使用者的授權](../get-ready/prerequisites.md)。

@@ -1,5 +1,5 @@
 ---
-title: 透過群組原則將 Windows 10 裝置集成至 Microsoft Defender ATP
+title: 透過群組原則將 Windows 10 裝置集成至 Microsoft Defender for Endpoint
 description: 使用群組原則在 Windows 10 裝置上部署設定套件，使其可架至服務。
 keywords: 使用群組原則、裝置管理、設定 Windows ATP 裝置、板載 Microsoft Defender for Endpoint 裝置及群組原則來設定裝置
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: fc4b17ef96e85d3bacd4e83c2de3f4bb7fbfa5c3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166165"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893625"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用群組原則的板載 Windows 10 裝置 
 
@@ -34,7 +34,7 @@ ms.locfileid: "51166165"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 
 > [!NOTE]
@@ -42,7 +42,7 @@ ms.locfileid: "51166165"
 > 
 > 若為 Windows Server 2019，您可能需要使用「群組原則」偏好建立之 XML 檔案的 NT AUTHORITY\SYSTEM 取代 NT AUTHORITY\Well-Known-System-Account。
 
-## <a name="onboard-devices-using-group-policy"></a>使用群組原則的板載裝置
+## <a name="onboard-devices-using-group-policy"></a>使用群組原則將裝置上線
 
 [![顯示各種部署路徑的 PDF 影像](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
@@ -148,7 +148,7 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 
 原則 | 設定 
 :---|:---
-關閉即時保護|停用
+關閉即時保護|已停用
 開啟行為監控|Enabled
 掃描所有已下載的檔案和附件|Enabled
 監視電腦上的檔案和程式活動|Enabled

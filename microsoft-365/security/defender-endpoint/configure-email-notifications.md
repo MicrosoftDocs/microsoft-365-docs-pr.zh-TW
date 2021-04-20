@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中設定警示通知
 description: 您可以使用 Microsoft Defender for Endpoint，根據嚴重性和其他準則，設定安全性警示的電子郵件通知設定。
-keywords: 電子郵件通知，設定警示通知，microsoft defender atp 通知，microsoft defender atp 警示，windows 10 企業版，windows 10 教育版
+keywords: 電子郵件通知，設定警示通知，microsoft defender for endpoint，microsoft defender for endpoint 通知，microsoft defender for endpoint alert，windows 10 企業版，windows 10 教育版
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b629d6a90931026ce28ce241e74d490ce67c6962
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687886"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893623"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定警示通知
 
@@ -31,7 +31,7 @@ ms.locfileid: "51687886"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 您可以將 Defender for Endpoint 設定為將電子郵件通知傳送給指定的收件者，以取得新的提醒。 這項功能可讓您找出會立即獲得通知的個人群組，並根據其嚴重性採取行動。
 

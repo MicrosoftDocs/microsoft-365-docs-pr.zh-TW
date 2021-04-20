@@ -1,6 +1,6 @@
 ---
 title: 上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
-description: 在虛擬桌面基礎結構上部署設定套件 (VDI) 裝置，使其架至 Microsoft Defender ATP 服務。
+description: 在虛擬桌面基礎結構上部署設定套件， (VDI) 裝置，使其架至 Microsoft Defender for Endpoint service。
 keywords: 設定虛擬桌面基礎結構 (VDI) 裝置，VDI，裝置管理，設定 Windows ATP 端點，設定 Microsoft Defender for Endpoint 端點
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 1e970be7967e221c29017be804a98770a778654f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445283"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892790"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
 
@@ -34,7 +34,7 @@ ms.locfileid: "51445283"
 - 虛擬桌面基礎結構 (VDI) 裝置
 - Windows 10，Windows Server 2019，Windows Server Nm-winserver-2008r2-2nd/2012R2/2016
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
 

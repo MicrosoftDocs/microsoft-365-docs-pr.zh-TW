@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 131b9970572b1034ba5c9907a001f0497d450339
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 8e179135f12ad6f4ea765eaf975a40534446b51f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765440"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893386"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender 防毒程式相容性
 
@@ -60,7 +60,7 @@ Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的�
 
 如果您使用的是 Windows Server、版本1803或更新版本，或 Windows Server 2019，您可以設定下列登錄機碼，將 Microsoft Defender 防毒軟體設定為被動模式：
 - 路徑： `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- 名稱：`ForcePassiveMode`
+- 名稱：`ForceDefenderPassiveMode`
 - 類型： `REG_DWORD`
 - 值：`1`
 
@@ -125,7 +125,7 @@ Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的�
 ## <a name="see-also"></a>另請參閱
 
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
-- [Windows Server 上的 Microsoft Defender 防病毒](microsoft-defender-antivirus-on-windows-server.md)
+- [Windows Server 上的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-on-windows-server.md)
 - [封鎖模式中的 EDR](edr-in-block-mode.md)
 - [設定 Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 - [解決適用於端點的 Microsoft Defender 中的誤判](defender-endpoint-false-positives-negatives.md)

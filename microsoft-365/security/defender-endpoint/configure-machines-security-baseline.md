@@ -1,7 +1,7 @@
 ---
-title: 將合規性提升至 Microsoft Defender ATP 安全性基準
-description: Microsoft Defender ATP 安全性基準會設定 Microsoft Defender ATP 安全性控制，以提供最佳防護。
-keywords: Intune management，MDATP，WDATP，Microsoft Defender，高級威脅防護 ASR，安全性基準
+title: 將合規性提升至 Microsoft Defender for Endpoint security 基準
+description: Microsoft Defender for Endpoint security 基準會設定安全性控制，以提供最佳防護。
+keywords: Intune management，MDATP，WDATP，MDE，Microsoft Defender for Endpoint，advanced 威脅防護 ASR，安全性基準
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74073441ad7be89e0af278ff1e371133251b5ea7
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 19a2276955b253a23ee1552a3f1d4d0345dfe247
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163396"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893538"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>將合規性提升至 Microsoft Defender for Endpoint security 基準
 
@@ -31,7 +31,7 @@ ms.locfileid: "51163396"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 安全性基準可確保根據安全性專家和專家 Windows 系統管理員的指導方針來設定安全性功能。 當部署時，用於端點安全性基準的 Defender 會將 Defender 設定為端點安全性控制，以提供最佳防護。
 
@@ -41,11 +41,11 @@ ms.locfileid: "51163396"
 - [將裝置註冊到 Intune 管理](configure-machines.md#enroll-devices-to-intune-management)
 - [確定您具備必要的許可權](configure-machines.md#obtain-required-permissions)
 
-## <a name="compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines"></a>比較 Microsoft Defender ATP 與 Windows Intune 安全性基準
+## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>比較 Microsoft Defender for Endpoint 和 Windows Intune 安全性基準
 Windows Intune 安全性基準提供一組完整的建議設定，以安全地設定執行 Windows 的裝置，包括瀏覽器設定、PowerShell 設定，以及 Microsoft Defender 防病毒等某些安全性功能的設定。 相反地，「終結點」基準會提供設定，以優化 Defender for Endpoint 堆疊中所有的安全性控制，包括端點偵測和回應 (EDR) 的設定，以及 Windows Intune 安全性基準中也會找到的設定。 如需每個基準的詳細資訊，請參閱：
 
 - [Intune 的 Windows 安全性基準設定](https://docs.microsoft.com/intune/security-baseline-settings-windows)
-- [Intune 的 Microsoft Defender ATP 基準設定](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
+- [Intune 的 Microsoft Defender 端點基準設定](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
 理想狀況下，架 to Defender for Endpoint 的裝置會同時部署這兩種基準： Windows Intune 安全性基準，最初為安全的 Windows，而在最上層的 Defender for Endpoint security 基準會以最優化方式設定 Defender for Endpoint security 控制項。 若要受益于風險和威脅的最新資料，並在比較基準演變時盡可能減少衝突，請在發行所有產品時，隨時套用最新的基準版本。
 
@@ -104,9 +104,9 @@ Windows Intune 安全性基準提供一組完整的建議設定，以安全地�
 >[!TIP]
 >Intune 上的安全性基準可讓您輕鬆地保護裝置，並保護您的裝置。 [深入瞭解 Intune 上的安全性基準](https://docs.microsoft.com/intune/security-baselines)。
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>相關主題
-- [確定您的裝置設定正確](configure-machines.md)
+- [確保您的裝置已正確設定](configure-machines.md)
 - [取得架至 Microsoft Defender for Endpoint 的裝置](configure-machines-onboarding.md)
 - [優化 ASR 規則的部署和偵測](configure-machines-asr.md)

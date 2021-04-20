@@ -1,7 +1,7 @@
 ---
-title: 成為 Microsoft Defender for Endpoint partner
+title: 成為適用於端點的 Microsoft Defender 合作夥伴
 ms.reviewer: ''
-description: 深入瞭解使用 Microsoft Defender ATP 整合解決方案的步驟和需求，並成為合作夥伴
+description: 深入瞭解整合解決方案與 Microsoft Defender for Endpoint 的步驟和需求，並提供合作夥伴
 keywords: partner，integration，方案驗證，認證，需求，成員，misa，應用程式入口網站
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: ea7ebe1656c0173395df158b8f934ab388bea4ba
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35ba1fe85fa9b62770142636d46303b37534b976
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058352"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893314"
 ---
-# <a name="become-a-microsoft-defender-for-endpoint-partner"></a>成為 Microsoft Defender for Endpoint partner
+# <a name="become-a-microsoft-defender-for-endpoint-partner"></a>成為適用於端點的 Microsoft Defender 合作夥伴
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "51058352"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 若要成為 Defender for Endpoint solution partner，您必須遵循並完成下列步驟。
 

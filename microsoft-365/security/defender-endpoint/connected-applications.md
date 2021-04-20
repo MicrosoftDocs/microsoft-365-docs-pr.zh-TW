@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP 中已連線的應用程式
+title: Microsoft Defender for Endpoint 中連線的應用程式
 ms.reviewer: ''
-description: View 使用 standard OAuth 2.0 通訊協定的已連接夥伴應用程式，以進行驗證，並提供標記以搭配 Microsoft Defender ATP APIs 使用。
+description: View 使用 standard OAuth 2.0 通訊協定的已連接夥伴應用程式，以進行驗證，並提供標記以搭配 Microsoft Defender for Endpoint APIs 使用。
 keywords: 合作夥伴、應用程式、協力廠商、連接、sentinelone、注意、bitdefender、corrata、morphisec、paloalto、ziften、更佳行動裝置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 294d6cfa5f8bf6b883c37e527cb492e8d65fc94c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 26c531c0544f92d664bfa0f1a21e4f33a0765d24
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163596"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893494"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中連線的應用程式
 
@@ -33,7 +33,7 @@ ms.locfileid: "51163596"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 連接的應用程式會使用 APIs 與使用 Defender 的端點平臺整合。 
 

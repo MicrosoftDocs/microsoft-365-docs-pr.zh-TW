@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ead616b7af3df05f4c0c5755ad779f0251555734
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059535"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893434"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評估實驗室
 
@@ -32,7 +32,7 @@ ms.locfileid: "51059535"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
 進行完整的安全性產品評估可能是複雜的程式，需要很繁瑣的環境和裝置設定，才能實際執行端對端的攻擊模擬。 新增至複雜性是追蹤評估期間反映類比活動、警示和結果的難度。
@@ -65,7 +65,7 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 
 如需詳細資訊，請參閱 [Create and manage roles](user-roles.md)。
 
-想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
+想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
 
 
 ## <a name="get-started-with-the-lab"></a>開始使用實驗室
@@ -74,10 +74,10 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 ![功能表上評估實驗室的影像](images/evaluation-lab-menu.png)
 
 >[!NOTE]
->- 每個環境都配有一組有限的測試裝置。
 >- 視您所選取的環境結構類型而定，裝置會在啟用後的指定時數內使用。
->- 當您已使用已布建的裝置時，不會提供任何新裝置。 已刪除的裝置不會重新整理可用的測試裝置計數。
->- 由於資源有限，建議您謹慎使用裝置。
+>- 每個環境都配有一組有限的測試裝置。 當您已使用已布建的裝置時，不會提供任何新裝置。 已刪除的裝置不會重新整理可用的測試裝置計數。
+>- 當資源已使用中時，您將無法再使用實驗。 它不會重設或重新整理。
+>- 建議您謹慎使用資源。實驗室資源有限。 它們不會重設或重新整理。 
 
 已經有實驗室？ 請務必啟用新的威脅模擬器，並具有作用中裝置。
 
@@ -122,10 +122,10 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 
 在測試裝置中預先設定下列安全性元件：
 
-- [受攻擊面縮小](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [攻擊面縮減](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 - [第一次看到的封鎖](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 - [受控資料夾存取權](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [入侵防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
 - [網路保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
 - [可能有害的應用程式偵測](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [雲端提供的保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
