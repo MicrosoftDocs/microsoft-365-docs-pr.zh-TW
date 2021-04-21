@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7d13da6abfb2cd6c829b6fd04fdf94de8cd20b8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186866"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903115"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>使用 SIEM REST API 拉入 Microsoft Defender for Endpoint 偵測
 
@@ -32,7 +32,7 @@ ms.locfileid: "51186866"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -111,7 +111,7 @@ resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80
 GET| 使用適用于您所在地區的 URI。 <br><br> **對於歐盟**： `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **我們**： `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> 若 **為 UK**：`https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
 ### <a name="request-header"></a>要求標頭
-Header | 類型 | 描述|
+頁首 | 類型 | 描述|
 :--|:--|:--
 授權 | string | 必要。 表單 **持有** 者權杖中的 Azure AD 存取權杖 &lt;  &gt; 。 |
 
@@ -125,7 +125,7 @@ sinceTimeUtc | DateTime | 根據欄位，定義從下列位置檢索的綁定警
 untilTimeUtc | DateTime | 定義要檢索的上限時間限制。 <br> 時間範圍將會是：開始時間 `sinceTimeUtc` `untilTimeUtc` 。 <br><br> **附注**：如果未指定，預設值將會是目前的時間。
 前 | string | 在下列時間範圍內拉入警示：「開始 `(current_time - ago)` `current_time` 時間。 <br><br> 值應該根據 **ISO 8601** 的持續時間格式設定 <br> 範例： `ago=PT10M` 會在過去10分鐘內提取接收到的提醒。
 限制 | int | 會定義要檢索的提醒數目。 會根據定義的數目來檢索最新的警示。<br><br> **附注**：如果未指定，則會檢索時間範圍內的所有可用警示。
-machinegroups | string | 指定要從中接收警示的裝置群組。 <br><br> **附注**：如果未指定，則會從所有裝置群組中檢索警示。 <br><br> 範例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+machinegroups | string | 指定要從中接收警示的裝置群組。 <br><br> **附注**：如果未指定，則會從所有裝置群組中檢索警示。 <br><br> 範例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | string | 登錄中的單一裝置標記。
 CloudCreatedMachineTags | string | 在 Microsoft Defender Security Center 中建立的裝置標記。
 
@@ -339,4 +339,4 @@ HTTP 錯誤碼 | 描述
 - [設定 ArcSight 以拉入 Microsoft Defender for Endpoint 偵測](configure-arcsight.md)
 - [向 SIEM 工具提取偵測](configure-siem.md)
 - [Microsoft Defender for Endpoint 偵測欄位](api-portal-mapping.md)
-- [疑難排解 SIEM 工具整合問題](troubleshoot-siem.md)
+- [為 SIEM 工具整合問題疑難排解](troubleshoot-siem.md)

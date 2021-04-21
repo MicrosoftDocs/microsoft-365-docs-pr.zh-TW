@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何停止自動轉送電子郵件。
-ms.openlocfilehash: b6715cfdf8622521d977e0746cb9a340a8f70a5c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f8bd599c7c8bca8d4789188acbcd3574b7473dcb
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578600"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903679"
 ---
 # <a name="stop-email-auto-forward"></a>停止電子郵件自動轉寄
 
@@ -47,3 +47,7 @@ ms.locfileid: "51578600"
 1. 向下並選取 [ **儲存**]。
 
     您的規則已經建立，駭客也無法再自動轉寄郵件。
+
+## <a name="related-content"></a>相關內容
+
+[新增另一個使用者的電子郵件別名](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) (篇文章) [設定 Microsoft 365 中的電子郵件](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) 轉寄 (本文) [尋找及修正電子郵件傳遞問題為商務系統管理員的 Office 365](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) (文章) 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在 Microsoft 小組中以來賓的身分加入團隊。
-ms.openlocfilehash: 9e60882907021c11d906ce9cd778a0f1eef32beb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578852"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903715"
 ---
 # <a name="join-a-team-as-a-guest"></a>以來賓身分加入團隊
 
@@ -48,3 +48,7 @@ ms.locfileid: "51578852"
 
 1. 只需開啟「Microsoft 團隊」應用程式，然後選擇  **[是]**  切換至受邀的團隊。  現在，您可以在團隊中的專案上進行共同作業。
 2. 若要切換回公司的小組，請從  **組織**  下拉式清單中選取。
+
+## <a name="related-content"></a>相關內容
+
+[在團隊中的來賓經驗](https://docs.microsoft.com/microsoftteams/guest-experience) (文章) [管理組織的 Microsoft 團隊設定](https://docs.microsoft.com/microsoftteams/enable-features-office-365) (文章) [使用 Guest access 和外部存取與組織外部人員進行共同](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) 作業 (文章) 

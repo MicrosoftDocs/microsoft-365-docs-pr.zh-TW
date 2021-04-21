@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 01b3310f5f822f3f6f38bf4d9e727d41fe2b179b
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760107"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904067"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva 主題中的主題中心概述
 
@@ -73,9 +73,9 @@ ms.locfileid: "51760107"
 若要在主題中心的 [ **管理主題** ] 區段中運作，您必須具有「知識管理員」角色所需的「管理」主題許可權。 您的系統管理員可以在 [知識管理安裝](set-up-topic-experiences.md)期間將這些許可權指派給使用者，或使用 Microsoft 365 系統管理中心，以系統管理員 [身分新增新](topic-experiences-knowledge-rules.md) 的使用者。
 
 在 [管理主題] 頁面上，主題儀表板會顯示您可以從指定的來源位置識別的所有主題（您可以存取）。 每個主題都會顯示已探索該主題的日期。 已獲指派「管理主題」許可權的使用者可以查看未確認的主題，並選擇：
-- 確認主題：針對存取主題相關檔案及頁面的使用者，強調主題，並讓他們看到相關聯的主題卡片和主題頁面。
+- 確認主題：向使用者指出 AI 建議的主題已由人體 curator 驗證。 
 - 發佈主題：編輯主題資訊以提升最初識別主題的品質，並將主題重點放至所有具有「查看」主題存取權的使用者。 
-- 拒絕主題：讓使用者無法使用主題。 將主題移至 [已 **拒絕** ] 索引標籤，並在需要時再確認。 
+- 拒絕主題：讓主題因此給使用者。 將主題移至 [已 **拒絕** ] 索引標籤，並在需要時再確認。 
 
 > [!Note] 
 > 如需管理主題頁面中主題的詳細資訊，請參閱 [管理主題](manage-topics.md) 。

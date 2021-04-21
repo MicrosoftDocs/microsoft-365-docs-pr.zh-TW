@@ -1,6 +1,6 @@
 ---
-title: 使用 Microsoft Defender ATP for Linux 偵測並封鎖可能有害的應用程式
-description: 使用 Microsoft Defender ATP for Linux (PUA) 偵測並封鎖可能有害的應用程式。
+title: 在 Linux 上使用 Microsoft Defender for Endpoint 偵測並封鎖可能有害的應用程式
+description: 在 Linux 上使用 Microsoft Defender for Endpoint (PUA) 偵測並封鎖可能有害的應用程式。
 keywords: microsoft、defender、atp、linux、pua、pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7ac620896bad9adb73308223e28976e219d36d0
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9631fc2eb1cb791f48f107482474d1bb8e2fd62b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687862"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903855"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上使用 Microsoft Defender for Endpoint 偵測並封鎖可能有害的應用程式
 
@@ -33,7 +33,7 @@ ms.locfileid: "51687862"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 在 PUA 中的 Defender for 中，可能有害的應用程式 () 保護功能可偵測並封鎖您網路中端點上的 PUA 檔案。
 

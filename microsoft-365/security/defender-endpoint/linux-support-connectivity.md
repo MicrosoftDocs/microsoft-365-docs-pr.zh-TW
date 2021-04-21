@@ -1,7 +1,7 @@
 ---
-title: 針對適用于 Linux 的 Microsoft Defender ATP 進行 cloud connectivity 問題疑難排解
+title: 針對 Linux 上的 Microsoft Defender for Endpoint 進行 cloud connectivity 問題的疑難排解
 ms.reviewer: ''
-description: 針對適用于 Linux 的 Microsoft Defender ATP 進行 cloud connectivity 問題疑難排解
+description: 針對 Linux 上的 Microsoft Defender for Endpoint 進行 cloud connectivity 問題的疑難排解
 keywords: microsoft，defender，atp，linux，cloud，connectivity，通訊
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d698eb78f354d624d9ab115a8ecd2e0862e607e3
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 985e4c39c60600da892c010b6ee26e9c98bb0611
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688858"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903163"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>針對 Linux 上的 Microsoft Defender for Endpoint 進行 cloud connectivity 問題的疑難排解
 
@@ -33,7 +33,7 @@ ms.locfileid: "51688858"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="run-the-connectivity-test"></a>執行連線測試
 

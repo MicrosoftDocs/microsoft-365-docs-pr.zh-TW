@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 內容共同作業的詳細資訊-人員體驗生產力分數。
-ms.openlocfilehash: dedd39a84580f26e80e5586e07fb64c8a6d35573
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 43a5fbc3b1c4b6227cd29d79bfb0928a3b4b8ac9
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580855"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903319"
 ---
 # <a name="content-collaboration--people-experiences"></a>內容共同作業–人員經驗
 
@@ -49,6 +49,9 @@ ms.locfileid: "51580855"
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>如何計算內容共同作業分數
 
 我們提供主要的洞察力，其中包含組織中內容共同作業的主要度量。 然後，下列所詳述的計分架構用於計算組織的分數。
+
+> [!NOTE]
+> 在2021年4月22日，我們已變更共同作業者度量的計算方式。 這會影響 [主要洞察力](#primary-insight)、檔案共同作業 [功能，以及](#number-of-files-collaborated-on)內容共同作業得分的衡量方式。 這項變更可協助減少非人力代理程式中的資料干擾 (或來自 Microsoft 及其他協力廠商應用程式的 bot) ，進而產生更準確且具可操作性的分數。
 
 ### <a name="primary-insight"></a>主要洞察力
 
@@ -97,14 +100,13 @@ Microsoft OneDrive for Business 及 SharePoint 協助使用者從各種裝置和
 
 ### <a name="scoring-framework"></a>計分架構
 
-組織的內容共同作業分數是在匯總 (組織中) 層級，不論人員是否一致閱讀、建立或共同作業，例如 Word、Excel、PowerPoint、OneNote 或 Pdf; 或是 OneDrive 或 SharePoint 中。
+組織的內容共同作業分數是在合計 () 組織中度量，不論人員是否一致閱讀、建立或共同作業線上 Office 檔案（如 Word、Excel、PowerPoint、OneNote 或 Pdf），或是 OneDrive 或 SharePoint。
 
 在個別使用者層級不提供分數。
 
-
 ## <a name="explore-how-your-organization-collaborates"></a>探索您的組織如何進行通力協作
 
-我們也會提供資訊，協助您深入瞭解您的組織如何對內容進行處理。 這些額外的衡量值不會直接對您的生產力分數產生貢獻，但可協助您建立行動計畫計畫，做為數位轉換的一部分，以協助優化人員的運作方式。
+我們也會提供資訊，協助您深入瞭解您的組織如何對內容進行處理。 這些額外的計量不會直接對您的生產力分數產生貢獻，但可協助您建立行動計畫做為數位轉換的一部分，以協助優化人員的運作方式。
 
 ### <a name="creating-files-in-onedrive-or-sharepoint"></a>在 OneDrive 或 SharePoint 中建立檔案
 
@@ -131,13 +133,13 @@ Microsoft OneDrive for Business 及 SharePoint 協助使用者從各種裝置和
 3. **視覺效果：** 視覺化效果中的分解是表示在電子郵件中附加內容的人員在 OneDrive 或 SharePoint 上使用不同模式 (檔案的程度。線上檔的連結;和嵌入在電子郵件) 中的連結：
       - **附加檔案：** 列的藍色 (彩色) 部分和列的分數 (分子/分母) 表示在電子郵件中使用附件的人員百分比。
         - 分子：將檔案附加至最近28天內未儲存至 OneDrive 或 SharePoint 的電子郵件人數。
-        - 分母：分母：在過去28天內，可存取 Exchange 及 OneDrive、SharePoint 或兩者的人員人數。
+        - 分母：在過去28天內，可存取 Exchange 及 OneDrive、SharePoint 或兩者的人員人數。
       - **線上檔的連結：** 列的藍色 (彩色) 部分，而分數線上的分數 (分子/分母) 代表使用附件的人員百分比，以及在電子郵件中附加檔案連結。
         - 分子：附加線上檔案連結的人員人數 (儲存至 OneDrive 或 SharePoint) 于過去28天內的電子郵件。
-        - 分母：分母：能夠存取 Exchange 及 OneDrive、SharePoint 或兩者在過去28天內的人員人數。
+        - 分母：可以存取 Exchange 及 OneDrive、SharePoint 或兩者在過去28天內的人員人數。
       - **在電子郵件中嵌入連結：** 列的藍色 (彩色) 部分，列上的分數表示在電子郵件內嵌入連結的人員百分比。
         - 分子：將電子郵件中的連結嵌入至線上檔案的人員人數 (儲存至 OneDrive 或 SharePoint 在過去28天內) 。
-        - 分母：分母：能夠存取 Exchange 及 OneDrive、SharePoint 或兩者在過去28天內的人員人數。
+        - 分母：可以存取 Exchange 及 OneDrive、SharePoint 或兩者在過去28天內的人員人數。
 4. **資源連結：** 選取此連結可查看 [說明] 內容。
 
 ### <a name="sharing-of-online-files"></a>線上檔共用
@@ -159,21 +161,21 @@ Microsoft OneDrive for Business 及 SharePoint 協助使用者從各種裝置和
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="圖表顯示最具共同合作的檔案數目。":::
 
-1. **標頭：** 這會強調可以存取 OneDrive 或 SharePoint 誰在4個以上的檔案上合作的人員所占的百分比。
-2. **Body：** 這會提供人員如何利用線上檔案以改善共同作業的相關資訊。
-3. **視覺效果：** 這會根據共同作業的檔案數目，顯示有權存取 OneDrive 或 SharePoint 的人員的散佈。 這會透過下列4個類別進行顯示 (每個欄的藍色部分，分數代表可存取 OneDrive 或 SharePoint 屬於該類別的人員的百分比) ：
+1. **標頭：** 會強調有權存取 OneDrive 或 SharePoint 誰在4個以上的檔案上進行共同作業的人員所占的百分比。
+2. **Body：** 提供人員如何利用線上檔案以改善共同作業的相關資訊。
+3. **視覺效果：** 根據共同作業的檔案數目，顯示有權存取 OneDrive 或 SharePoint 的人員的散佈。 這會透過下列4個類別進行顯示 (每個欄的藍色部分，分數代表可存取 OneDrive 或 SharePoint 屬於該類別的人員的百分比) ：
       - **無共同作業：**
-        - **分子：** 過去28天內，未在任何檔案上進行共同作業的人員人數
-        - **分母：** 可以存取 OneDrive 或 SharePoint 至少前28天之1天的人員總數。
+        - 分子：過去28天內，未在任何檔案上共同作業的人員人數。
+        - 分母：能夠存取 OneDrive 或 SharePoint 至少一天28天之人員的總人員人數。
       - **1-3 檔上的共同作業：**
-        - **分子：** 過去28天內，在1-3 檔案上共同作業的人員人數。
-        - **分母：** 在過去28天內，至少有一個人能夠存取 OneDrive 或 SharePoint 的人員總數。
+        - 分子：過去28天內，在1-3 檔案上共同作業的人員人數。
+        - 分母：在過去28天內，至少有一個人能夠存取 OneDrive 或 SharePoint 的人員總數。
       - **4-10 檔上的共同作業：**
-        - **分子：** 過去28天內，在4-10 檔案上共同作業的人員人數
-        - **分母：** 在過去28天內，至少有一則可以存取 OneDrive 或 SharePoint 之人員的總數。
+        - 分子：過去28天內，在4-10 檔案上共同作業的人員人數。
+        - 分母：在過去28天內，至少有一個人能夠存取 OneDrive 或 SharePoint 的人員總數。
       - **11或以上檔案共同作業：**
-        - **分子：** 過去28天內，在11個以上的檔案上共同作業的人員人數
-        - **分母：** 在過去28天內，至少有一個人能夠存取 OneDrive 或 SharePoint 的人員總數。
+        - 分子：過去28天內，已在11個以上的檔案上共同作業的人員人數。
+        - 分母：在過去28天內，至少有一個人能夠存取 OneDrive 或 SharePoint 的人員總數。
         
 4. **資源連結：** 選取此連結可查看 [說明] 內容。
 
@@ -183,12 +185,12 @@ Microsoft OneDrive for Business 及 SharePoint 協助使用者從各種裝置和
 
 1. **標頭：** 會強調所有測試的裝置所占的百分比，而這些裝置的網路連線速度 OneDrive 和 SharePoint 都不佳。 
 2. **Body：** 提供有關共同作業效能為何重要的資訊。 
-3. **視覺化效果：** 顯示裝置的百分比與 OneDrive 和 SharePoint 相關的不同網路連線效能。
-      - **81-100 (最佳)**：線條的深綠色 (彩色) 部分代表具有最佳效能的裝置百分比。
-      - **61-80**：紅色) 部分的綠色 (，代表裝置的網路效能分數在60-80 之間的百分比。 
-      - **41-60**：灰色) 部分的橙色 (表示裝置的百分比與40-60 之間的網路效能分數。 
-      - **21-40**：紅色的 (彩色) 部分表示裝置的百分比，其網路效能分數介於20-40 之間。 
-      - **0-20**：黑 red (彩色) 部分會占0-20 的最差網路效能分數。 
+3. **視覺效果：** 顯示與 OneDrive 和 SharePoint 相關之不同網路連線效能層級的裝置百分比：
+      - **81-100 (最佳)**：橫條的深綠色 (彩色) 部分代表具有最佳效能的裝置百分比。
+      - **61-80**：方塊的綠色 (彩色) 部分代表裝置的網路效能分數介於60-80 之間的百分比。 
+      - **41-60**：灰色) 部分的橙色 (，代表網路績效分數介於40-60 之間的裝置百分比。 
+      - **21-40**：紅色的 (彩色) 部分代表裝置的百分比，其網路效能分數為20-40。 
+      - **0-20**：黑 red (彩色) 部分表示裝置的最差網路效能分數為0-20。 
 
 ## <a name="related-content"></a>相關內容
 

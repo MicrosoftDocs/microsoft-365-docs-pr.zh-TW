@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 482f86d4a0a181b72a0a33eeb1a857dce0664584
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893646"
+ms.locfileid: "51903775"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定條件式存取
 
@@ -98,7 +98,7 @@ ms.locfileid: "51893646"
 
 ### <a name="step-4-assign-the-policy"></a>步驟4：指派原則
 1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [ **所有服務**]、[在 **Intune** 上篩選]，然後選取 [ **Microsoft Intune**]。
-2. 選取 **裝置符合性**  >  **原則**> 選取您的 Microsoft Defender ATP 相容性原則。
+2. 選取 **裝置符合性**  >  **原則**> 選取您的 Microsoft Defender for Endpoint 相容性原則。
 3. 選取 [作業 **]**。
 4. 包含或排除 Azure AD 群組，以指派原則。
 5. 若要將原則部署至群組，請選取 [ **儲存**]。 原則所針對的使用者裝置會根據規範評估。
@@ -114,6 +114,6 @@ ms.locfileid: "51893646"
 
 6. 選取 [ **啟用原則**]，然後 **建立** 以儲存變更。
 
-如需詳細資訊，請參閱 [在 Intune 中使用條件式存取啟用 Microsoft DEFENDER ATP](https://docs.microsoft.com/intune/advanced-threat-protection)。
+如需詳細資訊，請參閱 [在 Intune 中強制使用條件式存取的 Microsoft Defender For Endpoint 相容性](https://docs.microsoft.com/intune/advanced-threat-protection)。
 
 >想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

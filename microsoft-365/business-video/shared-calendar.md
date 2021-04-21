@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何建立共用的行事曆。
-ms.openlocfilehash: 8877cce7234890dca5cd83a74c69b93d3b1dcd04
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 684122bcbccd7e8a419cc98eb0d0028c6218141a
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580387"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903691"
 ---
 # <a name="create-a-shared-calendar"></a>建立共用行事曆
 
@@ -40,3 +40,7 @@ ms.locfileid: "51580387"
 1. 從清單中輸入使用者的名稱或選取其名稱，然後選擇 [ **確定]**，以將使用者新增至共用行事曆。
 1. 您現在可以查看您的行事曆和您新增之人員的行事曆。
 1. 若要檢查群組的可用性，請選擇 [ **日** ] 視圖。
+
+## <a name="related-content"></a>相關內容
+
+[在 Outlook 中管理您的行事曆和連絡人](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (文章) [電子郵件](https://docs.microsoft.com/microsoft-365/admin/email/email-collaboration) 共同作業 (文章) [Microsoft 365 系統管理中心的概述](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (文章) 

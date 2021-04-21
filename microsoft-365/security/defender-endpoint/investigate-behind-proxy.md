@@ -1,6 +1,6 @@
 ---
 title: 調查正向 Proxy 背後發生的連線事件。
-description: 瞭解如何在 Microsoft Defender ATP 中透過網路保護使用高級 HTTP 層級監控，它會向實際目標（而非 proxy）進行曲面。
+description: 瞭解如何在 Microsoft Defender for Endpoint 中透過網路保護使用高級 HTTP 層級監視，以呈現真實目標，而非 proxy。
 keywords: proxy，網路保護，轉寄 proxy，網路事件，審核，封鎖，功能變數名稱，網域
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28d8a113ed77e9624bd914571b1af4a7ece2aa5c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 47be07759a72a080a3687ed3bb50cef9d0a959b7
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587560"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904043"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>調查正向 Proxy 背後發生的連線事件。
 
@@ -32,7 +32,7 @@ ms.locfileid: "51587560"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 Defender for Endpoint 支援來自不同網路堆疊層級的網路連線監視。 一個挑戰性的案例是，網路使用轉寄 proxy 做為網際網路的閘道。
 

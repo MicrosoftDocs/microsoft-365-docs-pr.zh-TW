@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender 用於 Linux 資源的 ATP
+title: Linux 資源上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 說明適用于 Linux 的 Microsoft Defender ATP 資源，包括如何卸載，如何收集診斷記錄、CLI 命令和產品的已知問題。
+description: 描述 Linux 上的 Microsoft Defender for Endpoint 的資源，包括如何卸載，如何收集診斷記錄、CLI 命令，以及產品的已知問題。
 keywords: microsoft，defender，atp，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4f2324bc47bdee38e1cdeed1e21b5f9063e9a5c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: de2602bdc94507d27236b939553a6567b2587f36
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587059"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903139"
 ---
 # <a name="resources"></a>資源
 
@@ -34,7 +34,7 @@ ms.locfileid: "51587059"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="collect-diagnostic-information"></a>收集診斷資訊
 

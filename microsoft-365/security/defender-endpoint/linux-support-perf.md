@@ -1,6 +1,6 @@
 ---
-title: 疑難排解 Microsoft Defender for Linux 的效能問題
-description: 疑難排解 Linux 中 Microsoft Defender 端點的效能問題。
+title: 疑難排解 Linux 上 Microsoft Defender for Endpoint 的效能問題
+description: 疑難排解 Linux 上的 Microsoft Defender 端點中的效能問題。
 keywords: microsoft、defender、atp、linux、效能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb43fd383606ab26ba2688ad5704bb7653e82a7f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860336"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903983"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>疑難排解 Linux 上 Microsoft Defender for Endpoint 的效能問題
 
@@ -145,6 +145,6 @@ ms.locfileid: "51860336"
     >[!NOTE]
     > 應用程式會將統計資料儲存在記憶體中，且只會在啟動之後繼續追蹤檔活動，並啟用即時保護。 在即時保護關閉之前或期間所啟動的處理常式不會計算在內。 此外，只會計算觸發掃描的事件。
 
-5. 針對影響效能問題及重新啟用即時保護的處理常式或磁片位置，設定 Microsoft Defender ATP for Linux （含排除專案）。
+5. 針對影響效能問題及重新啟用即時保護的處理常式或磁片位置，在 Linux 上為 Microsoft Defender 端點設定排除專案。
 
-    如需詳細資訊，請參閱 [Configure and Validate Microsoft DEFENDER ATP For Linux](linux-exclusions.md)。
+    如需詳細資訊，請參閱 [Configure and Validate Microsoft Defender For Linux 的排除](linux-exclusions.md)專案。

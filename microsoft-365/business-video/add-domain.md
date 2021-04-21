@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何將另一個網域新增至您的訂閱。
-ms.openlocfilehash: 8899cb9667ffa080746ca9173b61897f9c5db399
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a641005913f7dfd866366f0f8065019dd5c17fe8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578998"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903739"
 ---
 # <a name="add-another-domain"></a>新增另一個網域
 
@@ -53,3 +53,7 @@ ms.locfileid: "51578998"
 1. 輸入使用者名稱，然後從下拉式清單中選擇新的網域。
 1. 選取 [ **儲存變更**]，然後關閉視窗。
 1. 針對應該在新網域接收電子郵件的每位使用者，重複這些步驟。
+
+## <a name="related-content"></a>相關內容
+
+[Add a domain To Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) (本文) [新增 DNS 記錄以連線您的網域](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) (文章) [變更名稱伺服器以設定 Microsoft 365 搭配任何網域註冊機構](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) (文章) [網域常見問題](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (文章) 

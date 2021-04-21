@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 14553f3891fd81a672b62fa0575f6c253fbb0224
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 496ad5695d9cd491817bad5daf3c76a02addefd1
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054607"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904185"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Microsoft 365 Defender APIs 概述
 
@@ -47,6 +47,11 @@ Microsoft 365 Defender 是以整合就緒平臺為基礎。
 - **[跨產品威脅搜尋](api-advanced-hunting.md)** -利用您的安全小組的組織知識，透過建立您自己的自訂查詢，以透過跨多個保護產品所收集的原始資料來進行保護，以尋找損害的跡象。
 
 除了這些 Microsoft 365 Defender 特有的 APIs 之外，其他所有的安全性產品都會公開 [其他 APIs](api-articles.md) ，以協助您利用其獨特的功能。
+
+
+> [!NOTE]
+> 轉換至統一入口網站不應該影響以 Microsoft Defender for Endpoint APIs 為基礎的 PowerBi 儀表板。 不論互動式入口網站轉換的情況為何，您都可以繼續使用現有的 APIs。
+
 
 ## <a name="learn-more"></a>深入了解
 

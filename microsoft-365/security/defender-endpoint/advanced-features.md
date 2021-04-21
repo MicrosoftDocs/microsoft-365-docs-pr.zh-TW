@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698265"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903787"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "51698265"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 根據您使用的 Microsoft 安全產品，有些高級功能可能可讓您將 Defender 與的端點整合。
 
@@ -71,8 +71,7 @@ ms.locfileid: "51698265"
 
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制範圍內裝置群組的關聯
-開啟此設定時，警示會根據其範圍內的裝置群組，與個別的事件相關聯。 依預設，會在整個承租人範圍內進行事件關聯。
-
+這種設定可用於本機 SOC 作業只想要將警示關聯限制為可以存取之裝置群組的情況。 開啟此設定，就不會再視為單一事件，由跨裝置群組的警示所組成的事件。 然後，本機 SOC 便可對該事件採取動作，因為他們有權存取相關的其中一個裝置群組。 不過，全域 SOC 會透過設備群組（而不是一個事件）看到數種不同的事件。 建議您不要開啟此設定，除非這麼做超過整個組織內的事件關聯的優點
 >[!NOTE]
 >變更此設定只會影響未來的警示關聯。
 
@@ -174,7 +173,7 @@ ms.locfileid: "51698265"
 
 > [!NOTE]
 > 適用于 Microsoft 的 Defender for Endpoint 的 Microsoft 威脅專家功能，具有 E5 授權 for [Enterprise 可移動性 + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)。
-## <a name="microsoft-cloud-app-security"></a>Microsoft 雲端 App 安全性
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 啟用此設定時，會將 Defender for Endpoint 信號轉寄至 Microsoft Cloud App Security，以提供 Cloud 應用程式使用狀況的更深入可視性。 轉寄的資料會與您的雲端應用程式安全性資料儲存在相同的位置。
 

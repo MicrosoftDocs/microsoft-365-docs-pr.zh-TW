@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 406a0e699ea563670f41355d122aa54ba8667a0e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 705b1fffbc38282441f66e0dc411cf09699cb3f9
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687742"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903763"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "51687742"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 本主題說明如何在 Mac 上安裝、設定、更新和使用 Defender for Endpoint。
 
@@ -86,6 +86,8 @@ ms.locfileid: "51687742"
 - 磁碟空間：1GB
 
 不支援 Beta 版本的 macOS。
+
+不支援具有 M1 處理器的 macOS 裝置。
 
 在您啟用服務之後，您可能需要設定網路或防火牆，以允許它和您的端點之間的輸出連線。
 

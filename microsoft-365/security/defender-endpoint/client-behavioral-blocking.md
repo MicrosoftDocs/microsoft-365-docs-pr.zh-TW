@@ -1,7 +1,7 @@
 ---
 title: 用戶端行為封鎖
 description: 用戶端行為封鎖是 Microsoft Defender for Endpoint 中行為封鎖和包容功能的一部分
-keywords: 行為封鎖，快速保護，用戶端行為，Microsoft Defender ATP
+keywords: 行為封鎖，快速保護，用戶端行為，Microsoft Defender ATP，microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 9fcff96b2583c6ef6bec05429ec50a71f3872e43
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 48929d0e2b0c932d37cb5d29783712d00b17117f
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587104"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904149"
 ---
 # <a name="client-behavioral-blocking"></a>用戶端行為封鎖
 
@@ -34,7 +34,7 @@ ms.locfileid: "51587104"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>概觀
 

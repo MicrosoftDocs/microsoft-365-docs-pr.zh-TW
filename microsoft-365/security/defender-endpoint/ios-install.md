@@ -1,7 +1,7 @@
 ---
-title: 適用于 iOS 之 Microsoft Defender ATP 的應用程式型部署
+title: 在 iOS 上以應用程式為基礎的 Microsoft Defender for Endpoint 部署
 ms.reviewer: ''
-description: 說明如何使用 app 為 iOS 部署 Microsoft Defender ATP
+description: 說明如何使用應用程式在 iOS 上部署 Microsoft Defender for Endpoint
 keywords: microsoft，defender，atp，ios，應用程式，安裝，部署，卸載，intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6cfd2953e752ed9c96f7f16a3ec7ea1fd8862ab2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 4ddaf8759fa0f2ffb4ed3eb3bb940426dfb3da2c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689734"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904055"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "51689734"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 本主題說明如何在 Intune 公司入口網站註冊裝置上為 iOS 的端點部署 Defender。 如需 Intune 裝置註冊的詳細資訊，請參閱 [在 intune 中註冊 iOS/iPadOS 裝置](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "51689734"
 - 確定已為您的使用者執行 iOS 註冊。 使用者必須具有指派的 Defender for Endpoint 授權，才能將 Defender 用於 iOS。 如需指派授權的相關指示，請參閱 [指派授權給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) 。
 
 > [!NOTE]
-> 現在，您可以在 [Apple 應用程式存放區](https://aka.ms/mdatpiosappstore)中取得 iOS 的 (microsoft Defender 的端點) 的 MICROSOFT defender ATP。
+> 現在，您可以在 [Apple App Store](https://aka.ms/mdatpiosappstore)中使用 iOS 上的 Microsoft Defender for Endpoint。
 
 ## <a name="deployment-steps"></a>部署步驟
 

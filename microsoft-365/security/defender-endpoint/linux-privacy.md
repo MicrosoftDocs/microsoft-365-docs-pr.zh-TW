@@ -1,6 +1,6 @@
 ---
-title: 適用于 Linux 的 Microsoft Defender ATP 隱私權
-description: 隱私權控制，如何設定會影響隱私權的原則設定，以及 Microsoft Defender ATP for Linux 中所收集診斷資料的相關資訊。
+title: Linux 上的 Microsoft Defender for Endpoint 的隱私權
+description: 隱私權控制，如何設定會影響隱私權的原則設定，以及在 Linux 上為端點所收集之診斷資料的相關資訊。
 keywords: microsoft、defender、atp、linux、隱私權、診斷
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaf537c84adaba3d632367567cc569069650d21a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688354"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903247"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的隱私權
 
@@ -31,7 +31,7 @@ ms.locfileid: "51688354"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何在使用 Defender for Linux 時收集和使用資料。
 

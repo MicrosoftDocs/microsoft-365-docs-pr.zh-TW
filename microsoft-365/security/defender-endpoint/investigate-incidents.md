@@ -1,5 +1,5 @@
 ---
-title: 調查 Microsoft Defender ATP 中的事件
+title: 調查 Microsoft Defender for Endpoint 中的事件
 description: 請參閱相關聯的警示、管理事件，以及查看警示中繼資料，以協助您調查事件。
 keywords: 調查、事件、警示、中繼資料、風險、偵測來源、受影響的裝置、模式、關聯性
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a74da55d733d690cb218c78b87b67d6eba6b9d2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1d8f4452273047684a30db3b18d1281f40f46378
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186050"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903295"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>調查 Microsoft Defender for Endpoint 中的事件
 

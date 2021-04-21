@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b191c4a24ce170d23fc3d9e43293cc7bbe59e80
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: dfdfcdcfb8d76f95e3b866f5f95af7efd94ed59e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892814"
+ms.locfileid: "51904125"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint data storage and 隱私權
 
@@ -90,7 +90,7 @@ Microsoft 不會使用您的資料進行廣告。
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft 將資料儲存多久？ 什麼是 Microsoft 的資料保留原則？
 **在服務上架**<br>
-您可以選擇資料的資料保留原則。 這會決定 Windows Defender 端點用來儲存資料的時間長短。 您可以在一個月的範圍內靈活選擇六個月，以滿足公司的法規遵從性需求。
+根據預設，會在180天內保留資料;不過，您可以指定資料的資料保留原則。 這會決定 Windows Defender 端點用來儲存資料的時間長短。 您可以在一個月的範圍內靈活選擇六個月，以滿足公司的法規遵從性需求。
 
 **合同終止或到期**<br>
 您的資料將會保留，並可供您使用，但授權是在寬限期間或暫留模式下。 在此期間結束時，將會從 Microsoft 系統中清除該資料，使其無法復原，不得超過180天的合約終止或到期時間。

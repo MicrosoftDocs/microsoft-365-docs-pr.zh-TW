@@ -1,7 +1,7 @@
 ---
-title: 疑難排解適用于 Linux 的 Microsoft Defender ATP 安裝問題
+title: 疑難排解 Linux 上 Microsoft Defender for Endpoint 的安裝問題
 ms.reviewer: ''
-description: 疑難排解適用于 Linux 的 Microsoft Defender ATP 安裝問題
+description: 疑難排解 Linux 上 Microsoft Defender for Endpoint 的安裝問題
 keywords: microsoft、defender、atp、linux、安裝
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 347528def6929dde200249cd9710f7ce33484c7f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 270ad1145308aaa2af703cda84307a4a96097a53
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688810"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903127"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>疑難排解 Linux 上 Microsoft Defender for Endpoint 的安裝問題
 
@@ -34,7 +34,7 @@ ms.locfileid: "51688810"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="verify-if-installation-succeeded"></a>確認安裝是否成功
 

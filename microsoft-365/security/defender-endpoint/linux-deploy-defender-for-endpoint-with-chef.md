@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 362222e4737b1a8dd6b8a0a284bf3bfb1903c288
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: aa699aae24b1e6383f5a2afbe7fce31e0f53805c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861441"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903925"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>使用 Chef 在 Linux 上部署用於端點的 Defender
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>使用 Chef 在 Linux 上部署適用於端點的 Defender
 
 開始之前：
 
@@ -110,7 +110,7 @@ end
 
 請務必將路徑名稱更新為上架檔案的位置。
 若要測試在 Chef 工作站上部署它，只要執行 ``sudo chef-client -z -o mdatp`` 。
-部署之後，您應該考慮根據  [設定 Microsoft DEFENDER ATP For Linux-Windows 安全性 | 中的設定，建立及部署設定檔至伺服器。Microsoft](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences)檔。  
+部署之後，您應該考慮根據  [Linux 上 Microsoft Defender For Endpoint 的設定偏好](/linux-preferences.md)，針對伺服器建立及部署設定檔。  
 在您建立及測試您的設定檔之後，您可以將它放在您也放置該上架套件的 [菜譜/mdatp/files] 資料夾中。  然後，您可以在 mdatp/recipies 資料夾中建立 settings_mdatp rb 檔案，並新增此文字：
 
 ```powershell

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 220e4e6546899dd00f3a02bf83039a928be4f8dc
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bfc8724f8dc27aa2475c293e7370488b2ea392b8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498852"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903751"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
@@ -178,6 +178,9 @@ DeviceEvents
 
 ## <a name="manage-existing-custom-detection-rules"></a>管理現有的自訂偵測規則
 您可以查看現有的自訂偵測規則清單，檢查其先前的執行，並查看其觸發的警示。 您也可以根據需要執行規則，並加以修改。
+
+>[!TIP]
+> 自訂偵測所引發的警示會透過警示和事件 APIs 獲得。 如需詳細資訊，請參閱 [支援的 Microsoft 365 Defender APIs](api-supported.md)。
 
 ### <a name="view-existing-rules"></a>查看現有規則
 

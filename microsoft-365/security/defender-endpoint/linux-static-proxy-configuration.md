@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP for Linux 靜態 proxy 探索
+title: Linux 靜態 proxy 探索上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 說明如何設定 Microsoft Defender ATP 以進行靜態 proxy 探索。
+description: 說明如何針對靜態 proxy 探索，在 Linux 上設定 Microsoft Defender for Endpoint。
 keywords: microsoft、defender、atp、linux、安裝、proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 93d654773fc73903cbe0c5de289dcfdf9fd34f9f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e59727b6bb5fca58595764fc003009891546d8f6
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687850"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903843"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>針對靜態 proxy 探索，設定 Linux 上的 Microsoft Defender for Endpoint
 
@@ -34,9 +34,9 @@ ms.locfileid: "51687850"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft Defender ATP 可以使用環境變數探索 proxy 伺服器 ```HTTPS_PROXY``` 。 此設定 **必須在安裝** 時和產品安裝之後設定。
+Microsoft Defender for Endpoint 可以使用環境變數探索 proxy 伺服器 ```HTTPS_PROXY``` 。 此設定 **必須在安裝** 時和產品安裝之後設定。
 
 ## <a name="installation-time-configuration"></a>安裝時間設定
 

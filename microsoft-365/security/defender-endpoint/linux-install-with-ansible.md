@@ -1,7 +1,7 @@
 ---
-title: 使用 Ansible 部署 Microsoft Defender ATP for Linux
+title: 使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 說明如何使用 Ansible 部署 Microsoft Defender ATP for Linux。
+description: 說明如何使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint。
 keywords: microsoft，defender，atp，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 48c34f2a8fb65cb0fc8ecbb616b9d041f61ae044
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 697fcddad595c6883fe1e1f7258ca6154c48b94d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688126"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903901"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "51688126"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 本文說明如何使用 Ansible 為 Linux 部署 Defender。 成功的部署需要完成下列所有工作：
 

@@ -1,5 +1,5 @@
 ---
-title: 檢查 Microsoft Defender ATP 中感應器的健康狀態
+title: 檢查 Microsoft Defender for Endpoint 中感應器的健康狀態
 description: 在裝置上檢查感應器的健全狀況，以找出未正確配置、非使用中或未報告感應器資料的情況。
 keywords: 感應器、感應器健康情況、未設定的狀態、非使用中、無感應器資料、感應器資料、未削弱的通訊、通訊
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 21313463519383f4bf052465a0d907d2df293ec8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0361b7956339670d006c9f050274e07d4e979bca
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165270"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904161"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>檢查 Microsoft Defender for Endpoint 中的感應器健康狀態
 
@@ -32,7 +32,7 @@ ms.locfileid: "51165270"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-checksensor-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-checksensor-abovefoldlink)
 
 在 [安全性作業] 儀表板上會找到 **具有感應器問題** 磚的裝置。 此麻將牌提供個別裝置提供感應器資料及與 Defender for Endpoint service 通訊之能力的資訊。 它會報告需要注意的裝置數量，並協助您找出有問題的裝置，並採取動作修正已知問題。
 

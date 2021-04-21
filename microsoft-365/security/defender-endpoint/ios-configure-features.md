@@ -1,6 +1,6 @@
 ---
 title: 在 iOS 功能上設定 Microsoft Defender for Endpoint
-description: 說明如何部署 Microsoft Defender ATP 以取得 iOS 功能
+description: 說明如何在 iOS 功能上部署 Microsoft Defender for Endpoint
 keywords: microsoft，defender，atp，ios，設定，功能，ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e351f6500d5076e724653d0fde1940592dd1ae5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f5f7345f92b3ac76aa647a9caed63e5684be9c30
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687482"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903307"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上設定 Microsoft Defender for Endpoint
 
@@ -32,7 +32,7 @@ ms.locfileid: "51687482"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 > [!NOTE]
 > IOS 的 Defender for the 會使用 VPN，以便提供 Web 保護功能。 這不是一般 VPN，也就是本機/自我迴圈的 VPN，不會對裝置以外的流量進行流量。
@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint on iOS 搭配 Microsoft Intune 和 Azure Active 
 預設為啟用時，可能需要停用 VPN。 例如，當設定 VPN 時，您想要執行一些無法運作的應用程式。 在這種情況下，您可以依照下列步驟，從裝置上的應用程式中選擇停用 VPN：
 
 1. 在您的 iOS 裝置上，開啟 [ **設定** ] app，按一下或點擊 **[一般** ] 和 [ **VPN**]。
-1. 按一下或點擊 Microsoft Defender ATP 的「i」按鈕。
+1. 按一下或點擊 Microsoft Defender for Endpoint 的「i」按鈕。
 1. 關閉 **[連線時開啟]** 以停用 VPN。
 
     > [!div class="mx-imgBorder"]

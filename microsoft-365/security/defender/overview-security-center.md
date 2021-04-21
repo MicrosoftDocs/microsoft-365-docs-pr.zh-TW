@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d89e5dc29bfe7f980d40a9a5b139884750a966bc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 2e1553b231692d184146897ddc05e11930ed1bf0
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760011"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903971"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>整合的 Microsoft 365 安全性中心概述
 
@@ -149,6 +149,9 @@ Microsoft 365 的安全性中心包含一個教學中心，該中樞會從 Micro
 > Microsoft 365 security center 教學中樞的最上層有一些有説明的 **篩選準則** ，可讓您在目前的 Microsoft 365 Defender、microsoft Defender for Endpoint 和 microsoft Defender for Office 365) 中，選擇 (的產品。 請注意，會列出每個區段的學習資源數目，可協助教學人員追蹤他們手頭的訓練和學習資源數目。
 >
 > 除了產品篩選、目前主題、 (從影片到網路研討會的資源類型) 、熟悉或經驗的安全性區域、安全性角色及產品功能的層級。
+
+> [!TIP]
+> 在 [Microsoft 中學](https://docs.microsoft.com/e/learn/)中還有許多其他的學習機會。 您會找到認證訓練，例如 [課程500T02：實施 Microsoft 365 威脅防護](https://docs.microsoft.com/learn/certifications/courses/ms-500t02)。
 
 ## <a name="send-us-your-feedback"></a>將您的意見傳送給我們
 

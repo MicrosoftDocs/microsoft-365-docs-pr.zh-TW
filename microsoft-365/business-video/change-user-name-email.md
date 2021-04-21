@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何變更使用者的名稱或電子郵件地址。
-ms.openlocfilehash: 6c08110e8725645f2e1d0deffcadd9f34354e1f9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0f2a378cccf2def9cd951483b23a11c2a414607d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580675"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903727"
 ---
 # <a name="change-a-users-name-or-email-address"></a>變更使用者的名稱或電子郵件地址
 
@@ -60,3 +60,7 @@ ms.locfileid: "51580675"
 1. 輸入新的使用者名稱、驗證網域，然後選取 [ **儲存變更**]。
 
     由於這項變更，使用者必須使用此新的使用者名稱登入 Microsoft 365，並將新的電子郵件帳戶新增至 Outlook。
+
+## <a name="related-content"></a>相關內容
+
+將[信箱許可權授與其他使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) (文章) [將使用者信箱轉換成共用信箱](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) (文章) 的[使用者電子郵件設定](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (文章) 

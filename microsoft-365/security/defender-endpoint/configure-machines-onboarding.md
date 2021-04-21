@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e20c424f15561c8b6f0544b80aca6e30c56409d
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 09ca9fb466efd7764f7459a4754cfb30c8100bdb
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893326"
+ms.locfileid: "51904137"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>取得架至 Microsoft Defender for Endpoint 的裝置
 
@@ -55,8 +55,8 @@ ms.locfileid: "51893326"
 
 從上 **架** 卡上，選取 [上 **架更多裝置** ]，以在 Intune 上建立並指派設定檔。 此連結會帶您前往 Intune 上的裝置合規性頁面，此頁面提供您上架狀態的類似綜述。
 
-![Intune 裝置管理上的 Microsoft Defender ATP 裝置符合性頁面](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
-   *Intune 裝置管理上的 Microsoft Defender ATP 裝置符合性頁面*
+![Intune 裝置管理上的 Microsoft Defender for Endpoint device 相容性頁面](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
+   *Intune 裝置管理上的 Microsoft Defender for Endpoint device 相容性頁面*
 
 >[!TIP]
 >或者，您可以在 [Microsoft Azure 入口網站](https://portal.azure.com/) 中，從 [ **所有服務] > Intune > 裝置合規性 > microsoft Defender ATP**] 流覽至 [Defender for Endpoint 上架符合性] 頁面。
