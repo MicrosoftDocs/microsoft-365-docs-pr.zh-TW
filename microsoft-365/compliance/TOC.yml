@@ -138,6 +138,8 @@
           href: data-classification-content-explorer.md
         - name: 開始使用活動總管
           href: data-classification-activity-explorer.md
+        - name: 在活動總管中報告的套用標籤動作
+          href: data-classification-activity-explorer-available-events.md
         - name: 資料分類版本資訊
           href: data-classification-pub-preview-relnotes.md
     - name: 敏感度標籤
