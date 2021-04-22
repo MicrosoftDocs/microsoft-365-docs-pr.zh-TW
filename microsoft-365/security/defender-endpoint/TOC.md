@@ -175,6 +175,9 @@
 ##### [啟用受控資料夾存取權](enable-controlled-folders.md)
 ##### [自訂受控資料夾存取權](customize-controlled-folders.md)
 
+#### [裝置控制]()
+##### [裝置控制報告](device-control-report.md)
+##### [控制 USB 裝置](control-usb-devices-using-intune.md)
 
 ### [裝置探索]()
 #### [裝置探索概觀](device-discovery.md)
