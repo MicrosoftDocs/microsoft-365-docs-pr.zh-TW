@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 中的事件
-description: 調查在不同裝置、使用者和信箱看到的事件。
-keywords: 事件, 警示, 調查, 關聯, 攻擊, 電腦, 裝置, 使用者, 身分識別, 身分識別, 信箱, 電子郵件, 365, microsoft, m365
+description: 調查 Microsoft 365 security center 中跨裝置、使用者和信箱所看到的事件。
+keywords: 事件、警示、調查、分析、回應、關聯、攻擊、電腦、裝置、使用者、身分識別、身分識別、信箱、電子郵件、365、microsoft、m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,92 +22,151 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e1e028f7b58df07eccf945b3a79012b4ea12366d
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 890e64367c49c24c8c70e2cbda9869a5d0797219
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861620"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939577"
 ---
-# <a name="incidents-in-microsoft-365-defender"></a><span data-ttu-id="74657-104">Microsoft 365 Defender 中的事件</span><span class="sxs-lookup"><span data-stu-id="74657-104">Incidents in Microsoft 365 Defender</span></span>
+# <a name="incidents-in-microsoft-365-defender"></a><span data-ttu-id="6fd99-104">Microsoft 365 Defender 中的事件</span><span class="sxs-lookup"><span data-stu-id="6fd99-104">Incidents in Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="74657-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="74657-105">**Applies to:**</span></span>
-- <span data-ttu-id="74657-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="74657-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="6fd99-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="6fd99-105">**Applies to:**</span></span>
+- <span data-ttu-id="6fd99-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6fd99-106">Microsoft 365 Defender</span></span>
 
-> <span data-ttu-id="74657-107">想要體驗 Microsoft 365 Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="74657-107">Want to experience Microsoft 365 Defender?</span></span> <span data-ttu-id="74657-108">您可以[在實驗室環境中評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[在生產環境中執行試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。</span><span class="sxs-lookup"><span data-stu-id="74657-108">You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).</span></span>
+> <span data-ttu-id="6fd99-107">想要體驗 Microsoft 365 Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="6fd99-107">Want to experience Microsoft 365 Defender?</span></span> <span data-ttu-id="6fd99-108">您可以[在實驗室環境中評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[在生產環境中執行試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。</span><span class="sxs-lookup"><span data-stu-id="6fd99-108">You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).</span></span>
 >
 
-<span data-ttu-id="74657-109">Microsoft 365 Defender 中的事件是組成攻擊之故事的相關警示和相關資料的集合。</span><span class="sxs-lookup"><span data-stu-id="74657-109">An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack.</span></span> 
+<span data-ttu-id="6fd99-109">Microsoft 365 Defender 中的事件是組成攻擊之故事的相關警示和相關資料的集合。</span><span class="sxs-lookup"><span data-stu-id="6fd99-109">An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack.</span></span> 
 
-<span data-ttu-id="74657-110">Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動時建立警示。</span><span class="sxs-lookup"><span data-stu-id="74657-110">Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity.</span></span> <span data-ttu-id="74657-111">個別警示可提供關於已完成或進行中攻擊的重要線索。</span><span class="sxs-lookup"><span data-stu-id="74657-111">Individual alerts provide valuable clues about a completed or ongoing attack.</span></span> <span data-ttu-id="74657-112">不過，攻擊一般會針對不同類型的實體（例如裝置、使用者和信箱）採用各種技術。</span><span class="sxs-lookup"><span data-stu-id="74657-112">However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes.</span></span> <span data-ttu-id="74657-113">其結果是針對您租使用者中的多個實體的多個警示。</span><span class="sxs-lookup"><span data-stu-id="74657-113">The result is multiple alerts for multiple entities in your tenant.</span></span> 
+<span data-ttu-id="6fd99-110">Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動時建立警示。</span><span class="sxs-lookup"><span data-stu-id="6fd99-110">Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity.</span></span> <span data-ttu-id="6fd99-111">個別警示可提供關於已完成或進行中攻擊的重要線索。</span><span class="sxs-lookup"><span data-stu-id="6fd99-111">Individual alerts provide valuable clues about a completed or ongoing attack.</span></span> <span data-ttu-id="6fd99-112">不過，攻擊一般會針對不同類型的實體（例如裝置、使用者和信箱）採用各種技術。</span><span class="sxs-lookup"><span data-stu-id="6fd99-112">However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes.</span></span> <span data-ttu-id="6fd99-113">其結果是針對您租使用者中的多個實體的多個警示。</span><span class="sxs-lookup"><span data-stu-id="6fd99-113">The result is multiple alerts for multiple entities in your tenant.</span></span> 
 
-<span data-ttu-id="74657-114">因為 piecing 個別警示來深入瞭解攻擊可能會非常困難而且耗時，所以 Microsoft 365 Defender 會自動將警示和相關資訊匯總到事件中。</span><span class="sxs-lookup"><span data-stu-id="74657-114">Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.</span></span>
+<span data-ttu-id="6fd99-114">因為 piecing 個別警示來深入瞭解攻擊可能會非常困難而且耗時，所以 Microsoft 365 Defender 會自動將警示和相關資訊匯總到事件中。</span><span class="sxs-lookup"><span data-stu-id="6fd99-114">Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.</span></span>
 
 :::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Microsoft 365 Defender 如何將實體中的事件與事件產生關聯":::
 
-<span data-ttu-id="74657-116">請觀看 Microsoft 365 Defender (4 分鐘) 中的事件簡短敘述。</span><span class="sxs-lookup"><span data-stu-id="74657-116">Watch this short overview of incidents in Microsoft 365 Defender (4 minutes).</span></span>
+<span data-ttu-id="6fd99-116">請觀看 Microsoft 365 Defender (4 分鐘) 中的事件簡短敘述。</span><span class="sxs-lookup"><span data-stu-id="6fd99-116">Watch this short overview of incidents in Microsoft 365 Defender (4 minutes).</span></span>
 
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-<span data-ttu-id="74657-117">將相關警示分組到事件中，可讓您全面瞭解攻擊。</span><span class="sxs-lookup"><span data-stu-id="74657-117">Grouping related alerts into an incident gives you a comprehensive view of an attack.</span></span> <span data-ttu-id="74657-118">例如，您可以看到：</span><span class="sxs-lookup"><span data-stu-id="74657-118">For example, you can see:</span></span>
+<span data-ttu-id="6fd99-117">將相關警示分組到事件中，可讓您全面瞭解攻擊。</span><span class="sxs-lookup"><span data-stu-id="6fd99-117">Grouping related alerts into an incident gives you a comprehensive view of an attack.</span></span> <span data-ttu-id="6fd99-118">例如，您可以看到：</span><span class="sxs-lookup"><span data-stu-id="6fd99-118">For example, you can see:</span></span>
 
-- <span data-ttu-id="74657-119">攻擊的開始位置。</span><span class="sxs-lookup"><span data-stu-id="74657-119">Where the attack started.</span></span>
-- <span data-ttu-id="74657-120">使用的戰術。</span><span class="sxs-lookup"><span data-stu-id="74657-120">What tactics were used.</span></span>
-- <span data-ttu-id="74657-121">攻擊進入您租使用者的距離。</span><span class="sxs-lookup"><span data-stu-id="74657-121">How far the attack has gone into your tenant.</span></span>
-- <span data-ttu-id="74657-122">攻擊的範圍，例如影響的裝置、使用者和信箱數目。</span><span class="sxs-lookup"><span data-stu-id="74657-122">The scope of the attack, such as how many devices, users, and mailboxes were impacted.</span></span> 
-- <span data-ttu-id="74657-123">所有與攻擊相關聯的資料。</span><span class="sxs-lookup"><span data-stu-id="74657-123">All of the data associated with the attack.</span></span>
+- <span data-ttu-id="6fd99-119">攻擊的開始位置。</span><span class="sxs-lookup"><span data-stu-id="6fd99-119">Where the attack started.</span></span>
+- <span data-ttu-id="6fd99-120">使用的戰術。</span><span class="sxs-lookup"><span data-stu-id="6fd99-120">What tactics were used.</span></span>
+- <span data-ttu-id="6fd99-121">攻擊進入您租使用者的距離。</span><span class="sxs-lookup"><span data-stu-id="6fd99-121">How far the attack has gone into your tenant.</span></span>
+- <span data-ttu-id="6fd99-122">攻擊的範圍，例如影響的裝置、使用者和信箱數目。</span><span class="sxs-lookup"><span data-stu-id="6fd99-122">The scope of the attack, such as how many devices, users, and mailboxes were impacted.</span></span> 
+- <span data-ttu-id="6fd99-123">所有與攻擊相關聯的資料。</span><span class="sxs-lookup"><span data-stu-id="6fd99-123">All of the data associated with the attack.</span></span>
 
-<span data-ttu-id="74657-124">若 [啟用](m365d-enable.md)，Microsoft 365 Defender 便可透過自動化和人工智慧，自動調查並解決警示。</span><span class="sxs-lookup"><span data-stu-id="74657-124">If [enabled](m365d-enable.md), Microsoft 365 Defender can automatically investigate and resolve alerts through automation and artificial intelligence.</span></span> <span data-ttu-id="74657-125">您也可以執行其他修復步驟，以解決攻擊。</span><span class="sxs-lookup"><span data-stu-id="74657-125">You can also perform additional remediation steps to resolve the attack.</span></span> 
+<span data-ttu-id="6fd99-124">若 [啟用](m365d-enable.md)，Microsoft 365 Defender 便可透過自動化和人工智慧，自動調查並解決警示。</span><span class="sxs-lookup"><span data-stu-id="6fd99-124">If [enabled](m365d-enable.md), Microsoft 365 Defender can automatically investigate and resolve alerts through automation and artificial intelligence.</span></span> <span data-ttu-id="6fd99-125">您也可以執行其他修復步驟，以解決攻擊。</span><span class="sxs-lookup"><span data-stu-id="6fd99-125">You can also perform additional remediation steps to resolve the attack.</span></span> 
 
-## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a><span data-ttu-id="74657-126">Microsoft 365 安全中心的事件及警示</span><span class="sxs-lookup"><span data-stu-id="74657-126">Incidents and alerts in the Microsoft 365 security center</span></span>
+## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a><span data-ttu-id="6fd99-126">Microsoft 365 安全中心的事件及警示</span><span class="sxs-lookup"><span data-stu-id="6fd99-126">Incidents and alerts in the Microsoft 365 security center</span></span>
 
-<span data-ttu-id="74657-127">您可以在 Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上，管理事件 **& 警示 > 事件**。</span><span class="sxs-lookup"><span data-stu-id="74657-127">You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).</span></span> <span data-ttu-id="74657-128">以下為範例。</span><span class="sxs-lookup"><span data-stu-id="74657-128">Here's an example.</span></span>
+<span data-ttu-id="6fd99-127">您可以在 Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上，管理事件 **& 警示 > 事件**。</span><span class="sxs-lookup"><span data-stu-id="6fd99-127">You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).</span></span> <span data-ttu-id="6fd99-128">以下為範例。</span><span class="sxs-lookup"><span data-stu-id="6fd99-128">Here's an example.</span></span>
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Microsoft 365 security center 中的 [事件] 頁面":::
 
-<span data-ttu-id="74657-130">選取 [事件名稱] 會顯示事件摘要，並可讓您存取具有其他資訊的索引標籤。</span><span class="sxs-lookup"><span data-stu-id="74657-130">Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.</span></span>
+<span data-ttu-id="6fd99-130">選取 [事件名稱] 會顯示事件摘要，並可讓您存取具有其他資訊的索引標籤。</span><span class="sxs-lookup"><span data-stu-id="6fd99-130">Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.</span></span>
 
 :::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 安全中心內事件摘要頁面的範例":::
 
-<span data-ttu-id="74657-132">事件的其他索引標籤如下：</span><span class="sxs-lookup"><span data-stu-id="74657-132">The additional tabs for an incident are:</span></span>
+<span data-ttu-id="6fd99-132">事件的其他索引標籤如下：</span><span class="sxs-lookup"><span data-stu-id="6fd99-132">The additional tabs for an incident are:</span></span>
 
-- <span data-ttu-id="74657-133">警示</span><span class="sxs-lookup"><span data-stu-id="74657-133">Alerts</span></span> 
+- <span data-ttu-id="6fd99-133">警示</span><span class="sxs-lookup"><span data-stu-id="6fd99-133">Alerts</span></span> 
 
-  <span data-ttu-id="74657-134">與該事件相關的所有提醒，以及其資訊。</span><span class="sxs-lookup"><span data-stu-id="74657-134">All the alerts related to the incident and their information.</span></span>
+  <span data-ttu-id="6fd99-134">與該事件相關的所有提醒，以及其資訊。</span><span class="sxs-lookup"><span data-stu-id="6fd99-134">All the alerts related to the incident and their information.</span></span>
 
-- <span data-ttu-id="74657-135">裝置</span><span class="sxs-lookup"><span data-stu-id="74657-135">Devices</span></span>
+- <span data-ttu-id="6fd99-135">裝置</span><span class="sxs-lookup"><span data-stu-id="6fd99-135">Devices</span></span>
 
-  <span data-ttu-id="74657-136">已識別為屬於事件一部分或與其相關的所有裝置。</span><span class="sxs-lookup"><span data-stu-id="74657-136">All the devices that have been identified to be part of or related to the incident.</span></span>
+  <span data-ttu-id="6fd99-136">已識別為屬於事件一部分或與其相關的所有裝置。</span><span class="sxs-lookup"><span data-stu-id="6fd99-136">All the devices that have been identified to be part of or related to the incident.</span></span>
 
-- <span data-ttu-id="74657-137">使用者</span><span class="sxs-lookup"><span data-stu-id="74657-137">Users</span></span>
+- <span data-ttu-id="6fd99-137">使用者</span><span class="sxs-lookup"><span data-stu-id="6fd99-137">Users</span></span>
 
-  <span data-ttu-id="74657-138">已識別為屬於該事件或與其相關的所有使用者。</span><span class="sxs-lookup"><span data-stu-id="74657-138">All the users that have been identified to be part of or related to the incident.</span></span>
+  <span data-ttu-id="6fd99-138">已識別為屬於該事件或與其相關的所有使用者。</span><span class="sxs-lookup"><span data-stu-id="6fd99-138">All the users that have been identified to be part of or related to the incident.</span></span>
 
-- <span data-ttu-id="74657-139">信箱</span><span class="sxs-lookup"><span data-stu-id="74657-139">Mailboxes</span></span>
+- <span data-ttu-id="6fd99-139">信箱</span><span class="sxs-lookup"><span data-stu-id="6fd99-139">Mailboxes</span></span>
 
-  <span data-ttu-id="74657-140">已識別為屬於事件一部分或與其相關的所有信箱。</span><span class="sxs-lookup"><span data-stu-id="74657-140">All the mailboxes that have been identified to be part of or related to the incident.</span></span>
+  <span data-ttu-id="6fd99-140">已識別為屬於事件一部分或與其相關的所有信箱。</span><span class="sxs-lookup"><span data-stu-id="6fd99-140">All the mailboxes that have been identified to be part of or related to the incident.</span></span>
 
-- <span data-ttu-id="74657-141">調查</span><span class="sxs-lookup"><span data-stu-id="74657-141">Investigations</span></span>
+- <span data-ttu-id="6fd99-141">調查</span><span class="sxs-lookup"><span data-stu-id="6fd99-141">Investigations</span></span>
 
-  <span data-ttu-id="74657-142">事件中的警示所觸發的所有自動調查。</span><span class="sxs-lookup"><span data-stu-id="74657-142">All the automated investigations triggered by alerts in the incident.</span></span>
+  <span data-ttu-id="6fd99-142">事件中的警示所觸發的所有自動調查。</span><span class="sxs-lookup"><span data-stu-id="6fd99-142">All the automated investigations triggered by alerts in the incident.</span></span>
 
-- <span data-ttu-id="74657-143">證據與回應</span><span class="sxs-lookup"><span data-stu-id="74657-143">Evidence and Response</span></span>
+- <span data-ttu-id="6fd99-143">證據與回應</span><span class="sxs-lookup"><span data-stu-id="6fd99-143">Evidence and Response</span></span>
 
-  <span data-ttu-id="74657-144">事件中警示中所有支援的事件及可疑的實體。</span><span class="sxs-lookup"><span data-stu-id="74657-144">All the supported events and suspicious entities in the alerts in the incident.</span></span>
+  <span data-ttu-id="6fd99-144">事件中警示中所有支援的事件及可疑的實體。</span><span class="sxs-lookup"><span data-stu-id="6fd99-144">All the supported events and suspicious entities in the alerts in the incident.</span></span>
 
-<span data-ttu-id="74657-145">以下是事件與其資料之間的關係，以及 Microsoft 365 security center 中事件的索引標籤。</span><span class="sxs-lookup"><span data-stu-id="74657-145">Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 security center.</span></span>
+<span data-ttu-id="6fd99-145">以下是事件與其資料之間的關係，以及 Microsoft 365 security center 中事件的索引標籤。</span><span class="sxs-lookup"><span data-stu-id="6fd99-145">Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 security center.</span></span>
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="在 Microsoft 365 安全中心的事件索引標籤中，事件及其資料的關聯性":::
 
-## <a name="next-step"></a><span data-ttu-id="74657-147">下一步</span><span class="sxs-lookup"><span data-stu-id="74657-147">Next step</span></span>
+## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a><span data-ttu-id="6fd99-147">Microsoft 365 Defender 的事件回應工作流程範例</span><span class="sxs-lookup"><span data-stu-id="6fd99-147">Example incident response workflow for Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="74657-148">[ **事件** ] 頁面的 [事件] 佇列會列出最近的事件。</span><span class="sxs-lookup"><span data-stu-id="74657-148">The incident queue from the **Incidents** page lists the most recent incidents.</span></span> <span data-ttu-id="74657-149">在這裡，您可以：</span><span class="sxs-lookup"><span data-stu-id="74657-149">From here, you can:</span></span>
+<span data-ttu-id="6fd99-148">以下是使用 Microsoft 365 security center 回應 Microsoft 365 中的事件的範例工作流程。</span><span class="sxs-lookup"><span data-stu-id="6fd99-148">Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 security center.</span></span>
 
-- <span data-ttu-id="74657-150">根據嚴重性及其他因素，查看應 [優先](incident-queue.md) 考慮哪些事件。</span><span class="sxs-lookup"><span data-stu-id="74657-150">See which incidents should be [prioritized](incident-queue.md) based on severity and other factors.</span></span> 
-- <span data-ttu-id="74657-151">對事件進行 [調查](investigate-incidents.md) 。</span><span class="sxs-lookup"><span data-stu-id="74657-151">Perform an [investigation](investigate-incidents.md) of an incident.</span></span>
-- <span data-ttu-id="74657-152">[管理事件](manage-incidents.md)，包括重新命名、指派事件管理工作流程的標記、分類及新增標籤。</span><span class="sxs-lookup"><span data-stu-id="74657-152">[Manage incidents](manage-incidents.md), which includes renaming, assigning them, classifying, and adding tags for your incident management workflow.</span></span>
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Microsoft 365 的事件回應工作流程範例":::
+
+<span data-ttu-id="6fd99-150">在事件佇列中，針對分析和解決方式，識別最高優先順序的事件，讓他們可以進行回應。</span><span class="sxs-lookup"><span data-stu-id="6fd99-150">On an ongoing basis, identify the highest priority incidents for analysis and resolution in the incident queue and get them ready for response.</span></span> <span data-ttu-id="6fd99-151">這是下列專案的組合：</span><span class="sxs-lookup"><span data-stu-id="6fd99-151">This is a combination of:</span></span>
+
+- <span data-ttu-id="6fd99-152">透過篩選和排序事件佇列來判斷最高優先順序事件的[會審](incident-queue.md)。</span><span class="sxs-lookup"><span data-stu-id="6fd99-152">[Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.</span></span>
+- <span data-ttu-id="6fd99-153">透過修改其標題、將其指派給分析員，以及新增標記和批註來[管理](manage-incidents.md)事件。</span><span class="sxs-lookup"><span data-stu-id="6fd99-153">[Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.</span></span>
+
+1. <span data-ttu-id="6fd99-154">針對每個事件，開始 [攻擊和警示分析](investigate-incidents.md)：</span><span class="sxs-lookup"><span data-stu-id="6fd99-154">For each incident, begin an [attack and alert analysis](investigate-incidents.md):</span></span>
+
+   <span data-ttu-id="6fd99-155">a.</span><span class="sxs-lookup"><span data-stu-id="6fd99-155">a.</span></span> <span data-ttu-id="6fd99-156">請查看事件摘要，瞭解其範圍和嚴重性，以及會影響哪些實體 ([ **摘要** ] 索引標籤) 中。</span><span class="sxs-lookup"><span data-stu-id="6fd99-156">View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).</span></span>
+
+   <span data-ttu-id="6fd99-157">b.</span><span class="sxs-lookup"><span data-stu-id="6fd99-157">b.</span></span> <span data-ttu-id="6fd99-158">開始分析警示，以瞭解其來源、範圍和嚴重性 (**警示** ] 索引標籤) 。</span><span class="sxs-lookup"><span data-stu-id="6fd99-158">Begin analyzing the alerts to understand their origin, scope, and severity (the **Alerts** tab).</span></span>
+
+   <span data-ttu-id="6fd99-159">c.</span><span class="sxs-lookup"><span data-stu-id="6fd99-159">c.</span></span> <span data-ttu-id="6fd99-160">如有需要，請在 [ **裝置**]、[ **使用者**] 和 [ **信箱** ] 索引標籤)  (，收集受影響裝置、使用者和信箱的資訊。</span><span class="sxs-lookup"><span data-stu-id="6fd99-160">As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).</span></span>
+
+   <span data-ttu-id="6fd99-161">d.</span><span class="sxs-lookup"><span data-stu-id="6fd99-161">d.</span></span> <span data-ttu-id="6fd99-162">請參閱 Microsoft 365 Defender 如何在「 **調查** 」索引標籤) 上，自動解決某些警示 (。</span><span class="sxs-lookup"><span data-stu-id="6fd99-162">See how Microsoft 365 Defender has automatically resolved some alerts (the **Investigations** tab).</span></span>
+   
+   <span data-ttu-id="6fd99-163">e.</span><span class="sxs-lookup"><span data-stu-id="6fd99-163">e.</span></span> <span data-ttu-id="6fd99-164">如有需要，請使用事件資料組中的資訊，以取得 (**證據與回應** ] 索引標籤) 的詳細資訊。</span><span class="sxs-lookup"><span data-stu-id="6fd99-164">As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).</span></span>
+
+2. <span data-ttu-id="6fd99-165">在您的分析之後或過程中，請進行包容，以減少攻擊和 eradication 安全性威脅的任何其他影響。</span><span class="sxs-lookup"><span data-stu-id="6fd99-165">After or during your analysis, address containment to reduce any additional impact of the attack and eradication of the security threat.</span></span>
+
+3. <span data-ttu-id="6fd99-166">盡可能將租使用者資源還原為事件之前所用的狀態，從攻擊復原。</span><span class="sxs-lookup"><span data-stu-id="6fd99-166">As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.</span></span>
+
+4. <span data-ttu-id="6fd99-167">[解決](manage-incidents.md#resolve-incident) 事件，並在進行事件後學習需要一些時間，以進行下列作業：</span><span class="sxs-lookup"><span data-stu-id="6fd99-167">[Resolve](manage-incidents.md#resolve-incident) the incident and take time for post-incident learning to:</span></span>
+
+   - <span data-ttu-id="6fd99-168">瞭解攻擊的類型及其影響。</span><span class="sxs-lookup"><span data-stu-id="6fd99-168">Understand the type of the attack and its impact.</span></span>
+   - <span data-ttu-id="6fd99-169">調查 [威脅分析](threat-analytics.md) 中的攻擊，以及安全性攻擊趨勢的安全性社區。</span><span class="sxs-lookup"><span data-stu-id="6fd99-169">Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.</span></span>
+   - <span data-ttu-id="6fd99-170">召回您用來解決事件的工作流程，並視需要更新您的標準工作流程、流程、原則及行動行動。</span><span class="sxs-lookup"><span data-stu-id="6fd99-170">Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.</span></span>
+   - <span data-ttu-id="6fd99-171">決定是否需要在安全性設定中進行變更，並加以實施。</span><span class="sxs-lookup"><span data-stu-id="6fd99-171">Determine whether changes in your security configuration are needed and implement them.</span></span>
+
+## <a name="example-security-operations-for-microsoft-365-defender"></a><span data-ttu-id="6fd99-172">Microsoft 365 Defender 的安全性作業範例</span><span class="sxs-lookup"><span data-stu-id="6fd99-172">Example security operations for Microsoft 365 Defender</span></span>
+
+<span data-ttu-id="6fd99-173">以下是 Microsoft 365 Defender 安全性作業的範例。</span><span class="sxs-lookup"><span data-stu-id="6fd99-173">Here's an example of security operations for Microsoft 365 Defender.</span></span>
+
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Micosoft 365 Defender 的安全性操作範例":::
+
+<span data-ttu-id="6fd99-175">每個任務可以包含：</span><span class="sxs-lookup"><span data-stu-id="6fd99-175">Daily tasks can include:</span></span>
+
+- <span data-ttu-id="6fd99-176">[管理](manage-incidents.md) 事件</span><span class="sxs-lookup"><span data-stu-id="6fd99-176">[Managing](manage-incidents.md) incidents</span></span>
+- <span data-ttu-id="6fd99-177">檢查 [自動調查和回應 (AIR) ](m365d-action-center.md) 動作</span><span class="sxs-lookup"><span data-stu-id="6fd99-177">Reviewing [automated investigation and response (AIR)](m365d-action-center.md) actions</span></span>
+- <span data-ttu-id="6fd99-178">查看最新的 [威脅分析](threat-analytics.md)</span><span class="sxs-lookup"><span data-stu-id="6fd99-178">Reviewing the latest [Threat Analytics](threat-analytics.md)</span></span>
+- <span data-ttu-id="6fd99-179">[回應](investigate-incidents.md) 事件</span><span class="sxs-lookup"><span data-stu-id="6fd99-179">[Responding](investigate-incidents.md) to incidents</span></span>
+
+<span data-ttu-id="6fd99-180">每月任務可以包含：</span><span class="sxs-lookup"><span data-stu-id="6fd99-180">Monthly tasks can include:</span></span>
+
+- <span data-ttu-id="6fd99-181">檢查 [空中設定](m365d-configure-auto-investigation-response.md)</span><span class="sxs-lookup"><span data-stu-id="6fd99-181">Reviewing [AIR settings](m365d-configure-auto-investigation-response.md)</span></span>
+- <span data-ttu-id="6fd99-182">檢查 [安全分數](microsoft-secure-score-improvement-actions.md) 和 [威脅 & 弱點管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)</span><span class="sxs-lookup"><span data-stu-id="6fd99-182">Reviewing [Secure Score](microsoft-secure-score-improvement-actions.md) and [Threat & Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)</span></span>
+- <span data-ttu-id="6fd99-183">向您的 IT 安全性管理階層報告</span><span class="sxs-lookup"><span data-stu-id="6fd99-183">Reporting to your IT security management chain</span></span>
+
+<span data-ttu-id="6fd99-184">每個季度的工作可以包含向首席資訊安全性監察官 (CISO) 中的安全性結果的報告及簡報。</span><span class="sxs-lookup"><span data-stu-id="6fd99-184">Quarterly tasks can include a report and briefing of security results to the Chief Information Security Officer (CISO).</span></span>
+
+<span data-ttu-id="6fd99-185">每年的工作可以包含執行重大事件或破壞練習，以測試您的員工、系統和程式。</span><span class="sxs-lookup"><span data-stu-id="6fd99-185">Annual tasks can include conducting a major incident or breach exercise to test your staff, systems, and processes.</span></span> 
+
+<span data-ttu-id="6fd99-186">您可以使用每日、每月、每季及每年的工作來更新或修改程式、原則及安全性設定。</span><span class="sxs-lookup"><span data-stu-id="6fd99-186">Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="6fd99-187">後續步驟</span><span class="sxs-lookup"><span data-stu-id="6fd99-187">Next steps</span></span>
+
+<span data-ttu-id="6fd99-188">[ **事件** ] 頁面的 [事件] 佇列會列出最近的事件。</span><span class="sxs-lookup"><span data-stu-id="6fd99-188">The incident queue from the **Incidents** page lists the most recent incidents.</span></span> <span data-ttu-id="6fd99-189">在這裡，您可以：</span><span class="sxs-lookup"><span data-stu-id="6fd99-189">From here, you can:</span></span>
+
+- <span data-ttu-id="6fd99-190">根據嚴重性及其他因素，查看應 [優先](incident-queue.md) 考慮哪些事件。</span><span class="sxs-lookup"><span data-stu-id="6fd99-190">See which incidents should be [prioritized](incident-queue.md) based on severity and other factors.</span></span> 
+- <span data-ttu-id="6fd99-191">[管理事件](manage-incidents.md)，包括重新命名、指派、分類，以及新增事件管理工作流程的標記和批註。</span><span class="sxs-lookup"><span data-stu-id="6fd99-191">[Manage incidents](manage-incidents.md), which includes renaming, assignment, classifying, and adding tags and comments for your incident management workflow.</span></span>
+- <span data-ttu-id="6fd99-192">執行事件的 [分析](investigate-incidents.md) 。</span><span class="sxs-lookup"><span data-stu-id="6fd99-192">Perform an [analysis](investigate-incidents.md) of an incident.</span></span>
