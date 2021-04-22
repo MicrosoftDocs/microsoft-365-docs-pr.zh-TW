@@ -2,7 +2,7 @@
 title: 隱私權資訊-iOS 上的端點的 Microsoft Defender
 ms.reviewer: ''
 description: 說明 iOS 上的 Microsoft Defender for Endpoint 的隱私權資訊
-keywords: microsoft、defender、atp、ios、原則、綜述
+keywords: microsoft，defender，Microsoft Defender for Endpoint，ios，policy，總覽
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5598df8a9e3493a1c4922f672468dd54e84c31e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688198"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934282"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>隱私權資訊-iOS 上的端點的 Microsoft Defender
 
@@ -31,18 +31,18 @@ ms.locfileid: "51688198"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
-> IOS 的 Defender for a 使用 VPN 提供 Web 保護功能。 這不是一般 VPN，也就是本機或自行迴圈的 VPN，不會對裝置以外的流量進行流量。 **Microsoft 或您的組織未看到您的流覽活動。**
+> IOS 上的 Defender for Endpoint 使用 VPN 提供 Web 保護功能。 這不是一般 VPN，也就是本機或自行迴圈的 VPN，不會對裝置以外的流量進行流量。 **Microsoft 或您的組織未看到您的流覽活動。**
 
-IOS 的 defender for Endpoint 會從您設定的 iOS 裝置收集資訊，並將其儲存在您擁有 Defender for Endpoint 的相同承租人中。 收集此資訊有助於讓 iOS 安全、更新、如期執行，以及支援服務的情況下，取得端點的資訊。
+IOS 上的 Defender for Endpoint 會從您設定的 iOS 裝置收集資訊，並將其儲存在您擁有 Defender for Endpoint 的相同承租人中。 收集此資訊可協助您在 iOS 安全、更新、執行如預期的情況下，繼續更新端點，以及支援服務。
 
 如需資料儲存區的詳細資訊，請參閱 [Microsoft Defender Endpoint data storage and 隱私權](data-storage-privacy.md)。
 
 ## <a name="required-data"></a>必要資料 
 
-必要資料包含的資料，使 iOS 端點可以像預期的方式運作。 此資料對於服務的運作很重要，而且可以包含與使用者、組織、裝置及應用程式相關的資料。 
+必要資料包含的資料是讓 Defender iOS 的端點如預期的運作。 此資料對於服務的運作很重要，而且可以包含與使用者、組織、裝置及應用程式相關的資料。 
 
 以下是所收集的資料類型清單： 
 

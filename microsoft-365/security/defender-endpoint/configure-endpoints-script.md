@@ -1,7 +1,7 @@
 ---
 title: 使用本機指令碼上線 Windows 10 裝置
 description: 使用本機腳本在裝置上部署設定套件，使其可架至服務。
-keywords: 設定裝置使用本機腳本，裝置管理，設定 Windows ATP 裝置，設定 Microsoft Defender for Endpoint devices
+keywords: 使用本機腳本、裝置管理、設定 Microsoft Defender for Endpoint 裝置設定裝置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 77473df9cc3e0e98efac8eaacd0a51b551bc3258
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 056268ed093d371d39a6136dd0b272c12ab6f9d7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060195"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933910"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本機指令碼上線 Windows 10 裝置
 
@@ -30,7 +30,7 @@ ms.locfileid: "51060195"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 您也可以將個別裝置手動上架到 Defender for Endpoint。 在您認可如何在您的網路中上架所有裝置之前測試服務時，您可能會想要執行此動作。
 

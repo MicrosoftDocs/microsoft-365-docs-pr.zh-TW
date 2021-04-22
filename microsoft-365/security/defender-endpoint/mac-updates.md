@@ -1,7 +1,7 @@
 ---
-title: 為 Mac 部署 Microsoft Defender for Endpoint 的更新
-description: 在企業環境中控制 Microsoft Defender for Mac 的端點的更新。
-keywords: microsoft，defender，atp，mac，更新，部署
+title: 在 Mac 上為端點部署 Microsoft Defender 的更新
+description: 在企業環境中控制 Microsoft Defender for Mac 上端點的更新。
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，更新，部署
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d373594771efe4eb647c007db3a26efe83e330e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860312"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934498"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 

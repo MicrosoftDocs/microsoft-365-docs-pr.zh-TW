@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2a3325a290dc985bdb99a5a843b4b9e1f642a62b
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f63b4f81f454fec60a26c7cb063d66bed4a2bead
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861800"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933538"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>在 Microsoft Defender for Endpoint service 上架
 
@@ -71,7 +71,7 @@ ms.locfileid: "51861800"
 
 | 端點     | 工具選項                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [本機腳本 (最多10個裝置) ](configure-endpoints-script.md) <br>  [群組原則](configure-endpoints-gp.md) <br>  [Microsoft 端點管理員/行動裝置管理員](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 腳本](configure-endpoints-vdi.md) <br> [Azure 資訊安全中心](configure-server-endpoints.md#integration-with-azure-security-center) |
+| **Windows**  |  [本機腳本 (最多10個裝置) ](configure-endpoints-script.md) <br>  [群組原則](configure-endpoints-gp.md) <br>  [Microsoft 端點管理員/行動裝置管理員](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 腳本](configure-endpoints-vdi.md) <br> [與 Azure Defender 整合](configure-server-endpoints.md#integration-with-azure-defender) |
 | **macOS**    | [本機腳本](mac-install-manually.md) <br> [Microsoft 端點管理員](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [行動裝置管理](mac-install-with-other-mdm.md) |
 | **Linux 伺服器** | [本機腳本](linux-install-manually.md) <br> [木偶](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [以應用程式為基礎](ios-install.md)                                |

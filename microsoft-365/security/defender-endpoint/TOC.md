@@ -475,6 +475,7 @@
 ####### [取得安全性建議](get-security-recommendations.md)
 ####### [新增或移除電腦標記](add-or-remove-machine-tags.md)
 ####### [按 IP 尋找電腦](find-machines-by-ip.md)
+####### [按標籤尋找電腦](find-machines-by-tag.md)
 ####### [取得遺失的 KB](get-missing-kbs-machine.md)
 ####### [設定裝置值](set-device-value.md)
 

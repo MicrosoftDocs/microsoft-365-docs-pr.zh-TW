@@ -1,7 +1,7 @@
 ---
-title: 透過模擬攻擊體驗 Microsoft Defender ATP
-description: 執行提供的攻擊案例模擬，以體驗 Microsoft Defender ATP 如何偵測、調查和回應違規行為。
-keywords: wdatp，test，案例，攻擊，模擬，模擬，diy，Microsoft Defender for Endpoint
+title: 透過模擬攻擊體驗 Microsoft Defender for Endpoint
+description: 執行提供的攻擊案例模擬，以體驗 Microsoft Defender for Endpoint 如何偵測、調查和回應違規行為。
+keywords: test，案例，攻擊，模擬，模擬，diy，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: b3fb862ac6e845ed4a3f5b72bae902f00c125b53
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 6ecbf98c81b1f68e42f39269809592fb446e6036
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498295"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934378"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>透過模擬攻擊體驗 Microsoft Defender for Endpoint 
 
@@ -33,10 +33,10 @@ ms.locfileid: "51498295"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
 
 >[!TIP]
->- 深入瞭解 Microsoft Defender ATP 中的最新增強功能： [用於端點的 Defender 新增功能？](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)。
+>- 深入瞭解 Microsoft Defender for Endpoint 中的最新增強功能： [端點的新](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)功能
 >- 在最近的 MITRE 評估中，以試用版的端點示範業界一流的光學器件和偵測功能。 Read： [來自 MITRE ATT 的 Insights&以 CK 為基礎的評估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 您可能想要在將許多裝置上架到服務之前，體驗端點的 Defender。 若要這麼做，您可以在一些測試裝置上執行受控制的攻擊模擬。 在執行模擬後的攻擊之後，您可以查看 Endpoint 的 Endpoint 面對惡意活動的反應，以及如何啟用有效的回應。
@@ -67,7 +67,7 @@ ms.locfileid: "51498295"
 > 類比檔或腳本模仿攻擊活動，但實際上卻是良性的，且不會損害或損害測試裝置。
 > 
 > 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
 
 
 ## <a name="related-topics"></a>相關主題

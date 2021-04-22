@@ -1,7 +1,7 @@
 ---
 title: 取得發現的弱點
 description: 會檢索與指定裝置識別碼相關的已探索弱點的集合。
-keywords: api，graph api，支援的 api，get，list，file，information，發現的弱點，威脅 & 漏洞管理 api，mdatp tvm api
+keywords: api，graph api，支援的 api，get，list，file，information，發現的弱點，威脅 & 弱點管理 api，Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73b8fe5140ff635791e7d42358024bb7fb4ee926
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 133a8525a2e561062a492f7148de97a77d37444e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570324"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934318"
 ---
 # <a name="get-discovered-vulnerabilities"></a>取得發現的弱點
 
@@ -30,7 +30,7 @@ ms.locfileid: "51570324"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -59,7 +59,7 @@ GET /api/machines/{machineId}/vulnerabilities
 
 ## <a name="request-headers"></a>要求標頭
 
-名稱 | 類型 | 說明
+名稱 | 類型 | 描述
 :---|:---|:---
 授權 | 字串 | 載荷 {token}。 **必要欄位**。
 

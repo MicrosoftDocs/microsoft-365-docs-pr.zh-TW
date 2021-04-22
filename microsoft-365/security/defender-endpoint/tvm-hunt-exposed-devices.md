@@ -1,7 +1,7 @@
 ---
 title: 搜尋暴露的裝置
 description: 瞭解如何使用威脅和弱點管理來協助安全性系統管理員、IT 系統管理員和 SecOps 共同作業。
-keywords: mdatp-tvm 案例、mdatp、tvm、tvm 案例、減少威脅 & 弱點嚴重性、減少威脅和弱點、改善安全性設定、增加 Microsoft 安全分數的裝置、增加威脅 & 弱點 Microsoft 安全評分
+keywords: Microsoft Defender for Endpoint tvm 案例，Microsoft Defender for Endpoint，tvm，tvm 案例，減少威脅 & 弱點洩密，減少威脅和弱點，改善安全性設定，增加 Microsoft 安全分數的裝置，增加威脅 & 弱點的 microsoft 安全分數，Microsoft 安全評分的裝置，披露分數，安全性控制
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8e3a80e73d9847837ae0a1542e7d16ee8ae0f29
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a9a8ebcc89c3009cd93fbb42f2a74bbb9ffcc31b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500095"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934090"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>尋找公開的裝置-威脅和弱點管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51500095"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="use-advanced-hunting-to-find-devices-with-vulnerabilities"></a>使用高級搜尋來尋找包含弱點的裝置
 

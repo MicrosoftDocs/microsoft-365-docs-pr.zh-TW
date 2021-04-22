@@ -1,7 +1,7 @@
 ---
 title: 執行 Microsoft 365 Defender 攻擊模擬
 description: 針對 Microsoft 365 Defender 試驗專案執行攻擊模擬，以查看其展開及快速修正的方式。
-keywords: Microsoft 威脅防護試驗攻擊類比，執行 Microsoft 威脅防護試驗攻擊類比，模擬 Microsoft 威脅防護、Microsoft 威脅防護試驗專案、網路安全性、高級持續威脅、企業安全性、裝置、裝置、身分識別、使用者、資料、應用程式、事件、自動化調查和修正，以及高級搜尋
+keywords: Microsoft 365 Defender 試驗攻擊模擬，執行 Microsoft 365 Defender 試驗攻擊模擬，模擬 Microsoft 365 Defender 的攻擊，Microsoft 365 Defender 試驗專案，網路安全性，高級持續威脅，企業安全性，裝置，裝置，身分識別，使用者，資料，應用程式，事件，自動化調查和修正，高級搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bb6472fdd52cdab0ab649fbb76b1ff6a683d6c80
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060388"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934474"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>執行 Microsoft 365 Defender 攻擊模擬
 

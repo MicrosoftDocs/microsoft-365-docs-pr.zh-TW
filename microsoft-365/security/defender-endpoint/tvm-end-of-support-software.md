@@ -1,7 +1,7 @@
 ---
 title: 規劃支援終止的軟體和軟體版本
 description: 探索並規劃不再支援的軟體和軟體版本，而且不會收到安全性更新。
-keywords: 威脅及弱點管理，mdatp tvm 安全性建議，cybersecurity 建議，可操作的安全性建議
+keywords: 威脅和弱點管理，Microsoft Defender for Endpoint tvm security 建議，cybersecurity 建議，可操作的安全性建議
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29adf8a542d97a981a07dac167343f3774aa5af4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8e8fc228b8856df03b580e748bf00efc8d4333c3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500147"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934126"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>使用威脅和弱點管理，規劃支援終止軟體和軟體版本
 
@@ -35,7 +35,7 @@ ms.locfileid: "51500147"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 支援終止的 (EOS) （也稱為生命週期結束 (EOL) ）軟體或軟體版本表示其不再支援或服務，且不會收到安全性更新。 當您使用已結束支援的軟體或軟體版本時，您會公開組織面臨安全性弱點、法律和財務風險。
 

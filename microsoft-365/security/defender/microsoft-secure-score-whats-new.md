@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 5a868904a43e17952368e097c0b0e963252d5bed
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570360"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933862"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
@@ -50,7 +50,7 @@ Microsoft 團隊客戶將會看到「限制匿名使用者加入會議」為安�
 
 ## <a name="december-2020"></a>2020 年 12 月
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>針對先前的 Microsoft Defender ATP) ，新增了 Microsoft Defender for Endpoint (的六個帳戶相關改進動作：
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>為 Microsoft Defender for Endpoint 新增六個帳戶相關的改進動作：
 
 - 將 ' 密碼長度下限 ' 設定為 ' 14 或以上的字元」
 - 將 ' 強制密碼歷程記錄 ' 設定為 ' 24 或以上的密碼 (s) '
@@ -65,7 +65,7 @@ Microsoft 團隊客戶將會看到「限制匿名使用者加入會議」為安�
 
 無法再使用 **> ServiceNow** ，透過安全的分數建立 ServiceNow 入場券的功能。 感謝您的意見反應，並在我們決定接下來的步驟時繼續支援。
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>在先前的 Microsoft Defender ATP) 中，新增三項 Microsoft Defender for Endpoint (的服務相關改進動作：
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>新增三項 Microsoft Defender for Endpoint 的服務相關改進動作：
 
 - 修正 Windows 服務的未加引號服務路徑
 - 將服務可執行路徑變更為一般受保護的位置

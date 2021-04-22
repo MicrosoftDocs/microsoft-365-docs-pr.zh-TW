@@ -1,6 +1,6 @@
 ---
 title: 下架 machine API
-description: 瞭解如何使用 API，從 Windows Defender 高級威脅防護 (WDATP) 中，下架裝置。
+description: 瞭解如何使用 API 從 Microsoft Defender for Endpoint 下架裝置。
 keywords: api、graph api、支援的 api、收集調查套件
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b3fa5a5daba1aa09eef0f733c7439848ce66a2c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 03a1ef11224021703a6f33f82fa2c4f135a317a7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187123"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934174"
 ---
 # <a name="offboard-machine-api"></a>下架 machine API
 
@@ -30,7 +30,7 @@ ms.locfileid: "51187123"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 

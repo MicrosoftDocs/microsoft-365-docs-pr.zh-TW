@@ -1,7 +1,7 @@
 ---
 title: 解決適用於端點的 Microsoft Defender 中的誤判
 description: 瞭解如何在 Microsoft Defender for Endpoint 中處理誤報或虛假的否定。
-keywords: 防毒程式、例外狀況、排除、defender atp、誤報、誤報、封鎖的檔案，封鎖的 url
+keywords: 防病毒，例外，排除，Microsoft Defender for Endpoint，誤報，false 負數，封鎖檔，封鎖的 url
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759867"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933586"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解決適用於端點的 Microsoft Defender 中的誤判
 
@@ -440,7 +440,7 @@ Microsoft Defender for Endpoint 提供各種各樣的選項，包括微調各種
 > [!IMPORTANT]
 > 建議使用 *完整的自動化* ，以進行自動調查和修復。 請勿關閉這些功能，因為是誤報。 相反地，使用 ["allow" 標記來定義例外](#indicators-for-microsoft-defender-for-endpoint)狀況，並將自動調查和修正設定為自動採取適當的動作。 遵循 [此指南](automation-levels.md#levels-of-automation) 可協助減少您的安全作業小組必須處理的提醒數目。 
 
-## <a name="still-need-help"></a>是否仍需要協助？
+## <a name="still-need-help"></a>仍需要協助嗎？
 
 如果您已完成本文中的所有步驟，但仍需要協助，請與技術支援人員聯繫。
 

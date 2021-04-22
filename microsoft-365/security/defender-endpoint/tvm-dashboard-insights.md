@@ -1,7 +1,7 @@
 ---
 title: 儀表板深入資訊-威脅和弱點管理
 description: 威脅和弱點管理儀表板可協助 SecOps 及安全性系統管理員解決 cybersecurity 威脅，並建立其組織的安全性恢復能力。
-keywords: mdatp-tvm、mdatp-tvm 儀表板、威脅 & 漏洞管理、威脅和弱點管理、風險威脅 & 漏洞管理、安全性設定、裝置的 Microsoft 安全分數、披露分數
+keywords: Microsoft Defender for Endpoint tvm，Microsoft Defender for Endpoint tvm 儀表板，威脅 & 漏洞管理，威脅和弱點管理，風險威脅 & 弱點管理，安全性設定，Microsoft 安全評分的裝置，披露分數
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35dd300d828bfa48ad753d7c65f36b2555cf4f60
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 82b6123a99eb406918708c6bf23b870ef3bc3d79
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500180"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934138"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>儀表板深入資訊-威脅和弱點管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51500180"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 威脅和弱點管理是 Endpoint 的 Defender 元件，並提供安全性管理員和具有唯一值的安全性作業小組，包括：
 

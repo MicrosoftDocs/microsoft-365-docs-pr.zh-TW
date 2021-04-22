@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 84caa39b44a4e0706b1fe4a103d8a8a14c52daed
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 6465be53de38872e3eb1d7b70dc3efbb9154aace
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892954"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934198"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>疑難排解 Microsoft Defender 的端點上架問題
 
@@ -251,7 +251,7 @@ ID | 嚴重性 | 事件說明 | 疑難排解步驟
 
 ### <a name="ensure-the-device-has-an-internet-connection"></a>確定裝置具有網際網路連線
 
-Windows Defender ATP 感應器需要 Microsoft Windows HTTP (WinHTTP) 報告感應器資料，並與 Microsoft Defender for Endpoint service 進行通訊。
+適用於端點的 Microsoft Defender 感應器需要 Microsoft Windows HTTP (WinHTTP) 回報感應器資料，並與適用於端點的 Microsoft Defender 服務通訊。
 
 WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用程式，而且必須能夠偵測出您的特定環境中提供的 proxy 伺服器。
 

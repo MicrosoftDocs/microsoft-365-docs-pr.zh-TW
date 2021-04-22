@@ -2,7 +2,7 @@
 title: 攻擊面縮小概觀
 ms.reviewer: ''
 description: 深入瞭解 Microsoft Defender for Endpoint 的攻擊面減少功能。
-keywords: asr、攻擊面減少、microsoft defender atp、microsoft defender （endpoint）、microsoft defender、防毒軟體、av、windows defender
+keywords: asr，攻擊面降低，Microsoft Defender for Endpoint，microsoft defender，防病毒，av，windows Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 60efae91e4b65c5977bd2aebf111d9174d7c1042
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 68c9bad95e36863a57d27d49adc2ad46744cbd4a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893550"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933526"
 ---
 # <a name="overview-of-attack-surface-reduction"></a>攻擊面縮小概觀
 

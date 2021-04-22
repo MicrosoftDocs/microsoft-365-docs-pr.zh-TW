@@ -1,7 +1,7 @@
 ---
 title: 適用于 Microsoft Defender for Endpoint service 的板載裝置
 description: 板載 Windows 10 裝置、伺服器、非 Windows 裝置，並瞭解如何執行偵測測試。
-keywords: 上架，microsoft defender 用於端點上架，windows atp 上架，sccm，群組原則，mdm，本機腳本，偵測測試
+keywords: 上架，Microsoft Defender for Endpoint 上架，sccm，群組原則，mdm，local script，偵測測試
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4aa3e30f34e7d9dc362cc0bbb277aaee5834b4fe
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 05cc5770df5bb05687bb8be69ad89a7abd6875ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861368"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933550"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>適用于 Microsoft Defender for Endpoint service 的板載裝置
 

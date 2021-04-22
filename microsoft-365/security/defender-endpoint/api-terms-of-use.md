@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP API 授權和使用條款
+title: Microsoft Defender for Endpoint API 授權及使用條款（使用條款）
 description: Microsoft Defender APIs 的授權與使用條款的描述
 keywords: 授權、條款、api、法律、通知、行為準則
 search.product: eADQiWindows 10XVcnh
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3b8842214301d4933432f376c872f8da7322a63e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: f737f5a9aeb9bc45e0cf40c3be0cfdde2bde3779
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164786"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933610"
 ---
 # <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>Microsoft Defender for Endpoint API 授權及使用條款（使用條款）
 
@@ -36,7 +36,7 @@ Endpoint APIs 的 Defender 是由 [MICROSOFT API 授權和使用條款](https://
 
 ### <a name="throttling-limits"></a>節流限制
 
-名稱 | 調用 | 更新週期 
+姓名 | 調用 | 更新週期 
 :---|:---|:---
 每個連線的 API 通話 | 100 | 60 秒
 

@@ -1,7 +1,7 @@
 ---
 title: 易受攻擊的裝置報告-威脅和弱點管理
 description: 顯示受影響裝置趨勢和目前統計資料的報告。 目標是讓您瞭解裝置洩密的 breath 和範圍。
-keywords: mdatp-tvm 有弱點的裝置、mdatp、tvm、減少威脅 & 弱點洩密、減少威脅和弱點，監視安全性設定
+keywords: Microsoft Defender for Endpoint tvm 易受攻擊的裝置、Microsoft Defender for Endpoint、tvm、降低威脅 & 弱點洩密、減少威脅和弱點，監視安全性設定
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f481ddca897594bd73de9b5f4762903f23fb24c6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4b2b581d570bd0924970a845c66a599495ff9829
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500465"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933706"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>易受攻擊的裝置報告-威脅和弱點管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51500465"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 報告會顯示圖表和橫條圖，包含易受影響的裝置趨勢和目前的統計資料。 目標是讓您瞭解裝置洩密的 breath 和範圍。 
 

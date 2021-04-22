@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 偵測 API 欄位
+title: Microsoft Defender for Endpoint 偵測 API 欄位
 description: 瞭解偵測 API 欄位如何對應至 Microsoft Defender Security Center 中的值
 keywords: 偵測、偵測欄位、欄位、api、欄位、提取偵測、rest api、要求、回應
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e304d731409c4cd0fac722d492b3fab5ed28fd35
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164878"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933634"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender for Endpoint 偵測 API 欄位
 
@@ -31,7 +31,7 @@ ms.locfileid: "51164878"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
 瞭解哪些資料欄位會公開成為偵測 API 的一部分，以及它們如何對應至 Microsoft Defender Security Center。
 
@@ -52,8 +52,8 @@ ms.locfileid: "51164878"
 > | 入口網站標籤   | SIEM 功能變數名稱           | ArcSight 欄位      | 範例值                                                                      | 說明                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | name                | Microsoft Defender AV 偵測到 ' Mikatz ' 高嚴重性惡意程式碼 | 可供每個偵測使用的值。                                                                                                                                               |
-> | 2                 | 嚴重性                  | deviceSeverity      | 高                                                                             | 可供每個偵測使用的值。                                                                                                                                               |
-> | 3                 | 類別                  | deviceEventCategory | 惡意程式碼                                                               | 可供每個偵測使用的值。                                                                                                                                               |
+> | 第                | 嚴重性                  | deviceSeverity      | 高                                                                             | 可供每個偵測使用的值。                                                                                                                                               |
+> | 個                | 類別                  | deviceEventCategory | 惡意程式碼                                                               | 可供每個偵測使用的值。                                                                                                                                               |
 > | 4                 | 偵測來源                    | sourceServiceName   | 防毒                                                                 | Microsoft Defender 防病毒或 Defender for Endpoint。 可供每個偵測使用的值。                                                                                         |
 > | 5                 | MachineName               | sourceHostName      | 桌面4a5ngd6                                                                           | 可供每個偵測使用的值。                                                                                                                                               |
 > | 6                 | FileName                  | 檔案名            | Robocopy.exe                                                                       | 可用於與檔案或處理常式相關聯的偵測。                                                                                                                      |
@@ -105,4 +105,4 @@ ms.locfileid: "51164878"
 - [在 Microsoft Defender for Endpoint 中啟用 SIEM 整合](enable-siem-integration.md)
 - [設定 ArcSight 以拉入 Microsoft Defender for Endpoint 偵測](configure-arcsight.md)
 - [使用 REST API 提取 Microsoft Defender for Endpoint 偵測](pull-alerts-using-rest-api.md)
-- [疑難排解 SIEM 工具整合問題](troubleshoot-siem.md)
+- [為 SIEM 工具整合問題疑難排解](troubleshoot-siem.md)

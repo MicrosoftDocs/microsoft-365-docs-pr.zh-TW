@@ -1,7 +1,7 @@
 ---
-title: 使用 Microsoft Endpoint Configuration Manager 上架
+title: 使用 Microsoft Endpoint Configuration Manager 上線
 description: 瞭解如何使用 Microsoft 端點 Configuration Manager 在 Microsoft Defender for Endpoint 上進行板載
-keywords: 上架、設定、部署、部署、端點設定管理員、mdatp、高級威脅防護、集合建立、端點偵測回應、下一代保護、攻擊面減少、microsoft 端點 configuration manager
+keywords: 上架、設定、部署、部署、端點設定管理員、Microsoft Defender for Endpoint、集合建立、端點偵測回應、下一代保護、攻擊面減少、Microsoft 端點 configuration manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 31c946ccad84aca3b2fc86c95655cea9e66e182f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 84273ce3e060eb86ee246a5cc6a8cae3cba743b5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186398"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934486"
 ---
-# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 上架
+# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 上線
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51186398"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 本文是部署指南的一部分，可做為上架方法的範例。 
@@ -106,7 +106,7 @@ ms.locfileid: "51186398"
 
     ![Microsoft 端點 Configuration Manager 的圖像 wizard8](images/configmgr-membership-rules.png)
 
-9. 選取 [下一步]。
+9. 選取 [下一步 **]**。
 
     ![Microsoft 端點 Configuration Manager 的圖像 wizard9](images/configmgr-confirm.png)
 
@@ -118,8 +118,8 @@ ms.locfileid: "51186398"
 本節會引導您使用 Windows 裝置上的 Microsoft Endpoint Configuration Manager 來設定下列功能：
 
 - [**端點偵測及回應**](#endpoint-detection-and-response)
-- [**下一代保護**](#next-generation-protection)
-- [**受攻擊面縮小**](#attack-surface-reduction)
+- [**新一代保護**](#next-generation-protection)
+- [**攻擊面縮減**](#attack-surface-reduction)
 
 
 ### <a name="endpoint-detection-and-response"></a>端點偵測及回應
@@ -264,7 +264,7 @@ Microsoft Defender 防毒軟體是一套內建的反惡意程式碼解決方案�
 
 完成此工作之後，您現在已成功設定 Windows Defender 防毒軟體。
 
-### <a name="attack-surface-reduction"></a>受攻擊面縮小
+### <a name="attack-surface-reduction"></a>攻擊面縮小
 Pillar 的 Defender for Endpoint 的攻擊面減少包含可在 Exploit Guard 下使用的功能集。 攻擊面減少 (ASR) 規則、受控資料夾存取、網路保護和 Exploit Protection。 
 
 所有這些功能都會提供一個稽核模式和封鎖模式。 在審計模式中，不會影響使用者。 所有的功能都是收集其他遙測，並使其可在 Microsoft Defender Security Center 中使用。 部署的目標在於逐步將安全性控制措施移至區塊模式。
@@ -389,4 +389,4 @@ Pillar 的 Defender for Endpoint 的攻擊面減少包含可在 Exploit Guard �
 您現在已成功設定稽核模式中的「控制資料夾存取」。
 
 ## <a name="related-topic"></a>相關主題
-- [使用 Microsoft 端點管理員上架](onboarding-endpoint-manager.md)
+- [使用 Microsoft 端點管理員上線](onboarding-endpoint-manager.md)

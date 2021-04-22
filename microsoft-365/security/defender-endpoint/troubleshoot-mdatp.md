@@ -1,7 +1,7 @@
 ---
-title: 疑難排解 Microsoft Defender for Endpoint service 問題
+title: 為適用於端點的 Microsoft Defender 服務問題疑難排解
 description: 尋找已知問題（如嘗試存取服務時的伺服器錯誤）的解決方案和解決方法。
-keywords: 疑難排解 microsoft defender for endpoint、疑難排解 Windows ATP、伺服器錯誤、拒絕存取、無效認證、沒有資料、儀表板入口網站、允許事件檢視器
+keywords: 疑難排解 Microsoft Defender 的端點、伺服器錯誤、存取權被拒絕、不正確認證、沒有資料、儀表板入口網站、允許、事件檢視器
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 112f682836da37ddfb51c103282518ff74563727
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 81f1b4154de25f6186679adc5b1f24f78f302415
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186014"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933754"
 ---
-# <a name="troubleshoot-service-issues"></a>疑難排解服務問題
+# <a name="troubleshoot-service-issues"></a>為服務問題疑難排解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "51186014"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 本節說明當您使用 Microsoft Defender Advanced 威脅服務時可能會發生的問題。
@@ -77,10 +77,10 @@ ms.locfileid: "51186014"
 **使用逗號表示千位數**<br>
 不支援使用逗點做為數位中的分隔符號。 當地區以逗號隔開以表示一千時，將只會看到使用點做為分隔字元。 例如，15，「15.5 K」會顯示為 K。
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>已在歐洲自動建立 Microsoft Defender for Endpoint 租使用者
-當您使用 Azure Security Center 監控伺服器時，會自動建立 Microsoft Defender for Endpoint 租使用者。 Microsoft Defender for Endpoint data 預設會儲存在歐洲。
+當您使用 Azure Defender 監視伺服器時，會自動建立 Microsoft Defender for Endpoint 租使用者。 Microsoft Defender for Endpoint data 預設會儲存在歐洲。
 
 
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP 中的高級搜尋概述
-description: 在 Microsoft Defender ATP 中使用威脅搜尋功能來建立查詢，以找出網路的威脅和弱點
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、mdatp、microsoft defender atp、wdatp、搜尋、查詢、遙測、自訂偵測、架構、kusto、時區、UTC
+title: Microsoft Defender for Endpoint 中的高級搜尋概覽
+description: 在 Microsoft Defender for Endpoint 中使用威脅搜尋功能來建立查詢，以找出網路的威脅和弱點
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft Defender for Endpoint、搜尋、查詢、遙測、自訂偵測、架構、kusto、時區、UTC
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e5f29874ae42f2b82906a5ac0d2e615009d499f
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 114c0192f77411016fcb13ec2b912f4440ffa6e0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615480"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934354"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>使用高級搜尋主動搜尋威脅
 
@@ -30,7 +30,7 @@ ms.locfileid: "51615480"
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
 進階搜捕是一種查詢式威脅搜捕工具，可讓您探索最多 30 天的原始資料。 您可以主動檢查您網路中的事件，以找出威脅指示器和實體。 對資料的靈活存取可對已知和潛在的威脅進行無限制的搜尋。
 

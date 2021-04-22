@@ -1,7 +1,7 @@
 ---
 title: 利用威脅和弱點管理修正弱點
 description: 修正透過安全性建議所發現的安全性弱點，視需要在威脅和弱點管理中建立例外狀況。
-keywords: microsoft defender for endpoint tvm 修復，mdatp tvm，威脅和弱點管理，威脅 & 漏洞管理，威脅 & 漏洞管理修正，tvm 修正 intune，tvm 修正 sccm
+keywords: Microsoft Defender for Endpoint tvm 修復，Microsoft Defender for Endpoint tvm，威脅和弱點管理，威脅 & 漏洞管理，威脅 & 漏洞管理修正，tvm 修復 intune，tvm 修正 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be24528c2337c5d2616eb1bf69906f60ae7b4375
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 56b6c809e31285bbfae47a5fdcc0446890919e8b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689362"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934066"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>利用威脅和弱點管理修正弱點
 
@@ -34,7 +34,7 @@ ms.locfileid: "51689362"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="request-remediation"></a>要求修正
 

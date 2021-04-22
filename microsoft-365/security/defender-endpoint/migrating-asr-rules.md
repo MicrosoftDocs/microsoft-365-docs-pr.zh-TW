@@ -1,7 +1,7 @@
 ---
 title: 從協力廠商 HIPS 遷移到 ASR 規則
 description: 說明如何使用協力廠商主機入侵防護系統 (HIPS) 解決方案以 ASR 規則的方式進行遷移。
-keywords: 攻擊面減少規則，asr，asr rules，hips，主機入侵防護系統，保護規則，反入侵，antiexploit，exploit，感染防護，Microsoft Defender for Endpoint，Microsoft Defender ATP
+keywords: 攻擊面減少規則，asr，asr rules，hips，主機入侵防護系統，保護規則，反入侵，antiexploit，exploit，感染防護，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 5b2c6c12de7b87a045a81a552e3fe74b4829e94d
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764780"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933778"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>從協力廠商 HIPS 遷移到 ASR 規則
 
@@ -69,7 +69,7 @@ ms.locfileid: "51764780"
 - **處理** 程式-outlook.exe
 - 作業流程執行
 - 檔案 **/資料夾、登錄機碼/值、進程、服務 powershell.exe 的範例**
-- **攻擊面減少規則**-ASR 規則具有內建的規則，可防止 Outlook、Skype 和團隊 (的 Outlook、Skype 和團隊) 啟動子流程：「封鎖 office communication application 以建立子進程」，GUID "26190899-1602-49e8-8b27-eb1d0a1ce869"。
+- **攻擊面減少規則**-ASR 規則具有內建規則，可防止 Office 通訊應用程式 (Outlook、Skype 和團隊) 啟動子流程：「封鎖 office communication application 以建立子進程」，GUID "26190899-1602-49e8-8b27-eb1d0a1ce869"。
 - **其他建議的功能**-建議您啟用 PowerShell 限制語言模式，以將攻擊面從 PowerShell 中降到最低。
 
 
@@ -137,7 +137,7 @@ ms.locfileid: "51764780"
 - **攻擊面減少規則**-總的來說，ASR 規則並非設計為應用程式管理員運作。
 - **其他建議的功能**-若要避免使用者啟動特定進程或程式，建議使用 Windows Defender 應用程式控制項。 Microsoft Defender for Endpoint File 和 Cert 指示器可以用於事件回應案例中 (不應該視為應用程式控制機制) 。
     
-### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>封鎖 MDATP AV 設定未經授權的變更
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>封鎖 Microsoft Defender 防病毒設定對未經授權的變更
 
 - **適用于**-所有流程
 - **進程**-*

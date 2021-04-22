@@ -1,7 +1,7 @@
 ---
 title: 裝置用 Microsoft 安全分數
 description: 您的裝置得分會顯示跨應用程式、作業系統、網路、帳戶及安全性控制裝置的集合安全性設定狀態。
-keywords: 適用于裝置的 microsoft 安全分數，mdatp Microsoft 安全計分的裝置、安全分數、設定分數、威脅與弱點管理、安全性控制、改進機會、安全性設定分數、安全性狀況、基準
+keywords: 適用于裝置的 microsoft 安全分數、Microsoft Defender for 裝置的端點 Microsoft 安全評分、安全分數、設定分數、威脅和弱點管理、安全性控制、改進機會、安全性設定分數隨時間、安全性狀況、基準
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fcf33b309045b9ca763b0d3cabc44fb13505ee0b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: f2c799d477c400482c16b09b4d8a5cdc01106dfa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500060"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934078"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>裝置用 Microsoft 安全分數
 
@@ -35,7 +35,7 @@ ms.locfileid: "51500060"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 >[!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 疑難排解 macOS 中的 Microsoft Defender for Endpoint 的內核擴充問題
 description: 疑難排解 macOS 中的 Microsoft Defender for Endpoint 中的內核擴充相關問題。
-keywords: microsoft，defender，atp，mac，內核，擴充
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，內核，分機
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32a4819f7a607c69b4dbf45b3284b2f4ea66ffc4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9dc3ee17d79972b5d36c5fff58fbe4cc486027bd
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689650"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934270"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 macOS 中的 Microsoft Defender for Endpoint 的內核擴充問題
 
@@ -32,11 +32,11 @@ ms.locfileid: "51689650"
 
 **適用於：**
 
-- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 上適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 本文提供如何疑難排解在 macOS 的 Microsoft Defender for Endpoint 中安裝之核心擴充問題的相關資訊。
 

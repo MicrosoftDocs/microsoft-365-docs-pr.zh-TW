@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender
 description: Microsoft 365 Defender 是一個協同的威脅防護解決方案，其設計目的是為了保護裝置、身分識別、資料和應用程式
-keywords: Microsoft 威脅防護簡介，網路安全性，高級持續性威脅，企業安全性，裝置，裝置，身分識別，使用者，資料，應用程式，事件，自動化調查和修正，高級搜尋
+keywords: MMicrosoft 365 Defender，網路安全性，高級持續性威脅，企業安全性，裝置，裝置，身分識別，使用者，資料，應用程式，事件，自動化調查和修正，高級搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 86bc6ef03438b637f62cf0e2a46e418dbea7a3c1
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 32defdf459ec65ba0fd268a5a7c84851e9014efa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650275"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934042"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 

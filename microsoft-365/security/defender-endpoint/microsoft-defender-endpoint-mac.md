@@ -2,7 +2,7 @@
 title: Mac 上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 瞭解如何在 Mac 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
-keywords: microsoft、defender、atp、mac、安裝、部署、卸載、intune、jamf、macos、big sur、catalina、mojave、mde for mac
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，安裝，deploy，卸載，intune，jamf，macos，big sur，catalina，mojave，mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 705b1fffbc38282441f66e0dc411cf09699cb3f9
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: b5af93e82f72bac900682b2e231453e448b267d9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903763"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934186"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 

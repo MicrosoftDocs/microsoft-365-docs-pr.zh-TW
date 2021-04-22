@@ -1,7 +1,7 @@
 ---
 title: 建立及查看安全性建議的例外狀況-威脅和弱點管理
 description: 針對威脅和弱點管理中的安全性建議建立及監視例外狀況。
-keywords: microsoft defender for endpoint tvm 修復，mdatp tvm，威脅和弱點管理，威脅 & 漏洞管理，威脅 & 漏洞管理修正，tvm 修正 intune，tvm 修正 sccm
+keywords: Microsoft Defender for Endpoint tvm 修復，Microsoft Defender for Endpoint tvm，威脅和弱點管理，威脅 & 漏洞管理，威脅 & 漏洞管理修正，tvm 修復 intune，tvm 修正 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1af8e5ec9d3aef560c739de5212e8118cf89cd7a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689410"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933742"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>建立及查看安全性建議的例外狀況-威脅和弱點管理
 
@@ -36,7 +36,7 @@ ms.locfileid: "51689410"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 如果目前沒有相關建議，則為修正要求的替代，您可以為建議建立例外狀況。 如果您的組織有裝置群組，您就可以將例外狀況限定為特定裝置群組。 您可以為選取的裝置群組或所有已過去及呈現的裝置群組建立例外狀況。  
 

@@ -1,6 +1,6 @@
 ---
-title: 查看和組織 Microsoft Defender ATP 警示佇列
-description: 瞭解 Microsoft Defender ATP 警示佇列的運作方式，以及如何排序和篩選警示清單。
+title: 查看和組織 Microsoft Defender for Endpoint 警示佇列
+description: 瞭解 Microsoft Defender for Endpoint 警示佇列的運作方式，以及如何排序和篩選警示清單。
 keywords: 警示，佇列，警示佇列，排序，順序，篩選，管理提醒，新增，進行中，已解決、最近、佇列中的時間、嚴重性、時間週期、microsoft 威脅專家警示
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: e1c85db5afac70ec4f2520eed55dcc4f3773fd03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060227"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934330"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>查看和組織 Microsoft Defender for Endpoint 警示佇列
 
@@ -31,7 +31,7 @@ ms.locfileid: "51060227"
 **適用於：**
 - [適用於端點的 Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
 **警示佇列** 顯示從您網路中的裝置標記的警示清單。 依預設，佇列會顯示過去30天的分組視圖中看到的警示。 最新的提醒會顯示在清單的頂端，可協助您先看到最近的警示。
 
@@ -61,7 +61,7 @@ ms.locfileid: "51060227"
 高 </br> (Red)  | 與高級持續性威脅 (APT) 相關聯的警示。 這些警示指出高風險，因為它們可能會對裝置造成損毀。 一些範例包括：認證盜竊工具活動、未與任何群組相關聯的勒索軟體活動、篡改安全性感應器，或任何惡意活動表示的人體敵人。
 中 </br> (橙色)  | Endpoint 偵測的警示，以及可能是「高級持續性」威脅 (APT) 部分的入侵後行為。 這包括常見的攻擊階段、反常登錄變更、可疑檔案執行等的觀察行為。 雖然有些可能是內部安全性測試的一部分，但它需要進行調查，因為它也可能是高級攻擊的一部分。
 低 </br> (黃色)  | 與流行惡意程式碼相關聯的威脅警示。 例如，駭客的非惡意程式碼駭客工具（例如執行探索命令、清除記錄等）通常不表示組織的高級威脅。 它也可以來自組織中的使用者所進行的隔離安全性工具測試。
-資訊 </br> (灰色)  | 可能不會被視為對網路有害，但可促進組織對潛在安全性問題的安全性意識的警示。
+參考 </br> (灰色)  | 可能不會被視為對網路有害，但可促進組織對潛在安全性問題的安全性意識的警示。
 
 #### <a name="understanding-alert-severity"></a>瞭解警示嚴重性
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862088"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934450"
 ---
 # <a name="overview-of-management-and-apis"></a>管理和 API 概觀 
 
@@ -41,7 +41,7 @@ ms.locfileid: "51862088"
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>端點上架和入口網站存取 
 
-裝置上架已完全整合至 Microsoft 端點管理員和 Microsoft Intune for 用戶端裝置和 Azure Security Center for server 裝置，提供設定、部署和監控的完整端對端體驗。 此外，Microsoft Defender for Endpoint 會支援用於裝置管理的群組原則及其他協力廠商工具。
+裝置上架已完全整合至 Microsoft 端點管理員和 Microsoft Intune for 用戶端裝置和 Azure Defender for server 裝置，提供設定、部署和監控的完整端對端體驗。 此外，Microsoft Defender for Endpoint 會支援用於裝置管理的群組原則及其他協力廠商工具。
 
 Defender for Endpoint 提供精細的控制，可讓具有入口網站存取權的使用者透過角色型存取控制 (RBAC) 的彈性來查看並執行。 RBAC 模型支援所有的安全性小組結構類型：
 - 全域分散式組織和安全小組

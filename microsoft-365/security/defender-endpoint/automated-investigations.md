@@ -1,7 +1,7 @@
 ---
 title: 使用自動調查以調查和修正威脅
 description: 瞭解 Microsoft Defender for Endpoint 中的自動調查流程。
-keywords: 自動化、調查、偵測、defender atp
+keywords: 自動化，調查，偵測，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 7143a360fb7093f94c6f66373587e1c895dd3213
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5ea869d4016cc794b3046a664c1519f6b3250c67
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200302"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933970"
 ---
 # <a name="overview-of-automated-investigations"></a>自動化調查的概述
 
@@ -46,7 +46,7 @@ ms.locfileid: "51200302"
 本文提供 AIR 的概述，並包含後續步驟和其他資源的連結。
 
 > [!TIP]
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)。
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [註冊免費試用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)。
 
 ## <a name="how-the-automated-investigation-starts"></a>自動化調查的開始方式
 

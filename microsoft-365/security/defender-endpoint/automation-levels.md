@@ -1,7 +1,7 @@
 ---
 title: 自動化調查和修正中的自動化層級
 description: 深入瞭解自動化層級，以及如何在 Microsoft Defender for Endpoint 中運作
-keywords: 自動化、調查、層級、defender atp
+keywords: 自動化、調查、層級、Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: bb3e8c468983622d780ca185640c2816316bfd48
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 013e01e9f84cae01258afc6ba139b7b5ada5912f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165318"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934114"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自動化調查和修正功能的自動化層級
 
@@ -49,7 +49,7 @@ ms.locfileid: "51165318"
 |自動化層級 | 描述|
 |:---|:---|
 |**自動修正威脅** <br/> (也稱為「 *完全自動化* 」) | 完全自動化時，會自動執行修正動作。 您可以在 [**記錄**] 索引標籤的 [[動作中心](auto-investigation-action-center.md)] 中查看所有採取的修復動作。如有必要，可復原修復動作。<br/><br/>**_建議使用「完全自動化_* 」，且預設為在2020年8月16日或之後所建立的承租人中，但未定義任何裝置群組。*  |
-|**半要求進行任何修正的核准** <br/> (也稱為 *半自動化*) | 有了這一層級的半自動， *任何* 修正動作都必須進行核准。 在 [**暫** 止] 索引標籤上，您可以在 [[行動中心](auto-investigation-action-center.md)] 中查看和核准這類待定的動作。<br/><br/>*預設會為在8月 16 2020 日之前所建立的承租人選取此部分，但未定義任何裝置群組。*|
+|**半要求進行任何修正的核准** <br/> (也稱為 *半自動化*) | 有了這一層級的半自動， *任何* 修正動作都必須進行核准。 在 [**暫** 止] 索引標籤上，您可以在 [[行動中心](auto-investigation-action-center.md)] 中查看和核准這類待定的動作。<br/><br/>*預設會為在8月 16 2020 日之前所建立的承租人選取此部分，但不定義任何裝置群組。*|
 |**半自動要求核心資料夾修正的核准** <br/>此外，還 (一種 *半自動化*)   | 在具有這種基本自動化的情況下，必須針對核心資料夾中的檔案或可執行檔所需的任何修正動作進行核准。 核心資料夾包括作業系統目錄，例如 **Windows** (`\windows\*`) 。<br/><br/>修正動作可自動在其他 (非核心) 資料夾中的檔案或可執行檔上加以採取。 <br/><br/>在核心資料夾中的檔案或可執行檔的擱置動作，可在 [**擱置**] 索引標籤上的 [[行動中心](auto-investigation-action-center.md)] 中查看和核准。 <br/><br/>在 [**記錄**] 索引標籤上，可以在 [[行動中心](auto-investigation-action-center.md)] 中查看對其他資料夾中的檔案或可執行檔所採取的動作。 |
 |**非 temp 資料夾修正的半要求核准** <br/>此外，還 (一種 *半自動化*) | 使用此半高層級時，必須對 *不* 在暫存資料夾中之檔案或可執行檔的任何修正動作進行核准。 <br/><br/>暫存資料夾可包含下列範例： <br/>- `\users\*\appdata\local\temp\*`<br/>- `\documents and settings\*\local settings\temp\*` <br/>- `\documents and settings\*\local settings\temporary\*`<br/>- `\windows\temp\*`<br/>- `\users\*\downloads\*`<br/>- `\program files\` <br/>- `\program files (x86)\*`<br/>- `\documents and settings\*\users\*`<br/><br/>您可以在暫存資料夾中的檔案或可執行檔上自動採取修正動作。 <br/><br/>在 [**暫** 止] 索引標籤的 [動作中心] 中，您可以在「[動作中心](auto-investigation-action-center.md)」中查看並核准未在暫存資料夾中的檔案或可執行檔。<br/><br/>您可以在 [行動中心](auto-investigation-action-center.md)的 [ **記錄** ] 索引標籤上，查看並核准對暫存資料夾中的檔案或可執行檔採取的動作。   |
 |**無自動回應** <br/> (也稱為「 *沒有自動化* 」)  | 無自動化，自動化調查不會在您組織的裝置上執行。 因此，由於自動調查，不會採取任何修正動作，也不會擱置。 不過，其他威脅防護功能（例如 [防禦可能有害的應用程式](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)）可能會生效，視如何設定您的防病毒和下一代保護功能而定。<br/><br/>***不建議使用 [ *不自動化* ] 選項**，因為它會降低組織裝置的安全性狀況。 [請考慮將您的自動化層級設定為 [完全 (自動化]，或至少半自動) ](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups)*。 |

@@ -1,7 +1,7 @@
 ---
 title: 執行您的試驗 Microsoft 365 Defender 專案
 description: 在生產環境中執行您的試驗 Microsoft 365 Defender 專案，以有效判斷 Microsoft 365 Defender 的優點和採用方式。
-keywords: Microsoft 威脅防護試驗，執行試驗 Microsoft 威脅防護專案，評估 Microsoft 威脅防護中的實際執行、Microsoft 威脅防護試驗專案、網路安全性、高級持續性威脅、企業安全性、裝置、裝置、身分識別、使用者、資料、應用程式、事件、自動化調查和修正，以及高級搜尋
+keywords: Microsoft 365 Defender 試驗，執行 Microsoft 365 Defender project，評估 Microsoft 365 Defender in 實際執行，Microsoft 365 Defender 試驗專案，網路安全性，高級持續性威脅，企業安全性，裝置，裝置，身分識別，使用者，資料，應用程式，事件，自動化調查和修正，高級搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1dd310d962cbce2b339cf09d5be6317c227d3f13
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b1616b39597a90ff8e8f7b4c92f29f75c62fea18
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060387"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934426"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>執行您的試驗 Microsoft 365 Defender 專案 
 
@@ -50,9 +50,9 @@ ms.locfileid: "51060387"
 本指南概要說明 Microsoft 365 Defender 及如何設定試驗專案的逐步指示。 
 
 Microsoft 365 Defender 是一種整合的後續企業防護套件，其可共同協調各端點、身分識別、電子郵件和應用程式的保護、偵測、防護、調查和回應，以提供複雜攻擊的整合式防護。 這樣做的方式是將下列功能結合到單一安全性解決方案中：
-  - Microsoft Defender for Endpoint，Microsoft Defender 高級威脅防護的新名稱 (端點) 
-  - Microsoft Defender for Office 365，新的 Office 365 ATP 名稱 (電子郵件)  
-  - Microsoft Defender 身分識別，Azure ATP (身分識別的新名稱)  
+  - Microsoft Defender for Endpoint (端點) 
+  - Microsoft Defender for Office 365 (電子郵件)  
+  - Microsoft Defender 身分識別 (身分識別)  
   - Microsoft Cloud App Security (app) 
 
 ![影像 of_Microsoft 365 Defender 解決方案，適用于使用者、Microsoft Defender 身分識別、端點 Microsoft Defender for Endpoint、雲端應用程式、Microsoft Cloud App Security 及 data、Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)

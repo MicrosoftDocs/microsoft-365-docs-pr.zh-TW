@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: a8b7268e89470a85a34015967b69abb1818fe64f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222647"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933838"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>使用事件檢視器審閱事件和錯誤
 
@@ -34,7 +34,7 @@ ms.locfileid: "51222647"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 您可以在個別裝置的 [事件檢視器](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) 中審閱事件 IDs。
 
@@ -68,13 +68,13 @@ ms.locfileid: "51222647"
 <td>正常運作通知;不需要任何動作。</td>
 </tr>
 <tr>
-<td>2 </td>
+<td>第</td>
 <td>Microsoft Defender for Endpoint service 關閉。</td>
 <td>當裝置關閉或 offboarded 時會發生此事件。</td>
 <td>正常運作通知;不需要任何動作。</td>
 </tr>
 <tr>
-<td>3 </td>
+<td>個</td>
 <td>無法啟動 Microsoft Defender for Endpoint service。 失敗代碼： <code>variable</code> 。</td>
 <td>服務未啟動。</td>
 <td>請複查其他訊息，以判斷可能的原因及疑難排解步驟。</td>
@@ -301,13 +301,13 @@ ms.locfileid: "51222647"
 </tr>
 <tr>
 <td>42</td>
-<td>Microsoft Defender for Endpoint WDATP 元件無法執行動作。 元件： %1，動作： %2，例外狀況類型： %3，例外訊息： %4</td>
+<td>Microsoft Defender for Endpoint 元件無法執行動作。 元件： %1，動作： %2，例外狀況類型： %3，例外訊息： %4</td>
 <td>內部錯誤。 無法啟動服務。</td>
 <td>如果此錯誤仍然存在，請與支援人員聯繫。</td>
 </tr>
 <tr>
 <td>43</td>
-<td>Microsoft Defender for Endpoint WDATP 元件無法執行動作。 元件： %1，動作： %2，例外狀況類型： %3，例外錯誤： %4，例外資訊： %5</td>
+<td>Microsoft Defender for Endpoint 元件無法執行動作。 元件： %1，動作： %2，例外狀況類型： %3，例外錯誤： %4，例外資訊： %5</td>
 <td>內部錯誤。 無法啟動服務。</td>
 <td>如果此錯誤仍然存在，請與支援人員聯繫。</td>
 </tr>
@@ -482,13 +482,13 @@ ms.locfileid: "51222647"
 </tr>
 <tr>
    <td>81</td>
-   <td>無法建立 Windows Defender 高級威脅防護 ETW 自動記錄器。 失敗代碼： %1</td>
+   <td>無法為端點 ETW 自動記錄器建立 Microsoft Defender。 失敗代碼： %1</td>
    <td>無法建立 ETW 會話。</td>
    <td>重新開機裝置。 如果此錯誤仍然存在，請與支援人員聯繫。</td>
 </tr>
 <tr>
    <td>82</td>
-   <td>無法移除 Windows Defender 高級威脅防護 ETW 自動記錄器。 失敗代碼： %1</td>
+   <td>無法為端點 ETW 自動記錄器移除 Microsoft Defender。 失敗代碼： %1</td>
    <td>無法刪除 ETW 會話。</td>
    <td>聯繫支援人員。</td>
 </tr>
@@ -500,7 +500,7 @@ ms.locfileid: "51222647"
 </tr>
 <tr>
    <td>85</td>
-   <td>無法觸發 Windows Defender 高級威脅防護可執行檔。 失敗代碼： %1</td>
+   <td>無法觸發 Microsoft Defender for Endpoint executable。 失敗代碼： %1</td>
    <td>Starring SenseIR 可執行檔失敗。</td>
    <td>重新開機裝置。 如果此錯誤仍然存在，請與支援人員聯繫。</td>
 </tr>
@@ -554,19 +554,19 @@ ms.locfileid: "51222647"
 </tr>
 <tr>
    <td>94</td>
-   <td>已開始 Windows Defender 高級威脅防護可執行檔</td>
+   <td>Microsoft Defender for Endpoint executable 已開始</td>
    <td>SenseCE 可執行檔已開始。</td>
    <td>正常運作通知;不需要任何動作。</td>
 </tr>
 <tr>
    <td>95</td>
-   <td>Windows Defender 高級威脅防護可執行檔已結束</td>
+   <td>Microsoft Defender for Endpoint 可執行檔已結束</td>
    <td>SenseCE 可執行檔已結束。</td>
    <td>正常運作通知;不需要任何動作。</td>
 </tr>
 <tr>
    <td>96</td>
-   <td>已呼叫 Windows Defender 高級威脅防護初始化。 結果代碼： %2</td>
+   <td>Microsoft Defender for Endpoint Init 已呼叫。 結果代碼： %2</td>
    <td>SenseCE 可執行檔叫用 MCE 初始化。</td>
    <td>正常運作通知;不需要任何動作。</td>
 </tr>
@@ -590,28 +590,28 @@ ms.locfileid: "51222647"
 </tr>
 <tr>
    <td>100</td>
-   <td>無法啟動 Windows Defender 高級威脅防護可執行檔。 失敗代碼： %1</td>
+   <td>無法啟動 Microsoft Defender for Endpoint to executable。 失敗代碼： %1</td>
    <td>SenseCE 可執行檔無法啟動。</td>
    <td>重新開機裝置。 如果此錯誤仍然存在，請與支援人員聯繫。</td>
 </tr>
 <tr>
    <td>102</td>
-   <td>Windows Defender 高級威脅防護網路偵測和回應可執行檔已開始</td>
+   <td>Microsoft Defender for Endpoint 網路偵測和回應可執行檔已開始</td>
    <td>SenseNdr 可執行檔已開始。</td>
    <td>正常運作通知;不需要任何動作。</td>
 </tr>
 <tr>
    <td>103</td>
-   <td>Windows Defender 高級威脅防護網路偵測和回應可執行檔已結束</td>
+   <td>Microsoft Defender for Endpoint 網路偵測和回應可執行檔已結束</td>
    <td>SenseNdr 可執行檔已結束。</td>
    <td>正常運作通知;不需要任何動作。</td>
 </tr>
 </tbody>
 </table>
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## <a name="related-topics"></a>相關主題
-- [板載 Windows 10 裝置](configure-endpoints.md)
+- [將 Windows 10 裝置上線](configure-endpoints.md)
 - [設定裝置 proxy 和網際網路連線設定](configure-proxy-internet.md)
-- [疑難排解 Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
+- [為適用於端點的 Microsoft Defender 疑難排解](troubleshoot-onboarding.md)

@@ -1,7 +1,7 @@
 ---
 title: 適用於美國政府客戶的適用於端點的 Microsoft Defender
 description: 瞭解適用于美國政府客戶需求和功能的 Microsoft Defender for Endpoint
-keywords: 政府，gcc，high，必要條件，功能，defender，defender atp，mdatp，端點，dod
+keywords: 政府，gcc，high，必要條件，功能，defender，Microsoft Defender for Endpoint，endpoint，dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 320913058f1d3cab36b3a279996443c2e4ef117f
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 16a7d289889940754a6d56058544a675b31192be
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382910"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933994"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>適用於美國政府客戶的適用於端點的 Microsoft Defender
 
@@ -82,7 +82,7 @@ Windows 10，版本1709 | ![否](images/svg/check-no.svg)<br />附注：不支�
 Windows 10、版本1703及更早版本 | ![否](images/svg/check-no.svg)<br />附注：不支援 | ![否](images/svg/check-no.svg)<br />附注：不支援 | ![否](images/svg/check-no.svg)<br />附注：不支援
 使用 [KB4586839](https://support.microsoft.com/help/4586839)) 的 Windows Server 2019 ( | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 8.1 企業版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 8 Pro | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -108,7 +108,7 @@ iOS | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](image
 作業系統版本 | GCC | GCC High | DoD
 :---|:---|:---|:---
 Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 
 <br />

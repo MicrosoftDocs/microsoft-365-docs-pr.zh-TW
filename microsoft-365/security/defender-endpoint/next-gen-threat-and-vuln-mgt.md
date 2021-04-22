@@ -1,7 +1,7 @@
 ---
 title: 威脅與弱點管理
 description: 這項新功能使用以遊戲為基礎的風險方式，來探索、優先順序和修正端點漏洞與錯誤配置。
-keywords: 威脅 & 漏洞管理、威脅和弱點管理、MDATP TVM、MDATP-TVM、弱點管理、弱點評估、威脅和弱點掃描、安全設定評估、microsoft defender for endpoint、microsoft defender atp、端點漏洞、下一代
+keywords: 威脅 & 漏洞管理、威脅和弱點管理、Microsoft Defender for Endpoint TVM、Microsoft Defender for Endpoint TVM、弱點管理、弱點評估、威脅和弱點掃描、安全設定評估、Microsoft Defender for Endpoint、端點漏洞、下一代
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: e9c575aa8968b8cab2c5d91b9fe0b1cb46b292d3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 474b8f032d32668eaea3a477da013c2b8e74019b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860758"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934162"
 ---
 # <a name="threat-and-vulnerability-management"></a>威脅與弱點管理
 

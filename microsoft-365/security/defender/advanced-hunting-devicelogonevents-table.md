@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 DeviceLogonEvents 表格
 description: 深入瞭解高級搜尋架構的 DeviceLogonEvents 資料表中的驗證或登入事件
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，資料表，欄，資料類型，描述，logonevents，DeviceLogonEvents，authentication，logon，登入
+keywords: 「高級搜尋」、「威脅搜尋」、「網路威脅搜尋」、「Microsoft 365 Defender」、「microsoft 365」、「搜尋」、「查詢」、「遙測」、「架構參考」、「m365」、「資料類型」、「描述」、「logonevents、DeviceLogonEvents、驗證
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 781013878ee0aa097780ca6bb646cb956c93149d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 62e0179f4a8c7b45d0c9743d2f133f9a10fb4c24
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498535"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934054"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 

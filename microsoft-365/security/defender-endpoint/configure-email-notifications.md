@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中設定警示通知
 description: 您可以使用 Microsoft Defender for Endpoint，根據嚴重性和其他準則，設定安全性警示的電子郵件通知設定。
-keywords: 電子郵件通知，設定警示通知，microsoft defender for endpoint，microsoft defender for endpoint 通知，microsoft defender for endpoint alert，windows 10 企業版，windows 10 教育版
+keywords: 電子郵件通知，設定警示通知，Microsoft Defender for Endpoint，Microsoft defender for endpoint 通知，Microsoft Defender for Endpoint alert，windows 10 企業版，windows 10 教育版
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b629d6a90931026ce28ce241e74d490ce67c6962
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893623"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933946"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定警示通知
 

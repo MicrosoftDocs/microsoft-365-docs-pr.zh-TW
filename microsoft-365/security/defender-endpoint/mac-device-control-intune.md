@@ -1,7 +1,7 @@
 ---
 title: Intune 裝置控制原則的範例
 description: 瞭解如何使用可搭配 Intune 使用的範例裝置控制項原則。
-keywords: microsoft，defender，atp，mac，device，control，usb，可移動，媒體，intune
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，device，control，usb，可移動，媒體，intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79ec47aa2ea440ee46647acf53c77906e32a80ff
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a7521a31b0b31fb95d2729f7068bfc9de5717f01
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187694"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933814"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Intune 裝置控制原則的範例
 
@@ -33,7 +33,7 @@ ms.locfileid: "51187694"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

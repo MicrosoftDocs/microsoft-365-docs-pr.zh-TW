@@ -1,7 +1,7 @@
 ---
 title: 使用攻擊面減少規則，以防止惡意程式碼感染
 description: 攻擊面減少規則可協助防止利用應用程式和腳本感染具有惡意程式碼的裝置。
-keywords: 攻擊面減少規則，asr，hips，主機入侵防護系統，保護規則，反侵入，antiexploit，exploit，感染防護，Microsoft Defender for Endpoint，Microsoft Defender ATP
+keywords: 攻擊面減少規則，asr，hips，主機入侵防護系統，保護規則，反侵入，antiexploit，exploit，感染防護，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8790d959dc41e3edea684c66e556a2ec67f85ae1
-ms.sourcegitcommit: 0fe5989b7ee2f7ae0181f2781e31db7f58689441
+ms.openlocfilehash: 98f04a9aa34fda78c7caba2f6cb71c135428784f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697524"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933982"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
@@ -135,7 +135,7 @@ DeviceEvents
 2. 在 [開始] 功能表中輸入文字 [ *事件查看* 器]，以開啟 Windows 事件檢視器。
 3. 在 [ **動作**] 下，選取 [匯 **入自訂視圖 ...**]。
 4. 從解壓縮的位置選取檔案 *cfa-events.xml* 。 或者， [直接複製 XML](event-views.md)。
-5. 選取 **[確定]**。
+5. 選取 [確定]。
 
 您可以建立篩選事件只顯示下列事件的自訂視圖，這些事件都與「受控資料夾存取」有關：
 

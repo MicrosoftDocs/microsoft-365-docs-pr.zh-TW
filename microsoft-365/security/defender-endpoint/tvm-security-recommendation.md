@@ -1,7 +1,7 @@
 ---
 title: 威脅和弱點管理的安全性建議
 description: 取得依威脅及威脅及弱點管理中威脅和價值的可操作安全性建議。
-keywords: 威脅及弱點管理，mdatp tvm 安全性建議，cybersecurity 建議，可操作的安全性建議
+keywords: 威脅和弱點管理，Microsoft Defender for Endpoint tvm security 建議，cybersecurity 建議，可操作的安全性建議
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 97d496271c1ef7185419f7d39956da0429f070aa
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: af22bac911339de9c2e02df24a77c1889a33d43a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500482"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933730"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全性建議-威脅和弱點管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51500482"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 組織中所識別的 Cybersecurity 弱點會對應至可操作的安全性建議，並依其影響來設定優先順序。 優先的建議有助於縮短緩解或修復弱點的時間，以及促進法規遵從性。
 

@@ -1,7 +1,7 @@
 ---
 title: 上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
-description: 在虛擬桌面基礎結構上部署設定套件， (VDI) 裝置，使其架至 Microsoft Defender for Endpoint service。
-keywords: 設定虛擬桌面基礎結構 (VDI) 裝置，VDI，裝置管理，設定 Windows ATP 端點，設定 Microsoft Defender for Endpoint 端點
+description: 在虛擬桌面基礎結構 (VDI) 裝置上部署設定套件，使其架至 Microsoft Defender for Endpoint service。
+keywords: 設定虛擬桌面基礎結構 (VDI) 裝置、VDI、裝置管理、設定 Microsoft Defender for 端點、端點
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 1e970be7967e221c29017be804a98770a778654f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 3872be343e51c4e28f946192256932b048a23791
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892790"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933898"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
 

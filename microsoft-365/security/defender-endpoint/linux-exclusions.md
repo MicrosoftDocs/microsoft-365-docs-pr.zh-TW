@@ -1,7 +1,7 @@
 ---
 title: 在 Linux 上設定及驗證 Microsoft Defender for Endpoint 的排除專案
 description: 在 Linux 上提供及驗證 Microsoft Defender for Endpoint 的排除專案。 您可以為檔案、資料夾及處理常式設定排除。
-keywords: microsoft、defender、atp、linux、排除、掃描、防毒程式
+keywords: microsoft，defender，Microsoft Defender for Endpoint，linux，排除，掃描，防毒程式
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56fe152532b77f7f04c9edd52998fea83493adfe
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903937"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934294"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上設定及驗證 Microsoft Defender for Endpoint 的排除專案
 
@@ -38,18 +38,18 @@ ms.locfileid: "51903937"
 本文提供有關如何定義適用于隨選掃描和即時保護和監控之排除的資訊。
 
 > [!IMPORTANT]
-> 本文所述的排除項不適用於其他適用于 Linux 功能的 Defender （包括端點偵測和回應 (EDR) ）。 使用本文所述方法排除的檔案，仍然可以觸發 EDR 警示及其他偵測。
+> 本文所述的排除項不適用於 Linux 功能上的其他 Defender for Endpoint，包括端點偵測和回應 (EDR) 。 使用本文所述方法排除的檔案，仍然可以觸發 EDR 警示及其他偵測。
 
-您可以從適用于 Linux 掃描的 Defender for Endpoint，排除某些檔案、資料夾、處理常式及處理常式開啟的檔案。
+您可以從 Linux 掃描上的「Defender for Endpoint」排除某些檔案、資料夾、處理常式及處理常式開啟的檔案。
 
-排除在您的組織中，避免對檔或軟體的錯誤偵測非常有用。 它們也可以用來緩解由適用于 Linux 之 Defender 的性能問題所造成的。
+排除在您的組織中，避免對檔或軟體的錯誤偵測非常有用。 它們也可用於減輕由 Linux 上的 Defender for Endpoint 所導致的效能問題。
 
 > [!WARNING]
-> 定義排除項會降低 Defender for Linux 的 Endpoint 所提供的保護。 您應時刻評估與執行排除相關的風險，您應該只排除您確信不會惡意的檔案。
+> 定義排除項會降低在 Linux 上的 Defender for Endpoint 所提供的保護。 您應時刻評估與執行排除相關的風險，您應該只排除您確信不會惡意的檔案。
 
 ## <a name="supported-exclusion-types"></a>支援的排除類型
 
-下表顯示用於 Linux 之 Defender for Endpoint 所支援的排除類型。
+下表顯示在 Linux 上的 Defender for Endpoint 所支援的排除類型。
 
 排除 | 定義 | 範例
 ---|---|---
@@ -72,7 +72,7 @@ ms.locfileid: "51903937"
 
 ### <a name="from-the-management-console"></a>從管理主控台
 
-如需如何設定 Puppet、Ansible 或其他管理主控台之排除專案的詳細資訊，請參閱 [設定適用于 Linux 的 Defender For Endpoint 的首選項](linux-preferences.md)。
+如需如何設定 Puppet、Ansible 或其他管理主控台之排除專案的詳細資訊，請參閱 [設定 Linux 上的 Defender For Endpoint 的喜好設定](linux-preferences.md)。
 
 ### <a name="from-the-command-line"></a>從命令列
 
@@ -152,7 +152,7 @@ mdatp exclusion
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-如果「適用于 Linux 的 Endpoint 的 Defender」報告惡意程式碼，則該規則不會正常運作。 如果沒有惡意程式碼的報表，而且下載的檔案存在，則排除作業正常運作。 您可以開啟檔案，確認內容與 [eicar.txt test file 網站](http://2016.eicar.org/86-0-Intended-use.html)上所述的內容相同。
+如果在 Linux 上的 Defender for Endpoint 報告為惡意程式碼，則規則不會正常運作。 如果沒有惡意程式碼的報表，而且下載的檔案存在，則排除作業正常運作。 您可以開啟檔案，確認內容與 [eicar.txt test file 網站](http://2016.eicar.org/86-0-Intended-use.html)上所述的內容相同。
 
 如果您沒有網際網路存取權，可以建立您自己的 EICAR.TXT 測試檔案。 使用下列 Bash 命令，將 EICAR.TXT 字串寫入新的文字檔：
 

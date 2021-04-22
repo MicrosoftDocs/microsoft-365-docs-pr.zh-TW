@@ -1,7 +1,7 @@
 ---
 title: 在 Jamf Pro 中設定裝置群組
-description: 瞭解如何為 macOS 的 Microsoft Defender for Endpoint 設定 Jamf Pro 中的裝置群組
-keywords: device，group，microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，high 塞拉里昂
+description: 瞭解如何在 macOS 上為 Microsoft Defender for Endpoint 設定 Jamf Pro 中的裝置群組
+keywords: device，group，microsoft，defender，Microsoft Defender for Endpoint，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 80dcb4ff73edd5e95603b15e097232a43dc0e05e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 772b67ec84ae9614c9322763c140a60e7884644d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861596"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933802"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>在 Jamf Pro 中的 macOS 裝置群組上設定 Microsoft Defender for Endpoint
 

@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 AlertInfo 表格
 description: 深入瞭解高級搜尋架構的 AlertInfo 資料表中的警示產生事件
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，table，column，data type，MITRE，ATT&CK，Microsoft Defender ATP，MDATP，Office 365 ATP，Microsoft Cloud App Security，MCAS，and Azure ATP
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，advanced，category，MITRE，ATT&CK，Microsoft Defender for Endpoint，Microsoft Defender for Office 365，Microsoft Cloud App Security，MCAS，and Microsoft Defender for Identity
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1386830a4b3e05009b19a7d0e3a4ea62ce3321f2
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 69c9201dbc3458cd4ad09a72f2ea0d7ea3bb2d2a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499831"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933694"
 ---
 # <a name="alertinfo"></a>AlertInfo
 

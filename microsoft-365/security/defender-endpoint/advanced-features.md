@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903787"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934366"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -151,7 +151,7 @@ ms.locfileid: "51903787"
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender 用於身分識別整合
 
-與 Azure 高級威脅防護的整合，可讓您直接在 Microsoft Identity security 產品中直接旋轉。 Azure 高級威脅防護增強了有關可疑的帳戶和相關資源之其他深入資訊的調查。 透過啟用這項功能，您就可以透過從識別的觀點來切換網路，來充實裝置型調查功能。
+與 Microsoft Defender 身分識別的整合，可讓您直接在 Microsoft Identity security 產品中直接旋轉。 Microsoft Defender for Identity 會以其他有關可疑已遭破壞之帳戶和相關資源之深入瞭解的觀點來增強調查。 透過啟用這項功能，您就可以透過從識別的觀點來切換網路，來充實裝置型調查功能。
 
 > [!NOTE]
 > 您必須具有適當的授權，才能啟用此功能。
@@ -160,7 +160,7 @@ ms.locfileid: "51903787"
 
 只有當您具有使用中的 Office 365 E5 或威脅情報附加元件時，才可使用此功能。 如需詳細資訊，請參閱 Office 365 企業版 E5 產品頁面。
 
-當您開啟此功能時，您可以將 Office 365 高級威脅防護中的資料合併至 Microsoft Defender 安全中心，以在 Office 365 信箱和 Windows 裝置上進行全面的安全性調查。
+當您開啟此功能時，您可以將 Microsoft Defender for Office 365 中的資料合併至 Microsoft Defender 安全中心，以在 Office 365 信箱和 Windows 裝置上進行完整的安全性調查。
 
 > [!NOTE]
 > 您必須具有適當的授權，才能啟用此功能。

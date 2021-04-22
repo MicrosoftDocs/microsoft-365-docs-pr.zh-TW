@@ -1,7 +1,7 @@
 ---
 title: 威脅和弱點管理中的軟體清查
 description: Microsoft Defender for Endpoint 的威脅和弱點管理的軟體清查頁面顯示軟體中偵測到多少弱點和弱點。
-keywords: 威脅和弱點管理，microsoft defender for endpoint，microsoft defender for endpoint 軟體清查，mdatp 威脅 & 漏洞管理，mdatp 威脅 & 弱點管理軟體清查，mdatp tvm 軟體清查，tvm 軟體清查
+keywords: 威脅與弱點管理，Microsoft Defender for Endpoint，microsoft defender for endpoint 軟體清查，Microsoft defender for endpoint 威脅 & 漏洞管理，microsoft defender for endpoint 威脅 & 漏洞管理軟體清查，Microsoft Defender for endpoint tvm 軟體清查，tvm 軟體清查
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4ceb7cc4d39dbddbb4cd325491c16f4503bfc52
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0d270760cfed965c8190668afcdb1cc25223d2b1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689374"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933718"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>軟體清查-威脅和弱點管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "51689374"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 威脅和弱點管理中的軟體清查是貴組織中的已知軟體清單，其中包含官方 [通用平臺列舉 (CPE) ](https://nvd.nist.gov/products/cpe)。 沒有官方 CPE 的軟體產品不會發佈弱點。 此外，它也包含廠商名稱、弱點數目、威脅及公開裝置數目等詳細資訊。
 

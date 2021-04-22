@@ -1,7 +1,7 @@
 ---
-title: 疑難排解適用于 Mac 的 Microsoft Defender for Endpoint 的授權問題
-description: 疑難排解 Microsoft Defender for Mac 中的授權問題。
-keywords: microsoft、defender、atp、mac、效能
+title: 針對 Mac 上的 Microsoft Defender for Endpoint 的授權問題進行疑難排解
+description: 在 Mac 上為端點的 Microsoft Defender 中的授權問題進行疑難排解。
+keywords: microsoft、defender、Microsoft Defender for Endpoint、mac、performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fb351d9ce8e9beef812e6aaa7d463161a6af8df
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: e8084fab434246a5c9f12af40872ade66e6fa163
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862184"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934258"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 macOS 上的 Microsoft Defender for Endpoint 的授權問題
 

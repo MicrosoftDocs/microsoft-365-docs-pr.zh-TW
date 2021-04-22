@@ -1,7 +1,7 @@
 ---
 title: 疑難排解 Microsoft Defender for Endpoint on macOS 的效能問題
 description: 在 macOS 上疑難排解 Microsoft Defender for Endpoint 中的效能問題。
-keywords: microsoft、defender、atp、mac、效能
+keywords: microsoft、defender、Microsoft Defender for Endpoint、mac、performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698217"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934246"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 Microsoft Defender for Endpoint on macOS 的效能問題
 
@@ -32,11 +32,11 @@ ms.locfileid: "51698217"
 
 **適用於：**
 
-- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 上適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 本主題提供一些一般步驟，可用來縮小 macOS 上與 Microsoft Defender for Endpoint 相關的效能問題。
 
@@ -66,7 +66,7 @@ ms.locfileid: "51698217"
 
 2. 開啟 Finder，並流覽至 **應用程式**  >  **公用程式**。 開啟 **活動監視器** 並分析哪些應用程式正在使用您系統上的資源。 典型範例包括軟體 updaters 及編譯器。
 
-1. 若要找出觸發大多數掃描的應用程式，您可以使用由 Defender for Mac 所收集的即時統計資料。
+1. 若要尋找觸發大部分掃描的應用程式，您可以使用由 Defender 針對 Mac 上的端點所收集的即時統計資料。
 
       > [!NOTE]
       > 100.90.70 或更新版本中提供此功能。

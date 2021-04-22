@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 security center 中的 microsoft Defender for Endpoint
 description: 深入瞭解 Microsoft Defender Security Center to the Microsoft 365 Security center 中的變更
-keywords: Microsoft 365 security center、OATP、MDATP、MDO、MDE、單一窗格的玻璃、混合入口網站、安全性入口網站、defender 安全性入口網站快速入門
+keywords: Microsoft 365 security center 快速入門，Microsoft Defender for Office 365，Microsoft Defender for Endpoint，MDO，MDE，單一窗格的玻璃，融合入口網站，安全性入口網站，Defender 安全性入口網站
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: edf0baa369142f6a0aafc86794a47ab0be6e345a
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: c8e38e3f22b48b58ea7fb1a4a6f000c80c170675
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760047"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934402"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的 microsoft Defender for Endpoint
 

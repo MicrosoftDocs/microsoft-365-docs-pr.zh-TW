@@ -1,7 +1,7 @@
 ---
 title: 將合規性提升至 Microsoft Defender for Endpoint security 基準
 description: Microsoft Defender for Endpoint security 基準會設定安全性控制，以提供最佳防護。
-keywords: Intune management，MDATP，WDATP，MDE，Microsoft Defender for Endpoint，advanced 威脅防護 ASR，安全性基準
+keywords: Intune 管理，Microsoft Defender for Endpoint，Microsoft Defender，microsoft defender for Endpoint ASR，安全性基準
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 19a2276955b253a23ee1552a3f1d4d0345dfe247
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: fbdc0d02d4c5ba5cfda9773e62082217ba4f8c4e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893538"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933598"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>將合規性提升至 Microsoft Defender for Endpoint security 基準
 

@@ -1,7 +1,7 @@
 ---
 title: 板載非 Windows 裝置至 Microsoft Defender for Endpoint service
 description: 設定非 Windows 裝置，使其可將感應器資料傳送至 Microsoft Defender for Endpoint service。
-keywords: 板載非 Windows 裝置，macos，linux，裝置管理，設定 Windows ATP 裝置，設定 Microsoft Defender for Endpoint 裝置
+keywords: 板載非 Windows 裝置，macos，linux，裝置管理，設定 Microsoft Defender for Endpoint 裝置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c78779cd4a8a329864b6ac7e0debfc30ca0b3a56
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 1c10576b72793ab3833f2e9027e3814a449334ee
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893586"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933922"
 ---
 # <a name="onboard-non-windows-devices"></a>將非 Windows 裝置上線
 
@@ -48,7 +48,7 @@ Defender for Endpoint 提供 Windows 和非 Windows 平臺的集中式安全性�
 您必須對板載非 Windows 裝置採取下列步驟：
 1. 選取您慣用的上架方式：
 
-   - 若為 macOS 裝置，您可以選擇透過 Microsoft Defender for Endpoint 或協力廠商解決方案來進行板載。 如需詳細資訊，請參閱 [Microsoft Defender For Mac 的 Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
+   - 若為 macOS 裝置，您可以選擇透過 Microsoft Defender for Endpoint 或協力廠商解決方案來進行板載。 如需詳細資訊，請參閱 [Mac 上的 Microsoft Defender For Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)。
 
    - 如果是其他非 Windows 裝置，請 **透過協力廠商整合選擇板載非 Windows 裝置**。   
     1. 在功能窗格中，選取 [**互通性**  >  **夥伴**]。 請確定已列出協力廠商解決方案。

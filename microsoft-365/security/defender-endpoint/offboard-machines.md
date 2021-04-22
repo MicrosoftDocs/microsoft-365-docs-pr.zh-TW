@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint service 中的下架裝置
 description: Microsoft Defender for Endpoint service 中的板載 Windows 10 裝置、伺服器、非 Windows 裝置
-keywords: 脫離，microsoft defender 用於端點脫離，windows atp 脫離
+keywords: 脫離，Microsoft Defender 用於端點脫離，脫離
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18c708904e0fbfceafa2aeb387ffa9ce26e83c87
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 425e5b9e0be12b89c8fd3b7201010b0f776cc6a5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861116"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934150"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint service 中的下架裝置
 

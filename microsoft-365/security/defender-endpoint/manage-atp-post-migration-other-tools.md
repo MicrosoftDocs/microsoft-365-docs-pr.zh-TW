@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell、WMI 及 MPCmdRun.exe 管理 Microsoft Defender for Endpoint
 description: 瞭解如何使用 PowerShell、WMI 及 MPCmdRun.exe 管理 Microsoft Defender for Endpoint
-keywords: 遷移後、管理、運作、維護、使用狀況、PowerShell、WMI、MPCmdRun.exe、windows defender 高級威脅防護、atp、edr
+keywords: 遷移後、管理、作業、維護、使用狀況、PowerShell、WMI、MPCmdRun.exe、Microsoft Defender for Endpoint、edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 5f0e94360cfaa0c66aedec400e81adc85f4f5450
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 98b192551a351b58709185022cf311174052592b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185870"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934456"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>使用 PowerShell、WMI 及 MPCmdRun.exe 管理 Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "51185870"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
 > 建議使用 [Microsoft 端點管理員](https://docs.microsoft.com/mem) 來管理組織的威脅防護功能，以供裝置 (也稱為端點) 。 端點管理員包括 [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) 和 [Microsoft 端點 Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)。 
@@ -55,7 +55,7 @@ ms.locfileid: "51185870"
 |工作  |可深入了解的資源  |
 |---------|---------|
 |**管理 Microsoft Defender 防毒程式** <br/><br/>*查看反惡意程式碼保護的狀態、設定防病毒掃描的喜好設定 & 更新，以及對您的防防毒保護進行其他變更。*    |[使用 PowerShell Cmdlet 來設定及管理 Microsoft Defender 防毒程式](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)  <br/><br/>[使用 PowerShell Cmdlet 以啟用雲端提供的保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)       |
-|**設定 exploit protection** ，以減輕組織裝置的威脅<br/><br/> *我們建議您先在 [稽核模式](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) 中使用 exploit protection。如此一來，您就可以看到使用方式保護會如何影響組織所使用的應用程式。*     | [自訂 exploit protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[PowerShell 用於 exploit protection 的 Cmdlet](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
+|**設定 exploit protection** ，以減輕組織裝置的威脅<br/><br/> *我們建議您先在 [稽核模式](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) 中使用 exploit protection。如此一來，您就可以看到使用方式保護會如何影響組織所使用的應用程式。*     | [自訂利用保護](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[PowerShell 用於 exploit protection 的 Cmdlet](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
 |使用 PowerShell **設定攻擊面降低規則** <br/><br/>*您可以使用 PowerShell，從攻擊面減少規則中排除檔案和資料夾。* |[自訂攻擊面降減規則：使用 PowerShell 排除檔案 & 資料夾](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders)<br/><br/>此外，請參閱 [António Vasconcelo 的圖形使用者介面工具，以使用 PowerShell 來設定攻擊面降減規則](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)。 |
 |使用 PowerShell **啟用網路保護** <br/><br/>*您可以使用 PowerShell 來啟用網路保護。* |[使用 PowerShell 開啟網路保護](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#powershell) |
 |**設定受管理的資料夾存取** 權以防護勒索軟體 <br/><br/>*「[受管理的資料夾存取](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders)」也稱為 antiransomware protection。* |[啟用 PowerShell 的可控資料夾存取](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell) |

@@ -1,7 +1,7 @@
 ---
 title: 威脅和弱點管理中的披露分數
 description: 威脅和弱點管理洩密分數會反映您的組織在 cybersecurity 威脅時有何缺陷。
-keywords: 披露分數，mdatp 洩密分數，mdatp tvm 曝露分數，組織暴露分數，tvm 組織暴露分數，威脅和弱點管理，Microsoft Defender for Endpoint
+keywords: 披露分數，Microsoft Defender for Endpoint 洩密分數，Microsoft Defender for Endpoint tvm 洩密分數，組織暴露分數，tvm 組織公開分數，威脅和弱點管理，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34c3122b017b14605fdbb3358f31f73e26361a4d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: fcea240fe1dc0ce97a2800391320b04c39c84336
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500121"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934102"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>披露分數-威脅和弱點管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51500121"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 您的披露分數會顯示在 Microsoft Defender 安全中心的 [ [威脅與弱點管理] 儀表板](tvm-dashboard-insights.md) 中。 它會反映您的組織 cybersecurity 威脅的漏洞。 低暴露分數表示您的裝置不易受到攻擊。
 

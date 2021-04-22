@@ -1,7 +1,7 @@
 ---
 title: McAfee 至 Microsoft Defender 的端點-準備
 description: 這是第1階段，準備從 McAfee 遷移至 Microsoft Defender for Endpoint。
-keywords: 遷移、windows defender 高級威脅防護、atp、edr
+keywords: 遷移，Microsoft Defender for Endpoint，edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 45b22d0066496e40bb8f2e17d9f82de860d73ea4
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cb480e743be9184fd60cba0f82a287b8562c1901
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861420"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934210"
 ---
 # <a name="migrate-from-mcafee---phase-1-prepare-for-your-migration"></a>從 McAfee 遷移-階段1：準備遷移
 

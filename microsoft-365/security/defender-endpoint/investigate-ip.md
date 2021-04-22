@@ -1,7 +1,7 @@
 ---
 title: 調查與警示相關聯的 IP 位址
 description: 使用調查選項檢查裝置與外部 IP 位址之間可能的通訊。
-keywords: 調查、調查、IP 位址、警示、microsoft defender atp、外部 IP
+keywords: 調查，調查，IP 位址，警示，Microsoft Defender for Endpoint，外部 IP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 003abd854e34bb5a9a05f675313ba6c4f6ce1d71
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cb95deb890b52f0f5fde26a3a193181713b8ae5f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186038"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933826"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>調查與 Microsoft Defender for Endpoint 警示相關聯的 IP 位址
 
@@ -36,7 +36,7 @@ ms.locfileid: "51186038"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 檢查裝置與外部網際網路通訊協定之間可能的通訊 (IP) 位址。
 

@@ -2,7 +2,7 @@
 title: 業界測試中最高評分 - Microsoft 365 Defender
 ms.reviewer: ''
 description: 檢視 Microsoft 365 Defender 的最新分數與分析。 它持續在獨立測試 (AV-TEST、AV 比較、SE Labs、MITRE ATT&CK) 中達成高分。 檢視最新的分數與分析。
-keywords: Microsoft Defender 防毒軟體、Windows Defender 防毒軟體、AV 評分、防毒測試、AV 測試、最新 AV 分數、偵測分數、 安全性產品測試、 安全性產業測試、產業防毒測試、最佳防毒軟體、AV-Test、AV-Comparatives、SE 實驗室、MITRE ATT&CK、端點保護平台、EPP、端點偵測及回應、EDR、Windows 10、Microsoft Defender 防毒軟體、WDAV、MDATP、Microsoft 威脅防護、安全性、惡意軟體、AV、防毒軟體、分數、評分、新一代保護技術、排名、成功
+keywords: Microsoft Defender 防毒軟體、Windows Defender 防毒軟體、AV 評分、防毒測試、AV 測試、最新 AV 分數、偵測分數、 安全性產品測試、 安全性產業測試、產業防毒測試、最佳防毒軟體、AV-Test、AV-Comparatives、SE 實驗室、MITRE ATT&CK、端點保護平台、EPP、端點偵測及回應、EDR、Windows 10、Microsoft Defender 防毒軟體、WDAV、適用於端點的 Microsoft Defender、Microsoft 365 Defender、安全性、惡意軟體、AV、防毒軟體、分數、評分、新一代保護技術、排名、成功
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 1f649af2ca6089d1366cc6e080a430a6a00fc300
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569856"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934390"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界測試中最高評分
 

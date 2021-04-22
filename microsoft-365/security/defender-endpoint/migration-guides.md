@@ -1,6 +1,6 @@
 ---
 title: 用於切換至 Microsoft Defender 以進行端點的遷移指南
-description: 瞭解如何將非 Microsoft 威脅防護解決方案切換至 Microsoft Defender for Endpoint
+description: 瞭解如何將非 Microsoft 365 Defender 解決方案的切換到 Microsoft Defender for Endpoint
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: c191e2006f42eda215508ba961dcbeb1ea282078
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f834ab371b9d860c451c89bb1a4e7d64bdd6ec1f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218625"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934438"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>切換至 Microsoft Defender for Endpoint 和 Microsoft Defender 防毒軟體
 
@@ -32,18 +32,18 @@ ms.locfileid: "51218625"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="migration-guides"></a>遷移指南
+## <a name="migration-guides"></a>移轉指南
 
-如果您想要使用 Microsoft Defender 防毒軟體將非 Microsoft 威脅防護解決方案切換至 Microsoft Defender for Endpoint，請參閱我們的遷移指南。 選取最適合您在部署程式中的位置的案例，並參閱指導方針。
+如果您考慮使用 Microsoft Defender 防毒軟體從非 Microsoft 365 Defender 解決方案切換至 Microsoft Defender for Endpoint，請參閱我們的遷移指南。 選取最適合您在部署程式中的位置的案例，並參閱指導方針。
 
 |案例 |指導方針 |
 |:--|:--|
 |您尚沒有 endpoint protection 解決方案，而且想要深入瞭解 Microsoft defender for Endpoint & Microsoft Defender 防病毒的運作方式。  |[Microsoft Defender for Endpoint 評估實驗室](evaluation-lab.md)   |
 |您已將 Microsoft Defender for Endpoint & Microsoft Defender 防病毒，並需要協助您設定及設定相關資訊。  |[Microsoft Defender for Endpoint 部署指南](deployment-phases.md)  |
-|您計畫要從 McAfee 端點安全性 (McAfee) 至 Microsoft Defender & Microsoft defender 防毒軟體的端點。 |[從 McAfee 切換至 Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md) |
-|您計畫要從 Symantec Endpoint Protection (Symantec) 遷移至 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體。 |[從 Symantec 切換至 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md) |
+|您計畫要從 McAfee 端點安全性 (McAfee) 至 Microsoft Defender & Microsoft defender 防毒軟體的端點。 |[從 McAfee 切換至適用於端點的 Microsoft Defender](mcafee-to-microsoft-defender-migration.md) |
+|您計畫要從 Symantec Endpoint Protection (Symantec) 遷移至 Microsoft Defender for Endpoint & Microsoft Defender 防毒軟體。 |[從 Symantec 切換至適用於端點的 Microsoft Defender](symantec-to-microsoft-defender-endpoint-migration.md) |
 |您計畫從非 Microsoft 的 endpoint protection (解決方案進行遷移，而不是 McAfee 或 Symantec) microsoft Defender & Microsoft defender 防毒軟體的端點。 |[將參數設為 Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |
 |您已遷移至 Microsoft Defender for Endpoint & Microsoft Defender 防病毒，您需要在後續步驟中執行協助，例如設定其他功能或微調安全性設定。 | [管理 Microsoft Defender for Endpoint，遷移後](manage-atp-post-migration.md) |
 
