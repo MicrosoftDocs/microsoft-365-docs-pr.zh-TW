@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何啟用 Microsoft 365，以在幾個步驟中保護本機作用中已加入目錄的 Windows 10 裝置。
-ms.openlocfilehash: 8a45c6959bee368491c5c6424e3713300c443779
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c9f5a21d993200abcf9ecf1fa236879245e1c153
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580127"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939495"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>啟用已加入網域的 Windows 10 裝置以由 Microsoft 365 商務版 Premium 管理
 
@@ -116,3 +116,7 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 6.  如果您有多個網域控制站，請等候 SYSVOL 進行複製，以供使用原則。 此程式適用于任何未來版本的系統管理範本。
 
 此時，您應該可以查看原則 **使用預設 AZURE AD 認證啟用自動 MDM 註冊** 。
+
+## <a name="related-content"></a>相關內容
+
+將[網域使用者同步處理至 Microsoft 365](manage-domain-users.md) (篇文章) [在系統管理中心建立群組](../admin/create-groups/create-groups.md) (文章) [教學課程：設定受管理網域的混合式 Azure Active Directory 加入](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (文章) 

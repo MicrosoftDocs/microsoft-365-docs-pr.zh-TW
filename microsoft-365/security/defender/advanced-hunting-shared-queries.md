@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 Defender advanced 搜尋中使用共用查詢
 description: 立即開始威脅搜捕，並使用預先定義的共用查詢。 將您的查詢與大眾或您的組織共用。
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，schema，kusto，github 儲存機制，我的查詢，共用查詢
+keywords: 「高級搜尋」、「威脅搜尋」、「網路威脅搜尋」、「Microsoft 365 Defender」、「microsoft 365」、「m365」、「搜尋」、「遙測」、「自訂偵測」、「架構」、「kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: fbc5b4c53487bceab5786a7ce75a56741a3c9cb2
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0194a752a0050fe68c5372bbfc93ea5f17d1d8e6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499724"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935758"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>在進階搜捕中使用共用查詢
 

@@ -1,8 +1,8 @@
 ---
 title: Linux 上適用於端點的 Microsoft Defender
 ms.reviewer: ''
-description: 說明如何為 Linux 安裝及使用 Microsoft Defender for Endpoint。
-keywords: microsoft，defender，atp，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
+description: 說明如何在 Linux 上安裝及使用 Microsoft Defender for Endpoint。
+keywords: microsoft，defender，Microsoft Defender for Endpoint，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 34274e260da2e8acc8088fcff6d324b6b31fc2ef
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861392"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935938"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上適用於端點的 Microsoft Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "51861392"
 本主題說明如何在 Linux 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Linux 上執行其他協力廠商端點保護產品及 Microsoft Defender for Endpoint 時，可能會造成效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以 [被動式模式](linux-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以安全地利用適用于 Linux EDR 功能的 Defender。
+> 在 Linux 上執行其他協力廠商端點保護產品及 Microsoft Defender for Endpoint 時，可能會造成效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以 [被動式模式](linux-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以安全地利用適用于 Linux EDR 功能的 Defender for endpoint。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安裝 Microsoft Defender for Endpoint
 
@@ -80,10 +80,10 @@ ms.locfileid: "51861392"
 - 最小內核版本 3.10.0-327
 - `fanotify`必須啟用內核選項
   > [!CAUTION]
-  > 不支援以其他方式的安全性解決方案為基礎，針對 Linux 的端點執行 Defender `fanotify` 。 這可能會造成無法預期的結果，包括懸掛作業系統。
+  > 不支援以其他方式的安全性解決方案，並排在 Linux 上執行 Defender for Endpoint `fanotify` 。 這可能會造成無法預期的結果，包括懸掛作業系統。
 
 - 磁碟空間：1GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可執行檔許可權。 如需詳細資訊，請參閱 [疑難排解 Microsoft Defender for The Linux 的安裝問題](/microsoft-365/security/defender-endpoint/linux-support-install)中的「確保守護程式具有可執行檔許可權」。
+- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可執行檔許可權。 如需詳細資訊，請參閱 [疑難排解 Microsoft Defender for The Linux 上的 Microsoft Defender For Endpoint 的安裝問題](/microsoft-365/security/defender-endpoint/linux-support-install)。
 - 記憶體：1GB
     > [!NOTE]
     > 請確認您在/var. 中有可用的磁碟空間。

@@ -1,7 +1,7 @@
 ---
 title: 設定 Microsoft 365 Defender 中的事件優先順序
 description: 瞭解如何在 Microsoft 365 Defender 中篩選事件佇列中的事件
-keywords: 事件, 佇列, 概覽, 裝置, 身分識別, 使用者, 信箱, 電子郵件, 事件
+keywords: 事件，佇列，概述，裝置，身分識別，使用者，信箱，電子郵件，事件，分析，回應
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887254"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939703"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的事件優先順序
 
@@ -81,45 +81,11 @@ Microsoft 365 Defender 會將關聯性分析和匯總相關的警示和自動調
 | 狀態 | 您可以根據事件狀態來限制顯示的事件清單，以查看哪些事件為作用中或已解決。 |
 |||
 
-## <a name="incident-response-workflow"></a>事件回應工作流程
-
-以下是回應事件的一般工作流程：
-
-1. 識別及會審最高優先順序的事件，以進行調查和解決。
-2. 針對每個高優先順序事件，開始進行 [調查](investigate-incidents.md)：
-
-   a. 請查看事件摘要，瞭解其範圍和嚴重性，以及會影響哪些實體 ([ **摘要** ] 索引標籤) 中。
-
-   b. 請開始查看提醒，瞭解其來源、範圍和嚴重性 (**警示** ] 索引標籤) 。
-
-   c. 如有需要，請在 [ **裝置**]、[ **使用者**] 和 [ **信箱** ] 索引標籤)  (，收集受影響裝置、使用者和信箱的資訊。
-
-   d. 請參閱 Microsoft 365 Defender 如何在「 **調查** 」索引標籤) 上，自動解決某些警示 (。
-   
-   e. 如有需要，請使用事件資料組中的資訊，以取得 (**證據與回應** ] 索引標籤) 的詳細資訊。
-
-   當您進行調查時，您應該注意下列事項：
-
-   - 包容：減少對租使用者的任何其他影響。
-   - Eradication：移除安全性威脅。
-   - 復原：將租使用者資源還原到事件之前的狀態。
-
-3. 解決事件後，請花時間進行下列作業：
-
-   - 瞭解攻擊的類型及其影響。
-   - 調查安全性攻擊趨勢的安全性社區中的攻擊。
-   - 召回您用來解決事件的工作流程，並視需要更新您的標準工作流程與行動手冊。
-   - 判斷是否需要安全性狀況的變更，並採取步驟加以實施。
-
-以下是基本程式的摘要。
-
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="調查事件的基本程式":::
-
 ## <a name="next-step"></a>下一步
 
-決定需要最高優先順序的事件後，請先選取它，然後開始進行 [調查](investigate-incidents.md)。
+決定需要最高優先順序的事件後，請先選取它，然後開始進行 [分析](investigate-incidents.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [事件概觀](incidents-overview.md)
-- [調查事件](investigate-incidents.md)
+- [分析事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

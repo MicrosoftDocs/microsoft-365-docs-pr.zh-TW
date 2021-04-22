@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 IdentityInfo 表格
 description: 深入瞭解高級搜尋架構的 IdentityInfo 資料表中的使用者帳戶資訊
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，AccountInfo，IdentityInfo，account
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，AccountInfo，IdentityInfo，account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7e1ad4d10c3b71a04421d92304dc2bfcb6147da
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: ce1a3d5153d324d008d2d46048838351eb7bc047
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498207"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935818"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 

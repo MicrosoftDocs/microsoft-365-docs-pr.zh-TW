@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender advanced 搜尋架構中的命名變更
 description: 追蹤和審閱高級搜尋架構中的命名變更表格和欄
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、表格、資料、命名變更、重新命名、Microsoft 威脅防護
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，資料，命名變更，重新命名
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ab6bdefb457fb31df98d829ee801b72f4c8ae70a
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 22d26dac6b7ee502d6934349d22b1d40532f575f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499694"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935770"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高級搜尋架構命名變更
 

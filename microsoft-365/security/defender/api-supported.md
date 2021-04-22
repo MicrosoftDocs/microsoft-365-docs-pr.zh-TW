@@ -1,7 +1,7 @@
 ---
 title: 支援的 Microsoft 365 Defender API
 description: 支援的 Microsoft 365 Defender API
-keywords: MTP、APIs、api
+keywords: Microsoft 365 Defender、APIs、api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b2239b960106d756cbd29504af05af77a553067d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f2c66dca326589807f5712c5548c177a0d08ade0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054606"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935722"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>支援的 Microsoft 365 Defender API 
 
@@ -59,6 +59,6 @@ ms.locfileid: "51054606"
 ## <a name="related-articles"></a>相關文章
 
 - [Microsoft 365 Defender APIs 概述](api-overview.md)
-- [存取 Microsoft 威脅防護 APIs](api-access.md)
+- [存取 Microsoft 365 Defender APIs](api-access.md)
 - [深入瞭解 API 限制和授權](api-terms.md)
 - [瞭解錯誤碼](api-error-codes.md)

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 瞭解如何取得免費試用版或購買適用于商務用 Microsoft 365 的訂閱。
 ms.date: 08/07/2020
-ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 505ce060b9b40d72a54adbfffbcb2b3cf47a66e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576898"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939181"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>嘗試或購買 Microsoft 365 for business 訂閱
 
@@ -33,7 +33,17 @@ Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您�
 > [!NOTE]
 > 當您註冊免費試用版時，必須使用信用卡。 當您的免費試用期結束時，您的試用訂閱會自動轉換為付費訂閱。 在試用期結束之前，您的信用卡不會記帳。
 
-## <a name="before-you-begin"></a>在您開始之前
+
+::: moniker region="o365-21vianet"
+
+> [!IMPORTANT]
+> **中國的世紀運作之 Office 365 的付款選項** 不接受國際信用卡。 您可以使用下列方式支付訂閱費用：
+> - 發票
+> - 使用支付寶或中國銀聯付款憑證的線上付款會以 Fapiaos 形式提供。 您可以將發票要求提交給我們的 [發票系統](https://go.microsoft.com/fwlink/p/?LinkId=395314) ，大約在您支付後三個 (3) 天。 如需詳細資訊，請參閱 [Apply for a 發票 For Office 365 （由世紀運作](../admin/services-in-china/apply-for-a-fapiao.md)）。
+
+::: moniker-end
+
+## <a name="before-you-begin"></a>開始之前
 
 您不需要現有的 Microsoft 帳戶即可註冊免費試用版。 針對本文中的所有其他程式，您必須是組織的全域或計費系統管理員。 如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。
 
@@ -64,7 +74,7 @@ Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您�
 
 在購買之前，您需要更多時間來試用 Microsoft 365 for business 的功能嗎？ 如果您的試用訂閱尚在過期前的 15 天內，且未曾延長過，您就可以將試用期再延長 30 天。 您只能延長試用期一次。
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取您要擴充的試用訂閱。 
 3. 在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **延長結束日期**]。
 4. 在 [ **結束日期** ] 窗格中，複查分機資訊，必要時，選取支付方式。 完成後，請選取 [ **擴充試用**]。

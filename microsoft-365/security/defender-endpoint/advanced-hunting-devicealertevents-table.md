@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 DeviceAlertEvents 表格
 description: 深入瞭解高級搜尋架構的 DeviceAlertEvents 資料表中的警示產生事件
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft Defender for Endpoint、search、query、遙測、schema reference、kusto、table、column、data type、description、DeviceAlertEvents、警示、嚴重性、類別
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，mdatp，microsoft defender atp，microsoft defender for endpoint，wdatp search，查詢，遙測，schema reference，kusto，table，column，data type，description，DeviceAlertEvents，alert，嚴重性，category
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: bb2350fed5fadee359695743989e02a3b3e44fb2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f4f6ecdc57d8602f49fb389c741c5e01dc1b41b5
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935338"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939645"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 

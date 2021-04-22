@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint API 的 Hello World
 ms.reviewer: ''
 description: 建立 Microsoft Defender for Endpoint API 的做法「Hello world'-style API 呼叫」。
-keywords: api、支援的 api、高級搜尋、查詢
+keywords: api、支援的 api、高級搜尋、查詢、microsoft defender atp、microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f4571607181fc96d87934ff60801643f5969e7e9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 08188acf1209ea2247a0eb09d722ce74c4540254
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929248"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939609"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API-Hello World 
 

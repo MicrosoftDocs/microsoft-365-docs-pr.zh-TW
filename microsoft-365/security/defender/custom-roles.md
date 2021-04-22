@@ -1,7 +1,7 @@
 ---
 title: 以角色為基礎之存取控制的自訂角色
 description: 瞭解如何在 Microsoft 365 的安全性中心管理自訂角色
-keywords: access，許可權，MTP，Microsoft 威脅防護，M365，安全性，MCAS，MDATP，Cloud App Security，Microsoft Defender 高級威脅防護，範圍，範圍，RBAC，以角色為基礎的存取，以自訂角色為基礎的存取，以角色為基礎的授權，在 MDO、角色、rolegroups、許可權繼承和微調許可權中的 RBAC
+keywords: access，許可權，Microsoft 365 Defender，M365，security，MCAS，Cloud App Security，Microsoft Defender for Endpoint，scope，範圍，RBAC，以角色為基礎的存取，自訂角色型存取，以角色為基礎的驗證，RBAC in MDO，role，rolegroups，許可權繼承，微調許可權
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6582e4e940dc9910e7d341c92b525379b924f35b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9dfa9f113c0a7d57360c2da6105cbfa07fcf6a99
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199954"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935686"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Microsoft 365 Defender 角色型存取控制中的自訂角色
 
@@ -85,10 +85,10 @@ ms.locfileid: "51199954"
 |---------|---------|---------|---------|
 | 查看調查資料： <ul><li>警示頁面</li> <li>警示佇列</li> <li>事件</li>  <li>事件佇列</li> <li>控制中心</li></ul>| View data-安全性作業 | <ul><li>僅供查看的管理提醒 </li> <li>組織組態</li><li>稽核記錄</li> <li>僅限查看的審計記錄檔</li> <li>安全性讀取者</li> <li>安全性系統管理員</li><li>僅供查看的收件者</li></ul>  | <ul><li>全域系統管理員</li> <li>安全性系統管理員</li> <li>合規性系統管理員</li> <li>安全性操作員</li> <li>安全性讀取者</li> <li>全域讀取者</li></ul> |
 | 查看搜尋資料 | View data-安全性作業 | <ul><li>安全性讀取者</li> <li>安全性系統管理員</li> <li>僅供查看的收件者</li> | <ul><li>全域系統管理員</li> <li>安全性系統管理員</li> <li>合規性系統管理員</li> <li>安全性操作員</li> <li>安全性讀取者</li> <li>全域讀取者</li></ul> |
-| 管理警示和事件 | 警示調查 | <ul><li>管理提醒</li> <li>安全性系統管理員</li> | <ul><li>全域系統管理員</li> <li>安全性系統管理員</li> <li>合規性系統管理員</li> <li>安全性操作員</li> <li>安全性讀取者</li></ul> |
+| 管理警示和事件 | 警示調查 | <ul><li>管理警示</li> <li>安全性系統管理員</li> | <ul><li>全域系統管理員</li> <li>安全性系統管理員</li> <li>合規性系統管理員</li> <li>安全性操作員</li> <li>安全性讀取者</li></ul> |
 | 行動中心修正 | 主動修正動作–安全性作業 | 搜尋及清除 | |
-| 設定自訂偵測 | 管理安全性設定 |<ul><li>管理提醒</li> <li>安全性系統管理員</li></ul> | <ul><li>全域系統管理員</li> <li>安全性系統管理員</li> <li>合規性系統管理員</li> <li>安全性操作員</li> <li>安全性讀取者</li> <li>全域讀取者</li></ul> |
-| 威脅分析 | 警示和事件資料： <ul><li>View data-安全性作業</li></ul>TVM 緩解：<ul><li>View data-威脅和弱點管理</li></ul> | 警示和事件資料：<ul> <li>僅供查看的管理提醒</li> <li>管理提醒</li> <li>組織組態</li><li>稽核記錄</li> <li>僅限查看的審計記錄檔</li><li>安全性讀取者</li> <li>安全性系統管理員</li><li>僅供查看的收件者</li> </ul> 禁止電子郵件嘗試： <ul><li>安全性讀取者</li> <li>安全性系統管理員</li><li>僅供查看的收件者</li> | 無法供 MCAS 或 MDI 使用者使用 |
+| 設定自訂偵測 | 管理安全性設定 |<ul><li>管理警示</li> <li>安全性系統管理員</li></ul> | <ul><li>全域系統管理員</li> <li>安全性系統管理員</li> <li>合規性系統管理員</li> <li>安全性操作員</li> <li>安全性讀取者</li> <li>全域讀取者</li></ul> |
+| 威脅分析 | 警示和事件資料： <ul><li>View data-安全性作業</li></ul>TVM 緩解：<ul><li>View data-威脅和弱點管理</li></ul> | 警示和事件資料：<ul> <li>僅供查看的管理提醒</li> <li>管理警示</li> <li>組織組態</li><li>稽核記錄</li> <li>僅限查看的審計記錄檔</li><li>安全性讀取者</li> <li>安全性系統管理員</li><li>僅供查看的收件者</li> </ul> 禁止電子郵件嘗試： <ul><li>安全性讀取者</li> <li>安全性系統管理員</li><li>僅供查看的收件者</li> | 無法供 MCAS 或 MDI 使用者使用 |
 
 例如，若要從 Microsoft Defender for Endpoint 中查看搜尋資料，必須要有 View data security operations 許可權。  
 

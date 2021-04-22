@@ -1,7 +1,7 @@
 ---
-title: 在 Microsoft 365 安全性中心調查使用者
-description: 調查 Microsoft 365 security center 中的使用者
-keywords: 安全性，惡意程式碼，Microsoft 365，M365，security center，monitor，report，identity，data，裝置，應用程式
+title: 在 Microsoft 365 的安全性中心分析使用者
+description: 在 Microsoft 365 安全中心分析使用者
+keywords: 安全性，惡意程式碼，Microsoft 365，M365，security center，monitor，report，identity，data，裝置，應用程式，事件，分析，回應
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 68fc924ee14932ebdf92ef76306ba00e352b6030
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861251"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939727"
 ---
-# <a name="investigate-users-in-microsoft-365-security-center"></a>在 Microsoft 365 安全性中心調查使用者
+# <a name="analyze-users-in-microsoft-365-security-center"></a>在 Microsoft 365 的安全性中心分析使用者
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51861251"
 
 - Microsoft 365 Defender
 
-您的一部分事件調查可以包含使用者帳戶。 從事件的 [ **使用者** ] 索引標籤開始， **& 警示 >** *事件* **> 使用者**。 
+您的部分事件分析可以包含使用者帳戶。 從事件的 [ **使用者** ] 索引標籤開始， **& 警示 >** *事件* **> 使用者**。 
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的使用者頁面範例":::
 

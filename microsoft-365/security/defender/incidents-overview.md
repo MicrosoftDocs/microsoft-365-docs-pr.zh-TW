@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 中的事件
-description: 調查在不同裝置、使用者和信箱看到的事件。
-keywords: 事件, 警示, 調查, 關聯, 攻擊, 電腦, 裝置, 使用者, 身分識別, 身分識別, 信箱, 電子郵件, 365, microsoft, m365
+description: 調查 Microsoft 365 security center 中跨裝置、使用者和信箱所看到的事件。
+keywords: 事件、警示、調查、分析、回應、關聯、攻擊、電腦、裝置、使用者、身分識別、身分識別、信箱、電子郵件、365、microsoft、m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e1e028f7b58df07eccf945b3a79012b4ea12366d
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 890e64367c49c24c8c70e2cbda9869a5d0797219
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861620"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939577"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件
 
@@ -104,10 +104,69 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="在 Microsoft 365 安全中心的事件索引標籤中，事件及其資料的關聯性":::
 
-## <a name="next-step"></a>下一步
+## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Microsoft 365 Defender 的事件回應工作流程範例
+
+以下是使用 Microsoft 365 security center 回應 Microsoft 365 中的事件的範例工作流程。
+
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Microsoft 365 的事件回應工作流程範例":::
+
+在事件佇列中，針對分析和解決方式，識別最高優先順序的事件，讓他們可以進行回應。 這是下列專案的組合：
+
+- 透過篩選和排序事件佇列來判斷最高優先順序事件的[會審](incident-queue.md)。
+- 透過修改其標題、將其指派給分析員，以及新增標記和批註來[管理](manage-incidents.md)事件。
+
+1. 針對每個事件，開始 [攻擊和警示分析](investigate-incidents.md)：
+
+   a. 請查看事件摘要，瞭解其範圍和嚴重性，以及會影響哪些實體 ([ **摘要** ] 索引標籤) 中。
+
+   b. 開始分析警示，以瞭解其來源、範圍和嚴重性 (**警示** ] 索引標籤) 。
+
+   c. 如有需要，請在 [ **裝置**]、[ **使用者**] 和 [ **信箱** ] 索引標籤)  (，收集受影響裝置、使用者和信箱的資訊。
+
+   d. 請參閱 Microsoft 365 Defender 如何在「 **調查** 」索引標籤) 上，自動解決某些警示 (。
+   
+   e. 如有需要，請使用事件資料組中的資訊，以取得 (**證據與回應** ] 索引標籤) 的詳細資訊。
+
+2. 在您的分析之後或過程中，請進行包容，以減少攻擊和 eradication 安全性威脅的任何其他影響。
+
+3. 盡可能將租使用者資源還原為事件之前所用的狀態，從攻擊復原。
+
+4. [解決](manage-incidents.md#resolve-incident) 事件，並在進行事件後學習需要一些時間，以進行下列作業：
+
+   - 瞭解攻擊的類型及其影響。
+   - 調查 [威脅分析](threat-analytics.md) 中的攻擊，以及安全性攻擊趨勢的安全性社區。
+   - 召回您用來解決事件的工作流程，並視需要更新您的標準工作流程、流程、原則及行動行動。
+   - 決定是否需要在安全性設定中進行變更，並加以實施。
+
+## <a name="example-security-operations-for-microsoft-365-defender"></a>Microsoft 365 Defender 的安全性作業範例
+
+以下是 Microsoft 365 Defender 安全性作業的範例。
+
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Micosoft 365 Defender 的安全性操作範例":::
+
+每個任務可以包含：
+
+- [管理](manage-incidents.md) 事件
+- 檢查 [自動調查和回應 (AIR) ](m365d-action-center.md) 動作
+- 查看最新的 [威脅分析](threat-analytics.md)
+- [回應](investigate-incidents.md) 事件
+
+每月任務可以包含：
+
+- 檢查 [空中設定](m365d-configure-auto-investigation-response.md)
+- 檢查 [安全分數](microsoft-secure-score-improvement-actions.md) 和 [威脅 & 弱點管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- 向您的 IT 安全性管理階層報告
+
+每個季度的工作可以包含向首席資訊安全性監察官 (CISO) 中的安全性結果的報告及簡報。
+
+每年的工作可以包含執行重大事件或破壞練習，以測試您的員工、系統和程式。 
+
+您可以使用每日、每月、每季及每年的工作來更新或修改程式、原則及安全性設定。
+
+## <a name="next-steps"></a>後續步驟
 
 [ **事件** ] 頁面的 [事件] 佇列會列出最近的事件。 在這裡，您可以：
 
 - 根據嚴重性及其他因素，查看應 [優先](incident-queue.md) 考慮哪些事件。 
-- 對事件進行 [調查](investigate-incidents.md) 。
-- [管理事件](manage-incidents.md)，包括重新命名、指派事件管理工作流程的標記、分類及新增標籤。
+- [管理事件](manage-incidents.md)，包括重新命名、指派、分類，以及新增事件管理工作流程的標記和批註。
+- 執行事件的 [分析](investigate-incidents.md) 。

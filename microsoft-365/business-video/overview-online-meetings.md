@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何為您的公司主控線上會議。
-ms.openlocfilehash: dffdf847962962b2f2e9daf70dae210abbb7614b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 893a03b064b6f73711b69a61c90cd40023241c48
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580507"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939515"
 ---
 # <a name="host-online-meetings-for-your-business"></a>主控商務的線上會議
 
@@ -35,9 +35,9 @@ ms.locfileid: "51580507"
 
 如果您經常在專案中與用戶端、客戶或合作夥伴密切合作，請考慮為您的 [用戶端建立小組](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) 。您可以輕鬆地邀請他們加入會議，也能輕鬆地邀請他們加入會議，也可以在 Microsoft 團隊中取得所有專案。
 
-下載資訊圖表，以快速瞭解如何使用 Microsoft 小組加入或主控線上會議。
+下載資訊圖表，以快速瞭解如何使用 Microsoft 小組加入或主控線上會議：
 
-下載資訊圖表，以快速瞭解如何使用 Microsoft 小組加入或主控線上會議。 [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
+[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
 ## <a name="1-schedule-a-meeting"></a>1. 排程會議
 

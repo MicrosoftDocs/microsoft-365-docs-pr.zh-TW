@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 61509c88ea2289509abd5ec7b6c0dcd54395d5f0
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 414d6ae0586078551c737e45763ea665d5eec4e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599968"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939551"
 ---
 # <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>SaaS 應用程式的建議 Microsoft Cloud App 安全性原則
 Microsoft Cloud App Security 組建于 Azure AD 條件式存取原則上，以啟用即時監控，並使用 SaaS 的應用程式（例如封鎖下載、上傳、複製及貼上）來控制細微動作。 此功能會將安全性新增至具有固有風險的會話，例如從未受管理的裝置存取公司資源或來賓使用者。
@@ -50,7 +50,7 @@ SaaS 應用程式的許可權通常是以業務存取應用程式的需求為基
 
 下表列出您必須在 Azure AD 中建立的新條件式存取原則。
 
-|保護層級|原則|其他資訊|
+|保護層級|原則|其他相關資訊|
 |---|---|---|
 |所有保護層級|[在 Cloud App Security 中使用條件式存取應用程式控制](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|這會將您的 IdP 設定 (Azure AD) ，以與 Cloud App Security 搭配使用。|
 ||||

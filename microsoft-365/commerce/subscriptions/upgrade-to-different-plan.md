@@ -20,19 +20,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解如何升級為其他計畫。
-ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580975"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939169"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案
 
 當您的公司變更或需要更多功能時，您可以升級計畫。 若要執行此作業，最簡單的方法是使用系統管理中心的 [ **升級** ] 索引標籤。 不過，並非所有情況都支援使用 [ **升級** ] 索引標籤。 在某些情況下，您可能可以手動變更方案。
-
-> [!NOTE]
-> 本文適用于新的系統管理中心。 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心]** 開關將它開啟。 若要查看有關舊系統管理中心的文章，請參閱 [切換至其他 Microsoft 365 for business 方案](switch-to-a-different-plan.md)。
 
 ## <a name="use-the-upgrade-tab"></a>使用 [升級] 索引標籤
 

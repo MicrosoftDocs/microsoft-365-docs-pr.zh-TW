@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint 中的高級搜尋概覽
 description: 在 Microsoft Defender for Endpoint 中使用威脅搜尋功能來建立查詢，以找出網路的威脅和弱點
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft Defender for Endpoint、搜尋、查詢、遙測、自訂偵測、架構、kusto、時區、UTC
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、mdatp、microsoft defender atp、microsoft defender for endpoint、wdatp、search、query、遙測、自訂偵測、架構、kusto、時區、UTC
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 114c0192f77411016fcb13ec2b912f4440ffa6e0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 906ae4bdebcc46e210fa9c5dcb5387c880fdbb38
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934354"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939656"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>使用高級搜尋主動搜尋威脅
 

@@ -1,7 +1,7 @@
 ---
 title: 部署 Microsoft 365 Defender 支援的服務
 description: 深入瞭解可由 Microsoft 365 Defender、其授權需求和部署程式整合的 Microsoft 安全服務
-keywords: 部署，授權，支援的服務，布建，設定 Microsoft 威脅防護，M365，授權資格，Microsoft Defender ATP，MDATP，Office 365 ATP，Azure ATP，Microsoft Cloud App Security，MCAS，advanced 威脅防護，E5，A5，EMS
+keywords: 部署，授權，支援的服務，布建，設定 Microsoft 365 Defender，M365，授權資格，Microsoft Defender for Endpoint，Microsoft Defender for Office 365，Microsoft Defender for Identity，Microsoft Cloud App Security，MCAS，E5，A5，EMS
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 434c318be404ffb04cac7a05664c8f001bb46507
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4e1b36423974e46a485727f7e1f158dc6163d834
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198858"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935674"
 ---
 # <a name="deploy-supported-services"></a>部署支援服務
 

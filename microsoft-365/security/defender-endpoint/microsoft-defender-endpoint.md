@@ -1,7 +1,7 @@
 ---
 title: 適用於端點的 Microsoft Defender
 description: Microsoft Defender for Endpoint 是企業端點安全性平臺，可協助防禦高級持續性威脅。
-keywords: microsoft defender for Endpoint 簡介，microsoft defender Advanced 威脅防護簡介，Microsoft Defender for Endpoint，cybersecurity，Advanced persistent 威脅，企業安全性，機器行為感應器，cloud security，analytics，威脅情報，攻擊面降低，下一代保護，自動化調查和修正，網路威脅防護，網路威脅搜尋
+keywords: Microsoft Defender for endpoint 簡介，Microsoft Defender for Endpoint，cybersecurity，advanced persistent 威脅，企業安全性，機器行為感應器，cloud security，analytics，威脅情報，攻擊面降低，下一代保護，自動化調查和修正，microsoft 威脅專家，安全分數，高級搜尋，Microsoft 365 Defender，網路威脅搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861824"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935926"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender
 
@@ -49,7 +49,7 @@ Defender for Endpoint 使用 Windows 10 和 Microsoft 強健雲端服務內建�
 
 -   **威脅情報**：由 Microsoft hunters、安全性小組所產生，並由合作夥伴提供的威脅情報擴充，威脅情報可讓 Defender for Endpoint 識別攻擊者工具、技術和程式，並在收集的感應器資料中看到警報時產生警示。
 
-<center><h2>Microsoft Defender for Endpoint</center></h2>
+<center><h2>適用於端點的 Microsoft Defender</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>威脅 & 弱點管理</b></center></a></td>
@@ -64,7 +64,7 @@ Defender for Endpoint 使用 Windows 10 和 Microsoft 強健雲端服務內建�
 <a href="#apis"><center><b>集中式設定和管理、APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 威脅防護</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -126,7 +126,7 @@ Microsoft Defender for Endpoint new managed 威脅搜尋服務提供主動的搜
 
 **[與 Microsoft 解決方案整合](threat-protection-integration.md)** <br>
 Defender for Endpoint 直接與各種 Microsoft 解決方案整合，包括：
-- Azure 資訊安全中心
+- Azure Defender
 - Azure Sentinel
 - Intune
 - Microsoft 雲端應用程式安全性

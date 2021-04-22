@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 Defender 中管理事件
 description: 了解如何指派及更新狀態
-keywords: 事件, 警示, 相關警示, 指派, 更新, 狀態, 管理, 分類, Microsoft, 365, m365
+keywords: 事件、事件、分析、回應、警示、關聯警示、指派、更新、狀態、管理、分類、microsoft、365、m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861728"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939751"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
 
@@ -61,7 +61,7 @@ ms.locfileid: "51861728"
 - 事件佇列中事件的屬性窗格。
 - 事件的 **摘要** 頁面。
 
-在調查您是否想要將警示從某個事件移動到另一個事件的情況下，您也可以從 [ **警示** ] 索引標籤，建立一個包含所有相關警示的較大或較小的事件。
+在分析您想要將警示從某個事件移動到另一個事件的情況下，您也可以在 [ **警示** ] 索引標籤中執行這項操作，進而建立一個包含所有相關警示的較大或較小的事件。
 
 ## <a name="edit-the-incident-name"></a>編輯事件名稱
 
@@ -102,4 +102,4 @@ Microsoft 365 Defender 會根據警示屬性（如受影響的端點數目、受
 
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)
-- [調查事件](investigate-incidents.md)
+- [分析事件](investigate-incidents.md)

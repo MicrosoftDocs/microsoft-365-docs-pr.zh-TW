@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: e6f3d6da2424b2b3b6b7c1f2c9973e4046d6e27f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 7aeda679d5ce350ef64a2758359390adc4a280f0
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689161"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939239"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>啟用受攻擊面縮小規則
 
@@ -31,13 +31,22 @@ ms.locfileid: "51689161"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [攻擊面減少規則](attack-surface-reduction.md) (ASR 規則) 協助防止惡意程式碼經常濫用裝置和網路遭到侵入的動作。 您可以為執行下列任何版本的 Windows 裝置設定 ASR 規則：
 - Windows 10 專業 [版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
 - Windows 10 企業 [版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
 - Windows Server， [版本 1803 (半年通道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 或更新版本
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+**需求** 您可以針對執行下列任何版本的 Windows 裝置，設定攻擊面減少規則：
+
+- Windows 10 專業版，版本1709或更新版本
+- Windows 10 企業版，版本1709或更新版本
+- Windows Server，版本 1803 (半年通道) 或更新版本
+- Windows Server 2019
+
+雖然攻擊面降減規則不需要 Windows E5 授權，但如果您有 Windows E5，您就會取得高級管理功能。 這些功能僅適用于 Windows E5，包含可用於端點的監控、分析和工作流程，以及 Microsoft 365 security center 中的報告和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用 [事件檢視器] 和 [Microsoft Defender 防病毒記錄] 來查看攻擊面減少規則事件。
 
 每個 ASR 規則都包含四個設定的其中一項：
 
@@ -108,7 +117,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 - 0：停用 (停用 ASR 規則) 
 - 1：封鎖 (啟用 ASR 規則) 
 - 2：審計 (評估 ASR 規則在啟用時會如何影響您的組織) 
-- 6：警告 (啟用 ASR 規則，但是允許使用者略過封鎖) 
+- 6：警告 (啟用 ASR 規則，但是允許使用者略過區塊) 。 警告模式現在可用於大部分的 ASR 規則。
 
 使用 [/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) configuration service PROVIDER (CSP) 新增排除專案。
 
@@ -159,8 +168,8 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
 5. 若要從 ASR 規則中排除檔案和資料夾，請選取 [ **從攻擊面減少規則排除檔案和路徑** ] 設定，並將此選項設定為 [ **啟用**]。 選取 [ **顯示** ]，然後在 [ **值名稱** ] 欄位中輸入每個檔案或資料夾。 在 [**值**] 欄中，為每個專案輸入 **0** 。
 
-> [!WARNING]
-> 請勿使用 " **值名稱** ] 欄或 [ **值** ] 欄中不支援的引號。
+   > [!WARNING]
+   > 請勿使用 " **值名稱** ] 欄或 [ **值** ] 欄中不支援的引號。
 
 ## <a name="powershell"></a>PowerShell
 

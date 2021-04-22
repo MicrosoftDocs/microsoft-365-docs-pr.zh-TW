@@ -1,7 +1,7 @@
 ---
 title: 產生測試 Microsoft 365 Defender 警示
 description: 產生測試警示以嘗試 Microsoft 365 Defender 實驗室環境的運作方式
-keywords: Microsoft 威脅防護、試用 Microsoft 威脅防護、在 Microsoft 威脅防護中產生測試警示、Microsoft 威脅防護評估實驗室中的測試警示
+keywords: Microsoft 365 Defender 模擬，請嘗試 Microsoft 365 Defender、在 Microsoft 365 Defender 中產生測試警示、Microsoft 365 Defender 評估實驗室中的測試警示
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: eae17a2cec3aa4da036ef1de52c3cd637701b929
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ebe01570b8b425b45acdcb11cc7df47d2d62e547
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054575"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935650"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>在 Microsoft 365 Defender 評估實驗室中產生測試警示  
 

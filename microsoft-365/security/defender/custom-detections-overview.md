@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 中的自訂偵測概述
 description: 瞭解您可以如何使用高級搜尋來建立自訂偵測並產生警示
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，schema，kusto，microsoft 365，Microsoft 威脅防護
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、查詢、遙測、自訂偵測、架構、kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 589a15aa456a96a5eef8042d922d338f056a882d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bf635ed03cb0d99d54fc94b622bf244447b32a80
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498838"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935698"
 ---
 # <a name="custom-detections-overview"></a>自訂偵測概觀
 

@@ -1,7 +1,7 @@
 ---
 title: Symantec to Microsoft Defender for Endpoint-階段1，準備
 description: 這是第1階段，準備從 Symantec 遷移至 Microsoft Defender for Endpoint。
-keywords: 遷移、windows defender 高級威脅防護、atp、edr
+keywords: 遷移，Microsoft Defender for Endpoint，edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 8c8f91448415bc1e9490706ee23bd8cae7f51a63
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 03bc323958ffbf027a25290bb61bc82307d937a8
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698241"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935902"
 ---
 # <a name="migrate-from-symantec---phase-1-prepare-for-your-migration"></a>從 Symantec 遷移-階段1：準備遷移
 

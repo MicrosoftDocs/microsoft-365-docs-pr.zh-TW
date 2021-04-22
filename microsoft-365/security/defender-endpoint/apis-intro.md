@@ -2,7 +2,7 @@
 title: 存取適用於端點的 Microsoft Defender API
 ms.reviewer: ''
 description: 瞭解如何使用 APIs，根據 Microsoft Defender for Endpoint 功能自動化工作流程和創新
-keywords: api，api，Microsoft Defender for Endpoint，open api，Microsoft Defender for Endpoint api，public api，支援的 api，警示，裝置，使用者，網域，ip，file，advanced 搜尋，查詢
+keywords: api，api，wdatp，open api，microsoft defender for endpoint api，microsoft defender atp，public api，支援的 api，警示，裝置，使用者，網域，ip，file，advanced 搜尋，查詢
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87dce8ff4fde505eb8d4e458c8d9fb56556f4d78
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 843bd953b97f29a5b9c80fc44a9b19fae60a6fa7
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935101"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939763"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>存取適用於端點的 Microsoft Defender API 
 

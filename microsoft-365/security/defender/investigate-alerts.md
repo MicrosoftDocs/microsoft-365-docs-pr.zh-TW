@@ -1,7 +1,7 @@
 ---
-title: 調查 Microsoft 365 Defender 中的警示
-description: 調查透過裝置、使用者和信箱查看的警示。
-keywords: 事件, 警示, 調查, 關聯, 攻擊, 電腦, 裝置, 使用者, 身分識別, 身分識別, 信箱, 電子郵件, 365, microsoft, m365
+title: 分析 Microsoft 365 Defender 中的警示
+description: 分析透過裝置、使用者和信箱查看的警示。
+keywords: 事件、警示、調查、分析、回應、關聯、攻擊、電腦、裝置、使用者、身分識別、身分識別、信箱、電子郵件、365、microsoft、m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 18b4df6a2dbb22235d6781f1430f7a75e319fbcf
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861990"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939539"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的警示
+# <a name="analyze-alerts-in-microsoft-365-defender"></a>分析 Microsoft 365 Defender 中的警示
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51861990"
 
 提醒是指所有的事件，並指出您環境中發生惡意或可疑事件的基礎。 警示通常是廣泛攻擊的一部分，並提供有關事件的線索。
 
-在 Microsoft 365 Defender 中，相關的警示會彙集在一起，以形成 [事件](incidents-overview.md)。 事件一定會提供更廣泛的攻擊內容，但是在需要深入分析時，調查警示會非常有用。 
+在 Microsoft 365 Defender 中，相關的警示會彙集在一起，以形成 [事件](incidents-overview.md)。 事件一定會提供更廣泛的攻擊內容，不過，當需要深入分析時，分析警示可能很重要。 
 
 [ **警示] 佇列** 會顯示目前的警示集。 您可以從 **事件 & 警示** 中取得警示佇列，以在 Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上 > 警示。
 
@@ -134,12 +134,12 @@ ms.locfileid: "51861990"
 
 ## <a name="resolve-an-alert"></a>解決警示
 
-當您完成對警示的調查並且可以解決後，請移至 [ **管理警示** ] 窗格中的警示，並將 it 狀態標示為 [ **已解決** ]，然後將其歸類為 **錯誤警示** 或 **True 警示**。 若為 true 警示，請在 **判斷** 欄位中指定警示的威脅類型。
+當您完成對警示的分析而且可以解決後，請移至 [ **管理警示** ] 窗格中的警示，並將 it 狀態標示為 [ **已解決** ]，然後將其歸類為 **錯誤警示** 或 **True 警示**。 若為 true 警示，請在 **判斷** 欄位中指定警示的威脅類型。
 
 分類提醒並指定其判斷，可協助調整 Microsoft 365 Defender，以提供更真實的警示及較少的虛假警示。
 
 ## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
-- [調查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)
+- [分析事件](investigate-incidents.md)

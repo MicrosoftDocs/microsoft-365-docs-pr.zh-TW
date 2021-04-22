@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4488a552475121adc4a439106bc0bf0d97cb509a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7fb0de4f8dc67331e7acca59e70d061fe7c19493
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057283"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935734"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的列出事件 API
 
@@ -142,7 +142,7 @@ mitreTechniques | 攻擊技巧，與 [MITRE ATT&](https://attack.mitre.org/)™ 
 
 欄位名稱 | 描述 | 範例值
 -|-|-
-DeviceId | Microsoft Defender ATP 中所指定的裝置識別碼。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+DeviceId | 在 Microsoft Defender for Endpoint 中指定的裝置識別碼。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId |  在 [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)中指定的裝置識別碼。 僅適用于已加入網域的裝置。 | Null
 deviceDnsName | 裝置的完整功能變數名稱。 | user5cx.middleeast.corp.contoso.com
 osPlatform | 裝置正在執行的作業系統平臺。| WindowsServer2016
@@ -157,7 +157,7 @@ riskScore | 裝置的風險分數。 | 高
 
 欄位名稱 | 描述 | 範例值
 -|-|-
-entityType | 識別為屬於指定警示或與其相關的實體。<br>屬性值包括： *User*， *Ip*， *Url*， *File*， *Process*， *MailBox*， *MailMessage*， *MailCluster*， *Registry* | User
+entityType | 識別為屬於指定警示或與其相關的實體。<br>屬性值包括： *User*， *Ip*， *Url*， *File*， *Process*， *MailBox*， *MailMessage*， *MailCluster*， *Registry* | 使用者
 sha1 | 當 entityType 為 *File* 時可用。<br>與檔案或處理常式相關聯之警示的檔案雜湊。 | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
 sha256 | 當 entityType 為 *File* 時可用。<br>與檔案或處理常式相關聯之警示的檔案雜湊。 | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
 檔案名 | 當 entityType 為 *File* 時可用。<br>與檔案或處理常式相關聯的警示檔案名 | Detector.UnitTests.dll

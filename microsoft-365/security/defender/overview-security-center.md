@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 安全性中心概觀
+title: Microsoft 365 的安全性中心概述，結合 MDO、MDE、MDI 及 MCAS
 description: Microsoft 365 security center 中的優點，結合 Microsoft Defender for Office 365 (MDO) 和 Microsoft Defender for Endpoint (MDE) ，使用 Microsoft Defender for Identity (MDI) 和 Microsoft Cloud App Security (MCAS) 。 本文概述適用于系統管理員的 Microsoft 365 安全性中心提升。
 keywords: 安全性，惡意程式碼，Microsoft 365，M365，security center，monitor，report，identity，data，裝置，應用程式
 ms.prod: m365-security
@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 04/07/2021
+ms.date: 04/21/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2e1553b231692d184146897ddc05e11930ed1bf0
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903971"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939261"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>整合的 Microsoft 365 安全性中心概述
 
@@ -68,6 +68,9 @@ Microsoft 365 的安全性中心強調 *unity、清晰度及共同目標* ，因
 - 常見術語
 - 一般實體
 - 與其他工作負載的功能同位
+
+> [!NOTE]
+> 整合 Microsoft 365 的安全性中心可供存取，而不需要客戶進行遷移步驟或購買新的授權。 例如，具有 E3 訂閱的系統管理員可以存取這個新入口網站，就像使用 Microsoft Defender for Office 365 方案1和方案2一樣。不過，Exchange Online Protection 或 MDO Plan 1 客戶只會看到其訂閱授權所支援的安全性功能。 新的中心目標是集中安全性。
 
 ## <a name="unified-investigations"></a>整合調查
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 安全性入口網站中的裝置設定檔
 description: 查看組織中裝置的風險與暴露層級。 分析過去並呈現威脅，並以最新的更新保護裝置。
-keywords: 安全性，惡意程式碼，Microsoft 365，M365，Microsoft 威脅防護，MTP，安全性中心，Microsoft Defender ATP，Office 365 ATP，Azure ATP，裝置頁面，裝置設定檔，機器頁面，電腦設定檔
+keywords: security，惡意程式碼，Microsoft 365，M365，Microsoft 365 Defender，安全性中心，Microsoft Defender for Endpoint，Microsoft Defender for Office 365，Microsoft Defender for Identity，裝置頁面，裝置設定檔，機器頁面，電腦設定檔
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: c51c002d263452142a1bcf6fc5603d6ec4ef4cf7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8e2788fd9163a27b41bd3788facf5fc9623b0543
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197966"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935662"
 ---
 # <a name="device-profile-page"></a>裝置設定檔頁面面
 
@@ -142,7 +142,7 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 
 預設的視圖包含詳細說明解決安全弱點、相關威脅、相關元件或受威脅影響的軟體等等的各欄。 專案可以以建議的狀態加以篩選。
 
-### <a name="software-inventory"></a>軟體清查
+### <a name="software-inventory"></a>軟體庫存
 
 [ **軟體清查** ] 索引標籤會列出裝置上已安裝的軟體。
 

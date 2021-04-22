@@ -1,7 +1,7 @@
 ---
 title: 疑難排解網路保護的問題
 description: 用於疑難排解 Microsoft Defender for Endpoint 中的網路保護問題的資源和範例程式碼。
-keywords: 疑難排解，錯誤，修正，windows defender 例如，asr，rules，hips，疑難排解，審核，排除，錯誤正值，已中斷，封鎖，microsoft defender for endpoint，microsoft defender 高級威脅防護
+keywords: 疑難排解，錯誤，修正，windows defender 例如，asr，rules，hips，疑難排解，審核，排除，錯誤正值，已中斷，封鎖，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 9efc42441c2cb30f35abf658071088f7f7bbaf00
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: f77ce94fda63a9e7e8a9484a67a22eeec136d619
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760095"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935878"
 ---
 # <a name="troubleshoot-network-protection"></a>疑難排解網路保護
 
@@ -31,7 +31,7 @@ ms.locfileid: "51760095"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 當您使用 [網路保護](network-protection.md) 時，可能會發生問題，例如：

@@ -1,7 +1,7 @@
 ---
-title: 調查 Microsoft 365 Defender 中的事件
+title: 分析 Microsoft 365 Defender 中的事件
 description: 分析與裝置、使用者和信箱相關的事件。
-keywords: 事件,電腦,裝置,使用者,身分識別,郵件,電子郵件,信箱,調查,圖形,證據
+keywords: 事件，事件，分析，回應，機器，裝置，使用者，身分識別，郵件，電子郵件，信箱，調查，圖形，證據
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,17 +22,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861858"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939739"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的事件
+# <a name="analyze-incidents-in-microsoft-365-defender"></a>分析 Microsoft 365 Defender 中的事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **適用於：**
 
@@ -40,9 +39,9 @@ ms.locfileid: "51861858"
 
 Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據，集中于您的裝置、使用者和信箱，以讓您全面瞭解攻擊的整體廣度。
 
-在事件內，您可以調查影響網路的警示、瞭解其含義，以及對照證據來設計有效的修復計畫。
+在事件內，您會分析影響網路的警示、瞭解其含義，以及對照證據來設計有效的修復計畫。
 
-## <a name="initial-investigation"></a>初始調查
+## <a name="initial-analysis"></a>初始分析
 
 深入瞭解詳細資料之前，請先查看事件的屬性與摘要。
 
@@ -87,9 +86,9 @@ Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據，
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="事件提醒頁面的範例":::
 
-依預設，提醒會以時間順序排列，以讓您瞭解事件隨時間的播放方式。 選取每個提醒會帶您前往警示的主頁面，您可以在其中對該警示進行深入調查。 
+依預設，提醒會以時間順序排列，以讓您瞭解事件隨時間的播放方式。 選取每個提醒會帶您前往警示的主頁面，您可以在其中對該警示進行深入分析。 
 
-瞭解如何在[調查提醒](investigate-alerts.md)中使用警示佇列及警示頁面
+瞭解如何在[分析提醒](investigate-alerts.md)中使用警示佇列及警示頁面
 
 ## <a name="devices"></a>裝置
 
