@@ -1,7 +1,7 @@
 ---
 title: 從 Microsoft Defender for Endpoint 遷移高級搜尋查詢
 description: 瞭解如何調整您的 Microsoft Defender 以進行端點查詢，讓您可以在 Microsoft 365 Defender 中使用它們
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，microsoft defender atp，mdatp，search，查詢，遙測，自訂偵測，schema，kusto，microsoft 365，對應
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、Microsoft Defender for 端點、搜尋、查詢、遙測、自訂偵測、架構、kusto、對應
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: c0a29f93b9ea926beaeecb840ba108da04a89ebb
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 5513c4b4fd8c5e24f9ada989113abc8a10e6a864
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501138"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933442"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>從 Microsoft Defender for Endpoint 遷移高級搜尋查詢
 

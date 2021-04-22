@@ -23,6 +23,8 @@
           href: service-description/device-requirements.md
         - name: 裝置影像
           href: service-description/device-images.md
+        - name: 裝置名稱
+          href: service-description/device-names.md
         - name: 程式裝置
           href: service-description/device-list.md
           items:
@@ -83,6 +85,8 @@
           href: get-ready/mapped-drives.md
         - name: 準備列印資源
           href: get-ready/printing.md
+        - name: 位址裝置名稱
+          href: get-ready/address-device-names.md
     - name: 開始使用 Microsoft 受管理的電腦
       href: get-started/index.md
       items:
@@ -157,6 +161,8 @@
           href: working-with-managed-desktop/work-with-app-control.md
         - name: 變更裝置設定檔
           href: working-with-managed-desktop/change-device-profile.md
+        - name: 移除裝置
+          href: working-with-managed-desktop/remove-devices.md
         - name: 可設定的設定
           href: working-with-managed-desktop/config-setting-overview.md
           items:

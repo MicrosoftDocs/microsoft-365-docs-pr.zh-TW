@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender 安全中心時區設定
 description: 使用這裡所包含的資訊來設定 Microsoft Defender 安全中心時區設定和查看授權資訊。
-keywords: 設定，Microsoft Defender，cybersecurity 威脅情報，高級威脅防護，時區，utc，本機時間，授權
+keywords: 設定，Microsoft Defender，cybersecurity 威脅情報，Microsoft Defender for Endpoint，時區，utc，本機時間，授權
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e395420b92c29977f1c802d1c10683492c1aba10
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: df55a1b0e92c24b5f52032330ef95bf19aeb8cb3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470462"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932628"
 ---
 # <a name="microsoft-defender-security-center-time-zone-settings"></a>Microsoft Defender 安全中心時區設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "51470462"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-settings-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-settings-abovefoldlink)
 
 使用 **時區** 功能表時區 ![ 設定 icon1 ](images/atp-time-zone.png) 來設定時區及查看授權資訊。
 

@@ -1,7 +1,7 @@
 ---
 title: 減少零天的漏洞-威脅和弱點管理
 description: 瞭解如何透過威脅和弱點管理，找出並減少環境中的零天弱點。
-keywords: mdatp tvm zero 弱點，tvm，威脅 & 漏洞管理，零天，0天，緩解0天的漏洞，易攻擊的 CVE
+keywords: Microsoft Defender for Endpoint tvm day 弱點，tvm，威脅 & 漏洞管理，零天，0天，緩解0天的漏洞，易攻擊的 CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 941e4989dcb91ff9240131f5980d0e1eced2b21d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: be508e646a67f01887814a0e72170e438ee86212
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501230"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933058"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>減少零天的漏洞-威脅和弱點管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51501230"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 零一天的弱點是公開披露的弱點，尚未發行任何正式的修補程式或安全性更新。 零天的漏洞通常會有高嚴重性層級，並主動加以利用。
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 中的高級搜尋配額和使用參數
 description: '瞭解各種配額和使用參數 (服務限制可讓高級搜尋服務保持回應的) '
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構，kusto，CPU 限制，查詢限制，資源，最大結果，配額，參數，配置
+keywords: 「高級搜尋」、「威脅搜尋」、「網路威脅搜尋」、Microsoft 365 Defender、microsoft 365、m365、搜尋、查詢、遙測、架構、kusto、CPU 限制、查詢限制、資源、最大結果、配額、參數、配置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ca79abfa95feb65f98ec32ae8dbc0093e34d58e6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: c9526363b0430514455db1fbdf12cfb7a18229f1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498435"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932986"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>高級搜尋配額和使用參數
 

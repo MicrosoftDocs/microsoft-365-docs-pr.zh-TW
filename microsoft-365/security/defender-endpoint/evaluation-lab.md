@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint 評估實驗室
 description: 深入瞭解 Microsoft Defender for Endpoint 功能、執行攻擊模擬，並查看其如何防止、偵測和 remediates 威脅。
-keywords: 評估 mdatp，評估，實驗室，模擬，windows 10，windows server 2019，評估實驗室
+keywords: 評估 Microsoft Defender for Endpoint，評估，實驗室，模擬，windows 10，windows server 2019，評估實驗室
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: ed2165c0102170256f50964180a550d8eccbce8c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893434"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932784"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評估實驗室
 

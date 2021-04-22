@@ -2,7 +2,7 @@
 title: Linux 資源上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 描述 Linux 上的 Microsoft Defender for Endpoint 的資源，包括如何卸載，如何收集診斷記錄、CLI 命令，以及產品的已知問題。
-keywords: microsoft，defender，atp，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
+keywords: microsoft，defender，Microsoft Defender for Endpoint，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de2602bdc94507d27236b939553a6567b2587f36
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 176ee89c8d60a1515855296e2565f0649f908a33
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903139"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933322"
 ---
 # <a name="resources"></a>資源
 
@@ -81,7 +81,7 @@ ms.locfileid: "51903139"
 
 ## <a name="uninstall"></a>Uninstall
 
-有幾種方式可以為 Linux 卸載 Defender for Endpoint。 如果您使用的是設定工具（例如 Puppet），請遵循設定工具的套件卸載指示。
+有幾種方式可以在 Linux 上卸載端點的 Defender。 如果您使用的是設定工具（例如 Puppet），請遵循設定工具的套件卸載指示。
 
 ### <a name="manual-uninstallation"></a>手動卸載
 

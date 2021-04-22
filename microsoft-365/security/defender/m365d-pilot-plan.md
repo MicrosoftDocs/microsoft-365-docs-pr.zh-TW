@@ -1,7 +1,7 @@
 ---
 title: 規劃試驗 Microsoft 365 Defender 專案
 description: 規劃試驗 Microsoft 365 Defender 專案與專案關係人以管理預期，並確保成功的結果。
-keywords: Microsoft 威脅防護試驗，規劃試驗 Microsoft 威脅防護專案，評估 Microsoft 威脅防護中的實際執行、Microsoft 威脅防護試驗專案、網路安全性、高級持續性威脅、企業安全性、裝置、裝置、身分識別、使用者、資料、應用程式、事件、自動化調查和修正，以及高級搜尋
+keywords: Microsoft 365 Defender 試驗，規劃試驗 Microsoft 365 Defender project，評估 Microsoft 365 Defender in 實際執行，Microsoft 365 Defender 試驗專案，網路安全性，高級持續性威脅，企業安全性，裝置，裝置，身分識別，使用者，資料，應用程式，事件，自動化調查和修正，高級搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: aee508414b2388b04ab362eedb1f894a4c3d54fd
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 98f0c91a51cc2b73cc26e6fb53143a417a7a147e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057980"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932544"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>規劃試驗 Microsoft 365 Defender 專案 
 

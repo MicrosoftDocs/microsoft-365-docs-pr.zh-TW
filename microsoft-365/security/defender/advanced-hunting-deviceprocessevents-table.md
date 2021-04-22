@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 DeviceProcessEvents 表格
 description: 深入瞭解高級搜尋架構 DeviceProcessEventstable 中的程式產生或建立事件
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、table、column、data type、processcreationevents、DeviceProcessEvents、進程識別碼、命令列、DeviceProcessEvents
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、query、遙測、schema reference、kusto、table、column、data type、processcreationevents、DeviceProcessEvents、進程識別碼、命令列、DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d3a7943d5d04178587b95b4c0b4266b3e8cf54bb
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 88c0692e776146b54ff559dd51b7ca48d10c6be3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501172"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933034"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 

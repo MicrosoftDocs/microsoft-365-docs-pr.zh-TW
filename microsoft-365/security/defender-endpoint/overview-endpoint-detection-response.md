@@ -2,7 +2,7 @@
 title: 端點偵測和回應功能的概覽
 ms.reviewer: ''
 description: 深入瞭解 Microsoft Defender for Endpoint 中的端點偵測和回應功能
-keywords: microsoft defender for endpoint，endpoint 偵測和回應，回應，偵測，cybersecurity，保護
+keywords: Microsoft Defender for Endpoint，endpoint 偵測和回應，回應，偵測，cybersecurity，保護
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 138a6afde9e8c601fd41811928580644b85bf2e2
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b00bef611a3e4b33bf15a5366b09a96f68d4c1a2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861716"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933514"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>端點偵測和回應概述
 

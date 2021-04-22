@@ -2,7 +2,7 @@
 title: 手動在 Linux 上部署 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 說明如何從命令列手動在 Linux 上部署 Microsoft Defender for Endpoint。
-keywords: microsoft，defender，atp，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
+keywords: microsoft，defender，Microsoft Defender for Endpoint，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2beb46c62de2e9720d1626e0e1e5ce806a6d7e19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903913"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929082"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>手動在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -58,7 +58,7 @@ ms.locfileid: "51903913"
 
 ## <a name="configure-the-linux-software-repository"></a>設定 Linux 軟體存放庫
 
-您可以從下列其中一個通道部署適用于 Linux 的 Endpoint， (如下所示的 *[通道]*) ：「 *內部人員-快*」、「 *預覽人員-慢速*」或「 *生產*」。每個通道都會對應至 Linux 軟體存放庫。 以下提供設定裝置使用其中一種存放庫的指示。
+您可以從下列其中一個 (通道部署在 Linux 上的 Defender： *[通道]*) ：「內部人員 *-快*」、「 *預覽人員-緩慢*」或「 *生產*」。每個通道都會對應至 Linux 軟體存放庫。 以下提供設定裝置使用其中一種存放庫的指示。
 
 通道選擇會決定提供給裝置的更新類型及頻率。 在內部版本中的裝置 *快* 用的第一種方法是接收更新及新功能，然後是上一個程式 *-速度慢* ，最後透過 *生產*。
 
@@ -86,7 +86,7 @@ ms.locfileid: "51903913"
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    例如，如果您正在執行 CentOS 7，且想要從 *生產* 通道為 Linux 部署 Defender for Linux：
+    例如，如果您正在執行 CentOS 7，且想要從 *生產* 通道在 Linux 上部署 Defender for Endpoint：
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -328,7 +328,7 @@ ms.locfileid: "51903913"
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > 請注意，在完成初始安裝之後，您可能還需要設定 proxy。 請參閱 [Configure Defender for configuration For Linux for 靜態 proxy 探索：安裝後設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。
+    > 請注意，在完成初始安裝之後，您可能還需要設定 proxy。 請參閱 [在 Linux 上設定用於靜態 proxy 探索的 Defender For Endpoint：安裝後設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。
 
 5. 執行偵測測試，確認裝置已正確架及報表服務。 在新的架裝置上執行下列步驟：
 
@@ -344,7 +344,7 @@ ms.locfileid: "51903913"
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - 檔案應該已被用於 Linux 的 Endpoint 的 Defender 隔離。 使用下列命令列出所有偵測到的威脅：
+    - 檔案應該已被 Linux 上的 Defender for Endpoint 隔離。 使用下列命令列出所有偵測到的威脅：
 
         ```bash
         mdatp threat list
@@ -381,7 +381,7 @@ Options:
 
 ## <a name="operating-system-upgrades"></a>作業系統升級
 
-將您的作業系統升級為新的主要版本時，您必須先卸載適用于 Linux 的 Endpoint 的 Defender，安裝升級，最後在裝置上為 Linux 重新設定 Defender for Linux。
+將作業系統升級為新的主要版本時，您必須先在 Linux 上卸載適用于 Endpoint 的 Defender，安裝升級，最後在裝置上重新設定 Linux 上的 Endpoint 的 Defender。
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何從 Insiders-Fast 遷移至實際執行通道
 
@@ -406,4 +406,4 @@ Options:
 
 ## <a name="uninstallation"></a>卸載
 
-如需如何從用戶端裝置移除適用于 Linux 之 Defender 的詳細資訊，請參閱 [Uninstall](linux-resources.md#uninstall) 。
+如需如何從用戶端裝置移除 Linux 上的 Endpoint Endpoint 的詳細資訊，請參閱 [Uninstall](linux-resources.md#uninstall) 。

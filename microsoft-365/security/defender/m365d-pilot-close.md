@@ -1,7 +1,7 @@
 ---
 title: 摘要示範 Microsoft 365 Defender 專案結果
 description: 透過完成您的計分卡、分析報表結果，以及決定如何繼續進行，結束 Microsoft 365 Defender 專案的試驗。
-keywords: Microsoft 威脅防護試驗，決定在試驗 Microsoft 威脅防護專案之後所要執行的工作、評估 Microsoft 威脅防護在生產環境中的情形、從 Microsoft 威脅防護試驗轉換至部署、網路安全性、高級持續威脅、企業安全性、裝置、裝置、自動調查和修正，以及高級搜尋
+keywords: Microsoft 365 Defender 試驗，決定在試驗 Microsoft 365 Defender 專案之後要執行的工作、評估 Microsoft 365 Defender 的實際執行資訊、從 Microsoft 365 Defender 試驗轉換為部署、網路安全性、高級持續性威脅、企業安全性、裝置、裝置、自動調查和修正，以及高級搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2553e88992b7eca906b4697edee4cdf632929444
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 64cdb37b64780a651b2689e68e21c5a385df5ba9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060567"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932866"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>關閉及摘要您的 Microsoft 365 Defender 試驗  
 

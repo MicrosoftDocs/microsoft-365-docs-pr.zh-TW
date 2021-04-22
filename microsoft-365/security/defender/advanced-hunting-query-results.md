@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft 365 Defender 中的高級搜尋查詢結果
 description: 在 Microsoft 365 Defender 中使用高級搜尋所傳回的查詢結果
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，schema，kusto，microsoft 365，Microsoft 威脅防護，視覺化，圖表，篩選器，向外鑽取
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，查詢，遙測，自訂偵測，架構，kusto，視覺化，圖表，篩選器，向外鑽取
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7086108febc25c4ecaaa3015c1d9a49f9d8ee642
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 34880c870cdf398ab1565f7f532ac95a6fde475d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500909"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932926"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高級搜尋查詢結果
 

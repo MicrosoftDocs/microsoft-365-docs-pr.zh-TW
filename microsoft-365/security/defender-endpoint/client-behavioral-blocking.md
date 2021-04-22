@@ -1,7 +1,7 @@
 ---
 title: 用戶端行為封鎖
 description: 用戶端行為封鎖是 Microsoft Defender for Endpoint 中行為封鎖和包容功能的一部分
-keywords: 行為封鎖，快速保護，用戶端行為，Microsoft Defender ATP，microsoft defender for endpoint
+keywords: 行為封鎖，快速保護，用戶端行為，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 48929d0e2b0c932d37cb5d29783712d00b17117f
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: c58c81cd4623ec03850c167cad285e052413174c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904149"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933418"
 ---
 # <a name="client-behavioral-blocking"></a>用戶端行為封鎖
 

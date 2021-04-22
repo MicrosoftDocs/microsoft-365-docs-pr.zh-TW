@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: a3885a462265368bc42c758ee5a8fd1c673ec08c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893598"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932796"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>設定裝置 proxy 和網際網路連線設定
 
@@ -176,7 +176,7 @@ Ods.opinsights.azure.com、oms.opinsights.azure.com 和 *. agentsvc.azure-automa
 您可以使用測試結果的「防火牆 Rule： blob.core.windows.net」區段中所示的 URLs，取代 blob.core.windows.net URL 端點。 
 
 > [!NOTE]
-> 在透過 Azure Security Center 上架的情況下 (ASC) 中，可能會使用多個工作區。 您必須在每個工作區的架電腦上執行上述 TestCloudConnection.exe 程式 (，以判斷是否) 工作區之間的 blob.core.windows.net URLs 的任何變更。
+> 在使用 Azure Defender 進行上架時，可能會使用多個工作區。 您必須在每個工作區的架電腦上執行上述 TestCloudConnection.exe 程式 (，以判斷是否) 工作區之間的 blob.core.windows.net URLs 的任何變更。
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>驗證 Endpoint service URLs 的用戶端與 Microsoft Defender 的連線能力
 

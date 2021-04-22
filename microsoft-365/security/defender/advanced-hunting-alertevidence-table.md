@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 AlertEvidence 表格
 description: 深入瞭解與高級搜尋架構之 AlertEvidence 表格中的警示相關的資訊
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，資料表，欄，資料類型，描述，AlertInfo，alert，實體，證據，檔案，IP 位址，裝置，機器，使用者，帳戶
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，AlertInfo，alert，entities，證據，file，IP address，device，machine，使用者，帳戶
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b1f581e1cfc8345df6e7b8053621cf46110c355
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 5ecab217a6181096e4689d78fa2bdddc0a767d0d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499885"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932580"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: 9d24381b5947049c506b19553a2ab3d77b95d7c8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 109ba05b21ce9c1355be73dbdfb000d6eb8c4e4d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200314"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930468"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -43,8 +43,8 @@ ms.locfileid: "51200314"
 |步驟|工作|所有 Office 365 企業版方案|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
 |1|[ (MFA) 啟用 Azure AD Multi-Factor 驗證 ](#1-enable-azure-ad-multi-factor-authentication-mfa)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[防範威脅](#2-protect-against-threats)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[設定 Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|第|[防範威脅](#2-protect-against-threats)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|個|[設定 Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[設定 Microsoft Defender 身分識別](#4-configure-microsoft-defender-for-identity)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[開啟 Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[設定電話和平板電腦的 Intune 行動裝置應用程式保護](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -108,7 +108,7 @@ Microsoft Defender for Office 365：
 
 您需要與 Exchange Online 系統管理員和 SharePoint Online 管理員合作，為下列工作負載設定 Office 365 的 Defender：
 
-- [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](office-365-security/mdo-for-spo-odb-and-teams.md)
+- [用於 SharePoint、OneDrive 和 Microsoft 小組的 microsoft Defender for Endpoint](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4：設定 Microsoft Defender 身分識別
 

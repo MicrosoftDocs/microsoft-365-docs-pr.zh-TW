@@ -1,6 +1,6 @@
 ---
 title: '將存取權授與受管理的安全性服務提供者 (MSSP) '
-description: 採取必要的步驟來設定 MSSP 與 Microsoft Defender ATP 的整合
+description: 採取必要的步驟設定 MSSP 整合與 Microsoft Defender for Endpoint
 keywords: 受管理的安全性服務提供者、mssp、configure、integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1bb7bc3565bbb7c05f165c5649f3672ff33bb18b
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165450"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932748"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>授與受管理的安全性服務提供者 (MSSP) access (預覽) 
 
@@ -32,7 +32,7 @@ ms.locfileid: "51165450"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 >[!IMPORTANT] 
 >部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
@@ -137,7 +137,7 @@ ms.locfileid: "51165450"
 ## <a name="related-topics"></a>相關主題
 - [存取 MSSP 客戶入口網站](access-mssp-portal.md)
 - [設定警示通知](configure-mssp-notifications.md)
-- [從客戶租使用者提取警示](fetch-alerts-mssp.md)
+- [從客戶租用戶中抓取警示](fetch-alerts-mssp.md)
 
 
 

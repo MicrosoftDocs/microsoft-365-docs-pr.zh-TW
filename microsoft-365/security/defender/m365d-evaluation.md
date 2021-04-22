@@ -1,7 +1,7 @@
 ---
 title: 評估 Microsoft 365 Defender
 description: 設定您的 Microsoft 365 Defender 試用實驗室或試驗環境，以嘗試用來保護組織中裝置、身分識別、資料和應用程式的安全性解決方案。
-keywords: Microsoft 威脅防護試用版，請嘗試 Microsoft 威脅防護，評估 Microsoft 威脅防護，Microsoft 威脅防護實驗，Microsoft 威脅防護試驗，網路安全性，高級持續性威脅，企業安全性，裝置，裝置，身分識別，使用者，資料，應用程式，事件，自動化調查和修正，高級搜尋
+keywords: Microsoft 365 Defender 試用版，請試用 Microsoft 365 Defender，評估 Microsoft 365 Defender，Microsoft 365 Defender 評估實驗室，Microsoft 365 Defender 試驗，網路安全性，高級持續性威脅，企業安全性，裝置，裝置，身分識別，使用者，資料，應用程式，事件，自動化調查和修正，高級搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2ea829e0e2697facd2522dbf16ced7d620662eee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1c260588b80d8325567b74148a7a62586cfbc707
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060571"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933166"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>建立 Microsoft 365 Defender 試用實驗室或試驗環境 
 
@@ -63,8 +63,8 @@ ms.locfileid: "51060571"
 
 |階段 | 描述 | 
 |:-------|:-----|
-|[階段1：準備](prepare-m365d-eval.md)| 深入瞭解在試用實驗室或試驗環境中部署 Microsoft 365 Defender 時，需要考慮的事項： <br><br>-專案關係人和簽核關 <br> -環境考慮 <br>-Access <br>-Azure Active Directory 安裝程式 <br> -設定順序
-|[階段2：設定](setup-m365deval.md)|  請先取得存取 Microsoft 365 安全中心的初始步驟，以設定您的 Microsoft 365 Defender 試用實驗室或試驗環境。 您將會指導您：<br><br>-註冊 Microsoft 365 E5 試用版 <br>  -設定網域<br>-指派 Microsoft 365 E5 授權<br>-完成入口網站中的設定向導|
+|[階段 1：準備](prepare-m365d-eval.md)| 深入瞭解在試用實驗室或試驗環境中部署 Microsoft 365 Defender 時，需要考慮的事項： <br><br>-專案關係人和簽核關 <br> -環境考慮 <br>-Access <br>-Azure Active Directory 安裝程式 <br> -設定順序
+|[階段 2：設定](setup-m365deval.md)|  請先取得存取 Microsoft 365 安全中心的初始步驟，以設定您的 Microsoft 365 Defender 試用實驗室或試驗環境。 您將會指導您：<br><br>-註冊 Microsoft 365 E5 試用版 <br>  -設定網域<br>-指派 Microsoft 365 E5 授權<br>-完成入口網站中的設定向導|
 |[階段3：設定板載 &](config-m365d-eval.md) | 設定每個 Microsoft 365 Defender pillar 和板載端點。 您將會指導您：<br><br>-針對 Office 365 設定 Microsoft Defender<br>-設定 Microsoft Cloud App Security<br>-設定 Microsoft Defender 身分識別<br>-設定 Microsoft Defender for Endpoint
 
 
@@ -79,7 +79,7 @@ ms.locfileid: "51060571"
 :---|:---
 適用於 Office 365 的 Microsoft Defender | 從當今的威脅中協助保護整個 Office 365 環境
 適用於身分識別的 Microsoft Defender | 識別並偵測遭到損害的身分識別和惡意的內幕人員動作威脅。
-Microsoft 雲端應用程式安全性 | 提供豐富的可見度、控制資料旅行，以及偵測不同雲端服務的 cyberthreats。
+Microsoft Cloud App Security | 提供豐富的可見度、控制資料旅行，以及偵測不同雲端服務的 cyberthreats。
 適用於端點的 Microsoft Defender | 利用全面的端點安全性，防止、偵測及提供對高級威脅的回應功能。
 
 
@@ -95,7 +95,7 @@ Microsoft 雲端應用程式安全性 | 提供豐富的可見度、控制資料�
 -   根據最佳作法設定所有 Microsoft 365 Defender 支柱
     -   適用於 Office 365 的 Microsoft Defender
     -   適用於身分識別的 Microsoft Defender
-    -   Microsoft 雲端應用程式安全性
+    -   Microsoft Cloud App Security
     -   適用於端點的 Microsoft Defender
 
 ## <a name="out-of-scope"></a>超出範圍

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint API 的 Hello World
 ms.reviewer: ''
-description: 針對 Microsoft Defender ATP) API 建立 world' 至 Microsoft Defender for (Endpoint 的做法「Hello-style API 呼叫」。
+description: 建立 Microsoft Defender for Endpoint API 的做法「Hello world'-style API 呼叫」。
 keywords: api、支援的 api、高級搜尋、查詢
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3b076d0fa6e01be2a810e8fa810cc3e32955388e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f4571607181fc96d87934ff60801643f5969e7e9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199644"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929248"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API-Hello World 
 
@@ -32,7 +32,7 @@ ms.locfileid: "51199644"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: 威脅和弱點管理中的事件時程表
 description: 事件時程表是一種風險資訊摘要，可協助您解讀組織中的風險被引進方式，以及哪些緩解措施減少。
-keywords: 事件時程表，mdatp 事件時程表，mdatp tvm 事件時程表，威脅和弱點管理，Microsoft Defender for Endpoint
+keywords: 事件時程表，Microsoft Defender for Endpoint 事件時程表，Microsoft Defender for Endpoint tvm 事件時程表，威脅和弱點管理，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 90a124f9b0bf9ef775141e359224fde566c61c8d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 64362598ff4b0512eb110917071e6d32abb8ede9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501203"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933478"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>事件時程表-威脅和弱點管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "51501203"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 事件時程表是一種危險資訊摘要，可協助您透過新的漏洞或利用手段，協助您解釋風險在組織中的引進方式。 您可以查看可能影響組織風險的事件。 例如，您可以找出已引進的新漏洞、可被攻擊者利用的漏洞、新增至利用方式套件的漏洞，等等。
 

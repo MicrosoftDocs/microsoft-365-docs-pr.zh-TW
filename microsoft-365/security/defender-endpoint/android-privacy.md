@@ -1,7 +1,7 @@
 ---
-title: 適用于 Android 的 Microsoft Defender ATP-隱私權資訊
-description: 隱私權控制，如何設定會影響隱私權的原則設定，以及 Microsoft Defender ATP for Android 中所收集診斷資料的相關資訊。
-keywords: microsoft、defender、atp、android、隱私權、診斷
+title: Android 上適用於端點的 Microsoft Defender - 隱私權資訊
+description: 隱私權控制，如何設定會影響隱私權的原則設定，以及在 Android 的 Microsoft Defender for Endpoint 中所收集的診斷資料資訊。
+keywords: microsoft、defender、Microsoft Defender for Endpoint、android、隱私權、診斷
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 415a1f555e1a33c103894221086b783aa754cf32
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876106"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930134"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上適用於端點的 Microsoft Defender - 隱私權資訊
 
@@ -32,7 +32,7 @@ ms.locfileid: "51876106"
 > 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-適用于 Android 的 defender for Android 會從您設定的 Android 裝置收集資訊，並將其儲存在您擁有 Defender for Endpoint 的相同承租人中。 收集此資訊有助於讓 iOS 安全、更新、如期執行，以及支援服務的情況下，取得端點的資訊。
+Android 上的 Defender for Android 會從您設定的 Android 裝置收集資訊，並將其儲存在您擁有 Defender for Endpoint 的相同承租人中。 收集的資訊可協助您保持 Android 的 Defender 安全、更新、如期執行，以及支援服務。
 
 如需資料儲存區的詳細資訊，請參閱 [Microsoft Defender Endpoint data storage and 隱私權](data-storage-privacy.md)。
 

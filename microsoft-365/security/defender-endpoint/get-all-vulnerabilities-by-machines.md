@@ -1,7 +1,7 @@
 ---
 title: 依機器和軟體取得所有的隱患
 description: 根據機器及軟體，檢索影響組織的所有安全性漏洞清單。
-keywords: api、graph api、支援的 api、get、弱點資訊、mdatp tvm api
+keywords: api、graph api、支援的 api、get、弱點資訊、Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f7d67948e3b3e7a1a878386a397d2f4a6e8e998e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 229c1f9e77a0cb85744155e82934b48dd63052b2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166402"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933406"
 ---
-# <a name="list-vulnerabilities-by-machine-and-software"></a>依機器及軟體列出弱點
+# <a name="list-vulnerabilities-by-machine-and-software"></a>列出電腦和軟體的弱點
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "51166402"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

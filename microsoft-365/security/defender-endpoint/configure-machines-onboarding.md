@@ -1,7 +1,7 @@
 ---
 title: 取得架至 Microsoft Defender for Endpoint 的裝置
 description: 追蹤 Intune 管理裝置的上架至 Microsoft Defender for Endpoint，並增加上架速率。
-keywords: 板載，Intune management，MDATP，WDATP，Microsoft Defender，Windows Defender，高級威脅防護，設定管理
+keywords: 板載，Intune management，Microsoft Defender for Endpoint，Microsoft Defender，Windows Defender，configuration management
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 09ca9fb466efd7764f7459a4754cfb30c8100bdb
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: e0d5a13b0c33516209bd2d18361a1de6ab9245c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904137"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932938"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>取得架至 Microsoft Defender for Endpoint 的裝置
 
@@ -71,7 +71,7 @@ ms.locfileid: "51904137"
 
 如需詳細資訊，請 [參閱使用 Intune 裝置設定設定檔將「板載裝置」設定為使用 Defender For Endpoint](https://docs.microsoft.com/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)。
 
->想要體驗 Microsoft Defender ATP？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>相關主題
 - [確保您的裝置已正確設定](configure-machines.md)

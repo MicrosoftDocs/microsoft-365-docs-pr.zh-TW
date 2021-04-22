@@ -1,7 +1,7 @@
 ---
 title: 行為封鎖和包含專案
 description: 深入瞭解 Microsoft Defender for Endpoint 中的行為封鎖和包容功能
-keywords: Microsoft Defender ATP，EDR in 封鎖模式，被動模式封鎖
+keywords: Microsoft Defender for Endpoint，EDR in 封鎖模式，被動模式封鎖
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 7cea65292c427cb953e2e8e3ca866c89f83128b1
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: fdaa4d7cbc24ae2ebe28d0856b413f4982fe6b01
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587164"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929046"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行為封鎖和包含專案
 
@@ -34,7 +34,7 @@ ms.locfileid: "51587164"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>概觀
 

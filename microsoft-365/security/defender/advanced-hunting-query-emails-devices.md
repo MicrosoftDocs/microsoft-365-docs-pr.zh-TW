@@ -1,7 +1,7 @@
 ---
 title: 使用高級搜尋來尋找跨裝置、電子郵件、應用程式和身分識別的威脅
 description: 研究常見搜尋案例，以及涵蓋裝置、電子郵件、應用程式和身分識別的範例查詢。
-keywords: 高級搜尋，Office365 資料，Windows 裝置，Office365 電子郵件正常化，電子郵件，應用程式，身分識別，威脅搜尋，網路威脅搜尋，搜尋，查詢，遙測，Microsoft 365，Microsoft 威脅防護
+keywords: 高級搜尋，Office365 資料，Windows 裝置，Office365 電子郵件正常化，電子郵件，應用程式，身分識別，威脅搜尋，網路威脅搜尋，搜尋，查詢，遙測，Microsoft 365，Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0fb8bb54e6a893fb434fe453c70ed38b8e8ccb30
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8a811d60af281bb534776736e77c3eb54ab6a760
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499320"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932962"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>跨裝置、電子郵件、應用程式和身分識別搜捕威脅
 

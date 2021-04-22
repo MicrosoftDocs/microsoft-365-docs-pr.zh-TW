@@ -1,7 +1,7 @@
 ---
 title: macOS Catalina 和更新版本 macOS 的新設定設定檔
 description: 本主題說明必須進行的變更，以便從系統擴充（macOS Catalina 上的核心擴充和較新版本的 macOS）中受益。
-keywords: microsoft，defender，atp，mac，內核，系統，分機，catalina
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，內核，system，extensions，catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 28a332cec68521741bdda62aeecd25440552344a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689122"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932736"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS Catalina 和更新版本 macOS 的新設定設定檔
 
@@ -34,7 +34,7 @@ ms.locfileid: "51689122"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 在 macOS 演變的情況下，我們正在準備使用系統擴充（而不是核心擴充）的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新只適用于 macOS Catalina (10.15.4) 和更新版本的 macOS。
 
@@ -308,7 +308,7 @@ sysext.xml: OK
 1.  在 Intune 中，開啟 [**管理**  >  **裝置** 設定]。 選取 [**管理**  >  **設定檔**  >  **建立設定檔**]。
 2. 選擇設定檔的名稱。 變更 **平臺 = macOS** 和 **配置檔案類型 = 自訂**。 選取 [ **設定**]。
 3.  開啟設定設定檔，並上傳 **sysext.xml**。 此檔案是在上述步驟中建立的。
-4.  選取 **[確定]**。
+4.  選取 [確定]。
 
     ![Intune 螢幕擷取畫面中的系統擴充](images/mac-system-extension-intune.png)
 

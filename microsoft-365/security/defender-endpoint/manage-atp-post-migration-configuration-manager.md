@@ -1,7 +1,7 @@
 ---
 title: 使用 Configuration Manager 管理 Microsoft Defender for Endpoint
 description: 瞭解如何使用 Configuration Manager 管理 Microsoft Defender for Endpoint
-keywords: 遷移後、管理、作業、維護、使用狀況、Configuration Manager、windows defender 高級威脅防護、atp、edr
+keywords: 遷移後、管理、作業、維護、使用狀況、Configuration Manager、Microsoft Defender for Endpoint、edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: bd6b6bd2721b686ab10922d09a9e94b9ebcce522
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0cd52388feb987b4231d911cd3c3fd10babba017
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185644"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933202"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>使用 Configuration Manager 管理 Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "51185644"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 建議使用 [microsoft Intune [管理員](https://docs.microsoft.com/mem)] （包括 [Microsoft intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) (Intune) 和 [microsoft endpoint Configuration (管理員](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)) ，以管理組織的威脅防護功能， (也稱為端點) ）。 

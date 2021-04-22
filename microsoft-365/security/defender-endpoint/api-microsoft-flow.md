@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP 流程連接器
+title: Microsoft Defender for Endpoint Flow connector
 ms.reviewer: ''
-description: 使用 Microsoft Defender ATP 流程連接器來自動化安全性，並建立在您的租使用者上發生新警示時所觸發的流程。
+description: 使用 Microsoft Defender for Endpoint Flow connector 來自動化安全性，並建立一個流程，當您租使用者上發生新警示時，就會觸發此流程。
 keywords: 流程、支援的 api、api、Microsoft flow、查詢、自動化
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6fd210ddfb8e3ab6e4f1f4ffc0635c8b813e3a07
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 33a7c7b1907ac761dfdde43a70bfb8f515235150
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163384"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929296"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power (過去的 Microsoft Flow) 和 Azure 功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "51163384"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 自動化的安全性程式是每一項新式安全性運作中心的標準需求。 缺乏專業的網路 defenders 強制 SOC 以最有效率的方式運作，而且自動化也是必須的。 Microsoft Power 自動支援完全為該所建立的不同連接器。 您可以在數分鐘內建立端對端程式自動化。
 

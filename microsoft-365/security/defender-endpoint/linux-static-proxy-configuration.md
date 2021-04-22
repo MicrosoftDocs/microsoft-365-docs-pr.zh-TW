@@ -2,7 +2,7 @@
 title: Linux 靜態 proxy 探索上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 說明如何針對靜態 proxy 探索，在 Linux 上設定 Microsoft Defender for Endpoint。
-keywords: microsoft、defender、atp、linux、安裝、proxy
+keywords: microsoft、defender、Microsoft Defender for Endpoint、linux、安裝、proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e59727b6bb5fca58595764fc003009891546d8f6
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: c5dc14c71c344bf508cda8d39f892d740781ac87
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903843"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933118"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>針對靜態 proxy 探索，設定 Linux 上的 Microsoft Defender for Endpoint
 

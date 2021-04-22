@@ -1,7 +1,7 @@
 ---
 title: 在 Linux 上使用 Microsoft Defender for Endpoint 偵測並封鎖可能有害的應用程式
 description: 在 Linux 上使用 Microsoft Defender for Endpoint (PUA) 偵測並封鎖可能有害的應用程式。
-keywords: microsoft、defender、atp、linux、pua、pus
+keywords: microsoft，defender，Microsoft Defender for Endpoint，linux，pua，pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9631fc2eb1cb791f48f107482474d1bb8e2fd62b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 7ec3399129cc65d75b464f5d5f56bb11250ccaf2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903855"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933154"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上使用 Microsoft Defender for Endpoint 偵測並封鎖可能有害的應用程式
 
@@ -35,7 +35,7 @@ ms.locfileid: "51903855"
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-在 PUA 中的 Defender for 中，可能有害的應用程式 () 保護功能可偵測並封鎖您網路中端點上的 PUA 檔案。
+在 Linux 上的 Defender for PUA 中，可能有害的應用程式 () 保護功能可偵測並封鎖您網路中端點上的 PUA 檔案。
 
 這些應用程式不會被視為病毒、惡意程式碼或其他類型的威脅，但是可能會對對其效能或使用不良影響的端點執行動作。 PUA 也可以參考被視為具有不良信譽的應用程式。
 
@@ -43,13 +43,13 @@ ms.locfileid: "51903855"
 
 ## <a name="how-it-works"></a>運作方式
 
-適用于 Linux 的 Defender for Linux 可以偵測並報告 PUA 檔案。 當以封鎖模式設定時，PUA 檔案會移至隔離區。
+在 Linux 上的 Defender for Endpoint 可以偵測並報告 PUA 檔案。 當以封鎖模式設定時，PUA 檔案會移至隔離區。
 
-當在端點上偵測到 PUA 時，Linux 的 Defender Endpoint 會在威脅歷程記錄中保存感染記錄。 您可以從 Microsoft Defender 安全性中心入口網站或透過 `mdatp` 命令列工具來進行記錄。 威脅名稱會包含 "Application" 一詞。
+在端點上偵測到 PUA 時，Linux 上的 Defender Endpoint 會在威脅歷程記錄中保存感染記錄。 您可以從 Microsoft Defender 安全性中心入口網站或透過 `mdatp` 命令列工具來進行記錄。 威脅名稱會包含 "Application" 一詞。
 
 ## <a name="configure-pua-protection"></a>設定 PUA 保護
 
-您可以採用下列其中一種方式，設定 PUA 的 Defender for Linux 中的保護：
+您可以採用下列其中一種方式，設定在 Linux 上的 PUA 中的 Defender for Endpoint protection：
 
 - **Off**：已停用 PUA 保護。
 - **Audit**： PUA files 會在產品記錄中報告，但不會在 Microsoft Defender Security Center 中報告。 不會將感染記錄儲存在威脅史中，也不會對產品採取任何動作。
@@ -70,8 +70,8 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>使用管理主控台來設定 PUA 保護：
 
-在您的企業中，您可以從管理主控台（如 Puppet 或 Ansible）設定 PUA 防護，類似于設定其他產品設定的方式。 如需詳細資訊，請參閱為 Linux 文章的[Defender 的設定偏好設定](linux-preferences.md)的 [[威脅類型](linux-preferences.md#threat-type-settings)設定] 區段。
+在您的企業中，您可以從管理主控台（如 Puppet 或 Ansible）設定 PUA 防護，類似于設定其他產品設定的方式。 如需詳細資訊，請參閱在 Linux 文章中的「用於[Defender 的 Defender 設定偏好設定](linux-preferences.md)」的 [[威脅類型](linux-preferences.md#threat-type-settings)設定] 區段。
 
 ## <a name="related-articles"></a>相關文章
 
-- [為 Linux 設定 Defender for Endpoint 的喜好設定](linux-preferences.md)
+- [設定 Linux 上的 Defender for Endpoint 的喜好設定](linux-preferences.md)

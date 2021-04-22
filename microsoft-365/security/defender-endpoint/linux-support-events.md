@@ -1,7 +1,7 @@
 ---
 title: 針對 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警示問題進行疑難排解
 description: 疑難排解 Linux 上的 Microsoft Defender for Endpoint 中遺失的事件或警示問題。
-keywords: microsoft、defender、atp、linux、事件
+keywords: microsoft，defender，Microsoft Defender for Endpoint，linux，事件
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 40d394a4fc7349789dea9bd96ccdaf71067ab39e
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 7de216c1397a7cc4806af8221257eeedd2290830
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903995"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933310"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>針對 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警示問題進行疑難排解
 

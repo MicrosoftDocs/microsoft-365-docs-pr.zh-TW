@@ -1,7 +1,7 @@
 ---
-title: 在 Jamf Pro 中註冊用於 macOS 裝置的 Microsoft Defender for Endpoint
-description: 在 Jamf Pro 中註冊用於 macOS 裝置的 Microsoft Defender for Endpoint
-keywords: microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，高塞拉里昂
+title: 在 macOS 裝置上為 Jamf Pro 註冊 Microsoft Defender for Endpoint
+description: 在 macOS 裝置上為 Jamf Pro 註冊 Microsoft Defender for Endpoint
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e832493159649cb6721320da53c25f57855baa4f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 0fa0db3ba85ff003d91b43d06c709ab66c37ce02
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861644"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933094"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 裝置上為 Jamf Pro 註冊 Microsoft Defender for Endpoint 
 

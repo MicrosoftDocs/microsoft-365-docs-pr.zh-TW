@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 Defender 中對高級搜尋查詢結果採取動作
 description: 在您的高級搜尋查詢結果中快速處理威脅與受影響的資產
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、採取動作
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、查詢、遙測、採取動作
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ee35bcc29ef8a283b6b04cb34ab97705d5dd15f4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0c088375cd784b411fdce417d77b1ea176bcee26
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498230"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932902"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>對高級搜尋查詢結果採取動作
 

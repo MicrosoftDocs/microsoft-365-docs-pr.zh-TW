@@ -1,7 +1,7 @@
 ---
 title: 調查 Microsoft Defender 的端點網域
 description: 使用調查選項，查看裝置和伺服器是否已與惡意網域進行通訊。
-keywords: 調查網域、網域、惡意網域、microsoft defender atp、警示、URL
+keywords: 調查網域、網域、惡意網域、Microsoft Defender for Endpoint、alert、URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 3d4520c805332bac41746a39bb8b668dbfb1a570
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 7826229ba67384137c033745a5b85e557fc9c4a7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587488"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933466"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>調查與 Microsoft Defender for Endpoint alert 相關聯的網域
 
@@ -34,7 +34,7 @@ ms.locfileid: "51587488"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink) 
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink) 
 
 調查網域，以查看商業網路中的裝置和伺服器是否已與已知惡意的網域進行通訊。
 

@@ -1,7 +1,7 @@
 ---
-title: 使用 Jamf Pro 為 macOS 部署 Microsoft Defender for Endpoint
-description: 使用 Jamf Pro 為 macOS 部署 Microsoft Defender for Endpoint
-keywords: microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，高塞拉里昂
+title: 在具有 Jamf Pro 的 macOS 上部署 Microsoft Defender for Endpoint
+description: 在具有 Jamf Pro 的 macOS 上部署 Microsoft Defender for Endpoint
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e49a56b138e792f06229345d19a5867c9f6438af
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: d102635a284ec5c802e352f097d1632e2f20e166
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862256"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929058"
 ---
 # <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>在具有 Jamf Pro 的 macOS 上部署 Microsoft Defender for Endpoint
 

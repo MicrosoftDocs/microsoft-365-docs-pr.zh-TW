@@ -1,7 +1,7 @@
 ---
 title: 優化 ASR 規則的部署和偵測
 description: 優化攻擊面減少 (ASR) 規則可識別及避免一般惡意程式碼利用漏洞。
-keywords: 板載，Intune management，MDATP，WDATP，Microsoft Defender，Windows Defender，高級威脅防護，攻擊面減少，ASR，安全性基準
+keywords: 板載，Intune management，Microsoft Defender for Endpoint，Microsoft Defender，Windows Defender，攻擊面降低，ASR，安全性基準
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5ce39bb3ff0bf3eea4ac4e89c554de43499b15f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 91295135c833c6b403078bdfd517c7b84ec7d630
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165474"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932844"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>優化 ASR 規則的部署和偵測
 
@@ -56,6 +56,6 @@ ms.locfileid: "51165474"
 
 **相關主題**
 
-* [確定您的裝置設定正確](configure-machines.md)
+* [確保您的裝置已正確設定](configure-machines.md)
 * [取得架至 Microsoft Defender for Endpoint 的裝置](configure-machines-onboarding.md)
 * [監視 Microsoft Defender for Endpoint security 基準的合規性](configure-machines-security-baseline.md)

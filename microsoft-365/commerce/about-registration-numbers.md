@@ -19,12 +19,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: a9625b391260d27610bb304b0ae3788b541b7709
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f6489425a924c15d1a5cddb8c9a7d3d7812e5f0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911980"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930230"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>關於註冊號碼和審閱通知
 
@@ -36,7 +36,7 @@ ms.locfileid: "50911980"
 
 對於登記編號是必要的國家/地區，文字方塊上方的標籤會指出需要的號碼類型。
 
-例如，在下列螢幕擷取畫面中，標籤會指出需要 CNPJ 登記編號。
+例如，在下列螢幕擷取畫面中，標籤會指出需要 CNPJ (巴西) 登記編號。
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="C N P J 編號之註冊號碼欄位的螢幕擷取畫面。":::
 

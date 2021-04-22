@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 的新功能
 description: 列出 Microsoft 365 Defender 中的新功能與功能
-keywords: microsoft 威脅防護中的新功能，ga，一般可用，功能，可用，新
+keywords: Microsoft 365 Defender 中的新功能，ga，一般可用，功能，可用，新
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e75cfe445f62860f8bdb1480fcf9029daa8ac6ea
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9f4cc36172b0ac598b2719bee8ce56bf0f8a1b84
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060383"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933382"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ，或 [在實際執行中執行您的試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
+> 想要體驗 Microsoft 365 Defender 嗎？ 您可以[在實驗室環境中評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[在生產環境中執行試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
 在最新版本的 Microsoft 365 Defender 中， (GA) 一般都有下列功能可供使用。
@@ -68,5 +68,5 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="march-2019"></a>2019 年 3 月
 - 進階搜捕 <br> 可讓您主動找到影響電子郵件和資料、裝置和身分識別之威脅的各種搜尋功能的登陸頁面。
-- [Microsoft 安全分數](microsoft-secure-score.md) <br> 度量組織的安全性狀況，其值越高，表示採取的改善動作越多。 遵循安全性分數建議可保護您的組織免受威脅。 
+- [Microsoft 安全分數](microsoft-secure-score.md) <br> 度量組織的安全性狀況，其值越高，表示採取的改善動作越多。 遵循安全性分數建議可保護貴組織免受威脅。 
 - [報告](overview-security-center.md) <br>  可提供一系列的功能，涵蓋安全分析員和系統管理員在日常作業中所追蹤的各種區域。

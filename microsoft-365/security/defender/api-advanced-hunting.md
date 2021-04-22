@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender advanced 搜尋 API
 description: 瞭解如何使用 Microsoft 365 Defender 的高級搜尋 API 執行高級搜尋查詢
-keywords: Advanced 搜尋，APIs，api，MTP，M365 Defender，Microsoft 365 Defender
+keywords: Advanced 搜尋、APIs、api、M365 Defender、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 482801bb47429ae370e06cfcbcf26bacfb8b2a92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059643"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932890"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced 搜尋 API
 
@@ -33,7 +33,7 @@ ms.locfileid: "51059643"
 
 **適用於：**
 
-- Microsoft 威脅防護
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
@@ -78,7 +78,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 ## <a name="request-headers"></a>要求標頭
 
-Header | 值
+頁首 | 值
 -|-
 授權 | 載荷 {token} **附注：必要**
 Content-Type | application/json

@@ -1,7 +1,7 @@
 ---
 title: 疑難排解 Linux 上 Microsoft Defender for Endpoint 的效能問題
-description: 疑難排解 Linux 上的 Microsoft Defender 端點中的效能問題。
-keywords: microsoft、defender、atp、linux、效能
+description: 疑難排解 Linux 上的 Microsoft Defender for Endpoint 中的效能問題。
+keywords: microsoft，defender，Microsoft Defender for Endpoint，linux，效能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903983"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933214"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>疑難排解 Linux 上 Microsoft Defender for Endpoint 的效能問題
 
@@ -34,17 +34,17 @@ ms.locfileid: "51903983"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-本文提供一些一般步驟，可用來縮小與適用于 Linux 之 Defender 相關的效能問題。
+本文提供一些一般步驟，可用來縮小與在 Linux 上的 Defender for Endpoint 相關的效能問題。
 
-[！注意] 即時保護 (RTP) 是一種適用于 Linux 之 Endpoint 的功能，可以持續監視和保護您的裝置免受威脅。 它包含檔案和程式監視及其他試探法。
+[！注意] 即時保護 (RTP) 是一種適用于 Linux 上的端點的功能，可以持續監視和保護您的裝置免受威脅。 它包含檔案和程式監視及其他試探法。
 
-視您執行的應用程式和裝置特性而定，在為 Linux 執行 Defender for the 時，您可能會體驗到最優效能。 特別是，在短期 timespan 記憶體取許多資源的應用程式或系統進程，可能會在適用于 Linux 的 Defender 中導致效能問題。
+根據您執行的應用程式和您的裝置特性，在 Linux 上執行 Defender for Endpoint 時，可能會體驗到最優效能。 特別是，在短時間記憶體取許多資源的應用程式或系統進程，可能會在 Linux 上的 Endpoint for Endpoint 中導致效能問題。
 
 開始之前， **請確定目前沒有在裝置上執行其他安全性產品**。 多個安全性產品可能會衝突，並影響主機效能。
 
 下列步驟可用於疑難排解及緩解下列問題：
 
-1. 使用下列其中一種方法來停用即時保護，並觀察效能是否提高。 這種方法可協助縮小針對 Linux 的 Defender 是否對效能問題產生影響的功能。
+1. 使用下列其中一種方法來停用即時保護，並觀察效能是否提高。 這種方法有助於縮小效能的 Defender 是否對效能問題產生影響。
 
     如果您的裝置不是由您的組織管理，可以從命令列停用即時保護：
 
@@ -55,11 +55,11 @@ ms.locfileid: "51903983"
     Configuration property updated
     ```
 
-    如果您的裝置是由您的組織管理，您的系統管理員可以使用 [為 Linux 之 Defender For Endpoint 的 Set 偏好設定](linux-preferences.md)中的指示來停用即時保護。
+    如果您的裝置是由您的組織管理，您的系統管理員可以使用在 [Linux 上的 Defender For Endpoint 的 Set 偏好設定](linux-preferences.md)中的指示來停用即時保護。
 
     如果在即時保護關閉時出現效能問題，則問題的來源可能是端點偵測和回應元件。 在此情況下，請與客戶支援部門聯繫，以取得進一步的指示和緩解。
 
-2. 若要尋找觸發大多數掃描的應用程式，您可以使用由 Defender for Linux 之 Endpoint 所收集的即時統計資料。
+2. 若要尋找觸發大多數掃描的應用程式，您可以使用在 Linux 上的 Defender for Endpoint 所收集的即時統計資料。
 
     > [!NOTE]
     > 100.90.70 或更新版本中提供此功能。
@@ -140,11 +140,11 @@ ms.locfileid: "51903983"
     125  CrashPlanService 164
     ```
 
-    若要改善用於 Linux 之 Endpoint 的 Defender 效能，請在該列下方找到最高編號的， `Total files scanned` 並為其新增排除。 如需詳細資訊，請參閱 [Configure and validate 的 Defender For Endpoint For Linux](linux-exclusions.md)。
+    若要提升 Linux 上的 Defender for Endpoint 的效能，請找出列在列下方的最大值 `Total files scanned` ，並為其新增排除。 如需詳細資訊，請參閱 [設定及驗證 Linux 上的 Defender For Endpoint 的排除](linux-exclusions.md)專案。
 
     >[!NOTE]
     > 應用程式會將統計資料儲存在記憶體中，且只會在啟動之後繼續追蹤檔活動，並啟用即時保護。 在即時保護關閉之前或期間所啟動的處理常式不會計算在內。 此外，只會計算觸發掃描的事件。
 
-5. 針對影響效能問題及重新啟用即時保護的處理常式或磁片位置，在 Linux 上為 Microsoft Defender 端點設定排除專案。
+5. 針對影響效能問題及重新啟用即時保護的處理常式或磁片位置，設定 Linux 上的 Microsoft Defender for Endpoint with 排除專案。
 
-    如需詳細資訊，請參閱 [Configure and Validate Microsoft Defender For Linux 的排除](linux-exclusions.md)專案。
+    如需詳細資訊，請參閱 [在 Linux 上設定及驗證 Microsoft Defender For Endpoint 的排除](linux-exclusions.md)專案。

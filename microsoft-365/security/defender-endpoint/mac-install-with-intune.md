@@ -1,7 +1,7 @@
 ---
-title: 在 macOS 上以 Intune 為基礎之 Microsoft Defender for Endpoint 的部署
-description: 使用 Microsoft Intune 在 macOS 上安裝 Microsoft Defender for Endpoint。
-keywords: microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamf，macos，catalina，mojave，高塞拉里昂
+title: 在 Mac 上以 Intune 為基礎之 Microsoft Defender for Endpoint 的部署
+description: 使用 Microsoft Intune 在 Mac 上安裝 Microsoft Defender for Endpoint。
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，安裝，部署，卸載，intune，jamf，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dbb4e3a558256f19594ab0aa4efbd2c9eed6b7f8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: c98ce17b7b71f2d05aeffe66dbb1e08f9046f463
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764212"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933142"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上以 Intune 為基礎之 Microsoft Defender for Endpoint 的部署
 
@@ -37,7 +37,7 @@ ms.locfileid: "51764212"
 
 **適用於：**
 
-- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+- [macOS 上適用於端點的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 
 本主題說明如何透過 Intune 在 macOS 上部署 Microsoft Defender for Endpoint。 成功的部署需要完成下列所有步驟：
 
@@ -186,7 +186,7 @@ ms.locfileid: "51764212"
 
 3. 開啟設定檔，並上傳 intune/kext.xml。 此檔案是在上述其中一個區段中建立的。
 
-4. 選取 **[確定]**。
+4. 選取 [確定]。
 
     ![從自訂設定設定檔的檔案中匯入設定](images/mdatp-6-systemconfigurationprofiles.png)
 

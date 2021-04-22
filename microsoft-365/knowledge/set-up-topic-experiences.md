@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何設定 Microsoft Viva 主題
-ms.openlocfilehash: 629008e083d71e09632b05e21eaefb011d7d9ce2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929441"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930218"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>設定 Microsoft Viva 主題
 
@@ -36,6 +36,27 @@ ms.locfileid: "50929441"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
 
 <br>
+
+## <a name="assign-licenses"></a>指派授權
+
+您必須指派授權給將要使用主題的使用者。 只有具有授權的使用者可以查看主題的相關資訊，包括要聞、主題卡片、主題頁面和主題中心。 
+
+若要指派授權：
+
+1. 在 Microsoft 365 系統管理中心中，在 **[使用者]** 底下，按一下 **[作用中使用者]**。
+
+2. 選取您要授權的使用者，然後按一下 [ **授權和應用程式**]。
+
+3. 在 [ **授權**] 底下，選取 [ **Viva 主題**]。
+
+4. 在 [ **應用程式**] 底下，請確定已選取 [ **使用索引的圖形連接器進行搜尋 (Viva 主題)** 及 **Viva 主題** 。
+
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft 365 系統管理中心中的 microsoft Viva 主題授權](../media/topic-experiences-licenses.png)
+
+5. 按一下 [儲存變更]。
+
+最多可能需要一小時，讓使用者在指派授權後取得主題存取權。
 
 ## <a name="set-up-topics"></a>設定 [主題]
 
@@ -58,7 +79,7 @@ ms.locfileid: "50929441"
 
     ![選擇尋找主題的方式](../media/ksetup1.png) 
    
-5. 在 [以 **名稱排除主題** ] 區段中，您可以新增要從主題探索中排除的主題名稱。 使用此設定可防止敏感資訊包含為主題。 選項包括：
+5. 在 [以 **名稱排除主題** ] 區段中，您可以新增要從主題探索中排除的主題名稱。 使用此設定可防止敏感資訊包含為主題。 選項如下：
     - **不排除任何主題** 
     - **依名稱排除主題**
 
@@ -82,7 +103,7 @@ ms.locfileid: "50929441"
 
     完成並儲存 .csv 檔案之後，請選取 **[流覽]** 以找出並選取。
     
-    選取 [下一步]。
+    選取 [下一步 **]**。
 
 6. 在 [ **誰可以看到主題及其可以查看的位置** ] 頁面上，您會設定主題可見度。 在 [ **可以查看主題** ] 設定中，您可以選擇誰可以存取主題詳細資料，例如高亮主題、主題卡片、搜尋中的主題答案和主題頁面。 您可以選取：
     - **組織中的所有人**
@@ -107,11 +128,11 @@ ms.locfileid: "50929441"
 
     ![主題管理的許可權](../media/km-setup-create-edit-topics.png) 
 
-    選取 [下一步]。
+    選取 [下一步 **]**。
 
 9. 在 [ **建立主題中心** ] 頁面上，您可以建立可以查看主題頁面和管理主題的主題中心網站。 在 [ **網站名稱** ] 方塊中，輸入主題中心的名稱。 您可以選擇性地在 [ **描述** ] 方塊中輸入簡短的描述。 
 
-   選取 [下一步]。
+   選取 [下一步 **]**。
 
    ![建立知識中心](../media/ksetup4.png)  
 
@@ -124,25 +145,6 @@ ms.locfileid: "50929441"
     ![套用的設定](../media/ksetup7.png)    
 
 請注意，第一次啟用主題探索時，可能需要長達兩周的時間，所有建議的主題都會出現在 [管理主題] 視圖中。 主題探索會隨著新內容或內容更新而繼續進行。 當組織中建議的主題數目隨著 Viva 主題評估新資訊的情況，正常情況會發生波動。
-
-## <a name="assign-licenses"></a>指派授權
-
-當您設定好主題經驗後，您必須指派授權給將要使用主題的使用者。 只有具有授權的使用者可以查看主題的相關資訊，包括要聞、主題卡片、主題頁面和主題中心。 
-
-若要指派授權：
-
-1. 在 Microsoft 365 系統管理中心中，在 **[使用者]** 底下，按一下 **[作用中使用者]**。
-
-2. 選取您要授權的使用者，然後按一下 [ **授權和應用程式**]。
-
-3. 在 [ **授權**] 底下，選取 [ **Viva 主題**]。
-
-4. 在 [ **應用程式**] 底下，請確定已選取 [ **使用索引的圖形連接器進行搜尋 (Viva 主題)** 及 **Viva 主題** 。
-
-   > [!div class="mx-imgBorder"]
-   > ![Microsoft 365 系統管理中心中的 microsoft Viva 主題授權](../media/topic-experiences-licenses.png)
-
-5. 按一下 [儲存變更]。
 
 ## <a name="manage-topic-experiences"></a>管理主題經驗
 

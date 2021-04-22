@@ -1,7 +1,7 @@
 ---
 title: Linux 上的 Microsoft Defender for Endpoint 的隱私權
 description: 隱私權控制，如何設定會影響隱私權的原則設定，以及在 Linux 上為端點所收集之診斷資料的相關資訊。
-keywords: microsoft、defender、atp、linux、隱私權、診斷
+keywords: microsoft、defender、Microsoft Defender for Endpoint、linux、隱私權、診斷
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903247"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933334"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的隱私權
 
@@ -33,13 +33,13 @@ ms.locfileid: "51903247"
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何在使用 Defender for Linux 時收集和使用資料。
+Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何在 Linux 上使用 Defender for Endpoint 時收集和使用資料。
 
 本主題說明產品內可用的隱私權控制，如何使用原則設定管理這些控制項，以及收集的資料事件的詳細資料。
 
 ## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上的 Microsoft Defender for Endpoint 中取得隱私權控制的概覽
 
-本節說明用於 Linux 之 Defender for Endpoint 所收集的不同資料類型的隱私權控制。
+本節說明在 Linux 上的 Defender for Endpoint 所收集的不同資料類型的隱私權控制。
 
 ### <a name="diagnostic-data"></a>診斷資料
 
@@ -75,7 +75,7 @@ Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何�
 
 如果您是 IT 管理員，您可能會想要在企業層級設定這些控制項。 
 
-在 [設定用於 Linux 之 Defender 的首選項](linux-preferences.md)時，會詳細說明上述各節中所述的各種資料類型的隱私權控制。
+在 [Linux 上的 Defender For Endpoint 的 [設定偏好設定](linux-preferences.md)] 中，詳細說明上述各節所述各類資料的隱私權。
 
 就像任何新的原則設定一樣，您應該在有限的受控環境中仔細測試這些設定，以確保您設定的設定在您的組織中更廣泛地實施原則設定之前具有適當的效果。
 
@@ -96,7 +96,7 @@ Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何�
 | org_id                  | 與裝置所屬之企業相關聯的唯一識別碼。 可讓 Microsoft 識別問題是否會影響一組選擇的企業，以及受影響的企業數目。 |
 | 主機 名                | 本機裝置名稱 (，但沒有 DNS 尾碼) 。 可讓 Microsoft 識別問題是否會影響一組選取的安裝，以及受到影響的使用者人數。 |
 | product_guid            | 產品的唯一識別碼。 可讓 Microsoft 區分影響不同產品風格的問題。 |
-| app_version             | 適用于 Linux 應用程式的 Defender 版本。 可讓 Microsoft 找出顯示問題的產品版本，使其可正確地設定優先順序。|
+| app_version             | Linux 應用程式的 Defender for Endpoint 版本。 可讓 Microsoft 找出顯示問題的產品版本，使其可正確地設定優先順序。|
 | sig_version             | 安全性情報資料庫的版本。 可讓 Microsoft 找出顯示問題的安全性情報版本，使其可正確地設定優先順序。 |
 | supported_compressions  | 例如，應用程式支援的壓縮演算法清單 `['gzip']` 。 可讓 Microsoft 瞭解哪些類型的 compressions 可以在與應用程式通訊時使用。 |
 | release_ring            | 裝置與 (相關聯的環，例如，內幕人士快、內幕人士緩慢、實際執行) 。 可讓 Microsoft 識別可能發生問題的發行環，使其可正確地設定優先順序。 |
@@ -163,7 +163,7 @@ Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何�
 
 | 欄位            | 描述 |
 | ---------------- | ----------- |
-| 版本          | 適用于 Linux 之端點的 Defender 版本。 |
+| 版本          | Linux 上端點的版本。 |
 | instance_id      | 在內核擴充啟動時產生的唯一識別碼。 |
 | trace_level      | 內核擴充的追蹤層級。 |
 | 子系統        | 用於即時保護的底層子系統。 |
@@ -178,7 +178,7 @@ Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何�
 僅當使用者同意提交功能時，才會收集診斷記錄。 下列檔案會收集為支援記錄檔的一部分：
 
 - */Var/log/microsoft/mdatp* 下的所有檔案
-- */Etc/opt/microsoft/mdatp* 下的檔案子集合，由 Defender for Linux 的端點所建立及使用
+- 由 Linux 上的 Defender for Endpoint 所建立及使用之 */etc/opt/microsoft/mdatp* 底下的檔案子集
 - */Var/log/microsoft_mdatp_ \* .log 中的* 產品安裝和卸載記錄
 
 ### <a name="optional-diagnostic-data"></a>選擇性診斷資料

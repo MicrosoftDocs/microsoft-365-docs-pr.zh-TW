@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 AADSignInEventsBeta 表格
 description: 深入瞭解與高級搜尋架構之 Azure Active Directory 登入事件表格相關的資訊
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，表格，欄，資料類型，描述，檔案，IP 位址，裝置，機器，使用者，帳戶，身分識別，AAD
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，file，identity，AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b595496c28710bfa25fc88653425242770bf57f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 93735ee3bf8d9b95ab320c2bc158d6ebfe27186c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058071"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932604"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -35,7 +35,7 @@ ms.locfileid: "51058071"
 
 >[!IMPORTANT]
 > `AADSignInEventsBeta`表格目前在 Beta 中，並在短期內提供，以供您透過 Azure Active Directory (AAD) 登入事件進行搜尋。 我們最後會將所有登入架構資訊移至 `IdentityLogonEvents` 表格。<br><br>
-> 可透過 Azure Security Center 的整合 Microsoft Defender for Endpoint 方案存取 Microsoft 365 Defender 的客戶，但沒有 Microsoft Defender for Office、Microsoft Defender 身分識別或 Microsoft Cloud App Security 的授權，將無法查看此架構。 
+> 可透過 Azure Defender 整合的 Microsoft Defender for Endpoint 方案存取 Microsoft 365 Defender 的客戶，但沒有 Microsoft Defender for Office、Microsoft Defender 身分識別或 Microsoft Cloud App Security 的授權，將無法查看此架構。 
 
  
 

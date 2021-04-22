@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 的高級搜尋中的 DeviceFromIP () 功能
 description: 瞭解如何使用 DeviceFromIP () 函數來取得指派特定 IP 位址的裝置
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，device，devicefromIP，function，豐富
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，查詢，遙測，schema reference，kusto，device，devicefromIP，function，豐富
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d2996021a84186adc6656927dbdc910db4d037de
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058028"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933178"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 

@@ -1,7 +1,7 @@
 ---
 title: 依軟體列出裝置
 description: 檢索已安裝此軟體的裝置清單。
-keywords: api，graph api，支援的 api，get，列出裝置，裝置清單，依軟體的清單裝置，mdatp tvm api
+keywords: api，graph api，支援的 api，get，列出裝置，裝置清單，依軟體列出裝置，Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 78cccee6380f0c403aab21eac4f07b64b8f8d510
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ff0bb9a6f17b8d4dc6432292ec98743d3eaf952c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200386"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929094"
 ---
 # <a name="list-devices-by-software"></a>依軟體列出裝置
 
@@ -27,7 +27,7 @@ ms.locfileid: "51200386"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

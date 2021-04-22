@@ -1,6 +1,6 @@
 ---
 title: 取得 RBAC 機器群組集合 API
-description: 瞭解如何使用「取得 KB 集合 API」，在 Microsoft Defender 高級威脅防護中取得 RBAC 裝置群組的集合。
+description: 瞭解如何使用「取得 KB 集合 API」，在 Microsoft Defender for Endpoint 中取得 RBAC 裝置群組的集合。
 keywords: api、graph api、支援的 api、get、RBAC、group
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: 54a0edb47204fe6e48666f0927d05121af95e00a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 18566025d79f02281c1d2c1509dd98f1e57879c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166426"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932772"
 ---
 # <a name="get-kb-collection-api"></a>取得 KB 集合 API
 
@@ -30,7 +30,7 @@ ms.locfileid: "51166426"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,7 +49,7 @@ GET /testwdatppreview/machinegroups
 
 ## <a name="request-headers"></a>要求標頭
 
-Header | 值 
+頁首 | 值 
 :---|:---
 授權 | 載荷 {token}。 **必要欄位**。
 內容類型 | application/json

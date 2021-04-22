@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 中的 API Explorer
+title: Microsoft Defender for Endpoint 中的 API Explorer
 ms.reviewer: ''
 description: 使用 API Explorer 來構造和執行任何可用 API 的 API 查詢、測試及傳送要求
 keywords: api、explorer、send、request、get、post、
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0cfe5227d5d1cdb1f1f4eaea2c859937d7e75264
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b8d0d991e46464bae3b4d21d6218b9b3b2d2b4cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058792"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930110"
 ---
 # <a name="api-explorer"></a>API Explorer
 

@@ -1,7 +1,7 @@
 ---
 title: 常見的 Microsoft 365 Defender REST API 錯誤碼
 description: 深入瞭解常見的 Microsoft 365 Defender REST API 錯誤碼
-keywords: api、錯誤、代碼、常見錯誤、mtp、api 錯誤碼
+keywords: api、錯誤、代碼、常見錯誤、Microsoft 365 Defender、api 錯誤碼
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ab564ddb0263b501b6aca979f2148dfb5cf92758
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e621b79d37a2c3a22394bd51e0493334eff461c7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060591"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932878"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常見的 Microsoft 365 Defender REST API 錯誤碼
 
@@ -33,7 +33,7 @@ ms.locfileid: "51060591"
 
 **適用於：**
 
-- Microsoft 威脅防護
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
@@ -42,7 +42,7 @@ ms.locfileid: "51060591"
 
 ## <a name="error-codes"></a>錯誤碼
 
-錯誤碼 | HTTP 狀態碼 | 郵件
+錯誤碼 | HTTP 狀態碼 | 訊息
 -|-|-
 BadRequest | BadRequest (400)  | 一般錯誤要求錯誤訊息。
 ODataError | BadRequest (400)  | 不正確 OData URI 查詢 \<the specific error is specified\> 。

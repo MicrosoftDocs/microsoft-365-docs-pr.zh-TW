@@ -1,7 +1,7 @@
 ---
 title: 概覽-高級搜尋
 description: 了解 Microsoft 365 中的進階搜捕查詢，以及如何使用該功能主動找出您的網路中的威脅和弱點
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，schema，kusto，microsoft 365，Microsoft 威脅防護
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、查詢、遙測、自訂偵測、架構、kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3532fd461fff02fac54e96e0a1a1e69c39c16907
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: df48ec921dee7d8f3b441ed3f68ed148c5c6c857
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657016"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932974"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>使用 Microsoft 365 Defender 中的高級搜尋主動搜尋威脅
 
@@ -50,7 +50,7 @@ ms.locfileid: "51657016"
 
 - 適用於端點的 Microsoft Defender
 - 適用於 Office 365 的 Microsoft Defender
-- Microsoft 雲端 App 安全性
+- Microsoft Cloud App Security
 - 適用於身分識別的 Microsoft Defender
 
 若要使用高級搜尋，請 [開啟 Microsoft 365 Defender](m365d-enable.md)。

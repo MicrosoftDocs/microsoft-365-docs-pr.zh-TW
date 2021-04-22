@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 DeviceNetworkInfo 表格
 description: 深入瞭解高級搜尋架構的 DeviceNetworkInfo 資料表中的網路設定資訊
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，machinenetworkinfo，DeviceNetworkInfo，device，dhcp，adapter，隧道
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，machinenetworkinfo，DeviceNetworkInfo，device，machine，mac，隧道，adapter，dns，dhcp，閘道，隧道
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6d860e20bdd116d579b3cb178e3352825c60fe44
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: e6bfb781b3454025c5ce0f43899180c91761a56d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500907"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932556"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 

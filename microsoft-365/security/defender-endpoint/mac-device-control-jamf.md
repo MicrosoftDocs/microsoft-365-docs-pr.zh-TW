@@ -1,7 +1,7 @@
 ---
 title: JAMF 裝置控制原則的範例
 description: 瞭解如何使用可搭配 JAMF 使用之範例的裝置控制項原則。
-keywords: microsoft，defender，端點，atp，mac，裝置，控制，usb，可移動，媒體，jamf
+keywords: microsoft，defender，端點，Microsoft Defender for Endpoint，mac，device，control，usb，可移動，媒體，jamf
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8990979024c033d4142b595d6fef94f7b872e7c9
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b9ce161a472366d11b267824c9bd08ceccf285aa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187673"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933454"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>JAMF 裝置控制原則的範例
 
@@ -33,7 +33,7 @@ ms.locfileid: "51187673"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587716"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929106"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>調查 Microsoft Defender for Endpoint Devices 清單中的裝置
 
@@ -34,7 +34,7 @@ ms.locfileid: "51587716"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 調查特定裝置上產生之警示的詳細資料，識別可能與警示或可能的破壞範圍有關的其他行為或事件。
 
@@ -172,12 +172,12 @@ ms.locfileid: "51587716"
 
 ### <a name="active-alerts"></a>主動警示
 
-如果您已啟用 Azure ATP 功能，且有任何作用中的警示， **Azure 高級威脅防護** 卡會顯示與裝置相關之警示的高層級，以及其風險層級的概要。 如需詳細資訊，請流覽中的「警示」。
+如果您已啟用 Microsoft Defender 身分識別功能，且有任何作用中警示， **Azure 高級威脅防護** 卡會顯示與裝置相關的警示，以及其風險層級的高層次概述。 如需詳細資訊，請流覽中的「警示」。
 
 ![使用中警示卡的影像](images/risk-level-small.png)
 
 >[!NOTE]
->您需要啟用 Azure ATP 和 Defender for Endpoint 上的整合，才能使用此功能。 在 [Defender for Endpoint] 中，您可以在 [高級功能] 中啟用這項功能。 如需如何啟用高級功能的詳細資訊，請參閱 [開啟高級功能](advanced-features.md)。
+>您必須在 Microsoft Defender for Identity 和 Defender for Endpoint 上啟用整合，才能使用此功能。 在 [Defender for Endpoint] 中，您可以在 [高級功能] 中啟用這項功能。 如需如何啟用高級功能的詳細資訊，請參閱 [開啟高級功能](advanced-features.md)。
 
 ### <a name="logged-on-users"></a>登入的使用者
 

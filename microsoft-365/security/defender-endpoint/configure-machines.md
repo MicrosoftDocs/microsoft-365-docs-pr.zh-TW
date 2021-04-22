@@ -1,7 +1,7 @@
 ---
-title: 確定您的裝置設定正確
+title: 確保您的裝置已正確設定
 description: 適當設定裝置，以提升抵禦威脅的整體能力，並增強您偵測和回應攻擊的能力。
-keywords: 板載，Intune management，MDATP，WDATP，Microsoft Defender，Windows Defender，高級威脅防護，攻擊面減少，ASR，安全性基準
+keywords: 板載，Intune management，Microsoft Defender for Endpoint，Microsoft Defender，Windows Defender，攻擊面降低，ASR，安全性基準
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7b00ceafc2761f42c316f434a27acf7c551e7cf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3fd58ee17b2cb86c0bcc858b9b0fd57c12ac501e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163360"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932808"
 ---
-# <a name="ensure-your-devices-are-configured-properly"></a>確定您的裝置設定正確
+# <a name="ensure-your-devices-are-configured-properly"></a>確保您的裝置已正確設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "51163360"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 透過適當設定的裝置，您可以提升抵禦威脅的整體能力，並增強您偵測和回應攻擊的能力。 安全性設定管理可協助確保您的裝置：
 
@@ -87,4 +87,4 @@ ms.locfileid: "51163360"
 [將合規性提升至 Endpoint security 基準的 Defender](configure-machines-security-baseline.md) | 追蹤基準相容性與不符合性。 將安全性基準部署到更多 Intune 管理的裝置。
 [優化 ASR 規則的部署和偵測](configure-machines-asr.md) | 使用 Microsoft 365 security center 中的影響分析工具，檢查規則部署及調整偵測。
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

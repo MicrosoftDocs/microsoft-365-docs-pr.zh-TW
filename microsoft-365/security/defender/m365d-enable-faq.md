@@ -1,7 +1,7 @@
 ---
 title: 開啟 Microsoft 365 Defender 時的常見提問
 description: 取得關於啟用 Microsoft 365 Defender 的授權、許可權、初始設定及其他產品及服務的最常見問題的答案。
-keywords: 常見問題解答、FAQ、GCC、入門、啟用 MTP、Microsoft 威脅防護、M365、安全性、資料位置、必要許可權、授權資格、設定頁面
+keywords: 常見問題解答，FAQ，GCC，入門，啟用 Microsoft 365 Defender，Microsoft 365 Defender，M365，安全性，資料位置，必要許可權，授權資格，設定頁面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7482bf614e7cb3ffad6596f3c5d8bc554d46d912
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 55c1a3807fe8e28ca12f4f638c1ab2ca717523ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060587"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933430"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>開啟 Microsoft 365 Defender 時的常見提問
 
@@ -45,7 +45,7 @@ ms.locfileid: "51060587"
 
 - 適用於端點的 Microsoft Defender
 - 適用於身分識別的 Microsoft Defender
-- Microsoft 雲端應用程式安全性
+- Microsoft Cloud App Security
 - 適用于 Office 的 Defender 365 (方案 2) 
  
 如需支援之授權的完整清單，請 [閱讀授權要求](prerequisites.md#licensing-requirements)。

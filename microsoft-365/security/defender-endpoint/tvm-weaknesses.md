@@ -1,7 +1,7 @@
 ---
 title: 組織中的漏洞-威脅和弱點管理
 description: 列出常見的漏洞和披露 (CVE) 組織中執行的軟體弱點的識別碼。 由 Microsoft Defender for Endpoint 威脅和弱點管理功能探索。
-keywords: mdatp 威脅 & 漏洞管理、威脅和弱點管理、mdatp tvm 弱點頁面、透過 tvm 尋找弱點、tvm 弱點清單、tvm 中的弱點詳細資料
+keywords: Microsoft Defender for Endpoint 威脅 & 漏洞管理、威脅和弱點管理、Microsoft Defender for Endpoint tvm 弱點頁面、尋找 tvm、tvm 弱點清單中的弱點（tvm 中的弱點詳細資料）
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0f573b2425764876e877de44555691979a0e1fcf
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: a8039a06dc58c31158f90d39857ffbeba92138d5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689398"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933070"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>組織中的漏洞-威脅和弱點管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "51689398"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 威脅和弱點管理會在 Defender 中使用相同的信號，以進行 Endpoint protection，以掃描及偵測到漏洞。
 
