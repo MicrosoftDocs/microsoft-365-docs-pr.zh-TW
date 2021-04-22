@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -18,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 005c1f6ad7806c8d1ba1d38e4e82edd25034075d
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935134"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51942990"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>評估 Microsoft Defender for Office 365
 
@@ -37,6 +38,9 @@ ms.locfileid: "51935134"
 [Microsoft defender For office 365](defender-for-office-365.md)評估體驗旨在消除裝置和環境設定的複雜性，使您能夠專注于評估 Microsoft Defender for Office 365 的功能。 使用評估模式，可以評估所有傳送至 Exchange Online 信箱的郵件，而不需指向 Microsoft 的 MX 記錄。 此功能僅適用于電子郵件保護，而不適用於 Word、SharePoint 或小組等 Office 用戶端。
 
 如果您還沒有支援 Microsoft Defender for Office 365 的授權，您可以開始 [30 天的試用版評估](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) ，並測試 Office 365 安全性 & 規範中心 (中的功能 https://protection.office.com/homepage) 。 您將會喜歡快速設定，必要時您可以輕鬆關閉此功能。
+
+> [!NOTE]
+> 如果您處在整合的 Microsoft 365 安全性入口網站中 (security.microsoft.com) 您可以在這裡啟動 Office 365 評估的試用版：電子郵件 & 共同作業 > 原則 & 規則 > 威脅原則 > 其他原則。
 
 ## <a name="how-the-evaluation-works"></a>評估的運作方式
 

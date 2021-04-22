@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 search.appverid:
@@ -18,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: c8e38e3f22b48b58ea7fb1a4a6f000c80c170675
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bad31160bb27c79f672ddd28a5fced3bf8c2ee1b
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934402"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943038"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的 microsoft Defender for Endpoint
 
@@ -85,6 +86,9 @@ Microsoft 365 security center 中的 microsoft Defender for Endpoint [可將受�
 
 > [!NOTE]
 > **自動調查和修正** 現在是事件的一部分。 您可以在 [ **事件 > 調查** ] 索引標籤中查看自動調查和修正事件。
+
+> [!TIP]
+> 裝置搜尋會從端點 > 搜尋中完成。
 
 ### <a name="access-and-reporting"></a>存取與報告
 

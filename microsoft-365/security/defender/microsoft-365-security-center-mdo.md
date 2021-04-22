@@ -2,7 +2,7 @@
 title: Microsoft 365 安全性中心中的適用於 Office 365 的 Microsoft Defender
 description: 了解從 Office 365 安全性與合規性中心至 Microsoft 365 安全性中心的變更。
 keywords: Microsoft 365 安全性，快速入門 Microsoft 365 security center，microsoft Defender for Office 365，Microsoft Defender for Endpoint，MDO，MDE，單一窗格的玻璃，新的安全性入口網站，新的 Defender 安全性入口網站
-ms.date: 02/02/2021
+ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 980a384d3c4fd44a368f35d6f885ea0c8288376a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b5decd562509d134899b85b380791087a913cd58
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935410"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943062"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心中的適用於 Office 365 的 Microsoft Defender
 
@@ -64,6 +64,9 @@ ms.locfileid: "51935410"
 
 > [!IMPORTANT]
 > Microsoft 365 安全性入口網站 (https://security.microsoft.com) 結合了 https://securitycenter.windows.com 和 https://protection.office.com 中的安全性功能)。 不過，您會看到的項目將取決於您的訂閱。 例如，如果您只有適用於 Office 365 的 Microsoft Defender 方案 1 或 2，以獨立訂閱形式，您就不會看到有關適用於端點的安全性的功能，而適用於 Office 的 Defender 方案 1 客戶不會看到威脅分析之類的項目。
+
+> [!TIP]
+>  所有 Exchange Online Protection (EOP) 功能將會包含在 Microsoft 365 的安全性中心，因為 EOP 是 Office 365 的 Defender 核心元素。
 
 ## <a name="microsoft-365-security-center-home-page"></a>Microsoft 365 安全性中心首頁
 

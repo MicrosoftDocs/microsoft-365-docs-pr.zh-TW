@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: f9bb0690cf48c4cc694c0d563ba7d4203953358a
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939261"
+ms.locfileid: "51943050"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>整合的 Microsoft 365 安全性中心概述
 
@@ -50,6 +50,9 @@ Microsoft 365 的安全性中心會將現有 Microsoft 安全性入口網站的�
 
 - [Microsoft 365 安全性中心中的適用於 Office 365 的 Defender](microsoft-365-security-center-mdo.md)
 - [Microsoft 365 安全性中心中的適用於端點的 Defender](microsoft-365-security-center-mde.md)
+
+> [!NOTE]
+> Microsoft 365 安全性入口網站會使用並強制執行現有的角色型存取，並將每一種安全性模型移至統一入口網站。 每個收斂工作負載 (例如 MDO 或 MDE) 具有自己的角色型存取權。 產品中已有的角色會自動收斂至 Microsoft 365 安全性入口網站。 不過，MCAS 的角色和許可權仍會在 MCAS 中處理。
 
 ## <a name="what-to-expect"></a>預期的專案
 

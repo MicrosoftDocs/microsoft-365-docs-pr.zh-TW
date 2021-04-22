@@ -19,21 +19,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用承租人切換器和多租使用者視圖。
-ms.openlocfilehash: 21b51a5e0c79496bf73e60c04aea68def3cf8ad6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d59760b8a143acc33747aff9f7deaa0b6dd3e711
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580879"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943026"
 ---
 # <a name="multi-tenant-management"></a>多租使用者管理
 
-多租使用者管理提供一種統一的管理形式，可讓系統管理員管理從單一位置管理之所有承租人的能力。 如果您管理多個承租人，您可以：
+多租使用者管理提供一種統一的管理形式，可讓 Microsoft 365 合作夥伴系統管理員管理從單一位置管理的所有承租人。 如果您是管理多個承租人的合作夥伴，您可以：
 
 - 在您管理的承租人間快速移動。
 - 評估跨多個承租人的服務健康情況、產品及帳單。
 - 在 [ **所有承租人** ] 頁面上，您可以快速查看所有承租人服務、任何開啟的服務要求、產品和計費的健康情況，以及該租使用者的使用者人數。
-
 
 ## <a name="move-between-tenants"></a>在承租人間移動
 
@@ -54,7 +53,6 @@ ms.locfileid: "51580879"
   - 搜尋或選取您想要管理的承租人
   - 您也可以將最常訪問的承租人固定在清單的頂端。
 
-
 如果您已將租使用者標示為最愛的使用者，則會自動展開，以便您立即查看狀態詳細資料。
 
 ## <a name="view-service-health-for-all-accounts"></a>查看所有帳戶的服務健康情況
@@ -63,7 +61,7 @@ ms.locfileid: "51580879"
 
 1. 在 Microsoft 365 系統管理中心的 [多租使用者] 視圖中，選取 [ **服務健康情況**]。
 2. 在 [ **服務健康** 情況] 頁面匯總模式中，您也可以看到事件總數、影響任何受管理租使用者的提議總數，以及具有主動事件的服務數目。 您也可以查看您的承租人會受到事件和諮詢影響的數目。
-    
+
     - 您可以使用篩選選項，依問題類型或服務來查看問題
 
     - 您可以查看 [ **所有服務** ] 或 [ **所有問題** ] 索引標籤底下的問題。

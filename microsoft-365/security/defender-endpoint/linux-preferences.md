@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7f3dd65aea0efa570ec5d6a1d27479b787e16831
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 42b15edd933d80dd397f4681c4f0fdb035f030f2
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935278"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943002"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上設定 Microsoft Defender for Endpoint 的喜好設定
 
@@ -360,7 +360,7 @@ ms.locfileid: "51935278"
    "cloudService":{
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
-      "enabled":true
+      "enabled":true,
       "proxy":"http://proxy.server:port/"
    }
 }
@@ -421,7 +421,7 @@ ms.locfileid: "51935278"
       "enabled":true,
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
-      "automaticDefinitionUpdateEnabled":true
+      "automaticDefinitionUpdateEnabled":true,
       "proxy": "http://proxy.server:port/"
    }
 }
