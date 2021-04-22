@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb5a9a4d35af2d400cdff1e417727e662738514e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ee06f927579445825a2b2813e483c24357d2ed78
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861344"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934918"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>沒有網際網路存取 Microsoft Defender for Endpoint 的板載裝置
 
@@ -73,7 +73,7 @@ ms.locfileid: "51861344"
       - 將 Azure Log Analytics IP 設定為 proxy
       - Azure 記錄分析的工作區機碼 & 識別碼
 
-    - Azure Security Center (ASC) 
+    - Azure Defender
       - [安全性原則 \> 記錄分析工作區](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [威脅偵測 \> 允許 Endpoint To Endpoint 存取我的資料](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

@@ -1,7 +1,7 @@
 ---
 title: 使用行動裝置管理工具上線 Windows 10 電腦
 description: 使用行動裝置管理工具，在裝置上部署設定套件，使其可架至服務。
-keywords: 使用 mdm 的板載裝置，裝置管理，板載 Windows ATP 裝置，板載 Microsoft Defender for Endpoint 裝置，mdm
+keywords: 使用 mdm 的板載裝置、裝置管理、板載 Microsoft Defender for Endpoint 裝置、mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f3042ef9ced11ebc5439308d2781528d5267975f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 951b0f33356ab99485f09ccc4147691e13ed3c6e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893610"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935002"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用行動裝置管理工具上線 Windows 10 電腦
 

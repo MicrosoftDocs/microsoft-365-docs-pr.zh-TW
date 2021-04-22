@@ -1,7 +1,7 @@
 ---
-title: 疑難排解適用于 Mac 的 Microsoft Defender 端點安裝問題
-description: 疑難排解 Microsoft Defender for Mac 中的安裝問題。
-keywords: microsoft、defender、atp、mac、安裝
+title: 疑難排解 Mac 上的 Microsoft Defender for Endpoint 的安裝問題
+description: 疑難排解 Mac 上的端點 Microsoft Defender 中的安裝問題。
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，install
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d2ad3160c9f36a27dc98f44365433de5f8b26bb2
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5166de3a7c7017979a93ac7026636ba24671892e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861416"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935146"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 macOS 上的 Microsoft Defender for Endpoint 的安裝問題
 

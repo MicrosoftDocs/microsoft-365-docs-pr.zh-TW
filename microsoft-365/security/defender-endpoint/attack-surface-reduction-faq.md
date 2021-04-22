@@ -1,6 +1,6 @@
 ---
 title: '攻擊面減少常見問題解答 (常見問題) '
-description: 尋找有關 Microsoft Defender ATP 的攻擊面降低規則的常見問題的答案。
+description: 尋找有關 Microsoft Defender for Endpoint 的攻擊面降低規則的常見問題答案。
 keywords: 攻擊面減少規則，asr，hips，主機入侵防護系統，保護規則，反侵入，antiexploit，exploit，感染防護，microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: cf41dda4ff61137d6b60b2fc735227f15418477e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476445"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935590"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>攻擊面減少常見問題解答 (常見問題) 
 
@@ -161,7 +161,7 @@ ASR 使用 Microsoft Defender 防病毒來封鎖應用程式。 目前無法將 
 
 ## <a name="are-the-criteria-used-by-the-rule-block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion-configurable-by-an-admin"></a>規則使用的準則是「封鎖可執行檔的執行，除非它們符合傳播、時期或受信任的清單準則」（由系統管理員加以設定）。
 
-否。 此規則所用的準則是由 Microsoft cloud protection 所維護，可讓信任的清單持續更新世界各地收集的資料。 本機系統管理員沒有變更此資料的寫入權限。 如果您想要設定此規則以針對您的企業進行量身定制，您可以將特定的應用程式新增至排除清單，以避免觸發規則。
+不對。 此規則所用的準則是由 Microsoft cloud protection 所維護，可讓信任的清單持續更新世界各地收集的資料。 本機系統管理員沒有變更此資料的寫入權限。 如果您想要設定此規則以針對您的企業進行量身定制，您可以將特定的應用程式新增至排除清單，以避免觸發規則。
 
 ## <a name="i-enabled-the-asr-rule-block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion-after-some-time-i-updated-a-piece-of-software-and-the-rule-is-now-blocking-it-even-though-it-didnt-before-did-something-go-wrong"></a>我已啟用 ASR 規則， *封鎖可執行檔，除非符合流行、age 或受信任的清單準則*。 經過一段時間後，我就會更新某項軟體，而且規則現在會封鎖它，即使之前並未這樣。 發生問題？
 

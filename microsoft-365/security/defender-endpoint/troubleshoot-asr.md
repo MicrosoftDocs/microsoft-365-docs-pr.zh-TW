@@ -1,7 +1,7 @@
 ---
 title: 疑難排解攻擊面減少規則的問題
 description: 用於疑難排解 Microsoft Defender for Endpoint 中的攻擊面降低規則問題的資源和範例程式碼。
-keywords: 疑難排解，錯誤，修正，windows defender 例如，asr，rules，hips，疑難排解，審核，排除，錯誤正值，已中斷，封鎖，microsoft defender for endpoint，microsoft defender 高級威脅防護
+keywords: 疑難排解，錯誤，修正，windows defender 例如，asr，rules，hips，疑難排解，審核，排除，錯誤正值，已中斷，封鎖，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: d483c098f221e2d4d2e61a10393154b8f5d1498d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9ff00c706b0fb336c178e227b1cb33eff9e9ebbc
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198738"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935218"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>疑難排解攻擊面降低規則
 
@@ -33,7 +33,7 @@ ms.locfileid: "51198738"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 當您使用 [攻擊面降減規則](attack-surface-reduction.md) 時，您可能會遇到問題，例如：
@@ -124,6 +124,6 @@ ms.locfileid: "51198738"
 
 - [受攻擊面縮小規則](attack-surface-reduction.md)
 
-- [啟用攻擊面減少規則](enable-attack-surface-reduction.md)
+- [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
 
-- [評估攻擊面減少規則](evaluate-attack-surface-reduction.md)
+- [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)

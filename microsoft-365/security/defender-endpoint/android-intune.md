@@ -1,7 +1,7 @@
 ---
-title: 在 Android 上使用 Microsoft Intune 部署 Microsoft Defender for Endpoint
+title: 在 Android 上使用 Microsoft Intune 部署適用於端點的 Microsoft Defender
 description: 說明如何在 Android 上使用 Microsoft Intune 部署 Microsoft Defender for Endpoint
-keywords: microsoft、defender、atp、mde、android、安裝、部署、卸載
+keywords: microsoft、defender、Microsoft Defender for Endpoint、mde、android、安裝、部署、卸載、
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 350345acbaadcdd6bc8ef901f03c419a7f8decff
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f14d79d98bfffda675cd71b96068b179f30f059e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687718"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934630"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>在 Android 上使用 Microsoft Intune 部署 Microsoft Defender for Endpoint 
+# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>在 Android 上使用 Microsoft Intune 部署適用於端點的 Microsoft Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,20 +32,20 @@ ms.locfileid: "51687718"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-瞭解如何在 Intune 公司入口網站註冊的裝置上部署適用于 Android 的 Endpoint 的 Defender。 如需 Intune 裝置註冊的詳細資訊，請參閱  [註冊裝置](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal)。
+瞭解如何在 Intune 公司入口網站註冊的裝置上，對 Android 上的端點部署 Defender。 如需 Intune 裝置註冊的詳細資訊，請參閱  [註冊裝置](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal)。
 
 > [!NOTE]
-> **適用于 Android 的 Endpoint 的 Defender 現在已可在 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)上使用** <br>
+> **Android 的 Defender 上的 Endpoint 現在可在 [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)上使用** <br>
 > 您可以從 Intune 連線到 Google，以跨裝置管理員和 Android Enterprise entrollment 模式，為端點應用程式部署 Defender。
 應用程式的更新是透過 Google Play 自動進行。
 
 ## <a name="deploy-on-device-administrator-enrolled-devices"></a>在裝置管理員註冊的裝置上部署
 
-**在 Intune 公司入口網站上部署適用于 Android 的 Endpoint 的 Defender-裝置管理員註冊裝置**
+**在 Intune 公司入口網站上為 Endpoint 部署 Defender （裝置管理員註冊裝置）**
 
-瞭解如何在 Intune 公司入口網站上為 Android 部署 Defender （裝置管理員註冊的裝置）。 
+瞭解如何在 Intune 的 Android 公司入口網站上部署 Defender for Endpoint （裝置管理員已註冊裝置）。 
 
 ### <a name="add-as-android-store-app"></a>新增為 Android store 應用程式
 
@@ -55,16 +55,16 @@ ms.locfileid: "51687718"
 
 2. 在 [ **新增應用程式** ] 頁面上，于 [ *應用程式資訊* ] 區段中輸入： 
 
-   - **Name** 
+   - **名稱** 
    - **描述**
    - **發行者** 為 Microsoft。
    - **應用商店 url** 為 https://play.google.com/store/apps/details?id=com.microsoft.scmx 端點應用程式 GOOGLE Play Store url (Defender)  
 
-   其他欄位是選用的。 選取 [下一步]。
+   其他欄位是選用的。 選取 [下一步 **]**。
 
    ![Microsoft 端點管理員系統管理中心的圖像新增應用程式資訊](images/mda-addappinfo.png)
 
-3. 在 [ *工作分派* ] 區段中，移至 [ **必要** ] 區段，然後選取 [ **新增群組]。** 然後，您可以選擇要將其設定為適用于 Android 應用程式的 Defender for Endpoint 的使用者群組 (s) 。 選擇 [選取]，然後 **按一下** **[下一步]**
+3. 在 [ *工作分派* ] 區段中，移至 [ **必要** ] 區段，然後選取 [ **新增群組]。** 然後，您可以選擇要在 Android 應用程式上以其為 Defender for Endpoint 的使用者群組 () 。 選擇 [選取]，然後 **按一下** **[下一步]**
 
     >[!NOTE]
     >選取的使用者群組應該包含 Intune 登記的使用者。
@@ -86,11 +86,11 @@ ms.locfileid: "51687718"
 
 ### <a name="complete-onboarding-and-check-status"></a>完成上架和支票狀態
 
-1. 一旦已在裝置上安裝適用于 Android 的 Endpoint 的 Defender，您就會看到應用程式圖示。
+1. 在 Android 上的 Endpoint for Endpoint 在裝置上安裝後，您會看到應用程式圖示。
 
     ![移動裝置上的圖示](images/7cf9311ad676ec5142002a4d0c2323ca.jpg)
 
-2. 點擊 [Microsoft Defender ATP 應用程式] 圖示，然後依照螢幕指示完成安裝應用程式。 詳細資料包含使用者對 Android 的 Defender for Endpoint 所需的 Android 許可權的使用者認可。
+2. 點擊 [Microsoft Defender for Endpoint app] 圖示，然後依照螢幕指示完成安裝應用程式。 詳細資料包含使用者接收 Android 的 Defender for Endpoint 所需的 Android 許可權。
 
 3. 成功上架後，裝置會在 Microsoft Defender 安全中心的 [裝置] 清單上開始顯示。
 
@@ -98,7 +98,7 @@ ms.locfileid: "51687718"
 
 ## <a name="deploy-on-android-enterprise-enrolled-devices"></a>在 Android 企業註冊裝置上部署
 
-適用于 Android 的 Defender for Android 支援 Android 企業註冊裝置。
+Android 上的 Endpoint for Android 支援 Android Enterprise 註冊裝置。
 
 如需 Intune 支援之註冊選項的詳細資訊，請參閱 [註冊選項](https://docs.microsoft.com/mem/intune/enrollment/android-enroll)。
 
@@ -126,7 +126,7 @@ ms.locfileid: "51687718"
 
     ![使用 Defender 進行端點預覽應用程式核准的螢幕擷取畫面](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
 
-5. 您將會看到 [核准設定] 頁面。 頁面會確認您的喜好設定，以處理適用于 Android 的 Defender for Endpoint 的新應用程式許可權可能要求。 查看選項，然後選取您的喜好選項。 選取 **[完成]**。
+5. 您將會看到 [核准設定] 頁面。 頁面會確認您的喜好設定，以處理 Android 上的 Defender for Endpoint 可能要求的新應用程式許可權。 查看選項，然後選取您的喜好選項。 選取 **[完成]**。
 
     依預設，受管理的 Google 播放會 *在應用程式要求新許可權時選取 [保留已核准*]
 
@@ -142,7 +142,7 @@ ms.locfileid: "51687718"
 
     ![Android 應用程式的影像](images/9fc07ffc150171f169dc6e57fe6f1c74.png)
 
-8. 在 [Android 應用程式] 畫面中選取 [重新整理 **] 按鈕，** 並在 [應用程式] 清單中顯示 MICROSOFT Defender ATP。
+8. 選取 [Android 應用程式] 畫面中的 [重新整理 **] 按鈕，** [應用程式] 清單中應該會顯示 [Microsoft Defender for Endpoint]。
 
     > [!div class="mx-imgBorder"]
     > ![Android 應用程式清單的影像](images/fa4ac18a6333335db3775630b8e6b353.png)
@@ -155,7 +155,7 @@ ms.locfileid: "51687718"
 
     1. 在 [ **建立應用程式佈建原則** ] 頁面中，輸入下列詳細資料：
     
-        - 名稱： Microsoft Defender ATP。
+        - 名稱： Microsoft Defender for Endpoint。
         - 選擇 [ **Android 企業** ] 做為 [平臺]。
         - 選擇 [ **僅工作設定檔** ] 做為配置檔案類型。
         - 按一下 [**選取應用程式**]，選擇 [ **Microsoft Defender ATP**]，然後選取 **[確定]** ，然後按一下 **[**
@@ -223,9 +223,9 @@ ms.locfileid: "51687718"
 - 啟用 **Always ON vpn** 設定工作設定檔中的 vpn 用戶端，可在可能時自動連線並重新連接至 VPN。 在指定的裝置上，只有一個 VPN 用戶端可以設定為 always on VPN，所以請務必將一個以上的 [永不間斷] VPN 原則部署到單一裝置。 
 - 在 VPN 用戶端下拉式清單中選取 **自訂** vpn 在此案例中，是用來提供 Web 保護功能的 Endpoint VPN 的 Defender。 
     > [!NOTE]
-    > 為了能夠運作此 VPN 的自動設定，必須在使用者的裝置上安裝 Microsoft Defender ATP 應用程式。
+    > 使用者的裝置上必須安裝 Microsoft Defender for Endpoint 應用程式，才能運作此 VPN 的自動設定。
 
-- 輸入 Google Play store 中 Microsoft Defender ATP 應用程式的 **套件識別碼** 。 若為 Defender 應用程式 URL https://play.google.com/store/apps/details?id=com.microsoft.scmx ，PACKAGE ID 為 **.com。 scmx**  
+- 為 Google Play store 中的 Microsoft Defender for Endpoint 應用程式輸入 **套件識別碼** 。 若為 Defender 應用程式 URL https://play.google.com/store/apps/details?id=com.microsoft.scmx ，PACKAGE ID 為 **.com。 scmx**  
 - **鎖定模式** 未設定 (預設)  
 
      ![裝置的影像設定設定檔啟用 Alwayson VPN](images/3autosetupofvpn.png)
@@ -254,11 +254,11 @@ ms.locfileid: "51687718"
 
     ![使用 Microsoft Defender for Endpoint 應用程式的行動裝置影像](images/mda-devicesafe.png)
 
-4. 在此階段，裝置成功架到適用于 Android 的 Endpoint for Defender。 您可以流覽至 [**裝置**] 頁面，以在 [Microsoft Defender Security Center](https://securitycenter.microsoft.com)上驗證這一點。
+4. 在此階段，裝置成功架到 Android 上的 Endpoint for Endpoint。 您可以流覽至 [**裝置**] 頁面，以在 [Microsoft Defender Security Center](https://securitycenter.microsoft.com)上驗證這一點。
 
     ![端點入口網站的 Microsoft Defender 影像](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
 
 
 ## <a name="related-topics"></a>相關主題
-- [Android 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md)
-- [在 Android 功能上設定 Microsoft Defender for Endpoint](android-configure.md)
+- [Android 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-android.md)
+- [在 Android 上設定適用於端點的 Microsoft Defender 功能](android-configure.md)

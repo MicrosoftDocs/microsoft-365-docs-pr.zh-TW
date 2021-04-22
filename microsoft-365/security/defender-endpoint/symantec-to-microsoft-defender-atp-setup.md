@@ -1,7 +1,7 @@
 ---
 title: Symantec to Microsoft Defender for Endpoint-階段2，設定
 description: 這是安裝程式從 Symantec 遷移至 Microsoft Defender for Endpoint 的階段2。
-keywords: 遷移、windows defender 高級威脅防護、atp、edr
+keywords: 遷移，Microsoft Defender for Endpoint，edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6d45e3aa0d3bf938e43201aca969613876ef1f31
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 755eb54f848e0cc5da3ca1b7b613a951c77d0b4c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218709"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935230"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>從 Symantec 遷移-階段2：設定 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "51218709"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![階段1：準備](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[階段1：準備](symantec-to-microsoft-defender-atp-prepare.md) |![階段2：設定](images/phase-diagrams/setup.png)<br/>階段2：設定 |[![階段3：板載](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[階段3：板載](symantec-to-microsoft-defender-atp-onboard.md) |
+|[![階段 1：準備](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[階段 1：準備](symantec-to-microsoft-defender-atp-prepare.md) |![階段 2：設定](images/phase-diagrams/setup.png)<br/>階段 2：設定 |[![第 3 階段：導入](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[第 3 階段：導入](symantec-to-microsoft-defender-atp-onboard.md) |
 |--|--|--|
 ||*您在這裡！* | |
 
@@ -87,7 +87,7 @@ ms.locfileid: "51218709"
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> 是否仍需要協助？ 請參閱 [Windows Server 2016 和2019上的 Microsoft Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
+> 仍需要協助嗎？ 請參閱 [Windows Server 2016 和2019上的 Microsoft Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>在 Windows Server 上將 Microsoft Defender 防毒軟體設定為被動模式
 

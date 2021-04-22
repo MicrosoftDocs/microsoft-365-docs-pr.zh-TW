@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 Defender 的高級搜尋中處理錯誤
 description: 瞭解使用高級搜尋時所顯示的錯誤
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema，kusto，timeout，資源，錯誤，未知錯誤，限制，配額，參數，配置
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema，kusto，timeout，資源，錯誤，未知錯誤，限制，配額，參數，配置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 83f2603b00062633ce61a3a8f364e33cbc5b029d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: d8d165f39c45bd235800dc951d50934b47dd7ff5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499733"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935446"
 ---
 # <a name="handle-advanced-hunting-errors"></a>處理高級搜尋錯誤
 

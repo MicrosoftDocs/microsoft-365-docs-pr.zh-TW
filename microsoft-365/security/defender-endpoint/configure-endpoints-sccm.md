@@ -1,7 +1,7 @@
 ---
 title: 使用 Configuration Manager 上線 Windows 10 裝置
 description: 使用 Configuration Manager 在裝置上部署設定套件，使其可架至服務。
-keywords: 板載裝置使用 sccm，裝置管理，設定 Windows ATP 裝置，設定 Microsoft Defender for Endpoint devices
+keywords: 使用 sccm 的板載裝置，裝置管理，設定 Microsoft Defender for Endpoint 裝置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 3550bec28945ab888efbe2ca46f12ca7f96aab4a
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: e919f697048840b0eb7bffd34914328fe233f823
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892860"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935158"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 上線 Windows 10 裝置
 

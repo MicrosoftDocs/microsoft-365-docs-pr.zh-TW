@@ -1,8 +1,8 @@
 ---
-title: Android 上的 Microsoft Defender for Endpoint
+title: Android 上適用於端點的 Microsoft Defender
 ms.reviewer: ''
 description: 說明如何在 Android 上安裝及使用 Microsoft Defender for Endpoint
-keywords: microsoft、defender、atp、android、安裝、部署、卸載、intune
+keywords: microsoft、defender、Microsoft Defender for Endpoint、android、安裝、部署、卸載、intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8a78fc7e07f89c2e13a698ee526403989f26dd65
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 35a43aa7bfcd9ed8c83d10c2ec44a974b03bca72
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768839"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935566"
 ---
-# <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint
+# <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上適用於端點的 Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51768839"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 本主題說明如何在 Android 上安裝、設定、更新和使用 Defender for Endpoint。
 
@@ -62,7 +62,7 @@ ms.locfileid: "51768839"
     -   存取 Microsoft Defender Security Center 入口網站。
 
         > [!NOTE]
-        > Microsoft Intune 是唯一支援的行動裝置管理 (MDM) 解決方案，可在 Android 上部署 Microsoft Defender for Endpoint。 目前只有已註冊的裝置才支援在 Intune 中強制執行 Android 相關裝置相容性原則的端點。 
+        > Microsoft Intune 是唯一支援的行動裝置管理 (MDM) 解決方案，可在 Android 上部署 Microsoft Defender for Endpoint。 目前只有已註冊的裝置才支援在 Intune 中強制執行 Android 相關裝置相容性原則上的端點。 
 
     -   存取 [Microsoft 端點管理員管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，將應用程式部署至組織中已註冊的使用者群組。
 
@@ -90,6 +90,6 @@ ms.locfileid: "51768839"
 
 
 ## <a name="related-topics"></a>相關主題
-- [在 Android 上使用 Microsoft Intune 部署 Microsoft Defender for Endpoint](android-intune.md)
-- [在 Android 功能上設定 Microsoft Defender for Endpoint](android-configure.md)
+- [在 Android 上使用 Microsoft Intune 部署適用於端點的 Microsoft Defender](android-intune.md)
+- [在 Android 上設定適用於端點的 Microsoft Defender 功能](android-configure.md)
 

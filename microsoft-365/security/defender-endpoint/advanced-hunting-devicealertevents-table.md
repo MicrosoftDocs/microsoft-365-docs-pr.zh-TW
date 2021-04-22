@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 DeviceAlertEvents 表格
 description: 深入瞭解高級搜尋架構的 DeviceAlertEvents 資料表中的警示產生事件
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、mdatp、microsoft defender atp、wdatp 搜尋、查詢、遙測、架構參考、kusto、表格、欄、資料類型、描述、DeviceAlertEvents、警示、嚴重性、類別
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft Defender for Endpoint、search、query、遙測、schema reference、kusto、table、column、data type、description、DeviceAlertEvents、警示、嚴重性、類別
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 66ecdc8fbcde04d78f2deede5f4e296a7f051ef0
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bb2350fed5fadee359695743989e02a3b3e44fb2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499167"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935338"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -33,7 +33,7 @@ ms.locfileid: "51499167"
 
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 [！附注] `DeviceAlertEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含 Microsoft Defender Security Center 中警示的相關資訊。 使用這個參考來建立從表格取回之資訊的查詢。
 

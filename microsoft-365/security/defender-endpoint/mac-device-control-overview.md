@@ -1,7 +1,7 @@
 ---
 title: macOS 的裝置控制項
 description: 瞭解如何針對 Mac 設定 Microsoft Defender for Endpoint，以減少可移動儲存區（如 USB 裝置）的威脅。
-keywords: microsoft，defender，atp，mac，裝置，控制，usb，可移動，媒體
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，device，control，usb，可移動，媒體
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 39f8367c34e98c5e9dd11e9716f08e6c9e7fd9c0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688678"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935122"
 ---
 # <a name="device-control-for-macos"></a>macOS 的裝置控制項
 
@@ -33,7 +33,7 @@ ms.locfileid: "51688678"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 安全性中心中的適用於 Office 365 的 Microsoft Defender
 description: 了解從 Office 365 安全性與合規性中心至 Microsoft 365 安全性中心的變更。
-keywords: Microsoft 365 安全性, 開始使用 Microsoft 365 安全性中心, OATP, MDATP, MDO, MDE, 單一管理位置, 新的安全性入口網站, 新 defender 安全性入口網站
+keywords: Microsoft 365 安全性，快速入門 Microsoft 365 security center，microsoft Defender for Office 365，Microsoft Defender for Endpoint，MDO，MDE，單一窗格的玻璃，新的安全性入口網站，新的 Defender 安全性入口網站
 ms.date: 02/02/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 0c4a849bf3f91d4803adcb45c13b59d76afda388
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 980a384d3c4fd44a368f35d6f885ea0c8288376a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760185"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935410"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心中的適用於 Office 365 的 Microsoft Defender
 

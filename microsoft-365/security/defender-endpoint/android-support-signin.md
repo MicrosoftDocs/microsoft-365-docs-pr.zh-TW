@@ -1,7 +1,7 @@
 ---
 title: 在 Android 上疑難排解 Microsoft Defender for Endpoint 上的問題
 description: 在 Android 上疑難排解 Microsoft Defender for Endpoint 的問題
-keywords: microsoft，defender，atp，mde，android，cloud，connectivity，通訊
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mde，android，cloud，connectivity，通訊
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a19582073565a958aab444541381f5772b6f4f1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 5f57d14427ef68280a065489e068955db9e5045a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687600"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934798"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上 Microsoft Defender for Endpoint 的問題疑難排解
 
@@ -32,7 +32,7 @@ ms.locfileid: "51687600"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 當您上架裝置時，您可能會在安裝應用程式之後看到 [登入] 問題。
 

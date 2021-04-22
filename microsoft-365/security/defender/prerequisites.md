@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 必要條件
 description: 深入瞭解 Microsoft 365 Defender 的授權、硬體和軟體需求，以及其他設定設定
-keywords: 需求，必要條件，硬體，軟體，瀏覽器，MTP，M365，授權，E5，A5，EMS，購買
+keywords: 需求，必要條件，硬體，軟體，瀏覽器，Microsoft 365 Defender，M365，授權，E5，A5，EMS，purchase
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f9904ecb5b9ab0a0f634903a5dc0ee3049d06b38
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 930a3de078d6d003241bb6fcd5df71bc9f301962
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059635"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935602"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender 必要條件
 
@@ -47,7 +47,7 @@ ms.locfileid: "51059635"
 - Office 365 E5 或 A5
 - 適用於端點的 Microsoft Defender
 - 適用於身分識別的 Microsoft Defender 
-- Microsoft 雲端應用程式安全性
+- Microsoft Cloud App Security
 - 適用于 Office 的 Defender 365 (方案 2) 
 
 如需詳細資訊，請 [查看 Microsoft 365 企業版服務方案](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
@@ -60,7 +60,7 @@ ms.locfileid: "51059635"
 >[!NOTE]
 > 您必須被指派至 [AZURE AD 中](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)的 **帳務系統管理員** 或 **全域讀取** 者角色，才能看到授權資訊。 如果您遭遇存取的問題，請與全域管理員聯繫。
 
-## <a name="required-permissions"></a>必要的權限
+## <a name="required-permissions"></a>必要權限
 您必須是 **全域系統管理員** 或 Azure Active Directory 中的 **安全性系統管理員** ，才可開啟 Microsoft 365 Defender。 如需使用 Microsoft 365 Defender 所需的角色清單，以及如何管制資料存取的相關資訊，請參閱 [管理 Microsoft 365 Defender 的存取](m365d-permissions.md)。
 
 ## <a name="browser-requirements"></a>瀏覽器需求

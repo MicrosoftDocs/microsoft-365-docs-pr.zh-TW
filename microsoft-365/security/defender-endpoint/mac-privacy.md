@@ -1,7 +1,7 @@
 ---
-title: 適用于 Mac 的 Microsoft Defender 端點隱私權
-description: 隱私權控制，如何設定會影響隱私權的原則設定，以及 Microsoft Defender for Mac 中所收集之診斷資料的相關資訊。
-keywords: microsoft、defender、atp、mac、隱私權、診斷
+title: Mac 上的 Microsoft Defender for Endpoint 的隱私權
+description: 隱私權控制，如何設定會影響隱私權的原則設定，以及在 Mac 上為端點所收集之診斷資料的相關資訊。
+keywords: microsoft、defender、Microsoft Defender for Endpoint、mac、隱私權、診斷
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26ae83dc8a8b3bb7d686e3674437a12999b5146f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b2897766570c6ef8979a7944a687ba024e55b3ce
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862232"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934546"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 隱私權
 

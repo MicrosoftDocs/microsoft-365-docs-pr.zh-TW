@@ -1,7 +1,7 @@
 ---
 title: 'Windows 10 (威脅防護) '
 description: 適用於端點的 Microsoft Defender 是用於預防性保護、入侵後偵測、自動調查及回應的整合式平台。
-keywords: 威脅防護、Microsoft Defender 高級威脅防護、攻擊面減少、下一代保護、端點偵測和回應、自動化調查和回應、microsoft 威脅專家、Microsoft 安全評分的裝置、高級搜尋、網路威脅搜尋、網頁威脅防護
+keywords: 威脅防護，Microsoft Defender for Endpoint，攻擊面降低，新一代保護，端點偵測和回應，自動化調查和回應，microsoft 威脅專家，Microsoft 安全評分的裝置，高級搜尋，網路威脅搜尋，網頁威脅防護
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4206519d62feb82bbc297659e01b0cc3902b83dc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056844"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934930"
 ---
 # <a name="threat-protection"></a>威脅防護
 [適用於端點的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) 是用於預防性保護、入侵後偵測、自動調查及回應的整合式平台。 Defender for Endpoint 可保護端點免受網路威脅、偵測高級攻擊和資料違例、自動化安全性事件，以及改善安全性狀況。
@@ -27,7 +27,7 @@ ms.locfileid: "51056844"
 > [!TIP]
 > 讓您的使用者能夠輕鬆存取雲端服務和內部部署應用程式，並為所有裝置啟用新式管理功能。 如需詳細資訊，請參閱 [保護您的遠端員工](https://docs.microsoft.com/enterprise-mobility-security/remote-work/)。 
 
-<center><h2>Microsoft Defender for Endpoint</center></h2>
+<center><h2>適用於端點的 Microsoft Defender</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>威脅 & 弱點管理</b></center></a></td>
@@ -52,24 +52,24 @@ ms.locfileid: "51056844"
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
 
-**[威脅 & 弱點管理](next-gen-threat-and-vuln-mgt.md)**<br>
+**[威脅與漏洞管理](next-gen-threat-and-vuln-mgt.md)**<br>
 這項內建的功能使用遊戲變更風險的方法來探索、優先順序和修正端點漏洞及錯誤配置。
 
 - [威脅 & 弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [開始使用](tvm-prerequisites.md)
 - [存取您的安全性狀況](tvm-dashboard-insights.md)
 - [改善您的安全性狀況並降低風險](tvm-security-recommendation.md)
-- [瞭解裝置上的漏洞](tvm-software-inventory.md)
+- [了解您裝置上的弱點](tvm-software-inventory.md)
 
 <a name="asr"></a>
 
-**[受攻擊面縮小](overview-attack-surface-reduction.md)**<br>
+**[攻擊面縮減](overview-attack-surface-reduction.md)**<br>
 攻擊面降減功能集可提供堆疊中的第一項防護。 透過確定設定設定正確，並套用利用緩解技術，這些功能可讓攻擊和利用。
 
 - [以硬體為基礎的隔離](overview-hardware-based-isolation.md)
 - [應用程式控制](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
-- [裝置控制項](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
-- [Exploit protection](exploit-protection.md)
+- [裝置控制](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+- [入侵防護](exploit-protection.md)
 - [網路保護](network-protection.md)， [web 保護](web-protection-overview.md)
 - [受控資料夾存取權](controlled-folders.md)
 - [網路防火牆](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
@@ -77,7 +77,7 @@ ms.locfileid: "51056844"
 
 <a name="ngp"></a>
 
-**[下一代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[新一代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 若要進一步鞏固網路的安全性周邊，Microsoft Defender for Endpoint 會使用下一代保護，以捕捉所有類型的新威脅。
 
 - [行為監控](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
@@ -107,7 +107,7 @@ ms.locfileid: "51056844"
 
 - [自動化調查與補救措施](automated-investigations.md)
 - [檢視自動調查的詳細資料和結果](auto-investigation-action-center.md)
-- [查看和核准修正動作](manage-auto-investigation.md)
+- [查看和核准補救動作](manage-auto-investigation.md)
 
 <a name="mte"></a>
 
@@ -136,7 +136,7 @@ Microsoft Defender for Endpoint 的新受管理威脅搜尋服務提供主動的
 - 適用於身分識別的 Microsoft Defender
 - Azure Defender
 - 商務用 Skype
-- Microsoft 雲端應用程式安全性
+- Microsoft Cloud App Security
 
 <a name="mtp"></a>
 **[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>

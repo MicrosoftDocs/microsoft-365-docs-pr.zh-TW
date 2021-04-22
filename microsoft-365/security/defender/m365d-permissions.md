@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 security center 中管理 Microsoft 365 Defender 資料的存取權
 description: 瞭解如何在 Microsoft 365 Defender 中管理資料的許可權
-keywords: 存取權, 權限, MTP, Microsoft 威脅防護, M365, 安全性, MCAS, MDATP, Cloud App Security, Microsoft Defender 進階威脅防護, 範圍, 約制, RBAC
+keywords: access，許可權，Microsoft 365 Defender，M365，security，MCAS，Cloud App Security，Microsoft Defender for Endpoint，scope，範圍，RBAC，RBAC
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e1be2cf4d5510b2a31a61f848d7d99d6a6704d49
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 52e4e9fc8c73d1adca0c24c5bebb50f9dcf7ac6f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060568"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935626"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>使用 Azure Active Directory 全域角色管理 Microsoft 365 Defender 的存取權
 

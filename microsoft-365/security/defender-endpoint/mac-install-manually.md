@@ -1,7 +1,7 @@
 ---
 title: macOS 上的 Microsoft Defender for Endpoint 手動部署
 description: 從命令列手動安裝 Microsoft Defender for Endpoint on macOS。
-keywords: microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamf，macos，catalina，mojave，高塞拉里昂
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，安裝，部署，卸載，intune，jamf，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e8faf95df6691828558175412a1de8aa844d93f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d8458f1bacc6577d83878a94c24e649371d90038
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688594"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935326"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 手動部署
 
@@ -33,7 +33,7 @@ ms.locfileid: "51688594"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 本主題說明如何手動在 macOS 上部署 Microsoft Defender for Endpoint。 成功的部署需要完成下列所有步驟：
 - [下載安裝和上架套件](#download-installation-and-onboarding-packages)
@@ -164,7 +164,7 @@ ms.locfileid: "51688594"
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    1. 檔案應該已被 Mac 的 Defender for Mac 隔離。 使用下列命令列出所有偵測到的威脅：
+    1. 檔案應該已被 Mac 上的 Defender for Endpoint 隔離。 使用下列命令列出所有偵測到的威脅：
 
         ```bash
         mdatp threat list
@@ -207,7 +207,7 @@ ms.locfileid: "51688594"
 
     系統應該會顯示下列訊息：
 
-    > Microsoft Defender ATP-macOS EDR DIY test file<br/>
+    > Microsoft Defender for Endpoint macOS EDR DIY test file<br/>
     > 對應的警示將會出現在 MDATP 入口網站中。
 
 11. 按一下 [開啟]。
@@ -228,4 +228,4 @@ ms.locfileid: "51688594"
 
 ## <a name="uninstallation"></a>卸載
 
-請參閱 [卸載](mac-resources.md#uninstalling) 以取得如何從用戶端裝置移除 Microsoft Defender For macOS 端點的詳細資料。
+請參閱 [卸載](mac-resources.md#uninstalling) 以取得如何在 macOS 從用戶端裝置移除 Microsoft Defender for Endpoint 的詳細資料。

@@ -1,7 +1,7 @@
 ---
 title: 切換至 Microsoft Defender for Endpoint 安裝
 description: 這是第2階段，設定，用來切換至 Microsoft Defender for Endpoint。
-keywords: 遷移、windows defender 高級威脅防護、atp、edr
+keywords: 遷移，Microsoft Defender for Endpoint，edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 6f2104e38bd55806e0873166b07a31aff46e9c24
-ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
+ms.openlocfilehash: 656ee0bda769cb5ff2cdbe406db2a95e791210c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51484753"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935554"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>切換至 Microsoft Defender for Endpoint-階段2：設定
 
@@ -100,7 +100,7 @@ ms.locfileid: "51484753"
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> 是否仍需要協助？ 請參閱 [Windows Server 上的 Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
+> 仍需要協助嗎？ 請參閱 [Windows Server 上的 Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>在 Windows Server 上將 Microsoft Defender 防毒軟體設定為被動模式
 

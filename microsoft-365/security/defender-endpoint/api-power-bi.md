@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP APIs 連接至 Power BI
+title: Microsoft Defender for Endpoint APIs connection to Power BI
 ms.reviewer: ''
 description: 在 Microsoft Defender for Endpoint APIs 上建立 Power Business 智慧 (BI) 報告。
 keywords: api、支援的 api、Power BI、報表
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 696782ca03e5494c3fc5ca08943d1079c5d78f8a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166430"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935038"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>使用 Power BI 建立自訂報告
 
@@ -32,7 +32,7 @@ ms.locfileid: "51166430"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -141,7 +141,7 @@ ms.locfileid: "51166430"
 如需詳細資訊，請參閱 [POWER BI 報告範本](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
 
 ## <a name="sample-reports"></a>範例報告
-查看 Microsoft Defender ATP Power BI report 範例。 如需詳細資訊，請參閱 [流覽程式碼範例](https://docs.microsoft.com/samples/browse/?products=mdatp)。
+查看 Microsoft Defender for Endpoint Power BI report 範例。 如需詳細資訊，請參閱 [流覽程式碼範例](https://docs.microsoft.com/samples/browse/?products=mdatp)。
 
 
 ## <a name="related-topic"></a>相關主題

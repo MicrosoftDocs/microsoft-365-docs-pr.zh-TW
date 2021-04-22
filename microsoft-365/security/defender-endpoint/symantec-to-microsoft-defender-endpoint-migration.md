@@ -1,7 +1,7 @@
 ---
 title: 從 Symantec 遷移至 Microsoft Defender for Endpoint
 description: 深入瞭解如何將從 Symantec 切換至 Microsoft Defender 以供端點使用
-keywords: 遷移、windows defender 高級威脅防護、atp、edr
+keywords: 遷移，Microsoft Defender for Endpoint，edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6517359c805bb449d075e401283a79a791461630
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 587cf49ddc8d6135047fbb5e0207ed0f94d1dbe0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218775"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934726"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>從 Symantec 遷移至 Microsoft Defender for Endpoint
 如果您打算從 Symantec Endpoint Protection (Symantec) 切換至 [Microsoft defender For endpoint](https://docs.microsoft.com/windows/security/threat-protection))  (microsoft defender for endpoint，您就是在正確的位置。 使用本文做為指南。
@@ -58,12 +58,12 @@ ms.locfileid: "51218775"
 
 | 功能/功能 | 描述 |
 |---|---|
-| [威脅 & 弱點管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | 威脅 & 弱點管理功能可協助識別、評估和修正整個 (端點的弱點，如裝置) 。 |
-| [受攻擊面縮小](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | 攻擊面減少規則可協助保護貴組織的裝置和應用程式免受 cyberthreats 和攻擊。 |
-| [下一代保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | 下一代保護包括 Microsoft Defender 防毒程式，可協助封鎖威脅和惡意程式碼。 |
+| [威脅與漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | 威脅 & 弱點管理功能可協助識別、評估和修正整個 (端點的弱點，如裝置) 。 |
+| [攻擊面縮減](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | 攻擊面減少規則可協助保護貴組織的裝置和應用程式免受 cyberthreats 和攻擊。 |
+| [新一代保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | 下一代保護包括 Microsoft Defender 防毒程式，可協助封鎖威脅和惡意程式碼。 |
 | [端點偵測及回應](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | 端點偵測和回應功能偵測、調查和回應入侵嘗試和主動侵犯。  |
 | [進階搜捕](advanced-hunting-overview.md) | 高級搜尋功能可讓您的安全性作業小組找到已知或潛在威脅的指標和實體。 |
-| [行為封鎖和包容](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | 行為封鎖和包容功能可協助您找出威脅，並根據其行為和程式樹（即使當威脅已開始執行時）加以阻止。 |
+| [行為封鎖和包含專案](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | 行為封鎖和包容功能可協助您找出威脅，並根據其行為和程式樹（即使當威脅已開始執行時）加以阻止。 |
 | [自動化調查與補救措施](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | 自動化調查和回應功能會檢查提醒並採取立即修正動作，以解決違規行為。 |
 | [威脅搜尋服務](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (Microsoft 威脅專家)  | 「威脅搜尋服務」會為安全性運作小組提供專家級的監控和分析，並協助確保重要威脅不會丟失。 |
 

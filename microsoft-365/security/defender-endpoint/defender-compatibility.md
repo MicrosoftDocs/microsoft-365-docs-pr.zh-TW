@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender 與 Defender for Endpoint 的相容性
 description: 瞭解 Windows Defender 如何與 Microsoft Defender for Endpoint 搭配使用，以及如何在使用協力廠商反惡意軟體用戶端時運作。
-keywords: windows defender 相容性，defender，microsoft defender atp，defender for endpoint，防病毒，mde
+keywords: windows defender 相容性，defender，Microsoft Defender for Endpoint，defender for endpoint，殺毒軟體，mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 63dca2694dae5dee924c9a0a02a660003907c42b
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: a8dca4a80385fabcdc64a5584474214d05be4a6c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165954"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935374"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-microsoft-defender-for-endpoint"></a>Microsoft Defender 防病毒與 Microsoft Defender for Endpoint 的相容性
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165954"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
 Microsoft Defender for Endpoint agent 取決於 Microsoft Defender 防毒軟體的某些功能，例如檔案掃描。
 

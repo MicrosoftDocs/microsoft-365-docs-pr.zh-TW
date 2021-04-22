@@ -2,7 +2,7 @@
 title: 在 Linux 上設定 Microsoft Defender for Endpoint 的喜好設定
 ms.reviewer: ''
 description: 說明如何在企業中為 Linux 設定 Microsoft Defender for Endpoint。
-keywords: microsoft，defender，atp，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
+keywords: microsoft，defender，Microsoft Defender for Endpoint，linux，安裝，部署，卸載，puppet，ansible，linux，redhat，ubuntu，debian，sles，suse，centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2c162d652656afb61f1d74bad9ec963825d25a14
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 7f3dd65aea0efa570ec5d6a1d27479b787e16831
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903867"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935278"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上設定 Microsoft Defender for Endpoint 的喜好設定
 
@@ -39,7 +39,7 @@ ms.locfileid: "51903867"
 >[!IMPORTANT]
 >本主題包含如何在企業環境中設定適用于 Linux 之 Defender 的 Defender 偏好設定的指示。 如果您想要從命令列在裝置上設定產品，請參閱 [Resources](linux-resources.md#configure-from-the-command-line)。
 
-在企業環境中，可透過設定設定檔管理適用于 Linux 的 Defender。 此設定檔是從您選擇的管理工具部署。 由企業管理的喜好設定會優先于裝置上的本機設定。 換句話說，您企業中的使用者無法變更透過此設定檔設定的喜好設定。
+在企業環境中，可以透過設定設定檔來管理 Linux 上的 Defender。 此設定檔是從您選擇的管理工具部署。 由企業管理的喜好設定會優先于裝置上的本機設定。 換句話說，您企業中的使用者無法變更透過此設定檔設定的喜好設定。
 
 本文說明此設定檔的結構 (，包括可供您開始使用的建議設定檔) 及如何部署設定檔的指示。
 
@@ -450,4 +450,4 @@ python -m json.tool mdatp_managed.json
 
 ## <a name="configuration-profile-deployment"></a>設定設定檔部署
 
-在您為企業建立設定檔之後，您可以透過企業使用的管理工具加以部署。 /Etc/opt/microsoft/mdatp/managed/版的 Defender for Linux 會從檔案上的 *mdatp_managed.js* 讀取 managed 設定。
+在您為企業建立設定檔之後，您可以透過企業使用的管理工具加以部署。 Linux 上的 Defender for the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file 中讀取 managed configuration。

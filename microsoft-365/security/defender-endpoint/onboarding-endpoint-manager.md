@@ -1,7 +1,7 @@
 ---
-title: 使用 Microsoft 端點管理員上架
+title: 使用 Microsoft 端點管理員上線
 description: 瞭解如何使用 Microsoft 端點管理員對 Microsoft Defender for Endpoint 進行板載
-keywords: 上架，設定，部署，部署，端點管理員，mdatp，高級威脅防護，集合建立，端點偵測回應，下一代保護，攻擊面減少，microsoft 端點管理員
+keywords: 上架、設定、部署、部署、端點管理員、Microsoft Defender for Endpoint、集合建立、端點偵測回應、下一代保護、攻擊面減少、Microsoft 端點管理員
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9edcceca2f6cc7c2377eb388d7394a23dfbae99d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186254"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935254"
 ---
-# <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft 端點管理員上架
+# <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft 端點管理員上線
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51186254"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 本文是部署指南的一部分，可做為上架方法的範例。 
 
@@ -127,8 +127,8 @@ ms.locfileid: "51186254"
 
 接著，您會建立數種不同類型的端點安全性原則，以繼續執行：
 
-- [下一代保護](#next-generation-protection)
-- [受攻擊面縮小](#attack-surface-reduction--attack-surface-reduction-rules)
+- [新一代保護](#next-generation-protection)
+- [攻擊面縮減](#attack-surface-reduction--attack-surface-reduction-rules)
 
 ### <a name="endpoint-detection-and-response"></a>端點偵測及回應
 
@@ -178,7 +178,7 @@ ms.locfileid: "51186254"
     > [!div class="mx-imgBorder"]
     > ![Microsoft 端點管理員 portal11 的影像](images/5a568b6878be8243ea2b9d82d41ed297.png)
 
-### <a name="next-generation-protection"></a>下一代保護
+### <a name="next-generation-protection"></a>新一代保護
 
 1.  開啟 MEM 入口網站。
 
@@ -373,7 +373,7 @@ ms.locfileid: "51186254"
     > [!div class="mx-imgBorder"]
     > [![Microsoft Defender 安全中心 ](images/df0c64001b9219cfbd10f8f81a273190.png) 的影像](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
-### <a name="next-generation-protection"></a>下一代保護
+### <a name="next-generation-protection"></a>新一代保護
 
 1.  在測試裝置上套用原則之前，您應該可以手動管理設定，如下所示。
 

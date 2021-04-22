@@ -1,7 +1,7 @@
 ---
 title: 必要條件 & 許可權-威脅和弱點管理
 description: 在您開始使用威脅和弱點管理之前，請確定您有相關的設定和許可權。
-keywords: 威脅 & 漏洞管理許可權的必要條件、威脅和弱點管理許可權必要條件、MDATP TVM 許可權必要條件、弱點管理
+keywords: 威脅 & 漏洞管理許可權的必要條件、威脅和弱點管理許可權先決條件、Microsoft Defender for Endpoint TVM 許可權必要條件、弱點管理
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1d9c3233f72541ccd0463eefef93bde5e7d9900f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0df348e3a5564720468d95d7b23578f9dcad9294
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499953"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935182"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>必要條件 & 許可權-威脅和弱點管理
 
@@ -33,7 +33,7 @@ ms.locfileid: "51499953"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 確定您的裝置：
 

@@ -1,7 +1,7 @@
 ---
 title: 設定您的 Microsoft 365 Defender 試用實驗室或試驗環境
 description: 存取 Microsoft 365 的安全性中心，然後設定您的 Microsoft 365 Defender 試用實驗室環境
-keywords: Microsoft 威脅防護試用設定，Microsoft 威脅防護試驗設定，嘗試 Microsoft 威脅防護，Microsoft 威脅防護評估實驗室安裝程式
+keywords: Microsoft 365 Defender 試用版安裝程式，Microsoft 365 Defender 試驗設定，請試用 Microsoft 365 Defender，Microsoft 365 Defender 評估實驗室安裝程式
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 976f6a1ec010348e8a281c251064acdd7a26748b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ae81f6be0a83d5d0141f0f0c8c89f8f2207cc56c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059631"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935422"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>設定您的 Microsoft 365 Defender 試用實驗室環境 
 
@@ -37,7 +37,7 @@ ms.locfileid: "51059631"
 
 建立 Microsoft 365 Defender 試驗實驗室或試驗環境並加以部署時，會有三個階段的處理常式：
 
-|[![階段1：準備](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[階段1：準備](prepare-m365d-eval.md) |![階段2：設定](../../media/phase-diagrams/setup.png)<br/>階段2：設定 |[![階段3：板載](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[階段3：板載](config-m365d-eval.md) | [![回到試驗](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[回到試驗行動手冊](m365d-pilot.md) |
+|[![階段 1：準備](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[階段 1：準備](prepare-m365d-eval.md) |![階段 2：設定](../../media/phase-diagrams/setup.png)<br/>階段 2：設定 |[![第 3 階段：導入](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[第 3 階段：導入](config-m365d-eval.md) | [![回到試驗](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[回到試驗行動手冊](m365d-pilot.md) |
 |--|--|--|--|
 ||*您在這裡！*  | | |
 
@@ -89,7 +89,7 @@ ms.locfileid: "51059631"
 
    ![Office 365 E5 試用註冊設定頁面的影像提示按一下 [前往設定] 按鈕](../../media/mtp-eval-15.png)
 
-8. 將公司網域連線到 Office 365 租使用者。 選選擇 **[連線您已擁有的網域]** ，然後輸入您的功能變數名稱。 按 [下一步 **]**。
+8. 將公司網域連線到 Office 365 租使用者。 選選擇 **[連線您已擁有的網域]** ，然後輸入您的功能變數名稱。 按 [下一步]。
 
    ![影像 of_Office 365 E5 安裝頁面，您應該在其中個人化登入和電子郵件](../../media/mtp-eval-16.png)
  
@@ -144,7 +144,7 @@ ms.locfileid: "51059631"
 
    ![影像 of_Microsoft 365 E5 開始免費試用頁面，您應該在此頁面上時鐘立即試按鈕開始](../../media/mtp-eval-27.png)
  
-6. 移至 **Microsoft 365 Admin Center** 使用者作用中的  >    >  **使用者**。 選取您的使用者帳戶，選取 [ **管理產品授權**]，然後將 Office 365 e5 的授權交換至 **Microsoft 365 E5**。 按一下 **[儲存]**。
+6. 移至 **Microsoft 365 Admin Center** 使用者作用中的  >    >  **使用者**。 選取您的使用者帳戶，選取 [ **管理產品授權**]，然後將 Office 365 e5 的授權交換至 **Microsoft 365 E5**。 按一下 [儲存]。
 
    ![Image of_Microsoft 365 系統管理中心] 頁面，您可以在其中選取 [Microsoft 365 E5 授權]](../../media/mtp-eval-28.png)
  

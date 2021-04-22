@@ -1,8 +1,8 @@
 ---
-title: 存取 Microsoft Defender for Endpoint APIs
+title: 存取適用於端點的 Microsoft Defender API
 ms.reviewer: ''
-description: 瞭解如何使用 APIs，根據 Microsoft Defender ATP 功能自動化工作流程及創新
-keywords: api，api，wdatp，open api，microsoft defender atp api，public api，支援的 api，警示，裝置，使用者，網域，ip，file，advanced 搜尋，查詢
+description: 瞭解如何使用 APIs，根據 Microsoft Defender for Endpoint 功能自動化工作流程和創新
+keywords: api，api，Microsoft Defender for Endpoint，open api，Microsoft Defender for Endpoint api，public api，支援的 api，警示，裝置，使用者，網域，ip，file，advanced 搜尋，查詢
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 70a8ba9d3ff864ca58c856714b00f0e8feba933a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 87dce8ff4fde505eb8d4e458c8d9fb56556f4d78
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164744"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935101"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>存取 Microsoft Defender for Endpoint APIs 
+# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>存取適用於端點的 Microsoft Defender API 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51164744"
 **適用於：** 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 
@@ -61,7 +61,7 @@ ms.locfileid: "51164744"
   2. 將所需的許可權指派給應用程式，例如「讀取警示」、「隔離電腦」。 
   3. 建立此應用程式的索引鍵。
   4. 使用應用程式及其金鑰取得標記。
-  5. 使用權杖來存取 Microsoft Defender ATP API
+  5. 使用權杖來存取 Microsoft Defender for Endpoint API
 
      如需詳細資訊，請參閱 [Get access with application coNtext](exposed-apis-create-app-webapp.md)。
 
@@ -74,7 +74,7 @@ ms.locfileid: "51164744"
   1. 建立 AAD 原生應用程式。
   2. 將所需的許可權指派給應用程式，例如「讀取警示」、「隔離電腦」等等。 
   3. 使用具有使用者認證的應用程式取得權杖。
-  4. 使用權杖來存取 Microsoft Defender ATP API
+  4. 使用權杖來存取 Microsoft Defender for Endpoint API
 
      如需詳細資訊，請參閱 [Get access with user coNtext](exposed-apis-create-app-nativeapp.md)。
 

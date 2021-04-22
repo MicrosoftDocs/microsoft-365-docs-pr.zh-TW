@@ -1,7 +1,7 @@
 ---
 title: 取得安全性建議
 description: 會檢索與指定裝置識別碼相關的安全性建議集合。
-keywords: api、graph api、支援的 api、get、list、file、information、per device 的安全性建議、威脅 & 弱點管理 api、mdatp tvm api
+keywords: api，graph api，支援的 api，get，list，file，information，per device 的安全性建議，威脅 & 漏洞管理 api，Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6c65926985c7c8a194ab87c44c3fc269488c463c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bc209687d51b3e05bfcfd6028042ba5912b877f6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199762"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935302"
 ---
 # <a name="get-security-recommendations"></a>取得安全性建議
 
@@ -27,7 +27,7 @@ ms.locfileid: "51199762"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

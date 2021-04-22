@@ -1,7 +1,7 @@
 ---
-title: 在 Jamf Pro 中設定 macOS 原則的 Microsoft Defender for Endpoint
-description: 瞭解如何在 Jamf Pro 中設定 macOS 原則的 Microsoft Defender 端點
-keywords: 原則，microsoft，defender，atp，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，高塞拉里昂
+title: 在 Jamf Pro 的 macOS 原則上設定 Microsoft Defender for Endpoint
+description: 瞭解如何在 Jamf Pro 的 macOS 原則上設定 Microsoft Defender for Endpoint
+keywords: 原則，microsoft，defender，Microsoft Defender for Endpoint，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 84d0b37632dc23615a37bbbd73c17fe509dedae5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862268"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934678"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf Pro 的 macOS 原則上設定 Microsoft Defender for Endpoint
 
@@ -772,7 +772,7 @@ ms.locfileid: "51862268"
 
 7. 選取 [開啟]。 將 **顯示名稱** 設定為 **Microsoft Defender 高級威脅防護和 Microsoft defender 防病毒**。
 
-    **資訊清單** 檔案不是必要的。 Microsoft Defender 高級威脅防護沒有資訊清單檔案。
+    **資訊清單** 檔案不是必要的。 Microsoft Defender for Endpoint 可運作但沒有資訊清單檔案。
     
     **[選項] 索引標籤**<br> 保留預設值。
 

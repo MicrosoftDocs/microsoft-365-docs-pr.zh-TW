@@ -1,8 +1,8 @@
 ---
-title: 適用于 Android 應用程式授權條款的 Microsoft Defender ATP
+title: Android 應用程式授權條款上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 描述 Android 授權條款的 Microsoft Defender ATP
-keywords: microsoft，defender，atp，android，授權，條款，應用程式，使用，安裝、服務、意見反應、範圍、
+description: 描述 Android 授權條款上的 Microsoft Defender for Endpoint
+keywords: microsoft，defender，Microsoft Defender for Endpoint，android，授權，條款，應用程式，使用，安裝、服務、意見反應、範圍、
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 2bcc8c1f977a6060ac94dc3a634f075a5c1ee041
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d73ddb3a8defb7697a995c2593d6a240a59c9cfe
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687946"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934618"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Android 應用程式授權條款上的 Microsoft Defender for Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "51687946"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 ## <a name="microsoft-application-license-terms-microsoft-defender-for-endpoint"></a>MICROSOFT 應用程式授權條款： MICROSOFT DEFENDER FOR ENDPOINT
@@ -105,7 +105,7 @@ ms.locfileid: "51687946"
 
     2.  個別的應用程式存放區提供者和其子公司是這些條款的協力廠商受益人，當您接受這些條款時，應用程式存放區提供者 (s) 將有權直接強制執行，並依據任何規定授予其權益或權力的條款。
 
-9.  **商標通知。** 在美國及（或）其他國家/地區中，microsoft 公司的 microsoft 公司的註冊或共同法律商標是 microsoft、Microsoft Defender ATP、MDATP 及 Microsoft 365。
+9.  **商標通知。** Microsoft、Microsoft Defender for Endpoint 和 Microsoft 365 是 Microsoft Corporation 在美國及（或）其他國家/地區的註冊或共同法律商標。
 
 10. **ENTIRE AGREEMENT.** 本協定和您使用的增補、更新、網際網路服務和支援服務條款，都是適用于應用程式和支援服務的完整合約。
 

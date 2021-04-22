@@ -1,7 +1,7 @@
 ---
-title: 設定 Mac 的 Microsoft Defender 端點偏好設定
-description: 針對企業組織中的 Mac 設定 Microsoft Defender for Mac。
-keywords: microsoft，defender，atp，mac，management，喜好設定，enterprise，intune，jamf，macos，catalina，mojave，高塞拉里昂
+title: 設定 Mac 上的 Microsoft Defender for Endpoint 的喜好設定
+description: 在企業組織中設定 Mac 上端點的 MMicrosoft Defender。
+keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，management，喜好設定，enterprise，intune，jamf，macos，catalina，mojave，high 塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d2bea469031e2c5932e859fbad7d442ebe4d34ed
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860916"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934558"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上設定 Microsoft Defender for Endpoint 的喜好設定
 
@@ -175,7 +175,7 @@ ms.locfileid: "51860916"
 
 #### <a name="allowed-threats"></a>允許的威脅
 
-依名稱指定不會被 Defender for Mac 的 Endpoint 封鎖的威脅。 這些威脅都會允許執行。
+以 Mac 上的 Endpoint for Endpoint 未封鎖的名稱來指定威脅。 這些威脅都會允許執行。
 
 |區段|值|
 |:---|:---|

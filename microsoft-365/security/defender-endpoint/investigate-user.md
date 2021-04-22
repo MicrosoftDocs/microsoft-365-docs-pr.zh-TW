@@ -1,7 +1,7 @@
 ---
 title: 調查 Microsoft Defender for Endpoint 中的使用者帳戶
 description: 調查使用者帳戶在調查期間，是否有可能遭到破壞的認證或在關聯的使用者帳戶上轉動。
-keywords: 調查、帳戶、使用者、使用者實體、警示、microsoft defender atp
+keywords: 調查、帳戶、使用者、使用者實體、警示、Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 672867d107d005004201caab7d6497ceb048ac97
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: e98142e4076c5e695f16eb06c062bc69d3d7dd55
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587704"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935062"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>調查 Microsoft Defender for Endpoint 中的使用者帳戶
 
@@ -35,7 +35,7 @@ ms.locfileid: "51587704"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
 
 ## <a name="investigate-user-account-entities"></a>調查使用者帳戶實體
 
@@ -51,7 +51,7 @@ ms.locfileid: "51587704"
 
 當您調查使用者帳戶實體時，您會看到：
 
-- 使用者帳戶詳細資料、Azure 高級威脅防護 (Azure ATP) 警示，以及登入的裝置、角色、登入類型和其他詳細資料
+- 使用者帳戶詳細資料、Microsoft Defender for Identity 警示，以及登入的裝置、角色、登入類型和其他詳細資料
 - 事件和使用者裝置的概述
 - 與此使用者相關的警示
 - 在組織中觀測的 (裝置登入) 
@@ -60,10 +60,10 @@ ms.locfileid: "51587704"
 
 ### <a name="user-details"></a>使用者詳細資料
 
-左側的 **使用者詳細資料** 窗格提供使用者的相關資訊，例如相關的開啟的事件、作用中的警示、SAM 名稱、SID、Azure ATP 警示、使用者登入的裝置數目、角色和登入類型。 視您已啟用的整合功能而定，您將會看到其他詳細資料。 例如，如果您啟用商務用 Skype 整合，您就可以從入口網站聯繫使用者。 **AZURE atp alerts** 區段包含連結，會帶您前往 azure atp 頁面（如果您已啟用 azure atp 功能，且有與使用者相關的警示）。 Azure ATP 頁面將提供有關提醒的詳細資訊。
+左側的 **使用者詳細資料** 窗格提供使用者的相關資訊，例如相關的開啟事件、作用中警示、SAM 名稱、SID、Microsoft Defender for Identity 警示、使用者登入的裝置數目、角色和登入類型。 視您已啟用的整合功能而定，您將會看到其他詳細資料。 例如，如果您啟用商務用 Skype 整合，您就可以從入口網站聯繫使用者。 如果您已啟用 Microsoft Defender 身分識別功能，且有與使用者相關的警示， **AZURE ATP alerts** 區段會包含連結，以將您帶至 [microsoft Defender 身分識別] 頁面。 [Microsoft Defender 身分識別] 頁面將提供有關提醒的詳細資訊。
 
 >[!NOTE]
->您需要啟用 Azure ATP 和 Defender for Endpoint 上的整合，才能使用此功能。 在 [Defender for Endpoint] 中，您可以在 [高級功能] 中啟用這項功能。 如需如何啟用高級功能的詳細資訊，請參閱 [開啟高級功能](advanced-features.md)。
+>您必須在 Microsoft Defender for Identity 和 Defender for Endpoint 上啟用整合，才能使用此功能。 在 [Defender for Endpoint] 中，您可以在 [高級功能] 中啟用這項功能。 如需如何啟用高級功能的詳細資訊，請參閱 [開啟高級功能](advanced-features.md)。
 
 組織中的「綜述」、「警示」和「觀察」是不同的索引標籤，可顯示使用者帳戶的各種屬性。
 

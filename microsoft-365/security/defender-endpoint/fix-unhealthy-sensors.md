@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 3a26951a796d72237f992e520e1b793654e467e3
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: c4cdc80170b49a111f476d2d17222c41e2b5c55f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893398"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935362"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>修正 Microsoft Defender for Endpoint 中的狀況不良感應器
 
@@ -66,7 +66,7 @@ ms.locfileid: "51893398"
 下列建議的動作可協助修正已設定不當之裝置的相關問題，但通訊已受損：
 
 - [確定裝置具有網際網路連線](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Windows Defender ATP 感應器需要 Microsoft Windows HTTP (WinHTTP) 報告感應器資料，並與 Microsoft Defender for Endpoint service 進行通訊。
+  適用於端點的 Microsoft Defender 感應器需要 Microsoft Windows HTTP (WinHTTP) 回報感應器資料，並與適用於端點的 Microsoft Defender 服務通訊。
 
 - [驗證 Endpoint service URLs 的用戶端與 Microsoft Defender 的連線能力](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   驗證 proxy 設定是否順利完成，該 WinHTTP 可以透過您環境中的 proxy 伺服器探索和通訊，而且 proxy 伺服器允許流量至 Microsoft Defender for Endpoint service URLs。
@@ -78,7 +78,7 @@ ms.locfileid: "51893398"
 遵循下列動作，修正與錯誤設定的裝置相關的已知問題，狀態為「沒有感應器資料」：
 
 - [確定裝置具有網際網路連線](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Windows Defender ATP 感應器需要 Microsoft Windows HTTP (WinHTTP) 報告感應器資料，並與 Microsoft Defender for Endpoint service 進行通訊。
+  適用於端點的 Microsoft Defender 感應器需要 Microsoft Windows HTTP (WinHTTP) 回報感應器資料，並與適用於端點的 Microsoft Defender 服務通訊。
 
 - [驗證 Endpoint service URLs 的用戶端與 Microsoft Defender 的連線能力](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   驗證 proxy 設定是否順利完成，該 WinHTTP 可以透過您環境中的 proxy 伺服器探索和通訊，而且 proxy 伺服器允許流量至 Microsoft Defender for Endpoint service URLs。

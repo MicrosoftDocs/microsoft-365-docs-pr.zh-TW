@@ -1,7 +1,7 @@
 ---
-title: 軟體發行版本本清單
+title: 列出軟體版本發佈
 description: 檢索您組織的軟體發行版本本清單
-keywords: api，graph api，支援的 api，get，軟體版本發行，mdatp tvm api
+keywords: api，graph api，支援的 api，get，軟體版本發佈，Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,20 +14,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 88f446ddd87768817099c1a206bab17aa8be5b7b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e47a97477500491f634e3f5134a32241bd68985b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198574"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935290"
 ---
-# <a name="list-software-version-distribution"></a>軟體發行版本本清單 
+# <a name="list-software-version-distribution"></a>列出軟體版本發佈 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

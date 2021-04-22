@@ -1,7 +1,7 @@
 ---
 title: 指派裝置價值-威脅和弱點管理
 description: 瞭解如何對裝置指派低、標準或高值，以協助您區分資產優先順序。
-keywords: microsoft defender for endpoint device value，威脅和弱點管理裝置值，高價值裝置，裝置價值暴露分數
+keywords: Microsoft Defender for Endpoint device value，威脅和弱點管理裝置值，高價值裝置，裝置價值暴露分數
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f5d90190418f84795bdd899ea0e48ac25831a96
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: ca6c88b08b331eb65035387a9c070d0914b1651d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689386"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935194"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>指派裝置價值-威脅和弱點管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51689386"
 - [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: 準備您的 Microsoft 365 Defender 試用實驗室環境
 description: 在設定 Microsoft 365 Defender 試用實驗室或試驗環境時，準備利益相關者簽署、時程表、環境考慮和採用順序
-keywords: MTP 試用準備，MTP 試驗準備，準備執行 MTP 試驗專案、執行試驗 MTP 專案、部署、準備工作、專案關係人、時程表、環境、端點、伺服器、管理、採用
+keywords: Microsoft 365 Defender 試用版準備，Microsoft 365 Defender 試驗，準備執行 Microsoft 365 Defender 試驗專案，執行試驗 Microsoft 365 Defender 專案、部署、準備工作、利益相關者、時程表、環境、端點、伺服器、管理、採用
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dada110faca71c9e8fcf384eb5bb0a78faefaad9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d5e98cead84c0be76ca252b23f3c2d062b22dd73
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199134"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935614"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>準備您的 Microsoft 365 Defender 試用實驗室或試驗環境
 
@@ -36,7 +36,7 @@ ms.locfileid: "51199134"
 
 建立 Microsoft 365 Defender 試驗實驗室或試驗環境並加以部署時，會有三個階段的處理常式：
 
-|![階段1：準備](../../media/phase-diagrams/prepare.png)<br/>階段1：準備 |[![階段2：設定](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[階段2：設定](setup-m365deval.md) |[![階段3：板載](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[階段3：板載](config-m365d-eval.md) | [![回到試驗](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[回到試驗行動手冊](m365d-pilot.md) |
+|![階段 1：準備](../../media/phase-diagrams/prepare.png)<br/>階段 1：準備 |[![階段 2：設定](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[階段 2：設定](setup-m365deval.md) |[![第 3 階段：導入](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[第 3 階段：導入](config-m365d-eval.md) | [![回到試驗](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[回到試驗行動手冊](m365d-pilot.md) |
 |--|--|--|--|
 |*您在這裡！* | || |
 
@@ -62,7 +62,7 @@ ms.locfileid: "51199134"
 
 -   I = 此專案的通知
 
-| 名稱                 | 角色                                                                                                                                                                                                          | 動作 |
+| 姓名                 | 角色                                                                                                                                                                                                          | 動作 |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 輸入名稱和電子郵件 | **首席資訊安全性監察官 (CISO)** *成為新技術部署之組織內充當主管的執行代表。*                                                  | 所以     |
 | 輸入名稱和電子郵件 | **網路防護運作中心的 Head (CDOC)** *CDOC 小組的代表，以定義如何將此變更與客戶的安全性作業小組中的處理常式對齊。*       | 所以     |
@@ -106,10 +106,10 @@ ms.locfileid: "51199134"
 | 元件                               | 描述                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 設定順序排名 |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 |適用於 Office 365 的 Microsoft Defender|適用於 Office 365 的 Microsoft Defender 可保護組織防範由電子郵件訊息、連結 (URL) 及共同作業工具所造成的惡意威脅。 <br> [瞭解更多資訊。](/microsoft-365/security/office-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
-|適用於身分識別的 Microsoft Defender|Microsoft Defender for Identity 使用 Active Directory 信號來識別、偵測和調查您組織中的高級威脅、已遭破壞的身分識別，以及惡意的有問必答行為。 <br> [深入了解](/azure-advanced-threat-protection/)。| 2  |
-|Microsoft Cloud App Security| Microsoft Cloud App Security 是一種雲端存取安全性代理人 (CASB)，可在多個雲端上運作。 它提供對資料傳輸的可見性和控制力，以及完善的分析功能，以識別和應變您的所有雲端服務中的網路威脅。 <br> [深入了解](/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                    |
+|適用於身分識別的 Microsoft Defender|Microsoft Defender for Identity 使用 Active Directory 信號來識別、偵測和調查您組織中的高級威脅、已遭破壞的身分識別，以及惡意的有問必答行為。 <br> [深入了解](/azure-advanced-threat-protection/)。| 第 |
+|Microsoft Cloud App Security| Microsoft Cloud App Security 是一種雲端存取安全性代理人 (CASB)，可在多個雲端上運作。 它提供對資料傳輸的可見性和控制力，以及完善的分析功能，以識別和應變您的所有雲端服務中的網路威脅。 <br> [深入了解](/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |個                   |
 |適用於端點的 Microsoft Defender | 適用於端點的 Microsoft Defender 偵測和回應功能可提供近乎即時並可採取行動的進階攻擊偵測。 安全性分析人員可以有效地排定警示的優先順序、深入了解入侵的全貌，並採取回應動作來補救威脅。 <br> [瞭解更多資訊。](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>下一步
-|![階段2：設定](../../media/setup.png) <br>[階段2：設定](setup-m365deval.md) | 設定您的 Microsoft 365 Defender 試用實驗室或試驗環境
+|![階段 2：設定](../../media/setup.png) <br>[階段 2：設定](setup-m365deval.md) | 設定您的 Microsoft 365 Defender 試用實驗室或試驗環境
 |:-------|:-----|

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ad23e030048506784edd8f1988fa33263a085ae
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 25b70f91824db2a6d05db5d3981dd50f4f2b477a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861332"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934738"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>設定及管理 Microsoft Defender for Endpoint 功能
 
@@ -49,5 +49,5 @@ ms.locfileid: "51861332"
 [設定攻擊面降減功能](configure-attack-surface-reduction.md) | 設定攻擊面降減功能，以確保設定正確套用，並設定 exploit 緩解技術。
 [設定下一代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 設定下一代保護，以捕捉所有類型的威脅。
 [設定 Microsoft 威脅專家功能](configure-microsoft-threat-experts.md) | 從 Microsoft 威脅專家設定及管理 cybersecurity 威脅智慧。
-[設定 Microsoft 威脅防護整合](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | 設定其他與 Defender for Endpoint 整合的解決方案。
+[設定 Microsoft 365 Defender 整合](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | 設定其他與 Defender for Endpoint 整合的解決方案。
 [管理和 API 支援](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | 將警示放入您的安全性資訊和事件管理 (SIEM) 或使用 APIs 建立自訂警示。 建立並組建 Power BI 報告。

@@ -1,7 +1,7 @@
 ---
 title: 尋找含高級搜尋的勒索軟體
 description: 使用高級搜尋來尋找與勒索軟體可能影響的裝置。
-keywords: 高級搜尋、勒索軟體、威脅搜尋、網路威脅搜尋、搜尋、查詢、遙測、Microsoft 365、Microsoft 威脅防護、Microsoft 365 Defender
+keywords: 高級搜尋、勒索軟體、威脅搜尋、網路威脅搜尋、搜尋、查詢、遙測、Microsoft 365、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 97f2174f74e7866f75b901cd1609341548a1a7c5
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: b6d88f5383cef052ac1b0871b4f0556ba3ba160e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498221"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934810"
 ---
 # <a name="hunt-for-ransomware"></a>搜捕勒索軟體
 

@@ -1,10 +1,10 @@
 ---
 title: 整合 Microsoft Defender for Endpoint with 其他 Microsoft 解決方案
-description: 瞭解 Microsoft Defender for Endpoint 如何與其他 Microsoft 解決方案整合，包括 Microsoft Defender for Identity 和 Azure Security Center。
+description: 瞭解 Microsoft Defender for Endpoint 如何與其他 Microsoft 解決方案（包括 Microsoft Defender 身分識別和 Azure Defender）整合。
 author: mjcaparas
 ms.author: macapara
 ms.prod: m365-security
-keywords: microsoft 365 defender，條件式存取，office，高級威脅防護，microsoft defender 身分識別，microsoft defender for office，azure security center，microsoft cloud app security，azure sentinel
+keywords: microsoft 365 defender，條件式存取，office，Microsoft Defender for Endpoint，microsoft defender for identity，microsoft defender for office，Azure Defender，microsoft cloud app security，azure sentinel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d12afd27288655f4f5a82eeed24686f27171a7a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ce8dbef2f4fb7c3503f04f15148d2071b449b2dc
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765392"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935530"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解決方案
 
@@ -32,13 +32,13 @@ ms.locfileid: "51765392"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="integrate-with-other-microsoft-solutions"></a>與其他 Microsoft 解決方案整合
 
 Microsoft Defender for Endpoint 直接與各種 Microsoft 解決方案整合。
 
-### <a name="azure-security-center"></a>Azure 資訊安全中心
+### <a name="azure-defender"></a>Azure Defender
 Microsoft Defender for Endpoint 提供綜合的伺服器保護解決方案，包括 Windows Server 上的端點偵測和回應 (EDR) 功能。
 
 ### <a name="azure-sentinel"></a>Azure Sentinel
@@ -50,14 +50,14 @@ Microsoft Defender for Endpoint connector 可讓您將來自 Microsoft Defender 
 ### <a name="conditional-access"></a>條件式存取
 Microsoft Defender for Endpoint 的動態裝置風險分數已整合到條件式存取評估中，以確保只有安全裝置能夠存取資源。 
 
-### <a name="microsoft-cloud-app-security"></a>Microsoft 雲端 App 安全性
+### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 Microsoft Cloud App Security 利用 Microsoft Defender for Endpoint endpoint 信號來允許直接查看 cloud 應用程式使用情形，包括使用不受支援的雲端服務 (陰影它) 從所有 Microsoft Defender for Endpoint 受監視裝置。
 
 ### <a name="microsoft-defender-for-identity"></a>適用於身分識別的 Microsoft Defender
-可疑活動是指在使用者內容下執行的進程。 Microsoft Defender for Endpoint 和 Azure ATP 之間的整合，可讓您靈活地進行跨活動和身分識別的網路安全性調查。
+可疑活動是指在使用者內容下執行的進程。 Microsoft Defender for Endpoint 和 Microsoft Defender 身分識別之間的整合，可讓您靈活地進行跨活動和身分識別的網路安全性調查。
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender for Office
-[Office 365 的 Defender](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) 可協助您的組織避免電子郵件中的惡意程式碼或檔案中的 Atp 安全連結、Atp 安全附件、高級反網路釣魚和欺騙智慧功能。 Office 365 ATP 和 Microsoft Defender for Endpoint 之間的整合，可讓安全性分析師進行上游調查，以調查攻擊的進入點。 透過威脅智慧共用，攻擊可以包含並封鎖。 
+[適用于 365 Office 的 Defender](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) ，可透過安全連結、安全附件、高級反網路釣魚和欺騙智慧功能，協助您的組織抵禦電子郵件中的惡意程式碼或檔案。 Microsoft Defender for Office 365 和 Microsoft Defender for Endpoint 之間的整合，可讓安全性分析師進行上游，以調查攻擊的進入點。 透過威脅智慧共用，攻擊可以包含並封鎖。 
 
 >[!NOTE]
 > 在過去30天內，會顯示事件的 Defender for Office 365 資料。 針對警示，Office 365 資料的 Defender 會根據第一個啟用時間來顯示。 之後，Office 365 的資料就不再提供。
