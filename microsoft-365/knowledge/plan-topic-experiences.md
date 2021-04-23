@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何規劃 Microsoft Viva 主題的計畫
-ms.openlocfilehash: 19baf8bdcfdd1fe38d64e3c2f259ace1ceab5a4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925973"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957536"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Microsoft Viva 主題的計畫
 
@@ -70,6 +70,9 @@ Site name,URL
 ## <a name="user-permissions"></a>使用者權限
 
 您指定的使用者權限會決定您的組織中的哪些人員與主題及可執行檔動作進行互動。
+
+> [!Note] 
+> 在這個階段中，Viva 主題不支援提供來賓 (外部) 使用者的授權或使用者許可權。 
 
 *管理主題*
 

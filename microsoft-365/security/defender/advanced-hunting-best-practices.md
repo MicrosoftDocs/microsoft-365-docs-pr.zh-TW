@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7db7607d3ed9d6f1b215fb842d5b6dd2415a770a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: abc6b561c2fca8106397b1656432628c983e2ece
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934894"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952689"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>進階搜捕查詢最佳做法
 
@@ -263,6 +263,9 @@ SHA256,ThreatTypes,DetectionMethods
 | IPv6 位址 | [parse_ipv6 () ](/azure/data-explorer/kusto/query/parse-ipv6function)  | 將 IPv4 或 IPv6 位址轉換為正常化 IPv6 標記法。 若要比較 IPv6 位址，請使用 [ipv6_compare () ](/azure/data-explorer/kusto/query/ipv6-comparefunction)。 |
 
 若要瞭解所有支援的分析功能，請 [閱讀 Kusto 字串函數](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。 
+
+>[!NOTE]
+>本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相關主題
 - [Kusto 查詢語言檔](/azure/data-explorer/kusto/query/)

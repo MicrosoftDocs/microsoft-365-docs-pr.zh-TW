@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 17aca5fb388aef26504902ee63b22410420c8827
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932950"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952485"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint service 的板載 Windows 伺服器
 
@@ -73,7 +73,7 @@ ms.locfileid: "51932950"
 > [!TIP]
 > 在裝置上架後，您可以選擇執行偵測測試，以確認它已正確架至服務。 如需詳細資訊，請參閱 [在新的架 Defender For endpoint 端點上執行偵測測試](run-detection-test.md)。
 
-#### <a name="before-you-begin"></a>開始之前
+#### <a name="before-you-begin"></a>在您開始之前
 
 請執行下列步驟來滿足上架需求：
 
@@ -194,7 +194,7 @@ Endpoint for Endpoint 可以與 Azure Defender 整合，以提供全面的 Windo
 
 此整合中包含下列功能：
 
-- 自動上架-在架至 Azure Defender 的 Windows Server 上，會自動啟用端點感應器的 Defender。 如需 Azure Defender 上架的詳細資訊，請參閱 [板載 To Azure Defender Standard for security](https://docs.microsoft.com/azure/security-center/security-center-onboarding)。
+- 自動上架-在架至 Azure Defender 的 Windows Server 上，會自動啟用端點感應器的 Defender。 如需 Azure Defender 上架的詳細資訊，請參閱 [使用整合的 Microsoft Defender For Endpoint 授權](https://docs.microsoft.com/azure/security-center/security-center-wdatp)。
 
     > [!NOTE]
     > Azure Defender for Server 和 Microsoft Defender for 端點之間的整合已擴充，可支援 [Windows Server 2019 和 Windows Virtual Desktop (WVD) ](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)。
@@ -293,7 +293,7 @@ Defender for Endpoint 收集的資料會儲存在提供期間所識別的承租�
     > [!NOTE]
     > 本文假設您使用 x64 伺服器 (MMA x64 [新 SHA-2 相容版本](https://go.microsoft.com/fwlink/?LinkId=828603)) 
 
-**步驟-2：使用 [記事本] 建立檔案名 DeployMMA ()** 將下列行新增至 cmd 檔案。 請注意，您將需要您的工作區識別碼和金鑰。
+**步驟-2：使用 [記事本] 建立檔案名 DeployMMA ()** 將下列行新增至 cmd 檔案。 請注意，您需要您的工作區識別碼和金鑰。
 
 ```dos
 @echo off 
@@ -338,9 +338,10 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 
 :::image type="content" source="images/startupprops.png" alt-text="啟動屬性":::
 
-要在此執行的檔案名稱 c:\windows\MMA\DeployMMA.cmd 伺服器重新開機後，即會安裝用戶端經驗的更新和診斷遙測 KB，然後在設定工作區識別碼和機碼時安裝 MMAAgent，以及將會架伺服器。
+要在這裡執行的檔案名 c:\windows\MMA\DeployMMA.cmd。
+重新開機伺服器做為啟動程式的一部分之後，它會安裝更新以取得客戶體驗和診斷遙測 KB，然後在設定工作區識別碼和機碼時安裝 MMA 代理程式，而伺服器將會架。
 
-如果您不想要重新開機所有的伺服器，也可以使用 **立即** 工作來執行 deployMMA。
+您也可以使用 **立即** 工作來執行 deployMMA，如果您不想要重新開機所有伺服器。
 這可分兩個階段完成。 請先 **在 GPO 中建立檔案和資料夾** –請提供系統時間，以確保已套用 gpo，且所有伺服器都有安裝盤案。 然後，新增立即工作。 這樣就能在不需要重新開機的情況下達到相同的結果。
 
 當您已安裝 MMA 時，腳本具有 exit 方法，而且不會重新執行，您也可以使用每日排程的任務，以達到相同的結果。 與 Configuration Manager 符合性原則類似，它會每日檢查以確認 MMA 是否存在。

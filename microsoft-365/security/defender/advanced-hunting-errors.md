@@ -20,16 +20,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d8d165f39c45bd235800dc951d50934b47dd7ff5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935446"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952677"
 ---
 # <a name="handle-advanced-hunting-errors"></a>處理高級搜尋錯誤
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**適用於：**
+- Microsoft 365 Defender
+- 適用於端點的 Microsoft Defender
 
 
 「高級搜尋」顯示錯誤，以通知語法錯誤，以及每當查詢命中 [預先定義的配額和使用參數](advanced-hunting-limits.md)。 請參閱下表，以取得如何解決或避免錯誤的秘訣。
@@ -43,6 +48,8 @@ ms.locfileid: "51935446"
 | 超過結果大小限制  | 查詢結果集的匯總大小超過大小上限。 如果結果集是如此大的錯誤，且在10000記錄的限制下截斷，則可能會發生這個錯誤。 具有可調內容之多個欄的結果，可能會受到此錯誤影響。 | [優化查詢](advanced-hunting-best-practices.md) | `Result size limit exceeded. Use "summarize" to aggregate results, "project" to drop uninteresting columns, or "take" to truncate results.` |
 | 過度資源消耗 | 查詢已消耗過大量的資源，且已停止完成。 在某些情況下，高級搜尋會識別未優化的特定運算子。 | [優化查詢](advanced-hunting-best-practices.md) | -`Query stopped due to excessive resource consumption.`<br>-`Query stopped. Adjust use of the <operator name> operator to avoid excessive resource consumption.` |
 | 未知錯誤 | 因為未知原因，所以查詢失敗。 | 請嘗試再次執行查詢。 如果查詢繼續傳回未知錯誤，請透過入口網站與 Microsoft 聯繫。 | `An unexpected error occurred during query execution. Please try again in a few minutes.`
+
+
 
 ## <a name="related-topics"></a>相關主題
 - [高級搜尋最佳作法](advanced-hunting-best-practices.md)

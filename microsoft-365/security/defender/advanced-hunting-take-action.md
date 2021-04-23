@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0c088375cd784b411fdce417d77b1ea176bcee26
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15eebbba102640a92f9c7712194aaef685a96cfb
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932902"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952605"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>對高級搜尋查詢結果採取動作
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932902"
 
 **適用於：**
 - Microsoft 365 Defender
+- 適用於端點的 Microsoft Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -79,6 +80,9 @@ ms.locfileid: "51932902"
 ## <a name="review-actions-taken"></a>審閱採取的動作
 每個動作會個別記錄在「**動作中心**」的「動作中心」下的「動作 [中心](m365d-action-center.md)」  >   ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) 。 移至 [行動中心]，檢查每個動作的狀態。
  
+>[!NOTE]
+>本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
+
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)

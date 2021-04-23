@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40cec28bf88445df13f78e672c4289d440b2b848
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f4b1399b77583e95b109575a9577d8b1af89e6ad
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935854"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952665"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>以適當的設定擴充高級搜尋範圍
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935854"
 
 **適用於：**
 - Microsoft 365 Defender
+- 適用於端點的 Microsoft Defender
 
 [[高級搜尋](advanced-hunting-overview.md)] 取決於來自各種來源的資料，包括您的裝置、Office 365 工作區、Azure AD 及 Microsoft Defender 身分識別。 若要盡可能取得最完整的資料，請務必在對應的資料來源中具備正確的設定。
 
@@ -52,6 +53,9 @@ ms.locfileid: "51935854"
 | 資料 | 描述 | 架構表格 | 如何設定 |
 | --- | --- | --- | --- |
 | 網域控制站 | 從內部部署 Active Directory 傳送至 Microsoft Defender 以進行身分識別的資料，濃縮身分識別相關的資訊，例如帳戶詳細資料、登入活動和 Active Directory 查詢 | 多個資料表，包括 [IdentityInfo](advanced-hunting-identityinfo-table.md)、 [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)及 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [安裝 Microsoft Defender 的身分識別感應器](/azure-advanced-threat-protection/install-atp-step4)<br>- [開啟相關的 Windows 事件](/azure-advanced-threat-protection/configure-event-collection) |
+
+>[!NOTE]
+>本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

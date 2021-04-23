@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 7ade29259a5552bc9bbaac4b143842c69d05f917
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4b7315cbb8704b691ce4f3d6b96958f18248b478
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203498"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952629"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 
@@ -55,18 +55,18 @@ ms.locfileid: "51203498"
 
 為了讓您有時間完成這些工作，建議您依照此表中所列的順序實施基準原則。 不過，針對敏感和高管制保護層級的 MFA 原則，可在任何時候實施。
 
-|保護層級|原則|詳細資訊|
-|---|---|---|
-|**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](#require-mfa-based-on-sign-in-risk)||
-||[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-multi-factor)|未使用新式驗證的用戶端可以略過條件式存取原則，因此請務必封鎖這些設定。|
-||[高風險使用者必須變更密碼](#high-risk-users-must-change-password)|當偵測到其帳戶的高風險活動時，強制使用者在登入時變更其密碼。|
-||[套用應用程式資料保護原則](#apply-app-data-protection-policies)|每個平臺有一個 Intune App Protection 原則 (Windows、iOS/iPadOS、Android) 。|
-||[需要核准的應用程式和應用程式保護](#require-approved-apps-and-app-protection)|使用 iOS、iPadOS 或 Android 強制執行手機和平板電腦行動裝置應用程式的保護。|
-||[定義裝置合規性原則](#define-device-compliance-policies)|每個平臺一個原則。|
-||[需要相容的電腦](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|強制使用 Windows 或 MacOS 對電腦進行 Intune 管理。|
-|**敏感度**|[當登入風險為 *低*、*中* 或 *高* 時，需要 MFA](#require-mfa-based-on-sign-in-risk)||
-||[需要相容 *的電腦和* 行動裝置](#require-compliant-pcs-and-mobile-devices)|在 (Windows 或 MacOS) 和手機或平板電腦 (iOS、iPadOS 或 Android) 的電腦上，強制執行 Intune 管理。|
-|**高管制**|[*永遠* 需要 MFA](#require-mfa-based-on-sign-in-risk)|
+|保護層級|原則|其他相關資訊|授權|
+|---|---|---|---|
+|**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 或 Microsoft 365 E3 與 E5 安全性附加元件|
+||[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-multi-factor)|未使用新式驗證的用戶端可以略過條件式存取原則，因此請務必封鎖這些設定。|Microsoft 365 E3 或 E5|
+||[高風險使用者必須變更密碼](#high-risk-users-must-change-password)|當偵測到其帳戶的高風險活動時，強制使用者在登入時變更其密碼。|Microsoft 365 E5 或 Microsoft 365 E3 與 E5 安全性附加元件|
+||[套用應用程式保護原則 (APP) 資料保護](#apply-app-data-protection-policies)|每個平臺有一個 Intune App Protection 原則 (Windows、iOS/iPadOS、Android) 。|Microsoft 365 E3 或 E5|
+||[需要核准的應用程式和應用程式保護](#require-approved-apps-and-app-protection)|使用 iOS、iPadOS 或 Android 強制執行手機和平板電腦行動裝置應用程式的保護。|Microsoft 365 E3 或 E5|
+||[定義裝置合規性原則](#define-device-compliance-policies)|每個平臺一個原則。|Microsoft 365 E3 或 E5|
+||[需要相容的電腦](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|強制使用 Windows 或 MacOS 對電腦進行 Intune 管理。|Microsoft 365 E3 或 E5|
+|**敏感度**|[當登入風險為 *低*、*中* 或 *高* 時，需要 MFA](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 或 Microsoft 365 E3 與 E5 安全性附加元件|
+||[需要相容 *的電腦和* 行動裝置](#require-compliant-pcs-and-mobile-devices)|在 (Windows 或 MacOS) 和手機或平板電腦 (iOS、iPadOS 或 Android) 的電腦上，強制執行 Intune 管理。|Microsoft 365 E3 或 E5|
+|**高管制**|[*永遠* 需要 MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 或 E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>指派原則給群組和使用者
@@ -95,11 +95,11 @@ ms.locfileid: "51203498"
 
 在這些建議中建立的所有 Azure AD 群組都必須建立為 Microsoft 365 群組。 在保護 Microsoft 小組和 SharePoint 中的檔時，此功能對於部署敏感度標籤很重要。
 
-![用於建立 Microsoft 365 群組的螢幕截圖](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![建立 Microsoft 365 群組的範例](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>需要根據登入風險進行 MFA
 
-您應讓使用者在需要使用之前，註冊 MFA。 如果您有 Microsoft 365 E5、Microsoft 365 E3 和身分識別 & 威脅防護附加元件、Office 365 搭配 EMS E5 或個別 Azure AD Premium P2 授權，您可以使用具有 Azure AD 身分識別保護的 MFA 註冊原則，以要求使用者註冊 MFA。 必要條件 [工作](identity-access-prerequisites.md) 包含向 MFA 註冊所有使用者。
+您應讓使用者在需要使用之前，註冊 MFA。 如果您有 Microsoft 365 E5、Microsoft 365 E3 與 E5 安全性附加元件、Office 365 with EMS E5 或個別 Azure AD Premium P2 授權，您可以使用具有 Azure AD 身分識別保護的 MFA 註冊原則，以要求使用者註冊 MFA。 必要條件 [工作](identity-access-prerequisites.md) 包含向 MFA 註冊所有使用者。
 
 使用者註冊後，您可以要求使用新的條件式存取原則進行 MFA 登入。
 
@@ -211,7 +211,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 ## <a name="apply-app-data-protection-policies"></a>套用應用程式資料保護原則
 
-應用程式保護原則 (應用程式) 定義允許哪些應用程式，以及可以對組織的資料採取的動作。 應用程式中的可用選項可讓組織針對其特定需求量身定制防護。 在某些情況下，可能不會很顯然，執行完整案例需要哪些原則設定。 為了協助組織優先考慮行動用戶端端點強化，Microsoft 已引進其應用程式資料保護架構的分類，以供 iOS 和 Android 行動應用程式管理。
+應用程式會定義允許哪些應用程式，以及可對組織的資料採取的動作。 應用程式中的可用選項可讓組織針對其特定需求量身定制防護。 在某些情況下，可能不會很顯然，執行完整案例需要哪些原則設定。 為了協助組織優先考慮行動用戶端端點強化，Microsoft 已引進其應用程式資料保護架構的分類，以供 iOS 和 Android 行動應用程式管理。
 
 應用程式資料保護架構分為三個不同的設定層級，每個層級都是以舊版為基礎：
 
@@ -223,7 +223,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 使用身分 [識別與裝置存取](microsoft-365-policies-configurations.md)設定中所述的原則，比較基準和機密保護階層與第2級企業增強型資料保護設定緊密對應。 高度管制防護階層密切對應于第3級企業高資料保護設定。
 
-|保護層級|應用程式保護原則|詳細資訊|
+|保護層級|應用程式保護原則|其他相關資訊|
 |---|---|---|
 |基準|[第2級增強型資料保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
 |敏感性|[第2級增強型資料保護](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
@@ -331,7 +331,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 |類型|屬性|值|動作|
 |---|---|---|---|
-|Microsoft Defender for Endpoint rules|需要裝置位於或低於機器風險分數|中|Select|
+|Microsoft 端點管理員系統管理中心中的 microsoft Defender for Endpoint rules|[需要裝置位於或低於機器風險分數](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|中|Select|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>需要相容的 Pc (，但不符合相容的電話和平板) 

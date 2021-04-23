@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 2fd9b958cdbdaf22346f8171c789f2ca9a8336d1
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939727"
+ms.locfileid: "51957602"
 ---
 # <a name="analyze-users-in-microsoft-365-security-center"></a>在 Microsoft 365 的安全性中心分析使用者
 
@@ -41,6 +41,13 @@ ms.locfileid: "51939727"
 若要快速摘要瞭解事件的使用者帳戶，請選取使用者帳戶名稱旁邊的核取記號。 以下為範例。
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Microsoft 365 安全中心內事件之使用者帳戶摘要窗格的範例":::
+
+> [!NOTE]
+> [使用者] 頁面會顯示 Azure Active Directory (AD) 組織和群組，協助您瞭解與使用者相關聯的群組和許可權。
+
+在此 [飛出] 頁面中，您可以查看使用者威脅資訊，包括任何目前的事件、作用中的警示、風險層級，以及使用者曝光、帳戶、裝置等等。
+
+此外，您可以直接在 Microsoft 365 的安全性中心採取行動，以處理已遭破壞的使用者，確認使用者已遭到破壞或要求他們重新登入。
 
 您可以從這裡選取 [ **移至使用者] 頁面** ，以查看使用者帳戶的詳細資料。 以下為範例。
 

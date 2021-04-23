@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f37cc63c958331f7c03e09689de92c73fd06b4d4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935710"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952557"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935710"
 
 **適用於：**
 - Microsoft 365 Defender
+- 適用於端點的 Microsoft Defender
 
 自訂偵測規則是您可以使用 [高級搜尋](advanced-hunting-overview.md) 查詢進行設計和調整的規則。 這些規則可讓您主動監視各種事件和系統狀態，包括可疑的侵犯活動和設定不當的端點。 您可以將其設定為定期執行，並在每個專案相符時產生提醒並採取回應動作。
 
@@ -219,6 +220,9 @@ DeviceEvents
 
 >[!TIP]
 >若要快速查看資訊，並對表格中的專案採取動作，請使用表格左邊的選取範圍欄 [&#10003;]。
+
+>[!NOTE]
+>本文中的部分欄可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
 
 ## <a name="see-also"></a>另請參閱
 - [自訂偵測概觀](custom-detections-overview.md)

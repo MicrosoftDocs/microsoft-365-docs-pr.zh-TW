@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51d33ea9a372b5bfe017f4c3544e0d6413d53001
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a78f37d8c1fed1063095e25f19136f0362f17db7
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935830"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952653"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>使用 go 搜尋快速尋找實體或事件資訊
 
@@ -34,12 +34,13 @@ ms.locfileid: "51935830"
 
 **適用於：**
 - Microsoft 365 Defender
+- 適用於端點的 Microsoft Defender
 
 使用 [ *尋找* ] [搜尋] 動作，您可以使用強大查詢的 [高級搜尋](advanced-hunting-overview.md) 功能，快速調查事件及各種實體類型。 此巨集指令會自動執行高級搜尋查詢，以尋找所選取事件或實體的相關資訊。
 
 每當顯示事件或實體詳細資料時，就會在安全性中心的各個區段中使用「 *繼續搜尋* 」動作。 例如，您可以使用下列各節的「 *繼續搜尋* 」：
 
-- 在 [ [事件] 頁面](investigate-incidents.md#summary)中，您可以查看使用者、裝置及其他許多與事件相關聯之實體的詳細資料。 當您選取實體時，您會收到其他資訊，以及您在該 entitity 上可以採取的各種動作。 在下列範例中，會選取一個信箱，顯示信箱的詳細資料，也就是尋找該信箱的詳細資訊的選項。
+- 在 [ [事件] 頁面](investigate-incidents.md#summary)中，您可以查看使用者、裝置及其他許多與事件相關聯之實體的詳細資料。 當您選取實體時，您會收到額外的資訊，以及您在該實體上可以採取的各種動作。 在下列範例中，會選取一個信箱，顯示信箱的詳細資料，也就是尋找該信箱的詳細資訊的選項。
 
     ![使用 [搜尋] 選項顯示信箱詳細資料的影像](../../media/mtp-ah/go-hunt-email.png)
 
@@ -106,6 +107,9 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 除了修改查詢以取得更相關的結果之外，您還可以：
 - [以圖表形式查看結果](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
 - [建立自訂偵測規則](custom-detection-rules.md)
+
+>[!NOTE]
+>本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

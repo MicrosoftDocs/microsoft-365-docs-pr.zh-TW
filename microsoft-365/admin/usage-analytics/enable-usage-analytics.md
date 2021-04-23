@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 瞭解如何使用 Power BI 中的 Microsoft 365 流量分析範本應用程式，來開始收集租使用者的資料。
-ms.openlocfilehash: 7c92fb643f9be6b5f1474f08df659c4f488a9a41
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d9cadcc8258478fd1d5dbc0d9ae6bf4e814a8435
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579059"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957512"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 
@@ -53,11 +53,11 @@ Microsoft 365 美國政府社區尚無可用的 microsoft 365 使用方式分析
   
 如需詳細資訊，請參閱 [關於系統管理員角色](../add-users/about-admin-roles.md) 。 
   
-1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。 
+1. 在系統管理中心中，移至 [ **設定** \> **組織設定** \> **服務** ] 索引標籤。 
     
-2. 在 [ **使用狀況** ] 頁面上，找出 [ **Microsoft 365 流量分析** 卡]，然後選取 [ **開始**]。
+2. 在 [ **服務** ] 索引標籤上，選取 [  **報告**]。
     
-3. 在開啟的 [報告] 面板上，設定 [**讓 power BI 的 Microsoft 365 流量分析使用的資料可供**  \> **儲存**]。 
+3. 在開啟的 [報告] 面板上，設定將 **報告資料提供給 Microsoft 365 的流量分析**， 以供 \> **儲存** 時使用。 
   
 資料收集程式會在兩到48小時內完成，視租使用者的大小而定。 [ **移至 POWER BI** ] 按鈕將會啟用 () 資料收集完成時不再是灰色的。 
     

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a3885a462265368bc42c758ee5a8fd1c673ec08c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c8f25b924109823951c331fe744b548d372eaf11
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932796"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957614"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>設定裝置 proxy 和網際網路連線設定
 
@@ -60,6 +60,7 @@ WinHTTP 設定設定與 Windows Internet (WinINet) Internet 流覽 proxy 設定�
 
 > [!NOTE]
 > - 在 Windows 10 或 Windows Server 2019 上使用此選項時，建議您在下列 (或更新版本) 組建和累計更新彙總套件：</br>
+> Windows 10、版本1809或 Windows Server 2019- https://support.microsoft.com/kb/5001384 <br>
 > Windows 10，版本 1909- https://support.microsoft.com/kb/4601380</br>
 > Windows 10，版本 2004- https://support.microsoft.com/kb/4601382</br>
 > Windows 10，版本 20H2- https://support.microsoft.com/kb/4601382</br>
