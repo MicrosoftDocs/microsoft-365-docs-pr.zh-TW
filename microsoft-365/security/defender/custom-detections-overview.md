@@ -18,30 +18,31 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bf635ed03cb0d99d54fc94b622bf244447b32a80
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 748b3534ef1f6ca5736667fc3910bb9fa96d23ff
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935698"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952533"
 ---
-# <a name="custom-detections-overview"></a><span data-ttu-id="f83d5-104">自訂偵測概觀</span><span class="sxs-lookup"><span data-stu-id="f83d5-104">Custom detections overview</span></span>
+# <a name="custom-detections-overview"></a><span data-ttu-id="b3da6-104">自訂偵測概觀</span><span class="sxs-lookup"><span data-stu-id="b3da6-104">Custom detections overview</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="f83d5-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="f83d5-105">**Applies to:**</span></span>
-- <span data-ttu-id="f83d5-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f83d5-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="b3da6-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="b3da6-105">**Applies to:**</span></span>
+- <span data-ttu-id="b3da6-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="b3da6-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="b3da6-107">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="b3da6-107">Microsoft Defender for Endpoint</span></span>
 
-<span data-ttu-id="f83d5-107">透過自訂偵測，您可以主動監視和回應各種事件和系統狀態，包括可疑的破壞活動和設定不當的端點。</span><span class="sxs-lookup"><span data-stu-id="f83d5-107">With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured endpoints.</span></span> <span data-ttu-id="f83d5-108">這種方式是可自訂的偵測規則，自動觸發警示和回應動作。</span><span class="sxs-lookup"><span data-stu-id="f83d5-108">This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.</span></span>
+<span data-ttu-id="b3da6-108">透過自訂偵測，您可以主動監視和回應各種事件和系統狀態，包括可疑的破壞活動和設定不當的端點。</span><span class="sxs-lookup"><span data-stu-id="b3da6-108">With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured endpoints.</span></span> <span data-ttu-id="b3da6-109">這種方式是可自訂的偵測規則，自動觸發警示和回應動作。</span><span class="sxs-lookup"><span data-stu-id="b3da6-109">This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.</span></span>
 
-<span data-ttu-id="f83d5-109">自訂偵測可與 [高級搜尋](advanced-hunting-overview.md)搭配使用，其提供強大且靈活的查詢語言，涵蓋網路的大量事件和系統資訊。</span><span class="sxs-lookup"><span data-stu-id="f83d5-109">Custom detections work with [advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network.</span></span> <span data-ttu-id="f83d5-110">您可以將其設定為定期執行，並在每個專案相符時產生提醒並採取回應動作。</span><span class="sxs-lookup"><span data-stu-id="f83d5-110">You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.</span></span>
+<span data-ttu-id="b3da6-110">自訂偵測可與 [高級搜尋](advanced-hunting-overview.md)搭配使用，其提供強大且靈活的查詢語言，涵蓋網路的大量事件和系統資訊。</span><span class="sxs-lookup"><span data-stu-id="b3da6-110">Custom detections work with [advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network.</span></span> <span data-ttu-id="b3da6-111">您可以將其設定為定期執行，並在每個專案相符時產生提醒並採取回應動作。</span><span class="sxs-lookup"><span data-stu-id="b3da6-111">You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.</span></span>
 
-<span data-ttu-id="f83d5-111">自訂偵測提供：</span><span class="sxs-lookup"><span data-stu-id="f83d5-111">Custom detections provide:</span></span>
-- <span data-ttu-id="f83d5-112">從高級搜尋查詢所建立之規則的偵測警示</span><span class="sxs-lookup"><span data-stu-id="f83d5-112">Alerts for rule-based detections built from advanced hunting queries</span></span>
-- <span data-ttu-id="f83d5-113">自動回應動作</span><span class="sxs-lookup"><span data-stu-id="f83d5-113">Automatic response actions</span></span>
+<span data-ttu-id="b3da6-112">自訂偵測提供：</span><span class="sxs-lookup"><span data-stu-id="b3da6-112">Custom detections provide:</span></span>
+- <span data-ttu-id="b3da6-113">從高級搜尋查詢所建立之規則的偵測警示</span><span class="sxs-lookup"><span data-stu-id="b3da6-113">Alerts for rule-based detections built from advanced hunting queries</span></span>
+- <span data-ttu-id="b3da6-114">自動回應動作</span><span class="sxs-lookup"><span data-stu-id="b3da6-114">Automatic response actions</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f83d5-114">另請參閱</span><span class="sxs-lookup"><span data-stu-id="f83d5-114">See also</span></span>
-- [<span data-ttu-id="f83d5-115">建立及管理自訂偵測規則</span><span class="sxs-lookup"><span data-stu-id="f83d5-115">Create and manage custom detection rules</span></span>](custom-detection-rules.md)
-- [<span data-ttu-id="f83d5-116">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="f83d5-116">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="f83d5-117">從 Microsoft Defender for Endpoint 遷移高級搜尋查詢</span><span class="sxs-lookup"><span data-stu-id="f83d5-117">Migrate advanced hunting queries from Microsoft Defender for Endpoint</span></span>](advanced-hunting-migrate-from-mde.md)
+## <a name="see-also"></a><span data-ttu-id="b3da6-115">另請參閱</span><span class="sxs-lookup"><span data-stu-id="b3da6-115">See also</span></span>
+- [<span data-ttu-id="b3da6-116">建立及管理自訂偵測規則</span><span class="sxs-lookup"><span data-stu-id="b3da6-116">Create and manage custom detection rules</span></span>](custom-detection-rules.md)
+- [<span data-ttu-id="b3da6-117">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="b3da6-117">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="b3da6-118">從 Microsoft Defender for Endpoint 遷移高級搜尋查詢</span><span class="sxs-lookup"><span data-stu-id="b3da6-118">Migrate advanced hunting queries from Microsoft Defender for Endpoint</span></span>](advanced-hunting-migrate-from-mde.md)
