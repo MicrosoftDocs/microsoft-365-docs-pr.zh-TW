@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: 在 Microsoft 365 系統管理中心尋找您的發票或帳單。 您也可以儲存及列印帳單複本。
 ms.date: 07/31/2020
-ms.openlocfilehash: 395c9773d4bc67ed466d7b3f8d568cecedddfd36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911638"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939483"
 ---
 # <a name="view-your-bill-or-invoice"></a>檢視帳單或發票
 
@@ -55,6 +55,22 @@ ms.locfileid: "50911638"
 2. 在 **發票** 索引標籤上，從下拉式清單中選取日期範圍，然後選擇您想要檢視的順序。
 3. 您可以在摘要頁面上查看發票中所有項目的數量、價格、折扣和總計。
 4. 若要列印或儲存發票的 PDF 複本，請選取 **下載 PDF**。
+
+::: moniker region="o365-21vianet"
+
+## <a name="request-a-fapiao"></a>要求發票
+
+您可以在付款後三 (3) 天內將發票要求提交至[發票管理系統](https://go.microsoft.com/fwlink/p/?linkid=837465)。
+
+1. 在<a href=”https://go.microsoft.com/fwlink/p/?linkid=850627” target=”_blank”>系統管理中心</a>中，移至 **[帳單]** > **[帳單與付款]** 頁面。
+
+2. 找到所需的發票，然後選取 **[取得發票]**。
+
+> [!NOTE]
+
+> 您需要已註冊的帳戶才能存取[發票管理系統](https://go.microsoft.com/fwlink/p/?linkid=837465)。 如果您尚未設定帳戶，請參閱[為世紀互聯運營的 Office 365 申請發票](../../admin/services-in-china/apply-for-a-fapiao.md)。
+
+::: moniker-end
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>透過電子郵件接收對帳單的複本
 
