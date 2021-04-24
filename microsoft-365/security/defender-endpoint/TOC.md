@@ -457,6 +457,7 @@
 ####### [列出警示](get-alerts.md)
 ####### [建立警示](create-alert-by-reference.md)
 ####### [更新警示](update-alert.md)
+####### [批次更新警示](batch-update-alerts.md)
 ####### [根據識別碼取得警示資訊](get-alert-info-by-id.md)
 ####### [取得警示相關網域資訊](get-alert-related-domain-info.md)
 ####### [取得警示相關檔案資訊](get-alert-related-files-info.md)
@@ -501,6 +502,7 @@
 
 ###### [指標]()
 ####### [指示器方法和屬性](ti-indicator.md)
+####### [匯入指標](import-ti-indicators.md)
 ####### [提交指示器](post-ti-indicator.md)
 ####### [清單指示器](get-ti-indicators-collection.md)
 ####### [刪除指示器](delete-ti-indicator-by-id.md)
