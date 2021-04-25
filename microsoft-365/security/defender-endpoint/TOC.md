@@ -243,6 +243,8 @@
 ##### [手動部署](linux-install-manually.md)
 ##### [Puppet 式部署](linux-install-with-puppet.md)
 ##### [Ansible 式部署](linux-install-with-ansible.md)
+##### [使用 Chef 在 Linux 上部署適用於端點的 Microsoft Defender](linux-deploy-defender-for-endpoint-with-chef.md)
+
 
 #### [更新](linux-updates.md)
 
@@ -253,7 +255,6 @@
 ##### [偵測並封鎖潛在的垃圾應用程式](linux-pua.md)
 ##### [在 Linux 上使用適用於端點的 Microsoft Defender 排程掃描](linux-schedule-scan-atp.md)
 ##### [為於端點的 Microsoft Defender 排程更新 (Linux)](linux-update-MDE-Linux.md)
-##### [使用 Chef 在 Linux 上部署適用於端點的 Defender](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [疑難排解]()
 ##### [安裝問題的疑難排解](linux-support-install.md)
