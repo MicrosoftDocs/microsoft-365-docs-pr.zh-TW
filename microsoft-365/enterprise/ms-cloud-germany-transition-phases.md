@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 121f2059e4a13684169ab40b7bfdaae13ef6045e
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899245"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995018"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
@@ -195,7 +195,7 @@ New-PSSession
 
 **適用于：** 所有使用 Exchange Online 的客戶<br>
 
-後端 Exchange Online Protection (EOP) 功能會複製到新的地區 "德國"。 Exchange Online 可從外部主機路由傳送至 Office 365，而 historial 租使用者的詳細資料也會遷移，也就是針對安全性和合規性功能的後端服務。
+後端 Exchange Online Protection (EOP) 功能會複製到新的地區 "德國"。 Exchange Online 可從外部主機路由傳送至 Office 365，並會遷移歷史租使用者詳細資料，也包括後端服務的安全性和合規性功能。
 
 僅使用 Exchange Online 功能的客戶 (非混合) 不需要在此階段中注意。
 
@@ -226,6 +226,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 - 連絡人和會議會遷移至 Microsoft 團隊。
 - 使用者將無法在時間服務轉換為 Office 365 服務時登入商務用 Skype，而不會在客戶 DNS 專案完成之前登入。
 - 連絡人和現有的會議將繼續充當商務用 Skype 會議。
+- 在完成階段9後，Microsoft 小組的 web 瀏覽器版本將無法運作。
 
 如果您必須在遷移階段9完成之後，使用 PowerShell 連線到商務用 Skype Online，請使用下列 PowerShell 程式碼來連接：
 

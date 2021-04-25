@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7aeda679d5ce350ef64a2758359390adc4a280f0
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: df77a3d6c1f66882600a200b83b3b2585473f42b
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939239"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995066"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>啟用受攻擊面縮小規則
 
@@ -33,27 +33,23 @@ ms.locfileid: "51939239"
 > [!TIP]
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[攻擊面減少規則](attack-surface-reduction.md) (ASR 規則) 協助防止惡意程式碼經常濫用裝置和網路遭到侵入的動作。 您可以為執行下列任何版本的 Windows 裝置設定 ASR 規則：
-- Windows 10 專業 [版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
-- Windows 10 企業 [版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
-- Windows Server， [版本 1803 (半年通道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 或更新版本
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+[攻擊面減少規則](attack-surface-reduction.md) (ASR 規則) 協助防止惡意程式碼經常濫用裝置和網路遭到侵入的動作。
 
 **需求** 您可以針對執行下列任何版本的 Windows 裝置，設定攻擊面減少規則：
 
-- Windows 10 專業版，版本1709或更新版本
-- Windows 10 企業版，版本1709或更新版本
-- Windows Server，版本 1803 (半年通道) 或更新版本
-- Windows Server 2019
+- Windows 10 專業 [版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
+- Windows 10 企業 [版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
+- Windows Server， [版本 1803 (半年通道) ](/windows-server/get-started/whats-new-in-windows-server-1803) 或更新版本
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-雖然攻擊面降減規則不需要 Windows E5 授權，但如果您有 Windows E5，您就會取得高級管理功能。 這些功能僅適用于 Windows E5，包含可用於端點的監控、分析和工作流程，以及 Microsoft 365 security center 中的報告和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用 [事件檢視器] 和 [Microsoft Defender 防病毒記錄] 來查看攻擊面減少規則事件。
+雖然攻擊面降減規則不需要 [Windows e5 授權](/windows/deployment/deploy-enterprise-licenses)，但如果您有 windows e5，您就會取得高級管理功能。 這些功能僅適用于 Windows E5，包含可用於 [端點的](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)監控、分析和工作流程，以及 [Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true)中的報告和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用 [事件檢視器] 和 [Microsoft Defender 防病毒記錄] 來查看攻擊面減少規則事件。
 
 每個 ASR 規則都包含四個設定的其中一項：
 
 - **未設定**：停用 ASR 規則
 - **封鎖**：啟用 ASR 規則
 - **Audit**：評估 ASR 規則在啟用時會如何影響您的組織
-- **警告**：啟用 ASR 規則，但 alow 最終使用者以略過封鎖
+- **警告**：啟用 ASR 規則，但是允許使用者略過封鎖
 
 > [!IMPORTANT]
 > 目前，當您在 Microsoft 端點管理員 (MEM) 中設定 ASR 規則時，三種 ASR 規則不支援警告模式。 若要深入瞭解，請參閱 [不支援警告模式的案例](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。

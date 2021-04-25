@@ -19,12 +19,12 @@ description: 深入瞭解如何將安全性秘訣加入電子郵件，以瞭解 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1820cab63abbbac09aa60a9c1684f3672882451
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 659a83c73b4fef9097aa317332c9951d53b09a33
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203568"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994982"
 ---
 # <a name="safety-tips-in-email-messages"></a>電子郵件訊息的安全提示
 
@@ -55,6 +55,6 @@ Outlook 中的安全性秘訣不一定取決於您所使用的 Outlook 版本，
 
 ## <a name="working-with-safety-tips"></a>使用安全提示
 
-即使並非每封郵件都會收到，安全性秘訣還是會針對網頁上的 Outlook 一直啟用。 系統管理員可以關閉其他電子郵件客戶程式（例如 Outlook）的安全性秘訣。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+系統管理員可以在反垃圾郵件原則中開啟或關閉安全性秘訣。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 如果您不同意 EOP 對郵件進行分類的方式 (也就是說，郵件不是垃圾郵件，或是已標示為垃圾郵件) ，您可以將郵件提交給 Microsoft 進行分析，以協助改善您的體驗。 如需相關指示，請參閱 [將訊息和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。 您也可以按一下安全提示中的 [意見反應] 連結，直接向 Microsoft 提交批註，以協助我們進行改進。

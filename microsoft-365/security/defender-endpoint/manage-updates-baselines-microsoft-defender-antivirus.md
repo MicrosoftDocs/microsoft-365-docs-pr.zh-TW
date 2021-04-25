@@ -8,25 +8,27 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b70cf96cde7d4dff8e2a4db6ce2469090dba7eb1
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ae17aa6e2cb0cefd460ef0db0730570af8c84bb8
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765608"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995030"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防病毒更新並套用基準
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
-- Microsoft Defender 防病毒
+- Microsoft Defender 防毒軟體
 
 有兩種與保持 Microsoft Defender 防病毒的更新相關的更新類型：
 
@@ -34,7 +36,8 @@ ms.locfileid: "51765608"
 - 產品更新
 
 > [!IMPORTANT]
-> 將 Microsoft Defender 防病毒保持在最新狀態，可確保您的裝置具有最新的技術和功能，以防範新的惡意程式碼和攻擊技術。  
+> 將 Microsoft Defender 防病毒保持在最新狀態，可確保您的裝置具有最新的技術和功能，以防範新的惡意程式碼和攻擊技術。
+> 
 > 即使 Microsoft Defender 防病毒是以 [被動模式](./microsoft-defender-antivirus-compatibility.md)執行，也請務必更新防防毒保護。
 > 
 > 若要查看最新的引擎、平臺及簽章日期，請造訪 [Microsoft Defender 防病毒和其他 microsoft 反惡意軟體的安全性智慧更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
@@ -147,7 +150,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;發行日期： **2020 年12月**  
 &ensp;Platform： **4.18.2011.6**  
 &ensp;Engine： **1.1.17700.4**  
-&ensp;支援階段： **安全性和重要更新**
+&ensp;支援階段： **僅限技術升級支援 ()**
     
 ### <a name="whats-new"></a>新增功能
 
@@ -163,7 +166,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;發行日期： **2020 年10月29日**  
 &ensp;Platform： **4.18.2010.7**  
 &ensp;Engine： **1.1.17600.5**  
-&ensp;支援階段： **安全性和重要更新**
+&ensp;支援階段： **僅限技術升級支援 ()**
     
 ### <a name="whats-new"></a>新增功能
 
@@ -565,5 +568,5 @@ Engine： **1.1.17000.7**
 |[管理如何下載及套用保護更新](manage-protection-updates-microsoft-defender-antivirus.md) | 保護更新可透過許多來源傳遞。 |
 |[管理應下載及套用防護更新的時間](manage-protection-update-schedule-microsoft-defender-antivirus.md) | 您可以排程應下載保護更新的時間。 |
 |[管理已過期端點的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md) | 如果端點未接更新或排程的掃描，您可以在下次使用者登入時強制更新或掃描。 |
-|[管理以事件為基礎的強制更新](manage-event-based-updates-microsoft-defender-antivirus.md) | 您可以設定保護更新，以在啟動時或在某些雲端提供的保護事件之後下載。 |
-|[管理移動裝置和虛擬機器 (Vm 的更新) ](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| 您可以指定設定，例如是否應該在電池電源上進行更新，對行動裝置和虛擬機器尤其有用。 |
+|[管理事件型強制更新](manage-event-based-updates-microsoft-defender-antivirus.md) | 您可以設定保護更新，以在啟動時或在某些雲端提供的保護事件之後下載。 |
+|[管理行動裝置和虛擬機器 (VM) 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| 您可以指定設定，例如是否應該在電池電源上進行更新，對行動裝置和虛擬機器尤其有用。 |

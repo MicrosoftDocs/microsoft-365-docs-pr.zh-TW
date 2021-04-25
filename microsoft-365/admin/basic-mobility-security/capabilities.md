@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性可協助您保護和管理行動裝置。
-ms.openlocfilehash: 468f06edf16eb6ea00fd4d26c716bc145474dd25
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 60de4e3f36427a69ecf0bf52e5dfd34f089991f3
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904273"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994970"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本行動與安全性的功能
 
@@ -47,11 +47,9 @@ ms.locfileid: "50904273"
 
 <sup>1</sup>Windows 8.1 RT 裝置的存取控制限制為 Exchange ActiveSync。
 
-<sup>2</sup>Windows 8.1 RT 裝置的存取控制限制為 Exchange ActiveSync。
-Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置必須加入 Azure Active Directory。
+<sup>2</sup>Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置必須加入 Azure Active Directory。
 
-<sup>3</sup>Windows 8.1 RT 裝置的存取控制限制為 Exchange ActiveSync。
-2020年6月之後，低於9的 Android 版本無法管理密碼設定，但在 Samsung Knox 裝置上除外。
+<sup>3</sup>2020年6月之後，低於9的 Android 版本無法管理密碼設定，但在 Samsung Knox 裝置上除外。
 
 >[!NOTE]
 >已註冊舊版作業系統的裝置仍可運作，但功能可能會變更，恕不另行通知。
@@ -142,8 +140,8 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 |封鎖雲端備份 |是|否|否|
 |封鎖檔同步處理 |是|否|否|
 |封鎖照片同步處理  |是|否|否|
-|允許 Google 備份  |N/A|否|是|
-|允許 Google 帳戶自動同步處理  |N/A|否|是|
+|允許 Google 備份  |不適用|否|是|
+|允許 Google 帳戶自動同步處理  |不適用|否|是|
 
 ## <a name="system-settings"></a>系統設定
 

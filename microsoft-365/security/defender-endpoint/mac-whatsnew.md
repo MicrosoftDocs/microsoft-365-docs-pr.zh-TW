@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: edbabf83c7bf1ac8dbe1ca9451ad191b45a862ac
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932724"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994994"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 版端點的 Microsoft Defender 新增功能
 
@@ -38,10 +38,14 @@ ms.locfileid: "51932724"
 > [!IMPORTANT]
 > 在 macOS 11 (Big Sur) 上，Microsoft Defender for Endpoint 需要其他設定設定檔。 如果您是現有的客戶從舊版的 macOS 升級，請務必部署 [此頁面](mac-sysext-policies.md)所列的其他設定檔。
 
+## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
+
+- 修正以容納 macOS Catalina 和更早版本的 Apple 憑證到期。 此修正功能會在 TVM) 功能 (還原威脅 & 漏洞管理。
+
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
 - 在 macOS 上的 Microsoft Defender for Endpoint 現在可供美國政府客戶預覽。 如需詳細資訊，請參閱 [適用于美國政府客戶的 Microsoft Defender For Endpoint](gov.md)。
-- 在使用 XCode 模擬器應用程式) & bug 修正時，特別針對狀況的效能增強 (
+- 當使用 XCode 模擬器應用程式) & bug 修正時，其效能改進 (特別適用于情況。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
 

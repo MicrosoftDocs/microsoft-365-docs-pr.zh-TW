@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15909684d07bac46fd42163cee545bc4752b61d4
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934366"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995006"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -127,6 +127,8 @@ ms.locfileid: "51934366"
 在某些網路攻擊中，不良的演員會嘗試停用電腦上的安全性功能，例如防防毒保護。 不良的演員，例如停用您的安全性功能，以更輕鬆地存取資料、安裝惡意程式碼，或利用您的資料、身分識別及裝置。
 
 防篡改保護基本上會鎖定 Microsoft Defender 防病毒，並防止您的安全性設定透過應用程式和方法進行變更。
+
+如果您的組織使用 Microsoft Defender 防病毒和雲端式保護，可使用此功能。 如需詳細資訊，請參閱 [在 Microsoft Defender 防毒軟體中使用下一代技術（透過雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)）。
 
 使防篡改保護保持開啟，以避免安全性解決方案及其基本功能的不想要的變更。
 

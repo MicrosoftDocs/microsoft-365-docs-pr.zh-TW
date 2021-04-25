@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c3ce053ecc859d3ac0cf53b0a132a7032ce6a87a
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860860"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994674"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
@@ -152,7 +152,9 @@ Microsoft 已從數個 Office 桌面和網頁用戶端，提供支援 Microsoft 
 
 在相同城市中的客戶之間的比較，取決於所有客戶都對網路服務提供者、電信基礎結構和目前的 Microsoft 網路點狀態具有相同存取權的預期。
 
-[Office 位置] 頁面上的 [詳細資料] 索引標籤會顯示用來提出任何真知灼見、建議及網路評估的特定測量結果。 這樣做是為了讓網路工程師能夠驗證其環境中任何限制或細節的建議和因素。
+位置名稱可以自訂時加入新位置或編輯位置快顯視窗中的現有位置。 這為您提供了隨時自訂您的位置名稱的彈性。 此外，當您直接在位置快顯視窗中新增 LAN 子網時，會顯示可供您選取之軟匹配 LAN 子網的下拉式清單。 您也可以新增及編輯特定 office 出局 IP 位址的電路名稱。
+
+[Office 位置] 頁面上的 [詳細資料] 索引標籤會顯示用來提出任何真知灼見、建議及網路評估的特定測量結果。 這樣做是為了讓網路工程師能夠驗證其環境中任何限制或細節的建議和因素。 您也會發現在該辦公室位置上收集的範例以及該城市中的遠端工作人員預估的使用者人數。
 
 > [!div class="mx-imgBorder"]
 > ![位置特定詳細資料](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
