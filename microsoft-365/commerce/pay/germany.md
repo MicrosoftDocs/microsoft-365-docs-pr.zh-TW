@@ -12,34 +12,36 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c051eabf1f66f83bcacc83f34f0116a6427f4747
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 3b32a55816f96e88b5a8c4ab1a03de0b5993951d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551221"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024058"
 ---
-# <a name="payment-information-for-germany"></a><span data-ttu-id="26f26-103">德國的付款資訊</span><span class="sxs-lookup"><span data-stu-id="26f26-103">Payment information for Germany</span></span>
+# <a name="payment-information-for-germany"></a><span data-ttu-id="7a447-103">德國的付款資訊</span><span class="sxs-lookup"><span data-stu-id="7a447-103">Payment information for Germany</span></span>
 
-<span data-ttu-id="26f26-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="26f26-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="7a447-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="7a447-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="26f26-105">電匯</span><span class="sxs-lookup"><span data-stu-id="26f26-105">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="7a447-105">電匯</span><span class="sxs-lookup"><span data-stu-id="7a447-105">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="26f26-106">**請在您的付款匯款中，以 EUR 及參考發票編號 (s) 支付。**</span><span class="sxs-lookup"><span data-stu-id="26f26-106">**Please pay in EUR and reference invoice number(s) on your payment remittance.**</span></span>
+<span data-ttu-id="7a447-106">**請在您的付款匯款中，以 EUR 及參考發票編號 (s) 支付。**</span><span class="sxs-lookup"><span data-stu-id="7a447-106">**Please pay in EUR and reference invoice number(s) on your payment remittance.**</span></span>
 
-<span data-ttu-id="26f26-107">如果您擁有由 **Microsoft 愛爾蘭 Operations** 計費的發票，請使用此銀行資訊：</span><span class="sxs-lookup"><span data-stu-id="26f26-107">If you have an invoice billed by **Microsoft Ireland Operations Limited**, use this bank information:</span></span>
+<span data-ttu-id="7a447-107">如果您擁有由 **Microsoft 愛爾蘭 Operations** 計費的發票，請使用此銀行資訊：</span><span class="sxs-lookup"><span data-stu-id="7a447-107">If you have an invoice billed by **Microsoft Ireland Operations Limited**, use this bank information:</span></span>
 
-<span data-ttu-id="26f26-108">銀行： Citibank，倫敦 </span><span class="sxs-lookup"><span data-stu-id="26f26-108">Bank: Citibank, London</span></span>\
-<span data-ttu-id="26f26-109">SWIFT 程式碼： CITIGB2L </span><span class="sxs-lookup"><span data-stu-id="26f26-109">SWIFT Code: CITIGB2L</span></span>\
-<span data-ttu-id="26f26-110">IBAN 程式碼： GB31CITI18500812207591 </span><span class="sxs-lookup"><span data-stu-id="26f26-110">IBAN Code: GB31CITI18500812207591</span></span>\
-<span data-ttu-id="26f26-111">分類程式代碼： 185008 </span><span class="sxs-lookup"><span data-stu-id="26f26-111">SORT Code: 185008</span></span>\
-<span data-ttu-id="26f26-112">帳戶號碼： 12207591 </span><span class="sxs-lookup"><span data-stu-id="26f26-112">Account Number: 12207591</span></span>\
-<span data-ttu-id="26f26-113">帳戶名稱： MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="26f26-113">Account Name: MICROSOFT</span></span>
+<span data-ttu-id="7a447-108">銀行： Citibank，倫敦 </span><span class="sxs-lookup"><span data-stu-id="7a447-108">Bank: Citibank, London</span></span>\
+<span data-ttu-id="7a447-109">SWIFT 程式碼： CITIGB2L </span><span class="sxs-lookup"><span data-stu-id="7a447-109">SWIFT Code: CITIGB2L</span></span>\
+<span data-ttu-id="7a447-110">IBAN 程式碼： GB31CITI18500812207591 </span><span class="sxs-lookup"><span data-stu-id="7a447-110">IBAN Code: GB31CITI18500812207591</span></span>\
+<span data-ttu-id="7a447-111">分類程式代碼： 185008 </span><span class="sxs-lookup"><span data-stu-id="7a447-111">SORT Code: 185008</span></span>\
+<span data-ttu-id="7a447-112">帳戶號碼： 12207591 </span><span class="sxs-lookup"><span data-stu-id="7a447-112">Account Number: 12207591</span></span>\
+<span data-ttu-id="7a447-113">帳戶名稱： MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="7a447-113">Account Name: MICROSOFT</span></span>
 
-<span data-ttu-id="26f26-114">如果您有從 **Microsoft Deutschland GmbH** 收取的發票，以供2021年3月1日開始的訂單和消耗量使用，請使用此銀行資訊：</span><span class="sxs-lookup"><span data-stu-id="26f26-114">If you have an invoice billed by **Microsoft Deutschland GmbH** for orders and consumption starting March 1, 2021, use this bank information:</span></span>
+<span data-ttu-id="7a447-114">如果您有從 **Microsoft Deutschland GmbH** 收取的發票，以供2021年3月1日開始的訂單和消耗量使用，請使用此銀行資訊：</span><span class="sxs-lookup"><span data-stu-id="7a447-114">If you have an invoice billed by **Microsoft Deutschland GmbH** for orders and consumption starting March 1, 2021, use this bank information:</span></span>
 
-<span data-ttu-id="26f26-115">銀行： Citibank 歐洲 plc </span><span class="sxs-lookup"><span data-stu-id="26f26-115">Bank: Citibank Europe plc</span></span>\
-<span data-ttu-id="26f26-116">SWIFT 程式碼： CITIIE2X </span><span class="sxs-lookup"><span data-stu-id="26f26-116">SWIFT Code: CITIIE2X</span></span>\
-<span data-ttu-id="26f26-117">IBAN 程式碼： IE38CITI99005170000122 </span><span class="sxs-lookup"><span data-stu-id="26f26-117">IBAN Code: IE38CITI99005170000122</span></span>\
-<span data-ttu-id="26f26-118">帳戶號碼： 70000122 </span><span class="sxs-lookup"><span data-stu-id="26f26-118">Account Number: 70000122</span></span>\
-<span data-ttu-id="26f26-119">帳戶名稱： MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="26f26-119">Account Name: MICROSOFT</span></span>
+<span data-ttu-id="7a447-115">銀行： Citibank 歐洲 plc </span><span class="sxs-lookup"><span data-stu-id="7a447-115">Bank: Citibank Europe plc</span></span>\
+<span data-ttu-id="7a447-116">SWIFT 程式碼： CITIIE2X </span><span class="sxs-lookup"><span data-stu-id="7a447-116">SWIFT Code: CITIIE2X</span></span>\
+<span data-ttu-id="7a447-117">IBAN 程式碼： IE38CITI99005170000122 </span><span class="sxs-lookup"><span data-stu-id="7a447-117">IBAN Code: IE38CITI99005170000122</span></span>\
+<span data-ttu-id="7a447-118">帳戶號碼： 70000122 </span><span class="sxs-lookup"><span data-stu-id="7a447-118">Account Number: 70000122</span></span>\
+<span data-ttu-id="7a447-119">帳戶名稱： MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="7a447-119">Account Name: MICROSOFT</span></span>
+
+<span data-ttu-id="7a447-120">從當地的 Microsoft 子公司簽發的發票會以 加值稅/銷售稅/GST 的標準費率發行，並視為國內/加值稅/GST 用途的服務。</span><span class="sxs-lookup"><span data-stu-id="7a447-120">Invoices issued from a local Microsoft Subsidiary are issued with the standard rate of VAT/Sales Tax/GST and deemed a domestic supply of services for VAT/Sales Tax/GST purposes.</span></span>

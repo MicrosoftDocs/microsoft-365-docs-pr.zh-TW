@@ -20,44 +20,45 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0c9a29a75b2dc6ea2ae88f84e21ee2ab6455b2b0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: afcd6bcd81e1a8635be9ced766c533ea4195334f
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933010"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023794"
 ---
-# <a name="devicetvmsoftwarevulnerabilitieskb"></a><span data-ttu-id="70446-104">DeviceTvmSoftwareVulnerabilitiesKB</span><span class="sxs-lookup"><span data-stu-id="70446-104">DeviceTvmSoftwareVulnerabilitiesKB</span></span>
+# <a name="devicetvmsoftwarevulnerabilitieskb"></a><span data-ttu-id="55c05-104">DeviceTvmSoftwareVulnerabilitiesKB</span><span class="sxs-lookup"><span data-stu-id="55c05-104">DeviceTvmSoftwareVulnerabilitiesKB</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="70446-105">**適用於**：</span><span class="sxs-lookup"><span data-stu-id="70446-105">**Applies to:**</span></span>
-- <span data-ttu-id="70446-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="70446-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="55c05-105">**適用於**：</span><span class="sxs-lookup"><span data-stu-id="55c05-105">**Applies to:**</span></span>
+- <span data-ttu-id="55c05-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="55c05-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="55c05-107">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="55c05-107">Microsoft Defender for Endpoint</span></span>
 
 
 
-<span data-ttu-id="70446-107">進階搜捕結構描述中的 `DeviceTvmSoftwareVulnerabilitiesKB` 表格包含 [威脅與弱點管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)為裝置進行評估的弱點清單。</span><span class="sxs-lookup"><span data-stu-id="70446-107">The `DeviceTvmSoftwareVulnerabilitiesKB` table in the advanced hunting schema contains the list of vulnerabilities [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) assesses devices for.</span></span> <span data-ttu-id="70446-108">使用這個參考來建立從表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="70446-108">Use this reference to construct queries that return information from the table.</span></span>
+<span data-ttu-id="55c05-108">進階搜捕結構描述中的 `DeviceTvmSoftwareVulnerabilitiesKB` 表格包含 [威脅與弱點管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)為裝置進行評估的弱點清單。</span><span class="sxs-lookup"><span data-stu-id="55c05-108">The `DeviceTvmSoftwareVulnerabilitiesKB` table in the advanced hunting schema contains the list of vulnerabilities [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) assesses devices for.</span></span> <span data-ttu-id="55c05-109">使用這個參考來建立從表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="55c05-109">Use this reference to construct queries that return information from the table.</span></span>
 
-<span data-ttu-id="70446-109">如需進階搜捕結構描述中其他表格的資訊，請參閱 [進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="70446-109">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="55c05-110">如需進階搜捕結構描述中其他表格的資訊，請參閱 [進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="55c05-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="70446-110">資料行名稱</span><span class="sxs-lookup"><span data-stu-id="70446-110">Column name</span></span> | <span data-ttu-id="70446-111">資料類型</span><span class="sxs-lookup"><span data-stu-id="70446-111">Data type</span></span> | <span data-ttu-id="70446-112">描述</span><span class="sxs-lookup"><span data-stu-id="70446-112">Description</span></span> |
+| <span data-ttu-id="55c05-111">資料行名稱</span><span class="sxs-lookup"><span data-stu-id="55c05-111">Column name</span></span> | <span data-ttu-id="55c05-112">資料類型</span><span class="sxs-lookup"><span data-stu-id="55c05-112">Data type</span></span> | <span data-ttu-id="55c05-113">描述</span><span class="sxs-lookup"><span data-stu-id="55c05-113">Description</span></span> |
 |-------------|-----------|-------------|
-| `CveId` | <span data-ttu-id="70446-113">字串</span><span class="sxs-lookup"><span data-stu-id="70446-113">string</span></span> | <span data-ttu-id="70446-114">在常見弱點與漏洞 (CVE) 系統下指派給安全性弱點的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="70446-114">Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system</span></span> |
-| `CvssScore` | <span data-ttu-id="70446-115">字串</span><span class="sxs-lookup"><span data-stu-id="70446-115">string</span></span> | <span data-ttu-id="70446-116">在常見弱點計分系統 (CVSS) 下指派給安全性弱點的嚴重性分數</span><span class="sxs-lookup"><span data-stu-id="70446-116">Severity score assigned to the security vulnerability under th Common Vulnerability Scoring System (CVSS)</span></span> |
-| `IsExploitAvailable` | <span data-ttu-id="70446-117">布林值</span><span class="sxs-lookup"><span data-stu-id="70446-117">boolean</span></span> | <span data-ttu-id="70446-118">表示該弱點的惡意探索代碼是否可供公開使用</span><span class="sxs-lookup"><span data-stu-id="70446-118">Indicates whether exploit code for the vulnerability is publicly available</span></span> |
-| `VulnerabilitySeverityLevel` | <span data-ttu-id="70446-119">字串</span><span class="sxs-lookup"><span data-stu-id="70446-119">string</span></span> | <span data-ttu-id="70446-120">安全性弱點之嚴重性層級的指派是根據 CVSS 分數，以及受威脅環境影響的動態因素</span><span class="sxs-lookup"><span data-stu-id="70446-120">Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape</span></span> |
-| `LastModifiedTime` | <span data-ttu-id="70446-121">datetime</span><span class="sxs-lookup"><span data-stu-id="70446-121">datetime</span></span> | <span data-ttu-id="70446-122">上次修改之項目及相關中繼資料的日期和時間</span><span class="sxs-lookup"><span data-stu-id="70446-122">Date and time the item or related metadata was last modified</span></span> |
-| `PublishedDate` | <span data-ttu-id="70446-123">datetime</span><span class="sxs-lookup"><span data-stu-id="70446-123">datetime</span></span> | <span data-ttu-id="70446-124">公開的日期弱點</span><span class="sxs-lookup"><span data-stu-id="70446-124">Date vulnerability was disclosed to public</span></span> |
-| `VulnerabilityDescription` | <span data-ttu-id="70446-125">字串</span><span class="sxs-lookup"><span data-stu-id="70446-125">string</span></span> | <span data-ttu-id="70446-126">弱點及相關風險的描述</span><span class="sxs-lookup"><span data-stu-id="70446-126">Description of vulnerability and associated risks</span></span> |
-| `AffectedSoftware` | <span data-ttu-id="70446-127">字串</span><span class="sxs-lookup"><span data-stu-id="70446-127">string</span></span> | <span data-ttu-id="70446-128">受此弱點影響的所有軟體產品清單</span><span class="sxs-lookup"><span data-stu-id="70446-128">List of all software products affected by the vulnerability</span></span> |
+| `CveId` | <span data-ttu-id="55c05-114">字串</span><span class="sxs-lookup"><span data-stu-id="55c05-114">string</span></span> | <span data-ttu-id="55c05-115">在常見弱點與漏洞 (CVE) 系統下指派給安全性弱點的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="55c05-115">Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system</span></span> |
+| `CvssScore` | <span data-ttu-id="55c05-116">字串</span><span class="sxs-lookup"><span data-stu-id="55c05-116">string</span></span> | <span data-ttu-id="55c05-117">在常見弱點計分系統 (CVSS) 下指派給安全性弱點的嚴重性分數</span><span class="sxs-lookup"><span data-stu-id="55c05-117">Severity score assigned to the security vulnerability under th Common Vulnerability Scoring System (CVSS)</span></span> |
+| `IsExploitAvailable` | <span data-ttu-id="55c05-118">布林值</span><span class="sxs-lookup"><span data-stu-id="55c05-118">boolean</span></span> | <span data-ttu-id="55c05-119">表示該弱點的惡意探索代碼是否可供公開使用</span><span class="sxs-lookup"><span data-stu-id="55c05-119">Indicates whether exploit code for the vulnerability is publicly available</span></span> |
+| `VulnerabilitySeverityLevel` | <span data-ttu-id="55c05-120">字串</span><span class="sxs-lookup"><span data-stu-id="55c05-120">string</span></span> | <span data-ttu-id="55c05-121">安全性弱點之嚴重性層級的指派是根據 CVSS 分數，以及受威脅環境影響的動態因素</span><span class="sxs-lookup"><span data-stu-id="55c05-121">Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape</span></span> |
+| `LastModifiedTime` | <span data-ttu-id="55c05-122">datetime</span><span class="sxs-lookup"><span data-stu-id="55c05-122">datetime</span></span> | <span data-ttu-id="55c05-123">上次修改之項目及相關中繼資料的日期和時間</span><span class="sxs-lookup"><span data-stu-id="55c05-123">Date and time the item or related metadata was last modified</span></span> |
+| `PublishedDate` | <span data-ttu-id="55c05-124">datetime</span><span class="sxs-lookup"><span data-stu-id="55c05-124">datetime</span></span> | <span data-ttu-id="55c05-125">公開的日期弱點</span><span class="sxs-lookup"><span data-stu-id="55c05-125">Date vulnerability was disclosed to public</span></span> |
+| `VulnerabilityDescription` | <span data-ttu-id="55c05-126">字串</span><span class="sxs-lookup"><span data-stu-id="55c05-126">string</span></span> | <span data-ttu-id="55c05-127">弱點及相關風險的描述</span><span class="sxs-lookup"><span data-stu-id="55c05-127">Description of vulnerability and associated risks</span></span> |
+| `AffectedSoftware` | <span data-ttu-id="55c05-128">字串</span><span class="sxs-lookup"><span data-stu-id="55c05-128">string</span></span> | <span data-ttu-id="55c05-129">受此弱點影響的所有軟體產品清單</span><span class="sxs-lookup"><span data-stu-id="55c05-129">List of all software products affected by the vulnerability</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="70446-129">相關主題</span><span class="sxs-lookup"><span data-stu-id="70446-129">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="55c05-130">相關主題</span><span class="sxs-lookup"><span data-stu-id="55c05-130">Related topics</span></span>
 
-- [<span data-ttu-id="70446-130">主動威脅搜捕</span><span class="sxs-lookup"><span data-stu-id="70446-130">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="70446-131">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="70446-131">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="70446-132">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="70446-132">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="70446-133">跨裝置、電子郵件、應用程式和身分識別搜捕</span><span class="sxs-lookup"><span data-stu-id="70446-133">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="70446-134">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="70446-134">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="70446-135">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="70446-135">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
-- [<span data-ttu-id="70446-136">威脅與弱點管理的概觀</span><span class="sxs-lookup"><span data-stu-id="70446-136">Overview of Threat & Vulnerability Management</span></span>](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="55c05-131">主動威脅搜捕</span><span class="sxs-lookup"><span data-stu-id="55c05-131">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="55c05-132">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="55c05-132">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="55c05-133">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="55c05-133">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="55c05-134">跨裝置、電子郵件、應用程式和身分識別搜捕</span><span class="sxs-lookup"><span data-stu-id="55c05-134">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="55c05-135">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="55c05-135">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="55c05-136">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="55c05-136">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+- [<span data-ttu-id="55c05-137">威脅與弱點管理的概觀</span><span class="sxs-lookup"><span data-stu-id="55c05-137">Overview of Threat & Vulnerability Management</span></span>](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
