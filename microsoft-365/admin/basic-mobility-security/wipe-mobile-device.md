@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用內建基本行動性和安全性，以移除已註冊裝置中的資訊。
-ms.openlocfilehash: ddf13ef6627d70128064e2d8bd185203244b12e4
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 7830a0f4ef609f6465c171ecab2c9e3c48198424
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819805"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023854"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本行動及安全性中清除行動裝置
 
 您可以使用 Microsoft 365 的內建基本行動及安全性，只移除組織資訊，或執行出廠重設以刪除行動裝置中的所有資訊，並將其還原為出廠設定。
 
-## <a name="before-you-begin"></a>事前準備
+## <a name="before-you-begin"></a>開始之前
 
 行動裝置可以儲存敏感組織資訊，並提供組織的 Microsoft 365 資源的存取權。 為了協助保護您組織的資訊，您可以進行原始重設或移除公司資料：
 
@@ -45,7 +45,7 @@ ms.locfileid: "50819805"
 
 ## <a name="wipe-a-mobile-device"></a>清除行動裝置
 
-1. 移至 [Microsoft 365 系統管理中心](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23)。
+1. 移至 [Microsoft 365 系統管理中心](../../admin/admin-overview/about-the-admin-center.md)。
 
 2. 在 [搜尋] 欄位中輸入行動裝置管理，並從結果清單中選取 [行動 **裝置管理** ]。
 

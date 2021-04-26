@@ -19,15 +19,14 @@ description: 在安全性與合規性中心使用 Explorer 和即時偵測， &a
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0dcda063fc544c88157cff21b8a28f7a84a6a6fb
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c6bea6cb60579263515d21e159c4032fe4281cad
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934702"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024178"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
-
 
 **適用於**
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
@@ -35,6 +34,9 @@ ms.locfileid: "51934702"
 
 如果您的組織有 [Microsoft Defender For Office 365](defender-for-office-365.md)，而您具有 [必要的許可權](#required-licenses-and-permissions)，則您 **的 Explorer** 或 **即時** 偵測 (以前的 *即時報告* -- [請參閱](#new-features-in-threat-explorer-and-real-time-detections)最近更新！ ) 。 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**]，然後選擇 [ **Explorer** ] _或_[ **即時** 偵測]。
 
+<br>
+
+****
 
 |使用 Microsoft Defender for Office 365 方案2，您會看到：|使用 Microsoft Defender for Office 365 方案1，您會看到：|
 |---|---|
@@ -55,8 +57,9 @@ ms.locfileid: "51934702"
 ## <a name="improvements-to-threat-hunting-experience"></a>威脅搜尋體驗的增強功能
 
 ### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>Explorer/即時偵測內 MDO 警示的警示識別碼簡介 (預覽) 
+
 現在，如果您從警示流覽至威脅瀏覽器，它就會在瀏覽器中開啟篩選的視圖，並以警示原則識別碼篩選 (原則識別碼為警示原則) 的唯一識別碼。
-在威脅瀏覽器和即時偵測中引入警示識別碼，使這項整合更為相關 (在威脅瀏覽器和即時偵測中看到警示) 識別碼的範例，這樣您就能看到與特定警示相關的訊息，以及電子郵件的計數。 您也可以查看郵件是否為警示的一部分，以及從該郵件流覽至特定警示。  
+在威脅瀏覽器和即時偵測中引入警示識別碼，使這項整合更為相關 (在威脅瀏覽器和即時偵測中看到警示) 識別碼的範例，這樣您就能看到與特定警示相關的訊息，以及電子郵件的計數。 您也可以查看郵件是否為警示的一部分，以及從該郵件流覽至特定警示。
 
 當您查看個別的警示時，URL 內可使用警示識別碼;範例為 `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` 。
 
@@ -66,11 +69,13 @@ ms.locfileid: "51934702"
 > [!div class="mx-imgBorder"]
 > ![詳細資料快顯視窗中的警示識別碼](../../media/AlertID-DetailsFlyout.png)
 
- 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>將瀏覽器的 (和即時的偵測功能延伸) 從7天到30天 (預覽的試用承租人的資料保留和搜尋限制)   
-在這項變更中，您將可以搜尋和篩選超過30天的電子郵件資料 (在威脅瀏覽器/即時偵測中，針對 Office P1 和 P2 試用租使用者的 Defender，進行過去7天) 的增加。 這不會影響 P1 和 P2/E5 客戶的任何實際執行承租人，其已有30天的資料保留和搜尋功能。 
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>將瀏覽器的 (和即時的偵測功能延伸) 從7天到30天 (預覽的試用承租人的資料保留和搜尋限制) 
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>更新威脅瀏覽器的記錄匯出 (預覽的限制)  
+在這項變更中，您將可以搜尋和篩選超過30天的電子郵件資料 (在威脅瀏覽器/即時偵測中，針對 Office P1 和 P2 試用租使用者的 Defender，進行過去7天) 的增加。
+這不會影響 P1 和 P2/E5 客戶的任何實際執行承租人，其已有30天的資料保留和搜尋功能。
+
+### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>更新威脅瀏覽器的記錄匯出 (預覽的限制) 
+
 做為此更新的一部分，可從威脅瀏覽器匯出的電子郵件記錄的列數會從9990增加為200000記錄。 目前可匯出的一組資料行將保持不變，但是列數會從目前的限制增加。
 
 ### <a name="tags-in-threat-explorer"></a>威脅瀏覽器中的標記
@@ -99,6 +104,7 @@ ms.locfileid: "51934702"
 > ![不篩選標記](../../media/tags-filter-not.png)
 
 #### <a name="email-detail-flyout"></a>電子郵件詳細資料快顯視窗
+
 若要查看寄件者和收件者的個別標記，請選取 [主旨] 以開啟 [郵件詳細資料] 浮出。 在 [ **摘要** ] 索引標籤上，[寄件者] 和 [收件者] 標記會分開顯示（如果它們是針對電子郵件）
 寄件者和收件者個別標記的相關資訊也會延伸至匯出的 CSV 資料，您可以在兩個不同的欄中查看這些詳細資料。
 
@@ -107,13 +113,12 @@ ms.locfileid: "51934702"
 
 標記資訊也會顯示在 URL 中按一下 [飛入]。 若要查看，請移至 [網路釣魚] 或 [所有電子郵件] 視圖，然後按一下 [ **URLs** ] 或 [URL] [ **按一下** ]選取個別的 [URL] 浮出視窗，以查看有關該 URL 之按一下的其他詳細資料，包括與該按一下關聯的標記。
 
-
 ### <a name="updated-timeline-view"></a>更新時程表視圖
 
 > [!div class="mx-imgBorder"]
 > ![URL 標記](../../media/tags-urls.png)
-> 
-觀看[此影片](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)瞭解更多資訊。 
+>
+觀看[此影片](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)瞭解更多資訊。
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>對即將推出之威脅搜尋體驗的增強 () 
 
@@ -174,6 +179,7 @@ ms.locfileid: "51934702"
 在傳送電子郵件之後套用 *其他動作*。 它們可以包含由系統管理員採取的 *ZAP*、 *手動修正* (動作（如虛刪除) 、 *動態傳遞*） *，以及重新處理 (（* 已偵測為良好) 的電子郵件）。
 
 > [!NOTE]
+>
 > - 在擱置中的變更中，目前出現在 [傳遞動作篩選] 中的「已移除的 ZAP」值將會不復存在。 您可以使用此方法，透過 **其他動作** 來搜尋所有 ZAP 嘗試的電子郵件。
 >
 > - **偵測技術** 和 **其他動作** 會有新的欄位和值，尤其是針對 ZAP 案例) 所做的 (。 您將需要評估現有的已儲存查詢和追蹤的查詢，以確保它們能夠使用新的值。
@@ -207,12 +213,9 @@ ms.locfileid: "51934702"
 - 顯示已完全按一下的 URL (包括 url 任何部分之 URL 的任何查詢參數) 在 URL 快顯視窗的 [ **點擊** ] 區段中。 目前，URL 網域和路徑會出現在標題列中。 我們正在擴充該資訊以顯示完整的 URL。
 
 - 跨 URL 篩選器的修正 (*url* 與 *url 網域* *，以及 url 網域和路徑*) ：更新會影響包含 URL/按一下判定之郵件的搜尋。 我們為通訊協定不可知的搜尋啟用支援，因此您可以在不使用的情況下搜尋 URL `http` 。 根據預設，URL 搜尋會對應至 HTTP，除非明確指定另一個值。 例如：
-
-   -  `http://`在 [ **url**]、[ **url 網域**] 及 [ **url 網域] 和 [路徑** 篩選] 欄位中，使用或不使用前置詞進行搜尋。 搜尋應該會顯示相同的結果。
-
-   -  `https://`在 **URL** 中搜尋前置詞。 若未指定任何值，則 `http://` 會假設首碼。
-
-   - `/` 會在 **url 路徑**、 **url 網域**、 **URL 網域及路徑** 欄位的開頭和結尾略過。 `/` 在 [ **URL** ] 欄位的結尾會被忽略。
+  - `http://`在 [ **url**]、[ **url 網域**] 及 [ **url 網域] 和 [路徑** 篩選] 欄位中，使用或不使用前置詞進行搜尋。 搜尋應該會顯示相同的結果。
+  - `https://`在 **URL** 中搜尋前置詞。 若未指定任何值，則 `http://` 會假設首碼。
+  - `/` 會在 **url 路徑**、 **url 網域**、 **URL 網域及路徑** 欄位的開頭和結尾略過。 `/` 在 [ **URL** ] 欄位的結尾會被忽略。
 
 ### <a name="phish-confidence-level"></a>網路釣魚信賴等級
 
@@ -290,16 +293,16 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 > [!IMPORTANT]
 > ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具有下列其中一個角色/許可權，才能查看 ETR 名稱和搜尋。 如果您未指派任何這些角色，您就無法看到傳輸規則的名稱，或使用 ETR 名稱來搜尋郵件。 不過，您可以在電子郵件詳細資料中看到 ETR 標籤及 GUID 資訊。 其他記錄流覽的電子郵件格線、電子郵件 flyouts、篩選和匯出不會受到影響。
-> 
+>
 > - 僅限 EXO-資料遺失防護：全部
 > - 僅限 EXO-O365SupportViewConfig： All
 > - Microsoft Azure Active Directory 或 EXO-安全性系統管理員： All
 > - AAD 或 EXO-Security Reader： All
 > - 僅限 EXO-Transport Rules： All
 > - 僅限 EXO-View-Only 設定： All
-> 
+>
 > 在電子郵件格線、詳細資料浮出和匯出的 CSV 中，ETRs 會以如下所示的名稱/GUID 呈現。
-> 
+>
 > > [!div class="mx-imgBorder"]
 > > ![Exchange 傳輸規則](../../media/ETR_Details.png)
 
@@ -315,7 +318,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測中的新功能
 
 - [查看傳送給類比使用者和網域的網路釣魚電子郵件](#view-phishing-emails-sent-to-impersonated-users-and-domains)
--  [預覽電子郵件標頭和下載電子郵件內文](#preview-email-header-and-download-email-body)
+- [預覽電子郵件標頭和下載電子郵件內文](#preview-email-header-and-download-email-body)
 - [電子郵件時間表](#email-timeline)
 - [匯出 URL 點擊資料](#export-url-click-data)
 
@@ -339,7 +342,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 4. 在 [電子郵件] 索引標籤 > 詳細資料] 索引標籤下，選取任何郵件的主旨，以查看類比網域/偵測到的位置等其他類比
 
-    **OR** 
+    **OR**
 
     選取 [模擬 **使用者** ]，然後在 textbox 中輸入受保護使用者的電子郵件地址。
 
@@ -351,7 +354,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
     :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="顯示偵測位置之受保護使用者的威脅瀏覽器詳細資料窗格，以及偵測到使用者) 的網路釣魚模擬 (所偵測到的威脅。":::
 
 > [!NOTE]
-> 在步驟3或5中，如果您選擇 [**偵測技術**]，並分別選取 [**類比網域**] 或 [模擬 **使用者**]，則使用者或網域的 [**電子郵件]** 索引標籤詳細資料] 索引標籤中的資訊，  >  只會顯示在 [*反網路釣魚原則***]** 頁面上所列之使用者或網域相關聯的訊息。  
+> 在步驟3或5中，如果您選擇 [**偵測技術**]，並分別選取 [**類比網域**] 或 [模擬 **使用者**]，則使用者或網域的 [**電子郵件]** 索引標籤詳細資料] 索引標籤中的資訊，  >  只會顯示在 [*反網路釣魚原則***]** 頁面上所列之使用者或網域相關聯的訊息。 
 
 ### <a name="preview-email-header-and-download-email-body"></a>預覽電子郵件標頭和下載電子郵件內文
 
@@ -366,16 +369,26 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 *傳遞動作* 是由於現有的原則或偵測，而對電子郵件採取的動作。 電子郵件可能的動作如下：
 
+<br>
+
+****
+
 |已傳遞|已標示為垃圾郵件|已封鎖|已取代|
 |---|---|---|---|
 |電子郵件已傳遞至使用者的收件匣或資料夾，而且使用者可以存取。|電子郵件已傳送至使用者的 [垃圾郵件] 或 [已刪除] 資料夾，使用者可以存取它。|隔離、失敗或丟棄的電子郵件。 使用者無法存取這些郵件。|電子郵件有惡意附件取代 .txt 檔案，以表明附件是惡意的。|
+|
 
 以下是使用者可及無法看到的專案：
+
+<br>
+
+****
 
 |使用者可以存取|使用者無法存取 |
 |---|---|
 |已傳遞|已封鎖|
 |已標示為垃圾郵件|已取代|
+|
 
 **傳遞位置** 顯示執行後續傳遞的原則及偵測結果。 它會連結至 **_傳遞動作_**。 可能的值如下：
 

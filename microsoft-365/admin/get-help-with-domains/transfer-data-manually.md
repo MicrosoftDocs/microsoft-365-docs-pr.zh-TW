@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 尋找當您變更計畫或公司名稱時，如何在兩部 Microsoft 365 帳戶之間手動傳輸資料，或將多個訂閱組合為一個。
-ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b240ffbbdbfb6ed7d20a9ead9b1ee90a3af4570d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915503"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023830"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在兩個帳戶間手動傳輸資料
 
@@ -91,11 +91,11 @@ Microsoft 365 企業版和 Microsoft 365 中型企業版：
   
 - 您可以將舊網站儲存為範本，然後將範本匯入新的網站。
 
-- 若要傳輸檔，請先在新網站上手動重新建立階層。 然後，您可以同時開啟這兩個 SharePoint 小組網站、使用 Windows Explorer 開啟文件庫，以及複製及貼上檔。 請參閱 [影片：使用 [以瀏覽器開啟] 複製或移動文件庫](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)檔案。
+- 若要傳輸檔，請先在新網站上手動重新建立階層。 然後，您可以同時開啟這兩個 SharePoint 小組網站、使用 Windows Explorer 開啟文件庫，以及複製及貼上檔。 請參閱 [影片：使用 [以瀏覽器開啟] 複製或移動文件庫](../../business-video/store-files.md)檔案。
 
 - 若要傳輸清單資料、儲存 [清單範本](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，然後使用儲存的範本在新網站上重新建立清單。
 
-- 若要從 SharePoint 線上環境儲存文件庫或清單內容 (OneDrive 為商務或小組網站) 至檔案共用或本機電腦，請參閱 [SharePoint 線上內容之手動遷移的相關資訊](https://support.microsoft.com/kb/2783484)。
+- 若要從 SharePoint 線上環境儲存文件庫或清單內容 (OneDrive 為商務或小組網站) 至檔案共用或本機電腦，請參閱 [SharePoint 線上內容之手動遷移的相關資訊](/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
 
 ## <a name="transfer-users-data-between-subscriptions"></a>在訂閱間傳輸使用者資料
 

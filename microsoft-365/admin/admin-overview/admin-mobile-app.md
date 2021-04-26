@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得 Microsoft 365 系統管理應用程式，並瞭解如何從您的手機或平板電腦管理您的線上組織。
-ms.openlocfilehash: eba3783e3673efe84bdb823da2a14e06c06c5fbe
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 20a44501db43b8cba7f31bcfded039b00f3ab341
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826115"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023938"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>關於 Microsoft 365 admin 行動裝置應用程式
 
@@ -116,6 +116,6 @@ ms.locfileid: "50826115"
 
 電子郵件 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) 以報告應用程式的問題。 您也可以在本文的底部提供意見反應。
   
-## <a name="see-also"></a>請參閱
+## <a name="related-content"></a>相關內容 
 
-[商務用 Microsoft 365 訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business 訓練](../../business-video/index.yml) 影片 (連結) 

@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b241e1261c35c95c15aeca325807993074477e7f
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: bfe86d639b3532fabd56957262160255db994098
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551509"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024082"
 ---
 # <a name="payment-information-for-denmark"></a>丹麥的付款資訊
 
@@ -35,10 +35,12 @@ IBAN 程式碼： GB19CITI18500812207613 \
 帳戶號碼： 12207613 \
 帳戶名稱： MICROSOFT
 
-如果您有發票的 **Microsoft Danmark ap** 為從2021年3月1日開始的訂單和消費計費，請使用此銀行資訊：
+如果您有發票的 **Microsoft 丹麥 ap** 為從2021年3月1日開始的訂單和消費計費，請使用此銀行資訊：
 
 銀行： Citibank 歐洲 plc \
 SWIFT 程式碼： CITIIE2X \
 IBAN 程式碼： IE27CITI99005170000126 \
 帳戶號碼： 70000126 \
 帳戶名稱： MICROSOFT
+
+從當地的 Microsoft 子公司簽發的發票會以 加值稅/銷售稅/GST 的標準費率發行，並視為國內/加值稅/GST 用途的服務。

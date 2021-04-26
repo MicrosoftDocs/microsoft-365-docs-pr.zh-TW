@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e6bfb781b3454025c5ce0f43899180c91761a56d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 11a6fd00524e3dd7ad456f68da6f493d74deee69
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932556"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023186"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932556"
 
 **適用於：**
 - Microsoft 365 Defender
+- 適用於端點的 Microsoft Defender
 
 
 
@@ -48,8 +49,8 @@ ms.locfileid: "51932556"
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
 | `NetworkAdapterName` | string | 網路介面卡的名稱 |
 | `MacAddress` | string | 網路介面卡的 MAC 位址 |
-| `NetworkAdapterType` | string | 網路介面卡類型。 如需可能的值，請參閱 [this 列舉](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
-| `NetworkAdapterStatus` | string | 網路介面卡的運作狀態。 如需可能的值，請參閱 [this 列舉](/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
+| `NetworkAdapterType` | string | 網路介面卡類型。 如需可能的值，請參閱 [this 列舉](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `NetworkAdapterStatus` | string | 網路介面卡的運作狀態。 如需可能的值，請參閱 [this 列舉](/dotnet/api/system.net.networkinformation.operationalstatus) |
 | `TunnelType` | string | 隧道通訊協定，如果此介面是用於此用途，例如6to4、Teredo、ISATAP、PPTP、SSTP 和 SSH |
 | `ConnectedNetworks` | string | 連接到配接器的網路。 每個 JSON 陣列都包含網路名稱、類別 (public、private 或 domain) 、描述及表明其是否已公開連接到網際網路的標誌。 |
 | `DnsAddresses` | string | JSON 陣列格式的 DNS 伺服器位址 |

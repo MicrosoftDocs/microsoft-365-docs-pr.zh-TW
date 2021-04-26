@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本行動性和安全性來建立保護組織資訊的裝置原則。
-ms.openlocfilehash: f31930f1a753259622520e50da8c255e7cd410e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904285"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023902"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本行動性和安全性中建立裝置安全性原則
 
@@ -36,7 +36,7 @@ ms.locfileid: "50904285"
 
 - 深入瞭解基本行動性和安全性所支援的裝置、行動裝置應用程式及安全性設定。 請參閱 [基本行動性和安全性的功能](capabilities.md)。
 - 建立安全性群組，其中包含您想要部署原則的 Microsoft 365 使用者，以及您可能想要排除禁止存取 Microsoft 365 的使用者。 建議您在將新的原則部署至組織之前，先將原則部署至少量的使用者，以測試原則。 您可以建立並使用安全性群組，其中只包含您自己或可以為您測試原則的少數 Microsoft 365 使用者。 若要深入瞭解安全性群組，請參閱 [建立、編輯或刪除安全性群組](../email/create-edit-or-delete-a-security-group.md)。
-- 若要在 Microsoft 365 中建立及部署基本行動及安全性原則，您必須是 Microsoft 365 全域管理員。如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)。
+- 若要在 Microsoft 365 中建立及部署基本行動及安全性原則，您必須是 Microsoft 365 全域管理員。如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 - 在您部署原則之前，請讓您的組織知道以基本行動性和安全性登錄裝置的潛在影響。 根據您設定原則的方式，可以封鎖不相容的裝置以存取 Microsoft 365 和資料，包括已註冊裝置上已安裝的應用程式、相片和個人資訊，以及可刪除的資料。
 
 >[!NOTE]
@@ -85,7 +85,7 @@ ms.locfileid: "50904285"
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>步驟4：封鎖不受支援的裝置的電子郵件存取
 
-為了協助保護您的組織資訊，您應該封鎖 Microsoft 365 電子郵件的應用程式存取（基本行動裝置及安全性不支援的行動裝置）。 如需支援的裝置清單，請參閱 [支援的裝置](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)。
+為了協助保護您的組織資訊，您應該封鎖 Microsoft 365 電子郵件的應用程式存取（基本行動裝置及安全性不支援的行動裝置）。 如需支援的裝置清單，請參閱 [支援的裝置](../../admin/basic-mobility-security/capabilities.md)。
 
 **封鎖應用程式存取：**
 

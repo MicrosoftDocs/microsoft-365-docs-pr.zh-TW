@@ -1,7 +1,7 @@
 ---
-title: 當地語系化使用者經驗
+title: 當地語系化使用者體驗
 description: 如何當地語系化使用者的裝置
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,14 +12,14 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 20456ce837be60b707569ae07d4fb00b695b3a98
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445934"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023258"
 ---
-# <a name="localize-the-user-experience"></a>當地語系化使用者經驗
+# <a name="localize-the-user-experience"></a>當地語系化使用者體驗
 
 Microsoft 受管理的桌面裝置的使用者可以在安裝程式期間，選取其選擇的語言。 ) 或之後的 (「全新體驗」。
 
@@ -62,43 +62,43 @@ Microsoft 受管理的桌面裝置的使用者可以在安裝程式期間，選�
 
 Microsoft 受管理的桌面所提供的 [通用影像](../service-description/device-images.md#universal-image) 包含下列語言和 Windows 10：
 
+- 阿拉伯文
+- 保加利亞文
+- Chinese Simplified
+- Chinese Traditional
+- 克羅埃西亞文
+- 捷克文
+- 丹麥文  
+- 荷蘭文  
 - 英文 (US，GB，AU，CA，) 
-- 西班牙文 (西班牙，墨西哥) 
-- 日文
+- 愛沙尼亞文
+- 芬蘭文 
 - 法文 (法國，加拿大) 
 - 德文
-- 葡萄牙文 (巴西)
-- 義大利文
-- Chinese Simplified
-- 荷蘭文  
-- 瑞典文
-- 丹麥文  
-- 芬蘭文 
-- 俄文 
-- 挪威文 (巴克摩)
-- 韓文
-- Chinese Traditional
-- 波蘭文
-- 土耳其文
-- 阿拉伯文
-- 希伯來文
-- 葡萄牙文 (葡萄牙)
-- 捷克文
-- 匈牙利文
-- 泰文
-- 印尼文
 - 希臘文
-- 斯洛伐克文
-- 越南文
-- 斯洛維尼亞文
-- 克羅埃西亞文
-- 羅馬尼亞文
-- 立陶宛文
-- 保加利亞文
-- 塞爾維亞文 (拉丁字母) 
+- 希伯來文
+- 匈牙利文
+- 印尼文
+- 義大利文
+- 日文
+- 韓文
 - 拉脫維亞文
+- 立陶宛文
+- 挪威文 (巴克摩)
+- 波蘭文
+- 葡萄牙文 (巴西)
+- 葡萄牙文 (葡萄牙)
+- 羅馬尼亞文
+- 俄文 
+- 塞爾維亞文 (拉丁字母) 
+- 斯洛伐克文
+- 斯洛維尼亞文
+- 西班牙文 (西班牙，墨西哥) 
+- 瑞典文
+- 泰文
+- 土耳其文
 - 烏克蘭文
-- 愛沙尼亞文
+- 越南文
 
 Microsoft 365 應用程式的企業版可能支援稍有不同的清單。
 

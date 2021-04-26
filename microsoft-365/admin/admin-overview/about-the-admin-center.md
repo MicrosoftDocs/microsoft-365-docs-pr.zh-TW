@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用系統管理中心在雲端設定您的組織並管理使用者和訂閱。 請以系統管理員權限登入帳戶以開始使用。
-ms.openlocfilehash: ef606565d7cad94bc0c7ff81630ef6c2fe8a6fc4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 8dcd806318bad4aed37aa8cccce4bf90c32e824c
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222084"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023950"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 
@@ -43,7 +43,7 @@ ms.locfileid: "51222084"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../../business-video/index.yml)。
 
 ## <a name="how-to-get-to-the-admin-center"></a>如何前往系統管理中心
 
@@ -99,6 +99,6 @@ ms.locfileid: "51222084"
 
 - [管理 Microsoft 365 群組](../create-groups/manage-groups.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="related-content"></a>相關內容
 
-[商務用 Microsoft 365 訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business 訓練](../../business-video/index.yml) 影片 (連結) 

@@ -23,22 +23,22 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: 瞭解如何在電腦、電話和平板電腦上設定及使用 Microsoft 365。
-ms.openlocfilehash: 0bc2478375cdec231a00bade933680cb69578126
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9b1dc7d42cf532e3f18af74df5d3d87b712fb4d4
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759879"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023926"
 ---
-# <a name="get-started"></a>開始使用
+# <a name="get-started"></a>快速入門
 
 您的組織最近取得 Microsoft 365，現在您需要使用它，所以您可以開始閱讀電子郵件、共用檔等等。 瞭解如何在電腦、電話和平板電腦上設定及使用 Microsoft 365。
 
 ## <a name="training-resources-for-your-users"></a>使用者適用的訓練資源
 
 
-- [員工快速入門](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
-    
+- [員工快速入門](../../business-video/employee-quick-setup.md)
+
 - [Office 訓練中心](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
 - [登入的位置](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)

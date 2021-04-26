@@ -22,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解如何指派授權給使用者。
-ms.openlocfilehash: 3622be180ae622d5d08066cc03773a8175fe9342
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 9fa8981949215c4cf7779a21ff7089d7534e1ef0
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398154"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023746"
 ---
 # <a name="assign-licenses-to-users"></a>將授權指派給使用者
 
@@ -174,7 +174,7 @@ ms.locfileid: "51398154"
 
 ## <a name="next-steps"></a>後續步驟
 
-如果您的使用者尚未安裝 Office 應用程式，則可以與您的使用者分享[員工快速入門手冊](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)，以設定相關項目，例如[如何在 PC 或 Mac 上下載並安裝 Microsoft 365 或 Office 2019](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)，以及[如何在行動裝置上設定 Office 應用程式和電子郵件](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)。
+如果您的使用者尚未安裝 Office 應用程式，則可以與您的使用者分享[員工快速入門手冊](../../business-video/employee-quick-setup.md)，以設定相關項目，例如[如何在 PC 或 Mac 上下載並安裝 Microsoft 365 或 Office 2019](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)，以及[如何在行動裝置上設定 Office 應用程式和電子郵件](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)。
 
 ## <a name="related-content"></a>相關內容
 

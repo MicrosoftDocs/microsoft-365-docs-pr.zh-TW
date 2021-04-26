@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 有關基本行動性和安全性的常見問題。
-ms.openlocfilehash: a538c0b3f9fa6a4bf1861734fc9dea94030760a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 14e12678ec210325f63914594fb6debcf7abb880
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906261"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023890"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>基本行動及安全性常見問題 (常見問題) 
 
@@ -51,7 +51,7 @@ ms.locfileid: "50906261"
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>我嘗試設定基本行動性和安全性，但似乎已停滯。 Microsoft 365 服務的健康情況已經顯示 "布建" 一段時間。 我該怎麼做？
 
-可能需要一些時間才能讓您準備好服務。 布建完成後，您將會看到 [基本行動性及安全性] 頁面。 如果您已等候24小時，但狀態仍為 [布建]，請聯繫支援人員，我們將協助找出問題的含義。 如需支援選項，請參閱 [仍需協助？](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp)。
+可能需要一些時間才能讓您準備好服務。 布建完成後，您將會看到 [基本行動性及安全性] 頁面。 如果您已等候24小時，但狀態仍為 [布建]，請聯繫支援人員，我們將協助找出問題的含義。
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>裝置註冊失敗時，該怎麼辦？
 
@@ -73,7 +73,7 @@ ms.locfileid: "50906261"
 
 ## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>原則如何運作以取得基本行動性和安全性？ 如何設定？ 停用它們？
 
-在您完成基本行動性和安全性的初始設定之後，您可以建立原則，並將它們套用至安全性 & 合規性中心的使用者群組。 原則要求原則的使用者在基本行動性和安全性中註冊裝置，裝置才能用來存取 Microsoft 365 資料。 您設定的原則決定行動裝置的設定，例如密碼必須重設的頻率，或是否需要資料加密。 如需詳細資訊，請參閱[在基本行動性和安全性](create-device-security-policies.md)   和[Microsoft 365 規範中心](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8)建立裝置安全性原則。
+在您完成基本行動性和安全性的初始設定之後，您可以建立原則，並將它們套用至安全性 & 合規性中心的使用者群組。 原則要求原則的使用者在基本行動性和安全性中註冊裝置，裝置才能用來存取 Microsoft 365 資料。 您設定的原則決定行動裝置的設定，例如密碼必須重設的頻率，或是否需要資料加密。 如需詳細資訊，請參閱[在基本行動性和安全性](create-device-security-policies.md)   和[Microsoft 365 規範中心](../../compliance/microsoft-365-compliance-center.md)建立裝置安全性原則。
 
 如需建立及部署裝置原則的逐步指示，請參閱 [在基本行動性和安全性中建立裝置安全性原則](create-device-security-policies.md)。
 

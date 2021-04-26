@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 22d26dac6b7ee502d6934349d22b1d40532f575f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eb6dfa628488239e3953d19d5e78b338e76f50a2
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935770"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023782"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高級搜尋架構命名變更
 
@@ -99,8 +99,9 @@ ms.locfileid: "51935770"
 | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | 客戶意見反應 |
 | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | 客戶意見反應 |
 
+## <a name="march-2021"></a>2021 年 3 月
 
-
+`DeviceTvmSoftwareInventoryVulnerabilities`資料表已被取代。 請將其取代為 `DeviceTvmSoftwareInventory` 及 `DeviceTvmSoftwareVulnerabilities` 表格。
 
 
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a2ae1cbbc7e6bf288c7e5ff3db13476c2e7f1158
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 764209b9fbf18cb7495e65d8f2014bd889f21cf2
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551269"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024118"
 ---
 # <a name="payment-information-for-france"></a>法國的付款資訊
 
@@ -43,3 +43,5 @@ SWIFT 程式碼： CITIIE2X \
 IBAN 程式碼： IE11CITI99005170000123 \
 帳戶號碼： 70000123 \
 帳戶名稱： MICROSOFT
+
+從當地的 Microsoft 子公司簽發的發票會以 加值稅/銷售稅/GST 的標準費率發行，並視為國內/加值稅/GST 用途的服務。

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全域系統管理員如何變更使用者的電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: 6a5498f4e480802f8770f7b7adde55fe7c996dc8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 94ed05d87fa290f2ae1059ae04c62c5d0d5e6860
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904477"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023770"
 ---
 # <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
@@ -38,7 +38,7 @@ ms.locfileid: "50904477"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../../business-video/index.yml)。
 
 您必須是[全域系統管理員](about-admin-roles.md)才能執行這些步驟。 
 
@@ -65,7 +65,7 @@ ms.locfileid: "50904477"
 
 3. 在第一個方塊中，輸入新電子郵件地址的前半部。 如果您已將自己的網域新增至 Microsoft 365，您可以使用下拉式清單選擇新電子郵件別名的網域。
 
-4. 選取 [儲存]。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 

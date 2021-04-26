@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: '深入瞭解 Office 365 的註冊程式之前，您需要瞭解的知識。 '
-ms.openlocfilehash: 93d3f58db24e4233e8d7b2929fd2471707614097
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f2a4f555540b801441644af28435170f82229909
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904369"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023914"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何註冊系統管理員協助
 
@@ -70,7 +70,7 @@ ms.locfileid: "50904369"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../../business-video/index.yml)。
 
 需要協助選擇方案嗎？ 銷售顧問可隨時為您提供解答。 移至 [ [比較所有產品](https://products.office.com/compare-all-microsoft-office-products?tab=2) ]，然後選擇頁面左側所列的其中一個連絡人支援選項。
   
@@ -135,6 +135,6 @@ ms.locfileid: "50904369"
     > [!IMPORTANT]
     >  當您註冊時，請務必為您的組織選擇最佳的付款選項。 若要改變付款選項，必須致電帳務支援中心。
 
-## <a name="see-also"></a>請參閱
+## <a name="related-content"></a>相關內容
 
-[商務用 Microsoft 365 訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business 訓練](../../business-video/index.yml) 影片 (連結) 

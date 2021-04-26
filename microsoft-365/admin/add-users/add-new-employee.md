@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 針對電子郵件、Skype 和 Office 應用程式，將新員工新增至 Microsoft 365 for business。
-ms.openlocfilehash: 74190f815dbf38db045873091747a186238541f8
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 572f49170aecba0e8cbb57f9e365b286ee18cb67
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925335"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023710"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>將新員工新增至 Microsoft 365
 
@@ -72,7 +72,7 @@ ms.locfileid: "49925335"
 ## <a name="step-4-help-your-employee-get-started"></a>步驟4：協助您的員工快速入門
 
 
-與他們共用 [Microsoft 365 的員工快速設定](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) ，以登入、安裝軟體、設定電子郵件等等。 
+與他們共用 [Microsoft 365 的員工快速設定](../../business-video/employee-quick-setup.md) ，以登入、安裝軟體、設定電子郵件等等。 
   
 以下是協助您瞭解如何開始的快速參考：
   

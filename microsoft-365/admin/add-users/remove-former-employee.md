@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '遵循此檢查清單，從 Microsoft 365 中移除員工，並保護資料安全。 '
-ms.openlocfilehash: 50355a20e0d0e8ff782deebd9be65fdabf875bb2
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ec2dd37a38c2509c2aa6a904326b74c8d3b8d7fb
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860770"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023998"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>移除或刪除離職員工
 
@@ -42,7 +42,7 @@ ms.locfileid: "51860770"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../../business-video/index.yml)。
 
 若要防止員工登入：
 
@@ -143,7 +143,7 @@ ms.locfileid: "51860770"
 2. 選取您要封鎖的員工名稱，然後選取 [ **郵件** ] 索引標籤。
 3. 在 [ **電子郵件** 轉寄] 底下，選取 [ **管理電子郵件轉發**]。
 4. 開啟 [ **轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄 **位址** ] 方塊中，輸入即將取得電子郵件之目前員工的電子郵件地址。
-5. 選取 [儲存]。
+5. 選取 [儲存 **]**。
 6. 請記住，不要刪除離職員工的帳戶。
 
 ::: moniker-end
@@ -158,7 +158,7 @@ ms.locfileid: "51860770"
 
 4. 開啟 [ **轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄 **位址** ] 方塊中，輸入目前員工 (的電子郵件地址，或要取得電子郵件) 的共用信箱。
   
-5. 選取 [儲存]。
+5. 選取 [儲存 **]**。
 
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -174,7 +174,7 @@ ms.locfileid: "51860770"
 
 4. 開啟 [ **轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄 **位址** ] 方塊中，輸入目前員工 (的電子郵件地址，或要取得電子郵件) 的共用信箱。
   
-5. 選取 [儲存]。
+5. 選取 [儲存 **]**。
 
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -188,7 +188,7 @@ ms.locfileid: "51860770"
 2. 在 Exchange 系統管理中心中， **流覽至 [** 收件者] [ \> **信箱**]。
 3. 選取使用者，然後在 [行動 **裝置**] 底下，選取 [ **查看詳細資料**]。
 4. 在 [行動 **裝置詳細資料**] 頁面的 [行動 **裝置**] 下，選取行動裝置，選取 [**清除資料** ![ 清除裝置] ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) ，然後選取 [**封鎖**]。
-5. 選取 [儲存]。
+5. 選取 [儲存 **]**。
    > [!TIP]
    > 請務必移除或停用內部部署 Blackberry Enterprise Service 中的使用者。 您也應停用使用者的任何 Blackberry 裝置。 如需有關如何停用使用者的特定步驟，請參閱 Blackberry Business Cloud Services Administration Guide。
 
@@ -275,7 +275,7 @@ ms.locfileid: "51860770"
 2. 選取您要移除授權的訂閱。
 3. 在 [詳細資料] 頁面上，選取 [ **移除授權**]。
 4. 在 [ **移除授權** ] 窗格中的 [新數量] 底下的 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數。 例如，如果您有25個授權，而您想要移除其中一個，請輸入24。
-5. 選取 [儲存]。
+5. 選取 [儲存 **]**。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
