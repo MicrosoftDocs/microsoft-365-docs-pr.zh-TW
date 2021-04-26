@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: cc6fbfbfc130cc6e64b5d7c30e0a9db5f39036ac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051564"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994698"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -59,6 +59,8 @@ ms.locfileid: "51051564"
 
 您可以使用 [AI Builder  計算機](https://powerapps.microsoft.com/ai-builder-calculator)，來估計最適合您的 AI Builder 容量。
 
+如果您計劃使用自訂的 Power Platform 環境，您必須 [配置該環境的點數](/power-platform/admin/capacity-add-on)。
+
 請移至 [Power Platform 系統管理中心](https://admin.powerplatform.microsoft.com/resources/capacity)查看您的點數和使用狀況。
 
 ## <a name="to-set-up-sharepoint-syntex"></a>若要設定 SharePoint Syntex
@@ -80,11 +82,21 @@ ms.locfileid: "51051564"
       - **不使用 SharePoint 文件庫**，如果您不想讓任何網站都能使用 SharePoint 文件庫 (您可以在設定後變更)。
 
    > [!div class="mx-imgBorder"]
-   > ![設定表單處理](../media/content-understanding/admin-configforms.png)
+   > ![設定表單處理網站選項](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > 當網站被包含之後移除網站，並不會影響該網站中文件庫套用的現有模型，或將文件理解模型套用至文件庫的功能。 
     
+    若您已經設定多個 Power Platform 環境，您可以選擇您想要與表單處理一起使用的環境。 (如果您只有一個環境，則不會出現此選項)。
+
+    ![設定表單處理 Power Platform 選項](../media/content-understanding/setup-power-platform-env.png)
+
+    針對 **Power Platform 環境**，您可以選取：
+    - **使用預設環境** 以使用您的預設 Power Platform 環境。
+    - **使用自訂環境** 以使用自訂的環境。 從清單中選擇您要使用的環境。 您必須在此環境中安裝 *Project Cortex 的 AI Builder* 應用程式，並在建立表單處理模型之前先配置 AI Builder 點數。
+
+    按 [下一步 **]**。
+
 5. 在 **[建立內容中心]** 頁面上，您可以建立 SharePoint 內容中心網站，讓使用者建立及管理文件理解模型。
 
     1. 在 **[網站名稱]** 中，輸入您要給予內容中心網站的名稱。
@@ -126,3 +138,5 @@ ms.locfileid: "51051564"
 [表單處理模型概觀](/ai-builder/form-processing-model-overview)
 
 [逐步執行：如何建立文件理解模型 (影片)](https://www.youtube.com/watch?v=DymSHObD-bg)
+
+[在 Power Platform 系統管理中心建立和管理環境](/power-platform/admin/create-environment)
