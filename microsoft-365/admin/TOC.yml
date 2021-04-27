@@ -1,7 +1,7 @@
 - name: Microsoft 365 系統管理中心說明
   href: index.yml
   items:
-    - name: 入門
+    - name: 開始使用
       href: setup/index.yml
       items:
         - name: 註冊
@@ -402,11 +402,11 @@
         - name: 與來賓使用者共用行事曆
           href: manage/share-calendars-with-external-users.md
         - name: 建立具有來賓使用者的團隊
-          href: 'https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7'
+          href: ../business-video/team-with-guests.md
         - name: 與來賓使用者排定 Teams 會議時間
-          href: 'https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a'
+          href: ../business-video/schedule-guest-meeting.md
         - name: 加入包含來賓使用者的 Teams 會議
-          href: 'https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8'
+          href: ../business-video/join-guest-meeting.md
     - name: 疑難排解
       href: /office/troubleshoot/
     - name: 連絡客戶支援
