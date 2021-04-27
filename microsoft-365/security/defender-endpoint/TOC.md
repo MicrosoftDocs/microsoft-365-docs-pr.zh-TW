@@ -49,7 +49,163 @@
 #### [群組原則物件](manage-atp-post-migration-group-policy-objects.md)
 #### [PowerShell、WMI 和 MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
 
-## [安全性管理]()
+
+## [設定和上線裝置]()
+### [Windows 和 Windows Server 上適用於端點的 Microsoft Defender]()
+#### [將裝置上線至適用於端點的 Microsoft Defender](onboard-configure.md)
+#### [將上一版 Windows 上線](onboard-downlevel.md)
+#### [將 Windows 10 裝置上線]()
+##### [上線工具和方法](configure-endpoints.md)
+##### [使用群組原則將裝置上線](configure-endpoints-gp.md)
+##### [使用 Microsoft Endpoint Configuration Manager 將裝置上線](configure-endpoints-sccm.md)
+##### [使用行動裝置管理工具將裝置上線](configure-endpoints-mdm.md)
+##### [使用本機指令碼將裝置上線](configure-endpoints-script.md)
+##### [上線非持續 Virtual Desktop Infrastructure (VDI) 裝置](configure-endpoints-vdi.md)
+##### [在 Windows 虛擬桌面中上將 Windows 10 多工作階段裝置上線](Onboard-Windows-10-multi-session-device.md)
+#### [將 Windows 伺服器上線](configure-server-endpoints.md)
+
+#### [無網際網路存取將裝置上線](onboard-offline-machines.md)
+#### [在新上線的裝置上執行偵測測試](run-detection-test.md)
+#### [在裝置上執行模擬攻擊](attack-simulations.md)
+#### [設定 Proxy 和網際網路連接設定](configure-proxy-internet.md)
+#### [建立上線或下線通知規則](onboarding-notification.md)
+
+### [其他作業系統上適用於端點的 Microsoft Defender]()
+#### [將非 Windows 裝置上線](configure-endpoints-non-windows.md)
+
+#### [macOS 上適用於端點的 Microsoft Defender]()
+##### [macOS 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-mac.md)
+##### [新增功能](mac-whatsnew.md)
+ 
+##### [部署]()
+###### [Microsoft Intune 型部署](mac-install-with-intune.md)
+###### [JAMF Pro 型部署]()
+####### [在 macOS 上使用 Jamf Pro 部署適用於端點的 Microsoft Defender](mac-install-with-jamf.md)
+####### [登入 Jamf Pro](mac-install-jamfpro-login.md)
+####### [設定裝置群組](mac-jamfpro-device-groups.md)
+####### [設定原則](mac-jamfpro-policies.md)
+####### [註冊裝置](mac-jamfpro-enroll-devices.md)
+ 
+###### [使用不同的行動裝置管理 (MDM) 系統部署](mac-install-with-other-mdm.md)
+###### [手動部署](mac-install-manually.md)
+##### [更新](mac-updates.md)
+ 
+##### [設定]()
+###### [設定及驗證排除範圍](mac-exclusions.md)
+###### [設定喜好設定](mac-preferences.md)
+###### [偵測並封鎖潛在的垃圾應用程式](mac-pua.md)
+###### [裝置控制]()
+####### [裝置控制概觀](mac-device-control-overview.md)
+####### [JAMF 範例](mac-device-control-jamf.md)
+####### [Intune 範例](mac-device-control-intune.md)
+###### [排程掃描](mac-schedule-scan.md)
+ 
+##### [疑難排解]()
+###### [安裝問題的疑難排解](mac-support-install.md)
+###### [為績效問題疑難排解](mac-support-perf.md)
+###### [為雲端連線能力疑難排解](troubleshoot-cloud-connect-mdemac.md)
+###### [為核心擴充功能問題疑難排解](mac-support-kext.md)
+###### [為授權問題疑難排解](mac-support-license.md)
+ 
+##### [隱私權](mac-privacy.md)
+##### [資源](mac-resources.md)
+
+
+#### [iOS 上適用於端點的 Microsoft Defender]()
+##### [iOS 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-ios.md)
+##### [新功能](ios-whatsnew.md)
+ 
+##### [部署]()
+###### [在 iOS 上透過 Intune 部署適用於端點的 Microsoft Defender](ios-install.md)
+ 
+##### [設定]()
+###### [設定 iOS 功能](ios-configure-features.md)
+##### [隱私權](ios-privacy.md)
+ 
+ 
+#### [Linux 上適用於端點的 Microsoft Defender]()
+##### [Linux 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-linux.md)
+##### [新功能](linux-whatsnew.md)
+##### [部署]()
+###### [手動部署](linux-install-manually.md)
+###### [Puppet 式部署](linux-install-with-puppet.md)
+###### [Ansible 式部署](linux-install-with-ansible.md)
+ 
+##### [更新](linux-updates.md)
+ 
+##### [設定]()
+###### [設定及驗證排除範圍](linux-exclusions.md)
+###### [靜態 Proxy 組態](linux-static-proxy-configuration.md)
+###### [設定喜好設定](linux-preferences.md)
+###### [偵測並封鎖潛在的垃圾應用程式](linux-pua.md)
+###### [在 Linux 上使用適用於端點的 Microsoft Defender 排程掃描](linux-schedule-scan-atp.md)
+###### [為於端點的 Microsoft Defender 排程更新 (Linux)](linux-update-MDE-Linux.md)
+###### [使用 Chef 在 Linux 上部署適用於端點的 Defender](linux-deploy-defender-for-endpoint-with-chef.md)
+ 
+##### [疑難排解]()
+###### [安裝問題的疑難排解](linux-support-install.md)
+###### [為雲端連線能力問題疑難排解](linux-support-connectivity.md)
+###### [為效能問題疑難排解](linux-support-perf.md)
+###### [為遺失的事件問題疑難排解](linux-support-events.md)
+ 
+##### [隱私權](linux-privacy.md)
+##### [資源](linux-resources.md)
+ 
+#### [Android 上適用於端點的 Microsoft Defender]()
+##### [Android 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-android.md)
+ 
+##### [部署]()
+###### [在 Android 上使用 Microsoft Intune 部署適用於端點的 Microsoft Defender](android-intune.md)
+ 
+##### [設定]()
+###### [在 Android 上設定適用於端點的 Microsoft Defender 功能](android-configure.md)
+ 
+##### [隱私權]()
+###### [Android 上適用於端點的 Microsoft Defender - 隱私權資訊](android-privacy.md)
+ 
+##### [疑難排解]()
+###### [針對問題進行疑難排解](android-support-signin.md)
+
+### [為上線問題疑難排解]()
+#### [為上線期間的問題疑難排解](troubleshoot-onboarding.md)
+#### [為訂閱和入口網站存取問題疑難排解](troubleshoot-onboarding-error-messages.md)
+
+
+
+
+### [設定入口網站設定]()
+#### [設定喜好設定](preferences-setup.md)
+#### [一般]()
+##### [確認資料儲存位置並更新資料保留設定](data-retention-settings.md)
+##### [設定警示通知](configure-email-notifications.md)
+##### [設定進階功能](advanced-features.md)
+
+#### [權限]()
+##### [使用基本權限存取入口網站](basic-permissions.md)
+##### [使用 RBAC 管理入口網站存取](rbac.md)
+###### [建立及管理角色](user-roles.md)
+###### [建立及管理裝置群組](machine-groups.md)
+###### [建立及管理裝置標記](machine-tags.md)
+
+#### [規則]()
+##### [管理歸併規則](manage-suppression-rules.md)
+##### [建立指示器](manage-indicators.md)
+###### [建立檔案的指示器](indicator-file.md)
+###### [建立 IP 和 URL/網域的指示器](indicator-ip-domain.md)
+###### [建立憑證的指示器](indicator-certificates.md)
+###### [管理指示器](indicator-manage.md)
+##### [管理自動化檔案上傳](manage-automation-file-uploads.md)
+##### [管理自動化資料夾排除](manage-automation-folder-exclusions.md)
+
+#### [裝置管理]()
+##### [上線裝置](onboard-configure.md)
+##### [正在登出裝置](offboard-machines.md)
+##### [確保您的裝置已正確設定](configure-machines.md)
+##### [監視並增加裝置上線](configure-machines-onboarding.md)
+
+#### [設定 Microsoft Defender 資訊安全中心時區設定](time-settings.md)
+
+## [偵測威脅和保護端點]()
 ### [威脅與漏洞管理]()
 #### [概觀](next-gen-threat-and-vuln-mgt.md)
 #### [開始使用]()
@@ -73,6 +229,13 @@
 ##### [易受攻擊的裝置報告](tvm-vulnerable-devices-report.md)
 ##### [搜尋暴露的裝置](tvm-hunt-exposed-devices.md)
 
+### [裝置探索]()
+#### [裝置探索概觀](device-discovery.md)
+#### [設定裝置探索](configure-device-discovery.md)
+#### [裝置探索常見問題集](device-discovery-faq.md)
+
+### [網路裝置](network-devices.md)
+
 ### [攻擊面縮減]()
 #### [攻擊面縮小概觀](overview-attack-surface-reduction.md)
 #### [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
@@ -84,6 +247,8 @@
 ##### [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
 ##### [自訂受攻擊面縮小規則](customize-attack-surface-reduction.md)
 ##### [查看攻擊面縮小事件](event-views.md)
+
+#### [使用稽核模式](audit-windows-defender.md)
 
 ### 新一代保護
 #### [Microsoft Defender 防毒軟體概觀](microsoft-defender-antivirus-in-windows-10.md)
@@ -179,112 +344,21 @@
 ##### [裝置控制報告](device-control-report.md)
 ##### [控制 USB 裝置](control-usb-devices-using-intune.md)
 
-### [裝置探索]()
-#### [裝置探索概觀](device-discovery.md)
-#### [設定裝置探索](configure-device-discovery.md)
-#### [裝置探索常見問題集](device-discovery-faq.md)
+#### [行為封鎖和包含專案]()
+##### [行為封鎖和包含專案](behavioral-blocking-containment.md)
+##### [用戶端行為封鎖](client-behavioral-blocking.md)
+##### [意見反應迴圈封鎖](feedback-loop-blocking.md)
 
 
-### [網路裝置](network-devices.md)
-
-### [macOS 上適用於端點的 Microsoft Defender]()
-#### [macOS 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-mac.md)
-#### [新增功能](mac-whatsnew.md)
-
-#### [部署]()
-##### [Microsoft Intune 型部署](mac-install-with-intune.md)
-##### [JAMF Pro 型部署]()
-###### [在 macOS 上使用 Jamf Pro 部署適用於端點的 Microsoft Defender](mac-install-with-jamf.md)
-###### [登入 Jamf Pro](mac-install-jamfpro-login.md)
-###### [設定裝置群組](mac-jamfpro-device-groups.md)
-###### [設定原則](mac-jamfpro-policies.md)
-###### [註冊裝置](mac-jamfpro-enroll-devices.md)
-
-##### [使用不同的行動裝置管理 (MDM) 系統部署](mac-install-with-other-mdm.md)
-##### [手動部署](mac-install-manually.md)
-#### [更新](mac-updates.md)
-
-#### [設定]()
-##### [設定及驗證排除範圍](mac-exclusions.md)
-##### [設定喜好設定](mac-preferences.md)
-##### [偵測並封鎖潛在的垃圾應用程式](mac-pua.md)
-##### [裝置控制]()
-###### [裝置控制概觀](mac-device-control-overview.md)
-###### [JAMF 範例](mac-device-control-jamf.md)
-###### [Intune 範例](mac-device-control-intune.md)
-##### [排程掃描](mac-schedule-scan.md)
-
-#### [疑難排解]()
-##### [安裝問題的疑難排解](mac-support-install.md)
-##### [為績效問題疑難排解](mac-support-perf.md)
-##### [為雲端連線能力疑難排解](troubleshoot-cloud-connect-mdemac.md)
-##### [為核心擴充功能問題疑難排解](mac-support-kext.md)
-##### [為授權問題疑難排解](mac-support-license.md)
-
-#### [隱私權](mac-privacy.md)
-#### [資源](mac-resources.md)
-
-### [iOS 上適用於端點的 Microsoft Defender]()
-#### [iOS 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-ios.md)
-#### [新功能](ios-whatsnew.md)
-
-#### [部署]()
-##### [在 iOS 上透過 Intune 部署適用於端點的 Microsoft Defender](ios-install.md)
-
-#### [設定]()
-##### [設定 iOS 功能](ios-configure-features.md)
-#### [隱私權](ios-privacy.md)
+### [解決適用於端點的 Microsoft Defender 中的誤判/漏報](defender-endpoint-false-positives-negatives.md)
 
 
-### [Linux 上適用於端點的 Microsoft Defender]()
-#### [Linux 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-linux.md)
-#### [新功能](linux-whatsnew.md)
-#### [部署]()
-##### [手動部署](linux-install-manually.md)
-##### [Puppet 式部署](linux-install-with-puppet.md)
-##### [Ansible 式部署](linux-install-with-ansible.md)
-##### [使用 Chef 在 Linux 上部署適用於端點的 Microsoft Defender](linux-deploy-defender-for-endpoint-with-chef.md)
+### [管理裝置設定]()
 
+#### [提高安全性基準的合規性](configure-machines-security-baseline.md)
+#### [將攻擊面縮小規則部署和偵測最佳化](configure-machines-asr.md)
 
-#### [更新](linux-updates.md)
-
-#### [設定]()
-##### [設定及驗證排除範圍](linux-exclusions.md)
-##### [靜態 Proxy 組態](linux-static-proxy-configuration.md)
-##### [設定喜好設定](linux-preferences.md)
-##### [偵測並封鎖潛在的垃圾應用程式](linux-pua.md)
-##### [在 Linux 上使用適用於端點的 Microsoft Defender 排程掃描](linux-schedule-scan-atp.md)
-##### [為於端點的 Microsoft Defender 排程更新 (Linux)](linux-update-MDE-Linux.md)
-
-#### [疑難排解]()
-##### [安裝問題的疑難排解](linux-support-install.md)
-##### [為雲端連線能力問題疑難排解](linux-support-connectivity.md)
-##### [為效能問題疑難排解](linux-support-perf.md)
-##### [為遺失的事件問題疑難排解](linux-support-events.md)
-
-#### [隱私權](linux-privacy.md)
-#### [資源](linux-resources.md)
-
-### [Android 上適用於端點的 Microsoft Defender]()
-#### [Android 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-android.md)
-
-#### [部署]()
-##### [在 Android 上使用 Microsoft Intune 部署適用於端點的 Microsoft Defender](android-intune.md)
-
-#### [設定]()
-##### [在 Android 上設定適用於端點的 Microsoft Defender 功能](android-configure.md)
-
-#### [隱私權]()
-##### [Android 上適用於端點的 Microsoft Defender - 隱私權資訊](android-privacy.md)
-
-#### [疑難排解]()
-##### [針對問題進行疑難排解](android-support-signin.md)
-
-
-### [設定和管理 Microsoft 威脅專家功能](configure-microsoft-threat-experts.md)
-
-## [安全性作業]()
-
+## [調查和回應威脅]()
 ### [端點偵測及回應]()
 #### [端點偵測及回應概觀](overview-endpoint-detection-response.md)
 #### [ 安全性操作儀表板](security-operations-dashboard.md)
@@ -347,96 +421,31 @@
 ##### [威脅防護報告](threat-protection-reports.md)
 #### [裝置健康情況與合規性報告](machine-reports.md)
 
-### [行為封鎖和包含專案]()
-#### [行為封鎖和包含專案](behavioral-blocking-containment.md)
-#### [用戶端行為封鎖](client-behavioral-blocking.md)
-#### [意見反應迴圈封鎖](feedback-loop-blocking.md)
-#### [封鎖模式中的 EDR](edr-in-block-mode.md)
+### [進階搜捕]()
+#### [進階搜捕概觀](advanced-hunting-overview.md)
+#### [了解結構描述](advanced-hunting-schema-reference.md)
+#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+
+### [威脅分析概觀](threat-analytics.md)
+#### [閱讀分析師報告](threat-analytics-analyst-reports.md)
+
+### [封鎖模式中的 EDR](edr-in-block-mode.md)
 
 ### [自動調查及回應 (AIR)]()
 #### [AIR 概觀](automated-investigations.md)
 #### [AIR 中的自動化層級](automation-levels.md)
 #### [設定 AIR 功能](configure-automated-investigations-remediation.md)
 
-### [進階搜捕]()
-#### [進階搜捕概觀](advanced-hunting-overview.md)
-#### [了解結構描述](advanced-hunting-schema-reference.md)
-#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+### [Microsoft 威脅專家]()
+#### [Microsoft 威脅專家概觀](microsoft-threat-experts.md)
+#### [設定和管理 Microsoft 威脅專家功能](configure-microsoft-threat-experts.md)
 
-### [Microsoft 威脅專家](microsoft-threat-experts.md)
 
-### [威脅分析概觀](threat-analytics.md)
-#### [閱讀分析師報告](threat-analytics-analyst-reports.md)
 
-## [作法]()
-### [將裝置上線到服務]()
-#### [將裝置上線至適用於端點的 Microsoft Defender](onboard-configure.md)
-#### [將上一版 Windows 上線](onboard-downlevel.md)
-#### [將 Windows 10 裝置上線]()
-##### [上線工具和方法](configure-endpoints.md)
-##### [使用群組原則將裝置上線](configure-endpoints-gp.md)
-##### [使用 Microsoft Endpoint Configuration Manager 將裝置上線](configure-endpoints-sccm.md)
-##### [使用行動裝置管理工具將裝置上線](configure-endpoints-mdm.md)
-##### [使用本機指令碼將裝置上線](configure-endpoints-script.md)
-##### [上線非持續 Virtual Desktop Infrastructure (VDI) 裝置](configure-endpoints-vdi.md)
-##### [在 Windows 虛擬桌面中上將 Windows 10 多工作階段裝置上線](Onboard-Windows-10-multi-session-device.md)
-#### [將 Windows 伺服器上線](configure-server-endpoints.md)
-#### [將非 Windows 裝置上線](configure-endpoints-non-windows.md)
-#### [無網際網路存取將裝置上線](onboard-offline-machines.md)
-#### [在新上線的裝置上執行偵測測試](run-detection-test.md)
-#### [在裝置上執行模擬攻擊](attack-simulations.md)
-#### [設定 Proxy 和網際網路連接設定](configure-proxy-internet.md)
-#### [建立上線或下線通知規則](onboarding-notification.md)
- 
-#### [為上線問題疑難排解]()
-##### [為上線期間的問題疑難排解](troubleshoot-onboarding.md)
-##### [為訂閱和入口網站存取問題疑難排解](troubleshoot-onboarding-error-messages.md)
-
-### [管理裝置設定]()
-#### [確保您的裝置已正確設定](configure-machines.md)
-#### [監視並增加裝置上線](configure-machines-onboarding.md)
-#### [提高安全性基準的合規性](configure-machines-security-baseline.md)
-#### [將攻擊面縮小規則部署和偵測最佳化](configure-machines-asr.md)
-
-### [設定入口網站設定]()
-#### [設定喜好設定](preferences-setup.md)
-#### [一般]()
-##### [確認資料儲存位置並更新資料保留設定](data-retention-settings.md)
-##### [設定警示通知](configure-email-notifications.md)
-##### [設定進階功能](advanced-features.md)
-
-#### [權限]()
-##### [使用基本權限存取入口網站](basic-permissions.md)
-##### [使用 RBAC 管理入口網站存取](rbac.md)
-###### [建立及管理角色](user-roles.md)
-###### [建立及管理裝置群組](machine-groups.md)
-###### [建立及管理裝置標記](machine-tags.md)
-
-#### [規則]()
-##### [管理歸併規則](manage-suppression-rules.md)
-##### [建立指示器](manage-indicators.md)
-###### [建立檔案的指示器](indicator-file.md)
-###### [建立 IP 和 URL/網域的指示器](indicator-ip-domain.md)
-###### [建立憑證的指示器](indicator-certificates.md)
-###### [管理指示器](indicator-manage.md)
-##### [管理自動化檔案上傳](manage-automation-file-uploads.md)
-##### [管理自動化資料夾排除](manage-automation-folder-exclusions.md)
-
-#### [裝置管理]()
-##### [上線裝置](onboard-configure.md)
-##### [正在登出裝置](offboard-machines.md)
-
-#### [設定 Microsoft Defender 資訊安全中心時區設定](time-settings.md)
-
-### [解決適用於端點的 Microsoft Defender 中的誤判](defender-endpoint-false-positives-negatives.md)
-
+## 參考資料
 ### [設定與其他 Microsoft 解決方案的整合]()
 #### [設定條件式存取](configure-conditional-access.md)
 #### [設定 Microsoft Cloud App Security 整合](microsoft-cloud-app-security-config.md)
-
-### [使用稽核模式](audit-windows-defender.md)
-
-## 參考資料
 ### [管理與 API]()
 #### [管理和 API 概觀](management-apis.md)
 #### [API 版本資訊](api-release-notes.md)
