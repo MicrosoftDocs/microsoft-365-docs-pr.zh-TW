@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 瞭解 Contoso Corporation 如何回應 COVID-19 pandemic，並將其軟體安裝和更新基礎結構用於遠端和現場工作。
-ms.openlocfilehash: d04b4efcdd4dd04315ad37311cdd2cfbc2e64e88
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: 0bded43f03dd529ffdf463818a93af70e10eed89
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580670"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028977"
 ---
 # <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contoso 的 COVID-19 回應，並支援遠端和現場工作
 

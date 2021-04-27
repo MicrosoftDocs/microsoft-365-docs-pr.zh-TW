@@ -1,5 +1,5 @@
 ---
-title: Microsoft 受管理電腦中的應用程式
+title: Microsoft 受管理的電腦中的應用程式
 description: 說明如何處理應用程式，包括如何封裝、部署及支援應用程式。
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
@@ -10,14 +10,14 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: d970ac1a28c62703f648e4fbf6f66e2f825a6188
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 571acc9c240fc0243998050ac3013258a2f85a3e
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574616"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028941"
 ---
-# <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的應用程式
+# <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 受管理的電腦中的應用程式
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 
@@ -27,8 +27,7 @@ ms.locfileid: "51574616"
 
 Microsoft 包含特定的主要應用程式，以及參與 Microsoft Managed Desktop 所需的 Microsoft 365 E3 或 E5 授權。 不過，即使我們提供這些應用程式，仍有一些責任和動作可完成。
 
-您也可以使用 Microsoft Intune 的部署管線，在公司入口網站或必要的後臺安裝中，為您的使用者部署其他非 Microsoft 應用程式，以進行自助服務。 如果您有專業技術，您可以自行遷移所需的應用程式。另外，Microsoft 諮詢服務 (MCS) 或非 Microsoft 廠商很樂意協助您進行打包和遷移專案。 如需使用 MCS 的詳細資訊，請參閱使用 [Microsoft 諮詢服務](apps-MCS.md)。
-
+您也可以使用 Microsoft Intune 的部署管線，在公司入口網站或必要的後臺安裝中，為您的使用者部署其他非 Microsoft 應用程式，以進行自助服務。 
 
 ## <a name="apps-provided-by-microsoft"></a>Microsoft 提供的應用程式
 
@@ -48,10 +47,7 @@ Microsoft 將為適用于企業應用程式的包含 Microsoft 365 應用程式�
 
 ## <a name="apps-you-provide"></a>您提供的應用程式
 
-您可能需要其他應用程式，才能進行商務作業。 這些應用程式僅能使用 Microsoft Intune 的部署管線部署至 Microsoft 受管理的桌面裝置。 若應用程式需要，您可以將廠商 (封裝（可能是非 Microsoft 轉銷商或 Microsoft 諮詢服務） (MCS) ) 或您可以將它們打包。 然後，您可以將這些套件新增至 Microsoft 受管理的桌面入口網站，並將它們指派給 Azure Active Directory 群組，以觸發部署。 
-
-如果您目前使用 Microsoft 端點設定管理員部署應用程式，則 Microsoft 受管理的桌面可以提供查詢來評估您的應用程式，並探索哪些專案準備好可遷移至 Microsoft Intune，以及哪些可能需要進行調整。
-
+您可能需要其他應用程式，才能進行商務作業。 這些應用程式僅能使用 Microsoft Intune 的部署管線部署至 Microsoft 受管理的桌面裝置。 如需應用程式部署的詳細資訊，請依照將 [應用程式部署至 Microsoft 受管理的桌面裝置](../get-started/deploy-apps.md)中的步驟進行。
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>準備您自己的應用程式以包含在 Microsoft 受管理的桌面
 查看您的應用程式，檢查：
@@ -60,32 +56,14 @@ Microsoft 將為適用于企業應用程式的包含 Microsoft 365 應用程式�
 - 應用程式必須準備好由 Microsoft Intune 進行管理。 如需本主題的詳細資訊，請參閱 [使用 Microsoft intune 的 Windows 10 應用程式部署](/intune/apps-windows-10-app-deploy) 及 [新增應用程式至 Microsoft intune](/intune/apps-add)。
 - 其他預先打包需求，例如提供授權金鑰、授權條款的合約，以及預先設定的伺服器連線。
 
-### <a name="decide-how-to-package-apps"></a>決定如何封裝應用程式
-
-有些獨立的軟體發行者可能需要先打包應用程式，才能進行集中部署。 「打包」表示應用程式的安裝程式是以授權金鑰、遠端伺服器位置或桌面快捷方式等設定來設定，以便在後臺安裝應用程式。
-
-有三個可讓您的應用程式封裝的選項： 
-
-
-- 您可以自行封裝應用程式
-- 您可以與非 Microsoft 廠商搭配使用
-- 您可以接洽 MCS 以封裝應用程式。 請與您的 Microsoft 客戶代表合作。 如需詳細資訊，請參閱使用 [Microsoft 諮詢服務](apps-MCS.md)。
-
-
-
-## <a name="deploying-apps"></a>部署應用程式
-
-任何您用來取得應用程式打包方式的方法完成之後，您就可以遵循將 [應用程式部署至 Microsoft 受管理的桌面裝置](../get-started/deploy-apps.md)中的步驟進行。
-
-
 ## <a name="steps-to-get-ready"></a>準備就緒的步驟
 
 1. 檢查 [Microsoft 受管理的桌面的必要條件](prerequisites.md)。
 2. 使用 [準備工作評估工具](readiness-assessment-tool.md)。
 3. [來賓帳戶的先決條件](guest-accounts.md)
-4. [Microsoft 受管理電腦的網路設定](network.md)
+4. [Microsoft 受管理的電腦的網路設定](network.md)
 5. [為 Microsoft 受管理的電腦準備認證和網路設定檔](certs-wifi-lan.md)
-6. [為 Microsoft 受管理的電腦準備備內部部署資源存取權](authentication.md)
+6. [為 Microsoft 受管理的電腦準備內部部署資源存取](authentication.md)
 7. [Microsoft Managed Desktop 中的應用程式](apps.md) (本文) 
 8. [為 Microsoft 受管理的電腦準備對應磁碟機](mapped-drives.md)
 9. [為 Microsoft 受管理的電腦準備列印資源](printing.md)

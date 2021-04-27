@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995018"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029059"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
@@ -226,7 +226,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 - 連絡人和會議會遷移至 Microsoft 團隊。
 - 使用者將無法在時間服務轉換為 Office 365 服務時登入商務用 Skype，而不會在客戶 DNS 專案完成之前登入。
 - 連絡人和現有的會議將繼續充當商務用 Skype 會議。
-- 在完成階段9後，Microsoft 小組的 web 瀏覽器版本將無法運作。
+- 只有在階段9完成之後，Microsoft 小組的網頁瀏覽器版本才會運作。
 
 如果您必須在遷移階段9完成之後，使用 PowerShell 連線到商務用 Skype Online，請使用下列 PowerShell 程式碼來連接：
 

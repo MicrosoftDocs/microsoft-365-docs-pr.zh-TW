@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 291ee6d2f72579a6daf731c121265164b2aaa547
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c82e1abf9e539ad169bbc488ade9cd21bb8e6727
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059632"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029071"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender 預覽功能
 
@@ -43,7 +43,7 @@ Microsoft 365 Defender 服務會不斷更新，以包含新功能增強功能及
 
 如需一般可用之新功能的詳細資訊，請參閱 [Microsoft 365 Defender 的新](whats-new.md)功能。
 
-## <a name="required-permissions"></a>必要的權限
+## <a name="required-permissions"></a>必要權限
 
 指派給下列 Azure Active Directory 的帳戶 (Azure AD) 角色可以開啟 Microsoft 365 Defender 預覽功能：
 
@@ -68,10 +68,6 @@ Microsoft 365 Defender 服務會不斷更新，以包含新功能增強功能及
 
 目前預覽版提供下列功能和增強功能：
 
-### <a name="improved-microsoft-365-security-center"></a>改進的 Microsoft 365 安全中心
-改良的 [Microsoft 365 安全性中心](https://security.microsoft.com)現在可供公開預覽。 這個新的體驗會將適用於端點的 Defender、適用於 Office 365 的 Defender、Microsoft 365 Defender 和更多功能帶到 Microsoft 365 安全性中心。 這是管理安全性控制的新家用。 [了解新功能](./overview-security-center.md)。
-
-- **[Microsoft 365 Defender 威脅分析報告](threat-analytics.md)** -威脅分析可協助您回應並將主動攻擊的影響降至最低。 您也可以瞭解 Microsoft 365 Defender 解決方案所封鎖的攻擊嘗試，並採取預防措施，緩解進一步披露及提高恢復的風險。 在統一的安全性體驗中，威脅分析現在可用於 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 授權持有者。
 - **[Microsoft 365 Defender APIs](api-overview.md)** -最上層的 Microsoft 365 Defender APIs 可讓您根據共用的事件和高級搜尋表格來自動化工作流程。 
 - **[在高級搜尋中採取動作](advanced-hunting-take-action.md)**：快速包含威脅或您在 [ [高級搜尋](advanced-hunting-overview.md)] 中找到的受損資產。
 - **[In 入口架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**-直接在「安全性中心」中取得高級搜尋架構表格的相關資訊。 除了資料表和欄描述之外，此參考還包含支援的事件種類 (`ActionType` 值) 和範例查詢。

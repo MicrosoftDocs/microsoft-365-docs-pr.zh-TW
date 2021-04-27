@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907453"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028661"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署實驗室套件
 
@@ -99,7 +99,7 @@ Windows 和 Office 部署實驗室套件的設計目的是協助您規劃、測�
 
 [下載 Windows 和 Office 部署的 Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-* 已安裝的基準版本2002可使用和內部主控台更新更新成版本2010。 請使用廣泛的網際網路連線來下載此內容，並允許自動布建的30-45 分鐘。 實驗室環境至少需要 16 GB 的可用記憶體和 150 GB 可用磁碟空間。 為了達到最佳效能，建議使用 32 GB 的可用記憶體和 300 GB 的可用空間。 套件會到期，2021年5月2日。 在到期之前會發佈新的版本。
+* 已安裝的基準版本2002可使用和內部主控台更新更新成版本2010。 請使用廣泛的網際網路連線來下載此內容，並允許自動布建的30-45 分鐘。 實驗室環境至少需要 16 GB 的可用記憶體和 150 GB 可用磁碟空間。 為了達到最佳效能，建議使用 32 GB 的可用記憶體和 300 GB 的可用空間。 套件于2021年7月22日到期。 在到期之前會發佈新的版本。
 
 ## <a name="additional-guidance"></a>其他指引
 
@@ -109,7 +109,7 @@ Windows 和 Office 部署實驗室套件的設計目的是協助您規劃、測�
 
   - [Windows 10 部署計劃](/windows/deployment/planning/index)
 
-  - [Microsoft 365 應用程式部署指南](/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Microsoft 365 Apps 部署指南](/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [開始使用 Intune](/intune/get-started-evaluation)
 
