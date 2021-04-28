@@ -20,18 +20,20 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 在系統管理中心更新您的系統管理員電話號碼和電子郵件地址。 如果您想要重設自己的系統管理員密碼，您將需要此資訊。
-ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 49e3cd3e861499d41107b9c76da175a95e74bb0e
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470914"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073774"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新您的系統管理員電話號碼和電子郵件地址
 
 本文說明您的系統管理員可以如何在 Microsoft 365 中變更您的商務電話和電子郵件地址。
   
 如果您想了解如何變更公司設定檔資訊 (如公司名稱與地址、公司電話號碼和技術連絡人資訊)，請參閱[變更貴組織地址、技術連絡人電子郵件和其他資訊](change-address-contact-and-more.md)。
+
+如需變更使用者連絡人資訊或移除之前員工的詳細資訊，請參閱 [相關內容](#related-content)。
   
 ## <a name="to-update-your-phone-number-and-email-address"></a>若要更新您的電話號碼和電子郵件地址
 
@@ -53,3 +55,13 @@ ms.locfileid: "51470914"
 - [變更 Microsoft 365 商務用帳單的帳單位址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [管理付款方式](../../commerce/billing-and-payments/manage-payment-methods.md)
+
+## <a name="related-content"></a>相關內容
+
+[變更使用者名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md) (影片) 
+
+[新增員工](../add-users/add-new-employee.md) (影片) 
+
+[移除離職員工](../add-users/remove-former-employee.md) (影片) 
+
+[存取及備份先前使用者的資料](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (文章) 

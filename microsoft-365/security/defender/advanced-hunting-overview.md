@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: df48ec921dee7d8f3b441ed3f68ed148c5c6c857
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f43d3bf9575f00649a2b5015a8be16351bebd11b
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932974"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073958"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>使用 Microsoft 365 Defender 中的高級搜尋主動搜尋威脅
 
@@ -40,7 +40,7 @@ ms.locfileid: "51932974"
 >
 
 進階搜捕是一種查詢式威脅搜捕工具，可讓您探索最多 30 天的原始資料。 您可以主動檢查您網路中的事件，以找出威脅指示器和實體。 對資料的靈活存取可對已知和潛在的威脅進行無限制的搜尋。
-<p></p>
+<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
@@ -55,17 +55,6 @@ ms.locfileid: "51932974"
 
 若要使用高級搜尋，請 [開啟 Microsoft 365 Defender](m365d-enable.md)。
 
-### <a name="before-you-begin"></a>開始之前
-
-使用者需要下列其中一層許可權才能存取 Microsoft Defender：
-
--  (讀寫) 的完整存取權
-- 唯讀存取權
-
-**完全存取**：具有完整存取權的使用者可以儲存、修改及共用查詢。 指派完整存取權限時，需要將使用者新增至 Azure Active Directory (AAD) 中的「安全性管理員」或「全域管理員」內建角色。
-
-**唯讀許可權**：具有唯讀存取權的使用者可以登入並查看所有警示和相關資訊。 他們將無法儲存、修改或共用查詢。 指派唯讀存取權限時，需要將使用者新增至 AAD 中的「安全性讀取器」內建角色。
-
 ## <a name="get-started-with-advanced-hunting"></a>開始使用進階搜捕
 
 我們建議您逐步完成一些步驟，快速開始使用高級搜尋。
@@ -73,14 +62,17 @@ ms.locfileid: "51932974"
 | 學習目標 | 描述 | 資源 |
 |--|--|--|
 | **瞭解語言** | 「高級搜尋」是以 [Kusto 查詢語言](/azure/kusto/query/)為基礎，支援相同的語法及運算子。 執行您的第一個查詢來開始學習查詢語言。 | [查詢語言概觀](advanced-hunting-query-language.md) |
-| **瞭解如何使用查詢結果** | 深入瞭解圖表和您可以查看或匯出結果的各種方式。 探索您如何快速調整查詢、深入查看以取得更豐富的資訊，以及採取回應動作。 | - [使用查詢結果](advanced-hunting-query-results.md)<br>- [對查詢結果採取動作](advanced-hunting-take-action.md) |
-| **了解結構描述** | 深入了解結構描述中的資料表和資料行。 瞭解在建立查詢時要尋找資料的位置。 | - [架構參考](advanced-hunting-schema-tables.md)<br>- [從 Microsoft Defender for Endpoint 轉換](advanced-hunting-migrate-from-mde.md) |
-| **取得專家秘訣和範例** | 透過 Microsoft 專家的指南訓練。 探索涵蓋不同威脅搜捕案例的預先定義查詢集合。 | - [取得專家訓練](advanced-hunting-expert-training.md)<br>- [使用共用查詢](advanced-hunting-shared-queries.md)<br>- [開始搜尋](advanced-hunting-go-hunt.md)<br>- [尋找跨裝置、電子郵件、應用程式和身分識別的威脅](advanced-hunting-query-emails-devices.md) |
-| **優化查詢並處理錯誤** | 瞭解如何建立高效且無錯誤的查詢。 | - [查詢最佳作法](advanced-hunting-best-practices.md)<br>- [處理錯誤](advanced-hunting-errors.md) |
-| **建立自訂偵測規則** | 瞭解您可以如何使用高級搜尋查詢來觸發提醒並自動採取回應動作。 | - [自訂偵測簡介](custom-detections-overview.md)<br>- [自訂偵測規則](custom-detection-rules.md) |
+| **瞭解如何使用查詢結果** | 深入瞭解圖表和您可以查看或匯出結果的各種方式。 探索您如何快速調整查詢、深入查看以取得更豐富的資訊，以及採取回應動作。 | - [使用查詢結果](advanced-hunting-query-results.md)<br /> - [對查詢結果採取動作](advanced-hunting-take-action.md) |
+| **了解結構描述** | 深入了解結構描述中的資料表和資料行。 瞭解在建立查詢時要尋找資料的位置。 | - [架構參考](advanced-hunting-schema-tables.md) <br />- [從 Microsoft Defender for Endpoint 轉換](advanced-hunting-migrate-from-mde.md) |
+| **取得專家秘訣和範例** | 透過 Microsoft 專家的指南訓練。 探索涵蓋不同威脅搜捕案例的預先定義查詢集合。 | - [取得專家訓練](advanced-hunting-expert-training.md) <br />- [使用共用查詢](advanced-hunting-shared-queries.md) <br />- [開始搜尋](advanced-hunting-go-hunt.md) <br />- [尋找跨裝置、電子郵件、應用程式和身分識別的威脅](advanced-hunting-query-emails-devices.md) |
+| **優化查詢並處理錯誤** | 瞭解如何建立高效且無錯誤的查詢。 | - [查詢最佳作法](advanced-hunting-best-practices.md)<br />- [處理錯誤](advanced-hunting-errors.md) |
+| **建立自訂偵測規則** | 瞭解您可以如何使用高級搜尋查詢來觸發提醒並自動採取回應動作。 | - [自訂偵測簡介](custom-detections-overview.md) <br />- [自訂偵測規則](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>取得存取權
-若要使用高級搜尋或其他 [Microsoft 365 Defender](microsoft-365-defender.md) 功能，您需要在 Azure Active Directory 中使用適當的角色。 此外，您可以使用 Microsoft Defender for Endpoint 中的角色型存取控制 (RBAC) 設定來決定您對端點資料的存取。 [閱讀管理 Microsoft 365 Defender 存取權](m365d-permissions.md)
+若要使用高級搜尋或其他 [Microsoft 365 Defender](microsoft-365-defender.md) 功能，您需要在 Azure Active Directory 中使用適當的角色。 [閱讀高級搜尋所需的角色和許可權](custom-roles.md)。
+
+此外，您可以使用 Microsoft Defender for Endpoint 中的角色型存取控制 (RBAC) 設定來決定您對端點資料的存取。 [閱讀管理 Microsoft 365 Defender 存取的相關資訊](m365d-permissions.md)。
+
 
 ## <a name="data-freshness-and-update-frequency"></a>資料新鮮度和更新頻率
 「高級搜尋」資料可以分類成兩種不同的類型，每個不同的合併。

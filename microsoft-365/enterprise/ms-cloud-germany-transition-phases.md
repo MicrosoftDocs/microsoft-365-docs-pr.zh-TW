@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 481447fa291354b3377648089cff193a2ad6fc2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 354ca55bae7704c011af5a76a1112e4d2ecb47ca
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061082"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073922"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
@@ -264,18 +264,26 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 ## <a name="phase-9-office-apps"></a>階段9： Office 應用程式
 
-**適用于：** 所有使用 Office 桌面應用程式的客戶 (Word、Excel、PowerPoint、Outlook ... ) 
+**適用于：** 所有使用 Office 桌面應用程式的客戶 (Word、Excel、PowerPoint、Outlook、OneDrive ... ) 
+
+在此階段中，所有用戶端應用程式和 Office Online 都執行用戶端轉換。 Azure AD 完成租使用者範圍以指向 Office 365 服務和相關端點。
 
 轉換至地區 "德國" 的 office 365 租使用者要求所有使用者關閉、登出 Office 365，然後重新登出所有 Office 桌面應用程式 (Word、Excel、PowerPoint、Outlook 等等 ) 和 OneDrive 在租使用者遷移到達階段9之後。 登出和簽出，可讓 Office 服務從全域 Azure AD 服務取得新的驗證權杖。
+
+在執行從應用程式登出和登入後，Office 桌面應用程式無法運作，強烈建議您在受影響的機器上執行 [Office 用戶端轉換工具 (OCCT) ](https://github.com/microsoft/OCCT) 以修正此問題。
+
+如果已在 Windows 用戶端上預先部署及排程 [Office 用戶端轉換工具 (OCCT) ](https://github.com/microsoft/OCCT) ，則不需要登出/登入程式。
 
 使用最新的 Office 應用程式可確保最佳的使用者體驗。 企業應該考慮使用每月的 Enterprise 通道。
 
 請確定您已完成行動 [裝置](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) 的準備工作。
 
-| 步驟 (s)  | 描述 | 影響 |
-|:-------|:-------|:-------|
-| 用戶端，office Online 在 Office 用戶端轉換時，Azure AD 已完成租使用者範圍以指向 Office 365 服務。 | 這種設定變更可讓 Office 用戶端更新並指向 Office 365 服務端點。 | <ul><li>通知使用者關閉 _所有_ Office 應用程式，然後重新登入 (或強制用戶端重新開機，或強制使用者登入) ，以讓 Office 用戶端選擇變更。 </li><li>通知使用者和問訊台人員使用者 *可能會* 看到 office 橫幅，提示他們在轉換的72小時內重新啟用 office 應用程式。 </li><li>必須關閉個人電腦上的所有 Office 應用程式，且使用者必須登出後再登入。 在黃色啟用欄中，登入以重新啟用 Office 365 服務。</li><li>共用電腦需要與個人電腦類似的動作，而且不需要特殊的程式。 </li><li>在行動裝置上，使用者必須登出應用程式，並將其關閉，然後再次登入。</li></ul>|
-||||
+其他考慮：
+- 通知使用者關閉所有 Office 應用程式，然後重新登入 (或強制用戶端重新開機，或強制使用者登入) ，以讓 Office 用戶端選擇變更。
+- 通知使用者和問訊台人員使用者可能會看到 Office 橫幅，提示他們在轉換的72小時內重新啟用 Office 應用程式。
+- 必須關閉個人電腦上的所有 Office 應用程式，且使用者必須登出後再登入。 在黃色啟用欄中，登入以重新啟用 Office 365 服務。
+- 共用電腦需要與個人電腦類似的動作，而且不需要特殊的程式。
+- 在行動裝置上，使用者必須登出應用程式，並將其關閉，然後再次登入。
 
 ## <a name="phase-9-line-of-business-apps"></a>階段9：商務營運應用程式
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab3d3aa9a13b71f65d3d4335646e32a7e4270242
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061046"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073826"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>受支援的適用於端點的 Microsoft Defender API
 
@@ -69,7 +69,6 @@ ms.locfileid: "52061046"
 [電腦方法和屬性](machine.md) | 執行 API 通話，例如 \- get 裝置、依識別碼取得裝置、登入使用者的相關資訊、編輯標記等等。
 [電腦動作方法和屬性](machineaction.md) | 執行 [隔離] 等 API 呼叫 \- ，執行反病毒掃描等等。
 [建議方法和屬性](recommendation.md) | 執行 API 通話，例如 \- 依識別碼取得建議。
-[修復活動方法和屬性](get-remediation-methods-properties.md) | 執行 API 呼叫，例如 \- 取得所有修復工作、取得公開的裝置修復工作，並依識別碼取得一個修復工作。
 [分數方法和屬性](score.md) | 執行 API 通話（如 \- 取得披露分數或取得裝置安全分數）。
 [軟體方法和屬性](software.md) | \-依軟體執行清單漏洞等 API 通話。
 [使用者方法](user.md) | 執行 API 通話，例如 \- 取得使用者相關的警示和使用者相關的裝置。
