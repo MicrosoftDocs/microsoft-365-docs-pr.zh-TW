@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: 瞭解如何搭配使用 Azure ExpressRoute 搭配 Office 365，並規劃網路實施專案（如果您要使用它進行部署）。
-ms.openlocfilehash: d4c14d97cff2952f5f7052a8aa2940f05d644737
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8047cdaa1325df487709660b558420609afffd42
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023722"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073946"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute for Office 365
 
@@ -39,9 +39,7 @@ ms.locfileid: "52023722"
 > Azure Express 路由中不支援 Microsoft Defender for Endpoint。
 
 > [!NOTE]
-> 若要使用 Office 365 ExpressRoute，必須使用 Microsoft 授權。 當客戶的法規需求規定直接連線時，Microsoft 會檢查每家客戶要求的 ExpressRoute，並授權 Office 365 的使用。 如果您有這些需求，請與您的 Microsoft 帳戶代表聯繫，以開始進行 Microsoft 評論。 嘗試建立 Office 365 之路由篩選的未授權訂閱將會收到 [錯誤訊息](https://support.microsoft.com/kb/3181709)。
-
-您現在可以為選取的 Office 365 網路流量，新增到 Office 365 的直接網路連線。 Azure ExpressRoute 提供直接連線、可預知的效能，並提供 Microsoft 網路元件的99.95% 的正常執行時間 SLA。 您仍需要網際網路連線，以取得未透過 Azure ExpressRoute 支援的服務。
+> 建議您不要對 Microsoft 365 執行 ExpressRoute，因為在大多數情況下，它不會提供服務的最佳連線模型。 如此一來，就必須使用 microsoft 授權，才能使用 Microsoft 365 的此連線模型。 我們只會在必要的少數案例中查看每個客戶要求和授權 ExpressRoute Microsoft 365。 如需詳細資訊，請參閱 [microsoft 365 指南的 ExpressRoute](https://aka.ms/erguide) ，並遵循您的生產力、網路及安全性小組，與您的 Microsoft 帳戶小組合作，以提交例外狀況。 嘗試建立 Office 365 之路由篩選的未授權訂閱將會收到 [錯誤訊息](https://support.microsoft.com/kb/3181709)。
 
 ## <a name="planning-azure-expressroute-for-office-365"></a>規劃 Office 365 的 Azure ExpressRoute
 
@@ -64,7 +62,7 @@ ms.locfileid: "52023722"
 
 下表列出 ExpressRoute 支援的 Office 365 服務。 請參閱 [Office 365 端點文章](./urls-and-ip-address-ranges.md) ，以瞭解這些應用程式的哪些網路要求需要網際網路連線。
 
-|**包含的應用程式**|
+| 包含的應用程式 |
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |商務用 Skype Online<sup>1</sup> <br/> Microsoft 團隊 <sup>1</sup> <br/> |

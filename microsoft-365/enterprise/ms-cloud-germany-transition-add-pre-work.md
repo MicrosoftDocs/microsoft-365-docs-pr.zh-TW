@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的準備工作。
-ms.openlocfilehash: ce7aad932482d7a9d1681957c06b85ab22a82149
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9c3aff56f5d85cd1b98747ef5b747720af74fe02
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760389"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073934"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的預先遷移活動
 
@@ -33,7 +33,7 @@ ms.locfileid: "51760389"
 
 - **Office 365 在 Microsoft Cloud Deutschland 中**，執行 [下列步驟](#general-tenant-migration-considerations)。
 - **自訂網域**，請執行 [此步驟](#dns-entries-for-custom-domains)。
-
+- **Office app**，請考慮 [此步驟](#office-apps)。
 - **SharePoint 線上**，請執行 [此步驟](#sharepoint-online)。
 - **Exchange Online** 或 **exchange 混合** 式，請執行 [此步驟](#exchange-online)。
 - **商務用 Skype Online**，請執行 [此步驟](#skype-for-business-online)。
@@ -83,6 +83,19 @@ nslookup -querytype=CNAME msoid.contoso.com
 
 > [!NOTE]
 > 如果您使用的是 Exchange Online 的自訂網域，您必須可以存取您的 DNS 主機服務提供者。 請確定您可以存取和編輯您的 DNS 設定，您會在遷移期間修改 DNS 記錄。
+
+## <a name="office-apps"></a>Office 應用程式
+
+**適用于**：使用 Office 應用程式的客戶，特別是在 Windows 用戶端上 <br>
+套用 **時：在** 階段9開始之前的任何時間
+
+轉換至地區 "德國" 的 office 365 租使用者要求所有使用者關閉、登出 Office 365，然後重新登出所有 Office 桌面應用程式 (Word、Excel、PowerPoint、Outlook 等等 ) 和 OneDrive 在租使用者遷移到達階段9之後。 登出和簽出，可讓 Office 服務從全域 Azure AD 服務取得新的驗證權杖。
+
+這對於所有用戶端都是必要的。 為了確保順利進行遷移的體驗，強烈建議您提前通知並指示所有受影響的使用者，並在此即將發生的活動的早期階段。
+
+使用受管理的 Windows 用戶端的客戶可以使用 [Office 用戶端切換工具 (OCCT) ](https://github.com/microsoft/OCCT)來準備 Windows 電腦。 OCCT 設計為定期在 Windows 用戶端上執行，直到租使用者到達遷移的階段9為止。 當您已到達階段9時，OCCT 會自動在機器上執行所有必要的變更，而不需要使用者互動。
+
+您可以隨時在 Windows 用戶端上部署 OCCT，直到階段9。 [！附注] 如果 OCCT 應支援遷移體驗，建議您儘快啟動部署，以規定用戶端數目上限。
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
 
@@ -222,7 +235,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 開始：
 
