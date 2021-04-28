@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解您可以使用的群組類型。
-ms.openlocfilehash: 8565b567706a70bb014fab42b23e9c55fb0efc45
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b67fa5e7dc661163ce6c2c8933ebdafd0a5940d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908743"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023842"
 ---
 # <a name="compare-groups"></a>比較群組
 
@@ -83,8 +83,8 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 
 目前無法將共用信箱移轉至 Microsoft 365 群組。 這是您需要的內容嗎？ 請告訴我們。 **[在這裡投票](https://go.microsoft.com/fwlink/?linkid=871518)**。
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[深入了解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[深入了解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (文章)
 
-[為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+[為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (文章)

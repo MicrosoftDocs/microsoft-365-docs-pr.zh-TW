@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 判斷 Microsoft 365 客戶資料的全球儲存位置
-ms.openlocfilehash: 4c55010508f2b5bde1641b9b7552e4acb95a12d3
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: b3a3978bc166f9c302fe9c28b016d56742acd9de
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760233"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028953"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客戶資料的儲存位置
 
@@ -813,7 +813,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | 工作場所分析 | 美國 |
 </p></details>
 
-## <a name="bosnia"></a>波士尼亞
+## <a name="bosnia-and-herzegovina"></a>波士尼亞與赫塞哥維納
 <details><summary>按一下以展開</summary><p>
 
 | 服務 | 位置 |

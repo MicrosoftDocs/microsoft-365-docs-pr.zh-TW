@@ -1,5 +1,5 @@
 ---
-title: 使用防篡改保護來保護安全性設定
+title: 使用竄改防護來保護安全性設定
 ms.reviewer: shwjha, hayhov
 manager: dansimp
 description: 使用防篡改保護，防止惡意應用程式變更重要的安全性設定。
@@ -15,14 +15,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 84864965d7a18902a01307c1dcf373fa7c0534e8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ff98b78d113a67ad6bd816753c691e8afe71dd77
+ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765572"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52065070"
 ---
-# <a name="protect-security-settings-with-tamper-protection"></a>使用防篡改保護來保護安全性設定
+# <a name="protect-security-settings-with-tamper-protection"></a>使用竄改防護來保護安全性設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51765572"
 
 - Windows 10
 - Windows Server 2019
-- Windows Server，版本1803或更新版本
+- Windows Server 版本 1803 或更新版本
 - Windows Server 2016
 
 ## <a name="overview"></a>概觀
@@ -61,6 +61,8 @@ ms.locfileid: "51765572"
 
 防篡改保護不會使您無法查看安全性設定。 而且，篡改保護不會影響協力廠商防病毒應用程式如何在 Windows 安全性應用程式中註冊。 如果您的組織使用 Windows 10 企業版 E5，個別的使用者就無法變更不可篡改的保護設定。在這種情況下，安全小組會管理防篡改保護。
 
+
+
 ### <a name="what-do-you-want-to-do"></a>您要執行的工作
 
 | 若要執行此工作 .。。 | 請參閱本節 .。。 |
@@ -73,6 +75,19 @@ ms.locfileid: "51765572"
 | 回顧安全性建議 | [檢查安全性建議](#review-your-security-recommendations) |
 | 複查 (FAQs 的常見問題解答清單)  | [流覽 FAQs](#view-information-about-tampering-attempts) |
 
+根據您用來啟用防篡改保護的方法或管理工具，可能會對對應 (雲端傳送保護) 上的依賴性。 
+
+下表提供方法、工具和相依性的詳細資料。
+
+
+
+|     啟用防篡改保護的方式                                         |     對地圖的相依性 (雲端提供的保護)     |
+|------------------------------------------------------------------------------|--------------------------------------------------------|
+|     Microsoft Intune                                                         |     否                                                 |
+| Microsoft Endpoint Configuration Manager + 租使用者附加                     |     否                                                 |
+|     Microsoft Defender for Endpoint 入口 (securitycenter.microsoft.com)     |     是                                                |
+|     Microsoft 365 Defender 入口網站 (security.microsoft.com)                    |     是                                                |
+
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>使用 Microsoft Defender 安全中心管理組織的篡改保護
 
 您可以使用 Microsoft Defender Security Center () ，為您的租使用者開啟或關閉不可篡改的保護 [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 以下是一些需要謹記的要點：
@@ -84,6 +99,9 @@ ms.locfileid: "51765572"
 - 當您在 Microsoft Defender Security Center 中管理防篡改保護時，此設定會套用租使用者寬度，影響所有執行 Windows 10、Windows Server 2016 或 Windows Server 2019 的裝置。 若要微調防篡改保護 (例如對某些裝置進行未篡改的保護，但對某些裝置關閉) 了防篡改保護，請使用 [Intune](#manage-tamper-protection-for-your-organization-using-intune) 或 [Configuration Manager with 承租人 attach](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)。
 
 - 如果您有混合式環境，則在 Intune 中設定的防篡改防護設定會優先于 Microsoft Defender Security Center 中設定的設定。 
+
+
+
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-defender-security-center"></a>在 Microsoft Defender 安全中心管理防篡改保護的需求
 
@@ -297,4 +315,4 @@ Windows 10 作業系統 [1709](/windows/release-health/status-windows-10-1709)�
 
 [深入瞭解 Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
 
-[更好搭配： Microsoft Defender 防病毒和 Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+[相得益彰：Microsoft Defender 防毒軟體與適用於端點的 Microsoft Defender](why-use-microsoft-defender-antivirus.md)
