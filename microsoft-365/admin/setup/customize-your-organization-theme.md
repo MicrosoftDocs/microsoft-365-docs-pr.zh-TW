@@ -21,68 +21,141 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: '瞭解如何變更 Microsoft 365 的預設主題，並自訂主題以配合公司標誌或色彩。 '
-ms.openlocfilehash: 9d17ac800fb0fe38627fcb7842ed5555d2ac28ae
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: '瞭解如何變更 Microsoft 365 的預設主題，並加以自訂，使其符合您公司的徽標或色彩。 '
+ms.openlocfilehash: b7a0b142b8bd465a9e3258aaaeb951b72bc53fc7
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926879"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060903"
 ---
-# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>為您的組織自訂 Microsoft 365 主題
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自訂群組織的 Microsoft 365 主題
 
-做為商務用 Microsoft 365 訂閱的系統管理員，您可以變更組織中每個人的上方流覽列顯示的預設主題：
+做為組織的系統管理員，您可以為組織中的人員建立多個主題，並選取哪些主題適用于組織的不同成員。 組織主題是顯示在組織中人員的上方導覽列中。
 
-- 新增您的公司標誌。
-- 變更色彩以配合品牌的其餘部分。
-- 新增使用者選取您的標誌時要前往的目的地連結。
+您可以新增或更新套用至組織內所有人員的預設主題。您也可以建立最多四個其他的群組主題，這些主題可指派給多個 Microsoft 365 群組。
   
-## <a name="customize-your-theme-in-the-admin-center"></a>在系統管理中心自訂主題
+## <a name="add-or-update-your-organizations-theme"></a>新增或更新組織的主題
 
-1. 在系統管理中心中，前往設定 \> **組織** 設定頁面，然後選擇組織 **設定檔分頁**。
+1. 在系統管理中心中，移至 [ **設定** \> **組織設定** ] 頁面，然後選擇 [ **組織設定檔** ] 索引標籤。
 
-2. 在組織 **設定檔的 Tab** 上，選擇自訂 **主題**。
+2. 在 [ **組織設定檔** ] 索引標籤上，選取 [ **組織主題**]。
 
-3. 在主題 **面板** 上，變更您為組織想要的主題元素：
+您可以使用下列索引標籤自訂所有主題。
 
-    - **使用自訂標誌影像**：選擇是否要使用 URL 中的影像或上傳影像。 如果您使用 URL，請確認 URL 是使用 HTTPS，且圖像大小為 200 x 30 圖元，為任何大小的任何格式。 您可以在 10 KB 以下上傳 JPG、PNG、GIF 或 SVG 格式的 200 x 30 圖元標誌。
+|**Tab**|**您可以做什麼？**|
+|:-----|:-----|
+|[一般](#general-modify-a-theme) <br/> |修改主題名稱，並最多指派至五個群組 (（如果適用）) 。  <br/> |
+|[標誌](#logos-specify-your-theme-logos) <br/> |新增您的主題標誌（包括 Office 深色主題和行動裝置選項）。  <br/> |
+|[Colors](#colors-choose-theme-colors) <br/> |指定導覽列、強調文字和圖示色彩，以自訂色彩配置。 <br/> |
 
-      > [!NOTE]
-      > 若要在 SharePoint 行動應用程式中顯示標誌，請僅使用 SVG 影像。 以任何其他格式上傳的影像不會顯示在應用程式中。 標誌在 SharePoint Mobile App 中無法點按。
+## <a name="general-modify-a-theme"></a>一般：修改主題
 
-    - **讓標誌可點** 按一下：您可以在流覽欄中使用標誌做為任何公司資源的連結。 您可以在這裡輸入標誌的 URL，從HTTP://或HTTPs://。 這是選擇性的。
+您在 [一般] 索引標籤上的經驗，取決於您是否要新增或修改預設主題或群組主題。
 
-    - **選取背景影像**：選取影像，然後上傳您自己的 JPG、PNG 或 GIF ，解析度為 1366 x 50 圖元，且不超過 15 KB。 此背景影像會在每個頁面的上方導覽列中出現。
+### <a name="update-the-default-theme"></a>更新預設主題
 
-      > [!NOTE]
-      > 包含文字的影像可能無法如預期方式顯示。 顯示在流覽欄左右兩側的內建元素可能會隨服務而不同，而且您的文字可能會因這些元素而遮住了。
+預設主題是顯示的第一個主題。  
 
-    - **流覽欄色彩**：選取用於流覽欄背景的色彩。 流覽列會顯示于每一頁的頂端。
+1. 如果您先前已自訂群組織的主題，請選取 [ **預設主題** ]，並使用其中一個儲存的自訂專案，或選取 [ **新增主題**]。
+2. 在 [ **一般** ] 頁面上，您可以防止使用者覆寫其主題，並顯示使用者的顯示名稱。
+3. 選取 **[儲存]** 以儲存變更。  
 
-    - **文字和圖示**：選取用於上方導覽列中文字和圖示的顏色。
+> [!IMPORTANT]
+> 預設主題是唯一的，它不能重新命名並套用到組織內的每個人。 若要刪除預設主題，您必須先刪除所有其他主題。
 
-    - **強調色**：選取用於流覽欄按鈕的色彩，以將游標停留在色彩和頁面重音上，例如按鈕和特定應用程式上的文字。
+:::image type="content" source="../../media/default-theme-general.png" alt-text="螢幕擷取畫面： [一般] 索引標籤顯示組織的預設主題":::
 
-    - **防止使用者覆蓋主題**：翻轉此切換開關以防止使用者在我們的主題選取範圍中自行選擇主題。 這無法防止使用者設定高對比主題。
+### <a name="create-a-group-theme"></a>建立群組主題
 
-    - **顯示使用者名稱**：選擇在使用者已簽署時，是否要在進入點顯示使用者的全名，並顯示在頁面右上方的帳戶管理員。 根據預設，如果沒有上傳相片，使用者會看到他們的相片或縮寫。
+您最多可以建立四個額外的群組主題。
 
-4. 選取 **[儲存變更]**。
+1. 在 [ **一般** ] 頁面上，輸入主題的名稱。
 
-您可以馬上在系統管理中心看到新的主題。 經過一小段延遲之後，您可以在整個 Microsoft 365 中查看它，包括 Outlook、SharePoint、iOS 版 [SharePoint](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a)行動應用程式，以及 Android 版 [SharePoint 行動](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284)應用程式上的頁面。
+2. 在 [ **群組**] 底下，您最多可以選擇5個可查看群組主題的 Microsoft 365 群組，而不是使用預設主題。 您也可以防止使用者覆寫其主題，並顯示使用者的顯示名稱。
 
-您可以隨時移除自訂圖示或自訂色彩。 只要返回主題頁面，然後選取移除 **自訂主題。**
+3. 選取 ****[儲存]。
+
+:::image type="content" source="../../media/default-theme-general-users.png" alt-text="螢幕擷取畫面： [一般] 索引標籤顯示組織中使用者群組的預設主題":::
+
+## <a name="logos-specify-your-theme-logos"></a>標誌：指定您的主題標誌
+
+在 [ **徽標** ] 頁面上，您可以新增您的徽標，並指定使用者在選取標誌時所要流覽的 URL。
+
+- **預設徽標**：新增指向您的徽標的 URL 位置。 請確定 URL 使用 HTTPS，且影像至少為 200 x 30 圖元。 您的預設標誌可以是 JPG、PNG、GIF 或 SVG 格式。
+- **替代標誌**：新增指向您的徽標的 URL 位置。 您的替代徽標應該已經過優化，可用於 Office 深色主題。 與預設標誌相同的需求。
+- **小型預設標誌**：新增指向您的徽標的 URL 位置。 影像至少必須是 48 x 48 圖元。 您可以調整此影像，使其適合小型或移動裝置。
+- **小型替代標誌**：新增指向您的徽標的 URL 位置。 這個圖像的需求與小型預設的標誌相同。
+- **按一下連結**：新增指向您的標誌的 URL 位置。 您可以使用您的徽標作為任何公司資源的連結，例如公司的網站。
+
+選取 **[儲存]** 以儲存變更。
+
+您可以隨時移除您的徽標。 只需回到 [ **徽標** ] 頁面，然後選取 [ **移除**]。
+
+:::image type="content" source="../../media/default-theme-logos.png" alt-text="螢幕擷取畫面： [徽標] 索引標籤顯示組織的預設主題標誌":::
+
+> [!NOTE]
+> 根據預設，我們會先顯示大部分組織所使用的標誌選項。 若要查看所有標誌選項，請移至清單底部，然後選取 [ **查看高級選項**]。
   
-## <a name="best-practices"></a>最佳做法
+## <a name="colors-choose-theme-colors"></a>色彩：選擇主題色彩
 
-- **標誌影像**：使用 SVG 檔案類型，讓標誌在所有螢幕上及所有縮放等級上以高解析度顯示。
+在 [ **色彩** ] 頁面上，您可以設定預設色彩，並選擇應該使用的徽標。
 
-- **自訂色彩**：選擇具有高對比比例的 **Nav bar** 背景色彩，以及 **您** 挑選的標誌影像。 選擇高 **對比度** 的文字和圖示色彩，讓所有文字和圖示清楚顯示。
+- **導覽列色彩**：選取要用於導覽列背景的色彩。 導覽列會出現在每一頁的頂端。
+- **文字和圖示色彩**：選取用於上方導覽列上之文字和圖示的色彩。
+- **強調色彩**：選擇在白色或淺色背景上顯示效果很好的色彩。 口音色彩是用來色彩顯示在白色或淺色背景上的某些連結和按鈕。 例如，口音色彩是用來在使用者的收件匣和其 Office.com 入口網站頁面上色彩元素。
+- **重設色彩**：選取此連結可將色彩重設為預設色彩。
+- **應該使用哪一個徽標？**：選取預設的徽標或您自行建立的任何其他標誌。
 
-- **強調色**：挑選一個在白色或淺色背景上顯示的色彩。 強調色是用來為顯示在白色或淺色背景上的連結和按鈕著色。 例如，重音色彩可用來為使用者之信箱及其入口網站頁面上Office.com元素。
-  
-- **對比比例**：建議的文字、圖示或按鈕色彩與背景色彩之間的對比比例為 4.5：1。
+:::image type="content" source="../../media/default-theme-colors.png" alt-text="螢幕擷取畫面： [色彩] 索引標籤顯示組織的預設主題色彩":::
+
+## <a name="frequently-asked-questions"></a>常見問題集
+
+### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>「我的組織」已具備所有員工的主題。 這會如何變更？
+
+預設主題將繼續顯示給所有員工。新增群組主題只會供與該主題關聯的 Microsoft 365 群組使用。
+
+### <a name="whydont-isee-group-themes-in-the-admin-center"></a>為什麼我看不到系統管理中心的群組主題？
+
+只有全域系統管理員可以自訂公司主題。全域讀取者具有唯讀存取權。
+
+### <a name="how-many-different-themes-can-i-set-up-for-my-organization"></a>我可以為我的組織設定多少種不同的主題？  
+
+最多可建立五個主題。 預設主題和四個群組主題。  
+
+### <a name="can-i-use-security-groups-or-distribution-groups-instead-of-microsoft-365-groups"></a>我可以使用安全性群組或通訊群組，而不是 Microsoft 365 群組嗎？
+
+否，新的群組主題必須對應至一或多個 Microsoft 365 群組，而非安全性群組或通訊群組。
+
+> [!NOTE]
+> 您可以將 [通訊群組轉換成 Outlook 中的 Microsoft 365 群組](../manage/upgrade-distribution-lists.md) 。
+
+### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>我可以手動指派獨立于 Microsoft 365 群組的主題嗎？  
+
+否，新的群組主題必須對應至一或多個 Microsoft 365 群組。 屬於 Microsoft 365 群組成員的使用者，將會取得套用至其群組的主題。 您可以移至系統管理中心的 [ **設定**] 群組，[建立並新增成員至 Microsoft 365 群組](../create-groups/create-groups.md)   >  **** 。
+
+### <a name="what-happens-if-a-user-is-assigned-to-multiple-group-themes"></a>如果使用者指派至多個群組主題，會發生什麼情況？  
+
+指派給多個群組主題的使用者會顯示預設主題。  
+
+### <a name="why-cant-i-delete-the-default-theme"></a>為何無法刪除預設主題？  
+
+只有在刪除所有群組主題之後，才能刪除預設主題。 在您嘗試刪除群組主題之前，請先確定您刪除所有群組主題。
+
+### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>為什麼我每次上傳標誌 URL 時收到錯誤訊息。  
+
+確定您所使用的標誌是以公開定址 URL 的形式指定。 請遵循下列步驟，將 [標誌上傳至 Azure Blob 儲存區](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) 或 [Office 365 內容傳遞網路與 SharePoint 線上](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
+
+### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>為什麼收到「不符合最小色彩對比度的4.5： 1 "的郵件？
+
+Text、icon 或 button 色彩及背景色彩之間的建議對比比率為4.5：1。 您可以覆寫此建議，但仍然儲存您的主題，因為這不是必要條件。
+
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>如果我定義主題，將會使用 Microsoft 365 中的哪一個位置呢？
+
+任何主題都會出現在組織中所有人的上方導覽列中，做為 Microsoft 365 套件標頭的一部分。  
   
 ## <a name="related-articles"></a>相關文章
 
 [在 [我的 App] 頁面和 App 啟動器上新增自訂磚](../manage/customize-the-app-launcher.md)
+
+[系統管理員的 Microsoft 365 群組概觀](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups) (部分機器翻譯)

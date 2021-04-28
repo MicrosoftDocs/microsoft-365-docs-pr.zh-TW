@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 0edc3847d6b832f254c6f289355570a3a044b1f4
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650311"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061034"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>跨 Microsoft 365 E5 部署威脅防護功能
 
-此解決方案說明跨 Microsoft 365 E5 強大的威脅防護功能。 請閱讀此方案，以取得其包含內容、運作方式，以及如何開始在組織中部署這些功能的概覽。
+此解決方案說明跨 Microsoft 365 E5 的強大威脅防護功能，以及這些功能為何很重要。 請閱讀此方案，以取得 Microsoft 365 E5 中包含的內容、威脅防護功能的運作方式，以及如何在組織中設定及設定威脅防護。
 
-## <a name="why-protecting-against-threats-is-important"></a>為何防護威脅很重要 
+## <a name="why-threat-protection-is-important"></a>威脅防護為何很重要 
 
 [惡意](/windows/security/threat-protection/intelligence/understanding-malware)代碼和複雜的 cyberattacks （例如 [fileless 威脅](/windows/security/threat-protection/intelligence/fileless-threats)）都是常見的時機。 企業必須以有效的 IT 安全性功能來保護自己及其客戶。 Cyberattacks 可能會造成組織的主要問題，包括從失去信任到財務 woes、業務威脅停機等等。 防護威脅很重要，但決定組織的時間、精力和資源的位置，可能會有很大的難度。 Microsoft 365 E5 可提供協助。 
 
@@ -63,7 +63,7 @@ Microsoft 365 Defender 會將信號和資料一起帶入整合的 [Microsoft 365
 |適用於身分識別的 Microsoft Defender     |  利用內部部署 Active Directory 網域服務 (AD DS) 信號來識別、偵測和調查您組織中的高級威脅、已遭破壞的身分識別和惡意有問必答行動的雲端式安全性解決方案。 著重于 Microsoft Defender for Identity，因為它會保護您的內部部署和雲端基礎結構、沒有相依性或必要條件，而且可以提供立即的安全性效益。 | 
 |適用於 Office 365 的 Microsoft Defender     | 保護您的組織免受電子郵件訊息、連結 (URLs) 和共同作業工具帶來的惡意威脅。 針對惡意程式碼、網路釣魚、欺騙及其他攻擊類型的保護。 建議您先設定 Microsoft Defender for Office 365，因為變更控制、從委任系統移轉設定，以及其他考慮可能需要較長時間進行部署。 <p>**附注**：請務必設定所有 Office 365 訂閱中所包含的威脅防護功能 (Exchange Online protection) 。       |
 |適用於端點的 Microsoft Defender    | Endpoint protection 平臺，可協助避免、偵測、調查和回應高級威脅。  Defender for Endpoint 可能需要一些時間才能部署，但設定可與其他功能同時進行。   |
-|Microsoft 雲端 App 安全性     |   雲端存取安全性經紀人，用於探索、調查和控管。 您可以及早啟用 Microsoft Cloud App Security，以開始收集資料和洞察力。 在您的 SaaS 應用程式中實施資訊和其他有針對性的保護，需要規劃，而且可能需要更多時間。       | 
+|Microsoft Cloud App Security     |   雲端存取安全性經紀人，用於探索、調查和控管。 您可以及早啟用 Microsoft Cloud App Security，以開始收集資料和洞察力。 在您的 SaaS 應用程式中實施資訊和其他有針對性的保護，需要規劃，而且可能需要更多時間。       | 
 
 > [!TIP]
 > 具有多個安全小組的組織可以平行執行這些功能。 

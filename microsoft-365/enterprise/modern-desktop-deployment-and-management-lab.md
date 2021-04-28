@@ -2,10 +2,10 @@
 title: Windows 和 Office 部署實驗室套件
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: greglin
+author: greg-lindsay
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028661"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060870"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署實驗室套件
 
@@ -104,23 +104,15 @@ Windows 和 Office 部署實驗室套件的設計目的是協助您規劃、測�
 ## <a name="additional-guidance"></a>其他指引
 
   - [來自 Microsoft Mechanics 的桌面部署中心系列影片](https://www.aka.ms/watchhowtoshift)
-
   - [Microsoft Endpoint Configuration Manager 作業系統部署](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-
   - [Windows 10 部署計劃](/windows/deployment/planning/index)
-
   - [Microsoft 365 Apps 部署指南](/deployoffice/deployment-guide-microsoft-365-apps)
-
   - [開始使用 Intune](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>相關資源
 
   - [介紹 Microsoft Office 365](https://www.microsoft.com/microsoft-365/default.aspx) (英文)
-
   - [商務用 Office 365](https://products.office.com/business/office)
-
   - [Introducing Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
   - [適用於企業的 Windows 10](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-
   - [適用於中小型企業的 Windows 10](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)

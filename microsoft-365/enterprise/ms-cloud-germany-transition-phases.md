@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 481447fa291354b3377648089cff193a2ad6fc2a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029059"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061082"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
 從 Microsoft Cloud Deutschland 的承租人遷移 (MCD) Microsoft Office 365 全域服務的地區 "德國"，會做為每一個工作負載的一組階段和各自設定的動作執行。 下圖顯示遷移至新德文資料中心的十大階段。
 
-![遷移至新的德國資料中心的十大階段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+[![遷移至新的德國資料中心 ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png) 的十大階段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 根據組織的整體規模和複雜度，遷移程式會在數周內完成。 進行遷移時，使用者與系統管理員可以繼續利用本檔中詳細資訊的服務。 在遷移期間，圖形和表格會定義階段和步驟。
 
@@ -125,7 +125,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 |:-------|:-----|:-------|
 | 轉換 SharePoint 和 OneDrive | SharePoint 線上和商務 OneDrive 會從 Microsoft Cloud Deutschland 遷移至此階段中的 Office 365 全域服務。<br><ul><li>現有的 Microsoft Cloud Deutschland URLs 會保留 (例如， `contoso.sharepoint.de`) 。</li><li>保留現有的網站。</li><li>Microsoft Cloud Deutschland 或 Office 365 全域服務實例中，由 Security Token Service 所發出的用戶端驗證權杖 (STS) 在轉換期間是有效的。</li></ul>|<ul><li>在遷移期間，內容將是唯讀的兩個簡短期間。 在此期間，您會發現 SharePoint 中的「無法編輯內容」橫幅。</li><li>搜尋索引不會被保留，而且可能需要最多10天才能重建。</li><li>在遷移期間，商務內容的 SharePoint 線上和 OneDrive 會以唯讀的兩個簡短期間為唯讀。 在此期間，使用者會看到「您無法編輯內容」橫幅。</li><li>當您完成 SharePoint 線上遷移時，在重新建立索引時，可能無法使用 SharePoint 線上及 OneDrive 商務內容的搜尋結果。 在此期間內，搜尋查詢可能不會傳回完整的結果。 與搜尋索引相關的功能（例如 SharePoint 線上新聞）可能會受到影響，而重建索引完成。</li><li>SharePoint 2013 工作流程會在遷移期間中斷，且必須在遷移之後重新發佈。</li></ul>
 |**SPO Admin**：重新發佈 SharePoint 2013 工作流程| SharePoint 線上系統管理員會在遷移後重新發佈 SharePoint 2013 工作流程。|SharePoint 2013 工作流程可供使用。
-|**PowerShell 使用者**：更新為新模組| SharePoint Online Powershell 模組的所有使用者都必須在 SharePoint 線上遷移完成後，將 module SharePointOnline/CSOM 更新為16.0.20717.12000 或以上的版本。 完成會在訊息中心進行通訊。| SharePoint 線上透過 PowerShell 或用戶端物件模型將不再失敗。
+|**PowerShell 使用者**：更新為新模組| SharePoint Online PowerShell 模組的所有使用者都必須更新 module/16.0.20717.12000，SharePoint 線上遷移完成後，SharePointOnline 或以上版本的或更新版本。 完成會在訊息中心進行通訊。| SharePoint 線上透過 PowerShell 或用戶端物件模型將不再失敗。
 ||||
 
 其他考慮：
