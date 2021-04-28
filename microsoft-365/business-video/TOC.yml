@@ -127,6 +127,8 @@
           href: act-on-report.md
         - name: 新增另一個網域
           href: add-domain.md
+        - name: 設定新的公司電子郵件地址
+          href: set-up-a-new-business-email-address.md
     - name: 管理裝置
       items:
         - name: 保護 Windows 10 專業版裝置

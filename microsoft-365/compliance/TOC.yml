@@ -362,7 +362,7 @@
         - name: 匯入 PST 檔案時篩選資料
           href: filter-data-when-importing-pst-files.md
         - name: 匯入 PST 檔案的常見問題集
-          href: faqimporting-pst-files-to-office-365.md
+          href: faqimporting-pst-files-to-office-365.yml
     - name: 封存第三方資料
       items:
         - name: 封存協力廠商資料概觀
