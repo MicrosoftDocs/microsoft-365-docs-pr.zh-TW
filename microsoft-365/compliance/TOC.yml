@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: 文件指紋
           href: document-fingerprinting.md
-        - name: 敏感性資訊的 DLP 函數
-          href: what-the-dlp-functions-look-for.md
     - name: 可訓練分類器
       items:
         - name: 深入了解可訓練分類器
