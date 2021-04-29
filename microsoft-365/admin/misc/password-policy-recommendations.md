@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加強貴組織對密碼攻擊的防護，以及為何應禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914723"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073862"
 ---
 # <a name="password-policy-recommendations"></a>密碼原則建議
 
@@ -34,7 +34,15 @@ ms.locfileid: "50914723"
   
 若要判斷貴組織中的 Microsoft 365 密碼到期頻率，請參閱[設定 Microsoft 365 的密碼到期原則](../manage/set-password-expiration-policy.md)。
 
-如需有關 Microsoft 365 密碼的詳細資訊，請參閱這些[相關文章](#related-articles)。
+如需有關 Microsoft 365 密碼的詳細資訊，請參閱：
+
+[重設密碼](../add-users/reset-passwords.md) (文章)
+
+[設定個別使用者的密碼永不過期](../add-users/set-password-to-never-expire.md) (文章)
+
+[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
+
+[重新傳送使用者的密碼 - 系統管理說明](../add-users/resend-user-password.md) (文章)
   
 ## <a name="understanding-password-recommendations"></a>了解密碼建議
 
@@ -134,12 +142,12 @@ ms.locfileid: "50914723"
 
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020) (2015 年最差密碼)
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[重設密碼](../add-users/reset-passwords.md)
+[重設密碼](../add-users/reset-passwords.md) (文章)
 
-[設定個別使用者的密碼永不過期](../add-users/set-password-to-never-expire.md)
+[設定個別使用者的密碼永不過期](../add-users/set-password-to-never-expire.md) (文章)
 
-[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md)
+[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
 
-[重新傳送使用者的密碼 - 系統管理說明](../add-users/resend-user-password.md)
+[重新傳送使用者的密碼 - 系統管理說明](../add-users/resend-user-password.md) (文章)
