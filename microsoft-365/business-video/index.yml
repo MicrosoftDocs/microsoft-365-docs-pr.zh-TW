@@ -13,72 +13,66 @@ metadata:
   ms.date: 12/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 0c9ba8560c2ee64b8e0da4d14afe869006bd6ed8
-  ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
-  ms.translationtype: MT
-  ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/02/2021
-  ms.locfileid: "51580567"
 productDirectory:
   items:
-  - title: 開始使用
-    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: 規劃移至 Microsoft 365 for business。
-    url: what-is-microsoft-365.md
-  - title: 設定商務用 Microsoft 365
-    imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
-    summary: 新增網域、新增使用者、設定安全性原則 .。。
-    url: sign-up.md
-  - title: 設定電腦
-    imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg
-    summary: 安裝 Office，設定電子郵件，遷移檔案 .。。
-    url: upgrade.md
-  - title: 設定行動裝置
-    imageSrc: https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg
-    summary: 在行動裝置上安裝 Office 應用程式。
-    url: work-from-anywhere.md
-  - title: 與其他人共同作業
-    imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
-    summary: 在小組中與員工和客戶合作。
-    url: collab-outlook-teams.md
-  - title: 儲存和共用檔
-    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
-    summary: 安全地儲存檔，並從任何地方存取。
-    url: overview-file-sharing.md
-  - title: 設定商務語音
-    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
-    summary: 設定電話語音和會議。
-    url: business-voice.md
-  - title: 設定商務應用程式
-    imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
-    summary: 設定及瞭解預約、清單、工作 .。。
-    url: overview-bookings.md
-  - title: 管理您的訂閱
-    imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
-    summary: 管理使用者、重設密碼、查看您的帳單 .。。
-    url: what-is-admin.md
-  - title: 管理裝置
-    imageSrc: https://docs.microsoft.com/office/media/icons/devices-2-blue.svg
-    summary: 設定個人和工作裝置的原則。
-    url: secure-win-10-pro-devices.md
-  - title: 保護您的企業
-    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
-    summary: 設定安全性和符合性功能。
-    url: overview-m365-security.md
-  - title: 取得支援
-    imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
-    summary: 取得 Microsoft 365 for business 的協助。
-    url: find-help-answers.md
+    - title: 開始使用
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
+      summary: 規劃移至 Microsoft 365 for business。
+      url: what-is-microsoft-365.md
+    - title: 設定商務用 Microsoft 365
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
+      summary: 新增網域、新增使用者、設定安全性原則 .。。
+      url: sign-up.md
+    - title: 設定電腦
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg'
+      summary: 安裝 Office，設定電子郵件，遷移檔案 .。。
+      url: upgrade.md
+    - title: 設定行動裝置
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg'
+      summary: 在行動裝置上安裝 Office 應用程式。
+      url: work-from-anywhere.md
+    - title: 與其他人共同作業
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/collaborate-blue.svg'
+      summary: 在小組中與員工和客戶合作。
+      url: collab-outlook-teams.md
+    - title: 儲存和共用檔
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg'
+      summary: 安全地儲存檔，並從任何地方存取。
+      url: overview-file-sharing.md
+    - title: 設定商務語音
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/call-phone-blue.svg'
+      summary: 設定電話語音和會議。
+      url: business-voice.md
+    - title: 設定商務應用程式
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg'
+      summary: 設定及瞭解預約、清單、工作 .。。
+      url: overview-bookings.md
+    - title: 管理您的訂閱
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/settings.svg'
+      summary: 管理使用者、重設密碼、查看您的帳單 .。。
+      url: what-is-admin.md
+    - title: 管理裝置
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/devices-2-blue.svg'
+      summary: 設定個人和工作裝置的原則。
+      url: secure-win-10-pro-devices.md
+    - title: 保護您的企業
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/security-blue.svg'
+      summary: 設定安全性和符合性功能。
+      url: overview-m365-security.md
+    - title: 取得支援
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
+      summary: 取得 Microsoft 365 for business 的協助。
+      url: find-help-answers.md
 additionalContent:
   sections:
-  - title: 深入了解
-    items:
-    - title: 瞭解 Office
-      summary: 瞭解如何使用 Word、Excel、PowerPoint 及其他 Office 應用程式。
-      url: https://support.microsoft.com/training
-    - title: 從 Google Workspace 切換
-      summary: 瞭解如何切換至 Microsoft 365 for business。
-      url: moveto-microsoft-365/move-from-google-workspace-overview.md
-    - title: 尋找更多系統管理員資源
-      summary: 移至 Microsoft 365 系統管理中心説明網站。
-      url: ../admin/index.yml
+    - title: 深入了解
+      items:
+        - title: 瞭解 Office
+          summary: 瞭解如何使用 Word、Excel、PowerPoint 及其他 Office 應用程式。
+          url: 'https://support.microsoft.com/training'
+        - title: 取得 ITPros 的訓練
+          summary: 完成面向大中型企業的教學途徑。
+          url: 'https://docs.microsoft.com/learn/m365/'
+        - title: 尋找更多系統管理員資源
+          summary: 移至 Microsoft 365 系統管理中心説明網站。
+          url: ../admin/index.yml
