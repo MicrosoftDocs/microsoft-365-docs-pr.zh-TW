@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
+ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024190"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52077308"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -83,7 +83,7 @@ ms.locfileid: "52024190"
 
 :::image type="content" source="../media/message-center.png" alt-text="螢幕擷取畫面：訊息中心首頁顯示收件匣和郵件":::
 
-若要深入瞭解這些新功能，請參閱 [在郵件中心管理郵件](manage/manage-messages.md)。
+若要深入瞭解這些新功能，請參閱 [Message center](manage/message-center.md)。
 
 ### <a name="whats-new-features"></a>新功能
 
