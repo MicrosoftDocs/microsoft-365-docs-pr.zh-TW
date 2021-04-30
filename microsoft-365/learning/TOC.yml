@@ -1,0 +1,14 @@
+- name: 'Microsoft Viva 學習 (預覽) '
+  href: index.md
+- name: '開始使用 Viva 學習 (預覽) '
+  items:
+    - name: 'Viva 學習 (預覽的概述) '
+      href: overview-viva-learning.md
+- name: 設定和管理
+  items:
+    - name: 在 Teams 系統管理中心內設定
+      href: set-up-teams-admin-center.md
+    - name: 設定教學內容來源
+      href: content-sources-365-admin-center.md
+    - name: 將 SharePoint 設定為內容來源
+      href: configure-sharepoint-content-source.md

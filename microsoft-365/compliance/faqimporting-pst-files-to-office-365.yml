@@ -1,0 +1,169 @@
+### YamlMime:FAQ
+metadata:
+  title: 匯入 PST 檔案的常見問題集
+  f1.keywords:
+  - NOCSH
+  ms.author: markjjo
+  author: markjjo
+  manager: laurawi
+  audience: Admin
+  ms.topic: article
+  ms.service: O365-seccomp
+  localization_priority: Normal
+  ms.collection: M365-security-compliance
+  search.appverid:
+  - MOE150
+  - MED150
+  - MET150
+  ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
+  ms.custom: seo-marvel-apr2020
+  description: 本文包含一些常見問題的解答，系統管理員會使用 Office 365 匯入服務，將 PST 檔案匯入至 Microsoft 365。
+  ms.openlocfilehash: 27fa3b93b53a497fcff63524b04f427049bac412
+  ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 04/28/2021
+  ms.locfileid: "52090626"
+title: 匯入 PST 檔案的常見問題集
+summary: "**本文適用于系統管理員。您是否要將 PST 檔案匯入您自己的信箱？請參閱 [從 Outlook .pst 檔案匯入電子郵件、連絡人及行事曆](https://go.microsoft.com/fwlink/p/?LinkID=785075)**\n\n以下是一些有關使用 Office 365 匯入服務大量匯入 PST 檔案以 Microsoft 365 信箱的常見問題。 如需如何匯入 PST 檔案的詳細資訊，請參閱[將 pst 檔案匯入至 Office 365](./importing-pst-files-to-office-365.md)。\n  \n## <a name=\"using-network-upload-to-import-pst-files\"></a>使用網路上傳來匯入 PST 檔案\n\n如需逐步指示，請參閱[使用網路上傳將 PST 檔案匯入至 Office 365](use-network-upload-to-import-pst-files.md)。\n"
+sections:
+- name: 一般
+  questions:
+  - question: >
+      必須具備哪些權限才能在 Office365 匯入服務中建立匯入工作？
+    answer: "您必須在 Exchange Online 中獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](/Exchange/permissions-exo/role-groups)之＜新增角色至角色群組＞或＜建立角色群組＞一節。\n  \n此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：\n  \n- 您必須在 Exchange Online 中獲派郵件收件者角色。 根據預設，這個角色會指派給組織管理及收件者管理角色群組。\n    \n    或者\n    \n- 您必須是組織中的全域系統管理員。\n    \n> [!TIP]\n> 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。 \n  \n"
+  - question: >
+      Where is network upload available?
+    answer: "網路上傳的服務範圍目前包括這些地區：美國、加拿大、巴西、英國、法國、德國、瑞士、挪威、歐洲、印度、東亞、東南亞、日本、南韓、澳洲和阿拉伯聯合大公國 (UAE)。我們會盡快在更多地區提供網路上傳服務。\n  \n"
+  - question: >
+      What is the pricing for importing PST files by using network upload?
+    answer: "Using network upload to import PST files is free.\n  \n這也表示 PST 檔案從 Azure 儲存體區域刪除之後，Microsoft 365 系統管理中心內完整匯入工作的檔案清單中就不會顯示這些檔案。 即使匯入工作仍然列在 **[將資料匯入 Office 365]** 頁面上，但當您檢視較舊匯入工作的詳細資料時，PST 檔案清單可能為空白。 \n  \n"
+  - question: >
+      What version of the PST file format is supported for importing to Office 365?
+    answer: "There are two versions of the PST file format: ANSI and Unicode. 我們建議您使用 Unicode PST 檔案格式來匯入檔案。 不過，使用 ANSI PST 檔案格式的檔案 (例如，使用雙位元組字元集 (DBCS) 語言的檔案) 也可以匯入 Office 365。 如需有關匯入 ANSI PST 檔案的詳細資訊，請參閱[使用網路上傳將組織的 PST 檔案匯入至 Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)的步驟4。\n  \n此外，Outlook 2007 和更新版本的 PST 檔案也可以匯入 Office 365。\n  \n"
+  - question: >
+      將我的 PST 檔案上傳到 Azure 儲存體區域之後，這些檔案會在 Azure 中保留多久的時間才會遭到刪除？
+    answer: "使用網路上傳方法匯入 PST 檔案，會將這些檔案上傳到名為 `ingestiondata` 的 Azure Blob 容器。 如果安全性與合規性中心的 [匯入 PST 檔案] 頁面目前沒有進行中的匯入工作，則 Azure 中 `ingestiondata` 容器內的所有 PST 檔案都會在最近的匯入工作於安全性與合規性中心建立完成的後 30 天刪除。 這也表示您必須在 PST 檔案上傳到 Azure 的 30 天內，在安全性與合規性中心建立新的匯入工作 (如網路上傳指示中的步驟 5 所述)。 \n  \n這也表示 PST 檔案從 Azure 儲存體區域刪除之後，安全性與合規性中心內完整匯入工作的檔案清單中就不會顯示這些檔案。 即使匯入工作仍然列在安全性與合規性中心的 [匯入 PST 檔案] 頁面上，但當您檢視較舊匯入工作的詳細資料時，PST 檔案清單可能為空白。 \n  \n"
+  - question: >
+      How long does it take to import a PST file to a mailbox?
+    answer: "這取決於您的網路容量，但將每 TB 的資料上傳到貴組織的 Azure 儲存體區域通常需要幾個小時的時間。 將 PST 檔案複製到 Azure 儲存體區域之後，系統會以每天至少 24 GB 的速率將 PST 檔案匯入至 Microsoft 365 信箱。 如果這樣的速率不符您的需求，建議您嘗試其他方法將電子郵件資料移轉到 Office 365。 如需詳細資訊，請參閱＜[將多個電子郵件帳戶移轉到 Office 365 的方法](/Exchange/mailbox-migration/mailbox-migration)＞。\n  \n如果不同的 PST 檔案需匯入到不同的目標信箱，匯入程序會同時進行；換句話說，系統會同時匯入每個 PST/信箱組合。 同樣地，如果多個 PST 檔案匯入到相同的信箱，則會同時匯入。\n  \n"
+  - question: >
+      PST 匯入處理程序如何處理重複的電子郵件項目?
+    answer: >
+      PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則 PST 檔案中的所有項目將會重新匯入。
+  - question: >
+      Is there a message size limit when importing PST files?
+    answer: "是。 如果 PST 檔案包含大於 150 MB 的信箱項目，在匯入程序執行時將略過該項目而不會匯入。 大於 150 MB 的項目不會匯出，因為 150 MB 是 Exchange Online 中的訊息大小限制。 如需詳細資訊，請參閱 [Exchange Online 中的訊息限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。\n  \n"
+  - question: >
+      PST 檔案匯入 Microsoft 365 信箱時是否會保留訊息屬性 (例如訊息的傳送或接收時間、收件者清單、和其他屬性)？
+    answer: >
+      是。 匯入程序不會變更任何原始的訊息中繼資料。
+  - question: >
+      Is there a limit to the number of levels in a folder hierarchy for a PST file that I want to import to a mailbox?
+    answer: >
+      是。您無法匯入具有 300 或更多巢狀資料夾階層的 PST 檔案。
+  - question: >
+      Can I use network upload to import PST files to an inactive mailbox in Office 365?
+    answer: >
+      Yes, this capability is now available.
+  - question: >
+      Can I use network upload to import PST files to an online archive mailbox in an Exchange hybrid deployment?
+    answer: >
+      Yes, this capability is now available.
+  - question: >
+      我是否可以使用網路上傳方式將 PST 檔匯入 Exchange Online 的公用資料夾？
+    answer: >
+      否，您無法將 PST 檔案匯入公用資料夾。
+
+
+      ## <a name="using-drive-shipping-to-import-pst-files"></a>使用磁碟機寄送來匯入 PST 檔案
+
+
+      如需逐步指示，請參閱[使用磁片磁碟機運送將 PST 檔案匯入至 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)。
+  - question: >
+      必須具備哪些權限才能在 Office365 匯入服務中建立匯入工作？
+    answer: "您必須獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](/Exchange/permissions-exo/role-groups)之＜新增角色至角色群組＞或＜建立角色群組＞一節。\n  \n此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：\n  \n- 您必須在 Exchange Online 中獲派郵件收件者角色。 根據預設，這個角色會指派給組織管理及收件者管理角色群組。\n    \n    或者\n    \n- 您必須是組織中的全域系統管理員。\n    \n> [!TIP]\n> 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。 \n  \n"
+  - question: >
+      Where is drive shipping available?
+    answer: "磁碟機寄送的服務範圍目前包括美國、加拿大、巴西、英國、歐洲、印度、東亞、東南亞、日本、大韓民國和澳洲。 我們會盡快在更多地區提供磁碟機寄送服務。\n\n> [!NOTE]\n> 目前在德國和瑞士不開放使用磁碟機寄送匯入 PST 檔案。 當這些國家/地區開放磁碟機寄送時，將會更新此常見問題。\n  \n"
+  - question: >
+      What commercial licensing agreements support drive shipping?
+    answer: >
+      Microsoft Enterprise Agreement (EA) 提供將 PST 檔案匯入至 Microsoft 365 的磁碟機寄送服務。 Microsoft Products and Services Agreement (MPSA) 則沒有提供磁碟機寄送。
+  - question: >
+      使用磁碟機寄送將 PST 檔案匯入至 Microsoft 365 的費用為何？
+    answer: "使用磁碟機寄送將 PST 檔案匯入至 Microsoft 365 信箱的費用為每 GB 的資料 $2 美元。 例如，假設您寄送的硬碟含有 1,000 GB (即 1 TB) 的 PST 檔案，則費用為 $2,000 美元。 您可以與夥伴合作來支付匯入費用。 如需有關尋找合作夥伴的資訊，請參閱[尋找您的 Microsoft 365 合作夥伴或轉售商](../admin/manage/find-your-partner-or-reseller.md)。\n  \n"
+  - question: >
+      What kind of hard drives are supported for drive shipping?
+    answer: "只有2.5 英寸的固態硬碟 (ssd) 或 3.5 2.5/III 的 SATA II/III 內部硬碟可搭配 Office 365 匯入服務使用。 您可以使用最多 10 TB 的硬碟。 匯入作業時，只會處理硬碟上的第一個資料磁碟區。 資料磁碟區必須為 NTFS 格式。 將資料複製到硬碟時，您可以使用2.5 寸 SSD 或 2.5-寸或 3.5-寸的 SATA II/III 連接器直接連接，也可以使用外部的「2.5-寸 SSD」或「2.5-寸」或「3.5-寸 SATA II/III」 USB 配接器，將其附加到外部磁片。\n  \n> [!IMPORTANT]\n> Office 365 匯入服務不支援隨附內建 USB 轉接頭的外接式硬碟。 此外，位於外部硬碟外殼內的碟無法使用。 Please don't ship external hard drives. \n  \n"
+  - question: >
+      How many hard drives can I ship for a single import job?
+    answer: >
+      You can ship a maximum of 10 hard drives for a single import job.
+  - question: >
+      After I ship my hard drive, how long does it take to get to the Microsoft data center?
+    answer: >
+      這取決於幾個要素，例如您與 Microsoft 資料中心之間的距離，以及您使用什麼類型的運送選項來寄送硬碟 (例如，隔天送達、兩日送達或陸地運送)。大多數貨運公司提供追蹤號碼，讓您可以追蹤運送狀態。
+  - question: >
+      硬碟送達 Microsoft 資料中心後，需要多久的時間才能將我的 PST 檔案上傳到 Azure？
+    answer: >
+      當您在 Microsoft 資料中心接收到硬碟時，需要7到10個工作日才能將 PST 檔案上傳至組織的 Azure 儲存體區域。 PST 檔案會上傳到名為 `ingestiondata` 的 Azure Blob 容器。
+  - question: >
+      How long does it take to import a PST file to a mailbox?
+    answer: "PST 檔案上傳到 Azure 儲存體區域之後，Microsoft 365 會以安全的方式分析 PST 檔案中的資料，以識別 PST 檔案所含項目的存留期和各種訊息類型。 這項分析程序完成後，您就可以選擇匯入 PST 檔案中的所有資料，或設定篩選器來控制要匯入的資料。 開始匯入工作之後，PST 會以每天至少 24 GB 的速率匯入至 Microsoft 365 信箱。 如果這樣的速率不符您的需求，建議您嘗試其他方法將電子郵件資料匯入到 Office 365。 如需詳細資訊，請參閱＜[將多個電子郵件帳戶移轉到 Office 365 的方法](/Exchange/mailbox-migration/mailbox-migration)＞。\n  \n如果不同的 PST 檔案需匯入到不同的目標信箱，匯入程序會同時進行；換句話說，系統會同時匯入每個 PST/信箱組合。 同樣地，如果多個 PST 檔案匯入到相同的信箱，則會同時匯入。\n  \n"
+  - question: >
+      Microsoft 將我的 PST 檔案上傳到 Azure 之後，這些檔案會在 Azure 中保留多久的時間才會刪除？
+    answer: "貴組織的 Azure 儲存體位置 (儲存在名為 `ingestiondata` 的 Blob 容器) 中的所有 PST 檔案，會在最新的匯入工作於安全性與合規性中心的 [匯入 PST 檔案] 頁面上建立完成的 30 天後遭到刪除。 \n  \n這也表示 PST 檔案從 Azure 儲存體區域刪除之後，安全性與合規性中心內完整匯入工作的檔案清單中就不會顯示這些檔案。 即使匯入工作仍然列在安全性與合規性中心的 [匯入 PST 檔案] 頁面上，但當您檢視較舊匯入工作的詳細資料時，PST 檔案清單可能為空白。 \n  \n"
+  - question: >
+      哪些版本的 PST 檔案格式支援匯入至 Microsoft 365？
+    answer: "有兩個版本的 PST 檔案格式支援此作業：ANSI 和 Unicode。 我們建議您使用 Unicode PST 檔案格式來匯入檔案。 不過，使用 ANSI PST 檔案格式的檔案 (例如，使用雙位元組字元集 (DBCS) 語言的檔案) 也可以匯入至 Microsoft 365。 如需有關匯入 ANSI PST 檔案的詳細資訊，請參閱[使用磁片磁碟機運送將 PST](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)檔案匯入至 Office 365 中的步驟3。\n  \n此外，Outlook 2007 和更新版本的 PST 檔案也可以匯入 Office 365。\n  \n"
+  - question: >
+      Is there a message size limit when importing PST files?
+    answer: "是。 如果 PST 檔案包含大於 150 MB 的信箱項目，在匯入程序執行時將略過該項目而不會匯入。 大於 150 MB 的項目不會匯出，因為 150 MB 是 Exchange Online 中的訊息大小限制。 如需詳細資訊，請參閱 [Exchange Online 中的訊息限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。\n  \n"
+  - question: >
+      PST 匯入處理程序如何處理重複的電子郵件項目?
+    answer: >
+      PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則 PST 檔案中的所有項目將會重新匯入。
+  - question: >
+      PST 檔案匯入 Microsoft 365 信箱時是否會保留訊息屬性 (例如訊息的傳送或接收時間、收件者清單、和其他屬性)？
+    answer: >
+      是。 匯入程序不會變更任何原始的訊息中繼資料
+  - question: >
+      Is there a limit to the number of levels in a folder hierarchy for a PST file that I want to import to a mailbox?
+    answer: >
+      是。您無法匯入具有 300 或更多巢狀資料夾階層的 PST 檔案。
+  - question: >
+      我是否可以使用磁碟機寄送將 PST 檔案匯入至 Microsoft 365 中的非作用中的信箱？
+    answer: >
+      Yes, this capability is now available.
+  - question: >
+      Can I use drive shipping to import PST files to an online archive mailbox in an Exchange hybrid deployment?
+    answer: >
+      Yes, this capability is now available.
+  - question: >
+      我是否可以使用磁碟機寄送方式將 PST 檔案匯入 Exchange Online 的公用資料夾？
+    answer: >
+      否，您無法將 PST 檔案匯入公用資料夾。
+  - question: >
+      Can Microsoft wipe my hard drive before they ship it back to me?
+    answer: >
+      No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+  - question: >
+      Can Microsoft shred my hard drive instead of shipping it back to me?
+    answer: >
+      No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+  - question: >
+      What courier services are supported for return shipping?
+    answer: >
+      If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
+  - question: >
+      What are the return shipping costs?
+    answer: >
+      Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
+  - question: >
+      Can I use a custom courier shipping service, such as FedEx Custom Shipping, to ship my hard drive to Microsoft?
+    answer: >
+      是。
+  - question: >
+      If I have to ship my hard drive to another country, is there anything I need to do?
+    answer: The hard drive that you ship to Microsoft might have to cross international borders. 在這種情況下，您必須負責確保硬碟機和它所包含的資料，會根據適用的法律匯入和/或匯出。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
