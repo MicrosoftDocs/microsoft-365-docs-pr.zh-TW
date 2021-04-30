@@ -6,7 +6,7 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,18 +16,19 @@ ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+recommendations: false
 description: 瞭解如何將原則提示新增至資料遺失防護 (DLP) 原則通知使用者他們使用與 DLP 原則衝突的內容。
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 36e4d4f96146b51e0b31731c9e93222eed767045
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0c42569da3fcac40d3121a59f7dc004f25dd3f74
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903799"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086756"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>資料外洩防護原則提示參考資料
 
-在下列情況下，Outlook Web Access 中的 DLP 原則秘訣可用於 DLP 原則中適用于 Exchange 工作負載的所有條件、例外狀況和動作：
+Outlook Web Access 中的 dlp 原則秘訣，可用於 dlp 原則中 Exchange 工作負載適用的所有條件、例外狀況和動作，但不包括下列各項：
 
 **條件：**
 
@@ -66,16 +67,16 @@ ms.locfileid: "51903799"
 
 ## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 和更新版本支援顯示僅限某些條件和例外的原則提示
 
-目前，Outlook 2013 和更新版本支援顯示原則提示的原則，但不含下列所述條件和對應例外狀況之外的任何條件或例外狀況：
+目前，Outlook 2013 和更新版本支援顯示原則提示的原則，但不含下列所述的條件和對應例外狀況以外的任何條件或例外狀況：
 
 - 內容包含的 (只適用于機密資訊類型。 不支援敏感度標籤) 
 - 內容已共用
 
-請注意，所有條件都適用于在 Outlook 用戶端應用程式中撰寫的電子郵件，其將會符合內容，並強制執行內容的保護動作。 不過，對於除了上述所述以外的任何情況，都不支援對使用者顯示原則提示。
+請注意，所有條件都適用于在 Outlook 用戶端應用程式中撰寫的電子郵件，在這裡會與內容搭配，並強制執行內容的保護動作。 不過，對於除了上述所述以外的任何情況，都不支援對使用者顯示原則提示。
 
-## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 和更新版本，以及在桌面機上的 Office 應用程式支援只顯示某些敏感資訊類型的原則秘訣
+## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 和更新版本，以及 Office 桌面機上的應用程式支援，只顯示某些敏感資訊類型的原則秘訣
 
-在桌面 (2013 和更新版本的 Outlook 中，會偵測到顯示 DLP 原則提示的預置資訊類型清單。) 和 Office app (Word、Excel、PowerPoint) 在桌面上，如下所示：
+將會偵測到的預置資訊類型清單，以在桌面 (2013 和更新版本的 Outlook 上顯示 DLP 原則提示，) 及 Office 應用程式 (Word，Excel，PowerPoint) 在桌面上，如下所示：
 
 - ABA 路由號碼
 - 阿根廷國家身分識別 (DNI) 號碼
@@ -84,8 +85,8 @@ ms.locfileid: "51903799"
 - 澳大利亞護照號碼
 - 澳大利亞稅收檔編號
 - Azure DocumentDB 驗證金鑰  
-- Azure IAAS 資料庫連接字串和 Azure SQL 連接字串  
-- Azure IoT 連接字串  
+- azure IAAS 資料庫連接字串和 azure SQL 連接字串  
+- Azure IoT連接字串  
 - Azure 發佈設定密碼  
 - Azure Redis Cache Connection String  
 - Azure SAS  
@@ -98,7 +99,7 @@ ms.locfileid: "51903799"
 - 巴西全國身分識別卡 (RG) 
 - 加拿大銀行帳戶號碼
 - 加拿大駕駛執照號碼
-- 加拿大健康情況服務號碼
+- 加拿大健全狀況服務號碼
 - 加拿大護照號碼
 - 加拿大個人健康身分識別號碼 (PHIN) 
 - 加拿大社交保險號碼
@@ -158,7 +159,7 @@ ms.locfileid: "51903799"
 - 南非識別號碼  
 - 韓國居民登記號碼
 - 西班牙社會安全號碼 (SSN)
-- SQL Server 連接字串  
+- SQL Server連接字串  
 - 瑞典國民身分證號
 - 瑞典護照號碼
 - SWIFT 代碼
@@ -198,8 +199,8 @@ ms.locfileid: "51903799"
 - 奧地利納稅識別號碼 
 - 奧地利增值 (加值稅) 號碼 
 - Azure DocumentDB 驗證金鑰 
-- Azure IAAS 資料庫連接字串和 Azure SQL 連接字串 
-- Azure IoT 連接字串 
+- azure IAAS 資料庫連接字串和 azure SQL 連接字串 
+- Azure IoT連接字串 
 - Azure 發佈設定密碼 
 - Azure Redis Cache Connection String 
 - Azure SAS 
@@ -218,7 +219,7 @@ ms.locfileid: "51903799"
 - 保加利亞統一的民事編號 
 - 加拿大銀行帳戶號碼 
 - 加拿大駕駛執照號碼 
-- 加拿大健康情況服務號碼 
+- 加拿大健全狀況服務號碼 
 - 加拿大護照號碼 
 - 加拿大個人健康身分識別號碼 (PHIN)  
 - 加拿大社交保險號碼 
@@ -362,7 +363,7 @@ ms.locfileid: "51903799"
 - 西班牙護照號碼 
 - 西班牙社會安全號碼 (SSN) 
 - 西班牙納稅識別號碼 
-- SQL Server 連接字串 
+- SQL Server連接字串 
 - 瑞典駕駛執照號碼 
 - 瑞典國民身分證號 
 - 瑞典護照號碼 
@@ -393,17 +394,17 @@ ms.locfileid: "51903799"
 
 |**應用程式和平臺**|**DLP 原則提示支援**|**支援的敏感資訊類型**|**支援的謂語和動作**|**Comments**|
 |:--|:--|:--|:--|:--|
-|**Outlook Web Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|Subset|請參閱 [資料遺失防護原則提示參考](#data-loss-prevention-policy-tips-reference)|
-|**Outlook Win32 (Outlook 2013 及以上)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|請參閱 [outlook 2013 和更新版本支援顯示僅限某些條件和例外狀況](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) 和 [outlook 2013 及更新版本的原則提示，以及桌上型電腦上的 Office 應用程式，只顯示某些敏感資訊類型的原則提示](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) ，以提供有關敏感資訊類型支援的詳細資訊，以及在 OUTLOOK Win32 上顯示 dlp 原則提示所支援的 dlp 條件和動作的詳細資訊|
-|**Outlook Mobile (iOS、Android) /Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|無|無|Outlook mobile 不支援 DLP 原則秘訣|
+|**OutlookWeb Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|Subset|請參閱 [資料遺失防護原則提示參考](#data-loss-prevention-policy-tips-reference)|
+|**OutlookWin32 (Outlook 2013 及以上)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|請參閱[Outlook 2013 和更新版本支援只顯示某些條件和例外狀況的原則提示](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions)，以及[Outlook 2013 及更新版本，以及在桌面機上 Office 應用程式，只顯示某些敏感資訊類型的原則提示](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)，以提供有關敏感資訊類型支援的詳細資訊，以及在 Outlook Win32 上顯示 dlp 原則提示所支援的 dlp 條件和動作。|
+|**OutlookMobile (iOS、Android) /Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|無|無|Outlook mobile 上不支援 DLP 原則秘訣|
 |**適用于商務網頁用戶端的 Sharepoint Online/單一磁片磁碟機**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP 中的所有 SPO/ODB 謂語和動作||
 |**適用于 Business Win32 用戶端的 Sharepoint Win32/單一磁片磁碟機**|:::image type="icon" source="../media/crsmrk.png" border="false":::|無|無|Sharepoint 或 OneDrive 桌面用戶端應用程式不支援 DLP 原則提示|
-|**Word、Excel、PowerPoint 網頁用戶端**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP 中的所有 SPO/ODB 謂語和動作|如果檔主控于 SPO 或 ODB web app 上，且已加蓋 DLP 原則，則支援 DLP 原則提示。|
-|**Word、Excel、PowerPoint 行動用戶端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|無|無|Office 行動應用程式不支援 DLP 原則秘訣。|
-|**小組 Web/小組的桌面/小組行動/小組 Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP 原則中的所有團隊謂語|當郵件標示為「此郵件已標記為「已標示」時，就會顯示原則提示。 我可以做什麼？ 按一下連結時，使用者可以查看偵測到的敏感資訊類型，並在系統管理員允許的情況下，覆寫或報告問題。請注意，檔案不會顯示任何原則提示。 當收件者嘗試存取檔時，如果不允許存取權，他們可能會遭到拒絕存取。|
+|**Word、Excel PowerPoint 網頁用戶端**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP 中的所有 SPO/ODB 謂語和動作|如果檔主控于 SPO 或 ODB web app 上，且已加蓋 DLP 原則，則支援 DLP 原則提示。|
+|**Word、Excel PowerPoint Mobile 用戶端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|無|無|Office 的行動應用程式不支援 DLP 原則秘訣。|
+|**TeamsWeb/Teams 桌面/Teams Mobile/Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP 原則中的所有 Teams 謂語|當郵件標示為「此郵件已標記為「已標示」時，就會顯示原則提示。 我可以做什麼？ 按一下連結時，使用者可以查看偵測到的敏感資訊類型，並在系統管理員允許的情況下，覆寫或報告問題。請注意，檔案不會顯示任何原則提示。 當收件者嘗試存取檔時，如果不允許存取權，他們可能會遭到拒絕存取。|
 |**Win32 端點裝置**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|DLP 原則中的所有端點 DLP 謂詞和動作|[在端點上查看資料遺失防護支援僅限某些敏感資訊類型的原則秘訣](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
 |**Mac 裝置**|:::image type="icon" source="../media/crsmrk.png" border="false":::|無|無|目前無法在 Mac 裝置上強制進行資料遺失防護原則|
 |**協力廠商 cloud app**|:::image type="icon" source="../media/crsmrk.png" border="false":::|無|無|協力廠商 cloud app 不支援資料遺失防護原則提示|
 |**部署**|:::image type="icon" source="../media/crsmrk.png" border="false":::|無|無||
-|**Word、Excel、PowerPoint Win32 用戶端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subset|Subset|請參閱 [Outlook 2013 和更新版本和 Office app On Desktop 支援，顯示針對](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) 支援的敏感資訊類型清單的某些敏感資訊類型的原則秘訣。</br></br>WXP 用戶端應用程式的原則提示可用於儲存在 Sharepoint Online 上的檔或一個用於商務用的磁片磁碟機，以取得完全符合下列條件的所有 DLP 原則，或 DLP 原則中的其中一個條件或動作的子集：</br> <ul><li>內容包含機密資訊類型</li><li>存取範圍 (內容是內部或外部共用) </li><li>通知使用者 (原則提示/使用者通知) </li><li>封鎖所有人</li><li>事件報告</li></ul></br> 如果有任何其他條件或動作出現，該原則的 DLP 原則提示就不會出現在 Word、Excel 或 PowerPoint 的桌面應用程式中。</br>如需詳細資訊，請參閱[Excel、PowerPoint 及 Word 中的原則提示](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)|
+|**Word、Excel PowerPoint Win32 用戶端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subset|Subset|請參閱[Outlook 2013 和更新版本，以及 Office 桌面上的應用程式支援顯示](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)針對支援的敏感資訊類型清單的某些敏感資訊類型的原則秘訣。</br></br>WXP 用戶端應用程式的原則提示可用於儲存在 Sharepoint Online 上的檔或一個用於商務用的磁片磁碟機，以取得完全符合下列條件的所有 DLP 原則，或 DLP 原則中的其中一個條件或動作的子集：</br> <ul><li>內容包含機密資訊類型</li><li>存取範圍 (內容是內部或外部共用) </li><li>通知使用者 (原則提示/使用者通知) </li><li>封鎖所有人</li><li>事件報告</li></ul></br> 如果有任何其他條件或動作出現，該原則的 DLP 原則提示就不會出現在 Word 的桌面應用程式、Excel 或 PowerPoint 中。</br>如需詳細資訊，請參閱[Excel、PowerPoint 和 Word 中的原則提示](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)|
 ||||||

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ffddfcb36b2b31e490dc4e65aee05304733e34a5
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 14a57e67655f6a9a9b57b77abf2fb7f27f0e264e
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548773"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086498"
 ---
 # <a name="contact-support-for-bangladesh"></a>對孟加拉國的支援聯繫
 
@@ -28,7 +28,7 @@ ms.locfileid: "50548773"
 
 撥號後，請輸入
 
-877 857 3235
++ 1877 857 3235
 
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援︰

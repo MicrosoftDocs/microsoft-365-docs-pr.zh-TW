@@ -16,43 +16,43 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-overview
 ms.custom: ''
-description: 設定安全性和服務基礎結構，以保護您的資訊並遵守資料隱私權規定。
-ms.openlocfilehash: 9af0a113d9b0eb2cbca07fdf457cd8bb7db3e094
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: 在 Microsoft 365 中為數據隱私權法規（如 GDPR 和加州消費者隱私權法案 (CCPA) （包括 Microsoft Teams、SharePoint 和電子郵件）設定資訊保護。
+ms.openlocfilehash: cae3a559c2bce39ecb02afa9be0878ff5e19ba48
+ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842293"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100768"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>使用 Microsoft 365 部署資料隱私權法規的資訊保護
 
 您的組織可能會受到區域資料隱私權法規的制約，需要您保護、管理及提供對您的 IT 基礎結構（包括內部部署和雲端）中儲存的個人資訊的權利及控制。 資料隱私權規定的最佳範例是歐盟的一般資料保護法規 (GDPR) 。 無法遵守資料隱私權規定可能會造成大量罰款。
 
-365 Microsoft 團隊中的資料類型範例包括 Microsoft 團隊、Exchange 中的電子郵件，以及 SharePoint 和 OneDrive 中的檔案。 此解決方案提供有關如何評估風險及識別資訊、保護、管理及回應資料隱私權事件，以供 Microsoft 365 服務中儲存的個人資料（受限於資料隱私權法規）的指導。
+Microsoft 365 中的資料類型範例包括 Microsoft Teams 中的交談會話、Exchange 中的電子郵件，以及 SharePoint 及 OneDrive 中的檔案。 這項解決方案提供有關如何評估風險和採取適當動作來保護 Microsoft 365 中個人資料的指導。 這包括識別個人資訊，讓您可以保護、管理及回應資料隱私權事件。
 
-![何謂資料隱私權法規的資訊保護](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png)
+![何謂資料隱私權法規的資訊保護](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-其他資訊也會提供使用 Microsoft 365 身分識別、裝置和威脅防護控制的資料隱私權需求。 
+其他資訊也是針對您的資料隱私權需求，使用 Microsoft 365 身分識別、裝置和威脅防護控制時所提供。 
 
-若要符合保護資訊以符合資料隱私權規定的準則，請使用下列 Microsoft 365 功能。
+這些 Microsoft 365 的功能和功能可協助您符合保護資訊的準則。
 
 | 功能 | 描述 | 授權 |
 |:-------|:-----|:-------|
-| 合規性管理員 | 管理法規遵從性活動、取得目前的規範設定的整體分數，以及在 Microsoft 365 規範中心的此工作流程型風險評估工具中尋找改進的建議。 | Microsoft 365 E3 和 E5 |
-| Microsoft Defender for Office 365 | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 | Microsoft 365 E3 和 E5 | 
-| 敏感度標籤 | 在電子郵件、文件或網站上套用具有不同保護層級的標籤，可以在不影響使用者工作效率和共同作業能力的情況下對組織的資料進行分類和保護。 | Microsoft 365 E3 和 E5 |
-| 資料外洩防護 (DLP) | 偵測、警告，並封鎖風險、不慎或不當的共用，例如共用包含個人資訊的資料 (內部和外部)。 | Microsoft 365 E3 和 E5 | 
-| 資料保留標籤和原則 | 實施資訊控管控制，例如資料的保留時間以及對客戶個人資料儲存的要求，以符合組織的原則或資料法規。 | Microsoft 365 E3 和 E5 |
-| 電子郵件加密 | 在組織內外的人員之間傳送和接收加密的電子郵件訊息，包含管制資料，例如客戶的個人資料。 | Microsoft 365 E3 和 E5 |
+| 合規性管理員 | 管理法規遵從性活動、取得您目前的規範設定的整體分數，並尋找改進的建議。 這是 Microsoft 365 規範中心內的工作流程型風險評估工具。 | Microsoft 365 E3 和 E5 |
+| 適用於 Office 365 的 Microsoft Defender | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 | Microsoft 365 E3 和 E5 | 
+| 敏感度標籤 | 分類及保護貴組織的資料，而不會阻礙使用者的生產力和其共同作業的能力。 在電子郵件、檔案或網站上放置具有不同保護層級的標籤。 | Microsoft 365 E3 和 E5 |
+| 資料外洩防護 (DLP) | 偵測、警告和封鎖包含個人資訊（內部及外部）的危險、無意或不適當共用資料。 | Microsoft 365 E3 和 E5 | 
+| 資料保留標籤和原則 | 實施資訊管理控制措施。 這包括決定要保留資料的時間長度 (例如與客戶相關的個人資料) ，以符合組織的原則或資料法規。 | Microsoft 365 E3 和 E5 |
+| 電子郵件加密 | 在組織內部和外部的人員之間傳送及接收加密的電子郵件，以保護個人資料。 | Microsoft 365 E3 和 E5 |
 ||||
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>此解決方案中指導方針的組織
 
-為了協助您瞭解可供您識別、管理、控制及監視個人資料是否受一或多項隱私權相關的法規制約的 Microsoft 365 工具，本指南會組織成幾節。
+為了協助您瞭解可用來協助您達成一或多項隱私權相關規章的 Microsoft 365 工具，本指南已分為各節。
  
 ![針對資料隱私權規定實施資訊保護的步驟](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
-每個章節都對應此方案中的個別文章。
+這兩個區段分別對應于此方案中的個別文章。
 
 >[!Note]
 >如果您已熟悉資料隱私權的義務，並正針對現有的計畫執行，您可能想要將重點放在預防、保護、保留及調查指導方針上。
@@ -63,29 +63,29 @@ ms.locfileid: "48842293"
 
 ## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>規劃：評估資料隱私權風險及識別敏感專案
 
-評估貴組織所需的資料隱私權規定和風險，是開始實施增強功能（包括透過 Microsoft 365 設定可實現）的重要第一步。 這可能包括您的組織需要遵守之監管控制的整體準備工作或特定機密資訊類型的識別，以及在 Microsoft 365 環境中的出現。
+評估貴組織所需的資料隱私權規定和風險，是開始實施改進功能（包括 Microsoft 365 中的設定功能）之前必須先做的重要第一步。 這項工作可以包含您的組織需要遵守監管控制規範的整體準備情況評估或特定機密資訊類型的識別。
 
 如需詳細資訊，請參閱 [評估資料隱私權風險及識別敏感專案](information-protection-deploy-assess.md)。
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>追蹤：執行風險評估，並檢查您的合規性分數
 
-合規性管理員（適用于 Microsoft 365 規範中心）提供了內建的功能，可用於追蹤及管理整體的改善動作，以及與您套用至多個資料隱私權法規相關的功能。
+合規性管理員可在 Microsoft 365 規範中心提供，其可讓您在整體上追蹤及管理改善動作，以及與套用至您的多個資料隱私權法規相關的功能。
 
-利用每項法規特有的綜合評估範本，您可以在其中追蹤所選取之每個評估範本的動作專案，以及查看特定的規章控制，以及將它們與特定動作相關聯。
+您可以使用每個法規特有的內建評估範本，您可以在其中追蹤選取的每個評估範本的動作專案，以及查看特定的規章控制項，並將其與特定動作相關聯。
 
 如需詳細資訊，請參閱 [Use 合規性管理員管理改進動作](information-protection-deploy-compliance.md)。
 
 ## <a name="prevent-protect-personal-data"></a>防止：保護個人資料
 
-Microsoft 365 提供許多身分識別、裝置和威脅防護功能，可讓您用來協助遵守資料隱私權法規合規性。 
+Microsoft 365 提供身分識別、裝置和威脅防護功能，可讓您用來協助遵守資料隱私權法規合規性。 
 
 如需詳細資訊，請參閱 [使用身分識別、裝置和威脅防護以取得資料隱私權規定](information-protection-deploy-identity-device-threat.md)。
 
-本文簡短說明這些方面的資料隱私權法規一般會通話的內容，並提供相關 Microsoft 365 解決方案的清單，並提供詳細資訊的連結，可協助您處理任何執行需求。 
+本文將簡短說明這些方面的資料隱私權法規一般會通話的內容，並提供相關的 Microsoft 365 解決方案清單，並提供詳細資訊的連結，可協助您處理任何的執行需求。 
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>保護受資料隱私權法規制約的資訊
 
-資料隱私權規定是指可在您的環境中使用的許多個人資訊保護控制項，包含超過40保護 GDPR 的範例集合中的四個數據隱私權規定，LGPD 法案 Act (CCPA) 、HIPAA-高科技 (美國衛生保健隱私權法案) 及巴西資料保護法案 () 。
+資料隱私權規定是指可在您的環境中使用的許多個人資訊保護控制項，包含超過40個控制措施，以保護 GDPR 的範例集合中的四個數據隱私權規定，例如，加州消費者 Protection 法案 (CCPA) ，HIPAA-高科技 (美國衛生保健隱私權法案) ，以及巴西資料保護法案 (LGPD) 。
 
 如需詳細資訊，請參閱 [保護您組織中的資料隱私權法規的資訊](information-protection-deploy-protect-information.md)。
 
@@ -93,7 +93,7 @@ Microsoft 365 提供許多身分識別、裝置和威脅防護功能，可讓您
 
 ## <a name="retain-govern-information-subject-to-data-privacy-regulation"></a>保留：管理受資料隱私權法規制約的資訊
 
-針對您的環境可採用的個人資訊控管，資料隱私權法規的呼叫，包括 GDPR、CCPA、HIPAA-高科技的範例，以及 LGPD 的四個數據隱私權規定中的超過二十五個控制措施。
+針對您的環境可採用的個人資訊控管控制，資料隱私權法規的呼叫，包括 GDPR、CCPA、HIPAA-高科技的範例，以及 LGPD 的四種資料隱私權規定中的超過24個控制項。
 
 如需詳細資訊，請參閱 [管理組織中的資料隱私權規定所遵循的資訊](information-protection-deploy-govern.md)。
 
@@ -103,6 +103,6 @@ Microsoft 365 提供許多身分識別、裝置和威脅防護功能，可讓您
 
 在您 operationalize 相關功能時，有一些 Microsoft 365 功能可協助您監視、調查組織中的資料隱私權事件，並加以回應。 
 
-針對上述各項，具有程式、程式及其他檔，都很重要，都是示範規章主體的合規性。
+使用這些功能的程式、程式及其他檔，都很重要，就是示範規章主體的合規性。
 
 如需詳細資訊，請參閱 [監視並回應組織中的資料隱私權事件](information-protection-deploy-monitor-respond.md)。
