@@ -204,18 +204,10 @@
           href: ../../compliance/alert-policies.md
         - name: 安全性與合規性中心內的智慧型報告和深入解析
           href: reports-and-insights-in-security-and-compliance.md
-        - name: 啟用報告訊息增益集
-          href: enable-the-report-message-add-in.md
-        - name: 啟用報告網路釣魚增益集
-          href: enable-the-report-phish-add-in.md
-        - name: 安裝及使用垃圾郵件回報增益集
-          href: junk-email-reporting-add-in-for-microsoft-outlook.md
-        - name: 獨立版 EOP 中的郵件流程規則 (傳輸規則)
+        - name: 在 Outlook 中報告誤判和漏報
+          href: report-false-positives-and-false-negatives.md
+        - name: 獨立版本 EOP 中的郵件流程規則 (傳輸規則)
           href: mail-flow-rules-transport-rules-0.md
-        - name: 在 Outlook 網頁版中回報垃圾郵件與網路釣魚
-          href: report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-        - name: 在 iOS 和 Android 版 Outlook 中回報垃圾郵件和網路釣魚
-          href: report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
         - name: 在獨立版 EOP 中執行系統管理員角色群組報告
           href: run-an-administrator-role-group-report-in-eop-eop.md
     - name: 調查
