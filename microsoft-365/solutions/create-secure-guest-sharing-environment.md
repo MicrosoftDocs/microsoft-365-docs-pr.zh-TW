@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 瞭解在 Microsoft 365 中建立安全的來賓共用環境的可用選項，提供來賓存取改善的共同作業。
-ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a04ee4a96b5e9124ca94a4ece16c32ccc6b072d1
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918463"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114303"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>建立安全的來賓共用環境
 
@@ -72,7 +72,7 @@ ms.locfileid: "50918463"
 
 在某些情況下，來賓可能沒有與貴組織簽署保密合約或其他法律合約。 在來賓存取與他們共用的檔案之前，您可以要求來賓同意使用規定。 使用規定可在來賓首次嘗試存取共用檔案或網站時顯示。
 
-若要建立使用規定，您必須先在 Word 或其他撰寫程式建立文件，然後將文件儲存為 .pdf 檔案。 然後便能將此檔案上傳到 Azure AD。
+若要建立使用規定，您必須先在 Word 或其他撰寫程式建立文件，然後將文件儲存為 .pdf 檔案。接著，此檔案可以上傳到 Azure AD。
 
 若要建立 Azure AD 使用規定
 
@@ -256,7 +256,7 @@ ms.locfileid: "50918463"
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>建立 DLP 原則以移除高敏感性檔案的來賓存取
 
-您可以使用[資料外洩防護 (DLP)](../compliance/data-loss-prevention-policies.md) 以防止不必要的來賓共用敏感性內容。 資料外洩防護可以根據檔案的敏感度標籤採取動作，並移除來賓存取。
+您可以使用[資料外洩防護 (DLP)](../compliance/dlp-learn-about-dlp.md) 以防止不必要的來賓共用敏感性內容。 資料外洩防護可以根據檔案的敏感度標籤採取動作，並移除來賓存取。
 
 建立 DLP 規則
 

@@ -1,5 +1,5 @@
 ---
-title: 適用于由世紀運作的 Office 365 發票
+title: 適用于由世紀運作 Office 365 的發票
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,23 +12,25 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 - GEA150
-ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
-description: 瞭解如何將發票要求提交給世紀發票管理系統，然後再將其付款于中國由世紀運作的 Office 365。
+description: 瞭解如何在中國所撥打的 Office 365 中付款之後，將您的發票要求提交給世紀發票管理系統。
 monikerRange: o365-21vianet
-ms.openlocfilehash: d9f75dfd00bb547e9d2e0f53826e5bc50926de39
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.date: 03/30/2021
+ms.openlocfilehash: 1f2dec1ca224b7f8c6c22d5d9d0d2a0cac8630ea
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470950"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107457"
 ---
-# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>適用于由世紀運作的 Office 365 發票
+# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>適用于由世紀運作 Office 365 的發票
 
 您可以將您的發票要求提交至世紀發票管理系統，大約在您支付後三天。 在您提交發票要求之後，它會在兩天內處理。
   
@@ -38,13 +40,13 @@ ms.locfileid: "51470950"
 
 有兩種方法適用于發票：
   
-1. 在由世紀運作的 Office 365 中支付款項後，您將會收到訂單確認電子郵件，其中包含您的訂單號碼和發票管理系統的連結。 您可以使用電子郵件中的連結，在 [ <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世紀發票資訊管理系統</a>] 中建立帳戶。
+1. 在由世紀所運作的 Office 365 中支付款項後，您會收到訂單確認電子郵件，其中包含您的訂單號碼和發票管理系統的連結。 您可以使用電子郵件中的連結，在 [ <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世紀發票資訊管理系統</a>] 中建立帳戶。
 
-    或者
+    或
 
 2. 您可以從系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>申請發票。
 
-    ![Microsoft 365 系統管理中心中的 [帳單] 頁面。](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
+    ![Microsoft 365 系統管理中心的 [帳單] 頁面。](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>步驟2：向世紀發票管理系統註冊
 

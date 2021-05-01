@@ -17,18 +17,18 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，您將了解與未驗證使用者共用檔案和資料夾的最佳做法。
-ms.openlocfilehash: acc825a8fc445d224fbc91dd12dace2a5e1b25c8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1e696611d37cd1b57f881457025464dccea54496
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199522"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114315"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>與未驗證使用者共用檔案和資料夾的最佳做法
 
 未驗證共用 (*任何人* 連結) 在許多案例下都相當方便。 *任何人* 連結為共用最簡單的方式：人員可以不經驗證就開啟連結，且可隨意將它傳送給其他人。
 
-一般來說，並非組織中的所有內容都適合進行未驗證共用。 本文涵蓋可協助您建立一個環境的選項，您的使用者能夠在該環境中未驗證共用檔案和資料夾，但在其中有一些既有措施可協助保護組織內容的安全。
+通常，組織中並非所有的內容都適用於未驗證的共用。本文涵蓋可協助您建立一個環境的選項，您的使用者能夠在該環境中未驗證共用檔案和資料夾，但在其中有一些既有措施可協助保護組織內容的安全。
 
 > [!NOTE]
 > 若要讓未驗證共用運作，您必須為組織以及您將使用的個別網站或小組啟用該功能。 如需您要啟用的案例，請參閱[與組織外部人員共同作業](collaborate-with-people-outside-your-organization.md)。
@@ -103,7 +103,7 @@ ms.locfileid: "51199522"
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>防止未經驗證的敏感性內容共用
 
-您可以使用 [資料外洩防護 (DLP)](../compliance/data-loss-prevention-policies.md) 以防止未經驗證的敏感性內容共用。 資料外洩防護可根據檔案的敏感度標籤、保留標籤或檔案本身的敏感性資訊採取行動。
+您可以使用 [資料外洩防護 (DLP)](../compliance/dlp-learn-about-dlp.md) 以防止未經驗證的敏感性內容共用。 資料外洩防護可根據檔案的敏感度標籤、保留標籤或檔案本身的敏感性資訊採取行動。
 
 建立 DLP 規則
 1. 在 Microsoft 365 合規性系統管理中心中，移至 [資料外外洩防護頁面](https://compliance.microsoft.com/datalossprevention)。

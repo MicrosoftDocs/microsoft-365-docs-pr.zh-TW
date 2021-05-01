@@ -10,17 +10,23 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
 description: 瞭解如何與 Microsoft 認證的解決方案提供者合作，) 為組織或學校購買及管理產品及服務的 (合作夥伴。
-ms.openlocfilehash: f4c270e179a3d52616f6d7efb049beac4d1a8e03
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.date: 04/13/2021
+ms.openlocfilehash: e225fa0c525d484e8c5a3887b82277a1da5861b0
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51749851"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107565"
 ---
 # <a name="manage-partner-relationships"></a>管理合作夥伴關係
 
@@ -28,7 +34,7 @@ ms.locfileid: "51749851"
 
 1. 系統管理員會使用中的表單尋找並聯系合作夥伴 <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> 。
 2. 合作夥伴將電子郵件要求傳送給客戶，以建立合作夥伴關係。
-3. 客戶接受 Microsoft 365 系統管理中心的邀請，並開始與合作夥伴合作。
+3. 客戶會接受 Microsoft 365 系統管理中心的邀請，並開始與協力廠商合作。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -43,7 +49,7 @@ ms.locfileid: "51749851"
 | 轉銷商 | 向您的組織或學校銷售 Microsoft 產品的合作夥伴。 |
 | 委派的管理員 | 可管理組織或學校產品及服務的合作夥伴。 在 Azure Active Directory (AD) 中，該夥伴是您租使用者的全域管理員。 此角色可讓他們管理服務，例如建立使用者帳戶、指派及管理授權，以及密碼重設。 |
 | 轉銷商 & 委派的系統管理員 | 向組織或學校銷售及管理 Microsoft 產品及服務的合作夥伴。 |
-| Partner | 您可以在您的租使用者中提供合作夥伴的使用者帳戶，並代表您使用其他 Microsoft 服務。 |
+| Partner | 您可以在您的租使用者中為合作夥伴提供使用者帳戶，並代表您使用其他 Microsoft 服務。 |
 | 顧問 | 合作夥伴可以為您重設密碼並處理支援事件。 |
 | Microsoft 產品 & 服務合約 (MPSA) partner | 如果您透過 MPSA 程式與多個合作夥伴合作，可以讓他們查看對方所做的購買。 |
 | 企業營運 (LOB) 合作夥伴 | 合作夥伴可以開發、提交及管理組織或學校特有的 LOB 應用程式。 |
@@ -71,7 +77,7 @@ ms.locfileid: "51749851"
 
 如果您已經有合作夥伴，但尚未簽署 Microsoft 客戶合約，您必須先接受該合約，才可代表您購買或管理您的訂閱。
 
-1. 如果您收到來自同伴的電子郵件，請選取連結以移至 Microsoft 365 系統管理中心，或移至 [ <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">接受合約</a> ] 頁面。
+1. 如果您收到來自同伴的電子郵件，請選取連結以移至 Microsoft 365 系統管理中心，或移至 [<a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">接受合約</a>] 頁面。
 2. 選取 [ **Microsoft 客戶合約** ] 的連結，並閱讀該檔。
 3. 核取方塊以確認您已閱讀該合約。
 4. 選取 [ **接受**]。

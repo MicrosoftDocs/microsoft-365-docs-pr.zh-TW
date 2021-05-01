@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用唯一的敏感度標籤來建立小組以獲得安全性。
-ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4d305e952d48d42afffe91466121c67621aa9d85
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042683"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113399"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>為小組設定安全性隔離
 
@@ -60,8 +60,8 @@ ms.locfileid: "51042683"
 ## <a name="initial-protections"></a>初始保護
 
 為了協助保護對於小組及其基礎 SharePoint 網站的存取，請檢閱下列最佳做法：
-- [身分識別與裝置存取原則](../security/defender-365-security/identity-access-policies.md)
-- [SharePoint Online 存取原則](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [身分識別與裝置存取原則](../security/office-365-security/identity-access-policies.md)
+- [SharePoint Online 存取原則](../security/office-365-security/sharepoint-file-access-policies.md)
 - [為小組部署基準保護](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>來賓共用
@@ -111,7 +111,7 @@ ms.locfileid: "51042683"
 1. 開啟 [Microsoft 365 合規性中心](https://compliance.microsoft.com)。
 2. 在 **[解決方案]** 底下，按一下 **[資訊保護]**。
 3. 按一下 **[建立標籤]**。
-4. 為標籤命名。 我們建議您將其命名為將與您一起使用的小組。
+4. 為標籤命名。我們建議您將其命名為將與您一起使用的小組。
 5. 新增顯示名稱和描述，然後按 [下一步 **]**。
 6. 在 [定義此標籤頁面的範圍 **]** 上，選取 [檔案和電子郵件 **]** 和 [群組和網站 **]**，然後按 [下一步 **]**。
 7. 在 [選擇檔案和電子郵件的保護設定 **]** 頁面上，選取 [加密檔案和電子郵件 **]**，然後按 [下一步 **]**。
@@ -144,11 +144,11 @@ ms.locfileid: "51042683"
 2. 按一下 **[發佈標籤]**。
 3. 在 **[選擇要發佈的敏感度標籤]** 頁面上，按一下 **[選擇要發佈的敏感度標籤]**。
 4. 選取您所建立的標籤，然後按一下 **[新增]**。
-5. 按 **[下一步]**。
+5. 按 [下一步]。
 6. 在 [發佈給使用者與群組] 頁面上，按一下 **[選擇使用者和群組]**。
 7. 按一下 **[新增]**，然後選取您建立的小組。
 8. 按一下 **[新增]**，然後按一下 **[完成]**。
-9. 按 **[下一步]**。
+9. 按 [下一步]。
 10. 在 [原則設定] 頁面上，選取 **[使用者必須提供移除標籤或降低分類標籤的理由]** 核取方塊，然後按 **[下一步]**。
 11. 輸入原則的名稱，然後按 **[下一步]**。
 12. 按一下 **[提交]**，然後按一下 **[完成]**。
@@ -190,7 +190,7 @@ ms.locfileid: "51042683"
 4. 在 **[原則]** 索引標籤的 **[外部共用]** 下，按一下 **[編輯]**。
 5. 如果您在建立敏感度標籤時允許來賓共用，請確定您已選取 **[新的及現有的來賓]**。 如果您在建立標籤時未允許共用，請選擇 **[只有貴組織中的人員]**。
 6. 在 **[預設的共用連結類型] 底下，清除 [與組織層級設定相同]** 核取方塊，然後選取 **[擁有現有存取權的人員]**。
-7. 按一下 **[儲存]**。
+7. 按一下 [儲存]。
 
 #### <a name="private-channels"></a>私人頻道
 
@@ -231,7 +231,7 @@ Microsoft 365 提供了其他方法來保護您的內容。 請想想下列選�
 
 - 讓您的來賓同意[使用規定](/azure/active-directory/conditional-access/terms-of-use)。
 - 為來賓設定[工作階段逾時原則](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)。
-- 建立[敏感資訊類型](../compliance/sensitive-information-type-learn-about.md)，並使用[資料外洩防護](../compliance/data-loss-prevention-policies.md) 來設定關於存取敏感資訊的原則。
+- 建立[敏感資訊類型](../compliance/sensitive-information-type-learn-about.md)，並使用[資料外洩防護](../compliance/dlp-learn-about-dlp.md) 來設定關於存取敏感資訊的原則。
 - 使用 [Azure Active Directory 存取權](/azure/active-directory/governance/access-reviews-overview)檢閱來定期檢閱小組的存取權和成員資格。
 
 ## <a name="drive-user-adoption-for-team-members"></a>對小組成員推動使用者採用

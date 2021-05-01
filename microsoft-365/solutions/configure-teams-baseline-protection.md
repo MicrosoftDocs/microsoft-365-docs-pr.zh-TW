@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用基準層級的保護來部署小組。
-ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: db1a58fd06a62240cbcfcc74f83ba6196f33df80
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222740"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114291"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>為小組設定基準保護
 
@@ -96,7 +96,7 @@ Microsoft 365 提供了其他方法來保護您的內容。 請想想下列選�
 
 - 讓來賓同意[使用規定](/azure/active-directory/conditional-access/terms-of-use)。
 - 為來賓設定[工作階段逾時原則](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)。
-- 建立[敏感資訊類型](../compliance/sensitive-information-type-learn-about.md)，並使用[資料外洩防護](../compliance/data-loss-prevention-policies.md) 來設定關於存取敏感資訊的原則。
+- 建立[敏感資訊類型](../compliance/sensitive-information-type-learn-about.md)，並使用[資料外洩防護](../compliance/dlp-learn-about-dlp.md) 來設定關於存取敏感資訊的原則。
 
 ## <a name="see-also"></a>另請參閱
 

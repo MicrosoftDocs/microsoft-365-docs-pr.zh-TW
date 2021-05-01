@@ -1,5 +1,5 @@
 ---
-title: 手動變更商務用 Microsoft 365 方案
+title: 手動變更商務方案的 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,22 +12,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ROBOTS: NOINDEX
 description: 購買新的訂閱以手動變更訂閱，並確保訂閱同時列出並使用中。
-ms.openlocfilehash: d6b0c822f9d3ceeb6c50a6ec872682d1db5decb0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: 1dc7ff8cd6b8a43db7d70ab6c17aec16a020baac
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907901"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107677"
 ---
 # <a name="change-plans-manually"></a>手動變更計畫
 
@@ -50,20 +50,20 @@ ms.locfileid: "50907901"
 
 **已購買？** 如果您已有要將使用者移至其中的訂閱，請略過此步驟，然後移至 [ [步驟3：檢查您](#step-3-check-your-new-subscription-and-licenses) 在本主題中的新訂閱與授權]。
 
-「或」
+或
 
-**購買新的訂閱與授權：** 請遵循 [購買其他 Microsoft 365 for business 訂閱](../try-or-buy-microsoft-365.md) 中的步驟，購買新的訂閱。
+**購買新的訂閱與授權：** 遵循 [購買另一個商務用 Microsoft 365 商務訂閱](../try-or-buy-microsoft-365.md)中的步驟，以購買新的訂閱。
 
 請確認您購買的是使用者現在所在組織的訂閱。 例如，檢查您要移動之使用者的電子郵件地址。 如果他們的電子郵件地址包括 \@ contoso.com，您必須購買 contoso.com 的新訂閱。
 針對每個您想要移動的使用者，加入一個授權。
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步驟3：檢查您的新訂閱與授權
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. **確認同時列出和使用中的兩個訂閱** 您要將使用者移至其中的訂閱，以及您要將使用者移至其中的訂閱，必須一起列出。 如果您第一次檢查時新的訂閱不在那裡，請稍後再試一次。 檢查這兩個訂閱是否都在使用中。 [未列出或未使用中的新訂閱](#the-new-subscription-isnt-listed-or-isnt-active)。
 
-3. **檢查您是否有足夠的授權可供每個使用者使用** 每個使用者都需要符合其訂閱的授權。 因此，如果您想要將十位使用者移至 Microsoft 365 商務版 Premium，您必須確定有10個授權可供使用。
+3. **檢查您是否有足夠的授權可供每個使用者使用** 每個使用者都需要符合其訂閱的授權。 因此，如果您想要將十位使用者移 Microsoft 365 商務進階版，您必須確定有10個授權可供使用。
 
 4. **新訂閱需要更多授權？**
    移至 [ **產品** ] 頁面並 [購買更多授權](../licenses/buy-licenses.md)。
@@ -103,7 +103,7 @@ ms.locfileid: "50907901"
 5. 針對您想要指派給這些使用者的產品，將開關切換到 [ **開啟** ] 位置。
 
     > [!TIP]
-    > - 若要限制使用者可使用的服務，請切換至 [ **關閉** ] 以切換至您要針對該使用者移除的服務。 例如，如果您想要使用者能夠存取所有可用的服務（商務用 Skype Online 除外），您可以將商務用 Skype Online 服務的切換切換到 [ **關閉** ] 位置。
+    > - 若要限制使用者可使用的服務，請切換至 [ **關閉** ] 以切換至您要針對該使用者移除的服務。 例如，如果您想要使用者能夠存取所有可用的服務，除了商務用 Skype Online 以外，您可以將商務用 Skype 線上服務的切換切換到 [**關閉**] 位置。
     > - 將移除任何先前指派給所選使用者的授權。
 
 6. 在 **[取代現有產品]** 窗格中，選取 **[取代]** \> **[關閉]**。

@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: d0b91808aa9008f467f66b8200f2c05a120fbcd9
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599872"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107227"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -35,7 +35,7 @@ ms.locfileid: "51599872"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 
 
-在使用 Exchange Online 信箱的 Microsoft 365 組織中，系統管理員可以使用安全性 & 合規性中心內的提交入口網站，將電子郵件訊息、URLs 和附件提交給 Microsoft 以供掃描。
+在具有 Exchange Online 中信箱的 Microsoft 365 組織中，系統管理員可以使用安全性 & 合規性中心內的提交入口網站，將電子郵件訊息、URLs 及附件提交至 Microsoft 以進行掃描。
 
 當您提交電子郵件訊息時，您會收到：
 
@@ -90,7 +90,7 @@ ms.locfileid: "51599872"
 
 4. 完成作業後，請按一下 [ **提交** ] 按鈕。
 
-   ![URL 提交範例](../../media/submission-flyout-email.PNG)
+   ![新的 URL 提交範例](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>將可疑 URL 傳送給 Microsoft
 
@@ -104,7 +104,7 @@ ms.locfileid: "51599872"
 
 3. 完成作業後，請按一下 [ **提交** ] 按鈕。
 
-   ![電子郵件提交範例](../../media/submission-url-flyout.png)
+   ![新的電子郵件提交範例](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>將可疑檔提交至 Microsoft
 
@@ -120,7 +120,7 @@ ms.locfileid: "51599872"
 
 4. 完成作業後，請按一下 [ **提交** ] 按鈕。
 
-   ![附件提交範例](../../media/submission-file-flyout.PNG)
+   ![新附件提交範例](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-items-submitted-for-analysis"></a>查看提交進行分析的專案
 
@@ -136,9 +136,9 @@ ms.locfileid: "51599872"
 - **提交類型**
 - **狀態**
 
-![管理員報送的篩選選項](../../media/admin-submission-email-filter-options.png)
+![管理員報送的新篩選選項](../../media/admin-submission-email-filter-options.png)
 
-若要匯出結果，請按一下頁面頂端附近的 [ **匯出** ]，然後選取 [ **圖表資料** 或 **表格**]。 在出現的對話方塊中，儲存 .csv 檔案。
+若要匯出結果，請按一下頁面頂端附近的 [ **匯出** ]，然後選取 [ **圖表資料** 或 **表格**]。 在出現的對話方塊中，儲存 .csv 檔。
 
 在圖形下方有三個索引標籤： **電子郵件** (預設) 、 **URL** 及 **附件**。
 
@@ -203,7 +203,7 @@ ms.locfileid: "51599872"
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看 Microsoft 的使用者報送
 
-如果您已部署 [報表訊息增益集](enable-the-report-message-add-in.md)、 [報告網路釣魚增益集](enable-the-report-phish-add-in.md)或人員使用 [網頁型 Outlook 中內建的報表](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)，您可以在 [ **使用者報送** ] 索引標籤上看到要報告的使用者。
+如果您已部署 [報表訊息增益集](enable-the-report-message-add-in.md)、[報告網路釣魚增益集](enable-the-report-phish-add-in.md)或人員在 [網頁上使用 Outlook 內建的報表](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)，您可以在 [**使用者報送**] 索引標籤上看到要報告的使用者。
 
 1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **提交**]。
 
@@ -225,14 +225,14 @@ ms.locfileid: "51599872"
 若要變更篩選準則，請按一下 [ **寄件者** ] 按鈕，然後選擇下列其中一個值：
 
 - **寄件者網域**
-- **主旨**
+- **Subject**
 - **提交者**
 - **提交類型**
 - **寄件者 IP**
 
-![使用者提交的篩選選項](../../media/user-submissions-filter-options.png)
+![使用者提交的新篩選選項](../../media/user-submissions-filter-options.png)
 
-若要匯出結果，請按一下頁面頂端附近的 [ **匯出** ]，然後選取 [ **圖表資料** 或 **表格**]。 在出現的對話方塊中，儲存 .csv 檔案。
+若要匯出結果，請按一下頁面頂端附近的 [ **匯出** ]，然後選取 [ **圖表資料** 或 **表格**]。 在出現的對話方塊中，儲存 .csv 檔。
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>查看自訂信箱的使用者報送
 
@@ -253,7 +253,7 @@ ms.locfileid: "51599872"
 
 在頁面頂端附近，您可以輸入開始日期、結束日期，也可以透過在方塊中輸入值，然後按一下 [重新整理] 按鈕 **來篩選** ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
-若要匯出結果，請按一下頁面頂端附近的 [ **匯出** ]，然後選取 [ **圖表資料** 或 **表格**]。 在出現的對話方塊中，儲存 .csv 檔案。
+若要匯出結果，請按一下頁面頂端附近的 [ **匯出** ]，然後選取 [ **圖表資料** 或 **表格**]。 在出現的對話方塊中，儲存 .csv 檔。
 
 > [!NOTE]
 > 如果組織已設定為僅傳送至自訂信箱，將不會傳送報告的郵件以進行重新掃描，而且使用者報告的郵件入口網站將永遠會是空的。
@@ -266,11 +266,11 @@ ms.locfileid: "51599872"
 
 如果您已將自訂信箱設定為在未傳送郵件給 Microsoft 的情況下截獲使用者報告的郵件，您可以尋找特定郵件並將其傳送給 Microsoft 進行分析。 這會有效地將使用者提交權移至系統管理員提交。
 
-在 [ **自訂信箱** ] 索引標籤上，選取清單中的訊息，按一下 [ **動作** ] 按鈕，然後進行下列其中一項選擇：
+在 [ **使用者報告的郵件** ] 索引標籤上，選取清單中的訊息，按一下 [ **動作** ] 按鈕，然後進行下列其中一項選擇：
 
 - **報告清理**
 - **報告網路釣魚**
 - **報告惡意程式碼**
 - **報告垃圾郵件**
 
-![動作按鈕上的選項](../../media/user-submission-custom-mailbox-action-button.png)
+![動作按鈕上的新選項](../../media/user-submission-custom-mailbox-action-button.png)

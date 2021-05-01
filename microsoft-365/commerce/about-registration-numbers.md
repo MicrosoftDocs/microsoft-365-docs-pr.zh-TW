@@ -14,17 +14,20 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: 當您購買 Microsoft 產品或服務時，請深入瞭解註冊號碼和「審閱」通知。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: 9f6489425a924c15d1a5cddb8c9a7d3d7812e5f0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: drjones
+description: 當您購買 Microsoft 產品或服務時，請深入瞭解註冊號碼和「審閱」通知。
+ms.date: 03/17/2021
+ms.openlocfilehash: 25302ce9481fba146d4fcda5fe72c31b5126fd08
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930230"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107397"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>關於註冊號碼和審閱通知
 

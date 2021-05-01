@@ -100,6 +100,24 @@
                   href: investigate-alerts.md
                 - name: 分析使用者
                   href: investigate-users.md
+                - name: 回應第一個事件
+                  items:
+                    - name: 簡介
+                      href: first-incident-overview.md
+                    - name: 準備
+                      href: first-incident-prepare.md
+                    - name: 步驟 1. 會審和分析
+                      href: first-incident-analyze.md
+                    - name: 步驟 2. 修復
+                      href: first-incident-remediate.md
+                    - name: 步驟 3. 檢閱
+                      href: first-incident-post.md
+                    - name: 其他事件範例
+                      items:
+                        - name: 網路釣魚電子郵件
+                          href: first-incident-path-phishing.md
+                        - name: Identity
+                          href: first-incident-path-identity.md
             - name: 取得電子郵件通知
               href: get-incident-notifications.md
         - name: 自動調查及回應

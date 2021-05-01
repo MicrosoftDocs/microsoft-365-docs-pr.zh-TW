@@ -12,50 +12,49 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - TRN_SMB
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_signup
+- PPM_pablom
+ms.reviewer: seemg
 search.appverid:
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: '深入瞭解 Office 365 的註冊程式之前，您需要瞭解的知識。 '
-ms.openlocfilehash: f2a4f555540b801441644af28435170f82229909
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: 深入瞭解 Office 365 的註冊程式之前，請先瞭解您需要瞭解的知識。
+ms.date: 03/17/2021
+ms.openlocfilehash: 37cbe20a5cc1a7506e8db218c3e9ffe2b4e64478
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023914"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107023"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何註冊系統管理員協助
 
 ::: moniker range="o365-worldwide"
 
-註冊 Microsoft 365 for business，讓您的小組開始使用最新版本的 Word、Excel、PowerPoint 及其他 Office 程式。
+註冊商務用 Microsoft 365，讓您的小組開始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程式。
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-註冊 Microsoft 365 for business，讓您的小組開始使用最新版本的 Word、Excel、PowerPoint 及其他 Office 程式。
+註冊商務用 Microsoft 365，讓您的小組開始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程式。
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-由 21Vianet 提供的 Office 365，是設計用以滿足在中國對於安全性、可靠性和可調整性雲端服務的需求。 這項服務由 Microsoft 授權給 21Vianet 的技術提供支援。 Microsoft 不直接營運此項服務。 由 21Vianet 營運、提供並管理服務的提供。 21Vianet 是中國最大的運營商中立網際網路資料中心服務提供者，提供託管、受管理的網路服務，以及雲端運算基礎結構服務。 使用 Microsoft 技術授權，世紀可在當地的 Microsoft 資料中心運作，讓您能夠使用 Microsoft 服務，同時將您的資料保留在中國。 世紀也會提供您的訂閱和計費服務，以及支援。
+由 21Vianet 提供的 Office 365，是設計用以滿足在中國對於安全性、可靠性和可調整性雲端服務的需求。 這項服務由 Microsoft 授權給 21Vianet 的技術提供支援。 Microsoft 不直接營運此項服務。 由 21Vianet 營運、提供並管理服務的提供。 21Vianet 是中國最大的運營商中立網際網路資料中心服務提供者，提供託管、受管理的網路服務，以及雲端運算基礎結構服務。 使用 microsoft 技術授權，世紀可在當地的 microsoft 資料中心運作，讓您能夠使用 Microsoft 服務，同時將您的資料保留在中國。 世紀也會提供您的訂閱和計費服務，以及支援。
   
 > [!NOTE]
 > 這些服務須遵守中國法律。
   
-註冊由世紀運作的 Office 365，讓您的小組開始使用最新版的 Word、Excel、PowerPoint 及其他 Office 程式。
+註冊由世紀運作的 Office 365，讓您的小組開始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程式。
   
 準備好註冊嗎？ [選取計畫](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -66,7 +65,7 @@ ms.locfileid: "52023914"
 
 在您購買之前，請將一些思考放入您註冊的計畫。 這會協助避免不斷增加的困難。
 
-觀賞如何選擇 Microsoft 365 for business 方案的簡短影片。<br><br>
+觀賞如何選擇商務方案 Microsoft 365 的簡短影片。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -120,9 +119,9 @@ ms.locfileid: "52023914"
   - **電子郵件** 與 **電話號碼** ，萬一需要就訂閱問題連絡您時，就能派上用場。比方說，如果您忘記密碼，我們就會利用這項資訊，傳送暫時密碼給您。我們也會把帳單資訊傳送到您所指定的電子郵件地址。
 
     > [!NOTE]
-    > 您在這裡輸入的電子郵件地址與您的 Microsoft 365 電子郵件地址不同， (您的登入名稱) 。 由於我們也會使用這個電子郵件地址傳送帳單資訊給您，建議您使用適合接收商務電子郵件的電子郵件地址。
+    > 您在此處輸入的電子郵件地址與您的 Microsoft 365 電子郵件地址不同 (您的登入名稱，) 下列。 由於我們也會使用這個電子郵件地址傳送帳單資訊給您，建議您使用適合接收商務電子郵件的電子郵件地址。
   
-- 登 **入名稱 (使用者識別碼) ：** 此使用者識別碼會變成最初的 Microsoft 365 電子郵件地址，只是讓您快速入門。
+- 登 **入名稱 (使用者識別碼) ：** 此使用者識別碼會變成您的初始 Microsoft 365 電子郵件地址，只是讓您快速開始。
 
     此使用者識別碼是您用來登入的電子郵件地址。 比方說，如果您的公司名稱是 Fourth Coffee，您可能會選擇 rob@fourthcoffee.onmicrosoft.com 做為使用者識別碼。
 
@@ -137,4 +136,4 @@ ms.locfileid: "52023914"
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 for business 訓練](../../business-video/index.yml) 影片 (連結) 
+[Microsoft 365 商務訓練](../../business-video/index.yml)影片 (連結) 

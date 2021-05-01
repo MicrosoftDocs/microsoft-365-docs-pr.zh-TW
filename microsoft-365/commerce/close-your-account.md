@@ -10,19 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
+- commerce_subscription
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: 瞭解如何使用 Microsoft 關閉您的帳戶。
-ms.openlocfilehash: 44428654946d31ad249bfd3e7a3609da3e3634a6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.date: 04/02/2021
+ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860544"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107469"
 ---
 # <a name="close-your-account"></a>關閉您的帳戶
 
@@ -40,11 +45,11 @@ ms.locfileid: "51860544"
 
 若使用者從內部部署進行同步處理，請先關閉同步處理，然後使用 Azure 入口網站或 Azure PowerShell Cmdlet 刪除雲端目錄中的使用者。
 
-若要刪除使用者，請參閱 <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">User management admin：刪除一或多個使用者</a>。
+若要刪除使用者，請參閱 [User management admin：刪除一或多個使用者](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365)。
 
-您也可以使用 <a href="https://docs.microsoft.com/powershell/module/msonline/remove-msoluser">Remove-MsolUser</a> PowerShell Cmdlet，成批刪除使用者。
+您也可以使用 [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell Cmdlet，成批刪除使用者。
 
-如果您的組織使用 Active Directory 與 Microsoft Azure Active Directory (Azure AD) 同步，請改為從 Active Directory 刪除使用者帳戶。 如需相關指示，請參閱 <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">大量刪除 Azure Active Directory 中的使用者</a>。
+如果您的組織使用與 Microsoft Azure Active Directory (Azure AD) 同步處理的 Active Directory，請改為從 Active directory 中刪除使用者帳戶。 如需相關指示，請參閱[大量刪除使用者的 Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete)。
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步驟2：取消所有作用中的訂閱
 
@@ -64,7 +69,7 @@ ms.locfileid: "51860544"
 6. 針對每個停用的訂閱，重複步驟3到5，直到刪除所有訂閱為止。
 
 > [!NOTE]
-> 如果您無法立即刪除停用的訂閱， <a href="/microsoft-365/Admin/contact-support-for-business-products" target="_blank">請聯繫支援人員</a>
+> 如果您無法立即刪除停用的訂閱， [請與支援人員聯繫](../admin/contact-support-for-business-products.md)。
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>步驟4：停用多重要素驗證
 
@@ -73,9 +78,10 @@ ms.locfileid: "51860544"
 3. 選擇 **多重要素驗證**。
 4. 在 [多重要素驗證] 頁面上，停用您目前所用全域系統管理員帳戶以外的所有帳戶。
 
-您也可以 <a href="/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">使用 PowerShell 來停用多個使用者的多重要素驗證</a>。
+您也可以 [使用 PowerShell 來停用多個使用者的多重要素驗證](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)。
 
-## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步驟5：刪除 Azure Active Directory 中的目錄
+
+## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步驟5：在 Azure Active Directory 中刪除目錄
 
 1. 使用全域系統管理員帳戶登入 <a href="https://aad.portal.azure.com/" target="_blank">AZURE AD 系統管理中心</a> 。
 2. 選取 **[Azure Active Directory]**。

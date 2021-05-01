@@ -10,18 +10,18 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 瞭解如何規劃 Microsoft Viva 主題安全性和隱私權
-ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: 587b6a2921e7d1a3cc8d4ab663ff199fdd36871d
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994543"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114059"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva 主題安全性和隱私權
 
-主題使用 Microsoft 365 的現有內容安全性功能，以及系統管理控制，以控制向組織中的使用者顯示的 AI 產生的內容。 這是 Microsoft 365 安全性設定的組合， (網站、檔案及資料夾的許可權) 和主題管理員設定，以判斷特定使用者可在主題中看到的內容。
+主題使用 Microsoft 365 中的現有內容安全性功能，以及系統管理控制，以控制向組織中的使用者顯示的 AI 產生的內容。 Microsoft 365 安全性設定的組合 (網站、檔案及資料夾的許可權) 和主題管理員設定，以判斷特定使用者可在主題中看到的內容。
 
-設定主題不會修改組織中內容的任何現有的存取控制。 使用者只會看到他們已有權存取的內容。
+設定 Viva Topics 不會修改貴組織中對內容的現有存取控制。 使用者將只看到他們有權存取的內容。
 
 本文說明主題如何從安全性的角度，以及知識管理員和知識主管控制主題可見度的選項。 如需 [規劃主題](plan-topic-experiences.md)，請閱讀本文。
 
@@ -49,18 +49,18 @@ ms.locfileid: "50994543"
 
 下表說明哪些使用者-主題查看者、投稿人和知識管理員-根據其許可權，可在指定的主題中查看。
 
-|主題專案|使用者可以看到的內容|
+|主題項目|使用者可以看到的內容|
 |:---------|:------------------|
 |主題名稱|使用者可以查看主題中心主題的主題名稱。 若使用者沒有來源內容的許可權或對使用者的關聯性很低，某些主題可能不會顯示。|
-|主題描述|只有對來源內容有許可權的使用者才可以看到 AI 產生的描述。 所有使用者皆可看到手動輸入或編輯的描述。|
-|People|所有使用者皆可看到已鎖定的人員。 建議的人員只對具有來源內容許可權的使用者可見。|
-|檔案|只有具有來源內容許可權的使用者才能看到檔案。|
-|頁面|只有具有來源內容許可權的使用者才能看到頁面。|
-|網站|只有具有來源內容許可權的使用者才能看到網站。|
+|主題描述|僅具有來源內容存取權限的使用者可以看到 AI 產生的描述。 所有使用者都可以看到手動輸入或編輯的描述。|
+|人員|所有使用者都可以看到釘選人員。 僅具有來源內容存取權限的使用者可以看到建議人員。|
+|檔案|僅具有來源內容存取權限的使用者可以看到檔案。|
+|頁面|僅具有來源內容存取權限的使用者可以看到頁面。|
+|網站|僅具有來源內容存取權限的使用者可以看到網站。|
 
 ## <a name="best-practices"></a>最佳做法
 
-主題根據使用者對內容的現有許可權，向使用者顯示資訊。 Microsoft 365 提供各種方式，以確保將敏感內容限制于適當的使用者。 除了標準小組或網站許可權之外，您還可以使用 [敏感度標籤](../compliance/sensitivity-labels.md) 或 [資料遺失防護](../compliance/data-loss-prevention-policies.md) 來限制存取內容和 [存取權](/azure/active-directory/governance/access-reviews-overview) ，以定期查看使用者對機密資訊的存取權。
+主題根據使用者對內容的現有許可權，向使用者顯示資訊。 Microsoft 365 提供各種方式，以確保將敏感內容限制于適當的使用者。 除了標準小組或網站許可權之外，您還可以使用 [敏感度標籤](../compliance/sensitivity-labels.md) 或 [資料遺失防護](../compliance/dlp-learn-about-dlp.md) 來限制存取內容和 [存取權](/azure/active-directory/governance/access-reviews-overview) ，以定期查看使用者對機密資訊的存取權。
 
 建議您使用這些工具，以確保您的內容許可權已在組織內適當地設定。 然後，主題經驗可以為您的使用者提供有用且適當的資訊。
 

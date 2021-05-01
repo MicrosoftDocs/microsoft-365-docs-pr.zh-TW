@@ -1,7 +1,7 @@
 ---
-title: 在 Microsoft Defender 防毒軟體中開啟雲端提供保護
+title: 在 Microsoft Defender 防毒軟體中開啟雲端傳送保護
 description: 開啟雲端提供的保護，以利用快速和高級的保護功能。
-keywords: Microsoft Defender 防毒程式，反惡意程式碼，安全性，cloud，第一次看到區塊
+keywords: Microsoft Defender 防毒軟體，反惡意程式碼，安全性，cloud，第一次看到封鎖
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -9,17 +9,17 @@ ms.sitesec: library
 localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
-ms.date: 11/13/2020
+ms.date: 04/30/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 9f949a4cb54ca5dd64a2648bb05a5cb9ad50e44d
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 5fcbd30eca3a6d0965fe65e13d2623ff54d1ff5f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764960"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114245"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>開啟雲端提供的保護
 
@@ -32,19 +32,19 @@ ms.locfileid: "51764960"
 > [!NOTE]
 > Microsoft Defender 防毒軟體 cloud service 是一種機制，可將更新的保護傳遞到網路和端點。 雖然它稱為雲端服務，但不只是保護儲存在雲端中的檔案;相反地，它會使用分散式資源和機器教學，以比傳統的安全性智慧更新速度更快的速率來提供對端點的保護。
 
-Microsoft Defender 防病毒會使用多個偵測及防護技術，提供準確、即時和智慧的保護。 [深入瞭解 Microsoft Defender 在第二代端點的核心的高級技術](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
+Microsoft Defender 防毒軟體會使用多個偵測及防護技術來提供準確、即時和智慧的保護。 [深入瞭解 Microsoft Defender 在第二代端點的核心的高級技術](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
 ![Microsoft Defender AV 引擎清單](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
-您可以用下列幾種方式，開啟或關閉 Microsoft Defender 防毒軟體雲端提供的保護：
+您可以多種方式開啟或關閉 Microsoft Defender 防毒軟體雲端提供的保護：
 
 - Microsoft Intune
-- Microsoft Endpoint Configuration Manager
+- Microsoft 端點管理員
 - 群組原則
 - PowerShell Cmdlet。
 
- 您也可以使用 Windows 安全性應用程式，在個別的用戶端中開啟或關閉該功能。
+ 您也可以在 Windows 安全性應用程式的個別用戶端中開啟或關閉該功能。
 
-請參閱 [使用 microsoft 雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md) ，以取得 Microsoft Defender 防病毒雲端提供的保護。
+請參閱[使用 Microsoft 雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)，以取得 Microsoft Defender 防毒軟體雲端提供保護的概述。
 
 如需特定網路連線需求的詳細資訊，以確保端點能夠連線至雲端提供的保護服務，請參閱 [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md)。
 
@@ -53,28 +53,38 @@ Microsoft Defender 防病毒會使用多個偵測及防護技術，提供準確�
 
 ## <a name="use-intune-to-turn-on-cloud-delivered-protection"></a>使用 Intune 開啟雲端傳送保護
 
-1. 請移至 Microsoft 端點管理員管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+1. 請移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+
 2. 在 [ **首頁** ] 窗格中，選取 [裝置設定] **> 設定檔**。
+
 3. 選取您要設定的 **裝置限制** 配置檔案類型。 如果您需要建立新的 **裝置限制** 配置檔案類型，請參閱 [在 Microsoft Intune 中設定裝置限制設定](/intune/device-restrictions-configure)。
-4. 選取 **屬性**  >  **設定：編輯**  >  **Microsoft Defender 防毒軟體**。
+
+4. 選取 [**屬性**  >  **設定：編輯**  >  **Microsoft Defender 防毒軟體**]。
+
 5. 在 **雲端提供的保護** 參數上，選取 [ **啟用**]。
+
 6. 在 [ **提交範例前提示使用者** ] 下拉式清單中，選取 [ **自動傳送所有資料**]。
 
-如需 Intune 裝置設定檔的詳細資訊，包括如何建立和設定其設定，請參閱 [什麼是 Microsoft Intune 裝置設定檔？](/intune/device-profiles)
+如需 Intune 裝置設定檔的詳細資訊，包括如何建立和設定其設定，請參閱[什麼是 Microsoft Intune 裝置設定檔？](/intune/device-profiles)
 
-## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-delivered-protection"></a>使用 Microsoft 端點管理員開啟雲端提供的保護
+## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-delivered-protection"></a>使用 Microsoft 端點管理員開啟雲端傳送保護
 
-1. 請移至 Microsoft 端點管理員管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+1. 請移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+
 2. 選擇 [ **Endpoint security**  >  **防病毒**]。
-3. 選取防病毒設定檔。  (如果您尚沒有其中一個，或若您想要建立新的設定檔，請參閱 [在 Microsoft Intune 中設定裝置限制設定](/intune/device-restrictions-configure)。
+
+3. 選取防病毒設定檔。  (如果您尚沒有其中一個，或若您想要建立新的設定檔，請參閱[在 Microsoft Intune 中設定裝置限制設定](/intune/device-restrictions-configure)。
+
 4. 選取 [ **屬性**]。 然後，選擇 [ **設定設定**] 旁的 [ **編輯**]。
+
 5. 展開 [ **cloud protection**]，然後在 [ **雲端提供的保護層級** ] 清單中，選取下列其中一項：
-    1. **High**：套用強層次的偵測。
-    2. **High plus**：使用 **高階** ，套用其他保護措施 (可能會影響用戶端效能) 。
-    3. **零容錯**：封鎖所有的未知可執行檔。
+   - **High**：套用強層次的偵測。
+   - **High plus**：使用 **高階** ，套用其他保護措施 (可能會影響用戶端效能) 。
+   - **零容錯**：封鎖所有的未知可執行檔。
+
 6. 選取 [ **複查 + 儲存**]，然後選擇 [ **儲存**]。
 
-如需設定 Microsoft 端點設定管理員的詳細資訊，請參閱 how [to create and deploy 反惡意程式碼原則： Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)。
+如需設定 Microsoft Endpoint Configuration Manager 的詳細資訊，請參閱 how [to create and deploy 反惡意程式碼原則： Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)。
 
 ## <a name="use-group-policy-to-turn-on-cloud-delivered-protection"></a>使用群組原則開啟雲端傳送保護
 
@@ -84,9 +94,9 @@ Microsoft Defender 防病毒會使用多個偵測及防護技術，提供準確�
 
 3. 選取 [系統 **管理範本**]。
 
-4. 將樹展開 **> Microsoft Defender 防病毒 > 地圖的 Windows 元件**
+4. 展開樹狀目錄，以 **Windows 元件 > Microsoft Defender 防毒軟體 > 對應**
 
-5. 連按兩下 [ **加入 MICROSOFT 地圖**]。 確定已開啟此選項，並將其設定為 [ **基本地圖** ] 或 [ **高級地圖**]。 選取 **[確定]**。
+5. 連按兩下 [ **加入 MICROSOFT 地圖**]。 確定已開啟此選項，並將其設定為 [ **基本地圖** ] 或 [ **高級地圖**]。 選取 [確定]。
 
 6. **需要進一步分析時，** 請按兩下 [傳送檔案範例]。 確定第一個選項設定為 [ **啟用** ]，且其他選項設定為下列其中一項：
 
@@ -95,11 +105,9 @@ Microsoft Defender 防病毒會使用多個偵測及防護技術，提供準確�
 
         >[!NOTE]
         > [ **傳送安全範例** (1) ] 選項表示將會自動傳送大部分的範例。 可能包含個人資訊的檔案仍會出現提示，需要其他確認。
-
-        > [!WARNING]
         > 將此選項設定為 **Always Prompt** (0) 會降低裝置的保護狀態。 設定為 **永不傳送** (2) 表示 Microsoft Defender for Endpoint 的「 [區塊第一次看到](configure-block-at-first-sight-microsoft-defender-antivirus.md) 」功能將無法運作。
 
-7. 選取 **[確定]**。
+7. 選取 [確定]。
 
 ## <a name="use-powershell-cmdlets-to-turn-on-cloud-delivered-protection"></a>使用 PowerShell Cmdlet 開啟雲端傳送保護
 
@@ -110,7 +118,7 @@ Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-如需如何將 PowerShell 與 Microsoft Defender 防毒軟體搭配使用的詳細資訊，請參閱 [use PowerShell Cmdlet 以設定及執行 Microsoft Defender 防病毒](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender Cmdlet](/powershell/module/defender/)。 [原則 CSP-Defender](/windows/client-management/mdm/policy-csp-defender) 也有專用於 [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)的詳細資訊。
+如需如何搭配 Microsoft Defender 防毒軟體使用 PowerShell 的詳細資訊，請參閱[use PowerShell Cmdlet 以設定及執行 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)和[Defender Cmdlet](/powershell/module/defender/)。 [原則 CSP-Defender](/windows/client-management/mdm/policy-csp-defender) 也有專用於 [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)的詳細資訊。
 
 >[!NOTE]
 > 您也可以將 **SubmitSamplesConsent** 設定為 `SendSafeSamples` (預設設定) 、 `NeverSend` 或 `AlwaysPrompt` 。 此 `SendSafeSamples` 設定表示將會自動傳送大多數的範例。 可能包含個人資訊的檔案仍會出現提示，需要其他確認。
@@ -118,7 +126,7 @@ Set-MpPreference -SubmitSamplesConsent SendAllSamples
 >[!WARNING]
 > 設定 **-SubmitSamplesConsent** 至 `NeverSend` 或 `AlwaysPrompt` 會降低裝置的保護層級。 此外，設定為 `NeverSend` 表示 Microsoft Defender For Endpoint 的「 [區塊第一次看到](configure-block-at-first-sight-microsoft-defender-antivirus.md) 」功能將無法運作。
 
-## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-delivered-protection"></a>使用 Windows Management 指令 (WMI) 開啟雲端提供的保護
+## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-delivered-protection"></a>使用 Windows 管理指令 (WMI) 開啟雲端傳送保護
 
 針對下列屬性，使用 MSFT_MpPreference 類別的 [ **Set** 方法](/previous-versions/windows/desktop/defender/set-msft-mppreference) ：
 
@@ -127,14 +135,14 @@ MAPSReporting
 SubmitSamplesConsent
 ```
 
-如需允許參數的詳細資訊，請參閱 [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+如需允許參數的詳細資訊，請參閱[Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="turn-on-cloud-delivered-protection-on-individual-clients-with-the-windows-security-app"></a>使用 Windows 安全性應用程式在個別用戶端上開啟雲端提供保護
+## <a name="turn-on-cloud-delivered-protection-on-individual-clients-with-the-windows-security-app"></a>在 Windows 安全性應用程式的個別用戶端上開啟雲端提供保護
 
 > [!NOTE]
-> 如果設定為 [ **將 MICROSOFT MAPS** 群組原則設定重寫] 設定為 [ **已停用**]，則 [Windows 設定] 中的 **雲端型保護** 設定會變灰且無法使用。 您必須先將透過「群組原則」物件所做的變更部署到個別的端點，然後才會在 [Windows 設定] 中更新設定。
+> 如果設定為 [**將 Microsoft MAPS** 群組原則設定覆寫] 設定為 [**已停** 用]，則 Windows 設定中的 **雲端型保護** 設定會變灰並無法使用。 您必須先將透過「群組原則」物件所做的變更部署到個別的端點，設定 Windows 設定中的設定才會更新。
 
-1. 在工作列上選取盾牌圖示，或搜尋 **Defender** 的 [開始] 功能表，以開啟 [Windows 安全性] 應用程式。
+1. 在工作欄中選取盾牌圖示，或搜尋 **Defender** 的 [開始] 功能表，以開啟 Windows 安全性應用程式。
 
 2. 在左功能表列上選取 [ **病毒 & 威脅防護** 磚 (] 或 [盾牌] 圖示) 然後 **& [病毒威脅防護設定** ] 標籤：
 
@@ -147,11 +155,11 @@ SubmitSamplesConsent
 
 ## <a name="related-articles"></a>相關文章
 
-- [設定雲端封鎖超時期限](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
+- [設定雲端封鎖逾時期間](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
 - [設定初次看到的封鎖](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [使用 PowerShell Cmdlet 來管理 Microsoft Defender 防毒程式](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [使用 Microsoft Intune 的 Endpoint Protection 來協助保護 Windows 電腦](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [使用 PowerShell Cmdlet 來管理 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [使用 Microsoft Intune] 的 Endpoint Protection 來協助保護 Windows 電腦](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Defender Cmdlet](/powershell/module/defender/)
 - [在 Microsoft Defender 防毒軟體中使用 Microsoft 雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)
 - [如何建立及部署反惡意程式碼原則： Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

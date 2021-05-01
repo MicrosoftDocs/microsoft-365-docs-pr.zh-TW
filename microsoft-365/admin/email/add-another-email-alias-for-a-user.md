@@ -21,24 +21,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: '瞭解您可以如何有一個以上的電子郵件地址，稱為「電子郵件別名」，與您的 Microsoft 365 for business 帳戶相關聯。 '
-ms.openlocfilehash: 4003dcfca29a722ccdf9b86cca5aa1141fbdb367
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+description: '瞭解您可以如何具有一個以上的電子郵件地址，稱為「電子郵件別名」，與您的商務用 Microsoft 365 相關聯。 '
+ms.openlocfilehash: 00e1c55edfcfa9937ab6a18b4bf268adb858b775
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892802"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107119"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>為使用者新增其他電子郵件別名
   
-本文適用于具有商務用訂閱的 Microsoft 365 系統管理員。 這不適用於家庭使用者。
+本文適用于具有商務訂閱的 Microsoft 365 管理員。 這不適用於家庭使用者。
   
-Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時所指派的電子郵件地址。 When the user sends email to someone else, their primary email address is what typically appears in the  *From*  field in email apps. 他們也可以有一個以上的電子郵件地址與其 Microsoft 365 for business 帳戶相關聯。 These additional addresses are called aliases. 
+在 Microsoft 365 中，主要的電子郵件地址通常是使用者在建立帳戶時所指派的電子郵件地址。 When the user sends email to someone else, their primary email address is what typically appears in the  *From*  field in email apps. 他們也可以有一個以上的電子郵件地址與其 Microsoft 365 的商務帳戶相關聯。 These additional addresses are called aliases. 
   
 例如，假設 Jenna 具有電子郵件地址 jenna@contosoco.com，但她也想要在 jen@contosoco.com 接收電子郵件，因為有些人會以該名稱來參照她。 您可以為她建立別名，這樣兩個電子郵件地址就會移至 Jenna 的 [收件匣]。
 <br><br>  
   
-一個使用者最多可建立 400 個別名。 不需要額外費用或授權。
+一個使用者最多可建立 400 個別名。不需要額外費用或授權。
   
 > [!Tip]
 > 若要讓多位人員管理傳送到單一電子郵件地址（如 info@NodPublishers.com 或 sales@NodPublishers.com）的電子郵件，請建立共用信箱。 若要深入瞭解，請參閱 [建立共用信箱](create-a-shared-mailbox.md)。
@@ -53,7 +53,7 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
-2. 在 [作用中 **使用者** ] 頁面上，選取 [使用者 > **管理電子郵件別名**。 如果使用者未獲指派授權，您就不會看到此選項。 
+2. 在 [作用中 **使用者** ] 頁面上，選取 [使用者 > **管理使用者名稱和電子郵件**。 如果使用者未獲指派授權，您就不會看到此選項。 
     
 3. 選取 [ **+ 新增別名** ]，然後輸入使用者的新別名。   
     
@@ -65,17 +65,17 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱 [add a domain To Microsoft 365](../setup/add-domain.md)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain to Microsoft 365](../setup/add-domain.md)。 
   
      
 5. 完成後，請選擇 [ **儲存變更**]。
     
-6. 請等候24小時，讓新的別名填入整個 Microsoft 365。
+6. 請等候24小時，讓新的別名填滿整個 Microsoft 365。
     
     使用者現在會有主要位址和別名。 例如，所有傳送至送達 eliza Hoffman 主要位址的郵件，Eliza@NodPublishers.com，而她的別名 Sales@NodPublishers.com 會移至送達 eliza 的收件匣。
     
   
-7. **當使用者回復時，[ *發件* 人] 位址將取決於其 Outlook 用戶端。網頁型 Outlook 會使用接收電子郵件的別名， (我們會將其稱為「乒乓球」原則) 。Outlook 桌面會使用其主要的電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
+7. **當使用者回復時，[*發件* 人] 位址將取決於她的 Outlook 用戶端。網頁上的 Outlook 會使用接收電子郵件的別名 (我們會將其稱為「乒乓球) 」。Outlook 桌面會使用她的主要電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而非 Sales@NodPublishers.com。
     
 ::: moniker-end
 
@@ -97,16 +97,16 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱 [add a domain To Microsoft 365](../setup/add-domain.md)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain to Microsoft 365](../setup/add-domain.md)。 
 
 5. 完成後，選取 **[儲存]**。
 
-6. 請等候24小時，讓新的別名填入整個 Microsoft 365。 
+6. 請等候24小時，讓新的別名填滿整個 Microsoft 365。 
     
     使用者現在會有主要位址和別名。 例如，所有傳送至送達 eliza Hoffman 主要位址的郵件，Eliza@NodPublishers.com，而她的別名 Sales@NodPublishers.com 會移至送達 eliza 的收件匣。
     
   
-7. **當使用者回復時，[ *發件* 人] 位址將取決於其 Outlook 用戶端。網頁型 Outlook 會使用接收電子郵件的別名， (我們會將其稱為「乒乓球」原則) 。Outlook 桌面會使用其主要的電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
+7. **當使用者回復時，[*發件* 人] 位址將取決於她的 Outlook 用戶端。網頁上的 Outlook 會使用接收電子郵件的別名 (我們會將其稱為「乒乓球) 」。Outlook 桌面會使用她的主要電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而非 Sales@NodPublishers.com。
 
 ::: moniker-end
 
@@ -128,16 +128,16 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱 [add a domain To Microsoft 365](../setup/add-domain.md)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain to Microsoft 365](../setup/add-domain.md)。 
 
 5. 完成後，選取 **[儲存]**。
 
-6. 請等候24小時，讓新的別名填入整個 Microsoft 365。 
+6. 請等候24小時，讓新的別名填滿整個 Microsoft 365。 
     
     使用者現在會有主要位址和別名。 例如，所有傳送至送達 eliza Hoffman 主要位址的郵件，Eliza@NodPublishers.com，而她的別名 Sales@NodPublishers.com 會移至送達 eliza 的收件匣。
     
   
-7. **當使用者回復時，[ *發件* 人] 位址將取決於其 Outlook 用戶端。網頁型 Outlook 會使用接收電子郵件的別名， (我們會將其稱為「乒乓球」原則) 。Outlook 桌面會使用其主要的電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
+7. **當使用者回復時，[*發件* 人] 位址將取決於她的 Outlook 用戶端。網頁上的 Outlook 會使用接收電子郵件的別名 (我們會將其稱為「乒乓球) 」。Outlook 桌面會使用她的主要電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而非 Sales@NodPublishers.com。
 
 ::: moniker-end
 
@@ -154,7 +154,7 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>輕鬆從 proxy 位址傳送電子郵件
 
-新功能在2021年4月推出，可讓使用者在使用 Outlook 網頁版時，輕鬆地從別名傳送。 當該功能推出租使用者系統管理員使用 Cmdlet 的租用時 `Set-OrganizationConfig -SendFromAliasEnabled $true` ，租用中的使用者就可以存取核取方塊清單，其中每個專案都會對應至其 Outlook 設定中的別名。 選取別名會將其顯示在撰寫表單的 [寄件者] 下拉式清單中。
+新功能在2021年4月推出，可讓使用者在網頁上使用 Outlook 時，輕鬆地從別名傳送。 當該功能推出租使用者系統管理員使用 Cmdlet 的租用時 `Set-OrganizationConfig -SendFromAliasEnabled $true` ，租用中的使用者就可以存取核取方塊清單，其中每個專案都會對應至其 Outlook 設定中的別名。 選取別名會將其顯示在撰寫表單的 [寄件者] 下拉式清單中。
   
 ## <a name="related-articles"></a>相關文章
 

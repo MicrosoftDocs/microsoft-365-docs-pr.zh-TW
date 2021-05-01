@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 549f9bf2b9dc2ea5d1c734a809ad10a168c8123e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d6872a7a4b1b2d2c131066076af02a65b4ef6d8a
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054603"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107601"
 ---
 # <a name="update-incidents-api"></a>更新事件 API
 
@@ -51,7 +51,7 @@ ms.locfileid: "51054603"
 
 ## <a name="permissions"></a>權限
 
-需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [Access The Microsoft 365 Defender APIs](api-access.md)。
+需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱[Access the Microsoft 365 Defender APIs](api-access.md)。
 
 許可權類型 | 權限 | 許可權顯示名稱
 -|-|-
@@ -80,10 +80,10 @@ Content-Type | 字串 | application/json。 **必要欄位**。
 
 屬性	 | 類型 | 描述
 -|-|-
-地位 | Enum | 指定警示的目前狀態。 可能的值為： ```Active``` 、 ```Resolved``` 、和 ```Redirected``` 。
+地位 | Enum | 指定事件目前的狀態。 可能的值為： ```Active``` 、 ```Resolved``` 、和 ```Redirected``` 。
 分配 | string | 事件的擁有者。
-分類 | Enum | 警示的規格。 可能的值為： ```Unknown``` 、 ```FalsePositive``` 、 ```TruePositive``` 。
-測定 | Enum | 指定報警的決定。 可能的值為：、、、、、、 ```NotAvailable``` ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` 。
+分類 | Enum | 事件的規格。 可能的值為： ```Unknown``` 、 ```FalsePositive``` 、 ```TruePositive``` 。
+測定 | Enum | 指定事件的確定。 可能的值為：、、、、、、 ```NotAvailable``` ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` 。
 標籤 | 字串清單 | 事件標記清單。
 
 ## <a name="response"></a>回應

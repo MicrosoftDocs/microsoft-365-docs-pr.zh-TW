@@ -15,16 +15,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 在 Microsoft 365 中的自動調查期間和之後，您可以查看結果和重要結果。
+description: 在 Microsoft 365 的自動調查期間和之後，您可以查看結果和重要結果。
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ebdd25e9bddf53682f747fff7477d49dd1c94755
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b6ec188f37faeed283d49f68b0cb381fcb1af86e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933490"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114201"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自動調查的詳細資料和結果
 
@@ -32,10 +32,10 @@ ms.locfileid: "51933490"
 - [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在[Office 365 的 Microsoft Defender](defender-for-office-365.md)中進行[自動調查](office-365-air.md)時，在自動化調查程式期間和之後都會提供該調查的詳細資料。 如果您有必要的許可權，您可以在 Microsoft 365 安全中心中查看這些詳細資料。 調查詳細資料可提供您最新的狀態，以及核准任何擱置中動作的功能。
+在[Office 365 的 Microsoft Defender](defender-for-office-365.md)中進行[自動調查](office-365-air.md)時，在自動化調查程式期間和之後都會提供該調查的詳細資料。 如果您擁有必要的許可權，您可以在 [Microsoft 365 安全性中心] 中查看這些詳細資料。 調查詳細資料可提供您最新的狀態，以及核准任何擱置中動作的功能。
 
 > [!TIP]
-> 請參閱 Microsoft 365 security center 中新的整合調查頁面。 若要深入瞭解，請參閱 [ (NEW！ ) 整合調查] 頁面](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
+> 請參閱 Microsoft 365 security center 中的 [新增統一調查] 頁面。 若要深入瞭解，請參閱 [ (NEW！ ) 整合調查] 頁面](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
 
 ## <a name="investigation-status"></a>調查狀態
 
@@ -46,7 +46,7 @@ ms.locfileid: "51933490"
 |**啟動中**|調查已觸發並等候開始執行。|
 |**正在執行**|調查過程已開始且正在進行中。 當 [待定的動作](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) 獲得批准時，也會發生此狀態。|
 |**找不到威脅**|調查已完成，但找不到任何威脅 (使用者帳戶、電子郵件訊息、URL 或檔案) 皆已識別。 <p> **提示**：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](threat-explorer.md)採取動作。|
-|**發現威脅**|自動調查發現問題，但沒有任何特定的修正動作可解決這些問題。 <p> 發現某些類型的使用者活動時，可能會發生 **威脅已發現** 狀態，但沒有清除動作可供使用。 範例包括下列任何使用者活動： <br/>- (DLP) 事件的[資料遺失防護](../../compliance/data-loss-prevention-policies.md)<br/>-傳送反常的電子郵件<br/>-傳送惡意程式碼<br/>-傳送網路釣魚 <p> 調查發現沒有惡意的 URLs、檔案或電子郵件訊息要修正，而且沒有要修正的信箱活動，例如關閉轉移規則或委派。 <p> **提示**：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](threat-explorer.md)來調查和採取動作。|
+|**發現威脅**|自動調查發現問題，但沒有任何特定的修正動作可解決這些問題。 <p> 發現某些類型的使用者活動時，可能會發生 **威脅已發現** 狀態，但沒有清除動作可供使用。 範例包括下列任何使用者活動： <br/>- [資料遺失防護](../../compliance/dlp-learn-about-dlp.md) 事件<br/>-傳送反常的電子郵件<br/>-傳送惡意程式碼<br/>-傳送網路釣魚 <p> 調查發現沒有惡意的 URLs、檔案或電子郵件訊息要修正，而且沒有要修正的信箱活動，例如關閉轉移規則或委派。 <p> **提示**：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](threat-explorer.md)來調查和採取動作。|
 |**由系統終止**|調查已停止。 調查可能會因下列幾點原因而停止： <br/>-調查的擱置中動作已過期。 等候一周的核准，待處理的動作超時。<br/>-動作太多。 例如，如果有太多使用者點擊惡意的 URLs，它可能會超出調查的執行所有分析器的能力，所以調查會暫停。<p> **提示**：如果調查在採取動作之前暫停，請嘗試使用 [威脅瀏覽器](threat-explorer.md) 來尋找並處理威脅。|
 |**擱置的動作**|調查發現威脅，例如惡意電子郵件、惡意 URL 或風險信箱設定，以及修正威脅 [等候核准](air-review-approve-pending-completed-actions.md)的動作。 <p> 當找到具有對應動作的任何威脅時，就會觸發 **擱置的動作** 狀態。 不過，擱置中的動作清單會隨著調查的執行而增加。 查看調查詳細資料以查看其他專案是否仍待完成。|
 |**修復**|調查已完成，且所有修正動作都已獲核准 (會注明為完全修正) 。 <p> **附注**：核准的修復動作可能會有錯誤，導致無法採取動作。 不論是否成功完成修正動作，調查狀態不會變更。 查看調查詳細資料。|
@@ -66,7 +66,7 @@ ms.locfileid: "51933490"
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>檢視與調查相關警示的詳細資料
 
-某些類型的警示會觸發 Microsoft 365 中的自動調查。 若要深入瞭解，請參閱 [觸發自動調查的警示原則](office-365-air.md#which-alert-policies-trigger-automated-investigations)。
+某些類型的提醒會觸發 Microsoft 365 中的自動調查。 若要深入瞭解，請參閱 [觸發自動調查的警示原則](office-365-air.md#which-alert-policies-trigger-automated-investigations)。
 
 1. 請移至 Microsoft 365 security center (<https://security.microsoft.com>) 並登入。
 2. 在功能窗格中，選取 [ **動作中心**]。
@@ -83,7 +83,7 @@ ms.locfileid: "51933490"
 
 - 電子郵件 **的 [電子郵件] 索引** 標籤底部顯示的電子郵件計數，以及 Explorer 中所顯示之電子郵件的計數，會反映在調查的初始分析之後所收到的電子郵件。
 
-  因此，顯示原始數量10封電子郵件的電子郵件叢集會顯示超過15個電子郵件的電子郵件清單。在調查分析階段和系統管理員檢查調查時，會有五封以上的電子郵件訊息到貨。 同樣地，舊調查可能會開始顯示比 Explorer 查詢更高的計數，因為 Microsoft Defender for Office 365 方案2中的資料會在試用7天后到期，並且在30天后取得收費授權。
+  因此，顯示原始數量10封電子郵件的電子郵件叢集會顯示超過15個電子郵件的電子郵件清單。在調查分析階段和系統管理員檢查調查時，會有五封以上的電子郵件訊息到貨。 同樣地，舊調查可能會開始顯示比 Explorer 查詢更高的計數，因為 Office 365 方案2的 Microsoft Defender 中的資料會在實驗的7天后到期，並且在30天后到期的授權。
 
   在不同的視圖中顯示計數歷史和目前的計數，都是為了指出調查時的電子郵件影響，以及目前的影響，直到執行補救的時間為止。
 

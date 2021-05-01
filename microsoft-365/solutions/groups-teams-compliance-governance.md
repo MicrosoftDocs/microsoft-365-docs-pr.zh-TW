@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 群組、小組和 SharePoint 共同作業的相容性選項
+title: Microsoft 365 群組、Teams 及 SharePoint 共同作業的相容性選項
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,21 +14,21 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 深入瞭解 Microsoft 365 群組、小組和 SharePoint 共同作業的規範選項。
-ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+description: 深入瞭解 Microsoft 365 群組、Teams 及 SharePoint 共同作業的規範選項。
+ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899349"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114025"
 ---
-# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 群組、小組和 SharePoint 共同作業的相容性選項
+# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 群組、Teams 及 SharePoint 共同作業的相容性選項
 
-Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法規遵從性。 請查看這些選項，並考慮其如何對應至您的業務需求、資料敏感度，以及您的使用者需要共同作業的人員範圍。
+Microsoft 365 提供一套完整的工具，以在使用者共同作業時維持法規遵從性。 請查看這些選項，並考慮其如何對應至您的業務需求、資料敏感度，以及您的使用者需要共同作業的人員範圍。
 
 下表提供 Microsoft 365 中可用之相容性控制措施的快速參考。 以下各節提供進一步的資訊。
 
-|類別|描述|參考資料|
+|類別|描述|參考|
 |:-------|:----------|:--------|
 |資訊保留|||
 ||保留郵件和 SharePoint 內容的群組|[了解 SharePoint 和 OneDrive 的保留原則](../compliance/retention-policies-sharepoint.md)|
@@ -38,8 +38,8 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 ||自動分類敏感內容|[自動將敏感度標籤套用到內容](../compliance/apply-sensitivity-label-automatically.md)|
 ||加密敏感內容|[使用敏感度標籤來套用加密以限制存取內容](../compliance/encryption-sensitivity-labels.md)|
 |資訊保護|||
-||避免機密資訊遺失|[資料外洩防護概觀](../compliance/data-loss-prevention-policies.md)|
-||保護聊天中的機密資訊。|[資料遺失防護和 Microsoft 團隊](../compliance/dlp-microsoft-teams.md)|
+||避免機密資訊遺失|[深入瞭解資料遺失防護](../compliance/dlp-learn-about-dlp.md)|
+||保護聊天中的機密資訊。|[資料外洩防護和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||定義組織的機密資訊|[自訂敏感性資訊類型](../compliance/sensitive-information-type-learn-about.md)|
 |使用者區隔|||
 ||限制使用者區段之間的通訊|[資訊屏障](../compliance/information-barriers.md)|
@@ -52,7 +52,7 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 - [了解 SharePoint 和 OneDrive 的保留原則](../compliance/retention-policies-sharepoint.md)
 
-小組保留原則保留聊天及通道訊息。 雖然聊天和通道郵件會儲存在 Exchange 信箱中，但不會受到 Exchange 保留原則的影響。 您必須設定保留原則，以套用至小組聊天和小組通道郵件。 
+保留原則，供 Teams 保留聊天及通道訊息。 雖然聊天及通道郵件會儲存在 Exchange 信箱中，但不會受到 Exchange 保留原則的影響。 您必須設定保留原則套用至 Teams 聊天和 Teams 通道郵件。 
 
 即使刪除使用者帳戶，也會無限期保留使用者聊天。 如果您不想要無限期保留此資料，請考慮使用保留原則，在指定的時間之後刪除使用者聊天，或在使用者刪除程式中包含這項刪除。
 
@@ -60,7 +60,7 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 - [Microsoft Teams 中的保留原則](/microsoftteams/retention-policies)
 
-單一保留原則可以設定為套用到小組聊天和團隊通道郵件。 
+單一保留原則可以設定為套用至 Teams 聊天和 Teams 通道郵件。 
 
 其他資源：
 
@@ -74,7 +74,7 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 - [使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](../compliance/sensitivity-labels-teams-groups-sites.md)
 
-您可以根據您指定的準則，將 Microsoft 365 設定為自動將敏感度標籤套用至檔案和電子郵件，包括偵測敏感資訊類型或與 trainable 的分類器相符的模式。
+您可以根據您指定的準則，設定將敏感度標籤自動套用至檔案和電子郵件的 Microsoft 365，包括偵測敏感資訊類型或與 trainable 的分類器相符的模式。
 
 - [自動將敏感度標籤套用到內容](../compliance/apply-sensitivity-label-automatically.md)
 
@@ -91,13 +91,13 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 ## <a name="information-protection"></a>資訊保護
 
-DLP 原則可以防止在 SharePoint、Exchange 及小組之間意外共用敏感資訊。 您可以建立原則，指定要採取的動作 (例如依一組規則封鎖存取) 。
+DLP 原則可以避免在 SharePoint、Exchange 和 Teams 之間意外共用機密資訊。 您可以建立原則，指定要採取的動作 (例如依一組規則封鎖存取) 。
 
-- [資料外洩防護概觀](../compliance/data-loss-prevention-policies.md)
+- [深入瞭解資料遺失防護](../compliance/dlp-learn-about-dlp.md)
 
-當小組中的機密資訊包含機密資訊的郵件時，該小組可以協助保護小組聊天和通道郵件中的機密資訊。
+DLP in Teams 可刪除包含機密資訊的郵件，協助保護 Teams 聊天和通道郵件中的機密資訊。
 
-- [資料遺失防護和 Microsoft 團隊](../compliance/dlp-microsoft-teams.md)
+- [資料外洩防護和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
 如果您的組織有獨特的敏感資訊，例如 project code 名稱，您可以建立您自己的機密資訊類型，並將其套用至 DLP 原則，以保護群組、小組和 Sharepoint 中的內容。
 
@@ -109,7 +109,7 @@ DLP 原則可以防止在 SharePoint、Exchange 及小組之間意外共用敏�
 
 - [資訊屏障](../compliance/information-barriers.md)
 
-- [Microsoft 小組的資訊障礙](/microsoftteams/information-barriers-in-teams)
+- [Microsoft Teams 中的資訊屏障](/microsoftteams/information-barriers-in-teams)
 
 - [SharePoint 使用資訊障礙](/sharepoint/information-barriers)
 

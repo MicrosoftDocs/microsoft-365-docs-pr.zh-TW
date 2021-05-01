@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 中的事件
-description: 調查 Microsoft 365 security center 中跨裝置、使用者和信箱所看到的事件。
-keywords: 事件、警示、調查、分析、回應、關聯、攻擊、電腦、裝置、使用者、身分識別、身分識別、信箱、電子郵件、365、microsoft、m365
+description: 調查 Microsoft 365 安全性中心內的裝置、使用者和信箱所看到的事件。
+keywords: 事件、警示、調查、分析、回應、關聯、攻擊、電腦、裝置、使用者、身分識別、身分識別、信箱、電子郵件、365、microsoft、m365、事件回應、網路攻擊
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 890e64367c49c24c8c70e2cbda9869a5d0797219
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: e2e29015d4cb5e04510577118eb847b9b596a6c5
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939577"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114279"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件
 
@@ -44,11 +44,11 @@ Microsoft 365 Defender 中的事件是組成攻擊之故事的相關警示和相
 
 Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動時建立警示。 個別警示可提供關於已完成或進行中攻擊的重要線索。 不過，攻擊一般會針對不同類型的實體（例如裝置、使用者和信箱）採用各種技術。 其結果是針對您租使用者中的多個實體的多個警示。 
 
-因為 piecing 個別警示來深入瞭解攻擊可能會非常困難而且耗時，所以 Microsoft 365 Defender 會自動將警示和相關資訊匯總到事件中。
+因為 piecing 個別警示共同取得攻擊的方式可能會是挑戰性和費時，所以 Microsoft 365 Defender 會自動將警示及其相關資訊匯總到事件中。
 
 :::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Microsoft 365 Defender 如何將實體中的事件與事件產生關聯":::
 
-請觀看 Microsoft 365 Defender (4 分鐘) 中的事件簡短敘述。
+請在 Microsoft 365 Defender (4 分鐘) 中觀看事件的這一小段簡介。
 
 <br>
 
@@ -62,17 +62,17 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 - 攻擊的範圍，例如影響的裝置、使用者和信箱數目。 
 - 所有與攻擊相關聯的資料。
 
-若 [啟用](m365d-enable.md)，Microsoft 365 Defender 便可透過自動化和人工智慧，自動調查並解決警示。 您也可以執行其他修復步驟，以解決攻擊。 
+若[啟用](m365d-enable.md)，Microsoft 365 Defender 可以透過自動化和人工智慧來自動調查和解決提醒。 您也可以執行其他修復步驟，以解決攻擊。 
 
-## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心的事件及警示
+## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心的事件及警示
 
-您可以在 Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上，管理事件 **& 警示 > 事件**。 以下為範例。
+您可以在 Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上，管理事件 **& 警示 > 事件**。 以下為範例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Microsoft 365 security center 中的 [事件] 頁面":::
 
 選取 [事件名稱] 會顯示事件摘要，並可讓您存取具有其他資訊的索引標籤。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 安全中心內事件摘要頁面的範例":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 security center 中的事件摘要頁面範例":::
 
 事件的其他索引標籤如下：
 
@@ -102,11 +102,11 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
 以下是事件與其資料之間的關係，以及 Microsoft 365 security center 中事件的索引標籤。
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="在 Microsoft 365 安全中心的事件索引標籤中，事件及其資料的關聯性":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="在 Microsoft 365 安全中心的事件索引標籤上，事件及其資料的關聯性":::
 
 ## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Microsoft 365 Defender 的事件回應工作流程範例
 
-以下是使用 Microsoft 365 security center 回應 Microsoft 365 中的事件的範例工作流程。
+以下是以「Microsoft 365 安全性中心」回應 Microsoft 365 中的事件的範例工作流程。
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Microsoft 365 的事件回應工作流程範例":::
 
@@ -116,18 +116,18 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 - 透過修改其標題、將其指派給分析員，以及新增標記和批註來[管理](manage-incidents.md)事件。
 
 1. 針對每個事件，開始 [攻擊和警示分析](investigate-incidents.md)：
-
+ 
    a. 請查看事件摘要，瞭解其範圍和嚴重性，以及會影響哪些實體 ([ **摘要** ] 索引標籤) 中。
 
    b. 開始分析警示，以瞭解其來源、範圍和嚴重性 (**警示** ] 索引標籤) 。
 
    c. 如有需要，請在 [ **裝置**]、[ **使用者**] 和 [ **信箱** ] 索引標籤)  (，收集受影響裝置、使用者和信箱的資訊。
 
-   d. 請參閱 Microsoft 365 Defender 如何在「 **調查** 」索引標籤) 上，自動解決某些警示 (。
+   d. 請參閱「**調查**」索引標籤) 中 Microsoft 365 Defender 如何自動解決某些警示 (。
    
    e. 如有需要，請使用事件資料組中的資訊，以取得 (**證據與回應** ] 索引標籤) 的詳細資訊。
 
-2. 在您的分析之後或過程中，請進行包容，以減少攻擊和 eradication 安全性威脅的任何其他影響。
+2. 在分析之後或過程中執行包容，以減少攻擊和 eradication 安全性威脅的任何其他影響。
 
 3. 盡可能將租使用者資源還原為事件之前所用的狀態，從攻擊復原。
 
@@ -138,9 +138,11 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
    - 召回您用來解決事件的工作流程，並視需要更新您的標準工作流程、流程、原則及行動行動。
    - 決定是否需要在安全性設定中進行變更，並加以實施。
 
-## <a name="example-security-operations-for-microsoft-365-defender"></a>Microsoft 365 Defender 的安全性作業範例
+如果您是新的安全性分析，請參閱 [回應第一個事件的簡介](incidents-overview.md) 以取得其他資訊，並逐步執行範例事件。
 
-以下是 Microsoft 365 Defender 安全性作業的範例。
+## <a name="example-security-operations-for-microsoft-365-defender"></a>Microsoft 365 Defender 的安全性操作範例
+
+以下是 Microsoft 365 Defender 的安全性運作範例。
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Micosoft 365 Defender 的安全性操作範例":::
 

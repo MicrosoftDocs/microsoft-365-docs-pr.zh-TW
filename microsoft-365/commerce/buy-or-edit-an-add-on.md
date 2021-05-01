@@ -14,21 +14,24 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: 瞭解如何購買和管理適用于商務用 Microsoft 365 訂閱的附加元件。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
-ms.openlocfilehash: b470fb727ed55ba066cd0371e2e707c72b50ae99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: 瞭解如何為商務版訂閱購買及管理您的 Microsoft 365 的附件。
+ms.date: 04/02/2021
+ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576922"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107433"
 ---
 # <a name="buy-or-manage-add-ons"></a>購買或管理附加元件
 
-許多 Microsoft 365 for business 方案都具有您可以為訂閱購買的附加元件。 附加元件提供更多功能，可增強您的訂閱經驗。
+許多商務方案 Microsoft 365 都具有您可以為訂閱購買的附加元件。 附加元件提供更多功能，可增強您的訂閱經驗。
 
 附加元件有兩種類型：
 
@@ -58,7 +61,7 @@ ms.locfileid: "51576922"
 
 您可以移至包含它的訂閱並在那裡進行變更，以管理傳統的附加元件。 使用下列步驟來管理傳統的附加元件。
   
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取包含您要更新之附加元件的訂閱。
 3. 在 [訂閱詳細資料] 頁面上，[ **附加** 元件] 區段會列出您購買的附加元件。 選取 [ **管理載入** 宏]。
 4. 在 [ **管理** 增益集] 窗格的 [ **附加** 元件] 下拉式清單中，選取您要變更的附加元件。
