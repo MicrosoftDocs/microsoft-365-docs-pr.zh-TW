@@ -12,22 +12,23 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jamitche
 search.appverid:
 - MET150
 description: 了解如何在 Microsoft 365 系統管理中心管理您的付款方式。
-ms.date: ''
-ms.openlocfilehash: 1d28d082c0a7c123aadaa2230930326139fdcb8e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.date: 04/02/2021
+ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579779"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107036"
 ---
 # <a name="manage-payment-methods"></a>管理付款方式
 
@@ -35,7 +36,7 @@ ms.locfileid: "51579779"
 
 如果您的商務帳戶有帳單設定檔，且您是帳單設定檔擁有者或帳單設定檔參與者，則可以使用支援信用卡或發票付款的帳單設定檔來購買或支付帳單。 如果您是帳單發票管理員，則只能使用帳單設定檔來支付帳單。 若要深入了解帳單設定檔和角色，請參閱[管理帳單設定檔](manage-billing-profiles.md)。
 
-如果您的商務帳戶沒有帳單設定檔，任何全域或計費系統管理員都可以管理和使用新增到商務帳戶的任何銀行帳戶。 不過，您僅能管理或使用您新增的信用卡。
+如果您的商務帳戶沒有帳單設定檔，任何全域或計費系統管理員都可以管理和使用新增到商務帳戶的任何銀行帳戶。不過，您僅能管理或使用您新增的信用卡。
 
 > [!NOTE]
 > 使用銀行帳戶付款的選項不適用於部分國家或地區。
@@ -122,7 +123,7 @@ ms.locfileid: "51579779"
 | 問題 | 疑難排解步驟 |
 |:----------|:-----|
 |**我收到錯誤訊息指出「瀏覽器目前的設定為封鎖 Cookie」。** |將您的瀏覽器設為允許第三方 Cookie，然後再試一次。 |
-|**我的信用卡或轉帳卡遭到拒絕。** |如果您使用信用卡或轉帳卡付款，但信用卡遭到拒絕，您會收到一封電子郵件，指出 Microsoft 無法處理付款。 仔細檢查顯示的信用卡詳細資料&mdash;信用卡卡號、到期日、信用卡上的名稱，以及包括省/市、縣/市和郵遞區號在內的地址&mdash;與信用卡和帳單上顯示的資料完全相同。 您可以使用訂閱詳細資料頁面的 [帳單 **]** 區段的 [結算餘額 **]** 連結，更新您的卡片資訊並立即提交付款。 如需詳細資訊，請參閱[如果我有未付餘額，該怎麼辦？](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  如果還是繼續看到「已拒絕」訊息，請連絡您的銀行。 您的卡片可能非作用中。 如果您最近透過郵件收到的卡片有更新的到期日，請確定已啟用該卡片。 您的銀行也可以告訴您，您的卡片是否未核准進行線上、國際或週期性交易。 |
+|**我的信用卡或轉帳卡遭到拒絕。** |如果您使用信用卡或轉帳卡付款，但信用卡遭到拒絕，您會收到一封電子郵件，指出 Microsoft 無法處理付款。 仔細檢查顯示的信用卡詳細資料&mdash;信用卡卡號、到期日、信用卡上的名稱，以及包括省/市、縣/市和郵遞區號在內的地址&mdash;與信用卡和帳單上顯示的資料完全相同。 您可以使用訂閱詳細資料頁面的 [帳單 **]** 區段的 [結算餘額 **]** 連結，更新您的卡片資訊並立即提交付款。 如需詳細資訊，請參閱[如果我有未付餘額，該怎麼辦？](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  如果您持續看到「被拒絕」訊息，請連絡您的銀行。可能您的卡片未生效。如果您最近收到郵寄的卡片已更新到期日，請確定該卡片已生效。您的銀行也可以告知您，您的卡片是否獲核准進行線上、國際或週期性交易。 |
 |**我想要更新信用卡或銀行帳戶號碼。** |您無法變更現有付款方式的信用卡或帳戶號碼。 如果您的信用卡或帳戶號碼已變更，請[以不同的付款方式取代它](#replace-a-payment-method)，這會將所有作用中的訂閱從該付款方式移至新的付款方式，然後[刪除舊的付款方式](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached)。 |
 |**我的帳戶只有一張信用卡或一個銀行帳戶，而我想移除它。** |如果您只有一個付款方式，您必須[將它以新的付款方式取代](#replace-a-payment-method)，之後才能刪除它。 |
 |**我無法新增我的卡片或銀行帳戶。**  |您必須使用與您租用戶相同的國家/地區發出的付款方式。 如果您無法輸入您的卡片或銀行帳戶資訊，您可以[連絡客戶支援](../../admin/contact-support-for-business-products.md)。 |

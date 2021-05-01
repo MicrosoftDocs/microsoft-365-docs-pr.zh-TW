@@ -539,12 +539,6 @@
 ####### [根據建議列出電腦](get-recommendation-machines.md)
 ####### [根據建議列出弱點](get-recommendation-vulnerabilities.md)
 
-###### [補救活動]()
-####### [補救活動方法和屬性](get-remediation-methods-properties.md)
-####### [根據識別碼取得一個補救活動](get-remediation-one-activity.md)
-####### [列出所有補救活動](get-remediation-all-activities.md)
-####### [列出一個補救活動的公開裝置](get-remediation-exposed-devices-activities.md)
-
 ###### [分數]()
 ####### [分數方法和屬性](score.md)
 ####### [按電腦群組列出暴露程度分數](get-machine-group-exposure-score.md)
@@ -653,6 +647,6 @@
 ##### [受攻擊面縮小規則](troubleshoot-asr.md)
 ##### [移轉至攻擊面縮小規則](migrating-asr-rules.md)
 
-# [Microsoft 365 Defender](../index.yml)
+# [Microsoft 365 Defender](../defender/index.yml)
 # [適用於 Office 365 的 Defender](../office-365-security/index.yml)
 # [適用於身分識別的 Defender](https://docs.microsoft.com/defender-for-identity/)

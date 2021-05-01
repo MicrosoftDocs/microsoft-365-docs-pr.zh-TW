@@ -12,20 +12,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: 深入了解如何取消您的商務用 Microsoft 365 試用版或付費訂閱。
-ms.date: ''
-ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.date: 04/08/2021
+ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644641"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52106999"
 ---
 # <a name="cancel-your-subscription"></a>取消您的訂閱
 
@@ -101,9 +102,9 @@ ms.locfileid: "51644641"
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>變更網域的名稱伺服器記錄 (如有需要)
 
-如果您設定自訂網域，您必須新增 DNS 記錄以便讓網域與 Microsoft 365 服務搭配運作。 在您移除網域之前，請務必更新 DNS 主機的 DNS 記錄 (例如網域的 MX 記錄)。
+如果您設定了自訂網域，您必須新增 DNS 記錄以便讓網域與 Microsoft 365 服務搭配運作。在移除網域之前，請務必更新 DNS 主機的 DNS 記錄 (例如網域的 MX 記錄)。
 
-例如，變更 DNS 主機的 MX 記錄。 寄到您網域的電子郵件會停止進入您的 Microsoft 位址，並改為寄給新的電子郵件提供者。 (MX 記錄可決定要將您網域的電子郵件傳送到何處。)
+例如，變更 DNS 主機的 MX 記錄。使得傳送到您網域的電子郵件停止傳送到您的 Microsoft 地址，而改為傳送到您的新電子郵件提供者。(MX 記錄可決定要將您網域的電子郵件傳送到何處。)
 
 - 如果您的名稱伺服器 (NS) 記錄[指向 Microsoft 365 名稱伺服器](../../admin/setup/add-domain.md)，則必須在您將 NS 記錄變更為指向您的新 DNS 主機 (請參閱步驟 2) 之後，變更 MX 記錄才會生效。
 
@@ -121,7 +122,7 @@ ms.locfileid: "51644641"
 
 ### <a name="save-your-data"></a>儲存您的資料
 
-當取消生效時，您的使用者會失去其資料的存取權。 在您取消訂閱之前，請他們將其商務用 OneDrive 或 SharePoint Online 檔案儲存到其他位置。 您所留下的任何客戶資料在 30 天後可能會遭到刪除，並且會在取消後的 180 天內全部刪除。
+當取消訂閱生效時，您的使用者便無法存取其資料。因此在您取消訂閱之前，請先告知您的使用者將其商務用 OneDrive 或 SharePoint Online 檔案儲存到另一個位置。您所留下的任何客戶資料可能在 30 天後遭到刪除，並且會在取消後的 180 天內全部刪除。
 
 - 若要將電子郵件、連絡人、工作及行事曆資訊移到另一個帳戶，請參閱[將電子郵件、連絡人及行事曆匯出或備份為 Outlook .pst 檔案](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)。
 
