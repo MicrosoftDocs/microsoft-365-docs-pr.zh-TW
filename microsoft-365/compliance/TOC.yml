@@ -235,8 +235,8 @@
       items:
         - name: 瞭解 DLP
           items:
-            - name: 了解 DLP
-              href: data-loss-prevention-policies.md
+            - name: 深入了解資料外洩防護
+              href: dlp-learn-about-dlp.md
             - name: 深入了解端點資料外洩防護
               href: endpoint-dlp-learn-about.md
             - name: 了解 Microsoft Teams 中的預設資料外洩防護原則 (預覽)
