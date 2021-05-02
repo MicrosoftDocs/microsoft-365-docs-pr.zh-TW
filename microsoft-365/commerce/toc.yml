@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: 將使用者移至其他訂閱
       href: subscriptions/move-users-different-subscription.md
+    - name: 管理協力廠商應用程式授權
+      href: licenses/manage-third-party-app-licenses.md
     - name: 管理自動聲明原則
       href: licenses/manage-auto-claim-policies.md
     - name: 了解訂閱與授權
