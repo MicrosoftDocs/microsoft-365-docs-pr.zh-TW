@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f670a3cdefb7b6cd78d24a17fc2e6276274efff3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
+ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222416"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52079256"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容
 
@@ -45,7 +45,7 @@ ms.locfileid: "51222416"
 - **立即指派權限**，這樣您就能確實決定哪個使用者能夠存取該標籤的內容。
 - 當使用者將標籤套用到內容時，**讓使用者指派權限**。 如此一來，您就可以讓組織中的人員靈活地共同作業並完成工作。
 
-當您在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或是安全性與合規性中心中[建立敏感性標籤](create-sensitivity-labels.md)時，可以使用加密設定。
+當您在 Microsoft 365 合規性中心中 [建立敏感度標籤](create-sensitivity-labels.md) 時，可以使用加密設定。 您也可以使用較舊的入口網站 (安全性與合規性中心)。
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的運作方式
 
@@ -123,7 +123,7 @@ ms.locfileid: "51222416"
 
 ## <a name="assign-permissions-now"></a>立即指派權限
 
-使用下列選項來控制誰可以存取套用此標籤的電子郵件或文件。 您可以：
+使用下列選項來控制誰可以存取套用此標籤的電子郵件或文件。您可以：
 
 - 在特定日期，或是在套用標籤之後的特定天數之後 **允許具有標籤的內容的存取權到期**。在此時間後，使用者將無法開啟具有標籤的項目。如果指定日期，則會在目前時區中，該日期的午夜開始生效。(請注意，某些電子郵件用戶端可能因為其快取機制而無法強制執行到期，而顯示超過期限的電子郵件。)
 
@@ -135,11 +135,11 @@ ms.locfileid: "51222416"
 
 ### <a name="rights-management-use-license-for-offline-access"></a>用於離線存取的 Rights Management 使用授權
 
-當使用者開啟以來自 Azure Rights Management 服務的加密保護的文件或電子郵件時，Azure Rights Management 會將該內容的使用授權授與給該使用者。 使用授權是一項憑證，其中包含使用者對於文件或電子郵件使用權限，以及用來加密內容的加密金鑰。 如果已設定，則使用授權也會包含到期日，以及該使用授權的有效期。
+當使用者從 Microsoft Azure AD Rights Management 服務開啟受到加密保護的文件或電子郵件時，該內容的 Azure Rights Management 使用授權會授與使用者。此使用授權是一種憑證，其中包含使用者對文件或電子郵件的使用權限，以及用來加密內容的加密金鑰。使用授權也會包含到期日 (若已設定的話)，以及使用授權的有效期限。
 
 如果未設定到期日，則租用戶的預設使用授權有效期間為 30 天。在這段期間，不會針對內容重新驗證或重新授權使用者。這個程序可讓使用者在沒有網際網路連線的情況下繼續開啟受保護文件或電子郵件。使用授權有效期間到期時，下次使用者存取受保護文件或電子郵件時，則必須重新驗證和重新授權使用者。
 
-除了重新驗證外，還會重新評估原則和使用者群組成員資格。 這表示，如果上次使用者存取內容後，加密設定或群組成員資格發生變更，則這些使用者可能遇到相同的文件或電子郵件，卻有不同的存取結果。
+除了重新驗證外，還會重新評估加密設定和使用者群組成員資格。這表示，如果上次使用者存取內容後，加密設定或群組成員資格發生變更，則這些使用者可能遇到相同的文件或電子郵件，卻有不同的存取結果。
 
 若要了解如何變更預設的 30 天設定，請參閱 [Rights Management 使用授權](/azure/information-protection/configure-usage-rights#rights-management-use-license)。
 
@@ -228,7 +228,7 @@ ms.locfileid: "51222416"
 ## <a name="let-users-assign-permissions"></a>讓使用者指派權限
 
 > [!IMPORTANT]
-> 並非所有的標籤用戶端都支援讓使用者自行指派權限的所有選項。 使用本章節深入瞭解。
+> 並非所有的標籤用戶端都支援讓使用者自行指派權限的所有選項。請使用本章節深入了解。
 
 您可以使用下列選項讓使用者在手動將敏感度標籤套用至內容時指派權限：
 
@@ -236,7 +236,7 @@ ms.locfileid: "51222416"
     
     所有支援敏感度標籤的電子郵件用戶端都支援 [不可轉寄] 選項。 不過，使用敏感度標籤套用 **[僅加密]** 選項是一款新發行版本的做法，該版本僅支援內建標籤，且不支援 Azure 資訊保護統一標籤用戶端。 對於不支援此功能的電子郵件用戶端，將不會顯示標籤。
     
-    若要檢查哪些使用內建標籤的 Outlook 應用程式支援將僅加密選項與敏感度標籤一併使用，請使用 [Outlook 的 功能表格](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook)和 **[讓使用者指派權限：- 僅加密]** 列。
+    若要檢查使用內建標籤的 Outlook 應用程式最小版本，以支援透過敏感度標籤套用僅加密選項，請使用 [Outlook 的功能表格](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) 和 **[讓使用者指派權限：- 僅加密]** 列。
 
 - 在 Word、PowerPoint 和 Excel 中，系統會提示使用者為特定使用者、群組或組織選取其自己的權限。
 
@@ -265,7 +265,7 @@ ms.locfileid: "51222416"
 
 ![套用至 Outlook 郵件的敏感度標籤](../media/sensitivity-label-outlook-protection-applied.png)
 
-當其中一個選項套用至電子郵件時，電子郵件會加密且收件者必須經過驗證。 然後，收件者會自動擁有受限的使用權利：
+當其中一個選項套用至電子郵件時，電子郵件會加密且收件者必須經過驗證。然後，收件者會自動擁有限制的使用權限：
 
 - **不可轉寄**：收件者無法轉寄、列印或複製電子郵件。 例如，在 Outlook 用戶端中，無法使用 [轉寄] 按鈕、[另存新檔] 和 [列印] 功能表選項，且您無法在 [收件人]、[副本] 或 [密件副本] 方塊中新增或變更收件者。
     
@@ -406,7 +406,7 @@ ms.locfileid: "51222416"
 
 - 如果在 [SharePoint 中簽出](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)檔案時使用 Office 應用程式新增了套用了加密標籤，然後使用者放弃了簽出，則檔案將保持標記和加密狀態。
 
-- 用於已加密檔案的下列動作在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中不受支援，因此使用者會看到錯誤訊息，指出發生錯誤。 不過，您可以使用 SharePoint 功能做為替代：
+- 用於已加密檔案的下列動作在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中不受支援，因此使用者會看到發生問題的錯誤訊息。不過，您可以使用 SharePoint 功能做為替代：
 
   - 檢視、還原和儲存舊版的複本。 或者，當您[為清單或文件庫啟用和設定版本設定](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)時，使用者可以使用 Office 網頁版執行這些動作。
   - 變更檔案的名稱或位置。 或者，使用者可以在 SharePoint 中[重新命名文件庫中的檔案、資料夾或連結](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
@@ -424,7 +424,7 @@ ms.locfileid: "51222416"
 
 - 設定 Exchange 進行 Azure 資訊保護
     
-    不需要先設定 Exchange 來使用 Azure 資訊保護，使用者就能在 Outlook 中套用標籤來加密電子郵件。 不過，在設定 Exchange 使用 Azure 資訊保護之前，您無法獲得使用 Exchange 的 Azure 版權管理保護的完整功能。
+    在使用者可在 Outlook 中套用標籤以加密其電子郵件之前，不必設定 Exchange 進行 Azure 資訊保護。不過，直到設定 Exchange 進行 Azure 資訊保護前，您都無法取得使用 Microsoft Azure AD Rights Management 保護與 Exchange 搭配的完整功能。
     
     例如，使用者無法在行動電話或 Outlook 網頁版上檢視加密的電子郵件，無法為加密的電子郵件編製索引供搜尋，而且您無法設定 Exchange Online DLP 使用版權管理保護。 
     

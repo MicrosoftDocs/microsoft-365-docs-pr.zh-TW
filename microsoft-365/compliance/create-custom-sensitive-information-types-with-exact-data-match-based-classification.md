@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: a6e4429718de05362bd6bd3336c9d19ceeec64b9
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408642"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113995"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -48,7 +48,7 @@ ms.locfileid: "51408642"
 
 ![以 EDM 為基礎的分類](../media/EDMClassification.png)
 
-以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日重新整理，而且可以包含最多 1 億資料列。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以對原則使用以 EDM 為基礎的分類，例如[資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或 [Microsoft Cloud App Security 檔案原則](/cloud-app-security/data-protection-policies)。
+以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日重新整理，而且可以包含最多 1 億資料列。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以和原則一起使用以 EDM 為基礎的分類，例如[資料外洩防護原則](dlp-learn-about-dlp.md) 或 [Microsoft Cloud App Security 檔案原則](/cloud-app-security/data-protection-policies)。
 
 > [!NOTE]
 > Microsoft 365 資訊保護在預覽版中支援下列雙位元組字元集語言：
@@ -167,7 +167,7 @@ ms.locfileid: "51408642"
 - \~
 - \; 
 
-- `ignoredDelimiters` 旗標不支援：
+`ignoredDelimiters` 旗標不支援：
 - 0-9 字元
 - A-Z
 - a-z
@@ -301,6 +301,8 @@ ms.locfileid: "51408642"
 
 > [!NOTE]
 > 這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。 在您執行使用新增項目的步驟之前，必須先完成更新。
+ 
+使用 EDM 敏感性資訊類型來匯入規則套件並匯入敏感性運算列表之後，您可以使用在合規性中心之 EDM 精靈中的 **[測試]** 函數來測試新建立的類型。 請參閱 [使用精確資料比對結構描述和敏感性資訊類型精靈](sit-edm-wizard.md) 有關使用此功能的指示。
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>編輯以 EDM 為基礎的分類的結構描述
 
@@ -369,7 +371,7 @@ ms.locfileid: "51408642"
 
 如果您想要從一部電腦進行雜湊和上傳，您必須從一部可直接連線至 Microsoft 365 租用者的電腦執行。 這要求您明文的敏感性資料在該電腦上進行雜湊。
 
-如果您不想公開明文機密的資料檔，可以在安全位置的電腦上雜湊，然後將雜湊檔和鹽檔複製到可直接連線到 Microsoft 365 租用者的電腦。 在這個案例中，您將需要在兩部電腦上都有 EDMUploadAgent。
+如果您不想公開純文字敏感性資料檔案，可以在安全位置的電腦上雜湊，然後將雜湊檔案和 Salt 檔案複製到可直接連線到您 Microsoft 365 租用戶的電腦以進行上傳。在這個案例中，您將需要在兩部電腦上都有 EDMUploadAgent。
 
 > [!IMPORTANT]
 > 如果您使用「精確資料比對」結構描述和敏感性資訊類型精靈來建立結構描述和模式檔案，則 ***必須*** 下載此程序的結構描述。
@@ -427,7 +429,7 @@ ms.locfileid: "51408642"
    > 您每天最多可以使用 EDMUploadAgent 將資料上傳到任何指定的資料儲存區兩次。
 
    > [!TIP]
-   > 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
+   > 若要取得所支援命令參數的清單，請執行代理程式無引數。例如，'EdmUploadAgentexe'。
 
 2. 授權 EDM 上傳代理、開啟命令提示字元視窗（以系統管理員身分），切換至 **C:\EDM\Data** 目錄，然後執行下列命令：
 
@@ -655,7 +657,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 - [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [瞭解敏感性資訊類型](sensitive-information-type-learn-about.md)
-- [DLP 原則的概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [修改精確資料比對模式以使用可設定比對](sit-modify-edm-schema-configurable-match.md)

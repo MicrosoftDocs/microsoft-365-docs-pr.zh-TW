@@ -21,37 +21,39 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: 瞭解如何將「社交媒體平臺」、「立即訊息平臺」及「檔共同作業平臺」的協力廠商資料匯入至 Microsoft 365 信箱。
-ms.openlocfilehash: 83ba81907a9db8dd1f4e95e5df3306366838c1ba
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+description: 瞭解如何從社交媒體平臺、立即訊息平臺及檔共同作業平臺匯入協力廠商資料，以 Microsoft 365 信箱。
+ms.openlocfilehash: 22a2e6dbadc3c259896348fc89754882db85cfb4
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163648"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764108"
 ---
 # <a name="archive-third-party-data"></a>封存第三方資料
 
-Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料從社交媒體平臺、立即訊息平臺及檔共同作業平臺，匯入到您的 Microsoft 365 組織中的信箱。 在 Microsoft 365 中，使用資料連線器匯入及封存協力廠商資料的主要好處是，您可以在匯入後，對其套用各種 Microsoft 365 相容性解決方案。 這可協助您確保組織的非 Microsoft 資料符合影響組織的規章和標準。
+Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料從社交媒體平臺、立即訊息平臺及檔共同作業平臺，匯入到您 Microsoft 365 組織中的信箱。 在 Microsoft 365 中，使用資料連線器匯入及封存協力廠商資料的主要好處是，您可以在匯入後，對其套用各種 Microsoft 365 規範解決方案。 這可協助您確保組織的非 Microsoft 資料符合影響組織的規章和標準。
 
 ## <a name="third-party-data-connectors"></a>協力廠商資料連接器
 
-下表列出 Microsoft 365 規範中心提供的協力廠商資料連線器。 該表也會摘要您可以在 Microsoft 365 中匯入及封存後，套用至協力廠商資料的相容性解決方案。 請參閱 [下一節](#overview-of-compliance-solutions-that-support-third-party-data) ，以取得每個規範解決方案的詳細說明，以及它如何受益協力廠商資料。
+下表列出 Microsoft 365 規範中心提供的協力廠商資料連線器。 該表也會摘要說明您在 Microsoft 365 匯入及封存後，您可以套用至協力廠商資料的相容性解決方案。 請參閱 [下一節](#overview-of-compliance-solutions-that-support-third-party-data) ，以取得每個規範解決方案的詳細說明，以及它如何受益協力廠商資料。
 
 > [!TIP]
 > 按一下 **協力廠商資料** 欄中的連結，以取得針對該資料類型建立連接器的逐步指示。
 
-|協力廠商資料  |訴訟暫止|eDiscovery  |保留設定  |記錄管理  |通訊合規性  |內部風險管理  |
+|協力廠商資料  |訴訟暫止|電子文件探索  |保留設定  |記錄管理  |通訊合規性  |內部風險管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Android <sup>1</sup>](archive-android-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[在&T 網路 <sup>1</sup>](archive-att-network-archiver-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[電鈴網路 <sup>1</sup>](archive-bell-network-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Cisco Jabber) <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[MS SQL <sup>2</sup>上的 Cisco jabber) ](archive-ciscojabberonmssql-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Oracle <sup>2</sup>上的 Cisco jabber) ](archive-ciscojabberonoracle-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[PostgreSQL <sup>2</sup>上的 Cisco jabber) ](archive-ciscojabberonpostgresql-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[.EML <sup>2</sup>](archive-eml-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[企業編號 <sup>1</sup>](archive-enterprise-number-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Enterprise數位<sup>1</sup>](archive-enterprise-number-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
-|[FX Connect <sup>2</sup>](archive-fxconnect-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[FX 連線<sup>2</sup>](archive-fxconnect-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[人力資源 (人力資源) ](import-hr-data.md) ||||||![核取記號](../media/checkmark.png)
 |[ICE Chat](archive-icechat-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
@@ -73,7 +75,7 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 |[文字分隔 <sup>2</sup>](archive-text-delimited-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
 |[Verizon 網路 <sup>1</sup>](archive-verizon-network-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
-|[Webex 團隊 <sup>2</sup>](archive-webexteams-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
+|[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[網頁 <sup>2</sup>](archive-webpagecapture-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|||
 |[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |[Facebook <sup>2</sup>的工作場所](archive-workplacefromfacebook-data.md)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
@@ -84,21 +86,21 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 ||||||||
 
 > [!NOTE]
-> TeleMessage 提供的<sup>1</sup>個資料連線器。 您必須使用 TeleMessage 來為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。<br/><br/><sup>2</sup> 由 Veritas 提供的資料連線器。 您必須與 Veritas 合作為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。
+> TeleMessage 提供的<sup>1</sup>個資料連線器。 您必須使用 TeleMessage 來為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。<br/><br/><sup>2</sup> 由 Veritas 提供的資料連線器。 在 Microsoft 365 中封存資料之前，您必須與 Veritas 合作，為您的組織設定其封存服務。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。
 
 上表所列的協力廠商資料 (，但 HR 資料和實體聲譽徽章授予資料) 會匯入使用者信箱中。 支援協力廠商資料的對應相容性解決方案會套用至儲存資料的使用者信箱。
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>支援協力廠商資料的相容性解決方案
 
-下列各節說明 Microsoft 365 合規性解決方案可協助您管理上表中所列之協力廠商資料的部分內容。
+下列各節說明 Microsoft 365 規範解決方案可協助您管理上表所列之協力廠商資料的一些事項。
 
 ### <a name="litigation-hold"></a>訴訟暫止
 
 您在使用者信箱上進行 [訴訟暫](create-a-litigation-hold.md) 止，以保留協力廠商資料。 當您建立保留時，您可以指定保留期間 (也稱為以 *時間為基礎的保留*) ，如此一來，刪除及修改的協力廠商資料會保留指定的期間，然後從信箱中永久刪除。 或者，您可以只保留未 (稱為 *無限期保留*) 或移除訴訟暫止的內容。
 
-### <a name="ediscovery"></a>eDiscovery
+### <a name="ediscovery"></a>電子文件探索
 
-Microsoft 365 中的三個主要 eDiscovery 工具組括內容搜尋、核心 eDiscovery 和高級 eDiscovery。
+Microsoft 365 中的三個主要 eDiscovery 工具組括內容搜尋、核心 eDiscovery 和 Advanced eDiscovery。
 
 - **[內容搜尋](content-search.md)。** 您可以使用內容搜尋工具，針對您匯入的協力廠商資料搜尋信箱。 您可以使用搜尋查詢和條件來縮小搜尋結果，以及匯出搜尋結果。
 
@@ -106,7 +108,7 @@ Microsoft 365 中的三個主要 eDiscovery 工具組括內容搜尋、核心 eD
 
 - **[Advanced eDiscovery](overview-ediscovery-20.md)。** 這項強大的工具可讓您將保管人新增至案例、將保管人的資料置於保留狀態，然後將系統管理員的協力廠商資料載入至評審，以進行進一步分析，例如主題和重複偵測，以擴充核心 eDiscovery 的案例功能。 將協力廠商資料載入到審閱集中之後，您可以查詢並篩選為窄的結果集。
 
-   核心 eDiscovery 和高級 eDiscovery 可讓您管理可能與組織法律或內部調查相關的協力廠商資料。
+   核心 eDiscovery 和 Advanced eDiscovery 可讓您管理可能與組織法律或內部調查相關的協力廠商資料。
 
 ### <a name="retention-settings"></a>保留設定
 
@@ -114,7 +116,7 @@ Microsoft 365 中的三個主要 eDiscovery 工具組括內容搜尋、核心 eD
 
 ### <a name="records-management"></a>記錄管理
 
-Microsoft 365 中的 [記錄管理](records-management.md) 功能可讓您將協力廠商資料宣告為記錄。 這可由套用保留標籤的使用者手動完成，以將信箱中的協力廠商資料標示為記錄。 或者，您可以在協力廠商資料中識別敏感資訊、關鍵字或內容類型，以自動套用保留標籤。
+Microsoft 365 中的[記錄管理](records-management.md)功能可讓您將協力廠商資料宣告為記錄。 這可由套用保留標籤的使用者手動完成，以將信箱中的協力廠商資料標示為記錄。 或者，您可以在協力廠商資料中識別敏感資訊、關鍵字或內容類型，以自動套用保留標籤。
 
 ### <a name="communication-compliance"></a>通訊合規性
 
@@ -126,6 +128,6 @@ Microsoft 365 中的 [記錄管理](records-management.md) 功能可讓您將協
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>使用 Microsoft 合作夥伴封存協力廠商資料
 
-匯入及封存協力廠商資料的另一個選擇是讓您的組織與 Microsoft 合作夥伴搭配使用。 如果 Microsoft 規範中心中提供的資料連線器不支援協力廠商資料型別，您可以使用可提供自訂連接器的合作夥伴，以便定期從協力廠商資料來源提取專案，然後以協力廠商 API 連線至 Microsoft 雲端，並將這些專案匯入 Microsoft 365。 夥伴連接器也會將專案的內容從協力廠商資料來源轉換成電子郵件，然後將其匯入 Microsoft 365 中的信箱。
+匯入及封存協力廠商資料的另一個選擇是讓您的組織與 Microsoft 合作夥伴搭配使用。 如果 Microsoft 規範中心中提供的資料連線器不支援協力廠商資料型別，您可以使用可提供自訂連接器的合作夥伴，以便定期從協力廠商資料來源提取專案，然後以協力廠商 API 連線至 Microsoft 雲端，然後將這些專案匯入至 Microsoft 365。 夥伴連接器也會將專案的內容從協力廠商資料來源轉換成電子郵件，然後將其匯入 Microsoft 365 中的信箱。
 
-如需您可以使用的合作夥伴清單及此方法的逐步程式，請參閱在 [Microsoft 365 中封存協力廠商資料](work-with-partner-to-archive-third-party-data.md)的合作。
+如需您可以使用的合作夥伴清單及此方法的逐步程式，請參閱[在 Microsoft 365 中封存協力廠商資料](work-with-partner-to-archive-third-party-data.md)的合作。

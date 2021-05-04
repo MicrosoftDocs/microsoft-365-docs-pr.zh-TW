@@ -14,29 +14,29 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用本機腳本在裝置上部署設定套件，使其可架至服務。
-ms.openlocfilehash: 69a8295b170f9186d14862a7247cac3fb4c4ef3d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e9efa76af72f9169bdec1acf35d72066ac0a776e
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917969"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893304"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本機指令碼上線 Windows 10 裝置
 
-適用於：
+**適用於：**
 
-- [Microsoft 365 端點資料遺失防護 (DLP) ](./endpoint-dlp-learn-about.md)
+- [Microsoft 365端點資料遺失防護 (DLP) ](./endpoint-dlp-learn-about.md)
 
-您也可以將個別裝置手動上架至 Microsoft 365 端點資料遺失防護。 在您認可如何在您的網路中上架所有裝置之前測試服務時，您可能會想要執行此動作。
+您也可以手動上架個別裝置，以 Microsoft 365 端點資料遺失防護。 在您認可如何在您的網路中上架所有裝置之前測試服務時，您可能會想要執行此動作。
 
 > [!IMPORTANT]
 > 此腳本已優化，最多可用於10個裝置。
 >
-> 若要以規模部署，請使用 [其他部署選項](dlp-configure-endpoints.md)。 例如，您可以使用群組原則，將上架腳本部署至生產環境中的超過10個裝置，並在其上使用 [Windows 10 裝置](dlp-configure-endpoints-gp.md)中提供的腳本。
+> 若要以規模部署，請使用 [其他部署選項](dlp-configure-endpoints.md)。 例如，您可以使用群組原則，將上架腳本部署至生產環境中的超過10個裝置，並使該腳本可用於[板載 Windows 10 裝置](dlp-configure-endpoints-gp.md)。
 
-## <a name="onboard-devices"></a>板載裝置
+## <a name="onboard-devices"></a>將裝置上線
  
-1.  從 [服務上架] 嚮導中，開啟已下載的 GP configuration 套件 .zip 檔案 (*DeviceComplianceOnboardingPackage.zip*) 。 您也可以從[Microsoft 規範中心](https://compliance.microsoft.com)取得套件
+1.  從服務上架嚮導中，開啟 (*DeviceComplianceOnboardingPackage.zip*) 的 GP configuration package .zip file。 您也可以從[Microsoft 規範中心](https://compliance.microsoft.com)取得套件
 
 2. 在功能窗格中，選取 [**設定**  >  **裝置上架**]。
 
@@ -52,13 +52,13 @@ ms.locfileid: "50917969"
 
 8.  以滑鼠右鍵按一下 **[命令提示字元]**，然後選取 **[以系統管理員身分執行]**。
 
-![指向以系統管理員身分執行的視窗「開始」功能表](../media/dlp-run-as-admin.png)
+    ![指向以系統管理員身分執行的視窗「開始」功能表](../media/dlp-run-as-admin.png)
 
 9.  輸入指令檔的位置。 如果您已將檔案複製到桌面，請輸入： *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
 10.  按 **enter** 鍵或按一下 **[確定]**。
 
-如需如何手動驗證裝置是否符合及正確報告感應器資料的相關資訊，請參閱 [疑難排解 Microsoft Defender Advanced 威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
+如需如何手動驗證裝置是否符合及正確報告感應器資料的詳細資訊，請參閱。 [Microsoft Defender 進階威脅防護上架問題進行疑難排解](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
 
 ## <a name="offboard-devices-using-a-local-script"></a>使用本機腳本的下架裝置
 基於安全性的考慮，用來下架裝置的套件會在下載之日期之後的30天后到期。 傳送給裝置的已到期的脫離套件會遭到拒絕。 下載脫離套件時，系統會通知您套件到期日，也會包含在套件名稱中。
@@ -74,7 +74,7 @@ ms.locfileid: "50917969"
 
 4. 按一下 [ **下載套件** ] 並儲存 .zip 檔案。
 
-5. 將 .zip 檔案的內容解壓縮到可供裝置存取的共用唯讀位置。 您應該有一個名為 *DeviceComplianceOffboardingScript_valid_until_YYYY-mm-dd* 的檔案。
+5. 將 .zip 檔案的內容解壓至共用的唯讀位置，可供裝置存取。 您應該有一個名為 *DeviceComplianceOffboardingScript_valid_until_YYYY-mm-dd* 的檔案。
 
 6.  在裝置上開啟已提升許可權的命令列提示字元，並執行腳本：
 
@@ -82,7 +82,7 @@ ms.locfileid: "50917969"
 
 8.  以滑鼠右鍵按一下 **[命令提示字元]**，然後選取 **[以系統管理員身分執行]**。
 
-![指向以系統管理員身分執行的視窗「開始」功能表](../media/dlp-run-as-admin.png)
+    ![指向以系統管理員身分執行的視窗「開始」功能表](../media/dlp-run-as-admin.png)
 
 9.  輸入指令檔的位置。 如果您已將檔案複製到桌面，請輸入： *%userprofile%\desktop\ WindowsDefenderATPOffboardingScript_valid_until_YYYY-mm-dd*
 
@@ -98,9 +98,9 @@ ms.locfileid: "50917969"
 監視也可以直接在入口網站上進行，或是使用不同的部署工具來執行。
 
 ### <a name="monitor-devices-using-the-portal"></a>使用入口網站監視裝置
-1. 移至 [Microsoft 365 規範中心](https://compliance.microsoft.com)。
+1. 移至[Microsoft 365 規範中心](https://compliance.microsoft.com)。
 
-2. 選擇 [**設定**  >  **裝置上架**]  >  **裝置**。
+2. 選擇 [**設定**  >  **裝置上架**  >  **裝置**。
 
 3. 驗證裝置是否出現。
 
@@ -110,5 +110,5 @@ ms.locfileid: "50917969"
 - [使用 Microsoft Endpoint Configuration Manager 的板載 Windows 10 裝置](dlp-configure-endpoints-sccm.md)
 - [使用行動裝置管理工具上線 Windows 10 電腦](dlp-configure-endpoints-mdm.md)
 - [上線非持續 Virtual Desktop Infrastructure (VDI) 裝置](dlp-configure-endpoints-vdi.md)
-- [在新架的 Microsoft Defender ATP 裝置上執行偵測測試](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [疑難排解 Microsoft Defender 高級威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [在新架的 Microsoft Defender for Endpoint 裝置上執行偵測測試](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [疑難排解 Microsoft Defender 進階威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

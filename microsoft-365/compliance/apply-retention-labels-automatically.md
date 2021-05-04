@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 6b7e8f91706a9d12135069f0a6753c76eaff1fb4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920016"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107635"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
@@ -44,7 +44,7 @@ ms.locfileid: "50920016"
 當內容包含敏感性資訊、關鍵字或[可訓練分類器](classifier-get-started-with.md)的相符項目時，您可以自動對該內容套用保留標籤。
 
 > [!TIP]
-> 現在處於預覽階段，使用可搜尋的屬性來找出 [Teams 會議錄製](#microsoft-teams-meeting-recordings)。
+> 最近發行，使用可搜尋的屬性來識別 [Teams 會議錄製](#microsoft-teams-meeting-recordings)。
 
 根據下列條件自動套用保留標籤的程式：
 
@@ -134,11 +134,11 @@ ms.locfileid: "50920016"
 
 當您為敏感性資訊建立自動套用保留標籤原則時，系統會顯示與建立資料外洩防護 (DLP) 原則時相同的原則範本清單。 每個範本預設會尋找特定類型的敏感性資訊。 例如，此處顯示的範本從 **隱私權** 類別中查找美國 ITIN、SSN 和護照號碼，以及 **美國個人識別資訊 (PII) 資料** 範本：
 
-![敏感資訊類型的原則範本](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![敏感資訊類型的原則範本](../media/sensitive-info-configuration.png)
 
-了解有關敏感性資訊類型的更多資訊，請參閱[敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)。
+了解有關敏感性資訊類型的更多資訊，請參閱[敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)。 目前 [精確資料比對](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 和 [文件指紋](document-fingerprinting.md) 在此案例中不支援。
 
-選取原則範本後，您可以新增或移除任何類型的機密資訊，也可以變更執行個體計數和比對精確度。 在下方顯示的示例螢幕擷取畫面中，只有在以下情况下才會自動套用保留標籤：
+選取原則範本後，可以新增或移除任何類型的敏感性資訊，且可以變更執行個體計數和比對精確度。在接下來顯示的範例螢幕擷取畫面中，只有符合以下條件時，才會自動套用保留標籤：
   
 - 系統偵測到之機密資訊類型的比對精確度 (或信賴區間) 至少會有 75。 許多機密資訊類型是與多個合作夥伴所定義；比對精確度越高的模式需要更多證據 (例如關鍵字、日期或地址)，比對精確度越低的模式則需要較少證據。 **最小** 比對精確度越低，內容就越容易與條件相符。
 
@@ -228,7 +228,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams 會議錄製
 
 > [!NOTE]
-> 保留及刪除 Teams 會議錄製的功能已在預覽版中，且必須將錄製儲存到 OneDrive 或 SharePoint，否則無法運作。 如需詳細資訊，請參閱[使用 [商務用 OneDrive] 和 SharePoint Online 或 Stream 進行會議錄製](/MicrosoftTeams/tmr-meeting-recording-change)。
+> 必須將錄製儲存到 OneDrive 或 SharePoint，否則保留及刪除 Teams 會議錄製的功能無法運作。 如需詳細資訊，請參閱[使用 [商務用 OneDrive] 和 SharePoint Online 或 Stream 進行會議錄製](/MicrosoftTeams/tmr-meeting-recording-change)。
 
 若要識別儲存在使用者 OneDrive 帳戶或 SharePoint 中的 Microsoft Teams 會議錄製，請為 **關鍵字查詢編輯器** 指定下列項目：
 
@@ -236,7 +236,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ProgID:Media AND ProgID:Meeting
 ```
 
-大多數時候，會議錄製會儲存到 OneDrive。 但頻道會議會儲存在 SharePoint 中。
+在多數時候，會議錄製都會儲存到 OneDrive，但頻道會議則是儲存在 SharePoint 中。
 
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可訓練分類器自動將標籤套用至內容
@@ -285,7 +285,7 @@ ProgID:Media AND ProgID:Meeting
 
 ### <a name="deleting-retention-labels"></a>刪除保留標籤
 
-您可以刪除目前未包含在任何保留標籤原則中、未針對事件型保留所設定的保留標籤，或將項目標示為法規記錄。 刪除將項目標記為記錄的保留標籤功能目前正在預覽版中推出。
+您可以刪除目前未包含在任何保留標籤原則中、未針對事件型保留所設定的保留標籤，或將項目標示為法規記錄。
 
 針對您可以刪除的保留標籤，如果該標籤已套用至項目中，則會刪除失敗，而且您會看到一個連線至內容瀏覽器的連結，以識別已標籤的項目。
 

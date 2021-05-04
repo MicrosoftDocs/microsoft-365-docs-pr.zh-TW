@@ -1,5 +1,5 @@
 ---
-title: '深入瞭解 Microsoft 小組 (預覽中的預設資料遺失防護原則) '
+title: 了解 Microsoft Teams 中的預設資料外洩防護原則 (預覽)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 深入瞭解 Microsoft 小組的預設資料遺失防護原則
-ms.openlocfilehash: 3992daf9431dbd87ed5e947a1e5a2b0acd20edce
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+description: 深入瞭解 Microsoft Teams 中的預設資料遺失防護原則
+ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826231"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114141"
 ---
-# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>深入瞭解 Microsoft 小組 (預覽中的預設資料遺失防護原則) 
+# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>了解 Microsoft Teams 中的預設資料外洩防護原則 (預覽)
 
-[資料遺失防護](data-loss-prevention-policies.md) (DLP) 功能已經過擴充，可包括 Microsoft 團隊聊天和通道訊息，包括私人通道訊息。 在此版本中，我們會為第一次客戶建立「合規性中心」的預設 DLP 原則。
+[資料遺失防護](dlp-learn-about-dlp.md)功能已擴充，可納入 Microsoft Teams 聊天及通道訊息，包括私人通道郵件。 在此版本中，我們會為第一次客戶建立「合規性中心」的預設 DLP 原則。
 
 ## <a name="applies-to"></a>適用於
 
-以下列一或多個授權授權的任何租使用者，以及具有作用中團隊使用者的任何租使用者
+以下列一或多個授權授權的任何租使用者，且具有作用中 Teams 使用者
  
 - ME5, 
 - MA5, 
@@ -47,7 +47,7 @@ ms.locfileid: "50826231"
 
 
 > [!div class="mx-imgBorder"]
-> ![預設團隊 DLP 原則](../media/default-teams-dlp-policy.png)
+> ![預設 Teams DLP 原則](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>編輯或刪除預設原則
 

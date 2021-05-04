@@ -13,25 +13,25 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 管理員可以設定資料連線器，將資料從其組織的實體聲譽徽章授予系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的這項資料，協助您偵測特定使用者對實體辦公樓的存取權，這可能表示您的組織可能會發生內部威脅。
-ms.openlocfilehash: c07dfcbefa338f7499f2c45f595bf2ccda6387fa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理員可以設定資料連線器，將資料從其組織的實體聲譽徽章授予系統匯入至 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的這項資料，協助您偵測特定使用者對實體辦公樓的存取權，這可能表示您的組織可能會發生內部威脅。
+ms.openlocfilehash: a300107af1d3fe07f208f7e3f239f75a9cd6e5af
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911363"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994824"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>設定連接器以匯入實體聲譽徽章授予資料 (預覽) 
 
-您可以在 Microsoft 365 規範中心內設定資料連線器，以匯入實體聲譽徽章授予資料，例如員工的原始實體存取事件，或組織的聲譽徽章授予系統所產生的任何實體存取告警。 實體存取點的範例是組建的專案，或伺服器機房或資料中心的專案。 實體聲譽徽章授予資料可供 Microsoft 365 [有問必答風險管理解決方案](insider-risk-management.md) 使用，以協助保護您的組織免受惡意活動或組織內的資料竊取。
+您可以設定 Microsoft 365 規範中心內的資料連線器，以匯入實體聲譽徽章授予資料，例如員工的原始實體存取事件，或組織的聲譽徽章授予系統所產生的任何實體存取告警。 實體存取點的範例是組建的專案，或伺服器機房或資料中心的專案。 您可以使用實體聲譽徽章授予資料 Microsoft 365[有問必答風險管理解決方案](insider-risk-management.md)，協助保護您的組織免受惡意活動或組織內的資料竊取。
 
 設定實體聲譽徽章授予連接器包含下列工作：
 
-- 在 Azure Active Directory 中建立應用程式 (Azure AD) ，以存取可接受包含實體聲譽徽章授予資料之 JSON 負載的 API 端點。
+- 在 Azure Active Directory (Azure AD) 中建立應用程式，以存取接受包含實體聲譽徽章授予資料之 JSON 負載的 API 端點。
 
 - 使用實體聲譽徽章授予資料連線器定義的架構建立 JSON 負載。
 
-- 在 Microsoft 365 規範中心內建立實體聲譽徽章授予資料連線器。
+- 在 Microsoft 365 規範中心建立實體聲譽徽章授予資料連線器。
 
 - 執行腳本，將實體聲譽徽章授予資料推入 API 端點。
 
@@ -39,7 +39,7 @@ ms.locfileid: "50911363"
 
 ## <a name="before-you-set-up-the-connector"></a>在您設定連接器之前
 
-- 在步驟3中建立實體聲譽徽章授予連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立新的角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟3中建立實體聲譽徽章授予連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立新的角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「在 Exchange Online 中管理角色群組」一文中的 [[建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups)或[修改角色](/Exchange/permissions-exo/role-groups#modify-role-groups)群組] 區段。
 
 - 您必須決定如何每日 (檢索或匯出組織實體聲譽徽章授予系統中的資料) 並建立步驟2中所述的 JSON 檔案。 您在步驟4中執行的腳本會將 JSON 檔案中的資料推送至 API 端點。
 
@@ -55,7 +55,7 @@ ms.locfileid: "50911363"
 
 - 租使用者識別碼 (也稱為 *目錄識別碼*) 
 
-如需在 Azure AD 中建立應用程式的逐步指示，請參閱 [使用 Microsoft identity Platform 註冊應用程式](/azure/active-directory/develop/quickstart-register-app)。
+如需在 Azure AD 中建立應用程式的逐步指示，請參閱[註冊名為 Microsoft 身分識別平臺的應用程式](/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>步驟2：使用實體聲譽徽章授予資料準備 JSON 檔案
 
@@ -63,13 +63,13 @@ ms.locfileid: "50911363"
 
 JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案的必要架構屬性說明：
 
-| 屬性	 | 描述 | 資料類型 |
-|:-----------|:--------------|:------------|
-|UserId|員工可以在系統中有多個數位身分識別。 輸入必須已由來源系統解析 Azure AD 識別碼。 |UPN 或電子郵件地址|
-|AssetId|實體資產或實體存取點的參考識別碼。| 數位元字串|
+|屬性|描述|資料類型|
+|---|---|---|
+|UserId|員工可以在系統中有多個數位身分識別。 輸入必須已由來源系統解析 Azure AD 識別碼。|UPN 或電子郵件地址|
+|AssetId|實體資產或實體存取點的參考識別碼。|數位元字串|
 |AssetName|實體資產或實體存取點的易記名稱。|數位元字串|
 |EventTime|存取的時間戳記。|日期和時間（UTC 格式）|
-|AccessStatus|值 `Success` 或 `Failed`| 字串|
+|AccessStatus|值 `Success` 或 `Failed`|字串|
 |||
 
 以下是符合必要架構的 JSON 檔案範例：
@@ -84,67 +84,68 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
         "AccessStatus":"Failed",
     },
     {
-        "UserId":"pilarp@contoso.com",        
+        "UserId":"pilarp@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
-        "EventTime":"2019-07-04T02:57:49",        
+        "EventTime":"2019-07-04T02:57:49",
         "AccessStatus":"Success",
     }
 ]
 ```
+
 當您在步驟3中建立實體聲譽徽章授予連接器時，您也可以從嚮導下載下列 JSON 檔案的架構定義。
 
 ```text
 {
-    "title" : "Physical Badging Signals",
-    "description" : "Access signals from physical badging systems",
-    "DataType" : {
-        "description" : "Identify what is the data type for input signal",
-        "type" : "string",
-    },
-    "type" : "object",
-    "properties": {
-        "UserId" : {
-            "description" : "Unique identifier AAD Id resolved by the source system",
-            "type" : "string",
-        },
-        "AssetId": {
-            "description" : "Unique ID of the physical asset/access point",
-            "type" : "string",
-        },
-        "AssetName": {
-            "description" : "friendly name of the physical asset/access point",
-            "type" : "string",
-        },
-        "EventTime" : {
-            "description" : "timestamp of access",
-            "type" : "string",
-        },
-        "AccessStatus" : {
-            "description" : "what was the status of access attempt - Success/Failed",
-            "type" : "string",
-        },
-    }
-    "required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
+   "title" : "Physical Badging Signals",
+   "description" : "Access signals from physical badging systems",
+   "DataType" : {
+      "description" : "Identify what is the data type for input signal",
+      "type" : "string",
+   },
+   "type" : "object",
+   "properties": {
+      "UserId" : {
+         "description" : "Unique identifier AAD Id resolved by the source system",
+         "type" : "string",
+      },
+      "AssetId": {
+         "description" : "Unique ID of the physical asset/access point",
+         "type" : "string",
+      },
+      "AssetName": {
+         "description" : "friendly name of the physical asset/access point",
+         "type" : "string",
+      },
+      "EventTime" : {
+         "description" : "timestamp of access",
+         "type" : "string",
+      },
+      "AccessStatus" : {
+         "description" : "what was the status of access attempt - Success/Failed",
+         "type" : "string",
+      },
+   }
+   "required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
 }
 ```
 
 ## <a name="step-3-create-the-physical-badging-connector"></a>步驟3：建立實體聲譽徽章授予連接器
 
-下一步是在 Microsoft 365 規範中心內建立實體聲譽徽章授予連接器。 在步驟4中執行腳本後，您在步驟3中建立的 JSON 檔案會進行處理並推送至您在步驟1中設定的 API 端點。 在這個步驟中，請務必複製當您建立連接器時所產生的 JobId。 當您執行腳本時，您會使用 JobId。
+下一步是在 Microsoft 365 規範中心建立實體聲譽徽章授予連接器。 在步驟4中執行腳本後，您在步驟3中建立的 JSON 檔案會進行處理並推送至您在步驟1中設定的 API 端點。 在這個步驟中，請務必複製當您建立連接器時所產生的 JobId。 當您執行腳本時，您會使用 JobId。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下左側導覽中的 [ **資料連線器** ]。
+1. 移至 <https://compliance.microsoft.com> ，然後按一下左側導覽中的 [ **資料連線器** ]。
 
 2. 在 [**實際聲譽徽章授予**] 底下的 [**資料連線器**] 頁面上，按一下 [ **View**]。
 
 3. 在 [ **實體聲譽徽章授予** ] 頁面上，按一下 [ **新增連接器**]。
 
 4. 在 [ **驗證認證** ] 頁面上，執行下列動作，然後按 **[下一步]**：
-  
+
    1. 針對您在步驟1中建立的 Azure 應用程式，輸入或貼上 Azure AD 應用程式識別碼。
-  
+
    2. 下載參考的範例架構，以建立 JSON 檔案。
-  
+
    3. 輸入實體聲譽徽章授予連接器的唯一名稱。
 
 5. 在 [ **複查** ] 頁面上，複查您的設定，然後按一下 **[完成]** 以建立連接器。
@@ -168,7 +169,7 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
 > [!NOTE]
 > 可由 API 處理的 JSON 檔案中的記錄數目上限為50000記錄。
 
-1. 請移 [至此 GitHub 網站](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) 來存取範例腳本。
+1. 請移[至此 GitHub 網站](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1)來存取範例腳本。
 
 2. 按一下 [ **原始** ] 按鈕，以在文字視圖中顯示腳本
 
@@ -176,7 +177,7 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
 
 4. 如有需要，修改組織的範例腳本。
 
-5. 使用檔案名尾碼（ps1）將文字檔儲存為 Windows PowerShell script 檔案;例如，PhysicalBadging.ps1。
+5. 使用檔案名尾碼 .ps1 將文字檔儲存為 Windows PowerShell 腳本檔案;例如，PhysicalBadging.ps1。
 
 6. 在您的本機電腦上開啟命令提示字元，然後移至您用來儲存腳本的目錄。
 
@@ -188,13 +189,13 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
 
    下表說明與此腳本搭配使用的參數及其必要的值。 您在上述步驟中取得的資訊會用於這些參數的值。
 
-   | 參數 | 描述 |
-   |:-------------|:--------------|
-   |tenantId | 這是您在步驟1中取得之 Microsoft 365 組織的識別碼。 您也可以在 Azure AD 系統管理中心的 [ **一覽** ] 邊欄中取得組織的 tenantId。 這是用來識別您的組織。 |
-   |標識 | 這是您在步驟1中您于 Azure AD 中所建立之應用程式的 Azure AD 應用程式識別碼。 當腳本嘗試存取您的 Microsoft 365 組織時，Azure AD 可用於驗證。                    |
-   |appSecret | 這是您在步驟1中您在 Azure AD 中建立之應用程式的 Azure AD 應用程式機密。 這也是用來進行驗證。                                                        |
-   |jobId | 這是您在步驟3中建立之實體聲譽徽章授予連接器的工作識別碼。 這是用來將推入 Microsoft 雲端的實體聲譽徽章授予資料與實體聲譽徽章授予連接器產生關聯。              |
-   |JsonFilePath | 這是本機電腦上的檔案路徑， (您用來執行您在步驟2中建立之 JSON 檔案的腳本) 。 此檔案必須遵循步驟3中所述的範例架構。|
+   |參數|描述|
+   |---|---|
+   |tenantId|這是您在步驟1中取得 Microsoft 365 組織的識別碼。 您也可以在 Azure AD 系統管理中心的 [ **一覽** ] 邊欄中取得組織的 tenantId。 這是用來識別您的組織。|
+   |標識|這是您在步驟1中您于 Azure AD 中所建立之應用程式的 Azure AD 應用程式識別碼。 當腳本嘗試存取您的 Microsoft 365 組織時，Azure AD 可用於驗證。|
+   |appSecret|這是您在步驟1中您在 Azure AD 中建立之應用程式的 Azure AD 應用程式機密。 這也是用來進行驗證。|
+   |jobId|這是您在步驟3中建立之實體聲譽徽章授予連接器的工作識別碼。 這是用來將推入 Microsoft 雲端的實體聲譽徽章授予資料與實體聲譽徽章授予連接器產生關聯。|
+   |JsonFilePath|這是本機電腦上的檔案路徑， (您用來執行您在步驟2中建立之 JSON 檔案的腳本) 。 此檔案必須遵循步驟3中所述的範例架構。|
    |||
 
    以下是使用每個參數之實際值之實體聲譽徽章授予連接器腳本語法的範例：
@@ -203,7 +204,7 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
    .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   上載成功時，腳本會顯示 **上傳成功** 郵件。
+   上載成功時，腳本會顯示 **Upload 成功** 的訊息。
 
    如果您有多個 JSON 檔案，則必須針對每個檔案執行該腳本。
 
@@ -214,7 +215,7 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
 
 在您建立實體聲譽徽章授予連接器並推入實體聲譽徽章授予資料之後，您可以在 Microsoft 365 規範中心中查看連接器和上傳狀態。 如果您安排定期定期執行腳本，您也可以在上次腳本執行後，查看目前的狀態。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) 並按一下左側導覽中的 [ **資料連線器** ]。
+1. 移至 <https://compliance.microsoft.com> 並按一下左側導覽中的 [ **資料連線器** ]。
 
 2. 按一下 [ **連接器** ] 索引標籤，然後選取實體聲譽徽章授予連接器以顯示飛出頁面。 此頁面包含連接器的屬性和資訊。
 
@@ -232,9 +233,9 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
 
 為了確保您的組織中的最新實體聲譽徽章授予資料可用於像「內部使用者風險管理」解決方案之類的工具，我們建議您安排腳本定期執行，例如一天一次。 這也需要在類似的 (上將實體聲譽徽章授予資料更新為 JSON 檔案（如果不是相同的) 排程），使其包含離開組織之員工的最新資訊。 目標是上傳最新的實體聲譽徽章授予資料，讓實體聲譽徽章授予連接器可供內幕人員風險管理解決方案使用。
 
-您可以在 Windows 中的 [任務排程器] 應用程式每天自動執行腳本。
+您可以在 Windows 中的工作排程器應用程式，每天自動執行腳本。
 
-1. 在您的本機電腦上，按一下 [Windows **開始** ] 按鈕，然後輸入 [ **任務計畫程式**]。
+1. 在您的本機電腦上，按一下 [Windows **開始**] 按鈕，然後輸入 [**任務** 排程器]。
 
 2. 按一下 [工作排程器] **應用程式以** 開啟它。
 
@@ -250,7 +251,7 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
 
 6. 選取 [ **觸發器** ] 索引標籤，按一下 [ **新增**]，然後執行下列動作：
 
-   1. 在 [ **設定**] 底下，選取 [ **每日** ] 選項，然後選擇第一次執行腳本的日期和時間。 腳本每天會在相同的指定時間。
+   1. 在 [**設定**] 底下，選取 [**每日**] 選項，然後選擇第一次執行腳本的日期和時間。 腳本每天會在相同的指定時間。
 
    2. 在 [ **高級設定**] 下，確定已選取 [ **啟用** ] 核取方塊。
 

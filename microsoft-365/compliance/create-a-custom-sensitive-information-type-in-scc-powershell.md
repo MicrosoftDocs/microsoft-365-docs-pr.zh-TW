@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合規性中心建立及匯入原則的自訂機密資訊類型。
-ms.openlocfilehash: 7ba807dce8b1d67280aeab929901327b7bfe03ef
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 18679e171fa704341094dee582124f36a950f8a5
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908531"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113985"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 建立自訂機密資訊類型
 
 本主題說明如何使用 PowerShell 建立 XML *原則套件* 檔案，定義您自己的自訂 [機密資訊類型](sensitive-information-type-entity-definitions.md)。 您必須知道如何建立規則運算式。 為進行示範，這篇主題將建立可識別員工 ID 的自訂機密資訊類型。 您可以使用此範例 XML 開始建立您專屬的 XML 檔案。 如果您是機密資訊類型的新使用者，請參閱 [瞭解機密資訊類型](sensitive-information-type-learn-about.md)。
 
-建立格式正確的 XML 檔案之後，您可以藉由使用 Microsoft 365 PowerShell 將它上傳至 Microsoft 365。 然後您就可以在原則中使用自訂機密資訊類型，並且測試它是否會如您預期地偵測機密資訊。
+建立格式正確的 XML 檔案之後，您可以藉由使用 Microsoft 365 PowerShell 將它上傳至 Microsoft 365。然後您就可以在原則中使用自訂敏感性資訊類型，並且測試它是否會如您預期地偵測敏感性資訊。
 
 > [!NOTE]
 > 如果您不需要 PowerShell 提供的精細控制，您可以在合規性中心建立自訂機密資訊類型。 若要進一步了解，請參閱[建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)。
@@ -61,15 +61,15 @@ ms.locfileid: "50908531"
 </RulePack>
 <Rules>
 <!-- Employee ID -->
-    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
-        <Pattern confidenceLevel="60">
+    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="65">
             <IdMatch idRef="Regex_employee_id"/>
         </Pattern>
-        <Pattern confidenceLevel="70">
+        <Pattern confidenceLevel="75">
             <IdMatch idRef="Regex_employee_id"/>
             <Match idRef="Func_us_date"/>
         </Pattern>
-        <Pattern confidenceLevel="80">
+        <Pattern confidenceLevel="85">
             <IdMatch idRef="Regex_employee_id"/>
             <Match idRef="Func_us_date"/>
             <Any minMatches="1">
@@ -128,13 +128,13 @@ ms.locfileid: "50908531"
 
 在您開始之前，了解規則的 XML 結構描述基本結構，以及您可以如何使用這個結構來定義自訂機密資訊讓它識別正確內容，很有幫助。
   
-規則可定義一個或多個實體 (機密資訊類型)，而每個實體則可定義一或多個模式。 當規則評估電子郵件和文件這類內容時，它的方法是尋找模式。
+規則會定義一或多個實體 (敏感性資訊類型)，每個實體會定義一或多個模式。模式是原則在評估內容 (例如電子郵件和文件) 時尋找的項目。
 
-在本主題中，XML 標記使用了規則來表示定義實體 (也就是所謂的機密資訊) 的模式。 因此在本主題中，當您看見規則時，請視之為實體或機密資訊類型，而非條件和動作。
+在本主題中，XML 標記使用了規則來表示定義實體 (也就是所謂的機密資訊) 的模式。因此在本主題中，當您看見規則時，請視之為實體或機密資訊類型，而非條件和動作。
   
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>最簡單的案例：具有一種模式的實體
 
-以下將介紹最簡單的案例。 您想讓原則找出含有貴組織員工 ID (採用九位數數字格式) 的內容。 因此，這個模式指的是可識別九位數數字的規則中所含的規則運算式。 任何包含九位數數字的內容都符合此模式。
+以下是最簡單的案例。您想要您的原則可以識別內容，其中包含貴組織的員工識別碼，該識別碼的格式為 9 位數數字。因此模式是指規則中所包含的規則運算式，可以識別 9 位數數字。任何包含 9 位數數字的內容都會滿足模式。
   
 ![具有一種模式的實體圖表](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
@@ -150,7 +150,7 @@ ms.locfileid: "50908531"
   
 請注意此結構的幾個重要層面：
   
-- 模式所需的辨識項越多，信賴等級就越高。 這相當實用的，因為當您稍後在原則中使用這個機密資訊類型時，可以只對較高信賴相符項目使用更嚴格限制的動作 (例如封鎖內容)，以及對較低信賴相符項目使用較不具限制性的動作 (例如傳送通知)。
+- 需要更多辨識項的模式具有較高的信賴等級。這相當有用，因為當您稍後在原則中使用這個機密資訊類型時，可以只對較高信賴相符項目使用更嚴格限制的動作 (例如封鎖內容)，以及對較低信賴相符項目使用較不具限制性的動作 (例如傳送通知)。
 
 - 支援 IdMatch 和 Match 元素會參考 regexes 與關鍵字，它們實際上是 Rule 元素的子項目，而不是 Pattern 元素的子項目。這些支援元素是由 Pattern 參考，但是包含在 Rule 中。這表示支援元素 (例如規則運算式或關鍵字清單) 的單一定義可以由多個實體和模式參考。
 
@@ -161,7 +161,7 @@ ms.locfileid: "50908531"
 ### <a name="name-the-entity-and-generate-its-guid"></a>為實體命名並產生其 GUID
 
 1. 在您選擇的 XML 編輯器中，新增 Rules 和 Entity 元素。
-2. 新增含有您自訂實體名稱的註解，在本例中即為「員工識別碼」。 稍後您可將實體名稱新增至當地語系化字串區段，該名稱就是當您建立原則時出現在 UI 中的名稱。
+2. 新增註解，其中包含自訂實體的名稱 (在此範例中是員工識別碼)。稍後您會將實體名稱新增至當地語系化字串區段，該名稱就是當您建立原則時出現在 UI 中的名稱。
 3. 產生實體的 GUID。 產生 GUID 的方式有數種，但您可以透過在 PowerShell 中輸入 **[guid]::NewGuid()** 便可輕鬆完成。 接著，您也可以新增實體 GUID 至當地語系化的字串區段。
   
 ![XML 標記，顯示 Rules 和 Entity 元素](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
@@ -174,7 +174,7 @@ ms.locfileid: "50908531"
   
 ![XML 標記，顯示會參考單一 Regex 元素的多個 Pattern 元素](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
-當條件獲得滿足時，模式會傳回計數和信賴等級，以便您在原則中的條件中使用。 當您將會偵測機密資訊類型的條件新增至原則時，您可以編輯計數和信賴等級，如下圖所示。 本主題後段會說明信賴等級 (又稱為比對精確度)。
+滿足條件時，模式會傳回計數和信賴等級，您可以在原則的條件中使用。當您將會偵測機密資訊類型的條件新增至原則時，可以編輯計數和信賴等級，如下所示。信賴等級 (也稱為比對正確性) 會在本主題稍後說明。
   
 ![執行個體計數和比對正確性選項](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -210,7 +210,7 @@ ms.locfileid: "50908531"
   
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>其他模式，例如日期或地址 [內建函式]
 
-除了內建機密資訊類型之外，機密資訊類型也可使用內建函式，可以識別確切辨識項，例如美國日期、歐洲日期、到期日或美國地址。 Microsoft 365 不支援上傳您自己的自訂函數，但當您建立自訂機密資訊類型時，您的實體可參照內建函式。
+除了內建機密資訊類型之外，敏感性資訊類行也可使用內建函式，可以識別確切識別碼，例如美國日期、歐洲日期、到期日或美國地址。Microsoft 365 不支援上傳您自己的自訂函式，但是當您建立自訂機密資訊類型時，您的實體可以參考內建函式。
   
 例如，員工識別碼識別證上面有雇用日期，因此這個自訂實體可以使用內建函式 `Func_us_date` 來識別以美國通用格式表示的日期。 
   
@@ -294,15 +294,15 @@ Any 元素具有選擇性的 minMatches 和 maxMatches 屬性，您可以用來�
 
 模式需要的辨識項越多，您就可以對於在模式相符時識別出真正實體 (例如員工識別碼) 更具信心。例如，相較於只需要 9 位數識別碼，您對於需要 9 位數數字、雇用日期、接近近似性的關鍵字的模式會更具信心。
   
-Pattern 元素有必要的 confidenceLevel 屬性。 您可以將 confidenceLevel 的值 (介於 1 和 100 的整數) 想像成實體中每個模式的唯一識別碼，實體中的模式必須具有您指定的不同信賴度等級。 整數的精確值並不重要，只要依據您的合規性小組的標準挑選適當的數字即可。 當您上傳自訂機密資訊類型，然後建立原則後，您便可以在您建立的規則條件中參照這些信賴等級。
+Pattern 元素具有必要的 confidenceLevel 屬性。您可以將 confidenceLevel (介於 1 與 100 之間的整數) 的值視為實體中每個模式的唯一識別碼 - 實體中的模式必須具有與您所指派不同的信賴等級。準確的整數值無關緊要 - 只要挑選對於您的合規性小組有意義的數字即可。在您上傳自訂機密資訊類型然後建立原則之後，可以在您建立的規則條件中參考這些信賴等級。
   
 ![XML 標記，顯示具有不同 confidenceLevel 屬性值的 Pattern 元素](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
 除了每個 Pattern 的 confidenceLevel 以外，Entity 還具有 recommendedConfidence 屬性。 建議的信賴屬性可視為規則的預設信賴等級使用。 當您在原則中建立規則時，若您不針對要使用的規則指定信賴等級，則該規則會根據實體的建議信賴等級來比對。 請注意，規則套件中的每個實體識別碼都必須有 recommendedConfidence 屬性，如果遺漏，您將無法儲存使用機密資訊類型的原則。 
   
-## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>您是否要在合規性中心的 UI 中支援其他語言？ [LocalizedStrings 元素]
+## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>您是否要在合規性中心的 UI 中支援其他語言？[LocalizedStrings 元素]
 
-如果您的合規性小組使用 Microsoft 365 合規性中心，以不同的地區設定和語言建立原則，您可以提供當地語系化版本的自訂機密資訊類型名稱和描述。 當您的合規性小組以您支援的語言使用 Microsoft 365 時，他們會在 UI 中看到當地語系化名稱。
+如果您的合規性小組使用 Microsoft 365 合規性中心，以不同的地區設定和語言建立原則，您可以提供當地語系化版本的自訂敏感性資訊類型名稱和描述。當您的合規性小組以您支援的語言使用 Microsoft 365 時，他們會在 UI 中看到當地語系化名稱。
   
 ![執行個體計數和比對正確性選項](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -310,7 +310,7 @@ Rules 元素必須包含 LocalizedStrings 元素，後者包含 Resource 元素�
   
 ![XML 標記，顯示 LocalizedStrings 元素的內容](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
-請注意，您只能在合規性中心的 UI 外觀自訂機密資訊類型時，使用當地語系化字串。 您無法使用當地語系化字串以提供不同當地語系化版本的關鍵字清單或規則運算式。
+請注意，您只有針對自訂機密資訊類型在合規性中心 UI 中的外觀，才使用當地語系化字串。您無法使用當地語系化字串來提供不同當地語系化版本的關鍵字清單或規則運算式。
   
 ## <a name="other-rule-package-markup-rulepack-guid"></a>其他規則套件標記 [RulePack GUID]
 
@@ -348,7 +348,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
   
 ## <a name="changes-for-exchange-online"></a>針對 Exchange Online 變更
 
-以前您可能使用 Exchange Online PowerShell 以匯入 DLP 的自訂機密資訊類型。 現在您的自訂機密資訊類型可在 Exchange 系統管理中心和合規性中心使用。 自此增強功能起，您應使用合規性中心 PowerShell 來匯入您的自訂敏感性資訊類型，您再也無法從 Exchange PowerShell 匯入。 自訂機密資訊類型將繼續以與過去相同的方式運作，不過，要讓合規性中心的自訂機密資訊類型的變更顯示在 Exchange 系統管理中心，可能需要一個小時 (最多)。
+以前，您可能已使用 Exchange Online PowerShell，針對 DLP 匯入您的自訂機密資訊類型。現在您的自訂機密資訊類型可以在 Exchange 系統管理中心及合規性中心中使用。作為此改進的一部分，您應該使用合規性中心 PowerShell 來匯入您的自訂機密資訊類型 - 您無法再從 Exchange PowerShell 匯入。您的自訂機密資訊類型會繼續如同以往一般運作；但是，在合規性中心中對於自訂機密資訊類型所做的變更，可能需要最多一個小時才會在 Exchange 系統管理中心中顯示。
   
 請注意，在合規性中心中，您使用的是 **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** Cmdlet 上傳規則套件。 (以前，在 Exchange 系統管理中心中，您使用的是  **ClassificationRuleCollection**` cmdlet。) 
   
@@ -453,7 +453,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
     
 ## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>重新編目內容以識別機密資訊
 
-Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資訊。 每次上傳 SharePoint Online 和商務用 OneDrive 網站中的內容時，系統即會重新進行編目。 但是，若要在所有現有內容中識別您的新自訂機密資訊類型，該內容必須重新進行編目。
+Microsoft 365 會使用搜尋編目程式來識別及分類網站內容中的機密資訊。SharePoint Online 和商務用 OneDrive 中的內容會在每次更新時自動重新編目。但是若要識別所有現有內容中，您的新自訂類型機密資訊，該內容必須重新編目。
   
 在 Microsoft 365 中，您無法手動要求對整個租用戶重新編目，但是您可以為網站集合、清單或文件庫這麼做，請參閱[手動要求對網站、文件庫或清單進行編目和重新編製索引](/sharepoint/crawl-site-content)。
   
@@ -532,7 +532,7 @@ Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資
    ```
 
    > [!NOTE]
-   > 包含內建敏感性資訊類型的內建規則套件稱為 Microsoft 規則套件。 此規則套件名為 Microsoft.SCCManaged.CustomRulePack，其中包含您已在合規性中心 UI 中建立的自訂機密資訊類型。
+   > 包含內建機密資訊類型的內建規則套件稱為 Microsoft 規則套件。此規則套件名為 Microsoft.SCCManaged.CustomRulePack，其中包含您已在合規性中心 UI 中建立的自訂機密資訊類型。
 
 2. 使用 [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) Cmdlet，將自訂規則套件儲存至變數：
 
@@ -921,7 +921,7 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Pat
 
 ## <a name="more-information"></a>詳細資訊
 
-- [資料外洩防護原則概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 
 - [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 

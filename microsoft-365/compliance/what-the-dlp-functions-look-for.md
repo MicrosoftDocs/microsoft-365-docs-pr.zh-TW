@@ -17,13 +17,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+recommendations: false
 description: 瞭解 DLP) 功能 (的資料遺失防護功能的尋找方式。
-ms.openlocfilehash: b77075b0b31ad5d6e6e2b7062c35e96649fa8365
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 47eda79470fd131939c493ac4f66af6efea01dd6
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841444"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086510"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 功能所尋找的項目
 

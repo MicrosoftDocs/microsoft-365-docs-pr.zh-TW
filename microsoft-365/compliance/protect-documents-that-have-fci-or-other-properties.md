@@ -19,45 +19,45 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何使用資料遺失防護 (DLP) 原則，以保護具有協力廠商系統屬性的檔。
-ms.openlocfilehash: 2d66a0a863b2076044a5c1d1cb9c3d4e8c29a186
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3e635080ce05314adc8dd9599012e5f76bc0815
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925559"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113479"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>建立 DLP 原則來保護具有 FCI 或其他屬性的文件
 
 Microsoft 365 資料遺失防護 (DLP) 原則可以使用分類屬性或專案屬性來識別敏感專案。 例如，您可以使用：
 
-- Windows Server File 分類基礎結構 (FCI) 屬性
+- Windows伺服器檔分類基礎結構 (FCI) 屬性
 - SharePoint 檔案屬性
 - 協力廠商的系統檔案屬性
 
 ![圖表顯示 Office 365 及外部的分類系統](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
-例如，您的組織可能會使用 Windows Server FCI 來識別具有個人資料（如社會保險號碼）的專案，然後根據檔中找到的個人資料類型和數量，將 [ **個人身分識別資訊** ] 屬性設定為 [ **高**]、[ **適中**]、[ **低**]、[ **公用**] 或 [ **不是 PII** ]，以分類檔。
+例如，您的組織可能會使用 Windows Server FCI 來識別具有個人資料（如社會保險號碼）的專案，然後根據檔中找到的個人資料類型和數量，將 [**個人身分識別資訊**] 屬性設定為 [**高**]、[**適中**]、[**低** **]、[****非 PII** ]，以分類檔。
 
-在 Microsoft 365 中，您可以建立一個 DLP 原則，識別具有該屬性設定為特定值的檔，例如 [ **高** ] 和 [ **中**]，然後採取諸如封鎖對這些檔案的存取等動作。 如果屬性設定為 [ **低**] （例如傳送電子郵件通知），相同的原則可以有另一個規則採用其他的動作。 如此一來，DLP 便會與 Windows Server FCI 整合，並協助保護從 Windows Server 檔案伺服器上傳或共用至 Microsoft 365 的 Office 檔。
+在 Microsoft 365 中，您可以建立一個 DLP 原則，識別具有該屬性設定為特定值的檔，例如 [**高**] 和 [**中**]，然後採取諸如封鎖對這些檔案的存取等動作。 如果屬性設定為 [ **低**] （例如傳送電子郵件通知），相同的原則可以有另一個規則採用其他的動作。 如此一來，DLP 便會與 Windows Server FCI 整合，並協助保護從 Windows 伺服器型檔案伺服器 Microsoft 365 上傳或共用 Office 檔。
 
 DLP 原則只會尋找特定的屬性名稱/值對。 只要屬性具有對應的 managed 屬性 SharePoint 搜尋，就可以使用任何檔案屬性。 例如，SharePoint 網站集合可能會使用名為「**客戶**」之必要欄位的「**行程報告**」內容類型。 每當人員建立行程報告時，他們必須輸入客戶名稱。 您也可以在 DLP 原則中使用此屬性名稱/值組，例如，如果您想要在 **客戶** 欄位包含 **Contoso** 時，封鎖檔存取權的規則。
 
-如果您想要將 DLP 原則套用至特定 Microsoft 365 標籤的內容，請勿遵循這裡的步驟。 請改為了解如何 [使用保留標籤做為 DLP 原則中的條件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
+如果您想要將 DLP 原則套用至具有特定 Microsoft 365 標籤的內容，請勿遵循這裡的步驟。 請改為了解如何 [使用保留標籤做為 DLP 原則中的條件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
 
 ## <a name="before-you-create-the-dlp-policy"></a>建立 DLP 原則之前
 
 您必須先在 SharePoint 系統管理中心建立 managed 屬性，才能使用 DLP 原則中的 Windows Server FCI 屬性或其他屬性。 原因如下。
 
-在 SharePoint Online 和商務 OneDrive 中，搜尋索引會透過編目您網站上的內容來建立。 編目程式會以編目屬性的形式挑選檔中的內容和中繼資料。 搜尋架構可協助編目程式決定要挑選的內容和中繼資料。 中繼資料的範例包括作者及檔的標題。 不過，若要將檔中的內容和中繼資料取得搜尋索引，編目屬性必須對應至 managed 屬性。 只有 managed 屬性會保留在索引中。 例如，與 author 相關的編目屬性會對應至與 author 相關的 managed 屬性。
+在 SharePoint Online 及商務用 OneDrive 中，搜尋索引會透過編目您網站上的內容來建立。 編目程式會以編目屬性的形式挑選檔中的內容和中繼資料。 搜尋架構可協助編目程式決定要挑選的內容和中繼資料。 中繼資料的範例包括作者及檔的標題。 不過，若要將檔中的內容和中繼資料取得搜尋索引，編目屬性必須對應至 managed 屬性。 只有 managed 屬性會保留在索引中。 例如，與 author 相關的編目屬性會對應至與 author 相關的 managed 屬性。
 
 > [!NOTE]
 > 使用條件建立 DLP 規則時，請務必使用 managed 屬性名稱，而不是編目屬性名稱 `ContentPropertyContainsWords` 。
 
 這一點很重要，因為 DLP 會使用搜尋編目程式來識別和分類您網站上的機密資訊，然後將該機密資訊儲存在搜尋索引的安全部分。 當您將檔上傳至 Office 365 時，SharePoint 會根據檔案屬性，自動建立編目屬性。 不過，若要使用 DLP 原則中的 FCI 或其他屬性，該編目屬性必須對應至 managed 屬性，這樣該屬性的內容就會保留在索引中。
 
-如需搜尋及 managed 屬性的詳細資訊，請參閱 [Manage the search schema in SharePoint Online](/sharepoint/manage-search-schema)。
+如需搜尋及 managed 屬性的詳細資訊，請參閱[Manage the search schema in SharePoint Online](/sharepoint/manage-search-schema)。
 
-### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>步驟1：將具有必要屬性的檔上傳至 Office 365
+### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>步驟1：將具有所需屬性的檔 Upload Office 365
 
 您必須先將檔上傳至您要在 DLP 原則中參考的屬性。 Microsoft 365 會偵測屬性，並自動從該屬性建立編目屬性。 在下一個步驟中，您將建立 managed 屬性，然後將 managed 屬性對應至此編目屬性。
 
@@ -83,7 +83,7 @@ DLP 原則只會尋找特定的屬性名稱/值對。 只要屬性具有對應�
 
 8. 在 [對應至編目屬性] 底下 **，** \> **新增對應**。
 
-9. 在 [編目 **屬性選項** ] 對話方塊中 \> ，尋找並選取對應至您將在 DLP 原則 OK 中使用的 Windows Server FCI 屬性或其他屬性的編目屬性 \> ****。
+9. 在 [編目 **屬性選項**] 對話方塊中， \> 尋找並選取對應至您將在 DLP 原則 OK 中使用的 Windows Server FCI 屬性或其他屬性的編目屬性 \> ****。
 
    ![選取編目屬性對話方塊](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 
@@ -91,7 +91,7 @@ DLP 原則只會尋找特定的屬性名稱/值對。 只要屬性具有對應�
 
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>建立使用 FCI 屬性或其他屬性的 DLP 原則
 
-在此範例中，組織在其 Windows 伺服器型檔案伺服器上使用 FCI;具體而言，他們使用的是名為 **個人身分識別資訊** 的 FCI 分類屬性，其可能的值為 **High**、 **適中**、 **低**、 **公有** 和 **非 PII**。 現在，他們想要在 Office 365 的 DLP 原則中使用其現有的 FCI 分類。
+在此範例中，組織在其 Windows 伺服器型檔案伺服器上使用 FCI;具體而言，他們使用的是名為 **個人身分識別資訊** 的 FCI 分類屬性，其可能的值為 **High**、**適中**、**低**、**公有** 和 **非 PII**。 現在，他們想要在 Office 365 的 DLP 原則中使用現有的 FCI 分類。
 
 首先，他們會依照上述步驟，在 SharePoint Online 中建立 managed 屬性，該屬性會對應至自動從 FCI 屬性建立的編目屬性。
 
@@ -107,7 +107,7 @@ DLP 原則只會尋找特定的屬性名稱/值對。 只要屬性具有對應�
 
 如需這些 Cmdlet 的詳細資訊，請參閱 [安全性 &amp; 規範中心 Cmdlet](/powershell/exchange/exchange-online-powershell)。
 
-1. [&amp;使用遠端 PowerShell 連接至安全規範中心](/powershell/exchange/connect-to-scc-powershell)
+1. [使用遠端 PowerShell 連線至安全性與 &amp; 合規性中心](/powershell/exchange/connect-to-scc-powershell)
 
 2. 使用建立原則  `New-DlpCompliancePolicy` 。
 
@@ -125,7 +125,7 @@ DLP 原則只會尋找特定的屬性名稱/值對。 只要屬性具有對應�
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows Server FCI 包含許多內建的屬性，包括本範例中所用的 **個人身分識別資訊** 。 每個組織可能會有不同的屬性值。 這裡使用的 [ **高**]、[ **適中**] 和 [ **低** ] 值都只是範例。 針對您的組織，您可以在 Windows Server 檔案伺服器的檔案伺服器資源管理員中，以其可能的值來查看 Windows Server FCI 的分類屬性。 如需詳細資訊，請參閱 [建立分類屬性](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11))。
+   Windows伺服器 FCI 包含許多內建的屬性，包括本範例中所用的 **個人身分識別資訊**。 每個組織可能會有不同的屬性值。 這裡使用的 [ **高**]、[ **適中**] 和 [ **低** ] 值都只是範例。 針對您的組織，您可以在 Windows 伺服器型檔案伺服器的檔案伺服器資源管理員中，以其可能的值來查看 Windows Server FCI 分類屬性。 如需詳細資訊，請參閱 [建立分類屬性](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11))。
 
 當您完成時，您的原則應該會有兩個新規則，都使用 **檔案屬性包含這些值的任何** 條件。 此條件不會出現在 UI 中，但會顯示其他條件、動作和設定。
 
@@ -146,13 +146,13 @@ DLP 原則只會尋找特定的屬性名稱/值對。 只要屬性具有對應�
 
 ### <a name="reindex-a-site-optional"></a>為網站重新編制索引 (選用) 
 
-1. 在網站上，選擇右上角) \> **網站設定** (齒輪圖示的 [設定]。
+1. 在網站上，選擇右上方) \> **網站設定** 的設定 (齒輪圖示。
 
 2. 在 [ **搜尋**] 底下，選擇 [ **搜尋及離線可用性** 重新 \> **索引網站**]。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
-- [資料外洩防護原則概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 
 - [從範本建立 DLP 原則](create-a-dlp-policy-from-a-template.md)
 

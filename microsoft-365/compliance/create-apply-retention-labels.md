@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及發佈保留標籤的指示，以便您日後在應用程式中套用，用以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: c327081109fe9d7c4d85d4cf8f01a9e5466432d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7c13158d9ce2857c01cad60c77b6f27bce6d3b6b
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908417"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107645"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>建立保留標籤，並在應用程式中套用
 
@@ -51,7 +51,7 @@ ms.locfileid: "50908417"
 
 ## <a name="how-to-create-and-publish-retention-labels"></a>建立及發佈保留標籤
 
-首先，建立您自己的保留標籤。 然後建立標籤原則，使標籤可以在應用程式中使用。
+首先，建立您的保留標籤。然後建立標籤原則，使標籤可以在應用程式中套用。
 
 您建立及設定保留標籤的位置，取決於您是否使用記錄管理。 以下提供這兩個案例的指示。
 
@@ -123,7 +123,7 @@ ms.locfileid: "50908417"
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>如何檢查發佈至 Exchange 之保留標籤的狀態
 
-在 Exchange Online 中，使用者可透過每 7 天執行一次的程序取得保留標籤。 您可以使用 PowerShell 查看這項程序上次執行的時間，藉此判斷下次的執行時間。
+在 Exchange Online 中，是透過每七天執行一次的程序，將保留標籤提供給使用者。您可以使用 PowerShell 查看此程序上次執行的時間，因此找出再次執行的時間。
   
 1. [連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
     
@@ -294,7 +294,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently rolling out in preview.
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
 
 For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 

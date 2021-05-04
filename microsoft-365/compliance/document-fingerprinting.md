@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 組織中的資訊工作者在其日常工作中會處理許多不同的敏感資訊。 「文件指紋」可識別您的組織中所使用的標準表單，以協助您保護此類資訊。 本主題說明文件指紋背後的概念，以及如何使用 PowerShell 建立一個概念。
-ms.openlocfilehash: 1542b956d0a1f662e059ca59ea346a8afc439c83
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 392b42e779de249dddc0acb4c7c757a009f9f743
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918499"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086736"
 ---
 # <a name="document-fingerprinting"></a>文件指紋
 
@@ -39,13 +39,13 @@ ms.locfileid: "50918499"
 您可能已猜到文件並沒有實際的指紋，但此名稱仍有助於闡述功能。 如同人類的指紋具有獨特的型態，文件也會有獨特的文字模式。 當您上傳檔案時，DLP 會識別檔中的唯一字模式、根據該模式建立檔指紋，並使用該檔指紋來偵測包含相同模式的輸出檔案。 正因如此，上載表單或範本能夠產生最有效的文件指紋類型。 每個填寫表單的人都會使用同一組原始文字，然後再將其本身的文字新增至文件中。 只要輸出檔案不受密碼保護，且包含原始表單中的所有文字，DLP 便可判斷檔是否符合檔指紋。
 
 > [!IMPORTANT]
-> 現在，DLP 可以在 Exchange online 中使用檔指紋作為偵測方法。
+> 現在，DLP 只能在 Exchange online 中使用檔指紋作為偵測方法。
 
 下列範例說明您根據專利範本建立文件指紋時所將發生的情況；但實際上您可使用任何表單作為建立文件指紋的基礎。
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>比對專利範本之文件指紋的專利文件範例
 
-![Document-Fingerprinting-diagram.png](../media/Document-Fingerprinting-diagram.png)
+![檔指紋的圖表。](../media/Document-Fingerprinting-diagram.png)
   
 「專利範本」會包含空白欄位「專利職稱」、「Inventors」和「描述」，以及每個欄位的描述（即 word 模式）。 當您上傳原始的專利權範本時，它會以其中一個支援的檔案類型和純文字格式。 DLP 會將此文字模式轉換成檔指紋，這是一個包含原始文字的唯一雜湊值的小型 Unicode XML 檔案，而且指紋會儲存為 Active Directory 中的資料分類。  (做為安全性的措施，原始檔案本身不會儲存在服務上;只會儲存雜湊值，而且無法從雜湊值重新建立原始檔案。 ) 專利指紋會變成機密資訊類型，您可以將其與 DLP 原則產生關聯。 將指紋與 DLP 原則建立關聯之後，DLP 便會偵測任何包含符合專利指紋之檔的外寄電子郵件，並根據組織的原則處理這些檔。 
 
@@ -62,10 +62,11 @@ ms.locfileid: "50918499"
 - 檔案受密碼保護
 - 檔案只包含影像
 - 文件未包含原始表單中所有用來建立文件指紋的文字
+- 大於 10 MB 的檔案
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>使用 PowerShell 建立以檔指紋為基礎的分類規則套件
 
-請注意，目前您可以使用安全性與合規性中心的 PowerShell，只建立檔指紋 &amp; 。 若要連接，請參閱 [connect To Security & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
+請注意，目前您可以使用安全性與合規性中心的 PowerShell，只建立檔指紋 &amp; 。 若要連線，請參閱[連線 to Security & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)]。
 
 DLP 使用分類規則套件來偵測敏感內容。 若要根據檔指紋建立分類規則套件，請使用 **新的-DlpFingerprint** 和 **DlpSensitiveInformationType** Cmdlet。 由於 **DlpFingerprint** 的結果不會儲存在資料分類規則之外，因此您必須在相同的 PowerShell 會話中執行 **new-DlpFingerprint** and **new-DlpSensitiveInformationType** 或 **Set DlpSensitiveInformationType** 。 下列範例會根據 C:\My Documents\Contoso Employee Template.docx 檔案建立新的文件指紋。 您可以將新的指紋儲存為變數，以便在同一 PowerShell 會話中搭配 **新的 DlpSensitiveInformationType** Cmdlet 使用。
   
@@ -90,7 +91,7 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-在 Exchange Online 中，您也可以使用郵件流程規則中的資料分類規則套件，如下列範例所示。 若要執行此命令，您必須先連線 [到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 另外請注意，規則套件從安全性合規性中心同步處理至 Exchange 系統管理中心所需的時間 &amp; 。
+您也可以在 Exchange Online 中使用郵件流程規則中的資料分類規則套件，如下列範例所示。 若要執行這個命令，您必須先[連線 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 另外請注意，規則套件從安全性合規性中心同步處理至 Exchange 系統管理中心所需的時間 &amp; 。
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574652"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892904"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
@@ -41,7 +41,7 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 我們也會發佈將稽核記錄保留 10 年的功能。 將稽核記錄保留 10 年可協助支援長期的調查，並回應法規、法律和內部責任。
 
 > [!NOTE]
-> 保留 10 年的稽核記錄會需要額外的附加元件授權。 這個新的授權將於 2021 年初提供。 如需詳細資訊，請參閱本文中的[進階稽核常見問題集](#faqs-for-advanced-audit)章節。
+> 保留 10 年的稽核記錄會需要額外的附加元件授權。 如需詳細資訊，請參閱本文中的[進階稽核常見問題集](#faqs-for-advanced-audit)章節。
 
 ### <a name="audit-log-retention-policies"></a>稽核記錄保留原則
 
@@ -63,9 +63,12 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+> [!NOTE]
+> <sup>*</sup> 目前，此活動不適用於 Office 365 和 Microsoft 365 政府環境。 這包括 GCC、GCC High 和 DoD 環境。
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
@@ -197,17 +200,13 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 對於指派了適當授權的合格客戶和使用者，無需任何動作即可存取關鍵稽核事件。
 
-**何時提供新的 10 年稽核記錄保留附加元件授權？**
+**如果我建立 10 年稽核記錄保留原則時，此功能已發行至正式版本，但在所需的附加元件授權可使用之前，我組織的稽核記錄資料會產生什麼影響？**
 
-新的 10 年稽核記錄保留附加元件將提供給具有 E5 訂閱的客戶購買。
-
-**如果我建立 10 年稽核記錄保留原則時，此功能已發行至正式版本，但在 2021 年 2 月所需的附加元件授權可使用之前，我組織的稽核記錄資料會產生什麼影響？**
-
-您在正式發行之後建立的 10 年稽核記錄保留原則所涵蓋的所有稽核資料，都將保留 10 年。 當 2021 年初 10 年稽核記錄保留附加元件授權可用時，您將需要為使用現有 10 年稽核記錄保留原則保留稽核資料的使用者購買附加元件授權。
+在此功能於 2020 年最後一季發行至正式版本之後，您建立的 10 年稽核記錄保留原則所涵蓋的任何稽核資料，都將保留 10 年。 這包括在發行購買所需的附加元件授權之前所建立 10 年稽核記錄保留原則。 不過，由於現在可以使用 10 年稽核記錄保留附加元件授權，您將需要為 10 年稽核記錄保留原則所涵蓋之稽核資料的使用者購買並指派這些附加元件授權。
 
 **Office 365 管理活動 API 的進階稽核中是否有新的事件？**
 
-是。 只要為具有適當授權的使用者產生稽核記錄，您就可以透過 Office 365 管理活動 API 存取這些記錄。
+是的。只要為具有適當授權的使用者產生稽核記錄，您就可以透過 Office 365 管理活動 API 存取這些記錄。
 
 **頻寬較高代表延遲較好或更高的 SLA 嗎？**
 

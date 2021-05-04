@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 瞭解您可以採取的基本疑難排解步驟，以解決 Office 365 eDiscovery 中的常見問題。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a867ed2e55c73fe4bbd890273d78cf57f4bfbd2c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926543"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060988"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、疑難排解及解決常見的 eDiscovery 問題
 
@@ -32,13 +32,13 @@ ms.locfileid: "50926543"
 
 ## <a name="errorissue-ambiguous-location"></a>錯誤/問題：不明確的位置
 
-如果您嘗試將使用者的信箱位置新增至搜尋中，且在 Exchange Online Protection (EOP) 目錄中有相同 userID 的重複或衝突物件，您會收到此錯誤： `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` 。
+如果您嘗試將使用者的信箱位置新增至 [搜尋]，而且在 Exchange Online Protection (EOP) 目錄中有相同的 userID 的重複或衝突物件，您會收到此錯誤： `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` 。
 
 ### <a name="resolution"></a>解決方案
 
 檢查是否有相同使用者識別碼的重複使用者或通訊群組清單。
 
-1. 連線至 [安全性 & 規範中心] PowerShell](/powershell/exchange/connect-to-scc-powershell)。
+1. 連線[& 規範中心 PowerShell 的安全性](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 執行下列命令，以取回使用者名稱的所有實例：
 
@@ -49,7 +49,7 @@ ms.locfileid: "50926543"
    ' Useralias@contoso.com ' 的輸出類似下列所示：
 
    > 
-   > |姓名|RecipientType|
+   > |名稱|RecipientType|
    > |---|---|
    > |Alias、User|MailUser|
    > |Alias、User|使用者|
@@ -66,7 +66,7 @@ EDiscovery 或內容搜尋可能會產生下列錯誤： `This search completed 
 
 如果您收到此錯誤，建議您確認在搜尋中失敗的位置，然後在失敗的位置上只重新執行搜尋。
 
-1. 連線至 [安全性 & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 然後執行下列命令：
+1. 連線至[安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) ，然後執行下列命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -82,7 +82,7 @@ EDiscovery 或內容搜尋可能會產生下列錯誤： `This search completed 
 
 當執行的 eDiscovery 搜尋包含 SharePoint 線上及一個用於商務位置的硬碟磁碟機時，您可能會收到錯誤， `File Not Found` 但檔案位於網站上。 此錯誤會出現在 [匯出警告] 和 [errors.csv 或略過 items.csv 中。 如果無法在網站上找到檔案，或索引已過期，就可能會發生這種情況。 以下是具有強調新增) 之實際錯誤 (的文字。
 
-> 28.06.2019 10：02：19_FailedToExportItem_Failed 下載內容。 其他診斷資訊： ContentDownloadTemporaryFailure：無法從 content 6ea52149 ExportWorker-91cd-4965-b5bb-82ca6a3ec9be-類型的檔。 相關識別碼：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894---Microsoft.SharePoint > ***未找到*** ServerException： File。 在 responseStream Microsoft.SharePoint ProcessResponseStream (Stream) at Microsoft.SharePoint ClientRequest ProcessResponse () ---內部例外狀況堆疊追蹤的結尾---
+> 28.06.2019 10：02：19_FailedToExportItem_Failed 下載內容。 其他診斷資訊： Microsoft。Office。ContentDownloadTemporaryFailure：無法從 content 6ea52149 ExportWorker-91cd-4965-b5bb-82ca6a3ec9be--類型的檔。 相關識別碼：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894---> Microsoft。SharePoint。***找不到*** ServerException： File。 在 Microsoft。SharePoint。Microsoft ClientRequest 中的 ProcessResponseStream (Stream responseStream) 。SharePoint。內部例外狀況堆疊追蹤的 ClientRequest () ---結束---
 
 ### <a name="resolution"></a>解決方案
 
@@ -92,11 +92,11 @@ EDiscovery 或內容搜尋可能會產生下列錯誤： `This search completed 
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>錯誤/問題：搜尋失敗，因為找不到收件者
 
-EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Exchange Online Protection (EOP) 中找到使用者物件，因為物件尚未同步處理，可能會發生此錯誤。
+EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Exchange Online Protection (EOP) 中找到 user 物件，則可能會發生此錯誤，因為物件尚未同步處理。
 
 ### <a name="resolution"></a>解決方案
 
-1. 連接至 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 連線[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 執行下列命令，檢查使用者是否已同步處理至 Exchange Online Protection：
 
@@ -112,7 +112,7 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 ### <a name="resolution"></a>解決方案
 
-1. 連線至 [安全性 & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 然後執行下列命令：
+1. 連線至[安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) ，然後執行下列命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -142,7 +142,7 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 1. 將搜尋分割成較小的搜尋，然後再次執行搜尋。  請嘗試使用較小的日期範圍或限制要搜尋的位置數目。
 
-2. 連線至 [安全性 & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 然後執行下列命令：
+2. 連線至[安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) ，然後執行下列命令：
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -162,7 +162,7 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 ### <a name="resolution"></a>解決方案
 
-1. 連線至 [安全性 & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 然後針對 eDiscovery 案例保留執行下列命令：
+1. 連線至[安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) ，然後針對 eDiscovery 案例保留執行下列命令：
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -196,7 +196,7 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 ## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>錯誤：「使用 HTTP 條件標頭 (指定的條件不符合) 
 
-使用 eDiscovery 匯出工具下載搜尋結果時，可能會收到下列錯誤： `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 這是暫時性的錯誤，通常會發生于 Azure 儲存位置。
+使用 eDiscovery 匯出工具下載搜尋結果時，可能會收到下列錯誤： `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 這是暫時性的錯誤，通常會發生在 Azure 儲存體位置。
 
 ### <a name="resolution"></a>解決方案
 
@@ -212,12 +212,14 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 1. 嘗試使用另一部用戶端/電腦來下載。
 
-2. 請務必下載到本機磁片磁碟機。
+2. 使用 [Remove-ComplianceSearch] [/powershell/module/exchange/remove-compliancesearch] 指令程式移除已不再需要的舊搜尋。
 
-3. 請確定病毒掃描程式未執行。
+3. 請務必下載到本機磁片磁碟機。
 
-4. 請確定沒有任何其他匯出正在下載至相同的資料夾或任何上層資料夾。
+4. 請確定病毒掃描程式未執行。
 
-5. 如果上述步驟無法運作，請停用 [壓縮] 和 [重復資料刪除]。
+5. 請確定沒有任何其他匯出正在下載至相同的資料夾或任何上層資料夾。
 
-6. 如果這樣做正常，則問題是由於本機病毒掃描程式或磁片問題所造成。
+6. 如果上述步驟無法運作，請停用 [壓縮] 和 [重復資料刪除]。
+
+7. 如果這樣做正常，則問題是由於本機病毒掃描程式或磁片問題所造成。

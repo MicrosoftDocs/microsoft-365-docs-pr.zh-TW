@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何使用此報告來精煉組織的預設資料遺失防護 (DLP) 原則。
-ms.openlocfilehash: 7c8f0460f9cd02ee3d26197965f5ea74737ac833
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4530e570f0ce593a7d2cb62acc28dfa4e1658df0
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817612"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114081"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>開始使用預設的 DLP 原則
 
@@ -42,11 +42,11 @@ ms.locfileid: "44817612"
   
 為了協助保護機密資訊，預設 DLP 原則為：
   
-- 在 Exchange、SharePoint 及包含至少一個信用卡號碼的 OneDrive 中，偵測到組織外部人員共用的內容。
+- 在包含至少一張信用卡號碼的 Exchange、SharePoint 和 OneDrive 中，偵測到組織外部人員共用的內容。
     
 - 顯示原則提示，當使用者嘗試與組織外部的人員共用此機密資訊時，將電子郵件通知傳送給他們。 如需這些選項的詳細資訊，請參閱 [傳送電子郵件通知及顯示 DLP 原則的原則秘訣](use-notifications-and-policy-tips.md)。
     
-- 產生詳細的活動報告，使您可以追蹤與組織外部的人員共用內容的人員，以及他們的情況。 您可以使用[DLP 報告](view-the-dlp-reports.md)和[審核記錄資料](search-the-audit-log-in-security-and-compliance.md) (其中的**活動**  =  **DLP**) 來查看此資訊。
+- 產生詳細的活動報告，使您可以追蹤與組織外部的人員共用內容的人員，以及他們的情況。 您可以使用 [DLP 報告](view-the-dlp-reports.md)和 [審核記錄資料](search-the-audit-log-in-security-and-compliance.md) (其中的 **活動**  =  **DLP**) 來查看此資訊。
     
 若要快速提煉預設 DLP 原則，您可以選擇讓它具有下列專案：
   
@@ -56,7 +56,7 @@ ms.locfileid: "44817612"
     
 - 封鎖存取包含機密資訊的內容，但是允許使用者在需要時覆寫和共用或傳送。
     
-如需有關附隨報告或限制存取的詳細資訊，請參閱 [資料遺失防護原則一覽](data-loss-prevention-policies.md)。
+如需有關附隨報告或限制存取的詳細資訊，請參閱 [資料遺失防護參考](data-loss-prevention-policies.md)。
   
 如果您想要稍後變更這些選項，您可以隨時編輯預設 DLP 原則，請參閱下一節。
   
@@ -72,11 +72,11 @@ ms.locfileid: "44817612"
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>構件的功能及未出現時
 
-在安全性與合規性中心**首頁的 [** **建議**] 區段中，會顯示名為「**進一步保護共用內容**」的小工具 &amp; 。 
+在安全性與合規性中心 **首頁的 [** **建議**] 區段中，會顯示名為「**進一步保護共用內容**」的小工具 &amp; 。 
   
 只有在下列情況時才會顯示此小工具：
   
-- 在安全性與 &amp; 合規性中心或 Exchange 系統管理中心中，沒有任何資料遺失防護原則。 此小工具的目的是協助您開始使用 DLP，所以如果您已有 DLP 原則，就不會顯示。
+- 在安全性與 &amp; 合規性中心或 Exchange 系統管理中心中，沒有資料遺失防護原則。 此小工具的目的是協助您開始使用 DLP，所以如果您已有 DLP 原則，就不會顯示。
     
 - 在過去30天內，包含至少一張信用卡的內容已與組織外部的人員共用。
     

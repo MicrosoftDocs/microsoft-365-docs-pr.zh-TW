@@ -20,44 +20,44 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: 您可以匯出搜尋結果報告，而不是在 Office 365 的安全性 & 規範中心中匯出內容搜尋的實際結果。 報告包含搜尋結果摘要及檔，其中包含每個要匯出之專案的詳細資訊。
+description: 您可以匯出搜尋結果報告，而不是在 Office 365 中的安全性 & 合規性中心匯出內容搜尋的實際結果。 報告包含搜尋結果摘要及檔，其中包含每個要匯出之專案的詳細資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de27e25945f14f6a6119b4c1776eebca5e84d8ce
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: fec6e441458ad7429067a1314a7aec3824aff11a
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358299"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760151"
 ---
 # <a name="export-a-content-search-report"></a>匯出內容搜尋報告
 
 [！注意] 在安全性 & 合規性 (中心內從內容搜尋中匯出一組完整的搜尋結果，而不是從與 eDiscovery 案例) 相關聯的內容搜尋中匯出，您可以匯出當您匯出搜尋結果時所產生的報表。
   
-當您匯出報表時，它會下載到與內容搜尋同名的資料夾，但附加 *_ReportsOnly*。 例如，如果內容搜尋命名為  *ContosoCase0815*，則會將報告下載至名為 *ContosoCase0815_ReportsOnly*的資料夾。 如需報告中所包含檔的清單，請參閱 [報告的內容](#whats-included-in-the-report)。
+當您匯出報表時，它會下載到與內容搜尋同名的資料夾，但附加 *_ReportsOnly*。 例如，如果內容搜尋命名為  *ContosoCase0815*，則會將報告下載至名為 *ContosoCase0815_ReportsOnly* 的資料夾。 如需報告中所包含檔的清單，請參閱 [報告的內容](#whats-included-in-the-report)。
 
 ## <a name="assign-roles-and-check-system-requirements"></a>指派角色及檢查系統需求
 
 - 若要匯出內容搜尋報告，您必須在安全性 & 規範中心內指派符合性搜尋管理角色。 此角色預設會指派給內建的 eDiscovery 管理員和組織管理角色群組。 如需詳細資訊，請參閱[指派電子文件探索權限](assign-ediscovery-permissions.md)。
 
-- 當您匯出報告時，資料會暫時儲存在 Microsoft 雲端的唯一 Azure 存放區中，然後再下載到本機電腦。 確定您的組織可以連線到 Azure 中的端點，也就是** \* blob.core.windows.net** (此萬用字元代表匯出) 的唯一識別碼。 搜尋結果資料會在建立後的兩周從 Azure 存放區刪除。 
-    
+- 當您匯出報告時，資料會暫時儲存在 Microsoft 雲端中唯一的 Azure 儲存體區域中，然後再將其下載到本機電腦。 確定您的組織可以連線到 Azure 中的端點，也就是 **\* blob.core.windows.net** (此萬用字元代表匯出) 的唯一識別碼。 搜尋結果資料會在建立後的兩周內從 Azure 儲存體區域中刪除。
+
 - 您用來匯出搜尋結果的電腦必須符合下列系統需求：
-    
-  - 32位或64位版本的 Windows 7 和更新版本
-    
+
+  - 最新版本的 Windows (32 位或 64-位) 
+
   - Microsoft .NET Framework 4.7
-    
+
 - 您必須使用下列其中一種支援的瀏覽器執行 eDiscovery 匯出工具<sup>1</sup>：
 
   - Microsoft Edge <sup>2</sup>
 
-    OR
+    或
 
   - Microsoft Internet Explorer 10 和更新版本
 
   > [!NOTE]
   > <sup>1</sup> Microsoft 不會製造協力廠商擴充模組或 ClickOnce 應用程式的附加元件。 使用不受支援的瀏覽器匯出搜尋結果時，不支援協力廠商分機或附加元件。<br/>
-  > <sup>2</sup> 由於 Microsoft Edge 的最近變更，因此預設不再啟用 ClickOnce 支援。 如需在 Edge 中啟用 ClickOnce 支援的相關指示，請參閱 [使用 Microsoft Edge 中的 EDiscovery 匯出工具](configure-edge-to-export-search-results.md)。
+  > <sup>2</sup>因為 Microsoft Edge 的最近變更，所以預設不再啟用 ClickOnce 支援。 如需在 Edge 中啟用 ClickOnce 支援的相關指示，請參閱[使用 Microsoft Edge 中的 eDiscovery 匯出工具](configure-edge-to-export-search-results.md)。
 
 - 如果預估內容搜尋所傳回的結果總大小超過 2 TB，則匯出報表失敗。 若要順利匯出報告，請嘗試縮小範圍並重新執行搜尋，使結果的預估大小小於 2 TB。
 
@@ -69,7 +69,7 @@ ms.locfileid: "47358299"
   
 ## <a name="step-1-generate-the-report-for-export"></a>步驟1：產生要匯出的報告
 
-第一步是準備報表，以下載至電腦匯出。 當您報告時，報表檔會上傳至 Microsoft 雲端中的 Azure 存放區。
+第一步是準備報表，以下載至電腦匯出。 當您報告時，報表檔會上傳至 Microsoft 雲端的 Azure 儲存體區域。
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
@@ -94,18 +94,18 @@ ms.locfileid: "47358299"
     
     如需未編制索引之專案的詳細資訊，請參閱 [內容搜尋中已部分索引的專案](partially-indexed-items-in-content-search.md)。
     
-7. 選擇包含所有 SharePoint 檔版本的搜尋統計資料。 只有在搜尋的內容來源包含 SharePoint 或 OneDrive 商務網站時，才會顯示此選項。
+7. 選擇包含所有 SharePoint 檔版本的搜尋統計資料。 只有在搜尋的內容來源包含 SharePoint 或商務用 OneDrive 網站時，才會顯示此選項。
     
 8. 按一下 [ **產生報告**]。
     
-    搜尋結果報告已準備好下載，這表示會將報告檔上傳至 Microsoft 雲端中的 Azure 儲存體區域。 當報告可供下載時，[ **下載報告** ] 連結會顯示在 [詳細資料] 窗格中的 [ **匯出報告至電腦** ] 底下。 
+    搜尋結果報告已準備好下載，這表示會將報告檔上傳至 Microsoft 雲端的 Azure 儲存體區域。 當報告可供下載時，[ **下載報告** ] 連結會顯示在 [詳細資料] 窗格中的 [ **匯出報告至電腦** ] 底下。 
     
 > [!NOTE]
 > 您也可以匯出與 eDiscovery 案例相關聯之內容搜尋的報告。 若要執行此動作，請移至 **ediscovery** \> **ediscovery**，選取案例，然後按一下 [ **編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。 在 [ **搜尋** ] 頁面上，選取搜尋，然後按一下 [ **匯出** ![ 匯出搜尋結果圖示] [ ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **匯出報告**]。 
   
 ## <a name="step-2-download-the-report"></a>步驟2：下載報表
 
-下一步是將報告從 Azure 存放區下載到您的本機電腦。
+下一步是將報表從 Azure 儲存體區域下載到您的本機電腦。
   
 1. 在您產生報告之搜尋的 [詳細資料] 窗格中，在 [ **將報告匯出至電腦**] 底下，按一下 [ **下載報告**]。
     
@@ -121,7 +121,7 @@ ms.locfileid: "47358299"
     
     - 報表匯出程式的狀態。 即使報表準備未完成，也可以開始下載報表。
     
-2. 在 [ **匯出金鑰**] 底下，按一下 [ **複製到剪貼**簿]。 您可以在步驟5中使用此機碼下載報告。
+2. 在 [ **匯出金鑰**] 底下，按一下 [ **複製到剪貼** 簿]。 您可以在步驟5中使用此機碼下載報告。
     
     > [!IMPORTANT]
     > 由於任何人都可以安裝並啟動 eDiscovery 匯出工具，然後使用此機碼來下載搜尋報告，請務必採取預防措施來保護此機碼，就像您保護密碼或其他安全性相關的資訊一樣。 
@@ -134,9 +134,9 @@ ms.locfileid: "47358299"
     
 6. 按一下 **[流覽]** 以指定您要下載報表的位置。 
     
-7. 按一下 [開始]**** 將搜尋結果下載至您的電腦。 
+7. 按一下 [開始] 將搜尋結果下載至您的電腦。 
     
-    **EDiscovery 匯出工具**會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。 
+    **EDiscovery 匯出工具** 會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。 
     
 > [!NOTE]
 > 您可以下載與 eDiscovery 案例相關聯的內容搜尋報告。 若要執行此動作，請移至 **ediscovery** \> **ediscovery**，選取案例，然後按一下 [ **編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。 在 [ **匯出** ] 頁面上，選取報告匯出，然後按一下 [詳細資料] 窗格中的 [ **下載報告** ]。 
@@ -152,7 +152,7 @@ ms.locfileid: "47358299"
   
 - **資訊清單：** 包含搜尋結果中所包含之每個專案相關資訊的資訊清單檔案 (以 XML 格式) 。 
     
-- **結果：** 包含每一列的 Excel 檔，其中包含每個要連同搜尋結果一起匯出之索引項目目的相關資訊。 針對電子郵件，結果記錄檔包含每封郵件的相關資訊，包括： 
+- **結果：** 包含一列的 Excel 檔，其中包含每個要連同搜尋結果一起匯出之索引項目目的相關資訊。 針對電子郵件，結果記錄檔包含每封郵件的相關資訊，包括： 
     
   - 來源信箱中郵件的位置 (，包含郵件是在主要或封存信箱) 中。
     
@@ -162,7 +162,7 @@ ms.locfileid: "47358299"
     
   - 郵件的寄件者和收件者。
     
-    針對來自 SharePoint 和 OneDrive 商務網站的檔，結果記錄檔包含每個檔的相關資訊，包括：
+    針對來自 SharePoint 和商務用 OneDrive 網站的檔，結果記錄檔包含每個檔的相關資訊，包括：
     
   - 檔的 URL。
     
@@ -173,6 +173,6 @@ ms.locfileid: "47358299"
   - 位於結果記錄檔的 [主旨] 欄中的檔 (名稱) 。
     
     > [!NOTE]
-    > **結果**報告中的列數應該等於搜尋結果的總數減去 [未**編制索引的專案**] 報告中所列的總專案數。 
+    > **結果** 報告中的列數應該等於搜尋結果的總數減去 [未 **編制索引的專案**] 報告中所列的總專案數。 
   
-- 未**編制索引的專案：** Excel 檔，包含搜尋結果中所包含之任何未編制索引項目目的相關資訊。 如果您在產生搜尋結果報告時未包含未編制索引的專案，則此報告仍會下載，但會是空的。
+- 未 **編制索引的專案：** Excel 檔，包含搜尋結果中所包含之任何未編制索引項目目的相關資訊。 如果您在產生搜尋結果報告時未包含未編制索引的專案，則此報告仍會下載，但會是空的。

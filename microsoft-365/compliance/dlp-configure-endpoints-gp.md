@@ -14,28 +14,28 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用群組原則在 Windows 10 裝置上部署設定套件，使其可架至服務。
-ms.openlocfilehash: b786d011a46f69e7bcac846e726e2aeb3031ae08
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 284de5169324b6da4038cfe0b50b2f2ffa40e3fd
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918019"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893284"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用群組原則的板載 Windows 10 裝置 
 
-適用於：
+**適用於：**
 
-- [Microsoft 365 端點資料遺失防護 (DLP) ](./endpoint-dlp-learn-about.md)
+- [Microsoft 365端點資料遺失防護 (DLP) ](./endpoint-dlp-learn-about.md)
 - 群組原則
 
 > [!NOTE]
-> 若要使用群組原則 (GP) 更新若要部署套件，您必須在 Windows Server 2008 R2 或更新版本上。
+> 若要使用群組原則 (GP) 更新若要部署套件，您必須位於 Windows Server 2008 R2 或更新版本。
 
-> 若為 Windows Server 2019，您可能需要使用「群組原則」偏好建立之 XML 檔案的 NT AUTHORITY\SYSTEM 取代 NT AUTHORITY\Well-Known-System-Account。
+> 針對 Windows Server 2019，您可能需要將 nt AUTHORITY\Well-Known-System-Account 取代為群組原則喜好設定之 XML 檔案的 nt AUTHORITY\SYSTEM。
 
-## <a name="onboard-devices-using-group-policy"></a>使用群組原則的板載裝置
+## <a name="onboard-devices-using-group-policy"></a>使用群組原則將裝置上線
 
-1. 從 [服務上架] 嚮導中，開啟已下載的 GP configuration 套件 .zip 檔案 (*DeviceComplianceOnboardingPackage.zip*) 。 您也可以從[Microsoft 規範中心](https://compliance.microsoft.com/compliancesettings/deviceonboarding)取得套件
+1. 從服務上架嚮導中，開啟 (*DeviceComplianceOnboardingPackage.zip*) 的 GP configuration package .zip file。 您也可以從[Microsoft 規範中心](https://compliance.microsoft.com/compliancesettings/deviceonboarding)取得套件
 
 2. 在功能窗格中，選取 [**設定**  >  **裝置上架**]。
 
@@ -43,13 +43,13 @@ ms.locfileid: "50918019"
 
 4. 按一下 [ **下載套件** ] 並儲存 .zip 檔案。
 
-5. 將 .zip 檔案的內容解壓縮到可供裝置存取的共用唯讀位置。 您應該會有一個稱為 *OptionalParamsPolicy* 的資料夾，以及檔案 *DeviceComplianceLocalOnboardingScript .cmd*。
+5. 將 .zip 檔案的內容解壓至共用的唯讀位置，可供裝置存取。 您應該會有一個稱為 *OptionalParamsPolicy* 的資料夾，以及檔案 *DeviceComplianceLocalOnboardingScript .cmd*。
 
 6. 開啟「 [群組原則管理主控台](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
 
 7. 在 [ **群組原則管理編輯器**] 中，移至 [ **電腦** 設定]、[ **喜好** 設定] 及 [控制台 **設定**]。
 
-8. 以滑鼠右鍵按一下 [ **排程任務**]，指向 [ **新增**]，然後按一下 [ **立即工作 (至少為 Windows 7)**。
+8. 以滑鼠右鍵按一下 [**排程任務**]，指向 [**新增**]，然後按一下 [**立即工作 (至少 Windows 7)**。
 
 9. 在開啟的 **任務** 視窗中，移至 [**一般**] 索引標籤。在 [**安全性選項**] 底下，按一下 [**變更使用者或群組** 和類型系統]，然後按一下 [**檢查名稱** 然後按一下 **[確定]** NT AUTHORITY\SYSTEM 會顯示為執行工作時所用的使用者帳戶。
 
@@ -74,7 +74,7 @@ ms.locfileid: "50918019"
 
 4. 按一下 [ **下載套件** ] 並儲存 .zip 檔案。
 
-5. 將 .zip 檔案的內容解壓縮到可供裝置存取的共用唯讀位置。 您應該有一個名為 *DeviceComplianceOffboardingScript_valid_until_YYYY-mm-dd* 的檔案。
+5. 將 .zip 檔案的內容解壓至共用的唯讀位置，可供裝置存取。 您應該有一個名為 *DeviceComplianceOffboardingScript_valid_until_YYYY-mm-dd* 的檔案。
 
 6. 開啟「 [群組原則管理主控台](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
 
@@ -111,5 +111,5 @@ ms.locfileid: "50918019"
 - [使用行動裝置管理工具上線 Windows 10 電腦](dlp-configure-endpoints-mdm.md)
 - [使用本機指令碼上線 Windows 10 裝置](dlp-configure-endpoints-script.md)
 - [上線非持續 Virtual Desktop Infrastructure (VDI) 裝置](dlp-configure-endpoints-vdi.md)
-- [在新架的 Microsoft Defender ATP 裝置上執行偵測測試](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [疑難排解 Microsoft Defender 高級威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [在新架 Microsoft Defender for Endpoint 裝置上執行偵測測試](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [疑難排解 Microsoft Defender 進階威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

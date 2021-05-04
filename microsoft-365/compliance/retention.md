@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 42fe70d1360f45deb6f98f41c0ffec97de7e00a9
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498344"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860952"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> 如果您看到查看 App 中關於保留原則的訊息，請連絡您的的 IT 部門，以取得他們已如何為您設定的資訊。 如果這些訊息是適用於 Teams 聊天或頻道訊息，請參閱[關於保留原則的 Teams 訊息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
+> 如果您看到應用程式中有關於保留原則的訊息，請連絡您的的 IT 部門，以取得他們已如何為您設定的資訊。 如果這些訊息是適用於 Teams 聊天或頻道訊息，請參閱[關於保留原則的 Teams 訊息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
 >
 > 此頁面上的資訊適用於可為了合規性原因而建立保留原則和保留標籤的 IT 系統管理員。
 
@@ -62,7 +62,7 @@ ms.locfileid: "51498344"
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>保留設定如何與就地內容搭配使用
 
-當內容有指派保留設定時，該內容會保留在其原始位置。 若未發生任何變更，人員可以繼續使用其文件或郵件。 但如果人員編輯或刪除保留原則中包含的內容，則會自動保留內容複本。
+當內容有指派保留設定時，該內容會保留在其原始位置。人員可以繼續處理他們的文件或郵件，就好像什麼都沒改變一樣。但如果人員編輯或刪除保留原則中包含的內容，則會自動保留內容複本。
   
 - 對於 SharePoint 和 OneDrive 網站：複本會保留在 **文件保留庫** 中。
 
@@ -124,7 +124,7 @@ ms.locfileid: "51498344"
 
 ### <a name="retention-labels"></a>保留標籤
 
-請針對需要不同保留設定的不同類型的內容，使用保留標籤。 例如：
+請針對需要不同保留設定的不同類型的內容，使用保留標籤。例如：
   
 - 至少必須保留一小段時間的稅務表單。 
     
@@ -155,7 +155,7 @@ ms.locfileid: "51498344"
 
 與[敏感度標籤](sensitivity-labels.md)不同，如果內容是移至 Microsoft 365 以外的位置，保留標籤不會保留。
 
-針對租用戶支援的保留標籤數量沒有任何限制。 不過，10,000 個是針對租用戶支援的原則數目上限，其中包括會套用標籤 (保留標籤原則和自動套用保留原則) 的原則，以及保留原則。
+針對租用戶支援的保留標籤數量沒有任何限制。不過，10,000 個是針對租用戶支援的原則數目上限，其中包括會套用標籤 (保留標籤原則和自動套用保留原則) 的原則，以及保留原則。
 
 #### <a name="classifying-content-without-applying-any-actions"></a>將內容分類而不套用任何動作
 
@@ -193,7 +193,7 @@ ms.locfileid: "51498344"
 |根據敏感資訊類型或可訓練分類器而自動套用  <br/> |Exchange (僅限所有信箱)、SharePoint、OneDrive  <br/> |
 |根據查詢而自動套用  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 群組  <br/> |
    
-在 Exchange 中，自動套用的保留標籤僅套用至新傳送的郵件 (傳輸中的資料)，而非目前在信箱中的所有郵件 (待用資料)。 此外，您只能在所有信箱中為敏感性資訊類型和可訓練分類器來自動套用保留標籤功能，但無法選取特定信箱。
+在 Exchange 中，您只能在新傳送的郵件 (傳輸中的資料) 上自動套用保留標籤功能，而非目前在信箱中的所有郵件 (待用資料)。此外，您只能在所有信箱中為敏感性資訊類型和可訓練分類器來自動套用保留標籤功能，但無法選取特定信箱。
   
 Exchange 公用資料夾、Skype、Teams 和 Yammer 訊息不支援保留標籤。 若要保留或刪除這些位置中的內容，請改用保留原則。
 
@@ -263,7 +263,7 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 |稽核系統管理員活動| 是 | 是|
 |識別要保留的項目： <br /> - 內容搜尋 <br /> - 資料分類頁面、內容總管，活動總管 | <br /> 否 <br /> 否 | <br /> 是 <br /> 是|
 
-請注意，您可以使用保留原則和保留標籤做為補充保留方法。 例如：
+請注意，您可以使用保留原則和保留標籤做為補充保留方法。例如：
 
 1. 您建立並設定將在內容上次修改後五年自動刪除內容的保留原則，並將該原則套用於所有 OneDrive 帳戶。
 

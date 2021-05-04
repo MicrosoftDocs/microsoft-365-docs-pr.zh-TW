@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: 瞭解如何從組織內的 Exchange、SharePoint 和 OneDrive 中，管理部分索引項目目 (也稱為未編制索引的專案) 。
-ms.openlocfilehash: 5d30c0f7c6ae77236ba7fd9f2dbfcc7a0397ae21
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 瞭解如何從組織內的 Exchange、SharePoint 及商務用 OneDrive 中，管理部分索引項目目 (也稱為未編制索引的專案) 。
+ms.openlocfilehash: c24fb2d9b633181538d76cf35e27dae1824b311d
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922577"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994802"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>調查 eDiscovery 中已部分索引的專案
 
-當您執行搜尋時，您從 Microsoft 365 規範中心執行的 eDiscovery 搜尋會自動包含在預估搜尋結果中已部分索引的專案。 已部分編制索引的專案是 Exchange 信箱專案和檔，其上的 SharePoint 和 OneDrive 出於某些原因尚未完全編制搜尋索引的商務網站。 大部分電子郵件訊息和網站檔都已成功編制索引，因為它們在電子郵件的 [索引限制](limits-for-content-search.md#indexing-limits-for-email-messages)內。 不過，有些專案可能會超出這些索引限制，而且會進行部分編制索引。 以下是在執行 eDiscovery 搜尋時，無法將專案編制索引以進行搜尋的其他原因，而且會傳回成部分索引項目目：
+您從 Microsoft 365 合規性中心執行的 eDiscovery 搜尋，會在您執行搜尋時，自動將部分索引項目目納入估計的搜尋結果中。 部分編制索引的專案 Exchange SharePoint 上的信箱專案和檔，以及商務用 OneDrive 的網站，因為某些原因並未完全編制搜尋的索引。 大部分電子郵件訊息和網站檔都已成功編制索引，因為它們在電子郵件的 [索引限制](limits-for-content-search.md#indexing-limits-for-email-messages)內。 不過，有些專案可能會超出這些索引限制，而且會進行部分編制索引。 以下是在執行 eDiscovery 搜尋時，無法將專案編制索引以進行搜尋的其他原因，而且會傳回成部分索引項目目：
   
 - 電子郵件的附加檔案沒有有效的處理常式，例如映射檔;這是部分索引電子郵件專案最常見的原因。
 
@@ -45,10 +45,7 @@ ms.locfileid: "50922577"
   
 - 如果專案已部分編制索引，且符合搜尋查詢，則會同時包含搜尋結果專案的計數 (和) 大小，以及部分編制索引的專案。 不過，當匯出相同搜尋的結果時，此專案會包含在一組搜尋結果中;它不會包含在部分索引項目目中。
 
-- 如果您指定搜尋查詢 (的日期範圍，方法是將它納入關鍵字查詢或使用條件) 中，任何不符合日期範圍的部分索引項目目都不會包含在部分編制索引的專案計數中。 位於日期範圍內的部分索引項目目會包含在索引項目目計數中。
-
-  > [!NOTE]
-  > 位於 SharePoint 和 OneDrive 網站中的部分索引項目目 *不會* 包含在搜尋的詳細統計資料中顯示的部分索引項目目估計內。 不過，當您匯出 eDiscovery 搜尋的結果時，可以匯出部分索引的專案。 例如，如果您只有搜尋網站，估計數目的部分索引項目目會是零。
+- 位於 SharePoint 和 OneDrive 網站中的部分索引項目目 *不會* 包含在搜尋的詳細統計資料中顯示的部分索引項目目估計內。 不過，當您匯出 eDiscovery 搜尋的結果時，可以匯出部分索引的專案。 例如，如果您只有搜尋網站，估計數目的部分索引項目目會是零。
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>計算組織中已部分索引的專案比率
 
@@ -80,7 +77,7 @@ ms.locfileid: "50922577"
   
 ![選擇第二個或第三個選項，匯出已部分索引的專案](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
-當您使用其中一個選項匯出 eDiscovery 搜尋結果或搜尋報告時，匯出會包含一個名為「未編制索引」 Items.csv 的報表。 這個報告包含的資訊大部分與 ResultsLog.csv 檔案相同;不過，未編制索引的 Items.csv 檔案中也包含與部分索引項目目相關的兩個欄位： **錯誤標記** 和 **錯誤屬性**。 這些欄位包含每個部分索引項目目之索引錯誤的相關資訊。 使用這兩個欄位中的資訊可協助您判斷是否有特定影響調查的索引錯誤。 如果是的話，您可以執行目標搜尋，並取得及匯出特定的電子郵件訊息，並 SharePoint 或 OneDrive 檔，以便進行檢查，以判斷是否與您的調查相關。 如需逐步指示，請參閱 [Prepare a CSV file for a 目標 search In Office 365](csv-file-for-an-id-list-content-search.md)。
+當您使用其中一個選項匯出 eDiscovery 搜尋結果或搜尋報告時，匯出會包含一個名為「未編制索引」 Items.csv 的報表。 這個報告包含的資訊大部分與 ResultsLog.csv 檔案相同;不過，未編制索引的 Items.csv 檔案中也包含與部分索引項目目相關的兩個欄位： **錯誤標記** 和 **錯誤屬性**。 這些欄位包含每個部分索引項目目之索引錯誤的相關資訊。 使用這兩個欄位中的資訊可協助您判斷是否有特定影響調查的索引錯誤。 如果是的話，您可以執行目標搜尋，並取得及匯出特定的電子郵件訊息，並 SharePoint 或 OneDrive 檔，以便進行檢查，以判斷是否與您的調查相關。 如需逐步指示，請參閱[在 Office 365 中準備目標搜尋的 CSV](csv-file-for-an-id-list-content-search.md)檔案。
 
 > [!NOTE]
 > 未編制索引的 Items.csv 檔案也包含名為「 **錯誤類型** 」和「 **錯誤訊息**」的欄位。 這些是舊版欄位，包含類似于 [ **錯誤標記** ] 和 [ **錯誤屬性** ] 欄位中的資訊，但詳細資訊更少的資訊。 您可以放心忽略這些舊版欄位。
@@ -105,14 +102,14 @@ ms.locfileid: "50922577"
 | `attachmentsize` <br/> |附加到電子郵件的檔案太大，無法處理。  <br/> |
 | `indexingtruncated` <br/> |當寫入已處理的電子郵件給索引時，其中一個可編制索引的屬性太大，已被截斷。 截斷的屬性會列在 [錯誤屬性] 欄位中。  <br/> |
 | `invalidunicode` <br/> |電子郵件包含無法當作有效的 Unicode 處理的文字。 此專案的索引可能不完整。  <br/> |
-| `parserencrypted` <br/> |附件或電子郵件訊息的內容已加密，但 Microsoft 365 無法解碼內容。  <br/> |
+| `parserencrypted` <br/> |附件或電子郵件的內容已加密，而且 Microsoft 365 無法解碼內容。  <br/> |
 | `parsererror` <br/> |剖析時發生未知的錯誤。 這通常是軟體錯誤或服務損毀的結果。  <br/> |
 | `parserinputsize` <br/> |附件太大，分析器無法處理，且該附件的分析並未發生或未完成。  <br/> |
 | `parsermalformed` <br/> |附件格式不正確，無法由分析程式處理。 這項結果可能是舊的檔案格式、不相容的軟體所建立的檔案，或偽裝成非宣告專案的病毒。  <br/> |
 | `parseroutputsize` <br/> |對附件剖析的輸出過大，必須加以截斷。  <br/> |
-| `parserunknowntype` <br/> |附件的檔案類型無法偵測到 Microsoft 365。  <br/> |
-| `parserunsupportedtype` <br/> |附件的檔案類型，Office 365 可以偵測，但不支援分析該檔案類型。  <br/> |
-| `propertytoobig` <br/> |Exchange 存放區中的電子郵件屬性值過大，無法進行找回，無法處理郵件。 這通常只會在電子郵件的 body 屬性時發生。  <br/> |
+| `parserunknowntype` <br/> |附件的檔案類型 Microsoft 365 無法偵測。  <br/> |
+| `parserunsupportedtype` <br/> |附件的檔案類型 Office 365 可以偵測，但不支援分析該檔案類型。  <br/> |
+| `propertytoobig` <br/> |Exchange 儲存區中的電子郵件屬性值過大，無法進行找回，無法處理郵件。 這通常只會在電子郵件的 body 屬性時發生。  <br/> |
 | `retrieverrms` <br/> |內容檢索程式無法解碼受 RMS 保護的郵件。  <br/> |
 | `wordbreakertruncated` <br/> |在編制索引期間檔中識別過多的字。 當達到此限制時，處理屬性已停止，而且會截斷屬性。  <br/> |
 
@@ -120,9 +117,9 @@ ms.locfileid: "50922577"
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>使用 PowerShell 腳本，判斷組織的部分索引電子郵件專案的危險性
 
-下列步驟將示範如何執行 PowerShell 腳本，以搜尋所有 Exchange 信箱中的所有專案，然後產生有關組織的部分索引電子郵件專案 (依計數和) 大小之比例的報告，並顯示每個索引錯誤的專案 (及其檔案類型) 的數目。 使用上一節中的錯誤標記描述來識別索引錯誤。
+下列步驟說明如何執行 PowerShell 腳本，搜尋所有 Exchange 信箱中的所有專案，然後產生有關組織的部分索引電子郵件專案 (依計數和大小) 之比率的報告，並顯示每個索引錯誤的專案數目 (及其檔案類型) 。 使用上一節中的錯誤標記描述來識別索引錯誤。
   
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `PartiallyIndexedItems.ps1` 。
+1. 使用 .ps1 的檔案名尾碼，將下列文字儲存至 Windows PowerShell 腳本檔案;例如， `PartiallyIndexedItems.ps1` 。
 
    ```powershell
      write-host "**************************************************"

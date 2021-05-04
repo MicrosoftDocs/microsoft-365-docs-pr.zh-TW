@@ -1,5 +1,5 @@
 ---
-title: 深入瞭解 trainable 的分類器
+title: 深入了解可訓練分類器
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,15 +17,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護 (DLP) 或保留原則。
-ms.openlocfilehash: 0e5f712b76af2fba3d456997a47352773d92d766
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是提供它的正值及負數樣本來查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護 (DLP) 或保留原則。
+ms.openlocfilehash: 1881e4de87fd41f21bb1f2236d46391b3a1ed785
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759897"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114049"
 ---
-# <a name="learn-about-trainable-classifiers"></a>深入瞭解 trainable 的分類器
+# <a name="learn-about-trainable-classifiers"></a>深入了解可訓練分類器
 
 分類及標示內容，使其能受到保護和正確處理，是資訊保護訓練科目的開始位置。 Microsoft 365 有三種方式可對內容進行分類。
 
@@ -42,16 +42,16 @@ ms.locfileid: "49759897"
 - 識別專案，因為它是範本的變化 (的 [ 檔指紋列印) ](document-fingerprinting.md)。
 - 使用完全字串的目前狀態 [ (完全相符的資料) ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
 
-敏感度和保留標籤可以自動套用，讓內容可用於 [資料遺失防護 (DLP) ](data-loss-prevention-policies.md) 和 [自動套用保留標籤](apply-retention-labels-automatically.md)的原則。
+您可以使用敏感度和保留標籤，讓內容可供使用，以 [瞭解資料遺失防護](dlp-learn-about-dlp.md)) 和 [自動套用保留標籤的](apply-retention-labels-automatically.md)原則。
 
 ## <a name="classifiers"></a>分類
 
-這種分類方法特別適合無法透過手動或自動模式相符方法輕易識別的內容。 這種分類方法更詳細地訓練分類器，以根據專案 (模式相符) 中的元素來識別專案。 分類器透過查看您要分類之內容的數百個範例，瞭解如何識別內容類型。 您可以在類別中進一步送入明確的範例。 一旦處理這些程式，您可以讓它混合使用比對和不相符的範例。 分類器接著會作出預測，以判斷是否有任何指定的專案屬於您所建立的類別。 然後，您可以確認其結果、將 true 正值、true 負片、誤報和漏報排序，以提升其預測的準確性。 
+這種分類方法特別適合無法透過手動或自動模式相符方法輕易識別的內容。 此分類方法更貼近訓練分類器，以根據項目為何，而非依據項目中的元素 (模式比對) 來找到項目。 分類器透過查看您要分類之內容的數百個範例，瞭解如何識別內容類型。 您可以在類別中進一步送入明確的範例。 一旦處理這些程式，您可以讓它混合使用比對和不相符的範例。 分類器接著會作出預測，以判斷是否有任何指定的專案屬於您所建立的類別。 然後，您可以確認其結果、將 true 正值、true 負片、誤報和漏報排序，以提升其預測的準確性。 
 
-當您發佈分類器時，它會在 SharePoint Online、Exchange 及 OneDrive 等位置中排序專案，並將內容分類。 在您發佈分類器之後，您可以繼續使用類似于初始訓練程式的意見反應進行訓練。
+當您發佈分類器時，會依 SharePoint 線上、Exchange 及 OneDrive 等位置來排序專案，並將內容分類。 在您發佈分類器之後，您可以繼續使用類似于初始訓練程式的意見反應進行訓練。
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>您可以使用 trainable 的分類器
-內建的分類器和 trainable 分類器皆可作為[使用靈敏度標籤的 Office autolabeling](apply-sensitivity-label-automatically.md)條件，並根據狀況和[通訊規範](communication-compliance.md)[自動套用保留標籤原則](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)。 
+在[使用靈敏度標籤](apply-sensitivity-label-automatically.md)的情況下，內建的分類器和 trainable 分類器皆為 Office autolabeling 的條件，根據狀況和[通訊合規性](communication-compliance.md)，[自動套用保留標籤原則](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)。 
 
 敏感度標籤可以使用分類器做為條件，請參閱 [自動套用敏感度標籤至內容](apply-sensitivity-label-automatically.md)。
 
@@ -65,7 +65,7 @@ ms.locfileid: "49759897"
 
 ### <a name="pre-trained-classifiers"></a>預先訓練的分類器
 
-Microsoft 365 隨附五個預先訓練的分類器：
+Microsoft 365 附帶五個預先訓練的分類器：
 
 > [!CAUTION]
 > 我們正在取代 **冒犯性語言** 的預先訓練分類符，因為它已經產生大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用 **威脅**、 **猥褻** 和 **騷擾** 預先訓練的分類器。
@@ -103,7 +103,7 @@ Microsoft 365 隨附五個預先訓練的分類器：
 - **猥褻** 語言：偵測特定類別的冒犯性語言的文字專案，包含 embarrass 大部分人員的運算式
 - **威脅**：偵測特定類別的冒犯性語言的文字專案與威脅以認可暴力或對人員或財產造成實體損毀或損毀的威脅
 
-這些會出現在 **Microsoft 365 規範中心**  >  **資料分類** Trainable 使用中的分類器視圖中，  >  狀態為 `Ready to use` 。
+這些會出現在狀態為的 **Microsoft 365 規範中心**  >  **資料分類**  >  **Trainable 分類** 器] 視圖中 `Ready to use` 。
 
 ![分類器-預先訓練的分類器](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -136,8 +136,8 @@ Microsoft 365 隨附五個預先訓練的分類器：
 ## <a name="see-also"></a>另請參閱
 
 - [保留標籤](retention.md)
-- [資料外洩防護 (DLP)](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [敏感度標籤](sensitivity-labels.md)
-- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [檔指紋列印](document-fingerprinting.md)
 - [完全相符的資料](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

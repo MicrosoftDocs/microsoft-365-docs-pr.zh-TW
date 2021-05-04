@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 34cbea7199ed50de8e65a48f8087e6475fb41a50
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的資料。
+ms.openlocfilehash: c34025d2b68eb0ee179c98ce9c97a59193f782e3
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926641"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994950"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-所有 Microsoft 資訊保護解決方案 (有時候縮寫為 MIP) 是使用[敏感度標籤](sensitivity-labels.md)來實作。 若要建立及發佈這些標籤，請前往標籤系統管理中心，例如 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)。 您也可以使用 Microsoft 365 安全性中心，或安全性與合規性中心。
+所有 Microsoft 資訊保護解決方案 (有時候縮寫為 MIP) 是使用[敏感度標籤](sensitivity-labels.md)來實作。 若要建立及發佈這些標籤，請前往 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)。 您也可以使用更早之前的入口網站 (Office 365 安全性與合規性中心)。
 
 首先，建立並設定您要提供應用程式和其他服務使用的敏感度標籤。 例如，您希望使用者從 Office 應用程式看到和套用的標籤。 
 
@@ -46,9 +46,6 @@ ms.locfileid: "50926641"
         - **解決方案** > **資訊保護**
         
         如果您沒有立即看到這個選項，請先選取 [全部顯示]。 
-    
-    - Microsoft 365 安全性中心： 
-        - **分類** > **敏感度標籤**
     
     - 安全性與合規性中心：
         - **分類** > **敏感度標籤**
@@ -144,9 +141,6 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
         
         如果您沒有立即看到這個選項，請先選取 [全部顯示]。 
     
-    - Microsoft 365 安全性中心： 
-        - **分類** > **敏感度標籤**
-    
     - 安全性與合規性中心：
         - **分類** > **敏感度標籤**
 
@@ -186,13 +180,13 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 這個按鈕會啟動 **[建立原則]** 精靈，這會讓您可以編輯要包含的標籤和標籤設定。 完成精靈時，任何變更都會自動複寫到選取的使用者和服務。
 
-當您使用在 Windows、macOS、iOS 和 Android 上適用於 Office 應用程式的內建標籤時，使用者可在四小時內查看新標籤，並在一小時內當您重新整理瀏覽器時，於網頁版 Word、Excel 和 PowerPoint 中看到新標籤。 不過，對現有標籤所做的變更最多需 24 小時的時間，才能複製到所有使用者和服務。
+當您使用在 Windows、macOS、iOS 和 Android 上適用於 Office 應用程式的內建標籤時，使用者可在四小時內查看新標籤，而當您重新整理瀏覽器時，使用者可在一小時內於網頁版 Word、Excel 和 PowerPoint 中查看新標籤。不過，最多允許 24 小時的時間，讓變更複製到所有應用程式和服務。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>安全性與合規性中心 PowerShell 的其他標籤原則設定
 
 您可以使用[安全規範中心 PowerShell](/powershell/exchange/scc-powershell) 中的 [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) 指令取得其他標籤原則設定。
 
-針對 Azure 資訊保護的 [整合式標籤] 用戶端，您可以指定[[進階設定]](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，其中包括為 Outlook 設定不同的預設標籤，以及在 Outlook 中實作可警告、證明或封鎖要傳送的電子郵件的快顯訊息。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤原則可用的進階設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)。
+Azure 資訊保護的整合標籤用戶端，支援許多 [[進階設定]](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，其中包括從其他標籤解決方案移轉，以及在 Outlook 中可警告、證明或封鎖要傳送的電子郵件的快顯訊息。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤原則可用的進階設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)。
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>將 PowerShell 用於敏感度標籤及其原則
 
@@ -225,7 +219,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 - 針對 Office 網頁版：使用者在狀態列或 [敏感度] 欄中不會看到標籤名稱。 只有當標籤未套用加密時，中繼資料中的標籤資訊才會保留。 如果標籤已套用加密，而且您已啟用[ SharePoint 和 Onedrive 的[敏感度標籤]](sensitivity-labels-sharepoint-onedrive-files.md)，則會移除中繼資料中的標籤資訊，並將加密移除。 
 
-當您從標籤原則移除敏感度標籤或刪除敏感度標籤時，這些變更最多可能需要一個小時的時間，才能複製到所有使用者和服務。
+當您從標籤原則移除敏感度標籤或刪除敏感度標籤時，這些變更最多可能需要 24 小時的時間，才能複製到所有使用者和服務。
 
 ## <a name="next-steps"></a>後續步驟
 

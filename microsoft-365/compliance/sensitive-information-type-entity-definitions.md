@@ -17,29 +17,18 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本文列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: 資料遺失防護 (安全性與合規性中心中的 DLP) &amp; 包含可供您在 DLP 原則中使用的200機密資訊類型。 本文列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
+ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919709"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086726"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
-資料遺失防護 (規範中心中的 DLP) 包含許多可在 DLP 原則中使用的敏感資訊類型。 本文列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。 敏感資訊類型是由正則運算式或函數所識別的模式所定義。 確切證據（如關鍵字及校驗和）可用於識別敏感資訊類型。 評估程式中也會使用信賴等級和近程。
-
-敏感資訊類型需要下列其中一項訂閱：
-- Microsoft 365 E3
-- Microsoft 365 E5
-
-機密資訊類型的用途如下：
-
-- [資料外洩防護原則](data-loss-prevention-policies.md) 
-- [敏感性標籤](sensitivity-labels.md)
-- [保留標籤](retention.md)
-- [通訊合規性](communication-compliance.md)
-- [自動標籤型原則](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+資料遺失防護 (規範中心中的 DLP) 包含許多可在 DLP 原則中使用的敏感資訊類型。 本文列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。 若要深入瞭解敏感資訊類型，請參閱 [敏感資訊類型](sensitive-information-type-learn-about.md)
 
 ## <a name="aba-routing-number"></a>ABA 路由號碼
 
@@ -58,7 +47,7 @@ ms.locfileid: "50919709"
 
 未格式化：從0、1、2、3、6、7或8開始的九個連續數位 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -121,7 +110,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選用期間
 - 三位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -155,6 +144,89 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - registro nacional de 拉斯維加斯角色 
 - rnp 
    
+## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>阿根廷唯一納稅識別機碼 (CUIT/CUIL) 
+
+### <a name="format"></a>格式
+
+具有短劃線的11位數
+
+### <a name="pattern"></a>模式
+
+具有短劃線的11位數：
+- 兩位數的20，23，24，27，30，33或34
+- 連字號 ( ) 
+- 八位數
+- 連字號 ( ) 
+- 一個檢查碼
+
+### <a name="checksum"></a>總和檢查碼
+
+是
+
+### <a name="definition"></a>定義
+
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
+- 函數 `Func_Argentina_Unique_Tax_Key` 會找到符合模式的內容。
+- 找到來自的關鍵字 `Keyword_Argentina_Unique_Tax_Key` 。
+
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
+- 函數 `Func_Argentina_Unique_Tax_Key` 會找到符合模式的內容。
+
+```xml
+    <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
+      <Entity id="98da3da1-9199-4571-b7c4-b6522980b507" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+          <Match idRef="Keyword_Argentina_Unique_Tax_Key" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="keyword_argentina_unique_tax_key"></a>Keyword_Argentina_Unique_Tax_Key
+
+- Clave Unica de Identificacion Tributaria
+- CUIT
+- 勞動節識別碼的唯一程式碼 
+- Clave Única de Identificación Tributaria
+- 獨特的勞動節識別碼
+- CUIL
+- 唯一稅務識別機碼
+- 獨特的勞動節識別機碼
+- 集約型識別碼的唯一鍵
+- 唯一的工作識別碼
+- 工作識別碼的唯一代碼
+- 唯一的工作識別機碼
+- 工作識別碼的唯一索引鍵
+- 納稅識別的唯一代碼
+- 納稅識別的唯一金鑰
+- 唯一勞動身分識別碼
+- 勞動識別碼的唯一代碼
+- 唯一勞動識別機碼
+- 勞動識別碼的唯一鍵
+- 納稅識別碼
+- taxID#
+- taxId
+- taxidnumber
+- 納稅號碼
+- 納稅否
+- 稅#
+- 稅#
+- 納稅人識別碼
+- 納稅人編號
+- 納稅人編號
+- 納稅人#
+- 納稅人#
+- 納稅身分識別
+- 納稅識別
+- Número de Identificación 會計
+- número de contribuyente
+   
+   
 ## <a name="australia-bank-account-number"></a>澳大利亞銀行帳戶號碼
 
 ### <a name="format"></a>格式
@@ -170,7 +242,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 連字號 
 - 三位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -244,7 +316,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選用的連字號或空格
 - 三位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -304,7 +376,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 三位數
 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -355,16 +427,16 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩位數 
 - 五個數字或字母 (不區分大小寫) 
 
-「或」
+或
 
 - 一個至兩個選用的字母 (不區分大小寫)  
 - 四到九位數
 
-「或」
+或
 
 - 九個數字或字母 (不區分大小寫) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -506,7 +578,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 第十個數字是問題的位數
 - 第十個數字 (選用) 是個別數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -553,7 +625,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 字母 (不區分大小寫) 後接7位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -629,7 +701,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選擇性的空格 
 - 二到三位數的最後一個數位是檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -674,7 +746,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 八位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -850,7 +922,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
     
 - 兩個字母 (不區分大小寫) 、數位、反斜線、正斜線、加號或等號）
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -893,7 +965,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個空格 (選用) 
 - 七位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -976,7 +1048,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個檢查碼
 - 對應至出生日期 (DDMMYY 的六位數) 
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -1050,7 +1122,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 轉寄斜線 (選用) 
 - 四位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -1128,7 +1200,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選擇性空格
 - 一或兩位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -1188,7 +1260,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 任何86小寫或大寫字母、數位、正斜線 (/) 或加號 (+) 的組合
 - 兩個等號 (=) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -1226,7 +1298,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - testacs.<!--no-hyperlink-->Com
 - s-int。<!--no-hyperlink-->網
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS 資料庫連接字串和 Azure SQL 連接字串
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>azure IAAS 資料庫連接字串和 azure SQL 連接字串
 
 ### <a name="format"></a>格式
 
@@ -1248,7 +1320,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個或多個不是分號的字元 (; ) 、引號 ( ") 或單引號 ( ' ) 
 - 分號 (; ) ，引號 ( ") 或單引號 ( ' ) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -1308,7 +1380,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 任何43小寫或大寫字母、數位、正斜線 (/) 或加號 (+) 的組合
 - 等號 (=) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -1358,7 +1430,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 任何60小寫字母或數位的組合
 - 引號 ( ") 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -1414,7 +1486,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 43個字元的任何組合，其為小寫或大寫字母、數位、正斜線 (/) 或加號 (+) 
 - 等號 (=) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -1468,7 +1540,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 字串 "% 三維"
 - 不是小寫或大寫字母、數位或百分號的任何字元 (% ) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -1508,7 +1580,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 43個字元的任何組合，其為小寫或大寫字母、數位、正斜線 (/) 或加號 (+) 
 - 等號 (=) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -1566,7 +1638,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 86個字元的任何組合，其為小寫或大寫字母、數位、正斜線 (/) 或加號 (+) 
 - 兩個等號 (=) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -1624,7 +1696,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 86個字元的任何組合，其小寫或大寫字母、數位、正斜線 (/) 或加號 (+) 
 - 兩個等號 (=) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -1651,7 +1723,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 10位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -1828,7 +1900,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 自點、破折號、空間的選擇性分隔符號 
 - 兩個檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -1927,7 +1999,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 兩個字母后接六位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -2027,7 +2099,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 四位數
 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -2089,7 +2161,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 非
 - 11位數的最後兩位數的檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -2152,7 +2224,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 連字號 
 - 兩位數的檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -2229,7 +2301,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - 連字號 
 - 一種檢查碼的數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -2275,7 +2347,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 九位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -2451,7 +2523,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - 對應于性別的一個數位：用於男的偶數位數和用於女的奇數數位
 - 一個檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -2539,7 +2611,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 九位數 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -2620,7 +2692,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - 零 "0" 
 - 八位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -2687,7 +2759,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 涵蓋 Alberta、英屬哥倫比亞、Manitoba、新的 Brunswick、Newfoundland/Labrador、Nova Scotia、安大略、Prince Edward 孤島、魁北克和薩斯的各種模式
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -2905,7 +2977,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 10位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -2952,7 +3024,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 兩個大寫字母後接六位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -3020,7 +3092,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 九位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -3098,7 +3170,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 未格式化：九位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -3182,7 +3254,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - 虛線 
 - 一個數位或字母 (不區分大小寫) （該碼是檢查碼）
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -3264,7 +3336,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - 三位數的訂單碼 
 - 一種檢查碼的數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -3318,7 +3390,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 複雜且健全的模式，可偵測全球所有主要品牌的卡，包括簽證、MasterCard、探索卡、JCB、美洲 Express、禮品卡和 diner 卡。
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是，Luhn 檢查碼
 
@@ -3616,7 +3688,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 八位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -3781,7 +3853,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九個連續數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -3845,7 +3917,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九位數 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -3916,7 +3988,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 10位數 
 - 最後一個數位是檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -3987,7 +4059,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 12位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -4156,7 +4228,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 10位數 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -4198,7 +4270,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 一個字母后接六個到八位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -4292,7 +4364,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 七位數
 - 一個字母 (不區分大小寫) 
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -4364,7 +4436,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 空格 (選用) 
 - 六位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -4528,7 +4600,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 不含空格或分隔符號的八位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -4614,7 +4686,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選用的正斜線 
 - 最後一個數位是檢查碼的四位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -4706,7 +4778,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 八位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -4868,7 +4940,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九位數 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -4948,7 +5020,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 連字號 
 - 四位數的最後一個數位是檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -5065,7 +5137,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個字母 (不區分大小寫) ，也就是報名者姓氏或數位 ' 9 ' 的第一個字母。
 - 七位數，最後一個是檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -5123,7 +5195,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 字母 "ET" (不區分大小寫)  
 - 六位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -5298,7 +5370,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 三位數，對應至在相同日期出生的人員的序號
 - 一個檢查碼
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -5374,7 +5446,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 一個字母后接7位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -5438,7 +5510,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 到期日
 
 
-## <a name="eu-debit-card-number"></a>歐盟借方卡號碼
+## <a name="eu-debit-card-number"></a>歐盟轉帳卡號碼
 
 ### <a name="format"></a>格式
 
@@ -5448,7 +5520,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 複雜且可靠的模式
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -5957,7 +6029,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 三位數 
 - 一個數位或字母
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -6137,7 +6209,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 選擇性空格或連字號
 - 10位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -6191,7 +6263,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 三位數的個人身分識別號碼 
 - 不區分大小寫) （即檢查碼）的數位或字母 (
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -6282,7 +6354,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 兩個字母 (不區分大小寫)  
 - 七位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -6362,7 +6434,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 12位數與折扣類似的模式，例如法國電話號碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -6535,7 +6607,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 一個數位
 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -6573,7 +6645,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 12位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -6624,7 +6696,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩個字母 (不區分大小寫)  
 - 五位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -6715,7 +6787,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 或
 - 15個連續數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -6800,7 +6872,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 三個檢查碼 
 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -6880,7 +6952,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選用的空格、點、連字號或逗號
 - 三位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -6938,7 +7010,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個數位 
 - 一個數位或字母
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -7128,7 +7200,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 從1年4月1987至31年10月2010：
 - 10位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -7183,7 +7255,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 此集合中有五個數字或字母 (C、-H、J-N、P、R、T、V-Z)  
 - 一個數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -7266,7 +7338,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩位數
 - 一個檢查碼
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -7346,7 +7418,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選擇性空格或逗號
 - 三位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -7396,7 +7468,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九位數 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -7569,7 +7641,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 虛線 
 - 六位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -7619,7 +7691,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 兩個字母后接7位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -7698,7 +7770,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 4位數
 - 檢查碼
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -7754,7 +7826,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -7820,7 +7892,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 六位數 
 - 最後一個字元 (任何數位或字母 A) ，也就是檢查碼，也可以以括弧括住。
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -7904,7 +7976,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩個字母 (不區分大小寫)  
 - 六位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -8079,7 +8151,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 對應至序列值的三位數
 - 一個檢查碼
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -8134,7 +8206,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 兩個字母后接六位數或七位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -8209,7 +8281,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -8277,10 +8349,10 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 10位數：
   
 - 一個位數，必須是 "8" 
-- 八位數
+- 8 位數
 - 一個檢查碼
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -8361,7 +8433,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選擇性空格
 - 八位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -8421,7 +8493,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 四位數 
 - 字母檢查碼字母
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -8473,7 +8545,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選擇性的空格或破折號 
 - 最後一個數位，也就是檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -8529,7 +8601,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 期間 (選用)  
 - 四位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -8576,7 +8648,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ad，ae，al，at，az，ba，a，bg，bh，ch，cr，cy，cz，de，深色，do，ee，es，es，fo，fr，gb，ge，gi，gl，gr，hr，hu，ie，il，為，it，kw，kz，lb，li，lt，lu，lv，mt，mu，nl-nl，no，pl，mt，ro，rs-232c，tn，tr，vg
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -8610,7 +8682,7 @@ Dictionary
 
 關鍵字
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -8652,7 +8724,7 @@ Dictionary
 
 關鍵字
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -8695,7 +8767,7 @@ IPv6 數位格式的複雜模式，其中包含冒號 ()
 
 ### <a name="pattern"></a>模式
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -8760,7 +8832,7 @@ IPv6 數位格式的複雜模式，其中包含冒號 ()
 - 六位數
 - 四個字母 (不區分大小寫) 
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -8926,7 +8998,7 @@ IPv6 數位格式的複雜模式，其中包含冒號 ()
 - 兩位數的數位或字母 (不區分大小寫) 
 - 七位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -9017,7 +9089,7 @@ IPv6 數位格式的複雜模式，其中包含冒號 ()
 - 信 (不區分大小寫) （字母檢查碼） 
 - 範圍 A-I 或 "W" 中的選用字母
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -9111,7 +9183,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 非
 - 13個連續數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -9152,7 +9224,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九個連續數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -9213,7 +9285,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 七位數
 - 一個字母 (不區分大小寫) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -9391,7 +9463,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 相對於 municipality 人員專屬之地區代碼的四位數，在國外國家/地區使用 (全國的碼) 
 - 一個同位數位
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -9468,7 +9540,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩位數的數位或字母 (不區分大小寫) 
 - 七位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -9559,7 +9631,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選用空格、點、連字號或逗號
 - 11位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -9611,7 +9683,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個空格或破折號 (選用)  
 - 三位數
 
-校驗
+總和檢查碼
 
 否
 
@@ -9709,7 +9781,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 12個連續數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -9789,7 +9861,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一位數從1到9
 - 12位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -9853,7 +9925,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選擇性的空格、點或連字號
 - 四位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -9905,7 +9977,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 兩個字母 (不區分大小寫) 後接7位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -9958,7 +10030,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 八位數 
 - 兩個字母 (不區分大小寫) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -9999,7 +10071,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 11個連續數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -10049,7 +10121,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 六位數或
 - 7-12 連續位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -10114,7 +10186,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 不區分大小寫的 (三個字母)  
 - 六位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -10291,7 +10363,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩位數 "32"
 - 九位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -10411,7 +10483,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩位數的數位或字母 (不區分大小寫) 
 - 七位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -10490,7 +10562,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 八位數 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -10664,7 +10736,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 對應至出生日期之序號的三位數
 - 一個檢查碼
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -10741,7 +10813,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 八位數的數位或字母 (不區分大小寫) 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -10817,7 +10889,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 六位數 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -10988,7 +11060,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 11位數 
 - 兩個檢查碼
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -11054,7 +11126,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 八位數的數位或字母 (不區分大小寫) 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -11150,7 +11222,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩位數
 - 一個檢查碼
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -11239,7 +11311,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 三個亂數字 
 - 一位數的性別碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -11305,7 +11377,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 空格 (選用) 
 - 三位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -11477,7 +11549,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 七位數 
 - "M，G，A，P，L，H，B，Z" (不區分大小寫的一個字母) 
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -11533,7 +11605,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 七位數 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -11617,7 +11689,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
   
 - 九位數 
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -11685,6 +11757,132 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 唯一的身分識別號碼
 - uniqueidentityno#
 
+
+## <a name="medicare-beneficiary-identifier-mbi-card"></a>Medicare MBI) 卡的受益人識別碼 (
+
+### <a name="format"></a>格式
+
+11個字元的字母數位模式
+  
+### <a name="pattern"></a>模式
+
+- 1到9之間的一個數位
+- 一個字母排除 S、L、O、I、B、Z
+- 一個數位或字母，不包括 S、L、O、I、B、Z
+- 一個數位
+- 選用的連字號
+- 一個字母排除 S、L、O、I、B、Z
+- 一個數位或字母，不包括 S、L、O、I、B、Z
+- 一個數位
+- 選用的連字號
+- 兩個字母，不包括 S、L、O、I、B、Z
+- 兩位數
+    
+### <a name="checksum"></a>總和檢查碼
+
+否
+  
+### <a name="definition"></a>定義
+
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
+- 正則運算式會  `Regex_mbi_card` 找到符合模式的內容。 
+- 找到來自的關鍵字  `Keyword_mbi_card` 。 
+    
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
+- 正則運算式會  `Regex_mbi_card` 找到符合模式的內容。 
+    
+```xml
+    <!-- Medicare Beneficiary Identifier (MBI) card -->
+      <Entity id="f753a286-f5cc-47e6-a592-4be25fd02591" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_mbi_card" />
+          <Match idRef="Keyword_mbi_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_mbi_card" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="keyword_mbi_card"></a>Keyword_mbi_card
+
+- mbi
+- mbi#
+- medicare 受益人#
+- medicare 受益人識別碼
+- medicare 受益人 no
+- medicare 受益人編號
+- medicare 受益人#
+
+
+## <a name="mexico-unique-population-registry-code-curp"></a>墨西哥的唯一人口登錄碼 (CURP) 
+
+### <a name="format"></a>格式
+
+18個字元的字母數位模式
+  
+### <a name="pattern"></a>模式
+
+- 不區分大小寫 (四個字母) 
+- 六位數表示有效的日期
+- 字母-H/h 或 M/m
+- 兩個字母表示有效的墨西哥狀態碼
+- 三個字母
+- 一個字母或數位
+- 一個數位
+    
+### <a name="checksum"></a>總和檢查碼
+
+否
+  
+### <a name="definition"></a>定義
+
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
+- 函數  `Func_mexico_population_registry_code` 會找到符合模式的內容。 
+- 找到來自的關鍵字  `Keyword_mexico_population_registry_code` 。 
+    
+當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
+- 函數  `Func_mexico_population_registry_code` 會找到符合模式的內容。 
+    
+```xml
+    <!-- Mexico Unique Population Registry Code (CURP) -->
+      <Entity id="e905ad4d-5a74-406d-bf36-b1efca798af4" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+          <Match idRef="Keyword_mexico_population_registry_code" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>關鍵字
+
+#### <a name="keyword_mexico_population_registry_code"></a>Keyword_mexico_population_registry_code
+
+- Clave Única de Registro de Población
+- Clave Unica de Registro de Poblacion
+- Unique 填充登錄代碼 
+- 唯一的人口程式碼
+- CURP
+- 個人識別碼
+- 唯一識別碼
+- personalid
+- personalidnumber
+- uniqueidkey
+- uniqueidnumber
+- clave única
+- clave unica
+- clave 個人 Identidad
+- 個人 Identidad Clave
+- ClaveÚnica
+- claveunica
+- clavepersonalIdentidad
+
+
 ## <a name="netherlands-citizens-service-bsn-number"></a>荷蘭公民服務 (BSN) 號碼
 
 ### <a name="format"></a>格式
@@ -11700,7 +11898,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 空格 (選用)  
 - 兩個三位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -11757,7 +11955,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 10位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -11924,7 +12122,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九個字母或數位
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -11933,7 +12131,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
 - 正則運算式會  `Regex_netherlands_eu_passport_number` 找到符合模式的內容。 
 - `Keywords_eu_passport_number`找到或的關鍵字 `Keywords_netherlands_eu_passport_number` 。 
-- 正則運算式會 `Regex_netherlands_eu_passport_date` 以 DD MMM/MMM YYYY 的格式來找到日期 (範例-26 MAA/3 月 2012) 
+- 正則運算式會 `Regex_netherlands_eu_passport_date` 以 DD MMM/mmm YYYY 的格式來找到日期 (範例-26 MAA/MAR 2012) 
 
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
 - 正則運算式會  `Regex_netherlands_eu_passport_number` 找到符合模式的內容。 
@@ -11998,7 +12196,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九位數 
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -12089,7 +12287,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - B 或 b
 - 兩位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -12152,7 +12350,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 二到三位數
 - 選項連字號或空格
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -12208,7 +12406,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩個字母 
 - 六位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -12326,7 +12524,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選擇性空格或連字號
 - 三位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -12376,7 +12574,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 空格 (選用)  
 - 四位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -12443,7 +12641,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選用的連字號
 - 三位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -12494,7 +12692,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 三位數個人號碼 
 - 兩個檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -12528,7 +12726,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 - 個人身分識別號碼
 - 挪威文識別碼
-- 識別碼號碼
+- 識別碼
 - 識別
 - Personnummer
 - Fødselsnummer
@@ -12549,7 +12747,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 連字號 
 - 一個數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -12594,7 +12792,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個正斜線
 - 七位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -12756,7 +12954,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 三個字母 (不區分大小寫) 後接六位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -12802,7 +13000,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 四位數
 - 一個檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -12856,7 +13054,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 兩個字母 (不區分大小寫) 後接7位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -12954,7 +13152,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 字元
 - 五位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -13015,7 +13213,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 11位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -13079,7 +13277,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 八位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -13145,7 +13343,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個數位
 
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -13318,7 +13516,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個字母 (不區分大小寫) 
 - 六位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -13405,7 +13603,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選擇性的空格
 - 三位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -13471,7 +13669,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個字母 (不區分大小寫) 或數位 
 - 八位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -13646,7 +13844,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩位數，可以是01-52 或99
 - 四位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -13735,7 +13933,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 8或9位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -13821,7 +14019,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 選擇性的空格
 - 六位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -13881,7 +14079,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 選擇性空格或連字號
 - 七位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -13931,7 +14129,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 10個連續數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -13976,7 +14174,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 七位數 
 - 字母檢查碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -14030,7 +14228,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 一個字母 (不區分大小寫) 或數位
 - 七位數 
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -14203,7 +14401,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 三位數
 - 一個選擇性檢查碼碼
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -14289,7 +14487,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 一個數位或字母 (不區分大小寫) 後接7位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -14367,7 +14565,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -14543,7 +14741,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 對應至同一天出生的人的性別和序陣列合的三位數 (000-499 （適用于雌雄) 的男和500-999）
 - 一個檢查碼
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -14613,7 +14811,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 單一大寫字母
 - 七位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -14700,7 +14898,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 六位數
 - 一個檢查碼
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -14768,7 +14966,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 數位 "8" 或 "9" 
 - 一位數，也就是校驗和位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -14813,7 +15011,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一種用來區分先前號碼相同之人員的數位 
 - 檢查碼。
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -14864,7 +15062,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 八位數 
 - 一個數位或字母 (不區分大小寫) 
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -15062,7 +15260,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 選擇性空格或連字號
 - 一個檢查信件 (不區分大小寫) 
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -15136,7 +15334,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個數位或字母 (選用) 
 - 六位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 不適用
   
@@ -15227,7 +15425,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 轉寄斜線 (選用)  
 - 兩位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -15309,7 +15507,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 七位數
 - 單一大寫字母 (區分大小寫)  
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -15392,7 +15590,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 任何7-128 個字元的組合不是分號 (; ) 、正斜線 (/) 或引號 ( ") 
 - 分號 (; ) 或引號 ( ") 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -15466,7 +15664,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 連字號
 - 四位數
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -15641,7 +15839,7 @@ Foreigners 與 Foreigner 的識別號碼
 - "-" 或 "+" 的分隔符號 (選用) 
 - 四位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -15701,7 +15899,7 @@ Foreigners 與 Foreigner 的識別號碼
 
 八個連續數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -15807,7 +16005,7 @@ Foreigners 與 Foreigner 的識別號碼
   - 第九個位置中的位數會以奇數為單位表示，甚至是對女的性別
 - 一個檢查碼
     
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
   
@@ -15866,7 +16064,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 錫#
 
 
-## <a name="swift-code"></a>SWIFT 程式碼
+## <a name="swift-code"></a>SWIFT 代碼
 
 ### <a name="format"></a>格式
 
@@ -15881,7 +16079,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 選擇性的空格 
 - BBAN 的其餘部分 (一到三個字母或數位) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -15963,7 +16161,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 選用點
 - 兩位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -16026,7 +16224,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 數位 "1" 或 "2" 
 - 八位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -16088,7 +16286,7 @@ Foreigners 與 Foreigner 的識別號碼
 無生物識別護照號碼：
 - 九位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -16133,7 +16331,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 兩個字母 (不區分大小寫)  
 - 八位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -16181,7 +16379,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 第一個數位不是零或9 
 - 12位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -16211,7 +16409,7 @@ Foreigners 與 Foreigner 的識別號碼
 
 #### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
-- 識別碼號碼
+- 識別碼
 - 識別號碼
 - บัตรประชาชน
 - รหัสบัตรประชาชน
@@ -16228,7 +16426,7 @@ Foreigners 與 Foreigner 的識別號碼
 
 11位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -16278,7 +16476,7 @@ Foreigners 與 Foreigner 的識別號碼
 - 兩個字母 (不區分大小寫) 或數位 "9" 取代字母。 
 - 五位數。
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -16440,7 +16638,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 兩個字母 (不區分大小寫) 後接1-4 號碼
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -16487,7 +16685,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個空格 
 - 四位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 是
 
@@ -16554,7 +16752,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 六位數
 - "A"、"B"、"C" 或 "d" (類似前置詞，只允許在尾碼中使用特定字元;不區分大小寫) 
 
-「或」
+或
 
 - 兩個字母
 - 一個空格或破折號
@@ -16566,7 +16764,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 一個空格或破折號
 - ' A '、' B '、' C ' 或 ' d ' 是 '
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -16634,7 +16832,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 10位數
   
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
   
@@ -16686,7 +16884,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 6-17 連續位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -16750,7 +16948,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 已格式化的九位數，如 ddd ddd ddd 會相符。
 - 九位數的 ddddddddd 不相符。
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -16913,7 +17111,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - "7" 或 "8" 
 - 五位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -16985,7 +17183,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - Func_randomized_formatted_ssn 會找到以破折號或空格格式化的2011後主旨 ssn， (ddd-dd-dddd 或 ddd dd dddd) 
 - Func_randomized_unformatted_ssn (ddddddddd 中尋找未格式化為九個連續數位的2011後主旨 ssn) 
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -17058,7 +17256,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九個連續數位
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -17131,7 +17329,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 九位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -17181,7 +17379,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 兩個字母或數位
 - 六位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 

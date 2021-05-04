@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始部署敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: d685b050d32ea7bf482a39ad8d72abe3ee74567d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 08ecf97e3cb45896390c3dac9074c54a2b0bbe96
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499679"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994770"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -56,7 +56,7 @@ ms.locfileid: "51499679"
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>建立和管理敏感度標籤所需的權限
 
-合規性小組成員會建立敏感度標籤，這些成員需要 Microsoft 365 合規性中心、Microsoft 365 安全性中心或安全性與合規性中心的權限。 
+建立敏感度標籤的合規性小組成員，需要 Microsoft 365 合規性中心或更早的安全性與合規性中心的權限。 
 
 根據預設，您的租用戶的全域系統管理員可以存取這些系統管理中心，並且授與法務人員和其他人員存取權限，而不需授與他們租用戶系統管理員的所有權限。如需這個委派的受限系統管理員存取權，請將使用者新增至 [合規性資料系統管理員]、[合規性系統管理員] 或 [安全性系統系統管理員] 角色群組。 
 

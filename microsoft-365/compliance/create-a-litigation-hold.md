@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 3/13/2018
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ description: 瞭解如何將信箱設為訴訟暫止，並在調查期間保留�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 046ee6fdc7c42026b1a69805883175982e3100b7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 81d3bf7bba0aadbcd2d52b5f7707caeea96e26c1
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908397"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750057"
 ---
 # <a name="create-a-litigation-hold"></a>建立訴訟資料暫留
 
@@ -30,17 +30,19 @@ ms.locfileid: "50908397"
 以下是建立訴訟暫止時發生的情況。
   
 - 使用者永久刪除的專案會保留在使用者信箱的 [可復原的專案] 資料夾中的保留期間。
-    
-- 從使用者的 [可復原的專案] 資料夾中清除的專案會在保留期間內保留。
-    
-- [可復原的專案] 資料夾的儲存配額會從 30 GB 增加為 110 GB。
-    
-- 保留使用者主要和封存信箱中的專案
-    
-## <a name="assign-an-exchange-online-plan-2-license"></a>指派 Exchange Online Plan 2 授權
 
-- 若要將 Exchange Online 信箱設為訴訟暫止狀態，必須將其指派為 Exchange Online Plan 2 授權。 如果信箱已獲指派 Exchange Online Plan 1 授權，則必須將其指派給其另一個 Exchange Online 封存授權，以便進行暫止。
-    
+- 從使用者的 [可復原的專案] 資料夾中清除的專案會在保留期間內保留。
+
+- [可復原的專案] 資料夾的儲存配額會從 30 GB 增加為 110 GB。
+
+- 保留使用者主要和封存信箱中的專案
+
+## <a name="assign-an-exchange-online-plan-2-license"></a>指派 Exchange Online 方案2授權
+
+若要將 Exchange Online 的信箱設為訴訟暫止狀態，必須為其指派「Exchange Online 計畫2授權」。 如果已指派信箱的 Exchange Online 方案1授權，您必須將其指派給其個別的 Exchange Online 封存授權，以進行暫止。
+
+> [!NOTE]
+> 針對 Office 365 教育版組織，Office 365 A1 訂閱支援訴訟暫止，其中包含含補充功能的 Exchange Online 方案1授權。 如需詳細資訊，請參閱[Office 365 教育版服務描述](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features)中的「Exchange Online 功能」一節。
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>將信箱設為訴訟暫止
 
@@ -60,15 +62,15 @@ ms.locfileid: "50908397"
     
     - **訴訟暫止持續時間 (天數)** -使用此方塊可建立以時間為基礎的保留，並指定當信箱處於訴訟暫止狀態時，要保留的信箱專案長度。 持續時間自接收或建立信箱項目的日期開始計算。 特定專案的保留期間到期時，將不再保留該專案。 如果您將此方塊保留空白，則專案會無限期保留，或直到移除保留為止。 請使用天數為單位來指定持續時間。
     
-    - **附注** -使用此方塊通知使用者其信箱處於訴訟暫止狀態。 如果使用者是使用 Outlook 2010 或更新版本，則附注會出現在使用者信箱中的 [帳戶資訊] 頁面上。 若要存取此頁面，使用者可以 **按一下 Outlook 中的 [** 檔案]。
+    - **附注** -使用此方塊通知使用者其信箱處於訴訟暫止狀態。 如果使用者使用 Outlook 2010 或更新版本，則附注會出現在使用者信箱中的 [帳戶資訊] 頁面上。 若要存取此頁面，使用者可以 **按一下 Outlook** 中的 [檔案]。
     
-    - **URL** -使用此方塊可將使用者導向至網站，以取得訴訟暫止的詳細資訊。 如果使用者使用 Outlook 2010 或更新版本，則此 URL 會出現在使用者信箱的 [帳戶資訊] 頁面上。 若要存取此頁面，使用者可以 **按一下 [** Outlook] 中的 [檔案]。
+    - **URL** -使用此方塊可將使用者導向至網站，以取得訴訟暫止的詳細資訊。 如果使用者使用 Outlook 2010 或更新版本，則此 URL 會出現在使用者信箱的 [帳戶資訊] 頁面上。 若要存取此頁面，使用者可以 **在 Outlook** 中按一下 [檔案]。
 
 7. 按一下 [**訴訟暫** 止] 頁面上的 [**儲存**]，然後按一下 [信箱屬性] 頁面上的 [**儲存**]。
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>使用 PowerShell 建立訴訟暫止
 
-您也可以在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令，以建立訴訟暫止狀態。
+您也可以在[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令來建立訴訟暫止狀態：
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
