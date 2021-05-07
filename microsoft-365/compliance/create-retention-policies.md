@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 63670b157a66bad963f02355cbed2bdd95690081
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b2ce9670e9f297c89ed70e1b37c17aa59b80844
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908287"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687269"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -83,6 +83,15 @@ ms.locfileid: "50908287"
 5. 完成精靈以儲存您的設定。
 
 如需 Teams 保留原則的詳細資訊，請參閱在 Teams 文件中的 [Microsoft Teams 的保留原則](/microsoftteams/retention-policies)。
+
+#### <a name="known-configuration-issues"></a>已知的設定問題
+
+- 雖然您可以選取選項，在上次修改項目時開始保留期間，但是一律會使用 **項目建立時間** 的值。 對於已編輯的訊息，原始訊息的一份副本會與原始時間戳記一起儲存，以識別建立此預先編輯訊息的時間，且預先編輯後的訊息具有較新的時間戳記。
+
+- 當您針對 [Teams 頻道訊息] 位置選取 [選擇小組] 時，您可能會看到也不是小組的 Microsoft 365 群組。 請勿選取這些群組。
+
+- 當您選取 **[選擇 Teams 聊天的使用者]** 位置時，您可能會看到來賓和非信箱使用者。 保留原則並非為這些使用者設計，因此請不要選取他們。
+
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>支援 Teams 所需的其他保留原則
 
@@ -194,9 +203,16 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 群組的設定資訊
 
-若要保留或刪除一個 Microsoft 365 群組 (之前稱為 Office 365 群組) 的內容，請使用 [Microsoft 365 群組 **]** 位置。 即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 此外，雖然 **Exchange 電子郵件** 位置一開始會允許您指定要包含或排除的群組信箱，但是當您嘗試儲存保留原則時，您會收到 "RemoteGroupMailbox" 不是Exchange 位置的有效選項錯誤訊息。
+若要保留或刪除一個 Microsoft 365 群組 (之前稱為 Office 365 群組) 的內容，請使用 [Microsoft 365 群組 **]** 位置。 即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 雖然 **Exchange 電子郵件** 位置一開始會允許您指定要包括或排除的群組信箱，但是當您嘗試儲存保留原則時，您會收到 "RemoteGroupMailbox" 不是 Exchange 位置之有效選項的錯誤訊息。
 
-套用到 Microsoft 365 群組的保留原則包含群組信箱和 SharePoint 小組網站。 此位置涵蓋儲存在 SharePoint 小組網站中的檔案，但不涵蓋有自己的保留原則位置的小組聊天或小組頻道訊息。
+根據預設，套用到 Microsoft 365 群組的保留原則包括群組信箱和 SharePoint 小組網站。 此位置涵蓋儲存在 SharePoint 小組網站中的檔案，但不涵蓋有自己的保留原則位置的小組聊天或小組頻道訊息。
+
+若因為您希望保留原則只套用至 Microsoft 365 信箱，或只套用至已連結的 SharePoint 小組網站而要變更預設值，請使用 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell Cmdlet 與具有下列其中一個值的 *應用程式* 參數：
+
+- `Group:Exchange` 只針對已連結到群組的 Microsoft 365 信箱。
+- `Group:SharePoint` 只針對已連結至群組的 SharePoint 網站。
+
+若要回到所選 Microsoft 365 群組的信箱和 SharePoint 網站的預設值，請指定 `Group:Exchange,SharePoint`。
 
 ### <a name="configuration-information-for-skype-for-business"></a>商務用 Skype 的設定資訊
 

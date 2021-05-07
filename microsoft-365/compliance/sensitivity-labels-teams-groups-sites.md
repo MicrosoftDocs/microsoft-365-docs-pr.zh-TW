@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 501df9b167e917d79957d8b156597af67e6240af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919579"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860872"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -47,7 +47,7 @@ ms.locfileid: "50919579"
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>在對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤時遇到問題嗎？
 
-啟用容器的敏感度標籤並配置新設定的敏感度標籤前，使用者可在其應用程式中查看並套用敏感度標籤。 例如，在 Word 中：
+啟用容器的敏感度標籤並配置新設定的敏感度標籤前，使用者可在其應用程式中查看並套用敏感度標籤。例如，從 Word：
 
 ![Word 傳統型應用程式中顯示的敏感度標籤](../media/sensitivity-label-word.png)
 
@@ -245,7 +245,7 @@ ms.locfileid: "50919579"
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
    ```
 
-若要將不同的標籤套用至不同的網站，請針對每個網站重複下列命令：`Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
+這一系列命令可讓您以相同的敏感度標籤為租用戶中的多個網站標籤，這就是使用 Set-SPOTenant Cmdlet 的原因，而不是針對每個網站設定的 Set-SPOSite Cmdlet。 不過，當您需要針對每個網站重複下列命令，將不同的標籤套用至特定網站時，請使用 Set-SPOSite Cmdlet：`Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>在 SharePoint 系統管理中心檢視和管理敏感度標籤
 
@@ -347,7 +347,7 @@ ms.locfileid: "50919579"
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. 針對每個群組，新增新的敏感度標籤 GUID。 例如：
+6. 針對每個群組，新增新的敏感度標籤 GUID。例如：
 
     ```PowerShell
     foreach ($g in $groups)

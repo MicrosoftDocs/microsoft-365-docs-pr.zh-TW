@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 開啟可在桌面應用程式中針對 SharePoint 和 OneDrive 中已標記和加密的檔案啟用共同撰寫和自動儲存的設定。
-ms.openlocfilehash: 34c674dc5fb9be9cb5572ce1f14e11a0f8ab14ae
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034222"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764362"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>針對使用敏感度標籤加密的檔案啟用共同撰寫
 
@@ -60,7 +60,7 @@ ms.locfileid: "51034222"
 
 - 開啟規格：[2.6.3 LabelInfo 與自訂檔案屬性](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-由於這些變更，如果您的組織中有任何將標籤中繼資料讀取或寫入舊位置的應用程式、服務、指令碼或工具，請勿啟用此設定。 如果您這麼做，可能會產生一些後果，範例如下：
+由於這些變更，如果您的組織中有任何將標籤中繼資料讀取或寫入舊位置的應用程式、服務、指令碼或工具，請勿啟用此設定：
 
 - 已標記的檔案會向使用者顯示為未標記
 
@@ -104,7 +104,7 @@ ms.locfileid: "51034222"
     - **使用 Microsoft 資訊保護 SDK 的應用程式和服務：** 
         - 最低版本 1.7 
 
-當您開啟此功能時，Microsoft 365 服務會自動支援新的標籤中繼資料。 例如：
+當您開啟此功能時，Microsoft 365 服務會自動支援新的標籤中繼資料。例如：
 
 - [自動標籤原則](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [使用敏感度標籤作為條件的 DLP 原則](dlp-sensitivity-label-as-condition.md)
@@ -140,7 +140,7 @@ ms.locfileid: "51034222"
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>如何啟用具有敏感度標籤的檔案共同撰寫
 
 > [!CAUTION]
-> 開啟此設定是單向動作。 此功能為預覽版時，請只在非生產環境中進行測試，且只有在您閱讀並了解中繼資料變更、必要條件、限制，以及此頁面上記錄的任何已知問題之後，再進行測試。
+> 開啟此設定是單向動作。此功能為預覽版時，請只在非實際執行環境中進行測試，且只有在您閱讀並了解中繼資料變更、必要條件、限制，以及此頁面上記錄的任何已知問題之後，再進行測試。
 
 在預覽期間，您必須使用特定的 URL，以在 Microsoft 365 合規性中心存取此設定。
 
@@ -179,6 +179,6 @@ ms.locfileid: "51034222"
 
 - 啟用設定時所使用的 Office 檔的新中繼資料格式和位置將不會複製到原始格式和位置。 因此，未加密 Word、Excel 和 PowerPoint 檔案的此標籤資訊將會遺失。
 
-- 共同撰寫和自動儲存功能已無法於租用戶中使用。
+- 對於已標籤和已加密的文件，共同撰寫和自動儲存無法再於您的租用戶中使用。
 
 - 在 OneDrive 和 SharePoint 中，Office 檔案的敏感度標籤仍維持啟用。

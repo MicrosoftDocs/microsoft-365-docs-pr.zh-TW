@@ -18,20 +18,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全性與合規性中心建立關鍵字字典的基本步驟。
-ms.openlocfilehash: b70deed531204f2ffe85253bd9ae2073dad291ec
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 94bacc2a2fe91fdc35aad753cc2e7db80a374e29
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632189"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876074"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
-資料外洩防護 (DLP) 可識別、監視及保護您的敏感性項目。 識別敏感性項目有時需要尋找關鍵字，特別是在識別一般內容 (例如醫療保健相關通訊)，或是不適當或偏激的言語。 雖然您可以在敏感性資訊類型中建立關鍵字清單，但關鍵字清單的大小有限，且需要修改 XML 來建立或編輯。 關鍵字字典提供更簡單的關鍵字管理並具有更大的規模，在字典中最多可支援 1 ＭB 的字詞 (壓縮後) 及各式語種。 壓縮後的租用戶限制也是 1 MB。 1MB 的壓縮後限制表示整個租用戶的所有詞典加起來可以接近 1 百萬字元。
+資料外洩防護 (DLP) 可識別、監視及保護您的敏感性項目。 識別敏感性項目有時需要尋找關鍵字，特別是在識別一般內容 (例如醫療保健相關通訊)，或是不適當或偏激的言語。 雖然您可以在敏感性資訊類型中建立關鍵字清單，但關鍵字清單的大小有限，且需要修改 XML 來建立或編輯。 關鍵字字典提供更簡單的關鍵字管理並具有更大的規模，在字典中最多可支援 1 ＭB 的字詞 (壓縮後) 及任何語言。 壓縮後的租用戶限制也是 1 MB。 1MB 的壓縮後限制表示整個租用戶的所有字典加起來可以接近 1 百萬個字元。
 
 ## <a name="keyword-dictionary-limits"></a>關鍵字字典限制
 
-每個租用最多可以建立 50 個基於關鍵字字典的敏感性資訊類型。 若要了解您的租用戶中有多少個關鍵字字典，可以針對您的租用戶執行此 PowerShell 指令碼。
+每個租用最多可以建立 50 個基於關鍵字字典的敏感性資訊類型。 若要了解租用戶中有多少關鍵字字典，請利用 [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到您的租用戶並執行此 PowerShell 指令碼。
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -109,7 +109,7 @@ Remove-Item $rawFile
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 從檔案建立關鍵字字典
 
-當您需要建立大型字典時，通常會使用來自檔案或從其他來源匯出清單中的關鍵字。 在此情況下，您會建立一個關鍵字字典，其中包含要在外部電子郵件中過濾的不適當言語清單。 [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
+當您需要建立大型字典時，通常會使用來自檔案或從其他來源匯出清單中的關鍵字。 在此情況下，您會建立一個關鍵字字典，其中包含要在外部電子郵件中過濾的不適當言語清單。 必須先 [連線到安全性 &amp; 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
   
 1. 將關鍵字複製到文字檔案，並確定每個關鍵字位於個別行。
     
@@ -147,7 +147,7 @@ $dict = Get-DlpKeywordDictionary -Name "Diseases"
 $terms = $dict.KeywordDictionary.split(',').trim()
 ```
 
-現在您將從字典中移除一些字詞。因為範例字典只有幾個關鍵字，所以您可以輕鬆地略過移除，直接匯出字典，並在 [記事本] 中編輯該字典，但字典通常包含大量文字，因此您首先將學習此方法，以在 PowerShell 中輕鬆地編輯它們。
+現在您將從字典中移除一些字詞。因為範例字典只有幾個關鍵字，所以您可以輕鬆地略過，直接匯出字典，並在 [記事本] 中編輯該字典，但字典通常包含大量文字，因此您必須先學習此方法才能在 PowerShell 中輕鬆地編輯。
   
 在最後一個步驟中，您已將關鍵字儲存到陣列。有幾種方法可[從陣列中移除字詞](/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10))，但直接方法為建立您要從字典中移除之字詞的陣列，然後只將不在要移除之字詞清單中的字典字詞複製到其中。
   
@@ -212,13 +212,13 @@ Save the dictionary locally by running the following:
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
-現在只需開啟檔案、新增其他字詞，並以 Unicode 編碼 (UTF-16) 儲存。現在，您將上傳更新的字詞並適當地更新字典。
+現在只需開啟檔案、新增其他字詞，並以 Unicode 編碼 (UTF-16) 儲存。現在，您將上傳更新的字詞並在原處更新字典。
   
 ```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
-現在您已適當地更新字典。請注意，`Identity` 欄位會採用字典的名稱。如果您也想要使用 `set-` Cmdlet 來變更字典的名稱，只需將 `-Name` 參數與新的字典名稱新增至上述的命令即可。 
+現在字典已在原處更新。 `Identity` 欄位會採用字典的名稱。 如果您也想要使用 `set-` Cmdlet 來變更字典的名稱，只需將 `-Name` 參數與新的字典名稱新增至其上即可。 
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>使用自訂敏感資訊類型和 DLP 原則中的關鍵字字典
 

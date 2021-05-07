@@ -16,16 +16,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919669"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114223"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感性資訊類型
 
-識別和分類組織控制底下的敏感專案是 [資訊保護訓練科目](./information-protection.md)中的第一步。  Microsoft 365 提供三種方式來識別專案，使其可進行分類：
+識別和分類組織控制底下的敏感專案是 [資訊保護訓練科目](./information-protection.md)中的第一步。  Microsoft 365 提供三種方式來識別專案，以進行分類：
 
 - 由使用者手動
 - 自動化的模式識別，像是敏感資訊類型
@@ -35,9 +35,10 @@ ms.locfileid: "50919669"
 
 ## <a name="sensitive-information-types-are-used-in"></a>敏感資訊類型是用於
 
-- [資料外洩防護原則](data-loss-prevention-policies.md) 
+- [資料遺失防護原則](dlp-learn-about-dlp.md) 
 - [敏感性標籤](sensitivity-labels.md)
 - [保留標籤](retention.md)
+- [內部風險管理](insider-risk-management.md)
 - [通訊合規性](communication-compliance.md)
 - [自動標籤型原則](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -78,7 +79,7 @@ ms.locfileid: "50919669"
 - 一個句點
 - 三位數
 
-### <a name="checksum"></a>校驗
+### <a name="checksum"></a>總和檢查碼
 
 否
 
@@ -103,7 +104,7 @@ ms.locfileid: "50919669"
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - 阿根廷國內身分識別號碼 
-- 身份識別 
+- Identity 
 - 身分識別的國內身分識別卡片 
 - DNI 
 - 個人的 NIC 註冊人員 
@@ -143,7 +144,7 @@ ms.locfileid: "50919669"
 
 
 > [!NOTE]
-> 在 Microsoft 365 服務的資料遺失防護內，可立即使用的信賴層級已增強，microsoft 365 服務、通訊相容性、資訊管理及記錄管理的 Microsoft 資訊保護功能均可供立即使用。
+> 在 Microsoft 365 服務的資料遺失防護中，可立即使用的增強信賴等級可供立即使用，針對 Microsoft 365 服務、通訊法規遵從性、資訊管理及記錄管理的 Microsoft 資訊保護。
 
 > Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：
 > - 中文 (簡體)

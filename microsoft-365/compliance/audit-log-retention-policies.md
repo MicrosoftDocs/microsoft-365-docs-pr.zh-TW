@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 稽核記錄保留原則是 Microsoft 365 中新增的「進階稽核」功能的一部分。 稽核記錄保留原則可讓您指定要在組織中保留稽核記錄的時間長度。
-ms.openlocfilehash: 53449b6b83373eb2f749a4547845866dbea4a2af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ac95d9bb9c13b6bf0c0e31d17b4fb46c30c492a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922849"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687356"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理稽核記錄保留原則
 
@@ -36,7 +36,7 @@ ms.locfileid: "50922849"
 
 ## <a name="default-audit-log-retention-policy"></a>預設稽核記錄保留原則
 
-Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記錄保留原則。 此原則會保留所有 Exchange、SharePoint 和 Azure Active Directory 稽核記錄一年。 此預設原則會保留包含 **Workload** 屬性 (這是發生活動所在的服務) 的 **AzureActiveDirectory**、**Exchange** 或 **SharePoint** 值的稽核記錄。 您無法修改預設原則。 如需預設原則中所包含每個工作負載的記錄類型的清單，請參閱本文的[詳細資訊](#more-information)一節。
+Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記錄保留原則。 此原則會將所有 Exchange Online、SharePoint Online、商務用 OneDrive 和 Azure Active Directory 稽核記錄保留一年。 此預設原則會保留包含 **Workload** 屬性 (此即活動發生所在的服務) 的 **Exchange**、**SharePoint**、**OneDrive**、**AzureActiveDirectory** 值的稽核記錄。 您無法修改預設原則。 如需預設原則中所包含每個工作負載的記錄類型的清單，請參閱本文的[詳細資訊](#more-information)一節。
 
 > [!NOTE]
 > 預設的稽核記錄保留原則僅適用獲指派 Office 365 或 Microsoft 365 E5 授權或擁有 Microsoft 365 E5 合規性或 E5 電子文件探索和稽核附加元件授權的使用者所執行活動的稽核記錄。 如果組織中有非 E5 使用者或來賓使用者，其對應的稽核記錄會保留 90 天。
@@ -49,7 +49,7 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 
 - 若要保留稽核記錄超過 90 天 (最多 1 年)，產生稽核記錄 (透過執行稽核活動) 的使用者必須獲指派 Office 365 E5 或 Microsoft 365 E5 授權，或擁有 365 Microsoft E5 合規性或 E5 電子文件探索與稽核附加元件授權。 若要保留稽核記錄 10 年，除了 E5 授權之外，還必須指派 10 年的稽核記錄保留附加元件授權給產生稽核記錄的使用者。
 
-- 所有自訂稽核記錄保留原則 (由您的組織建立) 會優先於預設保留原則。 例如，如果您為具有的保留期間少於一年的建Exchange 信箱活動立稽核記錄保留原則，則 Exchange 信箱活動的稽核記錄將會保留較自訂原則所指定更短的持續時間。
+- 所有自訂稽核記錄保留原則 (由您的組織建立) 會優先於預設保留原則。例如，如果您為具有的保留期間少於一年的 Exchange 信箱活動建立稽核記錄保留原則，則 Exchange 信箱活動的稽核記錄將會保留較自訂原則所指定更短的持續時間。
 
 ## <a name="create-an-audit-log-retention-policy"></a>建立稽核記錄保留原則
 
@@ -167,9 +167,9 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ## <a name="more-information"></a>其他資訊
 
-如先前所述，根據預設，Azure Active Directory、Exchange 和 SharePoint 中的作業稽核記錄會保留一年。 下表列出預設稽核記錄保留原則中(針對各項服務)所包含的所有記錄類型。 這表示具有此記錄類型的稽核記錄將保留一年，除非特定記錄類型、作業或使用者的自訂稽核記錄保留原則具有優先順序。 每種記錄類型的 Enum 值 (在稽核記錄中顯示為 RecordType 屬性的值) 會顯示在括弧中。
+如先前所述，根據預設，Azure Active Directory、Exchange、SharePoint Online 和商務用 OneDrive 中的作業稽核記錄會保留一年。 下表列出預設稽核記錄保留原則中(針對各項服務)所包含的所有記錄類型。 這表示具有此記錄類型的稽核記錄將保留一年，除非特定記錄類型、作業或使用者的自訂稽核記錄保留原則具有優先順序。 每種記錄類型的 Enum 值 (在稽核記錄中顯示為 RecordType 屬性的值) 會顯示在括弧中。
 
-|AzureActiveDirectory |Exchange  |SharePoint|
+|AzureActiveDirectory |Exchange  |SharePoint 或 OneDrive|
 |:---------|:---------|:---------|
 |AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
 |AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|

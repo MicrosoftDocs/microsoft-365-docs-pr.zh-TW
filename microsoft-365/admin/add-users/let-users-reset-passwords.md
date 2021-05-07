@@ -25,24 +25,24 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 瞭解如何使用自助密碼重設工具來重設密碼。
-ms.openlocfilehash: 0842430eda8c96647dd12d0da6d0c9e0481346dc
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: d24e826287f69f867fdaf9a5c8b424dbad4e0ebb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023758"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241829"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
-做為 Microsoft 365 系統管理員，您可以讓使用者使用 [自助密碼重設工具](https://go.microsoft.com/fwlink/p/?LinkId=522677) ，這樣您就不需要重設密碼。 這可為您分擔一些工作！
+就像 Microsoft 365 管理員一樣，您可以讓人員使用[自助密碼重設工具](https://go.microsoft.com/fwlink/p/?LinkId=522677)，這樣您就不需要重設密碼。 這可為您分擔一些工作！
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
   
-- 您可以使用任何 Microsoft 365 商務版、教育版或非 **盈利性的收費** 方案，為雲端使用者取得自助密碼重設。 它不會與 Microsoft 365 試用版搭配使用。
+- 您可以使用任何 Microsoft 365 商務、教育或非盈利性收費方案，**免費** 為雲端使用者取得自助密碼重設。 它不會與 Microsoft 365 試用版搭配使用。
 
 - 該工具會使用 Azure。 當您執行這些步驟時，您將會在 Azure 中自動 **免費** 取得此項功能。 如果您不使用其他的 Azure 功能，開啟自助密碼重設不會花費您任何費用。
 
-- **如果您使用的是內部部署 Active Directory**，則不會套用上述兩個點。 相反地，您可以設定此設定，但 **需要使用 AZURE AD Premium 付費訂閱**。
+- **如果您使用的是內部部署 Active Directory**，則不會套用上述兩個點。 相反地，您可以設定此設定，但 **需要對 AZURE AD 進階版付費訂閱**。
 
 本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [什麼是系統管理員帳戶？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
 
@@ -57,24 +57,8 @@ ms.locfileid: "52023758"
 ## <a name="steps-let-people-reset-their-own-passwords"></a>步驟：讓使用者重設自己的密碼
 
 下列步驟會針對公司中的所有人員開啟自助密碼重設。
-  
-::: moniker range="o365-worldwide"
 
-1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>中，移至 [ **設定** > **組織設定** ] 頁面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **設定** \> **安全性 &amp; 隱私權** ] 頁面。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [**設定** \> **設定** \> **安全性 &amp; 隱私權**] 頁面。
-
-::: moniker-end
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>中，移至 [**設定** 的  >  **組織設定**] 頁面。
 
 2. 在 [ **組織設定** ] 頁面的頂端，選取 [ **安全性 & 隱私權** ] 索引標籤。
   

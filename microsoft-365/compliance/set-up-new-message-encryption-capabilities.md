@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解可與組織內外的人員進行受保護的電子郵件通訊的全新 Office 365 訊息加密功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1519748c4bd535e0a3ea1cc3ee653e2c81e807bd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919389"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876302"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>設定全新的郵件加密功能
 
@@ -44,7 +44,7 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
 
 如需詳細資訊，請參閱：
 
-- [要使用全新的 OME 功能，我需要什麼訂閱？](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)可檢查您的訂閱方案是否包含 Azure 資訊保護 (其中包含 Azure RMS 功能)。
+- [要使用全新的 OME 功能，我需要什麼訂閱？](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-)可檢查您的訂閱方案是否包含 Azure 資訊保護 (其中包含 Azure RMS 功能)。
 - [Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)可取得購買合格訂閱的相關資訊。  
 
 ### <a name="manually-activating-azure-rights-management"></a>手動啟用 Azure 版權管理
@@ -112,7 +112,7 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
 
 ## <a name="next-steps-define-mail-flow-rules-to-use-new-ome-capabilities"></a>後續步驟：定義郵件流程規則，以使用新 OME 功能
 
-如果有先前設定的郵件流程規則可加密您的組織中的電子郵件，則必須更新現有規則，才能使用新的 OME 功能。 針對新的部署，您必須建立新的電子郵件流程規則。
+如果有先前設定的郵件流程規則可加密您的組織中的電子郵件，則必須更新現有規則，才能使用新的 OME 功能。針對新的部署，您必須建立新的電子郵件流程規則。
 
 >[!IMPORTANT]
 >如果您不更新現有的郵件流程規則，您的使用者會繼續收到使用先前的 HTML 附件格式的加密電子郵件，而非新的無縫 OME 體驗。

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 深入瞭解 Microsoft 365 群組、Teams 及 SharePoint 共同作業的規範選項。
-ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114025"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241673"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 群組、Teams 及 SharePoint 共同作業的相容性選項
 
@@ -38,11 +38,13 @@ Microsoft 365 提供一套完整的工具，以在使用者共同作業時維持
 ||自動分類敏感內容|[自動將敏感度標籤套用到內容](../compliance/apply-sensitivity-label-automatically.md)|
 ||加密敏感內容|[使用敏感度標籤來套用加密以限制存取內容](../compliance/encryption-sensitivity-labels.md)|
 |資訊保護|||
-||避免機密資訊遺失|[深入瞭解資料遺失防護](../compliance/dlp-learn-about-dlp.md)|
+||避免機密資訊遺失|[深入了解資料外洩防護](../compliance/dlp-learn-about-dlp.md)|
 ||保護聊天中的機密資訊。|[資料外洩防護和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||定義組織的機密資訊|[自訂敏感性資訊類型](../compliance/sensitive-information-type-learn-about.md)|
 |使用者區隔|||
 ||限制使用者區段之間的通訊|[資訊屏障](../compliance/information-barriers.md)|
+|資料落地|||
+||將資料儲存在特定地理位置|[Microsoft 365 多地理位置](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## <a name="information-retention"></a>資訊保留
 
@@ -82,7 +84,7 @@ Microsoft 365 提供一套完整的工具，以在使用者共同作業時維持
 
 - [使用敏感度標籤來套用加密以限制存取內容](../compliance/encryption-sensitivity-labels.md)
 
-- [為團隊設定安全性隔離](./secure-teams-security-isolation.md)
+- [為小組設定安全性隔離](./secure-teams-security-isolation.md)
 
 其他資源：
 
@@ -93,7 +95,7 @@ Microsoft 365 提供一套完整的工具，以在使用者共同作業時維持
 
 DLP 原則可以避免在 SharePoint、Exchange 和 Teams 之間意外共用機密資訊。 您可以建立原則，指定要採取的動作 (例如依一組規則封鎖存取) 。
 
-- [深入瞭解資料遺失防護](../compliance/dlp-learn-about-dlp.md)
+- [深入了解資料外洩防護](../compliance/dlp-learn-about-dlp.md)
 
 DLP in Teams 可刪除包含機密資訊的郵件，協助保護 Teams 聊天和通道郵件中的機密資訊。
 
@@ -112,6 +114,14 @@ DLP in Teams 可刪除包含機密資訊的郵件，協助保護 Teams 聊天和
 - [Microsoft Teams 中的資訊屏障](/microsoftteams/information-barriers-in-teams)
 
 - [SharePoint 使用資訊障礙](/sharepoint/information-barriers)
+
+## <a name="data-residency"></a>資料落地
+
+使用 Microsoft 365 多地理位置時，您可以布建和儲存存放區位置的資料，而這些地理位置是您已選擇用來符合資料派駐服務需求的位置。 在多地理位置環境中，您的 Microsoft 365 租使用者是由一個中央位置 (所組成，該位置 Microsoft 365 訂閱最初的布建位置) 及一個或多個可儲存資料的衛星位置。
+
+- [Microsoft 365 多地理位置](/microsoft-365/enterprise/microsoft-365-multi-geo)
+
+- [規劃 Microsoft 365 多地理位置](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## <a name="related-topics"></a>相關主題
 

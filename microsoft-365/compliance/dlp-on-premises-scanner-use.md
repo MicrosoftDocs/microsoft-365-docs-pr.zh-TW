@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 365 資料外洩防護內部部署掃描器安心掃描資料，並針對內部部署檔案共用和內部部署 SharePoint 資料夾和文件庫執行保護動作。
-ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0abe36af5588c1828da106779a144b6e7f37d6a8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917819"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114151"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>使用 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)
 
@@ -32,7 +32,7 @@ ms.locfileid: "50917819"
 
 > [!IMPORTANT]
 > 這些 DLP 內部部署案例非建立和調整 DLP 原則的正式程式。 當您需要在一般情況下使用 DLP 原則時，請參閱下列主題：
->- [資料外洩防護概觀](data-loss-prevention-policies.md)
+>- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 >- [預設的 DLP 原則快速入門](get-started-with-the-default-dlp-policy.md)
 >- [從範本建立 DLP 原則](create-a-dlp-policy-from-a-template.md)
 >- [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
@@ -80,6 +80,6 @@ ms.locfileid: "50917819"
 
 - [了解 DLP 內部部署掃描器 (預覽)](dlp-on-premises-scanner-learn.md)
 - [開始使用 DLP 內部部署掃描器 (預覽)](dlp-on-premises-scanner-get-started.md)
-- [資料外洩防護概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)

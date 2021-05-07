@@ -1,17 +1,17 @@
 ---
-title: 資料外洩防護概觀
+title: 資料遺失防護參考
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/12/2019
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: low
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -21,59 +21,68 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 瞭解如何識別、監控和自動保護 Office 365 中貴組織中的敏感資訊。
-ms.openlocfilehash: 737e556972ca8ab0f82e1c4fe9e8602f09e91fc8
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
-ms.translationtype: HT
+description: 資料遺失防護參考材料
+ms.openlocfilehash: a94dde0bba3fdfc869746f51687ed7709a96639a
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445427"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114399"
 ---
-# <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
+# <a name="data-loss-prevention-reference"></a>資料遺失防護參考
+ 
+> [!IMPORTANT]
+> 這是參考主題不再是 Microsoft 365 資料遺失防護 (DLP) 資訊的主要資源。 DLP 內容集會進行更新及重構。 本文涵蓋的主題將移至新的更新的文章。 如需有關 DLP 的詳細資訊，請參閱 [瞭解資料遺失防護](dlp-learn-about-dlp.md)。
+
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
 > 針對已取得 Office 365 進階合規性授權的使用者，系統最近將資料外洩防護功能新增至 Microsoft Teams 聊天和頻道訊息，該功能可作為獨立選項提供，並包含在 Office 365 E5 和 Microsoft 365 E5 合規性中。 若要深入了解授權需求，請參閱 [Microsoft 365 租用戶層級服務授權指導方針](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)
 
-為了符合企業標準和產業規定，組織必須保護敏感性資訊並防止意外洩漏。 敏感性資訊包括財務資料或個人識別資訊 (PII)，例如信用卡號碼、身分證字號或健康記錄。 透過 Office 365 安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
+
+
+<!-- MOVED TO LEARN ABOUT To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Office 365 Security &amp; Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365.
   
-採用 DLP 原則，您可以：
+With a DLP policy, you can:
   
-- **在多個位置識別敏感性資訊，例如 Exchange Online、SharePoint Online、商務用 OneDrive 及 Microsoft Teams。**
+- **Identify sensitive information across many locations, such as Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft Teams.**
     
-    例如，您可以識別任何含有商務用 OneDrive 網站所儲存信用卡號碼的文件，也可以只監視特定人員的 OneDrive 網站。
+    For example, you can identify any document containing a credit card number that's stored in any OneDrive for Business site, or you can monitor just the OneDrive sites of specific people.
     
-- **防止意外共用敏感性資訊**。 
+- **Prevent the accidental sharing of sensitive information**. 
     
-    舉例來說，您可以使用文件或電子郵件中的健康記錄識別文件或電子郵件是否與組織外部人員共用，然後自動封鎖該文件的存取權，或是防止電子郵件傳送。
+    For example, you can identify any document or email containing a health record that's shared with people outside your organization, and then automatically block access to that document or block the email from being sent.
     
-- **監視和保護 Excel、PowerPoint 和 Word 桌面版中的敏感性資訊。**
+- **Monitor and protect sensitive information in the desktop versions of Excel, PowerPoint, and Word.**
     
-    如同在 Exchange Online、SharePoint Online 和商務用 OneDrive 中，這些 Office 桌面程式也包含識別敏感性資訊及套用 DLP 原則的相同功能。 DLP 可在多人共用這些 Office 程式中的內容時提供持續監視的功能。
+    Just like in Exchange Online, SharePoint Online, and OneDrive for Business, these Office desktop programs include the same capabilities to identify sensitive information and apply DLP policies. DLP provides continuous monitoring when people share content in these Office programs.
     
-- **協助使用者了解如何符合規範，而不中斷其工作流程。**
+- **Help users learn how to stay compliant without interrupting their workflow.**
     
-    您可以讓使用者了解 DLP 原則，協助他們符合規範，而不會封鎖其工作。 例如，如果某個使用者嘗試共用含有敏感資訊的文件，DLP 原則可以傳送電子郵件通知給他們，同時在文件庫的內容中顯示原則提示，允許他們因為正當商務理由而覆寫原則。 相同原則提示也會顯示在 Outlook 網頁版、Outlook、Excel、PowerPoint 及 Word。
+    You can educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification. The same policy tips also appear in Outlook on the web, Outlook, Excel, PowerPoint, and Word.
     
-- **檢視 DLP 警示和報告以了解有哪些內容符合貴組織的 DLP 原則。**
+- **View DLP alerts and reports showing content that matches your organization’s DLP policies.**
     
-    若要檢視與您 DLP 原則相關的警示和中繼資料，您可以使用 [DLP 警示管理儀表板](dlp-configure-view-alerts-policies.md)。 您也可以檢視原則比對報告，以評估貴組織遵守 DLP 原則的方式。 如果 DLP 原則允許使用者覆寫原則提示並回報誤判，您也可以檢視使用者回報的內容
-    
+    To view alerts and metadata related to your DLP policies you can use the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
+
+-->    
+## <a name="create-and-manage-dlp-policies"></a>建立及管理 DLP 原則
+
 您可以在 Microsoft 365 合規性中心的 [資料外洩防護] 頁面上建立及管理 DLP 原則。
   
 ![Office 365 安全性與合規性中心內的資料外洩防護頁面](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
-## <a name="what-a-dlp-policy-contains"></a>DLP 原則的內容
+<!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
-DLP 原則包含一些基本事項：
+A DLP policy contains a few basic things:
   
-- 要保護內容的位置：**位置**，例如 Exchange Online、SharePoint Online 和商務用 OneDrive 網站，以及 Microsoft Teams 聊天和頻道訊息。 
+- Where to protect the content: **locations** such as Exchange Online, SharePoint Online, and OneDrive for Business sites, as well as Microsoft Teams chat and channel messages. 
     
-- 何時及如何藉由執行強制包含下列要素的 **規則** 來保護內容： 
+- When and how to protect the content by enforcing **rules** comprised of: 
     
-  - **條件**：內容必須符合，才會強制執行規則。 例如，規則可能設定為僅尋找包含身分證號碼並與組織外部人員共用的內容。 
+  - **Conditions** the content must match before the rule is enforced. For example, a rule might be configured to look only for content containing Social Security numbers that's been shared with people outside your organization. 
     
-  - 您要原則在找到符合條件的內容時自動採取的 **動作**。 例如規則可能設定為封鎖文件的存取，以及傳送電子郵件通知給使用者和法務人員。 
+  - **Actions** that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification. -->
     
 您可以使用規則以符合特定的保護需求，然後使用 DLP 原則將常見保護需求分成一組，例如所有需要遵守特定法規的規則。
   
@@ -81,20 +90,20 @@ DLP 原則包含一些基本事項：
   
 ![圖表顯示 DLP 原則包含位置和規則](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>位置
+<!-- MOVED TO LEARN ABOUT ### Locations
 
-DLP 原則套用於跨 Microsoft 365 位置的敏感性項目，並且可以如本表格所述進一步限定範圍。
+DLP policies are applied to sensitive items across Microsoft 365 locations and can be further scoped as detailed in this table.
 
 
-|位置 | 包含/排除依據|
+|Location | Include/exclude by|
 |---------|---------|
-|Exchange 電子郵件| 通訊群組|
-|SharePoint 網站 |網站 |
-|OneDrive 帳戶 |帳戶 |
-|Teams 聊天和頻道訊息 |帳戶 |
-|Windows 10 裝置 |使用者或群組 |
-|Microsoft Cloud App Security |執行個體 |
-
+|Exchange email| distribution groups|
+|SharePoint sites |sites |
+|OneDrive accounts |accounts |
+|Teams chat and channel messages |accounts |
+|Windows 10 devices |user or group |
+|Microsoft Cloud App Security |instance |
+ -->
 
 如果您選擇在 Exchange 中包含特定通訊群組，DLP 原則將只會限定至該群組的成員。 類似地排除通訊群組會從原則評估中排除該通訊群組的所有成員。 您可以選擇將原則限定至通訊清單、動態通訊群組和安全性群組的成員。 DLP 原則最多可包含 50 項此類的包含和排除。
 
@@ -496,8 +505,7 @@ DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感
 
 在您所有的 SharePoint Online 網站和商務用 OneDrive 網站上，文件都會持續變動 — 文件會不斷地建立、編輯、共用等等。 這表示文件可能會隨時違反或符合 DLP 原則。 例如，人員可以將不含敏感資訊文件上傳到小組網站，而後另一個人可以編輯同一份文件並在其中加入敏感資訊。
   
-因此，DLP 原則會頻繁地在背景中檢查文件是否有原則相符項目。 您可以將此視為非同步原則評估。
-<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
+因此，DLP 原則會頻繁地在背景中檢查文件是否有原則相符項目。您可以將此視為非同步原則評估。<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
   
 #### <a name="how-it-works"></a>運作方式
  
@@ -510,7 +518,7 @@ DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感
 DLP 會評估可編製索引的任何內容。 若要進一步了解依預設會對哪些檔案類型進行編目，請參閱 [SharePoint Server 中的預設編目副檔名和剖析檔案類型](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
 
 > [!NOTE]
-> 預設會封鎖 SharePoint中新檔案的外部共用，除非至少有一個DLP原則對新項目進行掃描。 如需詳細資訊，請參閱 [透過預設，將新檔案標示為敏感檔案](/sharepoint/sensitive-by-default)。 
+> 為了防止在 DLP 原則進行分析之前共用檔，在 SharePoint 中共用的新檔案可能會封鎖，直到其內容已編制索引為止。 如需詳細資訊，請參閱 [透過預設，將新檔案標示為敏感檔案](/sharepoint/sensitive-by-default)。 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、Outlook 和 Outlook 網頁版中的原則評估
 
@@ -546,7 +554,7 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
 
 如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
-需要這些權限才能建立及套用 DLP 原則。 原則強制執行不需要內容的存取權。
+需要這些權限才能建立及套用 DLP 原則。原則強制執行不需要內容的存取權。
   
 ## <a name="find-the-dlp-cmdlets"></a>尋找 DLP Cmdlet
 

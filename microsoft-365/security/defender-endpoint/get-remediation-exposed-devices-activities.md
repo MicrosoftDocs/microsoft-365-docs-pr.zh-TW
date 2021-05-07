@@ -1,7 +1,7 @@
 ---
-title: 列出某項修復活動的公開裝置
+title: 列出一個補救活動的公開裝置
 description: 傳回所指定修復程式工作的公開裝置資訊。
-keywords: api，修正，修正 api，get，修復工作，
+keywords: api，修正，修正 api，get，修正工作，修正公開裝置
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 097d8d784ca7c02fce1fc0e9fc51bdc272951f4a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061117"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241709"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a>列出某項修復活動的公開裝置
+# <a name="list-exposed-devices-of-one-remediation-activity"></a>列出一個補救活動的公開裝置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,7 +49,16 @@ ms.locfileid: "52061117"
 
 **URL:** /Api/remediationTasks/ \{ id \} /machineReferences GET:
 
-**屬性** 詳細資料
+## <a name="permissions"></a>權限
+
+需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs 以取得詳細資訊。](apis-intro.md)
+
+許可權類型 | 權限 | 許可權顯示名稱
+:---|:---|:---
+應用程式 | RemediationTask Read。 All | \'讀取威脅及弱點管理弱點資訊\'
+委派 (工作或學校帳戶)  | RemediationTask 讀取。 | \'讀取威脅及弱點管理弱點資訊\'
+
+## <a name="properties-details"></a>屬性詳細資料
 
 屬性 (識別碼)  | 資料類型 | 描述 | 範例
 :---|:---|:---|:---
@@ -60,13 +69,13 @@ rbacGroupName | 字串 | 此裝置相關聯的裝置群組名稱 | 伺服器
 
 ## <a name="example"></a>範例
 
-**要求** 範例
+### <a name="request-example"></a>要求範例
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-**回應** 範例
+### <a name="response-example"></a>回應範例
 
 ```json
 {
@@ -108,9 +117,9 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 - [修正方法和屬性](get-remediation-methods-properties.md)
 
-- [依識別碼取得一個修復活動](get-remediation-one-activity.md)
+- [根據識別碼取得一個補救活動](get-remediation-one-activity.md)
 
-- [列出所有修復活動](get-remediation-all-activities.md)
+- [列出所有補救活動](get-remediation-all-activities.md)
 
 - [風險威脅 & 弱點管理](next-gen-threat-and-vuln-mgt.md)
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何建立自訂機密資訊類型，讓您能夠使用符合貴組織需求的規則。
-ms.openlocfilehash: 79d79a220e0cd8de0755f6cdac99cf7cceb2997f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b24313c54fdf49876c58d1809cbb29159f4508f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922657"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114257"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 
@@ -232,7 +232,7 @@ ms.locfileid: "50922657"
 |函式|XML 檔案參考 `Func_credit_card`，這是已編譯程式碼中的函式。函式是用來執行複雜 regexes 並確認總和檢查碼符合我們的內建規則。因為這是在程式碼中發生，所以部分變數不會在 XML 檔案中顯示。|
 |IdMatch|這是模式要嘗試符合的識別碼，例如信用卡號。|
 |關鍵字清單|XML 檔案也會參考 `keyword_cc_verification` 和 `keyword_cc_name`，這是關鍵字清單，我們會從中尋找與實體 `patternsProximity` 的相符項目。目前不會在 XML 中顯示。|
-|模式|模式包含敏感性類型要尋找的項目清單。 這包括關鍵字、Regex 及內部函數 (會執行驗證總和檢查碼之類的工作)。 敏感性資訊類型可能會有多個模式，而每個模式的可信度都不同。 建立會在找到確切辨識項時傳回高信賴度、找到一些確切辨識項或完全找不到時傳回較低信賴度的敏感性資訊類型時，這很有幫助。|
+|模式|模式包含敏感性類型尋找的清單。包括關鍵字、regexes 及內部函式 (執行驗證總和檢查碼之類的工作)。敏感性資訊類型可以有多個具有唯一信賴度的模式。這在建立敏感性資訊類型時很有用，其會在找到確切證據時傳回高信賴度，在找到很少確切證據或完全找不到時傳回較低信賴度。|
 |模式 confidenceLevel|這是 DLP 引擎找到相符項目的信賴等級。此信賴等級與符合模式需求時，模式的相符項目相關聯。這是當使用 Exchange 郵件流程規則 (也稱為傳輸規則) 時，您應該考慮的信賴度量值。|
 |patternsProximity|當我們尋找看起來像是信用卡號碼模式的項目時，`patternsProximity` 是與我們尋找確切辨識項的位置接近的數字。|
 |recommendedConfidence|這是我們針對此規則建議的信賴等級。建議的信賴度會套用至實體和親和性。對於實體，永遠不會針對模式的 `confidenceLevel` 評估此數字。這只是一個建議，協助您在想要套用時選擇一個信賴等級。對於親和性，模式的 `confidenceLevel` 必須高於要叫用之郵件流程規則動作的 `recommendedConfidence` 數字。`recommendedConfidence` 是在會叫用動作之郵件流程規則中使用的預設信賴等級。如果您想要的話，可以改為根據模式的信賴等級，手動變更要叫用的郵件流程規則。|
@@ -240,7 +240,5 @@ ms.locfileid: "50922657"
 ## <a name="for-more-information"></a>相關資訊
 
 - [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
-    
 - [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
-    
-- [資料外洩防護原則概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)

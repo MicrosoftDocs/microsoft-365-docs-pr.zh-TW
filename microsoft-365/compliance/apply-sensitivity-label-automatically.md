@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: d645d185524d111af4eafed4b5fba06483525a85
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 23320d962b52e1a443d459cb6b57d444fca91592
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920073"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939307"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -52,14 +52,14 @@ ms.locfileid: "50920073"
 
 - **內容已儲存 (在 SharePoint 或 OneDrive 中) 或寄送電子郵件 (由 Exchange Online 處理) 時的服務端套用標籤**：使用自動套用標籤原則。 
     
-    您可能也聽過此方法稱為待用資料 (SharePoint 和 OneDrive 中的文件) 以及傳輸中資料 (由 Exchange 傳送或接收的電子郵件) 的自動套用標籤。 若是 Exchange，不會包含待用電子郵件 (信箱)。
+    您可能也聽過此方法稱為待用資料 (SharePoint 和 OneDrive 中的文件) 以及傳輸中的資料 (由 Exchange 傳送或接收的電子郵件) 的自動套用標籤。若是 Exchange，則不會包括待用電子郵件 (信箱)。
     
     由於此標籤是由服務套用，而不是由應用程式套用，因此您不需要擔心使用者擁有哪些應用程式及其版本。 如此一來，您就能立即在整個組織中使用這項功能，並且適用於大規模套用標籤。 自動套用標籤原則不支援建議的標籤，因為使用者不會與套用標籤程序進行互動。 相反地，系統管理員會在模擬模式中執行原則，以協助確保在實際套用標籤之前，內容正確套用標籤。
     
     如需設定指示，請參閱此頁面上的[如何設定 SharePoint、OneDrive 和 Exchange 的自動套用標籤原則](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)。
     
     SharePoint 和 OneDrive 自動套用標籤專屬限制：
-    - 支援 Word、PowerPoint 和 Excel 的 Office 檔案。 支援 Open XML 格式（例如 .docx 和 .xlsx），但不支援 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
+    - 支援 Word、PowerPoint 和 Excel 等 Office 檔案。支援 Open XML 格式 (例如 .docx 和 .xlsx)，但不支援 Microsoft Office 97-2003 格式 (例如 .doc 和 .xls)。
         - 這些檔案可在建立自動套用標籤原則之前或之後，以靜止方式自動套用標籤。 請注意，如果檔案是開啟工作階段的一部分 (檔案已開啟) ，則無法自動套用標籤。
     - 租用戶中每日最多有 25,000 個自動套用標籤的檔案。
     - 每個租用戶最多 10 個自動套用標籤的原則，每個最多可用於 10 個網站（SharePoint 或 OneDrive）。
@@ -67,11 +67,13 @@ ms.locfileid: "50920073"
     - 當標籤套用加密時，[版權管理簽發者和版權管理擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)會是上次修改檔案的帳戶。
 
     Exchange 自動套用標籤專屬限制：
-    - 不同於 Office 應用程式的手動套用標籤或自動套用標籤，Office 附件 (Word、Excel 和 PowerPoint 檔案) 和 PDF 附件也會針對您在自動套用標籤原則中指定的條件進行掃描。 有相符項目時，電子郵件會套用標籤，但是附件不會套用標籤。
+    - 不同於 Office 應用程式的手動套用標籤或自動套用標籤，Office 附件 (Word、Excel 和 PowerPoint 檔案) 和 PDF 附件也會針對您在自動套用標籤原則中指定的條件進行掃描。有相符項目時，電子郵件會套用標籤，但是附件不會。
         - 針對這些 Office 檔案，將支援 Open XML 格式（例如 .docx 和 .xlsx），但不支援 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
     - 如果您有套用 IRM 加密的 Exchange 郵件流程規則或資料外洩防護 (DLP) 原則：當內容由這些規則或原則和自動套用標籤原則識別時，則會套用標籤。 如果該標籤套用加密，則會忽略 Exchange 郵件流程規則或 DLP 原則的 IRM 設定。 不過，如果該標籤並未套用加密，除了標籤以外，還會套用郵件流程規則或 DLP 原則的 IRM 設定。
     - 當有一個相符項目使用自動套用標籤時，具有 IRM 加密而沒有標籤的電子郵件，將會由具有任何加密設定的標籤取代。
-    - 當有項目與您的自動套用標籤條件相符時，內送電子郵件會套用標籤。 不過，如果標籤針對加密進行設定，則不會套用加密。
+    - 當有項目與您的自動套用標籤條件相符時，內送電子郵件會套用標籤：
+        - 如果標籤針對 [加密](encryption-sensitivity-labels.md) 進行設定，則不會套用加密。
+        - 如果標籤設定為套用 [動態標記](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)，請注意，這可能導致人員名稱會在組織的外部。
     - 當標籤套用加密時，[版權管理頒發者和版權管理擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)會是傳送電子郵件的人員。
     
 
@@ -118,7 +120,7 @@ ms.locfileid: "50920073"
 
 ![在 Office 應用程式中自動套用標籤的標籤條件](../media/sensitivity-labels-conditions.png)
 
-自動套用此敏感度標籤時，使用者會在其 Office 應用程式中看到通知。 例如：
+自動套用此敏感度標籤時，使用者會在其 Office 應用程式中看到通知。例如：
 
 ![文件已自動套用標籤的通知](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
@@ -176,7 +178,7 @@ ms.locfileid: "50920073"
 
 是否會在 Office 應用程式中實作自動化的建議標籤功能，取決於您使用的是 Office 內建的標籤功能，還是 Azure 資訊保護的整合標籤用戶端。 不過，在這兩種情況下：
 
-- 您不能對之前已手動套用標籤，或之前已自動加上較高敏感性標籤的文件和電子郵件，自動套用標籤。 請記住，您只能將單一敏感度標籤套用至文件或電子郵件 (除了單一保留標籤之外)。
+- 如果文件或電子郵件之前已手動套用標籤，或之前已使用較高敏感度自動套用標籤，則無法使用自動套用標籤功能。請切記，您只能將單一敏感度標籤套用到文件或電子郵件 (單一保留標籤也是如此)。
 
 - 您無法針對之前已加上較高敏感性標籤的文件或電子郵件使用建議標籤。 如果內容已加上較高敏感性標籤，使用者將不會看到含有建議和原則提示的提示。
 
@@ -204,7 +206,7 @@ ms.locfileid: "50920073"
 
 - 模擬模式：
     - 必須開啟 Microsoft 365 的稽核功能。 如果您需要開啟稽核，或者如果您不確定稽核是否開啟，請參閱[開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
-    - 若要在來源視圖中查看檔案內容，您必須擁有 **內容資源管理器內容檢視器** 角色。 預設的全域系統管理員沒有這個角色。 如果您沒有這個使用權限，當您從 **[相符的項目]** 索引標籤中選取項目時，就不會看到預覽窗格。
+    - 若要在來源檢視中檢視檔案或電子郵件內容，您必須擁有 **內容總管內容檢視者** 角色。 預設的全域系統管理員沒有這個角色。 如果您沒有這個使用權限，當您從 **[相符的項目]** 索引標籤中選取項目時，就不會看到預覽窗格。
 
 - 若要對 SharePoint 和 OneDrive 中的檔案自動套用標籤：
     - 您必須[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
@@ -260,7 +262,7 @@ ms.locfileid: "50920073"
     
     ![自動套用標籤的新原則精靈 ](../media/auto-labeling-wizard.png)
 
-4. 針對 **[選擇要套用此標籤的資訊]** 頁面：選取其中一個範本，例如 **財務** 或 **隱私權**。 您可以使用 **[顯示下列內容的選項]** 下拉式清單來精簡搜尋。 或者，如果範本不符合您的需求，請選取 **[自訂原則]**。 選取 [下一步]。
+4. 針對 **[選擇要套用此標籤的資訊]** 頁面：選取其中一個範本，例如 **財務** 或 **隱私權**。 您可以使用 **[顯示下列內容的選項]** 下拉式清單來精簡搜尋。 或者，如果範本不符合您的需求，請選取 **[自訂原則]**。 選取 **[下一步]**。
 
 5. 針對 **[命名您的自動套用標籤原則]** 頁面：提供唯一名稱，以及選擇性提供說明，以協助識別自動套用的標籤、位置和可識別要套用標籤之內容的條件。
 

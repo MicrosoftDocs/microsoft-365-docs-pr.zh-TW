@@ -1,5 +1,5 @@
 ---
-title: 系統管理中心的 Microsoft 365 報告-SharePoint 網站使用狀況
+title: Microsoft 365系統管理中心的報告-SharePoint 網站使用狀況
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,27 +14,26 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
 description: 取得「SharePoint 網站使用量」報告，瞭解使用者在 SharePoint 網站中儲存的檔案數目、使用的數目，以及使用的總儲存空間。
-ms.openlocfilehash: cfae7e1fc02d769328af46f75fdafc143467630b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 62bf01c867b7e9217d25e655af6633a72773caa1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579503"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241865"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>系統管理中心的 Microsoft 365 報告-SharePoint 網站使用狀況
+# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365系統管理中心的報告-SharePoint 網站使用狀況
 
-做為 Microsoft 365 系統管理員，[ **報告** ] 儀表板會顯示您組織中各種產品的活動概況。 此功能可讓您更深入解析各項產品的特定活動。 例如，您可以從 SharePoint 中取得您所取得之價值的高層級視圖、使用者儲存在 SharePoint 網站中的檔案總數、使用的檔案數目，以及所有這些網站所使用的儲存空間。 接著，您可以深入 SharePoint 網站流量報告來了解使用趨勢，以及所有網站每個網站層級的詳細資料。 
+Microsoft 365 系統管理員，「**報告**」儀表板會顯示您組織中各種產品的活動概況。 此功能可讓您更深入解析各項產品的特定活動。 例如，您可以從 SharePoint 中取得您所取得之價值的高層級視圖、使用者儲存在 SharePoint 網站中的檔案總數、使用的檔案數目，以及所有這些網站所使用的儲存空間。 接著，您可以深入 SharePoint 網站流量報告來了解使用趨勢，以及所有網站每個網站層級的詳細資料。 
   
 > [!NOTE]
-> 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。
-在系統管理中心的 Microsoft 365 報告不支援 GCC 高和 DoD 承租人。
+> 您必須是全域系統管理員、全域讀取者或報告讀取者 Microsoft 365 或 Exchange、SharePoint、Teams 服務、Teams 通訊或商務用 Skype 管理員查看報告。
+Microsoft 365admin center 中的報表不支援 GCC 高和 DoD 承租人。
  
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>如何取得 SharePoint 網站使用狀況報告
 
@@ -43,11 +42,11 @@ ms.locfileid: "51579503"
   
 ## <a name="interpret-the-sharepoint-site-usage-report"></a>解讀 SharePoint 網站使用量報告
 
-您可以選擇 [ **網站使用狀況** ] 索引標籤，在 SharePoint 報告中查看網站使用狀況。<br/>![Microsoft 365 報告-Microsoft SharePoint 網站使用狀況報告。](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)
+您可以選擇 [**網站使用狀況**] 索引標籤，在 SharePoint 報告中查看網站使用狀況。<br/>![Microsoft 365 報告-Microsoft SharePoint 網站使用狀況報告。](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)
 
 選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![SharePoint 網站使用量報告-選擇欄](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
 
-您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
+您也可以選取 [**匯出**] 連結，將報表資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
   
 |項目|描述|
 |:-----|:-----|
@@ -63,8 +62,8 @@ ms.locfileid: "51579503"
 |地理位置  <br/> | 網站的地理位置。  <br/> |
 |檔案  <br/> |網站上的檔數目。 <br/>|
 |使用中檔  <br/> | 網站上的使用中檔案數目。<br/> 附注：如果在報告的指定期間內已移除檔案，則報告中顯示的使用中檔數目可能會大於目前網站上的檔數目。  <br/> |
-|使用的儲存空間 (MB)   <br/> |目前在網站上使用的儲存空間量。  <br/>|
-|儲存量 (MB)   <br/> |為網站所分配的儲存空間上限。  <br/>|
+|儲存體使用 (MB)   <br/> |目前在網站上使用的儲存空間量。  <br/>|
+|儲存體分攤 (MB)   <br/> |為網站所分配的儲存空間上限。  <br/>|
 |網頁檢視  <br/> |在網站上查看頁面的次數。  <br/>|
 |訪問的頁面  <br/> |網站上已訪問的唯一頁面數目。  <br/>|
 |匿名連結計數  <br/> |在網站上使用「連結的任何人都共用檔或資料夾」的次數。  <br/>|

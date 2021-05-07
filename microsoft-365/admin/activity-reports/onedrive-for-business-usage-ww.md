@@ -1,5 +1,5 @@
 ---
-title: 系統管理中心的 Microsoft 365 報告-Business 使用 OneDrive
+title: Microsoft 365系統管理中心報告-商務用 OneDrive 使用狀況
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,28 +14,27 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
-description: '取得商務使用狀況報告的 OneDrive，以瞭解整個組織所使用的檔案和儲存總數。 '
-ms.openlocfilehash: 54a3b1e041ee6155b5ce89d6cd5bc73233d1f69b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: '取得「商務用 OneDrive 使用方式報告」，以瞭解整個組織所使用的檔案和儲存總數。 '
+ms.openlocfilehash: 20b9ce6aff01942c23c0f8a98234432ea54d5953
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579539"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242045"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>系統管理中心的 Microsoft 365 報告-Business 使用 OneDrive
+# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365系統管理中心報告-商務用 OneDrive 使用狀況
 
-Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。
+[Microsoft 365 **報告**] 儀表板會顯示您組織中產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。
   
 例如，根據檔案的總數與貴組織已使用的儲存空間，儀表板上的 [OneDrive] 卡片可以提供您來自商務用 OneDrive 的高層級檢視。您可以進行深入分析，以了解作用中 OneDrive 帳戶的趨勢、使用者正在與多少個檔案進行互動，以及已使用的儲存空間。也會提供您每個使用者的 OneDrive 詳細資料。
   
 > [!NOTE]
-> 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。  
+> 您必須是全域系統管理員、全域讀取者或報告讀取者 Microsoft 365 或 Exchange、SharePoint、Teams 服務、Teams 通訊或商務用 Skype 管理員查看報告。  
  
 ## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>如何進入 OneDrive 活動報告？
 
@@ -44,11 +43,11 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
   
 ## <a name="interpret-the-onedrive-usage-report"></a>解讀 OneDrive 使用狀況報告
 
-您可以選擇 [ **使用狀況** ] 索引標籤，在 OneDrive 報告中查看使用狀況。<br/>![Microsoft 365 報告-Microsoft OneDrive 使用狀況報告。](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
+您可以選擇 [**使用狀況**] 索引標籤，在 OneDrive 報告中查看使用狀況。<br/>![Microsoft 365 報告-Microsoft OneDrive 使用狀況報告。](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
 
 選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![OneDrive 使用狀況報告-選擇欄](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 
-您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
+您也可以選取 [**匯出**] 連結，將報表資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
   
 |項目|描述|
 |:-----|:-----|
@@ -60,5 +59,5 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |上次活動日期 (UTC)   <br/> | 在 OneDrive 中執行檔案活動的最晚日期。 如果 OneDrive 最近沒有檔案活動，值將會是空白。  <br/> |
 |檔案  <br/> |OneDrive 中的檔數。 <br/>|
 |使用中檔  <br/> | 時段內使用中檔案的數目。<br/> 附注：如果在報告的指定期間內已移除檔案，則報告中顯示的使用中檔案數目可能會大於目前 OneDrive 中的檔案數目。 > 刪除的使用者會在180天內繼續顯示在報告中。  <br/> |
-|使用的儲存空間 (MB)   <br/> |OneDrive 使用的儲存量（以 MB 為單位）。 |
+|儲存體使用 (MB)   <br/> |OneDrive 使用的儲存量（以 MB 為單位）。 |
 |||

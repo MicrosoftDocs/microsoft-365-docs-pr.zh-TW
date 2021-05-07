@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -16,13 +16,14 @@ search.appverid:
 ms.collection:
 - m365solution-mip
 - m365initiative-compliance
+recommendations: false
 description: 實施 Microsoft 資訊保護 (MIP) 可協助您保護敏感性資訊，無論這些資料儲存在某處在或傳輸中。
-ms.openlocfilehash: e8487bf443592fa45b887929f947b701406dba55
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 36e8e917349edd5523677112818cd39514710583
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394691"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114359"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>請參閱 Microsoft 365 中的 Microsoft 資訊保護。
 
@@ -48,7 +49,7 @@ MIP 功能隨附於 Microsoft 365 合規性中，並提供工具以 [了解您�
  
 |功能|需要解決的問題是什麼？|快速入門|
 |:------|:------------|:--------------------|
-|[敏感性資訊類型](sensitive-information-type-learn-about.md)| 您可以使用內建或自訂的規則運算式或函數識別敏感性資料。 確切證據包括關鍵字、信賴等級和近似值。| [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)|
+|[敏感性資訊類型](sensitive-information-type-learn-about.md)| 您可以使用內建或自訂的規則運算式或函數來識別敏感性資料。包括關鍵字、信賴等級和鄰近性的確切證據。| [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)|
 |[可訓練分類器](classifier-learn-about.md)| 使用您感興趣的資料範例，而不是項目內的識別元素 (模式比對) 進行識別敏感性資料。 您可以使用內建的分類器，或使用自己的內容訓練分類器。| [開始使用可訓練分類器](classifier-get-started-with.md) |
 |[資料分類](data-classification-overview.md) | 貴組織中的項目圖形識別碼具有敏感度標籤、保留標籤，或已分類完成。 您也可以使用這項資訊取得深入解析您的使用者對這些項目所採取的動作。 | [開始使用內容總管](data-classification-content-explorer.md)<br /><br /> [開始使用活動總管](data-classification-activity-explorer.md) |
 
@@ -77,8 +78,19 @@ MIP 功能隨附於 Microsoft 365 合規性中，並提供工具以 [了解您�
 
 |功能|需要解決的問題是什麼？|快速入門|
 |:------|:------------|:---------------------|
-|[資料外洩防護 (DLP)](data-loss-prevention-policies.md)| 協助防止意外共用敏感性項目。 | [預設的 DLP 原則快速入門](get-started-with-the-default-dlp-policy.md)|
+|[深入了解資料外洩防護](dlp-learn-about-dlp.md)| 協助防止意外共用敏感性項目。 | [預設的 DLP 原則快速入門](get-started-with-the-default-dlp-policy.md)|
 |[深入了解端點資料外洩防護](endpoint-dlp-learn-about.md)| 將 DLP 功能延伸到在 Windows 10 電腦上使用及共用的項目。 | [開始使用端點資料外洩防護](endpoint-dlp-getting-started.md)|
 |[了解 Microsoft 合規性擴充功能 (預覽)](dlp-chrome-learn-about.md) | 將 DLP 功能延伸至 Chrome 瀏覽器 | [開始使用 Microsoft 合規性擴充功能 (預覽)](dlp-chrome-get-started.md)|
 |[深入了解 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)](dlp-on-premises-scanner-learn.md)|將檔案活動的 DLP 監視以及這些檔案的保護動作延伸到內部部署檔案共用、SharePoint 資料夾和文件庫。|[開始使用 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)](dlp-on-premises-scanner-get-started.md)|
 |[保護 Microsoft Teams 中聊天和頻道訊息中的敏感性資訊](dlp-microsoft-teams.md) | 將部分 DLP 功能延伸至 Teams 聊天和頻道訊息 | [了解 Microsoft Teams 中的預設資料外洩防護原則 (預覽)](dlp-teams-default-policy.md)| 
+
+
+## <a name="additional-resources"></a>其他資源
+
+許多組織正在使用這些資訊保護功能來遵守資料隱私權法規。 為了協助您，我們設計工作流程來引導您完成端對端流程，以規劃及實施整個 Microsoft 365 的功能，包括安全存取、威脅防護、資訊保護和資料監管。 如需詳細資訊，請參閱 [以 Microsoft 365 針對資料隱私權法規部署資訊保護](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。 
+
+此外，為了協助規劃整合式策略來實施資訊保護功能，請下載 *Microsoft 365 資訊保護和合規性功能* 圖例集。  您可以隨意使用這些圖例。
+
+| 項目 | 描述 |
+|:-----|:------------|
+|[![模型海報：Microsoft 365 資訊保護和合規性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [下載為 PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [下載為 Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日文：[下載為 PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [下載為 Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> 2020 年 10 月更新|包含： <ul><li>  Microsoft 資訊保護和資料外洩防護</li><li>保留原則和保留標籤 </li><li>資訊屏障</li><li>通訊合規性</li><li>內部風險管理</li><li>協力廠商資料擷取</li>|

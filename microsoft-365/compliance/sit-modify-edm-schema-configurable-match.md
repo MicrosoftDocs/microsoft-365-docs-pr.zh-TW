@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何修改 EDM 結構描述以使用可設定比對。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dea641072983163c6fbbcc5888d5ee6ea91f6990
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 7d470b986d4a94206935efb832deec7171f8e404
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408312"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114191"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>修改精確資料比對模式以使用可設定比對
 
@@ -133,6 +133,6 @@ ms.locfileid: "51408312"
 - [使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 - [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [自訂敏感性資訊類型](./sensitive-information-type-learn-about.md)
-- [DLP 原則的概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 資料外洩防護內部部署掃描器
-ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 242956a3c6469756481fb823340e715a210562af
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917829"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114171"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>開始使用資料外洩防護內部部署掃描器 (預覽)
 
@@ -55,7 +55,7 @@ ms.locfileid: "50917829"
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>DLP 內部部署掃描器必要條件
 
-- Azure 資訊保護 (AIP) 掃描器會執行 DLP 原則配對和原則強制執行。 掃描器會安裝為 AIP 用戶端的一部分，因此您的安裝必須符合 AIP、AIP 用戶端和 AIP 統一標籤掃描器的所有必要條件。
+- Azure 資訊保護 (AIP) 掃描器會執行 DLP 原則配對和原則強制執行。此掃描器會安裝為 AIP 用戶端的一部分，因此您的安裝必須符合 AIP、AIP 用戶端和 AIP 統一標籤掃描器的所有必要條件。
 - 部署 AIP 用戶端和掃描器。 如需深入了解 [安裝 AIP 統一標籤用戶端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) 和 []，請參閱 [設定和安裝 Azure 資訊保護統一標籤掃描器](/azure/information-protection/deploy-aip-scanner-configure-install)。
 - 即使您的所有偵測規則都只以敏感資訊類型為基礎，租用戶中仍至少必須發佈一個標籤和原則。
 
@@ -66,7 +66,7 @@ ms.locfileid: "50917829"
     1. 網路探索工作設定是選擇性的步驟。 您可以略過它，並定義內容掃描工作要掃描的特定存放庫。
     2. 您必須建立內容掃描工作，並指定裝載著需由 DLP 引擎評估之檔案的存放庫。
     3. 在建立的內容掃描工作中啟用 DLP 規則，並將 **強制** 選項設定 為 **關閉**，但若您要直接進入 DLP 強制階段則例外。
-3. 驗證您的內容掃描工作已指派給正確的群集。 如果您仍未建立內容掃描工作，請建立新工作，並將它指派給包含執行公開預覽版本的掃描器節點的叢集。
+3. 請驗證您的內容掃描工作已指派至正確的叢集。如果您仍未建立內容掃描工作，請建立新工作，並將它指派給包含執行公開預覽版本的掃描器節點的叢集。
 
 4. 連接至 [Azure 入口網站中的 Azure 資訊保護延伸模組](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) ，並將您的存放庫新增到將執行掃描的內容掃描工作。
 
@@ -127,7 +127,7 @@ ms.locfileid: "50917829"
 
 - [了解 DLP 內部部署掃描器 (預覽)](dlp-on-premises-scanner-learn.md)
 - [使用 DLP 內部部署掃描器 (預覽)](dlp-on-premises-scanner-use.md)
-- [資料外洩防護概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)
 - [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

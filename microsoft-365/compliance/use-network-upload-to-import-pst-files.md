@@ -19,19 +19,19 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 適用於系統管理員：了解如何使用網路上傳將多個 PST 檔案大量匯入 Microsoft 365 中的使用者信箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd747840827a5d8f37bbb9f6b4c4656b80df8b26
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: cf7f471a4323c4c03f232e93d2f00b930e53aefe
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034182"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114339"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用網路上傳將組織的 PST 檔案匯入 Microsoft 365
 
 > [!NOTE]
 > 本文適用於系統管理員。 您是否正嘗試匯入 PST 檔案到自己的信箱？ 請參閱[從 Outlook .pst 檔案匯入電子郵件、連絡人和行事曆](https://go.microsoft.com/fwlink/p/?LinkID=785075)
   
-以下是使用網路上傳將多個 PST 檔案大量匯入 Microsoft 365 信箱所需的逐步指示。 如需使用網路上傳將 PST 檔案大量匯入 Microsoft 365 信箱的常見問題集，請參閱[使用網路上傳將 PST 檔案匯入的常見問題集](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files)。
+以下是使用網路上傳將多個 PST 檔案大量匯入 Microsoft 365 信箱所需的逐步指示。 如需使用網路上傳將 PST 檔案大量匯入 Microsoft 365 信箱的常見問題集，請參閱[使用網路上傳將 PST 檔案匯入的常見問題集](./faqimporting-pst-files-to-office-365.yml#using-network-upload-to-import-pst-files)。
   
 [步驟 1：複製 SAS URL 和安裝 AzCopy](#step-1-copy-the-sas-url-and-install-azcopy)
 
@@ -53,14 +53,14 @@ ms.locfileid: "51034182"
 
     此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：
 
-  - 您必須在 Exchange Online 中獲派郵件收件者角色。 根據預設，這個角色會指派給組織管理及收件者管理角色群組。
+  - 您必須在 Exchange Online 中受指派為 [郵件收件者] 角色。根據預設，此角色會指派給 [組織管理] 與 [收件者管理] 角色群組。
 
     或者
 
   - 您必須是組織中的全域系統管理員。
 
   > [!TIP]
-    > 建議您在 Exchange Online 中建立新的角色群組，專門用來匯入 PST 檔案。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。
+    > 建議您在 Exchange Online 中建立新的角色群組，專門用來匯入 PST 檔案。若需要匯入 PST 檔案所需的最低權限等級，請將 [信箱匯入匯出] 及 [郵件收件者] 角色指派到新的角色群組，然後新增成員。
   
 - 將 PST 檔案匯入 Microsoft 365 的唯一支援的方法是使用 AzCopy 工具，如本主題中所述。 您無法使用 Azure 儲存體總管直接將 PST 檔案上傳至 Azure 儲存體區域。
 
@@ -167,7 +167,7 @@ ms.locfileid: "51034182"
 
 ## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>(選用) 步驟 3：檢視上傳到 Office 365 的 PST 檔案清單
 
-這是一個選擇性的步驟，您可以安裝並使用 Microsoft Azure 儲存體總管 (這是免費的開放原始碼工具) 來檢視您已上傳到 Azure blob 的 PST 檔案清單。 以下為執行這項作業的兩個好處：
+這是一個選擇性的步驟，您可以安裝並使用 Microsoft Azure 儲存體總管 (這是免費的開放原始碼工具) 來檢視您已上傳到 Azure blob 的 PST 檔案清單。執行這項作業有兩個好處：
   
 - 確認您組織中共用資料夾或檔案伺服器的 PST 檔案已成功上傳到 Azure blob。
 
@@ -198,7 +198,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
   
 ## <a name="step-4-create-the-pst-import-mapping-file"></a>步驟 4：建立 PST 匯入對應檔案
 
-在已為貴組織上傳 PST 檔案至 Azure 儲存體位置後，下一步便是建立指定 PST 檔案將匯入至哪些使用者信箱之逗點分隔值 (CSV) 檔案。 當您建立 PST 匯入工作時，您將會在下一個步驟提交 CSV 檔案。
+在已為貴組織上傳 PST 檔案至 Azure 儲存體位置後，下一步便是建立指定 PST 檔案將匯入至哪些使用者信箱之逗點分隔值 (CSV) 檔案。當您建立 PST 匯入工作時，您將會在下一個步驟提交此 CSV 檔案。
   
 1. [下載 PST 匯入對應檔案的副本](https://go.microsoft.com/fwlink/p/?LinkId=544717)。
 
@@ -231,7 +231,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     | `FilePath` <br/> |指定在 Azure 儲存體位置的資料夾位置，也就是在步驟 2 中上傳 PST 檔案的位置。  <br/> 若您並未在步驟 2 的 `/Dest:` 參數中加入選擇性子資料夾名稱，請在 CSV 檔案將此參數保留空白。 如果您包含子資料夾名稱，則請於此參數內指定 (請參閱第二個範例)。 此參數值區分大小寫。  <br/> 或者，「不要」在 `FilePath` 參數值中包含 "ingestiondata"。  <br/><br/> **重要：** 如果在步驟 2 的 `/Dest:` 參數的 SAS URL 中包含可選的子資料夾名稱，則檔案路徑名稱的大小寫必須與您使用的大小寫相同。 例如，如果您在步驟 2 中使用 `PSTFiles` 作為子資料夾名稱，然後在 CSV 檔案的 `FilePath` 參數中使用 `pstfiles`，則 PST檔案的匯入將失敗。 請務必在這兩個案例中使用相同的大小寫。  <br/> |(保留空白)  <br/> 或  <br/>  `PSTFiles` <br/> |
     | `Name` <br/> |指定將匯入至使用者信箱的 PST 檔案名稱。 此參數值區分大小寫。 在匯出工作的對應檔案中，每個 PST 檔案的檔案名稱必須是唯一的。 <br/> <br/>**重要：** CSV 檔案中 PST 檔案名稱的大小寫必須與步驟 2 中上傳到 Azure 儲存體位置的 PST 檔案相同。 例如，如果在 CSV 檔案中的 `Name` 參數中使用 `annb.pst`，但實際的 PST 檔案名稱為 `AnnB.pst`，則該 PST 檔案的匯入將失敗。 請確認 CSV 檔案中的 PST 名稱使用與實際 PST 檔案相同的大小寫。  <br/> | `annb.pst` <br/> |
     | `Mailbox` <br/> |指定將匯入 PST 檔案的信箱電子郵件地址。 您無法指定公用資料夾，因為 PST 匯入服務不支援將 PST 檔案匯入公用資料夾。  <br/> 若要將 PST 檔案匯入非作用中的信箱，您必須為此參數指定信箱 GUID。 若要取得此 GUID，請在 Exchange Online 中執行下列 PowerShell 命令：`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**注意：** 有時候，您可能會有多個信箱具有相同的電子郵件地址，其中一個信箱是作用中信箱，另一個信箱則處於虛刪除 (或非作用中) 狀態。 在這些情況下，您必須指定信箱 GUID，以唯一識別要匯入 PST 檔案的目的地信箱。 若要取得作用中信箱的此 GUID，請執行下列 PowerShell 命令：`Get-Mailbox <identity of active mailbox> | FL Guid` 若要取得虛刪除 (或非作用中) 信箱的 GUID，請執行此命令：`Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`。  <br/> | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | 指定是否要匯入 PST 檔案至使用者的封存信箱。 其中有兩個選項：  <br/><br/>**FALSE：** 將 PST 檔案匯入使用者的主要信箱。  <br/> **TRUE：** 將 PST 檔案匯入使用者的封存信箱。 這會假設[使用者的封存信箱已啟用](enable-archive-mailboxes.md)。 <br/><br/>如果您將此參數設為 `TRUE`，則使用者的封存信箱不會啟用，該使用者的匯入工作會因此失敗。 如果某個使用者的匯入工作失敗 (原因是其封存並未啟用，且此屬性設為 `TRUE`)，匯入工作中的其他使用者不會受到影響。  <br/>  如果您將此參數保留空白，則 PST 檔案會匯入到使用者的主要信箱。  <br/> <br/>**注意：** 若要替主要信箱是內部部署的使用者將 PST 檔案匯入至雲端式封存信箱，只要為此參數指定 `TRUE`，然後替 `Mailbox` 參數指定該使用者之內部部署信箱的電子郵件地址即可。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
+    | `IsArchive` <br/> | 指定是否要匯入 PST 檔案至使用者的封存信箱。其中有兩個選項：<br/><br/>**FALSE：** 將 PST 檔案匯入使用者的主要信箱。  <br/> **TRUE：** 將 PST 檔案匯入使用者的封存信箱。 這會假設[使用者的封存信箱已啟用](enable-archive-mailboxes.md)。 <br/><br/>如果您將此參數設為 `TRUE`，則使用者的封存信箱不會啟用，該使用者的匯入工作會因此失敗。 如果某個使用者的匯入工作失敗 (原因是其封存並未啟用，且此屬性設為 `TRUE`)，匯入工作中的其他使用者不會受到影響。  <br/>  如果您將此參數保留空白，則 PST 檔案會匯入到使用者的主要信箱。  <br/> <br/>**注意：** 若要替主要信箱是內部部署的使用者將 PST 檔案匯入至雲端式封存信箱，只要為此參數指定 `TRUE`，然後替 `Mailbox` 參數指定該使用者之內部部署信箱的電子郵件地址即可。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | 指定要匯入 PST 檔案的信箱資料夾。  <br/> <br/> 若此參數保留空白，PST 檔案將會匯入至名為「已匯入」的新資料夾，其位於信箱的根層級 (與「收件匣」資料夾及其他預設信箱資料夾為相同層級)。  <br/> <br/> 如果您指定 `/`，PST 檔案中的資料夾和項目會匯入目標信箱或封存中的資料夾結構的最上層。 如果目標信箱中有資料夾 (例如，[收件匣]、[寄件備份] 和 [刪除的郵件] 等預設資料夾)，系統會將 PST 中該資料夾的項目合併到目標信箱現有的資料夾。 例如，如果 PST 檔案包含 [收件匣] 資料夾，該資料夾中的項目會匯入到目標信箱中的 [收件匣] 資料夾。 如果新資料夾不存在於目標信箱的資料夾結構中，則會建立新的資料夾。  <br/><br/>  如果指定 `/<foldername>`，則 PST 檔案中的項目和資料夾會匯入名為 *\<foldername\>* 的資料夾。 例如，如果使用 `/ImportedPst`，則會將項目匯入名為 **ImportedPst** 的資料夾。 此資料夾將位於與 [收件匣] 資料夾相同層級的使用者信箱中。  <br/><br/> **秘訣：** 請考慮執行一些測試批次來嘗試使用這個參數，如此您便能決定哪裡是匯入 PST 檔案的最佳資料夾位置。  <br/> |(保留空白)  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |此選用參數可指定用於以 ANSI 檔案格式匯入 PST 檔案的字碼頁數值。 此參數用於從中文、日文和韓文 (CJK) 組織匯入 PST 檔案，因為這些語言通常使用雙位元字元集 (DBCS) 進行字元編碼。 如果此參數不用於匯入使用 DBCS 作為信箱資料夾名稱的語言的 PST 檔案，則匯入後資料夾名稱通常會出現亂碼。  <br/><br/> 如需要用於此參數的支援值清單，請參閱[字碼頁識別碼](/windows/win32/intl/code-page-identifiers)。  <br/> <br/>**注意：** 如前所述，這是一個選用參數，您不必將其包含在 CSV 檔案中。 或者您可以包含它並在一或多列中將值保留為空白。  <br/> |(保留空白)  <br/> 或  <br/>  `932` (為 ANSI/OEM 日文的字碼頁識別碼)  <br/> |
     | `SPFileContainer` <br/> |針對 PST 匯入，請將此參數保留空白。  <br/> |不適用  <br/> |
@@ -322,7 +322,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
 
   - 訊息資料儲存在雲端上，因此使用者從所有的裝置都能取得資料。
 
-  - 其允許您將 Microsoft 365 合規性功能應用於匯入的 PST 檔案中的資料，進而有助於滿足組織的合規性需求。 這包括：
+  - 其允許您將 Microsoft 365 合規性功能應用於匯入的 PST 檔案中的資料，進而有助於滿足您的組織的合規性需求。這包括：
 
   - 啟用[封存信箱](enable-archive-mailboxes.md) 和[自動延長封存](enable-unlimited-archiving.md)，為使用者提供額外的信箱儲存空間，以儲存您匯入的資料。
 
@@ -336,7 +336,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
 
   - 將資料匯入[非作用中信箱](create-and-manage-inactive-mailboxes.md)以封存資料，來符合合規性目的。 
 
-  - 使用[資料遺失防護原則](data-loss-prevention-policies.md)來防止敏感資料洩露到組織外部。
+  - 使用[資料遺失防護原則](dlp-learn-about-dlp.md)來防止敏感資料洩露到組織外部。
   
 - 以下是在步驟 1 所取得的共用存取簽章(SAS) URL 範例。 此範例也包含您在 AzCopy.exe 工具中，為了上傳 PST 檔案所執行命令的語法。 請務必採取預防措施來保護 SAS URL，就如同您保護密碼或其他安全性相關的資訊一樣。
 

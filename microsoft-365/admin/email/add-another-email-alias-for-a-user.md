@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '瞭解您可以如何具有一個以上的電子郵件地址，稱為「電子郵件別名」，與您的商務用 Microsoft 365 相關聯。 '
-ms.openlocfilehash: 00e1c55edfcfa9937ab6a18b4bf268adb858b775
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: fd5fe2906335c8c2d1f41ac7643b7312138e15f5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107119"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241685"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>為使用者新增其他電子郵件別名
   
@@ -44,12 +44,8 @@ ms.locfileid: "52107119"
 > 若要讓多位人員管理傳送到單一電子郵件地址（如 info@NodPublishers.com 或 sales@NodPublishers.com）的電子郵件，請建立共用信箱。 若要深入瞭解，請參閱 [建立共用信箱](create-a-shared-mailbox.md)。
   
 ## <a name="add-email-aliases-to-a-user"></a>為使用者新增電子郵件別名
-<a name="AddEmailPreview"> </a>
 
 您必須具有系統 [管理員許可權](../add-users/about-admin-roles.md) ，才可執行此動作。 
-
-  
-::: moniker range="o365-worldwide"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
@@ -77,73 +73,7 @@ ms.locfileid: "52107119"
   
 7. **當使用者回復時，[*發件* 人] 位址將取決於她的 Outlook 用戶端。網頁上的 Outlook 會使用接收電子郵件的別名 (我們會將其稱為「乒乓球) 」。Outlook 桌面會使用她的主要電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而非 Sales@NodPublishers.com。
     
-::: moniker-end
-
-::: moniker range="o365-germany"
-    
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。 
-    
-    
-2. 在 [作用中 **使用者** ] 頁面上，選取您要編輯之人員的名稱。
-
-3. 在 [使用者 **名稱/電子郵件別名**] 旁，選取 [ **編輯**]。
-
-    > [!Important] 
-    > 如果您收到錯誤訊息「**找不到符合參數名稱的參數 ' EmailAddresses**，這表示要花很長的時間來完成設定您的租使用者或您的自訂網域（如果您最近新增一個）。 設定程序最多可能需要 4 個小時才能完成。 請稍候，讓設定程序完成，然後再試一次。 如果問題仍然存在，請連絡支援人員，他們會為您執行完整的同步處理。
-
-4. 在 [ **別名**] 底下的文字方塊中，輸入新電子郵件別名的第一個部分。 如果您已將自己的網域新增至 Microsoft 365，您可以使用下拉式清單選擇新電子郵件別名的網域。 然後選取 **[新增]**。
-
-    > [!IMPORTANT]
-    > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
-  
-    > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain to Microsoft 365](../setup/add-domain.md)。 
-
-5. 完成後，選取 **[儲存]**。
-
-6. 請等候24小時，讓新的別名填滿整個 Microsoft 365。 
-    
-    使用者現在會有主要位址和別名。 例如，所有傳送至送達 eliza Hoffman 主要位址的郵件，Eliza@NodPublishers.com，而她的別名 Sales@NodPublishers.com 會移至送達 eliza 的收件匣。
-    
-  
-7. **當使用者回復時，[*發件* 人] 位址將取決於她的 Outlook 用戶端。網頁上的 Outlook 會使用接收電子郵件的別名 (我們會將其稱為「乒乓球) 」。Outlook 桌面會使用她的主要電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而非 Sales@NodPublishers.com。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。 
-
-    
-2. 在 [作用中 **使用者** ] 頁面上，選取您要編輯之人員的名稱。
-
-3. 在 [使用者 **名稱/電子郵件別名**] 旁，選取 [ **編輯**]。
-
-    > [!Important] 
-    > 如果您收到錯誤訊息「**找不到符合參數名稱的參數 ' EmailAddresses**，這表示要花很長的時間來完成設定您的租使用者或您的自訂網域（如果您最近新增一個）。 設定程序最多可能需要 4 個小時才能完成。 請稍候，讓設定程序完成，然後再試一次。 如果問題仍然存在，請連絡支援人員，他們會為您執行完整的同步處理。
-
-4. 在 [ **別名**] 底下的文字方塊中，輸入新電子郵件別名的第一個部分。 如果您已將自己的網域新增至 Microsoft 365，您可以使用下拉式清單選擇新電子郵件別名的網域。 然後選取 **[新增]**。
-
-    > [!IMPORTANT]
-    > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
-  
-    > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain to Microsoft 365](../setup/add-domain.md)。 
-
-5. 完成後，選取 **[儲存]**。
-
-6. 請等候24小時，讓新的別名填滿整個 Microsoft 365。 
-    
-    使用者現在會有主要位址和別名。 例如，所有傳送至送達 eliza Hoffman 主要位址的郵件，Eliza@NodPublishers.com，而她的別名 Sales@NodPublishers.com 會移至送達 eliza 的收件匣。
-    
-  
-7. **當使用者回復時，[*發件* 人] 位址將取決於她的 Outlook 用戶端。網頁上的 Outlook 會使用接收電子郵件的別名 (我們會將其稱為「乒乓球) 」。Outlook 桌面會使用她的主要電子郵件別名。** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. 當送達 eliza 使用 Outlook 桌面回復郵件時，她的主要電子郵件地址會顯示為 Eliza@NodPublishers.com，而非 Sales@NodPublishers.com。
-
-::: moniker-end
-
-
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>您取得的是「找不到符合參數名稱 EmailAddresses 的參數嗎」？
-
 
 如果您收到錯誤訊息「**找不到符合參數名稱的參數 EmailAddresses**' 這表示要花很長的時間來完成設定您的租使用者，或自訂網域（如果您最近新增的話）。 設定程序最多可能需要 4 個小時才能完成。 請稍候，讓設定程序完成，然後再試一次。 如果問題仍然存在，請連絡支援人員，他們會為您執行完整的同步處理。
   

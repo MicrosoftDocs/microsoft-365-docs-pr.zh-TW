@@ -26,17 +26,17 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 瞭解如何在 Microsoft 365 for business 訂閱中重設使用者的密碼。
-ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: 瞭解如何在商務用 Microsoft 365 中重設使用者的密碼。
+ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023974"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241697"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
-本文說明當您擁有 Microsoft 365 for business 訂閱時，如何為您本人和您的使用者重設密碼。
+本文說明當您具有商務用 Microsoft 365 的情況時，如何為您本人和您的使用者重設密碼。
 
 ## <a name="before-you-begin"></a>在您開始之前
 
@@ -54,23 +54,7 @@ ms.locfileid: "52023974"
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>步驟：重設使用者的商務密碼
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
-
-::: moniker-end
 
 2. 在 [作用中 **使用者** ] 頁面上，選取使用者，然後選取 [ **重設密碼**]。
 
@@ -126,13 +110,13 @@ ms.locfileid: "52023974"
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-如需概要資訊，請參閱 [使用 PowerShell 管理 Microsoft 365](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
+如需概要資訊，請參閱[使用 PowerShell 管理 Microsoft 365](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>針對企業中的所有使用者強制執行密碼變更
 
 請參閱由 Microsoft 最有價值專家 Vasil Michev 撰寫的這篇部落格文章：[針對 Office 365 中的所有使用者強制執行密碼變更](https://go.microsoft.com/fwlink/?linkid=853693)。
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>我沒有商務用 Microsoft 365 訂閱
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>我沒有商務用訂閱 Microsoft 365
 
 請嘗試這篇文章中的方法：[我忘記了與 Office 搭配使用之帳戶的使用者名稱或密碼](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)。
   

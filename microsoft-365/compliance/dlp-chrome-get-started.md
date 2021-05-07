@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 準備並部署 Microsoft 合規性延伸模組。
-ms.openlocfilehash: c6f56c65de6428374d912545db38337d34720c94
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838346"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113861"
 ---
 # <a name="get-started-with-microsoft-compliance-extension-preview"></a>開始使用 Microsoft 合規性延伸模組 (預覽)
 
@@ -35,7 +35,7 @@ ms.locfileid: "50838346"
 若要使用 Microsoft 合規性延伸模組，必須將裝置上線至端點 DLP。 如果您是 DLP 或端點 DLP 新使用者，請檢閱這些文章
 
 - [深入了解 Microsoft 合規性延伸模組](dlp-chrome-learn-about.md)
-- [資料外洩防護概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [從範本建立 DLP 原則](create-a-dlp-policy-from-a-template.md)
 - [深入了解端點資料外洩防護](endpoint-dlp-learn-about.md)
@@ -76,7 +76,7 @@ ms.locfileid: "50838346"
 
 ### <a name="overall-installation-workflow"></a>整體安裝工作流程
 
-部署 Microsoft 合規性延伸模組是一個多階段流程。 您可以選擇一次安裝一部電腦，或使用 Microsoft 端點管理員或群組原則進行全組織部署。
+部署 Microsoft 合規性延伸模組是多重階段的流程。您可以選擇一次安裝一部裝置，或使用 Microsoft 端點管理員或群組原則進行全組織部署。
 
 1. [準備您的裝置](#prepare-your-devices)。
 2. [基本設定單一裝置自我主控](#basic-setup-single-machine-selfhost)
@@ -274,7 +274,7 @@ ms.locfileid: "50838346"
 
 - [深入了解端點資料外洩防護](endpoint-dlp-learn-about.md)
 - [使用端點資料外洩防護](endpoint-dlp-using.md)
-- [資料外洩防護概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)
 - [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)

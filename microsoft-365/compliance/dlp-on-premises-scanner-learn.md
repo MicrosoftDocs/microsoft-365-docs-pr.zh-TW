@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Microsoft 365 資料外洩防護內部部署掃描器可將檔案活動的監視以及這些檔案的保護動作延伸到內部部署檔案共用、SharePoint 資料夾和文件庫。 檔案會由 Azure 資訊保護 (AIP) 掃描器掃描並保護
-ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Microsoft 365 資料外洩防護內部部署掃描器可將檔案活動的監視以及這些檔案的保護動作延伸到內部部署檔案共用、SharePoint 資料夾和文件庫。檔案會由 Azure 資訊保護 (AIP) 掃描器掃描並保護
+ms.openlocfilehash: f0a34a13630e42c5dd29734ad708b3c11bb1d587
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917809"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114161"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>深入了解 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)
 
-Microsoft 資料外洩防護內部部署掃描器是 Microsoft 365 資料外洩防護 (DLP) 套件的一部分，您可以使用這些功能探索並保護整個 Microsoft 365 服務的敏感性項目。 如需所有 Microsoft DLP 供應項目的詳細資訊，請參閱 [資料外洩防護概觀](data-loss-prevention-policies.md)。
+Microsoft 資料外洩防護內部部署掃描器是 Microsoft 365 資料外洩防護 (DLP) 套件的一部分，您可以使用這些功能探索並保護整個 Microsoft 365 服務的敏感性項目。 如需所有 Microsoft DLP 供應項目的詳細資訊，請參閱[了解資料外洩防護](dlp-learn-about-dlp.md)。
 
 **DLP 內部部署掃描器** 會耙梳檔案共用和 SharePoint 文件庫及資料夾中的內部部署待用資料，並尋找敏感性項目，而這類項目如果外泄會對組織造成風險或造成合規性政策違規的風險。 這可提供您所需的可見度和控制，以確保敏感性項目得到正確的使用與保護，並協助防治可能導致威脅入侵的風險行為。 DLP 內部部署掃描器會使用 [內建](sensitive-information-type-entity-definitions.md) 或 [自訂敏感性資訊](create-a-custom-sensitive-information-type.md) 類型、 [敏感度標籤](sensitivity-labels.md) 或檔案屬性來偵測敏感性資訊。 您可以在 [活動總管](data-classification-activity-explorer.md) 中查看使用者使用敏感度專案的相關資訊，而且您可以透過 [DLP 原則](create-test-tune-dlp-policy.md)強制執行這些專案上的保護動作。
 
@@ -89,6 +89,6 @@ DLP 內部部署掃描器會利用以下四種方法的其中一項來偵測檔�
 
 - [開始使用 Microsoft 資料外洩防護內部部署掃描器](dlp-on-premises-scanner-get-started.md)
 - [使用 Microsoft 資料外洩防護內部部署掃描器](dlp-on-premises-scanner-use.md)
-- [資料外洩防護概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)

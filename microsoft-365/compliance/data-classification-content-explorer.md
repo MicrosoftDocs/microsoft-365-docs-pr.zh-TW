@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 內容總管可讓您本機檢視已套用標籤的項目。
-ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: b39dd09012e7cde6c19ea88a0915154da84c712a
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080722"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114213"
 ---
 # <a name="get-started-with-content-explorer"></a>開始使用內容總管
 
@@ -82,7 +82,7 @@ ms.locfileid: "50080722"
 
 ### <a name="sensitive-information-types"></a>敏感性資訊類型
 
-[DLP 原則](data-loss-prevention-policies.md)有助於保護敏感性資訊 (已定義為 **敏感性資訊類型**)。 Microsoft 365 包括涵蓋許多不同區域的[許多常見敏感性資訊類型的定義](sensitive-information-type-entity-definitions.md)，可供您使用。 例如，信用卡號碼、銀行帳戶號碼、國家/地區識別碼和 Windows Live ID 服務號碼。
+[DLP 原則](dlp-learn-about-dlp.md)有助於保護敏感性資訊 (已定義為 **敏感性資訊類型**)。 Microsoft 365 包括涵蓋許多不同區域的[許多常見敏感性資訊類型的定義](sensitive-information-type-entity-definitions.md)，可供您使用。 例如，信用卡號碼、銀行帳戶號碼、國家/地區識別碼和 Windows Live ID 服務號碼。
 
 > [!NOTE]
 > 內容總管目前不掃描 Exchange Online 中的敏感性資訊類型。
@@ -145,4 +145,4 @@ SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資�
 - [了解敏感度標籤](sensitivity-labels.md)
 - [瞭解保留原則和保留標籤](retention.md)
 - [敏感性資訊類型實體定義.md](sensitive-information-type-entity-definitions.md)
-- [資料外洩防護概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何為端點 DLP 設定裝置 Proxy 和網際網路連線設定。
-ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5da9161f2f59ef8a40ca8a7d302dc7de578dba39
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199272"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114121"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>為端點 DLP 設定裝置 Proxy 和網際網路連線設定
 
@@ -142,7 +142,7 @@ WinHTTP 組態設定與 Windows 網際網路 (WinINet) 網際網路流覽 proxy 
 
 - [深入了解端點資料外洩防護](endpoint-dlp-learn-about.md)
 - [使用端點資料外洩防護](endpoint-dlp-using.md)
-- [資料外洩防護概觀](data-loss-prevention-policies.md)
+- [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)
 - [適用於端點的 Microsoft Defender](/windows/security/threat-protection/)

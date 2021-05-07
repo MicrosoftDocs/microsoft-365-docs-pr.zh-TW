@@ -1,5 +1,5 @@
 ---
-title: 使用敏感度標籤作為 DLP 原則中的條件 (預覽)
+title: 在 DLP 原則中使用敏感度標籤做為條件
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解您可以在 DLP 原則中使用敏感度標籤做為條件的服務和項目類型
-ms.openlocfilehash: 2f8eb30e23d722a5e8faf7d0ddaca6b9a94e279b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19bd80de225f703b5c280163e94826498fa097bd
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649632"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876292"
 ---
-# <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>使用敏感度標籤作為 DLP 原則中的條件 (預覽)
+# <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>在 DLP 原則中使用敏感度標籤做為條件
 
 針對這些位置，您可以在 DLP 原則中使用[敏感度標籤](sensitivity-labels.md)做為條件：
 
@@ -36,7 +36,7 @@ ms.locfileid: "48649632"
 - 商務用 OneDrive 網站
 - Windows 10 裝置
 
-敏感度標籤會顯示為**內容包含**清單的選項。
+敏感度標籤會顯示為 **內容包含** 清單的選項。
 
 > [!div class="mx-imgBorder"]
 > ![敏感度標籤做為條件](../media/dlp-sensitivity-label-as-a-condition.png)
@@ -54,15 +54,15 @@ ms.locfileid: "48649632"
 |服務  |項目類型  |可用於原則提示  |強制  |
 |---------|---------|---------|---------|
 |Exchange    |電子郵件         |是         |是         |
-|Exchange    |電子郵件附件         |否 *         |否 *         |
+|Exchange    |電子郵件附件         |否 *         |是 *         |
 |SharePoint Online     |SharePoint Online 中的項目         |是         |是         |
 |商務用 OneDrive     |項目         |是         |是         |
 |Teams     |Teams 和頻道訊息         |不適用         |不適用         |
 |Teams     |附件         |是 **         |是 **         |
-|Windows 10 裝置 (預覽)     |項目         |是         |是         |
+|Windows 10 裝置     |項目         |是         |是         |
 |MCAS (預覽) |項目         |是         |是         |
 
-\* 支援電子郵件上敏感度標籤的 DLP 偵測。 不支援標示敏感度電子郵件附件的 DLP 偵測。
+\* 在傳輸中支援電子郵件和附件上的 DLP 偵測和敏感度標籤之強制執行。 不支援已標記敏感度標籤之電子郵件附件的 DLP 偵測。
 
 \** 在 Teams 中透過 1 對 1 聊天或頻道傳送的附件，會自動上傳至 [商務用 OneDrive] 和 SharePoint。 因此，如果將 SharePoint Online 或 [商務用 OneDrive] 包含在您的 DLP 原則做為位置，則會在此條件的範圍中會自動包含於 Teams 中傳送的已標示附件。 您不需要在 DLP 原則中選取 Teams 做為位置。
 
