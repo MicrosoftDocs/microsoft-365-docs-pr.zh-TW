@@ -1,7 +1,7 @@
 ---
-title: 列出某項修復活動的公開裝置
+title: 列出一個補救活動的公開裝置
 description: 傳回所指定修復程式工作的公開裝置資訊。
-keywords: api，修正，修正 api，get，修復工作，
+keywords: api，修正，修正 api，get，修正工作，修正公開裝置
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,23 +15,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 097d8d784ca7c02fce1fc0e9fc51bdc272951f4a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061117"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241709"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a><span data-ttu-id="42c01-104">列出某項修復活動的公開裝置</span><span class="sxs-lookup"><span data-stu-id="42c01-104">List exposed devices of one remediation activity</span></span>
+# <a name="list-exposed-devices-of-one-remediation-activity"></a><span data-ttu-id="545b0-104">列出一個補救活動的公開裝置</span><span class="sxs-lookup"><span data-stu-id="545b0-104">List exposed devices of one remediation activity</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="42c01-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="42c01-105">**Applies to:**</span></span>
+<span data-ttu-id="545b0-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="545b0-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="42c01-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="42c01-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="42c01-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="42c01-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="545b0-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="545b0-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="545b0-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="545b0-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="42c01-108">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="42c01-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="42c01-109">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="42c01-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="545b0-108">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="545b0-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="545b0-109">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="545b0-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -39,34 +39,43 @@ ms.locfileid: "52061117"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="42c01-110">API 描述</span><span class="sxs-lookup"><span data-stu-id="42c01-110">API Description</span></span>
+## <a name="api-description"></a><span data-ttu-id="545b0-110">API 描述</span><span class="sxs-lookup"><span data-stu-id="545b0-110">API Description</span></span>
 
-<span data-ttu-id="42c01-111">傳回所指定修復程式工作的公開裝置資訊。</span><span class="sxs-lookup"><span data-stu-id="42c01-111">Returns information about exposed devices for the specified remediation task.</span></span>
+<span data-ttu-id="545b0-111">傳回所指定修復程式工作的公開裝置資訊。</span><span class="sxs-lookup"><span data-stu-id="545b0-111">Returns information about exposed devices for the specified remediation task.</span></span>
 
-<span data-ttu-id="42c01-112">[深入瞭解修復活動](tvm-remediation.md)。</span><span class="sxs-lookup"><span data-stu-id="42c01-112">[Learn more about remediation activities](tvm-remediation.md).</span></span>
+<span data-ttu-id="545b0-112">[深入瞭解修復活動](tvm-remediation.md)。</span><span class="sxs-lookup"><span data-stu-id="545b0-112">[Learn more about remediation activities](tvm-remediation.md).</span></span>
 
-## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a><span data-ttu-id="42c01-113">列出與修復工作相關聯的公開裝置 (id) </span><span class="sxs-lookup"><span data-stu-id="42c01-113">List exposed devices associated with a remediation task (id)</span></span>
+## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a><span data-ttu-id="545b0-113">列出與修復工作相關聯的公開裝置 (id) </span><span class="sxs-lookup"><span data-stu-id="545b0-113">List exposed devices associated with a remediation task (id)</span></span>
 
-<span data-ttu-id="42c01-114">**URL:** /Api/remediationTasks/ \{ id \} /machineReferences GET:</span><span class="sxs-lookup"><span data-stu-id="42c01-114">**URL:** GET: /api/remediationTasks/\{id\}/machineReferences</span></span>
+<span data-ttu-id="545b0-114">**URL:** /Api/remediationTasks/ \{ id \} /machineReferences GET:</span><span class="sxs-lookup"><span data-stu-id="545b0-114">**URL:** GET: /api/remediationTasks/\{id\}/machineReferences</span></span>
 
-<span data-ttu-id="42c01-115">**屬性** 詳細資料</span><span class="sxs-lookup"><span data-stu-id="42c01-115">**Properties** details</span></span>
+## <a name="permissions"></a><span data-ttu-id="545b0-115">權限</span><span class="sxs-lookup"><span data-stu-id="545b0-115">Permissions</span></span>
 
-<span data-ttu-id="42c01-116">屬性 (識別碼) </span><span class="sxs-lookup"><span data-stu-id="42c01-116">Property (id)</span></span> | <span data-ttu-id="42c01-117">資料類型</span><span class="sxs-lookup"><span data-stu-id="42c01-117">Data type</span></span> | <span data-ttu-id="42c01-118">描述</span><span class="sxs-lookup"><span data-stu-id="42c01-118">Description</span></span> | <span data-ttu-id="42c01-119">範例</span><span class="sxs-lookup"><span data-stu-id="42c01-119">Example</span></span>
+<span data-ttu-id="545b0-116">需要有下列其中一個許可權才能呼叫此 API。</span><span class="sxs-lookup"><span data-stu-id="545b0-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="545b0-117">若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs 以取得詳細資訊。](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="545b0-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)</span></span>
+
+<span data-ttu-id="545b0-118">許可權類型</span><span class="sxs-lookup"><span data-stu-id="545b0-118">Permission type</span></span> | <span data-ttu-id="545b0-119">權限</span><span class="sxs-lookup"><span data-stu-id="545b0-119">Permission</span></span> | <span data-ttu-id="545b0-120">許可權顯示名稱</span><span class="sxs-lookup"><span data-stu-id="545b0-120">Permission display name</span></span>
+:---|:---|:---
+<span data-ttu-id="545b0-121">應用程式</span><span class="sxs-lookup"><span data-stu-id="545b0-121">Application</span></span> | <span data-ttu-id="545b0-122">RemediationTask Read。 All</span><span class="sxs-lookup"><span data-stu-id="545b0-122">RemediationTask.Read.All</span></span> | <span data-ttu-id="545b0-123">\'讀取威脅及弱點管理弱點資訊\'</span><span class="sxs-lookup"><span data-stu-id="545b0-123">\'Read Threat and Vulnerability Management vulnerability information\'</span></span>
+<span data-ttu-id="545b0-124">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="545b0-124">Delegated (work or school account)</span></span> | <span data-ttu-id="545b0-125">RemediationTask 讀取。</span><span class="sxs-lookup"><span data-stu-id="545b0-125">RemediationTask.Read.Read</span></span> | <span data-ttu-id="545b0-126">\'讀取威脅及弱點管理弱點資訊\'</span><span class="sxs-lookup"><span data-stu-id="545b0-126">\'Read Threat and Vulnerability Management vulnerability information\'</span></span>
+
+## <a name="properties-details"></a><span data-ttu-id="545b0-127">屬性詳細資料</span><span class="sxs-lookup"><span data-stu-id="545b0-127">Properties details</span></span>
+
+<span data-ttu-id="545b0-128">屬性 (識別碼) </span><span class="sxs-lookup"><span data-stu-id="545b0-128">Property (id)</span></span> | <span data-ttu-id="545b0-129">資料類型</span><span class="sxs-lookup"><span data-stu-id="545b0-129">Data type</span></span> | <span data-ttu-id="545b0-130">描述</span><span class="sxs-lookup"><span data-stu-id="545b0-130">Description</span></span> | <span data-ttu-id="545b0-131">範例</span><span class="sxs-lookup"><span data-stu-id="545b0-131">Example</span></span>
 :---|:---|:---|:---
-<span data-ttu-id="42c01-120">id</span><span class="sxs-lookup"><span data-stu-id="42c01-120">id</span></span> | <span data-ttu-id="42c01-121">字串</span><span class="sxs-lookup"><span data-stu-id="42c01-121">String</span></span> | <span data-ttu-id="42c01-122">裝置識別碼</span><span class="sxs-lookup"><span data-stu-id="42c01-122">Device ID</span></span> | <span data-ttu-id="42c01-123">w2957837fwda8w9ae7f023dba081059dw8d94503</span><span class="sxs-lookup"><span data-stu-id="42c01-123">w2957837fwda8w9ae7f023dba081059dw8d94503</span></span>
-<span data-ttu-id="42c01-124">computerDnsName</span><span class="sxs-lookup"><span data-stu-id="42c01-124">computerDnsName</span></span> | <span data-ttu-id="42c01-125">字串</span><span class="sxs-lookup"><span data-stu-id="42c01-125">String</span></span> | <span data-ttu-id="42c01-126">裝置名稱</span><span class="sxs-lookup"><span data-stu-id="42c01-126">Device name</span></span> | <span data-ttu-id="42c01-127">SRV2012R2Foo-UserNameVldNet</span><span class="sxs-lookup"><span data-stu-id="42c01-127">PC-SRV2012R2Foo.UserNameVldNet.local</span></span>
-<span data-ttu-id="42c01-128">osPlatform</span><span class="sxs-lookup"><span data-stu-id="42c01-128">osPlatform</span></span> | <span data-ttu-id="42c01-129">字串</span><span class="sxs-lookup"><span data-stu-id="42c01-129">String</span></span> | <span data-ttu-id="42c01-130">裝置作業系統</span><span class="sxs-lookup"><span data-stu-id="42c01-130">Device operating system</span></span> | <span data-ttu-id="42c01-131">WindowsServer2012R2</span><span class="sxs-lookup"><span data-stu-id="42c01-131">WindowsServer2012R2</span></span>
-<span data-ttu-id="42c01-132">rbacGroupName</span><span class="sxs-lookup"><span data-stu-id="42c01-132">rbacGroupName</span></span> | <span data-ttu-id="42c01-133">字串</span><span class="sxs-lookup"><span data-stu-id="42c01-133">String</span></span> | <span data-ttu-id="42c01-134">此裝置相關聯的裝置群組名稱</span><span class="sxs-lookup"><span data-stu-id="42c01-134">Name of the device group this device is associated with</span></span> | <span data-ttu-id="42c01-135">伺服器</span><span class="sxs-lookup"><span data-stu-id="42c01-135">Servers</span></span>
+<span data-ttu-id="545b0-132">id</span><span class="sxs-lookup"><span data-stu-id="545b0-132">id</span></span> | <span data-ttu-id="545b0-133">字串</span><span class="sxs-lookup"><span data-stu-id="545b0-133">String</span></span> | <span data-ttu-id="545b0-134">裝置識別碼</span><span class="sxs-lookup"><span data-stu-id="545b0-134">Device ID</span></span> | <span data-ttu-id="545b0-135">w2957837fwda8w9ae7f023dba081059dw8d94503</span><span class="sxs-lookup"><span data-stu-id="545b0-135">w2957837fwda8w9ae7f023dba081059dw8d94503</span></span>
+<span data-ttu-id="545b0-136">computerDnsName</span><span class="sxs-lookup"><span data-stu-id="545b0-136">computerDnsName</span></span> | <span data-ttu-id="545b0-137">字串</span><span class="sxs-lookup"><span data-stu-id="545b0-137">String</span></span> | <span data-ttu-id="545b0-138">裝置名稱</span><span class="sxs-lookup"><span data-stu-id="545b0-138">Device name</span></span> | <span data-ttu-id="545b0-139">SRV2012R2Foo-UserNameVldNet</span><span class="sxs-lookup"><span data-stu-id="545b0-139">PC-SRV2012R2Foo.UserNameVldNet.local</span></span>
+<span data-ttu-id="545b0-140">osPlatform</span><span class="sxs-lookup"><span data-stu-id="545b0-140">osPlatform</span></span> | <span data-ttu-id="545b0-141">字串</span><span class="sxs-lookup"><span data-stu-id="545b0-141">String</span></span> | <span data-ttu-id="545b0-142">裝置作業系統</span><span class="sxs-lookup"><span data-stu-id="545b0-142">Device operating system</span></span> | <span data-ttu-id="545b0-143">WindowsServer2012R2</span><span class="sxs-lookup"><span data-stu-id="545b0-143">WindowsServer2012R2</span></span>
+<span data-ttu-id="545b0-144">rbacGroupName</span><span class="sxs-lookup"><span data-stu-id="545b0-144">rbacGroupName</span></span> | <span data-ttu-id="545b0-145">字串</span><span class="sxs-lookup"><span data-stu-id="545b0-145">String</span></span> | <span data-ttu-id="545b0-146">此裝置相關聯的裝置群組名稱</span><span class="sxs-lookup"><span data-stu-id="545b0-146">Name of the device group this device is associated with</span></span> | <span data-ttu-id="545b0-147">伺服器</span><span class="sxs-lookup"><span data-stu-id="545b0-147">Servers</span></span>
 
-## <a name="example"></a><span data-ttu-id="42c01-136">範例</span><span class="sxs-lookup"><span data-stu-id="42c01-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="545b0-148">範例</span><span class="sxs-lookup"><span data-stu-id="545b0-148">Example</span></span>
 
-<span data-ttu-id="42c01-137">**要求** 範例</span><span class="sxs-lookup"><span data-stu-id="42c01-137">**Request** example</span></span>
+### <a name="request-example"></a><span data-ttu-id="545b0-149">要求範例</span><span class="sxs-lookup"><span data-stu-id="545b0-149">Request example</span></span>
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-<span data-ttu-id="42c01-138">**回應** 範例</span><span class="sxs-lookup"><span data-stu-id="42c01-138">**Response** example</span></span>
+### <a name="response-example"></a><span data-ttu-id="545b0-150">回應範例</span><span class="sxs-lookup"><span data-stu-id="545b0-150">Response example</span></span>
 
 ```json
 {
@@ -104,14 +113,14 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="42c01-139">另請參閱</span><span class="sxs-lookup"><span data-stu-id="42c01-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="545b0-151">另請參閱</span><span class="sxs-lookup"><span data-stu-id="545b0-151">See also</span></span>
 
-- [<span data-ttu-id="42c01-140">修正方法和屬性</span><span class="sxs-lookup"><span data-stu-id="42c01-140">Remediation methods and properties</span></span>](get-remediation-methods-properties.md)
+- [<span data-ttu-id="545b0-152">修正方法和屬性</span><span class="sxs-lookup"><span data-stu-id="545b0-152">Remediation methods and properties</span></span>](get-remediation-methods-properties.md)
 
-- [<span data-ttu-id="42c01-141">依識別碼取得一個修復活動</span><span class="sxs-lookup"><span data-stu-id="42c01-141">Get one remediation activity by Id</span></span>](get-remediation-one-activity.md)
+- [<span data-ttu-id="545b0-153">根據識別碼取得一個補救活動</span><span class="sxs-lookup"><span data-stu-id="545b0-153">Get one remediation activity by Id</span></span>](get-remediation-one-activity.md)
 
-- [<span data-ttu-id="42c01-142">列出所有修復活動</span><span class="sxs-lookup"><span data-stu-id="42c01-142">List all remediation activities</span></span>](get-remediation-all-activities.md)
+- [<span data-ttu-id="545b0-154">列出所有補救活動</span><span class="sxs-lookup"><span data-stu-id="545b0-154">List all remediation activities</span></span>](get-remediation-all-activities.md)
 
-- [<span data-ttu-id="42c01-143">風險威脅 & 弱點管理</span><span class="sxs-lookup"><span data-stu-id="42c01-143">Risk-based threat & vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
+- [<span data-ttu-id="545b0-155">風險威脅 & 弱點管理</span><span class="sxs-lookup"><span data-stu-id="545b0-155">Risk-based threat & vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
 
-- [<span data-ttu-id="42c01-144">組織中的薄弱環節</span><span class="sxs-lookup"><span data-stu-id="42c01-144">Vulnerabilities in your organization</span></span>](tvm-weaknesses.md)
+- [<span data-ttu-id="545b0-156">組織中的薄弱環節</span><span class="sxs-lookup"><span data-stu-id="545b0-156">Vulnerabilities in your organization</span></span>](tvm-weaknesses.md)
