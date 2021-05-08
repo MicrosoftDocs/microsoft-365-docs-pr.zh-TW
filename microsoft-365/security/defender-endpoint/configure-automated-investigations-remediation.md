@@ -9,8 +9,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 31a1c79440a8c1edc2bc8e2f2a163ded2a92fd64
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 23d6c8c87a6cbcc7b8060440ba2c0cae6182767d
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165762"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274541"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定自動調查和修正功能
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165762"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 如果您的組織使用 [Microsoft defender for](https://docs.microsoft.com/windows/security/threat-protection/) Endpoint (Defender for endpoint) ， [自動化調查和修復功能](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) 可儲存您的安全性作業小組時間和精力。 如 [這篇博客文章](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)所述，這些功能會模仿安全性分析員調查和修正威脅的理想步驟。 [深入瞭解自動化調查和修復](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations)。 
 
@@ -66,4 +66,4 @@ ms.locfileid: "51165762"
 
 ## <a name="see-also"></a>另請參閱
 
-- [在 Microsoft Defender for Endpoint 中處理誤報/負片](defender-endpoint-false-positives-negatives.md)
+- [解決適用於端點的 Microsoft Defender 中的誤判/漏報](defender-endpoint-false-positives-negatives.md)

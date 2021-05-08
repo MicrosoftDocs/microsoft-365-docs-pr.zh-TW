@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何同時新增使用者並指派授權給 Microsoft 365。
 ms.date: 07/01/2020
-ms.openlocfilehash: 6a1361d9cfebd2b305a71248fcbb461d0a68a052
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 3efa32d21a21ed12041f5731296c1b033374712f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107083"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274385"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同時新增使用者並指派授權
 
@@ -40,7 +40,24 @@ ms.locfileid: "52107083"
 
 :::image type="content" source="../../media/vsb-add-user-view.png" alt-text="螢幕擷取畫面：簡化的系統管理中心檢視":::
 
+::: moniker range="o365-worldwide"
+
 1. 移至位於 <https://admin.microsoft.com> 的系統管理中心。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的系統管理中心。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 的系統管理中心。
+
+::: moniker-end 
+
 2. 選取 [為其他人員建立帳戶 **]**。
 3. 在 [新增使用者帳戶 **]** 頁面上，填入他們將用於登入的名字和姓氏、顯示名稱和使用者名稱。
 4. 在 [以分號分隔最多 5 個電子郵件地址 **]** 文字方塊中新增使用者的電子郵件地址。 這可確定新使用者會取得登入 Microsoft 365 服務所需的資訊。
@@ -55,22 +72,15 @@ ms.locfileid: "52107083"
 
 ## <a name="add-users-one-at-a-time-in-the-dashboard-view"></a>在儀表板檢視中一次新增一個使用者
 
- ::: moniker range="o365-worldwide"
-
 :::image type="content" source="../../media/classic-admin-center.png" alt-text="螢幕擷取畫面：系統管理中心儀表板檢視":::
 
-1. 移至位於 <https://admin.microsoft.com> 的系統管理中心。
-2. 移至 [使用者 **]** > [作用中使用者 **]**，然後選取 [新增使用者 **]**。
-3. 在 [設定基本資料 **]** 窗格中，填入基本使用者資訊，然後選取 [下一步 **]**。
-    - **名稱**：填入名字和姓氏、顯示名稱和使用者名稱。
-    - **網域**：選擇使用者帳戶的網域。例如，如果使用者的使用者名稱是 Jakob，而網域為 contoso.com，他們可以使用 jakob@contoso.com 來登入。
-    - **密碼設定**：選擇使用自動產生的密碼，或是為使用者建立您自己的強式密碼。
-    - 使用者需要在 90 天後變更他們的密碼。或者，您可以選擇 [要求此使用者在第一次登入時變更密碼 **]**。
-    - 選擇是否要在新增使用者時透過電子郵件傳送密碼。
-4. 在 [指派產品授權 **]** 窗格中，選取使用者的位置和適當的授權。 如果您沒有任何可用的授權，您仍然可以新增使用者，並購買額外的授權。 展開 [應用程式 **]** 並選取或取消選取應用程式，以限制使用者擁有授權的應用程式。 選取 [下一步 **]**。
-5. 在 [選用設定 **]** 窗格中，展開 [角色 **]** 以讓此使用者成為系統管理員。展開 [設定檔資訊 **]** 以新增有關使用者的其他資訊。
-6. 選取 [下一步 **]**，檢閱新使用者的設定，進行您喜歡的任何變更，然後選取 [完成新增 **]**，然後選取 [關閉 **]**。
+::: moniker range="o365-worldwide"
 
+1. 移至位於 <https://admin.microsoft.com> 的系統管理中心。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的系統管理中心。
 

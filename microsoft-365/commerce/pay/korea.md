@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fbce897c3a9e0cb030de46b5e381cba056b800b1
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 21cdbc8822c10bc56460d57ea08fd0e854918277
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50550585"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273449"
 ---
 # <a name="payment-information-for-korea"></a>韓國的付款資訊
 

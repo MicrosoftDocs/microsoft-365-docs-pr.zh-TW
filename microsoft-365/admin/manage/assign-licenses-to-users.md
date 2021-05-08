@@ -22,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解如何指派授權給使用者。
-ms.openlocfilehash: 9fa8981949215c4cf7779a21ff7089d7534e1ef0
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: ae088ab5c26df9b782bd4433bbd0c9f2d0ed9348
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023746"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274373"
 ---
 # <a name="assign-licenses-to-users"></a>將授權指派給使用者
 
@@ -41,9 +41,10 @@ ms.locfileid: "52023746"
 ## <a name="before-you-begin"></a>開始之前
 
 - 您必須是全域、授權或使用者系統管理員，才能指派授權。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../add-users/about-admin-roles.md)。
-- 您可以[使用 Office 365 PowerShell 指派授權給使用者帳戶](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
+- 您可以[使用 PowerShell 將 Microsoft 365 授權指派給使用者](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
 - 若要使用以群組為基礎的授權，請參閱[依據 Azure Active Directory 中的群組成員資格將授權指派給使用者](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 - 某些服務 (例如 Sway) 會自動指派給使用者，而不需要您個別指派。
+
 
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>使用授權頁面來指派授權給使用者
 
@@ -128,6 +129,10 @@ ms.locfileid: "52023746"
 5. 在 **[新增到現有產品]** 窗格中，針對您已選取要指派授權的使用者，將開關切換到 **[開啟]** 位置。\
     根據預設，與這些授權相關的所有服務都會自動指派給使用者。 您可以限制使用者能使用的服務。 針對您不想讓使用者使用的服務，將開關切換至 **[關閉]** 位置。
 6. 在窗格底部，選取 **[新增]** \> **[關閉]**。  
+
+
+> [!NOTE]
+> 如果您想要為大量使用者指派授權，請使用 [Azure Active Directory 中的群組成員資格指派授權給使用者](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 ### <a name="assign-licenses-to-one-user"></a>將授權指派給一位使用者
 

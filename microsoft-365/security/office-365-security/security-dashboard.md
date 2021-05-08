@@ -3,7 +3,7 @@ title: 安全性儀表板概述
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 description: 使用新的安全性儀表板來查看 Office 365 威脅防護狀態，並查看並處理安全性警示。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7114776f686d25808c141a07b8cb2868cc67615d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203561"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274409"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
@@ -96,7 +96,7 @@ ms.locfileid: "51203561"
 
 ![惡意程式碼趨勢及系列類型](../../media/malwarewidgetatpe5.png)
 
-## <a name="insights"></a>深入資訊
+## <a name="insights"></a>深入解析
 
 不只是深入瞭解應該檢查的 surface key 問題，也包括要考慮的建議和動作。
 

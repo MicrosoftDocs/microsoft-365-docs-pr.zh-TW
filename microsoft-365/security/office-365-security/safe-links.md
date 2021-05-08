@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護，以保護其組織免受使用惡意 URLs 的網路釣魚和其他攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644773"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274433"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全連結
 
@@ -57,26 +57,28 @@ ms.locfileid: "51644773"
 
   如需小組中安全連結保護的詳細資訊，請參閱本文稍後的 [ [Microsoft 小組的安全連結設定](#safe-links-settings-for-microsoft-teams) ] 區段。
 
-- **Office 365 應用程式**： office 365 應用程式的安全連結保護可在支援的桌面、行動裝置和網路 ap 中取得。 您可以在安全連結原則 **以外** 的全域設定中，**設定** Office 365 應用程式的安全連結保護。 如需相關指示，請參閱 [在 Microsoft Defender For Office 365 中設定安全連結設定的全域設定](configure-global-settings-for-safe-links.md)。
+- **Office 365 應用程式**： office 365 應用程式的安全連結保護可在支援的桌面、行動裝置和 web 應用程式中取得。 您可以在安全連結原則 **以外** 的全域設定中，**設定** Office 365 應用程式的安全連結保護。 如需相關指示，請參閱 [在 Microsoft Defender For Office 365 中設定安全連結設定的全域設定](configure-global-settings-for-safe-links.md)。
 
-  不過，Office 365 應用程式的安全連結保護只 **適用** 于包含在使用中安全連結原則中的使用者。 如果使用者未包含在使用中的安全連結原則中，使用者就不會在支援的 Office 365 應用程式中取得安全連結保護。
+  Office 365 應用程式的安全連結保護會套用至組織中所有授權于 Office 365 的使用者，不論使用者是否包含在 active 安全連結原則中。
 
   如需 Office 365 應用程式中安全連結保護的詳細資訊，請參閱本文稍後的 [office 365 應用程式的安全連結設定](#safe-links-settings-for-office-365-apps) 一節。
 
 本文包含下列安全連結設定類型的詳細描述：
 
-- **安全連結原則中的設定**：這些設定僅適用于包含在特定原則中的使用者，而且各原則的設定可能不同。 這些設定包括：
+- **安全連結原則中的設定**：這些設定僅適用于包含在特定原則中的使用者，而且各原則的設定可能不同。 這些設定包含：
 
   - [電子郵件訊息的安全連結設定](#safe-links-settings-for-email-messages)
   - [Microsoft 小組的安全連結設定](#safe-links-settings-for-microsoft-teams)
   - [安全連結原則中的「不要重新寫入下列 URLs」清單](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **全域安全連結設定**：這些設定會全域設定，而不是在安全連結原則中。 不過，這些設定僅適用于包含在使用中安全連結原則中的使用者。 這些設定包括：
+- **全域安全連結設定**：這些設定會全域設定，而不是在安全連結原則中。 不過，這些設定僅適用于包含在使用中安全連結原則中的使用者。 這些設定包含：
 
   - [Office 365 應用程式的安全連結設定](#safe-links-settings-for-office-365-apps)
   - [安全連結的「封鎖下列 URLs」清單](#block-the-following-urls-list-for-safe-links)
 
 下表說明 Microsoft 365 和 Office 365 組織中包含 Office 365 的 Defender 的安全連結案例 (換句話說，缺乏授權是) 範例中的問題。
+
+<br>
 
 ****
 
@@ -87,6 +89,7 @@ ms.locfileid: "51644773"
 |在 Pat 的組織中，沒有系統管理員已建立任何安全連結原則，但已開啟 Office 365 應用程式的安全連結保護。 Pat 開啟 Word 檔，然後按一下檔案中的 URL。|Pat 未受到安全連結的保護。 <p> 雖然以全域方式開啟 Office 365 應用程式的安全連結保護，但 Pat 並未包含在任何使用中的安全連結原則中，因此無法套用保護。|
 |在「企業版的組織」中，于 [ `https://tailspintoys.com` 安全連結的全域設定] 中的 [ **封鎖下列 URLs** ] 清單中設定。 包含「擁有先生」的安全連結原則已存在。 「電子郵件」會收到包含 URL 的電子郵件 `https://tailspintoys.com/aboutus/trythispage` 。 Lee 按下該 URL。|您可以自動封鎖此 URL。這取決於清單中的 URL 專案和使用的電子郵件用戶端。 如需詳細資訊，請參閱本文稍後的「 [阻止下列 URLs 的安全連結」清單](#block-the-following-urls-list-for-safe-links) 一節。|
 |曉明和 Julia 這兩個 contoso.com 的工作。 很久之前，系統管理員設定了同時適用于曉明和 Julia 的安全連結原則。 曉明會將電子郵件傳送至 Julia，而不知道電子郵件中包含惡意 URL。|**如果** 套用至她的安全連結原則設定為套用至內部收件者之間的郵件，則安全連結會保護 Julia。 如需詳細資訊，請參閱本文稍後的「 [電子郵件的安全連結設定](#safe-links-settings-for-email-messages) 」一節。|
+|
 
 ## <a name="safe-links-settings-for-email-messages"></a>電子郵件訊息的安全連結設定
 
@@ -104,9 +107,7 @@ ms.locfileid: "51644773"
   - 不具備有效信譽的 URLs 會在背景中以非同步方式引爆。
 
 - **對指向檔案的可疑連結和連結套用即時 URL 掃描**：可即時掃描連結，包含指向可下載內容的電子郵件訊息中的連結。 建議的值為 enabled。
-
   - **等候 URL 掃描完成之後，才會傳遞郵件**：
-
     - 已啟用：包含 URLs 的郵件會一直保留，直到完成掃描為止。 只有在 URLs 確認為安全後，才會傳遞郵件。 此為建議值。
     - Disabled：如果無法完成 URL 掃描，請傳送郵件。
 
@@ -125,7 +126,6 @@ ms.locfileid: "51644773"
   如需安全連結原則之標準和嚴格原則設定的建議值的詳細資訊，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
 - **收件者篩選器**：您必須指定收件者條件和例外狀況，以決定要套用的原則。 您可以使用這些屬性做為條件和例外狀況：
-
   - **收件者是**
   - **收件者網域是**
   - **收件者是以下的成員**
@@ -207,7 +207,7 @@ ms.locfileid: "51644773"
 
 - 使用者已使用其工作或學校帳戶登入。 如需詳細資訊，請參閱登 [入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。
 
-您可以在安全連結的全域設定中，設定 Office 365 應用程式的安全連結保護，而不是在安全連結原則中設定。 不過，為了套用安全連結保護，若要套用 Office 365 應用程式，開啟 Office 檔並按一下連結的使用者必須包含在使用中的安全連結原則中。
+您可以在安全連結的全域設定中，設定 Office 365 應用程式的安全連結保護，而不是在安全連結原則中設定。 不管使用者是否包含在使用中的安全連結原則中，均會將保護套用至組織中所有授權于 Office 365 的使用者。
 
 下列安全連結設定可用於 Office 365 應用程式：
 
@@ -256,26 +256,23 @@ ms.locfileid: "51644773"
 
 您可以在 [安全連結] 的 [通用設定] 中設定 URLs 清單。 如需相關指示，請參閱 Configure the the 「 [Block the URLs」清單](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)。
 
-> [!NOTE]
-> 
-> - 如需在所有位置封鎖的真正通用 URLs 清單，請參閱 [Manage The 承租人 Allow/封鎖清單](tenant-allow-block-list.md)。
-> 
-> - 限制：
->   - 專案的數目上限為500。
->   - 專案的長度上限為128個字元。
->   - 所有專案都不得超過10000個字元。
-> 
-> - 請勿在 URL 的結尾加入正斜線 (`/`) 。 例如，使用 `https://www.contoso.com` ，not `https://www.contoso.com/` 。
-> 
-> - 例如，僅限網域的 URL (例如 `contoso.com` 或 `tailspintoys.com`) 會封鎖任何包含網域的 url。
-> 
-> - 您可以封鎖子域，但不封鎖整個網域。 例如， `toys.contoso.com*` 封鎖包含子域的任何 URL，但它不會封鎖包含完整網域的 URLs `contoso.com` 。
-> 
-> - 每個 URL 專案最多可以包含三個萬用字元 (`*`) 。
+**附註**：
+
+- 如需在所有位置封鎖的真正通用 URLs 清單，請參閱 [Manage The 承租人 Allow/封鎖清單](tenant-allow-block-list.md)。
+- **封鎖下列 URLs** 清單的限制：
+  - 專案的數目上限為500。
+  - 專案的長度上限為128個字元。
+  - 所有專案都不得超過10000個字元。
+- 請勿在 URL 的結尾加入正斜線 (`/`) 。 例如，使用 `https://www.contoso.com` ，not `https://www.contoso.com/` 。
+- 例如，僅限網域的 URL (例如 `contoso.com` 或 `tailspintoys.com`) 會封鎖任何包含網域的 url。
+- 您可以封鎖子域，但不封鎖整個網域。 例如， `toys.contoso.com*` 封鎖包含子域的任何 URL，但它不會封鎖包含完整網域的 URLs `contoso.com` 。
+- 每個 URL 專案最多可以包含三個萬用字元 (`*`) 。
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>「封鎖下列 URLs 的專案語法」清單
 
 下表說明您可以輸入的值及其結果的範例：
+
+<br>
 
 ****
 
@@ -296,24 +293,24 @@ ms.locfileid: "51644773"
 
 若要將專案新增至新的或現有的安全連結原則中的清單，請參閱 [建立安全連結原則](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) 或 [修改安全連結原則](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)。
 
-> [!NOTE]
-> 
-> - 下列用戶端無法辨識安全連結原則中的 [ **不要重新寫入下列 URLs** 清單。 您可以根據這些用戶端中的安全連結掃描的結果，URLs 封鎖原則中所含的使用者：
-> 
->   - Microsoft Teams
->   - Office web apps
-> 
->   如需真實通用的 URLs 允許任何地方使用的清單，請參閱 [Manage The 承租人 Allow/封鎖清單](tenant-allow-block-list.md)。
-> 
-> - 考慮在清單中新增常用的內部 URLs，以提升使用者體驗。 例如，如果您有內部部署服務（例如商務用 Skype 或 SharePoint），您可以將這些服務新增 URLs 以從掃描中排除。
-> 
-> - 如果您已有 [安全連結原則] 中 **的 [不要重新寫入下列 URLs** 專案]，請務必查看清單，並視需要新增萬用字元。 例如，您的清單有類似的專案， `https://contoso.com/a` 而您後來決定包含類似的子路徑 `https://contoso.com/a/b` 。 除了新增專案之外，將萬用字元新增至現有專案，使其變成 `https://contoso.com/a/*` 。
-> 
-> - 每個 URL 專案最多可以包含三個萬用字元 (`*`) 。 萬用字元會明確包含首碼或子域。 例如，該專案與 `contoso.com` 不同的專案不同 `*.contoso.com/*` ，因為 `*.contoso.com/*` 允許人員造訪指定網域中的子域和路徑。
+**附註**：
+
+- 下列用戶端無法辨識安全連結原則中的 [ **不要重新寫入下列 URLs** 清單。 您可以根據這些用戶端中的安全連結掃描的結果，URLs 封鎖原則中所含的使用者：
+  - Microsoft Teams
+  - Office web apps
+
+  如需真實通用的 URLs 允許任何地方使用的清單，請參閱 [Manage The 承租人 Allow/封鎖清單](tenant-allow-block-list.md)。
+
+- 考慮在清單中新增常用的內部 URLs，以提升使用者體驗。 例如，如果您有內部部署服務（例如商務用 Skype 或 SharePoint），您可以將這些服務新增 URLs 以從掃描中排除。
+- 如果您已有 [安全連結原則] 中 **的 [不要重新寫入下列 URLs** 專案]，請務必查看清單，並視需要新增萬用字元。 例如，您的清單有類似的專案， `https://contoso.com/a` 而您後來決定包含類似的子路徑 `https://contoso.com/a/b` 。 除了新增專案之外，將萬用字元新增至現有專案，使其變成 `https://contoso.com/a/*` 。
+- 每個 URL 專案最多可以包含三個萬用字元 (`*`) 。 萬用字元會明確包含首碼或子域。 例如，該專案與 `contoso.com` 不同的專案不同 `*.contoso.com/*` ，因為 `*.contoso.com/*` 允許人員造訪指定網域中的子域和路徑。
+- 如果 URL 使用 HTTP to HTTPS 的自動重新導向 (例如， `http://www.contoso.com` 若為進行) 的 302 `https://www.contoso.com` 重新導向，而且嘗試在清單中輸入相同 URL 的 HTTP 和 HTTPS 專案，您可能會注意到第二個 url 專案會取代第一個 url 專案。 如果 URL 的 HTTP 和 HTTPS 版本完全不同，則不會發生此行為。
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>[不要重新寫入下列 URLs] 清單的專案語法
 
 下表說明您可以輸入的值及其結果的範例：
+
+<br>
 
 ****
 

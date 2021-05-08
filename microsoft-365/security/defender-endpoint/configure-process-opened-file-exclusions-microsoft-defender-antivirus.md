@@ -7,19 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 94375bc843c6512616d49345bcc9e7f63899a708
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 2fdc646cf616ff6a6fa36a83be3d2b1dd0432fbe
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765080"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274603"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>設定處理常式開啟之檔案的排除專案
 
@@ -81,7 +82,7 @@ ms.locfileid: "51765080"
     2. 在 [ **選項** ] 區段中，按一下 [ **顯示 ...**]。
     3. 在 [ **值名稱** ] 欄底下，于各自的行上輸入每個程式。 請參閱範例表格，以瞭解不同的程式排除類型。  在 [**值**] 欄中輸入 [所有處理常式] 的 [ **0** ]。
 
-5. 按一下 [確定]。
+5. 按一下 ****[確定]。
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 PowerShell Cmdlet 來排除已由指定的進程從掃描開啟的檔案
 
@@ -188,6 +189,6 @@ $WDAVprefs.ExclusionProcess
 - [設定及驗證 Microsoft Defender 防病毒掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md)
 - [根據檔案名、副檔名和資料夾位置，設定及驗證排除](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [設定 Windows Server 上的 Microsoft Defender 防病毒排除](configure-server-exclusions-microsoft-defender-antivirus.md)
-- [定義排除時所避免的常見錯誤](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [定義排除時應避免的常見錯誤](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [自訂、啟動和審閱 Microsoft Defender 防病毒掃描和修正的結果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

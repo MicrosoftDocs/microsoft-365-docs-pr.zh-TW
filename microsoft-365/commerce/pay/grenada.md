@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 63a7a700b6f3122c266dedbd229d05efe70b4e1d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 6b76a59a5f5a8798e7a2412a80a1d1a1ebfe8886
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551065"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273713"
 ---
 # <a name="payment-information-for-grenada"></a>格瑞那達的付款資訊
 

@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: 系統管理員可以瞭解如何使用隔離標記來控制使用者可對其隔離郵件執行的動作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 580cf2bad690d0fc6508d11178527ad218df763b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 512c589572502deacb5529ca9d6f2876861bf050
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203609"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274457"
 ---
 # <a name="quarantine-tags"></a>隔離標記
 
@@ -42,6 +42,10 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 - 完全存取
 
 下表說明可用的個別許可權，以及在預置許可權群組中包含或不包含的專案：
+
+<br>
+
+****
 
 |權限|沒有存取權|限制存取|完全存取|
 |---|:---:|:---:|:---:|
@@ -126,6 +130,8 @@ _EndUserQuarantinePermissionsValue_ 參數會使用從二進位值轉換而來�
 
 下表說明預設許可權群組中每個個別許可權的必要順序和值：
 
+<br>
+
 ****
 
 |權限|沒有存取權|限制存取|完全存取|
@@ -140,6 +146,7 @@ _EndUserQuarantinePermissionsValue_ 參數會使用從二進位值轉換而來�
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |二進位值|00000000|01101010|11101100|
 |要使用的十進位數值|0|106|236|
+|
 
 <sup>\*</sup> 目前這個值永遠為0。 若為 PermissionToViewHeader，值0不會隱藏「 **查看郵件頁首** 」按鈕的隔離郵件的詳細資料 (按鈕永遠可供使用) 。
 
@@ -225,6 +232,8 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 在 [隔離郵件或檔案 (會自動或作為可設定動作) 的 _支援_ 保護功能中，您可以指派隔離標籤至可用的隔離動作。 下表說明隔離郵件和隔離標記可用性的功能：
 
+<br>
+
 ****
 
 |功能|支援隔離標記？|使用的預設隔離標記|
@@ -256,7 +265,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
    ![反垃圾郵件原則中的隔離標記選擇](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. 完成後，請按一下 **[儲存]**。
+5. 完成後，點擊 **[儲存]**。
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>在 PowerShell 中的反垃圾郵件原則中指派隔離標記
 

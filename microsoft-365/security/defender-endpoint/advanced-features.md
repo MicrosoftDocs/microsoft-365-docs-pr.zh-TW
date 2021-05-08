@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 15909684d07bac46fd42163cee545bc4752b61d4
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 87305f28975b8997afce211ffa4de3711d26be6b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995006"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246365"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -76,12 +76,12 @@ ms.locfileid: "51995006"
 >變更此設定只會影響未來的警示關聯。
 
 ## <a name="enable-edr-in-block-mode"></a>在封鎖模式中啟用 EDR
-端點偵測和回應 (EDR) 在封鎖模式中時，即使 Microsoft Defender 防病毒是以被動模式執行，也能防範惡意的資料。 開啟時，分塊模式中的 EDR 會封鎖在裝置上偵測到的惡意的偽像或行為。 組塊模式中的 EDR 可在幕後運作，以修正偵測到遭到破壞的惡意作品。
+端點偵測和回應 (EDR) 在封鎖模式中時，即使 Microsoft Defender 防毒軟體是以被動模式執行，也可以保護惡意的惡意資料。 開啟時，以封鎖模式 EDR 會封鎖在裝置上偵測到的惡意的偽像或行為。 block 模式中的 EDR 會在幕後運作，以修正偵測到破壞後偵測到的惡意作品。
 
 
 ## <a name="autoresolve-remediated-alerts"></a>自動解析修正的警示
 
-針對在 Windows 10、版本1809上建立的承租人，預設會設定自動調查和修正功能，以解決自動分析結果狀態為「沒有發現威脅」或「修正」的警示。  如果您不想要自動解決的提醒，您必須手動關閉該功能。
+針對在 Windows 10 或之後建立的承租人，版本1809會預設設定自動調查和修正功能，以解決自動分析結果狀態為「沒有發現威脅」或「修正」的警示。  如果您不想要自動解決的提醒，您必須手動關閉該功能。
 
 > [!TIP]
 > 針對在該版本之前建立的承租人，您必須從 [ [高級功能](https://securitycenter.windows.com/preferences2/integration) ] 頁面手動開啟此功能。
@@ -95,14 +95,14 @@ ms.locfileid: "51995006"
 
 只有當您的組織符合這些需求時，才可使用封鎖：
 
-- 使用 Microsoft Defender 防毒程式作為使用中的反惡意程式碼解決方案，並
+- 使用 Microsoft Defender 防毒軟體作為使用中的反惡意程式碼解決方案，並
 - 已啟用雲端式保護功能
 
 這項功能可讓您在網路中封鎖可能有害的檔案。 封鎖檔會使其無法在組織中的裝置上讀取、寫入或執行。
 
 在下列情況開啟 **允許或封鎖** 檔案：
 
-1. 在功能窗格中，選取 [**設定**] [  >  **高級功能**  >  **允許或封鎖檔**]。
+1. 在功能窗格中，選取 [**設定**  >  **高級功能**  >  **允許或封鎖檔**]。
 
 1. 切換設定為 **開啟** 或 **關閉**。
 
@@ -126,16 +126,16 @@ ms.locfileid: "51995006"
 ## <a name="tamper-protection"></a>防篡改保護
 在某些網路攻擊中，不良的演員會嘗試停用電腦上的安全性功能，例如防防毒保護。 不良的演員，例如停用您的安全性功能，以更輕鬆地存取資料、安裝惡意程式碼，或利用您的資料、身分識別及裝置。
 
-防篡改保護基本上會鎖定 Microsoft Defender 防病毒，並防止您的安全性設定透過應用程式和方法進行變更。
+防篡改保護實質上會鎖定 Microsoft Defender 防毒軟體，並防止您的安全性設定透過應用程式和方法進行變更。
 
-如果您的組織使用 Microsoft Defender 防病毒和雲端式保護，可使用此功能。 如需詳細資訊，請參閱 [在 Microsoft Defender 防毒軟體中使用下一代技術（透過雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)）。
+如果您的組織使用 Microsoft Defender 防毒軟體和雲端型防護，則可以使用此功能。 如需詳細資訊，請參閱[使用下一代技術在 Microsoft Defender 防毒軟體中透過雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)。
 
 使防篡改保護保持開啟，以避免安全性解決方案及其基本功能的不想要的變更。
 
 
 ## <a name="show-user-details"></a>顯示使用者詳細資料
 
-開啟此功能，讓您可以看到儲存在 Azure Active Directory 中的使用者詳細資料。 詳細資料包括調查使用者帳戶實體時，使用者的圖片、名稱、標題及部門資訊。 您可以在下列視圖中尋找使用者帳戶資訊：
+開啟此功能，讓您能看到儲存在 Azure Active Directory 中的使用者詳細資料。 詳細資料包括調查使用者帳戶實體時，使用者的圖片、名稱、標題及部門資訊。 您可以在下列視圖中尋找使用者帳戶資訊：
 
 -  安全性操作儀表板
 - 警示佇列
@@ -146,10 +146,10 @@ ms.locfileid: "51995006"
 
 ## <a name="skype-for-business-integration"></a>商務用 Skype 整合
 
-啟用商務用 Skype 的整合功能可讓您與使用商務用 Skype、電子郵件或電話的使用者進行通訊。 當您需要與使用者通訊並減輕風險時，這會很便利。
+啟用商務用 Skype 整合功能可讓您使用商務用 Skype、電子郵件或電話與使用者進行通訊。 當您需要與使用者通訊並減輕風險時，這會很便利。
 
 > [!NOTE]
-> 當裝置與網路隔離時，會有一個快顯視窗，您可以在其中選擇啟用 Outlook 和 Skype 通訊，以便在使用者與網路中斷連線時，允許與該使用者通訊。 當裝置處於隔離模式時，此設定會套用到 Skype 和 Outlook 通訊。
+> 當裝置與網路隔離時，會有一個快顯視窗，您可以在其中選擇啟用 Outlook 和 Skype 通訊，以便在使用者與網路中斷連線的情況下，與使用者通訊。 此設定適用于裝置處於隔離模式時 Skype 和 Outlook 通訊。
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender 用於身分識別整合
 
@@ -158,33 +158,33 @@ ms.locfileid: "51995006"
 > [!NOTE]
 > 您必須具有適當的授權，才能啟用此功能。
 
-## <a name="office-365-threat-intelligence-connection"></a>Office 365 威脅情報連接
+## <a name="office-365-threat-intelligence-connection"></a>Office 365威脅智慧連接
 
-只有當您具有使用中的 Office 365 E5 或威脅情報附加元件時，才可使用此功能。 如需詳細資訊，請參閱 Office 365 企業版 E5 產品頁面。
+只有當您具有使用中 Office 365 E5 或威脅情報附加元件時，才可使用此功能。 如需詳細資訊，請參閱 Office 365 企業版 E5 產品頁面。
 
-當您開啟此功能時，您可以將 Microsoft Defender for Office 365 中的資料合併至 Microsoft Defender 安全中心，以在 Office 365 信箱和 Windows 裝置上進行完整的安全性調查。
+當您開啟此功能時，您可以將 Microsoft Defender 中 Office 365 的資料合併成 Microsoft Defender 資訊安全中心，以跨 Office 365 信箱及 Windows 裝置進行全面的安全性調查。
 
 > [!NOTE]
 > 您必須具有適當的授權，才能啟用此功能。
 
 若要在 Office 365 威脅情報中接收上下文相關的裝置整合，您必須在安全性 & 規範儀表板中啟用 [Endpoint for Endpoint] 設定。 如需詳細資訊，請參閱 [威脅調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)。
 
-## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 威脅專家-目標攻擊通知
+## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 威脅專家目標攻擊通知
 
-除了兩個 Microsoft 威脅專家元件，已設定目標攻擊通知是在正式發行時。 專家隨選功能仍在預覽中。 如果您已套用預覽，且已核准您的應用程式，您只能使用專家隨選功能。 您可以從 Microsoft 威脅專家透過您的端點入口網站的 [提醒] 儀表板，以及透過電子郵件（如果您設定它）來接收目標攻擊通知。
-
-> [!NOTE]
-> 適用于 Microsoft 的 Defender for Endpoint 的 Microsoft 威脅專家功能，具有 E5 授權 for [Enterprise 可移動性 + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)。
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
-
-啟用此設定時，會將 Defender for Endpoint 信號轉寄至 Microsoft Cloud App Security，以提供 Cloud 應用程式使用狀況的更深入可視性。 轉寄的資料會與您的雲端應用程式安全性資料儲存在相同的位置。
+除了兩個 Microsoft 威脅專家元件，已設定目標攻擊通知是在正式發行時。 專家隨選功能仍在預覽中。 如果您已套用預覽，且已核准您的應用程式，您只能使用專家隨選功能。 您可以從 Microsoft 威脅專家透過您的端點入口網站的 [警示] 儀表板，以及透過電子郵件（如果您設定它）來接收目標攻擊通知。
 
 > [!NOTE]
-> 這項功能可搭配執行 Windows 10、版本 1709 (OS 組建16299.1085 （ [) 含](https://support.microsoft.com/help/4493441) [KB4493464](https://support.microsoft.com/help/4493464)) 1809、windows 10、版本 1803 (Os 組建17134.704 搭配[KB4489899](https://support.microsoft.com/help/4489899) (或更新版本的 windows 10 版本）之裝置上的[Enterprise 可移動性 + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)的 E5 授權。
+> Microsoft 威脅專家的 Defender for Endpoint 的功能可與[Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)的 E5 授權搭配使用。
+## <a name="microsoft-cloud-app-security"></a>Microsoft 雲端 App 安全性
+
+啟用此設定時，會將 Defender 的端點信號轉寄至 Microsoft Cloud App Security，以提供 Cloud 應用程式使用的深入瞭解。 轉寄的資料會儲存並處理雲端 App 安全性資料所在的相同位置。
+
+> [!NOTE]
+> 在執行 Windows 10 的裝置上，將會有[Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)的 E5 授權、版本 1709 (os 組建16299.1085 （含[KB4493441](https://support.microsoft.com/help/4493441)) 、Windows 10、版本 1803 (os 組建17134.704 搭配[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10、版本 1809 (os 組建17763.379 搭配[KB4489899](https://support.microsoft.com/help/4489899)) （或更新版本）。
 
 ## <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
-將 Microsoft Defender for Endpoint 信號轉寄給 microsoft 365 安全性中心內的 Microsoft Secure 得分。 開啟此功能可讓 Microsoft 安全分數看到裝置的安全性狀況。 轉寄的資料會與您的 Microsoft 安全分數資料儲存在相同的位置。
+在 Microsoft 365 security center 中，將 microsoft Defender for Endpoint 信號轉寄給 microsoft 安全評分。 開啟此功能可讓 Microsoft 安全分數看到裝置的安全性狀況。 轉寄的資料會與您的 Microsoft 安全分數資料儲存在相同的位置。
 
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>從 Microsoft Defender for Identity 入口網站啟用 Microsoft Defender for Endpoint 整合
@@ -204,23 +204,23 @@ ms.locfileid: "51995006"
 
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>與 Microsoft 規範中心共用端點警示
-將端點安全性警示和其會審狀態轉寄給 Microsoft 規範中心，讓您能夠使用預警增強內幕風險管理原則，並在內部風險造成損害之前加以修正。 轉寄的資料會處理並儲存于 Office 365 資料所在的相同位置。
+將端點安全性警示和其會審狀態轉寄給 Microsoft 規範中心，讓您能夠使用預警增強內幕風險管理原則，並在內部風險造成損害之前加以修正。 轉寄的資料會處理並儲存在與 Office 365 資料相同的位置。
 
 在「內幕風險管理」設定中設定 [安全性原則違規指示器](/microsoft-365/compliance/insider-risk-management-settings#indicators) 後，就會與適用使用者的「內部使用者風險管理」共用端點警示。
 
 
 
-## <a name="microsoft-intune-connection"></a>Microsoft Intune 連線
+## <a name="microsoft-intune-connection"></a>Microsoft Intune 連接
 
-可以與 [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) 整合的 Endpoint for Endpoint，以 [啟用裝置風險的條件式存取](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 當您 [開啟此功能](configure-conditional-access.md)時，您可以使用 Intune 與 Intune 共用 Defender 裝置資訊，進而增強原則的執行能力。
+可以將 Endpoint for 端點與[Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune)整合，以[啟用裝置風險的條件式存取](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 當您 [開啟此功能](configure-conditional-access.md)時，您可以使用 Intune 與 Intune 共用 Defender 裝置資訊，進而增強原則的執行能力。
 
 > [!IMPORTANT]
 > 您必須在 Intune 和 Defender for Endpoint 上啟用整合，才能使用此功能。 如需特定步驟的詳細資訊，請參閱 [在 Defender For Endpoint 中設定條件式存取](configure-conditional-access.md)。
 
 只有在下列情況下，才可使用此功能：
 
-- 適用于 Enterprise 可移動性 + Security E3 的授權租使用者，以及 Windows E5 (或 Microsoft 365 企業版 E5) 
-- 使用 Intune 管理 Windows 10 裝置的使用中 Microsoft Intune 環境， [Azure 已加入 Azure](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)。
+- 企業行動力 + 安全性 E3 的授權租使用者，以及 Windows e5 (或 Microsoft 365 企業版 e5) 
+- 使用 Intune 管理 Windows 10 裝置的作用中 Microsoft Intune 環境會[連接 Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)。
 
 
 ### <a name="conditional-access-policy"></a>條件式存取原則
@@ -234,9 +234,12 @@ ms.locfileid: "51995006"
 ## <a name="device-discovery"></a>裝置探索
 協助您找出連接至公司網路的非管理裝置，不需要額外裝置或繁瑣的處理常式變更。 使用架裝置，您可以在網路中尋找未受管理的裝置，並評估漏洞和風險。 如需詳細資訊，請參閱 [Device discovery](device-discovery.md)。
 
+> [!NOTE]
+> 您永遠可以套用篩選器，以從裝置庫存清單中排除未受管理的裝置。 您也可以在 API 查詢上使用 [上架狀態] 欄，以篩選出未受管理的裝置。 
+
 ## <a name="preview-features"></a>預覽功能
 
-深入瞭解 Defender for Endpoint preview 發行版本中的新功能，並在第一次嘗試使用預覽體驗的情況中嘗試後續的功能。
+瞭解適用于 Defender 的端點預覽版本中的新功能。 開啟預覽體驗，嘗試即將推出的功能。
 
 您將可以存取即將推出的功能，您可以在其中提供意見反應，以協助改善整體體驗，使其成為一般可用功能。
 

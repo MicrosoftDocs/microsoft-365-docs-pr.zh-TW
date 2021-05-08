@@ -20,12 +20,12 @@ ms.custom:
 description: 使用者可以了解如何在 Exchange Online Protection (EOP) 中查看和管理收到的隔離郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9a9da170dc0d3effba495c29672fb8f6bb02031
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 036aa164b8b77efd2365d56c07d26870eac243f5
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599932"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274445"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 尋找及釋出隔離的郵件
 
@@ -156,7 +156,9 @@ ms.locfileid: "51599932"
 
 - **從隔離區中移除**：當您在出現的警告中按一下 [是] 之後，郵件就會立即遭到刪除。
 
-- **封鎖寄件者**：防止寄件者傳送郵件給您。
+- **封鎖寄件者**：將寄件者新增到您信箱上的封鎖寄件者清單。 如需詳細資訊，請參閱[封鎖郵件寄件者](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+
+將寄件者新增到您信箱上的封鎖寄件者清單。 如需詳細資訊，請參閱[封鎖郵件寄件者](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 完成時，請按一下 [關閉]。
 

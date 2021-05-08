@@ -1,6 +1,6 @@
 ---
 title: 適用於端點的 Microsoft Defender 新功能
-description: 請參閱最新版的 Microsoft Defender for Endpoint，以及 Windows 10 和 Windows Server 中的安全性功能，可 (GA) 中的一般功能。
+description: 請參閱最新版 Microsoft Defender for Endpoint 中 (GA) 可用的功能，以及 Windows 10 和 Windows 伺服器的安全性功能。
 keywords: Microsoft Defender for Endpoint 中的新功能，ga，一般可用，功能，可用，新
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: abb20fe79077eda5c50c9aa36829e0dd45e756b8
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3336abf516fbd848ae52b1a8734a99d173c692e3
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932616"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246474"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender 新功能
 
@@ -34,7 +34,7 @@ ms.locfileid: "51932616"
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-在最新版本的 Microsoft Defender for Endpoint 和 Windows 10 和 Windows Server 中的安全性功能 (，下列功能一般都可用於 GA) 。
+在最新版的 Microsoft Defender for Endpoint 和 Windows 10 和 Windows 伺服器中的安全性功能)  (，下列功能一般皆可使用。
 
 如需預覽功能的詳細資訊，請參閱 [預覽功能](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection)。
 
@@ -43,20 +43,20 @@ ms.locfileid: "51932616"
 > RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此頁面的通知： 
 > 
 > ```https
-> https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us
+> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
 
 ## <a name="january-2021"></a>2021 年 1 月
 
-- [Windows 虛擬桌面](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint 現在會新增對 Windows 虛擬桌面的支援。
+- [Windows 虛擬桌面](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint 現在新增 Windows 虛擬機器的支援。
 
 ## <a name="december-2020"></a>2020 年 12 月
 - [iOS 上適用於端點的 Microsoft Defender](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 現在新增 iOS 的支援。 瞭解如何在 iOS 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 
 ## <a name="september-2020"></a>2020 年 9 月
 - [Android 上適用於端點的 Microsoft Defender](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 現在新增了 Android 的支援。 瞭解如何在 Android 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
-- [威脅與弱點管理 macOS 支援](tvm-supported-os.md)<br> MacOS 的威脅和弱點管理現在位於公開預覽中，而且會持續偵測 macOS 裝置上的漏洞，以協助您著重于風險，以協助您優先考慮修正。 若要深入瞭解，請參閱 [Microsoft 技術社區的博客文章](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)。
+- [威脅及弱點管理 macOS 支援](tvm-supported-os.md)<br> macOS 的威脅和弱點管理現在位於公開預覽中，它會持續偵測 macOS 裝置上的漏洞，以協助您著重于風險，以協助您排定修正優先順序。 若要深入瞭解，請參閱[Microsoft Tech Community 博客文章](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)。
 
 
 ## <a name="august-2020"></a>2020年 8月
@@ -74,7 +74,7 @@ ms.locfileid: "51932616"
 
 ## <a name="april-2020"></a>2020 年 4 月
 
-- [威脅 & 漏洞管理 API 支援](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-list) <BR>執行威脅 & 漏洞管理相關 API 通話，例如，取得組織面臨威脅洩密分數或裝置安全分數、軟體和裝置弱點、軟體版本發行、裝置弱點資訊、安全性建議資訊等。 若要深入瞭解，請參閱 [Microsoft 技術社區的博客文章](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)。
+- [威脅 & 漏洞管理 API 支援](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-list) <BR>執行威脅 & 漏洞管理相關 API 通話，例如，取得組織面臨威脅洩密分數或裝置安全分數、軟體和裝置弱點、軟體版本發行、裝置弱點資訊、安全性建議資訊等。 若要深入瞭解，請參閱[Microsoft Tech Community 博客文章](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)。
 
 ## <a name="november-december-2019"></a>November-December 2019
 
@@ -93,7 +93,7 @@ ms.locfileid: "51932616"
 - [IP 位址、URLs/網域的指標](manage-indicators.md) <BR> 您現在可以使用您自己的威脅情報，允許或封鎖 URLs/網域。 
 
 
-- [Microsoft 威脅專家-點播的專家](microsoft-threat-experts.md) <BR> 您現在可以選擇從入口網站的數個位置諮詢 Microsoft 威脅專家，以協助您進行調查的內容。   
+- [Microsoft 威脅專家-依需求的專家](microsoft-threat-experts.md) <BR> 您現在可以選擇從入口網站中的數個地方 Microsoft 威脅專家，以協助您進行調查的內容。   
  
 - [連線的 Azure AD 應用程式](connected-applications.md)<br> [連線的應用程式] 頁面會提供連線至您組織中之端點之 Azure AD 應用程式的相關資訊。 
 
@@ -102,13 +102,13 @@ ms.locfileid: "51932616"
 
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [使用 Intune 篡改保護設定](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>您現在可以在 Microsoft 365 裝置管理入口網站 (Intune) 中，為組織 (或關閉) 開啟防篡改保護功能。
+- [使用 Intune 篡改保護設定](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>您現在可以在 Microsoft 365 裝置管理入口網站 (Intune) 中，為組織 (或關閉) 開啟防篡改保護。
 
 - [即時回應](live-response.md)<BR> 使用遠端命令介面連線來立即存取裝置。 進行深入調查工作並採取立即回應動作，及時包含已識別的威脅（即時）。
 
 - [評估實驗室](evaluation-lab.md) <BR> Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和環境設定的複雜性，使您能夠專注于評估平臺的功能、執行模擬，以及查看動作中的預防、偵測和修正功能。
 
-- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016) <BR> 您現在可以在 Windows Server 2008 R2 上架 SP1。
+- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016) <BR> 您現在可以將 Windows Server 2008 R2 SP1 上架。
 
 
 ## <a name="june-2019"></a>2019 年 6 月
@@ -122,16 +122,16 @@ ms.locfileid: "51932616"
 - [威脅防護報告](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>「威脅防護」報告提供組織中所產生之提醒的高層級資訊。 
 
 
-- [Microsoft 威脅專家](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft 威脅專家是 Microsoft Defender for Endpoint 中新的受管理威脅搜尋服務，其可提供主動搜尋、優先順序及其他內容與深入瞭解，以進一步讓安全性運作中心 (SOCs) 能夠快速且正確地識別及回應威脅。 它提供其他專業的專業知識及光纖，Microsoft 客戶可以使用此層級，在 Microsoft 365 中補充安全性運作功能。  
+- [Microsoft 威脅專家](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft 威脅專家是 Microsoft Defender for Endpoint 中新的受管理威脅搜尋服務，可提供主動搜尋、優先順序及其他內容與深入瞭解，以進一步讓安全性運作中心 (SOCs) 可快速且正確地識別及回應威脅。 它提供額外的專業知識及光纖，以供 Microsoft 客戶在 Microsoft 365 中擴充安全性運作功能。  
 
 - [指標](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicator) <BR> 指示器的 APIs 現在一般可用。 
 
 
-- [互 操作 性](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/partner-applications) <BR> Microsoft Defender for Endpoint 支援協力廠商應用程式，協助增強平臺的偵測、調查和威脅智慧功能。
+- [互通性](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/partner-applications) <BR> Microsoft Defender for Endpoint 支援協力廠商應用程式，協助增強平臺的偵測、調查和威脅智慧功能。
 
 
 ## <a name="april-2019"></a>2019 年 4 月
-- [Microsoft 威脅專家目標攻擊通知功能](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts#targeted-attack-notification) <BR> Microsoft 威脅專家針對組織提供的目標攻擊通知警示，可提供盡可能快速傳遞的資訊，使其不會引起網路的重要威脅，包括時程表、破壞範圍和入侵方法。
+- [Microsoft 威脅專家目標攻擊通知功能](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts#targeted-attack-notification) <BR> Microsoft 威脅專家 ' 針對組織提供的目標攻擊通知警示，可提供盡可能快的資訊，使其能在其網路中吸引重要威脅（包括時程表、破壞範圍及入侵方法）。
 
 - [適用於端點的 Microsoft Defender API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) <BR> Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 可讓您根據 Microsoft Defender for Endpoint 功能來自動化工作流程及創新。 
 
@@ -140,19 +140,19 @@ ms.locfileid: "51932616"
 ## <a name="february-2019"></a>2019 年 2 月
 - [事件](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> 事件是 Microsoft Defender for Endpoint 中的新實體，它會將所有相關的警示和相關實體組合在一起，以敘述更廣泛的攻擊案例，讓分析員更深入瞭解複雜威脅的 purview。 
 
-- [將上一版 Windows 上線](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> 板載支援的 Windows 裝置版本，讓他們可以將感應器資料傳送至 Microsoft Defender for Endpoint 感應器。
+- [將上一版 Windows 上線](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> 板載支援的 Windows 裝置版本，使其可將感應器資料傳送至 Microsoft Defender for Endpoint 感應器。
 
 
 ## <a name="october-2018"></a>2018 年 10 月
 - [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>所有攻擊面降低規則現在都支援 Windows Server 2019。
 
-- [受控資料夾存取權](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> Windows Server 2019 現在支援受控資料夾存取。
+- [受控資料夾存取權](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> 目前 Windows Server 2019 支援受控資料夾存取。
 
 - [自訂偵測](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>使用自訂偵測，您可以建立自訂查詢，以監視任何行為（例如可疑或新興威脅）的事件。 可透過建立自訂偵測規則，利用高級搜尋的威力來做到這一點。 
 
-- [與 AAzure Defender 整合](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender for Endpoint 會與 Azure Defender 整合，以提供全面的伺服器保護解決方案。 透過這項整合，Azure Defender 可利用 Microsoft Defender for Endpoint 的功能，為 Windows Server 提供增強的威脅偵測。
+- [與 AAzure Defender 整合](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender for Endpoint 會與 Azure Defender 整合，以提供全面的伺服器保護解決方案。 透過這項整合，Azure defender 可利用 Microsoft Defender for Endpoint 的功能，為 Windows 伺服器提供增強的威脅偵測。
 
-- [受管理的安全性服務提供者 (MSSP) 支援](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<BR> Microsoft Defender for Endpoint 會提供 MSSP 整合，為此案例新增支援。 整合可讓 MSSPs 採取下列動作：透過安全性資訊和事件管理 (SIEM) 工具，存取 MSSP 客戶的 Microsoft Defender Security Center 入口網站、取得電子郵件通知，以及取得警示。
+- [受管理的安全性服務提供者 (MSSP) 支援](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<BR> Microsoft Defender for Endpoint 會提供 MSSP 整合，為此案例新增支援。 整合可讓 MSSPs 採取下列動作：透過安全性資訊和事件管理 (SIEM) 工具，取得 MSSP 客戶 Microsoft Defender 資訊安全中心入口網站的存取權、取得電子郵件通知，以及取得警示。
 
 - [可移除裝置控制項](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/19/windows-defender-atp-has-protections-for-usb-and-removable-devices/)<BR>Microsoft Defender for Endpoint 提供多個監視和控制功能，以協助防止可移除裝置的威脅，包括允許或封鎖特定硬體識別碼s 的新設定。
 
@@ -161,14 +161,14 @@ ms.locfileid: "51932616"
 - [威脅分析](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics)<BR>
 威脅分析是一組互動式報告，由 Microsoft Defender for Endpoint research 小組所發佈，可在識別新興威脅和病毒發作時立即使用。 報告可協助安全性運作小組評估其環境的影響，並提供建議的動作，以包含、增加組織的恢復能力，以及防止特定威脅。
 
-- 新的 Windows 10 版本1809，有兩個新的攻擊面降低規則： 
+- Windows 10 版本1809中的新功能，有兩個新的攻擊面降低規則： 
   - 封鎖 Adobe Reader，以建立子流程
-  - 封鎖 Office 通訊應用程式，以建立子流程。
+  - 封鎖 Office 通訊應用程式以建立子流程。
   
-- [Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
-    - 反惡意軟體掃描介面 (AMSI) 已擴充為同時涵蓋 Office VBA 宏。 [OFFICE VBA + AMSI：在惡意的宏上分型 veil](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/)。
-    - Windows 10 版本1809中的 Microsoft Defender 防毒軟體，現在可以在沙箱 (預覽) [中執行](https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox) ，提高其安全性。
-    - 設定 Microsoft Defender 防病毒掃描的[CPU 優先順序設定](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)。
+- [Microsoft Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+    - 反惡意軟體掃描介面 (AMSI) 已擴充為同時涵蓋 Office VBA 宏。 [Office VBA + AMSI：在惡意的宏上分型 veil](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/)。
+    - Microsoft Defender 防毒軟體 Windows 10 版本1809中的新功能，現在可以在沙箱 (預覽) [中執行](https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox)，以提升其安全性。
+    - 設定 Microsoft Defender 防毒軟體掃描的[CPU 優先順序設定](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)。
 
 
   
@@ -179,33 +179,33 @@ ms.locfileid: "51932616"
 - [受攻擊面縮小規則](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
     新的攻擊面減少規則： 
   - 使用勒索軟體的高級防護
-  - 從 Windows local security 機關子系統封鎖認證竊取 (lsass.exe) 
+  - 封鎖 Windows 本機安全性群組子系統 (lsass.exe 中的認證竊取) 
   - 封鎖來自 PSExec 和 WMI 命令的進程建立
   - 封鎖從 USB 執行的不受信任和未簽署程式
   - 從電子郵件客戶程式和 web 郵件封鎖可執行檔內容
 
-- [自動化調查與補救措施](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)<BR> 使用自動調查以調查和修正威脅。
+- [自動化調查和修正](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)<BR> 使用自動調查以調查和修正威脅。
 
     >[!NOTE]
-    >可從 Windows 10 版本1803或更新版本取得。
+    >可從 Windows 10 版本1803或更新版本。
 
 - [條件式存取](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) <br> 啟用條件式存取，以更好地保護使用者、裝置和資料。
 
-- [Microsoft Defender for Endpoint 社區中心](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/community-windows-defender-advanced-threat-protection)<BR> 
-    Microsoft Defender for Endpoint 社區中心是一個地方，可讓社區成員瞭解、共同作業和分享產品的經驗。 
+- [Microsoft Defender for Endpoint Community center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/community-windows-defender-advanced-threat-protection)<BR> 
+    Microsoft Defender for Endpoint Community Center 是一個地方，可讓社區成員瞭解、共同作業及分享產品的經驗。 
 
 - [受控資料夾存取權](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
 您現在可以封鎖不受信任的處理常式，不需要使用可控資料夾存取寫入磁片區。
 
 - [將非 Windows 裝置上線](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
-    Microsoft Defender for Endpoint 提供 Windows 和非 Windows 平臺的集中式安全性作業體驗。 您可以在 Microsoft Defender Security Center 中查看不同支援作業系統 (OS) 中的警示，並更好地保護組織的網路。
+    Microsoft Defender for Endpoint 為 Windows 和非 Windows 平臺提供集中的安全性作業體驗。 您可以在 Microsoft Defender 資訊安全中心中查看不同支援作業系統 (OS) 中的警示，也能更好地保護組織的網路。
 
 - [角色型存取控制 (RBAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)<BR>
     使用以角色為基礎的存取控制 (RBAC) ，您可以在安全性作業小組中建立角色和群組，以授與入口網站的適當存取權。
 
 
-- [Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)<BR>
-Microsoft Defender 防病毒現在會共用 M365 服務之間的偵測狀態，並與 Microsoft Defender for Endpoint 進行交互操作。 如需詳細資訊，請參閱 [在 Microsoft Defender 防毒軟體中使用第二代技術（透過雲端提供的保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)）。
+- [Microsoft Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)<BR>
+Microsoft Defender 防毒軟體現在會共用 M365 服務之間的偵測狀態，並與 Microsoft Defender for Endpoint 進行交互操作。 如需詳細資訊，請參閱[在 Microsoft Defender 防毒軟體中透過雲端提供的保護使用下一代技術](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)。
 
     封鎖第一次看到可以封鎖不可移植的可執行檔 (例如 .JS、VBS 或宏) 以及可執行檔。 如需詳細資訊，請參閱 [在第一次看到時啟用區塊](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)。
 

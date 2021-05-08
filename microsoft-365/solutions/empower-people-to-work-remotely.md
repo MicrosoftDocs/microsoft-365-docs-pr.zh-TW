@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 強化遠端工作者
+title: 使用 Microsoft 365 設定遠端工作基礎結構。
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,17 +17,20 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-description: 請確認您已啟用 Microsoft 365 中的所有功能，以充分發揮遠端工作者的生產力，並維持伺服器、資料和雲端的安全存取。
-ms.openlocfilehash: e811b0ea40c38d3c8de0dfdc17a24ce0d7aabe2f
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+keywords: 在家工作、混合式、遠端工作者、混合式工作、遠端員工、混合式連線、遠端存取、遠距工作、行動工作、遠端工作、隨處工作、彈性工作場所
+description: 逐步執行基礎結構層，讓遠端工作者可以安全地存取內部部署和 Microsoft 365 資源。
+ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029119"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246317"
 ---
-# <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 強化遠端工作者
+# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>使用 Microsoft 365 設定遠端工作基礎結構。
 
-貴組織可能必須讓工作人員能夠從家裡安全地存取貴組織的內部部署與雲端式資訊、工具及資源。 允許員工遠端辦公對許多組織達到以下目的非常重要:
+若要保護及優化遠端工作者的生產力和共同作業，您必須設定 IT 和雲端基礎結構，以啟用遠端工作，並提供貴組織內部部署和雲端式資訊、工具和資源的存取權。 此解決方案會執行重要基礎結構層部署的步驟，讓您的工作者無論身在何處，都能夠完成最佳工作。
+
+允許員工遠端辦公對許多組織達到以下目的非常重要:
 
 - 節省辦公室空間。
 - 聘用並留住不願意調派的工作人員。
@@ -125,8 +128,6 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 5. [部署遠端工作者生產力應用程式和服務](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [訓練遠端工作者和處理使用上的意見反應](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![使用 Microsoft 365 強化遠端工作人員的步驟](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![使用 Microsoft 365 設定遠端工作基礎結構的步驟](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-如需 Microsoft 所提供、有關支援遠端工作者的最新資訊，請參閱[啟用 Microsoft Teams 混合式工作網站](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) (英文)。
-
-若要瞭解虛構但代表性多國組織如何提升其遠端工作者的能力，請參閱 [針對遠端和辦公室工作的 Contoso COVID-19 回應和基礎架構](contoso-remote-onsite-work.md)。
+若要了解虛構但有代表性的多國組織如何設定其遠端工作基礎結構，請參閱 [針對遠端和辦公室工作的 Contoso COVID-19 回應和基礎架構](contoso-remote-onsite-work.md)。

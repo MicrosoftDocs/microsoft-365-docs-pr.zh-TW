@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860794"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246462"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用即時回應調查裝置上的實體
 
@@ -44,14 +44,14 @@ Live response 的設計目的是讓您的安全性作業小組收集法律資料
 - 執行基本和高級命令，在裝置上執行調查工作。
 - 下載檔案，例如惡意程式碼範例和 PowerShell 腳本的結果。
 - 在背景 (new！ ) 中下載檔案。
-- 將 PowerShell 腳本或可執行檔上傳至文件庫，並在租使用者層級上的裝置上執行。
+- Upload PowerShell 腳本或可執行檔至文件庫，並在租使用者層級上的裝置上執行該腳本。
 - 採取或撤銷修正動作。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 在裝置上啟動會話之前，請先確定您符合下列需求：
 
-- **確認您正在執行支援的 Windows 版本**。 <br/>
+- **請確認您執行的是支援的 Windows 版本**。 <br/>
 裝置必須執行下列其中一個 Windows 版本
 
   - **Windows 10**
@@ -61,7 +61,7 @@ Live response 的設計目的是讓您的安全性作業小組收集法律資料
     - [版本 1803 (RS 4) ](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) 與 [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 與 [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
-  - **Windows Server 2019-僅適用于公開預覽**
+  - **Windows伺服器 2019-僅適用于公開預覽**
     - 版本1903或 (隨 [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) 更新版本 
     - 版本 1809 (，含 [KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818)) 
 
@@ -101,20 +101,20 @@ Live response 的設計目的是讓您的安全性作業小組收集法律資料
 ## <a name="live-response-dashboard-overview"></a>Live response 儀表板一覽
 當您在裝置上啟動即時回應會話時，儀表板會開啟。 儀表板提供會話的相關資訊，如下所示： 
 
-- 建立會話的人員
+- 神秘建立會話
 - 啟動會話時
 - 會話的持續時間
 
 儀表板也可讓您存取：
 - 中斷連線會話
-- 將檔案上傳至文件庫 
+- Upload 檔案至文件庫 
 - 命令主控台
 - 命令記錄檔
 
 
 ## <a name="initiate-a-live-response-session-on-a-device"></a>在裝置上啟動即時回應會話 
 
-1. 登入 Microsoft Defender 安全中心。
+1. 登入 Microsoft Defender 資訊安全中心。
 
 2. 流覽至 [裝置] 清單頁面，然後選取要調查的裝置。 隨即會開啟 [裝置] 頁面。
 
@@ -143,7 +143,6 @@ Live response 的設計目的是讓您的安全性作業小組收集法律資料
 |`connect` | 啟動裝置的即時回應會話。 |
 |`connections` | 顯示所有使用中的連線。 |
 |`dir` | 顯示目錄中的檔案及子目錄清單。 |
-|`download <file_path> &` | 會在背景中下載檔案。 |
 |`drivers` |  顯示裝置上安裝的所有驅動程式。 |
 |`fg <command ID>` | 將指定的工作置於前臺，使其成為目前工作。 <br> 附注： fg 採用工作中提供的「命令識別碼」，而不是 PID |
 |`fileinfo` | 取得檔案的相關資訊。 |
@@ -173,7 +172,7 @@ Live response 的設計目的是讓您的安全性作業小組收集法律資料
 
 ## <a name="use-live-response-commands"></a>使用即時回應命令
 
-您可以在主控台中使用的命令遵循與 [Windows 命令](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)類似的原則。
+您可以在主控台中使用的命令遵循與[Windows 命令](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)類似的原則。
 
 Advanced 命令提供一組更為強大的動作，可讓您採取更強大的動作，例如下載和上傳檔案、在裝置上執行腳本，以及對實體採取修正動作。
 
@@ -198,9 +197,9 @@ Advanced 命令提供一組更為強大的動作，可讓您採取更強大的�
 以下為一些範例：
 
 
-|命令  |其用途  |
+|命令  |功能  |
 |---------|---------|
-|`Download "C:\windows\some_file.exe" &`     |開始在背景中下載名為 *some_file.exe* 的檔案。         |
+|`getfile "C:\windows\some_file.exe" &`     |開始在背景中下載名為 *some_file.exe* 的檔案。         |
 |`fg 1234`     |會傳回具有命令識別碼 *1234* 至前景的下載。         |
 
 
@@ -214,7 +213,7 @@ Live response 允許執行 PowerShell 腳本，但是您必須先將檔案放入
 
 #### <a name="to-upload-a-file-in-the-library"></a>上傳文件庫中的檔案
 
-1. 按一下 **[將檔案上傳至文件庫**]。 
+1. 按一下 [ **Upload 檔案至文件庫**]。 
 
 2. 按一下 **[流覽]** 並選取檔案。
 
@@ -234,16 +233,6 @@ Live response 允許執行 PowerShell 腳本，但是您必須先將檔案放入
 
 >[!WARNING]
 >使用此快捷方式不會停止代理端中的命令。 它只會取消入口網站中的命令。 這樣一來，在取消變更時，"修正" 作業可能會繼續進行。 
-
-### <a name="automatically-run-prerequisite-commands"></a>自動執行必要條件命令
-
-有些命令會執行必要條件命令。 如果您未執行必要條件命令，您會收到錯誤。 例如，執行此 `download` 命令但不 `fileinfo` 會傳回錯誤。
-
-您可以使用自動旗標自動執行必要命令，例如：
-
-```console
-getfile c:\Users\user\Desktop\work.txt -auto
-```
 
 ## <a name="run-a-powershell-script"></a>執行 PowerShell 腳本 
 

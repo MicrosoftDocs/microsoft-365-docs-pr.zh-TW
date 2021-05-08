@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 瞭解如何使用 OneDrive 和小組網站進行 Microsoft 365 儲存區和 Microsoft 365 檔案共用。
-ms.openlocfilehash: aa85789b950965a33c07214b5eaebf827ed8cc92
-ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
+ms.openlocfilehash: 8b100100ca91d1b904ab029a8e67602cb6111900
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49525566"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274397"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在 Microsoft 365 中設定檔儲存與共享
 
@@ -44,7 +44,7 @@ ms.locfileid: "49525566"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../../business-video/index.yml)。
 
 ## <a name="microsoft-365-document-storage-and-management"></a>「Microsoft 365 檔儲存與管理」
 
@@ -204,3 +204,11 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
   - [在 iPhone 或 iPad 上使用 Microsoft 365 安裝和設定 Office](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
 
   - [在 Windows Phone 上使用 Microsoft 365 設定 Office](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
+
+## <a name="related-content"></a>相關內容
+
+ (文章) 中[新增您訂閱的儲存空間](../../commerce/add-storage-space.md)
+
+[與 Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (Video) 共用檔案和資料夾
+
+[自訂您的小組網站以進行檔案儲存和共用](customize-team-site.md) (文章) 

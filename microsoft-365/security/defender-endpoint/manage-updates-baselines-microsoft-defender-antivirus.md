@@ -1,13 +1,13 @@
 ---
-title: 管理 Microsoft Defender 防毒軟體更新及套用基準
-description: 管理 Microsoft Defender 防毒軟體如何接收保護和產品更新。
+title: 管理 Microsoft Defender 防病毒更新並套用基準
+description: 管理 Microsoft Defender 防病毒接收保護和產品更新的方式。
 keywords: 更新，安全性基準，保護，排程更新，強制更新，行動更新，wsus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -16,70 +16,71 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 92f903f750ea5e7f2cb971b535c50bfecced65a2
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/06/2021
+ms.openlocfilehash: 22a173d39c3ab8d1afd91a33b05e02e58da24aaa
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242309"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274553"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
+# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防病毒更新並套用基準
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender 防毒軟體
 
-有兩種與 Microsoft Defender 防毒軟體保持最新狀態相關的更新：
+有兩種與保持 Microsoft Defender 防病毒的更新相關的更新類型：
 
 - 安全性智慧更新
 - 產品更新
 
 > [!IMPORTANT]
-> 將 Microsoft Defender 防毒軟體保持在最新狀態，是確保您的裝置具備防範新惡意程式碼和攻擊技巧所需的最新技術和功能。
+> 將 Microsoft Defender 防病毒保持在最新狀態，可確保您的裝置具有最新的技術和功能，以防範新的惡意程式碼和攻擊技術。
 > 
-> 即使在[被動模式下](./microsoft-defender-antivirus-compatibility.md)執行 Microsoft Defender 防毒軟體，也請務必更新防防毒保護。
+> 即使 Microsoft Defender 防病毒是以 [被動模式](./microsoft-defender-antivirus-compatibility.md)執行，也請務必更新防防毒保護。
 > 
-> 若要查看最新的引擎、平臺及簽章日期，請流覽[Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
+> 若要查看最新的引擎、平臺及簽章日期，請造訪 [Microsoft Defender 防病毒和其他 microsoft 反惡意軟體的安全性智慧更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
 
 ## <a name="security-intelligence-updates"></a>安全性智慧更新
 
-Microsoft Defender 防毒軟體使用[雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md) (也稱為 Microsoft Advanced protection 服務或對應) ，定期下載安全性情報更新，以提供保護。
+Microsoft Defender 防病毒使用 [雲端傳送的保護](cloud-protection-microsoft-defender-antivirus.md) (也稱為 Microsoft Advanced protection 服務或對應) ，定期下載安全性情報更新，以提供保護。
 
 > [!NOTE]
 > 更新會在下列 KB 編號之下發行：  
-> Microsoft Defender 防毒軟體： KB2267602  
+> Microsoft Defender 防毒程式： KB2267602  
 > System Center Endpoint Protection： KB2461484
 
-雲端傳送保護功能永遠都是開啟的，且需要網際網路連線才能運作。 安全智慧更新會在排程的節奏上進行， (可透過原則) 設定。 如需詳細資訊，請參閱[在 Microsoft Defender 防毒軟體中使用 Microsoft 雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)。 
+雲端傳送保護功能永遠都是開啟的，且需要網際網路連線才能運作。 安全智慧更新會在排程的節奏上進行， (可透過原則) 設定。 如需詳細資訊，請參閱 [在 Microsoft Defender 防毒軟體中使用 microsoft 雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)。 
 
-如需最近的安全性情報更新清單，請參閱[Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
+如需最近的安全性智慧更新清單，請參閱 [Microsoft Defender 防毒軟體和其他 microsoft 反惡意軟體的安全性智慧更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
 
 引擎更新包含在安全性智慧更新中，並以每月的節奏發行。
 
 ## <a name="product-updates"></a>產品更新
 
-Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (稱為 *平臺更新*) ，而且會在 Windows 10 版本的情況下收到重要的功能更新。
+Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (稱為 *平臺更新*) ，而且將會收到 Windows 10 版本的主要功能更新。
 
 您可以透過下列其中一種方法來管理更新的發佈： 
 
-- [Windows伺服器更新服務 (WSUS) ](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+- [Windows Server Update Service (WSUS) ](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 - [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
-- 您用來部署 Microsoft 和 Windows 網路中端點更新的常用方法。
+- 您用來將 Microsoft 和 Windows 更新部署至網路中端點的常用方法。
 
-如需詳細資訊，請參閱[管理來源以取得 Microsoft Defender 防毒軟體保護更新](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
+如需詳細資訊，請參閱 [管理 Microsoft Defender 防病毒防護更新的來源](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
 
 > [!NOTE]
 > 每月更新都會以階段發行，導致您的 [視窗伺服器更新服務](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)中顯示多個套件。
 
 ## <a name="monthly-platform-and-engine-versions"></a>每月平臺及引擎版本
 
-如需如何更新或安裝平臺更新的資訊，請參閱[Windows Defender 的反惡意程式碼平臺更新](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)。
+如需如何更新或安裝平臺更新的資訊，請參閱 [Windows Defender 反惡意程式碼平臺的更新](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)。
 
 我們所有的更新均包含 
 - 效能改進;
 - 可維護性改進;和 
--  (Cloud Microsoft 365 Defender) 的整合增強功能。
+- 整合功能 (Cloud，Microsoft 365 Defender) 。
 <br/>
 <details>
 <summary> 四月-2021 (平臺： 4.19.2104.9 |Engine： 1.1.18100.5) </summary>
@@ -153,9 +154,9 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 
 - 外殼代碼利用偵測增強功能
 - 增強認證竊取嘗試的知名度
-- Microsoft Defender 防毒軟體服務中的 antitampering 功能的增強功能
+- Microsoft Defender 防病毒服務中的 antitampering 功能增強功能
 - 改進支援 ARM x64 模擬
-- 修正：在即時保護執行初始偵測後，威脅史中仍會保留 EDR 封鎖通知
+- 修正：在即時保護執行初始偵測後，EDR 封鎖通知會保留在威脅史中
 
 ### <a name="known-issues"></a>已知問題
 無已知問題  
@@ -238,7 +239,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 - 改進的記憶體掃描行為監控
 - 改進的宏資料流程掃描
 - 新增 `AMRunningMode` 至 Get-MpComputerStatus PowerShell Cmdlet
-- 會忽略[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) 。 Microsoft Defender 防毒軟體會在偵測其他防毒程式時自動開啟自身。
+- 會忽略[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) 。 當 Microsoft Defender 防毒程式偵測到其他防毒程式時，會自動自行關閉。
 
 
 ### <a name="known-issues"></a>已知問題
@@ -352,7 +353,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 - 改進處理常式封鎖的通知
    
 ### <a name="known-issues"></a>已知問題
-[**Fixed**]Microsoft Defender 防毒軟體會在執行掃描時略過檔案。
+[**Fixed**]Microsoft Defender 防毒程式正在執行掃描時略過檔案。
 
 <br/>
 </details>
@@ -388,7 +389,7 @@ Engine： **1.1.16700.2**
      
 ### <a name="whats-new"></a>新增功能
 
-- 具有 Exchange 的 WS2016 上的固定 BSOD
+- WS2016 with Exchange 上的固定 BSOD
 - 當 TMP 重新導向至網路路徑時支援平臺更新
 - 平臺和引擎版本已新增至 [WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - 將緊急特徵碼更新擴充為 [被動模式](./microsoft-defender-antivirus-compatibility.md)
@@ -396,7 +397,7 @@ Engine： **1.1.16700.2**
    
 ### <a name="known-issues"></a>已知問題
 
-[**Fixed**] 採用 [新式待機模式](/windows-hardware/design/device-experiences/modern-standby)的裝置可能會在 Windows Defender 篩選器驅動程式遇到中斷，從而導致保護的缺口。  受影響的機器會因尚未更新為最新的反惡意程式碼平臺而向客戶呈現。  
+[**Fixed**] 採用 [新式待機模式](/windows-hardware/design/device-experiences/modern-standby) 的裝置可能會在 Windows Defender 篩選器驅動程式發生掛起，以導致保護的缺口。  受影響的機器會因尚未更新為最新的反惡意程式碼平臺而向客戶呈現。  
 <br/>
 > [!IMPORTANT]
 > 此更新如下：
@@ -404,7 +405,7 @@ Engine： **1.1.16700.2**
 > - 具有懸掛問題的系統重新開機標誌;
 > - 會在4月2020內重新發佈，而且不會被更新的更新取代以保留未來的可用性;  
 > - 因重新開機要求而分類為更新和
-> - 只會以[Windows 更新](https://support.microsoft.com/help/4027667/windows-10-update)提供。
+> - 只會以 [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update)提供。
 <br/>
 </details>
 
@@ -430,19 +431,19 @@ Engine： **1.1.17000.7**
 </details>
 
 
-## <a name="microsoft-defender-antivirus-platform-support"></a>Microsoft Defender 防毒軟體平臺支援
+## <a name="microsoft-defender-antivirus-platform-support"></a>Microsoft Defender 防病毒平臺支援
 平臺和引擎更新是以每月節奏提供。 若要完全支援，請使用最新的平臺更新來保持最新狀態。 我們的支援結構是動態的，而且會根據最新平臺版本的可用性而演變成兩個階段：
 
 - **安全性和重要更新服務階段** -執行最新的平臺版本時，您將有資格收到反惡意程式碼平臺的安全性和重要更新。
  
 - **僅限) 階段的技術支援 (** 。發行新的平臺版本之後，支援較舊版本 (n-1) 只會降低技術支援。 不再支援非 N-2 版本的平臺。
 
-\*將繼續提供技術支援，以供從 Windows 10 發行版本本升級 (請參閱[Windows 10 版本隨附的平臺版本](#platform-version-included-with-windows-10-releases)) 至最新的平臺版本。
+\* 系統會繼續提供技術支援，以供從 Windows 10 發行版本本升級 (請參閱 [windows 10 版本隨附的平臺版本](#platform-version-included-with-windows-10-releases)) 至最新版平臺。
 
 在技術支援 (只有) 階段，將會透過 Microsoft 客戶服務 & 支援和 Microsoft 受管理的支援服務， (例如 Premier Support) ，供應商業上合理的支援事件。 如果支援事件需要升級開發以取得進一步的指導方針、需要非安全性更新，或需要安全性更新，則系統會要求客戶升級至最新的平臺版本或中級更新 ( * ) 。
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>Windows 10 版本隨附的平臺版本
-下表提供隨附于最新 Windows 10 版本的 Microsoft Defender 防毒軟體平臺和引擎版本：    
+下表提供 Microsoft Defender 防病毒平臺和引擎版本，隨附于最新的 Windows 10 版本：    
 
 |Windows 10 版本  |平臺版本  |引擎版本 |支援階段 |
 |:---|:---|:---|:---|
@@ -455,15 +456,29 @@ Engine： **1.1.17000.7**
 |1703 (RS2)  |4.11.15603.2 |1.1.13504.0 | 技術升級只支援 ()  |
 |1607 (RS1)  |4.10.14393.3683 |1.1.12805.0 | 技術升級只支援 ()  |  
 
-如需 Windows 10 版本資訊，請參閱[Windows 生命週期事實資料表](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。
+如需 Windows 10 版本資訊，請參閱 [Windows 生命週期事實資料表](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>更新部署映像服務與管理 (DISM) 
 
-建議您更新 Windows 10 (Enterprise、Pro 及 Home edition) 、Windows Server 2019，以及 Windows Server 2016 OS 安裝影像與最新的防病毒和反惡意軟體更新。 將您的作業系統安裝影像保持在最新狀態，可協助避免保護方面的缺口。 
+建議您更新 Windows 10 (Enterprise、Pro 和 Home edition) 、Windows Server 2019 及 Windows Server 2016 OS 安裝影像，並提供最新的防病毒和反惡意軟體更新。 將您的作業系統安裝影像保持在最新狀態，可協助避免保護方面的缺口。 
 
-如需詳細資訊，請參閱[Microsoft Defender update for Windows 作業系統安裝影像](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
+如需詳細資訊，請參閱 [Microsoft Defender update For Windows 作業系統安裝映射](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
+<summary>1.1.2105.01</summary>
+
+&ensp;套件版本： **1.1.2105.01**    
+&ensp;平臺版本： **4.18.2103.7**   
+&ensp;引擎版本： **1.1.18100.6**  
+&ensp;簽章版本： **1.339.42.0**    
+    
+### <a name="fixes"></a>修復
+- 無
+
+### <a name="additional-information"></a>其他資訊
+- 無  
+<br/>
+</details><details>
 <summary>1.1.2104.01</summary>
 
 &ensp;套件版本： **1.1.2104.01**    
@@ -545,7 +560,7 @@ Engine： **1.1.17000.7**
 - 無
 
 ### <a name="additional-information"></a>其他資訊
-- 更新 Microsoft Defender 防毒軟體簽章  
+- 重新整理的 Microsoft Defender 防毒軟體簽名  
 <br/>
 </details><details>
 <summary>1.1.2011.01</summary>
@@ -581,7 +596,7 @@ Engine： **1.1.17000.7**
 
 | 文章 | 描述  |
 |:---|:---|
-|[適用于 Windows 作業系統安裝映射的 Microsoft Defender 更新](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | 查看您 OS 安裝映射的反惡意軟體更新軟體包 (WIM 和 VHD 檔案) 。 取得 Windows 10 (Enterprise、Pro 和家用版的 Microsoft Defender 防毒軟體更新) 、Windows Server 2019 及 Windows Server 2016 安裝影像。  |
+|[Microsoft Defender update for Windows 作業系統安裝映射](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | 查看您 OS 安裝映射的反惡意軟體更新軟體包 (WIM 和 VHD 檔案) 。 取得 Windows 10 (企業版、專業版和家用版的 Microsoft Defender 防病毒更新) 、Windows Server 2019 及 Windows Server 2016 安裝影像。  |
 |[管理如何下載及套用保護更新](manage-protection-updates-microsoft-defender-antivirus.md) | 保護更新可透過許多來源傳遞。 |
 |[管理應下載及套用防護更新的時間](manage-protection-update-schedule-microsoft-defender-antivirus.md) | 您可以排程應下載保護更新的時間。 |
 |[管理已過期端點的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md) | 如果端點未接更新或排程的掃描，您可以在下次使用者登入時強制更新或掃描。 |

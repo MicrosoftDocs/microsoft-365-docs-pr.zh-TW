@@ -7,21 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 9fc51682b659670a21c3c293ea8996beb228802a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 53b1e1474e0870388ec1cfaf214190eb0bdf7beb
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765068"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274597"
 ---
-# <a name="configure-behavioral-heuristic-and-real-time-protection"></a>設定行為、啟發式和即時保護
+# <a name="configure-behavioral-heuristic-and-real-time-protection"></a>設定行為、啟發學習法和即時保護
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,5 +47,5 @@ Microsoft Defender 防病毒使用數種方法來提供威脅防護：
 
  主題 | 描述
 ---|---
-[偵測並封鎖可能有害的應用程式](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | 偵測並封鎖您網路中可能不需要的應用程式，例如廣告軟體、瀏覽器修飾符和工具列，以及惡意或虛假的防病毒應用程式
+[偵測並封鎖潛在的垃圾應用程式](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | 偵測並封鎖您網路中可能不需要的應用程式，例如廣告軟體、瀏覽器修飾符和工具列，以及惡意或虛假的防病毒應用程式
 [啟用並設定 Microsoft Defender 防防毒保護功能](configure-real-time-protection-microsoft-defender-antivirus.md) | 啟用和設定即時保護、啟發及其他永不啟用的 Microsoft Defender 防病毒監控功能

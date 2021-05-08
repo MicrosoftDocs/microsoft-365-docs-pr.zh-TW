@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f57d14427ef68280a065489e068955db9e5045a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18afd4aa160ec345839d23719d1b3fcce21654ec
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934798"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246353"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上 Microsoft Defender for Endpoint 的問題疑難排解
 
@@ -51,11 +51,11 @@ ms.locfileid: "51934798"
 
 **原因：**
 
-您的裝置上安裝了舊版本的「Microsoft 驗證者」應用程式。
+您的裝置上安裝了舊版本的「Microsoft Authenticator」應用程式。
 
 **解決 方案：**
 
-從 Google Play Store 安裝最新版本和 [Microsoft 驗證](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) 者，然後再試一次
+從 Google Play Store 安裝最新版本和[Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) ，然後再試一次
 
 ## <a name="sign-in-failed---invalid-license"></a>登入失敗-不正確授權
 
@@ -72,6 +72,10 @@ ms.locfileid: "51934798"
 **解決 方案：**
 
 請與您的系統管理員聯繫以取得協助。
+
+## <a name="report-unsafe-site"></a>報告不安全的網站
+
+網路釣魚網站會為了取得您的個人或財務資訊，模仿可信的網站。 如果您想要報告可能是網路釣魚網站的網站，請造訪 [ [提供有關網路保護的意見](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) 反應] 頁面。
 
 ## <a name="phishing-pages-arent-blocked-on-some-oem-devices"></a>有些 OEM 裝置上沒有封鎖網頁網路頁面
 
