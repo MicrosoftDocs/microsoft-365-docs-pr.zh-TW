@@ -1,5 +1,5 @@
 ---
-title: 關於 Microsoft 365 Admin 行動裝置應用程式
+title: 關於 Microsoft 365 系統管理員行動裝置應用程式
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,21 +22,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 取得 Microsoft 365 系統管理應用程式，並瞭解如何從您的手機或平板電腦管理您的線上組織。
-ms.openlocfilehash: 20a44501db43b8cba7f31bcfded039b00f3ab341
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: 取得 Microsoft 365 的系統管理應用程式，並瞭解如何從您的手機或平板電腦管理您的線上組織。
+ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023938"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244017"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>關於 Microsoft 365 admin 行動裝置應用程式
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>關於 Microsoft 365 系統管理員行動裝置應用程式
 
-您的系統管理員通常在旅途中？ 即使您沒有，也可能需要從您的手機或平板電腦管理 Microsoft 365。 請參閱免費的 [microsoft 365 系統管理應用程式](https://go.microsoft.com/fwlink/?LinkID=627216)，這是以 web 為基礎的 microsoft 365 系統管理中心的完美配套。 您可以從 [Apple 應用程式存放](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)區，以及從 [Google Play 商店](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)下載應用程式。
+您的系統管理員通常在旅途中？ 即使您沒有，也可能需要從您的手機或平板電腦管理 Microsoft 365。 請參閱免費的[Microsoft 365 系統管理應用程式](https://go.microsoft.com/fwlink/?LinkID=627216)，以網路為基礎的 Microsoft 365 系統管理中心。 您可以從 [Apple 應用程式存放](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)區，以及從 [Google Play 商店](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)下載應用程式。
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="螢幕擷取畫面：系統管理行動應用程式的首頁，顯示搜尋、訊息中心、健康情況及快速連結":::
 
-系統管理應用程式有許多功能可讓您在行動裝置或平板電腦裝置上，當您無法前往電腦時，管理 Microsoft 365。 以下是您可以從應用程式執行的一些工作清單：
+系統管理應用程式有許多功能可讓您從行動裝置或平板電腦裝置管理 Microsoft 365，但無法前往電腦。 以下是您可以從應用程式執行的一些工作清單：
 
 - **管理使用者和裝置** 新增或編輯使用者、重設使用者的密碼、指派角色、封鎖使用者、刪除使用者、管理別名、指派授權、擦除裝置資料等等。
 - **管理群組** 新增群組、新增或移除群組中的使用者。
@@ -70,18 +70,18 @@ ms.locfileid: "52023938"
 若要使用此應用程式，您必須具有系統管理員許可權，且具有下列其中一個 Microsoft 365 訂閱的有效訂閱：
 
 - Microsoft 365 Apps 企業版
-- Microsoft 365 商務應用程式
+- 商務 Microsoft 365 Apps
 - Microsoft 365 商務進階版
 - Microsoft 365 商務標準版
 - Microsoft 365 商務基本版
 - Microsoft 365 E3/E5
 - Office 365： E1，E3/E5
 - Exchange Online 計畫
-- Business plan 的 OneDrive
+- business plan 的 OneDrive
   
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>我可以搭配 Microsoft 365 系列訂閱使用此應用程式嗎？
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>我可以搭配 Microsoft 365 家用版訂閱使用此應用程式嗎？
 
-否，該應用程式無法與 Microsoft 365 系列或 Microsoft 365 個人版訂閱搭配使用。
+否，該應用程式無法與 Microsoft 365 家用版或 Microsoft 365 個人版訂閱一起運作。
 
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>此 App 能夠在組織啟用目錄同步處理的情況下正常運作嗎？
 
@@ -89,7 +89,7 @@ ms.locfileid: "52023938"
   
 ### <a name="what-languages-are-supported-by-the-app"></a>此 App 支援哪些語言？
 
-該應用程式支援以 web 為基礎的 Microsoft 365 系統管理中心所支援的所有39語言。 若要變更語言，請從系統管理中心的左側流覽功能表移至 [**設定**  >  **語言**]，或選取 [系統管理行動應用程式] 首頁的 [**快速連結**] 區段中的 [**語言**] 圖示。
+app 支援以 web 為基礎的 Microsoft 365 系統管理中心所支援的所有39語言。 若要變更語言，請從系統管理中心的左導覽功能表移至 **設定**  >  **語言**，或選取「管理行動應用程式」首頁的 [**快速連結**] 區段中的 [**語言**] 圖示。
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>如何與組織的其他人員共用服務事件與郵件？
 
@@ -105,12 +105,12 @@ ms.locfileid: "52023938"
 
 1. 關閉並重新開啟 App。
 1. 解除安裝並重新安裝 App。 確定您在最新版本的應用程式。
-1. 如果您已在裝置上安裝 Microsoft 驗證者或公司入口網站，請嘗試重新安裝或更新至最新版本。
+1. 如果您已在裝置上安裝 Microsoft Authenticator 或公司入口網站，請嘗試重新安裝或更新為最新版本。
 1. 如果仍無法運作，您可以在 feedback365@microsoft.com 以電子郵件傳送給我們，告訴我們。
 
 ### <a name="how-do-i-manage-notifications-in-the-app"></a>如何在應用程式中管理通知？
 
-從左導覽功能表，移至 [**設定**  >  **通知**]。 您可以在這裡管理服務健康情況、訊息中心和計費通知。
+從左導覽功能表，移至 **設定**  >  **通知**]。 您可以在這裡管理服務健康情況、訊息中心和計費通知。
 
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>如果仍無法解決我的問題該怎麼辦？
 
@@ -118,4 +118,4 @@ ms.locfileid: "52023938"
   
 ## <a name="related-content"></a>相關內容 
 
-[Microsoft 365 for business 訓練](../../business-video/index.yml) 影片 (連結) 
+[Microsoft 365 商務訓練](../../business-video/index.yml)影片 (連結] 頁面) 

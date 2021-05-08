@@ -26,12 +26,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 深入瞭解 Office 365 的註冊程式之前，請先瞭解您需要瞭解的知識。
 ms.date: 03/17/2021
-ms.openlocfilehash: 37cbe20a5cc1a7506e8db218c3e9ffe2b4e64478
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 77fe0252a267b13fda19a6842ce0e07b1b8307b1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107023"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244005"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何註冊系統管理員協助
 
@@ -136,4 +136,4 @@ ms.locfileid: "52107023"
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 商務訓練](../../business-video/index.yml)影片 (連結) 
+[Microsoft 365 商務訓練](../../business-video/index.yml)影片 (連結] 頁面) 

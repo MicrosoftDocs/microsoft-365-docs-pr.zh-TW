@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 建立共用信箱之後，您會想要設定其使用者的某些設定，例如電子郵件轉寄及自動回復。 稍後，您可能想要變更其他設定，例如信箱名稱或成員。
-ms.openlocfilehash: 2d0998ba2bdc95a9f78f59527bd9bd6fa98b4c45
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01d5aaa686e1d64c9ea7d89913d8208f779dcfd1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915911"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243969"
 ---
 # <a name="configure-shared-mailbox-settings"></a>設置共用信箱的設定
 
@@ -34,23 +34,7 @@ ms.locfileid: "50915911"
 
 ## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a>變更共用信箱的名稱或電子郵件別名，或變更主要電子郵件地址
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，移至 **[群組]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共用信箱]</a> 頁面。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
 
 2. 選取您要編輯的共用信箱，然後選取 [名稱]、[**電子郵件] 和 [電子郵件別名**] 旁邊的 [**編輯**]。
 
@@ -62,23 +46,7 @@ ms.locfileid: "50915911"
 
 您不需要將授權指派給共用信箱，即可轉寄傳送給它的電子郵件。 您可以將郵件轉寄至任何有效的電子郵件地址或通訊群組清單。
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，移至 **[群組]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共用信箱]</a> 頁面。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
 
 2. 選取您要編輯的共用信箱，然後選取 [ **電子郵件** 轉寄] [ \> **編輯**]。
     
@@ -88,29 +56,13 @@ ms.locfileid: "50915911"
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>從共用信箱傳送自動回覆
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，移至 **[群組]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共用信箱]</a> 頁面。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
 
 2. 選取您要編輯的共用信箱，然後選取 [ **自動回復**] [ \> **編輯**]。
     
 3. 將切換設定為 [ **開啟**]，然後選擇是否要將回復傳送給組織內或組織外的人員。
 
-4. 輸入您想要傳送給組織內人員的回覆。 您只能加入文字而不能加入影像。
+4. 輸入您想要傳送給組織內人員的回覆。您只能加入文字而不能加入影像。
 
 5. 如果您 *也* 想要將回復傳送給組織外部的人員，請選取您要取得回復的核取方塊，然後輸入文字。 There's no way to only send to people outside your organization but not to people inside your organization.
 
@@ -125,23 +77,7 @@ ms.locfileid: "50915911"
 
 ## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>選擇共用信箱可用於存取 Microsoft 電子郵件的應用程式
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，移至 **[群組]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共用信箱]</a> 頁面。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
 
 2. 選取您要編輯的共用信箱，然後選取 [ **電子郵件應用程式** \> **編輯**]。
 
@@ -154,23 +90,7 @@ ms.locfileid: "50915911"
 
 若要深入瞭解訴訟暫止，請參閱 [建立訴訟暫](../../compliance/create-a-litigation-hold.md)止。
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，移至 **[群組]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共用信箱]</a> 頁面。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
 
 2. 選取您要編輯的共用信箱，然後選取 [ **訴訟暫** 止] [ \> **編輯**]。
 
@@ -183,23 +103,7 @@ ms.locfileid: "50915911"
 
 ## <a name="add-or-remove-members"></a>新增或移除成員
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，移至 **[群組]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共用信箱]</a> 頁面。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
 
 2. 選取您要編輯的共用信箱，然後選取 [ **成員** \> **編輯**]。
 
@@ -211,23 +115,7 @@ ms.locfileid: "50915911"
 
 ## <a name="add-or-remove-permissions-of-members"></a>新增或移除成員的許可權
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，移至 **[群組]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共用信箱]</a> 頁面。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
 
 2. 選取您要編輯的共用信箱，然後選取 [ **成員** \> **自訂許可權**]。
 
@@ -243,23 +131,7 @@ ms.locfileid: "50915911"
 
 如果您選擇不在全域通訊清單中顯示共用信箱，該信箱不會出現在您組織的通訊清單中，但仍然會收到傳送給它的電子郵件。 
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，移至 **[群組]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">[共用信箱]</a> 頁面。
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">在系統管理中心</a>中，移至 **[群組]** > **[共用信箱]** 頁面。 
-
-::: moniker-end
 
 2. 選取您要編輯的共用信箱，然後選取 [ **在全域通訊清單** 編輯] 中的 [顯示] \> ****。
 
@@ -268,16 +140,16 @@ ms.locfileid: "50915911"
 4. 選取 [儲存]。
 
 > [!NOTE]
-> 從通訊清單中隱藏共用信箱，將無法將隱藏的信箱新增至他們的 Outlook 設定檔，直到共用信箱再次顯示在通訊清單中為止。 
+> 從通訊清單中隱藏共用信箱，將無法將隱藏的信箱新增至其 Outlook 設定檔，直到共用信箱再次顯示在通訊清單中為止。 
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[關於共用信箱](about-shared-mailboxes.md)
+[關於共用信箱](about-shared-mailboxes.md) (文章) 
 
-[建立共用信箱](create-a-shared-mailbox.md)
+[建立共用信箱](create-a-shared-mailbox.md) (文章) 
 
-[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md)
+[將使用者信箱轉換成共用信箱](convert-user-mailbox-to-shared-mailbox.md) (文章) 
 
-[從共用信箱中移除授權](remove-license-from-shared-mailbox.md)
+[從共用信箱中移除授權](remove-license-from-shared-mailbox.md) (文章) 
 
-[解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md)
+[解決共用信箱](resolve-issues-with-shared-mailboxes.md) (文章) 的問題
