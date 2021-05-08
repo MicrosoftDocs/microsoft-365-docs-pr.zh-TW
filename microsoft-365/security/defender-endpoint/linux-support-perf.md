@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 998d8c500613ffa9fc6d790535e555ff9503f590
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933214"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281014"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>疑難排解 Linux 上 Microsoft Defender for Endpoint 的效能問題
 
@@ -148,3 +148,6 @@ ms.locfileid: "51933214"
 5. 針對影響效能問題及重新啟用即時保護的處理常式或磁片位置，設定 Linux 上的 Microsoft Defender for Endpoint with 排除專案。
 
     如需詳細資訊，請參閱 [在 Linux 上設定及驗證 Microsoft Defender For Endpoint 的排除](linux-exclusions.md)專案。
+
+## <a name="see-also"></a>另請參閱
+- [調查代理程式健康情況問題](health-status.md)

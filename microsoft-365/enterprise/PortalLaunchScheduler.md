@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: 1e62446054f91ff5d2c99520ca65c1681d899ac9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: d7ea64b3a9fef25ddfde43e61624e49d2b7d4352
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272053"
+ms.locfileid: "52280966"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用 SharePoint 入口網站啟動計畫程式啟動入口網站
 
@@ -40,7 +40,7 @@ ms.locfileid: "52272053"
 
 
 > [!NOTE]
-> - 從2021年5月開始的目標版本客戶的「**設定** SharePoint 面板」首頁，可存取的功能，讓所有客戶都能使用此功能。2021
+> - 從 2021 2021 年5月開始的目標版本客戶的「**設定** SharePoint 面板」首頁，可以存取這項功能，並將在年7月後取得給所有客戶使用。
 > - 目前可以使用此工具的 PowerShell 版本
 > - 這項功能只可用於現代的 SharePoint 通訊網站上
 > - 您必須具有網站的網站擁有者許可權，才可自訂及排程入口網站的啟動

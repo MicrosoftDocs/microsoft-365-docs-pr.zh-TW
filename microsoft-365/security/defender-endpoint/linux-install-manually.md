@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c13138f3d80a95dbda3a899507f662c081831d94
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: c50efb11ee7f884be6788b90c14e7fc639d9b8ca
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259676"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281002"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>手動在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -407,3 +407,6 @@ Options:
 ## <a name="uninstallation"></a>卸載
 
 如需如何從用戶端裝置移除 Linux 上的 Endpoint Endpoint 的詳細資訊，請參閱 [Uninstall](linux-resources.md#uninstall) 。
+
+## <a name="see-also"></a>另請參閱
+- [調查代理程式健康情況問題](health-status.md)

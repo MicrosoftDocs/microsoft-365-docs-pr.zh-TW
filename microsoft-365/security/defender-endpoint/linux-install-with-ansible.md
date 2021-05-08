@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ff9834e2853c1745c20847f869bc2cba4e082e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 9cd544ca3d714ea46c74e10f8aba5e46dc0e1b35
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114267"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280990"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -98,7 +98,7 @@ ms.locfileid: "52114267"
 
 ## <a name="create-ansible-yaml-files"></a>建立 Ansible YAML 檔案
 
-建立加入行動手冊或工作的子任務或角色檔案。
+建立參與行動手冊或任務的子任務或角色檔案。
 
 - 建立上架任務 `onboarding_setup.yml` ：
 
@@ -282,3 +282,6 @@ ms.locfileid: "52114267"
 - [新增和移除 APT 存放庫](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
 - [管理 apt-套件](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
+
+## <a name="see-also"></a>另請參閱
+- [調查代理程式健康情況問題](health-status.md)

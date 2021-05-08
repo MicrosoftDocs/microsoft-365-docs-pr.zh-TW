@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: dc9881bf869ce013a2ff913baa97f9b7d3de9bcc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4532afc40c2324b77725d9ddad158587083e6e9b
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245813"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280945"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Microsoft Cloud for Enterprise Architects 圖例
 
@@ -34,7 +34,16 @@ IT 結構設計師在使用 Microsoft 雲端服務和平台設計組織的身分
   
 |**項目**|**描述**|
 |:-----|:-----|
-|[![Microsoft 雲端身分識別模型的縮圖影像](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf) \|[下載成 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.vsdx)   <br/>2020年8月更新 | 此模型包含：  <ul> <li> 使用 Microsoft 雲端識別的簡介 </li><li> Azure AD 的 IDaaS 功能 </li><li> 整合內部部署 Active Directory 網域服務 (AD DS) 使用 Azure AD 的帳戶 </li><li> 在 Azure 中放置目錄元件 IaaS </li><li> Azure 中工作負載的 AD DS 選項 IaaS </li></ul><br/>  <br/>|
+|[![Microsoft 雲端身分識別模型的縮圖影像](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf) \|[下載成 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.vsdx)   <br/>2020年9月更新 | 此模型包含：  <ul> <li> 使用 Microsoft 雲端識別的簡介 </li><li> Azure AD 的 IDaaS 功能 </li><li> 整合內部部署 Active Directory 網域服務 (AD DS) 使用 Azure AD 的帳戶 </li><li> 在 Azure 中放置目錄元件 IaaS </li><li> Azure 中工作負載的 AD DS 選項 IaaS </li></ul><br/>  <br/>|
+
+<a name="security"></a>
+### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft cloud security for enterprise architects
+
+IT 結構設計師在 Microsoft 雲端服務和平台中，需要瞭解哪些安全性資訊。
+  
+|**項目**|**描述**|
+|:-----|:-----|
+|[![Microsoft cloud security for enterprise 架構架構模型縮圖](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf) <br/> [Pdf](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf)  \| <br/>2021年4月更新 | 此模型包含： <ul><li>Microsoft 和客戶安全性責任</li><li>身分識別與裝置存取</li><li>威脅防護</li><li>資訊保護 </ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft cloud networking for enterprise architects
@@ -53,34 +62,17 @@ IT 結構設計師在使用 Microsoft 服務和平台時，有關混合雲端需
 |**項目**|**描述**|
 |:-----|:-----|
 |[![Microsoft 混合式雲端模型的縮圖影像](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](../downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_hybrid.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) \|[下載成 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx)     <br>2020年8月更新 | 此模型包含： <ul><li> Microsoft 的雲端產品 (SaaS、Azure PaaS 和 Azure IaaS) 及其共同元素 </li><li> Microsoft 雲端服務的混合式雲端架構 </li><li> Microsoft SaaS (Office 365)、Azure PaaS 和 Azure IaaS 的混合式雲端案例 </li></ul><br/>|
-   
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Microsoft Cloud 租用戶對租用戶移轉的架構方法 
 此系列的主題說明針對合併、併購、分割和其他案例下，可能會導致您移轉到新雲端租用戶的數個架構方法。 下列主題提供企業資源規劃的起始點指導方針。 
 
 |**項目**|**描述**|
 |:-----|:-----|
-|[![Teams 邏輯架構海報的縮圖影像](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>2020 年 10 月更新    |此模型包含： <ul><li>商務案例與架構方法的對應</li><li>設計考量</li><li>單一事件遷移流程範例</li><li>逐步遷移流程範例</li><li>承租人移動或分割流程範例</li></ul>|
-
-<a name="security"></a>
-### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft cloud security for enterprise architects
-
->[!Note]
->會修訂此模型。 請先查看此篇文章，以取得更新版本。
->
-
-<!--
-
-What IT architects need to know about security in Microsoft cloud services and platforms.
-  
-|**Item**|**Description**|
-|:-----|:-----|
-|[![Poster for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| <br/>Updated April 2021 | This model contains: <ul><li>Microsoft and customer security responsibilities</li><li>Identity and device access</li><li>Threat protection</li><li>Information protection </ul><br/>|
-
---> 
+|[![Microsoft cloud 承租人對租使用者遷移的縮圖影像](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>2021年2月更新    |此模型包含： <ul><li>商務案例與架構方法的對應</li><li>設計考量</li><li>單一事件遷移流程範例</li><li>逐步遷移流程範例</li><li>承租人移動或分割流程範例</li></ul>|
 
 <a name="attacks"></a>
-### 常見的攻擊和保護您組織的 Microsoft 功能可瞭解最常見的網路攻擊，以及 Microsoft 如何協助您的組織在攻擊的每一個階段。 
+### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>常見攻擊和保護您組織的 Microsoft 功能
+深入了解最常見的網路攻擊，以及 Microsoft 如何協助您的組織抵禦每個階段的攻擊。 
 
 |**項目**|**描述**|
 |:-----|:-----|

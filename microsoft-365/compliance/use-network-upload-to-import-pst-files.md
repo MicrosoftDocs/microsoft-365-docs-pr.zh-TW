@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 適用於系統管理員：了解如何使用網路上傳將多個 PST 檔案大量匯入 Microsoft 365 中的使用者信箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf7f471a4323c4c03f232e93d2f00b930e53aefe
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 6ff645589337260cd8e29d1e1d066abdf60c1f1a
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114339"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280918"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用網路上傳將組織的 PST 檔案匯入 Microsoft 365
 
@@ -173,7 +173,7 @@ ms.locfileid: "52114339"
 
 - 確認每個上傳到 Azure blob 之 PST 檔案的檔名 (以及子資料夾路徑名稱，如果您有採用)。 當您要在下一個步驟中建立 PST 對應檔案時，這項功能很有幫助，因為您必須指定每個 PST 檔案的資料夾路徑名稱及檔名。 驗證這些名稱有助於減少 PST 對應檔中的潛在錯誤。
 
-Microsoft Azure 儲存體總管位於 [預覽] 中。
+Azure 儲存體總管獨立版本應用程式已正式提供。 您可以使用下列程序中的連結下載最新版本。
   
 > [!IMPORTANT]
 > 您無法使用 Azure 儲存體總管來上傳或修改 PST 檔案。 使用 AzCopy 來匯入 PST 檔案是唯一支援的方法。 此外，您無法刪除已上傳到 Azure Blob 的 PST 檔案。 如果您嘗試刪除 PST 檔案，您會收到沒有必要權限的相關錯誤。 請注意，所有的 PST 檔案會自動從您的 Azure 儲存體刪除。 如果目前沒有進行中的匯入工作，則 **ingestiondata** 容器中的所有 PST 檔案都會在最近的匯入工作建立完成後 30 天刪除。
