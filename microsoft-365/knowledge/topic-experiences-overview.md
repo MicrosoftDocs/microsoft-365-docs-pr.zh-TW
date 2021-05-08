@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概觀。
-ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275193"
+ms.locfileid: "52281026"
 ---
-# <a name="microsoft-viva-topics-overview"></a><span data-ttu-id="aad6e-103">Microsoft Viva Topics 概觀</span><span class="sxs-lookup"><span data-stu-id="aad6e-103">Microsoft Viva Topics overview</span></span> 
+# <a name="microsoft-viva-topics-overview"></a><span data-ttu-id="f1f65-103">Microsoft Viva Topics 概觀</span><span class="sxs-lookup"><span data-stu-id="f1f65-103">Microsoft Viva Topics overview</span></span> 
 
-<span data-ttu-id="aad6e-104">Viva Topics 使用 Microsoft AI 技術、Microsoft 365、Microsoft Graph、搜尋和其他元件和服務，從 SharePoint 新式頁面和 Microsoft Search 開始，在使用者每天使用的 Microsoft 365 應用程式中將知識帶給使用者。</span><span class="sxs-lookup"><span data-stu-id="aad6e-104">Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in Microsoft 365 apps they use everyday, starting with SharePoint modern pages and Microsoft Search.</span></span>
+<span data-ttu-id="f1f65-104">Viva 主題使用 Microsoft AI 技術（Microsoft 365、microsoft Graph、搜尋及其他元件及服務），在日常使用的 Microsoft 365 應用程式中，為您的使用者提供知識，並以 Word 和 PowerPoint 中的 SharePoint 新式頁面、Microsoft search 及搜尋。</span><span class="sxs-lookup"><span data-stu-id="f1f65-104">Viva Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Microsoft Search, and Search in Word and PowerPoint.</span></span>
 
 </br>
 
@@ -31,100 +31,101 @@ ms.locfileid: "52275193"
 
 </br>
 
-<span data-ttu-id="aad6e-105">Viva Topics 可協助解決許多公司的重要商務問題，在使用者需要時提供相關資訊。</span><span class="sxs-lookup"><span data-stu-id="aad6e-105">Viva Topics helps to address a key business issue in many companies - providing the information to users when they need it.</span></span> <span data-ttu-id="aad6e-106">例如，新員工需要快速學習許多新資訊，但在閱讀公司資訊時，會遇到他們完全不知道的詞彙。</span><span class="sxs-lookup"><span data-stu-id="aad6e-106">For example, new employees need to learn a lot of new information quickly, and encounter terms they know nothing about when reading through company information.</span></span> <span data-ttu-id="aad6e-107">為了深入了解，使用者可能需要離開他們正在進行的工作，並花費寶貴的時間搜尋詳細資料，例如詞彙的意義、組織中誰是主題專家，以及可能與詞彙相關的網站和文件。</span><span class="sxs-lookup"><span data-stu-id="aad6e-107">To learn more, the user might need to step away from what they are doing and spend valuable time searching for details, such as information about what the term is, who in the organization is a subject matter expert, and maybe sites and documents that are related to the term.</span></span>
+<span data-ttu-id="f1f65-105">Viva Topics 可協助解決許多公司的重要商務問題，在使用者需要時提供相關資訊。</span><span class="sxs-lookup"><span data-stu-id="f1f65-105">Viva Topics helps to address a key business issue in many companies - providing the information to users when they need it.</span></span> <span data-ttu-id="f1f65-106">例如，新員工需要快速學習許多新資訊，但在閱讀公司資訊時，會遇到他們完全不知道的詞彙。</span><span class="sxs-lookup"><span data-stu-id="f1f65-106">For example, new employees need to learn a lot of new information quickly, and encounter terms they know nothing about when reading through company information.</span></span> <span data-ttu-id="f1f65-107">為了深入了解，使用者可能需要離開他們正在進行的工作，並花費寶貴的時間搜尋詳細資料，例如詞彙的意義、組織中誰是主題專家，以及可能與詞彙相關的網站和文件。</span><span class="sxs-lookup"><span data-stu-id="f1f65-107">To learn more, the user might need to step away from what they are doing and spend valuable time searching for details, such as information about what the term is, who in the organization is a subject matter expert, and maybe sites and documents that are related to the term.</span></span>
 
-<span data-ttu-id="aad6e-108">Viva Topics 使用 AI 來自動搜尋並識別組織中的 **主題**。</span><span class="sxs-lookup"><span data-stu-id="aad6e-108">Viva Topics uses AI to automatically search for and identify **topics** in your organization.</span></span> <span data-ttu-id="aad6e-109">它會編譯這些主題的資訊，例如簡短描述、編寫主題的人，以及與主題相關的網站、檔案以及頁面。</span><span class="sxs-lookup"><span data-stu-id="aad6e-109">It compiles information about them, such as a short description, people working on the topic, and sites, files, and pages that are related to it.</span></span> <span data-ttu-id="aad6e-110">知識管理員或參與者可以選擇根據需要更新主題資訊。</span><span class="sxs-lookup"><span data-stu-id="aad6e-110">A knowledge manager or contributor can choose to update the topic information as needed.</span></span> <span data-ttu-id="aad6e-111">這些主題可供您的使用者使用，這表示在新式 SharePoint 網站新聞和頁面中出現的每個主題實例，文字都有醒目提示。</span><span class="sxs-lookup"><span data-stu-id="aad6e-111">The topics are available to your users, which means that for every instance of the topic that appears in a modern SharePoint site in news and pages, the text will be highlighted.</span></span> <span data-ttu-id="aad6e-112">使用者可以選取主題，透過主題詳細資料深入了解主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-112">Users can choose to select the topic to learn more about it through the topic details.</span></span> <span data-ttu-id="aad6e-113">您也可以在 SharePoint 搜尋中找到主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-113">Topics can also be found in SharePoint Search.</span></span>
+<span data-ttu-id="f1f65-108">Viva Topics 使用 AI 來自動搜尋並識別組織中的 **主題**。</span><span class="sxs-lookup"><span data-stu-id="f1f65-108">Viva Topics uses AI to automatically search for and identify **topics** in your organization.</span></span> <span data-ttu-id="f1f65-109">它會編譯這些主題的資訊，例如簡短描述、編寫主題的人，以及與主題相關的網站、檔案以及頁面。</span><span class="sxs-lookup"><span data-stu-id="f1f65-109">It compiles information about them, such as a short description, people working on the topic, and sites, files, and pages that are related to it.</span></span> <span data-ttu-id="f1f65-110">知識管理員或參與者可以選擇根據需要更新主題資訊。</span><span class="sxs-lookup"><span data-stu-id="f1f65-110">A knowledge manager or contributor can choose to update the topic information as needed.</span></span> <span data-ttu-id="f1f65-111">這些主題可供您的使用者使用，這表示在新式 SharePoint 網站新聞和頁面中出現的每個主題實例，文字都有醒目提示。</span><span class="sxs-lookup"><span data-stu-id="f1f65-111">The topics are available to your users, which means that for every instance of the topic that appears in a modern SharePoint site in news and pages, the text will be highlighted.</span></span> <span data-ttu-id="f1f65-112">使用者可以選取主題，透過主題詳細資料深入了解主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-112">Users can choose to select the topic to learn more about it through the topic details.</span></span> <span data-ttu-id="f1f65-113">您也可以在 SharePoint 搜尋中找到主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-113">Topics can also be found in SharePoint Search.</span></span>
 
 
-## <a name="how-topics-are-displayed-to-users"></a><span data-ttu-id="aad6e-114">如何向使用者顯示主題</span><span class="sxs-lookup"><span data-stu-id="aad6e-114">How topics are displayed to users</span></span>
+## <a name="how-topics-are-displayed-to-users"></a><span data-ttu-id="f1f65-114">如何向使用者顯示主題</span><span class="sxs-lookup"><span data-stu-id="f1f65-114">How topics are displayed to users</span></span>
 
-<span data-ttu-id="aad6e-115">在 SharePoint 新聞和頁面上的內容中提及主題時，您會看到該主題有醒目提示。</span><span class="sxs-lookup"><span data-stu-id="aad6e-115">When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted.</span></span> <span data-ttu-id="aad6e-116">您可以從醒目提示開啟主題摘要。</span><span class="sxs-lookup"><span data-stu-id="aad6e-116">You can open the topic summary from the highlight.</span></span> <span data-ttu-id="aad6e-117">從摘要的標題開啟主題詳細資料。</span><span class="sxs-lookup"><span data-stu-id="aad6e-117">Open the topic details from the title of the summary.</span></span> <span data-ttu-id="aad6e-118">系統可以自動識別被提及的主題，也可以由頁面作者使用直接參照將該主題新增到頁面中。</span><span class="sxs-lookup"><span data-stu-id="aad6e-118">The mentioned topic could be identified automatically or have been added to the page with a direct reference to the topic by the page author.</span></span> 
+<span data-ttu-id="f1f65-115">在 SharePoint 新聞和頁面上的內容中提及主題時，您會看到該主題有醒目提示。</span><span class="sxs-lookup"><span data-stu-id="f1f65-115">When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted.</span></span> <span data-ttu-id="f1f65-116">您可以從醒目提示開啟主題摘要。</span><span class="sxs-lookup"><span data-stu-id="f1f65-116">You can open the topic summary from the highlight.</span></span> <span data-ttu-id="f1f65-117">從摘要的標題開啟主題詳細資料。</span><span class="sxs-lookup"><span data-stu-id="f1f65-117">Open the topic details from the title of the summary.</span></span> <span data-ttu-id="f1f65-118">系統可以自動識別被提及的主題，也可以由頁面作者使用直接參照將該主題新增到頁面中。</span><span class="sxs-lookup"><span data-stu-id="f1f65-118">The mentioned topic could be identified automatically or have been added to the page with a direct reference to the topic by the page author.</span></span> 
 
    ![主題醒目提示](../media/knowledge-management/saturn.png) 
 
+<span data-ttu-id="f1f65-120">當您在 Word 或 PowerPoint 中使用搜尋時（透過搜尋方塊或在快顯功能表中選取 [**搜尋**]），顯示的結果也可能會顯示主題摘要。</span><span class="sxs-lookup"><span data-stu-id="f1f65-120">When you use Search in Word or PowerPoint, either through the search box, or by selecting **Search** in the context menu, the results that are displayed might also show the topic summary.</span></span>
 
    ![螢幕擷取畫面透過搜尋方塊顯示 Word 搜尋。](../media/knowledge-management/word-search-2.png)
 
    ![螢幕擷取畫面透過搜尋快顯功能表，顯示 Word 中的搜尋。](../media/knowledge-management/word-search-1.png)
 
-## <a name="knowledge-indexing"></a><span data-ttu-id="aad6e-122">知識索引</span><span class="sxs-lookup"><span data-stu-id="aad6e-122">Knowledge indexing</span></span>
+## <a name="knowledge-indexing"></a><span data-ttu-id="f1f65-123">知識索引</span><span class="sxs-lookup"><span data-stu-id="f1f65-123">Knowledge indexing</span></span>
 
-<span data-ttu-id="aad6e-123">Viva Topics 使用 Microsoft AI 技術來識別 Microsoft 365 環境中的 **主題**。</span><span class="sxs-lookup"><span data-stu-id="aad6e-123">Viva Topics uses Microsoft AI technology to identify **topics** in your Microsoft 365 environment.</span></span>
+<span data-ttu-id="f1f65-124">Viva Topics 使用 Microsoft AI 技術來識別 Microsoft 365 環境中的 **主題**。</span><span class="sxs-lookup"><span data-stu-id="f1f65-124">Viva Topics uses Microsoft AI technology to identify **topics** in your Microsoft 365 environment.</span></span>
 
-<span data-ttu-id="aad6e-124">主題是對組織來說關鍵或重要的字詞或詞彙。</span><span class="sxs-lookup"><span data-stu-id="aad6e-124">A topic is a phrase or term that is organizationally significant or important.</span></span> <span data-ttu-id="aad6e-125">它對於組織具有特定意義，且具有相關的資源，可協助使用者了解它是什麼，並尋找更多相關資訊。</span><span class="sxs-lookup"><span data-stu-id="aad6e-125">It has a specific meaning to the organization, and has resources related to it that can help people understand what it is and find more information about it.</span></span> <span data-ttu-id="aad6e-126">對您的組織來說，有許多不同類型的重要主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-126">There are lots of different types of topics that will be important to your organization.</span></span> <span data-ttu-id="aad6e-127">一開始，Microsoft AI 技術著重於下列類型：</span><span class="sxs-lookup"><span data-stu-id="aad6e-127">Initially, the Microsoft AI technology focuses on the following types:</span></span>
-- <span data-ttu-id="aad6e-128">專案</span><span class="sxs-lookup"><span data-stu-id="aad6e-128">Project</span></span>
-- <span data-ttu-id="aad6e-129">事件</span><span class="sxs-lookup"><span data-stu-id="aad6e-129">Event</span></span>
-- <span data-ttu-id="aad6e-130">組織</span><span class="sxs-lookup"><span data-stu-id="aad6e-130">Organization</span></span>
-- <span data-ttu-id="aad6e-131">位置</span><span class="sxs-lookup"><span data-stu-id="aad6e-131">Location</span></span>
-- <span data-ttu-id="aad6e-132">產品</span><span class="sxs-lookup"><span data-stu-id="aad6e-132">Product</span></span>
-- <span data-ttu-id="aad6e-133">創意成果</span><span class="sxs-lookup"><span data-stu-id="aad6e-133">Creative work</span></span>
-- <span data-ttu-id="aad6e-134">研究領域</span><span class="sxs-lookup"><span data-stu-id="aad6e-134">Field of study</span></span>
-
-
-<span data-ttu-id="aad6e-135">當主題經過識別，且 AI 判斷它具有足夠的資訊可做為建議的主題時，**主題頁面** 會顯示透過主題索引收集的資訊，例如：</span><span class="sxs-lookup"><span data-stu-id="aad6e-135">When a topic is identified and AI determines that it has enough information for it to be a suggested topic, a **topic page** displays the information that was gathered through topic indexing, such as:</span></span>
-
-- <span data-ttu-id="aad6e-136">替代名稱和縮寫。</span><span class="sxs-lookup"><span data-stu-id="aad6e-136">Alternate names and acronyms.</span></span>
-- <span data-ttu-id="aad6e-137">主題的簡短描述。</span><span class="sxs-lookup"><span data-stu-id="aad6e-137">A short description of the topic.</span></span>
-- <span data-ttu-id="aad6e-138">可能熟悉此主題的人員。</span><span class="sxs-lookup"><span data-stu-id="aad6e-138">People who might be knowledgeable about the topic.</span></span>
-- <span data-ttu-id="aad6e-139">與主題相關的檔案、頁面和網站。</span><span class="sxs-lookup"><span data-stu-id="aad6e-139">Files, pages, and sites that are related to the topic.</span></span>
-
-<span data-ttu-id="aad6e-140">您的知識系統管理員可以選擇對租用戶中所有 SharePoint 網站進行主題編目，或只選取特定網站。</span><span class="sxs-lookup"><span data-stu-id="aad6e-140">Your knowledge admins can choose to crawl all SharePoint sites in your tenant for topics, or to just select certain ones.</span></span>
-
-<span data-ttu-id="aad6e-141">請參閱[主題探索與內容篩選](./topic-experiences-discovery-curation.md)</span><span class="sxs-lookup"><span data-stu-id="aad6e-141">See [Topic discovery and curation](./topic-experiences-discovery-curation.md)</span></span>
-
-## <a name="roles"></a><span data-ttu-id="aad6e-142">角色</span><span class="sxs-lookup"><span data-stu-id="aad6e-142">Roles</span></span>
-
-<span data-ttu-id="aad6e-143">當您在 Microsoft 365 環境中使用 Viva Topics 時，您的使用者將具有下列角色：</span><span class="sxs-lookup"><span data-stu-id="aad6e-143">When you use Viva Topics in your Microsoft 365 environment, your users will have the following roles:</span></span>
-
-- <span data-ttu-id="aad6e-144">主題檢視者：可以在 SharePoint 新式網站上看到主題醒目提示的使用者，他們至少具有 *讀取* 存取權，以及 Microsoft 搜尋。</span><span class="sxs-lookup"><span data-stu-id="aad6e-144">Topic viewers: Users who can see topic highlights on SharePoint modern sites that they have at least *Read* access to, and in Microsoft Search.</span></span> <span data-ttu-id="aad6e-145">他們可以選取主題醒目提示，以查看主題頁面中的主題詳細資料。</span><span class="sxs-lookup"><span data-stu-id="aad6e-145">They can select topic highlights to see topic details in topic pages.</span></span> <span data-ttu-id="aad6e-146">主題檢視者可以針對主題的實用性提供意見反應。</span><span class="sxs-lookup"><span data-stu-id="aad6e-146">Topic viewers can provide feedback on how useful a topic is to them.</span></span>
-
-- <span data-ttu-id="aad6e-147">參與者：擁有編輯現有主題或建立新主題之權限的使用者。</span><span class="sxs-lookup"><span data-stu-id="aad6e-147">Contributors: Users who have rights to edit existing topics or create new ones.</span></span> <span data-ttu-id="aad6e-148">知識系統管理員可透過 Microsoft 365 系統管理中心的 Viva Topics 設定，將參與者權限指派給使用者。</span><span class="sxs-lookup"><span data-stu-id="aad6e-148">Knowledge admins assign contributor permissions to users through the Viva Topics settings in the Microsoft 365 admin center.</span></span> <span data-ttu-id="aad6e-149">請注意，您也可以選擇將編輯和建立主題的權限提供給所有主題檢視者，讓每個人都能參與他們看到的主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-149">Note that you can also choose to give all topic viewers the permission to edit and create topics so that everyone can contribute to topics that they see.</span></span>
-
-- <span data-ttu-id="aad6e-150">知識管理員：在主題生命週期中引導主題的使用者。</span><span class="sxs-lookup"><span data-stu-id="aad6e-150">Knowledge managers: Users who guide topics through the topic lifecycle.</span></span> <span data-ttu-id="aad6e-151">知識管理員使用主題中心中的 **管理主題** 頁面來確認 AI 建議的主題、移除不再相關的主題，以及編輯現有主題或建立新主題，而且是唯一具有存取權的使用者。</span><span class="sxs-lookup"><span data-stu-id="aad6e-151">Knowledge managers use the **Manage Topics** page in the Topic center to confirm AI-suggested topics, remove topics that are no longer relevant, as well as edit existing topics or create new ones, and are the only users who have access to it.</span></span> <span data-ttu-id="aad6e-152">知識系統管理員透過 Microsoft 365 系統管理中心的 Viva Topics 系統管理員設定，將知識管理員權限指派給使用者。</span><span class="sxs-lookup"><span data-stu-id="aad6e-152">Knowledge admins assign knowledge manager permissions to users through the Viva Topics admin settings in the Microsoft 365 admin center.</span></span> 
-
-- <span data-ttu-id="aad6e-153">知識系統管理員：知識系統管理員可透過 Microsoft 365 系統管理中心的系統管理控制項設定 Viva Topics，並進行管理。</span><span class="sxs-lookup"><span data-stu-id="aad6e-153">Knowledge admins: Knowledge admins set up Viva Topics and manage it through the admin controls in the Microsoft 365 admin center.</span></span> <span data-ttu-id="aad6e-154">目前，Microsoft 365 全域或 SharePoint 系統管理員可以擔任知識系統管理員。</span><span class="sxs-lookup"><span data-stu-id="aad6e-154">Currently, a Microsoft 365 global or SharePoint administrator can serve as a knowledge admin.</span></span>
-
-<span data-ttu-id="aad6e-155">如需詳細資訊，請參閱 [Viva Topics 角色](topic-experiences-roles.md)。</span><span class="sxs-lookup"><span data-stu-id="aad6e-155">See [Viva Topics roles](topic-experiences-roles.md) for more information.</span></span>
-
-## <a name="topic-management"></a><span data-ttu-id="aad6e-156">主題管理</span><span class="sxs-lookup"><span data-stu-id="aad6e-156">Topic management</span></span>
-
-<span data-ttu-id="aad6e-157">可透過組織的 **主題中心** 的 **管理主題** 頁面來管理主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-157">Topic management is done in the **Manage topics** page in your organization's **Topic center**.</span></span> <span data-ttu-id="aad6e-158">主題中心是在設定期間建立，並做為組織的知識中心。</span><span class="sxs-lookup"><span data-stu-id="aad6e-158">The Topic center is created during setup and serves as your center of knowledge for your organization.</span></span> 
-
-<span data-ttu-id="aad6e-159">雖然所有授權使用者都可以在 [主題中心] 看到與他們相關的主題，但只有具有 *管理主題* 權限 (知識管理員) 的使用者才能檢視並使用 [管理主題] 頁面。</span><span class="sxs-lookup"><span data-stu-id="aad6e-159">While all licensed users can see topics they're connected with in the Topic center, only users with *Manage topics* permissions (knowledge managers) can view and use the Manage topics page.</span></span>
-
-<span data-ttu-id="aad6e-160">知識管理員可以：</span><span class="sxs-lookup"><span data-stu-id="aad6e-160">Knowledge managers can:</span></span>
-
-- <span data-ttu-id="aad6e-161">確認或移除在租用戶中發現的主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-161">Confirm or remove topics that were discovered in your tenant.</span></span>
-- <span data-ttu-id="aad6e-162">根據需要手動建立新主題 (例如，如果提供的資訊不足，無法透過 AI 找到時)。</span><span class="sxs-lookup"><span data-stu-id="aad6e-162">Create new topics manually as needed (for example, if not enough information was provided for it to be discovered through AI).</span></span>
-- <span data-ttu-id="aad6e-163">編輯現有的主題頁面。</span><span class="sxs-lookup"><span data-stu-id="aad6e-163">Edit existing topic pages.</span></span></br>
-
-<span data-ttu-id="aad6e-164">如需詳細資訊，請參閱[在主題中心管理主題](manage-topics.md)。</span><span class="sxs-lookup"><span data-stu-id="aad6e-164">See [Manage topics in the Topic center](manage-topics.md) for more information.</span></span>  
+<span data-ttu-id="f1f65-125">主題是對組織來說關鍵或重要的字詞或詞彙。</span><span class="sxs-lookup"><span data-stu-id="f1f65-125">A topic is a phrase or term that is organizationally significant or important.</span></span> <span data-ttu-id="f1f65-126">它對於組織具有特定意義，且具有相關的資源，可協助使用者了解它是什麼，並尋找更多相關資訊。</span><span class="sxs-lookup"><span data-stu-id="f1f65-126">It has a specific meaning to the organization, and has resources related to it that can help people understand what it is and find more information about it.</span></span> <span data-ttu-id="f1f65-127">對您的組織來說，有許多不同類型的重要主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-127">There are lots of different types of topics that will be important to your organization.</span></span> <span data-ttu-id="f1f65-128">一開始，Microsoft AI 技術著重於下列類型：</span><span class="sxs-lookup"><span data-stu-id="f1f65-128">Initially, the Microsoft AI technology focuses on the following types:</span></span>
+- <span data-ttu-id="f1f65-129">專案</span><span class="sxs-lookup"><span data-stu-id="f1f65-129">Project</span></span>
+- <span data-ttu-id="f1f65-130">事件</span><span class="sxs-lookup"><span data-stu-id="f1f65-130">Event</span></span>
+- <span data-ttu-id="f1f65-131">組織</span><span class="sxs-lookup"><span data-stu-id="f1f65-131">Organization</span></span>
+- <span data-ttu-id="f1f65-132">位置</span><span class="sxs-lookup"><span data-stu-id="f1f65-132">Location</span></span>
+- <span data-ttu-id="f1f65-133">產品</span><span class="sxs-lookup"><span data-stu-id="f1f65-133">Product</span></span>
+- <span data-ttu-id="f1f65-134">創意成果</span><span class="sxs-lookup"><span data-stu-id="f1f65-134">Creative work</span></span>
+- <span data-ttu-id="f1f65-135">研究領域</span><span class="sxs-lookup"><span data-stu-id="f1f65-135">Field of study</span></span>
 
 
-## <a name="admin-controls"></a><span data-ttu-id="aad6e-165">系統管理控制項</span><span class="sxs-lookup"><span data-stu-id="aad6e-165">Admin controls</span></span>
+<span data-ttu-id="f1f65-136">當主題經過識別，且 AI 判斷它具有足夠的資訊可做為建議的主題時，**主題頁面** 會顯示透過主題索引收集的資訊，例如：</span><span class="sxs-lookup"><span data-stu-id="f1f65-136">When a topic is identified and AI determines that it has enough information for it to be a suggested topic, a **topic page** displays the information that was gathered through topic indexing, such as:</span></span>
 
-<span data-ttu-id="aad6e-166">Microsoft 365 系統管理中心中的管理控制可讓您管理 Viva 主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-166">Admin controls in the Microsoft 365 admin center allow you to manage Viva Topics.</span></span> <span data-ttu-id="aad6e-167">它們允許 Microsoft 365 全域或 SharePoint 系統管理員進行以下作業：</span><span class="sxs-lookup"><span data-stu-id="aad6e-167">They allow a Microsoft 365 global or SharePoint administrator to:</span></span>
+- <span data-ttu-id="f1f65-137">替代名稱和縮寫。</span><span class="sxs-lookup"><span data-stu-id="f1f65-137">Alternate names and acronyms.</span></span>
+- <span data-ttu-id="f1f65-138">主題的簡短描述。</span><span class="sxs-lookup"><span data-stu-id="f1f65-138">A short description of the topic.</span></span>
+- <span data-ttu-id="f1f65-139">可能熟悉此主題的人員。</span><span class="sxs-lookup"><span data-stu-id="f1f65-139">People who might be knowledgeable about the topic.</span></span>
+- <span data-ttu-id="f1f65-140">與主題相關的檔案、頁面和網站。</span><span class="sxs-lookup"><span data-stu-id="f1f65-140">Files, pages, and sites that are related to the topic.</span></span>
 
-- <span data-ttu-id="aad6e-168">控制組織中哪些使用者可以在 SharePoint 新式頁面或在 SharePoint 搜尋結果中看到主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-168">Control which users in your organization are allowed to see topics in SharePoint modern pages or in SharePoint search results.</span></span>
-- <span data-ttu-id="aad6e-169">控制要對哪些 SharePoint 網站進行編目以識別主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-169">Control which SharePoint sites will be crawled to identify topics.</span></span>
-- <span data-ttu-id="aad6e-170">排除特定主題，以不被找到。</span><span class="sxs-lookup"><span data-stu-id="aad6e-170">Exclude specific topics from being found.</span></span>
-- <span data-ttu-id="aad6e-171">控制哪些使用者可以在主題中心管理主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-171">Control which users can manage topics in the topic center.</span></span>
-- <span data-ttu-id="aad6e-172">控制哪些使用者可以建立及編輯主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-172">Control which users can create and edit topics.</span></span>
-- <span data-ttu-id="aad6e-173">控制哪些使用者可以檢視主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-173">Control which user can view topics.</span></span>
+<span data-ttu-id="f1f65-141">您的知識系統管理員可以選擇對租用戶中所有 SharePoint 網站進行主題編目，或只選取特定網站。</span><span class="sxs-lookup"><span data-stu-id="f1f65-141">Your knowledge admins can choose to crawl all SharePoint sites in your tenant for topics, or to just select certain ones.</span></span>
 
-<span data-ttu-id="aad6e-174">如需系統管理控制項的詳細資訊，請參閱[指派使用者權限](./plan-topic-experiences.md#user-permissions)、[管理主題可見度](./topic-experiences-knowledge-rules.md)，以及[管理主題探索](./topic-experiences-discovery.md)。</span><span class="sxs-lookup"><span data-stu-id="aad6e-174">See [assign user permissions](./plan-topic-experiences.md#user-permissions), [manage topic visibility](./topic-experiences-knowledge-rules.md), and [manage topic discovery](./topic-experiences-discovery.md) for more information about admin controls.</span></span>
+<span data-ttu-id="f1f65-142">請參閱[主題探索與內容篩選](./topic-experiences-discovery-curation.md)</span><span class="sxs-lookup"><span data-stu-id="f1f65-142">See [Topic discovery and curation](./topic-experiences-discovery-curation.md)</span></span>
 
-## <a name="topic-curation--feedback"></a><span data-ttu-id="aad6e-175">主題內容篩選與意見反應</span><span class="sxs-lookup"><span data-stu-id="aad6e-175">Topic curation & feedback</span></span>
+## <a name="roles"></a><span data-ttu-id="f1f65-143">角色</span><span class="sxs-lookup"><span data-stu-id="f1f65-143">Roles</span></span>
 
-<span data-ttu-id="aad6e-176">隨著環境的變化，AI 將不斷為您提供建議，以改善您的主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-176">AI will continually work to provide you suggestions to improve your topics as changes occur in your environment.</span></span> 
+<span data-ttu-id="f1f65-144">當您在 Microsoft 365 環境中使用 Viva Topics 時，您的使用者將具有下列角色：</span><span class="sxs-lookup"><span data-stu-id="f1f65-144">When you use Viva Topics in your Microsoft 365 environment, your users will have the following roles:</span></span>
 
-<span data-ttu-id="aad6e-177">具有編輯或建立主題權限的使用者可以直接更新主題頁面，以便進行修正或新增其他資訊。</span><span class="sxs-lookup"><span data-stu-id="aad6e-177">Users with edit or create topics permissions can make updates to topic pages directly if they want to make corrections or add additional information.</span></span> <span data-ttu-id="aad6e-178">他們也可以新增 AI 無法識別的新主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-178">They can also add new topics that AI wasn't able to identify.</span></span> <span data-ttu-id="aad6e-179">如果有關這些手動新增的主題的資訊夠多，並且 AI 能夠識別此類主題，則 AI 的其他建議可能會加強這些手動新增的主題</span><span class="sxs-lookup"><span data-stu-id="aad6e-179">If there's enough information on these manually added topics, and AI is able to identify this type of topic, additional suggestions from AI may enhance these manually added topics</span></span> 
+- <span data-ttu-id="f1f65-145">主題檢視者：可以在 SharePoint 新式網站上看到主題醒目提示的使用者，他們至少具有 *讀取* 存取權，以及 Microsoft 搜尋。</span><span class="sxs-lookup"><span data-stu-id="f1f65-145">Topic viewers: Users who can see topic highlights on SharePoint modern sites that they have at least *Read* access to, and in Microsoft Search.</span></span> <span data-ttu-id="f1f65-146">他們可以選取主題醒目提示，以查看主題頁面中的主題詳細資料。</span><span class="sxs-lookup"><span data-stu-id="f1f65-146">They can select topic highlights to see topic details in topic pages.</span></span> <span data-ttu-id="f1f65-147">主題檢視者可以針對主題的實用性提供意見反應。</span><span class="sxs-lookup"><span data-stu-id="f1f65-147">Topic viewers can provide feedback on how useful a topic is to them.</span></span>
 
-<span data-ttu-id="aad6e-180">系統可能會詢問您允許查看其日常工作中的主題的使用者，主題對他們來說是否實用。</span><span class="sxs-lookup"><span data-stu-id="aad6e-180">Users that you allow access to see topics in their daily work might be asked if the topic was useful to them.</span></span> <span data-ttu-id="aad6e-181">系統會查看這些回應，並使用它們來改善主題醒目提示，並協助決定主題摘要和主題詳細資料中顯示的內容。</span><span class="sxs-lookup"><span data-stu-id="aad6e-181">The system looks at these responses and uses them to improve the topic highlight, and help determine what's shown on topic summaries and in topic details.</span></span>
+- <span data-ttu-id="f1f65-148">參與者：擁有編輯現有主題或建立新主題之權限的使用者。</span><span class="sxs-lookup"><span data-stu-id="f1f65-148">Contributors: Users who have rights to edit existing topics or create new ones.</span></span> <span data-ttu-id="f1f65-149">知識系統管理員可透過 Microsoft 365 系統管理中心的 Viva Topics 設定，將參與者權限指派給使用者。</span><span class="sxs-lookup"><span data-stu-id="f1f65-149">Knowledge admins assign contributor permissions to users through the Viva Topics settings in the Microsoft 365 admin center.</span></span> <span data-ttu-id="f1f65-150">請注意，您也可以選擇將編輯和建立主題的權限提供給所有主題檢視者，讓每個人都能參與他們看到的主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-150">Note that you can also choose to give all topic viewers the permission to edit and create topics so that everyone can contribute to topics that they see.</span></span>
 
-<span data-ttu-id="aad6e-182">此外，具有適當權限的使用者可以標記與主題相關的項目 (例如 Yammer 交談)，並將它們新增到特定主題。</span><span class="sxs-lookup"><span data-stu-id="aad6e-182">Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic.</span></span> 
+- <span data-ttu-id="f1f65-151">知識管理員：在主題生命週期中引導主題的使用者。</span><span class="sxs-lookup"><span data-stu-id="f1f65-151">Knowledge managers: Users who guide topics through the topic lifecycle.</span></span> <span data-ttu-id="f1f65-152">知識管理員使用主題中心中的 **管理主題** 頁面來確認 AI 建議的主題、移除不再相關的主題，以及編輯現有主題或建立新主題，而且是唯一具有存取權的使用者。</span><span class="sxs-lookup"><span data-stu-id="f1f65-152">Knowledge managers use the **Manage Topics** page in the Topic center to confirm AI-suggested topics, remove topics that are no longer relevant, as well as edit existing topics or create new ones, and are the only users who have access to it.</span></span> <span data-ttu-id="f1f65-153">知識系統管理員透過 Microsoft 365 系統管理中心的 Viva Topics 系統管理員設定，將知識管理員權限指派給使用者。</span><span class="sxs-lookup"><span data-stu-id="f1f65-153">Knowledge admins assign knowledge manager permissions to users through the Viva Topics admin settings in the Microsoft 365 admin center.</span></span> 
 
-<span data-ttu-id="aad6e-183">請參閱[主題探索與內容篩選](./topic-experiences-discovery-curation.md)</span><span class="sxs-lookup"><span data-stu-id="aad6e-183">See [Topic discovery and curation](./topic-experiences-discovery-curation.md)</span></span>
+- <span data-ttu-id="f1f65-154">知識系統管理員：知識系統管理員可透過 Microsoft 365 系統管理中心的系統管理控制項設定 Viva Topics，並進行管理。</span><span class="sxs-lookup"><span data-stu-id="f1f65-154">Knowledge admins: Knowledge admins set up Viva Topics and manage it through the admin controls in the Microsoft 365 admin center.</span></span> <span data-ttu-id="f1f65-155">目前，Microsoft 365 全域或 SharePoint 系統管理員可以擔任知識系統管理員。</span><span class="sxs-lookup"><span data-stu-id="f1f65-155">Currently, a Microsoft 365 global or SharePoint administrator can serve as a knowledge admin.</span></span>
+
+<span data-ttu-id="f1f65-156">如需詳細資訊，請參閱 [Viva Topics 角色](topic-experiences-roles.md)。</span><span class="sxs-lookup"><span data-stu-id="f1f65-156">See [Viva Topics roles](topic-experiences-roles.md) for more information.</span></span>
+
+## <a name="topic-management"></a><span data-ttu-id="f1f65-157">主題管理</span><span class="sxs-lookup"><span data-stu-id="f1f65-157">Topic management</span></span>
+
+<span data-ttu-id="f1f65-158">可透過組織的 **主題中心** 的 **管理主題** 頁面來管理主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-158">Topic management is done in the **Manage topics** page in your organization's **Topic center**.</span></span> <span data-ttu-id="f1f65-159">主題中心是在設定期間建立，並做為組織的知識中心。</span><span class="sxs-lookup"><span data-stu-id="f1f65-159">The Topic center is created during setup and serves as your center of knowledge for your organization.</span></span> 
+
+<span data-ttu-id="f1f65-160">雖然所有授權使用者都可以在 [主題中心] 看到與他們相關的主題，但只有具有 *管理主題* 權限 (知識管理員) 的使用者才能檢視並使用 [管理主題] 頁面。</span><span class="sxs-lookup"><span data-stu-id="f1f65-160">While all licensed users can see topics they're connected with in the Topic center, only users with *Manage topics* permissions (knowledge managers) can view and use the Manage topics page.</span></span>
+
+<span data-ttu-id="f1f65-161">知識管理員可以：</span><span class="sxs-lookup"><span data-stu-id="f1f65-161">Knowledge managers can:</span></span>
+
+- <span data-ttu-id="f1f65-162">確認或移除在租用戶中發現的主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-162">Confirm or remove topics that were discovered in your tenant.</span></span>
+- <span data-ttu-id="f1f65-163">根據需要手動建立新主題 (例如，如果提供的資訊不足，無法透過 AI 找到時)。</span><span class="sxs-lookup"><span data-stu-id="f1f65-163">Create new topics manually as needed (for example, if not enough information was provided for it to be discovered through AI).</span></span>
+- <span data-ttu-id="f1f65-164">編輯現有的主題頁面。</span><span class="sxs-lookup"><span data-stu-id="f1f65-164">Edit existing topic pages.</span></span></br>
+
+<span data-ttu-id="f1f65-165">如需詳細資訊，請參閱[在主題中心管理主題](manage-topics.md)。</span><span class="sxs-lookup"><span data-stu-id="f1f65-165">See [Manage topics in the Topic center](manage-topics.md) for more information.</span></span>  
 
 
-## <a name="see-also"></a><span data-ttu-id="aad6e-184">請參閱</span><span class="sxs-lookup"><span data-stu-id="aad6e-184">See also</span></span>
+## <a name="admin-controls"></a><span data-ttu-id="f1f65-166">系統管理控制項</span><span class="sxs-lookup"><span data-stu-id="f1f65-166">Admin controls</span></span>
+
+<span data-ttu-id="f1f65-167">Microsoft 365 系統管理中心中的管理控制可讓您管理 Viva 主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-167">Admin controls in the Microsoft 365 admin center allow you to manage Viva Topics.</span></span> <span data-ttu-id="f1f65-168">它們允許 Microsoft 365 全域或 SharePoint 系統管理員進行以下作業：</span><span class="sxs-lookup"><span data-stu-id="f1f65-168">They allow a Microsoft 365 global or SharePoint administrator to:</span></span>
+
+- <span data-ttu-id="f1f65-169">控制組織中哪些使用者可以在 SharePoint 新式頁面或在 SharePoint 搜尋結果中看到主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-169">Control which users in your organization are allowed to see topics in SharePoint modern pages or in SharePoint search results.</span></span>
+- <span data-ttu-id="f1f65-170">控制要對哪些 SharePoint 網站進行編目以識別主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-170">Control which SharePoint sites will be crawled to identify topics.</span></span>
+- <span data-ttu-id="f1f65-171">排除特定主題，以不被找到。</span><span class="sxs-lookup"><span data-stu-id="f1f65-171">Exclude specific topics from being found.</span></span>
+- <span data-ttu-id="f1f65-172">控制哪些使用者可以在主題中心管理主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-172">Control which users can manage topics in the topic center.</span></span>
+- <span data-ttu-id="f1f65-173">控制哪些使用者可以建立及編輯主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-173">Control which users can create and edit topics.</span></span>
+- <span data-ttu-id="f1f65-174">控制哪些使用者可以檢視主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-174">Control which user can view topics.</span></span>
+
+<span data-ttu-id="f1f65-175">如需系統管理控制項的詳細資訊，請參閱[指派使用者權限](./plan-topic-experiences.md#user-permissions)、[管理主題可見度](./topic-experiences-knowledge-rules.md)，以及[管理主題探索](./topic-experiences-discovery.md)。</span><span class="sxs-lookup"><span data-stu-id="f1f65-175">See [assign user permissions](./plan-topic-experiences.md#user-permissions), [manage topic visibility](./topic-experiences-knowledge-rules.md), and [manage topic discovery](./topic-experiences-discovery.md) for more information about admin controls.</span></span>
+
+## <a name="topic-curation--feedback"></a><span data-ttu-id="f1f65-176">主題內容篩選與意見反應</span><span class="sxs-lookup"><span data-stu-id="f1f65-176">Topic curation & feedback</span></span>
+
+<span data-ttu-id="f1f65-177">隨著環境的變化，AI 將不斷為您提供建議，以改善您的主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-177">AI will continually work to provide you suggestions to improve your topics as changes occur in your environment.</span></span> 
+
+<span data-ttu-id="f1f65-178">具有編輯或建立主題權限的使用者可以直接更新主題頁面，以便進行修正或新增其他資訊。</span><span class="sxs-lookup"><span data-stu-id="f1f65-178">Users with edit or create topics permissions can make updates to topic pages directly if they want to make corrections or add additional information.</span></span> <span data-ttu-id="f1f65-179">他們也可以新增 AI 無法識別的新主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-179">They can also add new topics that AI wasn't able to identify.</span></span> <span data-ttu-id="f1f65-180">如果有關這些手動新增的主題的資訊夠多，並且 AI 能夠識別此類主題，則 AI 的其他建議可能會加強這些手動新增的主題</span><span class="sxs-lookup"><span data-stu-id="f1f65-180">If there's enough information on these manually added topics, and AI is able to identify this type of topic, additional suggestions from AI may enhance these manually added topics</span></span> 
+
+<span data-ttu-id="f1f65-181">系統可能會詢問您允許查看其日常工作中的主題的使用者，主題對他們來說是否實用。</span><span class="sxs-lookup"><span data-stu-id="f1f65-181">Users that you allow access to see topics in their daily work might be asked if the topic was useful to them.</span></span> <span data-ttu-id="f1f65-182">系統會查看這些回應，並使用它們來改善主題醒目提示，並協助決定主題摘要和主題詳細資料中顯示的內容。</span><span class="sxs-lookup"><span data-stu-id="f1f65-182">The system looks at these responses and uses them to improve the topic highlight, and help determine what's shown on topic summaries and in topic details.</span></span>
+
+<span data-ttu-id="f1f65-183">此外，具有適當權限的使用者可以標記與主題相關的項目 (例如 Yammer 交談)，並將它們新增到特定主題。</span><span class="sxs-lookup"><span data-stu-id="f1f65-183">Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic.</span></span> 
+
+<span data-ttu-id="f1f65-184">請參閱[主題探索與內容篩選](./topic-experiences-discovery-curation.md)</span><span class="sxs-lookup"><span data-stu-id="f1f65-184">See [Topic discovery and curation](./topic-experiences-discovery-curation.md)</span></span>
+
+
+## <a name="see-also"></a><span data-ttu-id="f1f65-185">請參閱</span><span class="sxs-lookup"><span data-stu-id="f1f65-185">See also</span></span>
