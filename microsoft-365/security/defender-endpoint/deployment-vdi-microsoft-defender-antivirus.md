@@ -1,12 +1,12 @@
 ---
-title: Microsoft Defender 防病毒虛擬桌面基礎結構部署指南
-description: 瞭解如何在虛擬桌面環境中部署 Microsoft Defender 防毒軟體，以獲得保護與效能之間的最佳平衡。
+title: Microsoft Defender 防毒軟體虛擬桌面基礎結構部署指南
+description: 瞭解如何在虛擬桌面環境中部署 Microsoft Defender 防毒軟體，以取得保護與效能之間的最佳平衡。
 keywords: vdi，hyper-v，vm，虛擬機器，windows defender，防毒程式，av，虛擬桌面機，rds，遠端桌面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,14 +14,15 @@ ms.date: 12/28/2020
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: fed66586dc0607989e407ecd790d2af8c40e2939
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765728"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275249"
 ---
-# <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>虛擬桌面基礎結構中的 Microsoft Defender 防病毒部署指南 (VDI) 環境
+# <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>虛擬桌面基礎結構 (VDI) 環境中 Microsoft Defender 防毒軟體的部署指南
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,11 +31,11 @@ ms.locfileid: "51765728"
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-除了標準的內部部署或硬體設定之外，您也可以使用遠端桌面的 Microsoft Defender 防毒程式 (RDS) 或虛擬桌面基礎結構 (VDI) 環境。
+除了標準的內部部署或硬體設定之外，您也可以使用遠端桌面 (RDS) 或虛擬桌面基礎結構 (VDI) 環境中的 Microsoft Defender 防毒軟體。
 
-如需 Microsoft 遠端桌面服務和 VDI 支援的詳細資訊，請參閱 [Windows 虛擬機器檔](/azure/virtual-desktop) 。
+如需 Microsoft 遠端桌面服務和 VDI 支援的詳細資訊，請參閱[Windows 虛擬機器檔](/azure/virtual-desktop)。
 
-如需 Azure 虛擬機器，請參閱 [在 Azure Defender 中安裝 Endpoint Protection](/azure/security-center/security-center-install-endpoint-protection)。
+如需 azure 虛擬機器，請參閱[在 azure Defender 中安裝 Endpoint Protection](/azure/security-center/security-center-install-endpoint-protection)。
 
 透過輕鬆將更新部署至 VDIs 中執行的 Vm 的功能，我們已縮短此指南，以著重于您可以快速輕鬆地在電腦上更新的方式。 您不再需要定期建立及密封黃金影像，因為更新會擴充至主伺服器上的元件位，然後在開啟時直接下載至 VM。
 
@@ -48,14 +49,14 @@ ms.locfileid: "51765728"
 - [掃描已離線一段時間的過時機器或機器](#scan-vms-that-have-been-offline)
 - [套用排除專案](#exclusions)
 
-您也可以下載白皮書 [Microsoft Defender 防毒軟體虛擬桌面基礎結構](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)，它會看看新的共用安全情報更新功能，也就是如何在您自己的 VDI 上測試防病毒效能的效能測試及指導方針。
+您也可以[在虛擬桌面基礎結構上](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)下載白皮書 Microsoft Defender 防毒軟體，它會看看新的共用安全情報更新功能，也就是如何在您自己的 VDI 上測試防病毒效能的效能測試及指導方針。
 
 > [!IMPORTANT]
-> 雖然 VDI 可以主控于 Windows Server 2012 或 Windows Server 2016，但虛擬機器 (Vm) 應該至少執行 Windows 10、1607，因為在舊版 Windows 中無法使用的保護技術和功能已增加。<br/>在 Windows 10 有問必答預覽、組建 18323 (和更新) 版本中，Microsoft Defender AV 對虛擬機器的運作方式，具有效能及功能的增強功能。 如果您需要使用內部使用者預覽組建，我們會在此指南中識別。若未指定此值，則最佳保護與效能所需的最低版本為 Windows 10 1607。
+> 雖然 VDI 可以主控于 Windows Server 2012 或 Windows Server 2016 上，但虛擬機器 (vm) 應該至少執行 Windows 10 1607，因為在舊版的 Windows 中已增加的保護技術和功能無法使用。<br/>在 Windows 10 內幕機預覽、組建 18323 (和更新) 版本中，Microsoft Defender AV 對虛擬機器的運作方式，具有效能及功能的增強功能。 如果您需要使用內部使用者預覽組建，我們會在此指南中識別。若未指定，則最佳保護和效能所需的最低版本為 Windows 10 1607。
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>設定專用的 VDI 檔案共用
 
-在 Windows 10 版本1903中，我們引進了共用安全性智慧功能，可將下載的安全性情報更新解除到主機機上，進而儲存個別電腦上先前的 CPU、磁片和記憶體資源。 這項功能已經回溯，現在可在 Windows 10 版本1703和更新版本中運作。 您可以使用群組原則或 PowerShell 來設定此功能。
+在 Windows 10 版本1903中，我們引進了共用安全性智慧功能，以將下載的安全性情報更新解除至主機機，進而儲存個別電腦上的 CPU、磁片和記憶體資源。 這項功能已經過回溯，現在可在 Windows 10 版本1703和更新版本中運作。 您可以使用群組原則或 PowerShell 來設定此功能。
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>使用群組原則來啟用共用的安全性智慧功能：
 
@@ -65,13 +66,13 @@ ms.locfileid: "51765728"
 
 3. 按一下 [系統 **管理範本**]。
 
-4. 將樹狀目錄展開為 **Windows 元件**  >  **Microsoft Defender 防病毒**  >  **安全性情報更新**。
+4. 展開樹狀目錄，以 **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **安全性智慧更新**。
 
 5. 按兩下 [ **定義 VDI 用戶端的安全性智慧位置**]，然後將此選項設定為 [ **啟用**]。 會自動顯示欄位。
 
 6. 輸入 `\\<sharedlocation\>\wdav-update` 此值的說明 (，請參閱 [下載和解開](#download-and-unpackage-the-latest-updates)) 。
 
-7. 按一下 [確定]。
+7. 按一下 ****[確定]。
 
 8. 將 GPO 部署至您要測試的 Vm。
 
@@ -112,7 +113,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 2. 輸入名稱作為 **安全性情報 unpacker**。 移至 [**觸發器**] 索引標籤。選取 [**新增 ...** ] > [**每日**]，然後選取 **[確定]**。
 
-3. 移至 [**動作**] 索引標籤。選取 [**新增 ...** ] 在 [**程式/腳本**] 欄位中輸入 **PowerShell** 。 `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1`在 [**新增引數**] 欄位中輸入。 選取 **[確定]**。
+3. 移至 [**動作**] 索引標籤。選取 [**新增 ...** ] 在 [**程式/腳本**] 欄位中輸入 **PowerShell** 。 `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1`在 [**新增引數**] 欄位中輸入。 選取 [確定]。
 
 4. 您可以視需要選擇設定其他設定。
 
@@ -144,7 +145,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 除了 [即時保護及掃描](configure-real-time-protection-microsoft-defender-antivirus.md)之外，還會執行排程掃描。
 
-掃描本身的開始時間仍以排程的掃描原則為基礎， (**ScheduleDay**、 **ScheduleTime** 及 **ScheduleQuickScanTime**) 。 隨機會使 Microsoft Defender 防病毒在從排定的掃描時間設定的4小時內，從每一部機器上開始掃描。
+掃描本身的開始時間仍以排程的掃描原則為基礎， (**ScheduleDay**、 **ScheduleTime** 及 **ScheduleQuickScanTime**) 。 隨機會使 Microsoft Defender 防毒軟體從排定的掃描時間設定之4小時內的每一部電腦上開始掃描。
 
 請參閱 [排程掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) 以取得可用於排程掃描的其他配置選項。
 
@@ -152,21 +153,21 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 您可以指定在排程掃描期間應執行的掃描類型。 快速掃描是一種慣用方式，其設計目的是要尋找惡意程式碼所在的所有位置，以供使用中的惡意程式碼。 下列程式說明如何使用「群組原則」設定快速掃描。
 
-1. 在 [群組原則編輯器] 中，移至 [系統 **管理範本**] [  >  **Windows 元件**]  >  **Microsoft Defender 防病毒**  >  **掃描**。
+1. 在 [群組原則編輯器] 中，移至 [系統 **管理範本**]  >  **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **掃描**]。
 
 2. 選取 **[指定要用於排程掃描的掃描類型** ]，然後編輯原則設定。
 
 3. 將原則設定為 [ **啟用**]，然後在 [ **選項**] 下，選取 [  **快速掃描**]。
 
-4. 選取 **[確定]**。 
+4. 選取 [確定]。 
 
 5. 像往常一樣部署您的群組原則物件。
 
 ## <a name="prevent-notifications"></a>防止通知
 
-在某些情況下，Microsoft Defender 防病毒通知可能會在多個會話中傳送或持續。 為了將此問題降至最低，您可以鎖定 Microsoft Defender 防病毒使用者介面。 下列程式說明如何使用群組原則來抑制通知。
+在某些情況下，Microsoft Defender 防毒軟體通知可能會傳送至或持續傳送至多個會話。 為了將此問題降至最低，您可以鎖定 Microsoft Defender 防毒軟體使用者介面。 下列程式說明如何使用群組原則來抑制通知。
 
-1. 在 [群組原則編輯器] 中，移至 [ **Windows 元件**] [  >  **Microsoft Defender 防病毒**  >  **用戶端介面**]。
+1. 在 [群組原則編輯器] 中，移至 **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **用戶端介面**。
 
 2. 選取 [ **抑制所有通知** ]，然後編輯原則設定。 
 
@@ -174,7 +175,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 像往常一樣部署您的群組原則物件。
 
-抑制通知，可防止在執行掃描時或進行修正動作時，在 Windows 10 上的「動作中心」上顯示來自 Microsoft Defender 防病毒的通知。 不過，您的安全性作業小組會在 Microsoft Defender Security Center () 中看到掃描結果 [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
+抑制通知，可防止在執行掃描時 Windows 10 的「動作中心」或進行修正動作時，Microsoft Defender 防毒軟體中顯示的通知。 不過，您的安全性運作小組會在 Microsoft Defender 資訊安全中心 () 中看到掃描的結果 [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
 
 > [!TIP]
 > 若要在 Windows 10 上開啟「行動中心」，請執行下列其中一個步驟：
@@ -189,13 +190,13 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 > [!IMPORTANT]
 > 在更新後執行掃描會協助確保您的 Vm 受到最新安全性情報更新的保護。 停用此選項將會降低 Vm 的保護層級，只應該在第一次建立或部署基底影像時使用。
 
-1. 在 [群組原則編輯器] 中，移至 [ **Windows 元件**] [  >  **Microsoft Defender 防病毒**  >  **安全性情報更新**]。
+1. 在 [群組原則編輯器] 中，移至 **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **安全性智慧更新**]。
 
 2. 選取 [ **在安全性智慧更新後開啟掃描** ]，然後編輯原則設定。
 
 3. 將原則設定為 [ **停用**]。
 
-4. 選取 **[確定]**。
+4. 選取 [確定]。
 
 5. 像往常一樣部署您的群組原則物件。
 
@@ -203,13 +204,13 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="scan-vms-that-have-been-offline"></a>掃描已離線的 Vm
 
-1. 在您的群組原則編輯器中，移至 **Windows 元件**  >  **Microsoft Defender 防病毒**  >  **掃描**。
+1. 在 [群組原則編輯器] 中，移至 **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **掃描**]。
 
 2. 選取 [ **開啟追趕快速掃描** ]，然後編輯原則設定。
 
 3. 將原則設定為 [ **啟用**]。
 
-4. 選取 **[確定]**。
+4. 選取 [確定]。
 
 5. 像往常一樣部署您的群組原則物件。
 
@@ -217,26 +218,26 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="enable-headless-ui-mode"></a>啟用無周邊 UI 模式
 
-1. 在 [群組原則編輯器] 中，移至 [ **Windows 元件**] [  >  **Microsoft Defender 防病毒**  >  **用戶端介面**]。
+1. 在 [群組原則編輯器] 中，移至 **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **用戶端介面**。
 
 2. 選取 [ **啟用無周邊 UI 模式]** ，然後編輯原則。
 
 3. 將原則設定為 [ **啟用**]。
 
-4. 按一下 [確定]。
+4. 按一下 ****[確定]。
 
 5. 像往常一樣部署您的群組原則物件。
  
-這個原則會從您組織中的使用者隱藏整個 Microsoft Defender 防病毒使用者介面。
+這個原則會從您組織中的使用者隱藏整個 Microsoft Defender 防毒軟體使用者介面。
 
-## <a name="exclusions"></a>排除
+## <a name="exclusions"></a>排除項目
 
 您可以新增、移除或自訂排除專案，以符合您的需求。
 
-如需詳細資訊，請參閱 [在 Windows Server 上設定 Microsoft Defender 防病毒排除](configure-exclusions-microsoft-defender-antivirus.md)。
+如需詳細資訊，請參閱[Configure Microsoft Defender 防毒軟體 Windows Server 上的排除](configure-exclusions-microsoft-defender-antivirus.md)專案。
 
 ## <a name="additional-resources"></a>其他資源
 
-- [技術社區博客：針對非持久性 VDI 機器設定 Microsoft Defender 防毒程式](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
+- [技術 Community 博客：針對非 persistent VDI 機器設定 Microsoft Defender 防毒軟體](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
 - [在遠端桌面服務和 VDI 上 TechNet 論壇](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell 腳本](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)

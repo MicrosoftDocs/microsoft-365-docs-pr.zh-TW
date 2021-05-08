@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 73ce64bd83b475cc7cc0f78b6ac4a06683264144
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 36745a0aafb70e7921c19db7c28984dcca1e2a63
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445551"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245525"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
@@ -57,7 +57,7 @@ Microsoft 受管理的電腦為當今企業及其員工面臨的若干挑戰，�
 ## <a name="device-management"></a>裝置管理
 Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft 軟體之任務。
 
-- **硬體：** 您的 IT 部門不必研究並測試裝置 (及其驅動程式)，Microsoft 受管理的電腦會仔細測試特定裝置，從而產生滿足企業效能要求並保證可與服務搭配的精心策劃之 [裝置清單](../service-description/device-list.md)。 您可以自行 (或配合合作夥伴) 取得裝置，或重複使用您已擁有的裝置 (如果它已在核准清單上)。 註冊裝置既簡單且直接，而在部署裝置之前，您也可以為您的使用者[自訂](../working-with-managed-desktop/config-setting-overview.md)裝置體驗的特定層面。
+- **硬體：** 您的 IT 部門不必研究並找出裝置是否與服務相容，我們提供了特定的硬體和軟體要求、工具和簡化選擇的程序，因此您可以放心地選擇裝置。 您可以在 [購買 Windows 10 專業版商務裝置](https://www.microsoft.com/windowsforbusiness/view-all-devices) 網站上透過篩選 Microsoft 受管理的電腦來尋找推薦的裝置。 您可以自行 (或配合合作夥伴) 取得裝置，或重複使用您已擁有的裝置 (如果它已在核准清單上)。 註冊裝置既簡單且直接，而在部署裝置之前，您也可以為您的使用者[自訂](../working-with-managed-desktop/config-setting-overview.md)裝置體驗的特定層面。
 
 - **更新：** Microsoft 受管理的電腦會針對 Windows 10 品質和功能更新、驅動程式、韌體、防毒定義，以及用於企業更新的 Microsoft 365 應用程式來設定及管理 [部署群組](../service-description/updates.md)的所有層面。 其中包含所有更新的周延測試和驗證，從而確保已註冊的裝置永遠保持最新狀態並降低系統中斷機率，讓您的 IT 部門擺脫這個無止盡的過程。
 
@@ -66,7 +66,7 @@ Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft
 
 ## <a name="device-monitoring"></a>裝置監視
 
-我們會使用專門的安全性作業中心來維護您裝置的安全性，讓您監視裝置並使用 Microsoft 每月分析的獨特安全威脅資料。 我們內建這些安全性功能，而另外新增。
+我們會使用專門的安全性作業中心來協助維護您裝置的安全性，讓您監視裝置並使用 Microsoft 每月分析的獨特安全威脅資料。這些安全性功能都是內建的，而非之後另外新增。
 
 我們也會監視裝置健康情況，並提供有關裝置效能的深入分析。 若要深入了解，請移至 [Microsoft 受管理的電腦作業及監視](../service-description/operations-and-monitoring.md)。
 
@@ -88,7 +88,7 @@ Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft
 **準備好註冊** 這些主題描述了在組織中為註冊做準備所必須採取的步驟，包含確定您的環境是否滿足關鍵的必備條件，設定網路，設定證書，以及應用程式準備。
 
 - [Microsoft 受管理電腦的先決條件](../get-ready/prerequisites.md)
-- [Microsoft 受管理電腦的網路設定](../get-ready/network.md)
+- [Microsoft 受管理的電腦的網路設定](../get-ready/network.md)
 - [為 Microsoft 受管理的電腦準備備內部部署資源存取權](../get-ready/authentication.md)
 - [為 Microsoft 受管理的電腦準備對應磁碟機](../get-ready/mapped-drives.md)
 - [為 Microsoft 受管理的電腦準備認證和網路設定檔](../get-ready/certs-wifi-lan.md)

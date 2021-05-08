@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 09/28/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3b8a299f41541be878a9e9023ab330ea973646fd
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: ec3dd2edc09d504af0ed76b17577130b1cdce1b7
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764142"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275369"
 ---
-# <a name="review-microsoft-defender-antivirus-scan-results"></a>審閱 Microsoft Defender 防病毒掃描結果
+# <a name="review-microsoft-defender-antivirus-scan-results"></a>審閱 Microsoft Defender 防毒軟體掃描結果
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,12 +32,12 @@ ms.locfileid: "51764142"
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒掃描完成後，不論是 [按需](run-scan-microsoft-defender-antivirus.md) 或 [排程的掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)，都會記錄結果，您可以查看結果。 
+Microsoft Defender 防毒軟體掃描完成後，不論是[按需](run-scan-microsoft-defender-antivirus.md)或[排程的掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)，都會記錄結果，您可以查看結果。 
 
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>使用 Configuration Manager 查看掃描結果
 
-請參閱 [如何監視 Endpoint Protection 狀態](/configmgr/protect/deploy-use/monitor-endpoint-protection)。
+請參閱[如何監視 Endpoint Protection 狀態](/configmgr/protect/deploy-use/monitor-endpoint-protection)。
 
 ## <a name="use-powershell-cmdlets-to-review-scan-results"></a>使用 PowerShell Cmdlet 來複查掃描結果
 
@@ -58,14 +59,14 @@ Get-MpThreat
 
 ![PowerShell 的螢幕擷取畫面](images/defender/wdav-get-mpthreat.png)
 
-如需如何使用 Microsoft Defender 防病毒 PowerShell 的詳細資訊，請參閱 [Use PowerShell Cmdlet 來設定及執行 Microsoft Defender 防病毒](use-powershell-cmdlets-microsoft-defender-antivirus.md) 程式和 [Defender Cmdlet](/powershell/module/defender/) 。
+如需如何搭配 Microsoft Defender 防毒軟體使用 PowerShell 的詳細資訊，請參閱[Use PowerShell Cmdlet 以設定及執行 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)和[Defender Cmdlet](/powershell/module/defender/) 。
 
-## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>使用 Windows Management 指令 (WMI) 以查看掃描結果
+## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>使用 Windows 管理指令 (WMI) 以查看掃描結果
 
 使用 [ **MSFT_MpThreat** 和 **MSFT_MpThreatDetection** 類別的 **Get** 方法](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)。
 
 
 ## <a name="related-articles"></a>相關文章
 
-- [自訂、啟動和審閱 Microsoft Defender 防病毒掃描和修正的結果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [自訂、啟動及審閱 Microsoft Defender 防毒軟體掃描和修正的結果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

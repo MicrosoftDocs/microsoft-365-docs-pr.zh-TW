@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 需要適用于 Microsoft 365 的記錄管理解決方案，以管理法律、企業或法規責任的高價值內容，但不確定要從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: 2ab5eaa494094dcbf0723f426fcbd644901c22bb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: 需要適用於 Microsoft 365 的記錄管理解決方案，以管理法律、商務或法規責任的高價值內容，但不確定要從何處著手？請參閱一些實用的指導方針來開始使用。
+ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051895"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244341"
 ---
 # <a name="get-started-with-records-management"></a>開始使用記錄管理
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-準備好開始使用 Microsoft 365 中的記錄管理解決方案，著手管理貴組織的法律、商務或法規責任的高價值內容嗎？ 使用下列高層指導方針以開始進行：
+準備好開始使用 Microsoft 365 中的記錄管理解決方案，著手管理貴組織的法律、商務或法規責任的高價值內容嗎？請使用以下指導方針來開始使用：
 
 1. **瞭解記錄管理解決方案** ，以及當文件和電子郵件聲明為記錄時允許或封鎖的動作： [瞭解記錄管理](records-management.md)。 
 
@@ -53,9 +53,9 @@ ms.locfileid: "51051895"
 
 對於唯讀角色，可以建立新的角色群組，並將 **[僅檢視記錄管理]** 角色添加到此群組。 
 
-如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
+如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 
-如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有在建立、設定、和套用聲明記錄及管理處置的保留標籤時，才需要求這些權限。 設定這些保留標籤的人員毋須存取內容。
 
@@ -84,8 +84,8 @@ ms.locfileid: "51051895"
 
 ## <a name="end-user-documentation-for-records"></a>記錄的終端使用者文件
 
-記錄管理的保留標籤會在 Microsoft 365 應用程式中顯示為 UI。 在您將保留標籤部署到生產網路前，請務必為使用者和您的技術支援部門提供指導方針。
+用來記錄管理的保留標籤在 Microsoft 365 應用程式中具有 UI 狀態資訊。請務必先為終端使用者和技術支援中心提供指導方針，再將保留標籤部署到生產網路。
 
-最有效的使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 保留標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
+若要協助使用者在 SharePoint 和 OneDrive 中套用保留標籤 (該標籤包括關於解鎖編輯記錄的資訊)，請參閱 [在 SharePoint 或 OneDrive 中將保留標籤套用至檔案](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)。
 
-您也會在以下章節中找到基本的使用者指示：[手動套用保留標籤](create-apply-retention-labels.md#manually-apply-retention-labels)。
+不過，最有效的終端使用者文件會是您為所選的保留標籤名稱和設定提供的自訂指導方針和指示。 請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 保留標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。

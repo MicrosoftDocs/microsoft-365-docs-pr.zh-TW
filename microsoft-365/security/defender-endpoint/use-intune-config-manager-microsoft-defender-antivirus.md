@@ -1,13 +1,13 @@
 ---
 title: 使用 Configuration Manager 和 Intune 設定 Microsoft Defender 防毒軟體
-description: 使用 Microsoft 端點管理員和 Microsoft Intune 來設定 Microsoft Defender AV 和 Endpoint Protection
+description: 使用 Microsoft 端點管理員和 Microsoft Intune 設定 Microsoft Defender AV 和 Endpoint Protection
 keywords: scep、intune、endpoint protection、configuration
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,14 +17,14 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 0ab8dde9ba725ec256762ebedce65fdcb22a5cdf
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: b62344945efc0bdfc495a4fc4196cea6ddcb1874
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765644"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275321"
 ---
-# <a name="use-microsoft-endpoint-manager-and-microsoft-intune-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 Microsoft 端點管理員和 Microsoft Intune 來設定及管理 Microsoft Defender 防毒程式
+# <a name="use-microsoft-endpoint-manager-and-microsoft-intune-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 Microsoft 端點管理員和 Microsoft Intune 設定及管理 Microsoft Defender 防毒軟體
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,13 +33,13 @@ ms.locfileid: "51765644"
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-如果您使用 Microsoft 端點管理員或 Microsoft Intune 管理網路上的端點，您現在可以使用 Microsoft 端點管理員來管理 Microsoft Defender 防病毒掃描。
+如果您使用 Microsoft 端點管理員或 Microsoft Intune 管理網路上的端點，您現在可以使用 Microsoft 端點管理員來管理 Microsoft Defender 防毒軟體掃描。
 
-1. 在 Microsoft 端點管理員管理中心 () 中 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ，流覽至 [ **端點安全性**]。
+1. 在 Microsoft 端點管理員 admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 中，流覽至 [**端點安全性**]。
 
 2. 在 [ **管理**] 下，選擇 [ **防病毒**]。
 
-3. 選取您的 Microsoft Defender 防病毒原則。 
+3. 選取您的 Microsoft Defender 防毒軟體原則。 
 
 4. 在 [ **管理**] 下，選擇 [ **屬性**]。
 
@@ -49,10 +49,10 @@ ms.locfileid: "51765644"
 
 7. 選擇 [ **審閱 + 儲存**
 
-需要協助？ 請參閱 [Manage endpoint security In Microsoft Intune](/mem/intune/protect/endpoint-security)。
+需要協助？ 請參閱[Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security)。
 
 
 ## <a name="related-articles"></a>相關文章
 
 - [管理及設定工具的參考主題](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

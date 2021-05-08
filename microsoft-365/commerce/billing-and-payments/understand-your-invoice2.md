@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,30 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: 了解如何解讀商務用 Microsoft 365 帳單或發票上的費用、計費和付款資訊，以及如何變更採購單編號。
-ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 9eb9d063b3634269600d5f6566e9e5f373ab08c2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245013"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280482"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解您的商務用 Microsoft 365 帳單或發票
 
 > [!IMPORTANT]
-> 從2021年1月26日起，比利時、法國、義大利、盧森堡、葡萄牙、西班牙及美國版本的客戶不再支援新的銀行帳戶。 如果您是其中一個國家/地區的現有客戶，您可以繼續使用現有的銀行帳戶支付訂閱費用，而且您可以新增訂閱給它，但只要銀行帳戶為良好。
+> 自 2021 年 1 月 26 日起，針對比利時、法國、義大利、盧森堡、葡萄牙、西班牙和美國的客戶，不再支援新的銀行帳戶。 如果您是其中一個國家/地區中的現有客戶，只要銀行帳戶信用良好，您可以繼續使用現有的銀行帳戶支付訂閱費用，也可以新增新的訂閱。
 
 每月或每年 (根據您購買訂閱時選擇的選項而定)，您會收到一封電子郵件，告知您系統管理中心已提供新的對帳單。 [了解如何尋找及檢視您的帳單或發票](view-your-bill-or-invoice.md)。
   
@@ -96,7 +93,7 @@ ms.locfileid: "52245013"
 |服務使用地址|使用該服務的地址，通常與購買人地址相同。 若要更新服務使用地址，請參閱[變更帳單地址](change-your-billing-addresses.md)。|
 |購買人|您的公司名稱和地址。 若要更新這項資訊，請參閱[變更組織的地址、技術連絡人電子郵件及其他資訊](../../admin/manage/change-address-contact-and-more.md)。|
 |小計|帳單上所列的每個訂閱都有個別的 [小計] 列，其中包含所有費用、折扣、信用額度、小計、稅金的小計，以及該訂閱的 [總計] 欄。|
-|稅金|發票的第 1 頁顯示總稅金。 第 2 頁顯示適用的稅率，以及每個行項目的總稅額。 如果您的發票包含稅金但貴公司具免稅資格，請[連絡客戶支援](../../admin/contact-support-for-business-products.md)。|
+|稅金|發票的第 1 頁顯示總稅金。 第 2 頁顯示適用的稅率，以及每個行項目的總稅額。 如果您的發票包含稅金但貴公司具免稅資格，請[連絡客戶支援](../../business-video/get-help-support.md)。|
 |總計|帳單計費期間的應付金額。|
 
 ## <a name="change-your-purchase-order-number"></a>變更您的採購單編號
@@ -109,6 +106,7 @@ ms.locfileid: "52245013"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -120,16 +118,16 @@ ms.locfileid: "52245013"
 ::: moniker range="o365-21vianet"
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
+
 ::: moniker-end
 
 1. 在 **[產品]** 索引標籤上，選擇您想要變更的訂閱。
 
-1. 在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **編輯發票**]。 
+1. 在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **編輯發票**]。
 
 1. 在 [ **編輯詳細資料的詳細資料** ] 窗格的底部，輸入您的訂單編號，然後選取 [ **儲存**]。
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[支付商務用 Microsoft 365 訂閱費用](pay-for-your-subscription.md)
-
-[Minecraft: Education Edition 付款選項](/education/windows/school-get-minecraft)
+[付費 Microsoft 365 商務用訂閱](pay-for-your-subscription.md) (文章) \
+[Minecraft: Education Edition 付款選項](/education/windows/school-get-minecraft) (文章)

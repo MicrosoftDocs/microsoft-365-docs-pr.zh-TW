@@ -1,12 +1,12 @@
 ---
 title: Microsoft Defender AV 事件 IDs 和錯誤碼
-description: 查詢 Microsoft Defender 防病毒事件的原因和解決方案 IDs 和錯誤
+description: 查詢 Microsoft Defender 防毒軟體事件 IDs 和錯誤的原因和解決方案
 keywords: 事件、錯誤碼、siem、記錄、疑難排解、wef、windows 事件轉移
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,14 +14,15 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f7e8d6428360e5fe45a377f3ed6611a76f0a7911
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: cd222760f3a5cc005c679bf28365237cc70e8950
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765812"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275345"
 ---
-# <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>檢查事件記錄檔和錯誤碼，以疑難排解 Microsoft Defender 防病毒的問題
+# <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>檢查事件記錄和錯誤碼以疑難排解 Microsoft Defender 防毒軟體的問題
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,13 +31,13 @@ ms.locfileid: "51765812"
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-如果您遇到 Microsoft Defender 防病毒的問題，您可以搜尋本主題中的表格，以找出相符的問題和可能的解決方案。
+如果您遇到 Microsoft Defender 防毒軟體的問題，可搜尋本主題中的表格，以找出相符的問題和可能的解決方案。
 
 [資料表] 清單：
 
-- [Microsoft Defender 防病毒事件 IDs](#windows-defender-av-ids) (這兩種都適用于 windows 10 和 windows Server 2016) 
-- [Microsoft Defender 防病毒用戶端錯誤碼](#error-codes)
-- [內部 Microsoft Defender 防病毒用戶端錯誤碼 (由 Microsoft 在開發和測試期間使用) ](#internal-error-codes)
+- [Microsoft Defender 防毒軟體事件 IDs](#windows-defender-av-ids) (都會套用 Windows 10 及 Windows Server 2016) 
+- [Microsoft Defender 防毒軟體用戶端錯誤碼](#error-codes)
+- [內部 Microsoft Defender 防毒軟體用戶端錯誤碼 (在開發及測試期間由 Microsoft 使用) ](#internal-error-codes)
 
 > [!TIP]
 > 您也可以在 [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 流覽 Microsoft Defender for Endpoint 示範網站，以確認下列功能正在運作：
@@ -46,18 +47,18 @@ ms.locfileid: "51765812"
 > - 可能有害的應用程式封鎖
 
 <a id="windows-defender-av-ids"></a>
-## <a name="microsoft-defender-antivirus-event-ids"></a>Microsoft Defender 防病毒事件 IDs
+## <a name="microsoft-defender-antivirus-event-ids"></a>Microsoft Defender 防毒軟體事件 IDs
 
-Windows 事件記錄檔中 IDs 的 Microsoft Defender 防病毒記錄事件。
+Windows 事件記錄檔中 Microsoft Defender 防毒軟體的記錄事件 IDs。
 
-您可以直接查看事件記錄檔，或者，如果您有協力廠商的安全性資訊和事件管理 (SIEM) 工具，也可以使用 [Microsoft Defender 防病毒用戶端事件 IDs](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) 從您的終結點檢查特定的事件及錯誤。
+您可以直接查看事件記錄檔，或者，如果您有協力廠商的安全性資訊和事件管理 (SIEM) 工具，也可以使用[Microsoft Defender 防毒軟體用戶端事件 IDs](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids)以檢查您的端點中的特定事件及錯誤。
 
-本節中的表格列出主要 Microsoft Defender 防病毒事件 IDs，並在可能的情況下，提供修正或解決錯誤的建議解決方案。 
+本節中的表格列出主 Microsoft Defender 防毒軟體事件 IDs，盡可能在可能的情況下，提供修正或解決錯誤的建議解決方案。 
 
-## <a name="to-view-a-microsoft-defender-antivirus-event"></a>若要查看 Microsoft Defender 防病毒事件
+## <a name="to-view-a-microsoft-defender-antivirus-event"></a>若要查看 Microsoft Defender 防毒軟體事件
 
 1.  開啟 **事件檢視器**。
-2.  在主控台樹中，依次展開 [ **應用程式及服務記錄**]、[ **Microsoft**]、[ **Windows**] 及 [ **windows Defender**]。
+2.  在主控台樹中，展開 [**應用程式及服務記錄**] **，** 然後 **Windows**，再 **Windows Defender**]。
 3.  按兩下 [ **操作**]。
 4.  在詳細資料窗格中，查看個別事件的清單，以尋找您的事件。
 5.  按一下該事件，在 [ **一般** ] 和 [ **詳細資料** ] 索引標籤底下的下部窗格中查看事件的特定詳細資料。
@@ -320,7 +321,7 @@ Windows 事件記錄檔中 IDs 的 Microsoft Defender 防病毒記錄事件。
 使用者動作：
 </td>
 <td >
-防病毒用戶端發生錯誤，目前的掃描已停止。 掃描可能會因為用戶端問題而失敗。 此事件記錄包含掃描識別碼、掃描類型 (Microsoft Defender 防毒程式、反間諜軟體、反惡意程式碼) 、掃描參數、啟動掃描的使用者、錯誤碼，以及錯誤的描述。
+防病毒用戶端發生錯誤，目前的掃描已停止。 掃描可能會因為用戶端問題而失敗。 此事件記錄包含掃描識別碼、掃描類型 (Microsoft Defender 防毒軟體、反間諜軟體、反惡意程式碼) 、掃描參數、啟動掃描的使用者、錯誤碼，以及錯誤的描述。
 若要疑難排解此事件：
 <ol>
 <li>再次執行掃描。</li>
@@ -386,7 +387,7 @@ Windows 事件記錄檔中 IDs 的 Microsoft Defender 防病毒記錄事件。
 <li>使用者：使用者已啟動</li>
 <li>系統：系統啟動</li>
 <li>即時：啟動即時元件</li>
-<li>IOAV：已啟動 IE 下載和 Outlook Express 附件</li>
+<li>IOAV： IE 下載和 Outlook Express 附件已初始化</li>
 <li>NIS：網路檢查系統</li>
 <li>IEPROTECT： IE-IExtensionValidation;這可防止惡意的網頁控制項</li>
 <li>ELAM) 上的初期啟動反惡意軟體 (。 這包括由啟動順序偵測到的惡意程式碼</li>
@@ -396,8 +397,8 @@ UAC </dt>
 <dt>狀態： &lt; 狀態 &gt; </dt>
 <dt>使用者： &lt; 網域 &gt; \& lt;使用者 &gt; </dt>
 <dt>進程名稱： &lt; PID &gt; 簽章版本中的處理</dt>程式版本
-<dt>： &lt; 定義版本 &gt; </dt>引擎版本
-<dt>： &lt; 反惡意程式碼引擎版本 &gt; </dt>
+<dt>： &lt; 定義版本 &gt; </dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -424,7 +425,7 @@ UAC </dt>
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒已採取動作，以保護此機器免受惡意程式碼或其他可能不需要的軟體的攻擊。 如需詳細資訊，請參閱下列各主題：
+Microsoft Defender 防毒軟體已採取動作來保護此機器免受惡意程式碼或其他可能不需要的軟體的攻擊。 如需詳細資訊，請參閱下列各主題：
 <dl>
 <dt>使用者： &lt;網域 &gt; \& lt;使用者 &gt; </dt>
 <dt>名稱： &lt; 威脅名稱 &gt; </dt> 
@@ -449,7 +450,7 @@ Microsoft Defender 防病毒已採取動作，以保護此機器免受惡意程�
 </dt>
 <dt>狀態： &lt;狀態 &gt; </dt>
 <dt>簽名版本： &lt; 定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意程式碼 &gt; 引擎版本</dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -476,7 +477,7 @@ Microsoft Defender 防病毒已採取動作，以保護此機器免受惡意程�
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式在對惡意程式碼或其他可能不需要的軟體採取動作時，發生錯誤。 如需詳細資訊，請參閱下列各主題：
+Microsoft Defender 防毒軟體對惡意程式碼或其他可能不需要的軟體採取動作時，發生錯誤。 如需詳細資訊，請參閱下列各主題：
 <dl>
 <dt>使用者： &lt;網域 &gt; \& lt;使用者 &gt; </dt>
 <dt>名稱： &lt; 威脅名稱 &gt; </dt> 
@@ -504,7 +505,7 @@ Microsoft Defender 防毒程式在對惡意程式碼或其他可能不需要的�
 <dt>錯誤描述：錯誤 &lt; 描述 &gt; 錯誤的描述。</dt>
 <dt>狀態： &lt;狀態 &gt; </dt>
 <dt>簽名版本： &lt; 定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意程式碼 &gt; 引擎版本</dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -531,7 +532,7 @@ Microsoft Defender 防毒程式在對惡意程式碼或其他可能不需要的�
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒已從隔離區還原專案。 如需詳細資訊，請參閱下列各主題：
+Microsoft Defender 防毒軟體已從隔離區還原專案。 如需詳細資訊，請參閱下列各主題：
 <dl>
 <dt>名稱： &lt;威脅名稱 &gt; </dt> 
 <dt>ID: &lt; 威脅識別碼 &gt; </dt> 
@@ -546,7 +547,7 @@ Microsoft Defender 防病毒已從隔離區還原專案。 如需詳細資訊，
 <dt>路徑： &lt;檔路徑 &gt; </dt>
 <dt>使用者： &lt; 網域 &gt; \& lt;使用者 &gt; </dt>
 <dt>簽名版本： &lt; 定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意程式碼 &gt; 引擎版本</dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -590,7 +591,7 @@ Microsoft Defender 防毒軟體嘗試從隔離區還原專案時發生錯誤。 
 <dt>錯誤碼： &lt; &gt; 與威脅狀態相關聯的錯誤代碼結果代碼。標準 HRESULT 值。</dt>
 <dt>錯誤描述：錯誤 &lt; 描述 &gt; 錯誤的描述。</dt>簽章
 <dt>版本： &lt;定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意引擎 &gt; 版本</dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -617,7 +618,7 @@ Microsoft Defender 防毒軟體嘗試從隔離區還原專案時發生錯誤。 
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒已從隔離區中刪除專案。<br/>如需詳細資訊，請參閱下列各主題：
+Microsoft Defender 防毒軟體已從隔離區中刪除專案。<br/>如需詳細資訊，請參閱下列各主題：
 <dl>
 <dt>名稱： &lt;威脅名稱 &gt; </dt> 
 <dt>ID: &lt; 威脅識別碼 &gt; </dt> 
@@ -632,7 +633,7 @@ Microsoft Defender 防病毒已從隔離區中刪除專案。<br/>如需詳細�
 <dt>路徑： &lt;檔路徑 &gt; </dt>
 <dt>使用者： &lt; 網域 &gt; \& lt;使用者 &gt; </dt>
 <dt>簽名版本： &lt; 定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意程式碼 &gt; 引擎版本</dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -659,7 +660,7 @@ Microsoft Defender 防病毒已從隔離區中刪除專案。<br/>如需詳細�
 描述：
 </td>
 <td >
-Microsoft Defender 防毒軟體嘗試從隔離區刪除專案時發生錯誤。
+Microsoft Defender 防毒軟體嘗試從隔離區中刪除專案時發生錯誤。
 如需詳細資訊，請參閱下列各主題：
 <dl>
 <dt>名稱： &lt;威脅名稱 &gt; </dt> 
@@ -677,7 +678,7 @@ Microsoft Defender 防毒軟體嘗試從隔離區刪除專案時發生錯誤。
 <dt>錯誤碼： &lt; &gt; 與威脅狀態相關聯的錯誤代碼結果代碼。標準 HRESULT 值。</dt>
 <dt>錯誤描述：錯誤 &lt; 描述 &gt; 錯誤的描述。</dt>簽章
 <dt>版本： &lt;定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意引擎 &gt; 版本</dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -704,7 +705,7 @@ Microsoft Defender 防毒軟體嘗試從隔離區刪除專案時發生錯誤。
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒已移除惡意程式碼和其他可能不需要的軟體的歷程記錄。
+Microsoft Defender 防毒軟體已移除惡意程式碼和其他可能不需要的軟體的歷程記錄。
 <dl>
 <dt>時間：事件發生的時間，例如清除的史。此參數不會用於威脅事件，所以不會混淆是否為修正時間或感染時間。在這些情況下，我們特別是以動作時間或偵測時間的方式呼叫它們。</dt>
 <dt>使用者： &lt;網域 &gt; \& lt;使用者 &gt; </dt>
@@ -734,7 +735,7 @@ Microsoft Defender 防病毒已移除惡意程式碼和其他可能不需要的�
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式嘗試移除惡意程式碼與其他可能不需要的軟體的記錄時，發生錯誤。
+Microsoft Defender 防毒軟體嘗試移除惡意程式碼與其他可能不需要的軟體的記錄時會發生錯誤。
 <dl>
 <dt>時間：事件發生的時間，例如清除的史。此參數不會用於威脅事件，所以不會混淆是否為修正時間或感染時間。在這些情況下，我們特別是以動作時間或偵測時間的方式呼叫它們。</dt>
 <dt>使用者： &lt;網域 &gt; \& lt;使用者 &gt; </dt>
@@ -766,7 +767,7 @@ Microsoft Defender 防毒程式嘗試移除惡意程式碼與其他可能不需�
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒已偵測到可疑行為。<br/>如需詳細資訊，請參閱下列各主題：
+Microsoft Defender 防毒軟體偵測到可疑行為。<br/>如需詳細資訊，請參閱下列各主題：
 <dl>
 <dt>名稱： &lt;威脅名稱 &gt; </dt> 
 <dt>ID: &lt; 威脅識別碼 &gt; </dt> 
@@ -800,7 +801,7 @@ Microsoft Defender 防病毒已偵測到可疑行為。<br/>如需詳細資訊�
 <li>使用者：使用者已啟動</li>
 <li>系統：系統啟動</li>
 <li>即時：啟動即時元件</li>
-<li>IOAV：已啟動 IE 下載和 Outlook Express 附件</li>
+<li>IOAV： IE 下載和 Outlook Express 附件已初始化</li>
 <li>NIS：網路檢查系統</li>
 <li>IEPROTECT： IE-IExtensionValidation;這可防止惡意的網頁控制項</li>
 <li>ELAM) 上的初期啟動反惡意軟體 (。 這包括由啟動順序偵測到的惡意程式碼</li>
@@ -812,8 +813,8 @@ UAC </dt>
 <dt>進程名稱： &lt; PID &gt; 簽章中的處理</dt>程式
 <dt>ID: 列舉比對嚴重性。</dt>簽章
 <dt>版本： &lt;定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意程式碼 &gt; 引擎版本</dt>
-<dt>逼真度標籤：</dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
+<dt>保真標籤：</dt>
 <dt>目的檔案名：檔案名 &lt; 的檔案名 &gt; 。</dt>
 </dl>
 </td>
@@ -841,7 +842,7 @@ UAC </dt>
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式偵測到惡意程式碼或其他可能不需要的軟體。<br/>如需詳細資訊，請參閱下列各主題：
+Microsoft Defender 防毒軟體偵測到惡意程式碼或其他可能不需要的軟體。<br/>如需詳細資訊，請參閱下列各主題：
 <dl>
 <dt>名稱： &lt;威脅名稱 &gt; </dt> 
 <dt>ID: &lt; 威脅識別碼 &gt; </dt> 
@@ -875,7 +876,7 @@ Microsoft Defender 防毒程式偵測到惡意程式碼或其他可能不需要�
 <li>使用者：使用者已啟動</li>
 <li>系統：系統啟動</li>
 <li>即時：啟動即時元件</li>
-<li>IOAV：已啟動 IE 下載和 Outlook Express 附件</li>
+<li>IOAV： IE 下載和 Outlook Express 附件已初始化</li>
 <li>NIS：網路檢查系統</li>
 <li>IEPROTECT： IE-IExtensionValidation;這可防止惡意的網頁控制項</li>
 <li>ELAM) 上的初期啟動反惡意軟體 (。 這包括由啟動順序偵測到的惡意程式碼</li>
@@ -884,8 +885,8 @@ Microsoft Defender 防毒程式偵測到惡意程式碼或其他可能不需要�
 UAC </dt> 
 <dt>使用者： &lt; 網域 &gt; \& lt;使用者 &gt; </dt>
 <dt>進程名稱： &lt; PID &gt; 簽章版本中的處理</dt>程式版本
-<dt>： &lt; 定義版本 &gt; </dt>引擎版本
-<dt>： &lt; 反惡意程式碼引擎版本 &gt; </dt>
+<dt>： &lt; 定義版本 &gt; </dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -894,7 +895,7 @@ UAC </dt>
 使用者動作：
 </td>
 <td >
-不用執行任何動作。 Microsoft Defender 防毒程式可能會暫停，並對此威脅採取例行動作。 如果您想要手動移除威脅，請在 Microsoft Defender 防病毒介面中，按一下 [ <b>清理電腦</b>]。
+不用執行任何動作。 Microsoft Defender 防毒軟體可以暫掛並對此威脅採取例行動作。 如果您想要手動移除威脅，請在 Microsoft Defender 防毒軟體介面中，按一下 [<b>清理電腦</b>]。
 </td>
 </tr>
 <tr>
@@ -920,7 +921,7 @@ UAC </dt>
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒已採取動作，以保護此機器免受惡意程式碼或其他可能不需要的軟體的攻擊。<br/>如需詳細資訊，請參閱下列各主題：
+Microsoft Defender 防毒軟體已採取動作來保護此機器免受惡意程式碼或其他可能不需要的軟體的攻擊。<br/>如需詳細資訊，請參閱下列各主題：
 <dl>
 <dt>名稱： &lt;威脅名稱 &gt; </dt> 
 <dt>ID: &lt; 威脅識別碼 &gt; </dt> 
@@ -954,7 +955,7 @@ Microsoft Defender 防病毒已採取動作，以保護此機器免受惡意程�
 <li>使用者：使用者已啟動</li>
 <li>系統：系統啟動</li>
 <li>即時：啟動即時元件</li>
-<li>IOAV：已啟動 IE 下載和 Outlook Express 附件</li>
+<li>IOAV： IE 下載和 Outlook Express 附件已初始化</li>
 <li>NIS：網路檢查系統</li>
 <li>IEPROTECT： IE-IExtensionValidation;這可防止惡意的網頁控制項</li>
 <li>ELAM) 上的初期啟動反惡意軟體 (。 這包括由啟動順序偵測到的惡意程式碼</li>
@@ -1191,7 +1192,7 @@ UAC </dt>
 <dt>錯誤碼： &lt; &gt; 與威脅狀態相關聯的錯誤碼的錯誤代碼結果代碼。標準 HRESULT 值。</dt>
 <dt>錯誤描述： &lt;錯誤描述 &gt; 錯誤的描述。</dt>簽章
 <dt>版本： &lt;定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意引擎 &gt; 版本</dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -1200,7 +1201,7 @@ UAC </dt>
 使用者動作：
 </td>
 <td >
-Microsoft Defender 防病毒用戶端因嚴重問題而遇到此錯誤。 端點可能不受保護。 請複查錯誤描述，然後依照下列相關的 <b>使用者動作</b> 步驟進行。
+Microsoft Defender 防毒軟體用戶端因嚴重問題而遇到此錯誤。 端點可能不受保護。 請複查錯誤描述，然後依照下列相關的 <b>使用者動作</b> 步驟進行。
 <table>
 <tr>
 <th>動作</th>
@@ -1263,7 +1264,7 @@ Microsoft Defender 防病毒用戶端因嚴重問題而遇到此錯誤。 端點
 消息：
 </td>
 <td >
-<b>Microsoft Defender 防病毒已推匯出威脅資源的雜湊。</b>
+<b>Microsoft Defender 防毒軟體已推匯出威脅資源的雜湊。</b>
 </td>
 </tr>
 <tr>
@@ -1271,7 +1272,7 @@ Microsoft Defender 防病毒用戶端因嚴重問題而遇到此錯誤。 端點
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒用戶端已啟動並以健全的狀態運作。
+Microsoft Defender 防毒軟體用戶端已啟動並以健全的狀態運作。
 <dl>
 <dt>目前平臺版本： &lt;目前平臺版本 &gt; </dt>
 <dt>威脅資源路徑： &lt; 路徑 &gt; </dt>
@@ -1309,11 +1310,11 @@ Microsoft Defender 防病毒用戶端已啟動並以健全的狀態運作。
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒用戶端已啟動並以健全的狀態運作。
+Microsoft Defender 防毒軟體用戶端已啟動並以健全的狀態運作。
 <dl>
 <dt>平臺版本： &lt;目前平臺版本 &gt; </dt>
 <dt>簽名版本： &lt; 定義版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意程式碼 &gt; 引擎版本</dt>
+<dt>引擎版本： &lt; Antimalware Engine 版本 &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -1322,7 +1323,7 @@ Microsoft Defender 防病毒用戶端已啟動並以健全的狀態運作。
 使用者動作：
 </td>
 <td >
-不需要任何動作。 Microsoft Defender 防病毒用戶端的狀態良好。 此事件每小時報告一次。
+不需要任何動作。 Microsoft Defender 防毒軟體用戶端的狀態良好。 此事件每小時報告一次。
 </td>
 </tr>
 
@@ -1341,7 +1342,7 @@ Microsoft Defender 防病毒用戶端已啟動並以健全的狀態運作。
 消息：
 </td>
 <td >
-<b>Endpoint Protection 用戶端狀況報告 (以 UTC) 的時間 </b>
+<b>Endpoint Protection 用戶端狀況報告 (以 UTC 為單位的時間) </b>
 </td>
 </tr>
 <tr>
@@ -1351,21 +1352,21 @@ Microsoft Defender 防病毒用戶端已啟動並以健全的狀態運作。
 <td >
 防病毒用戶端狀況報告。
 <dl>
-<dt>平臺版本： &lt;目前平臺版本 &gt; </dt>
-<dt>引擎版本： &lt; 反惡意引擎 &gt; 版本</dt>
-<dt>網路即時檢查引擎版本： &lt; 網路即時檢查引擎 &gt; 版本</dt>
-<dt>防病毒碼碼版本： &lt; 防毒軟體 &gt; </dt>簽章版本反間諜軟體簽章版本：
-<dt> &lt; 反間諜軟體 &gt; </dt>簽章版本
-<dt>網路即時檢查簽章版本： &lt; 網路即時檢查特徵碼 &gt; </dt>版本
-<dt>RTP 狀態 &lt; &gt;)  (：</dt> 
-<dt> &lt; 在 Access (狀態上啟用或 &gt; 停用) </dt> 
-<dt>IOAV 狀態： &lt; IE 下載和 Outlook Express 附件狀態 &gt; (已啟用或已停用) </dt> 
-<dt>BM 狀態： &lt; 行為監控狀態 &gt; (啟用或停用) </dt>防病毒簽名保留時間： 
-<dt> &lt; 防病毒 &gt; </dt>軟體簽名保留天數 (
-<dt>最近一次 &lt; &gt; 的快速掃描</dt>保留天數：上次的快速掃描保留天數) 
-<dt>上次完整掃描保留 &lt; &gt; 天數：上次</dt>完整掃描保留天數 (的
-<dt> &lt; &gt; </dt>
-<dt>防病毒簽名建立時間) : ?&lt;防病毒簽名建立 &gt; 時間</dt>
+<dt>平臺版本： &lt;目前的平臺 &gt; 版本</dt>
+<dt>引擎版本： &lt; Antimalware Engine &gt; 版本</dt>
+<dt>網路即時檢查引擎版本 &lt; &gt; ：「網路即時檢查引擎</dt>」版本：
+<dt> &lt; 防毒軟體 &gt; </dt>簽章版本反間諜軟體簽章版本：
+<dt> &lt; 反 &gt; 間諜</dt>軟體簽章版本
+<dt>網路即時檢查簽章版本： &lt; 網路即時檢查 &gt; </dt>簽章版本 RTP 狀態： 
+<dt> &lt; 在 Access (狀態上 &gt; 啟用或停用的</dt>[
+<dt> &lt; 即時保護 &gt;)  (狀態</dt>]) 
+<dt>IOAV 狀態： &lt; IE 下載和 Outlook Express 附件狀態 &gt; (啟用或停用) </dt> 
+<dt>BM 狀態： &lt; 行為監視狀態 &gt; (啟用或停用) </dt>防毒軟體簽章： 
+<dt> &lt; 防病毒 &gt; </dt> 
+<dt> &lt; 軟體 &gt; </dt>簽章期限 (于
+<dt>最近一次的快速掃描保留天數：上次的 &lt; 快速掃描 &gt; </dt>保留天數) 
+<dt>上次完整掃描保留時間：上次完整掃描保留 &lt; &gt; 天數</dt> (
+<dt>: ?&lt;防病毒簽名建立 &gt; 時間</dt>
 <dt>反間諜軟體簽名建立時間：？ &lt;反間諜軟體簽名 &gt; 建立時間</dt>
 <dt>上次快速掃描開始時間：？ &lt;上次快速掃描開始時間 &gt; </dt>
 <dt>上次快速掃描結束時間：？ &lt;上次快速掃描結束時間 &gt; </dt>
@@ -1424,7 +1425,7 @@ Microsoft Defender 防病毒用戶端已啟動並以健全的狀態運作。
 使用者動作：
 </td>
 <td >
-不需要任何動作。 Microsoft Defender 防病毒用戶端的狀態良好。 成功更新特徵碼時會報告此事件。
+不需要任何動作。 Microsoft Defender 防毒軟體用戶端的狀態良好。 成功更新特徵碼時會報告此事件。
 </td>
 </tr>
 <tr>
@@ -1470,7 +1471,7 @@ Microsoft Defender 防毒軟體嘗試更新簽名時發生錯誤。
 <li>安裝</li>
 </ul>
 </dt>
-<dt>來源路徑：通用命名慣例的檔案共用名稱稱 (UNC) ，Windows Server Update Services 的伺服器名稱 (WSUS) /Microsoft Update/ADL。</dt> 
+<dt>來源路徑：通用命名慣例的檔案共用名稱稱 (UNC) ，Windows Server Update Services (WSUS 的伺服器名稱) /Microsoft Update/ADL。</dt> 
 <dt>簽章類型： &lt; 簽名類型 &gt; ，例如： <ul>
 <li>防毒</li>
 <li>間諜</li>
@@ -1525,7 +1526,7 @@ Microsoft Defender 防毒軟體嘗試更新簽名時發生錯誤。
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒引擎版本已更新。
+Microsoft Defender 防毒軟體引擎版本已更新。
 <dl>
 <dt>目前引擎版本： &lt;目前引擎版本 &gt; </dt>舊版引擎版本
 <dt>： &lt; 舊引擎版本 &gt; </dt>
@@ -1539,7 +1540,7 @@ Microsoft Defender 防病毒引擎版本已更新。
 使用者動作：
 </td>
 <td >
-不需要任何動作。 Microsoft Defender 防病毒用戶端的狀態良好。 當反惡意程式碼引擎成功更新時會報告此事件。
+不需要任何動作。 Microsoft Defender 防毒軟體用戶端的狀態良好。 當反惡意程式碼引擎成功更新時會報告此事件。
 </td>
 </tr>
 <tr>
@@ -1581,7 +1582,7 @@ Microsoft Defender 防毒軟體嘗試更新引擎時發生錯誤。
 使用者動作：
 </td>
 <td >
-Microsoft Defender 防病毒用戶端更新失敗。 當用戶端無法自行更新時，就會發生此事件。 此事件通常是因為更新期間網路連線中斷所造成。
+Microsoft Defender 防毒軟體用戶端更新失敗。 當用戶端無法自行更新時，就會發生此事件。 此事件通常是因為更新期間網路連線中斷所造成。
 若要疑難排解此事件：
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">更新定義</a> ，並直接在端點上強制重新掃描。</li>
@@ -1613,7 +1614,7 @@ Microsoft Defender 防病毒用戶端更新失敗。 當用戶端無法自行更
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式嘗試載入簽章時發生錯誤，並會嘗試回復回已知良好的簽名集。
+Microsoft Defender 防毒軟體嘗試載入簽章時發生錯誤，並會嘗試回復回已知良好的簽名集。
 <dl>
 <dt>嘗試的簽名：</dt>
 <dt>錯誤碼： &lt; &gt; 與威脅狀態相關聯的錯誤碼結果代碼。標準 HRESULT 值。</dt>
@@ -1628,11 +1629,11 @@ Microsoft Defender 防毒程式嘗試載入簽章時發生錯誤，並會嘗試�
 使用者動作：
 </td>
 <td >
-Microsoft Defender 防病毒用戶端嘗試下載並安裝最新的定義檔，但失敗。 當用戶端嘗試載入定義時遇到錯誤，或檔案損毀時，可能會發生此錯誤。 Microsoft Defender 防毒程式會嘗試回復回已知良好的定義集。
+Microsoft Defender 防毒軟體用戶端嘗試下載並安裝最新的定義檔，但失敗。 當用戶端嘗試載入定義時遇到錯誤，或檔案損毀時，可能會發生此錯誤。 Microsoft Defender 防毒軟體會嘗試回復回一組已知良好的定義。
 若要疑難排解此事件：
 <ol>
 <li>重新開機電腦，然後再試一次。</li>
-<li>從 <a href="https://aka.ms/wdsi">Microsoft 安全性情報網站</a>下載最新的定義。
+<li>從<a href="https://aka.ms/wdsi">Microsoft 安全情報網站</a>下載最新的定義。
 附注：從網站下載的定義檔案大小可超過 60 MB，不應做為更新定義的長期方案。
 </li>
 <li>連絡 <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft 技術支援</a>。
@@ -1663,7 +1664,7 @@ Microsoft Defender 防病毒用戶端嘗試下載並安裝最新的定義檔，�
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式無法載入反惡意程式碼引擎，因為目前的平臺版本不受支援。 Microsoft Defender 防病毒會回復回最後一個已知良好的引擎，並且會嘗試平臺更新。
+由於不支援目前平臺版本，因此 Microsoft Defender 防毒軟體無法載入反惡意程式碼引擎。 Microsoft Defender 防毒軟體會回復至最後一個已知良好的引擎，並且會嘗試進行平臺更新。
 <dl>
 <dt>目前平臺版本： &lt; 目前平臺版本&gt;</dt>
 </dl>
@@ -1723,7 +1724,7 @@ Microsoft Defender 防毒軟體嘗試更新平臺時發生錯誤。
 描述：
 </td>
 <td >
-Microsoft Defender 防毒軟體會很快需要更新平臺版本，以支援未來版本的反惡意程式碼引擎。 下載最新的 Microsoft Defender 防病毒平臺，以維持最佳的保護層級。
+Microsoft Defender 防毒軟體即將需要更新平臺版本，以支援未來版本的反惡意程式碼引擎。 下載最新的 Microsoft Defender 防毒軟體平臺，以維持最佳的保護層級。
 <dl>
 <dt>目前平臺版本： &lt; 目前平臺版本&gt;</dt>
 </dl>
@@ -1752,7 +1753,7 @@ Microsoft Defender 防毒軟體會很快需要更新平臺版本，以支援未�
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式使用動態簽章 <i>服務</i> 來取得其他簽名，以協助保護您的電腦。
+Microsoft Defender 防毒軟體使用的<i>動態特徵碼服務</i>，以取得其他簽章，以協助保護您的電腦。
 <dl>
 <dt>目前的特徵碼版本： &lt;目前 &gt; </dt>的簽章版本 
 <dt> 簽名類型： &lt; 簽名類型 &gt; ，例如： <ul>
@@ -1808,7 +1809,7 @@ Microsoft Defender 防毒程式使用動態簽章 <i>服務</i> 來取得其他�
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式使用動態簽章 <i>服務</i> 捨棄過時的簽名。
+Microsoft Defender 防毒軟體使用的<i>動態特徵碼服務</i>捨棄過時的簽名。
 <dl>
 <dt>目前的特徵碼版本： &lt;目前 &gt; </dt>的簽章版本 
 <dt> 簽名類型： &lt; 簽名類型 &gt; ，例如： <ul>
@@ -1847,7 +1848,7 @@ Microsoft Defender 防毒程式使用動態簽章 <i>服務</i> 捨棄過時的�
 使用者動作：
 </td>
 <td >
-不需要任何動作。 Microsoft Defender 防病毒用戶端的狀態良好。 當動態簽章服務成功刪除過期動態定義時，便會報告此事件。
+不需要任何動作。 Microsoft Defender 防毒軟體用戶端的狀態良好。 當動態簽章服務成功刪除過期動態定義時，便會報告此事件。
 </td>
 </tr>
 <tr>
@@ -1873,7 +1874,7 @@ Microsoft Defender 防毒程式使用動態簽章 <i>服務</i> 捨棄過時的�
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式嘗試使用動態簽章 <i>服務</i>時發生錯誤。
+Microsoft Defender 防毒軟體嘗試使用動態簽章<i>服務</i>時發生錯誤。
 <dl>
 <dt>目前的特徵碼版本： &lt;目前 &gt; </dt>的簽章版本 
 <dt> 簽名類型： &lt; 簽名類型 &gt; ，例如： <ul>
@@ -1939,7 +1940,7 @@ Microsoft Defender 防毒程式嘗試使用動態簽章 <i>服務</i>時發生�
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式已捨棄所有動態簽章 <i>服務</i> 的簽名。
+Microsoft Defender 防毒軟體捨棄所有的動態簽章<i>服務</i>簽名。
 <dl>
 <dt>目前的特徵碼版本： &lt; 目前的特徵碼版本&gt;</dt>
 </dl>
@@ -1968,7 +1969,7 @@ Microsoft Defender 防毒程式已捨棄所有動態簽章 <i>服務</i> 的簽�
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒已下載乾淨的檔案。
+Microsoft Defender 防毒軟體下載乾淨的檔案。
 <dl>
 <dt>檔案名： &lt;檔案名 &gt; 的檔案名。</dt>
 <dt>目前的特徵碼版本： &lt;目前的特徵 &gt; 碼版本</dt>
@@ -1999,7 +2000,7 @@ Microsoft Defender 防病毒已下載乾淨的檔案。
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式嘗試下載乾淨檔案時，發生錯誤。
+Microsoft Defender 防毒軟體嘗試下載乾淨檔時發生錯誤。
 <dl>
 <dt>檔案名： &lt;檔案名 &gt; 的檔案名。</dt>
 <dt>目前的特徵碼版本： &lt;&gt;目前</dt>的簽章版本
@@ -2015,7 +2016,7 @@ Microsoft Defender 防毒程式嘗試下載乾淨檔案時，發生錯誤。
 </td>
 <td >
 檢查您的網際網路連線設定。
-Microsoft Defender 防病毒用戶端在使用動態簽章服務，將最新的定義下載至特定威脅時，發生錯誤。 這種錯誤可能是網路連線問題所造成。 
+Microsoft Defender 防毒軟體用戶端使用動態簽章服務，將最新的定義下載至特定威脅時，發生錯誤。 這種錯誤可能是網路連線問題所造成。 
 </td>
 </tr>
 <tr>
@@ -2041,7 +2042,7 @@ Microsoft Defender 防病毒用戶端在使用動態簽章服務，將最新的�
 描述：
 </td>
 <td >
-在下一次重新開機時，Microsoft Defender 防病毒已下載並設定離線防病毒以執行。
+在下一次重新開機時，Microsoft Defender 防毒軟體下載和設定離線防病毒以執行。
 </td>
 </tr>
 <tr>
@@ -2067,7 +2068,7 @@ Microsoft Defender 防病毒用戶端在使用動態簽章服務，將最新的�
 描述：
 </td>
 <td >
-Microsoft Defender 防毒程式嘗試下載及設定離線防病毒時，發生錯誤。
+Microsoft Defender 防毒軟體嘗試下載和設定離線防毒程式時發生錯誤。
 <dl>
 <dt>錯誤碼： &lt;&gt;與威脅狀態相關聯的錯誤代碼結果代碼。標準 HRESULT 值。</dt>
 <dt>錯誤描述： &lt;錯誤描述 &gt; 錯誤的描述。</dt>
@@ -2416,7 +2417,7 @@ Microsoft Defender 防病毒引擎因未預期的錯誤而終止。
 使用者動作：
 </td>
 <td >
-Microsoft Defender 防病毒用戶端引擎因未預期的錯誤而停止。
+Microsoft Defender 防毒軟體用戶端引擎因未預期的錯誤而停止。
 若要疑難排解此事件：
 <ol>
 <li>再次執行掃描。</li>
@@ -2449,7 +2450,7 @@ Microsoft Defender 防病毒用戶端引擎因未預期的錯誤而停止。
 描述：
 </td>
 <td >
-已啟用 Microsoft Defender 防毒軟體和其他可能有害軟體的掃描。
+已啟用對惡意軟體和其他可能有害軟體的 Microsoft Defender 防毒軟體掃描。
 </td>
 </tr>
 <tr>
@@ -2475,7 +2476,7 @@ Microsoft Defender 防病毒用戶端引擎因未預期的錯誤而停止。
 描述：
 </td>
 <td >
-已停用 Microsoft Defender 防毒軟體和其他可能有害軟體的掃描。
+已停用針對惡意程式碼和其他可能有害軟體的 Microsoft Defender 防毒軟體掃描。
 </td>
 </tr>
 <tr>
@@ -2501,7 +2502,7 @@ Microsoft Defender 防病毒用戶端引擎因未預期的錯誤而停止。
 描述：
 </td>
 <td >
-已啟用適用于病毒的 Microsoft Defender 防病毒掃描。 
+已啟用 Microsoft Defender 防毒軟體掃描病毒。 
 </td>
 </tr>
 <tr>
@@ -2527,7 +2528,7 @@ Microsoft Defender 防病毒用戶端引擎因未預期的錯誤而停止。
 描述：
 </td>
 <td >
-已停用 Microsoft Defender 防病毒掃描防病毒功能。 
+已停用 Microsoft Defender 防毒軟體掃描病毒。 
 </td>
 </tr>
 <tr>
@@ -2553,10 +2554,10 @@ Microsoft Defender 防病毒用戶端引擎因未預期的錯誤而停止。
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒已輸入寬限期，很快就會到期。 到期後，此程式會停用防護病毒、間諜軟體和其他可能不需要的軟體。
+Microsoft Defender 防毒軟體已輸入寬限期，很快就會到期。 到期後，此程式會停用防護病毒、間諜軟體和其他可能不需要的軟體。
 <dl>
-<dt>到期原因： Microsoft Defender 防毒程式會到期的原因。</dt>
-<dt>到期日： Microsoft Defender 防毒程式會到期的日期。</dt>
+<dt>到期原因： Microsoft Defender 防毒軟體會到期的原因。</dt>
+<dt>到期日：日期 Microsoft Defender 防毒軟體會到期。</dt>
 </dl>
 </td>
 </tr>
@@ -2583,7 +2584,7 @@ Microsoft Defender 防病毒已輸入寬限期，很快就會到期。 到期後
 描述：
 </td>
 <td >
-Microsoft Defender 防病毒寬限時間已到期。 停用防護病毒、間諜軟體和其他可能不需要的軟體。
+Microsoft Defender 防毒軟體寬限時間已過期。 停用防護病毒、間諜軟體和其他可能不需要的軟體。
 <dl>
 <dt>到期原因：</dt>
 <dt>終止日期： </dt>
@@ -2595,11 +2596,11 @@ Microsoft Defender 防病毒寬限時間已到期。 停用防護病毒、間諜
 </table>
 
 <a id="error-codes"></a>
-## Microsoft Defender 防病毒用戶端錯誤碼如果 Microsoft Defender 防毒程式遇到任何問題，它通常會提供錯誤代碼來協助您進行問題的疑難排解。 最常見的錯誤是表示安裝更新時發生問題。
-本節提供下列有關 Microsoft Defender 防病毒用戶端錯誤的資訊。
+##Microsoft Defender 防毒軟體用戶端錯誤碼如果 Microsoft Defender 防毒軟體遇到任何問題，它通常會提供錯誤代碼來協助您進行問題的疑難排解。 最常見的錯誤是表示安裝更新時發生問題。
+本節提供下列關於 Microsoft Defender 防毒軟體用戶端錯誤的資訊。
 -   錯誤碼的 -   可能原因為錯誤 -   通知的現在原因
 
-使用這些表格中的資訊，協助疑難排解 Microsoft Defender 防毒程式錯誤碼。
+使用這些表格中的資訊可協助疑難排解 Microsoft Defender 防毒軟體錯誤碼。
 
 
 <table> 
@@ -2644,7 +2645,7 @@ Microsoft Defender 防病毒寬限時間已到期。 停用防護病毒、間諜
 <li>更新定義。 可<ol>
 <li>在 Microsoft Defender 防毒軟體的 [<b>更新</b>] 索引標籤上，按一下 [<b>更新定義</b>] 按鈕。 <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>或是，
 </li>
-<li>從 <a href="https://aka.ms/wdsi">Microsoft 安全性情報網站</a>下載最新的定義。
+<li>從<a href="https://aka.ms/wdsi">Microsoft 安全情報網站</a>下載最新的定義。
 附注：從網站下載的定義檔案大小可超過 60 MB，不應做為更新定義的長期方案。
 </li>
 </ol>
@@ -2671,7 +2672,7 @@ Microsoft Defender 防病毒寬限時間已到期。 停用防護病毒、間諜
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
-此錯誤表示 Microsoft Defender 防毒程式無法隔離威脅。 
+此錯誤表示 Microsoft Defender 防毒軟體無法隔離威脅。 
 </td>
 </tr>
 <tr>
@@ -2696,7 +2697,7 @@ Microsoft Defender 防病毒寬限時間已到期。 停用防護病毒、間諜
 </tr><tr><td>解決方案
 </td>
 <td>
-請先執行 <a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft 安全掃描器</a> 更新您的安全性軟體，然後再試一次。 
+請執行<a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft 安全掃描工具</a>，更新您的安全性軟體，然後再試一次。 
 </td>
 </tr>
 <tr>
@@ -2733,7 +2734,7 @@ Microsoft Defender 防病毒寬限時間已到期。 停用防護病毒、間諜
 <td>
 此錯誤表示可能不支援在容器類型中移除。 
 </td></tr><tr><td>解決方案</td><td>
-Microsoft Defender 防病毒無法修正在封存中偵測到的威脅。 請考慮手動移除偵測到的資源。 
+Microsoft Defender 防毒軟體無法修正在封存中偵測到的威脅。 請考慮手動移除偵測到的資源。 
 </td>
 </tr>
 <tr>
@@ -2769,7 +2770,7 @@ Microsoft Defender 防病毒無法修正在封存中偵測到的威脅。 請考
 <td>
 此錯誤表示需要離線掃描。 
 </td></tr><tr><td>解決方案</td><td>
-執行離線的 Microsoft Defender 防毒軟體。 您可以在 <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">離線的 Microsoft Defender 防病毒文章</a>中閱讀如何執行此動作的資訊。
+執行離線 Microsoft Defender 防毒軟體。 您可以在<a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">離線 Microsoft Defender 防毒軟體文章</a>中閱讀如何執行此動作。
 </td>
 </tr>
 <tr>
@@ -2779,13 +2780,13 @@ Microsoft Defender 防病毒無法修正在封存中偵測到的威脅。 請考
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>可能的原因</td>
 <td>
-此錯誤表示 Microsoft Defender 防毒軟體不支援目前版本的平臺，且需要新版本的平臺。 
+此錯誤指出 Microsoft Defender 防毒軟體不支援目前平臺版本，且需要新版本的平臺。 
 </td></tr><tr><td>解決方案</td><td>
-在 Windows 10 中您只能使用 Microsoft Defender 防病毒。 若為 Windows 8、Windows 7 和 Windows Vista，您可以使用 <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>。<br/></td>
+Windows 10 中只能使用 Microsoft Defender 防毒軟體。 針對 Windows 8，Windows 7 和 Windows 的 Vista，您可以使用<a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>。<br/></td>
 </tr>
 </table>
 
-<a id="internal-error-codes"></a> 在 Microsoft Defender 防病毒的內部測試期間會使用下列錯誤碼。
+<a id="internal-error-codes"></a>在 Microsoft Defender 防毒軟體內部測試期間會使用下列錯誤碼。
 
 如果您看到這些錯誤，您可以嘗試 [更新定義](manage-updates-baselines-microsoft-defender-antivirus.md) ，並直接在端點上強制重新掃描。
 
@@ -3114,5 +3115,5 @@ Microsoft Defender 防病毒無法修正在封存中偵測到的威脅。 請考
 
 ## <a name="related-topics"></a>相關主題
 
-- [報告 Microsoft Defender 防防毒保護](report-monitor-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [報告 Microsoft Defender 防毒軟體保護](report-monitor-microsoft-defender-antivirus.md)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

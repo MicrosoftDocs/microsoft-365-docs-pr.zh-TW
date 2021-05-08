@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
-search.appverid:
-- MET150
-description: '瞭解在不同地區，您要對 Microsoft 365 for business 訂閱收取多少稅收。 '
+search.appverid: MET150
+description: '找出您的 Microsoft 365 用於不同地區之商務訂閱的稅金。 '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a7aa1e1825e41f463de17eebd676d8168a56d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- commerce_billing
+- PPM_jmueller
+ms.date: 03/17/2021
+ms.openlocfilehash: fc1e2924a6b28c30841f890396d5d82ed2944bea
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911707"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280592"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -35,6 +36,7 @@ ms.locfileid: "50911707"
 
 :::row:::
     :::column:::
+
 - 亞美尼亞
 - 澳洲
 - 奧地利
@@ -99,13 +101,13 @@ ms.locfileid: "50911707"
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>歐洲、中東及非洲 (EMEA)
 
-當您在 EMEA 地區購買 Microsoft 365 服務時，這項採購可能會受到 Value-Added 加值稅 (加值稅) 的制約。
+當您購買 EMEA 地區的 Microsoft 365 服務時，這項產品可能會受到 Value-Added 加值稅) 的 (。
   
 - 如果您位於歐盟成員狀態、亞美尼亞、白俄羅斯、挪威、土耳其或阿拉伯聯合大公國，但您不提供有效的當地 加值稅 ID，則 Microsoft 愛爾蘭運作公司會根據您帳戶所設定的計費國家/地區，套用目前的本機 加值稅 率。
 
 - 如果您位於列支敦斯登、俄羅斯、塞爾維亞、南非或瑞士，就會套用加值稅，不論您是否提供您的 加值稅 ID 也是一樣。
 
-- 針對歐盟客戶，在驗證您的 加值稅 ID 之前，必須先在加值稅資訊 Exchange 系統 (VIES) 中進行驗證。 如果您無法驗證您的 加值稅 ID，請與當地的稅務機關聯繫。
+- 針對歐盟客戶，在驗證您的 vat ID 之前，必須先在加值稅資訊 Exchange 系統 (VIES) 中進行驗證。 如果您無法驗證您的 加值稅 ID，請與當地的稅務機關聯繫。
 
 在下列情況中，您可能會有資格取得 加值稅 零分級：
   
@@ -131,15 +133,15 @@ ms.locfileid: "50911707"
 
 在美國、加拿大、墨西哥、智利和哥倫比亞，各稅率的套用取決於產品性質和您的位置。
   
-如果您的帳單是由 Microsoft Corporation 執行 ([請參閱您的發票](view-your-bill-or-invoice.md)) ，且您已註冊美國、加拿大、波多黎各、智利和哥倫比亞的 Microsoft 365，否則稅收一般不會收費。
+如果您的帳單是由 Microsoft Corporation 執行 ([請參閱您的發票](view-your-bill-or-invoice.md)) ，並且您已註冊 Microsoft 365 美國、加拿大、波多黎各、智利和哥倫比亞境外，否則稅收一般不會收費。
 
 ## <a name="add-your-vat-id"></a>新增您的 加值稅 ID
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 在 **[產品]** 索引標籤上，選擇您想要更新的訂閱。
 3. 在 [訂閱詳細資料] 頁面上，選取 [ **服務使用位址** ] 區段中的 [ **編輯服務使用位址**]。
 4. 在 [ **編輯服務使用位址** ] 窗格的 [ **加值稅 號碼** ] 方塊中，輸入您的 加值稅 ID （包括前置詞），且不含任何空格。
-5. 選取 [儲存]。
+5. 選取 [儲存 **]**。
 
 ## <a name="how-taxes-are-calculated"></a>如何計算稅金
 
@@ -155,7 +157,7 @@ ms.locfileid: "50911707"
 
 ## <a name="apply-for-tax-exempt-status"></a>申請免稅狀態
 
-如果您在市場上有資格享受免稅狀態，請 [啟動服務要求](/office365/admin/contact-support-for-business-products) ，為您的組織建立免稅狀態。
+如果您在市場上有資格享受免稅狀態，請 [啟動服務要求](../../business-video/get-help-support.md) ，為您的組織建立免稅狀態。
 
 |國家或地區 | 文件 |
 |------------------|----------------|

@@ -24,17 +24,17 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護，以保護其組織免受使用惡意 URLs 的網路釣魚和其他攻擊。
+description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護，以保護其組織免受網路釣魚和其他使用惡意 URLs 攻擊的攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c93ed2ec46cd0fd82ae1808ff7cfdb4a4f758117
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274433"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246498"
 ---
-# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全連結
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的安全連結
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -43,32 +43,32 @@ ms.locfileid: "52274433"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](defender-for-office-365.md) 的商務客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人版，且您在 Outlook 中尋找 Safelinks 的相關資訊，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](defender-for-office-365.md) 的商務客戶。 如果您正在使用 Outlook .com、Microsoft 365 家用版或 Microsoft 365 個人版，而且您正在尋找 Outlook 的 Safelinks 相關資訊，請參閱[Advanced Outlook .com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-安全連結是 [Office 365 的 Defender](defender-for-office-365.md) 中的一項功能，可提供郵件流程中的輸入電子郵件訊息的 URL 掃描和修正，以及電子郵件及其他位置中 URLs 和連結的時間驗證。 在 Exchange Online Protection (EOP) 中，除了內送電子郵件訊息中的一般 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md) 之外，也會進行安全連結掃描。 安全連結掃描可協助保護您的組織免受網路釣魚和其他攻擊中所用的惡意連結。
+安全連結是[Office 365](defender-for-office-365.md)中的功能，可提供郵件流程的 URL 掃描和修正輸入電子郵件，以及電子郵件和其他位置中的 URLs 和連結的時間驗證。 除了 Exchange Online Protection (EOP) 的輸入電子郵件中的一般[反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)之外，也會進行安全連結掃描。 安全連結掃描可協助保護您的組織免受網路釣魚和其他攻擊中所用的惡意連結。
 
 在下列位置可取得安全連結保護：
 
-- **電子郵件訊息**：安全連結保護電子郵件訊息中的連結是由安全連結原則所控制。 沒有預設的安全連結原則， **因此若要在電子郵件中取得安全連結的保護，您必須建立一或多個安全連結原則**。 如需相關指示，請參閱 [設定 Microsoft Defender For Office 365 中的安全連結原則](set-up-safe-links-policies.md)。
+- **電子郵件訊息**：安全連結保護電子郵件訊息中的連結是由安全連結原則所控制。 沒有預設的安全連結原則， **因此若要在電子郵件中取得安全連結的保護，您必須建立一或多個安全連結原則**。 如需相關指示，請參閱[為 Office 365 設定 Microsoft Defender 中的安全連結原則](set-up-safe-links-policies.md)。
 
   如需電子郵件安全連結保護的詳細資訊，請參閱本文稍後的 [ [電子郵件的安全連結設定](#safe-links-settings-for-email-messages) ] 區段。
 
-- **Microsoft 團隊** (目前在點擊預覽) ：對小組交談、群組聊天或管道中的連結的安全連結保護也是由安全連結原則所控制。 沒有預設的安全連結原則， **因此若要在小組中取得安全連結的保護，您必須建立一或多個安全連結原則**。
+- **Microsoft Teams** (目前在點擊預覽) ： Teams 交談、群組聊天或頻道中的連結的安全連結保護也是由安全連結原則所控制。 沒有預設的安全連結原則，**因此若要在 Teams 中取得安全連結的保護，您必須建立一或多個安全連結原則**。
 
-  如需小組中安全連結保護的詳細資訊，請參閱本文稍後的 [ [Microsoft 小組的安全連結設定](#safe-links-settings-for-microsoft-teams) ] 區段。
+  如需 Teams 中安全連結保護的詳細資訊，請參閱本文稍後的「Microsoft Teams」區段的 [[安全連結] 設定](#safe-links-settings-for-microsoft-teams)。
 
-- **Office 365 應用程式**： office 365 應用程式的安全連結保護可在支援的桌面、行動裝置和 web 應用程式中取得。 您可以在安全連結原則 **以外** 的全域設定中，**設定** Office 365 應用程式的安全連結保護。 如需相關指示，請參閱 [在 Microsoft Defender For Office 365 中設定安全連結設定的全域設定](configure-global-settings-for-safe-links.md)。
+- **Office 365 應用程式**： Office 365 應用程式的安全連結保護可在支援的桌面、行動裝置和 web 應用程式中取得。 您可以在安全連結原則 **以外** 的全域設定中，**設定** Office 365 應用程式的安全連結保護。 如需相關指示，請參閱[設定 Microsoft Defender 中安全連結設定的通用設定 Office 365](configure-global-settings-for-safe-links.md)。
 
-  Office 365 應用程式的安全連結保護會套用至組織中所有授權于 Office 365 的使用者，不論使用者是否包含在 active 安全連結原則中。
+  Office 365 應用程式的安全連結保護會套用至組織中所有授權使用 Defender Office 365 的使用者，不論使用者是否包含在 active 安全連結原則中。
 
-  如需 Office 365 應用程式中安全連結保護的詳細資訊，請參閱本文稍後的 [office 365 應用程式的安全連結設定](#safe-links-settings-for-office-365-apps) 一節。
+  如需 Office 365 應用程式中安全連結保護的詳細資訊，請參閱本文稍後的「Office 365 app」區段的 [[安全連結] 設定](#safe-links-settings-for-office-365-apps)。
 
 本文包含下列安全連結設定類型的詳細描述：
 
-- **安全連結原則中的設定**：這些設定僅適用于包含在特定原則中的使用者，而且各原則的設定可能不同。 這些設定包含：
+- **在安全連結原則中設定**：這些設定只會套用至特定原則中所包含的使用者，而且各原則的設定可能會不同。 這些設定包含：
 
   - [電子郵件訊息的安全連結設定](#safe-links-settings-for-email-messages)
-  - [Microsoft 小組的安全連結設定](#safe-links-settings-for-microsoft-teams)
+  - [Microsoft Teams 的安全連結設定](#safe-links-settings-for-microsoft-teams)
   - [安全連結原則中的「不要重新寫入下列 URLs」清單](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
 - **全域安全連結設定**：這些設定會全域設定，而不是在安全連結原則中。 不過，這些設定僅適用于包含在使用中安全連結原則中的使用者。 這些設定包含：
@@ -76,7 +76,7 @@ ms.locfileid: "52274433"
   - [Office 365 應用程式的安全連結設定](#safe-links-settings-for-office-365-apps)
   - [安全連結的「封鎖下列 URLs」清單](#block-the-following-urls-list-for-safe-links)
 
-下表說明 Microsoft 365 和 Office 365 組織中包含 Office 365 的 Defender 的安全連結案例 (換句話說，缺乏授權是) 範例中的問題。
+下表說明 Microsoft 365 和 Office 365 組織中的安全連結案例，也就是包含 Office 365 (的 Defender，也就是說，缺乏授權不是範例) 中的問題。
 
 <br>
 
@@ -84,9 +84,9 @@ ms.locfileid: "52274433"
 
 |案例|結果|
 |---|---|
-|Jean-francois 是行銷部門的成員。 在安全連結的通用設定中開啟 Office 365 應用程式的安全連結保護，以及適用于行銷部門成員的安全連結原則。 Jean-francois 會在電子郵件訊息中開啟 PowerPoint 簡報，然後按一下簡報中的 URL。|Jean-francois 受到安全連結的保護。 <p> Jean-francois 包含在安全連結原則中，且已開啟 Office 365 應用程式的安全連結保護。 <p> 如需 Office 365 應用程式中安全連結保護需求的詳細資訊，請參閱本文稍後的「 [Office 365 應用程式的安全連結設定](#safe-links-settings-for-office-365-apps) 」一節。|
+|Jean-francois 是行銷部門的成員。 Office 365 應用程式的安全連結保護會在安全連結的通用設定中開啟，而且會存在套用至行銷部門成員的安全連結原則。 jean-francois 會在電子郵件訊息中開啟 PowerPoint 簡報，然後按一下簡報中的 URL。|Jean-francois 受到安全連結的保護。 <p> jean-francois 包含在安全連結原則中，且已開啟 Office 365 應用程式的安全連結保護。 <p> 如需 Office 365 應用程式中安全連結保護需求的詳細資訊，請參閱本文稍後的「Office 365 app」區段的 [[安全連結] 設定](#safe-links-settings-for-office-365-apps)。|
 |Chris 的 Microsoft 365 E5 組織未設定安全連結原則。 Chris 會接收來自外部寄件者的電子郵件，該寄件者包含的 URL 指向他最後按一下的惡意網站。|Chris 未受到安全連結的保護。 <p> 管理員至少必須建立一個安全連結原則，以供任何人取得輸入電子郵件訊息中的安全連結保護。 在原則的條件中必須包含 Chris，才可取得安全連結保護。|
-|在 Pat 的組織中，沒有系統管理員已建立任何安全連結原則，但已開啟 Office 365 應用程式的安全連結保護。 Pat 開啟 Word 檔，然後按一下檔案中的 URL。|Pat 未受到安全連結的保護。 <p> 雖然以全域方式開啟 Office 365 應用程式的安全連結保護，但 Pat 並未包含在任何使用中的安全連結原則中，因此無法套用保護。|
+|在 Pat 的組織中，沒有系統管理員已建立任何安全連結原則，但已開啟 Office 365 應用程式的安全連結保護。 Pat 開啟 Word 檔，然後按一下檔案中的 URL。|Pat 未受到安全連結的保護。 <p> 雖然 Office 365 應用程式的安全連結保護已全域開啟，但 Pat 並未包含在任何使用中的安全連結原則中，因此無法套用保護。|
 |在「企業版的組織」中，于 [ `https://tailspintoys.com` 安全連結的全域設定] 中的 [ **封鎖下列 URLs** ] 清單中設定。 包含「擁有先生」的安全連結原則已存在。 「電子郵件」會收到包含 URL 的電子郵件 `https://tailspintoys.com/aboutus/trythispage` 。 Lee 按下該 URL。|您可以自動封鎖此 URL。這取決於清單中的 URL 專案和使用的電子郵件用戶端。 如需詳細資訊，請參閱本文稍後的「 [阻止下列 URLs 的安全連結」清單](#block-the-following-urls-list-for-safe-links) 一節。|
 |曉明和 Julia 這兩個 contoso.com 的工作。 很久之前，系統管理員設定了同時適用于曉明和 Julia 的安全連結原則。 曉明會將電子郵件傳送至 Julia，而不知道電子郵件中包含惡意 URL。|**如果** 套用至她的安全連結原則設定為套用至內部收件者之間的郵件，則安全連結會保護 Julia。 如需詳細資訊，請參閱本文稍後的「 [電子郵件的安全連結設定](#safe-links-settings-for-email-messages) 」一節。|
 |
@@ -101,17 +101,19 @@ ms.locfileid: "52274433"
 
 - **選取郵件中不明的潛在惡意 URLs 動作**：啟用或停用電子郵件中的安全連結掃描。 建議值為 **On**。 開啟此設定會產生下列動作。
 
-  - 在 Windows (C2R) 的 Outlook 中啟用安全連結掃描。
+  - Outlook (C2R) 上的 Windows 上啟用安全連結掃描。
   - URLs 會在郵件中按一下 [URLs] 中的 [安全連結保護]，以重新寫入。
   - 按一下時，會針對已知的惡意 URLs 清單及「 [封鎖下列 URLs」清單](#block-the-following-urls-list-for-safe-links)，檢查 URLs。
   - 不具備有效信譽的 URLs 會在背景中以非同步方式引爆。
 
 - **對指向檔案的可疑連結和連結套用即時 URL 掃描**：可即時掃描連結，包含指向可下載內容的電子郵件訊息中的連結。 建議的值為 enabled。
+
   - **等候 URL 掃描完成之後，才會傳遞郵件**：
+
     - 已啟用：包含 URLs 的郵件會一直保留，直到完成掃描為止。 只有在 URLs 確認為安全後，才會傳遞郵件。 此為建議值。
     - Disabled：如果無法完成 URL 掃描，請傳送郵件。
 
-- 對 **組織內傳送的電子郵件套用安全連結**：啟用或停用安全連結掃描在相同 Exchange Online 組織內的內部寄件者和內部收件者之間傳送的郵件。 建議的值為 enabled。
+- 套用 **安全連結至組織內傳送的電子郵件**：啟用或停用在相同 Exchange Online 組織內的內部寄件者和內部收件者之間所傳送的郵件上，啟用或停用安全連結掃描。 建議的值為 enabled。
 
 - **請勿追蹤使用者點擊**：啟用或停用儲存安全連結按一下 [電子郵件訊息] 中的 [URLs 的資料]。 建議值為將此設定保留未選取狀態 (以追蹤使用者點擊) 。
 
@@ -119,13 +121,14 @@ ms.locfileid: "52274433"
 
 - **不允許使用者依序按一下原始 url**：允許或封鎖使用者按一下 [ [警告] 頁面](#warning-pages-from-safe-links) 至原始 url。 建議值已啟用。
 
-- **在通知和警告頁面上顯示組織商標**：此選項會在警告頁面上顯示組織的署名。 署名可協助使用者識別合法的警告，因為攻擊者經常會使用預設的 Microsoft 警告頁面。 如需自訂商標的詳細資訊，請參閱 [自訂群組織的 Microsoft 365 主題](../../admin/setup/customize-your-organization-theme.md)。
+- **在通知和警告頁面上顯示組織商標**：此選項會在警告頁面上顯示組織的署名。 署名可協助使用者識別合法的警告，因為攻擊者經常會使用預設的 Microsoft 警告頁面。 如需自訂商標的詳細資訊，請參閱[自訂群組織的 Microsoft 365 主題](../../admin/setup/customize-your-organization-theme.md)。
 
 - **請勿重新寫入下列 URLs**：保留 URLs。 保留不需要掃描之安全 URLs 的自訂清單。 每個安全連結原則的清單都是唯一的。 如需 [不要重新 **寫入下列 URLs** ] 清單的詳細資訊，請參閱本文稍後的「 [安全連結原則中的「不要重新寫入下列 URLs」清單](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) 」一節。
 
   如需安全連結原則之標準和嚴格原則設定的建議值的詳細資訊，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
 - **收件者篩選器**：您必須指定收件者條件和例外狀況，以決定要套用的原則。 您可以使用這些屬性做為條件和例外狀況：
+
   - **收件者是**
   - **收件者網域是**
   - **收件者是以下的成員**
@@ -154,14 +157,14 @@ ms.locfileid: "52274433"
 
    - 如果此 URL 確定為安全，網站會開啟。
 
-## <a name="safe-links-settings-for-microsoft-teams"></a>Microsoft 小組的安全連結設定
+## <a name="safe-links-settings-for-microsoft-teams"></a>Microsoft Teams 的安全連結設定
 
 > [!IMPORTANT]
-> 從3月2020，這項功能只是在預覽中，僅供 Microsoft 小組技術採用計畫的成員使用 (點擊) 。 如需發行排程的相關資訊，請參閱 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams)。
+> 到2020年3月為止，這項功能只是在預覽中，僅供 Microsoft Teams 技術採用計畫的成員 (點擊) 。 如需發行排程的相關資訊，請參閱[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams)。
 
-您可以在安全連結原則中啟用或停用 Microsoft 小組的安全連結保護。 具體說來，您可以在 **Microsoft 小組設定中，針對未知或可能惡意的 URLs** ，使用 [選取] 動作。 建議值為 **On**。
+您可以在安全連結原則中啟用或停用 Microsoft Teams 的安全連結保護。 具體說來，您可以在 **Microsoft Teams 設定內，針對未知或可能惡意的 URLs** ，使用 [選取] 動作。 建議值為 **On**。
 
-在 [安全連結原則] 中，套用至電子郵件中連結的下列設定也適用于小組中的連結：
+在 [安全連結原則] 中，套用至電子郵件中連結的下列設定也適用于 Teams 中的連結：
 
 - **針對可疑的連結和指向檔案的連結套用即時 URL 掃描**
 - **不要追蹤使用者點選**
@@ -169,65 +172,65 @@ ms.locfileid: "52274433"
 
 這些設定會在電子郵件 [的安全連結設定中對](#safe-links-settings-for-email-messages)先前的說明。
 
-在您開啟 Microsoft 小組的安全連結保護之後，當受保護的使用者按一下連結時 (的 [保護]) 時，就會檢查小組中 URLs 的已知惡意連結清單。 不會重寫 URLs。 若發現有惡意的連結，使用者將有下列經驗：
+在您開啟 Microsoft Teams 的安全連結保護之後，當受保護的使用者按一下連結時，Teams 中的 URLs 會檢查中的已知惡意連結， ([保護]) 。 不會重寫 URLs。 若發現有惡意的連結，使用者將有下列經驗：
 
-- 如果連結已按一下小組交談中的 [群組聊天] 或 [來自通道]，則 [警告] 頁面會顯示在預設網頁瀏覽器中（如下列螢幕擷取畫面所示）。
-- 如果從釘選的索引標籤按一下連結，則 [警告] 頁面會出現在該索引標籤的 [小組] 介面中。出於安全性原因，在網頁瀏覽器中開啟連結的選項已停用。
+- 如果在 Teams 交談、群組聊天或從通道中按一下連結，則會在預設網頁瀏覽器中顯示 [警告] 頁面（如下列螢幕擷取畫面所示）。
+- 如果從釘選的索引標籤按一下連結，則 [警告] 頁面會出現在該索引標籤的 Teams 介面中。出於安全性原因，在網頁瀏覽器中開啟連結的選項已停用。
 - 根據已設定原則中 [ **不允許使用者點擊至原始 url** ] 設定的方式，使用者將不允許按一下原始 Url (**繼續 (不建議** 在螢幕擷取畫面) 中) 。 建議您啟用 [ **不允許使用者點擊至原始 url** ] 設定，讓使用者無法按一下原始 url。
 
-如果已啟用團隊保護的安全連結原則中未包含傳送連結的使用者，則使用者可以隨意按一下其電腦或裝置上的原始 URL。
+如果傳送連結的使用者不包含在啟用 Teams 保護的安全連結原則中，使用者可以隨意按一下其電腦或裝置上的原始 URL。
 
-![「小組的安全連結」頁面報告惡意連結。](../../media/tp-safe-links-for-teams-malicious.png)
+![Teams 頁面報告惡意連結的安全連結。](../../media/tp-safe-links-for-teams-malicious.png)
 
 按一下 [警告] 頁面上的 [ **後退** ] 按鈕，會將使用者傳回其原始的內容或 URL 位置。 不過，再次按一下原始連結會導致安全的連結重新掃描 URL，因此會重新顯示 [警告] 頁面。
 
-### <a name="how-safe-links-works-in-teams"></a>安全連結在小組中的運作方式
+### <a name="how-safe-links-works-in-teams"></a>安全連結在 Teams 中的運作方式
 
-在較高的層次，以下是 Microsoft 小組中 URLs 的安全連結保護的運作方式：
+在較高的層次，以下是 Microsoft Teams 中 URLs 的安全連結保護的運作方式：
 
-1. 使用者啟動小組應用程式。
+1. 使用者啟動 Teams 應用程式。
 
-2. Microsoft 365 會驗證使用者的組織是否包含 Microsoft Defender for Office 365，以及是否將使用者加入使用中的安全連結原則，以啟用 Microsoft 小組的保護功能。
+2. Microsoft 365 驗證使用者的組織包含 Office 365 的 Microsoft Defender，且使用者已包含在啟用 Microsoft Teams 保護功能的使用中安全連結原則中。
 
 3. 在聊天、群組聊天、頻道及標籤式中按一下使用者時，會驗證 URLs。
 
 ## <a name="safe-links-settings-for-office-365-apps"></a>Office 365 應用程式的安全連結設定
 
-適用于 Office 365 應用程式的安全連結保護會檢查 Office 檔中的連結，不會檢查電子郵件中的連結 (但是可以在開啟檔後，檢查電子郵件中附加 Office 檔中的連結) 。
+Office 365 應用程式的安全連結保護會檢查 Office 檔中的連結，但不會檢查電子郵件中的連結 (但是可以在開啟檔後，檢查電子郵件中附加的 Office 檔中的連結) 。
 
-適用于 Office 365 應用程式的安全連結保護具有下列用戶端需求：
+Office 365 應用程式的安全連結保護具有下列用戶端需求：
 
-- Microsoft 365 應用程式或 Microsoft 365 商務版 Premium。
-  - Windows、Mac 或網頁瀏覽器中目前的 Word、Excel 及 PowerPoint 版本。
-  - IOS 或 Android 裝置上的 Office 應用程式。
+- Microsoft 365 Apps 或 Microsoft 365 商務進階版。
+  - Windows、Mac 或網頁瀏覽器中的目前 Word、Excel 及 PowerPoint 的版本。
+  - Office iOS 或 Android 裝置上的應用程式。
   - Windows 上的 Visio。
   - 在網頁瀏覽器中 OneNote。
 
-- Office 365 應用程式已設定為使用新式驗證。 如需詳細資訊，請參閱 [如何針對 office 2013、office 2016 和 office 2019 用戶端應用程式運作新式驗證](../../enterprise/modern-auth-for-office-2013-and-2016.md)。
+- Office 365 應用程式設定為使用新式驗證。 如需詳細資訊，請參閱[如何處理 Office 2013、Office 2016 及 Office 2019 用戶端應用程式的新式驗證](../../enterprise/modern-auth-for-office-2013-and-2016.md)。
 
-- 使用者已使用其工作或學校帳戶登入。 如需詳細資訊，請參閱登 [入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。
+- 使用者已使用其工作或學校帳戶登入。 如需詳細資訊，請參閱登[入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。
 
-您可以在安全連結的全域設定中，設定 Office 365 應用程式的安全連結保護，而不是在安全連結原則中設定。 不管使用者是否包含在使用中的安全連結原則中，均會將保護套用至組織中所有授權于 Office 365 的使用者。
+您可以在安全連結的全域設定中，設定 Office 365 應用程式的安全連結保護，而不是在安全連結原則中。 不管使用者是否包含在使用中的安全連結原則中，均會將保護套用至組織中所有授權 Office 365 的使用者。
 
-下列安全連結設定可用於 Office 365 應用程式：
+Office 365 應用程式可使用下列安全連結設定：
 
-- **Office 365 應用程式**：啟用或停用支援的 office 365 應用程式中的安全連結掃描。 預設值和建議值為 [ **開啟**]。
+- **Office 365 應用程式**：啟用或停用支援的 Office 365 應用程式中的安全連結掃描。 預設值和建議值為 [ **開啟**]。
 
-- **不要追蹤使用者按一下 [安全連結**] 的時間：啟用或停用儲存安全連結按一下桌上出版本 Word、Excel、PowerPoint 和 Visio 中 URLs 所按一下的 [資料]。 建議的值為 **Off**，這表示會追蹤使用者按一下。
+- **當使用者按一下 [安全連結] 時，請勿追蹤**：啟用或停用儲存安全連結：在桌上出版本 Word、Excel、PowerPoint 及 Visio 中，按一下 [URLs 的資料]。 建議的值為 **Off**，這表示會追蹤使用者按一下。
 
-- **請勿讓使用者點擊 [安全連結至原始 url**]：允許或封鎖使用者在桌上出版本 Word、Excel、PowerPoint 和 Visio 中，按一下 [ [警告] 頁面](#warning-pages-from-safe-links) 中的原始 url。 預設值和建議值為 [ **開啟**]。
+- **不要讓使用者點擊 [安全連結至原始 url**]：允許或封鎖使用者在桌上出版本 Word、Excel、PowerPoint 及 Visio 中，按一下 [[警告] 頁面](#warning-pages-from-safe-links)中的原始 url。 預設值和建議值為 [ **開啟**]。
 
-若要設定 Office 365 應用程式的安全連結設定，請參閱 [設定 office 365 應用程式的安全連結保護](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center)。
+若要設定 Office 365 應用程式的安全連結設定，請參閱[設定 Office 365 應用程式的安全連結保護](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center)。
 
 如需標準和嚴格原則設定之建議值的詳細資訊，請參閱 [通用連結的通用設定](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links)。
 
-### <a name="how-safe-links-works-in-office-365-apps"></a>Office 365 應用程式中的安全連結的運作方式
+### <a name="how-safe-links-works-in-office-365-apps"></a>安全連結在 Office 365 應用程式中的運作方式
 
-在較高的層次，以下是 Office 365 應用程式中 URLs 安全連結保護的運作方式。 上一節將說明支援的 Office 365 應用程式。
+在較高的層次，以下是 Office 365 應用程式中 URLs 的安全連結保護的運作方式。 上一節將說明支援的 Office 365 應用程式。
 
-1. 使用者在包含 Microsoft 365 應用程式或 Microsoft 365 商務版的組織中，使用他們的公司或學校帳戶登入。
+1. 使用者在包含 Microsoft 365 Apps 或 Microsoft 365 商務進階版的組織中，使用其工作或學校帳戶登入。
 
-2. 使用者開啟並按一下連結的 Office 檔位於支援的 Office 應用程式中。
+2. 使用者開啟並按一下連結 Office 檔的支援 Office 應用程式中。
 
 3. 安全連結會在開啟目標網站之前，立即檢查 URL：
 
@@ -239,40 +242,43 @@ ms.locfileid: "52274433"
 
    - 如果此 URL 被視為安全的，使用者會進入網站。
 
-   - 如果安全連結掃描無法完成，則安全連結保護不會觸發。 在 Office 桌面用戶端中，使用者會先收到警告，再繼續前往目的地網站。
+   - 如果安全連結掃描無法完成，則安全連結保護不會觸發。 在 Office 桌面用戶端中，使用者會先收到警告，再繼續進行目的地網站。
 
 > [!NOTE]
-> 在每個會話開始時，可能需要幾秒鐘的時間，以確認使用者已啟用 Office 的安全連結。
+> 在每個會話開始時可能需要幾秒鐘，以確認使用者是否有 Office 已啟用的安全連結。
 
 ## <a name="block-the-following-urls-list-for-safe-links"></a>安全連結的「封鎖下列 URLs」清單
 
 **Block 下列 URLs** 清單會定義在下列位置中，以安全連結掃描時，永遠封鎖的連結：
 
 - 電子郵件。
-- Windows 和 Mac 中 Office 365 應用程式中的檔。
-- Office 中用於 iOS 和 Android 的檔。
+- Windows 和 Mac 的 Office 365 應用程式中的檔。
+- iOS 和 Android Office 中的檔。
 
 當使用中安全連結原則中的使用者在支援的應用程式中按一下封鎖的連結時，會移至 [ [封鎖的 URL 警告](#blocked-url-warning) ] 頁面。
 
 您可以在 [安全連結] 的 [通用設定] 中設定 URLs 清單。 如需相關指示，請參閱 Configure the the 「 [Block the URLs」清單](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)。
 
-**附註**：
-
-- 如需在所有位置封鎖的真正通用 URLs 清單，請參閱 [Manage The 承租人 Allow/封鎖清單](tenant-allow-block-list.md)。
-- **封鎖下列 URLs** 清單的限制：
-  - 專案的數目上限為500。
-  - 專案的長度上限為128個字元。
-  - 所有專案都不得超過10000個字元。
-- 請勿在 URL 的結尾加入正斜線 (`/`) 。 例如，使用 `https://www.contoso.com` ，not `https://www.contoso.com/` 。
-- 例如，僅限網域的 URL (例如 `contoso.com` 或 `tailspintoys.com`) 會封鎖任何包含網域的 url。
-- 您可以封鎖子域，但不封鎖整個網域。 例如， `toys.contoso.com*` 封鎖包含子域的任何 URL，但它不會封鎖包含完整網域的 URLs `contoso.com` 。
-- 每個 URL 專案最多可以包含三個萬用字元 (`*`) 。
+> [!NOTE]
+> 
+> - 如需在所有位置封鎖的真正通用 URLs 清單，請參閱 [Manage The 承租人 Allow/封鎖清單](tenant-allow-block-list.md)。
+> 
+> - 限制：
+>   - 專案的數目上限為500。
+>   - 專案的長度上限為128個字元。
+>   - 所有專案都不得超過10000個字元。
+> 
+> - 請勿在 URL 的結尾加入正斜線 (`/`) 。 例如，使用 `https://www.contoso.com` ，not `https://www.contoso.com/` 。
+> 
+> - 例如，僅限網域的 URL (例如 `contoso.com` 或 `tailspintoys.com`) 會封鎖任何包含網域的 url。
+> 
+> - 您可以封鎖子域，但不封鎖整個網域。 例如， `toys.contoso.com*` 封鎖包含子域的任何 URL，但它不會封鎖包含完整網域的 URLs `contoso.com` 。
+> 
+> - 每個 URL 專案最多可以包含三個萬用字元 (`*`) 。
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>「封鎖下列 URLs 的專案語法」清單
 
 下表說明您可以輸入的值及其結果的範例：
-
-<br>
 
 ****
 
@@ -293,24 +299,24 @@ ms.locfileid: "52274433"
 
 若要將專案新增至新的或現有的安全連結原則中的清單，請參閱 [建立安全連結原則](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) 或 [修改安全連結原則](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)。
 
-**附註**：
-
-- 下列用戶端無法辨識安全連結原則中的 [ **不要重新寫入下列 URLs** 清單。 您可以根據這些用戶端中的安全連結掃描的結果，URLs 封鎖原則中所含的使用者：
-  - Microsoft Teams
-  - Office web apps
-
-  如需真實通用的 URLs 允許任何地方使用的清單，請參閱 [Manage The 承租人 Allow/封鎖清單](tenant-allow-block-list.md)。
-
-- 考慮在清單中新增常用的內部 URLs，以提升使用者體驗。 例如，如果您有內部部署服務（例如商務用 Skype 或 SharePoint），您可以將這些服務新增 URLs 以從掃描中排除。
-- 如果您已有 [安全連結原則] 中 **的 [不要重新寫入下列 URLs** 專案]，請務必查看清單，並視需要新增萬用字元。 例如，您的清單有類似的專案， `https://contoso.com/a` 而您後來決定包含類似的子路徑 `https://contoso.com/a/b` 。 除了新增專案之外，將萬用字元新增至現有專案，使其變成 `https://contoso.com/a/*` 。
-- 每個 URL 專案最多可以包含三個萬用字元 (`*`) 。 萬用字元會明確包含首碼或子域。 例如，該專案與 `contoso.com` 不同的專案不同 `*.contoso.com/*` ，因為 `*.contoso.com/*` 允許人員造訪指定網域中的子域和路徑。
-- 如果 URL 使用 HTTP to HTTPS 的自動重新導向 (例如， `http://www.contoso.com` 若為進行) 的 302 `https://www.contoso.com` 重新導向，而且嘗試在清單中輸入相同 URL 的 HTTP 和 HTTPS 專案，您可能會注意到第二個 url 專案會取代第一個 url 專案。 如果 URL 的 HTTP 和 HTTPS 版本完全不同，則不會發生此行為。
+> [!NOTE]
+> 
+> - 下列用戶端無法辨識安全連結原則中的 [ **不要重新寫入下列 URLs** 清單。 您可以根據這些用戶端中的安全連結掃描的結果，URLs 封鎖原則中所含的使用者：
+> 
+>   - Microsoft Teams
+>   - Office web 應用程式
+> 
+>   如需真實通用的 URLs 允許任何地方使用的清單，請參閱 [Manage The 承租人 Allow/封鎖清單](tenant-allow-block-list.md)。
+> 
+> - 考慮在清單中新增常用的內部 URLs，以提升使用者體驗。 例如，如果您有內部部署服務（例如商務用 Skype 或 SharePoint），您可以將這些服務新增 URLs 排除掃描。
+> 
+> - 如果您已有 [安全連結原則] 中 **的 [不要重新寫入下列 URLs** 專案]，請務必查看清單，並視需要新增萬用字元。 例如，您的清單有類似的專案， `https://contoso.com/a` 而您後來決定包含類似的子路徑 `https://contoso.com/a/b` 。 除了新增專案之外，將萬用字元新增至現有專案，使其變成 `https://contoso.com/a/*` 。
+> 
+> - 每個 URL 專案最多可以包含三個萬用字元 (`*`) 。 萬用字元會明確包含首碼或子域。 例如，該專案與 `contoso.com` 不同的專案不同 `*.contoso.com/*` ，因為 `*.contoso.com/*` 允許人員造訪指定網域中的子域和路徑。
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>[不要重新寫入下列 URLs] 清單的專案語法
 
 下表說明您可以輸入的值及其結果的範例：
-
-<br>
 
 ****
 

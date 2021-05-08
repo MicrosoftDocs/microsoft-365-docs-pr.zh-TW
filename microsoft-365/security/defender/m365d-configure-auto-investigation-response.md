@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: b2e4c33363624a6c6b30525be8c02f47ab845b89
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: c9a2f41b1ec77994ef656b948ae1270dc2458dff
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259520"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269525"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中設定自動化調查和回應功能
 
@@ -36,7 +36,7 @@ Microsoft 365Defender 包含強大的[自動化調查和回應功能](m365d-auto
 3. [在 Office 365 中檢查您的安全性和警示原則](#review-your-security-and-alert-policies-in-office-365)。
 4. [請確定已開啟 Microsoft 365 Defender](#make-sure-microsoft-365-defender-is-turned-on)。
 
-然後，在您完成所有設定後，您就可以 [在「行動中心」中查看及管理動作](m365d-autoir-actions.md)。
+然後，當您全部設定好之後，您就可以 [在「行動中心」中查看及管理修正動作](m365d-autoir-actions.md)。
 
 ## <a name="prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中自動調查和回應的必要條件
 

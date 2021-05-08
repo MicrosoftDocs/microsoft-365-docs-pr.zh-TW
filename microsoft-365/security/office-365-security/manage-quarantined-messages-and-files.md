@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以管理 SharePoint Online、商務 OneDrive 和 Microsoft 小組中的隔離檔案。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599531"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272201"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -74,7 +74,7 @@ ms.locfileid: "51599531"
 
 1. 在「安全性與合規性中心」內，移至 [威脅管理] \> [檢閱] \> [隔離]。
 
-2. 確認 [被 **隔離的視圖** ] 設定為預設值 **電子郵件**。
+2. 驗證 **[檢視隔離的項目]** 設為 **[電子郵件]** 的預設值。
 
 3. 您可以按一下可用資料行標題來排序結果。 按一下 [修改資料行] 可顯示最多七個資料行。 預設值會標上星號 (<sup>\*</sup>)：
 
@@ -196,7 +196,7 @@ ms.locfileid: "51599531"
 
 - **下載郵件**：在出現的飛出窗格中，選取 [我了解下載此郵件的風險] 以使用 .eml 格式儲存郵件的本機複本。
 
-- **封鎖寄件者**：防止寄件者傳送郵件給組織中的收件者。
+- **封鎖寄件者**：將寄件者新增至您信箱上的封鎖寄件者清單。 如需詳細資訊，請參閱 [封鎖郵件寄件者](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 - **Submit message**：在出現的飛入窗格中，選擇下列選項：
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,19 +13,22 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: 了解如何閱讀及了解您的 Microsoft 商務產品帳單或發票。
 keywords: 帳單帳戶、組織資訊、發票
-ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 819db7eb999344d2736015dd766453c07f2ed86f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244705"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280832"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解您的帳單或發票
 
@@ -103,17 +107,13 @@ ms.locfileid: "52244705"
 線上提供發票。 您可以從您的 PDF 發票和電子郵件通知取得線上發票的連結。 線上發票可展開，因此您可以檢視發票上的費用，並查看每個項目的明細。 線上發票包括：
 
 - **定價明細**&mdash;包含有關折扣和產品價格明細的額外資訊。
-
 - **線上付款**&mdash;您可以選擇從發票進行線上付款。
-
 - **Azure 成本管理**&mdash;針對 Azure 客戶，線上發票會包含 Azure 成本管理的連結。
 
 ### <a name="to-view-your-online-invoice"></a>檢視您的線上發票
 
 1. 在系統管理中心中，移至 [帳單 **]** \> [帳單與付款 <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">]</a> 頁面。
-
 2. 若要下載 .pdf 版本發票，請在您想要查看的發票列中選擇 [下載發票 PDF **]**。
-
 3. 若要檢視您的線上發票，請從清單中選擇發票。 您也可以從發票明細頁面下載 .pdf。
 
 ## <a name="invoice-faq"></a>發票常見問題集
@@ -145,8 +145,8 @@ ms.locfileid: "52244705"
 
 只有合格的 Azure 產品和服務才可使用 Azure 預付款做為付款方式。
 
-## <a name="need-help-contact-support"></a>需要協助？ 連絡客戶支援。
+## <a name="need-help-contact-support"></a>需要協助？ 連絡客戶支援
 
 如果您有 Azure 點數的問題或需要相關協助，請<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">向用 Azure 支援建立支援要求</a>。
 
-如果您有 Microsoft 365 系統管理中心中發票的問題或需要協助，請[連絡商務產品的客戶支援](../../admin/contact-support-for-business-products.md)。
+如果您有 Microsoft 365 系統管理中心中發票的問題或需要協助，請[連絡商務產品的客戶支援](../../business-video/get-help-support.md)。

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類儀表板提供您對於貴組織所發現及分類之敏感性資料的可見度。
-ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899383"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244380"
 ---
 # <a name="learn-about-data-classification"></a>了解資料分類
 
@@ -112,7 +112,7 @@ SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資�
 ![套用最高保留標籤預留位置的螢幕擷取畫面](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> 如果此卡片顯示 [未偵測到保留標籤] 訊息，則表示您未建立或發佈任何保留標籤，或沒有套用保留標籤的內容。 若要開始使用保留標籤，請參閱：
+> 如果此卡片顯示「未偵測到保留標籤」訊息，則表示您未建立或發佈任何保留標籤，或沒有已套用保留標籤的內容。若要開始使用保留標籤，請參閱：
 >- [開始使用保留原則和保留標籤](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>偵測到的常見活動
@@ -140,3 +140,5 @@ SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資�
 - [了解敏感性資訊類型](sensitive-information-type-learn-about.md)
 - [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [深入瞭解可訓練分類器（預覽版）](classifier-learn-about.md)
+
+若要了解如何使用資料分類以符合資料隱私權法規，請參閱 [使用 Microsoft 365 部署資料隱私權法規的資訊保護](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。

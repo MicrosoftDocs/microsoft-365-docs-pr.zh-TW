@@ -1,27 +1,28 @@
 ---
-title: 設定 Microsoft Defender AV 的掃描選項
-description: 您可以設定 Microsoft Defender AV 掃描電子郵件儲存檔案、備份或重新分析點、網路檔案，以及封存的檔案 (例如 .zip 檔案) 。
+title: 設定 Microsoft Defender 防毒軟體的掃描選項
+description: 您可以設定 Microsoft Defender AV 掃描電子郵件儲存檔案、備份或重新分析點、網路檔，以及封存的檔案 (例如 .zip 檔案) 。
 keywords: 高級掃描、掃描、電子郵件、封存、zip、rar、封存、重新分析掃描
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 72d5024446e56cc7fa1d94a7b9402cbe898db2a8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 1efa72d5b8d204b6aec1cef05fe3c8afe1ca82f7
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764852"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275298"
 ---
-# <a name="configure-microsoft-defender-antivirus-scanning-options"></a>設定 Microsoft Defender 防病毒掃描選項
+# <a name="configure-microsoft-defender-antivirus-scanning-options"></a>設定 Microsoft Defender 防毒軟體掃描選項
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,11 +33,11 @@ ms.locfileid: "51764852"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>使用 Microsoft Intune 設定掃描選項
 
-如需詳細資訊，請參閱 [在 Microsoft Intune 中設定裝置限制設定](/intune/device-restrictions-configure) 及 [Intune 中 Windows 10 的 Microsoft Defender 防病毒裝置限制設定](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) 。
+如需詳細資訊，請參閱[設定 Microsoft Intune 中的裝置限制設定](/intune/device-restrictions-configure)及[Microsoft Defender 防毒軟體裝置限制設定 Windows 10 在 Intune 中](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)。
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>使用 Microsoft 端點管理員設定掃描選項
 
-請參閱 [如何建立及部署反惡意程式碼原則：掃描設定](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) ，以取得設定 Microsoft 端點管理員 (目前分支) 的詳細資料。
+請參閱[如何建立及部署反惡意程式碼原則：掃描設定](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)，以取得設定 Microsoft 端點管理員 (目前分支) 的詳細資料。
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>使用群組原則設定掃描選項
 
@@ -46,7 +47,7 @@ ms.locfileid: "51764852"
 
 2. 在 [**群組原則管理編輯器**] 移至 [電腦設定]，然後按一下 [**系統****管理範本**]。
 
-3. 在 [ **Microsoft Defender 防病毒 >** ] 的 [Windows 元件] 中，展開樹狀目錄，然後展開下表中所指定的 **位置** 。
+3. 展開樹狀目錄， **Windows 元件 > Microsoft Defender 防毒軟體**，然後在下表中所指定的 **位置**。
 
 4. 按兩下下表中所指定的原則 **設定** ，並將選項設定為您想要的設定。 按一下 **[確定]**，然後對任何其他設定重複此步驟。
 
@@ -55,7 +56,7 @@ ms.locfileid: "51764852"
 電子郵件掃描請參閱 [電子郵件掃描限制](#ref1)| 掃描 > 開啟電子郵件掃描 | 已停用 | `-DisableEmailScanning`
 掃描重新 [分析點](/windows/win32/fileio/reparse-points) | 掃描 > 開啟重新分析點掃描 | 已停用 | 無
 掃描對應的網路磁碟機 | 掃描 > 在對應的網路磁碟機上執行完整掃描 | 已停用 | `-DisableScanningMappedNetworkDrivesForFullScan`
- 掃描封存檔案 (例如 .zip 或 rar 檔案) 。 [副檔名排除清單](configure-extension-file-exclusions-microsoft-defender-antivirus.md)會優先于此設定。 | 掃描 > 掃描封存檔案 | Enabled | `-DisableArchiveScanning`
+ 掃描封存檔案 (例如 .zip 或 .rar 檔) 。 [副檔名排除清單](configure-extension-file-exclusions-microsoft-defender-antivirus.md)會優先于此設定。 | 掃描 > 掃描封存檔案 | Enabled | `-DisableArchiveScanning`
 掃描網路上的檔案 | 掃描 > 掃描網路檔 | 已停用 | `-DisableScanningNetworkFiles`
 掃描打包的可執行檔 | 掃描 > 掃描打包的可執行檔 | Enabled | 無
 僅在完整掃描期間掃描抽取式磁碟磁碟機 | 掃描 > 掃描可移除磁片磁碟機 | 已停用 | `-DisableRemovableDriveScanning`
@@ -69,32 +70,32 @@ ms.locfileid: "51764852"
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>使用 PowerShell 設定掃描選項
 
-如需如何使用 Microsoft Defender 防病毒 PowerShell 的詳細資訊，請參閱 [管理含 PowerShell Cmdlet 的 Microsoft Defender 防病毒](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender Cmdlet](/powershell/module/defender/) 。
+如需如何搭配 Microsoft Defender 防毒軟體使用 PowerShell 的詳細資訊，請參閱[Manage Microsoft Defender 防毒軟體 with PowerShell Cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)和[Defender Cmdlet](/powershell/module/defender/) 。
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>使用 WMI 設定掃描選項
 
-如需使用 WMI 類別，請參閱 [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)。
+如需使用 WMI 類別，請參閱[Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)。
 
 <a id="ref1"></a>
 
 ## <a name="email-scanning-limitations"></a>電子郵件掃描限制
 
-電子郵件掃描可讓 Outlook 和其他郵件用戶端在按需求和排程掃描期間使用的電子郵件檔案進行掃描。 也會掃描電子郵件檔案中的內嵌物件 (例如附件及封存的檔案) 。 您可以掃描和修正下列檔案格式類型：
+電子郵件掃描可讓 Outlook 和其他郵件客戶程式使用的電子郵件檔案掃描時，進行隨選及排程的掃描。 也會掃描電子郵件檔案中的內嵌物件 (例如附件及封存的檔案) 。 您可以掃描和修正下列檔案格式類型：
 
 - Dbx
 - MBX
 - Mime
 
-Outlook 2003 或舊版 (所使用的 PST 檔案，其封存類型設為非 unicode) 也會進行掃描，但是 Windows Defender 無法修正在 PST 檔案中偵測到的威脅。
+Outlook 2003 或舊版 (使用的 PST 檔案，封存類型設為非 unicode) 也會進行掃描，但是 Windows Defender 無法修正在 PST 檔案中偵測到的威脅。
 
-如果 Microsoft Defender 防毒程式偵測到電子郵件內的威脅，它會顯示下列資訊以協助您識別遭到損害的電子郵件，因此您可以手動修正威脅：
+如果 Microsoft Defender 防毒軟體偵測到電子郵件內的威脅，它會顯示下列資訊，協助您識別遭到損害的電子郵件，因此您可以手動修正威脅：
 
 - 電子郵件主旨
 - 附件名稱
 
 ## <a name="related-topics"></a>相關主題
 
-- [自訂、啟動和審閱 Microsoft Defender 防病毒掃描和修正的結果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [設定及執行隨選 Microsoft Defender 防毒程式掃描](run-scan-microsoft-defender-antivirus.md)
-- [設定排定的 Microsoft Defender 防病毒掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [自訂、啟動及審閱 Microsoft Defender 防毒軟體掃描和修正的結果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [設定和執行隨選 Microsoft Defender 防毒軟體掃描](run-scan-microsoft-defender-antivirus.md)
+- [設定排定的 Microsoft Defender 防毒軟體掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

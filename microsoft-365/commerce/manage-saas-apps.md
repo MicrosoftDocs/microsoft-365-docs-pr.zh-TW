@@ -5,27 +5,33 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jamitche
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
 search.appverid: MET150
-description: 瞭解如何在 Microsoft 365 系統管理中心中啟動和管理協力廠商應用程式。
-ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: 瞭解如何在 Microsoft 365 系統管理中心啟動和管理協力廠商應用程式。
+ms.date: 04/15/2021
+ms.openlocfilehash: eece8154640dcdd55239511ed099abcdca39e807
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860532"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280520"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理組織的協力廠商應用程式訂閱
 
-您可以在新的 Microsoft 365 系統管理中心中管理協力廠商應用程式的授權和帳單。 更新的功能包括增強型訂閱管理、改進的計費資訊存取，以及更高的管理帳單的彈性。 訂閱管理是以 Microsoft 更新的商務平臺為基礎。 這適用于客戶直接購買的軟體即服務應用程式，或來自協力廠商提供者。
+您可以在新的 Microsoft 365 系統管理中心管理協力廠商應用程式的授權和帳單。 更新的功能包括增強型訂閱管理、改進的計費資訊存取，以及更高的管理帳單的彈性。 訂閱管理是以 Microsoft 更新的商務平臺為基礎。 這適用于客戶直接購買的軟體即服務應用程式，或來自協力廠商提供者。
 
-您可以在已開啟預覽模式的 Microsoft 365 系統管理中心中管理協力廠商應用程式的授權和帳單。 更新的功能包括增強型訂閱管理、改進的計費資訊存取，以及更高的管理帳單的彈性。 訂閱管理是以 Microsoft 更新的商務平臺為基礎。 這適用于客戶直接購買的軟體即服務應用程式，或來自協力廠商提供者。
+您可以在已開啟預覽模式的情況下，管理 Microsoft 365 admin center 中協力廠商應用程式的授權和帳單。 更新的功能包括增強型訂閱管理、改進的計費資訊存取，以及更高的管理帳單的彈性。 訂閱管理是以 Microsoft 更新的商務平臺為基礎。 這適用于客戶直接購買的軟體即服務應用程式，或來自協力廠商提供者。
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>如何取得軟體即服務應用程式
 
@@ -35,7 +41,7 @@ ms.locfileid: "51860532"
 - **合作夥伴購買** –透過合作夥伴中心與合作夥伴合作以購買訂閱。
 - **Microsoft 策劃書** –從 Microsoft Sales （包括協力廠商應用程式）回應提案。
 
-一旦客戶購買應用程式並接受 Microsoft 客戶合約，他們就可以在 Microsoft 365 系統管理中心或 Microsoft Store for Business 中進行管理。
+客戶購買應用程式並接受 Microsoft 客戶合約後，即可在 Microsoft 365 系統管理中心或商務用 Microsoft Store 中管理這些應用程式。
 
 應用程式提供者會以平面的速率（或透過購買使用者的授權）來銷售其應用程式。
 
@@ -65,7 +71,7 @@ ms.locfileid: "51860532"
 
 1. 在系統管理中心中，移至 [**帳單**  >  **產品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
 2. 尋找並選取您要管理的應用程式。
-3. 在 [ **設定] & 動作**] 底下，選取 **[在 publisher 的入口網站中管理]**。
+3. 在 [**設定 & 動作**] 下，選取 **[在 publisher 的入口網站中管理]**。
 
 您將會被導向至應用程式發行者的網站，您可以在其中啟動應用程式。
 
@@ -83,11 +89,11 @@ ms.locfileid: "51860532"
 
 ## <a name="assign-licenses"></a>指派授權
 
-系統管理員必須先啟動協力廠商應用程式，再將其指派給使用者。 它們會在協力廠商發行者的入口網站中啟用。 在 [應用程式] 頁面的 [ **設定] & 動作**] 底下，選取要指派授權的連結。
+系統管理員必須先啟動協力廠商應用程式，再將其指派給使用者。 它們會在協力廠商發行者的入口網站中啟用。 在 [應用程式] 頁面的 [**設定 & 動作**] 下，選取要指派授權的連結。
 
 1. 在系統管理中心中，移至 [**帳單**  >  **產品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
 2. 尋找並選取您要管理的應用程式。
-3. 在 [ **設定 & 動作**] 底下，選取要 **在 publisher 入口網站中管理** 的連結。
+3. 在 [**設定 & 動作**] 下，選取要 **在 publisher 入口網站中管理** 的連結。
 
 ## <a name="change-license-quantity"></a>變更授權數量
 
@@ -121,4 +127,4 @@ ms.locfileid: "51860532"
 
 1. 在系統管理中心中，移至 [**帳單**  >  **產品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
 2. 尋找並選取您要管理的應用程式。
-3. 在 [ **設定] & 動作**] 下，選取 [ **取消訂閱**]。
+3. 在 **設定 & 動作**] 下，選取 [**取消訂閱**]。

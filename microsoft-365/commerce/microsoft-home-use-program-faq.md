@@ -3,6 +3,7 @@ title: 'Microsoft 軟體家用計畫常見問題 (常見問題解答) '
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -10,21 +11,24 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: 有關 Microsoft 軟體家用計畫常見問題 (常見問題) 。
-ms.openlocfilehash: e4940460501da94960cb82eb311a1d1d6470cc63
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/01/2021
+ms.openlocfilehash: 5f10e5fb313ec7b48605975a7e03f262fd742801
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244693"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280808"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft 軟體家用計畫常見問題 (常見問題解答) 
 
-大量授權客戶在[商務用 Microsoft Store 網站](https://go.microsoft.com/fwlink/?linkid=2139192)上使用 Microsoft 軟體家用計畫 (HUP) 。 
+大量授權客戶在[商務用 Microsoft Store 網站](https://go.microsoft.com/fwlink/?linkid=2139192)上使用 Microsoft 軟體家用計畫 (HUP) 。
 
 所有其他客戶使用此步驟存取 HUP：
 
@@ -46,12 +50,9 @@ Microsoft 軟體家用計畫 (HUP) 可讓合格公司的員工以折扣購買 Mi
 
 為了讓員工充分利用 Microsoft 軟體家用計畫折扣，他們需要有效的公司電子郵件地址和有效的 Microsoft 帳戶，而且您的組織必須符合下列其中一個條件：
 
-- 具有有效的軟體保證以符合資格 Office 應用程式的客戶 
-
+- 具有有效的軟體保證以符合資格 Office 應用程式的客戶
 - 從軟體保證中/E5/Microsoft 365 E3 的客戶 Microsoft 365
-
 - 購買≧2000授權的商業和政府客戶，其中一或混合使用 Microsoft 365 E3/E5
-
 - 教育和非盈利性客戶
 
 ## <a name="why-do-i-have-to-create-an-azure-active-directory-aad-account-to-use-the-home-use-program-microsoft-store-for-business"></a>為什麼要使用「家用」程式/商務用 Microsoft Store 建立 Azure Active Directory (AAD) 帳戶？
@@ -73,11 +74,8 @@ Microsoft 軟體家用計畫 (HUP) 可讓合格公司的員工以折扣購買 Mi
 ## <a name="what-are-the-steps-for-an-eligible-employee-to-make-a-microsoft-home-use-program-purchase"></a>有資格員工 Microsoft 軟體家用計畫購買的步驟為何？
 
 1. **註冊** 移至 [ [Microsoft 軟體家用計畫] 頁面](https://www.microsoft.com/home-use-program)，然後選取 [入門] 按鈕。 員工輸入公司的電子郵件地址。
-
 2. **確認**  電子郵件會傳送至其公司的電子郵件地址收件匣，其連結會驗證其對程式的資格。
-
 3. 登 **入** 在驗證之後，他們會提供與其個人電子郵件地址相關聯的 Microsoft 帳戶，以開始購買程式，讓他們能夠根據組織的家用使用方案權益，查看其可用產品的折扣。 如需詳細資訊，請參閱 how [to 登入您的 Microsoft 帳戶](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)。
-
 4. **購買** 在 Microsoft Store 中處理並完成購買。
 
 ## <a name="if-an-employee-subscribes-to-microsoft-365-through-the-microsoft-home-use-program-how-does-this-impact-our-organizations-microsoft-365-business-subscription-and-device-limit"></a>如果員工透過 Microsoft 軟體家用計畫訂閱 Microsoft 365，這會對我們組織 Microsoft 365 商務訂閱和裝置限制造成什麼影響？
@@ -105,23 +103,15 @@ Microsoft 軟體家用計畫 (HUP) 可讓合格公司的員工以折扣購買 Mi
  如需技術問題的協助，請參閱 [Microsoft Support](https://support.microsoft.com/)。 您會找到下列説明：
 
 - 訂單狀態
-
 - 計費
-
 - 安裝 Office
-
 - 登入 Office
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 訂閱](https://www.microsoft.com/home-use-program/)。  (連結] 頁面) 
-
-[Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (連結頁面) 
-
-[商務用 Microsoft Store 系統管理支援](/microsoft-store/) (連結頁面) 
-
-[商務用 Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2139192) (連結] 頁面) 
-
-[家用使用程式師工存放區](https://www.microsoft.com/home-use-program) (連結] 頁面) 
-
+[Microsoft 365 訂閱](https://www.microsoft.com/home-use-program/)。  (連結頁面) \
+[Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (連結頁面) \
+[商務用 Microsoft Store 系統管理支援](/microsoft-store/) (連結頁面) \
+[商務用 Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2139192) (連結] 頁面) \
+[家用使用程式師工存放區](https://www.microsoft.com/home-use-program) (連結] 頁面) \
 [Microsoft 授權：家用使用計畫概述](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (連結頁面) 

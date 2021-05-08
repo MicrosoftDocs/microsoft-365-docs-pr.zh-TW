@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,16 +17,17 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- Commerce
-search.appverid:
-- MET150
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: 瞭解帳單設定檔如何支援發票。
-ms.openlocfilehash: 7f4c0aed1bccd0e5df5b09e15e6201933e937993
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.date: 04/02/2021
+ms.openlocfilehash: 57786df370246c2b4fda556a9c48eb828db1cb4f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576946"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280784"
 ---
 # <a name="understand-billing-profiles"></a>了解帳單設定檔
 
@@ -47,32 +49,28 @@ ms.locfileid: "51576946"
 
 計費設定檔上的角色具有控制購買的許可權，以及查看和管理發票。 將這些角色指派給追蹤、組織和支付發票的使用者，例如組織中的採購團隊成員。
 
-| 角色                          | 描述                                                                       |
-|-----------------------------  |---------------------------------------------------------------------------------  |
-| 計費設定檔擁有者         | 管理帳單設定檔的所有專案                                           |
-| 帳單設定檔參與者   | 管理帳單設定檔中的許可權以外的所有專案                         |
-| 計費設定檔讀取器        | 計費設定檔中所有專案的唯讀視圖                                 |
-| 發票管理員               | 查看和支付帳單，且具有記帳設定檔中所有專案的唯讀視圖   |
+| 角色                         | 描述                                                                      |
+|----------------------------- |--------------------------------------------------------------------------------- |
+| 計費設定檔擁有者        | 管理帳單設定檔的所有專案                                          |
+| 帳單設定檔參與者  | 管理帳單設定檔中的許可權以外的所有專案                        |
+| 計費設定檔讀取器       | 計費設定檔中所有專案的唯讀視圖                                |
+| 發票管理員              | 查看和支付帳單，且具有記帳設定檔中所有專案的唯讀視圖  |
 
 ## <a name="view-billing-profiles"></a>查看帳單設定檔
 
-1. 在系統管理中心中，移至 [帳單 **]** \> [帳單與付款 <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">]</a> 頁面。
-
+1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[帳單與付款]</a> 頁面。
 2. 選擇 [ **帳單設定檔**]，然後從清單中選擇帳單設定檔。
 
     - 在 [ **概覽** ] 索引標籤上，您可以編輯帳單設定檔詳細資料，並開啟或關閉透過電子郵件傳送發票的功能。
-
     - 在 [ **許可權** ] 索引標籤上，您可以將角色指派給使用者以支付發票。
-
     - 在 [ **azure 信用平衡** ] 索引標籤上，Azure 客戶可以查看該帳單設定檔使用之 Azure 點數的交易餘額歷史記錄。
-
     - 在 [ **azure 信用** ] 索引標籤上，Azure 客戶可以查看與該帳單設定檔相關聯的 Azure 信用名單及其到期日期。
 
     > [!NOTE]
     > 如果您沒有任何 Azure 信用，您就不會看到 [ **azure 貸方餘額** ] 或 [ **azure 信用** ] 索引標籤。
 
-## <a name="need-help-contact-support"></a>需要協助？ 連絡客戶支援。
+## <a name="need-help-contact-support"></a>需要協助？ 連絡客戶支援
 
 如果您有任何問題或需要協助您的 Azure 費用，請 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">建立支援 azure 支援的支援要求</a>。
 
-如果您有任何疑問或需要協助您使用 Microsoft 365 系統管理中心的帳單設定檔，請 [聯繫商務產品支援](/office365/admin/contact-support-for-business-products)人員。
+如果您在 Microsoft 365 系統管理中心的帳單設定檔中有任何疑問或需要協助，請[聯繫商務產品支援](../../business-video/get-help-support.md)人員。

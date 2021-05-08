@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b5122984969113ec0c0533952ea3bf18bff5e5c
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 1fc811fb513935645fa596c5a9d2e3e552b50324
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592105"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245357"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -36,25 +36,7 @@ ms.locfileid: "51592105"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **摘要：** 本文說明如何在 Office 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統會信任從您自訂網域對外傳送的郵件。
-
-除了 SPF 和 DMARC 以外，您也應使用 DKIM，以避免詐騙程式傳送看似來自您的網域的郵件。 DKIM 可讓您在郵件標頭中將數位簽章新增到外寄電子郵件訊息中。 聽起來可能很複雜，但實則不然。 在設定 DKIM 時，您會授權給網域，使其能夠使用密碼編譯驗證將其名稱簽署至電子郵件訊息，或建立關聯。 電子郵件系統在接收來自您網域的電子郵件時，可以利用此數位簽章來判斷所接收的內送電子郵件是否合法。
-
-基本上，您可以使用私密金鑰為網域的外寄電子郵件中的標頭加密。 您可以將公開金鑰發佈至網域的 DNS 記錄，讓接收端伺服器用來解碼簽章。 他們可以使用公開金鑰來確認郵件確實來自於您，而不是他人 *冒充* 您的網域寄來的。
-
-Microsoft 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這表示您不需要執行任何操作，即可為任何初始網域名稱設定 DKIM (例如：litware.onmicrosoft.com)。 如需網域的詳細資訊，請參閱[網域常見問題集](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)。
-
-您也可以選擇不為自訂網域進行任何 DKIM 設定。 如果您未替自訂網域設定 DKIM，Microsoft 365 將會為您的自訂網域建立私密和公開金鑰組、啟用 DKIM 簽章，並設定 Microsoft 365 預設原則。 雖然這對大部分的客戶而言已足夠使用，但在下列情況下，您仍應手動為自訂網域設定 DKIM：
-
-- 您在 Microsoft 365 中有多個自訂網域
-
-- 您也將設定 DMARC (建議選項)
-
-- 您想要控管私密金鑰
-
-- 您想要自訂 CNAME 記錄
-
-- 您想要為來自於第三方網域的電子郵件設定 DKIM，例如，當您使用第三方大量郵件寄件者時。
+ 本文列出在 Microsoft 365 中使用網域金鑰識別郵件 (DKIM) 的步驟，以確保目的地電子郵件系統會信任從您自訂網域對外傳送的郵件。
 
 本文內容：
 
@@ -62,7 +44,7 @@ Microsoft 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這�
 
 - [將 1024 位元金鑰手動升級至 2048 位元 DKIM 加密金鑰的步驟](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
 
-- [手動設定 DKIM 時需執行的步驟](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
+- [手動設定 DKIM 的步驟](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
 - [為多個自訂網域設定 DKIM 的步驟](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
@@ -74,19 +56,49 @@ Microsoft 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這�
 
 - [後續步驟：為 Microsoft 365 設定 DKIM 之後](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
+> [!NOTE]
+> Microsoft 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這表示您不需要執行任何操作，即可為任何初始網域名稱設定 DKIM (例如：litware.onmicrosoft.com)。 如需網域的詳細資訊，請參閱[網域常見問題集](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)。
+
+DKIM 是三個驗證方法 (SPF、DKIM 和 DMARC) 的其中一個，可協助防止詐騙者傳送看起來像來自您網域的郵件。
+
+DKIM 可讓您在郵件標頭中將數位簽章新增到外寄電子郵件訊息中。 在設定 DKIM 時，您會授權給網域，使其能夠使用密碼編譯驗證將其名稱簽署至電子郵件訊息，或建立關聯。 電子郵件系統在取得來自您網域的電子郵件時，可以利用此數位簽章來協助驗證內送電子郵件是否合法。
+
+基本而言，私密金鑰會加密網域外寄電子郵件中的標頭。 您可以將公開金鑰發佈至網域的 DNS 記錄，讓接收端伺服器可以用此金鑰來解碼簽章。 DKIM 驗證可協助接收伺服器確認郵件確實來自您的網域，而不是有人對您的網域 *進行詐騙*。
+
+> [!TIP]
+>您也可以選擇不為自訂網域進行任何 DKIM 設定。如果您未替自訂網域設定 DKIM，Microsoft 365 將會為您的自訂網域建立私密和公開金鑰組、啟用 DKIM 簽章，然後設定 Microsoft 365 預設原則。
+
+ Microsoft 365 的內建 DKIM 設定對大部分的客戶而言已足夠使用，但在下列情況下，您仍應手動為自訂網域設定 DKIM：
+
+- 您在 Microsoft 365 中有多個自訂網域
+
+- 您也將設定 DMARC (**建議**)
+
+- 您想要控管私密金鑰
+
+- 您想要自訂 CNAME 記錄
+
+- 您想要為來自於第三方網域的電子郵件設定 DKIM，例如，當您使用第三方大量郵件寄件者時。
+
+
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing"></a>DKIM 防止惡意詐騙的效用為何優於單獨使用 SPF
 <a name="HowDKIMWorks"> </a>
 
-SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽章加密。 當您轉寄郵件時，轉寄端伺服器可能會將該郵件信封的某些部分移除掉。 由於數位簽章是電子郵件標頭的一部分，會存留在電子郵件訊息內，因此即使郵件已轉寄，DKIM 仍可運作，如下列範例所示。
+SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的數位簽章 *加密*。 當您轉寄郵件時，轉寄端伺服器可能會將該郵件信封的某些部分移除掉。 由於數位簽章是電子郵件標頭的一部分，會存留在電子郵件訊息內，因此即使郵件已轉寄，DKIM 仍可運作，如下列範例所示。
 
 ![流程圖顯示當 SPF 檢查不通過時，轉送的訊息會傳遞 DKIM 驗證](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
-在此範例中，如果您只為您的網域發佈 SPF TXT 記錄，收件者的郵件伺服器可能會將您的電子郵件標示為垃圾郵件，並產生誤判的結果。 在此案例中，加入 DKIM 將可減少誤判垃圾郵件的報告。 由於 DKIM 也使用公開金鑰密碼編譯進行驗證，而非僅使用 IP 位址，因此我們認為 DKIM 是遠優於 SPF 的驗證形式。 我們建議您在部署中應同時使用 SPF 和 DKIM 以及 DMARC。
+在此範例中，如果您只為您的網域發佈 SPF TXT 記錄，收件者的郵件伺服器可能會將您的電子郵件標示為垃圾郵件，並產生誤判的結果。 **在此案例中，加入 DKIM 可減少 *誤判* 垃圾郵件的報告。** 由於 DKIM 也使用公開金鑰密碼編譯進行驗證，而非僅使用 IP 位址，因此我們認為 DKIM 是遠優於 SPF 的驗證形式。 我們建議您在部署中應同時使用 SPF 和 DKIM 以及 DMARC。
 
-重要事實：DKIM 會使用私密金鑰將加密的簽章插入郵件標頭中。 登入網域 (或輸出網域) 會在標頭中插入作為 **d=** 欄位的值。 驗證網域 (或收件者網域) 隨後會使用 **d=** 欄位來查閱來自 DNS 的公開金鑰，並驗證郵件。 如果訊息通過驗證，即可通過 DKIM 檢查。
+> [!TIP]
+> DKIM 會使用私密金鑰將加密的簽章插入郵件標頭中。 登入網域 (或輸出網域) 會在標頭中插入作為 **d=** 欄位的值。 驗證網域 (或收件者網域) 隨後會使用 **d=** 欄位來查閱來自 DNS 的公開金鑰，並驗證郵件。 如果訊息通過驗證，即可通過 DKIM 檢查。
+
 
 ## <a name="steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>將 1024 位元金鑰手動升級至 2048 位元 DKIM 加密金鑰的步驟
 <a name="1024to2048DKIM"> </a>
+
+> [!NOTE]
+> Microsoft 365 會自動為 *onmicrosoft.com* 網域設定 DKIM。 不需要任何步驟，就可以將 DKIM 用於任何初始網域名稱 (例如 litware.*onmicrosoft.com*)。 如需網域的詳細資訊，請參閱 [網域常見問題集](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)。
 
 由於 DKIM 金鑰同時支援 1024 和 2048 位元，這些指示會告訴您如何在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 中將您的 1024 位元金鑰升級至 2048。 下列步驟適用於兩個使用案例，請選擇最符合您設定的案例。
 
@@ -117,7 +129,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 
 如需詳細的語法和參數資訊，請參閱下列文章：[Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)、[New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig) 和 [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig)。
 
-## <a name="steps-you-need-to-do-to-manually-set-up-dkim"></a>手動設定 DKIM 時需執行的步驟
+## <a name="steps-to-manually-set-up-dkim"></a>手動設定 DKIM 的步驟
 <a name="SetUpDKIMO365"> </a>
 
 若要設定 DKIM，您應完成下列步驟：
@@ -164,7 +176,7 @@ TTL:                3600
 
 - _domainGUID_ 會與您自訂網域的自訂 MX 記錄中顯示於 mail.protection.outlook.com 前面的 _domainGUID_ 相同。 例如，在網域 contoso.com 的下列 MX 記錄中，_domainGUID_ 為 contoso-com：
 
-  > contoso.com。  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
+  > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
 - _initialDomain_ 是您註冊 Microsoft 365 時所使用的網域。 初始網域的結尾一律為 onmicrosoft.com。 如需如何判斷初始網域的相關資訊，請參閱[網域的常見問題集](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)。
 
@@ -241,7 +253,7 @@ TTL:                3600
 
 - 開啟郵件並查看標頭。 檢視郵件標頭的指示會隨著您的郵件用戶端而不同。 如需在 Outlook 中檢視郵件標題的相關指示，請參閱[在 Outlook 中檢視網路訊息標題](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
-  DKIM 簽署的郵件會包含您在發佈 CNAME 項目時所定義的主機名稱和網域。 郵件會如下列範例所示：
+  DKIM 簽署的郵件會包含您在發佈 CNAME 項目時所定義的主機名稱和網域。郵件會如下列範例所示：
 
   ```console
     From: Example User <example@contoso.com>

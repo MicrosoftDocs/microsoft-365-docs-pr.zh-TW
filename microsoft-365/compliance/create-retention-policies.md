@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 9e7ab359297ef1402fa64bc754591a4be3140af0
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1faeae5dc145d6f908f9137387b875c890d22e14
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269501"
+ms.locfileid: "52280424"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -85,7 +85,7 @@ ms.locfileid: "52269501"
 
 5. 完成精靈以儲存您的設定。
 
-如需何時使用 Teams 保留原則的高層級資訊，請參閱在 Teams 文件中的 [Microsoft Teams 的保留原則](/microsoftteams/retention-policies)。
+如需使用 Teams 保留原則並了解使用者體驗的指引，請參閱 Teams 文件的 [Microsoft Teams 的保留原則](/microsoftteams/retention-policies)。
 
 如需 Teams 保留運作方式的技術詳細資料，包括哪些郵件元素支援保留和時間資訊及逐步範例，請參閱[了解 Microsoft Teams 的保留](retention-policies-teams.md)。
 

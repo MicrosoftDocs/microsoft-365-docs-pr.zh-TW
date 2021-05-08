@@ -5,35 +5,31 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
-- BCS160
-- MET150
-- MOE150
-- BEA160
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
 description: 在 Microsoft 365 系統管理中心尋找您的發票或帳單。 您也可以儲存及列印帳單複本。
 ms.date: 07/31/2020
-ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060964"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280820"
 ---
 # <a name="view-your-bill-or-invoice"></a>檢視帳單或發票
 
@@ -49,25 +45,39 @@ ms.locfileid: "52060964"
   
 ## <a name="view-a-bill-or-invoice"></a>檢視帳單或發票
 
+::: moniker range="o365-worldwide"
+
 1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[帳單與付款]</a> 頁面。
-    - 如果您使用的是 Office 365 Germany，請移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">[帳單與付款]</a> 頁面。
-    - 如果您使用的是由 21Vianet 運作的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">帳單與付款</a>頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">[帳單與付款]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">[帳單與付款]</a> 頁面。
+
+::: moniker-end
+
 2. 在 **發票** 索引標籤上，從下拉式清單中選取日期範圍，然後選擇您想要檢視的順序。
 3. 您可以在摘要頁面上查看發票中所有項目的數量、價格、折扣和總計。
 4. 若要列印或儲存發票的 PDF 複本，請選取 **下載 PDF**。
 
-::: moniker region="o365-21vianet"
+::: moniker range="o365-21vianet"
 
 ## <a name="request-a-fapiao"></a>要求發票
 
 您可以在付款後三 (3) 天內將發票要求提交至[發票管理系統](https://go.microsoft.com/fwlink/p/?linkid=837465)。
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">系統管理中心</a>中，移至 **[帳單]** > **[帳單與付款]** 頁面。
-
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">系統管理中心</a>中，移至 [帳單] ><a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank"> [帳單與付款]</a> 頁面。
 2. 找到所需的發票，然後選取 **[取得發票]**。
 
 > [!NOTE]
-
+>
 > 您需要已註冊的帳戶才能存取[發票管理系統](https://go.microsoft.com/fwlink/p/?linkid=837465)。 如果您尚未設定帳戶，請參閱[為世紀互聯運營的 Office 365 申請發票](../../admin/services-in-china/apply-for-a-fapiao.md)。
 
 ::: moniker-end

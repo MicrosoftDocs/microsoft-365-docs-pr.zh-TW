@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: b7bc84307f0db580995e039618cb01d25d6ecd66
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932856"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280796"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -61,7 +61,7 @@ Teams 保留原則中不包括與 Teams 一起使用的電子郵件和檔案。�
 這些信箱是依其 RecipientTypeDetails 屬性列出：
 
 - **UserMailbox**：這些信箱會儲存雲端式 Teams 使用者的郵件資料。
-- **MailUser**：這些信箱會儲存[內部部署 Teams 使用者](search-cloud-based-mailboxes-for-on-premises-users.md)的郵件資料。
+- **MailUser**：這些信箱會儲存 [內部部署 Teams 使用者](search-cloud-based-mailboxes-for-on-premises-users.md)的郵件資料。
 - **GroupMailbox**：這些信箱會儲存 Teams 頻道的訊息資料。
 
 其他信箱類型 (例如用於 Teams 會議室的 RoomMailbox) 不支援使用 Teams 保留原則。
@@ -163,13 +163,13 @@ Teams 使用 Azure 支援的聊天服務作為其所有訊息 (聊天和頻道�
 
 如果使用者不編輯或删除訊息，則保留結果範例：
 
-- 第 5 天 (通常在第 3 天保留期開始後 1-7 天)：
+- 第 5 天 (通常在第 2 天保留期開始後 1-7 天)：
     - 訊息將移動至 [SubstrateHolds] 資料夾，並在該資料夾中保留至少 1 天，在該資料夾中仍可使用電子文件探索工具進行搜尋。
 
 - 第 9 天 (通常在 [SubstrateHolds] 資料夾中至少 1 天后算起的 1-7 天)：
     - 訊息將被永久删除，然後將不會隨電子文件探索搜尋退回。
 
-如本例所示，儘管您可以將保留原則設定為僅在一天之後删除訊息，但該服務將經歷多個流程以確保合規的删除。 因此，1 天后執行的删除動作可能需要 18 天才能永久删除訊息，以便在電子文件探索搜尋中不再退回該訊息。
+如本例所示，儘管您可以將保留原則設定為僅在一天之後删除訊息，但該服務將經歷多個流程以確保合規的删除。 因此，1 天後執行的删除動作可能需要 16 天才能永久删除訊息，以便在電子文件探索搜尋中不再退回該訊息。
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>商務用 Skype 和 Teams Interop 聊天
 
@@ -197,7 +197,7 @@ Teams 使用 Azure 支援的聊天服務作為其所有訊息 (聊天和頻道�
 
 ## <a name="limitations"></a>限制
 
-我們持續努力將 Teams 中的保留功能最佳化。 同時，在對 Teams 頻道訊息和聊天使用保留原則時，請注意以下限制：
+我們持續努力最佳化 Teams 中的保留功能。同時，在對 Teams 頻道訊息和聊天使用保留原則時，請注意以下限制：
 
 - **Outlook 中顯示不正確的問題**。 如果您建立 Skype 或 Teams 位置的保留原則，當使用者在 Outlook 電腦版用戶端中檢視信箱資料夾的內容時，其中一個原則會顯示為預設資料夾原則。 這是 Outlook 中顯示不正確的問題，並且是[已知問題](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 相反，您應能看到套用至該資料夾的信箱保留原則。 Skype 或 Teams 保留原則不會套用至使用者的信箱。
 

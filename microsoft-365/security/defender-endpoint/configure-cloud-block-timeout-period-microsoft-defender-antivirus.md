@@ -1,27 +1,28 @@
 ---
-title: 設定 Microsoft Defender 防毒軟體雲端封鎖的超時期限
-description: 您可以設定 Microsoft Defender 防毒程式在等待雲端決定時，封鎖檔案執行的時間。
-keywords: Microsoft Defender 防毒程式，反惡意程式碼，安全性，Defender，cloud，timeout，組塊，period，seconds
+title: 設定 Microsoft Defender 防毒軟體 cloud block 超時期間
+description: 您可以設定 Microsoft Defender 防毒軟體會封鎖檔案在等候雲端決定時執行的時間長度。
+keywords: Microsoft Defender 防毒軟體，反惡意程式碼，安全性，Defender，cloud，timeout，block，period，seconds
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 372d679f45d6f87392b612f757e6bdf1c6c6b9ad
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 02b8ee1c73116718d771847a43d6334e0723bd5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765800"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275301"
 ---
-# <a name="configure-the-cloud-block-timeout-period"></a>設定雲端封鎖超時期限
+# <a name="configure-the-cloud-block-timeout-period"></a>設定雲端封鎖逾時期間
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,9 +31,9 @@ ms.locfileid: "51765800"
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-當 Microsoft Defender 防毒程式發現可疑檔案時，它會在查詢 [Microsoft Defender 防毒軟體雲端服務](cloud-protection-microsoft-defender-antivirus.md)時，防止檔案執行。
+當 Microsoft Defender 防毒軟體發現可疑的檔案時，它會在查詢[Microsoft Defender 防毒軟體雲端服務](cloud-protection-microsoft-defender-antivirus.md)時，防止檔案執行。
 
-會 [封鎖](configure-block-at-first-sight-microsoft-defender-antivirus.md) 檔案的預設週期為10秒。 您可以指定在允許檔案執行之前所等候的其他時間週期。 這可協助確保有足夠的時間接收 Microsoft Defender 防毒軟體雲端服務的適當判斷。
+會 [封鎖](configure-block-at-first-sight-microsoft-defender-antivirus.md) 檔案的預設週期為10秒。 您可以指定在允許檔案執行之前所等候的其他時間週期。 這可協助確保有足夠的時間來接收 Microsoft Defender 防毒軟體雲端服務的適當判斷。
 
 ## <a name="prerequisites-to-use-the-extended-cloud-block-timeout"></a>使用擴展雲端封鎖超時的必要條件
 
@@ -46,15 +47,15 @@ ms.locfileid: "51765800"
 
 2. 在 [**群組原則管理編輯器**] 移至 [電腦設定]，然後按一下 [**系統****管理範本**]。
 
-3. 在 **Microsoft Defender 防病毒 > MpEngine** 中，展開樹狀目錄至 Windows 元件 >
+3. 展開樹狀目錄，以 **Windows 元件 > Microsoft Defender 防毒軟體 > MpEngine**
 
 4. 按兩下 [ **設定擴展的雲端檢查** ]，並確定已啟用此選項。 指定在等待雲端決定時，防止檔案執行的額外時間長度。 您可以指定從1秒到50秒之間的額外時間（以秒為單位）。 此時間將會新增至預設的10秒。
 
-5. 按一下 [確定]。
+5. 按一下 ****[確定]。
 
 ## <a name="related-topics"></a>相關主題
 
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)
 - [透過雲端提供的保護來使用下一代防病毒技術](cloud-protection-microsoft-defender-antivirus.md)
 - [設定初次看到的封鎖](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 - [啟用雲端傳送保護](enable-cloud-protection-microsoft-defender-antivirus.md)
