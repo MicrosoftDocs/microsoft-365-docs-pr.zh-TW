@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: f8dd48364f60da789ac95638018245cf46434822
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e51cc1d613e6f9e7ab96653692362ed7fe239e3e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197634"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274841"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>流覽行動中心以查看修正動作
 
@@ -53,7 +53,7 @@ ms.locfileid: "51197634"
 整合的動作中心會跨 Defender 的 Defender 和 Defender for Office 365，將修正動作彙集在一起。 它會定義所有修正動作的共同語言，並提供統一的調查經驗。 
 
 如果您有適當的許可權以及下列一或多項訂閱，您可以使用統一的行動中心：
-- [適用於端點的 Defender](microsoft-defender-endpoint.md)
+- [端點的 Defender](microsoft-defender-endpoint.md)
 - [適用於 Office 365 的 Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
 
@@ -82,13 +82,13 @@ ms.locfileid: "51197634"
 - 選擇您要查看的欄。
 - 指定每個資料頁面上要包含的專案數。
 - 請使用篩選器，只查看您想要查看的專案。
-- 選取 [ **匯出** ]，將結果匯出至 .csv 檔案。 
+- 選取 [ **匯出** ]，將結果匯出至 .csv 檔。 
 
 ## <a name="next-steps"></a>後續步驟
 
-- [查看和核准修正動作](manage-auto-investigation.md)
+- [查看和核准補救動作](manage-auto-investigation.md)
 - [請參閱互動式指南：使用 Microsoft Defender for Endpoint 調查和修正威脅](https://aka.ms/MDATP-IR-Interactive-Guide)
  
 ## <a name="see-also"></a>另請參閱
 
-- [在 Microsoft Defender for Endpoint 中處理誤報/負片](defender-endpoint-false-positives-negatives.md)
+- [解決適用於端點的 Microsoft Defender 中的誤判/漏報](defender-endpoint-false-positives-negatives.md)

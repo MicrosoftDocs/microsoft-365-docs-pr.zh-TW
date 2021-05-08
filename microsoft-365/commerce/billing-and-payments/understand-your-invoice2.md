@@ -25,14 +25,17 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 了解如何解讀商務用 Microsoft 365 帳單或發票上的費用、計費和付款資訊，以及如何變更採購單編號。
-ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615372"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245013"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解您的商務用 Microsoft 365 帳單或發票
+
+> [!IMPORTANT]
+> 從2021年1月26日起，比利時、法國、義大利、盧森堡、葡萄牙、西班牙及美國版本的客戶不再支援新的銀行帳戶。 如果您是其中一個國家/地區的現有客戶，您可以繼續使用現有的銀行帳戶支付訂閱費用，而且您可以新增訂閱給它，但只要銀行帳戶為良好。
 
 每月或每年 (根據您購買訂閱時選擇的選項而定)，您會收到一封電子郵件，告知您系統管理中心已提供新的對帳單。 [了解如何尋找及檢視您的帳單或發票](view-your-bill-or-invoice.md)。
   
@@ -105,18 +108,18 @@ ms.locfileid: "51615372"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[您的產品]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
 1. 在 **[產品]** 索引標籤上，選擇您想要變更的訂閱。

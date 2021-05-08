@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5e160d9c2311d595c5f8ad84b3ae870e94d14aff
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9493182a1e4287e0f91e95a9f0f0f41404cf9ed6
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542463"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272717"
 ---
 # <a name="payment-information-for-trinidad-and-tobago"></a>特立尼達和多巴哥的支付資訊
 

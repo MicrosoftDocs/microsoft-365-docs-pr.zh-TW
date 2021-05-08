@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: e3e842f812c5675334cc25fa35544165129db2b4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f3dba2116e0f13f265937ef65fd3b69bcb1e725b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245885"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274649"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在行動中心中查看及管理動作
 
@@ -37,24 +37,25 @@ ms.locfileid: "52245885"
 - Microsoft 365 Defender
 
 Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作。 以下為一些範例：
-- [自動調查](m365d-autoir.md) 可能會導致自動或等待核准的修復動作。
+
+- [自動調查](m365d-autoir.md) 可能會導致自動採取或等待您核准的修復動作。
 - 防毒程式、反惡意程式碼和其他威脅防護功能可能會導致修復動作，例如封鎖檔案、URL 或程式，或將專案傳送至隔離區。
 - 您的安全性運作小組可以手動採取補救措施，例如在 [高級搜尋](advanced-hunting-overview.md) 期間或調查 [警示](investigate-alerts.md) 或 [事件](investigate-incidents.md)。
 
 > [!NOTE]
-> 您必須具備[適當的權限](m365d-action-center.md#required-permissions-for-action-center-tasks)，才能核准或拒絕補救動作。 如需詳細資訊，請參閱[在 Microsoft 365 Defender 中進行自動調查和回應的必要條件](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
+> 您必須具備[適當的權限](m365d-action-center.md#required-permissions-for-action-center-tasks)，才能核准或拒絕補救動作。 如需詳細資訊，請參閱 [必要條件](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
 
 ## <a name="review-pending-actions-in-the-action-center"></a>在重要中心檢查擱置的動作
 
 務必盡快核准 (或拒絕) 擱置中的動作，這樣您的自動化調查才能及時進行和完成。 
 
-![核准或拒絕動作](../../media/air-actioncenter-itemselected.png)
-
 1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
 
 2. 在功能窗格中，選擇 [重要訊息中心]。 
 
-3. 在重要訊息中心的 [擱置中] 索引標籤上，選取清單中的一個項目。 其快顯視窗隨即開啟。
+3. 在重要訊息中心的 [擱置中] 索引標籤上，選取清單中的一個項目。 其快顯視窗隨即開啟。 以下為範例。
+
+   ![核准或拒絕動作](../../media/air-actioncenter-itemselected.png)
 
 4. 查看彈出窗格中的資訊，然後執行下列其中一個步驟：
    - 選取 [ **開啟調查] 頁面** ，以查看有關調查的詳細資料。
@@ -68,7 +69,7 @@ Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作
 
 | 動作來源 | 支援的動作 |
 |:---|:---|
-| -自動調查 <br/>-Microsoft Defender 防毒軟體 <br/>-手動回應動作 | 隔離裝置 <br/>-限制執行程式碼 <br/>-隔離檔 <br/>-移除登錄機碼 <br/>-停止服務 <br/>-停用驅動程式 <br/>-移除排程任務 |
+| -自動調查 <br/>-Microsoft Defender 防病毒 <br/>-手動回應動作 | 隔離裝置 <br/>-限制執行程式碼 <br/>-隔離檔 <br/>-移除登錄機碼 <br/>-停止服務 <br/>-停用驅動程式 <br/>-移除排程任務 |
 
 ### <a name="undo-one-remediation-action"></a>復原一個修正動作
 
@@ -90,11 +91,11 @@ Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作
 
 1. 請移至「行動中心」 ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 並登入。
 
-2. 在 [ **記錄** ] 索引標籤上，選取具有 [ **隔離** 檔] 動作類型的檔案。
+2. 在 [ **記錄** ] 索引標籤上，選取具有 **隔離檔** 動作類型的檔案。
 
 3. 在螢幕右側的窗格中，選取 [套用至此檔案 **的 X 個實例**]，然後選取 [ **復原**]。
 
 ## <a name="next-steps"></a>後續步驟
 
 - [檢視自動調查的詳細資料和結果](m365d-autoir-results.md)
-- [瞭解如何處理誤報/負片 (如果您取得一個) ](m365d-autoir-report-false-positives-negatives.md)
+- [位址誤報或漏報) ](m365d-autoir-report-false-positives-negatives.md)

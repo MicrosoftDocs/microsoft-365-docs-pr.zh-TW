@@ -24,18 +24,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: 適用於小型企業的 Microsoft 365 安全性和共同作業建議，包括小型公司、實務和政治活動。
-ms.openlocfilehash: 621ebe483683f68ccb9332f9c8b2802bd9b98867
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+description: 適用於小型企業的 Microsoft 365 商務進階版安全性和共同作業建議，包括小型公司、事務所和政治活動。
+ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100780"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245025"
 ---
 <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>適用於小型企業和活動的 Microsoft 365
 ===========================
 
-在我們現今的世界中，保持資料和通訊的安全是優先要務，醫療和法律實務、政治活動，以及許多其他小型企業尤其如此。 此解決方案提供一組建議，其設計可協助保護您和您的資料。 此文件庫包含設定及使用此建議環境的相關說明，而無論您的企業類型為何。
+如果您有 Microsoft 365 商務進階版，此文件庫中的指引是設定安全性並安全地開始共同作業的最快速方法。 在我們現今的世界中，保持資料和通訊的安全是優先要務，醫療和法律實務、政治活動，以及許多其他小型企業尤其如此。 此解決方案提供一組建議，其設計可協助保護您和您的資料。 此文件庫包含設定及使用此建議環境的相關說明，而無論您的企業類型為何。
 
 
 ![Microsoft 365 商務進階版可保護您的生產力工具、共同作業工具、檔案儲存空間、電子郵件、裝置和身分識別](../media/M365-WhatIsIt-SecurityFocus.png)

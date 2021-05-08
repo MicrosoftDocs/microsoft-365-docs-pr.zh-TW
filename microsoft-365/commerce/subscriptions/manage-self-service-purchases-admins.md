@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何管理組織中使用者所進行的自我服務購買。
-ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 59d64c047ddf4f33c2ef3277f3139f1b7692b891
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398171"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244989"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助購買 (管理員)
 
@@ -37,20 +37,19 @@ ms.locfileid: "51398171"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** > [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **帳單** > **產品** ] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[您的產品]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **帳單** > **產品** ] 頁面。
-
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
 2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
@@ -59,7 +58,7 @@ ms.locfileid: "51398171"
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>查看誰有自助購買訂閱的授權
 
 > [!NOTE]
-> 身為系統管理員，您無法指派或取消指派組織中使用者購買之自助購買訂閱的授權。 您可以 [接管自助購買訂閱](#take-over-a-self-service-purchase-subscription)，然後指派或取消指派授權。
+> 系統管理員無法指派或取消指派貴組織中的使用者所購買的自助購買訂閱授權。 您可以 [接管自助購買訂閱](#take-over-a-self-service-purchase-subscription)，然後指派或取消指派授權。
 
 ::: moniker range="o365-worldwide"
 
@@ -69,12 +68,13 @@ ms.locfileid: "51398171"
 
 ::: moniker range="o365-germany"
 
-1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **帳單** > **授權** ] 頁面。
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">[授權]</a> 頁面。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **帳單** > **授權** ] 頁面。
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">[授權]</a> 頁面。
 
 ::: moniker-end
 
@@ -141,7 +141,7 @@ ms.locfileid: "51398171"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** > [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 ::: moniker-end
 
@@ -172,7 +172,7 @@ ms.locfileid: "51398171"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** > [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 ::: moniker-end
 

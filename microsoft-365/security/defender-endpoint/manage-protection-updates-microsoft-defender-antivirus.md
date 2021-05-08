@@ -1,27 +1,28 @@
 ---
-title: 管理 Microsoft Defender 防病毒接收更新的方式和位置
-description: 管理 Microsoft Defender 防病毒如何接收保護更新的回退順序。
+title: 管理 Microsoft Defender 防毒軟體接收更新的方式與位置
+description: 管理 Microsoft Defender 防毒軟體如何接收保護更新的後備順序。
 keywords: 更新，安全性基準，保護，回退順序，ADL，MMPC，UNC，檔案路徑，共用，wsus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 9b1c9bc8c86c5b348e3c4d2a51e0bfafaf3e7174
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: c6961c4eac375ea36d801e278f5208f16d2558d9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765464"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275021"
 ---
-# <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>管理 Microsoft Defender 防病毒防護更新的來源
+# <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>管理 Microsoft Defender 防毒軟體保護更新的來源
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,14 +34,14 @@ ms.locfileid: "51765464"
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
 
-保持最新的防防毒保護是非常重要的。 管理 Microsoft Defender 防病毒的保護更新有兩個元件： 
+保持最新的防防毒保護是非常重要的。 有兩個元件可管理 Microsoft Defender 防毒軟體的保護更新： 
 - 下載更新的 *位置*;和 
 - 下載和套用更新 *時*。 
 
-本文說明如何指定應從何處下載更新 (這也稱為「回退訂單) 」。 請參閱 [管理 Microsoft Defender 防病毒更新及套用基準](manage-updates-baselines-microsoft-defender-antivirus.md) 主題，以取得更新的運作方式，以及如何設定更新的其他方面 (例如排程更新) 。
+本文說明如何指定應從何處下載更新 (這也稱為「回退訂單) 」。 請參閱[管理 Microsoft Defender 防毒軟體更新及套用基準](manage-updates-baselines-microsoft-defender-antivirus.md)主題，以取得更新的運作方式，以及如何設定更新的其他方面 (例如排程更新) 。
 
 > [!IMPORTANT]
-> Microsoft Defender 防病毒安全性情報更新是透過 Windows Update 傳遞，在2019年10月21日星期一開始，所有的安全性智慧更新將 SHA-2 以獨佔方式簽署。 您的裝置必須更新為支援 SHA-2，才能更新您的安全性情報。 若要深入瞭解，請參閱 [2019 SHA-2 Windows 和 WSUS 的代碼簽署支援需求](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。  
+> Microsoft Defender 防毒軟體安全情報更新是透過 Windows 更新及從2019年10月21日星期一開始，所有的安全性情報更新皆 SHA-2 以獨佔方式簽署。 您的裝置必須更新為支援 SHA-2，才能更新您的安全性情報。 若要深入瞭解，請參閱[2019 SHA-2 Windows 和 WSUS 的代碼簽署支援需求](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。  
 
 
 <a id="fallback-order"></a>
@@ -58,32 +59,32 @@ ms.locfileid: "51765464"
 有五個位置可讓您指定端點應該取得更新的位置： 
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+- [Windows伺服器更新服務](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [網路檔共用](#unc-share)
-- [Microsoft Defender 防病毒和其他 microsoft 反惡意軟體的安全性情報更新](https://www.microsoft.com/en-us/wdsi/defenderupdates) (原則和登錄可能會列為 microsoft 惡意程式碼保護中心 (MMPC) 安全性情報，其為其原來的名稱。 ) 
+- [Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性智慧更新](https://www.microsoft.com/en-us/wdsi/defenderupdates) (您的原則及登錄可能會列為 Microsoft 惡意程式碼防護中心 (MMPC) 安全性智慧，其為先前名稱。 ) 
 
-為了確保最佳的保護層級，Microsoft 更新可讓您快速發行，這表示經常下載較小的下載。 Windows Server Update Service、Microsoft Endpoint Configuration Manager 和 Microsoft security 情報更新來源，提供的更新頻率較低。 因此，差異可能會變大，因此會產生較大的下載。 
+為了確保最佳的保護層級，Microsoft 更新可讓您快速發行，這表示經常下載較小的下載。 Windows Server Update Service、Microsoft Endpoint Configuration Manager 和 Microsoft security 情報更新來源，會提供較不常用的更新。 因此，差異可能會變大，因此會產生較大的下載。 
 
 > [!IMPORTANT]
-> 如果您已將 [Microsoft Security 情報頁面](https://www.microsoft.com/security/portal/definitions/adl.aspx) 更新為 Windows Server Update Service 或 Microsoft Update 之後的回退來源，當目前的更新被視為過期時，就只會從安全智慧更新下載更新。  (預設會連續七天內，不能從 Windows Server Update Service 或 Microsoft Update services) 套用更新。
+> 如果您已將[Microsoft Security 情報頁面](https://www.microsoft.com/security/portal/definitions/adl.aspx)更新為 Windows Server Update Service 或 Microsoft Update 之後的回退來源，當目前的更新視為過期時，將只從安全性智慧更新下載更新。  (預設會連續七天內，不能從 Windows 伺服器更新服務或 Microsoft Update services) 套用更新。
 > 不過，您可以 [設定將保護報告為過期前的天數](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)。<p>
-> 2019年10月21日當星期一開始，安全性智慧更新將會以獨佔方式 SHA-2。 裝置必須更新為支援 SHA-2，才能取得最新的安全性智慧更新。 若要深入瞭解，請參閱 [2019 SHA-2 Windows 和 WSUS 的代碼簽署支援需求](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
+> 2019年10月21日當星期一開始，安全性智慧更新將會以獨佔方式 SHA-2。 裝置必須更新為支援 SHA-2，才能取得最新的安全性智慧更新。 若要深入瞭解，請參閱[2019 SHA-2 Windows 和 WSUS 的代碼簽署支援需求](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
 
 每個來源都有一般的案例，取決於您的網路的設定方式，以及其發佈更新的頻率，如下表所述：
 
 |位置 | 範例案例 |
 |---|---|
-|Windows Server Update Service | 您使用 Windows Server Update Service 來管理網路的更新。|
-|Microsoft Update | 您想要讓端點直接連接至 Microsoft Update。 這對於未連接到商業網路的不規則端點很有用，否則您不會使用 Windows Server Update 服務來管理更新。|
+|Windows伺服器更新服務 | 您正在使用 Windows Server Update 服務來管理網路的更新。|
+|Microsoft Update | 您想要讓端點直接連接至 Microsoft Update。 這對於未連接到商業網路的不規則端點非常有用，否則您不會使用 Windows Server Update 服務來管理更新。|
 |檔案共用 | 您有未連接網際網路的裝置 (例如 Vm) 。 您可以使用網際網路連線的 VM 主機，將更新下載至網路共用，Vm 便可以從該網路共用取得更新。 請參閱 [vdi 部署指南](deployment-vdi-microsoft-defender-antivirus.md) 瞭解如何在虛擬桌面基礎結構 (vdi) 環境中使用檔共用。|
-|Microsoft 端點管理員 | 您正在使用 Microsoft 端點管理員更新您的端點。|
-|Microsoft Defender 防毒軟體和其他 Microsoft 反惡意 (軟體的安全性情報更新，以前稱為 MMPC)  |[請確定您的裝置已更新，以支援 SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。 Microsoft Defender 防病毒安全性情報更新是透過 Windows Update 傳遞，在2019年10月21日開始，將會以獨佔方式 SHA-2 簽署安全性情報更新。 <br/>因為最近的感染，或為 [VDI 部署](deployment-vdi-microsoft-defender-antivirus.md)提供強基底影像，所以請下載最新的保護更新。 此選項一般只會用作最後的回退來源，而非主要來源。 只有在 [指定的天數](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)無法從 Windows Server update Service 或 Microsoft Update 下載更新時，才會使用此值。|
+|Microsoft 端點管理員 | 您正在使用 Microsoft 端點管理員來更新您的端點。|
+|Microsoft Defender 防毒軟體和其他 Microsoft 反惡意軟體的安全性情報更新 (先前稱為 MMPC)  |[請確定您的裝置已更新，以支援 SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。 Microsoft Defender 防毒軟體安全情報更新是透過 Windows 更新，並在星期一的2019年10月21日開始，安全性情報更新將會以獨佔方式 SHA-2 簽署。 <br/>因為最近的感染，或為 [VDI 部署](deployment-vdi-microsoft-defender-antivirus.md)提供強基底影像，所以請下載最新的保護更新。 此選項一般只會用作最後的回退來源，而非主要來源。 只有在[指定的天數](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)無法從 Windows Server update Service 或 Microsoft Update 下載更新時，才會使用此值。|
 
-您可以管理「群組原則」、「Microsoft 端點設定管理員」、PowerShell Cmdlet 及 WMI 的更新來源的使用順序。
+您可以管理「群組原則」、「Microsoft Endpoint Configuration Manager」、「PowerShell Cmdlet」和 WMI 所用的更新來源的順序。
 
 > [!IMPORTANT]
-> 如果您將 Windows Server Update Service 設定為下載位置，則不論您用來指定位置的管理工具為何，都必須核准更新。 您可以使用 Windows Server Update 服務設定自動核准規則，這在一天內至少有一次的更新到達時可能很有用。 若要深入瞭解，請參閱 [同步處理 endpoint protection 更新中的獨立 Windows Server Update Service](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
+> 如果您將 Windows Server Update Service 設定為下載位置，則不論您用來指定位置的管理工具為何，都必須核准更新。 您可以使用 Windows Server Update 服務設定自動核准規則，這在一天內至少有一次的更新到達時，這會很有用。 若要深入瞭解，請參閱[同步處理 endpoint protection 更新中的獨立 Windows 伺服器更新服務](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
 
 本文中的程式會先說明如何設定順序，以及如何設定 [檔案 **共用** ] 選項（如果已啟用的話）。
 
@@ -95,7 +96,7 @@ ms.locfileid: "51765464"
 
 3. 按一下 [ **原則** 然後是系統 **管理範本**]。
 
-4. 將樹展開為 **windows > Windows Defender >** 簽章更新，並設定下列設定：
+4. 展開樹狀目錄，以 **Windows 元件 > Windows Defender >** 簽章更新，並設定下列設定：
 
    1.  按兩下 [ **定義下載安全性情報更新的來源順序** ] 設定，並將此選項設定為 [ **啟用**]。
 
@@ -103,20 +104,20 @@ ms.locfileid: "51765464"
 
    ![列出來源順序的群組原則設定的螢幕擷取畫面](images/defender/wdav-order-update-sources.png)
 
-   3. 按一下 [確定]。 這會設定保護更新來源的順序。
+   3. 按一下 ****[確定]。 這會設定保護更新來源的順序。
 
    4. 按兩下 [定義檔案 **共用以下載安全性情報更新** ] 設定，並將選項設定為 [ **啟用**]。
 
    5. 輸入檔案共用來源。 如果您有多個來源，請依照應該使用的順序輸入每個來源，並以單一管道分隔。 使用 [標準 UNC 標記法來表示](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) 路徑，例如： `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` 。  如果您沒有輸入任何路徑，當 VM 下載更新時，將會略過此來源。
 
-   6. 按一下 [確定]。 當您在 [ **定義來源的順序** ...] 群組原則設定中參照該來源時，這會設定共用檔共用的順序。
+   6. 按一下 ****[確定]。 當您在 [ **定義來源的順序** ...] 群組原則設定中參照該來源時，這會設定共用檔共用的順序。
 
 > [!NOTE]
-> 針對 Windows 10，版本1703（含1809），原則路徑為 windows **> Microsoft Defender 防病毒 >** 簽章更新的 windows 元件，版本1903，原則路徑是 windows **元件 > Microsoft Defender 防毒程式 > 安全性情報更新**
+> 針對 Windows 10，版本1703至（含）1809，原則路徑是 **Windows 元件 > Microsoft Defender 防毒軟體 >** Windows 10 的簽章更新，版本1903，原則路徑是 **Windows 元件 > Microsoft Defender 防毒軟體 > 安全性智慧更新**
 
 ## <a name="use-configuration-manager-to-manage-the-update-location"></a>使用 Configuration Manager 管理更新位置
 
-如需設定 Microsoft 端點管理員 (目前分支) 的詳細資訊，請參閱 [Configure Security 情報更新 For Endpoint Protection](/configmgr/protect/deploy-use/endpoint-definition-updates) 。
+請參閱[設定 Endpoint Protection 的安全性情報更新](/configmgr/protect/deploy-use/endpoint-definition-updates)，以取得設定 Microsoft 端點管理員 (目前的分支) 的詳細資料。
 
 
 ## <a name="use-powershell-cmdlets-to-manage-the-update-location"></a>使用 PowerShell Cmdlet 來管理更新位置
@@ -130,10 +131,10 @@ Set-MpPreference -SignatureDefinitionUpdateFileSharesSource {\\UNC SHARE PATH|\\
 如需詳細資訊，請參閱下列文章：
 - [MpPreference-SignatureFallbackOrder](/powershell/module/defender/set-mppreference)
 - [MpPreference-SignatureDefinitionUpdateFileSharesSource](/powershell/module/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
-- [使用 PowerShell Cmdlet 來設定及執行 Microsoft Defender 防毒程式](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [使用 PowerShell Cmdlet 來設定及執行 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Defender Cmdlet](/powershell/module/defender/index)
 
-## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>使用 Windows Management 指令 (WMI) 管理更新位置
+## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>使用 Windows 管理指令 (WMI) 管理更新位置
 
 針對下列屬性，使用 MSFT_MpPreference 類別的 [ **Set** 方法](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) ：
 
@@ -143,7 +144,7 @@ SignatureDefinitionUpdateFileSharesSource
 ```
 
 如需詳細資訊，請參閱下列文章：
-- [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows DefenderWMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>使用行動裝置管理 (MDM) 管理更新位置
 
@@ -151,12 +152,12 @@ SignatureDefinitionUpdateFileSharesSource
 
 ## <a name="what-if-were-using-a-third-party-vendor"></a>如果我們使用協力廠商廠商，該怎麼辦？
 
-本文說明如何設定及管理 Microsoft Defender 防病毒的更新。 不過，協力廠商廠商可用於執行這些工作。 
+本文說明如何設定及管理 Microsoft Defender 防毒軟體的更新。 不過，協力廠商廠商可用於執行這些工作。 
 
-例如，Contoso 已聘用 Fabrikam 以管理其安全性解決方案，其中包含 Microsoft Defender 防病毒。 Fabrikam 一般使用 [Windows Management Instrumentation](./use-wmi-microsoft-defender-antivirus.md)、 [PowerShell Cmdlet](./use-powershell-cmdlets-microsoft-defender-antivirus.md)或 [windows 命令列](./command-line-arguments-microsoft-defender-antivirus.md) 來部署修補程式和更新。 
+例如，Contoso 已聘用 Fabrikam 以管理其安全性解決方案，其中包括 Microsoft Defender 防毒軟體。 Fabrikam 一般使用[Windows 管理工具](./use-wmi-microsoft-defender-antivirus.md)、 [PowerShell Cmdlet](./use-powershell-cmdlets-microsoft-defender-antivirus.md)或[Windows 命令列](./command-line-arguments-microsoft-defender-antivirus.md)來部署修補程式和更新。 
 
 > [!NOTE]
-> Microsoft 不會測試協力廠商的解決方案，以管理 Microsoft Defender 防毒軟體。
+> Microsoft 不會測試協力廠商的解決方案來管理 Microsoft Defender 防毒軟體。
 
 <a id="unc-share"></a>
 ## <a name="create-a-unc-share-for-security-intelligence-updates"></a>建立安全性智慧更新的 UNC 共用
@@ -229,7 +230,7 @@ SignatureDefinitionUpdateFileSharesSource
        ```
 
     > [!NOTE]
-    > 建立排程的任務後，您可以在 Microsoft\Windows\Windows Defender 底下的工作排程器中找到這些工作。
+    > 建立排程的任務後，您可以在 [Microsoft Windows \ Windows Defender] 下的工作排程器中找到這些工作。
 9. 手動執行每項工作，並確認下列資料夾中的資料 (mpam-d.exe、mpam-fe.exe 及 nis_full.exe)  (您可能已選擇不同的位置) ：
 
    - C:\Temp\TempSigs\x86
@@ -260,8 +261,8 @@ SignatureDefinitionUpdateFileSharesSource
 ## <a name="related-articles"></a>相關文章
 
 - [部署 Microsoft Defender 防毒軟體](deploy-manage-report-microsoft-defender-antivirus.md)
-- [管理 Microsoft Defender 防病毒更新並套用基準](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [管理 Microsoft Defender 防毒軟體更新及套用基準](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [管理已過期端點的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [管理以事件為基礎的強制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [管理事件型強制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [管理行動裝置和 Vm 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

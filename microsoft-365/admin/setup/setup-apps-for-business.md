@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 瞭解如何設定 Microsoft 365 Apps 商務版訂閱。
-ms.openlocfilehash: 56eb3eb0f28ee99aab1c50a970626c61514335cd
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579095"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244476"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>設定 Microsoft 365 Apps 商務版
 
@@ -57,7 +57,7 @@ ms.locfileid: "51579095"
 
 2. 請選擇 **[移至設定]** 來啟動精靈。
 
-3. 在第一頁上，您可以選擇在電腦上安裝 Office 應用程式。 您也可以等等再進行這項選擇。
+3. 在第一頁，系統會提供您在電腦上安裝 Office 應用程式的選項。您也可以稍後再進行。
 
 3. 在下一頁中，您可以新增使用者，他們會自動取得 Microsoft Apps 商務版授權。 新增使用者之後，您也會看到與您新增之使用者共用認證的選項。 您可以選擇列印認證、透過電子郵件傳送認證，或是下載認證。
 
@@ -89,7 +89,7 @@ ms.locfileid: "51579095"
 
 2. 選取 [安裝]。
 
-需要更詳細的步驟，或想要安裝 64 位元版的 Office 嗎？ 請參閱[逐步安裝指示](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps)。
+需要更詳細的步驟，或想要安裝 Office 的 64 位元版本嗎？請參閱[逐步安裝指示](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps)。
   
 ## <a name="set-up-mobile"></a>設定行動裝置
 
@@ -99,7 +99,7 @@ ms.locfileid: "51579095"
   
 ## <a name="store-files-online"></a>線上儲存檔案
 
-Microsoft 讓線上檔案儲存變得容易。若要了解最適合貴公司的儲存位置，請參閱[您可以在 Office 365 中儲存檔案的位置](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)。
+Microsoft 讓線上檔案儲存變得容易。若要了解最適合貴公司的儲存位置，請參閱[您可以在 Office 365 中儲存檔案的位置](../../business-video/store-files.md)。
   
 在您為每個人建立 Microsoft 帳戶時，他們皆會自動獲得 **OneDrive** 雲端儲存位置。 有了 OneDrive，您可以透過電腦、手機和平板電腦來存取檔案。
   

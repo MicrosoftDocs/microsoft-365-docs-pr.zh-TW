@@ -1,10 +1,10 @@
 ---
-title: 在 Microsoft Defender for Office 365 中複查和管理修正動作
+title: 在 Microsoft Defender for Office 365 中檢查和管理修正動作
 keywords: AIR，autoIR，Microsoft Defender for Endpoint，自動化，調查，回應，修正，威脅，高級，威脅，保護
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -15,18 +15,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 深入瞭解 Microsoft Defender for Office 365 方案2中自動調查和回應功能的修復動作。
+description: 深入瞭解 Microsoft Defender 中 Office 365 方案2的自動化調查和回應功能中的修復動作。
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: ce6cfd920845f5a85dbc7d7d48cfefdd6209ec3a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933646"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275069"
 ---
-# <a name="review-and-manage-remediation-actions-in-office-365"></a>在 Office 365 中複查及管理修正動作
+# <a name="review-and-manage-remediation-actions-in-office-365"></a>在 Office 365 中檢查和管理修正動作
 
 隨著電子郵件的自動調查 & 共同作業會導致 verdicts （例如 *惡意* 或 *可疑*）建立某些修正動作。 在 Microsoft Defender for Office 365 中，修正動作可包含：
 - 封鎖 URL (按時) 

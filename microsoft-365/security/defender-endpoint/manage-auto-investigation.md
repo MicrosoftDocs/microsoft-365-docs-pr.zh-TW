@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 48674292e5a72ccc371ff4bf43dc499f19b3886d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51058288"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274925"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>在自動調查後複查修正動作
 
@@ -84,7 +84,7 @@ ms.locfileid: "51058288"
 
 | 動作來源 | 支援的動作 |
 |:---|:---|
-| -自動調查 <br/>-Microsoft Defender 防病毒 <br/>-手動回應動作 | 隔離裝置 <br/>-限制執行程式碼 <br/>-隔離檔 <br/>-移除登錄機碼 <br/>-停止服務 <br/>-停用驅動程式 <br/>-移除排程任務 |
+| -自動調查 <br/>-Microsoft Defender 防毒軟體 <br/>-手動回應動作 | 隔離裝置 <br/>-限制執行程式碼 <br/>-隔離檔 <br/>-移除登錄機碼 <br/>-停止服務 <br/>-停用驅動程式 <br/>-移除排程任務 |
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>一次取消執行多個動作
 
@@ -107,7 +107,7 @@ ms.locfileid: "51058288"
 |**完整修正威脅會自動** (建議設定)  |對一條證據達成 *惡意的蓄意* 性。 <br/><br/>系統會自動採取適當的修復動作。 |[查看已完成的動作](#review-completed-actions) |
 |**自動修正威脅** |有一條證據會達到 *可疑* 的判定。 <br/><br/>修正動作正待核准，繼續進行。 | [核准 (或拒絕) 擱置的動作](#review-pending-actions) |
 |**半要求進行任何修正的核准**  |針對某個證據，會達到對 *惡意* 或 *可疑* 的判定。 <br/><br/>修正動作正待核准，繼續進行。  |[核准 (或拒絕) 擱置的動作](#review-pending-actions) |
-|**半自動要求核心資料夾修正的核准** |對一條證據達成 *惡意的蓄意* 性。 <br/><br/>如果專案是檔案或可執行檔，且位於作業系統目錄（如 Windows 資料夾或 Program files 資料夾）中，則修正動作會等候進行核准。 <br/><br/>如果專案 *不* 在作業系統目錄中，就會自動採取修復動作。 |1. [核准 (或拒絕) 擱置的動作](#review-pending-actions)<br/><br/>2. [檢查完成的動作](#review-completed-actions) |
+|**半自動要求核心資料夾修正的核准** |對一條證據達成 *惡意的蓄意* 性。 <br/><br/>如果專案是檔案或可執行檔，且位於作業系統目錄中，例如 Windows 資料夾或 Program files 資料夾，則修正動作會等候等候核准。 <br/><br/>如果專案 *不* 在作業系統目錄中，就會自動採取修復動作。 |1. [核准 (或拒絕) 擱置的動作](#review-pending-actions)<br/><br/>2. [檢查完成的動作](#review-completed-actions) |
 |**半自動要求核心資料夾修正的核准** |有一條證據會達到 *可疑* 的判定。 <br/><br/>修正動作正待核准。  |[核准 (或拒絕) 擱置的動作](#review-pending-actions)。|
 |**非 temp 資料夾修正的半要求核准** |對一條證據達成 *惡意的蓄意* 性。 <br/><br/>如果專案是不在暫存資料夾中的檔案或可執行檔，例如使用者的 [下載] 資料夾或 temp 資料夾，則修正動作會等候進行核准。 <br/><br/>如果專案是暫存資料夾中的檔案或可執行檔 *，便會* 自動採取修正動作。  |1. [核准 (或拒絕) 擱置的動作](#review-pending-actions)<br/><br/>2. [檢查完成的動作](#review-completed-actions)  |
 |**非 temp 資料夾修正的半要求核准** |有一條證據會達到 *可疑* 的判定。 <br/><br/>修正動作正待核准。 |[核准 (或拒絕) 擱置的動作](#review-pending-actions)  | 
@@ -120,7 +120,7 @@ ms.locfileid: "51058288"
 
 - [深入瞭解即時回應功能](live-response.md)
 - [使用高級搜尋主動搜尋威脅](advanced-hunting-overview.md)
-- [在 Microsoft Defender for Endpoint 中處理誤報/負片](defender-endpoint-false-positives-negatives.md)
+- [解決適用於端點的 Microsoft Defender 中的誤判/漏報](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="see-also"></a>另請參閱
 

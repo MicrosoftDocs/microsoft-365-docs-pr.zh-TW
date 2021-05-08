@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34274e260da2e8acc8088fcff6d324b6b31fc2ef
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0e09a313b512135785050abd5aa61bb9576ce1d8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935938"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274937"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上適用於端點的 Microsoft Defender
 
@@ -39,16 +39,23 @@ ms.locfileid: "51935938"
 本主題說明如何在 Linux 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Linux 上執行其他協力廠商端點保護產品及 Microsoft Defender for Endpoint 時，可能會造成效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以 [被動式模式](linux-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以安全地利用適用于 Linux EDR 功能的 Defender for endpoint。
+> 在 Linux 上執行其他協力廠商端點保護產品及 Microsoft Defender for Endpoint 時，可能會造成效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以[被動式模式](linux-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以在 Linux EDR 功能上安全地利用 Defender for endpoint。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安裝 Microsoft Defender for Endpoint
 
 ### <a name="prerequisites"></a>必要條件
 
-- 存取 Microsoft Defender 安全中心入口網站
+- 存取 Microsoft Defender 資訊安全中心入口網站
 - 使用 [systemd](https://systemd.io/) 系統管理員的 Linux 發行
 - 在 Linux 和 BASH 腳本中的初級層級體驗
 - 當手動部署時，裝置上的系統管理許可權 () 
+
+> [!NOTE]
+>  Linux 代理程式上的 Microsoft Defender for Endpoint 獨立于 [OMS 代理程式](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint 依賴其自身的獨立遙測管線。
+> 
+> Linux 上的 Microsoft Defender for Endpoint 尚未整合到 Azure Security Center 中。
+
+
 
 ### <a name="installation-instructions"></a>安裝指示
 
@@ -66,25 +73,36 @@ ms.locfileid: "51935938"
 
 如果您遇到任何安裝失敗問題，請參閱在 [Linux 上的 Microsoft Defender For Endpoint 中的安裝失敗疑難排解](linux-support-install.md)。
 
+
+
 ### <a name="system-requirements"></a>系統需求
 
 - 支援的 Linux 伺服器發行及版本：
 
-  - Red Hat Enterprise Linux 7.2 或更高版本
+  - 紅色帽子 Enterprise Linux 7.2 或更高版本
   - CentOS 7.2 或更高版本
   - Ubuntu 16.04 LTS 或更高版本 LTS
   - Debian 9 或更高版本
   - SUSE Linux Enterprise Server 12 或更高版本
   - Oracle Linux 7.2 或更高版本
 
+    > [!NOTE]
+    > 未明確列出的發行及版本不受支援 (，即使它們派生自正式支援的發行) 也是一樣。
+
+
 - 最小內核版本 3.10.0-327
+
 - `fanotify`必須啟用內核選項
+
   > [!CAUTION]
   > 不支援以其他方式的安全性解決方案，並排在 Linux 上執行 Defender for Endpoint `fanotify` 。 這可能會造成無法預期的結果，包括懸掛作業系統。
 
-- 磁碟空間：1GB
+- 磁碟空間： 1 GB
+
 - /opt/microsoft/mdatp/sbin/wdavdaemon 需要可執行檔許可權。 如需詳細資訊，請參閱 [疑難排解 Microsoft Defender for The Linux 上的 Microsoft Defender For Endpoint 的安裝問題](/microsoft-365/security/defender-endpoint/linux-support-install)。
-- 記憶體：1GB
+
+- 記憶體： 1 GB
+
     > [!NOTE]
     > 請確認您在/var. 中有可用的磁碟空間。
 
@@ -117,7 +135,7 @@ ms.locfileid: "51935938"
 
 下列可供下載的試算表會列出您網路必須能夠連線的服務及其相關 URLs。 您應確定沒有防火牆或網路篩選規則可拒絕這些 URLs 的存取權。 如果有，您可能需要專門為其建立一個 *allow* 規則。
 
-|**網域清單的試算表**|**描述**|
+| 網域清單的試算表 | 描述 |
 |:-----|:-----|
 |![Microsoft Defender for Endpoint URLs 試算表的縮圖影像](images/mdatp-urls.png)<br/>  | 服務位置、地理位置和作業系統的特定 DNS 記錄試算表。 <br><br>[在這裡下載試算表。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 

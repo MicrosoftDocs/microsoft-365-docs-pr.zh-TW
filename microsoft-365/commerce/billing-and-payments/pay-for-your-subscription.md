@@ -21,14 +21,17 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 582ecb0f9b46d877c30aa29334b30b9209c93993
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 65454dcc71645b370d2ebfc875474151c0954a3c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576934"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245001"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>如何支付您的訂閱費用
+
+> [!IMPORTANT]
+> 自 2021 年 1 月 26 日起，針對比利時、法國、義大利、盧森堡、葡萄牙、西班牙和美國的客戶，不再支援新的銀行帳戶。 如果您是其中一個國家/地區中的現有客戶，只要銀行帳戶信用良好，您可以繼續使用現有的銀行帳戶支付訂閱費用，也可以新增新的訂閱。
 
 您可以使用信用卡或轉帳卡，或是銀行帳戶來支付您的訂閱費用。 在某些情況下，您可以使用支票或電匯 (EFT) 以透過發票付款。 如果您有帳單設定檔，您的選項會稍有不同。 如需詳細資訊，請參閱[如何使用帳單設定檔來支付您的訂閱費用](pay-for-subscription-billing-profile.md)。 如果您不確定您的帳戶是否有帳單設定檔，請參閱[了解帳單設定檔](manage-billing-profiles.md)。
 
@@ -37,7 +40,7 @@ ms.locfileid: "51576934"
 ## <a name="before-you-begin"></a>開始之前
 
 - 您必須是全域或計費系統管理員，才能執行本文所述的步驟。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-- 您於結帳時選擇的付款方式，就是我們用於所有未來計費週期的付款方式。 您隨時都可以變更。
+- 您於結帳時選擇的付款方式，就是我們用於所有未來計費週期的付款方式。您隨時都可以變更。
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>以信用卡或轉帳卡或銀行帳戶付款
 

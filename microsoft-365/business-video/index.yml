@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 商務版訓練
-summary: 瞭解如何為您的公司設定及管理 Microsoft 365。
+summary: 瞭解如何為您的公司設定和管理 Microsoft 365。
 brand: m365
 metadata:
   title: Microsoft 365 商務版訓練
-  description: 在 Microsoft 365 系統管理中心中，設定並管理 Microsoft 365。
+  description: 在 Microsoft 365 系統管理中心內設定及管理 Microsoft 365。
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -15,9 +15,9 @@ metadata:
   ms.custom: AdminSurgePortfolio
 productDirectory:
   items:
-    - title: 開始使用
+    - title: 快速入門
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: 規劃移至 Microsoft 365 for business。
+      summary: 規劃您的移動 Microsoft 365 商務。
       url: what-is-microsoft-365.md
     - title: 設定商務用 Microsoft 365
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
@@ -33,7 +33,7 @@ productDirectory:
       url: work-from-anywhere.md
     - title: 與其他人共同作業
       imageSrc: 'https://docs.microsoft.com/office/media/icons/collaborate-blue.svg'
-      summary: 在小組中與員工和客戶合作。
+      summary: 在 Teams 中與員工和客戶合作。
       url: collab-outlook-teams.md
     - title: 儲存和共用檔
       imageSrc: 'https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg'
@@ -61,18 +61,18 @@ productDirectory:
       url: overview-m365-security.md
     - title: 取得支援
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
-      summary: 取得 Microsoft 365 for business 的協助。
-      url: find-help-answers.md
+      summary: 取得商務用 Microsoft 365 協助。
+      url: get-help-support.md
 additionalContent:
   sections:
     - title: 深入了解
       items:
-        - title: 瞭解 Office
+        - title: 深入瞭解 Office
           summary: 瞭解如何使用 Word、Excel、PowerPoint 及其他 Office 應用程式。
           url: 'https://support.microsoft.com/training'
         - title: 取得 ITPros 的訓練
           summary: 完成面向大中型企業的教學途徑。
           url: 'https://docs.microsoft.com/learn/m365/'
         - title: 尋找更多系統管理員資源
-          summary: 移至 Microsoft 365 系統管理中心説明網站。
+          summary: 移至 Microsoft 365 管理中心說明網站。
           url: ../admin/index.yml

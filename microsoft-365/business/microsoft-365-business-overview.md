@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 商務進階版，這是一項訂閱服務，其中包含 Office 生產力應用程式和供企業防禦網路威脅的進階防護。
-ms.openlocfilehash: d6b0ded25e0478f85e73b807789463e4d55b1bb0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578340"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244849"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商務進階版的概觀
 
@@ -46,7 +46,7 @@ Microsoft 365 商務進階版 (之前稱為 Microsoft 365 商務版) 是一項�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。 
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../business-video/index.yml)。 
 
 Microsoft 365 商務進階版可提供最多 300 個授權。 如果您需要更多授權，請參閱 [Microsoft 365 企業版](../enterprise/index.yml)文件，以取得詳細資訊。
 
@@ -75,7 +75,7 @@ Microsoft 365 商務進階版透過下列方式，協助 **針對威脅防禦**�
 
 - 在沙箱環境中執行電子郵件附件的高級分析，以偵測新開發的惡意程式碼 (安全附件) 。 
 
-- 啟用採用機器學習模型和模擬偵測的反網路釣魚原則，以針對 Office 365 情報) 中的 (防網路釣魚，提供保護，以防禦高級攻擊。 
+- 啟用利用機器學習模型和模擬偵測的反網路釣魚原則，針對 Office 365 智慧) 中的 (防網路釣魚，提供保護，以防禦高級攻擊。 
 
 - 設定進階原則，停用從未受信任位置存取，或略過來自受信任位置 (如辦公室網路) 的多重要素驗證 (Azure MFA 包括受信任 IP 以及條件式存取)。 
 
@@ -111,6 +111,6 @@ Microsoft 365 商務進階版透過下列方式，協助 **針對威脅防禦**�
 
 - 如果您沒有合作夥伴，且想要取得 Microsoft 365 商務進階版，您可以[在這裡購買](https://www.microsoft.com/microsoft-365/business)，並遵循相關的[註冊](sign-up.md)指示。
 
-## <a name="see-also"></a>請參閱
+## <a name="related-content"></a>相關內容
 
-[Microsoft 365 商務進階版訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商務進階版訓練](../business-video/index.yml)影片 (連結] 頁面) 

@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e67cf964734103b93ffa4295edb3e213101acf03
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 733740245ba7dbf9ee07d00854aa202a95fd54f7
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542833"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273113"
 ---
 # <a name="payment-information-for-palestinian-authority"></a>巴勒斯坦權力機構的付款資訊
 

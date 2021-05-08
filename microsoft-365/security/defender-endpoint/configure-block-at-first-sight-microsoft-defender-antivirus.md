@@ -1,12 +1,12 @@
 ---
-title: 在第幾秒內啟用封鎖以偵測惡意程式碼
-description: 開啟塊狀的「初次看到」功能，以在幾秒內偵測並封鎖惡意程式碼。
-keywords: 掃描、封鎖第一次看到、惡意程式碼、第一次看到、雲端、defender、防毒程式
+title: 啟用第一次看見時即封鎖功能，以在數秒內偵測到惡意程式碼
+description: 第一見看見時即開啟封鎖之功能，以在數秒內偵測並封鎖惡意程式碼。
+keywords: 掃描，第一次看見時即封鎖，惡意程式碼，第一次看見，雲端，防禦程式，防毒軟體
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: priority
+localization_priority: Priority
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: marcmcc
@@ -14,14 +14,15 @@ manager: dansimp
 ms.custom: nextgen
 ms.date: 04/28/2021
 ms.technology: mde
-ms.openlocfilehash: d4db3549d04e5883f02ba263c06371371d385022
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
-ms.translationtype: MT
+ms.topic: article
+ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52079200"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274949"
 ---
-# <a name="turn-on-block-at-first-sight"></a>第一次看見時開啟封鎖
+# <a name="turn-on-block-at-first-sight"></a>第一次看見時即開啟封鎖
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,190 +31,190 @@ ms.locfileid: "52079200"
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-本文說明防毒軟體/反惡意軟體功能（稱為「初次看到時封鎖」），並說明如何在第一次看到的組織中啟用區塊。 
+本文會詳述名為「第一次看見時即封鎖」的防毒/反惡意軟體之功能，並說明如何為貴組織啟用第一次看見時即封鎖之功能。 
 
 > [!TIP]
-> 本文適用于管理組織安全性設定的 enterprise admins 和 IT 專業人員。 如果您不是企業系統管理員或 IT 專業人員，但在初次看到時會有有關封鎖的問題，請參閱 [not enterprise admin OR It 專業人員？](#not-an-enterprise-admin-or-it-pro)。
+> 本文適用于管理組織安全性設定的企業系統管理員和 IT 專業人員。 如果您不是企業系統管理員或 IT 專業人員，但若您對 [第一次看見時即封鎖] 功能有疑問，請參閱 [不是企業系統管理員或 IT 專業人員？](#not-an-enterprise-admin-or-it-pro)。
 
-## <a name="what-is-block-at-first-sight"></a>「初次看到」為何？
+## <a name="what-is-block-at-first-sight"></a>什麼是 [第一次看見時即封鎖]？
 
-「第一次看到的封鎖」是下一代保護的威脅防護功能，可偵測新的惡意程式碼並在幾秒內封鎖。 啟用某些安全性設定時，第一次看到的封鎖會啟用。 這些設定包含：
+[第一次看見時即封鎖] 是新一代防護的威脅防護功能，可偵測到新的惡意程式碼，並能在幾秒內將之封鎖。 啟用特定安全性設定時，便會啟用 [第一次看見時即封鎖] 功能。 這些設定包含：
 
-- 雲端提供的保護; 
-- 指定的範例提交超時 (例如50秒) ;和 
-- 高的檔封鎖層級。 
+- 雲端提供的保護； 
+- 指定的樣本提交超時 (例如 50 秒)；和 
+- 高度檔案封鎖層級。 
 
-在大多數企業組織中，第一次看到的啟用封鎖所需的設定是透過 Microsoft Defender 防病毒部署設定。 
+在大部分的企業組織中，啟用 [第一次看見時即封鎖] 功能需要使用 Microsoft Defender 防病毒軟體部署進行設定。 
 
 ## <a name="how-it-works"></a>運作方式
 
-當 Microsoft Defender 防病毒遇到可疑但未偵測到的檔案時，它會查詢我們的雲端保護後端。 雲端後端套用檔的試探法、機器學習和自動分析，以判斷檔案是否惡意或不是威脅。
+當 Microsoft Defender 防毒軟體遇到可疑但無法偵測的檔案時，它會查詢我們的雲端保護後端。 雲端後端會針對檔案進行啟發學習、機器學習和自動化分析，以判斷檔案是否為惡意檔案或者為威脅。
 
-Microsoft Defender 防病毒會使用多個偵測及防護技術，以提供準確、智慧和即時的保護。 
+Microsoft Defender 防毒軟體使用多個偵測和防護技術，以提供準確、智慧型且即時的保護。 
 
-![Microsoft Defender AV 引擎清單](images/microsoft-defender-atp-next-generation-protection-engines.png)  
-
-> [!TIP]
-> 若要深入瞭解，請參閱下列博客： [深入瞭解 Microsoft Defender 的核心的高級技術，以供端點下一代保護](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
-
-## <a name="a-few-things-to-know-about-block-at-first-sight"></a>在第一次看到區塊時，需要瞭解的一些事項
-
-- 在 Windows 10 版本1803或更新版本中，第一次看到的封鎖可以封鎖不可移植的可執行檔 (例如 .JS、VBS 或宏) 和可執行檔。
-
-- 在第一次看到時，封鎖只會對從網際網路下載的可執行檔和不可移植的可執行檔（從網際網路區域產生）使用雲端保護後端。 .Exe 檔案的雜湊值是透過雲端後端檢查，以判斷該檔案是否為先前未檢查過的檔案。
-
-- 若 cloud 後端無法判斷，Microsoft Defender 防毒程式會鎖定檔案，並將副本上傳至雲端。 雲端會執行更多分析，以達到判斷，直到所有未來都能執行或封鎖該檔案，取決於它是否決定要成為惡意或不是威脅的檔案。
-
-- 在許多情況下，此程式可將新惡意程式碼的回應時間從數小時縮短為秒。
-
-- 您可以指定雲端式保護服務分析檔案時， [應防止檔案執行的時間長度](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) 。 而且，您可以在封鎖檔時， [自訂使用者桌面上顯示的訊息](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) 。 您可以變更公司名稱、連絡人資訊及消息 URL。
-
-## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>在初次看到 Microsoft Intune 時開啟區塊
+![Microsoft Defender 防毒軟體工程清單](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> Microsoft Intune 現在是 Microsoft 端點管理員的一部分。
+> 若要深入瞭解，請參閱此部落格： [瞭解 Microsoft Defender 進階威脅防護新一代保護功能的核心](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
 
-1. 在 Microsoft 端點管理員管理中心 () 中 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ，流覽至 [**裝置** 設定配置  >  **檔**]。
+## <a name="a-few-things-to-know-about-block-at-first-sight"></a>關於 [第一次看見時即封鎖] 功能的一些資訊
 
-2. 使用 **裝置限制** 配置檔案類型選取或建立設定檔。
+- 在 Windows 10 版本 1803 或更新版本中，[第一次看見時即封鎖] 可以封鎖不可攜式可執行檔案 (例如 JS、VBS 或巨集) 和可執行檔案。
 
-3. 在裝置限制設定檔的 **設定設定** 中，在 [ **Microsoft Defender 防病毒**] 下設定或確認下列設定：
+- [第一次看見時即封鎖] 只會針對從網際網路下載或源自網際網路區域之可執行檔案和非可攜式可執行檔案使用雲端保護後端。 .exe 檔案的雜湊值會透過雲端後端檢查，以判斷檔案是否先前未被偵測到。
 
-   - **雲端提供的保護**：已啟用
-   - **檔封鎖層級**：高
-   - **雲端的檔案掃描時間分機**：50
-   - **在提交範例之前提示使用者**：不經提示傳送所有資料
+- 如果雲端後端無法判斷，Microsoft Defender 防毒軟體會鎖定檔案，並上傳副本至雲端。 雲端會執行更多分析以判斷是否允許檔案執行，或在未來遇到時阻擋該檔案，取決於它是否將檔案判定為惡意檔案或非威脅檔案。
 
-   ![Intune config](images/defender/intune-block-at-first-sight.png)
+- 在許多情況下，此程式可以將新惡意軟體的回應時間從小時縮短為秒鐘。
+
+- 當雲端式保護服務分析檔案時，您可以 [指定防止檔案執行的時間長度](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)。 此外，您也可以在檔案被封鎖時，[自訂使用者桌面上所顯示的訊息](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md)。 您可以變更公司名稱、連絡人資訊和郵件 URL。
+
+## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>使用 Microsoft Intune 開啟 [第一次看見時即封鎖] 功能
+
+> [!TIP]
+> Microsoft Intune (現在是 Microsoft 端點管理員的一部分)。
+
+1. 在 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))，瀏覽至 **[裝置]** > **[組態設定檔]**。
+
+2. 使用 **[裝置限制]** 設定檔類型，選取或建立設定檔。
+
+3. 在裝置限制設定檔的 **[組態設定]** 中，設定或確認以下 **Microsoft Defender 防毒軟體** 下方的設定：
+
+   - **雲端提供的保護**：啟動
+   - **檔案封鎖層級**：高
+   - **雲端掃描檔案的時間延長**：50
+   - **在提交範例之前提示使用者**：在不進行提示的情況下，傳送所有資料
+
+   ![Intune Config](images/defender/intune-block-at-first-sight.png)
 
 4. 儲存您的設定。
 
 > [!TIP]
-> - 將檔封鎖層級設為 **高** 會套用強層次的偵測。 在發生不理想的情況下，由於檔封鎖導致合法檔案的誤報偵測，您的安全性作業小組可以 [還原隔離](./restore-quarantined-files-microsoft-defender-antivirus.md)的檔案。
-> - 如需在 Intune 中設定 Microsoft Defender 防病毒裝置限制的詳細資訊，請參閱 [在 Microsoft Intune 中設定裝置限制設定](/intune/device-restrictions-configure)。
-> - 如需 Intune 中 Microsoft Defender 防病毒裝置限制的清單，請參閱 [intune 中 Windows 10 (和更新) 設定的裝置限制](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)。
+> - 將檔案封鎖層級設定為 **高** 會套用高偵測層級。 在某些意外情況下，檔案封鎖造成合法檔案被誤偵測為錯誤檔案類型，您的安全性作業小組可以 [還原隔離的檔案](./restore-quarantined-files-microsoft-defender-antivirus.md)。
+> - 如需更多在 Intune 中設定 Microsoft Denfender 防毒軟體裝置限制的相關資訊，請參閱 [在 Microsoft Intune 中設定裝置限制設定](/intune/device-restrictions-configure)。
+> - 有關 Intune 中 Microsoft Defender 防毒軟體裝置限制的清單，請參閱 [Intune 中的 Windows 10 (及更新版本) 的裝置限制設定](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)。
 
-## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>在初次看到 Microsoft 端點管理員時開啟區塊
+## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>使用 Microsoft 端點管理員開啟 [第一次看見時即封鎖] 功能
 
 > [!TIP]
-> 如果您正在尋找 Microsoft 端點 Configuration Manager，它現在是 Microsoft 端點管理員的一部分。
+> 如果您要尋找 Microsoft Endpoint Configuration Manager，它現在是 Microsoft 端點管理員的一部分。
 
-1. 在 Microsoft 端點管理員 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 中，移至 **端點安全性**  >  **防病毒**。
+1. 在 Microsoft 端點管理員 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 中，移至 **端點安全性** > **防毒軟體**。
 
-2. 選取現有的原則，或使用 **Microsoft Defender 防病毒** 配置檔案類型建立新的原則。
+2. 選取現有的原則，或使用 **Microsoft Defender 防毒軟體** 設定檔類型建立新原則。
 
-3. 設定或確認下列設定：
+3. 設定或確認下列組態設定：
 
-   - **開啟雲端傳送保護**：是
+   - **開啟雲端提供的保護**：是
    - **雲端提供的保護層級**：高
-   - **Defender Cloud 延伸超時秒**：50
+   - **Defender 雲端延伸逾時 (以秒為單位)**：50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="端點管理員中首次看到的設定封鎖":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="端點管理員中的 [第一次看見時即封鎖] 設定":::
 
-4. 將 Microsoft Defender 防病毒設定檔套用至群組，例如 **所有使用者**、 **所有裝置** 或 **所有使用者和裝置**。
+4. 將 Microsoft Defender 防毒軟體設定檔套用到群組，例如 **[所有使用者]**、 **[所有裝置]** 或 **[所有使用者和裝置]**。
 
-## <a name="turn-on-block-at-first-sight-with-group-policy"></a>在第一次使用群組原則時開啟區塊
+## <a name="turn-on-block-at-first-sight-with-group-policy"></a>使用群組原則開啟 [第一次看見時即封鎖] 功能
 
 > [!NOTE]
-> 我們建議您在第一次看到封鎖時，使用 Intune 或 Microsoft 端點管理員開啟封鎖。 
+> 我們建議您使用 Intune 或 Microsoft 端點管理員來開啟 [第一次看見時即封鎖] 功能。 
 
-1. 在您的群組原則管理電腦上，開啟 [ [群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))]，以滑鼠右鍵按一下您要設定的群組原則物件，然後選取 [ **編輯**]。 
+1. 在您的群組原則管理電腦上，開啟 [群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，以滑鼠右鍵按一下您要設定的群組原則物件，然後選擇 **[編輯]**。 
 
-2. 使用 **群組原則管理編輯器** 移至 [**電腦設定] 系統**  >  **管理範本**  >  **Windows 元件**  >  **Microsoft Defender 防病毒**  >  **對應**。 
+2. 使用 **群組原則管理編輯器**，移至 **[電腦設定]** > **[系統管理範本]** > **[Windows 元件]** > **[Microsoft Defender 防毒軟體]** > **[MAPS]**。 
 
-3. 在 [對應] 區段中，按兩下 **[設定第一次看到的封鎖] 功能**，並將其設定為 [ **啟用**]，然後選取 **[確定]**。
+3. 在 MAPS 區段中，按兩下 **[設定第一次看見時即封鎖功能]**，然後將它設定為 **[已啟用]**，並選取 **[確定]**。
 
     > [!IMPORTANT]
-    > 設定為 **Always prompt (0)** 會降低裝置的保護狀態。 設定為 **永不傳送 (2)** 表示第一次看到的區塊將無法運作。
+    > 設定為 **永遠提示 (0)** 將會降低裝置的保護狀態。 設定為 **永不傳送 (2)** 表示第一次看見時即封鎖功能將無法運作。
 
-4. 在 [對應] 區段中，在 **需要進一步分析時**，按兩下 [傳送檔案範例]，並將其設定為 [ **啟用**]。 在 [ **需要進一步分析時傳送檔範例**] 底下，選取 [ **傳送所有範例**]，然後選取 **[確定]**。
+4. 在 MAPS 區段按兩下 **[在需要進一步分析時，傳送檔案樣本]**，並將其設定為 **[已啟用]**。 在 **[在需要進一步分析時，傳送檔案樣本]** 底下，選取 **[傳送所有樣本]**，然後選取 **[確定]**。
 
-5. 以您通常的方式，在您的網路上重新部署群組原則物件。
+5. 如常在整個網路中，重新部署您的群組原則物件。
 
-## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>在個別用戶端裝置上啟用第一次看到時，確認封鎖
+## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>確認個別用戶端裝置上已啟用 [第一次看見時即封鎖] 功能
 
-您可以在個別的用戶端裝置上使用 Windows 安全性應用程式，確認第一次看到的組塊已啟用。 只要已開啟 **雲端提供的保護** 和 **自動範例提交** ，便會自動啟用封鎖初次看到的功能。
+您可以使用 Windows 安全性應用程式，確認個別用戶端裝置已啟用 [第一次看見時即封鎖] 功能。 只要開啟 **[雲端提供的保護]** 及 **[自動樣本提交]**，就會自動啟用「第一次看見時封鎖」。
 
-1. 開啟 [Windows 安全性應用程式]。
+1. 開啟 Windows 安全性應用程式。
 
-2. 選取 [ **病毒 & 威脅防護**]，然後在 [ **病毒 & 威脅防護設定**] 底下，選取 [ **管理設定**]。
+2. 選取 **[病毒與威脅防護]**，然後在 **[病毒與威脅防護設定]** 底下，選取 **[管理設定]**。
 
-   ![Windows 安全性應用程式中的病毒 & 威脅防護設定] 標籤的螢幕擷取畫面](images/defender/wdav-protection-settings-wdsc.png)
+   ![Windows 安全性應用程式中的病毒與威脅防護設定標籤的螢幕擷取畫面](images/defender/wdav-protection-settings-wdsc.png)
 
-3. 確認已開啟 **雲端提供的保護** 和 **自動範例提交** 。
+3. 確認已開啟 **[雲端提供的保護]** 和 **[自動樣本提交]**。
 
 > [!NOTE]
-> - 如果使用群組原則來設定及部署必要條件設定，本節中所述的設定將會變灰，且無法在個別端點上使用。 
-> - 您必須先將透過「群組原則」物件所做的變更部署到個別的端點，然後才會在 [Windows 設定] 中更新設定。
+> - 如果先決條件設定是使用群組原則進行設定和部署，本節所述的設定會以灰色顯示，且無法用於個別端點。 
+> - 必須先將透過群組原則物件進行的變更部署到個別端點，才能在 Windows 設定中更新設定。
 
-## <a name="validate-block-at-first-sight-is-working"></a>第一次看到的驗證區塊運作正常
+## <a name="validate-block-at-first-sight-is-working"></a>驗證 [第一次看見時即封鎖] 功能是否有效
 
-若要驗證功能是否正常運作，請遵循 [驗證網路與雲端之間](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)連線的指導方針。
+若要驗證該功能是否有效，請遵循 [[驗證您的網路與雲端網路間的連結]](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud) 指南。
 
-## <a name="turn-off-block-at-first-sight"></a>在第一次看到封鎖時關閉封鎖
+## <a name="turn-off-block-at-first-sight"></a>關閉 [第一次看見時即封鎖] 功能
 
 > [!CAUTION]
-> 在第一次看到時關閉區塊，將會降低裝置 (s) 和您的網路的保護狀態。
+> 關閉 [第一次看見時即封鎖] 功能會降低裝置和網路的保護狀態。
 
-如果您想要保留必要條件設定，而不實際在第一次看到保護時使用區塊，您可以選擇停用 [在第一次看到時封鎖]。 您可能會在第一次看到封鎖時暫時關閉封鎖，以查看此功能對您的網路有何影響。 不過，我們不建議您在初次看到保護時停用封鎖。
+如果您想要保留先決條件設定而不實際使用 [第一次看見時即封鎖] 保護，您可以選擇停用 [第一次看見時即封鎖] 功能。 您可以暫時關閉 [第一次看見時即封鎖] 功能，以查看此功能對您的網路有何影響。 不過，我們不建議永久停用 [第一次看見時即封鎖] 保護。
 
-### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>在第一次使用 Microsoft 端點管理員時關閉封鎖
+### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>使用 Microsoft 端點管理員關閉 [第一次看見時即封鎖] 功能
 
-1. 移至 [Microsoft 端點管理員管理中心] ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入]。
+1. 移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
 
-2. 請移至 **端點安全性**  >  **防病毒**，然後選取您的 Microsoft Defender 防病毒原則。
+2. 移至 **端點安全性** > **防毒軟體**，然後選取您的 Microsoft Defender 防毒軟體原則。
 
-3. 在 [ **管理**] 下，選擇 [ **屬性**]。
+3. 在 **[管理]** 底下，選擇 **[內容]**。
 
-4. 在 [ **設定設定**] 旁，選擇 [ **編輯**]。
+4. 在 **[組態設定]** 旁邊，選擇 **[編輯]**。
 
-5. 變更一或多個下列設定：
+5. 變更下列其中一項或多項設定：
 
-   - 將 **雲端傳送保護開啟** 為 [ **否** ] 或 [ **未設定**]。
-   - 將 **雲端傳送的保護等級** 設為 [ **未設定**]。
-   - 清除 [ **Defender Cloud 擴充超時的秒數**] 核取方塊。
+   - 將 **[開啟雲端式保護]** 設定為 **[否]** 或 **[未設定]**。
+   - 將 **[雲端式保護層級]** 設定為 **[未設定]**。
+   - 取消勾選 **Defender 雲端延伸逾時 (以秒為單位)** 的核取方塊。
 
-6. 檢查並儲存您的設定。
+6. 檢視並儲存設定。
 
-### <a name="turn-off-block-at-first-sight-with-group-policy"></a>在第一次使用群組原則時關閉封鎖
+### <a name="turn-off-block-at-first-sight-with-group-policy"></a>使用群組原則關閉 [第一次看見時即封鎖] 功能
 
-1. 在您的群組原則管理電腦上，開啟 [ [群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))]，以滑鼠右鍵按一下您要設定的群組原則物件，然後選取 [ **編輯**]。
+1. 在您的群組原則管理電腦上，開啟 [群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，以滑鼠右鍵按一下您要設定的群組原則物件，然後選擇 **[編輯]**。
 
-2. 使用 **群組原則管理編輯器** 移至 [ **電腦** 設定]，然後選取 [ **管理範本**]。
+2. 使用 **[群組原則管理編輯器]**，移至 **[電腦設定]** 然後選取 **[系統管理範本]**。
 
-3. 透過 **Windows 元件**  >  **Microsoft Defender 防病毒**  >  **對應** 展開樹狀目錄。
+3. 展開 **Windows 元件** > **Microsoft Defender 防毒軟體** > **MAPS** 的整體樹狀結構。
 
-4. 按兩下 [設定 **第一次看到的封鎖] 功能** ，並將此選項設定為 [ **停用**]。
+4. 按兩下 **設定 [第一次看見時即封鎖] 功能** ，然後設定選項為 **[停用]** 該設定。
 
     > [!NOTE]
-    > 停用區塊初次看到時，不會停用或變更必要條件群組原則。
+    > 停用 [第一次看見時即封鎖] 功能不會停用或變更先決條件群組原則。
 
 ## <a name="not-an-enterprise-admin-or-it-pro"></a>不是企業系統管理員或 IT 專業人員？
 
-如果您不是企業系統管理員或 IT 專業人員，但您在第一次看到封鎖時有問題，請參閱本節。 「第一次看到的封鎖」是威脅防護功能，可在幾秒內偵測並封鎖惡意程式碼。 雖然在「初次看到時封鎖」沒有特定設定，但在裝置上設定某些設定時會啟用該功能。
+如果您不是企業系統管理員或 IT 專業人員，但若您對 [第一次看見時即封鎖] 功能有疑問，請參閱這一章節。 [第一次看見時即封鎖] 是威脅防護功能，可偵測到惡意程式碼，並能在幾秒內將之封鎖。 雖然沒有名為「第一次看見時即封鎖」的特定設定，但當您的裝置上設定了特定設定時，便會啟用此功能。
 
-### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>操作方法：在您自己的裝置上初次看到或關閉封鎖
+### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>如何在您自己的裝置上管理 [第一次看見時即封鎖] 功能
 
-如果您有未由組織管理的個人裝置，您可能想知道如何在第一次看到或關閉時關閉封鎖功能。 您可以使用 Windows 安全性應用程式，在初次看到時管理區塊。
+如果您有非由組織管理的個人裝置，您可能會想知道如何開啟或關閉 [第一次看見時即封鎖] 功能。 您可以使用 Windows 安全性應用程式來管理 [第一次看見時即封鎖] 功能。
 
-1. 在您的 Windows 10 電腦上，開啟 [Windows 安全性應用程式]。
+1. 在 Windows 10 電腦上，開啟 Windows 安全性應用程式。
 
-2. 選取 [ **病毒 & 威脅防護**]。
+2. 選取 **病毒與威脅防護**。
 
-3. 在 [ **病毒 & 威脅防護設定**] 底下，選取 [ **管理設定**]。
+3. 在 **[病毒與威脅防護設定]** 下方，選取 **[管理設定]**。
 
 4. 請執行下列任一步驟：
 
-   - 若要在初次看到時啟用封鎖，請確定已同時開啟 **雲端傳送保護** 和 **自動範例提交** 。
+   - 若要啟動 [第一次看見時即封鎖] 功能，請務必確定 **[雲端提供的保護]** 及 **[自動樣本提交]** 皆處於開啟狀態。
 
-   - 若要在第一次看到時停用封鎖，請關閉已 **提供雲端保護** 或 **自動範例提交**。 <br/>
+   - 若要停用 [第一次看見時即封鎖]，請關閉 **[雲端提供的保護]** 或 **[自動樣本提交]**。 <br/>
     
      > [!CAUTION]
-     > 在初次看到時關閉區塊，會降低裝置的保護層級。 我們不建議您在初次看到時，永久停用區塊。 
+     > 關閉 [第一次看見時即封鎖] 會降低您裝置的保護層級。 我們不建議永久停用 [第一次看見時即封鎖] 功能。 
 
 
 ## <a name="see-also"></a>另請參閱
 
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
-- [啟用雲端傳送保護](enable-cloud-protection-microsoft-defender-antivirus.md)
-- [使用 Windows 安全性保持受保護](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)
+- [啟動雲端提供的保護](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [使用 Windows 安全性，隨時處於保護狀態](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)

@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 8ecf39090d368427c103c7ec78e22bc13f7c339f
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: c593dfe384649b1599d5c0bab8fa6a8204d105dc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591765"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274829"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>檢視自動調查的詳細資料和結果
 
@@ -37,7 +37,7 @@ ms.locfileid: "51591765"
 
 ## <a name="new-unified-investigation-page"></a> (NEW！ ) 整合調查頁面
 
-調查頁面最近已經過更新，可納入整個裝置、電子郵件及共同作業內容的資訊。 新的整合調查頁面會定義一種通用語言，並提供跨 [Microsoft defender For Endpoint](microsoft-defender-endpoint.md)  和 [Microsoft defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)進行自動調查的整合體驗。 
+調查頁面最近已經過更新，可納入整個裝置、電子郵件及共同作業內容的資訊。 新的整合調查頁面會定義一種通用語言，並提供在[Microsoft defender For Endpoint](microsoft-defender-endpoint.md)和[microsoft defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)中自動調查的整合體驗。 
 
 > [!TIP]
 > 若要深入瞭解變更的相關資訊，請參閱 [ (NEW！ ) 整合調查] 頁面](/microsoft-365/security/mtp/mtp-autoir-results)。
@@ -78,15 +78,15 @@ ms.locfileid: "51591765"
 在調查詳細資料檢視中，您可以在 [調查圖表]、[警示]、[裝置]、[身分識別]、[重要結果]、[實體]、**[記錄]**，以及 [待核准的動作] 索引標籤上查看資訊，如下表所述。
 
 > [!NOTE]
-> 您在 [調查詳細資料] 頁面看到的特定索引標籤取決於您的訂閱所包含的專案。 例如，如果您的訂閱不包含 Microsoft Defender for Office 365 方案2，您就不會看到 [ **信箱** ] 索引標籤。
+> 您在 [調查詳細資料] 頁面看到的特定索引標籤取決於您的訂閱所包含的專案。 例如，如果您的訂閱不包含適用于 Office 365 方案2的 Microsoft Defender，您就不會看到 [**信箱**] 索引標籤。
 
 | 索引標籤 | 描述 |
 |:--------|:--------|
 | **調查圖表**   | 提供調查的視覺呈現。 描述實體並列出發現的威脅和警示，以及是否有任何待核准的動作。<br/>您可以在圖形上選取一個專案，以查看詳細資料。 例如，選取 **證據** 圖示會帶您前往 [ **證據** ] 索引標籤，您可以在其中看到偵測到的實體及其 verdicts。 |
-| **提醒**    | 列出與調查相關聯的警示。 提醒可能來自使用者裝置上的威脅防護功能、Office 應用程式、雲端 App 安全性及其他 Microsoft 365 Defender 功能。|
+| **提醒**    | 列出與調查相關聯的警示。 警示可能來自使用者裝置上的威脅防護功能、Office 應用程式、雲端 App 安全性及其他 Microsoft 365 Defender 功能。|
 | **裝置** | 列出調查中包含的裝置及其修正層級。  (修正層級會對應至 [裝置群組的自動化層級](automation-levels.md)。 )  |
 | **信箱** |列出受偵測到之威脅影響的信箱。  |
-| **使用者**  | 列出受偵測到之威脅影響的使用者帳戶。 |
+| **Users**  | 列出受偵測到之威脅影響的使用者帳戶。 |
 | **證據** | 列出由警示/調查產生的證據片段。 包括 verdicts (*惡意*、 *可疑* 或 *未找到威脅*) 和修正狀態。 |
 | **Entities**  | 提供每個已分析之實體的詳細資料，包括每個實體類型的判定 (*惡意*、 *可疑* 或沒有) 中 *找到的威脅* 。|
 |**Log**    | 提供觸發警示之後所採取之所有調查動作的按時間排序的詳細視圖。|

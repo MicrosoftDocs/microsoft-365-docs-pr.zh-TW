@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 準備開始實作保留原則及保留標籤來管理貴組織的資料，但不確定從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: 65c196f8838378a10263370b1377b3eb43b14915
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: 準備開始實作保留原則和保留標籤來管理貴組織的資料，但不確定從何處著手？若要開始進行，請參閱一些實用的指導方針。
+ms.openlocfilehash: b39f6246fc9265319e0d4e5b053db6dfddc0d43a
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051905"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244585"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>開始使用保留原則和保留標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-準備好透過保留您要保留的內容，並刪除您不想要的內容，以開始管理貴組織的資料了嗎？ 使用下列高層指導方針以開始進行：
+準備好透過保留您需要保留的內容，並刪除您不需要的內容，來開始管理貴組織的資料了嗎？若要開始進行，請使用以下指導方針：
 
 1. **瞭解 Microsoft 365 中的保留運作方式**，然後找出您是否需要使用保留原則或保留標籤，或下列其中一種組合方式： [瞭解保留原則](retention.md)
 
@@ -56,9 +56,9 @@ ms.locfileid: "51051905"
 
 除了使用此預設角色之外，您還可以建立新角色群組並將 **[保留管理]** 角色新增到此群組中。 對於唯讀角色，請使用 **[僅檢視保留管理]**。 
 
-如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
+如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 
-如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有在建立、設定、和套用保留原則及保留標籤時，才需要求這些權限。 設定這些保留原則和標籤的人員不需要內容的存取權。
 
@@ -86,8 +86,6 @@ ms.locfileid: "51051905"
 
 大部分保留原則低調地在背景中工作，無須使用者互動，因此不太需要使用者的文件。 Teams 的保留原則會通知使用者其訊息已刪除，並包含 [有關保留原則的 Teams 訊息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b) 的連結。
 
-由於保留標籤在 Microsoft 365 應用程式中具有 UI，因此請務必先為終端使用者和技術支援中心提供指引，再將這些標籤部署到生產網路。
+由於保留標籤在 Microsoft 365 應用程式中具有 UI，因此請務必先為終端使用者和技術支援中心提供指引，再將這些標籤部署到生產網路。 若要協助使用者在 SharePoint 和 OneDrive 中套用保留標籤，請參閱 [在 SharePoint 或 OneDrive 中將保留標籤套用至檔案](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)。
 
-最有效的使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 保留標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
-
-您也會在以下章節中找到基本的使用者指示：[手動套用保留標籤](create-apply-retention-labels.md#manually-apply-retention-labels)。
+不過，最有效的終端使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 保留標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。

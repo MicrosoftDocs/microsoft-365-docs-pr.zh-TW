@@ -9,8 +9,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 ms.date: 02/02/2021
 localization_priority: Normal
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 5ea869d4016cc794b3046a664c1519f6b3250c67
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d4b0751938b66cc22dd59e2e7035077c5ef59ff9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933970"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274817"
 ---
 # <a name="overview-of-automated-investigations"></a>自動化調查的概述
 
@@ -77,7 +77,7 @@ ms.locfileid: "51933970"
 在重要訊息 [中心](auto-investigation-action-center.md)追蹤所有修正動作（不論是擱置或已完成的動作）。 如有必要，您的安全性作業小組可以復原修正動作。 若要深入瞭解，請參閱 [在自動調查後複查和核准修正動作](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
-> 請參閱 Microsoft 365 security center 中新的整合調查頁面。 若要深入瞭解，請參閱 [ (NEW！ ) 整合調查] 頁面](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> 請參閱 Microsoft 365 security center 中的 [新增統一調查] 頁面。 若要深入瞭解，請參閱 [ (NEW！ ) 整合調查] 頁面](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
 
 ## <a name="requirements-for-air"></a>空氣需求
@@ -86,9 +86,9 @@ ms.locfileid: "51933970"
 
 目前，AIR 只支援下列作業系統版本：
 - Windows Server 2019
-- Windows 10，版本 1709 (OS 組建16299.1085，含 [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更新版本
-- Windows 10，版本 1803 (OS 組建17134.704，含 [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更新版本
-- Windows 10，版本 [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) 或更新版本
+- Windows 10，版本 1709 (OS 組建16299.1085，含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更新版本
+- Windows 10，版本 1803 (OS 組建17134.704，含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更新版本
+- Windows 10，版本[1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019)或更新版本
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -99,5 +99,5 @@ ms.locfileid: "51933970"
 ## <a name="see-also"></a>另請參閱
 
 - [PUA 保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Microsoft Defender for Office 365 中的自動調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Microsoft 365 Defender 的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Microsoft Defender for Office 365 中的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+- [Microsoft 365 Defender 中的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)

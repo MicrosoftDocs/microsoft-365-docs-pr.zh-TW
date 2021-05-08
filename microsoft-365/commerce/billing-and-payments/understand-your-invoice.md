@@ -19,16 +19,23 @@ search.appverid:
 - MET150
 description: 了解如何閱讀及了解您的 Microsoft 商務產品帳單或發票。
 keywords: 帳單帳戶、組織資訊、發票
-ms.openlocfilehash: 3752254fc6068381cd6effed0be4d5b8295f8a27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579755"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244705"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解您的帳單或發票
 
 發票提供您的費用及付款指示摘要。 您可以在 Microsoft 365 系統管理中心[檢視您的線上發票](#view-your-online-invoice)。 您也可以以可攜式文件格式 (.pdf)下載它，以透過電子郵件傳送。
+
+若要查看及列印您的發票：
+
+1. 在 [帳單 **]**  >  [帳單與付款 <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">]</a> 頁面上，選取發票日期範圍。
+2. 若要列印或儲存帳單的 PDF 複本，請選取 [下載發票 PDF **]**，然後列印 PDF。
+
+若要深入了解，請參閱[檢視您的帳單或發票](view-your-bill-or-invoice.md)。
 
 如果您只有 Microsoft 365 訂閱，請參閱[了解您的商務用 Microsoft 365 帳單或發票](understand-your-invoice2.md)。
 
@@ -133,13 +140,6 @@ ms.locfileid: "51579755"
 
 - **服務期間：** 向您收費以使用服務的期間。
 - **計費週期：** 上次發票日期之後的期間。
-
-### <a name="how-do-i-view-and-print-my-bill"></a>如何檢視及列印我的帳單？
-
-1. 在 [帳單 **]**  >  [帳單與付款 <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">]</a> 頁面上，選取發票日期範圍。
-2. 若要列印或儲存帳單的 PDF 複本，請選取 [下載發票 PDF **]**，然後列印 PDF。
-
-若要深入了解，請參閱[檢視您的帳單或發票](view-your-bill-or-invoice.md)。
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>為什麼我看不到 Azure 預付款做為付款方式？
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Viva Topics 概觀
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概觀。
-ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488154"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275193"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概觀 
 
@@ -40,8 +40,12 @@ Viva Topics 使用 AI 來自動搜尋並識別組織中的 **主題**。 它會�
 
 在 SharePoint 新聞和頁面上的內容中提及主題時，您會看到該主題有醒目提示。 您可以從醒目提示開啟主題摘要。 從摘要的標題開啟主題詳細資料。 系統可以自動識別被提及的主題，也可以由頁面作者使用直接參照將該主題新增到頁面中。 
 
-   ![主題醒目提示](../media/knowledge-management/saturn.png) </br> 
+   ![主題醒目提示](../media/knowledge-management/saturn.png) 
 
+
+   ![螢幕擷取畫面透過搜尋方塊顯示 Word 搜尋。](../media/knowledge-management/word-search-2.png)
+
+   ![螢幕擷取畫面透過搜尋快顯功能表，顯示 Word 中的搜尋。](../media/knowledge-management/word-search-1.png)
 
 ## <a name="knowledge-indexing"></a>知識索引
 

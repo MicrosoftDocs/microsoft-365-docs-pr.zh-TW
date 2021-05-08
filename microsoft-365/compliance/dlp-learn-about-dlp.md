@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何使用 Microsoft 365 資料遺失防護原則及工具來保護您的機密資訊，並透過 DLP 生命週期進行導覽。
-ms.openlocfilehash: 451622d15b1f422304dd498264ff2fe4a343bb6c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52127783"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244609"
 ---
 # <a name="learn-about-data-loss-prevention"></a>深入了解資料外洩防護
 
@@ -89,7 +89,7 @@ DLP 原則可以封鎖禁止的活動，例如透過電子郵件不適當的敏�
 - SharePoint Online 網站
 - OneDrive 帳戶
 - Teams 聊天和頻道訊息
-- Microsoft Cloud App Security
+- Microsoft 雲端 App 安全性
 - Windows 10 裝置
 - 內部部署存放庫
 
@@ -212,3 +212,5 @@ DLP 頁面上的 [活動流覽] 索引標籤會將 *活動* 篩選器預先設�
 - [深入了解 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)](dlp-on-premises-scanner-learn.md)
 - [了解 Microsoft 合規性擴充功能 (預覽)](dlp-chrome-learn-about.md)
 - [了解資料外洩防護警示儀表板](dlp-alerts-dashboard-learn.md)
+
+若要瞭解如何使用資料遺失防護來遵守資料隱私權規定，請參閱使用 Microsoft 365 (aka.ms/m365dataprivacy) [部署資料隱私權法規的資訊保護](../solutions/information-protection-deploy.md)。

@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 12/28/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6218bc32690ca42c06b5606d8a3922f6fc5c7307
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 8c049a7301cc651dbf2621d0baa398117856b925
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765152"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274637"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>設定及驗證 Microsoft Defender 防毒軟體網路連線
 

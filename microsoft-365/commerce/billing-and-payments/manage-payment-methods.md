@@ -23,14 +23,17 @@ search.appverid:
 - MET150
 description: 了解如何在 Microsoft 365 系統管理中心管理您的付款方式。
 ms.date: 04/02/2021
-ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107036"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244717"
 ---
 # <a name="manage-payment-methods"></a>管理付款方式
+
+> [!IMPORTANT]
+> 自 2021 年 1 月 26 日起，針對比利時、法國、義大利、盧森堡、葡萄牙、西班牙和美國的客戶，不再支援新的銀行帳戶。 如果您是其中一個國家/地區中的現有客戶，只要銀行帳戶信用良好，您可以繼續使用現有的銀行帳戶支付訂閱費用，也可以新增新的訂閱。
 
 向 Microsoft 購買商務產品或服務時，您可以使用現有的付款方式，或新增付款方式。 您可以使用信用卡或轉帳卡，或是銀行帳戶來支付購買的項目。
 

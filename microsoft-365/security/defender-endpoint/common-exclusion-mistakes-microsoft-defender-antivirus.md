@@ -1,35 +1,36 @@
 ---
-title: 定義排除時所避免的常見錯誤
-description: 在定義 Microsoft Defender 防病毒掃描的排除專案時，請避免常見的錯誤。
+title: 定義排除時應避免的常見錯誤
+description: 在為 Microsoft Defender 防毒軟體掃描定義排除項時，請避免常見的錯誤。
 keywords: 排除專案、檔、副檔名、檔案類型、資料夾名稱、檔案名、掃描
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: eb3ac89eb05b39ff3337aa8e9c5ead1c308fbefb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: de739ca3c6a4ab305b575fa7e2f419d044d997a8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764912"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274967"
 ---
-# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>定義排除時所避免的常見錯誤
+# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>定義排除時應避免的常見錯誤
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-您可以為不想要 Microsoft Defender 防病毒掃描的專案定義排除清單。 這類排除的專案可能包含使您的裝置受到攻擊的威脅。 
+您可以為不想 Microsoft Defender 防毒軟體掃描的專案定義排除清單。 這類排除的專案可能包含使您的裝置受到攻擊的威脅。 
 
 本文說明在定義排除時，應避免的常見錯誤。 
 
-在定義您的排除清單之前，請參閱 [定義排除專案的建議](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)。
+在定義您的排除清單之前，請參閱[建議以定義排除](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)專案。
 
 ## <a name="excluding-certain-trusted-items"></a>排除特定信任專案
 
@@ -50,17 +51,17 @@ ms.locfileid: "51764912"
 
 ## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>針對多個伺服器工作負載使用單一排除清單
 
-請勿使用單一排除清單來定義多個伺服器工作負載的排除專案。 將不同應用程式或服務工作負載的排除項分割成多個排除清單。 例如，您的 IIS 伺服器工作負載的排除清單必須不同于 SQL Server 工作負載的排除清單。
+請勿使用單一排除清單來定義多個伺服器工作負載的排除專案。 將不同應用程式或服務工作負載的排除項分割成多個排除清單。 例如，您的 IIS 伺服器工作負載的排除清單必須不同于 SQL Server 工作量的排除清單。
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>在檔案名和資料夾路徑或副檔名排除清單中使用不正確的環境變數做為萬用字元
 
-Microsoft Defender 防病毒服務會使用 LocalSystem 帳戶在系統內容中執行，這表示它會從系統內容變數，而不是從使用者環境變數中取得資訊。 使用環境變數做為排除清單中的萬用字元時，會限制為系統變數，以及適用于以 NT AUTHORITY\SYSTEM 帳戶執行之進程的變數。 因此，在新增 Microsoft Defender 防病毒資料夾及程式排除時，請勿使用使用者環境變數做為萬用字元。 請參閱 [系統內容變數](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) 底下的表格，以取得系統內容變數的完整清單。
+Microsoft Defender 防毒軟體服務會使用 LocalSystem 帳戶在系統內容中執行，這表示它會從系統內容變數中取得資訊，而不是從使用者環境變數取得資訊。 使用環境變數做為排除清單中的萬用字元時，會限制為系統變數，以及適用于以 NT AUTHORITY\SYSTEM 帳戶執行之進程的變數。 因此，新增 Microsoft Defender 防毒軟體資料夾與處理常式排除時，請勿使用使用者環境變數做為萬用字元。 請參閱 [系統內容變數](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) 底下的表格，以取得系統內容變數的完整清單。
 
 如需如何在排除清單中使用萬用字元的詳細資訊，請參閱在 [檔案名和資料夾路徑或副檔名排除清單中使用萬用字元](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 。
 
 ## <a name="related-articles"></a>相關文章
 
-- [設定及驗證 Microsoft Defender 防病毒掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md)
+- [設定及驗證 Microsoft Defender 防毒軟體掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md)
 - [根據副檔名和資料夾位置，設定及驗證排除](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [設定及驗證由進程開啟之檔案的排除專案](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [設定 Windows Server 上的 Microsoft Defender 防病毒排除](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [設定 Windows 伺服器上的 Microsoft Defender 防毒軟體排除](configure-server-exclusions-microsoft-defender-antivirus.md)

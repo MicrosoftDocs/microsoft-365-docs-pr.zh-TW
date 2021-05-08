@@ -1,28 +1,29 @@
 ---
-title: 設定 Windows Server 上的 Microsoft Defender 防病毒排除
+title: 設定 Windows 伺服器上的 Microsoft Defender 防毒軟體排除
 ms.reviewer: ''
 manager: dansimp
-description: Windows Server 包含根據伺服器角色的自動排除。 您也可以新增自訂排除專案。
-keywords: 排除、伺服器、自動排除、自動、自訂、掃描、Microsoft Defender 防毒程式
+description: Windows伺服器包含根據伺服器角色的自動排除。 您也可以新增自訂排除專案。
+keywords: 排除、伺服器、自動排除、自動、自訂、掃描 Microsoft Defender 防毒軟體
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 02/10/2021
-ms.openlocfilehash: 507edb980f671b2f39403cc41e540150f5e82891
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: f82da8eb0dcba39404c2b7f191e166aa78357cee
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764338"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274757"
 ---
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>設定 Windows Server 上的 Microsoft Defender 防病毒排除
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>設定 Windows 伺服器上的 Microsoft Defender 防毒軟體排除
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +31,7 @@ ms.locfileid: "51764338"
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-Windows Server 2016 和 Windows Server 2019 上的 Microsoft Defender 防毒程式會根據您指定伺服器角色的定義，自動在某些排除專案中登記您。 這些排除專案不會出現在 [Windows 安全性應用程式](microsoft-defender-security-center-antivirus.md)中顯示的標準排除清單中。
+Windows Server 2016 和 Windows Server 2019 上的 Microsoft Defender 防毒軟體會根據您指定的伺服器角色所定義的部分排除，自動為您註冊。 這些排除專案不會出現在[Windows 安全性應用程式](microsoft-defender-security-center-antivirus.md)中顯示的標準排除清單中。
 
 > [!NOTE]
 > [自動排除] 只適用于即時保護 (RTP) 掃描。 在完整/快速或隨選掃描期間，不會接受自動排除。
@@ -46,11 +47,11 @@ Windows Server 2016 和 Windows Server 2019 上的 Microsoft Defender 防毒程�
 - 自訂排除優先于自動排除。
 - [自動排除] 只適用于即時保護 (RTP) 掃描。 在完整/快速或隨選掃描期間，不會接受自動排除。
 - 自訂和重複排除專案不會與自動排除項衝突。
-- Microsoft Defender 防毒軟體使用「部署影像服務」和「管理」 (DISM) 工具來判斷電腦上安裝的角色。
+- Microsoft Defender 防毒軟體使用「部署影像服務」和「管理」 (DISM) 工具來判斷電腦上所安裝的角色。
 
 ## <a name="opt-out-of-automatic-exclusions"></a>選擇不限自動排除
 
-在 Windows Server 2016 和 Windows Server 2019 中，安全性情報更新所傳遞的預先定義排除只會排除角色或功能的預設路徑。 如果您已在自訂路徑中安裝角色或功能，或是您想要手動控制一組排除，請務必取消在安全性智慧更新中所提供的自動排除專案。 但是請記住，會自動傳遞的排除專案，針對 Windows Server 2016 和2019角色進行優化。 定義排除清單之前，請參閱定義排除專案 [的建議](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 。
+在 Windows Server 2016 和 Windows 伺服器2019中，安全性情報更新所提供的預先定義的排除只會排除角色或功能的預設路徑。 如果您已在自訂路徑中安裝角色或功能，或是您想要手動控制一組排除，請務必取消在安全性智慧更新中所提供的自動排除專案。 但是請記住，會自動傳遞的排除專案，針對 Windows Server 2016 和2019角色進行優化。 定義排除清單之前，請參閱[建議以定義](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)排除清單。
 
 > [!WARNING]
 > 退出自動排除可能會對效能造成不良影響，或導致資料損毀。 針對 Windows Server 2016 和 Windows Server 2019 角色，會自動傳遞的排除專案。
@@ -59,14 +60,14 @@ Windows Server 2016 和 Windows Server 2019 上的 Microsoft Defender 防毒程�
 
 您可以使用「群組原則」、「PowerShell Cmdlet」和 WMI 來停用自動排除清單。
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>使用群組原則在 Windows Server 2016 和 Windows Server 2019 上停用自動排除清單
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>使用群組原則來停用 Windows Server 2016 的自動排除清單及 Windows 伺服器2019
 
 1. 在您的群組原則管理電腦上，開啟 [ [群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))]。 以滑鼠右鍵按一下您要設定的群組原則物件，然後按一下 [ **編輯**]。
 2. 在 [**群組原則管理編輯器**] 中，移至 [電腦設定]，然後按一下 [**系統****管理範本**]。
-3. 將樹狀目錄展開為  >  **microsoft Defender 防病毒**  >  **排除** 專案的 Windows 元件。
+3. 展開樹狀目錄，以 **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **排除**。
 4. 按兩下 [ **關閉自動排除**]，然後將選項設定為 [ **啟用**]。 然後按一下 **[確定]**。 
 
-### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>在 Windows Server 2016 和2019上使用 PowerShell Cmdlet 來停用自動排除清單
+### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>使用 PowerShell Cmdlet 停用 Windows Server 2016 和2019上的自動排除清單
 
 使用下列 Cmdlet：
 
@@ -76,10 +77,10 @@ Set-MpPreference -DisableAutoExclusions $true
 
 若要深入了解，請參閱下列資源：
 
-- [使用 PowerShell Cmdlet 來設定及執行 Microsoft Defender 防病毒](use-powershell-cmdlets-microsoft-defender-antivirus.md)程式。
-- [使用 Microsoft Defender 防病毒 PowerShell](/powershell/module/defender/)。
+- [使用 PowerShell Cmdlet 來設定及執行 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)。
+- 搭配[Microsoft Defender 防毒軟體使用 PowerShell](/powershell/module/defender/)。
 
-### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>使用 Windows Management 指令 (WMI) 以停用 Windows Server 2016 和 Windows Server 2019 上的自動排除清單
+### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>使用 Windows 管理指令 (WMI) 停用 Windows Server 2016 上的自動排除清單及 Windows 伺服器2019
 
 針對下列屬性，使用 [MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference)類別的 **Set** 方法：
 
@@ -88,7 +89,7 @@ DisableAutoExclusions
 ```
 
 如需詳細資訊及允許的參數，請參閱下列各項：
-- [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows DefenderWMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="list-of-automatic-exclusions"></a>自動排除清單
 
@@ -101,12 +102,12 @@ DisableAutoExclusions
 > [!NOTE]
 > 預設位置可能會不同于本文所列的位置。
 
-#### <a name="windows-tempedb-files"></a>Windows "temp" 檔案
+#### <a name="windows-tempedb-files"></a>Windows"temp" 檔案
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
 
-#### <a name="windows-update-files-or-automatic-update-files"></a>Windows 更新檔或自動更新檔案
+#### <a name="windows-update-files-or-automatic-update-files"></a>Windows更新檔或自動更新檔案
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
@@ -258,9 +259,9 @@ DisableAutoExclusions
 
 - `%systemroot%\System32\dns.exe`
 
-### <a name="file-and-storage-services-exclusions"></a>檔和儲存服務排除
+### <a name="file-and-storage-services-exclusions"></a>檔案和儲存體服務排除
 
-本節列出當您安裝 [檔案和儲存服務] 角色時，會自動傳遞的檔案和資料夾排除專案。 以下所列的排除專案不包括叢集角色的排除專案。
+本節列出當您安裝檔案及儲存體服務角色時，會自動傳遞的檔案和資料夾排除專案。 以下所列的排除專案不包括叢集角色的排除專案。
 
 - `%SystemDrive%\ClusterStorage`
 - `%clusterserviceaccount%\Local Settings\Temp`
@@ -325,7 +326,7 @@ DisableAutoExclusions
 - `*.ins`
 - `Oscfilter.ini`
 
-### <a name="windows-server-update-services-exclusions"></a>Windows Server 更新服務排除
+### <a name="windows-server-update-services-exclusions"></a>Windows Server Update Services 排除
 
 本節列出當您安裝 Windows Server Update Services (WSUS) 角色時，會自動傳遞的資料夾排除專案。 WSUS 資料夾是在登錄機碼中指定 `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
 
@@ -336,9 +337,9 @@ DisableAutoExclusions
 
 ## <a name="see-also"></a>另請參閱
 
-- [設定及驗證 Microsoft Defender 防病毒掃描的排除專案](configure-exclusions-microsoft-defender-antivirus.md)
+- [設定及驗證 Microsoft Defender 防毒軟體掃描的排除專案](configure-exclusions-microsoft-defender-antivirus.md)
 - [根據檔案名、副檔名和資料夾位置，設定及驗證排除](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [設定及驗證由進程開啟之檔案的排除專案](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [定義排除時所避免的常見錯誤](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [自訂、啟動和審閱 Microsoft Defender 防病毒掃描和修正的結果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [定義排除時應避免的常見錯誤](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [自訂、啟動及審閱 Microsoft Defender 防毒軟體掃描和修正的結果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

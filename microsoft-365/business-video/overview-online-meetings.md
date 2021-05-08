@@ -20,22 +20,22 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何為您的公司主控線上會議。
-ms.openlocfilehash: 893a03b064b6f73711b69a61c90cd40023241c48
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 9874e22724dd04255fb6109b5fb268ac2dcd3f95
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939515"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244893"
 ---
 # <a name="host-online-meetings-for-your-business"></a>主控商務的線上會議
 
-需要會見用戶端、客戶或合作夥伴，但無法在一個位置取得任何人？ 別擔心，請參加線上會議。 如果他們有 smartphone、平板電腦或膝上型電腦，他們可以與 Microsoft 團隊加入。
+需要會見用戶端、客戶或合作夥伴，但無法在一個位置取得任何人？ 別擔心，請參加線上會議。 如果他們有 smartphone、平板電腦或膝上型電腦，則可以使用 Microsoft Teams 加入。
 
 他們需要[在瀏覽器中](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9)下載[免費版本](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)或加入線上，以取得影片和螢幕共用。
 
-如果您經常在專案中與用戶端、客戶或合作夥伴密切合作，請考慮為您的 [用戶端建立小組](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) 。您可以輕鬆地邀請他們加入會議，也能輕鬆地邀請他們加入會議，也可以在 Microsoft 團隊中取得所有專案。
+如果您經常在專案中與用戶端、客戶或合作夥伴密切合作，請考慮為您的[用戶端建立小組](team-with-guests.md)，您可以輕鬆地邀請他們加入會議，也可以在 Microsoft Teams 中追蹤所有專案。
 
-下載資訊圖表，以快速瞭解如何使用 Microsoft 小組加入或主控線上會議：
+下載資訊圖表，以快速瞭解如何使用 Microsoft Teams 加入或主控線上會議：
 
 [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
@@ -43,9 +43,9 @@ ms.locfileid: "51939515"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-若要安排與員工、客戶及其他來賓的會議，請使用 Microsoft 團隊。 請嘗試：
+若要安排與員工、客戶及其他來賓的會議，請使用 Microsoft Teams。 請嘗試：
 
-1. 在 Microsoft 小組的左側導覽中，選擇 [ **會議**]。
+1. 在 Microsoft Teams 的左側導覽中，選擇 [**會議**]。
 1. 選擇 [ **排程會議**]。
 1. 在 [ **新增會議**] 方塊中，輸入會議的 **標題** 和 **位置** 。
 1. 輸入 **開始** 和 **結束** 時間及日期。
@@ -58,20 +58,20 @@ ms.locfileid: "51939515"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn?autoplay=false]
 
-使用 Microsoft 小組，加入您公司內員工與公司外部用戶端的會議。 請嘗試：
+使用 Microsoft Teams 結合公司內員工和公司外部用戶端的會議。 請嘗試：
 
-1. 在 Microsoft 小組的左側導覽中，選擇 [ **會議**]。
-1. 開啟您要加入的會議，然後選擇 [ **加入 Microsoft 團隊會議**]。
+1. 在 Microsoft Teams 的左側導覽中，選擇 [**會議**]。
+1. 開啟您要加入的會議，然後選擇 [**加入 Microsoft Teams 會議**]。
 1. 當會議開啟時，選擇 [ **立即加入**]。
-1. 任何受邀參加會議的用戶端都會在其行事曆中開啟會議、選取會議連結、下載小組應用程式或在網頁上開啟，然後輸入使用者的名稱，然後選擇 [ **加入**]。
+1. 任何受邀參加會議的用戶端都會在其行事曆中開啟會議、選取會議連結、下載 Teams 應用程式或在網頁上開啟，然後輸入使用者的名稱，然後選擇 [**加入**]。
 1. 當您看到您的用戶端出現在大廳時，選擇 [ **承認** ] 以讓他們加入。
 1. 在每一位使用者加入後，您就可以開始會議。
  
 ## <a name="3-have-an-impromptu-meeting"></a>3. 擁有即時會議
 
-您可以輕鬆地將 Microsoft 小組中的聊天轉換為會議。 只需選擇 [ **影片通話**] :::image type="icon" source="../media/video-call-icon.png" border="false"::: 按鈕或 [ **語音通話**] :::image type="icon" source="../media/audio-call-icon.png" border="false"::: 按鈕即可開始通話。 您可以將人員新增至通話中，也可以將其變成群組討論。
+您可以輕鬆地將 Microsoft Teams 聊天為會議。 只需選擇 [ **影片通話**] :::image type="icon" source="../media/video-call-icon.png" border="false"::: 按鈕或 [ **語音通話**] :::image type="icon" source="../media/audio-call-icon.png" border="false"::: 按鈕即可開始通話。 您可以將人員新增至通話中，也可以將其變成群組討論。
 
-需要一些説明？ 請參閱 [從隊中的聊天開始通話](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798)。
+需要一些説明？ 請參閱[從 Teams 中的聊天開始通話](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798)。
 
 ## <a name="related-articles"></a>相關文章
 

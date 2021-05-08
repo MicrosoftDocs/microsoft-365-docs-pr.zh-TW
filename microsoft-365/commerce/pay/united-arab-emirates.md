@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 13c3bd40d2ba28fcf228b6696f94af1b1db73028
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e61bf3e22fa65bf61a85f6ec50d5621b80f303f8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50550009"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272645"
 ---
 # <a name="payment-information-for-united-arab-emirates"></a>阿拉伯聯合大公國的付款資訊
 

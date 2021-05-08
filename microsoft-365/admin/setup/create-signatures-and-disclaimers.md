@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 瞭解如何管理電子郵件簽名，包括輸入或離開組織之所有電子郵件的法律免責聲明或披露聲明。
-ms.openlocfilehash: b599ef8b6d0bb236b6111bae86c92409601e00d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914231"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244524"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽名和免責聲明
 
@@ -40,7 +40,7 @@ ms.locfileid: "50914231"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../../business-video/index.yml)。
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>建立套用至所有郵件的簽名
 
@@ -80,14 +80,14 @@ ms.locfileid: "50914231"
 6. 在 [套用 **此規則**] 底下，選取 **[套用到所有郵件]**。
     
     > [!TIP]
-    > [深入了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)您不想將免責聲明套用至所有郵件時的套用條件。  (此範圍的文章適用于 Exchange Server，但也適用于 Microsoft 365。 )  
+    > [深入了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)您不想將免責聲明套用至所有郵件時的套用條件。  (此範圍文章適用于 Exchange Server，但也適用于 Microsoft 365。 )  
   
 7. 在 [執行下列作業] 底下，保留 **[附加免責聲明** ] 選取狀態。 
     
 8.  選取 [ **輸入文字** ]，然後輸入免責聲明。 
     
     > [!TIP]
-    > [深入了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何設定免責聲明格式。  (此格式化文章適用于 Exchange Server，但也適用于 Microsoft 365。 )  
+    > [深入了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何設定免責聲明格式。  (此格式編排文章適用于 Exchange Server，但也適用于 Microsoft 365。 )  
 
 9. 選取 [ **選取其中一項** ]，然後選擇 [ **包裝** 為回退] 選項。 然後按一下 **[確定]**。 這表示，該免責聲明如果因為加密或其他郵件設定而無法新增，系統會將它包裝在郵件信封中。
     
@@ -115,4 +115,4 @@ ms.locfileid: "50914231"
   
 ## <a name="more-resources"></a>其他資源
 
-- 如需使用 PowerShell 的詳細資訊，請參閱 [整個組織郵件免責聲明、簽章、頁尾或 Exchange Online 中的標頭](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) 。
+- 如需使用 PowerShell 的詳細資訊，請參閱[整個組織的郵件免責聲明、簽章、頁尾或標頭 Exchange Online 中](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)的相關資訊。

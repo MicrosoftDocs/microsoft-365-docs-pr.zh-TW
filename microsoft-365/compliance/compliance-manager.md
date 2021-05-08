@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員可協助組織簡化及自動化風險評估，並建議採取的措施以協助解決風險。
-ms.openlocfilehash: f938bb6b82ee7e24dd58b66597f0af7a3a00a9a2
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570450"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244392"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合規性管理員
 
@@ -30,7 +30,7 @@ ms.locfileid: "51570450"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新功能：相容性管理員的公開發行版
 
-合規性管理員現在已 (GA) 成為 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)內的端對端規範管理解決方案。 在此版本中，合規性管理員會從 Microsoft 服務信任入口網站中的先前位置轉換。 合規性管理員也可供美國政府社區 (GCC) 適中、GCC 高及國防部門 (DoD) 客戶。
+合規性管理員現在已 (GA) 提供[Microsoft 365 規範中心](microsoft-365-compliance-center.md)內的端對端規範管理解決方案。 在此版本中，合規性管理員會從 Microsoft 服務信任入口網站中的先前位置轉換。 合規性管理員也可供美國政府 Community (GCC) 適中、GCC 高及國防部門 (DoD) 客戶。
 
 公開的合規性分數的公開預覽已演變成集中式工具，其具有增強的合規性管理功能和更輕鬆使用。  GA 發行版本提供了更大的預先構建評估集合，可協助您擴大合規性活動。
 
@@ -45,13 +45,13 @@ ms.locfileid: "51570450"
 
 ## <a name="what-is-compliance-manager"></a>何謂合規性管理員
 
-[Microsoft 合規性管理員](https://compliance.microsoft.com/compliancemanager) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 中的一項功能，可協助您管理組織的合規性需求，以提高便利性和便利性。 合規性管理員可以協助您整個規範旅程，從清查您的資料保護風險到管理實施控制措施的複雜性、保持目前與法規和憑證的複雜性，以及向審計員報告。
+[Microsoft 合規性管理員](https://compliance.microsoft.com/compliancemanager)是[Microsoft 365 規範中心](microsoft-365-compliance-center.md)中的一項功能，可協助您管理組織的合規性需求，以獲得更輕鬆和便利。 合規性管理員可以協助您整個規範旅程，從清查您的資料保護風險到管理實施控制措施的複雜性、保持目前與法規和憑證的複雜性，以及向審計員報告。
 
 合規性管理員提供下列功能，協助簡化法規遵從性並降低風險：
 
 - 適用于一般行業和地區性標準及法規的預先建評估，或自訂評估以符合您的獨特法規遵從性需求 (可用評估取決於您的授權合約; [深入瞭解](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)) 。
 
-- 工作流程功能，可協助您透過單一工具有效率地完成風險評估。
+- 工作流程功能可透過單一工具協助您有效率地完成風險評定。
 
 - 詳細的逐步指導方針，可協助您遵循組織最相關的標準及規定。 針對 Microsoft 所管理的動作，您將會看到「執行詳細資料」和「審計結果」。
 
@@ -65,7 +65,7 @@ ms.locfileid: "51570450"
 
 合規性管理員獎項您是為了完成遵循法規、標準或原則所採取的改進動作，並將這些點數結合為整體合規性分數。 每個動作對您的分數有不同的影響，取決於可能的風險。 您的合規性分數可協助您決定關注的動作，以改善您的整體相容性狀況。
 
-合規性管理員為您提供根據 Microsoft 365 資料保護基準的初始分數。 此基準是一組控制項，包含資料保護和一般資料控管的重要規章和標準。
+合規性管理員會根據 Microsoft 365 資料保護基準，為您提供初始分數。 此基準是一組控制項，包含資料保護和一般資料控管的重要規章和標準。
 
 ##### <a name="learn-more"></a>深入了解
 
@@ -77,9 +77,9 @@ ms.locfileid: "51570450"
 
 合規性管理員使用多個資料元素，協助您管理相容性活動。 當您使用合規性管理員指派、測試及監視合規性活動時，讓基本瞭解主要元素非常有用： controls、評估、範本及改進動作。
 
-### <a name="controls"></a>控制項
+### <a name="controls"></a>控制措施
 
-控制項是法規、標準或原則的必要條件。 它會定義如何評估和管理系統設定、組織處理常式，以及負責滿足法規、標準或原則的特定需求的人員。
+控制措施是法規、標準或政策的需求。 它定義您如何評估及管理系統設定、組織流程，以及負責符合法規、標準或內部政策之特定需求的人員。
 
 合規性管理員會追蹤下列類型的控制項：
 
@@ -93,9 +93,9 @@ ms.locfileid: "51570450"
 
 [深入瞭解合規性管理員如何持續評估控制項](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls)。
 
-### <a name="assessments"></a>評估
+### <a name="assessments"></a>評定
 
-評估是指來自特定法規、標準或原則的控制項群組。 完成評估內的動作可協助您符合標準、法規或法律的需求。 例如，您可能會有一個評估，當您完成其中的所有動作時，可協助您將 Microsoft 365 設定放入符合 ISO 27001 的需求。
+評估是指來自特定法規、標準或原則的控制項群組。 完成評定內的動作可協助您符合標準、法規或法律需求。 例如，您可能會有一個評估，當您完成其中的所有動作時，可協助您將 Microsoft 365 設定連線到 ISO 27001 需求。
 
 評定有數個元件：
 
@@ -165,3 +165,5 @@ ms.locfileid: "51570450"
 瞭解如何登入、指派許可權和角色、設定設定，以及在 [開始使用合規性管理員](compliance-manager-setup.md)時個人化儀表板視圖。
 
 然後開始自訂合規性管理員，以協助您遵循對組織最重要的行業標準， [設定評估](compliance-manager-assessments.md)。
+
+為了協助您遵守資料隱私權規定，我們設計了一個工作流程，可引導您完成跨 Microsoft 365 的端對端程式，以在包含使用合規性管理員的情況下規劃及實施功能。 如需詳細資訊，請參閱 [以 Microsoft 365 針對資料隱私權法規部署資訊保護](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。 

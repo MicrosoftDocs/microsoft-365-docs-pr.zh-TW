@@ -8,28 +8,35 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9c936312fae817e08f947b20693079072c4d942b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 37546e213631b43a6797c7c12f37cf0cad783cd9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543157"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273293"
 ---
-# <a name="payment-information-for-mexico"></a>墨西哥的付款資訊
+# <a name="payment-information-by-deposit-or-electronic-transfer-only-for-mexico"></a>僅限墨西哥 (以存款或電子傳輸方式支付資訊) 
 
 [尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
-請只支付在墨西哥比索。 為了進行您的支付處理，您的公司名稱和發票 (s) 號碼必須在匯款付款中提供。
+若要以存款或電子轉接付款：
 
-## <a name="electronic-funds-transfer"></a>電匯
+1. 請在結帳時選取 [發票 (以支票或電匯) 支付付款條件]。 在接下來的24到72小時內，您會收到註冊為連絡人之電子郵件中的產品發票。 該發票會包含完成付款的指示。
+2. 若要正確處理您的支付，請支付下列銀行帳戶 (，請指出買方的名稱和對應的發票編號) ：  
 
 **銀行：** Citibank/Banamex  
 **Branch：** Roberto Medellin 800，P.B。 Sur，加州紐約市 Fe，墨西哥城 C.P。 01210，墨西哥  
 **SWIFT 程式碼：** BNMXMM  
 **CLABE** 002180002337160225  
 **帳戶號碼：** 0233716022  
-**帳戶名稱：** Microsoft 付款 Inc.。
+**帳戶名稱：** Microsoft 付款 Inc.。  
+**貨幣：** 墨西哥比索
+
+## <a name="important-information"></a>重要資訊
+
+1. 僅限 MXN $3500 的金額，以存款或電子轉帳支付。
+2. 付款必須在30天內進行;否則，會自動取消順序。

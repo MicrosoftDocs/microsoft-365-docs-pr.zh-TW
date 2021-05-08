@@ -3,8 +3,8 @@ title: 在 Microsoft 365 中查看自動調查的結果
 keywords: AIR，autoIR，Microsoft Defender for Endpoint，自動化，調查，修正，動作
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ description: 在 Microsoft 365 的自動調查期間和之後，您可以查看�
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6ec188f37faeed283d49f68b0cb381fcb1af86e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: d2923a6375d54c663f20c440b1fa395bd529429d
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114201"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275045"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自動調查的詳細資料和結果
 

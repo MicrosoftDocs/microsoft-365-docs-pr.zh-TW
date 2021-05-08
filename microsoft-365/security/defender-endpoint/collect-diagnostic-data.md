@@ -1,13 +1,13 @@
 ---
-title: 收集 Microsoft Defender 防病毒的診斷資料
-description: 使用工具收集資料，以疑難排解 Microsoft Defender 防毒程式
+title: 收集 Microsoft Defender 防毒軟體的診斷資料
+description: 使用工具收集資料以進行疑難排解 Microsoft Defender 防毒軟體
 keywords: 疑難排解，錯誤，修正，更新規範，oms，監視器，報表，Microsoft Defender av，群組原則物件，設定，診斷資料
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 06/29/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d74a8921af677f6ed66580bd00830440d59cf1aa
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764720"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274779"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>收集 Microsoft Defender AV 診斷資料
 
@@ -62,7 +63,7 @@ ms.locfileid: "51764720"
 > [!NOTE]
 > 若要將 cab 檔重新導向至不同的路徑或 UNC 共用，請使用下列命令： `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>如需詳細資訊，請參閱 [將診斷資料重新導向至 UNC 共用](#redirect-diagnostic-data-to-a-unc-share)。
 
-5. 將這些 .cab 檔案複製到可供 Microsoft 支援人員存取的位置。 例如，您可以將密碼保護的 OneDrive 資料夾與我們共用。
+5. 將這些 .cab 檔複製到可供 Microsoft 支援人員存取的位置。 例如，您可以將密碼保護的 OneDrive 資料夾與我們共用。
 
 > [!NOTE]
 >如果您有更新規範的問題，請使用 <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">更新規範支援電子郵件範本</a>傳送電子郵件，並使用下列資訊填寫範本：
@@ -102,7 +103,7 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>指定診斷資料的建立位置
 
-您也可以使用群組原則物件 (GPO) ，指定要建立的診斷 .cab 檔案的位置。 
+您也可以指定使用「群組原則」物件 (GPO) 建立診斷 .cab 檔案的位置。 
 
 1. 開啟本機組策略編輯器，並在下列位置找到 SupportLogLocation GPO： `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`
    
@@ -119,4 +120,4 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 ## <a name="see-also"></a>另請參閱
 
-- [疑難排解 Microsoft Defender 防病毒報告](troubleshoot-reporting.md)
+- [疑難排解 Microsoft Defender 防毒軟體報告](troubleshoot-reporting.md)

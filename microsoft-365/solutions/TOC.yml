@@ -13,27 +13,27 @@
       href: architecture-icons-templates.md
 - name: Microsoft 365 基礎解決方案
   items:
-    - name: 使用 Microsoft 365 強化遠端工作者
+    - name: 設定遠端工作基礎結構。
       items:
         - name: 概觀
           href: empower-people-to-work-remotely.md
         - name: 步驟 1： 增加登入安全性
           href: empower-people-to-work-remotely-secure-sign-in.md
-        - name: 步驟 2： 提供遠端存取
+        - name: 步驟 2：提供遠端存取
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 步驟 3： 部署安全性與合規性
+        - name: 步驟 3：部署安全性與合規性
           href: empower-people-to-work-remotely-security-compliance.md
         - name: 步驟 4： 部署端點管理
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: 步驟 5： 部署生產力應用程式和服務
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 步驟 6： 訓練遠端工作者
+        - name: 步驟6：訓練遠端工作者
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: 使用 Microsoft 365 設定安全的共同作業
       items:
         - name: 概觀
           href: setup-secure-collaboration-with-teams.md
-        - name: 步驟 1： 使用 Microsoft Teams 的三層保護
+        - name: 步驟 1：使用 Microsoft Teams 設定三層保護
           items:
             - name: 三層防護概觀
               href: configure-teams-three-tiers-protection.md
@@ -123,7 +123,7 @@
               href: /MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 步驟 2. - 設定電話系統
               href: /microsoftteams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: 步驟 3. - 設定 PSTN 連線
+            - name: 步驟 3. - 設定 PSTN 連線能力
               items:
                 - name: '[通話方案] 選項'
                   href: /microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json

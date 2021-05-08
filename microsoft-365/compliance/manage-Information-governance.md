@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: 實施 Microsoft 資訊控管功能以控管您的資料，以符合合規性或法規需求。
-ms.openlocfilehash: 6a0db63f218db72dbda9afc510cb5ef5f5e13eaa
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107701"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244561"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 資訊控管功能
 
@@ -31,6 +31,8 @@ ms.locfileid: "52107701"
 ![管控您的資料 - 資訊管控與記錄管理](../media/information-governance-records-management.png)
 
 想要保護您的資料？ 請參閱 [Microsoft 365 中的 Microsoft 資訊保護。](information-protection.md)
+
+為了協助您遵守資料隱私權法規，我們設計工作流程來引導您完成端對端流程，以規劃及實施整個 Microsoft 365 的功能，包括安全存取、威脅防護、資訊保護和資料控管。 如需詳細資訊，請參閱 [以 Microsoft 365 針對資料隱私權法規部署資訊保護](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。 
 
 ## <a name="information-governance"></a>資訊控管
 

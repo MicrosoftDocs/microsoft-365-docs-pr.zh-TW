@@ -1,12 +1,12 @@
 ---
 title: 評估 Microsoft Defender 防毒軟體
-description: 所有規模的企業都可以使用本指南評估及測試 Microsoft Defender 防病毒在 Windows 10 中所提供的保護。
-keywords: Microsoft Defender 防毒程式，cloud protection，cloud，反惡意程式碼，安全性，Defender，評估，測試，保護，比較，即時保護
+description: 所有規模的企業都可以使用本指南評估及測試 Windows 10 中 Microsoft Defender 防毒軟體所提供的保護。
+keywords: Microsoft Defender 防毒軟體，cloud protection，cloud，反惡意程式碼，安全性，Defender，評估，測試，保護，比較，即時保護
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,12 +14,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 7f3fa1ca854a75025f850c85637cd3e08678bdbc
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4f789ab80d48966d4cf922811d05d74882d728fe
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764828"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274733"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>評估 Microsoft Defender 防毒軟體
 
@@ -30,7 +31,7 @@ ms.locfileid: "51764828"
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-使用此指南可判斷 Microsoft Defender 防毒軟體如何保護您免受病毒、惡意程式碼和潛在的有害應用程式的威脅。
+使用此指南可判斷 Microsoft Defender 防毒軟體如何防止病毒、惡意程式碼和潛在的有害應用程式。
 
 >[!TIP]
 >您也可以在 [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 流覽 Microsoft Defender for Endpoint 示範網站，以確認下列功能正在運作中，並查看其運作方式：
@@ -38,7 +39,7 @@ ms.locfileid: "51764828"
 >- Fast 教學 (包括第一次看到區塊) 
 >- 可能有害的應用程式封鎖
 
-它會說明適用于小型和大型企業的 Microsoft Defender 防毒軟體的重要下一代保護功能，以及它們如何增加整個網路的惡意程式碼偵測和保護。
+它說明適用于小型和大型企業的 Microsoft Defender 防毒軟體的下一代保護功能，以及它們如何增加整個網路的惡意程式碼偵測和保護。
 
 您可以選擇個別設定和評估每個設定，或一次全部設定。 我們已根據一般評估案例分組類似設定，並包含使用 PowerShell 來啟用設定的指示。
 
@@ -53,9 +54,9 @@ ms.locfileid: "51764828"
 > [!IMPORTANT]
 > 此指南目前適用于 Microsoft Defender 防毒軟體的單一機器評估。 啟用本指南中的所有設定可能不適合實際部署。
 >
-> 如需實際部署和監控整個網路上的 Microsoft Defender 防病毒的最新建議，請參閱 [部署 Microsoft Defender 防毒軟體](deploy-manage-report-microsoft-defender-antivirus.md)。
+> 如需實際部署及透過網路監視 Microsoft Defender 防毒軟體的最新建議，請參閱[Deploy Microsoft Defender 防毒軟體](deploy-manage-report-microsoft-defender-antivirus.md)。
 
 ## <a name="related-topics"></a>相關主題
 
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)
 - [部署 Microsoft Defender 防毒軟體](deploy-manage-report-microsoft-defender-antivirus.md)

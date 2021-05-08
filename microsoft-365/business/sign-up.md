@@ -25,27 +25,27 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 瞭解 Microsoft 365 商務版 Premium 包含的專案，並取得註冊 Microsoft 365 商務版 Premium 的逐步指引。
-ms.openlocfilehash: d4aa1ae9ea48863434c960da69e41ffb2d3a0a89
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 瞭解 Microsoft 365 商務進階版包含的專案，並取得註冊 Microsoft 365 商務進階版的逐步指導方針。
+ms.openlocfilehash: 18f4cea19225f053bef6ac8838275755b8a1f7ab
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578100"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244749"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>註冊取得 Microsoft 365 商務進階版
 
-若要瞭解 Microsoft 365 商務版的功能包括什麼，請觀看 [簡短的影片](../business-video/what-is-microsoft-365.md) ，並查看其 [概述](microsoft-365-business-overview.md)。
+若要找出 Microsoft 365 商務進階版所包含的內容，請觀看[簡短的影片](../business-video/what-is-microsoft-365.md)，並參閱[一覽](microsoft-365-business-overview.md)。
 
-可透過三種方式取得 Microsoft 365 商務版 Premium：
-- **購買 microsoft 365 商務版，並完成您自己的設定**：若要購買 Microsoft 365 商務版 premium online，請 [遵循下列步驟](#sign-up-steps)。
-- **針對 microsoft 合作夥伴**：若您是協力廠商，請參閱 [從 Microsoft 合作夥伴中心取得 Microsoft 365 商務版 Premium](get-microsoft-365-business.md)。
-- **在 microsoft store 中取得協助**： Head To a [microsoft store](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft 商店可協助您瞭解方案的相關問題、協助您購買符合您業務需求的計畫，以及協助您完成設定。
+可透過三種方式取得 Microsoft 365 商務進階版：
+- **購買 Microsoft 365 商務進階版並完成您自己的設定**：若要購買 Microsoft 365 商務進階版線上，請 [執行下列步驟](#sign-up-steps)。
+- **針對 microsoft 合作夥伴**：若您是協力廠商，請參閱 [從 Microsoft 合作夥伴中心取得 Microsoft 365 商務進階版](get-microsoft-365-business.md)。
+- **在 Microsoft store 中取得** 說明： Head 到 [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft 商店可協助您瞭解方案的相關問題、協助您購買符合您業務需求的計畫，以及協助您完成設定。
 
 **需要一些不同的專案嗎？** 您可以：
-- [將您的 Office 365 方案升級至 Microsoft 365 商務版 Premium](migrate-to-microsoft-365-business.md)。
-- 在一個月內取得 Microsoft 365 商務版 Premium 的[免費試用版](https://go.microsoft.com/fwlink/p/?linkid=2102309)。
-- 如果您需要更少功能的計畫，請[註冊 Microsoft 365 商務標準版](https://go.microsoft.com/fwlink/p/?LinkID=510935)。 瞭解每個商務計畫在 [products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)中所包含的內容。
+- [將您的 Office 365 計畫升級為 Microsoft 365 商務進階版](migrate-to-microsoft-365-business.md)。
+- Microsoft 365 商務進階版一月內[取得免費試用版](https://go.microsoft.com/fwlink/p/?linkid=2102309)。
+- 如果您需要具有較少功能的計畫，請[註冊 Microsoft 365 商務標準版](https://go.microsoft.com/fwlink/p/?LinkID=510935)。 瞭解每個商務計畫在 [products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)中所包含的內容。
 - 如果您不是購買公司，[請註冊家庭或家庭方案](https://go.microsoft.com/fwlink/?linkid=2109398)。 
 
 ## <a name="sign-up-steps"></a>註冊步驟
@@ -56,11 +56,11 @@ ms.locfileid: "51578100"
 
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-若要為您的企業註冊和購買 Microsoft 365，請完成下列步驟：
+若要為您的公司註冊和購買 Microsoft 365，請完成下列步驟：
 
-1. 在 [ [Microsoft 365 商務](https://go.microsoft.com/fwlink/?linkid=2109654)版] 頁面上，選取 [ **查看 & 定價的計畫**]。 
-2. 在下一個頁面上，找出每月成本，然後向下翻頁以進一步瞭解 Microsoft 365 中包含的專案。 在 [Microsoft 365 商務版精品] 底下，選取 [ **立即購買**]。
-3. 在 [ **謝謝您選擇 Microsoft 365 商務版** ] 頁面上，輸入您的資訊以開始。
+1. 在 [[商務用 Microsoft 365] 頁面](https://go.microsoft.com/fwlink/?linkid=2109654)上，選取 [**查看計畫 & 定價**]。 
+2. 在下一個頁面上，找出每月成本，然後向下翻頁以進一步瞭解 Microsoft 365 中包含的專案。 在 [Microsoft 365 商務進階版] 底下，選取 [**立即購買**]。
+3. 在 [**謝謝您選擇 Microsoft 365 商務進階版**] 頁面上，輸入您的資訊以開始。
 4. 在 **步驟 1** 中，輸入您已經使用的電子郵件地址。 這可以是您目前的工作電子郵件地址或您想要 Microsoft 用來在安裝期間與您通訊的任何位址。 也就是我們傳送帳單和續訂資訊的位址。 然後選取 [ **設定帳戶**]。
 5. 在 [ **步驟 2**] 中，輸入您的姓名、商務電話號碼、公司名稱和位置。 您的國家或地區決定您從 Microsoft 取得的確切服務，而且在您完成此步驟後，就無法變更。 選取 **[下一步]**。
     > [!NOTE]
@@ -84,17 +84,17 @@ ms.locfileid: "51578100"
     3. 選取 **[下一步]** ，建立使用者識別碼及公司電子郵件地址。 輸入名稱 (又稱為您要使用的別名) 。 例如，Robert 年輕人可能使用 RobY 或 RobYoung 做為工作別名。 新增密碼並選取 [ **註冊**]。 請記下您的密碼。 我們會將電子郵件傳送到您在步驟1中輸入的位址，以提醒您您的使用者識別碼。
 7. 在 [ **步驟 4**： 
 
-    1. 決定您的公司中有多少人員需要 Microsoft 365 授權，或是將 **使用者數目** 保留為1，之後再新增更多人員。 
+    1. 決定您的公司中有多少人員需要 Microsoft 365 授權，或是將 **使用者數目** 保留為1，然後再新增更多人員。 
     2. 選取 [月] 或 [年帳單]，檢查總成本，然後選取 **[下一步]**。 
     3. 新增您的信用卡詳細資料。 如果您的公司位址不符合您的信用卡位址，我們也會需要您公司位址。 您的公司位址決定您支付的稅款和可用的服務。 如需有關稅收的詳細資訊，請參閱 [我要收取的稅收為何？](../commerce/billing-and-payments/tax-information.md)。
     4. 選取 [ **下單**]。 Microsoft 會花一點時間，才能完成設定新的計畫。
 
 ## <a name="whats-next"></a>下一步是什麼？
 
-選取 [ **移至設定** ] 以完成其他步驟，例如新增更多安全性以保護您的企業，以及下載 Office 應用程式（如 Word 和 Excel）。
+選取 [**移至設定**] 以完成其他步驟，例如新增更多安全性以保護您的企業，以及下載 Office 的應用程式（如 Word 及 Excel）。
 
 若要取得安裝的說明，請參閱 [set up](set-up.md)。
 
 ## <a name="see-also"></a>請參閱
 
-[商務用 Microsoft 365 訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](../business-video/index.yml)

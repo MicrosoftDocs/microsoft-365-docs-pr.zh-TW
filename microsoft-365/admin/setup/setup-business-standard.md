@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 瞭解如何設定 Microsoft 365 商務標準版訂閱。
-ms.openlocfilehash: 9efd14af2955e85b9b13c437ad869710f69a90f6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ce45b4869000892b5640730e765dbfc9c21386ed
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579083"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244452"
 ---
 # <a name="set-up-microsoft-business-standard"></a>設定 Microsoft 商務標準版
 
@@ -67,9 +67,9 @@ ms.locfileid: "51579083"
 
 您在精靈中所新增的任何使用者，都會自動指派 Microsoft 365 商務標準版授權。
 
-1. 如果您的 Microsoft 365 商務標準版訂閱有現有的使用者 (例如，如果您使用 Azure AD Connect 的話)，系統會提供立即將授權指派給他們的選項。 請繼續進行，為他們新增授權。
+1. 如果您的 Microsoft 365 商務標準版訂閱有現有的使用者 (例如，如果您使用 Azure AD Connect 的話)，系統會提供立即將授權指派給他們的選項。請繼續進行，並為他們新增授權。
 
-2. 新增使用者之後，您也會看到與您新增之使用者共用認證的選項。 您可以選擇列印認證、透過電子郵件傳送認證，或是下載認證。
+2. 新增使用者之後，系統也會提供與您新增之使用者共用認證的選項。您可以選擇列印認證、透過電子郵件傳送認證，或是下載認證。
 
 ## <a name="connect-your-domain"></a>連接您的網域
 
@@ -139,4 +139,4 @@ Microsoft 365 不包含貴公司的公用網站。 如果您想要設立一個�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-如需更多資訊，請參閱[使用公用網站](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)。
+如需更多資訊，請參閱[使用公用網站](../../business-video/create-web-site.md)。

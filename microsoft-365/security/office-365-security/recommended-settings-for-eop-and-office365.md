@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用適用于 Office 365 的 Defender，您也會取得哪些額外功能？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ba88f9b9ebcc34e0ea146a74c01dea8f200ee0b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3a4447d6eaeeb907eb750d2ad668fdbb9031c28b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204742"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274865"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建議設定
 
@@ -57,6 +57,8 @@ ms.locfileid: "51204742"
 
 若要建立及設定反垃圾郵件原則，請參閱 [在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
+<br>
+
 ****
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
@@ -83,6 +85,8 @@ ms.locfileid: "51204742"
 有些其他的高級垃圾郵件篩選 (反垃圾郵件原則中的 ASF) 設定，但不是已被取代。 有關這些功能之折舊時程表的詳細資訊，將在本文之外進行傳遞。
 
 建議您為 **標準** 和 **嚴格** 的層次 **，關閉這些** ASF 設定。 如需 ASF 設定的詳細資訊，請參閱 [Office 365 中的高級垃圾郵件篩選 (ASF) 設定](advanced-spam-filtering-asf-options.md)。
+
+<br>
 
 ****
 
@@ -111,6 +115,8 @@ ms.locfileid: "51204742"
 
 如需服務中預設傳送限制的詳細資訊，請參閱傳送 [限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)。
 
+<br>
+
 ****
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
@@ -125,20 +131,24 @@ ms.locfileid: "51204742"
 
 若要建立及設定反惡意程式碼原則，請參閱 [在 Office 365 中設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
+<br>
+
 ****
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
 |---|:---:|:---:|:---:|---|
-|**您是否要在郵件被隔離時通知收件者？** <p> _動作_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
+|**您是否要在郵件被隔離時通知收件者？** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
 |**常見附件類型篩選** <p> _EnableFileFilter_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
 |**惡意程式碼零小時自動清除** <p> _ZapEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
-|通知未傳遞郵件的 **內部寄件者** <p> _EnableInternalSenderNotifications_|停用 <p> `$false`|停用 <p> `$false`|停用 <p> `$false`||
-|通知未傳遞郵件的 **外部寄件者** <p> _EnableExternalSenderNotifications_|停用 <p> `$false`|停用 <p> `$false`|停用 <p> `$false`||
+|通知未傳遞郵件的 **內部寄件者** <p> _EnableInternalSenderNotifications_|已停用 <p> `$false`|已停用 <p> `$false`|已停用 <p> `$false`||
+|通知未傳遞郵件的 **外部寄件者** <p> _EnableExternalSenderNotifications_|已停用 <p> `$false`|已停用 <p> `$false`|已停用 <p> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP 預設的反網路釣魚原則設定
 
 如需這些設定的詳細資訊，請參閱 [欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。 若要設定這些設定，請參閱 [在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
+
+<br>
 
 ****
 
@@ -171,6 +181,8 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 
 如需這些設定的詳細資訊，請參閱 [Microsoft Defender For Office 365 的反網路釣魚原則中的類比設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 若要設定這些設定，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
+<br>
+
 ****
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
@@ -194,6 +206,8 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 
 請注意，這些是 [EOP 中的反垃圾郵件原則設定](#eop-anti-spam-policy-settings)中所提供的相同設定。
 
+<br>
+
 ****
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
@@ -206,6 +220,8 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反網路釣魚原則中的高級設定
 
 如需此設定的詳細資訊，請參閱 [適用于 Office 365 的 Microsoft Defender 中的高級網路釣魚原則中的高級網路釣魚閾值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 若要設定此設定，請參閱 [在 Office 365 的 Defender 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+
+<br>
 
 ****
 
@@ -224,6 +240,8 @@ Office 的 Defender for Office 365 中的安全連結包括全域設定，這些
 
 在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
+<br>
+
 ****
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
@@ -241,6 +259,8 @@ Office 的 Defender for Office 365 中的安全連結包括全域設定，這些
 
 > [!NOTE]
 > 如先前所述，沒有預設的安全連結原則。 [預設] 欄中的值是您建立的新安全連結原則中的預設值。
+
+<br>
 
 ****
 
@@ -265,6 +285,8 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
+<br>
+
 ****
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
@@ -283,11 +305,13 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 > [!NOTE]
 > 如先前所述，沒有預設的安全附件原則。 [預設] 欄中的值是您建立的新安全附件原則中的預設值。
 
+<br>
+
 ****
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
 |---|:---:|:---:|:---:|---|
-|**安全附件未知的惡意程式碼回應** <p> _動作_|封鎖 <p> `Block`|封鎖 <p> `Block`|封鎖 <p> `Block`||
+|**安全附件未知的惡意程式碼回應** <p> _Action_|封鎖 <p> `Block`|封鎖 <p> `Block`|封鎖 <p> `Block`||
 |**偵測時重新導向附件** ： **啟用重新導向** <p> _Redirect_ <p> _RedirectAddress_|Off，但沒有指定電子郵件地址。 <p> `$true` <p> 無|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|將郵件重新導向至安全性管理員以進行審閱。|
 |**如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。** <p> _ActionOnError_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |

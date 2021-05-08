@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 深入了解如何取消您的商務用 Microsoft 365 試用版或付費訂閱。
 ms.date: 04/08/2021
-ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52106999"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244657"
 ---
 # <a name="cancel-your-subscription"></a>取消您的訂閱
 
@@ -126,7 +126,7 @@ ms.locfileid: "52106999"
 
 - 若要將電子郵件、連絡人、工作及行事曆資訊移到另一個帳戶，請參閱[將電子郵件、連絡人及行事曆匯出或備份為 Outlook .pst 檔案](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)。
 
-- 若要從 SharePoint Online 環境 (商務用 OneDrive 或小組網站) 將文件庫或清單內容 (例如連絡人) 儲存至檔案共用或本機電腦上，請參閱[手動移轉 SharePoint Online 內容](https://support.microsoft.com/kb/2783484)。
+- 若要從 SharePoint Online 環境 (商務用 OneDrive 或小組網站) 將文件庫或清單內容 (例如連絡人) 儲存至檔案共用或本機電腦上，請參閱[手動移轉 SharePoint Online 內容](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
 
 ### <a name="uninstall-office-optional"></a>解除安裝 Office (選用)
 

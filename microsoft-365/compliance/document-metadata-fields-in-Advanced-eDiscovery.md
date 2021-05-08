@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文針對 Microsoft 365 中 Advanced eDiscovery 的情況，定義評審集內檔的元資料欄位。
-ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259460"
+ms.locfileid: "52244597"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>進階電子文件探索中的文件中繼資料欄位
 
@@ -119,7 +119,7 @@ ms.locfileid: "52259460"
 |會議結束日期|MeetingEndDate|Meeting_end_date|會議的會議結束日期。|
 |會議開始日期|MeetingStartDate|Meeting_start_date|會議的會議開始日期。|
 |郵件類型|MessageKind|Message_kind|要搜尋的郵件類型。 可能的值： **<br /> <br /> 連絡人記錄 <br /> <br /> 電子郵件 <br /> externaldata <br /> 傳真 <br /> im 記錄 <br /> <br /> 會議 <br /> microsoftteams** (會從 Microsoft Teams 中的交談、會議及來電傳回專案) **<br /> 記事 <br /> <br /> <br /> <br /> 語音信箱**| 
-|新式附件上層識別碼||ModernAttachment_ParentId|檔之父代的不彈性識別碼。|
+|ModernAttachment_ParentId||ModernAttachment_ParentId||
 |原生分機|NativeExtension|Native_extension|專案的原生分機。|
 |原生檔案名|NativeFileName|Native_file_name|專案的原生檔案名。|
 |NativeMD5||Native_MD5|) 檔資料流程的 MD5 雜湊 (128 位雜湊值。|
@@ -164,7 +164,6 @@ ms.locfileid: "52259460"
 |職稱|職稱|Doc_title|檔中繼資料中的標題。|
 |收件者|收件者|Email_to|郵件類型的 [至] 欄位。 Format 為 **DisplayName \<SmtpAddress>**|
 |電子郵件集中的唯一|UniqueInEmailSet||**False** 表示電子郵件組中的附件重複。|
-|版本群組識別碼||Version_Group_Id|將相同檔的不同版本組合在一起。|
 |已修正|WasRemediated|Was_Remediated|**True** 是表示如果專案已修正，否則 **為 False**。|
 |字數統計|WordCount|Word_count|專案中的字數。|
 |||||

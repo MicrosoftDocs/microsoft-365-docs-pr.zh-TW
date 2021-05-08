@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e8084fab434246a5c9f12af40872ade66e6fa163
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1f8428c2995eec2dece290049eda67a3683b4c1e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934258"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244977"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>疑難排解 macOS 上的 Microsoft Defender for Endpoint 的授權問題
 
@@ -46,15 +46,14 @@ ms.locfileid: "51934258"
 
 找不到授權
 
-好像您的組織沒有 Microsoft 365 企業版訂閱的授權。
+好像組織沒有 Microsoft 365 企業版訂閱的授權。
 
 請與您的系統管理員聯繫以取得協助。
 
 **原因：** 
 
-您已在 macOS 套件 ( 「下載安裝套件」上部署及（或）安裝 Microsoft Defender for Endpoint ) 但是您可能已執行設定腳本 ( 「下載上架套件」 ) 。
+您已為 macOS 套件部署及（或）安裝 Microsoft Defender for Endpoint ( "下載安裝套件" ) ，但是您可能已執行設定腳本 ( "下載上架套件" ) ，或是未將授權指派給使用者。
 
 **解決 方案：**
 
 遵循下列所述的 MicrosoftDefenderATPOnboardingMacOs.py 指示： [Client configuration](mac-install-manually.md#client-configuration)
-
