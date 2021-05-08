@@ -8,28 +8,28 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 96c53f7c87c1bb26369677e19b1e93162880f250
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 3e28baf9b9d56c1bcd9c25a1586c48a72eb32bde
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551533"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273929"
 ---
-# <a name="payment-information-for-czech-republic"></a><span data-ttu-id="d9000-103">捷克共和國的付款資訊</span><span class="sxs-lookup"><span data-stu-id="d9000-103">Payment information for Czech Republic</span></span>
+# <a name="payment-information-for-czech-republic"></a><span data-ttu-id="9362f-103">捷克共和國的付款資訊</span><span class="sxs-lookup"><span data-stu-id="9362f-103">Payment information for Czech Republic</span></span>
 
-<span data-ttu-id="d9000-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="d9000-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="9362f-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="9362f-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="d9000-105">請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="d9000-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="9362f-105">請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="9362f-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="d9000-106">電匯</span><span class="sxs-lookup"><span data-stu-id="d9000-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="9362f-106">電匯</span><span class="sxs-lookup"><span data-stu-id="9362f-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="d9000-107">**銀行：** Citibank，倫敦</span><span class="sxs-lookup"><span data-stu-id="d9000-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="d9000-108">**SWIFT Code/BIC：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="d9000-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="d9000-109">**IBAN：** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="d9000-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="d9000-110">**分類程式代碼：** 185008</span><span class="sxs-lookup"><span data-stu-id="d9000-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="d9000-111">**帳戶號碼：** 12207591</span><span class="sxs-lookup"><span data-stu-id="d9000-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="d9000-112">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="d9000-112">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="9362f-107">**銀行：** Citibank，倫敦</span><span class="sxs-lookup"><span data-stu-id="9362f-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="9362f-108">**SWIFT Code/BIC：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="9362f-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
+<span data-ttu-id="9362f-109">**IBAN：** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="9362f-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="9362f-110">**分類程式代碼：** 185008</span><span class="sxs-lookup"><span data-stu-id="9362f-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="9362f-111">**帳戶號碼：** 12207591</span><span class="sxs-lookup"><span data-stu-id="9362f-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="9362f-112">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="9362f-112">**Account Name:** MICROSOFT</span></span>  

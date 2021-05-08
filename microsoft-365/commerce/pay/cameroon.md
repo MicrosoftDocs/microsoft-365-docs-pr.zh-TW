@@ -8,27 +8,27 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 380a6d29e6ae2298cdc976042682470a6eca4a54
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e65fbd34650ee1a049e812e3a5b3cd72a58a8bc9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551809"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274073"
 ---
-# <a name="payment-information-for-cameroon"></a><span data-ttu-id="c4d9a-103">喀麥隆的付款資訊</span><span class="sxs-lookup"><span data-stu-id="c4d9a-103">Payment information for Cameroon</span></span>
+# <a name="payment-information-for-cameroon"></a><span data-ttu-id="39d08-103">喀麥隆的付款資訊</span><span class="sxs-lookup"><span data-stu-id="39d08-103">Payment information for Cameroon</span></span>
 
-<span data-ttu-id="c4d9a-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="c4d9a-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="39d08-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="39d08-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="c4d9a-105">請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="c4d9a-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="39d08-105">請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="39d08-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="c4d9a-106">電匯</span><span class="sxs-lookup"><span data-stu-id="c4d9a-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="39d08-106">電匯</span><span class="sxs-lookup"><span data-stu-id="39d08-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="c4d9a-107">**銀行：** Citibank，倫敦</span><span class="sxs-lookup"><span data-stu-id="c4d9a-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="c4d9a-108">**SWIFT 程式碼：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="c4d9a-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="c4d9a-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="c4d9a-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="c4d9a-110">**帳戶號碼：** 12510049</span><span class="sxs-lookup"><span data-stu-id="c4d9a-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="c4d9a-111">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="c4d9a-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="39d08-107">**銀行：** Citibank，倫敦</span><span class="sxs-lookup"><span data-stu-id="39d08-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="39d08-108">**SWIFT 程式碼：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="39d08-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="39d08-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="39d08-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="39d08-110">**帳戶號碼：** 12510049</span><span class="sxs-lookup"><span data-stu-id="39d08-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="39d08-111">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="39d08-111">**Account Name:** MICROSOFT</span></span>  
