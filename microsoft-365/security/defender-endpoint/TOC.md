@@ -539,6 +539,12 @@
 ####### [根據建議列出電腦](get-recommendation-machines.md)
 ####### [根據建議列出弱點](get-recommendation-vulnerabilities.md)
 
+###### [補救活動]()
+####### [補救活動方法和屬性](get-remediation-methods-properties.md)
+####### [根據識別碼取得一個補救活動](get-remediation-one-activity.md)
+####### [列出所有補救活動](get-remediation-all-activities.md)
+####### [列出一個補救活動的公開裝置](get-remediation-exposed-devices-activities.md)
+
 ###### [分數]()
 ####### [分數方法和屬性](score.md)
 ####### [按電腦群組列出暴露程度分數](get-machine-group-exposure-score.md)

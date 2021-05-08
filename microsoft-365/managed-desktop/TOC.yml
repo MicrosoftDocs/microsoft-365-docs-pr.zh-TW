@@ -104,6 +104,8 @@
           href: get-started/enterprise-state-roaming.md
         - name: 當地語系化使用者體驗
           href: get-started/localization.md
+        - name: 驗證新裝置
+          href: get-started/validate-device.md
         - name: 設定裝置
           href: get-started/set-up-devices.md
           items:
