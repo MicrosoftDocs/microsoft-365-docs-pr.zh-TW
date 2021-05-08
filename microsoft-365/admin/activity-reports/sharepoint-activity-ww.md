@@ -1,5 +1,5 @@
 ---
-title: Admin center 中的 Microsoft 365 報告-SharePoint 活動
+title: Microsoft 365系統管理中心的報告-SharePoint 活動
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,28 +14,27 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
 description: 取得「SharePoint 活動使用方式」報告，以瞭解每個 SharePoint 使用者的活動、共用的檔案數目及儲存使用量。
-ms.openlocfilehash: 71cea1e4b5875c0c00dd6dc6cb564e01b84cfb77
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f049a67e8444654e05cfe3dc72a8d4fe39792cb2
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579515"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244077"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Admin center 中的 Microsoft 365 報告-SharePoint 活動
+# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365系統管理中心的報告-SharePoint 活動
 
-做為 Microsoft 365 系統管理員，[ **報告** ] 儀表板會顯示您組織中各種產品的活動概況。 此功能可讓您更深入解析各項產品的特定活動。 請參閱 [Microsoft 365 系統管理中心的活動報告](activity-reports.md)。
+Microsoft 365 系統管理員，「**報告**」儀表板會顯示您組織中各種產品的活動概況。 此功能可讓您更深入解析各項產品的特定活動。 請參閱[Microsoft 365 系統管理中心的活動報告](activity-reports.md)。
   
 例如，您可以查看每位授權使用 SharePoint 的使用者與檔案的互動，以了解他們的活動。也可以查看共用的檔案數量，幫助您了解共同作業的程度。
   
 > [!NOTE]
-> 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。 
+> 您必須是全域系統管理員、全域讀取者或報告讀取者 Microsoft 365 或 Exchange、SharePoint、Teams 服務、Teams 通訊或商務用 Skype 管理員查看報告。 
  
 ## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>如何存取 SharePoint 活動報告？
 
@@ -44,11 +43,11 @@ ms.locfileid: "51579515"
   
 ## <a name="interpret-the-sharepoint-activity-report"></a>轉譯 SharePoint 活動報告
 
-您可以選擇 [ **活動** ] 索引標籤，以查看 SharePoint 報告中的活動。<br/>![Microsoft 365 報告-Microsoft SharePoint 活動報告。](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
+您可以選擇 [**活動**] 索引標籤，以查看 SharePoint 報告中的活動。<br/>![Microsoft 365 報告-Microsoft SharePoint 活動報告。](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
 
 選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![SharePoint 活動報告-選擇欄](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
-您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
+您也可以選取 [**匯出**] 連結，將報表資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
   
 |項目|描述|
 |:-----|:-----|

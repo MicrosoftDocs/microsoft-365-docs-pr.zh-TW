@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: 瞭解如何將 SharePoint 設定為 Microsoft Viva 教學 (Preview) 的教學內容來源。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da75ec0573519ed73507994afeac995c0461de0c
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: fc702f57b75b78ab523226ba7d8a8eb6505f2975
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100895"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244118"
 ---
 # <a name="coming-soon-configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>即將推出：設定 SharePoint 做為 Microsoft Viva 教學 (Preview 的教學內容來源) 
 
@@ -40,11 +40,11 @@ Viva 教學 (預覽) 支援下列檔案類型：
 - 音訊 ( m4a) 
 - 影片 ( mov、.mp4、.avi) 
 
-如需詳細資訊，請參閱[SharePoint 線上檔](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)。 
+如需詳細資訊，請參閱[SharePoint 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)。 
 
 ## <a name="permissions"></a>權限
 
-您可以從組織中的任何 SharePoint 網站收集 URLs 文件庫資料夾。 Viva 教學 (預覽) 會以所有現有的內容許可權為例。 因此，只有使用者有權存取的內容可在 Viva 學習 (預覽) 中搜尋並可見。 這些資料夾內的任何內容都會可供搜尋，但只有個別員工具有許可權的內容才能使用。
+您可以從組織中的任何 SharePoint 網站收集 URLs 文件庫資料夾。 Viva 教學 (預覽) 會以所有現有的內容許可權為例。 因此，只有使用者有權存取的內容可在 Viva 學習 (預覽) 中可供搜尋和看到。 這些資料夾內的任何內容都會可供搜尋，但只有個別員工具有許可權的內容才能使用。
 
 目前不支援從組織存放庫刪除內容。
 
@@ -70,11 +70,11 @@ Viva 教學 (預覽) 支援下列檔案類型：
 
 1.  在 Microsoft 365 系統管理中心的左側導覽中，移至 **設定**  >  **組織設定**」。
  
-2.  在 [ **組織設定** ] 頁面上的 [ **服務** ] 索引標籤上，選取 [ **教學應用程式 (預覽])**。
+2.  在 [ **組織設定** ] 頁面上的 [ **服務** ] 索引標籤上，選取 [ **Viva 教學 (預覽])**。
 
      ![Microsoft 365 系統管理中心中的設定頁面，顯示所列的 Viva 教學。](../media/learning/learning-sharepoint-configure1.png)
 
-3.  在 [**教學應用程式 (預覽)** ] 面板的 [SharePoint] 下，提供您想要 Viva 學習以建立集中式存放庫之 SharePoint 網站的網站 URL。
+3.  在 [ **Viva 教學 (預覽)** ] 面板上，于 [SharePoint] 下，提供 SharePoint 網站的網站 URL，而您想要 Viva 學習 (預覽) 來建立集中式存放庫。
 
      ![Microsoft 365 系統管理中心中的學習面板，顯示選取 SharePoint。](../media/learning/learning-sharepoint-configure2.png)
 
@@ -92,7 +92,7 @@ Viva 教學 (預覽) 支援下列檔案類型：
 
        ![「學習內容存放庫」頁面 SharePoint 顯示新的選項。](../media/learning/learning-sharepoint-configure5.png)
  
-   2. 在 [ **新增專案** ] 面板的 [ **標題** ] 欄位中，新增您選擇的目錄名稱。 在 [ **資料夾 URL** ] 欄位中，新增「學習內容」資料夾的 URL。 選取 ****[儲存]。
+   2. 在 [ **新增專案** ] 面板的 [ **標題** ] 欄位中，新增您選擇的目錄名稱。 在 [ **資料夾 URL** ] 欄位中，新增「學習內容」資料夾的 URL。 選取 [儲存]。
 
        ![SharePoint 中的 [新增專案] 面板，顯示標題和資料夾 URL 欄位。](../media/learning/learning-sharepoint-configure6.png)
 
@@ -117,7 +117,7 @@ Viva 教學 (預覽) 支援下列檔案類型：
 
      ![檔頁面的 SharePoint 顯示顯示動作選項，並反白顯示單行文字。](../media/learning/learning-sharepoint-curation1.png)
 
-3. 在 [ **建立欄** ] 面板的 [ **名稱** ] 欄位中，新增欄的描述性名稱。 選取 ****[儲存]。
+3. 在 [ **建立欄** ] 面板的 [ **名稱** ] 欄位中，新增欄的描述性名稱。 選取 [儲存]。
 
      ![在 SharePoint 中建立 [欄] 面板，顯示名稱及其他欄位。](../media/learning/learning-sharepoint-curation2.png)
  

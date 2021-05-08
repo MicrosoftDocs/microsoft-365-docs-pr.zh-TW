@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 31162944f4728f2c84efbe2cd5eafbd0c70e00f6
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 80546d44bc1ba222c736b397a272f9f1f1a01d4a
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245849"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269465"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的修正動作
 
@@ -36,8 +36,6 @@ ms.locfileid: "52245849"
 **適用於：**
 - Microsoft 365 Defender
 
-## <a name="remediation-actions"></a>補救動作
-
 在 Microsoft 365 Defender 的自動調查期間和之後，會針對惡意或可疑專案識別修正動作。 對裝置（也稱為端點）採取某些類型的修復動作。 對電子郵件內容採取其他修復動作。 在採取修正動作、核准或拒絕時，自動調查會完成。
 
 > [!IMPORTANT]
@@ -46,7 +44,7 @@ ms.locfileid: "52245849"
 > - [如何在裝置上修正威脅](../defender-endpoint/automated-investigations.md)
 > - [電子郵件 & 共同作業內容的威脅和修正動作](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-下表摘要 Microsoft 365 Defender 目前支援的修正動作： 
+下表摘要 Microsoft 365 Defender 中目前支援的修復動作。 
 
 |裝置 (端點) 修正動作  |電子郵件補救動作  |
 |:---------|:---------|
@@ -60,7 +58,7 @@ ms.locfileid: "52245849"
 
 下表列出可能的裁決和結果：
 
-| 裁決    | 範圍    | 結果|
+| 裁決    | 受影響實體    | 結果|
 |------|------|------|
 | 惡意    | 裝置 (端點)    | 如果您組織的 [裝置群組](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) 會自動設定為 **完整修正威脅** ，便會自動採取修正動作 () |
 | 惡意    | 電子郵件內容 (URL 或附件) | 建議的修正動作待核准|
@@ -70,17 +68,17 @@ ms.locfileid: "52245849"
 
 ## <a name="remediation-actions-that-are-taken-manually"></a>手動採取的修正動作
 
-除了遵循自動調查的修復動作之外，您的安全性作業小組也可以手動採取某些修正動作。 包括下列動作：
+除了遵循自動調查的修復動作之外，您的安全性作業小組也可以手動採取某些修正動作。 包括下列各項：
 
-- 手動裝置動作，例如裝置隔離或檔隔離。
-- 手動電子郵件動作，例如虛刪除的電子郵件訊息。 
-- 裝置或電子郵件上的[高級搜尋](../defender-endpoint/advanced-hunting-overview.md)動作。
-- [Explorer](../office-365-security/threat-explorer.md) 對電子郵件內容的動作，例如將電子郵件移至垃圾郵件、虛刪除的電子郵件或實刪除的電子郵件。
-- 手動 [即時回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) 動作，例如刪除檔案、停止程式及移除排程的任務。
-- [Microsoft Defender For Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)的即時回應動作，例如隔離裝置、執行防病毒掃描，以及取得檔案的相關資訊。 
+- 手動裝置動作，例如裝置隔離或檔隔離
+- 手動電子郵件動作，例如虛刪除的電子郵件 
+- 裝置或電子郵件上的[高級搜尋](../defender-endpoint/advanced-hunting-overview.md)動作
+- [Explorer](../office-365-security/threat-explorer.md) 對電子郵件內容的動作，例如將電子郵件移至垃圾郵件、虛刪除的電子郵件或實刪除的電子郵件
+- 手動 [即時回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) 動作，例如刪除檔案、停止程式及移除計畫任務
+- [Microsoft Defender For Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)的即時回應動作，例如隔離裝置、執行防病毒掃描，以及取得檔案的相關資訊
 
 ## <a name="next-steps"></a>後續步驟
 
 - [造訪重要訊息中心](m365d-action-center.md)
-- [查看和管理修正動作]( m365d-autoir-actions.md)
-- [在自動化調查和回應功能中處理誤報/負片](m365d-autoir-report-false-positives-negatives.md)
+- [查看和管理修正動作](m365d-autoir-actions.md)
+- [位址誤報或漏報](m365d-autoir-report-false-positives-negatives.md)

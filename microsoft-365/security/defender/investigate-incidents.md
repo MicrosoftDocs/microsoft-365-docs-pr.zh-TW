@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939739"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259630"
 ---
 # <a name="analyze-incidents-in-microsoft-365-defender"></a>分析 Microsoft 365 Defender 中的事件
 
@@ -37,7 +37,7 @@ ms.locfileid: "51939739"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據，集中于您的裝置、使用者和信箱，以讓您全面瞭解攻擊的整體廣度。
+Microsoft 365Defender 會將所有相關的警示、資產、調查和證據，集中于您的裝置、使用者和信箱，以讓您全面瞭解攻擊的整體廣度。
 
 在事件內，您會分析影響網路的警示、瞭解其含義，以及對照證據來設計有效的修復計畫。
 
@@ -61,7 +61,7 @@ Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據，
 
 [ **摘要** ] 頁面可讓您查看有關事件的最重要注意事項。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 安全中心內事件摘要頁面的範例":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 security center 中的事件摘要頁面範例":::
 
 「攻擊類別」可讓您直觀和數值的方式，顯示攻擊如何對 kill 鏈進行的進展。 與其他 Microsoft 安全性產品一樣，Microsoft 365 Defender 會對應至[MITRE ATT&CK &trade; ](https://attack.mitre.org/) framework。
 
@@ -79,7 +79,7 @@ Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據，
 
 - 嚴重性。
 - 警示中所涉及的實體。
-- Microsoft Defender for Identity，microsoft defender for Endpoint，Microsoft defender for Office 365) 的警示來源 (。
+-  (microsoft defender for Identity、microsoft defender for Endpoint、microsoft defender for Office 365) 的警示來源。
 - 連結在一起的原因。
 
 以下為範例。
@@ -103,7 +103,7 @@ Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據，
 在 [裝置] 頁面上，您可以收集裝置的其他相關資訊，例如其所有警示、時程表及安全性建議。 例如，在 [ **時程表** ] 索引標籤中，您可以在機器時程表中向內移動，並以時間順序查看機器上所觀察到的所有事件和行為，並與所引發的警示交錯。
 
 > [!TIP]
-> 您可以在裝置頁面上執行手動掃描。 在 Microsoft 365 的 [安全性中心] 中，選擇 **> 裝置庫存的端點**。 選取具有警示的裝置，然後執行防病毒掃描。 在 [ **裝置庫存** ] 頁面上追蹤並顯示的動作（例如防病毒掃描）。 若要深入瞭解，請參閱 [在裝置上執行 Microsoft Defender 防病毒掃描](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
+> 您可以在裝置頁面上執行手動掃描。 在 [Microsoft 365 安全性中心] 中，選擇 [**端點] > 裝置庫存**]。 選取具有警示的裝置，然後執行防病毒掃描。 在 [ **裝置庫存** ] 頁面上追蹤並顯示的動作（例如防病毒掃描）。 若要深入瞭解，請參閱[執行 Microsoft Defender 防毒軟體掃描裝置](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
 
 ## <a name="users"></a>使用者
 
@@ -123,7 +123,7 @@ Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據，
 
 ## <a name="investigations"></a>調查
 
-[ **調查** ] 索引標籤會列出此事件中的警示所觸發的所有自動調查。 調查會執行修正動作，或等候分析員的動作批准，視您如何設定自動調查以在 Microsoft Defender for Endpoint 和 Defender for Office 365 中執行。
+[ **調查** ] 索引標籤會列出此事件中的警示所觸發的所有自動調查。 調查會執行修正動作，或等候分析員的動作核准，視您如何設定自動調查，以在 Microsoft Defender for Endpoint 和 Defender for Office 365 中執行。
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="事件的調查頁面範例":::
 
@@ -135,9 +135,26 @@ Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據，
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="事件的證據與回應頁面範例":::
 
-Microsoft 365 Defender 會自動調查警示中的所有事件支援事件和可疑實體，以提供重要電子郵件、檔案、程式、服務、IP 位址等相關資訊。 這可協助您快速偵測並封鎖事件中的潛在威脅。
+Microsoft 365Defender 會自動調查警示中的所有事件支援事件和可疑實體，提供重要電子郵件、檔案、程式、服務、IP 位址等相關資訊。 這可協助您快速偵測並封鎖事件中的潛在威脅。
 
 每個分析的實體都會以判定為序 (惡意、可疑、清除) 和修正狀態。 這可協助您瞭解整個事件的修復狀態，以及可以採取的後續步驟。
+
+## <a name="graph-in-preview"></a>預覽中 Graph () 
+
+使用 [新增 **Graph** ] 索引標籤 (在預覽) 中，您可以看到：
+
+- 組織中受影響資產的警示連接。
+- 哪些實體與哪些警示相關，以及如何成為攻擊本文的一部分。
+- 事件的警示。
+
+以下為範例。
+
+:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="事件 Graph 頁面的範例":::
+
+事件圖形可協助您透過連線屬於攻擊一部分之相關資產（如使用者、裝置和信箱）的不同可疑實體，快速瞭解攻擊的完整範圍。 
+
+現在，您可以瞭解攻擊如何透過您的網路傳播，在何處開始，以及攻擊的進入程度。
+
 
 ## <a name="related-topics"></a>相關主題
 

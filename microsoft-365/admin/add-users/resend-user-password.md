@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: 瞭解如何重設密碼，並將電子郵件傳送至新的 Microsoft 365 使用者。
-ms.openlocfilehash: 2b2c8657a4bbd4745a3fee34fc259244b83640d3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: 瞭解如何重設密碼及傳送電子郵件給新的 Microsoft 365 使用者。
+ms.openlocfilehash: 17db9a61dc12c349f0aea032655b56c2a448653f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222096"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244041"
 ---
 # <a name="resend-a-users-password---admin-help"></a>重新傳送使用者的密碼 - 系統管理說明
 
-本文說明如何將通知電子郵件重新傳送給 Office 365 中的新使用者。 這可能會在您建立新的使用者時出現，而且不會收到具有新密碼的電子郵件。 若要執行此動作，請重設使用者的密碼。
+本文說明如何使用 Office 365 中的新使用者重新傳送通知電子郵件。 這可能會在您建立新的使用者時出現，而且不會收到具有新密碼的電子郵件。 若要執行此動作，請重設使用者的密碼。
 
 ## <a name="before-you-begin"></a>在您開始之前
 
@@ -39,23 +39,7 @@ ms.locfileid: "51222096"
 
 ## <a name="resend-user-password"></a>重新傳送使用者密碼
   
-::: moniker range="o365-worldwide"  
-  
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。 
-
-::: moniker-end
 
 2. 在 [作用中 **使用者** ] 頁面上，選取使用者，然後選取 [ **重設密碼**]。
 

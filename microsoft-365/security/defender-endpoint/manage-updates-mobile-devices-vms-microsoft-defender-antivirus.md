@@ -7,21 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 826e1456de2aadf4031a91e30925a1e771d44f70
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 143b0cb4bac1d3307e440f98fa4278f38e07c7f2
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765584"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269537"
 ---
-# <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>管理移動裝置和虛擬機器 (Vm 的更新) 
+# <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>管理行動裝置和虛擬機器 (VM) 的更新
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +41,7 @@ ms.locfileid: "51765584"
 下列文章在下列情況中也會很有用：
 - [設定排程和追趕掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [管理已過期端點的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [虛擬桌面基礎結構中的 Microsoft Defender 防病毒部署指南 (VDI) 環境](deployment-vdi-microsoft-defender-antivirus.md)
+- [虛擬桌面基礎結構 (VDI) 環境中 Microsoft Defender 防毒軟體的部署指南](deployment-vdi-microsoft-defender-antivirus.md)
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>在未使用 WSUS 連線的情況下，在行動電腦上加入宣告 Microsoft 更新
 

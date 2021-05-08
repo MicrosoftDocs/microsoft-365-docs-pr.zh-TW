@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中建立及管理裝置群組
-description: 透過 confiring 在群組上套用的規則，建立裝置群組並設定其上的自動修正層級。
+description: 透過確認群組上套用的規則，建立裝置群組並設定其上的自動修正層級
 keywords: 裝置群組、群組、修正、層級、規則、aad 群組、角色、指派、排名
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 4fc2768392e818f74600e3c2d749b6e95bf957e4
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860300"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259412"
 ---
 # <a name="create-and-manage-device-groups"></a>建立及管理裝置群組
 
@@ -41,7 +41,7 @@ ms.locfileid: "51860300"
 - 將相關警示和資料的存取許可權制為具有[指派 RBAC 角色](rbac.md)的特定 Azure AD 使用者群組 
 - 設定不同裝置組的不同自動修復設定
 - 在自動調查期間指派要套用的特定修正層級
-- 在調查中，請使用 **群組** 篩選，將 [**裝置] 清單** 篩選為 [僅限特定裝置群組]。
+- 在調查中，使用 **群組** 篩選，將 [**裝置] 清單** 篩選為特定裝置群組。
 
 您可以在以角色為基礎的 access (RBAC) 中建立裝置群組，以控制誰可以採取特定動作或透過將裝置群組指派 (s) 指派給使用者群組，以控制誰可以採取特定動作或查看資訊。 如需詳細資訊，請參閱 [使用以角色為基礎的存取控制管理入口網站存取](rbac.md)。
 
@@ -81,6 +81,8 @@ ms.locfileid: "51860300"
 
 您可以提升或降級裝置群組的排名，使其在比對的期間具有較高或較低的優先順序。 當裝置與一個以上的群組相符時，它只會新增至最高排名的群組。 您也可以編輯和刪除群組。
 
+
+
 >[!WARNING]
 >刪除裝置群組可能會影響電子郵件通知規則。 如果已在電子郵件通知規則下設定裝置群組，它會從該規則中移除。 如果設備群組是為電子郵件通知設定的唯一群組，則會與裝置群組一起刪除電子郵件通知規則。
 
@@ -90,6 +92,20 @@ ms.locfileid: "51860300"
 
 >[!NOTE]
 > 對裝置群組設定套用變更可能需要數分鐘的時間。
+
+
+### <a name="add-device-group-definitions"></a>新增裝置群組定義
+裝置群組定義也可以包含每個條件的多個值。 您可以將多個標記、裝置名稱和網域設定為單一裝置群組的定義。
+
+1. 建立新的裝置群組，然後選取 [ **裝置** ] 索引標籤。
+2. 新增其中一個條件的第一個值。
+3. 選取 `+` 此項可新增更多列的屬性類型。
+
+>[!TIP]
+> 在相同條件類型的列之間使用 ' OR ' 運算子，允許每個屬性有多個值。
+> 您可以為每個屬性類型-標籤、裝置名稱、網域) 新增多達10列 (數值。
+
+如需連結至裝置群組定義的詳細資訊，請參閱[device groups-Microsoft 365 security](https://sip.security.microsoft.com/homepage)。
 
 ## <a name="related-topics"></a>相關主題
 

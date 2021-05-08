@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 使用 VPN 分割通道搭配 Office 365 將遠端使用者的 Office 365 連線能力最佳化的指引。
-ms.openlocfilehash: 9f54d8836105896d8d00afc4a622975c007bda85
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c92599469431732136637cee2bb6a029c4eb4037
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924185"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259244"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化
 <!---
@@ -33,7 +33,7 @@ ms.locfileid: "50924185"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
 -->
 
-對於透過 VPN 將遠端工作者裝置連線至公司網路或雲端基礎結構的客戶，Microsoft 建議透過「VPN 分割通道」設定來路由傳送主要的 Office 365 案例 **Microsoft Teams**、**SharePoint Online** 和 **Exchange Online**。 這點特別重要，因為在大規模在家工作事件 (例如 COVID-19 危機) 期間，第一線策略可促進持續不斷的員工生產力。
+針對透過 vpn 將其遠端工作者裝置連線到公司網路或雲端基礎結構的客戶，Microsoft 建議使用 _vpn 分割隧道_ 設定來路由傳送的金鑰 Office 365 案例 **Microsoft Teams**、 **SharePoint 線上** 及 **Exchange Online** 。 這一點特別重要，因為這是第一行的工作，可協助在大規模的工作間生產力（如 COVID-19 危機）期間繼續員工生產力。
 
 ![分割通道 VPN 設定](../media/vpn-split-tunneling/vpn-model-2.png)
 
@@ -43,15 +43,15 @@ _圖 1：VPN 分割通道解決方案，具有直接傳送到服務的明確 Off
 
 - 在影響 Office 365 使用者體驗的企業 VPN 架構中，立即緩解大多數客戶所回報效能和網路容量問題的根本原因
   
-  建議的解決方案特別是以 [Office 365 URL 和 IP 位址範圍](./urls-and-ip-address-ranges.md)主題中分類為 [最佳化] 的 Office 365 服務端點為目標。 送至這些端點的流量對於延遲和頻寬節流極其敏感，而使其能夠繞過 VPN 通道可大幅改善使用者體驗，以及減輕公司網路負載。 不是構成大部分頻寬或使用者體驗使用量的 Office 365 連線，可以隨著其餘要送至網際網路的流量持續透過 VPN 通道路由傳送。 如需詳細資訊，請參閱 [VPN 分割通道策略](#the-vpn-split-tunnel-strategy)。
+  建議的解決方案特別是以 [Office 365 URL 和 IP 位址範圍](./urls-and-ip-address-ranges.md)主題中分類為 [最佳化] 的 Office 365 服務端點為目標。 對這些端點的流量非常敏感，延遲和頻寬節流，使其無法略過 VPN 隧道，可大幅改善使用者體驗，並減少公司網路負載。 不是構成大部分頻寬或使用者體驗使用量的 Office 365 連線，可以隨著其餘要送至網際網路的流量持續透過 VPN 通道路由傳送。 如需詳細資訊，請參閱 [VPN 分割通道策略](#the-vpn-split-tunnel-strategy)。
 
-- 可由客戶快速設定、測試及實作，而且沒有額外的基礎結構或應用程式需求
+- 可由客戶快速設定、測試及實施，不需要其他基礎結構或應用程式需求
 
   視 VPN 平台和網路架構而定，實作可能只需幾個小時就能完成。 如需詳細資訊，請參閱[實作 VPN 分割通道](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)。
 
 - 不變更其他連線的路由傳送方式 (包括送至網際網路的流量)，以維持客戶 VPN 實作的安全狀況。
 
-  建議的設定會依循 VPN 流量例外狀況的 **最低權限** 原則，並可讓客戶實作分割通道 VPN，而不會讓使用者或基礎結構暴露於其他安全性風險。 直接路由傳送至 Office 365 端點的網路流量會經由 Office 用戶端應用程式堆疊加密、驗證其完整性，而且限定於同時在應用程式和網路層級強化的 Office 365 服務所專用的 IP 位址。 如需詳細資訊，請參閱[在今日獨特的遠端工作情境中，安全專業人員與 IT 達到現代安全控制的另一種方法 (Microsoft 安全小組部落格)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) (英文)。
+  建議的設定會依循 VPN 流量例外狀況的 **最低權限** 原則，並可讓客戶實作分割通道 VPN，而不會讓使用者或基礎結構暴露於其他安全性風險。 透過 Office 用戶端應用程式堆疊和範圍限定為可在應用程式和網路層級強化之 Office 365 服務的 IP 位址，可將直接路由傳送至 Office 365 端點的網路流量進行加密，以進行完整性驗證。 如需詳細資訊，請參閱[在今日獨特的遠端工作情境中，安全專業人員與 IT 達到現代安全控制的另一種方法 (Microsoft 安全小組部落格)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) (英文)。
 
 - 大部分企業 VPN 平台都提供原生支援
 
@@ -62,6 +62,8 @@ _圖 1：VPN 分割通道解決方案，具有直接傳送到服務的明確 Off
 
 如需完整的實作指引，請參閱[實作 Office 365 的 VPN 分割通道](microsoft-365-vpn-implement-split-tunnel.md)。
 
+如需針對遠端工作人員設定 Microsoft 365 的逐步程式，請參閱[設定您的基礎結構以進行遠端工作](..\solutions\empower-people-to-work-remotely.md)
+
 ## <a name="the-vpn-split-tunnel-strategy"></a>VPN 分割通道策略
 
 傳統公司網路通常會設計成針對以下的雲端前世界安全地運作：將最重要的資料、服務、應用程式裝載於內部部署環境，且直接連線至內部公司網路 (大多數使用者也會直接連線)。 因此，網路基礎結構會基於以下元素而建置：分公司透過「多重通訊協定標籤切換 (MPLS)」網路連線到總公司，而遠端使用者必須透過 VPN 連線到公司網路，才能存取內部部署端點和網際網路。 在此模型中，來自遠端使用者的所有流量都周遊公司網路，並透過通用出口點路由傳送到雲端服務。
@@ -70,11 +72,11 @@ _圖 1：VPN 分割通道解決方案，具有直接傳送到服務的明確 Off
 
 _圖 2：常見 VPN 解決方案，適用於不管目的地為何，所有流量都被迫回到公司網路的遠端使用者_
 
-隨著組織要將資料和應用程式移至雲端，此模型因為迅速變麻煩、昂貴且無法擴展而開始變得不太有效，進而大幅影響使用者的網路效能和效率，並限制組織適應不斷變動需求的能力。 有許多 Microsoft 客戶回報，數年前 80% 的網路流量會送至內部目的地，但 2020 年有 80% 以上的流量連線到外部雲端資源。
+因為組織會將資料和應用程式移至雲端，所以此模型已開始變得較低的效益，因為它很快就會變得麻煩、昂貴且 unscalable，因此會大幅影響使用者的網路效能和效能，並限制組織的功能，以適應不斷變化的需求。 許多 Microsoft 客戶報告有幾年前80% 的網路流量是內部目的地，但在 2020 80% 加上流量會連接至外部雲端式資源。
 
-COVID-19 危機已使此問題惡化，大多數組織都需要有立即的解決方案。 許多客戶發現強制 VPN 模型無法擴展，或效能不足以因應此危機必然造成的 100% 遠距工作案例。 這些組織必須有快速解決方案，才能繼續有效地運作。
+COVID-19 危機已使此問題惡化，大多數組織都需要有立即的解決方案。 許多客戶發現強制 VPN 模型無法擴展，或效能不足以因應此危機必然造成的 100% 遠距工作案例。 為了讓這些組織繼續有效運作，需要快速的解決方案。
 
-針對 Office 365 服務，Microsoft 已特別就此問題精心設計服務的連線需求，您可非常輕鬆又迅速地將一組聚焦、嚴密控制且相對靜態的服務端點最佳化，進而為存取該服務的使用者提供高效能，並減輕 VPN 基礎結構的負擔，以供仍有需求的流量使用。
+針對 Office 365 服務，Microsoft 已針對這項問題 squarely 設計的服務連線需求，在此情況下，具有焦點、嚴格控制且相對靜態服務端點的集合，可以非常簡單且快速地進行優化，如此就能為存取服務的使用者提供高效能，並減少 VPN 基礎結構的負擔，以供仍然需要的流量使用。
 
 Office 365 將 Office 365 所需的端點分為三個類別：**最佳化**、**允許** 和 **預設**。 [最佳化] 端點是我們的討論重點，其具有下列特性：
 
@@ -88,9 +90,9 @@ Office 365 將 Office 365 所需的端點分為三個類別：**最佳化**、**
 
 這組嚴格限定的端點可從強制 VPN 通道分割出來，並透過使用者的本機介面，安全地傳送到 Office 365 服務。 這稱為 **分割通道**。
 
-對於服務內不同層的這些端點，DLP、AV 防護、驗證和存取控制等安全性元素都能以更有效的方式提供。 隨著我們使大量流量從 VPN 解決方案分流出來，就能釋放 VPN 容量給仍然倚賴該解決方案的商務關鍵性流量。 在許多情況下，應該也能免除經歷冗長且昂貴升級方案來處理這種新運作方式的需求。
+如 DLP、AV 保護、驗證和存取控制等安全性元素，可在服務中的不同層級更有效率地針對這些端點進行傳遞。 當我們同時從 VPN 解決方案轉移大量的流量時，這可讓商務用的網路重要流量，可釋放出 VPN 容量。 在許多情況下，應該也能免除經歷冗長且昂貴升級方案來處理這種新運作方式的需求。
 
-![分割隧道 VPN 設定詳細資料](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![分割 Tunnel VPN 設定詳細資料](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _圖 3：VPN 分割通道解決方案，具有直接傳送到服務的明確 Office 365 例外狀況。不管目的地為何，所有其他流量都被迫回到公司網路。_
 

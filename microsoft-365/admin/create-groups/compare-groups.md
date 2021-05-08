@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解您可以使用的群組類型。
-ms.openlocfilehash: 7b67fa5e7dc661163ce6c2c8933ebdafd0a5940d
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 9f36688972f00a27a274b6a974d958d1d590aa93
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023842"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243981"
 ---
 # <a name="compare-groups"></a>比較群組
 
 在 Microsoft 365 系統管理中心的 [群組] 區段中，您可以建立和管理以下類型的群組： 
 
 - **Microsoft 365 群組** (之前稱為 Office 365 群組)是用在公司內部和外部的使用者之間共同作業。
-- **通訊群組** 用來傳送通知給一群人。
+- 可以用 **通訊群組** 將電子郵件通知傳送給一群人。
 - **安全性群組** 用來授權存取資源，例如 SharePoint 網站。
 - **擁有郵件功能的安全性群組** 用來授權存取資源 (如 SharePoint)，以及將通知透過電子郵件傳送給這些使用者。
 - 如果有多個人員需要存取相同信箱 (例如公司資訊或支援電子郵件地址)，就會使用 **共用信箱**。
@@ -59,13 +59,17 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 
 可以將通訊群組[升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)。
 
+可以將通訊群組新增到 Microsoft Teams 中的小組。
+
 ## <a name="security-groups"></a>安全性群組
 
 [安全性群組](../email/create-edit-or-delete-a-security-group.md)用來授權存取 Microsoft 365 資源，例如 SharePoint。 由於您只需要管理群組，而非將使用者個別新增至每個資源，它們能讓系統管理更容易。
 
-安全性群組可以包含使用者或裝置。 為裝置建立可搭配行動裝置管理服務 (例如 Intune) 使用的安全性群組。
+安全性群組可以包含使用者或裝置。為裝置建立可搭配行動裝置管理服務 (例如 Intune) 使用的安全性群組。
 
 安全性群組可以[在 Azure Active Directory 中針對動態成員資格設定](/azure/active-directory/users-groups-roles/groups-change-type)，以便根據使用者屬性 (例如部門、位置、職稱等) 或裝置屬性 (例如作業系統版本) 自動新增或移除群組成員。
+
+可以將安全性群組新增到小組。
 
 ## <a name="mail-enabled-security-groups"></a>擁有郵件功能的安全性群組
 
@@ -73,11 +77,15 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 
 其中包括能夠將郵件傳送給群組的所有成員。
 
+可以將已啟用郵件功能的安全性群組新增到小組。
+
 ## <a name="shared-mailboxes"></a>共用信箱
 
 如果有多個人員需要存取相同信箱 (例如公司資訊或支援電子郵件地址、接待處或其他可能由多人共用的功能)，就會使用[共用信箱](../email/create-a-shared-mailbox.md)。
 
 如果系統管理員已啟用此功能，共用信箱就可以接收外部電子郵件。
+
+共用信箱包括可用於共同作業的行事曆。
 
 擁有群組信箱權限的使用者可以以信箱電子郵件地址的身分傳送或代表其傳送 (如果系統管理員已授與使用者執行該動作的權限)。 這對於說明和支援信箱特別有用，因為使用者可以透過「Contoso 支援」或「大樓 A 接待處」傳送電子郵件。
 

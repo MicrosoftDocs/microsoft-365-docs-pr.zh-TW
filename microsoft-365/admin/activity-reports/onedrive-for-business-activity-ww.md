@@ -1,5 +1,5 @@
 ---
-title: Admin center 中的 Microsoft 365 報告-Business activity OneDrive
+title: Microsoft 365系統管理中心的報告-商務用 OneDrive 活動
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,28 +14,27 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
 description: 取得組織的 OneDrive 使用方式報告，並瞭解每個 OneDrive 使用者的活動、共用的檔案數目及儲存使用量。
-ms.openlocfilehash: 7b6173b3a86187e4612aaaa51bafbfbe965a6cfa
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8257d8e85819ff5edae96967fd4a687be3a903a1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579527"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244089"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Admin center 中的 Microsoft 365 報告-Business activity OneDrive
+# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365系統管理中心的報告-商務用 OneDrive 活動
 
-Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概況。 此功能可讓您深入了解個別產品層級報告，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。
+[Microsoft 365 **報告**] 儀表板會顯示您組織中產品的活動概況。 此功能可讓您深入了解個別產品層級報告，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。
   
 例如，您可以查看每位授權使用 OneDrive 的使用者與 OneDrive 上檔案的互動，以了解活動。也可以查看共用的檔案數量，協助您了解共同作業的程度。
   
 > [!NOTE]
-> 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。  
+> 您必須是全域系統管理員、全域讀取者或報告讀取者 Microsoft 365 或 Exchange、SharePoint、Teams 服務、Teams 通訊或商務用 Skype 管理員查看報告。  
  
 ## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>如何進入 OneDrive 活動報告？
 
@@ -44,11 +43,11 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
   
 ## <a name="interpret-the-onedrive-for-business-activity-report"></a>解讀商務用 OneDrive 活動報告
 
-您可以選擇 [ **活動** ] 索引標籤，以查看 OneDrive 報告中的活動。<br/>![Microsoft 365 報告-Microsoft OneDrive 活動報告。](../../media/c89df0b0-2611-4acf-9ef7-17cedf7977be.png)
+您可以選擇 [**活動**] 索引標籤，以查看 OneDrive 報告中的活動。<br/>![Microsoft 365 報告-Microsoft OneDrive 活動報告。](../../media/c89df0b0-2611-4acf-9ef7-17cedf7977be.png)
 
 選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![OneDrive 活動報告-選擇欄](../../media/252f311f-ffde-4e5a-9158-2b822bf86964.png)
 
-您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
+您也可以選取 [**匯出**] 連結，將報表資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
   
 |項目|描述|
 |:-----|:-----|

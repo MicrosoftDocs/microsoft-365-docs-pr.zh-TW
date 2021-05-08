@@ -25,13 +25,13 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: 說明如何準備使用目錄同步處理將使用者布建至 Microsoft 365，以及使用此方法的長期優點。
-ms.openlocfilehash: 1fe99247a5c50c7bb8fc7eb1347ce6a4cd6aad94
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 說明如何準備使用目錄同步處理以及使用此方法的長期優點來布建使用者 Microsoft 365。
+ms.openlocfilehash: 7f701bf0a8b165323f7fd61b50b41fb5e18268a6
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927321"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259556"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>準備將目錄同步處理至 Microsoft 365
 
@@ -43,9 +43,9 @@ ms.locfileid: "50927321"
 - 選擇性啟用單一登入案例
 - 自動化 Microsoft 365 中的帳戶變更
 
-如需使用目錄同步處理之優點的詳細資訊，請參閱 [混合身分識別搭配 Azure Active directory (AZURE AD) ](/azure/active-directory/hybrid/whatis-hybrid-identity) 和 [Microsoft 365 的混合身分識別](plan-for-directory-synchronization.md)。
+如需使用目錄同步處理之優點的詳細資訊，請參閱[使用 Azure Active Directory (Azure AD) ](/azure/active-directory/hybrid/whatis-hybrid-identity)和[混合身分識別的](plan-for-directory-synchronization.md)混合身分識別 Microsoft 365 的混合身分識別。
 
-不過，目錄同步處理需要規劃及準備，以確保您的 Active Directory 網域服務 (AD DS) 同步處理至您的 Microsoft 365 訂閱的 Azure AD 租使用者，但錯誤最低。
+不過，目錄同步處理需要規劃及準備，以確保您的 Active directory 網域服務 (AD DS) 同步處理至 Microsoft 365 訂閱的 Azure AD 租使用者，至少有錯誤。
 
 請遵循下列步驟，以取得最佳結果。
 
@@ -56,7 +56,7 @@ ms.locfileid: "50927321"
 > [!IMPORTANT]
 > 若您在同步處理之前未執行 AD DS 清除，則可能會對部署程式造成嚴重的負面影響。 可能需要數天甚至數周才能完成目錄同步處理的週期、識別錯誤，以及重新同步處理。
 
-在您的 AD DS 中，針對每個將指派 Microsoft 365 授權的使用者帳戶，完成下列清理工作：
+在您的 AD DS 中，針對將指派 Microsoft 365 授權的每個使用者帳戶，完成下列清理工作：
 
 1. 請確定 **proxyAddresses** 屬性中有有效且唯一的電子郵件地址。
 
@@ -83,7 +83,7 @@ ms.locfileid: "50927321"
 
 ## <a name="2-directory-object-and-attribute-preparation"></a>2. 目錄物件和屬性準備
 
-在您的 AD DS 和 Microsoft 365 間成功的目錄同步處理，需要您的 AD DS 屬性已正確準備。 例如，您必須確定特定的字元沒有用於與 Microsoft 365 環境同步處理的某些屬性。 非預期的字元不會造成目錄同步處理失敗，但可能會傳回警告。 不正確字元會導致目錄同步處理失敗。
+您的 ad ds 和 Microsoft 365 之間的目錄同步處理成功，需要您的 ad ds 屬性已正確準備。 例如，您必須確定特定的字元沒有用於與 Microsoft 365 環境同步處理的某些屬性。 非預期的字元不會造成目錄同步處理失敗，但可能會傳回警告。 不正確字元會導致目錄同步處理失敗。
 
 如果某些 AD DS 使用者有一個或多個重複的屬性，目錄同步處理也會失敗。 每個使用者都必須有唯一的屬性。
 
@@ -91,13 +91,13 @@ ms.locfileid: "50927321"
 
 - **#a1**
 
-  - 如果屬性存在於使用者物件中，則會與 Microsoft 365 同步處理。
+  - 如果屬性存在於使用者物件中，它會與 Microsoft 365 同步處理。
   - 如果此屬性存在於使用者物件中，則必須有一個值。 也就是說，屬性必須不是空白的。
   - 字元數上限：256
 
 - **givenName**
 
-  - 如果屬性存在於使用者物件中，則會與 Microsoft 365 同步處理，但是 Microsoft 365 不需要或使用它。
+  - 如果屬性存在於使用者物件中，則會與 Microsoft 365 同步處理，但 Microsoft 365 不需要也不使用它。
   - 字元數上限：64
 
 - **mail**
@@ -105,7 +105,7 @@ ms.locfileid: "50927321"
   - 屬性值在目錄中必須是唯一的。
 
     > [!NOTE]
-    > 如果有重複的值，則會同步處理第一個具有值的使用者。 後續的使用者將不會出現在 Microsoft 365 中。 您必須修改 Microsoft 365 中的值，或修改 AD DS 中的兩個值，這兩個使用者才能出現在 Microsoft 365 中。
+    > 如果有重複的值，則會同步處理第一個具有值的使用者。 後續的使用者不會出現在 Microsoft 365。 您必須在 Microsoft 365 中修改值，或修改 AD DS 中的兩個值，這兩個使用者才能出現在 Microsoft 365 中。
 
 - **mailNickname** (Exchange 別名) 
 
@@ -113,7 +113,7 @@ ms.locfileid: "50927321"
   - 屬性值在目錄中必須是唯一的。
 
     > [!NOTE]
-    > 在同步處理名稱中 ( "_" ) 會指出此屬性的原始值包含不正確字元。 如需此屬性的詳細資訊，請參閱 [Exchange alias 屬性](/powershell/module/exchange/set-mailbox)。
+    > 在同步處理名稱中 ( "_" ) 會指出此屬性的原始值包含不正確字元。 如需此屬性的詳細資訊，請參閱[Exchange alias 屬性](/powershell/module/exchange/set-mailbox)。
     >
 
 - **proxyAddresses**
@@ -122,7 +122,7 @@ ms.locfileid: "50927321"
   - 每個值的字元數上限：256
   - 屬性值不能包含空格。
   - 屬性值在目錄中必須是唯一的。
-  - 無效字元： \< \> ( ) ;，[] "'
+  - 無效字元： \< \> ( ) ;，[] "
 
     請注意，不正確字元會套用到類型分隔符號後的字元和 "："，因此允許 SMTP:User@contso.com，但 SMTP:user:M@contoso.com 不是。
 
@@ -134,16 +134,16 @@ ms.locfileid: "50927321"
   - 字元數上限：20
   - 屬性值在目錄中必須是唯一的。
   - 無效字元： [\ "|，/： \< \> + =;？ \* ']
-  - 如果使用者的 **sAMAccountName** 屬性無效，但是具有有效的 **userPrincipalName** 屬性，則會在 Microsoft 365 中建立使用者帳戶。
+  - 如果使用者具有不正確 **sAMAccountName** 屬性，但具有有效的 **userPrincipalName** 屬性，則會在 Microsoft 365 中建立使用者帳戶。
   - 如果 **sAMAccountName** 和 **userPrincipalName** 都無效，則必須更新 AD DS **userPrincipalName** 屬性。
 
 - **sn** (姓) 
 
-  - 如果屬性存在於使用者物件中，則會與 Microsoft 365 同步處理，但是 Microsoft 365 不需要或使用它。
+  - 如果屬性存在於使用者物件中，則會與 Microsoft 365 同步處理，但 Microsoft 365 不需要也不使用它。
 
 - **targetAddress**
 
-    需要 **targetAddress** 屬性 (例如，為使用者填入的 SMTP:tom@contoso.com) 必須出現在 MICROSOFT 365 GAL 中。 在協力廠商郵件遷移案例中，這需要 AD DS 的 Microsoft 365 架構擴充。 Microsoft 365 架構擴充也會新增其他有用的屬性，以管理從 AD DS 使用目錄同步處理工具填入的 Microsoft 365 物件。 例如，將會新增用以管理隱藏信箱或通訊群組的 **msExchHideFromAddressLists** 屬性。
+    **targetAddress** 屬性 (例如，為使用者填入的 SMTP:tom@contoso.com) 必須出現在 Microsoft 365 GAL 中。 在協力廠商郵件遷移案例中，這需要 AD DS 的 Microsoft 365 架構擴充。 Microsoft 365 架構擴充也會新增其他有用的屬性，以管理從 AD DS 使用目錄同步處理工具填入的 Microsoft 365 物件。 例如，將會新增用以管理隱藏信箱或通訊群組的 **msExchHideFromAddressLists** 屬性。
 
   - 字元數上限：256
   - 屬性值不能包含空格。
@@ -170,11 +170,11 @@ ms.locfileid: "50927321"
 
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. 準備 userPrincipalName 屬性
 
-Active Directory 的設計目的是讓您組織中的使用者可以使用 **sAMAccountName** 或 **userPrincipalName** 登入您的目錄。 同樣地，使用者可以使用使用者主要名稱 (其工作或學校帳戶的 UPN) 登入 Microsoft 365。 目錄同步處理嘗試使用 AD DS 中的同一個 UPN，在 Azure Active Directory 中建立新的使用者。 UPN 的格式就像電子郵件地址。
+Active Directory 的設計目的是讓您組織中的使用者可以使用 **sAMAccountName** 或 **userPrincipalName** 登入您的目錄。 同樣地，使用者可以使用使用者主要名稱 (UPN) 的公司或學校帳戶，登入 Microsoft 365。 目錄同步處理嘗試使用 AD DS 中的同一個 UPN，在 Azure Active Directory 中建立新的使用者。 UPN 的格式就像電子郵件地址。
 
 在 Microsoft 365 中，UPN 是用來產生電子郵件地址的預設屬性。 在 AD DS 和 Azure AD) 中取得 **userPrincipalName** (很容易，將 **proxyAddresses** 中的主要電子郵件地址設定為不同的值。 當其設定為不同值時，系統管理員和使用者可能會混淆。
 
-最好對齊這些屬性，以降低混淆。 為了符合使用 Active Directory Federation Services (AD FS) 2.0 的單一登入需求，您必須確定 Azure Active Directory 和您的 AD DS 中的 Upn 相符，且使用有效的網域命名空間。
+最好對齊這些屬性，以降低混淆。 為了符合使用 Active Directory Federation Services (AD FS) 2.0 的單一登入需求，您必須確定 Azure Active Directory 中的 upn 和您的 AD DS 相符，且使用有效的網域命名空間。
 
 ## <a name="4-add-an-alternative-upn-suffix-to-ad-ds"></a>4. 將替代的 UPN 尾碼新增至 AD DS
 
@@ -182,9 +182,9 @@ Active Directory 的設計目的是讓您組織中的使用者可以使用 **sAM
 
 如需如何將其他 UPN 尾碼新增至 Active Directory 的詳細資訊，請參閱 [Prepare for 目錄同步]( https://go.microsoft.com/fwlink/p/?LinkId=525430)處理。
 
-## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. 搭配使用 Microsoft 365 UPN 的 AD DS UPN
+## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. 與 Microsoft 365 UPN 搭配使用的 AD DS UPN
 
-如果您已設定目錄同步處理，則 Microsoft 365 的使用者 UPN 可能不會符合您在 AD DS 中定義的使用者 AD DS UPN。 若使用者在網域經過驗證之前即獲得指派授權，就可能發生這種情形。 若要修正此問題，請使用 [PowerShell 修正重複的 upn](https://go.microsoft.com/fwlink/p/?LinkId=396730) 以更新使用者的 upn，以確保 MICROSOFT 365 UPN 符合公司使用者名稱和網域。 若要在 AD DS 中更新 UPN，並想要與 Azure Active Directory 身分識別同步，您必須先在 Microsoft 365 中移除使用者的授權，然後才能在 AD DS 中進行變更。
+如果您已設定目錄同步處理，則使用者的 Microsoft 365 upn 可能不符合您 ad ds 中所定義的使用者 ad ds upn。 若使用者在網域經過驗證之前即獲得指派授權，就可能發生這種情形。 若要修正此問題，請使用[PowerShell 修正重複的 upn](https://go.microsoft.com/fwlink/p/?LinkId=396730)以更新使用者的 upn，以確保 Microsoft 365 UPN 符合公司使用者名稱和網域。 若要在 ad ds 中更新 UPN，並想要與 Azure Active Directory 身分識別同步，您必須先在 Microsoft 365 中移除使用者的授權，然後再進行 AD DS 中的變更。
 
 另請參閱 how [to prepare a 不可路由的網域 (例如，directory 同步處理的 local domain) ](prepare-a-non-routable-domain-for-directory-synchronization.md)。
 

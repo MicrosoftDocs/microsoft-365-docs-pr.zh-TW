@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: f48b6e8b43f65a6ee919095ea299bd80c81e01c9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687249"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259508"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>開始使用「內幕風險管理」設定
 
@@ -83,7 +83,7 @@ ms.locfileid: "51687249"
 請確認您計畫在「內幕風險管理」中報告的 Windows 10 裝置符合這些需求。
 
 1. 必須執行 Windows 10 x64 組建1809或更新版本，且必須已安裝[Windows 10 更新 (OS 組建 17763.1075) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)從二月份20，2020。
-2. 所有裝置都必須[加入 Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join) 或加入混合式 Azure AD。
+2. 用來登入 Windows 10 裝置的使用者帳戶必須是作用中 Azure Active Directory (AAD) 帳戶。 Windows 10 裝置可能是[AAD](/azure/active-directory/devices/concept-azure-ad-join)、混合式 AAD，或已加入 Active Directory 或已加入 aad 的 Active Directory。
 3. 在端點裝置上安裝 Microsoft Chromium Edge browser，以監視雲端上傳活動的動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
 #### <a name="step-2-onboarding-devices"></a>步驟2：上架裝置
@@ -425,7 +425,7 @@ ms.locfileid: "51687249"
 
 完成下列步驟以共用 Power Automate 流程：
 
-1. 在 [Microsoft 365 規範中心](htttps://compliance.microsoft.com)] 中，移至 [**內幕風險管理**]，然後選取 [**內部**  >  **Power Automate 流程**]。 您也可以透過選擇 [**自動化** Power Automate 流程] 來存取「**案例**」或「**使用者」儀表板** 頁面  >  ****。
+1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至 [**內幕風險管理**]，然後選取 [**內部**  >  **Power Automate 流程**]。 您也可以透過選擇 [**自動化** Power Automate 流程] 來存取「**案例**」或「**使用者」儀表板** 頁面  >  ****。
 2. 在 [ **Power Automate 流程**] 頁面上，選取 [**我的流程**] 或 [**小組流程**] 索引標籤。
 3. 選取 [要共用的流程]，然後從 [流程選項] 功能表中選取 [ **共用** ]。
 4. 在 [流程共用] 頁面上，輸入您要新增為流程的擁有者的使用者或群組名稱。
@@ -439,7 +439,7 @@ ms.locfileid: "51687249"
 
 完成下列步驟以編輯 Power Automate 流程：
 
-1. 在 [Microsoft 365 規範中心](htttps://compliance.microsoft.com)] 中，移至 [**內幕風險管理**]，然後選取 [**內部**  >  **Power Automate 流程**]。 您也可以透過選擇 [**自動化** Power Automate 流程] 來存取「**案例**」或「**使用者」儀表板** 頁面  >  ****。
+1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至 [**內幕風險管理**]，然後選取 [**內部**  >  **Power Automate 流程**]。 您也可以透過選擇 [**自動化** Power Automate 流程] 來存取「**案例**」或「**使用者」儀表板** 頁面  >  ****。
 2. 在 [ **Power Automate 流程**] 頁面上，選取要編輯的流程，然後從 [流程式控制制] 功能表中選取 [**編輯**]。
 3. 選取 **省略號**  >  **設定** 以變更流程元件設定或 **省略號**  >  **刪除**，以刪除流程元件。
 4. 選取 [ **儲存** ]，然後按一下 [ **關閉** ] 完成流程的編輯。
@@ -452,7 +452,7 @@ ms.locfileid: "51687249"
 
 完成下列步驟以刪除 Power Automate 流程：
 
-1. 在 [Microsoft 365 規範中心](htttps://compliance.microsoft.com)] 中，移至 [**內幕風險管理**]，然後選取 [**內部**  >  **Power Automate 流程**]。 您也可以透過選擇 [**自動化** Power Automate 流程] 來存取「**案例**」或「**使用者」儀表板** 頁面  >  ****。
+1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至 [**內幕風險管理**]，然後選取 [**內部**  >  **Power Automate 流程**]。 您也可以透過選擇 [**自動化** Power Automate 流程] 來存取「**案例**」或「**使用者」儀表板** 頁面  >  ****。
 2. 在 [ **Power Automate 流程**] 頁面上，選取要刪除的流程，然後從 [流程式控制制] 功能表中選取 [**刪除**]。
 3. 在 [刪除確認] 對話方塊中，選取 [ **刪除** ] 以移除流程，或選取 [ **取消** ] 結束刪除動作。
 
@@ -470,7 +470,7 @@ ms.locfileid: "51687249"
 
 為案例啟用 Microsoft Teams 支援，快速且易於設定。 若要啟用「內部測試人員風險管理」 Microsoft Teams，請完成下列步驟：
 
-1. 在 [Microsoft 365 規範中心](htttps://compliance.microsoft.com)] 中，移至「**內幕人員風險管理**  >  **內部人員風險設定**」。
+1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至「**內幕人員風險管理**  >  **內部人員風險設定**」。
 2. 選取 [ **Microsoft Teams** ] 索引標籤。
 3. 啟用內部 Microsoft Teams 整合，以進行內部的風險管理。
 4. 選取 [ **儲存** ] 設定並結束。
@@ -485,7 +485,7 @@ ms.locfileid: "51687249"
 
 若要為案例建立小組，當您直接在現有案例中工作時，您會使用 [建立 Microsoft 小組] 控制項。 完成下列步驟以建立新的團隊：
 
-1. 在 [Microsoft 365 規範中心](htttps://compliance.microsoft.com)] 中，移至 [**內幕風險管理**  >  **案例**]，然後選取現有的案例。
+1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)] 中，移至 [**內幕風險管理**  >  **案例**]，然後選取現有的案例。
 2. 在 [案例動作] 功能表上，選取 [ **建立 Microsoft 團隊**]。
 3. 在 [**小組名稱**] 欄位中，輸入新 Microsoft Teams 小組的名稱。
 4. 選取 [ **建立 Microsoft 團隊** ]，然後選取 [ **關閉**]。
@@ -516,7 +516,7 @@ ms.locfileid: "51687249"
 若要啟用「內部使用者風險分析」，您必須是「內部使用者風險管理」、「內幕人員風險管理」管理員或「Microsoft 365 全域系統管理員」角色群組的成員。
 完成下列步驟以啟用「內幕風險分析」：
 
-1. 在 [Microsoft 365 規範中心](htttps://compliance.microsoft.com)，移至「**內幕人員風險管理**」。
+1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)，移至「**內幕人員風險管理**」。
 2. 在 [有問必答風險管理 **概述**] 索引標籤上 **，選取 [在** 您的組織卡片中掃描上的 **會員風險**]。這會開啟組織的分析掃描。 您也可以流覽至「**內幕人員風險設定**  >  **分析**」，並啟用 **掃描租使用者的使用者活動，以識別潛在的內幕電腦風險**，您也可以在組織中開啟掃描。
 3. 在 [ **分析詳細資料** ] 窗格中，選取 [ **執行掃描** ]，以啟動組織的掃描。 分析掃描結果最多可能需要24小時的時間，才能獲得深入查看報告。
 
@@ -546,6 +546,6 @@ ms.locfileid: "51687249"
 
 完成下列步驟以關閉「內幕風險分析」：
 
-1. 在 [Microsoft 365 規範中心](htttps://compliance.microsoft.com)，移至「**內幕人員風險管理**」。
+1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)，移至「**內幕人員風險管理**」。
 2. 選取「**內幕人員風險設定**  >  **分析**」頁面。
 3. 在 [ **分析** ] 頁面上，關閉 **掃描租使用者的使用者活動，以識別潛在的內幕電腦風險**。

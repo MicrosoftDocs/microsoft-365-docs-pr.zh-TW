@@ -16,33 +16,33 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: d14149f2066ac98f5abdaaa1d410e920d6267543
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b2e4c33363624a6c6b30525be8c02f47ab845b89
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245861"
+ms.locfileid: "52259520"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中設定自動化調查和回應功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365Defender 包含強大的[自動化調查和回應功能](m365d-autoir.md)，可節約您的安全性運作小組許多時間和精力。 透過 [自我修復](m365d-autoir.md#how-automated-investigation-and-self-healing-works)，這些功能會模仿安全性分析員調查和回應威脅的採取步驟，只會加快，而且可擴充規模的能力。 本文說明如何在 Microsoft 365 Defender 中設定自動調查和回應。
+Microsoft 365Defender 包含強大的[自動化調查和回應功能](m365d-autoir.md)，可節約您的安全性運作小組許多時間和精力。 透過 [自我修復](m365d-autoir.md#how-automated-investigation-and-self-healing-works)，這些功能會模仿安全性分析員調查和回應威脅的採取步驟，只會加快，而且可擴充規模的能力。 
 
-若要設定自動調查和回應功能，請遵循下列步驟：
+本文說明如何使用下列步驟，在 Microsoft 365 Defender 中設定自動調查和回應：
 
 1. [複查必要條件](#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
 2. [複查或變更裝置群組的自動化層級](#review-or-change-the-automation-level-for-device-groups)。
 3. [在 Office 365 中檢查您的安全性和警示原則](#review-your-security-and-alert-policies-in-office-365)。
 4. [請確定已開啟 Microsoft 365 Defender](#make-sure-microsoft-365-defender-is-turned-on)。
 
-當您全部設定後，請在重要訊息 [中心中查看和管理動作](m365d-autoir-actions.md)。
+然後，在您完成所有設定後，您就可以 [在「行動中心」中查看及管理動作](m365d-autoir-actions.md)。
 
 ## <a name="prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中自動調查和回應的必要條件
 
 |需求 |詳細資料 |
 |:----|:----|
-|訂閱需求 |其中一項訂閱： <br/>-Microsoft 365 E5<br/>-Microsoft 365 A5<br/>-Microsoft 365 E5 安全性<br/>-Microsoft 365 A5 安全性<br/>-Office 365 e5 加 Enterprise Mobility + Security e5 加上 Windows e5<p> 請參閱[Microsoft 365 Defender 授權需求](./prerequisites.md#licensing-requirements)。|
+|訂閱需求 |其中一項訂閱： <br/>-Microsoft 365 E5<br/>-Microsoft 365 A5<br/>-Microsoft 365 E3 與 Microsoft 365 E5 安全性附加元件<br/>-Microsoft 365 包含 Microsoft 365 A5 安全性附加元件的 A3<br/>-Office 365 e5 加 Enterprise Mobility + Security e5 加上 Windows e5<p> 請參閱[Microsoft 365 Defender 授權需求](./prerequisites.md#licensing-requirements)。|
 |網路需求 |- [Microsoft Defender](/azure-advanced-threat-protection/what-is-atp) 啟用身分識別<br/>- 設定[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)<br/>- [Microsoft Defender 用於身分識別整合](/cloud-app-security/mdi-integration) |
 |Windows 電腦需求 |- Windows 10，安裝版本 1709 或更新版本 (請參閱 [Windows 10 版本資訊](/windows/release-information/)) <br/>-已設定下列威脅防護服務：<br/>- [Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)<br/>- [Microsoft Defender 防毒軟體](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
 |電子郵件內容和 Office 檔案的保護 |設定[Office 365 的 Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
@@ -50,7 +50,7 @@ Microsoft 365Defender 包含強大的[自動化調查和回應功能](m365d-auto
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>查看或變更裝置群組的自動化層級
 
-是否要執行自動調查，以及是否自動採取或只在您的裝置核准時採取補救措施，取決於特定設定，例如組織的裝置群組原則。 檢查您的裝置群組原則的自動化層級集。
+是否要執行自動調查，以及是否自動採取或只在您的裝置核准時採取補救措施，取決於特定設定，例如組織的裝置群組原則。 針對您的裝置群組原則，複查設定的自動化層級。
 
 1. 移至 Microsoft Defender 資訊安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
 2. 移至 **設定**  >  **許可權**  >  **裝置群組**。
@@ -60,19 +60,19 @@ Microsoft 365Defender 包含強大的[自動化調查和回應功能](m365d-auto
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>在 Office 365 中檢查您的安全性和警示原則
 
-Microsoft 提供內建的 [警示原則](../../compliance/alert-policies.md) ，可協助識別特定風險。 這些風險包括 Exchange 系統管理許可權濫用、惡意程式碼活動、潛在的外部和內部威脅，以及資訊控管風險。 某些提醒可[在 Office 365 中觸發自動調查和回應](../office-365-security/office-365-air.md)。 請確定已正確設定您[的 Microsoft Defender Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)功能。
+Microsoft 提供內建的 [警示原則](../../compliance/alert-policies.md) ，可協助識別特定風險。 這些風險包括 Exchange 系統管理許可權濫用、惡意程式碼活動、潛在的外部和內部威脅，以及資訊控管風險。 某些提醒可[在 Office 365 中觸發自動調查和回應](../office-365-security/office-365-air.md)。 請確定已正確設定[Office 365 的 Defender](../office-365-security/defender-for-office-365.md)功能。
 
-雖然某些警示和安全性原則可以觸發自動調查，但電子郵件和內容不會自動採取任何修正動作。 相反地，電子郵件和電子郵件內容等候的所有修正動作，都是由您的安全操作小組在重要訊息 [中心](m365d-action-center.md)進行核准。
+雖然某些警示和安全性原則可以觸發自動調查，但 *電子郵件和內容不會自動採取任何修正動作*。 相反地，電子郵件和電子郵件內容等候的所有修正動作，都是由您的安全操作小組在重要訊息 [中心](m365d-action-center.md)進行核准。
 
 Office 365 中的安全性設定可協助保護電子郵件和內容。 若要查看或變更這些設定，請遵循 [防範威脅](../office-365-security/protect-against-threats.md)的指導方針。
 
-1. 在 Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) 中，移至 [**原則**] [  >  **威脅防護**]。
+1. 在 Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) 中，移至 [原則] **& 規則**  >  **威脅原則**。
 2. 請確定已設定下列所有原則。 若要取得説明和建議，請參閱 [防止威脅](/microsoft-365/security/office-365-security/protect-against-threats)。
-   - [ (Office 365 的反惡意程式碼) ](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection)
-   - [Office 365 的 Defender 中的反網路釣魚) ](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
-   - [ (Office 365 的安全附件) ](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
-   - [ (Office 365 的安全連結) ](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
-   - [反垃圾郵件 (Office 365) ](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection)
+   - [反惡意程式碼) ](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection)
+   - [防網路釣魚) ](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [安全附件](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
+   - [安全連結](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
+   - [反垃圾郵件](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection)
 3. 請確定已開啟[SharePoint、OneDrive 和 Microsoft Teams 的 Microsoft Defender Office 365](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) 。
 4. 請確定 [電子郵件保護的零小時自動清除](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) 有效。
 5.  (此步驟是選用的。 ) 檢查 Microsoft 365 規範中心 () 中的[Office 365 警示原則](../../compliance/alert-policies.md)。 [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) 「威脅管理」類別中有許多預設的警示原則。 其中一些警示可以觸發自動調查和回應。 若要深入瞭解，請參閱 [預設警示原則](../../compliance/alert-policies.md#default-alert-policies)。
@@ -81,10 +81,10 @@ Office 365 中的安全性設定可協助保護電子郵件和內容。 若要�
 
 :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP 開啟":::
 
-1. 請移至 Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) 並登入。
+1.  () 登入 Microsoft 365 的安全性中心 [https://security.microsoft.com](https://security.microsoft.com) 。
 2. 在功能窗格中，尋找 **事件**、 **動作中心** 及 **搜尋**，如上圖所示。
-   - 如果您看到 **事件**、**動作中心** 及 **搜尋**，Microsoft 365 Defender 已開啟。 請參閱本文中 () [的裝置群組，查看或變更其自動化層級](#review-or-change-the-automation-level-for-device-groups) 。
-   - 如果您 *沒有* 看到 [**事件**]、[**動作中心**] 或 [**搜尋**]，則 Microsoft 365 Defender 可能並未開啟。 在此情況下，請繼續 [前往) 的「動作中心](m365d-action-center.md) 」。
+   - 如果您看到 **事件**、**動作中心** 及 **搜尋**，Microsoft 365 Defender 已開啟。 請參閱本文的「 [複查或變更裝置群組的自動化層級](#review-or-change-the-automation-level-for-device-groups) 」一節。
+   - 如果您 *沒有* 看到 [**事件**]、[**動作中心**] 或 [**搜尋**]，Microsoft 365 Defender 可能並未開啟。 在此情況下，請 [流覽「行動中心](m365d-action-center.md) 」) 。
 3. 在功能窗格中，選擇 [**設定**  >  **Microsoft 365 Defender**]。 確認已開啟 Microsoft 365 Defender。 
 
 > [!TIP]

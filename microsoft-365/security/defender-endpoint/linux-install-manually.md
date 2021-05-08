@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c13138f3d80a95dbda3a899507f662c081831d94
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929082"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259676"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>手動在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -166,10 +166,10 @@ ms.locfileid: "51929082"
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
     例如，如果您選擇 [ *生產* ] 通道：
-    
+
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    ```   
+    ```
 
 - `gpg`若尚未安裝套件，請安裝：
 
@@ -266,13 +266,13 @@ ms.locfileid: "51929082"
 
 ## <a name="download-the-onboarding-package"></a>下載上架套件
 
-從 Microsoft Defender 安全中心下載上架套件：
+從 Microsoft Defender 資訊安全中心下載上架套件：
 
-1. 在 Microsoft Defender Security Center 中，移至 [ **設定] > 裝置管理 > 上架**]。
+1. 在 Microsoft Defender 資訊安全中心中，移至 **設定 > 裝置管理 > 上架**。
 2. 在第一個下拉式功能表中，選取 [ **Linux 伺服器** ] 做為作業系統。 在第二個下拉式功能表中，選取 [ **本機腳本 (，最多10個裝置)** 做為部署方法。
 3. 選取 [ **下載上架] 套件**。 將檔案儲存為 WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft Defender 安全中心螢幕擷取畫面](images/atp-portal-onboarding-linux.png)
+    ![Microsoft Defender 資訊安全中心螢幕擷取畫面](images/atp-portal-onboarding-linux.png)
 
 4. 在命令提示字元中，確認您有檔案。
     解壓縮封存的內容：
@@ -341,7 +341,7 @@ ms.locfileid: "51929082"
     - 開啟終端視窗。 複製並執行下列命令：
 
         ``` bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
     - 檔案應該已被 Linux 上的 Defender for Endpoint 隔離。 使用下列命令列出所有偵測到的威脅：

@@ -1,5 +1,5 @@
 ---
-title: Admin center 中的 Microsoft 365 報告-Yammer 活動報告
+title: Microsoft 365系統管理中心的報告-Yammer 活動報告
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,40 +14,39 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
-description: 取得 Yammer 活動報告，並深入瞭解使用 Yammer 發佈、贊或讀取郵件的使用者人數。
-ms.openlocfilehash: 636e5fae9a71fc819a032743e06127dace25f0a4
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 取得 Yammer 活動報告，並進一步瞭解使用 Yammer 張貼或讀取郵件的使用者人數。
+ms.openlocfilehash: 49be460141c419355af1a42d1cc0f93275700f2d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579491"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244065"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Admin center 中的 Microsoft 365 報告-Yammer 活動報告
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365系統管理中心的報告-Yammer 活動報告
 
-如 Microsoft 365 admin，「 **報告** 」儀表板會顯示您組織內產品使用狀況的資料。 請參閱系統 [管理中心的活動報告](activity-reports.md)。 透過 **Yammer 活動報告**，您可以查看使用 yammer 發佈的獨特使用者人數，例如或讀取郵件，以及整個組織產生的活動數量，以瞭解您的組織對 yammer 的參與程度。 
+Microsoft 365 系統管理員，「**報告**」儀表板會顯示您組織內產品使用狀況的資料。 請參閱系統 [管理中心的活動報告](activity-reports.md)。 透過「 **Yammer 活動」報告**，您可以透過查看使用 Yammer 張貼的唯一使用者數目，例如或讀取郵件，以及整個組織產生的活動數量，瞭解 Yammer 組織的服務使用程度。 
   
 > [!NOTE]
-> 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。  
+> 您必須是全域系統管理員、全域讀取者或報告讀取者 Microsoft 365 或 Exchange、SharePoint、Teams 服務、Teams 通訊或商務用 Skype 管理員查看報告。  
  
-## <a name="how-do-i-get-to-the-yammer-activity-report"></a>如何到達 Yammer 活動報告？
+## <a name="how-do-i-get-to-the-yammer-activity-report"></a>如何取得 Yammer 活動報告？
 
 1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。 
-2. 在 [儀表板] 主頁上，按一下 Yammer 卡片上的 [ **View more** ] 按鈕。
+2. 在 [儀表板] 主頁上，按一下 [Yammer 卡片上的 [ **View more** ] 按鈕。
 
   
 ## <a name="interpret-the-yammer-activity-report"></a>解讀 Yammer 活動報告
 
-您可以選擇 [ **活動** ] 索引標籤，以查看 Yammer 報告中的活動。<br/>![Microsoft 365 報告-Microsoft Yammer 活動報告。](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
+您可以選擇 [**活動**] 索引標籤，以查看 Yammer 報告中的活動。<br/>![Microsoft 365 報告-Microsoft Yammer 活動報告。](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
 
 選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![Yammer 活動報告-選擇欄](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
-您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
+您也可以選取 [**匯出**] 連結，將報表資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
   
 |項目|描述|
 |:-----|:-----|

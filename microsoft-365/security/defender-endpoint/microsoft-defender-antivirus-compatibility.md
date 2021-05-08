@@ -11,17 +11,17 @@ localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: tewchen, pahuijbr, shwjha
+ms.reviewer: tewchen, pahuijbr
 ms.topic: article
 manager: dansimp
 ms.technology: mde
-ms.date: 05/05/2021
-ms.openlocfilehash: 99ed714939161347dea71f1cbd53a56c628ce0a1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/06/2021
+ms.openlocfilehash: e3ec35e777469fec3cda762f7e670490c0963f8d
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246486"
+ms.locfileid: "52259688"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender 防毒軟體相容性
 
@@ -31,9 +31,15 @@ ms.locfileid: "52246486"
 
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
-## <a name="overview"></a>概觀
+## <a name="summary"></a>摘要
 
-Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的端點和裝置上。 但是當使用另一個 (非 Microsoft) 防毒軟體/反惡意軟體解決方案時，會發生什麼事？ 這取決於您是否要將 [Microsoft Defender 用於端點](microsoft-defender-endpoint.md) 搭配防防毒保護使用。
+Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的端點和裝置上。 但是當使用另一個 (非 Microsoft) 防毒軟體/反惡意軟體解決方案時，會發生什麼事？ 這取決於您是否要將 [Microsoft Defender 用於端點](microsoft-defender-endpoint.md) 搭配防防毒保護使用。 本文說明當端點架至 Microsoft Defender for Endpoint 時，防毒軟體/反惡意程式碼解決方案會發生什麼情況。
+
+## <a name="why-defender-for-endpoint-matters"></a>為何要將 Defender 用於端點的重要事項
+
+即使您使用非 Microsoft 防病毒/反惡意程式碼解決方案，也請考慮將端點上架至 [Defender]。 在大多數情況下，當您將裝置上架到 Defender for Endpoint 時，您可以使用 Microsoft Defender 防毒軟體與非 Microsoft 防病毒解決方案搭配使用，以新增保護功能。 例如，您可以[在封鎖模式中使用 EDR](edr-in-block-mode.md)，它會封鎖和 remediates 您的主要防病毒解決方案可能錯過的惡意專案。 
+
+以下為運作方式：
 
 - 如果您組織的用戶端裝置受到非 Microsoft 防病毒/antimwalware 解決方案的保護，當這些裝置架至 Defender for Endpoint 時，Microsoft Defender 防毒軟體會自動進入被動模式。 在此情況下，會發生威脅偵測，但 Microsoft Defender 防毒軟體未修正即時保護和威脅。 **請注意**：此特殊案例不適用於執行 Windows Server 的端點。
 
@@ -48,22 +54,22 @@ Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的�
 
 ## <a name="antivirus-and-microsoft-defender-for-endpoint"></a>防病毒和 Microsoft Defender for Endpoint
 
-下表摘要說明當協力廠商防病毒產品一起使用或沒有 Microsoft Defender for Endpoint 時，Microsoft Defender 防毒軟體會發生什麼事。 
+下表摘要說明當非 microsoft 防毒軟體/反惡意程式碼一起使用或沒有 microsoft Defender for Endpoint 時，Microsoft Defender 防毒軟體會發生什麼事。 
 
-| Windows 版本   | 防毒軟體/反惡意軟體產品  | 用於端點註冊的 Defender | Microsoft Defender 防毒軟體狀態     |
+| Windows 版本   | 防病毒/反惡意程式碼解決方案  | 架至 <br/> Endpoint 的 Defender？ | Microsoft Defender 防毒軟體狀態     |
 |------|------|-------|-------|
 | Windows 10  | Microsoft Defender 防毒軟體 | 是  | 主動模式 | 
 | Windows 10  | Microsoft Defender 防毒軟體 | 否   | 主動模式 |
-| Windows 10  | Microsoft 未提供或開發的協力廠商產品 | 是  | 被動模式 (會自動)  |
-| Windows 10  | Microsoft 未提供或開發的協力廠商產品 | 否   | 停用模式 (會自動)     |
+| Windows 10  | 非 Microsoft 防病毒/反惡意程式碼解決方案 | 是  | 被動模式 (會自動)  |
+| Windows 10  | 非 Microsoft 防病毒/反惡意程式碼解決方案 | 否   | 停用模式 (會自動)     |
 | Windows伺服器、版本1803或更新版本 <p> Windows Server 2019 | Microsoft Defender 防毒軟體  | 是 |         主動模式  |
 | Windows伺服器、版本1803或更新版本 <p> Windows Server 2019 | Microsoft Defender 防毒軟體 | 否  | 主動模式 |
-| Windows伺服器、版本1803或更新版本 <p> Windows Server 2019 | Microsoft 未提供或開發的協力廠商產品 | 是  | Microsoft Defender 防毒軟體必須設定為被動模式 (手動) <sup> [[1](#fn1)]<sup>  | 
-| Windows伺服器、版本1803或更新版本 <p> Windows Server 2019 | Microsoft 未提供或開發的協力廠商產品 | 否  | 必須 (手動停用 Microsoft Defender 防毒軟體) <sup> [[2](#fn2)]<sup></sup>  |
+| Windows伺服器、版本1803或更新版本 <p> Windows Server 2019 | 非 Microsoft 防病毒/反惡意程式碼解決方案 | 是  | Microsoft Defender 防毒軟體必須設定為被動模式 (手動) <sup> [[1](#fn1)]<sup>  | 
+| Windows伺服器、版本1803或更新版本 <p> Windows Server 2019 | 非 Microsoft 防病毒/反惡意程式碼解決方案 | 否  | 必須 (手動停用 Microsoft Defender 防毒軟體) <sup> [[2](#fn2)]<sup></sup>  |
 | Windows Server 2016 | Microsoft Defender 防毒軟體 | 是 | 主動模式 |
 | Windows Server 2016 | Microsoft Defender 防毒軟體 | 否 | 主動模式 |
-| Windows Server 2016 | Microsoft 未提供或開發的協力廠商產品 | 是 | 必須 (手動停用 Microsoft Defender 防毒軟體) <sup> [[2](#fn2)]<sup> |
-| Windows Server 2016 | Microsoft 未提供或開發的協力廠商產品 | 否 | 必須 (手動停用 Microsoft Defender 防毒軟體) <sup> [[2](#fn2)]<sup> |
+| Windows Server 2016 | 非 Microsoft 防病毒/反惡意程式碼解決方案 | 是 | 必須 (手動停用 Microsoft Defender 防毒軟體) <sup> [[2](#fn2)]<sup> |
+| Windows Server 2016 | 非 Microsoft 防病毒/反惡意程式碼解決方案 | 否 | 必須 (手動停用 Microsoft Defender 防毒軟體) <sup> [[2](#fn2)]<sup> |
 
  (<a id="fn1">1</a>) 在 Windows Server 上，版本1803或更新版本，或是 Windows Server 2019，Microsoft Defender 防毒軟體當您安裝非 Microsoft 防病毒產品時，不會自動進入被動模式。 在這種情況下，[將 Microsoft Defender 防毒軟體設定為被動式模式](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode)，以防止在伺服器上安裝多個防病毒產品所造成的問題。 您可以使用 PowerShell、群組原則或登錄機碼，將 Microsoft Defender 防毒軟體設定為被動模式。
 
@@ -74,7 +80,7 @@ Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的�
 - 值：`1`
 
 > [!NOTE]
-> `ForcePassiveMode`Windows Server 2016 不支援登錄機碼。
+> Windows Server 2016 不支援被動模式。 登錄機 `ForcePassiveMode` 碼不適用於 Windows Server 2016。 
 
  (<a id="fn2">2</a>) 在 Windows Server 2016 上，如果您使用非 Microsoft 防病毒產品，您就無法在被動模式或主動模式中執行 Microsoft Defender 防毒軟體。 在這種情況下，請[手動停用/卸載 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016)，以防止在伺服器上安裝多個防病毒產品所造成的問題。
 
@@ -124,7 +130,6 @@ Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的�
 - 當 Microsoft Defender 防毒軟體處於被動模式時，您仍可[管理 Microsoft Defender 防毒軟體的更新](manage-updates-baselines-microsoft-defender-antivirus.md);不過，如果您的裝置有最新的非 Microsoft 防病毒產品可提供即時防護，您就無法將 Microsoft Defender 防毒軟體移入主動模式。 若要獲得最佳的安全性分層防禦和偵測 efficacy，請務必更新[Microsoft Defender 防毒軟體保護 (安全智慧更新、引擎和平臺) ](manage-updates-baselines-microsoft-defender-antivirus.md) （即使 Microsoft Defender 防毒軟體是以被動模式執行）。
 
 - 當自動停用 Microsoft Defender 防毒軟體時，如果非 Microsoft 防病毒產品所提供的保護功能到期，則可以自動重新啟用它，否則會停止提供即時防護，避免病毒、惡意程式碼或其他威脅。 自動重新啟用可協助確保在您的裝置上維護防防毒保護。 它也可讓您啟用[有限的定期掃描](limited-periodic-scanning-microsoft-defender-antivirus.md)，它會使用 Microsoft Defender 防毒軟體引擎定期檢查威脅，以及您的主要防病毒應用程式。
-
 
 > [!WARNING]
 > 請勿停用、停止或修改 Microsoft Defender 防毒軟體、Microsoft Defender for Endpoint 或 Windows 安全性應用程式所使用的任何相關服務。 此建議包括 *wscsvc*、 *SecurityHealthService*、 *MsSense*、 *感知*、 *WinDefend* 或 *MsMpEng* 服務和程式。 手動修改這些服務可能會造成裝置上的不穩定，而且可能使您的網路受到威脅。 停用、停止或修改這些服務時，也可能會在使用非 Microsoft 防病毒解決方案，以及其資訊在[Windows 安全性應用程式](microsoft-defender-security-center-antivirus.md)中的顯示方式時造成問題。

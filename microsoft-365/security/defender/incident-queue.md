@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 47d066fa20abe963f7afaa3b88cecc96fa6e87fc
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939703"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259582"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的事件優先順序
 
@@ -36,13 +36,15 @@ ms.locfileid: "51939703"
 **適用於：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 會將關聯性分析和匯總相關的警示和自動調查套用到事件中。 除了 Microsoft 365 Defender 跨整個產品套件的端對端知名度時，microsoft 365 Defender 也會針對活動，觸發唯一警示。 這種觀點可讓您的安全性分析更廣泛的攻擊案例，以協助他們更好地瞭解及處理整個組織中的複雜威脅。
+Microsoft 365Defender 會將相互關聯的分析和匯總相關的警報和自動調查套用到事件中。 Microsoft 365若 Microsoft 365 Defender 跨整個產品套件的端對端可視性，則您也會針對僅可識別為惡意的活動，觸發唯一的警示。 這種觀點可讓您的安全性分析更廣泛的攻擊案例，以協助他們更好地瞭解及處理整個組織中的複雜威脅。
 
 [ **事件] 佇列** 顯示跨裝置、使用者和信箱建立的事件集合。 可協助您設定事件優先順序及制定明智的網路安全回應決策。 
 
-您可以從事件中取得事件佇列 **& 警示 >** Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上的事件。
+您可以從事件中取得事件佇列， **& 警示 >** Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上的事件。 以下為範例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件佇列的範例":::
+
+**最新的 [事件及警示**] 區段會顯示過去24小時所收到的警示和事件數目圖表。
 
 根據預設，Microsoft 365 security center 中的事件佇列會顯示過去六個月所看到的事件。 最近的事件是在清單頂端，您可以先查看此專案。
 
@@ -74,7 +76,7 @@ Microsoft 365 Defender 會將關聯性分析和匯總相關的警示和自動調
 | 裝置群組 | 依定義的裝置群組篩選。 |
 | 調查狀態 | 依自動調查的狀態來篩選事件。  |
 | 多個類別 | 您可以選擇只查看已對應至多個類別的事件，進而可能造成更大的損毀。 |
-| 多個服務來源  | 篩選，只會查看包含不同來源之警示的事件， (Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365) 。 |
+| 多個服務來源  | 篩選，只會查看包含不同來源之警示的事件， (Microsoft defender for Endpoint，Microsoft Cloud App Security，microsoft defender for Identity，microsoft defender for Office 365) 。 |
 | 作業系統平臺 | 依作業系統限制事件佇列查看。 |
 | 服務來源 | 透過選擇特定來源，便可專注於包含來自至少一個所選來源警示的事件。 |
 | 嚴重性 | 事件的嚴重性是指它可對資產造成的影響。 嚴重性越高，影響就越大，而且通常需要最直接的注意。 |

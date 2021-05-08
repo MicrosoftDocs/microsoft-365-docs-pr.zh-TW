@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 23320d962b52e1a443d459cb6b57d444fca91592
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 477f176d523fbb458ae266cad98b07a63a10050c
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939307"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259340"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -67,8 +67,9 @@ ms.locfileid: "51939307"
     - 當標籤套用加密時，[版權管理簽發者和版權管理擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)會是上次修改檔案的帳戶。
 
     Exchange 自動套用標籤專屬限制：
-    - 不同於 Office 應用程式的手動套用標籤或自動套用標籤，Office 附件 (Word、Excel 和 PowerPoint 檔案) 和 PDF 附件也會針對您在自動套用標籤原則中指定的條件進行掃描。有相符項目時，電子郵件會套用標籤，但是附件不會。
-        - 針對這些 Office 檔案，將支援 Open XML 格式（例如 .docx 和 .xlsx），但不支援 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
+    - 不同於 Office 應用程式的手動套用標籤或自動套用標籤，PDF 附件和 office 附件 (Word、Excel 和 PowerPoint 檔案) 也會針對您在自動套用標籤原則中指定的條件進行掃描。有相符項目時，電子郵件會套用標籤，但是附件不會。
+        - 對於 PDF 檔案，如果標籤套用加密，則當您的租用戶[啟用 PDF 附件](ome-faq.yml#are-pdf-file-attachments-supported-)時，這些檔案將被加密。
+        - 對於這些 Office 檔案，支援 Open XML 格式 (如 .docx 和 .xlsx)，但不支援 Microsoft Office 97-2003 格式 (如 .doc 和 .xls)。如果標籤套用加密，則這些檔案將被加密。
     - 如果您有套用 IRM 加密的 Exchange 郵件流程規則或資料外洩防護 (DLP) 原則：當內容由這些規則或原則和自動套用標籤原則識別時，則會套用標籤。 如果該標籤套用加密，則會忽略 Exchange 郵件流程規則或 DLP 原則的 IRM 設定。 不過，如果該標籤並未套用加密，除了標籤以外，還會套用郵件流程規則或 DLP 原則的 IRM 設定。
     - 當有一個相符項目使用自動套用標籤時，具有 IRM 加密而沒有標籤的電子郵件，將會由具有任何加密設定的標籤取代。
     - 當有項目與您的自動套用標籤條件相符時，內送電子郵件會套用標籤：
@@ -130,7 +131,7 @@ ms.locfileid: "51939307"
 
 ![在 Office 應用程式中自動套用標籤的敏感資訊類型](../media/sensitivity-labels-sensitive-info-types.png)
 
-同樣的，當您在設定 DLP 原則時，藉由改變執行個體計數及比對精確度，您可以精簡您的條件。 例如：
+同樣的，當您在設定 DLP 原則時，藉由改變執行個體計數及比對精確度，您可以精簡您的條件。例如：
 
 ![執行比對精確度和個體計數的選項](../media/sensitivity-labels-instance-count-match-accuracy.png)
 
@@ -166,21 +167,21 @@ ms.locfileid: "51939307"
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>建議使用者套用敏感度標籤
 
-您可以視需要建議使用者套用標籤。 如果您使用此選項，您的使用者就可以接受分類和任何相關的保護，或者當標籤不適合內容時，可以取消建議。
+您可以視需要建議使用者套用標籤。如果您使用此選項，您的使用者就可以接受分類和任何相關的保護，或者當標籤不適合內容時，可以取消建議。
 
 ![向使用者建議敏感度標籤的選項](../media/Sensitivity-labels-Recommended-label-option.png)
 
-以下舉例說明當您設定條件而將套用標籤作為建議動作 (含自訂原則提示) 時，來自 Azure 資訊保護整合標籤用戶端的提示。 您可以選擇要在原則提示中顯示的文字。
+以下舉例說明當您設定條件而將套用標籤作為建議動作 (含自訂原則提示) 時，來自 Azure 資訊保護整合標籤用戶端的提示。您可以選擇要在原則提示中顯示的文字。
 
 ![套用建議標籤的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ### <a name="when-automatic-or-recommended-labels-are-applied"></a>當套用自動或建議標籤時
 
-是否會在 Office 應用程式中實作自動化的建議標籤功能，取決於您使用的是 Office 內建的標籤功能，還是 Azure 資訊保護的整合標籤用戶端。 不過，在這兩種情況下：
+是否會在 Office 應用程式中實作自動化的建議標籤功能，取決於您使用的是 Office 內建的標籤功能，還是 Azure 資訊保護的整合標籤用戶端。然而，在這兩種情况下：
 
 - 如果文件或電子郵件之前已手動套用標籤，或之前已使用較高敏感度自動套用標籤，則無法使用自動套用標籤功能。請切記，您只能將單一敏感度標籤套用到文件或電子郵件 (單一保留標籤也是如此)。
 
-- 您無法針對之前已加上較高敏感性標籤的文件或電子郵件使用建議標籤。 如果內容已加上較高敏感性標籤，使用者將不會看到含有建議和原則提示的提示。
+- 您無法針對之前已加上較高敏感性標籤的文件或電子郵件使用建議標籤。如果內容已加上較高敏感性標籤，使用者將不會看到含有建議和原則提示的提示。
 
 專用於內建標籤：
 

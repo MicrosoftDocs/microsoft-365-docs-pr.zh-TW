@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 2b2ce9670e9f297c89ed70e1b37c17aa59b80844
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9e7ab359297ef1402fa64bc754591a4be3140af0
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687269"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269501"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -74,7 +74,10 @@ ms.locfileid: "51687269"
 
    針對 **Teams 頻道訊息**，會包含來自標準頻道的訊息，但不會包含 [私人頻道](/microsoftteams/private-channels)。 目前，保留原則尚未支援 [私人頻道]。
 
-   根據預設，[所有小組和所有使用者都處於選中狀態](#a-policy-that-applies-to-entire-locations)，但您可以透過選取 [**[選擇]** 和 **[排除]** 選項](#a-policy-with-specific-inclusions-or-exclusions)對其進行優化。
+   根據預設，[所有小組和所有使用者都處於選中狀態](#a-policy-that-applies-to-entire-locations)，但您可以透過選取 [**[選擇]** 和 **[排除]** 選項](#a-policy-with-specific-inclusions-or-exclusions)對其進行優化。 不過，在變更預設值之前，請注意保留原則的下列結果，該保留原則在已針對包含或排除項進行設定時，會刪除郵件：
+    
+    - 對於群組聊天，因為訊息複本會儲存於聊天中包含的每位使用者的信箱中，所以系統會繼續從未指派此原則的使用者於「電子文件探索」結果中退回郵件複本。
+    - 對於未指派此原則的使用者，已刪除的郵件將會回到其 Teams 搜尋結果中，但因為從指派給使用者之原則中已永久刪除，所以不會顯示郵件內容。
 
 4. 在精靈的頁面上，如需 **決定是否要保留內容、刪除內容，或兩者皆可**，請指定保留及刪除內容的設定選項。
 
@@ -82,7 +85,9 @@ ms.locfileid: "51687269"
 
 5. 完成精靈以儲存您的設定。
 
-如需 Teams 保留原則的詳細資訊，請參閱在 Teams 文件中的 [Microsoft Teams 的保留原則](/microsoftteams/retention-policies)。
+如需何時使用 Teams 保留原則的高層級資訊，請參閱在 Teams 文件中的 [Microsoft Teams 的保留原則](/microsoftteams/retention-policies)。
+
+如需 Teams 保留運作方式的技術詳細資料，包括哪些郵件元素支援保留和時間資訊及逐步範例，請參閱[了解 Microsoft Teams 的保留](retention-policies-teams.md)。
 
 #### <a name="known-configuration-issues"></a>已知的設定問題
 
@@ -250,9 +255,9 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 範例：
 
-- SharePoint：如果您在將網站集合中的項目在上次修改后保留七年，而該網站集合中的某文件已有六年未曾修改，如果後續仍未修改該文件，則只會再保留該文件一年。 如果該文件重新編輯，則其存留期將會從新的前次修改日期起算，因而會再保留七年。
+- SharePoint：如果您想要將網站集合中的項目在此內容前次修改後保留七年，而且該網站集合中的某文件已有六年未曾修改，則若該文件後續仍未修改，則只會再保留一年。如果該文件重新編輯，則其存留期將會從新的前次修改日期算起，因而會再保留七年。
 
-- Exchange：同樣地，如果您要讓信箱中的項目保留七年，而六年前已傳送過某封郵件，該郵件則只會再保留一年。 若為 Exchange 項目，時限是以收到內送電子郵件的日期，或傳送外寄電子郵件的日期為基礎。 根據前次修改時間保留項目只會套用到 OneDrive 和 SharePoint 中的網站內容。
+- Exchange：如果您想要將信箱中的項目保留七年，而且六年前已傳送某郵件，則該郵件只會保留一年。對於 Exchange 項目，時間會根據接收電子郵件或寄出電子郵件的日期。根據前次修改時間保留項目只會套用到 OneDrive 和 SharePoint 中的網站內容。
 
 在保留期間結束時，您會選擇是否要永久刪除內容：
 
@@ -264,7 +269,7 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 在這兩種情況下，如果您的保留原則刪除項目，請務必了解，文件刪除原則所指定的期限並不是從指派原則的時間算起，而是從建立或修改項目的時間算起。
 
-因此，在第一次指派保留原則之前，尤其是在該原則删除項目時，請首先考慮現有內容的期限以及該原則可能對該內容產生的影響。 您也可以在指派新原則前先與使用者溝通，讓他們有足夠的時間可評估可能的影響。
+因此，在第一次指派保留原則之前，尤其是在該原則删除項目時，請首先考慮現有內容的期限以及該原則可能對該內容產生的影響。您也可以在指派新原則前先與使用者溝通，讓他們有足夠的時間來評估可能的影響。
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>套用到整個組織的原則
 
@@ -272,7 +277,7 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 將保留原則套用至整個位置的任何組合時，原則可以包含的收件者、網站、帳戶、群組等的數量沒有限制。
 
-例如，如果原則包含所有 Exchange 電子郵件和所有 SharePoint 網站，無論有多少個網站和收件者都會全部包含。 而對於 Exchange，在套用原則後建立的任何新信箱都會自動繼承原則。
+例如，如果原則包含所有 Exchange 電子郵件和所有 SharePoint 網站，無論有多少個網站和收件者都會全部包含。而對於 Exchange，在套用原則後建立的任何新信箱都會自動繼承原則。
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>具有特定包含或排除的原則
 
