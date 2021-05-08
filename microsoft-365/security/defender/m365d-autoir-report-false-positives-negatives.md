@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft 365 Defender 中處理空氣中的誤報或漏報
-description: Microsoft 365 Defender 中的 AIR 是否已錯過或錯誤地偵測到什麼？ 瞭解如何將誤報或錯誤否定提交給 Microsoft 進行分析。
+title: 在 Microsoft 365 Defender 中處理空中的誤報或漏報
+description: Microsoft 365 Defender 中的 AIR 是否已錯過或錯誤地偵測到什麼專案？ 瞭解如何將誤報或錯誤否定提交給 Microsoft 進行分析。
 keywords: 自動化，調查，警示，修正，誤報，false 負數
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f57e68ba88879ed78170e6348ecdbce4db82b668
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 727ca529dc1a16af778e01a08c9adcfe42b9b974
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592057"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245465"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>在自動化調查和回應功能中處理誤報/負片
 
@@ -35,7 +35,7 @@ ms.locfileid: "51592057"
 **適用於：**
 - Microsoft 365 Defender
 
-任何威脅防護解決方案都會偶爾發生誤報/負片錯誤。 如果 Microsoft 365 Defender 中的 [自動調查和回應功能](m365d-autoir.md) 未接或錯誤地偵測到某項，則您的安全作業小組可以採取下列步驟：
+任何威脅防護解決方案都會偶爾發生誤報/負片錯誤。 如果 Microsoft 365 Defender 中的[自動化調查和回應功能](m365d-autoir.md)未接或錯誤地偵測到某項，您的安全性作業小組可以採取下列步驟：
 
 - [向 Microsoft 報告誤報/負數](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - 視需要[調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring) () ;和 
@@ -54,7 +54,7 @@ ms.locfileid: "51592057"
 
 |案例 |服務 |處理方式 |
 |--------|--------|--------|
-|-由合法使用所觸發的警示 <br/>-警示不准確    |[Microsoft Cloud App Security](/cloud-app-security)<br/> 或 <br/>[Azure 高級威脅偵測](/azure/security/fundamentals/threat-detection)         |[在雲端應用程式安全性入口網站中管理提醒](/cloud-app-security/managing-alerts)         |
+|-由合法使用所觸發的警示 <br/>-警示不准確    |[Microsoft 雲端 App 安全性](/cloud-app-security)<br/> 或 <br/>[Azure 高級威脅偵測](/azure/security/fundamentals/threat-detection)         |[在雲端 App 安全性入口網站中管理提醒](/cloud-app-security/managing-alerts)         |
 |檔案、IP 位址、URL 或網域在裝置上視為惡意程式碼，即使它是安全的|[適用於端點的 Microsoft Defender](/windows/security/threat-protection) |[使用 "Allow" 動作建立自訂指示器](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>復原裝置上所執行的修復動作
@@ -73,4 +73,4 @@ ms.locfileid: "51592057"
 
 - [檢視自動調查的詳細資料和結果](m365d-autoir-results.md)
 - [使用 Microsoft 365 Defender 中的高級搜尋主動搜尋威脅](advanced-hunting-overview.md)
-- [解決適用於端點的 Microsoft Defender 中的誤判](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)
+- [解決適用於端點的 Microsoft Defender 中的誤判/漏報](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

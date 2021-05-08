@@ -1,7 +1,7 @@
 ---
-title: 列出所有修復活動
+title: 列出所有補救活動
 description: 傳回所有修復活動的資訊。
-keywords: api，修正，修正 api，get，修復工作，
+keywords: api，修正，修正 api，get，修復工作，所有修復
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac4a777136dcdfc5d7ab61ddc8d496b7452f69e2
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: cf7c79cb6cc76af88ce0293a013ba6edbf435d8c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061107"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245489"
 ---
-# <a name="list-all-remediation-activities"></a>列出所有修復活動
+# <a name="list-all-remediation-activities"></a>列出所有補救活動
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,7 +47,16 @@ ms.locfileid: "52061107"
 
 **URL:** GET:/api/remediationTasks
 
-**屬性** 詳細資料
+## <a name="permissions"></a>權限
+
+需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs 以取得詳細資訊。](apis-intro.md)
+
+許可權類型 | 權限 | 許可權顯示名稱
+:---|:---|:---
+應用程式 | RemediationTask Read。 All | \'讀取威脅及弱點管理弱點資訊\'
+委派 (工作或學校帳戶)  | RemediationTask 讀取。 | \'讀取威脅及弱點管理弱點資訊\'
+
+## <a name="properties"></a>屬性
 
 屬性 (識別碼)  | 資料類型 | 描述 | 傳回值的範例
 :---|:---|:---|:---
@@ -56,19 +65,19 @@ completerEmail | 字串 | 若某人已手動完成修復活動，此欄會包含
 completerId | 字串 | 若某人已手動完成修復活動，此欄會包含其物件識別碼 | Null
 completionMethod | 字串 | 如果所有裝置都已) 或「手動」或「手動」（由選取「標記為完成」）進行修補，便可完成「 (自動」的修復活動。 | 自動
 createdOn | DateTime | 建立此修復活動的時間 | 2021-01-12T18：54： 11.5499478 Z
-描述 | 字串 | 此修復活動的描述 | 將 Chrome 更新為更新的版本，以減輕影響裝置的1248已知弱點。
+描述 | 字串 | 此修復活動的描述 | 將 Microsoft Silverlight 更新成更新的版本，以減輕影響裝置的已知弱點。
 dueOn | DateTime | 到期日此修復活動的建立者設定 | 2021-01-13T00：00：00Z
 fixedDevices | . | 已修復的裝置數目 | 第
 id | 字串 | 此修復活動的識別碼 | 097d9735-5479-4899-b1b7-77398899df92
-nameId | 字串 | 相關產品名稱 | 鉻
+nameId | 字串 | 相關產品名稱 | Microsoft Silverlight
 優先 | 字串 | 為此修復活動的建立者設定的優先順序 (High\Medium\Low)  | 高
-Id | 字串 | 相關產品識別碼 | google-_-chrome
+Id | 字串 | 相關產品識別碼 | microsoft-_-silverlight
 productivityImpactRemediationType | 字串 | 只會對沒有使用者影響的裝置要求一些設定變更。 此值表示「所有公開的裝置」或「只有沒有使用者影響的裝置」之間的選取範圍。 | AllExposedAssets
-rbacGroupNames | 字串 | 相關的裝置群組名稱 | [Windows Servers]，"Windows 10"]
+rbacGroupNames | 字串 | 相關的裝置群組名稱 | [「Windows Servers "，" Windows 10 "]
 recommendedProgram | 字串 | 升級為的建議程式 | Null
 recommendedVendor | 字串 | 升級為的建議供應商 | Null
 recommendedVersion | 字串 | 更新/升級的建議版本 | Null
-relatedComponent | 字串 | 此修復活動的相關元件 (類似安全性建議的相關元件)  | Google Chrome
+relatedComponent | 字串 | 此修復活動的相關元件 (類似安全性建議的相關元件)  | Microsoft Silverlight
 requesterEmail | 字串 | 建立者電子郵件地址 | globaladmin@UserName.contoso.com
 requesterId | 字串 | Creator 物件識別碼 | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | 字串 | 為此修復活動新增的建立者) 附注 (自由文字 | Null
@@ -76,19 +85,19 @@ Scid | 字串 | 相關安全性建議的 SCID | Null
 地位 | 字串 | 修復活動狀態 (Active/已完成)  | 作用中
 statusLastModifiedOn | DateTime | 更新狀態欄位的日期 | 2021-01-12T18：54： 11.5499487 Z
 targetDevices | Long | 此修復適用的公開裝置數目 | 43
-標題 | String | 此修復活動的標題 | 更新 Google Chrome
+標題 | String | 此修復活動的標題 | 更新 Microsoft Silverlight
 類型 | 字串 | 修正類型 | Update
-vendorId | 字串 | 相關的供應商名稱 | 谷歌
+vendorId | 字串 | 相關的供應商名稱 | Microsoft
 
 ## <a name="example"></a>範例
 
-**要求** 範例
+### <a name="request-example"></a>要求範例
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 ```
 
-**回應** 範例
+### <a name="response-example"></a>回應範例
 
 ```json
 {
@@ -135,9 +144,9 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 
 - [修正方法和屬性](get-remediation-methods-properties.md)
 
-- [依識別碼取得一個修復活動](get-remediation-one-activity.md)
+- [根據識別碼取得一個補救活動](get-remediation-one-activity.md)
 
-- [列出某項修復活動的公開裝置](get-remediation-exposed-devices-activities.md)
+- [列出一個補救活動的公開裝置](get-remediation-exposed-devices-activities.md)
 
 - [風險威脅 & 弱點管理](next-gen-threat-and-vuln-mgt.md)
 

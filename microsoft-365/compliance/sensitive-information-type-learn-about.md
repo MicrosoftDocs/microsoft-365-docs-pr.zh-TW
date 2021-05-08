@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 7d23230ebe4321f355128d1f3268e967a35a0a89
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114223"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245645"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感性資訊類型
 
@@ -158,5 +158,7 @@ ms.locfileid: "52114223"
 - [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
 - [在 PowerShell 中建立自訂機密資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+
+若要瞭解如何使用敏感資訊類型來遵守資料隱私權規定，請參閱使用 Microsoft 365 (aka.ms/m365dataprivacy) [部署資料隱私權法規的資訊保護](../solutions/information-protection-deploy.md)。
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

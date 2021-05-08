@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 使用 Microsoft 365 中的記錄管理，您可以將保留時間表套用到管理保留、記錄聲明和處置的檔案計畫中。
-ms.openlocfilehash: ac8e9bf2ac9ac47518788cd19a197818c13078a1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051685"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245429"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的記錄管理
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-所有類型的組織都需要記錄管理解決方案，用來管理其公司資料間的法規、法務及業務關鍵記錄。 Microsoft 365 中的記錄管理可幫助組織管理其法律義務，提供展現法規遵循的能力，並提高不再需要保留、不再具有價值或商業用途不再需要的項目一般處置的效率。
+所有類型的組織都需要記錄管理解決方案，用來管理其公司資料間的法規、法務及業務關鍵記錄。Microsoft 365 中的記錄管理可協助組織管理其法律義務，提供展現法規遵循的能力，並提高對於不再需要保留、不再具有價值或商業用途不再需要之項目的一般處置效率。
 
 請使用下列功能以支援 Microsoft 365 中的記錄管理解決方案：
 
@@ -48,7 +48,7 @@ ms.locfileid: "51051685"
 
 - 使用 [匯出選項](disposition.md#filter-and-export-the-views)來 **匯出所有已處置項目的相關資訊**。
 
-- 為組織中的記錄管理員功能 **設定特定權限**，以讓其 [具有適當權限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
+- 為組織中的記錄管理員功能 **設定特定權限**，以讓其 [具有適當權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 藉由使用這些功能，您可以將組織的保留排程和需求整合成一份記錄管理解決方案，以便管理保留、紀錄聲明和處置，以支援完整的內容生命週期。
 
@@ -111,6 +111,4 @@ ms.locfileid: "51051685"
 
 ## <a name="configuration-guidance"></a>配置指導方針
 
-請參照[開始使用記錄管理](get-started-with-records-management.md)。
-
-若要將內容標示為記錄，請參閱[使用保留標籤宣告記錄](declare-records.md)。
+請參照[開始使用記錄管理](get-started-with-records-management.md)。 本文具有記錄管理案例的訂閱、權限，以及端對端設定指導方針的連結。

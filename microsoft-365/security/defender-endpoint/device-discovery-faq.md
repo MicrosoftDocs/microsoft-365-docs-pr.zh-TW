@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764996"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245957"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>裝置探索常見問題
 
@@ -49,13 +49,17 @@ ms.locfileid: "51764996"
  在此模式中，架至 Microsoft Defender for Endpoint 的端點可以積極探查網路中的觀察裝置，以豐富網路流量) 所收集的資料 (。 強烈建議使用此模式來建立可靠且連貫的設備清查。 如果您選擇停用此模式，並選取 [基本探索] 模式，您的網路中可能只會獲得有限的非受管理端點的可見度。
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>我可以控制哪些裝置會執行標準探索？
- 您可以自訂用來執行標準探索的裝置清單。 您可以在目前只支援此功能的所有架裝置上啟用標準探索 (目前的 Windows 10 裝置只) 或透過指定裝置的裝置標記來選取裝置的子集或子集。 在此情況下，所有其他裝置將設定為只執行基本探索。 設定可在 [裝置探索設定] 頁面中取得。
+ 您可以自訂用來執行標準探索的裝置清單。 您可以在所有也支援此功能的架裝置上啟用 Standard discovery， (目前 Windows 10 裝置只) 或透過指定裝置的裝置標籤選取裝置的子集或子集。 在此情況下，所有其他裝置將設定為只執行基本探索。 設定可在 [裝置探索設定] 頁面中取得。
+
+## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>我是否可以從裝置庫存清單中排除未受管理的裝置？
+是的，您可以從裝置庫存清單套用篩選器以排除未受管理的裝置。 您也可以在 API 查詢上使用 [上架狀態] 欄，以篩選出未受管理的裝置。 
+
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>哪些架裝置可以執行探索？
  在 Windows 10 版本1809或更新版本上執行的架裝置可以執行探索。
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>如果我的架裝置連線到我的家用網路或公用存取點會發生什麼情況？
- 探索引擎會區別公司網路中所接收的網路事件與公司網路以外的網路事件。 透過將網路識別碼關聯到所有租使用者的用戶端，事件會在從私人網路和公司網路接收的事件之間加以區別。 私人網路裝置不會列在庫存中，也不會主動加以探測。
+ 探索引擎會區別公司網路中所接收的網路事件與公司網路以外的網路事件。 透過將網路識別碼關聯到所有租使用者的用戶端，事件會在從私人網路和公司網路接收的事件之間加以區別。 例如，如果網路中的大部分裝置報告其連線至相同的網路名稱，且其預設閘道和 DHCP 伺服器位址相同，則會假設此網路可能是公司網路。 私人網路裝置不會列在庫存中，也不會主動加以探測。
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>您在捕獲和分析哪些通訊協定？
  根據預設，在 Windows 10 版本1809或更新版本上執行的所有架裝置都是在捕獲和分析下列通訊協定： ARP、CDP、DHCP、DHCPv6、IP (標頭) 、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (標頭) 、UDP (標頭) 、WSD
@@ -85,6 +89,6 @@ ms.locfileid: "51764996"
  安全性建議及儀表板小工具適用于網路上穩定的裝置。不包括短暫裝置、來賓裝置及其他。 建議在持續性裝置上，這也是指組織的整體安全性分數。
 
 ## <a name="can-i-onboard-unmanaged-devices-that-were-found"></a>是否可以板載找到的受管理裝置？
- 是。 網路中未受管理的端點會向您的網路引進弱點和風險。 將其上架至服務可提高安全性。 
+ 可以。 網路中未受管理的端點會向您的網路引進弱點和風險。 將其上架至服務可提高安全性。 
 
 

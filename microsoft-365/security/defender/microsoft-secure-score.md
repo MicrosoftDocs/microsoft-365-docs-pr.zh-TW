@@ -1,6 +1,6 @@
 ---
 title: Microsoft 安全分數
-description: 說明 microsoft 365 security center 中的 Microsoft 安全分數、如何改善安全性狀態，以及安全性管理員可以預期的狀況。
+description: 說明 Microsoft 365 security center 中的 Microsoft 安全分數、如何改善安全性狀態，以及安全性管理員可以預期的情況。
 keywords: microsoft 安全分數、安全分數、office 365 安全分數、microsoft security 得分、microsoft 365 安全性中心、改進動作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570460"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245371"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 安全分數是組織安全性狀況的度量單位，數字越高，表示需要採取更多的改善動作。 可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
+Microsoft 安全分數是組織安全性狀況的度量單位，數字越高，表示需要採取更多的改善動作。 可在 https://security.microsoft.com/securescore [Microsoft 365 安全性中心](overview-security-center.md)找到它。
 
-遵循安全分數建議可保護貴組織免受威脅。 在 Microsoft 365 安全中心的中央儀表板中，組織可以監視及處理其 Microsoft 365 身分識別、應用程式和裝置的安全性。
+遵循安全分數建議可保護貴組織免受威脅。 組織可以從 Microsoft 365 安全性中心的中央儀表板，監視及處理其 Microsoft 365 身分識別、應用程式及裝置的安全性。
 
 安全分數可協助組織：  
 
@@ -44,7 +44,7 @@ Microsoft 安全分數是組織安全性狀況的度量單位，數字越高，�
 
 組織可以存取穩定的衡量方式和趨勢、與其他 Microsoft 產品的整合、與類似組織的分數比較，以及更多。 分數也可以反映協力廠商的解決方案如何解決建議的動作。
 
-![安全分數首頁](../../media/secure-score/secure-score-homepage-new.png)
+![安全分數首頁](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="how-it-works"></a>運作方式
 
@@ -77,18 +77,18 @@ Microsoft 安全分數是組織安全性狀況的度量單位，數字越高，�
 
 目前，下列產品的建議如下：
 
-- Microsoft 365 (包括 Exchange Online) 
+- Microsoft 365 (包含 Exchange Online) 
 - Azure Active Directory
 - 適用於端點的 Microsoft Defender
 - 適用於身分識別的 Microsoft Defender
 - Cloud App Security
 - Microsoft Teams
 
-即將推出其他安全性產品的建議。 建議不涵蓋每項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商或替代範圍的緩解。
+其他安全性產品的建議即將推出。 建議不涵蓋每項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商或替代範圍的緩解。
 
 ### <a name="security-defaults"></a>安全性預設
 
-Microsoft Secure 得分已更新改進動作，以支援 [Azure Active Directory 中的安全性預設值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)，如此可讓您的組織使用預先設定的常見攻擊安全性設定，以協助保護您的組織。
+Microsoft 安全評分已更新改進的動作，以支援[Azure Active Directory 中的安全性預設值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)，如此可讓您的組織使用預先設定的常見攻擊安全性設定，以協助保護您的組織。
 
 如果您開啟安全性預設值，您會獲得下列改進動作的完整得分：
 

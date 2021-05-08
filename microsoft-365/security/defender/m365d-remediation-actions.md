@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender 中的修正動作
-description: 深入瞭解 Microsoft 365 Defender 中遵循自動調查的修復動作
+description: 深入瞭解 Microsoft 365 Defender 中的自動調查遵循的修復動作
 keywords: automated, investigation, alert, trigger, action, remediation, 自動化, 調查, 警示, 觸發, 動作, 補救
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 41d8b91cbc905da982f8a344392398635f8d3632
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 31162944f4728f2c84efbe2cd5eafbd0c70e00f6
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591849"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245849"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的修正動作
 
@@ -38,15 +38,15 @@ ms.locfileid: "51591849"
 
 ## <a name="remediation-actions"></a>補救動作
 
-在 Microsoft 365 Defender 中的自動調查期間和之後，會針對惡意或可疑專案識別修正動作。 對裝置（也稱為端點）採取某些類型的修復動作。 對電子郵件內容採取其他修復動作。 在採取修正動作、核准或拒絕時，自動調查會完成。
+在 Microsoft 365 Defender 的自動調查期間和之後，會針對惡意或可疑專案識別修正動作。 對裝置（也稱為端點）採取某些類型的修復動作。 對電子郵件內容採取其他修復動作。 在採取修正動作、核准或拒絕時，自動調查會完成。
 
 > [!IMPORTANT]
 > 是否自動採取修復動作，也取決於特定設定，例如自動化程度。 若要深入瞭解，請參閱下列文章：
-> - [在 Microsoft 365 Defender 中設定您的自動化調查和回應功能](m365d-configure-auto-investigation-response.md)
+> - [在 Microsoft 365 Defender 中設定自動化調查和回應功能](m365d-configure-auto-investigation-response.md)
 > - [如何在裝置上修正威脅](../defender-endpoint/automated-investigations.md)
 > - [電子郵件 & 共同作業內容的威脅和修正動作](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-下表摘要說明 Microsoft 365 Defender 目前支援的修復動作： 
+下表摘要 Microsoft 365 Defender 目前支援的修正動作： 
 
 |裝置 (端點) 修正動作  |電子郵件補救動作  |
 |:---------|:---------|

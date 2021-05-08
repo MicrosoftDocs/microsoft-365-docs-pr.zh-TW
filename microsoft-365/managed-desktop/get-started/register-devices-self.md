@@ -11,19 +11,21 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b2976fc643eb433039d9595bc8e9632fd8cb60ea
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 850d7e6692d3ccbfda6e15c8d5ca95301bd4d094
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893470"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245609"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
-Microsoft 受管理的桌上型電腦可以與全新裝置搭配運作，也可以重複使用您已有 (的裝置，而這些裝置將需要) 重新建立映射。 您可以在 Microsoft 的端點管理員入口網站中使用 Microsoft 受管理的桌上型電腦註冊裝置。
+Microsoft 受管理的電腦可以與全新裝置搭配使用，也可以重複使用已有的裝置 (這會要求您重新) 。 您可以在 Microsoft 端點管理員入口網站中使用 Microsoft 受管理的電腦來註冊裝置。
 
 > [!NOTE]
 > 與合作夥伴合作來取得裝置嗎？ 若是如此，您就不需要擔心取得硬體雜湊，他們會為您處理。 請確定您的夥伴已在 [夥伴中心](https://partner.microsoft.com/dashboard)與您建立關聯。 您的合作夥伴可在 [合作夥伴中心說明](/partner-center/request-a-relationship-with-a-customer)深入了解。 建立這種關聯性後，您的合作夥伴就會代表您直接註冊裝置，您不須採取任何進一步動作。 如果您想要查看詳細資料，或您的合作夥伴有疑問，請參閱[可供合作夥伴註冊裝置的步驟](register-devices-partner.md)。 註冊好裝置後，您可以繼續[檢查映像](#check-the-image)並[將裝置交付](#deliver-the-device)給您的使用者。
+
+
 
 ## <a name="prepare-to-register-brand-new-devices"></a>準備註冊全新的裝置
 
@@ -46,7 +48,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 #### <a name="powershell-script-method"></a>PowerShell 指令碼方法
 
-您可以使用 PowerShell 圖庫網站上的 [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell 腳本。 如需裝置識別及硬體雜湊的詳細資訊，請參閱 [將裝置新增至 Windows Autopilot](/mem/autopilot/add-devices#device-identification)。
+您可以使用 PowerShell 圖庫網站上的 [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell 腳本。 如需裝置識別及硬體雜湊的詳細資訊，請參閱[新增裝置至 Windows Autopilot](/mem/autopilot/add-devices#device-identification)。
 
 1.  以系統管理權限開啟 PowerShell 提示字元。
 2.  執行 `Install-Script -Name Get-WindowsAutoPilotInfo`
@@ -79,7 +81,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
-在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 在 [Microsoft 受管理的桌面裝置] 工作區中，選取 [ **+ 註冊裝置**]，這會開啟飛入以註冊新裝置。
+在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)中，選取左導覽窗格中的 [**裝置**]。 尋找功能表的 [Microsoft 受管理的電腦] 區段，然後選取 [**裝置**]。 在 [Microsoft 受管理的電腦裝置] 工作區中，選取 [ **+ 註冊裝置**]，該裝置會開啟飛入以註冊新裝置。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -102,7 +104,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 |---------------|-------------|
 | 註冊擱置 | 尚未完成註冊。 稍後再回頭檢查。 |
 | 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[針對裝置註冊進行疑難排解](#troubleshooting-device-registration)。 |
-| 使用者就緒 | 註冊成功，裝置現在可以傳遞給使用者。 Microsoft 受管理的桌面會透過初次設定來引導他們，所以您不需要做進一步的準備。 |
+| 使用者就緒 | 註冊成功，裝置現在可以傳遞給使用者。 Microsoft 受管理的電腦會透過初次設定來引導他們，所以您不需要做進一步的準備。 |
 | 作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 這種狀態也表示它們經常使用裝置。 |
 | 非作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 不過，使用者最近尚未使用裝置 (在過去 7 天內)。  | 
 
@@ -125,7 +127,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 ### <a name="autopilot-group-tag"></a>Autopilot group 標記
 
 當您使用系統管理入口網站來註冊裝置時，會自動指派 **Microsoft365Managed_Autopilot** Autopilot Group 標籤。
-服務每日會監控所有的 Microsoft 受管理的桌面裝置，並將群組標籤指派給任何尚未存在的裝置標籤。
+服務每日會監控所有 Microsoft 受管理的電腦裝置，並將群組標籤指派給任何尚未存在的裝置。
 
 ### <a name="deliver-the-device"></a>交付裝置
 

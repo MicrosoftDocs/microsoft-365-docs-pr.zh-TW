@@ -19,12 +19,12 @@ description: 系統管理員可以深入瞭解安全性 & 合規性中心的「�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13871908c3b09660906b9233d23495830cf31ba9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203765"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245669"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中查看郵件流程報告
 
@@ -35,7 +35,7 @@ ms.locfileid: "51203765"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-除了安全性 & 合規性中心的 [郵件流程儀表板](mail-flow-insights-v2.md) 中所提供的郵件流程報告之外，「報告」儀表板還提供各種額外的郵件流程報告，可協助您監視 Microsoft 365 組織。
+除了安全性 & 合規性中心的[郵件流程儀表板](mail-flow-insights-v2.md)中所提供的郵件流程報告之外，「報告」儀表板也提供各種額外的郵件流程報告，可協助您監視 Microsoft 365 組織。
 
 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [**報表**] 儀表板，在 [安全性 & 規範中心](https://protection.office.com)中查看這些報告 \> ****。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
 
@@ -95,29 +95,29 @@ ms.locfileid: "51203765"
 
 若要回到報表檢視，請按一下 [ **查看報告**]。
 
-## <a name="exchange-transport-rule-report"></a>Exchange transport rule 報告
+## <a name="exchange-transport-rule-report"></a>Exchange 傳輸規則報告
 
-**Exchange transport rule report** 會顯示郵件流程規則 (也稱為傳輸規則) 組織中內送和外寄郵件的效果。
+**Exchange transport rule report** 會顯示郵件流程規則 (也稱為傳輸規則) 在組織內的內送和外寄郵件上的效果。
 
-若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **Exchange Transport rule**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ETRRuleReport> 。
+若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **Exchange 傳輸規則**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ETRRuleReport> 。
 
-![報告儀表板中的 Exchange transport rule widget](../../media/transport-rule-report-widget.png)
+![在報告儀表板中 Exchange 傳輸規則小工具](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Exchange transport rule 報告的報表檢視
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Exchange 傳輸規則報告的報表檢視
 
 報表檢視提供下列圖表：
 
-- **資料查看依據： Exchange 傳輸規則** \>**分解方式：方向**：此圖顯示受傳輸規則影響的 **輸入** 和 **輸出** 郵件數目。
+- **資料查看方式： Exchange 傳輸規則** \>**分解方式：方向**：此圖顯示受傳輸規則影響的 **輸入** 和 **輸出** 郵件數目。
 
-- **資料查看依據： Exchange 傳輸規則** \>**分解方式：嚴重性**：此圖表顯示 **高嚴重性** 和 **中低嚴重性** 的數目，以及 **低嚴重性** 郵件。 您可以將嚴重性層級設定為規則 ([ **以嚴重性層級** 或 _SetAuditSeverity_) 審核此規則] 中的動作。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+- **資料查看方式： Exchange 傳輸規則** \>**分解方式：嚴重性**：此圖表顯示 **高嚴重性** 和 **中低嚴重性** 的數目，以及 **低嚴重性** 郵件。 您可以將嚴重性層級設定為規則 ([ **以嚴重性層級** 或 _SetAuditSeverity_) 審核此規則] 中的動作。 如需詳細資訊，請參閱 [Exchange Online 中的郵件流程規則動作](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
-- **依下列方式查看資料： DLP Exchange transport rules** \>**分解方式：方向**：此圖顯示受資料遺失防護 (DLP) 傳輸規則所影響的 **輸入** 和 **輸出** 郵件數目。 您可以選取下列選項來進一步精煉圖表：
+- **依下列方式查看資料： DLP Exchange 傳輸規則** \>**分解方式：方向**：此圖顯示受資料遺失防護 (DLP) 傳輸規則所影響的 **輸入** 和 **輸出** 郵件數目。 您可以選取下列選項來進一步精煉圖表：
 
   - **顯示資料：所有 DLP transport rules**
   - **顯示下列專案的資料：已遭破壞的使用者**
   - **顯示資料：偵測到的內容量下限美國愛國法案**
 
-- **依下列方式查看資料： DLP Exchange transport rules** \>**分解方式：方向**：此 View 顯示 **高嚴重性** 和 **中低嚴重性** 的數目，以及受 DLP transport rules 影響的 **低嚴重性** 郵件。 您可以選取下列選項來進一步精煉圖表：
+- **依下列方式查看資料： DLP Exchange 傳輸規則** \>**分解方式：方向**：此 View 顯示 **高嚴重性** 和 **中低嚴重性** 的數目，以及受 DLP transport rules 影響的 **低嚴重性** 郵件。 您可以選取下列選項來進一步精煉圖表：
 
   - **顯示資料：所有 DLP transport rules**
   - **顯示下列專案的資料：已遭破壞的使用者**
@@ -129,32 +129,32 @@ ms.locfileid: "51203765"
 - 方向值
 - 嚴重性值
 
-![Exchange transport rule 報告中的報表檢視](../../media/transport-rule-report-report-view.png)
+![Exchange 傳輸規則報告中的報表檢視](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Exchange transport rule 報告的詳細資料表格視圖
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Exchange 傳輸規則報告的詳細資料表格視圖
 
 如果您按一下 [ **查看詳細資料] 表格**，顯示的資訊將取決於您所查看的圖表：
 
-- **依下列方式查看資料： Exchange Transport rules**：
+- **資料查看方式： Exchange 傳輸規則**：
 
   - **Date**
   - **傳輸規則**
-  - **主旨**
+  - **Subject**
   - **寄件者位址**
   - **收件者位址**
   - **嚴重性**
-  - **方向**
+  - **Direction**
 
-- 透過 **下列方式查看資料： DLP Exchange transport rules**：
+- **依下列方式查看資料： DLP Exchange 傳輸規則**：
 
   - **Date**
   - **DLP 原則**
   - **傳輸規則**
-  - **主旨**
+  - **Subject**
   - **寄件者位址**
   - **收件者位址**
   - **嚴重性**
-  - **方向**
+  - **Direction**
 
 如果您按一下 [詳細資料] 表格視圖中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
 
@@ -166,7 +166,7 @@ ms.locfileid: "51203765"
 
 ## <a name="forwarding-report"></a>轉接報告
 
-轉寄 **報告** 顯示組織自動轉寄給來自 Exchange Online 信箱的外部網域的郵件。 轉寄的郵件可能會造成安全性或規範風險，而且可能會指出已遭破壞的帳戶。
+轉寄 **報告** 顯示組織自動轉寄的郵件至外部網域的 Exchange Online 信箱。 轉寄的郵件可能會造成安全性或規範風險，而且可能會指出已遭破壞的帳戶。
 
 若要查看報告，請開啟 [安全性 & 規範中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **轉接報告**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=MailFlowForwarding> 。
 
@@ -214,7 +214,7 @@ ms.locfileid: "51203765"
 
 ## <a name="mailflow-status-report"></a>郵件流程狀態報表
 
-**郵件流程狀態報表** 類似于 [已傳送及已接收的電子郵件報告](#sent-and-received-email-report)，包含有關在 edge 上允許或封鎖之電子郵件的詳細資訊。 這是唯一包含 edge protection 資訊的報告，它會顯示在 Exchange Online Protection (EOP) 中，允許在評估之前封鎖多少封電子郵件。 請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
+**郵件流程狀態報表** 類似于 [已傳送及已接收的電子郵件報告](#sent-and-received-email-report)，包含有關在 edge 上允許或封鎖之電子郵件的詳細資訊。 這是唯一包含 edge protection 資訊的報表，可 Exchange Online Protection (EOP) 中，顯示封鎖多少封電子郵件，才能允許評估服務。 請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
 若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報表**] \> **儀表板** ，然後選取 [ **郵件流程狀態報表**]。 若要直接移至 [ **郵件流程] 狀態報表**，請開啟] <https://protection.office.com/mailflowStatusReport> 。
 
 ![報表儀表板中的郵件流程狀態報表小工具](../../media/mail-flow-status-report-widget.png)
@@ -245,7 +245,7 @@ ms.locfileid: "51203765"
 
 此資料表包含下列資訊：
 
-- **方向**
+- **Direction**
 - **Type**
 - **24 小時**
 - **3天**
@@ -264,9 +264,9 @@ ms.locfileid: "51203765"
 
 在 [詳細資料] 視圖中，您只能匯出一天的資料。 因此，如果您想要匯出資料7天，您必須做7種不同的匯出動作。
 
-每個匯出的 .csv 檔案限制為150000列。 如果該天的資料包含超過150000列，則會建立多個 .csv 檔案。
+每個匯出的 .csv 檔會限制為150000列。 如果該天的資料包含超過150000列，則會建立多個 .csv 檔案。
 
-![郵件流程狀態報表中的類型視圖 ](../../media/mail-flow-status-report-type-view.png)
+![郵件流程狀態報表中的類型視圖](../../media/mail-flow-status-report-type-view.png)
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>郵件流程狀態報表的方向視圖
 
@@ -284,9 +284,9 @@ ms.locfileid: "51203765"
 
 在 [詳細資料] 視圖中，您只能匯出一天的資料。 因此，如果您想要匯出資料7天，您必須做7種不同的匯出動作。
 
-每個匯出的 .csv 檔案限制為150000列。 如果該天的資料包含超過150000列，則會建立多個 .csv 檔案。
+每個匯出的 .csv 檔會限制為150000列。 如果該天的資料包含超過150000列，則會建立多個 .csv 檔案。
 
-![郵件流程狀態報表中的方向視圖 ](../../media/mail-flow-status-report-direction-view.png)
+![郵件流程狀態報表中的方向視圖](../../media/mail-flow-status-report-direction-view.png)
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>郵件流程狀態報表的漏斗視圖
 
@@ -317,9 +317,9 @@ ms.locfileid: "51203765"
 - 檔案 **及 URL 引爆1後的電子郵件**<sup></sup>
 - **在傳遞投遞後保護後，電子郵件偵測為良性 (URL 按一下時間保護)**
 
-僅限<sup>1</sup> Defender for Office 365
+<sup>1</sup>僅限 Office 365 的 Defender
 
-若要分別查看以 EOP 或 Defender for Office 365 篩選的電子郵件，請按一下 [圖表圖例] 中的值。
+若要個別查看以 EOP 或 Defender 為 Office 365 篩選的電子郵件，請按一下 [圖表圖例] 中的值。
 
 此資料表包含下列資訊（以遞減的日期順序顯示）：
 
@@ -335,10 +335,10 @@ ms.locfileid: "51203765"
   - **反欺騙**：因為郵件企圖哄騙收件者所屬的網域，或是郵件寄件者不會擁有的網域，所以篩選掉郵件。
 - **反垃圾郵件，大宗郵件篩選**：
   - **大宗郵件篩選**：郵件因嘗試將大宗郵件傳遞給其收件者而加以篩選。
-- **適用于 Office 365 (Defender 的使用者和網域模擬)**：
+- **Office 365) 的使用者和網域模擬 (Defender**：
   - **使用者** 模擬：郵件因嘗試模擬使用者 (郵件寄件者) （已在反網路釣魚原則的類比保護設定中所定義）而篩選。
   - **網域** 模擬：郵件因嘗試模擬防網路釣魚原則之類比保護設定中所定義的網域而篩選出來。
-- 檔案 **與 URL 引爆 (Office 365 的 Defender)**：
+- 檔案 **及 URL 引爆 (Defender for Office 365)**：
   - **檔引爆**：以安全附件原則篩選的郵件。
   - **URL 引爆**：以安全連結原則篩選的郵件。
 - **投遞後保護和 zap (ATP) 或 zap (EOP)**： zap 表示自動清除零小時。
@@ -354,9 +354,9 @@ ms.locfileid: "51203765"
 
 在 [ **日期**] 下，選擇範圍，然後 **按一下 [** 套用]。 目前篩選的資料會匯出至 .csv 檔案。
 
-每個匯出的 .csv 檔案限制為150000列。 如果資料包含超過150000列，則會建立多個 .csv 檔案。
+每個匯出的 .csv 檔會限制為150000列。 如果資料包含超過150000列，則會建立多個 .csv 檔案。
 
- ![郵件流程狀態報表中的漏斗圖視圖 ](../../media/mail-flow-status-report-funnel-view.png)
+ ![郵件流程狀態報表中的漏斗圖視圖](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>郵件流程狀態報表的技術視圖
 
@@ -386,7 +386,7 @@ ms.locfileid: "51203765"
 - **非垃圾郵件** 和  **垃圾郵件**
 - **非惡意的電子郵件**、**安全連結偵測** <sup>\*</sup> 和 **ZAP**
 
-<sup>\*</sup> 適用于 Office 的 Defender 365
+<sup>\*</sup>Office 365 的 Defender
 
 當您將游標移到圖表中的某個類別時，您可以看到該類別中的郵件數目。
 
@@ -415,9 +415,9 @@ ms.locfileid: "51203765"
 
 在 [ **日期**] 下，選擇範圍，然後 **按一下 [** 套用]。 目前篩選的資料會匯出至 .csv 檔案。
 
-每個匯出的 .csv 檔案限制為150000列。 如果資料包含超過150000列，則會建立多個 .csv 檔案。
+每個匯出的 .csv 檔會限制為150000列。 如果資料包含超過150000列，則會建立多個 .csv 檔案。
 
- ![郵件流程狀態報表中的技術視圖 ](../../media/mail-flow-status-report-Tech-view.png)
+ ![郵件流程狀態報表中的技術視圖](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>傳送和接收的電子郵件報告
 
@@ -440,7 +440,7 @@ ms.locfileid: "51203765"
   - **惡意程式碼 (反惡意程式碼)** (EOP) 
   - **垃圾郵件偵測**
   - **規則訊息**
-  - Microsoft Defender for Office 365 的 **高級惡意** 代碼 () 
+  - 用於 Office 365 的 **高級惡意** 代碼 (Microsoft Defender) 
 
   當您將滑鼠停留在圖表中的某一天 (資料點) 時，您就可以查看該天的詳細資料。
 
@@ -468,7 +468,7 @@ ms.locfileid: "51203765"
 
 - **日期 (UTC)**
 - **Type**
-- **方向**
+- **Direction**
 - **訊息計數**
 
 如果您按一下 [詳細資料] 表格視圖中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
@@ -495,7 +495,7 @@ ms.locfileid: "51203765"
 - **顯示 \> 主要郵件收件者的資料**
 - **顯示 \> 主要垃圾郵件收件者的資料**
 - **顯示資料 \> 主要惡意** 代碼收件者 (EOP) 
-- **顯示主要惡意程式碼收件者的資料 \> (Defender For Office 365)**
+- **顯示 \> Office 365)  (Defender 的主要惡意程式碼收件者資料**
 
 圓形圖的組成會根據這些選取範圍變更。
 
@@ -529,7 +529,7 @@ ms.locfileid: "51203765"
   - **主要惡意程式碼收件者**
   - **Count**
 
-- **顯示主要惡意程式碼收件者的資料 \> (Defender For Office 365)**
+- **顯示 \> Office 365)  (Defender 的主要惡意程式碼收件者資料**
 
   - **Office 365 (Defender 的主要惡意程式碼收件者)**
   - **Count**
@@ -560,4 +560,4 @@ ms.locfileid: "51203765"
 
 [檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)
 
-[查看 Microsoft Defender for Office 365 的報告](view-reports-for-mdo.md)
+[View Office 365 的 Microsoft Defender 報告](view-reports-for-mdo.md)

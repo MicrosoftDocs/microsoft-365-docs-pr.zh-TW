@@ -1,6 +1,6 @@
 ---
 title: 裝置需求
-description: 與 Microsoft 受管理的電腦搭配使用之裝置的最低硬體和軟體需求摘要
+description: 與 Microsoft 受管理的電腦搭配使用之裝置的基本硬體及軟體需求摘要
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768887"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245789"
 ---
 # <a name="device-requirements"></a>裝置需求
 
-Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 本文說明裝置為了與 Microsoft 受管理的桌面搭配使用，必須符合的硬體和軟體需求。 您可以根據這些需求，複查 [已核准](device-list.md) 供服務使用的特定裝置清單。
+Microsoft 受管理的電腦會定期評估服務中要包含的裝置需求。 本文說明裝置必須符合的硬體和軟體需求，才能與 Microsoft 受管理的電腦搭配使用。 您可以根據這些需求，複查已核准供服務使用的特定裝置清單。 [Windows 10 專業版商務裝置](https://www.microsoft.com/windowsforbusiness/view-all-devices)網站上的 Microsoft 受管理的電腦篩選
 
 > [!NOTE]
 > 這些需求可以隨時變更，但我們會在任何硬體需求變更後提供30天的通知。 最近變更的需求會以標記 **\*** 。 
@@ -29,7 +29,7 @@ Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 
 
 ## <a name="minimum-requirements"></a>基本需求
 
-若要在 Microsoft 受管理的桌上型電腦註冊，裝置必須符合或超過所有這些需求。
+若要在 Microsoft 受管理的電腦中註冊，裝置必須符合或超過所有這些需求。
 
 ### <a name="manufacturer"></a>製造商
 
@@ -45,8 +45,8 @@ Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 
 
 裝置必須預先安裝此軟體：
 
-- Windows 10 企業版、專業版或專業版工作站版
-- 適用于企業的 Microsoft 365 應用程式的64位版本 
+- Windows 10 企業版、Pro 或 Pro Workstation edition
+- 64位版本的 Microsoft 365 Apps 企業版 
 - 所有適用的裝置驅動程式
 
 
@@ -59,7 +59,7 @@ Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 
 - 具備虛擬化的安全性 
 - [虛擬機器監控程式-BIOS 支援的受保護程式碼完整性](/windows-hardware/drivers/bringup/device-guard-and-credential-guard)
 
-如需這些功能及服務所使用之相關技術的詳細資訊，請參閱 [Microsoft 受管理的桌面技術](../intro/technologies.md)。
+如需這些功能和服務所使用之相關技術的詳細資訊，請參閱[Microsoft 受管理的電腦技術](../intro/technologies.md)。
 
 > [!NOTE]
 > 不支援 ARM 處理器。
@@ -70,7 +70,7 @@ Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 
 - 啟動磁片磁碟機必須具有至少 128 GB 的容量。
 - 內部裝置記憶體 (RAM) 必須等於或超過 8 GB。
 
-如果裝置是在2020年6月1日之後進行，也應同時有紅外相機、指紋辨識器或兩者，以便支援 [Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)。
+如果裝置是在2020年6月1日之後進行，也應同時有紅外相機、指紋辨識器或兩者，才能支援[Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)。
 
 ## <a name="recommended-features"></a>建議功能
 

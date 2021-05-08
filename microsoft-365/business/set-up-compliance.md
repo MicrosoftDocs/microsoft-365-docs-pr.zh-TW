@@ -1,5 +1,5 @@
 ---
-title: 增強 Microsoft 365 商務版的威脅防護
+title: 增強 Microsoft 365 商務進階版威脅防護
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定規范功能以避免資料遺失，並協助保護您的和客戶的敏感資訊。
-ms.openlocfilehash: c0accc37d3dcda9ba75813f01a98a3233c5a8369
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 945f8a283b90b89da2fbe67a073e0807b80d198f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579947"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245077"
 ---
 # <a name="set-up-compliance-features"></a>設定合規性功能
 
-您的 Microsoft 365 商務版特優隨附功能可保護您的資料和裝置，並可協助您保護您的和客戶的敏感資訊。
+您的 Microsoft 365 商務進階版附帶保護您的資料和裝置的功能，可協助您保護您的和客戶的敏感資訊。
 
 ## <a name="set-up-dlp-features"></a>設定 DLP 功能
 
@@ -41,7 +41,7 @@ DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>設定 Exchange Online 封存的電子郵件保留
 
- **Exchange Online** 封存授權功能可透過保存 eDiscovery 的電子郵件內容，協助維護法規遵從性和法規標準。 如果有訴訟，也會在安全性破壞或需要復原已刪除的專案時，提供復原資料的方法。 您可以使用訴訟暫止以保留使用者的所有內容，或使用保留原則自訂您想要保留的專案。
+ **Exchange Online 封存** 授權功能可透過保存 eDiscovery 的電子郵件內容，協助維護法規遵從性和法規標準。 如果有訴訟，也會在安全性破壞或需要復原已刪除的專案時，提供復原資料的方法。 您可以使用訴訟暫止以保留使用者的所有內容，或使用保留原則自訂您想要保留的專案。
   
 **訴訟暫止：** 您可以將使用者的整個信箱置於訴訟暫止狀態，以保留包括已刪除專案的所有信箱內容。 
     
@@ -49,7 +49,7 @@ DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如
     
 1. 在左側導覽中，移至 [ **使用者**] [作用中 \> **使用者**]。
     
-2. 選取您要對其信箱進行訴訟暫止的使用者。 在 [使用者] 窗格中，展開 [ **郵件設定**]，然後按一下 [ **其他設定**] 旁的 [ **編輯 Exchange 屬性**]。
+2. 選取您要對其信箱進行訴訟暫止的使用者。 在 [使用者] 窗格中，展開 [**郵件設定**]，然後按一下 [**其他設定**] 旁的 [**編輯 Exchange 屬性**]。
     
 3. 在使用者的 [信箱] 頁面上，選擇左側流覽上的 [*] [信箱功能] * *，然後選擇 [**訴訟暫** 止] 下的 [**啟用**] 連結。
     
@@ -61,7 +61,7 @@ DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如
 
 敏感度標籤隨附 Azure 資訊保護 (AIP) 方案1，並可選擇性地使用標籤來保護您的檔和電子郵件。 系統管理員可以自動套用標籤，以定義規則和條件、手動由使用者手動套用，或是使用使用者提供建議的組合來套用。
 
-若要設定敏感度標籤，請 view [建立及管理敏感度標籤](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) 影片。
+若要設定敏感度標籤，請 view [建立及管理敏感度標籤](../business-video/create-sensitivity-labels.md) 影片。
 
 
 

@@ -1,37 +1,42 @@
 ---
-title: Microsoft 受管理的桌面裝置
-description: 本文列出已核准 Microsoft 受管理桌面之裝置的規格。
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+title: Microsoft 受管理的電腦裝置
+description: 本文列出核准 Microsoft 受管理的電腦的裝置規格。
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218661"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245933"
 ---
-# <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的桌面裝置 
+# <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置
 
-Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文列出目前支援的特定裝置。 如需更一般的裝置需求語句，請參閱 [裝置需求](device-requirements.md)。
+> [!NOTE]
+> Microsoft 受管理的電腦不再需要從這個清單中裝置模型。 從2021年5月3日開始，已核准廠商的所有裝置都應該符合我們已發佈的軟硬體需求。 您可以繼續使用此清單上的裝置。 您可以在[商務用店 Windows 10 專業版商務裝置](https://www.microsoft.com/windowsforbusiness/view-all-devices)網站上找到更多建議使用 Microsoft 受管理的電腦裝置。 在該網站上，透過展開 [**篩選依據**] 區域中的 **功能** 來查看建議的裝置，然後選取 [ **Microsoft 受管理的電腦**]。 每當您計畫在第一次登錄服務中的特定裝置模型時，應測試範例，以確保其可滿足您預期的使用者體驗。 如需詳細資訊，請參閱 [驗證新裝置](../get-started/validate-device.md)。
 
-如需 Microsoft 受管理電腦的詳細資訊，請參閱 [Microsoft 受管理的桌面檔和資源](../index.yml)。 
+Microsoft 受管理的電腦會定期評估要包含在服務中的裝置。 本文列出目前支援的特定裝置。 如需更一般的裝置需求語句，請參閱 [裝置需求](device-requirements.md)。
+
+如需 Microsoft 受管理的電腦的詳細資訊，請參閱[Microsoft 受管理的電腦檔及資源](../index.yml)。 
+
+[選取及驗證新裝置](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 若要在 Microsoft 受管理的電腦中註冊，裝置必須是下列其中一種型號，且符合或超過所列的 RAM、處理器系列和磁碟空間規格。 
 
-此處的裝置連結只供您參考。 如果您想要定購裝置，請與您的商業管道連絡人合作，以確保您選擇正確的設定。 在此表格中，「封存 *日期* 」是這些模型會受到較短 Microsoft 受管理桌面服務生命週期的日期;在此日期之後的任何這類裝置架，將不會從 Microsoft 受管理的電腦取得全三年的支援期限。 已封存裝置也會列在 [Microsoft 受管理的桌面封存裝置](archived-device-list.md)中。 「*退休日期*」是 Microsoft 受管理的桌面完全不會支援此模型的日期。 在該日期，此模型的所有已註冊裝置都會從 Microsoft 受管理的桌面移除，不論已註冊。
+此處的裝置連結只供您參考。 如果您想要定購裝置，請與您的商業管道連絡人合作，以確保您選擇正確的設定。 在此表格中，「封存 *日期*」是這些模型會變得更短 Microsoft 受管理的電腦服務生命的日期;在此日期之後的任何這類裝置架，將不會從 Microsoft 受管理的電腦獲得全三年的支援期限。 封存裝置也會列在[Microsoft 受管理的電腦](archived-device-list.md)已封存裝置中。 「*退休日期*」是指 Microsoft 受管理的電腦此模型將不再受到支援的日期。 在該日期，此模型的所有已註冊裝置都會從 Microsoft 受管理的電腦中移除，而不論他們是否已註冊。
 
 >[!NOTE]
 >您可以隨時將裝置加入至此表格，但是我們會針對影響封存或退休日期的變更，提供90天的通知。 最近新增的裝置會以標記 **\*** 。
 
 
-## <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的桌面裝置
+## <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦設備
 
 ### <a name="dell"></a>戴爾
 
@@ -69,20 +74,20 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文列
 |----------|----------------|---------------------------|----------------|--------------------|
 | [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
 | [曲面走向2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/Intel 核心 M3/8 GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
-| [Surface 膝上型電腦旅途](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 12，2022 | Oct 12，2025 |
-| [Surface 膝上型電腦3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
+| [Surface Laptop去](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 12，2022 | Oct 12，2025 |
+| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
 | **\*[Surface Pro 7 +](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB/Intel i5/8 GB RAM | 無 | 2022年1月15日 | 2025年1月15日 |
 
 此外，裝置也必須符合下列準則：     
 
-- 如果裝置需求中列出特定的 SKU，請務必在訂購時使用該 SKU。 這樣做可確保裝置符合 Microsoft 受管理的桌面軟體需求。 
-- 尚未完成 Windows 第一次執行體驗。
-- 使用 [Device Registration](../get-started/register-devices-self.md) 功能向 Microsoft Managed Desktop 註冊
+- 如果裝置需求中列出特定的 SKU，請務必在訂購時使用該 SKU。 這樣做可確保裝置遵循 Microsoft 受管理的電腦軟體需求。 
+- 尚未完成 Windows 初次執行體驗。
+- 使用[Device Registration](../get-started/register-devices-self.md)功能在 Microsoft 受管理的電腦中註冊
 
 >[!NOTE]
 >裝置使用2.0GHz 或更快的處理器，可為參與這些活動的使用者提供更佳的體驗：
->- 搭配小組使用影片會議。 如需詳細資訊，請參閱 [Microsoft 小組的硬體需求](/microsoftteams/hardware-requirements-for-the-teams-app) 。
+>- 搭配 Teams 使用影片會議。 如需詳細資訊，請參閱[Microsoft Teams 的硬體需求](/microsoftteams/hardware-requirements-for-the-teams-app)。
 >-  針對多個不同的工作負載使用一個裝置。
 >- 使用多個監視器。
 

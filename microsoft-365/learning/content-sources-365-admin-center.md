@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: 瞭解如何設定「Microsoft Viva 學習」的教學內容來源 (預覽) Microsoft 365 系統管理中心。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1bbe65db9dee028f57849de8a5538c996c3e2a4
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: b2e6ab6306db9a5ac9d91226431e5876cc244499
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100900"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245417"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中設定 Microsoft Viva 教學 (預覽) 的教學內容來源
 
@@ -35,7 +35,7 @@ Microsoft 365 系統管理中心的管理員（自行或指派知識系統管理
 > [!NOTE]
 >  使用者在瀏覽器或內嵌檢視器中登入非 Microsoft 並 LinkedIn 學習 Pro learnings。 這項設定的學習會受限於組織和協力廠商之間的個別授權、隱私權和服務條款，而不是 Viva 教學 (預覽) 條款。 在選取這種教學類型之前，請確認您的組織和使用者已具備適當的合約。
 
-## <a name="assign-the-knowledge-admin-role-optional"></a>指派知識系統管理員角色 [Optional]
+## <a name="assign-the-knowledge-admin-role-optional"></a>指派知識系統管理員角色 (選用) 
 
 您必須是 Microsoft 365 全域系統管理員，才可執行這些工作。
 
@@ -78,11 +78,11 @@ Microsoft 365 系統管理中心的管理員（自行或指派知識系統管理
 
 1.  在 Microsoft 365 系統管理中心的左側導覽中，移至 **設定**  >  **組織設定**」。
 
-2.  在 [ **組織設定** ] 頁面上的 [ **服務** ] 索引標籤上，選取 [ **教學應用程式 (預覽])**。
+2.  在 [ **組織設定** ] 頁面上的 [ **服務** ] 索引標籤上，選取 [ **Viva 教學 (預覽])**。
 
      ![Microsoft 365 系統管理中心中的設定頁面，顯示所列的學習應用程式。](../media/learning/learning-sharepoint-configure1.png)
 
-3.  在 [ **教學應用程式 (預覽)** ] 面板上，選取您要為組織設定的學習內容來源，然後選取 [ **儲存**]。
+3.  在 [ **Viva 教學 (預覽)** ] 面板上，選取您要為組織設定的學習內容來源，然後選取 [ **儲存**]。
 
      ![Microsoft 365 系統管理中心中的學習面板顯示內容來源選項。](../media/learning/learning-sharepoint-configure2.png)
 

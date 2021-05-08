@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 834ce13917237dd822bdfbb7b88967dcac4bc0f8
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dab72da02927c3fff6025eb2d0fa9ed0fdf1d0d7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929010"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245273"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上設定 Microsoft Defender for Endpoint
 
@@ -38,9 +38,12 @@ ms.locfileid: "51929010"
 > IOS 上的 Defender for Endpoint 會使用 VPN，以便提供 Web 保護功能。 這不是一般 VPN，也就是本機/自我迴圈的 VPN，不會對裝置以外的流量進行流量。
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>在 iOS 上使用 Defender for Endpoint 進行條件式存取  
-Microsoft Defender for Endpoint on iOS 搭配 Microsoft Intune 和 Azure Active Directory 可根據裝置風險層級強制實施裝置規範和條件式存取原則。 Defender for Endpoint 是行動威脅防護 (MTD) 解決方案，您可以透過 Intune 部署此功能，以利用這項功能。
+Microsoft Defender for Endpoint on iOS 隨 Microsoft Intune 和 Azure Active Directory 可根據裝置風險分數強制強制執行裝置合規性和條件式存取原則。 Defender for Endpoint 是行動威脅防護 (MTD) 解決方案，您可以透過 Intune 部署此功能，以利用這項功能。
 
 如需如何設定 iOS 上的使用 Defender for Endpoint 的條件式存取的相關資訊，請參閱 [Defender For endpoint And Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)。
+
+> [!NOTE]
+> **Jailbreak 中 Microsoft Defender for IOS Endpoint 的偵測目前正在預覽中**。 如果偵測到裝置已受到 Microsoft Defender for Endpoint 的鎖定，將會向安全中心報告 **高** 風險警示，而且如果根據裝置風險分數設定條件式存取，則系統會封鎖裝置存取公司資料。
 
 ## <a name="web-protection-and-vpn"></a>Web 保護和 VPN
 
@@ -48,9 +51,9 @@ Microsoft Defender for Endpoint on iOS 搭配 Microsoft Intune 和 Azure Active 
 
 預設為啟用時，可能需要停用 VPN。 例如，當設定 VPN 時，您想要執行一些無法運作的應用程式。 在這種情況下，您可以依照下列步驟，從裝置上的應用程式中選擇停用 VPN：
 
-1. 在您的 iOS 裝置上，開啟 [ **設定** ] app，按一下或點擊 **[一般** ] 和 [ **VPN**]。
+1. 在您的 iOS 裝置上，開啟 **設定** 應用程式，按一下或點擊 **[一般**]，然後再按一下 [ **VPN**]。
 1. 按一下或點擊 Microsoft Defender for Endpoint 的「i」按鈕。
-1. 關閉 **[連線時開啟]** 以停用 VPN。
+1. 關閉連線停用 VPN 的 **要求**。
 
     > [!div class="mx-imgBorder"]
     > ![需要時 VPN 設定連接](images/ios-vpn-config.png)
@@ -68,11 +71,11 @@ Apple iOS 不支援多個全裝置的 Vpn 同時作用中。 雖然裝置上可�
 為了保護公司資料無法在已越獄的 iOS 裝置上存取，我們建議您在 Intune 上設定下列符合性原則。
 
 > [!NOTE]
-> 在此時間，iOS 上的 Microsoft Defender for Endpoint 不會針對 jailbreak 案例提供防護。 若在已越獄的裝置上使用，則在特定案例中，如您公司的電子郵件識別碼及公司設定檔圖片，該應用程式所使用的資料會 (如果可以在本機公開可用) 
+> 目前，jailbreak 的 Microsoft Defender for iOS Endpoint 偵測是在預覽中。 建議您將此原則設定為其他防禦層級，以防禦 jailbreak 案例。
 
 請遵循下列步驟，建立對已越獄裝置的相容性原則。
 
-1. 在 [Microsoft 端點管理員管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，移至 [**裝置**  ->  **規範原則**] [  ->  **建立原則**]。 選取 "iOS/iPadOS" 作為平臺，然後按一下 [ **建立**]。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，移至 [**裝置**  ->  **規範原則**] [  ->  **建立原則**]。 選取 "iOS/iPadOS" 作為平臺，然後按一下 [ **建立**]。
 
     > [!div class="mx-imgBorder"]
     > ![建立原則](images/ios-jb-policy.png)

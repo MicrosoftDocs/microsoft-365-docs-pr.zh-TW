@@ -1,5 +1,5 @@
 ---
-title: 裝置探索概述
+title: 裝置探索概觀
 description: 瞭解如何利用 Microsoft 365 Defender 中的端點探索，尋找您網路中未受管理的裝置
 keywords: 裝置探索，探索，被動式，主動，網路，可視性，伺服器，工作站，板載，未受管理的裝置
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c549d5d2a7c30892a9272b4ac3e03cb8979bc1a5
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764984"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245945"
 ---
-# <a name="device-discovery-overview"></a>裝置探索概述
+# <a name="device-discovery-overview"></a>裝置探索概觀
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -96,10 +96,11 @@ Standard discovery 使用各種 PowerShell 腳本，在網路上主動探查裝�
 
 ![裝置庫存儀表板的影像](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
-
+> [!TIP]
+> 您永遠可以套用篩選器，以從裝置庫存清單中排除未受管理的裝置。 您也可以在 API 查詢上使用 [上架狀態] 欄，以篩選出未受管理的裝置。 
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>已探索裝置上的漏洞評估
-在您的裝置上以及其他探索網路上的受管理裝置，在 [安全性建議] 底下的目前 TVM 流程中，以及整個入口網站的實體頁面中所代表的，其弱點和風險都是部分。 搜尋「SSH」相關的安全性建議，以尋找與非管理裝置相關的 SSH 安全性漏洞。 
+裝置上的漏洞和風險，以及網路中已發現的其他受管理裝置，都屬於「Security 建議」底下的目前 TVM 流程，而且會在整個入口網站中以實體頁面表示。 搜尋「SSH」相關的安全性建議，以尋找與非管理裝置相關的 SSH 安全性漏洞。 
 
 ![安全性建議儀表板的影像](images/1156c82ffadd356ce329d1cf551e806c.png)  
 
@@ -131,8 +132,8 @@ DeviceNetworkEvents
 ```
 
 
-## <a name="changed-behaviour"></a>變更的行為
-下列章節列出當啟用此功能時，您在 Microsoft Defender for Endpoint 和/或 Microsoft 365 Security Center 中所看到的變更。 
+## <a name="changed-behavior"></a>已變更行為
+下列章節列出當啟用此功能時，您會在 Microsoft Defender for Endpoint 和/或 Microsoft 365 Security Center 中看到的變更。 
  
 1.  未架至 Microsoft Defender to Endpoint 的裝置應該會出現在設備清查、高級搜尋和 API 查詢中。 這可能會大幅增加查詢結果的大小。 
     1. Advanced 搜尋中的 "DeviceInfo" 和 "DeviceNetworkInfo" 資料表現在會保留探索的裝置。 您可以使用 "OnboardingStatus" 屬性來篩選出那些裝置。

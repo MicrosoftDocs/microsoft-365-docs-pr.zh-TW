@@ -19,19 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860952"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245585"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> 如果您看到應用程式中有關於保留原則的訊息，請連絡您的的 IT 部門，以取得他們已如何為您設定的資訊。 如果這些訊息是適用於 Teams 聊天或頻道訊息，請參閱[關於保留原則的 Teams 訊息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
+> 如果您看到 Teams 中有關於保留原則的訊息，或對於應用程式中的保留標籤有疑問，請連絡您的 IT 部門，以取得他們已為您設定的方式之資訊。 同時，您可能會發現下列文章很有幫助：
+> -  [關於保留原則的 Teams 訊息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> - [將保留標籤套用於 SharePoint 或 OneDrive 中的檔案](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > 此頁面上的資訊適用於可為了合規性原因而建立保留原則和保留標籤的 IT 系統管理員。
 
@@ -470,8 +472,4 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 
 ## <a name="configuration-guidance"></a>配置指導方針
 
-如果您已準備好建立保留原則，請參閱[建立及設定保留原則](create-retention-policies.md)。
-
-若要建立及套用保留標籤：
-- [建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)
-- [自動將保留標籤套用到內容](apply-retention-labels-automatically.md)
+請參閱 [開始使用保留原則和保留標籤](get-started-with-retention.md)。 本文具有關於保留案例的訂閱、權限，以及端對端設定指導方針的連結之資訊。

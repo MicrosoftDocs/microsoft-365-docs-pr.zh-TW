@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解哪一種 Microsoft 365 訂閱適合您的組織。
-ms.openlocfilehash: d04d505edc8494112095246a8aaede57f0795b98
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 瞭解哪 Microsoft 365 訂閱適合您的組織。
+ms.openlocfilehash: ca998be8c51af5caeb648510693effa88f481a9f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578960"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245237"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>選擇 Microsoft 365 訂閱
 
@@ -35,42 +35,41 @@ ms.locfileid: "51578960"
 
 ## <a name="try-it"></a>試試看吧！
 
-1. 在瀏覽器中，搜尋  **Microsoft 365 商務版 Premium**。
-2. 開啟 [  **Microsoft 365 商務版特優**  ] 頁面，然後選擇 [  **查看計畫及定價**]。 您可以在這裡看到哪些訂閱是針對小型企業量身定制的。
+1. 在瀏覽器中，搜尋 **Microsoft 365 商務進階版**。
+2. 開啟 [ **Microsoft 365 商務進階版**] 頁面，然後選擇 [**查看計畫及定價**]。 您可以在這裡看到哪些訂閱是針對小型企業量身定制的。
 3. 向中滾動，以查看每個選項所提供的功能。
-4. 如果您有較大的公司或有複雜的 IT 需求，請向下滾動並選取 [  **Microsoft 365 Enterprise**]。
-5. 選取 [  **查看產品與計畫** ]，並查看企業訂閱及其功能。
-6. &#39;ve 決定訂閱後，請選擇 [  **立即購買** ]，然後再進行註冊程式。
+4. 如果您有較大的公司或有複雜的 IT 需求，請向下流覽並選取 [ **Microsoft 365 企業版**]。
+5. 選取 [**請參閱產品與計畫**]，並複查 Enterprise 訂閱及其功能。
+6. &#39;ve 決定訂閱後，請選擇 [  **立即購買**]，然後再進行註冊程式。
 
 ## <a name="compare-plans"></a>比較方案
 
-| **服務區域** | **功能** | **Microsoft 365 商務標準版** | **Microsoft 365 商務進階版** | **Office 365 企業版 E3** |
+| 服務區域 | 功能 | Microsoft 365 商務標準版 | Microsoft 365 商務進階版 | Office 365 企業版 E3 |
 | --- | --- | --- | --- | --- |
 | **可用的授權** | 使用者數目上限 | 300 | 300 | 無限制 |
-| **Office 應用程式** | 在每位使用者最多5部電腦上安裝 Office，每位使用者 (Word、Excel、PowerPoint、OneNote、Access) 、Office Online | Business | Business | ProPlus |
+| **Office 應用程式** | 在每位使用者上安裝 Office，最多5部電腦上 (Word、Excel、PowerPoint、OneNote、Access) 、Office 線上 | Business | Business | ProPlus |
 | **電子郵件行事 &amp; 曆** | Outlook，Exchange Online | 50 GB | 50 GB | 100 GB |
-| **用於團隊合作的 Hub** | Microsoft 小組中的聊天型工作區、線上會議和更多內容 | 是 | 是 | 是 |
+| **用於團隊合作的 Hub** | Microsoft Teams 中的聊天型工作區、線上會議和更多內容 | 是 | 是 | 是 |
 | **檔存放區** | 商務用 OneDrive | 每個使用者 1 TB | 每個使用者 1 TB | 無限制 |
 | **社交、影片、網站** | Stream、Yammer、Planner、SharePoint Online \* 、PowerApps \* 、Microsoft Flow\* | 是 | 是 | 是 |
 | **商務應用程式** | 排程應用程式-預定\*\* | 是 | 是 | 是 |
-|
 | **威脅防護** | Office 365 進階威脅防護 | 否 | 是 | 否 |
- | Windows Exploit Guard 強制執行 | 否 | 是 | 否 |
+ | WindowsExploit Guard 強制執行| | 否 | 是 | 否 |
 | **身分識別管理** | 混合式 Azure Active Directory 帳戶的自助密碼重設 | 否 | 是 | 否 |
- | Azure Multi-Factor 驗證，條件式存取原則 | 否 | 是 | 否 |
-| **裝置 &amp; 應用程式管理** | Microsoft Intune、Windows AutoPilot、Windows Pro 管理 | 否 | 是 | 否 |
- | 共用電腦啟用 | 否 | 是 | 是 |
- | Windows 10 專業版的升級許可權，適用于 Win 7/8.1 Pro 授權 | 否 | 是 | 否 |
- | Windows 虛擬桌面 | 否 | 是 | 否 |
-| **資訊保護** | Office 365 資料遺失防護 | 否 | 是 | 是 |
- | Azure 資訊保護方案1，BitLocker 強制執行 | 否 | 是 | 否 |
-| **內部部署 CAL 許可權** | ECAL Suite (Exchange、SharePoint、Skype)  | 否 | 否 | 是 |
+ | Azure Multi-Factor 驗證，條件式存取原則 | | 否 | 是 | 否 |
+| **裝置 &amp; 應用程式管理** | Microsoft Intune，Windows AutoPilot，Windows Pro 管理 | 否 | 是 | 否 |
+ | 共用電腦啟用 | | 否 | 是 | 是 |
+ | Win 7/8.1 Pro 授權的 Windows 10 專業版升級權力 | | 否 | 是 | 否 |
+ | Windows 虛擬桌面 | | 否 | 是 | 否 |
+| **資訊保護** | 資料遺失防護 Office 365 | 否 | 是 | 是 |
+ | Azure 資訊保護方案1，BitLocker 強制執行 | | 否 | 是 | 否 |
+| **內部部署 CAL 許可權** | ECAL Suite (Exchange，SharePoint，Skype)  | 否 | 否 | 是 |
 | **合規性** | 無限制的電子郵件封存\*\*\* | 否 | 是 | 是 |
 
-\* 表示 Microsoft 365 商務標準已有方案1的功能，Office 365 企業版 E3 具有計劃2。
+\*表示 Microsoft 365 商務標準版具有功能的計畫1，且 Office 365 企業版 E3 具有計劃2。
 
 \*\* 可在美國，英國，加拿大使用。
 
 \*\*\* 自動擴充開啟時無限制封存。
 
-若要將 Microsoft 365 商務版與其他產品（包括其他 Microsoft 365 方案）進行比較，請參閱 [授權 microsoft 365 for small 大中型企業](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。
+若要將 Microsoft 365 商務進階版與其他產品（包括其他 Microsoft 365 計畫）進行比較，請參閱[適用于中小型企業的授權 Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。

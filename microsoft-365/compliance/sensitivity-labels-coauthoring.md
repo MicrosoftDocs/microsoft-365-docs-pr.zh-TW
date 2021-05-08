@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 開啟可在桌面應用程式中針對 SharePoint 和 OneDrive 中已標記和加密的檔案啟用共同撰寫和自動儲存的設定。
-ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 990ab13508565fb910abe0d5e759a93e54766915
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764362"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245717"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>針對使用敏感度標籤加密的檔案啟用共同撰寫
 
@@ -134,6 +134,8 @@ ms.locfileid: "51764362"
 - 使用者無法針對大於 300 MB 的 Word、Excel 和 PowerPoint 檔案，在 Office 網頁版中為任何的檔案套用任何標籤。 對於這些檔案，您可以使用 Office 桌面應用程式來套用標籤，但您必須是唯一開啟檔案的人。
 
 - 當您使用 [將敏感度標籤作為條件的 DLP](dlp-sensitivity-label-as-condition.md) 時，電子郵件的未加密附件不受支援。
+
+- 某些文件由於 [密碼保護](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643)、 [共用活頁簿](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534)，或包含 ActiveX 控制項內容等功能，而與敏感度標籤不相容。 其他原因會記錄在 [在 Office 中共同撰寫的疑難排解](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7)。 針對這些文件，您會看到 **[上傳失敗]** 訊息，且應選取 **[捨棄變更]** 選項。 在解決此問題之前，請勿標記這些以此失敗訊息識別的文件。
 
 - 不支援 iOS 版和 Android 版 Office 應用程式。
 

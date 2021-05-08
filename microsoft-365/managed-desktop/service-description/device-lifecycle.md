@@ -1,6 +1,6 @@
 ---
-title: Microsoft 受管理的桌面產品生命週期
-description: 本文列出 Microsoft 受管理的桌面所用的裝置規格。
+title: 產品生命週期 Microsoft 受管理的電腦
+description: 本文列出 Microsoft 受管理的電腦所用的裝置規格。
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -8,21 +8,21 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 75e6c2853a0ff41efdf7d5639f675927f3b95ea4
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: a8b8abc58b82d08d004d204396cfd8e381c6303a
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841196"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245309"
 ---
-# <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft 受管理的桌面產品生命週期
+# <a name="microsoft-managed-desktop-product-lifecycle"></a>產品生命週期 Microsoft 受管理的電腦
 
-Microsoft 受管理的桌面優點使用者可確保他們永遠使用提供最佳效能、可靠性、設計及安全性功能的裝置 (例如 Windows Hello) 等功能的支援。 為了達到此目的，Microsoft 受管理的桌面會維護連續更新之 [認可裝置](device-list.md)的簡短目錄。 
+Microsoft 受管理的電腦優點使用者可確保他們永遠使用提供最佳效能、可靠性、設計及安全性 (功能的裝置，如支援 Windows Hello) 等功能。 為做到這一點，Microsoft 受管理的電腦會維護連續更新之認可裝置的簡短目錄。 您可以在 [[車間作業 Windows 10 專業版商務裝置](https://www.microsoft.com/windowsforbusiness/view-all-devices)] 網站上篩選 Microsoft 受管理的電腦，以查看核准的裝置。
  
 本文將從已核准的目錄中新增及移除裝置時，詳細說明裝置的生命週期。 
 
 > [!NOTE]
-> 在本主題中，我們將區別「裝置」和「產品」。 "裝置" 是指一部個別的特定電腦。 例如，"數列號碼 1234"，「帳單的膝上型電腦」，"Shared VM XYZ" 是指特定的裝置。 不過，"product" 是指裝置集合或裝置系列。 例如「Fabrikam 膝上型電腦」、「Adatum ZX450 膝上型電腦」等等。這一點很重要，因為產品會新增至我們 [認可的清單](device-list.md)或目錄，而且裝置會註冊至 Microsoft 受管理的桌面。
+> 在本主題中，我們將區別「裝置」和「產品」。 "裝置" 是指一部個別的特定電腦。 例如，"數列號碼 1234"，「帳單的膝上型電腦」，"Shared VM XYZ" 是指特定的裝置。 不過，"product" 是指裝置集合或裝置系列。 例如「Fabrikam 膝上型電腦」、「Adatum ZX450 膝上型電腦」等等。這一點很重要，因為產品會新增至我們認可的清單或目錄，而裝置則會註冊到 Microsoft 受管理的電腦。
 
 ## <a name="product-lifecycle"></a>產品生命週期
 
@@ -63,11 +63,11 @@ Microsoft 受管理的桌面優點使用者可確保他們永遠使用提供最�
 
 ![生命週期時程表顯示發行和評估期間](../../media/non-dark3-edits.PNG)
 
-在此階段中，Microsoft 受管理的桌面工程小組會執行產品的評估與認證。 小組會評估與 Windows 的可靠性和效能等事項，遵循硬體基準、市場 sentiment、庫存及通道準備等專案等。 此程式通常需要大約六周。
+在此階段中，Microsoft 受管理的電腦工程小組會執行產品的評估與認證。 小組會評估諸如可靠性和效能的 Windows，遵循硬體基準、市場 sentiment、庫存及通道準備等專案等。 此程式通常需要大約六周。
   
-Microsoft 受管理的桌面只會評估其前六個月內的認證裝置。 這項原則可確保我們永遠致力於最新的硬體產生。
+Microsoft 受管理的電腦只會評估其前六個月內的認證裝置。 這項原則可確保我們永遠致力於最新的硬體產生。
  
-在這個階段結束時，Microsoft 受管理的桌面會將產品新增至 [已核准清單](device-list.md)，並有效地發行產品以供客戶登記。 不論裝置的認證日期為何，其 **核准的日期** 會回復為產品自身的一般供貨日。 
+在此階段結束時，Microsoft 受管理的電腦會將產品加入[已核准清單](device-list.md)，有效地發行產品以供客戶註冊。 不論裝置的認證日期為何，其 **核准的日期** 會回復為產品自身的一般供貨日。 
 
 
 ## <a name="product-primary-availability-period"></a>產品主要可用性週期
@@ -76,15 +76,15 @@ Microsoft 受管理的桌面只會評估其前六個月內的認證裝置。 這
 
 ![生命週期時程表顯示主要可用性](../../media/non-dark4-edits.PNG)
 
-在此期間內註冊的任何裝置都會從 Microsoft 受管理的桌面 (取得完整的三年支援，如藍色的時程表) 所示。 此期間會持續到結束日期設定為從一般可用日期到24個月為止。
+在此期間內註冊的任何裝置都會從 Microsoft 受管理的電腦 (（如藍色時程表) 所顯示）取得完整的三年支援。 此期間會持續到結束日期設定為從一般可用日期到24個月為止。
 
-您可以將此期間視為有效的「開啟註冊」，讓 Microsoft Managed Desktop 達到最大的價值，您應該針對您的採購模型和選取的產品在此期間內。 在小型範例中，您應該避免使用主要可用性之最後一個月內的產品進行結算，而大多數的裝置不會收到完整的三年 Microsoft Managed Desktop management (請參閱 [寬限期](#product-grace-period) 以取得詳細資訊) 。  
+您可以將此期間視為有效的「開啟登記」，讓 Microsoft 受管理的電腦的價值最大化，您應該針對您的採購模型和選取的產品在此期間內。 在此小範例中，您應該避免使用主要可用性之最後一個月內的產品來進行結算，大部分的裝置都不會收到完整三年的 Microsoft 受管理的電腦管理 (請參閱[寬限期](#product-grace-period)以取得詳細資訊) 。  
 
 ## <a name="product-grace-period"></a>產品寬限期
 
-產品寬限期是一年三年的主要可用性的期限。 此階段可讓您登記來自支援之產品系列的裝置，但仍可保留公司，以與現代硬體和裝置效能的 Microsoft 受管理的桌上型電腦承諾有關。 這一階段非常適合在瞭解 Microsoft 受管理的桌面之前進行採購決策的客戶。 
+產品寬限期是一年三年的主要可用性的期限。 此階段可讓您登記來自支援之產品系列的裝置，但仍然保留公司的 Microsoft 受管理的電腦與現代硬體和裝置效能相關的承諾。 這個階段非常適合在瞭解 Microsoft 受管理的電腦之前進行採購決策的客戶。 
 
-若您在使用 Microsoft 受管理的桌上型電腦註冊之前最近購買了認可的裝置，您仍然可以註冊，但您不會收到完整三年的管理。 相反地，他們會因退休日期而不符合規範，不論他們登記的時間為何。 在幕後，Microsoft Managed Desktop 會將這些裝置視為在主要可用性的最後一天註冊。 在此圖中，您可以注意到這種情況，只要您注意到藍色和綠色裝置都在同一天結束（不論其註冊的年差異為1年）。
+如果您最近購買了 Microsoft 受管理的電腦的授權裝置，您仍然可以註冊，但您也不會收到完整三年的管理。 相反地，他們會因退休日期而不符合規範，不論他們登記的時間為何。 在幕後，Microsoft 受管理的電腦會將這些裝置視為主要可用性的最後一天註冊。 在此圖中，您可以注意到這種情況，只要您注意到藍色和綠色裝置都在同一天結束（不論其註冊的年差異為1年）。
 
 
 ![顯示寬限期的生命週期時程表](../../media/non-dark2-edits.PNG)
@@ -102,13 +102,13 @@ Microsoft 受管理的桌面只會評估其前六個月內的認證裝置。 這
 
 ## <a name="product-retirement"></a>產品退休
 
-產品退休是生命週期的最後階段。 在此階段中，不會在 Microsoft 受管理的電腦中登記該產品類型的新裝置，而且根據定義，所有現有的裝置現在超出其允許的三年期限。 在這段時間內，Microsoft Managed Desktop 會從公用清單中徹底移除裝置。 在此階段中也有，如果您尚未開始取代，您將會在 Microsoft 受管理的桌面開始向下移動，以降低合規性的裝置。 
+產品退休是生命週期的最後階段。 在此階段中，不會在 Microsoft 受管理的電腦中登記該產品類型的任何新裝置，而且根據定義，所有現有的裝置現在都超出其允許的三年期限。 在這段時間內，Microsoft 受管理的電腦會從公用清單中徹底移除裝置。 在此階段中也有，如果您尚未開始更換，您會在 Microsoft 受管理的電腦開始逐步向下移動，以提升合規性的裝置時，看到服務降低。 
 
 ## <a name="devices-that-are-out-of-compliance"></a>不符合規範的裝置
 
-當 Microsoft 受管理的桌面管理的允許視窗已過時，裝置不相容。 當裝置已到達三年的管理，或從裝置目錄移除該產品類型時，就會發生這種情況，視第一個原因而來。 您應一定會以您的採購週期為目標，讓新裝置在目前的裝置不相容之前部署。
+當裝置的 Microsoft 受管理的電腦管理所允許的視窗已過時，裝置不相容。 當裝置已到達三年的管理，或從裝置目錄移除該產品類型時，就會發生這種情況，視第一個原因而來。 您應一定會以您的採購週期為目標，讓新裝置在目前的裝置不相容之前部署。
 
-Microsoft 受管理的桌面小組知道採購週期很長，而且會圍繞長期執行預算進行規劃。 為了確保您永遠知道裝置人口的狀態，我們提供的 [網站](https://aka.ms/mmdportal) 會列出所有管理的裝置、其保留時間，以及指出其符合性的狀態。 網站可協助您永遠掌握裝置保留時間的最新資訊，而且可以在任何採購計畫週期中使用報告。 
+Microsoft 受管理的電腦小組意識到採購週期很長，而且會圍繞長期執行預算進行規劃。 為了確保您永遠知道裝置人口的狀態，我們提供的 [網站](https://aka.ms/mmdportal) 會列出所有管理的裝置、其保留時間，以及指出其符合性的狀態。 網站可協助您永遠掌握裝置保留時間的最新資訊，而且可以在任何採購計畫週期中使用報告。 
 
 
 

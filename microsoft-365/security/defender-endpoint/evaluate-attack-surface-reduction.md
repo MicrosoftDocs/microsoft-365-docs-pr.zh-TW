@@ -6,19 +6,20 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.topic: article
 localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: ''
+ms.reviewer: dansimp
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 07573fd92643ce5fdf3e9140031bf5f15ae8f7aa
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 73b23427ff401f2a37c399131d6aa01330ff9de5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570336"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245297"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>評估受攻擊面縮小規則
 
@@ -26,16 +27,19 @@ ms.locfileid: "51570336"
 
 
 **適用於：**
+
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-攻擊面減少規則可協助防止惡意程式碼用來危害裝置或網路的動作。 設定執行下列任何版本 Windows 之裝置的攻擊面減少規則：
+攻擊面減少規則可協助防止惡意程式碼用來危害裝置或網路的動作。 攻擊面減少規則可協助關閉惡意程式碼和勒索軟體所使用的許多一般進入點。 
 
-- Windows 10 專業 [版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
-- Windows 10 企業 [版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
-- Windows Server， [版本 1803 (半年通道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 或更新版本
+設定執行下列任何版本及版本 Windows 之裝置的攻擊面減少規則：
+
+- Windows 10 專業版，[版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
+- Windows 10 企業版，[版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
+- Windows伺服器，[版本 1803 (半年通道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
 瞭解如何透過稽核模式直接在組織中測試功能，以評估攻擊面減少規則。
@@ -66,11 +70,11 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 您也可以使用「群組原則」、「Intune」或「行動裝置管理」 (MDM) configuration service 提供者 (Csp) 來設定及部署設定。 若要深入瞭解，請參閱主要 [攻擊面減少規則](attack-surface-reduction.md) 文章。
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>在 Windows 事件檢視器中查看攻擊面減少事件
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>在 Windows 事件檢視器中查看攻擊面降低事件
 
-若要查看已封鎖的應用程式，請在 Microsoft-Windows Defender/運作性記錄檔中開啟事件檢視器並篩選事件識別碼1121。 下表列出所有網路保護事件。
+若要查看已封鎖的應用程式，請在 Microsoft Windows Windows Defender/Operational 記錄中開啟事件檢視器並篩選事件識別碼1121。 下表列出所有網路保護事件。
 
-事件識別碼 | 說明
+事件識別碼 | 描述
 -|-
  5007 | 設定變更時的事件
  1121 | 在封鎖模式中激發攻擊面降低規則時的事件

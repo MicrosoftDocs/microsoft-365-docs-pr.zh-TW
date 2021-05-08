@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: 深入瞭解 Microsoft 清單。 透過 Microsoft 清單，您可以追蹤客戶的詳細資料，如客戶類型、訂單履行和訂單進度。
-ms.openlocfilehash: 79094c6b039e62ba88720424985814354bd299b4
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509420"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245189"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>使用 Microsoft 清單追蹤商務資訊
 
@@ -29,13 +29,13 @@ ms.locfileid: "50509420"
 
 ## <a name="try-it"></a>試試看
 
-追蹤資訊，並使用 Microsoft 清單組織工作。 從頭開始，從 Excel、現有清單或從範本建立清單。 您可以從 Microsoft 365、Microsoft 團隊或 SharePoint 著手。
+追蹤資訊，並使用 Microsoft 清單組織工作。 從頭開始，從 Excel、現有清單或從範本建立清單。 您可以從 Microsoft 365、Microsoft Teams 或 SharePoint 開始著手。
 
 ### <a name="add-an-item-to-the-list"></a>將專案新增至清單
 
 1. 選取 [ **新增**]。
 1. 新增訂單的詳細資料。
-1. 選取 **[儲存]**。
+1. 選取 [儲存]。
 
 ### <a name="share-the-list-with-partners-or-coworkers"></a>與合作夥伴或合作者共用清單
 
@@ -72,6 +72,6 @@ ms.locfileid: "50509420"
 
 - 按兩下專案以開啟它，然後更新順序的進度。
 
-## <a name="related-topics"></a>相關主題
+## <a name="related-content"></a>相關內容
 
 [從清單應用程式建立清單](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)

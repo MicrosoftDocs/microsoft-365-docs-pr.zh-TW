@@ -1,7 +1,7 @@
 ---
-title: 修復活動方法和屬性
-description: API 回應包含您租使用者中建立的威脅 & 漏洞管理修復活動。 您可以要求所有修復活動、只有一個修復活動，或選取的修復工作的公開裝置相關資訊。
-keywords: api，修正，修正 api，get，修復工作，
+title: 補救活動方法和屬性
+description: API 回應包含您租使用者中建立弱點管理修復活動 & 威脅。 您可以要求所有修復活動、只有一個修復活動，或選取的修復工作的公開裝置相關資訊。
+keywords: api，修正，修正 api，get，修正工作，修正方法，修正屬性
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f720d638ec469523a1d567dee9c01fa0974b0090
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 4c0ecd89c45ec2c91dc37f0c9cd0bfb868c0474e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061106"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245537"
 ---
-# <a name="remediation-activity-methods-and-properties"></a>修復活動方法和屬性
+# <a name="remediation-activity-methods-and-properties"></a>補救活動方法和屬性
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,15 +39,15 @@ ms.locfileid: "52061106"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-API 回應包含已在您的租使用者中建立的 [威脅 & 漏洞管理](next-gen-threat-and-vuln-mgt.md)   修復活動。  
+API 回應包含 [](next-gen-threat-and-vuln-mgt.md)   已在您的租使用者中建立弱點管理修復活動的威脅 &。  
 
 ## <a name="methods"></a>方法
 
 方法	 | 資料類型 | 描述
 :---|:---|:---
-[列出所有修復活動](get-remediation-all-activities.md) | 調查集合 | 傳回所有修復活動的資訊。
-[列出某項修復活動的公開裝置](get-remediation-exposed-devices-activities.md) | 調查實體 | 傳回所指定修復活動的公開裝置資訊。
-[依識別碼取得一個修復活動](get-remediation-one-activity.md) | 調查實體 | 傳回指定之修復活動的資訊。
+[列出所有補救活動](get-remediation-all-activities.md) | 調查集合 | 傳回所有修復活動的資訊。
+[列出一個補救活動的公開裝置](get-remediation-exposed-devices-activities.md) | 調查實體 | 傳回所指定修復活動的公開裝置資訊。
+[根據識別碼取得一個補救活動](get-remediation-one-activity.md) | 調查實體 | 傳回指定之修復活動的資訊。
 
 深入瞭解 [修復活動](tvm-remediation.md)。
 
@@ -86,11 +86,11 @@ vendorId | 字串 | 相關的供應商名稱
 
 ## <a name="see-also"></a>另請參閱
 
-- [依識別碼取得一個修復活動](get-remediation-one-activity.md)
+- [根據識別碼取得一個補救活動](get-remediation-one-activity.md)
 
-- [列出所有修復活動](get-remediation-all-activities.md)
+- [列出所有補救活動](get-remediation-all-activities.md)
 
-- [列出某項修復活動的公開裝置](get-remediation-exposed-devices-activities.md)
+- [列出一個補救活動的公開裝置](get-remediation-exposed-devices-activities.md)
 
 - [風險威脅 & 弱點管理](next-gen-threat-and-vuln-mgt.md)
 

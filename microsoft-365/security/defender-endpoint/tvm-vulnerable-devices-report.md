@@ -1,5 +1,5 @@
 ---
-title: 易受攻擊的裝置報告-威脅和弱點管理
+title: 易受攻擊的裝置報告-威脅與弱點管理
 description: 顯示受影響裝置趨勢和目前統計資料的報告。 目標是讓您瞭解裝置洩密的 breath 和範圍。
 keywords: Microsoft Defender for Endpoint tvm 易受攻擊的裝置、Microsoft Defender for Endpoint、tvm、降低威脅 & 弱點洩密、減少威脅和弱點，監視安全性設定
 search.product: eADQiWindows 10XVcnh
@@ -18,28 +18,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4b2b581d570bd0924970a845c66a599495ff9829
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 355561936642b1fa38228bfa07ad59269c48d817
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933706"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245477"
 ---
-# <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>易受攻擊的裝置報告-威脅和弱點管理
+# <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>易受攻擊的裝置報告-威脅與弱點管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-報告會顯示圖表和橫條圖，包含易受影響的裝置趨勢和目前的統計資料。 目標是讓您瞭解裝置洩密的 breath 和範圍。 
+報告會顯示圖表和橫條圖，包含易受影響的裝置趨勢和目前的統計資料。 目標是讓您瞭解裝置洩密的 breath 和範圍。
 
-前往 **報告 > 易受攻擊的裝置**，以存取 Microsoft Defender Security Center 中的報告
+前往 **報告 > 易受攻擊的裝置**，以存取 Microsoft Defender 資訊安全中心中的報告
 
 有兩個欄：
 
@@ -74,13 +74,13 @@ ms.locfileid: "51933706"
 
 ![由作業系統平臺所組成的目前易受攻擊裝置的一個圖形，以及一段時間後作業系統平臺顯示有漏洞裝置的圖形。](images/tvm-report-os.png)
 
-## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>Windows 10 版本圖表中有漏洞的裝置
+## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>Windows 10 版本圖形的裝置受到攻擊
 
-每個 Windows 10 版本上的裝置數目，由於有缺陷的應用程式或作業系統而公開。
+每個 Windows 10 版本上由於易受攻擊的應用程式或作業系統而公開的裝置數目。
 
-![使用 Windows 10 版本的目前易受攻擊裝置的一個圖形，以及一個顯示隨時間的 Windows 10 版本，顯示有漏洞裝置的圖形。](images/tvm-report-version.png)
+![Windows 10 版本的目前有漏洞裝置的一個圖形，以及一段時間內 Windows 10 版本顯示有缺陷裝置的圖形。](images/tvm-report-version.png)
 
 ## <a name="related-topics"></a>相關主題
 
-- [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [安全性建議](tvm-security-recommendation.md)

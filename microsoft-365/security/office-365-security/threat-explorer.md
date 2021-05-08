@@ -19,12 +19,12 @@ description: 在安全性與合規性中心使用 Explorer 和即時偵測， &a
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6bea6cb60579263515d21e159c4032fe4281cad
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 810b5c99aa239f295fd930c1d13a6a817012b18b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024178"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245561"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -32,13 +32,13 @@ ms.locfileid: "52024178"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-如果您的組織有 [Microsoft Defender For Office 365](defender-for-office-365.md)，而您具有 [必要的許可權](#required-licenses-and-permissions)，則您 **的 Explorer** 或 **即時** 偵測 (以前的 *即時報告* -- [請參閱](#new-features-in-threat-explorer-and-real-time-detections)最近更新！ ) 。 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**]，然後選擇 [ **Explorer** ] _或_[ **即時** 偵測]。
+如果您的組織有 [Office 365 的 Microsoft Defender](defender-for-office-365.md)，而且您具有 [必要的許可權](#required-licenses-and-permissions)，您就會有 **瀏覽器** 或 **即時** 偵測 (以前的 *即時報告*-[請參閱「新增功能](#new-features-in-threat-explorer-and-real-time-detections)！ ) 」。 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**]，然後選擇 [ **Explorer** ] _或_[ **即時** 偵測]。
 
 <br>
 
 ****
 
-|使用 Microsoft Defender for Office 365 方案2，您會看到：|使用 Microsoft Defender for Office 365 方案1，您會看到：|
+|使用 Microsoft Defender Office 365 方案2，您會看到：|使用 Microsoft Defender Office 365 方案1，您會看到：|
 |---|---|
 |![威脅總管](../../media/threatmgmt-explorer.png)|![即時偵測](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -49,9 +49,9 @@ ms.locfileid: "52024178"
 
 您可以使用此報告：
 
-- [查看 Microsoft 365 的安全性功能偵測到的惡意程式碼](#see-malware-detected-in-email-by-technology)
+- [查看 Microsoft 365 安全性功能偵測到的惡意程式碼](#see-malware-detected-in-email-by-technology)
 - [查看網路釣魚 URL，然後按一下 [已判定資料]](#view-phishing-url-and-click-verdict-data)
-- [從瀏覽器中的視圖開始自動調查和回應](#start-automated-investigation-and-response) 程式 (Office 365 的 Defender for Office 方案 2) 
+- [從瀏覽器的視圖中啟動自動調查和回應](#start-automated-investigation-and-response)程式 (Office 365 僅限方案 2) 
 - [調查惡意電子郵件及其他](#more-ways-to-use-explorer-and-real-time-detections)
 
 ## <a name="improvements-to-threat-hunting-experience"></a>威脅搜尋體驗的增強功能
@@ -71,7 +71,7 @@ ms.locfileid: "52024178"
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>將瀏覽器的 (和即時的偵測功能延伸) 從7天到30天 (預覽的試用承租人的資料保留和搜尋限制) 
 
-在這項變更中，您將可以搜尋和篩選超過30天的電子郵件資料 (在威脅瀏覽器/即時偵測中，針對 Office P1 和 P2 試用租使用者的 Defender，進行過去7天) 的增加。
+在這項變更中，您將可以搜尋和篩選超過30天的電子郵件資料 (在威脅瀏覽器/即時偵測中，針對 Office P1 和 P2 試用租使用者的 Defender，進行過去7天) 中的增加。
 這不會影響 P1 和 P2/E5 客戶的任何實際執行承租人，其已有30天的資料保留和搜尋功能。
 
 ### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>更新威脅瀏覽器的記錄匯出 (預覽的限制) 
@@ -83,7 +83,7 @@ ms.locfileid: "52024178"
 > [!NOTE]
 > 使用者標記功能是在 *預覽* 中，並非所有人都可以使用，而且可能會變更。 如需發行排程的相關資訊，請參閱 Microsoft 365 藍圖。
 
-使用者標記識別 Microsoft Defender for Office 365 中的特定使用者群組。 如需標記的相關資訊（包括授權和設定），請參閱 [User tags](user-tags.md)。
+使用者標記識別 Microsoft Defender 中 Office 365 的特定使用者群組。 如需標記的相關資訊（包括授權和設定），請參閱 [User tags](user-tags.md)。
 
 在威脅瀏覽器中，您可以在下列體驗中看到使用者標記的相關資訊。
 
@@ -179,10 +179,7 @@ ms.locfileid: "52024178"
 在傳送電子郵件之後套用 *其他動作*。 它們可以包含由系統管理員採取的 *ZAP*、 *手動修正* (動作（如虛刪除) 、 *動態傳遞*） *，以及重新處理 (（* 已偵測為良好) 的電子郵件）。
 
 > [!NOTE]
->
-> - 在擱置中的變更中，目前出現在 [傳遞動作篩選] 中的「已移除的 ZAP」值將會不復存在。 您可以使用此方法，透過 **其他動作** 來搜尋所有 ZAP 嘗試的電子郵件。
->
-> - **偵測技術** 和 **其他動作** 會有新的欄位和值，尤其是針對 ZAP 案例) 所做的 (。 您將需要評估現有的已儲存查詢和追蹤的查詢，以確保它們能夠使用新的值。
+> 在擱置中的變更中，目前出現在 [傳遞動作篩選] 中的「已移除的 ZAP」值將會不復存在。 您可以使用此方法，透過 **其他動作** 來搜尋所有 ZAP 嘗試的電子郵件。
 
 > [!div class="mx-imgBorder"]
 > ![瀏覽器中的其他動作](../../media/Additional_Actions.png)
@@ -195,7 +192,7 @@ ms.locfileid: "52024178"
 
 - 使用者原則封鎖：使用者會在信箱層級建立原則，以封鎖網域或寄件者。
 
-- 組織原則允許：組織的安全小組設定原則或 Exchange 郵件流程規則 (也稱為傳輸規則) ，可允許寄件者和網域的組織中的使用者。 這可供一組使用者或整個組織使用。
+- 組織原則所允許：組織的安全小組設定原則或 Exchange 郵件流程規則 (也稱為傳輸) 規則，可讓其組織中的使用者能夠使用寄件者和網域。 這可供一組使用者或整個組織使用。
 
 - 由組織原則封鎖：組織的安全小組會設定原則或郵件流程規則，以封鎖組織中使用者的寄件者、網域、郵件語言或來源 Ip。 這可以套用到一組使用者或整個組織。
 
@@ -285,9 +282,9 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 > [!div class="mx-imgBorder"]
 > ![主要目標使用者](../../media/Top_Targeted_Users.png)
 
-### <a name="exchange-transport-rules"></a>Exchange 傳輸規則
+### <a name="exchange-transport-rules"></a>傳輸規則 Exchange
 
-在 [資料豐富] 的一部分中，您將可以查看套用至郵件的所有不同 Exchange transport rules (ETR) 。 此資訊將會出現在 [電子郵件格線] 視圖中。 若要進行查看，請選取格線中的 [ **欄選項** ]，然後從 [欄選項] 中 **新增 Exchange Transport Rule** 。 它也會顯示在電子郵件中的 [ **詳細資料** ] 快顯視窗中。
+在 [資料豐富] 的一部分中，您將可以查看套用至郵件的所有不同 Exchange 傳輸規則 (ETR) 。 此資訊將會出現在 [電子郵件格線] 視圖中。 若要進行查看，請選取格線中的 [**欄選項**]，然後從 [欄] 選項 **新增 Exchange 傳輸規則**。 它也會顯示在電子郵件中的 [ **詳細資料** ] 快顯視窗中。
 
 您將能看到 GUID 及已套用至郵件的傳輸規則名稱。 您將能夠使用傳輸規則的名稱來搜尋郵件。 這是「包含」搜尋，也就是您也可以進行部分搜尋。
 
@@ -304,11 +301,11 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 > 在電子郵件格線、詳細資料浮出和匯出的 CSV 中，ETRs 會以如下所示的名稱/GUID 呈現。
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange 傳輸規則](../../media/ETR_Details.png)
+> > ![Exchange傳輸規則](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>輸入連接器
 
-連接器是一組指示，可自訂您的電子郵件流向和來源於您的 Microsoft 365 或 Office 365 組織的方式。 它們可讓您套用任何安全性限制或控制項。 在威脅瀏覽器內，您現在可以查看與電子郵件相關的連接器，並使用連接器名稱搜尋電子郵件。
+連接器是一組指示，可自訂您的電子郵件進出 Microsoft 365 或 Office 365 組織的方式。 它們可讓您套用任何安全性限制或控制項。 在威脅瀏覽器內，您現在可以查看與電子郵件相關的連接器，並使用連接器名稱搜尋電子郵件。
 
 在 [自然] 中，連接器的搜尋是「包含」，這表示部分關鍵字搜尋也應該可以運作。 在主格線視圖中，[詳細資料] 飛入和匯出的 CSV，連接器會以如下所示的名稱/GUID 格式顯示：
 
@@ -375,7 +372,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 |已傳遞|已標示為垃圾郵件|已封鎖|已取代|
 |---|---|---|---|
-|電子郵件已傳遞至使用者的收件匣或資料夾，而且使用者可以存取。|電子郵件已傳送至使用者的 [垃圾郵件] 或 [已刪除] 資料夾，使用者可以存取它。|隔離、失敗或丟棄的電子郵件。 使用者無法存取這些郵件。|電子郵件有惡意附件取代 .txt 檔案，以表明附件是惡意的。|
+|電子郵件已傳遞至使用者的收件匣或資料夾，而且使用者可以存取。|電子郵件已傳送至使用者的 [垃圾郵件] 或 [已刪除] 資料夾，使用者可以存取它。|隔離、失敗或丟棄的電子郵件。 使用者無法存取這些郵件。|電子郵件具有惡意附件，其 .txt 的檔會以附件為惡意。|
 |
 
 以下是使用者可及無法看到的專案：
@@ -404,11 +401,11 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 **電子郵件時程表** 是新的瀏覽器功能，可改善系統管理員的搜尋體驗。 它會削減檢查不同位置所花費的時間，以嘗試瞭解該事件。 當電子郵件到達時，發生多個事件或接近該郵件時，這些事件會顯示在時程表視圖中。 您的電子郵件投遞之後所發生的某些事件會在 [ **特殊動作** ] 欄中捕獲。 系統管理員可以合併時程表中的資訊，並在郵件投遞後採取特殊的動作，以深入瞭解其原則的運作方式（即最後一次路由傳送郵件的位置），而且在某些情況下，最後評估是什麼。
 
-如需詳細資訊，請參閱 [調查並修復 Office 365 中傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)。
+如需詳細資訊，請參閱[調查並修正 Office 365 中傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)。
 
 ### <a name="export-url-click-data"></a>匯出 URL 點擊資料
 
-您現在可以將 URL 按一下的報告匯出至 Microsoft Excel 以查看其 **網路消息識別碼** ，並 **按一下**[判斷]，以協助說明您的 URL 按一下流量的來源。 其運作方式如下：在「威脅管理」的 Office 365 快速啟動列上，請遵循下列連結：
+您現在可以將 url 按一下的報告匯出至 Microsoft Excel 以查看其 **網路消息識別碼**，並 **按一下 [判定**]，以協助說明您的 URL 按一下流量的來源。 其運作方式如下：在威脅管理的 Office 365 快速啟動列上，請遵循下列連結：
 
 **瀏覽器** \>**查看網路釣魚** \>**按一下** \>**Top URLs** Or **URL 上擊** \> 選取 [任何記錄] 以開啟 [URL] 浮出控制項。
 
@@ -426,9 +423,9 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看透過技術在電子郵件中偵測到的惡意程式碼
 
-假設您想要查看透過 Microsoft 365 技術排序的電子郵件中偵測到惡意程式碼。 若要這麼做，請使用瀏覽器的 [電子郵件 > 惡意](threat-explorer-views.md#email--malware) 代碼視圖 (或即時偵測) 。
+假設您想要查看以 Microsoft 365 技術排序的電子郵件中偵測到惡意程式碼。 若要這麼做，請使用瀏覽器的 [電子郵件 > 惡意](threat-explorer-views.md#email--malware) 代碼視圖 (或即時偵測) 。
 
-1. 在安全性與合規性中心 (<https://protection.office.com>) 選擇 **[威脅管理]** \> **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
+1. 在 [安全性 & 規範中心] (<https://protection.office.com>) 中，選擇 [ **威脅管理** \> **瀏覽器** (] 或 [ **即時** 偵測]) 。 (此範例使用總管。)
 
 2. 在 [ **視圖** ] 功能表中，選擇 [ **電子郵件** \> **惡意** 代碼]。
 
@@ -455,7 +452,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 若要查看郵件中的網路釣魚 URLs，並按一下網路釣魚郵件中 URLs，請使用瀏覽器或即時偵測的 [**電子郵件**  >  **網路釣魚**](threat-explorer-views.md#email--phish)視圖。
 
-1. 在安全性與合規性中心 (<https://protection.office.com>) 選擇 **[威脅管理]** \> **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
+1. 在 [安全性 & 規範中心] (<https://protection.office.com>) 中，選擇 [ **威脅管理** \> **瀏覽器** (] 或 [ **即時** 偵測]) 。 (此範例使用總管。)
 
 2. 在 [ **視圖** ] 功能表中，選擇 [ **電子郵件** \> **釣魚網絡**]。
 
@@ -502,7 +499,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 假設您想要查看組織中的使用者已透過 [報告郵件增益集](enable-the-report-message-add-in.md)或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md)舉報為 *垃圾* 郵件、*非垃圾* 郵件或 *網路釣魚* 的電子郵件訊息。 若要查看，請使用瀏覽器的 [**電子郵件**  >  **提交**](threat-explorer-views.md#email--submissions)視圖 (或即時偵測) 。
 
-1. 在安全性與合規性中心 (<https://protection.office.com>) 選擇 **[威脅管理]** \> **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
+1. 在 [安全性 & 規範中心] (<https://protection.office.com>) 中，選擇 [ **威脅管理** \> **瀏覽器** (] 或 [ **即時** 偵測]) 。 (此範例使用總管。)
 
 2. 在 [ **View** ] 功能表中，選擇 [ **電子郵件** \> **提交**]。
 
@@ -516,12 +513,12 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
    > [!div class="mx-imgBorder"]
    > ![使用者回報的網路釣魚](../../media/EmailUserReportedReportType.png)
 
-報告會重新整理以顯示組織中的人員報告為網路釣魚企圖的電子郵件相關資料。 您可以使用這項資訊進行進一步的分析，必要時，調整 [Microsoft Defender For Office 365 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+報告會重新整理以顯示組織中的人員報告為網路釣魚企圖的電子郵件相關資料。 您可以使用這項資訊進行進一步的分析，並在必要時，調整[Microsoft Defender 中 Office 365 的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
 ## <a name="start-automated-investigation-and-response"></a>啟動自動調查及回應
 
 > [!NOTE]
-> *Microsoft Defender For Office 365 方案 2* 和 *Office 365 E5* 中提供自動調查和回應功能。
+> 您可以在 *Microsoft Defender Office 365 方案 2* 和 *Office 365 E5* 中取得自動化調查和回應功能。
 
 [自動化調查和回應](automated-investigation-response-office.md) 可儲存您的安全性運作小組時間和精力，以調查及緩解 cyberattacks。 除了設定會觸發安全性劇本的警示，您可以在總管中的檢視啟動自動化調查及回應程序。 如需詳細資訊，請參閱 [範例：安全性管理員會從瀏覽器觸發調查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
 
@@ -533,15 +530,15 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 - [檢視在 SharePoint Online、OneDrive 和 Microsoft Teams 中偵測到的惡意檔案](./mdo-for-spo-odb-and-teams.md)
 - [取得威脅瀏覽器中的視圖 (和即時偵測的概覽) ](threat-explorer-views.md)
 - [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft 365 Defender 的自動化調查和回應](../defender/m365d-autoir.md)
+- [Microsoft 365 Defender 中的自動化調查和回應](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
-您必須擁有 [Microsoft Defender For Office 365](defender-for-office-365.md) ，才能使用 Explorer 或即時偵測。
+您必須具有[Microsoft Defender Office 365](defender-for-office-365.md) ，才能使用 Explorer 或即時偵測。
 
-- Explorer 會包含在 Office 365 的 Defender for Office 中方案2。
-- Office 365 方案1中包含即時偵測報告。
-- 規劃為所有應受 Defender for Office 365 保護的使用者指派授權。 瀏覽器和即時偵測顯示已授權使用者的偵測資料。
+- Explorer 會包含在 Office 365 方案2的 Defender 中。
+- 在 Office 365 方案1的 Defender 中包含即時偵測報告。
+- 規劃為所有應受 Office 365 Defender 保護的使用者指派授權。 瀏覽器和即時偵測顯示已授權使用者的偵測資料。
 
 若要查看和使用 Explorer 或即時偵測，您必須具有適當的許可權，例如授與安全性管理員或安全性讀者的許可權。
 
@@ -551,7 +548,7 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
   - 安全性管理員 (可以在 Azure Active Directory 系統管理中心 (中指派 <https://aad.portal.azure.com>) 
   - 安全性讀取者
 
-- 若為 Exchange Online，您必須在 Exchange 系統管理中心中指派下列其中一個角色 (<https://admin.protection.outlook.com/ecp/>) 或 [exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)：
+- 針對 Exchange Online，您必須在 Exchange 系統管理中心中指派下列角色之一 (<https://admin.protection.outlook.com/ecp/>) 或[Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)：
 
   - 組織管理
   - 僅限檢視組織管理
@@ -565,10 +562,10 @@ ZAP URL 信號通常用於 ZAP 網路釣魚警示案例，其中的電子郵件�
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>威脅瀏覽器與即時偵測的差異
 
-- 您可以在 Office 365 的 Defender for Office 方案1中取得 *即時* 偵測報告。 *威脅瀏覽器* 適用于 Office 365 方案2的 Defender。
+- 您可以在 Office 365 方案1的 Defender 中取得 *即時* 偵測報告。 您可以在 Office 365 方案2的 Defender 中取得 *威脅瀏覽器*。
 - 即時偵測報告可讓您即時查看偵測。 威脅瀏覽器也會這麼做，但也會提供特定攻擊的其他詳細資料。
 - *所有的電子郵件* view 都可用於威脅瀏覽器，但不會出現在即時偵測報告中。
-- 威脅瀏覽器中包含更多篩選功能和可用的動作。 如需詳細資訊，請參閱 [Microsoft defender For office 365 服務說明：每個 Defender For office 365 方案中可用的功能](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 威脅瀏覽器中包含更多篩選功能和可用的動作。 如需詳細資訊，請參閱[Microsoft defender for Office 365 Service Description：每個 defender 的功能可用性以取得 Office 365 計畫](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="other-articles"></a>其他文章
 

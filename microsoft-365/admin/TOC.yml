@@ -107,16 +107,30 @@
               href: create-groups/manage-guest-access-in-groups.md
             - name: 變更使用名稱和電子郵件地址
               href: add-users/change-a-user-name-and-email-address.md
-            - name: 移除離職員工
-              href: add-users/remove-former-employee.md
-            - name: 存取及備份離職使用者的資料
-              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: 還原使用者
               href: add-users/restore-user.md
             - name: 建立範本以新增使用者
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: 將使用者升級到最新的應用程式
               href: setup/upgrade-users-to-latest-office-client.md
+        - name: 移除離職員工
+          items:
+            - name: 概觀
+              href: add-users/remove-former-employee.md
+            - name: 步驟 1. 防止員工登入並封鎖對 Microsoft 365 服務的存取
+              href: add-users/remove-former-employee-step-1.md
+            - name: 步驟 2. 儲存離職員工信箱的內容
+              href: add-users/remove-former-employee-step-2.md
+            - name: 步驟 3. 將離職員工的電子郵件轉寄給另一個員工，或轉換為共用信箱
+              href: add-users/remove-former-employee-step-3.md
+            - name: 步驟 4. 讓其他員工存取 OneDrive 和 Outlook 資料
+              href: add-users/remove-former-employee-step-4.md
+            - name: 步驟 5. 抹除及封鎖離職員工的行動裝置
+              href: add-users/remove-former-employee-step-5.md
+            - name: 步驟 6. 移除離職員工的 Microsoft 365 授權
+              href: add-users/remove-former-employee-step-6.md
+            - name: 步驟 7. 刪除離職員工的使用者帳戶
+              href: add-users/remove-former-employee-step-7.md
         - name: 群組
           items:
             - name: 群組概觀

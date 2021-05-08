@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ca023ea49a8d92123467be640a097a72233d3198
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: b26574c85e498209f8d0233495d3fe0e44733909
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592117"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245873"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調查的詳細資料和結果
 
@@ -35,16 +35,16 @@ ms.locfileid: "51592117"
 **適用於：**
 - Microsoft 365 Defender
 
-使用 Microsoft 365 Defender 時，當 [自動調查](m365d-autoir.md) 執行時，就會在自動調查程式期間和之後使用該調查的詳細資料。 如果您擁有[必要權限](m365d-action-center.md#required-permissions-for-action-center-tasks)，您可以在調查詳細資料檢視中查看這些詳細資料。 調查詳細資料檢視可提供您最新的狀態，以及核准任何待核准動作的能力。 
+使用 Microsoft 365 Defender 時，當[自動調查](m365d-autoir.md)執行時，系統會在自動調查程式期間和之後使用該調查的詳細資料。 如果您擁有[必要權限](m365d-action-center.md#required-permissions-for-action-center-tasks)，您可以在調查詳細資料檢視中查看這些詳細資料。 調查詳細資料檢視可提供您最新的狀態，以及核准任何待核准動作的能力。 
 
 ![調查詳細資料](../../media/mtp-air-investdetails.png)
 
 ## <a name="new-unified-investigation-page"></a> (NEW！ ) 整合調查頁面
 
-調查頁面最近已經過更新，可納入整個裝置、電子郵件及共同作業內容的資訊。 新的整合調查頁面會定義一種通用語言，並提供跨 [Microsoft defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 和 [Microsoft defender for Office 365](../office-365-security/defender-for-office-365.md)進行自動調查的整合體驗。 若要存取「統一調查」頁面，請選取您將在黃色橫幅中看到的連結：
+調查頁面最近已經過更新，可納入整個裝置、電子郵件及共同作業內容的資訊。 新的整合調查頁面會定義一種通用語言，並提供在[Microsoft defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)和[microsoft defender for Office 365](../office-365-security/defender-for-office-365.md)中自動調查的整合體驗。 若要存取「統一調查」頁面，請選取您將在黃色橫幅中看到的連結：
 - Office 365 安全性 & 規範中心 (中的任何調查頁面 [https://protection.office.com](https://protection.office.com)) 
-- Microsoft Defender Security Center 中的任何調查頁面 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 
-- 在改進的 Microsoft 365 安全性中心 (中的任何事件或動作中心經驗 [https://security.microsoft.com](https://security.microsoft.com)) 
+- Microsoft Defender 資訊安全中心 (中的任何調查頁面 [https://securitycenter.windows.com](https://securitycenter.windows.com)) 
+- 改進的 Microsoft 365 安全性中心 (中的任何事件或行動中心經驗 [https://security.microsoft.com](https://security.microsoft.com)) 
 
 ## <a name="open-the-investigation-details-view"></a>開啟調查詳細資料檢視
 
@@ -96,15 +96,15 @@ ms.locfileid: "51592117"
 在調查詳細資料檢視中，您可以在 [調查圖表]、[警示]、[裝置]、[身分識別]、[重要結果]、[實體]、**[記錄]**，以及 [待核准的動作] 索引標籤上查看資訊，如下表所述。
 
 > [!NOTE]
-> 您在 [調查詳細資料] 頁面看到的特定索引標籤取決於您的訂閱所包含的專案。 例如，如果您的訂閱不包含 Microsoft Defender for Office 365 方案2，您就不會看到 [ **信箱** ] 索引標籤。
+> 您在 [調查詳細資料] 頁面看到的特定索引標籤取決於您的訂閱所包含的專案。 例如，如果您的訂閱不包含適用于 Office 365 方案2的 Microsoft Defender，您就不會看到 [**信箱**] 索引標籤。
 
 | 索引標籤 | 描述 |
 |:--------|:--------|
 | **調查圖表**   | 提供調查的視覺呈現。 描述實體並列出發現的威脅和警示，以及是否有任何待核准的動作。<br/>您可以在圖形上選取一個專案，以查看詳細資料。 例如，選取 **證據** 圖示會帶您前往 [ **證據** ] 索引標籤，您可以在其中看到偵測到的實體及其 verdicts。 |
-| **提醒**    | 列出與調查相關聯的警示。 提醒可能來自使用者裝置上的威脅防護功能、Office 應用程式、雲端 App 安全性及其他 Microsoft 365 Defender 功能。|
+| **提醒**    | 列出與調查相關聯的警示。 警示可能來自使用者裝置上的威脅防護功能、Office 應用程式、雲端 App 安全性及其他 Microsoft 365 Defender 功能。|
 | **裝置** | 列出調查中包含的裝置及其修正層級。  (修正層級會對應至 [裝置群組的自動化層級](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。 )  |
 | **信箱** |列出受偵測到之威脅影響的信箱。  |
-| **使用者**  | 列出受偵測到之威脅影響的使用者帳戶。 |
+| **Users**  | 列出受偵測到之威脅影響的使用者帳戶。 |
 | **證據** | 列出由警示/調查產生的證據片段。 包括 verdicts (*惡意*、 *可疑* 或 *未找到威脅*) 和修正狀態。 |
 | **Entities**  | 提供每個已分析之實體的詳細資料，包括每個實體類型的判定 (*惡意*、 *可疑* 或沒有) 中 *找到的威脅* 。|
 |**Log**    | 提供觸發警示之後所採取之所有調查動作的按時間排序的詳細視圖。|
