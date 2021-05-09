@@ -48,6 +48,8 @@
           href: service-description/support.md
         - name: 運作和監視
           href: service-description/operations-and-monitoring.md
+        - name: 診斷記錄
+          href: service-description/diagnostic-logs.md
         - name: 應用程式需求
           href: service-description/mmd-app-requirements.md
         - name: 應用程式控制
