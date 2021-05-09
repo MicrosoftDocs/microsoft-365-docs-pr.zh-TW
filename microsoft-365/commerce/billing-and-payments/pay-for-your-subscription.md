@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +13,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
-ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
+search.appverid: MET150
 description: 了解有哪些付款選項可以支付您的商務用 Microsoft 365 訂閱費用。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: 65454dcc71645b370d2ebfc875474151c0954a3c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+- commerce_billing
+- PPM_jmueller
+ms.date: 05/04/2021
+ms.openlocfilehash: 85fdcc0aca52b91ed34b1729f6eea805cce37ade
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245001"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280580"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>如何支付您的訂閱費用
 
@@ -89,6 +90,7 @@ ms.locfileid: "52245001"
  **從下方下拉式功能表選擇您的「帳單地址」國家/地區或區域。**
 
 > [!div class="op_single_selector"]
+>
 > - **選擇您所在的國家/地區**
 > - [阿富汗](../pay/afghanistan.md)
 > - [阿爾巴尼亞](../pay/albania.md)
@@ -254,7 +256,7 @@ ms.locfileid: "52245001"
 
 您無法自動由從發票付款變更為以不同的付款方法付款。 相反地，您必須[購買不同的訂閱](../try-or-buy-microsoft-365.md#buy-a-different-subscription)，透過信用卡或轉帳卡或銀行帳戶支付，[將所有使用者移至新訂閱](../subscriptions/move-users-different-subscription.md)，然後[取消舊的訂閱](../subscriptions/cancel-your-subscription.md)。
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
 [管理付款方式](manage-payment-methods.md) (文章)\
 [檢視帳單](view-your-bill-or-invoice.md) (文章)\

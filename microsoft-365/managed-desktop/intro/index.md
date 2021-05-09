@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 36745a0aafb70e7921c19db7c28984dcca1e2a63
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245525"
+ms.locfileid: "52259664"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
@@ -57,7 +57,7 @@ Microsoft 受管理的電腦為當今企業及其員工面臨的若干挑戰，�
 ## <a name="device-management"></a>裝置管理
 Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft 軟體之任務。
 
-- **硬體：** 您的 IT 部門不必研究並找出裝置是否與服務相容，我們提供了特定的硬體和軟體要求、工具和簡化選擇的程序，因此您可以放心地選擇裝置。 您可以在 [購買 Windows 10 專業版商務裝置](https://www.microsoft.com/windowsforbusiness/view-all-devices) 網站上透過篩選 Microsoft 受管理的電腦來尋找推薦的裝置。 您可以自行 (或配合合作夥伴) 取得裝置，或重複使用您已擁有的裝置 (如果它已在核准清單上)。 註冊裝置既簡單且直接，而在部署裝置之前，您也可以為您的使用者[自訂](../working-with-managed-desktop/config-setting-overview.md)裝置體驗的特定層面。
+- **硬體：** 您的 IT 部門不必研究並找出裝置是否與服務相容，我們提供了特定的硬體和軟體要求、工具和簡化選擇的程序，因此您可以放心地選擇裝置。 您可以在 [購買 Windows 10 專業版商務裝置](https://www.microsoft.com/windowsforbusiness/view-all-devices) 網站上透過篩選 Microsoft 受管理的電腦來尋找推薦的裝置。 您可以自行 (或配合合作夥伴) 取得裝置，或重複使用您已擁有的裝置。 註冊裝置既簡單且直接，而在部署裝置之前，您也可以為您的使用者[自訂](../working-with-managed-desktop/config-setting-overview.md)裝置體驗的特定層面。
 
 - **更新：** Microsoft 受管理的電腦會針對 Windows 10 品質和功能更新、驅動程式、韌體、防毒定義，以及用於企業更新的 Microsoft 365 應用程式來設定及管理 [部署群組](../service-description/updates.md)的所有層面。 其中包含所有更新的周延測試和驗證，從而確保已註冊的裝置永遠保持最新狀態並降低系統中斷機率，讓您的 IT 部門擺脫這個無止盡的過程。
 

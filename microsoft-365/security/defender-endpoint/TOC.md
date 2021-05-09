@@ -144,6 +144,7 @@
  
 ##### [疑難排解]()
 ###### [安裝問題的疑難排解](linux-support-install.md)
+###### [調查代理程式健康狀況問題](health-status.md)
 ###### [為雲端連線能力問題疑難排解](linux-support-connectivity.md)
 ###### [為效能問題疑難排解](linux-support-perf.md)
 ###### [為遺失的事件問題疑難排解](linux-support-events.md)

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +13,20 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: 瞭解如何透過關閉或開啟定期計費來續約您的 Microsoft 365。
-ms.openlocfilehash: afa899bd60b761d196df01c6f0bf18d51e546d8e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 25b0e4f8e94780bd301b41591cd1c06978cbd68e
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244645"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52285691"
 ---
 # <a name="renew-microsoft-365-for-business"></a>續約商務用 Microsoft 365
 
@@ -49,6 +49,7 @@ ms.locfileid: "52244645"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -60,6 +61,7 @@ ms.locfileid: "52244645"
 ::: moniker range="o365-21vianet"
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
+
 ::: moniker-end
 
 2. 選擇您想要管理週期性計費的訂閱。
@@ -68,17 +70,15 @@ ms.locfileid: "52244645"
 5. 選取 **[儲存]**。
 
     > [!NOTE]
+    >
     > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須 [重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
     > - 當 **週期性計費** 關閉時，該訂閱不會被取消。 如果您想要保持訂閱有效，您必須手動付款帳單。
     > - 如果您關閉 **週期性帳單**，訂閱會一直持續有效，直到到期為止。 您可以在 **訂閱和付款設置** 區的訂閱詳細訊息頁面上查看到期日期。
     > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[重新啟動您的訂閱](reactivate-your-subscription.md)
-  
-[當訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
-
-[輸入產品金鑰](../enter-your-product-key.md)
-  
-[購買商務用 Microsoft 365 試用版](../try-or-buy-microsoft-365.md)
+[重新啟動您的訂閱](reactivate-your-subscription.md) (文章)\
+[當訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md) (文章)\
+[輸入產品金鑰](../enter-your-product-key.md) (文章)\
+[購買商務用 Microsoft 365 試用版](../try-or-buy-microsoft-365.md) (文章)\
