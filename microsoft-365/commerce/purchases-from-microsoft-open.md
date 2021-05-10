@@ -22,18 +22,18 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 瞭解如何對商務版訂閱的 Microsoft 365 啟用、更新或新增授權。
 ms.date: 10/21/2020
-ms.openlocfilehash: e0e317dc0917876c6299fe1eea5812b7bfe0cd8b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 04df3b24693ac92875cc667aea61e0e9b35cb270
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107589"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293628"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>輸入您從 Microsoft 開放購買的產品金鑰
 
 如果您是從[Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298)購買 Microsoft 365 for business，本文是為您提供的。 購買產品金鑰的大量授權客戶可以遵循此主題，對訂閱啟用、更新或新增授權。
   
- **是否立即需要協助？** [撥打 Microsoft 支援服務](../admin/contact-support-for-business-products.md) 。 
+ **是否立即需要協助？** [撥打 Microsoft 支援服務](..//business-video/get-help-support.md) 。 
   
  **需要其他內容嗎？**
  
@@ -67,4 +67,4 @@ ms.locfileid: "52107589"
   
 大量授權客戶可造訪 [Microsoft 大量授權服務中心訓練與資源](https://go.microsoft.com/fwlink/p/?LinkId=618103)進一步瞭解。
   
-或者，如果您想要與人員交談，請 [致電 Microsoft 支援](../admin/contact-support-for-business-products.md)人員。
+或者，如果您想要與人員交談，請 [致電 Microsoft 支援](../business-video/get-help-support.md)人員。

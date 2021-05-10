@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 5aeaa51e5ab8974c8ca26453534396dac14b5853
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893482"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297200"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在環中部署 Microsoft Defender for Endpoint
 
@@ -96,7 +96,7 @@ Microsoft Defender for Endpoint 支援您可以在服務上架的各種端點。
 
 使用下列材料，為最適合您組織的端點架構選取適當的 Microsoft Defender。
 
-|**Item**|**描述**|
+|**項目**|**描述**|
 |:-----|:-----|
 |[![Microsoft Defender for Endpoint 部署策略的縮圖影像](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | 架構材料可協助您規劃下列架構的部署： <ul><li> 雲端-原生 </li><li> 共同管理 </li><li> 內部部署</li><li>評估與本機上架</li>
 
@@ -106,24 +106,24 @@ Microsoft Defender for Endpoint 支援您可以在服務上架的各種端點。
 ## <a name="existing-deployments"></a>現有部署
 
 ### <a name="windows-endpoints"></a>Windows 端點
-若為 Windows 和/或 Windows Server，您可以使用 **安全性更新驗證計畫 (SUVP)**，選取要提前測試的幾部電腦，以在 patch 星期二) 之前 (。
+在 Windows 和/或 Windows 伺服器上，您可以使用 **安全性更新驗證程式 (SUVP)**，選取要提前測試的幾部機器，以提前 (patch 星期二) 。
 
 如需詳細資訊，請參閱：
 - [何謂安全性更新驗證程式](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
-- [軟體更新驗證計畫和 Microsoft 惡意程式碼保護中心 TwC 互動式時程表第4部分](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+- [軟體更新驗證計畫及 Microsoft 惡意程式碼防護中心 TwC 互動時程表第4部分](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 
 ### <a name="non-windows-endpoints"></a>非 Windows 端點
-使用 macOS 和 Linux，您可以使用一些系統，並在 "InsidersFast" 通道中執行。
+使用 macOS 和 Linux，您可以使用一些系統，並在 Beta 通道中執行。
 
 >[!NOTE]
->理想情況下，至少有一個安全性管理員和一個開發人員，這樣您就能在組建進入「生產」通道之前找到相容性、效能和可靠性問題。
+>理想情況下，至少有一個安全性管理員和一個開發人員，這樣您就能在組建之前找到相容性、效能和可靠性問題，使其成為目前的通道。
 
-通道選擇會決定提供給裝置的更新類型及頻率。 在內部版本中的裝置快用的第一種方法是接收更新及新功能，然後是上一個程式-速度慢，最後透過生產。
+通道選擇會決定提供給裝置的更新類型及頻率。 Beta 中的裝置是第一個接收更新及新功能的方式，後面接著預覽，最後是「目前」。
 
 ![內幕用環的影像](images/insider-rings.png)
 
-為了預覽新功能並提供及早的意見反應，建議您將企業中的部分裝置設定為使用預覽人員-快或內部的速度緩慢。
+為了預覽新功能並提供及早的意見反應，建議您將企業中的部分裝置設定為使用 Beta 或 Preview。
 
 >[!WARNING]
 >初次安裝後切換通道需要重新安裝產品。 若要切換產品通道，請執行下列動作：卸載現有的套件、重新設定裝置以使用新通道，然後依照此檔中的步驟，從新位置安裝套件。

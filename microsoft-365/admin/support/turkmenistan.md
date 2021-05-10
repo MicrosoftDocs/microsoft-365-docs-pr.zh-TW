@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: acff7dd180233fe4c7ff9ca76ee6c0d573d9e34f
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 923e3ed22b00b95f751f140397c22631ba3025b5
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543757"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297509"
 ---
 # <a name="contact-support-for-turkmenistan"></a>對土庫曼斯坦的支援聯繫
 
-[尋找其他國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話號碼
 + 7 499 922 86 23

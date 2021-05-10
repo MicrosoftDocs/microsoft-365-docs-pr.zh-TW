@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 深入瞭解記帳帳戶及管理方式。
 ms.date: 03/17/2021
-ms.openlocfilehash: 504811e8cdfb84569a4bc3cea021c3c37030fca7
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: ecac005b8b49739cb74efc4ca2fae44667f37bad
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107577"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293640"
 ---
 # <a name="manage-billing-accounts"></a>管理計費帳戶
 
@@ -56,7 +56,7 @@ Microsoft 365 系統管理中心目前支援下列類型的計費帳戶：
 | 計費設定檔 | 計費設定檔會定義發票的內容，例如誰接收帳單、帳單傳遞的方式、付款條款和 PO 號碼。 若要在組織中散佈帳單，您可以建立多個帳單設定檔，並在購買時識別適當的帳單設定檔。 如需計費設定檔的詳細資訊，以及如何使用它們為組織建立更靈活的帳單選項，請 [瞭解計費設定檔](billing-and-payments/manage-billing-profiles.md)。 |
 
 > [!NOTE]
-> 如果您需要變更已 **售出** 的名稱或位址，但沒有看到 **編輯** 連結，您必須 [聯繫支援人員](../admin/contact-support-for-business-products.md) 加以變更。 要求 **銷售** 變更名稱的要求會要求信用支票。 完成 [此表單](https://www.microsoft.com/download/details.aspx?id=102732)，並準備好在您聯繫支援人員時，與 Microsoft 共用下列其中一個檔：
+> 如果您需要變更已 **售出** 的名稱或位址，但沒有看到 **編輯** 連結，您必須 [聯繫支援人員](../business-video/get-help-support.md) 加以變更。 要求 **銷售** 變更名稱的要求會要求信用支票。 完成 [此表單](https://www.microsoft.com/download/details.aspx?id=102732)，並準備好在您聯繫支援人員時，與 Microsoft 共用下列其中一個檔：
 >
 > - 政府簽發的檔或註冊信件
 > - 列印本機公司的登錄

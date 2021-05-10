@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 74eb1cb065410033a9f9ec538cc4ef5d8fe35a5e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c5e47b95390cf2235be1af8e75db6d0841dde780
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544741"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297785"
 ---
 # <a name="contact-support-for-saint-martin"></a>聖聖馬丁的連絡人支援
 
-[尋找其他國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話號碼
 + 1 312 843 5147

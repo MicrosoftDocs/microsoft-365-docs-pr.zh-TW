@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1ceea1dbdb3f9d149f4e5a0bd892eda2bb9128aa
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 44f583d32de166fe3d68a182406eb3a2ee814084
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114567"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297149"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>步驟 3. 執行第一個事件的事件後檢查
 
@@ -58,8 +58,8 @@ Microsoft 365您可以為組織提供與[MITRE ATT&CK Framework](https://attack.
 - [以身分識別為基礎的攻擊](first-incident-path-identity.md)
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [事件概觀](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [調查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解當商務用 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
-ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644653"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297269"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>若要深入了解，請參閱當商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？
 
 如果您的訂閱結束 (無論是因為到期或是因為您決定取消)，您在訂閱之前對於多種狀態的 Microsoft 365 服務、應用程式和客戶資料的存取權將會完全關閉或「*刪除*」。 如果您知道這個進度，您就更能針對讓您的訂閱回到作用中狀態做好準備，以免為時已晚，或者，如果您要離開 Microsoft 365，請在最終刪除之前備份您的資料。
 
-在您連絡 [Microsoft 365 客戶支援](../../admin/contact-support-for-business-products.md)之前，請仔細閱讀這個重要資訊。
+在您連絡 [Microsoft 365 客戶支援](../../business-video/get-help-support.md)之前，請仔細閱讀這個重要資訊。
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>訂閱到期時，資料會發生什麼情況？
 
@@ -125,7 +125,7 @@ ms.locfileid: "51644653"
   
 系統管理員和使用者都不能再存取訂閱隨附的服務或 Office 應用程式。 從使用者資料到文件和電子郵件等等的所有客戶資料，都會永久遭到刪除且無法復原。
   
-此時您無法重新啟動訂閱。 但是如果您是全域或計費系統管理員，您還是可以存取系統管理中心以管理其他訂閱，或購買您的企業所需的新訂閱。
+此時您無法重新啟動訂閱。但如果您是全域或計費系統管理員，您還是可以存取系統管理中心管理其他訂閱，或購買您的所屬企業所需的新訂閱。
   
 > [!NOTE]
 > - 新增與已刪除訂閱相同類型的新訂閱，並不會還原與已刪除訂閱相關聯的資料。
@@ -133,7 +133,7 @@ ms.locfileid: "51644653"
 
 ### <a name="what-happens-when-my-trial-ends"></a>試用版結束時，會發生什麼情況？
 
-試用版結束時，您就無法繼續免費使用 Microsoft 365。 此時，您有幾個選項：
+試用版結束後，您就無法繼續免費使用 Microsoft 365。此時您有以下幾個選擇：
 
 - **購買 Microsoft 365。** 試用版到期時，訂閱會進入「已到期」階段，再給您 30 天的時間 (大部分國家/地區和區域的多數試用版) 購買 Microsoft 365。 若要了解將試用版轉換成付費訂閱的方式，請參閱[從免費試用版購買訂閱](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial)。
 

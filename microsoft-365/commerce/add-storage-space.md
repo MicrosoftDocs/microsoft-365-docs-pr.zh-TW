@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 description: 瞭解如何在 Microsoft 365 訂閱中新增及減少檔案存放區。 使用額外的檔案存放區，您可以在 SharePoint 線上及 OneDrive 中儲存更多內容。
 ms.date: 04/02/2021
-ms.openlocfilehash: 576efee4ba0e1ad8fb43b3d8475d6c3a949ee1e8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107385"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293676"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>新增您訂閱的儲存空間
 
@@ -71,14 +71,14 @@ ms.locfileid: "52107385"
 
 ## <a name="increase-or-decrease-storage"></a>增加或減少儲存空間
 
-如果您已透過 **Office 365 多餘** 的檔案儲存體附加檔案購買額外的檔案存放區，您可以使用這些步驟來增加或減少訂閱的額外儲存空間。 您可以將儲存體縮小為低達 1 gb。 若要移除所有額外的儲存空間， [請與支援人員聯繫](../admin/contact-support-for-business-products.md)。
+如果您已透過 **Office 365 多餘** 的檔案儲存體附加檔案購買額外的檔案存放區，您可以使用這些步驟來增加或減少訂閱的額外儲存空間。 您可以將儲存體縮小為低達 1 gb。 若要移除所有額外的儲存空間， [請與支援人員聯繫](../business-video/get-help-support.md)。
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 在 [**產品**] 索引標籤上，選取包含 **Office 365 額外檔案儲存體** 附加元件的訂閱。
 3. 在 [產品詳細資料] 頁面的 [ **附加** 元件] 區段中，選取 [ **管理載入** 宏]。
 4. 在 [**管理** 增益集] 窗格中，從 [附加元件] 清單中，選擇 [ **Office 365 多餘****的** 檔案儲存體]。
 5. 在 [ **數量** ] 文字方塊中，輸入您要用於訂閱的 gb 儲存空間數目。
-6. 選取 [儲存]。
+6. 選取 **[儲存]**。
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>我的方案是否符合 Office 365 額外檔案儲存空間的資格？
 

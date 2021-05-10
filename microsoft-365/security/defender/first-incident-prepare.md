@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 88001dc7126a55539213d4c560127d573a09f4bd
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 76bead8fd855e4119db6297d2ab1a3d08d64a48c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114571"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297161"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>為第一個事件準備安全性狀況
 
@@ -53,7 +53,7 @@ Microsoft 365 的元件會顯示已執行之規則的破壞，該規則會將 Mi
 
 裝置風險會直接影響該裝置的使用者可存取的資源。 根據特定準則，「拒絕存取資源」是零信任和 Microsoft 365 Defender 的主要主題，提供判斷信任層級準則所需的資訊。 例如，Microsoft 365 Defender 可透過威脅和弱點管理頁面提供裝置的軟體版本層級，而條件式存取原則會限制具有過時或易受攻擊版本的裝置。
 
-「自動化」是實施及維護零信任環境的重要部分，同時也減少了可能會造成事件回應 (紅外) 事件的警示數目。 Microsoft 365 Defender 的元件可以是自動化的，例如，修正動作 (稱為 Microsoft 365 安全性中心) 的事件調查、通知動作，甚至是在[ServiceNow](https://microsoft.service-now.com/sp/)中建立支援票證。
+「自動化」是實施及維護零信任環境的重要部分，同時也減少了可能會造成事件回應 (紅外) 事件的警示數目。 Microsoft 365 Defender 的元件可以是自動化的，例如，[修正動作](m365d-autoir.md) (稱為 Microsoft 365 安全性中心) 的事件調查、通知動作，甚至是在[ServiceNow](https://microsoft.service-now.com/sp/)中建立支援票證。
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>步驟 2. 決定組織的安全性狀況
 
@@ -89,8 +89,8 @@ Microsoft 365 的元件會顯示已執行之規則的破壞，該規則會將 Mi
 
 瞭解如何 [會審和分析事件](first-incident-analyze.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [事件概觀](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [調查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 開啟可在桌面應用程式中針對 SharePoint 和 OneDrive 中已標記和加密的檔案啟用共同撰寫和自動儲存的設定。
-ms.openlocfilehash: 990ab13508565fb910abe0d5e759a93e54766915
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4b2c4551579d2609b66b5cd8fa8857f98b966a7d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245717"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297257"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>針對使用敏感度標籤加密的檔案啟用共同撰寫
 
@@ -173,7 +173,7 @@ ms.locfileid: "52245717"
 
 ![顯示已針對敏感度標籤開啟共同撰寫的選項](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-正如您在此設定開啟時從螢幕擷取畫面中所看到的一樣，您可以聯絡 [Microsoft 支援服務](/office365/admin/contact-support-for-business-products) 並要求關閉此設定。 此要求可能需要數天的時間，您必須證明您為租用戶全域系統管理員。 預期需要支付一般支援費用。 
+正如您在此設定開啟時從螢幕擷取畫面中所看到的一樣，您可以聯絡 [Microsoft 支援服務](../business-video/get-help-support.md) 並要求關閉此設定。 此要求可能需要數天的時間，您必須證明您為租用戶全域系統管理員。 預期需要支付一般支援費用。 
 
 如果支援工程師針對您的租用戶停用此設定：
 

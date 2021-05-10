@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1890b4f9b4c71efebe833ebaee62debedbf0fb72
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114607"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297221"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>步驟 1. 會審及分析您的第一個事件
 
@@ -97,9 +97,9 @@ Microsoft 365 Defender 中的事件回應會在您使用組織之優先順序的
 
 瞭解警報周圍的內容同樣重要。 預警通常並非單一獨立事件。 已建立的進程鏈、命令和動作可能不會同時發生。 因此，分析員必須尋找裝置時程表中的可疑實體的第一及最後一個活動，以瞭解警示的內容。
 
-使用 Microsoft 365 Defender 可讀取及分析資料，但分析者的最終目標是儘快回應事件。 雖然 Microsoft 365 Defender 可大幅減少[平均時間以修正 (MTTR) ](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)透過業界領先的自動修正功能，但總會需要手動分析的情況。 
+使用 Microsoft 365 Defender 可讀取及分析資料，但分析者的最終目標是儘快回應事件。 雖然 Microsoft 365 Defender 可大幅減少[平均時間以修正 (MTTR) ](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)透過業界領先的[自動化調查和回應](m365d-autoir.md)功能，但總會需要手動分析的情況。 
 
-以下為範例：
+以下為範例:
 
 1. 決定會審優先順序之後，分析員會透過選取事件名稱來開始深入分析。 此頁面會顯示 **事件摘要** ，其中的資料會顯示在索引標籤中，以協助進行分析。 在 [ **警示** ] 索引標籤下會顯示警示類型。 分析員可依序按一下每個警示，以深入查看個別的偵測來源。 
 
@@ -133,8 +133,8 @@ Microsoft 365 Defender 中的事件回應會在您使用組織之優先順序的
 
 瞭解如何 [修正事件](first-incident-remediate.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [事件概觀](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [調查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

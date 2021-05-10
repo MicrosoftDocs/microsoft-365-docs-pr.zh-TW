@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: 瞭解如何使用 Microsoft 關閉您的帳戶。
 ms.date: 04/02/2021
-ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 86232e3f433526cc60ef369eda03ef8d20ab08c9
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107469"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293664"
 ---
 # <a name="close-your-account"></a>關閉您的帳戶
 
@@ -69,7 +69,7 @@ ms.locfileid: "52107469"
 6. 針對每個停用的訂閱，重複步驟3到5，直到刪除所有訂閱為止。
 
 > [!NOTE]
-> 如果您無法立即刪除停用的訂閱， [請與支援人員聯繫](../admin/contact-support-for-business-products.md)。
+> 如果您無法立即刪除停用的訂閱， [請與支援人員聯繫](../business-video/get-help-support.md)。
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>步驟4：停用多重要素驗證
 

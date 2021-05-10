@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 深入瞭解由受世紀所運作的 Office 365，其設計目的是為了符合中國的安全、可靠及可伸縮雲端服務的需求。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 1ee7ba7be2e350195350a5c00e92ed10924657ac
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 00710d53033648764ed0e55eeb51ee66518e36f7
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274361"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297053"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由 21Vianet 運作的 Office 365
 
@@ -56,7 +56,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 |||
 |:-----|:-----|
 |自訂網域  <br/> |管理員可以建立及（或）使用透過中文特定網域提供者註冊的自訂網域。 如果您沒有自訂網域，您可以從網域註冊機構 [購買功能變數名稱](../get-help-with-domains/buy-a-domain-name.md) 。 如果您已經有一個，請 [找到您的網域註冊機構或 DNS 主機服務提供者](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> 此外，如果您使用 Office 365 SharePoint 線上服務建立公用網站，則中國網際網路合規性原則要求您取得網際網路內容提供者 (ICP) 號碼。  **附注：** 無法使用自訂功能變數名稱中不允許的字詞的自動驗證。           |
-|訂閱、帳單和技術支援  <br/> |由世紀所提供。 如需如何聯繫支援人員的資訊，請參閱[business support 的連絡人 Office 365](../contact-support-for-business-products.md)。  <br/> |
+|訂閱、帳單和技術支援  <br/> |由世紀所提供。 如需如何聯繫支援人員的資訊，請參閱[business support 的連絡人 Office 365](../../business-video/get-help-support.md)。  <br/> |
 |自助式密碼重設  <br/> |僅適用于系統管理員。 如需詳細資訊，請參閱[在由世紀運作的 Office 365 中變更或重設密碼](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
 |支援層級的安全性、隱私權、合規性及詳細資料  <br/> |由世紀所提供。  <br/> |
 |Office桌面設定  <br/> |Office 2010 和 Office 2007 無法使用 Office 桌面設定。 不過，系統管理員可以[將目前的 Office 桌面應用程式設定為搭配 Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)使用。  <br/> |
@@ -157,47 +157,47 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 | 至少一部 2013 CU5 伺服器  <br/> | 支援<sup>2</sup> <br/> | 不支援  <br/> | 不支援 <br/> | 支援  <br/> | 支援 <br/> |
 |||
 
-<sup>1</sup> 內部部署和 Exchange Online 信箱需要不同的搜尋。  <br/> <sup>2</sup> MRM 的「移至封存」原則可以用於位於 Exchange 2013 CU5 或更大伺服器上的信箱。 
+<sup>1</sup>內部部署和 Exchange Online 信箱需要不同的搜尋。  <br/> <sup>2</sup> MRM Exchange 2013 CU5 或更高版本伺服器上的信箱可使用「移至封存」原則。 
 
-若要深入瞭解使用由世紀主控的 Office 365 租使用者來設定混合部署，請參閱下列主題： 
+若要深入瞭解設定由世紀主控 Office 365 承租人的混合部署，請參閱下列主題： 
 - [混合式部署的必要條件](/exchange/hybrid-deployment-prerequisites)
 - [混合式部署的憑證需求](/exchange/certificate-requirements) 
 - [使用混合式設定向導建立混合式部署](/exchange/hybrid-deployment/deploy-hybrid)
 
 > [!IMPORTANT]
->  [Exchange Server 部署助理](https://go.microsoft.com/fwlink/?LinkId=506768)是免費的 web 式工具，可協助您設定內部部署組織與 office 365 之間的混合式部署，或完全遷移至 office 365。 此工具會提出一些簡單的問題，然後根據您的回答來建立自訂的檢查清單，並指示如何設定混合式佈署。 強烈建議使用部署助理來設定混合部署。 > 針對不想升級或新增 Exchange 2013 CU5 伺服器的組織，Exchange 2013 SP1 組織可以設定其內部部署和 Exchange Online 組織之間的共用行事曆空閒/忙碌共用。 若要設定此混合部署功能，請參閱 [使用由世紀運作的 Office 365 設定 Exchange 混合式部署功能](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d)。 
+>  [Exchange Server 部署助理](https://go.microsoft.com/fwlink/?LinkId=506768)是免費的 web 式工具，可協助您設定內部部署組織與 Office 365 之間的混合式部署，或是完全遷移至 Office 365。 此工具會提出一些簡單的問題，然後根據您的回答來建立自訂的檢查清單，並指示如何設定混合式佈署。 強烈建議使用部署助理來設定混合部署。 > 對於不想升級或新增 Exchange 2013 CU5 伺服器的組織而言，Exchange 2013 SP1 組織可以在內部部署和 Exchange Online 組織之間設定共用的行事曆空閒/忙碌共用。 若要設定此混合部署功能，請參閱[使用由世紀運作的 Office 365 設定 Exchange 混合式部署功能](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d)。 
 
 |||  
 |---|---|
-|共存和 Free/Busy 共用|在兩個或多個內部部署 Exchange 組織之間共用行事曆空閒/忙碌資訊，也不支援兩個世紀 Office 365 租使用者之間的共用。 這項功能即將推出！ | 
+|共存和 Free/Busy 共用|在兩個或多個內部部署 Exchange 組織之間共用行事曆空閒/忙碌資訊，或在兩個世紀 Office 365 租使用者之間共用時，不支援。 這項功能即將推出！ | 
 |行事曆共用|Exchange 2013 SP1 及更高版本支援手動設定網際網路行事曆與其他內部部署 Exchange 或 Exchange Online 組織共用。 如需手動設定此功能的詳細資訊，請參閱 [啟用網際網路行事曆發佈](/exchange/enable-internet-calendar-publishing-exchange-2013-help)。 | 
-將 Apple mobile 裝置上的 Exchange 連絡人資料共用至 Apple iCloud。 |此設定/功能預設為啟用。 管理員應該關閉此功能，以協助防止使用者在組織外共用 Exchange 資料。 |
-|Exchange 主控的電子郵件加密  |無法使用。  |
+將 Apple mobile 裝置上的 Exchange 連絡人資料共用到 apple iCloud。 |此設定/功能預設為啟用。 管理員應該關閉此功能，以協助防止使用者共用組織外部的 Exchange 資料。 |
+|Exchange主控電子郵件加密  |無法使用。  |
 |Office 365 郵件加密  |即將推出。  |
    
 ## <a name="office"></a>Office
 
 |||
 |:-----|:-----|
-|從開啟 **的檔案** 中開啟 Office 應用程式 \> ****.。。 按鈕  <br/> |可用。 即將推出漫遊的功能。  <br/> |
-|在使用 Microsoft 帳戶登入時，儲存至商務用 OneDrive  <br/> |若要在您的國家/地區內保留資料，當您使用 Microsoft 帳戶登入 Office 時，您無法將檔儲存至您的組織網站 (OneDrive 商務) 。  <br/> |
+|從 [開啟的檔案從 **...] 開啟的** Office 應用程式。 \>  按鈕  <br/> |可用。 即將推出漫遊的功能。  <br/> |
+|使用 Microsoft 帳戶登入時，儲存至商務用 OneDrive  <br/> |若要在您的國家/地區內保留資料，當您使用 Microsoft 帳戶登入 Office 時，您無法將檔儲存至您的組織網站 (商務用 OneDrive) 。  <br/> |
 |能夠轉譯文字或頁面  <br/> |此功能可供使用，但預設為關閉。 系統管理員可以將其開啟，但會收到警告訊息，指出可讓您的國家/地區以外的資料存取。  <br/> |
    
 ## <a name="office-client"></a>Office 用戶端
 
 |||
 |:-----|:-----|
-|從 Office 用戶端中管理帳戶 ()   <br/> |這項功能，以及要移至 Office 365 入口網站的其他功能，目前指向全球 Office 365 入口網站，您無法使用由您的 Office 365 （由世紀帳戶運作）進行登錄。 這是正修正的已知問題。 同時，您可以使用 URL 登 https://portal.partner.microsoftonline.cn/ 入您的帳戶，並從那裡管理設定。 如需詳細資訊，請參閱 [管理您的 Microsoft 365 應用程式企業版帳戶（由世紀運作的 Office 365](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)）。  <br/> |
+|管理 Office 用戶端中的帳戶 ()   <br/> |這項功能，以及要移至 Office 365 入口網站的其他功能，目前指向世界上的 Office 365 入口網站，您無法使用系統帳戶運作的 Office 365 登入。 這是正修正的已知問題。 同時，您可以使用 URL 登 https://portal.partner.microsoftonline.cn/ 入您的帳戶，並從那裡管理設定。 如需詳細資訊，請參閱[管理您的 Microsoft 365 Apps 企業版帳戶以取得由世紀運作的 Office 365](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
 |||
 |:-----|:-----|
 |插入和播放線上影片  <br/> |無法使用。  <br/> |
-|對 Bing 服務的資訊檢索窗格整合  <br/> |無法使用。  <br/> |
+|與 Bing 服務整合的資訊檢索窗格  <br/> |無法使用。  <br/> |
 |協助工具檢查程式  <br/> |無法使用。  <br/> |
 |課程筆記本  <br/> |無法使用。  <br/> |
-|Forms  <br/> |無法使用。  <br/> |
+|表單  <br/> |無法使用。  <br/> |
 |沉浸式讀取器  <br/> |無法使用。  <br/> |
 |插入線上圖片  <br/> |無法使用。  <br/> |
 |會議詳細資料  <br/> |無法使用。  <br/> |
@@ -212,32 +212,32 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 |||
 |:-----|:-----|
 |支援商務用 Skype 的網域提供者  <br/> |您必須使用支援 SRV 記錄的中文特有網域提供者註冊您的網域。 如需如何註冊網域的詳細資訊，請參閱 [尋找您的網域註冊機構或 DNS 主機服務提供者](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> |
-|電話撥入式會議 (為無法進入電腦的使用者加入會議的電話存取的功能)   <br/> |您可以在商務用 Skype 和商務用 Skype 系統管理中心中看到選項，以進行電話撥入式會議和提供者，但這些功能仍無法使用。 即將推出。  <br/> |
-|商務用 Skype 桌面説明  <br/> |您可以在 [這裡](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad)找到商務用 Skype 桌面的說明。 不過，除非您是使用 Office 隨選即用，否則無法從產品取得桌面説明。  <br/> |
+|電話撥入式會議 (為無法進入電腦的使用者加入會議的電話存取的功能)   <br/> |您可以在「商務用 Skype」和「商務用 Skype 系統管理中心」中看到電話撥入式會議與提供者的選項，但這些功能仍無法使用。 即將推出。  <br/> |
+|商務用 Skype 桌面説明  <br/> |您可以在[這裡](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad)找到商務用 Skype 桌面的說明。 不過，除非您使用 Office 隨選即用，否則無法從產品取得桌面説明。  <br/> |
 |Lync 2010  <br/> |無法使用。  <br/> |
-|當您使用具有 Google Chrome 的 Samsung 型裝置時，從行事曆加入會議的能力  <br/> |即將推出。 同時，您可以開啟商務用 Skype、前往會議視圖，並從那裡加入會議。  <br/> |
-|Polycom、Ares 和 Tanjay 等桌面電話裝置  <br/> |無法使用。  <br/> |
+|當您使用具有 Google Chrome 的 Samsung 型裝置時，從行事曆加入會議的能力  <br/> |即將推出。 同時，您可以開啟商務用 Skype，移至會議視圖，並從那裡加入會議。  <br/> |
+|桌面電話裝置，例如 Polycom、Ares 和 Tanjay  <br/> |無法使用。  <br/> |
 |整合合作夥伴  <br/> |無法使用。  <br/> |
 |語音功能（例如語音信箱）可以從 PSTN 號碼撥打和接聽電話、來電轉接、來電轉接  <br/> |無法使用。 這些功能需要整合合作夥伴。  <br/> |
-|封存或標記使用者的電子郵件和 IMs 以進行 Exchange 的功能  <br/> |無法使用。  <br/> |
-|商務用 Skype Web 用戶端 (LWA) browser 支援 Firefox 29  <br/> |無法使用，但您可以使用舊版本的 Firefox。  <br/> |
-|整合連絡人存放區 (UCS)   <br/> |使用者可停用在 Microsoft Exchange Server 2013 中保留其所有商務用 Skype 連絡人資訊的功能。  <br/> |
+|在 Exchange 中封存或標記使用者的電子郵件和 IMs 的功能  <br/> |無法使用。  <br/> |
+|商務用 SkypeWeb 用戶端 (LWA) browser 支援的 LWA （適用于 Firefox 29）  <br/> |無法使用，但您可以使用舊版本的 Firefox。  <br/> |
+|整合連絡人存放區 (UCS)   <br/> |使用者可停用 Microsoft Exchange Server 2013 中所有商務用 Skype 連絡人資訊的功能。  <br/> |
 | 會議裝置：  <br/>  Polycom CX5100 的整合會議站  <br/>  Logitech ConferenceCam CC3000e  <br/>  Polycom CX7000  <br/>  Polycom CX3000  <br/>  Logitech BCC950 ConferenceCam  <br/>  Polycom CX5000 HD  <br/> |無法使用。  <br/> |
    
 ## <a name="data-subject-requests-for-gdpr"></a>GDPR 的資料主體要求
 
-GDPR 授與個人 (，或資料主體) 某些與處理個人資料的處理相關的權利，包括更正不正確的資料、擦除資料或限制處理、接收資料，以及完成將資料傳輸至另一個控制器的要求。 由世紀運作之 Office 365 的租使用者系統管理員角色，可透過下列方式代表資料主體要求資料：
+GDPR 授與個人 (，或資料主體) 某些與處理個人資料的處理相關的權利，包括更正不正確的資料、擦除資料或限制處理、接收資料，以及完成將資料傳輸至另一個控制器的要求。 由世紀運作之 Office 365 的承租人系統管理員角色可以以下列方式代表資料主體要求資料：
   
-- 租使用者系統管理員可以使用 Azure Active Directory 系統管理中心，永久刪除 Azure Active Directory 和相關服務中的資料主體。
+- 租使用者系統管理員可以使用 Azure Active Directory 系統管理中心，從 Azure Active Directory 和相關的服務中永久刪除資料主體。
     
-- 租使用者系統管理員可以使用資料記錄匯出，將系統產生的記錄匯出至由租使用者管理員運作。
+- 承租人系統管理員可以使用資料記錄匯出，將系統產生的 Microsoft 服務記錄匯出。
     
 如需詳細資訊和指示，請參閱 [GDPR (DSR) 的資料主體要求](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)。
 
 ## <a name="related-content"></a>相關內容
 
-[嘗試或購買 Microsoft 365 for business 訂閱](../../commerce/try-or-buy-microsoft-365.md) (文章) 
+[嘗試或購買 Microsoft 365 商務訂閱](../../commerce/try-or-buy-microsoft-365.md) (文章) 
 
-[受世紀運作之 Office 365 的 Azure 資訊保護支援](parity-between-azure-information-protection.md) (文章) 
+[由世紀運作的 Office 365 Azure 資訊保護](parity-between-azure-information-protection.md) (文章) 
 
 [查看您的帳單或取得發票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (文章) 

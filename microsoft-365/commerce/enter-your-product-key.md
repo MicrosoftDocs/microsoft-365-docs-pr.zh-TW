@@ -23,12 +23,12 @@ ms.custom:
 ms.reviewer: jkinma
 description: 瞭解如何兌換在零售商店購買的 Microsoft 365 商務標準版產品金鑰。
 ms.date: 11/13/2020
-ms.openlocfilehash: 0e647b8d52d024750b3944a03133755c1257ee4c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: ed9fb3c1ecc02930f55ddc11c523cf5989d6bbbe
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107445"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297317"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>為 Microsoft 365 商務標準版輸入您的產品金鑰
 
@@ -67,4 +67,4 @@ ms.locfileid: "52107445"
 
 查看此常見錯誤與解決方案清單：[商務用 Microsoft 365 的產品金鑰問題？](product-key-errors-and-solutions.md)
   
-或者，請 [致電 Microsoft 支援人員](../admin/contact-support-for-business-products.md)。
+或者，請 [致電 Microsoft 支援人員](../business-video/get-help-support.md)。

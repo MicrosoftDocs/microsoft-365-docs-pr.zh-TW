@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 瞭解如何對組織設定檔進行變更，例如組織名稱、位址、電話、技術連絡人及電子郵件。
 ms.date: 03/30/2021
-ms.openlocfilehash: d27ad65b9f58d4da6c01b32c9441c0296a17e3bd
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 05908de7c4fc899669da2ba2a3d3024855f4b394
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107011"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297089"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>變更貴組織的地址、技術連絡人等等
   
@@ -55,7 +55,7 @@ ms.locfileid: "52107011"
 |---------|---------|
 |名稱  <br/>   | 在這裡輸入的名稱就是使用者將會在下列頁面上看到的名稱：  <br/>  登入頁面：如果使用者以公司或學校電子郵件地址設定其他 Microsoft 帳戶，他們可能會在登入頁面上看到組織名稱。這可協助他們區別 公司或學校帳戶 與其他帳戶，以識別要用哪個帳戶登入。  <br/>  組織設定檔連結和頁面：組織設定檔的連結會顯示組織名稱。  <br/>  Yammer 導覽：在 Yammer 中，左側導覽使用組織名稱做為家用 Yammer 網路的名稱。  <br/> OneDrive 同步處理用戶端：組織名稱會顯示在 Windows 上的檔案資源管理器和 Finder 上的 Finder、檔路徑、OneDrive 活動中心、OneDrive cloud 圖示的工具提示，以及 [OneDrive 設定] 視窗。 目前，更新組織名稱不會將其更新為已設定的用戶端。 <br/> MS Teams： Teams 中的組織切換器顯示組織名稱 <br/>  |
 |地址、縣/市、州/省、郵遞區號  <br/>     | 在此輸入的位址是您在帳單上看到的內容，在 [銷售方式：帳單上的銷售位址與您的設定檔頁面面上的組織位址相同] (請參閱[瞭解您的帳單或發票，以取得商務) Microsoft 365](../../commerce/billing-and-payments/understand-your-invoice2.md) 。  <br/>        |
-|國家或地區  <br/>    | 這是公司總部所在的國家或地區。選取的國家或地區會決定您適用的服務、您國家或地區的稅金及帳單貨幣，以及最接近您的資料中心的位置 (請參閱 [Microsoft Office 授權限制](https://office.microsoft.com/redir/FX103037529))。  <br/>附注：選取之後，就無法變更國家或地區。 如果您要變更選項，必須取消訂閱後再次註冊。 如需此程式的協助，請 [與支援人員聯繫](../contact-support-for-business-products.md)。        |
+|國家或地區  <br/>    | 這是公司總部所在的國家或地區。選取的國家或地區會決定您適用的服務、您國家或地區的稅金及帳單貨幣，以及最接近您的資料中心的位置 (請參閱 [Microsoft Office 授權限制](https://office.microsoft.com/redir/FX103037529))。  <br/>附注：選取之後，就無法變更國家或地區。 如果您要變更選項，必須取消訂閱後再次註冊。 如需此程式的協助，請 [與支援人員聯繫](../../business-video/get-help-support.md)。        |
 |電話  <br/>     | 這是您公司的主要電話號碼，通常是公司總部的號碼。  <br/>        |
 |技術連絡人  <br/> |這是管理您的 Microsoft 365 訂閱之主要技術人員的電子郵件地址。 這是將接收 Microsoft 365 服務狀態之通訊的人員。  <br/> |
 |慣用語言  <br/> |此慣用語言會決定 Microsoft 傳送至您組織之所有通訊的語言。當您註冊時，此設定會決定 SharePoint Online 使用的語言，也就是使用者在您小組網站上看到的語言。如果您在註冊後變更語言喜好設定，日後所有的通訊就會以最新選取的語言傳送。    <br/> 附注：無法變更 SharePoint 線上使用的語言。           |

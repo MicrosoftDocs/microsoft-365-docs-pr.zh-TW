@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66c9821e5db00cc3da5718f52b8aaaeff5a431e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5ea847e822e094049dd8f0b941f22f3bb4f7eff4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114563"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297173"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>回應第一個事件的簡介
 
@@ -56,8 +56,19 @@ Microsoft 365 Defender 中的事件是分析和事件回應的邏輯起始點。
 
 請確定您的組織和 Microsoft 365 租使用者已[準備好進行事件處理](first-incident-prepare.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
+
+Microsoft 365 Defender 的事件回應指導：
 
 - [事件概觀](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [調查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)
+
+其他第一個事件回應的範例：
+
+- [網路釣魚電子郵件](first-incident-path-phishing.md)
+- [Identity-基礎攻擊](first-incident-path-identity.md)
+
+[詳細的事件回應行動手冊](https://docs.microsoft.com/security/compass/incident-response-playbooks)
+
+

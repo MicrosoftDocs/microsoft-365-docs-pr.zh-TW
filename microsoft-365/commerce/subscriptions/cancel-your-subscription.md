@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: 深入了解如何取消您的商務用 Microsoft 365 試用版或付費訂閱。
 ms.date: 04/08/2021
-ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 329bc10adbe6c2ad0efe3609e7cb72141ae346bd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244657"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297305"
 ---
 # <a name="cancel-your-subscription"></a>取消您的訂閱
 
-*資格：* 如果您指派給使用者的授權少於 25 個，您可以隨時在 Microsoft 365 系統管理中心線上取消商務用 Microsoft 365 試用版或付費訂閱。 如果您指派給使用者的授權超過 25 個，請減少為少於 25 個，或[連絡支援人員以取消您的訂閱](../../admin/contact-support-for-business-products.md)。
+*資格：* 如果您指派給使用者的授權少於 25 個，您可以隨時在 Microsoft 365 系統管理中心線上取消商務用 Microsoft 365 試用版或付費訂閱。 如果您指派給使用者的授權超過 25 個，請減少為少於 25 個，或[連絡支援人員以取消您的訂閱](../../business-video/get-help-support.md)。
 
 *退款：* 任何按比例計算的款項將會在下個計費週期內退回。
 

@@ -28,26 +28,26 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 瞭解如何從 Gmail 或其他電子郵件提供者匯入連絡人、行事曆和電子郵件，並將其遷移至 Microsoft 365。
-ms.openlocfilehash: 752138d3194379529d78a299b36aa177a832d55b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 56075c19e15621755a1500d37513430842ac99e8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580807"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297041"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>將電子郵件和連絡人移轉到 Microsoft 365
 
-將電子郵件從 Gmail 或其他電子郵件提供者匯入或遷移至 Microsoft 365。
+匯入或遷移來自 Gmail 或其他電子郵件提供者的電子郵件，以 Microsoft 365。
   
- **需要協助做什麼？**  [與 Microsoft 365 聯繫以取得商務支援](../contact-support-for-business-products.md) 。 
+ **需要協助做什麼？**  [Microsoft 365 商務支援人員的連絡方式](../../business-video/get-help-support.md)。 
   
-您必須使用安裝在桌面上的 Outlook 版本來執行這項工作。 Outlook 包含大部分的 Microsoft 365 [方案](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
+您必須使用安裝在桌面上的 Outlook 版本，才能執行這項工作。 Outlook 包含在大部分 Microsoft 365[計畫](https://go.microsoft.com/fwlink/p/?LinkId=723731)中。
   
 ### <a name="migrate-gmail-to-microsoft-365"></a>將 Gmail 遷移至 Microsoft 365
 
 請遵循下列步驟，將電子郵件、連絡人及行事曆從 Gmail 匯入至具有 Microsoft 365 的 Outlook：
   
-- [將 Gmail 匯入至 Outlook](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
+- [將 Gmail 匯入 Outlook](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
 - [匯入連絡人至 Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
@@ -55,9 +55,9 @@ ms.locfileid: "51580807"
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### <a name="import-outlook-pst-files-to-microsoft-365-desktop"></a>將 Outlook pst 檔案匯入至 Microsoft 365 (桌面) 
+### <a name="import-outlook-pst-files-to-microsoft-365-desktop"></a>將 Outlook pst 檔案匯入 Microsoft 365 (桌面) 
 
-請遵循下列步驟，將電子郵件、連絡人及行事曆從 Outlook 匯出到 .pst 檔案，然後將該檔案匯入至使用 Microsoft 365 的 Outlook：
+請遵循下列步驟，將電子郵件、連絡人及行事曆從 Outlook 匯出到 .pst 檔案，然後匯入該檔案，以 Microsoft 365 Outlook：
   
 1. [匯出電子郵件、連絡人及行事曆](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     
@@ -69,13 +69,13 @@ ms.locfileid: "51580807"
     
 2. [匯入連絡人至 Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-若要啟動此程式，請開啟 Outlook， **然後選擇 [** 檔案開啟匯出] [匯 \> **&amp;** \> **入/匯出**]。
+若要開始處理常式，請開啟 Outlook，**然後選擇 [** 檔案 \> **開啟 &amp; 匯出** \> **匯入/匯出**]。
   
 ![Outlook 2016 中的 [檔案] 功能表](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![&amp;在 Outlook 2016 中開啟匯出命令](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 中的匯入/匯出按鈕](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>在 Outlook 中查看其他電子郵件帳戶
 
-只想要在 Outlook 中查看其他提供者 (例如 Gmail、Yahoo 或 Live.com) 的電子郵件嗎？ 不需要匯入或遷移。 您可以設定 Outlook 或 Outlook Web App，使您可以從 Microsoft 365 信箱的相同位置存取其他帳戶，以及傳送、接收及讀取傳送至這些帳戶的電子郵件。
+只想要查看 Outlook 中的其他提供者 (例如 Gmail、Yahoo 或 Live.com) 中的電子郵件嗎？ 不需要匯入或遷移。 您可以設定 Outlook 或 Outlook Web App，這樣您就可以從 Microsoft 365 信箱的相同位置存取其他帳戶，以及傳送、接收及讀取傳送至這些帳戶的電子郵件。
   
 ### <a name="outlook-desktop"></a>Outlook (桌面) 
 
@@ -85,8 +85,8 @@ ms.locfileid: "51580807"
     
 需要更詳細的步驟嗎？ 請參閱 [新增帳戶](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)。
   
-[![顯示 backstage 視圖中 Outlook 帳戶資訊頁面的螢幕擷取畫面。](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
+[![螢幕擷取畫面顯示 backstage 視圖中 Outlook 帳戶資訊] 頁面。](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>多個信箱：系統管理員可以大量將電子郵件、連絡人及行事曆匯入 Microsoft 365
 
-視您的來源電子郵件系統而定，您可以選擇數種大量遷移方法。 將 [多個電子郵件帳戶遷移至 Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) 的閱讀方式，以決定哪種方法適用于您。
+視您的來源電子郵件系統而定，您可以選擇數種大量遷移方法。 閱讀將[多個電子郵件帳戶遷移至 Microsoft 365 的方式](/Exchange/mailbox-migration/mailbox-migration)，以決定哪種方法適用于您。

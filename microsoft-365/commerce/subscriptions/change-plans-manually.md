@@ -22,12 +22,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 購買新的訂閱以手動變更訂閱，並確保訂閱同時列出並使用中。
 ms.date: 03/17/2021
-ms.openlocfilehash: 1dc7ff8cd6b8a43db7d70ab6c17aec16a020baac
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 7361b459e61961efbb729d80dcbb55dfdad65933
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107677"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293616"
 ---
 # <a name="change-plans-manually"></a>手動變更計畫
 
@@ -74,7 +74,7 @@ ms.locfileid: "52107677"
 
 - **如果您已購買兩個訂閱，而且不會同時列出**，則可能是針對不同的網域) ，購買不同組織 (。 訂閱無法跨組織界限。
 
-- **如果您知道有其他訂閱**，且未在這裡列出，或未使用 active，請 [致電 Microsoft 支援人員](../../admin/contact-support-for-business-products.md)。
+- **如果您知道有其他訂閱**，且未在這裡列出，或未使用 active，請 [致電 Microsoft 支援人員](../../business-video/get-help-support.md)。
 
 ### <a name="what-about-the-old-licenses"></a>舊的授權為何？
 
@@ -115,4 +115,4 @@ ms.locfileid: "52107677"
 如果您只將部分使用者移至不同的訂閱，請移除您不再需要的 [授權](../licenses/buy-licenses.md) 。
 
 ## <a name="call-support-to-help-you-change-plans"></a>通話支援以協助您變更方案
-[撥打 Microsoft 支援服務](../../admin/contact-support-for-business-products.md)
+[撥打 Microsoft 支援服務](../../business-video/get-help-support.md)

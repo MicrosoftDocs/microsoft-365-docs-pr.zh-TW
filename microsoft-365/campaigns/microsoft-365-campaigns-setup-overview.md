@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 商務版 Premium 的安裝程式概述
+title: Microsoft 365 商務進階版的設定綜述
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -24,33 +24,33 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Microsoft 365 商務版市場活動或其他企業版的設定綜述
-ms.openlocfilehash: e612771ca4e967462f190c41396f16c6faf9d195
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+description: 針對市場活動或其他企業 Microsoft 365 商務進階版的設定綜述
+ms.openlocfilehash: 08fe74e519c2efab14e4362e35b89128a8442cfb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398262"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297377"
 ---
 # <a name="set-up-microsoft-365"></a>設定 Microsoft 365
 
-本文說明設定 Microsoft 365 的處理常式。 任何包含 Microsoft 365 商務版 Premium 的人都可以使用此指南來逐步提高安全性。
+本文說明設定 Microsoft 365 的處理常式。 任何有 Microsoft 365 商務進階版的人都可以使用此指導方針來逐步提高安全性。
 
 ## <a name="admins-set-up-microsoft-365"></a>Admins：設定 Microsoft 365
 
-下圖說明管理員如何設定 Microsoft 365。
+下圖說明管理員設定 Microsoft 365 的方式。
 
 ![設定 Microsoft 365 的步驟](../media/M365-democracy-SetUpProcess.png)
 
-針對符合特殊定價的行銷活動，請 [從 microsoft 提出邀請](https://m365forcampaigns.microsoft.com/)，然後 [註冊 microsoft 365 以取得促銷活動](m365-campaigns-sign-up.md)，以開始使用。 若要完成安裝程式，請 [執行安裝精靈](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以設定核心設定。
+針對符合特殊定價的行銷活動，請[從 Microsoft 提出邀請](https://m365forcampaigns.microsoft.com/)，然後[註冊行銷活動的 Microsoft 365](m365-campaigns-sign-up.md)開始著手。 若要完成安裝程式，請 [執行安裝精靈](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以設定核心設定。
 
-對於所有其他組織，在 [註冊 Microsoft 365 商務版 Premium](../business/sign-up.md)後，請執行 [安裝精靈](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以設定核心設定，以完成安裝。
+對於所有其他組織，在您[註冊 Microsoft 365 商務進階版](../business/sign-up.md)之後，請執行[安裝精靈](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)以設定核心設定，以完成安裝。
 
 針對所有組織而言，安全性保護的方式如下： [保護系統管理員帳戶](m365-campaigns-protect-admin-accounts.md)、 [保護郵件和資料的存取](m365-campaigns-conditional-access.md)，以及 [增加威脅防護](m365-campaigns-increase-protection.md)。
 
 ## <a name="everyone-set-up-your-devices"></a>所有人：設定您的裝置
 
-使用者必須花幾分鐘的時間來設定裝置以與此環境搭配使用。 若為主要使用者 (駭客) 最高價值目標的使用者，您可以設定和預先設定新裝置。 這可協助他們在使用 Microsoft 365 認證登入時立即開始使用。
+使用者必須花幾分鐘的時間來設定裝置以與此環境搭配使用。 若為主要使用者 (駭客) 最高價值目標的使用者，您可以設定和預先設定新裝置。 這可協助他們在使用 Microsoft 365 認證登入時開始使用。
 
 ![使用者裝置設定程式](../media/m365-democracy-user-device-setup.png)
   
@@ -65,4 +65,4 @@ ms.locfileid: "51398262"
 
  **如果您需要連絡客戶支援：**
   
-做為 Microsoft 365 系統管理員，您可以存取我們的客戶支援小組， **[與商務產品的支援人員聯繫-系統管理](../admin/contact-support-for-business-products.md)說明**
+做為 Microsoft 365 的系統管理員，您可以存取我們的客戶支援小組， **[與商務產品的支援人員聯繫-系統管理](../business-video/get-help-support.md)說明**

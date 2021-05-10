@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 深入瞭解移動至 Microsoft 365 商務的需求和考慮。
-ms.openlocfilehash: ba97253beed1544d8f993a462559037a0a1a4281
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b4d2b5d500b73b62c67d3f8126b6313484e2bc78
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244500"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297029"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>規劃商務 Microsoft 365 的設定
 
@@ -56,7 +56,7 @@ ms.locfileid: "52244500"
   
 如果您未完成安裝精靈，您可以隨時從系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **設定** 完成安裝工作。 從這裡，您可以從其他電子郵件服務遷移電子郵件和連絡人、變更您系統管理員帳戶的網域、管理帳單資訊、新增或移除使用者、重設密碼，以及執行其他商務功能。 如需安裝精靈與 **安裝程式** 頁面之間差異的詳細資訊，請參閱 [Microsoft 365 安裝精靈與設定頁面之間的差異](o365-setup-wizard-and-setup-page.md)。
 
-如果您遇到任何困難，請致電與我們連絡。[我們隨時為您效勞！](../contact-support-for-business-products.md)
+如果您遇到任何困難，請致電與我們連絡。[我們隨時為您效勞！](../../business-video/get-help-support.md)
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>何時不應使用設定精靈：Active Directory 同步處理和混合式環境
 
@@ -138,7 +138,7 @@ Microsoft 365 為個人、小型組織和企業提供雲端儲存空間。 如�
 - **如果您的員工少於 50 人：**
 
   - **尋求協助，我們會致電您**。 在您購買 Microsoft 365 後，您就可以存取系統管理中心 (不需要執行安裝程式，即可) 取得此。 在系統管理中心的底部，選取 [ **需要協助]？** 請描述您的問題，我們會致電您。 
-  - **[Microsoft 365 商務支援人員](../contact-support-for-business-products.md)，請致電您的問題**。 我們隨時為您效勞！ 
+  - **[Microsoft 365 商務支援人員](../../business-video/get-help-support.md)，請致電您的問題**。 我們隨時為您效勞！ 
   - **請考慮聘用 [Microsoft 合作夥伴](https://go.microsoft.com/fwlink/?linkid=391089)**。 如果您很短的時間，或具備高級需求 (例如，將數以千計的檔案移至 Microsoft 365 雲端儲存區，或與其他軟體) 整合，有經驗的合作夥伴可能會有很大的説明。 
 
 - **如果您有超過50名員工**，可使用 FastTrack 的內 [架中心](https://go.microsoft.com/fwlink/?LinkId=517115) 來協助您進行部署。

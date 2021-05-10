@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2fe6c5b1b0feea2163c0a2bcc871921a885abb85
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ed597c55a646eb00d6e6d256c287b22c119f8148
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114743"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297341"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>步驟 2. 修正第一個事件
 
@@ -36,7 +36,7 @@ ms.locfileid: "52114743"
 **適用於：**
 - Microsoft 365 Defender
 
-Microsoft 365Defender 不僅提供偵測和分析功能，還提供惡意程式碼的包容和 eradication。 包容包含減少攻擊影響的步驟，eradication 可確保從網路中移除攻擊者活動的所有痕跡。  Microsoft 365Defender 提供數項修復動作，可根據您的作業系統和攻擊類型設定為自動修復。
+Microsoft 365Defender 不僅提供偵測和分析功能，還提供惡意程式碼的包容和 eradication。 包容包含減少攻擊影響的步驟，eradication 可確保從網路中移除攻擊者活動的所有痕跡。  Microsoft 365Defender 提供數項修復動作，可根據您的作業系統和攻擊類型設定為[自動修復](m365d-autoir.md)。
 
 Microsoft 365Defender 提供數種修正動作，讓分析員可以手動啟動。 動作分為兩類、裝置上的動作和檔案的動作。 某些動作可用於立即停止威脅，其他動作可協助進行進一步的鑒證分析。
 
@@ -95,8 +95,8 @@ Microsoft 365Defender 提供數種修正動作，讓分析員可以手動啟動�
 
 瞭解如何對 [事件執行後續事件複查](first-incident-post.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [事件概觀](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [調查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

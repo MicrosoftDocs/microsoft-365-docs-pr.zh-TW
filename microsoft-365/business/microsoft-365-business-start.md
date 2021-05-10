@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 深入瞭解商務的 Microsoft 365，如何加以設定，以及如何準備使用者的裝置和電腦，以確保它們受到商務 Microsoft 365 保護。
-ms.openlocfilehash: cc54147e75a27fbb93255d6f706b4f9044c75858
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245117"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293700"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>開始使用商務 Microsoft 365
 
@@ -105,7 +105,7 @@ ms.locfileid: "52245117"
   
 - 請與您的合作夥伴連絡。
     
-- 作為商務系統管理員的 Microsoft 365，您可以存取我們的客戶支援小組： **[請洽詢商務產品的支援人員-系統管理](../admin/contact-support-for-business-products.md)說明**
+- 作為商務系統管理員的 Microsoft 365，您可以存取我們的客戶支援小組： **[請洽詢商務產品的支援人員-系統管理](../business-video/get-help-support.md)說明**
     
 ## <a name="related-content"></a>相關內容
 

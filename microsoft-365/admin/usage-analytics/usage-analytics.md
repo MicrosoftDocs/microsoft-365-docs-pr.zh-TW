@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: a88fb5f6381079644c7b2615432bcbc625b820ad
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7d267dcbbb35a03794567991fddb2e3a573d47dc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579034"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297389"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
 
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析概觀
 
-使用 Power BI 中的 Microsoft 365 流量分析，深入瞭解貴組織如何採用 Microsoft 365 中的各種服務。 您可以視覺化和分析 Microsoft 365 使用狀況資料、建立自訂報告，以及分享組織內的洞察力。 您也可以深入瞭解特定地區或部門如何使用 Microsoft 365。
+使用 Power BI 中 Microsoft 365 的流量分析，深入瞭解您的組織如何採用 Microsoft 365 內的各種服務。 您可以視覺化和分析 Microsoft 365 使用狀況資料、建立自訂報告，以及分享組織內的洞察力。 您也可以深入瞭解特定地區或部門如何使用 Microsoft 365。
   
 Microsoft 365 流量分析可讓您存取預先構建的儀表板，該儀表板提供最近12個月的叉積視圖，並包含許多預先建立的報告。 每個報告都可提供特定的使用情況深入解析。 使用者特有的資訊可用於最近的完整行事曆月份。
   
@@ -44,39 +44,39 @@ Microsoft 365 流量分析包含下列各節所詳述的報表數目。
 
 ## <a name="executive-summary"></a>摘要
 
-「執行摘要」是針對商務採用、使用狀況、行動性、通訊、共同作業和儲存報告而使用的 Microsoft 365 的高層級一覽式視圖，其適用于業務決策者。 它會根據已啟用的所有使用者和使用中的使用者，提供某些個別服務的使用方式。 報告上顯示的月份所有值都是指最近的完整月份。 
+「執行摘要」是一種高層次、一覽的 Microsoft 365，可供商務採用、使用狀況、行動性、通訊、共同作業和儲存報告，也適用于業務決策者。 它會根據已啟用的所有使用者和使用中的使用者，提供某些個別服務的使用方式。 報告上顯示的月份所有值都是指最近的完整月份。 
 
 這項摘要可讓您快速瞭解 Office 的使用模式，以及員工的合作方式和位置。
 
-![Microsoft 365 使用狀況摘要的圖像。](../../media/office365usage-exec-summary.png)
+![Microsoft 365 使用方式執行摘要的影像。](../../media/office365usage-exec-summary.png)
 
 ## <a name="overview"></a>概觀
 
 Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上方的索引標籤來進行查看。 顯示在報表上方區段中的月份所有值，都是最新的完整月份。
 
-- **採用** &ndash; 提供採用趨勢的完整摘要。 使用本節中的報告，瞭解您的使用者採用 Microsoft 365 的方式，以及個別服務的整體使用量如何隨月份變更。 您可以瞭解如何啟用使用者、組織中的多少人積極使用 Microsoft 365、傳回使用者的數量，以及第一次使用該產品的數目。
+- **採用** &ndash; 提供採用趨勢的完整摘要。 使用本節中的報告，瞭解您的使用者如何採用 Microsoft 365，以及個別服務的整體使用量如何隨月份變更。 您可以查看如何啟用使用者、組織中的多少人積極使用 Microsoft 365、傳回使用者的數量，以及第一次使用該產品的數目。
 
-- **使用** &ndash; 可深入查看使用中使用者的數量，以及最近12個月的每一種產品的主要活動。 使用本節中的報告，瞭解貴組織中的人員如何使用 Microsoft 365。
+- **使用** &ndash; 可深入查看使用中使用者的數量，以及最近12個月的每一種產品的主要活動。 使用本節中的報告，瞭解組織中的人員如何使用 Microsoft 365。
 
-- **通訊** &ndash; 您可以立即查看組織中的人員是否喜歡使用團隊、Yammer、電子郵件或 Skype 通話保持聯繫。 您可以觀察您的員工在使用通訊工具時，是否有變化的模式。 
+- **通訊** &ndash;您可以立即查看組織中的人員是否喜歡使用 Teams、Yammer、電子郵件或 Skype 通話保持聯繫。 您可以觀察您的員工在使用通訊工具時，是否有變化的模式。 
 
 - 共同作業 &ndash;請參閱貴組織中的人員如何使用 OneDrive 和 SharePoint 來儲存檔，以及彼此共同作業，以及這些趨勢如何隨月演變。 您也可以查看內部或外部共用的檔數量，以及正在使用的 SharePoint 網站或 OneDrive 帳戶數目，由擁有者及其他合作者分割。
 
-- **儲存空間** &ndash; 使用此報告可追蹤信箱、OneDrive 和 SharePoint 網站的雲端儲存空間。
+- **儲存體** &ndash;使用此報告可追蹤信箱、OneDrive 和 SharePoint 網站的雲端儲存空間。
 
-- **行動性** &ndash; 追蹤人員和裝置用來連線至電子郵件、小組、Skype 或 Yammer 的用戶端和裝置。
+- **行動性** &ndash;追蹤人員和裝置用來連線到電子郵件、Teams、Skype 或 Yammer 的用戶端和裝置。
 
 ## <a name="activation-and-licensing"></a>啟用和授權
 
-「啟用與授權」頁面提供有關 Microsoft 365 啟用的報告;也就是說，有多少使用者已下載和啟用 Office 應用程式，以及您的組織已指派多少個授權。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
+「啟用與授權」頁面提供 Microsoft 365 啟用的報告;也就是有多少使用者已下載和啟用 Office 的應用程式，以及您的組織已指派多少個授權。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
 
-- **啟用** &ndash; 追蹤服務方案 (例如，適用于企業的 Microsoft 365 應用程式、Project 和 Visio) 在您的組織中啟動。 擁有 Office 授權的每個人員都能在多達五部裝置上安裝產品。 您也可以使用本節中的報告，查看人員已安裝 Office 應用程式的裝置。 請注意，若要啟動計畫，使用者必須安裝應用程式，並以其帳戶登入。
+- **啟用** &ndash;追蹤服務方案 (例如，Microsoft 365 Apps 企業版、Project 和 Visio) 組織中的啟用。 擁有 Office 授權的每個人員都能在多達五部裝置上安裝產品。 您也可以使用本節中的報告，查看人員已安裝 Office 應用程式的裝置。 請注意，若要啟動計畫，使用者必須安裝應用程式，並以其帳戶登入。
 
 - **授權** &ndash; 此報告包含授權類型、指派每個授權類型的使用者計數，以及每個月的授權指派發佈的概述。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
 
 ## <a name="product-usage"></a>產品使用
 
-此報告包含每個 Microsoft 365 服務的個別報告，包括 Exchange、Microsoft 365 群組、OneDrive、SharePoint、Skype、小組和 Yammer。 每個報告都包含 [啟用總數] 和 [總使用中使用者] 報告、實體的計數、網站、群組和帳戶，以及活動類型報告（適當位置）。 顯示在報表上方區段中的月份所有值，都是最新的完整月份。
+此報告包含每個 Microsoft 365 服務的個別報告，包括 Exchange、Microsoft 365 群組、OneDrive、SharePoint、Skype、Teams 和 Yammer。 每個報告都包含 [啟用總數] 和 [總使用中使用者] 報告、實體的計數、網站、群組和帳戶，以及活動類型報告（適當位置）。 顯示在報表上方區段中的月份所有值，都是最新的完整月份。
 
 ## <a name="user-activity"></a>使用者活動
 
@@ -92,23 +92,23 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>誰可以連線到 Microsoft 365 使用情況分析？
 
-您必須是 **全域系統管理員**、Exchange 系統 **管理員**、 **商務用 Skype** 系統管理員、 **SharePoint 系統管理員**、 **全域讀取器** 或 **報告讀取器** ，才能建立與範本應用程式的連線。 如需詳細資訊，請參閱 [關於系統管理員角色](../add-users/about-admin-roles.md) 。
+您必須是 **全域系統管理員**、Exchange 系統 **管理員**、**商務用 Skype** 系統管理員、 **SharePoint** 系統管理員、**全域讀取器** 或 **報告讀取** 者，才能建立與範本應用程式的連線。 如需詳細資訊，請參閱 [關於系統管理員角色](../add-users/about-admin-roles.md) 。
 
-### <a name="who-can-customize-the-usage-analytics-reports"></a>誰可以自訂使用方式分析報告？
+### <a name="who-can-customize-the-usage-analytics-reports"></a>神秘可以自訂使用方式分析報告？
 
-只有初次連接至範本應用程式的使用者，才可以自訂報表或在 Power BI web 介面中建立新的報表。 如需指示，請參閱 [自訂 Microsoft 365 使用方式分析中的報告](customize-reports.md) 。
+只有初次連接至範本應用程式的使用者，才可以自訂報表或在 Power BI web 介面中建立新的報表。 如需相關指示，請參閱[自訂報告 Microsoft 365 流量分析](customize-reports.md)。
 
-### <a name="can-i-only-customize-the-reports-from-the-power-bi-web-interface"></a>我是否可以只從 Power BI web 介面自訂報告？
+### <a name="can-i-only-customize-the-reports-from-the-power-bi-web-interface"></a>我是否可以只從 Power BI 網頁介面自訂報告？
 
-除了自訂 Power BI web 介面報告之外，使用者也可以使用 Power BI Desktop 直接連線至 Microsoft 365 報表服務，以建立自己的報告。
+除了從 Power BI 網頁介面自訂報告之外，使用者也可以使用 Power BI Desktop 直接連線至 Microsoft 365 報表服務，以建立自己的報告。
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>如何取得此儀表板相關聯的 pbit 檔案？
 
 您可以從 [Microsoft 下載中心](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)存取 pbit 檔案。
 
-### <a name="who-can-view-the-dashboards-and-reports"></a>誰可以查看儀表板和報告？
+### <a name="who-can-view-the-dashboards-and-reports"></a>神秘可以查看儀表板和報告？
 
-如果您已連線至範本應用程式，您可以使用 [共用功能](/power-bi/collaborate-share/service-share-dashboards)與任何人共用。 Power BI 授權要求共用儀表板的使用者共用和使用者皆具有 Power BI Pro 或 Power BI Premium。
+如果您已連線至範本應用程式，您可以使用 [共用功能](/power-bi/collaborate-share/service-share-dashboards)與任何人共用。 Power BI 授權要求共用儀表板的使用者和使用者皆 Power BI Pro 或 Power BI Premium。
 
 ### <a name="can-anyone-share-the-dashboard-or-does-it-have-to-be-the-person-who-connected-to-the-dashboard"></a>是否任何人都可以共用儀表板，或者必須是已連線到儀表板的人員？
 
@@ -116,7 +116,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>是否可以使用和自訂使用者群組的相同範本應用程式？
 
-是。 若要讓系統管理員群組能夠在相同的範本應用程式上共同作業，您可以利用 Power BI 的應用程式工作區功能，如需詳細資訊，請參閱 [我應該如何共同作業及共用儀表板和報告？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
+可以。 若要讓一組系統管理員能夠在相同的範本應用程式上共同作業，您可以運用 Power BI 的應用程式工作區功能。如需詳細資訊，請參閱[我應該如何共同作業及共用儀表板和報告？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>可提供哪個時間範圍內的資料？
 
@@ -134,13 +134,13 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>何時應該使用範本應用程式以及使用方式報告？
 
-「 [活動報告](../activity-reports/activity-reports.md)  」是瞭解 Microsoft 365 使用狀況和採用方式的良好起點。 範本應用程式結合了 Microsoft 365 使用狀況資料和組織的 Active Directory 資訊，讓系統管理員可以使用 Power BI 的視覺分析功能來分析資料集。 這可讓系統管理員不要只顯示及分析 Microsoft 365 使用狀況資料，也可以透過 Active Directory 屬性（例如部門、位置等）加以切分。他們也可以建立自訂報告，並在其組織中共用洞察力。 
+「[活動報告](../activity-reports/activity-reports.md)」是瞭解 Microsoft 365 的使用狀況和採用狀況的良好起點。 範本應用程式會結合 Microsoft 365 使用方式資料和組織的 Active Directory 資訊，並讓系統管理員使用 Power BI 的視覺分析功能來分析資料集。 這可讓系統管理員不只是視覺化和分析 Microsoft 365 使用狀況資料，也可以透過 Active Directory 屬性（例如部門、位置等）加以切分。他們也可以建立自訂報告，並在其組織中共用洞察力。 
 
 ### <a name="how-often-is-the-data-refreshed"></a>資料重新整理的頻率為何？ 
 
 當您第一次連線至範本應用程式時，它會自動填入前12個月的資料。 之後，範本應用程式資料將會重新整理一周。 客戶可以選擇修改重新整理排程，如果其使用此資料要求不同的更新 rhythm。
 
-後端 Microsoft 365 服務會每天重新整理資料，並提供從目前日期的5-8 天內的資料。
+後端 Microsoft 365 服務會每日重新整理資料，並提供介於5-8 天（從目前日期）的資料。
 
 每個資料集中的 [ **內容日期** ] 欄代表範本應用程式中資料的新鮮度日期。
 
@@ -154,7 +154,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="which-groups-are-included-in-the-microsoft-365-groups-usage-report"></a>Microsoft 365 群組使用量報告中包含哪些群組？
 
-目前的範本應用程式版本包括 Outlook 群組、Yammer 群組和 SharePoint 群組的使用方式。 不包括與 Microsoft 小組或 Planner 相關的群組。
+目前的範本應用程式版本包括 Outlook 群組、Yammer 群組和 SharePoint 群組的使用方式。 不包括與 Microsoft Teams 或 Planner 相關的群組。
 
 ### <a name="when-will-an-updated-version-of-the-template-app-become-available"></a>何時將範本應用程式的更新版本變為可用？
 
@@ -162,11 +162,11 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>是否可以將範本應用程式中的資料整合到現有的解決方案中？ 
 
-您可以透過 [預覽]) 中的 [Microsoft 365 APIs] (來檢索範本應用程式中的資料。 當其運送至實際生產環境時，將會在 [Microsoft Graph 報告 APIs](https://go.microsoft.com/fwlink/p/?linkid=848843)中合併。 
+您可以透過預覽) 中的 Microsoft 365 APIs (來檢索範本應用程式中的資料。 當他們運送生產產品時，將會在[Microsoft Graph 報告 APIs](https://go.microsoft.com/fwlink/p/?linkid=848843)內合併。 
 
 ### <a name="are-there-plans-to-expand-the-template-app-to-show-usage-data-from-other-microsoft-products"></a>是否有任何計畫展開範本應用程式來顯示其他 Microsoft 產品的使用方式資料？
 
-這會考慮未來的改進。 請參閱 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap) 以取得更新。
+這會考慮未來的改進。 檢查[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)是否有更新。
 
 ### <a name="how-can-i-pivot-by-company-information-in-active-directory"></a>如何使用 Active Directory 中的公司資訊進行樞紐分析？
 
@@ -174,7 +174,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="is-it-possible-to-bring-in-additional-fields-from-active-directory"></a>是否可以帶入來自 Active Directory 的其他欄位？
 
-您可以連線至 [Microsoft Graph 報告 APIs](https://go.microsoft.com/fwlink/p/?linkid=848843) 以從 Azure Active Directory 提取其他欄位，並加入至 dataset，以進一步自訂此資料。 
+您可以連線至[Microsoft Graph 報告 APIs](https://go.microsoft.com/fwlink/p/?linkid=848843)以從 Azure Active Directory 中拉入其他欄位，並加入至 dataset，以進一步自訂此資料。 
 
 ### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>是否可以在多個訂閱中匯總範本應用程式中的資訊？
 
@@ -186,7 +186,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="is-it-possible-to-integrate-other-data-sets-into-the-template-app"></a>是否可以將其他資料集整合至範本應用程式？
 
-您可以使用 Power BI Desktop 連線至 [預覽]) 中的 [Microsoft 365 APIs] (，以將其他資料來源與範本應用程式資料合併。
+您可以使用 Power BI Desktop 連線到預覽) 中的 Microsoft 365 APIs (，以將其他資料來源與範本應用程式資料合併。
 
 如需詳細資訊，請參閱 [自訂檔](customize-reports.md)。
 
@@ -198,9 +198,9 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 這目前不在藍圖上。
 
-### <a name="i-have-a-specific-question-about-the-data-im-seeing-for-my-organization-who-can-i-reach-out-to"></a>我對我的組織所看到的資料有特定問題。 誰可以聯繫？
+### <a name="i-have-a-specific-question-about-the-data-im-seeing-for-my-organization-who-can-i-reach-out-to"></a>有關我在組織所看到之資料的特定問題。我可以跟誰連絡？
 
-您可以使用系統管理中心的 [活動一覽表] 頁面上的 [回饋] 按鈕，也可以開啟 [支援案例](../contact-support-for-business-products.md) 以取得範本應用程式的說明。 
+您可以使用系統管理中心的 [活動一覽表] 頁面上的 [回饋] 按鈕，也可以開啟 [支援案例](../../business-video/get-help-support.md) 以取得範本應用程式的說明。 
 
 ### <a name="how-can-partners-access-the-data"></a>合作夥伴如何存取資料？
 

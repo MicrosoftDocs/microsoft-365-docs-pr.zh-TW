@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 獎勵
+title: 管理 Microsoft Rewards
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -15,17 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 description: 擁有個人 Microsoft 帳戶的使用者，如果啟用 [連結 AAD with 獎勵] 功能，則可以透過其工作搜尋獲得 Microsoft 獎勵點數。
-ms.openlocfilehash: 7ae88c9fd355251c47747ef8460bab1f0b30bbaa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 92a319d5917c49f0457a560fe52212608bd26dc2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929471"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297065"
 ---
-# <a name="manage-microsoft-rewards"></a>管理 Microsoft 獎勵
+# <a name="manage-microsoft-rewards"></a>管理 Microsoft Rewards
 
-如果已啟用 *連結的 Microsoft Azure Active Directory (AZURE AD)* ，則擁有個人 microsoft 帳戶的使用者便可在其工作搜尋中贏取 [microsoft 獎勵](https://www.microsoft.com/rewards)點數。
+如果已啟用 *Microsoft Azure Active Directory (Azure AD) 的連結*，則擁有個人 microsoft 帳戶的使用者可以贏取 [microsoft 獎勵](https://www.microsoft.com/rewards)點數與其工作搜尋。
 
 除非使用者已退出這項功能，否則其個人 Microsoft 帳戶會與其 workplace Azure AD 帳戶相關聯。 Microsoft 獎勵會接收和記錄已發生搜尋的資訊，但不會收到任何有關搜尋內容的資訊。 組織中查詢的內容將不會與 Microsoft 獎勵共用，做為這項功能的一部分。
 

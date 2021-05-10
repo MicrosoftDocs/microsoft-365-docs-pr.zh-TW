@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: 了解如何在 Microsoft 365 系統管理中心管理您的付款方式。
 ms.date: 04/02/2021
-ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 82b2880eed830bd3b65cce14635c4fa10f618740
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244717"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297365"
 ---
 # <a name="manage-payment-methods"></a>管理付款方式
 
@@ -129,7 +129,7 @@ ms.locfileid: "52244717"
 |**我的信用卡或轉帳卡遭到拒絕。** |如果您使用信用卡或轉帳卡付款，但信用卡遭到拒絕，您會收到一封電子郵件，指出 Microsoft 無法處理付款。 仔細檢查顯示的信用卡詳細資料&mdash;信用卡卡號、到期日、信用卡上的名稱，以及包括省/市、縣/市和郵遞區號在內的地址&mdash;與信用卡和帳單上顯示的資料完全相同。 您可以使用訂閱詳細資料頁面的 [帳單 **]** 區段的 [結算餘額 **]** 連結，更新您的卡片資訊並立即提交付款。 如需詳細資訊，請參閱[如果我有未付餘額，該怎麼辦？](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  如果您持續看到「被拒絕」訊息，請連絡您的銀行。可能您的卡片未生效。如果您最近收到郵寄的卡片已更新到期日，請確定該卡片已生效。您的銀行也可以告知您，您的卡片是否獲核准進行線上、國際或週期性交易。 |
 |**我想要更新信用卡或銀行帳戶號碼。** |您無法變更現有付款方式的信用卡或帳戶號碼。 如果您的信用卡或帳戶號碼已變更，請[以不同的付款方式取代它](#replace-a-payment-method)，這會將所有作用中的訂閱從該付款方式移至新的付款方式，然後[刪除舊的付款方式](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached)。 |
 |**我的帳戶只有一張信用卡或一個銀行帳戶，而我想移除它。** |如果您只有一個付款方式，您必須[將它以新的付款方式取代](#replace-a-payment-method)，之後才能刪除它。 |
-|**我無法新增我的卡片或銀行帳戶。**  |您必須使用與您租用戶相同的國家/地區發出的付款方式。 如果您無法輸入您的卡片或銀行帳戶資訊，您可以[連絡客戶支援](../../admin/contact-support-for-business-products.md)。 |
+|**我無法新增我的卡片或銀行帳戶。**  |您必須使用與您租用戶相同的國家/地區發出的付款方式。 如果您無法輸入您的卡片或銀行帳戶資訊，您可以[連絡客戶支援](../../business-video/get-help-support.md)。 |
 
 ## <a name="related-content"></a>相關內容
 

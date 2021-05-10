@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 無論您使用處置檢閱或根據設定自動刪除內容，監視和管理內容的處置。
-ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b64db336aa619313f2ff744e94d48e44c13856a0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488166"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296753"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -52,7 +52,7 @@ ms.locfileid: "51488166"
 
 ## <a name="disposition-reviews"></a>處置檢閱
 
-當內容的保留期間結束時，基於多種原因，您可能會想要檢閱該內容，以確認是否可以永久刪除 (亦即「處置」)。 例如，不要刪除內容，您可能需要：
+當內容的保留期間結束時，基於多種原因，您可能會想要檢閱該內容，以確認是否可以永久刪除 (亦即「處置」)。例如，如果不刪除內容，您可以能需要：
   
 - 如果發生訴訟或稽核，則暫停相關內容的刪除。
 
@@ -114,7 +114,7 @@ ms.locfileid: "51488166"
 
 如果您具有位置和內容的權限，則可以使用 **[位置]** 欄中的連結在文件的原始位置檢視文件。 在處置檢閱期間，內容永遠不會從其原始位置移動，且除非檢閱者選擇刪除內容，否則內容絕不會被刪除。
 
-每週一次自動傳送電子郵件通知給檢閱者。 此排程程序表示，當內容的保留期間結束時，檢閱者最多可能需要 7 天才能收到內容正等待處置的電子郵件通知。
+電子郵件通知會每週自動寄給檢閱者。此排程程序表示，當內容的保留期間結束時，檢閱者最多可能需要 7 天才能收到內容正等待處置的電子郵件通知。
   
 可以稽核所有處置動作，而檢閱者輸入的理由文字也將儲存並顯示於 **[已處置項目]** 頁面上的 **[註解]** 欄中。
   
@@ -133,7 +133,7 @@ ms.locfileid: "51488166"
 
 ![未經處置檢閱而處置的項目](../media/records-disposed2.png)
 
-**[已處置項目]** 索引標籤中顯示的項目在處置後最多可保存七年，在此期間，每個記錄限制保存一百萬個項目。 如果您看到 **[計數]** 數字接近上限一百萬，而且您需要記錄的處置證明，請與 [Microsoft 支援服務](/office365/admin/contact-support-for-business-products)聯繫。
+**[已處置項目]** 索引標籤中顯示的項目在處置後最多可保存七年，在此期間，每個記錄限制保存一百萬個項目。 如果您看到 **[計數]** 數字接近上限一百萬，而且您需要記錄的處置證明，請與 [Microsoft 支援服務](../business-video/get-help-support.md)聯繫。
 
 > [!NOTE]
 > 此功能使用來自[整合稽核記錄](search-the-audit-log-in-security-and-compliance.md)的資訊，因此需要[啟用並搜尋](turn-audit-log-search-on-or-off.md)稽核，以便擷取相應的事件。

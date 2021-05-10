@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 使用者可以瞭解如何管理其自助購買服務。
-ms.openlocfilehash: 73b044ab9954744e89a13ccff0145f35bc1b821b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920189"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297293"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助購買 (使用者)
 
@@ -31,7 +31,7 @@ ms.locfileid: "50920189"
 
 ::: moniker-end
 
-作為使用者，您可以購買特定產品的訂閱，並將這些訂閱的授權指派給小組中的人員。 您負責支付您所進行的任何自助購買服務。 您可以在 Microsoft 365 系統管理中心中，以 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>管理您的訂閱。
+作為使用者，您可以購買特定產品的訂閱，並將這些訂閱的授權指派給小組中的人員。 您負責支付您所進行的任何自助購買服務。 您可以在 Microsoft 365 系統管理中心管理您的訂閱， <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>。
 
 您的系統管理員在您購買的任何訂閱中都有唯讀的視圖。 他們可以查看您購買之每個訂閱的產品、買方名稱、購買的訂閱、到期日、購買價格和指派的使用者。
 
@@ -74,7 +74,7 @@ ms.locfileid: "50920189"
 1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 **[產品]** 索引標籤上，找出您要取消的訂閱。 選取 **[更多動作]** (三個點)，然後選取 **[取消訂閱]**。
 3. 在 **取消訂閱** 窗格中，選擇取消的原因。 （選用）提供您所擁有的任何意見反應。
-4. 選取 [儲存]。
+4. 選取 **[儲存]**。
 
 ## <a name="manage-your-payment-details"></a>管理您的付款詳細資料
 
@@ -107,4 +107,4 @@ ms.locfileid: "50920189"
 
 如需有關自助購買的常見問題，請參閱 [自助購買常見問題](self-service-purchase-faq.md)。
 
-如果您有任何問題或需要協助您購買自助服務，請 [與支援人員聯繫](../../admin/contact-support-for-business-products.md)。
+如果您有任何問題或需要協助您購買自助服務，請 [與支援人員聯繫](../../business-video/get-help-support.md)。

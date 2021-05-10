@@ -22,12 +22,12 @@ ms.custom:
 ms.reviewer: jkinma
 description: 瞭解如何為商務版訂閱購買及管理您的 Microsoft 365 的附件。
 ms.date: 04/02/2021
-ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: d60503cd7ab7be219c3ed813dd1d9aef480cd4dc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107433"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297329"
 ---
 # <a name="buy-or-manage-add-ons"></a>購買或管理附加元件
 
@@ -71,7 +71,7 @@ ms.locfileid: "52107433"
 
 若要移除獨立附加元件訂閱，您可以 [取消訂閱](subscriptions/cancel-your-subscription.md)，就像任何其他訂閱一樣。 您也可以 [關閉重複計費](subscriptions/renew-your-subscription.md)。
 
-您無法移除傳統的附加元件。 如果您想要移除傳統附加元件，請 [聯繫支援人員以取得協助](../admin/contact-support-for-business-products.md)。
+您無法移除傳統的附加元件。 如果您想要移除傳統附加元件，請 [聯繫支援人員以取得協助](../business-video/get-help-support.md)。
   
 ## <a name="related-content"></a>相關內容
 

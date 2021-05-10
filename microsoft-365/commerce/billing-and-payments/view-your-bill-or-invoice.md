@@ -24,12 +24,12 @@ ms.custom:
 - PPM_jmueller
 description: 在 Microsoft 365 系統管理中心尋找您的發票或帳單。 您也可以儲存及列印帳單複本。
 ms.date: 07/31/2020
-ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: eff193689817c1c89fff7c8ffbc5335fff64ee0f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280820"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297353"
 ---
 # <a name="view-your-bill-or-invoice"></a>檢視帳單或發票
 
@@ -37,7 +37,7 @@ ms.locfileid: "52280820"
   
 如果您需要協助來解讀帳單上顯示的費用，請參閱[了解帳單或發票](understand-your-invoice2.md) (部分機器翻譯) 以取得詳細的逐步解說。
   
-**您的帳單有問題嗎？** [連絡商務用產品的客戶支援](../../admin/contact-support-for-business-products.md)。
+**您的帳單有問題嗎？** [連絡商務用產品的客戶支援](../../business-video/get-help-support.md)。
 
 ## <a name="before-you-begin"></a>開始之前
 

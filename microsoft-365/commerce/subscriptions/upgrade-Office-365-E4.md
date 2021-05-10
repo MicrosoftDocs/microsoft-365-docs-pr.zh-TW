@@ -21,12 +21,12 @@ search.appverid: MET150
 description: 瞭解如何從 Office 365 E4 訂閱進行升級。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f9143497ac2ee15009a3a2b3af9e76426d408d38
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 0e30ece58cfc10ea258a684f9ac6ca4dba1b8692
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280508"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297281"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>從 Office 365 E4 訂閱升級
 
@@ -63,7 +63,7 @@ ms.locfileid: "52280508"
 3. 選取 [ **升級** ] 索引標籤。如果您看到列出的其他計畫，則表示您可以自動升級方案。
 4. 如果您無法自動升級，您會看到一則訊息，描述您無法升級的原因。
 
-您無法自動升級方案的原因有幾個。 大部分的問題是臨時性的問題，例如您可以解決的服務健康情況問題。 如需詳細資訊，請參閱 [為何無法升級方案？](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) 如果您需要協助升級，請 [與支援人員聯繫](../../admin/contact-support-for-business-products.md)。
+您無法自動升級方案的原因有幾個。 大部分的問題是臨時性的問題，例如您可以解決的服務健康情況問題。 如需詳細資訊，請參閱 [為何無法升級方案？](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) 如果您需要協助升級，請 [與支援人員聯繫](../../business-video/get-help-support.md)。
 
 ## <a name="will-a-credit-check-be-required"></a>是否需要信用檢查？
 
