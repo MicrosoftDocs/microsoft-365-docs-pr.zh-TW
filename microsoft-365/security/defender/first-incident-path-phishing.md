@@ -22,50 +22,50 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fb3656a9d3f67d979c012d9cc316a10e65a72042
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 41a2c73ce5e1c3060d88572f4fa7afe63e193f46
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114568"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299985"
 ---
-# <a name="example-of-a-phishing-email-attack"></a><span data-ttu-id="13ad1-104">網路釣魚電子郵件攻擊的範例</span><span class="sxs-lookup"><span data-stu-id="13ad1-104">Example of a phishing email attack</span></span>
+# <a name="example-of-a-phishing-email-attack"></a><span data-ttu-id="71f97-104">網路釣魚電子郵件攻擊的範例</span><span class="sxs-lookup"><span data-stu-id="71f97-104">Example of a phishing email attack</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="13ad1-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="13ad1-105">**Applies to:**</span></span>
-- <span data-ttu-id="13ad1-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="13ad1-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="71f97-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="71f97-105">**Applies to:**</span></span>
+- <span data-ttu-id="71f97-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="71f97-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="13ad1-107">Microsoft 365Defender 可協助偵測透過電子郵件傳遞的惡意附件。</span><span class="sxs-lookup"><span data-stu-id="13ad1-107">Microsoft 365 Defender can help detect malicious attachments delivered via email.</span></span> <span data-ttu-id="13ad1-108">因為[Office 365 安全性與合規性中心](https://protection.office.com/)會與 Microsoft 365 Defender 整合，所以安全性分析分析員可以深入瞭解來自于 Office 365 的威脅，例如透過電子郵件附件。</span><span class="sxs-lookup"><span data-stu-id="13ad1-108">Since the [Office 365 Security and Compliance Center](https://protection.office.com/) integrates with Microsoft 365 Defender, security analysts can have visibility on threats coming in from Office 365, such as through email attachments.</span></span>
+<span data-ttu-id="71f97-107">Microsoft 365Defender 可協助偵測透過電子郵件傳遞的惡意附件。</span><span class="sxs-lookup"><span data-stu-id="71f97-107">Microsoft 365 Defender can help detect malicious attachments delivered via email.</span></span> <span data-ttu-id="71f97-108">因為[Office 365 安全性與合規性中心](https://protection.office.com/)會與 Microsoft 365 Defender 整合，所以安全性分析分析員可以深入瞭解來自于 Office 365 的威脅，例如透過電子郵件附件。</span><span class="sxs-lookup"><span data-stu-id="71f97-108">Since the [Office 365 Security and Compliance Center](https://protection.office.com/) integrates with Microsoft 365 Defender, security analysts can have visibility on threats coming in from Office 365, such as through email attachments.</span></span>
 
-<span data-ttu-id="13ad1-109">例如，分析員已被指派多階段事件。</span><span class="sxs-lookup"><span data-stu-id="13ad1-109">For example, an analyst was assigned a multi-stage incident.</span></span>
+<span data-ttu-id="71f97-109">例如，分析員已被指派多階段事件。</span><span class="sxs-lookup"><span data-stu-id="71f97-109">For example, an analyst was assigned a multi-stage incident.</span></span>
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="多階段事件範例"::: 
 
-<span data-ttu-id="13ad1-111">在事件的 [**警示**] 索引標籤中，會顯示來自 Office 365 和 Microsoft Cloud App Security 的 Defender 的警示。</span><span class="sxs-lookup"><span data-stu-id="13ad1-111">In the **Alerts** tab of the incident, alerts from Defender for Office 365 and Microsoft Cloud App Security are displayed.</span></span> <span data-ttu-id="13ad1-112">分析者可以透過選取電子郵件訊息警示，深入查看 Office 365 警示的 Defender。</span><span class="sxs-lookup"><span data-stu-id="13ad1-112">The analyst can drill down into the Defender for Office 365 alerts by selecting the email messages alerts.</span></span> <span data-ttu-id="13ad1-113">警示的詳細資料會顯示在側邊窗格上。</span><span class="sxs-lookup"><span data-stu-id="13ad1-113">The details of the alert are displayed on the side pane.</span></span>
+<span data-ttu-id="71f97-111">在事件的 [**警示**] 索引標籤中，會顯示來自 Office 365 和 Microsoft Cloud App Security 的 Defender 的警示。</span><span class="sxs-lookup"><span data-stu-id="71f97-111">In the **Alerts** tab of the incident, alerts from Defender for Office 365 and Microsoft Cloud App Security are displayed.</span></span> <span data-ttu-id="71f97-112">分析者可以透過選取電子郵件訊息警示，深入查看 Office 365 警示的 Defender。</span><span class="sxs-lookup"><span data-stu-id="71f97-112">The analyst can drill down into the Defender for Office 365 alerts by selecting the email messages alerts.</span></span> <span data-ttu-id="71f97-113">警示的詳細資料會顯示在側邊窗格上。</span><span class="sxs-lookup"><span data-stu-id="71f97-113">The details of the alert are displayed on the side pane.</span></span>
 
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="電子郵件警示的範例":::
  
-<span data-ttu-id="13ad1-115">進一步展開時，會顯示詳細資訊，顯示受到影響的惡意檔案和使用者。</span><span class="sxs-lookup"><span data-stu-id="13ad1-115">By scrolling down further, more information is displayed, showing the malicious files and user that was impacted.</span></span>
+<span data-ttu-id="71f97-115">進一步展開時，會顯示詳細資訊，顯示受到影響的惡意檔案和使用者。</span><span class="sxs-lookup"><span data-stu-id="71f97-115">By scrolling down further, more information is displayed, showing the malicious files and user that was impacted.</span></span>
 
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="電子郵件警示的使用者與檔影響的範例":::
   
-<span data-ttu-id="13ad1-117">選取 [ **開啟警示] 頁面** 會帶您前往特定警示，透過此連結，您可以更詳細地查看各種資訊。</span><span class="sxs-lookup"><span data-stu-id="13ad1-117">Selecting **Open alert page** takes you to the specific alert where various information can be viewed in greater detail by selecting the link.</span></span> <span data-ttu-id="13ad1-118">您可以透過選取 [ **在瀏覽器中查看訊息** 朝] 面板的底部來查看實際的電子郵件訊息。</span><span class="sxs-lookup"><span data-stu-id="13ad1-118">The actual email message can be viewed by selecting **View messages in Explorer** toward the bottom of the panel.</span></span>
+<span data-ttu-id="71f97-117">選取 [ **開啟警示] 頁面** 會帶您前往特定警示，透過此連結，您可以更詳細地查看各種資訊。</span><span class="sxs-lookup"><span data-stu-id="71f97-117">Selecting **Open alert page** takes you to the specific alert where various information can be viewed in greater detail by selecting the link.</span></span> <span data-ttu-id="71f97-118">您可以透過選取 [ **在瀏覽器中查看訊息** 朝] 面板的底部來查看實際的電子郵件訊息。</span><span class="sxs-lookup"><span data-stu-id="71f97-118">The actual email message can be viewed by selecting **View messages in Explorer** toward the bottom of the panel.</span></span>
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="警示詳細資料的範例"::: 
 
-<span data-ttu-id="13ad1-120">這會讓分析員使用「威脅管理」頁面，其中會顯示電子郵件主旨、收件者、寄件者及其他資訊。</span><span class="sxs-lookup"><span data-stu-id="13ad1-120">This takes the analyst to the Threat Management page where the email Subject, Recipient, Sender, and other information are displayed.</span></span> <span data-ttu-id="13ad1-121">「**特殊動作**」下的 **ZAP** 會告知分析員已執行零小時自動清除功能。</span><span class="sxs-lookup"><span data-stu-id="13ad1-121">**ZAP** under **Special Actions** tells the analyst that the Zero-hour auto purge feature was implemented.</span></span> <span data-ttu-id="13ad1-122">ZAP 會自動偵測組織中信箱的惡意和垃圾郵件，並從中移除。</span><span class="sxs-lookup"><span data-stu-id="13ad1-122">ZAP automatically detects and removes malicious and spam messages from mailboxes across the organization.</span></span> <span data-ttu-id="13ad1-123">如需詳細資訊，請參閱[Exchange Online 中的零小時自動清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md)。</span><span class="sxs-lookup"><span data-stu-id="13ad1-123">For more information, see [Zero-hour auto purge (ZAP) in Exchange Online](../office-365-security/zero-hour-auto-purge.md).</span></span>
+<span data-ttu-id="71f97-120">這會讓分析員使用「威脅管理」頁面，其中會顯示電子郵件主旨、收件者、寄件者及其他資訊。</span><span class="sxs-lookup"><span data-stu-id="71f97-120">This takes the analyst to the Threat Management page where the email Subject, Recipient, Sender, and other information are displayed.</span></span> <span data-ttu-id="71f97-121">「**特殊動作**」下的 **ZAP** 會告知分析員已執行零小時自動清除功能。</span><span class="sxs-lookup"><span data-stu-id="71f97-121">**ZAP** under **Special Actions** tells the analyst that the Zero-hour auto purge feature was implemented.</span></span> <span data-ttu-id="71f97-122">ZAP 會自動偵測組織中信箱的惡意和垃圾郵件，並從中移除。</span><span class="sxs-lookup"><span data-stu-id="71f97-122">ZAP automatically detects and removes malicious and spam messages from mailboxes across the organization.</span></span> <span data-ttu-id="71f97-123">如需詳細資訊，請參閱[Exchange Online 中的零小時自動清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md)。</span><span class="sxs-lookup"><span data-stu-id="71f97-123">For more information, see [Zero-hour auto purge (ZAP) in Exchange Online](../office-365-security/zero-hour-auto-purge.md).</span></span>
 
-<span data-ttu-id="13ad1-124">您可以選取 [ **動作**]，針對特定郵件採取其他動作。</span><span class="sxs-lookup"><span data-stu-id="13ad1-124">Other actions can be taken on specific messages by selecting **Actions**.</span></span> 
+<span data-ttu-id="71f97-124">您可以選取 [ **動作**]，針對特定郵件採取其他動作。</span><span class="sxs-lookup"><span data-stu-id="71f97-124">Other actions can be taken on specific messages by selecting **Actions**.</span></span> 
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="可以對電子郵件訊息執行其他動作的範例"::: 
 
-## <a name="next-step"></a><span data-ttu-id="13ad1-126">下一步</span><span class="sxs-lookup"><span data-stu-id="13ad1-126">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="71f97-126">下一步</span><span class="sxs-lookup"><span data-stu-id="71f97-126">Next step</span></span>
 
-<span data-ttu-id="13ad1-127">請參閱以身分 [識別的攻擊](first-incident-path-identity.md) 調查路徑。</span><span class="sxs-lookup"><span data-stu-id="13ad1-127">See the [identity-based attack](first-incident-path-identity.md) investigation path.</span></span>
+<span data-ttu-id="71f97-127">請參閱以身分 [識別的攻擊](first-incident-path-identity.md) 調查路徑。</span><span class="sxs-lookup"><span data-stu-id="71f97-127">See the [identity-based attack](first-incident-path-identity.md) investigation path.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="13ad1-128">另請參閱</span><span class="sxs-lookup"><span data-stu-id="13ad1-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="71f97-128">請參閱</span><span class="sxs-lookup"><span data-stu-id="71f97-128">See also</span></span>
 
-- [<span data-ttu-id="13ad1-129">事件概觀</span><span class="sxs-lookup"><span data-stu-id="13ad1-129">Incidents overview</span></span>](incidents-overview.md)
-- [<span data-ttu-id="13ad1-130">分析事件</span><span class="sxs-lookup"><span data-stu-id="13ad1-130">Analyze incidents</span></span>](investigate-incidents.md)
-- [<span data-ttu-id="13ad1-131">管理事件</span><span class="sxs-lookup"><span data-stu-id="13ad1-131">Manage incidents</span></span>](manage-incidents.md)
+- [<span data-ttu-id="71f97-129">事件概觀</span><span class="sxs-lookup"><span data-stu-id="71f97-129">Incidents overview</span></span>](incidents-overview.md)
+- [<span data-ttu-id="71f97-130">調查事件</span><span class="sxs-lookup"><span data-stu-id="71f97-130">Investigate incidents</span></span>](investigate-incidents.md)
+- [<span data-ttu-id="71f97-131">管理事件</span><span class="sxs-lookup"><span data-stu-id="71f97-131">Manage incidents</span></span>](manage-incidents.md)

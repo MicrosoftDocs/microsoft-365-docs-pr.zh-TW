@@ -12,33 +12,33 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f04c1a05ee18472742910b0131a746f7c9b7691c
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 77843171550bfe07b0bd8739adc8464e527c7331
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547885"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298947"
 ---
-# <a name="contact-support-for-czech-republic"></a><span data-ttu-id="3eedb-103">捷克共和國的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="3eedb-103">Contact support for Czech Republic</span></span>
+# <a name="contact-support-for-czech-republic"></a><span data-ttu-id="be188-103">捷克共和國的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="be188-103">Contact support for Czech Republic</span></span>
 
-<span data-ttu-id="3eedb-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="3eedb-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="be188-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="be188-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="3eedb-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="3eedb-105">Phone number</span></span>
-<span data-ttu-id="3eedb-106">800 701 371</span><span class="sxs-lookup"><span data-stu-id="3eedb-106">800 701 371</span></span>
+## <a name="phone-number"></a><span data-ttu-id="be188-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="be188-105">Phone number</span></span>
+<span data-ttu-id="be188-106">800 701 371</span><span class="sxs-lookup"><span data-stu-id="be188-106">800 701 371</span></span>
 
-## <a name="hours"></a><span data-ttu-id="3eedb-107">小時</span><span class="sxs-lookup"><span data-stu-id="3eedb-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="3eedb-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="3eedb-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="be188-107">小時</span><span class="sxs-lookup"><span data-stu-id="be188-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="be188-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="be188-108">Billing Support:</span></span>
 
-<span data-ttu-id="3eedb-109">捷克文： Mon-Fri 上午9點-下午6點</span><span class="sxs-lookup"><span data-stu-id="3eedb-109">Czech: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="be188-109">捷克文： Mon-Fri 上午9點-下午6點</span><span class="sxs-lookup"><span data-stu-id="be188-109">Czech: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="3eedb-110">英文： Mon-Fri 上午9點-下午6點</span><span class="sxs-lookup"><span data-stu-id="3eedb-110">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="be188-110">英文： Mon-Fri 上午9點-下午6點</span><span class="sxs-lookup"><span data-stu-id="be188-110">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="3eedb-111">技術支援：</span><span class="sxs-lookup"><span data-stu-id="3eedb-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="be188-111">技術支援：</span><span class="sxs-lookup"><span data-stu-id="be188-111">Technical Support:</span></span>
 
-<span data-ttu-id="3eedb-112">捷克文： Mon-Fri 8 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="3eedb-112">Czech: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="be188-112">捷克文： Mon-Fri 8 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="be188-112">Czech: Mon-Fri 8 AM-6 PM</span></span>
 
-<span data-ttu-id="3eedb-113">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="3eedb-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="be188-113">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="be188-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="3eedb-114">替代電話號碼： 239 016 433</span><span class="sxs-lookup"><span data-stu-id="3eedb-114">Alternative Phone Number: 239 016 433</span></span>
+<span data-ttu-id="be188-114">替代電話號碼： 239 016 433</span><span class="sxs-lookup"><span data-stu-id="be188-114">Alternative Phone Number: 239 016 433</span></span>
 
-<span data-ttu-id="3eedb-115">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="3eedb-115">Local call charges apply</span></span>
+<span data-ttu-id="be188-115">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="be188-115">Local call charges apply</span></span>
