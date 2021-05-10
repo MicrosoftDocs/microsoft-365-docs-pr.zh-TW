@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2a99515ced22c03767476e9f709b9e38a3cc3536
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 8dbb6ebb123770c0293ba25145ef2234fc6031a5
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545677"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295720"
 ---
-# <a name="contact-support-for-montenegro"></a><span data-ttu-id="5b361-103">黑山的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="5b361-103">Contact support for Montenegro</span></span>
+# <a name="contact-support-for-montenegro"></a><span data-ttu-id="dd31c-103">黑山的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="dd31c-103">Contact support for Montenegro</span></span>
 
-<span data-ttu-id="5b361-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="5b361-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="dd31c-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="dd31c-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="5b361-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="5b361-105">Phone number</span></span>
-<span data-ttu-id="5b361-106">080 081 110</span><span class="sxs-lookup"><span data-stu-id="5b361-106">080 081 110</span></span>
+## <a name="phone-number"></a><span data-ttu-id="dd31c-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="dd31c-105">Phone number</span></span>
+<span data-ttu-id="dd31c-106">080 081 110</span><span class="sxs-lookup"><span data-stu-id="dd31c-106">080 081 110</span></span>
 
-<span data-ttu-id="5b361-107">選取選項9</span><span class="sxs-lookup"><span data-stu-id="5b361-107">Select option 9</span></span>
+<span data-ttu-id="dd31c-107">選取選項9</span><span class="sxs-lookup"><span data-stu-id="dd31c-107">Select option 9</span></span>
 
-<span data-ttu-id="5b361-108">輸入程式碼7708</span><span class="sxs-lookup"><span data-stu-id="5b361-108">Enter code 7708</span></span>
+<span data-ttu-id="dd31c-108">輸入程式碼7708</span><span class="sxs-lookup"><span data-stu-id="dd31c-108">Enter code 7708</span></span>
 
-## <a name="hours"></a><span data-ttu-id="5b361-109">小時</span><span class="sxs-lookup"><span data-stu-id="5b361-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="5b361-110">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="5b361-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="dd31c-109">小時</span><span class="sxs-lookup"><span data-stu-id="dd31c-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="dd31c-110">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="dd31c-110">Billing Support:</span></span>
 
-<span data-ttu-id="5b361-111">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="5b361-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="dd31c-111">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="dd31c-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="5b361-112">技術支援：</span><span class="sxs-lookup"><span data-stu-id="5b361-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="dd31c-112">技術支援：</span><span class="sxs-lookup"><span data-stu-id="dd31c-112">Technical Support:</span></span>
 
-<span data-ttu-id="5b361-113">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="5b361-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="dd31c-113">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="dd31c-113">English: 24 hours a day, 7 days a week</span></span>
