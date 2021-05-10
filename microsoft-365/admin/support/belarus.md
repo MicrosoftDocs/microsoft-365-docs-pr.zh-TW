@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b590a1fee8b3ac556d472afe71ce1dc45b8158b4
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c536987035743f9a640d427375efaedfce21fbb8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548701"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296548"
 ---
 # <a name="contact-support-for-belarus"></a>取得白俄羅斯的支援
 
-[尋找其他國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話號碼
 8 820 0071 0003

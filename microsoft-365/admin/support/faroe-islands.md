@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da5b913615e47fd9dd1e4c8888aa07305d60a6b3
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: bdbf542b3f98aae77e5654dadd0f445382a460ce
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547441"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296236"
 ---
 # <a name="contact-support-for-faroe-islands"></a>用於法羅群島的連絡人支援
 
-[尋找其他國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話號碼
 + 45 38 48 70 67

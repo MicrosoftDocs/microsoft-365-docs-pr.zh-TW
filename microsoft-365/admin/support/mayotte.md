@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 50856ab58d19d120cb1d5050da920e259475ca44
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: ac274b0b6e9758db8515a9774ab991f56c574174
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545785"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295756"
 ---
 # <a name="contact-support-for-mayotte"></a>Mayotte 的支援人員
 
-[尋找其他國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話號碼
 + 1 312 843 5147

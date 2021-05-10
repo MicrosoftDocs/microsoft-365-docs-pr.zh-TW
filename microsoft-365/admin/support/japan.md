@@ -12,19 +12,19 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 95dcb4b707919d8f944282f433345bd51379203b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 5ccc39d25b4aa8fee662b4710f2560f4ad3dfd30
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546601"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296008"
 ---
 # <a name="contact-support-for-japan"></a>連絡人對日本的支援
 
-[尋找其他國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話號碼
-0120 996 680 (Office 365 Enterprise) 
+0120 996 680 (Office 365 企業版) 
 
 0120 628 860 (其他計畫) 
 
@@ -51,10 +51,10 @@ ms.locfileid: "50546601"
 
 您可以從9:00-17:30 在工作日取得電話技術支援。 針對高嚴重性問題，技術支援可于一周7天、每天24小時提供。
 
-其他電話號碼：
+替代電話號碼：
 
 適用本機通話費用
 
-03 4332 5493 (Office 365 Enterprise) 
+03 4332 5493 (Office 365 企業版) 
 
 03 4332 6257 (其他計畫) 

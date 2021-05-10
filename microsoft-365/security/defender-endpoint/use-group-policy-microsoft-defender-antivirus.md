@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 04/13/2021
+ms.date: 05/07/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 8db14b016491ac10872f29f04b8166e548d6c63b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275333"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296728"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>使用群組原則設定來設定及管理 Microsoft Defender 防毒軟體
 
@@ -33,6 +33,8 @@ ms.locfileid: "52275333"
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
 您可以使用[群組原則](/windows/win32/srvnodes/group-policy)來設定及管理端點上的 Microsoft Defender 防毒軟體。
+
+## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>使用群組原則設定 Microsoft Defender 防毒軟體
 
 一般來講，您可以使用下列程式設定或變更 Microsoft Defender 防毒軟體群組原則設定：
 
@@ -48,7 +50,12 @@ ms.locfileid: "52275333"
 
 6. 照常[部署更新的 GPO](/windows/win32/srvnodes/group-policy)。 
 
-本主題中的下表列出 Windows 10 中可用的群組原則設定，版本1703，並提供此文件庫中適當主題的連結，以便在適用) 中 (。
+## <a name="group-policy-settings-and-resources"></a>群組原則設定和資源
+
+本主題中的下表列出 Windows 10 中可用的群組原則設定，版本1703，並提供此文件庫中適當主題的連結，以便在適用) 中 (。 
+
+> [!TIP]
+> [下載 Windows 10 (2004) 的群組原則設定參考試算表（可能為2020更新](https://www.microsoft.com/download/101451)）。 這個試算表會列出電腦和使用者設定的原則設定，這些設定會包含在隨之傳送的系統管理範本檔案中 Windows 10 可能是2020更新 (2004) 。 您可以在編輯群組原則物件時，設定這些原則設定。
 
 | 位置 | 設定 | 文章 |
 |:---|:---|:---|
@@ -61,14 +68,14 @@ ms.locfileid: "52275333"
 | 排除項目 | 處理常式排除 | [設定及驗證 Microsoft Defender 防毒軟體掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md) | 
 | 排除項目 | 關閉自動排除 | [設定及驗證 Microsoft Defender 防毒軟體掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md) |
 | 地圖 | 設定「第一次看到的封鎖」功能 | [啟用封鎖第一次看到](configure-block-at-first-sight-microsoft-defender-antivirus.md) |
-| 地圖 | 加入 Microsoft MAPS | [啟用雲端傳送保護](enable-cloud-protection-microsoft-defender-antivirus.md) |
-| 地圖 | 需要進一步分析時傳送檔範例 | [啟用雲端傳送保護](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| 地圖 | 加入 Microsoft MAPS | [啟動雲端提供的保護](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| 地圖 | 需要進一步分析時傳送檔範例 | [啟動雲端提供的保護](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | 地圖 | 設定本地設定覆寫以進行 Microsoft MAPS 報告 | [防止或允許使用者本機修改原則設定](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | MpEngine | 設定擴充的雲端檢查 | [設定雲端封鎖逾時期間](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
 | MpEngine | 選取雲端保護層級 | [指定雲端提供的保護層級](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
-| 網路檢查系統 | 指定網路流量檢查的其他定義集 | 不再相關 |
-| 網路檢查系統 | 開啟定義停用 | 不再相關 |
-| 網路檢查系統 | 開啟通訊協定識別 | 不再相關 |
+| 網路檢查系統 | 指定網路流量檢查的其他定義集 | [指定網路流量檢查的其他定義集](specify-additional-definitions-network-traffic-inspection-mdav.md) |
+| 網路檢查系統 | 開啟定義停用 | [設定定義退休](turn-on-definition-retirement.md)  |
+| 網路檢查系統 | 開啟通訊協定識別 | [開啟通訊協定識別](turn-on-protocol-recognition.md)  |
 | 隔離 | 設定從隔離區移除專案的本機設定覆寫 | [防止或允許使用者本機修改原則設定](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 隔離 | 設定從隔離資料夾中移除專案 | [設定 Microsoft Defender 防毒軟體掃描的修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 即時保護 | 設定本機設定覆寫以監控電腦上的檔案和程式活動 | [防止或允許使用者本機修改原則設定](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
@@ -144,8 +151,7 @@ ms.locfileid: "52275333"
 | 威脅 | 指定偵測到預設動作時不應該採取的威脅警示層級 | [設定 Microsoft Defender 防毒軟體掃描的修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 威脅 | 指定當偵測到預設動作時不應該採取的威脅 | [設定 Microsoft Defender 防毒軟體掃描的修正](configure-remediation-microsoft-defender-antivirus.md) |
 
-
-## <a name="related-articles"></a>相關文章
+## <a name="see-also"></a>請參閱
 
 - [管理及設定工具的參考主題](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

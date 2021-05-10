@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 41ff35009ea33b5011d0bf2e97c210a9435da531
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: b9485364997c6ef824516e4a8fa1b576c33bbbee
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547357"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296200"
 ---
 # <a name="contact-support-for-french-southern-territories-antarctic-lands"></a> (南極領土的法國南部地區的支援聯繫) 
 
-[尋找其他國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話號碼
 + 1 312 843 5147

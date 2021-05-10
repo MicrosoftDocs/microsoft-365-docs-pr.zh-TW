@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: af17314f94d7e6085f3d579870ded5f85058856e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a881ff4f5ed844282b36a573639a253c07bea2f4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548113"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296368"
 ---
 # <a name="contact-support-for-china-prc"></a> (中華人民共和國的連絡人支援) 
 
-[尋找其他國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>電話號碼
 800 988 0365
@@ -39,7 +39,7 @@ ms.locfileid: "50548113"
 
 英文：全年無休
 
-備選電話號碼： 400 920 0365 (Mobile) 
+替代電話號碼： 400 920 0365 (Mobile) 
 
 ## <a name="follow-us-on-wechat"></a>在 WeChat 上關注我們
 ![WeChat QR 碼](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
