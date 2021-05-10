@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 瞭解如何在商務用 Microsoft 365 中重設使用者的密碼。
-ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8720942d60b5ce4efaca8885bd5209cb3e7e7ef8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241697"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52290992"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -86,7 +86,7 @@ ms.locfileid: "52241697"
 
 - 請確認您已提供替代連絡人資訊，包括行動電話號碼。
 
-- 或者，請 [致電 Microsoft 支援人員](../contact-support-for-business-products.md)。
+- 或者，請 [致電 Microsoft 支援人員](../../business-video/get-help-support.md)。
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同時為組織中的所有人重設所有商務密碼
 <a name="bkmk_forgot"> </a>

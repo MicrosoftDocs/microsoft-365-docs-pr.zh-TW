@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用系統管理中心在雲端設定您的組織並管理使用者和訂閱。 請以系統管理員權限登入帳戶以開始使用。
-ms.openlocfilehash: f2b8a22019e3292c93d07161f3825dfe90629ccc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: db88904e16cf9410d3eb4e4aac161f714993150b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241745"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52290980"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 
@@ -64,7 +64,7 @@ ms.locfileid: "52241745"
 |**群組** <br/> |建立及管理組織中的群組，例如 Microsoft 365 群組、通訊群組、安全性群組或共用信箱。 了解如何[建立](../create-groups/create-groups.md)及[管理](../create-groups/manage-groups.md)群組。  <br/> |
 |**資源** <br/> |建立及管理資源，例如 SharePoint 網站集合。 了解如何[建立網站集合](/sharepoint/create-site-collection)。  <br/> |
 |**帳單** <br/> |查看、購買或取消組織的訂閱。 查看過去的對帳單，或查看指派給個別使用者的授權數量。 了解如何[管理帳單](../../commerce/index.yml)。  <br/> |
-|**支援** <br/> | 查看現有的服務要求或建立新的服務要求。 在[連絡商務產品的客戶支援 - 系統管理說明](../contact-support-for-business-products.md)中深入了解。 |
+|**支援** <br/> | 查看現有的服務要求或建立新的服務要求。 在[連絡商務產品的客戶支援 - 系統管理說明](../../business-video/get-help-support.md)中深入了解。 |
 |**設定** <br/> |管理應用程式的通用設定，例如電子郵件、網站和 Office 套件。 變更您的密碼原則和到期日期。 新增及更新網域名稱，例如 contoso.com。 變更您的組織設定檔與發行喜好設定。 然後選擇是否要讓合作夥伴存取您的系統管理中心。  <br/> |
 |**設定** <br/> |管理現有的網域、開啟和管理多重要素驗證、管理系統管理員存取權、將使用者信箱移轉至 Office 365、管理功能更新，以及協助使用者安裝其 Office app。 |
 |**報告** <br/> |請快速查看您的組織如何使用 Microsoft 365，以及有關電子郵件使用、Office 啟用等等的詳細報告。 了解如何使用新[活動報告](../activity-reports/activity-reports.md)。  <br/> |
