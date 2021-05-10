@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 8d29291c63bdc437163feecce8164089d958d71d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939715"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299961"
 ---
 # <a name="get-incident-notifications-by-email"></a>透過電子郵件取得事件通知
 
@@ -37,13 +37,13 @@ ms.locfileid: "51939715"
 **適用於：**
 - Microsoft 365 Defender
 
-您可以設定 Microsoft 365 Defender 以透過電子郵件通知您的員工有關新的事件或更新現有的事件。 您可以選擇根據下列專案取得通知：
+您可以設定 Microsoft 365 Defender 以透過電子郵件通知員工有關新的事件或更新現有的事件。 您可以選擇根據下列專案取得通知：
 
 - 事件嚴重性。
 - 裝置群組。
 - 僅限每個事件第一個更新。
 
-電子郵件通知包含有關事件的重要詳細資料，例如事件名稱、嚴重性和類別，以及其他。 您也可以直接前往該事件，並立即開始進行分析。 如需詳細資訊，請參閱 [分析事件](investigate-incidents.md)。
+電子郵件通知包含有關事件的重要詳細資料，例如事件名稱、嚴重性和類別，以及其他。 您也可以直接前往該事件，並立即開始進行分析。 如需詳細資訊，請參閱 [調查事件](investigate-incidents.md)。
 
 您可以在電子郵件通知中新增或移除收件者。 新增的收件者會在新增事件後收到相關通知。 
 
@@ -55,7 +55,7 @@ ms.locfileid: "51939715"
 
 請遵循下列步驟建立新的規則，並自訂電子郵件通知設定。
 
-1. 在功能窗格中，選取 [ **設定 > Microsoft 365 Defender > 事件電子郵件通知**]。
+1. 在功能窗格中，選取 [**設定 > Microsoft 365 Defender > 事件電子郵件通知**]。
 2. 選取 [ **新增專案**]。
 3. 在 [ **基礎** ] 頁面上，輸入規則名稱和描述，然後選取 **[下一步]**。
 4. 在 [ **通知設定** ] 頁面上，設定：
@@ -63,7 +63,7 @@ ms.locfileid: "51939715"
     - **裝置群組範圍** -您可以指定所有的裝置群組，或從您租使用者中的裝置群組清單中進行選取。
     - **僅在每個事件第一次出現** 時，如果您只想要在第一個警示中符合其他選項，請選取 [僅限通知]。 稍後與該事件相關的更新或警示將不會傳送其他通知。
     - **在電子郵件中包含組織名稱** -如果您想要讓組織名稱出現在電子郵件通知中，請選取 [選取]。
-    - **包含租使用者專用入口網站連結** -如果您想要在電子郵件通知中新增具有租使用者識別碼的連結，以便存取特定的 Microsoft 365 租使用者，請選取此連結。
+    - **包含租使用者專用入口網站連結**-如果您想要在電子郵件通知中新增具有租使用者識別碼的連結，以便存取特定 Microsoft 365 租使用者，請選取此連結。
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="事件電子郵件通知的通知設定":::
 
@@ -74,7 +74,7 @@ ms.locfileid: "51939715"
 
 若要編輯現有規則，請從規則清單中進行選取。 在具有規則名稱的窗格上，選取 [ **刪除**]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)
-- [分析事件](investigate-incidents.md)
+- [調查事件](investigate-incidents.md)

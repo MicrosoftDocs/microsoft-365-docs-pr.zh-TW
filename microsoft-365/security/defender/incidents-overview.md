@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e2e29015d4cb5e04510577118eb847b9b596a6c5
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114279"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300010"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件
 
@@ -62,7 +62,7 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 - 攻擊的範圍，例如影響的裝置、使用者和信箱數目。 
 - 所有與攻擊相關聯的資料。
 
-若[啟用](m365d-enable.md)，Microsoft 365 Defender 可以透過自動化和人工智慧來自動調查和解決提醒。 您也可以執行其他修復步驟，以解決攻擊。 
+若[啟用](m365d-enable.md)，Microsoft 365 Defender 可以透過自動化和人工智慧來[自動調查和解決](m365d-autoir.md)提醒。 您也可以執行其他修復步驟，以解決攻擊。 
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心的事件及警示
 
@@ -94,11 +94,15 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
 - 調查
 
-  事件中的警示所觸發的所有自動調查。
+  事件中的警示所觸發的所有 [自動調查](m365d-autoir.md) 。
 
 - 證據與回應
 
   事件中警示中所有支援的事件及可疑的實體。
+
+- 預覽中 Graph () 
+
+  此圖顯示組織中受影響資產的警示連接。
 
 以下是事件與其資料之間的關係，以及 Microsoft 365 security center 中事件的索引標籤。
 
@@ -115,7 +119,7 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 - 透過篩選和排序事件佇列來判斷最高優先順序事件的[會審](incident-queue.md)。
 - 透過修改其標題、將其指派給分析員，以及新增標記和批註來[管理](manage-incidents.md)事件。
 
-1. 針對每個事件，開始 [攻擊和警示分析](investigate-incidents.md)：
+1. 針對每個事件，開始 [攻擊及警示調查和分析](investigate-incidents.md)：
  
    a. 請查看事件摘要，瞭解其範圍和嚴重性，以及會影響哪些實體 ([ **摘要** ] 索引標籤) 中。
 
@@ -123,7 +127,7 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
    c. 如有需要，請在 [ **裝置**]、[ **使用者**] 和 [ **信箱** ] 索引標籤)  (，收集受影響裝置、使用者和信箱的資訊。
 
-   d. 請參閱「**調查**」索引標籤) 中 Microsoft 365 Defender 如何自動解決某些警示 (。
+   d. 請參閱「**調查**」索引標籤) 中 Microsoft 365 Defender 如何 [自動解決某些警示](m365d-autoir.md) (。
    
    e. 如有需要，請使用事件資料組中的資訊，以取得 (**證據與回應** ] 索引標籤) 的詳細資訊。
 
@@ -149,7 +153,7 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 每個任務可以包含：
 
 - [管理](manage-incidents.md) 事件
-- 檢查 [自動調查和回應 (AIR) ](m365d-action-center.md) 動作
+- 在重要訊息中心中檢查 [自動調查和回應 (AIR) ](m365d-action-center.md) 動作
 - 查看最新的 [威脅分析](threat-analytics.md)
 - [回應](investigate-incidents.md) 事件
 
@@ -167,8 +171,19 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
 ## <a name="next-steps"></a>後續步驟
 
-[ **事件** ] 頁面的 [事件] 佇列會列出最近的事件。 在這裡，您可以：
+**如果您是新的** 安全性分析和事件回應：
 
-- 根據嚴重性及其他因素，查看應 [優先](incident-queue.md) 考慮哪些事件。 
-- [管理事件](manage-incidents.md)，包括重新命名、指派、分類，以及新增事件管理工作流程的標記和批註。
-- 執行事件的 [分析](investigate-incidents.md) 。
+- 請參閱[您的第一個 incident 演練](first-incident-overview.md)，以取得一般分析、修正及事件後檢查的指導教程，並在 Microsoft 365 的安全性中心使用攻擊的範例。
+
+**如果您已體驗** 安全性分析和事件回應：
+
+- 從 Microsoft 365 security center 的 [**事件**] 頁面開始使用事件佇列。 在這裡，您可以：
+
+  - 根據嚴重性及其他因素，查看應 [優先](incident-queue.md) 考慮哪些事件。 
+
+  - [管理事件](manage-incidents.md)，包括重新命名、指派、分類，以及根據您的事件管理工作流程新增標記和批註。
+
+  - 進行事件 [調查](investigate-incidents.md) 。
+
+- 請參閱這些 [事件回應行動手冊](https://docs.microsoft.com/security/compass/incident-response-playbooks) ，以取得網路釣魚、密碼噴塗和應用程式同意授與攻擊的詳細指導。
+

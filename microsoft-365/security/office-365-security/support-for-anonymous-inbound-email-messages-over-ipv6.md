@@ -18,14 +18,14 @@ ms.custom:
 description: 系統管理員可以瞭解如何在 Exchange Online 和 Exchange Online Protection 的 IPv6 來源中設定匿名輸入電子郵件的支援。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df06891401802d212cbfdb55085662901f5546e9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 80fdcc9dcfe3006ef8b21aa19856fe8c0ea3ff70
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204639"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300046"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>在 Microsoft 365 中新增對 IPv6 匿名輸入電子郵件的支援
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>新增對 Microsoft 365 中 IPv6 的匿名輸入電子郵件的支援
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,13 +34,13 @@ ms.locfileid: "51204639"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 組織使用 Exchange Online 信箱和獨立 Exchange Online Protection (EOP) 沒有 Exchange Online 信箱的組織都支援透過 IPv6 的匿名輸入電子郵件。 來源 IPv6 電子郵件伺服器必須符合下列兩項需求：
+Microsoft 365 組織中 Exchange Online 信箱和獨立 Exchange Online Protection (EOP) 沒有 Exchange Online 信箱的組織，都支援透過 IPv6 的匿名輸入電子郵件。 來源 IPv6 電子郵件伺服器必須符合下列兩項需求：
 
 - 來源 IPv6 位址必須具有有效的反向 DNS 查閱 (PTR) 記錄，允許目的地從 IPv6 位址尋找功能變數名稱。
 
 - 寄件者必須通過 SPF 驗證 (定義於 [RFC 7208](https://tools.ietf.org/html/rfc7208)) 或 [DKIM 驗證](http://dkim.org/) (定義於 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt))。
 
-在您的組織可以透過 IPv6 接收匿名的輸入電子郵件之前，系統管理員必須先聯繫 Microsoft 支援人員，並要求。 如需如何開啟支援要求的指示，請參閱 [聯繫支援人員以取得商務產品-系統管理](../../admin/contact-support-for-business-products.md)說明。
+在您的組織可以透過 IPv6 接收匿名的輸入電子郵件之前，系統管理員必須先聯繫 Microsoft 支援人員，並要求。 如需如何開啟支援要求的指示，請參閱 [聯繫支援人員以取得商務產品-系統管理](../../business-video/get-help-support.md)說明。
 
 在您的組織中啟用匿名輸入 IPv6 郵件支援之後，郵件會透過服務提供的一般郵件篩選功能。
 

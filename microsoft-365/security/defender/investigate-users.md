@@ -1,7 +1,7 @@
 ---
-title: 在 Microsoft 365 的安全性中心分析使用者
-description: 在 Microsoft 365 安全中心分析使用者
-keywords: 安全性，惡意程式碼，Microsoft 365，M365，security center，monitor，report，identity，data，裝置，應用程式，事件，分析，回應
+title: 在 Microsoft 365 安全性中心調查使用者
+description: 調查 Microsoft 365 security center 中的使用者
+keywords: security，malware，Microsoft 365，M365，security center，monitor，report，identity，data，裝置，應用程式，事件，分析，回應
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2fd9b958cdbdaf22346f8171c789f2ca9a8336d1
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: c03e4d5bd94eb6105ffab91c6dad2b74d7159dde
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957602"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300058"
 ---
-# <a name="analyze-users-in-microsoft-365-security-center"></a>在 Microsoft 365 的安全性中心分析使用者
+# <a name="investigate-users-in-microsoft-365-security-center"></a>在 Microsoft 365 安全性中心調查使用者
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,13 +34,13 @@ ms.locfileid: "51957602"
 
 - Microsoft 365 Defender
 
-您的部分事件分析可以包含使用者帳戶。 從事件的 [ **使用者** ] 索引標籤開始， **& 警示 >** *事件* **> 使用者**。 
+您的一部分事件調查可以包含使用者帳戶。 從事件的 [ **使用者** ] 索引標籤開始， **& 警示 >** *事件* **> 使用者**。 
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的使用者頁面範例":::
 
 若要快速摘要瞭解事件的使用者帳戶，請選取使用者帳戶名稱旁邊的核取記號。 以下為範例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Microsoft 365 安全中心內事件之使用者帳戶摘要窗格的範例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Microsoft 365 security center 中事件之使用者帳戶摘要窗格的範例":::
 
 > [!NOTE]
 > [使用者] 頁面會顯示 Azure Active Directory (AD) 組織和群組，協助您瞭解與使用者相關聯的群組和許可權。
@@ -51,11 +51,11 @@ ms.locfileid: "51957602"
 
 您可以從這裡選取 [ **移至使用者] 頁面** ，以查看使用者帳戶的詳細資料。 以下為範例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Microsoft 365 安全中心內事件的使用者帳戶頁面範例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Microsoft 365 security center 中事件的使用者帳戶頁面範例":::
 
 您也可以在 [ **使用者** ] 頁面上選取清單中的使用者帳戶名稱，以查看此頁面。
 
-Microsoft 365 的「安全性中心」使用者頁面會結合 Microsoft Defender for Endpoint、Microsoft Defender 身分識別及 Microsoft Cloud App Security (的資訊，取決於您) 的授權。 
+Microsoft 365 的安全性中心使用者頁面會結合 microsoft defender for Endpoint、microsoft defender 身分識別及 Microsoft Cloud App Security (的資訊，視您擁有) 的授權而定。 
 
 此頁面顯示使用者帳戶安全風險的特定資訊。 這包括協助評估風險及最近的事件，以及對使用者整體風險所帶來的警示。
 
@@ -70,7 +70,7 @@ Microsoft 365 的「安全性中心」使用者頁面會結合 Microsoft Defende
 
 以下為範例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Microsoft 365 安全性中心內事件之使用者帳戶的動作範例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Microsoft 365 security center 中的事件之使用者帳戶的動作範例":::
 
 
 <!--
@@ -80,7 +80,11 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 --> 
 
-## <a name="related-topics"></a>相關主題
+## <a name="next-steps"></a>後續步驟
+
+視需要進行處理內事件，繼續進行 [調查](investigate-incidents.md)。
+
+## <a name="see-also"></a>請參閱
 
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)

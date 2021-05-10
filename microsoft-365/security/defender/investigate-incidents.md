@@ -1,6 +1,6 @@
 ---
-title: 分析 Microsoft 365 Defender 中的事件
-description: 分析與裝置、使用者和信箱相關的事件。
+title: 調查 Microsoft 365 Defender 中的事件
+description: 調查與裝置、使用者和信箱相關的事件。
 keywords: 事件，事件，分析，回應，機器，裝置，使用者，身分識別，郵件，電子郵件，信箱，調查，圖形，證據
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259630"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300082"
 ---
-# <a name="analyze-incidents-in-microsoft-365-defender"></a>分析 Microsoft 365 Defender 中的事件
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Microsoft 365Defender 會將所有相關的警示、資產、調查和證據，�
 
 在事件內，您會分析影響網路的警示、瞭解其含義，以及對照證據來設計有效的修復計畫。
 
-## <a name="initial-analysis"></a>初始分析
+## <a name="initial-investigation"></a>初始調查
 
 深入瞭解詳細資料之前，請先查看事件的屬性與摘要。
 
@@ -88,7 +88,7 @@ Microsoft 365Defender 會將所有相關的警示、資產、調查和證據，�
 
 依預設，提醒會以時間順序排列，以讓您瞭解事件隨時間的播放方式。 選取每個提醒會帶您前往警示的主頁面，您可以在其中對該警示進行深入分析。 
 
-瞭解如何在[分析提醒](investigate-alerts.md)中使用警示佇列及警示頁面
+瞭解如何在 [調查提醒](investigate-alerts.md)中使用警示佇列及警示頁面。
 
 ## <a name="devices"></a>裝置
 
@@ -123,11 +123,13 @@ Microsoft 365Defender 會將所有相關的警示、資產、調查和證據，�
 
 ## <a name="investigations"></a>調查
 
-[ **調查** ] 索引標籤會列出此事件中的警示所觸發的所有自動調查。 調查會執行修正動作，或等候分析員的動作核准，視您如何設定自動調查，以在 Microsoft Defender for Endpoint 和 Defender for Office 365 中執行。
+[ **調查** ] 索引標籤會列出此事件中的警示所觸發的所有 [自動調查](m365d-autoir.md) 。 調查會執行修正動作，或等候分析員的動作核准，視您如何設定自動調查，以在 Microsoft Defender for Endpoint 和 Defender for Office 365 中執行。
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="事件的調查頁面範例":::
 
 選取調查以瀏覽至 [調查詳細資料] 頁面，取得調查和修復狀態的完整資訊。 如果有任何動作出于調查的一部分而待核准，它們就會出現在 [擱置的動作] 索引標籤中。採取動作做為事件修復的一部分。
+
+如需詳細資訊，請參閱[Microsoft 365 Defender 中的自動化調查和回應](m365d-autoir.md)。
 
 ## <a name="evidence-and-response"></a>證據與回應
 
@@ -155,8 +157,14 @@ Microsoft 365Defender 會自動調查警示中的所有事件支援事件和可�
 
 現在，您可以瞭解攻擊如何透過您的網路傳播，在何處開始，以及攻擊的進入程度。
 
+## <a name="next-steps"></a>後續步驟
 
-## <a name="related-topics"></a>相關主題
+視需要：
+
+- [調查事件的警示](investigate-alerts.md)
+- [調查事件的使用者](investigate-users.md)
+
+## <a name="see-also"></a>請參閱
 
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)

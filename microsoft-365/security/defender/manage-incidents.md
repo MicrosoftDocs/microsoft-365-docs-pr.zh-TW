@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 Defender 中管理事件
+title: 管理 Microsoft 365 Defender 中的事件
 description: 了解如何指派及更新狀態
 keywords: 事件、事件、分析、回應、警示、關聯警示、指派、更新、狀態、管理、分類、microsoft、365、m365
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939751"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299998"
 ---
-# <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
+# <a name="manage-incidents-in-microsoft-365-defender"></a>管理 Microsoft 365 Defender 中的事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51939751"
 
 事件管理對於確保威脅已包含並加以解決非常重要。
 
-您可以在 Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上，管理事件 **& 警示 > 事件**。 以下為範例。
+您可以在 Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 的快速啟動上，管理事件 **& 警示 > 事件**。 以下為範例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件佇列的範例":::
 
@@ -65,7 +65,7 @@ ms.locfileid: "51939751"
 
 ## <a name="edit-the-incident-name"></a>編輯事件名稱
 
-Microsoft 365 Defender 會根據警示屬性（如受影響的端點數目、受影響的使用者、偵測來源或類別）自動指派名稱。 這可讓您快速瞭解事件的範圍。 例如：多 *個來源所報告之多個端點上的多階段事件。*
+Microsoft 365Defender 會根據警示屬性（如受影響的端點數目、受影響的使用者、偵測來源或類別）自動指派名稱。 這可讓您快速瞭解事件的範圍。 例如：多 *個來源所報告之多個端點上的多階段事件。*
 
 您可以在 [**管理事件**] 窗格上的 [**事件名稱**] 欄位中編輯事件名稱。
 
@@ -98,8 +98,16 @@ Microsoft 365 Defender 會根據警示屬性（如受影響的端點數目、受
 
 您可以使用 [ **批註** ] 欄位，將多個批註新增至事件。 每個評論都會新增至事件的歷史事件。 您可以在 [**摘要**] 頁面上，看到 [**批註和記錄**] 連結中的事件批註和記錄。
 
-## <a name="related-topics"></a>相關主題
+## <a name="next-steps"></a>後續步驟
+
+針對新的事件，開始進行 [調查](investigate-incidents.md)。
+
+若為處理中的事件，請繼續進行 [調查](investigate-incidents.md)。
+
+若為解決的事件，請執行 [事件後檢查](first-incident-post.md)。
+
+## <a name="see-also"></a>請參閱
 
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)
-- [分析事件](investigate-incidents.md)
+- [調查事件](investigate-incidents.md)

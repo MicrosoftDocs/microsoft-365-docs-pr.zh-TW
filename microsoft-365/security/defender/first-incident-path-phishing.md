@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fb3656a9d3f67d979c012d9cc316a10e65a72042
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 41a2c73ce5e1c3060d88572f4fa7afe63e193f46
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114568"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299985"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>網路釣魚電子郵件攻擊的範例
 
@@ -64,8 +64,8 @@ Microsoft 365Defender 可協助偵測透過電子郵件傳遞的惡意附件。 
 
 請參閱以身分 [識別的攻擊](first-incident-path-identity.md) 調查路徑。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [事件概觀](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [調查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

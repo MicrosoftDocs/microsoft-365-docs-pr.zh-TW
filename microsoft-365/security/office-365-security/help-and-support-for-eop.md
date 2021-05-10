@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5859adec666fc8cd957ab0b199a1bd600279288f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203508"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298025"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 的說明和支援
 
@@ -29,17 +29,17 @@ ms.locfileid: "51203508"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在使用 Exchange Online 或獨立 Exchange online Protection 中信箱的 Microsoft 365 組織中 (EOP) 沒有 Exchange Online 信箱的組織，本文中所列的技術支援資源，可協助您在 EOP 有困難時找到答案。 Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
+在 Microsoft 365 具有 Exchange Online 或獨立 Exchange Online Protection 中信箱的組織 (EOP) 組織若沒有 Exchange Online 信箱，本文所列的技術支援資源將可協助您找出您在 EOP 中有困難的答案。 Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
 
 ## <a name="self-support-options"></a>自我支援選項
 
-登入時，Microsoft 365 系統管理中心會提供您組織服務狀態的相關資訊。 此外，服務健康情況區段會顯示服務的目前狀態、中斷及中斷的詳細資料，並列出已計畫的維護時間。 Microsoft 365 系統管理中心還提供已知問題和預期解決方案的相關資訊。 如果您受到全服務事件的影響，您應該會看到通訊警示 (通常伴隨著鈴鐺圖示)。 建議您詳讀內容並採取適當的行動。 如需服務健康情況區域的詳細資訊，請參閱 [服務健康情況和持續性](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您也可以使用這裡所列的工具、論壇及社區網站，尋找您自己的其他協助。
+登入時，Microsoft 365 系統管理中心會提供您組織服務狀態的相關資訊。 此外，服務健康情況區段會顯示服務的目前狀態、中斷及中斷的詳細資料，並列出已計畫的維護時間。 Microsoft 365 系統管理中心也會提供已知問題和預期解決方案的相關資訊。 如果您受到全服務事件的影響，您應該會看到通訊警示 (通常伴隨著鈴鐺圖示)。 建議您詳讀內容並採取適當的行動。 如需服務健康情況區域的詳細資訊，請參閱 [服務健康情況和持續性](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您也可以使用這裡所列的工具、論壇及社區網站，尋找您自己的其他協助。
 
 [Exchange Online Protection 產品概觀](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[連絡商務產品的客戶支援 - 系統管理說明](../../admin/contact-support-for-business-products.md)
+[連絡商務產品的客戶支援 - 系統管理說明](../../business-video/get-help-support.md)
 
-[Microsoft 365 社區](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365 群組](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
 [Microsoft 支援及修復小幫手 (SARA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
