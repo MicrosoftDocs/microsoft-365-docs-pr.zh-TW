@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 26a9d008d7a0ab6727b267fced23ec2731bfde68
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 463155e9b1af9dad0a5bbbbe9eed86c3abbbbdcf
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544261"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297665"
 ---
-# <a name="contact-support-for-south-sudan"></a><span data-ttu-id="1b815-103">取得南蘇丹的支援</span><span class="sxs-lookup"><span data-stu-id="1b815-103">Contact support for South Sudan</span></span>
+# <a name="contact-support-for-south-sudan"></a><span data-ttu-id="04d94-103">取得南蘇丹的支援</span><span class="sxs-lookup"><span data-stu-id="04d94-103">Contact support for South Sudan</span></span>
 
-<span data-ttu-id="1b815-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="1b815-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="04d94-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="04d94-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="1b815-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="1b815-105">Phone number</span></span>
-<span data-ttu-id="1b815-106">+ 1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="1b815-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="04d94-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="04d94-105">Phone number</span></span>
+<span data-ttu-id="04d94-106">+ 1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="04d94-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="1b815-107">小時</span><span class="sxs-lookup"><span data-stu-id="1b815-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="1b815-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="1b815-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="04d94-107">小時</span><span class="sxs-lookup"><span data-stu-id="04d94-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="04d94-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="04d94-108">Billing Support:</span></span>
 
-<span data-ttu-id="1b815-109">英文： Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="1b815-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="04d94-109">英文： Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="04d94-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="1b815-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="1b815-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="04d94-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="04d94-110">Technical Support:</span></span>
 
-<span data-ttu-id="1b815-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="1b815-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="04d94-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="04d94-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="1b815-112">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="1b815-112">International call charges apply</span></span>
+<span data-ttu-id="04d94-112">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="04d94-112">International call charges apply</span></span>
