@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 瞭解您可以在 Microsoft Viva 中搜尋主題的方式。
-ms.openlocfilehash: 15b42c9d3689a73c865be53bb29f298fcbf896bd
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54a143ea0960bf56a0d1c5224658bea404c7621e
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281039"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301713"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜尋來尋找 Microsoft Viva 主題中的主題
 
@@ -36,7 +36,7 @@ ms.locfileid: "52281039"
 
 即使主題的答案卡未出現，也可以在搜尋結果中顯示 [主題] 頁面。
 
-Word 和 PowerPoint 中的搜尋結果也會在找到一個主題時顯示主題答案。
+Word、PowerPoint Outlook 和 Excel 中的搜尋結果也會在找到一個主題時顯示主題答案。
 
 
 ## <a name="acronyms"></a>縮略字

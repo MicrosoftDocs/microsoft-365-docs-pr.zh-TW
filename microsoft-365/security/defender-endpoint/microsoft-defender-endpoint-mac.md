@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b5af93e82f72bac900682b2e231453e448b267d9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934186"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301773"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934186"
 本主題說明如何在 Mac 上安裝、設定、更新和使用 Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Mac 上執行其他協力廠商端點保護產品及 Microsoft Defender for Mac 時，可能會造成效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以 [被動式模式](mac-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以安全地利用適用于 Mac EDR 功能的 Defender。
+> 在 Mac 上執行其他協力廠商端點保護產品及 Microsoft Defender for Mac 時，可能會造成效能問題和不可預測的副作用。 若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以[被動式模式](mac-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以在 Mac EDR 功能上安全地利用 Defender for endpoint。
 
 ## <a name="whats-new-in-the-latest-release"></a>最新版本中的新功能
 
@@ -56,7 +56,7 @@ ms.locfileid: "51934186"
 
 ### <a name="prerequisites"></a>必要條件
 
-- 用於端點訂閱和 Microsoft Defender Security Center 入口網站存取權的 Defender
+- 用於端點訂閱和存取 Microsoft Defender 資訊安全中心入口網站的 Defender
 - macOS 和 BASH 腳本中的初級層級體驗
 - 當手動部署時，裝置上的系統管理許可權 () 
 
@@ -97,11 +97,13 @@ Mac 版上的 microsoft Defender Endpoint 需要下列其中一項 Microsoft 大
 
 - Microsoft 365 E5 (M365 E5) 
 - Microsoft 365 E5 安全性
-- Microsoft 365 A5 (M365 A5) 
+- Microsoft 365A5 (M365 A5) 
+- Windows 10 企業版E5
+- 適用於端點的 Microsoft Defender
 
 > [!NOTE]
 > 合格授權的使用者最多可在最多五個並行裝置上使用 Microsoft Defender 端點。
-> Microsoft Defender for Endpoint 也可從雲端解決方案供應商購買 (CSP) 。 透過 CSP 購買時，不需要列出 Microsoft 大量授權提供者。
+> Microsoft Defender for Endpoint 也可從雲端解決方案提供者 (CSP) 購買。 透過 CSP 購買時，不需要列出 Microsoft 大量授權提供者。
 
 ### <a name="network-connections"></a>網路連線
 

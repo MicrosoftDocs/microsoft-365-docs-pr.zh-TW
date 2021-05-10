@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何使用 Microsoft Teams，透過使用 Microsoft 365 解決方案來建立您的合約管理通道。
-ms.openlocfilehash: a97f6a77818fc53aa28a5924b97e3c7309d01e3a
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: d703f6f7286a6d9584e8b18d4e283174f42a95bd
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281119"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301797"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步驟 2. 使用 Microsoft Teams 建立您的合約管理通道
 
@@ -42,6 +42,9 @@ ms.locfileid: "52281119"
    ![清單視圖。](../media/content-understanding/list-view.png) 
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>自訂 [您的合約] 索引標籤視圖
+
+> [!NOTE]
+> 本節參考 **solutionfiles** zip 檔案所包含的檔案 **ContractCard.js** 中所包含的程式碼範例。
 
 雖然 Teams 可讓您在平鋪視圖中查看您的合約，但您可能會想要自訂它，以查看您想要在合同卡中顯示的合約資料。 例如，對於 [ **合約** ] 索引標籤，成員可以查看合同卡片上的客戶、合同工和費用金額，這一點很重要。 所有這些欄位都是透過已套用至文件庫的 SharePoint Syntex 模型從每個合約中解壓縮。 您也想要將磚標題列變更為不同狀態的不同色彩，讓成員可以輕鬆查看合約在核准程式中的位置。 例如，所有核准的合約都會有藍色標頭欄。
 

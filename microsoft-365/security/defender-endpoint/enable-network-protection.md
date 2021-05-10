@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a2bc36f9d3a3e9179f07662da8d97f4c55e72a24
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768995"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302049"
 ---
 # <a name="turn-on-network-protection"></a>開啟網路保護
 
@@ -29,7 +29,7 @@ ms.locfileid: "51768995"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [網路保護](network-protection.md) 可協助防止員工使用任何應用程式存取可能會在網際網路上主控網路釣魚詐騙、入侵和其他惡意內容的危險網域。 您可以在測試環境中 [審核網路保護](evaluate-network-protection.md) ，以查看在啟用之前將封鎖哪些應用程式。
 
@@ -43,7 +43,7 @@ ms.locfileid: "51768995"
 
 2. 選擇側邊功能表中的 [ **HKEY_LOCAL_MACHINE**
 
-3. 流覽嵌套的功能表至 **軟體**  >  **原則**  >  **Microsoft**  >  **Windows defender**  >  **windows defender 利用防護**  >  **網路保護**
+3. 透過嵌套功能表流覽至 **軟體**  >  **原則**  >  **Microsoft**  >  **Windows Defender**  >  **原則管理員** 
 
 4. 選取 [ **EnableNetworkProtection** ]，以查看裝置上目前的網路保護狀態。
 
@@ -64,7 +64,7 @@ ms.locfileid: "51768995"
 
 ### <a name="powershell"></a>PowerShell
 
-1. 在 [開始] 功能表中輸入 **powershell** ，以滑鼠右鍵按一下 [ **Windows PowerShell** ，然後選取 [以 **系統管理員身分執行**]
+1. 在 [開始] 功能表中輸入 **powershell** ，以滑鼠右鍵按一下 **Windows PowerShell** 並選取 [以 **系統管理員身分執行**]
 2. 輸入下列 Cmdlet：
 
     ```PowerShell
@@ -79,17 +79,17 @@ ms.locfileid: "51768995"
 
     使用 `Disabled` 代替 `AuditMode` 或 `Enabled` 關閉功能。
 
-### <a name="mobile-device-management-mdm"></a>移動裝置管理 (MDM) 
+### <a name="mobile-device-management-mdm"></a>行動裝置管理 (MDM)
 
 使用 [/Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service PROVIDER (CSP) 以啟用或停用網路保護或啟用稽核模式。
 
-### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft 端點管理員 (先前的 Intune) 
+### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft 端點管理員 (以前的 Intune) 
 
-1. 登入 Microsoft 端點管理員管理中心 (https://endpoint.microsoft.com)
+1. 登入 Microsoft 端點管理員系統管理中心 (https://endpoint.microsoft.com)
 
 2. 建立或編輯 [endpoint protection 設定檔](/mem/intune/protect/endpoint-protection-configure)
 
-3. 在設定檔流程中的 [**設定設定**] 底下，移至 [ **Microsoft Defender exploit**  >  protection **網路篩選**]  >  **網路保護**  >  **啟用** 或 **僅限審核**
+3. 在設定檔流程中的 [設定 **設定**] 底下，移至 **Microsoft Defender 惡意探索防護**  >  **網路篩選**  >  **網路保護**  >  **啟用** 或 **僅限審核**
 
 ### <a name="group-policy"></a>群組原則
 
@@ -101,17 +101,17 @@ ms.locfileid: "51768995"
 
     在已加入網域的群組原則管理電腦上，開啟 [群組原則管理主控台](https://technet.microsoft.com/library/cc731212.aspx)，以滑鼠右鍵按一下您要設定的群組原則物件，然後選取 [ **編輯**]。
 
-2. 在 [**群組原則管理編輯器**] 中，移至 [電腦設定]，然後選取 [**系統****管理範本**]。
+2. 在 **[群組原則管理編輯器]** 中，移至 **[電腦設定]** 然後選取 **[系統管理範本]**。
 
-3. 將樹狀目錄展開為 **windows 元件**  >  **Microsoft defender 防病毒**  >  **Windows defender 利用防護**  >  **網路防護**。
+3. 展開樹狀目錄，以 **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **Windows Defender 利用防護**  >  **網路保護**。
 
 > [!NOTE]
-> 在舊版 Windows 上，群組原則路徑可以說「Windows Defender 防毒程式」，而不是「Microsoft Defender 防毒程式」。
+> 在舊版的 Windows 中，群組原則路徑可以說「Windows Defender 防毒軟體」，而不是「Microsoft Defender 防毒軟體」。
 
 4. 按兩下 [ **防止使用者和應用程式存取危險的網站** ] 設定，並將此選項設定為 [ **啟用**]。 在 [選項] 區段中，您必須指定下列其中一個選項：
     * **封鎖** -使用者無法存取惡意的 IP 位址和網域
     * **停用 (預設)** -網路保護功能將無法運作。 使用者不會被封鎖存取惡意網域
-    * **稽核模式** -如果使用者要走訪惡意的 IP 位址或網域，將會在 Windows 事件記錄檔中記錄事件。 不過，使用者不會被封鎖訪問位址。
+    * **稽核模式**-如果使用者要走訪惡意的 IP 位址或網域，將會在 Windows 事件記錄檔中記錄事件。 不過，使用者不會被封鎖訪問位址。
 
 > [!IMPORTANT]
 > 若要完全啟用網路保護，您必須將群組原則選項設定為 [ **啟用** ]，然後在 [選項] 下拉式功能表中選取 [ **封鎖** ]。
@@ -127,7 +127,7 @@ ms.locfileid: "51768995"
    * 1 = 開啟
    * 2 = 審計
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [網路保護](network-protection.md)
 * [評估網路保護](evaluate-network-protection.md)

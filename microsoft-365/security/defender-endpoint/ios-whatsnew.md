@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 76abde885aa16c174bb81d22e5939d47894a59bf
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 64a96256ff4bb4b77ec634195f6d89b92252142a
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934966"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301761"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender for Endpoint on iOS 中的新功能
 
@@ -37,7 +37,9 @@ ms.locfileid: "51934966"
 
 ## <a name="1115140101"></a>1.1.15140101
 
-- Microsoft Defender ATP 產品名稱現在已更新至應用程式存放區中的 Microsoft Defender for Endpoint。
+- **Jailbreak 偵測** 是在預覽中。 如需詳細資訊，請參閱 [設定條件式存取原則根據裝置風險信號](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
+- 您可以透過 Microsoft 端點管理員 (Intune) ，在已註冊的裝置中預覽 **自動設定 VPN 設定檔**。 如需詳細資訊，請參閱 [Auto a SETUP VPN profile for 已註冊的 iOS 裝置](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
+- Microsoft Defender ATP 的產品名稱現在已更新至應用程式存放區中的 Microsoft Defender for Endpoint。
 - 改進的登入體驗。
 - 錯誤修正。
 

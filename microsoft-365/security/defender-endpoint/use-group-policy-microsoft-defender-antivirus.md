@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/07/2021
+ms.date: 05/08/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296728"
+ms.locfileid: "52302097"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>使用群組原則設定來設定及管理 Microsoft Defender 防毒軟體
 
@@ -55,7 +55,7 @@ ms.locfileid: "52296728"
 本主題中的下表列出 Windows 10 中可用的群組原則設定，版本1703，並提供此文件庫中適當主題的連結，以便在適用) 中 (。 
 
 > [!TIP]
-> [下載 Windows 10 (2004) 的群組原則設定參考試算表（可能為2020更新](https://www.microsoft.com/download/101451)）。 這個試算表會列出電腦和使用者設定的原則設定，這些設定會包含在隨之傳送的系統管理範本檔案中 Windows 10 可能是2020更新 (2004) 。 您可以在編輯群組原則物件時，設定這些原則設定。
+> [下載 Windows 10 (2004) 的群組原則設定參考試算表（可能為2020更新](https://www.microsoft.com/download/101451)）。 這個試算表會列出電腦和使用者設定的原則設定，這些設定會包含在隨之傳送的系統管理範本檔案中 Windows 10 可能是2020更新 (2004) 。 您可以設定在編輯群組原則物件時，參考試算表。
 
 | 位置 | 設定 | 文章 |
 |:---|:---|:---|

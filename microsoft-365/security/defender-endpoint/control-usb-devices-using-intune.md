@@ -1,5 +1,5 @@
 ---
-title: 如何使用 Intune (Windows 10) 控制 USB 裝置和其他卸除式媒體
+title: '如何使用 Intune (Windows 10 來控制 USB 裝置和其他卸除式媒體) '
 description: 您可以設定 Intune 設定，以降低來自可移動儲存裝置（例如 USB 裝置）的威脅。
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -12,12 +12,12 @@ ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: 4d5479336588a78599f8e8a868503257964adb3a
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: eb7043451c4d80e3eca8b0703703ac6d7a459161
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893746"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302085"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>如何使用 Microsoft Defender for Endpoint 控制 USB 裝置和其他卸除式媒體
 
@@ -28,10 +28,10 @@ Microsoft 建議 [使用一種分層方法來保護卸除式媒體](https://aka.
 1. [在 Microsoft Defender 中探索針對外設的隨插即用線上活動，以進行端點高級搜尋](#discover-plug-and-play-connected-events)。 識別或調查可疑的使用活動。
 
 2. 設定為只允許或封鎖某些可移動裝置，並避免威脅。
-    1. 根據細微設定[允許或封鎖可移除裝置](#allow-or-block-removable-devices)，以拒絕對抽取式磁碟的寫入權限，以及使用 USB 裝置 IDs 來核准或拒絕裝置。 根據個人或群組的 Azure Active Directory (Azure AD) 使用者和裝置，靈活的裝置安裝設定的靈活原則指派。
+    1. 根據細微設定[允許或封鎖可移除裝置](#allow-or-block-removable-devices)，以拒絕對抽取式磁碟的寫入權限，以及使用 USB 裝置 IDs 來核准或拒絕裝置。 根據 Azure Active Directory (Azure AD) 使用者和裝置的個人或群組，以彈性原則指派裝置安裝設定。
 
     2. 啟用下列專案，以防止可拆卸儲存體裝置所引進的可[拆卸儲存體威脅](#prevent-threats-from-removable-storage)：  
-        - Microsoft Defender 防病毒即時防護 (RTP) 來掃描可拆卸儲存體以取得惡意程式碼。  
+        - Microsoft Defender 防毒軟體即時保護 (RTP) 來掃描可拆卸儲存體以取得惡意程式碼。  
         - 攻擊面減少 (ASR) USB 規則，以封鎖從 USB 執行的不受信任的和未簽署的處理常式。  
         - Direct Memory Access (DMA) 保護設定，以減輕 DMA 攻擊（包括 Thunderbolt 和封鎖 DMA 的內核 DMA 保護），直到使用者登入為止。  
 
@@ -40,14 +40,14 @@ Microsoft 建議 [使用一種分層方法來保護卸除式媒體](https://aka.
 4. 根據每個外設所報告的內容即時回應週邊設備的[威脅](#respond-to-threats)。
 
 >[!Note]
->這些威脅降低量值可協助防止惡意程式碼進入您的環境。 若要保護企業資料離開您的環境，您也可以設定資料遺失防護量值。 例如，在 Windows 10 裝置上，您可以設定 [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) 和 [Windows 資訊保護](/windows/security/information-protection/create-wip-policy-using-intune-azure.md)，它會加密公司資料（即使是儲存在個人裝置上），或是使用 [Storage/RemovableDiskDenyWriteAccess CSP](/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) 拒絕對抽取式磁碟的寫入存取。 此外，您可以使用 Microsoft Defender for Endpoint 和 Azure 資訊保護功能， [在 Windows 裝置上分類及保護](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) 檔案 (包括其裝載的 USB 裝置) 。
+>這些威脅降低量值可協助防止惡意程式碼進入您的環境。 若要保護企業資料離開您的環境，您也可以設定資料遺失防護量值。 例如，在 Windows 10 裝置上，您可以設定[BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md)和[Windows 資訊保護](/windows/security/information-protection/create-wip-policy-using-intune-azure.md)，它會加密公司資料（即使是儲存在個人裝置上），或是使用[儲存體/RemovableDiskDenyWriteAccess CSP](/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess)來拒絕對抽取式磁碟的寫入存取。 此外，您可以使用 Microsoft Defender for Endpoint 和 Azure 資訊保護功能，[在 Windows 裝置上分類及保護](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview)檔案 (包括其裝載的 USB 裝置) 。
 
 ## <a name="discover-plug-and-play-connected-events"></a>探索隨插即用連線的事件
 
 您可以在 Microsoft Defender for Endpoint advanced 搜尋中查看隨插即用連線的事件，以找出可疑的使用狀況活動或執行內部調查。
-如需適用于端點高級搜尋查詢的 Defender 範例，請參閱 [Microsoft Defender For endpoint 搜尋查詢 GitHub](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries)儲存機制。
+如需適用于端點高級搜尋查詢的 defender 範例，請參閱[Microsoft Defender for endpoint 搜尋查詢 GitHub](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries)儲存機制。
 
-可用於高級搜尋查詢的 Microsoft Defender for Endpoint 可使用範例 Power BI 報告範本範例。 透過這些範例範本（包括裝置控制裝置），您可以將高級搜尋的威力整合至 Power BI。 如需詳細資訊，請參閱 [PowerBI 範本的 GitHub 存放庫](https://github.com/microsoft/MDATP-PowerBI-Templates) 。 請參閱 [使用 POWER Bi 建立自訂報告](/microsoft-365/security/defender-endpoint/api-power-bi) 以深入瞭解 Power BI 整合。
+Power BI 報告範本的範例可用於您可以用於高級搜尋查詢的 Microsoft Defender for Endpoint。 使用這些範例範本（包括裝置控制項的一個），您可以將高級搜尋的威力整合至 Power BI。 如需詳細資訊，請參閱[PowerBI 範本的 GitHub 存放庫](https://github.com/microsoft/MDATP-PowerBI-Templates)。 請參閱[使用 Power BI 建立自訂報告](/microsoft-365/security/defender-endpoint/api-power-bi)以深入瞭解 Power BI 整合。
 
 ## <a name="allow-or-block-removable-devices"></a>允許或封鎖可移動裝置
 下表說明 Microsoft Defender for Endpoint 根據細微設定允許或封鎖可移除裝置的方式。
@@ -124,11 +124,11 @@ Microsoft 建議 [使用一種分層方法來保護卸除式媒體](https://aka.
 > [!Note]
 > [阻止裝置安裝原則] 優先于 [允許裝置安裝原則]。
 
-[ **阻止安裝符合任何這些裝置的裝置 IDs** 原則] 可讓您指定 Windows 阻止安裝的裝置清單。 
+[**阻止安裝符合任何這些裝置的裝置 IDs** 原則] 可讓您指定 Windows 所禁止安裝的裝置清單。 
 
 若要防止安裝符合下列任一裝置的裝置 IDs： 
 
-1. 針對您想要讓 Windows 避免安裝的裝置，[查閱設備識別碼](#look-up-device-id)。
+1. 針對您想要 Windows 以避免安裝的裝置[查詢裝置識別碼](#look-up-device-id)。
 
    ![查詢廠商或產品識別碼](images/lookup-vendor-product-id.png)
 
@@ -158,7 +158,7 @@ Get-WMIObject -Class Win32_DiskDrive |
 Select-Object -Property * 
 ```
 
-[ **防止使用符合這些裝置安裝類別的驅動程式安裝裝置** ] 原則可讓您指定 Windows 阻止安裝的裝置安裝類別。 
+[**防止使用符合這些裝置安裝類別的驅動程式安裝裝置**] 原則可讓您指定 Windows 所禁止安裝的裝置安裝類別。 
 
 若要防止安裝特定類別的裝置： 
 
@@ -171,9 +171,9 @@ Select-Object -Property *
 
 ### <a name="block-installation-and-usage-of-removable-storage"></a>封鎖可移動儲存裝置的安裝與使用
 
-1. 登入 [Microsoft Azure 入口網站](https://portal.azure.com/)。
+1. 登入 Microsoft 端點管理員系統[管理中心](https://endpoint.microsoft.com/)。
 
-2. 按一下 [ **Intune**  >  **裝置配置**  >  **檔**  >  **建立設定檔**]。
+2. 按一下 [**裝置**  >  **設定檔**  >  **建立設定檔**]。
 
     > [!div class="mx-imgBorder"]
     > ![建立裝置設定檔](images/create-device-configuration-profile.png)
@@ -182,7 +182,7 @@ Select-Object -Property *
 
    - 名稱：輸入設定檔的名稱
    - 描述：輸入描述
-   - 平臺： Windows 10 和更新版本
+   - Platform： Windows 10 和更新版本
    - 配置檔案類型：裝置限制
 
    > [!div class="mx-imgBorder"]
@@ -226,7 +226,7 @@ Microsoft Defender for Endpoint 會封鎖使用下列任一選項來安裝及使
 
 ### <a name="limit-services-that-use-bluetooth"></a>限制使用藍牙的服務
 
-使用 Intune，您可以限制可透過「 [藍牙允許的服務](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide)」使用藍牙的服務。 「可供藍牙使用的服務」設定的預設狀態表示允許所有的專案。  加入服務後，就會變成允許的清單。 如果客戶新增鍵盤和滑鼠值，但沒有新增檔案傳輸 Guid，則應該封鎖檔案傳輸。
+使用 Intune，您可以使用「[藍牙允許的服務](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide)」來限制可使用藍牙的服務。 "藍牙允許的服務「設定」的預設狀態是指允許所有的專案。  加入服務後，就會變成允許的清單。 如果客戶新增鍵盤和滑鼠值，但沒有新增檔案傳輸 Guid，則應該封鎖檔案傳輸。
 
 > [!div class="mx-imgBorder"]
 > ![藍牙設定頁面的螢幕擷取畫面](images/bluetooth.png)
@@ -255,23 +255,23 @@ Microsoft Defender for Endpoint 也可以防止 USB 週邊設備在裝置上使�
 
 | 控制項  | 描述 |
 |----------|-------------|
-| [啟用 Microsoft Defender 防病毒掃描](#enable-microsoft-defender-antivirus-scanning) | 啟用 Microsoft Defender 防病毒掃描以進行即時保護或排程掃描。|
+| [啟用 Microsoft Defender 防毒軟體掃描](#enable-microsoft-defender-antivirus-scanning) | 啟用 Microsoft Defender 防毒軟體掃描以進行即時保護或排程掃描。|
 | [封鎖 USB 週邊設備上的不受信任和未簽署的處理常式](#block-untrusted-and-unsigned-processes-on-usb-peripherals) | 封鎖未簽署或不受信任的 USB 檔案。 |
 | [防護直接記憶體存取 (DMA) 攻擊](#protect-against-direct-memory-access-dma-attacks) | 設定防護以防範 DMA 攻擊。 |
 
 >[!NOTE]
 >由於未經授權的 USB 外設可以有可欺騙其 USB 內容的固件，因此我們建議您只允許特別核准的 USB 外設，並限制可以存取這些外設的使用者。
 
-### <a name="enable-microsoft-defender-antivirus-scanning"></a>啟用 Microsoft Defender 防病毒掃描
+### <a name="enable-microsoft-defender-antivirus-scanning"></a>啟用 Microsoft Defender 防毒軟體掃描
 
-使用 Microsoft Defender 防病毒軟體保護已授權的可移動儲存，需要 [啟用即時保護](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus) 或排程掃描，並設定可拆卸磁片磁碟機進行掃描。
+使用 Microsoft Defender 防毒軟體保護已授權的移除儲存體時，必須[啟用即時保護](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)或排程掃描，並設定可拆卸磁片磁碟機進行掃描。
 
-- 如果啟用即時保護，系統會先掃描檔案，再加以存取和執行。 掃描範圍包括所有檔案，包括安裝的可移動裝置（例如 USB 磁片磁碟機）上的檔案。 您可以選擇性地執行 PowerShell 腳本，以在裝載 USB 磁片磁碟機後 [執行自訂掃描](/samples/browse/?redirectedfrom=TechNet-Gallery) ，如此一來，Microsoft Defender 防毒程式便會在附加可移動裝置後開始掃描可移動裝置上的所有檔案。 不過，我們建議啟用即時保護以改善掃描效能，尤其是針對大型儲存裝置。
+- 如果啟用即時保護，系統會先掃描檔案，再加以存取和執行。 掃描範圍包括所有檔案，包括安裝的可移動裝置（例如 USB 磁片磁碟機）上的檔案。 您可以選擇性地執行 PowerShell 腳本，以在裝載 USB 磁片磁碟機後[執行自訂掃描](/samples/browse/?redirectedfrom=TechNet-Gallery)，如此一來，Microsoft Defender 防毒軟體會在附加可移動裝置後開始掃描可移動裝置上的所有檔案。 不過，我們建議啟用即時保護以改善掃描效能，尤其是針對大型儲存裝置。
 
 - 如果使用排程的掃描，您必須停用預設 (啟用 DisableRemovableDriveScanning 設定) 以在完整掃描期間掃描可移動裝置。 不論 DisableRemovableDriveScanning 設定為何，都可以在快速或自訂掃描期間掃描移除裝置。
 
 >[!NOTE]
->我們建議啟用掃描的即時監控。 在 Intune 中，您可以在 **裝置限制** 中為 Windows 10 啟用即時監控  >  **設定**  >  **Microsoft Defender 防病毒**  >  **即時監控**。
+>我們建議啟用掃描的即時監控。 在 Intune 中，您可以針對 **裝置限制**  >  **設定**  >  **Microsoft Defender 防毒軟體**  >  **即時監控**，啟用 Windows 10 即時監控。
 
 <!-- Need to build out point in the preceding note. 
 -->
@@ -283,18 +283,18 @@ Microsoft Defender for Endpoint 也可以防止 USB 週邊設備在裝置上使�
 另外，公司也可以利用 [攻擊面減少規則](/microsoft-365/security/defender-endpoint/attack-surface-reduction) 的「審計」功能，監控在 USB 外設上執行的不受信任和未簽署程式的活動。
 若要執行此動作，您可以將 **不受信任和未簽署的程式，** 分別設定為 **封鎖** 或 **僅限審核** 執行。
 使用此規則，系統管理員可以防止或審計未簽署或不受信任的可執行檔，從 USB 抽取式磁碟磁碟機（包括 SD 卡）執行。
-受影響的檔案類型包括可執行檔 (例如 .exe、.dll 或 .scr) 及腳本檔案，例如 PowerShell ( .ps) 、，或 () .js JavaScript 檔案。
+受影響的檔案類型包括可執行檔 (例如 .exe、.dll 或 .scr) 及腳本檔案，例如 PowerShell ( .ps) 、或 () JavaScript 的檔案。
 
 這些設定需要 [啟用即時保護](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)。
 
-1. 登入 [Microsoft 端點管理員](https://endpoint.microsoft.com/)。
+1. 登入[Microsoft 端點管理員](https://endpoint.microsoft.com/)。
 
-2. 按一下 [**裝置**] [  >  **Windows**  >  **配置原則**  >  **建立設定檔**]。 
+2. 按一下 [**裝置**  >  **Windows**  >  **配置原則**]  >  **建立設定檔**。 
 
     ![建立裝置設定檔](images/create-device-configuration-profile.png)
 
 3. 使用下列設定：
-   - 平臺： Windows 10 和更新版本 
+   - Platform： Windows 10 和更新版本 
    - 配置檔案類型：裝置限制
 
    > [!div class="mx-imgBorder"]
@@ -312,9 +312,9 @@ Microsoft Defender for Endpoint 也可以防止 USB 週邊設備在裝置上使�
 
 DMA 攻擊可能會導致洩漏位於電腦上的機密資訊，或甚至是惡意程式碼注入，以允許攻擊者以遠端方式略過鎖定畫面或控制電腦。 下列設定可協助避免 DMA 攻擊：
 
-1. 從 Windows 10 版本1803開始，Microsoft 推出了 [Thunderbolt 的內核 DMA 保護](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md) ，以透過 Thunderbolt 埠提供對 DMA 攻擊的原生防護。 系統製造商已啟用 Thunderbolt 的內核 DMA 保護，且無法由使用者開啟或關閉。
+1. 從 Windows 10 版本1803開始，Microsoft 推出了[Thunderbolt 的內核 DMA 保護](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md)，以透過 Thunderbolt 埠提供對 DMA 攻擊的原生防護。 系統製造商已啟用 Thunderbolt 的內核 DMA 保護，且無法由使用者開啟或關閉。
 
-   從 Windows 10 版本1809開始，您可以設定 [DMA 防護 CSP](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)，以調整內核 DMA 保護的層級。 這是不支援裝置記憶體隔離 (（也稱為 DMA 重新對應) ）的週邊設備的其他控制項。 記憶體隔離可讓 OS 利用裝置的 I/O 記憶體管理單元 (IOMMU) ，以封鎖週邊 (記憶體沙箱) 的 unallowed I/O （或記憶體存取）。 換句話說，作業系統會將特定記憶體範圍指派給外設。 如果外設嘗試讀取/寫入指定範圍外的記憶體，作業系統會封鎖該範圍。
+   從 Windows 10 版本1809開始，您可以設定[DMA 防護 CSP](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)，以調整內核 DMA 保護的層級。 這是不支援裝置記憶體隔離 (（也稱為 DMA 重新對應) ）的週邊設備的其他控制項。 記憶體隔離可讓 OS 利用裝置的 I/O 記憶體管理單元 (IOMMU) ，以封鎖週邊 (記憶體沙箱) 的 unallowed I/O （或記憶體存取）。 換句話說，作業系統會將特定記憶體範圍指派給外設。 如果外設嘗試讀取/寫入指定範圍外的記憶體，作業系統會封鎖該範圍。
 
    支援裝置記憶體隔離的外設可永遠連接。 只有在使用者登入 (預設) 後，才能封鎖、允許或允許的外設。
 
@@ -333,7 +333,7 @@ DMA 攻擊可能會導致洩漏位於電腦上的機密資訊，或甚至是惡�
 
 在 USB 裝置上進行 **威脅掃描**。
 
-限制電腦上的 **所有應用程式的執行**，但預先定義的 set MDATP 連接器是由超過200個預先定義的連接器之一（包括 Outlook、小組、寬限時間等）。可以建立自訂連接器。
+**限制電腦上所有應用程式的執行**，除非預先定義的組 MDATP 連接器是一個200以上的預先定義的連接器之一（包括 Outlook、Teams、寬限時間等等）。可以建立自訂連接器。
 - [WDATP 連接器回應動作的詳細資訊](/connectors/wdatp/)
 
 **自訂偵測規則回應動作：** 您可以套用電腦及檔層級動作。
@@ -343,13 +343,13 @@ DMA 攻擊可能會導致洩漏位於電腦上的機密資訊，或甚至是惡�
 
 ## <a name="respond-to-threats"></a>回應威脅
 
-您可以使用 [Microsoft Defender For Endpoint 自訂偵測規則](/microsoft-365/security/defender-endpoint/custom-detection-rules)來建立自訂警示和自動回應動作。 自訂偵測內的回應動作涵蓋機器及檔層級動作。 您也可以使用 [PowerApps](https://powerapps.microsoft.com/) [，並使用](https://flow.microsoft.com/) [Microsoft Defender for Endpoint connector 來](/connectors/wdatp/)建立警示和自動回應動作。 連接器支援調查的動作、威脅掃描及限制執行中的應用程式。 它是由200預先定義的連接器之一，包括 Outlook、小組、寬限等等。 您也可以建立自訂連接器。 請參閱 [連接器](/connectors/) 以深入瞭解連接器。
+您可以使用 [Microsoft Defender For Endpoint 自訂偵測規則](/microsoft-365/security/defender-endpoint/custom-detection-rules)來建立自訂警示和自動回應動作。 自訂偵測內的回應動作涵蓋機器及檔層級動作。 您也可以使用[Microsoft Defender for Endpoint connector](/connectors/wdatp/) [PowerApps](https://powerapps.microsoft.com/)和[Flow](https://flow.microsoft.com/) ，來建立警示和自動回應動作。 連接器支援調查的動作、威脅掃描及限制執行中的應用程式。 它是一種超過200個預先定義的連接器，包括 Outlook、Teams、寬限時間等等。 您也可以建立自訂連接器。 請參閱 [連接器](/connectors/) 以深入瞭解連接器。
  
-例如，使用任一種方法時，當 USB 裝置裝載到機器時，您可以自動執行 Microsoft Defender 防病毒。
+例如，使用任一種方法時，當 USB 裝置裝載到機器時，您可以自動執行 Microsoft Defender 防毒軟體。
 
 ## <a name="related-topics"></a>相關主題
 
-- [為 Microsoft Defender 防病毒設定即時保護](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
+- [設定 Microsoft Defender 防毒軟體的即時保護](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
 - [Defender/AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 - [Policy/DeviceInstallation CSP](/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [執行可移動裝置的自訂掃描](/samples/browse/?redirectedfrom=TechNet-Gallery)

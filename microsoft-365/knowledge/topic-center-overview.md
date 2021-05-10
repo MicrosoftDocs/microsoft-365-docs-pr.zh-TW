@@ -12,19 +12,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: bdb49af4ac43976a1ad734e507902781d63c5670
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904067"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301785"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva 主題中的主題中心概述
 
-
-在 Microsoft Viva 主題中，主題中心是現代的 SharePoint 網站，可充當組織的知識中心。 它是在 Microsoft 365 系統管理中心的 [Viva 主題設定](set-up-topic-experiences.md) 期間建立。
+在 Microsoft Viva 主題中，主題中心是現代的 SharePoint 網站，可充當組織的知識中心。 它是在 Microsoft 365 系統管理中心的[Viva 主題設定](set-up-topic-experiences.md)期間建立。
 
 主題中心的預設首頁包含 [ **主題** ] 網頁元件，所有授權的使用者都可以在此網頁元件中查看其連線的主題。 
 
@@ -35,10 +34,10 @@ ms.locfileid: "51904067"
 主題中心是在 Viva 主題設定期間建立。 安裝程式完成後，系統管理員可以在 [ [主題中心管理] 頁面](./topic-experiences-administration.md#to-access-topics-management-settings)上找到該 URL。
 
 
-1. 在 Microsoft 365 admin center 中，選取 [ **設定**]，然後選取 [ **組織設定**]。
+1. 在 Microsoft 365 系統管理中心中，選取 [**設定**]，然後選取 [**組織設定**]。
 2. 在 [ **服務** ] 索引標籤上，選取 [ **主題經驗**]。
 
-    ![將人員連線至知識](../media/admin-org-knowledge-options-completed.png) </br>
+    ![連線人員的知識](../media/admin-org-knowledge-options-completed.png) </br>
 
 3. 選取 [ **主題中心** ] 索引標籤。在 [ **網站位址** ] 底下是主題中心的連結。
 
@@ -57,7 +56,7 @@ ms.locfileid: "51904067"
 
 在 [主題中心] 首頁上，您可以看到您的組織中有連接的主題。
 
-- 建議的連線-您會看到下列主題 **列出的主題。我們是否已取得正確的功能？**。 這些主題是透過 AI 建議您連線至主題的連結。 例如，您可能是相關檔案或網站的作者。 系統會要求您確認您應該將主題保留為相關人員。
+- 建議的連線-您會看到下列主題 **列出的主題。我們有正確的功能嗎？** 這些主題是透過 AI 建議您連線至主題的連結。 例如，您可能是相關檔案或網站的作者。 系統會要求您確認您應該將主題保留為相關人員。
 
    ![建議的連線](../media/knowledge-management/my-topics.png) </br>
  
@@ -70,12 +69,12 @@ ms.locfileid: "51904067"
 
 ## <a name="manage-topics-page"></a>[管理主題] 頁面
 
-若要在主題中心的 [ **管理主題** ] 區段中運作，您必須具有「知識管理員」角色所需的「管理」主題許可權。 您的系統管理員可以在 [知識管理安裝](set-up-topic-experiences.md)期間將這些許可權指派給使用者，或使用 Microsoft 365 系統管理中心，以系統管理員 [身分新增新](topic-experiences-knowledge-rules.md) 的使用者。
+若要在主題中心的 [ **管理主題** ] 區段中運作，您必須具有「知識管理員」角色所需的「管理」主題許可權。 您的系統管理員可以在[知識管理安裝](set-up-topic-experiences.md)期間將這些許可權指派給使用者，或使用 Microsoft 365 系統管理中心的系統管理員[來新增新](topic-experiences-knowledge-rules.md)使用者。
 
 在 [管理主題] 頁面上，主題儀表板會顯示您可以從指定的來源位置識別的所有主題（您可以存取）。 每個主題都會顯示已探索該主題的日期。 已獲指派「管理主題」許可權的使用者可以查看未確認的主題，並選擇：
 - 確認主題：向使用者指出 AI 建議的主題已由人體 curator 驗證。 
 - 發佈主題：編輯主題資訊以提升最初識別主題的品質，並將主題重點放至所有具有「查看」主題存取權的使用者。 
-- 拒絕主題：讓主題因此給使用者。 將主題移至 [已 **拒絕** ] 索引標籤，並在需要時再確認。 
+- 移除主題：讓主題因此給使用者。 主題會移至 [ **已移除** ] 索引標籤，並在需要時可供日後確認。 
 
 > [!Note] 
 > 如需管理主題頁面中主題的詳細資訊，請參閱 [管理主題](manage-topics.md) 。
@@ -88,7 +87,7 @@ ms.locfileid: "51904067"
 - [建立新主題](create-a-topic.md)：您可以為未透過探索找到的專案建立新的主題，或如果 AI 工具沒有找到足夠的證據可以建立主題。
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [在主題中心中管理主題](manage-topics.md)
 
