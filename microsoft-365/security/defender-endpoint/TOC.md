@@ -344,6 +344,8 @@
 #### [裝置控制]()
 ##### [裝置控制報告](device-control-report.md)
 ##### [控制 USB 裝置](control-usb-devices-using-intune.md)
+##### [卸除式存放裝置保護](device-control-removable-storage-protection.md)
+##### [卸除式存放裝置存取控制](device-control-removable-storage-access-control.md)
 
 #### [行為封鎖和包含專案]()
 ##### [行為封鎖和包含專案](behavioral-blocking-containment.md)
