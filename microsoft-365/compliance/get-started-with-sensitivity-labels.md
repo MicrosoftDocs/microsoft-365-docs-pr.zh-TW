@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始部署敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 08ecf97e3cb45896390c3dac9074c54a2b0bbe96
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994770"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302109"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -97,7 +97,10 @@ ms.locfileid: "51994770"
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度標籤的使用者文件
 
-最有效的使用者文件會是您為所選的標籤名稱和組態提供的自訂指導方針和指示。 針對內建標籤，您可以使用標籤原則設定 **為使用者提供自訂說明頁面的連結**，以指定本文件的內部連結。 然後使用者可以藉由從 Word、PowerPoint、Excel 和 Outlook 的 Office 功能區上的 **[敏感度]** 按鈕選取 **[深入了解]**，輕鬆存取。
+最有效的使用者文件會是您為所選的標籤名稱和組態提供的自訂指導方針和指示。 您可以使用標籤原則設定 **為使用者提供自訂說明頁面的連結**，以指定本文件的內部連結。 然後，使用者即可從 **[敏感度]** 按鈕輕鬆存取：
+
+- 針對內建標籤：**[深入了解]** 功能表選項。
+- 針對 Azure 資訊保護統一標籤用戶端：**[說明與意見反應]** 功能表選項 > Microsoft Azure 資訊保護對話方塊中的 **[顯示詳細資訊]** 連結。
 
 為了協助您撰寫自訂文件，請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 敏感度標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880)。 
 
