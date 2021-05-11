@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從組織內的 Exchange、SharePoint 及商務用 OneDrive 中，管理部分索引項目目 (也稱為未編制索引的專案) 。
-ms.openlocfilehash: c24fb2d9b633181538d76cf35e27dae1824b311d
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 539fd2687735a5ee14be543750becca8c6c3154c
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994802"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311449"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>調查 eDiscovery 中已部分索引的專案
 
@@ -49,9 +49,9 @@ ms.locfileid: "51994802"
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>計算組織中已部分索引的專案比率
 
-若要瞭解組織在部分索引項目目中的危險性，您可以使用空白的關鍵字查詢) ，在所有信箱中執行所有內容的搜尋 (。 在下列範例中，有 56208 (4830 MB) 完整編制索引的專案，以及 470 (316 MB) 部分索引的專案。
+若要瞭解組織在部分索引項目目中的危險性，您可以使用空白的關鍵字查詢) ，在所有信箱中執行所有內容的搜尋 (。 在下列範例中，有 1629904 (146.46 GB) 完整編制索引的專案，以及 10025 (10.27 GB) 部分索引的專案。
   
-![顯示部分索引項目目之搜尋統計資料的範例](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![顯示部分索引項目目之搜尋統計資料的範例](../media/PartiallyIndexedItemsTest.png)
   
 您可以使用下列計算來判斷部分索引項目目的百分比。
   
@@ -59,23 +59,23 @@ ms.locfileid: "51994802"
 
 `(Total number of partially indexed items/Total number of items) x 100`
 
-`(470/56,208) x 100 = 0.84%`
+`(10025/1629904) x 100 = 0.62%`
 
-使用上述範例中的搜尋結果，就會以部分索引的方式列出所有信箱專案的84%。
+透過上述範例中的搜尋結果，所有信箱專案的0.62% 都會部分編制索引。
   
  **若要計算組織中部分索引項目目大小的百分比：**
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(316 MB/4830 MB) x 100 = 6.54%`
+`(10.27 GB/146.46 MB) x 100 = 7.0%`
 
-在上一個範例中，信箱專案總大小的6.54% 是從部分索引的專案。 如先前所述，大多陣列織客戶的內容少於1% 的內容，而不是以部分索引的大小小於12% 的內容。
+在上一個範例中，信箱專案總大小的7% 是來自部分索引項目目。 如先前所述，大多陣列織客戶的內容少於1% 的內容，而不是以部分索引的大小小於12% 的內容。
 
 ## <a name="working-with-partially-indexed-items"></a>使用部分編制索引的專案
 
 在需要檢查部分專案以驗證它們不包含相關資訊的情況下，您可以匯出包含部分索引項目目相關資訊的 [內容搜尋報告](export-a-content-search-report.md) 。 當您匯出內容搜尋報告時，請務必選擇其中一個包含部分索引項目目的匯出選項。
   
-![選擇第二個或第三個選項，匯出已部分索引的專案](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![選擇第二個或第三個選項，匯出已部分索引的專案](../media/PartiallyIndexedItemsExportOptions.png)
   
 當您使用其中一個選項匯出 eDiscovery 搜尋結果或搜尋報告時，匯出會包含一個名為「未編制索引」 Items.csv 的報表。 這個報告包含的資訊大部分與 ResultsLog.csv 檔案相同;不過，未編制索引的 Items.csv 檔案中也包含與部分索引項目目相關的兩個欄位： **錯誤標記** 和 **錯誤屬性**。 這些欄位包含每個部分索引項目目之索引錯誤的相關資訊。 使用這兩個欄位中的資訊可協助您判斷是否有特定影響調查的索引錯誤。 如果是的話，您可以執行目標搜尋，並取得及匯出特定的電子郵件訊息，並 SharePoint 或 OneDrive 檔，以便進行檢查，以判斷是否與您的調查相關。 如需逐步指示，請參閱[在 Office 365 中準備目標搜尋的 CSV](csv-file-for-an-id-list-content-search.md)檔案。
 
@@ -183,6 +183,6 @@ ms.locfileid: "51994802"
 > 
 > - 清單錯誤標記，以及發生錯誤的對應檔案類型。
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [EDiscovery 中已部分索引的專案](partially-indexed-items-in-content-search.md)

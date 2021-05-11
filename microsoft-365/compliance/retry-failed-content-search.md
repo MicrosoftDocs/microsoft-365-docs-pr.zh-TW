@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: 在調查過程中，您可以使用 [重試] 按鈕來解析內容位置發生錯誤的內容搜尋。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b3aed9c1d2d1fe3c40adb64b4854ef359f931bcb
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: fb85a882ef111aa38a73dbe155a9ad0ef57dd3de
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357553"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311817"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重試內容搜尋以解決內容位置錯誤
 
@@ -52,7 +52,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 這會導致僅對失敗的信箱重試搜尋。 當您重試搜尋時，會保留已成功傳回的其他結果。
 
-## <a name="tips-to-avoid-content-location-errors"></a>避免內容位置錯誤的秘訣
+## <a name="tips-to-avoid-content-location-errors"></a>避免內容位置錯誤的提示
 
 以下是內容位置錯誤的一些額外原因，以及協助您在搜尋大量信箱時避免出現問題的一些秘訣。
 
@@ -60,7 +60,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 - 搜尋查詢可能會從信箱中檢索太多的內容。 如果可能的話，請嘗試使用關鍵字、日期範圍和搜尋條件來縮小搜尋範圍。
 
-- 使用 [關鍵字清單](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches)建立搜尋查詢時，關鍵字或關鍵字片語太多。 當您執行使用關鍵字清單的搜尋查詢時，此服務實質上會針對關鍵字清單中的每一列執行個別的搜尋，以產生統計資料。 如果您是在搜尋查詢中使用關鍵字清單，請將關鍵字清單中的列數減至最少，或是將數位關鍵字分割成較小的清單，並為每個關鍵字清單建立不同的搜尋。
+- 使用 [關鍵字清單](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches)建立搜尋查詢時，關鍵字或關鍵字片語太多。 當您執行使用關鍵字清單的搜尋查詢時，此服務實質上會針對關鍵字清單中的每一列執行個別的搜尋，以產生統計資料。 如果您是在搜尋查詢中使用關鍵字清單，請將關鍵字清單中的列數減至最少，或是將數位關鍵字分割成較小的清單，並為每個關鍵字清單建立不同的搜尋。
 
   > [!NOTE]
   > 為了避免大型關鍵字清單所造成的問題，您目前限制在搜尋查詢的關鍵字清單中，最多可有20列。

@@ -1,12 +1,12 @@
 ---
-title: 內容搜尋的關鍵字查詢和搜尋條件
+title: EDiscovery 的關鍵字查詢和搜尋條件
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.SearchQueryLearnMore
 ms.service: O365-seccomp
@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: 深入瞭解您可以使用 Microsoft 365 中的搜尋和 eDiscovery 工具進行搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: 10b2af333d5eeef6dd70541a86b9114929c0c94c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: 深入瞭解您可以使用 Microsoft 365 中的 eDiscovery 搜尋工具進行搜尋的電子郵件和檔案屬性。
+ms.openlocfilehash: a9a178eb9b139cacd803c8ab168b3143b75b5f92
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114015"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311845"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>內容搜尋和 eDiscovery 的關鍵字查詢和搜尋條件
+# <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>EDiscovery 的關鍵字查詢和搜尋條件
 
-本主題說明電子郵件和檔內容，您可以使用 Microsoft 365 規範中心的內容搜尋功能，在 Exchange Online 和儲存于 SharePoint 和商務用 OneDrive 網站上的檔中搜尋的電子郵件和檔案屬性。 您也可以在安全性 & 規範中心 PowerShell 中使用 **\* -new-compliancesearch** Cmdlet 來搜尋這些屬性。 本主題也會說明下列事項：
+本主題說明您可以在電子郵件專案中搜尋的電子郵件和檔案屬性，以及 Microsoft Teams Exchange Online 中的交談交談，以及使用 Microsoft 365 規範中心內的 eDiscovery 搜尋工具儲存于 SharePoint 和商務用 OneDrive 網站上的檔。 這包括內容搜尋、核心 eDiscovery 和 Advanced eDiscovery (Advanced eDiscovery 中的 eDiscovery 搜尋) 稱為 *集合*。 您也可以在安全性 & 規範中心 PowerShell 中使用 **\* -new-compliancesearch** Cmdlet 來搜尋這些屬性。 本主題也會說明下列事項：
   
 - 使用布林值搜尋運算子、搜尋條件及其他搜尋查詢技術來精煉搜尋結果。
 
@@ -39,14 +39,20 @@ ms.locfileid: "52114015"
 
 - 搜尋與組織外部使用者共用的網站內容
 
-如需如何建立內容搜尋的逐步指示，請參閱 [內容搜尋](content-search.md)。
+如需如何建立不同 eDiscovery 搜尋的逐步指示，請參閱：
+
+- [內容搜尋](content-search.md)
+
+- [在核心 eDiscovery 中搜尋內容](search-for-content-in-core-ediscovery.md)
+
+- [在 Advanced eDiscovery 中建立草稿集合](create-draft-collection.md)
 
 > [!NOTE]
-> 在安全性 & 規範中心內的 Microsoft 365 規範中心和對應 **\* new-compliancesearch** Cmdlet 中進行內容搜尋，PowerShell 使用關鍵字查詢語言 (KQL) 。 如需詳細資訊，請參閱 [關鍵字查詢語言語法參考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。 
+> 在安全性 & 規範中心 PowerShell 使用關鍵字查詢語言 (KQL) 的 Microsoft 365 規範中心和對應 **\* new-compliancesearch** Cmdlet 中的 eDiscovery 搜尋。 如需詳細資訊，請參閱 [關鍵字查詢語言語法參考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
   
 ## <a name="searchable-email-properties"></a>可搜尋的電子郵件屬性
 
-下表列出可使用 Microsoft 365 規範中心的內容搜尋功能，或是使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** Cmdlet 來搜尋的電子郵件屬性。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 您可以  `property:value` 在 [關鍵字] 方塊中輸入這些配對內容搜尋。 
+下表列出使用 Microsoft 365 規範中心的 eDiscovery 搜尋工具，或使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** 指令程式，可搜尋的電子郵件屬性。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 您可以  `property:value` 在 eDiscovery 搜尋的 [關鍵字] 方塊中輸入這些配對。 
 
 > [!NOTE]
 > 在搜尋電子郵件屬性時，不可能搜尋指定屬性為空白或空白的專案。 例如，使用 [ *屬性：值* 一對主旨 **： "]** 搜尋具有空白主旨行的電子郵件會傳回零結果。 這也適用于搜尋網站和連絡人屬性。
@@ -89,9 +95,9 @@ ms.locfileid: "52114015"
 
 ## <a name="searchable-site-properties"></a>可搜尋的網站屬性
 
-下表列出一些 SharePoint 和商務用 OneDrive 屬性，可使用安全性 & 規範中心的內容搜尋功能，或使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** 指令程式來搜尋。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 
+下表列出一些 SharePoint 和商務用 OneDrive 屬性，可透過 Microsoft 365 規範中心的 eDiscovery 搜尋工具進行搜尋，或是使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** Cmdlet 進行搜尋。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 
   
-如需可搜尋的 SharePoint 屬性完整清單，請參閱[SharePoint 中的編目和 managed 屬性的概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 您可以在可 **查詢** 的資料行中，以 [**是]** 標示的屬性進行搜尋。 
+如需可搜尋的 SharePoint 屬性完整清單，請參閱[SharePoint 中的編目和 managed 屬性的概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 您可以在可 **查詢** 的資料行中，以 [**是]** 標示的屬性進行搜尋。
   
 | 屬性 | 屬性描述 | 範例 | 範例所傳回的搜尋結果 |
 |:-----|:-----|:-----|:-----|
@@ -114,7 +120,7 @@ ms.locfileid: "52114015"
 
 ## <a name="searchable-contact-properties"></a>可搜尋連絡人屬性
 
-下表列出已編制索引的連絡人內容，以及您可以搜尋使用內容搜尋的屬性。 這些是使用者可為連絡人設定的屬性， (也稱為個人連絡人) 位於使用者信箱的個人通訊錄中。 若要搜尋連絡人，您可以選取要搜尋的信箱，然後使用關鍵字查詢中的一或多個連絡人屬性。
+下表列出已編制索引的連絡人內容，您可以使用 eDiscovery 搜尋工具進行搜尋。 這些是使用者可為連絡人設定的屬性， (也稱為個人連絡人) 位於使用者信箱的個人通訊錄中。 若要搜尋連絡人，您可以選取要搜尋的信箱，然後使用關鍵字查詢中的一或多個連絡人屬性。
   
 > [!TIP]
 > 若要搜尋包含空格或特殊字元的值，請使用雙引號 ( "" ) 以包含片語; 否則請使用雙引號。例如， `businessaddress:"123 Main Street"` 。
@@ -216,7 +222,7 @@ ms.locfileid: "52114015"
 |寄件者/作者|電子郵件，是指傳送訊息的人員。 對於檔，[author] 欄位中從 Office 檔中提及的人員。 您可以輸入一個以上的名稱，以逗號分隔。 **Or** 運算子會以邏輯方式連接兩個或多個值。|
 |大小 (位元組) |電子郵件和檔的專案大小 (以位元組) 。|
 |主旨/職稱|電子郵件，郵件的主旨行中的文字。 檔的標題。 如先前所述，Title 屬性是 Microsoft Office 檔中指定的中繼資料。 您可以輸入多個主體/標題的名稱，以逗號分隔。 **Or** 運算子會以邏輯方式連接兩個或多個值。|
-|規範標籤|針對電子郵件和檔，autolabel 由使用者手動指派的原則或保留標籤自動指派給郵件和檔的保留標籤。 保留標籤可用來分類電子郵件和檔以進行資訊控管，並根據標籤定義的設定來強制執行保留規則。 您可以輸入部分保留標籤名稱，並使用萬用字元或輸入完整的標籤名稱。 如需保留標籤的詳細資訊，請參閱 [瞭解保留原則和保留標籤](retention.md)。|
+|保留標籤|針對電子郵件和檔，自動標記原則或已手動指派給使用者的保留標籤，會自動指派給郵件和檔的保留標籤。 保留標籤可用來分類電子郵件和檔以進行資訊控管，並根據標籤定義的設定來強制執行保留規則。 您可以輸入部分保留標籤名稱，並使用萬用字元或輸入完整的標籤名稱。 如需保留標籤的詳細資訊，請參閱 [瞭解保留原則和保留標籤](retention.md)。|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>郵件屬性的條件
@@ -291,66 +297,66 @@ ms.locfileid: "52114015"
     
 - 您可以使用拖放控制項來 resequence 條件的順序。 按一下控制項上的條件，然後上下移動。
     
-- 如先前所述，有些 condition 屬性可讓您輸入多個值。 每個值都是由 **OR** 運算子以邏輯方式連接。 這會產生與多個相同條件實例的相同邏輯，每個實例都有單一值。 下列圖例顯示具有多個值的單一條件的範例，以及 (相同屬性) 具有單一值的多個條件的範例。 這兩個範例會產生相同的查詢：  `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)`
-    
-    ![具有多個值的一個條件](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+- 如先前所述，有些 condition 屬性可讓您輸入多個值 (以分號) 分隔。 每個值都是由 **OR** 運算子以邏輯方式連接，並產生查詢 `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)` 。 下圖顯示具有多個值的條件範例。
+
+    ![具有多個值的一個條件](../media/SearchConditions1.png)
   
-    ![相同屬性的多重搜尋條件](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
-  
-> [!TIP]
-> 如果條件接受多個值，建議您使用單一條件，並指定多個值 (以逗號或分號) 分隔。 這有助於確定所套用的查詢邏輯是您想要的。 
+  > [!NOTE]
+  > 您無法新增多個條件 (按一下相同屬性的 **add 條件** 。 相反地，您必須為條件提供多個值 (以分號分隔) ，如上範例所示。
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>在搜尋查詢中使用條件的範例
 
-下列範例會顯示以 GUI 為基礎之搜尋查詢的版本，該搜尋查詢語法會顯示在所選搜尋 (的 [詳細資料] 窗格中，也就是由 **Get-ComplianceSearch** Cmdlet) 所傳回，以及對應 KQL 查詢的邏輯。 
+下列範例會顯示以 GUI 為基礎之搜尋查詢的版本，該搜尋查詢語法會顯示在所選搜尋 (的 [詳細資料] 窗格中，也就是由 **Get-ComplianceSearch** Cmdlet) 所傳回，以及對應 KQL 查詢的邏輯。
   
 #### <a name="example-1"></a>範例 1
 
-此範例會傳回檔 SharePoint 和商務用 OneDrive 網站中包含信用卡號碼，而且最後修改于2016年1月1日。
+此範例會傳回檔 SharePoint 和商務用 OneDrive 網站中包含信用卡號碼，而且最後修改于2021年1月1日。
   
  **GUI**
   
-![搜尋條件的第一個範例](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![搜尋條件的第一個範例](../media/SearchConditions2.png)
   
  **搜尋查詢語法**
   
- `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2021-01-01)`
   
  **搜尋查詢邏輯**
   
- `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2021-01-01)`
   
+請注意，在先前的螢幕擷取畫面中，搜尋 UI 會強調關鍵字查詢和條件是由 **and** 運算子所連接。
+
 #### <a name="example-2"></a>範例 2
 
-此範例會傳回包含關鍵字 "report" 的電子郵件專案或檔，該關鍵字是在2105年4月1日之前所傳送或建立，而且在電子郵件的主旨欄位或檔的 title 屬性中包含 "northwind" 一詞。 查詢會排除符合其他搜尋準則的網頁。
+此範例會傳回包含關鍵字 "report" 的電子郵件專案或檔，該關鍵字是在2021年4月1日之前所傳送或建立，而且在電子郵件的主旨欄位或檔的 title 屬性中包含 "northwind" 一詞。 查詢會排除符合其他搜尋準則的網頁。
   
  **GUI**
   
-![搜尋條件的第二個範例](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![搜尋條件的第二個範例](../media/SearchConditions3.png)
   
  **搜尋查詢語法**
   
- `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
+ `report(c:c)(date<2021-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
   
  **搜尋查詢邏輯**
   
- `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
+ `report AND (date<2021-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
   
 #### <a name="example-3"></a>範例 3
 
-本範例會傳回在12/1/2016 和11/30/2016 之間傳送且包含開頭為 "phone" 或 "smartphone" 文字的電子郵件訊息或行事曆會議。
+本範例會傳回在12/1/2019 和11/30/2020 之間傳送且包含開頭為 "phone" 或 "smartphone" 文字的電子郵件訊息或行事曆會議。
   
  **GUI**
   
-![搜尋條件的第三個範例](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![搜尋條件的第三個範例](../media/SearchConditions4.png)
   
  **搜尋查詢語法**
   
- `phone* OR smartphone*(c:c)(sent=2016-12-01..2016-11-30)(kind="email")(kind="meetings")`
+ `phone* OR smartphone*(c:c)(sent=2019-12-01..2020-11-30)(kind="email")(kind="meetings")`
   
  **搜尋查詢邏輯**
   
- `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
+ `phone* OR smartphone* AND (sent=2029-12-01..2020-11-30) AND ((kind="email") OR (kind="meetings"))`
   
 ## <a name="special-characters"></a>特殊字元
 
@@ -360,32 +366,32 @@ ms.locfileid: "52114015"
 
 ## <a name="searching-for-site-content-shared-with-external-users"></a>搜尋與外部使用者共用的網站內容
 
-您也可以使用安全性 & 合規性中心內的「內容搜尋」功能，搜尋儲存在 SharePoint 上的檔，以及與組織外部人員共用的商務用 OneDrive 網站。 這可協助您識別在組織外共用的敏感或專有資訊。 您可以使用關鍵字查詢中的屬性來執行此動作  `ViewableByExternalUsers` 。 此屬性會傳回使用下列共用方法之一，與外部使用者共用的檔或網站： 
+您也可以使用規範中心的 eDiscovery 搜尋工具，搜尋儲存在 SharePoint 的檔，以及與組織外部人員共用的商務用 OneDrive 網站。 這可協助您識別在組織外共用的敏感或專有資訊。 您可以使用關鍵字查詢中的屬性來執行此動作  `ViewableByExternalUsers` 。 此屬性會傳回使用下列共用方法之一，與外部使用者共用的檔或網站： 
   
 - 共用邀請，需要使用者登入您的組織成為已驗證的使用者。
-    
+
 - 匿名來賓連結，可讓具有此連結的任何人存取資源，而不需要進行驗證。
-    
-以下為一些範例：
+
+範例如下：
   
-- 查詢  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` 會傳回所有與組織外部人員共用的專案，並包含信用卡號碼。 
-    
-- 查詢  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` 會傳回組織中所有與外部使用者共用之小組網站上的檔案清單。 
-    
+- 查詢  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` 會傳回所有與組織外部人員共用的專案，並包含信用卡號碼。
+  
+- 查詢  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` 會傳回組織中所有與外部使用者共用之小組網站上的檔案清單。
+
 > [!TIP]
-> 搜尋結果中的搜尋查詢  `ViewableByExternalUsers:true AND ContentType:document` 可能會傳回許多 .aspx 檔案。 若要將這些 (或其他類型的檔案) 中，您可以使用此  `FileExtension` 屬性排除特定的檔案類型，例如  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` 。 
+> 搜尋結果中的搜尋查詢  `ViewableByExternalUsers:true AND ContentType:document` 可能會傳回許多 .aspx 檔案。 若要將這些 (或其他類型的檔案) 中，您可以使用此  `FileExtension` 屬性排除特定的檔案類型，例如  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` 。
   
 與組織外部人員共用的內容為何？ 組織的 SharePoint 中的檔，以及傳送共用邀請或在公用位置共用的商務用 OneDrive 網站。 例如，下列使用者活動會產生外部使用者可查看的內容：
   
 - 使用者與組織外部的人員共用檔案或資料夾。
-    
+  
 - 使用者建立共用檔案的連結並傳送給組織外部的人員。 此連結可讓外部使用者 (或編輯) 檔案中查看。
-    
+  
 - 使用者將共用邀請或來賓連結傳送給組織外部的人員，以查看 (或編輯) 共用檔案。
-    
+  
 ### <a name="issues-using-the-viewablebyexternalusers-property"></a>使用 ViewableByExternalUsers 屬性的問題
 
-雖然  `ViewableByExternalUsers` 此屬性代表的是檔或網站與外部使用者共用的狀態，但是此屬性的功能和不會反映的注意事項。 在下列案例中，屬性值將  `ViewableByExternalUsers` 不會更新，而且使用此屬性的內容搜尋查詢結果可能不准確。 
+雖然  `ViewableByExternalUsers` 此屬性代表的是檔或網站與外部使用者共用的狀態，但是此屬性的功能和不會反映的注意事項。 在下列案例中，屬性的值  `ViewableByExternalUsers` 不會更新，而且使用此屬性的搜尋查詢結果可能不准確。 
   
 - 對共用原則所做的變更，例如關閉網站或組織的外部共用。 即使已撤銷外部存取，屬性仍然會將先前的共用檔顯示為外部可存取的。
     
@@ -429,7 +435,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 ## <a name="search-tips-and-tricks"></a>搜尋秘訣與技巧
 
-- 關鍵字搜尋不區分大小寫。 例如， **cat** 和 **cat** 會傳回相同的結果。 
+- 關鍵字搜尋不區分大小寫。 例如， **cat** 和 **cat** 會傳回相同的結果。
 
 - 布林運算子 **AND**、 **OR**、 **NOT** 和 **NEAR** 必須是大寫。 
 

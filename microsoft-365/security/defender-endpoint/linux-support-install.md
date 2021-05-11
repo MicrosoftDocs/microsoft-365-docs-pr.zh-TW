@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12f648ce476f6e29cbb6b038cc42f2e744d77104
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dc1e8707dc0810c0986698674a64e969792b5fb8
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933298"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311229"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>疑難排解 Linux 上 Microsoft Defender for Endpoint 的安裝問題
 
@@ -40,8 +40,8 @@ ms.locfileid: "51933298"
 
 「安裝」中的錯誤可能會或不會由封裝管理員產生有意義的錯誤訊息。 若要確認安裝是否成功，請使用下列步驟取得並檢查安裝記錄檔：
 
- ```bash
- sudo journalctl | grep 'microsoft-mdatp'  > installation.log
+```bash
+ sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -50,7 +50,7 @@ ms.locfileid: "51933298"
 
 ```Output
  microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
- ```
+```
 
 先前命令的輸出和安裝的正確日期和時間會指出成功。
 
@@ -63,8 +63,8 @@ ms.locfileid: "51933298"
 | 包                       | 分佈                             |
 |-------------------------------|------------------------------------------|
 | mdatp-rhel8.Linux.x86_64 rpm  | Oracle、RHEL 和 CentOS ∞              |
-| mdatp-sles12.Linux.x86_64 rpm | SuSE Linux Enterprise Server 12v        |
-| mdatp-sles15.Linux.x86_64 rpm | SuSE Linux Enterprise Server 15。        |
+| mdatp-sles12.Linux.x86_64 rpm | SuSE Linux Enterprise Server 12. x        |
+| mdatp-sles15.Linux.x86_64 rpm | SuSE Linux Enterprise 伺服器15。        |
 | mdatp.Linux.x86_64 rpm        | Oracle、RHEL 和 CentOS 7. x              |
 | mdatp.Linux.x86_64。 deb        | Debian 和 Ubuntu 16.04、18.04 及20.04 |
 
@@ -77,6 +77,7 @@ ms.locfileid: "51933298"
 ```bash
 systemctl status mdatp
 ```
+
 ```Output
  ● mdatp.service - Microsoft Defender for Endpoint
    Loaded: loaded (/lib/systemd/system/mdatp.service; enabled; vendor preset: enabled)
@@ -119,7 +120,7 @@ systemctl status mdatp
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
     ```
 
-    ```<systemd_path>```位於 ```/lib/systemd/system``` Ubuntu 和 Debian 發行的位置， ```/usr/lib/systemd/system``` 以及 Rhel、CentOS、Oracle 和 SLES 的位置。
+    `<systemd_path>`位於 `/lib/systemd/system` Ubuntu 和 Debian 發行的位置， `/usr/lib/systemd/system` 以及 Rhel、CentOS、Oracle 和 SLES 的位置。
    然後重新執行步驟2。
 
 4. 如果上述步驟無法運作，請檢查是否已安裝 SELinux，並檢查強制模式。 如果是的話，請嘗試將其設為「許可」 (首選) 或已停用的模式。 您可以在檔案中將參數設 `SELINUX` 為「容許」或「停用」 `/etc/selinux/config` ，接著再重新開機。 如需詳細資訊，請參閱 selinux 的手冊頁面。

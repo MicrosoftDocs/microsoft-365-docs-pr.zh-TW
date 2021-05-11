@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
-description: 預設情況下，在 Microsoft 365 (也稱為預設信箱審計或信箱審計的信箱審計記錄是開啟的) 。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
-ms.openlocfilehash: 4b2016b4eee68d336cc2f77f2eb6fef6f3ee2fd9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Microsoft 365 (也稱為預設信箱審計或信箱審核，預設會在) 上啟用信箱審計記錄。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
+ms.openlocfilehash: 859bd0dc633ece887fe11d57068fab4eb1395cdd
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927853"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311169"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
@@ -41,11 +41,11 @@ ms.locfileid: "50927853"
 
 > [!NOTE]
 >* 根據預設，應記住的信箱審核版本的重要事項是：您不需要執行任何動作來管理信箱審核。 不過，若要深入瞭解，請自訂信箱審核的預設設定，或完全關閉，本主題可協助您。
->- 根據預設，只有 E5 使用者的信箱審核事件可在安全性 & 合規性中心或 Office 365 管理活動 API 中的審計記錄搜尋中取得。 如需詳細資訊，請參閱本主題中的 [詳細資訊](#more-information) 一節。
+>- 根據預設，只有 E5 使用者的信箱審核事件可在安全性 & 合規性中心或「Office 365 管理」活動 API 中的審計記錄搜尋中取得。 如需詳細資訊，請參閱本主題中的 [詳細資訊](#more-information) 一節。
 
-## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>驗證預設開啟的信箱審核
+## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>確認信箱稽核預設為開啟
 
-若要確認您組織的預設信箱審核已開啟，請在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
+若要確認您組織的預設信箱審核已開啟，請在[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
 
 ```PowerShell
 Get-OrganizationConfig | Format-List AuditDisabled
@@ -66,7 +66,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |:---------|:---------:|:---------:|
 |使用者信箱|![核取記號](../media/checkmark.png)||
 |共用信箱|![核取記號](../media/checkmark.png)||
-|Microsoft 365 群組信箱|![核取記號](../media/checkmark.png)||
+|Microsoft 365群組信箱|![核取記號](../media/checkmark.png)||
 |資源信箱||![核取記號](../media/checkmark.png)|
 |公用資料夾信箱||![核取記號](../media/checkmark.png)|
 
@@ -90,9 +90,9 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
     - 規範中心的 eDiscovery 或 Advanced eDiscovery。
 
-    - 在 Exchange Online 中 In-Place eDiscovery。
+    - In-Place Exchange Online 中的 eDiscovery。
 
-  - 您可以使用 Microsoft Exchange Server MAPI 編輯器來存取信箱。
+  - 信箱是透過使用 Microsoft Exchange Server MAPI 編輯器來存取。
 
 ### <a name="mailbox-actions-for-user-mailboxes-and-shared-mailboxes"></a>使用者信箱和共用信箱的信箱動作
 
@@ -110,10 +110,10 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**ApplyRecord**|專案標示為記錄。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |**Copy**|郵件已複製到另一個資料夾。|![核取記號](../media/checkmark.png)|||
 |**Create**|在 [信箱] 中的 [行事曆]、[連絡人]、[記事] 或 [任務] 資料夾中建立專案時 (例如，) 中建立新的會議邀請。 建立、傳送或接收郵件的動作並不會受到稽核。 此外，建立信箱資料夾的動作也不會受到稽核。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)|
-|**預設值**||![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|
+|**Default**||![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|
 |**FolderBind**|已存取信箱資料夾。 當系統管理員或代理人開啟信箱時，也會記錄此動作。 <br/><br/> **附注**：合併委派所執行之資料夾系結動作的審計記錄。 在24小時內，會為個別資料夾存取產生一個審計記錄。|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||
 |**HardDelete**|已從 [可復原的專案] 資料夾中清除郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
-|**MailItemsAccessed**|郵件資料是由郵件通訊協定和用戶端存取。 這個值只適用于 E5 或 E5 相容性附加元件訂閱使用者。 如需詳細資訊，請參閱為 [使用者設定高級審核](advanced-audit.md#set-up-advanced-audit-for-users)。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|郵件資料是由郵件通訊協定和用戶端存取。 這個值只適用于 E5 或 E5 相容性附加元件訂閱使用者。 如需詳細資訊，請參閱 [設定高級審計 ](set-up-advanced-audit.md)。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|使用者已登入其信箱。 |||![核取記號](../media/checkmark.png)|
 |**MessageBind**|在 [預覽] 窗格中查看或由系統管理員開啟的訊息。 **請注意**：雖然此值接受為信箱動作，但不再記錄這些動作。|![核取記號](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|**附注**：雖然此值接受為信箱動作，但它已包含在 **UpdateFolderPermissions** 動作中，而且不會個別進行審核。 換句話說，請勿使用此值。||||
@@ -121,7 +121,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**MoveToDeletedItems**|郵件已遭刪除並移至 [刪除的郵件] 資料夾。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|已虛刪除標示為記錄的專案 (移至 [可復原的專案] 資料夾) 。 無法從 [可復原的專案] 資料夾中永久刪除標示為記錄的專案 () 。|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|
 |**RemoveFolderPermissions**|**附注**：雖然此值接受為信箱動作，但它已包含在 **UpdateFolderPermissions** 動作中，而且不會個別進行審核。 換句話說，請勿使用此值。||||
-|**Send**|使用者傳送電子郵件訊息、回復電子郵件訊息或轉寄電子郵件訊息。 這個值只適用于 E5 或 E5 相容性附加元件訂閱使用者。 如需詳細資訊，請參閱為 [使用者設定高級審核](advanced-audit.md#set-up-advanced-audit-for-users)。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
+|**Send**|使用者傳送電子郵件訊息、回復電子郵件訊息或轉寄電子郵件訊息。 這個值只適用于 E5 或 E5 相容性附加元件訂閱使用者。 如需詳細資訊，請參閱為 [使用者設定高級審核](set-up-advanced-audit.md)。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|已使用 [傳送為] 權限傳送郵件。 這表示另一位使用者已傳送郵件，就好像它來自信箱擁有者。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|已使用 [代理傳送者] 權限傳送郵件。 這表示另一位使用者代表信箱擁有者傳送郵件。 此郵件會向收件者指出誰代理傳送郵件，以及實際上是誰傳送郵件。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|郵件已永久刪除或從 [刪除的郵件] 資料夾中刪除。 虛刪除的專案會移至 [可復原的專案] 資料夾。|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|![核取記號](../media/checkmark.png)<sup>\*</sup>|
@@ -136,9 +136,9 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 ### <a name="mailbox-actions-for-microsoft-365-group-mailboxes"></a>Microsoft 365 群組信箱的信箱動作
 
-信箱審核預設會將信箱審核記錄到 Microsoft 365 群組信箱，但您無法自訂要記錄的內容 (您無法新增或移除針對任何登入類型) 所記錄的信箱動作。
+信箱審核預設會將信箱審核記錄的內容提供給 Microsoft 365 群組信箱，但您無法自訂要登入的專案 (無法新增或移除針對任何登入類型) 所記錄的信箱動作。
 
-下表說明每種登入類型的 Microsoft 365 群組信箱上，預設會記錄的信箱動作。
+下表說明預設在每個登入類型的 Microsoft 365 群組信箱上記錄的信箱動作。
 
 請記住，對 Microsoft 365 群組信箱具有「完整存取」許可權的系統管理員會被視為代理人。
 
@@ -162,7 +162,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-若要在 Microsoft 365 群組信箱上顯示值，請以 \<MailboxIdentity\> 共用信箱的名稱、別名或電子郵件地址取代，並在 Exchange Online 中執行下列命令 PowerShell:
+若要在 Microsoft 365 群組信箱上顯示值，請以 \<MailboxIdentity\> 共用信箱的名稱、別名或電子郵件地址加以取代，並在 Exchange Online 中執行下列命令 PowerShell:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -188,10 +188,10 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>顯示正在登入信箱的信箱動作
 
-若要查看目前登入使用者信箱或共用信箱的信箱動作，請以 \<MailboxIdentity\> 名稱、別名、電子郵件地址或使用者主要名稱取代， (信箱的使用者名稱) ，以及在 Exchange Online PowerShell 中執行下列一或多個命令。
+若要查看目前登入使用者信箱或共用信箱的信箱動作，請以 \<MailboxIdentity\> 名稱、別名、電子郵件地址或使用者主要名稱取代，以 (信箱的使用者名稱) ，然後在 Exchange Online PowerShell 中執行下列其中一個或多個命令。
 
 > [!NOTE]
-> 雖然您可以將此 `-GroupMailbox` 開關新增至 Microsoft 365 群組信箱的下列 **Get-Mailbox** 命令，但不要相信傳回的值。 在本主題稍早的 [ [microsoft 365 群組信箱的信箱動作](#mailbox-actions-for-microsoft-365-group-mailboxes) ] 區段中，會說明針對 Microsoft 365 群組信箱所審核的預設和靜態信箱動作。
+> 雖然您可以將 `-GroupMailbox` 參數新增至 Microsoft 365 群組信箱的下列 **Get-Mailbox** 命令，但不會相信傳回的值。 本主題稍早[Microsoft 365 群組信箱的信箱動作](#mailbox-actions-for-microsoft-365-group-mailboxes)一節說明 Microsoft 365 群組信箱所審核的預設和靜態信箱動作。
 
 #### <a name="owner-actions"></a>擁有者動作
 
@@ -222,7 +222,7 @@ Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditAdm
 
 ### <a name="change-the-mailbox-actions-to-audit"></a>變更要審核的信箱動作
 
-您可以使用 **Set-Mailbox** Cmdlet 上的 *AuditAdmin*、 *AuditDelegate* 或 *AuditOwner* 參數，來變更針對使用者信箱和共用信箱所審核的信箱動作 (無法自訂 Microsoft 365 群組信箱的已審核動作) 。
+您可以使用 **Set-Mailbox** Cmdlet 上的 *AuditAdmin*、 *AuditDelegate* 或 *AuditOwner* 參數，來變更針對使用者信箱和共用信箱所審核的信箱動作 (Microsoft 365 群組信箱的已審核動作無法自訂) 。
 
 您可以使用兩種不同的方法來指定信箱動作：
 
@@ -264,7 +264,7 @@ Set-Mailbox -Identity <MailboxIdentity> -DefaultAuditSet <Admin | Delegate | Own
 
 您可以指定多個以逗號分隔的 *DefaultAuditSet* 值。
 
-**附注**：下列程式不適用於 Microsoft 365 群組信箱 (預設動作限制為 [下列) 所](#mailbox-actions-for-microsoft-365-group-mailboxes) 述。
+**附注**：下列程式不適用於 Microsoft 365 群組信箱， (其受限於預設動作) [這裡](#mailbox-actions-for-microsoft-365-group-mailboxes)所述。
 
 本範例會在信箱 mark@contoso.onmicrosoft.com 上還原所有登入類型的預設已審核信箱動作。
 
@@ -288,7 +288,7 @@ Set-Mailbox -Identity chris@contoso.onmicrosoft.com -DefaultAuditSet Admin
 
 ## <a name="turn-off-mailbox-auditing-on-by-default-for-your-organization"></a>針對您的組織，關閉預設的信箱審計
 
-您可以在 Exchange Online 中執行下列命令，關閉整個組織的預設信箱審計 PowerShell:
+您可以在 Exchange Online 中執行下列命令，關閉整個組織的預設信箱審核 PowerShell:
 
 ```PowerShell
 Set-OrganizationConfig -AuditDisabled $true
@@ -308,17 +308,17 @@ Set-OrganizationConfig -AuditDisabled $true
 
 ### <a name="turn-on-mailbox-auditing-on-by-default"></a>依預設開啟信箱審計
 
-若要為您的組織重新啟用信箱審核，請在 Exchange Online 中執行下列命令 PowerShell:
+若要為您的組織開啟信箱審核，請在 Exchange Online 中執行下列命令 PowerShell:
 
 ```PowerShell
 Set-OrganizationConfig -AuditDisabled $false
 ```
 
-## <a name="bypass-mailbox-audit-logging"></a>略過信箱審核記錄
+## <a name="bypass-mailbox-audit-logging"></a>略過信箱稽核記錄
 
-目前，當組織中的信箱審核預設為開啟狀態時，您無法停用特定信箱的信箱審核。 例如，會忽略將 *AuditEnabled* 信箱屬性設定為 **False** 。
+目前，當貴組織預設開啟信箱稽核時，您無法停用特定信箱的信箱稽核。 例如，會忽略將 *AuditEnabled* 信箱屬性設定為 **False** 。
 
-不過，您仍然可以在 Exchange Online PowerShell 中使用 **Set-MailboxAuditBypassAssociation** 指令程式，以防止指定的使用者記錄 *任何和所有* 信箱動作，不論動作發生的位置為何。 例如：
+不過，您仍然可以在 Exchange Online PowerShell 中使用 **Set-MailboxAuditBypassAssociation** Cmdlet，以防止指定的使用者登入 *任何和所有* 信箱動作，不論動作發生的位置為何。 例如：
 
 - 未記錄略過使用者執行的信箱擁有者動作。
 
@@ -332,7 +332,7 @@ Set-OrganizationConfig -AuditDisabled $false
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
 ```
 
-若要確認指定的使用者已略過審核，請執行下列命令：
+若要驗證已針對指定的使用者略過稽核，請執行下列命令：
 
 ```PowerShell
 Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List AuditByPassEnabled
@@ -342,11 +342,11 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 ## <a name="more-information"></a>其他資訊
 
-- 雖然預設會為所有組織啟用信箱審核記錄，但只有具有 E5 授權的使用者才會在 [安全性 & 合規性中心](search-the-audit-log-in-security-and-compliance.md) 或透過 [Office 365 管理活動 API](/office/office-365-management-api/office-365-management-activity-api-reference) **的「** 審核記錄」搜尋中，傳回信箱審核記錄事件。
+- 雖然預設會為所有組織啟用信箱審核記錄，但只有具有 E5 授權的使用者才會在 [安全性 & 合規性中心](search-the-audit-log-in-security-and-compliance.md)或 **預設** 會透過 [Office 365 管理活動 API](/office/office-365-management-api/office-365-management-activity-api-reference)中，傳回審核記錄搜尋中的信箱審核記錄事件。
 
   若要取得沒有 E5 授權之使用者的信箱審計記錄專案，您可以：
 
-  - 手動啟用個別信箱上的信箱審計 (執行命令，請 `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`) 。 執行這項作業之後，您可以在安全性 & 合規性中心或透過 Office 365 管理活動 API 中使用審核記錄搜尋。
+  - 手動啟用個別信箱上的信箱審計 (執行命令，請 `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`) 。 完成之後，您可以在安全性 & 規範中心或透過 Office 365 管理活動 API 中使用審核記錄搜尋。
   
     > [!NOTE]
     > 如果信箱審核似乎已在信箱上啟用，但是您的搜尋未傳回任何結果，請將 _AuditEnabled_ 參數的值變更為 `$false` 後再移回來 `$true` 。
@@ -357,15 +357,15 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) 搜尋特定使用者的信箱審核記錄，並將結果透過電子郵件傳送給指定的收件者。
 
-  - 在 Exchange Online 中使用 Exchange 系統管理中心 (EAC) 進行下列動作：
+  - 使用 Exchange 系統管理中心 (EAC) Exchange Online 執行下列動作：
 
     - [匯出信箱稽核記錄](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
     - [執行非擁有者信箱存取報告](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 
-- 依預設，信箱審核記錄記錄會在刪除之前保留90天。 您可以使用 Exchange Online PowerShell 中 **Set-Mailbox** Cmdlet 上的 *AuditLogAgeLimit* 參數，來變更審核記錄記錄的保留天數。 不過，增加此值不會讓您在審核記錄中搜尋超過90天的事件。
+- 依預設，信箱審核記錄記錄會在刪除之前保留90天。 您可以使用 Exchange Online PowerShell 中 **Set-Mailbox** Cmdlet 上的 *AuditLogAgeLimit* 參數，來變更審核記錄記錄的保留天數限制。 不過，增加此值不會讓您在審核記錄中搜尋超過90天的事件。
 
-  如果您增加保留天數，您必須在 Exchange Online 中使用 [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) 指令程式 PowerShell 來搜尋使用者的信箱審核記錄中超過90天的記錄。
+  如果您增加保留天數，您必須在 Exchange Online PowerShell 中使用[Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog)指令程式，以便在使用者的信箱審核記錄中搜尋超過90天的記錄。
 
 - 如果您已在信箱審核之前將信箱的 *AuditLogAgeLimit* 屬性變更為已開啟組織的預設值，則信箱的現有審核記錄保留時間限制不會變更。 換句話說，依預設，信箱審計不會影響信箱審計記錄的目前保留限制。
 
@@ -384,7 +384,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
     > [!NOTE]
     > 根據預設，信箱審核可能會影響儲存配額或 [可復原的專案] 資料夾的資料夾限制。
 
-    - 您可以在 Exchange Online PowerShell 中執行下列命令，以在 [可復原的專案] 資料夾的 [審計] 子資料夾中顯示專案的大小和數目：
+    - 您可以在 Exchange Online PowerShell 中執行下列命令，在 [可復原的專案] 資料夾的 [審計] 子資料夾中顯示專案的大小和數目：
 
       ```PowerShell
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder

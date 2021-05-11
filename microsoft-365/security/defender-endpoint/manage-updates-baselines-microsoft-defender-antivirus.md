@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/08/2021
-ms.openlocfilehash: 4f2b931018d49affa2d94ddf1a147c4fd2e02085
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.date: 05/10/2021
+ms.openlocfilehash: 5b599e9d5a5c3d098033af1f1df96ee9f26025ee
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302073"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52312009"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
 

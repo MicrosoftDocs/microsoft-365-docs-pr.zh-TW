@@ -1,5 +1,5 @@
 ---
-title: 檢查您的內容搜尋查詢是否有錯誤
+title: 檢查您的搜尋查詢是否有錯誤
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: 瞭解如何在執行搜尋之前，偵測關鍵字搜尋中的錯誤與打字錯誤。
-ms.openlocfilehash: 939ac3d227f176a0b74138107ced5dd5b7142bcd
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+description: 瞭解如何在執行搜尋之前，偵測電子檔探索搜尋的關鍵字查詢中的錯誤與打字錯誤。
+ms.openlocfilehash: 9c041ca690df3306347cbca77df3ba9639801245
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488210"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311685"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>檢查您的內容搜尋查詢是否有錯誤
+# <a name="check-your-search-query-for-errors"></a>檢查您的搜尋查詢是否有錯誤
   
-以下是我們所檢查的不支援字元清單。 不支援的字元通常是隱藏的，而且通常會導致搜尋錯誤或傳回意外的結果。
+以下是在搜尋查詢中檢查內容搜尋及核心 eDiscovery 的不支援字元清單。 不支援的字元通常是隱藏的，而且通常會導致搜尋錯誤或傳回意外的結果。
   
 - **彎引號** -彎單引號和雙引號 (也稱為彎引號) 不受支援。 在搜尋查詢中只可以使用直引號。 
 
@@ -45,4 +45,4 @@ ms.locfileid: "51488210"
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>如何防止搜尋查詢中不支援的字元
 
-當您從其他應用 (程式（例如 Microsoft Word 或 Microsoft) Excel）複製查詢或查詢的某些部分時，通常會將不支援的字元加入查詢，然後在內容搜尋的 [查詢] 頁面上，將其貼到 [關鍵字] 方塊中。 若要避免不支援的字元，最好的方法是在 [關鍵字] 方塊中輸入查詢。 或者，您可以複製 Word 或 Excel 中的查詢，然後將它貼到純文字編輯器（例如 Microsoft Notepad）。 儲存文字檔，並在 **編碼** 下拉式清單中選取 **ANSI** 。 這將會移除任何格式及不支援的字元。 然後，您可以將查詢從文本檔案複製並貼到關鍵字查詢方塊。 
+當您從其他應用 (程式（例如 Microsoft Word 或 Microsoft Excel) ）複製查詢或查詢的某些部分時，通常會將不支援的字元新增至查詢，然後在內容搜尋的 [查詢] 頁面上，將其貼到 [關鍵字] 方塊中。 若要避免不支援的字元，最好的方法是在 [關鍵字] 方塊中輸入查詢。 或者，您可以複製 Word 或 Excel 中的查詢，然後將它貼到純文字編輯器中，例如 Microsoft 記事本。 儲存文字檔，並在 **編碼** 下拉式清單中選取 **ANSI** 。 這將會移除任何格式及不支援的字元。 然後，您可以將查詢從文本檔案複製並貼到關鍵字查詢方塊。

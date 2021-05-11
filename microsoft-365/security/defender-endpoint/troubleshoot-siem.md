@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9c4f3da57796903fc22314574f389bcdd92ca4b3
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689446"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311985"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>為 SIEM 工具整合問題疑難排解
 
@@ -33,7 +33,7 @@ ms.locfileid: "51689446"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 在您的 SIEM 工具中提取偵測時，您可能需要對問題進行疑難排解。
 
@@ -51,9 +51,9 @@ ms.locfileid: "51689446"
 
 4. 按一下 [ **應用程式註冊**]。 然後在 [應用程式] 清單中，選取應用程式。
 
-5. 選取機 **碼** 區段，然後提供重要描述並指定金鑰有效期限。
+5. 選取 [ **憑證 & 機密** ] 區段，按一下 [新用戶端密碼]，然後提供描述並指定有效期限。
 
-6. 按一下 **儲存**。 會顯示機碼值。
+6. 按一下 [儲存]。 會顯示機碼值。
 
 7. 複製此值，並將其儲存在安全的位置。
 
@@ -74,7 +74,7 @@ ms.locfileid: "51689446"
    - 英國： `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
    - 美國：  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` 。
  
-6. 按一下 **儲存**。
+6. 按一下 [儲存]。
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>啟用 SIEM 連接器應用程式時發生錯誤
 如果您嘗試啟用 SIEM 連接器應用程式時遇到錯誤，請檢查瀏覽器的快顯封鎖器設定。 當您啟用功能時，它可能會封鎖所開啟的新視窗。
@@ -82,7 +82,7 @@ ms.locfileid: "51689446"
 
 
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
 ## <a name="related-topics"></a>相關主題
 - [在 Microsoft Defender for Endpoint 中啟用 SIEM 整合](enable-siem-integration.md)

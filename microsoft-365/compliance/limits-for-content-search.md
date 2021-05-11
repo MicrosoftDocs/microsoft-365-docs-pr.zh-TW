@@ -16,16 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: 深入瞭解 Microsoft 365 規範中心的內容搜尋功能限制，例如同時搜尋的最大數目。 這些搜尋限制也適用于與核心 eDiscovery 案例相關聯的搜尋。
-ms.openlocfilehash: e4cfc79d35b4dc6a22e8e7a872699d906b39a901
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 深入瞭解 Microsoft 365 規範中心的內容搜尋與核心 eDiscovery 功能的影響。
+ms.openlocfilehash: 47004473efe3407e9123fd15a7b1bf5f23e9fb23
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244317"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311409"
 ---
-# <a name="limits-for-content-search"></a>內容搜尋限制 
-在 Microsoft 365 規範中心的內容搜尋工具中，各項限制都適用。 這包括「 **內容搜尋** 」頁面上的搜尋執行，以及與 **核心 ediscovery** 頁面上的 eDiscovery 案例相關聯的搜尋。 這些限制可協助維護為組織提供的服務健康情況和品質。 在 Exchange Online 進行搜尋時，也有與電子郵件訊息的索引相關的限制。 您無法修改內容搜尋或電子郵件索引的限制，但您應該知道這些限制，這樣就能在規劃、執行及疑難排解內容搜尋時考慮這些限制。
+# <a name="limits-for-ediscovery-search"></a>EDiscovery 搜尋的限制 
+
+在 Microsoft 365 規範中心的 eDiscovery 搜尋工具中，各項限制都適用。 這包括「 **內容搜尋** 」頁面上的搜尋執行，以及與 **核心 ediscovery** 頁面上的 eDiscovery 案例相關聯的搜尋。 這些限制可協助維護為組織提供的服務健康情況和品質。 在 Exchange Online 進行搜尋時，也有與電子郵件訊息的索引相關的限制。 您無法修改 eDiscovery 搜尋或電子郵件索引的限制，但您應該知道這些限制，這樣就能在規劃、執行及疑難排解 eDiscovery 搜尋時考慮這些限制。
+
+如需與 Advanced eDiscovery 工具相關的限制，請參閱[Advanced eDiscovery 中的限制](limits-ediscovery20.md)
   
 ## <a name="search-limits"></a>搜尋限制
 
@@ -99,7 +102,7 @@ Microsoft 會收集所有組織執行之搜尋的效能資訊。 雖然搜尋查
 |Body 中的唯一標記上限  <br/> |1 百萬  <br/> |如先前所述，token 是從內容提取文字、移除標點符號和空格，然後將其分割成) 儲存在索引中的 (稱為 token 的字。 例如，片語  `"cat, mouse, bird, dog, dog"` 包含5個權杖。 但只有4個是唯一的標記。 每封電子郵件都有1000000個唯一的標記限制，這有助於防止索引因過大而無法使用隨機標記。  <br/> |
 |||
   
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 有其他與搜尋內容的不同層面相關的限制，例如內容索引。 如需這些限制的相關資訊，請參閱下列主題：
 

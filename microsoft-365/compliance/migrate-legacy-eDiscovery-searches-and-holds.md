@@ -14,31 +14,31 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: ef5562aa6f5c7519d19452100b55dd4bc30d4126
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aaae5e6bddc48f29cc0766fe26a1976672c7dd49
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926321"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310791"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>將舊版 eDiscovery 搜尋和保留遷移至 Microsoft 365 規範中心
 
-Microsoft 365 合規性中心提供 eDiscovery 使用的改善體驗，包括：更高的可靠性、更好的效能，以及許多針對 eDiscovery 工作流程量身定做的功能，包括案例以查看內容和分析，以協助挑選資料進行審核，例如接近重複的群組、電子郵件執行緒、主題分析和預測編碼。
+Microsoft 365 規範中心提供 ediscovery 使用的改善體驗，包括：更高的可靠性、更好的效能，以及許多針對 ediscovery 工作流程量身定制的功能（包括案例）依重要方式整理內容、複查內容和分析，以協助挑選資料進行審核，例如接近重複的群組、電子郵件執行緒、主題分析和預測編碼。
 
 為了協助客戶利用新的和改善的功能，本文提供如何將 In-Place eDiscovery 搜尋和保留從 Exchange 系統管理中心遷移至 Microsoft 365 規範中心的基本指導方針。
 
 > [!NOTE]
-> 因為有許多不同的案例，本文提供將搜尋和保留轉換至 Microsoft 365 規範中心中核心 eDiscovery 案例的一般指導方針。 使用 eDiscovery 案例不一定是必要的，但是會讓您指派許可權來控制哪些人員可以存取您組織中的 eDiscovery 案例，以增加額外的安全性層級。
+> 因為有許多不同的案例，本文提供將搜尋和保留轉換為 Microsoft 365 規範中心內的核心 eDiscovery 案例的一般指導方針。 使用 eDiscovery 案例不一定是必要的，但是會讓您指派許可權來控制哪些人員可以存取您組織中的 eDiscovery 案例，以增加額外的安全性層級。
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須是 Security & 合規性中心內 eDiscovery 管理員角色群組的成員，才可執行本文所述的 PowerShell 命令。 您也必須是 Exchange 系統管理中心內「探索管理」角色群組的成員。
+- 您必須是 Security & 合規性中心內 eDiscovery 管理員角色群組的成員，才可執行本文所述的 PowerShell 命令。 您也必須是 Exchange 系統管理中心的「探索管理」角色群組的成員。
 
 - 本文提供如何建立 eDiscovery 暫止功能的指導方針。 保留原則會透過非同步處理常式套用至信箱。 建立 eDiscovery 暫止功能時，您必須同時建立 CaseHoldPolicy 和 New-caseholdrule，否則不會建立保留，也不會將內容位置置於保留狀態。
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>步驟1：連線至 Exchange Online PowerShell 及安全性 & 規範中心 PowerShell
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>步驟1：連線 Exchange Online PowerShell 及安全性 & 規範中心 PowerShell
 
-第一步是連線至 Exchange Online PowerShell 及安全性 & 規範中心 PowerShell。 您可以複製下列腳本，將其貼到 PowerShell 視窗，然後執行它。 系統會提示您輸入您要連線之組織的認證。 
+第一步是連接至 Exchange Online PowerShell 與安全性 & 規範中心 PowerShell。 您可以複製下列腳本，將其貼到 PowerShell 視窗，然後執行它。 系統會提示您輸入您要連線之組織的認證。 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -130,21 +130,21 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![PowerShell New-ComplianceSearch 範例](../media/MigrateLegacyeDiscovery6.png)
 
-## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>步驟8：確認案例、保留及搜尋 Microsoft 365 規範中心
+## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>步驟8：確認案例、保留和搜尋 Microsoft 365 規範中心
 
-若要確定所有專案設定正確，請移至 Microsoft 365 規範中心 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下 [ **EDiscovery > Core**]。
+若要確定所有專案設定正確，請移至 Microsoft 365 合規性中心 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下 [ **eDiscovery > Core**]。
 
-![Microsoft 365 規範中心電子檔探索](../media/MigrateLegacyeDiscovery7.png)
+![Microsoft 365規範中心 eDiscovery](../media/MigrateLegacyeDiscovery7.png)
 
-您在步驟3中建立的案例會列在 **核心 eDiscovery** 頁面上。 開啟案例，然後注意您在 [ **保留** ] 索引標籤的 [步驟 4] 中所建立的保留。您可以按一下 [保留] 以查看詳細資料，包括保留所用的信箱數目及發行狀態。
+您在步驟3中建立的案例會列在 **核心 eDiscovery** 頁面上。 開啟案例，然後注意您在 [ **保留** ] 索引標籤中列出的步驟4中所建立的保留。您可以選取 [保留] 以查看飛入頁面上的詳細資料，包括保留所用的信箱數目及發行狀態。
 
-![Microsoft 365 規範中心的 eDiscovery 保留](../media/MigrateLegacyeDiscovery8.png)
+![Microsoft 365 規範中心內的 eDiscovery 封存](../media/MigrateLegacyeDiscovery8.png)
 
-您在步驟7中建立的搜尋列在 eDiscovery 案例的 [搜尋] 索引標籤上的 [ **搜尋** ] 索引標籤上。
+您在步驟7中建立的搜尋會列在案例的 [ **搜尋** ] 索引標籤上。
 
-![Microsoft 365 規範中心的 eDiscovery 案例搜尋](../media/MigrateLegacyeDiscovery9.png)
+![Microsoft 365 規範中心內的 eDiscovery 案例搜尋](../media/MigrateLegacyeDiscovery9.png)
 
-如果您遷移的是 In-Place eDiscovery 搜尋，但沒有將其與 eDiscovery 案例產生關聯，它會列在 Microsoft 365 規範中心的 [內容搜尋] 頁面上。
+如果您遷移的是 In-Place ediscovery 搜尋，但沒有將其與 eDiscovery 案例產生關聯，它會列在「Microsoft 365 規範中心」的 [內容搜尋] 頁面上。
 
 ## <a name="more-information"></a>其他資訊
 
@@ -170,4 +170,4 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- 如需 Microsoft 365 規範中心的詳細資訊，請參閱 [microsoft 365 規範中心概述](microsoft-365-compliance-center.md)。
+- 如需 Microsoft 365 規範中心的詳細資訊，請參閱[Microsoft 365 規範中心的 [概述](microsoft-365-compliance-center.md)]。

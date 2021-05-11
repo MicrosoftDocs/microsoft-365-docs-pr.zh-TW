@@ -17,16 +17,28 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 及 OneDrive 中啟用 Word、Excel 和 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: c3d4320937b441510424454197c4eb4ffa46d9fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f610e04a9115b7654332bcc1f479144b4d100618
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245633"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311925"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+> [!NOTE]
+> 目前的問題導致標籤和加密的檔案無法在 Office 網頁版中開啟：
+>
+> 當我們調查與特定檔案屬性相關的問題時，您將無法在 Office 網頁版中開啟許多檔案。 針對這些檔案，您可以繼續在您的桌上型電腦和行動裝置 Office app 中開啟及編輯這些檔案。 或者，請執行下列操作：
+>
+> 1. 在 Office 桌面應用程式中開啟檔案。
+> 2. 移除套用加密的標籤。
+> 3. 將檔案儲存在原始位置 (SharePoint 或 OneDrive) ，然後關閉桌面應用程式。
+> 4. 在 Office 網頁版中開啟檔案，然後重新套用套用加密的原始標籤。
+> 
+> 僅在 Office 網頁版中建立及編輯的檔案不會受到影響。
 
 在 SharePoint 和 OneDrive 中啟用 Office 檔的敏感度標籤，讓使用者可以在 Office 網頁版套用您的[靈敏度標籤](sensitivity-labels.md)。 啟用此功能時，使用者會看到功能區上的 **靈敏度** 按鈕，讓他們可以套用標籤，並在狀態列上查看任何已套用的標籤名稱。
 
@@ -71,14 +83,6 @@ ms.locfileid: "52245633"
 在 Windows 上使用 OneDrive sync 應用程式版本19.002.0121.0008 或更新版本，以及 Mac 版上的19.002.0107.0008 或更新版本。 這兩個版本都發行于2019年1月28日，而且目前已發佈給所有的振鈴。 如需詳細資訊，請參閱[OneDrive 發行附注](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 在 SharePoint 和 OneDrive 中啟用 Office 檔的靈敏度標籤之後，會提示執行舊版本的 sync 應用程式的使用者進行更新。
 
 ## <a name="limitations"></a>限制
-
-- 使用 Excel 網頁版的 Power Query 及 custom 增益集：如果這些檔案是以靈敏度標籤加密，SharePoint 和 OneDrive 無法處理這些檔案，讓使用者無法在 Office 網頁版中開啟這些檔案。 針對這些檔案，請套用沒有加密的標籤，使其可在 Office 網頁版中開啟，或指示使用者在其桌面應用程式中開啟檔案。
-
-- 如果您在 Office 網頁版中開啟標籤和加密的檔案時遇到問題，請嘗試下列步驟：
-    1. 在 Office 桌面應用程式中開啟檔案。
-    2. 移除套用加密的標籤。
-    3. 將檔案儲存在原始位置 (SharePoint 或 OneDrive) ，然後關閉桌面應用程式。
-    4. 在 Office 網頁版中開啟檔案，然後重新套用套用加密的原始標籤。
 
 - SharePoint 和 OneDrive 不會自動將敏感度標籤套用至您已使用 Azure 資訊保護標籤加密的現有檔案。 相反地，當您在 SharePoint 和 OneDrive 中為 Office 檔案啟用敏感度標籤之後，請完成下列工作：
     
@@ -173,7 +177,8 @@ ms.locfileid: "52245633"
 
 1. 使用 Microsoft 365 中具有全域管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
     
-    附注：如果您有 Microsoft 365 多地理位置，請搭配[Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice)使用-Url 參數，並為其中一個地理位置指定 SharePoint 的線上管理中心網站 Url。
+   > [!NOTE]
+   > 如果您有 Microsoft 365 多地理位置，請搭配[Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice)使用-Url 參數，並為其中一個地理位置指定 SharePoint 的線上管理中心網站 Url。
 
 2. 執行下列命令，然後按 **Y** 確認：
 

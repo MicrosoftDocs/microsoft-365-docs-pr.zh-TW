@@ -18,26 +18,26 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: 在 Microsoft 365 規範中心使用內容搜尋，以執行目標的集合，以確保專案位於特定信箱或網站資料夾中。
-ms.openlocfilehash: ea01386b7e52c05f8116caacddd6dec7baf12272
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+description: 在 Microsoft 365 規範中心使用內容搜尋，以執行目標集合，以搜尋特定信箱或網站資料夾中的專案。
+ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994760"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311892"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>對目標集合使用內容搜尋
 
-Microsoft 365 規範中心的內容搜尋功能不會在 UI 中提供直接的方式，以搜尋 Exchange 信箱或 SharePoint 和商務用 OneDrive 網站中的特定資料夾。 不過，您可以在實際搜尋查詢語法中指定網站的 [電子郵件] 或 [)  (路徑] 的資料夾識別碼內容， (稱為 *目標集合*) ，以搜尋特定資料夾。 當您確信回應案例或特權專案的專案位於特定信箱或網站資料夾時，使用內容搜尋來執行目標集合很有用。 您可以使用本文中的腳本，取得信箱資料夾的資料夾識別碼，或 SharePoint 和商務用 OneDrive 網站上資料夾的 (DocumentLink) 路徑。 然後您可以使用搜尋查詢中的資料夾識別碼或路徑，傳回位於資料夾中的專案。
+Microsoft 365 規範中心的內容搜尋工具不會在 UI 中提供直接的方式，以搜尋 Exchange 信箱或 SharePoint 和商務用 OneDrive 網站中的特定資料夾。 不過，您可以在實際搜尋查詢語法中指定網站的 [電子郵件] 或 [)  (路徑] 的資料夾識別碼內容， (稱為 *目標集合*) ，以搜尋特定資料夾。 當您確信回應案例或特權專案的專案位於特定信箱或網站資料夾時，使用內容搜尋來執行目標集合很有用。 您可以使用本文中的腳本，取得信箱資料夾的資料夾識別碼，或 SharePoint 和商務用 OneDrive 網站上資料夾的 (DocumentLink) 路徑。 然後您可以使用搜尋查詢中的資料夾識別碼或路徑，傳回位於資料夾中的專案。
 
 > [!NOTE]
 > 若要傳回位於 SharePoint 或商務用 OneDrive 網站的資料夾中的內容，本主題中的腳本會使用 DocumentLink managed 屬性，而不是 Path 屬性。 DocumentLink 屬性比 Path 屬性更強健，因為它會傳回資料夾中的所有內容，而 Path 屬性則不會傳回某些媒體檔案。
 
 ## <a name="before-you-run-a-targeted-collection"></a>在執行目標集合之前
 
-- 您必須是 Security & 合規性中心內 eDiscovery 管理員角色群組的成員，才可執行步驟1中的腳本。 如需詳細資訊，請參閱[指派電子文件探索權限](assign-ediscovery-permissions.md)。
+- 您必須是 [安全性 & 規範中心] 中的 eDiscovery 管理員角色群組成員，才可執行步驟1中的腳本。 如需詳細資訊，請參閱[指派電子文件探索權限](assign-ediscovery-permissions.md)。
 
-    此外，您必須為您的 Exchange Online 組織指派「郵件收件者」角色。 這是執行 **Get-MailboxFolderStatistics** Cmdlet 的必要指令，該指令包含在腳本中。 根據預設，會將「郵件收件者」角色指派給 Exchange Online 中的組織管理和收件者管理角色群組。 如需在 Exchange Online 指派許可權的相關資訊，請參閱[Manage role group members](/exchange/manage-role-group-members-exchange-2013-help)。 您也可以建立自訂角色群組、指派「郵件收件者」角色給它，然後新增需要在步驟1中執行腳本的成員。 如需詳細資訊，請參閱 [管理角色群組](/Exchange/permissions-exo/role-groups)。
+- 您也必須為您的 Exchange Online 組織指派「郵件收件者」角色。 這是執行 **Get-MailboxFolderStatistics** Cmdlet 的必要指令，該指令包含在腳本中。 根據預設，會將「郵件收件者」角色指派給 Exchange Online 中的組織管理和收件者管理角色群組。 如需在 Exchange Online 指派許可權的相關資訊，請參閱[Manage role group members](/exchange/manage-role-group-members-exchange-2013-help)。 您也可以建立自訂角色群組、指派「郵件收件者」角色給它，然後新增需要在步驟1中執行腳本的成員。 如需詳細資訊，請參閱 [管理角色群組](/Exchange/permissions-exo/role-groups)。
 
 - 本文中的腳本支援新式驗證。 如果您是 Microsoft 365 或 Microsoft 365 GCC 組織，您可以使用腳本。 如果您是 Office 365 德國組織、Microsoft 365 GCC 高組織或 Microsoft 365 DoD 組織，您必須編輯腳本以順利執行它。 具體說來，您必須編輯該行 `Connect-ExchangeOnline` 並使用 *ExchangeEnvironmentName* 參數 (，並使用適當的值為您的組織輸入) 以連接至 Exchange Online PowerShell。  此外，您必須編輯該行 `Connect-IPPSSession` 並使用 *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 參數 (以及組織類型的適當值，) 才能連線至安全性 & 規範中心 PowerShell。 如需詳細資訊，請參閱[連線中 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa)及[連線安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)的範例。
 
@@ -57,7 +57,7 @@ Microsoft 365 規範中心的內容搜尋功能不會在 UI 中提供直接的�
 
 您在此第一個步驟中執行的腳本會傳回信箱資料夾或 SharePoint 和商務用 OneDrive 資料夾的清單，以及每個資料夾對應的資料夾識別碼或路徑。 當您執行此腳本時，它會提示您輸入下列資訊。
 
-- **電子郵件地址或網站 URL**：輸入管理員的電子郵件地址，以傳回 Exchange 信箱資料夾和資料夾 IDs 清單。 或輸入 SharePoint 網站或商務用 OneDrive 網站的 URL，以傳回指定網站的路徑清單。 以下為一些範例：
+- **電子郵件地址或網站 URL**：輸入管理員的電子郵件地址，以傳回 Exchange 信箱資料夾和資料夾 IDs 清單。 或輸入 SharePoint 網站或商務用 OneDrive 網站的 URL，以傳回指定網站的路徑清單。 範例如下：
 
   - **Exchange**： stacig@contoso .com name.onmicrosoft.com17 <spam> <spam>
 
