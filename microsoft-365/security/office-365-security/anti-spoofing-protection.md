@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 系統管理員可以了解 Exchange Online Protection (EOP) 中提供的反詐騙功能，可協助緩解來自詐騙寄件者和網域的網路釣魚攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769019"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291028"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的反詐騙保護
 
@@ -80,7 +80,7 @@ EOP 會分析並封鎖使用標準電子郵件驗證方法與寄件者信譽技�
 
   ![Microsoft 合法密碼重設](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
-  這封郵件確實是來自 Microsoft，但使用者認為是可疑的。 因為分辨真實密碼重設郵件與假冒郵件有其難度，使用者會略過這些郵件、將它們回報為垃圾郵件或在不應該的情況下，將這些郵件當作網路釣魚回報給 Microsoft。
+  這封郵件確實是來自 Microsoft，但使用者認為是可疑的。因為分辨真實密碼重設郵件與假冒郵件的差異有其難度，使用者可能會略過這些郵件、將它們回報為垃圾郵件，或在不必要的情況下將這些郵件當作網路釣魚回報給 Microsoft。
 
 ## <a name="different-types-of-spoofing"></a>不同類型的詐騙
 
@@ -139,11 +139,11 @@ EOP 組織可以在 [安全性與合規性中心] 的 [報告] 儀表板中使�
 
 例如，Gabriela Laureano (glaureano@contoso.com) 對賞鳥有興趣，因此加入 birdwatchers@fabrikam.com 郵寄清單，並且將下列郵件傳送到清單：
 
-> **寄件者：**"Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件者：** 賞鳥的討論清單\<birdwatchers@fabrikam.com\> <br> **主旨：** 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 <p> 有人這週想要上雷尼爾山 賞景嗎？
+> **寄件者：**"Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件者：** 賞鳥的討論清單\<birdwatchers@fabrikam.com\> <br> **主旨：** 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 <p> 有任何人想要從雷尼爾山查看這週的檢視嗎？
 
 郵寄清單伺服器會接收郵件，修改其內容，並且對清單的成員重新播放。 重新播放的郵件具有相同的 [寄件者] 地址 (glaureano@contoso.com)，但是有標記新增至主旨行，頁尾新增至郵件底端。 這種類型的修改常見於郵寄清單中，且可能會導致詐騙的誤判。
 
-> **寄件者：**"Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件者：** 賞鳥的討論清單\<birdwatchers@fabrikam.com\> <br> **主旨：**[賞鳥人士] 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 <p> 有人這週想要上雷尼爾山 賞景嗎？ <p> 此郵件已傳送給「賞鳥人士」討論清單。 您隨時可以取消訂閱。
+> **寄件者：**"Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件者：** 賞鳥的討論清單\<birdwatchers@fabrikam.com\> <br> **主旨：**[賞鳥人士] 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 <p> 有任何人想要從雷尼爾山查看這週的檢視嗎？<p> 此郵件已傳送給「賞鳥人士」討論清單。 您隨時可以取消訂閱。
 
 為了協助郵寄清單郵件通過反詐騙檢查，請根據您是否控制郵寄清單來執行下列步驟：
 
@@ -163,7 +163,7 @@ EOP 組織可以在 [安全性與合規性中心] 的 [報告] 儀表板中使�
 
   - 在電子郵件用戶端中建立收件匣規則，將郵件移動至收件匣。 您也可以要求系統管理員設定覆寫，如[使用詐騙情報來設定未經驗證電子郵件的允許寄件者](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email)中所討論。
 
-  - 向 Microsoft 365 建立支援票證，以建立郵寄清單的覆寫，將其視為合法。 如需詳細資訊，請參閱[連絡商務產品的支援服務 - 系統管理說明](../../admin/contact-support-for-business-products.md)。
+  - 向 Microsoft 365 建立支援票證，以建立郵寄清單的覆寫，將其視為合法。 如需詳細資訊，請參閱[連絡商務產品的支援服務 - 系統管理說明](../../business-video/get-help-support.md)。
 
 如果其他所有項目都失敗，您可以將郵件當作誤判向 Microsoft 報告。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
