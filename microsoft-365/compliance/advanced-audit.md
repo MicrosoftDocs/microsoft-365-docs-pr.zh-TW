@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 3c91a388bc01a5531309b556a5a8532cb2efbaa6
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892904"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311733"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
 Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and-compliance.md)，可讓組織深入了解 Microsoft 365 中多種不同服務的多個類型的稽核活動。 進階稽核經由增加進行調查時所需的稽核記錄保留，提供對有助於判斷危害範圍重要事件的存取，以及快速存取 Office 365 管理活動 API，來幫助組織進行鑑定及合規性調查。
 
 > [!NOTE]
-> 進階稽核可供具有 Office 365 E5/G5 或 Microsoft 365 企業版 E5/G5 訂閱的組織使用。 此外，當進階稽核功能需要針對每位使用者進行授權時，您可以將 Microsoft 365 E5 合規性或 E5 電子文件探索和稽核附加元件授權指派給使用者，而針對稽核記錄和存取重要調查事件的長期保留也是如此。 如需有關授權的詳細資訊，請參閱 [Microsoft 365 安全性與合規性的授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
+> 進階稽核可供具有 Office 365 E5/A5/G5 或 Microsoft 365 企業版 E5/A5/G5 訂閱的組織使用。 此外，當 [進階稽核] 功能需要針對每位使用者進行授權時，您可以將 Microsoft 365 E5/A5/G5 合規性或 E5/A5/G5 電子文件探索和 [稽核] 附加元件授權指派給使用者，而針對稽核記錄和存取重要調查事件的長期保留也是如此。 如需授權的詳細資訊，請參閱：<br/>- [進階稽核授權需求](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
 本文概述了 [進階稽核] 功能，並向您展示了如何為 [進階稽核] 設定使用者。
 
@@ -131,9 +131,7 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
-> 您必須在 Exchange Online PowerShell 中執行下列命令，以便在稽核記錄搜尋結果中包含 SearchQueryInitiatedExchange 事件 (由指定的 E5 使用者執行)：`Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
-在多地理位置環境中，您必須在使用者信箱所在的樹系中執行 **Set-Mailbox** 命令。 若要識別使用者的信箱位置，請執行下列命令：`Get-Mailbox <user identity> | FL MailboxLocations`。
-如果 `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` 命令之前曾在與使用者信箱所在位置不同的樹系中執行，則您必須從使用者的信箱移除 SearchQueryInitiated 值 (透過執行 `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`)，然後將該命令新增至使用者信箱所在位置樹系中的使用者信箱中。
+> 您必須啟用要記錄的 SearchQueryInitiatedExchange，才能在稽核記錄中搜尋此事件。 如需指示，請參閱[設定進階稽核](set-up-advanced-audit.md#step-2-enable-crucial-events)。
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -156,47 +154,25 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
-> 您必須在 Exchange Online PowerShell 中執行下列命令，以便在稽核記錄搜尋結果中包含 SearchQueryInitiatedSharePoint 事件 (由指定的 E5 使用者執行)：`Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
-在多地理位置環境中，您必須在使用者信箱所在的樹系中執行 **Set-Mailbox** 命令。 若要識別使用者的信箱位置，請執行下列命令：`Get-Mailbox <user identity> | FL MailboxLocations`。
-如果 `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` 命令之前曾在與使用者信箱所在位置不同的樹系中執行，則您必須從使用者的信箱移除 SearchQueryInitiated 值 (透過執行 `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`)，然後將該命令新增至使用者信箱所在位置樹系中的使用者信箱中。
+> 您必須啟用要記錄的 SearchQueryInitiatedSharePoint，才能在稽核記錄中搜尋此事件。 如需指示，請參閱[設定進階稽核](set-up-advanced-audit.md#step-2-enable-crucial-events)。
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Office 365 管理活動 API 的高頻寬存取權
 
 透過 Office 365 管理活動 API 存取稽核記錄的組織，其節流限制會處於發行者層級。 這表示，針對代表多個客戶提取資料的發行者，此限制會由所有客戶所共用。
 
-隨著進階稽核的推出，我們會將發行者層級限制移至租用戶層級限制。 結果是每個組織都會獲得自己完整配置的頻寬配額，以存取其稽核資料。 頻寬不是靜態、預先定義的限制，但是會以一些要素的組合模組化，其中包括組織中的基座數量，以及 E5 組織可獲得較非 E5 組織更多的頻寬。
+隨著進階稽核的推出，我們會將發行者層級限制移至租用戶層級限制。 結果是每個組織都會獲得自己完整配置的頻寬配額，以存取其稽核資料。 頻寬不是靜態、預先定義的限制，但是會以一些要素的組合模組化，其中包括組織中的基座數量，而 E5/A5/G5 組織可獲得較非 E5/A5/G5 組織更多的頻寬。
 
-所有組織一開始都會配置每分鐘 2,000 個要求的基準。 視組織的基座數和授權訂閱而定，此限制將會動態增加。 E5 組織可獲得的頻寬大約可達到非 E5 組織的兩倍。 最大頻寬也會有上限，以保護服務的健康情況。
+所有組織一開始都會配置每分鐘 2,000 個要求的基準。 視組織的基座數和授權訂閱而定，此限制將會動態增加。 E5/A5/G5 組織可獲得的頻寬大約是非 E5/A5/G5 組織的兩倍。 最大頻寬也會有上限，以保護服務的健康情況。
 
 如需詳細資訊，請參閱 [Office 365 管理活動 API 參考](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)中的「API 節流」一節。
 
-## <a name="set-up-advanced-audit-for-users"></a>為使用者設置進階稽核
-
-進階稽核功能，如記錄重要事件 (如 MailItemsAccessed 和 Send) 功能，需要為使用者指派適當的 E5 授權。 此外，必須為這些使用者啟用 [進階稽核] 應用程式/服務方案。 要驗證 [進階稽核] 應用程式是否已指派給使用者，請對每個使用者執行以下步驟：
-
-1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/Adminportal)中，移至 **[使用者]** > **[作用中的使用者]**，然後選取使用者。
-
-2. 在 [使用者內容] 飛出頁面上，按一下 **[授權和應用程式]**。
-
-3. 在 **[授權]** 區段，驗證是否為使用者指派了 E5 授權。
-
-4. 展開 **[應用程式]** 區段，並驗證是否選中了 **[Microsoft 365 進階稽核]** 核取方塊。
-
-5. 如果沒有選取該核取方塊，請選取它，然後按一下 **[儲存變更]**。
-
-   將在 24 小時內開始記錄使用者的 MailItemsAccessed、Send 和其他重要事件的稽核記錄。
-
-針對使用以群組為基礎授權之指派授權至使用者群組的組織，請務必關閉該群組的 Microsoft 365 進階稽核授權指派。 儲存變更之後，請確認已關閉群組的 Microsoft 365 進階稽核。 然後重新開啟群組的授權指派。 如需以群組為基礎授權的相關指示，請參閱[在 Azure Active Directory 中以群組成員資格指派授權給使用者](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
-
-此外，如果您已自訂登入到使用者郵箱或共用郵箱的郵箱動作，則不會在這些郵箱上自動稽核新的預設郵箱動作 (如 MailItemsAccessed)。 有關變更為每個登入類型稽核的郵箱動作之資訊，請參閱[管理郵箱稽核](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)中的 [變更或還原預設記錄的郵箱動作] 一節。
-
 ## <a name="faqs-for-advanced-audit"></a>進階稽核的常見問題集
 
-**每位使用者是否需要 E5 授權才能使用進階稽核？**
+**每位使用者都需要 E5/A5/G5 授權才能使用進階稽核嗎？**
 
-若要使用使用者層級的進階稽核功能，使用者必須獲指派 E5 授權。 部分功能會檢查是否有適當授權，才會開放功能供使用者使用。 例如，如果您正嘗試保留使用者的稽核記錄，但該使用者在 90 天內未獲指派 E5 授權，系統將會傳回錯誤訊息。
+若要使用使用者層級的進階稽核功能，使用者必須獲派 E5/A5/G5 授權。 部分功能會檢查是否有適當授權，才會開放功能供使用者使用。 例如，如果您正嘗試保留使用者的稽核記錄，但該使用者在 90 天內未獲派適當授權，則系統將會傳回錯誤訊息。
 
-**我的組織擁有 E5 訂閱，我是否需要執行任何動作才能存取重要事件的稽核記錄？**
+**我的組織擁有 E5/A5/G5 訂閱，我是否需要執行任何動作才能存取重要事件的稽核記錄？**
 
 對於指派了適當授權的合格客戶和使用者，無需任何動作即可存取關鍵稽核事件。
 

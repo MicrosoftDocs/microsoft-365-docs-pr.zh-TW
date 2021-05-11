@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用 Microsoft 365 中的電子文件探索工具，在 Exchange 混合式部署中搜尋及匯出內部部署使用者的 Teams 聊天資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5053eb54b59d55c428290987bcc8b2a8ce26b5b
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: ab59c179b62903dd5f1ddd9b718f81a1ac78923a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471022"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311795"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜尋內部部署使用者的 Teams 聊天資料
 
@@ -40,7 +40,7 @@ ms.locfileid: "51471022"
 - 只有與內部部署使用者相關聯的 Teams 聊天資料，才會儲存在雲端式儲存空間。 內部部署使用者無法以任何方式存取此儲存區。
 
 > [!NOTE]
-> Teams 頻道交談一律會儲存在與團隊相關聯的雲端式信箱中，這表示您可以搜尋頻道交談。 如需有關搜尋 Teams 頻道交談的詳細資訊，請參閱[搜尋 Microsoft Teams 和 Microsoft 365 群組](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)。
+> Teams 頻道交談一律會儲存在與團隊相關聯的雲端式信箱中，這表示您可以搜尋頻道交談。 如需有關搜尋 Teams 頻道交談的詳細資訊，請參閱[搜尋 Microsoft Teams 和 Microsoft 365 群組](content-search-reference.md#searching-microsoft-teams-and-microsoft-365-groups)。
   
 ## <a name="how-it-works"></a>運作方式
 
@@ -56,11 +56,11 @@ ms.locfileid: "51471022"
 
 內容搜尋和 Microsoft 365 合規性中心中與核心電子文件探索案例相關聯的搜尋工具中的下列 UI 元素：
   
-- [為內部部署使用者新增 Office 應用程式內容 **]** 會顯示在內容搜尋中的 [位置 **]** 底下。 選取此核取方塊，以在內容搜尋中包括內部部署使用者的雲端式儲存空間。
+- [內容搜尋] 工具的 [位置] 精靈頁面上，預設會顯示和選取 [為內部部署使用者新增 App 內容] 核取方塊。 保持選取此核取方塊，以在內容搜尋中包括內部部署使用者的雲端式儲存空間。
 
-    ![[為內部部署使用者新增 Office App 內容] 核取方塊會新增到內容搜尋 UI](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![[為內部部署使用者新增 Office App 內容] 核取方塊會新增到內容搜尋 UI](../media/EHAMShardCheckBox.png)
   
-- 內部部署使用者會顯示在用於選取要搜尋的使用者信箱的內容位置選擇器中。
+- 當您選擇要搜尋的特定使用者時，您可以搜尋內部部署使用者。
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>搜尋內部部署使用者的 Teams 聊天內容
 
@@ -68,29 +68,25 @@ ms.locfileid: "51471022"
   
 1. 在 Microsoft 365 合規性中心，前往 [內容搜尋 **]**。
 
-2. 在 [搜尋 **]** 索引標籤上，按一下![新增圖示](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) [新增搜尋 **]**。
+2. 在 [搜尋] 索引標籤中，按一下 [新增搜尋]，然後命名新的搜尋。
 
-    如先前所述，**[為內部部署使用者新增 Office App 內容]** 核取方塊會顯示在 **[位置]** 底下。 此為預設選取的選項。
+3. 在 [位置] 頁面上，針對 Exchange 信箱將開關設定為 [開啟]。 請注意，預設會顯示並選取 [為內部部署使用者新增 App 內容]。
 
-3. 視需要建立關鍵字查詢，並將條件新增至搜尋查詢。 若只要搜尋 Team 聊天資料，您可以在 **[關鍵字]** 方塊中新增下列查詢：
+4. 若要搜尋特定使用者的 Teams 內容，選取 [選擇使用者、群組或團隊] 並選擇要納入搜尋的特定使用者。 否則，按一下 [下一步] 搜尋所有使用者(包括內部部署使用者) 的 Teams 內容
+
+5. 在 [定義搜尋條件] 頁面上，建立關鍵字查詢，並在必要時將條件新增到搜尋查詢。 若只要搜尋 Team 聊天資料，您可以在 [關鍵字] 方塊中新增下列查詢：
 
     ```text
     kind:im AND kind:microsoftteams
     ```
 
-4. 此時，您可以在 **[位置]** 底下選擇下列其中一個選項：
+6. 儲存並執行搜尋。 任何內部部署使用者的搜尋結果都可以像其他搜尋結果一樣預覽。 您也可以將搜尋結果 (包括任何 Teams 聊天資料) 匯出至 PST 檔案。 如需詳細資訊，請參閱：
 
-    - **所有位置：** 選取此選項以搜尋貴組織中所有使用者的信箱。 勾選此核取方塊時，系統也會搜尋內部部署使用者的 Teams 聊天資料的所有雲端式儲存體。
+    - [建立搜尋](content-search.md)
 
-    - **特定位置：** 勾選此選項，然後按一下 [修改 **]** \> 選擇使用者、群組或團隊來搜尋特定信箱。 如先前所述，位置選擇器可讓您搜尋內部部署使用者的 Teams 聊天資料。
+    - [預覽搜尋結果](preview-ediscovery-search-results.md)
 
-5. 儲存並執行搜尋。 任何內部部署使用者的搜尋結果都可以像其他搜尋結果一樣預覽。 您也可以將搜尋結果 (包括任何 Teams 聊天資料) 匯出至 PST 檔案。 如需詳細資訊，請參閱：
-
-    - [建立搜尋](content-search.md#create-a-search)
-
-    - [預覽搜尋結果](content-search.md#preview-search-results)
-
-    - [匯出內容搜尋結果](export-search-results.md)
+    - [匯出搜尋結果](export-search-results.md)
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>使用 PowerShell 來搜尋內部部署使用者的 Teams 聊天資料
 
@@ -106,13 +102,13 @@ ms.locfileid: "51471022"
 
     *IncludeUserAppContent* 參數是用於為 *ExchangeLocation* 參數指定的一位或多位使用者指定雲端式儲存體。 *AllowNotFoundExchangeLocationsEnabled* 能讓您為內部部署使用者搜尋雲端式儲存區。 使用此參數的 `$true` 值時，搜尋在執行前不會嘗試驗證信箱是否存在。 這是搜尋內部部署使用者的雲端式儲存區所需，因為此雲端式儲存區無法解析為一般的雲端式信箱。
 
-    下列範例會在 Sara Davis 的雲端式儲存體中搜尋包含關鍵字 "redstone" 的 Teams 聊天 (立即訊息)，Sara Davis 是 Contoso 組織的內部部署使用者。
+    下列範例會在 Sara Davis 的雲端式儲存空間中搜尋包含關鍵字 "redstone" 的 Teams 聊天，Sara Davis 是 Contoso 組織的內部部署使用者。
   
     ```powershell
-    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
+    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND (kind:im AND kind:microsoftteams)" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-   建立搜尋後，請務必使用 **Start-ComplianceSearch** Cmdlet 執行搜尋。 
+   建立搜尋後，請務必使用 **Start-ComplianceSearch** Cmdlet 執行搜尋。
   
 如需使用這些 Cmdlet 的相關資訊，請參閱：
   
@@ -134,11 +130,11 @@ ms.locfileid: "51471022"
   
  **電子郵件探索工具可以在針對所有組織預設啟用此功能的時間點之前，尋找內部部署使用者的較舊 Teams 聊天資料嗎？**
   
-Microsoft 於 2018 年 1 月 31 日開始儲存內部部署使用者的 Teams 聊天資料。 因此，如果內部部署 Teams 使用者的身分識別已在您的內部部署 Active Directory 和 Microsoft 365 中的 Azure Active Directory 之間同步，則自該日起，其 Teams 聊天資料會儲存在雲端，並可使用電子文件探索工具來搜尋。
+Microsoft 從 2018 年 1 月 31 日開始為內部部署使用者儲存 Teams 聊天資料。因此，如果內部部署 Teams 使用者的身分識別已在您的內部部署 Active Directory 和 Microsoft 365 中的 Azure Active Directory 之間同步，則自該日起，其 Teams 聊天資料會儲存在雲端，並可使用電子文件探索工具來搜尋。
 
  **內部部署使用者是否需要授權，才能在雲端中儲存其 Teams 聊天資料？**
   
-是。 若要在雲端式儲存體中儲存內部部署使用者的 Teams 聊天資料，必須在 Office 365 (或 Microsoft 365) 中為該使用者指派 Microsoft Teams 授權和 Exchange Online 方案授權。
+是。若要在雲端式儲存空間中儲存內部部署使用者的 Teams 聊天資料，必須在 Office 365 (或 Microsoft 365) 中為該使用者指派 Microsoft Teams 授權和 Exchange Online 方案授權。
 
 **內部部署使用者的雲端儲存區位在何處？**
   
@@ -146,7 +142,7 @@ Teams 交談資料會儲存在內部部署使用者的慣用資料位置 (PDL)�
 
 **如果使用者的內部部署信箱已移轉至雲端，是否有遺失 Teams 聊天資料的風險？**
   
-否。 將內部部署使用者的主要信箱移轉到雲端時，該使用者的 Teams 聊天資料就會移轉至新的雲端式主要信箱。
+否。將內部部署使用者的主要信箱移轉到雲端時，該使用者的 Teams 聊天資料就會移轉至新的雲端式主要信箱。
   
  **可以將電子文件探索保留或保留原則套用至內部部署使用者嗎？**
   
