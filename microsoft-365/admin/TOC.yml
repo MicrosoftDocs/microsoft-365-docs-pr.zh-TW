@@ -117,19 +117,19 @@
           items:
             - name: 概觀
               href: add-users/remove-former-employee.md
-            - name: 步驟 1. 防止員工登入並封鎖對 Microsoft 365 服務的存取
+            - name: 步驟 1. 禁止員工登入與存取 Microsoft 365 服務
               href: add-users/remove-former-employee-step-1.md
             - name: 步驟 2. 儲存離職員工信箱的內容
               href: add-users/remove-former-employee-step-2.md
             - name: 步驟 3. 將離職員工的電子郵件轉寄給另一個員工，或轉換為共用信箱
               href: add-users/remove-former-employee-step-3.md
-            - name: 步驟 4. 讓其他員工存取 OneDrive 和 Outlook 資料
+            - name: 步驟 4. 讓另一名員工存取 OneDrive 和 Outlook 資料
               href: add-users/remove-former-employee-step-4.md
             - name: 步驟 5. 抹除及封鎖離職員工的行動裝置
               href: add-users/remove-former-employee-step-5.md
             - name: 步驟 6. 移除離職員工的 Microsoft 365 授權
               href: add-users/remove-former-employee-step-6.md
-            - name: 步驟 7. 刪除離職員工的使用者帳戶
+            - name: 7. 刪除離職員工的使用者帳戶
               href: add-users/remove-former-employee-step-7.md
         - name: 群組
           items:
@@ -273,8 +273,6 @@
           href: manage/manage-office-scripts-settings.md
         - name: 尋找合作夥伴或轉銷商。
           href: manage/find-your-partner-or-reseller.md
-        - name: 管理 Microsoft Rewards
-          href: manage/manage-microsoft-rewards.md
         - name: 管理貴組織的 Microsoft 意見反應
           href: /admin/manage/manage-feedback-ms-org.md
         - name: 設定發行選項
@@ -422,4 +420,4 @@
     - name: 疑難排解
       href: /office/troubleshoot/
     - name: 連絡客戶支援
-      href: contact-support-for-business-products.md
+      href: ../business-video/get-help-support.md

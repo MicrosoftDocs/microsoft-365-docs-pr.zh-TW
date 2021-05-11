@@ -38,8 +38,14 @@
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 安全性中心概觀
           href: ../defender/overview-security-center.md
-        - name: 威脅總管 (及即時偵測)
-          href: threat-explorer.md
+        - name: 適用於 Office 365 的 Defender 威脅總管
+          items:
+            - name: 威脅總管中的威脅搜捕
+              href: threat-hunting-in-threat-explorer.md
+            - name: 使用威脅總管的電子郵件安全性
+              href: email-security-in-microsoft-defender.md
+            - name: 威脅總管與即時偵測基本概念
+              href: real-time-detections.md
         - name: 電子郵件實體頁面
           href: mdo-email-entity-page.md
         - name: AIR 概觀
@@ -188,6 +194,8 @@
           href: message-trace-scc.md
         - name: 回報訊息和檔案至 Microsoft。
           href: report-junk-email-messages-to-microsoft.md
+        - name: '啟用 [回報郵件] 和 [回報網路釣魚] 增益集'
+          href: enable-the-report-message-add-in.md
         - name: 在 EOP 中使用郵件流程規則來封鎖含有可執行附件的郵件
           href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
         - name: 在 EOP 中使用郵件流程規則來篩選大量電子郵件
