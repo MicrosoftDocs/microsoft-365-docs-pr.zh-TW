@@ -42,4 +42,4 @@
     - name: 報告 Microsoft Bookings 的資訊
       href: reporting-info.md
     - name: Microsoft Bookings 常見問題集 (FAQ)
-      href: bookings-faq.md
+      href: bookings-faq.yml
