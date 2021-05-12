@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71db42f4bd651f4e9d4236e1f4d794aeb99dfa9f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 48e45385fb138c19b76dc2d672566cf2ad0fb3cc
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862148"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327295"
 ---
 # <a name="supported-managed-security-service-providers"></a>支援的受管理安全性服務提供者
 
@@ -36,6 +36,7 @@ ms.locfileid: "51862148"
 
 標誌 |合作夥伴名稱   | 描述 
 :---|:---|:---
+![Aujas 標誌的影像](images/aujas-logo.png) | [Aujas managed MDE 服務](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas cybersecurity 透過其網路防禦中心，針對整個企業頻譜提供 24 * 7 受管理的安全性服務，使用 Microsoft Defender 端點。
 ![BDO 數位標誌的影像](images/bdo-logo.png)| [BDO 數位](https://go.microsoft.com/fwlink/?linkid=2090394) | BDO 數位的受管理防護利用最佳作法工具、AI 和內部安全性專家進行24/7/365 身分識別保護
 ![BlueVoyant 標誌的影像](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | Microsoft Defender for Endpoint 中的 MDR 可提供對端點的監控、調查及緩解高級攻擊的支援。
 ![雲端安全性中心標誌的影像](images/cloudsecuritycenter-logo.png)| [雲端安全性中心](https://go.microsoft.com/fwlink/?linkid=2099315) | InSpark 的雲端安全性中心是一個全天候受管理服務，可提供保護、偵測 & 回應功能
@@ -44,6 +45,7 @@ ms.locfileid: "51862148"
 ![戴爾技術高級威脅防護標誌的影像](images/dell-logo.png)| [Dell 技術高級威脅防護](https://go.microsoft.com/fwlink/?linkid=2091004) | 專業監控服務，針對惡意行為和具有24/7 功能的異常情況
 ![DXC-Managed 端點威脅偵測和回應標誌的影像](images/dxc-logo.png)| [DXC 管理的端點威脅偵測和回應](https://go.microsoft.com/fwlink/?linkid=2090395) | 識別避開傳統安全性防護的端點威脅，並將其包含數小時或數分鐘，而不是數天
 ![ESentire 記錄檔的影像](images/esentire-logo.png) | [eSentire 受管理的偵測和回應](https://go.microsoft.com/fwlink/?linkid=2154970) | 透過 Microsoft Defender for Endpoint 進行的全天候威脅調查和回應。
+![Expel 標誌的影像](images/expel-logo.png)| [Expel Microsoft Defender 端點的受管理偵測和回應](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel 可協助您偵測 Microsoft Defender 端點中的安全性風險，以協助您的安全性繼續。
 ![NTT 安全性標誌的影像](images/ntt-logo.png)| [NTT 安全性](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT 的 EDR 服務提供24/7 的安全性監視 & 每個端點和網路之間的回應
 ![OneVinn 標誌的影像](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24/7 Microsoft Defender 和 Azure Sentinel 上內置的 Managed 偵測和回應，已豐富 Onevinn 的威脅情報。
 ![仲裁網路標誌的影像](images/quorum-logo.png) | [仲裁網路](https://go.microsoft.com/fwlink/?linkid=2155202)| & 安全性工程服務的切削 edge 威脅搜尋。

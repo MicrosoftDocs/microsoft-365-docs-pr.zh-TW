@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55c22c9901f163fdf64e6148d5b2c19e51136bc1
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086800"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326615"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -89,7 +89,7 @@ iOS 版 Office 和 Android 版 Office：敏感度標籤內建於 [Office 應用�
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[讓使用者指派權限：<br /> - 不可轉寄](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[讓使用者指派權限：<br /> - 僅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ | 4.2112.0+  | 4.2112.0+ | 是 |
-|[要求使用者在電子郵件和文件中套用標籤](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 逐步推出：4.2111+            | 逐步推出：4.2111+                | 是                |
+|[要求使用者在電子郵件和文件中套用標籤](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | 是                |
 |[稽核標籤相關的使用者活動](data-classification-activity-explorer.md) | 2011+ | 審查中 | 審查中           | 審查中               | 審查中 |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 審查中           | 審查中               | 是 |
 |[預設標籤和強制標籤的不同設定](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 推出預覽版：[Beta 版通道](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | 是 |
@@ -134,7 +134,7 @@ Office 內建標籤用戶端會從下列系統管理中心下載敏感度標籤�
 | | | 
 
 
-使用群組原則或使用 [Office 雲端原則服務](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)來部署此設定。
+使用群組原則或使用 [Office 雲端原則服務](/DeployOffice/overview-office-cloud-policy-service)來部署此設定。
 
 > [!NOTE]
 > 如果您使用群組原則設定 [**在 Office 中使用敏感性功能以套用並檢視敏感性標籤**]，並且將這個選項設定為 [**1**]，有時候 Azure 資訊保護用戶端可能仍然會在 Office 應用程式中載入。 防止增益集在每個應用程式中載入，以防止發生這種情況。
@@ -391,7 +391,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 ### <a name="powershell-advanced-settings-outlookdefaultlabel-and-disablemandatoryinoutlook"></a>PowerShell 進階設定 OutlookDefaultLabel 和 DisableMandatoryInOutlook
 
-使用具有 *AdvancedSettings* 參數的 PowerShell，以及來自[安全性與合規性中心 PowerShell](/powershell/module/exchange/set-labelpolicy) 的 [Set-LabelPolicy](/powershell/module/exchange/new-labelpolicy) 和 [New-LabelPolicy](/powershell/exchange/scc-powershell) cmdlet 可以支援這些設定。 以前只有 Azure 資訊保護統一標籤用戶端支援這兩種進階設定，現在內建標籤支援這兩種設定。
+使用具有 *AdvancedSettings* 參數的 PowerShell，以及來自 [安全性與合規性中心 PowerShell](/powershell/module/exchange/set-labelpolicy) 的 [Set-LabelPolicy](/powershell/module/exchange/new-labelpolicy) 和 [New-LabelPolicy](/powershell/exchange/scc-powershell) cmdlet 可以支援這些設定。 以前只有 Azure 資訊保護統一標籤用戶端支援這兩種進階設定，現在內建標籤支援這兩種設定。
 
 PowerShell 範例，其中標籤原則命名為 **全域**：
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,22 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_NonTOC
 ms.custom:
 - TopSMBIssues
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
+- commerce_licensing
+search.appverid: MET150
 ROBOTS: NOINDEX
 description: 瞭解如何使用產品金鑰新增授權或擴充訂閱。
-ms.openlocfilehash: 15fac17df66b0c23e3188eff9acc2d8f617ca226
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.date: 04/07/2021
+ms.openlocfilehash: 890dcdcfdacf18d87a20ea000e2fab02d6f82192
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615145"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327139"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>新增授權或擴充使用產品金鑰支付的訂閱
 
@@ -40,18 +39,18 @@ ms.locfileid: "51615145"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[您的產品]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
 2. 在 [ **產品** ] 索引標籤上，選取您要新增授權的訂閱。
@@ -66,18 +65,18 @@ ms.locfileid: "51615145"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[您的產品]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
 2. 在 [ **產品** ] 索引標籤上，選取您要擴充的訂閱。

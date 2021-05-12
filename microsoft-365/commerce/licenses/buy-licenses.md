@@ -5,27 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_o365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
-description: 瞭解如何購買更多授權，或減少用於商務用 Microsoft 365 訂閱的授權數目。
-ms.date: ''
-ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+- commerce_licensing
+search.appverid: MET150
+description: 瞭解如何購買更多授權，或減少商務用 Microsoft 365 的授權數目。
+ms.date: 04/07/2021
+ms.openlocfilehash: 6603b49ed7af8b5213141d5c2434093c3af9540a
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615132"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327115"
 ---
 # <a name="buy-or-remove-licenses"></a>購買或移除授權
 
@@ -35,7 +36,7 @@ ms.locfileid: "51615132"
 
 - 您必須是全球或計費系統管理員，才可執行本文所述的工作。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 - 您可以 [同時新增使用者並指派授權](../../admin/add-users/add-users.md)。
-- 如果您透過協力廠商合作夥伴購買 Microsoft 365 for business 或 Office 365 企業版方案，您必須透過該合作夥伴購買額外的授權。
+- 如果您為商務用 Microsoft 365，或透過協力廠商合作夥伴購買 Office 365 企業版計畫，您必須透過該夥伴購買額外的授權。
 
 ## <a name="watch-buy-new-licenses"></a>觀賞：購買新的授權
 
@@ -53,18 +54,18 @@ ms.locfileid: "51615132"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[您的產品]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
 2. 在 [ **產品** ] 索引標籤上，尋找您要購買或移除授權的訂閱。 選取 [ **更多** (三點) 的動作，然後選取 [ **購買授權**]。 [如果看不到 [購買授權] 或 [移除授權] 按鈕，該怎麼辦？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -83,7 +84,7 @@ ms.locfileid: "51615132"
 |---------|---------|---------|
 |已擱置信用檢查。 |如果有暫止的信用檢查，您就無法購買或移除授權，直到完成信用檢查為止。  | 稍後再次查看，查看是否已完成信用檢查。 信用查核通常需要長達兩個工作天的時間才能完成。<br/>完成信用檢查後，您應該會看到 [ **購買授權** ] 和 [ **移除授權** ] 按鈕。 |
 |您使用產品金鑰來啟用訂閱。| 如果使用25個字元的產品金鑰購買及啟用訂閱，您會在 [**產品**] 頁面的 [**購買管道**] 欄中看到 [預付] 一字。  |請參閱 [將授權新增至使用產品金鑰支付的訂閱](add-licenses-using-product-key.md)。 |
-|您已透過轉銷商購買訂閱。| 您會在 [**產品**] 頁面的 [**購買管道**] 欄中看到「轉銷商」一詞。 | 若訂閱是透過雲端方案提供者購買 (CSP) 合作夥伴，請與您的 CSP 夥伴聯繫，以購買更多授權。        |
+|您已透過轉銷商購買訂閱。| 您會在 [**產品**] 頁面的 [**購買管道**] 欄中看到「轉銷商」一詞。 | 如果已透過雲端解決方案提供者 (csp) 合作夥伴購買訂閱，請與您的 CSP 合作夥伴聯繫，以購買更多授權。        |
 |您有試用版訂閱。 | 若要查看您的試用訂閱，請選取 [篩選] 按鈕，然後選擇 [ **試用**]。 | 先購買您的試用訂閱，即可購買更多授權。|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>何時可以指派新的授權？

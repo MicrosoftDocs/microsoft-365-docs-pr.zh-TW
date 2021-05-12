@@ -1,5 +1,5 @@
 ---
-title: 自訂受控資料夾存取
+title: 自訂受控資料夾存取權
 description: 新增其他應受「受控制的資料夾存取」保護的資料夾，或是允許未正確封鎖對重要檔案所做變更的應用程式。
 keywords: 可控資料夾存取，windows 10，windows defender，勒索軟體，保護，檔案，資料夾，自訂，新增資料夾，新增應用程式，允許，新增可執行檔
 search.product: eADQiWindows 10XVcnh
@@ -12,28 +12,26 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 03/24/2021
+ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 0962913df63e6837664cdb8ff79710d66e66977c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e12368b6241a2c79eead66ed77b30b7864af3955
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199900"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326522"
 ---
-# <a name="customize-controlled-folder-access"></a>自訂受控資料夾存取
+# <a name="customize-controlled-folder-access"></a>自訂受控資料夾存取權
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-
-受控制的資料夾存取可協助您保護寶貴的資料，避免惡意應用程式和威脅（如勒索軟體）。 Windows Server 2019 和 Windows 10 用戶端支援受控資料夾存取。
-
-本文說明如何自訂受管理的資料夾存取功能，並包含下列各節：
+受控制的資料夾存取可協助您保護寶貴的資料，避免惡意應用程式和威脅（如勒索軟體）。 Windows Server 2019 和 Windows 10 用戶端支援受控資料夾存取。 本文說明如何自訂受管理的資料夾存取功能，並包含下列各節：
 
 - [保護其他資料夾](#protect-additional-folders)
 - [新增應允許存取受保護的資料夾的應用程式](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -47,15 +45,15 @@ ms.locfileid: "51199900"
 
 「受管理的資料夾存取」會套用至許多系統資料夾及預設位置，包括 **檔**、 **圖片** 和 **影片** 等資料夾。 您可以新增其他受保護的資料夾，但您無法移除預設清單中的預設資料夾。
 
-將其他資料夾新增至控制的資料夾存取可在您未將檔案儲存在預設的 Windows 文件庫中時有用，或您已變更文件庫的預設位置。
+將其他資料夾新增至 [受管理的資料夾存取] 在您未將檔案儲存在預設的 Windows 文件庫中時，或已變更文件庫的預設位置時，可能會很有説明。
 
-您也可以指定網路共用和對應的磁片磁碟機。 支援環境變數和萬用字元。 如需使用萬用字元的詳細資訊，請參閱 [在檔案名和資料夾路徑或副檔名排除清單中使用萬用字元](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)。
+您也可以指定網路共用和對應的磁片磁碟機。 支援環境變數和萬用字元。 如需使用萬用字元的詳細資訊，請參閱 [在檔案名和資料夾路徑或副檔名排除清單中使用萬用字元](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
-您可以使用 Windows 安全性應用程式、群組原則、PowerShell Cmdlet 或行動裝置管理設定服務提供者，新增及移除其他受保護的資料夾。
+您可以使用 Windows 安全性應用程式、群組原則、PowerShell Cmdlet 或行動裝置管理設定服務提供者來新增及移除受保護的資料夾。
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>使用 Windows 安全性應用程式來保護其他資料夾
 
-1. 選取工作列中的盾牌圖示，或搜尋 [ **安全性**] 的 [開始] 功能表，以開啟 [Windows 安全性] 應用程式。
+1. 在工作列上選取盾牌圖示，或是在 [開始] 功能表中搜尋 *安全性*，以開啟 Windows 安全性應用程式。
 
 2. 選取 [ **病毒 & 威脅防護**]，然後向下滾動至 [ **勒索軟體防護** ] 區段。
 
@@ -65,52 +63,56 @@ ms.locfileid: "51199900"
 
 5. 在 [**使用者存取控制** 提示] 上選擇 [**是]** 。 [ **受保護的資料夾** ] 窗格隨即顯示。
 
-4. 選取 [ **新增受保護的資料夾** ]，然後依照提示新增資料夾。
+6. 選取 [ **新增受保護的資料夾** ]，然後依照提示新增資料夾。
 
 ### <a name="use-group-policy-to-protect-additional-folders"></a>使用群組原則來保護其他資料夾
 
-1. 在您的群組原則管理電腦上，開啟 [ [群組原則管理主控台](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)]，以滑鼠右鍵按一下您要設定的群組原則物件，然後選取 [ **編輯**]。
+1. 在您的群組原則管理電腦，開啟 [群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)。 
 
-2. 在 [**群組原則管理編輯器**] 中，移至 [電腦設定]，然後選取 [**系統****管理範本**]。
+2. 以滑鼠右鍵按一下您要設定的群組原則物件，然後選取 [ **編輯**]。
 
-3. 將樹狀目錄展開為 **windows 元件**  >  **Microsoft defender 防病毒**  >  **Windows defender exploit Guard**  >  **可控的資料夾存取**。
+3. 在您的 **群組原則管理編輯器** 中，移至 [**電腦** 設定原則] 「  >    >  **管理範本**」。
 
-4. 按兩下 [ **已設定受保護的資料夾** ]，然後將選項設定為 [ **啟用**]。 選取 [ **顯示** ]，然後輸入每一個資料夾。
+4. 展開樹狀目錄， **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **Windows Defender Exploit Guard**  >  **控制的資料夾存取**。 <br/>**附注**：在舊版的 Windows 中，您可能會看到 **Windows Defender 防毒軟體** 而非 **Microsoft Defender 防毒軟體**。
+
+5. 按兩下 [ **已設定受保護的資料夾**]，然後將選項設定為 [ **啟用**]。 選取 [ **顯示**]，然後指定每個要保護的資料夾。
+
+6. 像往常一樣部署您的群組原則物件。
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>使用 PowerShell 來保護其他資料夾
 
-1. 在 [開始] 功能表中輸入 **PowerShell** ，在 [ **Windows PowerShell** 上按一下滑鼠右鍵，然後選取 [以 **管理員身分執行**]
+1. 在 [開始] 功能表中輸入 **PowerShell** ，在 **Windows PowerShell** 上按一下滑鼠右鍵，然後選取 [以 **系統管理員身分執行**]
 
-2. 輸入下列 Cmdlet：
+2. 輸入下列 PowerShell Cmdlet， `<the folder to be protected>` 並以資料夾路徑取代 (`"c:\apps\"`) ：
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessProtectedFolders "<the folder to be protected>"
     ```
-3. 重複步驟2，直到您新增所有要保護的資料夾。 新增的資料夾會顯示在 Windows 安全性應用程式中。
+3. 針對每個要保護的資料夾重複步驟2。 受保護的資料夾在 Windows 安全性應用程式中是可見的。
 
-   ![具有上一個已輸入 Cmdlet 的 PowerShell 視窗的螢幕擷取畫面](/microsoft-365/security/defender-endpoint/images/cfa-allow-folder-ps)
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="顯示 Cmdlet 的 PowerShell 視窗":::
 
 > [!IMPORTANT]
-> 用於 `Add-MpPreference` 附加或新增應用程式至清單。 使用此 `Set-MpPreference` Cmdlet 將會覆寫現有清單。
+> 用於 `Add-MpPreference` 在清單中附加或新增應用程式 `Set-MpPreference` 。 使用此 `Set-MpPreference` Cmdlet 將會覆寫現有清單。
 
 ### <a name="use-mdm-csps-to-protect-additional-folders"></a>使用 MDM Csp 來保護其他資料夾
 
-使用 [/Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-guardedfolderslist) configuration service PROVIDER (CSP) 以允許應用程式變更受保護的資料夾。
+使用 [/Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](/windows/client-management/mdm/policy-csp-defender#defender-guardedfolderslist) configuration service PROVIDER (CSP) 以允許應用程式變更受保護的資料夾。
 
 ## <a name="allow-specific-apps-to-make-changes-to-controlled-folders"></a>允許特定的應用程式變更受管理的資料夾
 
 您可以指定某些應用程式是否一定會被視為安全，並對受保護的資料夾中的檔案提供寫入存取權。 如果您知道和信任的特定應用程式被受控資料夾存取功能封鎖，則允許應用程式會非常有用。
 
 > [!IMPORTANT]
-> 依預設，Windows 會將視為友好的應用程式新增至允許的清單。 [！注意] [Windows 安全性應用程式] 或 [使用關聯的 PowerShell Cmdlet] 中所顯示的清單中，會自動新增這類應用程式。 您不需要新增大多數的應用程式。 僅新增應用程式（若已被封鎖，您可以驗證其可信度）。
+> 根據預設，Windows 會將視為友好的應用程式新增至允許的清單。 這類應用程式會自動新增，不會記錄在 Windows 安全性應用程式或使用相關 PowerShell Cmdlet 所顯示的清單中。 您不需要新增大多數的應用程式。 僅新增應用程式（若已被封鎖，您可以驗證其可信度）。
 
-當您新增應用程式時，您必須指定應用程式的位置。 只有該位置中的應用程式才能存取受保護的資料夾。 如果使用相同名稱的應用程式 () 位於不同的位置，則不會將它新增至允許清單，而且可能會被「受控制的資料夾存取」封鎖。
+當您新增應用程式時，您必須指定應用程式的位置。 只有該位置中的應用程式才能存取受保護的資料夾。 如果使用相同名稱的應用程式 () 位於不同的位置，則不會將它新增至 allowlist，也不會被受控資料夾存取權封鎖。
 
 在啟動後，允許的應用程式或服務只具有受管理的資料夾的寫入權限。 例如，更新服務會在允許事件後繼續觸發事件，直到它停止並重新啟動為止。
 
-### <a name="use-the-windows-defender-security-app-to-allow-specific-apps"></a>使用 Windows Defender 安全性應用程式來允許特定的應用程式
+### <a name="use-the-windows-defender-security-app-to-allow-specific-apps"></a>使用 Windows Defender 的安全性應用程式來允許特定的應用程式
 
-1. 在 [ **安全性**] 的 [開始] 功能表上搜尋，以開啟 [Windows 安全性] 應用程式。
+1. 在 [**安全性**] 的 [開始] 功能表上搜尋，以開啟 Windows 安全性應用程式。
 
 2. 在左功能表列上選取 [ **病毒 & 威脅防護** 磚 (] 或 [盾牌] 圖示) 然後選取 [ **管理勒索軟體防護**]。
 
@@ -122,17 +124,17 @@ ms.locfileid: "51199900"
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>使用群組原則允許特定的應用程式
 
-1. 在您的群組原則管理裝置上，開啟 [ [群組原則管理主控台](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)]，以滑鼠右鍵按一下您要設定的群組原則物件，然後選取 [ **編輯**]。
+1. 在您的群組原則管理裝置上，開啟 [ [群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)]，以滑鼠右鍵按一下您要設定的群組原則物件，然後選取 [ **編輯**]。
 
-2. 在 [**群組原則管理編輯器**] 中，移至 [電腦設定]，然後選取 [**系統****管理範本**]。
+2. 在 **[群組原則管理編輯器]** 中，移至 **[電腦設定]** 然後選取 **[系統管理範本]**。
 
-3. 將樹狀目錄展開為 **windows 元件**  >  **Microsoft defender 防病毒**  >  **Windows defender exploit Guard**  >  **可控的資料夾存取**。
+3. 展開樹狀目錄， **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **Windows Defender Exploit Guard**  >  **控制的資料夾存取**。
 
 4. 按兩下 [ **設定允許的應用程式** ] 設定，並將選項設定為 [ **啟用**]。 選取 [ **顯示** ]，然後輸入每個應用程式。
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>使用 PowerShell 允許特定的應用程式
 
-1. 在 [開始] 功能表中輸入 **PowerShell** ，在 [ **Windows PowerShell** 上按一下滑鼠右鍵，然後選取 [以 **管理員身分執行**]
+1. 在 [開始] 功能表中輸入 **PowerShell** ，在 **Windows PowerShell** 上按一下滑鼠右鍵，然後選取 [以 **系統管理員身分執行**]
 2. 輸入下列 Cmdlet：
 
     ```PowerShell
@@ -145,7 +147,7 @@ ms.locfileid: "51199900"
     Add-MpPreference -ControlledFolderAccessAllowedApplications "c:\apps\test.exe"
     ```
 
-   繼續使用將 `Add-MpPreference -ControlledFolderAccessAllowedApplications` 更多應用程式新增至清單。 使用此 Cmdlet 新增的應用程式會出現在 Windows 安全應用程式中。
+   繼續使用將 `Add-MpPreference -ControlledFolderAccessAllowedApplications` 更多應用程式新增至清單。 使用此 Cmdlet 新增的應用程式會出現在 Windows 安全性應用程式中。
 
    :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="允許應用程式的 PowerShell Cmdlet":::
 
@@ -154,21 +156,21 @@ ms.locfileid: "51199900"
 
 ### <a name="use-mdm-csps-to-allow-specific-apps"></a>使用 MDM Csp 以允許特定的應用程式
 
-使用 [/Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) configuration service PROVIDER (CSP) 以允許應用程式變更受保護的資料夾。
+使用 [/Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) configuration service PROVIDER (CSP) 以允許應用程式變更受保護的資料夾。
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>允許簽署的可執行檔存取受保護的資料夾
 
-Microsoft Defender for Endpoint 憑證和檔指示器可允許簽署的可執行檔存取受保護的資料夾。 如需有關執行的詳細資訊，請參閱 [建立以憑證為基礎的指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates)。
+Microsoft Defender for Endpoint 憑證和檔指示器可允許簽署的可執行檔存取受保護的資料夾。 如需有關執行的詳細資訊，請參閱 [建立以憑證為基礎的指示器](indicator-certificates.md)。
 
 > [!Note]
 > 這不會套用至腳本掃描引擎，包括 Powershell
 
 ## <a name="customize-the-notification"></a>自訂通知
 
-如需在觸發規則時自訂通知並封鎖應用程式或檔案的詳細資訊，請參閱 [在 Microsoft Defender For Endpoint 中設定警示通知](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-email-notifications)。
+如需在觸發規則時自訂通知並封鎖應用程式或檔案的詳細資訊，請參閱 [在 Microsoft Defender For Endpoint 中設定警示通知](configure-email-notifications.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用受控資料夾存取權來保護重要資料夾](controlled-folders.md)
 - [啟用受控資料夾存取權](enable-controlled-folders.md)
-- [評估攻擊面減少規則](evaluate-attack-surface-reduction.md)
+- [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)

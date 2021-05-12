@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 63c870c5682e963e6ab29160218c7405cabb0838
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1bca1cf32bc92a7c19be8d36d03166fd121c0295
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935542"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327631"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>從 Symantec 遷移-階段3：板載至 Microsoft Defender for Endpoint
 
@@ -59,11 +59,11 @@ ms.locfileid: "51935542"
 
 |作業系統  |方法  |
 |---------|---------|
-|Windows 10     |- [群組原則](configure-endpoints-gp.md)<br/>- [Configuration Manager](configure-endpoints-sccm.md)<br/>- [Mobile Device Management (Intune) ](configure-endpoints-mdm.md)<br/>- [本機腳本](configure-endpoints-script.md) <br/><br/>**附注**：本機腳本適用于概念證明，但不適用於實際執行部署。 在實際執行部署中，我們建議使用群組原則、Microsoft 端點設定管理員或 Intune。         |
-|-Windows 8.1 企業版 <br/>-Windows 8.1 Pro <br/>-Windows 7 SP1 企業版 <br/>-Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)<br/><br/>**附注**： Microsoft Monitoring Agent 現在是 Azure 記錄分析代理程式。 若要深入瞭解，請參閱 [Log Analytics agent 一覽](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent)。        |
-|-Windows Server 2019 和更新版本 <br/>-Windows Server 2019 core edition <br/>-Windows Server 版本1803和更新版本 |- [本機腳本](configure-endpoints-script.md) <br/>- [群組原則](configure-endpoints-gp.md) <br/>- [Configuration Manager](/configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)<br/>- [非持久性裝置的 VDI 上架腳本](configure-endpoints-vdi.md) <br/><br/>**附注**：本機腳本適用于概念證明，但不適用於實際執行部署。 在實際執行部署中，我們建議使用群組原則、Microsoft 端點設定管理員或 Intune。    |
-|-Windows Server 2016 <br/>-Windows Server 2012 R2 <br/>-Windows Server 2008 R2 SP1  |- [Microsoft Defender 安全中心](configure-server-endpoints.md)<br/>- [Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
-|macOS<br/>-10.15 (Catalina) <br/>-10.14 (Mojave) <br/>-10.13 (高塞拉里昂) <br/><br/>iOS<br/><br/>Linux：<br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |[將非 Windows 裝置上線](configure-endpoints-non-windows.md)  |
+|Windows 10     |- [群組原則](configure-endpoints-gp.md)<br/>- [Configuration Manager](configure-endpoints-sccm.md)<br/>- [Mobile Device Management (Intune) ](configure-endpoints-mdm.md)<br/>- [本機腳本](configure-endpoints-script.md) <p>**附注**：本機腳本適用于概念證明，但不適用於實際執行部署。 在實際執行部署中，我們建議使用群組原則、Microsoft 端點設定管理員或 Intune。         |
+|-Windows 8.1 企業版 <br/>-Windows 8.1 Pro <br/>-Windows 7 SP1 企業版 <br/>-Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)<p>**附注**： Microsoft Monitoring Agent 現在是 Azure 記錄分析代理程式。 若要深入瞭解，請參閱 [Log Analytics agent 一覽](/azure/azure-monitor/platform/log-analytics-agent)。        |
+|-Windows Server 2019 和更新版本 <br/>-Windows Server 2019 core edition <br/>-Windows Server 版本1803和更新版本 |- [本機腳本](configure-endpoints-script.md) <br/>- [群組原則](configure-endpoints-gp.md) <br/>- [Configuration Manager](configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)<br/>- [非持久性裝置的 VDI 上架腳本](configure-endpoints-vdi.md) <p>**附注**：本機腳本適用于概念證明，但不適用於實際執行部署。 在實際執行部署中，我們建議使用群組原則、Microsoft 端點設定管理員或 Intune。    |
+|-Windows Server 2016 <br/>-Windows Server 2012 R2 <br/>-Windows Server 2008 R2 SP1  |- [Microsoft Defender 安全中心](configure-server-endpoints.md)<br/>- [Azure Defender](/azure/security-center/security-center-wdatp) |
+|macOS<br/>-10.15 (Catalina) <br/>-10.14 (Mojave) <br/>-10.13 (高塞拉里昂) <p>iOS<p>Linux：<br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |[將非 Windows 裝置上線](configure-endpoints-non-windows.md)  |
 
 ## <a name="run-a-detection-test"></a>執行偵測測試
 
@@ -71,9 +71,9 @@ ms.locfileid: "51935542"
 
 |作業系統  |指導方針  |
 |---------|---------|
-|-Windows 10 <br/>-Windows Server 2019 <br/>-Windows Server，版本1803 <br/>-Windows Server 2016 <br/>-Windows Server 2012 R2     |請參閱 [執行偵測測試](run-detection-test.md)。 <br/><br/>流覽 Microsoft Defender for Endpoint 示範案例網站 ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) 並嘗試一或多個案例。 例如，嘗試 **雲端提供的保護** 示範案例。         |
-|macOS<br/>-10.15 (Catalina) <br/>-10.14 (Mojave) <br/>-10.13 (高塞拉里昂)      |下載並使用 DIY 應用程式 [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <br/><br/>如需詳細資訊，請參閱 [macOS 上的 Microsoft Defender For Endpoint](microsoft-defender-endpoint-mac.md)。        |
-|Linux：<br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |1. 執行下列命令，並尋找 **1** 的結果： <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. 開啟終端視窗，並執行下列命令： <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. 執行下列命令，列出任何偵測到的威脅： <br/>`mdatp threat list`. <br/><br/>如需詳細資訊，請參閱 [Linux 上的 Microsoft Defender For Endpoint](microsoft-defender-endpoint-linux.md)。 |
+|-Windows 10 <br/>-Windows Server 2019 <br/>-Windows Server，版本1803 <br/>-Windows Server 2016 <br/>-Windows Server 2012 R2     |請參閱 [執行偵測測試](run-detection-test.md)。 <p>流覽 Microsoft Defender for Endpoint 示範案例網站 ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) 並嘗試一或多個案例。 例如，嘗試 **雲端提供的保護** 示範案例。         |
+|macOS<br/>-11.3.1 (大型 Sur) <br/>-10.15 (Catalina) <br/>-10.14 (Mojave)      |下載並使用 DIY 應用程式 [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <p>如需詳細資訊，請參閱 [macOS 上的 Microsoft Defender For Endpoint](microsoft-defender-endpoint-mac.md)。        |
+|Linux：<br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |1. 執行下列命令，並尋找 **1** 的結果： <br/>`mdatp health --field real_time_protection_enabled`. <p>2. 開啟終端視窗，並執行下列命令： <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. 執行下列命令，列出任何偵測到的威脅： <br/>`mdatp threat list`. <p>如需詳細資訊，請參閱 [Linux 上的 Microsoft Defender For Endpoint](microsoft-defender-endpoint-linux.md)。 |
 
 ## <a name="uninstall-symantec"></a>卸載 Symantec
 
@@ -87,13 +87,13 @@ ms.locfileid: "51935542"
    4. 以滑鼠右鍵按一下專案，然後選擇 [ **刪除**]。 
 3. 從您的裝置移除 Symantec。 如需相關資訊，請參閱 Broadcom 的檔。 以下是一些 Broadcom 資源： 
    - [卸載 Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
-   - Windows 裝置： [手動卸載 windows 上的 Endpoint Protection 14 用戶端](https://knowledge.broadcom.com/external/article?articleId=170040)
+   - Windows 裝置：[手動卸載 Windows 上的 Endpoint Protection 14 用戶端](https://knowledge.broadcom.com/external/article?articleId=170040)
    - macOS 電腦： [使用 RemoveSymantecMacFiles 移除 Mac 版 Symantec 軟體](https://knowledge.broadcom.com/external/article?articleId=151387)
-   - Linux 裝置： [在 Linux 上進行 Endpoint Protection 的常見問題](https://knowledge.broadcom.com/external/article?articleId=162054)
+   - linux 裝置：[在 Linux 上的 Endpoint Protection 常見問題](https://knowledge.broadcom.com/external/article?articleId=162054)
 
 ## <a name="make-sure-microsoft-defender-for-endpoint-is-in-active-mode"></a>確定 Microsoft Defender for Endpoint 處於主動模式
 
-現在，您已卸載 Symantec 後，下一步是確定已啟用 Microsoft Defender 防病毒和 Microsoft Defender for Endpoint，並以主動模式進行。
+現在，您已卸載 Symantec，下一個步驟是確定已啟用 Microsoft Defender 防毒軟體和 Microsoft Defender for Endpoint，並以主動模式。
 
 若要這麼做，請造訪 Microsoft Defender for Endpoint 示範案例網站 ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) 。 請在該頁面上嘗試一或多個示範案例，至少包括下列專案：
 - 雲端提供的保護
@@ -101,10 +101,10 @@ ms.locfileid: "51935542"
 - 網路保護 (NP) 
 
 > [!IMPORTANT]
-> 如果您使用的是 Windows Server 2016，您可能需要手動啟動 Microsoft Defender 防病毒。 您可以使用裝置上的 PowerShell Cmdlet 來執行此動作 `mpcmdrun.exe -wdenable` 。
+> 如果您使用 Windows Server 2016，您可能必須手動啟動 Microsoft Defender 防毒軟體。 您可以使用裝置上的 PowerShell Cmdlet 來執行此動作 `mpcmdrun.exe -wdenable` 。
 
 ## <a name="next-steps"></a>後續步驟
 
 **恭喜**！ 您已完成 [從 Symantec 遷移至 Microsoft Defender For Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)！ 
-- 請造訪 Microsoft Defender Security Center () 中的[安全性作業儀表板](security-operations-dashboard.md) [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 
+- 請造訪 Microsoft Defender 資訊安全中心 () 中的[安全性作業儀表板](security-operations-dashboard.md) [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 
 - [管理 Microsoft Defender For Endpoint，後期遷移](manage-atp-post-migration.md)。

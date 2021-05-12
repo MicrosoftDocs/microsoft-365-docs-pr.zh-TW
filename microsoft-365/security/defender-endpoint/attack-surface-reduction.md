@@ -16,21 +16,22 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 461bc7c8d4d8d5c9bb8c905f3b160d0af226b077
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 56ab6c6c11bd2c0786c0d797e5302a1f06f9bd53
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023222"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327255"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
-- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+- [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>攻擊面減少規則為何很重要
 
@@ -138,7 +139,7 @@ DeviceEvents
 2. 在 [開始] 功能表中輸入文字 [ *事件查看* 器]，以開啟 Windows 事件檢視器。
 3. 在 [ **動作**] 下，選取 [匯 **入自訂視圖 ...**]。
 4. 從解壓縮的位置選取檔案 *cfa-events.xml* 。 或者， [直接複製 XML](event-views.md)。
-5. 選取 [確定]。
+5. 選取 **[確定]**。
 
 您可以建立篩選事件只顯示下列事件的自訂視圖，這些事件都與「受控資料夾存取」有關：
 
@@ -159,6 +160,7 @@ DeviceEvents
 
 |規則名稱|GUID|File & 資料夾排除|支援的最低作業系統|
 |---|:---:|---|---|
+|[封鎖濫用的漏洞簽章驅動程式](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|支援|[Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
 |[封鎖 Adobe Reader，以建立子流程](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[封鎖所有 Office 應用程式以建立子流程](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[從 Windows local security 機關子系統封鎖認證竊取 (lsass.exe) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
@@ -175,6 +177,33 @@ DeviceEvents
 |[封鎖 Office 宏的 WIN32 API 呼叫](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[使用勒索軟體的高級防護](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |
+
+### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>封鎖濫用的漏洞簽章驅動程式
+
+此規則可防止應用程式將有漏洞的簽署驅動程式寫入磁片。 實際上， \- _具有足夠許可權_ \- 才能存取內核的本機應用程式可以利用有漏洞的已簽署驅動程式。 有漏洞的簽章驅動程式可讓攻擊者停用或規避安全性解決方案，最後導致系統受損。
+
+此規則不會封鎖已存在於已在系統上載入的驅動程式。
+
+所有支援 ASR 的版本都支援此規則;如下：
+
+- [Windows 10 專業版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
+- [Windows 10 企業版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
+- [Windows Server，版本 1803 (半年通道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 或更新版本
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+Intune 名稱： `Block abuse of exploited vulnerable signed drivers`
+
+GUID:：  `56a863a9-875e-4185-98a7-b882c64b5ce5`
+
+請參閱 [Microsoft 端點管理員自訂](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) 程式的記憶體自訂規則程式資訊。
+
+您可以在命令列中執行下列命令，以啟用 ASR 規則：
+
+```powershell
+"& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+```
+
+您可以使用此網站 [提交分析的驅動程式](https://www.microsoft.com/en-us/wdsi/driversubmission)。
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>封鎖 Adobe Reader，以建立子流程
 
@@ -225,7 +254,7 @@ LSASS 驗證在 Windows 電腦上登入的使用者。 Windows 10 中的 Microso
 此規則的引入時間：
 
 - [Windows 10，版本1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -237,21 +266,21 @@ GUID:： `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>從電子郵件客戶程式和 web 郵件封鎖可執行檔內容
 
-此規則會封鎖下列檔案類型：從 Microsoft Outlook 應用程式內開啟的電子郵件，或 Outlook.com 及其他常用的電子郵件提供者進行啟動：
+此規則會封鎖下列檔案類型，以從 Microsoft Outlook 應用程式內開啟的電子郵件，或 Outlook .com 和其他流行的 web 郵件提供者來啟動：
 
 - 可執行檔 (例如 .exe、.dll 或 .scr) 
-- 腳本檔案 (例如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js 檔案) 
+- 腳本檔案 (例如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js 檔) 
 
 此規則的引入時間：
 
 - [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Microsoft 端點管理員 CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Microsoft 端點管理員CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft 端點管理員名稱： `Block executable content from email client and webmail`
+Microsoft 端點管理員名稱：`Block executable content from email client and webmail`
 
 GUID:： `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
@@ -259,7 +288,7 @@ GUID:： `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 > **從電子郵件客戶程式和 web 郵件封鎖可執行檔內容**，具有下列替代描述（取決於您所使用的應用程式）：
 >
 > - Intune (設定檔) ：執行可執行檔內容 (exe、dll、ps、js、vbs 等 ) 從電子郵件 (郵件) web 郵件用戶端 () 沒有例外。
-> - 端點管理員：封鎖電子郵件和電子郵件用戶端的可執行內容下載。
+> - 端點管理員：封鎖電子郵件和郵件傳送用戶端的可執行內容下載。
 > - 群組原則：從電子郵件客戶程式和 web 郵件封鎖可執行檔內容。
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>封鎖可執行檔，除非符合流行、age 或受信任的清單準則
@@ -280,7 +309,7 @@ GUID:： `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 此規則的引入時間：
 
 - [Windows 10，版本1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -299,7 +328,7 @@ GUID:： `01443614-cd74-433a-b99e-2ecdc07bfc25`
 此規則的引入時間：
 
 - [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -318,7 +347,7 @@ GUID:： `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 此規則的引入時間：
 
 - [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -330,16 +359,16 @@ GUID:： `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>封鎖 Office 應用程式建立可執行檔內容
 
-此規則可防止 Office 應用程式（包括 Word、Excel 及 PowerPoint）建立潛在的惡意可執行檔內容，方法是封鎖惡意程式碼，使其無法寫入磁片。
+此規則可防止 Office 的應用程式（包括 Word、Excel 及 PowerPoint）從建立潛在的惡意可執行檔內容，封鎖惡意程式碼寫入磁片。
 
-濫用 Office 視為向量的惡意程式碼可能會嘗試中斷 Office，並將惡意元件儲存至磁片。 這些惡意元件會在電腦重新開機後，在系統上持續保存下來。 因此，此規則會防禦一般的持久性技術。
+以向量進行濫用 Office 的惡意程式碼可能會嘗試中斷 Office，並將惡意元件儲存至磁片。 這些惡意元件會在電腦重新開機後，在系統上持續保存下來。 因此，此規則會防禦一般的持久性技術。
 
 此規則的引入時間：
 
 - [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [System Center Configuration manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM 現在是 Microsoft 端點 Configuration Manager) 
+- [System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (sccm) CB 1710 (SCCM 現在已 Microsoft Endpoint Configuration Manager) 
 
 Intune 名稱： `Office apps/macros creating executable content`
 
@@ -347,20 +376,20 @@ SCCM 名稱： `Block Office applications from creating executable content`
 
 GUID:： `3B576869-A4EC-4529-8536-B80A7769E899`
 
-### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>封鎖 Office 應用程式將程式碼注入其他程式
+### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>封鎖 Office 的應用程式將程式碼注入其他進程
 
-此規則會封鎖從 Office 應用程式到其他程式的程式碼插入嘗試。
+此規則封鎖程式碼注入嘗試 Office 的應用程式到其他的處理常式。
 
-攻擊者可能會嘗試使用 Office 應用程式，透過程式碼注入，將惡意程式碼遷移到其他程式中，讓程式碼可以偽裝成一種乾淨的處理常式。
+攻擊者可能會嘗試使用 Office 的應用程式，透過程式碼注入將惡意程式碼遷移到其他程式中，讓程式碼可以偽裝成一種乾淨的處理常式。
 
 使用程式碼注入，並沒有已知的合法商務目的。
 
-此規則適用于 Word、Excel 及 PowerPoint。
+此規則會套用至 Word、Excel 及 PowerPoint。
 
 此規則的引入時間：
 
 - [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -370,14 +399,14 @@ Configuration Manager 名稱： `Block Office applications from injecting code i
 
 GUID:： `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
-### <a name="block-office-communication-application-from-creating-child-processes"></a>封鎖 Office communication application 建立子流程
+### <a name="block-office-communication-application-from-creating-child-processes"></a>封鎖 Office 通訊應用程式建立子流程
 
-此規則可防止 Outlook 建立子流程，但仍然允許合法的 Outlook 功能。
+此規則可防止 Outlook 建立子流程，但仍然允許合法 Outlook 函式。
 
-此規則可防止社交工程攻擊，並防止在 Outlook 中利用 abusing 弱點的程式碼。 它也會針對使用者的認證遭到攻破時，防止攻擊者可使用的 [Outlook 規則和表單攻擊](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) 。
+此規則可防止「社交工程」攻擊，並防止在 Outlook 中利用 abusing 弱點的程式碼。 它也會防止攻擊者在使用者的認證遭到破壞時可使用的[Outlook 規則和表單攻擊](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)。
 
 > [!NOTE]
-> 此規則只適用于 Outlook 和 Outlook.com。
+> 此規則只適用于 Outlook 和 Outlook .com。
 
 此規則的引入時間：
 
@@ -492,7 +521,7 @@ Configuration Manager 名稱： `Use advanced protection against ransomware`
 
 GUID:： `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [受攻擊面縮小常見問題集](attack-surface-reduction-faq.md)
 - [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)

@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 03/03/2021
+ms.date: 05/10/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: cb480e743be9184fd60cba0f82a287b8562c1901
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 357301bff92bb34b55630d3e699c86268fb0b6de
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934210"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327363"
 ---
 # <a name="migrate-from-mcafee---phase-1-prepare-for-your-migration"></a>從 McAfee 遷移-階段1：準備遷移
 
@@ -45,12 +45,12 @@ ms.locfileid: "51934210"
 此遷移階段包含下列步驟：
 1. [在組織裝置中取得及部署更新](#get-and-deploy-updates-across-your-organizations-devices)
 2. [取得 Microsoft Defender For Endpoint](#get-microsoft-defender-for-endpoint)。
-3. [授與 Microsoft Defender Security Center 的存取權](#grant-access-to-the-microsoft-defender-security-center)。
+3. [授與 Microsoft Defender 資訊安全中心的存取權](#grant-access-to-the-microsoft-defender-security-center)。
 4. [設定裝置 proxy 和網際網路連線設定](#configure-device-proxy-and-internet-connectivity-settings)。
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>在組織裝置中取得及部署更新
 
-最佳作法是將組織的裝置和端點保持在最新狀態。 請確定您的 McAfee 端點安全性 (McAfee) 解決方案是最新版本，而且您組織的作業系統和應用程式也會有最新的更新。 現在執行此動作可在您遷移至 Microsoft Defender for Endpoint 和 Microsoft Defender 防病毒時，協助避免發生問題。
+最佳作法是將組織的裝置和端點保持在最新狀態。 請確定您的 McAfee 端點安全性 (McAfee) 解決方案是最新版本，而且您組織的作業系統和應用程式也會有最新的更新。 現在這樣做可以協助您在遷移至 Microsoft Defender 以進行端點和 Microsoft Defender 防毒軟體時，避免發生問題。
 
 ### <a name="make-sure-your-mcafee-solution-is-up-to-date"></a>確定您的 McAfee 解決方案是最新版本
 
@@ -58,9 +58,9 @@ ms.locfileid: "51934210"
 
 - [McAfee Enterprise 產品檔：端點安全性的運作方式](https://docs.mcafee.com/bundle/endpoint-security-10.7.x-common-product-guide-windows/page/GUID-1207FF39-D1D2-481F-BBD9-E4079112A8DD.html)
 
-- [McAfee 知識中心技術文章： Windows 安全中心間歇性地報告當在 Windows 10 上執行時，已停用端點安全性。](https://kc.mcafee.com/corporate/index?page=content&id=KB91830) 
+- [McAfee 知識中心技術文章： Windows 安全性 Center 在 Windows 10 上執行時，錯誤地報告端點安全性已停用](https://kc.mcafee.com/corporate/index?page=content&id=KB91830) 
 
-- [McAfee 知識中心技術文章： Windows 安全中心報告當端點安全性執行時，已停用端點安全性](https://kc.mcafee.com/corporate/index?page=content&id=KB91428)
+- [McAfee 知識中心技術文章： Windows 安全性 Center 報表在執行端點安全性時，已停用端點安全性](https://kc.mcafee.com/corporate/index?page=content&id=KB91428)
 
 - 您的 McAfee 支援 ServicePortal ([http://mysupport.mcafee.com](http://mysupport.mcafee.com)) 
 
@@ -82,33 +82,33 @@ ms.locfileid: "51934210"
 
 1. 立即購買或試用 Microsoft Defender for Endpoint。 [開始免費試用或要求報價](https://aka.ms/mdatp)。 
 
-2. 確認已正確布建您的授權。 [檢查您的授權狀態](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#check-license-state)。
+2. 確認已正確布建您的授權。 [檢查您的授權狀態](production-deployment.md#check-license-state)。
 
-3. 以全域管理員或安全性管理員的身分，設定 Microsoft Defender for Endpoint 的專用雲端實例。 請參閱 [Microsoft Defender For Endpoint setup：承租人設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#tenant-configuration)。
+3. 以全域管理員或安全性管理員的身分，設定 Microsoft Defender for Endpoint 的專用雲端實例。 請參閱 [Microsoft Defender For Endpoint setup：承租人設定](production-deployment.md#tenant-configuration)。
 
-4. 如果 (例如組織中) 使用 proxy 來存取網際網路的端點，請參閱 [Microsoft Defender For Endpoint setup： Network configuration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/production-deployment#network-configuration)。
+4. 如果 (例如組織中) 使用 proxy 來存取網際網路的端點，請參閱 [Microsoft Defender For Endpoint setup： Network configuration](production-deployment.md#network-configuration)。
  
-此時，您已準備好授與安全性管理員的存取權，以及將使用 Microsoft Defender Security Center () 的安全性操作員 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 
+此時，您已準備好授與安全性管理員的存取權，以及將使用 Microsoft Defender 資訊安全中心 () 的安全性操作員 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 
 
 > [!NOTE]
-> Microsoft Defender Security Center 有時稱為「Microsoft Defender 端點入口網站」。 
+> Microsoft Defender 資訊安全中心有時稱為端點入口網站的 Microsoft Defender。 
 
-## <a name="grant-access-to-the-microsoft-defender-security-center"></a>授與 Microsoft Defender Security Center 的存取權
+## <a name="grant-access-to-the-microsoft-defender-security-center"></a>授與 Microsoft Defender 資訊安全中心的存取權
 
-Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) 是您用來存取及設定 Microsoft defender For Endpoint 的功能。 若要深入瞭解，請參閱 [Microsoft Defender Security Center 的概述](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)。
+Microsoft Defender 資訊安全中心 ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) 是您用來存取及設定 Microsoft Defender for Endpoint 之功能的所在位置。 若要深入瞭解，請參閱[Microsoft Defender 資訊安全中心的總覽](use.md)。
 
-您可以使用基本許可權或以角色為基礎的存取控制 (RBAC) ，授與 Microsoft Defender Security Center 的許可權。 我們建議使用 RBAC，讓您可以更細微地控制許可權。
+您可以使用基本許可權或以角色為基礎的存取控制 (RBAC) 授與 Microsoft Defender 資訊安全中心許可權。 我們建議使用 RBAC，讓您可以更細微地控制許可權。
 
-1. 規劃安全性管理員及安全性操作員的角色和許可權。 請參閱以 [角色為基礎的存取控制](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/prepare-deployment#role-based-access-control)。
+1. 規劃安全性管理員及安全性操作員的角色和許可權。 請參閱以 [角色為基礎的存取控制](prepare-deployment.md#role-based-access-control)。
 
-2. 設定和設定 RBAC。 建議使用 [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) 設定 RBAC，尤其是當您的組織使用 Windows 10、macOS、IOS 和 Android 裝置的組合時。 請參閱 [使用 Intune 設定 RBAC](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)。
+2. 設定和設定 RBAC。 建議使用[Intune](/mem/intune/fundamentals/what-is-intune)設定 RBAC，尤其是當您的組織使用 Windows 10、macOS、iOS 和 Android 裝置的組合時。 請參閱 [使用 Intune 設定 RBAC](/mem/intune/fundamentals/role-based-access-control)。
 
     如果您的組織需要 Intune 以外的方法，請選擇下列其中一個選項：
-    - [Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
-    - [高級群組原則管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm)
-    - [Windows 系統管理中心](https://docs.microsoft.com/windows-server/manage/windows-admin-center/overview)
+    - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
+    - [高級群組原則管理](/microsoft-desktop-optimization-pack/agpm)
+    - [Windows系統管理中心](/windows-server/manage/windows-admin-center/overview)
 
-3. 授與 Microsoft Defender Security Center 的存取權。  (需要協助嗎？ 請參閱 [使用 RBAC) 管理入口網站存取](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac) 。
+3. 授與 Microsoft Defender 資訊安全中心的存取權。  (需要協助嗎？ 請參閱 [使用 RBAC) 管理入口網站存取](rbac.md) 。
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>設定裝置 proxy 和網際網路連線設定
 
@@ -116,12 +116,12 @@ Microsoft Defender Security Center ([https://aka.ms/MDATPportal](https://aka.ms/
 
 |功能  | 作業系統 | 資源 |
 |--|--|--|
-|[端點偵測和回應](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR)  |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 或更新版本](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)  |[設定電腦 proxy 和網際網路連線設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet) |
-|EDR |- [Windows Server 2016](https://docs.microsoft.com/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>- [Windows Server 2012 R2](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows 8.1](https://docs.microsoft.com/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows 7 SP1](https://docs.microsoft.com/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[設定 proxy 和網際網路連線設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |macOS： <br/>-10.15 (Catalina) <br/>-10.14 (Mojave)  <br/>-10.13 (高塞拉里昂)   |[MacOS 上的 Microsoft Defender for Endpoint： Network connections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
-|[Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) |- [Windows 10](https://docs.microsoft.com/windows/release-health/release-information) <br/>- [Windows Server 2019](https://docs.microsoft.com/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 或更新版本](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) <br/>- [Windows Server 2016](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-2016) |[設定及驗證 Microsoft Defender 防毒軟體網路連線](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)<br/> |
-|防毒 |macOS： <br/>-10.15 (Catalina) <br/>-10.14 (Mojave)  <br/>-10.13 (高塞拉里昂)  |[MacOS 上的 Microsoft Defender for Endpoint： Network connections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac#network-connections) |
-|防毒 |Linux： <br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |[Linux 上的 Microsoft Defender for Endpoint： Network connections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux#network-connections) 
+| (EDR[的端點偵測和回應](overview-endpoint-detection-response.md))  |- [Windows 10](/windows/release-health/release-information) <br/>- [Windows伺服器2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows伺服器1803或更新版本](/windows-server/get-started/whats-new-in-windows-server-1803)  |[設定電腦 proxy 和網際網路連線設定](configure-proxy-internet.md) |
+|EDR |- [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>- [Windows Server 2012R 2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows伺服器 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[設定 proxy 和網際網路連線設定](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+|EDR  |macOS： <br/>-11.3.1 (大型 Sur) <br/>-10.15 (Catalina) <br/>-10.14 (Mojave)   |[MacOS 上的 Microsoft Defender for Endpoint： Network connections](microsoft-defender-endpoint-mac.md#network-connections) |
+|[Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md) |- [Windows 10](/windows/release-health/release-information) <br/>- [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 1803 或更新版本](/windows-server/get-started/whats-new-in-windows-server-1803) <br/>- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) |[設定及驗證 Microsoft Defender 防毒軟體網路連線](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
+|防毒 |macOS： <br/>-10.15 (Catalina) <br/>-10.14 (Mojave)  <br/>-10.13 (高塞拉里昂)  |[MacOS 上的 Microsoft Defender for Endpoint： Network connections](microsoft-defender-endpoint-mac.md#network-connections) |
+|防毒 |Linux： <br/>-RHEL 7.2 +<br/>-CentOS Linux 7.2 +<br/>-Ubuntu 16 LTS 或更高版本 LTS<br/>-SLES 12 +<br/>-Debian 9 +<br/>-Oracle Linux 7。2 |[Linux 上的 Microsoft Defender for Endpoint： Network connections](microsoft-defender-endpoint-linux.md#network-connections) 
 
 ## <a name="next-step"></a>下一步
 

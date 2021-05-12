@@ -19,18 +19,18 @@ ms.collection:
 - m365solution-symantecmigrate
 - m365solution-overview
 ms.topic: article
-ms.date: 03/03/2021
+ms.date: 05/10/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 587cf49ddc8d6135047fbb5e0207ed0f94d1dbe0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3e3a30ac4d03a40157fd7ec7f06e6e2a82c685a0
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934726"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327387"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>從 Symantec 遷移至 Microsoft Defender for Endpoint
-如果您打算從 Symantec Endpoint Protection (Symantec) 切換至 [Microsoft defender For endpoint](https://docs.microsoft.com/windows/security/threat-protection))  (microsoft defender for endpoint，您就是在正確的位置。 使用本文做為指南。
+如果您打算從 symantec Endpoint Protection (symantec) 切換至[microsoft defender for](microsoft-defender-endpoint.md) endpoint (microsoft defender for endpoint) ，您就是在正確的位置。 使用本文做為指南。
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -48,26 +48,26 @@ ms.locfileid: "51934726"
 
 |階段 |描述 |
 |--|--|
-|[準備遷移](symantec-to-microsoft-defender-atp-prepare.md) |在 [ **準備** ] 階段中，您可以取得 microsoft Defender for Endpoint、規劃您的角色和許可權，以及授與 Microsoft Defender Security Center 的存取權。 您也可以設定裝置 proxy 和網際網路設定，以啟用組織裝置和 Microsoft Defender for 端點之間的通訊。 |
-|[設定 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md) |在 **安裝** 階段中，您可以設定 Microsoft Defender 防病毒、microsoft Defender for Endpoint 和 Symantec endpoint Protection 的設定和排除專案。 您也可以建立裝置群組、集合及組織單位。 最後，您可以設定反惡意程式碼原則和即時保護設定。|
+|[準備遷移](symantec-to-microsoft-defender-atp-prepare.md) |在 [**準備**] 階段中，您會取得 Microsoft Defender for Endpoint，規劃您的角色和許可權，並授與 Microsoft Defender 資訊安全中心的存取權。 您也可以設定裝置 proxy 和網際網路設定，以啟用組織裝置和 Microsoft Defender for 端點之間的通訊。 |
+|[設定 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md) |在 **設定** 階段，您可以為 Microsoft Defender 防毒軟體和 Symantec Endpoint Protection 設定設定和排除專案。 您也可以建立裝置群組、集合及組織單位。 最後，您可以設定反惡意程式碼原則和即時保護設定。|
 |[在 Microsoft Defender for Endpoint 上的板載](symantec-to-microsoft-defender-atp-onboard.md) |在第 **板** 階段中，您會將裝置上架至 microsoft Defender for endpoint，並驗證這些裝置是否與 microsoft Defender for endpoint 進行通訊。 最後，您會卸載 Symantec，並確定透過 Microsoft Defender for Endpoint 來保護成為 active 模式。 |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中包含的內容？
 
-在此遷移指南中，我們著重于 [下一代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) 和 [端點偵測和回應](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) 功能，成為移至 Microsoft Defender for endpoint 的起點。 不過，Microsoft Defender for Endpoint 包含的內容遠遠超過防病毒和 Endpoint protection。 適用於端點的 Microsoft Defender 是用於預防性保護、入侵後偵測、自動調查及回應的整合式平台。 下表摘要說明 Microsoft Defender for Endpoint 中的功能和功能。 
+在此遷移指南中，我們著重于 [下一代保護](microsoft-defender-antivirus-in-windows-10.md) 和 [端點偵測和回應](overview-endpoint-detection-response.md) 功能，成為移至 Microsoft Defender for endpoint 的起點。 不過，Microsoft Defender for Endpoint 包含的內容遠遠超過防病毒和 Endpoint protection。 適用於端點的 Microsoft Defender 是用於預防性保護、入侵後偵測、自動調查及回應的整合式平台。 下表摘要說明 Microsoft Defender for Endpoint 中的功能和功能。 
 
 | 功能/功能 | 描述 |
 |---|---|
-| [威脅與漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | 威脅 & 弱點管理功能可協助識別、評估和修正整個 (端點的弱點，如裝置) 。 |
-| [攻擊面縮減](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | 攻擊面減少規則可協助保護貴組織的裝置和應用程式免受 cyberthreats 和攻擊。 |
-| [新一代保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | 下一代保護包括 Microsoft Defender 防毒程式，可協助封鎖威脅和惡意程式碼。 |
-| [端點偵測及回應](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | 端點偵測和回應功能偵測、調查和回應入侵嘗試和主動侵犯。  |
+| [威脅與漏洞管理](next-gen-threat-and-vuln-mgt.md) | 威脅 & 弱點管理功能可協助識別、評估和修正整個端點的弱點 (例如裝置) 。 |
+| [攻擊面縮減](overview-attack-surface-reduction.md) | 攻擊面減少規則可協助保護貴組織的裝置和應用程式免受 cyberthreats 和攻擊。 |
+| [新一代保護](microsoft-defender-antivirus-in-windows-10.md) | 下一代保護包括可協助封鎖威脅和惡意程式碼的 Microsoft Defender 防毒軟體。 |
+| [端點偵測及回應](overview-endpoint-detection-response.md) | 端點偵測和回應功能偵測、調查和回應入侵嘗試和主動侵犯。  |
 | [進階搜捕](advanced-hunting-overview.md) | 高級搜尋功能可讓您的安全性作業小組找到已知或潛在威脅的指標和實體。 |
-| [行為封鎖和包含專案](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | 行為封鎖和包容功能可協助您找出威脅，並根據其行為和程式樹（即使當威脅已開始執行時）加以阻止。 |
-| [自動化調查與補救措施](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | 自動化調查和回應功能會檢查提醒並採取立即修正動作，以解決違規行為。 |
-| [威脅搜尋服務](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (Microsoft 威脅專家)  | 「威脅搜尋服務」會為安全性運作小組提供專家級的監控和分析，並協助確保重要威脅不會丟失。 |
+| [行為封鎖和包含專案](behavioral-blocking-containment.md) | 行為封鎖和包容功能可協助您找出威脅，並根據其行為和程式樹（即使當威脅已開始執行時）加以阻止。 |
+| [自動化調查和修正](automated-investigations.md) | 自動化調查和回應功能會檢查提醒並採取立即修正動作，以解決違規行為。 |
+| [威脅搜尋服務](microsoft-threat-experts.md) (Microsoft 威脅專家)  | 「威脅搜尋服務」會為安全性運作小組提供專家級的監控和分析，並協助確保重要威脅不會丟失。 |
 
-**想要深入瞭解？請參閱 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection)。**
+**想要深入瞭解？請參閱 [Microsoft Defender For Endpoint](microsoft-defender-endpoint.md)。**
 
 ## <a name="next-step"></a>下一步
 

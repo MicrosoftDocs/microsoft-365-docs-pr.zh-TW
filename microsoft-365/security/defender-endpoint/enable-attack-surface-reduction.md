@@ -15,18 +15,19 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: df77a3d6c1f66882600a200b83b3b2585473f42b
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: fc04db0c9fe8ee6d09efc9802ab4a747af0b3e9c
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995066"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326658"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>啟用受攻擊面縮小規則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
+
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -78,7 +79,6 @@ ms.locfileid: "51995066"
 > [!IMPORTANT]
 > 排除檔案或資料夾可能會大大降低 ASR 規則所提供的保護。 將會允許執行排除的檔案，而且不會記錄任何報表或事件。
 > 如果 ASR 規則偵測到您認為不應該偵測到的檔案，您應該 [先使用審計模式來測試規則](evaluate-attack-surface-reduction.md)。
-
 
 您可以指定個別的檔案或資料夾 (使用資料夾路徑或完全限定資源名稱) ，但您無法指定要套用排除的規則。 只有在已排除的應用程式或服務啟動時，才會套用排除。 例如，如果您為已在執行的更新服務新增排除，更新服務會繼續觸發事件，直到停止並重新啟動服務為止。
 
@@ -145,9 +145,9 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 > [!WARNING]
 > 如果您使用 Intune、Configuration Manager 或其他企業級管理平臺來管理電腦和裝置，管理軟體將會覆寫啟動時的任何衝突的群組原則設定。
 
-1. 在您的群組原則管理電腦上，開啟 [ [群組原則管理主控台](https://technet.microsoft.com/library/cc731212.aspx)]，以滑鼠右鍵按一下您要設定的群組原則物件，然後選取 [ **編輯**]。
+1. 在您的群組原則管理電腦上，開啟 [群組原則管理主控台](https://technet.microsoft.com/library/cc731212.aspx)，以滑鼠右鍵按一下您要設定的群組原則物件，然後選擇 **[編輯]**。
 
-2. 在 [**群組原則管理編輯器**] 中，移至 [電腦設定]，然後選取 [**系統****管理範本**]。
+2. 在 **[群組原則管理編輯器]** 中，移至 **[電腦設定]** 然後選取 **[系統管理範本]**。
 
 3. 將樹狀目錄展開為 **Windows 元件**  >  **microsoft defender 防病毒**  >  **microsoft defender 利用防護防護**  >  **攻擊面降減**。
 
@@ -166,6 +166,75 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
    > [!WARNING]
    > 請勿使用 " **值名稱** ] 欄或 [ **值** ] 欄中不支援的引號。
+
+## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft 端點管理員自訂程式
+
+您可以使用 Microsoft 端點管理員 (MEM) 系統管理中心設定自訂的 ASR 規則。
+
+1. 開啟 Microsoft 端點管理員 (MEM) admin center。 在 [ **主** ] 功能表中，按一下 [  **裝置**]，選取 [ **設定檔**]，然後按一下 [ **建立設定檔**]。
+
+   ![MEM 建立設定檔](images/mem01-create-profile.png)
+
+2. 在 [ **建立設定檔**] 的下列兩個下拉式清單中，選取下列各項：
+
+   - 在 [**平臺**] 中，選取 [ **Windows 10 和更新版本**]
+   - 在 [ **配置檔案類型**] 中，選取 **範本**
+
+   選取 [ **自訂**]，然後按一下 [ **建立**]。
+
+   ![MEM 規則配置檔案屬性](images/mem02-profile-attributes.png)
+
+3. 自訂範本工具隨即開啟至步驟 **1 基礎**。 在 [ **1 基礎**] 的 [ **名稱**] 中，輸入範本的名稱，然後在 [ **描述** ] 中輸入選用的描述。
+
+   ![MEM 基本屬性](images/mem03-1-basics.png)
+
+4. 按 [下一步]。 步驟 **2 設定設定** 隨即開啟。 若為 OMA-URI 設定，請按一下 [ **新增**]。 現在會顯示兩個選項： [ **新增** ] 和 [ **匯出**]。
+
+   ![記憶體配置設定](images/mem04-2-configuration-settings.png)
+
+5. 再按一下 [ **新增** ]。 隨即會開啟 [ **新增列 OMA URI] 設定** 。 在 [ **新增列**] 中，執行下列動作：
+
+   - 在 [ **名稱**] 中，輸入規則的名稱。
+   - 在 [ **描述**] 中，輸入簡短描述。
+   - 在 **OMA uri** 中，輸入或貼上所要新增之規則的特定 oma-uri 連結。
+   - 在 [ **資料類型**] 中，選取 **字串**。
+   - 在 [ **值**] 中，輸入或貼上 guid 值， \= 不含空格的 sign 和 State 值 (_GUID = StateValue_) 。 其中： {0：停用 (停用 ASR rule) }，{1：封鎖 (啟用 ASR 規則) }，{2： Audit (評估 ASR 規則會如何影響您的組織如果已啟用) }，{6：警告 (啟用 ASR 規則，但是允許使用者略過封鎖) }
+
+   ![MEM 的 OMA URI 設定](images/mem05-add-row-oma-uri.png)
+
+6. 按一下 [儲存]。 **新增列** 關閉。 在 [ **自訂** **] 按 [下一步]**。 在步驟 **3 範圍標記** 中，範圍標記是選用的。 執行下列其中一項：
+
+   - 按一下 [ **選取範圍** 標籤]，選取 [範圍] 標籤 (選用) 然後按 **[下一步]**。
+   - 或按 **[下一步]**
+
+7. 在 [步驟 **4 指派**] 中，在 [ **包含的群組** ] 中，對您想要套用此規則的群組進行-從下列選項中選取：
+
+   - **新增群組**
+   - **新增所有使用者**
+   - **新增所有裝置**
+
+   ![MEM 指派](images/mem06-4-assignments.png)
+
+8. 在 [ **排除的群組**] 中，選取您要從此規則中排除的任何群組，然後按 **[下一步]**。
+
+9. 在 [步驟5下列設定的 **適用性規則** ] 中，執行下列動作：
+
+   - 在 [**規則**] 中，選取 [**指派設定檔為**]，或 [**不指派設定檔**]
+   - 在 [ **屬性**] 中，選取您要套用此規則的屬性
+   - 在 [ **值**] 中，輸入適用的值或值範圍
+
+   ![MEM 適用性規則](images/mem07-5-applicability -rules.png)
+
+10. 按 [下一步]。 在步驟 **6 中，複查 + 建立**、複查您已選取並輸入的設定和資訊，然後按一下 [ **建立**]。
+
+   ![記憶審閱和建立](images/mem08-6-review-create.png)
+
+>[!NOTE]
+> 規則會在幾分鐘內生效和即時。
+
+>[!NOTE]
+> 衝突處理：如果指派裝置兩個不同的 ASR 原則，處理衝突的方式就是已指派不同狀態的規則，不會就地進行衝突管理，且結果為錯誤。
+> 非衝突的規則不會導致錯誤，而且會正確套用規則。 結果是套用第一個規則，後續的非衝突規則會合並到原則中。
 
 ## <a name="powershell"></a>PowerShell
 

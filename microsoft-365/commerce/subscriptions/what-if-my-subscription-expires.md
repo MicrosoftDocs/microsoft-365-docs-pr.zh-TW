@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
+- commerce_subscriptions
+search.appverid: MET150
 description: 了解當商務用 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
-ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 04/08/2021
+ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297269"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326795"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>若要深入了解，請參閱當商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？
 
@@ -78,23 +77,14 @@ ms.locfileid: "52297269"
 在訂閱實際到達到期日之前，您可以選擇下列做法：
   
 - **為訂閱啟用週期性計費。**
-
   - 如果 **週期性計費** 已開啟，您不需執行任何動作。 您的訂閱將會自動計費，而您將會根據目前的付款頻率，支付一年或一個月的費用。 如因任何原因關閉 **週期性計費**，您可以隨時 [開啟週期性計費](renew-your-subscription.md)。
-
   - 如果您是使用預付卡購買 Microsoft 365 Apps 商務版，可以為訂閱[開啟週期性計費](renew-your-subscription.md)。
-
   - 如果您是預付 1 年期的開放式大量授權客戶，請與您的合作夥伴聯繫，購買新的產品金鑰。 您會透過電子郵件收到指示，以在[大量授權服務中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)啟用您的金鑰。 若要了解如何尋找新的合作夥伴或您過去合作過的合作夥伴，請參閱[尋找您的合作夥伴或經銷商](../../admin/manage/find-your-partner-or-reseller.md)。
-
   - 如果您有 Microsoft 365 Apps 商務版，請參閱[管理訂閱的週期性計費](renew-your-subscription.md)。
-
 - **任由訂閱到期。**
-
   - 如果您是使用信用卡或發票付款，而且不想繼續訂閱，請[關閉週期性計費](renew-your-subscription.md)。 您的訂閱會在到期日結束，您可以忽略所有相關的電子郵件通知。
-
   - 如果您是與合作夥伴合作的 Open 大量授權客戶，不需採取任何動作，任由訂閱到期即可。
-
   - 如果您是 Microsoft 365 商務標準版客戶，並且採用預付方式，用產品金鑰啟動 Microsoft 365，則不需採取任何動作，任由訂閱到期即可。
-
 - **在訂閱到期之前取消。** 如需詳細資訊，請參閱[取消您的訂閱](cancel-your-subscription.md)。
 
 ## <a name="what-happens-after-my-subscription-expires"></a>在訂閱到期之後，會發生什麼情況？
@@ -105,7 +95,7 @@ ms.locfileid: "52297269"
   
 ### <a name="state-expired"></a>狀態：已到期
 
- **預期狀況：** 在大多數國家/地區和區域中，大部分訂閱 (包括透過 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 購買的訂閱) 的「已到期」階段會持續 30 天。 若為大量授權的產品 (Microsoft Open 除外)，「已到期」階段會持續 90 天。
+**預期狀況：** 在大多數國家/地區和區域中，大部分訂閱 (包括透過 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 購買的訂閱) 的「已到期」階段會持續 30 天。 若為大量授權的產品 (Microsoft Open 除外)，「已到期」階段會持續 90 天。
 
 在此狀態下，使用者仍可正常存取 Microsoft 365 入口網站、Office 應用程式，以及電子郵件和 SharePoint Online 等服務。
   
@@ -113,7 +103,7 @@ ms.locfileid: "52297269"
   
 ### <a name="state-disabled"></a>狀態：已停用
 
- **預期狀況：** 如果您沒有在「已到期」階段期間重新啟動訂閱，它會進入「已停用」階段。對大部分國家/地區和區域的多數訂閱來說，「已停用」階段會持續 90 天。 若為大量授權產品，「已停用」階段會持續 30 天。
+**預期狀況：** 如果您沒有在「已到期」階段期間重新啟動訂閱，它會進入「已停用」階段。對大部分國家/地區和區域的多數訂閱來說，「已停用」階段會持續 90 天。 若為大量授權產品，「已停用」階段會持續 30 天。
 
 在此狀態中，您的存取權會明顯減少。 您的使用者無法登入，或存取電子郵件或 SharePoint Online 等服務。 Office 應用程式最後都會進入唯讀、精簡功能模式，並顯示[未授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 您仍然可以登入系統管理中心，但是無法指派授權給使用者。 您的客戶資料 (包括小組網站上所有的使用者資料、電子郵件和檔案) 僅可供您和其他系統管理員使用。
 
@@ -121,13 +111,14 @@ ms.locfileid: "52297269"
 
 ### <a name="state-deleted"></a>狀態：已刪除
   
- **預期狀況：** 如果您未在「已到期」或「已停用」階段內重新啟動訂閱，系統就會刪除訂閱。
+**預期狀況：** 如果您未在「已到期」或「已停用」階段內重新啟動訂閱，系統就會刪除訂閱。
   
 系統管理員和使用者都不能再存取訂閱隨附的服務或 Office 應用程式。 從使用者資料到文件和電子郵件等等的所有客戶資料，都會永久遭到刪除且無法復原。
   
 此時您無法重新啟動訂閱。但如果您是全域或計費系統管理員，您還是可以存取系統管理中心管理其他訂閱，或購買您的所屬企業所需的新訂閱。
   
 > [!NOTE]
+>
 > - 新增與已刪除訂閱相同類型的新訂閱，並不會還原與已刪除訂閱相關聯的資料。
 > - 如果 CSP 授權已暫停，則不會有 30 天的「已到期」階段，服務會立即停用。 如果租用戶未新增授權以重新啟動，則資料將會在 90 天之後刪除。
 
@@ -136,12 +127,11 @@ ms.locfileid: "52297269"
 試用版結束後，您就無法繼續免費使用 Microsoft 365。此時您有以下幾個選擇：
 
 - **購買 Microsoft 365。** 試用版到期時，訂閱會進入「已到期」階段，再給您 30 天的時間 (大部分國家/地區和區域的多數試用版) 購買 Microsoft 365。 若要了解將試用版轉換成付費訂閱的方式，請參閱[從免費試用版購買訂閱](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial)。
-
 - **延長試用期。** 需要更多時間來評估 Microsoft 365 嗎？ 在某些情況下，您可以[延長試用期](../extend-your-trial.md)。
-
 - **取消試用或讓它到期。** 如果您決定不購買 Microsoft 365，您可以讓試用版到期或[取消](cancel-your-subscription.md)。 備份您想要保留的任何資料。 30 天「已到期」階段之後，您的試用帳戶資訊和資料就會永久清除。
 
 > [!NOTE]
+>
 > [Microsoft 原則免責聲明和異動通知](https://go.microsoft.com/fwlink/p/?LinkId=613651)可能隨時更改這個頁面上的資訊。 請定期回到本網站檢閱有無任何資訊變更。
 
 ## <a name="related-content"></a>相關內容

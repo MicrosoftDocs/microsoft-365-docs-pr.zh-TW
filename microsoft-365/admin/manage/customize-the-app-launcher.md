@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '透過將自訂麻將牌新增至應用程式啟動器，建立電子郵件、檔、應用程式、SharePoint 網站、外部網站及其他資源的快速連結。 '
-ms.openlocfilehash: b6ae4deed1566492574e30cf8cb66a750c9858c8
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 598cfeb75fc811c87519c4479fa8fcab450466c3
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470628"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327207"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>新增自訂磚至 App 啟動器
 
@@ -48,19 +48,28 @@ ms.locfileid: "51470628"
   
 4. 輸入新磚的 **麻將牌名稱** 。 磚中就會出現該名稱。 
     
-5. 輸入麻將牌 **之網站的 URL** 。 當使用者選取應用程式啟動器上的麻將牌時，這是您想要的位置。 在 URL 中使用 HTTPS。<br/>提示：如果您要為 SharePoint 網站建立磚，請流覽至該網站，複製 URL，然後貼到這裡。 預設小組網站的 URL 看起來如下所示： `https://<company_name>.sharepoint.com` 
+5. 輸入麻將牌 **之網站的 URL** 。 當使用者選取應用程式啟動器上的麻將牌時，這是您想要的位置。 在 URL 中使用 HTTPS。
+
+    > [!TIP]
+    > 如果您要為 SharePoint 網站建立一個磚，請瀏覽至該網站、複製 URL，然後貼到這裡。 預設小組網站的 URL 看起來如下所示： `https://<company_name>.sharepoint.com` 
   
-6. 輸入磚的 **影像 URL** 。 隨後影像就會出現在 [我的 App] 頁面和 App 啟動器上。<br/>提示：影像應該是60x60 圖元，並可供組織中的所有人使用，而不需要驗證。
+6. 輸入磚的 **影像 URL** 。 隨後影像就會出現在 [我的 App] 頁面和 App 啟動器上。
+
+    > [!TIP]
+    > 圖像應該是60x60 圖元，並可供組織中的每個人使用，而不需要驗證。
 
 7. 輸入磚的 **描述** 。 當您在 [我的應用程式] 頁面上選取麻將牌並選取 [ **應用程式詳細資料**] 時，就會看到 
   
 8. 選取 [ **儲存變更** ] 以建立自訂磚。 
     
-您的自訂圖格現在會出現在 [ **全部** ] 索引標籤上的應用程式啟動器中，以及您的使用者。 
+    您的自訂圖格現在會出現在 [ **全部** ] 索引標籤上的應用程式啟動器中，以及您的使用者。 
+
+    > [!NOTE]
+    > 如果您在之前的步驟看不到已建立的 [自訂磚]，請確認 Exchange Online 信箱已指派給您，且至少登入您的信箱一次。 Microsoft 365 中的自訂圖格必須執行這些步驟。 
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. 在系統管理中心中，移至 [**設定** 組織  >  **設定**  >  **組織設定檔**] 索引標籤 </a> 。
+1. 在系統管理中心中，移至 [**設定** 組織  >  **設定**  >  **組織設定檔**] 索引標籤。
     
 2. 在 [ **組織設定檔** ] 頁面上，按一下 [   **新增組織的自訂麻將牌**] 旁邊的 [ **編輯**]。
 
