@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 開啟可在桌面應用程式中針對 SharePoint 和 OneDrive 中已標記和加密的檔案啟用共同撰寫和自動儲存的設定。
-ms.openlocfilehash: 4b2c4551579d2609b66b5cd8fa8857f98b966a7d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297257"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332723"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>針對使用敏感度標籤加密的檔案啟用共同撰寫
 
@@ -84,7 +84,7 @@ ms.locfileid: "52297257"
 
 - Microsoft 365 Apps 企業版：
     - **Windows**：預覽：[目前通道 (預覽)](https://office.com/insider)
-    - **macOS**：預覽：[Beta 版通道](https://office.com/insider)
+    - **macOS**: 預覽：[目前通道 (預覽)](https://office.com/insider)
     - **iOS**：尚未支援
     - **Android**：尚未支援
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料外洩防護以監視檔案活動，並對這些端點的檔案實作保護動作。
-ms.openlocfilehash: 118c2f3f87df5ac9930bebd1338157d323b1e5e1
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259496"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332807"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>開始使用端點資料外洩防護
 
@@ -147,7 +147,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
     - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
     - 使用行動裝置管理工具上線 Windows 10 電腦
     - 使用本機指令碼上線 Windows 10 電腦
-    - 上線非永續性 Virtual Desktop Infrastructure (VDI) 電腦。
+    - 在單一工作階段案例上線非永續性 Virtual Desktop Infrastructure (VDI) 電腦。
 
 一旦完成且端點上線後，端點會顯示在裝置清單中，並開始向 [活動總管] 回報音訊活動記錄。
 

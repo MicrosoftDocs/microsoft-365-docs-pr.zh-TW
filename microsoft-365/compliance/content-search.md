@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用合規性中心中的內容搜尋電子文件探索工具，在不同的 Microsoft 365 服務中搜尋內容。
-ms.openlocfilehash: a058c07d080962723e9f6bc7a150cbfb5074e7db
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 5f48418882d5d4c7589b3ef394a0a306c0675f34
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311654"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332843"
 ---
 # <a name="create-a-content-search"></a>建立內容搜尋
 
@@ -88,7 +88,7 @@ ms.locfileid: "52311654"
 7. 檢閱搜尋設定 (並在必要時編輯)，然後提交搜尋以啟動搜尋。
   
 若要再次存取此內容搜尋，或存取 **[內容搜尋]** 頁面上所列的其他內容搜尋，請選取搜尋，然後按一下 **[開啟]**。
-  
+
 ## <a name="next-steps"></a>後續步驟
 
 以下是建立和執行內容搜尋之後要執行的後續步驟清單。
@@ -100,3 +100,7 @@ ms.locfileid: "52311654"
 - [匯出搜尋結果](export-search-results.md)
 
 - [匯出搜尋報告](export-a-content-search-report.md)
+
+## <a name="more-information"></a>其他資訊
+
+如需內容搜尋 (例如在不同 Microsoft 365 服務中搜尋內容) 的詳細資訊，請參閱[內容搜尋的功能參考](content-search-reference.md)。
