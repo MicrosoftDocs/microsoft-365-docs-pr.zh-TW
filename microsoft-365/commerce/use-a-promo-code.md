@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: drjones
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-- PPM_jmueller
 search.appverid: MET150
 description: 瞭解如何將促銷代碼套用至您的 Microsoft 365 訂閱，以降低價格，以及如何在發生錯誤時對促銷代碼進行疑難排解。
 ms.date: 03/17/2021
-ms.openlocfilehash: 01cc7cd182f3e25867191c83b58016ef090c8934
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 30484915246e1d8b1389f09d71d9d67865962a7e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280400"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332915"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>使用您的促銷代碼來降低價格
 
@@ -43,7 +42,7 @@ ms.locfileid: "52280400"
   
 ## <a name="promo-code-terms"></a>促銷代碼條款
 
-下列指導方針適用于商務用 Microsoft 365 商務版訂閱的促銷代碼。
+下列指導方針適用于適用于商務用 Microsoft 365 訂閱的促銷代碼。
   
 - **每個訂閱的促銷代碼數目** 您可以在同一訂單中為多份訂閱使用一個促銷代碼，但您無法針對同一份訂閱使用多個促銷代碼。
 - **折扣期間** 將促銷代碼折扣套用至訂單之後，折扣會持續到訂閱期間結束為止。如果您的訂閱期限為逐月延續，促銷代碼折扣會持續到您所輸入的計費月份結束時。如果您的訂閱期限以年計算 (即使是每月付費)，促銷代碼折扣會持續到您所輸入的計費年份結束時。

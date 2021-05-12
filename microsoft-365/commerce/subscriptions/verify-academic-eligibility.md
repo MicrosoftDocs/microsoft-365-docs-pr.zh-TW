@@ -2,7 +2,7 @@
 title: 驗證 Microsoft 365 教育版訂閱的學術資格
 f1.keywords:
 - CSH
-- FWLink 2135711
+- FWLink-2135711
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何驗證您的學校是否符合 Microsoft 365 教育版學術的定價。
 ms.date: 07/21/2020
-ms.openlocfilehash: e0e85e53ed00c1c7c23e86f380a6440038d775c9
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 7da6fbc73ece51c5d9b845487e344bbbdec679cf
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326875"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333083"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>驗證 Microsoft 365 教育版訂閱的學術資格
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,19 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 ROBOTS: NOINDEX
 description: 瞭解如何對商務版訂閱的 Microsoft 365 啟用、更新或新增授權。
 ms.date: 10/21/2020
-ms.openlocfilehash: 04df3b24693ac92875cc667aea61e0e9b35cb270
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 78524b47b32d1b827cc6d525e4aa8e3feb499557
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293628"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333383"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>輸入您從 Microsoft 開放購買的產品金鑰
 

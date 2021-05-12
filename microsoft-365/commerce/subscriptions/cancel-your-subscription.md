@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 深入了解如何取消您的商務用 Microsoft 365 試用版或付費訂閱。
 ms.date: 04/08/2021
-ms.openlocfilehash: 329bc10adbe6c2ad0efe3609e7cb72141ae346bd
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297305"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333311"
 ---
 # <a name="cancel-your-subscription"></a>取消您的訂閱
 
@@ -126,7 +124,7 @@ ms.locfileid: "52297305"
 
 - 若要將電子郵件、連絡人、工作及行事曆資訊移到另一個帳戶，請參閱[將電子郵件、連絡人及行事曆匯出或備份為 Outlook .pst 檔案](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)。
 
-- 若要從 SharePoint Online 環境 (商務用 OneDrive 或小組網站) 將文件庫或清單內容 (例如連絡人) 儲存至檔案共用或本機電腦上，請參閱[手動移轉 SharePoint Online 內容](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
+- 若要從 SharePoint Online 環境 (商務用 OneDrive 或小組網站) 將文件庫或清單內容 (例如連絡人) 儲存至檔案共用或本機電腦上，請參閱[手動移轉 SharePoint Online 內容](/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
 
 ### <a name="uninstall-office-optional"></a>解除安裝 Office (選用)
 

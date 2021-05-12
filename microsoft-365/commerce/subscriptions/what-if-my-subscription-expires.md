@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解當商務用 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
 ms.date: 04/08/2021
-ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d0821214f9a8c242306685db2ee7faf3779cecff
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326795"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333023"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>若要深入了解，請參閱當商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？
 
@@ -50,6 +50,7 @@ ms.locfileid: "52326795"
 *針對大部分國家/地區和區域的供應項目。
   
 > [!NOTE]
+>
 > **什麼是「客戶資料」？** 客戶資料如同 [Microsoft Online Service 條款](https://go.microsoft.com/fwlink/p/?LinkId=613649)中的定義，指的是所有資料，包括所有文字、聲音或影像檔，由 Microsoft 或代表其提供，或客戶透過使用 Microsoft 365 服務所使用的資料。 若要深入了解客戶資料的保護，請參閱[開始使用 Microsoft 服務信任入口網站](../../compliance/get-started-with-service-trust-portal.md)。
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>如果我取消訂閱，會發生什麼情況？
@@ -68,6 +69,7 @@ ms.locfileid: "52326795"
 > 如果您想要在一般的「已停用」階段結束之前刪除您的訂閱資料，可以[關閉帳戶](../close-your-account.md)。
   
 > [!NOTE]
+>
 > 如果您明確刪除訂閱，它會略過到期和停用階段，而 SharePoint Online 資料和內容 (包括 OneDrive) 會立即刪除。
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>我的訂閱即將到期時，我有哪些選擇？

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.review: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,18 +13,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-description: 瞭解如何建立及管理自動宣告原則，以自動將授權指派給某些應用程式的使用者。
 ms.custom:
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+- commerce_licensing
+description: 瞭解如何建立及管理自動宣告原則，以自動將授權指派給某些應用程式的使用者。
+search.appverid: MET150
+ms.date: 04/06/2021
+ms.openlocfilehash: b104700905b3753466036411368951f12a7012d8
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599448"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331643"
 ---
 # <a name="manage-auto-claim-policies"></a>管理自動聲明原則
 
@@ -78,7 +79,7 @@ ms.locfileid: "51599448"
 3. 在 [ **名稱此自動宣告原則** ] 頁面上，輸入原則的名稱，然後選取 **[下一步]**。
 4. 在 [ **設定自動宣告應用程式和產品** ] 頁面上，選取要指派授權的應用程式和訂閱。
 5. 如果您想要新增備份產品，請選取 [ **新增備份產品至這個原則**]，然後從清單中選取產品。
-6. 選取 **[下一步]**。
+6. 選取 [下一步 **]**。
 7. 在 [ **選取應用程式** ] 頁面上，清除或選取要排除或包含在授權中的應用程式方塊，然後選取 **[下一步]**。
 8. 如果您已新增一或多個備份產品，請對每個產品重複步驟7。 否則，請移至步驟9。
 9. 在 [ **檢查和完成]** 頁面上，確認新的原則資訊，進行必要的變更，然後選取 [ **建立原則**]。

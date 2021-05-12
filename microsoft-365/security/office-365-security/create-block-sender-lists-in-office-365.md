@@ -14,12 +14,12 @@ search.appverid:
 description: 系統管理員可以深入瞭解可用及慣用的選項，以在 Exchange Online Protection (EOP) 中封鎖輸入郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9ee0a026e33bf07bb929607b8eed9078d0b6e4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: fa2a5e0c71f14838dc8446431f5ea02a535fb787
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203681"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331451"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>在 EOP 中建立封鎖的寄件者清單
 
@@ -70,7 +70,7 @@ EOP 中，封鎖的寄件者清單和封鎖的網域清單會檢查 `5321.MailFr
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>使用封鎖的寄件者清單或封鎖的網域清單
 
-當多個使用者受到影響時，範圍會變寬，所以下一個最佳選項是反垃圾郵件原則中的封鎖寄件者清單或封鎖的網域清單。 來自清單寄件者的郵件會標示為 **垃圾** 郵件，而您針對 **垃圾郵件** 篩選判定所設定的動作會針對郵件採取。 如需詳細資訊，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+當多個使用者受到影響時，範圍會變寬，所以下一個最佳選項是反垃圾郵件原則中的封鎖寄件者清單或封鎖的網域清單。 來自清單寄件者的郵件會標示為 **高信賴的垃圾郵件**，而您針對 **高信賴垃圾郵件** 篩選器判定所設定的動作會針對郵件採取。 如需詳細資訊，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 這兩個清單的上限大約是1000個專案。
 

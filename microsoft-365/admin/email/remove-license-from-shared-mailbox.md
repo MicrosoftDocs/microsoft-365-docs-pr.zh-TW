@@ -4,6 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: SKjerland
+ms.reviewer: nicholak
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -12,22 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
-- MSStore_Link
 - AdminSurgePortfolio
+- commerce_licensing
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '從共用信箱中移除授權，將其指派給其他使用者。 '
-ms.openlocfilehash: 873b50b34b9887ada92cc56f7083e3b748a52035
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2d0e6e6b1d6222bea80265bf6cc008e21ac3239c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327219"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332651"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>從共用信箱移除授權
 
@@ -42,7 +41,6 @@ ms.locfileid: "52327219"
 > 3. 共用信箱處於訴訟暫止狀態。
 > 4. 共用信箱已指派 Microsoft Defender 授權。
 
-  
 ## <a name="remove-the-license"></a>移除授權
 
 ::: moniker range="o365-worldwide"
@@ -50,7 +48,7 @@ ms.locfileid: "52327219"
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
    > [!NOTE]
-   > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。 
+   > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
   
 2. 選取共用信箱。
 
@@ -100,9 +98,7 @@ ms.locfileid: "52327219"
 
 6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/buy-licenses.md)。
 
-::: moniker-end 
-
- 
+::: moniker-end
 
 ## <a name="related-articles"></a>相關文章
 

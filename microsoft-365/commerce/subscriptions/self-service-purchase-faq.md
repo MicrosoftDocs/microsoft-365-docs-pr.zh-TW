@@ -5,25 +5,26 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- commerce
+ms.collection: M365-subscription-management
 ms.custom:
 - AdminSurgePortfolio
 - aka.ms/self-service-purchase-faq
+- commerce_ssp
 search.appverid:
 - MET150
 description: 尋找有關自助購買的常見問題的答案。
 ms.date: 09/15/2020
-ms.openlocfilehash: 81143dfe3794bc4f42bea879905bf08750f498b4
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 964eca8e94f64fd2f212745abfff0cf25d45bfca
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816922"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333191"
 ---
 # <a name="self-service-purchase-faq"></a>自助購買常見問題
 
@@ -98,7 +99,7 @@ Microsoft 網站提供每項自助購買產品的定價。 當使用者進行自
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>系統管理員會在何處購買自助服務？
 
-通用和計費系統管理員可以查看透過「自助購買」購買的**Billing**訂閱，以在  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>計費您的**產品**。 他們可以篩選 [產品] 清單，只顯示透過中央購買購買的訂閱，或包含透過「自助購買」購買的訂閱。
+通用和計費系統管理員可以查看透過「自助購買」購買的訂閱，以在  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>計費您的 **產品**。 他們可以篩選 [產品] 清單，只顯示透過中央購買購買的訂閱，或包含透過「自助購買」購買的訂閱。
 
 系統管理員可以查看產品、買方名稱、購買的訂閱、到期日、訂單記錄、購買價格，以及指派的使用者。
 

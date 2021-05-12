@@ -5,28 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_TOC
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- manage_licenses
 - okr_smb
-- commerce
-search.appverid:
-- MET150
+- manage_licenses
+- commerce_licensing
+search.appverid: MET150
 description: 瞭解如何從使用者帳戶取消指派授權。
 ms.date: 07/01/2020
-ms.openlocfilehash: 87bb8f6fe0e85fc4ac832f2bc4ad746e8d6386eb
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 6f2cbf65e1d6a38a4b1ed00976d4dd473d7331e9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310989"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332411"
 ---
 # <a name="unassign-licenses-from-users"></a>取消指派給使用者的授權
 
@@ -95,7 +95,7 @@ ms.locfileid: "52310989"
 3. 在右窗格中，選取 **[授權與應用程式]**。
 4. 展開 [ **授權** ] 區段，然後清除您要取消指派之授權的方塊，然後選取 [ **儲存變更**]。
 
-###  <a name="unassign-licenses-from-multiple-users"></a>從多位使用者取消指派授權
+### <a name="unassign-licenses-from-multiple-users"></a>從多位使用者取消指派授權
 
 ::: moniker range="o365-worldwide"
 
@@ -124,7 +124,7 @@ ms.locfileid: "52310989"
 
 - 從使用者移除授權時，與該帳戶相關聯的資料會保留30天。 30天的寬限期過後，便會刪除資料，而且無法復原。
 - 除非使用者從 Microsoft 365 系統管理中心中刪除，或是透過 Active Directory 同步處理移除，否則不會刪除儲存在商務用 OneDrive 中的檔案。 如需詳細資訊，請參閱[OneDrive 保留和刪除](/onedrive/retention-and-deletion)。
-- 移除授權後，使用者的信箱就無法再使用「內容搜尋」（如「內容搜尋」）或 Advanced eDiscovery 等 eDiscovery 工具進行搜尋。 如需詳細資訊，請參閱 [Content search reference](../../compliance/content-search-reference.md#searching-disconnected-or-de-licensed-mailboxes)中的「搜尋中斷連線或已取消授權的信箱」。
+- 移除授權後，使用者的信箱就無法再使用「內容搜尋」（如「內容搜尋」）或 Advanced eDiscovery 等 eDiscovery 工具進行搜尋。 如需詳細資訊，請參閱 Microsoft 365 中的[內容搜尋](../../compliance/content-search.md)中的「搜尋中斷連線或已取消授權的信箱」。
 - 如果您有 Enterprise 訂閱（如 Office 365 企業版 E3），Exchange Online 可讓您使用非使用中的[信箱](../../compliance/inactive-mailboxes-in-office-365.md)來保留已刪除之使用者帳戶的信箱資料。 如需詳細資訊，請參閱[在 Exchange Online 中建立及管理非](../../compliance/create-and-manage-inactive-mailboxes.md)使用中的信箱。
 - 若要瞭解如何在移除授權後封鎖使用者對 Microsoft 365 資料的存取，以及如何在以後存取資料，請參閱[移除離職員工](../add-users/remove-former-employee.md)。
 - 如果您移除使用者的授權，但仍已安裝 Office 應用程式，他們會在使用 Office 應用程式時，看到[Office 中未授權的產品和啟用錯誤](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)。

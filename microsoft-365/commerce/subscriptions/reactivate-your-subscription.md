@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,16 +18,15 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
 description: 深入瞭解當您的訂閱到期、停用或取消時，如何重新開機訂閱。
 ms.date: 04/07/2021
-ms.openlocfilehash: 80d1594890ec15fc4c2391d439ccbc16be6ae707
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 7f77a9782e9028521cbcefbdbffc49bc28db8e9c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280892"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333167"
 ---
 # <a name="reactivate-your-subscription"></a>重新啟動您的訂閱
 

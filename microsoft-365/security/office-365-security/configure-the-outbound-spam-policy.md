@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中查看、建立、修改和刪除輸出垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ceaf0d276aff4504dd34aa3229c28c9cb042742d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204579"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331667"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -35,15 +35,15 @@ ms.locfileid: "51204579"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在使用 Exchange Online 中的信箱或獨立 Exchange Online (Protection 中的 Microsoft 365 組織中，EOP) 不含 Exchange Online 信箱的組織，會自動檢查透過 EOP 傳送的輸出電子郵件是否有垃圾郵件和不尋常的傳送活動。
+在 Microsoft 365 具有 Exchange Online 或獨立 Exchange Online Protection 中信箱的組織 (EOP) 組織若沒有 Exchange Online 信箱，則會自動檢查透過 EOP 傳送的輸出電子郵件是否有垃圾郵件和不尋常的傳送活動。
 
-組織中使用者的外寄垃圾郵件通常表示已遭破壞的帳戶。 可疑的輸出郵件會標示為垃圾郵件 (不論垃圾郵件信賴等級或 SCL) 並透過 [高風險傳遞集](high-risk-delivery-pool-for-outbound-messages.md) 區路由傳送，以協助保護服務的信譽， (也就是將 Microsoft 365 來源電子郵件伺服器從 IP 封鎖清單) 保留。 系統管理員會自動收到可疑的輸出電子郵件活動，並透過 [警示原則](../../compliance/alert-policies.md)封鎖使用者。
+組織中使用者的外寄垃圾郵件通常表示已遭破壞的帳戶。 可疑的輸出郵件會標示為垃圾郵件 (不論垃圾郵件信賴等級或 SCL) 並透過[高風險傳遞集](high-risk-delivery-pool-for-outbound-messages.md)區路由傳送，以協助保護服務的信譽， (也就是保留 Microsoft 365 來源電子郵件伺服器，而不是 IP 封鎖清單) 。 系統管理員會自動收到可疑的輸出電子郵件活動，並透過 [警示原則](../../compliance/alert-policies.md)封鎖使用者。
 
 EOP 使用輸出垃圾郵件原則做為組織的整體防禦垃圾郵件的一部分。 如需詳細資訊，請參閱[反垃圾郵件保護](anti-spam-protection.md)。
 
 系統管理員可以查看、編輯和設定 (，但不會刪除預設的輸出垃圾郵件原則) 。 為了獲得更多細微性，您也可以建立適用于組織中特定使用者、群組或網域的自訂輸出垃圾郵件原則。 自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。
 
-您可以使用 Exchange Online 中的信箱，在安全性 & 合規性中心或 PowerShell (Exchange Online 365 PowerShell 中設定輸出垃圾郵件原則;沒有 Exchange Online 信箱) 之組織的獨立 EOP PowerShell。
+您可以在 [安全性 & 合規性中心] 或 [PowerShell (Exchange Online PowerShell 中設定輸出垃圾郵件原則，Microsoft 365 組織中 Exchange Online 的信箱;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
 
 EOP 中的外寄垃圾郵件原則基本元素為：
 
@@ -56,7 +56,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 - 當您修改原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改外寄垃圾郵件篩選規則。 所有其他設定都會修改相關聯的輸出垃圾郵件篩選原則。
 - 當您移除原則時，會移除輸出垃圾郵件篩選規則和相關聯的輸出垃圾郵件篩選原則。
 
-在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定輸出垃圾郵件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) 一節。
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的[使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定輸出垃圾郵件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies)一節。
 
 每個組織都有一個名為 Default 的內建輸出垃圾郵件原則，具有下列屬性：
 
@@ -122,7 +122,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
         您新增的收件者會出現在飛入的 [ **收件者清單** ] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
 
-     1. 完成後，請按一下 **[儲存]**。
+     1. 完成後，點擊 **[儲存]**。
 
         若要停用此設定，請清除核取方塊。
 
@@ -309,7 +309,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 此範例會建立名為 Contoso 主管的新輸出垃圾郵件篩選原則，並提供下列設定：
 
-- 收件者速率限制限制為預設值較小的值。 如需詳細資訊，請參閱 [在 Microsoft 365 選項](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)中傳送限制。
+- 收件者速率限制限制為預設值較小的值。 如需詳細資訊，請參閱[在 Microsoft 365 選項](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)中傳送限制。
 
 - 達到其中一個限制之後，使用者就無法傳送郵件。
 
@@ -509,12 +509,12 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 如需詳細的語法及參數資訊，請參閱 [Remove-HostedOutboundSpamFilterRule](/powershell/module/exchange/remove-hostedoutboundspamfilterrule)。
 
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [從 [受限使用者] 入口網站中移除封鎖的使用者](removing-user-from-restricted-users-portal-after-spam.md)
 
 [輸出郵件的高風險傳遞集區](high-risk-delivery-pool-for-outbound-messages.md)
 
-[反垃圾郵件保護常見問題集](anti-spam-protection-faq.md)
+[反垃圾郵件保護常見問題集](anti-spam-protection-faq.yml)
 
 [自動轉寄訊息的報告](mfi-auto-forwarded-messages-report.md)

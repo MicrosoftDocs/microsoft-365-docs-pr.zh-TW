@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 瞭解如何使用 Microsoft 關閉您的帳戶。
 ms.date: 04/02/2021
-ms.openlocfilehash: 86232e3f433526cc60ef369eda03ef8d20ab08c9
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 767a82088500bc24c0d4755a2dafd40742fc796c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293664"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331763"
 ---
 # <a name="close-your-account"></a>關閉您的帳戶
 
@@ -49,7 +47,7 @@ ms.locfileid: "52293664"
 
 您也可以使用 [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell Cmdlet，成批刪除使用者。
 
-如果您的組織使用與 Microsoft Azure Active Directory (Azure AD) 同步處理的 Active Directory，請改為從 Active directory 中刪除使用者帳戶。 如需相關指示，請參閱[大量刪除使用者的 Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete)。
+如果您的組織使用 Active Directory 與 Microsoft Azure Active Directory (Azure AD) 同步，請改為從 Active Directory 刪除使用者帳戶。 如需相關指示，請參閱 [大量刪除 Azure Active Directory 中的使用者](/azure/active-directory/users-groups-roles/users-bulk-delete)。
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步驟2：取消所有作用中的訂閱
 
@@ -81,7 +79,7 @@ ms.locfileid: "52293664"
 您也可以 [使用 PowerShell 來停用多個使用者的多重要素驗證](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)。
 
 
-## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步驟5：在 Azure Active Directory 中刪除目錄
+## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步驟5：刪除 Azure Active Directory 中的目錄
 
 1. 使用全域系統管理員帳戶登入 <a href="https://aad.portal.azure.com/" target="_blank">AZURE AD 系統管理中心</a> 。
 2. 選取 **[Azure Active Directory]**。

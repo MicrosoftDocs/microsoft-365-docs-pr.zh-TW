@@ -17,12 +17,12 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 3d44e178d351942b4a178ddc1954ddd839665639
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 870572a61c241d3d3c8ce6791cee77edba2a1956
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919299"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332675"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>停用 Microsoft 365 的 TLS 1.0 和1。1
 
@@ -91,3 +91,19 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 ## <a name="more-information"></a>其他資訊
 
 如需詳細資訊，請參閱 [在 Office 365 中準備 TLS 1.2 的強制使用](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
+
+## <a name="references"></a>參考
+
+下列資源提供的指導可協助確保用戶端使用 TLS 1.2 或更新版本，以及停用 TLS 1.0 和1.1：
+
+- 對於連線到 Office 365 的 Windows 7 用戶端，請確認 TLS 1.2 是 Windows 中 WinHTTP 的預設安全通訊協定。 如需詳細資訊，請參閱 [KB 3140245-更新啟用 TLS 1.1 和 tls 1.2 做為 Windows WinHTTP 中的預設安全通訊協定](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in)。
+- 若要透過移除 TLS 1.0 和1.1 相依性來處理弱 TLS 使用狀況，請參閱 [Microsoft 的 tls 1.2 支援](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)。
+- [新的 IIS 功能](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) 可讓您更容易使用薄弱安全性通訊協定，在 [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) 和 [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) 上找到連線至服務的用戶端。
+- 取得如何 [解決 TLS 1.0 問題的](https://www.microsoft.com/download/details.aspx?id=55266)詳細資訊。
+- 如需關於安全性的一般資訊，請前往 [Office 365信任中心](https://www.microsoft.com/trustcenter/cloudservices/office365)。
+- [準備 TLS 1.0/1.1 淘汰 – O365 商務用 Skype](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Preparing-for-TLS-1-0-1-1-Deprecation-O365-Skype-for-Business/ba-p/222247)
+- [Exchange Server TLS 指南，第 1 部分：為 TLS 1.2 做好準備](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)
+- [Exchange Server TLS 指南，第 2 部分：正在啟用 TLS 1.2 並辨識不使用 TLS 1.2 的用戶端](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761)
+- [Exchange Server TLS 指南，第 3 部分：關閉 TLS 1.0/1.1](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-3-turning-off-tls-1-0-1-1/ba-p/607898)
+- [啟用 Office Online Server 中的 TLS 1.1 和 TLS 1.2 支援](/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)
+

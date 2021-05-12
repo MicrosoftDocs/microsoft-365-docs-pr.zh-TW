@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 瞭解如何管理組織的免費自助註冊訂閱。
 ms.date: 03/17/2021
-ms.openlocfilehash: 64648151d7761bd8bb0d2301d59fb093de98b127
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b469515a649399c71ef64ba2567dfa376f21e9a7
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107613"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333215"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>管理自助註冊訂閱
 
@@ -41,7 +39,7 @@ ms.locfileid: "52107613"
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>這些訂閱與自助購買訂閱有何不同？
 
-自助註冊訂閱是免費的，可提供更大的產品清單，而非自助購買訂閱。 當使用者註冊「自助購買」訂閱時，他們會負責支付服務。 自助購買訂閱只適用于電源平台產品 (Power BI、Power Apps 和 Power Automate) 、Project 和 Visio。 如需詳細資訊，請參閱 [自助購買常見問題](self-service-purchase-faq.md)。
+自助註冊訂閱是免費的，可提供更大的產品清單，而非自助購買訂閱。 當使用者註冊「自助購買」訂閱時，他們會負責支付服務。 自助購買訂閱只適用于電源平台產品 (Power BI、Power App 及 Power) 、Project 和 Visio 的自動功能。 如需詳細資訊，請參閱 [自助購買常見問題](self-service-purchase-faq.md)。
 
 ## <a name="block-users-from-signing-up"></a>封鎖使用者進行註冊
 
@@ -60,4 +58,4 @@ ms.locfileid: "52107613"
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>我有封鎖目錄刪除的自助註冊訂閱
 
-個別使用者可以註冊的自助註冊產品，也會建立來賓使用者，以便在 Azure AD 目錄中進行驗證。 為了避免資料遺失，這些自助產品會封鎖目錄刪除，直到完全從目錄中刪除。 它們只可由 Azure AD 系統管理員刪除。如需詳細資訊，請參閱[Delete directory in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto)。
+個別使用者可以註冊的自助註冊產品，也會建立來賓使用者，以便在 Azure AD 目錄中進行驗證。 為了避免資料遺失，這些自助產品會封鎖目錄刪除，直到完全從目錄中刪除。 它們只可由 Azure AD 系統管理員刪除。如需詳細資訊，請參閱 [刪除 Azure Active directory 中的目錄](/azure/active-directory/users-groups-roles/directory-delete-howto)。

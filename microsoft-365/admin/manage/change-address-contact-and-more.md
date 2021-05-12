@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
-- PPM_jmueller
-ms.reviewer: tugu
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 瞭解如何對組織設定檔進行變更，例如組織名稱、位址、電話、技術連絡人及電子郵件。
 ms.date: 03/30/2021
-ms.openlocfilehash: 05908de7c4fc899669da2ba2a3d3024855f4b394
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 880a540db8b8b1a18ddebabd335c8c2dedd36721
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297089"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332432"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>變更貴組織的地址、技術連絡人等等
   

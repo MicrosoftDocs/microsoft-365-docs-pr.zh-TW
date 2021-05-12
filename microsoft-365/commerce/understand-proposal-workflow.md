@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: presharm
+ms.reviewer: presharm, jmueller
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,17 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
 search.appverid: MET150
 description: 深入瞭解方案，以協助您購買 Microsoft 產品和服務。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: a3c91168c90b91d83a9aa116c1ff57d103b3c48c
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: c61fa53267f2fdb60e78a05cd89aa6f364cb2395
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280868"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332951"
 ---
 # <a name="understand-the-proposal-workflow"></a>瞭解提案工作流程
 
@@ -171,7 +170,7 @@ Microsoft 客戶合約 (MCA) 可讓組織購買 Microsoft 產品和服務。 如
 
 如果您是新的客戶，而且已購買 Azure 產品做為提案的一部分，下一步是設定新的帳單帳戶。 若要深入瞭解，請參閱 [設定您的帳單帳戶的 Microsoft 客戶合約](/azure/cost-management-billing/manage/mca-setup-account)。
 
-如果您是具有 Enterprise 合約的現有 Azure 客戶，而且您是第一次簽署 MCA，您下一步是瞭解各協定之間的變更，以及如何使用新的計費帳戶完成工作。 若要深入瞭解，請參閱[在您的計費帳戶中完成 Enterprise 合約的 Microsoft 客戶合約的工作](/azure/cost-management-billing/manage/mca-enterprise-operations)。
+如果您是具有企業合約的現有 Azure 客戶，而且您是第一次簽署 MCA，您下一步是瞭解各協定之間的變更，以及如何使用新的計費帳戶完成工作。 若要深入瞭解，請參閱 [您的帳單帳戶中的完整企業合約任務，以取得 Microsoft 客戶合約](/azure/cost-management-billing/manage/mca-enterprise-operations)。
 
 ## <a name="understand-invoicing"></a>瞭解開票
 

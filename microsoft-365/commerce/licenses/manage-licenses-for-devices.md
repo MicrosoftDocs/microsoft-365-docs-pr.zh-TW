@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,27 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 description: 瞭解如何將授權指派給群組，以用於裝置。
 ms.custom:
-- okr_SMB
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.openlocfilehash: a316810e3e6ddb1373697dc56b2fccb5a32cf0b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- okr_SMB
+- commerce_licensing
+search.appverid: MET150
+ms.date: 03/17/2021
+ms.openlocfilehash: 67bd0734953c64f51390aac949a7da477914c7b4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911479"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331655"
 ---
 # <a name="manage-licenses-for-devices"></a>管理裝置的授權
 
 如果您有 Microsoft 365 Apps for enterprise (device) 或 Microsoft 365 Apps for 教育版 (裝置) ，您可以使用 Azure AD 群組將授權指派給裝置。 當裝置具有授權時，使用該裝置的任何人都可以使用 Microsoft 365 Apps for enterprise (先前命名為 Office 365 ProPlus) 。 例如，假設您有20個可擕式電腦及您組織中的人員所使用的平板電腦。 當您指派授權給每個裝置時，登入其中一個裝置的每一位使用者都使用 Microsoft 365 應用程式的企業版，而不需要自己的授權。
 
 > [!IMPORTANT]
-> 適用于企業的 Microsoft 365 應用程式的裝置型授權，只會做為部分商業客戶和某些教育客戶的附加元件授權。 針對商業客戶，授權是 *Microsoft 365 應用程式的 enterprise (device)* ，且只能透過 enterprise 合約/Enterprise 合約訂閱使用。 針對教育版客戶，授權是 *Microsoft 365 應用程式教育版 (裝置)* ，且只能透過註冊教育版解決方案 (EES) 。 如需詳細資訊，請閱讀「 [教育](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/)版上的博客文章。 如需商用，請與您的 Microsoft 客戶代表聯繫。
+> 適用于企業的 Microsoft 365 應用程式的裝置型授權，只會做為部分商業客戶和某些教育客戶的附加元件授權。 針對商業客戶，授權是 *Microsoft 365 應用程式的 enterprise (device)* ，且只能透過 enterprise 合約/Enterprise 合約訂閱使用。 針對教育版客戶，授權是 *Microsoft 365 應用程式教育版 (裝置)* ，且只能透過註冊教育版解決方案 (EES) 。 如需詳細資訊，請閱讀「 [教育](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education)版上的博客文章。 如需商用，請與您的 Microsoft 客戶代表聯繫。
 
 若要開始，請在 Azure Active Directory 系統管理中心建立群組，然後將裝置指派至群組。 若要深入瞭解裝置授權（包括裝置需求、您可以使用的群組類型，以及如何設定 Microsoft 365 應用程式以使用裝置授權），請參閱 [適用于企業的 microsoft 365 應用程式的裝置型授權](/deployoffice/device-based-licensing)。
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,26 +13,23 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: jkinma
-description: 瞭解如何為商務版訂閱購買及管理您的 Microsoft 365 的附件。
+description: 瞭解如何購買和管理適用于商務用 Microsoft 365 訂閱的附加元件。
 ms.date: 04/02/2021
-ms.openlocfilehash: d60503cd7ab7be219c3ed813dd1d9aef480cd4dc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8cf586114c9b6ab30a9f4e5acdd669e185edd71b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297329"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331775"
 ---
 # <a name="buy-or-manage-add-ons"></a>購買或管理附加元件
 
-許多商務方案 Microsoft 365 都具有您可以為訂閱購買的附加元件。 附加元件提供更多功能，可增強您的訂閱經驗。
+許多 Microsoft 365 for business 方案都具有您可以為訂閱購買的附加元件。 附加元件提供更多功能，可增強您的訂閱經驗。
 
 附加元件有兩種類型：
 

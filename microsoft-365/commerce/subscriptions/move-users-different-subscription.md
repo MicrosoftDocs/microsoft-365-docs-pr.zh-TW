@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: micurn
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_subscriptions
-- PPM_nicholak
 search.appverid: MET150
 description: 瞭解如何在訂閱間移動使用者。
 ms.date: 07/01/2020
-ms.openlocfilehash: 7adaa0eba1ccc06029ab5f4e1ada1d961155e66b
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 0261ee15d16e895cb2552320097d8e6b396d5220
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280472"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333203"
 ---
 # <a name="move-users-to-a-different-subscription"></a>將使用者移至其他訂閱
 
@@ -73,5 +72,5 @@ ms.locfileid: "52280472"
 [將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md) (文章)\
 [從您的訂閱中移除授權](../licenses/buy-licenses.md) (文章) \
 [手動變更方案](change-plans-manually.md) (文章) \
-[瞭解商務 Microsoft 365 中的訂閱與授權](../licenses/subscriptions-and-licenses.md) (文章) \
-[Microsoft 365 商務訂閱 (文章) 購買其他的](../try-or-buy-microsoft-365.md)
+[瞭解 Microsoft 365 for business 中的訂閱和授權](../licenses/subscriptions-and-licenses.md) (文章) \
+[購買其他 Microsoft 365 for business 訂閱](../try-or-buy-microsoft-365.md) (文章) 

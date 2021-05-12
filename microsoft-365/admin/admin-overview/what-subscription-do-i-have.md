@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何透過前往 [產品] 頁面來驗證您的組織所擁有的訂閱。
 ms.date: 01/21/2021
-ms.openlocfilehash: c54b9795487f1cfc5902c2c761fdd65b78109bcf
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: e1f7ebecafa5edff1ccc3d6eb4e4dc143054996a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327231"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332663"
 ---
 # <a name="what-subscription-do-i-have"></a>我有何種訂閱？
 
 如果您是系統管理員，可以前往系統管理中心確認您的組織有哪些訂閱。
   
- **不是系統管理員？** 請參閱 [我有哪些 Microsoft 365 的商務版產品或授權？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**不是系統管理員？** 請參閱 [我有哪些 Microsoft 365 的商務版產品或授權？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，您會看到所有的訂閱。 每個訂閱行都包含授權、訂閱狀態和帳單的相關資訊。

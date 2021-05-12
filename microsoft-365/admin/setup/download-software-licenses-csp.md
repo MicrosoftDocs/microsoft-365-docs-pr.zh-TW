@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,18 +13,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
+- commerce_licensing
 description: 瞭解如何透過雲端方案提供者 (CSP) 程式，下載永久軟體購買的軟體和產品授權金鑰。
-ms.openlocfilehash: 9e55161111ae1796e8254a60ecdc693592988386
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.date: 01/27/2021
+ms.openlocfilehash: 85dfdb8952278b8c1c3dd23a2ceca7481a683989
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029395"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332399"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>下載永久軟體和產品授權碼
 
