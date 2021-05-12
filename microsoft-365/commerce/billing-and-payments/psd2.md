@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jamitche
+ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,17 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 search.appverid: MET150
 description: 從2019年9月14日開始，您必須先在歐洲經濟區域的31個國家/地區中取得銀行，以確認進行線上購買之人員的身分識別，才能處理付款。
 keywords: 付款服務指令程式2、強客戶驗證、多重要素驗證
 ms.date: 11/03/2020
-ms.openlocfilehash: e687cac5bb1b7f1c88e9166993e29d437134e138
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: bbbbe9f53c11fcae9c35cda1fd4e7d4b51a9c767
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280844"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331940"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>適用于商業客戶的支付服務指令2和強客戶驗證
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,14 +19,13 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 ms.date: 04/02/2021
-ms.openlocfilehash: 00c1fdca0f1ba227dcd10dffb7c46b03618593e7
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 73acb6a12499953e56eda7d4274160c6e79ee440
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280856"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331979"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用計費設定檔支付訂閱費用
 
@@ -220,7 +219,7 @@ ms.locfileid: "52280856"
 
 ## <a name="can-i-pay-my-invoice-online"></a>我可以在線上支付我的發票嗎？
 
-如果為您的帳單設定檔關閉定期計費，您可以使用信用卡線上支付發票。 若要進行支付，請在 Microsoft 365 系統管理中心的發票上使用 [**立即付款**] 按鈕。 若要尋找您的發票，請參閱 [查看您的帳單或發票](view-your-bill-or-invoice.md)。
+如果為您的帳單設定檔關閉定期計費，您可以使用信用卡線上支付發票。 若要進行支付，請在 Microsoft 365 系統管理中心的發票上使用 [ **立即付款** ] 按鈕。 若要尋找您的發票，請參閱 [查看您的帳單或發票](view-your-bill-or-invoice.md)。
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>我可以從目前的付款方式變更為透過發票付款嗎？
 

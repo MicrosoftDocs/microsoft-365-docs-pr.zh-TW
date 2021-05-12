@@ -13,31 +13,31 @@ ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ff3c889f3e4d6779b08584ba6537da36d6f2660e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b30608b858f06951a8f4c250f288a8d44bd84b08
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203529"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333827"
 ---
 # <a name="eop-features"></a>EOP 功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
--  [Exchange Online Protection 獨立](exchange-online-protection-overview.md)
+-  [獨立 Exchange Online Protection](exchange-online-protection-overview.md)
 
 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
 
 > [!TIP]
-> [Microsoft 365 for business 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是找出即將推出之新功能之相關資訊的有用資源。 如需深入了解不同的 EOP 訂閱方案可提供什麼功能，請參閱 [Exchange Online Protection 服務描述](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+> [business 藍圖的 Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是用來找出即將推出之新功能之相關資訊的有用資源。 如需深入了解不同的 EOP 訂閱方案可提供什麼功能，請參閱 [Exchange Online Protection 服務描述](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
 ****
 
 |功能|描述|
 |---|---|
 |**反垃圾郵件保護**||
-|輸入垃圾郵件偵測|如需詳細資訊，請參閱 [Microsoft 365 中的反垃圾郵件保護](anti-spam-protection.md)。 <p> 在獨立版 EOP 環境中，EOP 會保護內部部署 Exchange 信箱，您必須在內部部署 Exchange 中設定郵件流程規則 (又稱為傳輸規則) 以轉譯 EOP 垃圾郵件篩選裁決，這樣垃圾郵件規則才可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱 [Configure 獨立 EOP 以將垃圾郵件傳送至混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
+|輸入垃圾郵件偵測|如需詳細資訊，請參閱[Microsoft 365 中的反垃圾郵件保護](anti-spam-protection.md)。 <p> 在獨立版 EOP 環境中，EOP 會保護內部部署 Exchange 信箱，您必須在內部部署 Exchange 中設定郵件流程規則 (又稱為傳輸規則) 以轉譯 EOP 垃圾郵件篩選裁決，這樣垃圾郵件規則才可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱 [Configure 獨立 EOP 以將垃圾郵件傳送至混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |輸出垃圾郵件偵測|如果您使用該服務來傳送輸出郵件，則會永遠啟用輸出反垃圾郵件保護。 如需詳細資訊，請參閱 [輸出垃圾郵件保護](outbound-spam-controls.md)。|
 |退信攻擊保護|如需詳細資訊，請參閱 [退信攻擊與 EOP](backscatter-messages-and-eop.md)。|
 |大宗郵件篩選|EOP 使用大量投訴臨界值 (BCL) 將大量電子郵件標記為垃圾郵件。 如需詳細資訊，請參閱下列主題： <p> [垃圾郵件和大量電子郵件有什麼不同？](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [EOP 中的大量投訴層級 (BCL) ](bulk-complaint-level-values.md) <p> [設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
@@ -49,7 +49,7 @@ ms.locfileid: "51203529"
 |建立自訂反垃圾郵件原則|為了獲得更多細微性，您可以建立自訂的反垃圾郵件原則，並將它們套用至組織中的指定使用者、群組或網域。 自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (亦即執行順序)。 如需詳細資訊，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。|
 |設定垃圾郵件篩選郵件的動作|例如，您可以刪除經過內容篩選的郵件，或將它們傳送到垃圾電子郵件資料夾或隔離。 如需詳細資訊，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。|
 |國際垃圾郵件篩選|您可以設定反垃圾郵件篩選，以篩選以特定語言撰寫或從特定國家或地區傳送的郵件。 如需詳細資訊，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。|
-|透過 Outlook 或 Outlook 網頁版 (先前為 Outlook Web 應用程式) 管理垃圾郵件|系統管理員和使用者可以建立安全的寄件者清單以及封鎖的寄件者清單。 如需詳細資訊，請參閱 [關於 Outlook 中的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)。 <p> 如果您正在使用 EOP 來協助保護內部部署信箱，請務必使用目錄同步作業協助確保這些設定會同步到服務。 若需設定目錄同步作業的詳細資訊，請參閱 [管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md) 中的「使用目錄同步作業來管理郵件使用者」。|
+|透過 Outlook 或 Outlook 網頁版 (先前為 Outlook Web 應用程式) 管理垃圾郵件|系統管理員和使用者可以建立安全的寄件者清單以及封鎖的寄件者清單。 如需詳細資訊，請參閱[關於 Outlook 中的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)。 <p> 如果您正在使用 EOP 來協助保護內部部署信箱，請務必使用目錄同步作業協助確保這些設定會同步到服務。 若需設定目錄同步作業的詳細資訊，請參閱 [管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md) 中的「使用目錄同步作業來管理郵件使用者」。|
 |報告對 Microsoft 的誤報和漏報。|如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。|
 |使用者垃圾郵件隔離通知|如需詳細資訊，請參閱 [使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md) 與 [設定使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。|
 |在隔離入口網站中查看、尋找及管理郵件。|如需詳細資訊，請參閱 [在 EOP 中管理被隔離的郵件和](manage-quarantined-messages-and-files.md) 檔案，或 [尋找並釋放被隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。|
@@ -67,10 +67,10 @@ ms.locfileid: "51203529"
 |條件式郵件路由|如需詳細資訊，請參閱[案例：條件式郵件路由](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)。|
 |隨機或強制 TLS|隨機或強制 TLS 可供連接器使用。 隨機 TLS 會嘗試 TLS 連線，但是如果 TLS 連線失敗時會使用 SMTP 連線。 強制 TLS 會強制使用 TLS 連線，這表示如果 TLS 連線失敗，就會拒絕郵件。 如需 TLS、安全性和連接器的詳細資訊，請參閱[Set up connectors for secure mail flow with a partner organization](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)。|
 |地區路由 (流向特定地區的郵件流程限制)|如需詳細資訊，請參閱 [Exchange Online Protection 概觀](exchange-online-protection-overview.md) 中的「EOP 資料中心」一節。|
-|SMTP 連線檢查程式工具|如需使用此工具測試郵件流程的詳細資訊，請參閱 [test mail flow，方法是驗證您的 Microsoft 365 連接器](/exchange/mail-flow-best-practices/test-mail-flow)。|
+|SMTP 連線檢查程式工具|如需使用此工具測試郵件流程的詳細資訊，請參閱透過[驗證 Microsoft 365 連接器來測試郵件流程](/exchange/mail-flow-best-practices/test-mail-flow)。|
 |符合子網域|如需關於啟用公認的網域之子網域的雙向郵件流程的詳細資訊，請參閱 [EOP 中的郵件流程](mail-flow-in-eop.md)。|
 |**郵件流程規則**||
-|原則式篩選和動作|自訂原則是以 Exchange 郵件流程規則為基礎， (也稱為傳輸規則) 。 您可以透過網域、關鍵字、檔案名稱、檔案類型、主旨列、郵件內文、寄件者、收件者、標頭和 IP 位址進行篩選。 如需詳細資訊，請參閱 [Exchange Online Protection 中的郵件流程規則 (傳輸規則)](mail-flow-rules-transport-rules-0.md)。|
+|原則式篩選和動作|自訂原則是以 Exchange 郵件流程規則為基礎， (也稱為 transport rules) 。 您可以透過網域、關鍵字、檔案名稱、檔案類型、主旨列、郵件內文、寄件者、收件者、標頭和 IP 位址進行篩選。 如需詳細資訊，請參閱 [Exchange Online Protection 中的郵件流程規則 (傳輸規則)](mail-flow-rules-transport-rules-0.md)。|
 |依據文字模式篩選|郵件流程規則可以使用陣列或規則運算式來比對文字。 您也可以使用單一字串或字串陣列來比對許多郵件屬性，例如地址、主旨、內文或附件名稱。 如需詳細資訊，請參閱 [Exchange Online Protection 中的郵件流程規則 (傳輸規則)](mail-flow-rules-transport-rules-0.md)|
 |自訂字典|郵件流程可以包含較長的文字和關鍵字清單，提供和自訂字典相同的功能。|
 |以網域為基礎的原則規則|郵件流程規則的範圍可自訂以比對寄件者或收件者網域名稱、IP 位址範圍、地址關鍵字或模式、群組成員資格和其他條件。|
@@ -98,6 +98,6 @@ ms.locfileid: "51203529"
 |電話和 web 技術支援，每天 24 小時，每週七天|如需 EOP 協助和支援選項的詳細資訊，請參閱 [EOP 的說明和支援](help-and-support-for-eop.md)。|
 |**其他功能**||
 |異地備援的伺服器全域網路|EOP 執行於資料中心的全球性網路，這些資料中心的設計目的是協助提供最佳的可用性。如需詳細資訊，請參閱 [Exchange Online Protection 概觀](exchange-online-protection-overview.md) 中的「EOP 資料中心」一節。  |
-|內部部署伺服器無法接收郵件時，將郵件加入佇列|延期的郵件會在一天內保留在佇列中。 郵件重試次數乃是根據我們從收件者的郵件系統所取回的錯誤。 平均而言，郵件會每隔 5 分鐘重試一次。 如需詳細資訊，請參閱 [EOP 排入佇列、延後和退回的訊息常見問題集](eop-queued-deferred-and-bounced-messages-faq.md)。|
+|內部部署伺服器無法接收郵件時，將郵件加入佇列|延期的郵件會在一天內保留在佇列中。 郵件重試次數乃是根據我們從收件者的郵件系統所取回的錯誤。 平均而言，郵件會每隔 5 分鐘重試一次。 如需詳細資訊，請參閱 [EOP 排入佇列、延後和退回的訊息常見問題集](eop-queued-deferred-and-bounced-messages-faq.yml)。|
 |Office 365 郵件加密可以作為附加元件服務使用|如需詳細資訊，請參閱 [Office 365 中的加密](../../compliance/encryption.md)。|
 |

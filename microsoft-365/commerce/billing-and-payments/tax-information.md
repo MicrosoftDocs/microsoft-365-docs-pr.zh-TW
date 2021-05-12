@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: tugu
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,14 +19,13 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 ms.date: 03/17/2021
-ms.openlocfilehash: fc1e2924a6b28c30841f890396d5d82ed2944bea
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 5c472615846ba6460bc829bc0157c6c6da940292
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280592"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332015"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -141,7 +140,7 @@ ms.locfileid: "52280592"
 2. 在 **[產品]** 索引標籤上，選擇您想要更新的訂閱。
 3. 在 [訂閱詳細資料] 頁面上，選取 [ **服務使用位址** ] 區段中的 [ **編輯服務使用位址**]。
 4. 在 [ **編輯服務使用位址** ] 窗格的 [ **加值稅 號碼** ] 方塊中，輸入您的 加值稅 ID （包括前置詞），且不含任何空格。
-5. 選取 [儲存 **]**。
+5. 選取 **[儲存]**。
 
 ## <a name="how-taxes-are-calculated"></a>如何計算稅金
 

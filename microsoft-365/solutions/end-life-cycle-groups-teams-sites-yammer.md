@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 群組、小組和 Yammer 的生命週期選項結束。
-ms.openlocfilehash: 405d87c645118cf0ef318d4d68802d17da8c5673
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f1f91e64af7e16016398a7c326feec5a9b073ca9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916127"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333779"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>群組、小組和 Yammer 的生命週期選項結束
 
@@ -37,7 +37,7 @@ Microsoft 365 群組和 Microsoft 團隊使用各種相連的服務。 刪除群
 |OneNote|筆記本|
 |Outlook|郵件和行事曆|
 |Planner|專案狀態與任務資訊|
-|自動功耗|Workflows|
+|電源自動化|工作流程|
 |Power BI|資料、報表及儀表板|
 |網頁上的專案|專案計劃|
 |藍圖|藍圖|
@@ -79,7 +79,8 @@ Microsoft 365 群組和 Microsoft 團隊使用各種相連的服務。 刪除群
 
 無法使用原生 Microsoft 團隊功能複製或移動通道中的交談。 不過，您可以使用圖形 API 來匯出。
 
-此外，如果將保留原則套用至小組，便會透過 eDiscovery 搜尋保留並提供交談。  (在 eDiscovery 搜尋中找到的專案可以匯出，但原始來源沒有任何內容或結構，只是個別的郵件。 ) 
+此外，如果將保留原則套用至小組，便會透過 eDiscovery 搜尋保留並提供交談。 使用高級 eDiscovery，您可以 [重構小組聊天](/microsoft-365/compliance/conversation-review-sets)。
+
 
 ### <a name="archiving-a-team"></a>封存小組
 
@@ -128,7 +129,7 @@ Microsoft 365 群組和 Microsoft 團隊使用各種相連的服務。 刪除群
 
 **將整個筆記本當做套件匯出**
 
-如果整個筆記本必須保留現有的結構，則可以將它 [匯出為 OneNote 的套件](https://support.office.com/article/a4b60da5-8f33-464e-b1ba-b95ce540f309) 檔案，然後匯入到新的位置。 您也可以使用這種方法，將內容保留在單一檔案中，而不是保留現有的多檔結構。
+如果整個筆記本必須保留現有的結構，則可以將它[匯出為 OneNote 的套件](https://support.office.com/article/a4b60da5-8f33-464e-b1ba-b95ce540f309)檔案，然後匯入到新的位置。 您也可以使用這種方法，將內容保留在單一檔案中，而不是保留現有的多檔結構。
 
 **列印為 PDF**
 
@@ -144,7 +145,7 @@ Microsoft 365 群組和 Microsoft 團隊使用各種相連的服務。 刪除群
 
 **匯出郵件和行事曆**
 
-小組或群組成員可以將 [信箱和行事曆的內容匯出至 Outlook 資料/個人儲存區 (PST) ](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)檔案。 您可以將此檔案儲存在其他地方，也可以將內容匯入至不同的信箱。 不建議使用，因為 PST 檔案的內容無法搜尋，也不會在 Outlook 中開啟，而且檔案本身可能會損毀。
+小組或群組成員可以將[信箱和行事曆的內容匯出至 Outlook 資料/個人儲存體 (PST) ](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)檔案。 您可以將此檔案儲存在其他地方，也可以將內容匯入至不同的信箱。 因為 PST 檔案的內容不會在 Outlook 中開啟，所以檔本身可能會損毀，所以不建議使用前者。
 
 **IT-執行內容遷移**
 
@@ -156,7 +157,7 @@ Microsoft 365 群組和 Microsoft 團隊使用各種相連的服務。 刪除群
 
 **將計畫匯出至試算表**
 
-如果只需要保留記錄保留用途的計畫複本，最簡單的方法是將 [方案匯出至 Excel 試算表](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a)。 這是單向的動作，因為沒有從試算表匯入計畫的選項。
+如果只需要保留記錄保留用途的計畫複本，最簡單的方法是將[計畫匯出至 Excel 試算表](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a)。 這是單向的動作，因為沒有從試算表匯入計畫的選項。
 
 > [!IMPORTANT]
 > 將計畫匯出至 Excel 會在計畫內取得大部分資訊，但不會包含批註、連結或檔案。
@@ -169,9 +170,9 @@ Microsoft 365 群組和 Microsoft 團隊使用各種相連的服務。 刪除群
 
 您也可以 [複製整個計畫](https://support.microsoft.com/office/50401e13-a25f-40df-93c6-b608cc28c3d4)。 不過，這不能是現有的群組，甚至是在相同的群組內。 複製計畫將會建立新的群組。 此外，複製整個計畫時，不會包含批註、工作分派、連結、附件或日期。
 
-## <a name="power-automate"></a>自動功耗
+## <a name="power-automate"></a>電源自動化
 
-在 [自動] 與群組或小組相關的流程中建立的流程不屬於群組，而是由建立者所擁有，只是與其他使用者和群組共用。 當群組或小組遭到刪除時，不會受到影響。
+在 Power Automate 中建立並與群組或小組相關聯的資料流程不屬於群組，而是由建立者所擁有，只是與其他使用者和群組共用。 當群組或小組遭到刪除時，不會受到影響。
 
 **變更流程的擁有權**
 
@@ -183,27 +184,27 @@ Microsoft 365 群組和 Microsoft 團隊使用各種相連的服務。 刪除群
 
 ## <a name="power-bi"></a>Power BI
 
-Power BI 資料和工作區可以獨立于群組和團隊運作，如其他工作負載提供不同的 offboarded 方式。
+Power BI 資料和工作區可以獨立于群組和團隊運作，也如同其他工作負載提供不同的 offboarded 方法。
 
 **將報表複製到另一個工作區**
 
-如果報表需要在群組或小組的生命週期內保留其功能狀態，則可以 [從現有的工作區將它複製到 POWER BI 中的另一個工作區](/power-bi/connect-data/service-datasets-copy-reports)。
+如果報表需要在群組或小組的生命週期內保留其功能狀態，則可以[從現有的工作區將它複製到 Power BI 中的另一個工作區](/power-bi/connect-data/service-datasets-copy-reports)。
 
 **從儀表板或報表匯出資料**
 
-或者，如果報表不再需要使用中，但資料必須保留，則可以 [匯出至 Excel](/power-bi/visuals/power-bi-visualization-export-data)。
+或者，如果報表不再需要使用中，但資料必須保留，則可以將資料[匯出至 Excel](/power-bi/visuals/power-bi-visualization-export-data)。
 
 ## <a name="project"></a>Project
 
-在 web 上的 Project 中建立的專案和路線圖可以與 Microsoft 365 群組相關聯，並提供與 Power BI 類似的脫離方式。
+在 web Project 中建立的專案和路線圖可以與 Microsoft 365 群組相關聯，並提供與 Power BI 類似的脫離方式。
 
 **將專案指派給另一個群組**
 
-如果專案需要在群組或小組的生命週期內保留其功能狀態，則可以使用 Dynamics 365 系統管理中心將其 [指派給不同的 Microsoft 365 群組](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) 。
+如果專案需要在群組或小組的生命週期內保留其功能狀態，則可以使用 Dynamics 365 系統管理中心將其[指派給不同的 Microsoft 365 群組](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project)。
 
 **從專案或藍圖匯出資料**
 
-您可以使用 Dynamics 365 系統管理中心，將 [專案中的使用者資料匯出](/project-for-the-web/export-user-data-from-project-for-the-web) 至試算表，或是使用 PowerShell 腳本可以將資料匯出至 project file (。MPP) 和 XML 檔案格式。
+您可以使用 Dynamics 365 系統管理中心，將[專案中的使用者資料匯出](/project-for-the-web/export-user-data-from-project-for-the-web)至試算表，或者，如果使用 PowerShell 腳本，可以將資料匯出至 Project 檔 (。MPP) 和 XML 檔案格式。
 
 ## <a name="sharepoint"></a>SharePoint
 「小組通道」中的所有檔案都會儲存在相關群組 SharePoint 網站的文件庫中。 在某些情況下，檔以外的內容可能會存在於 SharePoint 中，例如清單或頁面。
@@ -212,7 +213,7 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，如其他工�
 - 頁面-網站頁面庫
 - 頁面中使用的圖像–網站資產庫
 - 通道中的檔案–文件庫
-- Wiki 頁面-小組 Wiki 資料庫
+- wiki 頁面– Teams wiki 資料庫
 
 如果網站上有一個或多個子網站，則每個子網站都必須重複執行脫離程式。 如果團隊包含專用通道，則每個通道都有個別的 SharePoint 網站。
 
@@ -220,14 +221,14 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，如其他工�
 
 **下載檔案**
 
-如以上所述的其中一個文件庫中儲存的檔案 SharePoint，可將這些檔案 [下載到本機電腦](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05)。
+如以上所述的其中一個文件庫中儲存的檔案 SharePoint，可將這些檔案[下載到本機電腦](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05)。
 
 **移動檔**
 
 此外，檔案也可以移至 SharePoint 中的另一個位置，例如在不同網站中的文件庫。
 參考： https://support.office.com/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
 
-**匯出清單** 儲存在 SharePoint 清單內的資料可 [匯出至 Excel 試算表](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)，並再次匯入至另一個網站中的清單。
+**匯出清單** 儲存在 SharePoint 清單內的資料可 [匯出至 Excel 試算表](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)，並重新匯入至另一個網站中的清單。
 
 或者，您可以使用協力廠商工具來遷移網站間的清單，以保留函數、清單視圖、格式及其他屬性。
 
@@ -237,7 +238,7 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，如其他工�
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
-如同電源自動化，與群組或小組相關聯之資料流程中的影片實際上不是歸群組所有，而且在刪除群組時不會被刪除。 資料流程中的影片是由上傳或建立影片的人員所擁有，即使他們將使用者或群組新增為擁有者也是一樣。 在小組管道記錄的會議情況也是如此。它們是由啟動錄製的人員所擁有。
+如同 Power Automate，與群組或小組相關聯之資料流程中的影片實際上不是歸群組所有，而且在刪除群組時不會被刪除。 資料流程中的影片是由上傳或建立影片的人員所擁有，即使他們將使用者或群組新增為擁有者也是一樣。 這也是 Teams 通道中所記錄的會議案例。它們是由啟動錄製的人員所擁有。
 
 **新增其他擁有者**
 
@@ -249,12 +250,12 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，如其他工�
 
 ## <a name="yammer"></a>Yammer
 
-與 Microsoft 小組中的交談不同的是，Yammer 提供使用者和系統管理員選項來移動或匯出交談。
+與 Microsoft Teams 中的交談不同的是，Yammer 提供使用者和系統管理員選項來移動或匯出交談。
 
 **將交談移至另一個群組或群組**
 
-任何使用者都可以將交談移至其他 Yammer 群組，而不只是擁有者或系統管理員。 在 [傳統的 yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872)中也可以這種方式，以及 [新的 yammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680) 介面。
+任何使用者都可以將交談移至另一個 Yammer 群組，而不只是擁有人或系統管理員。 在[傳統的 Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872)中也可以這種方式，以及[新的 Yammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680)介面。
 
 **匯出網路資料**
 
-Yammer 網路系統管理員可以執行 [網路資料的匯出](/yammer/manage-security-and-compliance/export-yammer-enterprise-data)，但這樣做會匯出整個網路的所有交談。 產生的匯出但是會列出群組識別碼，因此可以根據這種方式來篩選交談。
+Yammer 網路系統管理員可以執行[網路資料匯出](/yammer/manage-security-and-compliance/export-yammer-enterprise-data)，但這樣做會匯出整個網路的所有交談。 產生的匯出但是會列出群組識別碼，因此可以根據這種方式來篩選交談。

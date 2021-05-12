@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1f0005ed4614a8d01d2a64e8853be99a204825c8
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 189cb574a436a457cce312f6cb02ca1bf7863a18
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086810"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333491"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>適用於美國政府客戶的適用於端點的 Microsoft Defender
 
@@ -78,7 +78,7 @@ Windows 10，版本 1909 (與[KB4586819](https://support.microsoft.com/help/4586
 Windows 10，版本 1903 (與[KB4586819](https://support.microsoft.com/help/4586819))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 10，版本 1809 (與[KB4586839](https://support.microsoft.com/help/4586839))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 10，版本 1803 (與[KB4598245](https://support.microsoft.com/help/4598245))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 10，版本1709 | ![否](images/svg/check-no.svg)<br />附注：不支援 | ![Yes ](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br />附注：已 [過時](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)，請升級 | ![否](images/svg/check-no.svg)<br />附注：不支援
+Windows 10，版本1709 | ![否](images/svg/check-no.svg)<br />附注：不支援 | ![Yes ](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<br />附注：已 [過時](/lifecycle/announcements/revised-end-of-service-windows-10-1709)，請升級 | ![否](images/svg/check-no.svg)<br />附注：不支援
 Windows 10，版本1703及更早版本 | ![否](images/svg/check-no.svg)<br />附注：不支援 | ![否](images/svg/check-no.svg)<br />附注：不支援 | ![否](images/svg/check-no.svg)<br />附注：不支援
 Windows使用[KB4586839](https://support.microsoft.com/help/4586839)) 的伺服器 2019 ( | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -86,10 +86,10 @@ Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/c
 Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 8.1 企業版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 8 Pro | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 7 SP1 Enterprise | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 7 SP1 企業版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Linux | ![是](images/svg/check-yes.svg) 預覽<br />請參閱下列附注 | ![是](images/svg/check-yes.svg) 預覽<br />請參閱下列附注 | ![是](images/svg/check-yes.svg) 預覽<br />請參閱下列附注
-macOS | ![是](images/svg/check-yes.svg) 預覽<br />請參閱下列附注 | ![是](images/svg/check-yes.svg) 預覽<br />請參閱下列附注 | ![是](images/svg/check-yes.svg) 預覽<br />請參閱下列附注
+Linux | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+macOS | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Android | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
 iOS | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
 
@@ -97,13 +97,10 @@ iOS | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](image
 > 若已指定修補程式，必須在裝置上架之前部署，才能將 Defender 設定為正確的環境。
 
 > [!NOTE]
-> 嘗試使用[Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)Windows 10 或 Windows Server 2019 的板載 Windows 裝置？ 如果使用 [設定向導](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)，或是使用 [命令列](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) 或 [腳本](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) -將 "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" 參數設定為1，則需要在 "Azure CLOUD" 底下選擇「azure US 政府」。
-
-> [!NOTE]
-> 針對 Linux，您需要版本101.25.72 及更新版本，以及 macOS 的版本101.25.69 和更新版本。
+> 使用 [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)嘗試使用 windows 10 或 windows Server 2019 之前的板載 windows 裝置？ 如果使用 [設定向導](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)，或是使用 [命令列](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) 或 [腳本](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) -將 "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" 參數設定為1，則需要在 "Azure CLOUD" 底下選擇「azure US 政府」。
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>針對伺服器使用 Azure Defender 時的作業系統版本
-[針對伺服器使用 Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp)時，可支援下列作業系統版本：
+[針對伺服器使用 Azure Defender](/azure/security-center/security-center-wdatp)時，可支援下列作業系統版本：
 
 作業系統版本 | GCC | GCC High | DoD
 :---|:---|:---|:---
@@ -149,7 +146,7 @@ Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/sv
 ## <a name="api"></a>API
 您必須使用下列 URIs，而不是 [API 檔](apis-intro.md)中列出的公用 URIs：
 
-端點類型 | GCC | GCC高 & DoD
+端點類型 | GCC | GCC 高 & DoD
 :---|:---|:---
 登入 | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
 適用于 Endpoint API 的 Defender | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
@@ -160,11 +157,11 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 ## <a name="feature-parity-with-commercial"></a>具有商業性的功能同位
 適用于美國政府客戶的 Defender （適用于美國政府客戶）沒有完整的與商業產品的效驗。 雖然我們的目標是將所有商業功能提供給我們的美國政府客戶，但仍有一些尚未提供的功能可供您選擇。
 
-以下是2021年4月的已知空隙：
+這些是已知的空白：
 
 功能名稱 | GCC | GCC High | DoD
 :---|:---|:---|:---
-管理和 APIs：資料流程 API | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+管理和 APIs：資料流程 API | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Web 內容篩選 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 整合： Azure Sentinel | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) 警示 <br /> ![否](images/svg/check-no.svg) & 原始資料的事件：開發中 | ![是](images/svg/check-yes.svg) 警示 <br /> ![否](images/svg/check-no.svg) & 原始資料的事件：開發中
 整合： Microsoft Cloud App Security | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
@@ -172,5 +169,5 @@ Web 內容篩選 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg
 整合： Microsoft Defender 身分識別 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 整合： Microsoft 端點 DLP | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
 整合： Microsoft Intune | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
-整合： Microsoft Power Automate & Azure Logic Apps | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+整合： Microsoft Power 自動化 & Azure 邏輯應用程式 | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 Microsoft 威脅專家 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作

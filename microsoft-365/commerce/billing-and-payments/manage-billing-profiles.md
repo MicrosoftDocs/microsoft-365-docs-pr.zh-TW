@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,16 +18,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 search.appverid: MET150
 description: 瞭解帳單設定檔如何支援發票。
 ms.date: 04/02/2021
-ms.openlocfilehash: 57786df370246c2b4fda556a9c48eb828db1cb4f
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 36d762e50627763b7856ed1fe6c109e8da2b4789
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280784"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332027"
 ---
 # <a name="understand-billing-profiles"></a>了解帳單設定檔
 
@@ -73,4 +72,4 @@ ms.locfileid: "52280784"
 
 如果您有任何問題或需要協助您的 Azure 費用，請 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">建立支援 azure 支援的支援要求</a>。
 
-如果您在 Microsoft 365 系統管理中心的帳單設定檔中有任何疑問或需要協助，請[聯繫商務產品支援](../../business-video/get-help-support.md)人員。
+如果您有任何疑問或需要協助您使用 Microsoft 365 系統管理中心的帳單設定檔，請 [聯繫商務產品支援](../../business-video/get-help-support.md)人員。

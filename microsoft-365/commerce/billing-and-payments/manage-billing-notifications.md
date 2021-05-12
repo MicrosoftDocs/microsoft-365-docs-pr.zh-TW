@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +16,17 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
 search.appverid:
 - MET150
 description: 瞭解如何管理接收帳單通知電子郵件和發票附件的人員。
-ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: d4083dc5a9d70eb8c20b4107389ec5fec65749ad
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911851"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332135"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>管理帳單通知和發票附件
 
@@ -56,7 +58,7 @@ ms.locfileid: "50911851"
 3. 在右窗格的 [指派的系統 **管理員** ] 索引標籤上，選取 [ **新增**]。
 4. 在 [ **新增系統管理員** ] 窗格中，輸入使用者的顯示名稱或使用者名稱，然後從建議清單中選取使用者。
 5. 在您完成之前，新增多個使用者。
-6. 選取 [儲存]。 使用者已新增至指派的系統管理員清單。
+6. 選取 **[儲存]**。 使用者已新增至指派的系統管理員清單。
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>使用 [帳單通知] 頁面移除系統管理員角色
 

@@ -2,9 +2,10 @@
 title: 購買新的授權
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- commerce_purchase
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何購買新的 Microsoft 365 for business 授權。
-ms.openlocfilehash: 3ca503abdf35e1bef95f784b7fc19c70a8de84bd
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: c9077dbb4c653d162df97e7f7bda47d929eb67ce
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422972"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332207"
 ---
 # <a name="buy-microsoft-365-licenses"></a>購買 Microsoft 365 授權
 
@@ -39,7 +41,7 @@ ms.locfileid: "50422972"
 1. 在 Microsoft 365 系統管理中心中，選擇[帳單 **]，然後** 選取您的訂閱。
 1. 選擇 [ **購買授權**]。
 1. 輸入您要購買的授權數目。
-1. 選取 [儲存]。
+1. 選取 **[儲存]**。
 1. 然後關閉視窗。
 1. 新的授權會新增至您的訂閱。
 1. 若要指派新的授權，請選取 [ **指派授權**]。

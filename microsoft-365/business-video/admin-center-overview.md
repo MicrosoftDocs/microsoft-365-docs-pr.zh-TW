@@ -21,14 +21,41 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 admin center。
-ms.openlocfilehash: 5ae72b51657cea1ce635c622e875cdf736ee1598
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221758"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332243"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心概觀
+
+- [簡化模式中的系統管理中心](#the-admin-center-in-simplified-view)
+- [儀表板視圖中的系統管理中心](#the-admin-center-in-dashboard-view)
+
+## <a name="the-admin-center-in-simplified-view"></a>簡化模式中的系統管理中心
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
+
+使用 Microsoft 365 系統管理中心，您可以重設密碼、查看您的發票、新增或移除使用者，以及在一個地方更多的功能。
+
+使用您的工作帳戶登入 Office.com，然後選取應用程式啟動器。 
+
+如果您有權存取系統管理中心，您會在清單中看到 [ **管理員** ]。 選取它。 
+
+在系統管理中心的頂端，查看最上層的動作。 視您已設定的專案而定，您可能會看到不同的動作，例如建立新帳戶、使用小組、設定電子郵件，以及安裝 Office 應用程式。 
+ 
+在 [**使用者**] 索引標籤的 [使用者] 索引卷 **標上，** 是可存取應用程式和服務的人員清單、新增使用者、重設密碼或使用 [**其他動作**] 功能表。 選取人員，以查看或編輯其資訊和設定。  
+
+在 [ **小組** ] 索引標籤上，建立新的小組或管理現有的團隊。 您可以管理小組成員或選取 [ **更多動作** ] 以變更其他小組設定。 
+
+在 [ **訂閱** ] 索引標籤上，新增 [其他產品]、[新增授權] 或 [ **其他動作** ] 功能表以修改授權或支付方式。
+
+在 [ **學習** ] 索引標籤上，流覽有關系統管理中心及其他 Microsoft 365 功能的影片和文章。 若要探索系統管理中心的更多高級功能，請開啟導覽功能表，並展開標題以查看更多內容。 選取 [ **全部顯示** ] 以查看導覽功能表中的所有專案，或使用搜尋列快速尋找您要尋找的專案。
+
+如果您需要協助，請選取 [ **協助 & 支援**]。 搜尋您想要協助的主題，並查看建議的解決方案，或選取耳機以聯繫支援人員，然後輸入您的問題和連絡人資訊。 
+
+## <a name="the-admin-center-in-dashboard-view"></a>儀表板視圖中的系統管理中心
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -59,8 +86,6 @@ Microsoft 365 系統管理中心是您在雲端管理貴公司的所在位置。
 依預設，註冊和購買 Microsoft 365 for business 訂閱的人員會取得系統管理員許可權。 該人員可將系統管理員許可權指派給其他人員，以協助他們管理其組織的 Microsoft 365。
 
 如果您收到「您沒有 **存取此頁面或執行此動作的許可權**」的訊息，表示您不是系統管理員。
-<br><br>    
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
   
 ### <a name="who-has-admin-permissions-in-my-business"></a>誰擁有我公司裡的系統管理員權限？
 <a name="bkmk_admin"> </a>

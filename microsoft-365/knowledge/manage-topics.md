@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 59581dce3701e622a1e2d7ed264370c9d92b3211
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2c29cdb6823e695cb9c96a4f51ef7b1c41642ac9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327269"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333623"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>管理 Microsoft Viva 主題中主題中心的主題
 
@@ -45,10 +45,6 @@ ms.locfileid: "52327269"
 - 已 **發佈**：已策劃的已確認主題：已進行手動編輯，以提升其品質。
 
 - **已移除**：主題是由知識管理員拒絕，且不會再對檢視器顯示。 您可以在任何狀態中移除主題 (建議、確認或發佈的) 。 若要移除的主題，必須從使用主題卡片上之意見反應機制的使用者處收到兩個否定投票的淨值。 例如，如果一個使用者投票了負數，另一個使用者對某特定主題投票了肯定的，則您仍然需要兩個負的投票來移除該主題。 移除已發佈的主題時，將需要透過主題中心的頁面庫手動刪除策劃詳細資料的頁面。
-
-在 [ **管理主題** ] 頁面上，知識管理員可以查看使用者的投票或特定人員是否已確認或移除某主題。 例如，針對使用者投票移除的主題，原因會顯示在 [ **移除者** ] 欄中為 [ **使用者投票** ]，而非人員的名稱。 
-
-   ![「管理主題」頁面的螢幕擷取畫面，顯示已移除的主題清單，並突出顯示使用者投票。](../media/knowledge-management/removed-topics-user-votes.png) 
 
 > [!Note] 
 > 在 [ **管理主題** ] 頁面上，每個知識管理員只會看到可以存取相關主題之基礎檔案及頁面的主題。 此許可權修整會反映在 [ **建議**]、[已 **確認**]、[ **已發佈**] 及 [ **已移除** ] 索引標籤中出現的主題清單中。 不過，這個主題會計陣列織中的總數量，不論許可權為何。

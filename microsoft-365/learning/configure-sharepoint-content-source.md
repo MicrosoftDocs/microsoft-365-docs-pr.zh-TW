@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 04/30/2021
+ms.date: 05/12/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,13 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: 瞭解如何將 SharePoint 設定為 Microsoft Viva 教學 (Preview) 的教學內容來源。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fc702f57b75b78ab523226ba7d8a8eb6505f2975
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2bed3a42d62e2aab2165ee38379eb07503807e6e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244118"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333575"
 ---
 # <a name="coming-soon-configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>即將推出：設定 SharePoint 做為 Microsoft Viva 教學 (Preview 的教學內容來源) 
 
@@ -92,7 +91,7 @@ Viva 教學 (預覽) 支援下列檔案類型：
 
        ![「學習內容存放庫」頁面 SharePoint 顯示新的選項。](../media/learning/learning-sharepoint-configure5.png)
  
-   2. 在 [ **新增專案** ] 面板的 [ **標題** ] 欄位中，新增您選擇的目錄名稱。 在 [ **資料夾 URL** ] 欄位中，新增「學習內容」資料夾的 URL。 選取 [儲存]。
+   2. 在 [ **新增專案** ] 面板的 [ **標題** ] 欄位中，新增您選擇的目錄名稱。 在 [ **資料夾 URL** ] 欄位中，新增「學習內容」資料夾的 URL。 選取 **[儲存]**。
 
        ![SharePoint 中的 [新增專案] 面板，顯示標題和資料夾 URL 欄位。](../media/learning/learning-sharepoint-configure6.png)
 
@@ -117,7 +116,7 @@ Viva 教學 (預覽) 支援下列檔案類型：
 
      ![檔頁面的 SharePoint 顯示顯示動作選項，並反白顯示單行文字。](../media/learning/learning-sharepoint-curation1.png)
 
-3. 在 [ **建立欄** ] 面板的 [ **名稱** ] 欄位中，新增欄的描述性名稱。 選取 [儲存]。
+3. 在 [ **建立欄** ] 面板的 [ **名稱** ] 欄位中，新增欄的描述性名稱。 選取 **[儲存]**。
 
      ![在 SharePoint 中建立 [欄] 面板，顯示名稱及其他欄位。](../media/learning/learning-sharepoint-curation2.png)
  

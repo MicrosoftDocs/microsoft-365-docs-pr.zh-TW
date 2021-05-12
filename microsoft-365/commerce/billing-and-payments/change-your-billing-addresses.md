@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +17,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: tugu
-search.appverid:
-- MET150
-description: 瞭解如何更新商務用 Microsoft 365 的帳單位址。 您也可以更新用來接收帳單通知的電子郵件地址。
+search.appverid: MET150
+description: 瞭解如何更新 Microsoft 365 for business 的帳單位址。 您也可以更新用來接收帳單通知的電子郵件地址。
 ms.date: 04/07/2021
-ms.openlocfilehash: ea212d79ef28d5d387bdb5503c267d7cd5113786
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 8bff090353c409f4364aed63e3b48a831608be2b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107191"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332161"
 ---
 # <a name="change-your-billing-addresses"></a>變更帳單地址
 
@@ -111,7 +109,7 @@ ms.locfileid: "52107191"
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
 
-    如果您使用的是中國在中國運作的 Office 365，請參閱[View a · or get Fapiaos for 由世紀運作的 Office 365](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md)。
+    如果您使用的是在中國運作的 Office 365，請參閱 [View a · or Get Fapiaos For office 365 （由世紀運作](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md)）。
 
 ::: moniker-end
 
@@ -125,7 +123,7 @@ ms.locfileid: "52107191"
 
 根據預設，您組織的帳單通知會傳送至 Microsoft 電子郵件地址，以及組織中每個全域和計費系統管理員的備用電子郵件地址。 每個管理員可以更新設定檔資訊以變更他們的備用電子郵件地址。
   
-1. 以您的工作或學校帳戶登入 Microsoft 365 成為全域系統管理員。[瞭解如何登入](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用您的公司或學校帳戶，以全域系統管理員身分登入 Microsoft 365。 [瞭解如何登入](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 選取 **使用者圖示**，然後選取 [ **我的帳戶**]。
   
