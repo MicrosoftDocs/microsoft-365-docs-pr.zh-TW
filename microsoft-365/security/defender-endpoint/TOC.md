@@ -211,7 +211,7 @@
 #### [概觀](next-gen-threat-and-vuln-mgt.md)
 #### [開始使用]()
 ##### [權限與必要條件](tvm-prerequisites.md)
-##### [支援的作業系統和平台](tvm-supported-os.md)
+##### [支援的作業系統平台與功能](tvm-supported-os.md)
 ##### [指派裝置值](tvm-assign-device-value.md)
 #### [評估您的安全性狀態]()
 ##### [儀表板深入解析](tvm-dashboard-insights.md)
