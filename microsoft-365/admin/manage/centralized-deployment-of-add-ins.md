@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 判斷您的承租人和使用者是否符合需求，讓您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: 8f73deb1059097640946fcf7dad1ca97cb2831b1
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296716"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464402"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷集中式部署的增益集是否適用于您的組織
 
@@ -155,5 +155,16 @@ You can do the opposite query by resolving the group to see if it's a member of 
   
 |**平台**|**偵錯資訊**|
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler 記錄檔  <br/>  租用戶識別碼 ( [了解做法](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID。 查看其中一個 office 頁面的來源，並尋找 [相關性識別碼] 值並傳送給支援：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler 記錄檔  <br/>  租用戶識別碼 ( [了解做法](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID。 查看其中一個 office 頁面的來源，並尋找 [相關性識別碼] 值並傳送給支援：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |豐富型用戶端 (Windows、Mac)  <br/> | Charles/Fiddler 記錄檔  <br/>  用戶端應用程式的組建編號 (最好是檔案 **/帳戶** 的螢幕擷取畫面)   <br/> |
+
+## <a name="related-content"></a>相關內容
+
+[在系統管理中心部署增益集](../manage/manage-deployment-of-add-ins.md) (文章) 
+
+[在系統管理中心管理增益集](manage-addins-in-the-admin-center.md) (文章) 
+
+[集中式部署常見問題](../manage/centralized-deployment-faq.md) (文章) 
+
+[將您的商務使用者 Microsoft 365 升級至最新的 Office 用戶端](../setup/upgrade-users-to-latest-office-client.md) (文章) 
+ 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender advanced 搜尋架構中的資料表格
+title: Microsoft 365 Defender 高級搜尋架構中的資料表格
 description: 了解進階搜捕結構描述中的表格，以明白您可以執行威脅搜捕查詢的資料
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、query、遙測、schema reference、kusto、table、data
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0313d1e95682d52e44cf90360c8ef322f0cad5db
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932914"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470577"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
 
@@ -58,9 +58,8 @@ ms.locfileid: "51932914"
 | 表格名稱 | 描述 |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | 與警示相關聯的檔案、IP 位址、URLs、使用者或裝置 |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | 來自 Microsoft Defender for Endpoint、microsoft Defender for Office 365、Microsoft Cloud App Security 及 Microsoft Defender for Identity 的警示，包括嚴重性資訊和威脅分類  |
-| **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | 雲端應用程式和服務中的檔相關活動 |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | 涉及 Office 365 和其他雲端應用程式和服務中的帳戶和物件的事件 |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | microsoft defender for Endpoint、microsoft defender for Office 365、Microsoft Cloud App Security 和 microsoft defender for Identity 的警示，包括嚴重性資訊和威脅分類  |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | 涉及 Office 365 和其他雲端應用程式和服務中之帳戶和物件的事件 |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | 多種事件種類，包括由安全性控制項觸發的事件，例如 Windows Defender 防毒軟體和惡意探索保護 |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | 從端點上的憑證驗證事件取得的簽署檔憑證資訊 |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | 檔案建立、修改及其他檔案系統事件 |

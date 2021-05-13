@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何透過關閉或開啟定期計費來續約您的 Microsoft 365。
 ms.date: 05/04/2021
-ms.openlocfilehash: e24f7301f6229e76b86f19594526e3ed84689221
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7421bb59a26d3c88114ebd9145dcbfe3916e7472
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333179"
+ms.locfileid: "52344635"
 ---
 # <a name="renew-microsoft-365-for-business"></a>續約商務用 Microsoft 365
 

@@ -21,7 +21,7 @@ search.appverid:
 description: 瞭解如何在 Microsoft 365 商務進階版中取得系統管理協助或支援。
 ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
 ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/11/2021
 ms.locfileid: "52327183"
@@ -43,7 +43,7 @@ ms.locfileid: "52327183"
 
 啟動線上服務要求，以節省時間。我們會協助您找出解決方案，或是為您洽詢專家。
 
-1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 如果您收到訊息，指出您沒有存取此頁面的許可權，或執行此動作，則您不是系統管理員。 (如需詳細資訊，請參閱 [誰在我的公司有系統管理員許可權？](admin-center-overview.md#who-has-admin-permissions-in-my-business)。) 
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 如果您收到訊息說明您沒有權限存取此頁面或執行此動作，則您不是系統管理員 (如需詳細資訊，請參閱[誰擁有公司的系統管理員權限？](admin-center-overview.md#who-has-admin-permissions-in-my-business))。
 
 2. 選取 [需要協助嗎?] 按鈕。
 
@@ -215,7 +215,7 @@ ms.locfileid: "52327183"
 
 ## <a name="feature-availability"></a>功能可用性
 
-若要查看不同 Office 365 方案中的功能可用性，請參閱[Office 365 服務描述](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)。
+若要檢視跨 Office 365 規劃的功能可用性，請參閱 [Office 365 服務說明](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)。
 
 ## <a name="follow-us-on-wechat"></a>在 WeChat 上關注我們
 

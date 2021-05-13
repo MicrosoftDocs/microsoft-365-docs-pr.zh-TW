@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 477f176d523fbb458ae266cad98b07a63a10050c
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: d0745ac2e4d5b78b40746fd0593a9af18e691021
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259340"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326827"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -220,7 +220,9 @@ ms.locfileid: "52259340"
 - 一或多個敏感性標籤[已建立和已發佈](create-sensitivity-labels.md) (給至少一個使用者)，這些標籤可供您針對自動套用標籤原則選取。 針對這些標籤：
     - Office 應用程式中的自動套用標籤標籤設定開啟與否並不重要，因為該標籤設定是補充自動套用標籤原則，如簡介中的說明。
     - 如果您想要用於自動套用標籤的標籤是設定為使用視覺標記 (頁首、頁尾、浮水印)，請注意，這些標籤不適用於文件。
-    - 如果標籤套用 [加密功能](encryption-sensitivity-labels.md)，則必須針對 **[立即指派權限]** 設定進行設定。
+    - 若標籤套用 [加密](encryption-sensitivity-labels.md)：
+        - 當自動套用標籤原則包括了 Microsoft Office SharePoint Online 或 Microsoft OneDrive 的位置時，此標籤必須針對 **立即指派權限** 進行設定。
+        - 當自動套用標籤原則只針對 Exchange Online，此標籤可針對 **立即指派權限** 或 **讓使用者指派權限** (適用於不可轉寄或僅加密選項) 進行設定。
 
 ### <a name="learn-about-simulation-mode"></a>了解模擬模式
 

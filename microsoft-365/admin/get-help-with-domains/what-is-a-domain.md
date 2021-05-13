@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0d4c59f24f5d5979d0f63d035edd1ca668ff4314
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: eac7de88e6d4c09e6807edbbd35d6ccc4718c671
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296692"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464330"
 ---
 # <a name="what-is-a-domain"></a>何謂網域？
 
@@ -58,5 +58,13 @@ ms.locfileid: "52296692"
 ## <a name="feeling-stuck"></a>無法順利進行設定嗎？
 
 撥打 Microsoft 支援服務- [取得協助設定網域](../../business-video/get-help-support.md)
-  
+
+## <a name="related-content"></a>相關內容
+
+[購買網域](buy-a-domain-name.md) (文章) 
+
+[新增網域至 Microsoft 365](../setup/add-domain.md) (文章) 
+
+[自訂網域 (文章中的試驗 Microsoft 365](../misc/pilot-microsoft-365-from-my-custom-domain.md)) 
+
 

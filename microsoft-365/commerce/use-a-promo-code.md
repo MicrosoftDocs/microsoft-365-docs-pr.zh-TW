@@ -17,15 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-search.appverid: MET150
+search.appverid: MET150 S
 description: 瞭解如何將促銷代碼套用至您的 Microsoft 365 訂閱，以降低價格，以及如何在發生錯誤時對促銷代碼進行疑難排解。
 ms.date: 03/17/2021
-ms.openlocfilehash: 30484915246e1d8b1389f09d71d9d67865962a7e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 2a75f3e31a417e505c0f91044c61270f8bad8bae
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332915"
+ms.locfileid: "52344647"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>使用您的促銷代碼來降低價格
 
@@ -42,7 +42,7 @@ ms.locfileid: "52332915"
   
 ## <a name="promo-code-terms"></a>促銷代碼條款
 
-下列指導方針適用于適用于商務用 Microsoft 365 訂閱的促銷代碼。
+下列指導方針適用于商務用 Microsoft 365 商務版訂閱的促銷代碼。
   
 - **每個訂閱的促銷代碼數目** 您可以在同一訂單中為多份訂閱使用一個促銷代碼，但您無法針對同一份訂閱使用多個促銷代碼。
 - **折扣期間** 將促銷代碼折扣套用至訂單之後，折扣會持續到訂閱期間結束為止。如果您的訂閱期限為逐月延續，促銷代碼折扣會持續到您所輸入的計費月份結束時。如果您的訂閱期限以年計算 (即使是每月付費)，促銷代碼折扣會持續到您所輸入的計費年份結束時。

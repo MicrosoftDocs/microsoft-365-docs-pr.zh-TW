@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender advanced 搜尋架構中的命名變更
+title: 在 Microsoft 365 Defender 高級搜尋架構中命名變更
 description: 追蹤和審閱高級搜尋架構中的命名變更表格和欄
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，資料，命名變更，重新命名
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，資料，命名變更，重新命名
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb6dfa628488239e3953d19d5e78b338e76f50a2
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023782"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470493"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高級搜尋架構命名變更
 
@@ -55,7 +55,7 @@ ms.locfileid: "52023782"
 
 | 資料行名稱 | 原始值名稱 | 新值名稱 | 變更的原因
 |--|--|--|--|
-| `DetectionSource` | MCAS |    Microsoft Cloud App Security | ..Org |
+| `DetectionSource` | MCAS |    Microsoft 雲端 App 安全性 | ..Org |
 | `DetectionSource` | WindowsDefenderAtp|   EDR| ..Org |
 | `DetectionSource` | WindowsDefenderAv | 防毒 | ..Org |
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | ..Org |
@@ -78,12 +78,12 @@ ms.locfileid: "52023782"
 
 1. 在 [ [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) ] 和 [ [EmailEvents](advanced-hunting-emailevents-table.md) ] 表格中，[ `MalwareFilterVerdict` 和] 欄已 `PhishFilterVerdict` 由欄所取代 `ThreatTypes` 。 `MalwareDetectionMethod`和 `PhishDetectionMethod` 欄也會取代 `DetectionMethods` 欄。 這種精簡功能可讓我們在新欄下提供更多資訊。 下圖提供對應。
 
-| 表格名稱 | 原始欄名稱 | 新欄名稱 | 變更的原因
-|--|--|--|--|
-| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包含更多偵測方法 |
-| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包含更多威脅類型 |
-| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包含更多偵測方法 |
-| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包含更多威脅類型 |
+    | 表格名稱 | 原始欄名稱 | 新欄名稱 | 變更的原因
+    |--|--|--|--|
+    | `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包含更多偵測方法 |
+    | `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包含更多威脅類型 |
+    | `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包含更多偵測方法 |
+    | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包含更多威脅類型 |
 
 
 2. 在 [ `EmailAttachmentInfo` 和 `EmailEvents` 表格] 中， `ThreatNames` 新增欄以提供有關電子郵件威脅的詳細資訊。 此欄包含垃圾郵件或網路釣魚詐騙等值。
@@ -92,18 +92,20 @@ ms.locfileid: "52023782"
 
 4. 在 [ [DeviceEvents](advanced-hunting-deviceevents-table.md) ] 表格中，已修改數個 ActionType 名稱，以更好地反映動作的描述。 您可以在下面找到變更的詳細資料。
 
-| 表格名稱 | 原始 ActionType 名稱 | 新 ActionType 名稱 | 變更的原因
-|--|--|--|--|
-| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | 客戶意見反應 |
-| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | 客戶意見反應 |
-| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | 客戶意見反應 |
-| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | 客戶意見反應 |
+    | 表格名稱 | 原始 ActionType 名稱 | 新 ActionType 名稱 | 變更的原因
+    |--|--|--|--|
+    | `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | 客戶意見反應 |
+    | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | 客戶意見反應 |
+    | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | 客戶意見反應 |
+    | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | 客戶意見反應 |
 
 ## <a name="march-2021"></a>2021 年 3 月
 
 `DeviceTvmSoftwareInventoryVulnerabilities`資料表已被取代。 請將其取代為 `DeviceTvmSoftwareInventory` 及 `DeviceTvmSoftwareVulnerabilities` 表格。
 
+## <a name="may-2021"></a>2021 年 5 月
 
+`AppFileEvents`資料表已被取代。 此 `CloudAppEvents` 表格包含用於表格中的資訊 `AppFileEvents` ，以及雲端服務中的其他活動。
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

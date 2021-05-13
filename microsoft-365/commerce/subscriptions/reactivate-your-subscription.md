@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 深入瞭解當您的訂閱到期、停用或取消時，如何重新開機訂閱。
 ms.date: 04/07/2021
-ms.openlocfilehash: 7f77a9782e9028521cbcefbdbffc49bc28db8e9c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 902be48b32acdff5173a0dd5cc84dbd5972e1ba9
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333167"
+ms.locfileid: "52345139"
 ---
 # <a name="reactivate-your-subscription"></a>重新啟動您的訂閱
 

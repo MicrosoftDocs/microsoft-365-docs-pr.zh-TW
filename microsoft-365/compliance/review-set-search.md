@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 瞭解如何在評審集中建立及執行查詢，以在高級 eDiscovery 案例中組織資料，以進行更有效率的審閱。
+description: 瞭解如何在評審集中建立及執行查詢，以在 Advanced eDiscovery 案例中組織資料，以進行更有效率的審閱。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ead897d412af2356d8b57ab8494539a5ed9a019
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 5a03b0c863f9cc2050b18ce83ed11b8a71d1db4d
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816566"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345797"
 ---
 # <a name="query-the-data-in-a-review-set"></a>查詢檢視集中的資料
 
@@ -36,7 +36,7 @@ ms.locfileid: "48816566"
 
 ## <a name="building-a-review-set-query"></a>建立審閱集查詢
 
-您可以使用關鍵字條件中的關鍵字、屬性和條件的組合來建立查詢。 您也可以將條件分組為封鎖 (稱為 *condition group* ) ，以建立更複雜的查詢。 如需您可以搜尋之中繼資料屬性的清單和描述，請參閱 [Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md)。
+您可以使用關鍵字條件中的關鍵字、屬性和條件的組合來建立查詢。 您也可以將條件分組為封鎖 (稱為 *condition group*) ，以建立更複雜的查詢。 如需您可以搜尋之中繼資料屬性的清單和描述，請參閱[Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md)。
 
 ### <a name="conditions"></a>條件
 
@@ -54,7 +54,7 @@ ms.locfileid: "48816566"
 
 ### <a name="query-language"></a>查詢語言
 
-除了條件之外，您還可以使用關鍵字條件中的類似 KQL 的查詢語言來建立您的查詢。 「檢查的複查集」查詢語言支援標準 Boolean 運算子，例如 **and** 、 **OR** 、 **NOT** 和 **NEAR** 。 它也支援單一字元萬用字元 (？ ) 和多字元萬用字元 ( * ) 。
+除了條件之外，您還可以使用關鍵字條件中的類似 KQL 的查詢語言來建立您的查詢。 「檢查的複查集」查詢語言支援標準 Boolean 運算子，例如 **and**、 **OR**、 **NOT** 和 **NEAR**。 它也支援單一字元萬用字元 (？ ) 和多字元萬用字元 ( * ) 。
 
 ## <a name="filters"></a>篩選
 
@@ -64,6 +64,6 @@ ms.locfileid: "48816566"
 
 篩選不同于查詢的兩個重要方式：
 
-- 篩選是暫時性的。 它們不會存在於現有的會話之外。 換句話說，您無法儲存篩選。 查詢會儲存至複查集，並在開啟評審集時進行存取。
+- 篩選是暫時性的。 它們不會存在於現有的會話之外。 換句話說，您無法儲存篩選。 查詢會儲存至複查集，並在每次開啟評審集時進行存取。
 
 - 篩選永遠都是累加的。 除了目前的複查集查詢之外，還會套用篩選器。 套用不同的查詢會取代目前查詢所傳回的結果。

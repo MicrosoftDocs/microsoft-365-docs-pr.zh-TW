@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何升級為其他計畫。
 ms.date: 04/21/2021
-ms.openlocfilehash: 2cfb5c3c6c5052a813e7dd078f15b6c0c943b004
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4882ad4296eb05faf0bb549ebf850562a7ebf780
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333096"
+ms.locfileid: "52344611"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案
 
@@ -99,7 +99,7 @@ ms.locfileid: "52333096"
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>您有兩個或多個相同產品的計畫
 
-只有在所有使用者都訂閱相同計畫時，才可以使用 [ **升級** ] 索引標籤。 例如，如果您有兩個 Microsoft 365 商務標準方案，您就無法將其中一個計畫自動升級為另一個計畫。
+只有在所有使用者都訂閱相同計畫時，才可以使用 [ **升級** ] 索引標籤。 例如，如果您有兩個 Microsoft 365 商務標準版方案，您就無法將其中一個計畫自動升級為另一個計畫。
 
 #### <a name="you-have-a-prepaid-plan"></a>您有預付方案。
 
@@ -143,11 +143,11 @@ ms.locfileid: "52333096"
 
 舊有訂閱的使用者會自動移至新的訂閱。
   
-如果您的舊訂閱包含多項服務，而且您已變更您的使用者所指派的服務類型，您可能需要在升級計畫之前記下這一點，以便以後可以重新建立這些變更。 在新的訂閱中，所有使用者將能夠存取所有的服務。 例如，如果您先前為100所有的使用者購買 Microsoft 365 商務版 Premium，但未指派 SharePoint Online 服務的50，則在您升級方案後，就不會保留這項變更。
+如果您的舊訂閱包含多項服務，而且您已變更您的使用者所指派的服務類型，您可能需要在升級計畫之前記下這一點，以便以後可以重新建立這些變更。 在新的訂閱中，所有使用者將能夠存取所有的服務。 例如，如果您先前為所有100的使用者購買 Microsoft 365 商務進階版，但未指派50的 SharePoint Online 服務，則在您升級方案後，就不會保留這項變更。
   
 如果您在升級計畫之前有一個以上的訂閱，並且使用者已將授權指派給一個以上的訂閱，則此指派模式在新的訂閱中將盡可能保留最大的狀態。
   
-升級期間會保留所有使用者資料，包括 Exchange 信箱和 SharePoint 線上檔、清單及其他資訊。
+升級期間會保留所有使用者資料，包括 Exchange 信箱及 SharePoint 線上檔、清單及其他資訊。
   
 ### <a name="billing"></a>計費
 
@@ -165,4 +165,4 @@ ms.locfileid: "52333096"
 ## <a name="related-content"></a>相關內容
 
 [手動變更方案](change-plans-manually.md) (文章) \
-請[先備份資料，再切換 Microsoft 365 for business 方案](back-up-data-before-switching-plans.md) (文章) 
+[切換 Microsoft 365 商務方案 (文章) 的資料之前，請先備份資料](back-up-data-before-switching-plans.md)

@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fc04db0c9fe8ee6d09efc9802ab4a747af0b3e9c
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: fc952ceec7d26d853e39cab0a803daace62a4767
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326658"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345882"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>啟用受攻擊面縮小規則
 
@@ -36,14 +36,14 @@ ms.locfileid: "52326658"
 
 [攻擊面減少規則](attack-surface-reduction.md) (ASR 規則) 協助防止惡意程式碼經常濫用裝置和網路遭到侵入的動作。
 
-**需求** 您可以針對執行下列任何版本的 Windows 裝置，設定攻擊面減少規則：
+**需求** 您可以針對執行下列任何版本與 Windows 的裝置，設定攻擊面減少規則：
 
-- Windows 10 專業 [版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
-- Windows 10 企業 [版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) 或更新版本
-- Windows Server， [版本 1803 (半年通道) ](/windows-server/get-started/whats-new-in-windows-server-1803) 或更新版本
+- Windows 10 專業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
+- Windows 10 企業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
+- Windows伺服器，[版本 1803 (半年通道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-雖然攻擊面降減規則不需要 [Windows e5 授權](/windows/deployment/deploy-enterprise-licenses)，但如果您有 windows e5，您就會取得高級管理功能。 這些功能僅適用于 Windows E5，包含可用於 [端點的](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)監控、分析和工作流程，以及 [Microsoft 365 security center](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true)中的報告和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用 [事件檢視器] 和 [Microsoft Defender 防病毒記錄] 來查看攻擊面減少規則事件。
+雖然攻擊面降減規則不需要[Windows E5 授權](/windows/deployment/deploy-enterprise-licenses)，但如果您有 Windows E5，就會取得高級管理功能。 這些功能只能在 Windows E5 中包含用於[端點的](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)監控、分析和工作流程，以及[Microsoft 365 安全性中心](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true)的報表和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用「事件檢視器」和 Microsoft Defender 防毒軟體記錄檔，以查看攻擊面減少規則事件。
 
 每個 ASR 規則都包含四個設定的其中一項：
 
@@ -53,12 +53,12 @@ ms.locfileid: "52326658"
 - **警告**：啟用 ASR 規則，但是允許使用者略過封鎖
 
 > [!IMPORTANT]
-> 目前，當您在 Microsoft 端點管理員 (MEM) 中設定 ASR 規則時，三種 ASR 規則不支援警告模式。 若要深入瞭解，請參閱 [不支援警告模式的案例](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
+> 目前，當您在 Microsoft 端點管理員 (MEM) 中設定 asr 規則時，不支援三種 asr 規則的警告模式。 若要深入瞭解，請參閱 [不支援警告模式的案例](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
 
-強烈建議您搭配 Windows E5 授權 (或類似授權 SKU) 使用 ASR 規則，以利用 [Microsoft defender for](https://docs.microsoft.com/windows/security/threat-protection) Endpoint (Defender for endpoint) 中可用的高級監控和報告功能。 不過，如果是其他授權（如 Windows Professional 或 E3）無法存取高級監控和報告功能，您可以在觸發 ASR 規則時，在每個端點上建立您自己的監控和報告工具，以在觸發 ASR 規則時產生 (例如，事件轉送) 。
+強烈建議您使用具有 Windows E5 授權 (或類似授權 SKU) 的 ASR 規則，以利用[Microsoft Defender for](https://docs.microsoft.com/windows/security/threat-protection) endpoint (Defender for endpoint) 中提供的高級監控和報告功能。 不過，針對 Windows Professional 或 E3 等其他授權，如未存取高級監控和報告功能，您可以在觸發 ASR 規則時，在每個端點上建立您自己的監控和報告工具，以在觸發 ASR 規則時產生， (例如事件轉送) 。
 
 > [!TIP]
-> 若要深入瞭解 Windows 授權，請參閱 [windows 10 授權](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) 並取得 [Windows 10 的大量授權指南](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
+> 若要深入瞭解 Windows 授權，請參閱[Windows 10 授權](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)並取得[Windows 10 的大量授權指南](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
 
 您可以使用下列任何一種方法來啟用攻擊面減少規則：
 
@@ -68,7 +68,7 @@ ms.locfileid: "52326658"
 - [群組原則](#group-policy)
 - [PowerShell](#powershell)
 
-建議使用企業層級管理（如 Intune 或 Microsoft 端點管理員）。 企業級管理將覆寫任何衝突的群組原則或啟動時 PowerShell 設定。
+建議使用 Enterprise 層級管理（如 Intune 或 Microsoft 端點管理員）。 Enterprise 層級管理將覆寫任何衝突的群組原則或啟動時 PowerShell 設定。
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>從 ASR 規則中排除檔案和資料夾
 
@@ -88,9 +88,9 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
 ## <a name="intune"></a>Intune
 
-1. 選取 [**裝置** 設定  >  **設定檔**]。 選擇現有的 endpoint protection 設定檔，或建立一個新的 endpoint protection 設定檔。 若要建立新的設定檔，請選取 [ **建立設定檔** ]，然後輸入此設定檔的資訊。 在 [ **配置檔案類型**] 中，選取 [ **Endpoint protection**]。 如果您已選取現有的設定檔，請選取 [ **屬性** ]，然後選取 [ **設定**]。
+1. 選取 [**裝置** 設定  >  **設定檔**]。 選擇現有的 endpoint protection 設定檔，或建立一個新的 endpoint protection 設定檔。 若要建立新的設定檔，請選取 [ **建立設定檔** ]，然後輸入此設定檔的資訊。 在 [ **配置檔案類型**] 中，選取 [ **Endpoint protection**]。 如果您已選取現有的設定檔，請選取 [**屬性**]，然後選取 [**設定**]。
 
-2. 在 [ **Endpoint protection** ] 窗格中，選取 [ **Windows Defender 利用防護**]，然後選取 [ **攻擊面減少**]。 針對每個 ASR 規則選取所需的設定。
+2. 在 [ **Endpoint protection** ] 窗格中，選取 [ **Windows Defender Exploit Guard**]，然後選取 [**攻擊面減少**]。 針對每個 ASR 規則選取所需的設定。
 
 3. 在 [ **攻擊面減少例外** 狀況] 底下，輸入個別的檔案和資料夾。 您也可以選取 [匯入 **]，匯** 入包含要從 ASR 規則排除的檔案和資料夾的 CSV 檔案。 CSV 檔案中的每一行都應該格式化如下：
 
@@ -128,7 +128,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. 在 Microsoft 端點 Configuration Manager 中，移至 [**資產和合規性**  >  **端點防護**] 「  >  **Windows Defender 利用防護**」。
+1. 在 Microsoft Endpoint Configuration Manager 中，移至 **資產及規範**  >  **Endpoint Protection**  >  **Windows Defender Exploit Guard**。
 
 2. 選取 [**首頁**  >  **建立 Exploit Guard 原則**]。
 
@@ -149,7 +149,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
 2. 在 **[群組原則管理編輯器]** 中，移至 **[電腦設定]** 然後選取 **[系統管理範本]**。
 
-3. 將樹狀目錄展開為 **Windows 元件**  >  **microsoft defender 防病毒**  >  **microsoft defender 利用防護防護**  >  **攻擊面降減**。
+3. 展開樹狀目錄， **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **Microsoft Defender 惡意探索防護**  >  **攻擊面降減**。
 
 4. 選取 [ **設定攻擊面減少規則** ]，然後選取 [ **啟用**]。 然後，您可以在 [選項] 區段中，為每個規則設定個別的狀態。
 
@@ -169,9 +169,9 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
 ## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft 端點管理員自訂程式
 
-您可以使用 Microsoft 端點管理員 (MEM) 系統管理中心設定自訂的 ASR 規則。
+您可以使用 Microsoft 端點管理員 (MEM) 系統管理中心來設定自訂的 ASR 規則。
 
-1. 開啟 Microsoft 端點管理員 (MEM) admin center。 在 [ **主** ] 功能表中，按一下 [  **裝置**]，選取 [ **設定檔**]，然後按一下 [ **建立設定檔**]。
+1. 開啟 Microsoft 端點管理員 (MEM) 系統管理中心。 在 [ **主** ] 功能表中，按一下 [  **裝置**]，選取 [ **設定檔**]，然後按一下 [ **建立設定檔**]。
 
    ![MEM 建立設定檔](images/mem01-create-profile.png)
 
@@ -184,15 +184,15 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
    ![MEM 規則配置檔案屬性](images/mem02-profile-attributes.png)
 
-3. 自訂範本工具隨即開啟至步驟 **1 基礎**。 在 [ **1 基礎**] 的 [ **名稱**] 中，輸入範本的名稱，然後在 [ **描述** ] 中輸入選用的描述。
+3. 自訂範本工具隨即開啟至步驟 **1 基礎**。 在 [ **1 基礎**] 的 [ **名稱**] 中，輸入範本的名稱，然後在 [ **描述** ] 中輸入 (選用 ) 的描述。
 
    ![MEM 基本屬性](images/mem03-1-basics.png)
 
-4. 按 [下一步]。 步驟 **2 設定設定** 隨即開啟。 若為 OMA-URI 設定，請按一下 [ **新增**]。 現在會顯示兩個選項： [ **新增** ] 和 [ **匯出**]。
+4. 按 [下一步]。 步驟 **2 設定設定** 隨即開啟。 若為 OMA-URI 設定，請按一下 [**新增**]。 現在會顯示兩個選項： [ **新增** ] 和 [ **匯出**]。
 
    ![記憶體配置設定](images/mem04-2-configuration-settings.png)
 
-5. 再按一下 [ **新增** ]。 隨即會開啟 [ **新增列 OMA URI] 設定** 。 在 [ **新增列**] 中，執行下列動作：
+5. 再按一下 [ **新增** ]。 [**新增列 OMA URI] 設定** 隨即開啟。 在 [ **新增列**] 中，執行下列動作：
 
    - 在 [ **名稱**] 中，輸入規則的名稱。
    - 在 [ **描述**] 中，輸入簡短描述。
@@ -223,7 +223,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
    - 在 [ **屬性**] 中，選取您要套用此規則的屬性
    - 在 [ **值**] 中，輸入適用的值或值範圍
 
-   ![MEM 適用性規則](images/mem07-5-applicability -rules.png)
+   ![MEM 適用性規則](images/mem07-5-applicability-rules.png)
 
 10. 按 [下一步]。 在步驟 **6 中，複查 + 建立**、複查您已選取並輸入的設定和資訊，然後按一下 [ **建立**]。
 
@@ -241,7 +241,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 > [!WARNING]
 > 如果您使用 Intune、Configuration Manager 或其他企業級管理平臺來管理電腦和裝置，管理軟體會在啟動時覆寫所有衝突的 PowerShell 設定。 若要讓使用者使用 PowerShell 定義值，請在管理平臺中使用規則的「使用者定義」選項。
 
-1. 在 [開始] 功能表中 **，以滑鼠** 按右鍵 [ **Windows PowerShell** ]，然後選取 [ **以系統管理員身分執行**]。
+1. 在 [開始] 功能表中 **，以滑鼠** 按右鍵 [ **Windows PowerShell** ]，然後選取 [以 **系統管理員身分執行**]。
 
 2. 輸入下列 Cmdlet：
 
@@ -260,6 +260,12 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
+
+    若要啟用利用漏洞簽名驅動程式的 ASR 封鎖濫用，請使用下列 Cmdlet：
+
+   ```PowerShell
+   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   ```
 
     若要關閉 ASR 規則，請使用下列 Cmdlet：
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6e4429718de05362bd6bd3336c9d19ceeec64b9
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
-ms.translationtype: HT
+ms.openlocfilehash: 0bb75db5b6bb1f3a3b18033b5327f014748f6512
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113995"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464390"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -610,6 +610,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - Microsoft Teams (交談)
 - 適用於 SharePoint 的 DLP (檔案)
 - Microsoft Cloud App Security DLP 原則
+- 伺服器端自動標記原則
 
 下列案例的 EDM 敏感性資訊類型目前正在開發中，尚未提供使用：
 

@@ -3,7 +3,6 @@ title: 客戶金鑰服務加密
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,70 +15,86 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將瞭解如何使用 Microsoft 365 中的客戶金鑰來處理服務加密。
-ms.openlocfilehash: 21291dc45cd634cd5b6a88c4e58972c17486724f
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 3d0c86dbca02a66547f0ade643b745ecfc8f92cd
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394721"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52344767"
 ---
 # <a name="service-encryption-with-customer-key"></a>客戶金鑰服務加密
 
-Microsoft 365 提供使用 BitLocker 和分散式金鑰管理員 (DKM) 所啟用的基準、磁片區層級加密。 Microsoft 365 在應用層級為您的內容提供額外的加密層級。 此內容包含 Exchange Online 中的資料、商務用 Skype、SharePoint 線上、商務 OneDrive，以及小組檔案。 這個新增的加密層稱為「服務加密」。
+Microsoft 365 提供使用 BitLocker 和分散式金鑰管理員 (DKM) 啟用的基準、磁片區層級加密。 Microsoft 365 為您的內容提供額外的加密層級。 此內容包括 Exchange Online、商務用 Skype、SharePoint 線上、商務用 OneDrive 及 Microsoft Teams 的資料。
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>服務加密、BitLocker 及客戶金鑰共同運作的方式
 
-服務加密可確保在服務層級加密靜止的內容。 在 **Microsoft 365 服務中，您的資料會永遠以靜態方式加密，並 BitLocker 和 DKM**。 如需詳細資訊，請參閱《安全性、隱私權和規範資訊》，以及 [Exchange Online 如何保護您的電子郵件機密](exchange-online-secures-email-secrets.md)。 客戶金鑰提供額外的保護，以防止未經授權的系統或人員查看資料，以及在 Microsoft 資料中心中補充 BitLocker 磁片加密。 服務加密不是為了防止 Microsoft 人員存取客戶資料。 主要用途是協助客戶滿足控制根機碼的管制或合規性義務。 客戶會明確授權 O365 服務使用加密金鑰，以提供增值的雲端服務，例如 eDiscovery、反惡意程式碼、反垃圾郵件、搜尋索引等等。
+您的資料在 Microsoft 365 服務中永遠會以 BitLocker 和 DKM 加密。 如需詳細資訊，請參閱 how [Exchange Online 如何保護您的電子郵件機密](exchange-online-secures-email-secrets.md)。 客戶金鑰提供額外的保護，防止未經授權的系統或人員查看資料，並補充 Microsoft 資料中心的 BitLocker 磁片加密。 服務加密不是為了防止 Microsoft 人員存取您的資料。 相反地，客戶金鑰可協助您符合控制根機碼的規章或合規性義務。 您明確授權 Microsoft 365 服務使用您的加密金鑰，以提供增值雲端服務，例如 eDiscovery、反惡意程式碼、反垃圾郵件、搜尋索引等等。
 
-客戶金鑰是以服務加密為基礎，可讓您提供和控制加密金鑰。 然後，Microsoft 365 會使用這些金鑰來加密您的資料，如 [線上服務條款 (OST) ](https://www.microsoft.com/licensing/product-licensing/products.aspx)所述。 客戶金鑰可協助您符合法規遵從性義務，因為您可以控制 Microsoft 365 用來加密及解密資料的加密金鑰。
+客戶金鑰是以服務加密為基礎，可讓您提供和控制加密金鑰。 然後 Microsoft 365 會使用這些機碼，如[線上服務條款 (.ost) ](https://www.microsoft.com/licensing/product-licensing/products.aspx)所述，對您的資料進行加密。 客戶金鑰可協助您達到法規遵從性義務，因為您會控制 Microsoft 365 用來加密及解密資料的加密金鑰。
   
-客戶金鑰可提升您的組織符合規範需求的能力，以指定與雲端服務提供者的重要安排。 使用客戶金鑰，您可以在應用層級為您的 Microsoft 365 資料同時提供及控制根加密金鑰。 因此，您會練習控制組織的按鍵。 如果您決定要退出服務，請撤銷您組織的根機碼的存取權。 針對所有 Microsoft 365 服務，撤銷機碼存取權的第一步是資料刪除的路徑。 透過撤銷對機碼的存取權，無法將資料從服務中讀取。
+客戶金鑰可提升您的組織符合規範需求的能力，以指定與雲端服務提供者的重要安排。 使用客戶金鑰，您可以在應用層級為您的 Microsoft 365 資料提供及控制根加密金鑰。 因此，您會練習控制組織的按鍵。
 
-## <a name="customer-key-encrypts-data-at-rest-in-office-365"></a>客戶金鑰會在 Office 365 中加密靜態資料
-
-使用您提供的金鑰，應用層級的客戶機碼會加密：
-
-- SharePoint 線上、商務及小組檔案的 OneDrive。
-- 上傳至商務 OneDrive 的檔案。
-- Exchange Online 信箱內容，包括電子郵件內文內容、行事曆專案，以及電子郵件附件中的內容。
-- 商務用 Skype 中的文字交談。
-
-目前我們並不會為 Skype 會議廣播和 Skype 會議內容上傳的加密金鑰提供客戶控制權。 相反地，此內容會與 Office 365 中的所有其他內容一起加密。
-
-### <a name="customer-key-with-hybrid-deployments"></a>具有混合式部署的客戶金鑰
+## <a name="customer-key-with-hybrid-deployments"></a>具有混合式部署的客戶金鑰
 
 客戶金鑰只會加密雲端中靜態的資料。 客戶金鑰不會用來保護您的內部部署信箱和檔案。 您可以使用另一種方法（例如 BitLocker）來加密您的內部部署資料。
 
-## <a name="about-the-data-encryption-policy-dep"></a>關於資料加密原則 (DEP) 
+## <a name="about-data-encryption-policies"></a>關於資料加密原則
 
-資料加密原則定義加密階層，使用您提供的每個金鑰以及 Microsoft 所保護的可用性金鑰來加密資料。 您可以使用 PowerShell Cmdlet 來建立 DEPs，這些 Cmdlet 會不同于每個服務，並指派這些 DEPs 以加密應用程式資料。 例如：
+資料加密原則 (DEP) 會定義加密階層。 此階層由服務使用，以使用每個您管理的金鑰和 Microsoft 所保護的可用性金鑰來加密資料。 您可以使用 PowerShell Cmdlet 來建立 DEPs，然後指派這些 DEPs 以加密應用程式資料。 Microsoft 365 客戶機碼支援三種類型的 DEPs，每個原則類型都使用不同的指令程式，並提供不同類型資料的範圍。 您可以定義的 DEPs 包括：
 
-**Exchange Online 和商務用 Skype** 每個租使用者最多可以建立 50 DEPs。 您可以將 DEPs 關聯到 Azure Key Vault 中的客戶機碼，然後將 DEPs 指派給個別信箱。 當您為信箱指派 DEP 時：
+**多個 Microsoft 365 工作負載的 DEP** 這些 DEPs 會針對租使用者內的所有使用者，在多個 M365 工作負載中加密資料。 這些工作負載包括：
 
-- 信箱已標記為要移動信箱。 根據此處所述的 Microsoft 365 中的優先順序，在 [microsoft 365 服務中移動要求](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service)。
+- Teams 聊天訊息 (1:1 聊天、群組交談、會議聊天及通道交談) 
+- Teams 媒體訊息 (影像、程式碼片段、影片郵件、音訊訊息、wiki 影像) 
+- Teams 儲存區中儲存的 Teams 通話和會議錄製
+- Teams 聊天通知
+- 使用 Cortana Teams 聊天建議
+- Teams 狀態郵件
+- Exchange Online 的使用者和信號資訊
+- Exchange Online 信箱 DEPs 未加密的信箱
+- MIP exact data match (EDM) 資料– (資料檔案架構、規則套件，以及用來散列敏感性資料) 的 salts。
+  針對 MIP exact data match (EDM) 和 Microsoft Teams，多工作負載 DEP 會從您指派 DEP 給租使用者時，加密新的資料。 針對 Exchange Online，客戶金鑰會加密所有現有和新的資料。
 
-- 移動信箱時，會進行加密。 允許信箱的72小時使用新的 DEP 進行加密。 如果信箱在您指派 DEP 的時間之後，等待72小時之後未加密，請與 Microsoft 聯繫。
+多工作負載 DEPs 不會加密下列類型的資料。 相反地，Microsoft 365 會使用其他類型的加密來保護此資料。
 
-稍後，您可以依照 [管理 Office 365 的客戶金鑰](customer-key-manage.md)中所述的方式，重新整理 DEP 或指派不同的 dep 至信箱。 每個信箱都必須有適當的授權，才可指派 DEP。 如需授權的詳細資訊，請參閱 [設定客戶金鑰之前](customer-key-set-up.md#before-you-set-up-customer-key)。
+- SharePoint 和商務用 OneDrive 資料。
+- 商務用 OneDrive 和 SharePoint online 中儲存的 Microsoft Teams 檔案和部分 Teams 呼叫和會議錄製，都是使用 SharePoint 線上 DEP 進行加密。
+- 其他 Microsoft 365 工作負載，例如，客戶機碼目前不支援的 Yammer 和 Planner。
+- TeamsLive 事件和 Q&即時事件。 針對 Teams，此案例是唯一一種未使用多重工作負載 DEP 以客戶金鑰加密的案例。
 
-> [!NOTE]
-> 您可以將 DEP 套用至共用信箱、公用資料夾信箱，365以及適用于租使用者信箱授權需求的承租人信箱，即使某些信箱類型無法指派授權 (公用資料夾信箱和 Microsoft 365 群組信箱) 或需要增加儲存 (共用信箱) 的授權。
+每個租使用者可以建立多個 DEPs，但一次只能指派一個 DEP。 當您指派 DEP 時，加密會自動開始，但需要一些時間才能完成，具體取決於您的承租人的大小。
 
-**SharePoint 線上、商務及小組檔案的 OneDrive** 如果您使用的是多地理位置功能，您的組織可以為每個地理位置建立多個 DEP。 您可以針對每個地理位置使用不同的客戶金鑰。 如果您不是使用多地理位置功能，則每個承租人只能建立一個 DEP。 當您指派 DEP 時，加密會自動開始，但可能需要一些時間才能完成。 請參閱 [設定客戶金鑰](customer-key-set-up.md)中的詳細資料。
+**Exchange Online 信箱的 DEPs** 信箱 DEPs 可在 Exchange Online 內提供更精確的控制個別信箱。 使用信箱 DEPs，加密儲存在不同類型的 EXO 信箱中的資料，例如 UserMailbox、MailUser、群組、PublicFolder 和共用信箱。 每個租使用者最多可以有50個活躍 DEPs，並將這些 DEPs 指派給個別信箱。 您可以將一個 DEP 指派給多個信箱。
 
-## <a name="leaving-the-service"></a>離開服務
+根據預設，您的信箱是使用 Microsoft 管理的金鑰加密。 當您將客戶金鑰 DEP 指派給信箱時：
 
-客戶金鑰可協助您在離開 Microsoft 365 服務時撤銷您的金鑰，以協助您履行法規遵從性義務。 當您在離開服務時撤銷您的金鑰時，會刪除可用性機碼，以加密刪除您的資料。 加密刪除可降低資料 remanence 的風險，這對於迎接安全性和合規性義務很重要。 如需有關資料清除程式和金鑰吊銷的詳細資訊，請參閱 [撤銷您的金鑰，然後啟動資料清除路徑處理](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)程式。
+- 如果信箱是使用多工作負載 DEP 進行加密，只要使用者或系統作業可以存取信箱資料，該服務便會以新的信箱 DEP rewraps 信箱。
+
+- 如果信箱已使用 Microsoft 管理金鑰加密，只要使用者或系統作業存取信箱資料，該服務就會使用新的信箱 DEP rewraps 信箱。
+
+- 如果信箱尚未使用預設加密加密，則服務會標示移動信箱。 移動完成後，就會進行加密。 信箱移動取決於所有 Microsoft 365 設定的優先順序。 如需詳細資訊，請參閱[Microsoft 365 服務中的移動要求](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service)。 如果在指定的時間內沒有加密信箱，請與 Microsoft 聯繫。
+
+稍後，您可以依照[管理 Office 365 的客戶金鑰](customer-key-manage.md)中所述的方式，重新整理 DEP 或指派不同的 dep 至信箱。 每個信箱都必須有適當的授權，才能被指派 DEP。 如需授權的詳細資訊，請參閱 [設定客戶金鑰之前](customer-key-set-up.md#before-you-set-up-customer-key)。
+
+DEPs 可指派給共用信箱、公用資料夾信箱，以及符合使用者信箱授權需求的承租人的 Microsoft 365 群組信箱。 非使用者特有的信箱不需要個別的授權，就能指派客戶金鑰 DEP。
+
+針對您指派給個別信箱的客戶機碼 DEPs，您可以在離開服務時要求 Microsoft 清除特定 DEPs。 如需有關資料清除程式和金鑰吊銷的詳細資訊，請參閱 [撤銷您的金鑰，然後啟動資料清除路徑處理](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)程式。
+
+當您在離開服務時撤銷您的金鑰存取權時，可用性機碼會刪除，從而導致您的資料被加密刪除。 加密刪除可降低資料 remanence 的風險，這對於迎接安全性和合規性義務很重要。
+
+**SharePoint 線上及商務用 OneDrive 的 DEP** 此 DEP 是用來加密儲存在 SPO 和商務用 OneDrive 中的內容，包括儲存在 SPO 中的 Microsoft Teams 檔案。 如果您使用的是多地理位置功能，您可以為組織建立一個每個地理位置的 DEP。 如果您不是使用多地理位置功能，則每個承租人只能建立一個 DEP。 請參閱 [設定客戶金鑰](customer-key-set-up.md)中的詳細資料。
 
 ### <a name="encryption-ciphers-used-by-customer-key"></a>客戶金鑰使用的加密密碼
 
 客戶金鑰使用各種加密密碼來加密金鑰，如下圖所示。
 
-#### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>加密密碼，用來加密 Exchange Online 和商務用 Skype 的金鑰
+用於 DEPs 多個 Microsoft 365 工作負載之資料的金鑰階層，與 DEPs 用於個別 Exchange Online 信箱的階層類似。 唯一的區別是信箱金鑰會取代對應的 Microsoft 365 工作量機碼。
+
+#### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>用來加密 Exchange Online 和商務用 Skype 金鑰的加密密碼
 
 ![Exchange Online 客戶機碼的加密密碼](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
-#### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>用來加密 SharePoint 線上、商務 OneDrive 與小組檔案的金鑰的加密密碼
+#### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>用來加密 SharePoint 線上、商務用 OneDrive 及 Teams 檔案的金鑰的加密密碼
 
 ![SharePoint Online 客戶機碼的加密密碼](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 

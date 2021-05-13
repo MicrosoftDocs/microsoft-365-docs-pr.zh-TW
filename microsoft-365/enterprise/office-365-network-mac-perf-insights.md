@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365網路洞察力 (預覽) '
+title: Microsoft 365網路洞察力
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: 'Microsoft 365網路洞察力 (預覽) '
-ms.openlocfilehash: ca665f4e492b071e5a387ffde0efae8336bd96bc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Microsoft 365網路洞察力
+ms.openlocfilehash: 10b1c66a8f9aae555c2841b2b290f341bec3c7ec
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245777"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470533"
 ---
-# <a name="microsoft-365-network-insights-preview"></a>Microsoft 365網路洞察力 (預覽) 
+# <a name="microsoft-365-network-insights"></a>Microsoft 365網路洞察力
 
 **網路洞察力** 是從您的 Microsoft 365 租使用者收集的效能計量，而且只能在您的租使用者中查看其管理使用者。 深入資訊會顯示在 Microsoft 365 系統管理中心 <https://portal.microsoft.com/adminportal/home#/networkperformance> 。
 

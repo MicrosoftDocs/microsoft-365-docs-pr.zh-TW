@@ -18,18 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934522"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346387"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 資源
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
+
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,7 +52,7 @@ ms.locfileid: "51934522"
 
 2. 再現問題
 
-3. 執行 `sudo mdatp diagnostic create` 以備份 Microsoft Defender For Endpoint 記錄。 檔案會儲存在 .zip 封存中。 在作業成功之後，此命令也會將檔案路徑輸出到備份。
+3. 執行 `sudo mdatp diagnostic create` 以備份 Microsoft Defender For Endpoint 記錄。 檔案會儲存在 .zip 封存內。 在作業成功之後，此命令也會將檔案路徑輸出到備份。
 
    > [!TIP]
    > 根據預設，診斷記錄會儲存至 `/Library/Application Support/Microsoft/Defender/wdavdiag/` 。 若要變更儲存診斷記錄的目錄，請傳送 `--path [directory]` 至下列命令，以 `[directory]` 所需的目錄取代。
@@ -59,6 +60,7 @@ ms.locfileid: "51934522"
    ```bash
    sudo mdatp diagnostic create
    ```
+
    ```console
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
@@ -68,6 +70,7 @@ ms.locfileid: "51934522"
    ```bash
    mdatp log level set --level info
    ```
+
    ```console
    Log level configured successfully
    ```
@@ -80,7 +83,7 @@ ms.locfileid: "51934522"
 
 ## <a name="uninstalling"></a>卸載
 
-有幾種方式可以在 macOS 上卸載 Microsoft Defender for Endpoint。 請注意，在 JAMF 中提供集中式管理的卸載時，Microsoft Intune 仍無法使用它。
+有幾種方式可以在 macOS 上卸載 Microsoft Defender for Endpoint。 請注意，在 JAMF 上可以使用集中式管理的卸載，但 Microsoft Intune 無法使用它。
 
 ### <a name="interactive-uninstallation"></a>互動式卸載
 
@@ -88,8 +91,7 @@ ms.locfileid: "51934522"
 
 ### <a name="from-the-command-line"></a>從命令列
 
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
-- ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
+- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
 
 ## <a name="configuring-from-the-command-line"></a>從命令列設定
 
@@ -158,4 +160,4 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Microsoft Defender for Endpoint 入口網站資訊
 
-[MacOS 的 EDR 功能現在已到達](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)，在 microsoft Defender for endpoint 博客上，提供 microsoft Defender For Endpoint Security Center 中預期內容的詳細指引。
+[EDR 的 macOS 功能現在已到達](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)，在 microsoft defender for endpoint 博客上，提供 microsoft defender for endpoint Security Center 中預期內容的詳細指引。

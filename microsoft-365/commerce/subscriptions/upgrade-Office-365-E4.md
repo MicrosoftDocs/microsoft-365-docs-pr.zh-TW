@@ -20,23 +20,23 @@ search.appverid: MET150
 description: 瞭解如何從 Office 365 E4 訂閱進行升級。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 59add18b8f6ede3d8696ee8e443c21ac4d6d3549
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ee90038bb80120ed727cd2dee0c43a894053440f
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333119"
+ms.locfileid: "52344620"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>從 Office 365 E4 訂閱升級
 
-本文將引導您完成從 Office 365 E4 升級至新訂閱的程式。 如需從 Office 365 E4 升級時可用選項的詳細資訊，請參閱 [Office 365 e4 客戶的重要資訊](important-information-e4.md)。
+本文將引導您逐步完成從 Office 365 E4 升級為新訂閱的程式。 如需從 Office 365 E4 升級時可用選項的詳細資訊，請參閱[Office 365 E4 客戶的重要資訊](important-information-e4.md)。
 
 > [!IMPORTANT]
 > 本文適用于直接從 Microsoft 透過信用卡或發票購買的 Office 365 E4 訂閱。 如果您的訂閱是透過另一種方式購買，例如透過合作夥伴或透過大量授權服務中心，請與您的 Microsoft 帳戶代表或合作夥伴聯繫，以協助您升級方案。
 
 ## <a name="what-are-my-options-for-how-to-upgrade"></a>我的如何升級的選項為何？
 
-升級計畫最簡單的方法，就是使用 Microsoft 365 系統管理中心的 [ **升級** ] 索引標籤。 不過，並非所有情況都支援使用 [ **升級** ] 索引標籤。 如果不支援您的案例，您可能可以手動升級計畫。
+升級計畫最簡單的方法是使用 Microsoft 365 系統管理中心的 [**升級**] 索引標籤。 不過，並非所有情況都支援使用 [ **升級** ] 索引標籤。 如果不支援您的案例，您可能可以手動升級計畫。
 
 ## <a name="what-is-the-upgrade-tab"></a>何謂升級] 索引標籤？
 
@@ -74,7 +74,7 @@ ms.locfileid: "52333119"
 
 以下是您開始執行之前必須先了解的事項。
 
-- **規劃系統管理的停機時間。** 在升級計畫時，系統管理員無法使用 Microsoft 365 系統管理中心。 根據您擁有的使用者人數，升級可能需要數分鐘到數小時。 當您不需要使用 Microsoft 365 系統管理中心進行更新時，建議您計畫執行升級。
+- **規劃系統管理的停機時間。** 在升級方案時，系統管理員無法使用 Microsoft 365 系統管理中心。 根據您擁有的使用者人數，升級可能需要數分鐘到數小時。 當您不需要使用 Microsoft 365 系統管理中心進行更新時，建議您計畫執行升級。
 
     當方案升級時，使用者不會遇到服務中斷的情況，在升級程式期間，他們仍可繼續擁有 E4 訂閱的完整存取權。 當升級完成時，使用者就可以存取新的計畫。
 - **使用者、授權、帳單和自訂網域。** 若要瞭解如何在升級期間處理使用者和授權、升級計畫如何影響您的計費，以及如何處理自訂網域，請參閱 [升級計畫對我的服務和帳單執行哪些動作？](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
@@ -88,7 +88,7 @@ ms.locfileid: "52333119"
 4. 找到您要購買的訂閱，然後選取 [ **升級**]。
 5. 在 [ **購物車** ] 頁面上，確認所有專案正確無誤。 選擇是否要按月或每年的費率支付，並確認授權數量低於 [ **數量**]。
     > [!NOTE]
-    > 與 Office 365 E4 訂閱相關聯的任何附加元件訂閱，例如 Office 365 額外檔案儲存區也會列出。 不過，如果您有升級至之訂閱所包含的任何附加元件訂閱，我們會將其移除。
+    > 任何與 Office 365 E4 訂閱相關聯的附加元件訂閱，例如，也會列出 Office 365 額外的檔案儲存體。 不過，如果您有升級至之訂閱所包含的任何附加元件訂閱，我們會將其移除。
 6. 在您檢查訂單後，請選取 [ **移至結帳**]。
 7. 在 [**簽出**] 頁面上，按 **此順序** 查看「**銷售到**」、「**記帳** 者」和「專案」。 選取 [變更任何專案] 旁邊的 [ **變更** ]，以編輯資訊。
     > [!NOTE]
@@ -109,7 +109,7 @@ ms.locfileid: "52333119"
 
 ### <a name="step-1-buy-a-new-subscription"></a>步驟1：購買新的訂閱
 
-如果您還沒有新的訂閱，可 [購買其他 Microsoft 365 for business 訂閱](../try-or-buy-microsoft-365.md)。
+如果您還沒有新的訂閱，您可以[購買其他的商務用 Microsoft 365 訂閱](../try-or-buy-microsoft-365.md)。
 
 如果您已有訂閱，請繼續進行下一個步驟。
 
@@ -127,14 +127,14 @@ ms.locfileid: "52333119"
 
 ### <a name="step-3-reassign-licenses-to-users"></a>步驟3：將授權重新指派給使用者
 
-您可以使用 Microsoft 365 系統管理中心，一次為最多20個使用者重新指派授權。 若要深入瞭解，請參閱 [將使用者移至不同的訂閱](move-users-different-subscription.md)。
+您可以使用 Microsoft 365 系統管理中心，一次可重新指派最多20個使用者的授權。 若要深入瞭解，請參閱 [將使用者移至不同的訂閱](move-users-different-subscription.md)。
 
 > [!TIP]
-> 如果您有許多使用者，您可以 [使用 Office 365 PowerShell 以大量指派使用者授權](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
+> 如果您有許多使用者，可[使用 Office 365 PowerShell 大量指派使用者授權](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>步驟4：取消 Office 365 E4 訂閱
 
-所有使用者都已重新指派給新訂閱後，請 [取消 Office 365 E4 訂閱](cancel-your-subscription.md)。
+所有使用者都已重新指派給新訂閱後，請[取消 Office 365 E4 訂閱](cancel-your-subscription.md)。
 
 ## <a name="related-content"></a>相關內容
 

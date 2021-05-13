@@ -1,5 +1,5 @@
 ---
-title: 內容搜尋參考
+title: 內容搜尋的功能參考
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含 Microsoft 365 合規性中心中內容搜尋電子文件探索工具的參考資訊，可協助了解內容搜尋的許多詳細資料。
-ms.openlocfilehash: c345cf00bddba30cb543ad9682a2a332607d31fe
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314280"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332891"
 ---
-# <a name="content-search-reference"></a>內容搜尋參考
+# <a name="feature-reference-for-content-search"></a>內容搜尋的功能參考
+
+本文說明內容搜尋的功能。
 
 ## <a name="content-search-limits"></a>內容搜尋限制
 
@@ -71,6 +73,10 @@ ms.locfileid: "52314280"
     
 - 如果您有包含非英文字元 (例如中文字元) 關鍵字的搜尋查詢時，您可以按一下 **[查詢語言-國家/地區]**![內容搜尋中的 [查詢語言-國家/地區] 圖示](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)，然後選取搜尋的語言-國家/地區文化特性代碼值。 預設的語言-國家/地區為中性。 如何判斷您是否需要變更內容搜尋的語言設定？ 如果您確定您要搜尋的內容位置包含非英文字元，但搜尋卻未傳回任何結果，這可能是語言設定所造成。 
   
+## <a name="partially-indexed-items"></a>部分編製索引的項目
+
+- 估計的搜尋結果中會包含信箱中部分編製索引的項目。 估計的搜尋結果中不會包括來自 SharePoint 和 OneDrive 的部分編製索引項目。 如需詳細資訊，請參閱[電子文件探索中部分編製索引的項目](partially-indexed-items-in-content-search.md)。
+
 ## <a name="searching-onedrive-accounts"></a>搜尋 OneDrive 帳戶
 
 - 若要收集組織中 OneDrive 網站的 URL 清單，請參閱[建立組織中所有 OneDrive 位置的清單](/onedrive/list-onedrive-urls)。 本文章中的這個指令碼會建立文字檔案，其中包含所有 OneDrive 網站的清單。 若要執行此指令碼，您必須安裝並使用 SharePoint Online 管理命令介面。 請務必將您組織 MySite 網域的 URL 附加至您要搜尋的每個 OneDrive 網站。 這是包含您所有 OneDrive 的網域；例如，`https://contoso-my.sharepoint.com`。 以下是使用者 OneDrive 網站的 URL 範例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
@@ -228,12 +234,6 @@ ms.locfileid: "52314280"
 - 如果您使用 **New-ComplianceSearch** Cmdlet 來建立內容搜尋，並將中斷連線的信箱指定為要搜尋的 Exchange 內容位置，內容搜尋將不會從已中斷連線的信箱傳回任何搜尋結果。
 
 如果您要保留已中斷連線信箱中的資料，使其可供搜尋，您必須在移除授權之前，先在信箱上放置保留。 這麼做會保留資料，並在移除保留之前讓中斷連線的信箱可供搜尋。 如需保留的詳細資訊，請參閱[如何找出位於 Exchange Online 信箱的保留類型](identify-a-hold-on-an-exchange-online-mailbox.md)。
-
-## <a name="partially-indexed-items"></a>部分編製索引的項目
-
-- 如先前所解說，估計的搜尋結果中會包含信箱中部分編製索引的項目。 估計的搜尋結果中不會包括來自 SharePoint 和 OneDrive 的部分編製索引項目。
-
-- 若部分編製索引的項目符合搜尋查詢 (因為其他郵件或文件屬性符合搜尋準則)，則不會將它包含在未編製索引項目的估計數量中。 若搜尋準則排除了部分編製索引的項目，則不會將它包含在未編製索引項目的估計數量中。 如需詳細資訊，請參閱 [Office 365 的內容搜尋中部分編製索引的項目](partially-indexed-items-in-content-search.md)。
 
 ## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>在 SharePoint 多地理位置環境中搜尋內容
 

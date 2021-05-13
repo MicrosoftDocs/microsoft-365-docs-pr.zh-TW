@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42b15edd933d80dd397f4681c4f0fdb035f030f2
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943002"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346375"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上設定 Microsoft Defender for Endpoint 的喜好設定
 
@@ -57,7 +57,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | antivirusEngine |
+| **索引鍵** | antivirusEngine |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 |||
@@ -68,7 +68,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | enableRealTimeProtection |
+| **索引鍵** | enableRealTimeProtection |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
 |||
@@ -84,7 +84,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | passiveMode |
+| **索引鍵** | passiveMode |
 | **資料類型** | 布林值 |
 | **可能值** | false (預設)  <br/> 真 |
 | **Comments** | 在100.67.60 或更高版本的 Defender 中提供。 |
@@ -96,7 +96,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | exclusionsMergePolicy |
+| **索引鍵** | exclusionsMergePolicy |
 | **資料類型** | 字串 |
 | **可能值** | merge (預設值)  <br/> admin_only |
 | **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
@@ -105,10 +105,11 @@ ms.locfileid: "51943002"
 #### <a name="scan-exclusions"></a>掃描排除
 
 已從掃描中排除的實體。 您可以使用完整路徑、副檔名或檔案名來指定排除。
+ (排除專案是以專案陣列的形式指定，管理員可以根據需要依任何順序指定任意數目的元素。 ) 
 
 |||
 |:---|:---|
-| **Key** | 排除 |
+| **索引鍵** | 排除 |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 |||
@@ -119,7 +120,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | $type |
+| **索引鍵** | $type |
 | **資料類型** | 字串 |
 | **可能值** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 |||
@@ -130,7 +131,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | 路徑 |
+| **索引鍵** | 路徑 |
 | **資料類型** | 字串 |
 | **可能值** | 有效路徑 |
 | **Comments** | 僅適用于 *excludedPath* *$type* |
@@ -142,7 +143,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | isDirectory |
+| **索引鍵** | isDirectory |
 | **資料類型** | 布林值 |
 | **可能值** | false (預設)  <br/> 真 |
 | **Comments** | 僅適用于 *excludedPath* *$type* |
@@ -154,7 +155,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | 擴展 |
+| **索引鍵** | 擴展 |
 | **資料類型** | 字串 |
 | **可能值** | 有效的副檔名 |
 | **Comments** | 僅適用于 *excludedFileExtension* *$type* |
@@ -166,7 +167,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | name |
+| **索引鍵** | name |
 | **資料類型** | 字串 |
 | **可能值** | 任何字串 |
 | **Comments** | 僅適用于 *excludedFileName* *$type* |
@@ -178,7 +179,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | allowedThreats |
+| **索引鍵** | allowedThreats |
 | **資料類型** | 字串陣列 |
 |||
 
@@ -188,7 +189,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | disallowedThreatActions |
+| **索引鍵** | disallowedThreatActions |
 | **資料類型** | 字串陣列 |
 | **可能值** | 允許 (限制使用者允許威脅)  <br/> restore (會限制使用者從隔離區還原威脅)  |
 | **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
@@ -200,7 +201,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | threatTypeSettings |
+| **索引鍵** | threatTypeSettings |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 |||
@@ -211,7 +212,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | 機碼 |
+| **索引鍵** | 機碼 |
 | **資料類型** | 字串 |
 | **可能值** | potentially_unwanted_application <br/> archive_bomb |
 |||
@@ -226,7 +227,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | 數值 |
+| **索引鍵** | 數值 |
 | **資料類型** | 字串 |
 | **可能值** | 審核 (預設)  <br/> 塊 <br/> 遠離 |
 |||
@@ -237,7 +238,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | threatTypeSettingsMergePolicy |
+| **索引鍵** | threatTypeSettingsMergePolicy |
 | **資料類型** | 字串 |
 | **可能值** | merge (預設值)  <br/> admin_only |
 | **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
@@ -249,7 +250,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | scanResultsRetentionDays |
+| **索引鍵** | scanResultsRetentionDays |
 | **資料類型** | 字串 |
 | **可能值** | 90 (預設) 。 允許的值介於1天到180天。 |
 | **Comments** | 在101.04.76 或更高版本的 Defender 中提供。 |
@@ -261,7 +262,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | scanHistoryMaximumItems |
+| **索引鍵** | scanHistoryMaximumItems |
 | **資料類型** | 字串 |
 | **可能值** | 10000 (預設) 。 允許的值是從5000專案到15000專案。 |
 | **Comments** | 在101.04.76 或更高版本的 Defender 中提供。 |
@@ -273,7 +274,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | cloudService |
+| **索引鍵** | cloudService |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 |||
@@ -284,7 +285,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | 啟用 |
+| **索引鍵** | 啟用 |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
 |||
@@ -295,7 +296,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | diagnosticLevel |
+| **索引鍵** | diagnosticLevel |
 | **資料類型** | 字串 |
 | **可能值** | 選用 (預設)  <br/> 必要 |
 |||
@@ -310,7 +311,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | automaticSampleSubmissionConsent |
+| **索引鍵** | automaticSampleSubmissionConsent |
 | **資料類型** | 字串 |
 | **可能值** | 無 <br/> 安全 (預設)  <br/> 所有 |
 |||
@@ -321,7 +322,7 @@ ms.locfileid: "51943002"
 
 |||
 |:---|:---|
-| **Key** | automaticDefinitionUpdateEnabled |
+| **索引鍵** | automaticDefinitionUpdateEnabled |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
 |||
@@ -337,7 +338,7 @@ ms.locfileid: "51943002"
   - 封鎖 **(PUA) 可能有害的應用程式**
   - 將 bombs 具有高壓縮率) 的封存檔 (**檔案**，審核至產品記錄
 - 啟用自動安全性情報更新
-- 啟用雲端傳送保護
+- 啟動雲端提供的保護
 - 啟用層級的自動範例提交 `safe`
 
 ### <a name="sample-profile"></a>範例設定檔
@@ -387,7 +388,12 @@ ms.locfileid: "51943002"
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home"
+            "path":"/run"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home/*/git"
          },
          {
             "$type":"excludedFileExtension",

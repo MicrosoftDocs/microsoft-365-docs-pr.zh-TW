@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 系統管理中心的網路連線 (預覽) '
+title: Microsoft 365 系統管理中心的網路連線能力
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,15 +14,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: 4f88b3ad5bf8f0c32059a26348a651a6024ad544
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Microsoft 365 系統管理中心的網路連線能力
+ms.openlocfilehash: 75451a73ed56dade796f6de288f7f4acfb147960
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245765"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470619"
 ---
-# <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
+# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的網路連線能力
 
 Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者收集到的匯總網路連線度量，而且只能在租使用者中查看其管理使用者。
 

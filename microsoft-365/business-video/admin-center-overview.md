@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 系統管理中心-簡介
+title: Microsoft 365 系統管理中心-綜述
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,38 +20,40 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 深入瞭解 Microsoft 365 admin center。
-ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: 深入瞭解 Microsoft 365 系統管理中心。
+ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332243"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470421"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心概觀
 
 - [簡化模式中的系統管理中心](#the-admin-center-in-simplified-view)
 - [儀表板視圖中的系統管理中心](#the-admin-center-in-dashboard-view)
 
+Microsoft 365 系統管理中心有兩個視圖：簡化的視圖可協助較小的組織管理其最常見的任務。 儀表板視圖包含更複雜的設定和工作。 您可以從系統管理中心上方的按鈕進行切換。
+
 ## <a name="the-admin-center-in-simplified-view"></a>簡化模式中的系統管理中心
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
-使用 Microsoft 365 系統管理中心，您可以重設密碼、查看您的發票、新增或移除使用者，以及在一個地方更多的功能。
+使用 Microsoft 365 系統管理中心，您可以重設密碼、查看您的發票、新增或移除使用者，以及在同一位置中更多的功能。
 
-使用您的工作帳戶登入 Office.com，然後選取應用程式啟動器。 
+使用您的工作帳戶登入 Office .com，然後選取應用程式啟動器。 
 
 如果您有權存取系統管理中心，您會在清單中看到 [ **管理員** ]。 選取它。 
 
-在系統管理中心的頂端，查看最上層的動作。 視您已設定的專案而定，您可能會看到不同的動作，例如建立新帳戶、使用小組、設定電子郵件，以及安裝 Office 應用程式。 
+在系統管理中心的頂端，查看最上層的動作。 視您已設定的專案而定，您可能會看到不同的動作，例如，使用 Teams、設定電子郵件及安裝 Office 應用程式來建立新帳戶。 
  
 在 [**使用者**] 索引標籤的 [使用者] 索引卷 **標上，** 是可存取應用程式和服務的人員清單、新增使用者、重設密碼或使用 [**其他動作**] 功能表。 選取人員，以查看或編輯其資訊和設定。  
 
-在 [ **小組** ] 索引標籤上，建立新的小組或管理現有的團隊。 您可以管理小組成員或選取 [ **更多動作** ] 以變更其他小組設定。 
+在 [ **Teams** ] 索引標籤上，建立新的小組或管理現有的團隊。 您可以管理小組成員或選取 [其他 **動作**]，以變更其他 Teams 設定。 
 
 在 [ **訂閱** ] 索引標籤上，新增 [其他產品]、[新增授權] 或 [ **其他動作** ] 功能表以修改授權或支付方式。
 
-在 [ **學習** ] 索引標籤上，流覽有關系統管理中心及其他 Microsoft 365 功能的影片和文章。 若要探索系統管理中心的更多高級功能，請開啟導覽功能表，並展開標題以查看更多內容。 選取 [ **全部顯示** ] 以查看導覽功能表中的所有專案，或使用搜尋列快速尋找您要尋找的專案。
+在 [**學習**] 索引標籤上，流覽有關系統管理中心及其他 Microsoft 365 功能的影片和文章。 若要探索系統管理中心的更多高級功能，請開啟導覽功能表，並展開標題以查看更多內容。 選取 [ **全部顯示** ] 以查看導覽功能表中的所有專案，或使用搜尋列快速尋找您要尋找的專案。
 
 如果您需要協助，請選取 [ **協助 & 支援**]。 搜尋您想要協助的主題，並查看建議的解決方案，或選取耳機以聯繫支援人員，然後輸入您的問題和連絡人資訊。 
 
@@ -59,9 +61,9 @@ ms.locfileid: "52332243"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-Microsoft 365 系統管理中心是您在雲端管理貴公司的所在位置。 您可以完成新增及移除使用者、變更授權，以及重設密碼等工作。 
+Microsoft 365 系統管理中心是您在雲端管理貴公司的地方。 您可以完成新增及移除使用者、變更授權，以及重設密碼等工作。 
 
-專業工作區（如安全性或裝置管理），允許更細微的控制。 如需系統管理中心如何共同運作的詳細資訊，請參閱本文中 [的特定類型的 IT 角色和其他工作區（如安全性、裝置管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。
+專業工作區（如安全性或裝置管理），允許更細微的控制。 如需系統管理中心如何共同運作的詳細資訊，請參閱本文中[的特定類型的 IT 角色和其他工作區（如安全性、裝置管理或 Exchange](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) ）。
 
 若要取得 Microsoft 365 系統管理中心，請移至 [admin.microsoft.com](https://admin.microsoft.com) ，或者，如果您已登入，請選取應用程式啟動器，然後選擇 [系統 **管理**]。
 
@@ -81,9 +83,9 @@ Microsoft 365 系統管理中心是您在雲端管理貴公司的所在位置。
 
 如需管理帳單、密碼、使用者及系統管理員的詳細資訊，請參閱本課程中的其他課程。
 
-## <a name="who-is-an-admin"></a>誰是系統管理員？ 
+## <a name="who-is-an-admin"></a>神秘是系統管理員？ 
 
-依預設，註冊和購買 Microsoft 365 for business 訂閱的人員會取得系統管理員許可權。 該人員可將系統管理員許可權指派給其他人員，以協助他們管理其組織的 Microsoft 365。
+依預設，註冊及購買 Microsoft 365 商務訂閱的人員會取得系統管理員許可權。 該人員可將系統管理員許可權指派給其他人，以協助他們管理其組織的 Microsoft 365。
 
 如果您收到「您沒有 **存取此頁面或執行此動作的許可權**」的訊息，表示您不是系統管理員。
   
@@ -105,7 +107,7 @@ Microsoft 365 系統管理中心是您在雲端管理貴公司的所在位置。
 
 ## <a name="turn-on-targeted-release"></a>開啟目標版本
 
-1. 在 [admin.microsoft.com](https://admin.microsoft.com)中登入，移至功能窗格，然後選取 [ **設定** \> **組織設定檔**]。
+1. 在 [admin.microsoft.com](https://admin.microsoft.com)中登入，移至功能窗格，然後選取 [**設定** \> **組織設定檔**]。
 
 2. 移至 [ **發行偏好** 設定卡]，然後選取 [ **編輯**]。 
     
@@ -119,29 +121,29 @@ Microsoft 365 系統管理中心是您在雲端管理貴公司的所在位置。
 
 您不會在這裡看到您的問題答案？ 請移至此頁面底部的 [ **意見** 反應] 區段，並詢問您的問題。 
   
-### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些 Microsoft 365 方案可供試用或購買？
+### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些 Microsoft 365 計畫可供試用或購買？
 
-Microsoft 365 是完整的智慧解決方案，包括 Office 365、Windows 10 和企業行動性 + 安全性，可讓每個人都有創造性且安全地協同運作。 您可以在系統管理中心使用下列 Microsoft 365 訂閱，讓您立即嘗試或購買：
+Microsoft 365 是完整的智慧解決方案，包括 Office 365、Windows 10 和 Enterprise Mobility + Security，可讓每個人都具有創造性且安全地合作。 您可以在系統管理中心使用下列 Microsoft 365 訂閱，讓您立即嘗試或購買：
   
 - Microsoft 365 商務版
 - Microsoft 365 企業版 E3
 - Microsoft 365 企業版 E5
     
-如需詳細資訊，請參閱 [嘗試或購買 Microsoft 365 訂閱](../commerce/try-or-buy-microsoft-365.md)。
+如需詳細資訊，請參閱[嘗試或購買 Microsoft 365 訂閱](../commerce/try-or-buy-microsoft-365.md)。
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>我發現 bug 或我想要要求功能增強功能。 如何讓 Microsoft 知道？
 
-我們喜歡聽到您的來信！ 報告錯誤和共用意見反應可協助我們改善 Microsoft 365 系統管理中心。 若要提供意見反應，請選取頁面底部的 [ **意見** 反應] 按鈕，並使用表單將您的想法傳送給我們。 如果您希望 Microsoft 365 系統管理中心小組的人員追蹤您的意見，請選取核取方塊，並確認您的電子郵件地址。 我們無法承諾跟進每一項意見反應，但我們要嘗試！ 
+我們喜歡聽到您的來信！ 報告錯誤和共用反應可協助我們提高 Microsoft 365 的系統管理中心。 若要提供意見反應，請選取頁面底部的 [ **意見** 反應] 按鈕，並使用表單將您的想法傳送給我們。 如果您希望 Microsoft 365 系統管理中心小組的人員追蹤您的意見，請選取核取方塊，並確認您的電子郵件地址。 我們無法承諾跟進每一項意見反應，但我們要嘗試！ 
   
 您也可以從系統管理中心以外的 UserVoice 論壇中提供意見反應。 您可以使用此頁面來進行其他論壇使用者可投票的功能建議： [新系統管理中心的 UserVoice 論壇](https://go.microsoft.com/fwlink/?linkid=2024994)。
 
-### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>IT 角色的特定類型及其他工作區（如安全性、裝置管理或 Exchange）的情況為何？
+### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>特定類型的 IT 角色與其他工作區（如安全性、裝置管理或 Exchange）的情況為何？
 
-Microsoft 365 系統管理中心是所有用來管理 Microsoft 365 的團隊和角色的一般進入點。 您可以針對每個系統管理員和角色，量身定制和自訂經驗、資訊和控制項。 此外，專業工作區允許深度、精細的控制。 這些專家工作區包括 SharePoint、小組 &amp; Skype、Exchange、安全性、規範、裝置管理和 Azure Active Directory。 您可以從 Microsoft 365 系統管理中心的流覽窗格中，找到專家工作區 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。
+Microsoft 365 系統管理中心是 Microsoft 365 管理所有小組和角色的一般進入點。 您可以針對每個系統管理員和角色，量身定制和自訂經驗、資訊和控制項。 此外，專業工作區允許深度、精細的控制。 這些專家工作區包括 SharePoint、Teams &amp; Skype、Exchange、安全性、規範、裝置管理和 Azure Active Directory。 您可以從 Microsoft 365 系統管理中心的功能窗格中找到專家工作區 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。
 
 ### <a name="what-language-options-are-available-the-admin-center"></a>系統管理中心可使用哪些語言選項？
 
-Microsoft 365 系統管理中心已完全當地語系化為40語言。
+Microsoft 365 系統管理中心完全當地語系化為40語言。
 
 |語言 |Locale |
 |---------|---------|

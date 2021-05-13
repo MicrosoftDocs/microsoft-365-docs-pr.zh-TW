@@ -17,19 +17,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934294"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346411"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上設定及驗證 Microsoft Defender for Endpoint 的排除專案
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **適用於：**
+
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +38,7 @@ ms.locfileid: "51934294"
 本文提供有關如何定義適用于隨選掃描和即時保護和監控之排除的資訊。
 
 > [!IMPORTANT]
-> 本文所述的排除項不適用於 Linux 功能上的其他 Defender for Endpoint，包括端點偵測和回應 (EDR) 。 使用本文所述方法排除的檔案，仍然可以觸發 EDR 警示及其他偵測。
+> 本文中所述的排除項不適用於 Linux 功能上的其他 Defender for the endpoint，包括 (EDR) 的端點偵測和回應。 使用本文所述方法排除的檔案，仍然可以觸發 EDR 警示及其他偵測。
 
 您可以從 Linux 掃描上的「Defender for Endpoint」排除某些檔案、資料夾、處理常式及處理常式開啟的檔案。
 
