@@ -506,54 +506,54 @@
           items:
             - name: 關鍵字查詢與搜尋條件
               href: keyword-queries-and-search-conditions.md
-            - name: 檢視搜尋結果的關鍵字統計資料
+            - name: 預覽電子文件探索搜尋結果
+              href: preview-ediscovery-search-results.md
+            - name: 檢視搜尋結果的統計資料
               href: view-keyword-statistics-for-content-search.md
             - name: 匯出搜尋結果
               href: export-search-results.md
             - name: 匯出搜尋報告
               href: export-a-content-search-report.md
-            - name: 使用 Microsoft Edge 下載搜尋結果
-              href: configure-edge-to-export-search-results.md
             - name: 搜尋並刪除電子郵件訊息
               href: search-for-and-delete-messages-in-your-organization.md
             - name: 搜尋內部部署使用者的 Teams 聊天資料
               href: search-cloud-based-mailboxes-for-on-premises-users.md
-            - name: 大量編輯多個內容搜尋
-              href: bulk-edit-content-searches.md
             - name: 準備識別碼清單搜尋的 CSV 檔案
               href: csv-file-for-an-id-list-content-search.md
-            - name: 檢查您的搜尋查詢是否有錯誤
-              href: check-your-content-search-query-for-errors.md
+            - name: 設定內容搜尋的權限篩選
+              href: permissions-filtering-for-content-search.md
             - name: 疑難排解常見的電子文件探索問題
               href: ediscovery-troubleshooting-common-issues.md
             - name: 重新嘗試失敗的搜尋
               href: retry-failed-content-search.md
             - name: 為搜尋保留密件副本收件者
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-        - name: 設定內容搜尋
+        - name: 內容搜尋參考資料
           items:
-            - name: 設定內容搜尋的權限篩選
-              href: permissions-filtering-for-content-search.md
-            - name: 變更匯出搜尋結果時的 PST 檔案大小
-              href: change-the-size-of-pst-files-when-exporting-results.md
-            - name: 當您匯出搜尋結果時停用報告
-              href: disable-reports-when-you-export-content-search-results.md
-        - name: 內容搜尋參考
-          items:
-            - name: 內容搜尋限制
+            - name: eDiscovery 搜尋限制
               href: limits-for-content-search.md
+            - name: 儲存在信箱中供電子文件探索的內容
+              href: what-is-stored-in-exo-mailbox.md
+            - name: 估計與實際搜尋結果之間的差異
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
             - name: 部分編製索引的項目
               href: partially-indexed-items-in-content-search.md
             - name: 調查已局部編製索引的項目
               href: investigating-partially-indexed-items-in-ediscovery.md
             - name: 搜尋結果中的重複資料刪除
               href: de-duplication-in-ediscovery-search-results.md
-            - name: 估計與實際搜尋結果之間的差異
-              href: differences-between-estimated-and-actual-ediscovery-search-results.md
-            - name: 儲存在信箱中供電子文件探索的內容
-              href: what-is-stored-in-exo-mailbox.md
             - name: 電子文件探索工具的解密
               href: ediscovery-decryption.md
+            - name: 變更匯出搜尋結果時的 PST 檔案大小
+              href: change-the-size-of-pst-files-when-exporting-results.md
+            - name: 當您匯出搜尋結果時停用報告
+              href: disable-reports-when-you-export-content-search-results.md
+            - name: 檢查您的搜尋查詢是否有錯誤
+              href: check-your-content-search-query-for-errors.md
+            - name: 使用 Microsoft Edge 下載搜尋結果
+              href: configure-edge-to-export-search-results.md
+            - name: 大量編輯多個內容搜尋
+              href: bulk-edit-content-searches.md
         - name: 內容搜尋 PowerShell 指令碼
           items:
             - name: 對目標集合使用內容搜尋
@@ -578,23 +578,29 @@
           href: close-reopen-delete-core-ediscovery-cases.md
         - name: 核心電子文件探索參考資料
           items:
+            - name: eDiscovery 搜尋限制
+              href: limits-for-content-search.md
             - name: 指派電子文件探索權限
               href: assign-ediscovery-permissions.md
             - name: 關鍵字查詢與搜尋條件
               href: keyword-queries-and-search-conditions.md
             - name: 儲存在信箱中供電子文件探索的內容
               href: what-is-stored-in-exo-mailbox.md
-            - name: 設定搜尋權限篩選
-              href: permissions-filtering-for-content-search.md
+            - name: 預覽電子文件探索搜尋結果
+              href: preview-ediscovery-search-results.md
             - name: 設定合規性界限
               href: set-up-compliance-boundaries.md
+            - name: 設定搜尋權限篩選
+              href: permissions-filtering-for-content-search.md
+            - name: 估計與實際搜尋結果之間的差異
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: 匯出搜尋報告
+              href: export-a-content-search-report.md
             - name: 使用指令碼將使用者新增至電子文件探索的保留
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
             - name: 在電子文件探索的保留建立報表
               href: create-a-report-on-holds-in-ediscovery-cases.md
-            - name: 匯出搜尋報告
-              href: export-a-content-search-report.md
-            - name: 檢視搜尋結果的關鍵字統計資料
+            - name: 檢視搜尋結果的統計資料
               href: view-keyword-statistics-for-content-search.md
             - name: 搜尋和清除溢出的資料
               href: data-spillage-scenariosearch-and-purge.md
@@ -786,18 +792,22 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 管理稽核和警示原則
   items:
+    - name: Microsoft 365 解決方案
+      href: auditing-solutions-overview.md
     - name: 基本稽核
       items:
+        - name: 設定基本稽核
+          href: set-up-basic-auditing.md
         - name: 搜尋稽核記錄
           href: search-the-audit-log-in-security-and-compliance.md
         - name: 使用 PowerShell 指令碼來搜尋稽核記錄
           href: audit-log-search-script.md
-        - name: 開啟或關閉稽核記錄搜尋
-          href: turn-audit-log-search-on-or-off.md
         - name: 稽核記錄中的詳細內容
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: 匯出、 設定及檢視稽核記錄檔的記錄
           href: export-view-audit-log-records.md
+        - name: 開啟或關閉稽核記錄搜尋
+          href: turn-audit-log-search-on-or-off.md
         - name: 使用稽核記錄調查常見問題
           href: auditing-troubleshooting-scenarios.md
         - name: 使用稽核記錄中的共用稽核
@@ -810,16 +820,18 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 管理活動 API 常見問題和疑難排解
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: 信箱稽核
-      href: enable-mailbox-auditing.md
     - name: 進階稽核
       items:
         - name: 進階稽核概觀
           href: advanced-audit.md
+        - name: 設定進階稽核
+          href: set-up-advanced-audit.md
         - name: 管理稽核記錄保留原則
           href: audit-log-retention-policies.md
         - name: 使用進階稽核調查遭入侵帳戶
           href: mailitemsaccessed-forensics-investigations.md
+    - name: 信箱稽核
+      href: enable-mailbox-auditing.md
     - name: 警示原則
       href: alert-policies.md
 - name: 管理合規性風險
