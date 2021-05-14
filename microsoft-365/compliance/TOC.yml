@@ -501,9 +501,11 @@
       items:
         - name: 內容搜尋概觀
           href: search-for-content.md
-        - name: 使用內容搜尋
+        - name: 搜尋內容
           href: content-search.md
           items:
+            - name: 內容搜尋的功能參考
+              href: content-search-reference.md
             - name: 關鍵字查詢與搜尋條件
               href: keyword-queries-and-search-conditions.md
             - name: 預覽電子文件探索搜尋結果
@@ -663,32 +665,20 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: 單一項目錯誤補救
               href: single-item-error-remediation.md
-        - name: 收集案例的內容 (預覽)
+        - name: 收集案例的內容
           items:
-            - name: 了解集合 (預覽)
+            - name: 深入了解集合
               href: collections-overview.md
-            - name: 建立草稿集合 (預覽)
+            - name: 建立草稿集合
               href: create-draft-collection.md
-            - name: 草稿集合提交至檢閱集 (預覽)
+            - name: 草稿集合提交至檢閱集
               href: commit-draft-collection.md
-            - name: 集合統計資料和報告 (預覽)
+            - name: 集合統計資料和報告
               href: collection-statistics-reports.md
             - name: 組建集合的搜尋查詢
               href: building-search-queries.md
             - name: 關鍵字查詢與搜尋條件
               href: keyword-queries-and-search-conditions.md
-        - name: 收集適用於案例的資料
-          items:
-            - name: 建立搜尋
-              href: create-search-to-collect-data.md
-            - name: 建立搜尋查詢
-              href: building-search-queries.md
-            - name: 關鍵字查詢與搜尋條件
-              href: keyword-queries-and-search-conditions.md
-            - name: 搜尋統計資料
-              href: search-statistics-in-advanced-ediscovery.md
-            - name: 將搜尋結果新增至檢閱集
-              href: add-data-to-review-set.md
         - name: 管理檢閱集
           href: managing-review-sets.md
           items:
@@ -840,6 +830,8 @@
       items:
         - name: 了解合規性管理員
           href: compliance-manager.md
+        - name: 合規性管理員的新增功能
+          href: compliance-manager-whats-new.md
         - name: 合規性管理員快速入門
           href: compliance-manager-quickstart.md
         - name: '開始使用 [合規性管理員]'
