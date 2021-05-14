@@ -42,6 +42,16 @@
   items:
     - name: 開始使用採用
       href: adoption-getstarted.md
+    - name: 在 Microsoft 365 中管理協定
+      items:
+        - name: 概觀
+          href: solution-manage-contracts-in-microsoft-365.md
+        - name: 步驟 1. 使用 SharePoint Syntex
+          href: solution-manage-contracts-step1.md
+        - name: 步驟 2. 使用 Microsoft Teams
+          href: solution-manage-contracts-step2.md
+        - name: 步驟 3. Power Automate
+          href: solution-manage-contracts-step3.md
 - name: 設定和管理
   items:
     - name: 設定內容瞭解
