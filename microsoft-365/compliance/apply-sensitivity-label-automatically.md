@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: d0745ac2e4d5b78b40746fd0593a9af18e691021
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: f5281255db48b61e7cf21a1ac8d6b5bdd18ebc20
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326827"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332975"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -73,9 +73,9 @@ ms.locfileid: "52326827"
     - 如果您有套用 IRM 加密的 Exchange 郵件流程規則或資料外洩防護 (DLP) 原則：當內容由這些規則或原則和自動套用標籤原則識別時，則會套用標籤。 如果該標籤套用加密，則會忽略 Exchange 郵件流程規則或 DLP 原則的 IRM 設定。 不過，如果該標籤並未套用加密，除了標籤以外，還會套用郵件流程規則或 DLP 原則的 IRM 設定。
     - 當有一個相符項目使用自動套用標籤時，具有 IRM 加密而沒有標籤的電子郵件，將會由具有任何加密設定的標籤取代。
     - 當有項目與您的自動套用標籤條件相符時，內送電子郵件會套用標籤：
-        - 如果標籤針對 [加密](encryption-sensitivity-labels.md) 進行設定，則不會套用加密。
+        - 如果標籤針對 [加密](encryption-sensitivity-labels.md) 進行設定，則會套用加密。 不過，目前不支援此設定。
         - 如果標籤設定為套用 [動態標記](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)，請注意，這可能導致人員名稱會在組織的外部。
-    - 當標籤套用加密時，[版權管理頒發者和版權管理擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)會是傳送電子郵件的人員。
+    - 當標籤套用加密時，[版權管理頒發者和版權管理擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)會是傳送電子郵件的人員。 目前無法為自動加密的所有內建電子郵件訊息，設定版權管理員擁有者。
     
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>比較 Office 應用程式的自動套用標籤與自動套用標籤原則
