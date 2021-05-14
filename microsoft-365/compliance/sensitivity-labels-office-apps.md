@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a9755542b608c8ed7d3cd93bebbd764fd56b9768
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332711"
+ms.locfileid: "52345761"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -92,7 +92,7 @@ iOS 版 Office 和 Android 版 Office：敏感度標籤內建於 [Office 應用�
 |[要求使用者在電子郵件和文件中套用標籤](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | 是                |
 |[稽核標籤相關的使用者活動](data-classification-activity-explorer.md) | 2011+ | 審查中 | 審查中           | 審查中               | 審查中 |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 審查中           | 審查中               | 是 |
-|[預設標籤和強制標籤的不同設定](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 推出預覽版：[Beta 版通道](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | 是 |
+|[預設標籤和強制標籤的不同設定](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | 是 |
 |
 
 **註腳：**
