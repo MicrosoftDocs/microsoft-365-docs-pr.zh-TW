@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: 取得組織中人員如何使用 Microsoft 365 服務的定期報告，並深入了解每個圖表。
+ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759807"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530967"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
@@ -63,7 +63,7 @@ ms.locfileid: "51759807"
 
 擁有下列權限的人員：
   
-- 全域系統管理員：建議只讓公司裡的少數幾個人擁有這個角色。 如此可降低企業風險。
+- 全域系統管理員：我們建議只讓公司裡的少數幾個人擁有這個角色。如此可降低企業風險。
     
 - Exchange 系統管理員
     
@@ -199,6 +199,10 @@ ms.locfileid: "51759807"
   
 不過，當您選取特定的一天 (請參閱第 3 項)，報告就會在使用者詳細資料表格中顯示該使用者的使用量，期間為自目前日期起最多 28 天 (請參閱第 2 項)。
   
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[安全與合規性中心內的報告](../../compliance/reports-in-security-and-compliance.md)
+[安全性 &amp; 合規性中心內的報告](../../compliance/reports-in-security-and-compliance.md) (文章)
+
+[Microsoft 365 使用情況分析](../usage-analytics/usage-analytics.md) (文章)
+
+[自訂 Microsoft 365 使用方式分析中的報告](../usage-analytics/customize-reports.md) (文章)

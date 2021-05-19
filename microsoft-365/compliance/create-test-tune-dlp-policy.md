@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 在本文中，您將瞭解如何根據組織的需求來建立、測試及調整 DLP 原則。
-ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e252c7328c59c246f739caf4b70acd44de010e42
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052081"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532515"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
 
@@ -38,7 +38,7 @@ DLP 會檢查電子郵件和檔案的敏感資訊，例如信用卡號碼。 使
 
 ## <a name="permissions"></a>權限
 
-您的規範小組中將建立 DLP 原則的成員必須具備規範中心的權限。 根據預設，您的租使用者系統管理員可以存取合規性監察官員和其他人員。 請遵循下列步驟：
+您的規範小組中將建立 DLP 原則的成員必須具備規範中心的權限。 根據預設，您的租使用者系統管理員可以存取合規性監察官員和其他人員。 遵循下列步驟：
   
 1. 在 Microsoft 365 中建立一個群組，並將法務人員新增至此群組。
     
@@ -50,7 +50,7 @@ DLP 會檢查電子郵件和檔案的敏感資訊，例如信用卡號碼。 使
 
 使用 **VIEW-ONLY Dlp 相容性管理** 角色來建立具有 DLP 原則和 dlp 報告之只供查看許可權的角色群組。
 
-如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 若要建立及套用 DLP 原則，不會強制執行原則，這些許可權是必要的。
 
@@ -73,9 +73,9 @@ DLP 會依正則運算式尋找敏感資訊 (RegEx) 模式比對，以與其他�
 
 當資料洩漏風險不完全顯而易見時，就很難實際開始執行 DLP。 幸運的是，DLP 原則可以在「測試模式」中執行，這樣您就能在開啟之前估量效能和精確度。
 
-可透過 Exchange 系統管理中心來管理 Exchange Online 的 DLP 原則。 不過，您可以透過安全性 & 規範中心設定所有工作負載的 DLP 原則，如此一來，我們將在本文中示範。 在安全性 & 規範中心，您會在 **資料遺失防護** 原則下找到 DLP 原則  >  ****。 選擇 [建立要啟動 **的原則** ]。
+您可以透過 Exchange 系統管理中心管理 Exchange Online 的 DLP 原則。 不過，您可以透過安全性 & 規範中心設定所有工作負載的 DLP 原則，如此一來，我們將在本文中示範。 在安全性 & 規範中心，您會在 **資料遺失防護** 原則下找到 DLP 原則  >  ****。 選擇 [建立要啟動 **的原則** ]。
 
-Microsoft 365 提供一系列 [DLP 原則範本](what-the-dlp-policy-templates-include.md) ，您可以用來建立原則。 假設您是澳大利亞公司。 您可以篩選澳大利亞的範本，並選擇 [金融]、「醫療」和「健康情況」和「隱私權」。
+Microsoft 365 提供您可以用來建立原則的[DLP 原則範本](what-the-dlp-policy-templates-include.md)範圍。 假設您是澳大利亞公司。 您可以篩選澳大利亞的範本，並選擇 [金融]、「醫療」和「健康情況」和「隱私權」。
 
 ![選擇國家或地區的選項](../media/DLP-create-test-tune-choose-country.png)
 
@@ -87,17 +87,17 @@ Microsoft 365 提供一系列 [DLP 原則範本](what-the-dlp-policy-templates-i
 
 ![用於命名原則的選項](../media/DLP-create-test-tune-name-policy.png)
 
-選擇原則將套用的位置。 DLP 原則可以套用到 Exchange Online、SharePoint Online 和商務 OneDrive。 我要將此原則設定為套用至所有位置。
+選擇原則將套用的位置。 DLP 原則可以套用到 Exchange Online、SharePoint 線上及商務用 OneDrive。 我要將此原則設定為套用至所有位置。
 
 ![選擇所有位置的選項](../media/DLP-create-test-tune-choose-locations.png)
 
-在第一個 **原則設定** 步驟中，只要接受預設值即可。 您可以自訂 DLP 原則，但預設值是一個不錯的開始位置。
+在第一個 **原則設定** 步驟，只要接受預設值即可。 您可以自訂 DLP 原則，但預設值是一個不錯的開始位置。
 
 ![自訂要保護的內容類型的選項](../media/DLP-create-test-tune-default-customization-settings.png)
 
-按 [下一步] 後，您將會看到其他具有更多自訂選項的 [ **原則設定** ] 頁面。 針對您剛測試的原則，您可以在這裡開始進行一些調整。
+按 [下一步] 後，您將會看到其他 **原則設定**] 頁面上有更多自訂選項。 針對您剛測試的原則，您可以在這裡開始進行一些調整。
 
-- 現在已經關閉原則提示，這是在您只測試專案，而不想要向使用者顯示任何專案時採取的合理步驟。 原則提示會向使用者顯示警告，告知您其即將違反 DLP 原則。 例如，Outlook 使用者將會看到一則警告，指出其附加的檔案包含信用卡號碼，並將拒絕其電子郵件。 原則秘訣的目標是先停止不相容的行為，再進行此動作。
+- 現在已經關閉原則提示，這是在您只測試專案，而不想要向使用者顯示任何專案時採取的合理步驟。 原則提示會向使用者顯示警告，告知您其即將違反 DLP 原則。 例如，Outlook 使用者會看到一則警告，指出其所附加的檔案包含信用卡號碼，並將拒絕其電子郵件。 原則秘訣的目標是先停止不相容的行為，再進行此動作。
 - 我也減少了從10到1的實例數目，所以這個原則會偵測所有的澳大利亞 PII 資料共用，而不只是大量的資料共用。
 - 我也將另一位收件者新增至附隨報告電子郵件。
 
@@ -152,7 +152,7 @@ Microsoft 365 提供一系列 [DLP 原則範本](what-the-dlp-policy-templates-i
 - 條件，包含會觸發規則的敏感性資料實例類型和數目。
 - 採取的動作，例如限制存取內容。
 - 使用者通知：這是在電子郵件客戶程式或網頁瀏覽器中向使用者顯示的原則提示。
-- 使用者覆寫，它會決定使用者是否可以選擇繼續進行電子郵件或檔案共用。
+- 使用者覆寫會決定使用者是否可以選擇繼續進行電子郵件或檔案共用。
 - 附隨報告，以通知系統管理員。
 
 ![編輯規則部分的選項](../media/DLP-create-test-tune-editing-options.png)
@@ -173,9 +173,9 @@ Microsoft 365 提供一系列 [DLP 原則範本](what-the-dlp-policy-templates-i
 
 ![在測試模式中顯示原則提示的選項](../media/DLP-create-test-tune-show-policy-tips.png)
 
-在 [伺服器端 (] 或 [雲端端] 如果您想要) ，變更可能不會立即生效，因為不同的處理間隔。 如果您要進行 DLP 原則變更，以向使用者顯示新的原則提示，使用者可能看不到其 Outlook 用戶端中所做的變更會立即生效，這會檢查每24小時執行的原則變更。 如果您想要加快測試速度，您可以使用此註冊表修正程式， [從 PolicyNudges 機碼清除上次下載時間戳記](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451)。 Outlook 會在您下一次重新開機時下載最新的原則資訊，然後開始撰寫電子郵件訊息。
+在 [伺服器端 (] 或 [雲端端] 如果您想要) ，變更可能不會立即生效，因為不同的處理間隔。 如果您要進行 DLP 原則變更，以向使用者顯示新的原則提示，使用者可能看不到 Outlook 用戶端中所做的變更會立即生效，這會檢查每24小時執行的原則變更。 如果您想要加快測試速度，您可以使用此註冊表修正程式， [從 PolicyNudges 機碼清除上次下載時間戳記](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451)。 Outlook 會在下一次重新開機時下載最新的原則資訊，並開始撰寫電子郵件訊息。
 
-如果您已啟用原則提示，使用者就會開始查看 Outlook 中的秘訣，並在發生時向您報告誤報。
+如果您已啟用原則提示，使用者就會開始查看 Outlook 中的秘訣，並在發生時向您報告錯誤的陽性。
 
 ![具有報告 false 正值選項的原則提示](../media/DLP-create-test-tune-policy-tip-in-outlook.png)
 
@@ -199,14 +199,12 @@ DLP 原則範本並不完全直接離開盒。 您很可能會發現環境中有
 
 
 其中一個選項是移除來自原則的澳大利亞駕駛執照資訊類型。 因為它是 DLP 原則範本的一部分，但不會強制您使用它。 如果您只對稅收檔編號（而不是驅動程式的授權）感興趣，您可以將它移除。 例如，您可以從原則中的低容量規則中移除它，但將它保留在高容量規則中，以便仍偵測到多個驅動程式授權清單。
-
-![從規則刪除敏感資訊類型的選項](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
-另一種方法是增加實例計數，這樣只有在有多個實例時，才會偵測到低數量的驅動程式授權。
+另一個選項是增加實例計數，所以只有在多個實例時，才會偵測到低數量的驅動程式授權。
 
 ![編輯實例計數的選項](../media/DLP-create-test-tune-edit-instance-count.png)
 
-除了變更實例計數之外，您也可以調整 (或信賴等級) 的相符精確性。 如果您的敏感資訊類型有多種模式，您可以調整規則中的相符準確度，使規則只符合特定模式。 例如，若要協助減少誤報，您可以設定規則的符合準確度，使其只符合具有最高信賴度的模式。 瞭解信賴等級的計算方式是有點棘手 (而且超出此文章) 的範圍，但是這裡是 [如何使用信賴層級調整規則](data-loss-prevention-policies.md#match-accuracy)的好說明。
+除了變更實例計數之外，您也可以調整 (或信賴等級) 的相符精確性。 如果您的敏感資訊類型有多種模式，您可以調整規則中的相符準確度，使規則只符合特定模式。 例如，若要協助減少誤報，您可以設定規則的符合準確度，使其只符合具有最高信賴度的模式。 如需信賴層級的詳細資訊，請參閱 how [to use 信賴層級來調整您的規則](data-loss-prevention-policies.md#match-accuracy)。
 
 最後，如果您想要更進一步的掌握，您可以自訂任何敏感資訊類型，例如，您可以從 [澳大利亞駕駛執照號碼](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)的關鍵字清單中移除「悉尼 NSW」，以消除上述假的誤報。 若要瞭解如何使用 XML 和 PowerShell 執行這項操作，請參閱 [自訂內建的敏感資訊類型](customize-a-built-in-sensitive-information-type.md)。
 
@@ -216,7 +214,7 @@ DLP 原則範本並不完全直接離開盒。 您很可能會發現環境中有
 
 ![開啟原則的選項](../media/DLP-create-test-tune-turn-on-policy.png)
  
-如果您想要查看原則何時生效，請連線 [至安全性 & 合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) ，並執行 [Get-DlpCompliancePolicy Cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy) ，以查看 DistributionStatus。
+如果您想要查看原則何時生效，請[連線安全性 & 規範中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) ，並執行[Get-DlpCompliancePolicy Cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy) ，以查看 DistributionStatus。
 
 ![在 PowerShell 中執行 Cmdlet](../media/DLP-create-test-tune-PowerShell.png)
 

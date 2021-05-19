@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 使用者可以瞭解如何管理其自助購買服務。
 ms.date: 03/17/2021
-ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333251"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536079"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助購買 (使用者)
 
@@ -75,9 +75,9 @@ ms.locfileid: "52333251"
 ## <a name="cancel-a-subscription"></a>取消訂閱
 
 1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
-2. 在 **[產品]** 索引標籤上，找出您要取消的訂閱。 選取 **[更多動作]** (三個點)，然後選取 **[取消訂閱]**。
+2. 在 **[產品]** 索引標籤上，找出您要取消的訂閱。 選取 [ (更多動作) ] 的三個點，然後選取 [ **取消訂閱**]。
 3. 在 **取消訂閱** 窗格中，選擇取消的原因。 （選用）提供您所擁有的任何意見反應。
-4. 選取 **[儲存]**。
+4. 選取 ****[儲存]。
 
 ## <a name="manage-your-payment-details"></a>管理您的付款詳細資料
 
@@ -108,6 +108,6 @@ ms.locfileid: "52333251"
 
 ## <a name="need-help-contact-us"></a>需要協助？ 聯繫我們。
 
-如需有關自助購買的常見問題，請參閱 [自助購買常見問題](self-service-purchase-faq.md)。
+如需有關自助購買的常見問題，請參閱 [自助購買常見問題](self-service-purchase-faq.yml)。
 
 如果您有任何問題或需要協助您購買自助服務，請 [與支援人員聯繫](../../business-video/get-help-support.md)。

@@ -22,17 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: '瞭解如何授予使用者存取另一個使用者信箱的權限。 這可讓使用者從其他使用者的信箱讀取郵件及傳送郵件。 '
-ms.openlocfilehash: e6b94d4e24b0ff1d5dc397ccbcfba98929a303f2
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 提供使用者存取其他使用者信箱的權限，讓使用者讀取及傳送來自其他使用者信箱的電子郵件。
+ms.openlocfilehash: 3514be02f2ef82b727edfcf86c0bd3f6b8515510
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925539"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535959"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>將信箱權限授予另一位其他使用者 - 系統管理員說明
 
-身為系統管理員，公司可能會要求您授權部分使用者存取另一個使用者的信箱。 例如，您可能會想要授權助理來傳送或讀取直屬主管信箱的電子郵件，或是授權其中一個使用者代理另一個使用者傳送電子郵件。 本主題將向您說明如何完成這項作業。
+身為系統管理員，公司可能會要求您授權部分使用者存取另一個使用者的信箱。例如，您可能會想要授權助理來傳送或讀取直屬主管信箱的電子郵件，或是授權其中一個使用者代理另一個使用者傳送電子郵件。本主題將向您說明如何完成這項作業。
   
 如需有關建立及管理共用信箱的資訊，請參閱[建立共用信箱](../email/create-a-shared-mailbox.md)。
     
@@ -205,11 +205,11 @@ ms.locfileid: "49925539"
 ::: moniker-end
 
 
-## <a name="send-and-read-from-outlook-and-outlook-on-the-web-for-business"></a>從 Outlook 和商務用 Outlook 網頁版傳送及讀取郵件
-
-
-想知道如何從另一個使用者的信箱傳送電子郵件嗎？請參閱下列主題：
+## <a name="related-content"></a>相關內容
   
-- [管理其他人的郵件和行事曆項目](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
+[管理其他人的郵件和行事曆項目](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (文章)
     
-- [從另一個使用者或群組傳送電子郵件](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
+[從另一個使用者或群組傳送電子郵件](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (文章)
+
+[變更使用名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md) (影片)
+

@@ -1,23 +1,24 @@
 ---
 title: 西班牙的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5df4b68794e6b24e442a9dec3ceba1f04c7bd961
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 0276b05abdd0003691498529849b224ebd8dbd20
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272825"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52534891"
 ---
 # <a name="payment-information-for-spain"></a>西班牙的付款資訊
 

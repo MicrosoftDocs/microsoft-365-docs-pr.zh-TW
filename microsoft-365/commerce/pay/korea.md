@@ -1,23 +1,24 @@
 ---
 title: 韓國的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 21cdbc8822c10bc56460d57ea08fd0e854918277
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: d4c1cf128353aabd402c32f461aa1441dd538ad0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273449"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536511"
 ---
 # <a name="payment-information-for-korea"></a>韓國的付款資訊
 
@@ -31,4 +32,4 @@ ms.locfileid: "52273449"
 **Branch：** 89-29 Shinmunro-2ka Chongro-gu 首爾，韓國110-062  
 **SWIFT 程式碼：** CITIKRSX  
 **帳戶號碼：** 5001296088  
-**帳戶名稱：** MICROSOFT 韓國  
+**帳戶名稱：** MICROSOFT 韓國

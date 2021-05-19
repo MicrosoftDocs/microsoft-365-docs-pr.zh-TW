@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 瞭解如何設定 Microsoft 365 商務基本版訂閱。
-ms.openlocfilehash: a4636006a6819769752ef6ae61a5cb7155d5289e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 51a83d4cc230fa4bdb78bba71c9c7193a36fd391
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244464"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535719"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>設定 Microsoft 365 商務基本版
 
@@ -53,13 +53,13 @@ ms.locfileid: "52244464"
 
 ::: moniker range="o365-germany"
 
-1. 如果您使用的是 Office 365 Germany，請移至[此系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)。
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的系統管理中心。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 如果您使用的是由 21Vianet 運作的 Office 365，請移至[此系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)。
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 的系統管理中心。
 
 ::: moniker-end 
 
@@ -68,7 +68,7 @@ ms.locfileid: "52244464"
 3. 在 **[新增網域]** 步驟中，輸入您要使用的網域名城（例如 contoso.com）。
 
     > [!IMPORTANT]
-    > 如果您在註冊時購買了網域，就不會在此看到 **[新增網域]** 步驟。 改移至 [[新增使用者]](#add-users-and-assign-licenses)。
+    > 如果您在註冊時購買了網域，就不會在此看到 **[新增網域]** 步驟。請改為前往 [[新增使用者]](#add-users-and-assign-licenses)。
 
     
 4. 按照精靈中的步驟操作，在任何可驗證您擁有網域的[ 適用於 Office 365 的 DNS 主機服務供應商中建立 DNS 記錄](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。 如果您知道您的網域主機，請參閱 [[主機特定指示]](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)。
@@ -87,7 +87,7 @@ ms.locfileid: "52244464"
 
 1. 如果您的 Microsoft 365 商務基本版訂閱有現有的使用者 (例如，如果您使用 Azure AD Connect)，系統會提供立即將授權指派給他們的選項。請繼續進行，並為他們新增授權。
 
-2. 新增使用者之後，您也會看到與您新增之使用者共用認證的選項。 您可以選擇列印認證、透過電子郵件傳送認證，或是下載認證。
+2. 新增使用者之後，系統也會提供與您新增之使用者共用認證的選項。您可以選擇列印認證、透過電子郵件傳送認證，或是下載認證。
 
 ## <a name="connect-your-domain"></a>連接您的網域
 
@@ -99,7 +99,7 @@ ms.locfileid: "52244464"
 1. 設定精靈通常會偵測您的註冊機構，並提供您一個逐步指示連結，讓您更新在註冊機構網站上的 NS 記錄。 如果沒有，請[變更名稱伺服器，以透過任何網域註冊機構來設定 Office 365](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
 
     - 如果您有現有的 DNS 記錄，例如現有網站，但您的 DNS 主機已啟用 [網域連線](/office365/admin/get-help-with-domains/domain-connect)，請選擇 **[為我新增記錄]**。 在 **[選擇您的線上服務]** 頁面，接受所有預設值，並選擇 **[下一步]**，然後在您的 DNS 主機頁面上選擇 **[授權]**。
-    - 如果您的現有 DNS 記錄中有其他 DNS 主機(該主機無法用於網域連線)，您最好能自己管理自己的 DNS 記錄，以確保現有服務保持連線。 如需詳細資訊，請參閱 [網域基本資訊](/office365/admin/get-help-with-domains/dns-basics)。
+    - 如果您的現有 DNS 記錄中有其他 DNS 主機(該主機無法用於網域連線)，您最好能自己管理自己的 DNS 記錄，以確保現有服務保持連線。如需詳情，請查看[網域基本資料](/office365/admin/get-help-with-domains/dns-basics)。
 
 2. 按照精靈中的步驟進行，系統會為您設定電子郵件及其他服務。
 

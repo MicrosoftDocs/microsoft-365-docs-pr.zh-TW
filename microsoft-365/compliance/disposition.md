@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 監事和管理當您使用處置檢閱時的內容處置，或根據您進行的設定自動刪除標記為記錄的項目。
-ms.openlocfilehash: 13310eca369949e2b66163907be4268120aa0ed0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344930"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532160"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
 >*[Microsoft 365 安全性與合規性的授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-使用 Microsoft 365 合規性中心 [記錄管理]**** 中的 [處置]**** 頁面來管理處置檢閱，並檢視在其保留期間結束時自動刪除的[記錄](records-management.md#records)中繼資料。
+使用 Microsoft 365 合規性中心 [記錄管理]**** 中的 [處置]**** 頁面來管理處置檢閱，並檢視在其保留期間結束時自動刪除的 [記錄](records-management.md#records)中繼資料。
 
 > [!NOTE]
 > 在預覽中推出: **多階段處置檢閱**
@@ -53,16 +53,24 @@ ms.locfileid: "52344930"
 
 - 若要在處置流程期間檢視項目的內容，請將使用者新增到 [內容總管內容檢視器 **]** 角色群組。 如果使用者沒有這角色群組的權限，他們仍然可以選取處置檢閱動作來完成處置檢閲，但不能從合規性中心的迷你預覽窗格檢視項目的內容。
 
-- 預覽階段：根據預設，每個存取 [處置 **]** 頁面的人員只會看到指派給他們檢閱的項目。 如需讓記錄管理系統管理員查看指派給所有使用者的所有項目，以及查看設定用於處置檢閱的所有保留標籤：請瀏覽 [記錄管理設定 **]** > **[一般]** > **[記錄管理員安全性群組]** 加以選取，然後啟用包含系統管理員帳戶之擁有郵件功能的安全性群組。
+- 預覽階段：根據預設，每個存取 [處置 **]** 頁面的人員只會看到指派給他們檢閱的項目。 如需讓記錄管理系統管理員查看指派給所有使用者的所有項目，以及查看設定用於處置檢閱的所有保留標籤：請瀏覽 [記錄管理設定 **]** > [一般 **]** > [記錄管理員的安全性群組 **]** 加以選取，然後啟用包含系統管理員帳戶之具備郵件功能的安全性群組。
     
     未擁有郵件功能的 Microsoft 365 群組和安全性群組不支援此功能，且無法顯示在要選取的清單中。 如果需要建立全新擁有郵件功能的安全性群組，請使用前往 Microsoft 365 系統管理中心的連結來建立新群組。 
     
     > [!IMPORTANT]
-    > 您無法停用此權限，或取代已從合規性中心啟用的群組。 不過，您可以使用 [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) Cmdlet 啟用另一個擁有郵件功能的安全性群組。
-    > 
-    > 例如：`Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com`
+    > 啟用群組之後，您即無法在合規性中心進行變更。 請參閱下一節，了解如何使用 PowerShell 啟用不同的群組。
 
 - 預覽階段：只有記錄管理系統管理員可看到 [記錄管理設定 **]** 選項。 
+
+#### <a name="enabling-another-security-group-for-disposition"></a>用於處置且已啟用其他安全性群組
+
+從 Microsoft 365 合規性中心的 [記錄管理設定 **]** 啟用安全性群組進行處置之後，您即無法停用群組的此權限，或取代合規性中心中選取的群組。 不過，您可以使用 [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) Cmdlet 啟用另一個具備郵件功能的安全性群組。
+
+例如： 
+
+```PowerShell
+Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
+````
 
 ### <a name="enable-auditing"></a>啟用稽核
 
@@ -83,7 +91,7 @@ ms.locfileid: "52344930"
 - 您選擇的檢閱者會收到一封電子郵件，通知他們有內容需檢閱。 這些檢閱者可以是個別使用者，或擁有郵件功能的安全性群組。 預覽階段的新功能：
    - 您可以自訂他們收到的電子郵件，包括不同語言的指示。 適用於多語言支援，您必須自己指定翻譯，且此自訂文字會顯示給所有檢閱者，無論其所在地區設定為何。
    - 使用者會於項目的保留期間結束時，收到每個標籤的初始電子郵件通知，且使用者會收到所有獲指派處置檢閱之每個標籤的每週一次提醒。 他們可以按一下通知和提醒電子郵件中的連結，以前往 Microsoft 365 合規性中心的 [處置 **]** 頁面，以檢閱內容並採取行動。 檢閱者或也可以直接前往合規性中心的 [處置 **]** 頁面。
-   - 檢閱者只會看到指派給他們的處置檢閱，然而新加入選取 [記錄管理員安全性群組] 的系統管理員則會看到所有的處置檢閱。
+   - 檢閱者只會看到指派給他們的處置檢閱，然而新加入選取 [記錄管理員的安全性群組] 的系統管理員則會看到所有的處置檢閱。
    - 檢閱者可將新使用者新增到相同的處置檢閱。 目前，此動作不會自動為這些新增的使用者授與 [所需權限](#permissions-for-disposition)。
    - 而在處置檢閱流程中，每個項目的迷你檢閱窗格會顯示內容預覽 (如果他們有查看該內容的權限)。 如果他們沒有權限，則可選取內容連結並要求權限。 此迷你檢閱窗格也有內容相關之其他資訊的索引標籤：
        - [詳細資料 **]** 用來顯示具索引的內容、其位置地點、建立者及時間，以及上次修改者及修改時間。
@@ -127,7 +135,7 @@ ms.locfileid: "52344930"
 
 如果您需要一位以上人員在項目的保留期間結束時檢閱該項目，請再次選取 [新增階段 **]**，然後重複您需要的階段數目設定流程，但最多五個階段。 
 
-在每個個別處置階段內，您為該階段指定的任何使用者都獲得授權，可在項目保留期間結束時對該項目採取下一個動作。 這些使用者也可以將其他使用者新增到他們的處置檢閱階段。
+在每個個別處置階段內，您為該階段指定的任何使用者都獲得授權，可在項目保留期間結束時對該項目採取下一個動作。這些使用者也可以將其他使用者新增到他們的處置檢閱階段。
 
 > [!NOTE]
 > 可將已設定為要處置檢閱的的現有保留標籤，透過設定該標籤的方式升級為使用多階段處置檢閱。 在標籤精靈中，選取 [新增階段 **]**，或編輯現有檢閱者或新增檢閱者。
@@ -142,17 +150,21 @@ ms.locfileid: "52344930"
 
 ### <a name="how-to-customize-email-messages-for-disposition-review"></a>如何自訂處置檢閱的自訂電子郵件訊息
 
+將預設電子郵件通知範例傳送給檢閱者：
+
+![當項目準備好進行處置檢閱時，具有預設文字的電子郵件通知範例](../media/disposition-review-email.png)
+
 此外在預覽階段，您可以自訂寄送給處置檢閱者之初始通知以及接下來提醒的電子郵件訊息。
 
 從合規性中心的任何處置頁面，選取 [記錄管理設定 **]**：  
 
 ![記錄管理設定](../media/record-management-settings.png)
 
-然後選取 [電子郵件範本 **]** 索引標籤，指定是否只想使用預設電子郵件範本，或將您自己的文字新增到預設範本。 您的自訂文字會新增至保留標籤相關資訊之後與接下步驟指示之前的電子郵件指示中。
+然後選取 [處置通知 **]** 索引標籤，指定是否只想使用預設電子郵件訊息，或將您自己的文字新增到預設電子郵件。 您的自訂文字會新增至保留標籤相關資訊之後與接下步驟指示之前的電子郵件指示中。
 
 您可以新增所有語言的文字，但目前不支援格式和影像。 您可以將 URL 和電子郵件地址以文字的方式輸入，並且視電子郵件用戶端而定，在自訂的電子郵件中顯示為超連結或未格式化文字。
 
-要附加的範例文字：
+要新增的範例文字：
 
 ```console
 If you need additional information, visit the helpdesk website (https://support.contoso.com) or send them an email (helpdesk@contoso.com).
@@ -162,7 +174,7 @@ If you need additional information, visit the helpdesk website (https://support.
 
 ### <a name="viewing-and-disposing-of-content"></a>檢視和處置內容
 
-當檢閱者收到電子郵件通知內容可供檢閱時，他們會前往 Microsoft 365 合規性中心內，**[記錄管理]** 中的 **[處置]** 索引標籤。 檢閱者可在顯示 [擱置處置 **]** 的 [類型 **]** 中看到每個保留標籤正在等待處置的項目數目。 然後，他們選取保留標籤，並 [在新視窗中開啟 **]** 以查看具有該標籤的所有內容：
+當檢閱者收到電子郵件通知內容可供檢閱時，他們可以按一下電子郵件中的連結，直接前往 Microsoft 365 合規性中心 [記錄管理 **]** 中的 [處置 **]** 頁面。 檢閱者可在顯示 [擱置中的處置 **]** 的 [類型 **]** 中看到每個保留標籤正在等待處置的項目數目。 然後，他們選取保留標籤，並 [在新視窗中開啟 **]** 以查看具有該標籤的所有內容：
 
 ![在新視窗中開啟以進行處置檢閱](../media/open-in-new-window.png)
 
@@ -193,7 +205,7 @@ If you need additional information, visit the helpdesk website (https://support.
 
 ## <a name="disposition-of-records"></a>記錄處置
 
-使用 **[記錄管理]** 頁面中的 **[處置]** 索引標籤來識別：
+使用 [記錄管理 **]** 頁面中的 [處置 **]** 索引標籤來識別：
 
 - 因處置檢閱而刪除的項目。
 - 標示為記錄或法規記錄的項目，會在保留期間結束時自動刪除。

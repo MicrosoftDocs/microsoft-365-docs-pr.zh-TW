@@ -1,27 +1,28 @@
 ---
 title: 前南斯拉夫馬其頓共和國的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 121cb3ea0420177f6cc9684e6458de38467da41f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 84e6f58fb9506a1a8c05e759b1273fa3fa97d7ab
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273341"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535455"
 ---
 # <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a>前南斯拉夫馬其頓共和國的付款資訊
 
-[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。 
+[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
 請只以 USD 支付，並參照您發票匯款 (s) 中的發票編號。
 
@@ -31,4 +32,4 @@ ms.locfileid: "52273341"
 **SWIFT 程式碼：** CITIGB2L  
 **IBAN：** GB95CITI18500812510049  
 **帳戶號碼：** 12510049  
-**帳戶名稱：** 微軟  
+**帳戶名稱：** 微軟

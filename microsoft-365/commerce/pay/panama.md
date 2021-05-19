@@ -1,23 +1,24 @@
 ---
 title: 巴拿馬的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0848aa95a9a4835aa2e73747cf8e5d3efe8efbf7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 511b484a03261fe081851540521c08106348775b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273101"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536379"
 ---
 # <a name="payment-information-for-panama"></a>巴拿馬的付款資訊
 
@@ -27,8 +28,8 @@ ms.locfileid: "52273101"
 
 ## <a name="electronic-funds-transfer"></a>電匯
 
-**銀行：** 美洲銀行   
-**Branch：** 達拉斯   
-**SWIFT 程式碼：** BOFAUS3N   
-**帳戶號碼：** 4426587954   
-**帳戶名稱：** 微軟  
+**銀行：** 美洲銀行  
+**Branch：** 達拉斯  
+**SWIFT 程式碼：** BOFAUS3N  
+**帳戶號碼：** 4426587954  
+**帳戶名稱：** 微軟

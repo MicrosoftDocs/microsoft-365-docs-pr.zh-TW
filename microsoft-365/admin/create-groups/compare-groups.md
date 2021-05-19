@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: 了解您可以使用的群組類型。
-ms.openlocfilehash: 9f36688972f00a27a274b6a974d958d1d590aa93
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Microsoft 365 群組成員可以取得交談、檔案和行事曆活動、Stream 以及 Planner 的群組電子郵件與共用工作區。
+ms.openlocfilehash: d8bf2e20b428063b99d540896bac3e6e1ae59481
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243981"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535863"
 ---
 # <a name="compare-groups"></a>比較群組
 

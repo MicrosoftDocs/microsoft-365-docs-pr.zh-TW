@@ -24,16 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 description: 封鎖離職員工的登入，並封鎖 Microsoft 365 服務的存取權。
-ms.openlocfilehash: 60f4cf6b5c9a0b5dc2023b3ef7b6460685142d07
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8eb41c3b449e63284371aaf168262307a4c21941
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244199"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535947"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步驟 1-防止離職員工登入並封鎖 Microsoft 365 服務的存取權
 
 如果您需要立即避免使用者登入存取，您應該重設其密碼。 在此步驟中，請從 Microsoft 365 中強制登出使用者。
+
+> [!NOTE]
+> 您必須是全域系統管理員，才可啟動登出。
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 2. 選取使用者名稱旁的方塊，然後選取 [ **重設密碼**]。

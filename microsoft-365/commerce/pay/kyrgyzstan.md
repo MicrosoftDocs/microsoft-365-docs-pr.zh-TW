@@ -1,27 +1,28 @@
 ---
 title: 吉爾吉斯斯坦的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f8fa212a98337a510459d2907c17ada5f21a164e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 62664e77cfb8a2f6b4bf4411f010745796a3371a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273437"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536487"
 ---
 # <a name="payment-information-for-kyrgyzstan"></a>吉爾吉斯斯坦的付款資訊
 
-[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。 
+[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
 請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。
 
@@ -31,4 +32,4 @@ ms.locfileid: "52273437"
 **SWIFT 程式碼：** CITIGB2L  
 **IBAN：** 12510049，  
 **帳戶號碼：** GB95CITI18500812510049  
-**帳戶名稱：** 微軟  
+**帳戶名稱：** 微軟

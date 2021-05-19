@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860872"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531039"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -34,9 +34,10 @@ ms.locfileid: "51860872"
 - 外部使用者存取
 - 透過 SharePoint 網站進行外部共用
 - 從未受管理的裝置存取
+- 驗證內容 (預覽)
 
 > [!IMPORTANT]
-> **從未受管理的裝置存取** 設定可與 SharePoint 功能搭配使用以進行 [從未受管理的裝置控制存取](/sharepoint/control-access-from-unmanaged-devices)。 您必須設定這個相關的 SharePoint 功能，以使用已設定此設定的敏感度標籤。 下列指示中包含其他資訊。
+> 未管理裝置和驗證內容設定可與 Azure Active Directory 條件式存取一起使用。 如果您想要針對這些設定使用敏感度標籤，必須設定此相依功能。 下列指示中包含其他資訊。
 
 當您將此敏感度標籤套用至支援的容器時，標籤會自動將分類和配置的保護設定套用至網站或群組。
 
@@ -57,6 +58,8 @@ ms.locfileid: "51860872"
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>如何為容器啟用敏感度標籤以及同步處理標籤
 
+如果您尚未啟用容器的敏感度標籤，請以單次程序執行下列一組步驟：
+
 1. 由於此功能使用 Azure AD 功能，請依照 Azure AD 文件中的指示來啟用敏感度標籤支援：[將敏感度標籤指派到 Azure Active Directory 中的 Microsoft 365 群組](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
 
 2. 您現在需要將敏感度標籤同步處理至 Azure AD。 首先，[連線到安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
@@ -71,7 +74,7 @@ ms.locfileid: "51860872"
 
 ## <a name="how-to-configure-groups-and-site-settings"></a>如何設定網站和群組設定
 
-啟用容器的 [敏感度] 標籤表示您現在可以在 [敏感度標籤] 精靈中設定群組和網站的保護設定。 直到您啟用此支援之前，您可以看到精靈中的設定但無法加以設定。
+如上節所述啟用容器的敏感度標籤之後，您可以在 [敏感度標籤] 精靈中設定群組和網站的保護設定。 在啟用容器的敏感度標籤之前，精靈中會顯示這些設定，但無法進行設定。
 
 1. 遵循一般指示以 [建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，並確認已針對標籤的範圍選取 **[群組和網站]**： 
     
@@ -84,7 +87,7 @@ ms.locfileid: "51860872"
 2. 然後，在 **定義群組和網站的保護設定** 頁面上，選取其中一個或兩個皆適用的可用選項：
     
     - [隱私權和外部使用者存取權設定 **]** 可設定 [隱私權 **]** 和 [外部使用者存取 **]** 設定。 
-    - [裝置存取和外部共用設定 **]** 可設定 [從已套用標籤的 SharePoint 網站控制外部共用 **]** 和 [從未受管理的裝置存取 **]** 設定。
+    - [外部共用和條件式存取設定 **]** 設定 [從已套用標籤的 SharePoint 網站控制外部共用 **]** 和 [使用 Azure AD 條件式存取來保護已套用標籤的 SharePoint 網站 **]** 設定。
 
 3. 如果已選取 [隱私權和外部使用者存取權設定 **]**，請設定下列設定：
     
@@ -98,13 +101,25 @@ ms.locfileid: "51860872"
     
     - **外部使用者存取權**：控制群組擁有者是否可以 [將來賓新增至群組](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-4. 如果已選取 [裝置存取權和外部共用設定 **]**，請設定下列設定：
+4. 如果已選取 [裝置外部共用和裝置存取設定 **]**，現在請進行下列設定：
     
     - **從已套用標籤的 SharePoint 網站控制外部共用**：選取這個選項，然後為任何人、新的及現有的來賓、現有的來賓，或僅限您組織中的人員選取外部共用。 如需有關此組態和設定的詳細資訊，請參閱 SharePoint 文件：[開啟或關閉網站的外部共用](/sharepoint/change-external-sharing-site)。
     
-    - **從未受管理的裝置存取**：此選項透過使用 Azure AD 條件式存取的 SharePoint 功能，以封鎖或限制從未受管理裝置存取 SharePoint 和 OneDrive 內容。 如需詳細資訊，請參閱 SharePoint 文件中的[控制從未受管理的裝置存取](/sharepoint/control-access-from-unmanaged-devices)。 您為此標籤設定所指定的選項相當於執行網站的 PowerShell 命令，如 SharePoint 指示的[封鎖或限制存取特定 SharePoint 網站或 OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) 一節中的步驟 3-5 所述。
-        
-        如需其他資訊，請參閱本節結尾的[有關未受管理裝置相依性的詳細資訊](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)。
+    - **使用 Azure AD 條件式存取來保護已套用標籤的 SharePoint 網站**：只有在您的組織已設定並使用 [Azure Active Directory 條件式存取](/azure/active-directory/conditional-access/overview)時，才選取此選項。 然後，請選取下列其中一個設定：
+    
+        - **決定使用者是否可以從未受管理的裝置存取 SharePoint 網站**：此選項使用 Azure AD 條件式存取的 SharePoint 功能，或者封鎖或限制從未受管理的裝置存取 SharePoint 和 OneDrive 內容。 如需詳細資訊，請參閱 SharePoint 文件中的[控制從未受管理的裝置存取](/sharepoint/control-access-from-unmanaged-devices)。 您為此標籤設定所指定的選項相當於執行網站的 PowerShell 命令，如 SharePoint 指示的[封鎖或限制存取特定 SharePoint 網站或 OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) 一節中的步驟 3-5 所述。
+            
+            如需其他設定資訊，請參閱本節結尾的[有關未受管理裝置選項相依性的詳細資訊](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)。
+            
+        - **選擇現有的驗證內容**：目前處於預覽階段，此選項可讓您在使用者存取已套用此標籤的 SharePoint 網站時，強制執行更嚴格的存取條件。 當您選取已針對貴組織的條件式存取部署建立和發佈的現有驗證內容時，會強制執行這些條件。 如果使用者不符合已設定的條件，或者他們使用不支援驗證內容的應用程式，則拒絕他們存取。
+            
+            如需其他設定資訊，請參閱本節結尾的[有關驗證內容選項相依性的詳細資訊](#more-information-about-the-dependencies-for-the-authentication-context-option)。
+            
+            此標籤設定的範例：
+            
+             - 您選擇設定為需要[多重要素驗證 (MFA)](/azure/active-directory/conditional-access/untrusted-networks) 的驗證內容。 接著，此標籤會套用到包含高度機密項目的 SharePoint 網站。 因此，當來自不受信任網路的使用者嘗試存取此網站中的文件時，會看到 MFA 提示，要求他們必須完成才能存取文件。
+             
+             - 您可以選擇針對 [使用規定 (ToU)](/azure/active-directory/conditional-access/terms-of-use) 設定的驗證內容。 接著，此標籤會套用到包含因法律或合規性理由而需要接受使用條款之項目的 SharePoint 網站。 因此，當使用者嘗試存取此網站中的文件時，會看到使用規定文件，要求他們必須接受才能存取原始文件。
 
 > [!IMPORTANT]
 > 將標籤套用至小組、群組或網站時，只有這些網站和群組設定會生效。 假如 [標籤範圍](sensitivity-labels.md#label-scopes) 包含檔案和電子郵件，其他標籤設定例如加密和內容標記，均不會套用至小組、群組或網站內的內容。
@@ -118,6 +133,43 @@ ms.locfileid: "51860872"
 例如，如果您的租使用者設定為 **允許有限的、僅限網頁存取**，則允許完全存取的標籤設定將不會產生任何影響，因為其限制較少。 針對此租使用者層級設定，請選擇標籤設定，以封鎖存取 {具有更多限制} 或限制存取 (與租使用者設定相同) 的標籤設定。
 
 由於您可以在標籤設定外獨立設定 SharePoint 設定，因此在敏感度標籤精靈中依存關係部分不會顯示為勾選。 您可以在建立和發佈標籤之後，甚至在套用標籤之後設定這些相關性。 不過，如果已經套用標籤，在使用者下次驗證之前，標籤設定將不會生效。
+
+##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>關於驗證內容選項相依性的詳細資訊
+
+若要顯示在選取項目下拉式清單中，您必須在 Azure Active Directory 條件式存取設定中建立、設定和發佈驗證內容。 有關詳細資訊和指示，請參閱 Azure AD 條件式存取文件中的[設定驗證內容](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts)一節。
+
+並非所有應用程式都支援驗證內容。 如果應用程式不受支援的使用者連線到針對驗證內容所設定的網站，他們會看到拒絕存取的訊息，或提示他們進行驗證但遭到拒絕。 目前支援驗證內容的應用程式：
+
+- Office 網頁版，其中包含 Outlook 網頁版
+
+- Microsoft Planner
+
+- 適用於 Word、Excel 和 PowerPoint 的 Microsoft 365 Apps；最低版本：
+    - Windows：2103
+    - macOS：16.45.1202
+    - iOS：2.48.303
+    - Android：16.0.13924.10000
+
+- 適用於 Outlook 的 Microsoft 365 Apps；最低版本：
+    - Windows：2103
+    - macOS：16.45.1202
+    - iOS：4.2109.0
+    - Android：4.2025.1
+
+- OneDrive 同步處理應用程式，最低版本：
+    - Windows：21.002
+    - macOS：21.002
+    - iOS：在 12.30 中推出
+    - Android：尚未支援
+
+此預覽的已知問題：
+
+- 針對 OneDrive 同步處理應用程式，僅支援 OneDrive，不支援其他網站。
+
+- 下列功能和應用程式可能與驗證內容不相容，因此，我們建議您確認這些功能與應用程式在使用者使用驗證內容成功存取網站之後是否仍可繼續運用：
+    
+    - 使用 PowerApps 或 Power Automate 的工作流程
+    - 協力廠商應用程式
 
 ## <a name="sensitivity-label-management"></a>敏感度標籤管理
 

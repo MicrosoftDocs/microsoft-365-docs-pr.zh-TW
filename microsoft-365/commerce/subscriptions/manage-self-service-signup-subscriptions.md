@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何管理組織的免費自助註冊訂閱。
 ms.date: 03/17/2021
-ms.openlocfilehash: 9c29d36ff28e312fa3782b60f89fa755d4df9bf3
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 741c9e0b45f127ffc0753b34982073f90c525d5b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345127"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536067"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>管理自助註冊訂閱
 
@@ -39,7 +39,7 @@ ms.locfileid: "52345127"
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>這些訂閱與自助購買訂閱有何不同？
 
-自助註冊訂閱是免費的，可提供更大的產品清單，而非自助購買訂閱。 當使用者註冊「自助購買」訂閱時，他們會負責支付服務。 自助購買訂閱只適用于電源平台產品 (Power BI、Power Apps 和 Power Automate) 、Project 和 Visio。 如需詳細資訊，請參閱 [自助購買常見問題](self-service-purchase-faq.md)。
+自助註冊訂閱是免費的，可提供更大的產品清單，而非自助購買訂閱。 當使用者註冊「自助購買」訂閱時，他們會負責支付服務。 自助購買訂閱只適用于電源平台產品 (Power BI、Power Apps 和 Power Automate) 、Project 和 Visio。 如需詳細資訊，請參閱 [自助購買常見問題](self-service-purchase-faq.yml)。
 
 ## <a name="block-users-from-signing-up"></a>封鎖使用者進行註冊
 

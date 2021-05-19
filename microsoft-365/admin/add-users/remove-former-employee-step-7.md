@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 請遵循下列步驟來刪除離職員工的使用者帳戶。
-ms.openlocfilehash: 0afa9b112919d2668d7553ac5bcf08e664bc1749
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244194"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535935"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>步驟 7-刪除離職員工的使用者帳戶
 
@@ -43,7 +43,13 @@ ms.locfileid: "52244194"
 3. 在使用者的名稱下，選取 [ **刪除使用者**]。 為此使用者選擇您想要的選項，然後選取 [ **刪除使用者**]。 如果您已有其他使用者存取此使用者的電子郵件和 OneDrive，您不需要在這裡重新執行。
 
 當您刪除使用者時，帳戶會變成非作用中的狀態並持續大約 30 天。在這段期間內，您可以還原該帳戶，但 30 天一過，就會永久刪除。
-  
+
+## <a name="watch-delete-a-former-employees-user-account"></a>觀賞：刪除離職員工的使用者帳戶
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../../business-video/index.yml)。
+
 ## <a name="does-your-organization-use-active-directory"></a>貴組織是否使用 Active Directory？
 
 如果您的組織同步處理使用者帳戶以從本機 active directory 環境 Microsoft 365，您必須在本機 active directory 服務中刪除及還原這些使用者帳戶。 您不能在 Office 365 刪除或還原使用者帳戶。
@@ -81,3 +87,5 @@ ms.locfileid: "52244194"
 ## <a name="related-articles"></a>相關文章
 
 [還原使用者](restore-user.md)
+
+[重設密碼](reset-passwords.md)

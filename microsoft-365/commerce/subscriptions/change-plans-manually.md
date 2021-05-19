@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 購買新的訂閱以手動變更訂閱，並確保訂閱同時列出並使用中。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345175"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536103"
 ---
 # <a name="change-plans-manually"></a>手動變更計畫
 
@@ -94,7 +94,7 @@ ms.locfileid: "52345175"
 
 2. 選取您要取代現有授權的使用者名稱旁的圓圈。
 
-3. 在頂端，選取 [ **更多選項** (**...**) ]，然後選擇 [ **管理產品授權**]。
+3. 在頂端，選取三個點 (多個動作) ，然後選擇 [ **管理產品授權**]。
 
 4. 選取 [ **取代現有的產品授權指派** \> **] [下一步]**。
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 將搜尋結果從 Microsoft 365 合規性中心的內容搜尋匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 SharePoint 和商務用 OneDrive 網站的內容會匯出為原生 Office 檔。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311960"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536055"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -122,7 +122,7 @@ ms.locfileid: "52311960"
   
 5. 設定下列其他選項：
 
-   ![Exchange 選項](../media/OtherExportOptions.png)
+   ![設定其他匯出選項](../media/OtherExportOptions.png)
 
    1. 選取 [**啟用 Exchange 內容的重復資料消除**] 核取方塊，以排除重複的郵件。
   
