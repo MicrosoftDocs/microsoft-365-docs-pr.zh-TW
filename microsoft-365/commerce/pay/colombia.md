@@ -1,23 +1,24 @@
 ---
 title: 哥倫比亞的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: de07b6ece0932ca76100470b01d1a2b593cfe1d6
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: efc83c637330c556724699c272cc0c2bd90f0982
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274001"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536943"
 ---
 # <a name="payment-information-for-colombia"></a>哥倫比亞的付款資訊
 
@@ -32,4 +33,4 @@ ms.locfileid: "52274001"
 **SWIFT 程式碼：** CITICOBB  
 **NIT：** 800.198.591-3  
 **帳戶號碼：** 0060534055  
-**帳戶名稱：** Microsoft 哥倫比亞 Inc. 的分支。   
+**帳戶名稱：** Microsoft 哥倫比亞 Inc. 的分支。

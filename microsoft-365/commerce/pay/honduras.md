@@ -1,23 +1,24 @@
 ---
 title: 宏都拉斯的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 74c1e23ad44a8d39ad6a88c38e986cefc2bb8bd6
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c23a9deff43d78c9f73ae0440b8952159a58d28f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273641"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536679"
 ---
 # <a name="payment-information-for-honduras"></a>宏都拉斯的付款資訊
 
@@ -31,4 +32,4 @@ ms.locfileid: "52273641"
 **Branch：** 達拉斯  
 **SWIFT 程式碼：** BOFAUS3N  
 **帳戶號碼：** 4426587954  
-**帳戶名稱：** 微軟   
+**帳戶名稱：** 微軟

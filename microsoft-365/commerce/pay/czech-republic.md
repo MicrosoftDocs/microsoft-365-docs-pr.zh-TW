@@ -1,23 +1,24 @@
 ---
 title: 捷克共和國的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3e28baf9b9d56c1bcd9c25a1586c48a72eb32bde
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 411ccc69d8ec08734080b0b6769ae94359fc4162
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273929"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536871"
 ---
 # <a name="payment-information-for-czech-republic"></a>捷克共和國的付款資訊
 
@@ -32,4 +33,4 @@ ms.locfileid: "52273929"
 **IBAN：** GB31CITI18500812207591  
 **分類程式代碼：** 185008  
 **帳戶號碼：** 12207591  
-**帳戶名稱：** 微軟  
+**帳戶名稱：** 微軟

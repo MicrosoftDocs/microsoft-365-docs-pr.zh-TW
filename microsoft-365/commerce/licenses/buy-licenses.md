@@ -19,24 +19,24 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: 瞭解如何購買更多授權，或減少用於商務用 Microsoft 365 訂閱的授權數目。
+description: 瞭解如何購買更多授權，或減少商務用 Microsoft 365 的授權數目。
 ms.date: 04/07/2021
-ms.openlocfilehash: a327149a780d2059cfc69068fc4b2122e549773c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a20e89ff28c582018c55281a85dbe115b58f9d74
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331679"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537268"
 ---
 # <a name="buy-or-remove-licenses"></a>購買或移除授權
 
 您可以使用下列步驟，購買更多授權或減少訂閱的授權數目。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 - 您必須是全球或計費系統管理員，才可執行本文所述的工作。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 - 您可以 [同時新增使用者並指派授權](../../admin/add-users/add-users.md)。
-- 如果您透過協力廠商合作夥伴購買 Microsoft 365 for business 或 Office 365 企業版方案，您必須透過該合作夥伴購買額外的授權。
+- 如果您為商務用 Microsoft 365，或透過協力廠商合作夥伴購買 Office 365 企業版計畫，您必須透過該夥伴購買額外的授權。
 
 ## <a name="watch-buy-new-licenses"></a>觀賞：購買新的授權
 
@@ -68,10 +68,10 @@ ms.locfileid: "52331679"
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
 ::: moniker-end
 
-2. 在 [ **產品** ] 索引標籤上，尋找您要購買或移除授權的訂閱。 選取 [ **更多** (三點) 的動作，然後選取 [ **購買授權**]。 [如果看不到 [購買授權] 或 [移除授權] 按鈕，該怎麼辦？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+2. 在 [ **產品** ] 索引標籤上，尋找您要購買或移除授權的訂閱。 選取 [ (更多動作) ] 的三個點，然後選取 [ **購買授權**]。 [如果看不到 [購買授權] 或 [移除授權] 按鈕，該怎麼辦？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. 如果您想要減少授權數目，請在 [ **購買授權** ] 窗格的頂端，選取 [ **移除授權**]。
 4. 若要購買或移除授權，請在 [**授權總數**] 方塊中的 [**新數量**] 下，輸入此訂閱所需的授權總數。 例如，如果您有100授權，而您想要新增5個，請輸入105。 如果您想要移除五個，請輸入95。
-5. 選取 **[儲存]**。
+5. 選取 ****[儲存]。
 
 > [!NOTE]
 > 若所有授權都已指派給使用者，您就無法減少訂閱的授權數目。 若要減少授權數目，請先 [從使用者取消指派一或多個授權](../../admin/manage/remove-licenses-from-users.md)，然後從訂閱中移除授權。
@@ -84,7 +84,7 @@ ms.locfileid: "52331679"
 |---------|---------|---------|
 |已擱置信用檢查。 |如果有暫止的信用檢查，您就無法購買或移除授權，直到完成信用檢查為止。  | 稍後再次查看，查看是否已完成信用檢查。 信用查核通常需要長達兩個工作天的時間才能完成。<br/>完成信用檢查後，您應該會看到 [ **購買授權** ] 和 [ **移除授權** ] 按鈕。 |
 |您使用產品金鑰來啟用訂閱。| 如果使用25個字元的產品金鑰購買及啟用訂閱，您會在 [**產品**] 頁面的 [**購買管道**] 欄中看到 [預付] 一字。  |請參閱 [將授權新增至使用產品金鑰支付的訂閱](add-licenses-using-product-key.md)。 |
-|您已透過轉銷商購買訂閱。| 您會在 [**產品**] 頁面的 [**購買管道**] 欄中看到「轉銷商」一詞。 | 若訂閱是透過雲端方案提供者購買 (CSP) 合作夥伴，請與您的 CSP 夥伴聯繫，以購買更多授權。        |
+|您已透過轉銷商購買訂閱。| 您會在 [**產品**] 頁面的 [**購買管道**] 欄中看到「轉銷商」一詞。 | 如果已透過雲端解決方案提供者 (csp) 合作夥伴購買訂閱，請與您的 CSP 合作夥伴聯繫，以購買更多授權。        |
 |您有試用版訂閱。 | 若要查看您的試用訂閱，請選取 [篩選] 按鈕，然後選擇 [ **試用**]。 | 先購買您的試用訂閱，即可購買更多授權。|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>何時可以指派新的授權？

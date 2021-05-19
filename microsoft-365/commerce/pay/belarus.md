@@ -1,23 +1,23 @@
 ---
 title: 白俄羅斯的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
-localization_priority: Normal
+ms.custom: commerce_billing_payinfo
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7b010016e02c956be8c43519cc64dc03d71e0bce
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 29b714fb5c3df920409bd667ca1408814799a780
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274193"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537135"
 ---
 # <a name="payment-information-for-belarus"></a>白俄羅斯的付款資訊
 
@@ -31,4 +31,4 @@ ms.locfileid: "52274193"
 **SWIFT 程式碼：** CITIGB2L  
 **IBAN：** GB95CITI18500812510049  
 **帳戶號碼：** 12510049  
-**帳戶名稱：** 微軟  
+**帳戶名稱：** 微軟

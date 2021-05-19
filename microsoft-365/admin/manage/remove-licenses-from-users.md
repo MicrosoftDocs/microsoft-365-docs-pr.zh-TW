@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何從使用者帳戶取消指派授權。
 ms.date: 07/01/2020
-ms.openlocfilehash: 6f2cbf65e1d6a38a4b1ed00976d4dd473d7331e9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 5ef28b3065703ec224e6426c4fdbfffdb5269b22
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332411"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537496"
 ---
 # <a name="unassign-licenses-from-users"></a>取消指派給使用者的授權
 
@@ -35,7 +35,7 @@ ms.locfileid: "52332411"
 > [!NOTE]
 > 系統管理員無法指派或取消指派貴組織中的使用者所購買的自助購買訂閱授權。 您可以 [接管自助購買訂閱](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)，然後指派或取消指派授權。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 - 您必須是全域授權，使用者管理員才能取消指派授權。 如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../add-users/about-admin-roles.md)。
 - 您可以[使用 Office 365 PowerShell 移除使用者帳戶中的授權](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)。
@@ -47,18 +47,19 @@ ms.locfileid: "52332411"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[系統管理員]</a>，前往 **[帳單]** > **[授權]** 頁面。
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">[授權]</a> 頁面。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[系統管理員]</a>，前往 **[帳單]** > **[授權]** 頁面。
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">[授權]</a> 頁面。
 
 ::: moniker-end
 
@@ -72,22 +73,22 @@ ms.locfileid: "52332411"
 當您使用 [作用中 **使用者** ] 頁面取消指派授權時，您會取消指派使用者的產品授權。
 
 ### <a name="unassign-licenses-from-one-user"></a>從某位使用者取消指派授權
-  
+
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[系統管理中心]</a> 中，移至 **[帳單]** > **[作用中使用者]** 頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">系統管理中心</a>，移至 **[帳單]** > **[作用中使用者]** 頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
@@ -99,24 +100,24 @@ ms.locfileid: "52332411"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[系統管理中心]</a> 中，移至 **[帳單]** > **[作用中使用者]** 頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">系統管理中心</a>，移至 **[帳單]** > **[作用中使用者]** 頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
 2. 選取您要取消指派授權的使用者名稱旁邊的圓圈。
-3. 在頂端，選取 **[更多選項(...)]**，然後選取 **[管理產品授權]**。
+3. 在頂端，選取三個點 (多個動作) ]，然後選取 [ **管理產品授權**]。
 4. 在 **[管理產品授權]** 窗格中，選取 **[取得現有產品授權指派]** \> **[下一步]**。
 5. 在 [ **取代現有產品** ] 窗格的底部，選取 [ **從選取的使用者移除所有產品授權** ] 核取方塊，然後選取 [ **取代** \> **Close**]。
 

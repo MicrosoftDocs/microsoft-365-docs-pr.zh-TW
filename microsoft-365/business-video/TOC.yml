@@ -49,7 +49,7 @@
       items:
         - name: 使用 Outlook 和 Teams
           href: collab-outlook-teams.md
-        - name: 在小型企業中開始使用 Microsoft Teams
+        - name: 開始使用 Teams
           href: get-started-teams-small-business.md
         - name: 建立群組電子郵件地址
           href: group-email.md

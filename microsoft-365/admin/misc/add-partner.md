@@ -20,26 +20,26 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: 瞭解如何在 Microsoft 365 購買時，新增訂閱顧問合作夥伴作為記錄的合作夥伴，變更合作夥伴或從訂閱刪除合作夥伴。
-ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 瞭解如何在購買 Microsoft 365 時，新增訂閱顧問合作夥伴作為記錄的合作夥伴，以變更協力廠商或從訂閱刪除合作夥伴。
+ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579227"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537472"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>新增、變更或刪除訂閱顧問合作夥伴
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 本文適用于中國由世紀運作的 Office 365。 這適用于想要讓世紀合作夥伴為他們管理其 Office 365 訂閱的組織。
+> 本文適用于中國由世紀運作的 Office 365。 這適用于想要讓世紀合作夥伴管理其 Office 365 訂閱的組織。
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-訂閱顧問合作夥伴就是 Microsoft 授權合作夥伴並擔任訂閱顧問，負責提供您需要的銷售、支援和技術方面的專業，可協助您設定及維護訂閱。 您可以在購買 Microsoft 365 或另一次時，新增訂閱顧問合作夥伴作為記錄的合作夥伴。 如果您目前並未使用協力廠商，您也可以在 [Microsoft 定點](https://pinpoint.microsoft.com) 網站上找到該合作夥伴。
+訂閱顧問合作夥伴就是 Microsoft 授權合作夥伴並擔任訂閱顧問，負責提供您需要的銷售、支援和技術方面的專業，可協助您設定及維護訂閱。 您可以在購買 Microsoft 365 或其他時間，新增訂閱顧問合作夥伴作為記錄的夥伴。 如果您目前並未使用協力廠商，您也可以在 [Microsoft 定點](https://pinpoint.microsoft.com) 網站上找到該合作夥伴。
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ ms.locfileid: "51579227"
 
 ::: moniker range="o365-21vianet"
 
-做為 Office 365 的系統管理員，您可以建立或編輯使用者、重設使用者密碼、管理使用者授權、管理網域，以及將系統管理員許可權指派給組織中的其他使用者，以及其他專案。 不過，如果您想要其他人執行這些系統管理工作，您可以建立合作夥伴關係，將此角色委派給您的世紀授權合作夥伴。
+作為 Office 365 的系統管理員，您可以建立或編輯使用者、重設使用者密碼、管理使用者授權、管理網域，以及將系統管理員許可權指派給組織中的其他使用者，以及其他專案。 不過，如果您想要其他人執行這些系統管理工作，您可以建立合作夥伴關係，將此角色委派給您的世紀授權合作夥伴。
 
 ::: moniker-end
 
@@ -99,10 +99,10 @@ ms.locfileid: "51579227"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取您要編輯的訂閱。
 3. 在 [訂閱詳細資料] 頁面的 [ **合作夥伴資訊**] 下，輸入 **夥伴網路識別碼**。 您可以詢問合作夥伴，以取得協力廠商的 Microsoft 合作夥伴網路識別碼。
-4. 選取 [新增]。
+4. 選取 ****[新增]。
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ ms.locfileid: "51579227"
 
 1. 在系統管理中心中，前往 [**帳單**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。
 2. 如果您有一個以上的訂閱，請選取您要編輯的訂閱。
-3. 在右側的 [訂閱成本] 底下，選擇 [ **其他動作**] [ > **新增記錄的夥伴**]。
+3. 在右側的 [訂閱成本] 底下，選取三個點 (多個動作) > **Add partner a record**。
 4. 輸入您要新增之合作夥伴的 Microsoft 合作夥伴 ID、選取 [ **檢查 ID**]，然後再進行 **提交**。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
 5. 合作夥伴識別碼會顯示在 [ **訂閱** ] 頁面上。
 
@@ -133,10 +133,10 @@ ms.locfileid: "51579227"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 在 [訂閱詳細資料] 頁面的 [ **合作夥伴資訊**] 底下，選取 [ **移除**]。
 3. 輸入新合作夥伴的 **Microsoft 合作夥伴網路識別碼** 。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
-4. 選取 [新增]。
+4. 選取 ****[新增]。
   
 ::: moniker-end
 
@@ -168,7 +168,7 @@ ms.locfileid: "51579227"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取您要編輯的訂閱。
 3. 在 [訂閱詳細資料] 頁面的 [ **合作夥伴資訊**] 底下，選取 [ **移除**]。
 

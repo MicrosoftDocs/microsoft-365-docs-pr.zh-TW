@@ -1,23 +1,24 @@
 ---
 title: 牙買加的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b3c17956fe9b2aac019f084a49cd7cec38f624bc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: e27136b860c13dbb8ec2290e819482b196ba7d21
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273521"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536571"
 ---
 # <a name="payment-information-for-jamaica"></a>牙買加的付款資訊
 
@@ -31,4 +32,4 @@ ms.locfileid: "52273521"
 **Branch：** 達拉斯  
 **SWIFT 程式碼：** BOFAUS3N  
 **帳戶號碼：** 4426587954  
-**帳戶名稱：** 微軟  
+**帳戶名稱：** 微軟

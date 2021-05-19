@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何變更您為商務版訂閱收費的頻率。
 ms.date: 04/02/2021
-ms.openlocfilehash: b8a0341f8cd5f4788bf2eea93394b33e8079abc5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 010857d9092ef62d11e1b7c6019f2fe0eaafb58f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332162"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537340"
 ---
 # <a name="change-your-billing-frequency"></a>變更您的帳單頻率
 
@@ -36,3 +36,13 @@ ms.locfileid: "52332162"
 2. 在 **[產品]** 索引標籤上，選擇您想要變更的訂閱。
 3. 在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **編輯帳單頻率**]。
 4. 在 [ **編輯計費頻率** ] 窗格中，選擇您要計費的頻率選項，然後選取 [ **變更**]。
+
+## <a name="related-content"></a>相關內容
+
+[查看您的帳單或發票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (文章) 
+
+[為您的訂閱付費](../../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) 
+
+[瞭解如何尋找及查看您的帳單或發票](view-your-bill-or-invoice.md) (文章) 
+
+[變更您的帳單位址](change-your-billing-addresses.md) (文章) 

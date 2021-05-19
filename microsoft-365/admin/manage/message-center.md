@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: 深入瞭解 Microsoft 365 訊息中心及其在變更管理中的角色。
-ms.openlocfilehash: af65db32edd56b11adede0e4e690b3f69b07180e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244416"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537520"
 ---
 # <a name="message-center"></a>訊息中心
 
@@ -218,7 +218,7 @@ ms.locfileid: "52244416"
 
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>不具備郵件中心存取權的系統管理員角色
 
-- 合規性系統管理員
+- 合規性管理員
 - 條件式存取管理員
 - 客戶加密箱存取核准者
 - 裝置管理員
@@ -249,66 +249,21 @@ ms.locfileid: "52244416"
 
 需要跟進另一個管理員，以確保他們知道的變更和採取動作？ 例如，您可以產生連結以在電子郵件或立即訊息中共用，該連結將使用者直接連線至該訊息。 您共用連結的人員必須具有訊息中心的權限。 請參閱 [不具訊息中心權限的系統管理員角色](message-center.md#admin-roles-that-dont-have-access-to-the-message-center) 以獲得詳細資訊。
 
-::: moniker range="o365-worldwide"
-
 1. 選取訊息以開啟。
 
 2. 選取 **複製連結**。
 
 3. 使用 Ctrl+V 或以滑鼠右鍵按一下並選取 **貼上** 以將連結插入你所想要的文件。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 選取訊息以開啟。
-
-2. 從動作列中選取 **[更多]**\>**[取得連結]**。
-
-3. 允許網頁存取剪貼簿。 直接連結將複製至剪貼板。
-
-4. 使用 Ctrl+V 或以滑鼠右鍵按一下並選取 **[貼上]** 以插入連結。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 選取訊息以開啟。
-
-2. 選取 **複製連結**。
-
-3. 使用 Ctrl+V 或以滑鼠右鍵按一下並選取 **貼上** 以將連結插入你所想要的文件。
-
-::: moniker-end
 
 ## <a name="read-and-unread-states"></a>已讀取和未讀取狀態
 
 訊息中心中任何未讀取的訊息都將以粗體顯示。 開啟訊息會將其標示為已讀取。 您可以將訊息標示為未讀取。
 
-::: moniker range="o365-worldwide"
 
 - 在訊息中心的主頁面上，選取 **更多選項** 訊息旁的省略符號，然後選取 **標記為未讀取**。
 
 您也可以開啟訊息，並在詳細資料面板中將其標記為未讀取。
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 選取訊息以開啟。
-
-2. 選取 **[更多]**\>**[標示為未讀取]**。
-
-3. 關閉訊息。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- 在訊息中心的主頁面上，選取 **更多選項** 訊息旁的省略符號，然後選取 **標記為未讀取**。
-
-::: moniker-end
-
 ## <a name="archive-and-restore"></a>封存與還原
 
 若看到與您無關的訊息，或者您可能已經對其採取了動作，您可以將該訊息封存以將其從收件匣中移除。 您在 [訊息中心] 看到的檢視是您的使用者帳戶特定的，因此從您的檢視封存它不會影響其他系統管理員。 有兩種方法可以封存郵件。

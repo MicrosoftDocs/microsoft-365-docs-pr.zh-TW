@@ -20,18 +20,18 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何使用 Microsoft 關閉您的帳戶。
 ms.date: 04/02/2021
-ms.openlocfilehash: 767a82088500bc24c0d4755a2dafd40742fc796c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331763"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537292"
 ---
 # <a name="close-your-account"></a>關閉您的帳戶
 
 當您使用 Microsoft 關閉您的帳戶時，與您的帳戶相關的所有資訊都會被刪除。 這些資訊包括訂閱、授權、付款方式、使用者及使用者資料。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 開始此程序之前，請務必備份任何您想保留的資料。
 
@@ -47,12 +47,12 @@ ms.locfileid: "52331763"
 
 您也可以使用 [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell Cmdlet，成批刪除使用者。
 
-如果您的組織使用 Active Directory 與 Microsoft Azure Active Directory (Azure AD) 同步，請改為從 Active Directory 刪除使用者帳戶。 如需相關指示，請參閱 [大量刪除 Azure Active Directory 中的使用者](/azure/active-directory/users-groups-roles/users-bulk-delete)。
+如果您的組織使用與 Microsoft Azure Active Directory (Azure AD) 同步處理的 Active Directory，請改為從 Active directory 中刪除使用者帳戶。 如需相關指示，請參閱[大量刪除使用者的 Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete)。
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步驟2：取消所有作用中的訂閱
 
 1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
-2. 在 [ **產品** ] 索引標籤上，尋找使用中的訂閱。 選取 **[更多動作]** (三個點)，然後選取 **[取消訂閱]**。
+2. 在 [ **產品** ] 索引標籤上，尋找使用中的訂閱。 選取 [ (更多動作) ] 的三個點，然後選取 [ **取消訂閱**]。
 3. 在 **取消訂閱** 窗格中，選擇取消的原因。 您也可以選擇提供任何意見反應。
 4. 選取 **[儲存]**。
 5. 重複步驟1到4，以取消所有作用中的訂閱。
@@ -79,7 +79,7 @@ ms.locfileid: "52331763"
 您也可以 [使用 PowerShell 來停用多個使用者的多重要素驗證](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)。
 
 
-## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步驟5：刪除 Azure Active Directory 中的目錄
+## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步驟5：在 Azure Active Directory 中刪除目錄
 
 1. 使用全域系統管理員帳戶登入 <a href="https://aad.portal.azure.com/" target="_blank">AZURE AD 系統管理中心</a> 。
 2. 選取 **[Azure Active Directory]**。

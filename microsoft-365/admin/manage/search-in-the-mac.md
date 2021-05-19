@@ -17,24 +17,24 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用系統管理中心的搜尋功能，以取得更好和更快的結果。
-ms.openlocfilehash: 4faf761c1bb478dbdd578f3acec4fb108ca7269a
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: 87e7fb78e9d7ce535f481151515791c20c115836
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50054090"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537508"
 ---
-# <a name="search-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心中的搜尋
+# <a name="search-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中搜尋
 
-在 Microsoft 365 組織的系統管理員中，您可以使用搜尋來尋找使用者、執行動作、流覽其他設定，以及閱讀檔。 使用新的搜尋功能時，搜尋速度已改進，您現在可以從系統管理中心的每一頁進行搜尋。 [搜尋] 方塊已經移至 [系統管理中心] 頂端的 [橫幅] 區域。 您可以使用 **Alt + S 快捷方式** ，在任何頁面上使用 [搜尋]。
+作為 Microsoft 365 組織的管理員，您可以使用搜尋來尋找使用者、執行動作、流覽其他設定，以及閱讀檔。 使用新的搜尋功能時，搜尋速度已改進，您現在可以從系統管理中心的每一頁進行搜尋。 [搜尋] 方塊已經移至 [系統管理中心] 頂端的 [橫幅] 區域。 您可以使用 **Alt + S 快捷方式** ，在任何頁面上使用 [搜尋]。
 
-:::image type="content" source="../../media/search-bar.png" alt-text="螢幕擷取畫面： Microsoft 365 系統管理中心中的搜尋列":::
+:::image type="content" source="../../media/search-bar.png" alt-text="螢幕擷取畫面： Microsoft 365 系統管理中心的搜尋列":::
 
 搜尋結果會組織成不同的類別。 大部分的類別是系統管理中心的專案。 例如，使用者、群組、共用信箱或網域。 其他類別會顯示您可以流覽的動作、您可以採取的動作或您可以變更的應用層級設定。 而且還有與檔相關的類別。
 
 下列各節將說明可搜尋之系統管理中心的不同區域和類別。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 您必須是系統管理員，才可在系統管理中心中進行搜尋。 搜尋結果的範圍是登入的使用者所擁有的系統管理員許可權。 例如，如果 SharePoint 系統管理員沒有看到系統管理中心的區域或類別，他們就不會在 [搜尋] 中看到。
 
@@ -44,11 +44,11 @@ ms.locfileid: "50054090"
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="螢幕擷取畫面：搜尋使用者 Felix Henderson":::
 
-如果您選取其名稱旁邊的「其他動作」功能表，您可以重設其密碼。
+如果您選取 [三個點 (更多動作) ] 功能表上的名稱旁邊，您可以重設其密碼。
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="螢幕擷取畫面：使用者搜尋，可使用從搜尋結果重設密碼的選項":::
 
-**改進使用者搜尋結果的秘訣**
+**改善使用者搜尋結果的提示**
 
 - 請務必正確拼寫使用者的名稱，因為使用者搜尋完全符合先前所述的屬性。 例如，在上述範例中，Jus 或 Malz 會運作，但拼寫錯誤，例如，Jostin 而不是 Justin 會找到此使用者。
 - 若要取得完全相符，請依主要電子郵件地址或使用者名稱進行搜尋。
@@ -59,7 +59,7 @@ ms.locfileid: "50054090"
 
 :::image type="content" source="../../media/search-for-groups-mac.png" alt-text="螢幕擷取畫面：系統管理中心中群組的搜尋結果":::
 
-**改進群組搜尋結果的秘訣**
+**改善群組搜尋結果的提示**
 
 請務必正確拼寫群組名稱。
 

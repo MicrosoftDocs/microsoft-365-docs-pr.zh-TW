@@ -1,23 +1,24 @@
 ---
 title: 匈牙利的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a5882ec587e6637d6a22bddd28945588a2d26e1f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 8a7e40b7aab787b83cf82f8c4a18f58e3101b068
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273617"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536667"
 ---
 # <a name="payment-information-for-hungary"></a>匈牙利的付款資訊
 
@@ -31,5 +32,5 @@ ms.locfileid: "52273617"
 **SWIFT Code/BIC：** CITIGB2L  
 **IBAN：** GB31CITI18500812207591  
 **分類程式代碼：** 185008  
-**帳戶號碼：** 12207591    
+**帳戶號碼：** 12207591  
 **帳戶名稱：** 微軟
