@@ -19,15 +19,15 @@ ms.collection:
 - m365solution-symantecmigrate
 - m365solution-overview
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/14/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 3e3a30ac4d03a40157fd7ec7f06e6e2a82c685a0
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 62a916fcf89432a512ada1b85002cce401e4dd23
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327387"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530895"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>從 Symantec 遷移至 Microsoft Defender for Endpoint
 如果您打算從 symantec Endpoint Protection (symantec) 切換至[microsoft defender for](microsoft-defender-endpoint.md) endpoint (microsoft defender for endpoint) ，您就是在正確的位置。 使用本文做為指南。
@@ -48,9 +48,9 @@ ms.locfileid: "52327387"
 
 |階段 |描述 |
 |--|--|
-|[準備遷移](symantec-to-microsoft-defender-atp-prepare.md) |在 [**準備**] 階段中，您會取得 Microsoft Defender for Endpoint，規劃您的角色和許可權，並授與 Microsoft Defender 資訊安全中心的存取權。 您也可以設定裝置 proxy 和網際網路設定，以啟用組織裝置和 Microsoft Defender for 端點之間的通訊。 |
-|[設定 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md) |在 **設定** 階段，您可以為 Microsoft Defender 防毒軟體和 Symantec Endpoint Protection 設定設定和排除專案。 您也可以建立裝置群組、集合及組織單位。 最後，您可以設定反惡意程式碼原則和即時保護設定。|
-|[在 Microsoft Defender for Endpoint 上的板載](symantec-to-microsoft-defender-atp-onboard.md) |在第 **板** 階段中，您會將裝置上架至 microsoft Defender for endpoint，並驗證這些裝置是否與 microsoft Defender for endpoint 進行通訊。 最後，您會卸載 Symantec，並確定透過 Microsoft Defender for Endpoint 來保護成為 active 模式。 |
+|[準備遷移](symantec-to-microsoft-defender-atp-prepare.md) |在 [**準備**] 階段中，您會更新組織的裝置、取得 Microsoft Defender 的端點、規劃您的角色和許可權，以及授與 Microsoft Defender 資訊安全中心的存取權。 您也可以設定裝置 proxy 和網際網路設定，以啟用組織裝置和 Defender for Endpoint 之間的通訊。 |
+|[設定 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md) |在 **安裝** 階段期間，您可以啟用 Microsoft Defender 防毒軟體，並將其設定為被動模式。 您也可以為 Microsoft Defender 防毒軟體和 Symantec Endpoint Protection 設定 & 排除專案。 接著，您會建立裝置群組、集合及組織單位。 最後，您可以設定反惡意程式碼原則和即時保護設定。|
+|[在 Microsoft Defender for Endpoint 上的板載](symantec-to-microsoft-defender-atp-onboard.md) |在 **板載** 階段中，您會將裝置上架至 Microsoft Defender for Endpoint，確認 Microsfot Defender 防毒程式是在被動模式中執行，並確認您的端點正在與的 defender 進行通訊。 然後，您會卸載 Symantec，確定端點是否可正常運作。 |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中包含的內容？
 

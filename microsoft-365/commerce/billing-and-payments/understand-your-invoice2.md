@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何解讀商務用 Microsoft 365 帳單或發票上的費用、計費和付款資訊，以及如何變更採購單編號。
 ms.date: 05/04/2021
-ms.openlocfilehash: 3b183c219e25bcef21add70e2c704a7a0f3fe354
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: febcbdee563c18b3f17ee35b98f2d68b15f456d8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331955"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535683"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解您的商務用 Microsoft 365 帳單或發票
 
@@ -128,5 +128,12 @@ ms.locfileid: "52331955"
 
 ## <a name="related-content"></a>相關內容
 
-[付費 Microsoft 365 for business 訂閱](pay-for-your-subscription.md) (文章) \
+[瞭解如何尋找及查看您的帳單或發票](view-your-bill-or-invoice.md) (文章) 
+
+[變更您的帳單位址](change-your-billing-addresses.md) (文章) 
+
+[變更組織的位址、技術連絡人電子郵件以及其他資訊](../../admin/manage/change-address-contact-and-more.md) (文章) 
+
+[付費 Microsoft 365 商務用訂閱](pay-for-your-subscription.md) (文章) \
+
 [Minecraft: Education Edition 付款選項](/education/windows/school-get-minecraft) (文章)

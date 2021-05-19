@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何在 Microsoft 365 商務進階版中取得系統管理協助或支援。
-ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: HT
+description: 您必須是商務訂閱的系統管理員，才可在 Microsoft 365 商務進階版中取得系統管理員協助或線上或電話支援。
+ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327183"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535707"
 ---
 # <a name="get-support"></a>取得支援
 
@@ -252,3 +252,12 @@ ms.locfileid: "52327183"
 您也可以[搜尋商務用 Microsoft 365 社群論壇](https://go.microsoft.com/fwlink/p/?LinkId=518605)，查看已知問題和熱門主題，或是提出新問題。社群論壇由受過專業訓練的 Microsoft 支援專員監視，可以協助您解決問題。
 
 ::: moniker-end
+
+
+## <a name="related-content"></a>相關內容
+
+[尋找檔和訓練](find-help-answers.md) (文章) 
+
+[員工快速設定](employee-quick-setup.md) (文章) 
+
+[Microsoft 365 商務進階版安裝 (影片的概述](setup-overview.md)) 

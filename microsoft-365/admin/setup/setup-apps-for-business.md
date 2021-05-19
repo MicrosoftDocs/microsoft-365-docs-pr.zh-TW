@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 瞭解如何設定 Microsoft 365 Apps 商務版訂閱。
-ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9c973866a3bf1008a8c8062e2a5b9e101494d5f9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244476"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535731"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>設定 Microsoft 365 Apps 商務版
 
@@ -45,13 +45,13 @@ ms.locfileid: "52244476"
 
 ::: moniker range="o365-germany"
 
-1. 如果您使用的是 Office 365 Germany，請移至[此系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)。
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的系統管理中心。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 如果您使用的是由 21Vianet 運作的 Office 365，請移至[此系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)。
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 的系統管理中心。
 
 ::: moniker-end 
 

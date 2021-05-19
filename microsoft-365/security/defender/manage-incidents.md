@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299998"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530835"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理 Microsoft 365 Defender 中的事件
 
@@ -45,12 +45,12 @@ ms.locfileid: "52299998"
 
 您可以透過下列方式管理您的事件：
 
-- 變更事件名稱
-- 新增事件標記。
-- 指派事件給使用者帳戶
-- 解決這些問題 
-- 設定它的分類和決定
-- 新增批註。
+- [編輯事件名稱](#edit-the-incident-name)
+- [新增事件標籤](#add-incident-tags)
+- [指派事件給使用者帳戶](#assign-incidents)
+- [解決這些問題](#resolve-an-incident)
+- [設定它的分類和決定](#set-the-classification-and-determination)
+- [新增註解](#add-comments)
 
 您可以從「 **管理事件** 」窗格中管理事件的事件。 以下為範例。
 
@@ -61,7 +61,7 @@ ms.locfileid: "52299998"
 - 事件佇列中事件的屬性窗格。
 - 事件的 **摘要** 頁面。
 
-在分析您想要將警示從某個事件移動到另一個事件的情況下，您也可以在 [ **警示** ] 索引標籤中執行這項操作，進而建立一個包含所有相關警示的較大或較小的事件。
+當您想要將警示從某個事件移動到另一個事件時，您也可以從 [ **警示** ] 索引標籤，建立一個包含所有相關警示的較大或較小的事件。
 
 ## <a name="edit-the-incident-name"></a>編輯事件名稱
 
@@ -82,7 +82,7 @@ Microsoft 365Defender 會根據警示屬性（如受影響的端點數目、受�
 
 若尚未指派事件，您可以選取 [ **指派給** ] 並指定使用者帳戶。 這樣做會指派事件的擁有權及與其相關聯的所有警示。
 
-## <a name="resolve-incident"></a>解決事件
+## <a name="resolve-an-incident"></a>解決事件
 
 如果事件已經修正，請選取 [ **解決事件** ]，將切換移至右邊。 請注意，解決事件也會解決與該事件相關的所有連結和主動警示。
 
@@ -106,7 +106,7 @@ Microsoft 365Defender 會根據警示屬性（如受影響的端點數目、受�
 
 若為解決的事件，請執行 [事件後檢查](first-incident-post.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)

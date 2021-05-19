@@ -2,22 +2,23 @@
 title: 紐西蘭的付款資訊
 f1.keywords:
 - NOCSH
-author: cmcatee-MSFT
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: db42ce70f5533101ecb39bd504f3e5eb16c2b396
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 4ff9056421d32abf83970356f9f99d9aea2adc3f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273185"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535335"
 ---
 # <a name="payment-information-for-new-zealand"></a>紐西蘭的付款資訊
 
@@ -29,19 +30,19 @@ ms.locfileid: "52273185"
 
 如果您擁有由 **MICROSOFT 地區銷售 PTE 有限公司** 計費的發票，請使用此銀行資訊：
 
-銀行： Citibank \
-銀行代號： 31 \
-分支程式碼： 2840 \
-SWIFT 程式碼： CITINZ2X \
-尾碼 (3 位數) ： 004 \
-尾碼 (2 位數) ： 04 \
-帳戶號碼： 0026181 \
-帳戶名稱： MICROSOFT
+**銀行：** 花旗 銀行  
+**銀行代號：** 31  
+**分支程式碼：** 2840  
+**SWIFT 程式碼：** CITINZ2X  
+**尾碼 (3 位數) ：** 004  
+**尾碼 (2 位數) ：** 04  
+**帳戶號碼：** 0026181  
+**帳戶名稱：** 微軟
 
 如果您擁有的發票是由 **Microsoft 紐西蘭** 計費，且限制在2021年3月1日開始的訂單和消費，請使用此銀行資訊：
 
-銀行： Citibank、N.A。 紐西蘭分支 \
-SWIFT 程式碼： CTINZ2X \
-BSB： 312825 \
-帳戶號碼： 0008655083 \
-帳戶名稱： MICROSOFT
+**銀行：** Citibank, N.A. 紐西蘭分支  
+**SWIFT 程式碼：** CTINZ2X  
+**BSB：** 312825  
+**帳戶號碼：** 0008655083  
+**帳戶名稱：** 微軟

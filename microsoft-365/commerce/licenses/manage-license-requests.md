@@ -18,19 +18,19 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
 search.appverid: MET150
-description: 瞭解如何針對您的 Microsoft 365 訂閱，複查和核准或拒絕來自使用者的授權要求。
+description: 瞭解如何為商務用 Microsoft 365 的使用者，複查及核准或拒絕使用者的授權要求。
 ms.date: 08/07/2020
-ms.openlocfilehash: 06ee210b39c19c1f2c8a2041c463568e55001b6e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 6cbfd81f4f6deba642729f1fef0b826b07a99f56
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331547"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535671"
 ---
 # <a name="manage-license-requests"></a>管理授權要求
 
 > [!NOTE]
-> 本文中的資訊僅適用于自助購買產品。 若要深入瞭解，請參閱 [自助購買常見問題](../subscriptions/self-service-purchase-faq.md)。
+> 本文中的資訊僅適用于自助購買產品。 若要深入瞭解，請參閱 [自助購買常見問題](../subscriptions/self-service-purchase-faq.yml)。
 
 如果您在組織中停用自助購買，您可以使用授權要求來管理使用者的授權要求。 當使用者嘗試為已封鎖的產品進行自助購買時，他們可以將授權要求送出給您，以供系統管理員使用。當他們提出要求時，他們可以新增也需要產品授權的其他使用者名稱。
 
@@ -39,7 +39,7 @@ ms.locfileid: "52331547"
 
 若要查看及管理授權要求，系統管理員會使用 **授權** 頁面上的 [**要求**] 索引標籤。 清單會顯示要求的產品名稱、要求授權的人員名稱、要求的日期，以及要求的狀態。 系統管理員可以篩選清單，以顯示擱置或已完成的要求。 要求會保留30天。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 您必須是全域系統管理員，才可執行本文中的工作。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "52331547"
 1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面，然後選取 [**要求**] 索引標籤。
 2. 選取 [ **使用現有的要求處理常式**]。
 3. 在右窗格的 [ **消息** ] 方塊中，輸入您希望使用者在要求授權時看到的訊息。 如果您也想要包含組織原則或其他檔的連結，請在 [檔的連結] 中，輸入 URL **(選用)** ] 文字方塊。
-4. 選取 **[儲存]**。
+4. 選取 ****[儲存]。
 
 當您回到 [ **要求** ] 清單時，您會看到 **您使用的是您自己的授權要求程式** 的訊息。 若要對傳送給使用者的郵件進行變更，請選取 [ **使用現有的要求處理常式**]。
 
@@ -62,7 +62,7 @@ ms.locfileid: "52331547"
 1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面，然後選取 [**要求**] 索引標籤。
 2. 選取 [ **使用現有的要求處理常式**]。
 3. 在右窗格中，清除 [ **使用我的組織的要求處理** 程式] 核取方塊。
-4. 選取 **[儲存]**。
+4. 選取 ****[儲存]。
 
 ## <a name="approve-or-deny-a-license-request"></a>核准或拒絕授權要求
 

@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。 '
-ms.openlocfilehash: c20b0d070c4c4ca28ee681e560c4a91c412241fc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: dcaeb9588f50d1e12bdff5164f5f41a0beee2e47
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244536"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535875"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保護商務方案 Microsoft 365 的前10種方式
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 如果您是使用 Microsoft 商務方案之一的小型或中型組織，且您的組織類型是由網路罪犯和駭客的目標所組成，請使用本文中的指導方針增加組織的安全性。 本指南可協助您的組織達成 Harvard 甘迺迪 School [Cybersecurity 活動手冊](https://go.microsoft.com/fwlink/p/?linkid=2015598)中所述的目標。
 
@@ -55,9 +48,9 @@ Microsoft 建議您完成下清單格中所列的工作，以套用至您的服�
 |9 |[使用安全附件防範惡意附件和檔案](secure-your-business-data.md#atp)||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10 |[使用安全連結防禦網路釣魚攻擊](secure-your-business-data.md#phishingatp)||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-如果您有 Microsoft Business 進階版，設定安全性及開始共同作業的最快方法，就是遵循此文件庫中的指導方針：[針對較小的企業和市場活動使用 Microsoft 365](../../campaigns/index.md)。 本指南是與 Microsoft 辯護民主小組合作，以保護所有小型商務客戶免受複雜駭客所啟動的網路威脅。
+如果您有 Microsoft 商務進階版，設定安全性並安全地開始共同作業的最快速方法是遵循此文件庫中的指引：[適用於小型企業和活動的 Microsoft 365](../../campaigns/index.md)。 本指引是與 Microsoft Defending Democracy 團隊合作開發，可保護所有小型企業客戶抵禦老練駭客發動的網路威脅。
 
-開始之前，請先檢查 Microsoft 365 安全中心的[Microsoft 365 安全評分](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)。 您可以從集中式儀表板監視及提高 Microsoft 365 身分識別、資料、應用程式、裝置和基礎結構的安全性。 您可以在設定建議的安全性功能、執行安全性相關工作 (例如查看報告) 或使用協力廠商應用程式或軟體解決建議等方面提供積分。 透過更深入的見解和更深入的 Microsoft 產品和服務集合，您可以自信地報告組織的安全性健康情況。
+開始之前，請先檢查 Microsoft 365 安全中心的[Microsoft 365 安全評分](../../security/defender/microsoft-secure-score.md)。 您可以從集中式儀表板監視及提高 Microsoft 365 身分識別、資料、應用程式、裝置和基礎結構的安全性。 您可以在設定建議的安全性功能、執行安全性相關工作 (例如查看報告) 或使用協力廠商應用程式或軟體解決建議等方面提供積分。 透過更深入的見解和更深入的 Microsoft 產品和服務集合，您可以自信地報告組織的安全性健康情況。
 
 ![Microsoft 安全分數的螢幕擷取畫面](../../media/secure-score.png)
 
@@ -159,7 +152,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 針對每個規則套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 [儲存]。
+6. 選取 ****[儲存]。
     
 | 設定 | 開啟 Office 檔案的附件之前警告使用者 | 封鎖可能包含勒索代碼或其他惡意程式碼的檔案類型 |
 |:-----|:-----|:-----|
@@ -195,7 +188,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 [儲存]。
+6. 選取 ****[儲存]。
 
 |設定|拒絕自動轉寄電子郵件至外部網域|
 |---|---|
@@ -333,7 +326,7 @@ Office郵件加密會在傳送郵件時提供兩個保護選項：
 
 3. 在 [**電子郵件以外套用至內容的設定**] 底下，選取 [ **Office 365 應用程式**]，**當使用者按一下 [安全連結] 時**，請勿追蹤，而且 **不讓使用者點擊至原始 URL 的安全連結**。
 
-4. 選取 [儲存]。
+4. 選取 ****[儲存]。
 
 若要建立新的原則針對您網域中的所有收件者：
 
@@ -341,7 +334,7 @@ Office郵件加密會在傳送郵件時提供兩個保護選項：
 
 2. 套用下表所列的設定。
 
-3. 選取 [儲存]。
+3. 選取 ****[儲存]。
 
 |設定或選項|建議的設定|
 |---|---|

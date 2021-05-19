@@ -1,5 +1,5 @@
 ---
-title: 管理計費帳戶
+title: 瞭解帳單帳戶
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,20 +17,20 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: 深入瞭解記帳帳戶及管理方式。
+description: 深入瞭解計費帳戶，以及如何使用它們來管理帳戶設定、發票、支付方式及購買。
 ms.date: 03/17/2021
-ms.openlocfilehash: 05ab759f300cb7fa6b02e06714d7d98e64890be8
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 1eb01ace2fe8b84b813793168cb50db2508b4ebb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331595"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535635"
 ---
-# <a name="manage-billing-accounts"></a>管理計費帳戶
+# <a name="understand-billing-accounts"></a>瞭解帳單帳戶
 
-當您註冊以嘗試或購買 Microsoft 產品時，即會建立帳單帳戶。 您可以使用您的計費帳戶來管理帳戶設定、發票、支付方式及購買。 您可以存取多個帳單帳戶。 例如，您已直接註冊 Microsoft 365，或您可以存取組織的企業合約、Microsoft 產品 & 服務合約或 Microsoft 客戶合約。 針對上述每個案例，您會有個別的帳單帳戶。
+當您註冊以嘗試或購買 Microsoft 產品時，即會建立帳單帳戶。 您可以使用您的計費帳戶來管理帳戶設定、發票、支付方式及購買。 您可以存取多個帳單帳戶。 例如，您已直接註冊 Microsoft 365，或您可以存取組織的 Enterprise 合約、microsoft 產品 & 服務合約或 Microsoft 客戶合約。 針對上述每個案例，您會有個別的帳單帳戶。
 
-Microsoft 365 admin center 目前支援下列類型的計費帳戶：
+Microsoft 365 系統管理中心目前支援下列類型的計費帳戶：
 
 - Microsoft 線上服務方案：當您直接註冊 Microsoft 365 訂閱時，就會建立這種計費帳戶。
 - Microsoft 產品 & 服務合約 (MPSA) 程式：當您的組織簽署 MPSA 大量授權合約以購買軟體和線上服務時，就會建立這種計費帳戶。
@@ -47,7 +47,7 @@ Microsoft 365 admin center 目前支援下列類型的計費帳戶：
 | 欄位名稱 | 描述 |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 銷售位址 | 負責支付及識別發票上的法律法人。 除非您在購買過程中選擇提供備用的交貨地址，否則會使用此處提供的地址來判斷您的稅率。 如需詳細資訊，請參閱[稅務資訊](billing-and-payments/tax-information.md)。 |
-| 段 | 可識別組織之商務區段的唯讀欄位 (商業、教育、政府或非盈利性) 。 |
+| 區隔 | 可識別組織之商務區段的唯讀欄位 (商業、教育、政府或非盈利性) 。 |
 | 帳戶狀態 | 指定您的商務用 Microsoft 帳戶狀態的唯讀欄位。 |
 | 納稅識別碼 | 如果您在美國境外，您必須提供加值稅或當地對等專案。 如需詳細資訊，請參閱[稅務資訊](billing-and-payments/tax-information.md)。 |
 | 協定 | 在建立計費帳戶時（透過直接購買或大量授權安排），組織的簽署人會接受（或簽署）列出該帳戶的條款 & 條件的合約。 如果適用的話，此視圖會列出合約記錄。 如果您需要接受更新的字詞，就會顯示「 **核准合約** 」的連結。 |
@@ -67,7 +67,7 @@ Microsoft 365 admin center 目前支援下列類型的計費帳戶：
 
 ## <a name="understand-access-to-billing-accounts"></a>瞭解計費帳戶的存取權
 
-您可以讓其他人透過角色和許可權，存取 Microsoft 365 系統管理中心內的帳單帳戶。 只有帳單帳戶擁有者可以授與帳單帳戶的存取權。 您可以將下列角色之一指派給使用者：
+您可以透過角色和許可權，讓其他人能夠存取 Microsoft 365 系統管理中心中的帳單帳戶。 只有帳單帳戶擁有者可以授與帳單帳戶的存取權。 您可以將下列角色之一指派給使用者：
 
 - **帳單帳戶擁有** &mdash; 者可以指派許可權、編輯帳戶、簽署協定及查看帳戶。
 - **帳單帳戶參與者** &mdash; 可以編輯帳戶、簽署協定及查看帳戶。

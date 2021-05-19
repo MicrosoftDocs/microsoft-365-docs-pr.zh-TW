@@ -21,12 +21,12 @@ search.appverid:
 description: 瞭解如何使用 AllowSelfServicePurchase PowerShell Cmdlet 來開啟或關閉自助購買服務。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333371"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536127"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>針對 MSCommerce PowerShell 模組使用 AllowSelfServicePurchase
 
@@ -43,12 +43,13 @@ ms.locfileid: "52333371"
 若要使用 **MSCommerce** PowerShell 模組，您需要：
 
 - Windows 10 裝置
+- PowerShell 5 或下列。 目前，此模組不支援 PowerShell 的 a.x/7. x。
 - 裝置的系統管理員許可權
 - 您租使用者的全域或計費系統管理員角色
 
 ## <a name="install-the-mscommerce-powershell-module"></a>安裝 MSCommerce PowerShell 模組
 
-您可以在 Windows 10 裝置上安裝 **MSCommerce** PowerShell 模組一次，然後將其匯入您所開始的每個 PowerShell 會話。 從 [PowerShell 庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)下載 **MSCommerce** PowerShell 模組。
+您 Windows 10 裝置上安裝 **MSCommerce** PowerShell 模組一次，然後將其匯入您所開始的每一個 PowerShell 會話。 從 [PowerShell 庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)下載 **MSCommerce** PowerShell 模組。
 
 若要使用 **PowerShellGet** 安裝 **MSCommerce** PowerShell 模組，請執行下列命令：
 
@@ -58,13 +59,13 @@ Install-Module -Name MSCommerce
 
 ## <a name="import-mscommerce-into-the-powershell-session"></a>將 MSCommerce 匯入至 PowerShell 會話
 
-在 Windows 10 裝置上安裝模組之後，您可以將它匯入至每個開始的 PowerShell 會話。 若要將其匯入 PowerShell 會話，請執行下列命令：
+在 Windows 10 裝置上安裝模組之後，您可以將它匯入開始的每個 PowerShell 會話。 若要將其匯入 PowerShell 會話，請執行下列命令：
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>使用您的認證連接至 MSCommerce
+## <a name="connect-to-mscommerce-with-your-credentials"></a>使用您的認證連線 MSCommerce
 
 若要使用您的認證連接至 PowerShell 模組，請執行下列命令。
 
@@ -94,15 +95,15 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 
 | 產品 | ProductId |
 |-----------------------------|--------------|
-| 每位使用者的電源應用程式 | CFQ7TTC0KP0P |
-| 每位使用者的電源自動化 | CFQ7TTC0KP0N |
-| 電源自動化 RPA | CFQ7TTC0KXG6  |
+| 每位使用者 Power Apps | CFQ7TTC0KP0P |
+| 每位使用者 Power Automate | CFQ7TTC0KP0N |
+| Power AutomateRPA | CFQ7TTC0KXG6  |
 | Power BI Premium (獨立)  | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| 專案方案1 | CFQ7TTC0KXND |
-| 專案計劃3 | CFQ7TTC0KXNC |
-| Visio 方案1 | CFQ7TTC0KXN9 |
-| Visio 方案2 | CFQ7TTC0KXN8 |
+| Project 方案 1 | CFQ7TTC0KXND |
+| Project 方案 3 | CFQ7TTC0KXNC |
+| Visio 方案 1 | CFQ7TTC0KXN9 |
+| Visio 方案 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>查看或設定 AllowSelfServicePurchase 的狀態
 
@@ -128,7 +129,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>停用 AllowSelfServicePurchase 的範例腳本
 
-下列範例會逐步引導您如何匯入 MSCommerce 模組、以您的帳戶登入、取得自動的 **ProductId** ，然後針對該產品停用 **AllowSelfServicePurchase** 。
+下列範例會逐步引導您如何匯入 **MSCommerce** 模組、以您的帳戶登入、取得 Power Automate 的 **ProductId** ，然後停用該產品的 **AllowSelfServicePurchase** 。
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -161,3 +162,9 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 ```powershell
 Uninstall-Module -Name MSCommerce
 ```-->
+
+## <a name="related-content"></a>相關內容
+
+[ (系統管理)  (文章中管理自助購買 ](manage-self-service-purchases-admins.md)) 
+
+[自助購買常見問題](self-service-purchase-faq.yml) (文章) 

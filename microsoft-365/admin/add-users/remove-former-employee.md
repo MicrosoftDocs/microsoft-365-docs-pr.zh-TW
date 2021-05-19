@@ -24,41 +24,29 @@ search.appverid:
 - MET150
 - MOE150
 description: 遵循此方案中的步驟，從 Microsoft 365 中移除前任員工，並保護組織的資料。
-ms.openlocfilehash: 4b4cf59fdce81b3098ee333095daa8e1af1cd5c5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 79baf5cbd94d555c1dff1859f5045cde3dbcfdc0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241733"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535903"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概覽：移除前任員工和安全資料
 
 我們常遇到的問題是：「我應該在員工離開組織時，應如何保護資料並保護存取？」 本文將說明如何封鎖 Microsoft 365 的存取，您應該採取的措施來保護您的資料，以及如何允許其他員工存取資料。
 
-觀賞有關移除員工的簡短影片。 <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
-
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](../../business-video/index.yml)。
-
-若要防止員工登入：
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
-2. 選取使用者名稱旁的方塊，然後選取 [ **重設密碼**]。
-3. 輸入新密碼，然後選取 [ **重設**]。  (不要將其傳送給他們。 ) 
-4. 選取使用者的名稱以移至其屬性窗格，然後在 [ **帳戶** ] 索引標籤上，選取 [ **啟動登出**]。
-
-> [!NOTE]
-> 您必須是全域系統管理員，才可啟動登出。
-
-在一小時內，或在他們保留目前的 Microsoft 365 頁面時，系統會提示他們重新登入。 存取權杖適用于一個小時，所以時程表取決於該權杖所留下的時間，以及是否要流覽至目前的網頁。
-
-> [!IMPORTANT]
-> 雖然我們已編號此方案中的步驟，而且您不需要以完全順序完成此方案，我們建議您以這種方式執行步驟。
+:::image type="content" source="../../media/delete-user-overview.png" alt-text="螢幕擷取畫面：刪除離職員工的步驟":::
 
 ## <a name="before-you-begin"></a>在您開始之前
 
 您必須是全域系統管理員，才可完成此方案中的步驟。
+
+## <a name="solution-remove-a-former-employee"></a>解決方案：移除離職員工
+
+> [!IMPORTANT]
+> 雖然我們已編號此方案中的步驟，而且您不需要以完全順序完成此方案，我們建議您以這種方式執行步驟。
+
+:::image type="content" source="../../media/delete-user-account.png" alt-text="螢幕擷取畫面：從組織中移除離職員工的步驟":::
 
 |||
 |:-----|:-----|

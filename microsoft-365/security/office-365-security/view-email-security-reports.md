@@ -19,12 +19,12 @@ description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d9f6d12fef8a2ef6241fbbd5e0e2a980284e9cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203768"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531008"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -35,14 +35,14 @@ ms.locfileid: "51203768"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[安全性 & 合規性中心](https://protection.office.com)提供各種報告，可協助您觀察電子郵件安全性功能（例如，反垃圾郵件、反惡意程式碼，以及 Microsoft 365 中的加密功能）如何保護您的組織。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [ **報表**] \> **儀表板**，在安全性 & 規範中心中查看這些報告。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
+[安全性 & 合規性中心](https://protection.office.com)提供各種報告，可協助您在保護組織時，看到 Microsoft 365 中的電子郵件安全性功能（例如，反垃圾郵件、反惡意程式碼和加密功能）。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [ **報表**] \> **儀表板**，在安全性 & 規範中心中查看這些報告。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
 
 ![安全性 & 規範中心內的報告儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="compromised-users-report"></a>已遭破壞的使用者報告
 
 > [!NOTE]
-> 這份報告可在 Microsoft 365 組織中使用 Exchange Online 信箱。 在獨立 Exchange Online Protection (EOP) 組織中無法使用此功能。
+> 使用 Exchange Online 信箱的 Microsoft 365 組織可取得此報告。 無法在獨立 Exchange Online Protection (EOP) 組織中使用。
 
 「已 **遭破壞的使用者** 報告」顯示顯示過去7天內已標示為 **可疑** 或 **限制** 的使用者帳戶數目。 在上述任一狀態的帳戶都有問題或甚至遭到破壞。 在經常使用的情況下，您可以使用報表來找出峰值，甚至是趨勢，也就是可疑或受限制的帳戶。 如需遭到破壞之使用者的詳細資訊，請參閱 [回應遭到破壞的電子郵件帳戶](responding-to-a-compromised-email-account.md)。
 
@@ -66,15 +66,15 @@ ms.locfileid: "51203768"
 
 - **建立時間**
 - **User ID**
-- **動作**
+- **Action**
 
 若要回到報表檢視，請按一下 [ **查看報告**]。
 
 ## <a name="encryption-report"></a>加密報告
 
-您可以在 Exchange Online 或獨立 EOP 中信箱的 EOP (訂閱中取得 **加密報告** ，而不需要 exchange online 信箱) 。 組織的安全小組可以使用此報告中的資訊來識別模式，並主動套用或調整敏感電子郵件訊息的原則。 例如：
+您可以在 EOP (訂閱中使用 Exchange Online 或獨立 EOP 中的信箱，但沒有 Exchange Online 信箱) 的 **加密報告**。 組織的安全小組可以使用此報告中的資訊來識別模式，並主動套用或調整敏感電子郵件訊息的原則。 例如：
 
-- 如果您看到大量的電子郵件是由使用者加密，您可能會想要新增加密原則，以自動化某些使用案例的加密。 如需詳細資訊，請參閱 [定義郵件流程規則，以加密 Microsoft 365 中的電子郵件訊息](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。
+- 如果您看到大量的電子郵件是由使用者加密，您可能會想要新增加密原則，以自動化某些使用案例的加密。 如需詳細資訊，請參閱[定義郵件流程規則，以在 Microsoft 365 中加密電子郵件訊息](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。
 
 - 如果您有許多可供使用的加密範本，但沒有人正在使用這些範本，您可能會探索使用者是否需要功能訓練。
 
@@ -82,7 +82,7 @@ ms.locfileid: "51203768"
 
 若要查看報告，請開啟 [安全性 & 規範中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **加密報告**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=EncryptionReport> 。
 
-若要深入瞭解加密，請參閱 [Microsoft 365 中的電子郵件加密](../../compliance/email-encryption.md)。
+若要深入瞭解加密，請參閱[Microsoft 365 中的電子郵件加密](../../compliance/email-encryption.md)。
 
 ### <a name="report-view-for-the-encryption-report"></a>加密報告的報表檢視
 
@@ -149,7 +149,7 @@ ms.locfileid: "51203768"
 
 ## <a name="malware-detections-in-email-report"></a>電子郵件報告中的惡意程式碼偵測
 
-[ **電子郵件中的惡意** 代碼偵測] 報告會顯示傳入和傳出電子郵件中的惡意程式碼偵測的相關資訊， (Exchange Online PROTECTION 或 EOP) 偵測到的惡意程式碼。 如需 EOP 中惡意程式碼保護的詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](anti-malware-protection.md)。
+[**電子郵件中的惡意** 代碼偵測] 報告會顯示在 Exchange Online Protection 或 EOP) 所偵測到的內送和外寄電子 (郵件中，惡意程式碼偵測的相關資訊。 如需 EOP 中惡意程式碼保護的詳細資訊，請參閱 [EOP 中的反惡意程式碼保護](anti-malware-protection.md)。
 
  匯總 view 篩選允許90天，而 [詳細資料表格篩選] 只允許10天。
 
@@ -233,7 +233,7 @@ ms.locfileid: "51203768"
 - **寄件者位址**
 - **收件者位址**
 - **事件類型**
-- **動作**
+- **Action**
 - **主旨**
 
 如果您按一下 [詳細資料] 表格中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
@@ -246,48 +246,64 @@ ms.locfileid: "51203768"
 
 ## <a name="spoof-detections-report"></a>欺騙偵測報告
 
-「 **欺騙** 偵測報告」會顯示偵測到的電子郵件訊息數量，以及那些已被視為「良好」的電子郵件訊息。 (假冒郵件出於正當商務理由) 而完成。 如需有關電子欺騙的詳細資訊，請參閱 [EOP 中的反欺騙防護](anti-spoofing-protection.md)。
+> [!NOTE]
+> 本文中所述的 [已改進的欺騙偵測報告] 是預覽中所述，視情況而變更，並非所有組織都提供這些報告。 舊的報表版本只會顯示出 **良好的郵件** ，並 **視為垃圾** 郵件。
 
-報表的匯總視圖允許90天的篩選，而詳細資料檢視只允許10天的篩選。
+**欺騙** 偵測報告會顯示因欺騙性而封鎖或允許的郵件相關資訊。 如需有關電子欺騙的詳細資訊，請參閱 [EOP 中的反欺騙防護](anti-spoofing-protection.md)。
+
+報表的匯總視圖允許45天的篩選 <sup>\*</sup> ，而詳細資料檢視只允許10天的篩選。
+
+<sup>\*</sup> 最後，您將可以使用超過90天的篩選。
 
 若要查看報告，請開啟 [安全性 & 規範中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **偽造** 偵測]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=SpoofMailReport> 。
 
 ![報告儀表板中的欺騙偵測構件](../../media/spoof-detections-widget.png)
 
-當您將滑鼠停留在圖表中的某一天 (資料點) 時，您可以看到有多少偽造的電子郵件訊息。
+當您將滑鼠停留在圖表中的某一天 (資料點) 時，您可以看到偵測到的冒牌郵件數目及原因。
 
 您可以按一下 [ **篩選** ] 並選取下列其中一個或多個值，以篩選圖表和詳細資料表格：
 
 - **開始日期** 和 **結束日期**
 
-- **良好的郵件**
+- **結果**
+  - **通過**
+  - **失敗**
+  - **SoftPass**
+  - **無**
+  - **其他**
 
-- **視為垃圾郵件**
+- **哄騙類型**： **Internal** 和 **External**
 
 ![欺騙偵測報告中的報表檢視](../../media/spoof-detections-report-view.png)
 
 如果您按一下 [ **查看詳細資料] 表格**，您可以看到下列詳細資料：
 
 - **Date**
-- **欺騙寄件者**
-- **True 寄件者**
-- **寄件者 IP**
-- **動作**
+- **偽裝的使用者**
+- **傳送基礎結構**
+- **哄騙類型**
+- **結果**
+- **結果代碼**
+- **SPF**
+- **DKIM**
+- **DMARC**
 - **訊息計數**
 
 若要回到報表檢視，請按一下 [ **查看報告**]。
 
+如需複合驗證結果代碼的詳細資訊，請參閱[反垃圾郵件郵件頭 in Microsoft 365](anti-spam-message-headers.md)。
+
 ## <a name="threat-protection-status-report"></a>威脅防護狀態報告
 
-「 **威脅防護狀態** 」報告可用於 EOP 和 Microsoft Defender for Office 365;不過，報告包含不同的資料。 例如，EOP 客戶可以查看在電子郵件中偵測到惡意程式碼的相關資訊，但不是 [SharePoint、OneDrive 和 Microsoft 小組的安全附件](mdo-for-spo-odb-and-teams.md)所偵測到之惡意檔案的相關資訊。
+「**威脅防護狀態**」報告可用於 EOP 和 Microsoft Defender for Office 365。不過，報告包含不同的資料。 例如，EOP 客戶可以查看在電子郵件中偵測到惡意程式碼的相關資訊，但不是[SharePoint、OneDrive 及 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)所偵測到之惡意檔案的相關資訊。
 
-該報告提供包含惡意內容的電子郵件統計，例如檔案或網站位址 (URLs 反惡意程式碼引擎封鎖的) 、 [零小時的自動清除 (ZAP) ](zero-hour-auto-purge.md)，以及 Office 365 功能（如 [安全連結](safe-links.md)、 [安全附件](safe-attachments.md)和 [反網路釣魚](set-up-anti-phishing-policies.md)）等功能。 您可以使用此資訊來識別趨勢，或判斷組織原則是否需要調整。
+該報告提供包含惡意內容的電子郵件統計，例如檔案或網站位址 (URLs 反惡意程式碼引擎封鎖的) 、[零小時自動清除 (ZAP) ](zero-hour-auto-purge.md)，以及用於 Office 365 功能（如[安全連結](safe-links.md)、[安全附件](safe-attachments.md)和[反網路釣魚](set-up-anti-phishing-policies.md)）的 Defender。 您可以使用此資訊來識別趨勢，或判斷組織原則是否需要調整。
 
 **附注：請** 務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
 
 若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **威脅防護狀態**]。 若要直接前往報告，請開啟下列其中一個 URLs：
 
-- Microsoft Defender for Office 365： <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- Microsoft Defender Office 365：<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![報告儀表板中的威脅防護狀態構件](../../media/threat-protection-status-report-widget.png)
@@ -296,7 +312,7 @@ ms.locfileid: "51203768"
 
 ### <a name="report-view-for-the-threat-protection-status-report"></a>威脅防護狀態報表的報表檢視
 
-可供使用的視圖如下：
+您可使用下列檢視：
 
 - **資料查看方式：概述**：以下是顯示的偵測資訊：
 
@@ -306,10 +322,10 @@ ms.locfileid: "51203768"
 
   ![威脅防護狀態報表中的一覽視圖](../../media/threat-protection-status-report-overview-view.png)
 
-- **資料查看方式：內容 \> 惡意軟體**<sup>1</sup>： Microsoft Defender for Office 365 組織顯示下列資訊：
+- **資料查看方式：內容 \>惡意軟體**<sup>1</sup>：對 Office 365 組織的 Microsoft Defender 顯示下列資訊：
 
-  - **反惡意程式碼引擎**：在 [microsoft 365 中內建的病毒偵測](virus-detection-in-spo.md)，在 Sharepoint、OneDrive 及 Microsoft 小組中偵測到的惡意檔案。
-  - 檔案 **引爆**： [SharePoint、OneDrive 和 Microsoft 小組的安全附件](mdo-for-spo-odb-and-teams.md)所偵測到的惡意檔案。
+  - **反惡意程式碼引擎**： [Microsoft 365 中內建的病毒偵測](virus-detection-in-spo.md)，在 Sharepoint、OneDrive 及 Microsoft Teams 中偵測到惡意檔案。
+  - 檔案 **引爆**： [SharePoint、OneDrive 及 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)所偵測到的惡意檔案。
 
   ![威脅防護狀態報表中的內容惡意程式碼視圖](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -329,7 +345,7 @@ ms.locfileid: "51203768"
 
 - **分解方式：偵測技術** 和 **查看資料：電子郵件網路釣魚：電子郵件 \> 網路釣魚**：下列資訊會顯示：
 
-  - **ATP 產生的 url 信譽**<sup>1</sup>：在其他 Microsoft 365 客戶中從 Office 365 DETONATIONS 產生的惡意 URL 信譽。
+  - **ATP 產生的 url 信譽**<sup>1</sup>：在其他 Microsoft 365 客戶的 Office 365 detonations 中，從 Defender 產生惡意 URL 信譽。
   - **高級網路釣魚篩選**：以機器學習為基礎的網路釣魚信號。
   - **反欺騙-DMARC 失敗**：郵件上的 DMARC 驗證失敗。
   - **反欺騙-組織內**：寄件者正嘗試哄騙收件者網域。
@@ -347,7 +363,7 @@ ms.locfileid: "51203768"
 
 - **分解方式：偵測技術** 和 **View Data：電子郵件 \> 惡意** 代碼：會顯示下列資訊：
 
-  - **ATP 產生的檔案信譽**<sup>1</sup>：所有由 Defender for Office 365 detonations 所產生的惡意檔信譽。
+  - **ATP 產生的檔案信譽**<sup>1</sup>： Office 365 detonations 之 Defender 所產生的所有惡意檔信譽。
   - **反惡意程式碼引擎**<sup>1</sup>：偵測到反惡意程式碼引擎。
   - **反惡意程式碼原則檔案類型封鎖**：由於郵件中所識別的惡意檔案類型，郵件會篩選掉這些電子郵件。
   - **檔引爆**<sup>1</sup>：由安全附件偵測。
@@ -382,9 +398,9 @@ ms.locfileid: "51203768"
 
   ![威脅防護狀態報表中仿冒電子郵件的傳遞狀態視圖](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-僅限<sup>1</sup> Defender for Office 365
+<sup>1</sup>僅限 Office 365 的 Defender
 
-<sup>兩</sup> 個零小時自動清除 (ZAP) 無法在獨立 EOP 中使用 (它只適用于 Exchange Online 信箱) 。
+<sup>兩</sup>個零小時自動清除 (ZAP) 不可用於獨立 EOP 中 (它只適用于 Exchange Online 信箱) 。
 
 如果您按一下 [ **篩選**]，可用的篩選取決於您所查看的圖表：
 
@@ -425,7 +441,7 @@ ms.locfileid: "51203768"
   - **Date**
   - **主旨**
   - **Sender**
-  - **收件者**
+  - **Recipients**
   - **偵測到**
   - **覆寫原因**
   - **受損來源**
@@ -444,7 +460,7 @@ ms.locfileid: "51203768"
   - **Date**
   - **主旨**
   - **Sender**
-  - **收件者**
+  - **Recipients**
   - **偵測到**
   - **傳遞狀態**
   - **受損來源**
@@ -454,7 +470,7 @@ ms.locfileid: "51203768"
 
   - **開始日期** 和 **結束日期**
   - **偵測**
-  - **受保護**： **Office 365 的 Defender** 或 **EOP**
+  - **受保護**： Office 365 或 **EOP** **的 Defender**
   - **標記**：依已套用指定使用者標記的使用者或群組來篩選結果 (包含優先順序帳戶) 。 如需使用者標記的相關資訊，請參閱 [user tags](user-tags.md)。
   - **網域**
   - 收件 **者 (請** 注意，[詳細資料] 表格視圖中只提供此可篩選的屬性) 
@@ -480,7 +496,7 @@ ms.locfileid: "51203768"
 
 ## <a name="url-threat-protection-report"></a>URL 威脅防護報告
 
-Microsoft Defender for Office 365 提供 **URL 威脅防護報告** 。 如需詳細資訊，請參閱 [URL 威脅防護報告](view-reports-for-mdo.md#url-threat-protection-report)。
+Office 365 的「 **URL 威脅防護」報告** 可用於的 Microsoft Defender。 如需詳細資訊，請參閱 [URL 威脅防護報告](view-reports-for-mdo.md#url-threat-protection-report)。
 
 ## <a name="user-reported-messages-report"></a>使用者報告的訊息報告
 
@@ -499,7 +515,7 @@ Microsoft Defender for Office 365 提供 **URL 威脅防護報告** 。 如需�
 ![在 [安全性 & 規範中心] 中，選擇 [威脅管理] [ \> \> 使用者報告的郵件]](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> 為了讓使用者報告的郵件報告正確運作，您必須為您的 Office 365 環境 **開啟審核記錄** 。 這項工作通常是由在 Exchange Online 中獲派稽核記錄角色的人員完成。 如需詳細資訊，請參閱 [開啟或關閉 Microsoft 365 審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
+> 為了讓使用者報告的郵件報告正確運作，必須為您的 Office 365 環境 **開啟審計記錄**。 這項工作通常是由在 Exchange Online 中獲派稽核記錄角色的人員完成。 如需詳細資訊，請參閱[開啟或關閉 Microsoft 365 審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看這些報表所需的許可權為何？
 
@@ -508,11 +524,11 @@ Microsoft Defender for Office 365 提供 **URL 威脅防護報告** 。 如需�
 - **組織管理**
 - **安全性系統管理員**
 - **安全性讀取者**
-- **全域讀取器**
+- **全域讀取者**
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+**附注**：將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 的安全性 & 合規性中心 _和_ 許可權中所需的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 
@@ -526,4 +542,4 @@ Microsoft Defender for Office 365 提供 **URL 威脅防護報告** 。 如需�
 
 [在安全性 & 規範中心內，查看郵件流程報告](view-mail-flow-reports.md)
 
-[查看 Office 365 的 Defender 報告](view-reports-for-mdo.md)
+[View Office 365 的 Defender 報告](view-reports-for-mdo.md)

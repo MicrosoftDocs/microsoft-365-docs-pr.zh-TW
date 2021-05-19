@@ -1,23 +1,24 @@
 ---
 title: 澳門的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 33ead33ef3b7b0bf0bb79c87b81b14836109c4c5
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fe06472c56456809172e2c85bd753cf98c4e74a3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273353"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535467"
 ---
 # <a name="payment-information-for-macao"></a>澳門的付款資訊
 
@@ -30,4 +31,4 @@ ms.locfileid: "52273353"
 **銀行：** Citibank，新加坡  
 **SWIFT 程式碼：** CITISGSG  
 **帳戶號碼：** 0-817543-138  
-**帳戶名稱：** MICROSOFT 地區銷售公司  
+**帳戶名稱：** MICROSOFT 地區銷售公司

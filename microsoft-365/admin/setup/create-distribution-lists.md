@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 瞭解如何在 Microsoft 365 系統管理中心建立通訊群組或清單，讓您可以將電子郵件傳送給群組，而不必輸入每個收件者的名稱。
-ms.openlocfilehash: 5c4781653a5f18b7a41dc20212771368132801cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd5e246caa8d1b56a33db21d70eb5cbdb7b5ed92
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914243"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535815"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心建立通訊群組
   
@@ -70,6 +70,6 @@ ms.locfileid: "50914243"
     
 6. 若要將使用者新增至通訊群組清單，請參閱 [新增使用者或連絡人至通訊群組](../email/add-user-or-contact-to-distribution-list.md)。
     
-若要瞭解如何在 outlook 中使用「2016群組」 [ () 在 outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 主題中的通訊群組清單。 
+請參閱如何使用 Outlook 2016 中的群組，以及在[Outlook 中使用連絡人群組 (先前的通訊群組清單) 中](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)的「Outlook」。 
   
 請參閱 [通訊群組問題](/office365/troubleshoot/groups/distribution-list-issues) ，以取得通訊群組清單問題的協助。 
