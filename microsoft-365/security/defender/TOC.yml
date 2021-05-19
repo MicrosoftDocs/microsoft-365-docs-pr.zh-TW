@@ -88,55 +88,55 @@
           items:
             - name: 概觀
               href: incidents-overview.md
-            - name: 設定事件優先順序
+            - name: 設定優先順序
               href: incident-queue.md
-            - name: 管理事件
+            - name: 管理
               href: manage-incidents.md
-            - name: 事件回應
+            - name: 調查
               items:
-                - name: 調查事件
+                - name: 概觀
                   href: investigate-incidents.md
-                - name: 調查警示
+                - name: 警示
                   href: investigate-alerts.md
-                - name: 調查使用者
+                - name: 使用者
                   href: investigate-users.md
-                - name: 事件回應行動手冊
-                  href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
-                - name: 回應第一個事件
+            - name: 回應第一個事件
+              items:
+                - name: 簡介
+                  href: first-incident-overview.md
+                - name: 準備
+                  href: first-incident-prepare.md
+                - name: 步驟 1. 會審和分析
+                  href: first-incident-analyze.md
+                - name: 步驟 2. 修正
+                  href: first-incident-remediate.md
+                - name: 步驟 3. 檢閱
+                  href: first-incident-post.md
+                - name: 其他事件範例
                   items:
-                    - name: 簡介
-                      href: first-incident-overview.md
-                    - name: 準備
-                      href: first-incident-prepare.md
-                    - name: 步驟 1. 會審和分析
-                      href: first-incident-analyze.md
-                    - name: 步驟 2. 修復
-                      href: first-incident-remediate.md
-                    - name: 步驟 3. 檢閱
-                      href: first-incident-post.md
-                    - name: 其他事件範例
-                      items:
-                        - name: 網路釣魚電子郵件
-                          href: first-incident-path-phishing.md
-                        - name: 身分識別
-                          href: first-incident-path-identity.md
-            - name: 取得電子郵件通知
+                    - name: 網路釣魚電子郵件
+                      href: first-incident-path-phishing.md
+                    - name: '[身分識別]'
+                      href: first-incident-path-identity.md
+            - name: 事件回應行動手冊
+              href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
+            - name: 電子郵件通知
               href: get-incident-notifications.md
         - name: 自動調查及回應
           items:
-            - name: 自動調查及回應概觀
+            - name: 概觀
               href: m365d-autoir.md
-            - name: 設定自動調查及回應功能
+            - name: 設定功能
               href: m365d-configure-auto-investigation-response.md
             - name: 補救動作
               href: m365d-remediation-actions.md
-            - name: 造訪重要訊息中心
+            - name: 使用重要訊息中心
               href: m365d-action-center.md
             - name: 查看和管理修正動作
               href: m365d-autoir-actions.md
-            - name: 檢視自動調查的詳細資料和結果
+            - name: 查看詳細資料和結果
               href: m365d-autoir-results.md
-            - name: 位址誤報/負片
+            - name: 位址誤報和否定
               href: m365d-autoir-report-false-positives-negatives.md
         - name: 進階搜捕
           items:
