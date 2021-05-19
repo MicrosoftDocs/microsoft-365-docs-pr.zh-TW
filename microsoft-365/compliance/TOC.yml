@@ -785,7 +785,7 @@
     - name: 基本稽核
       items:
         - name: 設定基本稽核
-          href: set-up-basic-auditing.md
+          href: set-up-basic-audit.md
         - name: 搜尋稽核記錄
           href: search-the-audit-log-in-security-and-compliance.md
         - name: 使用 PowerShell 指令碼來搜尋稽核記錄
