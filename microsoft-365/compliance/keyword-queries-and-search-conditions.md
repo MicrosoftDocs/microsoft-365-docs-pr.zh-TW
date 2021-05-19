@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解您可以使用 Microsoft 365 中的 eDiscovery 搜尋工具進行搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: cbd3969e9936df3dc82c364d804dbcd366b0e07a
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 390477012c6a2a57c5e305641ba5b79ff10f4ea7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326591"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538432"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>EDiscovery 的關鍵字查詢和搜尋條件
 
@@ -57,9 +57,9 @@ ms.locfileid: "52326591"
 > [!NOTE]
 > 在搜尋電子郵件屬性時，不可能搜尋指定屬性為空白或空白的專案。 例如，使用 [ *屬性：值* 一對主旨 **： "]** 搜尋具有空白主旨行的電子郵件會傳回零結果。 這也適用于搜尋網站和連絡人屬性。
   
-| 屬性 | 屬性描述 | 範例 | 範例所傳回的搜尋結果 |
+| 屬性	 | 屬性描述 | 範例 | 範例所傳回的搜尋結果 |
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|附加至電子郵件的檔案名稱。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |具有名為 annualreport.ppt 的附加檔案的郵件。 在第二個範例中，使用萬用字元會傳回附件的檔案名中包含 "年曆" 一詞的郵件。 第三個範例會傳回所有包含 .pptx 副檔名的附件。|
+|AttachmentNames|附加至電子郵件的檔案名稱。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |具有名為 annualreport.ppt 的附加檔案的郵件。 在第二個範例中，使用萬用字元 ( * ) 會傳回附件的檔案名中包含 "年曆" 一詞的郵件。 第三個範例會傳回所有包含 .pptx 副檔名的附件。|
 |密件副本|電子郵件訊息的 [密件副本] 欄位。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有範例都傳回具有 Pilar Pinilla 的郵件，包含在 [密件副本] 欄位中。|
 |類別| 要搜尋的類別。 使用者可以使用 (網頁上的 Outlook 或 Outlook （以前稱為 Outlook Web App) ）來定義類別。 可能的值為：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙  <br/>  紫色  <br/>  紅  <br/>  黃色|`category:"Red Category"`|來源信箱中已指派紅色類別的郵件。|
 |副本|電子郵件訊息的 [副本] 欄位。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在這兩個範例中，在 [副本] 欄位中指定 Pilar Pinilla 的郵件。|
@@ -69,7 +69,7 @@ ms.locfileid: "52326591"
 |Importance|電子郵件訊息的重要性，寄件者可在傳送郵件時指定。 根據預設，郵件會以一般重要性傳送，除非寄件者將重要性設定為 **高** 或 **低**。|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|標示為高重要性、中度重要性或低重要性的郵件。|
 |IsRead|會指出是否已讀取郵件。 使用值 **true** 或 **false**。|`isread:true`  <br/> `isread:false`|第一個範例會傳回 IsRead 屬性設定為 **True** 的郵件。 第二個範例會傳回 IsRead 屬性設定為 **False** 的郵件。|
 |ItemClass|使用此屬性可搜尋您的組織匯入 Office 365 的特定協力廠商資料類型。 請對此屬性使用下列語法：  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|第一個範例會傳回 Facebook 專案，包含在 Subject 屬性中包含 "contoso" 一詞。 第二個範例會傳回由王小姐 Beebe （包含關鍵字片語 "Northwind 商貿"）所張貼的 Twitter 專案。  <br/> 如需使用 ItemClass 屬性之協力廠商資料類型的完整值清單，請參閱[使用內容搜尋來搜尋匯入至 Office 365 的協力廠商資料](use-content-search-to-search-third-party-data-that-was-imported.md)。|
-|類型| 要搜尋的電子郵件類型。 可能的值：  <br/>  接觸  <br/>  文檔  <br/>  電子郵件  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams (傳回 Microsoft Teams 中的交談、會議及通話的專案)   <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一個範例會傳回符合搜尋準則的電子郵件訊息。 第二個範例會傳回電子郵件、立即訊息交談 (包含 Microsoft Teams) 中商務用 Skype 交談和聊天，以及符合搜尋準則的語音訊息。 第三個範例會傳回從協力廠商資料來源（如 Twitter、Facebook 及 Cisco jabber) ）匯入至 Microsoft 365 信箱的專案，以符合搜尋準則。 如需詳細資訊，請參閱在 [Office 365 中封存協力廠商資料](https://www.microsoft.com/?ref=go)。|
+|類型| 要搜尋的電子郵件類型。 可能的值：  <br/>  接觸  <br/>  文檔  <br/>  電子郵件  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams (傳回 Microsoft Teams 中的交談、會議及通話的專案)   <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一個範例會傳回符合搜尋準則的電子郵件訊息。 第二個範例會傳回電子郵件、立即訊息交談 (包含 Microsoft Teams) 中商務用 Skype 交談和聊天，以及符合搜尋準則的語音訊息。 第三個範例會傳回從協力廠商資料來源（如 Twitter、Facebook 及 Cisco jabber) ）匯入至 Microsoft 365 信箱的專案，以符合搜尋準則。 如需詳細資訊，請參閱[在 Office 365 中封存協力廠商資料](https://www.microsoft.com/?ref=go)。|
 |參與者|電子郵件訊息中的所有 [人員] 欄位。 這些欄位是寄件者、To、Cc 和 Bcc。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|傳送或傳送至 garthf@contoso.com 的郵件。 第二個範例會傳回 contoso.com 網域中的使用者所傳送或傳送的所有郵件。|
 |Received|收件者接收到電子郵件的日期。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016年4月15日收到的郵件。 第二個範例會傳回所有在2016年1月1日（2016年3月31日）收到的郵件。|
 |收件者|電子郵件訊息中的所有收件者欄位。 這些欄位是 To、Cc 和 Bcc。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|傳送至 garthf@contoso.com 的郵件。 第二個範例會傳回傳送至 contoso.com 網域中的任何收件者的郵件。|
@@ -84,34 +84,34 @@ ms.locfileid: "52326591"
 
 ### <a name="recipient-expansion"></a>收件者擴充
 
-當搜尋任何收件者屬性 (From、To、Cc、Bcc、參與者和收件者) 時，Microsoft 365 會嘗試在 Azure Active Directory (Azure AD) 中查看每位使用者的身分識別。  如果使用者在 Azure AD 中找到，該查詢就會展開，以包含使用者的電子郵件地址 (或 UPN) 、別名、顯示名稱和 LegacyExchangeDN。 例如， `participants:ronnie@contoso.com` 展開 to 的查詢 `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` 。
+當您搜尋任何收件者屬性 (From、To、Cc、Bcc、參與者和收件者) 時，Microsoft 365 會嘗試在 Azure Active Directory (Azure AD) 中查看每位使用者的身分識別，以加以擴充。  如果使用者在 Azure AD 中找到，該查詢就會展開，以包含使用者的電子郵件地址 (或 UPN) 、別名、顯示名稱和 LegacyExchangeDN。 例如， `participants:ronnie@contoso.com` 展開 to 的查詢 `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` 。
 
 若要防止收件者展開，請將萬用字元 (星號) 新增至電子郵件地址的結尾，並使用減少的功能變數名稱;例如，請 `participants:"ronnie@contoso*"` 務必使用雙引號括住電子郵件地址。
 
-不過，請注意防止搜尋查詢中的收件者擴充，可能會導致搜尋結果中未傳回相關的專案。 Exchange 中的電子郵件可以以不同的文字格式儲存在收件者欄位中。 收件者擴充的目的在於傳回可能包含不同文字格式的郵件，以協助緩解此事實。 因此，防止收件者展開可能會導致搜尋查詢不會傳回所有與調查相關的專案。
+不過，請注意防止搜尋查詢中的收件者擴充，可能會導致搜尋結果中未傳回相關的專案。 在 [收件者] 欄位中，可以使用不同的文字格式儲存 Exchange 中的電子郵件。 收件者擴充的目的在於傳回可能包含不同文字格式的郵件，以協助緩解此事實。 因此，防止收件者展開可能會導致搜尋查詢不會傳回所有與調查相關的專案。
 
 > [!NOTE]
-> 如果您需要查看或減少因收件者擴充的搜尋查詢所傳回的專案，請考慮使用高級 eDiscovery。 您可以搜尋郵件 (利用收件者擴充) 、將它們新增至審閱集，然後使用「複查集合」查詢或篩選，以複查或縮小結果。 如需詳細資訊，請參閱 [收集案例的資料](collecting-data-for-ediscovery.md) 和 [查詢審閱集中的資料](review-set-search.md)。
+> 如果您需要複查或減少因收件者擴充而由搜尋查詢所傳回的專案，請考慮使用 Advanced eDiscovery。 您可以搜尋郵件 (利用收件者擴充) 、將它們新增至審閱集，然後使用「複查集合」查詢或篩選，以複查或縮小結果。 如需詳細資訊，請參閱 [收集案例的資料](collecting-data-for-ediscovery.md) 和 [查詢審閱集中的資料](review-set-search.md)。
 
 ## <a name="searchable-site-properties"></a>可搜尋的網站屬性
 
-下表列出商務內容的一些 SharePoint 和 OneDrive，可在 Microsoft 365 規範中心使用 eDiscovery 搜尋工具進行搜尋，或是使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** 指令程式進行搜尋。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 
+下表列出一些 SharePoint 和商務用 OneDrive 屬性，可透過 Microsoft 365 規範中心的 eDiscovery 搜尋工具進行搜尋，或是使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** Cmdlet 進行搜尋。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 
   
-如需可搜尋的 SharePoint 屬性完整清單，請參閱 [SharePoint 中的編目和 managed 屬性的概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 您可以在可 **查詢** 的資料行中，以 [**是]** 標示的屬性進行搜尋。
+如需可搜尋的 SharePoint 屬性完整清單，請參閱[SharePoint 中的編目和 managed 屬性的概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 您可以在可 **查詢** 的資料行中，以 [**是]** 標示的屬性進行搜尋。
   
-| 屬性 | 屬性描述 | 範例 | 範例所傳回的搜尋結果 |
+| 屬性	 | 屬性描述 | 範例 | 範例所傳回的搜尋結果 |
 |:-----|:-----|:-----|:-----|
-|作者|Office 檔中的 author 欄位，該欄位會在複製檔時保留。 例如，如果使用者建立檔，並將它的電子郵件給其他人，然後再將其上傳至 SharePoint，該檔仍會保留原來的作者。 請務必使用此屬性的使用者顯示名稱。|`author:"Garth Fort"`|所有由 Garth Fort 撰寫的檔。|
+|作者|Office 檔中的 author 欄位，會在檔案複製時保留。 例如，如果使用者建立檔，並將它的電子郵件給其他人，然後再將其上傳至 SharePoint，該檔仍會保留原來的作者。 請務必使用此屬性的使用者顯示名稱。|`author:"Garth Fort"`|所有由 Garth Fort 撰寫的檔。|
 |ContentType|專案的 SharePoint 內容類型，例如專案、檔或影片。|`contenttype:document`|會傳回所有檔。|
 |建立時間|建立專案的日期。|`created>=06/01/2016`|在2016年6月1日或之後建立的所有專案。|
 |CreatedBy|建立或上傳專案的人員。 請務必使用此屬性的使用者顯示名稱。|`createdby:"Garth Fort"`|由 Garth Fort 建立或上傳的所有專案。|
 |DetectedLanguage|專案的語言。|`detectedlanguage:english`|以英文顯示所有專案。|
-|DocumentLink|SharePoint 上的特定資料夾或商務網站 OneDrive 的 (URL) 路徑。 如果您使用此屬性，請務必搜尋指定資料夾所在的網站。  <br/> 若要傳回位於為 documentlink 屬性指定之資料夾的子資料夾中的專案，您必須新增/ \* 至指定資料夾的 URL，例如，  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>如需搜尋 documentlink 屬性和使用腳本來取得特定網站上資料夾的 documentlink URLs 的詳細資訊，請參閱 [使用內容搜尋來搜尋目標集合](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一個範例會傳回 Business folder 的指定 OneDrive 中的所有專案。 第二個範例會在指定的網站資料夾中傳回檔， (和所有子資料夾) 檔案名中包含 "機密" 一詞。|
-|FileExtension|檔的副檔名;例如，.docx、one、.pptx 或 .xlsx。|`fileextension:xlsx`|Excel 2007 和更新版本 (所有 Excel 檔案) |
+|DocumentLink|SharePoint 或商務用 OneDrive 網站上特定資料夾的路徑 (URL) 。 如果您使用此屬性，請務必搜尋指定資料夾所在的網站。  <br/> 若要傳回位於為 documentlink 屬性指定之資料夾的子資料夾中的專案，您必須新增/ \* 至指定資料夾的 URL，例如，  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>如需搜尋 documentlink 屬性和使用腳本來取得特定網站上資料夾的 documentlink URLs 的詳細資訊，請參閱 [使用內容搜尋來搜尋目標集合](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一個範例會傳回指定的商務用 OneDrive 資料夾中的所有專案。 第二個範例會在指定的網站資料夾中傳回檔， (和所有子資料夾) 檔案名中包含 "機密" 一詞。|
+|FileExtension|檔的副檔名;例如，.docx、one、.pptx 或 .xlsx。|`fileextension:xlsx`|所有 Excel 檔案 (Excel 2007 和更新版本) |
 |FileName|檔案的名稱。|`filename:"marketing plan"`  <br/> `filename:estimate`|第一個範例會傳回標題中具有精確片語 "行銷 plan" 的檔案。 第二個範例會傳回檔案名中包含 "預估" 一字的檔案。|
 |LastModifiedTime|上次變更專案的日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一個範例會傳回在2016年5月1日或之後變更的專案。 第二個範例會傳回在5月1日、2016和6月1日（2016）之間變更的專案。|
 |ModifiedBy|上次變更專案的人員。 請務必使用此屬性的使用者顯示名稱。|`modifiedby:"Garth Fort"`|由 Garth Fort 最後變更的所有專案。|
-|路徑|SharePoint 或 OneDrive for Business site 中特定網站的路徑 (URL) 。<br/><br/>若要只從指定的網站傳回專案，您必須將尾部新增 `/` 至 URL; 的結尾（例如， `path: "https://contoso.sharepoint.com/sites/international/"` <br/><br/> 若要傳回位於路徑屬性指定之網站的資料夾中的專案，您必須新增 `/*` 至 URL; 的結尾（例如，  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/><br/> **附注：** 使用此  `Path` 屬性來搜尋 OneDrive 位置，不會在搜尋結果中傳回媒體檔案，例如 .png、tiff 或 .wav 檔案。 在搜尋查詢中使用不同的 site 屬性可搜尋 OneDrive 資料夾中的媒體檔案。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一個範例會傳回指定商務用 OneDrive 網站中的所有專案。 第二個範例會傳回指定網站中的檔 (和包含在檔案名中包含 "保密" 字樣的網站) 中的資料夾。|
+|路徑|SharePoint 或商務用 OneDrive 網站中特定網站的路徑 (URL) 。<br/><br/>若要只從指定的網站傳回專案，您必須將尾部新增 `/` 至 URL; 的結尾（例如， `path: "https://contoso.sharepoint.com/sites/international/"` <br/><br/> 若要傳回位於路徑屬性指定之網站的資料夾中的專案，您必須新增 `/*` 至 URL; 的結尾（例如，  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/><br/> **附注：** 使用此 `Path` 屬性來搜尋 OneDrive 位置，不會在搜尋結果中傳回媒體檔案，例如 .png、tiff 或 .wav 檔案。 在搜尋查詢中使用不同的 site 屬性可搜尋 OneDrive 資料夾中的媒體檔案。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一個範例會傳回指定商務用 OneDrive 網站中的所有專案。 第二個範例會傳回指定網站中的檔 (和包含在檔案名中包含 "保密" 字樣的網站) 中的資料夾。|
 |SharedWithUsersOWSUser|在使用者的商務用 OneDrive 網站中，已與指定的使用者共用並顯示在使用者的 [**與我共用**] 頁面上的檔。 這些是組織中其他人員與指定的使用者明確共用的檔。 當您匯出符合使用 SharedWithUsersOWSUser 屬性之搜尋查詢的檔時，檔會從與指定使用者共用檔之人員的原始內容位置匯出。 如需詳細資訊，請參閱 [搜尋組織內共用的網站內容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|這兩個範例都會傳回所有與 Garth Fort 明確共用的內部檔，並顯示在 Garth Fort 的商務用 OneDrive 帳戶中的 [**與我共用**] 頁面上。|
 |網站|組織中的網站或網站群組的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一個範例會傳回組織中所有使用者的商務用 OneDrive 網站中的專案。 第二個範例會傳回所有小組網站中的專案。|
 |Size|專案的大小（以位元組為單位）。|`size>=1`  <br/> `size:1..10000`|第一個範例會傳回大於1個位元組的專案。 第二個範例會傳回大小介於1到10000位元組的專案。|
@@ -125,7 +125,7 @@ ms.locfileid: "52326591"
 > [!TIP]
 > 若要搜尋包含空格或特殊字元的值，請使用雙引號 ( "" ) 以包含片語; 否則請使用雙引號。例如， `businessaddress:"123 Main Street"` 。
   
-|屬性 |屬性描述 |
+|屬性	 |屬性描述 |
 |:-----|:-----|
 |BusinessAddress|[ **商務位址** ] 屬性中的位址。 在連絡人的 [內容] 頁面上，此屬性也稱為「 **工作** 位址」。|
 |BusinessPhone|任何 **Business 電話** 號碼內容中的電話號碼。|
@@ -173,7 +173,7 @@ ms.locfileid: "52326591"
 
 布林值搜尋運算子（例如 **AND**、 **OR**、 **NOT**）可協助您在搜尋查詢中包含或排除特定的字詞，以定義更為精確的搜尋。 其他技術（如使用屬性運算子 (例如 `>=` or `..`) 、引號、括弧及萬用字元）可協助您精煉搜尋查詢。 下表列出您可以用來縮小或拓寬搜尋結果的運算子。 
   
-|運算子 |使用 |描述 |
+|運算子 |Usage |描述 |
 |:-----|:-----|:-----|
 |AND|keyword1 與 keyword2|會傳回包含所有指定關鍵字或運算式的專案  `property:value` 。 例如，  `from:"Ann Beebe" AND subject:northwind` 會傳回 Beebe 中，包含主旨行中的「northwind」一詞的所有郵件。 <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|會 *傳回包含* `keyword2` 或 `keyword3` 同時包含的專案 `keyword1` 。   因此，此範例相當於查詢  `(keyword2 OR keyword3) AND keyword1` 。  <br/> 在  `keyword1 + keyword2` 符號) 之後的查詢 (與 **+** 使用 **AND** 運算子不同。 此查詢相當於並傳回  `"keyword1 + keyword2"` 精確階段的專案  `"keyword1 + keyword2"` 。|
@@ -189,7 +189,7 @@ ms.locfileid: "52326591"
 |\>=|property \> = 值|表示所搜尋的屬性大於或等於特定值。<sup>1</sup>|
 |..|屬性： value1。value2|表示所搜尋的屬性大於或等於 value1 且小於或等於 value2。<sup>1</sup>|
 |"  "|"公平值"  <br/> subject:"Quarterly Financials"|使用雙引號 ( "" ) 來搜尋關鍵字和搜尋查詢中的確切片語或字詞  `property:value` 。|
-|\*|貓\*  <br/> subject： set\*|首碼萬用字元搜尋 (，星號會放在字結尾的字) 比對關鍵字或查詢中零個或多個字元的相符  `property:value` 。 例如，  `title:set*` 會傳回檔，其中包含 word set、setup 及 set (及其他以「設定」 ) 在檔標題中的文字。  <br/><br/> **附注：** 您只能使用首碼萬用字元搜尋;例如， **cat \* *_ 或 _* 集 \* *_。尾碼搜尋 (_* \* cat** ) 、中綴搜尋 (**c \* t**) 及子字串搜尋 (不支援 **\* cat \***) 。<br/><br/>此外，新增句點 ( \。 ) 至前置詞的萬用字元搜尋會變更傳回的結果。 這是因為句點會被視為停用字詞。 例如，搜尋 **cat \* *_ 和搜尋 _* cat。 \*** 會傳回不同的結果。 建議您不要在前置詞萬用字元搜尋中使用句點。 |
+|\*|貓\*  <br/> subject： set\*|首碼搜尋 (也稱為 *前置* 詞比對) ，而萬用字元 ( * ) 置於關鍵字的關鍵字或查詢中的結尾 `property:value` 。 在 [首碼搜尋] 中，搜尋會傳回包含字詞後接零個或多個字元的字詞結果。 例如， `title:set*` 會傳回檔，其中包含 "set"、"setup" 及 "設定" (，以及以 "set" 開頭 ) 檔標題中的其他文字。  <br/><br/> **附注：** 您只能使用首碼搜尋;例如， **cat \* *_ 或 _* 集 \* *_。尾碼搜尋 (_* \* cat** ) 、中綴搜尋 (**c \* t**) 及子字串搜尋 (不支援 **\* cat \***) 。<br/><br/>此外，新增句點 ( \。 ) 首碼搜尋會變更傳回的結果。 這是因為句點會被視為停用字詞。 例如，搜尋 **cat \* *_ 和搜尋 _* cat。 \*** 會傳回不同的結果。 建議您不要在首碼搜尋中使用句點。 |
 |(  )|從:contoso)  (公平或自由) 及 (  <br/>  (IPO 或初始) 及 (股票或共用)   <br/>  (季度財務) |括弧群組組成 Boolean 片語、  `property:value` items 和關鍵字。 例如，傳回  `(quarterly financials)` 包含文字季度和財務的專案。|
 |||||
    
@@ -419,15 +419,15 @@ ms.locfileid: "52326591"
 kind:im
 ```
 
-先前的搜尋查詢也會從 Microsoft 小組傳回聊天。 若要避免這種情況，您可以縮小搜尋結果，以包含使用下列關鍵字查詢的商務用 Skype 交談：
+先前的搜尋查詢也會從 Microsoft Teams 傳回聊天。 若要避免這種情況，您可以使用下列關鍵字查詢縮小搜尋結果，使其僅包含商務用 Skype 交談：
 
 ```powershell
 kind:im AND subject:conversation
 ```
 
-上一個關鍵字查詢不包括 Microsoft 團隊中的研討，因為商務用 Skype 交談是以電子郵件形式儲存，而主題行會以「交談」一詞開頭。
+上一個關鍵字查詢不包括 Microsoft Teams 中的研討，因為商務用 Skype 交談是以電子郵件形式儲存，而主題行是以「交談」文字開頭。
 
-若要搜尋在特定日期範圍內發生的商務用 Skype 交談，請使用下列關鍵字查詢：
+若要搜尋在特定日期範圍內發生的商務用 Skype 對話，請使用下列關鍵字查詢：
 
 ```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
@@ -447,7 +447,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 如需字元限制的詳細資訊，請參閱 [eDiscovery 搜尋限制](limits-for-content-search.md#search-limits)。
 
 > [!NOTE]
-> 4000字元限制適用于內容搜尋、核心 eDiscovery 和高級 eDiscovery。
+> 4000字元限制適用于內容搜尋、核心 eDiscovery 和 Advanced eDiscovery。
 
 ## <a name="search-tips-and-tricks"></a>搜尋秘訣與技巧
 
@@ -461,12 +461,12 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 - 搜尋收件者屬性（例如 To、From、Cc 或收件者）時，您可以使用 SMTP 位址、別名或顯示名稱來表示收件者。 例如，您可以使用 pilarp@contoso.com、pilarp 或 "Pilar Pinilla"。
 
-- 您只能使用首碼萬用字元搜尋;例如， **cat \* *_ 或 _* 集 \* *_。尾碼搜尋 (_* \* cat**) 、中綴搜尋 (**c \* t**) 及子字串搜尋 (不支援 **\* cat \***) 。
+- 您只能使用首碼搜尋;例如， **cat \* *_ 或 _* 集 \* *_。尾碼搜尋 (_* \* cat**) 、中綴搜尋 (**c \* t**) 及子字串搜尋 (不支援 **\* cat \***) 。
 
 - 搜尋屬性時，如果搜尋值是由多個字組成，請使用雙引號 ( "" ) 。 例如，傳回在主旨 `subject:budget Q1` 行中包含 **預算** 的郵件，或在郵件中或任何郵件內容中包含 **Q1** 的郵件。 使用 `subject:"budget Q1"` 會傳回所有包含「 **預算 Q1** 」主題行中的郵件。
 
 - 若要從搜尋結果中排除以特定屬性值標示的內容，請在屬性名稱前面加上減號 ( ) 。 例如， `-from:"Sara Davis"` 排除在 Sara Davis 所傳送的任何郵件。
 
-- 您可以根據郵件類型匯出專案。 例如，若要在 Microsoft 小組中匯出 Skype 交談和聊天，請使用語法 `kind:im` 。 若只要傳回電子郵件訊息，您會使用 `kind:email` 。 若要傳回 Microsoft 小組中的研討、會議及通話，請使用 `kind:microsoftteams` 。
+- 您可以根據郵件類型匯出專案。 例如，若要在 Microsoft Teams 中匯出 Skype 交談和聊天，請使用語法 `kind:im` 。 若只要傳回電子郵件訊息，您會使用 `kind:email` 。 若要在 Microsoft Teams 中回復交談、會議和通話，請使用 `kind:microsoftteams` 。
 
 - 如先前所述，當搜尋網站時， `/` 當使用此 `path` 屬性只傳回指定的網站中的專案時，您必須將尾部新增至 URL 的結尾。 如果您未包含尾部 `/` ，也會傳回具有類似路徑名稱之網站的專案。 例如，如果您使用的是， `path:sites/HelloWorld` 來自名為或的網站的專案 `sites/HelloWorld_East` 也會 `sites/HelloWorld_West` 傳回。 若要只從 HelloWorld 網站傳回專案，您必須使用 `path:sites/HelloWorld/` 。

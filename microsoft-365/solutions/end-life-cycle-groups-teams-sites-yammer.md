@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: 群組、小組和 Yammer 的生命週期選項結束。
-ms.openlocfilehash: 468f41df747b6cf12d3f6619d79cb97248eba1d1
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346423"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538828"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>群組、小組和 Yammer 的生命週期選項結束
 
@@ -37,7 +38,7 @@ Microsoft 365群組和 Microsoft Teams 會使用多個連線的服務。 刪除�
 |OneNote|筆記本|
 |Outlook|郵件和行事曆|
 |Planner|Project 狀態與任務資訊|
-|電源自動化|工作流程|
+|Power Automate|工作流程|
 |Power BI|資料、報表及儀表板|
 |網頁上的 Project|Project 方案|
 |藍圖|藍圖|
@@ -173,7 +174,7 @@ Teams 特有的內容主要是以交談的形式。
 
 您也可以 [複製整個計畫](https://support.microsoft.com/office/50401e13-a25f-40df-93c6-b608cc28c3d4)。 無法對現有的群組進行複製。 複製計畫將會建立新的群組。 此外，複製整個方案時，不會包含批註、工作分派、連結、附件或日期。
 
-## <a name="power-automate"></a>電源自動化
+## <a name="power-automate"></a>Power Automate
 
 在 Power Automate 中建立並與群組或小組相關聯的資料流程不屬於群組。 它們是由建立者所擁有，只與其他使用者和群組共用。 當群組或小組遭到刪除時，不會受到影響。
 
@@ -197,7 +198,7 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，類似于其�
 
 相反地，如果報表不再需要使用中，但資料必須保留，則可以將資料[匯出至 Excel](/power-bi/visuals/power-bi-visualization-export-data)。
 
-## <a name="project"></a>Project
+## <a name="project"></a>專案
 
 在 web Project 中建立的專案和路線圖會與 Microsoft 365 群組產生關聯，並具有離群的方式，類似于 Power BI。
 
@@ -265,3 +266,7 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，類似于其�
 **匯出網路資料**
 
 Yammer 網路系統管理員[匯出網路資料](/yammer/manage-security-and-compliance/export-yammer-enterprise-data)。 不過，這樣做會匯出整個網路的所有交談。 所產生的匯出會列出群組識別碼。 您可以根據此識別碼來篩選交談。
+
+## <a name="related-topics"></a>相關主題
+
+[移除離職員工和安全資料](/microsoft-365/admin/add-users/remove-former-employee)

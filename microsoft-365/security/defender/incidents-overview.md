@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: cc2fcd7410c2f3122fb3ce49a40e93bfa0767331
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300010"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539020"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件
 
@@ -135,7 +135,7 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
 3. 盡可能將租使用者資源還原為事件之前所用的狀態，從攻擊復原。
 
-4. [解決](manage-incidents.md#resolve-incident) 事件，並在進行事件後學習需要一些時間，以進行下列作業：
+4. [解決](manage-incidents.md#resolve-an-incident) 事件，並在進行事件後學習需要一些時間，以進行下列作業：
 
    - 瞭解攻擊的類型及其影響。
    - 調查 [威脅分析](threat-analytics.md) 中的攻擊，以及安全性攻擊趨勢的安全性社區。
@@ -148,7 +148,7 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
 以下是 Microsoft 365 Defender 的安全性運作範例。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Micosoft 365 Defender 的安全性操作範例":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Microsoft 365 Defender 的安全性運作範例":::
 
 每個任務可以包含：
 
@@ -177,7 +177,7 @@ Microsoft 365 服務和應用程式會在偵測到可疑或惡意事件或活動
 
 **如果您已體驗** 安全性分析和事件回應：
 
-- 從 Microsoft 365 security center 的 [**事件**] 頁面開始使用事件佇列。 在這裡，您可以：
+- 從 Microsoft 365 security center 的 [**事件**] 頁面開始使用事件佇列。 您可以在這裡執行下列動作：
 
   - 根據嚴重性及其他因素，查看應 [優先](incident-queue.md) 考慮哪些事件。 
 

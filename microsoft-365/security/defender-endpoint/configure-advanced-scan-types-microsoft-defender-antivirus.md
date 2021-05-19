@@ -14,13 +14,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1efa72d5b8d204b6aec1cef05fe3c8afe1ca82f7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/06/2021
+ms.topic: how-to
+ms.openlocfilehash: 1942531b77df1c2bd9408815d3ad54b4b7211e8b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275298"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538396"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>設定 Microsoft Defender 防毒軟體掃描選項
 
@@ -33,7 +34,7 @@ ms.locfileid: "52275298"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>使用 Microsoft Intune 設定掃描選項
 
-如需詳細資訊，請參閱[設定 Microsoft Intune 中的裝置限制設定](/intune/device-restrictions-configure)及[Microsoft Defender 防毒軟體裝置限制設定 Windows 10 在 Intune 中](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)。
+請參閱 [《在 Microsoft Intune 中設定裝置限制設定》](/intune/device-restrictions-configure) 及 [《Windows 10 中 Intune 的 Microsoft Defender 防毒軟體裝置限制設定》](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) 了解詳情。
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>使用 Microsoft 端點管理員設定掃描選項
 
@@ -51,19 +52,19 @@ ms.locfileid: "52275298"
 
 4. 按兩下下表中所指定的原則 **設定** ，並將選項設定為您想要的設定。 按一下 **[確定]**，然後對任何其他設定重複此步驟。
 
-描述 | 位置和設定 | 預設設定 (（如果未設定）)  | `Set-MpPreference`Class 的 PowerShell 參數或 WMI 屬性 `MSFT_MpPreference`
----|---|---|---
-電子郵件掃描請參閱 [電子郵件掃描限制](#ref1)| 掃描 > 開啟電子郵件掃描 | 已停用 | `-DisableEmailScanning`
-掃描重新 [分析點](/windows/win32/fileio/reparse-points) | 掃描 > 開啟重新分析點掃描 | 已停用 | 無
-掃描對應的網路磁碟機 | 掃描 > 在對應的網路磁碟機上執行完整掃描 | 已停用 | `-DisableScanningMappedNetworkDrivesForFullScan`
- 掃描封存檔案 (例如 .zip 或 .rar 檔) 。 [副檔名排除清單](configure-extension-file-exclusions-microsoft-defender-antivirus.md)會優先于此設定。 | 掃描 > 掃描封存檔案 | Enabled | `-DisableArchiveScanning`
-掃描網路上的檔案 | 掃描 > 掃描網路檔 | 已停用 | `-DisableScanningNetworkFiles`
-掃描打包的可執行檔 | 掃描 > 掃描打包的可執行檔 | Enabled | 無
-僅在完整掃描期間掃描抽取式磁碟磁碟機 | 掃描 > 掃描可移除磁片磁碟機 | 已停用 | `-DisableRemovableDriveScanning`
-指定要掃描之封存資料夾內的子資料夾層級 | 掃描 > 指定掃描封存檔案的最大深度 | 0 | 無法使用
- 在掃描期間，指定 CPU 負載 (為百分比) 。 注意：這不是硬性限制，但掃描引擎的指導方針不會超過平均這一上限。 | 掃描 > 指定掃描期間 CPU 使用率的最大百分比 | 50 |  `-ScanAvgCPULoadFactor`
- 指定應掃描之封存檔的大小上限 (以 kb 為單位）) 。 預設值為 **0**，套用無限制 | 掃描 > 指定要掃描的封存檔案大小上限 | 無限制 | 無
- 設定排程掃描的低 CPU 優先順序 | 掃描 > 設定排程掃描的低 CPU 優先順序 | 已停用 | 無
+| 描述 | 位置和設定 | 預設設定 (（如果未設定）)  | `Set-MpPreference`Class 的 PowerShell 參數或 WMI 屬性 `MSFT_MpPreference` |
+|---|---|---|---|
+| 電子郵件掃描請參閱 [電子郵件掃描限制](#ref1)| 掃描 > 開啟電子郵件掃描 | 已停用 | `-DisableEmailScanning` |
+|掃描重新 [分析點](/windows/win32/fileio/reparse-points) | 掃描 > 開啟重新分析點掃描 | 已停用 | 無 |
+| 掃描對應的網路磁碟機 | 掃描 > 在對應的網路磁碟機上執行完整掃描 | 已停用 | `-DisableScanningMappedNetworkDrivesForFullScan`|
+ 掃描封存檔案 (例如 .zip 或 .rar 檔) 。 [副檔名排除清單](configure-extension-file-exclusions-microsoft-defender-antivirus.md)會優先于此設定。 | 掃描 > 掃描封存檔案 | 已啟用 | `-DisableArchiveScanning` |
+| 掃描網路上的檔案 | 掃描 > 掃描網路檔 | 已停用 | `-DisableScanningNetworkFiles` |
+| 掃描打包的可執行檔 | 掃描 > 掃描打包的可執行檔 | 已啟用 | 無 |
+| 僅在完整掃描期間掃描抽取式磁碟磁碟機 | 掃描 > 掃描可移除磁片磁碟機 | 已停用 | `-DisableRemovableDriveScanning` |
+| 指定要掃描之封存資料夾內的子資料夾層級 | 掃描 > 指定掃描封存檔案的最大深度 | 0 | 無法使用 |
+| 在掃描期間，指定 CPU 負載 (為百分比) 。 注意：這不是硬性限制，但掃描引擎的指導方針不會超過平均這一上限。 手動執行掃描將會略過此設定，而不需要任何 CPU 限制即可執行。 | 掃描 > 指定掃描期間 CPU 使用率的最大百分比 | 50 |  `-ScanAvgCPULoadFactor` |
+| 指定應掃描之封存檔的大小上限 (以 kb 為單位）) 。 預設值為 **0**，套用無限制 | 掃描 > 指定要掃描的封存檔案大小上限 | 無限制 | 無 |
+| 設定排程掃描的低 CPU 優先順序 | 掃描 > 設定排程掃描的低 CPU 優先順序 | 已停用 | 無 |
  
 > [!NOTE]
 > 如果即時保護已開啟，則會先掃描檔案，再加以存取和執行。 掃描範圍包括所有檔案，包括裝入的卸除式媒體（例如 USB 磁片磁碟機）上的檔案。 如果執行掃描的裝置已開啟即時保護或開啟時保護，則掃描也會包含網路共用。

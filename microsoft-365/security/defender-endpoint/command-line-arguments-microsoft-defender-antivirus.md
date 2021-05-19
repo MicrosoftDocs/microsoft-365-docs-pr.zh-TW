@@ -12,20 +12,17 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
-ms.date: 03/19/2021
+ms.date: 05/17/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 85fb60d8d4504ba3a4aa8744c1183d094da01a9b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: eb7fa7fdf5b88bd9361176003817116bcbb1a087
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274745"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538900"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>使用 mpcmdrun.exe 命令列工具來設定及管理 Microsoft Defender 防毒軟體
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用於：**
 
@@ -35,14 +32,16 @@ ms.locfileid: "52274745"
 
 > [!NOTE]
 > 您可能需要開啟命令提示字元的系統管理員層級版本。 當您在 [開始] 功能表上搜尋 **命令提示** 字元時，選擇 [以 **系統管理員身分執行**]。
-> 如果您正在執行更新的 Microsoft Defender 平臺版本，請 `**MpCmdRun**` 從下列位置執行： `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` 。
+> 如果您正在執行更新的 Microsoft Defender 平臺版本，請 `**MpCmdRun**` 從下列位置執行： `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` 。
+> 如需有關反惡意程式碼平臺的詳細資訊，請參閱[Microsoft Defender 防毒軟體更新和基準](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
-公用程式包含下列命令：
+MpCmdRun 實用程式使用下列語法：
 
 ```console
 MpCmdRun.exe [command] [-options]
 ```
-以下為範例：
+
+以下為範例:
 
 ```console
 MpCmdRun.exe -Scan -ScanType 2
@@ -51,7 +50,7 @@ MpCmdRun.exe -Scan -ScanType 2
 | 命令  | 描述   |
 |:----|:----|
 | `-?`**或**`-h`   | 顯示此工具的所有可用選項 |
-| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | 掃描惡意軟體。 **ScanType** 的值為： **0** 預設值，取決於您的設定、 **-1 個** 快速掃描、 **-2** 個完整掃描、 **-3** 檔及目錄自訂掃描。  CpuThrottling 將會服從原則設定的 CPU 節流 |
+| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | 掃描惡意軟體。 **ScanType** 的值包括：<p>根據您的設定，預設為 **0**<p>**-1** 快速掃描<p>**-2** 完整掃描<p>**-3** 檔案與目錄自訂掃描。<p>CpuThrottling 將會服從原則設定的 CPU 節流 |
 | `-Trace [-Grouping #] [-Level #]` | 啟動診斷追蹤 |
 | `-GetFiles [-SupportLogLocation <path>]` | 收集支援資訊。 請參閱[收集診斷資料](collect-diagnostic-data.md)'  |
 | `-GetFilesDiagTrack`  | 等同于 `-GetFiles` ，但輸出到暫時 DiagTrack 資料夾 |
@@ -71,7 +70,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |錯誤訊息 | 可能的原因
 |:----|:----|
-| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | 已停用 Microsoft Defender 防毒軟體服務。 請啟用服務，然後再試一次。 <br>   **附注：** 在 Windows 10 1909 或更舊版本，以及 Windows Server 2019 或更舊版本中，服務是用來稱為「Windows Defender 防毒軟體」服務。|
+| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | 已停用 Microsoft Defender 防毒軟體服務。 請啟用服務，然後再試一次。 <br>   **附注：** 在 Windows 10 1909 或更舊版本，以及 Windows Server 2019 或更舊版本中，服務是用來呼叫 *Windows Defender 防毒軟體* 服務。|
 | `0x80070667` | 您正在 `-ValidateMapsConnection` 從 Windows 10 版本1607或更舊版本的電腦，或 Windows Server 2016 或更舊版本執行命令。 從 Windows 10 版本1703或更新版本的機器執行命令，或 Windows 伺服器2019或更新版本。|
 | `'MpCmdRun' is not recognized as an internal or external command, operable program or batch file.` | 工具需要執行的來源： `%ProgramFiles%\Windows Defender` 或 `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` (， `2012.4-0` 因為平臺更新是每月以外的，而不是三月份) |
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)` | 沒有足夠的許可權。 以系統管理員身分 (cmd.exe) 使用命令提示字元。|

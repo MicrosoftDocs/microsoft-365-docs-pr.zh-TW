@@ -14,25 +14,26 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: 瞭解如何防止來賓新增至特定群組
-ms.openlocfilehash: 572746a666586920ad85dafddbd78997940490d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1db2055f3e546c05905dbf4c854333387112f06e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907937"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538924"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>防止客人新增至特定的 Microsoft 365 群組或 Microsoft 團隊小組
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>防止來賓加入特定的 Microsoft 365 群組或 Microsoft Teams 小組
 
 如果您想要允許來賓存取大多數群組和小組，但要讓某些地方禁止來賓存取，您可以封鎖個別群組和小組的「來賓存取」。  (封鎖來賓存取權，可透過封鎖關聯群組的 guest 存取來完成。 ) 這會防止新增來賓，但不會移除群組或小組中已存在的客人。
 
-如果您在組織中使用敏感度標籤，我們建議您在每個群組的基礎上使用敏感度標籤來控制訪客存取。 如需如何執行此動作的詳細資訊，請 [使用敏感度標籤來保護 Microsoft 團隊、microsoft 365 群組和 SharePoint 網站中的內容](../compliance/sensitivity-labels-teams-groups-sites.md)。 這是建議方式。
+如果您在組織中使用敏感度標籤，我們建議您在每個群組的基礎上使用敏感度標籤來控制訪客存取。 如需如何執行此動作的詳細資訊，請[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](../compliance/sensitivity-labels-teams-groups-sites.md)。 這是建議方式。
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>使用 Microsoft PowerShell 變更群組設定
 
-您也可以使用 PowerShell，避免將新的客人加入個別群組。  (請記住，小組關聯的 SharePoint 網站有 [個別的來賓共用控制](/sharepoint/change-external-sharing-site)。 ) 
+您也可以使用 PowerShell，避免將新的客人加入個別群組。  (請記住，小組關聯的 SharePoint 網站有[個別的來賓共用控制](/sharepoint/change-external-sharing-site)。 ) 
 
-您必須使用預覽版本的 [Azure Active Directory PowerShell，以](/powershell/azure/active-directory/install-adv2) (模組名稱 **AzureADPreview**) 才能變更群組層級來賓存取設定：
+您必須使用 Azure Active Directory PowerShell 的預覽版本 [，Graph](/powershell/azure/active-directory/install-adv2) (模組名稱 **AzureADPreview**) 才能變更群組層級來賓存取設定：
 
 - 如果您之前尚未安裝任何版本的 Azure AD PowerShell 模組，請參閱[安裝 Azure AD 模組](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)，並遵循指示來安裝公開預覽版本。
 
@@ -75,7 +76,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 ## <a name="add-guests-to-the-global-address-list"></a>將客人新增至全域通訊清單
 
-根據預設，來賓在 Exchange 全域通訊清單中不會顯示。 使用下列步驟，讓來賓在全域通訊清單中可見。
+根據預設，來賓不會顯示在 Exchange 全域通訊清單中。 使用下列步驟，讓來賓在全域通訊清單中可見。
 
 執行下列動作，尋找訪客的 ObjectID：
 
@@ -95,7 +96,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [建立共同作業管理計畫](collaboration-governance-first.md)
 
-[管理 Microsoft 365 系統管理中心中的群組成員資格](../admin/create-groups/add-or-remove-members-from-groups.md)
+[管理 Microsoft 365 系統管理中心的群組成員資格](../admin/create-groups/add-or-remove-members-from-groups.md)
   
 [Azure Active Directory 存取評論](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 

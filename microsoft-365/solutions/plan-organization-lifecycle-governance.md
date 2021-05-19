@@ -1,5 +1,5 @@
 ---
-title: 針對 Microsoft 365 群組和 Microsoft 團隊規劃組織和生命週期管理
+title: 規劃 Microsoft 365 群組和 Microsoft Teams 的組織及生命週期管理
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,27 +14,28 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 有關 Microsoft 365 中的共同作業工具生命週期管理選項的精益
-ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: 精益 Microsoft 365 中的共同作業工具生命週期管理選項
+ms.openlocfilehash: 7d88618b75ef731bf38df029970efdc05f3eea5a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907925"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538816"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>針對 Microsoft 365 群組和 Microsoft 團隊規劃組織和生命週期管理
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>規劃 Microsoft 365 群組和 Microsoft Teams 的組織及生命週期管理
 
-Microsoft 365 群組具有一套豐富的工具，可實施組織所需的控管功能。 
+Microsoft 365 群組具有一套豐富的工具，可實施組織所需的管理功能。 
 
 下一節將說明功能、建議最佳作法，並提供指導方針，以判斷進行控管需求的適當問題，以及如何符合這些需求。
 
 ## <a name="control-who-can-create-microsoft-365-groups"></a>控制誰可以建立 Microsoft 365 群組
 
-使用者可以從多個端點（包括 Outlook、SharePoint、小組及其他環境）建立群組。
+使用者可以從多個端點（包括 Outlook、SharePoint、Teams 和其他環境）建立群組。
 
 ![影像 desc](../media/04.png)
 
-我們強烈建議使用自助功能群組擁有者，協助使用者更輕鬆地完成其工作。 限制群組和小組的建立會降低使用者的生產力，因為許多 Microsoft 365 服務都需要建立群組才能讓服務運作。
+我們強烈建議使用自助功能群組擁有者，協助使用者更輕鬆地完成其工作。 限制群組和小組的建立可能會降低使用者的生產力，因為許多 Microsoft 365 服務都需要建立群組才能讓服務運作。
 
 考慮建立群組的下列管理選項：
 
@@ -42,7 +43,7 @@ Microsoft 365 群組具有一套豐富的工具，可實施組織所需的控管
 - 將群組建立功能限制為 [具有動態成員資格的安全性群組](/azure/active-directory/users-groups-roles/groups-create-rule) 成員，例如，所有的全職員工。
 - 將群組建立限制在安全性群組中，並要求使用者在組織的群組使用原則中完成訓練，以便成為安全性群組的成員。
 
-如果您想要限制誰可以建立群組，請參閱 [管理誰可以建立 Microsoft 365 群組](manage-creation-of-groups.md) ，以取得如何設定此內容的資訊。
+如果您想要限制誰可以建立群組，請參閱[管理誰可以建立 Microsoft 365 群組](manage-creation-of-groups.md)，以取得如何設定此內容的資訊。
 
 ## <a name="group-delete-restore-and-archiving"></a>群組刪除、還原及封存
 
@@ -50,7 +51,7 @@ Microsoft 365 群組具有一套豐富的工具，可實施組織所需的控管
 
 如果您有保留原則可保留聊天、檔案或郵件，將會在刪除群組之後保留這些專案。 如需詳細資訊，請參閱 [瞭解保留原則](../compliance/retention.md) 。
 
-如果您想要刪除群組，但保留一或多個群組聯機服務的內容，請參閱封存 [群組、小組和 Yammer](end-life-cycle-groups-teams-sites-yammer.md) 中的資訊。
+如果您想要刪除群組，但保留一或多個群組聯機服務的內容，請參閱封存[群組、小組和 Yammer](end-life-cycle-groups-teams-sites-yammer.md)以取得詳細資訊。
 
 ## <a name="group-naming-policy"></a>群組命名原則
 
@@ -61,7 +62,7 @@ Microsoft 365 群組具有一套豐富的工具，可實施組織所需的控管
 
 當您從群組連線的任何服務建立群組時，會套用命名原則。
 
-如果您決定使用群組的命名原則，請參閱 [Microsoft 365 群組命名原則](groups-naming-policy.md)。
+若決定使用群組的命名原則，請參閱[Microsoft 365 群組命名原則](groups-naming-policy.md)。
 
 ## <a name="group-expiration-policy"></a>群組到期原則
 
@@ -73,10 +74,12 @@ Microsoft 365 群組具有一套豐富的工具，可實施組織所需的控管
 - 任何未更新的群組都會被刪除。
 - 任何刪除的群組可在30天內由群組擁有人或系統管理員復原。
 
-到期原則是一種很好的方法，可確保刪除不再使用的群組，以限制群組大量蔓延。 如果您想要建立群組到期原則，請參閱 [Microsoft 365 群組到期原則](microsoft-365-groups-expiration-policy.md)。
+到期原則是一種很好的方法，可確保刪除不再使用的群組，以限制群組大量蔓延。 如果您想要建立群組到期原則，請參閱[Microsoft 365 組到期原則](microsoft-365-groups-expiration-policy.md)。
 
 ## <a name="related-topics"></a>相關主題
 
 [共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [建立共同作業管理計畫](collaboration-governance-first.md)
+
+[移除離職員工和安全資料](/microsoft-365/admin/add-users/remove-former-employee)

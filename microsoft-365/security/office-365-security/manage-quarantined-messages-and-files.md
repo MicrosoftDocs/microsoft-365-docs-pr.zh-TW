@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以管理 SharePoint Online、商務 OneDrive 和 Microsoft 小組中的隔離檔案。
+description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以管理 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的隔離檔案。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 508866fd66e4cbd00f559446d4ce52a4be063c94
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272201"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539104"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -39,9 +39,9 @@ ms.locfileid: "52272201"
 
 系統管理員可以針對所有使用者，查看、發行和刪除所有類型的隔離郵件。 只有系統管理員可以管理被隔離為惡意程式碼、高可信度網路釣魚的郵件，或郵件流程規則的結果 (也稱為傳輸規則) 。 系統管理員也可以將誤報報告給 Microsoft。
 
-使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以在 SharePoint Online、商務 OneDrive 商務和 Microsoft 小組中，查看、下載和刪除隔離的檔案。
+使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以在 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中，查看、下載和刪除隔離的檔案。
 
-您可以使用 Exchange Online 中的信箱，在安全性 & 合規性中心或 PowerShell (Exchange Online 365 PowerShell 中查看及管理隔離的郵件;沒有 Exchange Online 信箱) 之組織的獨立 EOP PowerShell。
+您可以在 [安全性 & 合規性中心] 或 [PowerShell (Exchange Online PowerShell 中查看及管理已隔離的郵件，Microsoft 365 組織中 Exchange Online 的信箱;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -59,12 +59,12 @@ ms.locfileid: "52272201"
 
   - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
-  - <sup>\*</sup>**隔離系統管理員** 角色群組的成員也必須是 [exchange online](/Exchange/permissions-exo/permissions-exo#role-groups)中的「**衛生管理**」角色群組的成員，才能在 exchange online 中執行隔離程式 PowerShell。
+  - <sup>\*</sup>**隔離系統管理員** 角色群組的成員也必須是 [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的「**衛生」管理** 角色群組的成員，才能在 Exchange Online PowerShell 中執行隔離程式。
 
 - 隔離的郵件會在自動刪除之前保留在預設時間段內：
   - 30天的反垃圾郵件原則隔離的郵件 (垃圾郵件、網路釣魚和大量電子郵件) 。 這是預設值和最大值。 若要設定 (較低) 此值，請參閱 [設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
   - 包含惡意程式碼的郵件為15天。
-  - 以安全附件隔離的15天，以供 SharePoint、OneDrive 和 Microsoft 團隊使用的 Office 365。
+  - 針對 Office 365 的 SharePoint、OneDrive 及 Microsoft Teams 中的安全附件隔離的檔案的15天。
 
   當郵件從隔離區到期時，您無法復原。
 
@@ -72,7 +72,7 @@ ms.locfileid: "52272201"
 
 ### <a name="view-quarantined-email"></a>查看隔離的電子郵件
 
-1. 在「安全性與合規性中心」內，移至 [威脅管理] \> [檢閱] \> [隔離]。
+1. 在 [安全性 & 規範中心] 中，移至「 **威脅管理**」 \> **檢查** \> **隔離**。
 
 2. 驗證 **[檢視隔離的項目]** 設為 **[電子郵件]** 的預設值。
 
@@ -196,7 +196,7 @@ ms.locfileid: "52272201"
 
 - **下載郵件**：在出現的飛出窗格中，選取 [我了解下載此郵件的風險] 以使用 .eml 格式儲存郵件的本機複本。
 
-- **封鎖寄件者**：將寄件者新增至您信箱上的封鎖寄件者清單。 如需詳細資訊，請參閱 [封鎖郵件寄件者](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+- **封鎖寄件者**：將寄件者新增到您信箱上的封鎖寄件者清單。 如需詳細資訊，請參閱[封鎖郵件寄件者](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 - **Submit message**：在出現的飛入窗格中，選擇下列選項：
 
@@ -225,16 +225,16 @@ ms.locfileid: "52272201"
 
 完成時，請按一下 [關閉]。
 
-## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>僅限 Microsoft Defender for Office 365：使用安全性 & 合規性中心管理隔離的檔案
+## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>僅適用于 Office 365 的 Microsoft Defender：使用安全性 & 相容性中心管理隔離的檔案
 
 > [!NOTE]
-> 本節中隔離檔案的程式僅適用于 Office 365 方案1的 Microsoft Defender 和 Plan 2 訂閱者。
+> 本節中隔離檔的程式僅適用于 Office 365 方案1和計畫2訂閱者的 Microsoft Defender。
 
-在具有 Office 365 的 Defender 組織中，系統管理員可以在 SharePoint Online、商務 OneDrive 公司和 Microsoft 小組中管理隔離的檔案。 若要啟用這些檔案的保護，請參閱 [開啟安全附件的 SharePoint、OneDrive 和 Microsoft 團隊](turn-on-mdo-for-spo-odb-and-teams.md)。
+在具有 Office 365 的 Defender 的組織中，系統管理員可以管理 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的隔離檔案。 若要啟用這些檔案的保護，請參閱[開啟安全附件以取得 SharePoint、OneDrive 及 Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)。
 
 ### <a name="view-quarantined-files"></a>查看隔離的檔案
 
-1. 在「安全性與合規性中心」內，移至 [威脅管理] \> [檢閱] \> [隔離]。
+1. 在 [安全性 & 規範中心] 中，移至「 **威脅管理**」 \> **檢查** \> **隔離**。
 
 2. 變更 **隔離****至值檔的** 視圖。 您可以按一下可用的欄標題，依序排序欄位。
 
@@ -271,7 +271,7 @@ ms.locfileid: "52272201"
 - 檔案 **url**：定義檔案位置的 url (例如，在 SharePoint 線上) 中。
 - **在上偵測到惡意內容** 隔離檔的日期/時間。
 - **Expires**：將從隔離區中刪除檔案的日期。
-- 偵測： Office 365 或 Microsoft 的反 **惡意程式碼引擎的 Defender**。
+- 偵測： Office 365 或 Microsoft 的反惡意程式碼 **引擎的 Defender**。
 - **已釋出？**
 - **惡意軟體名稱**
 - **檔識別碼**：檔的唯一識別碼。
@@ -308,6 +308,6 @@ ms.locfileid: "52272201"
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [預覽-get-quarantinemessage](/powershell/module/exchange/preview-quarantinemessage)：請注意，此 Cmdlet 只適用于郵件，而不是從 SharePoint、OneDrive 和 Microsoft 小組的安全附件隔離檔案。
+- [預覽-get-quarantinemessage](/powershell/module/exchange/preview-quarantinemessage)：請注意，此 Cmdlet 只適用于郵件，而不是從 SharePoint、OneDrive 和 Microsoft Teams 的安全附件隔離檔案。
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

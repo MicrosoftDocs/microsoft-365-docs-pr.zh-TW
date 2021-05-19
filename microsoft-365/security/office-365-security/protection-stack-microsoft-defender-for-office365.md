@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 中的逐步威脅防護堆疊
+title: Microsoft Defender 的 Office 365 逐步威脅防護堆疊
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -10,22 +10,22 @@ ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
-description: 在 Microsoft Defender for Office 365 中的威脅篩選堆疊中，追蹤傳入郵件的路徑。
+description: 在 Microsoft Defender 的威脅篩選堆疊中，追蹤傳入郵件的路徑，以取得 Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0760bd7a67f175e4af114324ccc729355ad5f593
-ms.sourcegitcommit: 4e05f19c00e172b65f637f19ca461db5b21dff4e
+ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51601373"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538684"
 ---
-# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的逐步威脅防護
+# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender 中的逐步威脅防護
 
-Microsoft Defender for Office 365 保護或篩選堆疊可以分為四個階段，如本文所述。 一般說來，傳入郵件會在傳遞之前透過所有這些階段進行傳遞，但是實際的電子郵件是由組織的 Office 365 設定所制約。
+適用于 Office 365 保護或篩選堆疊的 Microsoft Defender 可分為四個階段，如本文所述。 一般說來，傳入郵件會在傳遞之前透過所有這些階段進行傳遞，但是實際的電子郵件會受到組織的 Office 365 設定的 Defender 的制約。
 
 > [!TIP]
-> 請密切關注本文的最後，以取得 Office 365 protection 的所有4個階段的 *整合* 圖形。
+> 請密切關注本文結尾的所有4個階段的 *整合* 圖形，以取得 Office 365 保護！
 
 ## <a name="phase-1---edge-protection"></a>階段 1-Edge Protection
 
@@ -33,9 +33,9 @@ Microsoft Defender for Office 365 保護或篩選堆疊可以分為四個階段�
 
 Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通知，並告知如何解決他們的問題。 來自具有有限信譽的信任合作夥伴的連接器，可確保在上架新端點時，deliverability 或暫時覆寫可就地保留。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Office 365 Defender 中篩選的階段1為 Edge Protection。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Office 365 的 Defender 中篩選的階段1為 Edge Protection。":::
 
-1. **網路節流** 可防止 Office 365 基礎結構和客戶 (DOS) 攻擊，方法是限制一組特定基礎結構所提交的郵件數目。
+1. **網路節流** 會限制一組特定基礎結構可提交的郵件數目，以保護 Office 365 基礎結構和客戶免受拒絕服務 (DOS) 攻擊。
 
 2. **IP 信譽及節流** 會封鎖從已知的錯誤連接 IP 位址傳送的郵件。 如果特定 IP 會在短時間內傳送許多郵件，將會受到限制。
 
@@ -45,7 +45,7 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 5. **退信攻擊偵測** 可防止 NDRs) 的無效未傳遞回報 (攻擊組織。
 
-6. **針對連接器的增強篩選功能** 會保留驗證資訊，即使流量透過另一個裝置進入 Office 365 也是一樣。 這可提升篩選堆疊的精確度，包括啟發式叢集、反欺騙和反網路釣魚機器教學模型，即使在複雜或混合式路由案例中也是一樣。
+6. **針對連接器的增強篩選功能** 會保留驗證資訊，即使流量透過另一個裝置進入 Office 365 為止也是一樣。 這可提升篩選堆疊的精確度，包括啟發式叢集、反欺騙和反網路釣魚機器教學模型，即使在複雜或混合式路由案例中也是一樣。
 
 ## <a name="phase-2---sender-intelligence"></a>階段 2-寄件者情報
 
@@ -61,7 +61,7 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
     - **DMARC** 可讓系統管理員在其網域中以必要的方式標示 SPF 和 DKIM，並強制執行這兩項技術的結果。
     - **弧線** 不是由客戶設定，但是會在 DMARC 上建立，以在記錄驗證鏈時，與郵寄清單中的轉寄一起使用。
 
-3. **欺騙性智慧** 可將允許其篩選為「欺騙」的 (，也就是代表另一個帳戶傳送郵件的郵件，或從惡意 spoofers imitating 的郵寄清單轉送) 組織中或已知的外部網域。 它會將合法的「代表」郵件和寄件者哄騙分開，以傳遞垃圾郵件和網路釣魚郵件。 
+3. **欺騙性智慧** 可將允許其篩選為「哄騙」的 (，也就是代表另一個帳戶傳送郵件，或從模仿組織或已知外部網域的惡意寄件者) 郵寄清單的轉送。 它會將合法的「代表」郵件分開，以欺騙傳送垃圾郵件和網路釣魚郵件的寄件者。
 
     組織內的 **欺騙智慧** 偵測並封鎖來自組織內網域的欺騙嘗試。
 
@@ -83,13 +83,13 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="MDO 中篩選的階段3是內容篩選。":::
 
-1. **傳輸規則** (也稱為郵件流程規則或 Exchange 傳輸) 規則，可讓系統管理員在郵件符合相同範圍的情況時採取大量的動作。 所有流經您組織的郵件都會針對已啟用的郵件流程規則/傳輸規則進行評估。
+1. **傳輸規則** (也稱為郵件流程規則或 Exchange 傳輸規則，) 可讓系統管理員在郵件符合相同範圍的情況時採取大量的動作。 所有流經您組織的郵件都會針對已啟用的郵件流程規則/傳輸規則進行評估。
 
-2. **Microsoft Defender 防病毒** 和兩個 *協力廠商防病毒引擎* 是用來偵測附件中的所有已知惡意程式碼。
+2. **Microsoft Defender 防毒軟體** 和兩個 *協力廠商防病毒引擎* 都是用來偵測附件中的所有已知惡意程式碼。
 
 3. 防病毒 (AV) 引擎也可用於 true 輸入所有附件，所以 **類型封鎖** 可以封鎖 admin 所指定類型的所有附件。
 
-4. 每當 Microsoft Defender for Office 365 偵測到惡意附件時，檔案的雜湊及其作用中內容的雜湊會新增至 Exchange Online Protection (EOP) 信譽。 **附件信譽封鎖** 會透過 MSAV 雲端通話，封鎖所有 Office 365 和端點上的檔案。
+4. 每當 Microsoft Defender Office 365 偵測到惡意附件時，檔案的雜湊及其作用中內容的雜湊會新增至 Exchange Online Protection (EOP) 信譽。 **附件信譽封鎖** 會透過 MSAV 雲端通話，封鎖所有 Office 365 和端點上的檔案。
 
 5. **啟發式** 叢集可根據傳遞試探法判斷檔案是否可疑。 當發現可疑附件時，整個活動會暫停，而且檔案會進行沙箱化。 若發現有惡意的檔案，則會封鎖整個活動。
 
@@ -99,7 +99,7 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 8. **內容試探法** 可使用機器學習模型，根據郵件本文內的結構和字頻率，偵測可疑的郵件。
 
-9. **安全附件** 會沙箱每個 Office 365 客戶的 Defender 附件，使用動態分析來偵測永不出現威脅。
+9. **安全附件** 會沙箱 Office 365 客戶的所有適用于 Defender 的附件，使用動態分析來偵測出永不出現威脅。
 
 10. **連結的內容引爆** 會將電子郵件中的每個 URL 連結到一個附件，並在傳遞時以非同步方式沙箱處理該檔案。
 
@@ -107,9 +107,9 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 ## <a name="phase-4---post-delivery-protection"></a>階段 4-投遞後保護
 
-最後一個階段是在郵件或檔傳遞時進行，其作用是位於各種信箱和檔案中的郵件，以及出現在用戶端（如 Microsoft 小組）中的連結。
+最後一個階段是在郵件或檔傳遞時，作用於位於各種信箱和檔案中的郵件，以及出現在用戶端（如 Microsoft Teams）中的連結。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="在 Office 365 的 Defender 中篩選的階段4是傳遞後保護。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Office 365 中，篩選的階段4是傳遞後的保護。":::
 
 1. **安全連結** 是 MDO 的按一下時防護。 每封郵件中的每個 URL 都會換行，指向 Microsoft 安全連結伺服器。 當按一下 URL 時，會將使用者重新導向至目標網站之前，檢查其最新的信譽。 URL 會以非同步方式沙箱化，以更新其信譽。
 
@@ -123,9 +123,9 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 6. **報告郵件增益集** 可讓使用者輕鬆報告誤報 (良好的電子郵件、誤標示為 *壞*) 或 false 不利 (錯誤電子郵件標示為 *良好* 的 Microsoft 進行進一步分析) 。
 
-7. **適用于 office 用戶端的安全連結** ，可在 office 用戶端（如 Word、PowerPoint 及 Excel）中提供相同的安全連結時間和即時防護。
+7. **Office 用戶端的安全連結**，可在 Office 用戶端（如 Word、PowerPoint 及 Excel）中提供相同的安全連結時間和即時防護。
 
-8. **保護 OneDrive、SharePoint 和團隊** 可為內部的惡意檔案（本機、OneDrive、SharePoint 及 Microsoft 小組）提供相同的安全附件防護。
+8. 對 **OneDrive、SharePoint 和 Teams 的保護，** 可為 OneDrive、SharePoint 和 Microsoft Teams 等惡意檔案提供相同的安全附件防護。
 
 9. 當選取指向檔案的 URL 後，傳遞傳遞時， **連結的內容引爆** 會顯示警告頁面，直到檔案的沙箱處理完成，並且找到安全的 url 為止。
 
@@ -138,6 +138,6 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 ## <a name="more-information"></a>其他資訊
 
-您 **現在** 是否需要設定 Microsoft Defender for Office 365 *？ 使用此堆疊（_now * [）逐步開始](protect-against-threats.md) 保護您的組織。
+您 **現在** 是否需要為 Office 365 * 設定 Microsoft Defender？ 使用此堆疊（_now * [）逐步開始](protect-against-threats.md) 保護您的組織。
 
 *特別感謝從 MSFTTracyP 及檔撰寫小組到此內容的 Giulian Garruba*。

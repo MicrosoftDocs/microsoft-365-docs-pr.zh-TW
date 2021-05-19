@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3ca8f5234f90624c8570cbfb10e75bd0ee9380ae
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: da4b7fce66a6c51da61edd7c44216ee268c3156a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345833"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538660"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
@@ -160,7 +160,7 @@ DeviceEvents
 
 |規則名稱|GUID|File & 資料夾排除|支援的最低作業系統|
 |---|:---:|---|---|
-|[封鎖濫用的漏洞簽章驅動程式](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|支援|[Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
+|[封鎖濫用的漏洞簽章驅動程式](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本)  |
 |[封鎖 Adobe Reader，以建立子流程](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[封鎖所有 Office 的應用程式建立子流程](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[封鎖 Windows 本機安全性群組子系統 (lsass.exe 中的認證竊取) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
@@ -184,6 +184,14 @@ DeviceEvents
 
 此規則不會封鎖已存在於已在系統上載入的驅動程式。
 
+>[!NOTE]
+>
+> 您可以使用 mem oma-uri 自訂規則的程式 [資訊，設定](enable-attack-surface-reduction.md#mem) 此規則。
+>
+> 您也可以使用 [PowerShell](enable-attack-surface-reduction.md#powershell)來設定此規則。
+>
+> 您可以使用此網站 [提交分析的驅動程式](https://www.microsoft.com/en-us/wdsi/driversubmission)。
+
 所有支援 ASR 的版本都支援此規則;如下：
 
 - [Windows 10 專業版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
@@ -194,16 +202,6 @@ DeviceEvents
 Intune 名稱： `Block abuse of exploited vulnerable signed drivers`
 
 GUID:：  `56a863a9-875e-4185-98a7-b882c64b5ce5`
-
-請參閱[Microsoft 端點管理員自訂](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure)程式的 MEM 自訂規則程式資訊。
-
-您可以在命令列中執行下列命令，以啟用 ASR 規則：
-
-```powershell
-"& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
-```
-
-您可以使用此網站 [提交分析的驅動程式](https://www.microsoft.com/en-us/wdsi/driversubmission)。
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>封鎖 Adobe Reader，以建立子流程
 

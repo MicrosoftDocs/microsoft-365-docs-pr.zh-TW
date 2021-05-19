@@ -1,7 +1,7 @@
 ---
 title: Microsoft Viva Topics 簡介
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: ''
@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 了解如何尋找 Microsoft Viva Topics 的資源。
-ms.openlocfilehash: 31031697b7825b725c020952a6217b278aa09f02
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 4596f703f86465e4d2d37e2744493bcaef440b7b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454120"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538912"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva Topics 簡介
 
@@ -29,13 +29,13 @@ ms.locfileid: "50454120"
 </br>
 
 
-Viva Topics 是 Office 365 服務，可協助組織將資訊轉換為知識。
+Viva 主題是一種 Microsoft 365 服務，可協助組織將資訊轉換為知識。
 
 此頁上的資源旨在協助您開始了解和使用您組織中的 Viva Topics。
 
 ## <a name="get-started"></a>開始使用
 
-本節中的資源可協助您深入了解 Viva Topics，以及其協助您的方式。
+本節中的資源可協助您深入瞭解哪些 Viva 主題，以及它如何協助您。
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|

@@ -14,16 +14,16 @@ ms.collection:
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 的攻擊。
+description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 中的攻擊。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: e5675a7a83bb62bae80f20e8e7c86fde38599ec6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644677"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538300"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
@@ -64,7 +64,7 @@ ms.locfileid: "51644677"
 >
 > 在發生事件後，可在搜尋結果中顯示對應的審計記錄專案，最多可花30分鐘到24小時的時間。
 >
-> 在審核記錄中保留及可搜尋的審計記錄的時間長度，取決於您的 Microsoft 365 訂閱，特別是指派給特定使用者的授權類型。 如需詳細資訊，請參閱[稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+> 在審核記錄中保留及可搜尋的審計記錄的時間長度取決於您的 Microsoft 365 訂閱，並特別是指派給特定使用者的授權類型。 如需詳細資訊，請參閱[稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 >
 > 如果這個值為 true，表示擁有全域系統管理員存取權的人員可能已獲得資料的廣泛存取權。 如果這是未預期的，請採取步驟以[確認攻擊](#how-to-confirm-an-attack)。
 
@@ -119,7 +119,7 @@ ms.locfileid: "51644677"
 
 1. 使用本機系統管理員權限登入您將執行指令碼的電腦。
 
-2. 將 [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) 腳本從 GitHub 下載或複製到您要執行腳本的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
+2. 將[Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)腳本從 GitHub 下載或複製到您要執行腳本的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
 
 3. 以系統管理員身分開啟 PowerShell 執行個體，然後開啟您要儲存指令碼的資料夾。
 
@@ -143,7 +143,7 @@ ms.locfileid: "51644677"
 
 ## <a name="determine-the-scope-of-the-attack"></a>判斷攻擊的範圍
 
-當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [Microsoft 365 安全性與合規性中心][](../../compliance/search-the-audit-log-in-security-and-compliance.md) 中搜尋 **稽核記錄**。
+當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [安全性 & 合規性中心](../../compliance/search-the-audit-log-in-security-and-compliance.md)搜尋 **審核記錄**。
 
 > [!IMPORTANT]
 > 您必須在攻擊之前啟用 [信箱稽核][](../../compliance/enable-mailbox-auditing.md) 和 [系統管理員與使用者的活動稽核][](../../compliance/turn-audit-log-search-on-or-off.md)，才能獲得此訊息。

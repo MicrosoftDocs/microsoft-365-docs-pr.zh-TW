@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: 深入瞭解當您的訂閱到期、停用或取消時，如何重新開機訂閱。
 ms.date: 04/07/2021
-ms.openlocfilehash: 902be48b32acdff5173a0dd5cc84dbd5972e1ba9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 63c65e90d01bfd2c67d1d2ecfed32a4d4ff8d27a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345139"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538456"
 ---
-# <a name="reactivate-your-subscription"></a>重新啟動您的訂閱
+# <a name="reactivate-your-subscription"></a>重新啟用您的訂閱
 
 您可以在系統管理中心重新啟用您的訂閱：訂閱已到期、已由 Microsoft 停用，或您已在訂閱期限內取消。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 您必須是全域或計費系統管理員，才可重新啟用訂閱。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "52345139"
 
 ::: moniker-end
 
-2. 在 **[產品]** 索引標籤上，找出您要重新啟用的訂閱。 選取 [ **其他動作** (三個點) ]，然後選取 [ **重新啟用此訂閱**]。
+2. 在 **[產品]** 索引標籤上，找出您要重新啟用的訂閱。 選取 [ () 其他動作] 的三個點，然後選取 [ **重新啟用此訂閱**]。
     如果您未看到 [ **重新啟用此訂閱**]，請 [與支援人員聯繫](../../business-video/get-help-support.md)。
 3. 在 **重新啟用此訂閱** 窗格中，從下拉式清單中選取付款條件，或選取 **[新增付款條件]**。
 4. 選取 **[儲存]**。

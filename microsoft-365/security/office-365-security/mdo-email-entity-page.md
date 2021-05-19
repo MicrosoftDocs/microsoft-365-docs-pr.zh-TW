@@ -14,13 +14,13 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender for Office 365 E5 和 P1 和 P2 客戶現在可以透過電子郵件實體頁面取得每個電子郵件的360度的觀點。
-ms.openlocfilehash: 8b531980852336679aad5f2013d63269c238e49c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+description: Office 365 E5 及 P1 和 P2 客戶的 Microsoft Defender 現在，您可以透過電子郵件實體頁面看到每個電子郵件的360度。
+ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933358"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539092"
 ---
 # <a name="the-email-entity-page"></a>電子郵件實體頁面
 
@@ -30,11 +30,11 @@ ms.locfileid: "51933358"
 - [使用電子郵件實體頁面索引標籤](#use-email-entity-page-tabs)
 - [電子郵件實體頁面的新增](#new-to-the-email-entity-page)
 
-Microsoft Defender for Office 365 (或 MDO) E5，而 MDO P1 和 P2 具有使用 **電子郵件實體頁面** 的電子郵件360度的觀點。 已建立此「送出電子郵件」頁面，以加強 [威脅瀏覽器「電子郵件詳細資料」飛出](threat-explorer-views.md)所提供的資訊。
+Office 365 (或 MDO) E5 的 Microsoft Defender 管理員，以及 MDO P1 和 P2 對使用 **電子郵件實體頁面** 的電子郵件有360度的觀點。 已建立此「送出電子郵件」頁面，以加強 [威脅瀏覽器「電子郵件詳細資料」飛出](threat-explorer-views.md)所提供的資訊。
 
 ## <a name="reach-the-email-entity-page"></a>到達電子郵件實體頁面
 
-任何現有的 Office 安全性與合規性中心 (protection.office.com) 或新的 Microsoft 365 安全性中心 (security.microsoft.com) 都會讓您查看和使用 [電子郵件實體] 頁面。
+任何現有的安全性 & 合規性中心 (protection.office.com) 或新的 Microsoft 365 安全性中心 (security.microsoft.com) 將可讓您查看和使用 [電子郵件實體] 頁面。
 
 |置中|URL|導覽|
 |---|---|---|
@@ -111,12 +111,12 @@ Microsoft Defender for Office 365 (或 MDO) E5，而 MDO P1 和 P2 具有使用 
 
 *電子郵件詳細資料*：深入瞭解 [ *分析* ] 索引標籤中提供的電子郵件所需的詳細資料。
 
-- *Exchange Transport rules (ETRs 或郵件流程規則)*：這些規則會套用至傳輸層上的郵件，並優先于網路釣魚和垃圾郵件 verdicts。 它們只能在 Exchange 系統管理中心中建立及修改，但是如果有任何 ETR 套用至郵件，則 ETR 名稱及 GUID 將會顯示在這裡。 用於追蹤用途的重要資訊。
+- *Exchange 傳輸規則 (ETRs 或郵件流程規則)*：這些規則會套用至傳輸層上的郵件，並優先于網路釣魚和垃圾郵件 verdicts。 您只能在 Exchange 系統管理中心內建立和修改這些內容，但是如果有任何 ETR 套用至郵件，則 ETR 名稱及 GUID 都會顯示在這裡。 用於追蹤用途的重要資訊。
 
 - *系統覆寫*：這是一種方法，可根據威脅及偵測技術) ，覆寫系統 (所指定的傳遞位置，以對郵件進行傳遞位置例外。
 
 - *垃圾郵件規則*：「垃圾郵件」是預設在每個信箱中啟用的隱藏收件匣規則。
-  - 當信箱上啟用垃圾郵件規則時，Exchange Online Protection (EOP) 可以根據某些準則將郵件移至垃圾郵件。 移動可以以垃圾郵件篩選判定動作 *將郵件移至 [垃圾郵件] 資料夾*，或信箱上的 [封鎖寄件者] 清單中。 停用垃圾郵件規則，可防止郵件傳遞至 [垃圾郵件] 資料夾（根據信箱上的 [ *安全寄件者* ] 清單）。
+  - 當信箱上啟用垃圾郵件規則時，Exchange Online Protection (EOP) 可以根據某些準則，將郵件移至垃圾郵件。 移動可以以垃圾郵件篩選判定動作 *將郵件移至 [垃圾郵件] 資料夾*，或信箱上的 [封鎖寄件者] 清單中。 停用垃圾郵件規則，可防止郵件傳遞至 [垃圾郵件] 資料夾（根據信箱上的 [ *安全寄件者* ] 清單）。
   - 當信箱上的垃圾郵件規則 *停用* 時，EOP 無法根據垃圾郵件篩選判定動作將郵件移至垃圾郵件資料夾。 *將郵件移至垃圾郵件資料夾* 或信箱上的安全清單集合。
 
 - *大量投訴層級 (BCL)*：郵件的大量抱怨層級 (BCL) 。 較高的 BCL 表示大宗郵件訊息，如果電子郵件可能是垃圾郵件) ，就很可能會產生意見 (自然結果。
@@ -153,4 +153,4 @@ Microsoft Defender for Office 365 (或 MDO) E5，而 MDO P1 和 P2 具有使用 
   - Bestguesspass：表示網域沒有任何 DMARC TXT 記錄存在，但是如果有的話，則會傳遞該郵件的 DMARC 檢查。
   - None：表示 DNS 中的傳送網域不存在 DMARC TXT 記錄。
 
-*複合驗證*：這是 Microsoft 365 用來合併電子郵件驗證（如 SPF、DKIM 及 DMARC）的值，以判斷郵件是否可信。 它會使用郵件的「 *寄件者* 」網域做為評估的基礎。
+*複合驗證*：此值是由 Microsoft 365 用來將電子郵件驗證（如 SPF、DKIM 及 DMARC）結合使用，以判斷郵件是否可信。 它會使用郵件的「 *寄件者* 」網域做為評估的基礎。

@@ -19,12 +19,12 @@ ms.custom:
 description: 了解如何更新網域名稱服務 (DNS) 記錄，以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d200c4cf17a3d42ddafca301fecbf18c249ac37
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 828d76b95a1e3f8d1a1851121d28603a1922f486
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245681"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538984"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>設定 SPF 以協助防止詐騙
 
@@ -45,6 +45,13 @@ ms.locfileid: "52245681"
 本文說明如何更新網域名稱服務 (DNS) 記錄，以便可以在 Office 365 中和您的自訂網域一起使用寄件者原則架構 (SPF) 電子郵件驗證。
 
 SPF 協助 *驗證* 自您的自訂網域 (來自該網域所指出) 傳送的外寄電子郵件。 這是設定 SPF、[DKIM](use-dkim-to-validate-outbound-email.md) 和 [DMARC](use-dmarc-to-validate-email.md) 的完整建議電子郵件驗證方法的第一步。
+
+- [先決條件](#prerequisites)
+- [建立或更新您的 SPF TXT 記錄](#create-or-update-your-spf-txt-record)
+  - [如何處理子網域？](#how-to-handle-subdomains)
+- [SPF 電子郵件驗證實際上做什麼？](#what-does-spf-email-authentication-actually-do)
+  - [疑難排解 SPF](#troubleshooting-spf)
+- [關於 SPF 的詳細資訊](#more-information-about-spf)
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -118,7 +125,6 @@ Office 365 的 SPF TXT 記錄將在外部 DNS 中針對任何自訂網域或子�
 ## <a name="troubleshooting-spf"></a>疑難排解 SPF
 
 無法使用您的 SPF TXT 記錄嗎？請參閱[疑難排解：Office 365 中 SPF 的最佳作法](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)。
-
 
 ## <a name="what-does-spf-email-authentication-actually-do"></a>SPF 電子郵件驗證實際上做什麼？
 

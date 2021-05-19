@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 464a99ca67da72633879840263fe64ad8311fd4c
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 948f4515b37f27695e1e66730134aa19114ca1cf
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952569"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538996"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -36,7 +36,7 @@ ms.locfileid: "51952569"
 
 這項判斷應該是根據登入的使用者帳戶、正在使用的裝置、使用者正在使用的應用程式、建立存取要求的位置，以及要求的風險評估。 這項功能有助於確保，只有經核准的使用者與裝置才可存取重要的資源。
 
-本系列文章說明一組身分識別與裝置存取的必要條件設定，以及一組 Azure Active Directory (Azure AD) 條件式存取、Microsoft Intune 及其他原則，以保護對 Microsoft 365 for enterprise cloud app 和服務、其他 SaaS 服務，以及使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式的存取。
+本系列文章說明一組身分識別與裝置存取的必要條件設定，以及一組 Azure Active Directory (Azure ad) 條件式存取、Microsoft Intune 及其他原則，以安全地存取 Microsoft 365 的 enterprise cloud app 和服務、其他 SaaS 服務，以及使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式。
 
 身分識別與裝置存取設定和原則，可在三個層級中使用：基準保護、機密保護，以及針對具有高管制或保密資料之環境的保護。 這些層級及其對應的設定，可針對所有資料、身分識別和裝置，提供一致的保護層級。
 
@@ -55,19 +55,19 @@ ms.locfileid: "51952569"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]
-> Microsoft 也會為 Office 365 訂閱銷售企業行動 + 安全性 (EMS) 授權。 EMS E3 和 EMS E5 功能相當於 Microsoft 365 E3 和 Microsoft 365 E5 中的功能。 如需詳細資訊，請參閱 [EMS 方案](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。
+> Microsoft 也會為 Office 365 訂閱銷售 Enterprise Mobility + Security (EMS) 授權。 ems E3 和 ems E5 功能相當於 Microsoft 365 E3 和 Microsoft 365 E5 中的專案。 如需詳細資訊，請參閱 [EMS 方案](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。
 
 ## <a name="intended-audience"></a>目標物件
 
-這些建議適用于企業架構師和 IT 專業人員，熟悉 Microsoft 365 雲端生產力與安全性服務，其中包括 Azure AD (身分識別) 、Microsoft Intune (裝置管理) ，以及 Microsoft 資訊保護 (資料保護) 。
+這些建議適用于企業架構師和 IT 專業人員，熟悉 Microsoft 365 雲端生產力及安全性服務，其中包含 Azure AD (身分識別) 、Microsoft Intune (裝置管理) ，以及 Microsoft 資訊保護 (資料保護) 。
 
 ### <a name="customer-environment"></a>客戶環境
 
 建議的原則適用于完全在 Microsoft 雲端內運作的企業組織，以及具有混合式身分識別基礎結構的客戶，也就是內部部署 Active Directory 網域服務 (AD DS) 樹系，與 Azure AD 租使用者同步。
 
-所提供的許多建議，都依賴只有 Microsoft 365 E5、Microsoft 365 E3 與 E5 安全性附加元件、EMS E5 或 Azure AD Premium P2 授權才能使用的服務。
+所提供的許多建議都只依賴使用 Microsoft 365 E5 的服務，Microsoft 365 E3 與 E5 安全性附加元件、EMS e5 或 Azure AD 進階版 P2 授權一起使用。
 
-對於沒有這些授權的組織，Microsoft 建議您至少執行 [安全性預設值，這些預設值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)包含在所有 Microsoft 365 方案中。
+對於沒有這些授權的組織，Microsoft 建議您至少執行[安全性預設值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)，這包括所有的 Microsoft 365 計畫。
 
 ### <a name="caveats"></a>警告
 
@@ -91,11 +91,11 @@ ms.locfileid: "51952569"
 
 請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。 例如，如果您要執行此指導方針，請務必保護您的資料，以同等的層次。
 
-Microsoft 365 架構模型的身分 **識別與裝置保護** 會顯示哪些功能是可比較的。
+Microsoft 365 架構模型的身分 **識別與裝置保護**，會顯示哪些功能是可比較的。
 
-[![Microsoft 365 海報的身分識別和裝置保護的縮圖影像](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [以 PDF 格式查看](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載為 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Microsoft 365 海報的身分識別和裝置保護的縮圖影像](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [以 PDF 格式查看](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載成 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
-此外，請參閱 [部署資訊保護以取得資料隱私權法規](../../solutions/information-protection-deploy.md) 解決方案，以保護儲存在 Microsoft 365 中的資訊。
+此外，請參閱[部署資訊保護以取得資料隱私權法規](../../solutions/information-protection-deploy.md)解決方案，以保護儲存在 Microsoft 365 中的資訊。
 
 ## <a name="security-and-productivity-trade-offs"></a>安全性與生產力的取捨
 
@@ -120,12 +120,12 @@ Azure AD 提供完整的身分識別管理功能套件。 我們建議使用這�
 
 |功能|描述|授權|
 |---|---|---|
-|[多重要素驗證 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA 要求使用者提供兩種形式的驗證，例如使用者密碼加上 Microsoft 驗證應用程式或電話的通知。 MFA 大幅降低可供盜竊之認證存取您環境的風險。 Microsoft 365 使用 Azure AD Multi-Factor 驗證服務進行 MFA 型登入。|Microsoft 365 E3 或 E5|
+|[多重要素驗證 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA 要求使用者提供兩種形式的驗證，例如使用者密碼和 Microsoft Authenticator 應用程式或電話的通知。 MFA 大幅降低可供盜竊之認證存取您環境的風險。 Microsoft 365 使用 Azure AD Multi-Factor 驗證服務進行 MFA 型登入。|Microsoft 365 E3 或 E5|
 |[條件式存取](/azure/active-directory/conditional-access/overview)|Azure AD 評估使用者登入的條件，並使用條件式存取原則來決定允許的存取。 例如，在此指導中，我們會告訴您如何建立條件式存取原則，以要求存取機密資料的裝置合規性。 這會極大降低具有自身裝置和盜竊認證的駭客可以存取您機密資料的風險。 它也會保護裝置上的機密資料，因為裝置必須符合健康和安全性的特定需求。|Microsoft 365 E3 或 E5|
 |[Azure AD 群組](/azure/active-directory/fundamentals/active-directory-manage-groups)|條件式存取原則、具有 Intune 的裝置管理，以及對您組織中檔案和網站的許可權，都依賴指派給使用者帳戶或 Azure AD 群組。 建議您建立對應至您所實施之保護層級的 Azure AD 群組。 例如，您的 executive 人員很可能是駭客的高價值目標。 因此，您可以將這些員工的使用者帳戶新增至 Azure AD 群組，並將此群組指派給條件式存取原則及其他強制進行存取保護等級的原則。|Microsoft 365 E3 或 E5|
 |[裝置註冊](/azure/active-directory/devices/overview)|您可以在 Azure AD 中註冊裝置，以建立裝置的身分識別。 此身分識別是用來在使用者登入並套用需要加入網域或合規的電腦的條件式存取原則時，用來驗證裝置。 針對此指南，我們使用裝置註冊功能自動註冊加入網域的 Windows 電腦。 裝置註冊是使用 Intune 管理裝置的必要條件。|Microsoft 365 E3 或 E5|
-|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|可讓您偵測影響組織之身分識別的潛在弱點，並設定自動修正原則為低、中、高的登入風險和使用者風險。 本指南取決於此風險評估，針對多重要素驗證套用條件式存取原則。 本指南也包含條件式存取原則，需要使用者在其帳戶中偵測到高風險的活動時變更其密碼。|Microsoft 365 E5、Microsoft 365 E3 （含 E5 安全性附加元件、EMS E5 或 Azure AD Premium P2 授權）|
-|[自助式密碼重設 (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|可讓您的使用者安全地重設其密碼，而不需要協助桌面的干預，只要提供系統管理員可控制的多個驗證方法的驗證。|Microsoft 365 E3 或 E5|
+|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|可讓您偵測影響組織之身分識別的潛在弱點，並設定自動修正原則為低、中、高的登入風險和使用者風險。 本指南取決於此風險評估，針對多重要素驗證套用條件式存取原則。 本指南也包含條件式存取原則，需要使用者在其帳戶中偵測到高風險的活動時變更其密碼。|具有 E5 安全性附加元件、EMS E5 或 Azure AD 進階版 P2 授權的 Microsoft 365 E5 Microsoft 365 E3|
+|[自助密碼重設 (SSPR) ](/azure/active-directory/authentication/concept-sspr-howitworks)|可讓您的使用者安全地重設其密碼，而不需要協助桌面的干預，只要提供系統管理員可控制的多個驗證方法的驗證。|Microsoft 365 E3 或 E5|
 |[Azure AD 密碼保護](/azure/active-directory/authentication/concept-password-ban-bad)|偵測並封鎖已知弱密碼和其變種，以及組織特有的其他弱字詞。 預設全域禁用密碼清單會自動套用至 Azure AD 租用戶中的所有使用者。 您可以在自訂禁用密碼清單中定義其他條目。 使用者變更或重設密碼時，系統會檢查這些禁用密碼清單，以強制使用強式密碼。|Microsoft 365 E3 或 E5|
 |
 
@@ -135,7 +135,7 @@ Azure AD 提供完整的身分識別管理功能套件。 我們建議使用這�
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Intune](/intune/introduction-intune) 是 Microsoft 雲端型行動裝置管理服務。 本指南建議使用 Intune 的 Windows 電腦裝置管理，並建議裝置合規性原則設定。 Intune 會判斷是否符合裝置，並將此資料傳送至 Azure AD，以在套用條件式存取原則時使用。
+[Intune](/intune/introduction-intune) 是 Microsoft 雲端型行動裝置管理服務。 本指南建議使用 Intune 的 Windows 電腦進行裝置管理，並建議裝置合規性原則設定。 Intune 會判斷是否符合裝置，並將此資料傳送至 Azure AD，以在套用條件式存取原則時使用。
 
 #### <a name="intune-app-protection"></a>Intune 應用程式保護
 
@@ -145,7 +145,7 @@ Azure AD 提供完整的身分識別管理功能套件。 我們建議使用這�
 
 ### <a name="microsoft-365"></a>Microsoft 365
 
-本指南將告訴您如何實施一組原則，以保護 Microsoft 365 雲端服務（包括 Microsoft 團隊、Exchange Online、SharePoint 線上和商務 OneDrive）的存取權。 除了執行這些原則之外，也建議您使用下列資源提升租使用者的保護層級：
+本指南將告訴您如何執行一組原則，以保護 Microsoft 365 雲端服務（包括 Microsoft Teams、Exchange Online、SharePoint 線上及商務用 OneDrive）的存取權。 除了執行這些原則之外，也建議您使用下列資源提升租使用者的保護層級：
 
 - [設定租用戶以提高安全性](tenant-wide-setup-for-increased-security.md)
 
@@ -153,11 +153,11 @@ Azure AD 提供完整的身分識別管理功能套件。 我們建議使用這�
 
 - [安全性藍圖：前30天、90天和之後的最高優先順序](security-roadmap.md)
 
-  包括記錄、資料管理、系統管理存取和威脅防護的建議。
+  包含記錄、資料管理、系統管理存取和威脅防護的建議。
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 和 Microsoft 365 Apps 企業版
 
-Windows 10 搭配使用 Microsoft 365 應用程式的企業版是電腦的建議用戶端環境。 由於 Azure 設計為同時提供內部部署和 Azure AD 的最平滑體驗，因此建議採用 Windows 10。 Windows 10 也包含可透過 Intune 管理的高級安全性功能。 Microsoft 365 應用程式企業版包含最新版的 Office 應用程式。 這些使用的是新式驗證，也就是更安全，也是條件式存取的必要條件。 這些應用程式也包含增強的安全性和符合性工具。
+使用 Microsoft 365 Apps 企業版 Windows 10 是電腦的建議用戶端環境。 由於 Azure 設計為同時提供內部部署和 Azure AD 的最平滑體驗，因此建議您 Windows 10。 Windows 10 也包含可透過 Intune 管理的高級安全性功能。 Microsoft 365 Apps 企業版包括 Office 應用程式的最新版本。 這些使用的是新式驗證，也就是更安全，也是條件式存取的必要條件。 這些應用程式也包含增強的相容性和安全性工具。
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>跨三種保護層級應用這些功能
 
@@ -173,7 +173,7 @@ Windows 10 搭配使用 Microsoft 365 應用程式的企業版是電腦的建議
 
 ## <a name="device-ownership"></a>裝置擁有權
 
-上表反映許多組織支援混合使用組織的裝置的趨勢，以及個人或 BYODs，以在整個工作力內啟用行動生產力。 Intune 應用程式保護原則可確保電子郵件在組織所擁有的裝置和 BYODs 上，避免從 Outlook 行動應用程式和其他 Office 行動應用程式 exfiltrating 出。
+上表反映許多組織支援混合使用組織的裝置的趨勢，以及個人或 BYODs，以在整個工作力內啟用行動生產力。 Intune 應用程式保護原則可確保電子郵件在組織所擁有的裝置和 BYODs 上，避免 Outlook 行動應用程式和其他 Office 行動應用程式的 exfiltrating。
 
 建議以 Intune 或加入網域的方式管理組織擁有的裝置，以套用其他的保護和控制。 根據資料敏感度，您的組織可以選擇不允許特定使用者人口或特定應用程式的 BYODs。
 
@@ -186,15 +186,15 @@ Windows 10 搭配使用 Microsoft 365 應用程式的企業版是電腦的建議
 
   您不應為應用程式建立個別的原則集合，因為其管理可能會變得麻煩。 Microsoft 建議您將相同使用者的相同保護需求群組為您的應用程式。
 
-  例如，您可以使用一組原則，其中包括所有使用者的基準保護的所有 Microsoft 365 應用程式，以及所有機密應用程式的第二組原則，例如人力資源或財務部門所使用的原則，並將它們套用到這些群組。
+  例如，您可以使用一組原則，其中包括所有使用者的基準保護所有使用者的 Microsoft 365 應用程式，以及所有機密應用程式的第二組原則，例如人力資源或財務部門所使用的原則，並將它們套用到這些群組。
 
 一旦您已決定要保護之應用程式的原則集，請逐步向您的使用者推廣原則，以解決問題的方式。
 
-例如，設定將用於所有 Microsoft 365 應用程式的原則，僅限 exchange Online 與 Exchange 的其他變更。 請向您的使用者推出這些原則，並處理任何問題。 然後，新增小組的其他變更，並將其推廣給您的使用者。 然後，新增包含其他變更的 SharePoint。 繼續新增應用程式的其餘部分，直到您可以自信地設定這些基準原則，以包含所有的 Microsoft 365 應用程式。
+例如，設定要用於所有 Microsoft 365 應用程式的原則，只會 Exchange Online Exchange 的其他變更。 請向您的使用者推出這些原則，並處理任何問題。 然後，新增包含其他變更的 Teams，並將其推廣給您的使用者。 然後，新增包含其他變更的 SharePoint。 繼續新增應用程式的其餘部分，直到您可以自信地設定這些基準原則，以包含所有的 Microsoft 365 應用程式。
 
 同樣地，針對您的敏感應用程式，建立一組原則，並一次加入一個應用程式，直到所有的問題都包含在機密應用程式原則集中為止。
 
-Microsoft 建議您不要建立適用于所有應用程式的原則集，因為這可能會造成某些未預期的設定。 例如，封鎖所有應用程式的原則可能會鎖定您的系統管理員無法從 Azure 入口網站，且無法為 Microsoft Graph 等重要端點設定排除。
+Microsoft 建議您不要建立適用于所有應用程式的原則集，因為這可能會造成某些未預期的設定。 例如，封鎖所有應用程式的原則可能會鎖定您的系統管理員無法從 Azure 入口網站，而且不能針對 Microsoft Graph 等重要端點設定排除專案。
 
 ## <a name="steps-to-configure-identity-and-device-access"></a>設定身分識別與裝置存取的步驟
 
@@ -203,7 +203,7 @@ Microsoft 建議您不要建立適用于所有應用程式的原則集，因為�
 1. 設定必要身分識別功能及其設定。
 2. 設定通用身分識別和存取條件式存取原則。
 3. 為來賓和外部使用者設定條件式存取原則。
-4. 設定 Microsoft 365 cloud apps （如 Microsoft 團隊、Exchange Online 和 SharePoint ─）和 Microsoft Cloud App Security 原則的條件式存取原則。
+4. 設定 Microsoft 365 cloud apps （如 Microsoft Teams、Exchange Online 和 SharePoint ─）和 Microsoft Cloud App Security 原則的條件式存取原則。
 
 在您設定身分識別與裝置存取後，請參閱 [AZURE ad 功能部署指南](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) ，以瞭解其他應考慮的功能和 [Azure AD 身分識別](/azure/active-directory/governance/) 控管，以保護、監控和審核存取。
 

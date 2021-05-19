@@ -15,13 +15,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 瞭解如何在 Microsoft 365 群組、小組、SharePoint 及 Yammer 中管理相關的功能。
-ms.openlocfilehash: b31e9bf1cd46f94343a489497fb5eb00e138ce60
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: 瞭解如何在 Microsoft 365 群組、Teams、SharePoint 及 Yammer 中管理相關的功能。
+ms.openlocfilehash: 3b526297a3f131364a2098b92de09245ab45feb8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916439"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538948"
 ---
 # <a name="what-is-collaboration-governance"></a>什麼是共同作業控管？
 
@@ -31,25 +32,25 @@ ms.locfileid: "50916439"
 
 如果使用者感覺其所提供的工具不符合其需求，他們就可能會下載其最愛的使用者應用程式，以支援其案例。 雖然此程式可讓使用者快速開始，但在組織中有多個登入、難於共用，而且沒有任何單一位置可供查看內容時，可讓整個組織的使用者體驗變得令人沮喪。 這個概念稱為「陰影 IT」，並對組織帶來極大的風險。 它可減少統一管理使用者存取、確保安全性和服務合規性需求的能力。
 
-Microsoft 365 群組、小組和 Yammer 等服務可讓使用者，並提供共同作業所需的工具，以降低陰影的風險。 Microsoft 365 有一套豐富的工具，可實施組織可能需要的任何控管功能。 
+Microsoft 365 群組、Teams 和 Yammer 等服務可供使用者使用，並提供共同作業所需的工具，以降低陰影的風險。 Microsoft 365 有一套豐富的工具，可實施貴組織可能需要的任何管理功能。 
 
-![圖表顯示 Microsoft 365 中的共同作業管理選項](../media/collaboration-governance-overview.png)
+![顯示 Microsoft 365 中共同作業管理選項的圖表](../media/collaboration-governance-overview.png)
 
-這系列的文章將協助您瞭解群組、小組和 SharePoint 設定如何相互作用、哪些管理功能可供使用，以及如何在 Microsoft 365 中建立及實施共同作業功能的控管計畫。
+這系列的文章將協助您瞭解群組、小組和 SharePoint 設定如何互動、哪些控管功能，以及如何建立及實施 Microsoft 365 中共同作業功能的管理計畫。
 
-### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全協同作業
+### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>設定 Microsoft 365 的安全協同作業
 
-在您的組織中部署 Microsoft 365 群組和小組以進行安全共同作業時，有許多選項。 我們建議您使用這個控管內容搭配 [設定 Microsoft 365 的安全](setup-secure-collaboration-with-teams.md) 共同作業，以及其相關的文章，為您的組織建立最佳的共同作業解決方案。
+有許多選項可用於部署 Microsoft 365 群組和 Teams，以在組織中進行安全的共同作業。 我們建議您使用這個控管內容，[設定與 Microsoft 365](setup-secure-collaboration-with-teams.md)及相關文章的安全共同作業，為您的組織建立最佳的共同作業解決方案。
 
 ### <a name="data-residency"></a>資料落地
 
-如果您的組織是跨國的，而且您有不同地理位置的資料派駐需求，請在您的共同作業控管計畫中包含 [Microsoft 365 多地理](/microsoft-365/enterprise/microsoft-365-multi-geo) 位置。
+如果您的組織是多國的，而且您有不同地理位置的資料派駐需求，請在您的共同作業控管計畫中納入[Microsoft 365 多地理](/microsoft-365/enterprise/microsoft-365-multi-geo)位置。
 
 ## <a name="why-microsoft-365-groups-are-important"></a>Microsoft 365 群組為何很重要
 
-Microsoft 365 群組可讓您選擇您想要共同作業的一組人員，並輕鬆地設定要共用之人員的資源集合。 新增成員至群組時，會自動授與群組所提供之所有資產的必要許可權。 兩個小組和 Yammer 都使用 Microsoft 365 群組來管理其成員資格。
+Microsoft 365 群組可讓您選擇要共同作業的一組人員，並輕鬆地設定要共用的人員的資源集合。 新增成員至群組時，會自動授與群組所提供之所有資產的必要許可權。 Teams 和 Yammer 使用 Microsoft 365 群組來管理其成員資格。
 
-Microsoft 365 群組包含使用者可用於通訊和共同作業的連結資源套件。 群組永遠包括 SharePoint 網站、Planner、Power BI workspace、信箱和行事曆，以及資料流程。 視您建立群組的方式而定，您可以選擇性地新增其他服務，例如小組、Yammer 及專案。
+Microsoft 365 群組包含使用者可用於通訊和共同作業的連結資源套件。 群組永遠包括 SharePoint 網站、Planner、Power BI 工作區、信箱和行事曆，以及資料流程。 視您建立群組的方式而定，您可以選擇性地新增其他服務，例如 Teams、Yammer 及 Project。
 
 ![顯示 Microsoft 365 群組和相關服務的圖表](../media/microsoft-365-groups-hub-spoke.png)
 
@@ -59,34 +60,34 @@ Microsoft 365 群組包含使用者可用於通訊和共同作業的連結資源
 |[收件匣](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|群組成員之間的電子郵件交談。 此收件匣具有電子郵件地址，可以設定為接受來自群組以外的人員，甚至是組織外的郵件，與傳統的通訊群組清單非常類似。|
 |[OneNote 筆記本](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|收集創意、調查和資訊|
 |[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|在群組成員之間指派及管理專案工作|
-|[Power BI Workspace](/power-bi/collaborate-share/service-new-workspaces)|含儀表板和報告的資料共同作業空間|
-|[專案和藍圖](https://support.microsoft.com/project)|以 Web 為基礎的專案管理工具|
+|[Power BI工作](/power-bi/collaborate-share/service-new-workspaces)|含儀表板和報告的資料共同作業空間|
+|[Project 和藍圖](https://support.microsoft.com/project)|以 Web 為基礎的專案管理工具|
 |[SharePoint 小組網站](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|中央存放庫，提供與群組相關的資訊、連結和內容|
-|[Stream](https://support.microsoft.com/microsoft-stream)|影片傳送服務|
-|[Teams](https://support.microsoft.com/teams)|Microsoft 365 中的研討型工作區|
+|[資料流](https://support.microsoft.com/microsoft-stream)|影片傳送服務|
+|[Teams](https://support.microsoft.com/teams)|Microsoft 365 中的閒談型工作區|
 |[Yammer 群組](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|一個共同的位置可讓交談和共用資訊|
 
-Microsoft 365 群組包含各種控管控制項，包括到期原則、命名慣例和封鎖的字詞原則，以協助您管理組織中的群組。 因為群組控制成員資格和存取此群組資源，所以管理群組是在 Microsoft 365 中管理共同作業的關鍵區段。
+Microsoft 365群組包括各種控管控制項，包括到期原則、命名慣例和封鎖的字詞原則，可協助您管理組織中的群組。 因為群組控制成員資格和存取此群組資源，所以管理群組是在 Microsoft 365 中管理共同作業的關鍵區段。
 
 ## <a name="define-a-collaboration-strategy-for-your-organization"></a>定義組織的共同作業策略
 
-在 Microsoft 365 內有多個地方共同作業和進行交談。 瞭解使用者可以開始交談的位置，可協助您定義通訊策略。
+在 Microsoft 365 中有多個地方共同作業和交談。 瞭解使用者可以開始交談的位置，可協助您定義通訊策略。
 
-Microsoft 365 支援三種主要通訊方法：
+Microsoft 365 所支援的主要通訊方法有三種：
 
-- Outlook：透過使用共用群組收件匣和行事曆的電子郵件進行協同作業
-- Microsoft 小組：一種持續聊天的工作區，您可以在其中以特定子群組為基礎的各種主題，進行非正式、即時的交談
-- Yammer：共同作業的企業社交體驗
+- Outlook：透過使用共用群組收件匣和行事曆的電子郵件共同作業
+- Microsoft Teams：一種持續聊天的工作區，您可以在其中以特定子群組為基礎的各種主題，進行非正式、即時的交談
+- Yammer：共同作業的企業社交經驗
 
-![圖表顯示何時使用團隊、Yammer 和 Outlook](../media/inner-loop-outer-loop.png)
+![圖表顯示何時使用 Teams、Yammer 及 Outlook](../media/inner-loop-outer-loop.png)
 
-- 小組：以聊天為基礎的工作區 (高速度共同作業) –內環
+- Teams：以聊天為基礎的工作區 (高速度共同作業) –內環
   - 專為您的使用者每日運作的人員進行共同作業
   - 以單一體驗將資訊放在使用者的手邊
   - 新增索引標籤、連接器和 bot
   - 即時聊天、音訊/視訊會議、記錄的會議
 
-- Yammer：跨組織 (enterprise 社交) –外部迴圈
+- Yammer：跨組織 (enterprise social) –外環進行連接
   - 業務部的社區，其共同共同感興趣或專業知識的人員跨職能群組，但不一定要在日常運作中協同運作。
   - 領導能力，學習社區，以角色為基礎的社區
 
@@ -94,10 +95,10 @@ Microsoft 365 支援三種主要通訊方法：
   - 用於與一群人員進行目標通訊
   - 與其他群組成員的會議共用行事曆
  
-當您決定要如何在 Microsoft 365 中使用共同作業功能時，請考慮這些通訊方式，以及您的使用者在不同的情況下可能使用的方式。
+當您決定在 Microsoft 365 中使用協同作業功能的方式時，請考慮這些通訊方式，以及使用者在不同的情況下可能使用的通訊方式。
 
 > [!NOTE]
-> 透過 Yammer 或小組建立新的 Office 365 群組時，群組不會出現在 Outlook 或通訊錄中，因為這些使用者之間的主要通訊會在各自的用戶端中發生。 Yammer 群組無法連線至團隊。
+> 透過 Yammer 或 Teams 建立新的 Office 365 群組時，群組不會出現在 Outlook 或通訊錄中，因為這些使用者之間的主要通訊會在各自的用戶端中發生。 Yammer 群組無法連線至 Teams。
 
 
 ## <a name="best-practices"></a>最佳做法
@@ -108,18 +109,18 @@ Microsoft 365 支援三種主要通訊方法：
 
 - **平衡風險和效益** -回顧您的業務、法規、法律和法規遵從性需求，並規劃可優化所有結果的解決方案。
 
-- **可用於不同組織和不同類型的內容與案例** -考慮不同群組或部門的不同需求，以及不同類型的內容，例如內部網路內容與使用者的 OneDrive 內容。
+- **可用於不同組織和不同類型的內容與案例**-考慮不同群組或部門的不同需求，以及不同類型的內容，例如內部網路內容與使用者的 OneDrive 內容。
 
 - 依 **業務優先順序對齊**-業務目標可協助您定義投資管理所需的時間和精力。
 
-- **直接在您建立的解決方案中內嵌管理決策** -許多管理決定可以透過開啟或關閉 Microsoft 365 中的功能來實施。
+- **直接在您建立的解決方案中內嵌管理決策**-許多管理決定可以透過開啟或關閉 Microsoft 365 中的功能來執行。
 
 
 - **請先將分階段的方式** 共同作業功能提供給一小小使用者群組。 從他們那裡取得意見反應、觀賞服務台票證，並更新任何必要的設定或處理常式，再繼續進行較大的群組。
 
-- **使用** [microsoft 365 學習路徑](/office365/customlearning) 等訓練-調整方案，以確保您的組織特有的預期會與 microsoft 所提供的訓練。
+- **強化訓練**-調整式方案（如 [Microsoft 365 學習路徑](/office365/customlearning)），以確保您的組織特定的預期會與 Microsoft 所提供的訓練搭配加強。
 
-- **有策略可用於通訊組織中的控管原則和指導方針** -在 SharePoint 通迅網站中建立 Microsoft 365 採用中心，以交流原則與程式。
+- **有策略可用於通訊組織中的控管原則和指導方針**-在 SharePoint 通訊網站中建立 Microsoft 365 採用中心，以交流原則與程式。
 
 - **定義角色和責任** -識別您的控管核心小組，並透過先進行布建及命名與外部存取的主要管理決策來運作，然後再繼續進行其他決策。
 
@@ -133,13 +134,13 @@ Microsoft 365 支援三種主要通訊方法：
 
 - 如果您的組織使用電子郵件進行大部分通訊，請指示您的使用者在 Outlook 中建立群組。
 - 如果您的組織大量使用 SharePoint 或從內部部署 SharePoint 進行遷移，請指示您的使用者建立共同作業的 SharePoint 小組網站。
-- 如果您的組織已部署小組，請指導您的使用者在需要共同作業空間時建立小組。
+- 如果您的組織已部署 Teams，請指導您的使用者在需要共同作業空間時建立小組。
 
-如果使用者不熟悉群組與其相關服務的關聯方式，這有助於避免混淆。 如需如何與使用者討論群組的詳細資訊，請參閱 [向您的使用者說明 Microsoft 365 群組](../admin/create-groups/explain-groups-knowledge-worker.md)。
+如果使用者不熟悉群組與其相關服務的關聯方式，這有助於避免混淆。 如需如何與您的使用者溝通群組的詳細資訊，請參閱[說明 Microsoft 365 群組給您的使用者](../admin/create-groups/explain-groups-knowledge-worker.md)。
 
 ## <a name="key-governance-capabilities-and-licensing-requirements"></a>主要管理功能和授權需求
 
-Microsoft 365 中共同作業的控管功能包括 Microsoft 365、小組、SharePoint 和 Azure Active Directory 中的功能。
+在 Microsoft 365 中協同作業的控管功能包括 Microsoft 365、Teams、SharePoint 及 Azure Active Directory 等功能。
 
 | 功能 | 描述 | 授權 |
 |:----------------------|:------------|:----------|
@@ -147,9 +148,9 @@ Microsoft 365 中共同作業的控管功能包括 Microsoft 365、小組、Shar
 |網域允許/封鎖|限制與組織外部人員共用來自特定網域的人員。|Microsoft 365 E5 或 E3|
 |自助網站架設|允許或防止使用者建立自己的 SharePoint 網站。|Microsoft 365 E5 或 E3|
 |受限制的網站與檔案共用|將網站、檔案及資料夾共用限制在特定安全性群組的成員。|Microsoft 365 E5 或 E3|
-|限制群組建立|將小組和群組建立限制在特定安全性群組的成員。|Microsoft 365 E5 或 E3 搭配 Azure AD Premium 或 Azure AD Basic EDU 授權|
-|群組命名原則|在群組和小組名稱上強制執行首碼或尾碼。|Microsoft 365 E5 或 E3 搭配 Azure AD Premium 或 Azure AD Basic EDU 授權|
-|群組到期原則|設定非使用中的群組和小組到期，並在指定的一段時間後刪除。|使用 Azure AD Premium 授權的 Microsoft 365 E5 或 E3|
+|限制群組建立|將小組和群組建立限制在特定安全性群組的成員。|使用 azure ad 進階版或 azure ad 基本 EDU 授權 Microsoft 365 E5 或 E3|
+|群組命名原則|在群組和小組名稱上強制執行首碼或尾碼。|使用 azure ad 進階版或 azure ad 基本 EDU 授權 Microsoft 365 E5 或 E3|
+|群組到期原則|設定非使用中的群組和小組到期，並在指定的一段時間後刪除。|使用 Azure AD 進階版授權 Microsoft 365 E5 或 E3|
 |每個群組的來賓存取權|以每個群組為基礎，允許或防止小組和群組與組織外部的人員共用。|Microsoft 365 E5 或 E3|
 
 ## <a name="collaboration-governance-planning-step-by-step"></a>共同作業管理規劃逐步
@@ -157,11 +158,11 @@ Microsoft 365 中共同作業的控管功能包括 Microsoft 365、小組、Shar
 請遵循下列基本步驟來建立您的管理計畫：
 
 1. 考慮重要的商業目標和流程- [建立您](collaboration-governance-first.md) 的控管計畫，以符合您的業務需求。
-2. 瞭解服務中的設定- [群組中的設定和 SharePoint](groups-sharepoint-governance.md) 彼此互動，就像 [群組、SharePoint 和團隊](groups-sharepoint-teams-governance.md) 及 [其他服務](groups-services-interactions.md)中的設定。 在規劃控管策略時，請務必瞭解這些互動。
-3. 規劃管理使用者存取-規劃 [您想要授與群組、SharePoint 及小組中使用者的存取層級](groups-teams-access-governance.md)。
-4. 規劃管理規範設定-查看適用 [于 Microsoft 365 群組、小組和 SharePoint 共同作業的相容性選項](groups-teams-compliance-governance.md)。
+2. 瞭解服務中的設定-[群組中的設定和 SharePoint](groups-sharepoint-governance.md)彼此互動，如群組中的[設定、SharePoint 和 Teams](groups-sharepoint-teams-governance.md)和[其他服務](groups-services-interactions.md)。 在規劃控管策略時，請務必瞭解這些互動。
+3. 規劃管理使用者存取-規劃[您想要在群組、SharePoint 和 Teams 中授與使用者的存取層級](groups-teams-access-governance.md)。
+4. 規劃管理規範設定-查看[Microsoft 365 群組、Teams 及 SharePoint](groups-teams-compliance-governance.md)共同作業的可用符合選項。
 5. 規劃管理通訊-回顧共同作業案例的可用 [通訊管理選項](groups-teams-communication-governance.md)。
-6. 規劃組織及生命週期管理-選擇 [您想要用於群組及小組建立、命名、到期及](plan-organization-lifecycle-governance.md)封存的原則。 此外，瞭解 [群組、小組和 Yammer 的週期結束選項](end-life-cycle-groups-teams-sites-yammer.md)
+6. 規劃組織及生命週期管理-選擇 [您想要用於群組及小組建立、命名、到期及](plan-organization-lifecycle-governance.md)封存的原則。 此外，瞭解[群組、小組和 Yammer 的週期結束選項](end-life-cycle-groups-teams-sites-yammer.md)
 
 ![建議的管理步驟圖例](../media/collaboration-governance-steps.png)
 
@@ -171,9 +172,9 @@ Microsoft 學習的這些訓練模組可協助您瞭解 Microsoft 365 中的管�
 
 #### <a name="information-protection"></a>資訊保護
 
-|培訓：|管理資訊保護和管理|
+|培訓：|管理資訊保護和控管|
 |:---|:---|
-|![資訊保護訓練圖示](../media/information-protection-governance.svg)|目前所產生的資料量會比以往更快，員工們想要在所有工作中完成工作，而且法規形勢會不斷變更。 Microsoft 的資訊保護和控管解決方案可協助組織在保持資料保護和其人員生產力之間達到適當的平衡。 這個學習路徑可協助您準備 Microsoft 365 認證：安全性系統管理員關聯和 Microsoft 365 認證：企業管理專家 認證。<br><br>5小時13分-7 模組|
+|![資訊保護訓練圖示](../media/information-protection-governance.svg)|現今產生的資料量比以往更快，員工想要在其他地方完成工作，而法規環境也不斷改變。 Microsoft 的資訊保護和治理解決方案可協助組織在保護資料與人員生產力之間取得適當的平衡。 這個學習路徑可協助您準備 Microsoft 365 認證：安全性系統管理員關聯和 Microsoft 365 認證：企業管理專家 認證。<br><br>5小時13分-7 模組|
 
 > [!div class="nextstepaction"]
 > [開始 >](/learn/modules/m365-compliance-information-governance/introduction/)
@@ -182,7 +183,7 @@ Microsoft 學習的這些訓練模組可協助您瞭解 Microsoft 365 中的管�
 
 |培訓：|使用 Microsoft 365 保護企業資訊|
 |:---|:---|
-|![小組訓練圖示](../media/protect-enterprise-information-microsoft-365.svg)|保護您組織資訊的方式比以往更具挑戰性。 使用 Microsoft 365 保護企業資訊學習路徑將討論如何防止您的敏感資訊意外地過度分享或誤用、如何探索和分類資料、如何使用敏感度標籤保護資料，以及如何監視和分析您的敏感資訊以避免資料遺失。 這種教學途徑可協助您準備 Microsoft 365 認證：安全性管理員關聯和 Microsoft 365 認證：企業系統管理專家認證。<br><br>1 hr 教學路徑-5 模組|
+|![Teams 訓練圖示](../media/protect-enterprise-information-microsoft-365.svg)|保護您組織資訊的方式比以往更具挑戰性。 使用 Microsoft 365 保護企業資訊學習路徑將討論如何防止您的敏感資訊意外地過度分享或誤用、如何探索和分類資料、如何使用敏感度標籤保護資料，以及如何監視和分析您的敏感資訊以避免資料遺失。 這種教學途徑可協助您準備 Microsoft 365 認證：安全性系統管理員關聯並 Microsoft 365 認證： Enterprise 管理專家認證。<br><br>1 hr 教學路徑-5 模組|
 
 > [!div class="nextstepaction"]
 > [開始 >](/learn/modules/m365-security-info-overview/introduction/)
@@ -191,7 +192,7 @@ Microsoft 學習的這些訓練模組可協助您瞭解 Microsoft 365 中的管�
 
 |培訓：|示範 Microsoft 365 安全性與合規性功能的基本知識|
 |:---|:---|
-|![安全性與合規性訓練圖示](../media/microsoft-365-security-and-compliance-capabilities.svg)|深入瞭解 Microsoft 365 的安全性和合規性解決方案領域，以及可協助企業保護企業安全及符合法規需求的功能。 如果您不熟悉基本的雲端計算概念，建議您採取雲端 [概念-雲端計算的原則](/learn/modules/principles-cloud-computing/index)。<br><br>3小時11分-學習路徑-8 模組|
+|![安全性與合規性訓練圖示](../media/microsoft-365-security-and-compliance-capabilities.svg)|了解 Microsoft 365 安全性與合規性解決方案領域，以及可協助企業確保企業安全並符合法規需求的功能。 如果您不熟悉基本的雲端計算概念，建議您採取雲端 [概念-雲端計算的原則](/learn/modules/principles-cloud-computing/index)。<br><br>3小時11分-學習路徑-8 模組|
 
 > [!div class="nextstepaction"]
 > [開始 >](/learn/modules/what-is-m365/1-introduction/)
@@ -218,7 +219,7 @@ Microsoft 學習的這些訓練模組可協助您瞭解 Microsoft 365 中的管�
 
 Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功能搭配 Microsoft 的生產力工具，可協助組織即時協同合作，同時遵循嚴格的法規遵從性框架。 
 
-這組插圖使用最受管制的行業（財務服務）之一，示範如何套用這些功能以滿足一般法規需求。 您可以隨意使用這些圖。 
+這組插圖使用最受管制的行業（財務服務）之一，示範如何套用這些功能以滿足一般法規需求。 您可以隨意使用這些圖例。 
 
 
 | 項目 | 描述 |
@@ -227,15 +228,15 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 
 ## <a name="conference-sessions"></a>會議會話
 
-觀看這些會議會話，以深入瞭解 Microsoft 365 群組和小組的管理。
+觀看這些會議會話，以深入瞭解 Microsoft 365 群組和 Teams 的控管。
 
 **基礎**
 
-深入瞭解 Microsoft 365 群組中的基礎和新創新，包括規模的管理和控管，以及驅動使用狀況和採用方式的最佳作法，以及自助服務。
+深入瞭解 Microsoft 365 群組中的基礎和新創新，包括規模的管理和控管規模、驅動使用狀況和採用方式的最佳作法，以及自助服務。
 
 - [接納 Microsoft 365 群組](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
-**Governance**
+**管理**
 
 瞭解如何設定您的群組到期生命週期、命名原則、分類標籤、與外部來賓的共同作業，以及管理群組建立許可權。
 
@@ -243,9 +244,9 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 
 **客戶範例**
 
-請參閱幕後的範例，說明 Microsoft 365 群組、SharePoint、小組和 Yammer 如何共同運作，以提供全球協同作業平臺。
+請參閱幕後的範例，說明 Microsoft 365 群組、SharePoint、Teams 和 Yammer 如何共同運作，以提供全域共同作業平臺。
 
-- [使用 Office 365 群組、SharePoint、小組和 Yammer 尋找共同作業的最擅長點](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [使用 Office 365 群組、SharePoint、Teams 和 Yammer 尋找共同作業的最擅長點](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
 ## <a name="see-also"></a>另請參閱
 

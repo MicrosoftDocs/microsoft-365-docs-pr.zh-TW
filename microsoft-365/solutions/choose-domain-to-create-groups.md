@@ -1,5 +1,5 @@
 ---
-title: 選擇建立 Microsoft 365 群組時要使用的網域
+title: 選擇建立 Microsoft 365 群組時所要使用的網域
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,21 +16,22 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: 透過設定電子郵件地址原則使用 PowerShell，瞭解如何選擇建立 Microsoft 365 群組時所使用的網域。
-ms.openlocfilehash: 4908d5bd58ca6d0fbb50151983ddb459f0732284
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: 透過使用 PowerShell 設定電子郵件地址原則，瞭解如何選擇建立 Microsoft 365 群組時所使用的網域。
+ms.openlocfilehash: a0142ea5f5aa088c4be79fc8699a616d9cdd9390
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904681"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538216"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>選擇建立 Microsoft 365 群組時要使用的網域
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>選擇建立 Microsoft 365 群組時所要使用的網域
 
 有些組織會使用不同的電子郵件網域來將業務區隔為不同部分。 您可以指定當使用者建立 Microsoft 365 群組時，應使用的網域。
   
 如果您的組織需要使用者在公司預設的公認網域以外的網域中建立他們的群組，您可以使用 PowerShell 來設定電子郵件地址原則 (EAPs) ，以允許這麼做。
 
-在您可以執行 PowerShell Cmdlet 之前，請下載並安裝可讓您與組織交談的模組。 [使用遠端 PowerShell 查看 [連線至 Exchange Online]](/powershell/exchange/connect-to-exchange-online-powershell)。
+在您可以執行 PowerShell Cmdlet 之前，請下載並安裝可讓您與組織交談的模組。 [使用遠端 PowerShell 取出連線 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ## <a name="example-scenarios"></a>範例案例
 
@@ -45,7 +46,7 @@ ms.locfileid: "50904681"
 下列兩個案例會說明如何完成此作業。
 
 > [!NOTE]
-> 當您有多個 EAPs 時，會以優先順序的順序評估。 值為1表示最高優先順序。 EAP 符合後，就不會再評估任何 EAP，而且在群組上加蓋標記的位址，都是根據相符的 EAP。 > 如果沒有 EAPs 符合指定的準則，群組便會在組織的預設公認網域中布建。 請參閱 [管理 Exchange Online 中公認的網域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) ，以取得如何新增公認的網域的詳細資料。
+> 當您有多個 EAPs 時，會以優先順序的順序評估。 值為1表示最高優先順序。 EAP 符合後，就不會再評估任何 EAP，而且在群組上加蓋標記的位址，都是根據相符的 EAP。 > 如果沒有 EAPs 符合指定的準則，群組便會在組織的預設公認網域中布建。 請參閱[在 Exchange Online 中管理公認的網域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)，以取得如何新增公認之網域的詳細資料。
   
 ### <a name="scenario-1"></a>案例 1
 
@@ -57,7 +58,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>案例 2
 
-假設您想要控制哪些子域中建立的 Microsoft 365 群組。 你想要：
+假設您想要控制建立哪些子域 Microsoft 365 群組。 你想要：
   
 - 由學生所建立的群組 (使用者 **已設定** 為) 在 Students.groups.contoso.com 網域中的 **學生** 的使用者。 請使用下列命令：
     
@@ -100,7 +101,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
   
 ## <a name="hybrid-requirements"></a>混合需求
 
-如果您的組織是在混合案例中設定，請參閱 [使用內部部署 Exchange 混合式設定 Microsoft 365 群組](/exchange/hybrid-deployment/set-up-microsoft-365-groups) ，以確保您的組織符合建立 Microsoft 365 群組的需求。 
+如果您的組織是在混合案例中設定，請參閱[Configure Microsoft 365 groups 搭配內部部署 Exchange 混合](/exchange/hybrid-deployment/set-up-microsoft-365-groups)式，以確保您的組織符合建立 Microsoft 365 群組的需求。 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>使用電子郵件地址原則群組的其他資訊：
 

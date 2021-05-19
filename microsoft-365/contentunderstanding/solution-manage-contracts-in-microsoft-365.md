@@ -13,12 +13,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何使用 SharePoint Syntex、Microsoft Teams 和 Power Automate 的 Microsoft 365 解決方案管理合約。
-ms.openlocfilehash: 806ea9fd048dec198a19fa79f3b60f3f3cb81018
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 057c581559aa2e5cfd6e98b379783a7d73e0bccc
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281115"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538564"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用 Microsoft 365 方案管理合約
 
@@ -67,6 +67,10 @@ ms.locfileid: "52281115"
 4. 透過使用 Power Automate，會透過 Teams 通道中的核准程式移動合約。 當成員核准合約時，合同狀態會變更為 [核准]，所有成員都會透過 Teams 文章通知，並會建立行專案，以顯示合約已準備好進行中的付出。 您可以擴充此程式，以直接寫入協力廠商財務應用程式進行付款。
 
 5.  當成員拒絕合約時，狀態會變更為 [已拒絕]，而且會透過 Teams 文章通知所有成員。
+
+6. 此解決方案的最終結果是您組織的自動化業務程式。 員工可輕鬆使用 Teams 中的自訂磚模式，以啟動及監視檔的核准工作流程。 
+
+     ![[合約] 索引標籤。](../media/content-understanding/tile-view.png)
 
 ## <a name="create-the-solution"></a>建立方案
 

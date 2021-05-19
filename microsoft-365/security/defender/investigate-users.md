@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft 365 安全性中心調查使用者
-description: 調查 Microsoft 365 security center 中的使用者
+title: 調查 Microsoft 365 Defender 中的使用者
+description: 調查使用者 Microsoft 365 安全性中心的事件。
 keywords: security，malware，Microsoft 365，M365，security center，monitor，report，identity，data，裝置，應用程式，事件，分析，回應
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: c03e4d5bd94eb6105ffab91c6dad2b74d7159dde
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7084b9370a0dd83265b37ff1d152e2164fe32813
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300058"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539128"
 ---
-# <a name="investigate-users-in-microsoft-365-security-center"></a>在 Microsoft 365 安全性中心調查使用者
+# <a name="investigate-users-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的使用者
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -84,7 +84,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 視需要進行處理內事件，繼續進行 [調查](investigate-incidents.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)

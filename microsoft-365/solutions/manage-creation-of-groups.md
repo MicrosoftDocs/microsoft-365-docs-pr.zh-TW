@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: 瞭解如何控制可建立 Microsoft 365 群組的使用者。
-ms.openlocfilehash: 092ff821911ef0af2b7867e1b870b68b1b6355b3
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+recommendations: false
+description: 瞭解如何控制哪些使用者可以建立 Microsoft 365 群組。
+ms.openlocfilehash: 19a106d255708f4b1df8f798219ea7ea778bbef3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51656982"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539176"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理能建立 Microsoft 365 群組的使用者
 
 根據預設，所有使用者都可以建立 Microsoft 365 群組。 這是建議的方法，因為它可讓使用者在不需要協助的情況下開始合作。
 
-如果您的公司需要限制誰可以建立群組，您可以將 Microsoft 365 群組建立限制為特定 Microsoft 365 群組或安全性群組的成員。
+如果您的公司需要限制誰可以建立群組，您可以將 Microsoft 365 群組建立限制在特定 Microsoft 365 群組或安全性群組的成員。
 
 如果您擔心使用者建立的小組或群組不符合您的商務標準，請考慮要求使用者完成訓練課程，然後將其新增至允許的使用者群組。
 
@@ -40,32 +41,32 @@ ms.locfileid: "51656982"
 - Microsoft Teams
 - Microsoft Stream
 - Planner
-- Power BI (傳統) 
-- Web/藍圖的專案
+- Power BI (古典) 
+- web/藍圖的 Project
 
-本文中的步驟不會防止某些角色的成員建立群組。 Office 365 全域系統管理員可以透過 Microsoft 365 系統管理中心、Planner、Exchange 及 SharePoint 線上建立群組。 其他角色可以透過有限的方式建立群組，如下所列。
+本文中的步驟不會防止某些角色的成員建立群組。 Office 365全域管理員可以透過 Microsoft 365 系統管理中心、Planner、Exchange 和 SharePoint 來建立群組。 其他角色可以透過有限的方式建立群組，如下所列。
 
-- Exchange 管理員： Exchange Admin center，Azure AD
-- 合作夥伴第1層支援： Microsoft 365 系統管理中心、Exchange 系統管理中心、Azure AD
+- Exchange系統管理員： Exchange 系統管理中心，Azure AD
+- 第1層支援： Microsoft 365 系統管理中心、Exchange admin center、Azure AD
 - 合作夥伴第2層支援： Microsoft 365 系統管理中心、Exchange 系統管理中心、Azure AD
 - 目錄編寫者： Azure AD
-- SharePoint 管理員： SharePoint Admin center，Azure AD
-- 小組服務管理員：小組系統管理中心，Azure AD
+- SharePoint系統管理員： SharePoint 系統管理中心，Azure AD
+- Teams服務管理員： Teams 系統管理中心，Azure AD
 - 使用者管理員： Microsoft 365 Admin center，Azure AD
 
 如果您是其中一個角色的成員，您可以為受限制的使用者建立 Microsoft 365 群組，然後將該使用者指派為群組的擁有者。
 
 ## <a name="licensing-requirements"></a>授權需求
 
-若要管理群組的建立者，下列人員必須已指派 Azure AD Premium 授權或 Azure AD 基本 EDU 授權：
+若要管理群組的建立者，下列人員必須已指派 Azure AD 進階版授權或 Azure AD 基本 EDU 授權：
 
 - 設定這些群組建立設定的系統管理員
 - 允許建立群組的群組成員
 
 > [!NOTE]
-> 如需如何指派 Azure 授權的詳細資訊，請參閱 [在 Azure Active Directory 入口網站中指派或移除授權](/azure/active-directory/fundamentals/license-users-groups) 。
+> 如需如何指派 Azure 授權的詳細資訊，請參閱[指派或移除 Azure Active Directory 入口網站中的授權](/azure/active-directory/fundamentals/license-users-groups)。
 
-下列人員不需要有指派給它們的 Azure AD Premium 或 Azure AD 基本 EDU 授權：
+下列人員不需要指派 Azure AD 進階版或 Azure AD 基本 EDU 授權給它們：
 
 - 屬於 Microsoft 365 群組成員的人員，以及沒有建立其他群組的能力。
 
@@ -83,11 +84,11 @@ ms.locfileid: "51656982"
 
 4. 完成設定群組，新增您想要在您的組織中建立群組的人員或其他群組。
 
-如需詳細指示，請參閱 [建立、編輯或刪除 Microsoft 365 admin center 中的安全性群組](../admin/email/create-edit-or-delete-a-security-group.md)。
+如需詳細指示，請參閱[建立、編輯或刪除安全性群組的 Microsoft 365 系統管理中心](../admin/email/create-edit-or-delete-a-security-group.md)。
 
 ## <a name="step-2-run-powershell-commands"></a>步驟 2：執行 PowerShell 命令
 
-您必須使用預覽版本的 [ [Azure Active Directory PowerShell For Graph (AzureAD)](/powershell/azure/active-directory/install-adv2) (模組名稱 **AzureADPreview**) ，以變更群組層級來賓存取設定：
+您必須使用 Azure Active Directory 的預覽版本 [PowerShell Graph (AzureAD](/powershell/azure/active-directory/install-adv2))  (模組名稱 **AzureADPreview**) ，以變更群組層級來賓存取設定：
 
 - 如果您之前尚未安裝任何版本的 Azure AD PowerShell 模組，請參閱[安裝 Azure AD 模組](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)，並遵循指示來安裝公開預覽版本。
 
@@ -95,7 +96,7 @@ ms.locfileid: "51656982"
 
 - 如果您已安裝預覽版本，請執行 `Install-Module AzureADPreview` 以確定這是本模組的最新版本。
 
-將下列腳本複製到文字編輯器（例如記事本）或 [Windows POWERSHELL ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)。
+將下列腳本複製到文字編輯器，例如記事本或[Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)。
 
 *\<GroupName\>* 以您建立的群組名稱取代。 例如：
 

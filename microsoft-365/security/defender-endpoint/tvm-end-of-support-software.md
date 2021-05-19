@@ -1,7 +1,7 @@
 ---
 title: 規劃支援終止的軟體和軟體版本
 description: 探索並規劃不再支援的軟體和軟體版本，而且不會收到安全性更新。
-keywords: 威脅和弱點管理，Microsoft Defender for Endpoint tvm security 建議，cybersecurity 建議，可操作的安全性建議
+keywords: 威脅與弱點管理，Microsoft Defender for Endpoint tvm 安全性建議，cybersecurity 建議，可操作的安全性建議
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e8fc228b8856df03b580e748bf00efc8d4333c3
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bb436cbd2d0fa453872760c1d2656585e02d1767
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934126"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538864"
 ---
-# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>使用威脅和弱點管理，規劃支援終止軟體和軟體版本
+# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>使用威脅與弱點管理規劃支援終止的軟體和軟體版本
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -41,16 +41,19 @@ ms.locfileid: "51934126"
 
 重要的是要讓安全性和 IT 系統管理員共同運作，並確定組織的軟體清查已設定為取得最佳結果、規範，以及狀況良好的網路生態系統。 他們應該檢查選項，以移除或取代已到達支援終止的應用程式，以及已不再支援之更新版本的應用程式。 在支援日期結束之前，最好 **先** 建立及實施方案。
 
+>[!NOTE]
+> EOS 功能目前不適用於非 Windows 產品 (Mac，Linux) ;不過，它會在未來新增。
+
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>尋找已不再支援的軟體或軟體版本
 
-1. 從 [威脅和弱點管理] 功能表中，流覽至 [ [**安全性建議**](tvm-security-recommendation.md)]。
+1. 從 [威脅與弱點管理] 功能表中，流覽至 [[**安全性建議**](tvm-security-recommendation.md)]。
 2. 移至 [ **篩選** ] 面板，然後尋找 [標記] 區段。 選取一個或多個 EOS 標記選項。 然後 **套用**。
 
     ![顯示 EOS 軟體、EOS 版本及近期 EOS 版本的螢幕擷取畫面標記。](images/tvm-eos-tag.png)
 
 3. 您將會看到軟體的相關建議清單，其中包含結束支援、軟體版本（支援終止），或有即將推出的支援終止版本。 這些標記也會顯示在 [ [軟體清查](tvm-software-inventory.md) ] 頁面中。
 
-    ![EOS 標記的建議。](images/tvm-eos-tags-column.png)
+    ![使用 EOS 標記的建議。](images/tvm-eos-tags-column.png)
 
 ## <a name="list-of-versions-and-dates"></a>版本清單及日期
 
@@ -72,6 +75,6 @@ ms.locfileid: "51934126"
 
 ## <a name="related-topics"></a>相關主題
 
-- [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [安全性建議](tvm-security-recommendation.md)
 - [軟體庫存](tvm-software-inventory.md)

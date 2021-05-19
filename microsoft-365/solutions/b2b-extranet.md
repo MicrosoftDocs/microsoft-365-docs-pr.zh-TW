@@ -15,17 +15,18 @@ ms.collection:
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: 瞭解如何使用夥伴組織的受管理來賓建立 B2B 外部網路網站或小組。
-ms.openlocfilehash: f9b8d9326f302233ed85c9d168fdf6f343dc6cbf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d76951da5d8affa1dac08cbdc68a91329ca069ed
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904753"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538240"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>使用受管理來賓建立 B2B 外部網路
 
-您可以使用 [Azure Active Directory 的權利管理](/azure/active-directory/governance/entitlement-management-overview) 建立 B2B 外部網路，以與使用 Azure Active Directory 的夥伴組織共同作業。 這可讓使用者在外部網路網站或小組中自我註冊，並透過核准工作流程接收存取權。
+您可以使用[Azure Active Directory 的權利管理](/azure/active-directory/governance/entitlement-management-overview)建立 B2B 外部網路，以與使用 Azure Active Directory 的夥伴組織共同作業。 這可讓使用者在外部網路網站或小組中自我註冊，並透過核准工作流程接收存取權。
 
 透過這種共用資源進行共同作業，合作夥伴組織可以協助維護和核准其結束的客人，減少 IT 部門的負擔，並讓您能夠熟悉共同作業合約，以管理使用者存取。
 
@@ -35,7 +36,7 @@ ms.locfileid: "50904753"
 
 ## <a name="license-requirements"></a>授權需求
 
-若要使用此功能，則需要 Azure AD Premium P2 授權。 
+使用此功能需要 Azure AD 進階版 P2 授權。 
 
 專用的雲彩（如 Azure 德國和 Azure 中國）目前不能使用。
 
@@ -45,45 +46,45 @@ ms.locfileid: "50904753"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
-## <a name="connect-the-partner-organization"></a>連接夥伴組織
+## <a name="connect-the-partner-organization"></a>夥伴組織連線
 
 為了從夥伴組織邀請來賓，您必須將該夥伴的網域新增為 Azure Active Directory 中的連線組織。
 
 新增連線的組織
-1. 在 [ [Azure Active Directory](https://aad.portal.azure.com)] 中，按一下 [身分 **識別管理**]。
+1. 在 [Azure Active Directory](https://aad.portal.azure.com)中，按一下 [身分 **識別管理**]。
 2. 按一下 [ **連線的組織**]。
 4. 按一下 [ **新增連線的組織**]。
 5. 輸入組織的名稱和描述，然後按 **[下一步：目錄 + 網域]**。
 6. 按一下 [ **新增目錄 + 網域**]。
 7. 輸入您要連線之組織的網域，然後按一下 [ **新增**]。
-8. 按一下 **[連線]**，然後按 **[下一步：主辦方**]。
+8. 按一下 [**連線**]，然後按 **[下一步：主辦方]**。
 9. 從您的組織或您要連線的組織，新增您要核准來賓存取權之組織的人員。
 10. 選取 **[下一步 : 檢閱 + 建立]**。
 11. 檢查您所選擇的設定，然後按一下 [ **建立**]。
 
-    ![Azure Active Directory 中連線之組織頁面的螢幕擷取畫面](../media/identity-governance-connected-organizations.png)
+    ![Azure Active Directory 中已連線之組織頁面的螢幕擷取畫面](../media/identity-governance-connected-organizations.png)
 
 ## <a name="choose-the-resources-to-share"></a>選擇要共用的資源
 
 選取要與夥伴組織共用之資源的第一個步驟是建立包含這些資源的目錄。
 
 建立目錄
-1. 在 [ [Azure Active Directory](https://aad.portal.azure.com)] 中，按一下 [身分 **識別管理**]。
+1. 在 [Azure Active Directory](https://aad.portal.azure.com)中，按一下 [身分 **識別管理**]。
 2. 按一下 [ **目錄**]。
 3. 按一下 [ **新增目錄**]。
 4. 輸入目錄的名稱和描述，並確定 **外部使用者** 的 **Enabled** 及 enabled 皆已設定為 **[是]**。
-5. 按一下 **[建立]**。
+5. 按一下 ****[建立]。
 
-   ![Azure Active Directory 身分識別管理中目錄頁面的螢幕擷取畫面](../media/identity-governance-catalogs.png)
+   ![Azure Active Directory 身分識別控管中目錄頁面的螢幕擷取畫面](../media/identity-governance-catalogs.png)
 
 建立目錄之後，您可以新增您要與夥伴組織共用的 SharePoint 網站或團隊。
 
 將資源新增至目錄
 1. 在 [Azure AD 身分識別管理] 中，按一下 [ **目錄**]，然後按一下您要新增資源的目錄。
 2. 按一下 [ **資源** ]，然後按一下 [ **新增資源**]。
-3. 選取您要包含在外部網路的小組或 SharePoint 網站，然後按一下 [ **新增**]。
+3. 選取您要包含在外部網路的小組或 SharePoint 網站，然後按一下 [**新增**]。
 
-   ![Azure Active Directory 身分識別管理中目錄資源頁面的螢幕擷取畫面](../media/identity-governance-catalog-resource.png)
+   ![Azure Active Directory 身分識別管理的目錄資源頁面的螢幕擷取畫面](../media/identity-governance-catalog-resource.png)
 
 在您定義要共用的資源之後，下一步是建立訪問套件，該套件會定義授與夥伴使用者的存取類型，以及要求存取之新夥伴使用者的核准程式。
 
@@ -105,7 +106,7 @@ ms.locfileid: "50904753"
 15. 選擇您要使用的 [到期] 和 [存取權複查] 設定，然後按 **[下一步]： [審閱 + 建立]**。
 16. 請複查您的設定，然後按一下 [ **建立**]。
 
-    ![Azure Active Directory 身分識別管理中 access 套件畫面的螢幕擷取畫面](../media/identity-governance-access-packages.png)
+    ![Azure Active Directory 身分識別控管中 access 套件畫面的螢幕擷取畫面](../media/identity-governance-access-packages.png)
 
 如果您與大型組織合作，您可能想要隱藏存取套件。 如果已隱藏此套件，則夥伴組織中的使用者將不會在其「 *我的存取* 入口網站」上看到此套件。 相反地，必須傳送直接連結才能註冊套件。 隱藏存取封裝可以減少不適當的存取要求數目，也有助於保留夥伴組織入口網站中可用的訪問套件組織。
 

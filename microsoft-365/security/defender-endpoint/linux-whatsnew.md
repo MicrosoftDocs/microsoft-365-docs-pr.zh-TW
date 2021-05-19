@@ -18,16 +18,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6aaf370ef0222c6c4a7f920a2a5ed8951f988839
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 21eaf1c0e0d3f61bb5798c8a4de6fe8f97ce4a0b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933562"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538792"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 中的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## <a name="1012964-30121042129640"></a>101.29.64 (30.121042.12964.0) 
+
+- 效能 & bug 修正的增強功能
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 
 
@@ -47,7 +51,7 @@ ms.locfileid: "51933562"
 
 ## <a name="1011853"></a>101.18.53
 
-- 現在[可以使用](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)LINUX 的 EDR。
+- EDR 的 Linux 現在[一般可用](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
 - 在 `--ignore-exclusions` 自訂掃描期間，新增命令列參數 () 忽略 AV 排除 (`mdatp scan custom`) 
 - `mdatp diagnostic create`使用新的參數進行擴充 (`--path [directory]`) ，可讓診斷記錄儲存至不同的目錄
 - 效能 & bug 修正的增強功能

@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
+recommendations: false
 description: 瞭解如何為 Microsoft 365 群組建立命名原則。
-ms.openlocfilehash: 7fd2ea36b536924d85c7ca09b55593161a24dbe4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5ab5f252e2b81470413b4efea17b131613aabc18
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921045"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538168"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 群組命名原則
 
 您可以使用群組命名原則，針對組織中使用者所建立的群組強制執行一致的命名策略。 命名原則可協助您和您的使用者識別群組、成員資格、地理區域的功能，或群組的建立者。 命名原則也可協助分類通訊錄中的群組。 您可以使用原則來封鎖群組名稱和別名中所用的特定字詞。
 
-命名原則會套用至所有群組工作負載 (例如 Outlook、Microsoft 團隊、SharePoint、Planner、Yammer 等 ) 上建立的群組。 它會套用至群組名稱和群組別名。 當使用者建立群組時，以及在編輯現有群組的組名、別名、描述或頭像時，也會套用此方式。
+命名原則會套用至所有群組工作負載中建立的群組 (例如 Outlook、Microsoft Teams、SharePoint、Planner、Yammer 等 ) 。 它會套用至群組名稱和群組別名。 當使用者建立群組時，以及在編輯現有群組的組名、別名、描述或頭像時，也會套用此方式。
 
 > [!TIP]
 > Microsoft 365 群組命名原則只適用于 Microsoft 365 群組。 這不適用於 Exchange Online 中所建立的通訊群組。 若要建立通訊群組的命名原則，請參閱 [建立通訊群組命名原則](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
@@ -41,7 +42,7 @@ ms.locfileid: "50921045"
 
 ## <a name="licensing-requirements"></a>授權需求
 
-使用 Microsoft 365 群組的 Azure AD 命名原則，您必須擁有但不一定要為每個唯一的使用者 (（包括一或多個 Microsoft 365 群組成員的來賓) ）指派 Azure Active Directory Premium P1 授權或 Azure AD 基本 EDU 授權。
+在 Microsoft 365 群組上使用 Azure ad 命名原則，需要您必須為每個唯一的使用者 (指派 Azure Active Directory 進階版 P1 授權或 Azure ad 基本 EDU 授權，包括一或多個) 群組成員的來賓 Microsoft 365。
 
 這對於建立群組命名原則的系統管理員也是必要的。
 
@@ -80,13 +81,13 @@ ms.locfileid: "50921045"
   > [!NOTE]
   > 句點 (。 ) 或連字號 ( ) 允許在組名中的任何位置，但名稱的開頭或結尾除外。 在群組名稱中的任何地方（包括名稱的開頭或結尾）都允許有底線 (_) 。
 
-- 如果您使用 Yammer Office 365 連接的群組，請避免在您的命名原則中使用下列字元： @、、、、 \# \[ \] \<, and \> 。 如果這些字元是在命名原則中，一般 Yammer 使用者將無法建立群組。
+- 如果您使用 Yammer Office 365 連接的群組，請避免在您的命名原則中使用下列字元： @、、、、 \# \[ \] \<, and \> 。 如果這些字元是在命名原則中，則一般 Yammer 使用者將無法建立群組。
 
 > [!Tip]
 > - 使用簡短字串做為尾碼。
 > - 使用具有值的屬性。
 > - 不太創造性，總名稱長度的最大值為264個字元。
-> - 上傳組織的特定封鎖文字，以限制使用。
+> - Upload 組織中特定封鎖的文字，以限制使用。
 
 ## <a name="custom-blocked-words"></a>自訂封鎖的字詞
 
@@ -120,14 +121,14 @@ ms.locfileid: "50921045"
 
 若要設定命名原則：
 
-1. 在 [Azure Active Directory](https://aad.portal.azure.com)的 [ **管理**] 下，按一下 [ **群組**]。
-2. 在 [ **設定**] 底下，按一下 [ **命名原則**]。
+1. 在 [Azure Active Directory](https://aad.portal.azure.com)的 [**管理**] 下，按一下 [**群組**]。
+2. 在 [**設定**] 底下，按一下 [**命名原則**]。
 3. 選擇 [ **群組命名原則** ] 索引標籤。
 4. 在 [ **目前原則**] 底下，選擇您是否要要求前置詞或尾碼或兩者，然後選取適當的核取方塊。
 5. 選擇每一行的 **屬性** 及 **字串** ，然後指定屬性或字串。
 6. 當您已新增所需的首碼和尾碼後，請按一下 [ **儲存**]。
 
-![Azure Active Directory 中群組命名原則設定的螢幕擷取畫面](../media/groups-naming-policy-azure.png)
+![Azure Active Directory 中的群組命名原則設定的螢幕擷取畫面](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>相關主題
 

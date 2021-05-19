@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f3dba2116e0f13f265937ef65fd3b69bcb1e725b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9e82f1c5de9fe1f4a03385458338edf18c4f35bd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274649"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538840"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在行動中心中查看及管理動作
 
@@ -36,7 +36,7 @@ ms.locfileid: "52274649"
 **適用於：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作。 以下為一些範例：
+Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作。 範例如下：
 
 - [自動調查](m365d-autoir.md) 可能會導致自動採取或等待您核准的修復動作。
 - 防毒程式、反惡意程式碼和其他威脅防護功能可能會導致修復動作，例如封鎖檔案、URL 或程式，或將專案傳送至隔離區。
@@ -69,7 +69,7 @@ Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作
 
 | 動作來源 | 支援的動作 |
 |:---|:---|
-| -自動調查 <br/>-Microsoft Defender 防病毒 <br/>-手動回應動作 | 隔離裝置 <br/>-限制執行程式碼 <br/>-隔離檔 <br/>-移除登錄機碼 <br/>-停止服務 <br/>-停用驅動程式 <br/>-移除排程任務 |
+| -自動調查 <br/>-Microsoft Defender 防毒軟體 <br/>-手動回應動作 | 隔離裝置 <br/>-限制執行程式碼 <br/>-隔離檔 <br/>-移除登錄機碼 <br/>-停止服務 <br/>-停用驅動程式 <br/>-移除排程任務 |
 
 ### <a name="undo-one-remediation-action"></a>復原一個修正動作
 
@@ -98,4 +98,4 @@ Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作
 ## <a name="next-steps"></a>後續步驟
 
 - [檢視自動調查的詳細資料和結果](m365d-autoir-results.md)
-- [位址誤報或漏報) ](m365d-autoir-report-false-positives-negatives.md)
+- [位址誤報或漏報](m365d-autoir-report-false-positives-negatives.md)

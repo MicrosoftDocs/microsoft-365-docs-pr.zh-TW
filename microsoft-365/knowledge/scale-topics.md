@@ -13,22 +13,22 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 深入瞭解使用 Viva 主題管理組織中的許多主題的最佳作法。
-ms.openlocfilehash: 3246c7e91c315dadb6c2b14008c9a4da378409d5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: dd9fe658d4f698ac50563b5c9ea141a090f6141d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333991"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538408"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>在 Microsoft Viva 主題中管理縮放主題
 
 當您為 SharePoint 網站或整個組織編制 Viva 主題的索引時，可能會產生許多主題。 發生這種情況時，您會在 [ **管理主題** ] 頁面上看到數以千計的建議主題，知道從何處開始會很困難。 本文說明 Viva 主題如何協助您優化對搜尋資訊的使用者顯示哪些主題和資訊，甚至在具有大量主題的大型組織中。
 
-首先，針對主題的四個狀態的提示：
+首先，會提醒您 [主題的四個階段](manage-topics.md#topic-stages)：
 
-- **建議**：主題已透過 AI 識別，且具有足夠的支援資源、連線和屬性。  (這些會標示為 UI 中的 **建議主題** 。 ) 
+- **建議**：AI 已識別主題，並且有足夠的支援資源、關聯和屬性。  (這些會標示為 UI 中的 **建議主題** 。 ) 
 
-- 已 **確認**：已驗證 AI 已建議的主題。 主題驗證必須由知識管理員確認。 若要確認的主題，必須從使用主題卡片上的意見反應機制來投票的使用者，獲得兩個正投票的淨值。 例如，如果一個使用者投票肯定的正負一個使用者的投票為負值，您仍需要兩個正值投票才能確認該主題。
+- **已確認**：已驗證 AI 建議的主題。 主題驗證必須由知識管理員確認。 若要確認的主題，必須從使用主題卡片上的意見反應機制來投票的使用者，獲得兩個正投票的淨值。 例如，如果一個使用者投票肯定的正負一個使用者的投票為負值，您仍需要兩個正值投票才能確認該主題。
  
 - 已 **發佈**：已策劃的已確認主題：已進行手動編輯，以提升其品質。
 
@@ -98,7 +98,7 @@ ms.locfileid: "52333991"
 
 當您允許主題的廣泛 crowdsourcing 時，應考慮下列因素：
 
--   使用者會在主題頁面上看到 [ **編輯** ] 選項，而且可以像其他現代的 SharePoint 頁面一樣，編輯頁面。
+-   使用者會在主題頁面上看到 [**編輯**] 選項，而且可以像其他現代的 SharePoint 頁面一樣，編輯頁面。
 
 -   有些 **建議的主題** 網頁元件無法移除。 無法移除主題名稱、替代名稱、定義、建議人員和建議資源。
 
@@ -126,7 +126,7 @@ ms.locfileid: "52333991"
 
 -   您的組織提供的產品和服務
 
--   組織中的小組
+-   組織中的 Teams
 
 -   高設定檔專案
 
@@ -160,7 +160,7 @@ ms.locfileid: "52333991"
 
 如果您的組織已投資掌握知識文庫或 wiki 網站，這些可提供您初始 curation 工作所使用的主題清單。 如果是特別大的，請選取最有查看或已編輯的主題做為起始點。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [在主題中心中管理主題](manage-topics.md)
 
