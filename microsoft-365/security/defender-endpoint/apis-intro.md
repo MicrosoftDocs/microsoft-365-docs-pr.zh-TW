@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 843bd953b97f29a5b9c80fc44a9b19fae60a6fa7
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: a91a401d5d57c7757bc043178c95dc42e7733b41
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939763"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571826"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>存取適用於端點的 Microsoft Defender API 
 
@@ -39,13 +39,13 @@ ms.locfileid: "51939763"
 
 
 
-「！的 Defender」會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 可讓您以使用 Defender for Endpoint 功能來自動化工作流程及創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+「！的 Defender」會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 可讓您以使用 Defender for Endpoint 功能來自動化工作流程及創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 觀賞這段影片，以快速瞭解如何使用 Defender 的 Endpoint APIs。 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
 一般來講，您必須採取下列步驟，才能使用 APIs：
-- 建立 AAD 應用程式
+- 建立 [AAD 應用程式](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - 使用此應用程式取得存取 token
 - 使用權杖來存取適用于 Endpoint API 的 Defender
 

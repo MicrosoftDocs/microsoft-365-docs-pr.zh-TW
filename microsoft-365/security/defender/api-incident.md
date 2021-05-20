@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender 事件 APIs 和事件資源類型
+title: Microsoft 365Defender 事件 APIs 和事件資源類型
 description: 深入瞭解 Microsoft 365 Defender 中的事件資源類型的方法和屬性
 keywords: 事件、事件、api
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0a9022c0448ae0ddc16dc996ca93075abf6b2857
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5cc149668e49e21b38b5fb95ae3f40db6c296e1d
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056672"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572582"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 Defender 事件 API 和事件資源類型
+# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365Defender 事件 API 和事件資源類型
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51056672"
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
 
-[事件](incidents-overview.md)是協助描述攻擊的相關警示集合。 您組織中不同實體的事件會由 Microsoft 365 Defender 自動匯總。 您可以使用事件 API，以程式設計方式存取您組織的事件及相關警示。
+[事件](incidents-overview.md)是協助描述攻擊的相關警示集合。 您組織中不同實體的事件會透過 Microsoft 365 Defender 自動匯總。 您可以使用事件 API，以程式設計方式存取您組織的事件及相關警示。
 
 ## <a name="quotas-and-resource-allocation"></a>配額和資源配置
 
@@ -76,11 +76,12 @@ lastUpdateTime | DateTimeOffset | 上次更新事件) 的日期和時間 (。
 分類 | Enum | 事件的規格。 可能的值為： ```Unknown``` 、 ```FalsePositive``` 、 ```TruePositive``` 。
 測定 | Enum | 指定事件的確定。 可能的值為：、、、、、、 ```NotAvailable``` ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` 。
 標籤 | 字串清單 | 事件標記清單。
+註解 | 事件批註清單 | 事件 Comment 物件包含：批註字串、createdBy 字串及 createTime date time。
 警報 | 警示清單 | 相關警示的清單。 請參閱 [List 事件](api-list-incidents.md) API 檔中的範例。
 
 ## <a name="related-articles"></a>相關文章
 
-- [Microsoft 365 Defender APIs 概述](api-overview.md)
+- [Microsoft 365Defender APIs 概述](api-overview.md)
 - [事件概觀](incidents-overview.md)
 - [列出事件 API](api-list-incidents.md)
 - [更新事件 API](api-update-incidents.md)

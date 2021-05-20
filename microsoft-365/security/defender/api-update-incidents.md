@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d6872a7a4b1b2d2c131066076af02a65b4ef6d8a
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: e3f3919d067078ef1fd1e116dc52e8a73c0726d9
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107601"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571778"
 ---
-# <a name="update-incidents-api"></a>更新事件 API
+# <a name="update-incident-api"></a>更新事件 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "52107601"
 
 ## <a name="api-description"></a>API 描述
 
-更新現有事件的屬性。 可更新的屬性包括：、、、 ```status``` ```determination``` ```classification``` ```assignedTo``` 和 ```tags``` 。
+更新現有事件的屬性。 可更新的屬性包括：、、、、 ```status``` ```determination``` ```classification``` ```assignedTo``` ```tags``` 和 ```comments``` 。
 
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>配額、資源配置及其他限制
 
@@ -85,6 +85,7 @@ Content-Type | 字串 | application/json。 **必要欄位**。
 分類 | Enum | 事件的規格。 可能的值為： ```Unknown``` 、 ```FalsePositive``` 、 ```TruePositive``` 。
 測定 | Enum | 指定事件的確定。 可能的值為：、、、、、、 ```NotAvailable``` ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` 。
 標籤 | 字串清單 | 事件標記清單。
+註解 | string | 要新增至事件的批註。
 
 ## <a name="response"></a>回應
 
@@ -108,7 +109,19 @@ Content-Type | 字串 | application/json。 **必要欄位**。
     "assignedTo": "secop2@contoso.com",
     "classification": "TruePositive",
     "determination": "Malware",
-    "tags": ["Yossi's playground", "Don't mess with the Zohan"]
+    "tags": ["Yossi's playground", "Don't mess with the Zohan"],
+    "comments": [
+          {
+              "comment": "pen testing",
+              "createdBy": "secop2@contoso.com",
+              "createdTime": "2021-05-02T09:34:21.5519738Z"
+          },
+          {
+              "comment": "valid incident",
+              "createdBy": "secop2@contoso.comt",
+              "createdTime": "2021-05-02T09:36:27.6652581Z"
+          }
+      ]
 }
 ```
 

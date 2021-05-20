@@ -16,17 +16,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 5e754c2f4b5406d4b91ef624415f3819d3171305
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ef5a9ffdf45a2f8e7f262ae7f969cd19e848b7a5
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536019"
+ms.locfileid: "52572522"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>設定及驗證 Microsoft Defender 防毒軟體網路連線
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用於：**
 
@@ -107,11 +104,9 @@ Microsoft Defender 防毒軟體 cloud service 為您的端點提供快速、強�
 
 您也會在 Windows 安全性應用程式的 [掃描歷程 **記錄**] 區段中看到 [**隔離威脅**] 下的偵測：
 
-1. 按一下工作列中的盾牌圖示，或搜尋 **Defender** 的 [開始] 功能表，以開啟 Windows 安全性應用程式。
+1. 按一下工作列中的盾牌圖示，或搜尋 [**安全性**] 的 [開始] 功能表，開啟 Windows 安全性應用程式。
 
-2. 在左功能表列上選取 [ **病毒 & 威脅防護** 磚 (] 或 [盾牌] 圖示) 然後按一下 [ **掃描歷程記錄** ] 標籤：
-
-    ![Windows 安全性應用程式中的掃描史標籤的螢幕擷取畫面](images/defender/wdav-history-wdsc.png)
+2. 選取 [ **病毒 & 威脅防護**]，然後選取 [ **保護歷程記錄**]。
 
 3. 在 [ **隔離威脅** ] 區段中，選取 [ **查看完整的史** ]，以查看偵測到的虛假惡意程式碼。
 

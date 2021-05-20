@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bca8efa15bdfe2f4b7c8c90e7a4706f40b19f85d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572606"
+ms.locfileid: "52532047"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -194,7 +194,7 @@ Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Offic
         - 機碼 *DisableEncryptOnly* 和 *DisableDoNotForward* 安全性設定，記載在 [設定 Mac 版 Outlook 的喜好設定[]](/DeployOffice/mac/preferences-outlook) 中
     - Outlook 網頁版： 
         - 針對 [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) 記載的參數 *SimplifiedClientAccessDoNotForwardDisabled* 和 *SimplifiedClientAccessEncryptOnlyDisabled*
-    - iOS 版和 Android 版 Outlook：這些應用程式不支援使用者在沒有標籤的情況下套用加密，因此沒有要停用的項目。
+        - iOS 版和 Android 版 Outlook：這些應用程式不支援使用者在沒有標籤的情況下套用加密，因此沒有要停用的項目。
 
 > [!NOTE]
 > 如果使用者手動移除儲存在 SharePoint 或 OneDrive 中的標籤文件上的加密，並且您已[為 SharePoint 和 OneDrive 中的 Office 檔案啟用了敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)，則下次存取或下載該文件時，標籤加密將自動還原。 

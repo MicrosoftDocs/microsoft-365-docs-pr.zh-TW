@@ -23,13 +23,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
-description: 使用系統管理中心在雲端設定您的組織並管理使用者和訂閱。 請以系統管理員權限登入帳戶以開始使用。
-ms.openlocfilehash: db88904e16cf9410d3eb4e4aac161f714993150b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: 使用系統管理中心 Microsoft 365 的系統管理員許可權登入，以在雲端設定您的組織，以及管理使用者和訂閱。
+ms.openlocfilehash: 1d8afaf8c63124fc0dde40002214ba99d4d1a4a0
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52290980"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572018"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 
@@ -55,7 +55,7 @@ ms.locfileid: "52290980"
 
 ## <a name="admin-center-features-and-settings"></a>系統管理中心功能和設定
 
-以下是您可在系統管理中心左側瀏覽列中找到的功能與設定。 深入了解[系統管理說明](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)中的系統管理工作。
+以下是您可在系統管理中心左側瀏覽列中找到的功能與設定。 深入了解[系統管理說明](../../business-video/admin-center-overview.md)中的系統管理工作。
   
 |**功能表**|**功能**|
 |-----|-----|
@@ -68,7 +68,7 @@ ms.locfileid: "52290980"
 |**設定** <br/> |管理應用程式的通用設定，例如電子郵件、網站和 Office 套件。 變更您的密碼原則和到期日期。 新增及更新網域名稱，例如 contoso.com。 變更您的組織設定檔與發行喜好設定。 然後選擇是否要讓合作夥伴存取您的系統管理中心。  <br/> |
 |**設定** <br/> |管理現有的網域、開啟和管理多重要素驗證、管理系統管理員存取權、將使用者信箱移轉至 Office 365、管理功能更新，以及協助使用者安裝其 Office app。 |
 |**報告** <br/> |請快速查看您的組織如何使用 Microsoft 365，以及有關電子郵件使用、Office 啟用等等的詳細報告。 了解如何使用新[活動報告](../activity-reports/activity-reports.md)。  <br/> |
-|**健康情況** <br/> |快速查看健康情況。 您也可以查看更多詳細資料和狀況歷程記錄。 如需詳細資訊，請參閱 how [to check service health](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health) and how [to check Windows release health](https://docs.microsoft.com/windows/deployment/update/check-release-health) 。  <br/><br/>使用訊息中心來追蹤未來的功能和服務變更。 我們會在其中張貼公告，提供能協助您規劃變更並了解可能會對使用者造成影響的資訊。 取得 [郵件中心](../manage/message-center.md)的詳細資料。 <br/> |
+|**健康情況** <br/> |快速查看健康情況。 您也可以查看更多詳細資料和狀況歷程記錄。 如需詳細資訊，請參閱 how [to check service health](../../enterprise/view-service-health.md) and how [to check Windows release health](/windows/deployment/update/check-release-health) 。  <br/><br/>使用訊息中心來追蹤未來的功能和服務變更。 我們會在其中張貼公告，提供能協助您規劃變更並了解可能會對使用者造成影響的資訊。 取得 [郵件中心](../manage/message-center.md)的詳細資料。 <br/> |
 |**系統管理中心** <br/> |開啟 Exchange、商務用 Skype、SharePoint、Yammer 和 Azure AD 等各自的系統管理中心。 每一個系統管理中心都包含該服務的所有可用設定。  <br/> 例如，在 Exchange 系統管理中心中設定及管理電子郵件、行事曆、通訊群組等。在 SharePoint 系統管理中心可以建立及管理網站集合、網站設定和商務用 OneDrive。在商務用 Skype 系統管理中心可以設定立即訊息通知、電話撥入式會議和線上狀態。  <br/> 深入了解 [Exchange 系統管理中心](/exchange/exchange-admin-center)和 [SharePoint 系統管理中心](/sharepoint/sharepoint-online)。<br/> **附註：** 您是否能使用系統管理中心取決於您的方案和地區。           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>系統管理中心的一般工作

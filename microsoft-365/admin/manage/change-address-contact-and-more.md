@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
 search.appverid: MET150
-description: 瞭解如何對組織設定檔進行變更，例如組織名稱、位址、電話、技術連絡人及電子郵件。
+description: 對您的組織設定檔進行變更，例如組織名稱、位址、電話、技術連絡人及電子郵件。
 ms.date: 03/30/2021
-ms.openlocfilehash: 880a540db8b8b1a18ddebabd335c8c2dedd36721
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 9fc985f640f1544bf30ea1a6ccdd5c1ca19aa81f
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332432"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572126"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>變更貴組織的地址、技術連絡人等等
   
@@ -78,3 +78,11 @@ ms.locfileid: "52332432"
 ### <a name="email-signatures"></a>電子郵件簽名
   
 ，您可以變更 Outlook Web App 中的電子郵件簽名。如需詳細資訊，請參閱[郵件設定](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c)。
+
+## <a name="related-content"></a>相關內容
+
+[從不同的位址傳送電子郵件](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (文章) 
+
+[變更使用者名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md) (文章) 
+
+[在 Microsoft 365 中設定電子郵件轉寄](../email/configure-email-forwarding.md) (文章)

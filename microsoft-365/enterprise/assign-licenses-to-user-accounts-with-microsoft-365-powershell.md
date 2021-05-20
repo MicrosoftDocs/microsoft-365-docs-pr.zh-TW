@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: 在本文中，您將瞭解如何使用 PowerShell 將 Microsoft 365 授權指派給未授權的使用者。
-ms.openlocfilehash: 5fb5f9095d4f732b0bf23f26eebb22eff608b48c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d7e005aff018394810082de57c68ea289057f8e
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905461"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572618"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 PowerShell 將 Microsoft 365 授權指派給使用者帳戶
 
@@ -34,7 +34,7 @@ ms.locfileid: "50905461"
 
 使用者必須先將授權方案的授權指派給他們的帳戶，才可使用任何 Microsoft 365 服務。 您可以使用 PowerShell 快速將授權指派給未授權的帳戶。 
 
-使用者帳戶必須先指派位置。 若要在 [Microsoft 365 系統管理中心](../admin/add-users/add-users.md)中建立新的使用者帳戶，必須指定位置。 
+使用者帳戶必須先指派位置。 指定位置是在[Microsoft 365 系統管理中心](../admin/add-users/add-users.md)中建立新使用者帳戶的必要部分。 
 
 從您的內部部署 Active Directory 網域服務同步處理的帳戶預設不會有指定的位置。 您可以從下列位置設定這些帳戶的位置：
 
@@ -48,7 +48,7 @@ ms.locfileid: "50905461"
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 
 接下來，使用此命令列出租使用者的授權計畫。
@@ -87,7 +87,9 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+請注意，當 Graph 模組的更新[Azure Active Directory PowerShell](/powershell/azuread/v2/azureactivedirectory)中提供此模組的功能時，我們將開始取代此模組。 我們建議客戶建立新的 PowerShell 腳本，以使用更新的模組，而不是此模組。
+
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 執行 `Get-MsolAccountSku` 命令，以查看組織中每個計畫可用的授權方案和可用的授權數目。 每個計畫中可用的授權數目 **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits**。 如需授權方案、授權及服務的詳細資訊，請參閱 [使用 PowerShell 查看授權和服務](view-licenses-and-services-with-microsoft-365-powershell.md)。
 
@@ -101,7 +103,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-您只能將授權指派給 **UsageLocation** 屬性設定為有效的 ISO 3166-1 Alpha-2 國家碼的使用者帳戶。 例如，US 代表美國、FR 代表法國。 某些國家/地區未提供某些 Microsoft 365 服務。 如需詳細資訊，請參閱 [關於授許可權制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。
+您只能將授權指派給 **UsageLocation** 屬性設定為有效的 ISO 3166-1 Alpha-2 國家碼的使用者帳戶。 例如，US 代表美國、FR 代表法國。 某些國家/地區沒有提供一些 Microsoft 365 服務。 如需詳細資訊，請參閱 [關於授許可權制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。
     
 若要尋找沒有 **UsageLocation** 值的帳戶，請執行此命令。
 
@@ -131,7 +133,7 @@ Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-此範例會將 **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) 授權方案的授權指派給未授權的使用者 **belindan \@ litwareinc.com**：
+此範例會將 **litwareinc:ENTERPRISEPACK** (Office 365 企業版 E3) 授權方案的授權指派給未授權的使用者 **belindan \@ litwareinc.com**：
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -147,7 +149,7 @@ Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLi
 >您無法將多個授權指派給使用者，請使用相同的授權計畫。 如果您沒有足夠的可用授權，授權會依照 **Get-MsolUser** Cmdlet 所傳回的順序指派給使用者，直到可用的授權執行完畢為止。
 >
 
-此範例會將 Office 365 Enterprise E3) 授權計畫中 **litwareinc:ENTERPRISEPACK** (的授權指派給所有未授權的使用者：
+此範例會將 **litwareinc:ENTERPRISEPACK** (Office 365 企業版 E3) 授權計畫中的授權指派給所有未授權的使用者：
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -159,9 +161,9 @@ Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwa
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
-## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>使用適用于 Graph 模組的 Azure Active Directory PowerShell，將使用者移至不同訂閱 (授權方案) 
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>使用 Graph 模組的 Azure Active Directory PowerShell，將使用者移至不同訂閱 (授權方案) 
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下來，取得您要切換訂閱的使用者帳戶登入名稱，也稱為使用者主要名稱 (UPN) 。
 
@@ -211,7 +213,7 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [以 PowerShell 管理使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

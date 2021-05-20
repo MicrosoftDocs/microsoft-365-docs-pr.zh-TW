@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7fb0de4f8dc67331e7acca59e70d061fe7c19493
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 6f0c92371e7e9b7a3348f90df788ee8c3a46374b
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935734"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572150"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的列出事件 API
 
@@ -57,7 +57,7 @@ API 支援下列 **OData** 運算子：
 
 ## <a name="permissions"></a>權限
 
-需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [Access Microsoft 365 Defender APIs](api-access.md)
+需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱[Access Microsoft 365 Defender APIs](api-access.md)
 
 許可權類型 | 權限 | 許可權顯示名稱
 -|-|-
@@ -110,6 +110,7 @@ lastUpdateTime | 最後在後端更新事件的時間。<br /><br /> 當您為�
 地位 | 將事件分類 (*為使用* 中，或 *已解決*) 。 它可以協助您組織和管理事件的回應。 | 作用中
 嚴重性 | 會指出對資產的可能影響。 嚴重程度越高，影響越大。 通常較高的嚴重性專案需要最直接的注意。<br /><br />下列其中一個值： *資訊*、 *低*、* 中和 *高*。 | 中
 標籤 | 與事件關聯之自訂標記的陣列，例如，用來標示具有共同特性的事件群組。 | \[\]
+註解 | Secops 在管理事件時所建立的批註陣列，例如有關分類選項的其他資訊。 | \[\]
 警報 | 包含與該事件相關的所有警示的陣列，以及其他資訊，例如嚴重性、警示中所涉及的實體及警示來源。 | \[\] (查看以下警示欄位的詳細資料) 
 
 ### <a name="alerts-metadata"></a>警示中繼資料
@@ -118,7 +119,7 @@ lastUpdateTime | 最後在後端更新事件的時間。<br /><br /> 當您為�
 -|-|-
 為 alertid | 代表警示的唯一識別碼 | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId | 代表此警示相關聯之事件的唯一識別碼 | 924565
-serviceSource | 警示產生來源的服務，例如 Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender 身分識別或 Microsoft Defender for Office 365。 | MicrosoftCloudAppSecurity
+serviceSource | 警示產生來源的服務，例如 microsoft defender for Endpoint、Microsoft Cloud App Security、microsoft defender 身分識別或 microsoft defender for Office 365。 | MicrosoftCloudAppSecurity
 creationTime | 第一次建立警示的時間。 | 2020-09-06T14：46： 55.7182276 Z
 lastUpdatedTime | 後端最後更新警示的時間。 | 2020-09-06T14：46： 57.2433333 Z
 resolvedTime | 解決警示的時間。 | 2020-09-10T05：22：59Z
@@ -143,7 +144,7 @@ mitreTechniques | 攻擊技巧，與 [MITRE ATT&](https://attack.mitre.org/)™ 
 欄位名稱 | 描述 | 範例值
 -|-|-
 DeviceId | 在 Microsoft Defender for Endpoint 中指定的裝置識別碼。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  在 [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)中指定的裝置識別碼。 僅適用于已加入網域的裝置。 | Null
+aadDeviceId |  [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)中指定的裝置識別碼。 僅適用于已加入網域的裝置。 | Null
 deviceDnsName | 裝置的完整功能變數名稱。 | user5cx.middleeast.corp.contoso.com
 osPlatform | 裝置正在執行的作業系統平臺。| WindowsServer2016
 osBuild | 裝置執行的 OS 組建版本。 | 14393
@@ -184,7 +185,7 @@ deliveryAction | 在 *MailMessage* entityType 時可用。 | 已傳遞
 securityGroupId | 在  *SecurityGroup* entityType 時可用。 | 301c47c8-e15f-4059-ab09-e2ba9ffd372b
 securityGroupName | 在  *SecurityGroup* entityType 時可用。 | 網路設定運算子
 registryHive | 當 entityType 為  *Registry* 時可用。 | HKEY \_ 本機 \_ 電腦 |
-registryKey | 當 entityType 為  *Registry* 時可用。 | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+registryKey | 當 entityType 為  *Registry* 時可用。 | SOFTWARE\Microsoft\ Windows NT \CurrentVersion\Winlogon
 registryValueType | 當 entityType 為  *Registry* 時可用。 | 字串
 registryValue | 當 entityType 為  *Registry* 時可用。 | 31-00-00-00
 deviceId | 與實體相關之裝置的識別碼（如果有的話）。 | 986e5df8b73dacd43c8917d17e523e76b13c75cd
@@ -215,6 +216,13 @@ GET https://api.security.microsoft.com/api/incidents
             "status": "Active",
             "severity": "Medium",
             "tags": [],
+            "comments": [
+                {
+                    "comment": "test comment for docs",
+                    "createdBy": "secop123@contoso.com",
+                    "createdTime": "2021-01-26T01:00:37.8404534Z"
+                }
+            ],
             "alerts": [
                 {
                     "alertId": "caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC",
@@ -323,6 +331,7 @@ GET https://api.security.microsoft.com/api/incidents
             "status": "Active",
             "severity": "Low",
             "tags": [],
+            "comments": [],
             "alerts": [
                 {
                     "alertId": "da637349914833441527_393341063",
@@ -413,6 +422,7 @@ GET https://api.security.microsoft.com/api/incidents
             "status": "Active",
             "severity": "Informational",
             "tags": [],
+            "comments": [],
             "alerts": [
                 {
                     "alertId": "faf8edc936-85f8-a603-b800-08d8525cf099",

@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 資料遺失防護參考材料
-ms.openlocfilehash: a039b8d99bd92be0040f6207803981e8a2937c6f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296765"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572558"
 ---
 # <a name="data-loss-prevention-reference"></a>資料遺失防護參考
  
@@ -441,28 +441,30 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
   
 貴組織也可能設有專屬需求，在這種情況下，您可以選擇 **[自訂原則]** 選項從頭建立 DLP 原則。 自訂原則中不會有任何內容，也不含預先製作的規則。 
   
-## <a name="roll-out-dlp-policies-gradually-with-test-mode"></a>以測試模式逐漸推出 DLP 原則
+<!-- ## Roll out DLP policies gradually with test mode
 
-建立 DLP 原則時，您應考慮逐漸推出這些原則，以便在完全強制執行之前評估其影響及測試其效果。 例如，您不希望新的 DLP 原則不慎封鎖數千份完成工作所需之文件的存取。
+rehomed to Plan for DLP
+
+When you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before fully enforcing them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents that people require access to in order to get their work done.
   
-如果您正在建立的 DLP 原則可能有重大影響，建議依照下列順序進行：
+If you're creating DLP policies with a large potential impact, we recommend following this sequence:
   
-1. **以測試模式啟動但不顯示原則提示**，然後使用 DLP 報告和任何事件報告來評估影響。 您可以使用 DLP 報告來檢視原則相符項目的號碼、位置、類型和嚴重性。 根據結果，您可以視需要微調規則。 在測試模式中，DLP 原則不會影響您的組織中工作人員的生產力。 
+1. **Start in test mode without Policy Tips** and then use the DLP reports and any incident reports to assess the impact. You can use DLP reports to view the number, location, type, and severity of policy matches. Based on the results, you can fine tune the rules as needed. In test mode, DLP policies will not impact the productivity of people working in your organization. 
     
-2. **移至測試模式並顯示通知和原則提示**，以便您開始教導使用者相關規範原則及熟悉即將套用的規則。在這個階段，您也可以要求使用者回報誤判，以便您進一步調整規則。 
+2. **Move to Test mode with notifications and Policy Tips** so that you can begin to teach users about your compliance policies and prepare them for the rules that are going to be applied. At this stage, you can also ask users to report false positives so that you can further refine the rules. 
     
-3. **開始完整強制執行原則**，以便套用規則中的動作，並保護內容。 繼續監視 DLP 報告以及任何事件報告或通知，確保得到您想要的結果。 
+3. **Start full enforcement on the policies** so that the actions in the rules are applied and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend. 
 
-    ![使用測試模式和開啟原則的選項](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Options for using test mode and turning on policy](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
-    您可以隨時關閉 DLP 原則，關閉會影響原則中的所有規則。 不過，也可以藉由在規則編輯器中切換每個規則的狀態來個別關閉規則。
+    You can turn off a DLP policy at any time, which affects all rules in the policy. However, each rule can also be turned off individually by toggling its status in the rule editor.
 
-    ![在原則中關閉規則的選項](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![Options for turning off a rule in a policy](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-    您也可以變更原則中多個規則的優先順序。 若要這樣做，請開啟原則進行編輯。 在規則列中，選擇省略符號 (**...**)，然後選擇一個選項，例如 **[下移]** 或 **[移至最後]**。
+    You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
 
     > [!div class="mx-imgBorder"]
-    > ![設定規則優先順序](../media/dlp-set-rule-priority.png)
+    > ![Set rule priority](../media/dlp-set-rule-priority.png)-->
   
 ## <a name="dlp-reports"></a>DLP 報告
 

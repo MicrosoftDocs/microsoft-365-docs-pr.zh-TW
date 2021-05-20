@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: 瞭解網域的定義，以及如何購買網域，或使用貴公司的預設網域。
+description: 瞭解網域的定義和購買網域的方式，或使用貴公司的預設網域來開始使用 OneDrive 和 Microsoft 應用程式。
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eac7de88e6d4c09e6807edbbd35d6ccc4718c671
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: b69881d72b91bd2cd36255d87444588166458c8c
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464330"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571874"
 ---
 # <a name="what-is-a-domain"></a>何謂網域？
 

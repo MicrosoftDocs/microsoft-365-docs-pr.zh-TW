@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cd544ca3d714ea46c74e10f8aba5e46dc0e1b35
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 36095f14ad3ed71c6a8d4707522c08c07ea738c4
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280990"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572726"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -127,7 +127,7 @@ ms.locfileid: "52280990"
       when: not mdatp_onboard.stat.exists
     ```
 
-- 新增適用于端點存放庫和金鑰的 Defender。
+- 新增適用于端點存放庫和金鑰的 Defender，請 `add_apt_repo.yml` ：
 
     您可以從下列其中一個 (通道部署在 Linux 上的 Defender： *[通道]*) ：「內部人員 *-快*」、「 *預覽人員-緩慢*」或「 *生產*」。每個通道都會對應至 Linux 軟體存放庫。
 
@@ -283,5 +283,5 @@ ms.locfileid: "52280990"
 
 - [管理 apt-套件](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
-## <a name="see-also"></a>另請參閱
-- [調查代理程式健康情況問題](health-status.md)
+## <a name="see-also"></a>請參閱
+- [調查代理程式健康狀況問題](health-status.md)

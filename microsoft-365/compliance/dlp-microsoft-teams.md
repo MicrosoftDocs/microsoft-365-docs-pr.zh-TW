@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 您現在可以將 DLP 原則套用至 Microsoft Teams 聊天和頻道。 請閱讀本文以深入瞭解其運作方式。
-ms.openlocfilehash: ac4c326fccd6faccca92844a55c419faa61a8d4c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 9fdce86473dcfbb7ec75b9d371b8782d4141ef57
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114181"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572462"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料外洩防護和 Microsoft Teams
 
@@ -115,7 +115,7 @@ ms.locfileid: "52114181"
     
 6. 接著選擇 [下一步]。
 
-7. 按一下 [儲存]。
+7. 按一下 **[儲存]**。
 
 針對您的變更，允許大約一小時以透過您的資料中心進行，並同步處理至使用者帳戶。
 <!-- again, why user accounts? -->
@@ -157,7 +157,7 @@ ms.locfileid: "52114181"
 
     完成複查或編輯設定後，請選擇 **[下一步]**。
 
-8. 在 [ **原則設定** ] 索引標籤上的 [ **您要先開啟原則或測試內容嗎？**] 中，選擇是否要開啟原則、 [先進行測試](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)，或是現在保持關閉狀態，然後選擇 **[下一步]**。
+8. 在 [ **原則設定** ] 索引標籤上的 [ **您要先開啟原則或測試內容嗎？**] 中，選擇是否要開啟原則、 [先進行測試](dlp-overview-plan-for-dlp.md#policy-deployment)，或是現在保持關閉狀態，然後選擇 **[下一步]**。
 
     > [!div class="mx-imgBorder"]
     > ![指定是否要開啟原則](../media/dlp-teams-policysettings-turnonnow.png)

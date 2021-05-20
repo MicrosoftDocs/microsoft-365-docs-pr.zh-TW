@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 996ef34f1fc8d9663f6fa59f13a56a169b7edd11
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 2d3b90a75f38a2c1146c0b0e5470c80b0af2c63f
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470520"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572270"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在系統管理中心部署增益集
 
@@ -38,13 +38,13 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
 若要深入瞭解如何在部署後管理增益集，請參閱 [在系統管理中心管理增益集](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  Word、Excel 及 PowerPoint 會使用 [SharePoint 應用程式目錄](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) ，將增益集部署至內部部署環境中的使用者，但不連接至 Microsoft 365 和/或支援所需 SharePoint 增益集。 Outlook 使用 Exchange 控制台在內部部署環境中部署，但不連接至 Microsoft 365。
+>  針對 Word、Excel 和 PowerPoint 使用[SharePoint 應用程式目錄](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)，將增益集部署至內部部署環境中的使用者，但不含 Microsoft 365 及/或支援 SharePoint 增益集的連線。 Outlook 使用 Exchange 控制台，在內部部署環境中部署，但不連接到 Microsoft 365。
   
-## <a name="recommended-approach-for-deploying-office-add-ins"></a>部署 Office 增益集的建議方式
+## <a name="recommended-approach-for-deploying-office-add-ins"></a>部署 Office 增益集的建議方法
 
 若要使用逐步式方法來推出增益集，建議您執行下列作業：
   
-1. 將增益集推出給一小部分的商務專案關係人和 IT 部門的成員。 如果部署成功，請移至步驟2。
+1. 針對小組的商務專案關係人以及 IT 部門的成員推出增益集。 如果部署成功，請移至步驟2。
     
 2. 向商務中的更多人員推出增益集。 請再次評估結果，如果成功，則繼續進行完整部署。
     
@@ -56,33 +56,33 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
 
 開始之前，請參閱 [判斷集中式部署的增益集是否適用于您的組織](centralized-deployment-of-add-ins.md)。
   
-1. 在系統管理中心中，移至 [ **設定** \> **增益集** ] 頁面。 如果您看不到 [ **增益集** ] 頁面，請移至 [ **設定** \> **整合型應用程式** \> **增益集** ] 頁面。
+1. 在系統管理中心中，移至 [**設定** \> **增益集**] 頁面。 如果您看不到 [**增益集**] 頁面，請移至 [**設定** 的 \> **整合式應用程式** \> **增益集**] 頁面。
 
 2. 選取頁面頂端的 [ **部署增益集** ]，然後選取 **[下一步]**。
 
     > [!NOTE]
-    > 系統管理中心已更新整合型應用程式的部署經驗。 整合式應用程式只有全域系統管理員才能看見，但其他使用者仍存在舊經驗。 如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 [**設定**  >  **整合型應用程式**]。 在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。
+    > 系統管理中心已更新整合型應用程式的部署經驗。 整合式應用程式只有全域系統管理員才能看見，但其他使用者仍存在舊經驗。 如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 **設定** 的  >  **整合式應用程式**。 在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。
 
-3. 選取 [選項]，然後依照指示執行。
+3. 選取選項，然後遵循指示操作。
   
-4. 如果您選取 [從 Office Store 新增增益集] 選項，請讓增益集成為選取範圍。 </br>
+4. 如果您選擇從 Office 儲存區中新增增益集的選項，請讓增益集成為選取範圍。 </br>
 
-    您可以依類別來查看可用的增益集： **建議您**、 **評級** 或 **名稱**。 Office Store 只有免費的增益集可供使用。 目前尚不支援付費增益集。 選取增益集之後，請接受條款及條件以繼續。 <br/> 
+    您可以依類別來查看可用的增益集： **建議您**、 **評級** 或 **名稱**。 Office 儲存區中僅提供可用的增益集。 目前尚不支援付費增益集。 選取增益集之後，請接受條款及條件以繼續。 <br/> 
 
     > [!NOTE]
-    > 透過 Office Store 選項，更新及增強功能會自動部署至使用者。
+    > 使用 Office 儲存區選項時，會自動將更新及增強功能部署至使用者。
 
-5. 在下一個頁面上，選取 [ **所有人**]、[ **特定使用者/群組**] 或 [ **僅限我** ]，以指定要部署增益集的人員。 使用 [搜尋] 方塊尋找特定的使用者或群組。 <br/>
+5. 在下一個頁面上，請選取 [所有人 **]**、[特定使用者/群組 **]**，或 [只有我 **]** 來指定增益集的部署對象。 使用 [搜尋] 方塊尋找特定的使用者或群組。 <br/>
 
     > [!NOTE]
     > 若要瞭解適用于增益集的其他狀態，請參閱 [增益集狀態](./manage-addins-in-the-admin-center.md)。
   
-6. 選取 [ **部署**]。
+6. 選取 [部署 **]**。
   
 7. 部署增益集時，會出現綠色的勾選標記。 依照頁面上的指示測試增益集。
 
     > [!NOTE]
-    > 使用者可能需要重新開機 Office 來查看應用程式功能區上的增益集圖示。 Outlook 增益集最多可能需要24小時才能出現在應用程式功能區上。
+    > 使用者可能需要重新開機 Office 以查看應用程式功能區上的增益集圖示。 Outlook 增益集最多可能需要24小時才能出現在應用程式功能區上。
 
 8. 完成時，選取 **[下一步]**。 如果您只是自行部署，您可以選取 [ **變更可存取增益集的人員** ]，以部署至其他使用者。
 
@@ -92,7 +92,7 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>將增益集指派給使用者和群組時的考慮事項
 
-全域管理員和 Exchange 系統管理員可以將增益集指派給每個人或特定使用者和群組。 每個選項都有其意涵：
+全域系統管理員和 Exchange 系統管理員可以將增益集指派給每個人或特定使用者和群組。 每個選項都有其意涵：
   
 - **所有人** 此選項會將增益集指派給組織中的每一位使用者。 請謹慎使用此選項，並且只有在貴組織需要普遍使用此增益集時才使用此選項。
 
@@ -104,7 +104,7 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
 
 組織的右選項視您的設定而定。 不過，我們建議您使用群組來進行工作分派。 身為系統管理員，您可能會發現使用群組來管理增益集及控制這些群組的成員資格，而不是每次指派個別使用者。 在某些情況下，您可能會想要限制一小部分使用者的存取，只要手動指派使用者給特定的使用者。
   
-## <a name="more-about-office-add-ins-security"></a>更多關於 Office 增益集的安全性
+## <a name="more-about-office-add-ins-security"></a>Office 增益集安全性的詳細資訊
 
 Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔案合併，但最重要的是，Office 增益集會與指向包含所有程式碼和邏輯的 Web 應用程式合併。增益集可以有各種不同的功能。例如，增益集可以：
   
@@ -127,16 +127,16 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
     > [!NOTE]
     > 管理員不需要移除 LOB 增益集進行更新。   在 [增益集] 區段中，系統管理員只要按一下 LOB 增益集，然後選擇右下角的 [ **更新] 按鈕** 即可。 只有當新增益集的版本高於現有增益集的版本時，更新才會運作。
 
-- **Office Store 增益集：** 當系統管理員從 Office Store 中選取增益集時，如果 Office Store 中的增益集更新，增益集將在稍後的集中式部署中更新。 在下次啟動相關的 Office 應用程式時，增益集就會更新。 Web 應用程式可以隨時變更。
+- **Office 儲存區增益集：** 當系統管理員從 Office 儲存區中選取增益集時，如果 Office 儲存區中的增益集更新，增益集將在稍後的集中式部署中更新。 在下次啟動相關的 Office 應用程式時，增益集就會更新。 Web 應用程式可以隨時變更。
   
-## <a name="learn-more"></a>深入了解
+## <a name="related-content"></a>相關內容
 
-[在系統管理中心管理增益集](manage-addins-in-the-admin-center.md)
+[在系統管理中心管理增益集](manage-addins-in-the-admin-center.md) (文章) 
 
-[建立第一個 Word 工作窗格增益集](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator)。
+[建立第一個 Word 工作窗格增益集](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (篇) 
 
-[對存放區中的增益集進行未成年人和取得](minors-and-acquiring-addins-from-the-store.md)
+[從 store 取得增益集](minors-and-acquiring-addins-from-the-store.md) (文章) 
   
-[使用集中式部署 PowerShell Cmdlet 來管理增益集](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)
+[使用集中式部署 PowerShell Cmdlet 來管理增益集](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (文章) 
   
-[疑難排解：使用者未看到增益集](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[疑難排解：使用者未看到增益集](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (文章) 

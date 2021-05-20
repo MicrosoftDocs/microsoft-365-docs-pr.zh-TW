@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 IdentityLogonEvents 表格
 description: 深入瞭解在高級搜尋架構的 IdentityLogonEvents 資料表中，由 Active Directory 記錄的驗證事件
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，IdentityLogonEvents，Azure AD，Active Directory，身分識別，身分識別
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，資料類型，描述，IdentityLogonEvents，Azure AD，Active Directory，身分識別，身分識別
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 55ec52acd5419729f46779f1d4205cd55ce27f9d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3cd0c0f371c73a515704791e829be7266d400580
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935806"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572750"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -35,13 +35,13 @@ ms.locfileid: "51935806"
 **適用於：**
 - Microsoft 365 Defender
 
-[！附注] `IdentityLogonEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含有關驗證活動的資訊，這些活動是透過 microsoft Defender 所捕獲的內部部署 Active Directory，針對 Microsoft Cloud App Security 所捕獲的 microsoft online 服務所進行的身分識別和驗證活動所建立。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `IdentityLogonEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含有關驗證活動的資訊，這些活動是透過 microsoft Defender 所捕獲的內部部署 Active Directory 取得，以供 Microsoft Cloud App Security 所捕獲的 microsoft online services 相關的身分識別與驗證活動所組成。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
 > 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的內建架構參照。
 
 >[!NOTE]
->下表涵蓋 Cloud App Security （特別是互動式登入及驗證活動）所追蹤的 Azure Active Directory (AD) 登入活動 ActiveSync 和其他舊版通訊協定。 您可以在 Azure AD 審核記錄中查看無法在此表格中使用的非互動式登入。 [深入瞭解將雲端 App 安全性連接至 Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>下表涵蓋雲端 App 安全性所追蹤 (Azure AD) 登入活動的 Azure Active Directory，尤其是使用 ActiveSync 和其他舊版通訊協定進行互動式登入和驗證活動。 您可以在 Azure AD 審核記錄中查看無法在此表格中使用的非互動式登入。 [深入瞭解如何將雲端 App 安全性連接至 Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 

@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: 瞭解如何使用 Windows PowerShell 將部分個人的使用者密碼設為永不過期。
-ms.openlocfilehash: c70fce1c3ea9cb1dea66982a27ddb24e2b2de255
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: 登入您的 Microsoft 365 系統管理員帳戶，將某些個別使用者密碼設定為永不到期，使用 Windows PowerShell。
+ms.openlocfilehash: 0747e0bfe8a7389db554d5d6a7f685605e013306
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222060"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571922"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>設定個別使用者的密碼永不過期
 
@@ -35,16 +35,16 @@ ms.locfileid: "51222060"
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) 
+本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../../business-video/admin-center-overview.md) 
 
 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
 
-Microsoft cloud service 的全域系統管理員可以使用 [ [Azure Active Directory PowerShell For Graph]](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) ，將密碼設為不會到期的特定使用者。 您也可以使用 [AzureAD](/powershell/module/Azuread) Cmdlet 來移除永不過期的設定，或查看哪些使用者密碼設定為永不過期。
+Microsoft cloud service 的全域系統管理員可以使用 Graph 的[Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) ，設定特定使用者不會到期的密碼。 您也可以使用 [AzureAD](/powershell/module/Azuread) Cmdlet 來移除永不過期的設定，或查看哪些使用者密碼設定為永不過期。
 
-本指南適用于其他提供者，例如 Intune 和 Microsoft 365，也就是針對身分識別及目錄服務，也依賴 Azure AD。 [密碼到期] 是原則中唯一可以變更的部分。
+本指南適用于其他提供者，例如 Intune 和 Microsoft 365，也取決於 Azure AD 的身分識別和目錄服務。 [密碼到期] 是原則中唯一可以變更的部分。
 
 > [!NOTE]
-> 只有未透過目錄同步處理同步處理的使用者帳戶密碼才能設定為不會過期。 如需目錄同步作業的詳細資訊，請參閱 [CONNECT ad With AZURE AD](/azure/active-directory/connect/active-directory-aadconnect)。
+> 只有未透過目錄同步處理同步處理的使用者帳戶密碼才能設定為不會過期。 如需目錄同步處理的詳細資訊，請參閱[連線 AD with Azure AD](/azure/active-directory/connect/active-directory-aadconnect)。
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>如何檢查密碼的到期原則
 
@@ -128,6 +128,6 @@ Run one of the following commands:
 
 ## <a name="related-content"></a>相關內容
 
-[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md)
+[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
 
-[重設密碼](../add-users/reset-passwords.md)
+[重設密碼](../add-users/reset-passwords.md) (文章)

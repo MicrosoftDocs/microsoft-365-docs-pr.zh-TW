@@ -24,19 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
-description: 瞭解如何使用自助密碼重設工具來重設密碼。
-ms.openlocfilehash: d24e826287f69f867fdaf9a5c8b424dbad4e0ebb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 瞭解如何設定原則，讓使用者可以使用自助密碼重設工具來重設自己的密碼。
+ms.openlocfilehash: 2c79d5611ab2db00f4de5f227b0ec2f411955558
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241829"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571850"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
 就像 Microsoft 365 管理員一樣，您可以讓人員使用[自助密碼重設工具](https://go.microsoft.com/fwlink/p/?LinkId=522677)，這樣您就不需要重設密碼。 這可為您分擔一些工作！
   
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
   
 - 您可以使用任何 Microsoft 365 商務、教育或非盈利性收費方案，**免費** 為雲端使用者取得自助密碼重設。 它不會與 Microsoft 365 試用版搭配使用。
 
@@ -44,7 +44,7 @@ ms.locfileid: "52241829"
 
 - **如果您使用的是內部部署 Active Directory**，則不會套用上述兩個點。 相反地，您可以設定此設定，但 **需要對 AZURE AD 進階版付費訂閱**。
 
-本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [什麼是系統管理員帳戶？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
+本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [什麼是系統管理員帳戶？](../../business-video/admin-center-overview.md)
 
 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
 
@@ -74,8 +74,8 @@ ms.locfileid: "52241829"
 
 ## <a name="related-content"></a>相關內容
 
-[設定組織的密碼到期原則](../manage/set-password-expiration-policy.md)
+[為您的組織設定密碼到期原則](../manage/set-password-expiration-policy.md) (文章) 
 
-[設定個別使用者的密碼永不過期](set-password-to-never-expire.md)
+[設定個別使用者的密碼永不過期](set-password-to-never-expire.md) (文章)
 
-[Microsoft 365 商務版訓練影片](../../business-video/index.yml)
+[Microsoft 365 商務版訓練](../../business-video/index.yml)影片 (連結] 頁面) 

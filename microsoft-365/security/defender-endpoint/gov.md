@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 189cb574a436a457cce312f6cb02ca1bf7863a18
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 0276f0464f898d3675e4cc1d6b69185e7e390a87
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333491"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572666"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>適用於美國政府客戶的適用於端點的 Microsoft Defender
 
@@ -86,7 +86,7 @@ Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/c
 Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 8.1 企業版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 8 Pro | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 7 SP1 企業版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 7 SP1 Enterprise | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Linux | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 macOS | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -97,7 +97,7 @@ iOS | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](image
 > 若已指定修補程式，必須在裝置上架之前部署，才能將 Defender 設定為正確的環境。
 
 > [!NOTE]
-> 使用 [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)嘗試使用 windows 10 或 windows Server 2019 之前的板載 windows 裝置？ 如果使用 [設定向導](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)，或是使用 [命令列](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) 或 [腳本](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) -將 "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" 參數設定為1，則需要在 "Azure CLOUD" 底下選擇「azure US 政府」。
+> 嘗試使用[Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)Windows 10 或 Windows Server 2019 的板載 Windows 裝置？ 如果使用 [設定向導](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)，或是使用 [命令列](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) 或 [腳本](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) -將 "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" 參數設定為1，則需要在 "Azure CLOUD" 底下選擇「azure US 政府」。
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>針對伺服器使用 Azure Defender 時的作業系統版本
 [針對伺服器使用 Azure Defender](/azure/security-center/security-center-wdatp)時，可支援下列作業系統版本：
@@ -146,7 +146,7 @@ Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/sv
 ## <a name="api"></a>API
 您必須使用下列 URIs，而不是 [API 檔](apis-intro.md)中列出的公用 URIs：
 
-端點類型 | GCC | GCC 高 & DoD
+端點類型 | GCC | GCC高 & DoD
 :---|:---|:---
 登入 | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
 適用于 Endpoint API 的 Defender | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
@@ -167,7 +167,7 @@ Web 內容篩選 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg
 整合： Microsoft Cloud App Security | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 整合： Microsoft 合規性管理員 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 整合： Microsoft Defender 身分識別 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
-整合： Microsoft 端點 DLP | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作
-整合： Microsoft Intune | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
-整合： Microsoft Power 自動化 & Azure 邏輯應用程式 | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+整合： Microsoft 端點 DLP | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+整合： Microsoft Intune | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+整合： Microsoft Power Automate & Azure Logic Apps | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 Microsoft 威脅專家 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](images/svg/check-no.svg) 在工程處理積壓工作

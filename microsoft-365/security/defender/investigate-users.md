@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7084b9370a0dd83265b37ff1d152e2164fe32813
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 72eb111da2f342b78aa6161c7334a7252314b4a5
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539128"
+ms.locfileid: "52572798"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的使用者
 
@@ -43,7 +43,7 @@ ms.locfileid: "52539128"
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Microsoft 365 security center 中事件之使用者帳戶摘要窗格的範例":::
 
 > [!NOTE]
-> [使用者] 頁面會顯示 Azure Active Directory (AD) 組織和群組，協助您瞭解與使用者相關聯的群組和許可權。
+> [使用者] 頁面會顯示 Azure Active Directory (Azure AD) 組織和群組，協助您瞭解與使用者相關聯的群組和許可權。
 
 在此 [飛出] 頁面中，您可以查看使用者威脅資訊，包括任何目前的事件、作用中的警示、風險層級，以及使用者曝光、帳戶、裝置等等。
 
@@ -84,7 +84,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 視需要進行處理內事件，繼續進行 [調查](investigate-incidents.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)

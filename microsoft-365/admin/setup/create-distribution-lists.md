@@ -22,13 +22,13 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: 瞭解如何在 Microsoft 365 系統管理中心建立通訊群組或清單，讓您可以將電子郵件傳送給群組，而不必輸入每個收件者的名稱。
-ms.openlocfilehash: bd5e246caa8d1b56a33db21d70eb5cbdb7b5ed92
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 在 Microsoft 365 系統管理中心建立通訊群組或清單，這樣您就可以將電子郵件傳送給群組，而不需輸入每個收件者的名稱。
+ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535815"
+ms.locfileid: "52572246"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心建立通訊群組
   
@@ -73,3 +73,11 @@ ms.locfileid: "52535815"
 請參閱如何使用 Outlook 2016 中的群組，以及在[Outlook 中使用連絡人群組 (先前的通訊群組清單) 中](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)的「Outlook」。 
   
 請參閱 [通訊群組問題](/office365/troubleshoot/groups/distribution-list-issues) ，以取得通訊群組清單問題的協助。 
+
+## <a name="related-content"></a>相關內容
+
+[使用者的電子郵件設定](../email/office-365-user-email-settings.md) (文章) 
+
+[在 Microsoft 365 系統管理中心建立、編輯或刪除安全性群組](../email/create-edit-or-delete-a-security-group.md) (文章) 
+
+[建立共用信箱](../email/create-a-shared-mailbox.md) (文章)

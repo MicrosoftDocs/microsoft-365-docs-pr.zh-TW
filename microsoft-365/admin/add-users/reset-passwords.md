@@ -26,13 +26,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 瞭解如何在商務用 Microsoft 365 中重設使用者的密碼。
-ms.openlocfilehash: 8720942d60b5ce4efaca8885bd5209cb3e7e7ef8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: 使用您的 Microsoft 365 系統管理員帳戶登入，以在商務用 Microsoft 365 中重設使用者的密碼。
+ms.openlocfilehash: 8d4666eb70b1d5349f71c906f05510a8a54ded74
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52290992"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571970"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -40,7 +40,7 @@ ms.locfileid: "52290992"
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
+本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../../business-video/admin-center-overview.md)
 
 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
 
@@ -122,16 +122,12 @@ ms.locfileid: "52290992"
   
 ## <a name="related-content"></a>相關內容
   
-[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md)
+[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
 
-[重設密碼](../add-users/reset-passwords.md)
+[重設密碼](../add-users/reset-passwords.md) (文章)
 
-[設定個別使用者的密碼永不過期](set-password-to-never-expire.md)
+[設定個別使用者的密碼永不過期](set-password-to-never-expire.md) (文章)
 
-[設定組織的密碼到期原則](../manage/set-password-expiration-policy.md)
+[為您的組織設定密碼到期原則](../manage/set-password-expiration-policy.md) (文章) 
 
-[還原使用者](restore-user.md)
-
-[移除離職員工](remove-former-employee.md)
-
-[商務用 Microsoft 365 訓練影片](../../business-video/index.yml)
+[Microsoft 365 商務訓練](../../business-video/index.yml)影片 (連結] 頁面) 

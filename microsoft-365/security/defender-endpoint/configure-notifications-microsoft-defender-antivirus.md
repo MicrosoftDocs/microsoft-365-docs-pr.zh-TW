@@ -11,22 +11,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 05/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6e11c9394f250a6f3882183224f53954b1390a23
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f885b6d7991e4175cd14be5bbe9e0a7c96b1580f
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274625"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572342"
 ---
 # <a name="configure-the-notifications-that-appear-on-endpoints"></a>設定出現在端點上的通知
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用於：**
 
@@ -50,11 +47,9 @@ ms.locfileid: "52274625"
 
 **使用 Windows 安全性應用程式來停用其他通知：**
 
-1. 按一下工作列中的盾牌圖示，或搜尋 **Defender** 的 [開始] 功能表，以開啟 Windows 安全性應用程式。
+1. 按一下工作列中的盾牌圖示，或搜尋 [**安全性**] 的 [開始] 功能表，開啟 Windows 安全性應用程式。
 
-2. 在左功能表列上，按一下 [ **病毒 & 威脅防護** 磚 (] 或 [盾牌] 圖示) 然後按一下 [ **病毒 & 威脅防護設定** ] 標籤：
-
-    ![Windows 安全性應用程式中的病毒 & 威脅防護設定] 標籤的螢幕擷取畫面](images/defender/wdav-protection-settings-wdsc.png)
+2. 在左功能表列上選取 [**病毒 & 威脅防護** 磚 (] 或 [盾牌] 圖示) 然後選取 [**病毒 & 威脅防護設定**]。
 
 3. 滾動至 [ **通知** ] 區段，然後按一下 [ **變更通知設定**]。
 

@@ -19,16 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: ac54e8bbc24393b7140fbc32efd48047beca2a1c
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: f641e2b99e2d61881eb86506a1770f4401cb98bc
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301737"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572330"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
-
-## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析概觀
 
 使用 Power BI 中 Microsoft 365 的流量分析，深入瞭解您的組織如何採用 Microsoft 365 內的各種服務。 您可以視覺化和分析 Microsoft 365 使用狀況資料、建立自訂報告，以及分享組織內的洞察力。 您也可以深入瞭解特定地區或部門如何使用 Microsoft 365。
   
@@ -119,7 +117,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>是否可以使用和自訂使用者群組的相同範本應用程式？
 
-可以。 若要讓一組系統管理員能夠在相同的範本應用程式上共同作業，您可以運用 Power BI 的應用程式工作區功能。如需詳細資訊，請參閱[我應該如何共同作業及共用儀表板和報告？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
+是。 若要讓一組系統管理員能夠在相同的範本應用程式上共同作業，您可以運用 Power BI 的應用程式工作區功能。如需詳細資訊，請參閱[我應該如何共同作業及共用儀表板和報告？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>可提供哪個時間範圍內的資料？
 
@@ -212,3 +210,11 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 ### <a name="can-i-hide-identifiable-information-such-as-user-group-and-site-names-in-reports"></a>是否可以隱藏報告中的使用者、群組和網站名稱等識別資訊？
 
 是，請參閱 [使收集的資料成為匿名的](enable-usage-analytics.md#make-the-collected-data-anonymous)。
+
+## <a name="related-content"></a>相關內容
+
+[啟用 Microsoft 365 使用情況分析](enable-usage-analytics.md) (文章)
+
+[流覽並使用報表 Microsoft 365 流量分析](navigate-and-utilize-reports.md) (文章) 
+
+[在 Microsoft 365 (的 [影片] 中查看使用狀況報告](../../business-video/act-on-report.md)) 

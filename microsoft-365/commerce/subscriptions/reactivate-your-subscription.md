@@ -19,20 +19,20 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: 深入瞭解當您的訂閱到期、停用或取消時，如何重新開機訂閱。
+description: 系統管理員可以在訂閱到期、停用或取消時，或在訂閱期限中間取消時，重新開機訂閱。
 ms.date: 04/07/2021
-ms.openlocfilehash: 63c65e90d01bfd2c67d1d2ecfed32a4d4ff8d27a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538456"
+ms.locfileid: "52572510"
 ---
-# <a name="reactivate-your-subscription"></a>重新啟用您的訂閱
+# <a name="reactivate-your-subscription"></a>重新啟動您的訂閱
 
 您可以在系統管理中心重新啟用您的訂閱：訂閱已到期、已由 Microsoft 停用，或您已在訂閱期限內取消。
   
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 您必須是全域或計費系統管理員，才可重新啟用訂閱。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 

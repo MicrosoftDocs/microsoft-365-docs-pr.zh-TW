@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 711765ca9638e310ab03f841ba3aba558b4fd1cb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f7f9ae22081eb7c55cf35b08844b88230bd0b201
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275285"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571814"
 ---
 # <a name="configure-end-user-interaction-with-microsoft-defender-antivirus"></a>設定使用者與 Microsoft Defender 防毒軟體互動互動
 
@@ -35,8 +35,8 @@ ms.locfileid: "52275285"
 
 使用下列文章設定使用者與 Microsoft Defender 防毒軟體互動互動
 
-- [設定出現在端點上的通知](configure-notifications-microsoft-defender-antivirus.md) 設定及自訂通知、通知的自訂文字，以及修復重新開機以進行修復的通知
+- **[設定出現在端點上的通知](configure-notifications-microsoft-defender-antivirus.md)** 設定和自訂通知，包括通知的文字，以及修正所需重新開機的通知。
 
-- [防止使用者看到或與 Microsoft Defender 防毒軟體使用者介面互動](prevent-end-user-interaction-microsoft-defender-antivirus.md)隱藏使用者的使用者介面
+- **[防止使用者看到或與 Microsoft Defender 防毒軟體使用者介面互動](prevent-end-user-interaction-microsoft-defender-antivirus.md)** 從使用者隱藏 **病毒 & 威脅防護** 使用者介面。
 
-- [防止使用者在本機修改原則設定](configure-local-policy-overrides-microsoft-defender-antivirus.md) 避免 (或允許) 使用者覆寫其個別端點上的原則設定
+- **[防止使用者在本機修改原則設定](configure-local-policy-overrides-microsoft-defender-antivirus.md)** 避免 (或允許) 使用者覆寫其個別端點上的原則設定。

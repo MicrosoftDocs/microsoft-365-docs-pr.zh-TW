@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 遵循此方案中的步驟，從 Microsoft 365 中移除前任員工，並保護組織的資料。
-ms.openlocfilehash: 79baf5cbd94d555c1dff1859f5045cde3dbcfdc0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 44741382a84cca15277308a44b3fd20470aa3a08
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535903"
+ms.locfileid: "52572042"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概覽：移除前任員工和安全資料
 
@@ -37,7 +37,7 @@ ms.locfileid: "52535903"
 
 :::image type="content" source="../../media/delete-user-overview.png" alt-text="螢幕擷取畫面：刪除離職員工的步驟":::
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 您必須是全域系統管理員，才可完成此方案中的步驟。
 
@@ -59,6 +59,6 @@ ms.locfileid: "52535903"
 |[步驟 6-移除並刪除離職員工的 Microsoft 365 授權](remove-former-employee-step-7.md) <br/> |當您移除授權時，您可將授權指派給其他人員。或者，您也可以刪除授權，這樣就不必在雇用另一位人員之前繼續付費。<br/><br/> 當您移除或刪除授權時，使用者的舊電子郵件、連絡人及行事曆會保留 **30 天**，然後永久刪除。 如果您移除或刪除使用者的授權，但不刪除帳戶，則使用者 OneDrive 中的將會保留，即使超過 30 天後仍可存取。  <br/> |
 |[步驟 7-刪除離職員工的使用者帳戶](remove-former-employee-step-7.md) <br/> |這會從您的系統管理中心移除帳戶。 保持有條不紊。 <br/> |
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[還原使用者](restore-user.md)
+[還原使用者](restore-user.md) (文章) 

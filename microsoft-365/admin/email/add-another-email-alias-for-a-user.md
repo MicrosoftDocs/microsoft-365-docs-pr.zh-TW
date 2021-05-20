@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: '瞭解您可以如何具有一個以上的電子郵件地址，稱為「電子郵件別名」，與您的商務用 Microsoft 365 相關聯。 '
-ms.openlocfilehash: fd5fe2906335c8c2d1f41ac7643b7312138e15f5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: '瞭解您可以如何具有一個以上的電子郵件地址，稱為與您的商務用 Microsoft 365 相關的電子郵件別名。 '
+ms.openlocfilehash: ec5bc69a42c5183413f11649b7d7ec6baaf40b01
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241685"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572102"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>為使用者新增其他電子郵件別名
   
@@ -36,7 +36,6 @@ ms.locfileid: "52241685"
 在 Microsoft 365 中，主要的電子郵件地址通常是使用者在建立帳戶時所指派的電子郵件地址。 When the user sends email to someone else, their primary email address is what typically appears in the  *From*  field in email apps. 他們也可以有一個以上的電子郵件地址與其 Microsoft 365 的商務帳戶相關聯。 These additional addresses are called aliases. 
   
 例如，假設 Jenna 具有電子郵件地址 jenna@contosoco.com，但她也想要在 jen@contosoco.com 接收電子郵件，因為有些人會以該名稱來參照她。 您可以為她建立別名，這樣兩個電子郵件地址就會移至 Jenna 的 [收件匣]。
-<br><br>  
   
 一個使用者最多可建立 400 個別名。不需要額外費用或授權。
   
@@ -86,8 +85,10 @@ ms.locfileid: "52241685"
 
 新功能在2021年4月推出，可讓使用者在網頁上使用 Outlook 時，輕鬆地從別名傳送。 當該功能推出租使用者系統管理員使用 Cmdlet 的租用時 `Set-OrganizationConfig -SendFromAliasEnabled $true` ，租用中的使用者就可以存取核取方塊清單，其中每個專案都會對應至其 Outlook 設定中的別名。 選取別名會將其顯示在撰寫表單的 [寄件者] 下拉式清單中。
   
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[從不同的地址傳送電子郵件](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
+[從不同的位址傳送電子郵件](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (文章) 
 
-[變更使用名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md)
+[變更使用者名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md) (文章) 
+
+[在 Microsoft 365 中設定電子郵件轉寄](configure-email-forwarding.md) (文章)
