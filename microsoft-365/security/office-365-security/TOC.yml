@@ -38,6 +38,14 @@
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 安全性中心概觀
           href: ../defender/overview-security-center.md
+        - name: 適用於 Office 365 的 Defender 威脅總管
+          items:
+            - name: 威脅總管中的威脅搜捕
+              href: threat-hunting-in-threat-explorer.md
+            - name: 使用威脅總管的電子郵件安全性
+              href: email-security-in-microsoft-defender.md
+            - name: 威脅總管與即時偵測基本概念
+              href: real-time-detections.md
         - name: 電子郵件實體頁面
           href: mdo-email-entity-page.md
         - name: AIR 概觀
@@ -192,14 +200,6 @@
           href: zero-hour-auto-purge.md
     - name: 偵測
       items:
-        - name: 適用於 Office 365 的 Defender 威脅總管
-          items:
-            - name: 威脅總管中的威脅搜捕
-              href: threat-hunting-in-threat-explorer.md
-            - name: 使用威脅總管的電子郵件安全性
-              href: email-security-in-microsoft-defender.md
-            - name: 威脅總管與即時偵測基本概念
-              href: real-time-detections.md
         - name: 使用威脅追蹤工具
           href: threat-trackers.md
         - name: 檢視警示
