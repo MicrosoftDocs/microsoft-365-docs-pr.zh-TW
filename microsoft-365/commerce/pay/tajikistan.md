@@ -1,23 +1,24 @@
 ---
 title: 塔吉克斯坦的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ea316ec074ac55ed79bd1a78ae4ae2c56c05d6c4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c02093729f48e8c71919937cd1a7f84b6dbe0f20
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272753"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537748"
 ---
 # <a name="payment-information-for-tajikistan"></a>塔吉克斯坦的付款資訊
 
@@ -31,4 +32,4 @@ ms.locfileid: "52272753"
 **SWIFT 程式碼：** CITIGB2L  
 **IBAN：** GB95CITI18500812510049  
 **帳戶號碼：** 12510049  
-**帳戶名稱：** 微軟  
+**帳戶名稱：** 微軟

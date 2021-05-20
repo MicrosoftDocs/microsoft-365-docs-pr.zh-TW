@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 建立共用信箱讓組織中的多位使用者共同負責讀取及回覆傳送到某個地址的電子郵件。
-ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915875"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537604"
 ---
 # <a name="create-a-shared-mailbox"></a>建立共用信箱 
 
@@ -38,7 +38,7 @@ ms.locfileid: "50915875"
 
 建立共用信箱能讓一群人輕易監視某個共用電子郵件地址 (例如 info@contoso.com) 的電子郵件，並從該電子郵件地址傳送電子郵件。當群組中的某人回覆一則傳送到共用信箱的郵件時，該封電子郵件會顯示為從共用信箱發出，而非從個別使用者發出。
 
-共用信箱中也包含了共用行事曆。 許多小型企業喜歡將共用行事曆當做一個可以讓所有人輸入各自約會的地方。 舉例來說，如果您有 3 個人負責客戶拜訪，他們就都可以使用共用行事曆來輸入約會。 這是能讓每個人都能掌握各自事務的簡便方法。
+共用信箱中也包含了共用行事曆。許多小型企業喜歡將共用行事曆當做一個可以讓所有人輸入各自約會的地方。舉例來說，如果您有 3 個人負責客戶拜訪，他們就都可以使用共用行事曆來輸入約會。這是能讓每個人都能掌握各自事務的簡便方法。
 
 建立共用信箱前，請務必閱讀[關於共用信箱](about-shared-mailboxes.md)，以取得詳細資訊。
 
@@ -198,14 +198,14 @@ ms.locfileid: "50915875"
 
 3. 共用信箱的任何成員都可以建立、檢視及管理行事曆上的約會，就像他們處理其個人約會一樣。 身為共用信箱成員的每個人都可以看到其對共用信箱的變更。
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[關於共用信箱](about-shared-mailboxes.md)
+[關於共用信箱](about-shared-mailboxes.md) (文章)
 
-[設定共用信箱](configure-a-shared-mailbox.md)
+[設定共用信箱](configure-a-shared-mailbox.md) (文章)
 
-[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md)
+[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md) (文章)
 
-[從共用信箱中移除授權](remove-license-from-shared-mailbox.md)
+[從共用信箱移除授權](remove-license-from-shared-mailbox.md) (文章)
 
-[解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md)
+[解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md) (文章)

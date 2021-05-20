@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 資料外洩防護內部部署掃描器
-ms.openlocfilehash: 242956a3c6469756481fb823340e715a210562af
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: deae5dfa803b002174583ae67412af9fc028fcb9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114171"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538096"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>開始使用資料外洩防護內部部署掃描器 (預覽)
 

@@ -23,20 +23,23 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 瞭解如何在 Microsoft 365 中購買功能變數名稱。
-ms.openlocfilehash: eb0520f605715c3403e1ce0134aa60abed0f6751
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 53c71796c09f08d1f50c58704b8dd95c1a241518
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470508"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537568"
 ---
 # <a name="buy-a-domain-name"></a>購買網域名稱
+
+> [!NOTE]
+> 如果您的組織使用中國所運作的 Office 365，請參閱 how [to 購買網域，以瞭解中國中的世紀所運作的 Office 365](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md)。
 
  *若要新增、修改或移除網域，您 **必須** 是 [企業或企業方案](https://products.office.com/business/office)的 **全域系統管理員**。這些變更會影響整個承租人、*自訂* 的系統管理員或 *一般使用者* 無法進行這些變更。*  
 
  若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登入並前往設定 \> 網域 \> 購買網域
+## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登入並前往設定 \> 網域 \> 購買網域
 
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
@@ -68,23 +71,21 @@ ms.locfileid: "51470508"
 > [!NOTE]
 > 當您選取 [ **購買網域**] 時，當租使用者透過 Microsoft 合作夥伴購買/管理時，可能會重新導向至您的 Microsoft 合作夥伴網站。
 
-### <a name="domain-privacy"></a>網域隱私權
+## <a name="domain-privacy"></a>網域隱私權
 在購買網域時，我們會提供免費的網域隱私權訂閱。 這可讓您的連絡人資訊以 ICANN 私人的方式註冊您的網域。 [瞭解更多資訊。](https://whois.icann.org/en/privacy-and-proxy-services)
   
-### <a name="buy-a-domain-from-another-domain-registrar"></a>向其他網域註冊機構購買網域
-如果您想要從 [GoDaddy](https://www.godaddy.com)以外的網域註冊機構購買網域，我們建議您在下列各項中使用，以支援自動安裝 (domain Connect) 。 
+## <a name="buy-a-domain-from-another-domain-registrar"></a>向其他網域註冊機構購買網域
+如果您想要從[GoDaddy](https://www.godaddy.com)以外的網域註冊機構購買網域，建議您使用下列其中一個支援自動安裝 (domain 連線) 。 
   
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [Wordpress](https://www.wordpress.com) 
 
    
-### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>將網域移轉到其他網域註冊機構
+## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>將網域移轉到其他網域註冊機構
 
 如果負責管理您網域的提供者，並不支援所有需要的 DNS 記錄，您可以將網域移轉到其他註冊機構。移轉網域後，您需變更收款對象，以續約並保留您的網域名稱。
   
 Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
- 
-
 
 
 ::: moniker range="o365-21vianet"
@@ -99,12 +100,12 @@ Request the transfer at the registrar that you want to move your domain to. Look
 > [!CAUTION]
 > 有些網域註冊機構或 DNS 主機服務提供者不允許建立 Microsoft 365 所需的所有 DNS 記錄。 下列主機服務提供者則支援所有必要的記錄。 如果您想使用其他的主機服務提供者，請[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
   
-在網域註冊機構) 註冊網域 (後，請以系統管理員身分登入 Microsoft 365，並設定您的網域，以供您使用電子郵件地址及其他服務。
+在網域註冊機構) 註冊網域 (後，請以系統管理員身分登入 Microsoft 365，並設定您的網域，這樣您就可以使用電子郵件地址及其他服務。
   
 > [!NOTE]
-> 本文中 SharePoint Online 公用網站資訊僅適用于您的組織在365年3月 9 2015 日之前購買 Microsoft。 
+> 本文中 SharePoint Online 公用網站資訊僅適用于您的組織在2015年3月9日之前購買 Microsoft 365。 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>支援 Microsoft 365 所需之所有 DNS 記錄的網域註冊機構
+### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>支援 Microsoft 365 所需之所有 DNS 記錄的網域註冊機構
 
 - [Oray](https://oray.com/)
     
@@ -116,10 +117,10 @@ Request the transfer at the registrar that you want to move your domain to. Look
     
 ::: moniker-end
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[新增網域至 Microsoft 365](../setup/add-domain.md)
+[新增網域至 Microsoft 365](../setup/add-domain.md) (文章) 
 
-[網域常見問題集](../setup/domains-faq.yml)
+[網域常見問題解答](../setup/domains-faq.yml) (篇) 
 
-[更新 DNS 記錄以將您的網站保留在目前的主機服務提供者](../dns/update-dns-records-to-retain-current-hosting-provider.md)。
+[更新 DNS 記錄以將您的網站與目前的主機服務提供者](../dns/update-dns-records-to-retain-current-hosting-provider.md) (文章) 

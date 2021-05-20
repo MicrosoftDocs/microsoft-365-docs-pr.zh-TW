@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
-description: 了解如何加強貴組織對密碼攻擊的防護，以及為何應禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+description: 加強貴組織對密碼攻擊的防護，禁用常見密碼並啟用以風險為根據的多重要素驗證。
+ms.openlocfilehash: 1927e481625e93afa8aa064666e75ea8f891669e
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073862"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572294"
 ---
 # <a name="password-policy-recommendations"></a>密碼原則建議
 
@@ -74,7 +74,7 @@ ms.locfileid: "52073862"
 
 ### <a name="password-guidance-for-your-users"></a>使用者密碼指導方針
 
-以下是提供貴組織使用者的一些密碼指導方針。 請務必讓您的使用者了解這些建議，並在組織層級強制執行建議的密碼原則。
+這是給您組織使用者的一些密碼指南。請務必讓您的使用者了解這些建議，並在組織層級強制執行建議的密碼原則。
   
 - 請勿使用在任何其他網站上所使用的相同或相似密碼
 

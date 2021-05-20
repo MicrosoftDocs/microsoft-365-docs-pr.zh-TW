@@ -15,24 +15,24 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 202ebc8b79368c8d41fd3727b67359ddcb8a08fa
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a59b24cd29ab8bf3b9b08c7818813a7ab89f7ce2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204723"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537880"
 ---
-# <a name="remediate-malicious-email-delivered-in-office-365"></a>修復 Office 365 中傳遞的惡意電子郵件
+# <a name="remediate-malicious-email-delivered-in-office-365"></a>修正 Office 365 中傳遞的惡意電子郵件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
 - [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
 
-修正是指對威脅採取規定的動作。 傳送給您組織的惡意電子郵件可以由系統清除，不論是透過零小時自動清除 (ZAP) ，或是安全性小組透過修正動作（如 *移至收件* 匣 *、移至垃圾* 郵件、 *移至 [刪除的郵件*]、[ *虛刪除*] 或 [ *實刪除*]）。 Microsoft Defender for Office 365 P2/E5 可讓安全小組透過手動和自動調查來修正電子郵件和共同作業功能的威脅。
+修正是指對威脅採取規定的動作。 傳送給您組織的惡意電子郵件可以由系統清除，不論是透過零小時自動清除 (ZAP) ，或是安全性小組透過修正動作（如 *移至收件* 匣 *、移至垃圾* 郵件、 *移至 [刪除的郵件*]、[ *虛刪除*] 或 [ *實刪除*]）。 適用于 Office 365 P2/E5 的 Microsoft Defender 可讓安全小組透過手動和自動調查來修正電子郵件和共同作業功能的威脅。
 
 > [!NOTE]
-> 若要修正惡意電子郵件，安全性小組需要指派的 *搜尋和清除* 角色。 角色指派是透過安全性與合規性中心的許可權來完成。
+> 若要修正惡意電子郵件，安全性小組需要指派的 *搜尋和清除* 角色。 角色指派是透過 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)來完成。
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>開始之前所需注意的事項
 
@@ -43,7 +43,7 @@ ms.locfileid: "51204723"
 當安全性小組使用威脅瀏覽器中的搜尋和篩選功能手動識別威脅時，就會發生 *手動搜尋*。 在您識別出一組需要補救的電子郵件之後，就可以透過任何電子郵件 view (*惡意* 代碼、 *網路釣魚* 或 *所有電子郵件*) 來觸發手動電子郵件修復。
 
 > [!div class="mx-imgBorder"]
-> [![Office 365 威脅瀏覽器的手動搜尋依日期。](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![依日期 Office 365 威脅瀏覽器的手動搜尋。](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 安全小組可以使用威脅瀏覽器，以多種方式選取電子郵件：
 
@@ -104,7 +104,7 @@ ms.locfileid: "51204723"
   > [!NOTE]
   > 為了獲得最佳結果，修正應以50000或更少的批次完成。
 
-  修復期間只會處理 remediable 電子郵件。 Office 365 電子郵件系統無法修正 Nonremediable 電子郵件，因為它們不是儲存在雲端信箱中。
+  修復期間只會處理 remediable 電子郵件。 Nonremediable 電子郵件無法由 Office 365 電子郵件系統修正，因為它們不是儲存在雲端信箱中。
 
   系統管理員可以在隔離的電子郵件上採取動作（如有必要），但是如果不是手動清除，則這些電子郵件會因隔離區而過期。 使用者無法存取因惡意內容而隔離的電子郵件，因此安全性人員不需要採取任何動作來消除隔離威脅。 如果電子郵件是內部部署或外部電子郵件，則可以聯繫使用者來處理可疑的電子郵件。 或者，系統管理員可以使用個別的電子郵件伺服器/安全性工具來進行移除。 您可以在威脅瀏覽器中套用 *傳遞位置 = 部署* 外部篩選，以識別這些電子郵件。 若失敗或丟的電子郵件，或是使用者無法存取的電子郵件，就不會有任何電子郵件可遭到緩解，因為這些郵件不會到達信箱。
 

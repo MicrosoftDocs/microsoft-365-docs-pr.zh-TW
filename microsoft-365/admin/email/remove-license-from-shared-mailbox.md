@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '從共用信箱中移除授權，將其指派給其他使用者。 '
-ms.openlocfilehash: 2d0e6e6b1d6222bea80265bf6cc008e21ac3239c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332651"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537580"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>從共用信箱移除授權
 
@@ -47,6 +47,20 @@ ms.locfileid: "52332651"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+
+::: moniker-end
+
    > [!NOTE]
    > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
   
@@ -59,46 +73,6 @@ ms.locfileid: "52332651"
 5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
 
 6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/buy-licenses.md)。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
-
-    > [!NOTE]
-    > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
-
-2. 選取 [共用信箱]，然後選取 [**產品授權**] 旁的 [**編輯**]。
-
-3. [ **產品授權** ] 頁面上，針對您想要移除的授權，將切換設定為 [ **關閉** ]。
-
-4. 選取 **[儲存]**。
-
-5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
-
-6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/buy-licenses.md)。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
-
-    > [!NOTE]
-    > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
-
-2. 選取 [共用信箱]，然後選取 [**產品授權**] 旁的 [**編輯**]。
-
-3. [ **產品授權** ] 頁面上，針對您想要移除的授權，將切換設定為 [ **關閉** ]。
-
-4. 選取 **[儲存]**。
-
-5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
-
-6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/buy-licenses.md)。
-
-::: moniker-end
 
 ## <a name="related-articles"></a>相關文章
 

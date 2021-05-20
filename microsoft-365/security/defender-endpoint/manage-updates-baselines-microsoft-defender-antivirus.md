@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/10/2021
-ms.openlocfilehash: 5b599e9d5a5c3d098033af1f1df96ee9f26025ee
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.date: 05/13/2021
+ms.openlocfilehash: 17a76b39b51293de82cf9b3e5f0e323ec3d28844
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52312009"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538036"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
 
@@ -83,11 +83,11 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 -  (Cloud Microsoft 365 Defender) 的整合增強功能。
 <br/>
 <details>
-<summary> 四月-2021 (平臺： 4.18.2104.9 |Engine： 1.1.18100.5) </summary>
+<summary> 四月-2021 (平臺： 4.18.2104.14 |Engine： 1.1.18100.5) </summary>
 
 &ensp;安全性智慧更新版本： **1.337.2.0**  
 &ensp;發行日期： **2021 年4月1日**  
-&ensp;Platform： **4.18.2104.9**  
+&ensp;Platform： **4.18.2104.14**  
 &ensp;Engine： **1.1.18100.5**  
 &ensp;支援階段： **安全性和重要更新**
     

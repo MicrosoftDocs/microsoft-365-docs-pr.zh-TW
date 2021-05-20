@@ -1,23 +1,24 @@
 ---
 title: 斯里蘭卡的付款資訊
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cf589ec2afc2f16d24bf55d3e0de8b6763036169
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 944342f9132212f7fd94d752ee300464571508f4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272813"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537808"
 ---
 # <a name="payment-information-for-sri-lanka"></a>斯里蘭卡的付款資訊
 
@@ -30,4 +31,4 @@ ms.locfileid: "52272813"
 **銀行：** Citibank，新加坡  
 **SWIFT 程式碼：** CITISGSG  
 **帳戶號碼：** 0-817543-138  
-**帳戶名稱：** MICROSOFT 地區銷售公司  
+**帳戶名稱：** MICROSOFT 地區銷售公司

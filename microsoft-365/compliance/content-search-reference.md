@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含 Microsoft 365 合規性中心中內容搜尋電子文件探索工具的參考資訊，可協助了解內容搜尋的許多詳細資料。
-ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 14660b4cfcd09f5346fa8d0d901880d0a6c774c2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332891"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538480"
 ---
 # <a name="feature-reference-for-content-search"></a>內容搜尋的功能參考
 
@@ -33,19 +33,7 @@ ms.locfileid: "52332891"
 
 ## <a name="content-search-limits"></a>內容搜尋限制
 
-- 如需 [內容搜尋] 適用限制的說明，請參閱[內容搜尋的限制](limits-for-content-search.md)。
-  
-- Microsoft 會收集服務中所有組織執行的內容搜尋的效能資訊。 雖然搜尋查詢的複雜性可能會影響搜尋時間，會影響搜尋所需時間的最大因素是搜尋的信箱數量。 雖然 Microsoft 不對搜尋時間提供服務等級協定，下表根據搜尋中包含的信箱數量列出內容搜尋的平均搜尋時間。
-  
-  |**信箱數目**|**平均搜尋時間**|
-  |:-----|:-----|
-  |100  <br/> |30 秒  <br/> |
-  |1,000  <br/> |45 秒  <br/> |
-  |10,000  <br/> |4 分鐘  <br/> |
-  |25,000  <br/> |10 分鐘  <br/> |
-  |50,000  <br/> |20 分鐘  <br/> |
-  |100,000  <br/> |25 分鐘  <br/> |
-  |||
+如需 [內容搜尋] 適用限制的說明，請參閱[內容搜尋的限制](limits-for-content-search.md)。
   
 ## <a name="building-a-search-query"></a>建立搜尋查詢
 
@@ -71,7 +59,7 @@ ms.locfileid: "52332891"
   
 - 執行內容搜尋時，Microsoft 365 會自動檢查您的搜尋查詢中是否有不受支援的字元，以及可能未大寫的布林值運算子。 不支援的字元通常會隱藏起來，且通常會導致搜尋錯誤或傳回非預期的結果。 如需所檢查不受支援字元的詳細資訊，請參閱[檢查您的內容搜尋查詢是否有錯誤](check-your-content-search-query-for-errors.md)。
     
-- 如果您有包含非英文字元 (例如中文字元) 關鍵字的搜尋查詢時，您可以按一下 **[查詢語言-國家/地區]**![內容搜尋中的 [查詢語言-國家/地區] 圖示](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)，然後選取搜尋的語言-國家/地區文化特性代碼值。 預設的語言-國家/地區為中性。 如何判斷您是否需要變更內容搜尋的語言設定？ 如果您確定您要搜尋的內容位置包含非英文字元，但搜尋卻未傳回任何結果，這可能是語言設定所造成。 
+- 如果您有包含非英文字元 (例如中文字元) 關鍵字的搜尋查詢時，您可以按一下 **[查詢語言-國家/地區]**![內容搜尋中的 [查詢語言-國家/地區] 圖示](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)，然後選取搜尋的語言-國家/地區文化特性代碼值。 預設的語言-國家/地區為中性。 如何判斷您是否需要變更內容搜尋的語言設定？ 如果您確定您要搜尋的內容位置包含非英文字元，但搜尋卻未傳回任何結果，這可能是語言設定所造成。
   
 ## <a name="partially-indexed-items"></a>部分編製索引的項目
 

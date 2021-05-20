@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: 深入瞭解 Microsoft 365 群組、Teams 及 SharePoint 共同作業的規範選項。
-ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 236b977b22066830e1b36bc87676fd5fa2c9d3f5
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241673"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538120"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 群組、Teams 及 SharePoint 共同作業的相容性選項
 
@@ -84,7 +85,7 @@ Microsoft 365 提供一套完整的工具，以在使用者共同作業時維持
 
 - [使用敏感度標籤來套用加密以限制存取內容](../compliance/encryption-sensitivity-labels.md)
 
-- [為小組設定安全性隔離](./secure-teams-security-isolation.md)
+- [為團隊設定安全性隔離](./secure-teams-security-isolation.md)
 
 其他資源：
 

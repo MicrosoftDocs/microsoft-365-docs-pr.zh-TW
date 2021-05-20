@@ -20,12 +20,12 @@ description: 系統管理員可以從 Office 365 中的 [受限使用者] 入口
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32748d717762d7af727a1583226b6d47ee7697c6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2171e2465aa40e187f8104c7c0d2675562f115ce
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203593"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537868"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>從 Office 365 中的 [受限使用者] 入口網站移除封鎖的使用者
 
@@ -81,7 +81,7 @@ ms.locfileid: "51203593"
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>確認受限使用者的提醒設定
 
-當系統封鎖使用者傳送電子郵件時，預設的警示原則 **無法傳送電子郵件的受限使用者** 會自動通知系統管理員。 您可以確認這些設定，並新增其他要通知的使用者。 如需有關警示原則的詳細資訊，請參閱[安全性與合規性中心中的警示原則](../../compliance/alert-policies.md)。
+當系統封鎖使用者傳送電子郵件時，預設的警示原則 **無法傳送電子郵件的受限使用者** 會自動通知系統管理員。 您可以確認這些設定，並新增其他要通知的使用者。 如需有關警示原則的詳細資訊，請參閱 [Microsoft 365 中的警示原則](../../compliance/alert-policies.md)。
 
 > [!IMPORTANT]
 > 若要讓警示運作，必須開啟稽核記錄搜尋。 如需詳細資訊，請參閱[開啟或關閉稽核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。

@@ -16,17 +16,18 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: 在本文中，您將瞭解如何在 SharePoint 和 OneDrive 的檔中與客人共同作業。
-ms.openlocfilehash: 9158ec7692ef90eb2e270242472fceb10d0e60b7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 338c7f32944bccb766ed923c12a9fceee4d81db8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920225"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537832"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>在文件上與來賓共同作業
 
-如果您需要與組織外部的人員共同作業 SharePoint 或 OneDrive 中的檔，您可以將檔的共用連結傳送給他們。 在本文中，我們將逐步檢查必要的 Microsoft 365 設定步驟，以設定 SharePoint 和 OneDrive 組織需求的共用連結。
+如果您需要與組織外部的人員共同作業 SharePoint 或 OneDrive 中的檔，您可以將檔的共用連結傳送給他們。 在本文中，我們將逐步完成必要的 Microsoft 365 設定步驟，為您的組織的需求設定 SharePoint 和 OneDrive 的共用連結。
 
 ## <a name="video-demonstration"></a>影片示範
 
@@ -61,7 +62,7 @@ Microsoft 365 中的共用是由 [Azure Active Directory 中 B2B 外部共同作
 
 SharePoint 的組織層級設定會決定個別 SharePoint 網站可使用的設定。 網站設定不能比組織層級設定更寬鬆。 OneDrive 的組織層級設定會決定使用者 OneDrive 庫中可使用的共用層級。
 
-若要 SharePoint 和 OneDrive，如果您想要允許未驗證的檔案和資料夾共用，請選擇 [ **任何人**]。 若要確定您組織外部的人員必須進行驗證，請選擇 [ **新增] 和 [現有來賓**]。 [*任何人*] 連結是最簡單的共用方式：貴組織外部的人員可以在未驗證的情況下開啟連結，而且可以隨意將其傳遞給其他人。
+若要 SharePoint 和 OneDrive，如果您想要允許未驗證的檔案和資料夾共用，請選擇 [**任何人**]。 若要確定您組織外部的人員必須進行驗證，請選擇 [ **新增] 和 [現有來賓**]。 [*任何人*] 連結是最簡單的共用方式：貴組織外部的人員可以在未驗證的情況下開啟連結，而且可以隨意將其傳遞給其他人。
 
 若為 SharePoint，請選擇您組織中的任何網站所需的功能最寬鬆設定。
 
@@ -71,7 +72,7 @@ SharePoint 的組織層級設定會決定個別 SharePoint 網站可使用的設
 設定 SharePoint 組織層級共用設定
 
 1. 在 Microsoft 365 系統管理中心的左側瀏覽窗格中，在 **系統管理中心** 下，按一下 **SharePoint**。
-2. 在 [SharePoint 系統管理中心] 的左功能窗格中，按一下 [ **原則**] 底下的 [ **共用**]。
+2. 在 [SharePoint 系統管理中心] 的左功能窗格中，按一下 [**原則**] 底下的 [**共用**]。
 3. 確定 SharePoint 或 OneDrive 的外部共用已設定為 **任何人** 或 **新的和現有的客人**。  (請注意，OneDrive 設定不能超過 SharePoint 設定的容許數目。 ) 
 4. 如果您做了任何變更，請按一下 **儲存**。
 
@@ -131,7 +132,7 @@ SharePoint 的組織層級設定會決定個別 SharePoint 網站可使用的設
 
 ## <a name="invite-users"></a>邀請使用者
 
-現在已設定來賓共用設定;所以使用者現在可以與組織外部的人員共用檔案和資料夾。 如需詳細資訊，請參閱 [共用 OneDrive 檔案和資料夾](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) 及 [共用 SharePoint 檔案或資料夾](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) 。
+現在已設定來賓共用設定;所以使用者現在可以與組織外部的人員共用檔案和資料夾。 如需詳細資訊，請參閱[共用 OneDrive 檔案和資料夾](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)及[共用 SharePoint 檔案或資料夾](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
-description: '瞭解如何將私人信箱轉換為可供多位使用者存取的共用信箱。 '
-ms.openlocfilehash: d5b33731908d2d555a8dd12d5d7fbbd462bd83ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: '瞭解如何將私人信箱轉換為可由數個人員存取的共用信箱，而不只是一個人。 '
+ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915863"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537616"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>將使用者信箱轉換為共用信箱
 
@@ -41,7 +41,7 @@ ms.locfileid: "50915863"
 
 - 在信箱轉換成共用信箱之後，這些規則會完好無損。
 
-## <a name="use-the-exchange-admin-center-to-convert-a-mailbox"></a>使用 Exchange 系統管理中心來轉換信箱
+## <a name="use-the-exchange-admin-center-to-convert-a-mailbox"></a>使用 Exchange 系統管理中心轉換信箱
  
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
 
@@ -49,7 +49,7 @@ ms.locfileid: "50915863"
 
 3. 選取使用者信箱。 在 [ **轉換為共用信箱**] 底下，選取 [ **轉換**]。
 
-4. 如果信箱小於 50 GB，您可以移除 [使用者的授權](../manage/remove-licenses-from-users.md)，然後停止支付。 請勿刪除使用者的帳戶。 共用信箱需要以錨定。 如果您要轉換的是離開組織之員工的信箱，您應該採取額外的步驟，確定他們無法再登入。 請參閱 [從 Microsoft 365 移除前任員工](../add-users/remove-former-employee.md)。
+4. 如果信箱小於 50 GB，您可以移除 [使用者的授權](../manage/remove-licenses-from-users.md)，然後停止支付。 請勿刪除使用者的帳戶。 共用信箱需要以錨定。 如果您要轉換的是離開組織之員工的信箱，您應該採取額外的步驟，確定他們無法再登入。 請參閱[從 Microsoft 365 中移除前任員工](../add-users/remove-former-employee.md)。
     
 > [!NOTE]
 > 在信箱轉換期間，不需要重設使用者的密碼。 不過，如果沒有重設密碼， **則原始的使用者名稱和密碼** 會在信箱轉換完成之後繼續運作。
@@ -66,7 +66,7 @@ ms.locfileid: "50915863"
 
 1. [還原使用者的帳戶](../add-users/restore-user.md)。
 
-2. 請確定已將 Microsoft 365 授權指派給它。
+2. 請確定已指派 Microsoft 365 授權給它。
 
 3. 重設使用者的密碼。
     
@@ -102,14 +102,14 @@ ms.locfileid: "50915863"
 > [!NOTE]
 > 如果您是「組織管理」或「收件者管理」角色群組的成員，您可以使用 Exchange 管理命令介面，將使用者信箱變更為內部部署的共用信箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`。
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[關於共用信箱](about-shared-mailboxes.md)
+[關於共用信箱](about-shared-mailboxes.md) (文章) 
 
-[建立共用信箱](create-a-shared-mailbox.md)
+[建立共用信箱](create-a-shared-mailbox.md) (文章) 
 
-[設定共用信箱](configure-a-shared-mailbox.md)
+ (文章) [設定共用信箱](configure-a-shared-mailbox.md)
 
-[從共用信箱中移除授權](remove-license-from-shared-mailbox.md)
+[從共用信箱中移除授權](remove-license-from-shared-mailbox.md) (文章) 
 
-[解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md)
+[解決共用信箱](resolve-issues-with-shared-mailboxes.md) (文章) 的問題

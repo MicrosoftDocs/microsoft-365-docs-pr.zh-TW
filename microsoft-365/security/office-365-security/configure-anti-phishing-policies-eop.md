@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何建立、修改及刪除 Exchange Online Protection (EOP 中可用的反網路釣魚原則，以含或不含 Exchange Online 信箱的組織) 組織。
+description: 系統管理員可以瞭解如何使用或不具有 Exchange Online 信箱，來建立、修改和刪除 Exchange Online Protection (EOP) 組織中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c277558bad32e1926030483d202b70ae3c910315
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bc3c15d2a652e9acd3407ecb91fc99b7ef295c7e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203756"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537916"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中設定反網路釣魚原則
 
@@ -29,13 +29,13 @@ ms.locfileid: "51203756"
 **適用於**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱時，會有預設的反網路釣魚原則，其中包含預設啟用的有限的反欺騙功能。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。
+在 Microsoft 365 具有 Exchange Online 或獨立 Exchange Online Protection 中信箱的組織 (EOP) 組織若沒有 Exchange Online 信箱，則會有預設的反網路釣魚原則，其中包含預設會啟用的有限的反欺騙功能。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。
 
 系統管理員可以查看、編輯和設定 (，但不會刪除預設的反網路釣魚原則) 。 為了獲得更多細微性，您也可以建立適用于組織中特定使用者、群組或網域的自訂反網路釣魚原則。 自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。
 
-具有 Exchange Online 信箱的組織可在安全性 & 合規性中心或 Exchange Online PowerShell 中設定反網路釣魚原則。 獨立 EOP 組織只能使用安全性 & 合規性中心。
+具有 Exchange Online 信箱的組織可以設定安全性 & 規範中心或 Exchange Online PowerShell 中的反網路釣魚原則。 獨立 EOP 組織只能使用安全性 & 合規性中心。
 
-如需在適用365于 office 365 的 Microsoft Defender for Office 中建立及修改更高級的反網路釣魚原則的相關資訊，請參閱在 [Microsoft defender For office 365 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+如需針對 Office 365 Office 365 中所提供的建立及修改更高級的反網路釣魚原則，請參閱[Configure the microsoft defender for Office 365 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
 反網路釣魚原則的基本元素如下：
 
@@ -48,7 +48,7 @@ ms.locfileid: "51203756"
 - 當您修改反網路釣魚原則時，與名稱、優先順序、啟用或停用的名稱和收件者篩選器相關的設定會修改反網路釣魚規則。 所有其他設定會修改關聯的反網路釣魚原則。
 - 當您移除防網路釣魚原則時，會移除反網路釣魚規則和相關聯的反網路釣魚原則。
 
-在 Exchange Online PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的 [使用 Exchange Online PowerShell 設定反網路釣魚原則](#use-exchange-online-powershell-to-configure-anti-phishing-policies) 一節。
+在 Exchange Online PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的[使用 Exchange Online PowerShell 設定反網路釣魚原則](#use-exchange-online-powershell-to-configure-anti-phishing-policies)一節。
 
 每個組織都有一個名為 Office365 AntiPhish 的內建反網路釣魚原則，其具有下列屬性：
 
@@ -75,10 +75,10 @@ ms.locfileid: "51203756"
   **附註**：
 
   - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權 <sup>\*</sup> 。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的 **View-Only 組織管理** 角色群組也會提供該功能的唯讀存取權 <sup>\*</sup> 。
   - <sup>\*</sup> 在 [安全性 & 規範中心] 中，唯讀存取可讓使用者查看自訂反網路釣魚原則的設定。 唯讀使用者看不到預設反網路釣魚原則中的設定。
 
-- 若要在獨立 EOP 中建立及修改反網路釣魚原則，您需要針對租使用者執行一些需要 _分解_ 的專案。 例如，在 Exchange 系統管理中心 (EAC) 中，您可以移至 [ **許可權** ] 索引標籤，選取現有的角色群組，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) ，然後移除) 最終新增回的角色 (。 如果您的租使用者從未 hydrated，您會看到一個名為「 **更新組織」設定** 的對話方塊，其進度列應該會順利完成。 如需分解的詳細資訊，請參閱 [Enable-OrganizationCustomization](/powershell/module/exchange/enable-organizationcustomization) Cmdlet (無法在獨立 EOP PowerShell 或安全性 & 規範中心) 。
+- 若要在獨立 EOP 中建立及修改反網路釣魚原則，您需要針對租使用者執行一些需要 _分解_ 的專案。 例如，在 Exchange 系統管理中心 (EAC) ，您可以移至 [**許可權**] 索引標籤，選取現有的角色群組，按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) ，然後移除 (最後新增) 的角色。 如果您的租使用者從未 hydrated，您會看到一個名為 **Update 組織設定** 的對話方塊，其進度列應會順利完成。 如需分解的詳細資訊，請參閱 [Enable-OrganizationCustomization](/powershell/module/exchange/enable-organizationcustomization) Cmdlet (無法在獨立 EOP PowerShell 或安全性 & 規範中心) 。
 
 - 如需有關反網路釣魚原則的建議設定，請參閱 [EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings)。
 
@@ -152,25 +152,27 @@ ms.locfileid: "51203756"
 
 4. **原則設定**：按一下 [ **編輯** ]，修改當您在上一節中 [建立原則](#use-the-security--compliance-center-to-create-anti-phishing-policies) 時可用的相同設定：
 
-   - **Name**
+   - **名稱**
    - **描述**
    - **套用對象**
    - **檢閱您的設定**
 
    完成後，按一下 [ **儲存** ] 任何頁面。
 
-5. **哄騙**：按一下 [ **編輯** ] 以開啟或關閉欺騙情報、在 Outlook 中開啟或關閉未驗證寄件者識別，以及設定要套用至封鎖的欺騙寄件者的郵件的動作。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。
+5. **哄騙**：按一下 [**編輯**] 以開啟或關閉欺騙智慧，開啟或關閉 Outlook 中未驗證的寄件者識別碼，以及設定要套用至封鎖的欺騙寄件者的郵件的動作。 如需這些設定的詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。
 
-   請注意，Office 365 的 Defender 網路釣魚原則也提供這些相同設定。
+   請注意，在 Office 365 中，您也可以使用 Defender 中的反網路釣魚原則中的這些相同設定。
 
-   - **哄騙篩選設定**：預設值為 [ **開啟**]，建議您將其保持開啟。 若要將它關閉，請將開關滑動至 [ **關閉**]。 如需詳細資訊，請參閱 [在 EOP 中設定欺騙智慧](learn-about-spoof-intelligence.md)。
+   - **哄騙篩選設定**：使用 [ **啟用欺騙智慧？** ] 設定來開啟或關閉欺騙智慧。 預設值為 [ **開啟**]，我們建議您將其保持開啟。 若要將它關閉，請將此切換滑動為 [ **關閉**] ![ ](../../media/scc-toggle-off.png) 。
 
      > [!NOTE]
-     > 如果您的 MX 記錄未指向 Microsoft 365，您就不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+     > 如果您的 MX 記錄未指向 Microsoft 365，您就不需要關閉反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱[強化篩選的 Exchange Online 中的連接器](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-   - **啟用未經驗證的寄件者功能**：預設值為 **On**。 若要將它關閉，請將開關滑動至 [ **關閉**]。
+   - **未經驗證的寄件者設定**：您可以設定下列設定：
+     - 是否要 **啟用未驗證寄件者問號 (？ ) 符號？**：當郵件未通過 SPF 或 DKIM 檢查 **，且** 郵件未通過 DMARC 或 [複合驗證](email-validation-and-authentication.md#composite-authentication)時，此設定會將問號新增至寄件者的相片中的 [寄件者] 方塊 Outlook 中。 預設值為 [開啟]。 若要將它關閉，請將此切換滑動為 [ **關閉**] ![ ](../../media/scc-toggle-off.png) 。
+     - **啟用**「透過」標籤？：此設定會透過 fabrikam.com，新增 via 標籤 (chris@contoso.com 透過) 與 DKIM 簽章中的網域或 **郵件發件** 人位址不同。 預設值為 [開啟]。 若要將它關閉，請將此切換滑動為 [ **關閉**] ![ ](../../media/scc-toggle-off.png) 。
 
-   - **動作**：指定對哄騙智慧失敗的郵件採取的動作：
+   - **動作**：指定對封鎖的欺騙寄件者的郵件採取的動作：
 
      **如果電子郵件是由不允許哄騙您網域的人員所傳送**：
 
@@ -181,9 +183,9 @@ ms.locfileid: "51203756"
 
      - 您可以按一下每個區段中的 [ **編輯** ]，以跳回到相關頁面。
      - 您可以在此頁面 **上****直接切換** 下列設定：
-
-       - **啟用 antispoofing 保護**
-       - **啟用未經驗證的寄件者功能**
+       - **欺騙篩選設定**
+       - **未經驗證的寄件者設定**
+       - **Actions**
 
    完成後，按一下 [ **儲存** ] 任何頁面。
 
@@ -197,11 +199,7 @@ ms.locfileid: "51203756"
 
 2. 在 [ **反網路釣魚** ] 頁面上，按一下 [ **預設原則**]。
 
-3. 隨即會顯示 [ **編輯您的原則 Office365 AntiPhish 預設** ] 頁面。 下列各節可供使用，其中包含 [修改自訂原則](#use-the-security--compliance-center-to-modify-anti-phishing-policies)時的相同設定。
-
-   - **模擬**
-   - **惡搞**
-   - **進階設定**
+3. 隨即會顯示 [ **編輯您的原則 Office365 AntiPhish 預設** ] 頁面。 只有 **欺騙** 區段可供使用，且包含 [修改自訂原則](#use-the-security--compliance-center-to-modify-anti-phishing-policies)時的相同設定。
 
    當您修改預設原則時，無法使用下列設定：
 
@@ -217,9 +215,9 @@ ms.locfileid: "51203756"
 
 2. 請注意 [ **狀態** ] 欄中的值：
 
-   - 將 [切換] 滑動至 [ **關閉** ] 以停用原則。
+   - 將 [切換] 滑動至 [ **關閉**] 關閉 ![ ](../../media/scc-toggle-off.png) 以停用原則。
 
-   - 將切換滑動至 **開啟** 以啟用原則。
+   - 在開啟開啟 **時**，滑動切換開啟以 ![ ](../../media/scc-toggle-on.png) 啟用原則。
 
 您無法停用預設的反網路釣魚原則。
 
@@ -235,7 +233,7 @@ ms.locfileid: "51203756"
 
 若要變更原則的優先順序，您可以按一下 [ **增加優先順序** ] 或 [ **降低優先順序** ] 中的原則 (您無法直接修改安全性 & 規範中心) 中的 **優先順序** 號碼。 如果您有多個原則，變更原則的優先順序只會有意義。
 
-1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **ATP 反網路釣魚**。
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **反網路釣魚**。
 
 2. 選取您要修改的原則。 如果已選取它，請取消選取它，然後再次選取。
 
@@ -255,7 +253,7 @@ ms.locfileid: "51203756"
 
 1. 在安全性 & 規範中心，然後移至 **威脅管理** \> **原則** \> **反網路釣魚**。
 
-2. 請執行下列其中一個步驟：
+2. 執行下列其中一個步驟：
 
    - 選取您要查看的自訂反網路釣魚原則。 如果已選取它，請取消選取它，然後再次選取。
 
@@ -277,14 +275,14 @@ ms.locfileid: "51203756"
 
 如先前所述，反網路釣魚原則是由反網路釣魚原則和反網路釣魚規則所組成。
 
-在 Exchange Online PowerShell 中，反網路釣魚原則和反網路釣魚規則之間的差異很明顯。 您可以使用 **\* -AntiPhishPolicy** Cmdlet 來管理反網路釣魚原則，並使用 **\* -AntiPhishRule** Cmdlet 來管理反網路釣魚規則。
+在 Exchange Online PowerShell 中，反網路釣魚原則與反網路釣魚規則之間的差異很明顯。 您可以使用 **\* -AntiPhishPolicy** Cmdlet 來管理反網路釣魚原則，並使用 **\* -AntiPhishRule** Cmdlet 來管理反網路釣魚規則。
 
 - 在 PowerShell 中，您先建立反網路釣魚原則，然後建立反網路釣魚規則，識別套用規則的原則。
 - 在 PowerShell 中，您可以修改反網路釣魚原則和反網路釣魚規則中的設定。
 - 當您從 PowerShell 中移除反網路釣魚原則時，不會自動移除對應的反網路釣魚規則，反之亦然。
 
 > [!NOTE]
-> 下列 PowerShell 程式無法在獨立 EOP 組織中使用 Exchange Online Protection PowerShell。
+> 在獨立 EOP 組織中，使用 Exchange Online Protection PowerShell 無法使用下列 PowerShell 程式。
 
 ### <a name="use-powershell-to-create-anti-phishing-policies"></a>使用 PowerShell 建立反網路釣魚原則
 
@@ -309,7 +307,7 @@ ms.locfileid: "51203756"
 若要建立反網路釣魚原則，請使用下列語法：
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>]
 ```
 
 此範例會使用下列設定來建立名為「調查隔離隔離」的反網路釣魚策略：
@@ -511,7 +509,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
-若要確認您是否已在 Microsoft Defender for Office 365 中成功設定反網路釣魚原則，請執行下列任一步驟：
+若要確認您是否已在 Office 365 中成功設定 Microsoft Defender 的反網路釣魚原則，請執行下列任一步驟：
 
 - 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **反網路釣魚**。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請執行下列其中一個步驟：
 

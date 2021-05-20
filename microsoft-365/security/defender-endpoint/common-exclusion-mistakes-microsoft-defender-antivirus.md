@@ -15,12 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: de739ca3c6a4ab305b575fa7e2f419d044d997a8
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/17/2021
+ms.openlocfilehash: d10343538c995534878196cc57092c37fd2dcf7b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274967"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538060"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>定義排除時應避免的常見錯誤
 
@@ -36,11 +37,223 @@ ms.locfileid: "52274967"
 
 某些檔案、檔案類型、資料夾或進程不應該從掃描中排除，即使您信任這些檔案不是惡意的。 
 
-請不要為下清單格所列的資料夾位置、副檔名及程式定義排除專案：
+請勿為下列各節所列的資料夾位置、副檔名及程式定義排除專案：
+- 資料夾位置
+- 副檔名
+- 過程
 
-| 資料夾位置 | 副檔名 | 過程 |
-|:--|:--|:--|
-| `%systemdrive%` <br/> `C:`<br/> `C:\` <br/> `C:\*` <br/> `%ProgramFiles%\Java` <br/> `C:\Program Files\Java` <br/> `%ProgramFiles%\Contoso\` <br/> `C:\Program Files\Contoso\` <br/> `%ProgramFiles(x86)%\Contoso\` <br/> `C:\Program Files (x86)\Contoso\` <br/> `C:\Temp` <br/> `C:\Temp\` <br/> `C:\Temp\*` <br/> `C:\Users\` <br/> `C:\Users\*` <br/> `C:\Users\<UserProfileName>\AppData\Local\Temp\` <br/> `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\` <br/> `C:\Users\<UserProfileName>\AppData\Roaming\Temp\` <br/> `%Windir%\Prefetch` <br/> `C:\Windows\Prefetch` <br/> `C:\Windows\Prefetch\` <br/> `C:\Windows\Prefetch\*` <br/> `%Windir%\System32\Spool` <br/> `C:\Windows\System32\Spool` <br/> `C:\Windows\System32\CatRoot2` <br/> `%Windir%\Temp` <br/> `C:\Windows\Temp` <br/> `C:\Windows\Temp\` <br/> `C:\Windows\Temp\*` | `.7z` <br/> `.bat` <br/> `.bin` <br/> `.cab` <br/> `.cmd` <br/> `.com` <br/> `.cpl` <br/> `.dll` <br/> `.exe` <br/> `.fla` <br/> `.gif` <br/> `.gz` <br/> `.hta` <br/> `.inf` <br/> `.java` <br/> `.jar` <br/> `.job` <br/> `.jpeg` <br/> `.jpg` <br/> `.js` <br/> `.ko` <br/> `.ko.gz` <br/> `.msi` <br/> `.ocx` <br/> `.png` <br/> `.ps1` <br/> `.py` <br/> `.rar` <br/> `.reg` <br/> `.scr` <br/> `.sys` <br/> `.tar` <br/> `.tmp` <br/> `.url` <br/> `.vbe` <br/> `.vbs` <br/> `.wsf` <br/> `.zip` | `AcroRd32.exe` <br/> `bitsadmin.exe` <br/> `excel.exe` <br/> `iexplore.exe` <br/> `java.exe` <br/> `outlook.exe` <br/> `psexec.exe` <br/> `powerpnt.exe` <br/> `powershell.exe` <br/> `schtasks.exe`  <br/> `svchost.exe` <br/>`wmic.exe` <br/> `winword.exe` <br/> `wuauclt.exe` <br/> `addinprocess.exe` <br/> `addinprocess32.exe` <br/> `addinutil.exe` <br/> `bash.exe` <br/> `bginfo.exe`1 <br/>`cdb.exe` <br/> `csi.exe` <br/> `dbghost.exe` <br/> `dbgsvc.exe` <br/> `dnx.exe` <br/> `fsi.exe` <br/> `fsiAnyCpu.exe` <br/> `kd.exe` <br/> `ntkd.exe` <br/> `lxssmanager.dll` <br/> `msbuild.exe`第 <br/> `mshta.exe` <br/> `ntsd.exe` <br/> `rcsi.exe` <br/> `system.management.automation.dll` <br/> `windbg.exe` |
+### <a name="folder-locations"></a>資料夾位置
+
+一般而言，請勿為下列資料夾位置定義排除專案：
+
+`%systemdrive%` 
+
+`C:`
+
+`C:\`
+
+`C:\*`
+
+`%ProgramFiles%\Java`
+
+`C:\Program Files\Java` 
+
+`%ProgramFiles%\Contoso\` 
+
+`C:\Program Files\Contoso\` 
+
+`%ProgramFiles(x86)%\Contoso\` 
+
+`C:\Program Files (x86)\Contoso\`
+
+`C:\Temp`
+
+`C:\Temp\`
+
+`C:\Temp\*`
+
+`C:\Users\`
+
+`C:\Users\*`
+
+`C:\Users\<UserProfileName>\AppData\Local\Temp\`**請注意，SharePoint 的下列例外** 狀況： `C:\Users\ServiceAccount\AppData\Local\Temp` 當您 [在 SharePoint 中使用檔層級防防毒保護](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)時，請排除此項。
+
+`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**請注意，SharePoint 的下列例外** 狀況： `C:\Users\Default\AppData\Local\Temp` 當您 [在 SharePoint 中使用檔層級防防毒保護](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)時，請排除此項。
+
+`%Windir%\Prefetch`
+
+`C:\Windows\Prefetch`
+
+`C:\Windows\Prefetch\`
+
+`C:\Windows\Prefetch\*`
+
+`%Windir%\System32\Spool`
+
+`C:\Windows\System32\Spool`
+
+`C:\Windows\System32\CatRoot2`
+`%Windir%\Temp`
+
+`C:\Windows\Temp`
+
+`C:\Windows\Temp\`
+
+`C:\Windows\Temp\*`
+
+### <a name="file-extensions"></a>副檔名
+
+一般而言，請勿為下列副檔名定義排除專案：
+
+`.7z`
+
+`.bat`
+
+`.bin`
+
+`.cab`
+
+`.cmd`
+
+`.com` 
+
+`.cpl`
+
+`.dll`
+
+`.exe`
+
+`.fla`
+
+`.gif`
+
+`.gz`
+
+`.hta`
+
+`.inf`
+
+`.java`
+
+`.jar`
+
+`.job`
+
+`.jpeg`
+
+`.jpg`
+
+`.js`
+
+`.ko`
+
+`.ko.gz`
+
+`.msi`
+
+`.ocx`
+
+`.png`
+
+`.ps1`
+
+`.py`
+
+`.rar`
+
+`.reg`
+
+`.scr`
+
+`.sys`
+
+`.tar`
+
+`.tmp`
+
+`.url`
+
+`.vbe`
+
+`.vbs`
+
+`.wsf`
+
+`.zip`
+
+### <a name="processes"></a>過程 
+
+一般而言，請勿為下列程式定義排除專案：
+
+`AcroRd32.exe`  
+
+`bitsadmin.exe`  
+
+`excel.exe`  
+
+`iexplore.exe`  
+
+`java.exe`  
+
+`outlook.exe`  
+
+`psexec.exe`  
+
+`powerpnt.exe`  
+
+`powershell.exe`  
+
+`schtasks.exe`
+
+`svchost.exe` 
+
+`wmic.exe`  
+
+`winword.exe`  
+
+`wuauclt.exe`  
+
+`addinprocess.exe`  
+
+`addinprocess32.exe`  
+
+`addinutil.exe`  
+
+`bash.exe`  
+
+`bginfo.exe` 
+
+`cdb.exe`  
+
+`csi.exe`  
+
+`dbghost.exe`  
+
+`dbgsvc.exe`  
+
+`dnx.exe`  
+
+`fsi.exe`  
+
+`fsiAnyCpu.exe`  
+
+`kd.exe`  
+
+`ntkd.exe`  
+
+`lxssmanager.dll`  
+
+`msbuild.exe` 
+
+`mshta.exe`  
+
+`ntsd.exe`  
+
+`rcsi.exe`  
+
+`system.management.automation.dll`  
+
+`windbg.exe`
 
 > [!NOTE]
 > 您可以選擇排除檔案類型，例如，， `.gif` `.jpg` `.jpeg` 或 `.png` 如果您的環境具有可處理任何漏洞之嚴格更新原則的新式軟體。

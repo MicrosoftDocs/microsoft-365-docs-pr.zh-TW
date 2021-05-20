@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fc811fb513935645fa596c5a9d2e3e552b50324
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2cd04911e3663bb6b9fa00d4946b26086dc8094d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245357"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538264"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -59,7 +59,7 @@ ms.locfileid: "52245357"
 > [!NOTE]
 > Microsoft 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這表示您不需要執行任何操作，即可為任何初始網域名稱設定 DKIM (例如：litware.onmicrosoft.com)。 如需網域的詳細資訊，請參閱[網域常見問題集](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)。
 
-DKIM 是三個驗證方法 (SPF、DKIM 和 DMARC) 的其中一個，可協助防止詐騙者傳送看起來像來自您網域的郵件。
+DKIM 是三個驗證方法 (SPF、DKIM 和 DMARC) 的其中一個，可協助防止攻擊者傳送看起來像來自您網域的郵件。
 
 DKIM 可讓您在郵件標頭中將數位簽章新增到外寄電子郵件訊息中。 在設定 DKIM 時，您會授權給網域，使其能夠使用密碼編譯驗證將其名稱簽署至電子郵件訊息，或建立關聯。 電子郵件系統在取得來自您網域的電子郵件時，可以利用此數位簽章來協助驗證內送電子郵件是否合法。
 

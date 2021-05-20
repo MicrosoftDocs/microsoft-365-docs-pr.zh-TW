@@ -18,14 +18,14 @@ ms.collection:
 description: 系統管理員可以瞭解如何使用設定分析器，找出並修正低於標準防護和嚴格保護預設安全性原則的安全性原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65fd67c93711dc847a25be485b4b016af55e4a31
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: fd0cf4f3194a7a8eec39f2d0c447dca2dae5948b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203440"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537928"
 ---
-# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中保護原則的設定分析器
+# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的保護原則設定分析器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -38,15 +38,15 @@ Security & 合規性中心的設定分析器提供一個集中位置，以找出
 
 設定分析器會分析下列類型的原則：
 
-- **Exchange Online Protection (EOP) 原則**：這包括使用 exchange online 信箱的 Microsoft 365 組織和獨立 EOP 組織，但沒有 exchange online 信箱：
+- **Exchange Online Protection (EOP) 原則**：這包括具有 Exchange Online 信箱和獨立 EOP 組織的 Microsoft 365 組織，但沒有 Exchange Online 信箱：
 
   - [反垃圾郵件原則](configure-your-spam-filter-policies.md)。
   - [反惡意程式碼原則](configure-anti-malware-policies.md)。
   - [EOP 反網路釣魚原則](set-up-anti-phishing-policies.md#spoof-settings)。
 
-- **Microsoft Defender For office 365 原則**：這包括具有 Microsoft 365 E5 或 Defender for office 365 附加元件訂閱的組織：
+- **適用于 Office 365 原則的 Microsoft Defender**：這包括具有 Microsoft 365 E5 或 Defender 的組織 Office 365 附加元件訂閱：
 
-  - Microsoft Defender for Office 365 中的反網路釣魚原則，其中包括：
+  - Microsoft Defender 中 Office 365 的反網路釣魚原則，其中包括：
 
     - EOP 反網路釣魚原則中提供的相同 [欺騙設定](set-up-anti-phishing-policies.md#spoof-settings) 。
     - [類比設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
@@ -56,7 +56,7 @@ Security & 合規性中心的設定分析器提供一個集中位置，以找出
 
   - [安全附件原則](set-up-safe-attachments-policies.md)。
 
-[EOP 和 Microsoft Defender For Office 365 安全性](recommended-settings-for-eop-and-office365.md)中所述做為基準的 **標準** 和 **嚴格** 原則設定值。
+[EOP 和 Microsoft Defender Office 365 security](recommended-settings-for-eop-and-office365.md)] 中的建議設定會說明用作基準的 **標準** 和 **嚴格** 原則設定值。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -99,7 +99,7 @@ Security & 合規性中心的設定分析器提供一個集中位置，以找出
 - **反垃圾郵件**
 - **防網路釣魚**
 - **反惡意程式碼**
-- 如果您的訂閱包含 Microsoft Defender for Office 365， **ATP 安全附件** () 
+- **ATP 安全附件** (若您的訂閱包含 Microsoft Defender for Office 365) 
 - 如果您的訂閱包含 Microsoft Defender for Office 365， **ATP 安全連結** () 
 
 在預設的視圖中，會折疊所有專案。 每個原則旁都有一個原則的比較結果摘要，您可以在您的原則 (中修改) 和設定標準或嚴格保護設定檔對應之原則中的設定， (但不能修改) 。 您將會看到您要比較的保護設定檔的下列資訊：
@@ -124,7 +124,7 @@ Security & 合規性中心的設定分析器提供一個集中位置，以找出
 
 - **上次修改** 日期：上次修改原則的日期。
 
-- **建議**：標準或嚴格保護設定檔中的設定值。 若要變更原則中設定的值，使其符合保護設定檔中的建議值，請按一下 [ **採用**]。 如果變更成功，您會看到訊息： **已成功採用的建議**。 按一下 **[** 重新整理] 以查看減少的建議數量，並從結果中移除特定設定/原則列。
+- **建議**：標準或嚴格保護設定檔中的設定值。 若要變更原則中設定的值，使其符合保護設定檔中的建議值，請按一下 [ **採用**]。 如果變更成功，您會看到訊息：**建議已成功採用**。 按一下 **[** 重新整理] 以查看減少的建議數量，並從結果中移除特定設定/原則列。
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>設定分析器中的設定偏移分析和記錄] 索引標籤
 
