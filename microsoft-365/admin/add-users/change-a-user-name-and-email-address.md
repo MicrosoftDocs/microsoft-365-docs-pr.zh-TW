@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: '了解全域系統管理員如何變更使用者的電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: '了解 Microsoft 365 全域系統管理員如何在使用者的名稱變更時，變更使用者的電子郵件地址和顯示名稱。 '
+ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291016"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535983"
 ---
 # <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
@@ -251,8 +251,10 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
   
 若要了解如何分別在 Active Directory、Windows Server 2003 及較舊版本中變更使用者名稱，請參閱[重新命名使用者帳戶](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10))。
   
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[系統管理員：重設一或多個使用者的密碼](reset-passwords.md)
+[系統管理員：重設一或多個使用者的密碼](reset-passwords.md) (文章)
   
-[為使用者新增另一個電子郵件地址](../email/add-another-email-alias-for-a-user.md)
+[為使用者新增另一個電子郵件地址](../email/add-another-email-alias-for-a-user.md) (文章)
+
+[建立共用信箱](../email/create-a-shared-mailbox.md) (文章)

@@ -22,26 +22,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
-description: 了解如何在 Microsoft 365 系統管理中心設定組織的密碼到期原則。
-ms.openlocfilehash: 14ff08126533d5c530fb56761a2ef1676d5864b8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: 了解系統管理員如何在 Microsoft 365 系統管理中心設定為學校 公司或非利益組織設定密碼到期原則。
+ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903151"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537484"
 ---
-# <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../microsoft-365-admin-center-preview.md?view=o365-worldwide)。
-
-::: moniker-end
+# <a name="set-the-password-expiration-policy-for-your-organization"></a>設定貴組織的密碼到期原則
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
+本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../../business-video/admin-center-overview.md)
 
 身為系統管理員，您可以將使用者密碼設為在指定天數後過期，或將密碼設為永不過期。 根據預設，貴組織的密碼會設定為永不過期。
 
@@ -49,7 +42,7 @@ ms.locfileid: "51903151"
 
 您必須是[全域系統管理員](../add-users/about-admin-roles.md)才能執行這些步驟。
 
-如果您是使用者，則無權將密碼設為永不到期。 請要求貴公司或學校的技術支援人員，為您執行本文所述的步驟。
+如果您是使用者，則無權將密碼設為永不過期。請要求貴公司或學校的技術支援人員，為您執行本文所述的步驟。
 
 ## <a name="set-password-expiration-policy"></a>設定密碼到期原則
 
@@ -90,12 +83,12 @@ ms.locfileid: "51903151"
 
 ## <a name="update-password-policy"></a>已更新密碼原則
 
-Set-MsolPasswordPolicy 指令會更新指定網域或租使用者的密碼原則。 需要進行兩個設定;一是在必須變更之前，指出密碼保持有效的時間長度，而二是指出在使用者收到密碼即將到期的第一次通知時所觸發的密碼到期日前的天數。
+Set-MsolPasswordPolicy 指令會更新指定網域或租用戶的密碼原則。需要進行兩個設；一是在必須變更之前，指出密碼保持有效的時間長度，而二是指出在使用者收到密碼即將到期的第一次通知時所觸發的密碼到期日前的天數。
 
 若要瞭解如何更新特定網域或租使用者的密碼原則，請參閱 [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)。
 
 ## <a name="related-content"></a>相關內容
 
-[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md)
+[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
 
-[重設密碼](../add-users/reset-passwords.md)
+[重設密碼](../add-users/reset-passwords.md) (文章)

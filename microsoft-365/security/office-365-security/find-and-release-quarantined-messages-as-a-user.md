@@ -20,12 +20,12 @@ ms.custom:
 description: 使用者可以了解如何在 Exchange Online Protection (EOP) 中查看和管理收到的隔離郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 036aa164b8b77efd2365d56c07d26870eac243f5
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 68656d21b8c10157ebae5d030e56293ba1ce07f7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274445"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539116"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 尋找及釋出隔離的郵件
 
@@ -54,7 +54,7 @@ ms.locfileid: "52274445"
 
 ## <a name="view-your-quarantined-messages"></a>檢視隔離的郵件
 
-1. 在「安全性與合規性中心」內，移至 [威脅管理] \> [檢閱] \> [隔離]。
+1. 在「安全性與合規性中心」內，移至 **[威脅管理]** \> **[檢閱]** \> **[隔離]**。
 
 2. 您可以按一下可用資料行標題來排序結果。 按一下 [修改資料行] 可顯示最多七個資料行。 預設值會標上星號 (<sup>\*</sup>)：
 

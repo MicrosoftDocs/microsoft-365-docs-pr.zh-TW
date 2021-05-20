@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 預覽由 Microsoft 365 合規性中心中內容搜尋或核心電子文件探索搜尋所傳回的結果範例。
-ms.openlocfilehash: ebe4aa0d5f08ab97376cfde63eb59351fccd1911
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: a89c8c9ed2500b4e2a859c75be3da177203d1406
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314274"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538581"
 ---
 # <a name="preview-ediscovery-search-results"></a>預覽電子文件探索搜尋結果
 
@@ -39,9 +39,25 @@ ms.locfileid: "52314274"
 
 3. 在飛出視窗頁面底部，按一下 [檢閱範例 **]**。
 
-   包含搜尋結果範例的頁面會隨之顯示。
+   ![按一下飛出視窗頁面上的 [檢閱範例] 以預覽結果](../media/PreviewSearchResults1.png)
+
+   包含搜尋結果範例的頁面會隨即顯示。
 
 4. 選取項目以在讀取窗格中檢視其內容。
+
+   ![在讀取窗格中預覽項目](../media/PreviewSearchResults2.png)
+
+   在上一個螢幕擷取畫面中，請注意，當您預覽項目時，來自搜尋查詢的關鍵字會強調顯示。
+
+## <a name="how-the-search-result-samples-are-selected"></a>如何選取搜尋結果範例
+
+最多可預覽 1,000 個隨機選取的項目。 除了隨機選取之外，可供預覽的項目也必須符合下列準則：
+
+- 最多可預覽來自單一內容位置 (信箱或網站) 的 100 個項目。 這表示可供預覽的項目可能少於 1,000 個。 例如，如果您搜尋四個信箱，而搜尋傳回 1,500 個估計項目，則只有 400 個可供預覽，因為每個信箱只能預覽 100 個項目。
+
+- 針對信箱項目，只有電子郵件訊息可供預覽。 無法預覽工作、行事曆項目和連絡人等項目。
+
+- 針對網站項目，只有文偉可供預覽。 無法預覽資料夾、清單或清單附件等項目。
 
 ## <a name="file-types-supported-when-previewing-search-results"></a>預覽搜尋結果時支援的檔案類型
 

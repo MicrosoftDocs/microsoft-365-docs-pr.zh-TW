@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合規性中心來搜尋整合的稽核記錄，以檢視組織中的使用者和系統管理員活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f61a67b29dec114d222dfc7b25e44c163859ba41
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dfda69e5695d2097de5bfae48b580e23799edf87
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051735"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536043"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合規性中心搜尋稽核記錄
 
@@ -441,7 +441,7 @@ ms.locfileid: "51051735"
 |易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已存取檔案|FileAccessed|使用者或系統帳戶存取檔案。|
-|(無)|FileAccessedExtended|這與「已存取檔案」(FileAccessed) 活動相關聯。 當相同人員持續存取某個檔案一段時間 (最多 3 小時)，便會記錄 FileAccessedExtended 事件。 <br/><br/> 記錄 FileAccessedExtended 事件的目的在於減少持續存取某個檔案時，記錄 FileAccessed 事件的數目。 這有助於減少多個 FileAccessed 記錄的干擾，以了解哪些基本上是同樣的使用者活動，並讓您專注在初始 (且更重要的) FileAccessed 事件。|
+|(無)|FileAccessedExtended|這與「已存取檔案」(FileAccessed) 活動相關聯。當相同人員持續存取某個檔案一段時間 (最多 3 小時)，便會記錄 FileAccessedExtended 事件。 <br/><br/> 記錄 FileAccessedExtended 事件的目的在於減少持續存取某個檔案時，記錄 FileAccessed 事件的數目。 這有助於減少多個 FileAccessed 記錄的干擾，以了解哪些基本上是同樣的使用者活動，並讓您專注在初始 (且更重要的) FileAccessed 事件。|
 |已變更檔案的保留標籤|ComplianceSettingChanged|保留標籤已在文件中套用或移除。 手動或自動將保留標籤套用到郵件時就會觸發此事件。|
 |已將記錄狀態變更為鎖定|LockRecord|將文件歸類為記錄的保留標籤記錄狀態已鎖定。 這表示文件無法修改或刪除。 只有至少獲派網站參與者權限的使用者可以變更文件記錄狀態。|
 |已將記錄狀態變更為解除鎖定|UnlockRecord|將文件歸類為記錄的保留標籤記錄狀態已解除鎖定。 這表示文件可修改或刪除。 只有至少獲派網站參與者權限的使用者可以變更文件記錄狀態。|
@@ -501,7 +501,7 @@ FilePreviewed 和 FileAccessed 事件都表示使用者的呼叫導致讀取檔�
 
 - Microsoft 365 群組。 當使用者或系統管理員建立新群組時，系統會產生稽核記錄，以建立網站集合、更新清單，以及將成員新增至 SharePoint 群組。 這些工作是應用程式代表建立群組的使用者執行的。
 
-- Microsoft Teams。 與 Microsoft 365 群組類似，建立新小組時，系統會產生稽核記錄，以建立網站集合、更新清單，以及將成員新增至 SharePoint 群組。
+- Microsoft Teams。與 Microsoft 365 群組類似，建立新小組時，系統會產生稽核記錄，以建立網站集合、更新清單，以及將成員新增至 SharePoint 群組。
 
 - 合規性功能。 當系統管理員實作合規性功能時，例如保留原則、電子文件探索保留及自動套用靈敏度標籤。
 
@@ -565,7 +565,7 @@ FilePreviewed 和 FileAccessed 事件都表示使用者的呼叫導致讀取檔�
 |已將權限等級新增至網站集合|PermissionLevelAdded|權限等級已新增至網站集合。|
 |已接受存取要求|AccessRequestAccepted|已接受網站、資料夾或文件的存取要求，而提出要求的使用者已獲授與存取權。|
 |已接受共用邀請|SharingInvitationAccepted|使用者 (成員或來賓) 已接受共用邀請，並獲授與資源的存取權。 此事件包括受邀的使用者，以及用來接受邀請的電子郵件地址 (它們可能不同) 之相關資訊。 此活動通常伴隨第二個事件，描述使用者如何獲授與資源的存取權。例如，將使用者新增至擁有資源存取權的群組。|
-|已封鎖的共用邀請|SharingInvitationBlocked|貴組織使用者所傳送的共用邀請遭到封鎖，因為外部共用原則會根據目標使用者的網域允許或拒絕外部共用。 在此案例中，共用邀請因下列原因而遭到刪除： <br/> 允許的網域清單中不包含目標使用者的網域。 <br/> 或者 <br/> 封鎖的網域清單中包含目標使用者的網域。 <br/> 如需根據網域允許或封鎖外部共用的詳細資訊，請參閱[在 SharePoint Online 和商務用 OneDrive 中限制網域共用](/sharepoint/restricted-domains-sharing)。|
+|已封鎖的共用邀請|SharingInvitationBlocked|貴組織使用者所傳送的共用邀請遭到封鎖，因為外部共用原則會根據目標使用者的網域允許或拒絕外部共用。在此案例中，共用邀請因下列原因而遭到封鎖： <br/> 允許的網域清單中不包含目標使用者的網域。 <br/> 或者 <br/> 封鎖的網域清單中包含目標使用者的網域。 <br/> 如需根據網域允許或封鎖外部共用的詳細資訊，請參閱[在 SharePoint Online 和商務用 OneDrive 中限制網域共用](/sharepoint/restricted-domains-sharing)。|
 |已建立存取要求|AccessRequestCreated|使用者要求他們未擁有存取權限的網站、資料夾或文件之存取權。|
 |已建立公司可共用連結|CompanyLinkCreated|使用者已建立資源的全公司連結。 全公司連結只能讓您組織中的成員使用。 來賓無法使用這些連結。|
 |已建立匿名連結|AnonymousLinkCreated|使用者已建立資源的匿名連結。 任何人只要有此連結就可以存取資源，而不需要驗證。|
@@ -575,7 +575,7 @@ FilePreviewed 和 FileAccessed 事件都表示使用者的呼叫導致讀取檔�
 |已拒絕存取要求|AccessRequestDenied|已拒絕網站、資料夾或文件的存取要求。|
 |已移除公司可共用連結|CompanyLinkRemoved|使用者已移除資源的全公司連結。 無法再使用此連結存取資源。|
 |已移除匿名連結|AnonymousLinkRemoved|使用者已移除資源的匿名連結。 無法再使用此連結存取資源。|
-|已共用的檔案、資料夾或網站|SharingSet|使用者 (成員或來賓) 已與並非您的組織目錄中的使用者共用 SharePoint 或商務用 OneDrive 中的檔案、資料夾或網站。 此活動的 [詳細資料] 欄中的值會識別已共用資源的使用者名稱，以及該使用者是否為成員或來賓。 <br/><br/> 此活動通常伴隨第二個事件，描述使用者如何獲授與資源的存取權。 例如，將使用者新增至擁有資源存取權的群組。|
+|已共用的檔案、資料夾或網站|SharingSet|使用者 (成員或來賓) 已與並非您的組織目錄中的使用者共用 SharePoint 或商務用 OneDrive 中的檔案、資料夾或網站。 此活動的 [詳細資料] 欄中的值會識別已共用資源的使用者名稱，以及該使用者是否為成員或來賓。 <br/><br/> 此活動通常伴隨第二個事件，描述使用者如何獲授與資源的存取權。例如，將使用者新增至擁有資源存取權的群組。|
 |已更新存取要求|AccessRequestUpdated|已更新項目的存取要求。|
 |已更新匿名連結|AnonymousLinkUpdated|使用者已更新資源的匿名連結。 當您匯出搜尋結果時，EventData 屬性中會包括更新的欄位。|
 |已更新共用邀請|SharingInvitationUpdated|已更新外部共用邀請。|
@@ -648,7 +648,7 @@ FilePreviewed 和 FileAccessed 事件都表示使用者的呼叫導致讀取檔�
 |已刪除 [傳送至] 連線|SendToConnectionRemoved|SharePoint 或全域系統管理員在 SharePoint 系統管理員中心的 [記錄] 管理頁面上刪除「傳送至」連線。|
 |已刪除網站|SiteDeleted|網站系統管理員刪除網站。|
 |已啟用文件預覽|PreviewModeEnabledSet|網站系統管理員啟用網站的文件預覽。|
-|已啟用舊版工作流程|LegacyWorkflowEnabledSet|網站系統管理員或擁有者在網站中新增 SharePoint 2013 工作流程工作內容類型。 全域系統管理員也可以在 SharePoint 系統管理員中心為整個組織啟用工作流程。|
+|已啟用舊版工作流程|LegacyWorkflowEnabledSet|網站管理員或擁有者將 SharePoint 2013 工作流程工作內容類型新增至網站。全域管理員也可以在 SharePoint 系統管理中心啟用整個組織的工作流程。|
 |已啟用 Office on Demand|OfficeOnDemandSet|網站管理員啟用 Office on Demand，這可讓使用者存取最新版的 Office 傳統型應用程式。 Office on Demand 會在 SharePoint 系統管理員中心啟用，並且需要 Microsoft 365 訂閱，該訂閱包含完整、已安裝的 Office 應用程式。|
 |已啟用 [人員搜尋] 的結果來源|PeopleResultsScopeSet|網站系統管理員建立網站的 [人員搜尋] 結果來源。|
 |已啟用 RSS 摘要|NewsFeedEnabledSet|網站系統管理員或擁有者啟用網站的 RSS 摘要。 全域管理員可以在 SharePoint 系統管理員中心為整個組織啟用 RSS 摘要。|
@@ -673,7 +673,7 @@ FilePreviewed 和 FileAccessed 事件都表示使用者的呼叫導致讀取檔�
 |易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |存取信箱項目|MailItemsAccessed|在信箱中讀取或存取郵件。 可以通過以下兩種方式之一觸發此事件的稽核記錄：當郵件客戶端 (例如 Outlook) 對郵件執行繫結作業時，或者當郵件通訊協定 (例如 Exchange ActiveSync 或 IMAP) 同步郵件文件夾中的項目時。 僅有 Office 365 或 Microsoft 365 E5 授權的使用者可記錄此事件。 在調查遭入侵的電子郵件帳戶時，分析此活動的稽核記錄相當實用。 如需詳細資訊，請參閱[進階稽核](advanced-audit.md#access-to-crucial-events-for-investigations)中的〈存取調查重要事件〉一節。 |
-|已新增代理人信箱權限|AddMailboxPermissions|系統管理員已將另一名人員其信箱的 FullAccess 信箱權限指派給某個使用者 (亦稱為「代理人」)。 FullAccess 權限可讓代理人開啟該名人員的信箱，以及讀取和管理信箱的內容。|
+|已新增代理人信箱權限|Add-MailboxPermission|系統管理員已將另一名人員其信箱的 FullAccess 信箱權限指派給某個使用者 (亦稱為「代理人」)。 FullAccess 權限可讓代理人開啟該名人員的信箱，以及讀取和管理信箱的內容。|
 |新增或移除具有行事曆資料夾代理人存取權的使用者|UpdateCalendarDelegation|已新增或移除作為另一個使用者信箱行事曆代理人的使用者。 行事曆代理可讓其他有相同組織權限的人來管理信箱擁有者的行事曆。|
 |已新增資料夾的權限|AddFolderPermissions|資料夾權限已新增。 資料夾權限可控制組織中的哪些使用者可以存取信箱中的資料夾，以及這些資料夾中的郵件。|
 |已複製郵件到另一個資料夾|Copy|郵件已複製到另一個資料夾。|
@@ -900,7 +900,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 ### <a name="quarantine-activities"></a>隔離活動
 
-以下表格列出您可以在稽核記錄中搜尋的隔離活動。 如需關於隔離的詳細資訊，請參閱[在 Office 365 中隔離電子郵件](../security/defender-365-security/quarantine-email-messages.md)。
+以下表格列出您可以在稽核記錄中搜尋的隔離活動。 如需關於隔離的詳細資訊，請參閱[在 Office 365 中隔離電子郵件](../security/office-365-security/quarantine-email-messages.md)。
 
 |易記名稱|作業|描述|
 |:-----|:-----|:-----|
@@ -999,7 +999,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 ### <a name="briefing-email-activities"></a>簡報電子郵件活動
 
-下表列出 Office 365 稽核記錄中記錄的簡報電子郵件活動。 如需有關如何簡報電子郵件的詳細資訊，請參閱：
+下表列出 Office 365 稽核記錄中記錄的簡報電子郵件活動。如需有關如何簡報電子郵件的詳細資訊，請參閱：
 
 - [簡報電子郵件概觀](/Briefing/be-overview)
 

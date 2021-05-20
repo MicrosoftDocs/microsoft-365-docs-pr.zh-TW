@@ -16,13 +16,14 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: 了解所需的 Microsoft 365 設定步驟，以在 Teams 中成立團隊並與來賓進行工作、交談和文件共同作業。
-ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c17732705c1d88ff70e56f5d26d9e268e3ff7c19
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904657"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539260"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在團隊中與來賓共同作業
 
@@ -61,7 +62,7 @@ Microsoft 365 中的共用是由 [Azure Active Directory 中 B2B 外部共同作
 
 Teams 具備來賓存取的主開啟/關閉開關，以及各種設定，可用於控制來賓可在團隊中執行哪些工作。 主開關 **在 Teams 中允許來賓存取** 必須為 **開啟** ，來賓才有存取權在 Teams 中工作。
 
-檢查並確保 Teams 中已啟用來賓存取，並根據您的業務需求調整來賓設定。 請記住，這些設定會影響所有團隊。
+檢查並確保 Teams 中已啟用來賓存取，並根據您的業務需求調整來賓設定。請記住，這些設定會影響所有團隊。
 
 ![Teams 來賓存取切換的螢幕擷取畫面](../media/teams-guest-access-toggle-on.png)
 
@@ -81,7 +82,7 @@ Teams 具備來賓存取的主開啟/關閉開關，以及各種設定，可用�
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 群組來賓設定
 
-Teams 使用 Microsoft 365 群組作為團隊成員資格。 必須開啟 Microsoft 365 群組來賓設定，才能使用 Teams 中的來賓存取。
+Teams 使用 Microsoft 365 群組作為團隊成員資格。必須開啟 Microsoft 365 群組來賓設定，才能使用 Teams 中的來賓存取。
 
 ![Microsoft 365 系統管理中心的 Microsoft 365 群組來賓設定螢幕擷取畫面](../media/office-365-groups-guest-settings.png)
 
@@ -146,7 +147,7 @@ Teams 內容 (例如檔案、資料夾和清單) 全部都儲存在 SharePoint �
 5. 輸入團隊的名稱和描述，然後按一下 **建立**。
 6. 按一下 **略過**。
 
-我們稍後會邀請使用者。 接下來，檢查與團隊相關聯之 SharePoint 網站的網站層級共用設定，這點非常重要。
+我們稍後會邀請使用者。接下來，檢查與團隊相關聯之 SharePoint 網站的網站層級共用設定，這點非常重要。
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 網站層級共用設定
 

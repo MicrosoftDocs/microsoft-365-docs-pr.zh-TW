@@ -17,19 +17,20 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: 了解如何為團隊部署高敏感性資料保護。
-ms.openlocfilehash: 03f10c91461d440413ace418a3b6fdd84da1660a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16b60230c18f4a4f5e10b4bd421fd1bf02b39779
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916223"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538180"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>為團隊設定高敏感性資料保護
 
 在本文中，我們將說明如何為團隊設定敏感度層級的保護。 在按照本文所述的步驟操作之前，請確定您已完成[為團隊部署基本保護](configure-teams-baseline-protection.md)中的步驟。 敏感性層級可提供基準層所未提供的下列額外保護：
 
-- 適用於團隊的敏感度標籤可讓您開啟或關閉來賓共用，並將未受管理裝置的 SharePoint 內容存取權限制為僅限網頁。 此標籤也可用來分類檔案。
+- 適用於團隊的敏感度標籤可讓您開啟或關閉來賓共用，並將未受管理裝置的 SharePoint 內容存取權限制為僅限網頁。此標籤也可用來分類檔案。
 - 限制更多的預設共用連結類型
 - 只有團隊擁有者可以建立私人頻道。
 
@@ -123,7 +124,7 @@ ms.locfileid: "50916223"
 4. 在 **[原則]** 索引標籤的 **[外部共用]** 下，按一下 **[編輯]**。
 5. 如果您在建立敏感度標籤時允許來賓共用，請確定您已選取 **[新的及現有的來賓]**。 如果您在建立標籤時未允許共用，請選擇 **[只有貴組織中的人員]**。
 6. 在 **[預設的共用連結類型] 底下，清除 [與組織層級設定相同]** 核取方塊，然後選取 **[特定人員 (只有使用者指定的人)]**。
-7. 按一下 **[儲存]**。
+7. 按一下 [儲存]。
 
 如果您想要將此編寫為團隊建立程序的一部分，則可以使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 並搭配下列參數：
 

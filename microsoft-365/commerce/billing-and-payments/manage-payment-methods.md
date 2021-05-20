@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: 了解如何在 Microsoft 365 系統管理中心管理您的付款方式。
+description: 向 Microsoft 購買商務產品或服務時，您可以使用現有的付款方式，或在 Microsoft 365 系統管理中心新增付款方式。
 ms.date: 04/02/2021
-ms.openlocfilehash: b6fe62a70d478a98eb13a17fafb4320afc6b5952
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332003"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537316"
 ---
 # <a name="manage-payment-methods"></a>管理付款方式
 
@@ -87,7 +87,7 @@ ms.locfileid: "52332003"
 
 1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [產品 **]** 索引標籤上，尋找您想要以其他付款方式支付的訂閱。
-3. 選取 [其他動作 **]** (三個點)，然後選取 [取代付款方式 **]**。
+3. 選取三個點 (更多動作)，然後選取 **[取代付款方式]**。
 4. 在 [取代付款方式 **]** 窗格中，從下拉式清單選擇其他付款方式，或選擇新增付款方式。
 5. 如果您新增付款方式，請輸入信用卡或帳戶詳細資料，然後選取 [儲存 **]**。
 6. 確認選取的付款方式正確無誤，然後選取 [取代 **]**。

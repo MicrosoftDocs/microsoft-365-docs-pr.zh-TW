@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
+ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52079256"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532083"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容
 
@@ -49,7 +49,7 @@ ms.locfileid: "52079256"
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的運作方式
 
-加密使用來自 Azure 資訊保護的 Azure 版權管理服務 (Azure RMS)。 此保護解決方案使用加密、身分識別及授權原則。 若要深入了解，請參閱 Azure 資訊保護文件中的[什麼是 Azure 版權管理？](/azure/information-protection/what-is-azure-rms)。 
+加密使用來自 Azure 資訊保護的 Azure Rights Management 服務 (Azure RMS)。 此保護解決方案使用加密、身分識別及授權原則。 若要深入了解，請參閱 Azure 資訊保護文件中的[什麼是 Azure Rights Management？](/azure/information-protection/what-is-azure-rms)。 
 
 使用此加密解決方案時，**超級使用者** 功能可確保獲授權的人員和服務一律可以讀取和檢查已為組織加密的資料。 如有需要，您可以接著將加密移除或變更。 如需詳細資訊，請參閱[為 Azure 資訊保護和探索服務或資料復原設定超級使用者](/azure/information-protection/configure-super-users)。
 
@@ -65,7 +65,9 @@ ms.locfileid: "52079256"
 
 4.  在精靈的 **[加密]** 頁面上，選取下列其中一個選項：
     
-    - **如果檔案已加密，則移除加密**：如需有關此案例的詳細資訊，請參閱 [套用標籤時，現有的加密會發生什麼情況](#what-happens-to-existing-encryption-when-a-labels-applied)小節。 請注意，此設定可能會導致使用者沒有足夠權限時無法套用的敏感度標籤。
+    - **如果檔案已加密，則移除加密：** 僅 Azure 資訊保護整合標籤用戶端才支援此選項。 當您選取此選項並使用內建標籤時，標籤可能不會在應用程式中顯示，或顯示但不會進行任何加密變更。
+        
+        如需有關此案例的詳細資訊，請參閱[套用標籤時，現有的加密會發生什麼情況](#what-happens-to-existing-encryption-when-a-labels-applied)小節。 請注意，此設定可能會導致使用者沒有足夠權限時無法套用的敏感度標籤。
     
     - **設定加密設定**：開啟加密功能，並顯示加密設定：
         
@@ -80,25 +82,29 @@ ms.locfileid: "52079256"
 不過，內容可能已加密。 例如，其他使用者可能已套用：
 
 - 其自己的權限，其中包括標籤提示時的使用者定義權限、Azure 資訊保護用戶端的自訂權限，以及來自 Office 應用程式內的 **限制存取** 文件保護。
-- Azure 版權管理保護範本可獨立於標籤將內容加密。 此類別包括使用版權保護來套用加密的郵件流程規則。
+- Azure Rights Management 保護範本可獨立於標籤將內容加密。 此類別包括使用版權保護來套用加密的郵件流程規則。
 - 以系統管理員指派的權限套用加密的標籤。
 
 下表說明對該內容套用敏感度標籤時，現有的加密會發生的情況：
 
-| | 加密：未選取 | 加密：已設定 | 加密：移除 |
+| | 加密：未選取 | 加密：已設定 | 加密：移除 <sup>\*</sup> |
 |:-----|:-----|:-----|:-----|
 |**使用者指定的權限**|原始加密已保留|新標籤加密已套用|原始加密已移除|
 |**保護範本**|原始加密已保留|新標籤加密已套用|原始加密已移除|
 |**具有系統管理員定義權限的標籤**|原始加密已移除|新標籤加密已套用|原始加密已移除|
 
-請注意，在套用新標籤加密或移除原始加密的情況下，只有在套用標籤的使用者有支援此動作的使用權利或角色時，才會發生這種情況：
+**註腳：**
+
+<sup>\*</sup> 只有 Azure 資訊保護整合標籤用戶端才支援
+
+在套用新標籤加密或移除原始加密的情況下，只有在套用標籤的使用者有支援此動作的使用權利或角色時，才會發生這種情況：
 
 - [使用權限](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)匯出或完全控制。
-- [版權管理簽發者或版權管理擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)的角色，或[超級使用者](/azure/information-protection/configure-super-users)。
+- [Rights Management 簽發者或 Rights Management 擁有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)的角色，或[超級使用者](/azure/information-protection/configure-super-users)。
 
 如果使用者沒有這些權限或角色中的一個，就無法套用標籤，因此會保留原始加密。 使用者會看到下列訊息：**您沒有對敏感度標籤進行變更所需的權限。請連絡內容的擁有者。**
 
-例如，對電子郵件訊息套用 [不可轉寄] 的人員，可以將該對話重新標記，以取代加密或移除它，因為他們是該電子郵件的版權管理擁有者。 但除了超級使用者之外，此電子郵件的收件者無法重新標記它，因為他們沒有所需的使用權限。
+例如，對電子郵件訊息套用 [不可轉寄] 的人員，可以將該對話重新標記，以取代加密或移除它，因為他們是該電子郵件的 Rights Management 擁有者。 但除了超級使用者之外，此電子郵件的收件者無法重新標記它，因為他們沒有所需的使用權限。
 
 #### <a name="email-attachments-for-encrypted-email-messages"></a>已加密電子郵件的電子郵件附件
 
@@ -206,11 +212,11 @@ ms.locfileid: "52079256"
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management 簽發者 (套用敏感度標籤的使用者) 一律具有完全控制權
 
-敏感度標籤的加密使用來自 Azure 資訊保護的 Azure 版權管理服務。 當使用者套用敏感度標籤以使用加密保護文件或電子郵件時，該使用者就會變成該內容的版權管理簽發者。
+敏感度標籤的加密會使用來自 Azure 資訊保護的 Azure Rights Management 服務。當使用者套用敏感度標籤，以使用加密來保護文件或電子郵件時，該使用者會成為該內容的 Rights Management 簽發者。
 
-版權管理簽發者一律會被授與文件或電子郵件的完全控制權限，此外：
+Rights Management 簽發者一律會被授與文件或電子郵件的完全控制權限，此外：
 
-- 如果加密設定包括到期日，則版權管理簽發者仍然可在該日期之後開啟和編輯文件或電子郵件。
+- 如果加密設定包括到期日，則 Rights Management 簽發者仍然可在該日期之後開啟和編輯文件或電子郵件。
 - Rights Management 簽發者一律可以離線存取文件或電子郵件。
 - Rights Management 簽發者仍可以開啟撤銷後的文件。
 
@@ -269,11 +275,11 @@ ms.locfileid: "52079256"
 
 - **不可轉寄**：收件者無法轉寄、列印或複製電子郵件。 例如，在 Outlook 用戶端中，無法使用 [轉寄] 按鈕、[另存新檔] 和 [列印] 功能表選項，且您無法在 [收件人]、[副本] 或 [密件副本] 方塊中新增或變更收件者。
     
-    若需更多資訊說明此選項運作的方式，請參閱[電子郵件的不可轉寄選項](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)。
+    若需更多資訊說明此選項運作的方式，請參閱[電子郵件的不可轉寄選項](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)。
 
 - **僅加密**：收件者擁有除了另存新檔、匯出及完全控制以外的所有使用權利。 此使用權利的組合表示收件者沒有限制，除非他們無法移除保護。 例如，收件者可以從電子郵件複製、列印，然後轉寄。
     
-    若需更多資訊說明此選項運作的方式，請參閱[電子郵件的僅加密選項](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)。
+    若需更多資訊說明此選項運作的方式，請參閱[電子郵件的僅加密選項](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)。
 
 附加到電子郵件的未加密 Office 文件會自動繼承相同的限制。 針對 [不可轉寄]，套用至這些文件的使用權限是 [編輯內容]、[編輯]；[儲存]；[檢視]、[開啟]、[讀取]；和 [允許巨集]。 如果使用者想要不同的附件使用權限，或者附件不是支援此繼承保護的 Office 文件，則使用者需要在將檔案附加到電子郵件之前加密該檔案。
 
@@ -420,13 +426,13 @@ ms.locfileid: "52079256"
 
 - 啟用來自 Azure 資訊保護的保護
     
-    若要讓敏感度標籤套用加密，必須為您的租用戶啟用來自 Azure 資訊保護的保護服務 (Azure 版權管理)。 在較新的租用戶中，這是預設設定，但您可能需要手動啟用該服務。 如需詳細資訊，請參閱[啟用來自 Azure 資訊保護的保護服務](/azure/information-protection/activate-service)。
+    若要讓敏感度標籤套用加密，必須為您的租用戶啟用來自 Azure 資訊保護的保護服務 (Azure Rights Management)。 在較新的租用戶中，這是預設設定，但您可能需要手動啟用該服務。 如需詳細資訊，請參閱[啟用來自 Azure 資訊保護的保護服務](/azure/information-protection/activate-service)。
 
 - 設定 Exchange 進行 Azure 資訊保護
     
     在使用者可在 Outlook 中套用標籤以加密其電子郵件之前，不必設定 Exchange 進行 Azure 資訊保護。不過，直到設定 Exchange 進行 Azure 資訊保護前，您都無法取得使用 Microsoft Azure AD Rights Management 保護與 Exchange 搭配的完整功能。
     
-    例如，使用者無法在行動電話或 Outlook 網頁版上檢視加密的電子郵件，無法為加密的電子郵件編製索引供搜尋，而且您無法設定 Exchange Online DLP 使用版權管理保護。 
+    例如，使用者無法在行動電話或 Outlook 網頁版上檢視加密的電子郵件，無法為加密的電子郵件編製索引供搜尋，而且您無法設定 Exchange Online DLP 使用 Rights Management 保護。 
     
     若要確保 Exchange 可以支援這些額外情節，請參閱下列內容：
     

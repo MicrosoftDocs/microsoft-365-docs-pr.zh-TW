@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員可以透過系統管理中心開啟支援票證。
-ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: 系統管理員角色 (如服務系統管理員) 會與商務功能對應，並提供在系統管理中心執行特定工作的權限。
+ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759405"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536007"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
@@ -43,7 +43,7 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 
 如需在 Microsoft 365 系統管理中心指派角色的詳細資訊，請參閱[指派系統管理員角色](assign-admin-roles.md)。
 
-### <a name="watch-what-is-an-admin"></a>注意: 何謂系統管理員?
+## <a name="watch-what-is-an-admin"></a>注意: 何謂系統管理員?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
@@ -70,7 +70,7 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 |計費系統管理員     |   將計費系統管理員角色指派給進行購買、管理訂閱和服務要求，以及監視服務健康情況的使用者。 <br><br> 計費系統管理員也可以：<br> - 管理所有層面的帳單 <br> - 在 Azure 入口網站中建立和管理支援票證 <br>  |
 |Exchange 系統管理員     |   將 Exchange 系統管理員角色指派給需要檢視和管理您使用者的電子郵件信箱、Microsoft 365 群組和 Exchange Online 的使用者。 <br><br> Exchange 系統管理員也可以：<br> - 復原使用者信箱中已刪除的郵件 <br> - 設定「傳送為」和「代表傳送」代理人 <br>  |
 |全域系統管理員     |   將全域系統管理員角色指派給需要透過 Microsoft 線上服務多數管理功能和資料的全域存取權的使用者。 <br><br> 授與太多的使用者全域存取權會造成安全性風險，因此建議您擁有 2 到 4 個之間的全域系統管理員。 <br><br> 只有全域系統管理員可以：<br> - 重設所有使用者的密碼 <br> - 新增和管理網域 <br> <br> **附註：** 註冊 Microsoft 線上服務的人員會自動成為全域系統管理員。 |
-|全域讀取者    |   將全域讀取者角色指派給需要檢視系統管理中心中的全域系統管理員可檢視的系統管理功能和設定的使用者。 全域讀取者系統管理員無法編輯任何設定。   |
+|全域讀取者    |   將全域讀取者角色指派給需要檢視系統管理中心中的全域系統管理員可檢視的系統管理功能和設定的使用者。全域讀取者系統管理員無法編輯任何設定。   |
 |群組系統管理員     |   將群組管理員角色指派給需要跨系統管理中心管理所有群組設定的使用者，包括 Microsoft 365 系統管理中心和 Azure Active Directory 入口網站。 <br><br> 群組系統管理員可以：<br> - 建立、編輯、刪除及還原 Microsoft 365 群組 <br> - 建立並更新群組建立、到期及命名原則 <br> - 建立、編輯、刪除及還原 Azure Active Directory 安全性群組| 
 |服務台系統管理員     |   將服務台系統管理員角色指派給需要執行下列動作的使用者：<br> - 重設密碼 <br> - 強制使用者登出 <br> - 管理服務要求 <br> - 監視服務健康情況 <br> <br> **附註**：服務台系統管理員只能協助非系統管理員使用者和獲指派下列角色的使用者：目錄讀取者、來賓邀請者、服務台系統管理員、訊息中心讀取者和報告讀取者。      |
 |授權系統管理員    |   將授權系統管理員角色指派給需要指派和移除使用者授權，以及編輯其使用位置的使用者。 <br/><br/> 授權系統管理員也可以： <br> - 重新處理群組型授權的授權指派 <br> - 將產品授權指派群組以進行群組型授權  |
@@ -93,12 +93,12 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 
 在合作夥伴可以將這些角色指派給使用者之前，您必須先將該合作夥伴新增為您帳戶的委派系統管理員。 此程序是由獲授權的合作夥伴初始化。 合作夥伴會傳送電子郵件給您，詢問您是否想要授與其權限，以做為委派的系統管理員。如需指示，請參閱[授權或移除合作夥伴關係](../misc/add-partner.md)。
   
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[指派系統管理員角色](assign-admin-roles.md)
+[指派系統管理員角色](assign-admin-roles.md) (文章)
 
-[Microsoft 365 系統管理中心的 Azure AD 角色](azure-ad-roles-in-the-mac.md)
+[Microsoft 365 系統管理中心的 Azure AD 角色](azure-ad-roles-in-the-mac.md) (文章)
 
-[Exchange Online 系統管理員角色](about-exchange-online-admin-role.md)
+[Exchange Online 系統管理員角色](about-exchange-online-admin-role.md) (文章)
   
-[Microsoft 365 系統管理中心的活動報告](../activity-reports/activity-reports.md)
+[Microsoft 365 系統管理中心的活動報告](../activity-reports/activity-reports.md) (文章)

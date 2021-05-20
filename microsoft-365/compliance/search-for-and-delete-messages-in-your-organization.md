@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用安全性與合規性中心的搜尋和清除功能，可搜尋並刪除組織中所有信箱的電子郵件訊息。
-ms.openlocfilehash: b7bb1008120df8efefc983d526d90e8397b3a89e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 629b236be3f857da47674cda9350d8b89e6f3445
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924233"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537640"
 ---
 # <a name="search-for-and-delete-email-messages"></a>搜尋並刪除電子郵件訊息
 
@@ -41,7 +41,10 @@ ms.locfileid: "50924233"
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 若要建立和執行內容搜尋，您必須是 **「eDiscovery 管理員」** 角色群組的成員，或者獲指派 **「合規性搜尋」** 管理角色。 若要刪除郵件，您必須是 **「組織管理」** 角色群組的成員，或者獲指派 **「搜尋及清除」** 管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心中指派電子文件探索權限](assign-ediscovery-permissions.md)。
+- 若要建立和執行內容搜尋，您必須是 **電子文件探索管理員** 角色群組的成員，或者獲指派安全性與合規性中心的 **合規性搜尋** 角色。 若要刪除郵件，您必須是 **組織管理** 角色群組的成員，或者獲指派安全性與合規性中心的 **搜尋及清除** 角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心指派電子文件探索權限](assign-ediscovery-permissions.md)。
+
+  > [!NOTE]
+  > Exchange Online 安全性與安全性與合規性中心都有 **組織管理** 角色群組。 這些是提供不同權限的不同角色群組。 成為 Exchange Online 中 **組織管理** 的成員，不會授與其刪除電子郵件訊息所需的權限。 如果您未獲指派安全性與合規性中心 (直接或透過角色群組如 **組織管理**) 的 **搜尋及清除** 角色，執行 **New-ComplianceSearchAction** Cmdlet 時，您會在步驟 3 收到錯誤，其訊息為「找不到符合參數名稱 'Purge' 的參數」。
 
 - 您必須使用安全性與合規性中心 PowerShell 來刪除郵件。 如需如何連線的相關指示，請參閱[步驟 2](#step-2-connect-to-security--compliance-center-powershell)。
 

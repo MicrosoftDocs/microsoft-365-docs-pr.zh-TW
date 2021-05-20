@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 安全性與合規性中心的權限
+title: Microsoft 365 合規性中心和安全性中心中的權限
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,12 +19,12 @@ description: 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7cc0c69008d942e213f3a86e2852265969dd1971
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: cc2808ffe5d0acd3a5c3c3a6252503ee5e2cf94e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203624"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530823"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
 
@@ -35,7 +35,7 @@ ms.locfileid: "51203624"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-您的組織需要管理跨所有 Microsoft 365 服務的安全性與合規性案例。 您需要靈活地為組織 IT 群組中的合適人員提供正確的管理員權限。 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
+您的組織需要管理跨所有 Microsoft 365 服務的合規性與安全性案例。 您需要靈活地為組織 IT 群組中的合適人員提供正確的管理員權限。 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
 
 在全域管理員新增這些系統管理員角色後，系統管理員就可以存取 Microsoft 365 中所有服務的功能和資料，例如 Microsoft 365 安全性中心、Microsoft 365 合規性中心、Azure、Office 365 和企業行動力 + 安全性。
 
@@ -90,7 +90,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |Azure Active Directory (Azure AD) 與 Azure AD Identity Protection|[Azure AD 系統管理員角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |適用於身分識別的 Microsoft Defender|[適用於身分識別的 Microsoft Defender 角色群組](/azure-advanced-threat-protection/atp-role-groups)|
 |Azure 資訊保護|[Azure AD 系統管理員角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|合規性管理員|[合規性管理員](../../compliance/compliance-manager-setup.md#set-user-permissions-and-assign-roles) (英文)|
+|合規性管理員|[合規性管理員](../../compliance/compliance-manager-setup.md#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Exchange 角色型存取控制](/exchange/permissions-exo/permissions-exo)|
 |Intune|[Intune 角色型存取控制](/intune/role-based-access-control)|
 |受管理的電腦|[Azure AD 系統管理員角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

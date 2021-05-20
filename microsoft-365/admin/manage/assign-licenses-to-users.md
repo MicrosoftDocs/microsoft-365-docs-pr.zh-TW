@@ -21,14 +21,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: 了解如何指派授權給使用者。
+description: 指派授權取決於您要指派產品授權給特定使用者，還是要將使用者授權指派給特定產品。
 ms.date: 04/26/2021
-ms.openlocfilehash: ef8169658c6aef03cf8ff0cf9714c980ce63b060
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332483"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537532"
 ---
 # <a name="assign-licenses-to-users"></a>將授權指派給使用者
 
@@ -53,20 +53,22 @@ ms.locfileid: "52332483"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[系統管理員]</a>，前往 **[帳單]** > **[授權]** 頁面。
+ 1. 在系統管理中心，前往 [帳單 **]** \> [授權 <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">]</a> 頁面。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[系統管理員]</a>，前往 **[帳單]** > **[授權]** 頁面。
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">[授權]</a> 頁面。
 
 ::: moniker-end
+
 
 2. 選取產品。
 3. 在產品詳細資料頁面上，選取 **[指派授權]**。
@@ -80,21 +82,22 @@ ms.locfileid: "52332483"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[系統管理員]</a>，前往 **[帳單]** > **[授權]** 頁面。
+ 1. 在系統管理中心，前往 [帳單 **]** \> [授權 <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[系統管理員]</a>，前往 **[帳單]** > **[授權]** 頁面。
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">[授權]</a> 頁面。
 
 ::: moniker-end
+
 
 2. 在 **[授權]** 頁面上，選取特定使用者的列。
 3. 在右窗格中，選取或取消選取您要授與存取權或移除存取權的應用程式與服務。
@@ -114,18 +117,19 @@ ms.locfileid: "52332483"
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[系統管理中心]</a> 中，移至 **[帳單]** > **[作用中使用者]** 頁面。
+ 1. 在系統管理中心，移至 [使用者 **]** \> [作用中使用者 <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">系統管理中心</a>，移至 **[帳單]** > **[作用中使用者]** 頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
+
 2. 選取您要指派授權的使用者名稱旁的圓圈。
-3. 在頂端，選取 **[更多選項(...)]**，然後選取 **[管理產品授權]**。
+3. 在頂端選取三個點 (更多動作)，然後選取 [管理產品授權 **]**。
 4. 在 **[管理產品授權]** 窗格中，選取 **[新增到現有產品授權指派]** \> **[下一步]**。
 5. 在 **[新增到現有產品]** 窗格中，針對您已選取要指派授權的使用者，將開關切換到 **[開啟]** 位置。\
     根據預設，與這些授權相關的所有服務都會自動指派給使用者。 您可以限制使用者能使用的服務。 針對您不想讓使用者使用的服務，將開關切換至 **[關閉]** 位置。
@@ -145,15 +149,16 @@ ms.locfileid: "52332483"
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[系統管理中心]</a> 中，移至 **[帳單]** > **[作用中使用者]** 頁面。
+ 1. 在系統管理中心，移至 [使用者 **]** \> [作用中使用者 <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">系統管理中心</a>，移至 **[帳單]** > **[作用中使用者]** 頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
+
 
 2. 選取您要指派授權的使用者列。
 3. 在右窗格中，選取 **[授權與應用程式]**。

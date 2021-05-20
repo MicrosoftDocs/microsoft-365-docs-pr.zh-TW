@@ -18,13 +18,14 @@ search.appverid:
 f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
+recommendations: false
 description: 了解在 Microsoft 365 中限制或停用共用的選項。
-ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f237df883bb401342a3a5c93432beeb5028cfce6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920201"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539188"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>在 Microsoft 365 中限制共用
 
@@ -81,7 +82,7 @@ ms.locfileid: "50920201"
 1. 在 Azure Active Directory 的 [概觀] 頁面上，按一下 **[組織關聯]**。
 2. 按一下 **[設定]**。
 3. 在 **[共同作業限制]** 底下，選取 **[拒絕指定網域的邀請]** 或 **[僅對指定的網域允許邀請]**，然後輸入您要使用的網域。
-4. 按一下 **[儲存]**。
+4. 按一下 [儲存]。
 
     ![Azure Active Directory 中共同作業限制設定的螢幕擷取畫面](../media/azure-ad-allow-only-specified-domains.png)
 
@@ -93,7 +94,7 @@ ms.locfileid: "50920201"
 1. 在網站中，按一下齒輪圖示，然後按一下 **[網站權限]**。
 2. 按一下 **[共用設定]** 下的 **[變更共用設定]**。
 3. 選取 **[網站擁有者和成員，以及擁有編輯權限的人員可以共用檔案與資料夾，但只有網站擁有者可以共用網站]**。
-4. 按一下 **[儲存]**。
+4. 按一下 [儲存]。
 
     ![SharePoint 網站中共用權限設定的螢幕擷取畫面](../media/sharepoint-site-sharing-permissions-level-two.png)
 
@@ -112,7 +113,7 @@ ms.locfileid: "50920201"
 3. 在 **[原則]** 索引標籤的 **[外部共用]** 底下，按一下 **[編輯]**。
 4. 在 **[外部共用的進階設定]** 底下，選取 **[依網域限制共用]**。
 5. 新增您想要允許或封鎖的網域，然後按一下 **[儲存]**。
-6. 按一下 **[儲存]**。
+6. 按一下 [儲存]。
 
     ![允許的網域網站層級設定的螢幕擷取畫面](../media/limit-site-sharing-by-domain.png)
 
@@ -211,7 +212,7 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 Azure Active Directory 條件式存取提供可根據網路位置、裝置健康情況、登入風險及其他因素來限制或防止與人員共用的選項。 請參閲[何謂條件式存取？](/azure/active-directory/conditional-access/overview)。
 
-SharePoint 為未受管理的裝置和網路位置提供與 Azure AD 條件式存取的直接整合。 請參閱下列參照以取得詳細資料：
+SharePoint 為未受管理的裝置和網路位置提供與 Azure AD 條件式存取的直接整合。請參閱下列參照以取得詳細資料：
 
 - [從未受管理的裝置控制存取](/sharepoint/control-access-from-unmanaged-devices)
 - [根據網路位置控制對 SharePoint 和 OneDrive 資料的存取](/sharepoint/control-access-based-on-network-location)

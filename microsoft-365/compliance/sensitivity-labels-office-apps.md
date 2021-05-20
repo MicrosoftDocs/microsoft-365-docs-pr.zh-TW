@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: bca8efa15bdfe2f4b7c8c90e7a4706f40b19f85d
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345761"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572606"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -170,7 +170,7 @@ Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 - 使用者將 **機密\所有員工** 標籤套用至文件，且此標籤已設定為，為組織中所有使用者套用加密設定。 然後，此使用者手動設定 IRM 設定，以限制對組織外部使用者的存取。 結果是，文件會標籤為 **機密\所有員工** 並加密，但貴組織的使用者無法如預期開啟文件。
 
-- 使用者將 **機密\僅收件者** 標籤套用至電子郵件，且此電子郵件已設定為套用 **不要轉寄** 加密設定。 在 Outlook 應用程式中，該使用者然後手動設定 IRM 設定，以便電子郵件不受限制。 結果是，儘管套用了 **機密\僅收件者** 標籤，收件者還是可以轉寄電子郵件。
+- 使用者將 **機密\僅收件者** 標籤套用至電子郵件，且此電子郵件已設定為套用 **不要轉寄** 加密設定。 在 Outlook 應用程式中，此使用者接著手動選取[僅加密] 的 IRM 設定。 結果是，雖然電子郵件確實保持加密，套用了 [機密: 僅限收件者 **]** 標籤後，收件者還是可以轉寄電子郵件。
     
     作為例外，對於 Outlook 網頁版，在目前選取的標籤套用加密時，使用者無法選取 **[加密]** 功能表中的選項。
 
@@ -178,13 +178,23 @@ Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 如果文件或電子郵件已套用標籤，但內容尚未加密，則使用者可以執行任何這些動作，或者使用者擁有匯出或完全控制的[使用權限](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。 
 
-為了獲得更一致的標籤體驗以及有意義的報告，請提供適當的標籤和指引，讓使用者只透過套用標籤來保護文件。例如：
+為了獲得更一致的標籤體驗以及有意義的報告，請提供適當的標籤和指引，讓使用者只透過套用標籤來保護文件和電子郵件。例如：
 
 - 在使用者必須指派自己的權限的例外案例中，請提供[可讓使用者指派自己的權限](encryption-sensitivity-labels.md#let-users-assign-permissions)的標籤。 
 
 - 當使用者需要具有相同分類但無加密的標籤時，請提供子標籤替代方法，而不是在選取套用加密的標籤之後手動移除加密。例如：
     - **機密\所有員工**
     - **機密\任何人 (無加密)**
+
+- 考慮停用 IRM 設定，以防止使用者選取：
+    - Windows 版 Outlook： 
+        - 登錄機碼 (DWORD:00000001)，HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM 中的 *DisableDNF* 和 *DisableEO*
+        - 確定群組原則設定 [設定加密按鈕的預設加密選項 **]** 未設定
+    - Mac 版 Outlook： 
+        - 機碼 *DisableEncryptOnly* 和 *DisableDoNotForward* 安全性設定，記載在 [設定 Mac 版 Outlook 的喜好設定[]](/DeployOffice/mac/preferences-outlook) 中
+    - Outlook 網頁版： 
+        - 針對 [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) 記載的參數 *SimplifiedClientAccessDoNotForwardDisabled* 和 *SimplifiedClientAccessEncryptOnlyDisabled*
+    - iOS 版和 Android 版 Outlook：這些應用程式不支援使用者在沒有標籤的情況下套用加密，因此沒有要停用的項目。
 
 > [!NOTE]
 > 如果使用者手動移除儲存在 SharePoint 或 OneDrive 中的標籤文件上的加密，並且您已[為 SharePoint 和 OneDrive 中的 Office 檔案啟用了敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)，則下次存取或下載該文件時，標籤加密將自動還原。 
@@ -413,7 +423,7 @@ PowerShell 範例，其中標籤原則命名為 **全域**：
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>指定進階設定的 PowerShell 提示
 
-要為 Outlook 指定其他預設標籤，必須指定標籤 GUID。 要尋找此值，可使用以下命令：
+若要為 Outlook 指定其他預設標籤，請依標籤的 GUID 加以識別。 要尋找此值，可使用以下命令：
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
