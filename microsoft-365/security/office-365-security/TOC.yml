@@ -38,14 +38,6 @@
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 安全性中心概觀
           href: ../defender/overview-security-center.md
-        - name: 適用於 Office 365 的 Defender 威脅總管
-          items:
-            - name: 威脅總管中的威脅搜捕
-              href: threat-hunting-in-threat-explorer.md
-            - name: 使用威脅總管的電子郵件安全性
-              href: email-security-in-microsoft-defender.md
-            - name: 威脅總管與即時偵測基本概念
-              href: real-time-detections.md
         - name: 電子郵件實體頁面
           href: mdo-email-entity-page.md
         - name: AIR 概觀
@@ -118,8 +110,6 @@
           href: configure-junk-email-settings-on-exo-mailboxes.md
         - name: 設定輸出垃圾郵件篩選
           href: configure-the-outbound-spam-policy.md
-        - name: 設定詐騙情報
-          href: learn-about-spoof-intelligence.md
         - name: 建立封鎖寄件者清單
           href: Create-block-sender-lists-in-office-365.md
         - name: 建立安全寄件者清單
@@ -150,10 +140,6 @@
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: 安裝 Office 應用程式防護
           href: install-app-guard.md
-        - name: 設定政治活動開發/測試環境的群組和使用者
-          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-        - name: 在政治活動開發/測試環境中建立小組網站
-          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
     - name: 移轉
       items:
         - name: 從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP
@@ -206,6 +192,14 @@
           href: zero-hour-auto-purge.md
     - name: 偵測
       items:
+        - name: 適用於 Office 365 的 Defender 威脅總管
+          items:
+            - name: 威脅總管中的威脅搜捕
+              href: threat-hunting-in-threat-explorer.md
+            - name: 使用威脅總管的電子郵件安全性
+              href: email-security-in-microsoft-defender.md
+            - name: 威脅總管與即時偵測基本概念
+              href: real-time-detections.md
         - name: 使用威脅追蹤工具
           href: threat-trackers.md
         - name: 檢視警示
@@ -226,13 +220,13 @@
           href: campaigns.md
         - name: 調查惡意電子郵件
           href: investigate-malicious-email-that-was-delivered.md
-        - name: 在安全性與合規性中心中檢視適用於 Office 365 的 Defender 報告
-          href: view-reports-for-mdo.md
         - name: 檢視自動調查的詳細資料和結果
           href: air-view-investigation-results.md
-        - name: 檢視安全性與合規性中心內的電子郵件安全性報告
+        - name: 檢視適用於 Office 365 的 Microsoft Defender 報告
+          href: view-reports-for-mdo.md
+        - name: 檢視電子郵件安全性報告
           href: view-email-security-reports.md
-        - name: 檢視安全性與合規性中心中的郵件流程報告
+        - name: 檢視郵件流程報告
           href: view-mail-flow-reports.md
         - name: 在獨立版 EOP 中檢視系統管理稽核記錄
           href: view-the-admin-audit-log-eop.md
@@ -240,6 +234,8 @@
           href: reporting-and-message-trace-in-exchange-online-protection.md
         - name: 自動轉寄訊息深入解析
           href: mfi-auto-forwarded-messages-report.md
+        - name: 模擬深入解析
+          href: impersonation-insight.md
         - name: 郵件流程圖
           href: mfi-mail-flow-map-report.md
         - name: 將郵件手動提交給 Microsoft
@@ -256,6 +252,8 @@
           href: mfi-outbound-and-inbound-mail-flow.md
         - name: SMTP 驗證用戶端深入解析和報告
           href: mfi-smtp-auth-clients-report.md
+        - name: 詐騙情報深入解析
+          href: learn-about-spoof-intelligence.md
         - name: 將惡意程式碼與非惡意程式碼提交給 Microsoft
           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
         - name: 上層網域郵件流程狀態深入解析
@@ -266,8 +264,6 @@
           href: use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
         - name: 佇列深入解析
           href: mfi-queue-alerts-and-queues.md
-        - name: 逐步解說 - 欺騙情報深入解析
-          href: walkthrough-spoof-intelligence-insight.md
     - name: 回覆
       items:
         - name: 快速偵測和處理受影響的使用者帳戶

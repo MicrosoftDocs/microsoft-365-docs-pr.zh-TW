@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft 365 商務進階版資源
-summary: Microsoft 365 商務進階版 (之前稱為 Microsoft 365 商務版) 是一項全面的訂閱服務，適用於員工人數低於 300 人的企業。 它整合了您最愛的 Office 生產力應用程式和服務，以及 Microsoft Teams 等共同作業工具，並具有進階安全性和裝置管理功能。
+summary: Microsoft 365 商務進階版 (之前稱為 Microsoft 365 商務版) 是一項全面的訂閱服務，適用於員工人數少於 300 人的企業。 它整合了您最愛的 Office 生產力應用程式和服務，以及 Microsoft Teams 等共同作業工具，並具有進階安全性和裝置管理功能。
 brand: m365
 metadata:
   title: Microsoft 365 商務進階版資源
@@ -15,10 +15,10 @@ metadata:
 productDirectory:
   title: 使用 Microsoft 365 商務進階版保護遠端工作
   items:
-    - title: 讀取
+    - title: 觀看
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
-      summary: 讓您能夠使用 Microsoft 365 商務進階版來保護遠端工作的最佳方式。
-      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623'
+      summary: Microsoft 365 商務進階版的五大優點。
+      url: 'https://aka.ms/M365BPvideo'
     - title: 取得免費的合作夥伴套件
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
       summary: 實用的指導方針和上市資源，讓合作夥伴保護遠端工作。
