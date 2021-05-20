@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中查看、建立、修改和刪除輸出垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ead8aa75c0218dd2c4cad96e50e37ed3ddc12815
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331667"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583181"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -78,10 +78,10 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
   如需詳細資訊，請參閱 [Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo)。
 
-  **附註**：
-
-  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
+  > [!NOTE]
+  > - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  > 
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 如需輸出垃圾郵件原則的建議設定，請參閱 [EOP 呼出垃圾郵件篩選原則設定](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings)。
 
@@ -122,7 +122,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
         您新增的收件者會出現在飛入的 [ **收件者清單** ] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
 
-     1. 完成後，點擊 **[儲存]**。
+     1. 完成後，按一下 **[儲存]**。
 
         若要停用此設定，請清除核取方塊。
 
@@ -163,7 +163,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
      - **無動作，只發出警示**：已傳送電子郵件通知。
 
-6.  (選用) 展開 **自動** 轉寄區段，以控制使用者自動將電子郵件轉寄給外部寄件者。 如需詳細資訊，請參閱 [在 Microsoft 365 中控制自動外部電子郵件轉接](external-email-forwarding.md)。
+6.  (選用) 展開 **自動** 轉寄區段，以控制使用者自動將電子郵件轉寄給外部寄件者。 如需詳細資訊，請參閱[在 Microsoft 365 中控制自動外部電子郵件轉接](external-email-forwarding.md)。
 
    > [!NOTE]
    >
@@ -288,16 +288,15 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 1. 建立輸出垃圾郵件篩選原則。
 2. 建立輸出垃圾郵件篩選規則，以指定套用規則的輸出垃圾郵件篩選原則。
 
- **附註**：
-
-- 您可以建立新的輸出垃圾郵件篩選規則，並將現有的未關聯輸出垃圾郵件篩選原則指派給它。 輸出垃圾郵件篩選規則無法與一個以上的輸出垃圾郵件篩選原則相關聯。
-
-- 您可以在 PowerShell 中的新外寄垃圾郵件篩選原則上設定下列設定，而這些原則在安全性 & 規範中心內無法使用，直到您建立原則為止：
-
-  - _在_ `$false` **HostedOutboundSpamFilterRule** Cmdlet) 上，建立新原則做為已停用 (。
-  - 在 _\<Number\>_ **HostedOutboundSpamFilterRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
-
-- 在您將原則指派給垃圾郵件篩選規則之前，您在 PowerShell 中所建立的新輸出垃圾郵件篩選原則不會顯示在安全性 & 規範中心。
+> [!NOTE]
+> - 您可以建立新的輸出垃圾郵件篩選規則，並將現有的未關聯輸出垃圾郵件篩選原則指派給它。 輸出垃圾郵件篩選規則無法與一個以上的輸出垃圾郵件篩選原則相關聯。
+> 
+> - 您可以在 PowerShell 中的新外寄垃圾郵件篩選原則上設定下列設定，而這些原則在安全性 & 規範中心內無法使用，直到您建立原則為止：
+> 
+>   - _在_ `$false` **HostedOutboundSpamFilterRule** Cmdlet) 上，建立新原則做為已停用 (。
+>   - 在 _\<Number\>_ **HostedOutboundSpamFilterRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
+> 
+> - 在您將原則指派給垃圾郵件篩選規則之前，您在 PowerShell 中所建立的新輸出垃圾郵件篩選原則不會顯示在安全性 & 規範中心。
 
 #### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>步驟1：使用 PowerShell 來建立輸出垃圾郵件篩選原則
 

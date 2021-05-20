@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: 透過使用 PowerShell 設定電子郵件地址原則，瞭解如何選擇建立 Microsoft 365 群組時所使用的網域。
-ms.openlocfilehash: a0142ea5f5aa088c4be79fc8699a616d9cdd9390
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538216"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583145"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>選擇建立 Microsoft 365 群組時所要使用的網域
 
@@ -119,10 +119,10 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
     
 - 您可以為組織設定100電子郵件地址原則的上限。
     
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) (文章) 
 
-[建立共同作業管理計畫](collaboration-governance-first.md)
+[建立](collaboration-governance-first.md) 共同作業控管方案 (文章) 
 
-[在系統管理中心建立 Microsoft 365 群組](../admin/create-groups/create-groups.md)
+[在系統管理中心中建立 Microsoft 365 群組](../admin/create-groups/create-groups.md) (文章) 

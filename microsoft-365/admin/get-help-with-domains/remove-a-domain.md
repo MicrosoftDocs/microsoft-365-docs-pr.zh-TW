@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: 瞭解如何從 Microsoft 365 中移除舊的網域，並將使用者和群組移至另一個網域。
-ms.openlocfilehash: 3586cc8b288b77725c0dd3484629688e98e0a218
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: 瞭解如何從 Microsoft 365 中移除舊的網域，並將使用者和群組移至另一個網域或取消您的訂閱。
+ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572114"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582929"
 ---
 # <a name="remove-a-domain"></a>移除網域
   
@@ -218,10 +218,10 @@ ms.locfileid: "52572114"
   
 ::: moniker-end
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[網域常見問題集](../setup/domains-faq.yml)
+[網域常見問題解答](../setup/domains-faq.yml) (篇) 
 
-[切換到其他的商務用 Microsoft 365 方案](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[切換至不同 Microsoft 365 的 business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (文章) 
 
-[取消訂閱](../../commerce/subscriptions/cancel-your-subscription.md)
+ (文章) [取消您的訂閱](../../commerce/subscriptions/cancel-your-subscription.md)

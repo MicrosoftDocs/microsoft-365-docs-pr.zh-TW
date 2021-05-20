@@ -20,12 +20,12 @@ metadata:
   description: 系統管理員可以在 Exchange Online Protection (EOP) 中查看有關反垃圾郵件保護的常見問題及解答。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 430ed10d74dea909415ee0ca32d33ad8d006ae6b
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: e632ab1183c43cd50da7c2cf7832a5a18fa64d50
+  ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52333918"
+  ms.lasthandoff: 05/20/2021
+  ms.locfileid: "52583613"
 title: 反垃圾郵件保護常見問題集
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  本主題提供 Exchange Online 中的信箱、獨立 Exchange Online Protection (EOP) 組織中的 Microsoft 365 組織的反惡意程式碼保護的常見問題和解答，但沒有 Exchange Online 信箱。
+  本主題針對具有 Exchange Online 或獨立 Exchange Online Protection (EOP) 組織中信箱的 Microsoft 365 組織，提供有關反惡意程式碼保護的常見問題和解答，但沒有 Exchange Online 信箱。
 
 
   如需有關隔離區的問題與解答，請參閱[隔離常見問題集](quarantine-faq.yml)。
@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > 在 EOP 保護內部部署信箱的混合部署中，您必須在內部部署 Exchange 組織中設定兩個 Exchange 郵件流程規則 (，也稱為傳輸規則) ，以偵測新增至郵件的 EOP 垃圾郵件篩選標頭。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+      > 在 EOP 保護內部部署信箱的混合部署中，您必須設定兩個 Exchange 郵件流程規則 (也稱為「內部部署 Exchange 組織中的傳輸規則) ，以偵測新增至郵件的 EOP 垃圾郵件篩選標頭。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
        **輸出郵件：** 郵件是透過 [高風險傳遞集](high-risk-delivery-pool-for-outbound-messages.md) 區路由傳送，或是傳回給寄件者的未傳遞回報 (也稱為 NDR 或退回郵件) 。 如需輸出垃圾郵件保護的詳細資訊，請參閱 [輸出垃圾郵件控制](outbound-spam-controls.md)。
   - question: >
@@ -70,7 +70,9 @@ sections:
       零天垃圾郵件變種是一種最近產生的垃圾郵件變種，永遠不會被捕獲或分析，所以反垃圾郵件篩選器還沒有任何可供您偵測的資訊。 在垃圾郵件分析員取得並分析零天的垃圾郵件樣本（如果它符合垃圾郵件分類準則）之後，我們會更新反垃圾郵件篩選器以偵測它，而且不會再視為「零一天」。
 
 
-      **附注：** 如果您收到的郵件可能是零天的垃圾郵件變種，為了協助我們改善服務，請使用 [報表訊息和](report-junk-email-messages-to-microsoft.md)檔案中所述的其中一種方法，將郵件提交給 microsoft。
+      > [!NOTE]
+
+      > 如果您收到的郵件可能是零天的垃圾郵件變種，為了協助我們改善服務，請使用 [報表訊息和](report-junk-email-messages-to-microsoft.md)檔案中所述的其中一種方法，將郵件提交給 microsoft。
   - question: >
       是否需要設定服務以提供反垃圾郵件保護？
     answer: >
@@ -80,7 +82,7 @@ sections:
       如需詳細資訊，請參閱下列主題：
 
 
-      [EOP 和 Microsoft Defender for Office 365 安全性的建議設定](recommended-settings-for-eop-and-office365.md)
+      [EOP 和 Microsoft Defender Office 365 security 的建議設定](recommended-settings-for-eop-and-office365.md)
 
 
       [在 EOP 中設定連線篩選](configure-the-connection-filter-policy.md)
@@ -97,7 +99,7 @@ sections:
   - question: >
       是否自動啟用大量電子郵件篩選？
     answer: >
-      是。 如需大量電子郵件的詳細資訊，請參閱 [垃圾郵件和大量電子郵件有什麼不同？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
+      是。 如需大宗郵件的詳細資訊，請參閱[垃圾郵件與大宗郵件有何不同？](what-s-the-difference-between-junk-email-and-bulk-email.md) (部分機器翻譯)
   - question: >
       服務是否提供 URL 篩選？
     answer: >
@@ -115,7 +117,7 @@ sections:
       Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件追蹤](/exchange/monitoring/monitoring) (部分機器翻譯)
 
 
-      獨立 EOP 客戶： [在 Exchange Online Protection 中報告和郵件追蹤](reporting-and-message-trace-in-exchange-online-protection.md)
+      獨立 EOP 客戶： [Exchange Online Protection 中的報告與訊息追蹤](reporting-and-message-trace-in-exchange-online-protection.md)
   - question: >
       某人傳送給我訊息，但找不到。 我懷疑它可能被偵測為垃圾郵件。 是否有可用來找出的工具？
     answer: >
@@ -128,12 +130,12 @@ sections:
 
       您可以在寄件者被禁止對外傳送垃圾郵件時，傳送通知到指定的電子郵件地址。 如需此設定的相關資訊，請參閱[設定輸出垃圾郵件原則](configure-the-outbound-spam-policy.md) (部分機器翻譯)。
   - question: >
-      是否可以搭配 Exchange Online 使用協力廠商的反垃圾郵件和反惡意程式碼提供者？
+      是否可以搭配 Exchange Online 使用協力廠商反垃圾郵件和反惡意程式碼提供者？
     answer: >
       是。 雖然我們建議您將 MX 記錄指向 Microsoft，但我們意識到有正當的商業原因可將電子郵件路由傳送至 Microsoft first 以外的地方。
 
 
-      - **輸入**：變更您的 MX 記錄以指向協力廠商提供者，然後將郵件重新導向至 EOP 進行其他處理。 如需詳細資訊，請參閱 [在 Exchange Online 中針對連接器的增強型篩選](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+      - **輸入**：變更您的 MX 記錄以指向協力廠商提供者，然後將郵件重新導向至 EOP 進行其他處理。 如需詳細資訊，請參閱[增強篩選的 Exchange Online 中的連接器](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
 
       - **輸出**：設定從 Microsoft 365 到目的地協力廠商提供者的智慧主機路由。

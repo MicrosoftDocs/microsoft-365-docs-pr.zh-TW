@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 比較 Microsoft 365 加密選項，包括 Office 365 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並了解傳輸層安全性 (TLS)。
-ms.openlocfilehash: e5357384ebfe481e464ea8950c3f753b38a53b0c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cb34318c4f22375a1eadd4266bc781cfe3c691bf
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926533"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583325"
 ---
 # <a name="email-encryption"></a>電子郵件加密
 
@@ -55,9 +55,7 @@ Microsoft 365 提供多種加密選項，有助於滿足您對電子郵件安全
   - 中央伺服器在驗證收件者的身分後，會代替收件者將郵件解密。
 
 如需詳細了解 Microsoft 365 如何保護伺服器之間的通訊，例如 Microsoft 365 內的組織之間，或 Microsoft 365 與 Microsoft 365 外部受信任商業夥伴之間，請參閱 [Exchange Online 如何使用 TLS 保護 Office 365 中的電子郵件連線安全性](exchange-online-uses-tls-to-secure-email-connections.md)。
-  
-觀看此影片來取得 [Office 365 中的加密](https://www.youtube.com/watch?v=KmfxCd5ublI)簡介。
-  
+    
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>比較 Office 365 中提供的電子郵件加密選項
 
 |電子郵件加密技術|![OME 的說明概念圖](../media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![IRM 的說明概念圖](../media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![SMIME 的說明概念圖](../media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|

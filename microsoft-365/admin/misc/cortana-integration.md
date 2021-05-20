@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: 當您使用有效的工作或學校帳戶登入時，使用者可以在 Microsoft 365 體驗中取得 Cortana 的雲端協助服務，以符合 Office 365 企業級隱私權、安全性和合規性承諾。
-ms.openlocfilehash: dd00972f6e84f5d430ad860ea9cbf637bd7c790f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 具有有效工作或學校帳戶的使用者可以在 Microsoft 365 體驗中取得 Cortana，以符合企業級的安全性承諾 Office 365。
+ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537460"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582773"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -183,3 +183,12 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 3. 選取 **[儲存變更]**。
 
 針對 [Microsoft 服務合約](https://go.microsoft.com/fwlink/p/?LinkId=2109174) 和 [microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)所控制的服務，microsoft 是資料控制器。 就像資料控制者一樣，Microsoft 會使用資料，依照 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)來改進產品和服務。
+
+
+## <a name="related-content"></a>相關內容
+
+[Teams (文章中的 Cortana 語音協助](/microsoftteams/cortana-in-teams)) 
+
+[在 Windows 10 (文章中設定 Cortana](/windows/configuration/cortana-at-work/cortana-at-work-overview)) 
+
+[您可以從 Cortana 播放我的電子郵件？](https://support.microsoft.com/help/4558256)

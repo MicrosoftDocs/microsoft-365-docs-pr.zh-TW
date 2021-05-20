@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 生產力圖例
-description: 使用這些圖解（如小組架構圖）來瞭解執行 Microsoft 365 生產力解決方案的架構基本概念。
+description: 使用這些圖例（如 Teams 架構圖）來瞭解執行 Microsoft 365 生產力解決方案的架構基本概念。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,27 +13,27 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 32949081418a6984a2b34d039a4dc39d60a56608
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: b47099dd0d26dba6a399ecff823bcc758be7e16d
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029085"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583637"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生產力圖例
 
-Microsoft 365 企業版解決方案系列提供實施 Microsoft 365 功能的指導方針，尤其是跨技術功能（包括小組架構圖表）。
+Microsoft 365 企業解決方案系列提供執行 Microsoft 365 功能的指導方針，尤其是跨技術功能（包括 Teams 架構圖表）。
 
 ## <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>適用於 IT 結構設計師的 Microsoft 365 中的Microsoft Teams 和相關生產力服務
 使用 Microsoft Teams 領導，Microsoft 365 中生產力服務的邏輯架構。
 
 | 項目 | 描述 |
 |:-----|:-----|
-|[![小組邏輯架構海報](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021年1月更新   |Microsoft 提供一套生產力服務，共同合作來提供資料管理、安全性和法規遵循功能的共同作業體驗。 <br/> <br/>這系列的圖例可為企業結構設計師提供生產力服務邏輯架構使用 Microsoft Teams 引導的檢視。|
+|[![Teams 邏輯架構海報](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021年1月更新   |Microsoft 提供一套生產力服務，共同合作來提供資料管理、安全性和法規遵循功能的共同作業體驗。 <br/> <br/>這系列的圖例可為企業結構設計師提供生產力服務邏輯架構使用 Microsoft Teams 引導的檢視。|
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>適用於 IT 結構設計師的 Microsoft 365 中的群組
-此圖例包含有關 Microsoft 365 群組的 IT 架構師資訊。 若要瞭解如何設定及管理組織中共同作業的 Microsoft 365 群組和小組，請參閱 [設定與 Microsoft 365 的安全](/microsoft-365/solutions/setup-secure-collaboration-with-teams) 共同作業，以及 [什麼是協同作業](/microsoft-365/solutions/collaboration-governance-overview)控管？。
+此圖例包含有關 Microsoft 365 群組之 IT 架構師的資訊。 若要瞭解如何設定和管理組織中共同作業的 Microsoft 365 群組和團隊，請參閱[設定與 Microsoft 365 的安全](/microsoft-365/solutions/setup-secure-collaboration-with-teams)共同作業，以及[什麼是共同作業](/microsoft-365/solutions/collaboration-governance-overview)控管？。
 
 | 項目 | 描述 |
 |:-----|:-----|
@@ -41,17 +41,17 @@ Microsoft 365 企業版解決方案系列提供實施 Microsoft 365 功能的指
 
 ## <a name="migrate-to-microsoft-365"></a>移轉至 Microsoft 365
 
-Microsoft 提供工具，將您的內部部署網路檔案共用和 SharePoint 伺服器網站遷移至 Microsoft 365，其重點是保護和確保內容在遷移期間的安全性。 這組圖例示範可將內容移至 SharePoint、小組和 OneDrive，以及資料流程如何流過整個程式的各種方法。 
+Microsoft 提供的工具可以將您的內部部署網路檔案共用和 SharePoint 伺服器網站，Microsoft 365 以強調如何在遷移期間保護和確保內容的安全性。 這組圖例示範可將內容移至 SharePoint、Teams 及 OneDrive 的各種方法，以及您的資料在程式中的流動方式。 
 
 | 項目 | 描述 |
 |:-----|:-----|
-|[![模型海報：遷移至 Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [以 PDF 格式下載](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) \|[下載為 Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx)   <br/> 2021年3月更新 |包含： <ul><li>  檔共用遷移</li><li>SharePoint 伺服器遷移 </li> </ul><br> 如需詳細資訊，請參閱 [將您的內容遷移至 Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online)。|
+|[![模型海報：遷移至 Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [下載為 PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf)\| [下載為 Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx) <br/> 2021年3月更新 |包含： <ul><li>  檔案共用移轉</li><li>SharePoint 伺服器移轉 </li> </ul><br> 如需詳細資訊，請參閱將[您的內容遷移至 Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online)。|
 
 ## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 資訊保護和合規性功能
 
 Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功能搭配 Microsoft 的生產力工具，可協助組織即時協同合作，同時遵循嚴格的法規遵從性框架。 
 
-這組插圖使用最受管制的行業（財務服務）之一，示範如何套用這些功能以滿足一般法規需求。 您可以隨意使用這些圖。 
+這組插圖使用最受管制的行業（財務服務）之一，示範如何套用這些功能以滿足一般法規需求。 您可以隨意使用這些圖例。 
 
 
 | 項目 | 描述 |
@@ -79,20 +79,20 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 <a name="BKMK_O365IDP"></a>
 ## <a name="identity-and-device-protection-for-microsoft-365"></a>Microsoft 365 的身分識別與裝置保護
 
-針對使用 Azure AD 應用程式 Proxy 所發佈的 Microsoft 365、其他 SaaS 服務和內部部署應用程式，來保護身分識別和裝置的建議功能。
+建議的功能，用來保護使用 Azure AD 應用程式 Proxy 發行的 Microsoft 365、其他 SaaS 服務和內部部署應用程式所存取的身分識別和裝置。
 
 | 項目 | 描述 |
 |:-----|:-----|
-|[![模型海報： Microsoft 365 的身分識別與裝置保護](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載為 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020年9月更新|請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。 此模型顯示哪些功能可比對身分識別和裝置的功能的相關資訊。  <br/> |
+|[![模型海報： Microsoft 365 的身分識別與裝置保護](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載成 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020年9月更新|請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。 此模型顯示哪些功能可比對身分識別和裝置的功能的相關資訊。  <br/> |
  
 <a name="BKMK_ediscovery"></a>
-## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 中的高級 eDiscovery 架構
+## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 中的 Advanced eDiscovery 架構
 
-高級 eDiscovery 端對端工作流程與資料流程，包含在 Microsoft 365 多地理位置環境中。 
+Advanced eDiscovery 端對端工作流程與資料流程，包含在 Microsoft 365 多地理位置環境中。 
 
 | 項目 | 描述 |
 |:-----|:-----|
-|[![模型海報： Microsoft 365 中的高級 eDiscovery 架構](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以影像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[以 PDF 格式下載](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下載為 Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 2020年10月更新|包含： <ul><li>  單一環境中的端對端工作流程</li><li>Microsoft 365 多地理位置環境中的端對端工作流程 </li><li>支援 EDRM 工作流程的端對端資料流程程</li> |
+|[![模型海報： Microsoft 365 中的 Advanced eDiscovery 架構](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以影像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[以 PDF 格式下載](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下載成 Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 2020 年 10 月更新|包含： <ul><li>  單一環境中的端對端工作流程</li><li>Microsoft 365 多地理位置環境中的端對端工作流程 </li><li>支援 EDRM 工作流程的端對端資料流程程</li> |
   
 
 
@@ -102,22 +102,22 @@ Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功�
 
 | 項目 | 描述 |
 |:-----|:-----|
-|[![Microsoft 電話語音解決方案海報](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021年3月更新 | 如需詳細資訊，請參閱 [規劃團隊語音方案](/microsoftteams/cloud-voice-landing-page)。|
+|[![Microsoft 電話語音解決方案海報](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021年3月更新 | 如需詳細資訊，請參閱[規劃您的 Teams 語音解決方案](/microsoftteams/cloud-voice-landing-page)。|
 
 
 ## <a name="empower-remote-workers"></a>強化遠端工作人員
 
-使用 Microsoft 365 和其他 Microsoft 雲端技術，您可以為員工提供來自其住宅中組織內部部署和雲端架構資訊、工具及資源的安全存取權。 
+透過 Microsoft 365 和其他 Microsoft 雲端技術，您可以為員工提供來自其住宅中組織內部部署和雲端架構資訊、工具及資源的安全存取權。 
 
 [![強化遠端工作人員海報](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)  | [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) <br>
 2020年7月更新
 
-如需詳細資訊，請參閱本文的海報：讓 [遠端工作者使用 Microsoft 365](empower-people-to-work-remotely.md)。
+如需詳細資訊，請參閱本文的海報：讓[遠端工作者使用 Microsoft 365](empower-people-to-work-remotely.md)。
 
-## <a name="microsoft-teams-with-security-isolation"></a>具有安全性隔離的 Microsoft 團隊
+## <a name="microsoft-teams-with-security-isolation"></a>使用安全性隔離 Microsoft Teams
 
-使用 Microsoft 365，您可以在 Microsoft 小組中設定私人團隊，並使用 SharePoint 網站安全性設定和獨特的靈敏度標籤，以加密檔案，只有小組成員才能解密。
+透過 Microsoft 365，您可以在 Microsoft Teams 中設定私人團隊，並使用 SharePoint 網站安全性設定和唯一的靈敏度標籤，以加密檔案，只有小組成員才能解密。
 
 [![具有安全性隔離的 Microsoft Teams 海報](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> 2020年8月更新

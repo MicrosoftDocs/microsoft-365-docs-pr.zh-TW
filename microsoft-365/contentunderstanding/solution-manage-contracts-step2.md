@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何使用 Microsoft Teams，透過使用 Microsoft 365 解決方案來建立您的合約管理通道。
-ms.openlocfilehash: d703f6f7286a6d9584e8b18d4e283174f42a95bd
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 20ace5d17550c8dd800368957dd940c9857bce5d
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301797"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583133"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步驟 2. 使用 Microsoft Teams 建立您的合約管理通道
 
@@ -44,13 +44,13 @@ ms.locfileid: "52301797"
 ## <a name="customize-your-contracts-tab-tile-view"></a>自訂 [您的合約] 索引標籤視圖
 
 > [!NOTE]
-> 本節參考 **solutionfiles** zip 檔案所包含的檔案 **ContractCard.js** 中所包含的程式碼範例。
+> 本節參考的程式碼範例包含在「[合約管理解決方案資產存放庫](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)」中的檔案[ContractTileFormatting.js上](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json)。
 
 雖然 Teams 可讓您在平鋪視圖中查看您的合約，但您可能會想要自訂它，以查看您想要在合同卡中顯示的合約資料。 例如，對於 [ **合約** ] 索引標籤，成員可以查看合同卡片上的客戶、合同工和費用金額，這一點很重要。 所有這些欄位都是透過已套用至文件庫的 SharePoint Syntex 模型從每個合約中解壓縮。 您也想要將磚標題列變更為不同狀態的不同色彩，讓成員可以輕鬆查看合約在核准程式中的位置。 例如，所有核准的合約都會有藍色標頭欄。
 
    ![清單視圖。](../media/content-understanding/tile.png)
 
-您使用的自訂圖格視圖，需要您變更用來格式化目前麻將牌視圖的 JSON 檔案。 您可以透過下載檔案 **上的ContractCard.js** ，參考用來建立卡片視圖的 JSON 檔案。 在下列各節中，您將會看到合約卡片中的功能的特定程式碼區段。
+您使用的自訂圖格視圖，需要您變更用來格式化目前麻將牌視圖的 JSON 檔案。 您可以透過查看檔案 [ 上的ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) ，參考用來建立卡片視圖的 JSON 檔案。 在下列各節中，您將會看到合約卡片中的功能的特定程式碼區段。
 
 如果您想要在 Teams 通道中查看或變更您的視圖的 JSON 代碼，請在 Teams 通道中，選取 [視圖] 下拉式功能表，然後選取 [**格式化目前的視圖**]。
 
@@ -58,7 +58,7 @@ ms.locfileid: "52301797"
 
 ## <a name="card-size-and-shape"></a>卡片大小和圖形
 
-在您在參考 zip 檔案中下載的檔案 **ContractCard.js上** ，查看下一節，以查看如何格式化卡片大小及圖形的程式碼。
+在 [ [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file] 中，查看下列區段，以查看如何格式化卡片大小及圖形的程式碼。
 
 ```JSON
                   {
@@ -84,7 +84,7 @@ ms.locfileid: "52301797"
 
 ## <a name="contract-status"></a>合約狀態
 
-下列程式碼可讓您定義每個標題卡片的狀態。 請 *注意，每* 個狀態值 (*New*、*核准* 和 *拒絕*) 都會針對每個值顯示不同的色彩代碼。 在您下載的檔 **ContractCard.js** 中，查看定義狀態的區段。
+下列程式碼可讓您定義每個標題卡片的狀態。 請 *注意，每* 個狀態值 (*New*、*核准* 和 *拒絕*) 都會針對每個值顯示不同的色彩代碼。 在 [ [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file] 中，查看定義狀態的區段。
 
 ```JSON
           {
@@ -109,7 +109,7 @@ ms.locfileid: "52301797"
 
 每個合約卡都會顯示三個欄位，每個合約 (的 *用戶端*、 *合同工* 和 *費用金額*) 中解壓縮。 此外，您也想要顯示 Syntex 用來識別檔的 SharePoint 模型所分類的時間/日期。 
 
-在您下載的檔案 **ContractCard.js** 中，下列各節定義上述各項。
+在 [ [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file] 中，下列各節定義上述各項。
 
 ### <a name="client"></a>用戶端
 
@@ -210,6 +210,6 @@ ms.locfileid: "52301797"
                       }
 ```
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [步驟3。使用 Power Automate 建立流程以處理您的合約](solution-manage-contracts-step3.md)

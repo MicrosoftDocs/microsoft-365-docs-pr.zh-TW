@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 search.appverid: MET150
-description: 瞭解如何取得免費試用版或購買商務用 Microsoft 365 訂閱。
+description: 為 Microsoft 365 商務標準版、Microsoft 365 商務進階版或 Microsoft 365 Apps 商務版註冊30天免費試用版。
 ms.date: 08/07/2020
-ms.openlocfilehash: 78716d78745616530729ff2fa5cfa31202e056c8
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344683"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583445"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>嘗試或購買商務用 Microsoft 365 訂閱
 
@@ -143,9 +143,9 @@ Microsoft 365 for business 是一項訂閱服務，可讓您在雲端執行您�
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 商務訓練](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)影片 (訓練影片) \
+[Microsoft 365 商務訓練](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)影片 (影片) \
 [同時新增使用者並指派授權](../admin/add-users/add-users.md) (文章) \
 [將授權指派給使用者](../admin/manage/assign-licenses-to-users.md) (文章)\
 [升級至其他計畫](subscriptions/upgrade-to-different-plan.md) (文章) \
 [購買或編輯商務用 Microsoft 365 的附加](buy-or-edit-an-add-on.md)元件 (文章) \
-[新增您訂閱的儲存空間](add-storage-space.md)
+ (文章) 中[新增您訂閱的儲存空間](add-storage-space.md)

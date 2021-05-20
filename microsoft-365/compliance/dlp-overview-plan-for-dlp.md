@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 資料遺失防護的規劃程式概述
-ms.openlocfilehash: 6a72a8bab27db4d8b11d3e0b3d7a1dac7a1f0092
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 84f1dc0426ba88f934c1d67d71f75364adeb4340
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52581586"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583349"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>規劃資料遺失防護 (DLP) 
 
@@ -42,13 +42,13 @@ ms.locfileid: "52581586"
 
 ## <a name="overview-of-planning-process"></a>規劃程式的概覽
 
-[深入瞭解資料遺失防護](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)引進了[DLP 規劃](dlp-learn-about-dlp.md#plan-for-dlp)程式的三個不同方面。 我們將深入瞭解所有 DLP 計畫共有的元素。
+[深入瞭解資料遺失防護](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)，引進了[DLP 規劃](dlp-learn-about-dlp.md#plan-for-dlp)程式的三個不同方面。 我們將深入瞭解所有 DLP 計畫共有的元素。
 
 ### <a name="identify-stakeholders"></a>識別專案關係人
 
 實施時，DLP 原則可以套用到組織的大型部分。 它無法自行開發各種各樣的計畫，也不會產生負面影響。 您必須識別可以進行下列作業的利益關係人：
 
-- 描述您的組織受制于的規章、法律和工業標準
+- 描述您的組織受制于的規章、法律和行業標準
 - 要保護的敏感專案類別
 - 在其中使用的商務程式
 - 應該限制的危險行為
@@ -117,7 +117,7 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 #### <a name="sensitive-item-discovery"></a>敏感專案探索
 
-有多種方式可以發現個別機密專案的所在位置和位置。 您可能已經部署了靈敏度標籤，或已決定將非常廣泛的 DLP 原則部署到只探索及審核專案的所有位置。 若要深入瞭解，請參閱 [瞭解您的資料](information-protection.md#know-your-data)。
+有多種方式可以發現個別機密專案的所在位置和位置。 您可能已經部署了靈敏度標籤，或者您可能決定要將廣泛的 DLP 原則部署至只會發現及審核專案的所有位置。 若要深入瞭解，請參閱 [瞭解您的資料](information-protection.md#know-your-data)。
 
 #### <a name="policy-planning"></a>原則規劃
 
@@ -134,7 +134,7 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 當您的組織知道其在法規遵從性需求方面的含義時，您將會瞭解哪些敏感專案需要保護以避免洩漏，以及您要如何設定原則實施的優先順序，以加以保護。 這可協助您選擇最適當的 DLP 原則範本。 Microsoft 365 隨附的是針對財務、醫療和健康情況、隱私權的預先設定 DLP 範本，您可以使用自訂範本自行建立。 在您設計及建立實際的 DLP 原則時，知道問題的答案也會協助您選擇正確的 [敏感資訊類型](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)。
 
-**範例** 若要快速開始，請選取 `U.K. Financial Data` 原則範本，包含 `Credit Card Number` 、 `EU Debit Card Number` 和 `SWIFT Code` 敏感資訊類型。 
+**範例** 若要快速開始，請選取 `U.K. Financial Data` 原則範本，包括 `Credit Card Number` 、 `EU Debit Card Number` 和 `SWIFT Code` 敏感資訊類型。 
 
 ##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>機密專案及其相關的商務程式在哪裡？
 
@@ -148,7 +148,7 @@ start small and always in test mode. Note that DLP policies can feed into inside
 - Microsoft 雲端 App 安全性
 - 內部部署存放庫
 
-**範例** 您組織的內部稽核員正在追蹤一組信用卡號碼。 它們會在安全的 SharePoint 網站中保存它們的試算表。 有些員工會製作副本，並將其儲存到與其 Windows 10 裝置同步處理商務用 OneDrive 網站。 其中一個會在電子郵件中貼上其中的14個清單，並嘗試將其傳送至外部審計員進行審閱。 您想要將原則套用至安全 SharePoint 網站，所有內部稽核員商務用 OneDrive 帳戶、其 Windows 10 裝置及 Exchange 電子郵件。
+**範例** 您組織的內部稽核員正在追蹤一組信用卡號碼。 它們會在安全的 SharePoint 網站中保存它們的試算表。 有些員工會製作副本，並將其儲存至其工作商務用 OneDrive 網站，該網站會與其 Windows 10 裝置同步。 其中一個會在電子郵件中貼上其中的14個清單，並嘗試將其傳送至外部審計員進行審閱。 您想要將原則套用至安全 SharePoint 網站，所有內部稽核員商務用 OneDrive 帳戶、其 Windows 10 裝置，以及 Exchange 電子郵件。
 
 ##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>您的組織的洩漏容限程度為何？
 
@@ -173,7 +173,7 @@ start small and always in test mode. Note that DLP policies can feed into inside
   
 1. **以測試模式啟動但不顯示原則提示**，然後使用 DLP 報告和任何事件報告來評估影響。 您可以使用 DLP 報告來檢視原則相符項目的號碼、位置、類型和嚴重性。 根據結果，您可以視需要微調原則。 在測試模式中，DLP 原則不會影響您的組織中工作人員的生產力。 此外，您也可以使用此階段測試工作流程，以進行 DLP 事件評審及問題修復。
     
-2. **移至具有通知和原則提示的測試模式**，讓您可以開始向使用者講授您的規範原則，並為將要套用的原則做好準備。 其可提供組織原則頁面的連結，以提供原則提示中原則的其他詳細資料。 在此階段中，您也可以要求使用者報告誤報，以便進一步精煉原則。 一旦您確信原則應用程式的結果符合他們的利益關係人的觀點，請移至此階段。 
+2. **移至具有通知和原則提示的測試模式**，讓您可以開始向使用者講授您的規範原則，並為將要套用的原則做好準備。 在原則提示中提供有關原則的詳細資訊的組織原則頁面連結是很有用的。 在此階段中，您也可以要求使用者報告誤報，以便進一步精煉原則。 一旦您確信原則應用程式的結果符合他們的利益關係人的觀點，請移至此階段。 
     
 3. **開始完整強制執行原則**，以便套用規則中的動作，並保護內容。 繼續監視 DLP 報告以及任何事件報告或通知，確保得到您想要的結果。 
 
@@ -193,15 +193,15 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 #### <a name="review-dlp-requirements-and-update-strategy"></a>檢查 DLP 需求和更新策略
 
-您的組織可能會隨著時間而變更的規章、法律和行業標準，DLP 的商務目標也會隨之變更。 請務必定期查看所有這些區域，使您的組織維持在法規遵從性之外，而且 DLP 實施仍可滿足您的業務需求。
+您的組織可能會隨著時間而變更的規章、法律和行業標準，但 DLP 的商務目標也會隨之變更。 請務必定期查看所有這些區域，使您的組織維持在法規遵從性之外，而且 DLP 實施仍可滿足您的業務需求。
 
 ## <a name="approaches-to-deployment"></a>部署方法
 
 |客戶業務需求說明  | 方法  |
 |---------|---------|
 |**Contoso Bank** 位於高度管制的行業，在許多不同的位置有許多不同類型的敏感專案。 </br> -瞭解哪些類型的敏感資訊是最重要的。 </br> -當原則向外展開時，必須將業務中斷降至最低。 </br> -有 IT 資源，而且可以聘用專家協助規劃、設計部署 </br> -與 Microsoft 有 premier 支援合同| -請花些時間瞭解他們必須遵守哪些規章，以及這些法規的遵守方式。 </br> -請花時間深入瞭解 Microsoft 365 資訊保護堆疊的整體價值 </br> -針對已設定優先順序的專案，開發敏感度標籤配置，並套用 </br> -包含業務程式擁有者 </br>-設計/程式碼原則，在測試模式中部署，以訓練使用者 </br>-重複|
-|**TailSpin 玩具** 不知道其所在的位置或位置，且幾乎不會有任何資源深度。 它們會大量使用 Teams、ODB 及 Exchange。     |-從優先位置的簡單原則開始。 </br>-監視識別的專案 </br>-據此套用敏感度標籤 </br>-調整原則，訓練使用者       |
-|**Fabrikam** 是一小的啟動，想要保護其智慧財產權，而且必須快速移動。 他們願意專用一些資源，但無法承受聘用在專家之外的人員。 </br>-敏感專案全都位於商務用 Microsoft 365 OneDdrive 中/SharePoint </br>-商務用 OneDrive 和 SharePoint 的採用速度緩慢、員工/陰影使用 DropBox 和 Google 磁片磁碟機來共用/儲存專案 </br>-員工在資料保護訓練科目上的工作速度 </br>-客戶 splurged 並購買所有18位員工新 Windows 10 裝置     |-利用 Teams 中的預設 DLP 原則 </br>-使用 SharePoint 專案的預設限制設定 </br>-部署防止外部共用的原則 </br>-部署設定優先順序的位置的原則 </br>-部署 Windows 10 裝置的原則 </br>-封鎖上載至非商務用 OneDrive 雲端儲存      |
+|**TailSpin 玩具** 不知道其所在的位置或位置，且幾乎不會有任何資源深度。 它們會廣泛使用 Teams、商務用 OneDrive 和 Exchange。     |-從優先位置的簡單原則開始。 </br>-監視識別的專案 </br>-據此套用敏感度標籤 </br>-調整原則，訓練使用者       |
+|**Fabrikam** 是一小的啟動，想要保護其智慧財產權，而且必須快速移動。 他們願意專門提供一些資源，但無法雇用外部專家。 </br>-敏感專案全都 Microsoft 365 商務用 OneDrive/SharePoint </br>-商務用 OneDrive 和 SharePoint 的採用速度緩慢、員工/陰影使用 DropBox 和 Google 磁片磁碟機來共用/儲存專案 </br>-員工在資料保護訓練科目上的工作速度 </br>-客戶 splurged 並購買所有18位員工新 Windows 10 裝置     |-利用 Teams 中的預設 DLP 原則 </br>-使用 SharePoint 專案的預設限制設定 </br>-部署防止外部共用的原則 </br>-部署設定優先順序的位置的原則 </br>-部署 Windows 10 裝置的原則 </br>-封鎖上載至非商務用 OneDrive 雲端儲存空間      |
 
 <!--
 

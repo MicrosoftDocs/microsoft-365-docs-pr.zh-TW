@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何使用 Power Automate 建立您使用 Microsoft 365 解決方案處理合約的流程。
-ms.openlocfilehash: d9892110d6aebd3eaae6fbc21d453b7eb14d7f7e
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54e92f36b19cefde92111cdbc960fad7715cf8b0
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281142"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583097"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>步驟 3. 使用 Power Automate 建立流程以處理您的合約
 
@@ -36,11 +36,11 @@ ms.locfileid: "52281142"
 
 ## <a name="prepare-your-contract-for-review"></a>準備您的合約以供審查
 
-當您 SharePoint Syntex 檔理解模型識別和分類合約時，Power Automate 流程會先將狀態變更為「正在審閱」。
+當您 SharePoint Syntex 檔理解模型識別和分類合約時，Power Automate 流程會先將狀態變更為 [**評審**]。
 
 ![更新狀態。](../media/content-understanding/flow-overview.png)
 
-取出檔案之後，請將 [狀態] 值變更為「正在審查」。
+取出檔案之後，請將狀態值變更為 [ **正在審查**]。
 
 ![在 [檢查狀態]。](../media/content-understanding/in-review.png)
 
@@ -141,7 +141,7 @@ ms.locfileid: "52281142"
 
    ![已核准卡狀態。](../media/content-understanding/approved-contracts-tab.png)
 
-- 在您的流程中，狀態會變更為「已核准」。
+- 在您的流程中，狀態會變更為 [ **已核准**]。
 
    ![Flow 狀態已核准。](../media/content-understanding/status-approved.png)
 

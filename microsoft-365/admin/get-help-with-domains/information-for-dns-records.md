@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: '瞭解如何尋找為 Microsoft 365 建立 DNS 記錄所需的值/資訊。 '
-ms.openlocfilehash: 45994139b11a2fd5a03b2e979dd6af334bc1f00b
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+description: 收集必要的值/資訊，以建立 DNS 記錄以將您的網域連線到您的 Microsoft 365 訂閱。
+ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126368"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582953"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集建立 DNS 記錄所需的資訊
 
@@ -38,7 +38,7 @@ ms.locfileid: "50126368"
 
 ::: moniker range="o365-worldwide"
 
-1. 在 Microsoft 365 系統管理中心中，移至 [ **安裝** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a> ] 頁面。
+1. 在 Microsoft 365 系統管理中心，移至 [**安裝** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ ms.locfileid: "50126368"
     
 5. 移至 [在任何 DNS 主機服務提供者處建立 dns 記錄](create-dns-records-at-any-dns-hosting-provider.md)，然後從註冊機構清單中選取 dns 主機以查看逐步指示。
     
-6. 遵循在您的 DNS 主機上建立 TXT 記錄 (或 MX 記錄) 的步驟，然後在 Microsoft 365 中確認該網域回來。
+6. 遵循在您的 DNS 主機上建立 TXT 記錄 (或 MX 記錄) 的步驟，然後在 Microsoft 365 中重新驗證網域。
 
 7. 在 Microsoft 365 中驗證網域之後，從 DNS 主機移除 TXT 記錄 (或 MX 記錄) 。
     
@@ -70,7 +70,7 @@ ms.locfileid: "50126368"
 
 ::: moniker range="o365-worldwide"
 
-1. 在 Microsoft 365 系統管理中心中，移至 [ **安裝** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a> ] 頁面。
+1. 在 Microsoft 365 系統管理中心，移至 [**安裝** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
 
 ::: moniker-end
     
@@ -97,3 +97,11 @@ ms.locfileid: "50126368"
 4. 移至 [任何 DNS 主機服務提供者的 dns 記錄](create-dns-records-at-any-dns-hosting-provider.md)，然後從註冊機構清單中選取您的 dns 主機，以查看在該 dns 主機的網站上新增記錄的逐步指示。
     
 5. 請在 DNS 主機上遵循相關步驟建立記錄。
+
+## <a name="related-content"></a>相關內容
+
+[網域常見問題解答](../setup/domains-faq.yml) (篇) 
+
+[尋找並修正新增網域或 DNS 記錄之後所發生的問題](find-and-fix-issues.md) (文章)
+
+[管理網域](index.yml) (連結頁面)

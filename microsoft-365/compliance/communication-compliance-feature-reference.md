@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: dcae50150eb3b21e65e68a5cea376a0cdef31a65
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3df8fbf20fd00bd584af2fd329949939433a19eb
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538444"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583481"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -311,6 +311,7 @@ ms.locfileid: "52538444"
 | **大小** | 郵件大小（以 KB 為單位）。 |
 | **主旨/職稱** | 郵件主題或聊天室。 |
 | **標記** | 指派給郵件的標記，無論是 *可疑*、 *相容* 或 *不相容*。 |
+| **Language** | 郵件中偵測到的文字的語言。 郵件會根據大多數郵件文字的語言進行分類。 例如，如果郵件包含德文和義大利文字，但大部分文字為德文，則郵件會分類為德文 (DE) 。 支援下列語言：中文 (簡體 ZH-CN) ，英文 (EN) ，法文 (FR) ，德文 (DE) ，義大利 () ， (，日本) 日本 (，葡萄牙) PT (，以及西班牙文) ES。 例如，若要篩選歸類為德文和義大利文的郵件，請在 [語言篩選] 搜尋方塊中輸入「DE」， (2 位數的語言代碼) 。 若要查看郵件的偵測語言分類，請選取訊息，選取 [查看郵件詳細資料]，然後滾動至 [EmailDetectedLanguage] 欄位。 |
 | **升級至** | 加入郵件提升動作之人員的使用者名稱。 |
 | **分類** | 套用至郵件的內建和自訂分類符的名稱。 某些範例包含 *冒犯性語言*、 *目標騷擾*、 *猥褻* 性、 *威脅* 等等。
 

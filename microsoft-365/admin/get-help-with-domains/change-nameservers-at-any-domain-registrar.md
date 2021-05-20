@@ -24,23 +24,23 @@ search.appverid:
 - GEU150
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
-description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，如此一來，諸如電子郵件和商務用 Skype Online 等服務也會使用您自己的功能變數名稱。
-ms.openlocfilehash: 1348beb09fcbc5c12d01dbf197b1cb1240decded
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，以便您的服務（如電子郵件和商務用 Skype 線上）使用您自己的功能變數名稱。
+ms.openlocfilehash: 447cc69aa2c4c3edcf1c4c6a2435cdc27fc22cd2
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332639"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582989"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
  若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
-請遵循下列指示，在 Microsoft 365 中新增及設定您的網域，這樣您的服務（例如電子郵件和小組）會使用您自己的功能變數名稱。 若要這麼做，您將會驗證您的網域，然後將網域的名稱伺服器變更為 Microsoft 365，這樣就能為您設定正確的 DNS 記錄。 如果下列語句描述您的情況，請遵循下列步驟：
+請遵循下列指示，在 Microsoft 365 中新增及設定您的網域，這樣的服務（例如電子郵件和 Teams）會使用您自己的功能變數名稱。 若要這麼做，您將會驗證您的網域，然後將網域的名稱伺服器變更為 Microsoft 365，這樣就能為您設定正確的 DNS 記錄。 如果下列語句描述您的情況，請遵循下列步驟：
   
-- 您有自己的網域，且想要將其設定為與 Microsoft 365 搭配使用。
+- 您有自己的網域，且想要將其設定為搭配 Microsoft 365 使用。
     
-- 您希望 Microsoft 365 為您管理您的 DNS 記錄。 如果您想要的話，也可以[管理自己的 DNS 記錄](../setup/add-domain.md)。
+- 您想要 Microsoft 365 管理您的 DNS 記錄。 如果您想要的話，也可以[管理自己的 DNS 記錄](../setup/add-domain.md)。
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>新增 TXT 或 MX 記錄以進行驗證
 <a name="BKMK_verify"> </a>
@@ -106,7 +106,7 @@ ms.locfileid: "52332639"
 ## <a name="change-your-domains-nameserver-ns-records"></a>變更您網域的名稱伺服器 (NS) 記錄
 <a name="BKMK_nameservers"> </a>
 
-當您在 Microsoft 365 中取得「網域安裝精靈」的最後一個步驟時，還剩下一個工作。 若要使用 Microsoft 365 服務（如電子郵件）來設定您的網域，您可以在您的網域註冊機構變更網域的名稱伺服器 (或 NS) 記錄，以指向 Microsoft 365 主要和次要名稱伺服器。 然後，由於 Microsoft 365 會主控您的 DNS，因此會自動為您設定服務所需的 DNS 記錄。 您可以遵循以下步驟 (網域註冊機構可能會在他們網站上的說明內容中提供)，自行更新名稱伺服器記錄。 如果您不熟悉 DNS，請連絡網域註冊機構的支援人員。
+當您在 Microsoft 365 中取得網域安裝精靈的最後一個步驟時，您會有一個剩餘的任務。 若要使用 Microsoft 365 服務（例如電子郵件）來設定網域，您可以在網域註冊機構中變更網域的名稱伺服器 (或 NS) 記錄，以指向 Microsoft 365 的主要和次要名稱伺服器。 然後，因為 Microsoft 365 主控您的 DNS，所以會為您自動設定服務所需的 dns 記錄。 您可以遵循以下步驟 (網域註冊機構可能會在他們網站上的說明內容中提供)，自行更新名稱伺服器記錄。 如果您不熟悉 DNS，請連絡網域註冊機構的支援人員。
 
 ::: moniker range="o365-worldwide"
   
@@ -150,13 +150,13 @@ ms.locfileid: "52332639"
 3. 儲存變更。
     
 > [!CAUTION]
-> 當您變更網域的 NS 記錄，使其指向由世紀名稱伺服器運作的 Office 365 時，所有目前與您網域相關聯的服務都會受到影響。 如果您跳過精靈的任一步驟 (例如新增電子郵件地址)，或者如果您將網域用於部落格、購物車或其他服務，就必須額外採取其他步驟才行。 否則這項變更可能會使服務停擺 (例如，無法存取電子郵件或是您的目前網站)。 
+> 當您變更網域的 NS 記錄，使其指向由名稱伺服器（由您的網域所運作的 Office 365）時，所有目前與您網域相關聯的服務都會受到影響。 如果您跳過精靈的任一步驟 (例如新增電子郵件地址)，或者如果您將網域用於部落格、購物車或其他服務，就必須額外採取其他步驟才行。 否則這項變更可能會使服務停擺 (例如，無法存取電子郵件或是您的目前網站)。 
 
 ::: moniker-end
   
 舉例來說，如果要主控電子郵件和網站，必須另外執行下列步驟：
   
-- 變更您的 NS 記錄之前，請先將使用您網域的所有電子郵件地址移至 Microsoft 365。
+- 變更您的 NS 記錄之前，請將使用您網域的所有電子郵件地址移 Microsoft 365。
     
 - 您要新增一個目前搭配網站位址 (例如 www.fourthcoffee.com) 使用的網域嗎？ 您可以採取下列步驟，當您新增網域以保留網站主控位置的網站，讓使用者在您變更網域的 NS 記錄，以指向 Microsoft 365 之後仍可進入網站。
 
@@ -196,3 +196,10 @@ ms.locfileid: "52332639"
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然後，您的 Microsoft 電子郵件和其他服務將全部設定為與您的網域搭配使用。 
   
+## <a name="related-content"></a>相關內容
+
+[新增 DNS 記錄以將您的網域](create-dns-records-at-any-dns-hosting-provider.md) (文章) 
+
+[尋找並修正新增網域或 DNS 記錄之後所發生的問題](find-and-fix-issues.md) (文章)
+
+[管理網域](index.yml) (連結頁面)

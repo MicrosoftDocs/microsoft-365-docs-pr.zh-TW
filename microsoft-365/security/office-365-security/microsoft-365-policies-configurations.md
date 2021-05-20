@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 948f4515b37f27695e1e66730134aa19114ca1cf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aa12cc4ad885c3d4b9d1c35fba9f38747f24077d
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538996"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583187"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -93,7 +93,7 @@ ms.locfileid: "52538996"
 
 Microsoft 365 架構模型的身分 **識別與裝置保護**，會顯示哪些功能是可比較的。
 
-[![Microsoft 365 海報的身分識別和裝置保護的縮圖影像](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [以 PDF 格式查看](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載成 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Microsoft 365 海報的身分識別和裝置保護的縮圖影像](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [以 PDF 格式查看](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載成 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 此外，請參閱[部署資訊保護以取得資料隱私權法規](../../solutions/information-protection-deploy.md)解決方案，以保護儲存在 Microsoft 365 中的資訊。
 
@@ -207,6 +207,6 @@ Microsoft 建議您不要建立適用于所有應用程式的原則集，因為�
 
 在您設定身分識別與裝置存取後，請參閱 [AZURE ad 功能部署指南](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) ，以瞭解其他應考慮的功能和 [Azure AD 身分識別](/azure/active-directory/governance/) 控管，以保護、監控和審核存取。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [實施身分識別與裝置存取原則的必要條件工作](identity-access-prerequisites.md)
