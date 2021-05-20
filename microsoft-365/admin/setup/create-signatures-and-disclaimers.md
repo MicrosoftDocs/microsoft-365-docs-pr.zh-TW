@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: 瞭解如何管理電子郵件簽名，包括輸入或離開組織之所有電子郵件的法律免責聲明或披露聲明。
-ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 管理電子郵件簽章，包括任何進入或離開組織之電子郵件的法律免責聲明或披露聲明。
+ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244524"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582749"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽名和免責聲明
 
@@ -115,4 +115,13 @@ ms.locfileid: "52244524"
   
 ## <a name="more-resources"></a>其他資源
 
-- 如需使用 PowerShell 的詳細資訊，請參閱[整個組織的郵件免責聲明、簽章、頁尾或標頭 Exchange Online 中](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)的相關資訊。
+如需使用 PowerShell 的詳細資訊，請參閱[整個組織內的郵件免責聲明、簽章、頁尾或標頭中 Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)。
+
+## <a name="related-content"></a>相關內容
+
+[將電子郵件和連絡人遷移至 Microsoft 365 (的](migrate-email-and-contacts-admin.md)影片) 
+
+[使用者的電子郵件設定](../email/office-365-user-email-settings.md) (文章) 
+
+[Microsoft 365 系統管理中心概觀](../../business-video/admin-center-overview.md) (影片)
+

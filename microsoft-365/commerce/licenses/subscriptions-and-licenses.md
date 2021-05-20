@@ -1,5 +1,5 @@
 ---
-title: 瞭解 Microsoft 365 for business 中的訂閱與授權
+title: 瞭解商務 Microsoft 365 中的訂閱與授權
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,33 +19,33 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: 深入瞭解 Microsoft 365 for business 中的訂閱與授權。
+description: 您收到的應用程式和服務取決於您購買的 Microsoft 365 產品，例如 Microsoft 365 Apps 商務版。
 ms.date: 07/01/2020
-ms.openlocfilehash: a8ec5b0716a5ceaa02526520e76dc390a6fba0f7
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4e93a84df106475417289da168ca472ed5a07475
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331487"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582725"
 ---
-# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>瞭解 Microsoft 365 for business 中的訂閱與授權
+# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>瞭解商務 Microsoft 365 中的訂閱與授權
 
-當您為商務用 Microsoft 365 購買訂閱時，您會註冊一組應用程式和服務，以每月或每年的頻率支付。 您在訂閱中所收到的應用程式和服務，取決於您購買的是哪一種產品，例如 Microsoft 365 Apps for business Standard 或 Microsoft 365 Business Standard。 您可以在適用于中小型 [企業的 Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) 頁面上，看到每個產品隨附的各項產品。
+當您購買商務用 Microsoft 365 訂閱時，您會註冊一組應用程式和服務，您可以使用每月或每年的頻率支付。 您在訂閱中所收到的應用程式和服務，取決於您購買的產品，例如 Microsoft 365 Apps 商務版或 Microsoft 365 商務標準版。 您可以在中小型企業頁面上看到每個產品的[Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) 。
 
 購買訂閱時，您會依據貴組織中的人數，指定您所需的「授權」數目。 購買訂閱後，您會為組織中的人員建立帳戶，然後將授權指派給每個人。 當您的組織需要變更時，您可以購買更多授權，以容納新人員，或在某人離開您的組織時，將授權重新指派給其他使用者。
 
-如果您有多個訂閱，您可以針對每個訂閱指派授權給人員。 例如，您可以將所有的使用者指派給所有的 Microsoft 365 應用程式和服務，做為 Microsoft 365 商務標準訂閱的一部分。 您也可以透過個別的 Visio 訂閱，將使用者的子集指派給 Visio Online。
+如果您有多個訂閱，您可以針對每個訂閱指派授權給人員。 例如，您可以將所有的使用者指派給所有 Microsoft 365 的應用程式和服務，成為 Microsoft 365 商務標準版訂閱的一部分。 您也可以指派使用者的子集，以透過個別 Visio 訂閱 Visio 線上。
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>使用者可以在多少部裝置上安裝 Office？
 
-如果您的訂閱包含下列任何產品，每一位人員最多可以在5部 Pc 或 Mac、五部平板電腦和五部手機上安裝 Office。
+如果您的訂閱包含下列任何產品，每個人都可以在最多五部 pc 或 Mac、五部平板電腦和五部電話上安裝 Office。
 
 :::row:::
    :::column span="":::
-        -Microsoft 365 應用程式商務應用程式-microsoft 365 應用程式-Microsoft 365 Business Standard-microsoft 365 Business Premium-microsoft 365 A3-Microsoft 365 A5
+        -Microsoft 365 Apps 商務版 Microsoft 365 Apps 企業版 Microsoft 365 商務標準版 Microsoft 365 商務進階版 Microsoft 365 A3-Microsoft 365 A5
    :::column-end:::
    :::column span="":::
-        -Microsoft 365 E3-Microsoft 365 E5-Office 365 A1 Plus-Office 365 A3-Office 365 A5-Office 365 E3-Office 365 E5
+        -Microsoft 365 E3 Microsoft 365 E5 Office 365 A1 + Office 365 A3 Office 365 A5 E3-Office 365 E5
    :::column-end:::
 :::row-end:::
 
@@ -55,10 +55,10 @@ ms.locfileid: "52331487"
   
 |**如果訂閱含有此服務**|**會自動發生以下情況**|
 |:-----|:-----|
-|Exchange Online  <br/> |系統會為該人員建立信箱。 <br/> 若要瞭解此工作完成的 SLA，請參閱「 [設定 ...」Microsoft 365 系統管理中心中的郵件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
+|Exchange Online  <br/> |系統會為該人員建立信箱。 <br/> 若要瞭解此工作完成的 SLA，請參閱「[設定 ...」Microsoft 365 系統管理中心中的郵件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |系統會指派預設 SharePoint Online 小組網站的編輯權限給該人員。  <br/> |
 |商務用 Skype Online  <br/> |人員可以存取與授權相關聯的功能。  <br/> |
-|Microsoft 365 Apps 企業版  <br/> |使用者最多可以將 Office 應用程式下載到五台 Mac 或電腦、五台平板電腦和五部 smartphone。  <br/> |
+|Microsoft 365 Apps 企業版  <br/> |使用者最多可以在五台的 mac 或電腦、五台平板電腦和五部 smartphone 上下載 Office 應用程式。  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>了解非使用者信箱的授權
 
@@ -66,11 +66,11 @@ ms.locfileid: "52331487"
   
 - [建立共用信箱](../../admin/email/create-a-shared-mailbox.md)
 - [從共用信箱中移除授權](../../admin/email/remove-license-from-shared-mailbox.md)
-- [Exchange Online 中的共用信箱](/exchange/collaboration-exo/shared-mailboxes) ，適用于所有其他 Microsoft 365 方案。
+- 所有其他 Microsoft 365 計畫的[Exchange Online 中的共用信箱](/exchange/collaboration-exo/shared-mailboxes)。
 - [建立及管理會議室信箱](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
 - [管理設備信箱](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes) (機器翻譯)
 
-## <a name="who-can-assign-licenses"></a>誰可以指派授權？
+## <a name="who-can-assign-licenses"></a>神秘可以指派授權？
 
 不同類型的系統管理員根據其角色可以有不同的授權處理方式。下表列出最常用的選項。如需系統管理員角色和權限的完整清單，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   
@@ -87,4 +87,4 @@ ms.locfileid: "52331487"
 [購買或移除商務用訂閱的授權](buy-licenses.md) (文章) \
 [將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md) (文章)\
 [取消指派給使用者的授權](../../admin/manage/remove-licenses-from-users.md) (文章)\
-[從共用信箱中移除授權](../../admin/email/remove-license-from-shared-mailbox.md) (文章) 
+[從共用信箱移除授權](../../admin/email/remove-license-from-shared-mailbox.md) (文章)

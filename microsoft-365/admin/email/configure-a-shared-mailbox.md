@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 建立共用信箱之後，您會想要設定其使用者的某些設定，例如電子郵件轉寄及自動回復。 稍後，您可能想要變更其他設定，例如信箱名稱或成員。
-ms.openlocfilehash: 01d5aaa686e1d64c9ea7d89913d8208f779dcfd1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 建立共用信箱，並為其使用者設定某些設定，例如電子郵件轉寄及自動回復。
+ms.openlocfilehash: ab23353f07a24f06d43172e8087819dd915ab720
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243969"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582665"
 ---
 # <a name="configure-shared-mailbox-settings"></a>設置共用信箱的設定
 
@@ -40,7 +40,7 @@ ms.locfileid: "52243969"
 
 3. 輸入新的名稱，或新增其他別名。 如果您想要變更主要電子郵件地址，您的信箱必須有一個以上的電子郵件別名。
 
-4. 選取 [儲存]。
+4. 選取 **[儲存]**。
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>轉寄傳送到共用信箱的電子郵件
 
@@ -52,7 +52,7 @@ ms.locfileid: "52243969"
     
 3. 將切換設定為 [ **開啟**]，然後輸入一個電子郵件地址，以轉寄郵件。 它可以是任何有效的電子郵件地址。 若要轉寄至多個位址，您必須為位址 [建立通訊群組](/office365/admin/setup/create-distribution-lists) ，然後在此方塊中輸入群組的名稱。
     
-4. 選取 [儲存]。
+4. 選取 **[儲存]**。
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>從共用信箱傳送自動回覆
 
@@ -66,7 +66,7 @@ ms.locfileid: "52243969"
 
 5. 如果您 *也* 想要將回復傳送給組織外部的人員，請選取您要取得回復的核取方塊，然後輸入文字。 There's no way to only send to people outside your organization but not to people inside your organization.
 
-6. 選取 [儲存]。
+6. 選取 **[儲存]**。
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>允許所有人都看到已傳送的電子郵件 (回覆)
 
@@ -83,7 +83,7 @@ ms.locfileid: "52243969"
 
 3. 針對您想要讓成員存取共用信箱的所有應用程式，將 [開啟] 設定為 [ **開啟** ]。 針對您不想要使用的任何應用程式，將其開關設定為 [ **關閉** ]。 
 
-4. 選取 [儲存]。
+4. 選取 **[儲存]**。
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>讓共用信箱處於訴訟暫止狀態
@@ -98,7 +98,7 @@ ms.locfileid: "52243969"
 
 4. （選用）輸入持續時間、有關保留的備註，以及包含詳細資訊的 URL。  
 
-5. 選取 [儲存]。
+5. 選取 **[儲存]**。
 
 
 ## <a name="add-or-remove-members"></a>新增或移除成員
@@ -137,19 +137,19 @@ ms.locfileid: "52243969"
 
 3. 將開啟或關閉切換為 **[開啟]**  或 [ **關閉**]。 
 
-4. 選取 [儲存]。
+4. 選取 **[儲存]**。
 
 > [!NOTE]
 > 從通訊清單中隱藏共用信箱，將無法將隱藏的信箱新增至其 Outlook 設定檔，直到共用信箱再次顯示在通訊清單中為止。 
 
 ## <a name="related-content"></a>相關內容
 
-[關於共用信箱](about-shared-mailboxes.md) (文章) 
+[關於共用信箱](about-shared-mailboxes.md) (文章)
 
-[建立共用信箱](create-a-shared-mailbox.md) (文章) 
+[建立共用信箱](create-a-shared-mailbox.md) (文章)
 
-[將使用者信箱轉換成共用信箱](convert-user-mailbox-to-shared-mailbox.md) (文章) 
+[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md) (文章)
 
-[從共用信箱中移除授權](remove-license-from-shared-mailbox.md) (文章) 
+[從共用信箱移除授權](remove-license-from-shared-mailbox.md) (文章)
 
-[解決共用信箱](resolve-issues-with-shared-mailboxes.md) (文章) 的問題
+[解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md) (文章)
