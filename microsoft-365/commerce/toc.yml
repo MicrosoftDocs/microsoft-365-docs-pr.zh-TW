@@ -20,7 +20,7 @@
       href: subscriptions/renew-your-subscription.md
     - name: 重新啟動您的訂閱
       href: subscriptions/reactivate-your-subscription.md
-    - name: 取消您的訂閱
+    - name: 取消訂閱
       href: subscriptions/cancel-your-subscription.md
     - name: 訂閱到期時該怎麼辦？
       href: subscriptions/what-if-my-subscription-expires.md
@@ -68,7 +68,7 @@
       href: billing-and-payments/psd2.md
 - name: 帳單帳戶
   items:
-    - name: 管理計費帳戶
+    - name: 了解帳單帳戶
       href: manage-billing-accounts.md
     - name: 建立租用戶與帳單帳戶的關聯
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
