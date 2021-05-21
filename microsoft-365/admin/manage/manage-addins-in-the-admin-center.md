@@ -20,149 +20,149 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用集中式增益集，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 76bfa6272ec784518f045a50299fc7cda719eec8
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: c103cfc4e3e7b404ea4d31d81bc30d7990a922dc
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327195"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593966"
 ---
-# <a name="manage-add-ins-in-the-admin-center"></a><span data-ttu-id="dbefe-103">在系統管理中心管理增益集</span><span class="sxs-lookup"><span data-stu-id="dbefe-103">Manage add-ins in the admin center</span></span>
+# <a name="manage-add-ins-in-the-admin-center"></a><span data-ttu-id="d37cc-103">在系統管理中心管理增益集</span><span class="sxs-lookup"><span data-stu-id="d37cc-103">Manage add-ins in the admin center</span></span>
 
-<span data-ttu-id="dbefe-104">Office 增益集可協助您個人化檔，並簡化存取網頁上資訊的方式 (請參閱 [開始使用 Office 增益集](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)) 。</span><span class="sxs-lookup"><span data-stu-id="dbefe-104">Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)).</span></span> 
+<span data-ttu-id="d37cc-104">Office 增益集可協助您個人化檔，並簡化存取網頁上資訊的方式 (請參閱[開始使用 Office 增益集](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)) 。</span><span class="sxs-lookup"><span data-stu-id="d37cc-104">Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)).</span></span> 
 
-<span data-ttu-id="dbefe-105">在管理員為組織中的使用者部署增益集後，系統管理員可以關閉或開啟增益集、編輯、刪除及管理增益集的存取。</span><span class="sxs-lookup"><span data-stu-id="dbefe-105">After an admin deploys add-ins for users in an organization, the admin can turn add-ins off or on, edit, delete, and manage access to the add-ins.</span></span>
+<span data-ttu-id="d37cc-105">在管理員為組織中的使用者部署增益集後，系統管理員可以關閉或開啟增益集、編輯、刪除及管理增益集的存取。</span><span class="sxs-lookup"><span data-stu-id="d37cc-105">After an admin deploys add-ins for users in an organization, the admin can turn add-ins off or on, edit, delete, and manage access to the add-ins.</span></span>
 
-<span data-ttu-id="dbefe-106">如需從系統管理中心安裝增益集的詳細資訊，請參閱 [在系統管理中心部署增益集](./manage-deployment-of-add-ins.md)。</span><span class="sxs-lookup"><span data-stu-id="dbefe-106">For more information about installing add-ins from the admin center, see [Deploy add-ins in the admin center](./manage-deployment-of-add-ins.md).</span></span>
+<span data-ttu-id="d37cc-106">如需從系統管理中心安裝增益集的詳細資訊，請參閱 [在系統管理中心部署增益集](./manage-deployment-of-add-ins.md)。</span><span class="sxs-lookup"><span data-stu-id="d37cc-106">For more information about installing add-ins from the admin center, see [Deploy add-ins in the admin center](./manage-deployment-of-add-ins.md).</span></span>
   
-## <a name="add-in-states"></a><span data-ttu-id="dbefe-107">增益集狀態</span><span class="sxs-lookup"><span data-stu-id="dbefe-107">Add-in states</span></span>
+## <a name="add-in-states"></a><span data-ttu-id="d37cc-107">增益集狀態</span><span class="sxs-lookup"><span data-stu-id="d37cc-107">Add-in states</span></span>
 
-<span data-ttu-id="dbefe-108">增益集可以處於 [ **開啟** ] 或 [ **關閉** ] 狀態。</span><span class="sxs-lookup"><span data-stu-id="dbefe-108">An add-in can be in either the **On** or **Off** state.</span></span>
+<span data-ttu-id="d37cc-108">增益集可以處於 [ **開啟** ] 或 [ **關閉** ] 狀態。</span><span class="sxs-lookup"><span data-stu-id="d37cc-108">An add-in can be in either the **On** or **Off** state.</span></span>
   
-| <span data-ttu-id="dbefe-109">狀態</span><span class="sxs-lookup"><span data-stu-id="dbefe-109">State</span></span> | <span data-ttu-id="dbefe-110">狀態如何發生</span><span class="sxs-lookup"><span data-stu-id="dbefe-110">How the state occurs</span></span> | <span data-ttu-id="dbefe-111">影響</span><span class="sxs-lookup"><span data-stu-id="dbefe-111">Impact</span></span> |
+| <span data-ttu-id="d37cc-109">狀態</span><span class="sxs-lookup"><span data-stu-id="d37cc-109">State</span></span> | <span data-ttu-id="d37cc-110">狀態如何發生</span><span class="sxs-lookup"><span data-stu-id="d37cc-110">How the state occurs</span></span> | <span data-ttu-id="d37cc-111">影響</span><span class="sxs-lookup"><span data-stu-id="d37cc-111">Impact</span></span> |
 |:-----|:-----|:-----|
-|<span data-ttu-id="dbefe-112">**Active**</span><span class="sxs-lookup"><span data-stu-id="dbefe-112">**Active**</span></span>  <br/> |<span data-ttu-id="dbefe-113">系統管理員上載增益集，並將其指派給使用者或群組。</span><span class="sxs-lookup"><span data-stu-id="dbefe-113">Admin uploaded the add-in and assigned it to users or groups.</span></span>  <br/> |<span data-ttu-id="dbefe-114">被指派增益集的使用者和群組會在相關用戶端中看見增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-114">Users and groups assigned to the add-in see it in the relevant clients.</span></span>  <br/> |
-|<span data-ttu-id="dbefe-115">**已關閉**</span><span class="sxs-lookup"><span data-stu-id="dbefe-115">**Turned off**</span></span>  <br/> |<span data-ttu-id="dbefe-116">系統管理員已關閉增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-116">Admin turned off the add-in.</span></span>  <br/> |<span data-ttu-id="dbefe-117">被指派增益集的使用者和群組無法再存取增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-117">Users and groups assigned to the add-in no longer have access to it.</span></span>  <br/> <span data-ttu-id="dbefe-118">如果增益集狀態已變更為 [使用中]，使用者和群組將可再次存取增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-118">If the add-in state is changed to Active, the users and groups will have access to it again.</span></span>  <br/> |
-|<span data-ttu-id="dbefe-119">**Deleted**</span><span class="sxs-lookup"><span data-stu-id="dbefe-119">**Deleted**</span></span>  <br/> |<span data-ttu-id="dbefe-120">系統管理員已刪除增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-120">Admin deleted the add-in.</span></span>  <br/> |<span data-ttu-id="dbefe-121">被指派增益集的使用者和群組無法再存取增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-121">Users and groups assigned the add-in no longer have access to it.</span></span>  <br/> |
+|<span data-ttu-id="d37cc-112">**Active**</span><span class="sxs-lookup"><span data-stu-id="d37cc-112">**Active**</span></span>  <br/> |<span data-ttu-id="d37cc-113">系統管理員上載增益集，並將其指派給使用者或群組。</span><span class="sxs-lookup"><span data-stu-id="d37cc-113">Admin uploaded the add-in and assigned it to users or groups.</span></span>  <br/> |<span data-ttu-id="d37cc-114">被指派增益集的使用者和群組會在相關用戶端中看見增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-114">Users and groups assigned to the add-in see it in the relevant clients.</span></span>  <br/> |
+|<span data-ttu-id="d37cc-115">**已關閉**</span><span class="sxs-lookup"><span data-stu-id="d37cc-115">**Turned off**</span></span>  <br/> |<span data-ttu-id="d37cc-116">系統管理員已關閉增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-116">Admin turned off the add-in.</span></span>  <br/> |<span data-ttu-id="d37cc-117">被指派增益集的使用者和群組無法再存取增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-117">Users and groups assigned to the add-in no longer have access to it.</span></span>  <br/> <span data-ttu-id="d37cc-118">如果增益集狀態已變更為 [使用中]，使用者和群組將可再次存取增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-118">If the add-in state is changed to Active, the users and groups will have access to it again.</span></span>  <br/> |
+|<span data-ttu-id="d37cc-119">**Deleted**</span><span class="sxs-lookup"><span data-stu-id="d37cc-119">**Deleted**</span></span>  <br/> |<span data-ttu-id="d37cc-120">系統管理員已刪除增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-120">Admin deleted the add-in.</span></span>  <br/> |<span data-ttu-id="d37cc-121">被指派增益集的使用者和群組無法再存取增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-121">Users and groups assigned the add-in no longer have access to it.</span></span>  <br/> |
    
-<span data-ttu-id="dbefe-122">如果沒有人再使用增益集，請考慮刪除增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-122">Consider deleting an add-in if no one is using it anymore.</span></span> <span data-ttu-id="dbefe-123">例如，如果增益集只會在一年的特定時間內使用，則關閉增益集可能會有意義。</span><span class="sxs-lookup"><span data-stu-id="dbefe-123">For example, turning off an add-in might make sense if an add-in is used only during specific times of the year.</span></span>
+<span data-ttu-id="d37cc-122">如果沒有人再使用增益集，請考慮刪除增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-122">Consider deleting an add-in if no one is using it anymore.</span></span> <span data-ttu-id="d37cc-123">例如，如果增益集只會在一年的特定時間內使用，則關閉增益集可能會有意義。</span><span class="sxs-lookup"><span data-stu-id="d37cc-123">For example, turning off an add-in might make sense if an add-in is used only during specific times of the year.</span></span>
 
-## <a name="delete-an-add-in"></a><span data-ttu-id="dbefe-124">刪除增益集</span><span class="sxs-lookup"><span data-stu-id="dbefe-124">Delete an add-in</span></span>
+## <a name="delete-an-add-in"></a><span data-ttu-id="d37cc-124">刪除增益集</span><span class="sxs-lookup"><span data-stu-id="d37cc-124">Delete an add-in</span></span>
 
-<span data-ttu-id="dbefe-125">您也可以刪除已部署的增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-125">You can also delete an add-in that was deployed.</span></span>
+<span data-ttu-id="d37cc-125">您也可以刪除已部署的增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-125">You can also delete an add-in that was deployed.</span></span>
 
-1. <span data-ttu-id="dbefe-126">在系統管理中心中，移至 [**設定**  >  **服務] & 增益集**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="dbefe-126">In the admin center, go to the **Settings** > **Services & add-ins** page.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="dbefe-127">系統管理中心已更新整合型應用程式的部署經驗。</span><span class="sxs-lookup"><span data-stu-id="dbefe-127">The admin center is getting updated to deployment experience with Integrated Apps .</span></span> <span data-ttu-id="dbefe-128">如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 [**設定**] [  >  **整合式應用程式**]。</span><span class="sxs-lookup"><span data-stu-id="dbefe-128">If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**.</span></span> <span data-ttu-id="dbefe-129">在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。</span><span class="sxs-lookup"><span data-stu-id="dbefe-129">On the top of the **Integrated apps** page, choose **Add-ins**.</span></span>
-
-2. <span data-ttu-id="dbefe-130">選取部署的增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-130">Select the deployed add-in.</span></span>
-
-3. <span data-ttu-id="dbefe-131">按一下 [ **刪除] Add-In**。</span><span class="sxs-lookup"><span data-stu-id="dbefe-131">Click on **Delete Add-In**.</span></span> <span data-ttu-id="dbefe-132">移除右下角的增益集按鈕。</span><span class="sxs-lookup"><span data-stu-id="dbefe-132">Remove the Add-in button on the bottom-right corner.</span></span>
-
-4. <span data-ttu-id="dbefe-133">驗證您的選項，然後選擇 [移除增益集 **]**。</span><span class="sxs-lookup"><span data-stu-id="dbefe-133">Validate your selections, and choose **Remove add-in**.</span></span>
-
-## <a name="edit-add-in-access"></a><span data-ttu-id="dbefe-134">編輯增益集存取權</span><span class="sxs-lookup"><span data-stu-id="dbefe-134">Edit add-in access</span></span>
-
-<span data-ttu-id="dbefe-135">部署後，系統管理員也可以管理使用者對增益集的存取。</span><span class="sxs-lookup"><span data-stu-id="dbefe-135">Post deployment, admins can also manage user access to add-ins.</span></span>
-
-1. <span data-ttu-id="dbefe-136">在系統管理中心中，移至 [**設定**  >  **服務] & 增益集**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="dbefe-136">In the admin center, go to the **Settings** > **Services & add-ins** page.</span></span>
+1. <span data-ttu-id="d37cc-126">在系統管理中心中，移至 **設定**  >  **服務 & 增益集**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="d37cc-126">In the admin center, go to the **Settings** > **Services & add-ins** page.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="dbefe-137">系統管理中心已更新整合型應用程式的部署經驗。</span><span class="sxs-lookup"><span data-stu-id="dbefe-137">The admin center is getting updated to deployment experience with Integrated Apps .</span></span> <span data-ttu-id="dbefe-138">如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 [**設定**] [  >  **整合式應用程式**]。</span><span class="sxs-lookup"><span data-stu-id="dbefe-138">If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**.</span></span> <span data-ttu-id="dbefe-139">在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。</span><span class="sxs-lookup"><span data-stu-id="dbefe-139">On the top of the **Integrated apps** page, choose **Add-ins**.</span></span>
+    > <span data-ttu-id="d37cc-127">系統管理中心已更新整合型應用程式的部署經驗。</span><span class="sxs-lookup"><span data-stu-id="d37cc-127">The admin center is getting updated to deployment experience with Integrated Apps .</span></span> <span data-ttu-id="d37cc-128">如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 **設定** 的  >  **整合式應用程式**。</span><span class="sxs-lookup"><span data-stu-id="d37cc-128">If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**.</span></span> <span data-ttu-id="d37cc-129">在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。</span><span class="sxs-lookup"><span data-stu-id="d37cc-129">On the top of the **Integrated apps** page, choose **Add-ins**.</span></span>
 
-2. <span data-ttu-id="dbefe-140">選取部署的增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-140">Select the deployed add-in.</span></span>
+2. <span data-ttu-id="d37cc-130">選取部署的增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-130">Select the deployed add-in.</span></span>
 
-3. <span data-ttu-id="dbefe-141">按一下 [在 **誰可以存取**] 底下的 [**編輯**]。</span><span class="sxs-lookup"><span data-stu-id="dbefe-141">Click on **Edit** under **Who has Access**.</span></span>
+3. <span data-ttu-id="d37cc-131">按一下 [ **刪除] Add-In**。</span><span class="sxs-lookup"><span data-stu-id="d37cc-131">Click on **Delete Add-In**.</span></span> <span data-ttu-id="d37cc-132">移除右下角的增益集按鈕。</span><span class="sxs-lookup"><span data-stu-id="d37cc-132">Remove the Add-in button on the bottom-right corner.</span></span>
 
-4. <span data-ttu-id="dbefe-142">儲存變更。</span><span class="sxs-lookup"><span data-stu-id="dbefe-142">Save the changes.</span></span>
+4. <span data-ttu-id="d37cc-133">驗證您的選項，然後選擇 [移除增益集 **]**。</span><span class="sxs-lookup"><span data-stu-id="d37cc-133">Validate your selections, and choose **Remove add-in**.</span></span>
 
-## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a><span data-ttu-id="dbefe-143">在 Outlook) 以外的所有用戶端上關閉 Office 存放區，以防止增益集下載 (</span><span class="sxs-lookup"><span data-stu-id="dbefe-143">Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)</span></span>
+## <a name="edit-add-in-access"></a><span data-ttu-id="d37cc-134">編輯增益集存取權</span><span class="sxs-lookup"><span data-stu-id="d37cc-134">Edit add-in access</span></span>
+
+<span data-ttu-id="d37cc-135">部署後，系統管理員也可以管理使用者對增益集的存取。</span><span class="sxs-lookup"><span data-stu-id="d37cc-135">Post deployment, admins can also manage user access to add-ins.</span></span>
+
+1. <span data-ttu-id="d37cc-136">在系統管理中心中，移至 **設定**  >  **服務 & 增益集**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="d37cc-136">In the admin center, go to the **Settings** > **Services & add-ins** page.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="d37cc-137">系統管理中心已更新整合型應用程式的部署經驗。</span><span class="sxs-lookup"><span data-stu-id="d37cc-137">The admin center is getting updated to deployment experience with Integrated Apps .</span></span> <span data-ttu-id="d37cc-138">如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 **設定** 的  >  **整合式應用程式**。</span><span class="sxs-lookup"><span data-stu-id="d37cc-138">If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**.</span></span> <span data-ttu-id="d37cc-139">在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。</span><span class="sxs-lookup"><span data-stu-id="d37cc-139">On the top of the **Integrated apps** page, choose **Add-ins**.</span></span>
+
+2. <span data-ttu-id="d37cc-140">選取部署的增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-140">Select the deployed add-in.</span></span>
+
+3. <span data-ttu-id="d37cc-141">按一下 [**神秘具有存取權**] 底下的 [**編輯**]。</span><span class="sxs-lookup"><span data-stu-id="d37cc-141">Click on **Edit** under **Who has Access**.</span></span>
+
+4. <span data-ttu-id="d37cc-142">儲存變更。</span><span class="sxs-lookup"><span data-stu-id="d37cc-142">Save the changes.</span></span>
+
+## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a><span data-ttu-id="d37cc-143">在所有用戶端上關閉 Office 儲存區，以避免增益集下載 (但 Outlook) </span><span class="sxs-lookup"><span data-stu-id="d37cc-143">Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="dbefe-144">Outlook 增益集安裝是由 [不同](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)的程式管理。</span><span class="sxs-lookup"><span data-stu-id="dbefe-144">Outlook add-in installation is managed by a [different process](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins).</span></span>
+> <span data-ttu-id="d37cc-144">Outlook 增益集安裝是由[不同](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)的程式所管理。</span><span class="sxs-lookup"><span data-stu-id="d37cc-144">Outlook add-in installation is managed by a [different process](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins).</span></span>
 
-<span data-ttu-id="dbefe-145">做為組織，您可能想要防止從 Office Store 下載新的 Office 增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-145">As an organization you may wish to prevent the download of new Office add-ins from the Office Store.</span></span> <span data-ttu-id="dbefe-146">這可以與集中式部署搭配使用，以確保只有組織認可的增益集部署至組織內的使用者。</span><span class="sxs-lookup"><span data-stu-id="dbefe-146">This can be used in conjunction with Centralized Deployment to ensure that only organization-approved add-ins are deployed to users within your organization.</span></span>
+<span data-ttu-id="d37cc-145">做為組織，您可能想要防止從 Office 存放區下載新 Office 增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-145">As an organization you may wish to prevent the download of new Office add-ins from the Office Store.</span></span> <span data-ttu-id="d37cc-146">這可以與集中式部署搭配使用，以確保只有組織認可的增益集部署至組織內的使用者。</span><span class="sxs-lookup"><span data-stu-id="d37cc-146">This can be used in conjunction with Centralized Deployment to ensure that only organization-approved add-ins are deployed to users within your organization.</span></span>
   
-<span data-ttu-id="dbefe-147">**若要關閉增益集採集**</span><span class="sxs-lookup"><span data-stu-id="dbefe-147">**To turn off add-in acquisition**</span></span>
+<span data-ttu-id="d37cc-147">**若要關閉增益集採集**</span><span class="sxs-lookup"><span data-stu-id="d37cc-147">**To turn off add-in acquisition**</span></span>
   
-1. <span data-ttu-id="dbefe-148">在系統管理中心中，移至 **[設定]** \> [[服務與增益集]](https://go.microsoft.com/fwlink/p/?linkid=2053743) 頁面。</span><span class="sxs-lookup"><span data-stu-id="dbefe-148">In the admin center, go to the **Settings** \> [Services &amp; add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.</span></span>
+1. <span data-ttu-id="d37cc-148">在系統管理中心中，移至 **[設定]** \> [[服務與增益集]](https://go.microsoft.com/fwlink/p/?linkid=2053743) 頁面。</span><span class="sxs-lookup"><span data-stu-id="d37cc-148">In the admin center, go to the **Settings** \> [Services &amp; add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="dbefe-149">系統管理中心已更新整合型應用程式的部署經驗。</span><span class="sxs-lookup"><span data-stu-id="dbefe-149">The admin center is getting updated to deployment experience with Integrated Apps.</span></span> <span data-ttu-id="dbefe-150">如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 [**設定**] [  >  **整合式應用程式**]。</span><span class="sxs-lookup"><span data-stu-id="dbefe-150">If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**.</span></span> <span data-ttu-id="dbefe-151">在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。</span><span class="sxs-lookup"><span data-stu-id="dbefe-151">On the top of the **Integrated apps** page, choose **Add-ins**.</span></span>
+    > <span data-ttu-id="d37cc-149">系統管理中心已更新整合型應用程式的部署經驗。</span><span class="sxs-lookup"><span data-stu-id="d37cc-149">The admin center is getting updated to deployment experience with Integrated Apps.</span></span> <span data-ttu-id="d37cc-150">如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 **設定** 的  >  **整合式應用程式**。</span><span class="sxs-lookup"><span data-stu-id="d37cc-150">If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**.</span></span> <span data-ttu-id="d37cc-151">在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。</span><span class="sxs-lookup"><span data-stu-id="d37cc-151">On the top of the **Integrated apps** page, choose **Add-ins**.</span></span>
     
-3. <span data-ttu-id="dbefe-152">選取 [使用者所擁有的應用程式與服務 **]**。</span><span class="sxs-lookup"><span data-stu-id="dbefe-152">Select **User owned apps and services**.</span></span>
+3. <span data-ttu-id="d37cc-152">選取 [使用者所擁有的應用程式與服務 **]**。</span><span class="sxs-lookup"><span data-stu-id="d37cc-152">Select **User owned apps and services**.</span></span>
     
-4. <span data-ttu-id="dbefe-153">清除讓使用者存取 Office 市集的選項。</span><span class="sxs-lookup"><span data-stu-id="dbefe-153">Clear the option to let users access the Office store.</span></span>
+4. <span data-ttu-id="d37cc-153">清除讓使用者存取 Office 市集的選項。</span><span class="sxs-lookup"><span data-stu-id="d37cc-153">Clear the option to let users access the Office store.</span></span>
 
-    <span data-ttu-id="dbefe-154">這會防止所有使用者從存放區中取得下列增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-154">This will prevent all users from acquiring the following add-ins from the store.</span></span>
+    <span data-ttu-id="d37cc-154">這會防止所有使用者從存放區中取得下列增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-154">This will prevent all users from acquiring the following add-ins from the store.</span></span>
       
-    - <span data-ttu-id="dbefe-155">Word、Excel 及 PowerPoint 2016 的增益集，來自：</span><span class="sxs-lookup"><span data-stu-id="dbefe-155">Add-ins for Word, Excel, and PowerPoint 2016 from:</span></span>
+    - <span data-ttu-id="d37cc-155">Word、Excel 及 PowerPoint 2016 的增益集：</span><span class="sxs-lookup"><span data-stu-id="d37cc-155">Add-ins for Word, Excel, and PowerPoint 2016 from:</span></span>
         
-      - <span data-ttu-id="dbefe-156">Windows</span><span class="sxs-lookup"><span data-stu-id="dbefe-156">Windows</span></span>
-      - <span data-ttu-id="dbefe-157">Mac</span><span class="sxs-lookup"><span data-stu-id="dbefe-157">Mac</span></span>
-      - <span data-ttu-id="dbefe-158">Office</span><span class="sxs-lookup"><span data-stu-id="dbefe-158">Office</span></span>
+      - <span data-ttu-id="d37cc-156">Windows</span><span class="sxs-lookup"><span data-stu-id="d37cc-156">Windows</span></span>
+      - <span data-ttu-id="d37cc-157">Mac</span><span class="sxs-lookup"><span data-stu-id="d37cc-157">Mac</span></span>
+      - <span data-ttu-id="d37cc-158">Office</span><span class="sxs-lookup"><span data-stu-id="d37cc-158">Office</span></span>
         
         
-    - <span data-ttu-id="dbefe-159">從 **AppSource** 中開始的購置</span><span class="sxs-lookup"><span data-stu-id="dbefe-159">Acquisitions starting within **AppSource**</span></span>
+    - <span data-ttu-id="d37cc-159">從 **AppSource** 中開始的購置</span><span class="sxs-lookup"><span data-stu-id="d37cc-159">Acquisitions starting within **AppSource**</span></span>
         
-    - <span data-ttu-id="dbefe-160">Microsoft 365 中的增益集</span><span class="sxs-lookup"><span data-stu-id="dbefe-160">Add-ins within Microsoft 365</span></span>
+    - <span data-ttu-id="d37cc-160">Microsoft 365 內的增益集</span><span class="sxs-lookup"><span data-stu-id="d37cc-160">Add-ins within Microsoft 365</span></span>
         
-    <span data-ttu-id="dbefe-161">嘗試存取儲存區的使用者會看到下列訊息： **對不起，Microsoft 365 已設定為防止個別購買 Office store 增益集。**</span><span class="sxs-lookup"><span data-stu-id="dbefe-161">A user who tries to access the store will see the following message: **Sorry, Microsoft 365 has been configured to prevent individual acquisition of Office Store add-ins.**</span></span>
+    <span data-ttu-id="d37cc-161">嘗試存取儲存區的使用者會看到下列訊息：**對不起，Microsoft 365 已設定為防止個別購買 Office 儲存區增益集。**</span><span class="sxs-lookup"><span data-stu-id="d37cc-161">A user who tries to access the store will see the following message: **Sorry, Microsoft 365 has been configured to prevent individual acquisition of Office Store add-ins.**</span></span>
   
-<span data-ttu-id="dbefe-162">下列版本提供支援關閉 Office 書店的功能：</span><span class="sxs-lookup"><span data-stu-id="dbefe-162">Support for turning off the Office Store is available in the following versions:</span></span>
+<span data-ttu-id="d37cc-162">下列版本提供支援關閉 Office 儲存區：</span><span class="sxs-lookup"><span data-stu-id="d37cc-162">Support for turning off the Office Store is available in the following versions:</span></span>
   
-- <span data-ttu-id="dbefe-163">Windows： 16.0.9001-目前可供使用。</span><span class="sxs-lookup"><span data-stu-id="dbefe-163">Windows: 16.0.9001 - Currently available.</span></span>
+- <span data-ttu-id="d37cc-163">Windows： 16.0.9001-目前可供使用。</span><span class="sxs-lookup"><span data-stu-id="d37cc-163">Windows: 16.0.9001 - Currently available.</span></span>
     
-- <span data-ttu-id="dbefe-164">Mac： 16.10.18011401-目前可供使用。</span><span class="sxs-lookup"><span data-stu-id="dbefe-164">Mac: 16.10.18011401 - Currently available.</span></span>
+- <span data-ttu-id="d37cc-164">Mac： 16.10.18011401-目前可供使用。</span><span class="sxs-lookup"><span data-stu-id="d37cc-164">Mac: 16.10.18011401 - Currently available.</span></span>
     
-- <span data-ttu-id="dbefe-165">iOS： 2.9.18010804-目前可供使用。</span><span class="sxs-lookup"><span data-stu-id="dbefe-165">iOS: 2.9.18010804 - Currently available.</span></span>
+- <span data-ttu-id="d37cc-165">iOS： 2.9.18010804-目前可供使用。</span><span class="sxs-lookup"><span data-stu-id="d37cc-165">iOS: 2.9.18010804 - Currently available.</span></span>
     
-- <span data-ttu-id="dbefe-166">目前可用的 web。</span><span class="sxs-lookup"><span data-stu-id="dbefe-166">The web - Currently available.</span></span>
+- <span data-ttu-id="d37cc-166">目前可用的 web。</span><span class="sxs-lookup"><span data-stu-id="d37cc-166">The web - Currently available.</span></span>
     
-<span data-ttu-id="dbefe-167">這不會讓系統管理員使用集中式部署從 Office Store 指派增益集。</span><span class="sxs-lookup"><span data-stu-id="dbefe-167">This does not prevent an administrator from using Centralized Deployment to assign an add-in from the Office Store.</span></span>
+<span data-ttu-id="d37cc-167">這不會讓系統管理員使用集中式部署從 Office 儲存區指派增益集。</span><span class="sxs-lookup"><span data-stu-id="d37cc-167">This does not prevent an administrator from using Centralized Deployment to assign an add-in from the Office Store.</span></span>
   
-<span data-ttu-id="dbefe-168">若要防止使用者使用 Microsoft 帳戶登入，您可以限制登入只使用組織帳戶。</span><span class="sxs-lookup"><span data-stu-id="dbefe-168">To prevent a user from signing in with a Microsoft account, you can restrict logon to use only the organizational account.</span></span> <span data-ttu-id="dbefe-169">如需詳細資訊，請參閱 [Office 2016 的身分識別、驗證及授權](/DeployOffice/security/identity-authentication-and-authorization-in-office)。</span><span class="sxs-lookup"><span data-stu-id="dbefe-169">For more information, see [Identity, authentication, and authorization in Office 2016](/DeployOffice/security/identity-authentication-and-authorization-in-office).</span></span>  
+<span data-ttu-id="d37cc-168">若要防止使用者使用 Microsoft 帳戶登入，您可以限制登入只使用組織帳戶。</span><span class="sxs-lookup"><span data-stu-id="d37cc-168">To prevent a user from signing in with a Microsoft account, you can restrict logon to use only the organizational account.</span></span> <span data-ttu-id="d37cc-169">如需詳細資訊，請參閱[Office 2016 的身分識別、驗證及授權](/DeployOffice/security/identity-authentication-and-authorization-in-office)。</span><span class="sxs-lookup"><span data-stu-id="d37cc-169">For more information, see [Identity, authentication, and authorization in Office 2016](/DeployOffice/security/identity-authentication-and-authorization-in-office).</span></span>  
 
 > [!NOTE] 
-> <span data-ttu-id="dbefe-170">防止使用者存取 office store 也會防止他們從 [網路共用的旁載 Office 增益集進行測試](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)。</span><span class="sxs-lookup"><span data-stu-id="dbefe-170">Preventing users from accessing the office store will also prevent them from [Sideloading Office Add-ins for testing from a network share](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins).</span></span>
+> <span data-ttu-id="d37cc-170">防止使用者存取 office 書店也會防止使用者從[旁載 Office 增益集，以便從網路共用進行測試](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)。</span><span class="sxs-lookup"><span data-stu-id="d37cc-170">Preventing users from accessing the office store will also prevent them from [Sideloading Office Add-ins for testing from a network share](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins).</span></span>
 
-## <a name="more-about-the-end-user-experience-with-add-ins"></a><span data-ttu-id="dbefe-171">有關使用增益集的使用者經驗的詳細資訊</span><span class="sxs-lookup"><span data-stu-id="dbefe-171">More about the end-user experience with add-ins</span></span>
+## <a name="more-about-the-end-user-experience-with-add-ins"></a><span data-ttu-id="d37cc-171">有關使用增益集的使用者經驗的詳細資訊</span><span class="sxs-lookup"><span data-stu-id="d37cc-171">More about the end-user experience with add-ins</span></span>
 
-<span data-ttu-id="dbefe-172">部署增益集之後，您的使用者就可以開始在 Office 應用程式中使用它 (請參閱 [開始使用 Office 增益集](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)) 。</span><span class="sxs-lookup"><span data-stu-id="dbefe-172">After you deploy an add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)).</span></span> <span data-ttu-id="dbefe-173">增益集會出現在增益集所支援的所有平臺上。</span><span class="sxs-lookup"><span data-stu-id="dbefe-173">The add-in appears on all platforms that the add-in supports.</span></span>
+<span data-ttu-id="d37cc-172">部署增益集之後，您的使用者可以在其 Office 應用程式中開始使用它 (請參閱[開始使用 Office 增益集](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)) 。</span><span class="sxs-lookup"><span data-stu-id="d37cc-172">After you deploy an add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)).</span></span> <span data-ttu-id="d37cc-173">增益集會出現在增益集所支援的所有平臺上。</span><span class="sxs-lookup"><span data-stu-id="d37cc-173">The add-in appears on all platforms that the add-in supports.</span></span>
   
-<span data-ttu-id="dbefe-174">如果增益集支援增益集命令，命令會顯示在 Office 功能區上。</span><span class="sxs-lookup"><span data-stu-id="dbefe-174">If the add-in supports add-in commands, the commands appear on the Office ribbon.</span></span> <span data-ttu-id="dbefe-175">在下列範例中，會出現 **引文** 增益集的命令 **搜尋引文**。</span><span class="sxs-lookup"><span data-stu-id="dbefe-175">In the following example, the command **Search Citation** appears for the **Citations** add-in.</span></span> 
+<span data-ttu-id="d37cc-174">如果增益集支援增益集命令，命令會顯示在 Office 功能區上。</span><span class="sxs-lookup"><span data-stu-id="d37cc-174">If the add-in supports add-in commands, the commands appear on the Office ribbon.</span></span> <span data-ttu-id="d37cc-175">在下列範例中，會出現 **引文** 增益集的命令 **搜尋引文**。</span><span class="sxs-lookup"><span data-stu-id="d37cc-175">In the following example, the command **Search Citation** appears for the **Citations** add-in.</span></span> 
 
-![具有搜尋引文的 Office 功能區](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![Office 帶搜尋引文的功能區](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
-<span data-ttu-id="dbefe-177">如果部署的增益集不支援增益集命令，或是您想要查看所有已部署的增益集，您可以透過 **My 增益集** 進行查看。</span><span class="sxs-lookup"><span data-stu-id="dbefe-177">If the deployed add-in doesn't support add-in commands or if you want to view all deployed add-ins, you can view them via **My Add-ins**.</span></span> 
+<span data-ttu-id="d37cc-177">如果部署的增益集不支援增益集命令，或是您想要查看所有已部署的增益集，您可以透過 **My 增益集** 進行查看。</span><span class="sxs-lookup"><span data-stu-id="d37cc-177">If the deployed add-in doesn't support add-in commands or if you want to view all deployed add-ins, you can view them via **My Add-ins**.</span></span> 
   
-### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a><span data-ttu-id="dbefe-178">在 Word 2016、Excel 2016 或 PowerPoint 2016 中</span><span class="sxs-lookup"><span data-stu-id="dbefe-178">In Word 2016, Excel 2016, or PowerPoint 2016</span></span>
+### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a><span data-ttu-id="d37cc-178">在 Word 2016、Excel 2016 或 PowerPoint 2016 中</span><span class="sxs-lookup"><span data-stu-id="d37cc-178">In Word 2016, Excel 2016, or PowerPoint 2016</span></span>
 
-1. <span data-ttu-id="dbefe-179">選取 [ **插入 \> 我的增益集**]。</span><span class="sxs-lookup"><span data-stu-id="dbefe-179">Select **Insert \> My Add-ins**.</span></span> 
+1. <span data-ttu-id="d37cc-179">選取 [ **插入 \> 我的增益集**]。</span><span class="sxs-lookup"><span data-stu-id="d37cc-179">Select **Insert \> My Add-ins**.</span></span> 
     
-2. <span data-ttu-id="dbefe-180">在 [Office 增益集] 視窗中，選取 [ **管理受管理** ] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="dbefe-180">Select the **Admin Managed** tab in the Office Add-ins window.</span></span> 
+2. <span data-ttu-id="d37cc-180">在 [Office 增益集] 視窗中，選取 [**管理受管理**] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="d37cc-180">Select the **Admin Managed** tab in the Office Add-ins window.</span></span> 
     
-3. <span data-ttu-id="dbefe-181">在此範例中，按兩下您先前部署的增益集 (中的 **引文**) 。</span><span class="sxs-lookup"><span data-stu-id="dbefe-181">Double-click the add-in you deployed earlier (in this example, **Citations**).</span></span>
+3. <span data-ttu-id="d37cc-181">在此範例中，按兩下您先前部署的增益集 (中的 **引文**) 。</span><span class="sxs-lookup"><span data-stu-id="d37cc-181">Double-click the add-in you deployed earlier (in this example, **Citations**).</span></span>
 
     ![[Office 增益集] 頁面的 [管理受管理] 索引標籤](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
-### <a name="in-outlook"></a><span data-ttu-id="dbefe-183">在 Outlook 中</span><span class="sxs-lookup"><span data-stu-id="dbefe-183">In Outlook</span></span>
+### <a name="in-outlook"></a><span data-ttu-id="d37cc-183">在 Outlook 中</span><span class="sxs-lookup"><span data-stu-id="d37cc-183">In Outlook</span></span>
 
-1. <span data-ttu-id="dbefe-184">在 [ **首頁** ] 功能區上，選取 [ **取得增益集**]。</span><span class="sxs-lookup"><span data-stu-id="dbefe-184">On the **Home** ribbon, select **Get Add-ins**.</span></span>
+1. <span data-ttu-id="d37cc-184">在 [ **首頁** ] 功能區上，選取 [ **取得增益集**]。</span><span class="sxs-lookup"><span data-stu-id="d37cc-184">On the **Home** ribbon, select **Get Add-ins**.</span></span>
 
     ![Outlook 中的 [市集] 按鈕](../../media/getaddinsicon.png)
   
-2. <span data-ttu-id="dbefe-186">選取左側瀏覽列中的 [受系統管理員管理 **]**。</span><span class="sxs-lookup"><span data-stu-id="dbefe-186">Select **Admin-managed** in the left nav.</span></span> 
+2. <span data-ttu-id="d37cc-186">選取左側瀏覽列中的 [受系統管理員管理 **]**。</span><span class="sxs-lookup"><span data-stu-id="d37cc-186">Select **Admin-managed** in the left nav.</span></span> 
 
-## <a name="learn-more"></a><span data-ttu-id="dbefe-187">深入了解</span><span class="sxs-lookup"><span data-stu-id="dbefe-187">Learn more</span></span>
+## <a name="related-content"></a><span data-ttu-id="d37cc-187">相關內容</span><span class="sxs-lookup"><span data-stu-id="d37cc-187">Related content</span></span>
 
-[<span data-ttu-id="dbefe-188">在系統管理中心部署增益集</span><span class="sxs-lookup"><span data-stu-id="dbefe-188">Deploy add-ins in the admin center</span></span>](./manage-deployment-of-add-ins.md)
+<span data-ttu-id="d37cc-188">[在系統管理中心部署增益集](./manage-deployment-of-add-ins.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="d37cc-188">[Deploy add-ins in the admin center](./manage-deployment-of-add-ins.md) (article)</span></span>
 
-<span data-ttu-id="dbefe-189">深入了解如何建立及建置 [Office 增益集](/office/dev/add-ins/overview/office-add-ins)。</span><span class="sxs-lookup"><span data-stu-id="dbefe-189">Learn more about creating and building [Office Add-ins](/office/dev/add-ins/overview/office-add-ins).</span></span>
+<span data-ttu-id="d37cc-189">深入瞭解建立及建立[Office 增益集](/office/dev/add-ins/overview/office-add-ins) (文章) </span><span class="sxs-lookup"><span data-stu-id="d37cc-189">Learn more about creating and building [Office Add-ins](/office/dev/add-ins/overview/office-add-ins) (article)</span></span>
   
-<span data-ttu-id="dbefe-190">[使用集中式部署 PowerShell Cmdlet 來管理增益集](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)。</span><span class="sxs-lookup"><span data-stu-id="dbefe-190">[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md).</span></span>
+<span data-ttu-id="d37cc-190">[使用集中式部署 PowerShell Cmdlet 來管理增益集](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="d37cc-190">[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)</span></span>
   
-[<span data-ttu-id="dbefe-191">疑難排解：使用者未看到增益集</span><span class="sxs-lookup"><span data-stu-id="dbefe-191">Troubleshoot: User not seeing add-ins</span></span>](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+<span data-ttu-id="d37cc-191">[疑難排解：使用者未看到增益集](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (文章) </span><span class="sxs-lookup"><span data-stu-id="d37cc-191">[Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)</span></span>
 
-[<span data-ttu-id="dbefe-192">Microsoft Store 中的未成年人和取得增益集</span><span class="sxs-lookup"><span data-stu-id="dbefe-192">Minors and acquiring add-ins from the Microsoft Store</span></span>](./minors-and-acquiring-addins-from-the-store.md)
+<span data-ttu-id="d37cc-192">[從 Microsoft Store (文章中的未成年人和取得增益集](./minors-and-acquiring-addins-from-the-store.md)) </span><span class="sxs-lookup"><span data-stu-id="d37cc-192">[Minors and acquiring add-ins from the Microsoft Store](./minors-and-acquiring-addins-from-the-store.md) (article)</span></span>
