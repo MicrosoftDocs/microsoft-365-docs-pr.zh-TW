@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 加強貴組織對密碼攻擊的防護，禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: 1927e481625e93afa8aa064666e75ea8f891669e
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572294"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593906"
 ---
 # <a name="password-policy-recommendations"></a>密碼原則建議
 

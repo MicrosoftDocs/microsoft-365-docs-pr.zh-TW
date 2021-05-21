@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 6d3f1e2b0986fe12f0bf318b53100ca31f1ed700
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 92dfc279344b003ab651110375982b0f065dfb0d
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538372"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594166"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>切換至 Microsoft Defender 的端點-階段1：準備
 
@@ -43,11 +43,8 @@ ms.locfileid: "52538372"
 此遷移階段包含下列步驟：
 
 1. [在組織裝置中取得及部署更新](#get-and-deploy-updates-across-your-organizations-devices)
-
 2. [取得 Defender For Endpoint](#get-microsoft-defender-for-endpoint)。
-
 3. [授與 Microsoft Defender 資訊安全中心的存取權](#grant-access-to-the-microsoft-defender-security-center)。
-
 4. [設定裝置 proxy 和網際網路連線設定](#configure-device-proxy-and-internet-connectivity-settings)。
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>在組織裝置中取得及部署更新
@@ -84,14 +81,14 @@ ms.locfileid: "52538372"
 
 4. 如果您組織中)  (等端點使用 proxy 來存取網際網路，請參閱 [Defender For Endpoint setup： Network configuration](production-deployment.md#network-configuration)。
  
-此時，您已準備好授與安全性管理員的存取權，以及將使用 Microsoft Defender 資訊安全中心 () 的安全性操作員 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 
+此時，您已準備好授與安全性管理員的存取權，以及將使用 Microsoft Defender 資訊安全中心 () 的安全性操作員 [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 
 
 > [!NOTE]
-> Microsoft Defender 資訊安全中心有時稱為端點入口網站的 Defender，而且可以在此存取 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) 。 
+> Microsoft Defender 資訊安全中心有時稱為端點入口網站的 Defender，而且可以在此存取 [https://securitycenter.windows.com](https://securitycenter.windows.com) 。 
 
 ## <a name="grant-access-to-the-microsoft-defender-security-center"></a>授與 Microsoft Defender 資訊安全中心的存取權
 
-Microsoft Defender 資訊安全中心 ([https://aka.ms/MDATPportal](https://aka.ms/MDATPportal)) 是您用來存取及設定用於端點之 Defender 的功能。 若要深入瞭解，請參閱[Microsoft Defender 資訊安全中心的總覽](use.md)。
+Microsoft Defender 資訊安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 是您用來存取及設定用於端點之 Defender 的功能。 若要深入瞭解，請參閱[Microsoft Defender 資訊安全中心的總覽](use.md)。
 
 您可以使用基本許可權或以角色為基礎的存取控制 (RBAC) 授與 Microsoft Defender 資訊安全中心許可權。 我們建議使用 RBAC，讓您可以更細微地控制許可權。
 
@@ -102,9 +99,7 @@ Microsoft Defender 資訊安全中心 ([https://aka.ms/MDATPportal](https://aka.
     如果您的組織需要 Intune 以外的方法，請選擇下列其中一個選項：
 
     - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
-
     - [高級群組原則管理](/microsoft-desktop-optimization-pack/agpm)
-
     - [Windows系統管理中心](/windows-server/manage/windows-admin-center/overview)
 
 3. 授與 Microsoft Defender 資訊安全中心的存取權。  (需要協助嗎？ 請參閱 [使用 RBAC) 管理入口網站存取](rbac.md) 。
@@ -113,16 +108,16 @@ Microsoft Defender 資訊安全中心 ([https://aka.ms/MDATPportal](https://aka.
 
 若要啟用裝置和 Defender for Endpoint 之間的通訊，請設定 proxy 和網際網路設定。 下表包含可用於設定各種作業系統和功能之 proxy 和網際網路設定的資源連結：
 
-|功能  | 作業系統 | 資源 |
-|--|--|--|
-| (EDR[的端點偵測和回應](overview-endpoint-detection-response.md))  |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows伺服器1803或更新版本](/windows-server/get-started/whats-new-in-windows-server-1803)  |[設定電腦 proxy 和網際網路連線設定](configure-proxy-internet.md) |
-|EDR |[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[設定 proxy 和網際網路連線設定](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |macOS： <p>11.3.1 (大型 Sur) <p>10.15 (Catalina) <p>10.14 (Mojave)    |[MacOS 上的 Defender for Endpoint： Network connections](microsoft-defender-endpoint-mac.md#network-connections)  |
-|[Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows伺服器1803或更新版本](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) |[設定及驗證 Microsoft Defender 防毒軟體網路連線](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
-|防毒 |macOS： <p>11.3.1 (大型 Sur) <p>10.15 (Catalina) <p>10.14 (Mojave)  |[MacOS 上的 Defender for Endpoint： Network connections](microsoft-defender-endpoint-mac.md#network-connections) |
-|防毒 |Linux： <p>RHEL 7.2 +<p>CentOS Linux 7.2 +<p>Ubuntu 16 LTS 或更高版本 LTS<p>SLES 12 +<p>Debian 9 +<p>Oracle Linux 7。2 |[Linux 上的 Defender Endpoint：網路連接](microsoft-defender-endpoint-linux.md#network-connections) |
+| 功能  | 作業系統 | 資源 |
+|:--|:--|:--|
+|  (EDR[的端點偵測和回應](overview-endpoint-detection-response.md))  | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows伺服器1803或更新版本](/windows-server/get-started/whats-new-in-windows-server-1803)  | [設定電腦 proxy 和網際網路連線設定](configure-proxy-internet.md) |
+| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[設定 proxy 和網際網路連線設定](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+| EDR  | macOS：<p>11.3.1 (大型 Sur) <p>10.15 (Catalina) <p>10.14 (Mojave)    | [MacOS 上的 Defender for Endpoint： Network connections](microsoft-defender-endpoint-mac.md#network-connections)  |
+| [Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows伺服器1803或更新版本](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [設定及驗證 Microsoft Defender 防毒軟體網路連線](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
+| 防毒 | macOS：<p>11.3.1 (大型 Sur) <p>10.15 (Catalina) <p>10.14 (Mojave)  | [MacOS 上的 Defender for Endpoint： Network connections](microsoft-defender-endpoint-mac.md#network-connections) |
+| 防毒 | Linux： <p>RHEL 7.2 +<p>CentOS Linux 7.2 +<p>Ubuntu 16 LTS 或更高版本 LTS<p>SLES 12 +<p>Debian 9 +<p>Oracle Linux 7。2 | [Linux 上的 Defender Endpoint：網路連接](microsoft-defender-endpoint-linux.md#network-connections) |
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 **恭喜**！ 您已完成 [切換至 Defender For Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)的 **準備** 階段！
 

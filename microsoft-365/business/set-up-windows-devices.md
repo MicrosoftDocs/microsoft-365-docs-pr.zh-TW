@@ -26,17 +26,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 瞭解如何為 Microsoft 365 商務進階版使用者設定執行 Windows 10 專業版的 Windows 裝置，以啟用集中式管理及安全性控制。
-ms.openlocfilehash: 3e268d81ff6fb7113b7e0b0fe5d0545ff5c72b1e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 為 Microsoft 365 商務進階版使用者設定執行 Windows 10 專業版的 Windows 裝置，以啟用集中式管理及安全性控制。
+ms.openlocfilehash: 3d32a033a1a1c89d7d4d557cea6a28e24543ab2c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244769"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594014"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>設定 Microsoft 365 商務進階版使用者的 Windows 裝置
 
-## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>為 Microsoft 365 商務進階版使用者設定 Windows 裝置的必要條件
+## <a name="before-you-begin"></a>開始之前
 
 在您可以設定 Microsoft 365 商務進階版使用者的 Windows 裝置之前，請確定所有 Windows 裝置都執行 Windows 10 專業版，版本 1703 (建立者更新) 。 Windows 10 專業版是部署 Windows 10 商務版的必要條件，也就是一組雲端服務和裝置管理功能，可補充 Windows 10 專業版和啟用 Microsoft 365 商務進階版的集中式管理及安全性控制。
   
@@ -128,6 +128,6 @@ ms.locfileid: "52244769"
 
 若要設定行動裝置，請參閱為[Microsoft 365 商務進階版使用者設定行動裝置](set-up-mobile-devices.md)，以設定裝置保護或應用程式保護原則，請參閱[Manage Microsoft 365 for Business](manage.md)。
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>如需設定和使用 Microsoft 365 商務進階版的詳細資訊
+## <a name="related-content"></a>相關內容
 
-[商務用 Microsoft 365 訓練影片](../business-video/index.yml)
+[Microsoft 365 商務訓練](../business-video/index.yml)影片 (連結] 頁面) 

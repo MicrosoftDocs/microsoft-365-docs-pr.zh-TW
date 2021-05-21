@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: 深入瞭解 Microsoft 365 訊息中心及其在變更管理中的角色。
-ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 深入瞭解 Microsoft 365 訊息中心及其角色，以追蹤新的和變更的功能和其他重要的宣告。
+ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537520"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593954"
 ---
 # <a name="message-center"></a>訊息中心
 

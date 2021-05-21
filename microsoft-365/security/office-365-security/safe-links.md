@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護，以保護其組織免受網路釣魚和其他使用惡意 URLs 攻擊的攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583577"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593566"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的安全連結
 
@@ -54,7 +54,7 @@ ms.locfileid: "52583577"
   如需電子郵件安全連結保護的詳細資訊，請參閱本文稍後的 [ [電子郵件的安全連結設定](#safe-links-settings-for-email-messages) ] 區段。
   
   > [!NOTE]
-  > 銷售連結無法在具有郵件功能的公用資料夾上運作。
+  > 安全連結無法在具有郵件功能的公用資料夾上運作。
 
 - **Microsoft Teams** (目前在點擊預覽) ： Teams 交談、群組聊天或頻道中的連結的安全連結保護也是由安全連結原則所控制。 沒有預設的安全連結原則，**因此若要在 Teams 中取得安全連結的保護，您必須建立一或多個安全連結原則**。
 

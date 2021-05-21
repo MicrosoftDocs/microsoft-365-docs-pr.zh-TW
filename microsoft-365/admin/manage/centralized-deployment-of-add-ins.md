@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 判斷您的承租人和使用者是否符合需求，讓您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464402"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593918"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷集中式部署的增益集是否適用于您的組織
 
@@ -43,7 +43,7 @@ ms.locfileid: "52464402"
 
 增益集最多可能需要24小時才能顯示所有使用者的用戶端。
   
-## <a name="requirements"></a>需求
+## <a name="before-you-begin"></a>開始之前
 
 [！注意] 增益集的集中式部署需要使用者使用 Microsoft 365 企業版 SKUs： E3/E5/F3 或商務 SKUs：商務基本、商務標準、商務進階版 (並使用組織識別碼 Office 登入) ，並具有 Exchange Online 和使用中 Exchange Online 信箱。 您的訂閱目錄必須是 in 或同盟 to Azure Active Directory。
 您可以在下列 Office 和 Exchange 中查看特定需求，或使用[集中式部署相容性檢查](#centralized-deployment-compatibility-checker)程式。

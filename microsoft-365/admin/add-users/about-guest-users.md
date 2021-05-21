@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 系統管理中心中的來賓使用者
+title: Microsoft 365 系統管理中心的來賓使用者
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,28 +19,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何在 Microsoft 365 系統管理中心中填入 [來賓使用者] 清單。
-ms.openlocfilehash: 227735c7d61aea3f48481d08ea76a96116917308
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 瞭解如何在 Microsoft 365 系統管理中心中建立具有來賓的團隊，以及如何將團隊加入為來賓。
+ms.openlocfilehash: c05a8d7e10b40c22bb041ce88748eb3dd919d83d
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579419"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593862"
 ---
-# <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 admin center 中的來賓使用者
+# <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的來賓使用者
 
-您新增至 Microsoft 團隊、SharePoint 或 Azure Active Directory 的任何客人也會新增至 Microsoft 系統管理中心的 [ **來賓使用者** ] 清單中。 客人可以參加會議、在受邀的小組中查看檔和聊天。
+您新增至 Microsoft Teams、SharePoint 或 Azure Active Directory 的任何客人也會新增至 Microsoft 系統管理中心的 [**來賓使用者**] 清單中。 客人可以參加會議、查看檔，並在受邀的 Teams 中聊天。
 當使用者顯示在 [ **來賓使用者** ] 清單中之後，您可以在其中移除其存取權。
 
-若要查看來賓使用者，請在 Microsoft 365 系統管理中心的左 nav 中，展開 [ **使用者**]，然後選擇 [ **來賓使用者**]。
+若要查看來賓使用者，請在 Microsoft 365 系統管理中心的左導覽中，展開 [**使用者**]，然後選擇 [**來賓使用者**]。
 
-## <a name="add-guests-to-teams"></a>將來賓新增至團隊
+## <a name="watch-create-a-team-with-guests"></a>觀賞：使用客人建立小組
 
-若要瞭解如何將訪客新增至小組，請參閱下列影片： <br><br>
+若要查看如何將訪客新增至 Teams，請參閱下列影片： <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-## <a name="join-a-team-as-a-guest"></a>以來賓身分加入團隊
+## <a name="watch-join-a-team-as-a-guest"></a>觀賞：將小組加入為來賓
 
 若要將小組加入為來賓，請參閱下列影片：<br><br>
 
@@ -48,17 +48,21 @@ ms.locfileid: "51579419"
 
 ## <a name="add-guests-in-azure-active-directory"></a>在 Azure Active Directory 中新增來賓
 
-若要在 Azure Active Directory 中新增來賓，請參閱 [新增來賓使用者](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
+若要在 Azure Active Directory 中新增來賓，請參閱[新增來賓使用者](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
 
-在您新增使用者之後，您也可以將其指派給群組，或讓他們存取您組織中的應用程式。 在 Azure AD 入口網站中新增使用者之後，該使用者也會列在 Microsoft 365 系統管理中心的 [ **來賓使用者** ] 頁面上。
-將使用者新增至 [ **來賓使用者** ] 清單後，即可將其 [新增至](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) Microsoft 365 系統管理中心中的群組。
+在您新增使用者之後，您也可以將其指派給群組，或讓他們存取您組織中的應用程式。 在 Azure AD 入口網站中新增使用者之後，該使用者也會列在 Microsoft 365 系統管理中心的 [**來賓使用者**] 頁面上。
+將使用者新增至 [**來賓使用者**] 清單後，即可將使用者 [加入](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center)Microsoft 365 系統管理中心的群組中。
 
 請參閱 [成批新增來賓](/azure/active-directory/b2b/tutorial-bulk-invite) ，以邀請多個來賓與您的組織共同作業。
 
-
 ## <a name="remove-a-guest"></a>移除來賓
 
-1. 在 Microsoft 365 系統管理中心中，展開 [ **使用者** ]，然後選擇 [ **來賓使用者**]。
+1. 在 Microsoft 365 系統管理中心，展開 [**使用者**]，然後選擇 [**來賓使用者**]。
 1. 在 [ **來賓使用者** ] 頁面上，選擇您要移除的使用者，然後選擇 [ **刪除使用者**]。 
 
 若要移除 Azure AD 入口網站中的使用者，請參閱 [移除來賓使用者和資源](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。
+
+## <a name="related-content"></a>相關內容
+
+[在 Microsoft 365 群組中管理來賓存取](../create-groups/manage-guest-access-in-groups.md) (文章) \
+[防止來賓加入特定的 Microsoft 365 群組或 Microsoft Teams 小組](../../solutions/per-group-guest-access.md)
