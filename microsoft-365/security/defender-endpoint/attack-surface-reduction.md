@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: da4b7fce66a6c51da61edd7c44216ee268c3156a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0852cc5af2de6767e202e3a839c498e7e008eef3
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538660"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593850"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
@@ -49,7 +49,7 @@ ms.locfileid: "52538660"
 
 ## <a name="assess-rule-impact-before-deployment"></a>在部署之前評估規則影響
 
-您可以在[威脅與弱點管理](https://docs.microsoft.com/windows/security/threat-protection/#tvm)中開啟該規則的安全性建議，以評估攻擊面降低規則可能會如何影響您的網路。
+您可以在[威脅與弱點管理](/windows/security/threat-protection/#tvm)中開啟該規則的安全性建議，以評估攻擊面降低規則可能會如何影響您的網路。
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="攻擊面降低規則的安全性 reco":::
 
@@ -69,12 +69,12 @@ ms.locfileid: "52538660"
 
 在執行下列 Windows 版本的裝置上支援警告模式：
 
-- [Windows 10，版本 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)或更新版本
-- [Windows Server，版本 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)或更新版本
+- [Windows 10，版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)或更新版本
+- [Windows Server，版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)或更新版本
 
-使用[Active 模式](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)中的即時保護時，必須執行 Microsoft Defender 防毒軟體。
+使用[Active 模式](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)中的即時保護時，必須執行 Microsoft Defender 防毒軟體。
 
-此外，請確定已安裝[Microsoft Defender 防毒軟體和反惡意軟體更新](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
+此外，請確定已安裝[Microsoft Defender 防毒軟體和反惡意軟體更新](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
 
 - 最低平臺版本需求： `4.18.2008.9`
 - 最低引擎發行需求： `1.1.17400.5`
@@ -111,12 +111,12 @@ ms.locfileid: "52538660"
 
 您可以針對執行下列任何版本與 Windows 的裝置，設定攻擊面減少規則：
 
-- Windows 10 專業版，[版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
-- Windows 10 企業版，[版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
-- Windows伺服器，[版本 1803 (半年通道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- Windows 10 專業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
+- Windows 10 企業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
+- Windows伺服器，[版本 1803 (半年通道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-雖然攻擊面降減規則不需要[Windows E5 授權](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)，但如果您有 Windows E5，就會取得高級管理功能。 這些功能只能在 Windows E5 中包含用於[端點的](microsoft-defender-endpoint.md)監控、分析和工作流程，以及[Microsoft 365 安全性中心](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center)的報表和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用「事件檢視器」和 Microsoft Defender 防毒軟體記錄檔，以查看攻擊面減少規則事件。
+雖然攻擊面降減規則不需要[Windows E5 授權](/windows/deployment/deploy-enterprise-licenses)，但如果您有 Windows E5，就會取得高級管理功能。 這些功能只能在 Windows E5 中包含用於[端點的](microsoft-defender-endpoint.md)監控、分析和工作流程，以及[Microsoft 365 安全性中心](/microsoft-365/security/defender/overview-security-center)的報表和設定功能。 Windows Professional 或 Windows E3 授權無法使用這些高級功能;不過，如果您有這些授權，您可以使用「事件檢視器」和 Microsoft Defender 防毒軟體記錄檔，以查看攻擊面減少規則事件。
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>複查 Microsoft Defender 資訊安全中心中的攻擊面降低事件
 
@@ -148,7 +148,6 @@ DeviceEvents
 |5007|設定變更時的事件|
 |1121|在組塊模式中激發規則時的事件|
 |1122|在稽核模式中觸發規則時的事件|
-|
 
 在事件記錄中，列出的攻擊面降低事件的「引擎版本」是由 Defender for Endpoint 所產生，而不是由作業系統產生。 與 Windows 10 的 Defender 已整合，所以此功能可在已安裝 Windows 10 的所有裝置上運作。
 
@@ -160,22 +159,22 @@ DeviceEvents
 
 |規則名稱|GUID|File & 資料夾排除|支援的最低作業系統|
 |---|:---:|---|---|
-|[封鎖濫用的漏洞簽章驅動程式](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本)  |
+|[封鎖濫用的漏洞簽章驅動程式](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本)  |
 |[封鎖 Adobe Reader，以建立子流程](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[封鎖所有 Office 的應用程式建立子流程](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[封鎖 Windows 本機安全性群組子系統 (lsass.exe 中的認證竊取) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[從電子郵件客戶程式和 web 郵件封鎖可執行檔內容](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[封鎖可執行檔，除非符合流行、age 或受信任的清單準則](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[封鎖可能混淆的腳本執行](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[從啟動下載的可執行內容封鎖 JavaScript 或 VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[封鎖 Office 應用程式建立可執行檔內容](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[封鎖 Office 的應用程式將程式碼注入其他進程](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[封鎖 Office 通訊應用程式建立子流程](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[透過 WMI 事件訂閱封鎖持久性](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|不支援|[Windows 10，版本 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (組建 18362) 或更高版本|
-|[封鎖來自 PSExec 和 WMI 命令的進程建立](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[封鎖從 USB 執行的不受信任和未簽署程式](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[從 Office 宏封鎖 WIN32 API 通話](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[使用勒索軟體的高級防護](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[封鎖 Windows 本機安全性群組子系統 (lsass.exe 中的認證竊取) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[從電子郵件客戶程式和 web 郵件封鎖可執行檔內容](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[封鎖可執行檔，除非符合流行、age 或受信任的清單準則](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[封鎖可能混淆的腳本執行](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[從啟動下載的可執行內容封鎖 JavaScript 或 VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[封鎖 Office 應用程式建立可執行檔內容](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[封鎖 Office 的應用程式將程式碼注入其他進程](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[封鎖 Office 通訊應用程式建立子流程](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[透過 WMI 事件訂閱封鎖持久性](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|不支援|[Windows 10，版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) (組建 18362) 或更高版本|
+|[封鎖來自 PSExec 和 WMI 命令的進程建立](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[封鎖從 USB 執行的不受信任和未簽署程式](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[從 Office 宏封鎖 WIN32 API 通話](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[使用勒索軟體的高級防護](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>封鎖濫用的漏洞簽章驅動程式
@@ -194,10 +193,10 @@ DeviceEvents
 
 所有支援 ASR 的版本都支援此規則;如下：
 
-- [Windows 10 專業版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
-- [Windows 10 企業版，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
-- [Windows Server，版本 1803 (半年通道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10 專業版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
+- [Windows 10 企業版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
+- [Windows Server，版本 1803 (半年通道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名稱： `Block abuse of exploited vulnerable signed drivers`
 
@@ -211,9 +210,9 @@ GUID:：  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 此規則的引入時間：
 
-- [Windows 10，版本1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10，版本1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名稱： `Process creation from Adobe Reader (beta)`
 
@@ -229,10 +228,10 @@ GUID:： `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 此規則的引入時間：
 
-- [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `Office apps launching child processes`
 
@@ -251,10 +250,10 @@ LSASS 驗證在 Windows 電腦上登入的使用者。 Microsoft Defender Creden
 
 此規則的引入時間：
 
-- [Windows 10，版本1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -271,10 +270,10 @@ GUID:： `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 此規則的引入時間：
 
-- [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Microsoft 端點管理員CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Microsoft 端點管理員CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
@@ -298,7 +297,7 @@ GUID:： `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 啟動不受信任或未知的可執行檔可能會是危險的，因為如果這些檔案是惡意的，就可能不會進行這種情況。
 
 > [!IMPORTANT]
-> 您必須 [啟用雲端提供的保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 才能使用此規則。
+> 您必須 [啟用雲端提供的保護](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 才能使用此規則。
 >
 > 規則會 **封鎖可執行檔，除非符合** 「具有 GUID 的流行」、「年齡」或「受信任」清單準則， `01443614-cd74-433a-b99e-2ecdc07bfc25` 且不是由系統管理員所指定的狀態。 此規則使用雲端提供的保護，定期更新其信任清單。
 >
@@ -306,10 +305,10 @@ GUID:： `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 此規則的引入時間：
 
-- [Windows 10，版本1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `Executables that don't meet a prevalence, age, or trusted list criteria`
 
@@ -325,10 +324,10 @@ GUID:： `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 此規則的引入時間：
 
-- [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `Obfuscated js/vbs/ps/macro code`
 
@@ -344,10 +343,10 @@ GUID:： `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 
 此規則的引入時間：
 
-- [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `js/vbs executing payload downloaded from Internet (no exceptions)`
 
@@ -363,10 +362,10 @@ GUID:： `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 此規則的引入時間：
 
-- [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (sccm) CB 1710 (SCCM 現在已 Microsoft Endpoint Configuration Manager) 
+- [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [System Center Configuration Manager](/configmgr/core/servers/manage/updates) (sccm) CB 1710 (SCCM 現在已 Microsoft Endpoint Configuration Manager) 
 
 Intune 名稱： `Office apps/macros creating executable content`
 
@@ -386,10 +385,10 @@ GUID:： `3B576869-A4EC-4529-8536-B80A7769E899`
 
 此規則的引入時間：
 
-- [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `Office apps injecting code into other processes (no exceptions)`
 
@@ -404,13 +403,13 @@ GUID:： `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 此規則可防止「社交工程」攻擊，並防止在 Outlook 中利用 abusing 弱點的程式碼。 它也會防止攻擊者在使用者的認證遭到破壞時可使用的[Outlook 規則和表單攻擊](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)。
 
 > [!NOTE]
-> 此規則只適用于 Outlook 和 Outlook .com。
+> 此規則會在 Outlook 中封鎖 DLP 原則提示和工具提示。 此規則只適用于 Outlook 和 Outlook .com。 
 
 此規則的引入時間：
 
-- [Windows 10，版本1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10，版本1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名稱： `Process creation from Office communication products (beta)`
 
@@ -429,8 +428,8 @@ Fileless 威脅使用各種不同的戰術來保持隱藏狀態，以避免在�
 
 此規則的引入時間：
 
-- [Windows 10，版本1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windows伺服器1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+- [Windows 10，版本1903](/windows/whats-new/whats-new-windows-10-version-1903)
+- [Windows伺服器1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Intune 名稱：無法使用
 
@@ -440,16 +439,16 @@ GUID:： `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>封鎖來自 PSExec 和 WMI 命令的進程建立
 
-此規則會封鎖透過 [PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) 和 [WMI](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) 所建立的處理常式執行。 PsExec 和 WMI 都可以遠端執行程式碼，因此惡意程式碼會 abusing 此功能以進行命令和控制，或將感染傳播到整個組織的網路。
+此規則會封鎖透過 [PsExec](/sysinternals/downloads/psexec) 和 [WMI](/windows/win32/wmisdk/about-wmi) 所建立的處理常式執行。 PsExec 和 WMI 都可以遠端執行程式碼，因此惡意程式碼會 abusing 此功能以進行命令和控制，或將感染傳播到整個組織的網路。
 
 > [!WARNING]
-> 只有在您使用 [Intune](https://docs.microsoft.com/intune) 或另一個 MDM 解決方案管理裝置時，才使用此規則。 因為此規則會封鎖 Configuration Manager 用戶端用來正確運作的 WMI 命令，所以此規則與管理的[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr)不相容。
+> 只有在您使用 [Intune](/intune) 或另一個 MDM 解決方案管理裝置時，才使用此規則。 因為此規則會封鎖 Configuration Manager 用戶端用來正確運作的 WMI 命令，所以此規則與管理的[Microsoft Endpoint Configuration Manager](/configmgr)不相容。
 
 此規則的引入時間：
 
-- [Windows 10，版本1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名稱： `Process creation from PSExec and WMI commands`
 
@@ -463,10 +462,10 @@ GUID:： `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 此規則的引入時間：
 
-- [Windows 10，版本1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `Untrusted and unsigned processes that run from USB`
 
@@ -482,10 +481,10 @@ OfficeVBA 啟用 WIN32 API 呼叫。 惡意程式碼可能會濫用這項功能�
 
 此規則的引入時間：
 
-- [Windows 10，版本1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10，版本1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `Win32 imports from Office macro code`
 
@@ -504,14 +503,14 @@ GUID:： `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 這項規則通常會在警告的另一個方面，以防止勒索軟體。
 
 > [!NOTE]
-> 您必須 [啟用雲端提供的保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 才能使用此規則。
+> 您必須 [啟用雲端提供的保護](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 才能使用此規則。
 
 此規則的引入時間：
 
-- [Windows 10，版本1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows伺服器，版本1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10，版本1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows伺服器，版本1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Intune 名稱： `Advanced ransomware protection`
 
@@ -519,9 +518,9 @@ Configuration Manager 名稱： `Use advanced protection against ransomware`
 
 GUID:： `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [受攻擊面縮小常見問題集](attack-surface-reduction-faq.md)
 - [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
 - [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
-- [與其他防病毒/反惡意程式碼解決方案的 Microsoft Defender 防毒軟體相容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+- [與其他防病毒/反惡意程式碼解決方案的 Microsoft Defender 防毒軟體相容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

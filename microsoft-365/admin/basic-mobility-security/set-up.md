@@ -17,17 +17,17 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 設定基本行動性和安全性，以保護和管理使用者的行動裝置。
-ms.openlocfilehash: 2f74307d41d83dd2e6fce2b68283ce0966e850e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 設定基本行動性和安全性，以利用遠端擦除裝置等動作來保護和管理使用者的行動裝置。
+ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906237"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593414"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>設定基本行動與安全性
 
-Microsoft 365 的內建基本行動性和安全性可協助您保護和管理使用者的行動裝置，例如 Iphone、Ipad、Androids 和 Windows phone。 您可以建立及管理裝置安全性原則、遠端抹除裝置資料，以及檢視詳細的裝置報告。
+Microsoft 365 內建的基本行動性和安全性，可協助您保護和管理使用者的行動裝置，例如 iphone、ipad、Androids 和 Windows 電話。 您可以建立及管理裝置安全性原則、遠端抹除裝置資料，以及檢視詳細的裝置報告。
 
 Have questions? 如需協助解決常見問題的常見問題，請參閱 [基本行動性及安全性常見問題 (常見問題) ](frequently-asked-questions.md)。 請注意，您無法使用委派的系統管理員帳戶來管理基本行動性和安全性。 如需詳細資訊，請參閱 [合作夥伴：提供委派的管理](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e)。 
 
@@ -47,15 +47,15 @@ Have questions? 如需協助解決常見問題的常見問題，請參閱 [基�
 
 ### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>步驟1： (必要) 設定網域以取得基本行動性和安全性
 
-如果您沒有與 Microsoft 365 相關聯的自訂網域，或者您不是管理 Windows 裝置，則可以略過本節。 否則，您必須在您的 DNS 主機上新增網域的 DNS 記錄。 如果您已新增記錄，請在使用 Microsoft 365 設定網域時，全部都是設定。 在您新增記錄之後，您組織中使用您自訂網域的電子郵件地址登入之 Windows 裝置的 Microsoft 365 使用者會重新導向，以登錄基本行動性和安全性。
+如果您沒有與 Microsoft 365 相關聯的自訂網域，或者您不是管理 Windows 裝置，則可以略過本節。 否則，您必須在您的 DNS 主機上新增網域的 DNS 記錄。 如果您已新增記錄，則在使用 Microsoft 365 設定網域時，您就會全部設定。 在您新增記錄之後 Microsoft 365，會重新導向組織中使用您自訂網域的電子郵件地址登入之 Windows 裝置的使用者，以註冊基本行動性和安全性。
 
-需要設定記錄的協助嗎？ 尋找您的網域註冊機構，並選取 [註冊機構名稱]，以移至 [[新增 dns 記錄] 以連接您的網域](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)時，在清單中建立 dns 記錄的逐步說明。 使用這些指示來建立簡化的 Windows 登記中所述的 CNAME 記錄， [而不使用 AZURE AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)。
+需要設定記錄的協助嗎？ 尋找您的網域註冊機構，並選取 [註冊機構名稱]，以移至 [[新增 dns 記錄] 以連接您的網域](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)時，在清單中建立 dns 記錄的逐步說明。 使用這些指示來建立簡化 Windows 登記中所述的 CNAME 記錄，[而不使用 Azure AD 進階版](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)。
 
 新增這兩個 CNAME 記錄後，請回到安全性 & 合規性中心，然後移至 [**資料遺失防護**  >  **裝置管理**   ] 以完成下一個步驟。
 
 ### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>步驟2： (必要) 設定 iOS 裝置的 APNs 憑證
 
-若要管理的 iOS 裝置如 iPad 和 Iphone，您必須建立 APNs 憑證。
+若要管理 iPad 和 iphone 等 iOS 裝置，您必須建立 APNs 憑證。
 
 1. 使用您的全域系統管理員帳戶登入 Microsoft 365。
 
@@ -90,7 +90,7 @@ Have questions? 如需協助解決常見問題的常見問題，請參閱 [基�
 
 ### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>步驟3： (建議) 設定多重要素驗證
 
-由於要求第二種驗證格式，MFA 可協助您保護登入 Microsoft 365 以進行行動裝置註冊。 使用者在輸入其工作帳戶密碼後，必須在其行動裝置上認可來電、文字訊息或代理程式更新。 他們只能在第二個驗證表單完成後註冊其裝置。 在使用基本行動性和安全性的使用者裝置登錄之後，使用者只可以存取其工作帳戶的 Microsoft 365 資源。
+MFA 要求使用第二種形式的驗證，以協助保護登入 Microsoft 365 以進行行動裝置註冊。 使用者在輸入其工作帳戶密碼後，必須在其行動裝置上認可來電、文字訊息或代理程式更新。 他們只能在第二個驗證表單完成後註冊其裝置。 在使用基本行動性和安全性的使用者裝置註冊後，使用者只可以存取其工作帳戶的 Microsoft 365 資源。
 
 若要瞭解如何在 Azure AD 入口網站中開啟 MFA，請參閱 [設定多重要素驗證](../security-and-compliance/set-up-multi-factor-authentication.md)。
 
@@ -112,7 +112,7 @@ Have questions? 如需協助解決常見問題的常見問題，請參閱 [基�
 
 > [!TIP]
 >
-> - 當您建立新的原則時，您可能會想要設定原則，以允許在使用者裝置與原則不相容的情況下進行存取和報告原則侵犯。 這可讓您查看原則所影響的行動裝置數目，而不會封鎖對 Microsoft 365 的存取。
+> - 當您建立新的原則時，您可能會想要設定原則，以允許在使用者裝置與原則不相容的情況下進行存取和報告原則侵犯。 這可讓您查看原則所影響的行動裝置數目，而不會封鎖 Microsoft 365 的存取。
 >
 > - 在您將新的原則部署給組織中的每個人之前，我們建議您在少量使用者所使用的裝置上進行測試。
 >
@@ -120,14 +120,15 @@ Have questions? 如需協助解決常見問題的常見問題，請參閱 [基�
 
 ## <a name="make-sure-users-enroll-their-devices"></a>請確定使用者已註冊其裝置
 
-在您建立並部署行動裝置管理原則之後，組織中的每一個已授權的 Microsoft 365 使用者在下次從其行動裝置登入 Microsoft 365 時，該使用者就會收到註冊郵件。 他們必須先完成註冊和啟用步驟，才能存取 Microsoft 365 電子郵件和檔。 如需詳細資訊，請參閱 [使用基本行動性和安全性註冊行動裝置](enroll-your-mobile-device.md)。
+在您建立並部署行動裝置管理原則之後，組織中的每個授權 Microsoft 365 使用者在下次從其行動裝置登入 Microsoft 365 時，會套用該原則的註冊郵件。 他們必須先完成註冊和啟用步驟，才能存取 Microsoft 365 電子郵件和檔。 如需詳細資訊，請參閱 [使用基本行動性和安全性註冊行動裝置](enroll-your-mobile-device.md)。
 
 > [!IMPORTANT]
-> 如果註冊程式不支援使用者的慣用語言，使用者可能會在其行動裝置上以其他語言接收註冊通知和步驟。 在行動裝置上，目前不支援所有 Microsoft 365 中支援的語言註冊程式。
+> 如果註冊程式不支援使用者的慣用語言，使用者可能會在其行動裝置上以其他語言接收註冊通知和步驟。 在行動裝置上，目前不支援 Microsoft 365 中所有支援的語言註冊程式。
 
-必須有 Android 或 iOS 裝置的使用者，才能安裝公司入口網站應用程式作為註冊過程的一部分。
+需要使用 Android 或 iOS 裝置的使用者，才能安裝公司入口網站應用程式做為註冊過程的一部分。
 
-## <a name="related-topics"></a>相關主題
+## <a name="related-content"></a>相關內容
 
-[基本行動與安全性的功能](capabilities.md)<br/>
-[在基本行動性和安全性中建立裝置安全性原則](create-device-security-policies.md)
+[基本行動及安全性的功能](capabilities.md) (文章) 
+
+[在基本行動及安全性 (文章) 中建立裝置安全性原則](create-device-security-policies.md)

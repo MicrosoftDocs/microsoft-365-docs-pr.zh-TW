@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 42ab124f3026cf0b7441edf44c0e6433be5f0ecd
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e7148e666b7d96d6de328089fccc4bb444b9f502
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583663"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594002"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 
@@ -63,9 +63,9 @@ ms.locfileid: "52583663"
 ||[套用應用程式保護原則 (APP) 資料保護](#apply-app-data-protection-policies)|每個平臺一個 Intune 應用程式保護原則 (Windows、iOS/iPadOS、Android) 。|Microsoft 365 E3 或 E5|
 ||[需要核准的應用程式和應用程式保護](#require-approved-apps-and-app-protection)|使用 iOS、iPadOS 或 Android 強制執行手機和平板電腦行動裝置應用程式的保護。|Microsoft 365 E3 或 E5|
 ||[定義裝置合規性原則](#define-device-compliance-policies)|每個平臺一個原則。|Microsoft 365 E3 或 E5|
-||[需要相容的電腦](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|使用 Windows 或 MacOS 強制進行 Intune 管理的電腦。|Microsoft 365 E3 或 E5|
+||[需要相容的電腦](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|使用 Windows 或 macOS 強制執行電腦的 Intune 管理。|Microsoft 365 E3 或 E5|
 |**敏感度**|[當登入風險為 *低*、*中* 或 *高* 時，需要 MFA](#require-mfa-based-on-sign-in-risk)||使用 E5 安全性附加元件 Microsoft 365 E5 或 Microsoft 365 E3|
-||[需要相容 *的電腦和* 行動裝置](#require-compliant-pcs-and-mobile-devices)|在兩部電腦上同時強制執行 Intune 管理 (Windows 或 MacOS) 和手機或平板電腦 (iOS、iPadOS 或 Android) 。|Microsoft 365 E3 或 E5|
+||[需要相容 *的電腦和* 行動裝置](#require-compliant-pcs-and-mobile-devices)|同時在兩部電腦上強制執行 Intune 管理 (Windows 或 macOS) 和手機或平板電腦 (iOS、iPadOS 或 Android) 。|Microsoft 365 E3 或 E5|
 |**高管制**|[*永遠* 需要 MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 或 E5|
 |
 

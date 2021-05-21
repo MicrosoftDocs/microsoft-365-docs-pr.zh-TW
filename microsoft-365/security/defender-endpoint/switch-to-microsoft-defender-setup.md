@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: e8abf10bd036b5e6e76d08e86ab4963629d2f994
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2ea8cc323220024406a49eda8d6a7c0b42ca71a4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537988"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594046"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>切換至 Microsoft Defender for Endpoint-階段2：設定
 
@@ -41,35 +41,31 @@ ms.locfileid: "52537988"
 **歡迎使用 [切換到 Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)的安裝階段**。 此階段包含下列步驟：
 
 1. [在您的端點上重新安裝/啟用 Microsoft Defender 防毒軟體](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。
-
 2. [設定端點的 Defender](#configure-defender-for-endpoint)。
-
 3. [將用於端點的 Defender 新增至現有解決方案的排除清單](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution)。
-
 4. [將現有的解決方案新增至 Microsoft Defender 防毒軟體的排除清單](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus)。
-
 5. [設定您的裝置群組、裝置集合及組織單位](#set-up-your-device-groups-device-collections-and-organizational-units)。
-
 6. [設定反惡意程式碼原則和即時保護](#configure-antimalware-policies-and-real-time-protection)。
 
 
 ## <a name="reinstallenable-microsoft-defender-antivirus-on-your-endpoints"></a>在您的端點上重新安裝/啟用 Microsoft Defender 防毒軟體
 
-在某些版本的 Windows 上，當未安裝您的非 Microsoft 防毒軟體/反惡意軟體解決方案時，可能會卸載或停用 Microsoft Defender 防毒軟體。 如需詳細資訊，請參閱[Microsoft Defender 防毒軟體相容性](microsoft-defender-antivirus-compatibility.md)。
+在某些版本的 Windows 上，當您安裝非 Microsoft 防毒軟體/反惡意軟體解決方案時，可能會卸載或停用 Microsoft Defender 防毒軟體。 除非裝置架至 Defender for Endpoint Microsoft Defender 防毒軟體，否則不會在 active 模式中以非 Microsoft 防病毒解決方案的模式執行。 若要深入瞭解，請參閱[Microsoft Defender 防毒軟體相容性](microsoft-defender-antivirus-compatibility.md)。
 
-在 Windows 用戶端上，當安裝非 Microsoft 防毒軟體/反惡意軟體解決方案時，會自動停用 Microsoft Defender 防毒軟體，直到這些裝置架至 Defender for Endpoint 為止。 當用戶端端點架至 Defender for Endpoint 時，除非卸載非 Microsoft 防病毒解決方案，否則 Microsoft Defender 防毒軟體會進入被動模式。 Microsoft Defender 防毒軟體應該仍然安裝，但在遷移程式的這一點可能會停用。 除非已卸載 Microsoft Defender 防毒軟體，否則您不需要對 Windows 用戶端採取任何動作。
+現在，您已計畫切換至 Defender for Endpoint，您可能需要採取一定的步驟來重新安裝或啟用 Microsoft Defender 防毒軟體。 
 
-在 Windows 伺服器上，當安裝非 Microsoft 防毒軟體/反惡意程式碼時，會以手動方式停用 Microsoft Defender 防毒軟體 (如果未卸載) 。 下列工作可協助確保在 Windows 伺服器上安裝 Microsoft Defender 防毒軟體，並將其設定為被動模式。
 
-- 只有在必要時[，才 Windows Server (上設定 DisableAntiSpyware 為 false](#set-disableantispyware-to-false-on-windows-server)) 
+| 端點類型  | 處理方式  |
+|---------|---------|
+| Windows 用戶端 (如執行 Windows 10 的端點)      | 一般說來，除非已卸載 Microsoft Defender 防毒軟體) ，否則您不需要對 Windows 用戶端執行任何動作 (。 原因如下： <p>Microsoft Defender 防毒軟體應該仍然安裝，但在遷移程式的這一點很可能會停用。<p> 安裝非 Microsoft 防毒軟體/反惡意軟體方案，且用戶端尚未架至 Defender for Endpoint 時，會自動停用 Microsoft Defender 防毒軟體。 <p>稍後，當用戶端端點架至 Defender for Endpoint 時，如果這些端點執行的是非 Microsoft 防病毒方案，則 Microsoft Defender 防毒軟體會進入被動模式。 <p>如果卸載非 Microsoft 防病毒方案，Microsoft Defender 防毒軟體會自動進入主動模式。  |
+|Windows 伺服器     | 在 Windows Server 上，您必須重新安裝 Microsoft Defender 防毒軟體，並手動將其設為被動模式。 原因如下： <p>在 Windows 伺服器上，當安裝非 microsoft 防毒軟體/反惡意軟體時，Microsoft Defender 防毒軟體無法與非 microsoft 防病毒解決方案一起執行。 在這種情況下，會以手動方式停用或卸載 Microsoft Defender 防毒軟體。 <p>若要在 Windows 伺服器上重新安裝或啟用 Microsoft Defender 防毒軟體，請執行下列 taks： <p>- 只有在必要時[，才 Windows Server (上設定 DisableAntiSpyware 為 false](#set-disableantispyware-to-false-on-windows-server)) <br/>- [重新安裝 Windows Server 上的 Microsoft Defender 防毒軟體](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [在 Windows 伺服器上將 Microsoft Defender 防毒軟體設定為被動模式](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)       |
 
-- [重新安裝 Windows Server 上的 Microsoft Defender 防毒軟體](#reinstall-microsoft-defender-antivirus-on-windows-server) 
 
-- [在 Windows 伺服器上將 Microsoft Defender 防毒軟體設定為被動模式](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
+若要深入瞭解使用非 Microsoft 防防毒保護的 Microsoft Defender 防毒軟體狀態，請參閱[Microsoft Defender 防毒軟體相容性](microsoft-defender-antivirus-compatibility.md)。
 
 ### <a name="set-disableantispyware-to-false-on-windows-server"></a>在 Windows Server 上將 DisableAntiSpyware 設定為 false
 
-過去使用的[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)登錄機碼停用 Microsoft Defender 防毒軟體，並部署其他防病毒產品（例如 McAfee、Symantec 或其他）。 一般說來，您的 Windows 裝置和端點上不應該使用此登錄機碼，不過，如果您已 `DisableAntiSpyware` 設定，以下是將其值設為 false 的方式：
+過去使用的[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)登錄機碼停用 Microsoft Defender 防毒軟體，並部署其他防病毒產品（例如 McAfee、Symantec 或其他）。 **一般說來，您的 Windows 裝置和端點上不應該使用此登錄機碼，** 不過，*如果您已* `DisableAntiSpyware` 設定，以下是將其值設為 false 的方式：
 
 1. 在 Windows 伺服器裝置上，開啟 [登錄編輯程式]。
 
@@ -100,11 +96,11 @@ ms.locfileid: "52537988"
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
-    > [!NOTE]
-    > 在執行 PS 的任務順序中使用 DISM 命令時，需要下列 cmd.exe 路徑。
-    > 範例：<br/>
-    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
-    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   > [!NOTE]
+   > 在執行 PS 的任務順序中使用 DISM 命令時，需要下列 cmd.exe 路徑。
+   > 範例：<br/>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. 若要驗證 Microsoft Defender 防毒軟體是否正在執行中，請使用下列 PowerShell Cmdlet： <br/>
    `Get-Service -Name windefend`
@@ -127,11 +123,14 @@ ms.locfileid: "52537988"
 
 如果您有 Windows Server 2016 執行的端點，您就無法在非 Microsoft 防毒軟體/反惡意軟體方案旁執行 Microsoft Defender 防毒軟體。 Microsoft Defender 防毒軟體無法在 Windows Server 2016 上以被動模式執行。 在此情況下，您將需要卸載非 Microsoft 防病毒/反惡意程式碼解決方案，然後改為安裝/啟用 Microsoft Defender 防毒軟體。 若要深入瞭解，請參閱 [防病毒解決方案與 Defender For Endpoint 的相容性](microsoft-defender-antivirus-compatibility.md)。
 
-如果您正在使用 Windows Server 2016，但在啟用 Microsoft Defender 防毒軟體時出現問題，請使用下列 PowerShell Cmdlet：
+如果您正在使用 Windows Server 2016，但在啟用 Microsoft Defender 防毒軟體時出現問題，請遵循下列步驟：
 
-`mpcmdrun -wdenable`
+1. 在裝置上，以系統管理員身分開啟 PowerShell。
 
-如需詳細資訊，請參閱[Windows Server 上的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-on-windows-server.md)。
+2. 輸入下列 PowerShell Cmdlet： `mpcmdrun -wdenable`
+
+> [!TIP]
+> 如需詳細資訊，請參閱[Windows Server 上的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-on-windows-server.md)。
 
 ## <a name="configure-defender-for-endpoint"></a>設定端點的 Defender
 
@@ -171,14 +170,13 @@ ms.locfileid: "52537988"
 
 ### <a name="keep-the-following-points-about-exclusions-in-mind"></a>請留意有關排除的下列幾點
 
-當您在[Microsoft Defender 防毒軟體掃描](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)時新增排除專案時，應新增路徑和程式排除。 請牢記下列幾點：
+當您在[Microsoft Defender 防毒軟體掃描](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)時新增排除專案時，應新增路徑和程式排除。 
+
+請牢記下列幾點：
 
 - *路徑排除* 排除特定檔案，以及這些檔案存取的任何檔案。
-
 - *處理常式排除* 排除程式所觸及的任何程式，但不會排除該進程本身。
-
 - 使用完整路徑，而不是僅以其名稱來列出進程排除。  (僅限名稱的方法是較低的安全性。 ) 
-
 - 如果您會列出每個可執行檔 (.exe) 做為路徑排除和程式排除的兩個專案，則會排除該程式和其接觸的任何內容。
 
 
@@ -197,13 +195,12 @@ ms.locfileid: "52537988"
 使用 Configuration Manager 和您的裝置集合 (s) 設定反惡意程式碼原則。
 
 - 請參閱[在 Configuration Manager 中建立及部署 Endpoint Protection 的反惡意程式碼原則](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)。
-
 - 當您建立及設定反惡意程式碼原則時，請務必複查 [即時保護設定](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) ，並 [在第一次看到封鎖時啟用封鎖](configure-block-at-first-sight-microsoft-defender-antivirus.md)。
 
 > [!TIP]
 > 您可以在架的組織裝置之前部署原則。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 **恭喜**！ 您已完成 [切換至 Defender For Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)的安裝階段！
 

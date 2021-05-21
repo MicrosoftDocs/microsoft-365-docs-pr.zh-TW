@@ -1,5 +1,5 @@
 ---
-title: 透過群組原則將 Windows 10 裝置集成至 Microsoft Defender for Endpoint
+title: 透過群組原則從 Microsoft Defender for Endpoint to to Windows 10 板載裝置
 description: 使用群組原則在 Windows 10 裝置上部署設定套件，使其可架至服務。
 keywords: 使用群組原則、裝置管理、設定 Microsoft Defender for Endpoint 裝置、板載 Microsoft Defender for Endpoint 裝置及群組原則來設定裝置
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b8f56c8f2ba92073ea7ae9464f199d9c900b932f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 81a3b41fb8e38a224a030571093b2145d2efb3d4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933958"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593426"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用群組原則的板載 Windows 10 裝置 
 
@@ -38,21 +38,21 @@ ms.locfileid: "51933958"
 
 
 > [!NOTE]
-> 若要使用群組原則 (GP) 更新若要部署套件，您必須在 Windows Server 2008 R2 或更新版本上。
+> 若要使用群組原則 (GP) 更新若要部署套件，您必須位於 Windows Server 2008 R2 或更新版本。
 > 
-> 若為 Windows Server 2019，您可能需要使用「群組原則」偏好建立之 XML 檔案的 NT AUTHORITY\SYSTEM 取代 NT AUTHORITY\Well-Known-System-Account。
+> 針對 Windows Server 2019，您可能需要將 nt AUTHORITY\Well-Known-System-Account 取代為群組原則喜好設定之 XML 檔案的 nt AUTHORITY\SYSTEM。
 
 ## <a name="onboard-devices-using-group-policy"></a>使用群組原則將裝置上線
 
 [![顯示各種部署路徑的 PDF 影像](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
-請取出 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  或  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) ，以查看部署 Defender for Endpoint 的各種路徑。 
+請取出[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) ，以查看部署 Defender for Endpoint 的各種路徑。 
 
 
 
-1. 從 [服務上架] 嚮導中，開啟已下載的 GP configuration 套件 .zip 檔案 (*WindowsDefenderATPOnboardingPackage.zip*) 。 您也可以從 [Microsoft Defender Security Center](https://securitycenter.windows.com/)取得套件：
+1. 從服務上架嚮導中，開啟 (*WindowsDefenderATPOnboardingPackage.zip*) 的 GP configuration package .zip file。 您也可以從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得套件：
  
-    1. 在功能窗格中，選取 [**設定**] [上  >  **架**]。
+    1. 在功能窗格中，選取 [**設定** 上  >  **架**]。
 
     1. 選取 [Windows 10] 做為作業系統。
     
@@ -60,13 +60,13 @@ ms.locfileid: "51933958"
     
     1. 按一下 [ **下載套件** ] 並儲存 .zip 檔案。
 
-2. 將 .zip 檔案的內容解壓縮到可供裝置存取的共用唯讀位置。 您應該會有一個稱為 *OptionalParamsPolicy* 的資料夾，以及檔案 *WindowsDefenderATPOnboardingScript .cmd*。
+2. 將 .zip 檔案的內容解壓至共用的唯讀位置，可供裝置存取。 您應該會有一個稱為 *OptionalParamsPolicy* 的資料夾，以及檔案 *WindowsDefenderATPOnboardingScript .cmd*。
 
 3. 開啟「 [群組原則管理主控台](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
 
 4. 在 [ **群組原則管理編輯器**] 中，移至 [ **電腦** 設定]、[ **喜好** 設定] 及 [控制台 **設定**]。
 
-5. 以滑鼠右鍵按一下 [ **排程任務**]，指向 [ **新增**]，然後按一下 [ **立即工作 (至少為 Windows 7)**。
+5. 以滑鼠右鍵按一下 [**排程任務**]，指向 [**新增**]，然後按一下 [**立即工作 (至少 Windows 7)**。
 
 6. 在開啟的 **任務** 視窗中，移至 [**一般**] 索引標籤。在 [**安全性選項**] 底下，按一下 [**變更使用者或群組** 和類型系統]，然後按一下 [**檢查名稱** 然後按一下 **[確定]** NT AUTHORITY\SYSTEM 會顯示為執行工作時所用的使用者帳戶。
 
@@ -80,7 +80,7 @@ ms.locfileid: "51933958"
 > 在裝置上架後，您可以選擇執行偵測測試，以確認裝置已正確架至服務。 如需詳細資訊，請參閱 [在新的架 Defender For Endpoint 裝置上執行偵測測試](run-detection-test.md)。
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>其他 Defender for Endpoint configuration 設定
-針對每個裝置，您可以使用 Microsoft Defender Security Center 提交檔案進行深入分析時，判斷是否可以從裝置收集範例。
+針對每個裝置，您可以使用 Microsoft Defender 資訊安全中心提交檔案進行深入分析時，判斷是否可以從裝置收集範例。
 
 您可以使用「群組原則」 (GP) 設定設定，例如用於 deep analysis 功能的範例共用設定。
 
@@ -103,7 +103,7 @@ ms.locfileid: "51933958"
 
 4.  按一下 [ **原則**]，然後按一下 [系統 **管理範本**]。
 
-5.  按一下 [ **windows 元件** ]，然後按一下 [ **windows Defender ATP**]。
+5.  按一下 [ **Windows 元件**]，然後 **Windows Defender SmartScreen**]。
 
 6.  選擇啟用或停用裝置的範例共用。
 
@@ -115,11 +115,11 @@ ms.locfileid: "51933958"
 
 ### <a name="update-endpoint-protection-configuration"></a>更新 endpoint protection 設定
 
-設定上架腳本後，請繼續編輯相同的群組原則，以新增 endpoint protection 設定。 從執行 Windows 10 或伺服器2019的系統執行群組原則編輯，以確保您具備所有必要的 Microsoft Defender 防病毒功能。 您可能需要關閉並重新開啟群組原則物件，以登錄 Defender ATP 設定設定。
+設定上架腳本後，請繼續編輯相同的群組原則，以新增 endpoint protection 設定。 從執行 Windows 10 或伺服器2019的系統執行群組原則編輯，以確保具備所有必要的 Microsoft Defender 防毒軟體功能。 您可能需要關閉並重新開啟群組原則物件，以登錄 Defender ATP 設定設定。
 
 所有原則都位於 `Computer Configuration\Policies\Administrative Templates` 。
 
-**原則位置：** \Windows \WINDOWS Defender ATP
+**原則位置：** \ Windows 元件 \ Windows Defender SmartScreen *
 
 原則 | 設定 
 :---|:---
@@ -127,7 +127,7 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 
 <br/>
 
-**原則位置：**  \Windows \Windows Defender 防毒軟體
+**原則位置：** \ Windows 元件 \ Microsoft Defender 防毒軟體
 
 原則 | 設定 
 :---|:---
@@ -135,7 +135,7 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 
 <br/>
 
-**原則位置：** \Windows \Windows Defender Antivirus\MAPS
+**原則位置：** \ Windows 元件 \ Microsoft Defender 防毒軟體 \MAPS
 
 原則 | 設定 
 :---|:---
@@ -144,29 +144,29 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 
 <br/>
 
-**原則位置：** \Windows \Windows Defender Antivirus\Real-time Protection
+**原則位置：** \ Windows 元件 \ Microsoft Defender 防毒軟體 \Real-time 保護
 
 原則 | 設定 
 :---|:---
 關閉即時保護|已停用
-開啟行為監控|Enabled
-掃描所有已下載的檔案和附件|Enabled
-監視電腦上的檔案和程式活動|Enabled
+開啟行為監控|已啟用
+掃描所有已下載的檔案和附件|已啟用
+監視電腦上的檔案和程式活動|已啟用
 
 <br/>
 
-**原則位置：**  \Windows \Windows Defender Antivirus\Scan
+**原則位置：** \ Windows Components\Microsoft Defender AntivirusScan
 
 這些設定會設定定期掃描端點。 建議您執行每週的快速掃描（效能允許）。
 
 原則 | 設定 
 :---|:---
-執行排程掃描之前，請先檢查是否有最新的病毒和間諜軟體安全性情報 |Enabled
+執行排程掃描之前，請先檢查是否有最新的病毒和間諜軟體安全性情報 |已啟用
 
 
 <br/>
 
-**原則位置：** \Windows \Windows Defender Antivirus\Windows defender Exploit Guard\Attack Surface 減低
+**原則位置：** \ Windows 元件 \ Microsoft Defender 防毒軟體 \ Microsoft Defender 惡意探索防護 \Attack 表面減少
 
 取得目前攻擊面減少 Guid 的清單，以 [自訂攻擊面降低規則](customize-attack-surface-reduction.md)
 
@@ -196,7 +196,7 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 > [!NOTE]
 > 上架和脫離的原則不得同時部署在相同的裝置上，否則會造成無法預期的衝突。
 
-1. 從 [Microsoft Defender Security Center](https://securitycenter.windows.com/)取得脫離套件：
+1. 從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得脫離套件：
 
     1. 在功能窗格中，選取 [**設定**  >  **脫離**]。
 
@@ -206,7 +206,7 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 
     1. 按一下 [ **下載套件** ] 並儲存 .zip 檔案。
 
-2. 將 .zip 檔案的內容解壓縮到可供裝置存取的共用唯讀位置。 您應該有一個名為 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-mm-dd* 的檔案。
+2. 將 .zip 檔案的內容解壓至共用的唯讀位置，可供裝置存取。 您應該有一個名為 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-mm-dd* 的檔案。
 
 3. 開啟「 [群組原則管理主控台](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
 
@@ -230,7 +230,7 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 使用群組原則時，沒有任何選項可監視裝置上的原則部署。 監控可以直接在入口網站上進行，也可以使用不同的部署工具進行。
 
 ## <a name="monitor-devices-using-the-portal"></a>使用入口網站監視裝置
-1. 移至 [Microsoft Defender 安全中心](https://securitycenter.windows.com/)。
+1. 移至[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)。
 2. 按一下 [ **裝置清單**]。
 3. 驗證裝置是否出現。
 

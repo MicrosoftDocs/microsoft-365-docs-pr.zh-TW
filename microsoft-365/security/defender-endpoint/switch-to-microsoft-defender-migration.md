@@ -1,5 +1,5 @@
 ---
-title: 將非 Microsoft 端點解決方案切換至 Microsoft Defender for Endpoint
+title: 將非 Microsoft endpoint protection 切換為 Microsoft Defender for Endpoint
 description: 將參數設為 Microsoft Defender for Endpoint。 如需概述，請閱讀本文。
 keywords: 遷移，windows defender advanced endpoint protection，針對端點，edr
 search.product: eADQiWindows 10XVcnh
@@ -19,23 +19,23 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 013205a1b5b9db204f626a6fe6ab76ad07378558
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2a2b78089486b432ebf9492de26396b2bb96f94d
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538000"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593498"
 ---
-# <a name="make-the-switch-from-a-non-microsoft-endpoint-solution-to-microsoft-defender-for-endpoint"></a>將非 Microsoft 端點解決方案切換至 Microsoft Defender for Endpoint
+# <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>將非 Microsoft endpoint protection 切換為 Microsoft Defender for Endpoint
 
-如果您打算將非 Microsoft endpoint protection 解決方案切換至 [Microsoft defender for](microsoft-defender-endpoint.md) Endpoint (Defender for endpoint) ，就是正確的位置。 使用本文做為指南。
+如果您想要從您的非 Microsoft endpoint protection 切換至 [Microsoft defender for](microsoft-defender-endpoint.md) Endpoint (defender for endpoint) ，您就在正確的位置。 使用本文做為指南。
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="遷移至端點的 Defender 的概覽":::
 
-當您將參數切換到 Endpoint 時，您會在主動模式中以非 Microsoft 方案開始，在被動模式中設定 Defender for endpoint，並以 endpoint to to Endpoint，然後將 Defender 設定為使用模式，並移除非 Microsoft 解決方案。
+當您將參數切換到 Endpoint 時，您會從以主動模式運作的非 Microsoft 方案開始，以被動模式設定 Defender for Endpoint，以 [在使用中的 Defender] 設定為 [使用的端點]，然後移除非 Microsoft 解決方案。
 
 > [!TIP]
 > - 如果您目前使用 McAfee 端點安全性 (McAfee) ，請參閱 [從 McAfee 遷移至 Defender For Endpoint](mcafee-to-microsoft-defender-migration.md)。
@@ -43,15 +43,15 @@ ms.locfileid: "52538000"
 
 ## <a name="the-migration-process"></a>遷移程式
 
-當您切換至 Defender for Endpoint 時，請遵循可以分為三個階段的程式，如下表所述：
+將端點遷移至 Defender 的程式可以分為三個階段，如下表所述：
 
 ![遷移階段-準備、安裝、板載](images/phase-diagrams/migration-phases.png)
 
 |階段 |描述 |
 |--|--|
-|[準備遷移](switch-to-microsoft-defender-prepare.md) |在 [[**準備**] 階段](switch-to-microsoft-defender-prepare.md)中，您會更新組織的裝置、取得「端點的 Defender」、規劃您的角色和許可權，以及授與 Microsoft Defender 資訊安全中心的存取權。 您也可以設定裝置 proxy 和網際網路設定，以啟用組織裝置和 Defender for Endpoint 之間的通訊。 |
-|[設定端點的 Defender](switch-to-microsoft-defender-setup.md) |在 [**安裝** 階段](switch-to-microsoft-defender-setup.md)期間，您可以啟用 Microsoft Defender 防毒軟體，並將其設定為被動模式。 您也可以針對 Microsoft Defender 防毒軟體和現有的 endpoint protection 解決方案，設定 & 排除的設定。 接著，您會建立裝置群組、集合及組織單位。 最後，您可以設定反惡意程式碼原則和即時保護設定。|
-|[Endpoint to Defender 的板載](switch-to-microsoft-defender-onboard.md) |在 [第 **板** 階段](switch-to-microsoft-defender-onboard.md)中，您將裝置上架到 Defender for endpoint，確認 Microsoft Defender 防毒軟體是以被動模式執行，並確認您的端點正在與適用于 Endpoint 的 defender 進行通訊。 然後，您會卸載現有的 endpoint protection 方案，並確定該 Endpoint for Endpoint 可以正確運作。 |
+|[準備遷移](switch-to-microsoft-defender-prepare.md) |[在 **準備** 階段](switch-to-microsoft-defender-prepare.md)內： <p>1. 更新您組織的裝置。 <p>2. 取得適用于端點的 Defender。 <p>3. 規劃您的角色和許可權，並授與 Microsoft Defender 資訊安全中心的存取權。 <p>4. 設定您的裝置 proxy 和網際網路設定，以啟用組織裝置和 Defender for Endpoint 之間的通訊。 |
+|[設定端點的 Defender](switch-to-microsoft-defender-setup.md) |在 [**安裝** 階段](switch-to-microsoft-defender-setup.md)內： <p>1. 啟用/重新安裝 Microsoft Defender 防毒軟體。 <p>2. 設定用於端點的 Defender。 <p>3. 將用於端點的 Defender 新增至現有解決方案的排除清單。 <p>4. 將現有的解決方案新增至 Microsoft Defender 防毒軟體的排除清單。 <p>5. 設定您的裝置群組、集合及組織單位。 <p>6. 設定反惡意程式碼原則和即時保護設定。|
+|[Endpoint to Defender 的板載](switch-to-microsoft-defender-onboard.md) |在 [第 **板** 階段](switch-to-microsoft-defender-onboard.md)期間： <p>1. 將裝置板載 to Defender for Endpoint。 <p>2. 執行偵測測試。 <p>3. 確認 Microsoft Defender 防毒軟體以被動模式執行。 <p>4. 取得 Microsoft Defender 防毒軟體的更新。 <p>5. 卸載現有的 endpoint protection 解決方案。 <p>6. 確定 Endpoint for Endpoint 可以正確運作。 |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中包含的內容？
 
@@ -70,6 +70,6 @@ ms.locfileid: "52538000"
 
 **想要深入瞭解？請參閱 [適用于 Endpoint 的 Defender](microsoft-defender-endpoint.md)。**
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 - 繼續進行 [遷移的準備工作](switch-to-microsoft-defender-prepare.md)。
