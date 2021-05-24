@@ -23,13 +23,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: 了解網域及其相關聯的 DNS 記錄，協助您管理網域。
-ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 此網域名稱系統會對應電腦主機名稱至 IP 位址，了解 DNS 和網域註冊機構的基本概念有助於管理網域。
+ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915659"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582941"
 ---
 # <a name="dns-basics"></a>DNS 基本知識
 
@@ -78,8 +78,8 @@ ms.locfileid: "50915659"
 |**NS (名稱伺服器) 記錄**|**可識別做為網域「授權名稱伺服器」的名稱伺服器。當您變更網域的名稱伺服器時，您會變更管理 DNS 記錄的位置，以及 DNS 系統尋找郵件伺服器等相關資訊的位置。Microsoft 擁有自己的名稱伺服器，您也可以決定繼續使用已經為您網域設定的名稱伺服器。**|
 |:-----|:-----|
 |記錄 (位址記錄)  <br/> |建立網域名稱與特定 IP 位址之間的關聯。  <br/> |
-|CNAME (別名或正式名稱) 記錄  <br/> |將網域重新導向至 DNS 系統中的另一個網域。 當名稱伺服器尋找某個網域，並發現該網域有 CNAME 記錄時，該伺服器會以 CNAME 取代第一個網域名稱，然後再尋找新名稱。  <br/> |
-|MX (郵件交換程式) 記錄  <br/> |指向電子郵件應該傳送的目標位置。 它也具有優先順序欄位，讓您可按照優先順序，將郵件傳送到不同的伺服器。  <br/> |
+|CNAME (別名或正式名稱) 記錄  <br/> |將網域重新導向至 DNS 系統中的另一個網域。當名稱伺服器尋找某個網域，並發現該網域有 CNAME 記錄時，該伺服器會以 CNAME 取代第一個網域名稱，然後再尋找新名稱。  <br/> |
+|MX (郵件交換程式) 記錄  <br/> |指向電子郵件應該傳送的目標位置。它也具有優先順序欄位，讓您可按照優先順序，將郵件傳送到不同的伺服器。  <br/> |
 |SPF (寄件者原則架構) 記錄  <br/> |TXT 記錄，有助於防止電子郵件詐騙和網路釣魚。  <br/> |
 |SRV (服務) 記錄  <br/> |商務用 Skype Online 和 Exchange Online 會用來協調 Microsoft 服務之間的資訊流程。 例如，必須具備 SRV 記錄才能查看 Outlook Web App 中的目前狀態，以及與其他公司中的人員使用商務用 Skype Online、Skype 或其他立即訊息工具。  <br/> |
 |TTL (存留時間)  <br/> |在名稱伺服器開始尋找更新版本前，保留 DNS 記錄的時間長度。  <br/> |
@@ -102,7 +102,7 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
   
  *當您將電子郵件變更至 Microsoft 365 時，透過在下一步更新您的網域 MX 記錄，所有傳送至該網域的電子郵件都會開始送往 Microsoft 365。*  如果其他人使用您的網域傳送電子郵件，您必須為這些人個別設定 Microsoft 365 信箱。 
   
-聽起來很複雜嗎？ 確實，但我們會逐步引導您完成 Microsoft 的網域設定。
+聽起來很複雜嗎？確實，但我們會逐步引導您完成 Microsoft 網域設定。
   
 ### <a name="dns-tells-the-internet-where-to-look-for-websites-too"></a>DNS 也會告訴網際網路到哪裡尋找網站
 
@@ -186,7 +186,7 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 
 ## <a name="the-dns-records-required-for-microsoft-365"></a>Microsoft 365 所需的 DNS 記錄
 
-Microsoft 365 需要具備數種 DNS 記錄才能搭配您的網域使用。 除了設定網域的 MX 記錄，讓電子郵件傳送到 Microsoft 365 之外，還有其他記錄可以協助您處理任務，像是確認 Outlook 可以自動連線到正確的 Exchange 伺服器、設定立即訊息，以及協助防堵垃圾郵件等。
+Microsoft 365 需要具備數種 DNS 記錄才能搭配您的網域使用。除了設定網域的 MX 記錄，讓電子郵件傳送到 Microsoft 365 之外，還有其他記錄可以協助您處理任務，像是確認 Outlook 可以自動連線到正確的 Exchange 伺服器、設定立即訊息，以及協助防堵垃圾郵件等。
   
 您可以[尋找值清單](information-for-dns-records.md)設定您的網域。 這些都包含在 Microsoft 365 系統管理中心。 
   
@@ -198,3 +198,11 @@ Microsoft 365 需要具備數種 DNS 記錄才能搭配您的網域使用。 除
   
 - 不確定網域的註冊位置？ [協助您找到網域註冊機構。](find-your-domain-registrar.md)
 - 了解[為什麼您必須完成精靈中的步驟](../setup/add-domain.md)才能搭配 Microsoft 365 使用您的網域。
+
+## <a name="related-content"></a>相關內容
+
+[網域常見問題集](../setup/domains-faq.yml) (文章)
+
+[尋找並修正新增網域或 DNS 記錄之後所發生的問題](find-and-fix-issues.md) (文章)
+
+[管理網域](index.yml) (連結頁面)

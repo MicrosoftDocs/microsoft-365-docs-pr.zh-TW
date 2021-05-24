@@ -18,13 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: Microsoft 生產力分數概觀。
-ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+description: 了解 Microsoft 生產力分數如何反映人員和技術體驗度量，並與類似規模的組織進行比較。
+ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345235"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593838"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生產力分數 
 
@@ -44,35 +44,9 @@ ms.locfileid: "52345235"
 
 - **技術體驗**：組織仰賴可靠和性能良好的技術，以及 Microsoft 365 的有效使用。 [端點分析](https://aka.ms/endpointanalytics)：協助您了解組織如何受硬體與軟體的效能和健康情況問題影響。 Microsoft 365 應用程式健康情況可協助您了解組織中的裝置是否正在建議通道上執行 Microsoft 365 應用程式。
 
+## <a name="before-you-begin"></a>開始之前
+
 有關概觀和先決條件的詳細資料​​，請參閱[什麼是端點分析](/mem/analytics/overview)。 若要深入了解 Microsoft 365 網路連線能力深入解析，請參閱[網路連線能力概觀](../../enterprise/microsoft-365-networking-overview.md)。
-  
-
-## <a name="how-the-score-is-calculated"></a>如何計算分數
-
-您的生產力分數是根據您的人員和科技體驗類別的總分數算出的。 每個類別的權重相等，共計 100 點。 最高的生產力分數可達 800。
-
-### <a name="score-categories"></a>分數類別 
-
-- 通訊 (100 點)
-- 會議 (100 點)
-- 內容共同作業 (100 點)
-- 團隊合作 (100 點)
-- 行動性 (100 點)
-- 端點分析 (100 點)
-- 網路連線能力 (100 點)
-- Microsoft 365 應用程式健康情況 (100 點)
-- **可能總計 = 800 點**
- 
-在每個分數類別中，我們都會量化關鍵指標，以說明您的組織在向數位轉型的過程中如何使用 Microsoft 365。 我們提供 28 天和 180 天的重要活動檢視。 我們還提供了支援指標，這些指標不是分數計算的一部分，但對於幫助您確定可解決的基礎使用情況統計資料和設定很重要。
-
-### <a name="products-included-in-productivity-score"></a>生產力分數中包含的產品 
-
-生產力分數包含 Exchange、SharePoint、OneDrive、Teams、Word、Excel、PowerPoint、OneNote、Outlook、Yammer 和 Skype 的資料。
-
-組織的分數每天更新一次，並反映過去 28 天 (包括當日) 完成的使用者動作。
-
-
-## <a name="prerequisites"></a>必要條件 
 
 關於人員體驗資料，您需要商務用 Microsoft 365 或Office 365 企業版訂閱。 關於租用戶的端點分析資料，您需要將 Microsoft Intune 增加到您的訂閱中。 Intune 經由管理裝置和應用程式來協助保護貴組織的資料。 擁有 Intune 之後，您可以在 Intune 體驗中啟用端點分析。 若要深入了解 Microsoft Intune，請參閱 [Microsoft Intune 文件](/mem/intune/)。 
 
@@ -98,6 +72,30 @@ ms.locfileid: "52345235"
 Microsoft 致力於保護個人隱私。 這份[隱私權文件](privacy.md)說明我們提供給您身為組織 IT 系統管理員的控制措施，以確保資訊具有可行性，同時不損害您對 Microsoft 的信任。
 
 您可以從 [Microsoft 365 系統管理] 首頁的 **[報告]**  >  **[生產力分數]** 下存取該體驗。
+  
+## <a name="how-the-score-is-calculated"></a>如何計算分數
+
+您的生產力分數是根據您的人員和科技體驗類別的總分數算出的。 每個類別的權重相等，共計 100 點。 最高的生產力分數可達 800。
+
+### <a name="score-categories"></a>分數類別 
+
+- 通訊 (100 點)
+- 會議 (100 點)
+- 內容共同作業 (100 點)
+- 團隊合作 (100 點)
+- 行動性 (100 點)
+- 端點分析 (100 點)
+- 網路連線能力 (100 點)
+- Microsoft 365 應用程式健康情況 (100 點)
+- **可能總計 = 800 點**
+ 
+在每個分數類別中，我們都會量化關鍵指標，以說明您的組織在向數位轉型的過程中如何使用 Microsoft 365。 我們提供 28 天和 180 天的重要活動檢視。 我們還提供了支援指標，這些指標不是分數計算的一部分，但對於幫助您確定可解決的基礎使用情況統計資料和設定很重要。
+
+### <a name="products-included-in-productivity-score"></a>生產力分數中包含的產品 
+
+生產力分數包含 Exchange、SharePoint、OneDrive、Teams、Word、Excel、PowerPoint、OneNote、Outlook、Yammer 和 Skype 的資料。
+
+組織的分數每天更新一次，並反映過去 28 天 (包括當日) 完成的使用者動作。
 
 ## <a name="interpreting-your-organizations-productivity-score"></a>解釋組織的生產力分數 
 
@@ -161,6 +159,6 @@ Microsoft 致力於保護個人隱私。 這份[隱私權文件](privacy.md)說�
 
 ## <a name="related-content"></a>相關內容
 
-[使用報告來監視 Microsoft 365 活動](/microsoft-365/admin/activity-reports/activity-reports) (文章)\
-[啟用 Microsoft 365 使用情況分析](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (文章)\
-[Microsoft 365 系統管理中心概觀](/microsoft-365/business-video/admin-center-overview) (影片)
+[使用報告來監視 Microsoft 365 活動](../../admin/activity-reports/activity-reports.md) (文章)\
+[啟用 Microsoft 365 使用情況分析](../../admin/usage-analytics/enable-usage-analytics.md) (文章)\
+[Microsoft 365 系統管理中心概觀](../../business-video/admin-center-overview.md) (影片)

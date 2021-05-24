@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何為團隊部署高敏感性資料保護。
-ms.openlocfilehash: 16b60230c18f4a4f5e10b4bd421fd1bf02b39779
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a775727882dd71a168f4049d2af6a9feb20f944c
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538180"
+ms.locfileid: "52572714"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>為團隊設定高敏感性資料保護
 
@@ -105,7 +105,7 @@ ms.locfileid: "52538180"
 
 每次使用敏感度標籤建立新的團隊時，都要在 SharePoint 中進行兩個步驟：
 
-- 在 SharePoint 系統管理中心內更新網站的來賓共用設定，使其符合您在建立標籤時所選擇的設定，並將預設的共用連結更新為 *特定人員*。
+- 在 SharePoint 系統管理中心更新網站的來賓共用設定，以將預設共用連結更新為 *特定人員*。
 - 更新網站本身的網站共用設定以防止成員共用網站。
 
 ### <a name="site-guest-sharing-settings"></a>網站的來賓共用設定
@@ -115,7 +115,7 @@ ms.locfileid: "52538180"
 |標籤設定|SharePoint 網站設定|
 |:------------|:----------------------|
 |**已選取 [讓 Office 365 群組擁有者將組織外部人員新增到群組]**|**[新的及現有的來賓]** (新團隊的預設值)|
-|未選取 **[讓 Office 365 群組擁有者將組織外部人員新增到群組]**|**只有貴組織中的人員**|
+|未選取 **[讓 Office 365 群組擁有者將組織外部人員新增到群組]**|**[只有貴組織中的人員]**|
 
 更新網站設定
 1. 開啟 [SharePoint 系統管理中心](https://admin.microsoft.com/sharepoint)。

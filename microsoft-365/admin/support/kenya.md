@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 58cd84899c2fcf0d16c54f939da40be0ac5703cb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7df4e9f2a9827289ab0bd85c9696e03aac9e3bb3
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295984"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623630"
 ---
 # <a name="contact-support-for-kenya"></a>取得肯雅的支援
 
@@ -26,9 +26,9 @@ ms.locfileid: "52295984"
 ## <a name="phone-number"></a>電話號碼
 020 286 8800
 
-選取選項9
+按下商務用2
 
-輸入程式碼7704
+為 Microsoft 365 按1
 
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援︰

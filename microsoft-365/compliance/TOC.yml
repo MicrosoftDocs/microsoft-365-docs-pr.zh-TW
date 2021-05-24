@@ -245,6 +245,10 @@
               href: dlp-chrome-learn-about.md
             - name: 了解資料外洩防護警示儀表板
               href: dlp-alerts-dashboard-learn.md
+        - name: 規劃 DLP
+          items:
+            - name: 規劃資料外洩防護
+              href: dlp-overview-plan-for-dlp.md
         - name: 開始使用 DLP
           items:
             - name: 開始使用預設的 DLP 原則

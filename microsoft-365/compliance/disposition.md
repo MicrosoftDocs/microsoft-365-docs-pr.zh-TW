@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監事和管理當您使用處置檢閱時的內容處置，或根據您進行的設定自動刪除標記為記錄的項目。
-ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3c5d178b4eab267759506dcd86d66fb2bf4d93ee
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532160"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583469"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -33,6 +33,8 @@ ms.locfileid: "52532160"
 > 在預覽中推出: **多階段處置檢閱**
 > 
 > 系統管理員現在可以在保留標籤中新增最多五個連續的處置檢閱階段，且檢閱者可將其他使用者新增到他們的處置檢閱階段。 您也可以自訂電子郵件通知和提醒。 下列各節提供有關此預覽中變更的詳細資訊。
+>
+> 若要詳讀發行公告，請參閱部落格文章 [宣佈 Microsoft 記錄管理中的多階段處置檢閱](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-multi-stage-disposition-in-microsoft-records/ba-p/2361849)。
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>檢視內容處置的先決條件
 

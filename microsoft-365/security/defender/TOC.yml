@@ -282,42 +282,42 @@
               items:
                 - name: ServiceNow 整合概述
                   href: ./tickets.md
-            - name: Microsoft 365 Defender API (預覽版)
+        - name: Microsoft 365 Defender API (預覽版)
+          items:
+            - name: Microsoft 365 Defender API 概觀 (預覽版)
+              href: api-overview.md
+            - name: 開始使用 Microsoft 365 Defender API (預覽版)
               items:
-                - name: Microsoft 365 Defender API 概觀 (預覽版)
-                  href: api-overview.md
-                - name: 開始使用 Microsoft 365 Defender API (預覽版)
+                - name: Microsoft 365 Defender API 授權和使用條款
+                  href: api-terms.md
+                - name: 存取 Microsoft 365 Defender API
+                  href: api-access.md
+                - name: Hello World 範例
+                  href: api-hello-world.md
+                - name: 使用應用程式內容取得存取權
+                  href: api-create-app-web.md
+                - name: 使用使用者內文取得存取權
+                  href: api-create-app-user-context.md
+                - name: 取得夥伴應用程式存取權
+                  href: api-partner-access.md
+                - name: 其他 API 資源
+                  href: api-articles.md
+            - name: Microsoft 365 Defender API 與結構描述 (預覽版)
+              items:
+                - name: 支援的 Microsoft 365 Defender API
+                  href: api-supported.md
+                - name: 常見的 REST API 錯誤碼
+                  href: api-error-codes.md
+                - name: 進階搜捕 API
+                  href: api-advanced-hunting.md
+                - name: 事件 API
                   items:
-                    - name: Microsoft 365 Defender API 授權和使用條款
-                      href: api-terms.md
-                    - name: 存取 Microsoft 365 Defender API
-                      href: api-access.md
-                    - name: Hello World 範例
-                      href: api-hello-world.md
-                    - name: 使用應用程式內容取得存取權
-                      href: api-create-app-web.md
-                    - name: 使用使用者內文取得存取權
-                      href: api-create-app-user-context.md
-                    - name: 取得夥伴應用程式存取權
-                      href: api-partner-access.md
-                    - name: 其他 API 資源
-                      href: api-articles.md
-                - name: Microsoft 365 Defender API 與結構描述 (預覽版)
-                  items:
-                    - name: 支援的 Microsoft 365 Defender API
-                      href: api-supported.md
-                    - name: 常見的 REST API 錯誤碼
-                      href: api-error-codes.md
-                    - name: 進階搜捕 API
-                      href: api-advanced-hunting.md
-                    - name: 事件 API
-                      items:
-                        - name: 事件方法和屬性
-                          href: api-incident.md
-                        - name: 列出事件
-                          href: api-list-incidents.md
-                        - name: 更新事件
-                          href: api-update-incidents.md
+                    - name: 事件方法和屬性
+                      href: api-incident.md
+                    - name: 列出事件
+                      href: api-list-incidents.md
+                    - name: 更新事件
+                      href: api-update-incidents.md
     - name: 適用於 Office 365 的 Microsoft Defender
       href: ../office-365-security/index.yml
     - name: 適用於端點的 Microsoft Defender
