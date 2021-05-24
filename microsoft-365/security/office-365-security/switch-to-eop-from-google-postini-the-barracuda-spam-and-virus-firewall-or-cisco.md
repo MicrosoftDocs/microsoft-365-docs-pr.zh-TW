@@ -15,12 +15,12 @@ ms.custom:
 description: 在本文中，您將瞭解如何從內部部署電子郵件清潔裝置或雲端式保護服務切換至 Exchange Online Protection (EOP) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1a5df0b11c258ebe633868bb5abca5b20552a33
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dfbbc44ebfed6cafb97e36b18a4fc34c91840d9b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204627"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624010"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP
 
@@ -45,13 +45,13 @@ ms.locfileid: "51204627"
 
 ## <a name="switch-to-eop-standalone"></a>切換至獨立式 EOP
 
-如果您目前將信箱託管於內部部署，而且使用內部部署保護裝置或雲端郵件保護服務，即可切換至 EOP，充分利用其保護功能和可用性。若要在獨立環境中設定 EOP (這表示您將信箱託管於內部部署並使用 EOP 提供郵件保護)，可以遵循[設定 EOP 服務](set-up-your-eop-service.md)中簡述的步驟。本主題檢視設定 EOP 保護的步驟，包含註冊、新增網域以及設定郵件流程與連接器。
+如果您目前將信箱託管於內部部署，而且使用內部部署保護裝置或雲端郵件保護服務，即可切換至 EOP，充分利用其保護功能和可用性。若要在獨立環境中設定 EOP (這表示您將信箱託管於內部部署並使用 EOP 提供郵件保護)，可以遵循[設定 EOP 服務](/exchange/standalone-eop/set-up-your-eop-service)中簡述的步驟。本主題檢視設定 EOP 保護的步驟，包含註冊、新增網域以及設定郵件流程與連接器。
 
 ## <a name="switch-to-exchange-online"></a>切換至 Exchange Online
 
-您的內部部署信箱可能具有內部部署的裝置，而且您想要跳到 Exchange Online 雲端託管信箱，並 EOP protection，以利用 Microsoft 365 雲端郵件和保護功能。 若要開始，您可以註冊 Microsoft 365 並新增您的網域。 此案例不需要您設定連接器，因為沒有任何路由傳送至內部部署信箱。 請從 [Microsoft 365 獲得最新的高級功能](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) ，以進行註冊，並熟悉其功能。
+您的內部部署信箱可能具有內部部署的裝置，而且您想要 Exchange Online 雲端裝載的信箱和 EOP protection，以利用 Microsoft 365 雲端郵件和保護功能。 若要開始，您可以註冊 Microsoft 365 並新增您的網域。 此案例不需要您設定連接器，因為沒有任何路由傳送至內部部署信箱。 請從[Microsoft 365 取得最新的高級功能](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)，以進行註冊，並熟悉其功能。
 
-在 Microsoft 365 安裝程式中，您將建立雲端式信箱使用者。
+在 Microsoft 365 安裝程式過程中，您將建立雲端架構信箱使用者。
 
 ## <a name="switch-to-a-hybrid-solution"></a>切換至混合解決方案
 
@@ -63,7 +63,7 @@ ms.locfileid: "51204627"
 
 當您決定切換至 EOP 時，請務必提供下列方面的特殊考量：
 
-- **自訂篩選規則**：如果您有自訂篩選或商務原則規則來找出特定的垃圾郵件，我們建議您在遷移規則之前，先嘗試使用預設設定 EOP 一段時間。 EOP 提供具有預設設定的企業級垃圾郵件保護，結果可能是您不需要將部分規則遷移至 EOP。 當然，如果現有的規則會強制執行特定自訂業務原則，即可建立這些原則。 [Exchange Online Protection 中的郵件流程規則（傳輸規則）](mail-flow-rules-transport-rules-0.md)提供在 EOP 建立郵件流程規則的詳細指示。
+- **自訂篩選規則**：如果您有自訂篩選或商務原則規則來找出特定的垃圾郵件，我們建議您在遷移規則之前，先嘗試使用預設設定 EOP 一段時間。 EOP 提供具有預設設定的企業級垃圾郵件保護，結果可能是您不需要將部分規則遷移至 EOP。 當然，如果現有的規則會強制執行特定自訂業務原則，即可建立這些原則。 如需詳細資訊，請參閱[Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
 
 - **IP 允許清單和 IP 封鎖清單**：如果您有每一使用者的允許清單和封鎖清單，請在設定過程中留出一些時間將這些清單複製到 EOP。 如需 IP 允許清單和 IP 封鎖清單的詳細資訊，請參閱 [Configure the connection filter policy](configure-the-connection-filter-policy.md)。
 

@@ -20,12 +20,12 @@ description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3381ce66433f1f4e32f0251c45601e3cb84865b6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538720"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624618"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -96,7 +96,7 @@ ms.locfileid: "52538720"
 
     - 在 [ **一般附件類型篩選** ] 區段中，選擇 [ **開啟**]。
 
-4. 按一下 [儲存]。
+4. 按一下 **[儲存]**。
 
 若要深入瞭解反惡意程式碼原則選項，請參閱 [設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
@@ -150,7 +150,7 @@ ms.locfileid: "52538720"
 
    - 在 [ **允許清單** ] 區段中，複查 (和/或編輯) 允許的寄件者和網域。
 
-4. 按一下 [儲存]。
+4. 按一下 **[儲存]**。
 
 若要深入瞭解您的反垃圾郵件原則選項，請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
@@ -172,7 +172,7 @@ ms.locfileid: "52538720"
      - 在 [ **安全附件未知惡意程式碼回應** ] 區段中，選擇 [ **封鎖**]。
      - 在 [重新 **導向附件** ] 區段中，選取 [ **啟用重新導向**] 選項。 指定組織的安全性系統管理員或操作員的電子郵件地址，誰會檢查偵測到的檔案。
 
-     按一下 ****[下一步]。
+     按 [下一步 **]**。
 
 3. 在 [套用 **至**] 頁面上，按一下 [**新增條件**]，然後選擇 [套用者 **：收件者網域是**]，按一下 [**新增**]，選取您的網域，按一下 [**新增**]，按一下 [**完成**]，然後按 **[下一步**
 
@@ -188,7 +188,7 @@ ms.locfileid: "52538720"
    - **當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
    - **不要讓使用者點擊 [安全連結至原始 URL**]：確認已開啟此設定： ![ 開啟開啟 ](../../media/scc-toggle-on.png) 。
 
-   完成後，按一下 ****[儲存]。
+   完成後，按一下 **[儲存]**。
 
 2. 回到 [主要安全連結] 頁面上，按一下 [ **建立**]。
 
@@ -277,7 +277,7 @@ ms.locfileid: "52538720"
 
 - 垃圾 [訊息原則](anti-spam-protection.md)中的垃圾郵件動作會設定為 **將郵件移至 [垃圾郵件] 資料夾**。
 
-- 使用者保留其預設的 [垃圾郵件設定](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)，但未關閉垃圾郵件保護。
+- 使用者保留其預設的 [垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)，但未關閉垃圾郵件保護。
 
 若要深入瞭解，請參閱 [零時自動清除-防護垃圾郵件和惡意](zero-hour-auto-purge.md)代碼。
 

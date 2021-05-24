@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft Defender for Office 365 檔
-summary: 深入瞭解 Office 365 的穩健安全性解決方案，以更好地保護您的電子郵件和協同作業工具。
+title: Microsoft Defender Office 365 檔
+summary: 深入瞭解 Office 365 中的穩健安全性解決方案，以更好地保護您的電子郵件和協同作業工具。
 metadata:
-  title: Microsoft Defender for Office 365 安全性檔案
-  description: 深入瞭解 Office 365 的穩健安全性解決方案，以更好地保護您的電子郵件和協同作業工具。
+  title: Microsoft Defender Office 365 安全性檔案
+  description: 深入瞭解 Office 365 中的穩健安全性解決方案，以更好地保護您的電子郵件和協同作業工具。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,20 +13,20 @@ metadata:
   ms.author: macapara
   ms.date: 04/13/2021
   localization_priority: Priority
-  ms.openlocfilehash: a646d52b903a1ab16d2f552b456793492462c44b
-  ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+  ms.openlocfilehash: b379b42ae3c01c8359003407f3fb58834a8c074e
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/14/2021
-  ms.locfileid: "51760257"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52623562"
 landingContent:
-- title: 適用于 Office 的 Defender 365 & Exchange Online Protection
+- title: Office 365 & 的 Defender Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
     - text: Office 365 安全性概觀
       url: overview.md
-    - text: 使用 EOP 和 Defender for Office 365 設定預先設定的安全性原則
+    - text: 在 EOP 和 Defender for Office 365 中設定預先設定的安全性原則
       url: preset-security-policies.md
 - title: Office 365 的 Defender 入門
   linkLists:
@@ -34,9 +34,9 @@ landingContent:
     links:
     - text: 防範威脅
       url: protect-against-threats.md
-    - text: EOP 和 Microsoft Defender for Office 365 中的預先設定安全性原則
+    - text: EOP 和 Microsoft Defender for Office 365 中的預設安全性原則
       url: preset-security-policies.md
-    - text: Microsoft Defender for Office 365 的新功能
+    - text: Microsoft Defender Office 365 的新功能
       url: whats-new-in-defender-for-office-365.md
 - title: 評估適用於 Office 365 的 Defender
   linkLists:
@@ -62,13 +62,13 @@ landingContent:
     links:
     - text: Exchange Online Protection 概觀
       url: exchange-online-protection-overview.md
-    - text: 設定 EOP 和 Microsoft Defender for Office 365 的安全性以進行設定
+    - text: EOP 和 Microsoft Defender 的建議設定，以供設定 Office 365 安全性
       url: recommended-settings-for-eop-and-office365.md
 - title: 防止
   linkLists:
   - linkListType: overview
     links:
-    - text: 設定您的 Microsoft 365 租使用者以提高安全性
+    - text: 設定 Microsoft 365 租用戶以提高安全性
       url: tenant-wide-setup-for-increased-security.md
     - text: EOP 和 Defender for Office 365 中的設定分析器
       url: configuration-analyzer-for-security-policies.md
@@ -78,8 +78,8 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 獨立版 EOP 中的郵件流程規則 (傳輸規則)
-      url: mail-flow-rules-transport-rules-0.md
+    - text: Exchange Online 中的郵件流程規則 (傳輸規則)
+      url: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
     - text: 威脅追蹤工具
       url: threat-trackers.md
     - text: 安全性與合規性中心內的智慧型報告和深入解析
@@ -90,11 +90,11 @@ landingContent:
     links:
     - text: 威脅瀏覽器和即時偵測中的視圖
       url: threat-explorer-views.md
-    - text: Microsoft Defender for Office 365 的即時檢視
+    - text: Microsoft Defender 中 Office 365 的即時檢視
       url: campaigns.md
     - text: 調查 Office 365 中傳遞的惡意電子郵件
       url: investigate-malicious-email-that-was-delivered.md
-    - text: 查看 Office 365 的 Defender 報告
+    - text: 檢視適用於 Office 365 的 Microsoft Defender 報告
       url: view-reports-for-mdo.md
 - title: 在 EOP 中調查
   linkLists:
@@ -102,13 +102,13 @@ landingContent:
     links:
     - text: EOP 中的報告和郵件追蹤
       url: reporting-and-message-trace-in-exchange-online-protection.md
-    - text: 在獨立版 EOP 中檢視系統管理稽核記錄
-      url: view-the-admin-audit-log-eop.md
+    - text: 查看系統管理員審核記錄檔
+      url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
 - title: 回覆
   linkLists:
   - linkListType: overview
     links:
-    - text: 修復 Office 365 中傳遞的惡意電子郵件
+    - text: 修正 Office 365 中傳遞的惡意電子郵件
       url: remediate-malicious-email-delivered-office-365.md
     - text: 回應遭到破壞的電子郵件帳戶
       url: responding-to-a-compromised-email-account.md
@@ -120,9 +120,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: '如何在 Office 365 的 Defender 中運作自動化調查和回應 (AIR) '
+    - text: " (AIR) 在 Office 365 中運作的自動化調查和回應方式"
       url: automated-investigation-response-office.md
-    - text: 開始使用 Office 365 的 Defender 中的 AIR
+    - text: 入門在 Office 365 中使用 Defender 的 AIR
       url: office-365-air.md
     - text: 使用 AIR 處理已遭破壞的使用者帳戶
       url: address-compromised-users-quickly.md

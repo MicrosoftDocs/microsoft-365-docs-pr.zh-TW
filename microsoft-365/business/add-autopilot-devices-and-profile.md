@@ -24,17 +24,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: 瞭解如何使用 Windows AutoPilot 為您的公司設定新的 Windows 10 裝置，以供員工使用。
-ms.openlocfilehash: cd8777e6ae2e395506d2bf308c99309de1e24805
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 瞭解如何使用 Windows AutoPilot 為您的公司設定新的 Windows 10 裝置，使其可供員工使用。
+ms.openlocfilehash: cc5495f42214b222a70b281a713be782b1bf5c4f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578520"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623666"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用逐步指南新增 Autopilot 裝置和設定檔
 
-您可以使用 Windows AutoPilot 為您的公司設定 **新** 的 Windows 10 裝置，以便在您將其提供給員工時可供使用。
+您可以使用 Windows AutoPilot 為您的公司設定 **新** 的 Windows 10 裝置，以便在您將其授與員工時使用。
   
 ## <a name="device-requirements"></a>裝置需求
 
@@ -42,7 +42,7 @@ ms.locfileid: "51578520"
   
 - Windows 10，版本1703或更新版本
     
-- 尚未透過 Windows 現成體驗的新裝置
+- 尚未透過 Windows 全新體驗的新裝置
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用設定指南建立裝置和設定檔
 
@@ -60,7 +60,7 @@ ms.locfileid: "51578520"
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. 在 [ **上傳含裝置清單的 .csv** 檔案] 頁面上，流覽至您準備好的位置。CSV 檔案，然後 **開啟** \> **[下一步]**。 檔案必須有三個標頭：
+3. 在 [ **Upload .csv 具有裝置清單的** 檔案] 頁面上，流覽至您已準備好 .CSV 檔案的位置，然後 **開啟** \> **[下一步]**。 檔案必須有三個標頭：
     
     - 欄 A：裝置序號
     
@@ -70,10 +70,10 @@ ms.locfileid: "51578520"
     
     您可以從硬體廠商取得此資訊，也可以使用 [Get-WindowsAutoPilotInfo PowerShell 腳本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 來產生 CSV 檔案。 
     
-    如需詳細資訊，請參閱[裝置清單 CSV 檔案](../admin/misc/device-list.md)。 您也可以在 [ **上傳含裝置清單的 .csv** 檔案] 頁面上，下載範例檔案。 
+    如需詳細資訊，請參閱[裝置清單 CSV 檔案](../admin/misc/device-list.md)。 您也可以 **使用 [裝置清單**] 頁面，在 [Upload .csv 檔案] 頁面上下載範例檔案。 
     
 > [!NOTE]
-> 此腳本會使用 WMI 來取得客戶使用 Windows Autopilot 註冊裝置所需的屬性。 請注意，產生的 CSV 檔案不會收集 Windows 產品識別碼 (PKID) 值，因為不需要在輸出 CSV 中註冊裝置和 PKID 是完全正常的方式。 只會填入序號碼和硬體雜湊。
+> 此腳本會使用 WMI 來取得客戶使用 Windows Autopilot 註冊裝置所需的屬性。 請注意，產生的 CSV 檔案不會收集 Windows 產品識別碼 (PKID) 值，因為不需要在輸出 CSV 中註冊裝置及 PKID 為 Null，就完全正確。 只會填入序號碼和硬體雜湊。
     
 4. 在 [ **指派設定檔** ] 頁面上，您可以挑選現有的設定檔或建立新的設定檔。 如果您還沒有，系統會提示您建立一個。 
     
@@ -85,7 +85,7 @@ ms.locfileid: "51578520"
     
     - 使用公司品牌建立登入體驗。
     
-    - 將裝置連線到 Azure Active Directory 帳戶，並自動將其註冊為由 Microsoft 365 商務版 Premium 管理。
+    - 連線您的裝置以 Azure Active Directory 帳戶，並自動將其註冊為由 Microsoft 365 商務進階版進行管理。
     
     如需詳細資訊，請參閱 [關於 AutoPilot 設定檔設定](autopilot-profile-settings.md)。 
     
@@ -94,3 +94,8 @@ ms.locfileid: "51578520"
     選擇 **[下一步]**。
     
 6. **您已完成** 表示您已建立的設定檔 (或選擇) 會套用到您透過上載裝置清單所建立的裝置群組。 當裝置使用者下一次登入時，設定就會生效。 選擇 [ **關閉**]。
+
+## <a name="related-content"></a>相關內容
+
+[關於 AutoPilot 設定檔設定](autopilot-profile-settings.md) (文章) \
+[保護裝置及應用程式資料的選項](../admin/devices/choose-device-security.md) (文章) 

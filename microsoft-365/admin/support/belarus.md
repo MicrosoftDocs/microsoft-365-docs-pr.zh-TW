@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c536987035743f9a640d427375efaedfce21fbb8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 455959c8b11a3cfaf293052d2c23251771ac7456
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296548"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623574"
 ---
 # <a name="contact-support-for-belarus"></a>取得白俄羅斯的支援
 
@@ -26,9 +26,9 @@ ms.locfileid: "52296548"
 ## <a name="phone-number"></a>電話號碼
 8 820 0071 0003
 
-選取選項9
+按下商務用2
 
-輸入程式碼7707
+為 Microsoft 365 按1
 
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援︰

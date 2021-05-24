@@ -24,16 +24,16 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 在設定自訂網域時，請確定已正確設定 DNS 記錄，以追蹤在設定自訂網域時所執行的任何問題。
-ms.openlocfilehash: 5959cae02b87cf481fc06edd941a6da284b71736
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 70beb877251c333766a0963316287796eb81d595
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537544"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623962"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>尋找並修正新增網域或 DNS 記錄之後所發生的問題
 
- 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
   
 將您的網域設定為與 Microsoft 365 搭配使用可能是挑戰性的。 使用 DNS 系統的限制頗多，而且您網域的 DNS 設定也會影響到重要的商務活動，例如電子郵件！
 
@@ -103,5 +103,6 @@ ms.locfileid: "52537544"
 
 ## <a name="related-content"></a>相關內容
 
-[疑難排解：驗證的網域變更上的審計資料](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+[疑難排解：已驗證的網域變更 (篇文章的審計資料](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)) \
+[網域常見問題集](../setup/domains-faq.yml) (文章)
 

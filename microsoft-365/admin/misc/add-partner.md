@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: 瞭解如何在購買 Microsoft 365 時，新增訂閱顧問合作夥伴作為記錄的合作夥伴，以變更協力廠商或從訂閱刪除合作夥伴。
-ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Microsoft 365 購買時新增記錄的協力廠商、變更協力廠商或從訂閱刪除合作夥伴。
+ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537472"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624522"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>新增、變更或刪除訂閱顧問合作夥伴
 
@@ -42,6 +42,8 @@ ms.locfileid: "52537472"
 訂閱顧問合作夥伴就是 Microsoft 授權合作夥伴並擔任訂閱顧問，負責提供您需要的銷售、支援和技術方面的專業，可協助您設定及維護訂閱。 您可以在購買 Microsoft 365 或其他時間，新增訂閱顧問合作夥伴作為記錄的夥伴。 如果您目前並未使用協力廠商，您也可以在 [Microsoft 定點](https://pinpoint.microsoft.com) 網站上找到該合作夥伴。
 
 ::: moniker-end
+
+## <a name="before-you-begin"></a>開始之前
 
 ::: moniker range="o365-worldwide"
 
@@ -102,7 +104,7 @@ ms.locfileid: "52537472"
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取您要編輯的訂閱。
 3. 在 [訂閱詳細資料] 頁面的 [ **合作夥伴資訊**] 下，輸入 **夥伴網路識別碼**。 您可以詢問合作夥伴，以取得協力廠商的 Microsoft 合作夥伴網路識別碼。
-4. 選取 ****[新增]。
+4. 選取 **[新增]**。
 
 ::: moniker-end
 
@@ -136,7 +138,7 @@ ms.locfileid: "52537472"
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 在 [訂閱詳細資料] 頁面的 [ **合作夥伴資訊**] 底下，選取 [ **移除**]。
 3. 輸入新合作夥伴的 **Microsoft 合作夥伴網路識別碼** 。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
-4. 選取 ****[新增]。
+4. 選取 **[新增]**。
   
 ::: moniker-end
 
@@ -218,6 +220,7 @@ ms.locfileid: "52537472"
   
 ::: moniker-end
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[尋找您的 Microsoft 365 合作夥伴或轉銷商](../manage/find-your-partner-or-reseller.md)
+[找出 Microsoft 365 的合作夥伴或轉銷商](../manage/find-your-partner-or-reseller.md) (文章) \
+[規劃 Microsoft 365 商務](../setup/plan-your-setup.md) (文章設定) 

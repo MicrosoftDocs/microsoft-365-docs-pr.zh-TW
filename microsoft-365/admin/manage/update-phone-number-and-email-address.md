@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: 在系統管理中心更新您的系統管理員電話號碼和電子郵件地址。 如果您想要重設自己的系統管理員密碼，您將需要此資訊。
-ms.openlocfilehash: 49e3cd3e861499d41107b9c76da175a95e74bb0e
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+description: 如果您想要重設自己的系統管理員密碼，請在系統管理中心更新您的系統管理員電話號碼和電子郵件地址。
+ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073774"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624510"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新您的系統管理員電話號碼和電子郵件地址
 
@@ -43,7 +43,7 @@ ms.locfileid: "52073774"
 
 2. 在頁首中，選取您的設定檔圖示 \> **My account** \> **Security Info**。
 
-3. 在 [ **安全性資訊** ] 索引標籤中，選取 [ **新增方法** \> **電話** \> **替代電話** 或 **電子郵件** ]，以新增詳細資料。 若要更新您的行動裝置、電話和備選電子郵件地址詳細資料，請選取 [ **變更**]。 請務必使用 Microsoft 電子郵件地址以外的其他電子郵件地址。
+3. 在 [**安全性資訊**] 索引標籤中，選取 [**新增方法** \> **電話** \> **替代電話** 或 **電子郵件** 新增詳細資料]。 若要更新您的行動裝置、電話和備選電子郵件地址詳細資料，請選取 [ **變更**]。 請務必使用 Microsoft 電子郵件地址以外的其他電子郵件地址。
 
     > [!IMPORTANT]
     > 備選電子郵件地址和行動電話號碼是用來重設系統管理員密碼 (不是) 的電腦系統管理員密碼。
@@ -52,16 +52,13 @@ ms.locfileid: "52073774"
   
 如需帳單問題解答，請參閱：
   
-- [變更 Microsoft 365 商務用帳單的帳單位址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [變更商務用 Microsoft 365 的帳單位址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [管理付款方式](../../commerce/billing-and-payments/manage-payment-methods.md)
 
 ## <a name="related-content"></a>相關內容
 
-[變更使用者名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md) (影片) 
-
-[新增員工](../add-users/add-new-employee.md) (影片) 
-
-[移除離職員工](../add-users/remove-former-employee.md) (影片) 
-
+[變更使用者名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md) (影片) \
+[新增員工](../add-users/add-new-employee.md) (影片) \
+[移除離職的員工](../add-users/remove-former-employee.md) (影片) \
 [存取及備份先前使用者的資料](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (文章) 

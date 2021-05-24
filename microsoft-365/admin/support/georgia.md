@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5d73b54a60b22ac74a55c301b3bd9344ee83352f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ec66115bc5ad0c8031be7117d2d8282e5c7d5041
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298815"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623878"
 ---
 # <a name="contact-support-for-georgia"></a>格魯吉亞的連絡人支援
 
@@ -26,11 +26,9 @@ ms.locfileid: "52298815"
 ## <a name="phone-number"></a>電話號碼
 032 297 0124
 
-選取選項2
+按下商務用2
 
-選取選項9
-
-輸入程式碼7700
+為 Microsoft 365 按1
 
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援︰

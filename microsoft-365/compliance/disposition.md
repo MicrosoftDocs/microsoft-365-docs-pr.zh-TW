@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監事和管理當您使用處置檢閱時的內容處置，或根據您進行的設定自動刪除標記為記錄的項目。
-ms.openlocfilehash: 3c5d178b4eab267759506dcd86d66fb2bf4d93ee
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583469"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594070"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -30,7 +30,7 @@ ms.locfileid: "52583469"
 使用 Microsoft 365 合規性中心 [記錄管理]**** 中的 [處置]**** 頁面來管理處置檢閱，並檢視在其保留期間結束時自動刪除的 [記錄](records-management.md#records)中繼資料。
 
 > [!NOTE]
-> 在預覽中推出: **多階段處置檢閱**
+> 預覽中: **多階段處置檢閱**
 > 
 > 系統管理員現在可以在保留標籤中新增最多五個連續的處置檢閱階段，且檢閱者可將其他使用者新增到他們的處置檢閱階段。 您也可以自訂電子郵件通知和提醒。 下列各節提供有關此預覽中變更的詳細資訊。
 >

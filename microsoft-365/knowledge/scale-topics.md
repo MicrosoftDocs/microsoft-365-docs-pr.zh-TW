@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 深入瞭解使用 Viva 主題管理組織中的許多主題的最佳作法。
-ms.openlocfilehash: d5cdae62cdec9193d354e7585364bd842a514a26
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 613c4ed85a62efd22ba104c810420a2d0af015c5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593874"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624834"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>在 Microsoft Viva 主題中管理縮放主題
 
@@ -28,15 +28,16 @@ ms.locfileid: "52593874"
 
 - **建議**：AI 已識別主題，並且有足夠的支援資源、關聯和屬性。  (這些會標示為 UI 中的 **建議主題** 。 ) 
 
-- 已 **確認**：必須驗證 AI 的主題。 主題驗證會在下列其中一項：
+- 已 **確認**：已透過 AI 探索並已驗證的主題。 主題驗證會在下列其中一項：
 
    - 知識管理員會確認主題。 知識管理員會在 [**管理主題**] 頁面上 [確認主題](manage-topics.md#confirmed-topics)。
 
    - 多位使用者確認主題。 您必須從使用主題卡片上的意見反應機制來投票的使用者，收到兩封正投票的網路。 例如，如果一個使用者投票肯定的正負一個使用者的投票為負值，您仍需要兩個正值投票才能確認該主題。
  
-- 已 **發佈**：已策劃的確認主題。 已進行手動編輯，以提升其品質。
+- 已 **發佈**：已策劃的主題。 手動編輯是為了改善其品質，或是由使用者建立。
 
 - **已移除**：已遭拒絕的主題，將不再對檢視器顯示。 您可以在任何狀態中移除主題 (建議、確認或發佈的) 。 移除主題時，會發生下列其中一項：
+
    - 知識管理員會移除一個主題。 知識管理員會移除 [ **管理主題** ] 頁面上的主題。
 
    - 多個使用者使用主題卡片上的意見反應機制來強制轉換負值投票。 若要移除的主題，必須從使用者收到兩個否定投票的淨值。 例如，如果一個使用者投票了負數，另一個使用者對某特定主題投票了肯定的，則您仍然需要兩個負的投票來移除該主題。

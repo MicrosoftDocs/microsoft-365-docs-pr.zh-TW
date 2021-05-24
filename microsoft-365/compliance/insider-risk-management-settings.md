@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7592b92b74173e77e7937151ba88c23163363fde
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259508"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624690"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>開始使用「內幕風險管理」設定
 
@@ -60,7 +60,7 @@ ms.locfileid: "52259508"
 原則指標分為下列方面。 您可以選擇在建立「內幕風險原則」時，為每個指示器層級啟動和自訂指示器事件限制的指示器：
 
 - **Office 指示器**：包括 SharePoint 網站、Microsoft Teams 和電子郵件訊息的原則指示器。
-- **裝置** 指標：包括透過網路或裝置共用檔案等活動的原則指示器。 標記包括 Microsoft Office 檔的活動，.csv (逗點分隔值) 檔案，以及 .pdf (檔案格式) 檔案。 如果您選取 [**裝置** 指標]，只會處理 Windows 10 組建1809或更高版本之裝置的活動，而且必須先將裝置上架到規範中心。 如需設定裝置與內幕風險整合相關的詳細資訊，請參閱本文的下列 [啟用裝置指示器和板載裝置](insider-risk-management-settings.md#OnboardDevices) 一節。
+- **裝置** 指標：包括透過網路或裝置共用檔案等活動的原則指示器。 標記包括所有檔案類型的活動（包括可執行檔 (.exe) 和動態連結程式庫 (.dll) 檔案活動）。 如果您選取 [**裝置** 指標]，只會處理 Windows 10 組建1809或更高版本之裝置的活動，而且必須先將裝置上架到規範中心。 如需設定裝置與內幕風險整合相關的詳細資訊，請參閱本文的下列 [啟用裝置指示器和板載裝置](insider-risk-management-settings.md#OnboardDevices) 一節。
 - **違反安全性原則的指標 (預覽)**：這些是包括來自 Microsoft Defender 的指示器，以供與未核准或惡意軟體安裝或略過安全性控制的端點相關。 若要在「內幕風險管理」中接收提醒，您必須啟用「使用中的 Defender」「端點授權」和「內部使用者風險整合」。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Microsoft Defender For endpoint 中設定高級功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 - **實體存取指示器 (預覽)**：包括對機密資產實體存取的原則指示器。 例如，嘗試存取您實體聲譽徽章授予系統記錄中的限制區域，可與內部擁有者風險管理原則共用。 若要在「內幕風險管理」中接收這些類型的警示，您必須在「內幕風險管理」和「 [實體聲譽徽章授予資料連線器](import-physical-badging-data.md) 」中啟用優先順序實體資產。 若要深入瞭解設定實體存取，請參閱本文的「 [優先順序實體存取」一節](#priority-physical-assets-preview) 。
 - **Microsoft Cloud App Security 指示器 (預覽)**：包括來自雲端 App 安全性之共用警示的原則指示器。 自動啟用雲端 App 安全性中的反常偵測會立即開始偵測及排序結果，針對使用者和網路上連接的電腦和裝置，設定許多的行為反常。 若要在「內幕風險管理原則」警示中包含這些活動，請選取本節中的一個或多個指示器。 若要深入瞭解雲端 App 安全性 analytics 和反常偵測，請參閱[Get 行為分析和反常偵測](/cloud-app-security/anomaly-detection-policy)。
@@ -244,7 +244,7 @@ ms.locfileid: "52259508"
 | 類別 | 警示的類別是 *InsiderRiskManagement*。 此類別可用於辨別來自其他安全性 & 合規性警示的警示。 |
 | 註解 | 警示的預設批註。 值是在建立警示時所記錄的 *新警示* () 並在更新警示) 時， (記錄 *警示更新* 。 使用 AlertID 來關聯警示的更新。 |
 | 資料 | 警示的資料，包含使用者的唯一識別碼、使用者主體名稱，以及在使用者被觸發到原則時 (UTC) 的日期和時間。 |
-| 名稱 | 產生警示之有問必答風險管理原則的原則名稱。 |
+| 姓名 | 產生警示之有問必答風險管理原則的原則名稱。 |
 | PolicyId | 觸發警示的「有問必答風險管理」原則的 GUID。 |
 | 嚴重性 | 警示的嚴重性。 值為 *高*、 *中* 或 *低*。 |
 | 來源 | 警示的來源。 其值為 *Office 365 安全性 & 相容性*。 |

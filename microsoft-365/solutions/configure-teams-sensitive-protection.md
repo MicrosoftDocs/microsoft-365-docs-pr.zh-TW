@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何為團隊部署高敏感性資料保護。
-ms.openlocfilehash: a775727882dd71a168f4049d2af6a9feb20f944c
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572714"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583649"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>為團隊設定高敏感性資料保護
 
@@ -108,28 +108,18 @@ ms.locfileid: "52572714"
 - 在 SharePoint 系統管理中心更新網站的來賓共用設定，以將預設共用連結更新為 *特定人員*。
 - 更新網站本身的網站共用設定以防止成員共用網站。
 
-### <a name="site-guest-sharing-settings"></a>網站的來賓共用設定
+### <a name="site-default-sharing-link-settings"></a>網站預設的共用連結設定
 
-您在建立標籤時所選擇的來賓共用設定 (這只會影響小組成員資格) 應符合相關聯 SharePoint 網站的來賓共用設定，如下所示：
+若要更新網站預設的共用連結設定
 
-|標籤設定|SharePoint 網站設定|
-|:------------|:----------------------|
-|**已選取 [讓 Office 365 群組擁有者將組織外部人員新增到群組]**|**[新的及現有的來賓]** (新團隊的預設值)|
-|未選取 **[讓 Office 365 群組擁有者將組織外部人員新增到群組]**|**[只有貴組織中的人員]**|
-
-更新網站設定
 1. 開啟 [SharePoint 系統管理中心](https://admin.microsoft.com/sharepoint)。
 2. 在 **[網站]** 底下，按一下 **[使用中網站]**。
 3. 按一下與小組相關聯的網站。
-4. 在 **[原則]** 索引標籤的 **[外部共用]** 下，按一下 **[編輯]**。
-5. 如果您在建立敏感度標籤時允許來賓共用，請確定您已選取 **[新的及現有的來賓]**。 如果您在建立標籤時未允許共用，請選擇 **[只有貴組織中的人員]**。
-6. 在 **[預設的共用連結類型] 底下，清除 [與組織層級設定相同]** 核取方塊，然後選取 **[特定人員 (只有使用者指定的人)]**。
-7. 按一下 [儲存]。
+4. 在 **[原則]** 索引標籤的 **[外部共用]** 底下，按一下 **[編輯]**。
+5. 在 **[預設的共用連結類型] 底下，清除 [與組織層級設定相同]** 核取方塊，然後選取 **[特定人員 (只有使用者指定的人)]**。
+6. 按一下 **[儲存]**。
 
-如果您想要將此編寫為團隊建立程序的一部分，則可以使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 並搭配下列參數：
-
-- `-SharingCapability Disabled`，以關閉來賓共用 (預設為開啟)
-- `-DefaultSharingLinkType Internal`，以將預設共用連結變更為 *[特定人員]*
+如果您想要將此編寫為團隊建立程序的一部分，則可以使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 並搭配下列 `-DefaultSharingLinkType Direct` 參數以變更 *特定人員* 的預設共用連結。
 
 #### <a name="private-channels"></a>私人頻道
 

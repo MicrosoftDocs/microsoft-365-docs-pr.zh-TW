@@ -1,5 +1,5 @@
 ---
-title: 為效能問題疑難排解
+title: 疑難排解效能問題
 description: 疑難排解 Microsoft Defender for Endpoint 中與即時保護服務相關的高 CPU 使用率。
 keywords: 疑難排解、效能、高 CPU 使用率、高 CPU 使用率、錯誤、修正、更新規範、oms、監視器、報告、Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 1a969b6430914eb2dd667a906dc071d3cd49be8b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995078"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625326"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>疑難排解與即時保護相關的效能問題
 
@@ -33,7 +33,7 @@ ms.locfileid: "51995078"
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-如果您的系統與 Microsoft Defender for Endpoint 中的即時保護服務有高 CPU 使用量或效能問題，您可以將票證提交給 Microsoft 支援人員。 依照 [收集 Microsoft Defender 防病毒診斷資料](collect-diagnostic-data.md)中的步驟進行。
+如果您的系統與 Microsoft Defender for Endpoint 中的即時保護服務有高 CPU 使用量或效能問題，您可以將票證提交給 Microsoft 支援人員。 遵循[收集 Microsoft Defender 防毒軟體診斷資料](collect-diagnostic-data.md)中的步驟進行。
 
 身為系統管理員，您也可以自行疑難排解這些問題。 
 
@@ -43,7 +43,7 @@ ms.locfileid: "51995078"
 
 您也可以遵循下列步驟，將您提交的其他記錄提供給 Microsoft 支援：
 - [使用進程監視器捕獲處理常式記錄](#capture-process-logs-using-process-monitor)
-- [使用 Windows 效能錄製器捕獲效能記錄](#capture-performance-logs-using-windows-performance-recorder) 
+- [使用 Windows 效能錄製器捕獲效能記錄檔](#capture-performance-logs-using-windows-performance-recorder) 
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>向廠商核實防病毒排除
 
@@ -67,9 +67,9 @@ ms.locfileid: "51995078"
 | MaxTimeFile | 此程式所存取之記錄的最長掃描時間的路徑 `MaxTime` |
 | EstimatedImpact | 在此程式經歷掃描活動的期間內，掃描此程式所存取之檔案所花費的時間百分比。 |
 
-如果效能影響很高，請遵循 [Configure and validate the The Microsoft Defender 防病毒掃描](collect-diagnostic-data.md)中的步驟，嘗試將此程式新增至路徑/進程排除。
+如果效能影響很高，請遵循[Configure and validate Microsoft Defender 防毒軟體掃描排除](collect-diagnostic-data.md)中的步驟，嘗試將此程式新增至路徑/進程排除。
 
-如果上一個步驟沒有解決問題，您可以在下列各節中透過「程式 [監視器](#capture-process-logs-using-process-monitor) 」或「 [Windows 效能記錄器](#capture-performance-logs-using-windows-performance-recorder) 」來收集詳細資訊。
+如果上一個步驟沒有解決問題，您可以在下列各節中透過「程式[監視器](#capture-process-logs-using-process-monitor)」或「 [Windows 效能錄影機](#capture-performance-logs-using-windows-performance-recorder)收集詳細資訊」。
      
 ## <a name="capture-process-logs-using-process-monitor"></a>使用進程監視器捕獲處理常式記錄
 
@@ -81,13 +81,13 @@ Process Monitor (ProcMon) 是一種可顯示即時處理程式的高級監控工
     1. 以滑鼠右鍵按一下 [ **ProcessMonitor.zip** ]，然後選取 [ **屬性**]。
     1. 在 [ *一般* ] 索引標籤下，尋找 [ *安全性*]。
     1. 核取方塊旁邊的 [ **解除封鎖**]。
-    1. 選取 [套用 **]**。
+    1. 選取 ****[套用]。
     
     ![移除 MOTW](images/procmon-motw.png) 
 
 3. 解壓縮檔， `C:\temp` 以將資料夾路徑 `C:\temp\ProcessMonitor` 。 
 
-4. 將 **ProcMon.exe**  複製到您要進行疑難排解的 windows 用戶端或 windows server。  
+4. 將 **ProcMon.exe** 複製到您要進行疑難排解的 Windows 用戶端或 Windows 伺服器。  
 
 5. 在執行 ProcMon 之前，請確定未關閉與高 CPU 使用率問題相關的所有其他應用程式。 這樣做會使要檢查的程式數目降至最低。
 
@@ -122,7 +122,7 @@ Process Monitor (ProcMon) 是一種可顯示即時處理程式的高級監控工
         > 
         >![最小化 Procmon](images/procmon-minimize.png)
     
-7. 遵循步驟6中的其中一個程式之後，您將會看到一個設定篩選的選項。 選取 [確定]。 您可以在捕獲完成後，永遠篩選結果。
+7. 遵循步驟6中的其中一個程式之後，您將會看到一個設定篩選的選項。 選取 **[確定]**。 您可以在捕獲完成後，永遠篩選結果。
  
     ![篩選輸出進程名稱為系統排除](images/procmon-filter-options.png) 
 
@@ -150,15 +150,15 @@ Process Monitor (ProcMon) 是一種可顯示即時處理程式的高級監控工
 13. 請壓縮 pml 檔案，並將它提交給 Microsoft 支援部門。
 
 
-## <a name="capture-performance-logs-using-windows-performance-recorder"></a>使用 Windows 效能錄製器捕獲效能記錄
+## <a name="capture-performance-logs-using-windows-performance-recorder"></a>使用 Windows 效能錄製器捕獲效能記錄檔
 
-您可以使用 Windows 效能錄影機 (WPR) ，在提交給 Microsoft 支援人員時包含其他資訊。 WPR 是一種強大的錄製工具，可建立 Windows 錄製的事件追蹤。 
+您可以使用 Windows 效能錄影機 (WPR) ，以在提交給 Microsoft 支援人員時包含其他資訊。 WPR 是一種強大的錄製工具，可為 Windows 錄製建立事件追蹤。 
 
-WPR 是 Windows 評估和部署套件 (Windows ADK) 的一部分，而且可以從 [下載和安裝 WINDOWS adk](/windows-hardware/get-started/adk-install)下載。 您也可以在 [windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)中，以 Windows 10 軟體發展套件的一部分下載。
+WPR 是 Windows 評估與部署套件 (Windows ADK) 的一部分，而且可以從下載下載[並安裝 Windows ADK](/windows-hardware/get-started/adk-install)。 您也可以在[Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)的 Windows 10 軟體發展套件中下載它。
 
 您可以使用 WPR 使用者介面，遵循透過 [WPR UI 捕獲效能記錄](#capture-performance-logs-using-the-wpr-ui)中的步驟。 
 
-或者，您也可以使用命令列工具 *wpr.exe*，在 Windows 8 和更新版本中，遵循透過 [WPR CLI 取得效能記錄](#capture-performance-logs-using-the-wpr-cli)檔中的步驟，即可使用此工具。
+或者，您也可以使用 [WPR CLI 取得效能記錄](#capture-performance-logs-using-the-wpr-cli)檔中的步驟，使用命令列工具 *wpr.exe*，可在 Windows 8 和更新版本中使用。
 
 
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>使用 WPR UI 捕獲效能記錄
@@ -168,7 +168,7 @@ WPR 是 Windows 評估和部署套件 (Windows ADK) 的一部分，而且可以�
 
 1. 下載並安裝 WPR。
 
-2. 在 [ *Windows 工具組*] 底下，以滑鼠右鍵按一下 [ **windows Performance 答錄機**]。 
+2. 在 *Windows 工具組*] 底下，以滑鼠右鍵按一下 [ **Windows 效能錄製**]。 
 
     ![[開始] 功能表](images/wpr-01.png)
 
@@ -178,20 +178,20 @@ WPR 是 Windows 評估和部署套件 (Windows ADK) 的一部分，而且可以�
 
     ![Uac](images/wpt-yes.png)
 
-4. 接下來，下載 [Microsoft Defender For Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) 設定檔，並將其另存為 `WD.wprp` 資料夾（如） `C:\temp` 。 
+4. 接下來，下載 [Microsoft Defender For Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) 設定檔，並將其另存為 `MDAV.wprp` 資料夾（如） `C:\temp` 。 
      
 5. 在 [WPR] 對話方塊中，選取 [ **更多選項**]。
 
     ![選取更多選項](images/wpr-03.png)
 
-6. 選取 [ **新增設定檔** ]，然後流覽至檔案的路徑 `WD.wprp` 。
+6. 選取 [ **新增設定檔** ]，然後流覽至檔案的路徑 `MDAV.wprp` 。
 
 7. 之後，您應該會在它底下的 [ *Microsoft Defender For Endpoint analysis* *] 下看到* 新的設定檔集。
 
     ![檔內](images/wpr-infile.png)
 
     >[!WARNING]
-    >如果您的 Windows 伺服器有 64 GB 或以上的 RAM，請使用自訂度量， `Microsoft Defender for Endpoint analysis for large servers` 而不要使用 `Microsoft Defender for Endpoint analysis` 。 否則，您的系統可能會耗用大量的非分頁集區記憶體或緩衝區，可能會導致系統不穩定。 您可以透過展開 **資源分析** 來選擇要新增的設定檔。 這個自訂設定檔提供深入效能分析所需的內容。
+    >如果 Windows 伺服器的 RAM 為 64 GB 或以上，請使用自訂度量， `Microsoft Defender for Endpoint analysis for large servers` 而不要使用 `Microsoft Defender for Endpoint analysis` 。 否則，您的系統可能會耗用大量的非分頁集區記憶體或緩衝區，可能會導致系統不穩定。 您可以透過展開 **資源分析** 來選擇要新增的設定檔。 這個自訂設定檔提供深入效能分析所需的內容。
  
 8. 若要在 WPR UI 中使用自訂度量值 Microsoft Defender for Endpoint verbose analysis profile：
 
@@ -220,7 +220,7 @@ WPR 是 Windows 評估和部署套件 (Windows ADK) 的一部分，而且可以�
     >[!TIP]
     >將資料收集保留在五分鐘內。 在收集大量資料後，有兩到三分鐘是很好的範圍。
 
-12. 選取 [儲存 **]**。
+12. 選取 [儲存]。
 
     ![選取 [儲存]](images/wpr-10.png)
 
@@ -229,7 +229,7 @@ WPR 是 Windows 評估和部署套件 (Windows ADK) 的一部分，而且可以�
     ![填滿詳細資料](images/wpr-12.png)
 
     1. 選取檔案名 **：** 以決定儲存追蹤檔案的位置。 根據預設，1.is 會儲存至 `%user%\Documents\WPR Files\` 。
-    1. 選取 [儲存 **]**。
+    1. 選取 [儲存]。
 
 14. 正在合併追蹤，請稍候。
 
@@ -247,20 +247,20 @@ WPR 是 Windows 評估和部署套件 (Windows ADK) 的一部分，而且可以�
 
 命令列工具 *wpr.exe* 是以 Windows 8 開頭的作業系統的一部分。 若要使用命令列工具 wpr.exe 收集 WPR 追蹤，請執行下列動作：
 
-1. 下載 **[Microsoft Defender For Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** 設定檔，以取得 `WD.wprp` 在本機目錄（如）中指定的檔案效能追蹤 `C:\traces` 。
+1. 下載 **[Microsoft Defender For Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** 設定檔，以取得 `MDAV.wprp` 在本機目錄（如）中指定的檔案效能追蹤 `C:\traces` 。
 
-3. 在 [開始] **功能表** 圖示上按一下滑鼠右鍵，然後選取 [ **Windows PowerShell (Admin)** 或 **命令提示字元 (admin)** ，以開啟系統管理員命令提示字元視窗。
+3. 在 [開始]**功能表** 圖示上按一下滑鼠右鍵，然後選取 [ **Windows PowerShell (admin)** 或 **命令提示字元 (admin)** ，以開啟系統管理員命令提示字元視窗。
 
 4. 出現 [使用者帳戶控制] 對話方塊時，選取 [ **是]**。
 
 5. 在 [提升] 提示中執行下列命令，以啟動 Microsoft Defender for Endpoint 效能追蹤：
 
     ```console
-    wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
+    wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
     ```
     
     >[!WARNING]
-    >如果您的 Windows Server 有 64 GB 或 RAM 或更多，請使用設定檔 `WDForLargeServers.Light` ， `WDForLargeServers.Verbose` 而不是設定檔和設定檔 `WD.Light` `WD.Verbose` 。 否則，您的系統可能會耗用大量的非分頁集區記憶體或緩衝區，可能會導致系統不穩定。
+    >如果您的 Windows 伺服器有 64 GB 或 RAM 以上，請使用設定檔 `WDForLargeServers.Light` ， `WDForLargeServers.Verbose` 而不是設定檔和設定檔 `WD.Light` `WD.Verbose` 。 否則，您的系統可能會耗用大量的非分頁集區記憶體或緩衝區，可能會導致系統不穩定。
 
 6. 再現問題。
 
@@ -277,7 +277,7 @@ WPR 是 Windows 評估和部署套件 (Windows ADK) 的一部分，而且可以�
 
 9. 將您提交的檔案和資料夾都包含在 Microsoft 支援檔中。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [收集 Microsoft Defender 防病毒診斷資料](collect-diagnostic-data.md)
-- [設定及驗證 Microsoft Defender 防病毒掃描的排除專案](configure-exclusions-microsoft-defender-antivirus.md)
+- [收集 Microsoft Defender 防毒軟體診斷資料](collect-diagnostic-data.md)
+- [設定及驗證 Microsoft Defender 防毒軟體掃描的排除專案](configure-exclusions-microsoft-defender-antivirus.md)

@@ -21,12 +21,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解反垃圾郵件設定和篩選器，協助避免 Exchange Online Protection (EOP) 中的垃圾郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6a4113925956c67e80a5239b8f9823acaf7f75b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 52e891a86e75309dadd445736738a3f25584823e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538312"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624858"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾郵件保護
 
@@ -60,7 +60,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 - **垃圾郵件篩選 (內容篩選)**： EOP 使用垃圾郵件篩選 verdicts **垃圾** 郵件、 **高可信度垃圾郵件**、 **大量電子郵件**、 **網路釣魚電子** 郵件和 **高可信度網路釣魚電子** 郵件來分類郵件。 您可以根據這些 verdicts 設定要採取的動作，而且可以針對隔離而非傳遞的郵件，設定使用者通知選項。 如需詳細資訊，請參閱[設定 Microsoft 365 中的反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
   > [!NOTE]
-  > 根據預設，垃圾郵件篩選會設定為將標記為垃圾郵件的郵件傳送至收件者的 [垃圾郵件] 資料夾。 不過，在 EOP 保護內部部署 Exchange 信箱的混合式環境中，您必須設定兩個郵件流程規則 (也稱為「內部部署 Exchange 組織中的傳輸規則) ，以辨識新增至郵件的 EOP 垃圾郵件頭。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+  > 根據預設，垃圾郵件篩選會設定為將標記為垃圾郵件的郵件傳送至收件者的 [垃圾郵件] 資料夾。 不過，在 EOP 保護內部部署 Exchange 信箱的混合式環境中，您必須設定兩個郵件流程規則 (也稱為「內部部署 Exchange 組織中的傳輸規則) ，以辨識新增至郵件的 EOP 垃圾郵件頭。 如需詳細資訊，請參閱 [CONFIGURE EOP To Email to The 垃圾郵件資料夾中的混合式環境](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 - **輸出垃圾郵件篩選**： EOP 也會檢查，確定您的使用者不會在輸出郵件內容中或超過輸出郵件限制傳送垃圾郵件。 如需詳細資訊，請參閱[設定 Microsoft 365 中的外寄垃圾郵件篩選](configure-the-outbound-spam-policy.md)。
 
@@ -100,7 +100,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 
 - **從大量電子郵件取消訂閱** 如果郵件是使用者為 (電子報、產品 ) 宣告等所註冊的專案，且包含知名來源的取消訂閱連結，請考慮要求他們只是取消訂閱。
 
-- **獨立 EOP：在內部部署 Exchange 中建立郵件流程規則，以進行 EOP 垃圾郵件篩選 verdicts**：在 EOP 保護內部部署 Exchange 信箱的獨立 EOP 環境中，您必須設定郵件流程規則， (也稱為 Exchange 內部部署中) 的傳輸規則。若要翻譯 EOP 垃圾郵件篩選判定，垃圾郵件規則可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+- **獨立 EOP：在內部部署 Exchange 中建立郵件流程規則，以進行 EOP 垃圾郵件篩選 verdicts**：在 EOP 保護內部部署 Exchange 信箱的 EOP 環境中，您必須設定郵件流程規則， (也稱為 Exchange 內部部署中) 的傳輸規則。若要轉譯 EOP 垃圾郵件篩選判定專案，垃圾郵件規則可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱 [CONFIGURE EOP To Email to The 垃圾郵件資料夾中的混合式環境](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>防止令人滿意的電子郵件被識別為垃圾郵件
 
@@ -118,7 +118,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 
 - **驗證使用者在傳送和接收限制內**，如 Exchange Online 服務描述中的 [接收及傳送限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)所述。
 
-- **獨立 EOP：使用目錄同步** 處理：如果您使用獨立 EOP 來協助保護內部部署 Exchange 組織，您應該使用目錄同步處理，將使用者設定與服務同步。 這樣做可確保 EOP 信任您使用者的 [安全寄件者] 清單。 如需詳細資訊，請參閱[使用目錄同步處理來管理郵件使用者](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users)。
+- **獨立 EOP：使用目錄同步** 處理：如果您使用獨立 EOP 來協助保護內部部署 Exchange 組織，您應該使用目錄同步處理，將使用者設定與服務同步。 這樣做可確保 EOP 信任您使用者的 [安全寄件者] 清單。 如需詳細資訊，請參閱[使用目錄同步處理來管理郵件使用者](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect)。
 
 ## <a name="anti-spam-legislation"></a>反垃圾郵件法律
 

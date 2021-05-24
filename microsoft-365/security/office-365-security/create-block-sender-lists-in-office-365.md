@@ -11,15 +11,15 @@ ms.topic: how-to
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: 系統管理員可以深入瞭解可用及慣用的選項，以在 Exchange Online Protection (EOP) 中封鎖輸入郵件。
+description: 系統管理員可以瞭解可用及慣用的選項，以封鎖 Exchange Online Protection (EOP) 中的輸入郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa2a5e0c71f14838dc8446431f5ea02a535fb787
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: c844378a19ba7995cbd616f615e8a84994f9bf26
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331451"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624075"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>在 EOP 中建立封鎖的寄件者清單
 
@@ -30,11 +30,11 @@ ms.locfileid: "52331451"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在有信箱在 Exchange Online 或獨立 Exchange Online Protection 中的 Microsoft 365 組織中 (EOP) 不含 Exchange Online 信箱的組織，EOP 提供多種方式，封鎖來自不想要的寄件者的電子郵件。 這些選項包括 Outlook 封鎖的寄件者、封鎖的寄件者清單或反垃圾郵件原則中封鎖的網域清單、Exchange 郵件流程規則 (也稱為傳輸規則) ，以及 IP 封鎖清單 (連線篩選) 。 綜合，您可以將這些選項視為 _封鎖的寄件者清單_。
+在 Microsoft 365 具有 Exchange Online 或獨立 Exchange Online Protection 中信箱的組織 (EOP) 組織若沒有 Exchange Online 信箱，EOP 提供多種方式，封鎖來自有害寄件者的電子郵件。 這些選項包括反垃圾郵件原則中 Outlook 封鎖的寄件者]、[封鎖的寄件者清單] 或 [封鎖的功能變數名稱] 清單、Exchange 郵件流程規則 (也稱為傳輸規則) ，以及 IP 封鎖清單 (連線篩選) 。 綜合，您可以將這些選項視為 _封鎖的寄件者清單_。
 
-封鎖寄件者的最佳方法會因影響範圍而異。 針對單一使用者，正確的解決方案可能是 Outlook 封鎖的寄件者。 對於許多使用者而言，其中一個其他選項更適合。 下列選項依影響範圍及廣度排名。 清單從窄到寬，但閱讀完整建議的 *詳細* 資料。
+封鎖寄件者的最佳方法會因影響範圍而異。 針對單一使用者，正確的解決方案可能會 Outlook 封鎖的寄件者。 對於許多使用者而言，其中一個其他選項更適合。 下列選項依影響範圍及廣度排名。 清單從窄到寬，但閱讀完整建議的 *詳細* 資料。
 
-1. Outlook 封鎖的寄件者 (儲存于每個信箱中的封鎖寄件者清單) 
+1. Outlook封鎖的寄件者 (儲存于每個信箱中的封鎖寄件者清單) 
 
 2.  (反垃圾郵件原則所封鎖的寄件者清單或封鎖的網域清單) 
 
@@ -57,11 +57,11 @@ ms.locfileid: "52331451"
 
 通常， `5321.MailFrom` 與 `5322.From` 位址 (人員對人員通訊) 相同。 不過，當您代表其他人傳送電子郵件時，位址可能會不同。
 
-EOP 中，封鎖的寄件者清單和封鎖的網域清單會檢查 `5321.MailFrom` 和 `5322.From` 位址。 Outlook 封鎖的寄件者只會使用該 `5322.From` 位址。
+EOP 中，封鎖的寄件者清單和封鎖的網域清單會檢查 `5321.MailFrom` 和 `5322.From` 位址。 Outlook封鎖的寄件者只會使用 `5322.From` 位址。
 
 ## <a name="use-outlook-blocked-senders"></a>使用 Outlook 封鎖的寄件者
 
-當只有少量的使用者收到不想要的電子郵件時，使用者或系統管理員可以將寄件者電子郵件地址新增至信箱中的封鎖寄件者清單。 如需相關指示，請參閱 [在 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+當只有少量的使用者收到不想要的電子郵件時，使用者或系統管理員可以將寄件者電子郵件地址新增至信箱中的封鎖寄件者清單。 如需相關指示，請參閱[Configure 垃圾郵件 settings on Exchange Online 信箱](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 當郵件因使用者的封鎖寄件者清單而成功封鎖時， **X-Forefront-Antispam-Report** 標頭欄位將會包含此值 `SFV:BLK` 。
 
@@ -78,7 +78,7 @@ EOP 中，封鎖的寄件者清單和封鎖的網域清單會檢查 `5321.MailFr
 
 如果您需要封鎖傳送給特定使用者或整個組織內的郵件，您可以使用郵件流程規則。 郵件流程規則比封鎖寄件者清單或封鎖的寄件者網域清單更為靈活，因為它們也可以在不想要的郵件中尋找關鍵字或其他屬性。
 
-不論您用來識別郵件的條件或例外情況為何，您可以將動作設定為將郵件的垃圾郵件信賴等級 (SCL) 設定為9，這會將郵件標示為 **高信賴的垃圾** 郵件。 如需詳細資訊，請參閱 [使用郵件流程規則設定郵件中的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
+不論您用來識別郵件的條件或例外情況為何，您可以將動作設定為將郵件的垃圾郵件信賴等級 (SCL) 設定為9，這會將郵件標示為 **高信賴的垃圾** 郵件。 如需詳細資訊，請參閱 [使用郵件流程規則設定郵件中的 SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
 
 > [!IMPORTANT]
 > 您可以輕鬆地建立 *過於* 嚴格的規則，所以請務必只使用特別的準則來識別您想要封鎖的郵件。 此外，請務必啟用規則的審計，並測試規則的結果，以確保所有內容如預期般運作。

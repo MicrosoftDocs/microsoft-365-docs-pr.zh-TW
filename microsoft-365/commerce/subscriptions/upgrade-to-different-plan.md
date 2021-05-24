@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: 瞭解如何升級為其他計畫。
+description: 升級計畫最簡單的方法是使用系統管理中心的 [升級] 索引標籤。 不過，不一定支援 [升級] 索引標籤。
 ms.date: 04/21/2021
-ms.openlocfilehash: 4882ad4296eb05faf0bb549ebf850562a7ebf780
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: da0b0a826087ea7e963dde85f9b4612acf0eaf99
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344611"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624310"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案
 

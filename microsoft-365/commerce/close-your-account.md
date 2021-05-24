@@ -18,20 +18,20 @@ ms.custom:
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
 search.appverid: MET150
-description: 瞭解如何使用 Microsoft 關閉您的帳戶。
+description: 當您以 Microsoft 關閉您的帳戶時，系統會刪除所有與您帳戶相關的資訊，包括授權、使用者和使用者資料。
 ms.date: 04/02/2021
-ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537292"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624322"
 ---
 # <a name="close-your-account"></a>關閉您的帳戶
 
 當您使用 Microsoft 關閉您的帳戶時，與您的帳戶相關的所有資訊都會被刪除。 這些資訊包括訂閱、授權、付款方式、使用者及使用者資料。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 開始此程序之前，請務必備份任何您想保留的資料。
 
@@ -51,15 +51,15 @@ ms.locfileid: "52537292"
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步驟2：取消所有作用中的訂閱
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
-2. 在 [ **產品** ] 索引標籤上，尋找使用中的訂閱。 選取 [ (更多動作) ] 的三個點，然後選取 [ **取消訂閱**]。
-3. 在 **取消訂閱** 窗格中，選擇取消的原因。 您也可以選擇提供任何意見反應。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
+2. 在 [ **產品** ] 索引標籤上，尋找使用中的訂閱。 選取三個點 (更多動作)，然後選取 [取消訂閱 **]**。
+3. 在 [取消訂閱 **]** 窗格中，選擇取消的原因。選擇性地提供任何意見反應。
 4. 選取 **[儲存]**。
 5. 重複步驟1到4，以取消所有作用中的訂閱。
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>步驟3：刪除所有已停用的訂閱
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取停用的訂閱。
 3. 在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **刪除訂閱**]。
 4. 在 [ **刪除訂閱** ] 窗格中，選取 [ **刪除訂閱**]。
@@ -88,3 +88,9 @@ ms.locfileid: "52537292"
 5. 如果您的組織未通過一或多項檢查，您會看到有關如何傳遞檢查的詳細資訊連結。 傳遞所有檢查後，請選取 [ **刪除** ] 以完成程式。
 
 完成此最後一個步驟之後，您的 Microsoft 帳戶會關閉並刪除。
+
+## <a name="related-content"></a>相關內容 
+
+[瞭解商務用 Microsoft 365 帳單或發票](./billing-and-payments/understand-your-invoice2.md) (文章) \
+ (文章) [取消您的訂閱](./subscriptions/cancel-your-subscription.md)
+

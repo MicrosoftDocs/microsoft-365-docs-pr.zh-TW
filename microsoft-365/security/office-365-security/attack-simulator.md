@@ -17,35 +17,35 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以瞭解如何使用攻擊模擬器，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 方案2組織中執行模擬網路釣魚和密碼攻擊。
+description: 系統管理員可以瞭解如何使用攻擊模擬器，在其 Microsoft 365 E5 或 Microsoft Defender 中對 Office 365 計畫2組織執行模擬網路釣魚和密碼攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 637e84281b85e8c859207ae81342a3c6ab3d00be
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203513"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624822"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻擊模擬器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**適用** 于 [Microsoft Defender for Office 365 方案 2](defender-for-office-365.md)
+**適用** 于 [Office 365 方案2的 Microsoft Defender](defender-for-office-365.md)
 
-如果您的組織有 Microsoft Defender for Office 365 Plan 2 （包括 [威脅調查和回應功能](office-365-ti.md)），您可以使用安全性 & 規範中心內的攻擊模擬器，在您的組織中執行實際的攻擊案例。 這些模擬的攻擊可協助您找出並找出有漏洞的使用者，而真實的攻擊會影響您的下一行。 若要深入瞭解，請閱讀本文。
+如果您的組織有 Microsoft Defender 用於 Office 365 方案2（包括[威脅調查和回應功能](office-365-ti.md)），您可以使用安全性 & 規範中心內的攻擊模擬器，在您的組織中執行實際的攻擊案例。 這些模擬的攻擊可協助您找出並找出有漏洞的使用者，而真實的攻擊會影響您的下一行。 若要深入瞭解，請閱讀本文。
 
 > [!NOTE]
 >
-> 本文所述的攻擊模擬器現在是唯讀的，而且已由 [Microsoft 365 security center](https://security.microsoft.com)中的 **電子郵件 &** 共同作業節點中的 **攻擊模擬訓練** 所取代。 如需詳細資訊，請參閱 [開始使用攻擊模擬訓練](attack-simulation-training-get-started.md)。
+> 本文所述的攻擊模擬程式現在是唯讀的，而且已由 [Microsoft 365 安全中心](https://security.microsoft.com)的 **電子郵件 &** 共同作業節點中的 **攻擊模擬訓練** 所取代。 如需詳細資訊，請參閱 [開始使用攻擊模擬訓練](attack-simulation-training-get-started.md)。
 >
 > 已停用從此版本的攻擊模擬程式啟動新模擬的功能。 不過，您仍然可以從90年1月24日到2021存取報告。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要開啟安全性與合規性中心，請移至 <https://protection.office.com/>。 攻擊模擬器可在 **威脅管理** \> **攻擊模擬器** 中取得。 請直接移至 [攻擊模擬器]，開啟] <https://protection.office.com/attacksimulator> 。
+- 若要開啟安全性與合規性中心，請移至 <https://protection.office.com/>。 攻擊模擬器可在 **威脅管理** \> **攻擊模擬器** 中取得。 若要直接移至攻擊模擬，請開啟 <https://protection.office.com/attacksimulator> 。
 
-- 如需不同 Microsoft 365 訂閱中攻擊模擬器可用性的相關資訊，請參閱 [Microsoft Defender For Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+- 如需不同 Microsoft 365 訂閱中攻擊模擬器可用性的相關資訊，請參閱[Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
 - 您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -55,7 +55,7 @@ ms.locfileid: "51203513"
 
 - 網路釣魚活動會收集事件，並處理30天的事件。 在您啟動市場活動之後，歷史活動資料將可長達90天。
 
-- 攻擊類比和訓練相關的資料會與其他 Microsoft 365 服務的客戶資料一起儲存。 如需詳細資訊，請參閱 [Microsoft 365 資料位置](../../enterprise/o365-data-locations.md)。
+- 攻擊類比和訓練相關資料會與其他客戶資料一起儲存，以供 Microsoft 365 服務使用。 如需詳細資訊，請參閱[Microsoft 365 資料位置](../../enterprise/o365-data-locations.md)。
 
 - 攻擊模擬程式沒有對應的 PowerShell Cmdlet。
 
@@ -207,7 +207,7 @@ ms.locfileid: "51203513"
      >
      > - 您必須選取 URL。 針對 **Spear 網路釣魚 (附件)** 活動，您可以在下一個步驟中移除郵件本文中的連結 (否則，郵件會同時包含連結 **和** 附件) 。
 
-   - **附件類型**：此設定僅適用于 **Spear 網路釣魚 (附件)** 活動中。 按一下下拉式清單，然後選取 **。.DOCX** 或 **。PDF** 中的清單。
+   - **附件類型**：此設定僅適用于 **Spear 網路釣魚 (附件)** 活動中。 按一下下拉式清單，然後選取清單中的 [ **.DOCX** ] 或 [ **.PDF** ]。
 
    - **附件名稱**：此設定僅適用于 **Spear 網路釣魚 (附件)** 活動中。 輸入 .docx 或 .pdf 附件的檔案名。
 
@@ -277,7 +277,7 @@ ms.locfileid: "51203513"
 
      - **手動輸入密碼**：在 **按 enter 鍵以新增密碼** 方塊中，輸入密碼，然後按 enter 鍵。 視需要重複此步驟多次。
 
-     - **從字典檔案上傳密碼**：按一下 **[上傳** ]，可匯入在每一行上包含一個密碼的現有文字檔，以及一個空白的最後一行。 文字檔的大小必須為 10 MB 或以下，而且不能包含30000個以上的密碼。
+     - **從字典檔案 Upload 密碼**：按一下 [ **Upload** ]，可匯入在每一行上包含一個密碼的現有文字檔，以及一個空白的最後一行。 文字檔的大小必須為 10 MB 或以下，而且不能包含30000個以上的密碼。
 
    - **密碼噴塗攻擊**：在 **[攻擊] 方塊中的 [密碼 (s) 中使用** ] 方塊中，輸入一個密碼。
 
@@ -335,7 +335,7 @@ ms.locfileid: "51203513"
 
   - 用戶端 IP 位址。
 
-  - 使用者版本的 Windows 和網頁瀏覽器的詳細資料。
+  - 使用者 Windows 和網頁瀏覽器版本的詳細資料。
 
   您可以按一下 [ **匯出** ]，將結果匯出至 CSV 檔案。
 

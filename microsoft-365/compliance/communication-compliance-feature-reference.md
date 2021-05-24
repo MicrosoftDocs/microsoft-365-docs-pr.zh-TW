@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3df8fbf20fd00bd584af2fd329949939433a19eb
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 87f5e414a13d966ba2fbb30d84d7d4adae7a1d13
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583481"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624346"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -187,9 +187,9 @@ ms.locfileid: "52583481"
 
 如需 Microsoft 365 中 trainable 的分類器相關資訊，請參閱[trainable 分類器快速](classifier-get-started-with.md)入門。
 
-### <a name="optical-character-recognition-ocr-preview"></a>光學字元辨識 (OCR)  (預覽) 
+### <a name="optical-character-recognition-ocr"></a>光學字元辨識 (OCR)
 
-設定內建或自訂通訊相容性原則，以掃描及識別您組織中可能不適當之影像的列印或手寫文字。 整合型 Azure 認知服務和光學掃描支援可識別圖像中的文字協助分析員和調查人員偵測和採取行動，在主要非文字的通訊中不會遺漏不良的行為。
+設定內建或自訂通訊相容性原則，以掃描及識別您組織中可能不適當之影像的列印或手寫文字。 整合型 [Azure 認知服務和光學掃描支援](/azure/cognitive-services/computer-vision/overview-ocr) 可識別圖像中的文字協助分析員和調查人員偵測和採取行動，在主要非文字的通訊中不會遺漏不良的行為。
 
 您可以使用 [範本]、[自訂原則] 或 [更新現有的原則] 中的新原則，啟用光學字元辨識 (OCR) ，以擴充處理內嵌圖像和附件的支援。 在從原則範本建立的原則中啟用時，電子郵件中的內嵌或附加的圖像支援自動掃描，並 Microsoft Teams 聊天訊息。 針對自訂原則，您必須設定原則中的一個或多個與關鍵字、內建的分類器或機密資訊類型相關聯的條件化設定，以啟用 OCR 掃描的選取範圍。
 
@@ -477,6 +477,17 @@ ms.locfileid: "52583481"
     - 建立案例
 
     使用 [ *匯出* ] 選項來建立包含報表詳細資料的 .csv 檔案。
+
+- **每個位置的敏感資訊類型** ：詳細報告 (預覽) ：查看和匯出偵測敏感資訊類型的資訊，以及通訊合規性原則中相關聯的來源。 包括組織中設定之來源中敏感資訊類型實例的整體總數和特定細目。 範例包括：
+
+    - **電子郵件**：在 Exchange 電子郵件訊息中偵測到的敏感資訊類型。
+    - **Teams**：在 Microsoft Teams 通道和聊天訊息中偵測到的敏感資訊類型。
+    - **商務用 Skype**：在商務通訊 Skype 中偵測到的敏感資訊類型。
+    - **Yammer**： Yammer 收件匣、文章、交談及回復中偵測到的敏感資訊類型。
+    - **協力廠商來源**：偵測到與組織中所設定之協力廠商連接器相關聯之活動的敏感資訊類型。 若要查看報告中特定機密資訊類型的協力廠商來源明細，請將滑鼠停留在協力廠商來源欄中的機密資訊類型的值上。
+    - **其他**：用於內部系統處理的敏感資訊類型。 選取或取消選取此報告來源會不會影響任何值。
+
+    使用 [ *匯出* ] 選項來建立包含報表詳細資料的 .csv 檔案。 每個協力廠商來源的值會顯示在 .csv 檔的不同欄中。
 
 ## <a name="audit"></a>稽核
 

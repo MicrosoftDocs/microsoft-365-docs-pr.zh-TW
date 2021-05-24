@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2f9777631fe9d8b3506296f30906d5280805b4cb
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 02fbd70e7456f95ded920faa8004eedadb35d4f5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583418"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624242"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>調查和修復通訊合規性警示
 
@@ -101,9 +101,9 @@ ms.locfileid: "52583418"
 
 檢查郵件基礎知識之後，就可以開啟訊息以檢查詳細資料，並決定進一步的修正動作。 選取訊息以檢視完整的訊息標頭和本文資訊。 有幾個不同的檢視可協助您決定適當的動作方案：
 
-- **[資料來源檢視]**：此檢視是大部分網頁型訊息平台中常見的標準訊息檢視。 標頭資訊的格式為 normal 樣式，郵件內文支援嵌入的圖形檔案及換行的文字。 如果已啟用原則的 [光學字元辨識 (OCR) ](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) ，包含符合原則條件之列印或手寫文字的影像會在此 view 中視為相關聯郵件的子項專案。
+- **[資料來源檢視]**：此檢視是大部分網頁型訊息平台中常見的標準訊息檢視。 標頭資訊的格式為 normal 樣式，郵件內文支援嵌入的圖形檔案及換行的文字。 如果已啟用原則的 [光學字元辨識 (OCR) ](communication-compliance-feature-reference.md#optical-character-recognition-ocr) ，包含符合原則條件之列印或手寫文字的影像會在此 view 中視為相關聯郵件的子項專案。
 - **文字** 模式：文字視圖會顯示郵件的單行型純文字視圖，並在郵件和附件中包含相關聯的通訊合規性原則中符合的敏感資訊類型字詞或關鍵字。 關鍵字醒目提示可協助您快速掃描長訊息和附件，瞭解感興趣的領域。 在某些情況下，反白顯示的文字可能只會存在於符合原則條件的郵件附件中。 指定給原則的內建分類器所識別的字詞不支援關鍵字醒目提示。 內嵌的檔案不會顯示，而且此視圖的行號可用於參考多個檢閱者之間的相關詳細資料。
-- **[註釋檢視]**：此檢視可讓檢閱者直接在儲存至訊息檢視的訊息上新增注釋。 如果針對原則 [啟用了 OCR](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) ，包含符合原則條件之列印或手寫文字的影像會在此視圖中視為相關聯郵件的子項專案，而且可能會加以批註。
+- **[註釋檢視]**：此檢視可讓檢閱者直接在儲存至訊息檢視的訊息上新增注釋。 如果針對原則 [啟用了 OCR](communication-compliance-feature-reference.md#optical-character-recognition-ocr) ，包含符合原則條件之列印或手寫文字的影像會在此視圖中視為相關聯郵件的子項專案，而且可能會加以批註。
 - **[使用者歷程記錄]**：使用者歷程記錄檢視會顯示傳送訊息之使用者的任何通訊合規性原則所產生的所有其他警示。
 - 偵測 **到的模式通知**：許多 harassing 及霸淩的動作一段時間，而且會對使用者執行相同行為的重複實例。 偵測 *到的模式* 通知會顯示在警示詳細資料中，並對警示引發注意。 偵測模式是以每個原則為基礎，並在過去30天內評估行為，當寄件者至少有兩封郵件傳送給同一位收件者時。 調查人員和檢閱者可以使用此通知來識別重複的行為，以視情況評估警示。
 - **顯示翻譯視圖**：此視圖會自動將警示訊息文字轉換成每個檢閱者的 Microsoft 365 訂閱中所 *顯示語言* 設定中所設定的語言。 翻譯的觀點可協助拓寬具有多語系使用者之組織的調查支援，並避免在通訊合規性審查程式以外需要其他轉譯服務。 您可以使用 Microsoft 轉譯服務，視需要開啟及關閉翻譯視圖，並支援各種語言。 如需支援之語言的完整清單，請參閱[Microsoft 翻譯工具語言](https://www.microsoft.com/translator/business/languages/)。 *翻譯工具語言清單* 中所列的語言會在 [翻譯] 視圖中支援。

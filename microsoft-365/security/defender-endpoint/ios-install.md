@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3711018034bcabdde10c21b3c968c3e813d0565
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6f2b9a1365a27bb7397aea51dcd5bc9e2631afe2
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245251"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624702"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
@@ -35,13 +35,13 @@ ms.locfileid: "52245251"
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-本主題說明如何在 Intune 公司入口網站註冊的裝置上的 iOS 上為端點部署 Defender。 如需 Intune 裝置註冊的詳細資訊，請參閱 [在 intune 中註冊 iOS/iPadOS 裝置](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
+本主題說明如何在 Intune 公司入口網站註冊的裝置上的 iOS 上為端點部署 Defender。 如需 Intune 裝置註冊的詳細資訊，請參閱 [在 intune 中註冊 iOS/iPadOS 裝置](/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 - 確定您可以存取 [Microsoft 端點管理員管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-- 確定已為您的使用者執行 iOS 註冊。 使用者必須具有指派的 Defender for Endpoint 授權，才能在 iOS 上使用 Defender for Endpoint。 如需指派授權的相關指示，請參閱 [指派授權給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) 。
+- 確定已為您的使用者執行 iOS 註冊。 使用者必須具有指派的 Defender for Endpoint 授權，才能在 iOS 上使用 Defender for Endpoint。 如需指派授權的相關指示，請參閱 [指派授權給使用者](/azure/active-directory/users-groups-roles/licensing-groups-assign) 。
 
 > [!NOTE]
 > 現在，您可以在 [Apple App Store](https://aka.ms/mdatpiosappstore)中使用 iOS 上的 Microsoft Defender for Endpoint。
@@ -83,8 +83,8 @@ ms.locfileid: "52245251"
 
 系統管理員可以設定 VPN 設定檔的自動設定。 這會自動設定 Defender for Endpoint VPN 設定檔，而不需要使用者在上架時執行此作業。 請注意，使用 VPN 是為了提供 Web 保護功能。 這不是一般 VPN，也就是本機/自我迴圈的 VPN，不會對裝置以外的流量進行流量。
 
-1. 在 [Microsoft 端點](https://go.microsoft.com/fwlink/?linkid=2109431)管理員系統管理中心中，移至 [**裝置** 設定  ->  **設定檔**  ->  **建立**  ->  **iOS 儲存應用程式**]，然後按一下 [**選取**]。
-1. 選擇 [ **平臺** 為 **iOS/iPadOS** ] 和 [ **配置檔案類型** 為 **VPN**]。 按一下 **[建立]**。
+1. 在 [Microsoft 端點](https://go.microsoft.com/fwlink/?linkid=2109431)管理員系統管理中心中，移至 [**裝置** 設定配置  ->  **檔**  ->  **建立設定檔**]。
+1. 選擇 [ **平臺** 為 **iOS/iPadOS** ] 和 [ **配置檔案類型** 為 **VPN**]。 按一下 ****[建立]。
 1. 輸入設定檔的名稱，然後按 **[下一步]**。
 1. 選取 [連線類型的 **自訂 VPN** ]，然後在 [ **基礎 VPN** ] 區段中，輸入下列專案：
     - Connection Name = Microsoft Defender for Endpoint
@@ -148,11 +148,11 @@ Intune 可讓您透過應用程式設定原則設定 iOS 應用程式的 Defende
 
 1. 按 **[下一步]** 開啟 [ **範圍標記** ] 頁面。 範圍標記是選用的。 按 **[下一步]** 繼續。
 
-1. 在 [ **工作分派** ] 頁面上，選取將要接收此設定檔的群組。 針對此案例，最佳作法是針對 **所有裝置**。 如需指派設定檔的詳細資訊，請參閱 [指派使用者和裝置設定檔](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)。
+1. 在 [ **工作分派** ] 頁面上，選取將要接收此設定檔的群組。 針對此案例，最佳作法是針對 **所有裝置**。 如需指派設定檔的詳細資訊，請參閱 [指派使用者和裝置設定檔](/mem/intune/configuration/device-profile-assign)。
 
    部署至使用者群組時，使用者必須先登入裝置，然後才能套用原則。
 
-   按 [下一步]。
+   按 [下一步 **]**。
 
 1. 當您完成時，請在 [ **複查 + 建立** ] 頁面上，選擇 [ **建立**]。 新的設定檔會顯示在設定檔的清單中。
 
@@ -164,7 +164,7 @@ Intune 可讓您透過應用程式設定原則設定 iOS 應用程式的 Defende
     > ![Microsoft 端點管理員系統管理 Center7 的影像](images/ios-deploy-7.png)
 
     - 提供設定檔的名稱。 當系統提示您匯入設定設定檔檔案時，請選取上述下載的檔案。
-    - 在 [ **工作分派** ] 區段中，選取您要套用此設定檔的裝置群組。 最佳作法是將此套用至所有受管理的 iOS 裝置。 按 [下一步]。
+    - 在 [ **工作分派** ] 區段中，選取您要套用此設定檔的裝置群組。 最佳作法是將此套用至所有受管理的 iOS 裝置。 按 [下一步 **]**。
     - 當您完成時，請在 [ **複查 + 建立** ] 頁面上，選擇 [ **建立**]。 新的設定檔會顯示在設定檔的清單中。
 
 ## <a name="next-steps"></a>後續步驟

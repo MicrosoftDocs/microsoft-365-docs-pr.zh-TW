@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: 瞭解如何從使用者帳戶取消指派授權。
+description: 您用來取消指派產品授權的方法，取決於您是否要取消指派特定使用者或特定產品的授權。
 ms.date: 07/01/2020
-ms.openlocfilehash: 4ff6a0e5554117cd1fc2d818c04edabc9e33b2a1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f7624432590a5731b57c45c25e7e7dc458a5b8f5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582905"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623586"
 ---
 # <a name="unassign-licenses-from-users"></a>取消指派給使用者的授權
 

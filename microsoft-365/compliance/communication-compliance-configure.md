@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3e84c3266dd802fb6cab12db0c20773838b4e2a9
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: 60b9577c2a42ef080fa6a734e0207225bf197cab
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077186"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624266"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -69,10 +69,10 @@ ms.locfileid: "52077186"
 | 角色 | 角色權限 |
 |:-----|:-----|
 | **通訊相容性** | 使用此角色群組來管理單一群組中組織的通訊相容性。 新增指派管理員、分析員、調查人員和檢視器的所有使用者帳戶，您可以在單一群組中設定通訊合規性許可權。 此角色群組包含所有通訊符合性許可權角色。 這項設定是快速開始使用通訊相容性的最簡單方法，而且很適合不需要個別使用者群組定義個別許可權的組織。 |
-| **通訊合規性管理** | 使用此角色群組開始設定通訊相容性和更新後，以將通訊合規性管理員隔離成定義的群組。 指派給此角色群組的使用者，可以建立、讀取、更新和刪除通訊符合性原則、全域設定和角色群組指派。 指派給此角色群組的使用者無法查看郵件警示。 |
+| **通訊合規性系統管理員** | 使用此角色群組開始設定通訊相容性和更新後，以將通訊合規性管理員隔離成定義的群組。 指派給此角色群組的使用者，可以建立、讀取、更新和刪除通訊符合性原則、全域設定和角色群組指派。 指派給此角色群組的使用者無法查看郵件警示。 |
 | **通訊法規遵從性分析師** | 使用此群組可將許可權指派給將充當通訊相容性分析員的使用者。 指派給此角色群組的使用者可以查看其被指派為檢閱者的原則、查看郵件中繼資料 (非郵件內容) 、升級至其他檢閱者，或傳送通知給使用者。 分析員無法解析待處理的警示。 |
 | **通訊合規性調查員** | 使用此群組可將許可權指派給將充當通訊合規性調查人員的使用者。 指派給此角色群組的使用者可以查看郵件中繼資料和內容、升級至其他檢閱者、升級至 Advanced eDiscovery 案例、將通知傳送給使用者，以及解決警示。 |
-| **通訊規範檢視器** | 使用此群組可將管理通訊報告的許可權指派給使用者。 指派給此角色群組的使用者，可以存取通訊合規性首頁上的所有報告元件，並可以查看所有的通訊符合性報告。 |
+| **通訊合規性檢視者** | 使用此群組可將管理通訊報告的許可權指派給使用者。 指派給此角色群組的使用者，可以存取通訊合規性首頁上的所有報告元件，並可以查看所有的通訊符合性報告。 |
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>選項1：將所有規範使用者指派給通訊合規性角色群組
 
@@ -116,9 +116,9 @@ ms.locfileid: "52077186"
 
 ## <a name="step-2-required-enable-the-audit-log"></a>步驟 2 (必要) ：啟用審核記錄檔
 
-通訊合規性需要稽核記錄，以顯示警示並追蹤檢閱者所採取的補救動作。 「審核記錄檔」會摘要所有與已定義的組織原則相關聯的活動，或在任何時刻的通訊合規性原則變更時。
+通訊合規性需要稽核記錄，以顯示警示並追蹤檢閱者所採取的補救動作。 稽核記錄會摘要說明與所定義組織原則相關聯的所有活動，或任何時候的通訊合規性原則變更。
 
-如需開啟審計的逐步指示，請參閱 [開啟或關閉審計記錄搜尋](turn-audit-log-search-on-or-off.md)。 開啟稽核後，就會顯示一則訊息，表示正在準備稽核記錄，而您可以在準備完成 (約幾小時) 後執行搜尋。 您只需執行這項動作一次。 如需使用審核記錄的詳細資訊，請參閱 [搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
+如需開啟審計的逐步指示，請參閱 [開啟或關閉審計記錄搜尋](turn-audit-log-search-on-or-off.md)。 開啟稽核後，就會顯示一則訊息，表示正在準備稽核記錄，而您可以在準備完成 (約幾小時) 後執行搜尋。 您只須執行此動作一次。 如需使用審核記錄的詳細資訊，請參閱 [搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>步驟 3 (選用) ：設定通訊相容性群組
 
@@ -181,13 +181,13 @@ ms.locfileid: "52077186"
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>步驟 5 (必要) ：建立通訊相容性原則
   
 >[!Important]
->不支援使用 PowerShell 建立及管理通訊相容性原則。 若要建立及管理這些原則，您必須使用[Microsoft 365 通訊規範解決方案](https://compliance.microsoft.com/supervisoryreview)中的原則管理控制項。
+>不支援使用 PowerShell 建立和管理通訊合規性原則。 若要建立及管理這些原則，您必須使用[Microsoft 365 通訊規範解決方案](https://compliance.microsoft.com/supervisoryreview)中的原則管理控制項。
 
 1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://compliance.microsoft.com](https://compliance.microsoft.com)。
 
 2. 在 [Microsoft 365 規範中心] 中，選取 [**通訊符合性**]。
   
-3. 選取 [原則] 索引標籤。
+3. 選取 [原則]**** 索引標籤。
 
 4. 選取 [ **建立原則** ]，以從範本建立及設定新原則，或建立及設定自訂原則。
 
@@ -202,35 +202,35 @@ ms.locfileid: "52077186"
     - 選擇 [有限條件] 欄位，通常是要套用至原則的敏感資訊類型或關鍵字字典。
 
     >[!NOTE]
-    >如果您想要啟用 [光學字元辨識 (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview)若要列印或手寫文字元合原則條件的郵件，請選取 [**自訂原則**  >  **條件與百分比**]，並啟用 **從影像進行的輸出或手寫文字的計算**。
+    >如果您想要啟用 [光學字元辨識 (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr)若要列印或手寫文字元合原則條件的郵件，請選取 [**自訂原則**  >  **條件與百分比**]，並啟用 **從影像進行的輸出或手寫文字的計算**。
 
     如果您選擇使用原則嚮導建立自訂原則，您可以：
 
-    - 將原則命名為 [名稱] 和 [描述]。 建立原則之後，便無法變更原則名稱。
+    - 將原則命名為 [名稱] 和 [描述]。 一旦建立了原則，就無法變更原則名稱。
 
     - 選擇要監督的使用者或群組，包括您組織中的所有使用者、特定使用者和群組，或是您想要排除的其他使用者和群組。
 
     - 選擇原則的檢閱者。 「檢閱者」是個別的使用者，而且所有檢閱者都必須在 Exchange Online 上主控信箱。 在此新增的檢閱者是在調查和修正工作流程中升級提醒時，可選擇的檢閱者。 當檢閱者新增至原則時，會自動收到一封電子郵件，通知他們對原則的指派，並提供審閱程式相關資訊的連結。
 
-    - 選擇要掃描的通道，包括 Exchange、Microsoft Teams、Yammer 或商務用 Skype。 如果您已在 Microsoft 365 中設定連接器，您也會選擇掃描協力廠商來源。
+    - 選擇要掃描的通道，包括 Exchange、Microsoft Teams、Yammer 或商務用 Skype。 如果已在 Microsoft 365 中設定連接器，您也會選擇掃描協力廠商來源。
 
     - 選擇要監視的通訊方向，包括輸入、輸出或內部通訊。
 
-    - 定義通訊相容性原則 [條件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以選擇 [郵寄地址]、[關鍵字]、[檔案類型] 和 [大小相符] 條件。
+    - 定義通訊相容性原則 [條件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以選擇訊息地址、關鍵字、檔案類型和大小比對條件。
 
     - 選擇是否要包含機密資訊類型。 在這個步驟中，您可以選取預設和自訂的機密資訊類型。 在 [通訊合規性原則] 中，從現有的自訂敏感資訊類型或自訂關鍵字字典中挑選。 如有需要，您可以在執行該嚮導之前建立這些專案。 您也可以從通訊合規性原則嚮導中建立新的敏感資訊類型。
 
     - 選擇是否要啟用分類器。 分類器可以偵測電子郵件訊息或其他類型的文字內傳送或接收的不適當語言和圖像。 您可以選擇下列內建的分類符： *威脅*、 *猥褻*、 *目標騷擾*、 *成人影像*、 *Racy 影像* 和 *Gory 影像*。
 
-    - 在符合原則條件的列印或手寫文字中，啟用 [光學字元辨識 (OCR) ](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) 以掃描郵件中內嵌或附加的圖像。 針對自訂原則，您必須設定原則中的一或多個與文字、關鍵字、分類器或機密資訊類型相關聯的條件設定，以啟用光學字元辨識掃描的選取範圍。
+    - 在符合原則條件的列印或手寫文字中，啟用 [光學字元辨識 (OCR) ](communication-compliance-feature-reference.md#optical-character-recognition-ocr) 以掃描郵件中內嵌或附加的圖像。 針對自訂原則，您必須設定原則中的一或多個與文字、關鍵字、分類器或機密資訊類型相關聯的條件設定，以啟用光學字元辨識掃描的選取範圍。
 
-    - 定義要複查的通訊百分比。
+    - 定義要檢閱的通訊「百分比」。
 
     - 檢查您的原則選擇並建立原則。
 
 5. 使用 [自訂原則] 嚮導時，選取 [使用範本或 **提交** 時 **建立原則**]。
 
-6. **已建立您** 的原則頁面會隨著原則的啟動時間及將捕獲哪些通訊的指導方針來顯示。
+6. [已建立您的原則]**** 頁面即會顯示，並提供何時將啟動原則，以及將擷取哪些通訊的指導方針。
 
 ## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>步驟 6 (選用) ：建立公告範本及設定使用者匿名
 
@@ -246,7 +246,7 @@ ms.locfileid: "52077186"
 
 4. 若要啟用匿名，請選取 [ **顯示匿名版本的使用者名**]。
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
 
 6. 流覽至 [ **公告範本** ] 索引標籤，然後選取 [ **建立公告範本**]。
 

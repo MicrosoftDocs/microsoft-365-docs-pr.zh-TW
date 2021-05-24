@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a23f27478d01092705a47d49884f200478348182
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583709"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624606"
 ---
 # <a name="user-submissions-policy"></a>使用者提交原則
 
@@ -39,22 +39,18 @@ ms.locfileid: "52583709"
 
 - [報表網路釣魚增益集](enable-the-report-phish-add-in.md)
 
-- [在 web 上的 Outlook 內建報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (以前稱為 Outlook Web App) 
+- [協力廠商報表工具](#third-party-reporting-tools)
 
-- [iOS 和 Android Outlook 中的內建報告](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
+將使用者報告的郵件傳送至自訂信箱，而不直接傳送至 Microsoft，可讓您的系統管理員選擇性地使用系統 [管理員提交](admin-submission.md)將郵件報告給 Microsoft。
 
   > [!NOTE]
   > 如果[在網頁上的 Outlook 中已停用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)報告，讓使用者在這裡提交，將會覆寫該設定，讓使用者再次在網站上的 Outlook 中報告郵件。
-
-您也可以設定協力廠商郵件報告工具，將郵件轉寄至您指定的信箱。
-
-將使用者報告的郵件傳送至自訂信箱，而不直接傳送至 Microsoft，可讓您的系統管理員選擇性地使用系統 [管理員提交](admin-submission.md)將郵件報告給 Microsoft。
 
 ## <a name="custom-mailbox-prerequisites"></a>自訂信箱必要條件
 
 使用下列文章來設定必要的必要條件，讓使用者報告的郵件進入您的自訂信箱：
 
-- 建立 exchange 郵件流程規則以設定垃圾郵件信賴等級，以略過自訂信箱上的垃圾郵件篩選。 請參閱 [使用 EAC 建立郵件流程規則，](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) 設定郵件的 scl 設定為將 scl 設定為 **略過垃圾郵件篩選**。
+- 建立 exchange 郵件流程規則以設定垃圾郵件信賴等級，以略過自訂信箱上的垃圾郵件篩選。 請參閱 [使用 EAC 建立郵件流程規則，](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) 設定郵件的 scl 設定為將 scl 設定為 **略過垃圾郵件篩選**。
 
 - 關閉自訂信箱中的惡意程式碼的掃描附件。 使用 [在 Office 365 中設定安全附件](set-up-safe-attachments-policies.md)原則，以建立安全附件原則，設定為 [**關閉****安全附件未知惡意程式碼回應**]。
 
@@ -141,9 +137,17 @@ ms.locfileid: "52583709"
 
        完成後，請按一下 [ **確認**]。
 
+## <a name="third-party-reporting-tools"></a>協力廠商報表工具
+
+您可以設定協力廠商郵件報告工具，將報告的郵件傳送至自訂信箱。 唯一的需求是原始郵件會包含在傳送至自訂信箱的郵件中的附件。 (不要只將原始郵件轉寄至自訂信箱) 。
+
+郵件格式設定需求會在下一節中說明。
+
 ## <a name="message-submission-format"></a>郵件提交格式
 
-傳送至自訂信箱的郵件必須遵循特定提交郵件格式。 提交的主旨 (信封標題) 應該使用下列格式：
+若要正確識別原始附加郵件，傳送至自訂信箱的郵件需要特定格式。 如果郵件未使用此格式，則原始附加郵件會永遠識別為網路釣魚提交。
+
+為了正確識別原始附加郵件，傳送至自訂信箱的郵件必須針對主旨 (信封標題) 使用下列語法：
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
@@ -153,7 +157,7 @@ ms.locfileid: "52583709"
 - 2：非垃圾郵件
 - 3：網路釣魚
 
-在下列範例中：
+本範例會使用下列值：
 
 - 將郵件報告為網路釣魚。
 - 網路消息識別碼是49871234-6dc6-43e8-abcd-08d797f20abe。
@@ -163,4 +167,4 @@ ms.locfileid: "52583709"
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
-不遵循此格式的郵件將無法在提交入口網站中正確顯示。
+未遵循此格式的郵件將無法在提交入口網站中正確顯示。

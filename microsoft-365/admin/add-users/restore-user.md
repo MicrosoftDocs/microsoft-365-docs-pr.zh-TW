@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: 瞭解如何還原已刪除的使用者帳戶和所有相關聯的資料。
-ms.openlocfilehash: b7d98c1f49f8252ea9fdda2d863b5b77ac5bea9d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: 在刪除使用者帳戶後的30天內，您可以還原帳戶和所有資料，而且使用者可以使用相同的帳戶登入。
+ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291064"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623818"
 ---
 # <a name="restore-a-user"></a>還原使用者
    
@@ -91,6 +91,8 @@ ms.locfileid: "52291064"
     
 4. 檢查結果，然後選取 [ **關閉**]。
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[刪除使用者](delete-a-user.md)
+[刪除使用者](delete-a-user.md) (文章) \
+ (影片[指派系統管理員角色](assign-admin-roles.md)) \
+ (文章) [指派授權給使用者](../manage/assign-licenses-to-users.md)

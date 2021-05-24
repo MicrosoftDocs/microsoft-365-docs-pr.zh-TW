@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: '透過將自訂麻將牌新增至應用程式啟動器，建立電子郵件、檔、應用程式、SharePoint 網站、外部網站及其他資源的快速連結。 '
-ms.openlocfilehash: 598cfeb75fc811c87519c4479fa8fcab450466c3
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: 透過將自訂麻將牌新增至應用程式啟動器，建立電子郵件、檔、應用程式、SharePoint 網站、外部網站及其他資源的快速連結。
+ms.openlocfilehash: 47f871d66f180225e877a521ef159fc745960507
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327207"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623770"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>新增自訂磚至 App 啟動器
 
-在 Microsoft 365 中，您可以使用 App 啟動器快速且輕鬆地取得您的電子郵件、行事曆、檔及應用程式 ([深入瞭解](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)) 。 這些是您從 Microsoft 365 取得的應用程式，以及您從 [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) 或 [Azure AD](/previous-versions/office/office-365-api/)新增的自訂應用程式。
+在 Microsoft 365 中，您可以使用 App 啟動器快速且輕鬆取得您的電子郵件、行事曆、檔及應用程式 ([深入瞭解](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)) 。 這些是您取得 Microsoft 365 的應用程式，以及您從[SharePoint 存放區](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43)或[Azure AD](/previous-versions/office/office-365-api/)新增的自訂應用程式。
   
 您可以新增自己的自訂磚至應用程式啟動器，用來指向 SharePoint 網站、外部網站、舊版應用程式及其他項目。 自訂圖格會出現在應用程式啟動器的 **所有** 應用程式下方，但您可以將其固定至 **Home** 應用程式，並指示使用者執行相同的作業。 這麼一來，您就可以輕鬆尋找相關的網站、App 和資源來完成您的工作。 在下面這個範例中，名為「Contoso 入口網站」的磚，就是用來存取組織 SharePoint 內部網路網站的自訂磚。 
   
@@ -40,7 +40,7 @@ ms.locfileid: "52327207"
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>在 App 啟動器上新增自訂磚
 
-1. 以全域系統管理員身分登入系統管理中心，移至 [**設定**  >  **組織設定**]，然後選擇 [**組織設定檔**] 索引標籤。
+1. 以全域系統管理員身分登入系統管理中心，移至 **設定**  >  的 **Org 設定**，然後選擇 [**組織設定檔**] 索引標籤。
     
 2. 在 [ **組織設定檔** ] 索引標籤上，選擇 [ **自訂應用程式啟動器**]。
   
@@ -69,7 +69,7 @@ ms.locfileid: "52327207"
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. 在系統管理中心中，移至 [**設定** 組織  >  **設定**  >  **組織設定檔**] 索引標籤。
+1. 在系統管理中心中，移至 [**設定**  >  **Org 設定**  >  **組織設定檔**] 索引標籤。
     
 2. 在 [ **組織設定檔** ] 頁面上，按一下 [   **新增組織的自訂麻將牌**] 旁邊的 [ **編輯**]。
 
@@ -79,6 +79,12 @@ ms.locfileid: "52327207"
     
 若要刪除自訂磚，請從 [**自訂磚**] 視窗中選取拼貼，選取 [**移除磚**  >  **刪除**]。 
   
-## <a name="whats-next"></a>下一步是什麼？
+## <a name="next-steps"></a>後續步驟
 
-除了將磚新增至應用程式啟動器之外，您還可以將應用程式啟動器磚新增至導覽列 ([深入瞭解](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)) 。 若要自訂 Microsoft 365 的外觀與風格，使其符合您組織的品牌，請參閱 [自訂 microsoft 365 主題](../setup/customize-your-organization-theme.md)。
+除了將磚新增至應用程式啟動器之外，您還可以將應用程式啟動器磚新增至導覽列 ([深入瞭解](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)) 。 若要自訂 Microsoft 365 的外觀與風格，以符合組織的品牌，請參閱[自訂 Microsoft 365 主題](../setup/customize-your-organization-theme.md)。
+
+## <a name="related-content"></a>相關內容
+
+[將應用程式固定至使用者的應用程式啟動器](pin-apps-to-app-launcher.md) (文章) \
+[將您的商務使用者 Microsoft 365 升級至最新的 Office 用戶端](../setup/upgrade-users-to-latest-office-client.md) (文章) \
+[在系統管理中心管理增益集](../manage/manage-addins-in-the-admin-center.md) (文章) 

@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 商務版 Premium 管理受保護的裝置
+title: 使用 Microsoft 365 商務進階版管理受保護的裝置
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -27,21 +27,19 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 瞭解如何從透過保護原則管理的裝置中移除公司資料，以及將 Windows 10 裝置重設為其出廠設定。
-ms.openlocfilehash: fdd92e797774a47455d6b4163dfe399bf74d41f3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0b757172ed337e9b2b68b4fcbdf5b102a8c76710
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580147"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624278"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>使用 Microsoft 365 商務版 Premium 管理受保護的裝置
+# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>使用 Microsoft 365 商務進階版管理受保護的裝置
 
-在使用者以其工作帳戶登入裝置或裝置上的 Office 應用程式，將其裝置連線到您的組織之後，您可以使用您設定的原則來保護裝置。 連接的裝置會列在 [ **裝置** ] 頁面上。 如果裝置遺失或遭竊，您可以從此頁面移除任何公司資料。 您也可以將 Windows 10 裝置重設成出廠預設值來清除任何自訂設定。 
+在使用者將其裝置以其工作帳戶登入裝置或 Office 裝置上的應用程式連線至您的組織之後，您可以使用您設定的原則來保護裝置。 連接的裝置會列在 [ **裝置** ] 頁面上。 如果裝置遺失或遭竊，您可以從此頁面移除任何公司資料。 您也可以將 Windows 10 裝置重設成出廠預設值來清除任何自訂設定。 
 
-如需可用於管理裝置之工作的詳細資訊，請參閱下列文章： 
+## <a name="related-content"></a>相關內容
   
-[從裝置移除公司資料](remove-company-data.md)
-  
-[將 Windows 10 裝置重設成出廠預設值](reset-devices-to-factory-settings.md)
-
-[新增受管理裝置](./app-protection-settings-for-android-and-ios.md)
+從裝置 (文章) \[中移除公司資料](remove-company-data.md)
+[將 Windows 10 裝置重設回其出廠設定](reset-devices-to-factory-settings.md) (文章) \
+[新增受管理的裝置](./app-protection-settings-for-android-and-ios.md) (文章) 

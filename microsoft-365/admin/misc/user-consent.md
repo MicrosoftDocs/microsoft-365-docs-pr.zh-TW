@@ -1,5 +1,5 @@
 ---
-title: 管理使用者對 Microsoft 365 應用程式的同意
+title: 在 Microsoft 365 中管理應用程式的使用者同意
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 瞭解使用者對應用程式的同意，以及如何將其開啟以允許協力廠商應用程式存取使用者的 Microsoft 365 資訊。
-ms.openlocfilehash: 1f6f08161d6dd85964f07ec4d48f9f2cc23a1ead
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8f65b50e50b0e0b4d978388463bbd380ca60d4e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914555"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624498"
 ---
-# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>管理使用者對 Microsoft 365 應用程式的同意
+# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>在 Microsoft 365 中管理應用程式的使用者同意
 
-此設定會控制使用者是否可同意使用 OpenID Connect 及 OAuth 2.0 的應用程式，以進行登入及存取資料的要求。 您可以從您自己的組織中建立應用程式，也可以從其他 Office 365 組織或協力廠商來建立應用程式。
+此設定會控制使用者是否可以同意使用 OpenID 連線的應用程式，以及 OAuth 2.0 以進行登錄和要求存取資料。 您可以從您自己的組織中建立應用程式，也可以從另一部 Office 365 組織或協力廠商來建立。
 
 如果您開啟此設定，這些應用程式會要求使用者有權存取您組織的資料，而且使用者可以選擇是否允許。 如果您關閉此設定，系統管理員必須先同意這些應用程式，使用者才能使用它們。 在此情況下，請考慮在 Azure 入口網站中設定系統管理員同意工作流程，讓使用者可以傳送要求以進行系統管理員核准，以使用任何封鎖的應用程式。
 
@@ -40,13 +40,12 @@ ms.locfileid: "50914555"
 
 以下說明如何開啟或關閉應用程式的使用者同意。
 
-1. 在系統管理中心中，移至 [**設定** \> **組織設定**  >  [服務](https://go.microsoft.com/fwlink/p/?linkid=2053743)] 頁面，然後選取 [**使用者同意應用程式**]。
+1. 在系統管理中心中，移至 [**設定** 的 \> **組織設定**  >  [服務](https://go.microsoft.com/fwlink/p/?linkid=2053743)] 頁面，然後選取 [**使用者同意應用程式**]。
 
 2. 在 [ **使用者同意應用程式** ] 頁面上，選取開啟或關閉使用者同意的選項。
 
-## <a name="more-info"></a>詳細資訊
+## <a name="related-content"></a>相關內容 
 <a name="__toc379982114"> </a>
 
-若要瞭解如何在 Azure active directory 中設定同意設定，請參閱 [設定系統管理員同意工作流程](/azure/active-directory/manage-apps/configure-admin-consent-workflow)。
-
-若要瞭解如何管理使用者對應用程式的同意，請閱讀 [對應用程式的同意並評估同意要求](/azure/active-directory/manage-apps/manage-consent-requests)。
+[設定系統管理員同意工作流程](/azure/active-directory/manage-apps/configure-admin-consent-workflow) (篇) \
+ (文章) 中[管理應用程式的同意和評估同意要求](/azure/active-directory/manage-apps/manage-consent-requests)

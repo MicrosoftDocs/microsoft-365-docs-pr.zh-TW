@@ -30,14 +30,16 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 探索 Microsoft 365 商務進階版的設定步驟，包括新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: 37607b483686fc12ac6253ae9f693ec86c073c4e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245037"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624382"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安裝程式嚮導中設定 Microsoft 365 商務進階版
+
+## <a name="watch-overview-of-microsoft-365-setup"></a>觀賞： Microsoft 365 安裝程式的概覽
 
 觀看這段影片，瞭解 Microsoft 365 商務進階版安裝程式的概況。<br><br>
 
@@ -62,7 +64,7 @@ ms.locfileid: "52245037"
 4. 在 **[新增網域]** 步驟中，輸入您要使用的網域名城（例如 contoso.com）。
 
     > [!IMPORTANT]
-    > 如果您在註冊時購買了網域，就不會在此看到 **[新增網域]** 步驟。 改移至 [[新增使用者]](#add-users-and-assign-licenses)。
+    > 如果您在註冊時購買了網域，就不會在此看到 **[新增網域]** 步驟。請改為前往 [[新增使用者]](#add-users-and-assign-licenses)。
 
     ![個人化登入頁面的螢幕擷取畫面。](../media/adddomain.png)
 
@@ -85,7 +87,7 @@ ms.locfileid: "52245037"
 
 1. 例如，如果您的 Microsoft 365 商務進階版訂閱具有現有使用者 (例如，如果您使用 Azure AD 連線) ，您會看到立即指派授權的選項。 請繼續進行，為他們新增授權。
 
-2. 新增使用者之後，您也會看到與您新增之使用者共用認證的選項。 您可以選擇列印認證、透過電子郵件傳送認證，或是下載認證。
+2. 新增使用者之後，系統也會提供與您新增之使用者共用認證的選項。您可以選擇列印認證、透過電子郵件傳送認證，或是下載認證。
 
 ### <a name="connect-your-domain"></a>連接您的網域
 
@@ -97,7 +99,7 @@ ms.locfileid: "52245037"
 1. 設定精靈通常會偵測您的註冊機構，並提供您一個逐步指示連結，讓您更新在註冊機構網站上的 NS 記錄。 如果不是，請[將名稱伺服器變更為設定任何網域註冊機構的 Microsoft 365](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
 
     - 如果您有現有的 DNS 記錄，例如現有網站，但您的 DNS 主機已啟用 [網域連線](/office365/admin/get-help-with-domains/domain-connect)，請選擇 **[為我新增記錄]**。 在 **[選擇您的線上服務]** 頁面，接受所有預設值，並選擇 **[下一步]**，然後在您的 DNS 主機頁面上選擇 **[授權]**。
-    - 如果您的現有 DNS 記錄中有其他 DNS 主機(該主機無法用於網域連線)，您最好能自己管理自己的 DNS 記錄，以確保現有服務保持連線。 如需詳細資訊，請參閱 [網域基本資訊](/office365/admin/get-help-with-domains/dns-basics)。
+    - 如果您的現有 DNS 記錄中有其他 DNS 主機(該主機無法用於網域連線)，您最好能自己管理自己的 DNS 記錄，以確保現有服務保持連線。如需詳情，請查看[網域基本資料](/office365/admin/get-help-with-domains/dns-basics)。
 
         ![開機記錄頁面。](../media/activaterecords.png)
 
@@ -131,6 +133,6 @@ ms.locfileid: "52245037"
 
 您也可以個別安裝 Office。 請參閱[在 PC 或 Mac 上安裝 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)以取得相關指示。
 
-## <a name="see-also"></a>請參閱
+## <a name="related-content"></a>相關內容
 
-[商務用 Microsoft 365 訓練影片](../business-video/index.yml)
+[Microsoft 365 商務訓練](../business-video/index.yml)影片 (連結] 頁面) 

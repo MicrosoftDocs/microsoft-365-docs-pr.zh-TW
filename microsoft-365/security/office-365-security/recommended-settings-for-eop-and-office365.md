@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) 和 Defender Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用 Office 365 的 Defender，您也會取得什麼額外內容？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a2f65db0934c585210827299d46737040df8efb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 04668932747462d2636b466d87c2655d97569657
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537892"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624070"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender Office 365 security 的建議設定
 
@@ -155,7 +155,7 @@ ms.locfileid: "52537892"
 |安全性功能名稱|預設|標準版|嚴格|留言|
 |---|:---:|:---:|:---:|---|
 |**啟用反欺騙保護** <p> _EnableSpoofIntelligence_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
-|**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|在 Outlook 中為未識別的欺騙寄件者新增問號 (？ ) 到寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
+|**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|在 Outlook 中為未識別的欺騙寄件者新增問號 (？ ) 到寄件者的相片。 如需詳細資訊，請參閱[防網路釣魚原則中的詐騙](set-up-anti-phishing-policies.md)。|
 |**如果電子郵件是由不允許哄騙您網域的人所傳送** <p> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件** <p> `Quarantine`|此設定適用于已自動封鎖的欺騙寄件者，如在「[租使用者允許/封鎖」清單](tenant-allow-block-list.md)中的[欺騙智慧真知灼見](learn-about-spoof-intelligence.md)或手動封鎖中所示。|
 |
 
@@ -213,7 +213,7 @@ EOP 客戶會如先前所述，取得基本的反網路釣魚，但 Office 365 �
 |安全性功能名稱|預設|標準版|嚴格|留言|
 |---|---|---|---|---|
 |**啟用反欺騙保護** <p> _EnableSpoofIntelligence_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
-|**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|在 Outlook 中為未識別的欺騙寄件者新增問號 (？ ) 到寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
+|**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|在 Outlook 中為未識別的欺騙寄件者新增問號 (？ ) 到寄件者的相片。 如需詳細資訊，請參閱[防網路釣魚原則中的詐騙](set-up-anti-phishing-policies.md)。|
 |**如果電子郵件是由不允許哄騙您網域的人所傳送** <p> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件** <p> `Quarantine`|此設定適用于已自動封鎖的欺騙寄件者，如在「[租使用者允許/封鎖」清單](tenant-allow-block-list.md)中的[欺騙智慧真知灼見](learn-about-spoof-intelligence.md)或手動封鎖中所示。|
 |
 
@@ -322,6 +322,6 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 - 系統管理員和使用者可以提交誤報 (已標示為錯誤) 和漏報的錯誤電子郵件， (錯誤的電子郵件) Microsoft 進行分析。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-- 若要瞭解如何 **設定** [EOP 服務](set-up-your-eop-service.md)的相關資訊，請使用下列連結 **，並為** [Office 365 設定 Microsoft Defender](defender-for-office-365.md)。 請不要忘記「[防範 Office 365 中威脅](protect-against-threats.md)的有用指示。
+- 若要瞭解如何 **設定** [EOP 服務](/exchange/standalone-eop/set-up-your-eop-service)的相關資訊，請使用下列連結 **，並為** [Office 365 設定 Microsoft Defender](defender-for-office-365.md)。 請不要忘記「[防範 Office 365 中威脅](protect-against-threats.md)的有用指示。
 
 - 您可以在以下位置找到 **Windows 的安全性基準**：[何處可以取得安全性基準？](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)針對 GPO/內部部署選項，以及 [使用安全性基線，設定 intune 中 Windows 10 裝置](/intune/protect/security-baselines)以供 intune 使用的安全性。 最後，在[比較 microsoft defender for endpoint 和 Windows Intune 安全性基準](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)時，可使用 microsoft defender for endpoint 和 Microsoft Intune 安全性基準之間的比較。

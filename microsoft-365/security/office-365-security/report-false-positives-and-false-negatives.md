@@ -13,12 +13,12 @@ ms.collection:
 description: 瞭解如何使用報告郵件功能，在 Outlook 中報告誤報和漏報。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e848595035501f5da7b6099efd2700ebac6f17e3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6f8c4fc327bfd467cdd1d0043c454e222e84125c
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291160"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625110"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>在 Outlook 中報告誤判和漏報
 
@@ -55,7 +55,7 @@ ms.locfileid: "52291160"
 對於收件匣或任何其他電子郵件資料夾（除了垃圾郵件）以外的郵件，請使用下列方法來報告垃圾郵件和網路釣魚郵件：
 
 1. 按一下所選郵件右上角的 [ **其他動作** ] 省略號，按一下下拉式功能表中的 [ **報告郵件** ]，然後選取 [ **垃圾** 郵件] 或 [ **網路釣魚**]。
-  
+
    > [!div class="mx-imgBorder"]
    > ![報告郵件-更多動作](../../media/report-message-more-actions.png)
 
@@ -67,10 +67,10 @@ ms.locfileid: "52291160"
    - 移至 [垃圾郵件] 資料夾（如果已舉報為垃圾郵件）。
 
    - 已刪除，如果已報告為網路釣魚。
-   
+
 ### <a name="report-messages-that-are-not-junk"></a>報告非垃圾郵件
 
-1. 按一下所選郵件右上角的 [ **其他動作** ] 省略號，按一下下拉式功能表中的 [ **報告郵件** ]，然後按一下 [ **非垃圾** 郵件]。  
+1. 按一下所選郵件右上角的 [ **其他動作** ] 省略號，按一下下拉式功能表中的 [ **報告郵件** ]，然後按一下 [ **非垃圾** 郵件]。
 
    > [!div class="mx-imgBorder"]
    > ![報告郵件-更多動作](../../media/report-message-more-actions.png)
@@ -86,4 +86,4 @@ ms.locfileid: "52291160"
 
 - 使用系統管理提交入口網站。 如需詳細資訊，請參閱 [View user 報送 To Microsoft](admin-submission.md#view-user-submissions-to-microsoft)。
 
-- 建立郵件流程規則 (也稱為傳輸規則) 傳送報告郵件的副本。 如需相關指示，請參閱 [使用郵件流程規則來查看您的使用者向 Microsoft 報告的內容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。
+- 建立郵件流程規則 (也稱為傳輸規則) 傳送報告郵件的副本。 如需相關指示，請參閱 [使用郵件流程規則來查看向 Microsoft 報告的使用者](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)。

@@ -20,12 +20,12 @@ ms.collection:
 description: 系統管理員可以深入瞭解 Microsoft Defender 中 Office 365 的安全附件功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab3fd89c02186dfbdb6c9a3d754a4902d8b945f8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc5fabf7b0bb4a649aeb7c4e09155037fc09e9f9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246377"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625002"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的安全附件
 
@@ -124,7 +124,7 @@ ms.locfileid: "52246377"
 - 刪除的郵件。
 - 使用者的信箱搜尋資料夾處於錯誤狀態。
 - Exchange Online 啟用 Exclaimer 的組織。 若要解決此問題，請參閱 [KB4014438](https://support.microsoft.com/help/4014438)。
-- [S/MIME) ](s-mime-for-message-signing-and-encryption.md) 加密郵件。
+- [S/MIME) ](/exchange/security-and-compliance/smime-exo/smime-exo) 加密郵件。
 - 您已在安全附件原則中設定動態傳送動作，但收件者不支援動態傳遞 (例如，收件者是內部部署 Exchange 組織) 中的信箱。 不過， [Office 365 的 Microsoft Defender 中的安全連結](set-up-safe-links-policies.md)可以掃描包含 URLs (的 Office 檔案附件，具體取決於如何設定[安全連結的通用設定](configure-global-settings-for-safe-links.md)) 。
 
 ## <a name="submitting-files-for-malware-analysis"></a>提交檔案以進行惡意程式碼分析

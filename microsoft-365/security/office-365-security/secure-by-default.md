@@ -17,12 +17,12 @@ ms.collection:
 description: '深入瞭解 Exchange Online Protection (EOP 中的 [安全的預設值] 設定) '
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 957ca3b563d4f1466dd537c3ae974a4fd61aa6f2
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346313"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624046"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 預設安全性
 
@@ -77,7 +77,7 @@ ms.locfileid: "52346313"
 > [!NOTE]
 > 在2021年7月，安全性預設會擴充為 Exchange 郵件流程規則 (也稱為傳輸規則) 。 如果您使用郵件流程規則來允許協力廠商網路釣魚模擬或未篩選的傳遞至安全作業信箱，您最後必須消除這些規則，並在 _有可用的功能時_，切換至使用 [高級傳遞原則](configure-advanced-delivery.md)。
 
-唯一允許高信賴網路釣魚郵件旁路篩選的覆寫是郵件流程規則。 若要使用郵件流程規則來略過篩選，請參閱 [使用郵件流程規則設定郵件中的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
+唯一允許高信賴網路釣魚郵件旁路篩選的覆寫是郵件流程規則。 若要使用郵件流程規則來略過篩選，請參閱 [使用郵件流程規則設定郵件中的 SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
 
 在下列案例中，您應該只考慮使用覆寫：
 

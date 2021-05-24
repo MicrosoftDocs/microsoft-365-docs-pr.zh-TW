@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eef1b091b2b705a5ae83cba8dc7d5c22bd021856
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: bc500ff4418787648ee213d6f0f28bdda194e2ca
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297929"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623842"
 ---
 # <a name="contact-support-for-nigeria"></a>奈及利亞的連絡人支援
 
@@ -26,9 +26,9 @@ ms.locfileid: "52297929"
 ## <a name="phone-number"></a>電話號碼
 01 912 5070
 
-選取選項9
+按下商務用2
 
-輸入程式碼7705
+為 Microsoft 365 按1
 
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援︰
