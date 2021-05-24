@@ -16,12 +16,12 @@ metadata:
   description: 取得 Exchange Online Protection (EOP) 雲端主控的電子郵件篩選服務的最常見一般問題的答案。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 9929bd9d90f4e63e130fc478ce974fc373dea396
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: e7ae5858841384c31acf9b785fc0071607ba5f1d
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52333910"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52625362"
 title: EOP 一般常見問題集
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -69,7 +69,7 @@ sections:
   - question: >
       將 EOP 投入實際執行所需的時間多久？
     answer: >
-      當您根據 [設定 EOP 服務](set-up-your-eop-service.md)中所述的步驟變更 MX 記錄，並將郵件流過 EOP 時，篩選會立即開始。 MX 記錄可能需要長達24-48 小時才能透過 DNS 傳播。 在此程式期間，您可以隨時微調保護設定。
+      當您根據 [設定 EOP 服務](/exchange/standalone-eop/set-up-your-eop-service)中所述的步驟變更 MX 記錄，並將郵件流過 EOP 時，篩選會立即開始。 MX 記錄可能需要長達24-48 小時才能透過 DNS 傳播。 在此程式期間，您可以隨時微調保護設定。
   - question: >
       我必須使用 Microsoft 365 的所有功能，才能使用 EOP？ 如果我只想要 EOP 保護，該怎麼辦？
     answer: >

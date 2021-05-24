@@ -16,29 +16,29 @@ metadata:
   description: 系統管理員可以在 Microsoft 合作夥伴和轉銷商的 Microsoft 365 中，查看有關委派管理工作的常見問題及解答。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 836e52139ef2e6191bda26d6fdb92da521dff6bd
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: b62c1d53d4b2a482aeb91cea147ed9feaa4027c4
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52333926"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624083"
 title: 委派管理常見問題集
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 
-  本文提供 microsoft 合作夥伴和轉銷商中 Microsoft 365 的委派管理工作的常見問題和解答。 委派管理包括管理 Exchange Online Protection (EOP) 設定其他承租人 (公司) 的功能。
+  本文提供在 Microsoft 合作夥伴和轉銷商的 Microsoft 365 中，有關委派管理工作的常見問題及解答。 委派管理包括管理其他租使用者 (公司 Exchange Online Protection (EOP) 設定的功能) 。
 sections:
 - name: 忽略
   questions:
   - question: >
       我是轉銷商，我需要管理客戶承租人。 這是如何運作的？
     answer: >
-      如果您是 Microsoft 合作夥伴或轉銷商，而且您已註冊成為 Microsoft advisor，您可以在客戶的 Microsoft 365 組織中要求 _委派管理_ 功能。
+      如果您是 microsoft 合作夥伴或轉銷商，而且您已註冊成為 microsoft advisor，您可以在客戶的 Microsoft 365 組織中要求 _委派管理_ 功能。
 
 
-      委派管理可讓您管理 Microsoft 365 (包括 EOP 設定) 如您是該組織內的系統管理員。 下列清單說明設定委派管理的步驟：
+      委派管理可讓您管理 Microsoft 365 (包括 EOP 設定，) 如同您是該組織內的系統管理員。 下列清單說明設定委派管理的步驟：
 
 
       1. 註冊成為 [Microsoft Office 365 Advisor](https://partner.microsoft.com/?cloudbenefits)。
@@ -54,11 +54,11 @@ sections:
   - question: >
       我是客戶，不是轉銷商。 如何設定 subtenants 的委派系統管理員？
     answer: >
-      「委派管理」只適用于轉銷商和合作夥伴。 不過，有一個範例 PowerShell 腳本，可協助您將原則套用至 subtenants (公司) 。 如需詳細資訊，請參閱 [將 EOP 設定套用至多個承租人的範例腳本](sample-script-for-applying-eop-settings-to-multiple-tenants.md)。
+      「委派管理」只適用于轉銷商和合作夥伴。 不過，有一個範例 PowerShell 腳本，可協助您將原則套用至 subtenants (公司) 。 如需詳細資訊，請參閱 [將 EOP 設定套用至多個承租人的範例腳本](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants)。
   - question: >
       我可以防止我的 subtenant 系統管理員修改我的原則嗎？
     answer: >
       否。 Microsoft 365 目前並未具備這項功能。
   - question: >
       我是否可以在所有的 subtenants 中取得整合報告？
-    answer: 在您管理的公司內整合報告無法在 Microsoft 365 系統管理中心報告中使用。 不過，您可以使用 [Microsoft Graph](/graph/overview)取得報告。
+    answer: 在您管理的公司內整合報告無法在 Microsoft 365 系統管理中心報告中使用。 不過，您可以使用[Microsoft Graph](/graph/overview)取得報告。
