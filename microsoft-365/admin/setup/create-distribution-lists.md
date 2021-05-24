@@ -23,61 +23,59 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 在 Microsoft 365 系統管理中心建立通訊群組或清單，這樣您就可以將電子郵件傳送給群組，而不需輸入每個收件者的名稱。
-ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572246"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635663"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a><span data-ttu-id="bf467-103">在 Microsoft 365 系統管理中心建立通訊群組</span><span class="sxs-lookup"><span data-stu-id="bf467-103">Create distribution groups in the Microsoft 365 admin center</span></span>
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a><span data-ttu-id="cd851-103">在 Microsoft 365 系統管理中心建立通訊群組</span><span class="sxs-lookup"><span data-stu-id="cd851-103">Create distribution groups in the Microsoft 365 admin center</span></span>
   
-<span data-ttu-id="bf467-104">當您想要將電子郵件傳送給使用者群組，而不需輸入每個個別收件者的名稱、通訊群組 (通訊群組清單) 是由特定討論主旨 (（如「行銷」 ) 或共用一般工作，以要求經常進行通訊）的使用者進行組織時使用。</span><span class="sxs-lookup"><span data-stu-id="bf467-104">Used when you want to send email to group of people without having to type each individual recipient's name, distribution groups (distribution lists) are organized by a particular discussion subject (such as "Marketing") or by users who share common work that requires them to communicate frequently.</span></span> <span data-ttu-id="bf467-105">它們也為您提供一種方式，讓您可以自動將電子郵件轉寄至多個電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="bf467-105">They also provide a way for you to automatically forward email to multiple email addresses.</span></span>
+<span data-ttu-id="cd851-104">當您想要將電子郵件傳送給使用者群組，而不需輸入每個個別收件者的名稱、通訊群組 (通訊群組清單) 是由特定討論主旨 (（如「行銷」 ) 或共用一般工作，以要求經常進行通訊）的使用者進行組織時使用。</span><span class="sxs-lookup"><span data-stu-id="cd851-104">Used when you want to send email to group of people without having to type each individual recipient's name, distribution groups (distribution lists) are organized by a particular discussion subject (such as "Marketing") or by users who share common work that requires them to communicate frequently.</span></span> <span data-ttu-id="cd851-105">它們也為您提供一種方式，讓您可以自動將電子郵件轉寄至多個電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="cd851-105">They also provide a way for you to automatically forward email to multiple email addresses.</span></span>
 
-<span data-ttu-id="bf467-106">通訊群組有時稱為通訊群組清單。</span><span class="sxs-lookup"><span data-stu-id="bf467-106">Distribution groups are sometimes called distribution lists.</span></span>
+<span data-ttu-id="cd851-106">通訊群組有時稱為通訊群組清單。</span><span class="sxs-lookup"><span data-stu-id="cd851-106">Distribution groups are sometimes called distribution lists.</span></span>
   
-## <a name="create-a-distribution-group-list"></a><span data-ttu-id="bf467-107">建立通訊群組 (清單) </span><span class="sxs-lookup"><span data-stu-id="bf467-107">Create a distribution group (list)</span></span>
+## <a name="create-a-distribution-group-list"></a><span data-ttu-id="cd851-107">建立通訊群組 (清單) </span><span class="sxs-lookup"><span data-stu-id="cd851-107">Create a distribution group (list)</span></span>
 
 ::: moniker range="o365-worldwide"
 
-<span data-ttu-id="bf467-108">移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="bf467-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
+<span data-ttu-id="cd851-108">移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="cd851-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-<span data-ttu-id="bf467-109">移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="bf467-109">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span></span>
+<span data-ttu-id="cd851-109">移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="cd851-109">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-<span data-ttu-id="bf467-110">移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a> 的系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="bf467-110">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.</span></span>
+<span data-ttu-id="cd851-110">移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a> 的系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="cd851-110">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.</span></span>
 
 ::: moniker-end
 
-1. <span data-ttu-id="bf467-111">Select the app launcher icon and choose **Admin**.</span><span class="sxs-lookup"><span data-stu-id="bf467-111">Select the app launcher icon and choose **Admin**.</span></span>
+1. <span data-ttu-id="cd851-111">Select the app launcher icon and choose **Admin**.</span><span class="sxs-lookup"><span data-stu-id="cd851-111">Select the app launcher icon and choose **Admin**.</span></span>
     
-    <span data-ttu-id="bf467-112">Can't find the app you're looking for?</span><span class="sxs-lookup"><span data-stu-id="bf467-112">Can't find the app you're looking for?</span></span> <span data-ttu-id="bf467-113">從應用程式啟動器中，選取 [ **所有應用程式** ]，以查看您可以使用之應用程式的字母順序清單。</span><span class="sxs-lookup"><span data-stu-id="bf467-113">From the app launcher, select **All apps** to see an alphabetical list of the apps available to you.</span></span> <span data-ttu-id="bf467-114">From there, you can search for a specific app.</span><span class="sxs-lookup"><span data-stu-id="bf467-114">From there, you can search for a specific app.</span></span> 
+    <span data-ttu-id="cd851-112">Can't find the app you're looking for?</span><span class="sxs-lookup"><span data-stu-id="cd851-112">Can't find the app you're looking for?</span></span> <span data-ttu-id="cd851-113">從應用程式啟動器中，選取 [ **所有應用程式** ]，以查看您可以使用之應用程式的字母順序清單。</span><span class="sxs-lookup"><span data-stu-id="cd851-113">From the app launcher, select **All apps** to see an alphabetical list of the apps available to you.</span></span> <span data-ttu-id="cd851-114">From there, you can search for a specific app.</span><span class="sxs-lookup"><span data-stu-id="cd851-114">From there, you can search for a specific app.</span></span> 
     
-2. <span data-ttu-id="bf467-115">選取 \> 左導覽窗格中的 [群組 **群組**]，然後選取 [**新增群組**]。</span><span class="sxs-lookup"><span data-stu-id="bf467-115">Select **Groups** \> **Groups** in the left navigation pane, and then select **Add a group**.</span></span> 
+2. <span data-ttu-id="cd851-115">選取 \> 左導覽窗格中的 [群組 **群組**]，然後選取 [**新增群組**]。</span><span class="sxs-lookup"><span data-stu-id="cd851-115">Select **Groups** \> **Groups** in the left navigation pane, and then select **Add a group**.</span></span> 
       
-3. <span data-ttu-id="bf467-116">在 [ **選擇群組類型** ] 欄位中，選擇 [ **分配**]，然後選擇 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="bf467-116">On the **Choose a group type** field, choose **Distribution**, and then choose **Next**.</span></span>
+3. <span data-ttu-id="cd851-116">在 [ **選擇群組類型** ] 欄位中，選擇 [ **分配**]，然後選擇 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="cd851-116">On the **Choose a group type** field, choose **Distribution**, and then choose **Next**.</span></span>
   
-4. <span data-ttu-id="bf467-117">輸入新群組的名稱、描述和電子郵件別名，並選擇是否要讓組織外部人員傳送電子郵件給群組。</span><span class="sxs-lookup"><span data-stu-id="bf467-117">Enter a name, description, and email alias for your new group, and choose whether you want people outside your organization to send email to the group.</span></span> 
+4. <span data-ttu-id="cd851-117">輸入新群組的名稱、描述和電子郵件別名，並選擇是否要讓組織外部人員傳送電子郵件給群組。</span><span class="sxs-lookup"><span data-stu-id="cd851-117">Enter a name, description, and email alias for your new group, and choose whether you want people outside your organization to send email to the group.</span></span> 
     
-5. <span data-ttu-id="bf467-118">按 [ **新增** ] 建立群組，然後查看群組，然後選擇 [ **關閉**]。</span><span class="sxs-lookup"><span data-stu-id="bf467-118">Press **Add** to create a group, and then review your group and choose **Close**.</span></span> 
+5. <span data-ttu-id="cd851-118">按 [ **新增** ] 建立群組，然後查看群組，然後選擇 [ **關閉**]。</span><span class="sxs-lookup"><span data-stu-id="cd851-118">Press **Add** to create a group, and then review your group and choose **Close**.</span></span> 
     
-6. <span data-ttu-id="bf467-119">若要將使用者新增至通訊群組清單，請參閱 [新增使用者或連絡人至通訊群組](../email/add-user-or-contact-to-distribution-list.md)。</span><span class="sxs-lookup"><span data-stu-id="bf467-119">To add users to your distribution list, see [Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md).</span></span>
+6. <span data-ttu-id="cd851-119">若要將使用者新增至通訊群組清單，請參閱 [新增使用者或連絡人至通訊群組](../email/add-user-or-contact-to-distribution-list.md)。</span><span class="sxs-lookup"><span data-stu-id="cd851-119">To add users to your distribution list, see [Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md).</span></span>
     
-<span data-ttu-id="bf467-120">請參閱如何使用 Outlook 2016 中的群組，以及在[Outlook 中使用連絡人群組 (先前的通訊群組清單) 中](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)的「Outlook」。</span><span class="sxs-lookup"><span data-stu-id="bf467-120">Check out how to use group in Outlook 2016 and Outlook on the web in [Use contact groups (formerly distribution lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39).</span></span> 
+<span data-ttu-id="cd851-120">請參閱如何使用 Outlook 2016 中的群組，以及在[Outlook 中使用連絡人群組 (先前的通訊群組清單) 中](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)的「Outlook」。</span><span class="sxs-lookup"><span data-stu-id="cd851-120">Check out how to use group in Outlook 2016 and Outlook on the web in [Use contact groups (formerly distribution lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39).</span></span> 
   
-<span data-ttu-id="bf467-121">請參閱 [通訊群組問題](/office365/troubleshoot/groups/distribution-list-issues) ，以取得通訊群組清單問題的協助。</span><span class="sxs-lookup"><span data-stu-id="bf467-121">Check out [Distribution group issues](/office365/troubleshoot/groups/distribution-list-issues) for help with distribution list issues.</span></span> 
+<span data-ttu-id="cd851-121">請參閱 [通訊群組問題](/office365/troubleshoot/groups/distribution-list-issues) ，以取得通訊群組清單問題的協助。</span><span class="sxs-lookup"><span data-stu-id="cd851-121">Check out [Distribution group issues](/office365/troubleshoot/groups/distribution-list-issues) for help with distribution list issues.</span></span> 
 
-## <a name="related-content"></a><span data-ttu-id="bf467-122">相關內容</span><span class="sxs-lookup"><span data-stu-id="bf467-122">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="cd851-122">相關內容</span><span class="sxs-lookup"><span data-stu-id="cd851-122">Related content</span></span>
 
-<span data-ttu-id="bf467-123">[使用者的電子郵件設定](../email/office-365-user-email-settings.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="bf467-123">[User email settings](../email/office-365-user-email-settings.md) (article)</span></span>
-
-<span data-ttu-id="bf467-124">[在 Microsoft 365 系統管理中心建立、編輯或刪除安全性群組](../email/create-edit-or-delete-a-security-group.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="bf467-124">[Create, edit, or delete a security group in the Microsoft 365 admin center](../email/create-edit-or-delete-a-security-group.md) (article)</span></span>
-
-<span data-ttu-id="bf467-125">[建立共用信箱](../email/create-a-shared-mailbox.md) (文章)</span><span class="sxs-lookup"><span data-stu-id="bf467-125">[Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)</span></span>
+<span data-ttu-id="cd851-123"> (篇文章的[使用者電子郵件設定](../email/office-365-user-email-settings.md)) </span><span class="sxs-lookup"><span data-stu-id="cd851-123">[User email settings](../email/office-365-user-email-settings.md) (article)</span></span>\
+<span data-ttu-id="cd851-124">[在 Microsoft 365 系統管理中心建立、編輯或刪除安全性群組](../email/create-edit-or-delete-a-security-group.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="cd851-124">[Create, edit, or delete a security group in the Microsoft 365 admin center](../email/create-edit-or-delete-a-security-group.md) (article)</span></span>\
+<span data-ttu-id="cd851-125">[建立共用信箱](../email/create-a-shared-mailbox.md) (文章)</span><span class="sxs-lookup"><span data-stu-id="cd851-125">[Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)</span></span>
