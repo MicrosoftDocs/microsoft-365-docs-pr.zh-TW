@@ -16,7 +16,7 @@ productDirectory:
   title: 使用 Microsoft 365 商務進階版保護遠端工作
   items:
     - title: 觀看
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
       summary: Microsoft 365 商務進階版的五大優點。
       url: 'https://aka.ms/M365BPvideo'
     - title: 取得免費的合作夥伴套件
