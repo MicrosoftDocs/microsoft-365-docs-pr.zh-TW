@@ -20,22 +20,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 深入瞭解 Microsoft 365 系統管理中心。
-ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 在 Microsoft 365 中使用 [簡化模式]，管理常見工作或儀表板視圖，以進行更複雜的設定和工作。
+ms.openlocfilehash: bca3aa7bb071d9334f7a5162a78db89690421f1a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537388"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635887"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心概觀
 
-- [簡化模式中的系統管理中心](#the-admin-center-in-simplified-view)
-- [儀表板視圖中的系統管理中心](#the-admin-center-in-dashboard-view)
+- [簡化模式中的系統管理中心](#watch-the-admin-center-in-simplified-view)
+- [儀表板視圖中的系統管理中心](#watch-the-admin-center-in-dashboard-view)
 
 Microsoft 365 系統管理中心有兩個視圖：簡化的視圖可協助較小的組織管理其最常見的任務。 儀表板視圖包含更複雜的設定和工作。 您可以從系統管理中心上方的按鈕進行切換。
 
-## <a name="the-admin-center-in-simplified-view"></a>簡化模式中的系統管理中心
+## <a name="watch-the-admin-center-in-simplified-view"></a>觀賞：簡化的視圖中的系統管理中心
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
@@ -57,7 +57,7 @@ Microsoft 365 系統管理中心有兩個視圖：簡化的視圖可協助較小
 
 如果您需要協助，請選取 [ **協助 & 支援**]。 搜尋您想要協助的主題，並查看建議的解決方案，或選取耳機以聯繫支援人員，然後輸入您的問題和連絡人資訊。 
 
-## <a name="the-admin-center-in-dashboard-view"></a>儀表板視圖中的系統管理中心
+## <a name="watch-the-admin-center-in-dashboard-view"></a>觀賞：儀表板視圖中的系統管理中心
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -188,4 +188,10 @@ Microsoft 365 系統管理中心完全當地語系化為40語言。
 |越南文 | 六 |
 |Chinese Simplified | zh-cn-hans |
 |Chinese Traditional | zh-cn-hant |
+
+## <a name="related-content"></a>相關內容
+
+[何謂 Microsoft 365 管理員？](what-is-admin.md)  (影片) \
+[新增系統管理員](add-admin.md) (影片) \
+[自訂群組織 (文章的 Microsoft 365 主題](../admin/setup/customize-your-organization-theme.md)) 
   

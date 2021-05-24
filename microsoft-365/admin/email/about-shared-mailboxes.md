@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 當多人需要存取相同的信箱時，會使用共用信箱。 深入瞭解建立共用信箱之前所需注意的事項。
-ms.openlocfilehash: 156ba100cb2c51d1e54a2ee82c45db20845931f9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 601636f03bee93224025d286b7a74fa0f24782fb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535851"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635531"
 ---
 # <a name="about-shared-mailboxes"></a>關於共用信箱
 
@@ -35,7 +35,7 @@ ms.locfileid: "52535851"
 
 擁有群組信箱權限的使用者可以以信箱電子郵件地址的身分傳送或代表其傳送 (如果系統管理員已授與使用者執行該動作的權限)。 這對於說明和支援信箱特別有用，因為使用者可以透過「Contoso 支援」或「大樓 A 接待處」傳送電子郵件。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 [建立共用信箱](create-a-shared-mailbox.md)之前，請先瞭解下列事項：
 
@@ -67,12 +67,8 @@ ms.locfileid: "52535851"
 
 ## <a name="related-content"></a>相關內容
 
-[建立共用信箱](create-a-shared-mailbox.md) (文章) 
-
+[建立共用信箱](create-a-shared-mailbox.md) (文章) \
  (文章) [設定共用信箱](configure-a-shared-mailbox.md)
-
-[將使用者信箱轉換成共用信箱](convert-user-mailbox-to-shared-mailbox.md) (文章) 
-
-[從共用信箱中移除授權](remove-license-from-shared-mailbox.md) (文章) 
-
-[解決共用信箱](resolve-issues-with-shared-mailboxes.md) (文章) 的問題
+[將使用者信箱轉換成共用信箱](convert-user-mailbox-to-shared-mailbox.md) (文章) \
+[從共用信箱中移除授權](remove-license-from-shared-mailbox.md) (文章) \
+[解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md) (文章)

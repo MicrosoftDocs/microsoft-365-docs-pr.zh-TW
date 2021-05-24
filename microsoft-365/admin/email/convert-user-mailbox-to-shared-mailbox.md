@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '瞭解如何將私人信箱轉換為可由數個人員存取的共用信箱，而不只是一個人。 '
-ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0beb85e5a69b72bcd244cd654c399e91ded06ba7
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537616"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635471"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>將使用者信箱轉換為共用信箱
 
 當您將使用者的信箱轉換成共用信箱時，所有的現有電子郵件和行事曆都會保留。 只是在共用信箱中，有好幾個人可以存取，而不是一個人。 在以後的日期，您可以將共用信箱轉換回使用者 (私人) 信箱。
+
+## <a name="before-you-begin"></a>開始之前
 
 **以下是您必須知道的一些重要事項：**
 
@@ -59,7 +61,6 @@ ms.locfileid: "52537616"
 > [!NOTE]
 > 共用信箱不需要個別授權。 但是，如果您想啟用「就地封存」，或在共用信箱中使用「就地保留」或「訴訟資料暫留」，必須指派具有 Exchange Online 封存功能的 Exchange Online Plan 1 或 Exchange Online Plan 2 授權至信箱。
 
-
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>轉換已刪除使用者的信箱
 
 假設您已刪除使用者帳戶，而現在您想要將其舊的信箱轉換成共用信箱。 以下是您需要執行的動作：
@@ -77,7 +78,6 @@ ms.locfileid: "52537616"
 6. 完成後，您可以從使用者的信箱中移除授權。 不要刪除使用者的舊信箱。 共用信箱需要以錨定。
     
 7. 新增成員至共用信箱。
-
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>將共用信箱轉換回使用者的 (私人) 信箱
 
@@ -104,12 +104,8 @@ ms.locfileid: "52537616"
 
 ## <a name="related-content"></a>相關內容
 
-[關於共用信箱](about-shared-mailboxes.md) (文章) 
-
-[建立共用信箱](create-a-shared-mailbox.md) (文章) 
-
+[關於共用信箱](about-shared-mailboxes.md) (文章) \
+[建立共用信箱](create-a-shared-mailbox.md) (文章) \
  (文章) [設定共用信箱](configure-a-shared-mailbox.md)
-
-[從共用信箱中移除授權](remove-license-from-shared-mailbox.md) (文章) 
-
-[解決共用信箱](resolve-issues-with-shared-mailboxes.md) (文章) 的問題
+[從共用信箱中移除授權](remove-license-from-shared-mailbox.md) (文章) \
+[解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md) (文章)

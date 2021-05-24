@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 瞭解如何設定原則，讓使用者可以使用自助密碼重設工具來重設自己的密碼。
-ms.openlocfilehash: 2c79d5611ab2db00f4de5f227b0ec2f411955558
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571850"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634265"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
@@ -74,8 +74,6 @@ ms.locfileid: "52571850"
 
 ## <a name="related-content"></a>相關內容
 
-[為您的組織設定密碼到期原則](../manage/set-password-expiration-policy.md) (文章) 
-
-[設定個別使用者的密碼永不過期](set-password-to-never-expire.md) (文章)
-
+為[您的組織設定密碼到期原則](../manage/set-password-expiration-policy.md) (文章) \
+[將個別使用者的密碼設為永不過期](set-password-to-never-expire.md) (篇文章) \
 [Microsoft 365 商務版訓練](../../business-video/index.yml)影片 (連結] 頁面) 

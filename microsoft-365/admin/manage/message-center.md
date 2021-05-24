@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: 深入瞭解 Microsoft 365 訊息中心及其角色，以追蹤新的和變更的功能和其他重要的宣告。
-ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 51cdf1924b3aaa507a6b41f903a6aea5d81d68f1
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593954"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636043"
 ---
 # <a name="message-center"></a>訊息中心
 
@@ -303,8 +303,6 @@ Microsoft 365 訊息中心會提供許多與 Microsoft 365 服務變更相關的
 
 ## <a name="related-content"></a>相關內容
 
-[設定標準或目標版本選項](../manage/release-options-in-office-365.md) (文章) 
-
-[管理新 (文章中顯示哪些 Office 功能](../manage/show-hide-new-features.md)) 
-
-[商務用訂閱和帳單檔](../../commerce/index.yml) (連結) 
+[設定標準或目標版本選項](../manage/release-options-in-office-365.md) (文章) \
+[管理 (文章中的新功能 Office 功能](../manage/show-hide-new-features.md)) \
+[商務用訂閱和帳單檔](../../commerce/index.yml) (連結頁面) 

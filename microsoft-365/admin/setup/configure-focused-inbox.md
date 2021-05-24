@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
-description: '了解如何為貴組織的所有或特定使用者設定焦點收件匣。 '
-ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+description: 如果您負責為公司中的每個人設定電子郵件設定，本文將說明如何為使用者設定焦點收件匣。
+ms.openlocfilehash: ddd0886988072139a199bfc3f6e8adbbf25ad58b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644509"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623698"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>為組織中的每個人設定焦點收件匣
 
@@ -41,7 +41,7 @@ ms.locfileid: "51644509"
   
 **關閉焦點收件匣：**
   
-下列 PowerShell 範例會 **[關閉]** 組織中的焦點收件匣。 但是，它不會阻止您的使用者使用該功能。 如果使用者想要的話，他們仍然可以在每個用戶端重新啟用焦點收件匣。 
+下列 PowerShell 範例會 **關閉** 組織中的焦點收件匣。但是，它不會阻止您的使用者使用該功能。如果使用者想要使用的話，他們仍然可以在每個用戶端重新啟用焦點收件匣。 
   
 1. [使用遠端 PowerShell 連線到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -168,7 +168,7 @@ ms.locfileid: "51644509"
   
 ### <a name="is-the-focused-inbox-feature-only-available-for-office-2016-clients"></a>焦點收件匣功能「僅適用於」Office 2016 用戶端嗎？
 
-是的，只有 Office 2016 的使用者會受到影響。 該功能不會回溯到 Outlook 2013 或更舊版本。
+是，只有 Office 2016 的使用者會受到影響。該功能不會回溯到 Outlook 2013 或更舊版本。
   
 ### <a name="how-long-does-it-take-for-focused-inbox-changes-to-take-place-in-outlook"></a>焦點收件匣變更需要多久時間才能在 Outlook 中生效？
 
@@ -180,7 +180,7 @@ ms.locfileid: "51644509"
   
 請參閱 Microsoft 最有價值專家 [Tony Redmond](https://www.petri.com/author/tony-redmond) 的這篇文章： [焦點收件匣如何取代 Office 365 內部的待過濾郵件](https://www.petri.com/focused-inbox-office-365)。
   
-### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>可讓使用者各自使用待過濾郵件嗎？ Microsoft 對使用待過濾郵件與焦點收件匣的建議是什麼？
+### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>可讓使用者各自使用待過濾郵件嗎？Microsoft 對使用待過濾郵件與焦點收件匣的建議是什麼？
 
 是，您可以讓使用者使用待過濾郵件功能，並停用焦點收件匣，但最終焦點收件匣會完全取代待過濾郵件，因此，Microsoft 建議您立即移動至焦點收件匣。若要深入了解搭配 Exchange Online 使用待過濾郵件的時機，請參閱此部落格文章：[焦點收件匣和待過濾郵件計劃的更新](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)。
   
@@ -206,5 +206,10 @@ Outlook 會透過選擇具有最新時間戳記的 Cmdlet 來顯示體驗。根�
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>是否可以執行指令碼以查看誰開啟焦點收件匣？
 
-否，這是預設的設計。 焦點收件匣啟用為用戶端設定，因此 Cmdlet 只能告訴您使用者的信箱是否符合用戶端體驗的資格。 有可能發生某些用戶端啟用焦點收件匣，但某些用戶端停用這項功能的情況，比方說，在 Outlook App 啟用焦點收件匣，但在 Outlook 網頁版停用此功能。
+否，這是預設的設計。焦點收件匣啟用為用戶端設定，因此 Cmdlet 只能告訴您使用者的信箱是否符合用戶端體驗的資格。有可能發生某些用戶端啟用焦點收件匣，但某些用戶端停用這項功能的情況，比方說，在 Outlook App 啟用焦點收件匣，但在 Outlook 網頁版停用此功能。
 
+## <a name="related-content"></a>相關內容
+
+[為貴組織設定待過濾郵件](../email/configure-clutter.md) (文章)
+[設置共用信箱的設定](../email/configure-a-shared-mailbox.md) (文章)
+[建立簽章及免責聲明](create-signatures-and-disclaimers.md) (影片)

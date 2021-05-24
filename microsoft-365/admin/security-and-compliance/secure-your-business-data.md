@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: 12bdb9f12c1b0d3072a4c84c006787c26050cc8b
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: b274bb6bcdf71641ff8b196921a501bae9cbba28
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582797"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635959"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保護商務方案 Microsoft 365 的前10種方式
 
@@ -152,7 +152,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 針對每個規則套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
     
 | 設定 | 開啟 Office 檔案的附件之前警告使用者 | 封鎖可能包含勒索代碼或其他惡意程式碼的檔案類型 |
 |:-----|:-----|:-----|
@@ -188,7 +188,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 5. 套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
 
 |設定|拒絕自動轉寄電子郵件至外部網域|
 |---|---|
@@ -326,7 +326,7 @@ Office郵件加密會在傳送郵件時提供兩個保護選項：
 
 3. 在 [**電子郵件以外套用至內容的設定**] 底下，選取 [ **Office 365 應用程式**]，**當使用者按一下 [安全連結] 時**，請勿追蹤，而且 **不讓使用者點擊至原始 URL 的安全連結**。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]。
 
 若要建立新的原則針對您網域中的所有收件者：
 
@@ -334,7 +334,7 @@ Office郵件加密會在傳送郵件時提供兩個保護選項：
 
 2. 套用下表所列的設定。
 
-3. 選取 **[儲存]**。
+3. 選取 [儲存]。
 
 |設定或選項|建議的設定|
 |---|---|
@@ -348,8 +348,6 @@ Office郵件加密會在傳送郵件時提供兩個保護選項：
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 (文章的多重要素驗證](multi-factor-authentication-microsoft-365.md)) 
-
-[管理及監視優先順序帳戶](../setup/priority-accounts.md) (文章) 
-
+[Microsoft 365 (文章的多重要素驗證](multi-factor-authentication-microsoft-365.md)) \
+[管理及監視優先順序帳戶](../setup/priority-accounts.md) (文章) \
 [在系統管理中心中 Microsoft 365 報告](../activity-reports/activity-reports.md) (影片) 

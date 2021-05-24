@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何在 Microsoft 365 系統管理中心中建立具有來賓的團隊，以及如何將團隊加入為來賓。
-ms.openlocfilehash: c05a8d7e10b40c22bb041ce88748eb3dd919d83d
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: b458aaba464121e2e408013d4c8f32cd8a6852c5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593862"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634181"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的來賓使用者
 
@@ -65,4 +65,4 @@ ms.locfileid: "52593862"
 ## <a name="related-content"></a>相關內容
 
 [在 Microsoft 365 群組中管理來賓存取](../create-groups/manage-guest-access-in-groups.md) (文章) \
-[防止來賓加入特定的 Microsoft 365 群組或 Microsoft Teams 小組](../../solutions/per-group-guest-access.md)
+[防止來賓加入特定的 Microsoft 365 群組或 Microsoft Teams 小組](../../solutions/per-group-guest-access.md) (文章) 

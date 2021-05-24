@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多重要素驗證 (MFA) 會同時使用密碼，該密碼應該是強的，另外也是一種驗證方法。
-ms.openlocfilehash: 84d26d0a9908e51ce734e71961d4643a2df3471b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 6e1c43bdd66849a0043c0a1a927f48d925e0806e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623686"
+ms.locfileid: "52635771"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 的多重要素驗證
 
@@ -170,7 +170,7 @@ ms.locfileid: "52623686"
 
 在 Microsoft 365 系統管理中心，您可以設定每位使用者和服務 MFA 設定。
 
-## <a name="your-next-step"></a>下一個步驟
+## <a name="next-steps"></a>後續步驟
 
 [設定 Microsoft 365 的 MFA](set-up-multi-factor-authentication.md)
 

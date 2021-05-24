@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 已刪除的群組會保留30天，您仍可還原此群組。 30天后，就會永久刪除群組及其內容。
-ms.openlocfilehash: 285796ec45b1e6d77d46d7a0c39706f566bb8cf6
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 2c20c2bd3ce91331e7160132047dbf3ecd79c4b8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582677"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635735"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>還原已刪除的 Microsoft 365 群組
 
@@ -83,10 +83,7 @@ ms.locfileid: "52582677"
   
 ## <a name="related-content"></a>相關內容
 
-[使用 PowerShell (文章管理 Microsoft 365 群組](../../enterprise/manage-microsoft-365-groups-with-powershell.md)) 
-  
-[使用 Remove-UnifiedGroup Cmdlet 刪除群組](/powershell/module/exchange/remove-unifiedgroup) (文章) 
-  
-[管理群組連線的小組網站設定](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (文章) 
-  
+[使用 PowerShell (文章管理 Microsoft 365 群組](../../enterprise/manage-microsoft-365-groups-with-powershell.md)) \
+[使用 Remove-UnifiedGroup Cmdlet 刪除群組](/powershell/module/exchange/remove-unifiedgroup) (文章) \
+[管理群組連線的小組網站設定](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (篇) \
 [在 Outlook (文章中刪除群組](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)) 

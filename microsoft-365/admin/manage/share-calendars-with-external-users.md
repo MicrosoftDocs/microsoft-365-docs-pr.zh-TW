@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 啟用 Microsoft 365 系統管理中心的行事曆共用，讓使用者能與組織內部或外部的任何人共用他們的行事曆。
-ms.openlocfilehash: 6f4c215403e16ac6658619e50e6115606f106397
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582713"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635807"
 ---
 # <a name="share-calendars-with-external-users"></a>與外部使用者共用行事曆
 
@@ -50,12 +50,10 @@ ms.locfileid: "52582713"
 
 ## <a name="invite-people-to-access-calendars"></a>邀請人員存取行事曆
 
-一旦啟用共用，行事曆擁有者便可將邀請擴充至特定使用者。 請參閱[在 Outlook Web App 中共用行事曆](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)以取得相關說明。
+一旦啟用共用，行事曆擁有者便可將邀請擴充至特定使用者。 如需相關指示，請參閱[在 Outlook Web App 中共用您](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)的行事曆。
 
 ## <a name="related-content"></a>相關內容
 
-[為網站 (文章) 開啟或關閉外部共用](/sharepoint/change-external-sharing-site)
-
-[Microsoft 365 系統管理中心概觀](../../business-video/admin-center-overview.md) (影片)
-
+[開啟或關閉網站](/sharepoint/change-external-sharing-site) (文章) \ 的外部共用
+[Microsoft 365 系統管理中心 (影片的概覽](../../business-video/admin-center-overview.md)) 
 [管理電子郵件和行事曆](../email/index.yml) (連結頁面) 

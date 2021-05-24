@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何只用兩個測試帳戶來試驗自訂365網域的電子郵件功能。
-ms.openlocfilehash: bdcf86474a7f2edb458075e884c20e56d231df6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2017da30aba3b48b51de26b7907167dc5dd3e6e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197836"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623642"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>從我的自訂網域試驗 Microsoft 365
 
@@ -60,7 +60,7 @@ ms.locfileid: "51197836"
 
 3. 選取您要用網域測試的服務，例如 [電子郵件] 和 [即時訊息]。
 
-5. 依照 **驗證** 網域頁面上的逐步指示，然後選取 **[驗證]**。
+4. 依照 **驗證** 網域頁面上的逐步指示，然後選取 **[驗證]**。
 
     DNS 變更生效的時間可能在幾分鐘到 72 小時之間。
 
@@ -70,7 +70,7 @@ ms.locfileid: "51197836"
 
 1. 在 Exchange 系統管理中心的 **[郵件流程]** 區段中，選取 **[接受的網域]**，然後選取您要修改的網域。
 
-2. 按兩下以開啟視窗，然後選取 **[內部轉送]**。 
+2. 按兩下以開啟視窗，然後選取 **[內部轉送]**。
 
 3. 選取 **[儲存]**。
 
@@ -85,7 +85,7 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 
 1. 在 Exchange 系統管理中心流覽窗格中，選取 **[保護]**，然後選取 **[連線篩選]**。
 
-2. 在 **[IP允許清單]** 中，選擇 **+**，然後新增目前電子郵件提供方的郵件伺服器 IP 位址。 
+2. 在 **[IP允許清單]** 中，選擇 **+**，然後新增目前電子郵件提供方的郵件伺服器 IP 位址。
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>步驟 5：建立使用者帳戶並設定主要 (回覆) 地址
 
@@ -95,11 +95,11 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 
     針對每個帳戶，請選取 **+ 新增一名使用者**，並填寫要求的資訊，包含您想測試的密碼方式。
 
-    要確保使用者的電子郵件一致，**[使用者名稱]** 欄位必須符合使用者目前的電子郵件地址。 
+    要確保使用者的電子郵件一致，**[使用者名稱]** 欄位必須符合使用者目前的電子郵件地址。
 
-3. 選擇適當的授權，按一下 **[下一步]**，然後按一下 **[完成新增]**。 
+3. 選擇適當的授權，按一下 **[下一步]**，然後按一下 **[完成新增]**。
 
-4. 從 **[使用者名稱]** 旁的下拉式清單中，選取您的自訂網域名稱。 
+4. 從 **[使用者名稱]** 旁的下拉式清單中，選取您的自訂網域名稱。
 
 5. 選取 **[建立]** > **[關閉]**。
 
@@ -115,7 +115,7 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 
 確認您已在 Microsoft 365 或 Office 365 中完成下列作業：
 
-1. 若要設定連接器，您需要指派的權限才可以開始。 若要檢查所需的權限，請參閱 [EOP 中的功能權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop)主題中的 Microsoft 365 和 Office 365 連接器項目。
+1. 若要設定連接器，您需要指派的權限才可以開始。 若要檢查所需的權限，請參閱 [Exchange Online 中的功能權限](/exchange/permissions-exo/feature-permissions)主題中的 Microsoft 365 和 Office 365 連接器項目。
 
 2. 如果您想要 EOP 或 Exchange Online，將您電子郵件伺服器的電子郵件轉送至網際網路，請執行下列其中一項：
 
@@ -156,7 +156,7 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 
     例如， “v=spf1 mx include:adatum.com include:spf.protection.outlook.com ~all”。
 
-    如果您還沒有 SPF 記錄，請修改 Microsoft 365 所建議的記錄，以包含您目前電子郵件提供方的網域，並新增 spf.protection.outlook.com。 這會從兩個電子郵件系統授權外寄郵件。
+    如果您沒有 SPF 記錄，請修改 Microsoft 365 所建議的記錄，以包含您目前電子郵件提供者的網域，加上 spf.protection.outlook.com。這會從這兩種電子郵件系統授權外寄郵件。
 
 ### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>步驟 8：設定目前提供方的電子郵件轉寄功能
 

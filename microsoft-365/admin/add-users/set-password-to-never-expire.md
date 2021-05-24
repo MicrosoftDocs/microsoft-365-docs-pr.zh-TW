@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 登入您的 Microsoft 365 系統管理員帳戶，將某些個別使用者密碼設定為永不到期，使用 Windows PowerShell。
-ms.openlocfilehash: 0747e0bfe8a7389db554d5d6a7f685605e013306
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 12c717d8d625b0135f185b1af131db00e9762c73
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571922"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635555"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>設定個別使用者的密碼永不過期
 
@@ -128,6 +128,6 @@ Run one of the following commands:
 
 ## <a name="related-content"></a>相關內容
 
-[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
-
-[重設密碼](../add-users/reset-passwords.md) (文章)
+[讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章) \
+ (篇文章) 中[重設密碼](../add-users/reset-passwords.md)
+[為您的組織設定密碼到期原則](../manage/set-password-expiration-policy.md) (文章) 

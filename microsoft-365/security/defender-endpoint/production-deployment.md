@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 6b49565c45c1f38d0d2ce71b097af079782ba4de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476298"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636191"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>設定 Microsoft Defender for Endpoint 部署
 
@@ -35,7 +35,7 @@ ms.locfileid: "51476298"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 為端點部署 Defender 是三個階段的處理常式：
 
@@ -52,13 +52,13 @@ ms.locfileid: "51476298"
 
 
 >[!NOTE]
->為便於您透過一般部署，此案例只會涵蓋 Microsoft 端點 Configuration Manager 的使用。 Defender for Endpoint 支援使用其他上架工具，但不涵蓋部署指南中的那些案例。 如需詳細資訊，請參閱 [在 Microsoft Defender For Endpoint 中的板載裝置](onboard-configure.md)。
+>為便於您透過一般部署，此案例只會涵蓋 Microsoft Endpoint Configuration Manager 的使用。 Defender for Endpoint 支援使用其他上架工具，但不涵蓋部署指南中的那些案例。 如需詳細資訊，請參閱 [在 Microsoft Defender For Endpoint 中的板載裝置](onboard-configure.md)。
 
 ## <a name="check-license-state"></a>檢查授權狀態
 
-檢查授權狀態以及是否已正確布建，可透過系統管理中心或 **Microsoft Azure 入口網站** 進行。
+檢查授權狀態以及是否已正確布建，可透過系統管理中心或透過 **Microsoft Azure 入口網站** 進行。
 
-1. 若要查看您的授權，請移至 **Microsoft azure 入口網站** ，並流覽至 [microsoft azure 入口網站授權區段](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看您的授權，請移至 **Microsoft Azure 入口網站**，並流覽至「 [Microsoft Azure 入口網站授權」一節](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![Azure 授權頁面影像](images/atp-licensing-azure-portal.png)
 
@@ -73,7 +73,7 @@ ms.locfileid: "51476298"
 
 若要存取您公司所提供的授權，以及檢查授權的狀態，請移至系統管理中心。
 
-1. 從 **夥伴入口網站** 中，選取 [ **管理服務 > Office 365**]。
+1. 從 **夥伴入口網站** 中，選取 [**管理服務] > Office 365**]。
 
 2. 按一下 [ **合作夥伴入口網站** ] 連結時，將會自行開啟 [ **管理員** ] 選項，並可讓您存取客戶系統管理中心。
 
@@ -82,41 +82,14 @@ ms.locfileid: "51476298"
 
 
 ## <a name="tenant-configuration"></a>租使用者設定
+上架至 Microsoft Defender for Endpoint 非常簡單。 從 [流覽] 功能表中，選取 [端點] 區段下的任何專案，或任何 Microsoft 365 的 Defender 功能（例如事件、搜尋、動作中心或威脅分析）以啟動上架處理常式。
 
-第一次存取 Microsoft Defender Security Center 時，會有一個嚮導可引導您逐步完成一些初始步驟。 在安裝程式嚮導結束時，會為建立端點的 Defender 專用雲端實例。 最簡單的方法是從 Windows 10 用戶端裝置執行這些步驟。
-
-1. 在網頁瀏覽器中，流覽至 <https://securitycenter.windows.com> 。
-
-    ![設定 Microsoft Defender for Endpoint 的許可權的映射](images/atp-setup-permissions-wdatp-portal.png)
-
-2. 若要透過試用許可證，請移至連結 (<https://signup.microsoft.com/Signup?OfferId=6033e4b5-c320-4008-a936-909c2825d83c&dl=WIN_DEF_ATP&pc=xxxxxxx-xxxxxx-xxx-x>) 
-
-    授權步驟完成後，就會顯示 [ **歡迎** ] 畫面。
-3. 請流覽驗證步驟。
-
-    ![設定入口網站的歡迎畫面影像](images/welcome1.png)
-
-4. 設定偏好設定。
-
-   **資料儲存位置** -請務必正確設定。 決定客戶想要主要寄存的位置：美國、歐盟或 UK。 您無法變更此設定之後的位置，而且 Microsoft 不會從指定的地理位置傳輸資料。 
-
-    **資料保留** -預設值為六個月。
-
-    **啟用預覽功能** -預設值為 on，以後可以變更。
-
-    ![設定中的地理位置影像](images/setup-preferences.png)
-
-5. 選取 **[下一步]**。
-
-     ![最終喜好設定的影像](images/setup-preferences2.png)
-
-6. 選取 [ **繼續**]。
-
+在網頁瀏覽器中，流覽至 [ [Microsoft 365 的安全性中心](https://security.microsoft.com)]。
 
 ## <a name="network-configuration"></a>網路設定
 如果組織不需要端點使用 Proxy 來存取網際網路，請略過本節。
 
-適用於端點的 Microsoft Defender 感應器需要 Microsoft Windows HTTP (WinHTTP) 回報感應器資料，並與適用於端點的 Microsoft Defender 服務通訊。 內嵌的 Microsoft Defender for Endpoint 感應器會在使用 LocalSystem 帳戶的系統上下文中執行。 感應器使用 Microsoft Windows HTTP Services （WinHTTP）來啟用與適用於端點的 Microsoft Defender 雲端服務的通訊。 WinHTTP 設定設定與 Windows Internet (WinINet) Internet 流覽 proxy 設定無關，而且只能使用下列探索方法來探索 proxy 伺服器：
+適用於端點的 Microsoft Defender 感應器需要 Microsoft Windows HTTP (WinHTTP) 回報感應器資料，並與適用於端點的 Microsoft Defender 服務通訊。 內嵌的 Microsoft Defender for Endpoint 感應器會在使用 LocalSystem 帳戶的系統上下文中執行。 感應器使用 Microsoft Windows HTTP Services （WinHTTP）來啟用與適用於端點的 Microsoft Defender 雲端服務的通訊。 WinHTTP 設定設定與 Windows internet (WinINet) Internet 流覽 proxy 設定無關，而且只能使用下列探索方法來探索 proxy 伺服器：
 
 **自動探索方法：**
 
@@ -136,7 +109,7 @@ ms.locfileid: "51476298"
 
 設定登錄型靜態 proxy，只允許 Microsoft Defender for Endpoint 感應器報告診斷資料，並在電腦不允許連線至網際網路時，與 Microsoft Defender 的端點服務通訊。 靜態 Proxy 可以透過群組原則 (GP) 設定。 可以在以下位置找到群組原則：
 
- - 系統管理範本 \> Windows 元件 \> 資料收集和預覽組建 \> 設定連線使用者經驗和遙測服務的已驗證 Proxy 使用方式
+ - 系統管理範本 \> Windows 元件 \> 資料收集和預覽版本 \> 設定連線使用者經驗和遙測服務的已驗證 Proxy 使用方式
      - 設定為 **啟用** ，並選取 [ **停用已驗證的 Proxy 使用**
 
 1. 開啟 [群組原則管理主控台]。
@@ -147,7 +120,7 @@ ms.locfileid: "51476298"
 4. 選取 **已啟用**。
 5. 選取 [ **停用已驗證的 Proxy 使用**]。
    
-6. 流覽至系統 **管理範本 \> Windows 元件 \> 資料收集和預覽組建 \> 設定連線使用者經驗和遙測**。
+6. 流覽至系統 **管理範本 \> Windows 元件 \> 資料收集和預覽版本 \> 設定連線使用者經驗和遙測**。
     ![群組原則設定設定的影像](images/atp-gpo-proxy2.png)
 7. 選取 **已啟用**。
 8. 輸入 **Proxy 伺服器名稱**。
@@ -189,10 +162,10 @@ ms.locfileid: "51476298"
 
 ###  <a name="proxy-configuration-for-down-level-devices"></a>底層裝置的 Proxy 設定
 
-Down-Level 裝置包含 windows 7 SP1 和 Windows 8.1 工作站，以及 windows server CB 2016 之前的 windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 和 Windows Server 1803 版本。 這些作業系統會將 proxy 設定為 Microsoft Management Agent 的一部分，以處理從端點到 Azure 的通訊。 如需如何在這些裝置上設定 proxy 的詳細資訊，請參閱《 Microsoft Management Agent Fast Deployment 指南》。
+Down-Level 裝置包含 Windows 7 SP1 和 Windows 8.1 工作站，以及 Windows server CB 1803 之前 Windows Server 2012 server 2008 R2、Windows Server 2012、Windows Server 2016 r2 及 Windows 版本。 這些作業系統會將 proxy 設定為 Microsoft Management Agent 的一部分，以處理從端點到 Azure 的通訊。 如需如何在這些裝置上設定 proxy 的詳細資訊，請參閱《 Microsoft Management Agent Fast Deployment 指南》。
 
 ### <a name="proxy-service-urls"></a>Proxy 服務 URLs
-只有在您有 Windows 10、版本1803或更新版本的裝置時，才需要在其中包含 v20 的 URLs。 例如， ```us-v20.events.data.microsoft.com``` 只有當裝置在 Windows 10，版本1803或更新版本上時才需要。
+只有當您具有 Windows 10、版本1803或更新版本的裝置時，才需要在其中包含 v20 的 URLs。 例如， ```us-v20.events.data.microsoft.com``` 只有在裝置位於 Windows 10，版本1803或更新版本時才需要。
  
 
 如果 proxy 或防火牆封鎖匿名流量，當 Microsoft Defender for Endpoint 感應器從系統內容連線時，請確定所列的 URLs 允許匿名流量。
@@ -226,6 +199,6 @@ Down-Level 裝置包含 windows 7 SP1 和 Windows 8.1 工作站，以及 windows
 > [!NOTE]
 > 如果您是美國政府客戶，請參閱適用于 US 政府頁面的 [Defender For Endpoint](gov.md#service-backend-ip-ranges) 中的對應章節。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 ![* * 階段3：板載 * *](images/onboard.png) <br>[階段3：板載](onboarding.md)：對服務的板載裝置，使 Microsoft Defender for Endpoint service 可以從這些裝置取得感應器資料。 

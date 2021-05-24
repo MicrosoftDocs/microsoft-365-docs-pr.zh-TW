@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: 在 Microsoft 365 中以通訊群組清單形式傳送電子郵件，這樣當成員回復郵件時，就會從通訊群組清單中回復。
-ms.openlocfilehash: 01bff7e1d2515670c5a6faa199355e7de591f1fb
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: eb5ce4a08fae13ee0d2631499a8df1724ef3ef66
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624534"
+ms.locfileid: "52635711"
 ---
 # <a name="send-email-as-a-distribution-list"></a>以通訊群組清單傳送電子郵件
 
@@ -66,4 +66,4 @@ ms.locfileid: "52624534"
 
 [在 Microsoft 365 系統管理中心建立、編輯或刪除安全性群組](../email/create-edit-or-delete-a-security-group.md) (文章) \
 [電子郵件](../email/email-collaboration.md) 共同作業 (文章) \
-[新增使用者或連絡人至通訊群組](../email/add-user-or-contact-to-distribution-list.md)
+[將使用者或連絡人新增至通訊群組](../email/add-user-or-contact-to-distribution-list.md) (文章) 

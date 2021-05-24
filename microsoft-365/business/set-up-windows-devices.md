@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 為 Microsoft 365 商務進階版使用者設定執行 Windows 10 專業版的 Windows 裝置，以啟用集中式管理及安全性控制。
-ms.openlocfilehash: 3d32a033a1a1c89d7d4d557cea6a28e24543ab2c
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 7a9c75f6ec14605225d40c103c18e62937e773bf
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594014"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635867"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>設定 Microsoft 365 商務進階版使用者的 Windows 裝置
 
@@ -46,7 +46,7 @@ ms.locfileid: "52594014"
   
 請參閱 Verify the device the the the the device the the [AZURE AD](#verify-the-device-is-connected-to-azure-ad) to verify the the the the the the the the the the
 
-觀賞有關將 Windows 連接至 Microsoft 365 的簡短影片。<br><br>
+## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>觀賞：連線您的電腦以 Microsoft 365 商務版
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 

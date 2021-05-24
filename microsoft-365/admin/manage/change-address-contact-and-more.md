@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 對您的組織設定檔進行變更，例如組織名稱、位址、電話、技術連絡人及電子郵件。
 ms.date: 03/30/2021
-ms.openlocfilehash: 9fc985f640f1544bf30ea1a6ccdd5c1ca19aa81f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 2646d2d83c72caa8a56f6658f005812f087101cb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572126"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635399"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>變更貴組織的地址、技術連絡人等等
   
@@ -81,8 +81,6 @@ ms.locfileid: "52572126"
 
 ## <a name="related-content"></a>相關內容
 
-[從不同的位址傳送電子郵件](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (文章) 
-
-[變更使用者名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md) (文章) 
-
+[從不同的位址傳送電子郵件](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (文章) \
+[變更使用者名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md) (篇) \
 [在 Microsoft 365 中設定電子郵件轉寄](../email/configure-email-forwarding.md) (文章)

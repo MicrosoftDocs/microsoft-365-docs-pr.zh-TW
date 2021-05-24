@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 瞭解如何在 Microsoft 365 中變更導覽列頂端的預設主題，並加以自訂，使其符合您公司的徽標或色彩。
-ms.openlocfilehash: b2177eebc31f34f7067c8464724623e4bf7d4870
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 5f6536d575ef055cda7a97a0860315c491100a1d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593826"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635923"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自訂群組織的 Microsoft 365 主題
 
@@ -74,7 +74,7 @@ ms.locfileid: "52593826"
 
 2. 在 [**群組**] 底下，您最多可以選擇5個 Microsoft 365 群組可以查看您的群組主題，而不是使用預設主題。 您也可以防止使用者覆寫其主題，並顯示使用者的顯示名稱。
 
-3. 選取 **[儲存]**。
+3. 選取 [儲存]。
 
 :::image type="content" source="../../media/default-theme-general-users.png" alt-text="螢幕擷取畫面： [一般] 索引標籤顯示組織中使用者群組的預設主題":::
 
@@ -152,10 +152,9 @@ Text、icon 或 button 色彩及背景色彩之間的建議對比比率為4.5：
 
 ### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>如果我定義主題，將會使用 Microsoft 365 中的哪一個位置呢？
 
-組織中的所有人都會出現主題的上方導覽列中，做為 Microsoft 365 套件標頭的一部分。  
+任何主題都會出現在組織中每個人的上方導覽列中，做為 Microsoft 365 套件標頭的一部分。  
   
 ## <a name="related-content"></a>相關內容
 
-[將自訂圖格新增至 [我的應用程式] 頁面與應用程式啟動器](../manage/customize-the-app-launcher.md) (文章) 
-
+[將自訂圖格新增至 [我的應用程式] 頁面及應用程式啟動器中](../manage/customize-the-app-launcher.md) (篇) \
 [管理員 (文章的 Microsoft 365 群組的概覽](../create-groups/office-365-groups.md)) 

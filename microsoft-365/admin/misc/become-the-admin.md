@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 瞭解如何驗證您的電子郵件和網域擁有權，以接管由自助使用者登錄 Microsoft 365 所建立的非管理租使用者。
-ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593930"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635983"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>執行內部系統管理員接管
 
- 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
 
 如果您是系統管理員，而且想要接管自助使用者註冊所建立的非管理租使用者，您可以使用內部系統管理員接管。
 
@@ -68,10 +68,7 @@ ms.locfileid: "52593930"
   
 ## <a name="related-content"></a>相關內容
 
-YouTube：[針對 Power BI 和 Microsoft 365 (影片進行 IT 系統管理員接管的3個步驟](https://www.youtube.com/watch?v=xt5EsrQBZZk)) 
-
-[AZURE AD 中的系統管理接管](/azure/active-directory/users-groups-roles/domains-admin-takeover) (文章) 
-
-[在您的組織中使用「自助註冊](self-service-sign-up.md) 」 (文章) 
-  
+YouTube：[針對 Power BI 和 Microsoft 365 (影片進行 IT 系統管理員接管的3個步驟](https://www.youtube.com/watch?v=xt5EsrQBZZk)) \
+[AZURE AD 中的系統管理接管](/azure/active-directory/users-groups-roles/domains-admin-takeover) (文章) \
+[在您的組織中使用「自助註冊](self-service-sign-up.md) 」 (文章) \
 [瞭解 Power BI 服務系統管理員角色](/power-bi/service-admin-role) (文章) 

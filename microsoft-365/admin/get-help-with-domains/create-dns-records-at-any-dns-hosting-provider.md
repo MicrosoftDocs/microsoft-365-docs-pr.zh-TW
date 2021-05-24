@@ -20,12 +20,12 @@ description: 驗證網域並更新註冊機構帳戶中的 DNS 記錄，將任�
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: facdd460bd3197e39dd6d4d9f4a5450dc972bf03
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 62b6793dd97e146b703c82e0ba23f4d7414025b6
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537556"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623974"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>新增 DNS 記錄以連接您的網域
 
@@ -170,7 +170,5 @@ SPF 是設計來協助防止詐騙，但是仍有 SPF 無法防護的詐騙技�
 ## <a name="related-content"></a>相關內容
 
 [運用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365](change-nameservers-at-any-domain-registrar.md) (文章)
-
 [尋找並修正新增網域或 DNS 記錄之後所發生的問題](find-and-fix-issues.md) (文章)
-
 [管理網域](index.yml) (連結頁面)

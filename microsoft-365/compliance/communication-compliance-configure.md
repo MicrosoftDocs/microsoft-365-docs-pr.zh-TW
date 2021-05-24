@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 60b9577c2a42ef080fa6a734e0207225bf197cab
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: eed486120673abc513490f4892069ee8fd9bba21
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624266"
+ms.locfileid: "52636155"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -128,7 +128,7 @@ ms.locfileid: "52624266"
 
 | **原則成員** | **支援的群組** | **不支援的群組** |
 |:-----|:-----|:-----|
-|監督的使用者 <br> 非監督的使用者 | 通訊群組 <br> Microsoft 365 群組 | 動態通訊群組 <br> 嵌套通訊群組 <br> 擁有郵件功能的安全性群組 <br> 使用動態成員資格 Microsoft 365 群組 |
+|監督的使用者 <br> 排除的使用者 | 通訊群組 <br> Microsoft 365 群組 | 動態通訊群組 <br> 嵌套通訊群組 <br> 擁有郵件功能的安全性群組 <br> 使用動態成員資格 Microsoft 365 群組 |
 | 檢閱者 | 無 | 通訊群組 <br> 動態通訊群組 <br> 嵌套通訊群組 <br> 擁有郵件功能的安全性群組 |
   
 當您指派原則中的通訊群組時，該原則會監控所有的電子郵件，並從通訊群組中的每個使用者 Teams 聊天。 當您在原則中指派 Microsoft 365 群組時，該原則會監控傳送至該群組的所有電子郵件和 Teams 聊天，而不是每個群組成員所收到的個別電子郵件和聊天。

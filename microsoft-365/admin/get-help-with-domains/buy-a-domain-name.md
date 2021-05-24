@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 瞭解如何在 Microsoft 365 中購買功能變數名稱。
-ms.openlocfilehash: 53c71796c09f08d1f50c58704b8dd95c1a241518
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537568"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635459"
 ---
 # <a name="buy-a-domain-name"></a>購買網域名稱
 
@@ -37,7 +37,7 @@ ms.locfileid: "52537568"
 
  *若要新增、修改或移除網域，您 **必須** 是 [企業或企業方案](https://products.office.com/business/office)的 **全域系統管理員**。這些變更會影響整個承租人、*自訂* 的系統管理員或 *一般使用者* 無法進行這些變更。*  
 
- 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
   
 ## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登入並前往設定 \> 網域 \> 購買網域
 
@@ -119,8 +119,6 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 ## <a name="related-content"></a>相關內容
 
-[新增網域至 Microsoft 365](../setup/add-domain.md) (文章) 
-
-[網域常見問題解答](../setup/domains-faq.yml) (篇) 
-
+[將網域新增至 Microsoft 365](../setup/add-domain.md) (文章) \
+[網域常見問題解答](../setup/domains-faq.yml) (篇) \
 [更新 DNS 記錄以將您的網站與目前的主機服務提供者](../dns/update-dns-records-to-retain-current-hosting-provider.md) (文章) 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 365 群組，您可以讓人員群組存取共用資源的集合，以促進團隊合作的 Microsoft 365。
-ms.openlocfilehash: bfcd2d27bc1d63fcc8b306267efe21c3f9564522
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582737"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635747"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>系統管理員的 Microsoft 365 群組概觀 (部分機器翻譯)
 
@@ -119,12 +119,8 @@ Microsoft 365 群組可搭配 Azure Active Directory 使用。 您取得的群�
 
 ## <a name="related-content"></a>相關內容
 
-[深入瞭解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (文章) 
-
-[將通訊群組清單升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md) (文章) 
-
-[使用 PowerShell (文章管理 Microsoft 365 群組](../../enterprise/manage-microsoft-365-groups-with-powershell.md)) 
-
-[SharePoint 線上限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (文章) 
-
+[深入瞭解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (文章) \
+[將通訊群組清單升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md) (文章) \
+[使用 PowerShell (文章管理 Microsoft 365 群組](../../enterprise/manage-microsoft-365-groups-with-powershell.md)) \
+[SharePoint 線上限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (文章) \
 [在 Microsoft Stream 中組織群組和頻道](/stream/groups-channels-organization) (文章) 

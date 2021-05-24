@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用集中式增益集，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: c103cfc4e3e7b404ea4d31d81bc30d7990a922dc
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593966"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636055"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在系統管理中心管理增益集
 
@@ -157,12 +157,8 @@ Office 增益集可協助您個人化檔，並簡化存取網頁上資訊的方�
 
 ## <a name="related-content"></a>相關內容
 
-[在系統管理中心部署增益集](./manage-deployment-of-add-ins.md) (文章) 
-
-深入瞭解建立及建立[Office 增益集](/office/dev/add-ins/overview/office-add-ins) (文章) 
-  
-[使用集中式部署 PowerShell Cmdlet 來管理增益集](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (文章) 
-  
-[疑難排解：使用者未看到增益集](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (文章) 
-
+[在系統管理中心中部署增益集](./manage-deployment-of-add-ins.md) (文章) \
+深入瞭解建立及建立[Office 增益集](/office/dev/add-ins/overview/office-add-ins) (文章) \
+[使用集中式部署 PowerShell Cmdlet 來管理增益集](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (文章) \
+[疑難排解：使用者未看到增益集](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (文章) \
 [從 Microsoft Store (文章中的未成年人和取得增益集](./minors-and-acquiring-addins-from-the-store.md)) 

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 瞭解如何使用 Windows AutoPilot 為您的公司設定新的 Windows 10 裝置，使其可供員工使用。
-ms.openlocfilehash: cc5495f42214b222a70b281a713be782b1bf5c4f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: e178e7df220e89605502d9ed400265bcd963e57e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623666"
+ms.locfileid: "52636099"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用逐步指南新增 Autopilot 裝置和設定檔
 
@@ -45,8 +45,6 @@ ms.locfileid: "52623666"
 - 尚未透過 Windows 全新體驗的新裝置
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用設定指南建立裝置和設定檔
-
-[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
 若尚未建立裝置群組或設定檔，最好的入門方式是使用逐步指南。 您也可以 [新增裝置](create-and-edit-autopilot-devices.md) ，並 [將設定檔指派](create-and-edit-autopilot-profiles.md) 給它們，而不需使用輔助線。 
   

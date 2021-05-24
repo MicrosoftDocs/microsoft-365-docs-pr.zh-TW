@@ -22,16 +22,16 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 瞭解如何從 Microsoft 365 中移除舊的網域，並將使用者和群組移至另一個網域或取消您的訂閱。
-ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a8e636059a84a2086844a8ff139d240268ee5b19
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582929"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635699"
 ---
 # <a name="remove-a-domain"></a>移除網域
   
- 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
   
 您移除的是您的網域，因為您想要將它新增至不同的 Microsoft 365 訂閱計畫嗎？ 還是您只想取消訂閱？ 您可以[變更您的方案或訂閱](../../commerce/subscriptions/switch-to-a-different-plan.md)或[取消您的訂閱](../../commerce/subscriptions/cancel-your-subscription.md)。
   
@@ -207,7 +207,7 @@ ms.locfileid: "52582929"
   
 如果您有數百名或數千名使用者，請使用 PowerShell 來查詢所有使用者，然後將他們移到另一個網域。否則，UI 中很可能會遺失一些使用者，當您隨後想移除此網域時，將無法執行且不知道原因為何。如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。若要設定預設網域，請使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
   
-## <a name="still-need-help"></a>仍需要協助嗎？
+## <a name="still-need-help"></a>是否仍需要協助？
 
 ::: moniker range="o365-worldwide"
 
@@ -220,8 +220,6 @@ ms.locfileid: "52582929"
 
 ## <a name="related-content"></a>相關內容
 
-[網域常見問題解答](../setup/domains-faq.yml) (篇) 
-
+[網域常見問題解答](../setup/domains-faq.yml) (篇) \
 [切換至不同 Microsoft 365 的 business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (文章) 
-
  (文章) [取消您的訂閱](../../commerce/subscriptions/cancel-your-subscription.md)

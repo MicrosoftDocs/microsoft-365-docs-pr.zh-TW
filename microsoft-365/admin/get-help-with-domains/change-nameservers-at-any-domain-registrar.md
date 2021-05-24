@@ -25,16 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，以便您的服務（如電子郵件和商務用 Skype 線上）使用您自己的功能變數名稱。
-ms.openlocfilehash: 447cc69aa2c4c3edcf1c4c6a2435cdc27fc22cd2
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c6394b505e025c565713aae753879601f5a6aecf
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582989"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635435"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
- 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
   
 請遵循下列指示，在 Microsoft 365 中新增及設定您的網域，這樣的服務（例如電子郵件和 Teams）會使用您自己的功能變數名稱。 若要這麼做，您將會驗證您的網域，然後將網域的名稱伺服器變更為 Microsoft 365，這樣就能為您設定正確的 DNS 記錄。 如果下列語句描述您的情況，請遵循下列步驟：
   
@@ -179,7 +179,7 @@ ms.locfileid: "52582989"
    
 8. 如果您想要變更記錄的 TTL 設定，請從 [ **ttl** ] 下拉式清單中選取新的時間長度。 否則，請繼續進行步驟9。
     
-9. 選取 **[儲存]**。 
+9. 選取 [儲存]。 
     
 此外，您還可以建立 CNAME 記錄，協助客戶找到您的網站。
   
@@ -189,7 +189,7 @@ ms.locfileid: "52582989"
 4.  在 [ **主機名稱或別名** ] 方塊中，輸入 **www**。
 5.  在 [指向 **位址** ] 方塊中，為您的網站輸入 (FQDN) 的完整功能變數名稱。 例如， **contoso.com**。
 6.  如果您想要變更記錄的 TTL 設定，請從 [ **ttl** ] 下拉式清單中選取新的時間長度。 否則，請繼續進行步驟6。
-7.  選取 **[儲存]**。
+7.  選取 [儲存]。
 
 在將名稱伺服器記錄更新為指向 Microsoft 之後，您的網域安裝已完成。 電子郵件會路由傳送至 Microsoft，而您的網站位址的流量仍會繼續前往您目前的網站主機。 '
     
@@ -198,8 +198,6 @@ ms.locfileid: "52582989"
   
 ## <a name="related-content"></a>相關內容
 
-[新增 DNS 記錄以將您的網域](create-dns-records-at-any-dns-hosting-provider.md) (文章) 
-
-[尋找並修正新增網域或 DNS 記錄之後所發生的問題](find-and-fix-issues.md) (文章)
-
+[新增 DNS 記錄以將您的網域](create-dns-records-at-any-dns-hosting-provider.md) (文章) \
+[尋找並修正新增網域或 DNS 記錄後的問題](find-and-fix-issues.md) (文章) \
 [管理網域](index.yml) (連結頁面)

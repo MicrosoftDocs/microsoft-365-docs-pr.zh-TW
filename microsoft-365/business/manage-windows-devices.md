@@ -24,24 +24,26 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何啟用 Microsoft 365，以在少數幾個步驟中保護本機作用中已加入目錄的 Windows 10 裝置。
-ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593886"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636079"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>啟用已加入網域的 Windows 10 裝置以供 Microsoft 365 商務進階版管理
 
 如果您的組織使用 Windows 的伺服器 Active Directory 內部部署，您可以設定 Microsoft 365 商務進階版來保護 Windows 10 裝置，同時仍維持對需要本機驗證之內部部署資源的存取。
 若要設定此保護，您可以執行 **混合式 AZURE AD 聯結裝置**。 這些裝置會同時加入您的內部部署 Active Directory 和您的 Azure Active Directory。
 
+## <a name="watch-configure-hybrid-azure-active-directory-join"></a>觀賞：設定混合式 Azure Active Directory 聯結
+
 這段影片說明如何針對最常見的案例設定此功能的步驟，在後續步驟中也會詳細說明。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
+## <a name="before-you-begin"></a>開始之前
 
-## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>開始之前，請先確定您已完成下列步驟：
 - 使用 Azure AD 連線將使用者同步處理至 Azure AD。
 -  (OU) 同步處理完成 Azure AD 連線組織單位。
 - 請確定您同步處理的所有網域使用者都具有 Microsoft 365 商務進階版的授權。
@@ -119,8 +121,6 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 ## <a name="related-content"></a>相關內容
 
-[同步處理網域使用者 Microsoft 365](manage-domain-users.md) (文章) 
-
-[在系統管理中心建立群組](../admin/create-groups/create-groups.md) (文章) 
-
+[同步處理網域使用者 Microsoft 365](manage-domain-users.md) (文章) \
+[在系統管理中心中建立群組](../admin/create-groups/create-groups.md) (文章) \
 [教程：設定受管理網域的混合式 Azure Active Directory 加入](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (文章) 

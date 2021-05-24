@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 具有有效工作或學校帳戶的使用者可以在 Microsoft 365 體驗中取得 Cortana，以符合企業級的安全性承諾 Office 365。
-ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582773"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635795"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -187,8 +187,6 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 ## <a name="related-content"></a>相關內容
 
-[Teams (文章中的 Cortana 語音協助](/microsoftteams/cortana-in-teams)) 
-
-[在 Windows 10 (文章中設定 Cortana](/windows/configuration/cortana-at-work/cortana-at-work-overview)) 
-
+[Teams (文章中的 Cortana 語音協助](/microsoftteams/cortana-in-teams)) \
+[在 Windows 10 (文章中設定 Cortana](/windows/configuration/cortana-at-work/cortana-at-work-overview)) \
 [您可以從 Cortana 播放我的電子郵件？](https://support.microsoft.com/help/4558256)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: dd3f1e7329612755a1806b5d9af8e13f07790cd6
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532047"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625122"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -65,7 +65,7 @@ iOS 版 Office 和 Android 版 Office：敏感度標籤內建於 [Office 應用�
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[讓使用者指派權限：<br /> - 提示使用者](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 審查中   | 審查中         | 審查中                                                        |
 |[稽核標籤相關的使用者活動](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | 逐步推出：16.0.13628+ | 是 <sup>\*</sup>                                                        |
-|[要求使用者在電子郵件和文件中套用標籤](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 逐步推出：16.45+         | 逐步推出：2.47+ | 逐步推出：16.0.13628+ | 逐步推出                                            
+|[要求使用者在電子郵件和文件中套用標籤](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 16.45+         | 2.47+ | 16.0.13628+ | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 逐步推出：16.44+ | 審查中 | 審查中 | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |針對已標籤和已加密的文件[支援共同撰寫和自動儲存](sensitivity-labels-coauthoring.md) | 預覽：[目前通道 (預覽)](https://office.com/insider) | 預覽：[目前通道 (預覽)](https://office.com/insider) | 審查中 | 審查中 | [是 - 選擇加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -191,10 +191,10 @@ Azure 資訊保護統一標籤用戶端支援 Open XML 格式和 Microsoft Offic
         - 登錄機碼 (DWORD:00000001)，HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM 中的 *DisableDNF* 和 *DisableEO*
         - 確定群組原則設定 [設定加密按鈕的預設加密選項 **]** 未設定
     - Mac 版 Outlook： 
-        - 機碼 *DisableEncryptOnly* 和 *DisableDoNotForward* 安全性設定，記載在 [設定 Mac 版 Outlook 的喜好設定[]](/DeployOffice/mac/preferences-outlook) 中
+        - 機碼 *DisableEncryptOnly* 和 *DisableDoNotForward* 安全性設定，記載在 [設定 Mac 版 Outlook 的喜好設定 []](/DeployOffice/mac/preferences-outlook) 中
     - Outlook 網頁版： 
         - 針對 [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) 記載的參數 *SimplifiedClientAccessDoNotForwardDisabled* 和 *SimplifiedClientAccessEncryptOnlyDisabled*
-        - iOS 版和 Android 版 Outlook：這些應用程式不支援使用者在沒有標籤的情況下套用加密，因此沒有要停用的項目。
+    - iOS 版和 Android 版 Outlook：這些應用程式不支援使用者在沒有標籤的情況下套用加密，因此沒有要停用的項目。
 
 > [!NOTE]
 > 如果使用者手動移除儲存在 SharePoint 或 OneDrive 中的標籤文件上的加密，並且您已[為 SharePoint 和 OneDrive 中的 Office 檔案啟用了敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)，則下次存取或下載該文件時，標籤加密將自動還原。 

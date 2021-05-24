@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 瞭解如何使用 Power BI 中的 Microsoft 365 流量分析範本應用程式，來開始收集租使用者的資料。
-ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 01923887b4af143d1490e14d59a6174700e6ae93
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593366"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635411"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 
 Microsoft 365 美國政府 Community 尚無法使用 Microsoft 365 流量分析。
   
-## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析的步驟
+## <a name="before-you-begin"></a>開始之前
 
 若要開始使用 Microsoft 365 流量分析，您必須先在 Microsoft 365 系統管理中心中提供資料，然後在 Power BI 中啟動範本應用程式。
   
-### <a name="get-power-bi"></a>取得 Power BI
+## <a name="get-power-bi"></a>取得 Power BI
 
 如果您尚無 Power BI，可以[註冊 Power BI Pro](https://go.microsoft.com/fwlink/p/?linkid=845347)。 選取 [**嘗試免費** 註冊試用版] 或 [**立即購買**] 以取得 Power BI Pro。
   
@@ -47,7 +47,7 @@ Microsoft 365 美國政府 Community 尚無法使用 Microsoft 365 流量分析�
 
 若要共用您的資料，這兩者和您與您共用資料的人員、需要 Power BI Pro 授權，或是內容必須位於[Power BI premium service](/power-bi/service-premium-what-is)的工作區中。 
   
-### <a name="enable-the-template-app"></a>啟用範本應用程式
+## <a name="enable-the-template-app"></a>啟用範本應用程式
 
 若要啟用範本應用程式，您必須是 **全域系統管理員**。
   
@@ -61,7 +61,7 @@ Microsoft 365 美國政府 Community 尚無法使用 Microsoft 365 流量分析�
   
 資料收集程式會在兩到48小時內完成，視租使用者的大小而定。 將會啟用 [**移至 Power BI** ] 按鈕 (當資料收集完成時，) 不再是灰色的。 
     
-### <a name="start-the-template-app"></a>啟動範本應用程式
+## <a name="start-the-template-app"></a>啟動範本應用程式
 
 若要啟動範本應用程式，您必須是 **全域系統管理員**、**報告讀取** 者、 **Exchange 管理員**、**商務用 Skype 系統管理員** 或 **SharePoint 系統管理員**。 
   
@@ -99,8 +99,6 @@ Microsoft 365 美國政府 Community 尚無法使用 Microsoft 365 流量分析�
 
 ## <a name="related-content"></a>相關內容
 
-[關於流量分析](usage-analytics.md) (文章) 
-
- (文章) [取得最新版本的流量分析](get-the-latest-version-of-usage-analytics.md)
-
+[關於流量分析](usage-analytics.md) (文章) \
+[取得最新版的流量分析](get-the-latest-version-of-usage-analytics.md) (文章) \
 [流覽並使用報表 Microsoft 365 流量分析](navigate-and-utilize-reports.md) (文章) 

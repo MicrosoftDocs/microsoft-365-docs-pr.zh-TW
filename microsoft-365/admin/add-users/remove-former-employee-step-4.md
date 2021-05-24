@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 請遵循本文中的步驟，讓另一個員工存取離職員工的 OneDrive 和 Outlook 資料。
-ms.openlocfilehash: cb5c27cbc7f1c184af8f0d1ad32b822660e93791
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582689"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634253"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>步驟 4-授予另一個員工 OneDrive 和 Outlook 資料的存取權
 
@@ -104,7 +104,7 @@ ms.locfileid: "52582689"
   
     ![選取上方資料夾並包含檢查子資料夾的 [匯出 Outlook 資料檔案] 對話方塊](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. 選取 [下一步 **]**。
+7. 選取 [下一步]。
 
 8. 選取 **[流覽]** ，以選取要將 Outlook 資料檔案儲存 ( .pst) 的位置。 輸入檔案名  *，然後* 選取 **[確定]** 繼續。
 
@@ -147,7 +147,7 @@ Outlook 會立即開始匯出，除非已建立新的 Outlook 資料檔案 ( .ps
 
 5. 在 [ **選項**] 底下，選擇您要處理重複專案的方式
 
-6. 選取 [下一步 **]**。
+6. 選取 [下一步]。
 
 7. 如果已指派密碼給 Outlook 資料檔案 ( .pst) ，請輸入密碼，然後選取 **[確定]**。
 
@@ -163,8 +163,6 @@ Outlook 會立即開始匯出，除非已建立新的 Outlook 資料檔案 ( .ps
 
 ## <a name="related-content"></a>相關內容
 
-[在 OneDrive 帳戶上新增及移除系統管理員](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (文章) 
-
-[還原已刪除的 OneDrive](/onedrive/restore-deleted-onedrive) (文章) 
-  
+[在 OneDrive 帳戶上新增及移除系統管理員](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (文章) \
+[還原已刪除的 OneDrive](/onedrive/restore-deleted-onedrive) (文章) \
 [OneDrive 保留和刪除](/onedrive/retention-and-deletion) (文章) 

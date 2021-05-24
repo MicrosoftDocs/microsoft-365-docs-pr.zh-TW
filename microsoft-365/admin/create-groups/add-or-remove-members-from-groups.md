@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 瞭解如何將成員新增至群組、從群組中移除成員，以及管理 Microsoft 365 系統管理中心中的群組擁有者狀態。
-ms.openlocfilehash: 3ab3ebe21caa2d9d3dfa381dd3b68c9d2512cb79
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: b5b0a398a5ebb47a5f27066f1daea1a822adbff2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593378"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635603"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用系統管理中心新增或移除 Microsoft 365 群組中的成員
 
@@ -42,7 +42,7 @@ ms.locfileid: "52593378"
 
 4. 搜尋或選取要新增的成員名稱。
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
 
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>將群組新增至系統管理員中心的成員
 
@@ -54,7 +54,7 @@ ms.locfileid: "52593378"
 
 4. 搜尋或選取您想要新增的群組名稱。
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
 
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>從系統管理中心的群組中移除成員
 
@@ -99,9 +99,9 @@ ms.locfileid: "52593378"
 
 4. 選取擁有者名稱旁邊的 X。
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存 **]**。
 
-## <a name="more-on-managing-membership"></a>成員資格的其他資訊
+## <a name="next-steps"></a>後續步驟
 
 - [在 Azure Active Directory 中動態管理群組](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)：請參閱＜如何動態管理群組的成員資格？＞一節
 
@@ -111,12 +111,8 @@ ms.locfileid: "52593378"
 
 ## <a name="related-content"></a>相關內容
 
-[將通訊群組清單升級至 Outlook (文章的 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)) 
-
-[為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (文章)
-
-[在 Microsoft 365 群組中管理來賓存取](manage-guest-access-in-groups.md) (文章) 
-
-[使用 PowerShell 管理 Microsoft 365 群組](../../enterprise/manage-microsoft-365-groups-with-powershell.md)：本文介紹重要 Cmdlet，並提供 (文章的範例) 
-
+[將通訊群組清單升級至 Outlook (文章) 的 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)
+[為什麼您應該將通訊群組清單升級為 Outlook (文章中的群組](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)) \
+[在 Microsoft 365 群組中管理來賓存取](manage-guest-access-in-groups.md) (文章) \
+[使用 PowerShell 管理 Microsoft 365 群組](../../enterprise/manage-microsoft-365-groups-with-powershell.md)：本文將向您介紹重要的 Cmdlet，並提供範例 (文章) \
 [Microsoft 365 群組](../../solutions/groups-naming-policy.md) (文章的命名原則) 

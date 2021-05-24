@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Microsoft 365 群組、查看來賓使用者，以及使用 PowerShell 控制來賓存取。
-ms.openlocfilehash: c52f0094e724040b71d5d72cded049fed57e3969
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 00a6353f02ae7f3675961c3ee2ee31e3715652f2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571934"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635759"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>管理 Microsoft 365 群組中的來賓存取
 
@@ -61,7 +61,7 @@ ms.locfileid: "52571934"
   
 4. 選取 [ **新增成員**]，然後選擇您要新增的客人名稱。
     
-5. 選取 [儲存 **]**。
+5. 選取 [儲存]。
 
 如果您想要直接將來賓新增至目錄，您可以[在 Azure 入口網站中新增 Azure Active Directory B2B](/azure/active-directory/b2b/add-users-administrator)共同作業使用者。
 
@@ -69,10 +69,7 @@ ms.locfileid: "52571934"
 
 ## <a name="related-content"></a>相關內容
 
-[從特定群組封鎖來賓使用者](../../solutions/per-group-guest-access.md) (文章) 
-
-[管理 Microsoft 365 系統管理中心的群組成員資格](add-or-remove-members-from-groups.md) (文章) 
-  
-[Azure Active Directory 存取評論](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (文章) 
-
+[從特定群組封鎖來賓使用者](../../solutions/per-group-guest-access.md) (文章) \
+[管理 Microsoft 365 系統管理中心的群組成員資格](add-or-remove-members-from-groups.md) (文章) \
+[Azure Active Directory 存取評論](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (文章) \
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (文章) 

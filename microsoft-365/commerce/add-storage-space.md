@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 在您的 Microsoft 365 訂閱中新增檔存放區。 使用額外的檔案存放區，您可以在 SharePoint 線上及 OneDrive 中儲存更多內容。
 ms.date: 04/02/2021
-ms.openlocfilehash: b573205c7053aba0339d1f32deb2996ef80f8754
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572318"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635855"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>新增您訂閱的儲存空間
 
@@ -76,7 +76,7 @@ ms.locfileid: "52572318"
 3. 在 [產品詳細資料] 頁面的 [ **附加** 元件] 區段中，選取 [ **管理載入** 宏]。
 4. 在 [**管理** 增益集] 窗格中，從 [附加元件] 清單中，選擇 [ **Office 365 多餘****的** 檔案儲存體]。
 5. 在 [ **數量** ] 文字方塊中，輸入您要用於訂閱的 gb 儲存空間數目。
-6. 選取 [儲存 **]**。
+6. 選取 [儲存]。
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>我的方案是否符合 Office 365 額外檔案儲存空間的資格？
 

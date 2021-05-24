@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bd3cc0a71fab9f2ceb6d3219a371bb4d5c030744
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 171f449a8b73ff42113358d50dbe8bde909f5d4d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297245"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625182"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -209,7 +209,7 @@ ms.locfileid: "52297245"
 
 建立可將新敏感度標籤指派給使用者和群組的標籤原則之後，使用者會開始在他們的 Office 應用程式中看到這些標籤。 最多可獲得 24 小時的時間，在您的整個組織中複製最新的變更。
 
-您可以建立並發佈的敏感度標籤數量沒有任何限制，但有一個例外：如果標籤套用加密，則您可建立的標籤數上限為 500。 不過，為了降低系統管理負擔並為使用者減少複雜度，最佳做法是試著保持最少的標籤數量。 實際情況的部署已證明，當使用者擁有五個以上的主要標籤，或每個主要標籤有超過五個子標籤時，效果會明顯地降低。
+您可以建立及發佈的敏感度標籤數目沒有限制，但有一個例外：如果標籤會套用指定使用者和權限的加密，則此設定的支援上限為 500 個標籤。 不過，為了降低系統管理負擔並為使用者減少複雜度，最佳做法是試著保持最少的標籤數量。 實際情況的部署已證明，當使用者擁有五個以上的主要標籤，或每個主要標籤有超過五個子標籤時，效果會明顯地降低。
 
 ### <a name="label-policy-priority-order-matters"></a>標籤原則優先順序 (順序很重要)
 
@@ -253,7 +253,7 @@ ms.locfileid: "52297245"
 > [!NOTE]
 > Azure 入口網站中 Azure 資訊保護標籤的標籤管理功能已在 **2021 年 3 月 31 日** 遭取代。 請透過官方的[淘汰注意事項](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)深入了解。
 
-如果您的租用戶尚未使用[統一標籤平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)，您必須先啟動統一標籤，才能使用敏感度標籤。 如需說明，請參閱[如何將 Azure 資訊保護標籤移轉至統一的敏感度標籤](/azure/information-protection/configure-policy-migrate-labels)。 
+如果您的租用戶尚未使用[統一標籤平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)，您必須先啟動統一標籤，才能使用敏感度標籤。 如需說明，請參閱[如何將 Azure 資訊保護標籤移轉至統一的敏感度標籤](/azure/information-protection/configure-policy-migrate-labels)。 
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>敏感度標籤和 Microsoft 資訊保護 SDK
 

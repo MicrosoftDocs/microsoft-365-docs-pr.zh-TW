@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 在 Microsoft 365 系統管理中心建立通訊群組或清單，這樣您就可以將電子郵件傳送給群組，而不需輸入每個收件者的名稱。
-ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572246"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635663"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心建立通訊群組
   
@@ -76,8 +76,6 @@ ms.locfileid: "52572246"
 
 ## <a name="related-content"></a>相關內容
 
-[使用者的電子郵件設定](../email/office-365-user-email-settings.md) (文章) 
-
-[在 Microsoft 365 系統管理中心建立、編輯或刪除安全性群組](../email/create-edit-or-delete-a-security-group.md) (文章) 
-
+ (篇文章的[使用者電子郵件設定](../email/office-365-user-email-settings.md)) \
+[在 Microsoft 365 系統管理中心建立、編輯或刪除安全性群組](../email/create-edit-or-delete-a-security-group.md) (文章) \
 [建立共用信箱](../email/create-a-shared-mailbox.md) (文章)

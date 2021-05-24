@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 設定基本行動性和安全性，以利用遠端擦除裝置等動作來保護和管理使用者的行動裝置。
-ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593414"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634289"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>設定基本行動與安全性
 
@@ -129,6 +129,5 @@ MFA 要求使用第二種形式的驗證，以協助保護登入 Microsoft 365 �
 
 ## <a name="related-content"></a>相關內容
 
-[基本行動及安全性的功能](capabilities.md) (文章) 
-
+[基本行動及安全性的功能](capabilities.md) (文章) \
 [在基本行動及安全性 (文章) 中建立裝置安全性原則](create-device-security-policies.md)

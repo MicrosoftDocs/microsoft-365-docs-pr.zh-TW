@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: 05/24/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: 瞭解如何設定 Microsoft Viva 教學 (預覽) Teams 系統管理中心。
-ms.openlocfilehash: e5af676752064738e26f9b934a60973cb9b0200d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a96a2f3ecf7d4e1ee0c136ae155868218f08aaf4
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625294"
+ms.locfileid: "52636131"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>在 Teams 系統管理中心中設定 Microsoft Viva 教學 (預覽) 
 
@@ -29,7 +29,7 @@ ms.locfileid: "52625294"
 
 Teams 系統管理員會) Teams 系統管理中心安裝 Viva 教學 (Preview 並套用許可權原則。
 
-1. 若為公開預覽，您必須先設定更新原則。 如需詳細資訊，請參閱 Teams site [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates)。
+1. 針對 Viva 學習 (預覽) ，您必須先在 Teams 中設定更新原則。 如需詳細資訊，請參閱[Microsoft Teams 公開預覽](/MicrosoftTeams/public-preview-doc-updates)。
 
     1. 登入 Teams 系統管理中心。
 
@@ -39,17 +39,17 @@ Teams 系統管理員會) Teams 系統管理中心安裝 Viva 教學 (Preview �
 
     4. 具名更新原則、新增原則，然後開啟 [ **顯示預覽] 功能**。
 
-2. 管理員必須通知使用者原則更新，讓使用者將其組建移入 Teams 的公開預覽。 
+2. 管理員必須通知使用者原則更新，讓使用者將其組建移至 Teams 的公開預覽。 
 
-    1. 使用者必須選取其設定檔影像--> 公開預覽的 >。
+    1. 使用者必須選取其設定檔影像 >**關於**  >  **公開預覽**。
    
         ![Teams 應用程式中顯示使用者設定檔的上方導覽](../media/learning/learning-app-select-profile-teams.png)
     
-    2. 使用者必須接受公開預覽的條款。
+    2. 使用者必須接受 **公開預覽** 條款及條件。
 
         ![切換至公開預覽組建](../media/learning/learning-app-switch-to-public-preview.png)
  
-3. 針對具有限制原則且需要啟用 Viva 教學的組織，請遵循下一節中的程式。
+3. 針對具有限制原則且需要啟用 Viva 教學 (預覽) 的組織，請依照下一節中的程式進行。
 
 ## <a name="manage-settings-for-viva-learning-preview"></a>管理 Viva 學習 (預覽的設定) 
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f6fff2bc595e9317ef037929a8a6828935b15bbf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532083"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624678"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容
 
@@ -427,6 +427,10 @@ Rights Management 簽發者一律會被授與文件或電子郵件的完全控�
 - 啟用來自 Azure 資訊保護的保護
     
     若要讓敏感度標籤套用加密，必須為您的租用戶啟用來自 Azure 資訊保護的保護服務 (Azure Rights Management)。 在較新的租用戶中，這是預設設定，但您可能需要手動啟用該服務。 如需詳細資訊，請參閱[啟用來自 Azure 資訊保護的保護服務](/azure/information-protection/activate-service)。
+
+- 檢查網路需求
+    
+    您可能需要對網路裝置 (例如防火牆) 進行一些變更。 如需詳細資訊，請參閱 Azure 資訊保護文件的[防火牆和網路基礎結構](/azure/information-protection/requirements#firewalls-and-network-infrastructure)。
 
 - 設定 Exchange 進行 Azure 資訊保護
     

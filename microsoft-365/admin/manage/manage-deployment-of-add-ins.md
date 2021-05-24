@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 2d3b90a75f38a2c1146c0b0e5470c80b0af2c63f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572270"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636019"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在系統管理中心部署增益集
 
@@ -131,12 +131,7 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
   
 ## <a name="related-content"></a>相關內容
 
-[在系統管理中心管理增益集](manage-addins-in-the-admin-center.md) (文章) 
-
-[建立第一個 Word 工作窗格增益集](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (篇) 
-
-[從 store 取得增益集](minors-and-acquiring-addins-from-the-store.md) (文章) 
-  
-[使用集中式部署 PowerShell Cmdlet 來管理增益集](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (文章) 
-  
+[在系統管理中心管理增益集](manage-addins-in-the-admin-center.md) (文章) \
+[建立第一個 Word 工作窗格增益集](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (文章 \
+[從 store 取得外接程式](minors-and-acquiring-addins-from-the-store.md) (文章) \ [使用集中式部署 PowerShell Cmdlet 來管理增益集](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (文章) \  
 [疑難排解：使用者未看到增益集](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (文章) 

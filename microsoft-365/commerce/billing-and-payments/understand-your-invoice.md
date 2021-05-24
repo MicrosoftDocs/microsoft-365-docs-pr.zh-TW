@@ -22,12 +22,12 @@ search.appverid: MET150
 description: 了解如何閱讀及了解您的 Microsoft 商務產品帳單或發票。
 keywords: 帳單帳戶、組織資訊、發票
 ms.date: 05/04/2021
-ms.openlocfilehash: d173df1eac827eb835b8544f64858c28ccf0fb75
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 64ccf82549bb85ba803693eb3e7c15939940d45c
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537304"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635843"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解您的帳單或發票
 
@@ -142,21 +142,17 @@ ms.locfileid: "52537304"
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>為什麼我看不到 Azure 預付款做為付款方式？
 
-只有合格的 Azure 產品和服務才可使用 Azure 預付款做為付款方式。
-
-## <a name="related-content"></a>相關內容
-
-[瞭解商務用 Microsoft 365 帳單或發票](understand-your-invoice2.md) (文章) 
-
-[追蹤 Microsoft 客戶協定 Azure 信用平衡](/azure/billing/billing-mca-check-azure-credits-balance) (文章) 
-
-[查看您的 Microsoft 客戶合約發票](/azure/cost-management-billing/understand/review-customer-agreement-bill) (文章) 
-
-[立即開始使用您的 Microsoft 客戶合約帳單帳戶](/azure/billing/billing-mca-overview) (文章) 
-
+Azure 預付款只適用于合格 Azure 產品和服務的支付方式
 
 ## <a name="need-help-contact-support"></a>需要協助？ 連絡客戶支援
 
 如果您有 Azure 點數的問題或需要相關協助，請<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">向用 Azure 支援建立支援要求</a>。
 
 如果您有 Microsoft 365 系統管理中心中發票的問題或需要協助，請[連絡商務產品的客戶支援](../../business-video/get-help-support.md)。
+
+## <a name="related-content"></a>相關內容
+
+[瞭解商務用 Microsoft 365 帳單或發票](understand-your-invoice2.md) (文章) \
+[追蹤 Microsoft 客戶協定 Azure 信用平衡](/azure/billing/billing-mca-check-azure-credits-balance) (文章) \
+[查看您的 Microsoft 客戶合約發票](/azure/cost-management-billing/understand/review-customer-agreement-bill) (文章) \
+[立即開始使用您的 Microsoft 客戶合約帳單帳戶](/azure/billing/billing-mca-overview) (文章) 

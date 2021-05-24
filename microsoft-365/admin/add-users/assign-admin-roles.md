@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 瞭解如何將系統管理員角色指派給您公司中的使用者或多位使用者，以便他們可以在系統管理中心執行特定工作。
-ms.openlocfilehash: f23a30cfd1be53982572d745d476558c3be615e6
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8a9da12a8ebc01a02e4362f09ccaa9e92c21b7e9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571862"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634169"
 ---
 # <a name="assign-admin-roles"></a>指派系統管理員角色
 
@@ -42,7 +42,7 @@ ms.locfileid: "52571862"
 
 當您加入新的使用者時，如果您不是指派系統管理員角色，則其為 *使用者角色* ，且沒有任何 Microsoft 系統管理中心的系統管理員許可權。 不過，如果您需要協助完成，您可以將系統管理員角色指派給使用者。 例如，如果您需要人員協助重設密碼，您不應該將其指派為全域系統管理員角色，您應該將密碼系統管理員角色指派給他們。 全域管理員過多，且對您的資料和線上業務擁有無限制的存取權，將是安全性風險。
 
-## <a name="watch-add-an-adminbrbr"></a>觀賞：新增管理員。<br><br>
+## <a name="watch-add-an-adminbrbr"></a>觀賞：新增管理員<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -121,10 +121,7 @@ ms.locfileid: "52571862"
 
 ## <a name="related-content"></a>相關內容
 
-[關於 Microsoft 365 系統管理員角色](about-admin-roles.md) (文章) 
-
-[Azure Active Directory (文章中的系統管理員角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)) 
-
-[將角色指派給具有 PowerShell (文章的使用者帳戶](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)) 
-
+[關於 Microsoft 365 系統管理員角色](about-admin-roles.md) (文章) \
+[Azure Active Directory (文章中的系統管理員角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)) \
+[將角色指派給具有 PowerShell (文章的使用者帳戶](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)) \
 [授權或移除](../misc/add-partner.md) 第三 (篇文章的夥伴關係) 

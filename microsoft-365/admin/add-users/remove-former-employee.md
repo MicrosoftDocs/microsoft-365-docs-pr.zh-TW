@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 遵循此方案中的步驟，從 Microsoft 365 中移除前任員工，並保護組織的資料。
-ms.openlocfilehash: 44741382a84cca15277308a44b3fd20470aa3a08
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: a613d4931c730dffe195954da97af86c683041bf
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572042"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634241"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概覽：移除前任員工和安全資料
 
@@ -61,4 +61,7 @@ ms.locfileid: "52572042"
 
 ## <a name="related-content"></a>相關內容
 
-[還原使用者](restore-user.md) (文章) 
+[還原使用者](restore-user.md) (文章) \
+[將新員工新增至 Microsoft 365](add-new-employee.md) (文章)\
+[將授權指派給使用者](../manage/assign-licenses-to-users.md) (文章)\
+[從使用者取消指派授權](../manage/remove-licenses-from-users.md) (文章) 

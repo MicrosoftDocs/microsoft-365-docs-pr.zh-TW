@@ -21,12 +21,12 @@ ms.custom:
 - commerce_purchase
 description: 如果您是從零售商店購買 Microsoft 365 商務標準版，請瞭解如何兌換產品金鑰和啟用您的訂閱。
 ms.date: 11/13/2020
-ms.openlocfilehash: bc2b07b5a98c13a919596bdbf85a21bdc6c8d2bf
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: e075a9d06b45f823540a3a99a1943caa9d116954
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593390"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636119"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>為 Microsoft 365 商務標準版輸入您的產品金鑰
 
@@ -57,11 +57,9 @@ ms.locfileid: "52593390"
 
 若要擴充到期日或將授權新增至現有的 Microsoft 365 商務標準版訂閱，請對相同的 Microsoft 365 計畫使用新的和未使用的金鑰。 輸入您的原始 Microsoft 365 產品金鑰將無法運作，因為已兌換的金鑰無法再使用。 請參閱 [新增授權給或擴充使用產品金鑰支付的訂閱](licenses/add-licenses-using-product-key.md)。
 
-## <a name="whats-next"></a>下一步是什麼？
+## <a name="next-steps"></a>後續步驟
 
 如果您不熟悉 Microsoft 365 商務，請參閱如何[設定 Microsoft 365](../admin/setup/setup.md)。
-  
-## <a name="still-having-trouble-with-product-keys"></a>仍存在產品金鑰的問題嗎？
 
 查看此常見錯誤與解決方案清單：[商務用 Microsoft 365 的產品金鑰問題？](product-key-errors-and-solutions.md)
   
@@ -69,8 +67,6 @@ ms.locfileid: "52593390"
 
 ## <a name="related-content"></a>相關內容
 
-[升級至其他計畫](./subscriptions/upgrade-to-different-plan.md) (文章) 
-
-[若要深入了解，請參閱當商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？](./subscriptions/what-if-my-subscription-expires.md)  (篇文章) 
-
+[升級至其他計畫](./subscriptions/upgrade-to-different-plan.md) (文章) \
+[若要深入了解，請參閱當商務用 Microsoft 365 訂閱結束時，我的資料與存取權會發生什麼情況？](./subscriptions/what-if-my-subscription-expires.md) (文章)\
 [瞭解商務 (文章的 Microsoft 365 訂閱和授權](./licenses/subscriptions-and-licenses.md)) 

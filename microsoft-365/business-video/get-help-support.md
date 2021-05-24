@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 您必須是商務訂閱的系統管理員，才可在 Microsoft 365 商務進階版中取得系統管理員協助或線上或電話支援。
-ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535707"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635899"
 ---
 # <a name="get-support"></a>取得支援
+
+## <a name="watch-get-help-or-support"></a>觀賞：取得協助或支援 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -256,8 +258,6 @@ ms.locfileid: "52535707"
 
 ## <a name="related-content"></a>相關內容
 
-[尋找檔和訓練](find-help-answers.md) (文章) 
-
-[員工快速設定](employee-quick-setup.md) (文章) 
-
+ (篇文章) 中[尋找檔與訓練](find-help-answers.md)
+[員工快速設定](employee-quick-setup.md) (文章) \
 [Microsoft 365 商務進階版安裝 (影片的概述](setup-overview.md)) 

@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: ''
 ms.prod: microsoft-365-enterprise
 ms.collection: m365solution-managecontracts
 search.appverid: ''
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: ''
 description: 瞭解如何使用 SharePoint Syntex、Microsoft Teams 和 Power Automate 的 Microsoft 365 解決方案管理合約。
-ms.openlocfilehash: 057c581559aa2e5cfd6e98b379783a7d73e0bccc
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 18866425cb331b01525dd488a6688608a3d1e559
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538564"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636215"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用 Microsoft 365 方案管理合約
 

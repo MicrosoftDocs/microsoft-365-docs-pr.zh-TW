@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245945"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636239"
 ---
 # <a name="device-discovery-overview"></a>裝置探索概觀
 
@@ -62,7 +62,7 @@ Microsoft Defender for Endpoint 提供裝置探索功能，可協助您尋找連
 
 
 > [!IMPORTANT]
-> 探索已設定為基本模式。 您可以選擇透過 [設定] 頁面保留此設定。 在此日期之前，除非透過 [設定] 頁面進行修改，否則所有預覽版客戶的預設模式都會是2021。
+> 探索已設定為基本模式。 您可以選擇透過 [設定] 頁面保留此設定。 Standard discovery 會成為從2021年7月19日開始之所有客戶的預設模式，除非透過 [設定] 頁面在此日期之前修改。
 
 ### <a name="basic-discovery"></a>基本探索 
 

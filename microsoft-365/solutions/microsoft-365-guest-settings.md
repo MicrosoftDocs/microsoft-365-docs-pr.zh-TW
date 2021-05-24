@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: 瞭解 Microsoft 365 中提供的來賓共用設定，這可能會影響與組織外部人員共用。
-ms.openlocfilehash: 60ebff4f564e7046a54cb707781acc0151aa8ad9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538108"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625425"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 來賓共用設定參考
 
@@ -38,7 +38,7 @@ Azure Active Directory 是 Microsoft 365 所使用的目錄服務。 Azure Activ
 > [!NOTE]
 > 這些設定只有在已設定 [SharePoint 和 OneDrive 整合搭配 Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) 時才會影響 SharePoint。 下表假設已進行此設定。
 
-### <a name="organizational-relationships-settings"></a>組織關聯性設定
+### <a name="external-collaboration-settings"></a>外部共同作業設定
 
 **瀏覽：**[Azure Active Directory 系統管理中心](https://aad.portal.azure.com) > [Azure Active Directory] > [外部身分識別] > [外部共同作業設定]
 
@@ -46,11 +46,9 @@ Azure Active Directory 是 Microsoft 365 所使用的目錄服務。 Azure Activ
 
 | 設定 | 預設 | 描述 |
 |:-----|:-----|:-----|
-|來賓使用者權限受限|是|此設定會影響來賓可以執行的目錄工作。|
-|系統管理員與來賓邀請者角色中的使用者可以邀請|是|設為 [是] 時，系統管理員可以透過 Azure AD 和透過 Microsoft 365 共用體驗 (例如 Teams 和 SharePoint) 邀請來賓；設為 [否] 時則無法。|
-|成員可以邀請|是|設為 [是] 時，Azure AD 成員可以透過 Azure AD 邀請來賓；設為 [否] 時，則無法邀請。 設為 [是] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓；設為 [否] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓，但擁有者必須是全域系統管理員，才能進行核准。 <br><br>請注意，**成員可以邀請** 是指 Azure AD 中的成員 (相對於來賓)，而非 Microsoft 365 中的網站或群組成員。 <br><br>這與 Microsoft 365 安全性與隱私權中的 [讓使用者將新的來賓新增到組織] 設定完全相同。|
-|來賓可以邀請|是|設為 [是] 時，目錄中的來賓可以邀請其他來賓在 Azure AD 資源上以及在 SharePoint 和 OneDrive 中的檔案和資料夾上共同作業；設為 [否] 時則無法。 <br><br>請注意，必須在 SharePoint 系統管理中心開啟 [允許外部使用者輸入完全相符的電子郵件地址以尋找目錄中的使用者帳戶]，來賓才能與其他來賓共用檔案和資料夾。|
-|為來賓啟用電子郵件一次性密碼 (預覽)|否|設為 [是] 時，沒有 MSA 或公司或學校帳戶的來賓可以[使用一次性密碼向 Azure AD 進行驗證](/azure/active-directory/b2b/one-time-passcode)；設為 [否] 時，使用者將必須建立 Microsoft 帳戶才能進行驗證。 此設定必須設為 [是]，[SharePoint 和 OneDrive 整合搭配 Azure AD B2B (預覽)](/sharepoint/sharepoint-azureb2b-integration-preview) 才能運作。|
+|來賓使用者存取|來賓使用者對目錄物件屬性和成員資格的存取權有限|決定[來賓在 Azure Active Directory 中具有的權限](/azure/active-directory/fundamentals/users-default-permissions)。|
+|來賓邀請設定|組織中任何人都可以邀請來賓使用者，包括來賓和非系統管理員|決定來賓、成員和系統管理員是否可以邀請來賓加入組織。<br><br> 此設定會影響 Microsoft 365 共用體驗 (例如 Teams 和 SharePoint)。|
+|透過使用者流程啟用來賓自助註冊|否|決定您是否可以建立使用者流程，以允許使用者註冊您建立的應用程式，並建立新來賓帳戶。|
 |共同作業限制|允許傳送邀請給任何網域|此設定可讓您針對共用指定允許或封鎖的網域清單。 指定允許的網域時，則只可以將共用邀請傳送至這些網域。 指定拒絕的網域時，則無法將共用邀請傳送至這些網域。<br><br> 此設定會影響 Microsoft 365 共用體驗 (例如 Teams 和 SharePoint)。 您可以使用 SharePoint 或 Teams 中的網域篩選，以更細微的層級允許或封鎖網域。|
 
 這些設定會影響使用者獲邀請加入目錄的方式。 它們不會影響與已在目錄中的來賓共用。

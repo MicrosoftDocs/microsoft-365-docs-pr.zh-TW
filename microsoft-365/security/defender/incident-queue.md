@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dba96a43f976353251b5530233667933088f6f29
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: df2d2660267c38dccf5ef09fa4955615d3a78141
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594082"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636263"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的事件優先順序
 
@@ -92,5 +92,5 @@ Microsoft 365Defender 會將相互關聯的分析和匯總相關的警報和自�
 
 ## <a name="see-also"></a>請參閱
 - [事件概觀](incidents-overview.md)
-- [調查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)
+- [調查事件](investigate-incidents.md)

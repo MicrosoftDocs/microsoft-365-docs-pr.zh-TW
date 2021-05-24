@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: f641e2b99e2d61881eb86506a1770f4401cb98bc
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: db61ed4d4c087b76895d08e43f6b1a2c00ed8172
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572330"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635387"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
 
@@ -213,8 +213,6 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ## <a name="related-content"></a>相關內容
 
-[啟用 Microsoft 365 使用情況分析](enable-usage-analytics.md) (文章)
-
-[流覽並使用報表 Microsoft 365 流量分析](navigate-and-utilize-reports.md) (文章) 
-
+[啟用 Microsoft 365 使用情況分析](enable-usage-analytics.md) (文章)\
+[流覽並使用報表 Microsoft 365 流量分析](navigate-and-utilize-reports.md) (文章) \
 [在 Microsoft 365 (的 [影片] 中查看使用狀況報告](../../business-video/act-on-report.md)) 

@@ -29,18 +29,18 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 瞭解如何使用 OneDrive 和小組網站來 Microsoft 365 儲存區和 Microsoft 365 檔案共用。
-ms.openlocfilehash: 9e739b1f90296167fc47bdd5f19bacd73c43f9e2
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572174"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635639"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在 Microsoft 365 中設定檔儲存與共享
 
 為您的公司設定檔案存放區與共享的其中一個最佳方法，就是使用 OneDrive 和小組網站一起使用。 如果您擁有少數員工的小型企業，這是理想的方式。
 
-觀賞有關在 Microsoft 365 雲端中儲存檔案的簡短影片。<br><br>
+## <a name="watch-where-to-store-files-in-office-365"></a>觀賞：在 Office 365 中儲存檔案的位置
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
@@ -207,8 +207,6 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 
 ## <a name="related-content"></a>相關內容
 
- (文章) 中[新增您訂閱的儲存空間](../../commerce/add-storage-space.md)
-
+[新增您訂閱的儲存空間](../../commerce/add-storage-space.md) (文章) \
 [與 Microsoft 365 商務版 (的影片共用檔案和資料夾](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)) 
-
 [自訂您的小組網站以進行檔案儲存和共用](customize-team-site.md) (文章) 

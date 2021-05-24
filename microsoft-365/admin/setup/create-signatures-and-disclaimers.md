@@ -25,18 +25,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 管理電子郵件簽章，包括任何進入或離開組織之電子郵件的法律免責聲明或披露聲明。
-ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f72d522c7dc592a7f719d716e22ecf726d00a6de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582749"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635651"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽名和免責聲明
 
  您可以在進入或離開組織的電子郵件中新增電子郵件簽章、法律免責聲明或披露報表，以管理電子郵件簽名。 您可以如下所示，設定將它套用至所有內送或外寄郵件。 或者您也可以將它套用至特定郵件，例如包含特定字詞或文字模式的郵件。
 
- 觀賞有關如何建立全公司的電子郵件簽名的簡短影片。 <br><br>
+## <a name="watch-create-a-company-wide-email-signature"></a>觀賞：建立全公司的電子郵件簽名
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
@@ -119,9 +119,7 @@ ms.locfileid: "52582749"
 
 ## <a name="related-content"></a>相關內容
 
-[將電子郵件和連絡人遷移至 Microsoft 365 (的](migrate-email-and-contacts-admin.md)影片) 
-
-[使用者的電子郵件設定](../email/office-365-user-email-settings.md) (文章) 
-
+[將電子郵件和連絡人遷移至 Microsoft 365 (的](migrate-email-and-contacts-admin.md)影片) \
+ (篇文章的[使用者電子郵件設定](../email/office-365-user-email-settings.md)) \
 [Microsoft 365 系統管理中心概觀](../../business-video/admin-center-overview.md) (影片)
 

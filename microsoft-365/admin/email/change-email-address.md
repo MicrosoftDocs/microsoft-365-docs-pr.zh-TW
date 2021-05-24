@@ -25,16 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 購買功能變數名稱並將其新增至 Microsoft 365，將您的電子郵件地址變更為易記的電子郵件地址（例如 tom@fourthcoffee.com）。
-ms.openlocfilehash: d5e70856c9200cd7e5df0eded25b6ff460e5d1fe
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572090"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635519"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>變更電子郵件地址以使用您的自訂網域
 
- 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
   
 ::: moniker range="o365-worldwide"
 
@@ -91,4 +91,6 @@ Office 365 德國的初始電子郵件地址包括 onmicrosoft.de，例如 tom@f
   
 ## <a name="related-content"></a>相關內容
 
-[使用 Microsoft 365 (文章購買自訂網域](../get-help-with-domains/buy-a-domain-name.md)) 
+[使用 Microsoft 365 (文章購買自訂網域](../get-help-with-domains/buy-a-domain-name.md)) \
+[管理網域](../get-help-with-domains/index.yml) (連結頁面) \
+[網域常見問題集](../setup/domains-faq.yml) (文章)
