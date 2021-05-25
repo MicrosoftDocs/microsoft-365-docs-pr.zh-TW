@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 44f583d32de166fe3d68a182406eb3a2ee814084
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297149"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651365"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>步驟 3. 執行第一個事件的事件後檢查
 
@@ -36,7 +36,7 @@ ms.locfileid: "52297149"
 **適用於：**
 - Microsoft 365 Defender
 
-國家標準和技術協會 (NIST) 建議在採取所有步驟來從攻擊中復原後，組織必須檢查該事件，以瞭解該事件，並瞭解及改善安全性狀況或程式。 評估事件處理的不同層面對準備下一個事件變得很重要。
+國家標準和技術研究院 (NIST) 建議在採取所有步驟來復原攻擊後，組織必須複查該事件，以瞭解該事件，並改進安全性的狀況或處理常式。 評估事件處理的不同層面對準備下一個事件變得很重要。
 
 Microsoft 365您可以為組織提供與[MITRE ATT&CK Framework](https://attack.mitre.org/)相符的警示，以協助執行後續事件活動。 所有 Microsoft Defender 解決方案標籤會依照 ATT&CK 戰術或技術所進行的攻擊。 
 
@@ -50,7 +50,7 @@ Microsoft 365您可以為組織提供與[MITRE ATT&CK Framework](https://attack.
 
 事件後檢查活動也可導致微調安全性設定和安全性小組的程式，以加強組織的回應能力。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 請參閱下列其他調查路徑：
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b9bbe058042a49586e8515fde85371b1487e8d25
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297125"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651343"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的警示
 
@@ -72,14 +72,12 @@ ms.locfileid: "52297125"
 
 警示頁面是由下列區段所組成： 
 
-- 警示案例
-- 採取 (包括受影響資產的動作) 
-- 相關事件
+- 警示案例，這是以時間順序與此警示相關的事件及警示鏈
 - 摘要詳細資料
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 安全性中心內警示的詳細資料頁面範例":::
 
-在 [提醒] 頁面中，您可以選取任何實體旁的省略號 () **...** ]，以查看可用的動作，例如開啟特定資產頁面或採取特定的修復步驟。
+在 [警示] 頁面中，您可以選取任何實體旁的省略號 () **...** ]，以查看可用的動作，例如開啟警示頁面或將警示連結至另一個事件。
 
 ### <a name="analyze-affected-assets"></a>分析受影響的資產
 

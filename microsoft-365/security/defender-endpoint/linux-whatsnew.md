@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 21eaf1c0e0d3f61bb5798c8a4de6fe8f97ce4a0b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0adcecefc19c681ef68498a3e7c375913d85985d
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538792"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651125"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 中的新功能
 
@@ -31,6 +31,10 @@ ms.locfileid: "52538792"
 
 ## <a name="1012964-30121042129640"></a>101.29.64 (30.121042.12964.0) 
 
+- 從此版本開始，會自動修正隨命令列用戶端觸發的隨選防病毒掃描中偵測到的威脅。 透過使用者介面觸發的掃描過程中偵測到的威脅仍然需要手動動作。
+- `mdatp diagnostic real-time-protection-statistics` 現在支援兩個額外的參數：
+  - `--sort`：依掃描的檔案總數降冪輸出
+  - `--top N`：顯示前 N 個結果 (只會在同時指定的情況中運作 `--sort`) 
 - 效能 & bug 修正的增強功能
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 

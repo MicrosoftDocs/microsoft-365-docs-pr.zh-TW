@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4be0960e8ba868df2acb313b171a08f667c287a7
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933334"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651329"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的隱私權
 
@@ -135,7 +135,8 @@ Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何�
 | cloud_service cloud_service.service_uri                           | 用於與雲端通訊的 URI。 |
 | cloud_service cloud_service.diagnostic_level                      | 裝置的診斷層級 (必要，選用) 。 |
 | cloud_service cloud_service.automatic_sample_submission           | 裝置的自動範例提交層級 (無，安全，所有) 。 |
-| edr.early_preview                                   | 裝置是否應執行「及早預覽」功能。 |
+| cloud_service cloud_service.automatic_definition_update_enabled   | 是否已開啟自動定義更新。 |
+| edr.early_preview                                   | 裝置是否應該執行 EDR 早期預覽功能。 |
 | edr.group_id                                        | 偵測及回應元件所使用的群組識別碼。 |
 | edr 標記                                            | 使用者定義的標記。 |
 | 功能。 \[選用功能名稱\]                  | 預覽功能的清單，及其是否已啟用。 |
@@ -207,6 +208,7 @@ Microsoft 致力於為您提供您所需的資訊和控制，讓您選擇如何�
 | antivirus_engine antivirus_engine.scan_cache_maximum                | 產品快取的大小。 |
 | antivirus_engine antivirus_engine.maximum_scan_threads              | 掃描時所用的執行緒數目上限。 |
 | antivirus_engine antivirus_engine.threat_restoration_exclusion_time | 在從隔離區還原的檔案之前，可再次偵測到超時。 |
+| antivirus_engine antivirus_engine.threat_type_settings              | 產品如何處理不同威脅類型的設定。 |
 | filesystem_scanner filesystem_scanner.full_scan_directory             | 完整掃描目錄。 |
 | filesystem_scanner filesystem_scanner.quick_scan_directories          | 快速掃描中所用的目錄清單。 |
 | edr.latency_mode                                   | 偵測及回應元件所使用的延遲模式。 |

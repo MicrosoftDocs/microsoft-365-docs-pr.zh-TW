@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40d86f9f3a4896bbe788f0a9894a7e08efe3a690
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301725"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651377"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>將帳戶從 Microsoft Defender 重新導向至 Microsoft 365 安全中心的 Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "52301725"
 **適用於：**
 
 - Microsoft 365 Defender
-- 適用於 Office 365 的 Defender
+- 適用於 Office 365 的 Microsoft Defender
 
 本文說明如何透過從先前的 Microsoft 安全性與合規性 (中心自動重新導向，將帳戶路由傳送至 Microsoft 365 的安全性中心，) Microsoft 365 的安全性中心 (security.microsoft.com) 。
 
@@ -64,13 +64,13 @@ ms.locfileid: "52301725"
 > 在啟用重新導向後，套用此設定時，作用中會話中的帳戶將不會從其會話中彈出，而且只會在結束目前的會話並重新登入後，路由傳送至 Microsoft 365 的安全性中心。
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>可以回復使用先前的入口網站嗎？
-如果有些專案無法運作，或是您使用「門戶意見」入口網站無法 Microsoft 365 完成的任何專案，我們想要使用「入口意見反應」選項來聽取相關專案。 如果您遇到重新導向的任何問題，我們會鼓勵您透過私人預覽直接前往您的 PM 合作者，或透過「提供意見反應提交」表單告訴我們。
+如果有些專案無法運作，或是您使用「門戶意見」入口網站無法 Microsoft 365 完成的任何專案，我們想要使用「入口意見反應」選項來聽取相關專案。 如果您在重新導向時遇到任何問題，請告訴我們。
 
 若要還原為先前的入口網站：
 
 1. 以全域系統管理員身分登[入](https://security.microsoft.com/)Microsoft 365 的安全性中心，或在 Azure Active directory 中使用和帳戶搭配安全性管理員許可權。
 
-2. 流覽至 **設定**  >  **端點**  >  **一般**  >  **入口重定向**。  
+2. 流覽至 **設定**  >  **電子郵件 &** 共同作業  >  **入口網站** 重新導向。   
 
 3. 將自動重新導向設定切換為 [ **關閉**]。
 

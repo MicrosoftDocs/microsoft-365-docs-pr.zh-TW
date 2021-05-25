@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d29291c63bdc437163feecce8164089d958d71d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2e47b35646a1cd6e1075d80f9ed0550e8e1e819f
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299961"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651389"
 ---
 # <a name="get-incident-notifications-by-email"></a>透過電子郵件取得事件通知
 
@@ -67,12 +67,12 @@ ms.locfileid: "52299961"
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="事件電子郵件通知的通知設定":::
 
-5. 選取 [下一步 **]**。 **在 [收** 件者] 頁面上，新增要接收事件通知的電子郵件地址。 在輸入每個新的電子郵件地址後，選取 **[新增]** 。 若要測試通知，並確認收件者在收件匣中收到這些通知，請選取 [ **傳送測試電子郵件**]。 
-6. 選取 [下一步 **]**。 在 [ **檢查規則** ] 頁面上，複查規則的設定，然後選取 [ **建立規則**]。 收件者會開始透過電子郵件以設定為基礎來接收事件通知。
+5. 選取 [下一步]。 **在 [收** 件者] 頁面上，新增要接收事件通知的電子郵件地址。 在輸入每個新的電子郵件地址後，選取 **[新增]** 。 若要測試通知，並確認收件者在收件匣中收到這些通知，請選取 [ **傳送測試電子郵件**]。 
+6. 選取 [下一步]。 在 [ **檢查規則** ] 頁面上，複查規則的設定，然後選取 [ **建立規則**]。 收件者會開始透過電子郵件以設定為基礎來接收事件通知。
 
 若要編輯現有規則，請從規則清單中進行選取。 在具有規則名稱的窗格上，選取 [ **編輯規則** ]，然後在 [ **基本** 設定]、[ **通知設定**] 及 [收件者 **] 頁面上** 進行變更。
 
-若要編輯現有規則，請從規則清單中進行選取。 在具有規則名稱的窗格上，選取 [ **刪除**]。
+若要刪除規則，請從規則清單中進行選取。 在具有規則名稱的窗格上，選取 [ **刪除**]。
 
 ## <a name="see-also"></a>請參閱
 - [事件概觀](incidents-overview.md)

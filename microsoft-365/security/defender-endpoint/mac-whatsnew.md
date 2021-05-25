@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994994"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651269"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 版端點的 Microsoft Defender 新增功能
 
@@ -37,6 +37,14 @@ ms.locfileid: "51994994"
 
 > [!IMPORTANT]
 > 在 macOS 11 (Big Sur) 上，Microsoft Defender for Endpoint 需要其他設定設定檔。 如果您是現有的客戶從舊版的 macOS 升級，請務必部署 [此頁面](mac-sysext-policies.md)所列的其他設定檔。
+
+## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0) 
+
+- 從此版本開始，會自動修正隨命令列用戶端觸發的隨選防病毒掃描中偵測到的威脅。 透過使用者介面觸發的掃描過程中偵測到的威脅仍然需要手動動作。
+- `mdatp diagnostic real-time-protection-statistics` 現在支援兩個額外的參數：
+  - `--sort`：依掃描的檔案總數降冪輸出
+  - `--top N`：顯示前 N 個結果 (只會在同時指定的情況中運作 `--sort`) 
+-  (何時使用 YARN 時) & bug 修正的效能增強功能
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
 
@@ -178,9 +186,9 @@ ms.locfileid: "51994994"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> 為確保您的 macOS 裝置的最大保護，以及將 macOS 原生安全性更新的 Apple 停止傳遞到舊于 [current – 2] 的作業系統版本，macOS 塞拉里昂 [10.12] 上不再支援 Mac 部署和更新的 MDATP。 MDATP for Mac 更新及增強功能將會傳送至執行版本 Catalina [10.15]、Mojave [10.14] 和 High 塞拉里昂 [10.13] 的裝置。 
+> 為了確保您的 macOS 裝置的最大保護，以及將 macOS 原生安全性更新的 Apple 停止傳遞到高於 [current – 2] 的作業系統版本，macOS 塞拉里昂 [10.12] 上不再支援 Mac 部署和更新的 MDATP。 Mac 更新及增強功能的 MDATP 會傳送至執行版本 Catalina 的裝置 [10.15]、Mojave [10.14] 和 [高塞拉里昂] [10.13]。 
 >
-> 如果您已將 Mac 部署至您的塞拉里昂 [10.12] 裝置，請升級至最新的 macOS 版本，以避免遺失保護的風險。
+> 如果您已有部署至您的塞拉里昂 [10.12] 裝置的 Mac MDATP，請升級至最新的 macOS 版本，以避免遺失保護的風險。
 
 - 效能 & bug 修正的增強功能
 
@@ -231,6 +239,6 @@ ms.locfileid: "51994994"
   > 授與同意的機制取決於您部署 Microsoft Defender for Endpoint 的方式：
   >
   > - 如需手動部署，請參閱 [手動部署](mac-install-manually.md#how-to-allow-full-disk-access) 主題中的更新指示。
-  > - 針對受管理的部署，請參閱以 [JAMF 為基礎的部署](mac-install-with-jamf.md) 和 [Microsoft Intune 型部署](mac-install-with-intune.md#create-system-configuration-profiles) 主題中的更新指示。
+  > - 針對受管理的部署，請參閱以[JAMF 為基礎的部署](mac-install-with-jamf.md)和[Microsoft Intune 型部署](mac-install-with-intune.md#create-system-configuration-profiles)主題中的更新指示。
 
 - 效能 & bug 修正的增強功能

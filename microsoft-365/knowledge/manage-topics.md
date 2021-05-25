@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: ba8f27c90f9c84729a10f461e85b2e1441b49549
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f2429b0ffdd4a238bc9322ae9199eebbbfd407b5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625398"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651151"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>管理 Microsoft Viva 主題中主題中心的主題
 
@@ -82,9 +82,9 @@ ms.locfileid: "52625398"
 
 2. 在 [主題] 頁面上，複查 [主題] 頁面，如果您需要對頁面進行任何變更，請選取 [ **編輯** ]。 發佈任何編輯都會將此主題移至 [ **發佈** ] 索引標籤。
 
-3. 檢查主題之後，請回到 [ **管理主題** ] 頁面。 針對所選主題，您可以：
+3. 檢查主題之後，請回到 [ **管理主題** ] 頁面。 對於所選取的主題，您可以：
 
-   - 選取 [核取記號] 以確認主題。
+   - 選取核取記號來確認主題。
     
    - 如果您想要移除該主題，請選取 **x** 。
 
@@ -106,7 +106,7 @@ ms.locfileid: "52625398"
 
 在 [**管理主題**] 頁面上，在您指定的 SharePoint 來源位置中發現的主題，並已由 net 兩位或更多位人員確認的知識管理員或 "crowdsourced" 確認。 (平衡否定使用者投票) 透過卡片意見反應機制，將會列于 [已 **確認**] 索引標籤中。如有需要，具有管理主題許可權的使用者可以查看已確認的主題，並選擇拒絕這些主題。
 
-若要查看已確認的主題：
+若要檢閱已確認的主題：
 
 1. 在 **[已確認]** 索引標籤上，選取主題以開啟主題頁面。
 
@@ -119,3 +119,11 @@ ms.locfileid: "52625398"
 已發佈的主題已經過編輯，使特定資訊永遠會出現在頁面出現的任何處。 手動建立的主題也會列在這裡。
 
    ![管理主題](../media/knowledge-management/manage-topics-new.png)
+
+## <a name="topic-count-dashboard"></a>主題計數儀表板
+
+儀表板視圖中的此圖表可讓您看到 Viva 主題主題中心的主題數目。 圖表會顯示每個主題生命週期階段的主題計數，也會顯示主題計數在一段時間內的 trended。 知識管理員可以以視覺方式監視透過 AI 探索的新主題，以及主題在知識管理員或使用者動作中取得的確認或發佈速率。
+
+知識管理員可能會在 [ **管理主題** ] 頁面的主題清單中看到不同于儀表板中所顯示主題的數目。 這是因為知識管理員可能無法存取所有主題。 在套用許可權修整之前，會先進行儀表板視圖中所呈現的計數。 
+
+   ![主題計數儀表板的螢幕擷取畫面](../media/knowledge-management/topic-count-dashboard.png)

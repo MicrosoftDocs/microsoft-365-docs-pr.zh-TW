@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 microsoft cloud 德國移動 (microsoft cloud Deutschland) 到新德文 datacenter 區域中 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: a99103083c8fabae3934a6622acc55a59ff5c9a0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346289"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651104"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
@@ -305,12 +305,15 @@ Office 365 承租人轉換至地區 "德國" 時，會要求所有使用者關�
 
 **適用于：** 所有客戶
 
-當 Office 365 租使用者完成遷移的最後一個步驟時 (Azure AD 終止 (階段 9) ) 所有服務都會轉換為全球。 任何應用程式或使用者都不應該存取任何 Microsoft Cloud Deutschland 端點的承租人資源。 自動，30天完成終止後，Microsoft Cloud Deutschland Azure AD 服務將停止已轉換租使用者的端點存取。 端點要求（例如驗證）會從這個點向前失敗，以進行 Microsoft Cloud Deutschland service。 
+當 Office 365 租使用者完成遷移的最後一個步驟時 (階段9： Azure AD 終止) ，所有服務都會轉換為全球。 任何應用程式或使用者都不應該存取任何 Microsoft Cloud Deutschland 端點的承租人資源。 自動，30天完成終止後，Microsoft Cloud Deutschland Azure AD 服務將停止已轉換租使用者的端點存取。 端點要求（例如驗證）會從這個點向前失敗，以進行 Microsoft Cloud Deutschland service。  
+
+Microsoft Azure 客戶必須在[azure 遷移行動手冊](/azure/germany/germany-migration-main)中所述的步驟，在其租使用者完成遷移至世界 (階段 9) 之後，再轉換其 Azure 工作負載。  
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
 | 更新使用者端點 | 確定所有使用者都使用適當的 Microsoft 全球端點存取服務 |在遷移完成後30天之後，Microsoft Cloud Deutschland 端點會停止接受要求;用戶端或應用程式流量將會失敗。  |
 | 更新 Azure AD 應用程式端點 | 您必須更新驗證、Azure Active Directory (Azure AD) Graph 及 MS Graph 端點，讓應用程式成為 Microsoft 全球服務的端點。 | 在遷移完成後30天之後，Microsoft Cloud Deutschland 端點會停止接受要求;用戶端或應用程式流量將會失敗。 |
+| 遷移 Azure 工作負載 | Azure 服務客戶必須針對 Azure 服務布建全球通用訂閱，並根據 [Azure 遷移行動手冊](/azure/germany/germany-migration-main)執行遷移。 | 當完全轉換為全球服務 (階段 10) 時，客戶將無法再存取 Microsoft Cloud Deutschland Azure 入口網站中呈現的 Azure 工作負載。 |
 ||||
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect

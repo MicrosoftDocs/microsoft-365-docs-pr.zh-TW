@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2897766570c6ef8979a7944a687ba024e55b3ce
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2884ffc695abc1c6b4b5be9bbd7c9ad37ad05439
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934546"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651293"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 隱私權
 
@@ -133,7 +133,8 @@ Microsoft Defender for Endpoint client 軟體有兩個層級的診斷資料，�
 | cloud_service cloud_service.service_uri                           | 用於與雲端通訊的 URI。 |
 | cloud_service cloud_service.diagnostic_level                      | 裝置的診斷層級 (必要，選用) 。 |
 | cloud_service cloud_service.automatic_sample_submission           | 是否已開啟自動範例提交。 |
-| edr.early_preview                                   | 裝置是否應執行「及早預覽」功能。 |
+| cloud_service cloud_service.automatic_definition_update_enabled   | 是否已開啟自動定義更新。 |
+| edr.early_preview                                   | 裝置是否應該執行 EDR 早期預覽功能。 |
 | edr.group_id                                        | 偵測及回應元件所使用的群組識別碼。 |
 | edr 標記                                            | 使用者定義的標記。 |
 | 功能。 \[選用功能名稱\]                  | 預覽功能的清單，及其是否已啟用。 |
@@ -165,7 +166,7 @@ Microsoft Defender for Endpoint client 軟體有兩個層級的診斷資料，�
 | ------------------------------ | ----------- |
 | v1_crash_count                 | 在用戶端電腦上，V1 引擎處理常式每小時崩潰的次數  |
 | v2_crash_count                 | 在用戶端電腦上，V2 引擎處理常式每小時崩潰的次數  |
-| EDR_crash_count                | 在用戶端電腦上，EDR 處理常式每小時崩潰的次數        |
+| EDR_crash_count                | 用戶端電腦上每小時 EDR 處理常式崩潰的次數        |
 
 **內核擴充統計資料**
 
@@ -219,6 +220,7 @@ Microsoft Defender for Endpoint client 軟體有兩個層級的診斷資料，�
 | antivirus_engine antivirus_engine.scan_cache_maximum                | 產品快取的大小。 |
 | antivirus_engine antivirus_engine.maximum_scan_threads              | 掃描時所用的執行緒數目上限。 |
 | antivirus_engine antivirus_engine.threat_restoration_exclusion_time | 在從隔離區還原的檔案之前，可再次偵測到超時。 |
+| antivirus_engine antivirus_engine.threat_type_settings              | 產品如何處理不同威脅類型的設定。 |
 | filesystem_scanner filesystem_scanner.full_scan_directory             | 完整掃描目錄。 |
 | filesystem_scanner filesystem_scanner.quick_scan_directories          | 快速掃描中所用的目錄清單。 |
 | edr.latency_mode                                   | 偵測及回應元件所使用的延遲模式。 |
