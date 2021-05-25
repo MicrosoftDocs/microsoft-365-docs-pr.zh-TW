@@ -2,7 +2,7 @@
 title: Microsoft 365 Defender
 summary: 深入瞭解 Microsoft 365 Defender 中的穩健安全性解決方案，讓您能更好地保護您的企業跨攻擊面。
 metadata:
-  title: Microsoft 365 Defender 檔
+  title: Microsoft 365Defender 檔
   description: 深入瞭解 Microsoft 365 Defender 中的穩健安全性解決方案，讓您能更好地保護您的企業跨攻擊面。
   services: office-365-security-compliance
   ms.service: O365-seccomp
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 1085b54a4b879a316b57cad89e138a73c871370e
-  ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+  ms.openlocfilehash: b10d9eebf8ed98e06e98c1e73722f7b3b0d7ba87
+  ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/20/2021
-  ms.locfileid: "51904173"
+  ms.lasthandoff: 05/25/2021
+  ms.locfileid: "52639388"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -28,7 +28,7 @@ landingContent:
       url: ../defender/microsoft-365-defender.md
   - linkListType: whats-new
     links:
-    - text: IMicrosoft 365 Defender 的新功能
+    - text: Microsoft 365 Defender 的新功能
       url: ../defender/whats-new.md
   - linkListType: video
     links:
@@ -42,7 +42,7 @@ landingContent:
       url: m365d-evaluation.md
     - text: 在實際執行中執行試驗專案
       url: m365d-pilot.md
-- title: 快速入門
+- title: 入門
   linkLists:
   - linkListType: get-started
     links:
@@ -70,9 +70,9 @@ landingContent:
       url: /office-365-security/defender-for-office-365
     - text: 適用於 Office 365 的 Defender 服務描述
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-    - text: Microsoft 365 Defender 中的 Office 365 版 defender
+    - text: Microsoft 365 defender 中 Office 365 的 defender
       url: /defender/microsoft-365-security-center-mdo
-    - text: 在 Microsoft 365 Defender 中重新導向 Office 365 的 Defender
+    - text: 在 Microsoft 365 defender 中重新定向 Office 365 的 defender
       url: /defender/microsoft-365-security-mdo-redirection
 - title: 適用於端點的 Microsoft Defender
   linkLists:
@@ -80,9 +80,9 @@ landingContent:
     links:
     - text: 什麼是適用於端點的 Microsoft Defender？
       url: /defender-endpoint/microsoft-defender-endpoint
-    - text: Microsoft 365 Defender 中的端點的 Defender
+    - text: Microsoft 365 defender 中的端點的 defender
       url: /defender/microsoft-365-security-cente
-    - text: 在 Microsoft 365 Defender 中重新導向用於端點的 Defender
+    - text: 在 Microsoft 365 defender 中重新導向用於端點的 Defender
       url: /defender/microsoft-365-security-mde-redirection
 - title: Microsoft 365 安全性中心
   linkLists:
@@ -90,7 +90,7 @@ landingContent:
     links:
     - text: Microsoft 365 安全性中心概述
       url: overview-security-center.md
-    - text: Microsoft 365 security center 中的 microsoft Defender for Endpoint
+    - text: Microsoft 365 security center 中的 Microsoft Defender for Endpoint
       url: microsoft-365-security-center-mde.md
     - text: Microsoft 365 安全性中心中的適用於 Office 365 的 Microsoft Defender
       url: ../defender/microsoft-365-security-center-mdo.md
@@ -118,5 +118,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: 'Microsoft 365 Defender APIs (預覽) '
+    - text: 'Microsoft 365Defender APIs (預覽) '
       url: api-overview.md
