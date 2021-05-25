@@ -93,13 +93,11 @@
             - name: 管理
               href: manage-incidents.md
             - name: 調查
-              items:
-                - name: 概觀
-                  href: investigate-incidents.md
-                - name: 警示
-                  href: investigate-alerts.md
-                - name: 使用者
-                  href: investigate-users.md
+              href: investigate-incidents.md
+            - name: 事件警示
+              href: investigate-alerts.md
+            - name: 事件使用者
+              href: investigate-users.md
             - name: 回應第一個事件
               items:
                 - name: 簡介
