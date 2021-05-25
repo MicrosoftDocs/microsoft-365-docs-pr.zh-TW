@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何為您的組織設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: de5f8ffbc5c26015f6ff0eb2863b622273f96ca1
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 480e09e42ea53cc78cd738a6e0650feae7a9f8c8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408510"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635947"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
 
@@ -105,5 +105,4 @@ ms.locfileid: "51408510"
 ## <a name="related-content"></a>相關內容
 
 [開啟多重要素驗證](../../business-video/turn-on-mfa.md) (影片)
-
 [為您的手機開啟多重要素驗證](../../business-video/set-up-mfa.md) (影片)

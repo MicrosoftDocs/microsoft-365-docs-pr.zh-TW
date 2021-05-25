@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 當您購買 Microsoft 365 商務標準版時，您可以選擇使用自己的網域，或在註冊時購買一個網域。
-ms.openlocfilehash: cee91edaab09506dca90cf5ed64ee9bc669c98cf
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ca9cc359aaabfc16a5d0c57a75362c7826dea0db
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624414"
+ms.locfileid: "52635627"
 ---
 # <a name="set-up-microsoft-business-standard"></a>設定 Microsoft 商務標準版
 
@@ -103,6 +103,8 @@ ms.locfileid: "52624414"
 
 3. 輸入您的 Microsoft 電子郵件地址，然後選取 **[連線]**。
 
+## <a name="watch-set-up-outlook-for-email"></a>觀看：設定 Outlook 以收發電子郵件
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
 如需更多資訊，請參閱[設定 Outlook 以收發電子郵件](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f)。
@@ -123,6 +125,8 @@ ms.locfileid: "52624414"
 
     這次請選取 **[從其他程式或檔案匯入]**，並遵循步驟來匯入舊電子郵件時建立的備份檔案。
 
+## <a name="watch-import-and-redirect-email"></a>觀看：匯入和重新導向電子郵件
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
   
 如需更多資訊，請參閱[使用 Outlook 匯入電子郵件](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de)。
@@ -136,6 +140,8 @@ Microsoft 365 不包含貴公司的公用網站。 如果您想要設立一個�
 1. 從系統管理中心，移至 **[資源]**，然後選取 **[公用網站]**。
 
 2. 選取其中一個選項下方的 **[深入了解]**，然後註冊網站合作夥伴，使用他們的工具來設立和設計您的網站。
+
+## <a name="watch-create-your-business-website"></a>觀看：建立您的商務網站
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 

@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-瞭解本月新增的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
+ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535743"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639537"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -49,6 +49,24 @@ ms.locfileid: "52535743"
 - [SharePoint 系統管理中心的新功能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](/OfficeUpdates/)
 - [如何檢查 Windows 版本發行狀況](/windows/deployment/update/check-release-health)
+
+## <a name="may-2021"></a>2021 年 5 月
+
+### <a name="admin-mobile-app"></a>系統管理行動 App
+
+### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>使用系統管理行動裝置應用程式，追蹤支援票證更新
+
+針對您租使用者中建立的所有服務要求，您現在可以透過新增記事 & 附件，以查看票證狀態、查看票證詳細資料，以及提供/要求其他資訊。 
+
+:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="螢幕擷取畫面：追蹤支援票證更新":::
+
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>保持最新的應用程式和 Microsoft 365 訂閱的主要更新 
+
+- 透過「預設已啟用) 」的郵件中心推播通知，在 Microsoft 365 訂閱上保持最新的主要更新 (。 
+
+- 使用 **「最近更新」一節** ，以追蹤應用程式中可用的最新功能。 移至 **設定** 新增  >  **功能？**
+
+:::image type="content" source="../media/whats-new-updates.png" alt-text="螢幕擷取畫面：追蹤主要更新及功能":::
 
 ## <a name="april-2021"></a>2021 年 4 月
 

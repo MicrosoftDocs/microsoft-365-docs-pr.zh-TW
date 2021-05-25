@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 建立共用信箱讓組織中的多位使用者共同負責讀取及回覆傳送到某個地址的電子郵件。
-ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e628d72482ed7ff32a204eaf9503fdd9a271844a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537604"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635495"
 ---
 # <a name="create-a-shared-mailbox"></a>建立共用信箱 
 
@@ -190,7 +190,7 @@ ms.locfileid: "52537604"
 
 ## <a name="use-the-shared-calendar"></a>使用共用行事曆
 
-當您建立共用信箱時，系統會自動建立共用的行事曆。 相較於 SharePoint 行事曆，我們比較喜歡使用共用信箱行事曆來追蹤約會與人員的所在位置。 共用行事曆已與 Outlook 整合，因此使用性更勝 SharePoint 行事曆。
+當您建立共用信箱時，也會自動建立共用行事曆。相較於 SharePoint 行事曆，我們比較喜歡使用共用信箱行事曆來追蹤約會與人員的動向。共用行事曆已與 Outlook 整合，而且使用方法比 SharePoint 行事曆更簡單。
 
 1. 在 Outlook 應用程式中，移至行事曆檢視並選取共用信箱。
 
@@ -201,11 +201,7 @@ ms.locfileid: "52537604"
 ## <a name="related-content"></a>相關內容
 
 [關於共用信箱](about-shared-mailboxes.md) (文章)
-
 [設定共用信箱](configure-a-shared-mailbox.md) (文章)
-
 [將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md) (文章)
-
 [從共用信箱移除授權](remove-license-from-shared-mailbox.md) (文章)
-
 [解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md) (文章)

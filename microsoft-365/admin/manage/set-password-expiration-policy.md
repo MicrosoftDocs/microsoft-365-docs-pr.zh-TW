@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解系統管理員如何在 Microsoft 365 系統管理中心設定為學校 公司或非利益組織設定密碼到期原則。
-ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7f12918211718b91313c0c89b11eaeb0a8cc3181
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537484"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635819"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>設定貴組織的密碼到期原則
 
@@ -36,7 +36,7 @@ ms.locfileid: "52537484"
 
 本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../../business-video/admin-center-overview.md)
 
-身為系統管理員，您可以將使用者密碼設為在指定天數後過期，或將密碼設為永不過期。 根據預設，貴組織的密碼會設定為永不過期。
+身為系統管理員，您可以將使用者密碼設為在指定天數後過期，或將密碼設為永不過期。根據預設，貴組織的密碼會設為永不過期。
 
 最新研究強烈指出強制密碼變更的弊大於利。 它們會讓使用者選擇較弱的密碼、重複使用密碼或以容易被駭客猜測到的方式更新舊密碼。 建議您啟用[多重要素驗證](../security-and-compliance/set-up-multi-factor-authentication.md)。 若要深入了解密碼原則，請查看[密碼原則建議](../misc/password-policy-recommendations.md)。
 
@@ -57,13 +57,13 @@ ms.locfileid: "52537484"
   
 4. 如果您不希望使用者必須變更密碼，請取消選取 **[將使用者密碼設定為在幾天後到期]** 旁的核取方塊。
   
-5. 輸入密碼應到期的頻率。 選擇介於 14 到 730 之間的天數。
+5. 輸入密碼到期的頻率。選擇 14 到 730 之間的天數。
   
 6. 在第二個方塊中，輸入使用者何時應收到其密碼到期的通知，然後選取 **[儲存]**。 選擇介於 10 到 30 之間的天數。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>關於密碼到期功能，您應知道的重要事項
   
-- 在快取中的密碼過期之前，不會強制要求只使用 Outlook App 的使用者重設其 Microsoft 365 密碼。這可能會在實際到期日之後的數天發生。針對此問題，目前沒有系統管理員層級的因應措施。
+在快取中的密碼過期之前，不會強制要求只使用 Outlook App 的使用者重設其 Microsoft 365 密碼。這可能會在實際到期日之後的數天發生。針對此問題，目前沒有系統管理員層級的因應措施。
 
 ## <a name="prevent-last-password-from-being-used-again"></a>避免再次使用上次的密碼
 
@@ -90,5 +90,4 @@ Set-MsolPasswordPolicy 指令會更新指定網域或租用戶的密碼原則。
 ## <a name="related-content"></a>相關內容
 
 [讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
-
 [重設密碼](../add-users/reset-passwords.md) (文章)

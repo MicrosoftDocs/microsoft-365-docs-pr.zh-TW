@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 群組成員可以取得交談、檔案和行事曆活動、Stream 以及 Planner 的群組電子郵件與共用工作區。
-ms.openlocfilehash: d8bf2e20b428063b99d540896bac3e6e1ae59481
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3e4fa36520247179b653f799f7b2a061b9d9f4a9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535863"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635591"
 ---
 # <a name="compare-groups"></a>比較群組
 
@@ -94,5 +94,4 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 ## <a name="related-content"></a>相關內容
 
 [深入了解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (文章)
-
 [為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (文章)

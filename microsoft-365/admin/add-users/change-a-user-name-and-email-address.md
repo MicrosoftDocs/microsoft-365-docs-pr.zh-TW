@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解 Microsoft 365 全域系統管理員如何在使用者的名稱變更時，變更使用者的電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535983"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634217"
 ---
 # <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
 您可能需要變更某個使用者的電子郵件地址和顯示名稱，例如當使用者結婚或使用者的姓氏變更時。
 
-觀看有關變更使用者電子郵件地址的短片。 <br><br>
+## <a name="watch-change-a-users-name-or-email-address"></a>觀看：變更使用者的名稱或電子郵件地址
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
@@ -254,7 +254,5 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 ## <a name="related-content"></a>相關內容
 
 [系統管理員：重設一或多個使用者的密碼](reset-passwords.md) (文章)
-  
 [為使用者新增另一個電子郵件地址](../email/add-another-email-alias-for-a-user.md) (文章)
-
 [建立共用信箱](../email/create-a-shared-mailbox.md) (文章)

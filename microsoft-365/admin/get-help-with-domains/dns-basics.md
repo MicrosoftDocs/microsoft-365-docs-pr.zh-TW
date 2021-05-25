@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 此網域名稱系統會對應電腦主機名稱至 IP 位址，了解 DNS 和網域註冊機構的基本概念有助於管理網域。
-ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 19fc444c056bbf3e1ea1f601d20a9b9cbd75bec8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582941"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635423"
 ---
 # <a name="dns-basics"></a>DNS 基本知識
 
@@ -38,6 +38,8 @@ ms.locfileid: "52582941"
 ::: moniker range="o365-worldwide"
 
 網域名稱 (例如 contoso.com) 是由網域註冊機構和資料庫的全球系統管理。 網域名稱系統 (DNS) 可提供人類看得懂的電腦主機名稱與網路設備所使用的 IP 位址之間的對應。 了解 DNS 和網域註冊機構的基本概念有助於管理網域。
+
+## <a name="watch-domains--dns-an-overview"></a>觀看：網域與 DNS：概觀
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -46,6 +48,8 @@ ms.locfileid: "52582941"
 ::: moniker range="o365-germany"
 
 網域名稱 (例如 contoso.com) 是由網域註冊機構和資料庫的全球系統管理。 網域名稱系統 (DNS) 可提供人類看得懂的電腦主機名稱與網路設備所使用的 IP 位址之間的對應。 了解 DNS 和網域註冊機構的基本概念有助於管理網域。
+
+## <a name="watch-domains--dns-an-overview"></a>觀看：網域與 DNS：概觀
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -192,7 +196,7 @@ Microsoft 365 需要具備數種 DNS 記錄才能搭配您的網域使用。除�
   
 或者，如果您正在規劃部署，建議您檢閱 Microsoft 365 所需的所有 DNS 記錄清單、DNS 記錄的作用與範例值。 請參閱 [Microsoft 365 的外部網域名稱系統記錄](../../enterprise/external-domain-name-system-records.md)。
   
-## <a name="how-can-i-learn-more"></a>如何深入了解？
+## <a name="next-steps"></a>後續步驟
 
 請參閱下列其中一項： 
   
@@ -202,7 +206,5 @@ Microsoft 365 需要具備數種 DNS 記錄才能搭配您的網域使用。除�
 ## <a name="related-content"></a>相關內容
 
 [網域常見問題集](../setup/domains-faq.yml) (文章)
-
 [尋找並修正新增網域或 DNS 記錄之後所發生的問題](find-and-fix-issues.md) (文章)
-
 [管理網域](index.yml) (連結頁面)

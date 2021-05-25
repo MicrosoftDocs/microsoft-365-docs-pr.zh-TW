@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 加強貴組織對密碼攻擊的防護，禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593906"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635971"
 ---
 # <a name="password-policy-recommendations"></a>密碼原則建議
 
@@ -128,7 +128,9 @@ ms.locfileid: "52593906"
 
 以風險為根據的多重要素驗證可確保系統偵測到可疑活動時，能迫使使用者確保其為合法帳戶擁有者。 
   
-## <a name="want-to-know-more-recommended-reading"></a>想要進一步了解嗎？ 建議閱讀
+## <a name="next-steps"></a>後續步驟
+
+想要了解有關管理密碼的更多資訊嗎？ 以下是一些建議閱讀：
 
 - [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/p/?linkid=861008) (強大的網站密碼是否有用？)
 
@@ -145,9 +147,6 @@ ms.locfileid: "52593906"
 ## <a name="related-content"></a>相關內容
 
 [重設密碼](../add-users/reset-passwords.md) (文章)
-
 [設定個別使用者的密碼永不過期](../add-users/set-password-to-never-expire.md) (文章)
-
 [讓使用者重設自己的密碼](../add-users/let-users-reset-passwords.md) (文章)
-
 [重新傳送使用者的密碼 - 系統管理說明](../add-users/resend-user-password.md) (文章)

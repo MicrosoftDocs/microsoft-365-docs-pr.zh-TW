@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色 (如服務系統管理員) 會與商務功能對應，並提供在系統管理中心執行特定工作的權限。
-ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3163b7a4037a923122d2da170ac5ea9e8c2d0185
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536007"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634193"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
@@ -96,9 +96,5 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 ## <a name="related-content"></a>相關內容
 
 [指派系統管理員角色](assign-admin-roles.md) (文章)
-
 [Microsoft 365 系統管理中心的 Azure AD 角色](azure-ad-roles-in-the-mac.md) (文章)
-
-[Exchange Online 系統管理員角色](about-exchange-online-admin-role.md) (文章)
-  
-[Microsoft 365 系統管理中心的活動報告](../activity-reports/activity-reports.md) (文章)
+[Exchange Online 系統管理員角色](about-exchange-online-admin-role.md) (文章)\ [Microsoft 365 系統管理中心中的活動](../activity-reports/activity-reports.md) (文章)
