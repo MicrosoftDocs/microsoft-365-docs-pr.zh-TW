@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 將搜尋結果從 Microsoft 365 合規性中心的內容搜尋匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 SharePoint 和商務用 OneDrive 網站的內容會匯出為原生 Office 檔。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536055"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653532"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
 內容搜尋成功執行後，您可以將搜尋結果匯出至本機電腦。 當您匯出電子郵件結果時，其會以 PST 檔案下載到您的電腦。 當您從 SharePoint 和商務用 OneDrive 網站匯出內容時，會匯出原生 Office 檔的副本。 匯出的搜尋結果中包含其他檔和報表。
   
-匯出內容搜尋的結果包含準備結果，然後將其下載到本機電腦。
+匯出內容搜尋的結果包含準備結果，然後將其下載到本機電腦。 匯出搜尋結果的這些步驟也適用于匯出與核心 eDiscovery 案例相關聯之搜尋的結果。
   
 ## <a name="before-you-export-search-results"></a>在您匯出搜尋結果之前
 
@@ -57,6 +57,8 @@ ms.locfileid: "52536055"
   > <sup>1</sup> Microsoft 不會製造協力廠商擴充模組或 ClickOnce 應用程式的附加元件。 使用不受支援的瀏覽器匯出搜尋結果時，不支援協力廠商分機或附加元件。<br/>
   > <sup>2</sup>因為 Microsoft Edge 的最近變更，所以預設不再啟用 ClickOnce 支援。 如需在 Edge 中啟用 ClickOnce 支援的相關指示，請參閱[使用 Microsoft Edge 中的 eDiscovery 匯出工具](configure-edge-to-export-search-results.md)。
   
+- 您在步驟2中用來下載搜尋結果的 eDiscovery 匯出工具，不會支援使用腳本或執行 Cmdlet) 進行自動化 (。 強烈建議您不要在步驟1或步驟2的下載程式中自動化準備程式。 如果您自動執行這兩個程式，當您遇到問題時，Microsoft 支援人員不會提供協助。
+
 - 建議您將搜尋結果下載到本機電腦。 若要避免公司的防火牆或 proxy 基礎結構在下載搜尋結果時導致問題，您可以考慮將搜尋結果下載至您的網路以外的虛擬桌面。 這可能會降低匯出大量檔案時，Azure 資料連線中發生的超時。 如需虛擬桌面的詳細資訊，請參閱[Windows 虛擬機器](https://azure.microsoft.com/services/virtual-desktop)。
 
 - 若要在下載搜尋結果時改善效能，請考慮將傳回一組大型結果的搜尋分割成較小的搜尋。 例如，您可以在搜尋查詢中使用日期範圍，以傳回較小的結果集，可更快速地下載。
@@ -82,7 +84,7 @@ ms.locfileid: "52536055"
     </system.net>
     ```
 
-- 如果內容搜尋的結果超過7天，而您提交匯出工作，就會顯示錯誤訊息，提示您重新執行搜尋以更新搜尋結果。 如果發生這種情況，請取消匯出，然後重新執行搜尋，然後再次開始匯出。
+- 如果搜尋結果的時間超過7天，且您提交匯出作業，則會顯示錯誤訊息，提示您重新執行搜尋以更新搜尋結果。 如果發生這種情況，請取消匯出，然後重新執行搜尋，然後再次開始匯出。
 
 ## <a name="step-1-prepare-search-results-for-export"></a>步驟1：準備要匯出的搜尋結果
 
@@ -169,11 +171,11 @@ ms.locfileid: "52536055"
       >- 針對下載搜尋結果的資料夾停用防病毒掃描。<br/>
       >- 將搜尋結果下載至不同的資料夾，以進行並行下載工作。
 
-6. 按一下 [開始] 將搜尋結果下載至您的電腦。
+7. 按一下 [開始] 將搜尋結果下載至您的電腦。
   
     **EDiscovery 匯出工具** 會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 以下是匯出搜尋結果的詳細資訊。
   

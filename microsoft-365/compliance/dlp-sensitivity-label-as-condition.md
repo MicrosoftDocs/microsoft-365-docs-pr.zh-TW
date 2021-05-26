@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解您可以在 DLP 原則中使用敏感度標籤做為條件的服務和項目類型
-ms.openlocfilehash: 19bd80de225f703b5c280163e94826498fa097bd
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876292"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651089"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>在 DLP 原則中使用敏感度標籤做為條件
 
@@ -54,7 +54,7 @@ ms.locfileid: "51876292"
 |服務  |項目類型  |可用於原則提示  |強制  |
 |---------|---------|---------|---------|
 |Exchange    |電子郵件         |是         |是         |
-|Exchange    |電子郵件附件         |否 *         |是 *         |
+|Exchange    |電子郵件附件         |否         |是 *         |
 |SharePoint Online     |SharePoint Online 中的項目         |是         |是         |
 |商務用 OneDrive     |項目         |是         |是         |
 |Teams     |Teams 和頻道訊息         |不適用         |不適用         |
@@ -62,7 +62,7 @@ ms.locfileid: "51876292"
 |Windows 10 裝置     |項目         |是         |是         |
 |MCAS (預覽) |項目         |是         |是         |
 
-\* 在傳輸中支援電子郵件和附件上的 DLP 偵測和敏感度標籤之強制執行。 不支援已標記敏感度標籤之電子郵件附件的 DLP 偵測。
+\*Office 檔案類型只支援標示敏感度電子郵件附件的 DLP 偵測。
 
 \** 在 Teams 中透過 1 對 1 聊天或頻道傳送的附件，會自動上傳至 [商務用 OneDrive] 和 SharePoint。 因此，如果將 SharePoint Online 或 [商務用 OneDrive] 包含在您的 DLP 原則做為位置，則會在此條件的範圍中會自動包含於 Teams 中傳送的已標示附件。 您不需要在 DLP 原則中選取 Teams 做為位置。
 

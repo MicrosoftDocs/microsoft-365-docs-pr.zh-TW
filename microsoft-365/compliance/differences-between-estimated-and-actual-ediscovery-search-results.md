@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 瞭解在 Office 365 中使用 eDiscovery 工具進行搜尋時，估計和實際搜尋結果可能會有所不同的原因。
-ms.openlocfilehash: d530b083b2353b66ee5d4fd4bb72b175aef28be8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17a4c2eea9833afa2112fa8ab918dcda074eeb36
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532109"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653508"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>預估和實際 eDiscovery 搜尋結果之間的差異
 
@@ -81,7 +81,7 @@ ms.locfileid: "52532109"
 
 - **匯出期間 Exchange 專案的重復資料** 刪除。 若為 Exchange 專案，則重復資料刪除會減少匯出的專案數。 您可以選擇在匯出搜尋結果時將其取消重複。 若為 Exchange 郵件，這表示只會匯出郵件的單一實例，即使該郵件可能位於多個信箱中。 預估搜尋結果包含每個郵件的實例。 因此，如果您在匯出搜尋結果時選擇 [重復資料刪除] 選項，則匯出的實際專案數目可能會遠遠小於估計的專案數。
 
-    當您選擇 [重復資料刪除] 選項時，另一個需要注意的一點是，所有的 Exchange 專案都會匯出成單一 PST 檔案，而且不會保留來源信箱中的資料夾結構。 匯出的 PST 檔案只包含電子郵件專案。 不過，「搜尋結果報告」會包含每個匯出郵件的專案，用以識別郵件所在的來源信箱。 這可協助您識別所有包含重複郵件的信箱。 如果未啟用重複資料刪除，則會為每個包含在搜尋中的信箱匯出個別的 PST 檔案。
+搜尋結果報告 (Results.csv 檔案) 包含每個重複郵件的專案，並識別重複郵件所在的來源信箱。 這可協助您識別所有包含重複郵件的信箱。
 
 > [!NOTE]
 > 如果您未選取 [ **包括已加密的專案] 或 [未辨識的格式** ] 選項，當您匯出搜尋結果或只下載報告時，就會下載索引錯誤報表，但沒有任何專案。 這並不表示沒有任何索引錯誤。 這只表示匯出中不包含未編制索引的專案。

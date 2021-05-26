@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 eDiscovery 和搜尋工具來管理和回應組織中的資料外泄事件。
-ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051975"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653520"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery 解決方案系列：資料外泄案例-搜尋和清除
 
@@ -31,7 +31,7 @@ ms.locfileid: "51051975"
   
 ### <a name="scope-of-this-article"></a>本文的範圍
 
-這份檔提供如何永久移除 Microsoft 365 中的郵件，使其無法存取或可復原的指令清單。 若要刪除郵件並使其可復原，直到刪除的專案保留期間到期為止，請參閱 [搜尋並刪除組織中的電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)。
+這份檔提供如何從 Microsoft 365 中永久移除郵件的指示，使其無法存取或可復原。 若要刪除郵件並使其可復原，直到刪除的專案保留期間到期為止，請參閱 [搜尋並刪除組織中的電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)。
   
 ## <a name="workflow-for-managing-data-spillage-incidents"></a>管理資料外泄事件的工作流程
 
@@ -54,9 +54,9 @@ ms.locfileid: "51051975"
     
 - 若要控制資料外泄調查人員可以搜尋及管理誰可以存取此案例的使用者信箱，您可以設定規范界限，以及建立自訂角色群組，如 [步驟 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)所述。 若要這麼做，您必須是「組織管理」角色群組的成員，或被指派角色管理角色。 如果您或您組織中的系統管理員已設定合規性界限，您可以略過步驟1。
     
-- 若要建立案例，您必須是 eDiscovery 管理員角色群組的成員，或是已指派案例管理角色之自訂角色群組的成員。 如果您不是成員，請要求 Microsoft 365 系統管理員 [將您新增至 eDiscovery 管理員角色群組](assign-ediscovery-permissions.md)。
+- 若要建立案例，您必須是 eDiscovery 管理員角色群組的成員，或是已指派案例管理角色之自訂角色群組的成員。 如果您不是成員，請要求 Microsoft 365 管理員[將您新增至 eDiscovery 管理員角色群組](assign-ediscovery-permissions.md)。
     
-- 若要建立和執行內容搜尋，您必須是「eDiscovery 管理員」角色群組的成員，或者獲指派「符合性搜尋」管理角色。 若要刪除郵件，您必須是「組織管理」角色群組的成員，或者獲指派「搜尋及清除」管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心中指派電子文件探索權限](./assign-ediscovery-permissions.md)。
+- 若要建立和執行內容搜尋，您必須是「eDiscovery 管理員」角色群組的成員，或者獲指派「符合性搜尋」管理角色。 若要刪除郵件，您必須是「組織管理」角色群組的成員，或者獲指派「搜尋及清除」管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心指派電子文件探索權限](./assign-ediscovery-permissions.md)。
     
 - 若要搜尋步驟8中的「審核記錄電子檔探索」活動，必須為您的組織開啟審計。 您可以搜尋過去90天內執行的活動。 若要深入瞭解如何啟用和使用審核，請參閱步驟8中的「 [審核資料外泄調查](#auditing-the-data-spillage-investigation-process) 程式」一節。 
     
@@ -64,7 +64,7 @@ ms.locfileid: "51051975"
 
 根據您的組織實踐，您必須控制誰可以存取 eDiscovery 案例，以調查資料外泄事件及設定規范界限。 最簡單的方法是將調查人員新增為安全性 & 合規性中心內現有角色群組的成員，然後將角色群組新增為 eDiscovery 案例的成員。 如需內建 eDiscovery 角色群組的相關資訊，以及如何新增成員至 eDiscovery 案例，請參閱 [指派 ediscovery 許可權](assign-ediscovery-permissions.md)。
   
-您也可以建立符合組織需求的新角色群組。 例如，您可能想要組織中的資料外泄調查人員群組，以存取及共同作業所有的資料外泄案例。 若要這麼做，您可以建立「資料外泄調查員」角色群組、指派適當的角色 (匯出、RMS 解密、審核、預覽、符合性搜尋及案例管理) 、將資料外泄調查人員新增至角色群組，然後將角色群組新增為數據外泄 eDiscovery 案例的成員。 如需如何執行此動作的詳細指示，請參閱 [設定 Office 365 中 eDiscovery 調查的規範界限](tagging-and-assessment-in-advanced-ediscovery.md) 。 
+您也可以建立符合組織需求的新角色群組。 例如，您可能想要組織中的資料外泄調查人員群組，以存取及共同作業所有的資料外泄案例。 若要這麼做，您可以建立「資料外泄調查員」角色群組、指派適當的角色 (匯出、RMS 解密、審核、預覽、符合性搜尋及案例管理) 、將資料外泄調查人員新增至角色群組，然後將角色群組新增為數據外泄 eDiscovery 案例的成員。 如需如何執行此動作的詳細指示，請參閱[設定 Office 365 中 eDiscovery 調查的合規性界限](tagging-and-assessment-in-advanced-ediscovery.md)。 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>步驟2：建立電子檔探索案例
 
@@ -87,11 +87,11 @@ EDiscovery 案例提供一種有效的方法來管理資料外泄調查。 您�
   
 如果您有超過1000個信箱或每個信箱的電子郵件超過100個，您可以使用其他關鍵字或條件，例如日期範圍或寄件者/收件者，逐一查看每個搜尋的結果，將初始搜尋分割成多個搜尋。 請務必記下在 [步驟 7](#step-7-permanently-delete-the-spilled-data)刪除郵件時所要使用的所有搜尋查詢。
 
-如果系統管理員或使用者已獲指派 Office 365 E5 授權，您可以使用「高級 eDiscovery」一次檢查最多10000個搜尋結果。 若要檢查的電子郵件超過10000個，您可以依日期範圍分割搜尋查詢，並個別查看每個結果，因為搜尋結果會依日期排序。 在 [Advanced eDiscovery] 中，您可以使用預覽面板中的 [ **標籤標為** ] 功能來標記搜尋結果，並依據您標示的標記篩選搜尋結果。 當您與次要檢閱者共同作業時，這會很有説明。 透過使用高級 eDiscovery 中的其他分析工具（例如光學字元辨識、電子郵件執行緒及預測編碼），您可以快速處理及檢查數千封郵件，並標記它們以供進一步複查。 請參閱 [Quick setup For Advanced eDiscovery](./get-started-with-advanced-ediscovery.md)。
+如果系統管理員或使用者已獲指派 Office 365 E5 授權，您可以使用 Advanced eDiscovery 一次檢查10000的搜尋結果。 若要檢查的電子郵件超過10000個，您可以依日期範圍分割搜尋查詢，並個別查看每個結果，因為搜尋結果會依日期排序。 在 Advanced eDiscovery 中，您可以使用預覽面板中的 [**標籤標為**] 功能來標記搜尋結果，並依據您標示的標記來篩選搜尋結果。 當您與次要檢閱者共同作業時，這會很有説明。 透過使用 Advanced eDiscovery 中的其他分析工具（例如光學字元辨識、電子郵件執行緒及預測編碼），您可以快速處理及檢查數千封郵件，並標記它們以供進一步複查。 請參閱[快速設定 Advanced eDiscovery](./get-started-with-advanced-ediscovery.md)。
 
-當您發現包含溢出資料的電子郵件時，請檢查郵件的收件者，以判斷其是否為外部共用。 若要進一步追蹤郵件，您可以收集寄件者資訊和日期範圍，讓您可以使用 [步驟 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)中所述的郵件追蹤記錄檔。
+當您發現包含溢出資料的電子郵件時，請檢查郵件的收件者，以判斷其是否為外部共用。 若要進一步追蹤郵件，您可以收集寄件者資訊和日期範圍，這樣您就可以使用郵件追蹤記錄檔。 [步驟 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)說明此程式。
 
-驗證搜尋結果之後，您可能會想要與其他人共用您的結果，以進行次要審閱。 您在步驟1中指派案例的人員可以在 eDiscovery 和高級 eDiscovery 和核准案例探索中查看案例內容。 您也可以在不匯出實際內容的情況下產生報告。 您也可以使用這個相同的報告做為刪除的證據，如 [步驟 8](#step-8-verify-provide-a-proof-of-deletion-and-audit)所述。
+驗證搜尋結果之後，您可能會想要與其他人共用您的結果，以進行次要審閱。 您在步驟1中指派案例的人員可以在 eDiscovery 和 Advanced eDiscovery 中查看案例內容，並核准案例結果。 您也可以在不匯出實際內容的情況下產生報告。 您也可以使用這個相同的報告做為刪除的證據，如 [步驟 8](#step-8-verify-provide-a-proof-of-deletion-and-audit)所述。
   
  **產生統計報告：**
   
@@ -105,7 +105,7 @@ EDiscovery 案例提供一種有效的方法來管理資料外泄調查。 您�
     
 3. 選取 [ **所有專案] （包括具有未辨識格式的專案）、[已加密] 或 [未針對其他原因建立索引** ]，然後按一下 [ **產生報告**]。
 
-4. 在 eDiscovery 案例中，按一下 [ **匯出** ] 以顯示匯出工作清單。 您可能需要按一下 [重新整理] 以更新 **清單，以** 顯示您剛才建立的匯出工作。
+4. 在 eDiscovery 案例中，按一下 [ **匯出** ] 以顯示匯出工作清單。 您可能需要按一下 [重新整理] 以更新清單 **，以顯示** 您建立的匯出工作。
 
 5. 按一下 [匯出工作]，然後按一下彈出頁面上的 [ **下載** 報告]。
  
@@ -117,11 +117,11 @@ EDiscovery 案例提供一種有效的方法來管理資料外泄調查。 您�
     
 ## <a name="step-5-use-message-trace-log-to-check-how-spilled-data-was-shared"></a>步驟5：使用郵件追蹤記錄檔檢查溢出的資料共用方式
 
-若要進一步調查是否已共用含有溢出資料的電子郵件，您可以選擇性地查詢郵件追蹤記錄，其中包含寄件者資訊，以及您在步驟4中收集的日期範圍資訊。 請注意，針對即時資料，郵件追蹤的保留期間是30天，而歷史資料則為90天。
+若要進一步調查是否已共用含有溢出資料的電子郵件，您可以選擇性地查詢郵件追蹤記錄，其中包含寄件者資訊，以及您在步驟4中收集的日期範圍資訊。 針對即時資料，郵件追蹤的保留期間是30天，而歷史資料則為90天。
   
-您可以在安全性與合規性中心使用郵件追蹤，也可以在 Exchange Online 中使用對應的 Cmdlet PowerShell。 請務必注意，郵件追蹤不會對傳回的資料完整性提供完整的保證。 如需使用郵件追蹤的詳細資訊，請參閱： 
+您可以使用 [安全性與合規性中心] 中的 [郵件追蹤]，或使用 Exchange Online PowerShell 中的對應 Cmdlet。 請務必注意，郵件追蹤不會對傳回的資料完整性提供完整的保證。 如需使用郵件追蹤的詳細資訊，請參閱： 
   
-- [安全性與合規性中心內的訊息追蹤](../security/defender-365-security/message-trace-scc.md)
+- [安全性與合規性中心內的訊息追蹤](../security/office-365-security/message-trace-scc.md)
     
 - [安全性 & 規範中心內的新郵件追蹤](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
@@ -172,16 +172,22 @@ EDiscovery 案例提供一種有效的方法來管理資料外泄調查。 您�
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>步驟7：永久刪除溢出的資料
 
-使用您在步驟6中收集並準備的信箱位置，以及在步驟3中建立及完善的搜尋查詢中，以尋找包含溢出資料的電子郵件，您現在可以永久刪除溢出的資料。  如先前所述，若要刪除郵件，您必須是「組織管理」角色群組的成員，或是被指派「搜尋並清除」管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心中指派電子文件探索權限](./assign-ediscovery-permissions.md)。
+使用您在步驟6中收集並準備的信箱位置，以及在步驟3中建立及完善的搜尋查詢中，以尋找包含溢出資料的電子郵件，您現在可以永久刪除溢出的資料。  如先前所述，若要刪除郵件，您必須是「組織管理」角色群組的成員，或是被指派「搜尋並清除」管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心指派電子文件探索權限](./assign-ediscovery-permissions.md)。
 
-若要刪除濺入的郵件，請參閱步驟 2 & 3 [搜尋並刪除電子郵件訊息](./search-for-and-delete-messages-in-your-organization.md)
+若要刪除濺入的郵件，請參閱 [搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)。
+
+在刪除溢出的資料時，請牢記下列限制：
+
+- 搜尋中的信箱數目上限，您可以使用此搜尋和清除50000動作來刪除專案。 如果您在步驟3中建立的搜尋搜尋的信箱超過50000個，清除動作將會失敗。 在單一搜尋中搜尋超過 50,000 個信箱，通常會在您將搜尋設為包含貴組織的所有信箱時發生。 即使包含符合搜尋查詢項目的信箱少於 50,000 個，此限制仍會適用。
+
+- 每個信箱一次可以移除最多 10 個項目。 因為搜尋和移除郵件的功能應該是事件回應工具，此限制可以協助確保從信箱快速移除郵件。 這項功能不是用來清除使用者信箱。
 
 > [!IMPORTANT]
-> 您無法使用本文所述的程序刪除進階電子文件探索案例的檢閱集中的電子郵件項目。 這是因為「審閱」集中的專案是 live service 中的專案副本，該專案會複製並儲存于 Azure 儲存位置。 這表示它們不會由您在步驟3中建立的內容搜尋傳回。 若要刪除檢閱集中的項目，您必須刪除包含檢閱集的進階電子文件探索案例。 如需詳細資訊，請參閱[關閉或刪除進階電子文件探索案例](close-or-delete-case.md)。
+> 您無法使用本文所述的程序刪除進階電子文件探索案例的檢閱集中的電子郵件項目。 這是因為「審閱」集中的專案是 live service 中的專案副本，該專案會複製並儲存在 Azure 儲存體位置。 這表示它們不會由您在步驟3中建立的內容搜尋傳回。 若要刪除檢閱集中的項目，您必須刪除包含檢閱集的進階電子文件探索案例。 如需詳細資訊，請參閱[關閉或刪除進階電子文件探索案例](close-or-delete-case.md)。
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>步驟8：確認、提供刪除的證明及審核
 
-工作流程中用於管理資料外泄事件的最後一個步驟，就是移至 eDiscovery 案例，並重新執行用來刪除資料以確認未傳回任何結果的相同搜尋查詢，以確認是否已永久移除信箱中溢出的資料。 在您確認已永久移除溢出的資料之後，您可以匯出報表，並將它納入 (與原始報告) 做為刪除的證明。 然後，您可以 [關閉此案例](close-reopen-delete-core-ediscovery-cases.md) ，如果您已在將來參考，將允許您重新開啟此案例。 此外，您也可以將信箱還原為先前的狀態、刪除搜尋查詢以找出溢出的資料，以及搜尋在管理資料外泄事件時所執行之工作的審計記錄。
+工作流程中用來管理資料外泄事件的最後一個步驟，就是移至 eDiscovery 案例，以確認溢出的資料已從信箱永久移除，並重新執行用來刪除該資料的相同搜尋查詢，以確認未傳回任何結果。 在您確認已永久移除溢出的資料之後，您可以匯出報表，並將它納入 (與原始報告) 做為刪除的證明。 然後，您可以 [關閉案例](close-reopen-delete-core-ediscovery-cases.md) ，以便在將來必須參考該案例時重新開啟。 此外，您也可以將信箱還原為先前的狀態、刪除搜尋查詢以找出溢出的資料，以及搜尋在管理資料外泄事件時所執行之工作的審計記錄。
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>將信箱還原為先前的狀態
 
@@ -192,11 +198,11 @@ EDiscovery 案例提供一種有效的方法來管理資料外泄調查。 您�
 如果您在步驟3中建立及使用之搜尋查詢中的關鍵字包含部分實際溢出的資料，則應該刪除搜尋查詢以避免進一步的資料外泄。
   
 1. 在 [安全性與合規性中心] 中，開啟 eDiscovery 案例，移至 [ **搜尋** ] 頁面，然後選取適當的內容搜尋。
-    
+
 2. 在飛入頁面上，按一下 [ **刪除**]。
 
     ![選取搜尋，然後按一下彈出頁面上的 [刪除]](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
-    
+
 ### <a name="auditing-the-data-spillage-investigation-process"></a>審核資料外泄調查過程
 
 您可以在調查期間搜尋執行中的 eDiscovery 活動的審計記錄。 您也可以搜尋審計記錄，傳回您在步驟7中執行的 **New-ComplianceSearchAction-Purge** 命令的審計記錄，以刪除濺入的資料。 如需詳細資訊，請參閱：
