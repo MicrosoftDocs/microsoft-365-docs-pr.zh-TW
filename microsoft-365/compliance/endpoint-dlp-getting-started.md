@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料外洩防護以監視檔案活動，並對這些端點的檔案實作保護動作。
-ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332807"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651005"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>開始使用端點資料外洩防護
 
@@ -102,7 +102,11 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
     - 若為 Windows 10 2004 - KB4568831、KB4577063
     - 若為執行 Office 2016 的裝置 (不是任何其他 Office 版本) - KB4577063 
 
-4. 所有裝置都必須加入 [Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)、AD 或混合式 Azure AD 或登錄 AAD。
+4. 所有裝置都必須為下列其中一項：
+- [已使用 Azure Active Directory (Azure AD) 而聯結的](/azure/active-directory/devices/concept-azure-ad-join)
+- 已使用 AD 而聯結的
+- [已使用混合式 Azure AD 而聯結的](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- [AAD 已註冊](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. 在端點裝置上安裝 Microsoft Chromium Edge 瀏覽器，以強制執行上傳至雲端活動的原則動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
@@ -144,7 +148,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 6. 按照 [Windows 10 電腦的上線工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會帶您前往一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
 
     - 使用群組原則上線 Windows 10 電腦
-    - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
+    - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
     - 使用行動裝置管理工具上線 Windows 10 電腦
     - 使用本機指令碼上線 Windows 10 電腦
     - 在單一工作階段案例上線非永續性 Virtual Desktop Infrastructure (VDI) 電腦。
@@ -174,7 +178,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 6. 按照 [Windows 10 電腦的上線工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會帶您前往一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
 
     - 使用群組原則上線 Windows 10 電腦
-    - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
+    - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
     - 使用行動裝置管理工具上線 Windows 10 電腦
     - 使用本機指令碼上線 Windows 10 電腦
     - 上線非永續性 Virtual Desktop Infrastructure (VDI) 電腦。
