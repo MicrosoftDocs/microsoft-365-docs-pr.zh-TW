@@ -18,26 +18,28 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d23ec690194f87046e6c5f2ab859201bbf2dede9
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 8880f045202fd1c4374e9cec3076144f81eb68d2
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569800"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657714"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分數
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure 得分可在 https://security.microsoft.com/securescore [microsoft 365 的安全性中心](overview-security-center.md)找到。
+您可以 https://security.microsoft.com/securescore 在「 [Microsoft 365 安全性中心](overview-security-center.md)」找到 Microsoft Secure 得分。
 
 ## <a name="proposed-changes"></a>建議變更
 
 我們在近期進行一些變更，讓 [Microsoft 安全評分](microsoft-secure-score.md) 成為安全狀況的更好代表，並提高可用性。 您的分數和可能的最大分數可能會有所變更。
 
-### <a name="no-planned-changes"></a>無規劃的變更
+### <a name="june-2021"></a>2021年6月
 
-目前沒有任何已計畫的變更。
+#### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>移除與 Microsoft Cloud App Security 相關的改進動作
+
+- 使用雲端 App 安全性偵測反常行為
 
 ## <a name="related-resources"></a>相關資源
 

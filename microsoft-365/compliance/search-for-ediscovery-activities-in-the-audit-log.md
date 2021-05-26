@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 瞭解當指派電子檔探索許可權的使用者在 Microsoft 365 規範中心執行內容搜尋、核心 eDiscovery 和 Advanced eDiscovery 工作時所記錄的事件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce0dcc50c13ad705cb36f065639a4e971d032f22
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 8b1f3f235f3411e2f637e4e32104c6179643757d
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653496"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657690"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在稽核記錄中搜尋電子文件探索活動
 
@@ -112,7 +112,7 @@ ms.locfileid: "52653496"
 |已開始匯出內容搜尋  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |使用者匯出內容搜尋的結果。  <br/> |
 |已開始匯出報告  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |使用者已匯出內容搜尋報告。  <br/> |
 |已停止內容搜尋  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |使用者停止內容搜尋。  <br/> |
-|(無)|CaseViewed|Get-ComplianceCase|使用者在規範中心的 **核心 eDiscovery** 頁面上，或執行 Get-ComplianceCase Cmdlet 來查看案例清單。|
+|(無)|CaseViewed|Get-ComplianceCase|使用者在規範中心的 **核心 eDiscovery** 頁面或 **Advanced eDiscovery** 頁面上查看案例清單，或執行 Get-ComplianceCase Cmdlet。|
 |(無)|SearchViewed|Get-ComplianceSearch|使用者在「搜尋」索引標籤上的 [ **搜尋** ] 索引標籤上) 所列的內容搜尋 (，或是執行 Cmdlet 來查看清單。 當使用者透過按一下案例) 中的 [ **搜尋** ] 索引標籤或執行 **Get-ComplianceSearch 案例** ] 命令，來查看與 eDiscovery (案例相關聯的內容搜尋清單時，也會記錄此活動。|
 |(無)|ViewedSearchExported|Get-ComplianceSearchAction 匯出|使用者已查看內容搜尋匯出工作清單， (列于規範中心的 [ **匯出**) ] 索引標籤上，或執行 Cmdlet。 當使用者在) 案例中的 [匯出] 索引標籤上，或執行 [ **Get-ComplianceSearchAction-Case 匯出**] 命令，在 [**匯出**] 索引標籤中查看匯出 (工作清單時，也會記錄此活動。|
 |(無)|ViewedSearchPreviewed|Get-ComplianceSearchAction 預覽|使用者在規範中心中預覽內容搜尋的結果，或執行 Cmdlet。|
