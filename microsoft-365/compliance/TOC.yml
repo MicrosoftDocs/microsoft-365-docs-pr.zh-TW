@@ -798,7 +798,7 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: 匯出、 設定及檢視稽核記錄檔的記錄
           href: export-view-audit-log-records.md
-        - name: 開啟或關閉稽核記錄搜尋
+        - name: 開啟或關閉稽核
           href: turn-audit-log-search-on-or-off.md
         - name: 使用稽核記錄調查常見問題
           href: auditing-troubleshooting-scenarios.md
