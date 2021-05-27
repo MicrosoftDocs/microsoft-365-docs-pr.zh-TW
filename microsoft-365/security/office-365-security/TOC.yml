@@ -22,18 +22,10 @@
               href: exchange-online-protection-overview.md
             - name: EOP 功能
               href: eop-features.md
-            - name: 獨立版 EOP 中的權限
-              href: feature-permissions-in-eop.md
-            - name: 獨立版 EOP 中的 Exchange 系統管理中心
-              href: exchange-admin-center-in-exchange-online-protection-eop.md
-            - name: 在獨立版 EOP 中管理收件者
-              href: manage-recipients-in-eop.md
             - name: EOP 中的郵件流程
               href: mail-flow-in-eop.md
             - name: 隔離
               href: quarantine-email-messages.md
-            - name: 獨立版 EOP 中的稽核報告
-              href: auditing-reports-in-eop.md
         - name: 適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 安全性中心概觀
@@ -72,18 +64,6 @@
           href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
     - name: 部署
       items:
-        - name: Exchange Online Protection
-          items:
-            - name: 在 EOP 中設定反網路釣魚原則
-              href: configure-anti-phishing-policies-eop.md
-            - name: '設定獨立版 EOP 將垃圾郵件傳送至 [垃圾郵件] 資料夾'
-              href: ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
-            - name: 在獨立版 EOP 中管理群組
-              href: manage-groups-in-eop.md
-            - name: 在獨立版 EOP 中管理郵件使用者
-              href: manage-mail-users-in-eop.md
-            - name: 設定 EOP 服務
-              href: set-up-your-eop-service.md
         - name: 防範威脅
           href: protect-against-threats.md
         - name: 將適用於 Office 365 的 Defender 和適用於端點的 Defender 相整合
@@ -98,16 +78,20 @@
           href: secure-by-default.md
         - name: 在適用於 Office 365 的 Microsoft Defender 中設定防網路釣魚原則
           href: configure-mdo-anti-phishing-policies.md
+        - name: 在 EOP 中設定反網路釣魚原則
+          href: configure-anti-phishing-policies-eop.md
         - name: 設定反惡意程式碼原則
           href: configure-anti-malware-policies.md
         - name: 設定反垃圾郵件原則
           href: configure-your-spam-filter-policies.md
+        - name: 在混合式環境中設定 EOP 以將垃圾郵件傳送至垃圾郵件資料夾
+          href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
+        - name: 設定 Exchange Online 信箱上的垃圾郵件設定
+          href: configure-junk-email-settings-on-exo-mailboxes.md
         - name: 設定連線篩選
           href: configure-the-connection-filter-policy.md
         - name: 在適用於 Office 365 的 Defender 中設定安全連結的全域設定
           href: configure-global-settings-for-safe-links.md
-        - name: 設定 Exchange Online 信箱上的垃圾郵件設定
-          href: configure-junk-email-settings-on-exo-mailboxes.md
         - name: 設定輸出垃圾郵件篩選
           href: configure-the-outbound-spam-policy.md
         - name: 建立封鎖寄件者清單
@@ -116,7 +100,7 @@
           href: Create-safe-sender-lists-in-office-365.md
         - name: 電子郵件驗證
           href: email-validation-and-authentication.md
-        - name: 讓使用者能夠存取安全性中心
+        - name: 讓使用者能夠存取安全性與合規性中心
           href: grant-access-to-the-security-and-compliance-center.md
         - name: 適用於 Office 365 的 Defender 中的安全文件
           href: safe-docs.md
@@ -168,10 +152,6 @@
           href: configure-advanced-delivery.md
         - name: 設定 EOP 和適用於 Office 365 的 Defender 的安全性建議設定
           href: recommended-settings-for-eop-and-office365.md
-        - name: 設定 EOP 的最佳作法
-          href: best-practices-for-configuring-eop.md
-        - name: 使用獨立版 EOP 保護中國的內部部署信箱
-          href: protect-on-premises-mailboxes-with-exchange-online-protection.md
         - name: 整合 AIR 與自訂解決方案或協力廠商解決方案
           href: air-custom-reporting.md
         - name: 進階垃圾郵件篩選 (ASF) 設定
@@ -184,12 +164,12 @@
           href: report-junk-email-messages-to-microsoft.md
         - name: '啟用 [回報郵件] 和 [回報網路釣魚] 增益集'
           href: enable-the-report-message-add-in.md
-        - name: 在 EOP 中使用郵件流程規則來封鎖含有可執行附件的郵件
-          href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
-        - name: 在 EOP 中使用郵件流程規則來篩選大量電子郵件
-          href: use-transport-rules-to-configure-bulk-email-filtering.md
+        - name: 使用郵件流程規則來封鎖含有可執行附件的郵件
+          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
+        - name: 使用郵件流程規則篩選大宗郵件
+          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
         - name: 使用郵件流程規則設定郵件中的 SCL
-          href: use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
         - name: 零時差自動清除 - 防範垃圾郵件和惡意程式碼
           href: zero-hour-auto-purge.md
     - name: 偵測
@@ -210,10 +190,10 @@
           href: reports-and-insights-in-security-and-compliance.md
         - name: 在 Outlook 中報告誤判和漏報
           href: report-false-positives-and-false-negatives.md
-        - name: 獨立版本 EOP 中的郵件流程規則 (傳輸規則)
-          href: mail-flow-rules-transport-rules-0.md
-        - name: 在獨立版 EOP 中執行系統管理員角色群組報告
-          href: run-an-administrator-role-group-report-in-eop-eop.md
+        - name: 郵件流程規則 (傳輸規則)
+          href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
+        - name: 執行系統管理員角色群組報告
+          href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
     - name: 調查
       items:
         - name: '[威脅總管] 檢視'
@@ -230,8 +210,8 @@
           href: view-email-security-reports.md
         - name: 檢視郵件流程報告
           href: view-mail-flow-reports.md
-        - name: 在獨立版 EOP 中檢視系統管理稽核記錄
-          href: view-the-admin-audit-log-eop.md
+        - name: 檢視系統管理稽核記錄
+          href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
         - name: 獨立版 EOP 中的報告和郵件追蹤
           href: reporting-and-message-trace-in-exchange-online-protection.md
         - name: 自動轉寄訊息深入解析
@@ -262,8 +242,8 @@
           href: mfi-domain-mail-flow-status-insight.md
         - name: 使用系統管理員提交
           href: admin-submission.md
-        - name: 使用郵件流程規則來查看您的使用者報告給 Microsoft 哪些內容
-          href: use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
+        - name: 使用郵件流程規則來查看使用者報告給 Microsoft 的內容
+          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
         - name: 佇列深入解析
           href: mfi-queue-alerts-and-queues.md
     - name: 回覆
@@ -346,8 +326,6 @@
           href: reference-policies-practices-and-guidelines.md
         - name: 電子郵件訊息的安全提示
           href: safety-tips-in-office-365.md
-        - name: 套用 EOP 設定至多個租用戶的範例指令碼
-          href: sample-script-for-applying-eop-settings-to-multiple-tenants.md
         - name: 傳送郵件至 Office 365
           href: sending-mail-to-office-365.md
         - name: 非客戶的服務
@@ -360,27 +338,10 @@
           href: virus-detection-in-spo.md
         - name: 垃圾郵件和大量電子郵件有什麼不同?
           href: what-s-the-difference-between-junk-email-and-bulk-email.md
-        - name: S/MIME
-          href: s-mime-for-message-signing-and-encryption.md
-          items:
-            - name: 為郵件簽章和加密的 S/MIME
-              href: s-mime-for-message-signing-and-encryption.md
-            - name: 設定 Outlook 網頁版的 S/MIME 設定
-              href: configure-s-mime-settings-for-outlook-web-app.md
-            - name: 傳送及接收 S/MIME 簽署和加密的電子郵件
-              href: send-and-receive-s-mime-signed-and-encrypted-email.md
-            - name: 將使用者憑證同步至 Microsoft 365 進行 S/MIME 處理
-              href: sync-user-certificates-to-office-365-for-s-mime.md
-            - name: 設定虛擬憑證集合以驗證 S/MIME
-              href: set-up-virtual-certificate-collection-to-validate-s-mime.md
-            - name: 設定政治活動開發/測試環境的群組和使用者
-              href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-            - name: 在政治活動開發/測試環境中建立小組網站
-              href: create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: 將網域及設定從某個 EOP 組織移到另一個
-              href: move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
-            - name: 在獨立版 EOP 中管理角色群組
-              href: manage-admin-role-group-permissions-in-eop.md
+        - name: 設定政治活動開發/測試環境的群組和使用者
+          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+        - name: 在政治活動開發/測試環境中建立小組網站
+          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
     - name: Microsoft 365 Defender
       href: ../defender/index.yml
     - name: 適用於端點的 Microsoft Defender
