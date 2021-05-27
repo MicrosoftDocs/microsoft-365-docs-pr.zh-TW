@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+ms.openlocfilehash: f7a620ad56496b1a26e193a18fa93f4d217431df
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073826"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684144"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>受支援的適用於端點的 Microsoft Defender API
 
@@ -61,6 +61,7 @@ ms.locfileid: "52073826"
 :---|:---
 [進階搜捕](run-advanced-query-api.md) | 從 API 執行查詢。
 [警示方法和屬性](alerts.md) | 執行 API 通話（如 \- 取得提醒、建立警示、更新警示等等）。
+[匯出每台裝置的評估方法和屬性](get-assessmnt-1methods-properties.md) | 執行 API 通話，例如 \- 匯出安全設定評估、匯出軟體清查評估，以及匯出軟體漏洞評估。
 [自動化調查方法和屬性](investigation.md) | 執行 API 通話（如 \- 取得調查的集合）。
 [取得網域相關警示](get-domain-related-alerts.md) | 執行 API 通話，例如 \- 取得與網域相關的裝置、網域統計資料等等。
 [檔案方法和屬性](files.md) | 執行 API 通話，例如 \- get file information、file 相關的警示、檔相關的裝置及檔案統計資料。
@@ -69,6 +70,7 @@ ms.locfileid: "52073826"
 [電腦方法和屬性](machine.md) | 執行 API 通話，例如 \- get 裝置、依識別碼取得裝置、登入使用者的相關資訊、編輯標記等等。
 [電腦動作方法和屬性](machineaction.md) | 執行 [隔離] 等 API 呼叫 \- ，執行反病毒掃描等等。
 [建議方法和屬性](recommendation.md) | 執行 API 通話，例如 \- 依識別碼取得建議。
+[補救活動方法和屬性](get-remediation-methods-properties.md) | 執行 API 呼叫，例如 \- 取得所有修復工作、取得公開的裝置修復工作，並依識別碼取得一個修復工作。
 [分數方法和屬性](score.md) | 執行 API 通話（如 \- 取得披露分數或取得裝置安全分數）。
 [軟體方法和屬性](software.md) | \-依軟體執行清單漏洞等 API 通話。
 [使用者方法](user.md) | 執行 API 通話，例如 \- 取得使用者相關的警示和使用者相關的裝置。

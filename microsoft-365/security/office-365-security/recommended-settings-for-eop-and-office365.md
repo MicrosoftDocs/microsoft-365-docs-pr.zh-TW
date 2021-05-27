@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) 和 Defender Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用 Office 365 的 Defender，您也會取得什麼額外內容？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04668932747462d2636b466d87c2655d97569657
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624070"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683268"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender Office 365 security 的建議設定
 
@@ -137,11 +137,11 @@ ms.locfileid: "52624070"
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
 |---|:---:|:---:|:---:|---|
-|**您是否要在郵件被隔離時通知收件者？** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
-|**常見附件類型篩選** <p> _EnableFileFilter_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
-|**惡意程式碼零小時自動清除** <p> _ZapEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
-|通知未傳遞郵件的 **內部寄件者** <p> _EnableInternalSenderNotifications_|已停用 <p> `$false`|已停用 <p> `$false`|已停用 <p> `$false`||
-|通知未傳遞郵件的 **外部寄件者** <p> _EnableExternalSenderNotifications_|已停用 <p> `$false`|已停用 <p> `$false`|已停用 <p> `$false`||
+|**將郵件隔離為惡意程式碼時通知收件者** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
+|**啟用常見附件篩選器** <p> _EnableFileFilter_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
+|**為惡意程式碼啟用零小時自動清除** <p> _ZapEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**將郵件隔離為惡意程式碼時通知內部寄件者** <p> _EnableInternalSenderNotifications_|已停用 <p> `$false`|已停用 <p> `$false`|已停用 <p> `$false`||
+|**將郵件隔離為惡意程式碼時通知外部寄件者** <p> _EnableExternalSenderNotifications_|已停用 <p> `$false`|已停用 <p> `$false`|已停用 <p> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP 預設的反網路釣魚原則設定

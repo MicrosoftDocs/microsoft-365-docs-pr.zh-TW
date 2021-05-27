@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解不同的方式，向 Microsoft 報告好的和壞的訊息和檔案，以進行分析。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7534d5d88fe19fba39ac1ebef16c72cac25cae7
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 7b062c9529364e9fe26133fd1c039affcb8b7011
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625038"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689070"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>回報訊息和檔案至 Microsoft。
 
@@ -43,9 +43,9 @@ ms.locfileid: "52625038"
 |---|---|
 |[使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft](admin-submission.md)|在具有 Exchange Online 信箱的組織中，系統管理員的建議報告方法 (無法在獨立 EOP) 中使用。|
 |[啟用報告訊息或報告網路釣魚增益集](enable-the-report-message-add-in.md)|在 web (上使用 Outlook 和 Outlook （以前稱為 Outlook Web App) ）。 <p> 視您的訂閱而定，使用者使用增益集來報告的郵件可用於系統 [管理提交入口網站](admin-submission.md)、 [自動調查和回應 (AIR) 結果](air-view-investigation-results.md)、 [使用者報告的訊息報告](view-email-security-reports.md#user-reported-messages-report)及 [威脅瀏覽器](threat-explorer-views.md#email--submissions)。 <p> 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱 [使用者報送原則](user-submission.md)。
-|[報告對 Outlook 的誤報和漏報](report-false-positives-and-false-negatives.md)|提交誤報 (已封鎖或傳送至 [垃圾郵件] 資料夾) 的良好電子郵件，以及已傳遞至收件匣) 的電子郵件釣魚 (有害電子郵件或網路釣魚程式，使用報告郵件功能 Exchange Online Protection (EOP) 。|
+|[在 Outlook 中報告誤判和漏報](report-false-positives-and-false-negatives.md)|提交誤報 (已封鎖或傳送至 [垃圾郵件] 資料夾) 的良好電子郵件，以及已傳遞至收件匣) 的電子郵件釣魚 (有害電子郵件或網路釣魚程式，使用報告郵件功能 Exchange Online Protection (EOP) 。|
 |[手動將郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|手動將附加的郵件傳送到垃圾郵件、非垃圾郵件和網路釣魚的特定 Microsoft 電子郵件地址。|
-|[使用郵件流程規則來查看向 Microsoft 報告的使用者](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|瞭解如何建立郵件流程規則 (也稱為傳輸規則) ，當使用者將郵件報告給 Microsoft 進行分析時，會通知您。|
+|[使用郵件流程規則來查看使用者報告給 Microsoft 的內容](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|瞭解如何建立郵件流程規則 (也稱為傳輸規則) ，當使用者將郵件報告給 Microsoft 進行分析時，會通知您。|
 |[將惡意程式碼和非惡意程式碼提交給 Microsoft 進行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|使用 Microsoft 安全情報網站提交附件及其他檔案。|
 |
 

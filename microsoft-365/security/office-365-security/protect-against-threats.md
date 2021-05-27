@@ -20,12 +20,12 @@ description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624618"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683328"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -78,27 +78,26 @@ ms.locfileid: "52624618"
 
 若要深入瞭解，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>開始之前，請開啟報告和調查的審計記錄
+### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>開啟報告和調查的審計記錄
 
-儘早開始您的審核記錄。 您 **必須執行** 下列步驟的審計。 您可以在包含[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)的訂閱中使用審核記錄。 為了在威脅防護報告中查看資料，例如 [安全性儀表板](security-dashboard.md)、 [電子郵件安全性報告](view-email-security-reports.md)和 [Explorer](threat-explorer.md)，必須 *啟用* 審核記錄。 若要深入瞭解，請參閱 [開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
+- 儘早開始您的審核記錄。 您必須執行下列其中一個 **步驟的審計** 。 您可以在包含[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)的訂閱中使用審核記錄。 為了在威脅防護報告中查看資料，例如 [安全性儀表板](security-dashboard.md)、 [電子郵件安全性報告](view-email-security-reports.md)和 [Explorer](threat-explorer.md)，必須 *啟用* 審核記錄。 若要深入瞭解，請參閱 [開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="part-1---anti-malware-protection"></a>第1部分-反惡意程式碼保護
 
-在包含[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)的訂閱中提供[反惡意程式碼保護](anti-malware-protection.md)。
+如需有關反惡意程式碼建議設定的詳細資訊，請參閱 [EOP 防盜-惡意程式碼原則設定](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)。
 
-1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則** \> **反惡意** 代碼]。
+1. 開啟 <https://security.microsoft.com/antimalwarev2> 。
 
-2. 按兩下 **預設** 原則，然後選擇 [ **設定**]。
+2. 按一下原則的名稱，以選取 [預設原則]。
 
-3. 指定下列設定：
+3. 在開啟的 [原則詳細資料] 浮出視窗中，按一下 [ **編輯保護設定**]，然後設定下列設定：
+   - 選取 **[啟用通用附件篩選** ] 以開啟通用附件篩選器。 按一下 [ **自訂檔案類型** ]，以新增更多檔案類型。
+   - 確認已選取 [為 **惡意程式碼啟用自動清除** ]。
+   - 確認未選取 [ **通知** ] 區段中的任何設定。
 
-    - 在 [ **惡意程式碼偵測回應** ] 區段中，保留預設設定 [ **否**]。
+   完成後，請按一下 [儲存]。
 
-    - 在 [ **一般附件類型篩選** ] 區段中，選擇 [ **開啟**]。
-
-4. 按一下 **[儲存]**。
-
-若要深入瞭解反惡意程式碼原則選項，請參閱 [設定反惡意程式碼原則](configure-anti-malware-policies.md)。
+如需設定反惡意程式碼原則的詳細指示，請參閱 [在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
 ## <a name="part-2---anti-phishing-protection"></a>第2部分-反網路釣魚保護
 
@@ -188,7 +187,7 @@ ms.locfileid: "52624618"
    - **當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
    - **不要讓使用者點擊 [安全連結至原始 URL**]：確認已開啟此設定： ![ 開啟開啟 ](../../media/scc-toggle-on.png) 。
 
-   完成後，按一下 **[儲存]**。
+   完成後，按一下 [儲存]。
 
 2. 回到 [主要安全連結] 頁面上，按一下 [ **建立**]。
 

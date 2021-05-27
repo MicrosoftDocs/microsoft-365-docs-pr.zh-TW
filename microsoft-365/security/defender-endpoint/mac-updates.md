@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e08781455888595d57bd8a9e6f792796ea1853cd
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934498"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684204"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -48,7 +48,7 @@ Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供�
 
 ## <a name="use-msupdate"></a>使用 msupdate
 
-MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理員設計，讓使用者可以更精確地控制何時套用更新。 如何使用此工具的指示，可在 [使用 msupdate 的更新 Office For Mac](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)中找到。
+MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理員設計，讓使用者可以更精確地控制何時套用更新。 如何使用此工具的指示，可在[更新 Mac 版 Office 中透過 msupdate 來](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)找到。
 
 在 MAU 中，Microsoft Defender for Endpoint on macOS 上的應用程式識別碼是 *WDAV00*。 若要在 macOS 上下載並安裝 Microsoft Defender for Endpoint 的最新更新，請從終端視窗執行下列命令：
 
@@ -79,7 +79,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 |區段|值|
 |:--|:--|
 | **網域** | `com.microsoft.autoupdate2` |
-| **Key** | ChannelName |
+| **機碼** | ChannelName |
 | **資料類型** | 字串 |
 | **可能值** | Beta 版 <br/> 預覽 <br/> 目前 |
 |||
@@ -97,7 +97,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 |區段|值|
 |:--|:--|
 | **網域** | `com.microsoft.autoupdate2` |
-| **Key** | UpdateCheckFrequency |
+| **機碼** | UpdateCheckFrequency |
 | **資料類型** | 整數 |
 | **預設值** | 720 (分鐘)  |
 | **Comment** | 此值是以分鐘為單位設定。 |
@@ -110,7 +110,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 |區段|值|
 |:--|:--|
 | **網域** | `com.microsoft.autoupdate2` |
-| **Key** | HowToCheck |
+| **機碼** | HowToCheck |
 | **資料類型** | 字串 |
 | **可能值** | 手動 <br/> AutomaticCheck <br/> AutomaticDownload |
 | **Comment** |  請注意，如果可能的話，AutomaticDownload 將會以靜默方式下載及安裝。 |
@@ -123,19 +123,19 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 |區段|值|
 |:--|:--|
 | **網域** | `com.microsoft.autoupdate2` |
-| **Key** | EnableCheckForUpdatesButton |
+| **機碼** | EnableCheckForUpdatesButton |
 | **資料類型** | 布林值 |
-| **可能值** | True (預設)  <br/> False |
+| **可能值** | True (預設)  <br/> 錯 |
 
 
 ### <a name="disable-insider-checkbox"></a>停用「有問必答] 核取方塊
 
-設定為 true 可使「加入 Office 測試人員計畫 ...」核取方塊無法使用/向使用者顯示灰色。
+設定為 true，以進行「加入 Office 的內幕程式」。核取方塊無法使用/向使用者顯示灰色。
 
 |區段|值|
 |:--|:--|
 | **網域** | `com.microsoft.autoupdate2` |
-| **Key** | DisableInsiderCheckbox |
+| **機碼** | DisableInsiderCheckbox |
 | **資料類型** | 布林值 |
 | **可能值** | False (預設)  <br/> 對 |
 
@@ -147,18 +147,25 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 |區段|值|
 |:--|:--|
 | **網域** | `com.microsoft.autoupdate2` |
-| **Key** | SendAllTelemetryEnabled |
+| **機碼** | SendAllTelemetryEnabled |
 | **資料類型** | 布林值 |
-| **可能值** | True (預設)  <br/> False |
+| **可能值** | True (預設)  <br/> 錯 |
 
 
 ## <a name="example-configuration-profile"></a>設定檔範例
 
 下列設定檔用於：
-- 將裝置放在 Beta 通道中
+- 將裝置放在實際執行通道中
 - 自動下載並安裝更新
 - 啟用使用者介面中的「檢查更新」按鈕
 - 允許裝置上的使用者登錄到內幕通道
+
+
+>[!WARNING]
+>以下是設定範例，不應在生產環境中使用，而不需正確地複查設定及調整設定。
+
+>[!TIP]
+>為了預覽新功能並提供及早的意見反應，建議您將企業中的一些裝置設定為 `Beta` 或 `Preview` 。
 
 ### <a name="jamf"></a>JAMF
 
@@ -168,7 +175,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
 <plist version="1.0">
 <dict>
     <key>ChannelName</key>
-    <string>Beta</string>
+    <string>Production</string>
     <key>HowToCheck</key>
     <string>AutomaticDownload</string>
     <key>EnableCheckForUpdatesButton</key>
@@ -228,7 +235,7 @@ MAU 包含一個名為 *msupdate* 的命令列工具，其專為 IT 系統管理
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>Beta</string>
+            <string>Production</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>

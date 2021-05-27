@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651343"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689010"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的警示
 
@@ -78,6 +78,23 @@ ms.locfileid: "52651343"
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 安全性中心內警示的詳細資料頁面範例":::
 
 在 [警示] 頁面中，您可以選取任何實體旁的省略號 () **...** ]，以查看可用的動作，例如開啟警示頁面或將警示連結至另一個事件。
+
+### <a name="alert-sources"></a>警示來源
+Microsoft 365Defender 警示可能來自 microsoft defender for Endpoint、microsoft defender for Office 365 和 Microsoft Cloud App Security 等解決方案。 您可能會注意到警示中帶有前置字元的警示。 下表提供指導方針，可協助您瞭解根據警示上的前置字母，警示來源的對應。
+
+> [!NOTE]
+> - 預置的 Guid 只是針對整合的經驗，例如整合的警示佇列、整合的提醒頁面、整合調查和整合事件。<br>
+> - 預先符不會變更警示的 GUID。 GUID 的唯一變更是預置的元件。<br>
+
+
+警示來源 | 預先符 
+:---|:---
+適用於 Office 365 的 Microsoft Defender | `fa{GUID}` <br> 範例：`fa123a456b-c789-1d2e-12f1g33h445h6i` 
+適用於端點的 Microsoft Defender | `da` 或 `ed` 自訂偵測警示 <br> 
+適用於身分識別的 Microsoft Defender | `aa{GUID}` <br> 範例：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> 範例：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
+
+
 
 ### <a name="analyze-affected-assets"></a>分析受影響的資產
 
@@ -140,7 +157,7 @@ ms.locfileid: "52651343"
 
 視需要進行處理內事件，繼續進行 [調查](investigate-incidents.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
 - [管理事件](manage-incidents.md)

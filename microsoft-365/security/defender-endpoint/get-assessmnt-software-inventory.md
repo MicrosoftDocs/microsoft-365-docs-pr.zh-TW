@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ecfeaa10eda6b3832b7196c0598d6584783bb5ff
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 5663a17de2e601c506b4d1b9ac44eaab6ae6245f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653631"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689186"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>每個裝置匯出軟體清查評估
 
@@ -39,17 +39,19 @@ ms.locfileid: "52653631"
 >
 有不同的 API 呼叫可取得不同的資料類型。 因為資料量可能非常大，所以可供檢索的方式有兩種：
 
-- **OData**  API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法適用于 _低於 100 K 裝置的小型組織_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
+- [匯出軟體清查評估 **OData**](#1-export-software-inventory-assessment-odata) API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法適用于 _低於 100 K 裝置的小型組織_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
 
-- 透過檔案此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：
+- 透過[檔案匯出軟體清查評估](#2-export-software-inventory-assessment-via-files) 此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：
 
   - 呼叫 API 以取得所有組織資料的下載 URLs 清單。
 
   - 使用下載 URLs 下載所有檔案，並視需要處理資料。
 
- (_OData_ _或透過_ 檔案所收集的資料，) 是目前狀態的目前快照，而且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
+使用 _OData_ _或透過_ 檔案收集 (所收集的資料，) 目前狀態的目前快照，且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
 
-除非另有說明，否則所列的所有出口評估方法都是 **_完整匯出_** ，而且 **_依裝置_** (也稱為 **_每個裝置_**) 。
+> [!Note]
+>
+> 除非另有說明，否則所列的所有出口評估方法都是 **_完整匯出_** ，而且 **_依裝置_** (也稱為 **_每個裝置_**) 。
 
 ## <a name="1-export-software-inventory-assessment-odata"></a>1. 匯出軟體清查評估 (OData) 
 
@@ -90,7 +92,7 @@ GET /api/machines/SoftwareInventoryByMachine
 >
 >-每筆記錄大約 0.5 KB 的資料。 為您選擇正確的 pageSize 參數時，您應該考慮使用此帳戶。
 
->-在下表中所定義的屬性，依屬性識別碼列出英數順序。 執行此 API 時，所產生的輸出不一定會以這些表格中所列的相同順序傳回。
+>-在下表中定義的屬性依屬性識別碼列出字母順序。 執行此 API 時，所產生的輸出不一定會依照此表中所列的順序傳回。
 >
 >-回應中可能傳回其他一些欄。 這些欄是暫存檔的，而且可能會被移除，請只使用記錄的資料行。
 
@@ -279,7 +281,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [匯出每台裝置的評估方法和屬性](get-assessmnt-1methods-properties.md)
 

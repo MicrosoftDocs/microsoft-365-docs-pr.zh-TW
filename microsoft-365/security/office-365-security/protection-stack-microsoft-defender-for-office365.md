@@ -13,12 +13,12 @@ localization_priority: Normal
 description: 在 Microsoft Defender 的威脅篩選堆疊中，追蹤傳入郵件的路徑，以取得 Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538684"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683292"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender 中的逐步威脅防護
 
@@ -111,13 +111,13 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Office 365 中，篩選的階段4是傳遞後的保護。":::
 
-1. **安全連結** 是 MDO 的按一下時防護。 每封郵件中的每個 URL 都會換行，指向 Microsoft 安全連結伺服器。 當按一下 URL 時，會將使用者重新導向至目標網站之前，檢查其最新的信譽。 URL 會以非同步方式沙箱化，以更新其信譽。
+1. **安全連結** 是 Office 365 的時按一下保護的 Defender。 每封郵件中的每個 URL 都會換行，指向 Microsoft 安全連結伺服器。 當按一下 URL 時，會將使用者重新導向至目標網站之前，檢查其最新的信譽。 URL 會以非同步方式沙箱化，以更新其信譽。
 
-2. **網路釣魚 Zero-Hour 自動清除 (ZAP)** retroactively 偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意網路釣魚郵件。
+2. **以零小時自動清除 (ZAP) 網路釣魚** retroactively 會偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意網路釣魚郵件。
 
-3. **惡意程式碼 ZAP** retroactively 偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意惡意程式碼郵件。
+3. retroactively **惡意** 代碼會偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意惡意程式碼郵件。
 
-4. **垃圾郵件 ZAP** retroactively 會偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意垃圾郵件。
+4. **網路釣魚** retroactively 的 ZAP 偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意垃圾郵件。
 
 5. [**活動] 視圖** 可讓系統管理員看到重要的攻擊、更快速且更徹底的攻擊，而不是任何小組都可以進行「自動化」。 Microsoft 利用整個服務中大量的反網路釣魚、反垃圾郵件和反惡意程式碼，協助識別市場活動，然後讓系統管理員可以從開始到結尾（包括目標、影響和流程）進行調查，也可以在可下載的活動中使用。
 
@@ -129,14 +129,13 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 9. 當選取指向檔案的 URL 後，傳遞傳遞時， **連結的內容引爆** 會顯示警告頁面，直到檔案的沙箱處理完成，並且找到安全的 url 為止。
 
-
 ## <a name="the-filtering-stack-diagram"></a>篩選堆疊圖表
 
 最後的圖表 (，與組成它之圖表的所有部分) *在產品成長及開發時可能會有所變更*。 在此頁面上加上書簽，如果您需要在更新後要求，請使用您在底部所看到的 **意見** 反應選項。 針對您的記錄，這是以順序顯示所有階段的堆疊：
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="MDO 中篩選的所有階段，順序為1到4。":::
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 您 **現在** 是否需要為 Office 365 * 設定 Microsoft Defender？ 使用此堆疊（_now * [）逐步開始](protect-against-threats.md) 保護您的組織。
 

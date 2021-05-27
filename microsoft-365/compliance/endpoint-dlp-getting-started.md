@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料外洩防護以監視檔案活動，並對這些端點的檔案實作保護動作。
-ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 34355a25283207929a12a7bc504b929fbf3041a0
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651005"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683652"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>開始使用端點資料外洩防護
 
@@ -104,7 +104,6 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 
 4. 所有裝置都必須為下列其中一項：
 - [已使用 Azure Active Directory (Azure AD) 而聯結的](/azure/active-directory/devices/concept-azure-ad-join)
-- 已使用 AD 而聯結的
 - [已使用混合式 Azure AD 而聯結的](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 - [AAD 已註冊](/azure/active-directory/user-help/user-help-register-device-on-network)
 

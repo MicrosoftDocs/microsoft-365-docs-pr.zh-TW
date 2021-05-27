@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 取得 Microsoft 365 的系統管理應用程式，並瞭解如何從您的手機或平板電腦管理您的線上組織。
-ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f8834aca0835a209a4df32a934eca736c5f7808f
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244017"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683232"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>關於 Microsoft 365 系統管理員行動裝置應用程式
 
@@ -50,6 +50,10 @@ ms.locfileid: "52244017"
   
 > [!IMPORTANT]
 > 如果您在 iOS 或 Android 上使用系統管理員行動裝置時出現問題，請以電子郵件傳送我們的 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，以告知我們。
+
+## <a name="before-you-begin"></a>開始之前
+
+您必須是 Microsoft 365 組織中的系統管理員，才可使用 admin 行動應用程式。
   
 ## <a name="download-the-admin-mobile-app"></a>下載 Admin 行動應用程式
 
@@ -115,7 +119,11 @@ app 支援以 web 為基礎的 Microsoft 365 系統管理中心所支援的所�
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>如果仍無法解決我的問題該怎麼辦？
 
 電子郵件 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) 以報告應用程式的問題。 您也可以在本文的底部提供意見反應。
-  
-## <a name="related-content"></a>相關內容 
 
-[Microsoft 365 商務訓練](../../business-video/index.yml)影片 (連結] 頁面) 
+## <a name="next-steps"></a>後續步驟
+
+一旦您下載系統管理員行動裝置，您可以新增使用者以開始。
+  
+## <a name="related-content"></a>相關內容
+
+[商務用 Microsoft 365 訓練影片](../../business-video/index.yml)

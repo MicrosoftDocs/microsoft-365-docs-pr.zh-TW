@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 eDiscovery 和搜尋工具來管理和回應組織中的資料外泄事件。
-ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: f92887018a7ab1cec35526c2a36cce4b0889172e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653520"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683772"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery 解決方案系列：資料外泄案例-搜尋和清除
 
@@ -52,7 +52,7 @@ ms.locfileid: "52653520"
 
 - 當信箱處於保留狀態時，已刪除的郵件會保留在 [可復原的專案] 資料夾中，直到保留期間到期或解除保留為止。 [步驟 6](#step-6-prepare-the-mailboxes) 說明如何從信箱移除保留。 移除保留之前，請與您的記錄管理或法律部門核實。 您的組織可能具有定義信箱保留或資料外泄事件是否優先的原則。 
     
-- 若要控制資料外泄調查人員可以搜尋及管理誰可以存取此案例的使用者信箱，您可以設定規范界限，以及建立自訂角色群組，如 [步驟 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)所述。 若要這麼做，您必須是「組織管理」角色群組的成員，或被指派角色管理角色。 如果您或您組織中的系統管理員已設定合規性界限，您可以略過步驟1。
+- 若要控制資料外泄調查人員可以搜尋及管理誰可以存取此案例的使用者信箱，您可以設定規范界限，以及建立自訂角色群組，如 [步驟 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)所述。 若要這麼做，您必須是「組織管理」角色群組的成員，或被指派角色管理角色。 如果您或組織中的系統管理員已設定合規性界限，您可以略過步驟1。
     
 - 若要建立案例，您必須是 eDiscovery 管理員角色群組的成員，或是已指派案例管理角色之自訂角色群組的成員。 如果您不是成員，請要求 Microsoft 365 管理員[將您新增至 eDiscovery 管理員角色群組](assign-ediscovery-permissions.md)。
     
@@ -64,7 +64,7 @@ ms.locfileid: "52653520"
 
 根據您的組織實踐，您必須控制誰可以存取 eDiscovery 案例，以調查資料外泄事件及設定規范界限。 最簡單的方法是將調查人員新增為安全性 & 合規性中心內現有角色群組的成員，然後將角色群組新增為 eDiscovery 案例的成員。 如需內建 eDiscovery 角色群組的相關資訊，以及如何新增成員至 eDiscovery 案例，請參閱 [指派 ediscovery 許可權](assign-ediscovery-permissions.md)。
   
-您也可以建立符合組織需求的新角色群組。 例如，您可能想要組織中的資料外泄調查人員群組，以存取及共同作業所有的資料外泄案例。 若要這麼做，您可以建立「資料外泄調查員」角色群組、指派適當的角色 (匯出、RMS 解密、審核、預覽、符合性搜尋及案例管理) 、將資料外泄調查人員新增至角色群組，然後將角色群組新增為數據外泄 eDiscovery 案例的成員。 如需如何執行此動作的詳細指示，請參閱[設定 Office 365 中 eDiscovery 調查的合規性界限](tagging-and-assessment-in-advanced-ediscovery.md)。 
+您也可以建立符合組織需求的新角色群組。 例如，您可能想要組織中的資料外泄調查人員群組，以存取及共同作業所有的資料外泄案例。 若要這麼做，您可以建立「資料外泄調查員」角色群組、指派適當的角色 (匯出、RMS 解密、審核、預覽、符合性搜尋及案例管理) 、將資料外泄調查人員新增至角色群組，然後將角色群組新增為數據外泄 eDiscovery 案例的成員。 如需如何執行此動作的詳細指示，請參閱[設定 Office 365 中 eDiscovery 調查的合規性界限](set-up-compliance-boundaries.md)。 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>步驟2：建立電子檔探索案例
 
@@ -123,7 +123,7 @@ EDiscovery 案例提供一種有效的方法來管理資料外泄調查。 您�
   
 - [安全性與合規性中心內的訊息追蹤](../security/office-365-security/message-trace-scc.md)
     
-- [安全性 & 規範中心內的新郵件追蹤](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [安全性 & 規範中心內的新郵件追蹤](https://techcommunity.microsoft.com/t5/exchange-team-blog/new-message-trace-in-office-365-security-038-compliance-center/ba-p/607893)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>步驟6：準備信箱
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何管理核心 eDiscovery 案例。 這包括關閉案例、開啟關閉的案例，以及刪除案例。
-ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d729c91d4e81ad12d0b4b16574aa4edad8e239a3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532443"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684096"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>關閉、重新開啟和刪除核心 eDiscovery 案例
 
@@ -34,9 +34,9 @@ ms.locfileid: "52532443"
   
 - 若案例中包含任何 eDiscovery 保留，將會關閉這些功能。 關閉關閉後，30天的寬限期 (稱為 *延遲保留*) 會套用到保留的內容位置。 這有助於防止內容立即刪除，並可讓系統管理員在延遲保留期間到期後，永久刪除內容之前，先進行搜尋並還原內容的機會。 如需詳細資訊，請參閱 [移除 eDiscovery 保留中的內容位置](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)。
 
-- 關閉案例只會關閉與該案例相關聯的保留。 若其他保留放在內容位置 (例如訴訟暫止、保留原則或其他核心 eDiscovery 案例的保留) 仍會保留這些保留。
+- 將案例結案只會關閉與該案例相關聯的保留。 若其他保留放在內容位置 (例如訴訟暫止、保留原則或其他核心 eDiscovery 案例的保留) 仍會保留這些保留。
 
-- 此案例仍列在 Microsoft 365 規範中心的核心 eDiscovery 頁面上。 已關閉案例的詳細資料、保留、搜尋和成員都會保留。
+- 此案例仍列在 Microsoft 365 規範中心的核心 eDiscovery 頁面上。 已結案案例的詳細資料、保留、搜尋和成員都會保留。
 
 - 您可以在關閉案例後進行編輯。 例如，您可以新增或移除成員、建立搜尋並匯出搜尋結果。 主動和封閉式案例之間的主要差異是關閉案例時，會關閉 eDiscovery 保留。
 
@@ -92,7 +92,7 @@ ms.locfileid: "52532443"
 
 若要刪除 eDiscovery 保留：
 
-1. 移至 [ **保留** ] 索引標籤中您要刪除的情況。
+1. 移至 [ **保留** ] 索引標籤中您想要刪除的情況。
 
 2. 選取您要刪除的保留。
 

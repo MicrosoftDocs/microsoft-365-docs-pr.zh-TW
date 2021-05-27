@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解 Microsoft 365 全域系統管理員如何在使用者的名稱變更時，變更使用者的電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 4f65bade32b2998f395c3b4eab7a1d2a2e5f3f33
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634217"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683112"
 ---
 # <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
@@ -46,26 +46,13 @@ ms.locfileid: "52634217"
 
 ::: moniker range="o365-worldwide"
  
-1. 在系統管理中心中，移至 [使用者 **]** \> [作用中使用者 <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">]</a> 頁面。
-    
-2. 選取使用者名稱，然後在 **[帳戶]** 索引標籤上，選取 **[管理使用者名稱]**。
-    
-3. 在第一個方塊中，輸入新電子郵件地址的第一個部分。如果您已將自己的網域新增至 Microsoft 365，請使用下拉式清單選擇新電子郵件別名的網域。 
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
-4. 選取 **[儲存變更]**。
-
-   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。  
-
-2. 選取使用者。 在飛出窗格的 **[使用者名稱/電子郵件]** 旁邊，選取 **[編輯]**。
-
-3. 在第一個方塊中，輸入新電子郵件地址的第一個部分。如果您已將自己的網域新增至 Microsoft 365，您可以使用下拉式清單選擇新電子郵件別名的網域。
-
-4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -73,13 +60,13 @@ ms.locfileid: "52634217"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。 
 
-2. 選取使用者。 在飛出窗格的 **[使用者名稱/電子郵件]** 旁邊，選取 **[編輯]**。
-
-3. 在第一個方塊中，輸入新電子郵件地址的第一個部分。如果您已將自己的網域新增至 Microsoft 365，您可以使用下拉式清單選擇新電子郵件別名的網域。
-
-4. 選取 **[儲存]**。
-
 ::: moniker-end
+
+1. 選取使用者名稱，然後在 **[帳戶]** 索引標籤上，選取 **[管理使用者名稱]**。
+    
+1. 在第一個方塊中，輸入新電子郵件地址的第一個部分。如果您已將自己的網域新增至 Microsoft 365，請使用下拉式清單選擇新電子郵件別名的網域。 
+
+1. 選取 **[儲存變更]**。
 
 > [!IMPORTANT]
 > 如果您收到錯誤訊息，請參閱 [解決錯誤訊息](#resolve-error-messages)。
@@ -89,6 +76,20 @@ ms.locfileid: "52634217"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。 
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。  
+
+::: moniker-end
     
 2. 選取使用者名稱，然後在 **[帳戶]** 索引標籤上，選取 **[管理電子郵件別名]**。
 
@@ -113,34 +114,17 @@ ms.locfileid: "52634217"
   
    - 如果他們的密碼也變更了，系統會要求他們在行動裝置上輸入新密碼，否則將無法進行同步處理。
   
+## <a name="change-a-users-display-name"></a>變更使用者的顯示名稱
+
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。  
-
-2. 選取使用者。 在飛出窗格的 **[使用者名稱/電子郵件]** 旁邊，選取 **[編輯]**。
-
-3. 針對您要為該人員設為主要電子郵件地址的電子郵件地址，選取 **[設為主要]**。 
-    
-   > [!IMPORTANT]
-   > 如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Microsoft 365，就不會看到此 [設定為主要] 的選項。請改為登入到 GoDaddy/協力廠商的管理主控台以設定主要別名。 
-   > 
-   > 補充一點，您必須是全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
-  
-4. 您會看到一個黃色的大型警告，指出您即將變更使用者的登入資訊。 選取 **[儲存]**，再選取 **[關閉]**。
-    
-5. 告知該人員下列資訊：
- 
-   - 此變更可能需要一些時間才能生效。
-  
-   - 他們的新使用者名稱。他們將需使用此使用者名稱登入 Microsoft 365。
-    
-   - 如果他們使用商務用 Skype Online，請告知他們需要重新排定所有他們舉辦的商務用 Skype Online 會議，而且他們需要通知其外部連絡人更新舊的連絡資訊。
-
-   - 如果他們使用的是 OneDrive，請告知他們該位置的 URL 已變更。 如果他們的 OneDrive 中有 OneNote 筆記本，他們可能必須關閉筆記本，然後在 OneNote 中重新開啟。 如果他們的 OneDrive 中含有共用檔案，檔案的連結可能無法運作，而使用者可以重新共用。    
-  
-   - 如果他們的密碼也變更了，請告知他們系統會要求在其行動裝置上輸入新密碼，否則將無法進行同步處理。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。 
 
 ::: moniker-end
 
@@ -148,36 +132,7 @@ ms.locfileid: "52634217"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。 
 
-2. 選取使用者。 在飛出窗格的 **[使用者名稱/電子郵件]** 旁邊，選取 **[編輯]**。
-
-3. 針對您要為該人員設為主要電子郵件地址的電子郵件地址，選取 **[設為主要]**。 
-    
-   > [!IMPORTANT]
-   > 如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Microsoft 365，就不會看到此 [設定為主要] 的選項。請改為登入到 GoDaddy/協力廠商的管理主控台以設定主要別名。 
-   >  
-   > 補充一點，您必須是全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
-  
-4. 您會看到一個黃色的大型警告，指出您即將變更使用者的登入資訊。 選取 **[儲存]**，再選取 **[關閉]**。
-    
-5. 告知該人員下列資訊：
- 
-   - 此變更可能需要一些時間才能生效。
-  
-   - 他們的新使用者名稱。他們將需使用此使用者名稱登入 Microsoft 365。
-    
-   - 如果他們使用商務用 Skype Online，請告知他們需要重新排定所有他們舉辦的商務用 Skype Online 會議，而且他們需要通知其外部連絡人更新舊的連絡資訊。
-
-   - 如果他們使用的是 OneDrive，請告知他們該位置的 URL 已變更。 如果他們的 OneDrive 中有 OneNote 筆記本，他們可能必須關閉筆記本，然後在 OneNote 中重新開啟。 如果他們的 OneDrive 中含有共用檔案，檔案的連結可能無法運作，而使用者可以重新共用。    
-  
-   - 如果他們的密碼也變更了，請告知他們系統會要求在其行動裝置上輸入新密碼，否則將無法進行同步處理。
-
 ::: moniker-end
-  
-## <a name="change-a-users-display-name"></a>變更使用者的顯示名稱
-
-::: moniker range="o365-worldwide"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取使用者名稱，然後在 **[帳戶]** 索引標籤上，選取 **[管理連絡人資訊]**。
 
@@ -186,37 +141,7 @@ ms.locfileid: "52634217"
    如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱 [解決錯誤訊息](#resolve-error-messages)。
 
 最多可能需要等候 24 小時，此變更才會在所有服務中生效。在變更生效之後，使用者將須以更新的使用者名稱登入 Outlook、商務用 Skype 和 SharePoint。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。  
-
-2. 選取使用者。 在飛出窗格中，選取 **[連絡人資訊]** 旁的 **[編輯]**。
-
-3. 在 **[顯示名稱]** 方塊中，輸入該人員的新名稱，然後選取 **[儲存]**。
-
-   如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱 [解決錯誤訊息](#resolve-error-messages)。
-
-最多可能需要等候 24 小時，此變更才會在所有服務中生效。在變更生效之後，使用者將須以其更新的使用者名稱登入 Outlook、商務用 Skype 和 SharePoint，因此請務必向使用者告知此變更。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。 
-
-2. 選取使用者。 在飛出窗格中，選取 **[連絡人資訊]** 旁的 **[編輯]**。
-
-3. 在 **[顯示名稱]** 方塊中，輸入該人員的新名稱，然後選取 **[儲存]**。
-
-   如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱 [解決錯誤訊息](#resolve-error-messages)。
-
-最多可能需要等候 24 小時，此變更才會在所有服務中生效。在變更生效之後，使用者將須以其更新的使用者名稱登入 Outlook、商務用 Skype 和 SharePoint，因此請務必向使用者告知此變更。
-
-::: moniker-end
-
+ 
 ## <a name="resolve-error-messages"></a>解決錯誤訊息
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>[找不到符合參數名稱 'EmailAddresses' 的參數]

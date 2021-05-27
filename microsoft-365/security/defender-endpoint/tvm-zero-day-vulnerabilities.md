@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c746a74899a34827e089f4c9c2f6ecc396bb69c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ec8dd97a563edc487008d028a7cdc9f6ef3d17c1
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538768"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689082"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>減少零天的漏洞-威脅與弱點管理
 
@@ -46,7 +46,7 @@ ms.locfileid: "52538768"
 在找到零天的弱點後，就會透過 Microsoft Defender 資訊安全中心中的下列體驗來傳達相關資訊。
 
 >[!NOTE]
-> 0天功能目前不適用於非 Windows 產品 (Mac，Linux) ;不過，它會在未來新增。
+> 只有 Windows 產品才能使用第0天的漏洞功能。
 
 ### <a name="threat-and-vulnerability-management-dashboard"></a>威脅與弱點管理儀表板
 

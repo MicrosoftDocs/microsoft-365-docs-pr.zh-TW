@@ -18,21 +18,14 @@ search.appverid:
 - MET150
 description: 使用者可以瞭解如何管理其自助購買服務。
 ms.date: 03/17/2021
-ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536079"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683664"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助購買 (使用者)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 作為使用者，您可以購買特定產品的訂閱，並將這些訂閱的授權指派給小組中的人員。 您負責支付您所進行的任何自助購買服務。 您可以在 Microsoft 365 系統管理中心管理您的訂閱， <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>。
 
@@ -42,12 +35,42 @@ ms.locfileid: "52536079"
 
 您可以查看您購買的所有自助服務購買的訂閱清單。
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[您的產品]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
+::: moniker-end
 2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>如何購買更多或減少授權
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[您的產品]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
+::: moniker-end
 2. 在 [ **產品** ] 索引標籤上，選取您要為其購買更多或減少授權的訂閱。
 3. 選擇 [ **購買授權** ] 或 [ **移除授權**]。
 4. 在右窗格的 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數，然後選擇 [ **儲存**]。 例如，如果您有100授權，而您想要新增5個，請輸入105。
@@ -56,7 +79,23 @@ ms.locfileid: "52536079"
 
 ### <a name="to-assign-licenses"></a>指派授權
 
-1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
+：：名字物件範圍 = "o365-全球"
+
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">[授權]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">[授權]</a> 頁面。
+
+::: moniker-end
 2. 選擇您要指派授權的訂閱。
 3. 選擇 [ **指派授權**]。
 4. 在 **[指派授權給使用者]** 窗格中，開始輸入名稱，然後從結果中選擇，將它新增到清單中。 一次最多可以新增 20 個使用者。
@@ -66,7 +105,23 @@ ms.locfileid: "52536079"
 
 ### <a name="to-unassign-licenses"></a>若要取消指派授權
 
-1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
+：：名字物件範圍 = "o365-全球"
+
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">[授權]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">[授權]</a> 頁面。
+
+::: moniker-end
 2. 選擇您要為其取消指派授權的產品。
 3. 選擇您要指派授權的使用者。
 4. 選擇 [未 **指派授權**]。
@@ -74,8 +129,23 @@ ms.locfileid: "52536079"
 
 ## <a name="cancel-a-subscription"></a>取消訂閱
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
-2. 在 **[產品]** 索引標籤上，找出您要取消的訂閱。 選取 [ (更多動作) ] 的三個點，然後選取 [ **取消訂閱**]。
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[您的產品]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[您的產品]</a> 頁面。
+::: moniker-end
+2. 在 **[產品]** 索引標籤上，找出您要取消的訂閱。 選取三個點 (更多動作)，然後選取 **[取消訂閱]**。
 3. 在 **取消訂閱** 窗格中，選擇取消的原因。 （選用）提供您所擁有的任何意見反應。
 4. 選取 ****[儲存]。
 

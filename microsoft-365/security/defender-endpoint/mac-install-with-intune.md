@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da82b24b8a6bb6aa22028615bb3dd0c9d45acfa1
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 5aeffdaff39c2f10dfa5164764bff38e99c00010
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345960"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684216"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上以 Intune 為基礎之 Microsoft Defender for Endpoint 的部署
 
@@ -96,12 +96,12 @@ ms.locfileid: "52345960"
 此設定檔包含 Microsoft Defender for Endpoint 的授權資訊，但沒有它會報告其未獲授權。
 
 1. 選取 [設定配置 **檔**] 底下的 [**建立設定檔**]。
-1. 選取 [**平臺** = **macOS**]，**配置檔案類型** = **範本**。 **範本名稱** =**自訂**。 按一下 **[建立]**。
+1. 選取 [**平臺** = **macOS**]，**配置檔案類型** = **範本**。 **範本名稱** =**自訂**。 按一下 ****[建立]。
 
     > [!div class="mx-imgBorder"]
     > ![自訂設定檔建立](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. 選擇設定檔的名稱，例如，"MDATP macOS 上架"。 按 [下一步]。
+1. 選擇設定檔的名稱，例如，"MDATP macOS 上架"。 按 [下一步 **]**。
 
     > [!div class="mx-imgBorder"]
     > ![自訂設定設定檔名稱](images/mdatp-6-systemconfigurationprofiles-2.png)
@@ -112,7 +112,7 @@ ms.locfileid: "52345960"
     > [!div class="mx-imgBorder"]
     > ![從自訂設定設定檔的檔案中匯入設定](images/mdatp-6-systemconfigurationprofiles.png)
 
-1. 按 [下一步]。
+1. 按 [下一步 **]**。
 1. 在 [**指派**] 索引標籤上指定裝置。按 **[下一步]**
 
     > [!div class="mx-imgBorder"]
@@ -129,7 +129,7 @@ ms.locfileid: "52345960"
 MacOS 10.15 (Catalina) 或更新版本都需要此設定檔。 舊的 macOS 將會略過此方式。
 
 1. 選取 [設定配置 **檔**] 底下的 [**建立設定檔**]。
-1. 選取 [**平臺** = **macOS**]，**配置檔案類型** = **範本**。 **範本名稱** =**分機**。 按一下 **[建立]**。
+1. 選取 [**平臺** = **macOS**]，**配置檔案類型** = **範本**。 **範本名稱** =**分機**。 按一下 ****[建立]。
 1. 在 [ **基礎** ] 索引標籤中，提供此新設定檔的名稱。
 1. 在 [ **設定設定** ] 索引標籤中，展開 [ **系統擴充** 權] 在 [ **允許的系統擴充** ] 區段中新增下列專案：
 
@@ -152,7 +152,7 @@ MacOS 10.15 (Catalina) 或更舊版本都需要此設定檔。 它會在較新�
 > Apple 矽 (M1) 裝置不支援 KEXT。 在這些裝置上安裝包含 KEXT 原則的設定檔將會失敗。
 
 1. 選取 [設定配置 **檔**] 底下的 [**建立設定檔**]。
-1. 選取 [**平臺** = **macOS**]，**配置檔案類型** = **範本**。 **範本名稱** =**分機**。 按一下 **[建立]**。
+1. 選取 [**平臺** = **macOS**]，**配置檔案類型** = **範本**。 **範本名稱** =**分機**。 按一下 ****[建立]。
 1. 在 [ **基礎** ] 索引標籤中，提供此新設定檔的名稱。
 1. 在 [ **設定設定** ] 索引標籤中，展開 [ **核心擴充**]。
 1. 將 [ **小組識別碼** ] 設定為 **UBF8T346G9** ，然後按 **[下一步]**。
@@ -170,7 +170,7 @@ MacOS 10.15 (Catalina) 或更舊版本都需要此設定檔。 它會在較新�
    >
    > 此設定設定檔會授與 Microsoft Defender for Endpoint 的完整磁片存取權。 如果您先前已透過 Intune 設定 Microsoft Defender for Endpoint，建議您使用此設定檔更新部署。
 
-從 [我們的 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)下載 [**fulldisk mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) 。
+從 [我們的 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)下載 [**fulldisk mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) 。
 
 依照上述上 [架 blob](#onboarding-blob)的指示，使用「MDATP 完整磁片存取」做為設定檔名稱，並下載 **fulldisk mobileconfig** 作為設定設定檔名稱。
 
@@ -178,7 +178,7 @@ MacOS 10.15 (Catalina) 或更舊版本都需要此設定檔。 它會在較新�
 
 在端點偵測和回應功能的一部分中，macOS 的 Microsoft Defender for endpoint 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender 資訊安全中心入口網站。 下列原則允許網路分機執行這項功能。
 
-從 [我們的 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)下載 [**netfilter mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) 。
+從 [我們的 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)下載 [**netfilter mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) 。
 
 依照上述上 [架 blob](#onboarding-blob)的指示，使用「MDATP 網路篩選」做為設定檔名稱，並下載 **netfilter mobileconfig** 作為設定設定檔名稱。
 
@@ -186,7 +186,7 @@ MacOS 10.15 (Catalina) 或更舊版本都需要此設定檔。 它會在較新�
 
 此設定檔是用來允許 Microsoft Defender for Endpoint on macOS 和 Microsoft 自動更新，在 macOS 10.15 (Catalina) 或更新版本的 UI 上顯示通知。
 
-從 [我們的 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)下載 [**notif mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) 。
+從 [我們的 GitHub 存放庫](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)下載 [**notif mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) 。
 
 依照上述上 [架 blob](#onboarding-blob)的指示，使用「MDATP 網路篩選」做為設定檔名稱，並下載 **notif mobileconfig** 作為設定設定檔名稱。
 

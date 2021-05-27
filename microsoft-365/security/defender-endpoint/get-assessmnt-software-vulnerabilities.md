@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: be21be07758c1123cdde38e3750cafe739bfb66a
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 951f78ba361a12e404a5cce2071f931eab30c43f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653632"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689210"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>每個裝置的匯出軟體漏洞評估
 
@@ -37,21 +37,23 @@ ms.locfileid: "52653632"
 [!include[Prerelease information](../../includes/prerelease.md)]
 >
 >
-以每個裝置為基礎，傳回所有裝置的所有已知弱點及其詳細資料。
+以每個裝置為基礎，傳回所有裝置的所有已知軟體弱點及其詳細資料。
 
 有不同的 API 呼叫可取得不同的資料類型。 因為資料量可能非常大，所以可供檢索的方式有兩種：
 
-- **OData**  API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法最適合 _使用小於100k 裝置的小型組織_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
+- [匯出軟體漏洞評估 OData](#1-export-software-vulnerabilities-assessment-odata)  API 將組織中的所有資料都提取為 Json 回應，遵循 OData 的通訊協定。 這種方法適用于 _低於 100 K 裝置的小型組織_。 回應已分頁，所以您可以使用 \@ nextLink 欄位從回應讀取下一個結果。
 
-- 透過檔案此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過10個裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：
+- 透過檔案[匯出軟體漏洞評估](#2-export-software-vulnerabilities-assessment-via-files)此 API 解決方案可讓大量的資料更快速且可靠地進行。 因此，建議大型組織使用超過 100 K 的裝置。 此 API 會將組織中的所有資料都提取為下載檔案。 回應包含從 Azure 儲存體下載所有資料的 URLs。 此 API 可讓您從 Azure 儲存體下載所有資料，如下所示：
 
   - 呼叫 API 以取得所有組織資料的下載 URLs 清單。
 
   - 使用下載 URLs 下載所有檔案，並視需要處理資料。
 
- (_OData_ _或透過_ 檔案所收集的資料，) 是目前狀態的目前快照，而且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
+使用 _OData_ _或透過_ 檔案收集 (所收集的資料，) 目前狀態的目前快照，且不包含歷史資料。 為了收集歷史資料，客戶必須將資料儲存在自己的資料儲存中。
 
-除非另有說明，否則所列的所有出口評估方法都是 **_完整匯出_** ，而且 **_依裝置_** (也稱為 **_每個裝置_**) 。
+> [!Note]
+>
+> 除非另有說明，否則所列的所有出口評估方法都是 **_完整匯出_** ，而且 **_依裝置_** (也稱為 **_每個裝置_**) 。
 
 ## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. 匯出軟體漏洞評估 (OData) 
 
@@ -93,7 +95,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >
 >- 其他一些欄可能會在回應中傳回。 這些欄是暫存檔的，而且可能會被移除，請只使用記錄的資料行。
 >
->- 下表中所定義的屬性，依屬性識別碼列出英數順序。  執行此 API 時，所產生的輸出不一定會以這些表格中所列的相同順序傳回。
+>- 下表中所定義的屬性依字母順序依屬性識別碼列出。  執行此 API 時，所產生的輸出不一定會依照此表中所列的順序傳回。
 >
 
 屬性 (識別碼)  | 資料類型 | 描述 | 傳回值的範例
@@ -270,7 +272,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
 
 ### <a name="22-permissions"></a>2.2 許可權
 
-需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs 以取得詳細資訊。](apis-intro.md)
+需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs 以取得詳細資訊](apis-intro.md)。
 
 許可權類型 | 權限 | 許可權顯示名稱
 ---|---|---
@@ -304,8 +306,6 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >
 >- 其他一些欄可能會在回應中傳回。 這些欄是暫存檔的，而且可能會被移除，請只使用記錄的資料行。
 >
->- 下表中所定義的屬性依字母順序依屬性識別碼列出。  執行此 API 時，所產生的輸出不一定會以這些表格中所列的相同順序傳回。
->
 
 屬性 (識別碼)  | 資料類型 | 描述 | 傳回值的範例
 :---|:---|:---|:---
@@ -334,7 +334,7 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [匯出每台裝置的評估方法和屬性](get-assessmnt-1methods-properties.md)
 

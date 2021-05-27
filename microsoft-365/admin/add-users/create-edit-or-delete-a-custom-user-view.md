@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: 瞭解如何使用篩選器，在 Microsoft 365 中建立、編輯或刪除自訂使用者視圖。
-ms.openlocfilehash: 4bd4ea351612c2ae5175cd27fa7a689d671a8b62
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: 瞭解如何使用篩選，在 Microsoft 365 中建立、編輯或刪除自訂使用者視圖。
+ms.openlocfilehash: b4177a561d13d76f6d5a0a1077fe8037d469ee48
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759927"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683220"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>建立、編輯或刪除自訂使用者檢視
 
-如果您是 Microsoft 365 for business 訂閱的全域或使用者管理管理員，您可以建立自訂使用者視圖，以查看特定的使用者子集。 這些視圖是除了標準的一組視圖之外。 您可以建立、編輯或刪除自訂使用者視圖，而且您建立的自訂視圖可供所有系統管理員使用。
+如果您是企業訂閱 Microsoft 365 的全域或使用者管理管理員，您可以建立自訂使用者視圖，以查看特定的使用者子集。 這些視圖是除了標準的一組視圖之外。 您可以建立、編輯或刪除自訂使用者視圖，而且您建立的自訂視圖可供所有系統管理員使用。
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Admin center 中的自訂使用者視圖
 
@@ -41,7 +41,7 @@ ms.locfileid: "51759927"
 有關標準視圖的注意事項幾點： 
 
 - 如果清單中的使用者超過2000，部分標準視圖會顯示未排序的清單。 若要在清單中尋找特定的使用者，請使用搜尋方塊。 
-- 如果您未從 Microsoft 購買 Microsoft 365， **計費系統管理員** 不會出現在 [標準視圖] 清單中。 For more information, see [Assigning admin roles](assign-admin-roles.md). 
+- 如果您未購買 Microsoft 的 Microsoft 365，**計費系統管理員** 不會出現在 [標準視圖] 清單中。 For more information, see [Assigning admin roles](assign-admin-roles.md). 
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>選擇自訂使用者視圖的篩選
 
@@ -64,12 +64,12 @@ ms.locfileid: "51759927"
     
 - **發生錯誤的使用者** 選取此方塊以顯示可能有布建錯誤的使用者。 
     
-- **未經許可的使用者** 選取此方塊，以尋找未獲指派授權的所有使用者。 此視圖的結果也可以包含具有 Exchange 信箱，但沒有授權的使用者。 若要特別追蹤這些使用者，請使用篩選 **未經授權的使用者與 Exchange 信箱或檔案**。 此視圖的結果也可以包含有 Exchange 封存，但沒有授權的使用者。
+- **未經許可的使用者** 選取此方塊，以尋找未獲指派授權的所有使用者。 此視圖的結果也可以包含擁有 Exchange 信箱，但沒有授權的使用者。 若要特別追蹤這些使用者，請使用篩選沒有 **授權的使用者 Exchange 信箱或檔案**。 此視圖的結果也可以包含有 Exchange 封存，但沒有授權的使用者。
     
-- **具有 Exchange 信箱或封存的未授權使用者** 選取此方塊以顯示 Exchange Online 中所建立的使用者帳戶，並有 Exchange 信箱，但未獲指派 Microsoft 365 授權。 此篩選的結果包括已被指派 Exchange 封存的使用者。 
+- **具有 Exchange 信箱或封存的未授權使用者** 選取此方塊以顯示在 Exchange Online 中建立的使用者帳戶，並具有 Exchange 信箱，但未獲指派 Microsoft 365 授權。 此篩選的結果包括已獲指派 Exchange 封存的使用者。 
 
 > [!NOTE]
-> **具有 Exchange 信箱的未經許可使用者** 可在下列情況中運作：
+> 在下列情況中，**具有 Exchange 信箱的未經許可的使用者可以使用** 此篩選：
 1. 信箱最近從 **共用** 轉換為 **使用者** ，而且沒有授權。
 2. 信箱最近已遷移至 Microsoft 365，但是尚未指派授權。
 3. 信箱已使用 PowerShell 建立，尚未指派授權。
@@ -83,40 +83,44 @@ ms.locfileid: "51759927"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心中，移至 [ **使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>]。
-    
-2. 在 [作用中 **使用者** ] 頁面上，選取 [ **篩選** ]，然後選取 [ **新增篩選**]。
   
-3. 在 [ **自訂篩選** ] 頁面上，輸入篩選器的名稱，選擇您自訂篩選的條件，然後選取 [ **新增**]。 您的自訂視圖現在會包含在篩選器的下拉式清單中。
-    
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 [ **使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">使用者</a>]。  
-
-2. 在 [作用中 **使用者** ] 頁面上選取 [ **視圖** ]，然後選取 [ **新增自訂視圖**]。
-  
-3. 在 [ **自訂視圖** ] 頁面上，輸入篩選器的名稱，選擇您自訂篩選的條件，然後選取 [ **新增**]。 您的自訂視圖現在會包含在篩選器的下拉式清單中。
+1. 在系統管理中心中，移至 [ **使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">使用者</a>]。 
 
 ::: moniker-end
-
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 [ **使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">使用者</a>]。 
-
-2. 在 [作用中 **使用者** ] 頁面上選取 [ **視圖** ]，然後選取 [ **新增自訂視圖**]。
-  
-3. 在 [ **自訂視圖** ] 頁面上，輸入篩選器的名稱，選擇您自訂篩選的條件，然後選取 [ **新增**]。 您的自訂視圖現在會包含在篩選器的下拉式清單中。
+1. 在系統管理中心中，移至 [ **使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">使用者</a>]。  
 
 ::: moniker-end
     
+2. 在 [作用中 **使用者** ] 頁面上，選取 [ **篩選** ]，然後選取 [ **新增篩選**]。
+  
+3. 在 [ **自訂篩選** ] 頁面上，輸入篩選器的名稱，選擇您自訂篩選的條件，然後選取 [ **新增**]。 您的自訂視圖現在會包含在篩選器的下拉式清單中。
 
 ## <a name="edit-or-delete-a-custom-user-view"></a>編輯或刪除自訂使用者視圖
 
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心中，移至 [ **使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>]。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心中，移至 [ **使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">使用者</a>]。 
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心中，移至 [ **使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">使用者</a>]。 
+
+::: moniker-end 
     
 2. 在 [作用中 **使用者** ] 頁面上，選取 [ **篩選**]，選取您要變更的篩選，然後選取 [ **編輯篩選**]。 
     
@@ -124,34 +128,12 @@ ms.locfileid: "51759927"
     > 您只能編輯自訂的視圖。 
   
 3. 在 [ **自訂篩選** ] 頁面上，視需要編輯資訊，然後選取 [ **儲存**]。 或者，若要刪除篩選，請在頁面底部選取 [ **刪除**]。 
-    
-::: moniker-end
 
-::: moniker range="o365-germany"
+## <a name="related-content"></a>相關內容
 
-1. 在系統管理中心中，移至 [ **使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">使用者</a>]。  
-
-2. 在 [作用中 **使用者** ] 頁面上，選取 [ **視圖**]，選取您要變更的篩選，然後選取 [ **編輯此視圖**]。 
-    
-    > [!TIP]
-    > 您只能編輯自訂的視圖。 
-  
-3. 在 [ **自訂視圖** ] 頁面上，視需要編輯資訊，然後選取 [ **儲存**]。 或者，若要刪除篩選，請在頁面底部選取 [ **刪除自訂視圖**]。 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心中，移至 [ **使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">使用者</a>]。 
-
-2. 在 [作用中 **使用者** ] 頁面上，選取 [ **視圖**]，選取您要變更的篩選，然後選取 [ **編輯此視圖**]。 
-    
-    > [!TIP]
-    > 您只能編輯自訂的視圖。 
-  
-3. 在 [ **自訂視圖** ] 頁面上，視需要編輯資訊，然後選取 [ **儲存**]。 或者，若要刪除篩選，請在頁面底部選取 [ **刪除自訂視圖**]。 
-
-::: moniker-end
+[Microsoft 365 系統管理中心 (影片的概覽](../../business-video/admin-center-overview.md)) 
+[關於系統管理員角色](../add-users/about-admin-roles.md) (影片) \
+[自訂群組織 (文章的 Microsoft 365 主題](../setup/customize-your-organization-theme.md)) 
 
 
      

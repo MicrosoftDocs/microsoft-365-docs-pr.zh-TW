@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，以便您的服務（如電子郵件和商務用 Skype 線上）使用您自己的功能變數名稱。
-ms.openlocfilehash: c6394b505e025c565713aae753879601f5a6aecf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635435"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683124"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
@@ -43,7 +43,6 @@ ms.locfileid: "52635435"
 - 您想要 Microsoft 365 管理您的 DNS 記錄。 如果您想要的話，也可以[管理自己的 DNS 記錄](../setup/add-domain.md)。
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>新增 TXT 或 MX 記錄以進行驗證
-<a name="BKMK_verify"> </a>
 
 > [!NOTE]
 > 您只能建立這些記錄的其中一種。TXT 是慣用的記錄類型，但部分 DNS 主機服務提供者不支援，在這種情況下，您可以改為建立 MX 記錄。 
@@ -94,17 +93,13 @@ ms.locfileid: "52635435"
   
 3. 在 **[設定]** 頁面上，選取 **[開始設定]**。
  
-    
   
 4. 在 **[驗證網域]** 頁面上，選取 **[驗證]**。
-    
-    
   
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>變更您網域的名稱伺服器 (NS) 記錄
-<a name="BKMK_nameservers"> </a>
 
 當您在 Microsoft 365 中取得網域安裝精靈的最後一個步驟時，您會有一個剩餘的任務。 若要使用 Microsoft 365 服務（例如電子郵件）來設定網域，您可以在網域註冊機構中變更網域的名稱伺服器 (或 NS) 記錄，以指向 Microsoft 365 的主要和次要名稱伺服器。 然後，因為 Microsoft 365 主控您的 DNS，所以會為您自動設定服務所需的 dns 記錄。 您可以遵循以下步驟 (網域註冊機構可能會在他們網站上的說明內容中提供)，自行更新名稱伺服器記錄。 如果您不熟悉 DNS，請連絡網域註冊機構的支援人員。
 
@@ -179,7 +174,7 @@ ms.locfileid: "52635435"
    
 8. 如果您想要變更記錄的 TTL 設定，請從 [ **ttl** ] 下拉式清單中選取新的時間長度。 否則，請繼續進行步驟9。
     
-9. 選取 [儲存]。 
+9. 選取 ****[儲存]。 
     
 此外，您還可以建立 CNAME 記錄，協助客戶找到您的網站。
   
@@ -189,7 +184,7 @@ ms.locfileid: "52635435"
 4.  在 [ **主機名稱或別名** ] 方塊中，輸入 **www**。
 5.  在 [指向 **位址** ] 方塊中，為您的網站輸入 (FQDN) 的完整功能變數名稱。 例如， **contoso.com**。
 6.  如果您想要變更記錄的 TTL 設定，請從 [ **ttl** ] 下拉式清單中選取新的時間長度。 否則，請繼續進行步驟6。
-7.  選取 [儲存]。
+7.  選取 ****[儲存]。
 
 在將名稱伺服器記錄更新為指向 Microsoft 之後，您的網域安裝已完成。 電子郵件會路由傳送至 Microsoft，而您的網站位址的流量仍會繼續前往您目前的網站主機。 '
     
@@ -199,5 +194,5 @@ ms.locfileid: "52635435"
 ## <a name="related-content"></a>相關內容
 
 [新增 DNS 記錄以將您的網域](create-dns-records-at-any-dns-hosting-provider.md) (文章) \
-[尋找並修正新增網域或 DNS 記錄後的問題](find-and-fix-issues.md) (文章) \
+[尋找並修正新增網域或 DNS 記錄之後所發生的問題](find-and-fix-issues.md) (文章)
 [管理網域](index.yml) (連結頁面)

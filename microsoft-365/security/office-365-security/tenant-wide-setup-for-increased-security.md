@@ -20,12 +20,12 @@ ms.custom:
 description: 本主題將引導您瞭解會影響 Microsoft 365 環境安全性的全租使用者設定的建議配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 686768d05e37a4e103640c2973fd30abaa25630b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8a449d9647ae5a8b892967116f28aa6203a5e815
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538936"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684168"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>設定 Microsoft 365 租用戶以提高安全性
 
@@ -46,12 +46,14 @@ Office 365安全分數會根據您的定期活動和安全性設定來分析貴�
 
 Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時，您也可以使用其中的報告和儀表板來進行監控並採取行動。 其中某些區域擁有預設的原則設定， 某些區域則不包含預設原則或規則。 請在威脅管理底下瀏覽以下原則，來調整威脅管理設定以營造更安全的環境。
 
+<br>
+
 ****
 
 |區域|包含預設原則|建議|
 |---|---|---|
 |**防網路釣魚**|是|<ul><li>類比保護-如果您有 Office 365 和自訂網域的 Defender，請在預設的反網路釣魚原則中設定模擬保護設定，以保護您最有價值的使用者的電子郵件帳戶，例如 CEO，以及保護您的網域。 詳細資訊：[反網路釣魚原則和模擬洞察力中的模仿設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) [](impersonation-insight.md)</li><li>哄騙情報-查看哄騙您網域的寄件者。 封鎖或允許這些寄件者。 詳細資訊： [EOP 中的欺騙智慧洞察力](learn-about-spoof-intelligence.md) 和 [管理承租人允許/封鎖清單](tenant-allow-block-list.md)。</li></ul>|
-|**反惡意程式碼引擎**|是| 編輯預設原則： <ul><li>常見附件類型篩選：選取</li></ul> <p> 您也可以建立自訂的惡意程式碼篩選原則，並將其套用至貴組織中的指定使用者、群組或網域。 <p> 詳細資訊： <ul><li>[Anti-malware protection](anti-malware-protection.md)</li><li>[設定反惡意程式碼原則](configure-anti-malware-policies.md)</li></ul>|
+|**反惡意程式碼引擎**|是|編輯預設原則： <ul><li>選取 **[啟用通用附件篩選**]</li></ul> <p> 您也可以建立自訂的惡意程式碼篩選原則，並將其套用至貴組織中的指定使用者、群組或網域。 <p> 詳細資訊： <ul><li>[Anti-malware protection](anti-malware-protection.md)</li><li>[設定反惡意程式碼原則](configure-anti-malware-policies.md)</li></ul>|
 |**Microsoft Defender 中 Office 365 的安全附件**|否|在 [安全附件] 的主要頁面上，按一下 [ **通用設定** ]，然後開啟此設定： <ul><li>**針對 SharePoint、OneDrive 和 Microsoft Teams 開啟適用於 Office 365 的 Defender**</li></ul> <p> 使用下列設定來建立安全附件原則： <ul><li> **封鎖**：選取 [ **封鎖** ] 作為未知的惡意程式碼回應。</li><li>**啟用重新導向**：請選取此方塊並輸入電子郵件地址，例如系統管理員或隔離帳戶。</li><li>**若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍**：請選取此方塊。</li><li>**_適用_* 于： **收件者網域是** \> 選取您的網域。</li></ul> <p> 詳細資訊： [SharePoint、OneDrive 及 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)，並[設定安全附件原則](set-up-safe-attachments-policies.md)|
 |**Microsoft Defender 中 Office 365 的安全連結**|是|在 [安全連結] 的主要頁面上，按一下 [ **通用設定**]。 <ul><li>**使用 Office 365 下列專案中的安全連結**：驗證此設定已開啟。</li><li>**當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者按一下。</li></ul> <p> 使用下列設定建立安全連結原則： <ul><li>**在郵件中選取未知可能惡意 URLs 的動作**：確認此設定為 **開啟**。</li><li>**選取 Microsoft Teams 內未知或可能惡意的 URLs 的動作**：確認此設定為 **On**。</li><li>**對指向檔案的可疑連結和連結套用即時 URL 掃描**：請選取此方塊。</li><li>**等候 URL 掃描完成後，才能傳遞郵件**：請選取此方塊。</li><li>套用 **安全連結至組織內傳送的電子郵件**：複選此方塊</li><li>**不允許使用者依序按一下原始 URL**：請選取此方塊。</li><li>**適用** 于： **收件者網域是** \> 選取您的網域。</li></ul> <p> 詳細資訊： [設定安全連結原則](set-up-safe-links-policies.md)。|
 |**反垃圾郵件 (郵件篩選)**|是| 要監視的專案：垃圾郵件太多-選擇 [自訂設定]，然後編輯預設垃圾郵件篩選原則。 詳細資訊： [Microsoft 365 電子郵件 Anti-Spam 保護](anti-spam-protection.md)。|
@@ -64,6 +66,8 @@ Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時�
 ## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>在安全性 & 規範中心內，查看儀表板與報告
 
 請瀏覽以下報告與儀表板來深入了解您環境的健康狀況。 若您的組織使用 Office 365 服務，這些報告中的資料會變得更豐富。 現在，請先熟悉您可以監控與採取動作的項目。 如需詳細資訊，請參閱 [安全性 & 規範中心內的報告](../../compliance/reports-in-security-and-compliance.md)。
+
+<br>
 
 ****
 
@@ -80,6 +84,8 @@ Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時�
 
 Exchange 系統管理中心中有許多安全性與保護控制項同時也包含在安全性中心中。 您不需要在這兩個地方都進行設定。 以下是建議的設定。
 
+<br>
+
 ****
 
 |區域|包含預設原則|建議|
@@ -95,6 +101,8 @@ Microsoft 建議您從基礎保護開始，逐漸提高 SharePoint 小組網站�
 設定為基礎層級的 SharePoint 小組網站可讓您使用匿名存取連結，來與所有外部使用者共用檔案。 建議您採用此方法，而不要在電子郵件中傳送檔案。
 
 為了支援基礎保護達到目標，請依以下建議設定全租用戶共用原則。 請為個別網站設定比此全租用戶原則更嚴格 (而非更寬鬆) 的共用設定。
+
+<br>
 
 ****
 
@@ -138,9 +146,7 @@ SharePoint 系統管理中心與商務用 OneDrive 系統管理中心包含同�
 詳細資訊：
 
 - [部署 Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [Microsoft Cloud App Security 的詳細資訊](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [什麼是 Cloud App Security？](/cloud-app-security/what-is-cloud-app-security)
 
 ![Cloud App Security 儀表板](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)

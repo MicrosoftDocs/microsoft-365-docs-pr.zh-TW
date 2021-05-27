@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 深入瞭解 Power BI 和組織中的使用者如何使用此商務 analytics 服務。
-ms.openlocfilehash: 34a48ed6ee854f0057e79ba86dbd888a65b41c5e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6da25932e1813744aa38bab2b399d6ac30c3429a
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537424"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683364"
 ---
 # <a name="power-bi-in-your-organization"></a>貴組織中的 Power BI
 
@@ -83,19 +83,19 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 
 ::: moniker range="o365-worldwide"
 
-3. 前往 [https://admin.microsoft.com](https://admin.microsoft.com)。
+3. 前往 <a href="https://admin.microsoft.com" target="_blank">https://admin.microsoft.com</a>。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-3. 請移至 [https://portal.office.de](https://portal.office.de)。
+3. 轉到 (G) <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-3. 請移至 [https://portal.partner.microsoftonline.cn](https://portal.partner.microsoftonline.cn)。
+3. 請移至 <a href="https://portal.partner.microsoftonline.cn" target="_blank">https://portal.partner.microsoftonline.cn</a>。
 
 ::: moniker-end
 

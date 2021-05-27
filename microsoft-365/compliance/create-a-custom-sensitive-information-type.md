@@ -9,20 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何在安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂敏感性資訊類型。
+description: 瞭解如何在安全性 & 合規性中心建立、修改、移除及測試 DLP 的自訂機密資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36238d14d3d6a1f84b0fdcae62635922f62b58d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908487"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683834"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自訂敏感性資訊類型入門
 
@@ -61,10 +61,10 @@ ms.locfileid: "50908487"
 2. 填寫 **[名稱]** 和 **[描述]** 的值，然後選擇 **[下一步]**。
 3. 選擇 **[建立模式]**。 在定義新的敏感性資訊類型時，可以建立多個模式，每個模式具有不同的元素和信賴等級。
 4. 選擇模式的預設信賴等級。 這些值是 **[低信賴等級]**、**[中信賴等級]** 和 **[高信賴等級]**。
-5. 選擇並定義 **主要元素**。 主要元素可以是帶有選用驗證程式的 **規則運算式**、**關鍵字清單**、**關鍵字字典** 或預先設定的 **函數** 之一。 有關 DLP 功能的詳細資訊，請參閱 [DLP 功能尋找的項目](what-the-dlp-functions-look-for.md)。
+5. 選擇並定義 **主要元素**。 主要元素可以是帶有選用驗證程式的 **規則運算式**、**關鍵字清單**、**關鍵字字典** 或預先設定的 **函數** 之一。 有關 DLP 功能的詳細資訊，請參閱 [DLP 功能尋找的項目](what-the-dlp-functions-look-for.md)。 如需日期及校驗和驗證程式的詳細資訊，請參閱 [正則運算式驗證程式的詳細資訊](#more-information-on-regular-expression-validators)。
 6. 填寫 **鄰近的字元** 的值。
-7. (選用) 新增支援元素 (如有)。 支援元素可以是帶有選用驗證程式的規則運算式、關鍵字清單、關鍵字字典或預定義的函數之一。 
-8.  (選用) 從可用檢查清單中新增 [**其他檢查**](#more-information-on-additional-checks)。
+7. (選用) 新增支援元素 (如有)。 支援元素可以是帶有選用驗證程式的規則運算式、關鍵字清單、關鍵字字典或預定義的函數之一。 支援元素可以有自己的 **字元臨近** 設定。 
+8. (選用) 從可用檢查清單中新增 [**其他檢查**](#more-information-on-additional-checks)。
 9. 選擇 **[建立]**。
 10. 選擇 **[下一步]**。
 11. 為此敏感性資訊類型選擇 **[建議的信賴等級]**。
@@ -122,6 +122,47 @@ ms.locfileid: "50908487"
 您也可以使用 PowerShell 和 Exact Data Match 功能建立自訂敏感性資訊類型。 若要深入了解這些方法，請參閱：
 - [在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [使用 Exact Data Match (EDM) 建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+
+## <a name="more-information-on-regular-expression-validators"></a>正則運算式驗證程式的詳細資訊
+
+### <a name="checksum-validator"></a>Checksum 驗證程式
+
+如果您需要在正則運算式中的數位上執行校驗和，您可以使用 *checksum 驗證* 程式。 例如，假設您需要為八位數授權號碼建立 SIT，其中最後一個數位是使用 mod 9 計算驗證的校驗和數位。 您已設定校驗和演算法，如下所示：
+ 
+Sum = 數位 1 * 加權 1 + number 2 * 加權 2 + 數位 3 * 加權 3 + 數位 4 * 重量 4 + 數位 5 * 加權 5 + 數位 6 * 加權 6 + 3 * 加權 7 + 數位 8 * 加權 8 Mod 值 = Sum %9 If Mod value = = 2-1 = 1，
+
+1. 使用此正則運算式定義主要元素：
+
+`\d{8}`
+
+2. 然後新增校驗和驗證程式。
+3. 新增以逗號分隔的權重值，檢查碼的位置和 Mod 值的位置。 如需模運算的詳細資訊，請參閱 [模數](https://en.wikipedia.org/wiki/Modulo_operation)作業。
+
+> [!NOTE]
+> 如果檢查碼不是校驗和計算的一部分，請使用0做為檢查碼的權重。 例如，在上述的情況下，如果檢查碼不是用來計算檢查碼碼，就會等於0。  Modulo_operation) 。
+
+![已設定校驗和驗證程式的螢幕擷取畫面](../media/checksum-validator.png)
+
+### <a name="date-validator"></a>日期驗證程式
+
+如果內嵌在正則運算式中的日期值為您建立的新模式的一部分，您可以使用 *日期驗證* 程式來測試它是否符合您的準則。 例如，假設您想要為九位數的雇員識別碼建立 SIT。 前六位數位是以 DDMMYY 格式雇用的日期，最後三個是隨機產生的數位。 驗證前六位數是否為正確的格式。 
+
+1. 使用此正則運算式定義主要元素：
+
+`\d{9}`
+
+2. 然後新增日期驗證程式。
+3. 選取日期格式及起始位移。 因為日期字串是前六位數，所以位移是 `0` 。
+
+![設定之日期驗證程式的螢幕擷取畫面](../media/date-validator.png)
+
+### <a name="functional-processors-as-validators"></a>功能處理器為驗證程式
+
+您可以使用函數處理器，作為一些最常用的驗證程式。 這可讓您定義您自己的正則運算式，同時確保它們會透過 SIT 所需的其他檢查。 例如，Func_India_Aadhar 會確定您所定義的自訂正則運算式已傳遞印度 Aadhar 卡片所需的驗證邏輯。 如需可用作驗證程式之 DLP 功能的詳細資訊，請參閱 [dlp 功能的尋找目標](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for)。 
+
+### <a name="luhn-check-validator"></a>Luhn 檢查驗證程式
+
+如果您有自訂的機密資訊類型，且包含應傳遞 [Luhn 演算法](https://en.wikipedia.org/wiki/Luhn_algorithm)的正則運算式，您可以使用 Luhn 檢查驗證程式。
 
 ## <a name="more-information-on-additional-checks"></a>其他檢查的其他資訊
 

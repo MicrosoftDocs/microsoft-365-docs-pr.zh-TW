@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何更新您的帳單位址或電子郵件地址，用來接收商務用 Microsoft 365 的帳單通知。
 ms.date: 04/07/2021
-ms.openlocfilehash: 77ccb7b7ff9927736c1adaadfd2dea6b64a084f0
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: afc23134f85995a5e8d7db0fb956635ceb6ea629
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594106"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683604"
 ---
 # <a name="change-your-billing-addresses"></a>變更帳單地址
 
@@ -45,7 +45,7 @@ ms.locfileid: "52594106"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">記帳帳戶</a> ] 頁面。
+1. 在系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**記帳帳戶**</a> ] 頁面。
 
 ::: moniker-end
 
