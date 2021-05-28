@@ -1,5 +1,5 @@
 ---
-title: 設定 Microsoft Defender for Office 365 中的安全連結原則
+title: 為 Office 365 設定 Microsoft Defender 中的安全連結原則
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中查看、建立、修改及刪除安全連結原則及全域安全連結設定。
+description: 系統管理員可以瞭解如何在 Microsoft Defender 中查看、建立、修改及刪除安全連結原則及全域安全連結設定，以供 Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8b2cb8b57dcf630b3e07ac387e96ab099ca7403
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 61cb4746289a8acbdd9af7f668010604de511902
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203553"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694494"
 ---
-# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>設定 Microsoft Defender for Office 365 中的安全連結原則
+# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>為 Office 365 設定 Microsoft Defender 中的安全連結原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,21 +34,24 @@ ms.locfileid: "51203553"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](defender-for-office-365.md) 的商務客戶。 如果您是尋找 Outlook 中 Safelinks 相關資訊的家用使用者，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](defender-for-office-365.md) 的商務客戶。 如果您是尋找 Outlook 中 Safelinks 相關資訊的家用使用者，請參閱[Advanced Outlook .com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-安全連結是 [Microsoft Defender For Office 365](defender-for-office-365.md) 中的一項功能，可在郵件流程中提供輸入電子郵件的 URL 掃描，並在電子郵件和其他位置中，按一下驗證 URLs 和連結。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的安全連結](safe-links.md)。
+安全連結是[Microsoft Defender](defender-for-office-365.md)中的功能 Office 365，可在郵件流程中提供輸入電子郵件的 URL 掃描，並在電子郵件和其他位置中，按一下驗證 URLs 與連結的時間。 如需詳細資訊，請參閱[Microsoft Defender 中 Office 365 的安全連結](safe-links.md)。
 
 沒有內建或預設的安全連結原則。 若要取得 URLs 的安全連結掃描，您必須建立一個或多個安全連結原則，如本文所述。
 
 > [!NOTE]
-> 您可以在安全連結原則 **以外** 的安全連結保護中，設定全域設定。 如需相關指示，請參閱 [在 Microsoft Defender For Office 365 中設定安全連結的通用設定](configure-global-settings-for-safe-links.md)。
+> 您可以在安全連結原則 **以外** 的安全連結保護中，設定全域設定。 如需相關指示，請參閱[設定 Microsoft Defender 中安全連結的通用設定 Office 365](configure-global-settings-for-safe-links.md)。
 
-您可以使用 Exchange Online 中的信箱，設定安全性 & 合規性中心或 PowerShell (Exchange Online 365 PowerShell 中的安全連結原則;獨立 EOP PowerShell 適用于沒有 Exchange Online 信箱的組織，但搭配 Microsoft Defender for Office 365 附加元件訂閱) 。
+您可以在 [安全性 & 合規性中心] 或 [PowerShell (Exchange Online PowerShell 中設定安全連結原則，以在 Microsoft 365 中使用信箱的合格 Exchange Online 組織。組織的獨立 EOP PowerShell，但沒有 Exchange Online 信箱，但使用 Microsoft Defender Office 365 附加元件訂閱) 。
 
 安全連結原則的基本元素如下：
 
 - **安全連結原則**：開啟安全連結保護，開啟即時 URL 掃描，指定在傳遞郵件之前是否等候即時掃描，請開啟 [內部郵件的掃描]，指定是否要在 URLs 追蹤使用者按一下，並指定是否允許使用者按一下原始 URL 的 trough。
 - **安全連結規則**：指定原則套用至) 的優先順序和收件者篩選 (。
+
+> [!IMPORTANT]
+> 系統管理員應考慮 SafeLinks 的不同設定設定。 其中一個可用選項是在 SafeLinks 中包含使用者身分識別資訊。 這項功能可讓 *安全行動小組* 調查可能的使用者損損、採取糾正動作和限制昂貴的違規行為。
 
 當您在安全性 & 合規性中心管理安全連結原則時，這兩個元素之間的差異並不明顯：
 
@@ -56,7 +59,7 @@ ms.locfileid: "51203553"
 - 當您修改安全連結原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改安全連結規則。 所有其他設定都會修改相關聯的安全連結原則。
 - 當您移除安全連結原則時，會移除安全連結規則和相關聯的安全連結原則。
 
-在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全連結原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) 一節。
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的[使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全連結原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies)一節。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -65,21 +68,21 @@ ms.locfileid: "51203553"
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派許可權，才能執行本文中的程式：
-  - 若要建立、修改和刪除安全連結原則，您必須是 Security & 合規性中心內的「 **組織管理** 」或「 **安全性管理員** 」角色群組成員， **以及** Exchange Online 中的「 **組織管理** 」角色群組的成員。
+  - 若要建立、修改和刪除安全連結原則，您必須是 Security & 合規性中心的「**組織管理**」或「**安全性管理員**」角色群組的成員，**以及** Exchange Online 中的「**組織管理**」角色群組的成員。
   - 若要對安全連結原則進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md) 和 [Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)和[Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   > 
   > - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  . - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權。
+  . - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的 **View-Only 組織管理** 角色群組也會提供該功能的唯讀許可權。
 
 - 如需安全連結原則的建議設定，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
 - 最多允許30分鐘，以套用新的或更新的原則。
 
-- [新功能不斷新增至 Microsoft Defender For Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 新增新功能時，您可能需要調整現有的安全連結原則。
+- [新功能會連續新增至 Microsoft Defender 以供 Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 新增新功能時，您可能需要調整現有的安全連結原則。
 
 ## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a>使用安全性 & 規範中心建立安全連結原則
 
@@ -97,11 +100,11 @@ ms.locfileid: "51203553"
 
    完成後，按 [下一步]。
 
-4. 在顯示的 [ **設定** ] 頁面上，設定下列設定：
+4. 在出現的 **設定** 頁面上，設定下列設定：
 
    - **在郵件中選取未知可能惡意 URLs 的動作**：選取 [ **開啟** ]，可對電子郵件中的連結啟用安全連結保護。
 
-   - **選取 Microsoft 小組中未知或可能惡意的 URLs 的動作**：選擇 [ **開啟** ]，可對小組中的連結啟用安全連結保護。
+   - **在 Microsoft Teams 內選取未知或可能惡意 URLs 的動作**：選取 [**開啟**] 以啟用 Teams 中的連結的安全連結保護。
 
    - **對指向檔案的可疑連結和連結套用即時 URL 掃描**：選取此設定可在電子郵件訊息中啟用連結的即時掃描。
 
@@ -121,7 +124,7 @@ ms.locfileid: "51203553"
 
      如需輸入語法，請參閱「 [不要重新寫入下列 URLs 的輸入語法」清單](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
 
-   如需這些設定的詳細資訊，請參閱 Microsoft 小組的電子郵件訊息和[安全連結設定](safe-links.md#safe-links-settings-for-microsoft-teams)[的安全連結設定](safe-links.md#safe-links-settings-for-email-messages)。
+   如需這些設定的詳細資訊，請參閱 Microsoft Teams 的電子郵件訊息和[安全連結設定](safe-links.md#safe-links-settings-for-microsoft-teams)[的安全連結設定](safe-links.md#safe-links-settings-for-email-messages)。
 
    如需標準和嚴格原則設定的建議值，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
@@ -267,7 +270,7 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 此範例會建立名為 Contoso 的安全連結原則，並提供下列值：
 
 - 開啟電子郵件訊息中的 URL 掃描和重新寫入。
-- 開啟小組中的 URL 掃描 (點擊 [只供預覽]) 。
+- 開啟 Teams (中的 URL 掃描。點擊 [只供預覽]) 。
 - 開啟已按一下的即時掃描 URLs，包括指向檔案的按一下連結。
 - 等候 URL 掃描完成後，才能傳遞郵件。
 - 開啟內部郵件的 URL 掃描及重新寫入。
@@ -469,7 +472,7 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule)。
 
-若要確認安全連結正在掃描郵件，請檢查可用的 Microsoft Defender for Office 365 報告。 如需詳細資訊，請參閱 [View For Office 365 的 Defender 報告](view-reports-for-mdo.md) 和 [使用 Explorer In Security & 合規性中心](threat-explorer.md)。
+若要確認安全連結正在掃描郵件，請檢查可用的 Microsoft Defender Office 365 報告。 如需詳細資訊，請參閱[View Office 365 的 Defender 報告](view-reports-for-mdo.md)]，然後[在安全性 & 規範中心使用 Explorer](threat-explorer.md)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
@@ -477,7 +480,7 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 - 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請從清單中選取原則，然後在 [飛出] 中查看詳細資料。
 
-- 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中， \<Name\> 以原則或規則的名稱取代，執行下列命令，然後確認設定：
+- 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，以 \<Name\> 原則或規則名稱取代，執行下列命令，然後確認設定：
 
   ```PowerShell
   Get-SafeLinksPolicy -Identity "<Name>"

@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 深入瞭解 Exchange Online 中的多地理位置功能，例如功能限制和信箱位置。
-ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923729"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694302"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
@@ -43,7 +43,7 @@ Exchange Online 會從 Azure AD 將 **PreferredDataLocation** 屬性同步處理
 
 - 未對使用者指定 **PreferredDataLocation** 時，當您佈建信箱，就會在中心地理位置佈建信箱。
 
-- 如果 **PreferredDataLocation** 代碼不正確 (例如 NAN 類型而非 NAM)，則會在中心地理位置佈建信箱。
+- 如果 **PreferredDataLocation** 程式碼不正確 (例如，為 NAN，而不是) ，將會在中央地理位置中布建信箱。
 
 **注意**：多地理位置功能和商務用 Skype Online 區域裝載的會議都使用使用者物件上的 **PreferredDataLocation** 屬性來尋找服務。 如果您在使用者物件上為區域裝載的會議設定 **PreferredDataLocation** 值，這些使用者的信箱將會於 Microsoft 365 租用戶上啟用多地理位置後，自動移到指定的地理位置。
 

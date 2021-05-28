@@ -18,16 +18,21 @@ description: 瞭解如何針對您支付的預繳稅金要求帳戶要求信用�
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689022"
+ms.locfileid: "52694218"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>在您的帳戶中要求 (印度客戶的預繳稅金信用) 
+
+> [!NOTE]
+>
+> 如果您的組織不是以印度為基礎，請參閱 [ (Global customers) 上的帳戶要求支付預繳 ](withholding-tax-credit-global.md)稅金的信用。
 
 印度中的客戶可接收 Web Direct (Azure 和 Microsoft 365 由 Microsoft 區域銷售 Pte 有限公司 () MRS 所收取) 發票，並使交叉框線支付到新加坡以結算發票。 如果您在 remitting 付款時已預繳稅金，本文會說明在您的帳戶中使用 MRS 來申報預繳稅金 (WHT) 的信用處理。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934282"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694470"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>隱私權資訊-iOS 上的端點的 Microsoft Defender
 
@@ -39,6 +39,9 @@ ms.locfileid: "51934282"
 IOS 上的 Defender for Endpoint 會從您設定的 iOS 裝置收集資訊，並將其儲存在您擁有 Defender for Endpoint 的相同承租人中。 收集此資訊可協助您在 iOS 安全、更新、執行如預期的情況下，繼續更新端點，以及支援服務。
 
 如需資料儲存區的詳細資訊，請參閱 [Microsoft Defender Endpoint data storage and 隱私權](data-storage-privacy.md)。
+
+
+如需 Android 和 iOS 行動裝置上有關 Microsoft Defender for Endpoint 的常見隱私權問題的詳細資訊，請參閱 [Microsoft defender For endpoint 和您在 android 上的隱私權和 iOS 行動裝置](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)。
 
 ## <a name="required-data"></a>必要資料 
 
@@ -62,7 +65,7 @@ IOS 上的 Defender for Endpoint 會從您設定的 iOS 裝置收集資訊，並
 
     - Azure Active Directory (AD) 裝置識別碼和 Azure 使用者識別碼-在 Azure Active Directory 上分別識別裝置，使用者。 
 
-    - Azure 租使用者識別碼-識別您的組織在 Azure Active Directory 中的 GUID。 
+    - Azure 租使用者識別碼-在 Azure Active Directory 中識別您的組織的 GUID。 
 
     - Microsoft Defender for Endpoint org ID-與裝置所屬之企業相關聯的唯一識別碼。 可讓 Microsoft 識別是否有問題影響一組選擇的企業和受影響的企業數目。 
 

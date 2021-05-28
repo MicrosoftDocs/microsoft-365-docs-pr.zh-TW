@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以在安全性入口網站中瞭解如何在承租人允許/封鎖清單中設定允許和封鎖。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 270e38d65857de2f4d06460fb3bb77f72a165ecf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538960"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694482"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租用戶允許/封鎖清單中
 
@@ -44,7 +44,6 @@ Security & 合規性中心內的承租人 Allow/封鎖清單，可讓您以手�
 
 - 要封鎖的 URLs。
 - 要封鎖的檔案。
-- 允許的大宗郵件寄件者網域。 如需大宗郵件、大量信賴等級 (BCL) ，以及反垃圾郵件原則的大宗郵件篩選的詳細資訊，請參閱 [EOP 中的大量投訴 (BCL) ](bulk-complaint-level-values.md)。
 - 要允許或封鎖的欺騙寄件者。 [！注意] 如果您在 [哄騙情報洞察力](learn-about-spoof-intelligence.md)中覆寫 allow 或 block 判定，則哄騙寄件者會變成隻會出現在 [租使用者允許/封鎖] 清單的 [ **哄騙** ] 索引標籤上的手動允許或封鎖專案。 您也可以在這裡，以欺騙的寄件者的方式手動建立允許或封鎖專案，以供欺詐情報偵測到。
 
 本文說明如何在「安全性 & 合規性中心」或「PowerShell (Exchange Online PowerShell 中設定使用者在 Microsoft 365 中使用信箱的 Exchange Online 組織的專案。組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
@@ -76,7 +75,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單，可讓您以手�
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已在 Exchange Online 中獲派權限，才能執行此文章中的程序：
-  - **URLs、檔案及允許大量寄件者**：
+  - **URLs 和** 檔案：
     - 若要從 [承租人允許/封鎖] 清單中新增及移除值，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
     - 若要取得租使用者 Allow/封鎖清單的唯讀許可權，您必須是 **全域讀取** 者或 **安全性讀取器** 角色群組的成員。
   - **哄騙**：下列其中一個組合：
@@ -135,26 +134,6 @@ Security & 合規性中心內的承租人 Allow/封鎖清單，可讓您以手�
 
 4. 完成後，按一下 **[新增]**。
 
-## <a name="use-the-security--compliance-center-to-create-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 合規性中心建立承租人允許/封鎖清單中的允許大宗郵件寄件者網域專案
-
-1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
-
-2. 在 [ **承租人允許/封鎖清單** ] 頁面上，選取 [BCL 旁路] 索引標籤的 [ **寄件者網域** ]，然後按一下 [ **新增**]。
-
-3. 在 [ **新增加入寄件者的網域** ] 中，出現出現的 BCL 略過浮出控制項，設定下列設定：
-
-   - **新增地域略過的寄件者網域**：每行輸入一個適當大宗郵件的來源域，最多20個。
-
-   - **永不過期**：執行下列其中一個步驟：
-
-     - 確認已關閉此設定 (![ 切換 ](../../media/scc-toggle-off.png)) 並使用 [ **到期** 日] 方塊來指定專案的到期日。
-
-     或
-
-     - 將切換向右移動，將專案設定為永不到期： ![開啟](../../media/scc-toggle-on.png).
-
-4. 完成後，按一下 **[新增]**。
-
 ## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心在承租人允許/封鎖清單中建立允許或封鎖欺騙寄件者專案
 
 **附註**：
@@ -198,11 +177,6 @@ Security & 合規性中心內的承租人 Allow/封鎖清單，可讓您以手�
      - **上次更新日期**
      - **有效期**
      - **附註**
-
-   - **BCL 略過的寄件者網域**
-     - **值**：大宗郵件寄件者的網域。
-     - **上次更新日期**
-     - **有效期**
 
    - **詐騙**
      - **偽裝的使用者**
@@ -272,7 +246,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單，可讓您以手�
    - **詐騙**
      - **動作**：您可以將值變更為 [ **允許** ] 或 [ **封鎖**]。
 
-4. 完成後，按一下 ****[儲存]。
+4. 完成後，按一下 [儲存]。
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>使用安全性 & 規範中心移除承租人允許/封鎖清單中的專案
 
@@ -312,23 +286,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems)。
 
-### <a name="use-powershell-to-add-allow-bulk-mail-sender-domain-entries-to-the-tenant-allowblock-list"></a>使用 PowerShell 新增允許大宗郵件寄件者網域專案至租使用者允許/封鎖清單
-
-若要新增「租使用者允許/封鎖」清單中的允許大宗郵件寄件者網域專案，請使用下列語法：
-
-```powershell
-New-TenantAllowBlockListItems -ListType BulkSender -Block:$false -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-此範例會為永不到期的指定網域新增允許的大量寄件者專案。
-
-```powershell
-New-TenantAllowBlockListItem -ListType BulkSender -Block:$false -Entries contosodailydeals.com
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems)。
-
 ### <a name="use-powershell-to-add-allow-or-block-spoofed-sender-entries-to-the-tenant-allowblock-list"></a>使用 PowerShell 將允許或封鎖冒牌寄件者專案新增至承租人允許/封鎖清單
 
 若要在承租人允許/封鎖清單中新增欺騙寄件者專案，請使用下列語法：
@@ -357,28 +314,6 @@ Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Block
-```
-
-如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems)。
-
-### <a name="use-powershell-to-view-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 以查看允許在承租人允許/封鎖清單中大宗郵件寄件者的網域專案
-
-若要在 [租使用者允許/封鎖] 清單中查看 [允許大宗郵件寄件者網域專案]，請使用下列語法：
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender [-Entry <BulkSenderDomainValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-此範例會傳回所有允許的大宗郵件寄件者網域。
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender
-```
-
-此範例會傳回指定之大量寄件者網域的資訊。
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "contosodailydeals.com"
 ```
 
 如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems)。
@@ -427,22 +362,6 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 如需詳細的語法及參數資訊，請參閱 [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems)。
 
-### <a name="use-powershell-to-modify-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>在承租人允許/封鎖清單中使用 PowerShell 修改允許大宗郵件寄件者網域專案
-
-若要修改允許租使用者/封鎖清單中的大宗郵件寄件者網域專案，請使用下列語法：
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-此範例會將指定之允許大宗郵件寄件者網域專案的到期變更為永不過期。
-
-```powershell
-Set-TenantAllowBlockListItems -ListType BulkSender -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -NoExpiration
-```
-
-如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems)。
-
 ### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 修改承租人 Allow/封鎖清單中的允許或封鎖欺騙寄件者專案
 
 若要修改承租人 Allow/封鎖清單中的 [允許] 或 [封鎖欺騙的寄件者] 專案，請使用下列語法：
@@ -459,12 +378,12 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 如需詳細的語法及參數資訊，請參閱 [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems)。
 
-### <a name="use-powershell-to-remove-bulk-mail-sender-domain-file-and-domain-entries-from-the-tenant-allowblock-list"></a>使用 PowerShell 從承租人允許/封鎖清單中移除大宗郵件寄件者網域、檔案及網域專案
+### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>使用 PowerShell 從承租人允許/封鎖清單移除 URL 或檔專案
 
-若要從承租人允許/封鎖清單中移除 [允許大宗郵件寄件者網域專案]、[封鎖檔案專案] 及 [封鎖 URL] 專案，請使用下列語法：
+若要從 [承租人允許/封鎖] 清單中移除檔案及 URL 專案，請使用下列語法：
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <BulkSender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 此範例會從承租人允許/封鎖清單中移除指定的封鎖 URL 專案。

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13c0a575fd2614f58eb6a2163cda04118c2a391d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 2f9d56b7e72befb8acddf6d9f810a7ba5cec1083
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636275"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694362"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上的 Microsoft Defender for Endpoint 上進行問題的疑難排解及尋找答案 FAQs
 
@@ -60,18 +60,21 @@ ms.locfileid: "52636275"
 
 ## <a name="issues-with-multiple-vpn-profiles"></a>多個 VPN 設定檔的問題
 
-Apple iOS 不支援多個全裝置的 Vpn 同時作用中。 雖然裝置上可以有多個 VPN 設定檔，但一次只能有一個 VPN 可用。
+Apple iOS 不支援多個 **全裝置的** vpn 同時作用中。 雖然裝置上可以有多個 VPN 設定檔，但一次只能有一個 VPN 可用。
 
+Microsoft Defender for Endpoint VPN 可以與其他設定為個別 *應用程式* 或 *"個人"* 的 vpn 共同存在。
 
 ## <a name="battery-consumption"></a>電池消耗
 
-應用程式的電池使用量是根據許多因素（包括 CPU 和網路使用量）計算而來。 Microsoft Defender for Endpoint 會在背景中使用本機/環路傳回 VPN，檢查任何惡意網站或連線的網頁流量。 任何應用程式的網路封包都會進行此項檢查，從而導致無法準確計算 Microsoft Defender for Endpoint 的電池使用量。 這為使用者提供了錯誤的印象。 Microsoft Defender for Endpoint 的實際電池消耗小於裝置上的 [電池設定] 頁面上顯示的數目。 這是以 Microsoft Defender for Endpoint app 所進行的測試為基礎，以瞭解電池消耗。
+在設定應用程式中，iOS 只會顯示使用者在特定期間內可看到之應用程式的電池使用方式。 螢幕上顯示之應用程式的電池使用量只是針對該時段，而且會根據許多因素（包括 CPU 和網路使用量）進行 iOS 計算。 Microsoft Defender for Endpoint 會在背景中使用本機/環路傳回 VPN，檢查任何惡意網站或連線的網頁流量。 任何應用程式的網路封包都會進行此項檢查，從而導致無法準確計算 Microsoft Defender for Endpoint 的電池使用量。 Microsoft Defender for Endpoint 的實際電池消耗遠遠小於裝置上的 [電池設定] 頁面上顯示的數目。
+
+在後臺執行的 Microsoft Defender for Endpoint 的每日平均電池使用量 **大約是該天使用的整體電池占 8.81%**。 根據使用者裝置上的 Microsoft Defender for Endpoint 的實際使用量，此度量值是透過 Apple 報告，而由於上述原因，也可能會考慮到具有網路活動的其他應用程式。
 
 此外，使用的 VPN 也是本機 VPN，與傳統的 VPN 不同的是，網路流量不會傳送到裝置外。
 
 ## <a name="data-usage"></a>資料使用量
 
-Microsoft Defender for Endpoint 會使用本機/回送 VPN，檢查任何惡意網站或連線的網頁流量。 由於這個原因，Apple 帳戶資料使用量對 Microsoft Defender for Endpoint 是不准確的。 Microsoft Defender for Endpoint 的實際資料使用量並不大，且遠遠小於裝置上的資料使用量設定所顯示的內容。
+Microsoft Defender for Endpoint 會使用本機/回送 VPN，檢查任何惡意網站或連線的網頁流量。 由於這個原因，可不准確為端點資料使用量進行 Microsoft Defender 資料使用量的考慮。 Microsoft Defender for Endpoint 的實際資料使用量並不如裝置上的資料使用量設定所顯示的內容少。
 
 ## <a name="report-unsafe-site"></a>報告不安全的網站
 

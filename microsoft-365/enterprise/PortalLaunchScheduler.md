@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: d7ea64b3a9fef25ddfde43e61624e49d2b7d4352
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280966"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694350"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用 SharePoint 入口網站啟動計畫程式啟動入口網站
 
@@ -95,7 +95,7 @@ ms.locfileid: "52280966"
     - 小於10k 使用者：兩個波浪
     - 10k 至30k 使用者：三聲波 
     - 30k + 至100k 使用者：五台聲波
-    - 超過100k 的使用者：五台聲波，並與您的 Microsoft 帳戶小組聯繫
+    - 超過100k 的使用者：5個無線電波，您透過使用啟動入口網站中所列的步驟，與您的 Microsoft 聯繫一節。 
 
 5.  然後，判斷所需的重新 **導向類型** ：
 
@@ -118,6 +118,26 @@ ms.locfileid: "52280966"
 
 8.  確認入口網站啟動詳細資料並選取 **排程**。 開始排程後，對 SharePoint 入口網站首頁所做的任何變更，都必須先接收正常的診斷結果，再繼續進行入口網站啟動。
 
+### <a name="launch-portal-with-over-100k-users"></a>使用超過100k 使用者的啟動入口網站
+
+如果您打算移轉超過 100TB，請按照以下列出的步驟提交支援要求。 請確認包含所有要求的資訊。
+
+請遵循下列步驟：
+1. 瀏覽到 https://admin.microsoft.com
+2. 確定您使用新的系統管理中心預覽。
+3. 在左側瀏覽窗格中，選取 [支援]，然後選取 [新增服務要求]。 
+
+
+   這會在您的畫面右側啟動「需要協助嗎？」窗格。
+
+4.  在 [**簡短描述您的問題**] 區域中，輸入「使用100k 使用者的發行 SharePoint 入口網站」。</br>
+5. 選取 [連絡支援部門]。
+6. 在 [**描述**] 底下，輸入「啟動含100k 使用者的 SharePoint 入口網站」。 
+7. 填寫其餘資訊，然後選取 [與我聯繫]。
+8. 建立票證之後，請確定提供支援代理人以下資訊：
+- 啟動入口網站 URL 
+- 預期的使用者人數
+- 預估啟動時間 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>對已排程的入口網站啟動進行變更
 

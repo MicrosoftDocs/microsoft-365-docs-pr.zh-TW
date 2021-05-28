@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3d9dd871edba29ec6119329f98ada990abad6e8d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4a051742775c3d4e8b36bf0ba7a4fd2502763014
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246413"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694458"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上適用於端點的 Microsoft Defender
 
@@ -62,9 +62,6 @@ ms.locfileid: "52246413"
 
 - 存取[Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，將應用程式部署至組織中已註冊的使用者群組。
 
-**網路需求**
-- 若要在連接至網路時 iOS 上運作的 Microsoft Defender for Endpoint，必須設定防火牆/proxy 以 [啟用 Microsoft defender For Endpoint service 的存取權 URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
-
 **系統需求**
 
 - 執行 iOS 11.0 和更新版本的裝置 iOS。 iPad 的裝置從版本1.1.15010101 向前正式支援。
@@ -72,7 +69,7 @@ ms.locfileid: "52246413"
 - 已使用[Intune 公司入口網站 app](https://apps.apple.com/us/app/intune-company-portal/id719171358)註冊裝置。
 
 > [!NOTE]
-> **iOS 上的 Microsoft Defender ATP (Microsoft Defender for Endpoint) 現在可用於 [Apple App Store](https://aka.ms/mdatpiosappstore)。**
+> **IOS 上的 Microsoft Defender for Endpoint 可用於 [Apple App Store](https://aka.ms/mdatpiosappstore)。**
 
 ## <a name="installation-instructions"></a>安裝指示
 

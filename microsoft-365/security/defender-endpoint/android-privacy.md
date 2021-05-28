@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: c72e9491303d3f14ddb184e6a302a518643f709d
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939621"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694338"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上適用於端點的 Microsoft Defender - 隱私權資訊
 
@@ -38,6 +38,8 @@ Android 上的 Defender for Android 會從您設定的 Android 裝置收集資�
 
 收集的資訊可協助您保持 Android 的 Defender 安全、更新、如期執行，以及支援服務。
 
+如需 Android 和 iOS 行動裝置上有關 Microsoft Defender for Endpoint 的常見隱私權問題的詳細資訊，請參閱 [Microsoft defender For endpoint 和您在 android 上的隱私權和 iOS 行動裝置](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)。
+
 ## <a name="required-data"></a>必要資料 
 
 必要的資料是由將 Defender 用於 Android 的端點工作如預期的情況所需的資料所組成。 此資料對於服務的運作很重要，而且可以包含與使用者、組織、裝置及應用程式相關的資料。 以下是所收集的資料類型清單：
@@ -47,7 +49,7 @@ Android 上的 Defender for Android 會從您設定的 Android 裝置收集資�
 裝置上 (APKs) 的 **惡意** Android 應用程式套件相關資訊，包括
 
 -  安裝來源
--  APK 的儲存位置 (檔案路徑) 
+-  APK (檔案路徑) 的儲存體位置
 -  安裝時間，APK 和許可權的大小
 
 ### <a name="web-page--network-information"></a>網頁/網路資訊
@@ -66,9 +68,9 @@ Android 上的 Defender for Android 會從您設定的 Android 裝置收集資�
     - 隨機產生的全域唯一識別碼 (GUID) 
 
 - 租使用者、裝置和使用者資訊
-    -   Azure Active Directory (AD) 裝置識別碼和 Azure 使用者 ID: 在 Azure Active Directory 上分別識別裝置，使用者。
+    -   Azure Active Directory (AD) 裝置識別碼和 Azure 使用者 ID: 分別在 Azure Active Directory 上唯一識別裝置，使用者。
 
-    -   Azure 租使用者識別碼-識別您的組織在 Azure Active Directory 中的 GUID
+    -   Azure 租使用者識別碼-識別您的組織 Azure Active Directory 內的 GUID
 
     -   Microsoft Defender for Endpoint org ID-與裝置所屬之企業相關聯的唯一識別碼。 可讓 Microsoft 識別問題是否會影響一組選擇的企業，以及受影響的企業數目 
 
