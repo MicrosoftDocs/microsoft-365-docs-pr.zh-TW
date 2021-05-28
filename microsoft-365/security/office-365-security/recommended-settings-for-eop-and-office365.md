@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) 和 Defender Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用 Office 365 的 Defender，您也會取得什麼額外內容？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: b6661c31d0cc05a1bdfd51de986af1e7b22c9d70
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683268"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696523"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender Office 365 security 的建議設定
 
@@ -44,7 +44,7 @@ ms.locfileid: "52683268"
 > [!NOTE]
 > 信箱必須啟用垃圾郵件規則，篩選才能正確運作。 它預設為啟用，但是如果篩選似乎不在運作中，您應該加以檢查。 如需詳細資訊，請參閱[在 Office 365中設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-本文說明預設設定，也是建議的標準和嚴格設定，以協助保護您的使用者。
+本文說明預設設定，也是建議的標準和嚴格設定，以協助保護您的使用者。 這些表格包含 Microsoft 365 security center 中的設定，以及 PowerShell (Exchange Online PowerShell 或獨立 Exchange Online Protection，但沒有 PowerShell 信箱的組織 Exchange Online。
 
 > [!TIP]
 > Office 365 的高級威脅防護建議的設定分析器 (ORCA) 模組 PowerShell 可協助您 (系統管理員) 找到這些設定的目前值。 具體說來， **ORCAReport** Cmdlet 會產生反垃圾郵件、反網路釣魚和其他郵件衛生設定的評估。 您可以在中下載 ORCA 模組 <https://www.powershellgallery.com/packages/ORCA/> 。
@@ -65,26 +65,26 @@ ms.locfileid: "52683268"
 |---|:---:|:---:|:---:|---|
 |**垃圾郵件** 偵測動作 <p> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
 |**高信賴的垃圾郵件** 偵測動作 <p> _HighConfidenceSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
-|**網路釣魚電子郵件** 偵測動作 <p> _PhishSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
-|**高信賴網路釣魚電子郵件** 偵測動作 <p> _HighConfidencePhishAction_|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
-|**大量電子郵件** 偵測動作 <p> _BulkSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
-|大量電子郵件閾值 <p> _BulkThreshold_|7 |6 |4 |如需詳細資訊，請參閱[Office 365 中的大量投訴層級 (BCL) ](bulk-complaint-level-values.md)。|
-|隔離保留期間 <p> _QuarantineRetentionPeriod_|15 天|30 天|30 天||
-|**安全提示** <p> _InlineSafetyTipsEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**網路釣魚** 偵測動作 <p> _PhishSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**高信賴網路釣魚** 偵測動作 <p> _HighConfidencePhishAction_|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**大量** 偵測動作 <p> _BulkSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**大量電子郵件閾值** <p> _BulkThreshold_|7 |6 |4 |如需詳細資訊，請參閱[Office 365 中的大量投訴層級 (BCL) ](bulk-complaint-level-values.md)。|
+|_MarkAsSpamBulkMail_|開啟|開啟|開啟|此設定僅適用于 PowerShell。|
+|**保留這數天內的垃圾郵件** <p> _QuarantineRetentionPeriod_|15 天|30 天|30 天||
+|**啟用垃圾郵件安全提示** <p> _InlineSafetyTipsEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |允許的寄件者 <p> _AllowedSenders_|無|無|無||
-|允許的寄件者網域 <p> _AllowedSenderDomains_|無|無|無|將網域新增至允許的寄件者清單是一種非常壞的主意。 攻擊者可以傳送您本來會加以篩選的電子郵件。 <p> 使用安全性 & 規範中心內的「 [欺騙性智慧洞察力](learn-about-spoof-intelligence.md) 」和「 [租使用者支援/封鎖」清單](tenant-allow-block-list.md) ，以查看組織的電子郵件網域中的所有收件者電子郵件地址，或外部網域中的欺騙寄件者電子郵件地址。|
+|允許的寄件者網域 <p> _AllowedSenderDomains_|無|無|無|將網域新增至允許的寄件者清單是一種非常壞的主意。 攻擊者可以傳送您本來會加以篩選的電子郵件。 <p> 使用 [ [偽造智慧真知灼見](learn-about-spoof-intelligence.md) ] 和 [ [承租人允許/封鎖] 清單](tenant-allow-block-list.md) ，以查看組織的電子郵件網域中的所有收件者電子郵件地址或外部網域中的欺騙寄件者電子郵件地址中的所有寄件者。|
 |封鎖的寄件者 <p> _BlockedSenders_|無|無|無||
 |封鎖的寄件者網域 <p> _BlockedSenderDomains_|無|無|無||
 |**啟用使用者垃圾郵件通知** <p> _EnableEndUserSpamNotifications_|已停用 <p> `$false`|已啟用 <p> `$true`|已啟用 <p> `$true`||
 |**每 (天傳送一次使用者垃圾郵件通知)** <p> _EndUserSpamNotificationFrequency_|3天|3天|3天||
-|**垃圾郵件 ZAP** <p> _SpamZapEnabled_|已啟用 <p> `$true`|已啟用 <p> `$true`|已啟用 <p> `$true`||
-|**網路釣魚 ZAP** <p> _PhishZapEnabled_|已啟用 <p> `$true`|已啟用 <p> `$true`|已啟用 <p> `$true`||
-|_MarkAsSpamBulkMail_|開啟|開啟|開啟|此設定僅適用于 PowerShell。|
+|為網路釣魚郵件啟用零小時自動清除 (ZAP)  <p> _PhishZapEnabled_|已啟用 <p> `$true`|已啟用 <p> `$true`|已啟用 <p> `$true`||
+|啟用用於垃圾郵件的 ZAP <p> _SpamZapEnabled_|已啟用 <p> `$true`|已啟用 <p> `$true`|已啟用 <p> `$true`||
 |
 
-有些其他的高級垃圾郵件篩選 (反垃圾郵件原則中的 ASF) 設定，但不是已被取代。 有關這些功能之折舊時程表的詳細資訊，將在本文之外進行傳遞。
+在反垃圾郵件原則中，有許多高級垃圾郵件篩選 (ASF) 設定不會被取代。 有關這些功能之折舊時程表的詳細資訊，將在本文之外進行傳遞。
 
-建議您為 **標準** 和 **嚴格** 的層次 **，關閉這些** ASF 設定。 如需 ASF 設定的詳細資訊，請參閱[Office 365 中的高級垃圾郵件篩選 (ASF) 設定](advanced-spam-filtering-asf-options.md)。
+建議 **您為****標準** 和 **嚴格** 的層級保留下列 ASF 設定。 如需 ASF 設定的詳細資訊，請參閱[Office 365 中的高級垃圾郵件篩選 (ASF) 設定](advanced-spam-filtering-asf-options.md)。
 
 <br>
 

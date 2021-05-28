@@ -4,7 +4,7 @@ description: 瞭解如何在組織中使用和執行 SharePoint Syntex，以協�
 ms.author: samanro
 author: samanro
 manager: pamgreen
-ms.date: 7/20/2020
+ms.date: ''
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -14,31 +14,31 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: e88a7de1c81995b878dbf8a9308fbc774583289e
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 9a73f14662deb0fc68ac6c2a8552d988efc1d351
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597055"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696463"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex 採用：快速入門
 
 請將 SharePoint Syntex 中可用的智慧內容服務看作有三個部分：
 
-- **內容瞭解：** 建立無程式碼 AI 模型，以分類及提取內容中的資訊，以自動套用中繼資料以進行知識探索和重複使用。 深入瞭解 [內容瞭解](document-understanding-overview.md)。
-- **內容處理：** 自動化內容的捕獲、攝取和分類，並使用 Power 自動化簡化以內容為中心的流程。 深入瞭解 [內容處理](form-processing-overview.md)。
+- **內容瞭解：** 建立無程式碼的 AI 模型，以分類及提取內容中的資訊，以自動套用中繼資料以進行知識探索和重複使用。 深入瞭解 [內容瞭解](document-understanding-overview.md)。
+- **內容處理：** 自動化內容的捕獲、攝取和分類，並使用 Power Automate 簡化以內容為中心的流程。 深入瞭解 [內容處理](form-processing-overview.md)。
 - **內容規範：** 控制和管理內容，以改進安全性和管理與 Microsoft 資訊保護的整合。
 
 透過全新的 AI 服務和功能，您可以使用 SharePoint Syntex，將內容瞭解和分類應用程式直接組建至內容管理流程。 有兩種不同的方式可以瞭解您的內容。 您使用的模型類型是以檔案格式和使用案例為基礎：
 
-| 表單處理 | 檔瞭解 |
+| 表單處理 | 文件瞭解 |
 |:-------|:-------|
 | 從文件庫建立。 | 在內容中心建立，SharePoint Syntex 的一部分。 |
 | 在 [AI 產生器] 中建立的模型。 | 在原生介面中建立的模型。 |
 | 用於半結構化檔案格式。 | 用於非結構化檔案格式。 |
 | 可設定的分類器。 | Trainable 具有選用擷取器的分類器。 |
-| 限制于單一文件庫。 | 可套用至多個文件庫。 |
-| 在 PDF，JPG，PNG 格式，總 50 MB/500 pp 進行訓練。 | 在 5-10 PDF、Office 或電子郵件檔上訓練，包含負的範例。 |
+| 限制于單一文件庫。 | 可以適用於多個文件庫。 |
+| 在 PDF，JPG，PNG 格式，總 50 MB/500 pp 進行訓練。 | 訓練 5 到 10 個 PDF、Office 或電子郵件檔案，包括負面範例。 |
 
 如需更完整的功能比較，請參閱 [檔瞭解和表單處理模型之間的差異](difference-between-document-understanding-and-form-processing-model.md)。
 
@@ -64,116 +64,13 @@ ms.locfileid: "50597055"
 
 根據影響和簡化的執行排定案例的優先順序。 讓您的初始焦點區域可輕鬆實施，也是較高的影響案例。 取消的優先順序較低的影響案例很難實施。
 
-使用下列範例案例，提示您如何在組織中使用 SharePoint Syntex。
-
-### <a name="scenario-track-data-from-invoices-with-form-processing"></a>案例：使用表單處理從發票追蹤資料
-
-例如，您可以使用 SharePoint Syntex 和電源自動化功能來設定處理常式，以追蹤和監控發票。
-
-1. 設定儲存發票檔的文件庫。
-1. 訓練模型，以辨識檔中的欄位。
-1. 將您要追蹤的欄位解壓縮到清單中。
-1. 設定流程以通知您特定的事件，例如：
-    - 新增新的發票。
-    - 發票超過其到期日。
-    - 發票的數量大於您的自動核准金額。
-
-![使用 SharePoint Syntex 和電源自動化來追蹤和監控發票](../media/content-understanding/process-invoices-flow.png)
-
-當您自動化此案例時，您可以：
-
-- 從發票自動提取資料，而不是手動提取資料，以節省時間和金錢。
-- 使用工作流程檢查發票，並在發生問題時通知您，以減少潛在的錯誤並確保更好的相容性。
-
-### <a name="scenario-track-information-from-contracts-with-document-understanding"></a>案例：使用檔瞭解追蹤合同中的資訊
-
-在另一個範例中，您可以設定處理常式，識別您的公司與其他公司或個人的合約。 設定模型，以從這些合約提取重要資訊，例如用戶端名稱、費用、日期或其他重要資訊，並將資訊新增至文件庫中，您可以快速查看這些欄位。 請將保留標籤套用到文件庫，以確保在適當的時間長度之前，不能刪除合約，以符合您的商務法規。
-
-1. 從內容中心開始，並建立新的檔瞭解合約模型。
-1. 上傳範例檔，以取得正值和消極的範例，然後執行訓練以識別合同檔，並檢查結果。
-1. 訓練解壓縮程式以識別合同中的欄位，例如用戶端名稱、費用和日期，然後測試解壓縮程式。
-1. 模型完成時，將模型套用至您可以上傳合同的文件庫。
-1. 將保留標籤套用至日期欄位，讓合同保留在文件庫中所需的時間長度。
-
-![使用 SharePoint Syntex 和保留標籤來追蹤和監控合約](../media/content-understanding/process-contracts-flow.png)
-
-當您自動化此案例時，您可以：
-
-- 自動從合約提取資料，而不是手動提取資料，以節省時間和金錢。
-- 使用保留標籤確保合約已正確保留，以確保更好地相容。
-
-### <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>案例：根據 SharePoint Syntex，避免記錄管理、檔管理及規範程式的風險
-
-降低風險是大多數公司的共同目標。 您可能需要：
-
-- 在您的租使用者中提供/強制執行資訊管理的更好方法。
-- 若要改善檔的分類、電子郵件及其他形式的通訊視為專案的「記錄」的系統。
-- 若要審核收據、合約等等，以確保符合公司原則。
-- 確定專案具備法規遵從性所需的所有檔。
-
-設定一些與 SharePoint Syntex 相容的處理常式，以取得及適當分類、審核和旗標需要更好的控管的檔和表單。 您可以依靠 SharePoint Syntex，自動將內容分類，而不需依賴使用者手動標記，或是合規性小組手動套用控管規則和封存。 而且，您可以啟用簡化的搜尋體驗、管理資料量、套用記錄管理和保留原則，以確保法規遵從性，以及最佳作法封存及清除作法。
-
-當您自動化此案例時，您可以放心進行下列安全：
-
-- 法規遵從性是 upheld 和降低風險。
-- 分類和記錄管理的一致性及正確套用。
-- 控制內容量。
-- 員工可以輕鬆地在正確的內容中探索正確的資訊。
-
-### <a name="scenario-capture-information-from-previously-inaccessible-documents"></a>案例：從先前無法存取的檔捕獲資訊
-
-大多數的組織都有大量的法律檔、原則、合約、HR 檔和控管指導方針。 請挖掘這些資料存放區，以解壓重要資訊，例如：專案、磁區、主題、人員、地理區域等等。
-
-例如，HR director 必須快速存取所有人力資源檔，包括簡歷、HR 原則及其他表單。 他們想要從簡歷和其他 HR 相關檔快速識別必要的資訊，而不需透過檔手動 sifting。 他們在尋找一種解決方案，可讓他們快速找出所需的資訊，而不必手動搜尋數千個簡歷、HR 原則，以及可能分散于多個網站的其他檔。
-
-當您自動化此案例時，您可以：
-
-- 從數位內容解除鎖定知識。
-- 分類人力資源原則、簡歷、銷售檔、技術藍圖、帳戶計畫及提取資訊。
-- 快速尋找您要尋找的正確資訊或檔。
-- 立即獲得最新資訊的存取權。
-- 縮短搜尋時間。
-
-### <a name="scenario-improve-data-processing-to-provide-insights--analytics"></a>案例：改善資料處理以提供真知灼見 & analytics
-
-例如，製藥公司可以使用 SharePoint Syntex，從 FDA 檔析取資訊，以回答他們的領導人所提出的問題。 讓答案變得更容易存取，可縮短產生這些回答所需的時間，並提高資料的可用性以產生更準確的領導問題答案。
-
-例如，專案經理必須從我的領導小組快速為產品相關問題提供答案。 他們必須尋找與一個合併儀表板中的查詢相關的資訊和度量。 他們要尋找的解決方案會從產品標籤、產品 pamphlets 及其他材料提取所需的資訊，並產生整合報告，以供報告回其領導團隊時使用。
-
-當您自動化此案例時，您可以：
-
-- 縮短產生回應的時間。
-- 提高資料的可用性。
-- 提供更準確的答案。
-
-### <a name="scenario-automate-order-processing"></a>案例：自動化訂單處理
-
-使用 SharePoint Syntex，您可以縮短手動處理客戶訂單的時間。 例如，您可以使用 OCR 處理將訂單從傳真、電子郵件或紙張上傳至 SharePoint，然後從這些訂單中解壓縮中繼資料，以便您可以使用自動化程式來完成這些訂單。
-
-例如，供應鏈管理員想要減少手動資料輸入所造成的錯誤。 他們想要避免以手動形式查看輸入客戶訂單的資料， (紙張、傳真或電子郵件) ，以降低業務系統的錯誤。 他們需要套用 AI 和機器學習技巧的解決方案，以驗證內送訂單資訊、提取核心資料，並自動將其推入 ERP 系統，以進行訂單履行和調解。
-
-當您自動化此案例時，您可以確定：
-
-- 訂單和運送的精確度增加。
-- 減少與訂單或運送錯誤相關的費用或處罰。
-- 縮短開票或付款的延遲。
-- 減少人員成本。
-
-### <a name="scenario-simplify-visa-renewal-process"></a>案例：簡化簽證更新程式
-
-SharePoint Syntex 可協助您自動化重要合約資訊的提醒和續訂。 例如，HR 主管需要確定員工的簽證是最新的，且/或已在時間上更新。 他們想為人們提供簡單且直觀的處理常式來更新其簽證。 他們需要可從合約提取更新日期的解決方案，並在其更新日期接近時自動傳送員工提醒。
-
-當您自動化此案例時，您可以確定：
-
-- 減少非法規遵從性的層級。
-- 已縮短手動提醒數目。
-- 降低未達標的罰款數目。
+使用[範例案例和使用案例](adoption-scenarios.md)，提示您如何在組織中使用 SharePoint Syntex。
 
 ## <a name="identify-roles--responsibilities"></a>識別角色 & 責任
 
 決定貴組織中誰將建立及管理模型？ 可能包含下列角色：
 
-| SharePoint/知識系統管理員 | 電源平臺管理員 | 知識管理員 | 模型擁有者 |
+| SharePoint/Knowledge 系統管理員 | 電源平臺管理員 | 知識管理員 | 模型擁有者 |
 |:-------|:-------|:-------|:-------|
 | AAD 角色| AAD 角色 | AAD 角色 | 風雲人物 |
 | 設定表單處理 | 設定一般資料服務環境進行表單處理 | 收集使用案例 | 收集商務使用案例 |
@@ -202,16 +99,16 @@ SharePoint Syntex 可協助您自動化重要合約資訊的提醒和續訂。 �
 
 ## <a name="identify-stakeholders"></a>識別專案關係人
 
-識別專案的利益關係人。
+識別您專案的專案關係人。
 
 |角色 |責任 |部門 |
 |:-------|:-------|:--------|
-| 執行贊助者 (s)    | 向公司傳達高層遠景和價值   |  執行領導   |
-| 專案負責人 (s)  | 監督整個啟動執行和部署程式 | 專案管理 |
-| 知識管理員| 建立及管理內容中心 | IT 或其他部門|
+| 執行贊助者 (s)    | 向公司傳達高階願景和價值   |  執行領導   |
+| Project 潛在客戶 (s)  | 監督整個啟動的執行和推出程序 | 專案管理 |
+| 知識系統管理員| 建立及管理內容中心 | IT 或其他部門|
 | 內容管理員和模型擁有人| 收集使用案例及建立及套用模型 | 任何部門|
-| 風雲人物 | 協助 evangelize 及管理異議處理 | 任何部門 (人員)  |
-| 承租人管理員 | 設定租使用者層級設定 | IT 部門|
+| 風雲人物 | 協助宣傳及管理異議處理 | 任何部門 (員工) |
+| 租用戶系統管理員 | 設定租用戶層級設定 | IT 部門|
 | Power Platform 系統管理員| 設定一般資料服務環境 | IT 部門|
 
 > [!Note]
@@ -246,3 +143,7 @@ SharePoint Syntex 可協助您自動化重要合約資訊的提醒和續訂。 �
 1. 分階段進行。  
 1. 收集意見反應並進行迴圈。
 1. 根據需要，隨著流量成長對任何 AI 產生器的使用。
+
+## <a name="see-also"></a>另請參閱
+
+[SharePoint Syntex 中的案例和使用案例](adoption-scenarios.md)

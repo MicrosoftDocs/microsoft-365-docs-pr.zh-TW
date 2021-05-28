@@ -20,12 +20,12 @@ description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683328"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696547"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -50,6 +50,8 @@ ms.locfileid: "52683328"
 > [!TIP]
 > 請注意，除了開啟審計的指示 *之外，還會啟動反* 惡意程式碼、反網路釣魚和反垃圾郵件，並標示為 Office 365 Exchange Online Protection (**EOP**) 的一部分。 這在 Office 365 文章的 defender 中看起來會是奇怪的，直到您記得 (**Defender for Office 365**) 包含]，並建立 EOP。
 
+<br>
+
 ****
 
 |保護類型|訂閱需求|
@@ -67,6 +69,8 @@ ms.locfileid: "52683328"
 
 若要設定 Office 365 原則的 Defender，您必須在[安全性 & 規範中心](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)中獲指派適當的角色。 請參閱下表，以取得可以執行這些動作的角色。
 
+<br>
+
 ****
 
 |角色或角色群組|深入瞭解|
@@ -82,20 +86,22 @@ ms.locfileid: "52683328"
 
 - 儘早開始您的審核記錄。 您必須執行下列其中一個 **步驟的審計** 。 您可以在包含[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)的訂閱中使用審核記錄。 為了在威脅防護報告中查看資料，例如 [安全性儀表板](security-dashboard.md)、 [電子郵件安全性報告](view-email-security-reports.md)和 [Explorer](threat-explorer.md)，必須 *啟用* 審核記錄。 若要深入瞭解，請參閱 [開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-## <a name="part-1---anti-malware-protection"></a>第1部分-反惡意程式碼保護
+## <a name="part-1---anti-malware-protection-in-eop"></a>第1部分-EOP 中的反惡意程式碼保護
 
 如需有關反惡意程式碼建議設定的詳細資訊，請參閱 [EOP 防盜-惡意程式碼原則設定](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)。
 
 1. 開啟 <https://security.microsoft.com/antimalwarev2> 。
 
-2. 按一下原則的名稱，以選取 [預設原則]。
+2. 在 [ **反惡意** 代碼] 頁面上，按一下名稱以選取名為 [ **預設** 原則] 的原則。
 
 3. 在開啟的 [原則詳細資料] 浮出視窗中，按一下 [ **編輯保護設定**]，然後設定下列設定：
    - 選取 **[啟用通用附件篩選** ] 以開啟通用附件篩選器。 按一下 [ **自訂檔案類型** ]，以新增更多檔案類型。
    - 確認已選取 [為 **惡意程式碼啟用自動清除** ]。
    - 確認未選取 [ **通知** ] 區段中的任何設定。
 
-   完成後，請按一下 [儲存]。
+   完成後，按一下 [儲存]。
+
+4. 回到 [原則詳細資料] 浮出視窗上，按一下 [ **關閉**]。
 
 如需設定反惡意程式碼原則的詳細指示，請參閱 [在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
@@ -135,23 +141,23 @@ ms.locfileid: "52683328"
 
 若要深入瞭解您的反網路釣魚原則選項，請參閱[在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
-## <a name="part-3---anti-spam-protection"></a>第3部分-反垃圾郵件保護
+## <a name="part-3---anti-spam-protection-in-eop"></a>第3部分-EOP 中的反垃圾郵件保護
 
-您可以在包含[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)的訂閱中取得[反垃圾郵件保護](anti-spam-protection.md)。
+如需有關反垃圾郵件建議設定的詳細資訊，請參閱 [EOP 反垃圾郵件原則設定](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
 
-1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則**] \> **反垃圾郵件**。
+1. 開啟 <https://security.microsoft.com/antispam> 。
 
-2. 在 [ **自訂** ] 索引標籤上，開啟 [自訂設定]。
+2. 在 [ **反垃圾郵件原則** ] 頁面上，按一下 [名稱]，從清單中選取名為 [ **反垃圾郵件輸入原則** ] 的原則。
 
-3. 展開 [ **預設垃圾郵件篩選原則**]，按一下 [ **編輯原則**]，然後指定下列設定：
+3. 在出現的 [原則詳細資料] 浮出區中，按一下 [以 **大量電子郵件閥值 & 垃圾郵件屬性**] 區段中的 [**編輯垃圾郵件閥值**
 
-   - 在 [ **垃圾郵件及大量動作** ] 區段中，將臨界值設為5或6。
+4. 在出現的 [ **垃圾郵件閾值和屬性** ] 浮出視窗中，將 [ **大量電子郵件閾值** ] 設定為 5 (Strict) 或 6 (Standard) 。 完成後，請按一下 [儲存]。
 
-   - 在 [ **允許清單** ] 區段中，複查 (和/或編輯) 允許的寄件者和網域。
+5. 回到 [原則詳細資料] 飛入位置，移至 [ **允許和封鎖的寄件者和網域** ] 區段，然後查看或編輯允許的寄件者及允許的網域。
 
-4. 按一下 **[儲存]**。
+6. 完成時，請按一下 [關閉]。
 
-若要深入瞭解您的反垃圾郵件原則選項，請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+如需設定反垃圾郵件原則的詳細指示，請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>第4部分-防範惡意 URLs 和檔案 (安全連結和檔案中的安全附件 Office 365) 
 
