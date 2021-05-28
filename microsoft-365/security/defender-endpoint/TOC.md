@@ -122,7 +122,7 @@
 ###### [設定 iOS 功能](ios-configure-features.md)
 
 ##### [疑難排解]()
-###### [針對問題進行疑難排解](ios-troubleshoot.md)
+###### [常見問題集與疑難排解問題](ios-troubleshoot.md)
 
 ##### [隱私權](ios-privacy.md)
  
@@ -134,7 +134,8 @@
 ###### [手動部署](linux-install-manually.md)
 ###### [Puppet 式部署](linux-install-with-puppet.md)
 ###### [Ansible 式部署](linux-install-with-ansible.md)
- 
+###### [使用 Chef 在 Linux 上部署適用於端點的 Microsoft Defender](linux-deploy-defender-for-endpoint-with-chef.md)
+
 ##### [更新](linux-updates.md)
  
 ##### [設定]()
@@ -144,7 +145,7 @@
 ###### [偵測並封鎖潛在的垃圾應用程式](linux-pua.md)
 ###### [在 Linux 上使用適用於端點的 Microsoft Defender 排程掃描](linux-schedule-scan-atp.md)
 ###### [為於端點的 Microsoft Defender 排程更新 (Linux)](linux-update-MDE-Linux.md)
-###### [使用 Chef 在 Linux 上部署適用於端點的 Defender](linux-deploy-defender-for-endpoint-with-chef.md)
+
  
 ##### [疑難排解]()
 ###### [安裝問題的疑難排解](linux-support-install.md)
@@ -480,6 +481,12 @@
 ####### [取得警示相關 IP 資訊](get-alert-related-ip-info.md)
 ####### [取得警示相關的裝置資訊](get-alert-related-machine-info.md)
 ####### [取得警示相關使用者資訊](get-alert-related-user-info.md)
+
+###### [弱點和安全設定的評估]()
+####### [匯出評估方法和屬性](get-assessmnt-1methods-properties.md)
+####### [匯出安全設定評估](get-assessmnt-secure-cfg.md)
+####### [匯出軟體清查評估](get-assessmnt-software-inventory.md)
+####### [匯出軟體弱點評估](get-assessmnt-software-vulnerabilities.md)
 
 ###### [自動化調查]()
 ####### [調查方法和屬性](investigation.md)
