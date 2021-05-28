@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531039"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694398"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -138,7 +138,7 @@ ms.locfileid: "52531039"
 
 若要顯示在選取項目下拉式清單中，您必須在 Azure Active Directory 條件式存取設定中建立、設定和發佈驗證內容。 有關詳細資訊和指示，請參閱 Azure AD 條件式存取文件中的[設定驗證內容](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts)一節。
 
-並非所有應用程式都支援驗證內容。 如果應用程式不受支援的使用者連線到針對驗證內容所設定的網站，他們會看到拒絕存取的訊息，或提示他們進行驗證但遭到拒絕。 目前支援驗證內容的應用程式：
+並非所有應用程式都支援驗證內容。如果應用程式不受支援的使用者連線到針對驗證內容所設定的網站，他們會看到拒絕存取的訊息，或提示他們進行驗證但遭到拒絕。目前支援驗證內容的應用程式：
 
 - Office 網頁版，其中包含 Outlook 網頁版
 
@@ -163,6 +163,20 @@ ms.locfileid: "52531039"
     - Android：尚未支援
 
 此預覽的已知問題：
+
+- 這項功能仍在向部分租用戶推出。 如果使用者存取網站時，具有所選驗證內容的條件式存取原則未生效，您可以使用 PowerShell 確認您的設定正確且符合所有先決條件。 您必須從網站移除敏感度標籤，然後從目前的 [SharePoint Online 管理命令殼層](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) Cmdlet，以設定驗證內容的網站。 如果這個方法可行，請先等待幾天，再嘗試重新套用敏感度標籤。
+    
+    若要使用 PowerShell 測試驗證內容：
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
+    ```
+    
+    若要移除驗證內容，以便再次嘗試套用敏感度標籤：
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
+    ```
 
 - 針對 OneDrive 同步處理應用程式，僅支援 OneDrive，不支援其他網站。
 
