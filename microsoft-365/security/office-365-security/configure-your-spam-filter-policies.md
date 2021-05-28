@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1241e6ebb838938f82fce5dc08ea93a3038f4ace
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: fb4ba4f48d6f336444861b4407461efd4c8862d0
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624230"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694506"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -181,7 +181,7 @@ ms.locfileid: "52624230"
 
       您新增的寄件者會出現在飛出視窗的 [允許的寄件者] 區段中。 若要刪除寄件者，按一下 ![移除圖示](../../media/scc-remove-icon.png)。
 
-      完成後，按一下 **[儲存]**。
+      完成後，按一下 [儲存]。
 
    - **允許網域**：按一下 [編輯]。 在隨即出現的 [允許的網域清單] 飛出視窗中，執行下列步驟：
 
@@ -214,7 +214,7 @@ ms.locfileid: "52624230"
 
    - **封鎖網域**：按一下 [編輯]。 在隨即出現的 [封鎖的網域清單] 飛出視窗中：
 
-      a. 輸入網域。 您可以指定多個網域並以分號 (;) 隔開的。 不可使用萬用字元 (*)。
+      a.輸入網域。您可以指定多個以分號分隔的網域 (;)。不可使用萬用字元 (*)。
 
       b. 按一下 ![新增圖示](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 以新增網域。
 
