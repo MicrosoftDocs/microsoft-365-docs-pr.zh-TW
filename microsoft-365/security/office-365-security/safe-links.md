@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護，以保護其組織免受網路釣魚和其他使用惡意 URLs 攻擊的攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 675de13410ac98e18a8b72125c2226d2c9c62821
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593566"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698985"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的安全連結
 
@@ -74,7 +74,7 @@ ms.locfileid: "52593566"
   - [Microsoft Teams 的安全連結設定](#safe-links-settings-for-microsoft-teams)
   - [安全連結原則中的「不要重新寫入下列 URLs」清單](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **全域安全連結設定**：這些設定會全域設定，而不是在安全連結原則中。 不過，這些設定僅適用于包含在使用中安全連結原則中的使用者。 這些設定包含：
+- **全域安全連結設定**：這些設定會全域設定，而不是在安全連結原則中。 這些設定包含：
 
   - [Office 365 應用程式的安全連結設定](#safe-links-settings-for-office-365-apps)
   - [安全連結的「封鎖下列 URLs」清單](#block-the-following-urls-list-for-safe-links)
