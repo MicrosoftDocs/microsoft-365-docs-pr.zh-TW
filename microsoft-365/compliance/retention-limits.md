@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 瞭解針對保留原則及保留標籤原則，每個原則的原則和專案數量上限。
-ms.openlocfilehash: 007ca6eec50b243e1b820938ffa67553d7882c7b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107655"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698961"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留原則和保留標籤原則的限制
 
@@ -33,13 +33,15 @@ ms.locfileid: "52107655"
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>每個租用戶的原則數量上限
 
-單一租用戶最多可以有10,000個原則 (任何設定)。 這個最大值包括保留的不同原則和其他合規性原則，例如 DLP 原則。
+單一租用戶最多可以有10,000個原則 (任何設定)。 這個最大值包括保留的不同原則和其他合規性原則，例如 DLP 原則、資訊屏障、eDiscovery 保留和敏感度標籤。
 
-每個工作負載的保留原則數量上限：
+在此 10，000 個原則限制內，每個工作負載的保留原則數量上限也有一些限制：
 
 - Exchange Online (任何設定)：1,800
 - SharePoint 或 OneDrive：(自動包含所有網站)：13
 - SharePoint 或 OneDrive (包含或排除的特定位置)：2,600
+
+雖然 Microsoft Teams 和 Yammer 的保留原則會使用信箱來儲存資料以用於保留目的，但 Exchange Online 的保留原則數目上限會排除 Teams 和 Yammer 的保留原則。
 
 ## <a name="maximum-number-of-items-per-policy"></a>每個原則的專案數量上限
 

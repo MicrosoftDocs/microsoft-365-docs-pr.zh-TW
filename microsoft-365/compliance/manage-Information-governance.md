@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: 實施 Microsoft 資訊控管功能以控管您的資料，以符合合規性或法規需求。
-ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a62b1a20aa07c8b5d147fd24e3867c4d4c50174e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244561"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683532"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 資訊控管功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "52244561"
 
 想要保護您的資料？ 請參閱 [Microsoft 365 中的 Microsoft 資訊保護。](information-protection.md)
 
-為了協助您遵守資料隱私權法規，我們設計工作流程來引導您完成端對端流程，以規劃及實施整個 Microsoft 365 的功能，包括安全存取、威脅防護、資訊保護和資料控管。 如需詳細資訊，請參閱 [以 Microsoft 365 針對資料隱私權法規部署資訊保護](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。 
+為了協助您遵守資料隱私權法規，我們設計一個工作流程來引導您完成端對端流程，以規劃及實作 Microsoft 365 的各項功能，包括安全存取、威脅防護、資訊防護和資料控管。如需詳細資訊，請參閱[使用 Microsoft 365 部署資料隱私權法規的資訊保護](../solutions/information-protection-deploy.md) (部分機器翻譯) (aka.ms/m365dataprivacy) 
 
 ## <a name="information-governance"></a>資訊控管
 
@@ -52,3 +52,7 @@ ms.locfileid: "52244561"
 |功能|需要解決的問題是什麼？|快速入門|
 |:------|:------------|---------------------|:----------------------------|
 |[記錄管理](records-management.md)| 電子郵件和文件的單一解決方案，整合了保留時間表和需求至檔案計畫，支援包含記錄聲明、保留和處置的內容的整個生命週期。 <br /><br />範例案例：[記錄處置](disposition.md#disposition-of-records)|[開始使用記錄管理](get-started-with-records-management.md) |
+
+## <a name="licensing-requirements"></a>授權需求
+
+Microsoft 資訊控管的授權需求取決於您使用的情況和功能，而不是針對本頁所列的每個功能設定授權需求。 若要了解您的授權需求和選項，請參閱 Microsoft 365 授權文件中的[資訊控管](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance)和[記錄管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)小節，並下載相關的 PDF 或 Excel。
