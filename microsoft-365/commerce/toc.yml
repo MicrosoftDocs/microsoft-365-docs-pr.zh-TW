@@ -20,7 +20,7 @@
       href: subscriptions/renew-your-subscription.md
     - name: 重新啟動您的訂閱
       href: subscriptions/reactivate-your-subscription.md
-    - name: 取消訂閱
+    - name: 取消您的訂閱
       href: subscriptions/cancel-your-subscription.md
     - name: 訂閱到期時該怎麼辦？
       href: subscriptions/what-if-my-subscription-expires.md
@@ -66,6 +66,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: 支付服務指令第二版和加強客戶驗證
       href: billing-and-payments/psd2.md
+    - name: 要求您帳戶上的扣繳稅款點數
+      href: billing-and-payments/withholding-tax-credit-global.md
 - name: 帳單帳戶
   items:
     - name: 了解帳單帳戶
