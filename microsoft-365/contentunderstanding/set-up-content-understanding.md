@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 7589003505aafb480872b14a09c383cfbe0dff40
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994698"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683546"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -31,7 +31,7 @@ ms.locfileid: "51994698"
 
 您可以在 Microsoft 365 系統管理中心初次設定之後變更您的設定。
 
-設定之前，請務必針對您環境中的設定和設定內容理解的最佳方式進行規劃。 例如，您需要做出下列決定：
+設定之前，請務必規劃一個最佳方式，以在您的環境中設定和設定內容瞭解。例如，您必須進行下列決策：
 
 - 您想要啟用表單處理的 SharePoint 網站 - 所有網站、部分或選取的網站
 - 內容中心的名稱和系統管理員
@@ -42,6 +42,8 @@ ms.locfileid: "51994698"
 > 您必須具備全域系統管理員或 SharePoint 系統管理員權限才能存取 Microsoft 365 系統管理中心，並設定 SharePoint Syntex。
 
 如果您是系統管理員，您也可以在設定之後隨時變更所選的設定，以及在 Microsoft 365 系統管理中心中的所有內容瞭解管理設定。
+
+如果您計畫使用自訂的 Power Platform 環境，必須在此環境中 [安裝 *Project Cortex 的 AI Builder* 應用程式](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view)，並在建立表單處理模型之前先[配置 AI Builder 點數](/power-platform/admin/capacity-add-on)。
 
 ### <a name="licensing"></a>授權
 
@@ -67,9 +69,9 @@ ms.locfileid: "51994698"
 
 1. 在 [Microsoft 365 系統管理中心] 中，選取 **[設定]**，然後查看 **[檔案和內容]** 區段。
 
-2. 在 **[檔案和內容]** 區段中，選取 **[自動化內容瞭解]**。<br/>
+2. 在 **[檔案和內容]** 區段中，選取 **[自動化內容瞭解]**。 請注意，您目前可用的 AI Builder 點數會顯示在 **[概覽]** 區段。<br/>
 
-3. 在 **[自動化內容瞭解]** 頁面上，按一下 **[開始使用]** 逐步執行設定流程。<br/>
+3. 在 **[自動化內容瞭解]** 頁面上，按一下 **[開始使用]** 逐步執行設定流程。 <br/>
 
     > [!div class="mx-imgBorder"]
     > ![開始設定](../media/content-understanding/admin-content-understanding-get-started.png)</br>
@@ -93,7 +95,7 @@ ms.locfileid: "51994698"
 
     針對 **Power Platform 環境**，您可以選取：
     - **使用預設環境** 以使用您的預設 Power Platform 環境。
-    - **使用自訂環境** 以使用自訂的環境。 從清單中選擇您要使用的環境。 您必須在此環境中安裝 *Project Cortex 的 AI Builder* 應用程式，並在建立表單處理模型之前先配置 AI Builder 點數。
+    - **使用自訂環境** 以使用自訂的環境。 從清單中選擇您要使用的環境。 ([請參閱自訂環境需求](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements))。
 
     按 [下一步 **]**。
 

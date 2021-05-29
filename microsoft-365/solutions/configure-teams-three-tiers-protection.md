@@ -22,18 +22,18 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: 瞭解如何使用三層保護來設定 Teams 以取得更佳的檔案共用安全性，並以輕鬆的共同作業方式來平衡安全性。
-ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539212"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683400"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>為小組設定三層保護
 
 本系列文章會提供一些建議，讓您了解如何設定 Microsoft Teams 中的小組及其相關聯的 SharePoint 網站，以在兼顧安全性與共同作業順暢性的前提下保護檔案。
 
-本文定義四種不同的設定，首先是公用小組與最開放的共用原則。 每項額外設定均代表有意識的保護升級，但對小組內儲存的檔案進行存取和共同作業的能力，則會減少為僅限相關小組成員。 
+本文定義四個不同的設定，從擁有最多開放式共用原則的公用團隊開始。每項額外設定均代表一個有意義的保護設定，而存取和共同處理儲存在團隊中的檔案的能力，則減少到僅限相關團隊成員。 
 
 本文的設定符合 Microsoft 針對資料、身分識別和裝置的下列三層保護建議：
 
@@ -52,7 +52,7 @@ ms.locfileid: "52539212"
 
 |-|基準線 (公開)|基準線 (私人)|敏感性|高敏感度|
 |:-----|:-----|:-----|:-----|:-----|
-|私人或公用的小組|公開|私人|私人|Private|
+|私人或公用的小組|公開|Private|Private|Private|
 |誰可以存取？|組織中所有人，包括 B2B 使用者。|僅限小組的成員。 其他人可以要求存取相關聯的網站。|僅限小組的成員。|僅限小組的成員。|
 |私人頻道|擁有者和成員可以建立私人頻道|擁有者和成員可以建立私人頻道|只有擁有者可以建立私人頻道|只有擁有者可以建立私人頻道|
 |網站層級的來賓存取|**新的及現有的來賓** (預設值)。|**新的及現有的來賓** (預設值)。|**新的及現有的來賓** 或 **只有貴組織中的人員** (視小組需求而定)。|**新的及現有的來賓** 或 **只有貴組織中的人員** (視小組需求而定)。|
@@ -117,6 +117,14 @@ ms.locfileid: "52539212"
 針對敏感度和高敏感度層，我們會針對有敏感度標籤的 SharePoint 內容限制存取權。 Azure AD 條件式存取提供了許多選項，可供您決定使用者存取 Microsoft 365 的方式，包括根據位置、風險、裝置合規性和其他因素的限制。 建議您閱讀[什麼是條件式存取？](/azure/active-directory/conditional-access/overview)，並考慮可能適合貴組織的其他原則。
 
 請注意，來賓通常沒有由貴組織管理的裝置。如果您允許任何層級中的來賓，請考慮他們將用來存取小組和網站的裝置，並據以設定未受管理裝置原則。
+
+### <a name="control-device-access-across-microsoft-365"></a>控制整個 Microsoft 365 的裝置存取
+
+敏感度標籤中的未管理裝置設定只會影響 SharePoint 存取。 如果您想要將未管理裝置控制範圍擴大至 SharePoint 以外，您可以改為[為組織的所有應用程式和服務建立 Azure Active Directory 條件式存取](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) (部分機器翻譯)。 若要特別針對 [Microsoft 365 服務](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365)設定此原則，請在 **[雲端應用程式或動作]** 下選取 **[Office 365]** 雲端應用程式。
+
+![Azure Active Directory 條件式存取原則中，Office 365 雲端應用程式的螢幕擷取畫面](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+
+使用會影響所有 Microsoft 365 服務的原則，可為使用者提供更好的安全性和更好的體驗。 例如，當您封鎖僅 SharePoint 中未受管理裝置的存取權時，使用者仍可以使用未受管理裝置存取團隊中的聊天，但當他們嘗試存取 **[檔案]** 索引標籤時，將會失去存取權。使用 Office 365 雲端應用程式可協助避免[服務相依性](/azure/active-directory/conditional-access/service-dependencies)。
 
 ## <a name="next-step"></a>後續步驟
 

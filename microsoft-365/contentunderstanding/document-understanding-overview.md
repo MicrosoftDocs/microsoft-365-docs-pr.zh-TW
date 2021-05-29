@@ -1,8 +1,9 @@
 ---
 title: 文件瞭解概觀
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 取得 Microsoft SharePoint Syntex 中文件瞭解的概覽。
-ms.openlocfilehash: 73e217e458fb9e1ccad8b64ffc81a6c9522a04f4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7e5818a929fa0f4554a7ee4ece460b4fe0d691aa
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222752"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683820"
 ---
 # <a name="document-understanding-overview"></a>文件瞭解概觀
 
@@ -48,16 +49,40 @@ ms.locfileid: "51222752"
 
 發佈模型之後，請使用內容中心將它套用到您有權存取的任何 SharePoint 文件庫。  
 
-### <a name="file-limitations"></a>檔案限制
+## <a name="file-limitations"></a>檔案限制
 
 文件瞭解模型：使用光學字元辨識 (OCR) 技術，在您使用範例檔案訓練模型時以及當您針對文件庫中的檔案執行模型時，掃描 PDF、影像和 TIFF 檔案。
 
 請注意有關於 Microsoft Office 文字型檔案與 OCR 掃描檔案 (PDF、影像或 TIFF) 的下列差異：
 
-- Office 檔案：我們會在 64K 字元截斷 (在訓練中以及針對文件庫中的檔案執行時)。
+- Office 檔案：在 64,000 個字元處截斷 (在訓練中以及針對文件庫中的檔案執行時)。
+
 - OCR 掃描檔案：頁面上限為 20 頁。  
 
-#### <a name="supported-file-types"></a>支援的檔案類型
+### <a name="requirements"></a>需求
+
+OCR 處理最適合處理符合下列需求的文件：
+
+- JPG、PNG 或 PDF 格式 (文字或掃描文件)。 文字內嵌 PDF 效果更好，因為字元解壓縮和位置不會有任何錯誤。
+
+- 如果您的 PDF 使用密碼鎖定，您必須先移除鎖定再提交。
+
+- 每個集合中，用於訓練的文件總檔案大小不得超過 50 MB，PDF 文件不應超過 500 頁。
+
+- 若是影像，尺寸必須介於 50 × 50 到 10,000 × 10,000 像素之間。
+   > [!NOTE]
+   > 在 OCR 處理中，非常寬或具有奇數尺寸 (例如樓層規劃) 的影像可能會被截斷，並失去正確性。
+ 
+- 若是 PDF 檔案，尺寸最多必須為 17 x 17 吋，與 Legal 或 A3 紙張大小對應且較小。
+
+- 如果從紙本文件掃描，應為高品質影像的掃描。
+
+- 必須使用拉丁字母 (英文字元)。
+
+> [!NOTE]
+> AI Builder 目前不支援下列表單處理輸入資料類型：<br>- 核取方塊或選項按鈕<br>- 簽章<br>- 可填寫的 PDF
+
+### <a name="supported-file-types"></a>支援的檔案類型
 
 文件瞭解模型支援下列檔案類型：
 

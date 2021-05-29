@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: 實施 Microsoft 資訊保護 (MIP) 可協助您保護敏感性資訊，無論這些資料儲存在某處在或傳輸中。
-ms.openlocfilehash: a68f8dee00117af1fa4d7be5f459ed5c850a5100
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 2de9b1e4a3901477df883287a1ee350885de5513
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332747"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683688"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>請參閱 Microsoft 365 中的 Microsoft 資訊保護。
 
@@ -41,9 +41,6 @@ MIP 功能隨附於 Microsoft 365 合規性中，並提供工具以 [了解您�
 
 > [!NOTE]
 > 如需在 Azure Purview 中分類資料和為資料加上標籤 (目前處於預覽) 的相關資訊，請參閱[在 Azure Purview 中自動為您的內容加上標籤](/azure/purview/create-sensitivity-label)。
-> 
-> 如需 Azure Purview 的發行公告，請參閱下列部落格文章：[Microsoft 資訊保護和 Microsoft Azure Purview：Better Together](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481) 和 [Azure Purview at Spring Ignite 2021](https://techcommunity.microsoft.com/t5/azure-purview/azure-purview-at-spring-ignite-2021/ba-p/2175919)。
-
 
 若要深入了解您的資料環境，並識別混合式環境中的重要資料，請使用下列功能：
  
@@ -83,3 +80,7 @@ MIP 功能隨附於 Microsoft 365 合規性中，並提供工具以 [了解您�
 |[Microsoft 合規性延伸模組 (預覽)](dlp-chrome-learn-about.md) | 將 DLP 功能延伸至 Chrome 瀏覽器 | [開始使用 Microsoft 合規性擴充功能 (預覽)](dlp-chrome-get-started.md)|
 |[Microsoft 365 資料外洩防護內部部署掃描器 (預覽)](dlp-on-premises-scanner-learn.md)|將檔案活動的 DLP 監視以及這些檔案的保護動作延伸到內部部署檔案共用、SharePoint 資料夾和文件庫。|[開始使用 Microsoft 365 資料外洩防護內部部署掃描器 (預覽)](dlp-on-premises-scanner-get-started.md)|
 |[保護 Microsoft Teams 中聊天和頻道訊息中的敏感性資訊](dlp-microsoft-teams.md) | 將部分 DLP 功能延伸至 Teams 聊天和頻道訊息 | [了解 Microsoft Teams 中的預設資料外洩防護原則 (預覽)](dlp-teams-default-policy.md)|
+
+## <a name="licensing-requirements"></a>授權需求
+
+MIP 的授權需求取決於您使用的情況和功能，而不是針對本頁所列的每個功能設定授權需求。 若要了解 MIP 的授權需求和選項，請參閱 Microsoft 365 授權文件中的[資訊防護](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)小節，並下載相關的 PDF 或 Excel。
