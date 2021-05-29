@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 瞭解如何將一或多個通訊群組清單升級成 Outlook 中的 Microsoft 365 群組，以及如何使用 PowerShell 同時升級多個通訊群組清單。
-ms.openlocfilehash: 7e1fc4e971a22ec785662f684a4f9e08970c808a
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: d4686e7f2ec305194130b60fbacab24c9cf7f4e9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636007"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698937"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將通訊群組清單升級至 Microsoft 365 群組中 Outlook
 
@@ -86,10 +86,10 @@ ms.locfileid: "52636007"
 若要升級單一 DL，請執行下列命令：
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>
+Upgrade-DistributionGroup -DlIdentities <Dl SMTP address>
 ```
 
-例如，如果您想要使用 SMTP 位址 dl1@contoso.com 升級 DLs，請執行下列命令：
+例如，如果您想要使用 SMTP 位址 dl1@contoso.com 升級 DL，請執行下列命令：
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
@@ -103,8 +103,8 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 您也可以以批次方式傳遞多個 DLs，並將它們升級到一起：
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-\< DL SMTP address3\>, \< DL SMTP address 4\>
+Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
+<DL SMTP address3>, <DL SMTP address4>
 ```
 
 例如，如果您想要使用 SMTP 位址升級5個 DLs `dl1@contoso.com` ， `dl2@contoso.com` 並 `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` 執行下列命令：
@@ -159,7 +159,7 @@ Get-DistributionGroup| Foreach-Object{
 
 如果您想要檢查是否有資格使用 DL，您可以執行下列命令：
 
-`Get-DistributionGroup \<DL SMTP address\> | Get-EligibleDistributionGroupForMigration`
+`Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration`
 
 如果您想要檢查哪些 DLs 可用於升級，請執行下列命令：
 

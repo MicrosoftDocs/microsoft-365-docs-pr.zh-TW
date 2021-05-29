@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 電子郵件轉寄功能可讓您將傳送至 Microsoft 365 使用者信箱的電子郵件轉寄至組織內部或外部的其他信箱。
-ms.openlocfilehash: eb72204211a8eff929c024fbcede66dfe1f4b879
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635483"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698913"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>設定 Microsoft 365 中的電子郵件轉寄功能
 
@@ -40,6 +40,8 @@ ms.locfileid: "52635483"
 ## <a name="configure-email-forwarding"></a>設定電子郵件轉寄
 
 在您設定電子郵件轉發之前，請注意下列事項：
+
+- 允許自動轉寄的郵件傳送給遠端網域上的人員。 如需詳細資訊，請參閱 [管理遠端網域](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) 。
 
 - 一旦您設定了電子郵件轉寄功能，就只會轉寄傳送給 *寄件者* 信箱的 **新** 電子郵件。
 
@@ -71,7 +73,7 @@ ms.locfileid: "52635483"
 
 3. 展開 [ **郵件設定**]，然後在 [ **電子郵件轉發** ] 區段中，選取 [ **編輯**]。
 
-4. 在 [電子郵件轉寄] 頁面上，將 [切換至] 設定為 [ **開啟**]，輸入轉寄位址，然後選擇是否要保留轉寄電子郵件的副本。 如果您未看到此選項，請確定已將授權指派給使用者帳戶。 選取 [儲存]。
+4. 在 [電子郵件轉寄] 頁面上，將 [切換至] 設定為 [ **開啟**]，輸入轉寄位址，然後選擇是否要保留轉寄電子郵件的副本。 如果您未看到此選項，請確定已將授權指派給使用者帳戶。 選取 **[儲存]**。
 
    **若要轉寄至多個電子郵件地址**，您可以要求使用者在 Outlook 中設定規則，以轉寄位址。 若要深入瞭解，請參閱 [使用規則來自動轉寄郵件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。
 
@@ -89,7 +91,7 @@ ms.locfileid: "52635483"
 
 3. 展開 [ **郵件設定**]，然後在 [ **電子郵件轉發** ] 區段中，選取 [ **編輯**]。
 
-4. 在 [電子郵件轉寄] 頁面上，將 [切換至] 設定為 [ **開啟**]，輸入轉寄位址，然後選擇是否要保留轉寄電子郵件的副本。 如果您未看到此選項，請確定已將授權指派給使用者帳戶。 選取 [儲存]。
+4. 在 [電子郵件轉寄] 頁面上，將 [切換至] 設定為 [ **開啟**]，輸入轉寄位址，然後選擇是否要保留轉寄電子郵件的副本。 如果您未看到此選項，請確定已將授權指派給使用者帳戶。 選取 **[儲存]**。
 
    **若要轉寄至多個電子郵件地址**，您可以要求使用者在 Outlook 中設定規則，以轉寄位址。 若要深入瞭解，請參閱 [使用規則來自動轉寄郵件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。
 
@@ -104,4 +106,3 @@ ms.locfileid: "52635483"
 [建立共用信箱](../email/create-a-shared-mailbox.md) (文章) \
 [從不同的位址傳送電子郵件](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (文章) \
 [變更使用者名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md) (文章) 
-
