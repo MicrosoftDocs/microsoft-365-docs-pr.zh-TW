@@ -26,16 +26,16 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 探索升級 Windows 裝置的方式，以 Windows 10 專業版使用更高級的安全性和商務網路功能。
-ms.openlocfilehash: 0ed24f3560832890c1ba26f89ecbcd1f2ef7b098
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 14a1705a333b2fd4d4dda37ed5170b34acb13abe
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244729"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705547"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>將 Windows 裝置升級為 Windows 10 專業版
 
-觀賞 Windows 裝置升級到 Windows 10 專業版的簡短影片。<br><br>
+## <a name="watch-upgrade-windows-10-home-to-windows-10-pro"></a>觀賞：將 Windows 10 家用版升級為 Windows 10 專業版
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
@@ -56,9 +56,11 @@ ms.locfileid: "52244729"
 > [!NOTE]
 > 如果您有執行 Windows 7 Pro、Windows 8 專業版或 Windows 8.1 專業版的 Windows 裝置，您的商務用 Microsoft 365，您就可以使用 Windows Pro 10 升級版。
     
-請參閱[設定 Windows 裝置，讓商務使用者 Microsoft 365](set-up-windows-devices.md)完成 Windows 10 裝置的設定。 
+## <a name="next-steps"></a>後續步驟
+
+若要完成 Windows 10 裝置的設定，請參閱為[商務使用者設定 Microsoft 365 Windows 裝置](set-up-windows-devices.md)。 
   
-請參閱[設定行動裝置，以供商務使用者 Microsoft 365](set-up-mobile-devices.md) ，以完成 Android 和 iOS 裝置的設定。 
+若要完成設定 Android 和 iOS 裝置，請參閱為[商務使用者設定 Microsoft 365](set-up-mobile-devices.md)的行動裝置。 
   
 ## <a name="related-content"></a>相關內容
 

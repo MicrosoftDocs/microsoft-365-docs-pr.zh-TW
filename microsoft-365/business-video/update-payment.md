@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何更新適用于商務用 Microsoft 365 的支付方式。
-ms.openlocfilehash: 3b659da6745c92d777629b2912114ee214582623
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 瞭解如何更新商務用 Microsoft 365 的支付方式。
+ms.openlocfilehash: b0ed8541068fe02e0bd1f005a5a9c7ee8f50ae1b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580351"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705535"
 ---
-# <a name="update-yor-payment-method-for-your-subscription"></a>更新您訂閱的 yor 支付方式
+# <a name="update-the-payment-method-for-your-subscription"></a>更新訂閱的支付方式
+
+## <a name="watch-update-your-payment-method"></a>觀賞：更新您的支付方式
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
