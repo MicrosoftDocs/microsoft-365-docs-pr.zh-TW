@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 是否要將新的解決方案新增至規範中心、根據您的意見，更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您在不斷變更的相容性環境上保持最高的狀態。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 11055e6f27df08a1726fb3ba65a5accafbf93723
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029037"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698949"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
@@ -34,7 +34,39 @@ ms.locfileid: "52029037"
 
 > [!TIP]
 > 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](/office365/admin/whats-new-in-preview)<br>[SharePoint 系統管理中心的新功能](/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新功能](../security/defender/whats-new.md)<br><br>
-並流覽[Microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap)，以瞭解已啟動、正在開發中、已取消或之前發行的 Microsoft 365 功能。
+並流覽[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)，以瞭解已啟動、正在開發中、已取消或之前發行的 Microsoft 365 功能。
+
+## <a name="april-2021"></a>2021 年 4 月
+
+### <a name="advanced-ediscovery"></a>進階電子文件探索
+
+- [Advanced eDiscovery 中的限制](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set)。 組織現在可以使用從審閱集中的單一匯出專案，以較小的專案匯出最多5000000個專案或 500 MB （兩者兩者都小）。
+
+### <a name="data-classification"></a>資料分類
+
+- [活動瀏覽器中可用的標記活動](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
+
+### <a name="data-connectors"></a>資料連線器
+
+- [設定 connector 以封存 Oracle 資料上的 Cisco Jabber) ]/microsoft-365/compliance/archive-ciscojabberonoracle-data) 
+- [設定連接器以封存 PostgreSQL 資料上的 Cisco Jabber) ](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
+
+### <a name="data-loss-prevention"></a>資料外洩防護
+
+- [資料遺失防護原則提示參考](/microsoft-365/compliance/dlp-policy-tips-reference)的新主題。
+- [深入瞭解資料遺失防護](/microsoft-365/compliance/dlp-learn-about-dlp)的新主題。
+- [資料遺失防護警示儀表板入門](/microsoft-365/compliance/dlp-alerts-dashboard-get-started)的新主題。
+
+### <a name="retention-policies-and-retention-label-policies"></a>保留原則和保留標籤原則
+
+- Microsoft 365 群組的位置現在可以使用[Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) Cmdlet 搭配應用程式參數，將保留設定套用至只 Microsoft 365 信箱或僅使用連接的 SharePoint 網站。
+
+### <a name="sensitivity-labels"></a>敏感度標籤
+
+Outlook 版本和更新：
+- 先前只有 AIP 的整合標籤用戶端支援，內建的標記現在支援 [預設標籤和必要標籤的不同設定](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
+- MacOS、iOS 和 Android 現在支援 Encrypt-Only
+- [Manage Office app 中的靈敏度標籤](/microsoft-365/compliance/sensitivity-labels-office-apps)已更新在[Outlook 功能表格](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook)中的新專案時，會針對內建的標籤，以不同的預設標籤及 Outlook 必要標籤的[預設標籤及必要](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling)標籤來更新，以支援不同的預設標籤和例外要求的標籤。 此外，macOS/iOS/Android 現在也支援 Encrypt-Only 選項，而且所有包含變數的動態標記現在皆支援所有 Outlook 用戶端。 必要的標籤現在會向其他平臺推出。
 
 ## <a name="march-2021"></a>2021 年 3 月
 
@@ -42,27 +74,27 @@ ms.locfileid: "52029037"
 
 ### <a name="advanced-ediscovery"></a>進階電子文件探索
 
-- **Advanced eDiscovery 集合** 現在支援 [新的集合工具和工作流程](https://docs.microsoft.com/microsoft-365/compliance/collections-overview)。 其他新主題包括 [建立草稿集合](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)、 [將草稿集合認可至審閱集](https://docs.microsoft.com/microsoft-365/compliance/commit-draft-collection)，以及 [集合統計資料和報告](https://docs.microsoft.com/microsoft-365/compliance/collection-statistics-reports)。
-- 將審閱集中的 **檔匯出** 為 [Azure 儲存體](https://docs.microsoft.com/microsoft-365/compliance/download-export-jobs)帳戶。
-- **Advanced eDiscovery 的預測編碼模組**。 首先請參閱新的 [預測編碼](https://docs.microsoft.com/microsoft-365/compliance/predictive-coding-overview) 功能，以取代已撤銷的相關性模組。
+- **Advanced eDiscovery 集合** 現在支援 [新的集合工具和工作流程](/microsoft-365/compliance/collections-overview)。 其他新主題包括 [建立草稿集合](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)、 [將草稿集合認可至審閱集](/microsoft-365/compliance/commit-draft-collection)，以及 [集合統計資料和報告](/microsoft-365/compliance/collection-statistics-reports)。
+- 將審閱集中的 **檔匯出** 為 [Azure 儲存體](/microsoft-365/compliance/download-export-jobs)帳戶。
+- **Advanced eDiscovery 的預測編碼模組**。 首先請參閱新的 [預測編碼](/microsoft-365/compliance/predictive-coding-overview) 功能，以取代已撤銷的相關性模組。
 
 ### <a name="data-classification"></a>資料分類
 
-- **資料分類瀏覽器**。 [開始](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer) 使用資料分類瀏覽器。
+- **資料分類瀏覽器**。 [開始](/microsoft-365/compliance/data-classification-activity-explorer) 使用資料分類瀏覽器。
 
 ### <a name="data-connectors"></a>資料連線器
 
-- **私密金鑰**。 已新增私密金鑰的支援，以 [Bloomberg 郵件](https://docs.microsoft.com/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) 資料、 [ICE 聊天](https://docs.microsoft.com/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) 資料和 [立即 Bloomberg](https://docs.microsoft.com/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys) 資料連線器。
+- **私密金鑰**。 已新增私密金鑰的支援，以 [Bloomberg 郵件](/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) 資料、 [ICE 聊天](/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) 資料和 [立即 Bloomberg](/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys) 資料連線器。
 
 ### <a name="data-loss-prevention"></a>資料外洩防護
 
-- **Microsoft Teams 支援**。 資料遺失防護支援擴充至[Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-teams-default-policy)。
-- **Microsoft 合規性分機**。 開始使用 [Microsoft 規範擴充](https://docs.microsoft.com/microsoft-365/compliance/dlp-chrome-get-started)。
+- **Microsoft Teams 支援**。 資料遺失防護支援擴充至[Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy)。
+- **Microsoft 合規性分機**。 開始使用 [Microsoft 規範擴充](/microsoft-365/compliance/dlp-chrome-get-started)。
 
 ### <a name="encryption"></a>加密
 
-- **Microsoft 365 的客戶金鑰**。 Microsoft 365 在租使用者層級 (公開預覽) 的[客戶機碼的概覽](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level)。
-- **雙金鑰加密**。 深入瞭解如何在 SharePoint 和商務用 OneDrive 中[啟用已標記與受保護的檔支援](https://docs.microsoft.com/microsoft-365/compliance/double-key-encryption)。
+- **Microsoft 365 的客戶金鑰**。 Microsoft 365 在租使用者層級 (公開預覽) 的[客戶機碼的概覽](/microsoft-365/compliance/customer-key-tenant-level)。
+- **雙金鑰加密**。 深入瞭解如何在 SharePoint 和商務用 OneDrive 中[啟用已標記與受保護的檔支援](/microsoft-365/compliance/double-key-encryption)。
 
 ### <a name="insider-risk-management"></a>內部風險管理
 
@@ -82,16 +114,16 @@ ms.locfileid: "52029037"
 
 下列主題是更新或新增，以支援下列新功能：
 
-- [深入了解測試人員風險管理](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management)
-- [測試人員風險管理計畫](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-plan)
-- [開始使用「內幕風險管理」設定](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings)
-- [開始使用測試人員風險管理](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
-- [建立及管理測試人員風險原則](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-policies)
-- [調查測試人員風險警示](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-alerts)
-- [對測試人員風險案例採取動作](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-cases)
-- [使用內部風險稽核記錄來審查活動](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-audit-log)
-- [使用測試人員風險內容總管檢閱資料](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-content-explorer)
-- [使用使用者儀表板管理工作流程](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-users)
+- [深入了解測試人員風險管理](/microsoft-365/compliance/insider-risk-management)
+- [測試人員風險管理計畫](/microsoft-365/compliance/insider-risk-management-plan)
+- [開始使用「內幕風險管理」設定](/microsoft-365/compliance/insider-risk-management-settings)
+- [開始使用測試人員風險管理](/microsoft-365/compliance/insider-risk-management-configure)
+- [建立及管理測試人員風險原則](/microsoft-365/compliance/insider-risk-management-policies)
+- [調查測試人員風險警示](/microsoft-365/compliance/insider-risk-management-alerts)
+- [對測試人員風險案例採取動作](/microsoft-365/compliance/insider-risk-management-cases)
+- [使用內部風險稽核記錄來審查活動](/microsoft-365/compliance/insider-risk-management-audit-log)
+- [使用測試人員風險內容總管檢閱資料](/microsoft-365/compliance/insider-risk-management-content-explorer)
+- [使用使用者儀表板管理工作流程](/microsoft-365/compliance/insider-risk-management-users)
 
 ### <a name="records-management"></a>記錄管理
 
@@ -102,13 +134,13 @@ ms.locfileid: "52029037"
 
 已新增或更新下列主題中的內容：
 
-- [開始使用自訂機密資訊類型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type)
-- [瞭解敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [建立實際資料符合活動的通知](https://docs.microsoft.com/microsoft-365/compliance/sit-edm-notifications-activities)
-- [敏感資訊類型實體定義](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
-- [使用 PowerShell 建立自訂機密資訊類型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [建立關鍵字字典](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary)
+- [開始使用自訂機密資訊類型](/microsoft-365/compliance/create-a-custom-sensitive-information-type)
+- [了解敏感性資訊類型](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [建立實際資料符合活動的通知](/microsoft-365/compliance/sit-edm-notifications-activities)
+- [敏感資訊類型實體定義](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [使用 PowerShell 建立自訂機密資訊類型](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [建立關鍵字字典](/microsoft-365/compliance/create-a-keyword-dictionary)
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
@@ -122,15 +154,15 @@ ms.locfileid: "52029037"
 
 ### <a name="auditing"></a>稽核
 
-- **管理審核記錄保留原則**。 深入瞭解新的「 [審核保留原則儀表板](https://docs.microsoft.com/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1)」。
-- **搜尋審核記錄** 檔。 [使用 PowerShell 腳本搜尋審核記錄](https://docs.microsoft.com/microsoft-365/compliance/audit-log-search-script)。
+- **管理審核記錄保留原則**。 深入瞭解新的「 [審核保留原則儀表板](/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1)」。
+- **搜尋審核記錄** 檔。 [使用 PowerShell 腳本搜尋審核記錄](/microsoft-365/compliance/audit-log-search-script)。
 
 ### <a name="data-classification-content-explorer"></a>資料分類內容瀏覽器
 
 已新增或更新下列主題中的內容：
 
-- [開始使用內容總管](https://docs.microsoft.com/microsoft-365/compliance/data-classification-content-explorer)
-- [資料分類版本資訊](https://docs.microsoft.com/microsoft-365/compliance/data-classification-pub-preview-relnotes)
+- [開始使用內容總管](/microsoft-365/compliance/data-classification-content-explorer)
+- [資料分類版本資訊](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>資料外洩防護
 
@@ -179,7 +211,7 @@ ms.locfileid: "52029037"
 
 已新增或更新下列主題中的內容：
 
-- [瞭解敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [了解敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
 - [使用 PowerShell 建立自訂的敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
 - [建立自訂機密資訊類型，並以精確的資料符合型分類為基礎](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
 - [敏感資訊類型實體定義](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
@@ -256,46 +288,3 @@ Microsoft 365 法規遵從性內容小組正在運作中建立「內容解決方
 
 - [在 Azure Purview 中自動標記資料 (預覽) ](/azure/purview/create-sensitivity-label)。 您現在可以為 Azure Purview 中的資產建立及自動套用敏感度標籤，例如 Azure Blob 儲存區中的檔案和 SQL Server 中的資料庫欄。
 - [要求使用者將標籤套用至專案](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。 這個新的選項又稱為「必要標籤」，這項新選項需要使用者選擇並套用特定案例下的靈敏度標籤。
-
-## <a name="november-2020"></a>2020 年 11 月
-只會有提醒，我們通常會在預覽狀態中發佈新的和更新的功能，以瞭解如何使用這些功能，讓我們能夠在發佈至一般可用性之前完善並改進這些功能。 在預覽 (和超過) 之後，您的意見反應很重要，所以請務必先開啟規範中心右下方的回饋卡片，讓我們知道您的想法。
-
-![回饋](../media/Feedback_card_MCC.JPG)
-
-### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>聚光燈：端點資料遺失防護 (DLP) 已發行
-
-[Endpoint dlp](endpoint-dlp-learn-about.md)會將 DLP 的活動監視和保護功能延伸至 Windows 10 裝置上的機密資訊。 在裝置[架](dlp-configure-endpoints.md)至 Microsoft 365 規範中心之後，您可以設定 DLP 原則，以保護這些裝置上的機密資訊。
-
-### <a name="advanced-ediscovery"></a>進階電子文件探索
-
-若要簡化 ediscovery 工作流程中加密內容的管理，Microsoft 365 ediscovery 工具現在會結合電子郵件所附加的[加密檔案解密](ediscovery-decryption.md)，並以 Exchange 傳送。 此外，儲存在 SharePoint 和 OneDrive 中的加密檔會在 Advanced eDiscovery 中解密。
-
-### <a name="compliance-manager"></a>合規性管理員
-
-- [Microsoft 365 政府訂閱的支援](compliance-manager.md)。 合規性管理員現在可供美國政府 Community (GCC) 適中和高的客戶。
-- [合規性管理員的 Microsoft 規範設定分析器](compliance-manager-mcca.md)。 新的 PowerShell 基礎工具，可協助您開始使用合規性管理員，方法是掃描組織的目前設定，並依據 Microsoft 365 建議的最佳作法驗證這些設定。
-- [新的範本](compliance-manager-templates-list.md)。 新增56新範本，並將總合規性管理員範本引入超過230。
-
-### <a name="data-connectors"></a>資料連線器
-
-[預覽中的五個新 Veritas 連接器](archiving-third-party-data.md#third-party-data-connectors)。 新的連接器包括 Reuters 處理、Reuters FX、CellTrust、XIP、泛型 MS SQL Database 資料。
-
-### <a name="retention-labels-disposition-review"></a>保留標籤 (處置評審) 
-
-若要在處置檢查過程中查看專案，使用者現在必須是 [內容瀏覽器內容檢視器和內容瀏覽器清單檢視器角色群組](disposition.md#permissions-for-disposition)的成員。 雖然必須複查專案，但在完成處置檢查時，並不需要這些角色群組。
-
-### <a name="sensitivity-labels"></a>敏感度標籤
-
-- [ (預覽) SharePoint 網站的外部共用設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings)。 建立群組和網站所使用的標籤時，您會看到一個選項，可控制已套用標籤的 SharePoint 網站的外部共用。 您可以指定允許任何人、新的和現有的來賓、現有來賓或僅限您組織中的使用者共用。 套用標籤時，標籤設定會取代[SharePoint 系統管理中心內設定的](/sharepoint/change-external-sharing-site)任何外部共用設定。
-- [移除已標記檔中的標籤和加密](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document)。 若要從 SharePoint 中的標籤檔中移除標籤和其所強制執行的加密，global admins 和 SharePoint 系統管理員都可以執行新的 `Unlock-SPOSensitivityLabelEncryptedFile` Cmdlet。 即使系統管理員沒有網站或檔案的存取權限，或 Azure Rights Management 服務無法使用，此 Cmdlet 也會執行。
-
-## <a name="october-2020"></a>2020 年 10 月
-
-### <a name="advanced-ediscovery"></a>進階電子文件探索
-
-[CJK 語言支援](ediscovery-cjk-support.md)。 Advanced eDiscovery 現在支援雙位元組字元集語言，統稱為 CJK 語言 (包含簡化的中文、繁體中文、日文和韓文) 。 這些可用於數種高級複查集案例。
-
-### <a name="sensitivity-labels"></a>敏感度標籤
-
-- [標籤範圍](sensitivity-labels.md#label-scopes)。 建立靈敏度標籤時，您會看到新的選項，可定義標籤的範圍。 這個選項可讓您設定標籤與電子郵件、容器 (SharePoint 網站和 Teams) 或兩者的標籤。
-- [動態內容標示](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)。 在設定敏感度標籤的內容標示時，您現在可以 `${Item.Label}` `${Item.Location}` 在您的頁首、頁尾或浮水印的文字字串中使用動態變數。
