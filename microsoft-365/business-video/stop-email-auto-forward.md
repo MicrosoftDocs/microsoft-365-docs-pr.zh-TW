@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何停止自動轉送電子郵件。
-ms.openlocfilehash: f8bd599c7c8bca8d4789188acbcd3574b7473dcb
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: 瞭解如何建立郵件流程規則以避免盜竊專有資訊，以停止自動轉寄電子郵件。
+ms.openlocfilehash: 82e4c80b0edc501889e0fc4dc28f1ec1ad703568
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903679"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706471"
 ---
 # <a name="stop-email-auto-forward"></a>停止電子郵件自動轉寄
+
+## <a name="watch-stop-auto-forwarding-emails"></a>觀賞：停止自動轉送電子郵件
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
@@ -36,7 +38,7 @@ ms.locfileid: "51903679"
 
 ## <a name="try-it"></a>試試看吧！
 
-1. 在 Microsoft 365 系統管理中心中，選取 [ **Exchange**]、[ **郵件流程**]，然後在 [ **規則** ] 索引標籤上，選取加號，然後選擇 [ **建立新規則**]。
+1. 從 Microsoft 365 系統管理中心，選取 [ **Exchange**，**郵件流程**]，然後在 [**規則**] 索引標籤上，選取加號，然後選擇 [**建立新規則**]。
 1. 選取 [ **更多選項**]。 為您的新規則命名。
 1. 然後開啟下拉清單以套用 **此規則如果** 是，請選取 **寄件者**，然後 **是外部內部**。
 1. 選取 **組織內**，然後按一下 **[確定]**。
@@ -50,4 +52,6 @@ ms.locfileid: "51903679"
 
 ## <a name="related-content"></a>相關內容
 
-[新增另一個使用者的電子郵件別名](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) (篇文章) [設定 Microsoft 365 中的電子郵件](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) 轉寄 (本文) [尋找及修正電子郵件傳遞問題為商務系統管理員的 Office 365](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) (文章) 
+[為使用者新增其他電子郵件別名](../admin/email/add-another-email-alias-for-a-user.md) (文章)
+[在 Microsoft 365 中設定電子郵件轉寄](../admin/email/configure-email-forwarding.md) (文章)
+[尋找並修正電子郵件傳遞問題，以 Office 365 商務系統管理員](/exchange/troubleshoot/email-delivery/email-delivery-issues) (文章) 

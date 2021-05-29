@@ -1,5 +1,5 @@
 ---
-title: 開啟或關閉審計
+title: 開啟或關閉稽核
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,14 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: 如何在「Microsoft 365 規範中心」中開啟或關閉「審核記錄搜尋」功能，以啟用或停用系統管理員搜尋審核記錄的能力。
-ms.openlocfilehash: 091331a40a2ab6bf3c05bb289d49f63ab2dd2794
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657728"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706659"
 ---
-# <a name="turn-auditing-on-or-off"></a>開啟或關閉審計
+# <a name="turn-auditing-on-or-off"></a>開啟或關閉稽核
 
 使用 Microsoft 365 和 Office 365 企業版的組織，預設會開啟 [稽核記錄]。 其中包括使用 E3/G3 或 E5/G5 訂閱的組織。 開啟規範中心的審計時，會將組織中的使用者和系統管理員活動記錄在審核記錄中，並在90天內保留，視指派給使用者的授權而定到一年。 不過，您的組織可能會有不想要記錄和保留審核記錄資料的原因。 在這種情況下，全域管理員可能會決定在 Microsoft 365 中關閉審核。
 
@@ -63,7 +63,7 @@ ms.locfileid: "52657728"
 
    如果您的組織未開啟審核，就會顯示橫幅，提示您開始錄製使用者和系統管理員活動。
 
-   ![在審核頁面上的橫幅](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+   ![在審核頁面上的橫幅](../media/AuditingBanner.png)
 
 3. 按一下 [ **開始錄製使用者和系統管理員] 活動** 橫幅。
 

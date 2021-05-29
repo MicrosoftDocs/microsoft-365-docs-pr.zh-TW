@@ -19,36 +19,40 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何在 Microsoft 小組中以來賓的身分加入團隊。
-ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: 瞭解如何在 Microsoft Teams 中以來賓的身分加入團隊。
+ms.openlocfilehash: 04ee1a32e63c6cbff1f6352362ed04b06a9791fa
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903715"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706235"
 ---
 # <a name="join-a-team-as-a-guest"></a>以來賓身分加入團隊
+
+## <a name="watch-join-a-team-as-a-guest"></a>觀賞：將小組加入為來賓
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys?autoplay=false]
 
 ## <a name="try-it"></a>試試看吧！
 
-如果您收到加入小組的 Microsoft 小組邀請，請執行一些步驟來接受邀請。
+如果您收到加入小組的 Microsoft Teams 邀請，請執行兩個步驟來接受邀請。
 
-1. 開啟電子郵件邀請，然後選取 [  **開啟 Microsoft 小組**]。 如果您沒有看到邀請，請檢查您的垃圾郵件資料夾。
+1. 開啟 [電子郵件] 邀請，然後選取 [**開啟 Microsoft Teams**]。 如果您沒有看到邀請，請檢查您的垃圾郵件資料夾。
   1. 如果您的電子郵件地址先前未用來建立 Microsoft 帳戶，則您必須建立一個。
 
      在 [  **建立帳戶**  ] 對話方塊中，選取  **[下一步** ]，建立密碼，然後選取  **[下一步]**。
   1. 若要驗證您的電子郵件地址，請開啟驗證電子郵件，然後複製安全性代碼。
   1. 在 [**驗證電子郵件**] 對話方塊中輸入您的安全性代碼，選取 **[下一步]** ，在 [**輸入您看到的字元**] 列中輸入 CAPTCHA，選取 **[下一步]** ，然後 **接受**
-1. 如果您不想要下載 Microsoft 團隊應用程式，請選取 [  **使用 web 應用程式**]。
-1. 在 [小組 web  **app] 中**  ，您可以查看或回復文章，或建立您自己的文章，然後選取 [檔案] 索引標籤，以查看或編輯小組檔。
+1. 如果您不想要下載 Microsoft Teams app，請選取 [**使用 web 應用程式**]。
+1. 在 [Teams web **app] 中** 您可以查看或回復文章，或建立您自己的文章，然後選取 [檔案] 索引標籤，以查看或編輯小組檔。
 
-    如果您已在組織中使用「小組」應用程式，加入團隊為來賓是很簡單的工作。
+    如果您已在組織中使用 Teams 應用程式，加入為來賓的團隊是非常簡單的。
 
-1. 只需開啟「Microsoft 團隊」應用程式，然後選擇  **[是]**  切換至受邀的團隊。  現在，您可以在團隊中的專案上進行共同作業。
-2. 若要切換回公司的小組，請從  **組織**  下拉式清單中選取。
+1. 只需開啟 Microsoft Teams 應用程式，然後選擇 **[是]** 切換至受邀的團隊。  現在，您可以在 Teams 的專案上進行共同作業。
+1. 若要切換回公司的小組，請從  **組織**  下拉式清單中選取。
 
 ## <a name="related-content"></a>相關內容
 
-[在團隊中的來賓經驗](https://docs.microsoft.com/microsoftteams/guest-experience) (文章) [管理組織的 Microsoft 團隊設定](https://docs.microsoft.com/microsoftteams/enable-features-office-365) (文章) [使用 Guest access 和外部存取與組織外部人員進行共同](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) 作業 (文章) 
+[Teams (文章中的來賓體驗](/microsoftteams/guest-experience)) \
+[管理組織的 Microsoft Teams 設定](/microsoftteams/enable-features-office-365) (文章) \
+[使用 guest access 和外部存取，與組織外部的人員共同](/microsoftteams/communicate-with-users-from-other-organizations) 作業 (文章) 

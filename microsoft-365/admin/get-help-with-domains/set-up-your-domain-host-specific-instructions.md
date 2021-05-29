@@ -22,23 +22,23 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: 瞭解如何管理您自己的 DNS 記錄，或讓 Microsoft 為您管理您的 DNS 記錄。
-ms.openlocfilehash: 475e2c13a1b73a58cfb9f72e9d335a2d1c8b4da5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 454a3c95556d52e9ca2b45f82531839a557a0d8c
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332471"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706379"
 ---
 # <a name="set-up-your-domain"></a>設定您的網域
 
-若要開始使用自訂網域 (contoso.com) 與 Microsoft 365，您必須驗證您的網域，並設定您的網域的 DNS 記錄。 
+若要開始使用自訂網域 (contoso.com) 搭配 Microsoft 365，您必須驗證您的網域，並設定網域的 DNS 記錄。 
   
 您可以使用網域主機上的系統管理工具來新增及管理 DNS 記錄，或對您的網域記錄提供 Microsoft 控制，我們會為您設定這些記錄。
 
 ## <a name="let-microsoft-365-manage-your-dns-records"></a>讓 Microsoft 365 管理您的 DNS 記錄 
 
-瞭解如何 [使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365](change-nameservers-at-any-domain-registrar.md)。
+瞭解如何[使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365](change-nameservers-at-any-domain-registrar.md)。
 
 ## <a name="manage-your-own-dns-records"></a>管理您自己的 DNS 記錄
 
-如需相關指示，請參閱 [在 NY dns 主機服務提供者處建立 dns 記錄](create-dns-records-at-any-dns-hosting-provider.md)
+如需相關指示，請參閱 [在任何 DNS 主機服務提供者處建立 dns 記錄](create-dns-records-at-any-dns-hosting-provider.md)

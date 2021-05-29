@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 深入瞭解由受世紀所運作的 Office 365，其設計目的是為了符合中國的安全、可靠及可伸縮雲端服務的需求。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 00710d53033648764ed0e55eeb51ee66518e36f7
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: bc416ca253d26cc5d391d226039223eac02720b0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297053"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706367"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由 21Vianet 運作的 Office 365
 
@@ -197,7 +197,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 |與 Bing 服務整合的資訊檢索窗格  <br/> |無法使用。  <br/> |
 |協助工具檢查程式  <br/> |無法使用。  <br/> |
 |課程筆記本  <br/> |無法使用。  <br/> |
-|表單  <br/> |無法使用。  <br/> |
+|Forms  <br/> |無法使用。  <br/> |
 |沉浸式讀取器  <br/> |無法使用。  <br/> |
 |插入線上圖片  <br/> |無法使用。  <br/> |
 |會議詳細資料  <br/> |無法使用。  <br/> |
@@ -236,8 +236,6 @@ GDPR 授與個人 (，或資料主體) 某些與處理個人資料的處理相�
 
 ## <a name="related-content"></a>相關內容
 
-[嘗試或購買 Microsoft 365 商務訂閱](../../commerce/try-or-buy-microsoft-365.md) (文章) 
-
-[由世紀運作的 Office 365 Azure 資訊保護](parity-between-azure-information-protection.md) (文章) 
-
+[嘗試或購買 Microsoft 365 商務訂閱](../../commerce/try-or-buy-microsoft-365.md) (文章) \
+[由世紀運作的 Office 365 提供 Azure 資訊保護](parity-between-azure-information-protection.md) (文章) \
 [查看您的帳單或取得發票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (文章) 

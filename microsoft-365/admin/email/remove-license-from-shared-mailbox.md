@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: '從共用信箱中移除授權，將其指派給其他使用者。 '
-ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: '從共用信箱中移除授權，將其指派給另一位使用者或傳回授權，這樣您就不需要付費。 '
+ms.openlocfilehash: d33487879506402c5f0de2f7942c3299c5698b73
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537580"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706283"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>從共用信箱移除授權
 
@@ -74,14 +74,10 @@ ms.locfileid: "52537580"
 
 6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/buy-licenses.md)。
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[關於共用信箱](about-shared-mailboxes.md)
-
-[建立共用信箱](create-a-shared-mailbox.md)
-
-[設定共用信箱](configure-a-shared-mailbox.md)
-
-[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md)
-
-[解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md)
+[關於共用信箱](about-shared-mailboxes.md) (文章)
+[建立共用信箱](create-a-shared-mailbox.md) (文章) \
+[設定共用信箱](configure-a-shared-mailbox.md) (文章)
+[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md) (文章)
+[解決共用信箱的問題](resolve-issues-with-shared-mailboxes.md) (文章)

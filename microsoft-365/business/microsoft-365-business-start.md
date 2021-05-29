@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 深入瞭解商務的 Microsoft 365，如何加以設定，以及如何準備使用者的裝置和電腦，以確保它們受到商務 Microsoft 365 保護。
-ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293700"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706451"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>開始使用商務 Microsoft 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "52293700"
 
 商務用 Microsoft 365 是一組完整的商業生產力和共同作業工具，例如 Outlook、Word、Excel 和其他 Office 產品，永遠都是最新的。 您可以使用易於管理的企業級安全性，保護所有 iOS、Android 和 Windows 10 裝置上的工作檔案。
 
-觀賞這段影片，快速流覽 Microsoft 365 商務。<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>觀賞：何謂 Microsoft 365 商務進階版
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -61,7 +61,7 @@ ms.locfileid: "52293700"
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-觀賞這段影片，瞭解商務安裝的 Microsoft 365。<br><br>
+## <a name="watch-set-up-microsoft-365-business"></a>觀賞：設定 Microsoft 365 商務版
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -109,8 +109,7 @@ ms.locfileid: "52293700"
     
 ## <a name="related-content"></a>相關內容
 
-[商務檔和資源的 Microsoft 365](./index.yml)
-  
-[管理商務用 Microsoft 365](manage.md)[遷移至商務 Microsoft 365](migrate-to-microsoft-365-business.md)
-
-[商務用 Microsoft 365 訓練影片](../business-video/index.yml)
+[Microsoft 365 商務檔和資源](./index.yml) (連結頁面) \
+[管理商務 Microsoft 365](manage.md) (文章) \
+[遷移至 Microsoft 365 for business](migrate-to-microsoft-365-business.md) (文章) \
+[Microsoft 365 商務訓練](../business-video/index.yml)影片 (連結] 頁面) 

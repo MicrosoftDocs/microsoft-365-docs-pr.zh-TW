@@ -18,17 +18,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何使用承租人切換器和多租使用者視圖。
-ms.openlocfilehash: d59760b8a143acc33747aff9f7deaa0b6dd3e711
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+description: 瞭解如何使用承租人切換器和多租使用者視圖，讓您能夠從單一位置管理承租人。
+ms.openlocfilehash: e0bf6c872d4998c0cd0263fd8474ac5e9c99ef14
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943026"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706151"
 ---
 # <a name="multi-tenant-management"></a>多租使用者管理
 
-多租使用者管理提供一種統一的管理形式，可讓 Microsoft 365 合作夥伴系統管理員管理從單一位置管理的所有承租人。 如果您是管理多個承租人的合作夥伴，您可以：
+多租使用者管理提供整合形式的管理，可讓 Microsoft 365 的夥伴管理員從單一位置管理所有租使用者。 如果您是管理多個承租人的合作夥伴，您可以：
 
 - 在您管理的承租人間快速移動。
 - 評估跨多個承租人的服務健康情況、產品及帳單。
@@ -36,7 +36,7 @@ ms.locfileid: "51943026"
 
 ## <a name="move-between-tenants"></a>在承租人間移動
 
-1. 在 Microsoft 365 admin center 中，選取組織名稱。
+1. 在 Microsoft 365 系統管理中心，選取組織名稱。
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="多租使用者切換器。":::
 
@@ -46,7 +46,7 @@ ms.locfileid: "51943026"
 
 ## <a name="view-all-tenants-page"></a>[查看所有承租人] 頁面
 
-1. 在 Microsoft 365 系統管理中心的左側導覽中，選取 [ **所有承租人**]。
+1. 在 Microsoft 365 系統管理中心的左側導覽中，選取 [**所有承租人**]。
 - 在 [ **所有承租人** ] 頁面上，您可以
   - 評估服務健康情況
   - 查看授權使用方式
@@ -59,7 +59,7 @@ ms.locfileid: "51943026"
 
 服務健康情況視圖會向您顯示是否有任何事件或諮詢影響承租人。 它甚至會告訴您受管理的承租人中有多少受到影響。
 
-1. 在 Microsoft 365 系統管理中心的 [多租使用者] 視圖中，選取 [ **服務健康情況**]。
+1. 在 [Microsoft 365 系統管理中心] 的 [多承租人] 視圖中，選取 [**服務健康情況**]。
 2. 在 [ **服務健康** 情況] 頁面匯總模式中，您也可以看到事件總數、影響任何受管理租使用者的提議總數，以及具有主動事件的服務數目。 您也可以查看您的承租人會受到事件和諮詢影響的數目。
 
     - 您可以使用篩選選項，依問題類型或服務來查看問題
@@ -73,9 +73,9 @@ ms.locfileid: "51943026"
 
 受影響的承租人清單可以匯出成 CSV 格式，讓系統管理員可以與支援小組共用。
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中查看單一租使用者
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中查看單一租使用者
 
-您可以從 [ **All 承租人** ] 頁面中的任何承租人返回至 Microsoft 365 系統管理中心。
+您可以從 [**所有承租人**] 頁面的任何承租人回到 Microsoft 365 系統管理中心。
 
 1. 在 [ **所有承租人** ] 頁面上，選取您要查看系統管理中心的租使用者名稱。
 2. 您會轉向該租使用者的系統管理中心。

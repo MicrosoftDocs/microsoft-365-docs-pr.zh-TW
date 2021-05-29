@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可以在 Microsoft 365 中搜尋的使用者內容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b19347ad8e1c87d5b66cb49ed2af152b4765c37
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311913"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706603"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -38,13 +38,13 @@ ms.locfileid: "52311913"
   
 在此範例中，Contoso 有限公司是由兩個分公司、第四個咖啡和 Coho Winery 所組成的組織。 業務要求 eDiscovery mangers 和調查人員只能搜尋其代理人中 Exchange 信箱、OneDrive 帳戶及 SharePoint 網站。 此外，eDiscovery 管理員和調查人員只會查看其代理人中的 eDiscovery 案例，而且只能存取他們隸屬的案例。 此外，在這種情況下，調查人員無法保留內容位置或從案例中匯出內容。 以下是規範界限如何符合這些需求。
   
-- 內容搜尋中的搜尋許可權篩選功能會控制 eDiscovery 管理員和調查人員可搜尋的內容位置。 這表示第四個咖啡機關中的 eDiscovery 管理員和調查人員，只能在第四個咖啡店中搜尋內容位置。 這種限制適用于 Coho Winery 子公司。
+- 內容搜尋中的搜尋許可權篩選功能會控制 eDiscovery 管理員和調查人員可搜尋的內容位置。 這表示 Fourth Coffee 機構內的電子文件探索管理員和調查人員只能搜尋 Fourth Coffee 子公司內的內容位置。 Coho Winery 子公司也有相同的限制。
 
 - 角色群組為符合性界限提供下列功能：
 
-  - 控制哪些人員可以查看安全性 & 合規性中心內的 eDiscovery 案例。 這表示 eDiscovery 管理員和調查人員只能查看其代理人中的 eDiscovery 案例。
+  - 控制哪些人員可以查看安全性 & 合規性中心內的 eDiscovery 案例。 這表示電子文件探索管理員和調查人員只能查看其機構內的電子文件探索案例。
 
-  - 控制誰可以指派成員至 eDiscovery 案例。 這表示 eDiscovery 管理員和調查人員只能將成員指派給他們本身是其成員的情況。
+  - 控制誰可以指派成員至 eDiscovery 案例。 這表示電子文件探索管理員和調查人員只能將成員指派給其本身為成員的案例。
 
   - 新增或移除指派特定許可權的角色，以控制可執行成員的 eDiscovery 相關工作。
 
@@ -110,17 +110,17 @@ ms.locfileid: "52311913"
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>步驟3：建立每個代理人的角色群組
 
-下一步是在安全性 & 規範中心建立角色群組，以與您的機構相符。 建議您在建立角色群組時，您可以複製內建的 eDiscovery 管理員群組、新增適當的成員，以及移除可能不適合您需求的角色。 如需有關 eDiscovery 相關角色的詳細資訊，請參閱 [指派 eDiscovery 許可權](assign-ediscovery-permissions.md)。
+下一步是在安全性 & 規範中心建立角色群組，以與您的機構相符。 建議您複製內建的電子文件探索管理員群組、新增適當的成員，以及移除可能不適用於您需求的角色，來建立角色群組。 如需有關 eDiscovery 相關角色的詳細資訊，請參閱 [指派 eDiscovery 許可權](assign-ediscovery-permissions.md)。
   
-若要建立角色群組，請移至 [安全性 & 規範中心] 中的 [ **許可權** ] 頁面，為每個代理人中每個小組建立角色群組，以使用規範界限和 eDiscovery 案例來管理調查。
+若要建立角色群組，請移至安全性與合規性中心內的 [權限]**** 頁面，然後為每個機構中將會使用合規性界限和電子文件探索案例來管理調查的每個小組建立角色群組。
   
 使用 Contoso 相容性邊界案例，必須建立四個角色群組，並將適當的成員新增至每一個群組。
   
-- 第四個咖啡 eDiscovery 管理員
+- Fourth Coffee 電子文件探索管理員
 
-- 第四個咖啡調查人員
+- Fourth Coffee 調查人員
 
-- Coho Winery eDiscovery 管理員
+- Coho Winery 電子文件探索管理員
 
 - Coho Winery 調查人員
   
@@ -157,7 +157,7 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
 
     如需搜尋動作的清單，請參閱 [設定內容搜尋的許可權篩選](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)中的「New-ComplianceSecurityFilter」一節。
 
-以下是兩個搜尋許可權篩選的範例，將建立這些篩選以支援 Contoso 規範界限案例。 這兩個範例都包含以逗號分隔的篩選清單，其中的信箱和網站篩選會包含在相同的搜尋許可權篩選中，並以逗號分隔。
+以下是為了支援 Contoso 合規性界限案例所會建立的兩個搜尋權限篩選範例。 這兩個範例都包含逗號分隔篩選清單，信箱和網站篩選會包含在相同的搜尋權限篩選中，並以逗號分隔。
   
 ### <a name="fourth-coffee"></a>第四個咖啡
 
@@ -283,15 +283,17 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 在管理使用性範圍的 eDiscovery 案例和調查時，請牢記下列限制。
   
-- 在建立和執行搜尋時，您可以選取您的代理人以外的內容位置。 不過，由於搜尋許可權篩選，來自這些位置的內容不會包含在搜尋結果中。
+- 在建立及執行搜尋時，您可以選取機構外部的內容位置。 不過，由於搜尋權限篩選的緣故，這些位置的內容不會包含在搜尋結果中。
 
-- 合規性界限不適用於 eDiscovery 案例中的保留。 這表示一個機構中的 eDiscovery 管理員可以將使用者放在不同的代理人中。 不過，如果 eDiscovery 管理員搜尋置於保留狀態之使用者的內容位置，就會強制執行規范界限。 這表示 eDiscovery 管理員無法搜尋使用者的內容位置，即使他們可以將使用者保留。
+- 合規性界限不適用於 eDiscovery 案例中的保留。 這表示某家機構中的電子文件探索管理員可以保留不同機構中的使用者。 不過，如果電子文件探索管理員針對處於保留狀態的使用者搜尋其內容位置，則會強制執行合規性界限。 這表示電子文件探索管理員將無法搜尋使用者的內容位置，即使其可以保留使用者也沒有用。
 
-    此外，保留統計資料只會套用至代理人中的內容位置。
+    此外，保留統計資料只適用於機構中的內容位置。
 
-- 搜尋許可權篩選不適用於 Exchange 公用資料夾。
+- 如果您是指派「搜尋許可權」篩選 (信箱或網站篩選) ，而您嘗試匯出包含組織中所有 SharePoint 網站之搜尋的未編制索引項目目，您會收到下列錯誤訊息： `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied` 。 如果您是指派「搜尋許可權」篩選，而且想要從 SharePoint 匯出未編制索引的專案，則必須重新執行搜尋，並包含特定 SharePoint 網站進行搜尋。 否則，您只可以從包含所有 SharePoint 網站的搜尋中匯出已編制索引的專案。 如需有關匯出搜尋結果時的選項的詳細資訊，請參閱 [匯出內容搜尋結果](export-search-results.md#step-1-prepare-search-results-for-export)。
 
-## <a name="more-information"></a>其他資訊
+- 搜尋權限篩選不會適用於 Exchange 公用資料夾。
+
+## <a name="more-information"></a>詳細資訊
 
 - 如果信箱是取消授權或虛刪除的，Azure AD 屬性就不再同步處理至信箱。 如果信箱已被刪除時保留在信箱上，則保留在信箱中的內容仍受限於符合性界限或搜尋許可權篩選器（根據上次在刪除信箱前同步處理 Azure AD 屬性的時間）。 
 

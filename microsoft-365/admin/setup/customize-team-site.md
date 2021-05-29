@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 瞭解如何使用文件庫、清單和中樞來自訂、組織和管理您的 SharePoint 小組網站。
-ms.openlocfilehash: aca2b2ff147fdb030540712133b27eba706b0985
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244512"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706343"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自訂您的小組網站以進行檔案儲存與共享
 
@@ -103,15 +103,15 @@ View a 錄影若要將行事曆新增至您的網站，請參閱 [建立共用�
 
 當您管理小組網站時，您可能需要新增或移除使用者。 以下資訊可協助您瞭解、新增及管理小組網站上的使用者。
   
-透過 [瞭解和管理群組](https://docs.microsoft.com/learn/m365/)的群組來查看影片。 
+透過 [瞭解和管理群組](/learn/m365/)的群組來查看影片。 
   
 若要將使用者新增至 Microsoft 365 群組，請參閱[同時新增使用者和指派授權](../add-users/add-users.md)。
   
 瞭解如何處理 [設定和管理存取要求](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)的存取要求。
   
-## <a name="here-are-more-articles-you-might-be-interested-in"></a>以下是您可能會感興趣的更多文章
+## <a name="next-steps"></a>後續步驟
 
-- **設定平板電腦和手機上的 Office 應用程式**。 您必須這樣做才能從平板電腦或手機編輯儲存在小組網站上的檔案。 如果您的平板電腦或手機尚未安裝 Office App，則您只能檢視小組網站上的檔案，而無法編輯。 
+您必須在裝置上設定 Office 的應用程式，以便您可以從平板電腦或手機編輯儲存在小組網站上的檔案。 如果您的平板電腦或手機尚未安裝 Office App，則您只能檢視小組網站上的檔案，而無法編輯。 
     
   - [在 Android 上使用 Microsoft 365 安裝及設定 Office](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

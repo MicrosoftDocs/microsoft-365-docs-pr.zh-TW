@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 深入瞭解 Microsoft 預定。
-ms.openlocfilehash: 826cb84acace03aaf18bcb9d3a58fa5a518d71ee
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 深入瞭解 Microsoft 預約，適用于小型 businesss 的線上和行動應用程式，可為您的客戶提供預約預約。
+ms.openlocfilehash: f797a18616f63aea873ea5c1060a54dffbe078ef
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578744"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706223"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Microsoft 預約簡介
+
+## <a name="watch-overview-of-microsoft-bookings"></a>觀賞： Microsoft 預約簡介
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
@@ -35,7 +37,7 @@ Microsoft 預約是適用于小型企業的線上和行動應用程式，可在�
 
 ## <a name="get-started-with-bookings"></a>開始使用預定
 
-1. 若要開始登入 Microsoft 365，並從應用程式啟動器選取 [ **預定** ]。
+1. 若要開始登入 Microsoft 365，並從應用程式 **啟動器選取 [** 預約]。
 1. 在 [**預定**] 頁面上選擇 [**立即取得**]。
 1. 新增您的商務資訊，而且您已準備好開始使用預定。
 

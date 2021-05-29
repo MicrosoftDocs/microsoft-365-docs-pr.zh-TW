@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
-ms.openlocfilehash: 3c55619dc1193d7c41f8a52fc027f03f13f3c9ad
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: c1baf7fcd9189973864929550b19ca6e32d499ae
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759951"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706199"
 ---
 # <a name="get-started-with-the-roles-page"></a>「角色」頁面快速入門
 
@@ -33,7 +33,7 @@ ms.locfileid: "51759951"
 ![顯示系統管理員角色的圖形](../../media/roles-main-page.png)
 
 > [!TIP]
-> 正在尋找詳細的角色描述嗎？ 請參閱 [Azure Active Directory 中的系統管理員角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 和相關的系統 [管理角色](/microsoft-365/admin/add-users/about-admin-roles)。
+> 正在尋找詳細的角色描述嗎？ 請參閱 Azure Active Directory 和[相關管理角色](/microsoft-365/admin/add-users/about-admin-roles)[中的系統管理員角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
 ## <a name="about-the-admin-roles-page"></a>關於系統管理員角色頁面
 
@@ -43,7 +43,7 @@ ms.locfileid: "51759951"
 
 |||
 |:-----|:-----|
-|  <br/> |使用 [ **匯出系統管理員] 清單** 可取得組織中所有系統管理員使用者的完整清單。 清單儲存在 Excel .csv 檔案中。   <br/> |
+|  <br/> |使用 [ **匯出系統管理員] 清單** 可取得組織中所有系統管理員使用者的完整清單。 清單會儲存在 Excel .csv 檔案中。   <br/> |
 |  <br/> |使用 [ **搜尋** ] 搜尋系統管理員角色，並查看指派給該角色的使用者。   <br/> |
 |  <br/> |使用 **Filter** 變更所顯示之系統管理員角色的視圖。   <br/> |
 
@@ -76,11 +76,11 @@ ms.locfileid: "51759951"
 
 ### <a name="sharepoint-admin"></a>SharePoint 系統管理員
 
-當您購買 Microsoft 365 訂閱時，會自動建立小組網站，全域管理員會設為主要網站集合管理員。 將 SharePoint 系統管理員角色指派給您想要存取 SharePoint 系統管理中心的使用者。 具有 SharePoint 系統管理員角色的使用者可以建立及管理網站集合、指定網站集合管理員，以及管理使用者設定檔。 具有 SharePoint 系統管理員角色的使用者也可以管理 Microsoft 365 群組，並透過 Microsoft 支援服務要求開啟服務要求。 [深入了解](/sharepoint/sharepoint-admin-role)
+當您購買 Microsoft 365 訂閱時，會自動建立小組網站，全域管理員會設為主要網站集合管理員。 將 SharePoint 系統管理員角色指派給您想要存取 SharePoint 系統管理中心的使用者。 具有 SharePoint 系統管理員角色的使用者可以建立及管理網站集合、指定網站集合管理員，以及管理使用者設定檔。 具有 SharePoint 系統管理員角色的使用者也可以透過 Microsoft 支援部門管理 Microsoft 365 群組和開啟服務要求。 [深入了解](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Teams 服務管理員
 
-將「小組管理員」角色指派給您想要存取和管理小組 & Skype 系統管理中心的使用者。 擁有「小組管理員」角色的使用者也可以管理 Microsoft 365 群組，並透過 Microsoft 支援服務要求開啟服務要求。 [深入了解](/MicrosoftTeams/using-admin-roles)
+將 Teams 系統管理員角色指派給您想要存取和管理 Teams & Skype 系統管理中心的使用者。 具有 Teams 系統管理員角色的使用者也可以透過 Microsoft 支援部門管理 Microsoft 365 群組和開啟服務要求。 [深入了解](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>使用者系統管理員
 
@@ -96,8 +96,7 @@ ms.locfileid: "51759951"
 
 ![顯示系統管理員角色比較的圖形](../../media/compare-roles-list.png)
 
-## <a name="related-topics"></a>相關主題
+## <a name="related-content"></a>相關內容
 
-[關於 Microsoft 365 系統管理員角色](about-admin-roles.md)
-
-[指派系統管理員角色](assign-admin-roles.md)
+[關於 Microsoft 365 系統管理員角色](about-admin-roles.md) (文章) \
+[指派系統管理員角色](assign-admin-roles.md) (文章)
