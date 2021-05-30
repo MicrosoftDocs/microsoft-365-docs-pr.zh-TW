@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 在 Microsoft 365 中使用 Exchange Online 監視以取得電子郵件事件或建議的相關資訊。
-ms.openlocfilehash: 53dc7f990f57fd8d4da68bd424947676cbf0e85d
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
+ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572852"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52707293"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>適用於 Microsoft 365 的 Exchange Online 監視
 
@@ -49,9 +49,9 @@ ms.locfileid: "49572852"
 
 符合以下需求的客戶可以啟用此預覽： 
 
-- 組織必須擁有至少 10,000 個授權數，從一或下列產品的組合中：Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5。 
+- 組織必須擁有至少 5,000 個授權數來自以下一項或多項產品: Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5。 
 
-  例如，您的組織可以擁有 3,000 個 Office 365 E3 授權，以及 8,500 個 Microsoft 365 E5，這樣總計為 11,500 個授權產品即符合資格。
+  例如，您的組織可以擁有 3,000 個 Office 365 E3 授權，以及 2,500 個 Microsoft 365 E5，總計為 5,500 個合格產品的授權。
 
 - 您的組織每月至少需要有 50 位作用中 Exchange Online 使用者
 
@@ -95,10 +95,10 @@ ms.locfileid: "49572852"
 
 然後，確定您符合下列兩個需求： 
 
-- 組織必須擁有至少 10,000 個授權數，從一或下列產品的組合中：Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5。 
-- 您的組織每月至少需要有 50 位作用中 Exchange Online 使用者
+- 組織必須擁有至少 5,000 個授權數來自以下一項或多項產品: Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5。 
+- 您的組織每月至少需要有 50 位作用中 Exchange Online 使用者。
 
-如果組織的授權數量少於 10,000 位使用者，且每月作用中使用者少於 50 位，則必須先符合這些需求，才會啟用 Exchange Online 監視。
+如果組織的授權數量少於 5,000 位使用者，且每月作用中使用者少於 50 位，則必須先符合這些需求，才會啟用 Exchange Online 監視。
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. 儀表板中每個用戶端的作用中使用者數太低。 我們已將大量的作用中授權指派給使用者。 這代表什麼意思？ 
 
@@ -132,5 +132,5 @@ Microsoft 已在 Microsoft 365 系統管理中心的 **[服務健康情況]** �
 
 #### <a name="7-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>7. 顯示活動趨勢的案例資料在哪裡檢測？
 
-會在 Exchange Online 服務中檢測資料。 如果在要求到達 Exchange Online 前發生錯誤，或 Exchange Online 中發生錯誤，則活動訊號將會下降。
+會在 Exchange Online 服務中檢測資料。如果在要求到達 Exchange Online 前發生錯誤，或 Exchange Online 發生錯誤，則活動訊號將會下降。
 

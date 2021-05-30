@@ -1,8 +1,9 @@
 ---
 title: 文件瞭解和表單處理模型之間的差異
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: lauriellis
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,15 +13,14 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 描述文件瞭解和表單處理模型之間的差異
-ms.openlocfilehash: f12cc46e1ffcbc610f50ba327e22ad46a2591521
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: f19017ce8b748644177ac00f4daf7cb29ad522c6
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222266"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706507"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文件瞭解和表單處理模型之間的差異 
-
 
 Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 SharePoint 文件庫的文件，以及擷取每個檔案的相關資訊。  例如，當文件上傳到 SharePoint 文件庫時，所有識別為 *[採購單]* 的檔案都將被分類，然後顯示在自訂文件庫檢視中。 此外，還可以從每個檔案中提取特定資訊（例如，*PO 號* 和 *總額*），並將其作為欄顯示在文件庫檢視中。 
 
@@ -36,16 +36,14 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
 > [!NOTE]
 > 如需有關表單處理和文件瞭解案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](./adoption-getstarted.md)。
 
-
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>結構化、非結構化和半結構化內容
 
 使用文件瞭解模型從非結構化文件（如信件或合約）中識別和擷取資料，這些文件中要擷取的文字實體位於句子或文件的特定區域中。 例如，非結構化文件可以是可以用不同方式撰寫的合同續約函。 不過，資訊會持續存在於每個合同續約文件的本文中，例如文字字串 *服務開始日期* 後接著實際日期。
 
-使用表單處理模型來識別檔案並從結構化或半結構化文件（如表單或發票）中擷取資料。 表單處理模型經過訓練，能够從範例文件中瞭解表單的版面配置，並學會查找需要從類似位置擷取的資料。 表單通常具有更具結構化的版面配置，其中實體皆位於同一個位置 (例如，在稅務表單中的社會保險號碼)。
+使用表單處理模型來識別檔案並從結構化或半結構化文件（例如表單或發票）中擷取資料。表單處理模型經過訓練，能够從範例文件中瞭解表單的版面配置，並學會從類似位置查找您需要擷取的資料。當實體位於同一位置時（例如，納稅表中的社會安全編號），表單通常有更為結構化的版面配置。
 
 > [!NOTE]
 > 您必須具有内容中心網站的存取權限才能建立文件瞭解模型或將其套用至 SharePoint 文件庫。 
-
 
 ## <a name="where-models-are-created"></a>建立模型的位置
 
@@ -78,7 +76,7 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
 | 位置 | 訓練單一文件庫。| 可以適用於多個文件庫。|
 | 支援的檔案類型| 訓練 PDF、JPG、PNG 格式，總計 50 MB 和 500 頁。| 訓練 5 到 10 個 PDF、Office 或電子郵件檔案，包括負面範例。<br>Office 檔案會截斷為 64K 字元。 OCR 掃描的檔案限制為 20 頁。|
 | 與受管理的中繼資料整合 | 否 | 是，透過訓練實體擷取器參考已設定的受管理的中繼資料欄位。|
-| 啟用 Microsoft 資訊保護時的合規性功能整合 | 設定已發佈的保留標籤。<br>設定敏感度標籤即將推出。 | 設定已發佈的保留標籤。<br>設定敏感度標籤即將推出。 |
+| 啟用 Microsoft 資訊保護時的合規性功能整合 | 設定已發佈的保留標籤。<br>設定敏感度標籤即將推出。 | 設定已發佈的保留標籤。<br>設定已發佈的敏感度標籤。 |
 | 支援的地區| 表單處理依賴於 Power Platform。 有關 Power Platform 和 AI Builder 全域可用性的資訊，請參閱 [Power Platform 可用性](https://dynamics.microsoft.com/geographic-availability/)。 | 適用於所有地區。|
 | 交易成本 | 使用 AI Builder 點數。<br>點數可分批購買 1 百萬個。<br>購買超過 300 個 SharePoint Syntex 授權時，會包含 1 百萬個點數。<br>1 百萬個點數將允許處理 2000 個檔案頁面。<br>| N/A |
 | 容量 | 使用預設的 Power Platform 環境 (支援 Dataverse 資料庫的自訂環境)。 | 沒有容量限制。|

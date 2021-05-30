@@ -18,6 +18,8 @@
           href: microsoft-365-security-mde-redirection.md
         - name: 將適用於 Office 365 的 Defender 重新導向至 Microsoft 365 安全性中心
           href: microsoft-365-security-mdo-redirection.md
+        - name: Microsoft 365與 Azure Sentinel 的 Defender 整合
+          href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: 預覽功能
           href: preview.md
         - name: 針對問題進行疑難排解
@@ -118,7 +120,7 @@
                   items:
                     - name: 網路釣魚電子郵件
                       href: first-incident-path-phishing.md
-                    - name: '[身分識別]'
+                    - name: Identity
                       href: first-incident-path-identity.md
             - name: 事件回應行動手冊
               href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
