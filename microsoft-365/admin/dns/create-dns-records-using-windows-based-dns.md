@@ -1,5 +1,5 @@
 ---
-title: 使用以 Windows 為基礎的 DNS 建立 Microsoft 的 DNS 記錄
+title: 使用 Windows 基礎的 DNS 建立 Microsoft 的 dns 記錄
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,34 +20,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以在 Microsoft 的 Windows 基礎 DNS 上進行。
-ms.openlocfilehash: fd7c56b6db9fe5f5dbb0637ad5abcb40a64bef8f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype 線上和其他服務的 dns 記錄，以供 Microsoft Windows 型 DNS。
+ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876346"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706106"
 ---
-# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用以 Windows 為基礎的 DNS 建立 Microsoft 的 DNS 記錄
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用 Windows 基礎的 DNS 建立 Microsoft 的 dns 記錄
 
  若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
    
 如果您使用 Windows 型 DNS 託管自己的 DNS 記錄，請按照本文的步驟設定您電子郵件的記錄、商務用 Skype Online 等。
   
-若要開始，您必須 [在 Windows 型 dns 中尋找您的 dns 記錄](#find-your-dns-records-in-windows-based-dns) ，以便您進行更新。 此外，如果您想要將內部部署的 Active Directory 與 Microsoft 同步處理，請參閱 [在您的部署 Active directory 中做為 UPN 的非路由電子郵件地址](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)。
+若要開始，您必須[在 Windows 型 dns 中尋找您的 dns 記錄](#find-your-dns-records-in-windows-based-dns)，以便您進行更新。 此外，如果您想要將內部部署的 Active Directory 與 Microsoft 同步處理，請參閱 [在您的部署 Active directory 中做為 UPN 的非路由電子郵件地址](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)。
   
 新增 DNS 記錄後，出現郵件流程或其他問題的相關問題，請參閱 [疑難排解變更功能變數名稱或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>在 Windows 架構的 DNS 中尋您的 DNS 記錄
-<a name="BKMK_find_your_dns_1"></a>移至具有您網域之 DNS 記錄的頁面。 如果您是在 Windows Server 2008 中工作，請移至 **開始**  >  **執行**。 如果您是在 Windows Server 2012 中工作，請按 Windows 鍵和 **r**。 輸入 **dnsmgmnt**，然後選取 **[確定]**。 在 [DNS 管理員] 中，展開 [ **\<DNS server name\> \> 正向對應區域**]。 選取您的網域。 您現在可以建立 DNS 記錄了！
+<a name="BKMK_find_your_dns_1"></a>移至具有您網域之 DNS 記錄的頁面。 如果您正在 Windows Server 2008 中工作，請移至 **開始**  >  **執行**。 如果您正在 Windows Server 2012 中工作，請按 Windows 金鑰和 **r**。 輸入 **dnsmgmnt**，然後選取 **[確定]**。 在 [DNS 管理員] 中，展開 [ **\<DNS server name\> \> 正向對應區域**]。 選取您的網域。 您現在可以建立 DNS 記錄了！
    
 ## <a name="add-mx-record"></a>新增 MX 記錄
 <a name="BKMK_add_MX"> </a>
 
 新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft。
 - 您將新增的 MX 記錄會包含值 () 的 [ **點數** ] 值，此值如下所示： \<MX token\> MSxxxxxxx，其中 \<MX token\> 是類似的值。 
-- 從 Microsoft 的 [新增 DNS 記錄] 頁面的 [Exchange Online] 區段中的 [MX] 列中，複製列于 [位址] 底下的值。 您將會在您要建立的記錄中使用此值。 
-- 在網域的 [DNS 管理員] 頁面上，移至 [**動作**  >  **郵件交換器 (MX)**]。 若要尋找網域的此頁面，請參閱 [在 Windows 型 dns 中尋找您的 DNS 記錄](#find-your-dns-records-in-windows-based-dns)。  
+- 從 Microsoft 的 [新增 DNS 記錄] 頁面的 [Exchange Online] 區段中的 [MX] 列中，複製列于 [要處理的位置] 底下的值。 您將會在您要建立的記錄中使用此值。 
+- 在網域的 [DNS 管理員] 頁面上，移至 [**動作**  >  **郵件交換器 (MX)**]。 若要尋找網域的此頁面，請參閱[在 Windows 基礎型 DNS 中尋找您的 DNS 記錄](#find-your-dns-records-in-windows-based-dns)。  
 - 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值： 
     - 主機名稱:  
     - @Address：將點貼到您剛剛從 Microsoft 複製的位址值。  
@@ -119,7 +119,7 @@ ms.locfileid: "51876346"
 - 在您網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **文字] (TXT)**。 
 -  在 [ **新增資源記錄** ] 對話方塊中，確定欄位已設定為嚴格下列的值。 
  > [!IMPORTANT]
-> 在某些 Windows DNS 管理員版本中，可能已設定網域，因此當您建立 txt 記錄時，首頁名稱會預設為上層網域。 在此情況中，當您新增 TXT 記錄時，請將主機名稱設定為空白 (無值)，而不是將它設定為 @ 或網域名稱。 
+> 在某些版本的 Windows DNS 管理員中，可能已設定網域，因此當您建立 txt 記錄時，首頁名稱會預設為父項網域。 在此情況中，當您新增 TXT 記錄時，請將主機名稱設定為空白 (無值)，而不是將它設定為 @ 或網域名稱。 
 
 -  主機類型：@
 -  記錄類型： TXT
@@ -179,7 +179,7 @@ ms.locfileid: "51876346"
 -  在 [**新增資源記錄**] 對話方塊的 [**自訂主機名稱**] 區域中，確定欄位已設定為嚴格下列的值。 
 
 > [!IMPORTANT] 
-> 在某些 Windows DNS 管理員版本中，可能已設定網域，因此當您建立 txt 記錄時，首頁名稱會預設為上層網域。 在此情況中，當您新增 TXT 記錄時，請將主機名稱設定為空白 (無值)，而不是將它設定為 @ 或網域名稱。 
+> 在某些版本的 Windows DNS 管理員中，可能已設定網域，因此當您建立 txt 記錄時，首頁名稱會預設為父項網域。 在此情況中，當您新增 TXT 記錄時，請將主機名稱設定為空白 (無值)，而不是將它設定為 @ 或網域名稱。 
 
 - 主機名稱：@
 - 類型： TXT
@@ -208,8 +208,6 @@ ms.locfileid: "51876346"
 
 ## <a name="related-content"></a>相關內容
 
-[將網域從 Micrsoft 365 轉接至其他主機](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) (文章) 
-
-[從我的自訂網域試用 Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (文章) 
-
-[網域常見問題解答](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (篇) 
+[將網域從 Micrsoft 365 轉接至其他主機](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (篇) \
+[自訂網域的試驗 Microsoft 365](../misc/pilot-microsoft-365-from-my-custom-domain.md) (文章) \
+[網域常見問題集](../setup/domains-faq.yml) (文章)

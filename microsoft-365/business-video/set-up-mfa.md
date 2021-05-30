@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何在您的手機上設定多重要素驗證。
-ms.openlocfilehash: 4a4041777b055b03e2ab5efede72eca56afdf589
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 瞭解如何在您的手機上設定多重要素驗證（有時也稱為雙因素驗證）。
+ms.openlocfilehash: 16997961c4bbe405792c40d1f1d93c511e10e740
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578660"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705651"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>在您的手機上設定多重要素驗證
+
+## <a name="watch-set-up-multi-factor-authentication-with-a-mobile-device"></a>觀賞：設定行動裝置的多重要素驗證
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 
@@ -43,8 +45,8 @@ ms.locfileid: "51578660"
     - 選取 [ **使用驗證碼** ]，以在每次驗證時輸入新的驗證碼。
 1. 選擇 [ **設定**]。
 1. 保留電腦上的 [ **設定行動應用程式** ] 視窗開啟。
-1. 在行動裝置上，移至應用程式存放區，搜尋「Microsoft 驗證者」，然後選取並安裝它，然後開啟它。
-1. 在 [驗證程式] 中，遵循提示完成嚮導，然後選擇加號 (+) sign 以新增您的帳戶。
+1. 在行動裝置上，移至應用程式存放區，搜尋 "Microsoft Authenticator]，然後選取並安裝它，然後開啟它。
+1. 在 Authenticator 中，遵循提示完成嚮導，然後選擇加號 (+) 符號，以新增您的帳戶。
 1. 選擇 [ **公司或學校帳戶**]，然後選擇 [當系統提示是否允許拍照及錄製影片時 **允許** ]，然後依照指示掃描電腦上開啟的視窗中的 QR 碼。
 1. 在新增帳戶後，請選擇 [ **獲得**]。
 1. 在您的電腦上選擇 **[下一步**]，然後再選擇 [ **下一步]** 。
