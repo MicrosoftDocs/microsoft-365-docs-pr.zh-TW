@@ -110,12 +110,14 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: 建立精確資料比對活動的通知 (預覽)
           href: sit-edm-notifications-activities.md
-        - name: 建立自訂敏感性資訊類型 - 安全性與合規性中心
+        - name: 建立自訂敏感性資訊類型 - 合規性中心
           href: create-a-custom-sensitive-information-type.md
         - name: '建立自訂的敏感性資訊類型 - PowerShell '
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: 建立關鍵字字典
           href: create-a-keyword-dictionary.md
+        - name: 修改關鍵字字典
+          href: sit-modify-keyword-dictionary.md
         - name: 文件指紋
           href: document-fingerprinting.md
     - name: 可訓練分類器
@@ -124,8 +126,6 @@
           href: classifier-learn-about.md
         - name: 開始使用可訓練分類器
           href: classifier-get-started-with.md
-        - name: 如何重新定型通訊合規性的分類器
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: 如何重新定型內容總管的分類器
           href: classifier-how-to-retrain-content-explorer.md
     - name: 資料分類

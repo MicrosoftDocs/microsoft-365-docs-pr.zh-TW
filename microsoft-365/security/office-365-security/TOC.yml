@@ -20,8 +20,6 @@
           items:
             - name: Exchange Online Protection 概觀
               href: exchange-online-protection-overview.md
-            - name: EOP 功能
-              href: eop-features.md
             - name: EOP 中的郵件流程
               href: mail-flow-in-eop.md
             - name: 隔離
