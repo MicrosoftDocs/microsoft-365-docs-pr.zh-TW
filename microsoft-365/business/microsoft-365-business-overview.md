@@ -28,13 +28,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: 了解 Microsoft 365 商務進階版，這是一項訂閱服務，其中包含 Office 生產力應用程式和供企業防禦網路威脅的進階防護。
-ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 深入瞭解 Microsoft 365 商務進階版，包括 Office 應用程式，以及抵禦網路威脅的高級防護。
+ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244849"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705515"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商務進階版的概觀
 
@@ -42,7 +42,7 @@ ms.locfileid: "52244849"
 
 Microsoft 365 商務進階版 (之前稱為 Microsoft 365 商務版) 是一項全面的訂閱服務，適用於員工人數低於 300 人的企業。 它整合了您最愛的 Office 生產力應用程式和服務，以及 Microsoft Teams 等共同作業工具，並具有進階安全性和裝置管理功能。
 
-觀看此影片，快速了解 Microsoft 365 商務進階版的概觀。<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>觀賞：何謂 Microsoft 365 商務進階版
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -105,7 +105,7 @@ Microsoft 365 商務進階版透過下列方式，協助 **針對威脅防禦**�
 
 若要查看完整的安全性功能清單，請參閱 [Microsoft 365 商務進階版安全性功能](security-features.md)。 [設定 Microsoft 365 商務進階版](set-up.md)之後，請參閱[增加威脅防護](increase-threat-protection.md)和[設定合規性功能](set-up-compliance.md)，以開始使用未隨著引導式設定包含的安全性功能。 如需有關如何設定保護以抵禦網路罪犯和駭客的良好概觀，請參閱[保護 Office 365 和 Microsoft 365 商務進階版方案前的十大方法](/office365/admin/security-and-compliance/secure-your-business-data)。
 
-## <a name="get-microsoft-365-business-premium"></a>取得 Microsoft 365 商務進階版
+## <a name="next-steps"></a>後續步驟
 
 - 如果您有合作夥伴，他們將取得 Microsoft 365 商務進階版：[從 Microsoft 合作夥伴中心取得 Microsoft 365 商務進階版](get-microsoft-365-business.md)。
 

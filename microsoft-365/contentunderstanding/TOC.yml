@@ -32,6 +32,8 @@
       href: create-a-form-processing-model.md
     - name: 套用保留標籤
       href: apply-a-retention-label-to-a-model.md
+    - name: 套用敏感度標籤
+      href: apply-a-sensitivity-label-to-a-model.md
     - name: 模型使用情況分析
       href: model-usage-analytics.md
     - name: 在建立擷取器時運用字詞庫分類法

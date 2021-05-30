@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何變更您為商務版訂閱收費的頻率。
 ms.date: 04/02/2021
-ms.openlocfilehash: 010857d9092ef62d11e1b7c6019f2fe0eaafb58f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 529003210e37897f8c1e0d30a692a6f3a1464a80
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537340"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705567"
 ---
 # <a name="change-your-billing-frequency"></a>變更您的帳單頻率
 
@@ -39,10 +39,7 @@ ms.locfileid: "52537340"
 
 ## <a name="related-content"></a>相關內容
 
-[查看您的帳單或發票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (文章) 
-
-[為您的訂閱付費](../../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) 
-
-[瞭解如何尋找及查看您的帳單或發票](view-your-bill-or-invoice.md) (文章) 
-
+[檢視帳單](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (文章)\
+[為您的訂閱付費](../../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) \
+[瞭解如何尋找及查看您的帳單或發票](view-your-bill-or-invoice.md) (文章) \
 [變更您的帳單位址](change-your-billing-addresses.md) (文章) 
