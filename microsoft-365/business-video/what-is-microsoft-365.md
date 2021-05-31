@@ -17,20 +17,21 @@ ms.custom:
 - adminvideo
 search.appverid:
 - MET150
-description: 了解 Microsoft 365 商務進階版功能。
+description: 了解 Microsoft 365 商務進階版，一份可為您照顧 IT 組件的訂閱服務。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 336d206b3853baa2bdde5d925113dc0887919da7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3f0c184cd0e0e6392f66d049b46930031e054bbe
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245177"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705663"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 商務進階版
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
+## <a name="watch-what-is-microsoft-365-business-premium"></a>觀看：什麼是 Microsoft 365 商務進階版？
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 
 Microsoft 365 商務進階版是一種訂閱服務，它允許您在雲段中執行組織，而Microsoft 則負責為您管理 IT、管理裝置、防範實際威脅、並為您的組織提供最新的商務軟體。
 
