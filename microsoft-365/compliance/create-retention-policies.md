@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 1faeae5dc145d6f908f9137387b875c890d22e14
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280424"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710691"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -54,7 +54,7 @@ ms.locfileid: "52280424"
 - Teams 通道訊息
 - Teams 聊天
 - Yammer 社群訊息
-- Yammer 私人訊息
+- Yammer 使用者訊息
 
 建立保留原則時若選取 Teams 或 Yammer 位置，系統會自動排除另一個位置。 這表示，應遵循的指示將取決於您是否要包含 Teams 或 Yammer 位置而定：
 
@@ -130,11 +130,11 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
     
     請勿選取 [使用進階保留設定 **]**，因為 Yammer 位置不支援此選項。 
 
-4. 在 [選擇位置 **]** 頁面上，選取 [讓我選擇特定位置 **]**。 然後將 Yammer 的一個或兩個位置切換為開啟：**Yammer 社群訊息** 和 **Yammer 私人訊息**。
+4. 在 [選擇位置 **]** 頁面上，選取 [讓我選擇特定位置 **]**。 然後將 Yammer 的一個或兩個位置切換為開啟：**Yammer 社群訊息** 和 **Yammer 使用者訊息**。
     
     預設會選取所有社群和使用者，但是您可以指定要包含或排除的社群和使用者，以縮小範圍。
     
-    針對 Yammer 私人訊息： 
+    針對 Yammer 使用者訊息： 
     - 如果您保留預設值 **全部**，將不會包含 Azure B2B 來賓使用者。 
     - 如果您選取 [選擇使用者 **]**，就可以將保留原則套用至外部使用者 (如果您知道其帳戶)。
 

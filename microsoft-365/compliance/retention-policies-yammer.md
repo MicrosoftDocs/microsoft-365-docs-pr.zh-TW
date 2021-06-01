@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Yammer 的保留原則。
-ms.openlocfilehash: 0426fdf04090e535a99f8acd3bf376adfb016796
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b99d0915cfb159f821818fb1425d7191a011351
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917799"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710703"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解 Yammer 的保留
 
@@ -49,7 +49,7 @@ ms.locfileid: "50917799"
 
 您可以使用保留原則來保留及刪除 Yammer 中的社群訊息和私人訊息。 私人訊息會儲存在訊息中包含的每個使用者信箱的隱藏資料夾中，而社群訊息則會儲存在社群群組信箱中的類似隱藏資料夾中。
 
-Yammer 訊息不受針對使用者或群組信箱設定的保留原則影響。 儘管 Yammer 訊息會儲存在 Exchange 中，此 Yammer 資料只會由針對 **Yammer 社群訊息** 和 **Yammer 私人訊息** 位置設定的保留原則包含。
+Yammer 訊息不受針對使用者或群組信箱設定的保留原則影響。 儘管 Yammer 訊息會儲存在 Exchange 中，此 Yammer 資料只會由針對 **Yammer 社群訊息** 和 **Yammer 使用者訊息** 位置設定的保留原則包含。
 
 > [!NOTE]
 > 如果使用者包含在保留 Yammer 資料的作用中保留原則中，且您刪除了包含在此原則中使用者的信箱，若要保留此 Yammer 資料，該信箱會轉換成[非作用中信箱](inactive-mailboxes-in-office-365.md)。 如果您不需要為使用者保留此 Yammer 資料，請在刪除其信箱之前先將該使用者帳戶從保留原則排除。
@@ -88,13 +88,13 @@ Yammer 訊息不受針對使用者或群組信箱設定的保留原則影響。 
 
 ## <a name="messages-and-external-users"></a>訊息和外部使用者
 
-根據預設，Yammer 私人訊息的保留原則會套用至貴組織中的所有使用者，但不會套用至外部使用者。 如果您使用 [選擇使用者 **]** 並指定其帳戶，則可以將保留原則套用至外部使用者。 
+根據預設，Yammer 使用者訊息的保留原則會套用至貴組織中的所有使用者，但不會套用至外部使用者。 如果您使用 [選擇使用者 **]** 並指定其帳戶，則可以將保留原則套用至外部使用者。 
 
 目前不支援 Azure B2B 來賓使用者。
 
 ## <a name="when-a-user-leaves-the-organization"></a>當使用者離開組織時 
 
-如果某位使用者離開您的組織，且其 Microsoft 365 帳戶被刪除，則其要保留的 Yammer 私人訊息會儲存在非作用中的信箱中。 這些訊息仍受限於在他們的信箱被設成非作用中之前，對使用者設定的任何保留原則，且內容可供電子文件探索搜尋。 如需詳細資訊，請參閱 [Exchange Online 中的非作用中信箱](inactive-mailboxes-in-office-365.md)。 
+如果某位使用者離開您的組織，且其 Microsoft 365 帳戶被刪除，則其要保留的 Yammer 使用者訊息會儲存在非作用中的信箱中。 這些訊息仍受限於在他們的信箱被設成非作用中之前，對使用者設定的任何保留原則，且內容可供電子文件探索搜尋。 如需詳細資訊，請參閱 [Exchange Online 中的非作用中信箱](inactive-mailboxes-in-office-365.md)。 
 
 如果使用者將所有檔案儲存在 Yammer 中，請參閱適用於 SharePoint 和 OneDrive 的[同等小節](retention-policies-sharepoint.md#when-a-user-leaves-the-organization)。
 
@@ -102,7 +102,7 @@ Yammer 訊息不受針對使用者或群組信箱設定的保留原則影響。 
 
 Yammer 保留原則目前處於預覽，且我們會持續努力將保留功能最佳化。 在此同時，當您對 Yammer 社群訊息和私人訊息使用保留時，請注意下列限制：
 
-- 當您針對 [Yammer 私人訊息 **]** 位置選取 [選擇使用者 **]** 時，您可能會看到來賓和非信箱使用者。 保留原則並非為這些使用者設計，因此請不要選取他們。
+- 當您針對 [Yammer 使用者訊息 **]** 位置選取 [選擇使用者 **]** 時，您可能會看到來賓和非信箱使用者。 保留原則並非為這些使用者設計，因此請不要選取他們。
 
 ## <a name="configuration-guidance"></a>配置指導方針
 

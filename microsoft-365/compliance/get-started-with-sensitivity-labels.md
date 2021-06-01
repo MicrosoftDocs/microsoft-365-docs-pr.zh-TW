@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始部署敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: c87289fc7017e75db3b8a5b84a8af3a42dc16a10
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302109"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689118"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -102,7 +102,7 @@ ms.locfileid: "52302109"
 - 針對內建標籤：**[深入了解]** 功能表選項。
 - 針對 Azure 資訊保護統一標籤用戶端：**[說明與意見反應]** 功能表選項 > Microsoft Azure 資訊保護對話方塊中的 **[顯示詳細資訊]** 連結。
 
-為了協助您撰寫自訂文件，請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 敏感度標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880)。 
+若要協助您提供自訂的文件，請參閱下列您可用於協助訓練使用者的網頁和下載：[敏感度標籤的使用者訓練](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/)。 
 
 您也可以使用下列資源來取得基本指示：
 
