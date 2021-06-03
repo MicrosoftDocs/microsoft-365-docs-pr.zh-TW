@@ -593,11 +593,6 @@
 ###### [使用 PowerShell 進階搜尋](run-advanced-query-sample-powershell.md)
 ###### [使用 OData 查詢](exposed-apis-odata-samples.md)
 
-#### [原始資料串流 API]()
-##### [原始資料串流](raw-data-export.md)
-##### [將進階搜尋事件串流到 Azure 事件中樞](raw-data-export-event-hub.md)
-##### [將進階搜尋事件串流到您的儲存體帳戶](raw-data-export-storage.md)
-
 #### [SIEM 整合]()
 ##### [了解威脅情報概念](threat-indicator-concepts.md)
 ##### [了解提取偵測的不同方式](configure-siem.md)
