@@ -1,7 +1,7 @@
 ---
 title: 支援的 Microsoft 365 Defender API
 description: 支援的 Microsoft 365 Defender API
-keywords: Microsoft 365 Defender、APIs、api
+keywords: Microsoft 365Defender、APIs、api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f2c66dca326589807f5712c5548c177a0d08ade0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c10b2863503a5bda829cbf67379a606b687ac2e3
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935722"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730939"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>支援的 Microsoft 365 Defender API 
 
@@ -43,6 +43,7 @@ ms.locfileid: "51935722"
 -|-
 [進階搜捕 API](api-advanced-hunting.md) | 執行高級搜尋查詢。
 [事件 API](api-incident.md) | 列出和更新事件，以及其他實用工作。
+[流式 API](../defender-endpoint/raw-data-export.md) (預覽)  | 在單一資料流程中發生即時事件及警示。
 
 ### <a name="endpoint-uris"></a>端點 URIs
 
@@ -58,7 +59,8 @@ ms.locfileid: "51935722"
 
 ## <a name="related-articles"></a>相關文章
 
-- [Microsoft 365 Defender APIs 概述](api-overview.md)
+- [Microsoft 365Defender APIs 概述](api-overview.md)
 - [存取 Microsoft 365 Defender APIs](api-access.md)
+- [流式處理 API](../defender-endpoint/raw-data-export.md)
 - [深入瞭解 API 限制和授權](api-terms.md)
 - [瞭解錯誤碼](api-error-codes.md)

@@ -17,30 +17,30 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以瞭解如何使用攻擊模擬訓練，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 Plan 2 組織中執行模擬網路釣魚和密碼攻擊。
+description: 系統管理員可以瞭解如何使用攻擊模擬訓練，在其 Microsoft 365 E5 或 Microsoft Defender 中對 Office 365 計畫2組織執行模擬網路釣魚和密碼攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e344153ef433bc13b16136e584ec4da73fcef6a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a5986bbeebd49223ebfd74773346f27fc5297243
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203471"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730900"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>開始使用攻擊模擬訓練
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-如果您的組織有 Microsoft 365 E5 或 Microsoft Defender for Office 365 Plan 2 （包括 [威脅調查和回應功能](office-365-ti.md)），您可以使用 Microsoft Security Center 中的「攻擊模擬訓練」，在您的組織中執行現實的攻擊案例。 這些模擬的攻擊可協助您找出並找出有漏洞的使用者，而真實的攻擊會影響您的下一行。 若要深入瞭解，請閱讀本文。
+如果您的組織有 Microsoft 365 E5 或 Microsoft Defender 用於 Office 365 計畫2（包括[威脅調查和回應功能](office-365-ti.md)），您可以使用 Microsoft Security Center 中的攻擊模擬訓練，在您的組織中執行實際的攻擊案例。 這些模擬的攻擊可協助您找出並找出有漏洞的使用者，而真實的攻擊會影響您的下一行。 若要深入瞭解，請閱讀本文。
 
 > [!NOTE]
-> 攻擊模擬訓練會取代 [Microsoft Defender For Office 365 中](attack-simulator.md)所述的舊攻擊模擬器 v1 體驗。
+> 攻擊模擬訓練會取代[Microsoft Defender 中 Office 365 的攻擊模擬器中](attack-simulator.md)所述的舊攻擊模擬器 v1 經驗。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 若要開啟 Microsoft 安全中心，請移至 <https://security.microsoft.com/> 。 攻擊模擬訓練可在 **電子郵件和協同** 作業的 \> **攻擊模擬訓練** 中取得。 若要直接進入攻擊模擬訓練，請開啟 <https://security.microsoft.com/attacksimulator> 。
 
-- 如需不同 Microsoft 365 訂閱中的攻擊模擬訓練可用性的相關資訊，請參閱 [Microsoft Defender For Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+- 如需不同 Microsoft 365 訂閱中的攻擊模擬訓練可用性的相關資訊，請參閱[Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
 - 您必須在安全性 & 合規性中心或 Azure Active Directory 中指派許可權，才能執行本文中的程式。 具體說來，您必須是 **組織管理**、 **安全性管理員** 或下列其中一個角色的成員：
   - **攻擊模擬器管理員**：建立及管理攻擊類比活動的所有層面。
@@ -50,7 +50,12 @@ ms.locfileid: "51203471"
 
 - 攻擊模擬訓練沒有對應的 PowerShell Cmdlet。
 
-- 攻擊類比和訓練相關的資料會與其他 Microsoft 365 服務的客戶資料一起儲存。 如需詳細資訊，請參閱 [Microsoft 365 資料位置](../../enterprise/o365-data-locations.md)。 可在下列地區取得攻擊模擬： <、APC、EUR、IND、CAN、澳大利亞、FRA、GBR、JPN 和 KOR。
+- 攻擊類比和訓練相關資料會與其他客戶資料一起儲存，以供 Microsoft 365 服務使用。 如需詳細資訊，請參閱[Microsoft 365 資料位置](../../enterprise/o365-data-locations.md)。 可在下列地區取得攻擊模擬： <、APC、EUR、IND、CAN、澳大利亞、FRA、GBR、JPN 和 KOR。
+
+- 在 15 2021 年6月為止，GCC 中提供攻擊模擬訓練。 如果您的組織有 Office 365 G5 GCC 或 Microsoft Defender for a Office 365 (Plan 2) 為政府，您可以使用 Microsoft Security Center 中的「攻擊模擬訓練」，在組織中執行實際的攻擊案例，如本文所述。 GCC 高或 DoD 環境中尚未提供攻擊模擬訓練。
+
+> [!NOTE]
+> 攻擊模擬訓練為 E3 客戶提供一項功能的子集，以作為試用版。 試用版產品包含使用認證收集負載的功能，以及可選取「ISA 網路釣魚」或「大量市場網路釣魚」訓練經驗的功能。 其他功能都不是 E3 試用版產品的一部分。
 
 ## <a name="simulations"></a>類比
 
@@ -64,7 +69,7 @@ ms.locfileid: "51203471"
 
 - **附件中的連結**：這是認證搜集的混合。 攻擊者會傳送包含附件內之 URL 的郵件給收件者。 當收件者開啟附件並按一下 URL 時，他們會進入網站，其中通常會顯示對話方塊，詢問使用者輸入使用者的使用者名稱和密碼。 通常，目的頁面會有主題代表已知的網站，以便在使用者中建立信任。
 
-- **惡意程式碼連結**：攻擊者會傳送收件者一封郵件，其中包含已知檔案共用 (網站上附件的連結（例如，SharePoint 線上或 Dropbox) ）。 當收件者按一下 URL 時，附件隨即開啟，並隨意執行程式碼 (例如，在使用者的裝置上執行宏) ，以協助攻擊者安裝其他程式碼或進行進一步的 entrench。
+- **惡意程式碼連結**：攻擊者會傳送收件者一封郵件，其中包含已知檔案共用 (網站上附件的連結，例如，SharePoint 線上或 Dropbox) 。 當收件者按一下 URL 時，附件隨即開啟，並隨意執行程式碼 (例如，在使用者的裝置上執行宏) ，以協助攻擊者安裝其他程式碼或進行進一步的 entrench。
 
 - **磁片磁碟機-依 url**：攻擊者會傳送包含 url 的郵件給收件者。 當收件者按一下 URL 時，會進入嘗試執行背景代碼的網站。 此背景程式碼會嘗試收集收件者的相關資訊，或在其裝置上部署任意程式碼。 通常，目的地網站是眾所周知的網站，已遭到損害或眾所周知的網站複本。 熟悉此網站可協助說服使用者可安全地按一下連結。 此技術也稱為「 _watering 洞」攻擊_。
 
@@ -111,4 +116,4 @@ ms.locfileid: "51203471"
 如需如何透過報告取得深入瞭解的逐步指示，請參閱 [透過攻擊模擬訓練取得深入](attack-simulation-training-insights.md)瞭解。
 
 > [!NOTE]
-> 攻擊模擬程式使用 Office 365 的安全連結，以安全地追蹤傳送至網路釣魚活動收件者的負載郵件中的 URL 的資料，即使 [安全連結原則] 中的 [ **不要追蹤使用者點擊** ] 設定也是一樣。
+> 攻擊模擬程式使用 Office 365 的安全連結，以安全地追蹤傳送至網路釣魚活動收件者的負載郵件中之 URL 的資料，即使開啟 [安全連結原則] 中的 [**不要追蹤使用者點擊**] 設定也是一樣。

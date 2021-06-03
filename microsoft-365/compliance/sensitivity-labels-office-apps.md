@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 適用於 IT 系統管理員的資訊，用於在傳統型、行動裝置和網頁版 Office 應用程式中管理敏感度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd3f1e7329612755a1806b5d9af8e13f07790cd6
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a7ac7415ce5e7f88b21128846b7cff957e388fd5
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625122"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730375"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中管理敏感度標籤
 
@@ -387,54 +387,24 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Outlook 特定的預設標籤和強制標籤選項
 
-對於內建標籤，請使用此頁上的 [Outlook 功能表](#sensitivity-label-capabilities-in-outlook)以及 **預設標籤和強制標籤的不同設定** 列來識別支援這些功能的最低版本 Outlook。
+對於內建標籤，請使用此頁上的 [Outlook 功能表](#sensitivity-label-capabilities-in-outlook)以及 **預設標籤和強制標籤的不同設定** 列來識別支援這些功能的最低版本 Outlook。 所有版本的 Azure 資訊保護統一標籤用戶端都支援這些 Outlook 特定選項。
 
-根據預設，如果選取標籤原則設定 **根據預設將此標籤套用至文件和電子郵件** 和 **要求使用者將標籤套用至其電子郵件或文件**，則設定選擇將套用至電子郵件和文件。
+當 Outlook 應用程式支援的預設標籤設定與文件的預設標籤設定不同時：
 
-要對電子郵件套用不同的設定，請使用 PowerShell 進階設定：
+- 在標籤原則精靈的 **套用預設標籤至電子郵件** 頁面上，您可以指定要套用至所有未標記電子郵件的敏感度標籤，或不要預設標籤。 此設定與精靈上一個 **文件的原則設定** 頁面上的 **預設將此標籤套用到文件** 設定無關。
 
-- **OutlookDefaultLabel**：如需 Outlook 套用其他預設標籤或不套用任何標籤，請使用此設定。
+當 Outlook 應用程式不支援與文件預設標籤設定不同的預設標籤設定時：Outlook 會一律使用您在標籤原則精靈的 **文件的原則設定** 頁面上為 **預設將此標籤套用到文件** 設定指定的值。
 
-- **DisableMandatoryInOutlook**：如需 Outlook 不提示使用者為未標記的電子郵件選取標籤，請使用此設定。
+當 Outlook 應用程式支援關閉強制標籤時：
 
-有關使用 PowerShell 設定這些設定的詳細資訊，請參閱下一節。
+- 在標籤原則精靈的 **原則設定** 頁面上，選取 **要求使用者將標籤套用到其電子郵件或文件**。 然後選取 **下一步** > **下一步**，清除 **要求使用者將標籤套用到其電子郵件** 核取方塊。 如果您想要強制將標籤套用到電子郵件以及文件，請保留選取核取方塊。
 
-### <a name="powershell-advanced-settings-outlookdefaultlabel-and-disablemandatoryinoutlook"></a>PowerShell 進階設定 OutlookDefaultLabel 和 DisableMandatoryInOutlook
+當 Outlook 應用程式不支援關閉強制標籤時：如果您選取 **要求使用者將標籤套用到其電子郵件或文件** 的原則設定，Outlook 會一律提示使用者為未標記電子郵件選取標籤。
 
-使用具有 *AdvancedSettings* 參數的 PowerShell，以及來自 [安全性與合規性中心 PowerShell](/powershell/module/exchange/set-labelpolicy) 的 [Set-LabelPolicy](/powershell/module/exchange/new-labelpolicy) 和 [New-LabelPolicy](/powershell/exchange/scc-powershell) cmdlet 可以支援這些設定。 以前只有 Azure 資訊保護統一標籤用戶端支援這兩種進階設定，現在內建標籤支援這兩種設定。
-
-PowerShell 範例，其中標籤原則命名為 **全域**：
-
-- 要免除 Outlook 的預設標籤：
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
-    ````
-
-- 要免除 Outlook 強制標籤，請執行以下動作：
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
-    ````
-
-目前，只有 OutlookDefaultLabel 和 DisableMandatoryInOutlook 是內建標籤和 Azure 資訊保護用戶端都支援的 PowerShell 進階設定。
-
-其他 PowerShell 進階設定僅支援 Azure 資訊保護用戶端。 有關為 Azure 資訊保護用戶端使用進階設定的更多資訊，請參閱[管理指南：Azure 資訊保護統一標籤用戶端的自訂設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell)。
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>指定進階設定的 PowerShell 提示
-
-若要為 Outlook 指定其他預設標籤，請依標籤的 GUID 加以識別。 要尋找此值，可使用以下命令：
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-要從標籤原則中移除這些進階設定之一，請使用相同的 AdvancedSettings 參數語法，但請指定 Null 字串值。例如：
-
-````powershell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
-````
-
+> [!NOTE]
+> 如果您已經使用 [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) 或 [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) Cmdlet 設定 PowerShell 進階設定 **OutlookDefaultLabel** 和 **DisableMandatoryInOutlook**：
+> 
+> 您為這些 PowerShell 設定所選擇的值會反映在標籤原則精靈中，並自動適用於支援這些設定的 Outlook 應用程式。 其他 PowerShell 進階設定仍然只適用於 Azure 資訊保護統一標籤用戶端。
 
 ## <a name="end-user-documentation"></a>使用者文件
 

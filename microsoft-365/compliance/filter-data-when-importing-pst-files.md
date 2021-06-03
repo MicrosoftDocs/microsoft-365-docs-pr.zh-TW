@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
-description: 瞭解如何在將 PST 檔案匯入 Office 365 時，使用 Office 365 匯入服務中的智慧匯入功能來篩選資料。
-ms.openlocfilehash: fb978332f70495044a457147d29d8cdcf1194264
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+description: 瞭解如何在將 PST 檔案匯入 Microsoft 365 時，使用 Microsoft 365 匯入服務中的智慧匯入功能來篩選資料。
+ms.openlocfilehash: fc89467e3ea9c0af86ec6b9ef6a9d7d61079e116
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684050"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730567"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>匯入 PST 檔案時篩選資料
 
-使用 Office 365 匯入服務中的新智慧匯入功能，篩選實際匯入至目標信箱的 PST 檔案中的專案。 以下為運作方式：
+使用 Microsoft 365 匯入服務中的新智慧匯入功能，篩選實際匯入至目標信箱的 PST 檔案中的專案。 以下為運作方式：
   
 - 在您建立並送出 PST 匯入工作之後，PST 檔案會上傳至 Microsoft 雲端中的 Azure 儲存體區域。
   
@@ -64,9 +64,9 @@ ms.locfileid: "52684050"
 
 在您建立 PST 匯入工作之後，請遵循下列步驟，在將資料匯入至 Office 365 之前先加以篩選。
   
-1. 前往 <https://compliance.microsoft.com>，然後使用您組織中系統管理員帳戶的認證來登入。
+1. 移至 <https://compliance.microsoft.com>，然後使用您組織中的系統管理員帳戶認證來登入。
     
-2. 在 Microsoft 365 規範中心的左窗格中，按一下 [**資訊管理** 匯 \> **入**]。
+2. 在 [Microsoft 365 合規性中心] 的左窗格中，按一下 **[資訊控管]** \> **[匯入]**。
     
     您的組織的匯入工作會列在 [匯 **入**] 索引標籤上。[**狀態**] 欄中的 [**分析完成**] 值會指出已 Microsoft 365 進行分析的匯入工作，並且已準備好要匯入。
     
@@ -113,7 +113,7 @@ ms.locfileid: "52684050"
   
     ![資料洞察力會根據您的篩選設定進行更新](../media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. 按 [下一步 **]**。
+    d. 按一下 [**下一步**]。
   
     隨即會顯示 [狀態] 頁面，顯示篩選設定。 同樣的，您也可以編輯任何篩選設定。
   

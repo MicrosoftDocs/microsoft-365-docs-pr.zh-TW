@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 電子郵件轉寄功能可讓您將傳送至 Microsoft 365 使用者信箱的電子郵件轉寄至組織內部或外部的其他信箱。
-ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: dfea738f5d786b6e476dd02dc92fd0aef452d62f
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698913"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730135"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>設定 Microsoft 365 中的電子郵件轉寄功能
 
@@ -57,7 +57,16 @@ ms.locfileid: "52698913"
 
 4. 在 [電子郵件轉寄] 頁面上，選取 [ **轉寄所有傳送至此信箱的電子郵件**]，輸入轉寄位址，然後選擇是否要保留轉寄電子郵件的副本。 如果您未看到此選項，請確定已將授權指派給使用者帳戶。 選取 **[儲存變更]**。
 
-    **若要轉寄至多個電子郵件地址**，您可以要求使用者在 Outlook 中設定規則，以轉寄位址。 若要深入瞭解，請參閱 [使用規則來自動轉寄郵件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。
+    **若要轉寄至多個電子郵件地址**，您可以要求使用者在 Outlook 中設定規則，以轉寄位址。 
+    
+    1.  開啟 **outlook**  >  **Home**  >   **規則**> 選取 [**管理規則 & 警示**]
+    1. 選取 [**新增規則**]  >  **選取 [在我收到的郵件上** 的套用規則] 清單中，然後按 **[下一步]**。
+    1. 當要求此規則會套用至您收到的每封郵件時，請按一下 **[是]** 。 
+    1. 在下一個清單中，選取 [動作重新 **導向至人員或公用群組** ]， **停止處理其他規則**
+    1. 在視窗的下方，按一下帶底線片語的 [ **人員] 或 [公用群組** ]。
+    1. 在 [至] 欄位中，輸入要轉寄郵件的 **電子郵件地址** ，然後按一下 **[確定]**。
+    1. 選取 **完成**
+    
 
      或者，在系統管理中心 [建立通訊群組](../setup/create-distribution-lists.md)， [新增位址](add-user-or-contact-to-distribution-list.md)，然後使用本文中的指示，將轉寄設定為指向 DL。
 

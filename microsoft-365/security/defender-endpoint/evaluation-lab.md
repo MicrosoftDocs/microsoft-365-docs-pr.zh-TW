@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed2165c0102170256f50964180a550d8eccbce8c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f6ef1d3dbc111e5d10bf4d3c42dfd08e5e9d63e3
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932784"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730620"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評估實驗室
 
@@ -45,14 +45,14 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 
 您將擁有平臺強大功能的完整存取權，例如自動化調查、高級搜尋和威脅分析，可讓您測試已提供的 Defender for Endpoint 的綜合保護堆疊。 
 
-您可以將預先設定的 Windows 10 或 Windows Server 2019 裝置，新增至適當的作業系統版本和正確的安全性元件，以及已安裝的 Office 2019 Standard。
+您可以將預先設定的 Windows 10 或 Windows 伺服器2019裝置，新增至適當的作業系統版本和正確的安全性元件，以及已安裝 Office 2019 Standard。
 
 您也可以安裝威脅模擬器。 Defender for Endpoint 已與業界領先的威脅類比平臺合作，協助您測試用於端點功能的 Defender，而不需要離開入口網站。
 
  安裝您慣用的模擬器、在評估實驗室內執行案例，並立即查看平臺的執行方式-所有可方便您免費取得，而不需要額外成本。 您也可以輕鬆存取您可以從模擬目錄存取及執行的大量類比。
     
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 您將需要履行 [授權需求](minimum-requirements.md#licensing-requirements) ，或擁有 Microsoft Defender for Endpoint 的試用存取權，才能存取評估實驗室。
 
 您必須具有「 **管理安全性設定** 」許可權，才能執行下列動作：
@@ -75,9 +75,8 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 
 >[!NOTE]
 >- 視您所選取的環境結構類型而定，裝置會在啟用後的指定時數內使用。
->- 每個環境都配有一組有限的測試裝置。 當您已使用已布建的裝置時，不會提供任何新裝置。 已刪除的裝置不會重新整理可用的測試裝置計數。
->- 當資源已使用中時，您將無法再使用實驗。 它不會重設或重新整理。
->- 建議您謹慎使用資源。實驗室資源有限。 它們不會重設或重新整理。 
+>- 每個環境都配有一組有限的測試裝置。 當您已使用已布建的裝置，並已將其刪除之後，您可以要求更多裝置。 
+>- 您可以每月要求實驗室資源。 
 
 已經有實驗室？ 請務必啟用新的威脅模擬器，並具有作用中裝置。
 
@@ -109,30 +108,27 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 
 
 ## <a name="add-devices"></a>新增裝置
-當您在環境中新增裝置時，終結點會設定具有連線詳細資料的完善設定裝置。 您可以新增 Windows 10 或 Windows Server 2019 裝置。
+當您在環境中新增裝置時，終結點會設定具有連線詳細資料的完善設定裝置。 您可以新增 Windows 10 或 Windows 伺服器2019裝置。
 
-裝置會設定為最新版本的作業系統和 Office 2019 Standard，以及其他應用程式，例如 JAVA、Python 和 SysIntenals。 
-
-   >[!TIP]
-   > 您的實驗室中需要更多裝置？ 提交支援票證，以供 Endpoint 小組的 Defender 檢查要求。 
+裝置將會以最新版本的作業系統 2019 Office 和其他應用程式（例如 JAVA、Python 和 SysIntenals）進行設定。 
 
 如果您選擇在實驗室設定期間新增威脅模擬器，所有裝置都會在您新增的裝置中安裝威脅模擬器代理程式。
 
-裝置將會自動架至您的租使用者，並將建議的 Windows 安全性元件開啟和稽核模式-無需任何工作。 
+裝置將會自動架至您的租使用者，並將建議的 Windows 安全性元件開啟和稽核模式-沒有任何工作您的一邊。 
 
 在測試裝置中預先設定下列安全性元件：
 
-- [攻擊面縮減](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
-- [第一次看到的封鎖](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [受控資料夾存取權](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [入侵防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
-- [網路保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
-- [可能有害的應用程式偵測](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [雲端提供的保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+- [攻擊面縮減](attack-surface-reduction.md)
+- [第一次看到的封鎖](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [受控資料夾存取權](controlled-folders.md)
+- [入侵防護](enable-exploit-protection.md)
+- [網路保護](network-protection.md)
+- [可能有害的應用程式偵測](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+- [雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)
+- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender 防病毒會在 (不是在審計模式) 中。 如果 Microsoft Defender 防病毒封鎖您執行類比，您可以透過 Windows 安全性關閉裝置上的即時保護。 如需詳細資訊，請參閱 [Configure always on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
+> Microsoft Defender 防毒軟體會在 (不是在審計模式) 中。 如果 Microsoft Defender 防毒軟體封鎖您執行類比，您可以透過 Windows 安全性關閉裝置上的即時保護。 如需詳細資訊，請參閱 [Configure always on protection](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
 自動調查設定會因租使用者設定而異。 預設會將其設定為半自動。 如需詳細資訊，請參閱 [自動化調查的概述](automated-investigations.md)。
 
@@ -141,7 +137,7 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 
 1. 從儀表板中，選取 [ **新增裝置**]。 
 
-2. 選擇要新增的裝置類型。 您可以選擇新增 Windows 10 或 Windows Server 2019。
+2. 選擇要新增的裝置類型。 您可以選擇新增 Windows 10 或 Windows 伺服器2019。
 
     ![具有裝置選項的實驗室設定映射](images/add-machine-options.png)
 
@@ -163,10 +159,29 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
     ![[裝置影像] 索引標籤](images/machines-tab.png)
     
 
-    >[!TIP]
-    >在 [ **模擬器狀態** ] 欄中，您可以將游標移到資訊圖示上，以瞭解代理程式的安裝狀態。
+    > [!TIP]
+    > 在 [ **模擬器狀態** ] 欄中，您可以將游標移到資訊圖示上，以瞭解代理程式的安裝狀態。
+
+## <a name="request-for-more-devices"></a>要求更多裝置
+當您使用和刪除所有現有的裝置時，您可以要求更多裝置。 您可以每月要求實驗室資源。 
 
 
+1. 從評估實驗室儀表板中，選取 [ **要求更多裝置**]。
+
+   ![更多裝置的要求影像](images/request-more-devices.png)
+
+2. 選擇您的設定。 
+3. 提交要求。 
+
+當要求順利送出後，您會看到綠色的確認旗標，以及上次提交的日期。
+ 
+您可以在 [ **使用者動作** ] 索引標籤中找到您的要求狀態，該索引標籤會在幾小時後獲得批准。
+
+核准時，所要求的裝置會加入您的實驗室設定，而且您將能夠建立更多裝置。 
+
+
+> [!TIP]
+> 若要讓您的實驗室更不用，請不要忘記查看模擬文件庫。
 
 ## <a name="simulate-attack-scenarios"></a>類比攻擊案例
 透過連線來執行您自己的攻擊模擬，以使用測試裝置。 
@@ -175,7 +190,7 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 - 「 [自行執行它」攻擊案例](https://securitycenter.windows.com/tutorials)
 - 威脅模擬器
 
-您也可以使用 [高級搜尋](advanced-hunting-query-language.md) 查詢資料和 [威脅分析](threat-analytics.md) ，以查看有關新興威脅的報告。
+您也可以使用 [高級搜尋](advanced-hunting-overview.md) 查詢資料和 [威脅分析](threat-analytics.md) ，以查看有關新興威脅的報告。
 
 ### <a name="do-it-yourself-attack-scenarios"></a>自行攻擊案例
 如果您正在尋找預先類比，您可以使用我們「 [自己動手」的攻擊案例](https://securitycenter.windows.com/tutorials)。 這些腳本是安全、有記錄且便於使用。 這些案例會反映 Defender 的端點功能，並引導您完成調查經驗。
@@ -184,11 +199,11 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 >[!NOTE]
 >使用 RDP 進行與測試裝置的連線。 請確定您的防火牆設定允許 RDP 連線。
 
-1. 選取 **[** 連線]，以連線至您的裝置並執行攻擊模擬。 
+1. 連線裝置，並選取 **連線** 以執行攻擊模擬。 
 
     ![測試裝置的 [連接] 按鈕影像](images/test-machine-table.png)
 
-2. 選取 [連線 **]** 以儲存 RDP 檔案並加以啟動。
+2. 選取 [**連線**] 以儲存 RDP 檔案並加以啟動。
 
     ![遠端桌面連線的影像](images/remote-connection.png)
 

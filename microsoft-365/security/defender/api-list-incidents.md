@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f0c92371e7e9b7a3348f90df788ee8c3a46374b
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572150"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730879"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的列出事件 API
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572150"
 
 **適用於：**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。

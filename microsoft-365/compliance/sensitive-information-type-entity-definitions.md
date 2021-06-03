@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) &amp; 包含可供您在 DLP 原則中使用的200機密資訊類型。 本文列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: ff976389e75e96d0a018d7c5379e2831313388dc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086726"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730471"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -38,18 +38,17 @@ ms.locfileid: "52086726"
 
 ### <a name="pattern"></a>模式
 
-格式 化：
-- 以0、1、2、3、6、7或8開頭的四位數
-- 連字號
+- 在00-12、21-32、61-72 或80範圍內的兩位數
+- 兩位數
+- 選用的連字號
 - 四位數
-- 連字號
+- 選用的連字號
 - 一個數位
 
-未格式化：從0、1、2、3、6、7或8開始的九個連續數位 
 
 ### <a name="checksum"></a>總和檢查碼
 
-否
+是
 
 ### <a name="definition"></a>定義
 
@@ -619,11 +618,12 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="format"></a>格式
 
-字母后接7位數
+八或9個字母數位元 
 
 ### <a name="pattern"></a>模式
 
-字母 (不區分大小寫) 後接7位數
+- 一個字母 (N，E，D，F，A，C，U，X) 後接7位數或
+- 2個字母 (PA，PB，PC，PD，PE，PF，PU，PW，PX，PZ) 後接7位數。
 
 ### <a name="checksum"></a>總和檢查碼
 
@@ -632,60 +632,48 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 ### <a name="definition"></a>定義
 
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型的信賴度。
-- 正則運算式 Regex_australia_passport_number 找到符合模式的內容。
-- 會找到 Keyword_passport 或 Keyword_australia_passport_number 中的關鍵字。
+- 正則運算式會 `Regex_australia_passport_number` 找到符合模式的內容。
+- 找到來自的關鍵字 `Keyword_australia_passport_number` 。
+
+DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信賴度很低：
+- 正則運算式會 `Regex_australia_passport_number` 找到符合模式的內容。
 
 ```xml
-<!-- Australia Passport Number -->
-<Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- Australia Passport Number -->
+    <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_australia_passport_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_passport" />
-          <Match idRef="Keyword_australia_passport_number" />
-        </Any>
-   </Pattern>
-</Entity>   
+        <Match idRef="Keyword_australia_passport_number" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_australia_passport_number" />
+      </Pattern>
+    </Entity>  
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keyword_passport"></a>Keyword_passport
-
-- 護照號碼
-- 護照否
-- 護照#
-- 護照#
-- PassportID
-- Passportno
-- passportnumber
-- パスポート
-- パスポート番號
-- パスポートのNum
-- パスポート ＃ 
-- Numéro de passeport
-- Passeport n °
-- Passeport 非
-- Passeport#
-- Passeport#
-- PasseportNon
-- Passeportn °
-
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
+- 護照#
+- 護照#
+- passportid
 - 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
 - 護照詳細資料
 - immigration 與公民
 - 澳大利亞英聯邦
 - immigration 部門
-- 住家住址
-- immigration 和公民的部門
-- 簽證
 - 本國身分識別卡片
-- 護照號碼
 - 旅遊檔
 - 頒發機構單位
-   
+
+
 ## <a name="australia-tax-file-number"></a>澳大利亞稅收檔編號
 
 ### <a name="format"></a>格式
@@ -8646,7 +8634,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 每個國家/地區的格式稍有不同。 IBAN 敏感資訊類型涵蓋下列60個國家/地區：
 
-ad，ae，al，at，az，ba，a，bg，bh，ch，cr，cy，cz，de，深色，do，ee，es，es，fo，fr，gb，ge，gi，gl，gr，hr，hu，ie，il，為，it，kw，kz，lb，li，lt，lu，lv，mt，mu，nl-nl，no，pl，mt，ro，rs-232c，tn，tr，vg
+ad，ae，al，at，az，ba，a，bg，bh，ch，cr，cy，cz，de，深色，do，ee，es，fi，fo，fr，gb，ge，gi，gl，gr，hr，hu，ie，il，是，it，kw，kz，lb，li，lt，lu，lv，mt，mu，nl-nl，no，pl，，ro，sk，sm，tn，tr，vg
 
 ### <a name="checksum"></a>總和檢查碼
 

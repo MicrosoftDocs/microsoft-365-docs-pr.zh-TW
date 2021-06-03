@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文針對 Microsoft 365 中 Advanced eDiscovery 的情況，定義評審集內檔的元資料欄位。
-ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244597"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730495"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>進階電子文件探索中的文件中繼資料欄位
 
@@ -50,7 +50,7 @@ ms.locfileid: "52244597"
 |內容|內容||專案的解壓縮文字。|
 |交談主體|交談主體||專案的交談主體。|
 |交談主題|交談主題||專案的交談主題。|
-|交談識別碼|ConversationId|Email_conversation_ID|郵件中的交談識別碼。|
+|交談識別碼|ConversationId|Conversation_ID|郵件中的交談識別碼。|
 |交談索引||Conversation_index|郵件中的交談索引。|
 |交談 Pdf 時間|ConversationPdfTime||建立交談的 PDF 版本的日期。|
 |交談密文燒錄時間|ConversationRedactionBurnTime||為聊天建立交談的 PDF 版本的日期。|
@@ -73,12 +73,12 @@ ms.locfileid: "52244597"
 |主要主題|DominantTheme|Dominant_theme|針對分析進行計算的主要主題。|
 |重複子集||Duplicate_subset|完全重複的群組識別碼。|
 |EmailAction*||Email_action|值為 **無**、 **回復** 或 **轉寄**;根據郵件的主旨行。|
-|要求的電子郵件傳遞回執||Email_delivery_receipt_requested|Internet 標頭中提供的傳遞回執的電子郵件地址。|
+|要求的電子郵件傳遞回執||Email_delivery_receipt|Internet 標頭中提供的傳遞回執的電子郵件地址。|
 |Importance|EmailImportance|Email_importance|郵件的重要性： **0** -低; **1** -Normal; **2** -高|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|電子郵件訊息中的完整電子郵件頭集|
 |EmailLevel*||Email_level|會指出郵件在其所屬的電子郵件執行緒中的層級;附件繼承其上層郵件的值。|
 |電子郵件訊息識別碼||Email_message_ID|郵件中的網際網路郵件識別碼。|
-|EmailReadReceiptRequested||Email_read_receipt_requested|Internet 標頭中提供的電子郵件地址，供讀取接收。|
+|EmailReadReceiptRequested||Email_read_receipt|Internet 標頭中提供的電子郵件地址，供讀取接收。|
 |電子郵件安全性|EmailSecurity|Email_security|郵件的安全性設定： **0** -無; **1** -已簽署; **2** -已加密; **3** -加密及簽署。|
 |電子郵件敏感度|EmailSensitivity|email_sensitivity|郵件的敏感度設定： **0** -無; **1** 個人; **2** -私人; **3** -CompanyConfidential。|
 |電子郵件集|EmailSet|Email_set|相同電子郵件集中所有郵件的群組識別碼。|
@@ -119,7 +119,7 @@ ms.locfileid: "52244597"
 |會議結束日期|MeetingEndDate|Meeting_end_date|會議的會議結束日期。|
 |會議開始日期|MeetingStartDate|Meeting_start_date|會議的會議開始日期。|
 |郵件類型|MessageKind|Message_kind|要搜尋的郵件類型。 可能的值： **<br /> <br /> 連絡人記錄 <br /> <br /> 電子郵件 <br /> externaldata <br /> 傳真 <br /> im 記錄 <br /> <br /> 會議 <br /> microsoftteams** (會從 Microsoft Teams 中的交談、會議及來電傳回專案) **<br /> 記事 <br /> <br /> <br /> <br /> 語音信箱**| 
-|ModernAttachment_ParentId||ModernAttachment_ParentId||
+|新式附件上層識別碼||ModernAttachment_ParentId|檔之父代的不彈性識別碼。|
 |原生分機|NativeExtension|Native_extension|專案的原生分機。|
 |原生檔案名|NativeFileName|Native_file_name|專案的原生檔案名。|
 |NativeMD5||Native_MD5|) 檔資料流程的 MD5 雜湊 (128 位雜湊值。|
@@ -131,7 +131,7 @@ ms.locfileid: "52244597"
 |O365 建立日期||O365_date_created|從 SharePoint 建立日期。|
 |O365 修改日期||O365_date_modified|從 SharePoint 的上次修改日期。|
 |O365 修改者||O365_modified_by|從 SharePoint 修改。|
-|父識別碼|ParentId|Container_ID|專案的父代識別碼。|
+|父識別碼|ParentId|Parent_ID|專案的父代識別碼。|
 |ParentNode||Parent_node|電子郵件線索中的最近一封電子郵件。|
 |參與者網域|ParticipantDomains|Email_participant_domains|郵件參與者的所有網域清單。|
 |參與者|參與者|Email_participants|郵件的所有參與者清單;例如，寄件者、收件者、抄送、Bcc。|
@@ -164,6 +164,7 @@ ms.locfileid: "52244597"
 |職稱|職稱|Doc_title|檔中繼資料中的標題。|
 |收件者|收件者|Email_to|郵件類型的 [至] 欄位。 Format 為 **DisplayName \<SmtpAddress>**|
 |電子郵件集中的唯一|UniqueInEmailSet||**False** 表示電子郵件組中的附件重複。|
+|版本群組識別碼||Version_Group_Id|將相同檔的不同版本組合在一起。|
 |已修正|WasRemediated|Was_Remediated|**True** 是表示如果專案已修正，否則 **為 False**。|
 |字數統計|WordCount|Word_count|專案中的字數。|
 |||||

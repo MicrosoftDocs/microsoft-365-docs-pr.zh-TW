@@ -22,12 +22,12 @@ ms.custom:
 description: 系統管理員可以瞭解零小時自動清除 (ZAP) 是否可以 retroactively 將 Exchange Online 信箱中的已傳送郵件，移至 retroactively 為垃圾郵件或網路釣魚的垃圾郵件資料夾或隔離區。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee5a3fee8e189ff9cc08f187971e728670766d6d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9612f6267a0786b6f81f1c9a3f2ac270e344d0a8
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684192"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730675"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>以零小時自動清除 (ZAP) Exchange Online
 
@@ -72,6 +72,12 @@ ms.locfileid: "52684192"
 根據預設，會在反垃圾郵件原則中啟用網路釣魚的 ZAP， **網路釣魚電子郵件** 篩選決定的預設動作為 **隔離郵件**，這表示網路釣魚網路的 zap 預設會隔離郵件。
 
 如需設定垃圾郵件篩選 verdicts 的詳細資訊，請參閱[在 Microsoft 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+
+### <a name="zap-for-high-confidence-phishing"></a>高信賴網路釣魚的 ZAP 
+
+針對傳送後被識別為高信賴網路釣魚的 **讀取或未讀取郵件** ，ZAP 會隔離郵件。 只有系統管理員可以從隔離區中查看及管理高可信度的網路釣魚郵件。 
+
+根據預設，會啟用具有高可信度網路釣魚的 ZAP。 如需詳細資訊，請參閱[Office 365 預設的安全性](secure-by-default.md)。
 
 ### <a name="zap-for-spam"></a>垃圾郵件的 ZAP
 
@@ -119,6 +125,6 @@ ms.locfileid: "52684192"
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP 如何影響信箱的保留狀態？
 
-ZAP 不會隔離保留信箱中的郵件。 根據為反垃圾郵件原則中的垃圾郵件或網路釣魚所設定的動作，ZAP 可以將郵件移至 [垃圾郵件] 資料夾。
+ZAP 會隔離來自保留信箱的郵件。 根據為反垃圾郵件原則中的垃圾郵件或網路釣魚所設定的動作，ZAP 可以將郵件移至 [垃圾郵件] 資料夾。
 
 如需 Exchange Online 中的保留功能的詳細資訊，請參閱[Exchange Online 中 In-Place 保留和訴訟暫](/Exchange/security-and-compliance/in-place-and-litigation-holds)止。

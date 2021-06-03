@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 103f5d0ad9d12a37f3a3b8065f39c24d592cc252
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995054"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730531"
 ---
 # <a name="create-indicators-for-files"></a>建立檔案的指示器
 
@@ -43,23 +43,23 @@ Banning 潛在的惡意檔案或可疑惡意程式碼，以防止進一步傳播
 - 使用 [檔案詳細資料] 頁面中的 [新增指示器] 按鈕建立上下文指示器
 - 透過[指示器 API](ti-indicator.md)建立指示器
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 在建立檔案的指示器之前，請務必先瞭解下列必要條件：
 
-- 如果您的組織使用 **Microsoft Defender 防病毒 (以主動模式)** 且 **已啟用雲端型防護**，便可使用此功能。 如需詳細資訊，請參閱 [管理以雲端為基礎的保護](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- 如果您的組織使用 **Microsoft Defender 防毒軟體 (使用中) 模式**，且 **已啟用雲端型防護**，則可以使用此功能。 如需詳細資訊，請參閱 [管理以雲端為基礎的保護](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 
 - 反惡意軟體用戶端版本必須是4.18.1901 或更新版本。 請參閱 [每月平臺和引擎版本](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- 在具有 Windows 10、版本1703或更新版本的裝置上支援，Windows Server 2016 和2019。
+- 在具有 Windows 10 版本1703或更新版本的裝置上支援 Windows Server 2016 和2019。
 
-- 若要開始封鎖檔，您必須先在 [[設定] 中開啟「封鎖或允許」功能](advanced-features.md) 。
+- 若要開始封鎖檔，您必須先在設定中 [開啟「封鎖或允許」功能](advanced-features.md)。
 
 這項功能的設計是為了防止可疑的惡意程式碼 (或可能的惡意檔案) 從網頁下載。 它目前支援可遷移的可執行檔 (PE) 檔案（包括 .exe 和 .dll 檔案）。 覆蓋範圍會隨著時間擴充。
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>從 [設定] 頁面建立檔案的指標
 
-1. 在功能窗格中，選取 [ **設定] > 指示器**。
+1. 在功能窗格中，選取 [ **設定 >** 指標]。
 
 2. 選取 [檔案 **雜湊**] 索引標籤   。
 
@@ -89,21 +89,21 @@ Banning 潛在的惡意檔案或可疑惡意程式碼，以防止進一步傳播
 
 Cert 和檔案 IoC 原則處理衝突會依照下列順序進行：
 
-- 如果 Windows Defender Application Control 和 AppLocker 強制執行模式原則/原則不允許檔案，則會 **封鎖**
+- 如果 Windows Defender 應用程式控制和 AppLocker 強制執行模式原則/原則不允許檔案，則 **封鎖**
 
-- 否則，如果 Defender 反病毒排除允許檔案，則 **允許**
+- 否則，如果 Microsoft Defender 防毒軟體的排除允許檔案，則 **允許**
 
 - 否則，如果檔遭到封鎖或警告檔或 IoC，則封鎖 **/警告**
 
-- 否則，如果 allow file IOC 原則允許檔案，則 **允許**
+- 否則，如果 allow file IoC 原則允許檔案，則 **允許**
 
 - 如果是由 ASR 規則、共同體、AV、SmartScreen 封鎖檔案，則為 Else，然後 **封鎖**  
 
-- 否則 **， (會** 將 Windows Defender 應用程式控制傳遞 & AppLocker 原則，則不會對其套用任何 IoC 規則) 
+- 否則 **(** Windows Defender 應用程式控制 & AppLocker 原則，則不會對其套用 IoC 規則) 
 
 如果有相同的強制類型和目標的相互衝突的檔 IoC 原則，則更安全 (的原則會套用較長) 雜湊。 例如，如果兩個雜湊類型都定義相同的檔案，SHA-256 檔案雜湊 IoC 原則會在 MD5 檔案雜湊 IoC 原則上贏取。
 
-請注意，威脅和弱點管理的封鎖漏洞應用程式功能會使用檔案 IoCs 進行強制執行，並遵循上述衝突處理順序。
+請注意，威脅與弱點管理的封鎖漏洞應用程式功能會使用檔案 IoCs 進行強制執行，並遵循上述衝突處理順序。
 
 ### <a name="examples"></a>範例
 
@@ -113,7 +113,7 @@ Cert 和檔案 IoC 原則處理衝突會依照下列順序進行：
 |攻擊面減少規則 |封鎖 |允許 |允許
 |Windows Defender 應用程式控制 |允許 |封鎖 |允許 |
 |Windows Defender 應用程式控制 |封鎖 |允許 |封鎖
-|Microsoft Defender 防病毒排除 |允許 |封鎖 |允許
+|Microsoft Defender 防毒軟體排除 |允許 |封鎖 |允許
 
 ## <a name="see-also"></a>另請參閱
 

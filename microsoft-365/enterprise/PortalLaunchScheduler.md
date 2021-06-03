@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694350"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730255"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用 SharePoint 入口網站啟動計畫程式啟動入口網站
 
@@ -120,7 +120,7 @@ ms.locfileid: "52694350"
 
 ### <a name="launch-portal-with-over-100k-users"></a>使用超過100k 使用者的啟動入口網站
 
-如果您打算移轉超過 100TB，請按照以下列出的步驟提交支援要求。 請確認包含所有要求的資訊。
+如果您打算使用超過100000的使用者啟動入口網站，請遵循下列所列的步驟提交支援要求。 請確認包含所有要求的資訊。
 
 請遵循下列步驟：
 1. 瀏覽到 https://admin.microsoft.com
@@ -136,7 +136,7 @@ ms.locfileid: "52694350"
 7. 填寫其餘資訊，然後選取 [與我聯繫]。
 8. 建立票證之後，請確定提供支援代理人以下資訊：
 - 啟動入口網站 URL 
-- 預期的使用者人數
+- 預期的使用者數目
 - 預估啟動時間 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>對已排程的入口網站啟動進行變更

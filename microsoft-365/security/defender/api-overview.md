@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 496ad5695d9cd491817bad5daf3c76a02addefd1
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: b19a6072be5f97b90c117f053ccae4593587c43d
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904185"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730891"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Microsoft 365 Defender APIs 概述
 
@@ -38,15 +38,18 @@ ms.locfileid: "51904185"
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
 
-Microsoft 365 Defender 是以整合就緒平臺為基礎。
+Microsoft 365Defender 是以整合就緒平臺為基礎。
 
-使用 Microsoft 365 Defender APIs，根據共用的事件和高級搜尋表來自動化工作流程。
+使用 Microsoft 365 Defender APIs，以自動化以共用事件及高級搜尋表格為基礎的工作流程。
 
 - **[結合的事件佇列](api-incident.md)** -著重于將完整的攻擊範圍和所有受影響的資產分組在事件 API 底下的重要事項。
 
 - **[跨產品威脅搜尋](api-advanced-hunting.md)** -利用您的安全小組的組織知識，透過建立您自己的自訂查詢，以透過跨多個保護產品所收集的原始資料來進行保護，以尋找損害的跡象。
 
-除了這些 Microsoft 365 Defender 特有的 APIs 之外，其他所有的安全性產品都會公開 [其他 APIs](api-articles.md) ，以協助您利用其獨特的功能。
+使用 [流式 API](../defender-endpoint/raw-data-export.md) ，在單一資料流程中發生即時事件及來自實例的警示。
+
+
+除了這些 Microsoft 365 Defender 特有 APIs 之外，其他所有的安全性產品都會公開[其他 APIs](api-articles.md) ，以協助您利用其獨特的功能。
 
 
 > [!NOTE]
@@ -61,9 +64,9 @@ Microsoft 365 Defender 是以整合就緒平臺為基礎。
 | [存取 Microsoft 365 Defender APIs](api-access.md) |
 | **Build apps** |
 | [建立 "Hello world" 應用程式](api-hello-world.md) |
-| [建立應用程式以代表使用者存取 Microsoft 365 Defender APIs](api-create-app-user-context.md) |
+| [建立應用程式，以代表使用者存取 Microsoft 365 Defender APIs](api-create-app-user-context.md) |
 | [建立應用程式以存取沒有使用者的 Microsoft 365 Defender](api-create-app-web.md) |
-| [建立具有對 Microsoft 365 Defender APIs 的多承租人合作夥伴存取權的應用程式](api-partner-access.md) |
+| [建立具有 Microsoft 365 Defender APIs 的多承租人合作夥伴存取權的應用程式](api-partner-access.md) |
 | **疑難排解及維護您的應用程式** |
 | [瞭解 API 錯誤代碼](api-error-codes.md) |
 | [使用 Azure Key Vault 管理應用程式中的機密](/learn/modules/manage-secrets-with-azure-key-vault/) |

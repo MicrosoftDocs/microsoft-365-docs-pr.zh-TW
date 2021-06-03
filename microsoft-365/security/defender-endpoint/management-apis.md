@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 78ab364f8a261b1201fad17ebf86adc1a7456a46
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934450"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730833"
 ---
 # <a name="overview-of-management-and-apis"></a>管理和 API 概觀 
 
@@ -41,7 +41,7 @@ ms.locfileid: "51934450"
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>端點上架和入口網站存取 
 
-裝置上架已完全整合至 Microsoft 端點管理員和 Microsoft Intune for 用戶端裝置和 Azure Defender for server 裝置，提供設定、部署和監控的完整端對端體驗。 此外，Microsoft Defender for Endpoint 會支援用於裝置管理的群組原則及其他協力廠商工具。
+裝置上架已完全整合至用戶端裝置和 Azure Defender for server 裝置的 Microsoft 端點管理員和 Microsoft Intune，可提供設定、部署和監控的完整端對端體驗。 此外，Microsoft Defender for Endpoint 會支援用於裝置管理的群組原則及其他協力廠商工具。
 
 Defender for Endpoint 提供精細的控制，可讓具有入口網站存取權的使用者透過角色型存取控制 (RBAC) 的彈性來查看並執行。 RBAC 模型支援所有的安全性小組結構類型：
 - 全域分散式組織和安全小組
@@ -71,16 +71,17 @@ Defender for Endpoint 提供分層 API 模型，以結構化、清晰且便於�
 
 **回應 API** 公開在服務和裝置上採取動作的能力，讓客戶能夠攝取指示器、管理設定、警示狀態，以及在裝置上採取回應動作，例如隔離裝置與網路、隔離檔案等等。 
 
-## <a name="raw-data-streaming-api"></a>原始資料串流 API 
-使用 Defender for Endpoint raw data stream API，可讓客戶在單一資料流程中發生即時事件及警示，以提供低延遲、高輸送量傳遞機制。
+## <a name="streaming-api"></a>流式處理 API 
+在單一資料流程中發生即時事件及警示時，流式 API 能夠提供低延遲、高輸送量傳遞機制，讓客戶能夠在其實例中傳送即時事件及警示。
 
-將 Endpoint 事件資訊的 Defender 事件資訊直接推入 Azure 存放區，以進行長期資料保留，或透過視覺化服務或其他資料處理引擎使用 Azure 事件中心以取得消耗。 
+事件資訊會直接推入 Azure 存放區，以進行長期資料保留，或透過視覺化服務或其他資料處理引擎使用 Azure 事件中心以取得消耗。 
 
-如需詳細資訊，請參閱 [Raw data 流式 API](raw-data-export.md)。
+>[!NOTE]
+>流式 API 現在已移至 Microsoft 365 Defender。 如需詳細資訊，請參閱 [流式 API](raw-data-export.md)。
 
 
 ## <a name="siem-api"></a>SIEM API
-當您啟用安全性資訊和事件管理 (SIEM) 整合時，它可讓您使用 SIEM 解決方案或直接連線至偵測到的 REST API，從 Microsoft Defender Security Center 提取偵測。 這會以預先填入的值來啟動 SIEM connector access 詳細資料區段，且會在您的 Azure Active Directory (Azure AD) 租使用者下建立應用程式。 如需詳細資訊，請參閱 [SIEM integration](enable-siem-integration.md)。
+當您啟用安全性資訊和事件管理 (SIEM) 整合時，可讓您使用 SIEM 解決方案或直接連線至偵測到的 REST API，從 Microsoft Defender 資訊安全中心提取偵測。 這會以預先填入的值來啟動 SIEM connector access 詳細資料區段，且應用程式會在您的 Azure Active Directory (Azure AD) 租使用者下建立。 如需詳細資訊，請參閱 [SIEM integration](enable-siem-integration.md)。
 
 ## <a name="related-topics"></a>相關主題
 - [存取 Microsoft Defender for Endpoint APIs ](apis-intro.md)

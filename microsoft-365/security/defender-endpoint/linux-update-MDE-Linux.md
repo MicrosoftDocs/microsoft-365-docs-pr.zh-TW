@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 22ff42cb399b3d07c0ebd8ec4f947352eb6f44aa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9b7699b1a24e7e1d74a48389d02518e814911ecc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934762"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730867"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>為於端點的 Microsoft Defender 排程更新 (Linux)
 
-若要在 Linux 上的端點上執行 Microsoft Defender 的更新，請參閱在 [linux 上為 Microsoft defender For Endpoint 部署更新](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)。
+若要在 Linux 上的端點上執行 Microsoft Defender 的更新，請參閱在 [linux 上為 Microsoft defender For Endpoint 部署更新](/microsoft-365/security/defender-endpoint/linux-updates)。
 
 Linux (和 Unix) 有一個稱為 **crontab** (的工具，類似于工作排程器，) 能夠執行排程的任務。
 
@@ -84,7 +84,7 @@ CRON_TZ = 美洲/Los_Angeles
 
 > #<a name="ubuntu-and-debian-systems"></a>!Ubuntu 和 Debian 系統
 
-`06**sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
+`0 6 * * sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
 > [!NOTE]
 > 在上面的範例中，我們會將它設定為00分鐘，以24小時製表示的 (小時，) ，每月的哪一天，在星期日。[$ (date + \% d) -le 15] = = 不會執行，除非其等於或小於第15天)  (第三周。 也就是說，每隔第三個星期日會在 6:00 a.m. 執行 (7) 。 太平洋 (UTC-8) 。

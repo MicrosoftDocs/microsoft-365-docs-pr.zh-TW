@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 請遵循本文中的步驟，讓另一個員工存取離職員工的 OneDrive 和 Outlook 資料。
-ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: abcad87498f6670fe7fe2f5457321f1b3f6e0930
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634253"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730195"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>步驟 4-授予另一個員工 OneDrive 和 Outlook 資料的存取權
 
@@ -52,6 +52,30 @@ ms.locfileid: "52634253"
 > [!NOTE]
 > 您一次最多可以移動或複製 500 MB 的檔案和資料夾。<br/>
 > 當您移動或複製具有版本記錄的檔時，只會移動最新的版本。  
+
+您也可以將存取權授與另一個使用者，以存取離職員工的 OneDrive。
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">以全域</a>系統管理員身分登入系統管理員或 SharePoint 管理員。
+
+    如果您收到的訊息您沒有存取系統管理中心的許可權，則您的組織不具備系統管理員許可權。
+
+2. 在左窗格中，選取 [系統 **管理中心**] \> **SharePoint**。 (您可能需要選取 [全部顯示] 才能查看系統管理中心的清單。)
+
+3. 如果出現 [傳統 SharePoint 系統管理中心]，請選取 [立即在頁面頂端開啟]，以開啟 SharePoint **系統** 管理中心。
+
+4. 在左窗格中，選取 [ **其他功能**]。
+
+5. 在 [ **使用者設定檔**] 下，選取 [ **開啟**]。
+
+6. 在 [ **人員**] 底下，選取 [ **管理使用者設定檔**]。
+
+7. 輸入離職員工的名稱，然後選取 [ **尋找**]。
+
+8. 以滑鼠右鍵按一下使用者，然後選擇 [ **管理網站集合擁有** 者]。
+
+9. 將使用者新增至 **網站集合管理員** ，然後選取 **[確定]**。
+
+10. 使用者現在可以使用 OneDrive URL 存取離職員工的 OneDrive。 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>撤銷使用者 OneDrive 的系統管理員存取權
 
@@ -104,7 +128,7 @@ ms.locfileid: "52634253"
   
     ![選取上方資料夾並包含檢查子資料夾的 [匯出 Outlook 資料檔案] 對話方塊](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. 選取 [下一步]。
+7. 選取 **[下一步]**。
 
 8. 選取 **[流覽]** ，以選取要將 Outlook 資料檔案儲存 ( .pst) 的位置。 輸入檔案名  *，然後* 選取 **[確定]** 繼續。
 
@@ -147,7 +171,7 @@ Outlook 會立即開始匯出，除非已建立新的 Outlook 資料檔案 ( .ps
 
 5. 在 [ **選項**] 底下，選擇您要處理重複專案的方式
 
-6. 選取 [下一步]。
+6. 選取 **[下一步]**。
 
 7. 如果已指派密碼給 Outlook 資料檔案 ( .pst) ，請輸入密碼，然後選取 **[確定]**。
 

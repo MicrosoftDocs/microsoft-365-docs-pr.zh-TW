@@ -3,7 +3,7 @@ title: Office 365 URL 和 IP 位址範圍
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 05/19/2021
+ms.date: 05/28/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要連線到網際網路。客戶必須可使用 Office 365 方案取得下列端點，包括 Government Community Cloud (GCC)。
 hideEdit: true
-ms.openlocfilehash: 65e69465c56b3c7da63ca5cdcc1287c4794f199c
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 48be058cb48e99b9b573cc4211561dfe8e5cc6e8
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651257"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730147"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 位址範圍
 
@@ -39,7 +39,7 @@ Office 365 需具有網際網路的連線能力。使用　Office 365 方案的�
 
 ||||
 |:-----|:-----|:-----|
-|**上次更新日期：** 2021 年 5 月 19 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [變更記錄訂閱](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下載：** 一個 [JSON 格式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)清單中所有必要與選用的目的地。  <br/> | **使用：** 我們的 proxy [PAC 檔案](managing-office-365-endpoints.md#pacfiles) <br/> |
+|**上次更新日期：** 2021 年 5 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [變更記錄訂閱](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下載：** 一個 [JSON 格式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)清單中所有必要與選用的目的地。  <br/> | **使用：** 我們的 proxy [PAC 檔案](managing-office-365-endpoints.md#pacfiles) <br/> |
 
  開始使用[管理 Office 365 端點](managing-office-365-endpoints.md)了解我們針對使用這項資料來管理網路連線的建議。每個月初會視需要使用在作用中的 30 天前發行的新 IP 位址和 URL 來更新端點資料。這項功能可讓尚未自動化更新的使用者在需要新的連線之前完成其程序。如果提出支援向上呈報、安全性事件或其他立即操作需求，在當月期間可能也會更新端點。下面這個頁面上所顯示的資料會從 REST 為基礎的網路服務產生。如果您使用指令碼或網路裝置來存取這些資料，應該直接前往 [Web 服務](microsoft-365-ip-web-service.md)。
 
