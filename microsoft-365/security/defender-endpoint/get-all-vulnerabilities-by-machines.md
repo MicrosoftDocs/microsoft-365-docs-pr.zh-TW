@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 229c1f9e77a0cb85744155e82934b48dd63052b2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3aa58f3df4a4c3562cbd4dfbf6113c30816e2a0f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933406"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769194"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>列出電腦和軟體的弱點
 
@@ -43,7 +44,7 @@ ms.locfileid: "51933406"
 - ```$filter```所有屬性都支援 OData。
 
 >[!Tip]
->這是 [POWER BI 整合](api-power-bi.md)的理想 API。
+>這是[Power BI 整合](api-power-bi.md)的理想 API。
 
 ## <a name="permissions"></a>權限
 需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs](apis-intro.md) 以取得詳細資訊。
@@ -117,7 +118,7 @@ GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnera
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [風險威脅和弱點管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [以風險為基礎的威脅與弱點管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [組織中的薄弱環節](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

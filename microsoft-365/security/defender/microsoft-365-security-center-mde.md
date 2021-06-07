@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 487fc87c613d7321e3ae608097d98d2c90f8874e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639402"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771906"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的 Microsoft Defender for Endpoint
 
@@ -177,6 +177,10 @@ Microsoft 365 security center 中的 Microsoft Defender for Endpoint[可將受�
 ### <a name="email-alerts"></a>電子郵件警示
 
 您可以繼續使用用於端點的電子郵件警示。 我們已新增電子郵件中的新連結，指向 [提醒] 頁面或 Microsoft 365 安全性中心的 [事件] 頁面。 如需詳細資訊，請參閱重新導向[從 Microsoft Defender to Endpoint to to the Microsoft 365 security center 的帳戶](./microsoft-365-security-mde-redirection.md)。
+
+### <a name="managed-security-service-providers-mssp"></a>受管理的安全性服務提供者 (MSSP) 
+
+整合入口網站目前不支援在相同流覽會話中同時登入多個承租人。 您可以選擇不使用自動重新導向，方法是 [回復至舊版的端點入口網站](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal)，以維護此功能直到問題解決為止。
 
 ## <a name="related-information"></a>相關資訊
 

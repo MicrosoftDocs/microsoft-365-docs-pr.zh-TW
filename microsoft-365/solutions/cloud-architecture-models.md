@@ -13,14 +13,14 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 4532afc40c2324b77725d9ddad158587083e6e9b
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 73e29109a429d8a3fffc69b79939c8dff7ecb087
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280945"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769266"
 ---
-# <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Microsoft Cloud for Enterprise Architects 圖例
+# <a name="microsoft-cloud-for-it-architects-illustrations"></a>Microsoft cloud for IT 架構設計人員圖例
 
 這些雲端架構海報提供 Microsoft 雲端服務的相關資訊，包括 Microsoft 365、Azure Active Directory (Azure AD) 、Microsoft Intune、Microsoft Dynamics 365，以及混合式內部部署和雲端解決方案。 
 
@@ -28,7 +28,7 @@ IT 決策者和架構師可以使用這些資源來判斷其工作負載的理�
 
 
 <a name="identity"></a>
-### <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Microsoft Cloud Identity for Enterprise Architects
+### <a name="microsoft-cloud-identity-for-it-architects"></a>IT 架構師的 Microsoft 雲端身分識別
 
 IT 結構設計師在使用 Microsoft 雲端服務和平台設計組織的身分識別時，需要了解的資訊。
   
@@ -37,7 +37,7 @@ IT 結構設計師在使用 Microsoft 雲端服務和平台設計組織的身分
 |[![Microsoft 雲端身分識別模型的縮圖影像](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf) \|[下載成 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.vsdx)   <br/>2020年9月更新 | 此模型包含：  <ul> <li> 使用 Microsoft 雲端識別的簡介 </li><li> Azure AD 的 IDaaS 功能 </li><li> 整合內部部署 Active Directory 網域服務 (AD DS) 使用 Azure AD 的帳戶 </li><li> 在 Azure 中放置目錄元件 IaaS </li><li> Azure 中工作負載的 AD DS 選項 IaaS </li></ul><br/>  <br/>|
 
 <a name="security"></a>
-### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft cloud security for enterprise architects
+### <a name="microsoft-cloud-security-for-it-architects"></a>IT 架構設計的 Microsoft cloud security
 
 IT 結構設計師在 Microsoft 雲端服務和平台中，需要瞭解哪些安全性資訊。
   
@@ -46,7 +46,7 @@ IT 結構設計師在 Microsoft 雲端服務和平台中，需要瞭解哪些安
 |[![Microsoft cloud security for enterprise 架構架構模型縮圖](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf) <br/> [Pdf](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf)  \| <br/>2021年4月更新 | 此模型包含： <ul><li>Microsoft 和客戶安全性責任</li><li>身分識別與裝置存取</li><li>威脅防護</li><li>資訊保護 </ul><br/>|
    
 <a name="networking"></a>
-### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft cloud networking for enterprise architects
+### <a name="microsoft-cloud-networking-for-it-architects"></a>IT 架構設計的 Microsoft 雲端網路
 
 IT 結構設計師在使用 Microsoft 雲端服務和平台時，有關網路功能需要瞭解的資訊。
   
@@ -55,7 +55,7 @@ IT 結構設計師在使用 Microsoft 雲端服務和平台時，有關網路功
 |[![Microsoft 雲端網路模型的縮圖影像](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](../downloads/MSFT_cloud_architecture_networking.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_networking.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) \|[下載成 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx)   <br/>2020年8月更新 | 此模型包含： <ul><li> 將您的網路提升為雲端連線網路 </li><li> Microsoft 雲端連線的共同項目 </li><li> Microsoft 雲端連線的 ExpressRoute </li><li> 為 Microsoft SaaS、Azure PaaS 和 Azure 設計網路 IaaS </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
-### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft hybrid cloud for enterprise architects
+### <a name="microsoft-hybrid-cloud-for-it-architects"></a>IT 架構設計的 Microsoft 混合式雲端
 
 IT 結構設計師在使用 Microsoft 服務和平台時，有關混合雲端需要瞭解的資訊。
   

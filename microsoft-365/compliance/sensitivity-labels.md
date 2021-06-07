@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 171f449a8b73ff42113358d50dbe8bde909f5d4d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625182"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730243"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -182,7 +182,7 @@ ms.locfileid: "52625182"
 
 - **選擇可看見標籤的使用者和群組。** 可以在 Azure AD 中將標籤發佈到任何特定的使用者或啟用電子郵件功能的安全性群組、通訊群組或 Microsoft 365 群組 (可以有 [動態成員資格](/azure/active-directory/users-groups-roles/groups-create-rule))。
 
-- **套用預設標籤** 至由標籤原則中包含的所有使用者和群組所建立的新文件和未標籤電子郵件，以及將相同或不同的預設標籤套用至容器 (如果您 [已為 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤](sensitivity-labels-teams-groups-sites.md))。 使用這項設定，Azure 資訊保護統一標籤用戶端也會將預設標籤套用至未標記的現有文件。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。
+- 為新文件、未標誌的電子郵件和新的容器 **指定預設標籤** (當您 [已為 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感性標籤時](sensitivity-labels-teams-groups-sites.md))。 您可以為全部這三類項目指定相同的標籤或不同的標籤。 當您為文件指定預設標籤時，Azure 資訊保護統一標籤用戶端也會將此標籤套用至未標記的現有文件。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。
     
     請考慮使用預設標籤來設定您想套用到所有內容中的基本保護設定等級。 不過，若沒有使用者訓練和其他控制項，這項設定也可能導致不正確的標記。 選取將套用加密作為對文件之預設標籤的標籤並不是個好主意。 例如，許多組織需要將文件傳送與共用給外部使用者，而這些使用者可能沒有支援加密的應用程式，或可能不會使用可授權的帳戶。 如需此案例的詳細資訊，請參閱 [與外部使用者共用加密檔](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。
 
@@ -190,7 +190,7 @@ ms.locfileid: "52625182"
 
     ![提示使用者輸入理由](../media/Sensitivity-label-justification-required.png)
 
-- **要求使用者套用標籤**，一個選項用於電子郵件和文件，另一個用於容器。 這些選項也稱為強制標籤，可確保使用者必須先套用標籤才能儲存文件和傳送電子郵件以及建立新群組或網站。
+- 針對文件、電子郵件、文件和容器，**要求使用者套用標籤**。 這些選項也稱為強制標籤，可確保使用者必須先套用標籤才能儲存文件和傳送電子郵件以及建立新群組或網站。
     
     若為文件和電子郵件，使用者可手動指派標籤、根據您設定的條件而自動指派，或依預設指派 (如上所述的預設標籤選項)。當使用者需要指派標籤時，Outlook 中顯示的提示範例：
 

@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.custom: api
+ms.openlocfilehash: 6716b0eb029b49ec08cb52ebefc23e50b19036ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903115"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771666"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>使用 SIEM REST API 拉入 Microsoft Defender for Endpoint 偵測
 
@@ -52,7 +53,7 @@ Microsoft Defender for Endpoint 支援 OAuth 2.0 通訊協定，以從 API 提�
 
 如需 OAuth 規格的詳細資訊，請參閱 [OAuth 網站](http://www.oauth.net)。
 
-Microsoft Defender for Endpoint 支援 _授權授_ 與 _用戶端認證流程_ ，以取得提取偵測的存取權，AZURE Active Directory (AAD) 做為授權伺服器。
+Microsoft Defender for Endpoint 支援 _授權授_ 與 _用戶端認證流程_，以取得提取偵測的存取權，Azure Active Directory (AAD) 為授權伺服器。
 
 _授權授與流程_ 會使用使用者認證取得授權碼，然後用來取得存取權杖。
 
@@ -61,10 +62,10 @@ _用戶端認證流程_ 會使用用戶端認證，以進行 Microsoft Defender 
 在 Microsoft Defender for Endpoint API 中使用下列方法，以 JSON 格式提取偵測結果。
 
 >[!NOTE]
->Microsoft Defender 安全中心會將類似的警示偵測合併成單一警示。 此 API 會根據您設定的查詢參數，在其原始表單中拉入警示偵測，讓您能夠套用您自己的群組和篩選。 
+>Microsoft Defender 資訊安全中心會將類似的警示偵測合併成單一警示。 此 API 會根據您設定的查詢參數，在其原始表單中拉入警示偵測，讓您能夠套用您自己的群組和篩選。 
 
 ## <a name="before-you-begin"></a>開始之前
-- 呼叫 Microsoft Defender for Endpoint 端點以提取偵測之前，您需要在 Azure Active Directory (AAD) 中啟用 SIEM 整合應用程式。 如需詳細資訊，請參閱 [ENABLE SIEM integration In Microsoft Defender For Endpoint](enable-siem-integration.md)。
+- 呼叫 Microsoft Defender for endpoint 端點以提取偵測之前，您必須在 Azure Active Directory (AAD) 中啟用 SIEM 整合應用程式。 如需詳細資訊，請參閱 [ENABLE SIEM integration In Microsoft Defender For Endpoint](enable-siem-integration.md)。
 
 - 請記下 Azure 應用程式註冊中的下列值。 您需要這些值來設定您的服務或守護程式應用程式中的 OAuth 流量：
   - 您的應用程式獨有的應用程式識別碼 () 
@@ -127,7 +128,7 @@ untilTimeUtc | DateTime | 定義要檢索的上限時間限制。 <br> 時間範
 限制 | int | 會定義要檢索的提醒數目。 會根據定義的數目來檢索最新的警示。<br><br> **附注**：如果未指定，則會檢索時間範圍內的所有可用警示。
 machinegroups | string | 指定要從中接收警示的裝置群組。 <br><br> **附注**：如果未指定，則會從所有裝置群組中檢索警示。 <br><br> 範例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | string | 登錄中的單一裝置標記。
-CloudCreatedMachineTags | string | 在 Microsoft Defender Security Center 中建立的裝置標記。
+CloudCreatedMachineTags | string | 在 Microsoft Defender 資訊安全中心中建立的裝置標記。
 
 ### <a name="request-example"></a>要求範例
 下列範例會示範如何在您的組織中取得所有的偵測。

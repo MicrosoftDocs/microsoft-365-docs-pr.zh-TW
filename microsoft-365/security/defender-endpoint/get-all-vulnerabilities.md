@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bfce003f586c5bfa32d65c834bb244ac13f6cf31
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e9dd7e7d87e9343b0aae93e7ba47d89f9ed4bf41
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935086"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769002"
 ---
 # <a name="list-vulnerabilities"></a>列出弱點
 
@@ -107,6 +108,6 @@ GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [風險威脅 & 弱點管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [組織中的薄弱環節](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

@@ -1,5 +1,5 @@
 ---
-title: 將 Microsoft Defender 中的帳戶重新導向至新的 Microsoft 365 安全中心（Office 365）
+title: 將帳戶從 Office 365 安全性與合規性中心重新導向至新的 Microsoft 365 安全中心
 description: 如何從 Office 365 的 Defender 重新導向至 Microsoft 365 安全中心。
 keywords: Microsoft 365 安全性中心，開始使用 Microsoft 365 安全性中心，安全性中心重新導向
 search.product: eADQiWindows 10XVcnh
@@ -20,23 +20,23 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 703d3c3c9086aa2bdfada560c009e8738dffbb18
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651377"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768966"
 ---
-# <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>將帳戶從 Microsoft Defender 重新導向至 Microsoft 365 安全中心的 Office 365
+# <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-security-center"></a>將帳戶從 Office 365 安全性與合規性中心重新導向至 Microsoft 365 安全中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用於：**
 
 - Microsoft 365 Defender
-- 適用於 Office 365 的 Microsoft Defender
+- 適用於 Office 365 的 Defender
 
-本文說明如何透過從先前的 Microsoft 安全性與合規性 (中心自動重新導向，將帳戶路由傳送至 Microsoft 365 的安全性中心，) Microsoft 365 的安全性中心 (security.microsoft.com) 。
+本文說明如何透過從早期 Office 365 安全性與合規性中心 (protection.office.com) ，將客戶路由傳送至 Microsoft 365 的安全性中心，以 Microsoft 365 安全性中心 (security.microsoft.com) 。
 
 ## <a name="what-to-expect"></a>預期的專案
 在啟用並使用自動重新導向後，在 Office 365 安全性和合規性 (protection.office.com) 中存取安全性相關功能的使用者，將會自動路由到 Microsoft 365 的安全性中心 (https://security.microsoft.com) 。  
@@ -78,7 +78,7 @@ ms.locfileid: "52651377"
 
 您可以隨時重新啟用此設定。
 
-一旦停用，帳戶將不再路由傳送至 security.microsoft.com，而您將會再次存取先前的入口網站-securitycenter.windows.com 或 securitycenter.microsoft.com。
+一旦停用，帳戶將不再路由傳送至 security.microsoft.com，您就會再次存取先前的入口網站（securitycenter 或 securitycenter.microsoft.com）。
 
 ## <a name="related-information"></a>相關資訊
 - [Microsoft 365 安全性中心概觀](overview-security-center.md)

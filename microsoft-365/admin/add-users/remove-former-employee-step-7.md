@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 請遵循下列步驟來刪除離職員工的使用者帳戶。
-ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535935"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782378"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>步驟 7-刪除離職員工的使用者帳戶
 
@@ -56,7 +56,7 @@ ms.locfileid: "52535935"
 
 若要瞭解如何在 Active Directory 中刪除及還原使用者帳戶，請參閱 [刪除使用者帳戶](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))。
   
-如果您使用的是 Azure Active Directory，請參閱[Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell Cmdlet。
+如果您使用的是 Azure Active Directory，請參閱[Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell Cmdlet。
   
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>終止員工的電子郵件工作階段所需注意的事項
 
@@ -84,8 +84,6 @@ ms.locfileid: "52535935"
   
  使用 **內部部署和 Exchange Datacenter 中目前狀態的使用者最快**：使用 Azure Active Directory 系統管理中心或 Exchange 的系統管理中心終止會話，並在內部部署環境中也進行變更。 若不採取此做法，在 Azure Active Directory 系統管理中心或 Exchange 系統管理中心進行的變更將被 DirSync 覆寫。
   
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
 
-[還原使用者](restore-user.md)
-
-[重設密碼](reset-passwords.md)
+[還原使用者](restore-user.md) (文章) / [重設密碼](reset-passwords.md) (文章) 

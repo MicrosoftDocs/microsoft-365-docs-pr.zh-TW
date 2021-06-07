@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Defender for Endpoint APIs
 ms.reviewer: ''
-description: 瞭解如何設計原生 Windows 應用程式，以在沒有使用者的情況下，以程式設計方式存取 Microsoft Defender for Endpoint。
+description: 瞭解如何設計原生的 Windows 應用程式，以在沒有使用者的情況下，對 Microsoft Defender for Endpoint 取得以程式設計方式存取。
 keywords: api，graph api，支援的 api，主角，警示，裝置，使用者，網域，ip，file，advanced 搜尋，查詢
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 5e59ff75a7933cf52af857f1a41b0925aa7bb47a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 8f23a0b269986f4caa199ad3744c563fcc6ff6b2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198886"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769098"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>使用 Microsoft Defender for Endpoint APIs
 
@@ -31,7 +32,7 @@ ms.locfileid: "51198886"
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,7 +44,7 @@ ms.locfileid: "51198886"
 
 如果您不確定需要哪一種存取權，請閱讀 [ [簡介] 頁面](apis-intro.md)。
 
-Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 可讓您根據 Microsoft Defender for Endpoint 功能來自動化工作流程及創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 可讓您根據 Microsoft Defender for Endpoint 功能來自動化工作流程及創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般來講，您必須採取下列步驟，才能使用 APIs：
 - 建立 AAD 應用程式
@@ -63,9 +64,9 @@ Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料
 
 1. 使用具有 **全域系統管理員** 角色的使用者帳戶，登入 [Azure](https://portal.azure.com) 。
 
-2. 流覽至 [ **Azure Active Directory**  >  **應用程式註冊**]  >  **新註冊**。 
+2. 流覽至 **Azure Active Directory**  >  **App 註冊**  >  **新註冊**。 
 
-   ![Microsoft Azure 的影像及應用程式註冊導覽](images/atp-azure-new-app2.png)
+   ![Microsoft Azure 及流覽至應用程式註冊的影像](images/atp-azure-new-app2.png)
 
 3. 當出現 [ **註冊應用程式** ] 頁面時，請輸入您的應用程式的註冊資訊：
 
@@ -195,6 +196,6 @@ Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料
     // Do something useful with the response
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 - [使用應用程式內容存取 Microsoft Defender for Endpoint](exposed-apis-create-app-webapp.md)

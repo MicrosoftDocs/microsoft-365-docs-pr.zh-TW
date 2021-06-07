@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: 使用此頁面可建立您的教職員工清單，以及管理職員詳細資料，例如姓名、電話號碼和電子郵件地址。
-ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 23757c492986936125eff1203e6a99231164da22
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683316"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768942"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 新增員工
 
@@ -23,7 +23,7 @@ ms.locfileid: "52683316"
 
 雖然預約是 Microsoft 365 的功能，但並非所有的教職員工成員都必須具備 Microsoft 365 帳戶。 所有教職員工成員必須具有有效的電子郵件地址，才能接收預約及排程變更。
 
-## <a name="watch-add-your-staff-in-microsoft-bookings"></a>觀賞：在 Microsoft 預約中新增您的員工
+## <a name="watch-add-your-staff-to-bookings"></a>觀賞：將教職員工新增至預定
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
@@ -67,14 +67,39 @@ ms.locfileid: "52683316"
     > [!NOTE]
     > 當您將教職員工成員指派給服務時，只會顯示您新增至 [員工] 頁面的前1名人員成員。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>讓預約使用者成為超級使用者，而不是將其新增為預定員工
 
-在您新增教職員工成員之後，您可以 [排程公休日及下班時間](schedule-closures-time-off-vacation.md) ，並 [設定排程原則](set-scheduling-policies.md)。
+您可能想要在預約中新增人員至您的職員清單，而不讓客戶或用戶端使用。 當您將其設為超級使用者後，他們就會成為預約信箱的管理員。 做為預約信箱的管理員，會定義為具有預約信箱的完整存取權及「代理傳送」許可權。
 
-## <a name="related-content"></a>相關內容
+> [!NOTE]
+> 只有在所加入的使用者尚未在預約中指派 **檢視器** 角色時，這些步驟才會運作。
 
-[Microsoft Bookings](bookings-overview.md)
+1. [與 PowerShell Microsoft 365 的連線](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-[排程公休日、休息時間和休假時間](schedule-closures-time-off-vacation.md)
+2. 使用 PowerShell，使用下列命令指派完全存取：
 
-[設定您的排程原則](set-scheduling-policies.md)
+    ```powershell
+    Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
+    ```
+
+3. 然後執行此命令指派「傳送為」許可權。
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+以下是將 Allie Bellew 新增至 Contoso daycare 預約信箱 PowerShell 命令的範例。
+
+1. 請先執行此命令：
+
+    ```powershell
+    Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
+    ```
+
+2. 然後執行下列命令：
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+**Allie Bellew** 現在具有管理員存取權，但在預約中未顯示為 bookable 人員。

@@ -1,5 +1,5 @@
 ---
-title: 報告郵件的系統管理員檢查
+title: 已報告訊息的系統管理員檢閱
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -13,14 +13,14 @@ ms.collection:
 description: 瞭解如何查看所報告的訊息，並提供對您的使用者意見反應。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 619cd35b6a60f0d50aa6c13e4cad2b8d7ae947a8
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 7386f5b283e2bfabb76eee91d33dfda0e42ec7b1
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730955"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769122"
 ---
-# <a name="admin-review-for-reported-messages"></a>報告郵件的系統管理員檢查
+# <a name="admin-review-for-reported-messages"></a>已報告訊息的系統管理員檢閱
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -40,12 +40,12 @@ ms.locfileid: "52730955"
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 若要修改使用者提交的設定，您必須是下列其中一個角色群組的成員：
-    - 在 [ [安全性中心](permissions-microsoft-365-compliance-security.md)] 的組織管理或安全性管理員。
-    - [Exchange Online](/Exchange/permissions-exo/permissions-exo)中的組織管理。
+  - [Microsoft 365 Security center](permissions-microsoft-365-security-center.md)中的組織管理或安全性管理員。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo)中的組織管理。
 
 - 您也需要 Exchange Online PowerShell 的存取權。 如果您嘗試使用的帳戶不具備 Exchange Online PowerShell 的存取權，您會收到錯誤，指出 *在您的網域中指定電子郵件地址*。 如需啟用或停用 Exchange Online PowerShell 存取權的詳細資訊，請參閱下列主題：
-    - [啟用或停用 Exchange Online PowerShell 的存取權](/powershell/exchange/disable-access-to-exchange-online-powershell)
-    - [Exchange Online 中的用戶端存取規則](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [啟用或停用 Exchange Online PowerShell 的存取權](/powershell/exchange/disable-access-to-exchange-online-powershell)
+  - [Exchange Online 中的用戶端存取規則](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="configure-the-messages-used-to-notify-users"></a>設定用來通知使用者的郵件
 

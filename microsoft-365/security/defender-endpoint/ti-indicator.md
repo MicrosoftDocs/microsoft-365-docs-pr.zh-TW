@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bbd908c15f4d65d4923c088261c92de6d2d3cc35
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 75b62f1bada67c30dc05237a284f8b64c3c7072d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187107"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771378"
 ---
 # <a name="indicator-resource-type"></a>指示器資源類型
 
@@ -30,7 +31,7 @@ ms.locfileid: "51187107"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -44,7 +45,7 @@ ms.locfileid: "51187107"
 :---|:---|:---
 [清單指示器](get-ti-indicators-collection.md) | [指標](ti-indicator.md) 收集 | 清單 [指示器](ti-indicator.md) 實體。
 [提交指示器](post-ti-indicator.md) | [指標](ti-indicator.md) | 提交或更新 [指示器](ti-indicator.md) 實體。
-[匯入指示器](import-ti-indicators.md) | [指標](ti-indicator.md) 收集 | 提交或更新 [指示器](ti-indicator.md) 實體。
+[匯入指標](import-ti-indicators.md) | [指標](ti-indicator.md) 收集 | 提交或更新 [指示器](ti-indicator.md) 實體。
 [刪除指示器](delete-ti-indicator-by-id.md) | 無內容 | 會刪除 [指示器](ti-indicator.md) 實體。
 
 

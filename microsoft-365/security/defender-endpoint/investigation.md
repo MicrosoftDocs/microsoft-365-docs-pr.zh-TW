@@ -16,13 +16,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3872976717a5b472ab8d471db7eff9975dbc2258
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 252b273995d48d523604802c0c4365a613d86dbe
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587680"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771726"
 ---
 # <a name="investigation-resource-type"></a>調查資源類型
 
@@ -32,7 +33,7 @@ ms.locfileid: "51587680"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

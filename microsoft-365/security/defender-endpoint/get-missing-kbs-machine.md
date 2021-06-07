@@ -1,7 +1,7 @@
 ---
 title: 依設備識別碼取得遺失的 Kb
 description: 依設備識別碼檢索遺失的安全性更新
-keywords: api，graph api，支援的 api，get，list，file，information，device id，威脅 & 漏洞管理 api，Microsoft Defender for Endpoint tvm api
+keywords: api，graph api，支援的 api，get，list，file，information，device id，威脅 & 弱點管理 api，Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aa22b90b95788d9f5a65d54c7a335a2e0f4c3091
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 97cad51938c4ff3498234dbf2e9d69fd48a52367
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933574"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771870"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>依設備識別碼取得遺失的 Kb
 

@@ -17,17 +17,17 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 使用 Windows PowerShell 以取得組織中基本行動與安全性裝置的詳細資料。
-ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 使用 Windows PowerShell 以取得組織中基本行動及安全性裝置的詳細資料。
+ms.openlocfilehash: 7cb2369c9a31210f26db12b0453e7a4228e1cccc
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904249"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782438"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>取得基本行動裝置及安全性受管理裝置的詳細資料
 
-本文將告訴您如何使用 Windows PowerShell，取得您組織中您設定為基本行動性和安全性之裝置的詳細資料。
+本文說明如何使用 Windows PowerShell，以取得您為基本行動性和安全性設定之組織中裝置的詳細資料。
 
 以下是您可以使用的裝置詳細資料明細。
 
@@ -41,15 +41,15 @@ ms.locfileid: "50904249"
 >[!NOTE]
 >本文中的命令和腳本也會傳回 [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)所管理之任何裝置的詳細資料。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 您必須設定一些事項，才能執行本文所述的命令和腳本。
 
-### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>步驟1：下載並安裝適用于 Windows PowerShell 的 Azure Active Directory 模組
+### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>步驟1：下載並安裝 Windows PowerShell 的 Azure Active Directory 模組
 
-如需這些步驟的詳細資訊，請參閱 [Connect To Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell)。
+如需這些步驟的詳細資訊，請參閱 [連線 to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell)。
 
-1. 移至 [IT 專業人員的 Microsoft Online services Sign-In Assistant] RTWl](https://www.microsoft.com/download/details.aspx?id=41950)   ，然後選取 [ **下載 microsoft online services**] 登入小幫手。
+1. 移至 [IT 專業人員的 Microsoft Online services Sign-In Assistant] RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)   ，然後選取 [ **下載 microsoft online services**] 登入小幫手。
 
 2. 以下列步驟安裝適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組：
 
@@ -63,13 +63,13 @@ ms.locfileid: "50904249"
 
     5. 安裝完成後，請關閉 PowerShell 命令視窗。
 
-### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>步驟2：連線至您的 Microsoft 365 訂閱
+### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>步驟2：連線 Microsoft 365 訂閱
 
-1. 在 windows PowerShell Windows Azure Active Directory 模組中，執行下列命令。  
+1. 在 Windows PowerShell 的 Windows Azure Active Directory 模組中，執行下列命令。  
 
     $UserCredential = Get-Credential
 
-2. 在 [Windows PowerShell 憑證要求] 對話方塊中，輸入 Microsoft 365 全域管理員帳戶的使用者名稱和密碼，然後選取 **[確定]**。
+2. 在 [Windows PowerShell 認證要求] 對話方塊中，輸入 Microsoft 365 全域管理員帳戶的使用者名稱和密碼，然後選取 **[確定]**。
 
 3. 執行下列命令。
 
@@ -82,7 +82,7 @@ ms.locfileid: "50904249"
 
 若要執行 Get-MsolUserDeviceComplianceStatus.ps1 腳本，您必須啟用執行 PowerShell 腳本。
 
-1. 在您的 Windows 桌面中，選取 [ **開始**]，然後輸入 Windows PowerShell。 以滑鼠右鍵按一下 [Windows PowerShell]，然後選取 [ **以系統管理員身分執行**]。
+1. 從您的 Windows 桌面，選取 [ **開始**]，然後輸入 Windows PowerShell。 以滑鼠右鍵按一下 [Windows PowerShell]，然後選取 [以 **系統管理員身分執行**]。
 
 2. 執行下列命令。
 
@@ -104,7 +104,7 @@ ms.locfileid: "50904249"
 
 首先，將腳本儲存至您的電腦。
 
-1. 將下列文字複製並貼到 [記事本] 中。  
+1. 在記事本中複製並貼上下列文字。  
 
 2.  param (
 
@@ -263,7 +263,7 @@ ms.locfileid: "50904249"
 70.  }
     
 
-71.  使用副檔名為 ps1，將其儲存為 Windows PowerShell script 檔案。例如，Get-MsolUserDeviceComplianceStatus.ps1。   
+71.  使用副檔名 .ps1 將其儲存為 Windows PowerShell 腳本檔案;例如，Get-MsolUserDeviceComplianceStatus.ps1。   
 
 ## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>執行腳本以取得單一使用者帳戶的裝置資訊
 
@@ -303,7 +303,7 @@ ms.locfileid: "50904249"
 
 ## <a name="related-topics"></a>相關主題
 
-[已停用 Microsoft Connect](/collaborate/connect-redirect)
+[已停用 Microsoft 連線](/collaborate/connect-redirect)
 
 [基本行動與安全性概觀](overview.md)
 

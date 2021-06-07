@@ -17,19 +17,19 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: e77668b3c21b43de1a2e30dc7181842770a24784
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730255"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769200"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用 SharePoint 入口網站啟動計畫程式啟動入口網站
 
 入口網站是內部網路上的 SharePoint 通訊網站，它是高流量–一部星期內從10000到100000查看者的網站。 使用入口網站啟動排程器啟動您的入口網站，以確保使用者在存取新的 SharePoint 入口網站時有光滑的觀賞體驗。
 <br>
 <br>
-入口網站啟動排程器的設計目的是為了協助您遵循分階段的處理常式，並以波形方式批次處理檢視器並管理新入口網站的 URL 重新導向。 在啟動每個 wave 時，您可以收集使用者意見反應、監控入口效能，並暫停啟動以解決問題，再繼續進行下一個波形。 深入瞭解如何[在 SharePoint 中規劃入口網站啟動](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)。 
+入口網站啟動排程器的設計目的是為了協助您遵循分階段的處理常式，並以波形方式批次處理檢視器並管理新入口網站的 URL 重新導向。 在啟動每個 wave 時，您可以收集使用者意見反應、監控入口效能，並暫停啟動以解決問題，再繼續進行下一個波形。 深入瞭解如何[在 SharePoint 中規劃入口網站啟動](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)。 
 
 **有兩種類型的重定向：**
 
@@ -116,28 +116,30 @@ ms.locfileid: "52730255"
 
 7. 決定誰需要立即查看網站，並將其資訊輸入 [豁免的 **使用者** ] 欄位。 這些使用者會從波形中排除，不會在發射之前、期間或之後重新導向。
 
+    >[!NOTE]
+    > 最多可新增50個不同的使用者或安全性群組。 在聲波開始啟動之前，您需要超過50個人才能存取入口網站，請使用安全性群組。 
+
 8.  確認入口網站啟動詳細資料並選取 **排程**。 開始排程後，對 SharePoint 入口網站首頁所做的任何變更，都必須先接收正常的診斷結果，再繼續進行入口網站啟動。
 
-### <a name="launch-portal-with-over-100k-users"></a>使用超過100k 使用者的啟動入口網站
+### <a name="launch-a-portal-with-over-100k-users"></a>啟動超過100k 使用者的入口網站
 
-如果您打算使用超過100000的使用者啟動入口網站，請遵循下列所列的步驟提交支援要求。 請確認包含所有要求的資訊。
+如果您打算使用超過100000的使用者啟動入口網站，請遵循下列所列的步驟提交支援要求。 請務必包含所有要求的資訊。
 
-請遵循下列步驟：
-1. 瀏覽到 https://admin.microsoft.com
-2. 確定您使用新的系統管理中心預覽。
-3. 在左側瀏覽窗格中，選取 [支援]，然後選取 [新增服務要求]。 
-
+**遵循下列步驟：**
+1. 請移至 https://admin.microsoft.com
+2. 確定您使用的是新的系統管理中心預覽
+3. 在左導覽窗格中，選取 [**支援**]，然後選取 [**新增服務要求**]。
 
    這會在您的畫面右側啟動「需要協助嗎？」窗格。
 
-4.  在 [**簡短描述您的問題**] 區域中，輸入「使用100k 使用者的發行 SharePoint 入口網站」。</br>
-5. 選取 [連絡支援部門]。
-6. 在 [**描述**] 底下，輸入「啟動含100k 使用者的 SharePoint 入口網站」。 
-7. 填寫其餘資訊，然後選取 [與我聯繫]。
+4. 若要 **暫時描述您的問題**，請輸入「使用100k 使用者的啟動 SharePoint 入口網站」。</br>
+5. 然後，選取 [**連絡人支援**]
+6. 在 [**描述**] 底下，輸入「啟動含100k 使用者的 SharePoint 入口網站」
+7. 填寫其餘資訊，然後選取 [**與我們聯繫**]
 8. 建立票證之後，請確定提供支援代理人以下資訊：
-- 啟動入口網站 URL 
-- 預期的使用者數目
-- 預估啟動時間 
+   - 入口網站 URL 
+   - 預期的使用者數目
+   - 預估啟動排程
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>對已排程的入口網站啟動進行變更
 

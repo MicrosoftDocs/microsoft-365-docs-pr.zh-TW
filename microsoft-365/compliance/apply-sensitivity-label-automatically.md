@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: d7559e5fa75db1fb23592dec1a3a5f35bad603df
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c39e5895c3315d77d7bfc211f0ba3e65f06659b
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538530"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769290"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -93,7 +93,7 @@ ms.locfileid: "52538530"
 |已針對條件檢查 Exchange 附件|否 | 是|
 |套用視覺標記 |是 |是 (僅限電子郵件) |
 |已套用覆寫 IRM 加密但沒有標籤|如果使用者只有匯出的最小使用權限，則為是。 |是 (僅限電子郵件) |
-|將內送電子郵件套用標籤|否 |是 (未套用加密) |
+|將內送電子郵件套用標籤|否 |是|
 
 \* 目前並非所有地區都提供自動套用標籤功能。 如果您的租用戶無法支援這項功能，[系統管理標籤中心] 就不會顯示 [自動套用標籤] 索引標籤。
 

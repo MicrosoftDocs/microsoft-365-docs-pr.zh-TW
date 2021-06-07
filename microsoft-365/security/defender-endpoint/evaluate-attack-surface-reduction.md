@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.topic: article
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 73b23427ff401f2a37c399131d6aa01330ff9de5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c2dea22cc8a0ebb875f83ebd5a3e42f723e5f254
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245297"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771318"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>評估受攻擊面縮小規則
 
@@ -37,10 +37,10 @@ ms.locfileid: "52245297"
 
 設定執行下列任何版本及版本 Windows 之裝置的攻擊面減少規則：
 
-- Windows 10 專業版，[版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
-- Windows 10 企業版，[版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
-- Windows伺服器，[版本 1803 (半年通道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- Windows 10 專業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
+- Windows 10 企業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
+- Windows伺服器，[版本 1803 (半年通道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 瞭解如何透過稽核模式直接在組織中測試功能，以評估攻擊面減少規則。
 
@@ -86,7 +86,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 如需使用管理工具（包括群組原則和 MDM CSP 原則）設定該功能的詳細資訊，請參閱 [自訂攻擊面降規則](customize-attack-surface-reduction.md) 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [使用攻擊面減少規則來減少攻擊面](attack-surface-reduction.md)
 * [使用稽核模式評估 Windows Defender](audit-windows-defender.md)

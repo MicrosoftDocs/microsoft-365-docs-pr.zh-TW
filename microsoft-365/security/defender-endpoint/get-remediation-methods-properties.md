@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4c0ecd89c45ec2c91dc37f0c9cd0bfb868c0474e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 67009961ecc3755b5af21b2e773bc817ea46bec0
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245537"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769230"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>補救活動方法和屬性
 
@@ -84,7 +85,7 @@ targetDevices | Long | 此修復適用的公開裝置數目
 類型 | 字串 | 修正類型
 vendorId | 字串 | 相關的供應商名稱
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [根據識別碼取得一個補救活動](get-remediation-one-activity.md)
 

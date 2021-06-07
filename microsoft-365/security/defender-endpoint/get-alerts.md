@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f4b62ca7fecb8e66fc082b6cf0972c1c2c06afb5
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166414"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769238"
 ---
 # <a name="list-alerts-api"></a>清單提醒 API
 
@@ -30,7 +31,7 @@ ms.locfileid: "51166414"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -314,5 +315,5 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [使用 Microsoft Defender for Endpoint OData 查詢](exposed-apis-odata-samples.md)

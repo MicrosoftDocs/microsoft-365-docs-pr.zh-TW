@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 365 群組，您可以讓人員群組存取共用資源的集合，以促進團隊合作的 Microsoft 365。
-ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 69f7e47bcfb9e0704f8c373cf1addf98ef898cfa
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635747"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782390"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>系統管理員的 Microsoft 365 群組概觀 (部分機器翻譯)
 
@@ -45,7 +45,7 @@ Microsoft 365群組是一種基礎成員資格服務，可促進所有團隊間�
 
 使用 Microsoft 365 群組時，您不需要手動指派每個資源的許可權。 將人員新增至群組時，會自動為他們提供所需的許可權。
 
-除非您將 [群組建立限制于一組特定的人員](../../solutions/manage-creation-of-groups.md)，否則任何使用者都可以建立群組。 如果您限制群組的建立，無法建立群組的使用者將無法建立 SharePoint 網站、規劃人員或小組。 這些服務要求建立群組的人員可以建立群組。 使用者仍可參與群組活動，例如在 Planner 中建立工作，或使用 Teams 聊天室，只要是群組的成員。
+除非您將 [群組建立限制于一組特定的人員](../../solutions/manage-creation-of-groups.md)，否則任何使用者都可以建立群組。 如果您限制群組的建立，無法建立群組的使用者將無法在 OneDrive 中建立 SharePoint 網站、規劃人員、小組、Outlook 群組行事曆、Stream 群組、Yammer 群組、共用文件庫，或共用 Power BI 工作區。 這些服務要求建立群組的人員可以建立群組。 使用者仍可參與群組活動，例如在 Planner 中建立工作，或使用 Teams 聊天室，只要是群組的成員。
 
 群組具有下列角色：
 

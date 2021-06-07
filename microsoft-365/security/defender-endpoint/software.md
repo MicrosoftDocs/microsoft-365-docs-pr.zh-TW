@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9bfec2c4e65a390189556c14347eaf17236fb95e
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 14291cbbba2272d268a8e79b6df7bd87992885db
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187103"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771392"
 ---
 # <a name="software-resource-type"></a>軟體資源類型
 
@@ -32,7 +33,7 @@ ms.locfileid: "51187103"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -45,12 +46,12 @@ ms.locfileid: "51187103"
 
 方法	 |傳回類型 |描述
 :---|:---|:---
-[清單軟體](get-software.md) | 軟體集合 | 列出組織軟體清查。
-[依識別碼取得軟體](get-software-by-id.md) | 軟體 | 根據軟體識別碼取得特定軟體。
-[軟體發行版本本清單](get-software-ver-distribution.md)| 通訊組集合 | 依軟體識別碼列出軟體版本發行。
-[依軟體列出電腦](get-machines-by-software.md)| MachineRef 集合 | 取得與軟體識別碼相關聯的裝置清單。
-[依軟體列出弱點](get-vuln-by-software.md) | [弱點](vulnerability.md) 集合 | 取得軟體識別碼相關聯的安全性漏洞清單。
-[取得遺失的 Kb](get-missing-kbs-software.md) | KB 集合 | 取得與軟體識別碼相關的遺失 Kb 清單。
+[列出軟體](get-software.md) | 軟體集合 | 列出組織軟體清查。
+[根據識別碼取得軟體](get-software-by-id.md) | 軟體 | 根據軟體識別碼取得特定軟體。
+[列出軟體版本發佈](get-software-ver-distribution.md)| 通訊組集合 | 依軟體識別碼列出軟體版本發行。
+[以軟體列出電腦](get-machines-by-software.md)| MachineRef 集合 | 取得與軟體識別碼相關聯的裝置清單。
+[列出軟體的弱點](get-vuln-by-software.md) | [弱點](vulnerability.md) 集合 | 取得軟體識別碼相關聯的安全性漏洞清單。
+[取得遺失的 KB](get-missing-kbs-software.md) | KB 集合 | 取得與軟體識別碼相關的遺失 Kb 清單。
 
 ## <a name="properties"></a>屬性
 

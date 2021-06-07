@@ -694,7 +694,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: 檢視檢閱集中的文件
               href: view-documents-in-review-set.md
-            - name: 查詢檢視集中的資料
+            - name: 查詢和篩選檢閱集中的內容
               href: review-set-search.md
             - name: 標記檢閱集中的文件
               href: tagging-documents.md

@@ -9,22 +9,21 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b3460e2c9b6073c518bea46147be69d4b89cd96a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/02/2021
+ms.openlocfilehash: 5bdb7ed46bdf01d4fb6075f310b98dcdb98a5a7f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538636"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771918"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>啟用受攻擊面縮小規則
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 
@@ -32,7 +31,7 @@ ms.locfileid: "52538636"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [註冊免費試用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 [攻擊面減少規則](attack-surface-reduction.md) (ASR 規則) 協助防止惡意程式碼經常濫用裝置和網路遭到侵入的動作。
 
@@ -55,7 +54,7 @@ ms.locfileid: "52538636"
 > [!IMPORTANT]
 > 目前，當您在 Microsoft 端點管理員 (MEM) 中設定 asr 規則時，不支援三種 asr 規則的警告模式。 若要深入瞭解，請參閱 [不支援警告模式的案例](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
 
-強烈建議您使用具有 Windows E5 授權 (或類似授權 SKU) 的 ASR 規則，以利用[Microsoft Defender for](https://docs.microsoft.com/windows/security/threat-protection) endpoint (Defender for endpoint) 中提供的高級監控和報告功能。 不過，針對 Windows Professional 或 E3 等其他授權，如未存取高級監控和報告功能，您可以在觸發 ASR 規則時，在每個端點上建立您自己的監控和報告工具，以在觸發 ASR 規則時產生， (例如事件轉送) 。
+強烈建議使用具有 Windows E5 授權 (或類似授權 SKU) 的 ASR 規則，以利用[Microsoft Defender for](microsoft-defender-endpoint.md) endpoint (Defender for endpoint) 中提供的高級監控和報告功能。 不過，如果您有另一個授權（如 Windows Professional 或 Windows E3 未包含高級監控和報告功能），您可以在觸發 ASR 規則時，在每個端點上建立您自己的監控和報告工具， (例如事件轉發) 。
 
 > [!TIP]
 > 若要深入瞭解 Windows 授權，請參閱[Windows 10 授權](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)並取得[Windows 10 的大量授權指南](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
@@ -74,7 +73,7 @@ ms.locfileid: "52538636"
 
 您可以將檔案和資料夾排除在大多數攻擊面降低規則之外進行評估。 這表示即使 ASR 規則判斷的檔案或資料夾包含惡意行為，也不會封鎖該檔案執行。 這可能會允許不安全的檔案執行並感染您的裝置。
 
-您也可以透過允許指定的 Defender for Endpoint file 和憑證指示器，排除從觸發憑證和檔案雜湊的 ASR 規則。  (請參閱 [管理指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators)。 ) 
+您也可以透過允許指定的 Defender for Endpoint file 和憑證指示器，排除從觸發憑證和檔案雜湊的 ASR 規則。  (請參閱 [管理指示器](manage-indicators.md)。 ) 
 
 > [!IMPORTANT]
 > 排除檔案或資料夾可能會大大降低 ASR 規則所提供的保護。 將會允許執行排除的檔案，而且不會記錄任何報表或事件。
@@ -82,7 +81,7 @@ ms.locfileid: "52538636"
 
 您可以指定個別的檔案或資料夾 (使用資料夾路徑或完全限定資源名稱) ，但您無法指定要套用排除的規則。 只有在已排除的應用程式或服務啟動時，才會套用排除。 例如，如果您為已在執行的更新服務新增排除，更新服務會繼續觸發事件，直到停止並重新啟動服務為止。
 
-ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細資訊，請參閱 [在檔案名和資料夾路徑或副檔名排除清單中使用萬用字元](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)。
+ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細資訊，請參閱 [在檔案名和資料夾路徑或副檔名排除清單中使用萬用字元](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)。
 
 下列啟用 ASR 規則的套裝程式括如何排除檔案和資料夾的指示。
 
@@ -122,7 +121,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
    > [!div class="mx-imgBorder"]
    > ![MEM 基本屬性](images/mem03-1-basics.png)
 
-4. 按一下 ****[下一步]。 步驟 **2 設定設定** 隨即開啟。 若為 OMA-URI 設定，請按一下 [**新增**]。 現在會顯示兩個選項： [ **新增** ] 和 [ **匯出**]。
+4. 按一下 [**下一步**]。 步驟 **2 設定設定** 隨即開啟。 若為 OMA-URI 設定，請按一下 [**新增**]。 現在會顯示兩個選項： [ **新增** ] 和 [ **匯出**]。
 
    > [!div class="mx-imgBorder"]
    > ![記憶體配置設定](images/mem04-2-configuration-settings.png)
@@ -138,7 +137,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
    > [!div class="mx-imgBorder"]
    > ![MEM 的 OMA URI 設定](images/mem05-add-row-oma-uri.png)
 
-6. 按一下 [儲存]。 **新增列** 關閉。 在 [ **自訂** **] 按 [下一步]**。 在步驟 **3 範圍標記** 中，範圍標記是選用的。 執行下列其中一項：
+6. 按一下 **[儲存]**。 **新增列** 關閉。 在 [ **自訂** **] 按 [下一步]**。 在步驟 **3 範圍標記** 中，範圍標記是選用的。 執行下列其中一項：
 
    - 按一下 [ **選取範圍** 標籤]，選取 [範圍] 標籤 (選用) 然後按 **[下一步]**。
    - 或按 **[下一步]**
@@ -163,7 +162,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
    > [!div class="mx-imgBorder"]
    > ![MEM 適用性規則](images/mem07-5-applicability-rules.png)
 
-10. 按一下 ****[下一步]。 在步驟 **6 中，複查 + 建立**、複查您已選取並輸入的設定和資訊，然後按一下 [ **建立**]。
+10. 按一下 [**下一步**]。 在步驟 **6 中，複查 + 建立**、複查您已選取並輸入的設定和資訊，然後按一下 [ **建立**]。
 
     > [!div class="mx-imgBorder"]
     > ![記憶審閱和建立](images/mem08-6-review-create.png)
@@ -180,7 +179,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 
 ## <a name="mdm"></a>Mdm
 
-使用 [/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service PROVIDER (CSP) 以個別啟用和設定每個規則的模式。
+使用 [/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service PROVIDER (CSP) 以個別啟用和設定每個規則的模式。
 
 下列為參考資料範例，其使用 [的是 ASR 規則的 GUID 值](attack-surface-reduction.md#attack-surface-reduction-rules)。
 
@@ -195,7 +194,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
 - 2：審計 (評估 ASR 規則在啟用時會如何影響您的組織) 
 - 6：警告 (啟用 ASR 規則，但是允許使用者略過區塊) 。 警告模式現在可用於大部分的 ASR 規則。
 
-使用 [/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) configuration service PROVIDER (CSP) 新增排除專案。
+使用 [/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) configuration service PROVIDER (CSP) 新增排除專案。
 
 範例：
 
@@ -275,7 +274,7 @@ ASR 規則支援環境變數和萬用字元。 如需使用萬用字元的詳細
     若要啟用利用漏洞簽名驅動程式的 ASR 封鎖濫用，請使用下列 Cmdlet：
 
    ```PowerShell
-   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled
    ```
 
     若要關閉 ASR 規則，請使用下列 Cmdlet：

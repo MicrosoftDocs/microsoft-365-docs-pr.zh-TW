@@ -1,5 +1,5 @@
 ---
-title: 根據識別碼取得軟體
+title: 依識別碼取得軟體
 description: 依設備群組來檢索曝光分數的清單。
 keywords: api，graph api，支援的 api，get，軟體，Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
@@ -14,14 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 31203e83570dbeb2404c9f1578301b5d6c18223c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7e9e6b5e64099e7ab49fec624d83f13f18e6029c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934306"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769158"
 ---
-# <a name="get-software-by-id"></a>根據識別碼取得軟體
+# <a name="get-software-by-id"></a>依識別碼取得軟體
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

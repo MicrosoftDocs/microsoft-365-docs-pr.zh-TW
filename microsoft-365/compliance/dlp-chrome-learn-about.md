@@ -1,5 +1,5 @@
 ---
-title: 瞭解 Microsoft 合規性延伸模組 (預覽)
+title: 了解 Microsoft 合規性延伸模組
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,15 +18,15 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Microsoft 合規性延伸模組會將監視並控制檔案活動和保護動作擴充至 Google Chrome 瀏覽器
-ms.openlocfilehash: c8a5795b3be8b393fd3a934504449bf6db0c2f01
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Microsoft 合規性延伸模組能會將監視並控制檔案活動和保護動作擴充至 Google Chrome 瀏覽器
+ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113379"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730483"
 ---
-# <a name="learn-about-the-microsoft-compliance-extension-preview"></a>瞭解 Microsoft 合規性延伸模組 (預覽)
+# <a name="learn-about-the-microsoft-compliance-extension"></a>了解 Microsoft 合規性延伸模組
 
 [端點資料外洩防護 (端點 DLP)](endpoint-dlp-learn-about.md)將 [Microsoft 365 資料外洩防護 (DLP)](dlp-learn-about-dlp.md) 的活動監視和保護功能擴充到 Windows 10 裝置上的敏感性項目。 將裝置上架至 Microsoft 365 合規性解決方案之後，使用者對敏感度項目所進行動作的相關資訊會顯示在[活動總管](data-classification-activity-explorer.md)中，而且您可以透過 [DLP 原則](create-test-tune-dlp-policy.md)對這些項目強制執行保護動作。
 

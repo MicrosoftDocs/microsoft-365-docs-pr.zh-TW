@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 03a1ef11224021703a6f33f82fa2c4f135a317a7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e2b1114cd091c9cd42aa8e4525416f9d73358a65
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934174"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771990"
 ---
 # <a name="offboard-machine-api"></a>下架 machine API
 
@@ -50,7 +51,7 @@ ms.locfileid: "51934174"
 [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 >[!Note]
-> Windows 10、版本1703和更新版本或 Windows Server 2019 及更新版本都支援此 API。 MacOS 或 Linux 裝置不支援此 API。
+> Windows 10、版本1703和更新版本，或是 Windows Server 2019 及更新版本，都支援此 API。 MacOS 或 Linux 裝置不支援此 API。
 
 ## <a name="permissions"></a>權限
 需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解（包括如何選擇許可權），請參閱 [使用 Defender For Endpoint APIs](apis-intro.md)

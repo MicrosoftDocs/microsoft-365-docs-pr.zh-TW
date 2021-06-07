@@ -1,7 +1,7 @@
 ---
 title: 列出所有建議
 description: 會檢索影響組織之所有安全性建議的清單。
-keywords: api，graph api，支援的 api，get，安全性建議，Microsoft Defender for Endpoint tvm api，威脅和弱點管理，威脅和弱點管理 api
+keywords: api、graph api、支援的 api、get、security 建議、Microsoft Defender for Endpoint tvm api 威脅與弱點管理威脅與弱點管理 api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0cb0a1f8a42b419db960e5097667c335bf7f7877
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 0a58287a9bd48a4d19144a40674e1d3ad3bd256a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935014"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768922"
 ---
 # <a name="list-all-recommendations"></a>列出所有建議
 
@@ -119,7 +120,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations
      ]
 }
 ```
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [風險威脅 & 弱點管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [威脅 & 漏洞安全性建議](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
 

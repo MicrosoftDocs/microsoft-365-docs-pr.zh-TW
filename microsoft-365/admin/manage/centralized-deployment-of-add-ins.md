@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 判斷您的承租人和使用者是否符合需求，讓您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 63775ed6bab2d595ae87085e1607be5818b355e2
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635447"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782483"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷集中式部署的增益集是否適用于您的組織
 
@@ -43,7 +43,7 @@ ms.locfileid: "52635447"
 
 增益集最多可能需要24小時才能顯示所有使用者的用戶端。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 [！注意] 增益集的集中式部署需要使用者使用 Microsoft 365 企業版 SKUs： E3/E5/F3 或商務 SKUs：商務基本、商務標準、商務進階版 (並使用組織識別碼 Office 登入) ，並具有 Exchange Online 和使用中 Exchange Online 信箱。 您的訂閱目錄必須是 in 或同盟 to Azure Active Directory。
 您可以在下列 Office 和 Exchange 中查看特定需求，或使用[集中式部署相容性檢查](#centralized-deployment-compatibility-checker)程式。
@@ -84,7 +84,7 @@ Microsoft Exchange 會將增益集資訊清單儲存在貴組織的租用戶中�
 
 ### <a name="centralized-deployment-compatibility-checker"></a>集中式部署相容性檢查程式
 
-您可以使用集中式部署相容性檢查程式，確認您租使用者上的使用者是否已設定為使用 Word 的集中式部署，Excel 和 PowerPoint。 相容性檢查程式不需要 Outlook 支援。 請在[這裡](https://aka.ms/officeaddindeploymentorgcompatibilitychecker) (英文) 下載相容性檢查程式。
+您可以使用集中式部署相容性檢查程式，確認您租使用者上的使用者是否已設定為使用 Word 的集中式部署，Excel 和 PowerPoint。 相容性檢查程式不需要 Outlook 支援。 下載 [相容性檢查](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)程式。
   
 #### <a name="run-the-compatibility-checker"></a>執行相容性檢查程式
   
@@ -121,7 +121,7 @@ Microsoft Exchange 會將增益集資訊清單儲存在貴組織的租用戶中�
 - 支援的信箱 (如果該使用者擁有啟用 OAuth 的信箱)
 
 > [!NOTE]
-> 使用集中式部署 PowerShell 模組時，不支援多重要素驗證。
+> 使用集中式部署 PowerShell 模組時，不支援多重要素驗證。 模組只適用于基本驗證。
   
 ## <a name="user-and-group-assignments"></a>使用者和群組指派
 
@@ -155,7 +155,7 @@ You can do the opposite query by resolving the group to see if it's a member of 
   
 |**平台**|**偵錯資訊**|
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler 記錄檔  <br/>  租用戶識別碼 ( [了解做法](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID。 查看其中一個 office 頁面的來源，並尋找 [相關性識別碼] 值並傳送給支援：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler 記錄檔  <br/>  租用戶識別碼 ( [了解做法](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID。 查看其中一個 office 頁面的來源，並尋找 [相關性識別碼] 值並傳送給支援：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |豐富型用戶端 (Windows、Mac)  <br/> | Charles/Fiddler 記錄檔  <br/>  用戶端應用程式的組建編號 (最好是檔案 **/帳戶** 的螢幕擷取畫面)   <br/> |
 
 ## <a name="related-content"></a>相關內容
