@@ -19,12 +19,12 @@ description: 系統管理員可以瞭解如何使用欺詐智慧原則和欺騙�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 821488f79186e1b5c306b587764377989346eea5
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530883"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793205"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>使用哄騙智慧原則和 EOP 中的欺騙智慧洞察力來管理冒牌寄件者
 
@@ -69,7 +69,7 @@ ms.locfileid: "52530883"
   - [在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
   - [設定 Microsoft Defender 中 Office 365 的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
-- 如需適用于哄騙情報的建議設定，請參閱 [EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings)。
+- 如需適用于哄騙情報的建議設定，請參閱 [EOP 反網路釣魚原則設定](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)。
 
 ## <a name="manage-spoofed-senders"></a>管理欺騙寄件者
 
@@ -96,7 +96,7 @@ ms.locfileid: "52530883"
    - **您的網域**：寄件者哄騙您內部網域中的使用者。
    - **外部網域**：寄件者哄騙外部網域中的使用者。
 
-5. 按一下 ![ ](../../media/scc-expand-icon.png) [ **允許欺騙？** ] 欄中的展開圖示。 選擇 **[是]** 允許冒牌寄件者，或選擇 [ **否** ] 將郵件標示為欺騙。 此巨集指令是由預設的反網路釣魚原則或自訂的反網路釣魚原則所控制 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。
+5. 按一下 ![ ](../../media/scc-expand-icon.png) [ **允許欺騙？** ] 欄中的展開圖示。 選擇 **[是]** 允許冒牌寄件者，或選擇 [ **否** ] 將郵件標示為欺騙。 此巨集指令是由預設的反網路釣魚原則或自訂的反網路釣魚原則所控制 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。 如需詳細資訊，請參閱[防網路釣魚原則中的詐騙](set-up-anti-phishing-policies.md#spoof-settings)。
 
    ![顯示欺騙寄件者飛出的螢幕擷取畫面，以及是否允許寄件者哄騙](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 

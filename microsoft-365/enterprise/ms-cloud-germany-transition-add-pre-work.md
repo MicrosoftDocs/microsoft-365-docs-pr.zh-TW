@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 microsoft cloud 德國移動 (microsoft cloud Deutschland) 以 Office 365 新德文 datacenter 區域中的服務的準備工作。
-ms.openlocfilehash: 244a784b0e28f9d5629f5af242a6cf8227abdb01
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5eefa56b96eb616c694b26c374b235ccd95c3ee9
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770371"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796015"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的預先遷移活動
 
@@ -201,7 +201,7 @@ Enterprise 具有 Exchange Online 和內部部署 Exchange Server 混合式部�
 如果您在 Microsoft Cloud Deutschland 實例中對 Office 365 和 Microsoft Azure 使用相同的 Azure Active Directory 身分識別分割區，請確定您準備好進行 Microsoft Azure 服務的客戶導向遷移。
 
 > [!NOTE]
-> 您的 Microsoft Azure 服務的遷移可能無法在您的 Office 365 租使用者達到遷移階段9之前開始，必須在完成遷移階段10之前完成。
+> 您的 Microsoft Azure 服務的遷移可能無法在您的 Office 365 租使用者達到遷移階段9之前開始，必須在遷移階段10開始之前完成。
 
 使用 Office 365 和 Azure 資源 (（例如網路、計算和儲存) ）的客戶會執行資源的遷移到 Office 365 服務實例。 這種遷移是客戶的責任。 訊息中心文章會通知開始。 在 Office 365 服務環境中完成 Azure AD 組織之前，必須完成遷移。 如需 Azure 遷移，請參閱 azure 遷移行動手冊（ [Azure 德國遷移指南的概述](https://docs.microsoft.com/azure/germany/germany-migration-main)）。
 
@@ -230,7 +230,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>詳細資訊
 
 開始：
 
