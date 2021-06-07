@@ -14,88 +14,89 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 94be185bd30cd36f456a66d5ae30a4361abc0c48
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 043d423e1016d77cad4a175aa41718329f464252
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688246"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768919"
 ---
-# <a name="update-alert"></a><span data-ttu-id="628bb-105">更新警示</span><span class="sxs-lookup"><span data-stu-id="628bb-105">Update alert</span></span>
+# <a name="update-alert"></a><span data-ttu-id="f7cbc-105">更新警示</span><span class="sxs-lookup"><span data-stu-id="f7cbc-105">Update alert</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="628bb-106">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="628bb-106">**Applies to:**</span></span>
-- [<span data-ttu-id="628bb-107">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="628bb-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [<span data-ttu-id="628bb-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="628bb-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="f7cbc-106">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="f7cbc-106">**Applies to:**</span></span>
+- [<span data-ttu-id="f7cbc-107">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="f7cbc-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [<span data-ttu-id="f7cbc-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f7cbc-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="628bb-109">想要體驗 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="628bb-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="628bb-110">註冊免費試用版。</span><span class="sxs-lookup"><span data-stu-id="628bb-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="f7cbc-109">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="f7cbc-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f7cbc-110">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="628bb-111">API 描述</span><span class="sxs-lookup"><span data-stu-id="628bb-111">API description</span></span>
-<span data-ttu-id="628bb-112">更新現有 [警示](alerts.md)的屬性。</span><span class="sxs-lookup"><span data-stu-id="628bb-112">Updates properties of existing [Alert](alerts.md).</span></span>
-<br><span data-ttu-id="628bb-113">提交 **批註** 可用於或不更新屬性。</span><span class="sxs-lookup"><span data-stu-id="628bb-113">Submission of **comment** is available with or without updating properties.</span></span>
-<br><span data-ttu-id="628bb-114">可更新的屬性包括： ```status``` 、 ```determination``` 、 ```classification``` 和 ```assignedTo``` 。</span><span class="sxs-lookup"><span data-stu-id="628bb-114">Updatable properties are: ```status```, ```determination```, ```classification``` and ```assignedTo```.</span></span>
+## <a name="api-description"></a><span data-ttu-id="f7cbc-111">API 描述</span><span class="sxs-lookup"><span data-stu-id="f7cbc-111">API description</span></span>
+<span data-ttu-id="f7cbc-112">更新現有 [警示](alerts.md)的屬性。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-112">Updates properties of existing [Alert](alerts.md).</span></span>
+<br><span data-ttu-id="f7cbc-113">提交 **批註** 可用於或不更新屬性。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-113">Submission of **comment** is available with or without updating properties.</span></span>
+<br><span data-ttu-id="f7cbc-114">可更新的屬性包括： ```status``` 、 ```determination``` 、 ```classification``` 和 ```assignedTo``` 。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-114">Updatable properties are: ```status```, ```determination```, ```classification``` and ```assignedTo```.</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="628bb-115">限制</span><span class="sxs-lookup"><span data-stu-id="628bb-115">Limitations</span></span>
-1. <span data-ttu-id="628bb-116">您可以更新可在 API 中使用的警示。</span><span class="sxs-lookup"><span data-stu-id="628bb-116">You can update alerts that available in the API.</span></span> <span data-ttu-id="628bb-117">如需詳細資訊，請參閱 [清單提醒](get-alerts.md) 。</span><span class="sxs-lookup"><span data-stu-id="628bb-117">See [List Alerts](get-alerts.md) for more information.</span></span>
-2. <span data-ttu-id="628bb-118">此 API 的速率限制為每分鐘100個通話，每小時1500個通話。</span><span class="sxs-lookup"><span data-stu-id="628bb-118">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="f7cbc-115">限制</span><span class="sxs-lookup"><span data-stu-id="f7cbc-115">Limitations</span></span>
+1. <span data-ttu-id="f7cbc-116">您可以更新可在 API 中使用的警示。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-116">You can update alerts that available in the API.</span></span> <span data-ttu-id="f7cbc-117">如需詳細資訊，請參閱 [清單提醒](get-alerts.md) 。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-117">See [List Alerts](get-alerts.md) for more information.</span></span>
+2. <span data-ttu-id="f7cbc-118">此 API 的速率限制為每分鐘100個通話，每小時1500個通話。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-118">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="628bb-119">權限</span><span class="sxs-lookup"><span data-stu-id="628bb-119">Permissions</span></span>
-<span data-ttu-id="628bb-120">需要有下列其中一個許可權才能呼叫此 API。</span><span class="sxs-lookup"><span data-stu-id="628bb-120">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="628bb-121">若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="628bb-121">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7cbc-119">權限</span><span class="sxs-lookup"><span data-stu-id="f7cbc-119">Permissions</span></span>
+<span data-ttu-id="f7cbc-120">需要有下列其中一個許可權才能呼叫此 API。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-120">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="f7cbc-121">若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="f7cbc-121">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="628bb-122">許可權類型</span><span class="sxs-lookup"><span data-stu-id="628bb-122">Permission type</span></span> |   <span data-ttu-id="628bb-123">權限</span><span class="sxs-lookup"><span data-stu-id="628bb-123">Permission</span></span>  |   <span data-ttu-id="628bb-124">許可權顯示名稱</span><span class="sxs-lookup"><span data-stu-id="628bb-124">Permission display name</span></span>
+<span data-ttu-id="f7cbc-122">許可權類型</span><span class="sxs-lookup"><span data-stu-id="f7cbc-122">Permission type</span></span> |   <span data-ttu-id="f7cbc-123">權限</span><span class="sxs-lookup"><span data-stu-id="f7cbc-123">Permission</span></span>  |   <span data-ttu-id="f7cbc-124">許可權顯示名稱</span><span class="sxs-lookup"><span data-stu-id="f7cbc-124">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="628bb-125">應用程式</span><span class="sxs-lookup"><span data-stu-id="628bb-125">Application</span></span> |   <span data-ttu-id="628bb-126">警示。 ReadWrite。</span><span class="sxs-lookup"><span data-stu-id="628bb-126">Alerts.ReadWrite.All</span></span> |  <span data-ttu-id="628bb-127">「讀取及寫入所有警示」</span><span class="sxs-lookup"><span data-stu-id="628bb-127">'Read and write all alerts'</span></span>
-<span data-ttu-id="628bb-128">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="628bb-128">Delegated (work or school account)</span></span> | <span data-ttu-id="628bb-129">警示。 ReadWrite</span><span class="sxs-lookup"><span data-stu-id="628bb-129">Alert.ReadWrite</span></span> | <span data-ttu-id="628bb-130">「讀取及寫入警示」</span><span class="sxs-lookup"><span data-stu-id="628bb-130">'Read and write alerts'</span></span>
+<span data-ttu-id="f7cbc-125">應用程式</span><span class="sxs-lookup"><span data-stu-id="f7cbc-125">Application</span></span> |   <span data-ttu-id="f7cbc-126">警示。 ReadWrite。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-126">Alerts.ReadWrite.All</span></span> |  <span data-ttu-id="f7cbc-127">「讀取及寫入所有警示」</span><span class="sxs-lookup"><span data-stu-id="f7cbc-127">'Read and write all alerts'</span></span>
+<span data-ttu-id="f7cbc-128">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="f7cbc-128">Delegated (work or school account)</span></span> | <span data-ttu-id="f7cbc-129">警示。 ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f7cbc-129">Alert.ReadWrite</span></span> | <span data-ttu-id="f7cbc-130">「讀取及寫入警示」</span><span class="sxs-lookup"><span data-stu-id="f7cbc-130">'Read and write alerts'</span></span>
 
 >[!Note]
-> <span data-ttu-id="628bb-131">使用使用者認證取得權杖時：</span><span class="sxs-lookup"><span data-stu-id="628bb-131">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="628bb-132">使用者至少必須具備下列角色許可權：「警示調查」 (請參閱 [建立及管理角色](user-roles.md) 以取得詳細資訊) </span><span class="sxs-lookup"><span data-stu-id="628bb-132">The user needs to have at least the following role permission: 'Alerts investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="628bb-133">使用者必須能夠存取與警示相關聯的裝置，其基礎取決於裝置群組設定 (請參閱 [建立及管理裝置群組](machine-groups.md) 以取得詳細資訊) </span><span class="sxs-lookup"><span data-stu-id="628bb-133">The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="f7cbc-131">使用使用者認證取得權杖時：</span><span class="sxs-lookup"><span data-stu-id="f7cbc-131">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="f7cbc-132">使用者至少必須具備下列角色許可權：「警示調查」 (請參閱 [建立及管理角色](user-roles.md) 以取得詳細資訊) </span><span class="sxs-lookup"><span data-stu-id="f7cbc-132">The user needs to have at least the following role permission: 'Alerts investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="f7cbc-133">使用者必須能夠存取與警示相關聯的裝置，其基礎取決於裝置群組設定 (請參閱 [建立及管理裝置群組](machine-groups.md) 以取得詳細資訊) </span><span class="sxs-lookup"><span data-stu-id="f7cbc-133">The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="628bb-134">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="628bb-134">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7cbc-134">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f7cbc-134">HTTP request</span></span>
 ```
 PATCH /api/alerts/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="628bb-135">要求標頭</span><span class="sxs-lookup"><span data-stu-id="628bb-135">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f7cbc-135">要求標頭</span><span class="sxs-lookup"><span data-stu-id="f7cbc-135">Request headers</span></span>
 
-<span data-ttu-id="628bb-136">名稱</span><span class="sxs-lookup"><span data-stu-id="628bb-136">Name</span></span> | <span data-ttu-id="628bb-137">類型</span><span class="sxs-lookup"><span data-stu-id="628bb-137">Type</span></span> | <span data-ttu-id="628bb-138">描述</span><span class="sxs-lookup"><span data-stu-id="628bb-138">Description</span></span>
+<span data-ttu-id="f7cbc-136">名稱</span><span class="sxs-lookup"><span data-stu-id="f7cbc-136">Name</span></span> | <span data-ttu-id="f7cbc-137">類型</span><span class="sxs-lookup"><span data-stu-id="f7cbc-137">Type</span></span> | <span data-ttu-id="f7cbc-138">描述</span><span class="sxs-lookup"><span data-stu-id="f7cbc-138">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="628bb-139">授權</span><span class="sxs-lookup"><span data-stu-id="628bb-139">Authorization</span></span> | <span data-ttu-id="628bb-140">字串</span><span class="sxs-lookup"><span data-stu-id="628bb-140">String</span></span> | <span data-ttu-id="628bb-141">載荷 {token}。</span><span class="sxs-lookup"><span data-stu-id="628bb-141">Bearer {token}.</span></span> <span data-ttu-id="628bb-142">**必要欄位**。</span><span class="sxs-lookup"><span data-stu-id="628bb-142">**Required**.</span></span>
-<span data-ttu-id="628bb-143">Content-Type</span><span class="sxs-lookup"><span data-stu-id="628bb-143">Content-Type</span></span> | <span data-ttu-id="628bb-144">字串</span><span class="sxs-lookup"><span data-stu-id="628bb-144">String</span></span> | <span data-ttu-id="628bb-145">application/json。</span><span class="sxs-lookup"><span data-stu-id="628bb-145">application/json.</span></span> <span data-ttu-id="628bb-146">**必要欄位**。</span><span class="sxs-lookup"><span data-stu-id="628bb-146">**Required**.</span></span>
+<span data-ttu-id="f7cbc-139">授權</span><span class="sxs-lookup"><span data-stu-id="f7cbc-139">Authorization</span></span> | <span data-ttu-id="f7cbc-140">字串</span><span class="sxs-lookup"><span data-stu-id="f7cbc-140">String</span></span> | <span data-ttu-id="f7cbc-141">載荷 {token}。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-141">Bearer {token}.</span></span> <span data-ttu-id="f7cbc-142">**必要欄位**。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-142">**Required**.</span></span>
+<span data-ttu-id="f7cbc-143">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f7cbc-143">Content-Type</span></span> | <span data-ttu-id="f7cbc-144">字串</span><span class="sxs-lookup"><span data-stu-id="f7cbc-144">String</span></span> | <span data-ttu-id="f7cbc-145">application/json。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-145">application/json.</span></span> <span data-ttu-id="f7cbc-146">**必要欄位**。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-146">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="628bb-147">要求正文</span><span class="sxs-lookup"><span data-stu-id="628bb-147">Request body</span></span>
-<span data-ttu-id="628bb-148">在要求內文中，提供應該更新之相關欄位的值。</span><span class="sxs-lookup"><span data-stu-id="628bb-148">In the request body, supply the values for the relevant fields that should be updated.</span></span>
-<br><span data-ttu-id="628bb-149">在要求內文中未包含的現有屬性會維持先前的值，或根據其他屬性值的變更重新計算。</span><span class="sxs-lookup"><span data-stu-id="628bb-149">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> 
-<br><span data-ttu-id="628bb-150">為了達到最佳效能，您不應包含尚未變更的現有值。</span><span class="sxs-lookup"><span data-stu-id="628bb-150">For best performance you shouldn't include existing values that haven't change.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f7cbc-147">要求正文</span><span class="sxs-lookup"><span data-stu-id="f7cbc-147">Request body</span></span>
+<span data-ttu-id="f7cbc-148">在要求內文中，提供應該更新之相關欄位的值。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-148">In the request body, supply the values for the relevant fields that should be updated.</span></span>
+<br><span data-ttu-id="f7cbc-149">在要求內文中未包含的現有屬性會維持先前的值，或根據其他屬性值的變更重新計算。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-149">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> 
+<br><span data-ttu-id="f7cbc-150">為了達到最佳效能，您不應包含尚未變更的現有值。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-150">For best performance you shouldn't include existing values that haven't change.</span></span>
 
-<span data-ttu-id="628bb-151">屬性	</span><span class="sxs-lookup"><span data-stu-id="628bb-151">Property</span></span> | <span data-ttu-id="628bb-152">類型</span><span class="sxs-lookup"><span data-stu-id="628bb-152">Type</span></span> | <span data-ttu-id="628bb-153">描述</span><span class="sxs-lookup"><span data-stu-id="628bb-153">Description</span></span>
+<span data-ttu-id="f7cbc-151">屬性	</span><span class="sxs-lookup"><span data-stu-id="f7cbc-151">Property</span></span> | <span data-ttu-id="f7cbc-152">類型</span><span class="sxs-lookup"><span data-stu-id="f7cbc-152">Type</span></span> | <span data-ttu-id="f7cbc-153">描述</span><span class="sxs-lookup"><span data-stu-id="f7cbc-153">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="628bb-154">地位</span><span class="sxs-lookup"><span data-stu-id="628bb-154">status</span></span> | <span data-ttu-id="628bb-155">字串</span><span class="sxs-lookup"><span data-stu-id="628bb-155">String</span></span> | <span data-ttu-id="628bb-156">指定警示的目前狀態。</span><span class="sxs-lookup"><span data-stu-id="628bb-156">Specifies the current status of the alert.</span></span> <span data-ttu-id="628bb-157">屬性值為： ' New '、' InProgress ' 和 ' 已解析」。</span><span class="sxs-lookup"><span data-stu-id="628bb-157">The property values are: 'New', 'InProgress' and 'Resolved'.</span></span>
-<span data-ttu-id="628bb-158">分配</span><span class="sxs-lookup"><span data-stu-id="628bb-158">assignedTo</span></span> | <span data-ttu-id="628bb-159">字串</span><span class="sxs-lookup"><span data-stu-id="628bb-159">String</span></span> | <span data-ttu-id="628bb-160">警示的擁有者</span><span class="sxs-lookup"><span data-stu-id="628bb-160">Owner of the alert</span></span>
-<span data-ttu-id="628bb-161">分類</span><span class="sxs-lookup"><span data-stu-id="628bb-161">classification</span></span> | <span data-ttu-id="628bb-162">字串</span><span class="sxs-lookup"><span data-stu-id="628bb-162">String</span></span> | <span data-ttu-id="628bb-163">指定警示的規格。</span><span class="sxs-lookup"><span data-stu-id="628bb-163">Specifies the specification of the alert.</span></span> <span data-ttu-id="628bb-164">屬性值為： ' Unknown '、' FalsePositive '、' TruePositive '。</span><span class="sxs-lookup"><span data-stu-id="628bb-164">The property values are: 'Unknown', 'FalsePositive', 'TruePositive'.</span></span> 
-<span data-ttu-id="628bb-165">測定</span><span class="sxs-lookup"><span data-stu-id="628bb-165">determination</span></span> | <span data-ttu-id="628bb-166">字串</span><span class="sxs-lookup"><span data-stu-id="628bb-166">String</span></span> | <span data-ttu-id="628bb-167">指定報警的決定。</span><span class="sxs-lookup"><span data-stu-id="628bb-167">Specifies the determination of the alert.</span></span> <span data-ttu-id="628bb-168">屬性值為： "NotAvailable"、"Apt"、"Malware"、"SecurityPersonnel"、"SecurityTesting"、"UnwantedSoftware"、"Other"</span><span class="sxs-lookup"><span data-stu-id="628bb-168">The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'</span></span>
-<span data-ttu-id="628bb-169">註解</span><span class="sxs-lookup"><span data-stu-id="628bb-169">comment</span></span> | <span data-ttu-id="628bb-170">字串</span><span class="sxs-lookup"><span data-stu-id="628bb-170">String</span></span> | <span data-ttu-id="628bb-171">要新增至警示的批註。</span><span class="sxs-lookup"><span data-stu-id="628bb-171">Comment to be added to the alert.</span></span>
+<span data-ttu-id="f7cbc-154">地位</span><span class="sxs-lookup"><span data-stu-id="f7cbc-154">status</span></span> | <span data-ttu-id="f7cbc-155">字串</span><span class="sxs-lookup"><span data-stu-id="f7cbc-155">String</span></span> | <span data-ttu-id="f7cbc-156">指定警示的目前狀態。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-156">Specifies the current status of the alert.</span></span> <span data-ttu-id="f7cbc-157">屬性值為： ' New '、' InProgress ' 和 ' 已解析」。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-157">The property values are: 'New', 'InProgress' and 'Resolved'.</span></span>
+<span data-ttu-id="f7cbc-158">分配</span><span class="sxs-lookup"><span data-stu-id="f7cbc-158">assignedTo</span></span> | <span data-ttu-id="f7cbc-159">字串</span><span class="sxs-lookup"><span data-stu-id="f7cbc-159">String</span></span> | <span data-ttu-id="f7cbc-160">警示的擁有者</span><span class="sxs-lookup"><span data-stu-id="f7cbc-160">Owner of the alert</span></span>
+<span data-ttu-id="f7cbc-161">分類</span><span class="sxs-lookup"><span data-stu-id="f7cbc-161">classification</span></span> | <span data-ttu-id="f7cbc-162">字串</span><span class="sxs-lookup"><span data-stu-id="f7cbc-162">String</span></span> | <span data-ttu-id="f7cbc-163">指定警示的規格。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-163">Specifies the specification of the alert.</span></span> <span data-ttu-id="f7cbc-164">屬性值為： ' Unknown '、' FalsePositive '、' TruePositive '。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-164">The property values are: 'Unknown', 'FalsePositive', 'TruePositive'.</span></span> 
+<span data-ttu-id="f7cbc-165">測定</span><span class="sxs-lookup"><span data-stu-id="f7cbc-165">determination</span></span> | <span data-ttu-id="f7cbc-166">字串</span><span class="sxs-lookup"><span data-stu-id="f7cbc-166">String</span></span> | <span data-ttu-id="f7cbc-167">指定報警的決定。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-167">Specifies the determination of the alert.</span></span> <span data-ttu-id="f7cbc-168">屬性值為： "NotAvailable"、"Apt"、"Malware"、"SecurityPersonnel"、"SecurityTesting"、"UnwantedSoftware"、"Other"</span><span class="sxs-lookup"><span data-stu-id="f7cbc-168">The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'</span></span>
+<span data-ttu-id="f7cbc-169">註解</span><span class="sxs-lookup"><span data-stu-id="f7cbc-169">comment</span></span> | <span data-ttu-id="f7cbc-170">字串</span><span class="sxs-lookup"><span data-stu-id="f7cbc-170">String</span></span> | <span data-ttu-id="f7cbc-171">要新增至警示的批註。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-171">Comment to be added to the alert.</span></span>
 
-## <a name="response"></a><span data-ttu-id="628bb-172">回應</span><span class="sxs-lookup"><span data-stu-id="628bb-172">Response</span></span>
-<span data-ttu-id="628bb-173">如果成功，這個方法會傳回 200 OK，以及回應內文中的 [警示](alerts.md) 實體具有更新的屬性。</span><span class="sxs-lookup"><span data-stu-id="628bb-173">If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body with the updated properties.</span></span> <span data-ttu-id="628bb-174">如果找不到具有指定識別碼的警示-找不到404。</span><span class="sxs-lookup"><span data-stu-id="628bb-174">If alert with the specified id was not found - 404 Not Found.</span></span>
+## <a name="response"></a><span data-ttu-id="f7cbc-172">回應</span><span class="sxs-lookup"><span data-stu-id="f7cbc-172">Response</span></span>
+<span data-ttu-id="f7cbc-173">如果成功，這個方法會傳回 200 OK，以及回應內文中的 [警示](alerts.md) 實體具有更新的屬性。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-173">If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body with the updated properties.</span></span> <span data-ttu-id="f7cbc-174">如果找不到具有指定識別碼的警示-找不到404。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-174">If alert with the specified id was not found - 404 Not Found.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="628bb-175">範例</span><span class="sxs-lookup"><span data-stu-id="628bb-175">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f7cbc-175">範例</span><span class="sxs-lookup"><span data-stu-id="f7cbc-175">Example</span></span>
 
-<span data-ttu-id="628bb-176">**請求**</span><span class="sxs-lookup"><span data-stu-id="628bb-176">**Request**</span></span>
+<span data-ttu-id="f7cbc-176">**請求**</span><span class="sxs-lookup"><span data-stu-id="f7cbc-176">**Request**</span></span>
 
-<span data-ttu-id="628bb-177">以下是要求的範例。</span><span class="sxs-lookup"><span data-stu-id="628bb-177">Here is an example of the request.</span></span>
+<span data-ttu-id="f7cbc-177">以下是要求的範例。</span><span class="sxs-lookup"><span data-stu-id="f7cbc-177">Here is an example of the request.</span></span>
 
 ```http
 PATCH https://api.securitycenter.microsoft.com/api/alerts/121688558380765161_2136280442
