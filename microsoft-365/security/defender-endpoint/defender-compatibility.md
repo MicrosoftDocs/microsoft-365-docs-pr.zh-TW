@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/06/2021
 ms.technology: mde
-ms.openlocfilehash: 84c523b721596d9c467f01cf6b8a0685b2091669
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f5a0db755f919cb47c4cd284857ddf4e27d16996
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274877"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782882"
 ---
 # <a name="antivirus-solution-compatibility-with-microsoft-defender-for-endpoint"></a>與 Microsoft Defender for Endpoint 的防病毒解決方案相容性
 
@@ -40,7 +40,7 @@ Microsoft Defender for Endpoint agent 因某些功能（例如檔案掃描）而
 >[!IMPORTANT]
 >Endpoint 不會遵循 Microsoft Defender 防毒軟體的排除設定。 
 
-您必須在 Defender for Endpoint 裝置上設定安全性智慧更新，不論 Microsoft Defender 防毒軟體是否為作用中的反惡意程式碼。 如需詳細資訊，請參閱[Manage Microsoft Defender 防毒軟體 updates 和 apply 基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)。
+您必須在 Defender for Endpoint 裝置上設定安全性智慧更新，不論 Microsoft Defender 防毒軟體是否為作用中的反惡意程式碼。 如需詳細資訊，請參閱[Manage Microsoft Defender 防毒軟體 updates 和 apply 基準](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 如果架裝置是由協力廠商反惡意軟體用戶端保護，該端點上的 Microsoft Defender 防毒軟體會進入被動模式。
 
@@ -48,4 +48,4 @@ Microsoft Defender 防毒軟體會繼續接收更新，且 *mspeng.exe* 程式�
 
 將會停用 Microsoft Defender 防毒軟體介面，而且裝置上的使用者將無法使用 Microsoft Defender 防毒軟體執行隨選掃描或設定大部分選項。
 
-如需詳細資訊，請參閱[Microsoft Defender 防毒軟體和 Defender for Endpoint 相容性主題](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+如需詳細資訊，請參閱[Microsoft Defender 防毒軟體和 Defender for Endpoint 相容性主題](microsoft-defender-antivirus-compatibility.md)。

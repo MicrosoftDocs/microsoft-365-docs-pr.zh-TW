@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 生產力分數如何反映人員和技術體驗度量，並與類似規模的組織進行比較。
-ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: af0e8583bec00b1ddfd62145a4757a4e568108e8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779671"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789036"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生產力分數 
 
@@ -42,7 +42,7 @@ ms.locfileid: "52779671"
 
     對於上述每個類別，我們著眼於公用研究，以組織有效性的形式找出一些最佳做法和相關優點。 例如，Forrester 研究顯示，當人員在雲端 (而不是使用電子郵件附件)進行共同作業和共用內容時，他們每週最多可以節省 100 分鐘。 此外，我們會量化組織中這些最佳做法的使用狀況，以協助您查看您在數位轉型中所處的階段。 
 
-- **技術體驗**：組織仰賴可靠和性能良好的技術，以及 Microsoft 365 的有效使用。 [端點分析](https://aka.ms/endpointanalytics)：協助您了解組織如何受硬體與軟體的效能和健康情況問題影響。 Microsoft 365 應用程式健康情況可協助您了解組織中的裝置是否正在建議通道上執行 Microsoft 365 應用程式。
+- **技術體驗：** 組織仰賴可靠和性能良好的技術，以及 Microsoft 365 的有效使用。 [端點分析](https://aka.ms/endpointanalytics)：協助您了解組織如何受硬體與軟體的效能和健康情況問題影響。 Microsoft 365 應用程式健康情況可協助您了解組織中的裝置是否正在建議通道上執行 Microsoft 365 應用程式。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -116,13 +116,13 @@ Microsoft 致力於保護個人隱私。 這份[隱私權文件](privacy.md)說�
 
 **分數分解** 區段提供了按人員和科技體驗領域的基準，對您的生產力分數進行分解。
 
-分數歷史記錄顯示您過去六個月在每個類別中的分數變化。
+分數歷程記錄會顯示您過去六個月在每個類別中的分數變化。
 
-**人員體驗** 和 **科技體驗** 領域包含這些領域中類別的主要深入解析。 您可以按下每個類別以查看更詳細的深入解析。
+**人員體驗** 和 **科技體驗** 領域包含這些領域中類別的主要深入解析。 您可以選取每個類別以查看更詳細的深入解析。
 
 ## <a name="category-details-pages"></a>類別詳細資料​​頁面
 
-每個類別詳細資料頁面都顯示了主要的深入解析和支援性指標，以及您可以採取的相關研究和行動來推動貴組織變革。 研究支持每個類別的主要深入解析背後的重要性和理論基礎。 如需詳細資訊，[請參閱 Forrester 報告](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+每個類別詳細資料頁面都顯示了主要的深入解析和支援性指標，以及您可以採取的相關研究和行動來推動貴組織變革。 研究支持每個類別的主要深入解析背後的重要性和理論基礎。 如需詳細資訊，[請參閱 Forrester 報告](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb)。
 
 詳細資料頁面為：
 - [內容共同作業 – 人員體驗](content-collaboration.md)

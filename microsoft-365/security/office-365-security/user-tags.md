@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 中的使用者標記
+title: Microsoft Defender 中 Office 365 的使用者標記
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,27 +13,27 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 的 Microsoft Defender 中的提醒、報告和調查，以快速識別已標記的使用者。
+description: 系統管理員可以瞭解如何在 Microsoft Defender 的使用者標記中識別特定的使用者群組，以 Office 365 方案2。 標記篩選可用於 Office 365 的通知、報告和調查中，以快速識別已標記的使用者。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 44b925840700c00c6b2d28c445ac26abd6624d1c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943008"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782858"
 ---
-# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的使用者標記
+# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的使用者標記
 
 > [!NOTE]
-> 使用者標記功能是在預覽中，並非所有人都可以使用，而且可能會變更。 如需發行排程的相關資訊，請參閱 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)。
+> 使用者標記功能是在預覽中，並非所有人都可以使用，而且可能會變更。 如需發行排程的相關資訊，請參閱[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)。
 
-使用者標記是 [Microsoft Defender For Office 365](defender-for-office-365.md)中特定使用者群組的識別碼。 使用者標記有兩種類型：
+使用者標記是 Microsoft Defender 中的特定使用者群組的識別碼，[以供 Office 365](defender-for-office-365.md)。 使用者標記有兩種類型：
 
 - **系統標記**：目前， [優先順序帳戶](../../admin/setup/priority-accounts.md) 是唯一的系統標記類型。
 - **自訂標記**：您可以自行建立這些使用者標記。
 
-如果您的組織擁有 Office 365 的 Defender for Office 方案 2 (包含在您的訂閱中或作為附加元件) ，除了使用 [優先順序帳戶] 標記之外，您還可以建立自訂使用者標記。
+如果您的組織擁有 Office 365 方案中的 Defender， (包含在您的訂閱中或附加元件) 中，除了使用 [優先順序帳戶] 標籤之外，您還可以建立自訂使用者標記。
 
 > [!NOTE]
 > 目前您只能將使用者標記套用至信箱使用者。
@@ -44,14 +44,14 @@ ms.locfileid: "51943008"
 - [威脅瀏覽器和即時偵測](threat-explorer.md)
 - [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
 - [行銷活動檢視](campaigns.md)
-- 針對優先順序帳戶，您可以使用 Exchange 系統管理中心的 [優先順序帳戶] 報告 (EAC) 中的 [電子郵件問題](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) 。
+- 針對優先順序帳戶，您可以使用 Exchange 系統管理中心的「優先順序帳戶」報告 (EAC) 中的[電子郵件問題](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。
 
 本文說明如何在安全性 & 規範中心內設定使用者標記。 安全性 & 合規性中心內沒有 Cmdlet 可管理使用者標記。
 
-若要查看使用者標記屬於策略的一部分，以協助保護高影響的使用者帳戶，請參閱 [Microsoft 365 中優先順序帳戶的安全性建議](security-recommendations-for-priority-accounts.md)。
+若要查看使用者標記屬於策略的一部分，以協助保護高影響的使用者帳戶，請參閱[Microsoft 365 中優先順序帳戶的安全性建議](security-recommendations-for-priority-accounts.md)。
 
 > [!NOTE]
-> 如果您使用的是「整合的 Microsoft 365」安全中心，您可以在這裡設定標記： https://security.microsoft.com/userTags 。
+> 如果您使用「統一 Microsoft 365 安全性中心」，您可以在這裡設定標記： https://security.microsoft.com/securitysettings/userTags 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -64,12 +64,13 @@ ms.locfileid: "51943008"
 
   如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-  **附註**：
+  > [!NOTE]
+  >
+  > - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  >
+  > - 使用者標記管理是由「 **標記讀取器** 」和「標籤 **管理員** 」角色所控制。
 
-  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-  - 使用者標記管理是由「 **標記讀取器** 」和「標籤 **管理員** 」角色所控制。
-
-- 您也可以在 Microsoft 365 admin center 中管理及監視優先順序帳戶。 如需相關指示，請參閱 [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)。
+- 您也可以在 Microsoft 365 系統管理中心管理及監視優先順序帳戶。 如需相關指示，請參閱 [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)。
 
 - 如需 (系統管理員帳戶) 保護 _特權帳戶_ 的詳細資訊，請參閱 [本主題](/azure/architecture/framework/security/critical-impact-accounts)。
 
@@ -83,7 +84,7 @@ ms.locfileid: "51943008"
    - **名稱**：輸入標記的唯一描述性名稱。 這是您會看到和使用的值。
    - **描述**：輸入標記的選用描述。
 
-   完成後，按 [下一步]。
+   完成後，按 [下一步 **]**。
 
 4. 在 [ **指派使用者** ] 頁面上，執行下列其中一個步驟：
 
@@ -98,7 +99,7 @@ ms.locfileid: "51943008"
 
    - 按一下 [匯 **入** ]，選取包含使用者或群組之電子郵件地址的文字檔。 請確定文字檔包含每行一個專案。
 
-   完成後，按 [下一步]。
+   完成後，按 [下一步 **]**。
 
 5. 在 [ **複查標記** ] 頁面上，複查您的設定。 您可以按一下 [特定] 區段中的 [ **編輯** ]，以進行變更。
 
@@ -126,7 +127,8 @@ ms.locfileid: "51943008"
 
 ## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>使用安全性 & 規範中心移除使用者標記
 
-**附注**：您無法移除內建的 [ **優先順序] 帳戶** 標記。
+> [!NOTE]
+> 您無法移除內建的 **優先順序帳戶** 標記。
 
 1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 

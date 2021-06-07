@@ -11,21 +11,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 124ebde48c008743a486a4454e7772fd93f9eca7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fdca059633ab0993e07b5b1be0c6f33cfe327fcf
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275357"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789168"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>設定和執行隨選 Microsoft Defender 防毒軟體掃描
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 
@@ -40,14 +38,12 @@ ms.locfileid: "52275357"
 > [!IMPORTANT]
 > 執行本機掃描時，Microsoft Defender 防毒軟體會在[LocalSystem](/windows/win32/services/localsystem-account)帳戶的上下文中執行。 若為網路掃描，它會使用裝置帳戶的內容。 如果網域裝置帳戶沒有存取共用的適當許可權，則掃描將無法運作。 確定裝置具有存取網路共用的許可權。
 
-與 [always on 即時保護功能](configure-real-time-protection-microsoft-defender-antivirus.md)組合在一起，可在開啟和關閉檔時檢查檔案，以及每當使用者流覽至資料夾時，都可以為以系統和內核層級惡意程式碼開頭的惡意程式碼提供強大的覆蓋。  
+[！注意] 結合了 [always on 即時保護功能](configure-real-time-protection-microsoft-defender-antivirus.md)，快速掃描可為以系統和內核層級惡意程式碼開頭的惡意程式碼提供強大的覆蓋。 [永遠開啟] 即時保護會在開啟及關閉檔案時，以及每當使用者流覽至資料夾時，就會檢查檔案。 根據預設，在裝載的可拆卸裝置（例如 USB 磁片磁碟機）上執行快速掃描。 在大多數的情況下，快速掃描足以找到即時保護未挑選的惡意程式碼。
 
-在大多數的情況下，快速掃描足以找到即時保護未挑選的惡意程式碼。
+當在端點上報告惡意程式碼威脅時，完整掃描會非常有用。 掃描可識別是否有任何非使用中的元件需要更徹底的清理。 不過，Microsoft 一般建議使用快速掃描，而不是完整掃描。 根據需要掃描的資料量和類型，完整掃描可能需要數小時或數天才能完成。 
 
-完整掃描可用於已經報告惡意程式碼威脅的端點。 掃描可識別是否有任何非使用中的元件需要更徹底的清理。 如果您的組織執行的是手動掃描，則這是理想的功能。
-
-> [!NOTE]
-> 根據預設，在裝載的可拆卸裝置（例如 USB 磁片磁碟機）上執行快速掃描。
+> [!TIP]
+> 若要深入瞭解快速和完整掃描之間的差異，請參閱 [快速掃描與完整掃描及自訂掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md#quick-scan-versus-full-scan-and-custom-scan)。
 
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>使用 Microsoft 端點管理員執行掃描
 

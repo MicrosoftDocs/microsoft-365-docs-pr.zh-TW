@@ -18,12 +18,12 @@ ms.collection:
 description: 了解如何設定以網域為基礎的訊息驗證、報告和符合性 (DMARC) 來驗證從貴組織傳送的訊息。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9beada6e0fb61e503392b0bd379f02bd1c025464
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a92c6ec50fb60d15e027a11163aad6b2186e5304
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538672"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779900"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 來驗證電子郵件
 
@@ -178,7 +178,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-一旦您已形成記錄，您需要在網域註冊機構中更新記錄。如需將 DMARC TXT 記錄新增至 Microsoft 365 的 DNS 記錄之相關指示，請參閱[在管理 DNS 記錄時建立 Microsoft 365 的 DNS 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
+一旦您已形成記錄，您需要在網域註冊機構中更新記錄。
 
 ## <a name="dmarc-mail-public-preview-feature"></a>DMARC 郵件 (公開預覽功能)
 > [!CAUTION]
@@ -256,7 +256,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 所有或大部分的電子郵件首先會路由至 mail.contoso.com，因為它是主要的 MX，然後才會將郵件路由至 EOP。 在某些情況下，您甚至可能不會將 EOP 列為 MX 記錄，而只要接上連接器來傳送電子郵件。 EOP 不一定需要是第一個項目，DMARC 驗證也可完成。 它只是可確保驗證，因為我們無法確定所有內部部署/非 O365 伺服器將執行 DMARC 檢查。  設定 DMARC TXT 記錄時，就能為客戶的網域 (非伺服器) 強制執行 DMARC，但實際上執行強制執行是由接收端伺服器執行。  如果您將 EOP 設定為接收端伺服器，則 EOP 會執行 DMARC 強制執行。
 
-![DMARC 的疑難排解圖形，由 Daniel Mande 提供](../../media/Tp_DMARCTroublehoot.png)
+:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="DMARC 的疑難排解圖形，由 Daniel Mande 提供" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
 ## <a name="for-more-information"></a>相關資訊
 

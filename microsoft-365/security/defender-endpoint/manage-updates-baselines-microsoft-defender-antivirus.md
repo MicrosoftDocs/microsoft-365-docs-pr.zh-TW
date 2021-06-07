@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/03/2021
-ms.openlocfilehash: e67f783552cca5cc36c1563f5e5557796028ea18
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.date: 06/04/2021
+ms.openlocfilehash: 264a3b7a4a24c446048d6cfc6863f1ae9765566f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772014"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789180"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
 
@@ -83,6 +83,21 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 -  (Cloud Microsoft 365 Defender) 的整合增強功能。
 <br/>
 <details>
+<summary> 2021年5月 (平臺： 4.18.2105.4 |Engine： 1.1.18200.4) </summary>
+
+&ensp;安全性智慧更新版本： **1.341.8.0**  
+&ensp;發行日期： **2021 年6月4日**  
+&ensp;Platform： **4.18.2105.4**  
+&ensp;Engine： **1.1.18200.4**  
+&ensp;支援階段： **安全性和重要更新**
+    
+### <a name="whats-new"></a>新增功能
+- 行為監控的增強功能 
+
+### <a name="known-issues"></a>已知問題
+無已知問題  
+<br/>
+</details><details>
 <summary> 四月-2021 (平臺： 4.18.2104.14 |Engine： 1.1.18100.5) </summary>
 
 &ensp;安全性智慧更新版本： **1.337.2.0**  
@@ -98,9 +113,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 ### <a name="known-issues"></a>已知問題
 無已知問題  
 <br/>
-</details>
-
-<details>
+</details><details>
 <summary> 三月份-2021 (平臺： 4.18.2103.7 |Engine： 1.1.18000.5) </summary>
 
 &ensp;安全性智慧更新版本： **1.335.36.0**  
@@ -118,14 +131,20 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 ### <a name="known-issues"></a>已知問題
 無已知問題  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>舊版本更新：僅限技術升級支援
+
+發行新的套件版本之後，支援舊版的兩個版本只會縮小為技術支援。 這一節所列出的版本舊，僅提供支援技術升級。 
+<br/><br/>
+<details>
 <summary> 二月份-2021 (平臺： 4.18.2102.3 |Engine： 1.1.17900.7) </summary>
 
 &ensp;安全性智慧更新版本： **1.333.7.0**  
 &ensp;發行日期： **2021 年3月9日**  
 &ensp;Platform： **4.18.2102.3**  
 &ensp;Engine： **1.1.17900.7**  
-&ensp;支援階段： **安全性和重要更新**
+&ensp;支援階段： **僅限技術升級支援 ()**
     
 ### <a name="whats-new"></a>新增功能
 
@@ -135,13 +154,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 ### <a name="known-issues"></a>已知問題
 無已知問題  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>舊版本更新：僅限技術升級支援
-
-發行新的套件版本之後，支援舊版的兩個版本只會縮小為技術支援。 這一節所列出的版本舊，僅提供支援技術升級。 
-<br/><br/>
-<details>
+</details><details>
 <summary> 2021年1月 (平臺： 4.18.2101.9 |Engine： 1.1.17800.5) </summary>
 
 &ensp;安全性智慧更新版本： **1.327.1854.0**  

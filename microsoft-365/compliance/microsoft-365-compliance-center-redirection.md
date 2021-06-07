@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: 瞭解如何自動將 Office 365 安全性與合規性中心使用者重新導向至 Microsoft 365 規範中心」。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fb667e8f19b26cbe229b3aceffe194a86133c261
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b51b2e225c833ac499379bbee119f8cb6f4216e9
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772444"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782834"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>將使用者從 Office 365 安全性與合規性中心重新導向至 Microsoft 365 規範中心
 
@@ -51,7 +51,7 @@ ms.locfileid: "52772444"
 1. 以全域管理員身分登入[Microsoft 365 合規性中心](https://compliance.microsoft.com)，或在 Azure Active directory 中使用具有合規性系統管理員許可權的任何帳戶。
 2. 流覽至 **設定**  >  **規範中心重新定向**。
 3. 將自動重新導向設定切換為 [ **關閉**]。
-4. 選取 [ **停** 用並在提示時共用意見反應]。
+4. 選取 [ **關閉** 並在出現提示時共用意見反應]。
 
 一旦停用，使用者就不會再傳送至 compliance.microsoft.com，而且會將其導向至 Office 365 安全性與合規性中心 (protection.microsoft.com) 。 全域或合規性系統管理員可以隨時重新啟用此設定。
 

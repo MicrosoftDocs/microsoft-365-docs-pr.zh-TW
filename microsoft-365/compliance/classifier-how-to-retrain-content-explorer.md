@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何在內容瀏覽器中提供對 trainable 分類器的意見反應。
-ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918099"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793061"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新定型內容總管的分類器
 
-Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 經過訓練之後，您可以使用它來識別應用 Office 敏感度標籤、通訊合規性原則及保留標籤原則的專案。
+Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 經過訓練之後，您可以使用它來識別 Office 敏感度標籤、通訊規範原則及保留標籤原則的應用程式專案。
 
 本文說明如何透過提供額外的意見反應，以改善自訂 trainable 分類器和部分預先訓練的分類器的效能。
 
@@ -50,7 +50,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 ## <a name="overall-workflow"></a>整體工作流程
 
 > [!IMPORTANT]
-> 您可以在內容瀏覽器中為自動套用保留標籤原則提供反應，以進行 Exchange 專案，並使用分類器做為條件。 **如果您沒有保留原則可將保留標籤自動套用至 Exchange 專案，並使用分類器做為條件，請停止這裡。**
+> 您可以在內容瀏覽器中為自動套用保留標籤原則提供意見反應，以 Exchange 專案，並使用分類器做為條件。 **如果您沒有將保留標籤自動套用至 Exchange 專案的保留原則，並使用分類器做為條件，請停止這裡。**
 
 當您使用分類器時，您可能會想要增加所進行之分類的精確度。 為此，您需要評估其所識別為符合或不符合專案之專案的分類品質。 在您對分類器進行30個評估之後，就會使用該意見反應，並自動 retrains 自身。
 
@@ -61,7 +61,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新定型內容總管的分類器
 
-1. 使用合規性管理員或安全性系統管理員角色存取權登入 microsoft 365 合規性中心，並開啟 **microsoft 365 規範中心**  >  **資料分類**  >  **內容瀏覽器**。 
+1. 使用合規性管理員或安全性系統管理員角色存取，登入 Microsoft 365 規範中心，並開啟 **Microsoft 365 規範中心**  >  **資料分類**  >  **內容瀏覽器**。 
 2. 在 [ **標籤、資訊類型] 或 [類別** ] 清單中的 [篩選] 底下，展開 [ **Trainable** 類別]。
 
 > [!IMPORTANT]
@@ -96,7 +96,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 
 12. 查看建議的動作，以及 retrained 及目前發佈之版本的分類器的預測比較。
 13. 如果您已滿意重新培訓的結果，請選擇 [ **重新發佈**]。
-14. 如果您不滿意重新培訓的結果，您可以選擇在通訊規範介面中為分類器提供額外的意見反應，並開始另一種重新培訓週期; 或者，在這種情況下，將繼續使用分類器目前發行的版本。 
+14. 如果您不滿意重新培訓的結果，您可以選擇在內容瀏覽器介面中為分類器提供額外的意見反應，並開始另一種重新培訓週期，或在這種情況下，會繼續使用目前已發佈的分類器版本。 
 
 ## <a name="details-on-republishing-recommendations"></a>重新發佈建議的詳細資料
 

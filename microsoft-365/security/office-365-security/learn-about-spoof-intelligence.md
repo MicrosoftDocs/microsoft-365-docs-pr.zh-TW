@@ -1,5 +1,5 @@
 ---
-title: 哄騙情報洞察力
+title: 詐騙情報深入解析
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 中的欺騙智慧洞察力。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37c5bcb6f2c15c3814fafa198f2905e23b12ba01
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 45ecbe68072441b40477d1b27953b957aeffa9e3
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538744"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793169"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP 中的欺騙智慧洞察力
 
@@ -63,7 +63,7 @@ ms.locfileid: "52538744"
 
 > [!NOTE]
 >
-> - 欺詐智慧洞察力只會顯示欺騙性智慧所偵測到的欺騙寄件者。 當您覆寫真知灼見中的 allow 或 block 判定時，哄騙寄件者會變成隻會出現在承租人允許/封鎖清單的 [ **哄騙** ] 索引標籤上的手動允許或封鎖專案。 您也可以手動為欺騙性寄件者建立允許或封鎖專案，以取得欺騙性的智慧。 如需詳細資訊，請參閱 [管理 EOP 中的承租人 Allow/封鎖清單](tenant-allow-block-list.md)。
+> - 欺詐智慧洞察力只會顯示欺騙性智慧所偵測到的欺騙寄件者。 當您覆寫真知灼見中的 allow 或 block 判定時，哄騙寄件者會變成隻會出現在承租人允許/封鎖清單的 [ **哄騙** ] 索引標籤上的手動允許或封鎖專案。 您也可以手動為欺騙性寄件者建立允許或封鎖專案，以取得欺騙性的智慧。 如需詳細資訊，請參閱[管理 EOP 中的租用戶允許/封鎖清單](tenant-allow-block-list.md)。
 >
 > - 承租人「允許/封鎖」清單中的「欺騙性智慧真知灼見」和「 **欺騙** 」索引標籤會取代 [安全性 & 合規性中心的 [反垃圾郵件原則] 頁面上提供的欺騙智慧原則功能。
 >
@@ -88,7 +88,7 @@ ms.locfileid: "52538744"
 
 - 您可以在 EOP 和 Microsoft Defender for Office 365 中，啟用並停用欺騙性智慧中的反網路釣魚原則。 預設會啟用欺騙智慧。 如需詳細資訊，請參閱[在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)或[設定 Microsoft Defender 中的反網路釣魚原則，以進行 Office 365](configure-atp-anti-phishing-policies.md)。
 
-- 如需適用于哄騙情報的建議設定，請參閱 [EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
+- 如需適用于哄騙情報的建議設定，請參閱 [EOP 反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)。
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心開啟欺騙性智慧洞察力
 

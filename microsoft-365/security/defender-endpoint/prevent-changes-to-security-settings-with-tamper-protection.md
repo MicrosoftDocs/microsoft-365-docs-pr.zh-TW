@@ -17,12 +17,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 05/17/2021
-ms.openlocfilehash: ed9eb425d718a2dbdaa2cdb3ab1e6899c9870124
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2d212bedf9033b0824d32e7f42afea3944d9ca67
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538879"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782810"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用竄改防護來保護安全性設定
 
@@ -257,7 +257,7 @@ Windows 10作業系統[1709](/windows/release-health/status-windows-10-1709)、 
 
 - [使用 Intune 管理防篡改保護](#manage-tamper-protection-for-your-organization-using-intune)
 - [使用 Configuration Manager 管理防篡改保護，版本2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- 使用預覽中目前 ([的 Microsoft Defender 資訊安全中心管理無法篡改的保護](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center)) 
+- [使用 Microsoft Defender 資訊安全中心管理無法篡改的保護](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) 
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-through-my-group-policy"></a>如何在 Intune 中設定防篡改保護，會影響透過「我的群組原則」管理 Microsoft Defender 防毒軟體的方式？
 

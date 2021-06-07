@@ -12,17 +12,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
+description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體攻擊復原。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 242a4a2f43bd91d75caeaeaa0488f23a5ba4319d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203601"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789048"
 ---
-# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 復原勒索軟體攻擊
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 中復原勒索軟體攻擊
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -55,7 +55,7 @@ ms.locfileid: "51203601"
 
 如果您懷疑電子郵件為勒索軟體加密的目標，請暫時停用使用者對信箱的存取。 Exchange ActiveSync 會同步處理裝置和 Exchange Online 信箱之間的資料。
 
-若要停用信箱的 Exchange ActiveSync，請參閱 [如何為 Exchange Online 中的使用者停用 exchange ActiveSync](https://support.microsoft.com/help/2795303)。
+若要停用信箱的 Exchange ActiveSync，請參閱[如何為 Exchange Online 中的使用者停用 Exchange ActiveSync](https://support.microsoft.com/help/2795303)。
 
 若要停用信箱的其他類型的存取，請參閱：
 
@@ -71,25 +71,25 @@ ms.locfileid: "51203601"
 
 請勿忘記掃描正在同步處理之資料的裝置，或對應網路磁碟機的目標。
 
-您可以將 [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) 或 (用於舊版用戶端) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201)。
+您可以對舊版用戶端使用[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)或 () [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201)。
 
 另一種方式也可協助您移除勒索軟體或惡意軟體是 [惡意軟體移除工具 (MSRT) ](https://www.microsoft.com/download/details.aspx?id=9905)。
 
-如果這些選項不起作用，您可以嘗試使用 [Windows Defender 離線](https://support.microsoft.com/help/17466) 或 [疑難排解偵測和移除惡意程式碼的問題](https://support.microsoft.com/help/4466982)。
+如果這些選項不起作用，您可以嘗試[離線 Windows Defender](https://support.microsoft.com/help/17466)或[疑難排解偵測和移除惡意程式碼的問題](https://support.microsoft.com/help/4466982)。
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步驟4：在已清除的電腦或裝置上復原檔案
 
-在您完成上述步驟以從環境中移除勒索軟體負載 (（該負載會使勒索軟體無法加密或移除) 您的檔案）之後，您可以使用 windows 10 和 Windows 8.1 中的檔案歷程 [記錄](https://support.microsoft.com/help/17128) ，或 windows 7 中的系統保護，以嘗試復原您的本機檔案和資料夾。
+在您完成上述步驟以從環境中移除勒索軟體負載 (（該負載會使勒索軟體無法加密或移除) 您的檔案）之後，您可以使用 Windows 10 和 Windows 8.1 中的[檔記錄](https://support.microsoft.com/help/17128)，或 Windows 7 中的系統保護，以嘗試復原您的本機檔案和資料夾。
 
 **附註**：
 
 - 有些勒索軟體也會加密或刪除備份版本，因此您無法使用檔案記錄或系統保護來還原檔案。 如果發生這種情況，您需要在外部磁片磁碟機或未受勒索軟體或 OneDrive 的裝置上使用備份，如下一節所述。
 
-- 如果資料夾與 OneDrive 同步處理，而且您不是使用最新版的 Windows，則可能會有一些限制使用檔案歷程記錄。
+- 如果資料夾同步處理至 OneDrive，而您並未使用最新版的 Windows，則可能會有一些限制使用檔案歷程記錄。
 
-## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步驟5：在您的 OneDrive 商務中復原檔案
+## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步驟5：復原您商務用 OneDrive 中的檔案
 
-在 OneDrive for Business 中還原檔案，可讓您在過去的30天內，將整個 OneDrive 還原至上一個時間點。 如需詳細資訊，請參閱 [還原您的 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
+在商務用 OneDrive 中還原檔案可讓您在過去的30天內，將整個 OneDrive 還原至上一個時間點。 欲了解詳細資訊，請參閱[還原 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
 
 ## <a name="step-6-recover-deleted-email"></a>步驟6：復原已刪除的電子郵件
 
@@ -101,11 +101,11 @@ ms.locfileid: "51203601"
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步驟7：重新啟用 Exchange ActiveSync 和 OneDrive 同步處理
 
-在您清潔電腦和裝置並復原資料之後，您可以重新啟用 Exchange ActiveSync 和您先前在 [步驟 2](#step-2-disable-exchange-activesync-and-onedrive-sync)中停用 OneDrive 同步處理。
+在您清潔電腦和裝置並復原資料後，您可以重新啟用 Exchange ActiveSync，並 OneDrive 您先前在[步驟 2](#step-2-disable-exchange-activesync-and-onedrive-sync)中停用的同步處理。
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步驟 8 (選用) ：封鎖特定檔案副檔名 OneDrive 同步處理
 
-復原之後，您可以防止商務用戶端的 OneDrive 同步處理此勒索軟體所影響的檔案類型。 如需詳細資訊，請參閱 [Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
+復原之後，您可以阻止商務用 OneDrive 用戶端同步處理此勒索軟體所影響的檔案類型。 如需詳細資訊，請參閱 [Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
 ## <a name="report-the-attack"></a>報告攻擊
 
@@ -129,6 +129,8 @@ ms.locfileid: "51203601"
 
 - 紐西蘭： [使用者事務詐騙](http://www.consumeraffairs.govt.nz/scams)
 
+- 瑞士 [Nationales Zentrum Für CYBERSICHERHEIT NCSC](https://www.ncsc.admin.ch/ncsc/de/home.html)
+
 - 英國： [動作欺詐](http://www.actionfraud.police.uk/)
 
 - 美國： [線上防護](http://www.onguardonline.gov/)
@@ -149,13 +151,13 @@ ms.locfileid: "51203601"
 
 - [勒索軟體偵測和復原 OneDrive 中的檔案](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
-- [Microsoft Security 情報報告](https://www.microsoft.com/securityinsights/)
+- [Microsoft 安全情報報告](https://www.microsoft.com/securityinsights/)
 
 - [啟用或停用 Office 檔案中的宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [EOP 和 Microsoft Defender for Office 365 安全性的建議設定](recommended-settings-for-eop-and-office365.md)
+- [EOP 和 Microsoft Defender Office 365 security 的建議設定](recommended-settings-for-eop-and-office365.md)
 
-- [值得升級： Windows 10 上的下一代安全性會為2017中的勒索軟體的爆發，證實其可復原](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+- [值得升級： Windows 10 的新一代安全性，可在2017中比對勒索軟體的爆發，以復原彈性](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
 - [沒有 ma，Samas：在此勒索軟體的 modus operandi 中有哪些？](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
 

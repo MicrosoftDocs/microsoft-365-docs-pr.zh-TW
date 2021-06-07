@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 232f7133f177e3d0aa93fcb2835fb86bcfd0d37c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769320"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782870"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自訂受攻擊面縮小規則
 
@@ -46,8 +46,14 @@ ms.locfileid: "52769320"
 
 您可以選擇排除受攻擊面降低規則所評估的檔案和資料夾。 排除之後，即使攻擊面降低規則偵測到該檔案包含惡意行為，檔案也不會執行封鎖。
 
+例如，您會考慮勒索軟體的以下規則：
+
+勒索軟體的原則是專門設計用來協助企業客戶降低勒索軟體攻擊的風險，同時確保商務持續性。 根據預設，勒索軟體規則會在警告的兩側發生錯誤，並防止尚未具備足夠信譽和信任的檔案。 若要 reemphasize，勒索軟體規則只會觸發未獲得足夠肯定信譽和流行的檔案，根據數百萬客戶的使用量計量。 通常，區塊會自行解決，因為每個檔案的「信譽和信任」值會隨著非問題的使用量而逐漸升級。
+
+在未及時解決區塊問題的情況下，客戶 _可以自行解決問題：使用_ 自助服務機制或損害指示器 (IOC) 型「允許清單」功能，自行解除封鎖檔。  
+
 > [!WARNING]
-> 這可能會允許不安全的檔案執行並感染您的裝置。 排除檔案或資料夾可能會嚴重降低受攻擊面縮小規則所提供的保護。 會允許執行已被規則封鎖的檔案，而且不會記錄任何報表或事件。
+> 排除或取消阻止檔案或資料夾可能會允許不安全的檔案執行並感染您的裝置。 排除檔案或資料夾可能會嚴重降低受攻擊面縮小規則所提供的保護。 會允許執行已被規則封鎖的檔案，而且不會記錄任何報表或事件。
 
 排除會套用到允許排除的所有規則。 您可以指定個別的檔案、資料夾路徑或資源的完整功能變數名稱。 不過，您無法限制特定規則的排除。
 
@@ -57,7 +63,7 @@ ms.locfileid: "52769320"
 如果您遇到的錯誤偵測不應該偵測到的檔案，請 [使用稽核模式來測試規則](evaluate-attack-surface-reduction.md)。
 
 | 規則說明 | GUID |
-|:----|:----|:----|
+|:----|:----|
 | 封鎖所有 Office 的應用程式建立子流程 | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | 封鎖可能混淆的腳本執行 | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
 | 從 Office 宏封鎖 WIN32 API 呼叫 | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |

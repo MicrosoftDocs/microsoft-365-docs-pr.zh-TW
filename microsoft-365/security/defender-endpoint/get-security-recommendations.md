@@ -1,7 +1,7 @@
 ---
 title: 取得安全性建議
 description: 會檢索與指定裝置識別碼相關的安全性建議集合。
-keywords: api，graph api，支援的 api，get，list，file，information，per device 的安全性建議，威脅 & 漏洞管理 api，Microsoft Defender for Endpoint tvm api
+keywords: api、graph api、支援的 api、get、list、file、information、per device 的安全性建議、威脅 & 弱點管理 api、Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bc209687d51b3e05bfcfd6028042ba5912b877f6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 44f64334d08d8d0d6a5ed1e8e06baa2880859ad2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935302"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771126"
 ---
 # <a name="get-security-recommendations"></a>取得安全性建議
 

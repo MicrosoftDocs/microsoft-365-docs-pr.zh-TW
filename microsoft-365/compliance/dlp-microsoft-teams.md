@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams 聊天和頻道支援資料遺失防護 (DLP) 原則。
-ms.openlocfilehash: e55bfa34b2495465f573bcede3ebda2308dbbbbc
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6467ae7fdfc9c8636bd306efde5cb89c100e5e6c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583385"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782558"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料外洩防護和 Microsoft Teams
 
@@ -59,15 +59,12 @@ DLP 保護的套用方式不同于 Teams 的實體。
 |---------|---------|---------|
 |個別使用者帳戶     |1： 1/n 聊天         |是         |
 |     |一般聊天         |否         |
-|     |共用通道         |否         |
 |     |專用通道         |是         |
 |安全性群組/通訊群組清單  | 1： 1/n 聊天         |是         |
 |     |一般聊天         |否         |
-|     |共用通道         |否      |
 |     |專用通道         |是        |
 |Microsoft 365 群組    |1： 1/n 聊天          |否         |
 |     |一般聊天          |是        |
-|     |共用通道|是 |
 |     |專用通道|否| 
 
 
@@ -141,7 +138,7 @@ DLP 保護的套用方式不同于 Teams 的實體。
     
 6. 接著選擇 [下一步]。
 
-7. 按一下 **[儲存]**。
+7. 按一下 **儲存**。
 
 針對您的變更，允許大約一小時以透過您的資料中心進行，並同步處理至使用者帳戶。
 <!-- again, why user accounts? -->

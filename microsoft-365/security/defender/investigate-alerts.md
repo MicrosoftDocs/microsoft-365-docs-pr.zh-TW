@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: a6e11aea14a7b8d99c0098b68951790328ec593e
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689010"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782906"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的警示
 
@@ -56,7 +56,7 @@ ms.locfileid: "52689010"
 
 - 嚴重性
 - 狀態
-- 類別
+- Category
 - 偵測來源
 - 標記
 - 原則
@@ -92,7 +92,7 @@ Microsoft 365Defender 警示可能來自 microsoft defender for Endpoint、micro
 適用於 Office 365 的 Microsoft Defender | `fa{GUID}` <br> 範例：`fa123a456b-c789-1d2e-12f1g33h445h6i` 
 適用於端點的 Microsoft Defender | `da` 或 `ed` 自訂偵測警示 <br> 
 適用於身分識別的 Microsoft Defender | `aa{GUID}` <br> 範例：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Cloud App Security |`ca{GUID}` <br> 範例：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft 雲端 App 安全性 |`ca{GUID}` <br> 範例：`ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 
 

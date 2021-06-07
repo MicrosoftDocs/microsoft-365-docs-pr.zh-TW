@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6ef1d3dbc111e5d10bf4d3c42dfd08e5e9d63e3
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: c785dbb759afe77b14f41985b9f451a4ec52e29f
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730620"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778230"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 評估實驗室
 
@@ -118,17 +118,17 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 
 在測試裝置中預先設定下列安全性元件：
 
-- [攻擊面縮減](attack-surface-reduction.md)
-- [第一次看到的封鎖](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [受控資料夾存取權](controlled-folders.md)
-- [入侵防護](enable-exploit-protection.md)
-- [網路保護](network-protection.md)
-- [可能有害的應用程式偵測](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [雲端提供的保護](cloud-protection-microsoft-defender-antivirus.md)
-- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+- [攻擊面縮減](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [第一次看到的封鎖](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [受控資料夾存取權](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [入侵防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [網路保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
+- [可能有害的應用程式偵測](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [雲端提供的保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender 防毒軟體會在 (不是在審計模式) 中。 如果 Microsoft Defender 防毒軟體封鎖您執行類比，您可以透過 Windows 安全性關閉裝置上的即時保護。 如需詳細資訊，請參閱 [Configure always on protection](configure-real-time-protection-microsoft-defender-antivirus.md)。
+> Microsoft Defender 防毒軟體會在 (不是在審計模式) 中。 如果 Microsoft Defender 防毒軟體封鎖您執行類比，您可以透過 Windows 安全性關閉裝置上的即時保護。 如需詳細資訊，請參閱 [Configure always on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
 自動調查設定會因租使用者設定而異。 預設會將其設定為半自動。 如需詳細資訊，請參閱 [自動化調查的概述](automated-investigations.md)。
 
@@ -190,7 +190,7 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
 - 「 [自行執行它」攻擊案例](https://securitycenter.windows.com/tutorials)
 - 威脅模擬器
 
-您也可以使用 [高級搜尋](advanced-hunting-overview.md) 查詢資料和 [威脅分析](threat-analytics.md) ，以查看有關新興威脅的報告。
+您也可以使用 [高級搜尋](advanced-hunting-query-language.md) 查詢資料和 [威脅分析](threat-analytics.md) ，以查看有關新興威脅的報告。
 
 ### <a name="do-it-yourself-attack-scenarios"></a>自行攻擊案例
 如果您正在尋找預先類比，您可以使用我們「 [自己動手」的攻擊案例](https://securitycenter.windows.com/tutorials)。 這些腳本是安全、有記錄且便於使用。 這些案例會反映 Defender 的端點功能，並引導您完成調查經驗。

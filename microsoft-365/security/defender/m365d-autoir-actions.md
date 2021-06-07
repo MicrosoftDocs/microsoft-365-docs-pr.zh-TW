@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 9e82f1c5de9fe1f4a03385458338edf18c4f35bd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 95c82f815c794662f7eb0ffaabcfb5f81df3e828
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538840"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782990"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在行動中心中查看及管理動作
 
@@ -36,7 +36,7 @@ ms.locfileid: "52538840"
 **適用於：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作。 範例如下：
+Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作。 以下為一些範例：
 
 - [自動調查](m365d-autoir.md) 可能會導致自動採取或等待您核准的修復動作。
 - 防毒程式、反惡意程式碼和其他威脅防護功能可能會導致修復動作，例如封鎖檔案、URL 或程式，或將專案傳送至隔離區。
@@ -51,9 +51,9 @@ Microsoft 365 Defender 中的威脅防護功能可能會導致某些修正動作
 
 1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
 
-2. 在功能窗格中，選擇 [重要訊息中心]。 
+2. 在功能窗格中，選擇 [控制中心]。 
 
-3. 在重要訊息中心的 [擱置中] 索引標籤上，選取清單中的一個項目。 其快顯視窗隨即開啟。 以下為範例。
+3. 在 [動作中心] 的 [ **擱置** ] 索引標籤上，選取清單中的專案。 其快顯視窗隨即開啟。 以下為範例。
 
    ![核准或拒絕動作](../../media/air-actioncenter-itemselected.png)
 

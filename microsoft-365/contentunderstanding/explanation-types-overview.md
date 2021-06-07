@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: 深入了解 Microsoft SharePoint Syntex 中的說明類型。
-ms.openlocfilehash: 515fd8af289ec7c64e14eb6d54b236ba3a8aa9f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 深入了解 Microsoft SharePoint Syntex 中的片語清單、規則運算式和鄰近說明類型。
+ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706562"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770862"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的說明類型
 
@@ -114,6 +114,15 @@ ms.locfileid: "52706562"
    當您使用範本新增規則運算式時，它會自動將名稱和規則運算式新增到文字方塊。 例如，如果您選擇 **[電子郵件]** 範本，則會彈出 **[建立說明]** 窗格。
 
    ![顯示已套用 [電子郵件範本] 的 [建立說明] 窗格的螢幕擷取畫面。](../media/content-understanding/create-regular-expression-email.png)
+
+### <a name="limitations"></a>限制
+
+下表顯示目前無法用於規則運算式模式的內嵌字元選項。 
+
+|選項  |狀態  |目前功能  |
+|---------|---------|---------|
+|區分大小寫 | 目前不支援。 | 執行的所有符合項目不區分大小寫。  |
+|線條錨點     | 目前不支援。 | 無法在必須相符的字串中指定特定位置。   |
 
 ## <a name="proximity"></a>鄰近 
 

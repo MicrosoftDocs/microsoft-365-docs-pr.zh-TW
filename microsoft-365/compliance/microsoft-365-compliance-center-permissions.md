@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 規範中心的許可權
+title: Microsoft 365 合規性中心的權限
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,14 +11,14 @@ ms.topic: article
 localization_priority: Normal
 description: 瞭解如何在「Microsoft 365 規範中心」中管理許可權。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 72575fce5f7d43354715c77016a8f444e539887f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7038863c0cbcaf99cf07072445a3b001e7b8ca0b
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772447"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782846"
 ---
-# <a name="permissions-in-the-microsoft-365-compliance-center"></a>Microsoft 365 規範中心的許可權
+# <a name="permissions-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合規性中心的權限
 
 Microsoft 365 規範中心最近已更新，而且現在支援在 Microsoft 365 中執行規范工作的使用者直接管理許可權。 此更新表示您不再需要使用 Office 365 安全性 & 相容性中心來管理規範解決方案的許可權。 您可以使用「Microsoft 365 規範中心」中的 [新增 **許可權**] 頁面，管理使用者在裝置管理、資料遺失防護、eDiscovery、有問必答風險管理、保留及許多其他功能等功能方面的許可權。 使用者可以只執行您明確授與其存取權的相容性工作。
 
@@ -26,7 +26,7 @@ Microsoft 365 規範中心最近已更新，而且現在支援在 Microsoft 365 
 
 ![Microsoft 365 規範中心的許可權頁面](../media/m365-compliance-center-permissions.png)
 
-Microsoft 365 規範中心的許可權是以以角色為基礎的存取控制 (RBAC) 許可權模型為基礎。 RBAC 是大多數 Microsoft 365 服務所使用的相同許可權模型，因此，如果您熟悉這些服務中的許可權結構，則必須熟悉 Microsoft 365 規範中心的許可權。 請務必記住，在 Microsoft 365 規範中心管理的許可權不會涵蓋每個個別服務所需的擁有權限。 您仍需要在系統管理中心中管理特定服務的特定服務特定許可權。 例如，如果您需要指派許可權進行封存、審核和保留原則，您必須在 Exchange 系統管理中心中管理這些許可權。
+Microsoft 365 規範中心的許可權是以以角色為基礎的存取控制 (RBAC) 許可權模型為基礎。 RBAC 是大多數 Microsoft 365 服務所使用的相同許可權模型，因此，如果您熟悉這些服務中的許可權結構，則必須熟悉 Microsoft 365 規範中心的許可權。 請務必記住，在 Microsoft 365 規範中心管理的許可權不會涵蓋每個個別服務所需的擁有權限。 您仍需要在系統管理中心中管理特定服務的特定服務特定許可權。 例如，如果您需要指派許可權進行封存、審核和 MRM 保留原則，您必須在 Exchange 系統管理中心中管理這些許可權。
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>成員、角色和角色群組的關係
 
@@ -34,7 +34,7 @@ Microsoft 365 規範中心的許可權是以以角色為基礎的存取控制 (R
 
 角色群組是一組角色，可讓使用者在 Microsoft 365 規範中心以外的相容性解決方案中執行其工作。 例如，將使用者新增至「 *有問必答風險管理* 」角色群組、指定的系統管理員、分析員、調查人員和審計員，都是針對單一群組中所需的「內部使用者風險管理」許可權進行設定。 Microsoft 365 規範中心包含每個規範解決方案的任務和功能的預設角色群組，您必須將這些人員指派給他們。 一般來說，建議您視需要將個別使用者新增為預設符合性角色群組的成員。
 
-![圖表顯示角色和成員的角色群組關聯性](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![圖表顯示角色群組和角色及成員的關係](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="permissions-needed-to-use-features-in-the-microsoft-365-compliance-center"></a>在 Microsoft 365 規範中心使用功能時所需的許可權
 
@@ -55,8 +55,8 @@ Microsoft 365 規範中心的許可權是以以角色為基礎的存取控制 (R
 |**安全性讀取者**|可檢視和調查 Microsoft 365 使用者、裝置和內容所受的主動威脅，但是 (與安全性運算子不同) 他們沒有透過採取行動而回應的權限。 如需詳細資訊，請參閱 [安全性讀取者](/azure/active-directory/roles/permissions-reference#security-reader)。|
 |**安全性系統管理員**|可透過管理安全性原則、檢視 Microsoft 365 各項產品的安全性分析和報告，以及在威脅環境中保持最新速度，來控制組織的整體安全性。 如需詳細資訊，請參閱 [安全性系統管理員](/azure/active-directory/roles/permissions-reference#security-administrator)。|
 |**全域讀取者**|**全域系統管理員** 角色的唯讀版本。 在 Microsoft 365 中檢視所有設定和管理資訊。 如需詳細資訊，請參閱 [全域讀取者](/azure/active-directory/roles/permissions-reference#global-reader)。|
-|**攻擊模擬系統管理員**|建立及管理攻擊類比的建立、啟動/排程類比，以及檢查類比結果。 如需詳細資訊，請參閱 [攻擊模擬管理員](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)。|
-|**攻擊負載編寫者**|建立攻擊負載，但不是實際啟動或排程。 如需詳細資訊，請參閱 [攻擊負載作者](/azure/active-directory/roles/permissions-reference#attack-payload-author)。|
+|**攻擊模擬系統管理員**|建立和管理 攻擊模擬系統 創建、模擬的啟動/排程，以及模擬結果審查的所有方面。 詳細資訊，請參閲 [攻擊模擬系統管理員](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)。|
+|**攻擊承載作者**|建立攻擊承載，但不實際啟動或排程它們。 如需詳細資訊，請參閱 [攻擊承載作者](/azure/active-directory/roles/permissions-reference#attack-payload-author)。|
 |
 
 ## <a name="add-users-to-a-compliance-role-group"></a>將使用者新增至符合性角色群組

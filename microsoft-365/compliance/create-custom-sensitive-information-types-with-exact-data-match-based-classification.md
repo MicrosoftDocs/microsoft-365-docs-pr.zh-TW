@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c6db9df115020902b80328a341606cca2b1c735
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b729cb8a4c30ec13e22f36f9721cb55ecc93942d
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769458"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779864"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -377,7 +377,7 @@ ms.locfileid: "52769458"
 > 如果您使用「精確資料比對」結構描述和敏感性資訊類型精靈來建立結構描述和模式檔案，則 ***必須*** 下載此程序的結構描述。
 
 > [!NOTE]
-> 如果組織已在[租用戶層級 (公開預覽) 設定 Microsoft 365 的客戶金鑰](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)，精確資料比對將會自動使用其加密功能。 這僅適用商業雲端中的 E5 授權租用戶。
+> 如果您的組織已[在承租人層級為 Microsoft 365 設定客戶金鑰](customer-key-overview.md)，則完全相符的資料就會自動使用其加密功能。 這僅適用商業雲端中的 E5 授權租用戶。
 
 #### <a name="prerequisites"></a>必要條件
 

@@ -17,12 +17,12 @@ ms.collection:
 description: 瞭解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 的報告訊息或報告網路釣魚增益集。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc54c5b74697ac41a1d4ff0818467dba662b31f5
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 25c4f7d67fd4fa876544a17df0f4bc1abfd7b3e7
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295816"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782930"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>啟用報告訊息或報告網路釣魚增益集
 
@@ -48,7 +48,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 
 如果您是個別的使用者，您可以為自己啟用增益集。
 
-f 您是全域系統管理員或 Exchange Online 管理員，且 Exchange 設定成使用 OAuth 驗證，您可以為組織啟用報告訊息增益集和報告網路釣魚增益集。 這兩個增益集現在均可透過 [集中式部署](../../admin/manage/centralized-deployment-of-add-ins.md)使用。
+如果您是全域系統管理員或 Exchange Online 管理員，且 Exchange 設定成使用 OAuth 驗證，則可以為您的組織啟用報告訊息增益集和報表仿冒增益集。 這兩個增益集現在均可透過 [集中式部署](../../admin/manage/centralized-deployment-of-add-ins.md)使用。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -153,7 +153,7 @@ f 您是全域系統管理員或 Exchange Online 管理員，且 Exchange 設定
 
 2. 尋找並選取 **報告訊息** 增益集。
 
-3. 在顯示的 [ **編輯報告訊息** ] 浮出視窗中，視組織的需要複查及編輯設定。 完成後，點擊 **[儲存]**。
+3. 在顯示的 [ **編輯報告訊息** ] 浮出視窗中，視組織的需要複查及編輯設定。 完成後，按一下 ****[儲存]。
 
    ![報告訊息增益集的設定](../../media/EditReportMessageAddIn.png)
 

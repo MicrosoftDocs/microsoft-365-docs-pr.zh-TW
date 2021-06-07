@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 1748a33be2c27123eb0437784dcdb2cb7905616a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f1344026878b7fbd6242d82b1afb0e6671c32073
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274685"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789265"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>設定排程的快速或完整 Microsoft Defender 防毒軟體掃描
 
@@ -73,8 +73,8 @@ ms.locfileid: "52274685"
 |案例  |建議的掃描類型  |
 |---------|---------|
 |您想要設定定期、排程掃描     | 快速掃描 <p>快速掃描會檢查裝置上的處理常式、記憶體、設定檔及特定位置。 [！注意] 結合了 [always on 即時保護](configure-real-time-protection-microsoft-defender-antivirus.md)，快速掃描可為以系統和內核層級惡意程式碼開頭的惡意程式碼提供強大的覆蓋。 即時保護會在開啟及關閉檔時查看檔案，以及每當使用者流覽至資料夾時，就會檢查檔案。         |
-|在裝置上偵測到威脅，例如惡意程式碼     | 完整掃描 <p>完整掃描可協助識別是否有任何非使用中的元件需要更徹底的清理。         |
-|您想要執行 [隨選掃描](run-scan-microsoft-defender-antivirus.md)     | 完整掃描  <p>完整掃描會查看裝置磁片上的所有檔案，包括已過時、已封存的檔案，以及每日未存取的檔。      |
+|在個別裝置上偵測到威脅（如惡意程式碼）     | 快速掃描 <p>在大多數情況下，快速掃描會捕捉並清除偵測到的惡意程式碼。   |
+|您想要執行 [隨選掃描](run-scan-microsoft-defender-antivirus.md)     | 快速掃描       |
 | 您想確定可擕式裝置（例如 USB 磁片磁碟機）不包含惡意程式碼 | 自訂掃描 <p>自訂掃描可讓您選取特定位置、資料夾或檔案，並執行快速掃描。 |
 
 ### <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>若要瞭解快速和完整掃描，還需要瞭解什麼？
@@ -103,7 +103,7 @@ ms.locfileid: "52274685"
 |掃描 | 指定用於排程掃描的掃描類型 | 快速掃描 |
 |掃描 | 指定一周中的哪一天執行排程掃描 | 指定 [天] (或 [永不) ] 執行掃描。 | 從來不需要 |
 |掃描 | 指定一天中執行排程掃描的時間 | 指定午夜後的分鐘數 (例如，輸入 **60** a.m. ) 。 | 淩晨2點 |
-|根 | 隨機化排程的任務時間 |在 Microsoft Defender 防毒軟體中，將掃描的開始時間隨機化為從0到4小時的任何間隔。 <p>在 [SCEP](/mem/intune/protect/certificates-scep-configure)中，隨機化掃描任何間隔加上或減30分鐘。 這對虛擬機器或 VDI 部署很有用。 | Enabled |
+|根 | 隨機化排程的任務時間 |在 Microsoft Defender 防毒軟體中，將掃描的開始時間隨機化為從0到4小時的任何間隔。 <p>在 [SCEP](/mem/intune/protect/certificates-scep-configure)中，隨機化掃描任何間隔加上或減30分鐘。 這對虛擬機器或 VDI 部署很有用。 | 已啟用 |
 
 
 ### <a name="use-powershell-cmdlets-to-schedule-scans"></a>使用 PowerShell Cmdlet 來排程掃描
@@ -145,7 +145,7 @@ RandomizeScheduleTaskTimes
 
 |位置 | 設定 | 描述 | 預設設定 (（如果未設定）)  |
 |:---|:---|:---|:---|
-|掃描 | 僅當電腦已開啟但未在使用中時啟動排程掃描 | 除非電腦已開啟但未在使用中，否則不會執行排程掃描 | Enabled |
+|掃描 | 僅當電腦已開啟但未在使用中時啟動排程掃描 | 除非電腦已開啟但未在使用中，否則不會執行排程掃描 | 已啟用 |
 
 ### <a name="use-powershell-cmdlets"></a>使用 PowerShell Cmdlet
 
@@ -155,7 +155,7 @@ RandomizeScheduleTaskTimes
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-如需詳細資訊，請參閱[Use PowerShell Cmdlet 以設定及執行 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)和[Defender Cmdlet](/powershell/module/defender/)。
+要深入了解，請參閱 [《使用 PowerShell Cmdlets 設定和執行 Microsoft Defender 防毒軟體》](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender Cmdlets](/powershell/module/defender/)。
 
 ### <a name="use-windows-management-instruction-wmi"></a> (WMI) 使用 Windows 管理指令
 
@@ -242,7 +242,7 @@ ScanScheduleQuickScanTime
 
 |位置 | 設定 | 描述 | 預設設定 (（如果未設定）) |
 |:---|:---|:---|:---|
-|特徵碼更新 | 在安全性智慧更新後開啟掃描 | 下載新的保護更新後會立即進行掃描 | Enabled |
+|特徵碼更新 | 在安全性智慧更新後開啟掃描 | 下載新的保護更新後會立即進行掃描 | 已啟用 |
 
 ## <a name="see-also"></a>另請參閱
 

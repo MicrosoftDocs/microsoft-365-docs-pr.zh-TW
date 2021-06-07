@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何使用或不具有 Exchange Online 信箱，來建立、修改和刪除 Exchange Online Protection (EOP) 組織中可用的反網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f074596f0391e98735b07d17390cd058fd6fcafe
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c329edc517476cfb184bfa4b70c2f2c9542b6e33
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793013"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789060"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中設定反網路釣魚原則
 
@@ -77,7 +77,7 @@ ms.locfileid: "52793013"
   - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中的 **View-Only 組織管理** 角色群組也會提供該功能的唯讀存取權 <sup>\*</sup> 。
 
-- 如需有關反網路釣魚原則的建議設定，請參閱 [EOP 反網路釣魚原則設定](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)。
+- 如需有關反網路釣魚原則的建議設定，請參閱 [EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings)。
 
 - 允許套用更新的原則最多30分鐘。
 
@@ -137,7 +137,7 @@ ms.locfileid: "52793013"
 
    完成後，按 [下一步 **]**。
 
-7. 在顯示的 [檢閱 **]** 頁面上，檢閱您的設定。 您可以在每個區段中選取 [編輯 **]**，以修改該區段內的設定。 您也可以按一下 [ **上一步** ] 或選取嚮導中的特定頁面。
+7. 在顯示的 [檢閱 **]** 頁面上，檢閱您的設定。 您可以在每個區段中選取 [編輯 **]**，以修改該區段內的設定。
 
    當您完成時，按一下 [ **提交**]。
 

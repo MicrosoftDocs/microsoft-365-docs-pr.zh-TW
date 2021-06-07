@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 方案管理合約
+title: 使用 Microsoft 365 解決方案管理合約
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 瞭解如何使用 SharePoint Syntex、SharePoint 清單、Microsoft Teams 及 Power Automate 的 Microsoft 365 解決方案管理合約。
-ms.openlocfilehash: 219ab13eb5787bef566ede0c5dc856da29d96837
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: d12ccd2d4bc777b05489556f0d96ce9de80954a8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651281"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770814"
 ---
-# <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用 Microsoft 365 方案管理合約
+# <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用 Microsoft 365 解決方案管理合約
 
 本文說明如何使用 Microsoft 365 SharePoint Syntex 和元件為您的組織建立合約管理解決方案。 它為您提供了一個架構，可協助您規劃及建立符合您獨特業務需求的解決方案。 即使此解決方案不能完全符合您的業務需求，您在規劃中也可以採用它的部分，以建立自訂的合約管理解決方案。
 
@@ -73,6 +73,14 @@ ms.locfileid: "52651281"
 6. 此解決方案的最終結果是您組織的自動化業務程式。 員工可輕鬆使用 Teams 中的自訂磚模式，以啟動及監視檔的核准工作流程。 
 
      ![[合約] 索引標籤。](../media/content-understanding/tile-view.png)
+
+### <a name="licensing-requirements"></a>授權需求
+
+此方案依賴下列功能（Microsoft 365 企業版 (E1、E3、E5、F3) 或商務 (Basic、Standard 或進階版) 授權）：
+
+-   Microsoft SharePoint Syntex
+-   Microsoft Teams
+-   Power Automate
 
 ## <a name="create-the-solution"></a>建立方案
 

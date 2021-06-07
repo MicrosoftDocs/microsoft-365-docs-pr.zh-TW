@@ -1,5 +1,5 @@
 ---
-title: 步驟 4： 為您的裝置、電腦和其他端點部署端點管理
+title: 步驟 4。為您的裝置、電腦和其他端點部署端點管理
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 端點管理員來管理受管理的裝置、電腦及其他端點。
-ms.openlocfilehash: 116f2a92ccae43a36a8a4ceafcd598c532a852c3
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ef43f447b819a6e5d9d0de1d979d7d30887e30fb
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028989"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789099"
 ---
-# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步驟 4： 為您的裝置、電腦和其他端點部署端點管理
+# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步驟 4。為您的裝置、電腦和其他端點部署端點管理
 
-若雇用遠端工作者，您必須支援日益增加的個人裝置。 端點管理是原則型的安全性方法，要求裝置必須符合特定準則，才能獲得存取資源的授權。 [Microsoft 端點管理員] 提供現代化管理功能，保護您的雲端資料及內部檔案的安全。 
+若有混合式工作者，您必須支援日益增加的個人裝置。 端點管理是原則型的安全性方法，要求裝置必須符合特定準則，才能獲得存取資源的授權。 [Microsoft 端點管理員] 提供現代化管理功能，保護您的雲端資料及內部檔案的安全。 
 
 [Microsoft 端點管理員](/mem/endpoint-manager-overview)提供可管理行動裝置、電腦、虛擬機器、嵌入式裝置及伺服器的服務和工具，並結合您可能已經知道且正在使用的服務。
 
@@ -38,7 +38,7 @@ Microsoft Intune 是一種雲端式服務，專門用於 Microsoft 365 隨附的
 
 - **MDM：** 針對組織擁有的裝置，您可以執行完全控制功能，包括設定、功能及安全性。 裝置會在 Intune 中「註冊」，並在其中接收 Intune 原則以及規則和設定。 例如，您可以設定密碼和 PIN 需求、建立 VPN 連線、設定威脅防護等等。
 
-- **MAM：** 遠端工作者可能不希望您在其個人裝置 (也稱為攜帶您自己的裝置 (BYOD)) 上擁有完全控制權。 您可以提供遠端工作者選項，但是仍然保護貴組織。 例如，如果遠端工作者想要完全存取組織資源，可以註冊其裝置。 或者，如果這些使用者只想要存取電子郵件或 Microsoft Teams，請使用需要多重要素驗證 (MFA) 的應用程式保護原則來使用這些應用程式。
+- **MAM：** 遠端工作者可能不希望您在其個人裝置 (也稱為攜帶您自己的裝置 (BYOD)) 上擁有完全控制權。 您可以提供混合式工作者選項，並仍然保護貴組織。 例如，如果混合式工作者想要完全存取組織資源，可以註冊其裝置。 或者，如果這些使用者只想要存取電子郵件或 Microsoft Teams，請使用需要多重要素驗證 (MFA) 的應用程式保護原則來使用這些應用程式。
 
 如需詳細資訊，請參閱 [Microsoft Intune 概觀](/intune/fundamentals/what-is-intune)。
 
@@ -95,4 +95,4 @@ Windows Autopilot 能讓 IT 部門透過簡單易行的流程，幾乎不需要�
 
 [![步驟 5：部署遠端工作者生產力應用程式和服務](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
-繼續進行[步驟 5](empower-people-to-work-remotely-teams-productivity-apps.md)，讓您的遠端工作者能使用 Microsoft 365 生產力應用程式，例如 Microsoft Teams。
+繼續進行[步驟 5](empower-people-to-work-remotely-teams-productivity-apps.md)，讓您的混合式工作者能使用 Microsoft 365 生產力應用程式，例如 Microsoft Teams。

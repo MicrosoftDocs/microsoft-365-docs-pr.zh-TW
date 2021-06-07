@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee2a5e1815dd552753ac7f3dee30df11ac4332e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.custom: api
+ms.openlocfilehash: 456507533265bc085adc1008f3264e123569a6ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060547"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770766"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>從 MSSP 客戶租使用者提取警示
 
@@ -30,7 +31,7 @@ ms.locfileid: "51060547"
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 >[!NOTE]
 >MSSP 會採取此動作。
@@ -48,9 +49,9 @@ ms.locfileid: "51060547"
 
 步驟2：從客戶的承租人取得存取和重新整理權杖
  
-步驟3：允許 Microsoft Defender Security Center 上的應用程式
+步驟3：允許 Microsoft Defender 資訊安全中心的應用程式
  
-### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>步驟1：在 Azure Active Directory 中建立應用程式 (Azure AD) 
+### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>步驟1：在 Azure Active Directory (Azure AD) 中建立應用程式
  
 您將需要建立應用程式，並授與其許可權，以取得客戶的 Microsoft Defender for Endpoint 租使用者的提醒。
 
@@ -85,7 +86,7 @@ ms.locfileid: "51060547"
  
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>步驟2：從客戶的承租人取得存取和重新整理權杖
-本節會引導您瞭解如何使用 PowerShell 腳本，從客戶的承租人取得標記。 此腳本會利用上一個步驟中的應用程式，取得使用 OAuth 驗證程式代碼流程的存取和重新整理權杖。
+本節會引導您瞭解如何使用 PowerShell 腳本，從客戶的承租人取得標記。 此腳本會利用上一個步驟中的應用程式，使用 OAuth 的授權碼 Flow 來取得存取和重新整理權杖。
 
 在提供認證之後，您必須授與應用程式的同意，以便在客戶的承租人中布建該應用程式。
 
@@ -159,8 +160,8 @@ ms.locfileid: "51060547"
 
 8. 在 [PowerShell] 視窗中，您將會收到存取權杖和重新整理權杖。 儲存重新整理權杖以設定您的 SIEM 連接器。 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>步驟3：允許 Microsoft Defender Security Center 上的應用程式
-您將需要允許在 Microsoft Defender Security Center 中建立的應用程式。
+### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>步驟3：允許 Microsoft Defender 資訊安全中心的應用程式
+您將需要允許在 Microsoft Defender 資訊安全中心中建立的應用程式。
  
 您必須具有「 **管理入口系統設定** 」許可權，才能允許應用程式。 否則，您必須要求客戶允許您的應用程式。
 
@@ -186,7 +187,7 @@ ms.locfileid: "51060547"
 如需如何使用 REST API 提取提醒的詳細資訊，請參閱 [使用 REST api 的 Pull 警示](pull-alerts-using-rest-api.md)。
 
 
-## <a name="see-also"></a>另請參閱
-- [授與 MSSP 存取入口網站](grant-mssp-access.md)
+## <a name="see-also"></a>請參閱
+- [將入口網站存取權授予 MSSP](grant-mssp-access.md)
 - [存取 MSSP 客戶入口網站](access-mssp-portal.md)
 - [設定警示通知](configure-mssp-notifications.md)

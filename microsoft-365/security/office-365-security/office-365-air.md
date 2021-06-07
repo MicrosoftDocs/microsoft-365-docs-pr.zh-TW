@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7632efb2014af9f55e9cad700bceeeabe555fb8b
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696571"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793157"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的自動調查和回應 (AIR) 
 
@@ -78,8 +78,8 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 AIR 功能會包含在[Office 365 的 Microsoft Defender](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)中，但前提是您已設定您的原則及警示。 需要協助嗎？ 遵循 [防範威脅](protect-against-threats.md) 以設定或設定下列保護設定的指導方針：
 
 - 應開啟[審核記錄](../../compliance/turn-audit-log-search-on-or-off.md) () 
-- [反惡意程式碼原則](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-- [防網路釣魚保護](protect-against-threats.md#part-2---anti-phishing-protection)
+- [Anti-malware protection](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [防網路釣魚保護](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [反垃圾郵件保護](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [安全連結和安全附件](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [適用於 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
@@ -110,8 +110,8 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 |工作|需要) 角色 (|
 |---|---|
-|設定 AIR 功能|下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li></ul> <p> 您可以在[Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)指派這些角色。|
-|開始自動化調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|下列其中一個角色指派于[Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)： <ul><li>全域系統管理員</li><li>安全性系統管理員</li><li>安全性操作員</li><li>安全性讀取者 <br> --- 且 --- </li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
+|設定 AIR 功能|下列其中一個角色： <ul><li>全域管理員</li><li>安全性系統管理員</li></ul> <p> 您可以在[Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)指派這些角色。|
+|開始自動化調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|下列其中一個角色指派于[Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)： <ul><li>全域管理員</li><li>安全性系統管理員</li><li>安全性操作員</li><li>安全性讀取者 <br> --- 且 --- </li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
 
 ## <a name="required-licenses"></a>必要的授權
 

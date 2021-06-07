@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 microsoft cloud 德國移動 (microsoft cloud Deutschland) 到新德文 datacenter 區域中 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 6778248b127894102d15d4d94e3d2f099e3bfa37
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651104"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771198"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
@@ -80,7 +80,7 @@ ms.locfileid: "52651104"
 
 套用 **時**：第2階段開始之前
 
-如果您使用的是 Active Directory Federation Services (AD FS) ，請務必在第2階段開始 **之前**，先在新增 Office 365 全域服務的信賴憑證者 [信任之前與之後備份 ADFS 設定](ms-cloud-germany-transition-azure-ad.md)。
+如果您使用的是 Active Directory Federation Services (AD FS) ，請務必在第2階段開始 **之前**，先在新增 Office 365 全域服務的信賴憑證者 [信任之前與之後備份 ADFS 設定](ms-cloud-germany-transition-add-adfs.md)。
 
 ## <a name="phase-2-azure-ad-migration"></a>階段2： Azure AD 遷移
 在這個階段中，Azure Active Directory 將會遷移至新的資料中心區域，並成為作用中。 舊的 Azure AD 端點仍可使用。

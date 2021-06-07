@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 62a917b36355335c8eb52d83caecdbba691f8175
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242129"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770972"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心中的適用於 Office 365 的 Microsoft Defender
 
@@ -33,7 +33,33 @@ ms.locfileid: "52242129"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [適用於 Office 365 的 Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-位於 [https://security.microsoft.com](https://security.microsoft.com) 經改善的 [Microsoft 365 安全性中心](./overview-security-center.md)結合了來自現有 Microsoft 安全性入口網站的安全性功能，包括 Microsoft Defender 資訊安全中心和 Office 365 安全性與合規性中心。 此改善的中心可協助安全性小組更有效且有效率地地保護其組織免受威脅。
+## <a name="quick-reference"></a>快速參考
+
+下表列出 Office 365 安全性 & 規範中心與 Microsoft 365 安全性中心之間的導覽變更。
+
+> [!div class="mx-imgBorder"]
+> ![移至何處的影像](../../media/mdo-m3d-security-center.png)
+
+<br>
+
+****
+
+|Office 365安全性 & 合規性|Microsoft 365 安全性中心|Microsoft 365 合規性中心|Exchange 系統管理中心|
+|---|---|---|---|
+|警示|電子郵件與共同作業|||
+|分類||請參閱[Microsoft 365 規範中心](https://compliance.microsoft.com/homepage)||
+|資料外洩防護||請參閱[Microsoft 365 規範中心](https://compliance.microsoft.com/homepage)||
+|記錄管理||請參閱[Microsoft 365 規範中心](https://compliance.microsoft.com/homepage) ||
+|資訊控管||請參閱[Microsoft 365 規範中心](https://compliance.microsoft.com/homepage)||
+|威脅管理|電子郵件與共同作業|||
+|郵件流程|||請參閱[Exchange 系統管理中心](https://admin.exchange.microsoft.com/#/)|
+|資料隱私權||請參閱[Microsoft 365 規範中心](https://compliance.microsoft.com/homepage)||
+|搜尋|搜尋|||
+|報告|報告|||
+|服務保證|設定|||
+|
+
+位於 <https://security.microsoft.com> 經改善的 [Microsoft 365 安全性中心](./overview-security-center.md)結合了來自現有 Microsoft 安全性入口網站的安全性功能，包括 Microsoft Defender 資訊安全中心和 Office 365 安全性與合規性中心。 此改善的中心可協助安全性小組更有效且有效率地地保護其組織免受威脅。
 
 如果您熟悉 Office 365 安全性與合規性入口網站 (protection.office.com)，本文將描述 Microsoft 365 安全性中心的一些變更與改善功能。
 
@@ -69,7 +95,7 @@ ms.locfileid: "52242129"
 此外，請查看本文底部的 **相關資訊** 一節。
 
 > [!IMPORTANT]
-> Microsoft 365 安全性入口網站 (https://security.microsoft.com) 結合了 https://securitycenter.windows.com 和 https://protection.office.com 中的安全性功能)。 不過，您會看到的項目將取決於您的訂閱。 例如，如果您只有適用於 Office 365 的 Microsoft Defender 方案 1 或 2，以獨立訂閱形式，您就不會看到有關適用於端點的安全性的功能，而適用於 Office 的 Defender 方案 1 客戶不會看到威脅分析之類的項目。
+> Microsoft 365 安全性入口網站 (<https://security.microsoft.com>) 結合中的安全性功能 <https://securitycenter.windows.com> 和 <https://protection.office.com> 。 不過，您會看到的項目將取決於您的訂閱。 例如，如果您只有適用於 Office 365 的 Microsoft Defender 方案 1 或 2，以獨立訂閱形式，您就不會看到有關適用於端點的安全性的功能，而適用於 Office 的 Defender 方案 1 客戶不會看到威脅分析之類的項目。
 
 > [!TIP]
 > Microsoft 365 的安全性中心會包含所有 Exchange Online Protection (EOP) 函數，因為 EOP 是 Office 365 的 Defender 核心元素。
@@ -147,15 +173,15 @@ ms.locfileid: "52242129"
 
 [適用於 Office 365 的 Microsoft Defender 文章](/microsoft-365/security/office-365-security/defender-for-office-365)的[快速入門](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started)小節包含的邏輯早期設定區塊，看起來像這樣：
 
-1. 為各個項目設定含有「反」的名稱。
-   - 反惡意軟體
+1. 使用名稱中的「反」設定所有專案。
+   - 反惡意程式碼
    - 反網路釣魚
    - 反垃圾郵件
-2. 為各個項目設定含有「安全」的名稱。
+2. 在名稱中設定具有「安全」的所有專案。
    - 安全連結
    - 安全附件
-3. 保護工作負載 (例如: SharePoint Online、OneDrive 和 Teams)
-4. 使用 [零時差自動清除] 進行保護
+3. 保護工作負載 (例如: SharePoint線上、OneDrive 和 Teams) 。
+4. 使用零小時自動清除加以保護。
 
 還有可直接進入並在第 1 天便完成設定的[連結](../office-365-security/protect-against-threats.md)。
 
@@ -181,7 +207,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="[進階搜捕] 頁面 (在 [搜捕] 下) 的查詢面板頂端已選取了查詢，並正在執行 Kusto 查詢來擷取過去 7 天的 ZAP 動作。":::
+:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="[高級搜尋] 頁面 ([搜尋) 上的 [搜尋] 面板上方已選取 [查詢]，並執行 Kusto 查詢，以在過去7天內捕獲 ZAP 動作。":::
 
 來自此查詢的資料會顯示在查詢本身下方的結果面板中。 結果包含可自訂的結果集中的資訊，例如 'DeviceName'、'AccountDisplayName' 和 'ZapTime'。 也可以匯出結果做為記錄。 如果查詢是您所需要的，請再次選取 [儲存 **]**  >  [另存新檔 **]**，並將查詢新增至您的查詢、共用或社群查詢的清單中。
 

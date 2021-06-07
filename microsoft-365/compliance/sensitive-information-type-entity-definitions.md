@@ -18,17 +18,17 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: 資料遺失防護 (安全性與合規性中心中的 DLP) &amp; 包含可供您在 DLP 原則中使用的200機密資訊類型。 本文列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: ff976389e75e96d0a018d7c5379e2831313388dc
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+description: 您準備好用於 DLP 原則中的200機密資訊類型。 本文列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
+ms.openlocfilehash: 4efa411f7cc34b4116cc418e328e5c3f7545f788
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730471"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789216"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
-資料遺失防護 (規範中心中的 DLP) 包含許多可在 DLP 原則中使用的敏感資訊類型。 本文列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。 若要深入瞭解敏感資訊類型，請參閱 [敏感資訊類型](sensitive-information-type-learn-about.md)
+本文列出所有敏感資訊類型的實體定義。 每個定義都顯示 DLP 原則針對偵測每種類型所尋找的功能。 若要深入瞭解敏感資訊類型，請參閱 [敏感資訊類型](sensitive-information-type-learn-about.md)
 
 ## <a name="aba-routing-number"></a>ABA 路由號碼
 
@@ -147,11 +147,11 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="format"></a>格式
 
-具有短劃線的11位數
+11位數的破折號
 
 ### <a name="pattern"></a>模式
 
-具有短劃線的11位數：
+11位數，具有短劃線：
 - 兩位數的20，23，24，27，30，33或34
 - 連字號 ( ) 
 - 八位數
@@ -230,7 +230,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="format"></a>格式
 
-具有或不含銀行狀態分公司號碼的六到十位數
+具有或不含銀行狀態分公司號碼的六到10位數
 
 ### <a name="pattern"></a>模式
 
@@ -573,7 +573,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 10-11 位數：
 - 第一個數位是在2-6 範圍內
-- 九個數字是檢查碼
+- 第九位數是檢查碼
 - 第十個數字是問題的位數
 - 第十個數字 (選用) 是個別數位
 
@@ -623,7 +623,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 ### <a name="pattern"></a>模式
 
 - 一個字母 (N，E，D，F，A，C，U，X) 後接7位數或
-- 2個字母 (PA，PB，PC，PD，PE，PF，PU，PW，PX，PZ) 後接7位數。
+- 兩個字母 (PA，PB，PC，PD，PE，PF，PU，PW，PX，PZ) 後接7位數。
 
 ### <a name="checksum"></a>總和檢查碼
 
@@ -2745,7 +2745,17 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="pattern"></a>模式
 
-涵蓋 Alberta、英屬哥倫比亞、Manitoba、新的 Brunswick、Newfoundland/Labrador、Nova Scotia、安大略、Prince Edward 孤島、魁北克和薩斯的各種模式
+涵蓋的各種模式：
+- 阿爾比省
+- 不列顛哥倫比亞省
+- 馬尼托巴省
+- 新不倫瑞克省
+- Newfoundland/Labrador
+- 新斯科舍省
+- 安大略省
+- 艾德華王子島
+- 魁北克
+- 薩斯喀徹爾省
 
 ### <a name="checksum"></a>總和檢查碼
 
@@ -3166,7 +3176,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 當鄰近性300個字元以內時，DLP 原則就會偵測到這種敏感資訊類型：
 - 函數 Func_canadian_sin 找到符合模式的內容。
-- 下列其中一種組合，至少有兩種：
+- 至少下列兩種模式：
     - 會找到來自 Keyword_sin 的關鍵字。
     - 會找到來自 Keyword_sin_collaborative 的關鍵字。
     - 函數 Func_eu_date 會找到正確日期格式的日期。
@@ -3376,7 +3386,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="pattern"></a>模式
 
-複雜且健全的模式，可偵測全球所有主要品牌的卡，包括簽證、MasterCard、探索卡、JCB、美洲 Express、禮品卡和 diner 卡。
+偵測來自全球所有主要品牌的卡片，包括簽證、MasterCard、探索卡、JCB、美洲 Express、禮品卡和 diner 卡。
 
 ### <a name="checksum"></a>總和檢查碼
 
@@ -3831,7 +3841,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 
 ## <a name="croatia-identity-card-number"></a>克羅地亞身分識別卡號碼
-這種敏感資訊類型實體包含在歐盟國身分識別號碼的敏感資訊類型中。 它可以做為獨立的機密資訊類型實體。
+此實體包含在歐盟國身分識別號碼的敏感資訊類型中。 它可以做為獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -6332,7 +6342,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 ## <a name="finland-passport-number"></a>芬蘭護照號碼
 
-這種機密資訊類型實體可在歐盟護照號碼機密資訊類型中使用，並可做為獨立的機密資訊類型實體。
+這個實體可以在歐盟護照號碼機密資訊類型中使用，並可做為獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 九個字母和數位的組合
@@ -6412,7 +6422,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 ## <a name="france-drivers-license-number"></a>法國駕駛執照號碼
 
-您可以在歐盟駕駛執照號碼的敏感資訊類型中取得此機密資訊類型實體，並以獨立機密資訊類型實體形式提供。
+您可以在歐盟駕駛執照號碼的敏感資訊類型中使用此實體，也可以作為獨立的機密資訊類型實體使用。
 
 ### <a name="format"></a>格式
 
@@ -6671,7 +6681,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
    
 ## <a name="france-passport-number"></a>法國護照號碼
-在歐盟護照號碼機密資訊類型中提供此機密資訊類型實體。 它可以做為獨立的機密資訊類型實體。
+您可以在歐盟護照號碼機密資訊類型中使用此實體。 它也可以當成獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -6983,7 +6993,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ## <a name="germany-drivers-license-number"></a>德國駕駛執照號碼
 
-這種敏感資訊類型實體包含在歐盟駕駛執照號碼的敏感資訊類型中。 它可以做為獨立的機密資訊類型實體。
+這種敏感資訊類型實體包含在歐盟駕駛執照號碼的敏感資訊類型中。 它也可以當成獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -7229,7 +7239,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ## <a name="germany-passport-number"></a>德國護照號碼
 
-此機密資訊類型的實體包含在歐盟護照號碼機密資訊類型中，並可做為獨立的機密資訊類型實體。
+此實體包含在歐盟護照號碼機密資訊類型中，並可做為獨立機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -7446,7 +7456,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ## <a name="greece-drivers-license-number"></a>希臘駕駛執照號碼
 
-此機密資訊類型的實體包含在歐盟駕駛執照號碼的敏感資訊類型中，並可做為獨立機密資訊類型實體。
+此實體包含在歐盟駕駛執照號碼的敏感資訊類型中。 它也可以當成獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -7750,12 +7760,12 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 ### <a name="format"></a>格式
 
-不含空格及分隔符號的11位數
+11位數，不含空格及分隔符號
   
 ### <a name="pattern"></a>模式
 
 - 六位數的出生日期 YYMMDD
-- 4位數
+- 四位數
 - 檢查碼
   
 ### <a name="checksum"></a>總和檢查碼
@@ -8134,7 +8144,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 11位數：
   
-- 對應于性別 (1-男，2-女，其他號碼的一個數位，也可能是在1900或公民的情況下出生的公民)  
+- 一個數位，對應至性別，1代表雌雄，2代表女。 其他數位也可能是公民1900之前出生的公民，具有雙公民的公民。
 - 對應至出生日期 (YYMMDD 的六位數) 
 - 對應至序列值的三位數
 - 一個檢查碼
@@ -8634,7 +8644,66 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
 每個國家/地區的格式稍有不同。 IBAN 敏感資訊類型涵蓋下列60個國家/地區：
 
-ad，ae，al，at，az，ba，a，bg，bh，ch，cr，cy，cz，de，深色，do，ee，es，fi，fo，fr，gb，ge，gi，gl，gr，hr，hu，ie，il，是，it，kw，kz，lb，li，lt，lu，lv，mt，mu，nl-nl，no，pl，，ro，sk，sm，tn，tr，vg
+- AD
+- Ae
+- 鋁
+- 在
+- Az
+- 八
+- 將要
+- Bg
+- Bh
+- ch
+- 鉻
+- cy
+- Cz
+- 德
+- Dk
+- 完成
+- Ee
+- e
+- wi-fi
+- 佛
+- fr
+- G b
+- 通用 電氣
+- Gi
+- Gl
+- Gr
+- hr
+- 胡
+- 即
+- I l
+- 是
+- 會
+- 千瓦
+- kz
+- 磅
+- 李
+- 淺色
+- 路
+- 低壓
+- Mc
+- md
+- 我
+- Mk
+- 先生
+- mt.exe
+- 木
+- 吧
+- 否
+- Pl
+- 鉑
+- Ro
+- Rs
+- Sa
+- 硒
+- 四
+- Sk
+- Sm
+- Tn
+- Tr
+- Vg
 
 ### <a name="checksum"></a>總和檢查碼
 
@@ -9259,7 +9328,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
    
 ## <a name="italy-drivers-license-number"></a>義大利駕照編號
 
-此機密資訊類型的實體包含在歐盟駕駛執照號碼的敏感資訊類型中，並可做為獨立機密資訊類型實體。
+這種類型的實體包含在歐盟駕駛執照號碼的敏感資訊類型中。 它也可以當成獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -9447,7 +9516,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 與名字中的第一個、第三個和第四個雙子音相對應的三個字母
 - 與出生年份的最後一個數位相對應的兩位數
 - 對應至出生月份之字母的一個字母，在字母順序中使用字母，但是只會使用字母 A 到 E、H、L、M、P、P、R (所以，一月份為 A，10月是 R) 
-- 兩位數的出生月份天數，為了區別 genders，40會新增到女士的出生日。
+- 對應至出生月份天的兩位數，以便區別 genders，40會加入女士的出生日。
 - 相對於 municipality 人員專屬之地區代碼的四位數，在國外國家/地區使用 (全國的碼) 
 - 一個同位數位
     
@@ -12676,7 +12745,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 ### <a name="pattern"></a>模式
 
 11位數：
-- DDMMYY 之日期格式的六位數 
+- DDMMYY 格式的六位數（出生日期） 
 - 三位數個人號碼 
 - 兩個檢查碼
 
@@ -13032,7 +13101,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 
    
 ## <a name="poland-passport-number"></a>波蘭護照號碼
-這個敏感資訊類型實體包含在歐盟護照號碼機密資訊類型中。 它可以做為獨立的機密資訊類型實體。
+這個敏感資訊類型實體包含在歐盟護照號碼機密資訊類型中。 它也可以當成獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -14380,7 +14449,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>格式
 
-包含選擇性反斜線的九位數或十位數
+包含選擇性反斜線的九或10位數
   
 ### <a name="pattern"></a>模式
 
@@ -14726,7 +14795,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
   
 - 對應至出生日期 (DDMMLLL) （其中 "LLL" 會對應至出生年份的後三位數）的7位數 
 - 對應至出生 "50" 區域的兩位數
-- 對應至同一天出生的人的性別和序陣列合的三位數 (000-499 （適用于雌雄) 的男和500-999）
+- 三個數字，對應于一天出生的性別和序數的組合。 000-499 適用于雌雄的插頭和500-999。
 - 一個檢查碼
     
 ### <a name="checksum"></a>總和檢查碼
@@ -15615,7 +15684,7 @@ Foreigners 與 Foreigner 的識別號碼
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
- (請注意，在技術上而言，這個敏感資訊類型是使用正則運算式來識別這些關鍵字，而不是關鍵字清單。 ) 
+這種敏感資訊類型是使用正則運算式來識別這些關鍵字，而不是關鍵字清單。
 
 - 密碼或密碼後接0-2 個空格、等號 (=) 、0-2 空間，以及星號 ( * ) -OR-
 - 密碼或密碼，接著：
@@ -15626,7 +15695,7 @@ Foreigners 與 Foreigner 的識別號碼
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
- (請注意，在技術上而言，這個敏感資訊類型是使用正則運算式來識別這些關鍵字，而不是關鍵字清單。 ) 
+這種敏感資訊類型是使用正則運算式來識別這些關鍵字，而不是關鍵字清單。
 
 - 尚未
 - 送交
@@ -16726,7 +16795,7 @@ DLP 原則在接近300個字元以內時，偵測到此敏感資訊類型的信�
 - 出生日期 
    
 ## <a name="uk-national-insurance-number-nino"></a>英國。 本國保險號碼 (NINO) 
-這種敏感資訊類型實體包含在歐盟國身分識別號碼的敏感資訊類型中。 它可以做為獨立的機密資訊類型實體。
+這種敏感資訊類型實體包含在歐盟國身分識別號碼的敏感資訊類型中。 它也可以當成獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
