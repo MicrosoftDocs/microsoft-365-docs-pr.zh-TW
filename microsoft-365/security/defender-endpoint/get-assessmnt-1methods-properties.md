@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: e820875a3350761824c3e4e67311e55507a9cb6f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689198"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778320"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>匯出每台裝置的評估方法和屬性
 
@@ -50,7 +50,7 @@ ms.locfileid: "52689198"
 
 2. 匯出軟體清查評估
 
-3. 匯出軟體漏洞評估
+3. 匯出軟體弱點評估
 
 針對每個方法，有不同的 API 呼叫可取得不同的資料類型。 因為資料量可能很大，所以可供檢索的方式有兩種：
 
@@ -180,7 +180,7 @@ VulnerabilitySeverityLevel | string | 依威脅環境影響的 CVSS 分數和動
 匯出檔案 | 陣列 \[ 字串\]  | 用於存放組織目前快照之檔案的下載 URLs 清單。
 GeneratedTime | string | 產生匯出的時間。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [匯出每個裝置的安全設定評估](get-assessmnt-secure-cfg.md)
 

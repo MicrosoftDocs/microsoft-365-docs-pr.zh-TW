@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 請遵循下列步驟來刪除離職員工的使用者帳戶。
-ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e9f87f68650394a81c735346db929bf592e91d18
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782378"
+ms.locfileid: "52779828"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>步驟 7-刪除離職員工的使用者帳戶
 
@@ -84,6 +84,8 @@ ms.locfileid: "52782378"
   
  使用 **內部部署和 Exchange Datacenter 中目前狀態的使用者最快**：使用 Azure Active Directory 系統管理中心或 Exchange 的系統管理中心終止會話，並在內部部署環境中也進行變更。 若不採取此做法，在 Azure Active Directory 系統管理中心或 Exchange 系統管理中心進行的變更將被 DirSync 覆寫。
   
-## <a name="related-content"></a>相關內容
+## <a name="related-articles"></a>相關文章
 
-[還原使用者](restore-user.md) (文章) / [重設密碼](reset-passwords.md) (文章) 
+[還原使用者](restore-user.md)
+
+[重設密碼](reset-passwords.md)

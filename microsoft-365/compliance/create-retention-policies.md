@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710691"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769413"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -221,11 +221,11 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 ### <a name="configuration-information-for-skype-for-business"></a>商務用 Skype 的設定資訊
 
-不同於 Exchange 電子郵件，您無法將 Skype 位置的狀態切換為開啟以自動包含所有使用者，但當您開啟該位置時，必須手動選擇您想要保留其交談的使用者：
+不同於其他位置，您無法將 Skype 位置的狀態切換為開啟以自動包含所有使用者。 相反地，當您開啟該位置時，您接下來必須選取 [編輯] 選項，以手動選擇您想要保留與其交談的使用者:
 
-![為保留原則選擇 Skype 位置](../media/skype-location-retention-policies.png)
+![編輯保留原則的 Skype 位置](../media/skype-location-retention-policies.png)
 
-當您選取 **[選擇使用者]** 時，您可以選取 **[選取所有]** 方塊，快速包含所有使用者。 不過，請務必了解，會將每個使用者算成原則中的一個特定包含。 因此，如果透過選擇 **[全選]** 方塊拉包含 1000 位使用者，則與手動選取要包含的 1000 位使用者相同，這是 商務用 Skype 支持的最大值。
+選取此 [編輯] 選項之後，您可以在 **商務用 Skype** 窗格中選取 [名稱] 欄位前的隱藏方塊，以快速包含所有使用者。 不過，請務必了解，會將每個使用者算成原則中的一個特定包含。 因此，如果透過選擇此方塊包含 1,000 位使用者，會與手動選取要包含的 1,000 位使用者相同，這是商務用 Skype 所支援的最大值。
 
 請注意 Outlook 中的 **[交談記錄]** 資料夾的功能與 Skype 封存毫無關聯。 使用者可以關閉 **[交談記錄]**，但 Skype 封存的運作方式是，將 Skype 交談的複本儲存在使用者無法存取但 eDiscovery 可以使用的隱藏資料夾。
 

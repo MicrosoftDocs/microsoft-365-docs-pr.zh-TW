@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 系統管理員可以了解 Exchange Online Protection (EOP) 中提供的反詐騙功能，可協助緩解來自詐騙寄件者和網域的網路釣魚攻擊。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17228f634dc4aee9cfd416ca676920a5b4e0fba2
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537964"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779491"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的反詐騙保護
 
@@ -54,16 +54,16 @@ EOP 中提供下列反詐騙技術：
 
 - **在租用戶允許/封鎖清單中允許或封鎖詐騙寄件者**：當您覆寫詐騙情報見解中的決策時，詐騙寄件者會變成手動允許或封鎖項目，且只會出現在租用戶允許/封鎖清單的 **[詐騙]** 索引標籤上。 您也可以在詐騙情報偵測到詐騙寄件者之前，手動建立允許或封鎖項目。 如需詳細資訊，請參閱[管理 EOP 中的租用戶允許/封鎖清單](tenant-allow-block-list.md)。
 
-- **防網路釣魚**：在 EOP 中，防網路釣魚原則包含下列反詐騙設定：
+- **防網路釣魚**：在 EOP 和適用於 Office 365 的 Microsoft Defender 中，防網路釣魚原則包含下列反詐騙設定：
   - 開啟或關閉詐騙情報。
   - 開啟或關閉 Outlook 中未驗證的寄件者識別。
   - 指定對封鎖詐騙寄件者的動作。
 
   如需詳細資訊，請參閱[防網路釣魚原則中的詐騙](set-up-anti-phishing-policies.md#spoof-settings)。
 
-  **注意**：適用於 Office 365 的 Microsoft Defender 中的防網路釣魚原則包含其他保護，包括 **模擬** 保護。 如需詳細資訊，請參閱[適用於 Office 365 的 Microsoft Defender 中的防網路釣魚原則專屬設定](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
+  **注意**：適用於 Office 365 的 Defender 中的防網路釣魚原則包含其他保護，包括 **模擬** 保護。 如需詳細資訊，請參閱[適用於 Office 365 的 Microsoft Defender 中的防網路釣魚原則專屬設定](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
 
-- **詐騙偵測報告**：如需詳細資訊，請參閱[詐騙偵測報告](view-email-security-reports.md#spoof-detections-report)。
+- **詐騙偵測報告**：如需詳細資訊，請參閱 [詐騙偵測報告](view-email-security-reports.md#spoof-detections-report)。
 
   **注意**：適用於 Office 365 的 Defender 組織也可以使用即時偵測 (方案 1) 或威脅總管 (方案 2) 來查看網路釣魚嘗試的資訊。 如需詳細資訊，請參閱 [Microsoft 365 威脅調查及回應](office-365-ti.md)。
 

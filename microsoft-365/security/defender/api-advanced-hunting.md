@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender advanced 搜尋 API
+title: Microsoft 365Defender 高級搜尋 API
 description: 瞭解如何使用 Microsoft 365 Defender 的高級搜尋 API 執行高級搜尋查詢
-keywords: Advanced 搜尋、APIs、api、M365 Defender、Microsoft 365 Defender
+keywords: 高級搜尋、APIs、api、M365 defender、Microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932890"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769582"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced 搜尋 API
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365Defender 高級搜尋 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51932890"
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
 
-「[高級搜尋](advanced-hunting-overview.md)」是一個威脅搜尋工具，其使用[巧盡心思構建的查詢](advanced-hunting-query-language.md)，檢查 Microsoft 365 Defender 中的事件資料過去30天。 您可以使用高級搜尋查詢檢查不尋常的活動、偵測可能的威脅，甚至回應攻擊。 Advanced 搜尋 API 可讓您以程式設計方式查詢事件資料。
+「[高級搜尋](advanced-hunting-overview.md)」是一個威脅搜尋工具，使用[專門構造的查詢](advanced-hunting-query-language.md)來檢查過去30天中 Microsoft 365 Defender 的事件資料。 您可以使用高級搜尋查詢檢查不尋常的活動、偵測可能的威脅，甚至回應攻擊。 Advanced 搜尋 API 可讓您以程式設計方式查詢事件資料。
 
 ## <a name="quotas-and-resource-allocation"></a>配額和資源配置
 
@@ -47,17 +47,16 @@ ms.locfileid: "51932890"
 1. 查詢會探索和傳回過去30天的資料。
 2. 結果最多可返回100000列。
 3. 每個租使用者最多可讓15個通話每分鐘一次。
-4. 每個租使用者的執行時間為10分鐘。
-5. 每個租使用者每天有四小時的執行時間。
-6. 如果單一要求的執行時間超過10分鐘，它會超時並傳回錯誤。
-7. `429`HTTP 回應碼表示您已到達配額（按傳送的要求數目，或已分派的執行時間）。 請閱讀回應本文，以瞭解您已達到的限制。 
+4. 如果租使用者到達100%，直到接下來的15分鐘週期過後，便會封鎖查詢。
+5. 如果單一要求的執行時間超過10分鐘，它會超時並傳回錯誤。
+6. `429`HTTP 回應碼表示您已到達配額（按傳送的要求數目，或已分派的執行時間）。 請閱讀回應本文，以瞭解您已達到的限制。 
 
 > [!NOTE]
 > 以上所列的所有配額 (例如每個承租人大小每分鐘15個通話) 。 這些配額是最小值。
 
 ## <a name="permissions"></a>權限
 
-需要有下列其中一個許可權，才能呼叫高級搜尋 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [Access The Microsoft 365 Defender Protection APIs](api-access.md)
+需要有下列其中一個許可權，才能呼叫高級搜尋 API。 若要深入瞭解，包括如何選擇許可權，請參閱[Access the Microsoft 365 Defender Protection APIs](api-access.md)
 
 許可權類型 | 權限 | 許可權顯示名稱
 -|-|-

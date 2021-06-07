@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 擁有個人 Microsoft 帳戶的使用者，如果啟用 [連結 AAD with 獎勵] 功能，則可以透過其工作搜尋獲得 Microsoft 獎勵點數。
-ms.openlocfilehash: 8cbd88de530ec4aa566962bb74715dc9c417f296
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: 581a7a044ef1b3508591778c9da416ffc3afac2e
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464339"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779659"
 ---
 # <a name="manage-microsoft-rewards"></a>管理 Microsoft Rewards
 
@@ -36,10 +36,10 @@ ms.locfileid: "52464339"
 
 ## <a name="related-content"></a>相關內容
 
-[設定 Microsoft Search](/microsoftsearch/setup-microsoft-search.md) (文章) 
+[設定 Microsoft Search](/microsoftsearch/setup-microsoft-search) (文章) 
 
 [可供安全性小組執行的前12項工作，以支援從 home](../../security/top-security-tasks-for-remote-work.md) (文章) 
 
-[Microsoft 365 (文章的新增功能](https://support.microsoft.com/en-us/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426)) 
+[Microsoft 365 (文章的新增功能](https://support.microsoft.com/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426)) 
 
 

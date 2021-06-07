@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4997d7118b139d993ed94ed917137ca107940e46
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199618"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769806"
 ---
 # <a name="alert-resource-type"></a>警示資源類型
 
@@ -29,7 +30,7 @@ ms.locfileid: "51199618"
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,11 +41,11 @@ ms.locfileid: "51199618"
 
 方法	 |傳回類型 |描述
 :---|:---|:---
-[取得警示](get-alert-info-by-id.md) | [警報](alerts.md) | 取得單一 [警示](alerts.md) 物件。
-[清單提醒](get-alerts.md) | [警示](alerts.md) 集合 | 清單 [警示](alerts.md) 收集。
-[更新警示](update-alert.md) | [警報](alerts.md) | 更新特定 [警示](alerts.md)。
+[取得警示](get-alert-info-by-id.md) | [警示](alerts.md) | 取得單一 [警示](alerts.md) 物件。
+[列出警示](get-alerts.md) | [警示](alerts.md) 集合 | 清單 [警示](alerts.md) 收集。
+[更新警示](update-alert.md) | [警示](alerts.md) | 更新特定 [警示](alerts.md)。
 [批次更新提醒](batch-update-alerts.md) | | 更新批次 [警示](alerts.md)。
-[建立警示](create-alert-by-reference.md)|[警報](alerts.md)|根據從 [高級搜尋](run-advanced-query-api.md)取得的事件資料來建立警示。
+[建立警示](create-alert-by-reference.md)|[警示](alerts.md)|根據從 [高級搜尋](run-advanced-query-api.md)取得的事件資料來建立警示。
 [清單相關的網域](get-alert-related-domain-info.md)|網域集合| 與警示相關聯的清單 URLs。
 [清單相關檔案](get-alert-related-files-info.md) | [檔](files.md) 集合 |  列出與[警示](alerts.md)相關[聯的檔案實體。](files.md)
 [清單相關的 Ip](get-alert-related-ip-info.md) | IP 集合 | 列出與警示相關聯的 Ip。

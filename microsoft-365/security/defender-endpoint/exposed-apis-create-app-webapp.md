@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 8f480a148d72428c6346930a91358d1e8b674ee7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 4742a32fd899f41d4e7772c52415891cdd8895bf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200002"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769506"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>建立應用程式以存取 Microsoft Defender for Endpoint （不含使用者）
 
@@ -30,7 +31,7 @@ ms.locfileid: "51200002"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,7 +39,7 @@ ms.locfileid: "51200002"
 
 此頁面說明如何建立應用程式，以在沒有使用者的情況下，取得端點的程式設計存取權。 如果您需要代表使用者以程式設計方式存取 Defender for Endpoint，請參閱 [Get access with user coNtext](exposed-apis-create-app-nativeapp.md)。 如果您不確定需要哪一種存取權，請參閱 [入門](apis-intro.md)。
 
-Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 會協助您根據使用 Defender for Endpoint 功能自動化工作流程與創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱 [OAuth 2.0 授權碼流程](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 會協助您根據使用 Defender for Endpoint 功能自動化工作流程與創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般來講，您必須採取下列步驟，才能使用 APIs：
 - 建立 Azure Active Directory (Azure AD) 應用程式。
@@ -51,9 +52,9 @@ Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料
 
 1. 使用具有 **全域系統管理員** 角色的使用者登入 [Azure](https://portal.azure.com) 。
 
-2. 流覽至 [ **Azure Active Directory**  >  **應用程式註冊**]  >  **新註冊**。 
+2. 流覽至 **Azure Active Directory**  >  **App 註冊**  >  **新註冊**。 
 
-   ![Microsoft Azure 的影像及應用程式註冊導覽](images/atp-azure-new-app2.png)
+   ![Microsoft Azure 及流覽至應用程式註冊的影像](images/atp-azure-new-app2.png)
 
 3. 在 [註冊] 表單中，選擇應用程式的名稱，然後選取 [ **註冊**]。
 
@@ -141,7 +142,7 @@ $token = $authResponse.access_token
 
 ### <a name="use-c"></a>使用 c #：
 
-下列程式碼是使用 NuGet 的 Windows.identitymodel.extensions.dll 測試。 ActiveDirectory 3.19.8。
+下列程式碼是使用 NuGet 的 windows.identitymodel.extensions.dll 測試。 ActiveDirectory 3.19.8。
 
 1. 建立新的主控台應用程式。
 1. 安裝 NuGet [windows.identitymodel.extensions.dll。 ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)。
@@ -175,7 +176,7 @@ $token = $authResponse.access_token
 ### <a name="use-curl"></a>使用捲曲
 
 > [!NOTE]
-> 下列程式假設已在您的電腦上安裝了 Windows 的卷。
+> 下列程式假設 Windows 已安裝在電腦上的卷。
 
 1. 開啟命令提示字元，並將 CLIENT_ID 設定為您的 Azure 應用程式識別碼。
 1. 將 CLIENT_SECRET 設定為您的 Azure 應用程式密碼。
@@ -221,6 +222,6 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
     // Do something useful with the response
 ```
 
-## <a name="see-also"></a>另請參閱
-- [支援的 Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
+## <a name="see-also"></a>請參閱
+- [受支援的適用於端點的 Microsoft Defender API](exposed-apis-list.md)
 - [代表使用者存取 Microsoft Defender for Endpoint](exposed-apis-create-app-nativeapp.md)

@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint APIs connection to Power BI
 ms.reviewer: ''
 description: 在 Microsoft Defender for Endpoint APIs 上建立 Power Business 智慧 (BI) 報告。
-keywords: api、支援的 api、Power BI、報表
+keywords: api、支援的 api、Power BI、報告
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,15 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 5c76784d78837c324922ffc25539746a4921e426
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935038"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769704"
 ---
-# <a name="create-custom-reports-using-power-bi"></a>使用 Power BI 建立自訂報告
+# <a name="create-custom-reports-using-power-bi"></a>使用 Power BI 建立自訂報表
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,11 +39,11 @@ ms.locfileid: "51935038"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-在本節中，您將會瞭解如何在 Endpoint APIs 的 Defender 上建立 Power BI 報告。
+在本節中，您將會瞭解如何在「Power BI 的 Defender」 APIs 上建立報表。
 
-第一個範例會示範如何連接 Power BI to Advanced 搜尋 API，第二個範例會示範 OData APIs 的連線，例如機器動作或警示。
+第一個範例會示範如何將 Power BI 連接至高級搜尋 API，第二個範例會示範 OData APIs 的連線，例如機器動作或警示。
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a>Connect Power BI to Advanced 搜尋 API
+## <a name="connect-power-bi-to-advanced-hunting-api"></a>連線 Power BI 的高級搜尋 API
 
 - 開啟 Microsoft Power BI
 
@@ -107,7 +108,7 @@ ms.locfileid: "51935038"
 
 - 輸入您的認證，並等候登入
 
-- 按一下 **[連線]**
+- 按一下 [**連線**
 
     ![Set credentials2 的影像](images/power-bi-set-credentials-organizational-cont.png)
 
@@ -115,7 +116,7 @@ ms.locfileid: "51935038"
 
 - 您可以複製此資料表、重新命名它，然後編輯內部的高級搜尋查詢，以取得任何您想要的資料。
 
-## <a name="connect-power-bi-to-odata-apis"></a>將 Power BI 連接至 OData APIs
+## <a name="connect-power-bi-to-odata-apis"></a>連線 Power BI OData APIs
 
 - 與上述範例唯一不同的是，編輯器中的查詢。 
 
@@ -137,11 +138,11 @@ ms.locfileid: "51935038"
 - 您也可以使用查詢篩選的 OData 查詢，請參閱 [使用 OData 查詢](exposed-apis-odata-samples.md)
 
 
-## <a name="power-bi-dashboard-samples-in-github"></a>GitHub 中的 Power BI 儀表板範例
-如需詳細資訊，請參閱 [POWER BI 報告範本](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
+## <a name="power-bi-dashboard-samples-in-github"></a>Power BI GitHub 中的儀表板範例
+如需詳細資訊，請參閱[Power BI 報表範本](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
 
 ## <a name="sample-reports"></a>範例報告
-查看 Microsoft Defender for Endpoint Power BI report 範例。 如需詳細資訊，請參閱 [流覽程式碼範例](https://docs.microsoft.com/samples/browse/?products=mdatp)。
+查看 Microsoft Defender for Endpoint Power BI 報表範例。 如需詳細資訊，請參閱 [流覽程式碼範例](https://docs.microsoft.com/samples/browse/?products=mdatp)。
 
 
 ## <a name="related-topic"></a>相關主題

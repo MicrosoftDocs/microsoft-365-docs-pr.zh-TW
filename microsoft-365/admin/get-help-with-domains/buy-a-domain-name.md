@@ -23,21 +23,21 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 瞭解如何在 Microsoft 365 中購買功能變數名稱。
-ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c4b3b0ac88671e72ed567998ad9d97486dfb6342
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635459"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779683"
 ---
 # <a name="buy-a-domain-name"></a>購買網域名稱
 
 > [!NOTE]
-> 如果您的組織使用中國所運作的 Office 365，請參閱 how [to 購買網域，以瞭解中國中的世紀所運作的 Office 365](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md)。
+> 如果您的組織使用中國所運作的 Office 365，請參閱 how [to 購買網域，以瞭解中國中的世紀所運作的 Office 365](#how-to-buy-a-domain-for-office-365-operated-by-21vianet)。
 
  *若要新增、修改或移除網域，您 **必須** 是 [企業或企業方案](https://products.office.com/business/office)的 **全域系統管理員**。這些變更會影響整個承租人、*自訂* 的系統管理員或 *一般使用者* 無法進行這些變更。*  
 
- 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 ## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登入並前往設定 \> 網域 \> 購買網域
 
@@ -89,9 +89,8 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 
 ::: moniker range="o365-21vianet"
+
 ## <a name="how-to-buy-a-domain-for-office-365-operated-by-21vianet"></a>如何購買網域以用於由 21Vianet 所提供的 Office 365
-
-
 
 如果您還沒有自己的網域，您可以輕鬆地在線上向網域名稱註冊機構、網域轉售商，甚至是目前的網際網路提供者購買網域。您註冊 由 21Vianet 提供的 Office 365 時即會獲得網域名稱，例如 contoso.partner.onmschina.cn，但您可能會想要使用自訂網域名稱，例如 fourthcoffee.com。
   
@@ -120,5 +119,5 @@ Request the transfer at the registrar that you want to move your domain to. Look
 ## <a name="related-content"></a>相關內容
 
 [將網域新增至 Microsoft 365](../setup/add-domain.md) (文章) \
-[網域常見問題解答](../setup/domains-faq.yml) (篇) \
+[網域常見問題集](../setup/domains-faq.yml) (文章)
 [更新 DNS 記錄以將您的網站與目前的主機服務提供者](../dns/update-dns-records-to-retain-current-hosting-provider.md) (文章) 

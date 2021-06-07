@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將瞭解如何使用 Microsoft 365 中的客戶金鑰來處理服務加密。
-ms.openlocfilehash: 3d0c86dbca02a66547f0ade643b745ecfc8f92cd
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: d12a5d2f80de11a69fc4a36146a511c5f9a306f8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344767"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769446"
 ---
 # <a name="service-encryption-with-customer-key"></a>客戶金鑰服務加密
 
@@ -52,8 +52,11 @@ Microsoft 365 提供使用 BitLocker 和分散式金鑰管理員 (DKM) 啟用的
 - Teams 狀態郵件
 - Exchange Online 的使用者和信號資訊
 - Exchange Online 信箱 DEPs 未加密的信箱
-- MIP exact data match (EDM) 資料– (資料檔案架構、規則套件，以及用來散列敏感性資料) 的 salts。
-  針對 MIP exact data match (EDM) 和 Microsoft Teams，多工作負載 DEP 會從您指派 DEP 給租使用者時，加密新的資料。 針對 Exchange Online，客戶金鑰會加密所有現有和新的資料。
+- Microsoft 資訊保護：
+
+  - 完全資料符合 (EDM) 資料，包括資料檔案架構、規則套件，以及用來散列敏感性資料的 salts。 針對 EDM 和 Microsoft Teams，多工作負載 DEP 會從您指派 DEP 給租使用者時，加密新的資料。 針對 Exchange Online，客戶金鑰會加密所有現有和新的資料。
+
+  - 敏感度標籤的標籤設定
 
 多工作負載 DEPs 不會加密下列類型的資料。 相反地，Microsoft 365 會使用其他類型的加密來保護此資料。
 

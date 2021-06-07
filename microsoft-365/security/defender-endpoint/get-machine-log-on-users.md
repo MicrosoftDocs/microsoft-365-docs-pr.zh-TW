@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 590bd1dee14e54359dd699e86795664819c23d05
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 1c81d2978677b751a8085f88b5c4732fd4a5a247
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200089"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770046"
 ---
 # <a name="get-machine-logon-users-api"></a>取得電腦登入使用者 API
 
@@ -28,7 +30,7 @@ ms.locfileid: "51200089"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,8 +51,8 @@ ms.locfileid: "51200089"
 
 許可權類型 |   權限  |   許可權顯示名稱
 :---|:---|:---
-應用程式 |   已讀取的使用者。所有 | 「讀取使用者設定檔」
-委派 (工作或學校帳戶)  | 已讀取的使用者。所有 | 「讀取使用者設定檔」
+應用程式 |   User.Read.All | 「讀取使用者設定檔」
+委派 (工作或學校帳戶)  | User.Read.All | 「讀取使用者設定檔」
 
 >[!Note]
 > 使用使用者認證取得權杖時：

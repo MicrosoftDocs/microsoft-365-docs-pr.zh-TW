@@ -13,16 +13,44 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: bc04059d3ec63dd9395ed8f7a0e02b948e5cead1
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 6b18de29b339c3367bfacb8bdc8ec9725481e3e4
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730735"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779852"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
 本文列出[Microsoft 受管理的電腦檔](index.yml)中的新文章和更新的文章。 「已更新」文章中有材料新增或修正--不會列出修正錯誤、樣式或格式問題等細微修正。 您可以隨時透過[GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)的儲存機制者，查看特定提交 (的記錄，包括任何變更) 的詳細資料。
+
+## <a name="may-2021"></a>2021 年 5 月
+新的或已變更的文章 | 描述
+--- | ---
+[設定 Microsoft 受管理的電腦裝置](get-started/set-up-devices.md) | 更新的文章
+[裝置庫存報告](working-with-managed-desktop/device-inventory-report.md) | 更新的文章
+[Microsoft 受管理的電腦的網路設定](get-ready/network.md) | 更新的文章
+[診斷記錄](service-description/diagnostic-logs.md) | 新文章
+[Microsoft 受管理的電腦技術](intro/technologies.md) | 更新的文章
+[來賓帳戶的先決條件](get-ready/guest-accounts.md) | 更新的文章
+[使用報告](working-with-managed-desktop/reports.md) | 更新的文章
+
+## <a name="april-2021"></a>2021 年 4 月
+新的或已變更的文章 | 描述
+--- | ---
+[裝置設定檔](service-description/profiles.md) | 新文章
+[讓合作夥伴註冊裝置的步驟](get-started/register-devices-partner.md) | 更新的文章
+[自行註冊新裝置](get-started/register-devices-self.md) | 更新的文章
+[自行註冊現有裝置](get-started/register-reused-devices-self.md) | 更新的文章
+[位址裝置名稱相依性](get-ready/address-device-names.md) | 新文章
+[裝置名稱](service-description/device-names.md) | 新文章
+[移除裝置](working-with-managed-desktop/remove-devices.md) | 新文章
+[Microsoft 受管理電腦的先決條件](get-ready/prerequisites.md) | 更新的文章
+[Microsoft 受管理電腦中的應用程式](get-ready/apps.md) | 更新的文章
+[驗證新裝置](get-started/validate-device.md) | 新文章
+[設定 Microsoft 受管理的電腦裝置](get-started/set-up-devices.md) | 更新的文章
+[產品生命週期 Microsoft 受管理的電腦](service-description/device-lifecycle.md) | 更新的文章
+[Microsoft 受管理的電腦裝置](service-description/device-list.md) |更新的文章
 
 ## <a name="march-2021"></a>2021 年 3 月
 新的或已變更的文章 | 描述

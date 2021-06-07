@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 生產力分數如何反映人員和技術體驗度量，並與類似規模的組織進行比較。
-ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593838"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779671"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生產力分數 
 
@@ -40,7 +40,7 @@ ms.locfileid: "52593838"
 
 - **人員體驗：** 量化組織使用 Microsoft 365 類別，例如內容共同作業、行動性、通訊、會議及團隊合作的狀況。  
 
-    對於上述每個類別，我們著眼於公用研究，以組織有效性的形式找出一些最佳做法和相關優點。 例如，[Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) 研究顯示，當人員在雲端 (而不是使用電子郵件附件)進行共同作業和共用內容時，他們每週最多可以節省 100 分鐘。 此外，我們會量化組織中這些最佳做法的使用狀況，以協助您查看您在數位轉型中所處的階段。 
+    對於上述每個類別，我們著眼於公用研究，以組織有效性的形式找出一些最佳做法和相關優點。 例如，Forrester 研究顯示，當人員在雲端 (而不是使用電子郵件附件)進行共同作業和共用內容時，他們每週最多可以節省 100 分鐘。 此外，我們會量化組織中這些最佳做法的使用狀況，以協助您查看您在數位轉型中所處的階段。 
 
 - **技術體驗**：組織仰賴可靠和性能良好的技術，以及 Microsoft 365 的有效使用。 [端點分析](https://aka.ms/endpointanalytics)：協助您了解組織如何受硬體與軟體的效能和健康情況問題影響。 Microsoft 365 應用程式健康情況可協助您了解組織中的裝置是否正在建議通道上執行 Microsoft 365 應用程式。
 

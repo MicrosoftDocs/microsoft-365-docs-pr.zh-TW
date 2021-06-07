@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文針對 Microsoft 365 中 Advanced eDiscovery 的情況，定義評審集內檔的元資料欄位。
-ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 42f349bf01d5a777535dd04096b860a0165f1edf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730495"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769566"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>進階電子文件探索中的文件中繼資料欄位
 
@@ -75,6 +75,7 @@ ms.locfileid: "52730495"
 |EmailAction*||Email_action|值為 **無**、 **回復** 或 **轉寄**;根據郵件的主旨行。|
 |要求的電子郵件傳遞回執||Email_delivery_receipt|Internet 標頭中提供的傳遞回執的電子郵件地址。|
 |Importance|EmailImportance|Email_importance|郵件的重要性： **0** -低; **1** -Normal; **2** -高|
+|忽略的處理錯誤|ErrorIgnored|Error_Ignored|忽略且未修正的錯誤。|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|電子郵件訊息中的完整電子郵件頭集|
 |EmailLevel*||Email_level|會指出郵件在其所屬的電子郵件執行緒中的層級;附件繼承其上層郵件的值。|
 |電子郵件訊息識別碼||Email_message_ID|郵件中的網際網路郵件識別碼。|
@@ -88,14 +89,14 @@ ms.locfileid: "52730495"
 |||Extracted_text_path|匯出之解壓縮文字檔的路徑。|
 |ExtractedTextLength*||Extracted_text_length|解壓縮文字中的字元數。|
 |FamilyDuplicateSet*||Family_duplicate_set|每個其他 (相同內容和所有相同附件) 的不同的系列的數值識別碼。|
-|系列識別碼|FamilyId|Family_ID|系列 Id 群組所有專案;電子郵件，這包括郵件和所有附件;對於檔，這包含檔和任何內嵌專案。|
+|系列識別碼|FamilyId|Family_ID|將電子郵件的所有專案組合在一起。 這包括郵件和所有附件及解壓縮的專案。|
 |系列大小||Family_size|系列中的檔數目。|
 |檔類別|FileClass|File_class|SharePoint 與 OneDrive 的內容：**檔**;Exchange 的內容：**電子郵件** 或 **附件**。|
 |檔識別碼|FileId|File_ID|在案例內唯一的檔識別碼。|
 |已建立檔案系統日期||File_system_date_created|從檔案系統建立日期 (僅適用于非 Office 365 資料) 。|
 |修改檔案系統日期||File_system_date_modified|從檔案系統修改的日期 (只適用于非 Office 365 資料) 。|
 |檔案類型|FileType||以副檔名為基礎之專案的檔案類型。|
-|群組識別碼|GroupID||群組內容的群組識別碼。|
+|群組識別碼|群組識別碼|Group_ID|將電子郵件和檔的所有專案組合在一起。 電子郵件，這包括郵件和所有附件及解壓縮的專案。 對於檔，這包含檔和任何內嵌專案。|
 |具有附件|HasAttachment|Email_has_attachment|會指出郵件是否有附件。|
 |擁有律師|HasAttorney||當在律師清單中至少找到一個參與者時，**為 True** ，否則為 True。否則，此值為 **False**。|
 |HasText *||Has_text|會指出專案是否有文字;可能的值為 **True** 和 **False**。|
@@ -126,6 +127,7 @@ ms.locfileid: "52730495"
 |NativeSHA256||Native_SHA_256|) 檔資料流程的 SHA256 雜湊 (256 位雜湊值。|
 |ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|電子郵件執行緒的串聯 (ET) set 和 Near-重複 (ND) set。 此欄位可用於審閱時間的有效排序。 A **D** 的首碼為 ND 集，而 **E** 的首碼為 ET 集。|
 |ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|電子郵件執行緒的串聯 (ET) set 和 near-重複 (ND) set。 此欄位可用於審閱時間的有效排序。 A **D** 的首碼為 ND 集，而 **E** 的首碼為 ET 集。 ET 集內的每一個電子郵件專案後面都會加上其適當的附件。|
+|接近重複集合||ND_set|類似于 pivot 檔的專案會共用相同的 ND_set。|
 |O365 作者||O365_authors|SharePoint 中的作者。|
 |O365 建立者||O365_created_by|從 SharePoint 建立。|
 |O365 建立日期||O365_date_created|從 SharePoint 建立日期。|
@@ -155,6 +157,7 @@ ms.locfileid: "52730495"
 |寄件者網域|SenderDomain|Email_sender_domain|寄件者的網域。|
 |寄件日期|寄件日期|Email_date_sent|郵件的傳送日期。|
 |設定訂單：先包含|SetOrderInclusivesFirst|Set_order_inclusives_first|排序欄位-電子郵件和附件：計數器-按時間順序;檔：先進行資料透視，再按降冪的相似性分數。|
+|設定識別碼||Set_ID|類似內容的檔 (ND_set 相同電子郵件執行緒中的) 或電子郵件 (Email_set) 共用相同的 Set_ID。|
 |SimilarityPercent||Similarity_percent|會指出檔與接近的重複集的 pivot 的類似程度。|
 |原生檔案大小|Size|Native_size|原生專案的位元組數。|
 |主旨|主旨|Email_subject|郵件的主旨。|

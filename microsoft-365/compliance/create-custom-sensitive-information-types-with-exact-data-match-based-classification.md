@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0bb75db5b6bb1f3a3b18033b5327f014748f6512
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: 7c6db9df115020902b80328a341606cca2b1c735
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464390"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769458"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -611,10 +611,6 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - 適用於 SharePoint 的 DLP (檔案)
 - Microsoft Cloud App Security DLP 原則
 - 伺服器端自動標記原則
-
-下列案例的 EDM 敏感性資訊類型目前正在開發中，尚未提供使用：
-
-- 自動分類敏感度標籤和保留標籤
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>使用 EDM 建立 DLP 原則
 

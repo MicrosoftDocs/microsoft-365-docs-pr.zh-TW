@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: df2c01bd0cc935ae8a541b40a96f3e067926674a
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 0123fc5cb22e249475f7e95426ee74f6e0939aaa
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625014"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788426"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生產力圖例
 
@@ -105,15 +105,15 @@ Advanced eDiscovery 端對端工作流程與資料流程，包含在 Microsoft 3
 |[![Microsoft 電話語音解決方案海報](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021年3月更新 | 如需詳細資訊，請參閱[規劃您的 Teams 語音解決方案](/microsoftteams/cloud-voice-landing-page)。|
 
 
-## <a name="empower-remote-workers"></a>強化遠端工作人員
+## <a name="set-up-your-infrastructure-for-hybrid-work"></a>設定混合式工作的基礎結構
 
 透過 Microsoft 365 和其他 Microsoft 雲端技術，您可以為員工提供來自其住宅中組織內部部署和雲端架構資訊、工具及資源的安全存取權。 
 
-[![強化遠端工作人員海報](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)  | [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) <br>
-2020年7月更新
+[![設定混合式工作海報的基礎結構](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
+[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)  | [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
+2021年6月更新
 
-如需詳細資訊，請參閱本文的海報：讓[遠端工作者使用 Microsoft 365](empower-people-to-work-remotely.md)。
+如需詳細資訊，請參閱此標牌的文章：[設定混合式作品搭配 Microsoft 365 的基礎結構](empower-people-to-work-remotely.md)。
 
 ## <a name="microsoft-teams-with-security-isolation"></a>使用安全性隔離 Microsoft Teams
 

@@ -1,5 +1,5 @@
 ---
-title: Contoso 的 COVID-19 回應，並支援遠端和現場工作
+title: Contoso 的 COVID-19 回應及支援混合式工作
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -13,15 +13,15 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 瞭解 Contoso Corporation 如何回應 COVID-19 pandemic，並將其軟體安裝和更新基礎結構用於遠端和現場工作。
-ms.openlocfilehash: 0bc7bc0e457b51e2f65337e355bcf9fced52274d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 瞭解 Contoso Corporation 如何回應 COVID-19 pandemic，並將其軟體安裝和更新基礎結構用於混合式工作。
+ms.openlocfilehash: 2d28b0513221f6c14526baba69bf0f5986154805
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245441"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788376"
 ---
-# <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contoso 的 COVID-19 回應，並支援遠端和現場工作
+# <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contoso 的 COVID-19 回應及支援混合式工作
 
 Contoso 永遠支援其遠端工作者，該員工是透過巴黎總部的中央 VPN 伺服器來存取內部部署資源。 Contoso 已頒佈所有的遠端工作者為受管理的膝上型電腦。 內部部署工作者會混合使用桌上型電腦和可擕式電腦。
 
@@ -39,9 +39,9 @@ Contoso 也會更新安裝在膝上型電腦、平板電腦及智慧型電話上
 
 安裝了 VPN 用戶端的遠端工作者會使用 DNS 來尋找地區最接近的 office，並連接到此處安裝的 VPN 裝置。 透過分割隧道，Microsoft 365 的流量優化端點會直接傳送至最近 Microsoft 365 網路位置的地區。 其他所有流量都會透過 VPN 連線傳送至 VPN 裝置。
 
-## <a name="contosos-support-for-remote-and-onsite-work"></a>Contoso 對遠端和現場工作的支援
+## <a name="contosos-support-for-hybrid-work"></a>Contoso 對混合式工作的支援
 
-在地區鎖定期間，為了支援大多數的遠端工作者所做的初步變更之後，Contoso 所做的基礎結構變更可支援遠端和現場工作，而工作者可能是：
+在地區鎖定期間，為了支援大多數的遠端工作者所做的初步變更之後，Contoso 進行基礎結構變更，以支援工作人員可以執行的混合式工作：
 
 - Always remote。
 - 永遠在現場。
@@ -85,6 +85,6 @@ Microsoft 365 身分識別、安全性和符合性功能是針對零信任而設
 
 針對發佈給新工作者的新遠端裝置，當工作者登入時，裝置會根據其在 RoamingDevices 群組中的成員資格，聯繫 Intune 雲端服務和其他服務，並為 Windows 10、Microsoft 365 Apps 企業版和 Edge 安裝最新的更新。 完成時，遠端裝置可供使用，並使用已安裝的 VPN 用戶端來存取內部部署資源和 Microsoft 365 網路，以進行持續更新。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
-[為您的組織中的遠端工作設定基礎結構](empower-people-to-work-remotely.md) 。
+[設定您組織中的混合式工作基礎結構](empower-people-to-work-remotely.md) 。

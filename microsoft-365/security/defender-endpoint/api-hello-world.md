@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 08188acf1209ea2247a0eb09d722ce74c4540254
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 385227dc67039fb3666d3b9518af5be8eb01dc7a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939609"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769758"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API-Hello World 
 
@@ -47,15 +48,15 @@ ms.locfileid: "51939609"
 - 使用範例：只需要複製/貼上簡短的 PowerShell 腳本
 
 ### <a name="do-i-need-a-permission-to-connect"></a>我需要連線許可權嗎？
-在 [應用程式註冊] 階段，您的 Azure Active Directory (Azure AD) 租使用者必須具有 **全域系統管理員** 角色。
+在 [應用程式註冊] 階段中，您必須在 Azure Active Directory (Azure AD) 承租人中具備 **全域系統管理員** 角色。
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>步驟 1-在 Azure Active Directory 中建立應用程式
 
 1. 使用您的 **全域系統管理員** 使用者登入 [Azure](https://portal.azure.com) 。
 
-2. 流覽至 [ **Azure Active Directory**  >  **應用程式註冊**]  >  **新註冊**。 
+2. 流覽至 **Azure Active Directory**  >  **App 註冊**  >  **新註冊**。 
 
-   ![Microsoft Azure 的影像及應用程式註冊導覽](images/atp-azure-new-app2.png)
+   ![Microsoft Azure 及流覽至應用程式註冊的影像](images/atp-azure-new-app2.png)
 
 3. 在 [註冊] 表單中，選擇應用程式的名稱，然後按一下 [ **註冊**]。
 

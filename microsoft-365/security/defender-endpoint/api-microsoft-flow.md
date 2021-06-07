@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Flow connector
 ms.reviewer: ''
-description: 使用 Microsoft Defender for Endpoint Flow connector 來自動化安全性，並建立一個流程，當您租使用者上發生新警示時，就會觸發此流程。
+description: 使用 Microsoft Defender for Endpoint Flow connector 來自動化安全性，並建立一個流程，每當租使用者發生新警示時，就會觸發此流程。
 keywords: 流程、支援的 api、api、Microsoft flow、查詢、自動化
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,15 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 33a7c7b1907ac761dfdde43a70bfb8f515235150
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: dd0cc3c2da134750f905b1f80746d6ec65cc70b2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929296"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769699"
 ---
-# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power (過去的 Microsoft Flow) 和 Azure 功能
+# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (過去 Microsoft Flow) 和 Azure 函數
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,9 +35,9 @@ ms.locfileid: "51929296"
 
 - 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-自動化的安全性程式是每一項新式安全性運作中心的標準需求。 缺乏專業的網路 defenders 強制 SOC 以最有效率的方式運作，而且自動化也是必須的。 Microsoft Power 自動支援完全為該所建立的不同連接器。 您可以在數分鐘內建立端對端程式自動化。
+自動化的安全性程式是每一項新式安全性運作中心的標準需求。 缺乏專業的網路 defenders 強制 SOC 以最有效率的方式運作，而且自動化也是必須的。 Microsoft Power Automate 支援完全為該所建立的不同連接器。 您可以在數分鐘內建立端對端程式自動化。
 
-Microsoft Defender API 具有許多功能的官方流程連接器。
+Microsoft Defender API 具有許多功能的官方 Flow 連接器。
 
 ![編輯 credentials1 的影像](images/api-flow-0.png)
 
@@ -46,19 +47,19 @@ Microsoft Defender API 具有許多功能的官方流程連接器。
 
 ## <a name="usage-example"></a>使用範例
 
-下列範例會示範如何建立每當租使用者在租使用者上發生新警示時所觸發的流程。
+下列範例會示範如何建立在租使用者上發生新警示時所觸發的 Flow。
 
-1. 登入 [Microsoft Power 自動功能](https://flow.microsoft.com)。
+1. 登入[Microsoft Power Automate](https://flow.microsoft.com)。
 
 2. 從空白移至 [**我的流程**]  >  （**新增**  >  **）**。
 
     ![編輯 credentials2 的影像](images/api-flow-1.png)
 
-3. 選擇您流程的名稱，並搜尋「Microsoft Defender ATP Trigger」做為觸發器，然後選取新的警示觸發。
+3. 選擇 Flow 的名稱，並搜尋「Microsoft Defender ATP 觸發器」做為觸發器，然後選取新的警示觸發。
 
     ![編輯 credentials3 的影像](images/api-flow-2.png)
 
-現在，您已有一個流程會在每次發生新警示時觸發。
+現在，您已有 Flow 會在每次發生新警示時觸發。
 
 ![編輯 credentials4 的影像](images/api-flow-3.png)
 
@@ -68,7 +69,7 @@ Microsoft Defender API 具有許多功能的官方流程連接器。
 
 ### <a name="get-the-alert-entity-using-the-connector"></a>使用連接器取得警示實體
 
-1. 選擇 [ **Microsoft DEFENDER ATP** ] 做為新步驟。
+1. 為新步驟選擇 [ **Microsoft Defender ATP** ]。
 
 2. 選擇 [ **警示-取得單一警示 API**]。
 
@@ -82,7 +83,7 @@ Microsoft Defender API 具有許多功能的官方流程連接器。
 
 2. 檢查警示嚴重性是否 **等於** High。
 
-   如果是，請使用電腦識別碼和批註新增 **Microsoft DEFENDER ATP 隔離的電腦** 動作。
+   如果是，請使用電腦識別碼及批註新增 **Microsoft Defender ATP 隔離的電腦** 動作。
 
     ![編輯 credentials6 的影像](images/api-flow-5.png)
 

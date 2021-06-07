@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 796517ba13a4718c38d5200fcf9cbe38b5dc62d0
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636019"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779635"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在系統管理中心部署增益集
 
@@ -38,7 +38,7 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
 若要深入瞭解如何在部署後管理增益集，請參閱 [在系統管理中心管理增益集](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  針對 Word、Excel 和 PowerPoint 使用[SharePoint 應用程式目錄](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)，將增益集部署至內部部署環境中的使用者，但不含 Microsoft 365 及/或支援 SharePoint 增益集的連線。 Outlook 使用 Exchange 控制台，在內部部署環境中部署，但不連接到 Microsoft 365。
+>  針對 Word、Excel 和 PowerPoint 使用[SharePoint 應用程式目錄](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)，將增益集部署至內部部署環境中的使用者，但不含 Microsoft 365 及/或支援 SharePoint 增益集的連線。 Outlook 使用 Exchange 控制台，在內部部署環境中部署，但不連接到 Microsoft 365。
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>部署 Office 增益集的建議方法
 

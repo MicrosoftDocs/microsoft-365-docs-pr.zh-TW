@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 方案中的即時檢視
+title: Microsoft Defender 中 Office 365 計畫的即時檢視
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,24 +16,24 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 深入瞭解 Microsoft Defender for Office 365 中的市場即時檢視。
+description: 深入瞭解 Microsoft Defender 中 Office 365 的市場即時檢視。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3c84b9e6253dd813ff930314fc2c1d0a947e94e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 04e3d76271e95d36d73dd473076029cb60c06900
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203445"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779440"
 ---
-# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的即時檢視
+# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的即時檢視
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用於**
 - [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
 
-[活動] 視圖是 Microsoft Defender for Office 365 方案2中的功能 (例如，Microsoft 365 E5 或使用 Defender for Office 365 Plan 2 附加元件) 的組織。 安全性 & 合規性中心的即時檢視會識別和分類服務中的網路釣魚攻擊。 行銷活動檢視可協助您：
+[活動] 視圖是 Microsoft Defender 中 Office 365 方案 2 (的功能，例如，Microsoft 365 E5 或組織搭配 Office 365 Plan 2 附加元件) 的 Defender。 Microsoft 365 security center 中的即時檢視會識別和分類服務中的網路釣魚攻擊。 行銷活動檢視可協助您：
 
 - 更有效率地調查和回應網路釣魚攻擊。
 - 更進一步了解攻擊範圍。
@@ -54,20 +54,20 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
 市場活動可能會短期，或可能跨越數天、數周或數天，具有有效和非使用中的期間。 您的特定組織可能會發起一個市場活動，否則您的組織可能會是多個公司的較大活動的一部分。
 
-## <a name="campaign-views-in-the-security--compliance-center"></a>安全性 & 規範中心內的即時檢視
+## <a name="campaign-views-in-the-security-center"></a>安全中心的即時檢視
 
-在 **威脅管理** 活動的 [安全性 & 規範中心](https://protection.office.com) \> ****，或是直接在中提供即時檢視 <https://protection.office.com/campaigns> 。
+您可以在 [Microsoft 365 security center](https://security.microsoft.com)中的 **電子郵件 &** 共同作業 \> **活動**，或是直接在上使用即時檢視 <https://security.microsoft.com/campaigns> 。
 
-![安全性與合規性中心的行銷活動概觀](../../media/campaigns-overview.png)
+![Microsoft 365 security center 中的活動一覽表](../../media/campaigns-overview.png)
 
 您也可以從下列來源取得市場即時檢視：
 
-- **威脅管理** \>**瀏覽器** \>**View** \>**活動**
-- **威脅管理** \>**瀏覽器** \>**View** \>**所有電子郵件** \>[**活動**] 索引標籤
-- **威脅管理** \>**瀏覽器** \>**View** \>**網路釣魚** \>[**活動**] 索引標籤
-- **威脅管理** \>**瀏覽器** \>**View** \>**惡意** \> 代碼[**活動**] 索引標籤
+- **電子郵件 & 協同** \> 作業 **瀏覽器** \>**View** \>**活動**
+- **電子郵件 & 協同** \> 作業 **瀏覽器** \>**View** \>**所有電子郵件** \>[**活動**] 索引標籤
+- **電子郵件 & 協同** \> 作業 **瀏覽器** \>**View** \>**網路釣魚** \>[**活動**] 索引標籤
+- **電子郵件 & 協同** \> 作業 **瀏覽器** \>**View** \>**惡意** \> 代碼[**活動**] 索引標籤
 
-若要存取市場即時檢視，您必須是 Security & 合規性中心內的 **組織管理**、 **安全性管理員** 或 **安全性讀者** 角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+若要存取即時檢視，您必須是「 **組織管理**」、「 **安全性管理員** **」或「安全性** 管理員」角色群組的成員，才能使用 [安全性中心]。 如需詳細資訊，請參閱[Microsoft 365 規範中心的許可權和 Microsoft 365 安全中心](permissions-microsoft-365-security-center.md)」。
 
 ## <a name="campaigns-overview"></a>市場活動概覽
 
@@ -78,7 +78,7 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 > [!TIP]
 > 如果您沒有看到任何活動資料，請嘗試變更日期範圍或 [篩選器](#filters-and-settings)。
 
-[一覽表] 頁面的其餘部分會在 [ **市場活動** ] 索引標籤上顯示下列資訊：
+[一覽] 頁面上圖形下方的表格會在 [ **市場活動** ] 索引標籤上顯示下列資訊：
 
 - **名稱**
 
@@ -92,7 +92,7 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
   - **網路釣魚**：在此 phished 中，您可以使用此市場活動的品牌。 例如，、、、 `Microsoft` `365` `Unknown` `Outlook` 或 `DocuSign` 。
   - **惡意** 代碼：例如 `HTML/PHISH` 或 `HTML/<MalwareFamilyName>` 。
 
-  在此 phished 中，您可以使用此活動的品牌。 當偵測到 Office 365 技術的 Defender 時，會將前置詞 **ATP** 新增至子類型值。
+  在此 phished 中，您可以使用此活動的品牌。 當使用 Office 365 技術的 Defender 為偵測所驅動時，會將前置詞 **ATP** 新增至子類型值。
 
 - **收件者**：此行銷活動鎖定的使用者數目。
 
@@ -110,7 +110,7 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
 ### <a name="filters-and-settings"></a>篩選和設定
 
-在 [市場即時檢視] 頁面頂端，有數個篩選和查詢設定可協助您找出並隔離特定的市場活動。
+在 [ **活動** ] 頁面的頂端，有數個篩選和查詢設定可協助您找出並隔離特定的市場活動。
 
 ![市場活動篩選](../../media/campaign-filters-and-settings.png)
 
@@ -131,7 +131,6 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
   - **附件檔名**
   - **惡意程式碼系列**
   - **標記**：已套用指定使用者標記的使用者或群組 (包含優先順序帳戶) 。 如需使用者標記的相關資訊，請參閱 [user tags](user-tags.md)。
-  - **系統覆寫**
   - **傳遞動作**
   - **其他動作**
   - **方向性**
@@ -146,7 +145,9 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
   - **寄件者 IP**
   - **附件 SHA256**：若要在 Windows 中尋找檔案的 SHA256 雜湊值，請在命令提示字元中執行下列命令： `certutil.exe -hashfile "<Path>\<Filename>" SHA256` 。
   - **叢集識別碼**
+  - **警示識別碼**
   - **警示原則識別碼**
+  - **活動識別碼**
   - **ZAP URL 信號**
 
 - **URLs**：
@@ -164,11 +165,11 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
 完成作業後，請按一下 [ **查詢** ] 按鈕。
 
-在您建立基本或高級篩選器之後，您可以使用 [ **儲存查詢** ] 或 [ **另存查詢**] 來儲存。 之後，當您回到 [市場活動] 視圖時，您可以按一下 [ **已儲存的查詢設定**] 載入已儲存的篩選。
+在您建立基本或高級篩選器之後，您可以使用 [ **儲存查詢** ] 或 [ **另存查詢**] 來儲存。 之後，當您回到 [ **市場活動** ] 頁面時，您可以按一下 [ **已儲存的查詢設定**] 載入已儲存的篩選。
 
 若要匯出圖形或行銷清單，請按一下 [ **匯出** ]，然後選取 [ **匯出圖表資料** ] 或 [ **匯出活動清單**]。
 
-如果您有 Microsoft Defender for Endpoint 訂閱，您可以按一下 [ **MDE 設定** ]，使用 microsoft Defender for endpoint 連線或中斷市場活動資訊的連線。 如需詳細資訊，請參閱將 [Microsoft defender For Office 365 與 Microsoft defender For Endpoint 整合](integrate-office-365-ti-with-mde.md)。
+如果您有 microsoft defender for endpoint 訂閱，您可以按一下 [ **MDE 設定**，使用 microsoft defender for endpoint 來連線或中斷市場活動資訊的連線。 如需詳細資訊，請參閱[整合 microsoft defender for Office 365 搭配 microsoft defender for Endpoint](integrate-office-365-ti-with-mde.md)。
 
 ## <a name="campaign-details"></a>行銷活動詳細資料
 
@@ -178,30 +179,26 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
 在 [市場活動詳細資料] 視圖的頂端，可取得下列活動資訊：
 
-- **識別碼**：唯一的活動識別碼。
-
-- **開始** 和 **結束**：活動的開始日期和結束日期。 請注意，這些日期可能會比您在 [概覽] 頁面上選取的篩選日期進一步擴充。
-
-- **影響**：此區段包含您在 [時程表]) 中所選取之日期範圍篩選的下列資料 (：
-  - 收件者總數。
-  - 傳送至收件匣但不是 [垃圾郵件 (] 資料夾) 的「Inboxed」郵件數目。
-  - 在網路釣魚郵件中按一下 URL 負載的使用者人數。
-  - Howe 許多使用者已訪問 URL。
-
-- **目標**：所計算的百分比： (組織中的活動收件者人數) / (服務) 中所有組織的收件者總數。 請注意，此值是透過整個活動週期計算的，而不會根據日期篩選器而變更。
-
-- 市場活動活動的互動時程表：時程表會顯示活動的整個生命週期中的活動。 根據預設，陰影區域會包含您在 [概覽] 中選取的日期範圍篩選。 您可以按一下並拖動以選取特定的起點和終點， <u>它會變更顯示在 [ **影響** ] 區域中的資料，以及下一節所述的頁面的其餘</u>部分。
-
-在標題列中，您可以按一下 [ **下載活動] 調** 高按鈕 ![ 下載活動上寫圖示 ](../../media/download-campaign-write-up-button.png) ，以將市場活動詳細資料下載至 Word 檔 (預設會以名稱 CampaignReport.docx) 為單位。 請注意，下載包含整個市場活動的整個生命週期的詳細資料，而不只是 (您) 所選取的篩選日期。
+- **活動** 識別碼：唯一的活動識別碼。
+- **活動**：活動的工期和活動。
+- 您在 [時程表) ] 中選取的日期範圍篩選器的下列資料 (：
+- **影響**
+- **郵件**：收件者總數。
+- **Inboxed**：已傳遞至 [收件匣] 的郵件數目，而非 [垃圾郵件] 資料夾。
+- 已 **按一下 [連結**]：在網路釣魚郵件中按一下 URL 負載的使用者數目。
+- 已 **訪問的連結**：有多少使用者已訪問 URL。
+- **目標 (% )**：所計算的百分比： (組織中的活動收件者數目) / (服務) 中所有組織的收件者總數。 請注意，此值是透過整個活動週期計算的，而不會根據日期篩選器而變更。
+- 開始日期/時間和結束市場活動流程的資料/時間篩選，如下一節所述。
+- 市場活動活動的互動時程表：時程表會顯示活動的整個生命週期中的活動。 您可以將游標移到圖表中的資料點，以查看偵測到的郵件數量。
 
 ![活動資訊](../../media/campaign-details-campaign-info.png)
 
 ### <a name="campaign-flow"></a>行銷活動流程
 
-在 [市場活動詳細資料] 視圖中，市場活動的重要詳細資料會顯示在水準流程圖中的 [ **流程** ] 區段中 (稱為 _Sankey_ 圖表) 。 這些詳細資料將協助您了解行銷活動的元素和在組織中的潛在影響。
+在 [市場活動詳細資料] 視圖中，市場活動的重要詳細資料會呈現在水準流程圖中 (稱為 _Sankey_ 圖表) 。 這些詳細資料將協助您了解行銷活動的元素和在組織中的潛在影響。
 
 > [!TIP]
-> **流程圖** 中所顯示的資訊是由時程表中的陰影日期範圍所控制，如上一節所述。
+> 流程圖中所顯示的資訊是由時程表中的日期範圍篩選所控制，如上一節所述。
 
 ![未包含使用者 URL 點選的行銷活動詳細資料](../../media/campaign-details-no-recipient-actions.png)
 
@@ -212,6 +209,8 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 - **寄件者 IP**
 - **寄件者網域**
 - **篩選 verdicts**：值與 [反垃圾郵件郵件頭](anti-spam-message-headers.md)中所述的可用網路釣魚和垃圾郵件篩選 verdicts 有關。 下表說明可用的值：
+
+  <br>
 
   ****
 
@@ -233,7 +232,7 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
   <sup>\*\*</sup> 請複查您的反垃圾郵件原則，因為應該隔離這些郵件，而非傳遞。
 
-- **傳遞位置**：您可能想要調查傳送給收件者的郵件 (至收件匣或 [垃圾郵件] 資料夾) ，即使使用者未按一下郵件中的 [載荷] URL 也是一樣。 您也可以從隔離區中移除隔離的郵件。 如需詳細資訊，請參閱 [在 EOP 中隔離的電子郵件訊息](quarantine-email-messages.md)。
+- **郵件目的地**：您可能想要調查傳送給收件者的郵件 (至收件匣或 [垃圾郵件] 資料夾) ，即使使用者未按一下郵件中的 [載荷] URL 也是一樣。 您也可以從隔離區中移除隔離的郵件。 如需詳細資訊，請參閱 [在 EOP 中隔離的電子郵件訊息](quarantine-email-messages.md)。
   - **已刪除資料夾**
   - **下降**
   - **外部**：收件者位於您的內部部署電子郵件組織中的混合式環境。
@@ -258,7 +257,7 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 - **允許**
 - **BlockPage**：收件者已按一下有效載荷 URL，但組織中的 [安全連結](safe-links.md) 原則已封鎖其對惡意網站的存取。
 - **BlockPageOverride**：收件者按一下了郵件中的 [負載 URL]，則安全連結會嘗試將其停止，但允許覆寫區塊。 檢查您的 [安全連結原則](set-up-safe-links-policies.md) ，以瞭解使用者為何可以覆寫安全連結判定，並繼續進行惡意網站。
-- **PendingDetonationPage**： Microsoft Defender for Office 365 中的安全附件正處於開啟和調查虛擬電腦環境中的載荷 URL 的過程中。
+- **PendingDetonationPage**： Microsoft Defender for Office 365 中的安全附件是在虛擬電腦環境中開啟及調查負載 URL 的過程中。
 - **PendingDetonationPageOverride**：收件者可以覆寫 [負載引爆] 處理常式，並開啟 URL，而不會等候結果。
 
 ### <a name="tabs"></a>索引標籤
@@ -266,7 +265,7 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 [市場活動詳細資料] 視圖中的索引標籤可讓您進一步調查市場活動。
 
 > [!TIP]
-> 在 [ [活動資訊](#campaign-information) ] 區段中所述的時程表中，依陰影日期範圍所控制的索引標籤上顯示的資訊。
+> 在 [ [活動資訊](#campaign-information) ] 區段中所述的時程表中，以 [日期範圍] 篩選所控制的索引標籤上顯示的資訊。
 
 - **URL 按一下**：如果使用者沒有按一下郵件中的 [負載 URL]，此區段將會是空白的。 如果使用者能夠按一下 URL，則會填入下列值：
   - **使用者**<sup>\*</sup>
@@ -303,7 +302,11 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
 ### <a name="buttons"></a>按鈕
 
-行銷活動詳細資料檢視中的按鈕可讓您使用威脅瀏覽器的強大功能，進一步調查行銷活動。
+[市場活動詳細資料] 視圖底部的按鈕可讓您調查和記錄有關活動的詳細資料：
 
-- **探索行銷活動**：使用 [行銷活動識別碼] 值做為搜尋篩選，以開啟新的威脅總管搜尋索引標籤。
-- **探索 Inboxed 郵件**：開啟新的威脅瀏覽器搜尋索引標籤，使用 **活動識別碼** 及 **傳遞位置：收件** 匣做為搜尋篩選器。
+- **探索郵件**：使用威脅瀏覽器的威力進一步調查市場活動：
+  - **所有郵件**：開啟新的威脅瀏覽器搜尋索引標籤，使用 [ **活動識別碼** ] 值作為搜尋篩選器。
+  - **Inboxed 郵件**：開啟新的威脅瀏覽器搜尋索引標籤，使用 [ **活動識別碼** ] 和 [ **傳遞位置：] [收件** 匣] 作為搜尋篩選器。
+  - **內部郵件**：開啟新的威脅瀏覽器搜尋索引標籤，使用 **活動識別碼** 和 **方向性：組織內部** 為搜尋篩選。
+
+- **下載威脅報告**：將市場活動詳細資料下載至 Word 檔 (預設會以名為 CampaignReport.docx) 。 請注意，下載包含整個市場活動的整個生命週期的詳細資料，而不只是 (您) 所選取的篩選日期。

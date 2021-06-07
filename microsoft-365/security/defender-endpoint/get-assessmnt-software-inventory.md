@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: 5663a17de2e601c506b4d1b9ac44eaab6ae6245f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689186"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778309"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>每個裝置匯出軟體清查評估
 
@@ -281,7 +281,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [匯出每台裝置的評估方法和屬性](get-assessmnt-1methods-properties.md)
 

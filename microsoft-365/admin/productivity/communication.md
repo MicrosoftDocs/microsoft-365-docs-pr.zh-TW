@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 通訊人員經驗的詳細資料。
-ms.openlocfilehash: 6ecde5fbbffe65a80c980c70f8195b8e31507f03
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b744f9631deabb9c7bc97ab6a0cf1ba8fc61c5dd
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579191"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779743"
 ---
 # <a name="communication--people-experiences"></a>通訊–人員經驗
 
-當您的組織如何使用 Microsoft 365 的技術經驗和技術經驗時，生產力分數可支援與數位轉換的旅程。 組織的分數反映出人員和技術經驗的衡量標準，並可以與規模相近的組織基准進行比較。 通訊類別是「人員經驗」度量的一部分。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
+當您的組織如何使用 Microsoft 365 和技術經驗時，生產力分數可支援進行數位轉換的旅程。 組織的分數反映出人員和技術經驗的衡量標準，並可以與規模相近的組織基准進行比較。 通訊類別是「人員經驗」度量的一部分。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -44,7 +44,7 @@ ms.locfileid: "51579191"
 
 ## <a name="why-your-organizations-communication-score-matters"></a>為什麼您組織的通訊分數很重要 
 
-Microsoft 知道人員有不同的通訊需求。 若要取得問題的快速回應，您可以選擇傳送立即訊息。 如果您想要將狀態更新傳送給您的領導，您可以選擇一封電子郵件。 若要吸引廣大的物件，您可以選擇張貼社區訊息。 Microsoft 365 可讓您在通訊模式中靈活以滿足每個人的需求。 「調查」顯示使用即時通訊工具可建立更統一的組織，並組建士氣（不論位置為何）。 [請參閱證據](https://go.microsoft.com/fwlink/?linkid=2127669)。
+Microsoft 知道人員有不同的通訊需求。 若要取得問題的快速回應，您可以選擇傳送立即訊息。 如果您想要將狀態更新傳送給您的領導，您可以選擇一封電子郵件。 若要吸引廣大的物件，您可以選擇張貼社區訊息。 Microsoft 365 能夠在通訊模式中靈活地滿足每個人的需求。 「調查」顯示使用即時通訊工具可建立更統一的組織，並組建士氣（不論位置為何）。
 
 ## <a name="how-we-calculate-the-communication-score"></a>如何計算通訊分數
 
@@ -52,24 +52,24 @@ Microsoft 知道人員有不同的通訊需求。 若要取得問題的快速回
 
 ### <a name="primary-insight"></a>主要洞察力
 
-Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的通訊樣式。 主要的洞察力為您的組織中使用多種模式進行通訊的人員提供度量。
+Microsoft 365 提供多種模式，讓人員可以靈活地滿足每個人的通訊樣式。 主要的洞察力為您的組織中使用多種模式進行通訊的人員提供度量。
 
 :::image type="content" source="../../media/primaryinsight.png" alt-text="主要深入瞭解通訊模式。":::
 
 1. **標頭：** 提供使用一種以上通訊模式之人員的主要指標，亦即：
 
    - 透過 Exchange 傳送電子郵件
-   - 透過小組傳送郵件
-   - 在 Yammer 中發佈社區
+   - 透過 Teams 傳送郵件
+   - 在 Yammer 中的團體張貼
 
-   此項度量會顯示為使用兩個或多個 Exchange、小組或 Yammer 的所有人員的百分比。 
+   此項度量會以所有使用兩個或多個 Exchange、Teams 或 Yammer 的人員所占的百分比顯示。 
 
 2. **Body：** 提供更多關於如何在您的組織中的人員提供通訊模式的彈性的資訊。
 
 3. **目前狀態的視覺效果：**
 
    - 水準條，藍色部分代表標頭中所表示的百分比
-   - 會強調用於計算標頭中所表達百分比的 (分子/分母) ：
+   - 好友動向 (分子/分母) ，用來計算標頭中所表達的百分比：
      - **分子**：過去28天內使用一種以上通訊模式的人員人數
      - **分母**：在過去28天內，標記為啟用多個通訊產品的人員人數
    - 關鍵指標的 **對等基準** 值也會顯示為百分比
@@ -96,26 +96,26 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 
 :::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="![通訊模式明細]。":::
 
-1. **標頭：** 重點在於深入瞭解如何在通訊中所考慮的不同通訊模式之間提供詳細的分析。
+1. **標頭：** 好友動向真知灼見的目標，以提供在通訊中所視為之不同通訊模式的詳細細目。
 
 2. **Body：** 提供使用不同模式共用知識之值的相關資訊。
 
 3. **視覺效果：** 細目分類代表每個模式的使用。 每個條碼的色彩部分和分數都代表以該模式啟用之人員人數的百分比傳送電子郵件、郵件或社區帖子的人數：
 
-   - **發電子郵件的人員：** 彩色部分和分數代表為 Exchange 傳送電子郵件的使用者所啟用的百分比。 這個分數的構造來源如下：
+   - **發電子郵件的人員：** 彩色部分和分數代表為傳送電子郵件的 Exchange 啟用的使用者百分比。 這個分數的構造來源如下：
    
      - **分子**：在過去28天內傳送電子郵件的人員。
-     - **分母**：在過去28天內為 Exchange 啟用人員。
+     - **分母**：在過去28天中 Exchange 啟用的人員。
      
-   - **在 Microsoft 小組中傳送訊息的人員：** 彩色部分和分數代表為 Microsoft 小組傳送郵件而啟用的使用者百分比。 這個分數的構造來源如下：
+   - **在 Microsoft Teams 中傳送郵件的人員：** 彩色部分和分數代表為傳送郵件 Microsoft Teams 啟用的使用者百分比。 這個分數的構造來源如下：
    
-     - **分子**：在過去28天內，在 Microsoft 小組中傳送訊息的人員。
-     - **分母**：在過去28天內為 Microsoft 小組啟用的人員。
+     - **分子**：在過去28天內，在 Microsoft Teams 上傳送郵件的人員。
+     - **分母**：在過去28天中 Microsoft Teams 啟用的人員。
      
    - **社區中的人員張貼：** 彩色部分和分數代表為在社區中張貼的 Yammer 啟用的使用者百分比。 這個分數的構造來源如下：
    
-     - **分子：** 最近28天的 Yammer 社區中的人員張貼。
-     - **分母：** 過去28天內啟用 Yammer 的人員。
+     - **分子：** 過去28天 Yammer 社區中張貼的人員。
+     - **分母：** 過去28天中 Yammer 啟用的人員。
           
 4. **查看相關內容：** 選取此連結可查看排序的影片及其他相關的說明內容。
 
@@ -123,7 +123,7 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 
 :::image type="content" source="../../media/emailmentions.png" alt-text="![包含提及的電子郵件]。":::
 
-1. **標頭：** 會強調在過去28天內，新電子郵件執行緒在包含 @mentions 時，是否要增加回應率。
+1. **標頭：** 好友動向在過去28天內，新電子郵件執行緒在包含 @mentions 時所啟動的回應率增加。
 
 2. **Body：** 提供在電子郵件中使用 @mentions 之值的相關資訊。 此外，使用 @mentions 的人員會以過去28天內已傳送電子郵件的所有使用者的百分比表示。
 
@@ -142,35 +142,35 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 4. **查看相關內容：** 選取此連結可查看排序的影片及其他相關的說明內容。
 
 
-### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>依類型分類的 Microsoft 小組中的訊息
+### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>依輸入 Microsoft Teams 中的郵件明細
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="![小組郵件類型]。":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="![Teams 郵件類型]。":::
 
-1. **標頭：** 會強調以傳送任何類型郵件之人員所占的時間百分比傳送之郵件的人員， (在過去28天內) 加入聊天和通道訊息。
+1. **標頭：** 好友動向以傳送任何類型郵件之人員所占的百分比傳送之郵件的人員， (包含在過去28天內) 聊天和通道郵件。
 
-2. **Body：** 提供在 Microsoft 小組中使用通道訊息的值資訊。
+2. **Body：** 提供在 Microsoft Teams 內使用通道郵件值的資訊。
 
 3. **視覺效果：** 中斷聊天及通道訊息的使用：
 
-      - 傳送 **聊天訊息的人員：** 彩色部分和分數代表在 Microsoft 小組傳送郵件的人內使用聊天訊息。 分數的構造來源如下：
+      - 傳送 **聊天訊息的人員：** 彩色部分和分數代表在 Microsoft Teams 中傳送郵件的人員使用聊天訊息。 分數的構造來源如下：
       
-        - **分子：** 在過去28天內，由 Microsoft 小組傳送聊天訊息的人員。
-        - **分母：** 過去28天內，在 Microsoft 小組中傳送郵件的人員。
+        - **分子：** 在過去28天內，在 Microsoft Teams 上傳送聊天訊息的人員。
+        - **分母：** 在過去28天內，在 Microsoft Teams 上傳送郵件的人員。
         
-      - 傳送 **通道郵件的人員：** 彩色部分和分數代表在 Microsoft 小組傳送郵件的人內使用通道訊息。 分數的構造來源如下：
+      - 傳送 **通道郵件的人員：** 彩色部分和分數代表在 Microsoft Teams 中傳送郵件之人員的通道訊息的使用。 分數的構造來源如下：
       
-        - **分子：** 過去28天內，在 Microsoft 小組中傳送通道郵件的人員。
-        - **分母：** 過去28天內，在 Microsoft 小組中傳送郵件的人員。
+        - **分子：** 在過去28天內，在 Microsoft Teams 上傳送通道郵件的人員。
+        - **分母：** 在過去28天內，在 Microsoft Teams 上傳送郵件的人員。
         
 4. **查看相關內容：** 選取此連結可查看排序的影片及其他相關的說明內容。
 
-### <a name="questions-and-answers-in-yammer"></a>Yammer 中的問題和解答
+### <a name="questions-and-answers-in-yammer"></a>Yammer 的問題和解答
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Yammer 中的問題和解答]"::: 
 
-1. **標頭：** 在 Yammer 上突出顯示標示為「問題」的帖子，其已接收的答案會標示為「最佳答案」，而這是 &quot; &quot; 最近28天內所有標記為 Yammer 問題的文章的百分比。
+1. **標頭：** 好友動向標示為「問題」 Yammer 上的帖子，其已接收的答案標示為「 &quot; 最佳答案」， &quot; 其最後28天內 Yammer 的所有帖子都標示為試題。
 
-2. **Body：** 提供 Yammer 中使用問題和解答的值資訊，以共用知識。
+2. **Body：** 提供有關在 Yammer 中共用知識的問題和解答值的資訊。
 
 3. **視覺效果：** 分解組織中問題和解答功能的使用：
 
@@ -182,7 +182,7 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 應用程式健康情況–技術經驗](apps-health.md) (文章) \
+[Microsoft 365 應用程式健康情況–技術經驗](apps-health.md) (文章) 
 [內容共同作業–人員體驗](content-collaboration.md) (文章) \
 [會議–人員經驗](meetings.md) (文章) \
 [行動–人員體驗](mobility.md) (文章) \

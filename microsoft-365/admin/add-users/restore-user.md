@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 在刪除使用者帳戶後的30天內，您可以還原帳戶和所有資料，而且使用者可以使用相同的帳戶登入。
-ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f849fe8e403aa9a72eccb4dd65665ec9f33618d1
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623818"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779647"
 ---
 # <a name="restore-a-user"></a>還原使用者
    
@@ -38,7 +38,7 @@ ms.locfileid: "52623818"
   
 - 請確定授權可指派給該帳戶。
     
-- 如果貴公司使用 Active Directory，請參閱[如何對 Office 365 中已刪除之使用者帳戶的問題進行疑難排解](/office365/troubleshoot/active-directory/restore-deleted-user-accounts.md)，以取得更多關於還原使用者帳戶的說明。 
+- 如果您的公司使用 Active Directory，針對還原使用者帳戶的 instrutcions，請參閱 how [to 疑難排解 Office 365 中已刪除的使用者帳戶](/office365/troubleshoot/active-directory/restore-deleted-user-accounts)。 
     
 ## <a name="restore-one-or-more-user-accounts"></a>若要還原一或多個使用者帳戶
 
