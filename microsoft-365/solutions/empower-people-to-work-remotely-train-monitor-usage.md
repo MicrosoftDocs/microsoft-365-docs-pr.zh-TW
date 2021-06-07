@@ -1,5 +1,5 @@
 ---
-title: 步驟6：訓練遠端工作者和處理使用上的意見反應
+title: 步驟 6：訓練工作者和處理使用上的意見反應
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 訓練您的使用者，並確保問題獲得快速處理。
-ms.openlocfilehash: 66091269e4bb4844456feac1b8cfa28718b0ca36
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: b6581533983c2e00ab8b29d73326deebda52599f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028920"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788820"
 ---
-# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>步驟6：訓練遠端工作者和處理使用上的意見反應
+# <a name="step-6-train-your-workers-and-address-usage-feedback"></a>步驟 6：訓練工作者和處理使用上的意見反應
 
-訓練您的遠端工作者：
+訓練您的混合式工作者：
 
 - 了解如何使用 MFA 進行正確的登入程序，包括註冊其他驗證方法。
 - 使用裝置，以及如何使用端點管理原則來封鎖不合規或未受管理裝置的存取。
@@ -38,15 +38,15 @@ ms.locfileid: "52028920"
 
 此訓練應該包含實際操作練習，讓工作者可以體驗這些功能及其結果。
 
-為您的遠端工作者建立論壇，用來提出問題或解決問題，例如小組或 Yammer 群組。
+為您的工作者建立論壇，用來提出問題或解決問題，例如小組或 Yammer 群組。
 
 在訓練後的幾週內：
 
-- 在論壇中快速處理遠端工作者的意見反應，並視需要調整您的遠端工作者原則和設定。
+- 在論壇中快速處理工作者的意見反應，並視需要調整您的工作者原則和設定。
 - 分析小組、電子郵件、SharePoint 網站和 OneDrive 資料夾的使用狀況，並將其與您對於使用者採用的預期比較。
 
 然後視需要重新訓練您的使用者。
 
 ## <a name="results-of-step-6"></a>步驟 6 的結果
 
-您的遠端工作者已受過訓練，其可以在會有人回應且公開的論壇中提供意見反應，並發表與遠端存取和生產力應用程式有關的問題。
+您的混合式工作者已受過訓練，他們可以在會有人回應且公開的論壇中提供意見反應，並發表與安全性、合規性、遠端存取和生產力應用程式有關的問題。

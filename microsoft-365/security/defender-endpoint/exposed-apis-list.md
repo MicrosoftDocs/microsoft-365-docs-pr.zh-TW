@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f7a620ad56496b1a26e193a18fa93f4d217431df
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 63e38d5c9cfe50d1fa4cda1f7ae9c7df55a45083
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684144"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788832"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>受支援的適用於端點的 Microsoft Defender API
 
@@ -61,7 +62,7 @@ ms.locfileid: "52684144"
 :---|:---
 [進階搜捕](run-advanced-query-api.md) | 從 API 執行查詢。
 [警示方法和屬性](alerts.md) | 執行 API 通話（如 \- 取得提醒、建立警示、更新警示等等）。
-[匯出每台裝置的評估方法和屬性](get-assessmnt-1methods-properties.md) | 執行 API 通話，例如 \- 匯出安全設定評估、匯出軟體清查評估，以及匯出軟體漏洞評估。
+[匯出每台裝置的評估方法和屬性](get-assessment-methods-properties.md) | 執行 API 通話，例如 \- 匯出安全設定評估、匯出軟體清查評估，以及匯出軟體漏洞評估。
 [自動化調查方法和屬性](investigation.md) | 執行 API 通話（如 \- 取得調查的集合）。
 [取得網域相關警示](get-domain-related-alerts.md) | 執行 API 通話，例如 \- 取得與網域相關的裝置、網域統計資料等等。
 [檔案方法和屬性](files.md) | 執行 API 通話，例如 \- get file information、file 相關的警示、檔相關的裝置及檔案統計資料。

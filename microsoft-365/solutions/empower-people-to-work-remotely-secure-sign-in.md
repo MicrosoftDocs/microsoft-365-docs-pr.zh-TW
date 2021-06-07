@@ -1,5 +1,5 @@
 ---
-title: 步驟 1： 使用 MFA 提升遠端工作者的登入安全性
+title: 步驟 1： 使用 MFA 提升混合式工作者的登入安全性
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,21 +16,21 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: 您的遠端工作者必須使用多重要素驗證 (MFA) 來登入。
-ms.openlocfilehash: 1c69f2ee7520a554a726bc0ffd9e2d7ebca64261
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: 您的混合式工作者必須使用多重要素驗證 (MFA) 來登入。
+ms.openlocfilehash: 105c2f7170b4bea648427b0fda57ad081cb99a86
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028965"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788954"
 ---
-# <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步驟 1： 使用 MFA 提升遠端工作者的登入安全性
+# <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>步驟 1。 使用 MFA 提升混合式工作者的登入安全性
 
-若要提升遠端工作者的登入安全性，請使用多重要素驗證 (MFA)。 MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗證規定。 惡意使用者即使確定了使用者帳戶的密碼，還必須能夠回應另外的驗證機制 (例如，傳送至智慧型手機的簡訊)，才能獲得存取權。
+若要提升混合式工作者的登入安全性，請使用多重要素驗證 (MFA)。 MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗證規定。 惡意使用者即使確定了使用者帳戶的密碼，還必須能夠回應另外的驗證機制 (例如，傳送至智慧型手機的簡訊)，才能獲得存取權。
 
 ![正確的密碼加上其他驗證則可導致順利登入](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-Microsoft 強烈建議包括遠端工作者 (特別是系統管理員) 在內的所有使用者都使用 MFA。
+Microsoft 強烈建議包括混合式工作者 (尤其是系統管理員) 在內的所有使用者都使用 MFA。
 
 根據您的 Microsoft 365 方案，您有三種方法可以要求使用者使用 MFA。
 
@@ -101,7 +101,7 @@ Azure AD Identity Protection 需有已附加在 Microsoft 365 E5 中的 Azure AD
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>使用 Azure AD 登入 SaaS 應用程式
 
-除了為使用者提供雲端驗證之外，Azure AD 也可以是您保護所有應用程式 (無論是內部部署、位於 Microsoft 雲端或其他雲端) 的核心方式。 透過[將您的應用程式整合到 Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration)，您可以輕鬆地讓遠端工作者探索所需的應用程式，並安全地登入這些應用程式。
+除了為使用者提供雲端驗證之外，Azure AD 也可以是您保護所有應用程式 (無論是內部部署、位於 Microsoft 雲端或其他雲端) 的核心方式。 透過[將您的應用程式整合到 Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration)，您可以輕鬆地讓混合式工作者探索所需的應用程式，並安全地登入這些應用程式。
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>適用於 MFA 和身分識別的系統管理員技術資源
 

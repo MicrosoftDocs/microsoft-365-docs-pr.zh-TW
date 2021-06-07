@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何為小組部署高敏感度資料保護。
-ms.openlocfilehash: 7c5485a008434b351eebbec3ea1f20b10d82278a
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583685"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788352"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>為小組設定高敏感度資料保護
 
@@ -38,6 +38,13 @@ ms.locfileid: "52583685"
 - 限制更多的預設共用連結類型
 - 只有小組擁有者可以建立私人頻道。
 - 已關閉相關聯 SharePoint 網站的存取要求。
+
+## <a name="video-demonstration"></a>影片示範
+
+請觀看這段影片，以取得本文所述程序的逐步解說。
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NzI7]
 
 ## <a name="guest-sharing"></a>來賓共用
 

@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: db4682d0d2fccd7504eb46d9099a9783408cfb73
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: dd9def688619b6079d947cb76069aa0f77d768de
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570933"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772302"
 ---
 # <a name="get-device-secure-score"></a>取得裝置安全分數
 
@@ -32,7 +33,7 @@ ms.locfileid: "51570933"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -58,7 +59,7 @@ GET /api/configurationScore
 
 ## <a name="request-headers"></a>要求標頭
 
-名稱 | 類型 | 說明
+名稱 | 類型 | 描述
 :---|:---|:---
 授權 | 字串 | 載荷 {token}。 **必要欄位**。
 
@@ -95,6 +96,6 @@ GET https://api.securitycenter.microsoft.com/api/configurationScore
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Microsoft Defender for Endpoint OData 查詢](exposed-apis-odata-samples.md)

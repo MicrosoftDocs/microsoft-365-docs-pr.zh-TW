@@ -6,19 +6,19 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.reviewer: dansimp
 ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: ee8e7be20076bde41867981008e53a70c134e47e
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 47eb80af58c948db5997dc9f5edfa5737a796837
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893691"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772362"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>使用裝置控制來保護貴組織的資料
 
@@ -39,11 +39,11 @@ Microsoft Defender for Endpoint device control：透過監視和控制組織中�
 審核事件包括：
 
 - **USB 磁片磁碟機裝載和卸載：** 在裝載或卸下 USB 磁片磁碟機時所產生的審計事件。
-- **PnP：** 「隨插即用」審核事件會在連線儲存裝置、印表機或藍牙媒體連線時產生。
+- **PnP：**「隨插即用」審核事件會在連接可移動儲存裝置、印表機或藍牙媒體時產生。
 
 ## <a name="monitor-device-control-security"></a>監視裝置控制安全性
 
-Microsoft Defender for Endpoint 中的裝置控制可讓安全性管理員使用工具，透過報告追蹤組織的裝置控制安全性。 您可以在 Microsoft 365 的「安全性中心」找到「裝置控制」報告， **> 裝置保護**。
+Microsoft Defender for Endpoint 中的裝置控制可讓安全性管理員使用工具，透過報告追蹤組織的裝置控制安全性。 您可以移至 **報告 > 裝置保護**，在 Microsoft 365 的安全性中心找到 [裝置控制] 報告。
 
 在 [ **報告** ] 儀表板上的裝置保護卡會顯示媒體類型所產生的審計事件數目（過去180天內）。
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 設定遠端工作基礎結構。
+title: 使用 Microsoft 365 設定混合式工作基礎結構。
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -18,27 +18,27 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 keywords: 在家工作、混合式、遠端工作者、混合式工作、遠端員工、混合式連線、遠端存取、遠距工作、行動工作、遠端工作、隨處工作、彈性工作場所
-description: 逐步執行基礎結構層，讓遠端工作者可以安全地存取內部部署和 Microsoft 365 資源。
-ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 逐步執行基礎結構層，讓混合式工作者可以安全地存取內部部署和 Microsoft 365 資源。
+ms.openlocfilehash: 55f1cf5c922166e1fe3932b6fe89fbdfcbfba466
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246317"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788853"
 ---
-# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>使用 Microsoft 365 設定遠端工作基礎結構。
+# <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>使用 Microsoft 365 設定混合式工作基礎結構。
 
-若要保護及優化遠端工作者的生產力和共同作業，您必須設定 IT 和雲端基礎結構，以啟用遠端工作，並提供貴組織內部部署和雲端式資訊、工具和資源的存取權。 此解決方案會執行重要基礎結構層部署的步驟，讓您的工作者無論身在何處，都能夠完成最佳工作。
+若要保護及最佳化工作者的生產力和共同作業，您必須允許現場和遠端工作者能輕鬆而安全地存取貴組織的內部部署和雲端式資訊、工具和資源。 此解決方案會執行重要基礎結構層部署的步驟，讓您的工作者無論身在何處，都能夠完成最佳工作。
 
-允許員工遠端辦公對許多組織達到以下目的非常重要:
+混合式工作者可以在現場或不同地點的遠端工作。 允許員工在辦公室以外的地點工作對許多組織的以下目的非常重要:
 
+- 雇用並保留不想搬家或需要彈性工作環境的員工。
+- 縮短工作人員的通勤時間，讓他們有更多時間來提高生產力，並在下班後從事能放鬆壓力的活動。
 - 節省辦公室空間。
-- 聘用並留住不願意調派的工作人員。
-- 縮短工作人員的通勤時間，讓他們有更多時間來提高生產力，並在下班後放鬆壓力。
 
-Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
+Microsoft 365 具備讓您的混合式工作者能夠在現場或遠端工作的功能。
 
-![使用 Microsoft 365 強化您的遠端工作人員](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
+![使用 Microsoft 365 強化您的混合式工作者的能力](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 >[!Note]
 >如果您是 Microsoft 365 新使用者，請參閱[這些資源](https://www.microsoft.com/microsoft-365)。
@@ -49,11 +49,11 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-為了讓管理現場和雲端式基礎結構的 IT 專業人員能夠實現工作者生產力，此解決方案提供下列重要功能：
+為了讓管理現場和雲端式基礎結構的 IT 專業人員能夠實現混合式工作者生產力，此解決方案提供下列重要功能：
 
 - 連接
 
-  遠端工作人員必須能夠隨時隨地存取： 
+  工作者必須能夠隨時隨地都能存取： 
 
   - 您的 Microsoft 365 訂閱中的雲端服務和資料。 
 
@@ -65,11 +65,11 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 - 受管理
 
-  您可以透過安全性設定、允許的應用程式和對系統健康的符合要求以雲端來管理您的遠端工作人員的裝置。
+  您可以透過安全性設定、允許的應用程式和要求系統運作狀態符合要求來從雲端管理您的混合式工作者的裝置。
 
 - 共同作業和生產力
 
-  透過以下高度協作的方式，您的遠端工作人員可以像在內部部屬工作時一樣高效:
+  透過以下高度共同作業的方式，您的混合式工作者可以像在內部部署工作時一樣高效:
 
   - 以 Teams 進行線上會議和聊天會話。 
 
@@ -79,9 +79,9 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 若要取得無縫登入體驗，您的內部部署 Active Directory 網域服務 (AD DS) 使用者帳戶應與 Azure Active Directory (Azure AD) 同步處理。 為了保護您的 Windows 10 裝置，應在 Intune 中註冊。 以下是基礎結構的高階檢視。
 
-![適用於使用 Microsoft 365 之遠端工作者的基本基礎結構](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![適用於使用 Microsoft 365 之混合式工作者的基本基礎結構](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-若要為您的遠端工作者啟用 Microsoft 365 的功能，請使用這些 Microsoft 365 功能。
+若要為您的混合式工作者啟用 Microsoft 365 的功能，請使用這些 Microsoft 365 功能。
 
 | 功能 | 描述 | 授權 |
 |:-------|:-----|:-------|
@@ -103,13 +103,13 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 如需安全性與合規性準則，請參閱[為遠端工作者部署安全性與合規性](empower-people-to-work-remotely-security-compliance.md)。
 
-<a name="poster"></a> 如需這份解決方案的2頁摘要，請參閱 [[強化遠端工作人員] 海報](../downloads/empower-remote-workers.pdf)。
+<a name="poster"></a>如需這份解決方案的 2 頁摘要，請參閱[強化混合式工作者能力的海報](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)。
 
-[![強化遠端工作人員海報](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
+[![強化混合式工作者能力的海報](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
-您也可以以 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) 或 [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) 格式下載此海報，然後使用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
+您也可以用 [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
 
-## <a name="provide-remote-working-for-all-of-your-workers"></a>為您所有的員工提供遠端工作能力
+## <a name="provide-hybrid-working-for-all-of-your-workers"></a>為您所有的員工提供混合式工作能力
 
 您可以使用這些設備使您的所有員工在任何地方都能保持生產力：
 
@@ -119,15 +119,15 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 ## <a name="next-steps"></a>後續步驟
 
-使用下列步驟以保護和最佳化對組織的伺服器和雲端服務的存取，並將遠端工作者的生產力提升至最大。
+使用下列步驟以保護和最佳化對組織的伺服器和雲端服務的存取，並將混合式工作者的生產力提升至最大。
 
 1. [使用 MFA 提升登入安全性](empower-people-to-work-remotely-secure-sign-in.md)
 2. [可遠端存取內部部署應用程式和服務](empower-people-to-work-remotely-remote-access.md)
 3. [部署安全性與合規性服務](empower-people-to-work-remotely-security-compliance.md)
 4. [為您的裝置、電腦和其他端點部署端點管理](empower-people-to-work-remotely-manage-endpoints.md)
-5. [部署遠端工作者生產力應用程式和服務](empower-people-to-work-remotely-teams-productivity-apps.md)
-6. [訓練遠端工作者和處理使用上的意見反應](empower-people-to-work-remotely-train-monitor-usage.md)
+5. [部署混合式工作者生產力應用程式和服務](empower-people-to-work-remotely-teams-productivity-apps.md)
+6. [訓練工作者和處理使用上的意見反應](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![使用 Microsoft 365 設定遠端工作基礎結構的步驟](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![使用 Microsoft 365 設定混合式工作基礎結構的步驟](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-若要了解虛構但有代表性的多國組織如何設定其遠端工作基礎結構，請參閱 [針對遠端和辦公室工作的 Contoso COVID-19 回應和基礎架構](contoso-remote-onsite-work.md)。
+若要了解虛構但有代表性的多國組織如何設定其混合式工作基礎結構，請參閱[針對混合式工作的 Contoso COVID-19 回應和基礎架構](contoso-remote-onsite-work.md)。

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 及 OneDrive 中啟用 Word、Excel 和 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 16186bd1e5c4cd2ca5b1ccd81c24ec81bfd33597
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 8007f085e7bcba7f055f616954e2f0549f6f125a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684024"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770394"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -87,6 +87,8 @@ ms.locfileid: "52684024"
     - **使用雙重金鑰加密** 已選取。
     
     針對具有上述任何加密設定的標籤，Office 網頁版中不會向使用者顯示標籤。 此外，新功能也無法與已有這些加密設定的已標記檔一起使用。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
+
+- 基於效能考慮，當您將檔上傳或儲存至 SharePoint，而且檔案卷標不會套用加密時，文件庫中的「**敏感度**」欄可能需要一段時間來顯示標籤名稱。 當您使用依賴此欄中標籤名稱的腳本或自動化時，此延遲中的因素。
 
 - 使用者可能會在下列另存為案例中體驗開啟加密檔的延遲：使用桌上出版本的 Office，使用者選擇 [另存新檔]，以用於具有敏感度標籤以套用加密的檔。 使用者會選取位置的 SharePoint 或 OneDrive，然後立即嘗試在 Office 網頁版中開啟該檔。 如果服務仍在處理加密，使用者會看到一則訊息，指出必須在其桌面應用程式中開啟檔。 如果他們幾分鐘後再試一次，則會在 Office 網頁版中成功開啟檔。 
 
@@ -169,7 +171,8 @@ ms.locfileid: "52684024"
 
 1. 使用 Microsoft 365 中具有全域管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
     
-    附注：如果您有 Microsoft 365 多地理位置，請搭配[Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice)使用-Url 參數，並為其中一個地理位置指定 SharePoint 的線上管理中心網站 Url。
+    > [!NOTE]
+    > 如果您有 Microsoft 365 多地理位置，請搭配[Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice)使用-Url 參數，並為其中一個地理位置指定 SharePoint 的線上管理中心網站 Url。
 
 2. 執行下列命令，然後按 **Y** 確認：
 

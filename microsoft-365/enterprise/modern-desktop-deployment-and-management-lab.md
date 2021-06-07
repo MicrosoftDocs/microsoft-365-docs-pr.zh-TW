@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: da51e0e3509ac2be60b9961dc2a0532d29f4f137
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736345"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770670"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 和 Office 365 部署實驗室套件
 
@@ -28,7 +28,7 @@ Windows 10 和 Office 365 部署實驗室套件的設計目的是協助您規劃
 
 強烈建議使用此套件準備 Windows 8.1 升級為 Windows 10 的組織。 如果您目前使用 Windows 10、Microsoft 365 Apps 企業版 (先前 Office 365 專業增強版) 或 Office 2019，也會套用這種方式。 在隔離環境中，產生的實驗室非常適合用來探索部署工具的更新，並測試部署相關的自動化。
 
-[下載 Windows 和 Office 部署的 Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
+[下載 Windows 10 和 Office 365 部署實驗室套件](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
 ## <a name="a-complete-lab-environment"></a>完整的實驗室環境
 
@@ -36,7 +36,7 @@ Windows 10 和 Office 365 部署實驗室套件的設計目的是協助您規劃
 
   - 新增！ Windows 10 企業版，版本21H1
   - Windows 7 企業版
-  - 新增！ Microsoft Endpoint Configuration Manager，版本 2103 *
+  - 新增！ Microsoft Endpoint Configuration Manager，版本2103
   - Windows Assessment and Deployment Kit for Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)

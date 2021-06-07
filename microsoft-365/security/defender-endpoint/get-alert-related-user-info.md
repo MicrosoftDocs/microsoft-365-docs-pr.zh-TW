@@ -1,5 +1,5 @@
 ---
-title: 取得警示相關的使用者資訊
+title: 取得警示相關使用者資訊
 description: 瞭解如何使用 [取得警示相關的使用者資訊 API]，在 Microsoft Defender for Endpoint 中取得與特定警示相關的使用者。
 keywords: api、graph api、支援的 api、get、警示、資訊、相關的使用者
 search.product: eADQiWindows 10XVcnh
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: aee3c6fb381341c6823fbcb6766c0b761cb3413d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e895885a638c60a845ed4857c682cd472e42615c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166415"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772314"
 ---
 # <a name="get-alert-related-user-information-api"></a>取得與提醒相關的使用者資訊 API
 
@@ -31,7 +32,7 @@ ms.locfileid: "51166415"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,8 +53,8 @@ ms.locfileid: "51166415"
 
 許可權類型 |   權限  |   許可權顯示名稱
 :---|:---|:---
-應用程式 |   已讀取的使用者。所有 | 「讀取使用者設定檔」
-委派 (工作或學校帳戶)  | 已讀取的使用者。所有 | 「讀取使用者設定檔」
+應用程式 |   User.Read.All | 「讀取使用者設定檔」
+委派 (工作或學校帳戶)  | User.Read.All | 「讀取使用者設定檔」
 
 >[!Note]
 > 使用使用者認證取得權杖時：

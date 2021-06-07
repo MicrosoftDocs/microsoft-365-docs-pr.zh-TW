@@ -1,7 +1,7 @@
 ---
-title: 依建議列出弱點
+title: 根據建議列出弱點
 description: 會檢索與安全性建議相關的漏洞清單。
-keywords: api、graph api、支援的 api、get、隱患清單、安全性建議、弱點的安全性建議、威脅及弱點管理、威脅和弱點管理 api
+keywords: api、graph api、支援的 api、get、隱患清單、安全性建議、弱點的安全性建議、威脅與弱點管理威脅與弱點管理 api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,20 +14,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b41ee2886d758ab0ab70b78ee6d6d863d0d482a7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 8fc9bb53fd2cfe768710129704c13ee751a695a2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198598"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770442"
 ---
-# <a name="list-vulnerabilities-by-recommendation"></a>依建議列出弱點
+# <a name="list-vulnerabilities-by-recommendation"></a>根據建議列出弱點
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何為團隊部署高敏感性資料保護。
-ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583649"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788339"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>為團隊設定高敏感性資料保護
 
@@ -32,7 +32,14 @@ ms.locfileid: "52583649"
 
 - 適用於團隊的敏感度標籤可讓您開啟或關閉來賓共用，並將未受管理裝置的 SharePoint 內容存取權限制為僅限網頁。此標籤也可用來分類檔案。
 - 限制更多的預設共用連結類型
-- 只有團隊擁有者可以建立私人頻道。
+- 只有小組擁有者可以建立私人頻道。
+
+## <a name="video-demonstration"></a>影片示範
+
+請觀看這段影片，以取得本文所述程序的逐步解說。
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NMS6]
 
 ## <a name="guest-sharing"></a>來賓共用
 

@@ -1,7 +1,7 @@
 ---
 title: 取得已安裝的軟體
 description: 會檢索與指定裝置識別碼相關的已安裝軟體的集合。
-keywords: api，graph api，支援的 api，get，list，file，information，軟體清查，每個裝置的已安裝軟體，威脅 & 漏洞管理 api，Microsoft Defender for Endpoint tvm api
+keywords: api，graph api，支援的 api，get，list，file，information，軟體清查，每個裝置的已安裝軟體，威脅 & 弱點管理 api，Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: ebd689fd53dd804f857c6bec7a412c27988835d0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 35cbeedc5d13f5eeb99718b4f98e2d8aabe1e965
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935098"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770154"
 ---
 # <a name="get-installed-software"></a>取得已安裝的軟體
 
@@ -100,7 +101,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [風險威脅 & 弱點管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [威脅 & 弱點軟體清單](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)

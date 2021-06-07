@@ -18,12 +18,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何查看和設定全域設定 (「封鎖下列 URLs」清單和保護 Office 365 應用程式) 以取得 Office 365 的 Microsoft Defender 中的安全連結。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 11544953bf348c47e697b3210da709cccdb31a7e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 623b1bcd670f42c7c6b49c06cacfa31cb8adfd49
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245837"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52792989"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>設定 Office 365 的 Microsoft Defender 中安全連結的全域設定
 
@@ -45,13 +45,13 @@ ms.locfileid: "52245837"
 - **封鎖下列 URLs** 清單。 此設定會套用至所有作用中安全連結原則中包含的所有使用者。 如需詳細資訊，請參閱 [安全連結的「封鎖下列 URLs」清單。](safe-links.md#block-the-following-urls-list-for-safe-links)
 - Office 365 應用程式的安全連結保護。 不管使用者是否包含在使用中的安全連結原則中，這些設定適用于已授權 Office 365 Defender 的組織中的所有使用者。 如需詳細資訊，請參閱[Office 365 應用程式的安全連結設定](safe-links.md#safe-links-settings-for-office-365-apps)。
 
-您可以在 [安全性 & 合規性中心] 或 [PowerShell (Exchange Online PowerShell] 中設定全域安全性連結設定，以在 Microsoft 365 中使用信箱的合格 Exchange Online 組織。組織的獨立 EOP PowerShell，但沒有 Exchange Online 信箱，但使用 Microsoft Defender Office 365 附加元件訂閱) 。
+您可以在「Microsoft 365 安全性中心」或「PowerShell (Exchange Online PowerShell 中設定全域的 [安全連結] 設定，以 Microsoft 365 中具有信箱的合格 Exchange Online 組織;組織的獨立 EOP PowerShell，但沒有 Exchange Online 信箱，但使用 Microsoft Defender Office 365 附加元件訂閱) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 沒有內建或預設的安全連結原則，因此您必須建立至少一個安全連結原則，讓 **封鎖下列 URLs** 清單成為作用中的專案。 如需相關指示，請參閱[為 Office 365 設定 Microsoft Defender 中的安全連結原則](set-up-safe-links-policies.md)。
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **安全連結** ] 頁面，請使用 <https://protection.office.com/safelinksv2> 。
+- 您可以開啟安全性中心，網址為 <https://security.microsoft.com/>。 若要直接移至 [ **安全連結** ] 頁面，請使用 <https://security.microsoft.com/safelinksv2> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -72,17 +72,17 @@ ms.locfileid: "52245837"
 
 - [新功能會連續新增至 Microsoft Defender 以供 Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 新增新功能時，您可能需要調整現有的安全連結原則。
 
-## <a name="configure-the-block-the-following-urls-list-in-the-security--compliance-center"></a>在安全性 & 規範中心設定「阻止下列 URLs」清單
+## <a name="configure-the-block-the-following-urls-list-in-the-security-center"></a>設定 [安全性中心] 中的「封鎖下列 URLs」清單
 
 **Block 下列 URLs** 清單會識別在支援的應用程式中，安全連結掃描時，應攔截的連結。 如需詳細資訊，請參閱 [安全連結的「封鎖下列 URLs」清單](safe-links.md#block-the-following-urls-list-for-safe-links)。
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]，然後按一下 [ **通用設定**]。
+1. 在 [安全性中心] 中，移至 [**電子郵件 & 協同** 原則] \> **& 規則** \> **威脅原則** 原則] \> 區段 \> **安全連結**。
 
-2. 在 **您的組織的安全連結原則** 中，會出現 [飛出]，請移至 [ **封鎖下列 URLs] 方塊** 。
+2. 在 [ **安全連結** ] 頁面上，按一下 [ **通用設定**]。 在 **您的組織的安全連結原則** 中，會出現 [飛出]，請移至 [ **封鎖下列 URLs] 方塊** 。
 
 3. 設定一或多個專案，如 ["封鎖下列 URLs 的專案語法](safe-links.md#entry-syntax-for-the-block-the-following-urls-list)中所述] 清單。
 
-   完成後，點擊 **[儲存]**。
+   完成後，按一下 ****[儲存]。
 
 ### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>設定 PowerShell 中的「封鎖下列 URLs」清單
 
@@ -117,21 +117,21 @@ ms.locfileid: "52245837"
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
 
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center"></a>在安全性 & 規範中心內設定 Office 365 應用程式的安全連結保護
+## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security-center"></a>設定安全中心的 Office 365 應用程式的安全連結保護
 
 Office 365 應用程式的安全連結保護功能適用于支援的 Office 桌面、行動裝置及 web 應用程式中的檔。 如需詳細資訊，請參閱[Office 365 應用程式的安全連結設定](safe-links.md#safe-links-settings-for-office-365-apps)。
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]，然後按一下 [ **通用設定**]。
+1. 在 [安全性中心] 中，移至 [**電子郵件 & 協同** 原則] \> **& 規則** \> **威脅原則** 原則] \> 區段 \> **安全連結**。
 
-2. 在已出現之 **組織的安全連結原則** 中，在 [電子郵件] 區段中，設定套用 **至內容的設定** 中的下列設定：
+2. 在 [ **安全連結** ] 頁面上，按一下 [ **通用設定**]。 在已出現之 **組織的安全連結原則** 中，在 [**支援的 Office 365 應用程式**] 區段中，設定套用至內容的設定中的下列設定：
 
-   - **Office 365 應用程式**：驗證切換是否為支援支援的 Office 365 應用程式的安全連結： ![ 開啟開啟 ](../../media/scc-toggle-on.png) 。
+   - **在 Office 365 應用程式中使用安全連結**：確認已啟用支援 Office 365 應用程式的安全連結的切換功能： ![ 開啟開啟] ](../../media/scc-toggle-on.png) 。
 
-   - **當使用者按一下安全連結時，請勿追蹤**：將切換移至左側，以追蹤在支援的 Office 365 應用程式中，與封鎖的 URLs 相關的使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
+   - **當使用者在 Office 365 應用程式中按下受保護的連結時，請勿追蹤**：將切換移至左側以追蹤與受支援 Office 365 應用程式中封鎖 URLs 相關的使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
 
-   - **請勿讓使用者點擊 [安全連結] 原始 URL**：確認切換是向右，以防止使用者在支援的 Office 365 應用程式中，按一下原始封鎖的 URL：開啟開啟] ![ ](../../media/scc-toggle-on.png) 。
+   - **請勿讓使用者在 Office 365 應用程式中，按原始 URL**：確認切換是向右，以防止使用者在支援的 Office 365 應用程式中按一下原始的封鎖 url：開啟開啟] ![ ](../../media/scc-toggle-on.png) 。
 
-   完成後，點擊 **[儲存]**。
+   完成後，按一下 ****[儲存]。
 
 ### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>針對 PowerShell 中的 Office 365 應用程式設定安全連結保護
 
@@ -157,7 +157,7 @@ Set-AtpPolicyForO365 -TrackClicks $true
 
 若要確認您是否已成功設定安全連結的全域設定 (**封鎖下列 URLs** 清單和 Office 365 應用程式保護設定) ，請執行下列任一步驟：
 
-- 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]，按一下 [ **通用設定**]，然後確認 [飛出] 中顯示的設定。
+- 在 [安全性中心] 中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **安全連結** \> 按一下 [**通用設定**]，然後確認 [飛出] 中顯示的設定。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，執行下列命令並確認設定：
 

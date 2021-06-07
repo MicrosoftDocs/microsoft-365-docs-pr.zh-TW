@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 0324f988402d407e30d10a725aa5acebb0a69964
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107635"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788391"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
@@ -132,21 +132,19 @@ ms.locfileid: "52107635"
 > [!WARNING]
 > 此設定目前有已知的限制，其中當您所選的敏感性資訊類型有相符的項目時，所有未標記的電子郵件都必須套用選取的保留標籤。 例如，即使您將自動套用原則限定為特定的使用者，或是選取 Exchange 原則以外的位置，但一旦有相符的項目時，標籤就會套用到未標記的電子郵件。
 
-當您為敏感性資訊建立自動套用保留標籤原則時，系統會顯示與建立資料外洩防護 (DLP) 原則時相同的原則範本清單。 每個範本預設會尋找特定類型的敏感性資訊。 例如，此處顯示的範本從 **隱私權** 類別中查找美國 ITIN、SSN 和護照號碼，以及 **美國個人識別資訊 (PII) 資料** 範本：
+當您為敏感性資訊建立自動套用保留標籤原則時，系統會顯示與建立資料外洩防護 (DLP) 原則時相同的原則範本清單。 每個範本預設會尋找特定類型的敏感性資訊。 在下列範例中，敏感性資訊類型來自 **隱私權** 類別，以及 **美國個人識別資訊 (PII) 資料** 範本：
 
 ![敏感資訊類型的原則範本](../media/sensitive-info-configuration.png)
 
 了解有關敏感性資訊類型的更多資訊，請參閱[敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)。 目前 [精確資料比對](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 和 [文件指紋](document-fingerprinting.md) 在此案例中不支援。
 
-選取原則範本後，可以新增或移除任何類型的敏感性資訊，且可以變更執行個體計數和比對精確度。在接下來顯示的範例螢幕擷取畫面中，只有符合以下條件時，才會自動套用保留標籤：
+選取原則範本後，可以新增或移除任何類型的敏感性資訊，且可以變更信賴等級和執行個體計數。在前一個範例螢幕擷取畫面中，已變更這些選項，因此只有符合以下條件時，才會自動套用保留標籤：
   
-- 系統偵測到之機密資訊類型的比對精確度 (或信賴區間) 至少會有 75。 許多機密資訊類型是與多個合作夥伴所定義；比對精確度越高的模式需要更多證據 (例如關鍵字、日期或地址)，比對精確度越低的模式則需要較少證據。 **最小** 比對精確度越低，內容就越容易與條件相符。
+- 偵測到的敏感性資訊類型中的兩種具有至少 **中信賴等級** 的比對精確度 (或 [信賴等級](sensitive-information-type-learn-about.md#more-on-confidence-levels))，而一個為 **高信賴等級**。 許多機密資訊類型是與多個合作夥伴所定義；比對精確度越高的模式需要更多證據 (例如關鍵字、日期或地址)，比對精確度越低的模式則需要較少證據。 信賴等級越低，內容就越容易符合條件，但可能會產生更多誤判。
 
-- 內容包含 1 到 9 個以下三種機密資訊類型其中之一的執行個體。 您可以删除 **to** 值，使其更改為 **任何**。
+- 內容包含 1 到 9 個以下三種敏感性資訊類型其中之一的執行個體。 **至** 的預設值為 **Any**。
 
 有關這些選項的更多資訊，請參閱 DLP 檔案中的以下指導方針[調整規則以讓它們更容易更難符合](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
-    
-![用於識別敏感性資訊類型的選項](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
 
 在使用敏感性資訊類型以自動套用保留標籤時，請考慮下列事項：
 

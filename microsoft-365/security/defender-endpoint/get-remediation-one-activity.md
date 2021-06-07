@@ -1,5 +1,5 @@
 ---
-title: 根據識別碼取得一個補救活動
+title: 依識別碼取得一個修復活動
 description: 傳回指定之修復活動的資訊。
 keywords: api，修正，修正 api，get，修正任務，依識別碼修正
 search.product: eADQiWindows 10XVcnh
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: e0f68e8a28b302f0ae1ca06a2f892fea38a219b2
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c2b7afef2c090df709f9209f450d8d3aab0424bf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244440"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772146"
 ---
-# <a name="get-one-remediation-activity-by-id"></a>根據識別碼取得一個補救活動
+# <a name="get-one-remediation-activity-by-id"></a>依識別碼取得一個修復活動
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -138,7 +139,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 } 
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [修正方法和屬性](get-remediation-methods-properties.md)
 

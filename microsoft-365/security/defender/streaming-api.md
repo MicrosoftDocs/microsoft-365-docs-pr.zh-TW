@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 21a83c4876a90a231eb2a78d10a290be2dca2fa0
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fad3dd64c9acf079bd8da778d417240c44031569
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782474"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772438"
 ---
 # <a name="streaming-api"></a>流式處理 API
 
@@ -34,7 +34,7 @@ ms.locfileid: "52782474"
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>在事件中心和/或 Azure 儲存體帳戶中傳輸高級搜尋事件。
 
-Microsoft 365Defender 可透過[高級搜尋](../defender/advanced-hunting-overview.md)向[事件中樞](/azure/event-hubs/)和/或[Azure 儲存體帳戶](/azure/event-hubs/)支援流式處理事件。
+Microsoft 365Defender 支援透過[Advanced 搜尋](../defender/advanced-hunting-overview.md)向[事件中樞](/azure/event-hubs/)和/或[Azure 儲存體帳戶](/azure/event-hubs/)，處理所有可用的事件。
 
 
 

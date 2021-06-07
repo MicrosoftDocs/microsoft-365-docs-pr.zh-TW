@@ -1,7 +1,7 @@
 ---
 title: 依軟體識別碼取得遺失的 Kb
 description: 依軟體識別碼檢索遺失的安全性更新
-keywords: api，graph api，支援的 api，get，list，file，information，軟體識別碼，威脅 & 漏洞管理 api，Microsoft Defender for Endpoint tvm api
+keywords: api，graph api，支援的 api，get，list，file，information，軟體識別碼，威脅 & 弱點管理 api，Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 25ac8ce2c9fb17b2576f86dae1da984865b19018
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: d9218ad447f926f0086801036277323e7c1efb4c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933886"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770556"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>依軟體識別碼取得遺失的 Kb
 

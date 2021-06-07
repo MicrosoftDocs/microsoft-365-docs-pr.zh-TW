@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 microsoft cloud 德國移動 (microsoft cloud Deutschland) 以 Office 365 新德文 datacenter 區域中的服務的準備工作。
-ms.openlocfilehash: 66f23d33e9e55c432c33e9d90549d33ea42536db
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 244a784b0e28f9d5629f5af242a6cf8227abdb01
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651017"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770371"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的預先遷移活動
 
@@ -98,16 +98,12 @@ OCCT 可在任何時間，在階段9之前部署在 Windows 用戶端上。 [！
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
 
-<!-- before phase 4 -->
-
 **適用于**：使用 AD FS 內部部署的客戶，以驗證連接至 Microsoft Office 365 的使用者<br>
-套用 **時**：第4階段之前的任何時間
+套用 **時**：第2階段之前的任何時間
 
 讀取及套用 [ADFS 遷移步驟](ms-cloud-germany-transition-add-adfs.md)
 
 ## <a name="sharepoint-online"></a>SharePoint Online
-
-<!-- before phase 4 -->
 
 **適用于**：使用 SharePoint 2013 內部部署的客戶<br>
 套用 **時**：第4階段之前的任何時間
