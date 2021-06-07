@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 48d299f2318b0a1be251132a4b50a333a1a0c7a8
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e25fab99718c791c64b583283237815736c450ae
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782954"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793181"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中設定自動化調查和回應功能
 
@@ -74,7 +74,7 @@ Office 365 中的安全性設定可協助保護電子郵件和內容。 若要�
 1. 在 Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) 中，移至 [原則] **& 規則** \> **威脅原則**。
 2. 請確定已設定下列所有原則。 若要取得説明和建議，請參閱 [防止威脅](/microsoft-365/security/office-365-security/protect-against-threats)。
    - [反惡意程式碼](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-   - [防網路釣魚](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [防網路釣魚](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
    - [安全附件](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [安全連結](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [反垃圾郵件](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)

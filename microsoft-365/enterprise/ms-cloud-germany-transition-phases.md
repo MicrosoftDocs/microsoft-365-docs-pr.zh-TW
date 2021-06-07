@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 microsoft cloud 德國移動 (microsoft cloud Deutschland) 到新德文 datacenter 區域中 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 6778248b127894102d15d4d94e3d2f099e3bfa37
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3a5b95bac74ae405f4e1d6fa91ba4ab51e4a9d05
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771198"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796039"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
@@ -50,8 +50,7 @@ ms.locfileid: "52771198"
 |Power BI & Dynamics 365|15 + 天|Microsoft|遷移 Power BI 及 Dynamics 365 內容。|
 |完成 Azure AD|1-2 天|Microsoft|完成租使用者切換為全球。|
 |Clean-Up|1-2 天|客戶|清除舊版連線至 Microsoft Cloud Deutschland，例如 Active Directory Federation Services (AD FS) 信賴憑證者信任、Azure AD 連線和 Office 用戶端重新開機。|
-|已停用端點|30 天|Microsoft|完成 Azure AD 後30天之後，Microsoft Cloud Deutschland Azure AD 服務將停止已轉換組織的端點存取。 端點要求（例如驗證）會從這個點向前失敗，以進行 Microsoft Cloud Deutschland service。 |
-
+|已停用端點|30 天|Microsoft|完成 Azure AD 後30天之後，Microsoft Cloud Deutschland Azure AD 服務將停止已轉換組織的端點存取。 端點要求（例如驗證）會從這個點向前失敗，以進行 Microsoft Cloud Deutschland service。 在連結至 Microsoft Cloud Deutschland 中的 Office 365 服務實例中執行 Azure 工作負載的客戶，會移至稍後的最後一個遷移階段。 |
 
 階段和其動作可確保重要資料和經驗已遷移至 Office 365 泛型服務。 租使用者新增至遷移佇列後，每個工作負載都會以後端服務執行的一組步驟完成。 某些工作負載可能需要管理員 (或使用者) ，否則遷移可能會影響[如何組織遷移時](ms-cloud-germany-transition.md#how-is-the-migration-organized)所執行和討論之階段的使用狀況？
 
@@ -136,6 +135,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 - 如果您的組織仍然使用 SharePoint 2010 工作流程，他們將無法再在 2021 12 月31日之後運作。 SharePoint 2013 工作流程仍然受到支援，不過預設為從 2020 1 月1日開始的新承租人關閉。 在完成 SharePoint 線上服務的遷移之後，建議您移至 Power Automate 或其他支援的解決方案。
  - 尚未遷移其 SharePoint 線上實例的 Microsoft 雲端 Deutschland 客戶必須保持 SharePoint 線上 PowerShell module SharePointOnline/16.0.20616.12000 版本或下列的版本。 否則，透過 PowerShell 或用戶端物件模型的 SharePoint 線上連線將會失敗。
 - 在此階段中，SharePoint URLs 背後的 IP 位址會變更。 轉換為 Office 365 泛型服務之後，保留之租使用者的位址 URLs (例如， `contoso.sharepoint.de` `contoso-my.sharepoint.de`) 將變更為[全球 Microsoft 365 URLs 和 IP 位址範圍 (SharePoint 線上及商務用 OneDrive) ](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)。
+- 在轉換 SharePoint 和 OneDrive 服務時，Office 線上可能無法如預期般運作。 
 
 > [!NOTE]
 > 若您使用 eDiscovery，請確定您已知道 [ediscovery 遷移經驗](ms-cloud-germany-transition-add-scc.md)。
@@ -256,7 +256,7 @@ Microsoft Teams 會利用 Azure AD 的功能。 在未完成 Azure AD 的遷移�
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| Microsoft Dynamics 資源 | microsoft dynamics 的客戶將會受到 microsoft 工程或 microsoft FastTrack 的接洽，以將 microsoft dynamics 365 轉換成 Office 365 泛型服務實例。 * |<ul><li>遷移後，系統管理員會驗證組織。 <</li><li>管理員會視需要修改工作流程。 </li><li>系統管理員會視需要清除 AdminOnly 模式。</li><li>系統管理員會適當地從 _沙箱_ 變更組織類型。</li><li>通知使用者新的 URL 可以存取實例 (org) 。</li><li>更新任何與新端點 URL 的輸入連線。 </li><li>在轉換期間，使用者將無法使用 Dynamics 服務。 </li><li>使用者在遷移每個組織之後，必須驗證組織的健康情況和功能。</li></ul>|
+| Microsoft Dynamics 資源 | microsoft dynamics 的客戶將會受到 microsoft 工程或 microsoft FastTrack 的接洽，以將 microsoft dynamics 365 轉換成 Office 365 泛型服務實例。 * |<ul><li>遷移後，系統管理員會驗證組織。 </li><li>管理員會視需要修改工作流程。 </li><li>系統管理員會視需要清除 AdminOnly 模式。</li><li>系統管理員會適當地從 _沙箱_ 變更組織類型。</li><li>通知使用者新的 URL 可以存取實例 (org) 。</li><li>更新任何與新端點 URL 的輸入連線。 </li><li>在轉換期間，使用者將無法使用 Dynamics 服務。 </li><li>使用者在遷移每個組織之後，必須驗證組織的健康情況和功能。</li></ul>|
 ||||
 
 \* (i) 使用 Microsoft Dynamics 365 的客戶，必須在此遷移案例中採取動作，如所提供的遷移程式所定義。  (ii) 客戶採取行動的失敗即表示 Microsoft 將無法完成遷移。  (iii) 當 Microsoft 因客戶的 inaction 而無法完成遷移時，客戶的訂閱會在2021年10月29日到期。

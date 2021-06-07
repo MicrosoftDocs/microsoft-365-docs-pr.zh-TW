@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 06/04/2021
-ms.openlocfilehash: 264a3b7a4a24c446048d6cfc6863f1ae9765566f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: a1b7891e9e397e7345eb73a94d6298a9da781d98
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789180"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795979"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
 
@@ -80,7 +80,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 我們所有的更新均包含 
 - 效能改進;
 - 可維護性改進;和 
--  (Cloud Microsoft 365 Defender) 的整合增強功能。
+-  (Cloud [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)) 的整合增強功能。
 <br/>
 <details>
 <summary> 2021年5月 (平臺： 4.18.2105.4 |Engine： 1.1.18200.4) </summary>
@@ -92,7 +92,8 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 &ensp;支援階段： **安全性和重要更新**
     
 ### <a name="whats-new"></a>新增功能
-- 行為監控的增強功能 
+- [行為監控](client-behavioral-blocking.md)的增強功能 
+- 固定 [網路保護](network-protection.md) 通知篩選功能
 
 ### <a name="known-issues"></a>已知問題
 無已知問題  

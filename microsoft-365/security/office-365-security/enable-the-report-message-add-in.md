@@ -17,12 +17,12 @@ ms.collection:
 description: 瞭解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 的報告訊息或報告網路釣魚增益集。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25c4f7d67fd4fa876544a17df0f4bc1abfd7b3e7
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: ff91cf4c99c9552ab5f5fecd7c6d2efee8d2d9a8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782930"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789253"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>啟用報告訊息或報告網路釣魚增益集
 
@@ -53,7 +53,6 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 報告訊息增益集與報告網路釣魚增益集均可搭配大多數的 Microsoft 365 訂閱及下列產品運作：
-
   - Outlook 網頁版
   - Outlook 2013 SP1 或更新版本
   - Mac 版 Outlook 2016
@@ -69,6 +68,9 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 - 管理員必須是全域系統管理員角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 如需如何使用報告郵件功能來報告訊息的詳細資訊，請參閱[在 Outlook 中報告誤報和漏報](report-false-positives-and-false-negatives.md)。
+
+> [!IMPORTANT]
+> 由於無法使用[使用者提交原則](./user-submission.md)，因此建議您不要在 Outlook 內建報告經驗。 建議您改為使用報表訊息增益集或報表網路釣魚增益集。
 
 ## <a name="get-the-report-message-add-in"></a>取得報告訊息增益集
 

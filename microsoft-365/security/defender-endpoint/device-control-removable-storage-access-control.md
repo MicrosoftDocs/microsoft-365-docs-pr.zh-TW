@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 46ea74d11f9c54cd1d967058433a74ef4c1ead19
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 018bc3549cd7a25df5bdd86d98d351e19027c31f
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300133"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796027"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制
 
@@ -68,7 +68,7 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
         - CdRomDevices
     - DeviceId
     - HardwareId
-    - InstancePathId
+    - InstancePathId： InstancePathId 是唯一識別系統中裝置的字串，例如 USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8 .07 \ 8735B611&0。 例如， (**&0**) 代表可用的插槽，而且可能會從裝置變更為裝置。 為了獲得最佳結果，請在結尾使用萬用字元。 例如，USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8。 07 \ 8735B611 *
     - FriendlyNameId
     - SerialNumberId
     - Vid
@@ -196,7 +196,7 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
 ### <a name="licensing"></a>授權
 
-開始使用 [可移動儲存體] 存取控制之前，必須先確認 [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要存取和使用 [可移動儲存體] 存取控制，您必須具有 Microsoft 365 E5。
+開始使用 [可移動儲存體] 存取控制之前，必須先確認 [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要存取和使用 [可移動儲存體] 存取控制，您必須具有 Microsoft 365 E3。
 
 ### <a name="deploying-policy-via-group-policy"></a>透過群組原則部署原則
 
@@ -257,7 +257,7 @@ Microsoft Defender for Endpoint 裝置控制可移動儲存體存取控制可讓
 
     - OMA-URI：
 
-      /Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
       例如，針對 **區塊寫入和執行存取，但允許** 範例中的核准 USBs 規則，該連結必須是： 
 

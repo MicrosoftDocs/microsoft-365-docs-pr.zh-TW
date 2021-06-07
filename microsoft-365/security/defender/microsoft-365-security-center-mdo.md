@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ec5d22caa52ffaa061637cb8c510a0efaf566b6a
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770972"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782894"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心中的適用於 Office 365 的 Microsoft Defender
 
@@ -139,7 +139,7 @@ ms.locfileid: "52770972"
 
 控制中心會顯示已由自動化調查及回應功能所建立的調查。 Microsoft 365 Defender 中的這個自動化、自我修復功能會透過自動回應特定事件來協助安全性小組。
 
-[深入了解控制中心](m365d-action-center.md)
+[深入瞭解行動中心](m365d-action-center.md)
 
 #### <a name="threat-analytics"></a>威脅分析
 

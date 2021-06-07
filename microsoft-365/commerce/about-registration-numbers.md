@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: 當您購買 Microsoft 產品或服務時，請深入瞭解註冊號碼和「審閱」通知。
 ms.date: 03/17/2021
-ms.openlocfilehash: 8ec97356f9859e928a8ee435f406c15f4f17a4c4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 93cba6c1eebf0b41a94d6a6e3aac83693218f407
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332219"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795967"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>關於註冊號碼和審閱通知
 
@@ -69,7 +69,7 @@ ms.locfileid: "52332219"
 
 下表包含每個國家/地區收集的註冊號碼範例。  在列出多個 IDs 的情況下，只有一個是必要的。
 
-| [國家或地區]  | 詳細資料 |  |  |  |  |
+| 國家或地區 | 詳細資料 |  |  |  |  |
 |:--|:--|:--|:--|:--|:--|
 | **亞美尼亞** | INN –納稅識別號碼<br>加值稅號碼–也稱為加值稅登記編號。 這是唯一的號碼，可識別已註冊加值稅的應納稅人員 (商務) 或非應納稅的法人。<br>公用服務號碼 |  |  | |  |
 | **亞塞拜然**  | [納稅人](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) 標識號-納稅識別碼<br>INN –納稅識別號碼 |  |  |  |  |
@@ -86,7 +86,7 @@ ms.locfileid: "52332219"
 | **波蘭**  | [納稅人](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) 標識號-納稅識別碼<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) –波蘭 (波蘭 Powszechny Elektroniczny System Ewidencji Ludności，通用電子系統中用於進行人口) 註冊的國家識別號碼 |  |  |  |  |
 | **俄羅斯**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) –納稅標識號 (俄文 "Individualiy Nomer Nalogoplatelshika" )  |  |  |  |  |
 | **沙烏地阿拉伯** | [納稅人](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) 標識號-納稅識別碼 |  |  |  |  |
-| **南非** | TRN.CHK –流量註冊號碼 |  |  |  |  |
+| **南非** | TRN.CHK –稅參考編號 |  |  |  |  |
 | **南蘇丹** | [納稅人](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) 標識號-納稅識別碼 |  |  |  |  |
 | **塔吉克**  | INN –納稅識別號碼<br>EIN –雇主身分識別號碼<br>KPP –這是反映組織註冊原因的程式碼。 |  |  |  |  |
 | **泰國** | [納稅人](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) 標識號-納稅識別碼 |  |  |  |  |

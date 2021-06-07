@@ -19,19 +19,19 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務。
-ms.openlocfilehash: ad6c81f04b9e8551ad6eeb6521f7562243df53e9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 4162e51164120cecaa431ad6883d3ee112ad4880
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346301"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796003"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>從 Microsoft Cloud Deutschland 遷移至新德國資料中心區域的 Office 365 服務
 
 > [!NOTE]
 > 本文僅適用于合格的 Microsoft Cloud Deutschland customers。
 
-在2018年8月，Microsoft 宣佈推出 microsoft cloud – Azure、Office 365、Dynamics 365 及 Power Platform 的目的，是從德國的新雲端地區取得，以更好地啟用我們客戶的數位轉換。 2019 年 8 月，我們宣佈我們正在開放德國的新雲端區域。 自宣佈，我們已宣告 Azure、Office 365、Dynamics 365 和電源平臺的可用性。
+在2018年8月份中，Microsoft 宣佈我們打算從德國的新雲端地區提供完整的 Microsoft 雲端（Azure、Office 365、Dynamics 365 和電源平臺），以更好地啟用我們客戶的數位轉換。 2019 年 8 月，我們宣佈我們正在開放德國的新雲端區域。 自宣佈，我們已宣告 Azure、Office 365、Dynamics 365 和電源平臺的可用性。
 
 新的地區設計目的是為了處理更靈活的德國客戶需求、最新的智慧雲端服務，以及與我們的 Microsoft 365 服務雲端網路的完整連線能力，以及德國內的客戶資料派駐服務。
 
@@ -64,7 +64,7 @@ Office 365 影片即將于年 2021年 3月 1日停用。 如果您選擇將 Offi
 
 下圖顯示遷移至新德文資料中心的十大階段。
 
-![遷移至新的德國資料中心的十大階段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+:::image type="content" alt-text="遷移至新的德國資料中心的十大階段" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
 當您 [選擇要進行遷移](./ms-cloud-germany-migration-opt-in.md)時，這些階段便會開始。 大多數的遷移階段都是以執行後端服務作業的方式執行，並在另一個階段之後執行。 在遷移過程中，會透過 Microsoft 365 系統管理中心的訊息中心來傳送其他用戶端的任務和整體遷移狀態的開始。 工作的範例可能包括客戶管理的 DNS 更新、重新設定 Exchange 混合式客戶的混合式設定或 Azure 遷移。
 
@@ -201,7 +201,7 @@ microsoft 提供從 Microsoft Cloud Deutschland 到 Office 365 服務的 Office 
 
 如果您是僅限 Azure 客戶，您可以開始將您的 Azure 資源 [遷移](/azure/germany/germany-migration-main) 至其他地區。 
 
-如果您有 Azure 使用 Office 365、Dynamics 365 或 Power BI，您必須遵循遷移程式，以確保成功遷移 AzureAD，再開始自行導向 Azure 遷移。 您必須先完成 azure 遷移，才能將您的 azure 工作負載與您的 AzureAD 和 Office 365 組織一起保留。
+如果您有 Azure 使用 Office 365、Dynamics 365 或 Power BI，必須先遵循 Office 365 服務的遷移程式，以確保成功遷移 azure AD，您才能開始自行定向 azure 遷移。 您必須先完成 Azure 遷移，再完成租使用者遷移，以維護您的 azure AD 和 Office 365 組織的 azure 工作負載。 如需更多詳細資料，請參閱[遷移階段的遷移動作和遷移影響。 Deutschland](ms-cloud-germany-transition-phases.md)
 
 **Office 365**
 
@@ -303,7 +303,7 @@ microsoft 提供從 Microsoft Cloud Deutschland 到 Office 365 服務的 Office 
 
 ### <a name="which-customers-are-affected-by-the-azure-active-directory-migration"></a>哪些客戶受到 Azure Active Directory 遷移的影響？ 
 
-Office365 的所有客戶都取決於 Azure Active Directory，用以驗證及儲存 Microsoft 託管服務運作所需的重要服務元件。 
+Office 365 的所有客戶都取決於 Azure Active Directory，用以驗證及儲存 Microsoft 託管服務運作所需的重要服務元件。 
 
 
 ### <a name="what-are-the-impacts-of-the-azure-active-directory-migration"></a>Azure Active Directory 遷移有何影響？
@@ -338,7 +338,7 @@ Microsoft 受管理的 IP 範圍和 DNS 區域會在遷移期間和全域服務�
 
 [選擇加入移轉](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 開始：
 

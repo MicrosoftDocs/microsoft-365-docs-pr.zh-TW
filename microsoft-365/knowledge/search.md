@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 瞭解您可以在 Microsoft Viva 中搜尋主題的方式。
-ms.openlocfilehash: 54a143ea0960bf56a0d1c5224658bea404c7621e
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301713"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795991"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜尋來尋找 Microsoft Viva 主題中的主題
 
@@ -55,8 +55,5 @@ Word、PowerPoint Outlook 和 Excel 中的搜尋結果也會在找到一個主�
 - 針對一般搜尋「旅行」的使用者，在「旅行」上建立一個主題，該主題具有期望看到的資訊。 請考慮在主題的描述中新增 Concur 外部網站的連結。 如果連結改改為 Microsoft 365 租使用者所主控的內部旅行預約網站，您可以將其新增至「釘住的資源」。
  
 ### <a name="search-results-priority"></a>搜尋結果優先順序 
- 
-在使用者搜尋體驗中，當使用者搜尋類似「旅行」的字詞時，搜尋結果將會以 Microsoft 搜尋中的下列優先順序顯示。
-1. 已發佈或已確認的主題 
-2. 書籤
-3. 建議的主題
+
+在使用者的搜尋體驗中，當使用者搜尋像 "旅行" 的字詞時，如果有可用的書簽，則書簽會出現在主題之前。

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 開啟可在桌面應用程式中針對 SharePoint 和 OneDrive 中已標記和加密的檔案啟用共同撰寫和自動儲存的設定。
-ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332723"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796051"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>針對使用敏感度標籤加密的檔案啟用共同撰寫
 
@@ -48,7 +48,7 @@ ms.locfileid: "52332723"
 
 在啟用設定以支援 Office 桌面應用程式共同撰寫之前，必須了解此動作會變更儲存至 Office 檔案和從 Office 檔案讀取的標籤中繼資料。
 
-標籤中繼資料包含可識別租用戶和已套用敏感度標籤的資訊。 此設定所變更的是 Word、Excel 和 PowerPoint 未加密檔案的中繼資料格式和位置。 加密檔案或電子郵件沒有標籤中繼資料變更。
+標籤中繼資料包含可識別租用戶和已套用敏感度標籤的資訊。 此設定所變更的是 Word、Excel 和 PowerPoint 檔案的中繼資料格式和位置。 您不需要對加密的檔案或電子郵件採取任何動作; 加密檔案的中繼資料變更是回溯相容，且電子郵件並沒有變更。 不過，您必須注意可自動升級但並非回溯相容之加密檔案的中繼資料變更。
 
 此變更會影響新標記的檔案和已標記的檔案。 當您使用支援共同撰寫設定的應用程式和服務時：
 - 對於新標記的檔案，只會使用新的格式和位置來標記中繼資料。

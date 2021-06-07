@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何建立、修改及刪除使用 Microsoft Defender Office 365 的組織中可用的高級防網路釣魚原則。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cbe517ef2a702e3e4fd7f6af4ee1d7ed1dd13d2
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 9af3824b245cd976d1e859d6ebc4efcda47325e0
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789129"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793085"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 中設定 Office 365 的反網路釣魚原則
 
@@ -164,7 +164,7 @@ ms.locfileid: "52789129"
 
        回到 [管理可模擬的 **自訂網域** ] 浮出的，您可以從清單中選取一或多個專案來移除專案。 您可以使用「 ![ 搜尋」圖示 ](../../media/m365-cc-sc-create-icon.png) **搜尋** 方塊來搜尋專案。
 
-       選取至少一個專案後，就 ![ 會出現 [刪除圖示 ](../../media/m365-cc-sc-delete-icon.png) **刪除** ] 圖示，您可以使用此圖示移除選取的專案。
+       選取至少一個專案後， ![ 就會出現 [刪除網域圖示 ](../../media/m365-cc-sc-delete-icon.png) **刪除** ] 圖示，您可以使用此圖示移除選取的專案。
 
    - **新增信任的寄件者和網域**：：若要指定原則的模擬保護例外狀況，請按一下 [ **管理 (nn) 信任的寄件者 (s) 及 [網域 (s)**]。 在 [管理已出現之 **類比保護的自訂網域** ] 浮出視窗中，設定下列設定：
       - **寄件者**：確認選取 [**寄件者**] 索引標籤，然後按一下 [ ![ 新增寄件者 ](../../media/m365-cc-sc-create-icon.png) 在出現的 [ **新增信任的寄件者** ] 飛入視窗中，輸入方塊中的電子郵件地址，然後按一下 [ **新增**]。 視需要重複此步驟多次。 若要移除現有的專案，請按一下 ![ 專案的 [刪除圖示] ](../../media/m365-cc-sc-close-icon.png) 。
@@ -243,7 +243,7 @@ ms.locfileid: "52789129"
 
    完成後，按 [下一步 **]**。
 
-7. 在顯示的 [檢閱 **]** 頁面上，檢閱您的設定。 您可以在每個區段中選取 [編輯 **]**，以修改該區段內的設定。
+7. 在顯示的 [檢閱 **]** 頁面上，檢閱您的設定。 您可以在每個區段中選取 [編輯 **]**，以修改該區段內的設定。 您也可以按一下 [ **上一步** ] 或選取嚮導中的特定頁面。
 
    當您完成時，按一下 [ **提交**]。
 
