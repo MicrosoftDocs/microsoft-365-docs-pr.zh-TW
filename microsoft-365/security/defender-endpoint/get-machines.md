@@ -13,86 +13,87 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
-ms.topic: article
-ms.openlocfilehash: 01e36427116ad7bd845901e7da7f5aa152bd44f9
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: f06973bc45ecac05c15d48afe5f0e2e9e7788f78
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893350"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770742"
 ---
-# <a name="list-machines-api"></a><span data-ttu-id="eec9a-104">列出電腦 API</span><span class="sxs-lookup"><span data-stu-id="eec9a-104">List machines API</span></span>
+# <a name="list-machines-api"></a><span data-ttu-id="eb54e-104">列出電腦 API</span><span class="sxs-lookup"><span data-stu-id="eb54e-104">List machines API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="eec9a-105">**適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="eec9a-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="eb54e-105">**適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="eb54e-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="eec9a-106">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="eec9a-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="eec9a-107">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="eec9a-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="eb54e-106">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="eb54e-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="eb54e-107">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="eb54e-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="eec9a-108">API 描述</span><span class="sxs-lookup"><span data-stu-id="eec9a-108">API description</span></span>
-<span data-ttu-id="eec9a-109">檢索與 Microsoft Defender for Endpoint cloud 通訊的 [電腦](machine.md) 集合。</span><span class="sxs-lookup"><span data-stu-id="eec9a-109">Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender for Endpoint cloud.</span></span>
-<br><span data-ttu-id="eec9a-110">支援 [OData V4 查詢](https://www.odata.org/documentation/)。</span><span class="sxs-lookup"><span data-stu-id="eec9a-110">Supports [OData V4 queries](https://www.odata.org/documentation/).</span></span>
-<br><span data-ttu-id="eec9a-111">支援 OData 的 `$filter` 查詢：、、、 `computerDnsName` `lastSeen` `healthStatus` `osPlatform` `riskScore` 和 `rbacGroupId` 。</span><span class="sxs-lookup"><span data-stu-id="eec9a-111">The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.</span></span>
-<br><span data-ttu-id="eec9a-112">在[使用 Defender For Endpoint 的 OData 查詢](exposed-apis-odata-samples.md)中，請參閱範例</span><span class="sxs-lookup"><span data-stu-id="eec9a-112">See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md)</span></span>
+## <a name="api-description"></a><span data-ttu-id="eb54e-108">API 描述</span><span class="sxs-lookup"><span data-stu-id="eb54e-108">API description</span></span>
+<span data-ttu-id="eb54e-109">檢索與 Microsoft Defender for Endpoint cloud 通訊的 [電腦](machine.md) 集合。</span><span class="sxs-lookup"><span data-stu-id="eb54e-109">Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender for Endpoint cloud.</span></span>
+<br><span data-ttu-id="eb54e-110">支援 [OData V4 查詢](https://www.odata.org/documentation/)。</span><span class="sxs-lookup"><span data-stu-id="eb54e-110">Supports [OData V4 queries](https://www.odata.org/documentation/).</span></span>
+<br><span data-ttu-id="eb54e-111">支援 OData 的 `$filter` 查詢：、、、 `computerDnsName` `lastSeen` `healthStatus` `osPlatform` `riskScore` 和 `rbacGroupId` 。</span><span class="sxs-lookup"><span data-stu-id="eb54e-111">The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.</span></span>
+<br><span data-ttu-id="eb54e-112">在[使用 Defender For Endpoint 的 OData 查詢](exposed-apis-odata-samples.md)中，請參閱範例</span><span class="sxs-lookup"><span data-stu-id="eb54e-112">See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md)</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="eec9a-113">限制</span><span class="sxs-lookup"><span data-stu-id="eec9a-113">Limitations</span></span>
-1. <span data-ttu-id="eec9a-114">您可以根據您設定的保留期間，取得上一個看到的裝置。</span><span class="sxs-lookup"><span data-stu-id="eec9a-114">You can get devices last seen according to your configured retention period.</span></span>
-2. <span data-ttu-id="eec9a-115">頁面大小上限為10000。</span><span class="sxs-lookup"><span data-stu-id="eec9a-115">Maximum page size is 10,000.</span></span>
-3. <span data-ttu-id="eec9a-116">此 API 的速率限制為每分鐘100個通話，每小時1500個通話。</span><span class="sxs-lookup"><span data-stu-id="eec9a-116">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span> 
+## <a name="limitations"></a><span data-ttu-id="eb54e-113">限制</span><span class="sxs-lookup"><span data-stu-id="eb54e-113">Limitations</span></span>
+1. <span data-ttu-id="eb54e-114">您可以根據您設定的保留期間，取得上一個看到的裝置。</span><span class="sxs-lookup"><span data-stu-id="eb54e-114">You can get devices last seen according to your configured retention period.</span></span>
+2. <span data-ttu-id="eb54e-115">頁面大小上限為10000。</span><span class="sxs-lookup"><span data-stu-id="eb54e-115">Maximum page size is 10,000.</span></span>
+3. <span data-ttu-id="eb54e-116">此 API 的速率限制為每分鐘100個通話，每小時1500個通話。</span><span class="sxs-lookup"><span data-stu-id="eb54e-116">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="eec9a-117">權限</span><span class="sxs-lookup"><span data-stu-id="eec9a-117">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="eb54e-117">權限</span><span class="sxs-lookup"><span data-stu-id="eb54e-117">Permissions</span></span>
 
-<span data-ttu-id="eec9a-118">許可權類型</span><span class="sxs-lookup"><span data-stu-id="eec9a-118">Permission type</span></span> |   <span data-ttu-id="eec9a-119">權限</span><span class="sxs-lookup"><span data-stu-id="eec9a-119">Permission</span></span>  |   <span data-ttu-id="eec9a-120">許可權顯示名稱</span><span class="sxs-lookup"><span data-stu-id="eec9a-120">Permission display name</span></span>
+<span data-ttu-id="eb54e-118">許可權類型</span><span class="sxs-lookup"><span data-stu-id="eb54e-118">Permission type</span></span> |   <span data-ttu-id="eb54e-119">權限</span><span class="sxs-lookup"><span data-stu-id="eb54e-119">Permission</span></span>  |   <span data-ttu-id="eb54e-120">許可權顯示名稱</span><span class="sxs-lookup"><span data-stu-id="eb54e-120">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="eec9a-121">應用程式</span><span class="sxs-lookup"><span data-stu-id="eec9a-121">Application</span></span> |   <span data-ttu-id="eec9a-122">Read。所有</span><span class="sxs-lookup"><span data-stu-id="eec9a-122">Machine.Read.All</span></span> |  <span data-ttu-id="eec9a-123">「讀取所有機器設定檔」</span><span class="sxs-lookup"><span data-stu-id="eec9a-123">'Read all machine profiles'</span></span>
-<span data-ttu-id="eec9a-124">應用程式</span><span class="sxs-lookup"><span data-stu-id="eec9a-124">Application</span></span> |   <span data-ttu-id="eec9a-125">ReadWrite。所有</span><span class="sxs-lookup"><span data-stu-id="eec9a-125">Machine.ReadWrite.All</span></span> | <span data-ttu-id="eec9a-126">「讀取及寫入所有機器資訊」</span><span class="sxs-lookup"><span data-stu-id="eec9a-126">'Read and write all machine information'</span></span>
-<span data-ttu-id="eec9a-127">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="eec9a-127">Delegated (work or school account)</span></span> | <span data-ttu-id="eec9a-128">電腦. 讀取</span><span class="sxs-lookup"><span data-stu-id="eec9a-128">Machine.Read</span></span> | <span data-ttu-id="eec9a-129">「讀取機器資訊」</span><span class="sxs-lookup"><span data-stu-id="eec9a-129">'Read machine information'</span></span>
-<span data-ttu-id="eec9a-130">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="eec9a-130">Delegated (work or school account)</span></span> | <span data-ttu-id="eec9a-131">ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eec9a-131">Machine.ReadWrite</span></span> | <span data-ttu-id="eec9a-132">「讀取及寫入機器資訊」</span><span class="sxs-lookup"><span data-stu-id="eec9a-132">'Read and write machine information'</span></span>
+<span data-ttu-id="eb54e-121">應用程式</span><span class="sxs-lookup"><span data-stu-id="eb54e-121">Application</span></span> |   <span data-ttu-id="eb54e-122">Read。所有</span><span class="sxs-lookup"><span data-stu-id="eb54e-122">Machine.Read.All</span></span> |  <span data-ttu-id="eb54e-123">「讀取所有機器設定檔」</span><span class="sxs-lookup"><span data-stu-id="eb54e-123">'Read all machine profiles'</span></span>
+<span data-ttu-id="eb54e-124">應用程式</span><span class="sxs-lookup"><span data-stu-id="eb54e-124">Application</span></span> |   <span data-ttu-id="eb54e-125">ReadWrite。所有</span><span class="sxs-lookup"><span data-stu-id="eb54e-125">Machine.ReadWrite.All</span></span> | <span data-ttu-id="eb54e-126">「讀取及寫入所有機器資訊」</span><span class="sxs-lookup"><span data-stu-id="eb54e-126">'Read and write all machine information'</span></span>
+<span data-ttu-id="eb54e-127">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="eb54e-127">Delegated (work or school account)</span></span> | <span data-ttu-id="eb54e-128">電腦. 讀取</span><span class="sxs-lookup"><span data-stu-id="eb54e-128">Machine.Read</span></span> | <span data-ttu-id="eb54e-129">「讀取機器資訊」</span><span class="sxs-lookup"><span data-stu-id="eb54e-129">'Read machine information'</span></span>
+<span data-ttu-id="eb54e-130">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="eb54e-130">Delegated (work or school account)</span></span> | <span data-ttu-id="eb54e-131">ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eb54e-131">Machine.ReadWrite</span></span> | <span data-ttu-id="eb54e-132">「讀取及寫入機器資訊」</span><span class="sxs-lookup"><span data-stu-id="eb54e-132">'Read and write machine information'</span></span>
 
 >[!Note]
-> <span data-ttu-id="eec9a-133">使用使用者認證取得權杖時：</span><span class="sxs-lookup"><span data-stu-id="eec9a-133">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="eec9a-134">使用者至少必須具備下列角色許可權：「View Data ' (請參閱 [建立及管理角色](user-roles.md) 以取得詳細資訊) </span><span class="sxs-lookup"><span data-stu-id="eec9a-134">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="eec9a-135">回應僅包含使用者有權存取的裝置，並根據裝置群組設定 (請參閱 [建立及管理裝置群組](machine-groups.md) 以取得詳細資訊) </span><span class="sxs-lookup"><span data-stu-id="eec9a-135">Response will include only devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="eb54e-133">使用使用者認證取得權杖時：</span><span class="sxs-lookup"><span data-stu-id="eb54e-133">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="eb54e-134">使用者至少必須具備下列角色許可權：「View Data ' (請參閱 [建立及管理角色](user-roles.md) 以取得詳細資訊) </span><span class="sxs-lookup"><span data-stu-id="eb54e-134">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="eb54e-135">回應僅包含使用者有權存取的裝置，並根據裝置群組設定 (請參閱 [建立及管理裝置群組](machine-groups.md) 以取得詳細資訊) </span><span class="sxs-lookup"><span data-stu-id="eb54e-135">Response will include only devices, that the user have access to, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="eec9a-136">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="eec9a-136">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eb54e-136">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="eb54e-136">HTTP request</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="eec9a-137">要求標頭</span><span class="sxs-lookup"><span data-stu-id="eec9a-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="eb54e-137">要求標頭</span><span class="sxs-lookup"><span data-stu-id="eb54e-137">Request headers</span></span>
 
-<span data-ttu-id="eec9a-138">名稱</span><span class="sxs-lookup"><span data-stu-id="eec9a-138">Name</span></span> | <span data-ttu-id="eec9a-139">類型</span><span class="sxs-lookup"><span data-stu-id="eec9a-139">Type</span></span> | <span data-ttu-id="eec9a-140">描述</span><span class="sxs-lookup"><span data-stu-id="eec9a-140">Description</span></span>
+<span data-ttu-id="eb54e-138">名稱</span><span class="sxs-lookup"><span data-stu-id="eb54e-138">Name</span></span> | <span data-ttu-id="eb54e-139">類型</span><span class="sxs-lookup"><span data-stu-id="eb54e-139">Type</span></span> | <span data-ttu-id="eb54e-140">描述</span><span class="sxs-lookup"><span data-stu-id="eb54e-140">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="eec9a-141">授權</span><span class="sxs-lookup"><span data-stu-id="eec9a-141">Authorization</span></span> | <span data-ttu-id="eec9a-142">字串</span><span class="sxs-lookup"><span data-stu-id="eec9a-142">String</span></span> | <span data-ttu-id="eec9a-143">載荷 {token}。</span><span class="sxs-lookup"><span data-stu-id="eec9a-143">Bearer {token}.</span></span> <span data-ttu-id="eec9a-144">**必要欄位**。</span><span class="sxs-lookup"><span data-stu-id="eec9a-144">**Required**.</span></span>
+<span data-ttu-id="eb54e-141">授權</span><span class="sxs-lookup"><span data-stu-id="eb54e-141">Authorization</span></span> | <span data-ttu-id="eb54e-142">字串</span><span class="sxs-lookup"><span data-stu-id="eb54e-142">String</span></span> | <span data-ttu-id="eb54e-143">載荷 {token}。</span><span class="sxs-lookup"><span data-stu-id="eb54e-143">Bearer {token}.</span></span> <span data-ttu-id="eb54e-144">**必要欄位**。</span><span class="sxs-lookup"><span data-stu-id="eb54e-144">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="eec9a-145">要求正文</span><span class="sxs-lookup"><span data-stu-id="eec9a-145">Request body</span></span>
-<span data-ttu-id="eec9a-146">空白</span><span class="sxs-lookup"><span data-stu-id="eec9a-146">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="eb54e-145">要求正文</span><span class="sxs-lookup"><span data-stu-id="eb54e-145">Request body</span></span>
+<span data-ttu-id="eb54e-146">空白</span><span class="sxs-lookup"><span data-stu-id="eb54e-146">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="eec9a-147">回應</span><span class="sxs-lookup"><span data-stu-id="eec9a-147">Response</span></span>
-<span data-ttu-id="eec9a-148">如果成功且機器存在-200 OK （含）主體中的 [機器](machine.md) 實體清單。</span><span class="sxs-lookup"><span data-stu-id="eec9a-148">If successful and machines exists - 200 OK with list of [machine](machine.md) entities in the body.</span></span> <span data-ttu-id="eec9a-149">如果沒有找到最近的電腦-404。</span><span class="sxs-lookup"><span data-stu-id="eec9a-149">If no recent machines - 404 Not Found.</span></span>
+## <a name="response"></a><span data-ttu-id="eb54e-147">回應</span><span class="sxs-lookup"><span data-stu-id="eb54e-147">Response</span></span>
+<span data-ttu-id="eb54e-148">如果成功且機器存在-200 OK （含）主體中的 [機器](machine.md) 實體清單。</span><span class="sxs-lookup"><span data-stu-id="eb54e-148">If successful and machines exists - 200 OK with list of [machine](machine.md) entities in the body.</span></span> <span data-ttu-id="eb54e-149">如果沒有找到最近的電腦-404。</span><span class="sxs-lookup"><span data-stu-id="eb54e-149">If no recent machines - 404 Not Found.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="eec9a-150">範例</span><span class="sxs-lookup"><span data-stu-id="eec9a-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="eb54e-150">範例</span><span class="sxs-lookup"><span data-stu-id="eb54e-150">Example</span></span>
 
-<span data-ttu-id="eec9a-151">**請求**</span><span class="sxs-lookup"><span data-stu-id="eec9a-151">**Request**</span></span>
+<span data-ttu-id="eb54e-151">**請求**</span><span class="sxs-lookup"><span data-stu-id="eb54e-151">**Request**</span></span>
 
-<span data-ttu-id="eec9a-152">以下是要求的範例。</span><span class="sxs-lookup"><span data-stu-id="eec9a-152">Here is an example of the request.</span></span>
+<span data-ttu-id="eb54e-152">以下是要求的範例。</span><span class="sxs-lookup"><span data-stu-id="eb54e-152">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
-<span data-ttu-id="eec9a-153">**回應**</span><span class="sxs-lookup"><span data-stu-id="eec9a-153">**Response**</span></span>
+<span data-ttu-id="eb54e-153">**回應**</span><span class="sxs-lookup"><span data-stu-id="eb54e-153">**Response**</span></span>
 
-<span data-ttu-id="eec9a-154">以下是回應的範例。</span><span class="sxs-lookup"><span data-stu-id="eec9a-154">Here is an example of the response.</span></span>
+<span data-ttu-id="eb54e-154">以下是回應的範例。</span><span class="sxs-lookup"><span data-stu-id="eb54e-154">Here is an example of the response.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -125,5 +126,5 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="eec9a-155">相關主題</span><span class="sxs-lookup"><span data-stu-id="eec9a-155">Related topics</span></span>
-- [<span data-ttu-id="eec9a-156">使用 Microsoft Defender for Endpoint OData 查詢</span><span class="sxs-lookup"><span data-stu-id="eec9a-156">OData queries with Microsoft Defender for Endpoint</span></span>](exposed-apis-odata-samples.md)
+## <a name="related-topics"></a><span data-ttu-id="eb54e-155">相關主題</span><span class="sxs-lookup"><span data-stu-id="eb54e-155">Related topics</span></span>
+- [<span data-ttu-id="eb54e-156">使用 Microsoft Defender for Endpoint OData 查詢</span><span class="sxs-lookup"><span data-stu-id="eb54e-156">OData queries with Microsoft Defender for Endpoint</span></span>](exposed-apis-odata-samples.md)
