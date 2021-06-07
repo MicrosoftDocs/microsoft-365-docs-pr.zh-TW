@@ -244,17 +244,14 @@
 
 ### [攻擊面縮減]()
 #### [攻擊面縮小概觀](overview-attack-surface-reduction.md)
+#### [設定受攻擊面縮小功能](configure-attack-surface-reduction.md)
+#### [了解受攻擊面縮小規則](attack-surface-reduction.md)
 #### [評估受攻擊面縮小規則](evaluate-attack-surface-reduction.md)
-#### [攻擊面縮小群組原則設定](configure-attack-surface-reduction.md)
+#### [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
+#### [自訂受攻擊面縮小規則](customize-attack-surface-reduction.md)
 #### [受攻擊面縮小常見問題集](attack-surface-reduction-faq.md)
-
-#### [攻擊面縮小控制項]()
-##### [受攻擊面縮小規則](attack-surface-reduction.md)
-##### [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)
-##### [自訂受攻擊面縮小規則](customize-attack-surface-reduction.md)
-##### [查看攻擊面縮小事件](event-views.md)
-
-#### [使用稽核模式](audit-windows-defender.md)
+#### [檢視受攻擊面縮小事件](event-views.md)
+#### [針對受攻擊面縮小使用稽核模式](audit-windows-defender.md)
 
 ### 新一代保護
 #### [Microsoft Defender 防毒軟體概觀](microsoft-defender-antivirus-in-windows-10.md)
@@ -592,6 +589,13 @@
 ###### [使用 Python 進階搜尋](run-advanced-query-sample-python.md)
 ###### [使用 PowerShell 進階搜尋](run-advanced-query-sample-powershell.md)
 ###### [使用 OData 查詢](exposed-apis-odata-samples.md)
+
+
+#### [原始資料串流 API]()
+##### [原始資料串流](raw-data-export.md)
+##### [將進階搜尋事件串流到 Azure 事件中樞](raw-data-export-event-hub.md)
+##### [將進階搜尋事件串流到您的儲存體帳戶](raw-data-export-storage.md)
+
 
 #### [SIEM 整合]()
 ##### [了解威脅情報概念](threat-indicator-concepts.md)
