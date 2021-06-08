@@ -288,6 +288,9 @@
 ##### [使用 PowerShell Cmdlet 來管理 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ##### [使用 Windows Management Instrumentation (WMI) 來管理 Microsoft Defender 防毒軟體](use-wmi-microsoft-defender-antivirus.md)
 ##### [使用 mpcmdrun.exe 工具來管理 Microsoft Defender 防毒軟體](command-line-arguments-microsoft-defender-antivirus.md)
+##### [設定端點顯示的通知](configure-notifications-microsoft-defender-antivirus.md)
+##### [指定使用者是否可以在本機修改 Microsoft Defender 防毒軟體原則設定](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [指定使用者是否可以查看 Microsoft Defender 防毒軟體使用者介面，或與之互動](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
 #### [在 Microsoft Defender 防毒軟體上部署和報告](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [部署和啟用 Microsoft Defender 防毒軟體](deploy-microsoft-defender-antivirus.md)
@@ -480,10 +483,10 @@
 ####### [取得警示相關使用者資訊](get-alert-related-user-info.md)
 
 ###### [弱點和安全設定的評估]()
-####### [匯出評估方法和屬性](get-assessmnt-1methods-properties.md)
-####### [匯出安全設定評估](get-assessmnt-secure-cfg.md)
-####### [匯出軟體清查評估](get-assessmnt-software-inventory.md)
-####### [匯出軟體弱點評估](get-assessmnt-software-vulnerabilities.md)
+####### [匯出評估方法和屬性](get-assessment-methods-properties.md)
+####### [匯出安全設定評估](get-assessment-secure-config.md)
+####### [匯出軟體清查評估](get-assessment-software-inventory.md)
+####### [匯出軟體弱點評估](get-assessment-software-vulnerabilities.md)
 
 ###### [自動化調查]()
 ####### [調查方法和屬性](investigation.md)
