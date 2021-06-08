@@ -1,5 +1,5 @@
 ---
-title: 下載適用于由世紀運作之 Office 365 的 Office 應用程式（適用于 Android）
+title: 下載適用于世紀運作之 Office 365 的 Android Office 應用程式
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: 深入瞭解 Microsoft Office 應用程式（適用于中國運作的 Office 365），以及如何在中國為客戶下載。
+description: 深入瞭解適用于 Android 運作之 Office 365 的 Microsoft Office 應用程式，以及如何在中國為客戶下載。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 6cabe2e9769f7cebf9d128f78773f8014fd004e2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: af66123ecee91e6c8f5ddd7cd1b441494ce8ca97
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644804"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809020"
 ---
-# <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>由世紀運作之 Office 365 的 office 應用程式（適用于 Android）
+# <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>適用于適用于世紀運作之 Office 365 的 Android Office 應用程式
 
-適用于 Android 的 Microsoft Office 應用程式會將 Word、Excel 及 PowerPoint 行動應用程式合併成單一應用程式，以便供 Android 電話下載。 您可以使用適用于 Android 的 Office 應用程式，像是使用 Word、Excel 和 PowerPoint 行動應用程式一樣，連接至 Office 365。 適用于 Android 的 Office 應用程式下載不會影響任何現有安裝的 Word、Excel 及 PowerPoint。
+適用于 android 的 Microsoft Office 應用程式會將 Word、Excel 和 PowerPoint 行動應用程式合併成可供下載 Android 電話的單一應用程式。 使用 Android 的 Office 應用程式，您就可以像使用 Word、Excel 和 PowerPoint 行動應用程式一樣，連接至 Office 365。 Android 下載的 Office 應用程式不會影響任何現有安裝的 Word、Excel 及 PowerPoint。
 
-以下是一些適用于 Android 的 Office 應用程式功能，不適用於由世紀客戶運作的 Office 365：
+以下是適用于 Android 功能的一些 Office 應用程式 Office 365 不能供世紀客戶運作：
 
 - 圖像至文字和圖像至表格 
 - 將照片從鏡頭轉換為 Word 檔 
@@ -44,21 +44,20 @@ ms.locfileid: "48644804"
 
 ## <a name="download-the-office-app-for-android"></a>下載適用于 Android 的 Office 應用程式
 
-從這些中國商店下載適用于 Android 手機的 Office 應用程式：
+從任何中國商店下載 Android 電話的 Office 應用程式：
 - [百度](https://shouji.baidu.com/software/26842919.html)
 - [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
-- [華為](https://appstore.huawei.com/app/C10888510)
 - [聯想](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
 - [360](http://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
 - [騰訊](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)
 - [wandoujia](https://www.wandoujia.com/apps/1502895)
 
 > [!NOTE]
-> 適用于 Android 的 Office 應用程式目前僅適用于電話。 將在稍後新增平板電腦的支援。 
+> Android 的 Office 應用程式目前僅適用于電話。 將在稍後新增平板電腦的支援。 
 
 
 ## <a name="security-considerations"></a>安全考量
 
-如果您的組織將應用程式推入員工行動裝置，我們建議您使用適用于 Android 的 Office 應用程式來取代 Word、Excel 及 PowerPoint 應用程式。  
+如果您的組織將應用程式推入員工行動裝置，我們建議使用 Android Office 應用程式取代 Word、Excel 和 PowerPoint 應用程式。  
 
 

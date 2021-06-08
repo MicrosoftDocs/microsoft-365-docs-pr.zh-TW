@@ -16,12 +16,12 @@ ms.collection:
 description: 系統管理員可以在安全性入口網站中瞭解如何在承租人允許/封鎖清單中設定允許和封鎖。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 12139708fc5cde133819713fd7185435e594a1a9
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694482"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809176"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租用戶允許/封鎖清單中
 
@@ -662,7 +662,9 @@ Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-新增網域對只會允許或封鎖欺騙使用者 *和* 傳送基礎結構的 *組合*。 它不允許來自欺騙使用者的電子郵件來自任何來源，也不允許任何欺騙使用者的傳送基礎結構來源傳送電子郵件。
+欺騙寄件者專案的數目上限為1000。 
+
+新增網域對只會允許或封鎖欺騙使用者 *和* 傳送基礎結構的 *組合*。 它不允許來自欺騙使用者的電子郵件來自任何來源，也不允許任何欺騙使用者的傳送基礎結構來源傳送電子郵件。 
 
 例如，您新增下列網域對的 allow 專案：
 

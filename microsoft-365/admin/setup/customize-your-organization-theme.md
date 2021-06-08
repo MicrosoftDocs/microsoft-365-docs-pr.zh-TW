@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 瞭解如何在 Microsoft 365 中變更導覽列頂端的預設主題，並加以自訂，使其符合您公司的徽標或色彩。
-ms.openlocfilehash: 5f6536d575ef055cda7a97a0860315c491100a1d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e609cbbc116f932d9c41f7ec797bf04a2a9c8ef8
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635923"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809044"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自訂群組織的 Microsoft 365 主題
 
@@ -39,7 +39,7 @@ ms.locfileid: "52635923"
 
 1. 在系統管理中心中，移至 [**設定** \> 的 **Org 設定**] 頁面，然後選擇 [**組織設定檔**] 索引標籤。
 
-2. 在 [ **組織設定檔** ] 索引標籤上，選取 [ **組織主題**]。
+2. 選取 [ **組織設定檔** ] 索引標籤上的 [ **自訂主題**]。
 
 您可以使用下列索引標籤自訂所有主題。
 
@@ -59,7 +59,7 @@ ms.locfileid: "52635923"
 
 1. 如果您先前已自訂群組織的主題，請選取 [ **預設主題** ]，並使用其中一個儲存的自訂專案，或選取 [ **新增主題**]。
 2. 在 [ **一般** ] 頁面上，您可以防止使用者覆寫其主題，並顯示使用者的顯示名稱。
-3. 選取 [儲存 **]** 以儲存變更。  
+3. 選取 **[儲存]** 以儲存變更。  
 
 > [!IMPORTANT]
 > 預設主題是唯一的，它不能重新命名並套用到組織內的每個人。 若要刪除預設主題，您必須先刪除所有其他主題。
@@ -74,7 +74,7 @@ ms.locfileid: "52635923"
 
 2. 在 [**群組**] 底下，您最多可以選擇5個 Microsoft 365 群組可以查看您的群組主題，而不是使用預設主題。 您也可以防止使用者覆寫其主題，並顯示使用者的顯示名稱。
 
-3. 選取 [儲存]。
+3. 選取 ****[儲存]。
 
 :::image type="content" source="../../media/default-theme-general-users.png" alt-text="螢幕擷取畫面： [一般] 索引標籤顯示組織中使用者群組的預設主題":::
 
@@ -88,7 +88,7 @@ ms.locfileid: "52635923"
 - **小型替代標誌**：新增指向您的徽標的 URL 位置。 這個圖像的需求與小型預設的標誌相同。
 - **按一下連結**：新增指向您的標誌的 URL 位置。 您可以使用您的徽標作為任何公司資源的連結，例如公司的網站。
 
-選取 [儲存 **]** 以儲存變更。
+選取 **[儲存]** 以儲存變更。
 
 您可以隨時移除您的徽標。 只需回到 [ **徽標** ] 頁面，然後選取 [ **移除**]。
 

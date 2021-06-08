@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 瞭解您可以採取的基本疑難排解步驟，以解決 Office 365 eDiscovery 中的常見問題。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060988"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809116"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、疑難排解及解決常見的 eDiscovery 問題
 
@@ -89,6 +89,20 @@ EDiscovery 或內容搜尋可能會產生下列錯誤： `This search completed 
 1. 檢查搜尋中識別的位置，以確保檔案的位置正確，並新增至搜尋位置。
 
 2. 您可以使用程式 [，以手動方式要求編目及重新建立網站、文件庫或清單的索引，以重新索引](/sharepoint/crawl-site-content) 網站。
+
+## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>錯誤/問題：不會匯出此檔案，因為它不再存在。 檔案會包含在預估的搜尋結果計數中，因為它仍會列在索引中。 該檔案會最後從索引中移除，而不會在未來產生錯誤。
+
+當您執行的 eDiscovery 搜尋包含 SharePoint 線上及一個位於商務位置的硬碟磁碟機時，您可能會看到此錯誤。 eDiscovery 依賴 SPO 索引來識別檔案位置。 如果已刪除檔案，但 SPO 索引尚未更新，可能會發生此錯誤。
+
+### <a name="resolution"></a>解決方案 
+開啟 SPO 位置，並確認此檔案確實不存在。
+建議的解決方法是手動重新索引網站，或等到自動背景程式 reindexes 網站為止。
+
+
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>錯誤/問題：此搜尋結果未下載，因為它是無法自行下載的資料夾或其他 artefact，將會下載資料夾或文件庫內的任何專案。
+
+當您執行的 eDiscovery 搜尋包含 SharePoint 線上及一個位於商務位置的硬碟磁碟機時，您可能會看到此錯誤。 這表示我們將要嘗試並匯出索引中所報告的專案，但是它會變成資料夾，因此我們並未將其匯出。 如錯誤中所述，我們不會匯出資料夾專案，但會匯出其內容。
+
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>錯誤/問題：搜尋失敗，因為找不到收件者
 
