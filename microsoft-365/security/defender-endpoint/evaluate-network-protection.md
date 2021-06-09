@@ -39,7 +39,7 @@ ms.locfileid: "51570921"
 
 在稽核模式中啟用網路保護，以查看已封鎖的 IP 位址和網域。 您可以確定不會影響企業營運的應用程式，或瞭解封鎖發生的頻率。
 
-1. 在 [開始] 功能表中輸入 **powershell** ，以滑鼠右鍵按一下 [ **Windows PowerShell** ，然後選取 [以 **系統管理員身分執行**]
+1. 在 [開始] 功能表中輸入 **powershell** ，以滑鼠右鍵按一下 **Windows PowerShell** 並選取 [以 **系統管理員身分執行**]
 2. 輸入下列 Cmdlet：
 
     ```PowerShell
@@ -54,17 +54,17 @@ ms.locfileid: "51570921"
 
 將會允許網路連線，並且會顯示測試郵件。
 
-![通知連線已封鎖的範例通知：您的 IT 系統管理員造成 Windows 安全性封鎖此網路連線。 請與您的 IT 問訊台聯繫。](/microsoft-365/security/defender-endpoint/images/np-notif)
+![通知連線已封鎖的範例通知：您的 IT 系統管理員造成 Windows 安全性封鎖此網路連接。 請與您的 IT 問訊台聯繫。](/microsoft-365/security/defender-endpoint/images/np-notif)
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>在 Windows 事件檢視器中查看網路保護事件
 
-若要查看已封鎖的應用程式，請在 Microsoft-Windows-Windows-Defender/運作性記錄檔中開啟事件檢視器並篩選事件識別碼1125。 下表列出所有網路保護事件。
+若要查看已封鎖的應用程式，請在 Microsoft Windows Windows 中開啟事件檢視器並篩選事件識別碼1125。 下表列出所有網路保護事件。
 
-| 事件識別碼 | 提供/來源 | 說明 |
+| 事件識別碼 | 提供/來源 | 描述 |
 |-|-|-|
-|5007 | Windows Defender (運作)  | 設定變更時的事件 |
-|1125 | Windows Defender (運作)  | 審核網路連接時的事件 |
-|1126 | Windows Defender (運作)  | 封鎖網路連接時的事件 |
+|5007 | Windows Defender (操作)  | 設定變更時的事件 |
+|1125 | Windows Defender (操作)  | 審核網路連接時的事件 |
+|1126 | Windows Defender (操作)  | 封鎖網路連接時的事件 |
 
 ## <a name="see-also"></a>另請參閱
 

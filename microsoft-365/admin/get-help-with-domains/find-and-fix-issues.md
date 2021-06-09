@@ -33,7 +33,7 @@ ms.locfileid: "52623962"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>尋找並修正新增網域或 DNS 記錄之後所發生的問題
 
- 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 將您的網域設定為與 Microsoft 365 搭配使用可能是挑戰性的。 使用 DNS 系統的限制頗多，而且您網域的 DNS 設定也會影響到重要的商務活動，例如電子郵件！
 

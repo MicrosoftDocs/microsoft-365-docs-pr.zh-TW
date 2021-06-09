@@ -55,7 +55,7 @@ Contoso 有三個層級：
 
 大約25% 的 Contoso 工作力是僅限行動裝置。 地區中樞和衛星辦公室的工作人數會高出的百分比。 針對僅限行動工作者提供更好的支援是 Contoso 的重要業務目標。
 
-## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Microsoft 365 for enterprise 的設計考慮
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Microsoft 365 企業版的設計考慮
 
 Contoso IT 架構師發現下列為企業版部署 Microsoft 365 的設計需求因素：
 
@@ -71,9 +71,9 @@ Contoso IT 架構師發現下列為企業版部署 Microsoft 365 的設計需求
 
 ## <a name="next-step"></a>下一步
 
-深入瞭解 Contoso Corporation 的 [內部部署 IT 基礎結構](contoso-infra-needs.md) ，以及如何使用 Microsoft 365 for enterprise 來解決公司的業務需求。
+深入瞭解 Contoso Corporation 的[內部部署 IT 基礎結構](contoso-infra-needs.md)，以及公司的 Microsoft 365 如何以企業的方式來解決公司的業務需求。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 

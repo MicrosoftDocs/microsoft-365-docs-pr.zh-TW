@@ -25,11 +25,11 @@ ms.locfileid: "48754689"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>適用於 PowerShell 的 Microsoft 365 社群資源
 
-連線至這些社區以取得對等專案的連線，並取得您 PowerShell Microsoft 365 問題的答案。 
+連線這些社區以取得對等的訪問權，並取得 PowerShell Microsoft 365 問題的答案。 
   
-- [Microsoft 365 Microsoft 技術社區](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
+- [Microsoft 365Microsoft 技術 Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
-- [Exchange Server TechNet 的社區論壇](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
+- [Exchange ServerTechNet 社區論壇](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
 ## <a name="see-also"></a>另請參閱
 

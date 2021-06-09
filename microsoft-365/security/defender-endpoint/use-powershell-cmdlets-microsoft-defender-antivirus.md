@@ -1,6 +1,6 @@
 ---
 title: 使用 PowerShell Cmdlet 來設定及執行 Microsoft Defender AV
-description: 在 Windows 10 中，您可以使用 PowerShell Cmdlet 來執行掃描、更新安全性情報，以及變更 Microsoft Defender 防病毒中的設定。
+description: 在 Windows 10 中，您可以使用 PowerShell Cmdlet 來執行掃描、更新安全性情報，以及變更 Microsoft Defender 防毒軟體中的設定。
 keywords: 掃描、命令列、mpcmdrun、defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -24,7 +24,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/14/2021
 ms.locfileid: "51765296"
 ---
-# <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 PowerShell Cmdlet 來設定及管理 Microsoft Defender 防毒程式
+# <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 PowerShell Cmdlet 來設定及管理 Microsoft Defender 防毒軟體
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,18 +37,18 @@ ms.locfileid: "51765296"
 
 如需 Cmdlet 及其功能和可用參數的清單，請參閱 [Defender Cmdlet](/powershell/module/defender) 主題。
 
-PowerShell Cmdlet 在 Windows 伺服器環境中最為有用，但不依賴圖形使用者介面 (GUI) 來設定軟體。
+PowerShell Cmdlet 在 Windows 伺服器環境中最為有用，但不依賴圖形使用者介面 (GUI) 才能設定軟體。
 
 > [!NOTE]
-> PowerShell Cmdlet 不應該用作完整網路原則管理基礎結構（例如 [Microsoft 端點設定管理員](/configmgr)、 [群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))或 [Microsoft DEFENDER 防病毒群組原則 ADMX 範本](https://www.microsoft.com/download/101445)）的取代。
+> PowerShell Cmdlet 不應該用作完整網路原則管理基礎結構（如[Microsoft Endpoint Configuration Manager](/configmgr)、[群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))）或[Microsoft Defender 防毒軟體群組原則 ADMX 範本](https://www.microsoft.com/download/101445)的取代。
 
-PowerShell 所做的變更會影響部署變更之端點的本機設定。 這表示使用「群組原則」、「Microsoft 端點設定管理員」或 Microsoft Intune 部署原則，可以覆寫 PowerShell 所做的變更。
+PowerShell 所做的變更會影響部署變更之端點的本機設定。 這表示使用「群組原則」、「Microsoft Endpoint Configuration Manager」或「Microsoft Intune」原則進行的部署，可以覆寫 PowerShell 所做的變更。
 
 您可以 [設定哪些設定可以在本機上使用本機原則覆寫](configure-local-policy-overrides-microsoft-defender-antivirus.md)。
 
 PowerShell 一般會安裝在資料夾底下 `%SystemRoot%\system32\WindowsPowerShell` 。
 
-## <a name="use-microsoft-defender-antivirus-powershell-cmdlets"></a>使用 Microsoft Defender 防病毒 PowerShell Cmdlet
+## <a name="use-microsoft-defender-antivirus-powershell-cmdlets"></a>使用 Microsoft Defender 防毒軟體 PowerShell Cmdlet
 
 1. 在 Windows 搜尋列中，輸入 **powershell**。
 2. 從結果中選取 [ **Windows PowerShell** ]，以開啟介面。
@@ -68,5 +68,5 @@ Get-Help <cmdlet> -Online
 ## <a name="related-topics"></a>相關主題
 
 - [管理及設定工具的參考主題](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender 防病毒 Cmdlet](/powershell/module/defender)
+- [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender 防毒軟體Cmdlet](/powershell/module/defender)

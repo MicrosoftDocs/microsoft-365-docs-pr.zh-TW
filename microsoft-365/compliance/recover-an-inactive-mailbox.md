@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
-description: 瞭解如何將 Office 365 中非使用中信箱的內容轉換成包含非使用中信箱內容的新信箱。
+description: 瞭解如何將 Office 365 中非使用中信箱的內容，將其轉換成包含非使用中信箱內容的新信箱。
 ms.openlocfilehash: e7f5ea9e3d47bf6b7ee6de495d2f5f47984cdf8f
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,7 +30,7 @@ ms.locfileid: "50926171"
 
 - **復原非使用中的信箱。** 如果離職員工回到您的組織，或聘用新的員工來承擔離職員工的工作責任，您可以復原非使用中信箱的內容。 這個方法會將非作用中的信箱轉換成包含非使用中信箱內容的新的 active 信箱。 它會復原之後，非使用中的信箱不存在。 本主題中的程式說明此方法。
 
-- **還原非使用中的信箱。** 如果另一位員工承擔的是離職員工的工作責任，或是其他使用者需要存取非使用中信箱的內容，您可以還原 (或合併) 非使用中信箱的內容到現有的信箱。 您也可以從非使用中的信箱還原封存。 如需此方法的程式，請參閱 [Restore a 非使用中的信箱在 Office 365](restore-an-inactive-mailbox.md)。
+- **還原非使用中的信箱。** 如果另一位員工承擔的是離職員工的工作責任，或是其他使用者需要存取非使用中信箱的內容，您可以還原 (或合併) 非使用中信箱的內容到現有的信箱。 您也可以從非使用中的信箱還原封存。 如需此方法的程式，請參閱[還原 Office 365 中的非使用中信箱](restore-an-inactive-mailbox.md)。
 
 請參閱 [詳細資訊](#more-information) 一節，以取得復原和還原非使用中信箱之差異的詳細資訊，以及復原非使用中信箱時所發生狀況的描述。
 
@@ -73,7 +73,7 @@ ms.locfileid: "50926171"
 
    已復原之非使用中信箱的主要 SMTP 位址，會具有與  *MicrosoftOnlineServicesID*  參數所指定的值相同的值。
 
-復原非使用中的信箱之後，也會建立新的使用者帳戶。 您必須指派授權來啟用此使用者帳戶。 若要在 Microsoft 365 系統管理中心中指派授權，請參閱 [同時新增使用者並指派授權](../admin/add-users/add-users.md)。
+復原非使用中的信箱之後，也會建立新的使用者帳戶。 您必須指派授權來啟用此使用者帳戶。 若要在 Microsoft 365 系統管理中心中指派授權，請參閱[同時新增使用者與指派授權](../admin/add-users/add-users.md)。
 
 ## <a name="more-information"></a>其他資訊
 
@@ -87,13 +87,13 @@ ms.locfileid: "50926171"
 
     - 已從復原的信箱中移除 **In-Place 保留** In-Place 保留。 這表示已復原的信箱會從任何 In-Place 保留或 In-Place eDiscovery 搜尋中移除成為來源信箱。
 
-    - **使用保留鎖定的 Microsoft 365 保留原則。** 如果將非作用中的信箱指派給保留原則，且保留鎖定 (稱為「 *鎖定保留原則* 」) 時，已復原的信箱會被指派至相同的鎖定保留原則。 如需已鎖定保留原則的詳細資訊，請參閱 [[使用保留鎖定來限制保留原則和保留標籤原則的變更](retention-preservation-lock.md)。
+    - **使用保留鎖定 Microsoft 365 保留原則。** 如果將非作用中的信箱指派給保留原則，且保留鎖定 (稱為「 *鎖定保留原則* 」) 時，已復原的信箱會被指派至相同的鎖定保留原則。 如需已鎖定保留原則的詳細資訊，請參閱 [[使用保留鎖定來限制保留原則和保留標籤原則的變更](retention-preservation-lock.md)。
 
-    - **Microsoft 365 保留原則，未保留鎖定。** 非作用中的信箱會從套用至它的任何已解除鎖定的 Microsoft 365 保留原則中移除。 不過，已在復原的信箱上啟用訴訟暫止，以防止刪除超出特定時期之內容的任何整個組織保留原則刪除信箱內容。 您可以保留或移除訴訟暫止狀態。 如需詳細資訊，請參閱 [建立訴訟暫](create-a-litigation-hold.md)止。
+    - **Microsoft 365 保留原則，但不保留鎖定。** 非作用中的信箱會從套用至它的任何已解除鎖定的 Microsoft 365 保留原則中移除。 不過，已在復原的信箱上啟用訴訟暫止，以防止刪除超出特定時期之內容的任何整個組織保留原則刪除信箱內容。 您可以保留或移除訴訟暫止狀態。 如需詳細資訊，請參閱 [建立訴訟暫](create-a-litigation-hold.md)止。
 
-  - 由 **RetainDeletedItemsFor** 信箱) 屬性定義的單一專案復原週期 (會設定為30天。 通常，在 Exchange Online 中建立新的信箱時，此保留期間會設定為14天。 將此值設定為30天的最大值，可讓您更多時間來復原已永久刪除 (或從非使用中信箱) 中清除的任何資料。 您也可以停用單一專案復原，或將單一專案恢復週期設回預設值14天。 如需詳細資訊，請參閱 [為信箱啟用或停用單一項目復原](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery)。
+  - 由 **RetainDeletedItemsFor** 信箱) 屬性定義的單一專案復原週期 (會設定為30天。 一般來說，在 Exchange Online 中建立新的信箱時，此保留期間會設定為14天。 將此值設定為30天的最大值，可讓您更多時間來復原已永久刪除 (或從非使用中信箱) 中清除的任何資料。 您也可以停用單一專案復原，或將單一專案恢復週期設回預設值14天。 如需詳細資訊，請參閱 [為信箱啟用或停用單一項目復原](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery)。
 
-  - 啟用保留功能，保留期間設定為30天。 這表示指派給新信箱的預設 Exchange 保留原則和整個組織或 Exchange 範圍的 Microsoft 365 保留原則，不會處理30天。 這可讓退回的員工或已復原的非作用中信箱時間的新擁有者管理舊郵件。 否則，Exchange 或 Microsoft 365 保留原則可能會刪除舊的信箱專案 (或將專案移至封存信箱（如果已根據 Exchange 或 Microsoft 365 保留原則所設定的設定，以已到期) 開啟）。 30天后，保留狀態會到期， **RetentionHoldEnabled** 信箱屬性設定為 **False**，受管理的資料夾助理會開始處理指派給信箱的原則。 如果您不需要這種額外時間，您只需要移除保留功能。 或者，您可以使用 **Set-Mailbox-EndDateForRetentionHold** 命令來增加保留功能的持續時間。 如需詳細資訊，請參閱 [將信箱設為保留狀態](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
+  - 啟用保留功能，保留期間設定為30天。 這表示預設 Exchange 保留原則，以及指派給新信箱的任何整個組織或全 Exchange Microsoft 365 保留原則，都不會處理30天。 這可讓退回的員工或已復原的非作用中信箱時間的新擁有者管理舊郵件。 否則，Exchange 或 Microsoft 365 保留原則可能會刪除舊的信箱專案 (或將專案移至封存信箱（如果已啟用) ，其已根據 Exchange 或 Microsoft 365 保留原則所設定的設定而過期）。 30天后，保留狀態會到期， **RetentionHoldEnabled** 信箱屬性設定為 **False**，受管理的資料夾助理會開始處理指派給信箱的原則。 如果您不需要這種額外時間，您只需要移除保留功能。 或者，您可以使用 **Set-Mailbox-EndDateForRetentionHold** 命令來增加保留功能的持續時間。 如需詳細資訊，請參閱 [將信箱設為保留狀態](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
 
 - **如果您需要保留非使用中信箱的原始狀態，請在復原的信箱上放置保留。** 若要防止新的信箱擁有者或保留原則永久刪除已復原的非使用中信箱的任何郵件，您可以將信箱設為訴訟暫止狀態。 如需詳細資訊，請參閱 [建立訴訟暫](./create-a-litigation-hold.md)止。
 
@@ -109,4 +109,4 @@ ms.locfileid: "50926171"
 
   如果 **ExternalDirectoryObjectId** 屬性沒有值，表示信箱保留期間已到期，您可以執行 **New-Mailbox-InactiveMailbox** 命令來復原非使用中的信箱。 如果 **ExternalDirectoryObjectId** 屬性的值為虛刪除的信箱保留期間尚未到期，您必須還原使用者帳戶以復原信箱。 請參閱[刪除貴組織中的使用者](../admin/add-users/delete-a-user.md)。
 
-- **在復原非使用中的信箱之後，請考慮啟用封存信箱。** 這可讓傳回的使用者或新員工將舊郵件移至封存信箱。 當保留狀態到期時，屬於指派給 Exchange Online 信箱之預設 Exchange 保留原則一部分的封存原則，將會將兩年或更舊的專案移至封存信箱。 如果您未啟用封存信箱，則兩年以前的專案會保留在使用者的主要信箱中。 如需詳細資訊，請參閱 [啟用封存信箱](enable-archive-mailboxes.md)。
+- **在復原非使用中的信箱之後，請考慮啟用封存信箱。** 這可讓傳回的使用者或新員工將舊郵件移至封存信箱。 而且當保留狀態到期時，屬於預設 Exchange 保留原則一部分指派給 Exchange Online 信箱的封存原則，會將兩年或更舊的專案移至封存信箱。 如果您未啟用封存信箱，則兩年以前的專案會保留在使用者的主要信箱中。 如需詳細資訊，請參閱 [啟用封存信箱](enable-archive-mailboxes.md)。

@@ -25,7 +25,7 @@ ms.locfileid: "50926553"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>收集電子文件探索診斷資訊
 
-當您開啟與核心 eDiscovery 或 Advanced eDiscovery 相關的支援案例時，有時 Microsoft 支援工程師需要您問題的特定資訊。 本文提供如何收集診斷資訊以協助工程師調查和解決問題的指導方針。 一般來說，您不需要先收集此資訊，直到 Microsoft 支援工程師要求您這麼做。
+當您開啟與核心 eDiscovery 或 Advanced eDiscovery 相關的支援案例時，偶爾 Microsoft 支援工程師需要您問題的特定資訊。 本文提供如何收集診斷資訊以協助工程師調查和解決問題的指導方針。 一般來說，您不需要先收集此資訊，直到 Microsoft 支援工程師要求您這麼做。
 
 > [!IMPORTANT]
 > 本文所述的指令程式和診斷資訊輸出可能包含有關組織中訴訟或內部調查的敏感資訊。 在將原始診斷資訊傳送至 Microsoft 支援之前，您應該查看資訊，並將任何敏感資訊 (，例如，將其他方的名稱或其他資訊以) 取代，以進行訴訟或調查 `XXXXXXX` 。 使用此方法也會向 Microsoft 支援工程師指出資訊已 redacted。
@@ -39,7 +39,7 @@ ms.locfileid: "50926553"
 檢查所產生的文字檔並 redacting 機密資訊之後，將其傳送給 Microsoft 支援工程師，以在您的案例上運作。
 
 > [!NOTE]
-> 您也可以執行本節中的命令，針對 Microsoft 365 規範中心的 [ **內容搜尋** ] 頁面上所列的搜尋和匯出收集診斷資訊。
+> 您也可以執行本節中的命令來收集 Microsoft 365 規範中心的 **內容搜尋** 頁面上所列之搜尋和匯出的診斷資訊。
 
 ### <a name="collect-information-about-searches"></a>收集搜尋的相關資訊
 
@@ -67,25 +67,25 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>收集所有案例資訊
 
-在某些情況下，Microsoft 支援人員在調查您的問題時，並不會體現出所需的資訊。 在此情況下，您可以收集核心 eDiscovery 案例的所有診斷資訊。 下列命令中的 *核心 eDiscovery 案例名稱* 與顯示于 Microsoft 365 規範中心之 **核心 ediscovery** 頁面上的案例名稱相同。
+在某些情況下，Microsoft 支援人員在調查您的問題時，並不會體現出所需的資訊。 在此情況下，您可以收集核心 eDiscovery 案例的所有診斷資訊。 下列命令中的 *核心 eDiscovery 案例名稱*，與 Microsoft 365 規範中心的 **核心 ediscovery** 頁面上顯示之案例的名稱相同。
 
 ```powershell
 Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
-## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>收集高級 eDiscovery 的診斷資訊
+## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>收集 Advanced eDiscovery 的診斷資訊
 
-在高級 eDiscovery 案例中的 [ **設定** ] 索引標籤可讓您快速複製案例的診斷資訊。 診斷資訊會儲存至剪貼簿，這樣您就可以將其貼到文字檔，並傳送給 Microsoft 支援人員。
+Advanced eDiscovery 案例中的 [**設定**] 索引標籤可讓您快速複製案例的診斷資訊。 診斷資訊會儲存至剪貼簿，這樣您就可以將其貼到文字檔，並傳送給 Microsoft 支援人員。
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [ **顯示所有 > EDiscovery > Advanced**。
 
-2. 選取案例，然後按一下 [ **設定** ] 索引標籤。
+2. 選取案例，然後按一下 [**設定**] 索引標籤。
 
 3. 在 [ **案例資訊**] 下，按一下 [ **選取**]。
 
 4. 在飛入頁面上，按一下 [ **複製診斷資訊** ]，將資訊複製到剪貼簿。
 
-5. 在記事本) 中開啟文字檔 (，然後將資訊貼到文字檔中。
+5. 在記事本) 中開啟文字檔 (，然後貼上文字檔中的資訊。
 
 6. 儲存文字檔，並將其命名 `AeD Diagnostic Info YYYY.MM.DD` 為 (例如) 所示 `AeD Diagnostic Info 2020.11.03` 。
 

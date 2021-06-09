@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 您可以在高級 eDiscovery 的審閱集中修正檔中的處理錯誤，而不必遵循大量的錯誤修正程式。
+description: 您可以在 Advanced eDiscovery 中的審閱集內修正檔中的處理錯誤，而不必遵循大量的錯誤修正程式。
 ms.openlocfilehash: 8e5d8d00f507dc5792a1beda018d4c76632b82f7
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/05/2021
 ms.locfileid: "49751580"
 ---
-# <a name="single-item-error-remediation-in-advanced-ediscovery"></a>高級 eDiscovery 中的單一專案錯誤修正
+# <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Advanced eDiscovery 中的單一專案錯誤修正
 
-錯誤修正功能可讓高級 eDiscovery 使用者修正導致「高級 eDiscovery」無法正確處理內容的資料問題。 例如，無法處理受密碼保護的檔案，因為這些檔案已鎖定或已加密。 先前，您只能使用 [此工作流程](error-remediation-when-processing-data-in-advanced-ediscovery.md)大量修正錯誤。 不過，如果您不確定這些檔案中的任何檔案是否都回應您正在調查的案例，有時在多個檔案中修復錯誤就沒有意義。 在您有機會檢查檔案中繼資料 (例如檔案位置或誰具有存取權) ，以協助您進行回應的前期決策之前，也可能無法修正錯誤。 稱為 *單一專案錯誤修正* 的新功能可讓 eDiscovery 管理員以處理錯誤來查看檔案中繼資料，並在必要時直接在複查集中修正錯誤。 本文討論如何使用審閱集中的處理錯誤來識別、忽略和修正檔案。
+錯誤修正讓 Advanced eDiscovery 使用者能夠修正導致 Advanced eDiscovery 無法正確處理內容的資料問題。 例如，無法處理受密碼保護的檔案，因為這些檔案已鎖定或已加密。 先前，您只能使用 [此工作流程](error-remediation-when-processing-data-in-advanced-ediscovery.md)大量修正錯誤。 不過，如果您不確定這些檔案中的任何檔案是否都回應您正在調查的案例，有時在多個檔案中修復錯誤就沒有意義。 在您有機會檢查檔案中繼資料 (例如檔案位置或誰具有存取權) ，以協助您進行回應的前期決策之前，也可能無法修正錯誤。 稱為 *單一專案錯誤修正* 的新功能可讓 eDiscovery 管理員以處理錯誤來查看檔案中繼資料，並在必要時直接在複查集中修正錯誤。 本文討論如何使用審閱集中的處理錯誤來識別、忽略和修正檔案。
 
 ## <a name="identify-documents-with-errors"></a>識別錯誤的檔
 

@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 透過查看在高級 eDiscovery 中執行集合搜尋之後所產生的統計資料，以驗證搜尋結果。
+description: 查看您在 Advanced eDiscovery 中執行集合搜尋之後所產生的統計資料，以驗證搜尋結果。
 ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/05/2021
 ms.locfileid: "49750774"
 ---
-# <a name="search-statistics-in-advanced-ediscovery"></a>在高級 eDiscovery 中搜尋統計資料
+# <a name="search-statistics-in-advanced-ediscovery"></a>搜尋 Advanced eDiscovery 中的統計資料
 
 驗證搜尋結果的一種方式是查看結果的統計資料，以確保其符合您的預期。 搜尋完成時，會在 [搜尋詳細資料] 浮出控制項上顯示高層級統計資料：
 
@@ -65,7 +65,7 @@ ms.locfileid: "49750774"
   
   - 當您搜尋所有的 contentin 信箱 (但未指定任何關鍵字) 時，實際的查詢 (大小 >= 0) ，這樣就會傳回所有專案。
   
-  - 當您搜尋商務網站的線上 SharePoint 和 OneDrive 時，會新增下列兩個元件：
+  - 當您搜尋 SharePoint 線上及商務用 OneDrive 網站時，會新增下列兩個元件：
     
     - 不 IsExternalContent:1-排除內部部署 SharePoint 組織中的任何內容
     

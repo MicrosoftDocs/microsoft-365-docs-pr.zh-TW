@@ -1,5 +1,5 @@
 ---
-title: 在高級電子檔探索中設定律師-用戶端許可權偵測
+title: 在 Advanced eDiscovery 中設定律師-用戶端許可權偵測
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 使用律師-用戶端許可權偵測模型，在查看高級 eDiscovery 案例中的內容時，使用具備許可權內容的機器學習式偵測。
+description: 使用律師-用戶端許可權偵測模型，在審閱 Advanced eDiscovery 案例中的內容時，使用具有許可權內容的機器學習式偵測。
 ms.openlocfilehash: 73a0efeece7bc331045e9bbe1a1da56f9fd24700
 ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
@@ -23,25 +23,25 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 09/03/2020
 ms.locfileid: "47358039"
 ---
-# <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>在高級電子檔探索中設定律師-用戶端許可權偵測
+# <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>在 Advanced eDiscovery 中設定律師-用戶端許可權偵測
 
-任何 eDiscovery 程式的「檢查」階段中，主要和昂貴的層面都是查看檔中的許可權內容。 Advanced eDiscovery 提供許可權內容的機器教學型偵測，以提高此程式的效率。 這項功能稱為「 *律師-用戶端許可權偵測*」。
+任何 eDiscovery 程式的「檢查」階段中，主要和昂貴的層面都是查看檔中的許可權內容。 Advanced eDiscovery 提供許可權內容的機器教學型偵測，使此程式更有效率。 這項功能稱為「 *律師-用戶端許可權偵測*」。
 
-## <a name="how-does-it-work"></a>它的運作方式為何？
+## <a name="how-does-it-work"></a>它如何運作？
 
 當已啟用律師-用戶端許可權偵測時，當您分析審閱集中 [的資料](analyzing-data-in-review-set.md) 時，律師-用戶端許可權偵測模型會處理所有審閱集中的檔。 模型會尋找兩件事：
 
 - 許可權內容–該模型使用電腦學習，判斷檔中包含法律性質內容的可能性。
 
-- 參與者–在設定律師-用戶端許可權偵測時，您必須提交組織的律師清單。 然後，模型會比較檔的參與者清單與律師清單，以判斷檔是否至少有一個律師參與者。
+- 參與者–在設定律師-用戶端許可權偵測時，您必須提交組織的律師清單。 然後，此模型會比較文件的參與者與律師清單，以判斷文件是否有至少一位律師參與者。
 
 模型產生每個檔的下列三個屬性：
 
-- **AttorneyClientPrivilegeScore：** 檔本質上為法律檔的可能性。分數的值介於 **0** 與 **1**之間。
+- **AttorneyClientPrivilegeScore：** 檔本質上為法律檔的可能性。分數的值介於 **0** 與 **1** 之間。
 
-- **HasAttorney：** 如果其中一位檔參與者已列在律師清單中，則此屬性會設為 **true** ;否則值為 **false**。 如果您的組織未上傳律師清單，此值也會設定為 **false** 。
+- **HasAttorney：** 如果其中一位檔參與者已列在律師清單中，則此屬性會設為 **true** ;否則值為 **false**。 如果組織未上傳律師清單，此值也會設定為 **false**。
 
-- **IsPrivilege：** 如果**AttorneyClientPrivilegeScore**的值高於臨界值*或*檔有律師人員，則此屬性會設為**true** 。否則，此值會設為**false**。
+- **IsPrivilege：** 如果 **AttorneyClientPrivilegeScore** 的值高於臨界值 *或* 檔有律師人員，則此屬性會設為 **true** 。否則，此值會設為 **false**。
 
 這些屬性 (及其對應值) 會新增至審閱集內檔的檔案中繼資料中，如下列螢幕擷取畫面所示：
 
@@ -55,27 +55,27 @@ ms.locfileid: "47358039"
 
 ### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>步驟1：開啟律師-用戶端許可權偵測
 
-您組織中的 eDiscovery 系統管理員的人員 (eDiscovery 管理員角色群組中的 eDiscovery 管理員子群組成員) 必須讓模型能夠在您的高級 eDiscovery 案例中使用。
+您組織中的 ediscovery 系統管理員的人員 (ediscovery 管理員角色群組中的 ediscovery 管理員子群組成員) 必須讓模型能夠在您的 Advanced eDiscovery 案例中使用。
 
-1. 在安全性 & 規範中心內，移至 **eDiscovery > Advanced ediscovery**。
+1. 在 [安全性 & 規範中心] 中，移至 [ **eDiscovery > Advanced eDiscovery**]。
 
-2. 在 [ **Advanced eDiscovery** ] 首頁上，按一下 [ **設定** ] 方塊中的 [ **設定全域分析設定**]。
+2. 在 [ **Advanced eDiscovery** ] 首頁上，按一下 [**設定**] 方塊中的 [**設定全域分析設定**]。
 
    ![選取「設定實驗功能」](../media/AeDExperimentalFeatures.png)
 
 3. 在 [ **分析設定** ] 索引標籤上，選取 [ **管理律師-用戶端許可權] 設定**。
 
-4. 在 [ **律師-用戶端許可權** ] 飛入頁面上，使用 [切換] 開啟功能，然後選取 [ **儲存**]。
+4. 在 [律師與當事人通訊保密特權]**** 飛出視窗頁面上，使用切換開關來開啟該功能，然後選取 ****[儲存]。
 
-### <a name="step-2-upload-a-list-of-attorneys-optional"></a>步驟2：上傳律師清單 (選用) 
+### <a name="step-2-upload-a-list-of-attorneys-optional"></a>步驟2： Upload 律師清單 (選用) 
 
 若要充分利用律師-用戶端許可權偵測模型，並使用先前所 **述的律師或** 可能的 **特權** 偵測，我們建議您針對您的組織運作的律師和法務人員，上傳電子郵件地址清單。 
 
 若要上傳律師清單以供律師-用戶端許可權偵測模型使用：
 
-1. 建立不含標題列 (的 .csv 檔案) 並在個別的列上新增每個適當人員的電子郵件地址。 將此檔案儲存到本機電腦。
+1. 建立 .csv 檔案 (不含標題列)，並在不同行新增每個適當人員的電子郵件地址。將這個檔案儲存到您的本機電腦。
 
-2. 在 [ **Advanced eDiscovery** 首頁] 的 [ **設定** ] 磚中，選取 [設定 **實驗功能**]，然後選取 [ **管理律師-用戶端許可權] 設定**。
+2. 在 [ **Advanced eDiscovery** ] 首頁的 [**設定**] 方塊中，選取 [**設定實驗功能**]，然後選取 [**管理律師-用戶端許可權] 設定**。
 
    隨即會顯示 [ **律師-用戶端許可權** ] 頁面，且已開啟「 **律師-用戶端」許可權偵測** 切換功能。
 
@@ -91,7 +91,7 @@ ms.locfileid: "47358039"
 
 ### <a name="step-1-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>步驟1：使用律師-用戶端許可權偵測模型建立智慧標籤群組
 
-透過智慧標籤群組查看律師中的律師-用戶端許可權偵測的其中一個主要方式是使用智慧標籤群組。 智慧標籤群組會指出律師費-用戶端許可權偵測的結果，並在智慧標籤群組中的標記旁邊以行顯示結果。 這可讓您在檔檢查期間快速識別可能的許可權檔。 此外，您也可以使用智慧標籤群組中的標記，將檔標記為特權或非特權。 如需智慧標籤的相關資訊，請參閱 [在 Advanced eDiscovery 中設定智慧標籤](smart-tags.md)。
+在檢閱過程中查看律師與當事人通訊保密特權偵測結果的主要方法之一，就是使用智慧標籤群組。 智慧標籤群組會指出律師與當事人通訊保密特權偵測的結果，並在智慧標籤群組中的標籤旁邊並排顯示結果。 這可讓您在檔檢查期間快速識別可能的許可權檔。 此外，您也可以使用智慧標籤群組中的標籤，將文件標記為有通訊保密特權或沒有通訊保密特權。 如需智慧標籤的詳細資訊，請參閱[在 Advanced eDiscovery 中設定智慧標籤](smart-tags.md)。
 
 1. 在包含您在步驟1中分析的檔的 [檢查] 集中，選取 [ **管理複查集** ]，然後選取 [ **管理標記**]。
  
@@ -99,7 +99,7 @@ ms.locfileid: "47358039"
 
    ![選取「新增智慧標籤群組」](../media/AeDCreateSmartTag.png)
 
-3. 在 [**選擇智慧標籤的模型**] 頁面上，選擇 [按**律師-用戶端許可權**] 旁的 [**選取**]。
+3. 在 [**選擇智慧標籤的模型**] 頁面上，選擇 [按 **律師-用戶端許可權**] 旁的 [**選取**]。
 
    隨即會顯示名為「 **律師-用戶端許可權** 的標籤群組。 它包含兩個子標記，其名稱為 **正值** 和 **負值**，對應于模型所產生的可能結果。
 
@@ -109,7 +109,7 @@ ms.locfileid: "47358039"
 
 ### <a name="step-2-analyze-a-review-set"></a>步驟2：分析複查集
 
-當您分析審閱集中的檔時，也會執行律師-用戶端許可權偵測模型，並在 [其運作方式](#how-does-it-work) 中 (所述的對應屬性，將會新增至審閱集合中的每個檔。 如需分析「複查集中的資料」的詳細資訊，請參閱 [在 Advanced eDiscovery 中分析複查集中的資料](analyzing-data-in-review-set.md)。
+當您分析審閱集中的檔時，也會執行律師-用戶端許可權偵測模型，並在 [其運作方式](#how-does-it-work) 中 (所述的對應屬性，將會新增至審閱集合中的每個檔。 如需分析「複查集」中資料的詳細資訊，請參閱[在 Advanced eDiscovery 中分析複查集中的資料](analyzing-data-in-review-set.md)。
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>步驟3：使用智慧標籤群組檢查許可權內容
 

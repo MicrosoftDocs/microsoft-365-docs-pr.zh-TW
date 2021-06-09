@@ -32,7 +32,7 @@ ms.locfileid: "51571029"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Secure 得分](microsoft-secure-score.md) 是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
+[Microsoft Secure 得分](microsoft-secure-score.md) 是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在 https://security.microsoft.com/securescore [Microsoft 365 安全性中心](overview-security-center.md)找到它。
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>深入瞭解已影響分數的活動
 

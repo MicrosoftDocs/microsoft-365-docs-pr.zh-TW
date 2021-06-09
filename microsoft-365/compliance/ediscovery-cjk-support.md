@@ -1,5 +1,5 @@
 ---
-title: 針對高級電子檔探索的 CJK/Double Byte 支援
+title: Advanced eDiscovery 的 CJK/雙位元組支援
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 瞭解 Microsoft 365 中的「高級 eDiscovery」如何支援中文、日文和韓文 (CJK) 語言，使用雙位元組字元集。
+description: 瞭解 Microsoft 365 中的 Advanced eDiscovery 如何支援中文、日文和韓文 (CJK) 語言，使用雙位元組字元集。
 ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50926599"
 ---
-# <a name="cjk-language-support-for-advanced-ediscovery"></a>適用于 Advanced eDiscovery 的 CJK 語言支援
+# <a name="cjk-language-support-for-advanced-ediscovery"></a>Advanced eDiscovery 的 CJK 語言支援
 
-Advanced eDiscovery 支援雙位元組字元集語言 (包括簡化的中文、繁體中文、日文和韓文，這兩種是在審校集中稱為下列高級案例的 *CJK* 語言) ：
+Advanced eDiscovery 支援雙位元組字元集語言 (這包括簡化的繁體中文、繁體中文、日文和韓文，這兩種是在審校集中稱為下列高級案例的 *CJK* 語言) ：
 
 - 當您 [查詢審閱集中的資料](review-set-search.md)。
 
@@ -37,7 +37,7 @@ Advanced eDiscovery 支援雙位元組字元集語言 (包括簡化的中文、�
 
 **如何建立搜尋來收集包含 CJK 字元的專案？**
 
-在高級 eDiscovery 中搜尋內容時，您可以使用 CJK 字元做為 [關鍵字搜尋](building-search-queries.md#keyword-searches)、 [關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md) 。 在核心 eDiscovery 和內容搜尋中搜尋內容時，也支援搜尋 CJK 字元。
+在 Advanced eDiscovery 中搜尋內容時，您可以使用 CJK 字元做為[關鍵字搜尋](building-search-queries.md#keyword-searches)、[關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。 在核心 eDiscovery 和內容搜尋中搜尋內容時，也支援搜尋 CJK 字元。
 
 我們為所有 [搜尋運算子](keyword-queries-and-search-conditions.md#search-operators) 和 [搜尋條件](keyword-queries-and-search-conditions.md#search-conditions)提供 CJK 支援，包括 boolean 運算子 **和**、 **或**、 **NOT** 和 **NEAR**。
 
@@ -47,13 +47,13 @@ Advanced eDiscovery 支援雙位元組字元集語言 (包括簡化的中文、�
 
 這取決於您的搜尋案例。
 
-- 當您在 [Advanced eDiscovery] 中 [查詢複查集中的資料](review-set-search.md) 時，您可以搜尋多種語言。
+- 當您在 Advanced eDiscovery 中[查詢審閱集合](review-set-search.md)中的資料時，您可以搜尋多種語言。
 
 - 當您 [建立搜尋以收集資料](create-search-to-collect-data.md)時，請針對您所針對的每種語言建立不同的搜尋。 例如，如果您正在搜尋包含中文和韓文的檔，請選取 [中文] 做為第一個查詢，然後選取 [韓文] 做為第二個查詢。
 
 **我沒有看到 [查詢語言-國家/地區] 圖示，以選取審閱集中的查詢語言。如何在複查集搜尋中指定查詢語言？**
 
-若為複查集查詢，您不需要指定檔語言。 當您將內容新增至審閱集時，「高級 eDiscovery」會自動偵測檔語言。 這可協助您優化檢查集合中的查詢結果。
+若為複查集查詢，您不需要指定檔語言。 Advanced eDiscovery 會在您將內容新增至審閱集時，自動偵測檔語言。 這可協助您優化檢查集合中的查詢結果。
 
 **我是否可以查看檔案 [中繼資料](view-documents-in-review-set.md#file-metadata)中偵測到的語言？**
 
@@ -69,7 +69,7 @@ Advanced eDiscovery 支援雙位元組字元集語言 (包括簡化的中文、�
 
 **我要如何將我的顯示語言變更為中文、日文或韓文？**
 
-如需如何變更顯示語言和時區的詳細資訊，請參閱 how [to 設定 Office 365 的語言和地區設定](/office365/troubleshoot/access-management/set-language-and-region)。
+如需如何變更顯示語言和時區的詳細資訊，請參閱 how [to set Office 365 的語言和地區設定](/office365/troubleshoot/access-management/set-language-and-region)。
 
 ## <a name="known-issues"></a>已知問題
 

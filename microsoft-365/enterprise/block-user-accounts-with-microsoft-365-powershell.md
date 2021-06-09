@@ -18,7 +18,7 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: 如何使用 PowerShell 來封鎖和取消封鎖 Microsoft 365 帳戶的存取。
+description: 如何使用 PowerShell 來封鎖和取消封鎖 Microsoft 365 帳戶的存取權。
 ms.openlocfilehash: c1a79d925965fafd796033182098e68e26a81473
 ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
@@ -30,11 +30,11 @@ ms.locfileid: "48754677"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-當您封鎖存取 Microsoft 365 帳戶時，可防止任何人使用該帳戶登入，並存取您的 Microsoft 365 組織中的服務和資料。 您可以使用 PowerShell 來封鎖個別或多個使用者帳戶的存取權。
+當您封鎖 Microsoft 365 帳戶的存取權時，可防止任何人使用該帳戶登入，並存取您 Microsoft 365 組織中的服務和資料。 您可以使用 PowerShell 來封鎖個別或多個使用者帳戶的存取權。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
  
 ### <a name="block-access-to-individual-user-accounts"></a>封鎖個別使用者帳戶的存取
 
@@ -45,9 +45,9 @@ Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $fa
 ```
 
 > [!NOTE]
-> **Set-AzureAD**指令程式中的 *-ObjectID*參數會接受帳戶登入名稱，也稱為使用者主要名稱，或者是帳戶的物件識別碼。
+> **Set-AzureAD** 指令程式中的 *-ObjectID* 參數會接受帳戶登入名稱，也稱為使用者主要名稱，或者是帳戶的物件識別碼。
   
-本範例會封鎖存取 *fabricec@litwareinc.com*的使用者帳戶。
+本範例會封鎖存取 *fabricec@litwareinc.com* 的使用者帳戶。
   
 ```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
@@ -67,7 +67,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-此範例會顯示使用者  *Caleb sills 帳戶*的使用者帳戶 UPN。
+此範例會顯示使用者  *Caleb sills 帳戶* 的使用者帳戶 UPN。
   
 ```powershell
 $userName="Caleb Sills"
@@ -98,7 +98,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-在下列命令中，範例文字檔會 *C:\My Documents\Accounts.txt*中。 請將此檔案名取代為您的文字檔的路徑和檔案名。
+在下列命令中，範例文字檔會 *C:\My Documents\Accounts.txt* 中。 請將此檔案名取代為您的文字檔的路徑和檔案名。
   
 若要封鎖對文字檔中所列帳戶的存取，請執行下列命令：
     
@@ -114,7 +114,7 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
     
 ### <a name="block-individual-user-accounts"></a>封鎖個別的使用者帳戶
 
@@ -125,7 +125,7 @@ Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential
 ```
 
 >[!Note]
->PowerShell 核心不支援 Windows PowerShell 模組的 Microsoft Azure Active Directory 模組，以及其名稱中具有 *Msol* 的 Cmdlet。 您必須從 [Windows PowerShell 執行這些 Cmdlet。
+>PowerShell 核心不支援 Windows PowerShell 模組的 Microsoft Azure Active Directory 模組，以及其名稱中具有 *Msol* 的 Cmdlet。 您必須從 Windows PowerShell 執行這些 Cmdlet。
 
 本範例會封鎖存取使用者帳戶 *fabricec \@ litwareinc.com*。
   
@@ -155,7 +155,7 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-在下列命令中，範例文字檔會 *C:\My Documents\Accounts.txt*中。 請將此檔案名取代為您的文字檔的路徑和檔案名。
+在下列命令中，範例文字檔會 *C:\My Documents\Accounts.txt* 中。 請將此檔案名取代為您的文字檔的路徑和檔案名。
     
 若要封鎖對文字檔中所列帳戶的存取，請執行下列命令：
     

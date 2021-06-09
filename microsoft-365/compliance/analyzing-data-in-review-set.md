@@ -1,5 +1,5 @@
 ---
-title: 在高級 eDiscovery 中分析複查集中的資料
+title: 在 Advanced eDiscovery 中分析審閱集中的資料
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 深入瞭解分析高級 eDiscovery 案例時可用於組織檔組的工具。
+description: 瞭解在分析 Advanced eDiscovery 案例時可用於組織檔組的工具。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
@@ -24,9 +24,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/05/2021
 ms.locfileid: "49751368"
 ---
-# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>在高級 eDiscovery 中分析複查集中的資料
+# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>在 Advanced eDiscovery 中分析審閱集中的資料
 
-當收集的檔數目很大時，可能很難全部查看。 「高級 eDiscovery」提供許多工具來分析檔，以減少檔數量，以減少不會遺失資訊的檔數量，以及協助您以一致的方式組織檔。 若要深入瞭解這些功能，請參閱：
+當收集的檔數目很大時，可能很難全部查看。 Advanced eDiscovery 提供許多工具來分析檔，以減少要檢查的檔量，而不會遺失資訊，以及協助您以一致的方式組織檔。 若要深入瞭解這些功能，請參閱：
 
 - [近似重複項偵測](near-duplicate-detection-in-advanced-ediscovery.md)
 

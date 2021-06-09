@@ -1,5 +1,5 @@
 ---
-title: 在您的學習管理系統中使用 Microsoft 團隊類別
+title: 使用具有 Blackboard 的 Microsoft Teams 類別
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,26 +12,26 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: 整合您的教學管理系統中的 Microsoft 團隊類別
-ms.openlocfilehash: 18d33225dd57932af20421c6b3b5dc4fe3b397b8
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: 整合您的教學管理系統中 Microsoft Teams 類別
+ms.openlocfilehash: 287b9f1cadfdcf3adafdca91f4a351865bbcf3bc
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327731"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821268"
 ---
-# <a name="use-microsoft-teams-classes-in-your-learning-management-system"></a>在您的學習管理系統中使用 Microsoft 團隊類別
+# <a name="use-microsoft-teams-classes-with-blackboard"></a>使用具有 Blackboard 的 Microsoft Teams 類別
 
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
 
-Microsoft 團隊類別小組是一種教學工具互通性 (LTI) 應用程式，可協助教育者和學生輕鬆流覽其教學管理系統 (LMS) 和團隊。 使用者可以直接從 LMS 中存取與其課程相關聯的類別小組。
+Microsoft Teams 類別是 (LTI) 應用程式的學習工具互通性，可協助教育者和學生輕鬆流覽其教學管理系統 (LMS) 和 Teams。 使用者可以直接從 LMS 中存取與其課程相關聯的類別小組。
 
 ## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>核准 Microsoft Azure 租使用者中的應用程式
 
-下列工作是由 Microsoft Office 365 系統管理員和 Blackboard 的「瞭解超級系統管理員」所完成。
+下列工作由 Microsoft Office 365 系統管理員所完成，Blackboard 會透過超級系統管理員的身分瞭解。
 
-在管理 Blackboard 中的整合之前，Microsoft Office 365 系統管理員必須核准 Blackboard **MSFT 團隊，以瞭解** 適用于機構的 Microsoft Azure 租使用者的 Ultra Azure 應用程式。
+在管理 Blackboard 中的整合之前，Microsoft Office 365 管理員必須核准 Blackboard **MSFT Teams，以瞭解** 機構 Microsoft Azure 承租人的 Ultra Azure 應用程式。
 
 1. 尋找您的 Microsoft 租使用者識別碼。 請參閱 [如何尋找租](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)使用者。
 
@@ -46,9 +46,9 @@ Microsoft 團隊類別小組是一種教學工具互通性 (LTI) 應用程式，
 
 隨著 Blackboard 的瞭解，您必須在測試環境中註冊2個 LTI 1.3 整合應用程式：
 
-- Blackboard 瞭解類別小組整合，以支援名單同步處理
+- Blackboard 課程類別 Teams 整合，以支援名單同步處理
 
-- Microsoft 團隊類別小組 LTI 應用程式
+- Microsoft Teams 類別小組 LTI 應用程式
 
 1. 請記下這兩個應用程式的 LTI 用戶端 IDs：
 
@@ -80,7 +80,7 @@ Blackboard 會以超級管理員的身分瞭解，也需要設定 REST 應用程
 
 1. 存取「學習管理」工具，然後 **從 [整合**] 區段中選取 [ **REST API** 整合]。
 
-2. 選取 [ **建立** 整合]，然後輸入您為「Blackboard 瞭解類別小組整合 LTI」工具輸入的相同應用程式/用戶端識別碼。
+2. 選取 [**建立** 整合]，然後輸入您為 Blackboard 瞭解類別 Teams 整合 LTI 工具輸入的相同應用程式/用戶端識別碼。
 
 3. 輸入「瞭解使用者 (這可能是您自己的學習管理使用者名稱) ，或選取 **[流覽]** 以尋找。
 
@@ -104,19 +104,19 @@ Blackboard 會以超級管理員的身分瞭解，也需要設定 REST 應用程
 
 6. 選取 [完成後 **提交** ]。
 
-## <a name="enable-class-teams-in-blackboard-learn"></a>在 Blackboard 瞭解中啟用類別團隊
+## <a name="enable-class-teams-in-blackboard-learn"></a>在 Blackboard 瞭解中啟用類別 Teams
 
-一旦您啟用 LTI 工具，下一個步驟就是設定 Microsoft 類別小組整合自您自己的 Microsoft Office 365 租使用者。 若要執行此動作，請遵循下列步驟，將「Blackboard」瞭解為「超級管理員」。
+一旦您啟用 LTI 工具，下一個步驟就是設定 Microsoft 類別 Teams 與您自己 Microsoft Office 365 租使用者的整合。 若要執行此動作，請遵循下列步驟，將「Blackboard」瞭解為「超級管理員」。
 
-1. 在 [**瞭解管理**  >  **工具及公用程式**] 中，選取 [ **Microsoft 團隊整合管理**]。
+1. 在 [**瞭解系統管理**  >  **工具和公用程式**] 中，選取 [ **Microsoft Teams Integration Admin**]。
 
    ![包含可用工具清單的 [工具及實用程式] 對話方塊](../media/lti-media/tools-utilities.png)
 
-2. 選取 [ **啟用 Microsoft 小組**] 的核取方塊。
+2. 選取 [**啟用 Microsoft Teams**] 核取方塊。
 
 3. 依照 Microsoft O365 系統管理員底下的區段中所述，輸入您的租使用者識別碼。
 
  > [!NOTE]
- > 您將無法儲存設定，直到 O365 系統管理員核准應用程式為止。請參閱 [核准 Microsoft Azure 租使用者中的應用程式](#approve-the-app-in-the-microsoft-azure-tenant)。
+ > 您將無法儲存設定，直到 O365 系統管理員核准應用程式為止。請參閱[核准 Microsoft Azure 租使用者中的應用程式](#approve-the-app-in-the-microsoft-azure-tenant)。
 
-4. 當全域 O365 系統管理員已核准您的 Microsoft 租使用者中的 Blackboard 小組應用程式時，請選取 [ **提交**]。
+4. 當全域 O365 系統管理員已核准您的 Microsoft 租使用者中的 Blackboard Teams 應用程式時，請選取 [**提交**]。

@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 在本文中，會找到有關租使用者隔離如何在 Microsoft 365 搜尋中個別租使用者資料運作方式的說明。
+description: 在本文中，將說明租使用者隔離如何在 Microsoft 365 搜尋中個別租使用者資料的運作方式。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 3416afdeceaa7000b516ec89b4a2a1e59d8708d0
 ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
@@ -25,7 +25,7 @@ ms.locfileid: "47332397"
 ---
 # <a name="tenant-isolation-in-microsoft-365-search"></a>Microsoft 365 搜尋中的租用戶隔離
 
-SharePoint 線上搜尋使用租使用者分隔模型，它會平衡共用資料結構的效率，防範租使用者之間的資訊洩漏。 使用此模型，我們避免搜尋功能：
+SharePoint線上搜尋使用租使用者分隔模型，它會平衡共用資料結構的效率，以防範承租人之間的資訊洩漏。 使用此模型，我們避免搜尋功能：
 
 - 傳回包含其他承租人檔的查詢結果
 - 在查詢結果中公開足夠的資訊，訓練有素的使用者可能會推斷其他承租人的相關資訊。

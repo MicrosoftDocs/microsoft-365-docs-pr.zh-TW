@@ -29,19 +29,19 @@ ms.locfileid: "48487681"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Microsoft 365 測試環境的同盟身分識別
 
-*此測試實驗室指南可用於 enterprise 和 Office 365 企業測試環境的 Microsoft 365。*
+*此測試實驗室指南可用於 enterprise 和 Office 365 企業版測試環境的 Microsoft 365。*
 
 Microsoft 365 支援同盟身分識別。這表示 Microsoft 365 的連線使用者指的是 Microsoft 365 信任的同盟驗證伺服器，而不是執行認證本身的驗證。如果使用者的認證正確，同盟驗證伺服器會發出安全性權杖，用戶端再傳送到 Microsoft 365 做為驗證證明。同盟身分識別可進行 Microsoft 365 訂閱驗證的卸載與擴展，以及進階驗證及安全性案例。
   
-本文說明如何設定您的 Microsoft 365 測試環境的同盟驗證，如下所示：
+本文說明如何設定 Microsoft 365 測試環境的同盟驗證，如下所示：
 
 ![適用於 Microsoft 365 測試環境的同盟驗證](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
 此組態包含：
   
-- Microsoft 365 E5 試用版或實際執行訂閱。
+- Microsoft 365 E5 試驗或實際執行訂閱。
     
-- 簡化的組織內部網路連接至網際網路，由 Azure 虛擬網路之子網上的五台虛擬機器所組成 (DC1、APP1、CLIENT1、ADFS1 和 PROXY1) 。 Azure AD Connect 會在 APP1 上執行，將 Active Directory 網域服務網域中的帳戶清單同步處理至 Microsoft 365。 PROXY1 會接收傳入的驗證要求。 ADFS1 會使用 DC1 驗證憑證，併發出安全性權杖。
+- 簡化的組織內部網路連接至網際網路，由 Azure 虛擬網路之子網上的五台虛擬機器所組成 (DC1、APP1、CLIENT1、ADFS1 和 PROXY1) 。 Azure AD 連線在 APP1 上執行，以同步處理 Active Directory 網域服務網域中的帳戶清單以 Microsoft 365。 PROXY1 會接收傳入的驗證要求。 ADFS1 會使用 DC1 驗證憑證，併發出安全性權杖。
     
 設定此測試環境包含五個階段：
 - [階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -55,14 +55,14 @@ Microsoft 365 支援同盟身分識別。這表示 Microsoft 365 的連線使用
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理
 
-依照 [Microsoft 365 的密碼雜湊同步](password-hash-sync-m365-ent-test-environment.md)處理中的指示進行。 您產生的設定如下所示：
+依照[Microsoft 365 的 [密碼雜湊同步](password-hash-sync-m365-ent-test-environment.md)處理] 中的指示進行。 您產生的設定如下所示：
   
 ![使用密碼雜湊同步處理測試環境的模擬企業](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase1.png)
   
 此組態包含：
   
 - Microsoft 365 E5 試用版或付費訂閱。
-- 簡化的組織內部網路連接至網際網路，由 Azure 虛擬網路子網上的 DC1、APP1 和 CLIENT1 虛擬機器所組成。 Azure AD Connect 會在 APP1 執行，以便定期將 TESTLAB Active Directory 網域服務 (AD DS) 網域同步處理至您的 Microsoft 365 訂閱的 Azure AD 租使用者。
+- 簡化的組織內部網路連接至網際網路，由 Azure 虛擬網路子網上的 DC1、APP1 和 CLIENT1 虛擬機器所組成。 Azure ad 連線會在 APP1 上執行，以便定期同步處理 Microsoft 365 訂閱的 Azure ad 租使用者的 TESTLAB Active Directory 網域服務 (AD DS) 網域。
 
 ## <a name="phase-2-create-the-ad-fs-server"></a>階段 2：建立 AD FS 伺服器
 
@@ -136,7 +136,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 > [!NOTE]
 > PROXY1 指派了靜態公用 IP 位址，因為您將建立指向它的公開 DNS 記錄，且當您重新啟動 PROXY1 虛擬機器時它不得變更。
   
-接下來，新增規則至網路安全性群組的 CorpNet 子網，以允許來自網際網路的未經許可輸入流量，以 PROXY1's 私人 IP 位址和 TCP 埠443。 在本機電腦的 Azure PowerShell 命令提示字元中執行這些命令。
+接下來，新增規則至網路安全性群組的 CorpNet 子網，以允許來自網際網路的未經許可輸入流量，以 PROXY1's 私人 IP 位址和 TCP 埠443。 在本機電腦上的 Azure PowerShell 命令提示字元執行這些命令。
   
 ```powershell
 $rgName="<the resource group name of your Base Configuration>"
@@ -155,13 +155,13 @@ Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
 
-使用本機電腦上的下列 Azure PowerShell 命令，顯示 PROXY1 的公用 IP 位址。
+在本機電腦上使用下列 Azure PowerShell 命令，顯示 PROXY1 的公用 IP 位址。
   
 ```powershell
 Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
 ```
 
-接下來，與公用 DNS 提供者合作，建立 **fs.testlab.**\<*your DNS domain name*> 的新公用 DNS A 記錄，其會解析到 **Write-Host** 命令所顯示的 IP 位址。**fs.testlab.**\<*your DNS domain name*> 也稱為*同盟服務 FQDN*。
+接下來，與公用 DNS 提供者合作，建立 **fs.testlab.**\<*your DNS domain name*> 的新公用 DNS A 記錄，其會解析到 **Write-Host** 命令所顯示的 IP 位址。**fs.testlab.**\<*your DNS domain name*> 也稱為 *同盟服務 FQDN*。
   
 接下來，使用 CORP\\User1 認證，以使用 [Azure 入口網站](https://portal.azure.com)連線到 DC1 虛擬機器，然後在系統管理員層級 Windows PowerShell 命令提示字元執行下列命令：
   
@@ -201,15 +201,15 @@ New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
   
 1. 選取 [ **開始**]，輸入 **mmc.exe**，然後按 **enter**。
     
-2. 選取 **[** 檔案] [  >  **新增/移除嵌入式管理單元**]。
+2. 選取 **[** 檔案] [  >  **新增/移除貼齊**]。
     
-3. 在 [ **新增或移除嵌入式管理單元**] 中，按兩下可用之嵌入式管理單元清單中的 [ **證書** ]，選取 [ **電腦帳戶**]，然後選取 **[下一步]**。
+3. 在 [**新增或移除貼齊宏**] 中，按兩下可用之嵌入式管理單元清單中的 [**證書**]，選取 [**電腦帳戶**]，然後選取 **[下一步]**。
     
 4. 在 [ **選取電腦**] 中，選取 **[完成]**，然後選取 **[確定]**。
     
 5. 在樹狀窗格中，開啟 **[憑證 (本機電腦)] > [個人] > [憑證]**。
     
-6. 選取並按住 (或以滑鼠右鍵按一下您的同盟服務 FQDN) 憑證，選取 [ **所有**工作]，然後選取 [ **匯出**]。
+6. 選取並按住 (或以滑鼠右鍵按一下您的同盟服務 FQDN) 憑證，選取 [ **所有** 工作]，然後選取 [ **匯出**]。
     
 7. 在 [ **歡迎** ] 頁面上，選取 **[下一步]**。
     
@@ -221,7 +221,7 @@ New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
     
 11. 在 [ **要匯出的** 檔案] 頁面上，選取 **[流覽]**。
     
-12. 流覽至 [ **C： \\ 證書**] 資料夾，在 [**檔案名**] 中輸入**SSL** ，然後選取 [**儲存]。**
+12. 流覽至 [ **C： \\ 證書**] 資料夾，在 [**檔案名**] 中輸入 **SSL** ，然後選取 [**儲存]。**
     
 13. 在 [ **要匯出的** 檔案] 頁面上，選取 **[下一步]**。
     
@@ -245,15 +245,15 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
 4. 在 [Active Directory Federation Services 設定向導] 的 [ **歡迎** ] 頁面上，選取 **[下一步]**。
     
-5. 在 [連線 **到 AD DS]** 頁面上，選取 **[下一步]**。
+5. 在 [**連線到 AD DS** ] 頁面上，選取 **[下一步]**。
     
-6. 在 [指定服務內容]**** 頁面上：
+6. 在 [指定服務內容] 頁面上：
     
   - 在 [ **SSL 憑證**] 中，選取向下箭號，然後選取具有同盟服務 FQDN 名稱的憑證。
     
   - 在 [ **同盟服務顯示名稱**] 中，輸入您虛擬組織的名稱。
     
-  - 選取 [下一步]****。
+  - 選取 [下一步]。
     
 7. 在 [**指定服務帳戶**] 頁面上，選取 [**選取****帳戶名稱**]。
     
@@ -277,19 +277,19 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
   
 1. 選取 [ **開始**]，輸入 **mmc.exe**，然後按 **enter**。
     
-2. 選取 [檔案] **> [新增/移除嵌入式管理單元**]。
+2. 選取 [檔案] > 的 [**新增/移除] 貼齊**。
     
-3. 在 [ **新增或移除嵌入式管理單元**] 中，按兩下可用之嵌入式管理單元清單中的 [ **證書** ]，選取 [ **電腦帳戶**]，然後選取 **[下一步]**。
+3. 在 [**新增或移除貼齊宏**] 中，按兩下可用之嵌入式管理單元清單中的 [**證書**]，選取 [**電腦帳戶**]，然後選取 **[下一步]**。
     
 4. 在 [ **選取電腦**] 中，選取 **[完成]**，然後選取 **[確定]**。
     
-5. 在樹狀窗格中，) 個人憑證中，開啟** (本機電腦的憑證**  >  **Personal**  >  ** **。
+5. 在樹狀窗格中，) 個人憑證中，開啟 **(本機電腦的憑證**  >    >  ****。
     
-6. 選取並按住 (，或以滑鼠右鍵按一下 [) **個人**]，選取 [ **所有**工作]，然後選取 [匯 **入**]。
+6. 選取並按住 (，或以滑鼠右鍵按一下 [) **個人**]，選取 [ **所有** 工作]，然後選取 [匯 **入**]。
     
 7. 在 [ **歡迎** ] 頁面上，選取 **[下一步]**。
     
-8. 在 [**要匯入**的檔案] 頁面上，輸入** \\ \\ adfs1 \\ 證書的 \\ ssl .pfx**]，然後選取 **[下一步]**。
+8. 在 [**要匯入** 的檔案] 頁面上，輸入 **\\ \\ adfs1 \\ 證書的 \\ ssl .pfx**]，然後選取 **[下一步]**。
     
 9. 在 [ **私密金鑰保護** ] 頁面上，于 [ **密碼**] 中輸入憑證密碼，然後選取 **[下一步]。**
     
@@ -305,9 +305,9 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
 15. 選取並按住 (，或以滑鼠右鍵按一下憑證) ，然後選取 [ **複製**]。
     
-16. 在樹狀窗格中，開啟 [**信任的憑證授權單位**單位]  >  **憑證**。
+16. 在樹狀窗格中，開啟 [**信任的憑證授權單位** 單位]  >  **憑證**。
     
-17. 將滑鼠指標移至已安裝憑證的清單下，選取並按住 (或以滑鼠右鍵按一下 [) ]，然後選取 [ **貼**上]。
+17. 將滑鼠指標移至已安裝憑證的清單下，選取並按住 (或以滑鼠右鍵按一下 [) ]，然後選取 [ **貼** 上]。
     
 開啟系統管理員層級 PowerShell 命令提示字元，執行下列命令：
   
@@ -327,7 +327,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 4. 在 [Web 應用程式 Proxy 設定向導] 的 [ **歡迎** ] 頁面上，選取 **[下一步]**。
     
-5. 在 [同盟伺服器]**** 頁面上：
+5. 在 [同盟伺服器] 頁面上：
     
   - 在 [ **同盟服務名稱** ] 方塊中，輸入您的同盟服務 FQDN。
     
@@ -335,7 +335,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
   - 在 [ **密碼** ] 方塊中，輸入 User1 帳戶的密碼。
     
-  - 選取 [下一步]****。
+  - 選取 [下一步]。
     
 6. 在 [ **AD FS Proxy 憑證** ] 頁面上，選取向下箭號，選取具有您同盟服務 FQDN 的憑證，然後選取 **[下一步]**。
     
@@ -349,23 +349,23 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
   
 使用下列步驟為同盟驗證設定 Azure AD Connect 與 Microsoft 365 訂閱：
   
-1. 從桌面，按兩下 [Azure AD Connect]****。
+1. 從桌面，按兩下 [Azure AD Connect]。
     
-2. 在 [ **歡迎使用 AZURE AD Connect]** 頁面上，選取 [ **設定**]。
+2. 在 [**歡迎使用 Azure AD 連線**] 頁面上，選取 [**設定**]。
     
 3. 在 [ **其他** 工作] 頁面上，選取 [ **變更使用者登入**]，然後選取 **[下一步]**。
     
-4. 在 [連線 **到 AZURE AD]** 頁面上，輸入您的全域系統管理員帳戶名稱和密碼，然後選取 **[下一步]**。
+4. 在 [**連線至 Azure AD** ] 頁面上，輸入您的全域系統管理員帳戶名稱和密碼，然後選取 **[下一步]**。
     
 5. 在 [ **使用者登入** ] 頁面上，選取 [ **同盟與 AD FS**]，然後選取 **[下一步]**。
     
-6. 在 [ **AD fs 伺服器**陣列] 頁面上，選取 [**使用現有的 AD FS 伺服器陣列**]，在 [**伺服器名稱**] 方塊中輸入**ADFS1** ，然後選取 **[下一步]**。
+6. 在 [ **AD fs 伺服器** 陣列] 頁面上，選取 [**使用現有的 AD FS 伺服器陣列**]，在 [**伺服器名稱**] 方塊中輸入 **ADFS1** ，然後選取 **[下一步]**。
     
 7. 當系統提示您輸入伺服器認證時，請輸入 CORP \\ User1 帳戶的認證，然後選取 **[確定]**。
     
-8. 在 [**網域管理員**認證] 頁面上，于 [使用者**名稱**] 方塊中輸入**CORP \\ User1** ，然後在 [**密碼**] 方塊中輸入帳戶密碼，然後選取 **[下一步]**。
+8. 在 [**網域管理員** 認證] 頁面上，于 [使用者 **名稱**] 方塊中輸入 **CORP \\ User1** ，然後在 [**密碼**] 方塊中輸入帳戶密碼，然後選取 **[下一步]**。
     
-9. 在 [ **AD FS 服務帳戶**] 頁面上，于 [**網域使用者名稱**] 方塊中輸入**CORP \\ ADFS 服務**，在 [**網域使用者密碼**] 方塊中輸入帳戶密碼，然後選取 **[下一步]**。
+9. 在 [ **AD FS 服務帳戶**] 頁面上，于 [**網域使用者名稱**] 方塊中輸入 **CORP \\ ADFS 服務**，在 [**網域使用者密碼**] 方塊中輸入帳戶密碼，然後選取 **[下一步]**。
     
 10. 在 [ **AZURE AD 網域** ] 頁面的 [ **網域**] 中，選取您先前在階段1中建立並新增至您訂閱的功能變數名稱，然後選取 **[下一步]**。
     
@@ -381,13 +381,13 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
   
 1. 在本機電腦上開啟瀏覽器的新私人執行個體，然後移至 [https://admin.microsoft.com](https://admin.microsoft.com)。
     
-2. 若為登入認證，請輸入**user1@** \<*the domain created in Phase 1*> 。
+2. 若為登入認證，請輸入 **user1@** \<*the domain created in Phase 1*> 。
     
-    例如，如果您的測試網域是 **testlab.contoso.com**，您可以輸入 "user1@testlab.contoso.com"。 按 **tab** 鍵或允許 Microsoft 365 自動重新導向您。
+    例如，如果您的測試網域是 **testlab.contoso.com**，您可以輸入 "user1@testlab.contoso.com"。 按 **tab** 鍵或 [允許 Microsoft 365 自動重新導向您。
     
     您現在應該會看到 [連線 **不是私人** ] 頁面。 因為您已在桌上型電腦無法驗證的 ADFS1 上安裝自我簽署憑證，所以您會看到這種情況。 在同盟驗證的實際執行部署中，您可以使用受信任的憑證授權單位單位的憑證，而您的使用者將不會看到此頁面。
     
-3. 在 [**您的連線不是私人**] 頁面上，選取 [**高級**]，然後** \<*your federation service FQDN*> **選取 [繼續]。 
+3. 在 [**您的連線不是私人**] 頁面上，選取 [**高級**]，然後 **\<*your federation service FQDN*>** 選取 [繼續]。 
     
 4. 在具有虛構組織名稱的頁面上，以下列動作登入：
     
@@ -395,7 +395,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
   - User1 帳戶的密碼
     
-    您應該會看到 [Microsoft Office 首頁]**** 頁面。
+    您應該會看到 [Microsoft Office 首頁] 頁面。
     
 此程序會示範試用訂閱與 DC1 上裝載的 AD DS corp.contoso.com 網域的同盟。以下是驗證程序的基本概念：
   
@@ -415,5 +415,5 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
   
 ## <a name="next-step"></a>下一步
 
-當您準備好在 Azure 中部署 Microsoft 365 的實際執行、高可用性同盟驗證時，請參閱在 [azure 中部署 microsoft 365 的高可用性同盟驗證](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)。
+當您準備好在 azure 中部署 Microsoft 365 的實際執行、高可用性同盟驗證時，請參閱[在 azure 中部署 Microsoft 365 的高可用性同盟驗證](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)。
   
