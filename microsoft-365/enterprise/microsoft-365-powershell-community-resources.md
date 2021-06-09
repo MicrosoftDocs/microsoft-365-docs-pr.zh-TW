@@ -23,16 +23,16 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 10/24/2020
 ms.locfileid: "48754689"
 ---
-# <a name="microsoft-365-community-resources-for-powershell"></a><span data-ttu-id="a3c43-103">適用於 PowerShell 的 Microsoft 365 社群資源</span><span class="sxs-lookup"><span data-stu-id="a3c43-103">Microsoft 365 community resources for PowerShell</span></span>
+# <a name="microsoft-365-community-resources-for-powershell"></a><span data-ttu-id="909d5-103">適用於 PowerShell 的 Microsoft 365 社群資源</span><span class="sxs-lookup"><span data-stu-id="909d5-103">Microsoft 365 community resources for PowerShell</span></span>
 
-<span data-ttu-id="a3c43-104">連線至這些社區以取得對等專案的連線，並取得您 PowerShell Microsoft 365 問題的答案。</span><span class="sxs-lookup"><span data-stu-id="a3c43-104">Connect to these communities to reach your peers and get answers for your PowerShell for Microsoft 365 questions.</span></span> 
+<span data-ttu-id="909d5-104">連線這些社區以取得對等的訪問權，並取得 PowerShell Microsoft 365 問題的答案。</span><span class="sxs-lookup"><span data-stu-id="909d5-104">Connect to these communities to reach your peers and get answers for your PowerShell for Microsoft 365 questions.</span></span> 
   
-- [<span data-ttu-id="a3c43-105">Microsoft 365 Microsoft 技術社區</span><span class="sxs-lookup"><span data-stu-id="a3c43-105">Microsoft 365 Microsoft Tech Community</span></span>](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
+- [<span data-ttu-id="909d5-105">Microsoft 365Microsoft 技術 Community</span><span class="sxs-lookup"><span data-stu-id="909d5-105">Microsoft 365 Microsoft Tech Community</span></span>](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
-- [<span data-ttu-id="a3c43-106">Exchange Server TechNet 的社區論壇</span><span class="sxs-lookup"><span data-stu-id="a3c43-106">Exchange Server TechNet community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
+- [<span data-ttu-id="909d5-106">Exchange ServerTechNet 社區論壇</span><span class="sxs-lookup"><span data-stu-id="909d5-106">Exchange Server TechNet community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
-## <a name="see-also"></a><span data-ttu-id="a3c43-107">另請參閱</span><span class="sxs-lookup"><span data-stu-id="a3c43-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="909d5-107">另請參閱</span><span class="sxs-lookup"><span data-stu-id="909d5-107">See also</span></span>
 
-[<span data-ttu-id="a3c43-108">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="a3c43-108">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+[<span data-ttu-id="909d5-108">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="909d5-108">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="a3c43-109">開始使用適用於 Microsoft 365 的 PowerShell</span><span class="sxs-lookup"><span data-stu-id="a3c43-109">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+[<span data-ttu-id="909d5-109">開始使用適用於 Microsoft 365 的 PowerShell</span><span class="sxs-lookup"><span data-stu-id="909d5-109">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
