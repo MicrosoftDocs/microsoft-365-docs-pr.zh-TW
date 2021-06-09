@@ -1,5 +1,5 @@
 ---
-title: 在高級電子檔探索中管理負載設定
+title: 在 Advanced eDiscovery 中管理負載設定
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: 瞭解如何在高級 eDiscovery 中管理載入集。
+description: 瞭解如何在 Advanced eDiscovery 中管理負載設定。
 ms.openlocfilehash: 38eb0e19c7e62a42df85343d3328b941332adc03
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
@@ -23,6 +23,6 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285599"
 ---
-# <a name="manage-load-sets-in-advanced-ediscovery"></a><span data-ttu-id="8e2e2-103">在高級電子檔探索中管理負載設定</span><span class="sxs-lookup"><span data-stu-id="8e2e2-103">Manage load sets in Advanced eDiscovery</span></span>
+# <a name="manage-load-sets-in-advanced-ediscovery"></a><span data-ttu-id="64d29-103">在 Advanced eDiscovery 中管理負載設定</span><span class="sxs-lookup"><span data-stu-id="64d29-103">Manage load sets in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="8e2e2-104">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="8e2e2-104">Content coming soon.</span></span>
+<span data-ttu-id="64d29-104">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="64d29-104">Content coming soon.</span></span>

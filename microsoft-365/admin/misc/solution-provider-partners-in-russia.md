@@ -26,11 +26,11 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/27/2020
 ms.locfileid: "44399239"
 ---
-# <a name="microsoft-cloud-solution-provider-partners-in-russia"></a><span data-ttu-id="39d5b-103">俄羅斯的 Microsoft 雲端解決方案提供者合作夥伴</span><span class="sxs-lookup"><span data-stu-id="39d5b-103">Microsoft Cloud Solution Provider Partners in Russia</span></span>
-<span data-ttu-id="39d5b-104">[]以下是俄羅斯的 Microsoft 雲端解決方案提供者清單。</span><span class="sxs-lookup"><span data-stu-id="39d5b-104">Here is a list of Microsoft Cloud Solution Providers in Russia.</span></span>
+# <a name="microsoft-cloud-solution-provider-partners-in-russia"></a><span data-ttu-id="917dc-103">俄羅斯的 Microsoft 雲端解決方案提供者合作夥伴</span><span class="sxs-lookup"><span data-stu-id="917dc-103">Microsoft Cloud Solution Provider Partners in Russia</span></span>
+<span data-ttu-id="917dc-104">[]以下是俄羅斯的 Microsoft 雲端解決方案提供者清單。</span><span class="sxs-lookup"><span data-stu-id="917dc-104">Here is a list of Microsoft Cloud Solution Providers in Russia.</span></span>
   
-- [<span data-ttu-id="39d5b-105">Mont</span><span class="sxs-lookup"><span data-stu-id="39d5b-105">Mont</span></span>](https://www.mont.com/ru-ru/)
+- [<span data-ttu-id="917dc-105">Mont</span><span class="sxs-lookup"><span data-stu-id="917dc-105">Mont</span></span>](https://www.mont.com/ru-ru/)
     
-- [<span data-ttu-id="39d5b-106">Softline</span><span class="sxs-lookup"><span data-stu-id="39d5b-106">Softline</span></span>](https://softline.ru/)
+- [<span data-ttu-id="917dc-106">Softline</span><span class="sxs-lookup"><span data-stu-id="917dc-106">Softline</span></span>](https://softline.ru/)
     
 
