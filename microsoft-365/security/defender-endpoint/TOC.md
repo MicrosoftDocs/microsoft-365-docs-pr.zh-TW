@@ -242,6 +242,8 @@
 
 ### [網路裝置](network-devices.md)
 
+### [適用於端點的 Microsoft Defender 中的主機防火牆報告](host-firewall-reporting.md)
+
 ### [攻擊面縮減]()
 #### [攻擊面縮小概觀](overview-attack-surface-reduction.md)
 #### [設定受攻擊面縮小功能](configure-attack-surface-reduction.md)
@@ -278,6 +280,8 @@
 #### [取得您的防毒軟體和反惡意程式碼更新](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [管理 Microsoft Defender 防毒軟體保護更新的來源](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [管理何時應下載並套用保護更新的排程](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+#####  [管理 Microsoft Defender 更新的漸進式推出程序](updates.md)
+#####  [設定 Microsoft Defender 更新的漸進式推出程序](configure-updates.md)
 ##### [管理 Microsoft Defender 防毒軟體更新和掃描已過時的端點](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [管理事件型強制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [管理行動裝置和虛擬機器 (VM) 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -351,6 +355,7 @@
 ##### [控制 USB 裝置](control-usb-devices-using-intune.md)
 ##### [卸除式存放裝置保護](device-control-removable-storage-protection.md)
 ##### [卸除式存放裝置存取控制](device-control-removable-storage-access-control.md)
+##### [裝置控制印表機保護](printer-protection.md)
 
 #### [行為封鎖和包含專案]()
 ##### [行為封鎖和包含專案](behavioral-blocking-containment.md)

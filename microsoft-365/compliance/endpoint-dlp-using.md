@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何設定資料遺失防護（DLP）原則以使用 Microsoft 365 端點資料遺失防護（EPDLP）位置。
-ms.openlocfilehash: cbd95ed3ee70b69b395f73c83852a9f37a269f0b
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 1a0297271c3e0e8fb94a476982f146aa8c221e7a
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259484"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809128"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端點資料外洩防護
 
@@ -70,6 +70,9 @@ ms.locfileid: "52259484"
 > [!IMPORTANT]
 > 請不要包含可執行檔的路徑，只包含可執行檔名稱 (例如，.browser.exe)。
 
+### <a name="unallowed-bluetooth-apps"></a>不受允許的藍牙應用程式
+
+防止人員透過特定藍牙應用程式傳輸受原則保護的檔案。
 
 ### <a name="browser-and-domain-restrictions"></a>瀏覽器和網域限制
 限制與您的原則匹配的敏感檔案不能與不受限制的雲端服務網域共用。
@@ -97,6 +100,11 @@ ms.locfileid: "52259484"
 - 使用者僅能選取內建的理由。
 - 使用者僅能自行輸入理由。
 
+### <a name="always-audit-file-activity-for-devices"></a>一律稽核裝置的檔案活動
+
+預設裝置上線的時候，會自動稽核 Office、PDF 和 CSV 檔案的活動並可在活動總管中進行檢視。 如果您只想將已上線裝置包含在作用中原則時才稽核此活動，請關閉此功能。
+
+不論是否要將檔案活動包含在作用中原則，都一律針對已上線裝置進行稽核。
 
 ## <a name="tying-dlp-settings-together"></a>將 DLP 設定結合起來
 
