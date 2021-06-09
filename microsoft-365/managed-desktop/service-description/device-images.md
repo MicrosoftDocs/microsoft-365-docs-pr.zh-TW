@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 00943eb85abbfd2d237ae5544eb69d3ec4d9f875
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245501"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841279"
 ---
 # <a name="device-images"></a>裝置影像
 
@@ -79,13 +79,13 @@ ms.locfileid: "52245501"
 
 這些步驟將會移除裝置上的所有資料，因此開始之前，您應該先備份您要保留的任何資料。
 
-1. 使用 WinPE[建立可啟動的 USB 磁片磁碟機](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)。
+1. 使用 WinPE[建立可啟動的 USB 磁片磁碟機](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)。
 2. 將這些檔案從 C： \\ 來源複製到 USB 磁片磁碟機：
     - Factory 復原 WIM 檔案 (例如，HP \_ EliteBook \_ 840 \_ G7 \_ 筆記本 \_ PC \_ CR \_) 
     - 部署。Cmd
     - ReCreatePartitions.txt
 3. [將裝置引導至 WinPE](https://store.hp.com/us/en/tech-takes/how-to-boot-from-usb-drive-on-windows-10-pcs) USB 磁片磁碟機。
-4. 在命令提示字元中，執行 [Diskpart.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/diskpart#additional-references)。
+4. 在命令提示字元中，執行 [Diskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references)。
 5. 在 Diskpart 中執行 `list disk` ，然後記下主要儲存磁片編號 (通常是磁片 0) 。
 6. 輸入會結束 Diskpart `exit` 。
 7. 在命令提示字元中執行 `deploy.cmd <sys_disk> <recovery_wim>` ，其中 *sys_disk* 是剛才確定的主要儲存磁片的磁片號碼，而 *recovery_wim* 是的檔案名。先前複製的 WIM 檔案。

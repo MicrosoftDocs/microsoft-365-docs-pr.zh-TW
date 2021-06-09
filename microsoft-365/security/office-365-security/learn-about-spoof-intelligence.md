@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 中的欺騙智慧洞察力。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 45ecbe68072441b40477d1b27953b957aeffa9e3
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 2fc591bbaf2ecc6f59c2b569acde521453887c2a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793169"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822345"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP 中的欺騙智慧洞察力
 
@@ -53,17 +53,17 @@ ms.locfileid: "52793169"
   - 寄件者位於郵寄清單中 (又稱為討論清單) ，而且郵寄清單會將來自原始寄件者的電子郵件轉送至郵寄清單上的所有參與者。
   - 外部公司代表其他公司傳送電子郵件 (例如，自動化報表或軟體即服務公司) 。
 
-您可以使用安全性 & 合規性中心內的 **欺騙智慧洞察力** ，快速找出合法的寄件者，該寄件者會合法傳送您未驗證的電子郵件， (來自未通過 SPF、DKIM 或 DMARC) 檢查的網域郵件，並手動允許這些寄件者。
+您可以使用 Microsoft 365 security center 中的 **欺騙性智慧洞察力**，快速找出合法的寄件者，該寄件者會合法傳送您未驗證的電子郵件 (來自未通過 SPF、DKIM 或 DMARC) 檢查的網域郵件，並手動允許這些寄件者。
 
 透過允許已知寄件者從已知位置傳送哄騙郵件，您可以減少誤報 (已標示為錯誤) 的良好電子郵件。 透過監視允許的欺騙寄件者，您可以提供額外的安全性層級，以防止不安全的郵件到達您的組織中。
 
 同樣地，您也可以查看哄騙情報所允許的欺騙寄件者，並手動封鎖欺騙性智慧洞察力中的寄件者。
 
-本文的其餘部分將說明如何使用 PowerShell 的安全性 & 合規性中心和 PowerShell (Exchange Online Microsoft 365 中的欺騙智慧洞察力，以 Exchange Online 使用信箱的組織;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
+本文的其餘部分將說明如何使用 [安全性中心] 中的 [哄騙智慧洞察力] 和 [PowerShell (Exchange Online PowerShell，以 Microsoft 365 使用信箱的信箱 Exchange Online;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
 
 > [!NOTE]
 >
-> - 欺詐智慧洞察力只會顯示欺騙性智慧所偵測到的欺騙寄件者。 當您覆寫真知灼見中的 allow 或 block 判定時，哄騙寄件者會變成隻會出現在承租人允許/封鎖清單的 [ **哄騙** ] 索引標籤上的手動允許或封鎖專案。 您也可以手動為欺騙性寄件者建立允許或封鎖專案，以取得欺騙性的智慧。 如需詳細資訊，請參閱[管理 EOP 中的租用戶允許/封鎖清單](tenant-allow-block-list.md)。
+> - 欺詐智慧洞察力只會顯示欺騙性智慧所偵測到的欺騙寄件者。 當您覆寫真知灼見中的 allow 或 block 判定時，哄騙寄件者會變成隻會出現在承租人允許/封鎖清單中 [ **偽造** ] 索引標籤上的 [手動允許] 或 [封鎖] 專案。 您也可以手動為欺騙性寄件者建立允許或封鎖專案，以取得欺騙性的智慧。 如需詳細資訊，請參閱[管理 EOP 中的租用戶允許/封鎖清單](tenant-allow-block-list.md)。
 >
 > - 承租人「允許/封鎖」清單中的「欺騙性智慧真知灼見」和「 **欺騙** 」索引標籤會取代 [安全性 & 合規性中心的 [反垃圾郵件原則] 頁面上提供的欺騙智慧原則功能。
 >
@@ -71,7 +71,7 @@ ms.locfileid: "52793169"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **反網路釣魚** ] 頁面，請使用 <https://protection.office.com/antiphishing> 。
+- 您可以開啟安全性中心，網址為 <https://security.microsoft.com/>。 若要直接移至 [ **反網路釣魚** ] 頁面，請使用 <https://security.microsoft.com/antiphishing> 。 若要直接移至 [ **偽造智慧洞察力** ] 頁面，請使用 <https://security.microsoft.com/spoofintelligence> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -90,31 +90,30 @@ ms.locfileid: "52793169"
 
 - 如需適用于哄騙情報的建議設定，請參閱 [EOP 反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)。
 
-## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心開啟欺騙性智慧洞察力
+## <a name="open-the-spoof-intelligence-insight-in-the-security-center"></a>開啟安全性中心的欺騙智慧洞察力
 
-1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **反網路釣魚**。
+1. 在 [安全性中心] 中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。
 
-2. 在 [主要 **反網路釣魚] 頁面** 上，欺騙性的智慧洞察力有兩種模式：
+2. 在 [ **反網路釣魚** ] 頁面上，欺騙性的智慧洞察力看起來像這樣：
+
+   ![反網路釣魚原則頁面上的欺騙智慧洞察力](../../media/m365-sc-spoof-intelligence-insight.png)
+
+   洞察力有兩種模式：
 
    - **深入瞭解模式**：如果已啟用欺騙智慧，則真知灼見會顯示過去7天內，欺騙情報偵測到的郵件數目。
    - **假設模式**：如果已停用欺騙智慧，則真知灼見會顯示過去七天內，欺騙情報偵測到 *的郵件數目* 。
 
-   無論是哪種方式，顯示在真知灼見中的欺騙性網域都會分為兩類： **可疑的網域** 和 **非可疑的網域**。
-
-   - **可疑的網域** 包括：
-
-     - 高度信賴性哄騙：根據電子郵件傳送模式和網域的信譽分數，我們強烈相信網域是哄騙的，而來自這些網域的郵件更可能是惡意的。
-
-     - 適中的信譽哄騙：根據歷史傳送模式和網域的信譽分數，我們適度相信網域是哄騙的，而從這些網域傳送的郵件是合法的。 在此類別中，誤報很可能超出高可信度的欺騙。
-
-   **非可疑網域**：網域失敗明確的電子郵件驗證檢查 [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)及 [DMARC](use-dmarc-to-validate-email.md)) 。 不過，網域已通過我們的隱含電子郵件驗證檢查 ([複合驗證](email-validation-and-authentication.md#composite-authentication)) 。 因此，不會對郵件採取任何反欺詐動作。
+若要查看有關欺騙智慧偵測的資訊，請按一下 [偽造智慧洞察力] 中的 [ **查看哄騙活動** ]。
 
 ### <a name="view-information-about-spoofed-messages"></a>查看有關欺騙性郵件的資訊
 
-在 [偽造智慧洞察力] 中，按一下 [ **可疑的網域** 或 **非可疑的網域** ]，以移至 [ **偽造智慧洞察力** ] 頁面。 頁面包含下列資訊：
+> [!NOTE]
+> 請記住，此頁面上只會顯示欺騙性智慧所偵測到的欺騙寄件者。 當您覆寫真知灼見中的 allow 或 block 判定時，哄騙寄件者會變成隻會出現在承租人允許/封鎖清單中 [ **偽造** ] 索引標籤上的 [手動允許] 或 [封鎖] 專案。
 
-- **冒牌網域**：電子郵件客戶程式的 [ **寄件者** ] 方塊中顯示的欺騙使用者網域。 此位址也稱為 `5322.From` 位址。
-- **基礎結構**：也稱為傳送 _基礎結構_。 這會是下列其中一個值：
+在您按一下 [偽造智慧資訊] 中的 [**查看哄騙活動**] 後出現的 [**哄騙情報** 資訊] 頁面上，此頁面包含下列資訊：
+
+- **冒牌使用者**：在電子郵件客戶程式的 [**寄件者**] 方塊中顯示的欺騙使用者 **網域**。 「寄件者」位址也稱為 `5322.From` 位址。
+- 傳送 **基礎結構**：也稱為 _基礎結構_。 傳送基礎結構會是下列其中一個值：
   - ) 來源電子郵件伺服器的 IP 位址的反向 DNS 查閱 (PTR 記錄中找到的網域。
   - 如果來源 IP 位址沒有 PTR 記錄，則會將傳送基礎結構識別為 \<source IP\> /24 (例如，192.168.100.100/24) 。
 - **郵件** 數目：在過去7天內，來自欺騙網域 _與_ 傳送基礎結構之結合的郵件數目。
@@ -122,35 +121,34 @@ ms.locfileid: "52793169"
 - **哄騙類型**：下列其中一個值：
   - **Internal**：哄騙寄件者位於屬於您組織 ([公認的網域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) 中的網域。
   - **外部**：冒牌寄件者位於外部網域。
-- **允許哄騙**：此值取決於您在洞察力上按一下的是 **可疑網域** 或 **非可疑網域** ：
-  - **可疑的網域**： **允許哄騙** 值永遠 **不** 是。 哄騙的網域 _和_ 傳送基礎結構的組合中的郵件會被欺騙智慧標示為壞。 對哄騙郵件採取的動作是由預設的反網路釣魚原則或自訂的反網路釣魚原則所控制 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。 如需詳細資訊，請參閱[Configure Office 365 的 Microsoft Defender 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
-  - **非可疑網域**： **允許哄騙** 值永遠為 **[是]**。 哄騙的網域 _和_ 傳送基礎結構的組合中的郵件會被欺騙智慧標示為良好。
+- **動作**： **允許** 或 **封鎖** 此值：
+  - **允許**：網域失敗明確的電子郵件驗證檢查 [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)及 [DMARC](use-dmarc-to-validate-email.md)) 。 不過，網域已通過我們的隱含電子郵件驗證檢查 ([複合驗證](email-validation-and-authentication.md#composite-authentication)) 。 因此，不會對郵件採取任何反欺詐動作。
+  - 已 **封鎖**：來自欺騙性網域 _和_ 傳送基礎結構的郵件會因欺騙性智慧而標示為壞。 對哄騙郵件採取的動作是由預設的反網路釣魚原則或自訂的反網路釣魚原則所控制 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。 如需詳細資訊，請參閱[Configure Office 365 的 Microsoft Defender 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
 您可以按一下 [選取的欄標題] 來排序結果。
 
 若要篩選結果，您可以使用下列選項：
 
-- 使用 [ **篩選哄騙網域** ] 方塊，輸入以逗號分隔的欺騙網域值清單，以篩選結果。
-- 使用 [ **篩選基礎結構** ] 方塊中，輸入以逗號分隔的基礎結構值清單以篩選結果。
-- 按一下 [ **篩選** ] 按鈕，依 **欺騙類型** 篩選結果。
+- 按一下 [ **篩選** ] 按鈕。 在出現的 [ **篩選** ] 浮出控制項中，您可以透過下列方式篩選結果：
+  - **哄騙類型**
+  - **Action**
+- 使用 [ **搜尋** ] 方塊，輸入以逗號分隔的欺騙網域值清單，或傳送基礎結構值以篩選結果。
 
 ### <a name="view-details-about-spoofed-messages"></a>查看有關哄騙郵件的詳細資料
 
-選取清單中的專案，以查看詳細資料。 快顯視窗，顯示下列資訊和功能：
+當您從清單中選取專案時，會出現詳細資料彈出列表，其中包含下列資訊和功能：
 
-- **允許哄騙**：使用此切換可覆寫欺騙性智慧判定：
-  - 如果您原先在真知灼見中選取 **可疑的網域** ，則會關閉 **允許的欺騙** 功能。 若要將其開啟，可將專案從欺騙性智慧洞察力移至租使用者允許/封鎖清單成為欺騙的允許專案，將開關滑動至 [開啟]：開啟開啟] ![ ](../../media/scc-toggle-on.png) 。
-  - 如果您最初在真知灼見中選取 **非可疑的網域** ，則 **允許哄騙** 功能已開啟。 若要關閉此功能，可將專案從欺騙性智慧洞察力移至租使用者允許/封鎖清單做為偽造的封鎖專案，將此開關滑動至 [關閉]： ![ 關閉 ](../../media/scc-toggle-off.png) 。
-
+- **允許****從電子欺騙中** 取得或封鎖：選取其中一個值以覆寫原始的欺騙智慧判定，並將輸入從欺騙智慧洞察力移至承租人允許/封鎖清單以取得欺騙的允許或封鎖專案。
 - 我們為何會發現這種情況。
 - 您需要執行的工作。
 - 包含主要欺騙智慧頁面中大部分相同資訊的域摘要。
 - WhoIs 寄件者的相關資料。
+- 開啟[威脅瀏覽器](threat-explorer.md)的連結，以查看有關 Office 365) 之寄件者 (Microsoft Defender 的其他詳細資料。
 - 來自相同寄件者的您租使用者中所看到的類似訊息。
 
 ### <a name="about-allowed-spoofed-senders"></a>關於允許的欺騙寄件者
 
-在欺騙性智慧洞察力中的 **非可疑網域** 或已封鎖的寄件者，在您手動變更為 **允許** 欺詐的 **可疑** 網域中，允許的欺騙寄件者允許來自欺騙網域 *和* 傳送基礎結構的組合的郵件。 不允許來自任何來源的冒牌網域的電子郵件，也不允許來自任何網域之傳送基礎結構的電子郵件。
+您手動變更為 **允許哄騙** 的欺騙性智慧或遭到封鎖的寄件者所允許的欺騙寄件者，只允許來自欺騙網域 *和* 傳送基礎結構的組合中的郵件。 不允許來自任何來源的冒牌網域的電子郵件，也不允許來自任何網域之傳送基礎結構的電子郵件。
 
 例如，下列欺騙寄件者可哄騙：
 

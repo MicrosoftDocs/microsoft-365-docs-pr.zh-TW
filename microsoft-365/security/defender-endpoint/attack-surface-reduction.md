@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0852cc5af2de6767e202e3a839c498e7e008eef3
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 55b06ca25047fe615bd0011528fbdbe5112a4533
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593850"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844979"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻擊面減少規則，以防止惡意程式碼感染
 
@@ -160,8 +160,8 @@ DeviceEvents
 |規則名稱|GUID|File & 資料夾排除|支援的最低作業系統|
 |---|:---:|---|---|
 |[封鎖濫用的漏洞簽章驅動程式](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本)  |
-|[封鎖 Adobe Reader，以建立子流程](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
-|[封鎖所有 Office 的應用程式建立子流程](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|支援|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[封鎖 Adobe Reader，以建立子流程](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
+|[封鎖所有 Office 的應用程式建立子流程](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[封鎖 Windows 本機安全性群組子系統 (lsass.exe 中的認證竊取) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[從電子郵件客戶程式和 web 郵件封鎖可執行檔內容](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
 |[封鎖可執行檔，除非符合流行、age 或受信任的清單準則](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|支援|[Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，組建 16299) 或更高版本|
@@ -518,7 +518,7 @@ Configuration Manager 名稱： `Use advanced protection against ransomware`
 
 GUID:： `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [受攻擊面縮小常見問題集](attack-surface-reduction-faq.md)
 - [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md)

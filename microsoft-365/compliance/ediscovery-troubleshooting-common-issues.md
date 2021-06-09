@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 瞭解您可以採取的基本疑難排解步驟，以解決 Office 365 eDiscovery 中的常見問題。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809116"
+ms.locfileid: "52822235"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、疑難排解及解決常見的 eDiscovery 問題
 
@@ -226,7 +226,7 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 1. 嘗試使用另一部用戶端/電腦來下載。
 
-2. 使用 [Remove-ComplianceSearch] [/powershell/module/exchange/remove-compliancesearch] 指令程式移除已不再需要的舊搜尋。
+2. 移除已不再需要使用 [Remove-ComplianceSearch](/powershell/module/exchange/remove-compliancesearch) Cmdlet 的舊搜尋。
 
 3. 請務必下載到本機磁片磁碟機。
 

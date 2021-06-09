@@ -12,34 +12,34 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 瞭解如何使用 Microsoft Teams，透過使用 Microsoft 365 解決方案來建立您的合約管理通道。
-ms.openlocfilehash: 81d5fe34383453b187363b13c21ef47844948193
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 073ef1651ea5470594bfce0ffce65e849f9e063a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636179"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841171"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步驟 2. 使用 Microsoft Teams 建立您的合約管理通道
 
-當您的組織設定合約管理解決方案時，您需要有一個集中位置，以供專案關係人查看和管理合約。 為了達到此目的，您可以使用[Microsoft Teams](https://docs.microsoft.com/microsoftteams/)設定 Teams 通道，並使用 Teams 中的功能來：
+當您的組織設定合約管理解決方案時，您需要有一個集中位置，以供專案關係人查看和管理合約。 為了達到此目的，您可以使用[Microsoft Teams](/microsoftteams/)設定 Teams 通道，並使用 Teams 中的功能來：
 
 - **建立專案關係人的位置，以輕鬆查看所有需要採取動作的合約。** 例如，在 Teams 您可以在合約管理通道中建立 [**合約**] 索引標籤，在此通道中，成員可以查看需要核准之所有合約的有用磚視圖。 您也可以設定視圖，讓每個「卡片」列出您關心 (的重要資料，例如 *客戶*、 *合同工* 和 *費用金額*) 。
 
      ![[合約] 索引標籤。](../media/content-understanding/tile-view.png)
 
-- **有一個位置可讓成員彼此互動，並查看重要的事件。** 例如，在 Teams 中，[**文章**] 索引標籤可用於進行交談、取得更新，以及查看動作 (例如拒絕合約) 的成員。 當發生某些事情 (例如送出以供核准) 的新合約時，[ **張貼** ] 索引標籤不僅可以宣告，也可以保留其記錄。 而且，如果成員訂閱通知，當有更新時，他們會收到通知。 
+- **有一個位置可讓成員彼此互動，並查看重要的事件。** 例如，在 Teams 中，[**文章**] 索引標籤可用於進行交談、取得更新，以及查看動作 (例如拒絕合約) 的成員。 當發生某些事情 (例如送出以供核准) 的新合約時，[ **張貼** ] 索引標籤不僅可以宣告，也可以保留其記錄。 而且，如果成員訂閱通知，當有更新時，他們會收到通知。
 
-     ![[文章] 索引標籤。](../media/content-understanding/posts.png)</br> 
+     ![[文章] 索引標籤。](../media/content-understanding/posts.png)
 
-- **具有成員的位置，以查看已核准的合約，以瞭解何時可以提交付款。** 在 Teams 中，您可以建立一個付款通道，<b>以</b>列出需要提交至付款的所有合約。 您可以輕鬆地擴充此方案，改為將此資訊直接寫入協力廠商財務應用程式 (例如 Dynamics CRM) 。
+- **具有成員的位置，以查看已核准的合約，以瞭解何時可以提交付款。** 在 Teams 中，您可以建立一個付款通道，**以** 列出需要提交至付款的所有合約。 您可以輕鬆地擴充此方案，改為將此資訊直接寫入協力廠商財務應用程式 (例如 Dynamics CRM) 。
 
-## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>將 SharePoint 文件庫附加至 [合約] 索引標籤 
+## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>將 SharePoint 文件庫附加至 [合約] 索引標籤
 
 在您的合約管理通道中建立 [**合約**] 索引標籤之後，您必須 [將 SharePoint 文件庫附加到該](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)組織單位。 您要附加的 SharePoint 文件庫是您在上一節中套用 SharePoint Syntex 檔理解模型的模型。
 
 附加 SharePoint 文件庫之後，您就可以透過預設清單視圖來查看任何分類合約。
 
-   ![清單視圖。](../media/content-understanding/list-view.png) 
+   ![清單視圖。](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>自訂 [您的合約] 索引標籤視圖
 
@@ -54,7 +54,7 @@ ms.locfileid: "52636179"
 
 如果您想要在 Teams 通道中查看或變更您的視圖的 JSON 代碼，請在 Teams 通道中，選取 [視圖] 下拉式功能表，然後選取 [**格式化目前的視圖**]。
 
-   ![json 格式。](../media/content-understanding/jason-format.png) 
+   ![json 格式。](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>卡片大小和圖形
 
@@ -81,7 +81,6 @@ ms.locfileid: "52636179"
                       }
 ```
 
-
 ## <a name="contract-status"></a>合約狀態
 
 下列程式碼可讓您定義每個標題卡片的狀態。 請 *注意，每* 個狀態值 (*New*、*核准* 和 *拒絕*) 都會針對每個值顯示不同的色彩代碼。 在 [ [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file] 中，查看定義狀態的區段。
@@ -104,10 +103,9 @@ ms.locfileid: "52636179"
               }
 ```
 
-
 ## <a name="extracted-fields"></a>提取的欄位
 
-每個合約卡都會顯示三個欄位，每個合約 (的 *用戶端*、 *合同工* 和 *費用金額*) 中解壓縮。 此外，您也想要顯示 Syntex 用來識別檔的 SharePoint 模型所分類的時間/日期。 
+每個合約卡都會顯示三個欄位，每個合約 (的 *用戶端*、 *合同工* 和 *費用金額*) 中解壓縮。 此外，您也想要顯示 Syntex 用來識別檔的 SharePoint 模型所分類的時間/日期。
 
 在 [ [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file] 中，下列各節定義上述各項。
 
@@ -159,7 +157,6 @@ ms.locfileid: "52636179"
 },
 ```
 
-
 ### <a name="fee-amount"></a>費用金額
 
 本節定義「費用金額」會如何顯示在卡片上，並使用特定合約的值。
@@ -183,8 +180,6 @@ ms.locfileid: "52636179"
                         "txtContent": "[$FeeAmount]"
                       },
 ```
-
-
 
 ### <a name="classification-date"></a>分類日期
 
@@ -210,6 +205,6 @@ ms.locfileid: "52636179"
                       }
 ```
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [步驟3。使用 Power Automate 建立流程以處理您的合約](solution-manage-contracts-step3.md)

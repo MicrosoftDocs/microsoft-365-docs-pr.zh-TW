@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e653ff84602a5e5546ef9a4c0aca2559b77e43c1
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 7c1f768e69fa65c76529e641f095e13fc7ad67c8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683508"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841337"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 受管理的電腦技術
 
@@ -52,8 +52,8 @@ Windows Hello 企業版 | 您應該使用 Microsoft 受管理的電腦裝置的�
  |
  --- | ---
 BitLocker磁片磁碟機加密 | BitLocker磁片磁碟機加密是用來加密所有系統磁片磁碟機。 如需詳細資訊，請參閱[BitLocker 磁片磁碟機加密](/windows/security/information-protection/bitlocker/bitlocker-overview)。
-Windows Defender系統防護 | 在啟動時保護系統的完整性，並驗證系統完整性是否已真正維護。 如需詳細資訊，請參閱[Windows Defender System Guard]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
-Windows Defender Credential Guard | Windows Defender Credential Guard 使用虛擬化的安全性來隔離機密，這樣只有有許可權的系統軟體可以存取這些機密。 如需詳細資訊，請參閱[Windows Defender System Guard]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
+Windows Defender系統防護 | 在啟動時保護系統的完整性，並驗證系統完整性是否已真正維護。 如需詳細資訊，請參閱[Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
+Windows Defender Credential Guard | Windows Defender Credential Guard 使用虛擬化的安全性來隔離機密，這樣只有有許可權的系統軟體可以存取這些機密。 如需詳細資訊，請參閱[Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)。
 Microsoft Defender for Endpoint Endpoint 偵測和回應 | Microsoft 受管理的電腦安全性作業會以端點偵測和回應，回應提醒並採取動作修正威脅。 如需詳細資訊，請參閱 [Microsoft Defender For Endpoint Endpoint 偵測和回應](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)。
 Microsoft Defender for Endpoint 威脅專家 | Microsoft 受管理的電腦會透過目標的攻擊通知，與威脅專家的洞察力和資料整合。 您必須先提供額外的同意，才可啟用此服務。 如需詳細資訊，請參閱 [Microsoft Defender For Endpoint 威脅專家](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)。
 Microsoft Defender for Endpoint-威脅和弱點管理 | 在 Microsoft 受管理的電腦服務方案中供未來使用所需。 如需詳細資訊，請參閱 [Microsoft Defender For Endpoint-威脅和弱點管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)。
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint-攻擊面減少 | 攻擊面減少目標是經常
 Microsoft Defender for Endpoint Exploit Protection | 保護惡意程式碼，以利用利用漏洞來感染裝置，並透過自動將利用漏洞緩解技術套用至作業系統進程和應用程式來傳播。 如需詳細資訊，請參閱 [Microsoft Defender For Endpoint Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)。
 Microsoft Defender 用於端點網路保護 | 網路保護會擴充 Microsoft Defender SmartScreen 的範圍，以封鎖所有嘗試連線至低信譽來源的輸出 HTTP 和 HTTPS 流量。 如需詳細資訊，請參閱 [Microsoft Defender For Endpoint Network Protection](/windows/security/threat-protection/microsoft-defender-atp/network-protection)。
 Microsoft Defender 防篡改保護 | Windows使用防篡改保護，可防止安全性設定（例如防防毒保護）遭到變更。 如需詳細資訊，請參閱 [Microsoft Defender 防篡改防護](/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection)。
-Microsoft Defender 防毒軟體行為型、啟發式和即時防防毒保護 | Always on 掃描檔和處理威脅（可能偵測為惡意程式碼）。 如需詳細資訊，請參閱[Microsoft Defender 防毒軟體行為型、啟發式和即時防防毒保護]( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。
+Microsoft Defender 防毒軟體行為型、啟發式和即時防防毒保護 | Always on 掃描檔和處理威脅（可能偵測為惡意程式碼）。 如需詳細資訊，請參閱[Microsoft Defender 防毒軟體行為型、啟發式和即時防防毒保護](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。
 Microsoft Defender 防毒軟體雲端提供的保護 | 針對新的和新興的威脅提供動態接近即時的自動防護。 如需詳細資訊，請參閱[Microsoft Defender 防毒軟體雲端提供的保護](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)。
 Microsoft Defender "初次看到即區塊" | 在 Windows 偵測到可疑或不明的檔案時，提供偵測和封鎖新的惡意程式碼。 如需詳細資訊，請參閱 [初次看到的 Microsoft Defender 封鎖](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)。
 Microsoft Defender AV 可能不需要的應用程式 | 可能有害的應用程式可用來封鎖可能導致機器執行緩慢、顯示未預期廣告的應用程式，或安裝其他可能是意外或不需要的軟體。 如需詳細資訊，請參閱 [Microsoft DEFENDER AV 可能有害的應用程式](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)。
@@ -74,5 +74,5 @@ Microsoft Defender AV 可能不需要的應用程式 | 可能有害的應用程�
  |
  --- | ---
 企業行動力 + 安全性 E3<br>Azure Active Directory 進階版 P2 |    您可以使用企業行動力 + 安全性 E3 的所有功能來管理 MDM 裝置。 您可以使用 Azure Active Directory 進階版 P2 做為 Microsoft 受管理的電腦的選用功能。
-Microsoft Cloud App Security |  您可以搭配 Microsoft 受管理的電腦使用此選用功能。
+Microsoft 雲端 App 安全性 |  您可以搭配 Microsoft 受管理的電腦使用此選用功能。
 Azure 資訊保護 P2  | 您可以搭配 Microsoft 受管理的電腦使用此選用功能。

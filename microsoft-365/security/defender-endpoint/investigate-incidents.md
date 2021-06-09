@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1d8f4452273047684a30db3b18d1281f40f46378
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0b52b6f9b457dbe1a5984c3d68c7077f7037d498
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903295"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845075"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>調查 Microsoft Defender for Endpoint 中的事件
 
@@ -83,7 +83,7 @@ Microsoft Defender for Endpoint 會自動調查事件中的所有受支援事件
 Microsoft Defender for Endpoint 會將威脅資訊匯總到事件中，讓您可以看到來自各種資料點的模式和關聯性。 您可以透過 incident graph 查看這類關聯。
 
 ### <a name="incident-graph"></a>事件圖形
-**圖形** 會告訴您 cybersecurity 攻擊的故事。 例如，它會顯示進入點，在哪個裝置上觀察到損損或活動的指示器。 等。
+**Graph** 告訴 cybersecurity 攻擊的故事。 例如，它會顯示進入點，在哪個裝置上觀察到損損或活動的指示器。 等。
 
 ![事件圖形的影像](images/atp-incident-graph-tab.png)
 
@@ -92,6 +92,6 @@ Microsoft Defender for Endpoint 會將威脅資訊匯總到事件中，讓您可
 ![事件詳細資料的影像](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>相關主題
-- [事件佇列](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [調查 Microsoft Defender for Endpoint 中的事件](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-incidents)
-- [管理 Microsoft Defender for Endpoint 事件](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-incidents)
+- [事件佇列](/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [調查 Microsoft Defender for Endpoint 中的事件](/microsoft-365/security/defender-endpoint/investigate-incidents)
+- [管理 Microsoft Defender for Endpoint 事件](/microsoft-365/security/defender-endpoint/manage-incidents)

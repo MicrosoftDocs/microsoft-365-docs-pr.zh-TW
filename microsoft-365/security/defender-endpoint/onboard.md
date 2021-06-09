@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 25b70f91824db2a6d05db5d3981dd50f4f2b477a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c58d7d4192afd0aa13a5ffb0c7f3204b4eaf0315
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934738"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844403"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>設定及管理 Microsoft Defender for Endpoint 功能
 
@@ -45,9 +45,9 @@ ms.locfileid: "51934738"
 
 主題 | 描述
 :---|:---
-[設定 Microsoft Defender 安全性中心設定](preferences-setup.md) | 設定與入口相關的設定，例如一般設定、高級功能或啟用預覽體驗。
-[設定攻擊面降減功能](configure-attack-surface-reduction.md) | 設定攻擊面降減功能，以確保設定正確套用，並設定 exploit 緩解技術。
-[設定下一代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 設定下一代保護，以捕捉所有類型的威脅。
-[設定 Microsoft 威脅專家功能](configure-microsoft-threat-experts.md) | 從 Microsoft 威脅專家設定及管理 cybersecurity 威脅智慧。
-[設定 Microsoft 365 Defender 整合](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | 設定其他與 Defender for Endpoint 整合的解決方案。
-[管理和 API 支援](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | 將警示放入您的安全性資訊和事件管理 (SIEM) 或使用 APIs 建立自訂警示。 建立並組建 Power BI 報告。
+[設定 Microsoft Defender 資訊安全中心設定](preferences-setup.md) | 設定與入口相關的設定，例如一般設定、高級功能或啟用預覽體驗。
+[設定受攻擊面縮小功能](configure-attack-surface-reduction.md) | 設定攻擊面降減功能，以確保設定正確套用，並設定 exploit 緩解技術。
+[設定下一代保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 設定下一代保護，以捕捉所有類型的威脅。
+[設定 Microsoft 威脅專家功能](configure-microsoft-threat-experts.md) | 從 Microsoft 威脅專家設定及管理 cybersecurity 威脅情報。
+[設定 Microsoft 365 Defender 整合](/microsoft-365/security/defender-endpoint/threat-protection-integration) | 設定其他與 Defender for Endpoint 整合的解決方案。
+[管理和 API 支援](/microsoft-365/security/defender-endpoint/management-apis) | 將警示放入您的安全性資訊和事件管理 (SIEM) 或使用 APIs 建立自訂警示。 建立及建立 Power BI 報表。

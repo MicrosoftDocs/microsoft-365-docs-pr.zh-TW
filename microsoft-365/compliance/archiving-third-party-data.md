@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從社交媒體平臺、立即訊息平臺及檔共同作業平臺匯入協力廠商資料，以 Microsoft 365 信箱。
-ms.openlocfilehash: 22a2e6dbadc3c259896348fc89754882db85cfb4
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764108"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822150"
 ---
 # <a name="archive-third-party-data"></a>封存第三方資料
 
@@ -86,7 +86,7 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 ||||||||
 
 > [!NOTE]
-> TeleMessage 提供的<sup>1</sup>個資料連線器。 您必須使用 TeleMessage 來為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。<br/><br/><sup>2</sup> 由 Veritas 提供的資料連線器。 在 Microsoft 365 中封存資料之前，您必須與 Veritas 合作，為您的組織設定其封存服務。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。
+> TeleMessage 提供的<sup>1</sup>個資料連線器。 您必須使用 TeleMessage 來為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。 TeleMessage 資料連線器也可在 Microsoft 365 美國政府雲端的 GCC 環境中取得。 如需詳細資訊，請參閱本文的 [美國政府雲端區段中的資料連線器](#data-connectors-in-the-us-government-cloud) 。 <br/><br/><sup>2</sup> 由 Veritas 提供的資料連線器。 在 Microsoft 365 中封存資料之前，您必須與 Veritas 合作，為您的組織設定其封存服務。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。
 
 上表所列的協力廠商資料 (，但 HR 資料和實體聲譽徽章授予資料) 會匯入使用者信箱中。 支援協力廠商資料的對應相容性解決方案會套用至儲存資料的使用者信箱。
 
@@ -125,6 +125,22 @@ Microsoft 365 中的[記錄管理](records-management.md)功能可讓您將協�
 ### <a name="insider-risk-management"></a>內部風險管理
 
 來自協力廠商資料（如選擇性 HR 資料）的信號可供「 [有問必答風險管理](insider-risk-management.md) 」解決方案使用，以在組織中偵測、調查與處理危險的活動，以盡可能降低內部風險。 例如，HR 資料連線器匯入的資料會用作風險標記，以協助偵測盜竊員工資料竊取。
+
+## <a name="data-connectors-in-the-us-government-cloud"></a>美國政府雲端中的資料連線器
+
+如先前所述，TeleMessage 提供的資料連線器可于美國政府雲端取得。 下表指出支援每個 TeleMessage 資料連線器的特定政府環境。 如需有關美國政府雲端的詳細資訊，請參閱[Microsoft 365 us 政府](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)。
+
+|TeleMessage 資料連線器  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|Android 歸檔器 | 是 | 否 | 否 |
+|在&T 簡訊/MMS 網路存檔器 | 是 | 否 | 否 |
+|電鈴簡訊/MMS 網路歸檔器 | 是 | 否 | 否 |
+|Enterprise數位歸檔器 | 是 | 否 | 否 |
+|O2 簡訊和語音網路存檔器 | 是         | 否 | 否 |
+|TELUS 簡訊網路存檔器 | 是 | 否 | 否 |
+|Verizon 簡訊/MMS 網路歸檔器 | 是 | 否 | 否 |
+|WhatsApp 歸檔器 | 是 | 否 | 否 |
+|||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>使用 Microsoft 合作夥伴封存協力廠商資料
 

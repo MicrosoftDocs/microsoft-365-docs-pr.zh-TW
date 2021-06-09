@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 1b769c1b3e4201802ea6150358568bf57894d305
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b8e15f27ffe4babe730870fb576980c62cb0fd59
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185801"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844031"
 ---
-# <a name="troubleshoot-subscription-and-portal-access-issues"></a>疑難排解訂閱及入口網站存取問題
+# <a name="troubleshoot-subscription-and-portal-access-issues"></a>為訂閱和入口網站存取問題疑難排解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,21 +31,21 @@ ms.locfileid: "51185801"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
 
 此頁面提供疑難排解設定 Microsoft Defender for Endpoint service 時可能發生之問題的詳細步驟。
 
-如果您收到錯誤訊息，Microsoft Defender 安全中心會提供有關問題的詳細說明，以及提供相關的連結。
+如果您收到錯誤訊息，Microsoft Defender 資訊安全中心會提供有關問題的詳細說明，以及提供相關的連結。
 
 ## <a name="no-subscriptions-found"></a>找不到訂閱
 
-[！提示] 當存取 Microsoft Defender Security Center 時，出現 [ **未找到任何訂閱** ] 訊息，表示用來登入使用者至入口網站的 Azure Active Directory (azure AD) 沒有 Microsoft Defender for Endpoint 授權。
+當存取 Microsoft Defender 資訊安全中心 [**未找到任何訂閱**] 訊息時，表示) 用來登入使用者至入口網站的 Azure Active Directory (Azure AD （沒有 Microsoft Defender for Endpoint 授權）。
 
 可能的原因：
 - Windows E5 和 Office E5 授權是不同的授權。
 - 已購買授權，但未布建至此 Azure AD 實例。
     - 這可能是授權布建問題。
-    - 這可能是因為您不小心將授權提供給不同的 Microsoft Azure AD，而非用於驗證的服務。
+    - 這可能是因為您不小心將授權提供給不同的 Microsoft Azure AD 以用於驗證至服務。
 
 在這兩種情況下，您應與 Microsoft 支援部門聯繫 [一般 Microsoft Defender For Endpoint support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) 或 [大量授權支援](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "51185801"
 
 ## <a name="your-subscription-has-expired"></a>您的訂閱已過期
 
-當存取 Microsoft Defender Security Center 時，您會收到 **您的訂閱已過期** 郵件，您的線上服務訂閱已過期。 Microsoft Defender for Endpoint 訂閱，與任何其他線上服務訂閱一樣，都有到期日。 
+當您取得訂閱 Microsoft Defender 資訊安全中心，當您取得 **訂閱** 時，您的線上服務訂閱已過期。 Microsoft Defender for Endpoint 訂閱，與任何其他線上服務訂閱一樣，都有到期日。 
 
 您可以選擇在任何時間點更新或擴充授權。 當您訂閱已到期日之後存取入口網站時，如果您選擇不要更新授權，您的 **訂閱已到期** 的郵件將會以下載裝置脫離套件的選項呈現。
 
@@ -65,7 +65,7 @@ ms.locfileid: "51185801"
 ## <a name="you-are-not-authorized-to-access-the-portal"></a>您無權存取入口網站
 
 如果您收到的 **是沒有存取入口網站的授權**，請注意 Microsoft Defender for Endpoint 是安全性監控、事件調查和回應產品，如此一來，存取它會受到使用者限制和控制。
-如需詳細資訊，請參閱 [**指派使用者對入口網站的存取權**](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)。
+如需詳細資訊，請參閱 [**指派使用者對入口網站的存取權**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)。
 
 ![存取入口網站未獲授權的影像](images/atp-not-authorized-to-access-portal.png)
 

@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: f77ce94fda63a9e7e8a9484a67a22eeec136d619
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 481a8f15d6a41bda8dc866ce40d98c4f3717223d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935878"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844051"
 ---
 # <a name="troubleshoot-network-protection"></a>疑難排解網路保護
 
@@ -51,10 +51,10 @@ ms.locfileid: "51935878"
 只有在下列情況下，網路保護才能在裝置上運作：
 
 >[!div class="checklist"]
-> - 端點執行的是 Windows 10 專業版或 Enterprise edition 版本1709或更高版本。
-> - 端點使用 Microsoft Defender 防病毒作為獨立的防防毒保護應用程式。 [請參閱使用非 Microsoft 防病毒方案時會發生什麼情況](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
-> - 已啟用[即時保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
-> - 已啟用[雲端傳送保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus)功能。
+> - 端點執行 Windows 10 專業版或 Enterprise edition 版本版本1709或更新版本。
+> - 端點使用 Microsoft Defender 防毒軟體作為獨立的防防毒保護應用程式。 [請參閱使用非 Microsoft 防病毒方案時會發生什麼情況](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+> - 已啟用[即時保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
+> - 已啟用[雲端傳送保護](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus)功能。
 > - 未啟用稽核模式。 使用 [群組原則](enable-network-protection.md#group-policy) 將規則設定為 **停用** (值： **0**) 。
 
 ## <a name="use-audit-mode"></a>使用稽核模式
@@ -79,7 +79,7 @@ ms.locfileid: "51935878"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>報告誤報或 false 負數
 
-如果您已使用示範網站和審計模式來測試功能，且網路保護在預先設定的案例上運作，但沒有如預期的方式運作，請使用 [Windows Defender 安全性情報 web 提交表單](https://www.microsoft.com/wdsi/filesubmission) 報告誤報或 false 陽性的網路保護。 透過 E5 訂閱，您也可以 [提供任何相關聯警示的連結](alerts-queue.md)。
+如果您已使用示範網站和審計模式來測試功能，且網路保護在預先設定的案例上運作，但未如預期的那樣運作，請使用[Windows Defender 安全性智慧 web 提交表單](https://www.microsoft.com/wdsi/filesubmission)報告 false 負數或 false 正值 for a network protection。 透過 E5 訂閱，您也可以 [提供任何相關聯警示的連結](alerts-queue.md)。
 
 請參閱 [Microsoft Defender For Endpoint 中的 Address false 陽性/負片](defender-endpoint-false-positives-negatives.md)。
 
@@ -120,7 +120,7 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
-您可以使用 [PowerShell]、[Microsoft 端點管理員] 或「群組原則」來設定登錄機碼。 以下是一些可協助的資源：
+您可以使用 PowerShell、Microsoft 端點管理員或群組原則來設定登錄機碼。 以下是一些可協助的資源：
 - [使用登錄機碼](/powershell/scripting/samples/working-with-registry-keys)
 - [設定 Endpoint Protection 的自訂用戶端設定](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [使用群組原則設定來管理 Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93aa685f12e0241758bf86d3aa956717db052e5f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 56fd5aa10cf30e7bdcad213a68430b460e65647c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499930"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844211"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>查看和組織 Microsoft Defender for Endpoint 事件佇列
 
@@ -32,7 +32,7 @@ ms.locfileid: "51499930"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 [ **事件] 佇列** 顯示從您網路中的裝置標記的事件集合。 可協助您設定事件優先順序及制定明智的網路安全回應決策。
 
@@ -60,7 +60,7 @@ ms.locfileid: "51499930"
 高 </br> (Red)  | 威脅常常與高級持續威脅 (APT) 相關聯。 因為這些事件可能會對裝置造成損毀，所以會指出高風險。
 中 </br> (橙色)  | 組織中極少看到的威脅，例如反常登錄變更、可疑檔案的執行，以及常見攻擊階段的觀察行為。
 低 </br> (黃色)  | 與流行惡意程式碼和駭客攻擊相關的威脅，不一定表示組織的高級威脅。
-資訊 </br> (灰色)  | 資訊性事件可能不會被視為對網路有害，但很有可能會讓追蹤。
+參考 </br> (灰色)  | 資訊性事件可能不會被視為對網路有害，但很有可能會讓追蹤。
 
 ## <a name="assigned-to"></a>指派給
 您可以選取指派給任何人或指派給您來篩選清單。
@@ -85,7 +85,7 @@ ms.locfileid: "51499930"
 
 
 ## <a name="see-also"></a>另請參閱
-- [事件佇列](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [事件佇列](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [管理事件](manage-incidents.md)
 - [調查事件](investigate-incidents.md)
 

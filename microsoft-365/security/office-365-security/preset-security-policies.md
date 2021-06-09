@@ -15,12 +15,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 和 Microsoft Defender Office 365 的保護功能上套用標準和嚴格的原則設定
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771222"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822283"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的預設安全性原則
 
@@ -105,7 +105,7 @@ ms.locfileid: "52771222"
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以在中開啟 Microsoft 365 的安全性中心 <https://security.microsoft.com/> 。 若要直接移至 [ **預先設定的安全性原則** ] 頁面，請使用 <https://security.microsoft.com/presetSecurityPolicies> 。
+- 您可以在中開啟 Microsoft 365 的安全性中心 <https://security.microsoft.com> 。 若要直接移至 [ **預先設定的安全性原則** ] 頁面，請使用 <https://security.microsoft.com/presetSecurityPolicies> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -119,7 +119,7 @@ ms.locfileid: "52771222"
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>使用安全中心將預設的安全性原則指派給使用者
 
-1. 在 [安全性中心] 中，移至 [ **電子郵件 & 協同** 作業 \> **原則] & 規則** \> **威脅原則**「預設 \> **安全性原則**」。
+1. 在 [安全性中心] 中，移至 [ **電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **範本化原則** ] 區段 \> 中的 **安全性原則**。
 
 2. 在 [ **標準防護** ] 或 [ **嚴格防護**] 底下，按一下 [ **編輯**]。
 

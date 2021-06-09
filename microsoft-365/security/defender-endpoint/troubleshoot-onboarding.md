@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 6465be53de38872e3eb1d7b70dc3efbb9154aace
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934198"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844871"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>疑難排解 Microsoft Defender 的端點上架問題
 
@@ -52,7 +52,7 @@ ms.locfileid: "51934198"
 
 如果腳本順利完成，請參閱裝置上有關可能發生之其他錯誤的 [上架問題疑難排解](#troubleshoot-onboarding-issues-on-the-device) 。
 
-### <a name="troubleshoot-onboarding-issues-when-deploying-with-microsoft-endpoint-configuration-manager"></a>使用 Microsoft 端點 Configuration Manager 部署時疑難排解上架問題
+### <a name="troubleshoot-onboarding-issues-when-deploying-with-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 部署時疑難排解上架問題
 
 使用下列 Configuration Manager 版本上架裝置時：
 
@@ -85,8 +85,8 @@ ms.locfileid: "51934198"
 :---:|:---|:---
  `5` | 找不到脫離資料，但無法將其刪除 | 檢查登錄的許可權（特別是<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 `10` | 無法將上架資料寫入登錄 |  檢查登錄的許可權（特別是<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.<br>確認腳本已以系統管理員身分執行。
-`15` |  無法啟動 SENSE 服務 |請檢查服務健康情況 (`sc query sense` 命令) 。 確定它不在中間狀態 (*' Pending_Stopped '*、 *' Pending_Running '*) ，然後嘗試使用系統管理員許可權 (，以重新執行腳本。 <br> <br> 如果裝置執行 Windows 10，版本1607，並執行命令傳回 `sc query sense` `START_PENDING` ，請重新開機裝置。 如果重新開機裝置無法解決問題，請升級至 KB4015217，然後再嘗試上架。
-`15` | 無法啟動 SENSE 服務 | 如果錯誤訊息為：系統錯誤577或發生錯誤1058，您必須啟用 Microsoft Defender 防病毒 ELAM 驅動程式，請參閱 [確定原則未停用 Microsoft Defender 防毒軟體](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) ，以取得指示。
+`15` |  無法啟動 SENSE 服務 |請檢查服務健康情況 (`sc query sense` 命令) 。 確定它不在中間狀態 (*' Pending_Stopped '*、 *' Pending_Running '*) ，然後嘗試使用系統管理員許可權 (，以重新執行腳本。 <br> <br> 如果裝置執行 Windows 10，版本1607並執行命令會傳回 `sc query sense` `START_PENDING` ，請重新開機裝置。 如果重新開機裝置無法解決問題，請升級至 KB4015217，然後再嘗試上架。
+`15` | 無法啟動 SENSE 服務 | 如果錯誤訊息為：系統錯誤577或發生錯誤1058，您必須啟用 Microsoft Defender 防毒軟體的 ELAM 驅動程式，請參閱[確定原則未停用 Microsoft Defender 防毒軟體](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)的指示。
 `30` |  腳本無法等候服務開始執行 | 在嘗試啟動服務時，可能會花費更多時間來開始或發生錯誤。 如需與意義相關之事件及錯誤的詳細資訊，請參閱 [使用事件檢視器審閱事件與錯誤](event-error-codes.md)。
 `35` |  腳本無法找到所需的上架狀態登錄值 | 當 SENSE 服務第一次啟動時，它會將上架狀態寫入登錄位置。<br>`HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`.<br> 腳本在數秒後未找到它。 您可以手動測試它，並檢查是否存在。 如需與意義相關之事件及錯誤的詳細資訊，請參閱 [使用事件檢視器審閱事件與錯誤](event-error-codes.md)。
 `40` | SENSE 服務上架狀態未設為 **1** | SENSE 服務未能正確板載。 如需與意義相關之事件及錯誤的詳細資訊，請參閱 [使用事件檢視器審閱事件與錯誤](event-error-codes.md)。
@@ -100,7 +100,7 @@ ms.locfileid: "51934198"
 
 使用下表來瞭解上架問題的可能原因：
 
-- Microsoft Intune 錯誤碼和 OMA-URIs 表格
+- Microsoft Intune 錯誤碼及 OMA-URIs 表格
 - 非規範表格的已知問題
 - 行動裝置管理 (MDM) 事件記錄表格
 
@@ -110,11 +110,11 @@ ms.locfileid: "51934198"
 
 錯誤碼十六進位 | 錯誤碼 Dec | Error Description | OMA URI | 可能的原因及疑難排解步驟
 :---:|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | 修正失敗 | 上線 <br> Offboarding | **可能的原因：** 上架或脫離錯誤的 blob 失敗：簽名錯誤或遺失 PreviousOrgIds 欄位。 <br><br> **疑難排解步驟：** <br> 在 [裝置事件記錄檔] 區段中，檢查 [ [View agent 內架] 錯誤中](#view-agent-onboarding-errors-in-the-device-event-log) 的事件 IDs。 <br><br> 請檢查下表中的 MDM 事件記錄檔，或遵循在 [Windows 10 中診斷 MDM 失敗](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)的指示。
+0x87D1FDE8 | -2016281112 | 修正失敗 | 上線 <br> Offboarding | **可能的原因：** 上架或脫離錯誤的 blob 失敗：簽名錯誤或遺失 PreviousOrgIds 欄位。 <br><br> **疑難排解步驟：** <br> 在 [裝置事件記錄檔] 區段中，檢查 [ [View agent 內架] 錯誤中](#view-agent-onboarding-errors-in-the-device-event-log) 的事件 IDs。 <br><br> 請檢查下表中的 MDM 事件記錄檔，或遵循[Windows 10 中的診斷 MDM 失敗](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)指示。
  | | | | 上線 <br> Offboarding <br> SampleSharing | **可能的原因：** Microsoft Defender for Endpoint 原則登錄機碼不存在，或 OMA DM 用戶端沒有寫入權限的許可權。 <br><br> **疑難排解步驟：** 確定下列登錄機碼存在： `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> 如果不存在，請開啟提升許可權的命令並新增金鑰。
- | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **可能的原因：** 嘗試以唯讀屬性修正。 上架失敗。 <br><br> **疑難排解步驟：** 檢查疑難排解步驟以 [疑難排解裝置上的上架問題](#troubleshoot-onboarding-issues-on-the-device)。 <br><br> 請檢查下表中的 MDM 事件記錄檔，或遵循在 [Windows 10 中診斷 MDM 失敗](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)的指示。
- | | | | 全部 | **可能的原因：** 嘗試在不支援的 SKU/平臺上部署 Microsoft Defender for Endpoint，尤其是全息版 SKU。 <br><br> 目前支援的平臺：<br> 企業版、教育版及專業版。<br> 不支援 Server。
- 0x87D101A9 | -2016345687 |SyncML (425) ：要求的命令失敗，因為寄件者在收件者上沒有適當的存取控制許可權 (ACL) 。 | 全部 |  **可能的原因：** 嘗試在不支援的 SKU/平臺上部署 Microsoft Defender for Endpoint，尤其是全息版 SKU。<br><br> 目前支援的平臺：<br>  企業版、教育版及專業版。
+ | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **可能的原因：** 嘗試以唯讀屬性修正。 上架失敗。 <br><br> **疑難排解步驟：** 檢查疑難排解步驟以 [疑難排解裝置上的上架問題](#troubleshoot-onboarding-issues-on-the-device)。 <br><br> 請檢查下表中的 MDM 事件記錄檔，或遵循[Windows 10 中的診斷 MDM 失敗](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)指示。
+ | | | | 全部 | **可能的原因：** 嘗試在不支援的 SKU/平臺上部署 Microsoft Defender for Endpoint，尤其是全息版 SKU。 <br><br> 目前支援的平臺：<br> Enterprise、教育和 Professional。<br> 不支援 Server。
+ 0x87D101A9 | -2016345687 |SyncML (425) ：要求的命令失敗，因為寄件者在收件者上沒有適當的存取控制許可權 (ACL) 。 | 全部 |  **可能的原因：** 嘗試在不支援的 SKU/平臺上部署 Microsoft Defender for Endpoint，尤其是全息版 SKU。<br><br> 目前支援的平臺：<br>  Enterprise、教育和 Professional。
 
 #### <a name="known-issues-with-non-compliance"></a>非規範的已知問題
 
@@ -122,21 +122,21 @@ ms.locfileid: "51934198"
 
 案例 | 徵狀 | 可能的原因及疑難排解步驟
 :---:|:---|:---
- `1` | 裝置符合 SenseIsRunning OMA URI。 不過，OrgId、上架和 OnboardingState OMA URIs 不相容。 | **可能的原因：** 檢查使用者在 Windows 安裝或升級後是否已傳遞 OOBE。 在 OOBE 內架未能完成，但有意義已執行。<br><br> **疑難排解步驟：** 等候 OOBE 完成。
- `2` |  裝置遵循 OrgId、上架和 OnboardingState OMA URIs，但不符合 SenseIsRunning OMA-URI。 |  **可能的原因：** Sense 服務的啟動類型設定為「延遲啟動」。 有時候，當系統啟動時出現 DM 會話時，這會導致 Microsoft Intune 伺服器將裝置報告為不相容的 SenseIsRunning。 <br><br> **疑難排解步驟：** 問題應該會在24小時內自動修正。
+ `1` | 裝置符合 SenseIsRunning OMA URI。 不過，OrgId、上架和 OnboardingState OMA URIs 不相容。 | **可能的原因：** 檢查使用者 Windows 安裝或升級後是否已傳遞 OOBE。 在 OOBE 內架未能完成，但有意義已執行。<br><br> **疑難排解步驟：** 等候 OOBE 完成。
+ `2` |  裝置遵循 OrgId、上架和 OnboardingState OMA URIs，但不符合 SenseIsRunning OMA-URI。 |  **可能的原因：** Sense 服務的啟動類型設定為「延遲啟動」。 當系統啟動時進行 DM 會話時，有時會造成 Microsoft Intune 伺服器報告裝置的 SenseIsRunning 不相容。 <br><br> **疑難排解步驟：** 問題應該會在24小時內自動修正。
  `3` | 裝置不相容 | **疑難排解步驟：** 確定上架和脫離原則不會同時部署在相同的裝置上。
 
 #### <a name="mobile-device-management-mdm-event-logs"></a>移動裝置管理 (MDM) 事件記錄
 
 查看 MDM 事件記錄檔，以疑難排解上架期間可能發生的問題：
 
-記錄檔名稱： Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Provider
+記錄檔名稱： Microsoft \ Windows \DeviceManagement-EnterpriseDiagnostics-Provider
 
 通道名稱：系統管理員
 
 ID | 嚴重性 | 事件說明 | 疑難排解步驟
 :---|:---|:---|:---
-1819 | 錯誤 | Microsoft Defender for Endpoint CSP：無法設定節點的值。 對等： (% 1) ，TokenName： (% 2) ，結果： (% 3) 。 | 下載 [Windows 10 1607 的累計更新](https://go.microsoft.com/fwlink/?linkid=829760)。
+1819 | 錯誤 | Microsoft Defender for Endpoint CSP：無法設定節點的值。 對等： (% 1) ，TokenName： (% 2) ，結果： (% 3) 。 | 下載[Windows 10，1607的累計更新](https://go.microsoft.com/fwlink/?linkid=829760)。
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>疑難排解裝置上的上架問題
 
@@ -146,13 +146,13 @@ ID | 嚴重性 | 事件說明 | 疑難排解步驟
 - [確定已啟用診斷資料服務](#ensure-the-diagnostics-service-is-enabled)
 - [確定已將服務設定為啟動](#ensure-the-service-is-set-to-start)
 - [確定裝置具有網際網路連線](#ensure-the-device-has-an-internet-connection)
-- [確定原則未停用 Microsoft Defender 防毒程式](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+- [確定原則未停用 Microsoft Defender 防毒軟體](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 ### <a name="view-agent-onboarding-errors-in-the-device-event-log"></a>在裝置事件記錄檔中查看代理程式上架錯誤
 
 1. 按一下 [ **開始**]，輸入 **事件檢視器**，然後按 **enter** 鍵。
 
-2. 在 **事件檢視器中 (Local)** 窗格中，展開 [**應用程式及服務記錄**] [  >  **Microsoft**  >  **Windows**  >  **感知**]。
+2. 在 **事件檢視器中 (Local)** 窗格中，展開 [**應用程式及服務記錄**  >  **Microsoft**  >  **Windows**  >  **感知**]。
 
    > [!NOTE]
    > 判斷是指用來表示為 Microsoft Defender for Endpoint 供電的行為感應器的內部名稱。
@@ -195,9 +195,9 @@ ID | 嚴重性 | 事件說明 | 疑難排解步驟
 
 ### <a name="ensure-the-diagnostic-data-service-is-enabled"></a>確定已啟用診斷資料服務
 
-如果裝置的報告不正確，您可能需要檢查 Windows 10 診斷資料服務是否已設定為自動啟動，且正在裝置上執行。 服務可能已由其他程式或使用者設定變更停用。
+如果裝置的報告不正確，您可能需要確認 Windows 10 診斷資料服務設定為自動啟動，且正在裝置上執行。 服務可能已由其他程式或使用者設定變更停用。
 
-首先，您應該檢查是否已將服務設定為自動啟動 Windows 啟動時，您應該檢查服務目前是否正在執行 (，並在未) 時加以啟動。
+首先，您應該檢查是否已將服務設定為在 Windows 啟動時自動啟動，否則應該檢查服務目前是否正在執行中 (並在未) 時啟動它。
 
 ### <a name="ensure-the-service-is-set-to-start"></a>確定已將服務設定為啟動
 
@@ -221,7 +221,7 @@ ID | 嚴重性 | 事件說明 | 疑難排解步驟
 
    若 `START_TYPE` 未設定為，則 `AUTO_START` 必須將服務設定為自動啟動。
 
-**使用命令列將 Windows 10 診斷資料服務設定為自動啟動：**
+**使用命令列，將 Windows 10 診斷資料服務設定為自動啟動：**
 
 1. 在裝置上開啟已提升許可權的命令列提示：
 
@@ -259,12 +259,12 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
 
 若驗證失敗，且您的環境使用 proxy 來連線至網際網路，請遵循 [設定 proxy 和網際網路連線設定](configure-proxy-internet.md) 主題中所述的步驟。
 
-### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>確定原則未停用 Microsoft Defender 防毒程式
+### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>確定原則未停用 Microsoft Defender 防毒軟體
 
 > [!IMPORTANT]
-> 下列僅適用 **于尚未收到** 2020 (版本 4.18.2007.8) 更新至 Microsoft Defender 防病毒的裝置。
+> 下列僅適用 **于尚未收到** 2020 (版本 4.18.2007.8) update to Microsoft Defender 防毒軟體的裝置。
 >
-> 更新可確保透過系統原則停用用戶端裝置上的 Microsoft Defender 防病毒。
+> 更新可確保無法透過系統原則關閉用戶端裝置上的 Microsoft Defender 防毒軟體。
 
 **問題**：上架服務不會啟動 Microsoft Defender for Endpoint service。
 
@@ -283,16 +283,16 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> 在 `disableAntiSpyware` 2020 年8月 (版本 4.18.2007.8) 更新至 Microsoft Defender 防毒程式後，所有用戶端裝置都會忽略此設定。
+> 在 `disableAntiSpyware` 2020 年8月 (版本 4.18.2007.8) update to Microsoft Defender 防毒軟體時，所有用戶端裝置都會忽略此設定。
 
 - 清除原則之後，請再次執行上架步驟。
 
 - 您也可以透過開啟登錄機碼，檢查先前登錄機碼值，以確認原則已停用 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` 。
 
-    ![Microsoft Defender 防病毒之登錄機碼的影像](images/atp-disableantispyware-regkey.png)
+    ![Microsoft Defender 防毒軟體的登錄機碼影像](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
-   > 所有 Windows Defender 服務 (wdboot、wdfilter、wdnisdrv、wdnissvc 和 windefend) 應處於其預設狀態。 不支援變更這些服務的啟動，而且可能會強制您重設系統的映射。
+   > 所有 Windows Defender 服務 (wdboot、wdfilter、wdnisdrv、wdnissvc 和 windefend) 應該處於其預設狀態。 不支援變更這些服務的啟動，而且可能會強制您重設系統的映射。
    >
    > WdBoot 與 WdFilter 的預設設定範例：
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
@@ -302,7 +302,7 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
 
 如果您在上架伺服器時遇到問題，請執行下列驗證步驟，以解決可能的問題。
 
-- [確定已安裝並設定 Microsoft Monitoring Agent (MMA) ，且設定為將感應器資料包告給服務](configure-server-endpoints.md)
+- [確定已安裝並設定 Microsoft Monitoring Agent (MMA) ，以將感應器資料包告給服務](configure-server-endpoints.md)
 - [確定已正確設定伺服器 proxy 和網際網路連線設定](configure-server-endpoints.md)
 
 您可能還需要檢查下列專案：
@@ -313,7 +313,7 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
 
 - 檢查 **事件檢視器**  >  **應用程式和服務記錄** 作業  >  **管理員**，以查看是否有任何錯誤。
 
-- 在 [ **服務**] 中，檢查伺服器上是否正在執行 **Microsoft Monitoring Agent** 。 例如：
+- 在 [**服務**] 中，檢查 **Microsoft Monitoring Agent** 是否正在伺服器上執行。 例如：
 
     ![服務影像](images/atp-services.png)
 
@@ -335,127 +335,127 @@ WinHTTP 獨立于網際網路流覽 proxy 設定和其他使用者內容應用�
 - 在此案例中，即使已部署上架套件，也不會自動啟動 SENSE 服務
 
 > [!NOTE]
-> 下列步驟僅適用于使用 Microsoft 端點 Configuration Manager 時。 如需使用 Microsoft Endpoint Configuration Manager 上架的詳細資訊，請參閱 [Microsoft Defender For Endpoint](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
+> 下列步驟僅適用于使用 Microsoft Endpoint Configuration Manager。 如需使用 Microsoft Endpoint Configuration Manager 上架的詳細資訊，請參閱[Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 
-1. 在 Microsoft 端點 Configuration Manager 中建立應用程式。
+1. 在 Microsoft Endpoint Configuration Manager 中建立應用程式。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration1](images/mecm-1.png)
+    ![Microsoft Endpoint Configuration Manager configuration1 的影像](images/mecm-1.png)
 
 2. 選取 **[手動指定應用程式資訊**]。
 
-    ![Microsoft 端點 Configuration Manager 的圖像設定2](images/mecm-2.png)
+    ![Microsoft Endpoint Configuration Manager 設定2的影像](images/mecm-2.png)
 
 3. 指定應用程式的相關資訊，然後選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration3](images/mecm-3.png)
+    ![Microsoft Endpoint Configuration Manager configuration3 的影像](images/mecm-3.png)
 
 4. 指定軟體中心的相關資訊，然後選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration4](images/mecm-4.png)
+    ![Microsoft Endpoint Configuration Manager configuration4 的影像](images/mecm-4.png)
 
 5. 在 **部署類型** 中，選取 [ **新增**]。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration5](images/mecm-5.png)
+    ![Microsoft Endpoint Configuration Manager configuration5 的影像](images/mecm-5.png)
 
 6. 選取 **[手動指定部署類型資訊**]，然後選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration6](images/mecm-6.png)
+    ![Microsoft Endpoint Configuration Manager configuration6 的影像](images/mecm-6.png)
 
 7. 指定部署類型的相關資訊，然後選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration7](images/mecm-7.png)
+    ![Microsoft Endpoint Configuration Manager configuration7 的影像](images/mecm-7.png)
 
 8. 在 **內容**  >  **安裝程式** 中指定命令： `net start sense` 。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration8](images/mecm-8.png)
+    ![Microsoft Endpoint Configuration Manager configuration8 的影像](images/mecm-8.png)
 
 9. 在 [ **偵測方法**] 中，選取 **[設定規則以偵測此部署類型的存在**]，然後選取 [ **Add 子句**]。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration9](images/mecm-9.png)
+    ![Microsoft Endpoint Configuration Manager configuration9 的影像](images/mecm-9.png)
 
 10. 指定下列偵測規則詳細資料，然後選取 **[確定]**：
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration10](images/mecm-10.png)
+    ![Microsoft Endpoint Configuration Manager configuration10 的影像](images/mecm-10.png)
 
 11. 在 **偵測方法** 中，選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration11](images/mecm-11.png)
+    ![Microsoft Endpoint Configuration Manager configuration11 的影像](images/mecm-11.png)
 
 12. 在 [ **使用者經驗**] 中，指定下列資訊，然後選取 **[下一步]**：
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration12](images/mecm-12.png)
+    ![Microsoft Endpoint Configuration Manager configuration12 的影像](images/mecm-12.png)
 
 13. 在 [ **需求**] 中選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration13](images/mecm-13.png)
+    ![Microsoft Endpoint Configuration Manager configuration13 的影像](images/mecm-13.png)
 
 14. 在 [ **依賴性**] 中選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration14](images/mecm-14.png)
+    ![Microsoft Endpoint Configuration Manager configuration14 的影像](images/mecm-14.png)
 
 15. 在 [ **摘要**] 中選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration15](images/mecm-15.png)
+    ![Microsoft Endpoint Configuration Manager configuration15 的影像](images/mecm-15.png)
 
 16. 在 **完成** 中，選取 [ **關閉**]。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration16](images/mecm-16.png)
+    ![Microsoft Endpoint Configuration Manager configuration16 的影像](images/mecm-16.png)
 
 17. 在 [ **部署類型**] 中，選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration17](images/mecm-17.png)
+    ![Microsoft Endpoint Configuration Manager configuration17 的影像](images/mecm-17.png)
 
 18. 在 [ **摘要**] 中選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration18](images/mecm-18.png)
+    ![Microsoft Endpoint Configuration Manager configuration18 的影像](images/mecm-18.png)
 
-    然後會顯示狀態： ![ Microsoft 端點 Configuration Manager 的圖像 configuration19](images/mecm-19.png)
+    然後會顯示狀態： ![ Microsoft Endpoint Configuration Manager configuration19 的影像](images/mecm-19.png)
 
 19. 在 **完成** 中，選取 [ **關閉**]。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration20](images/mecm-20.png)
+    ![Microsoft Endpoint Configuration Manager configuration20 的影像](images/mecm-20.png)
 
 20. 現在您可以使用滑鼠右鍵按一下 app，然後選擇 [ **部署**] 來部署應用程式。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration21](images/mecm-21.png)
+    ![Microsoft Endpoint Configuration Manager configuration21 的影像](images/mecm-21.png)
 
 21. **[一般**] 選取 [**自動散佈** 相依內容 **] 及 [流覽]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration22](images/mecm-22.png)
+    ![Microsoft Endpoint Configuration Manager configuration22 的影像](images/mecm-22.png)
 
 22. 在 **內容** 中選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration23](images/mecm-23.png)
+    ![Microsoft Endpoint Configuration Manager configuration23 的影像](images/mecm-23.png)
 
 23. 在 [ **部署設定**] 中，選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration24](images/mecm-24.png)
+    ![Microsoft Endpoint Configuration Manager configuration24 的影像](images/mecm-24.png)
 
 24. 在 **排程** 中，請在 **可用時間後儘快** 選取，然後選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration25](images/mecm-25.png)
+    ![Microsoft Endpoint Configuration Manager configuration25 的影像](images/mecm-25.png)
 
 25. 在 [ **使用者經驗**] 中，選取 [ **在截止期限或維護時段內認可變更] (需要重新開機)**，然後選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration26](images/mecm-26.png)
+    ![Microsoft Endpoint Configuration Manager configuration26 的影像](images/mecm-26.png)
 
 26. **警示** 選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration27](images/mecm-27.png)
+    ![Microsoft Endpoint Configuration Manager configuration27 的影像](images/mecm-27.png)
 
 27. 在 [ **摘要**] 中選取 **[下一步]**。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration28](images/mecm-28.png)
+    ![Microsoft Endpoint Configuration Manager configuration28 的影像](images/mecm-28.png)
 
-    然後，狀態就會顯示 ![ Microsoft 端點 Configuration Manager configuration29 的影像。](images/mecm-29.png)
+    然後，狀態就會顯示 ![ Microsoft Endpoint Configuration Manager configuration29 的影像。](images/mecm-29.png)
 
 28. 在 **完成** 中，選取 [ **關閉**]。
 
-    ![Microsoft 端點 Configuration Manager 的圖像 configuration30](images/mecm-30.png)
+    ![Microsoft Endpoint Configuration Manager configuration30 的影像](images/mecm-30.png)
 
 
 ## <a name="related-topics"></a>相關主題
 
 - [為適用於端點的 Microsoft Defender 疑難排解](troubleshoot-mdatp.md)
-- [板載裝置](onboard-configure.md)
-- [設定裝置 proxy 和網際網路連線設定](configure-proxy-internet.md)
+- [將裝置上線](onboard-configure.md)
+- [設定裝置 Proxy 和網際網路連線能力設定](configure-proxy-internet.md)

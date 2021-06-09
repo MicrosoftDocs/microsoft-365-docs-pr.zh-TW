@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47211e187d1f9f883745f008c6d94d04ee762e98
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302061"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822319"
 ---
 # <a name="web-content-filtering"></a>Web 內容篩選
 
@@ -57,15 +57,15 @@ web 內容篩選在主要網頁瀏覽器上提供，Windows Defender SmartScreen
 
 ## <a name="prerequisites"></a>必要條件
 
-在嘗試此功能之前，請確定您有下列需求：
+在嘗試此功能之前，請確定您符合下列需求：
 
 - Windows 10 企業版E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性附加元件或 Microsoft Defender for Endpoint 獨立授權。 
 - 存取 Microsoft Defender 資訊安全中心入口網站 (https://securitycenter.windows.com) 。
-- 執行 Windows 10 周年紀念日的裝置會更新 (版本 1607) 或更新的最新 MoCAMP 更新。
+- 執行 Windows 10 周年紀念日的裝置會以最新的 Microsoft Defender 反惡意程式碼引擎更新 (版本 1607) 或更新版本。
 
 ## <a name="data-handling"></a>資料處理
 
-我們會依照您選擇要使用的任何區域，做為 [端點資料處理設定](data-storage-privacy.md)的一部分。 您的資料不會離開該地區的資料中心。 此外，所有協力廠商都不會共用您的資料，包括我們的資料提供者。
+資料儲存在 [Microsoft Defender For Endpoint data 處理設定](data-storage-privacy.md)的一部分中所選取的區域。 您的資料不會離開該地區的資料中心。 此外，所有協力廠商都不會共用您的資料，包括我們的資料提供者。
 
 ## <a name="turn-on-web-content-filtering"></a>開啟 web 內容篩選
 
@@ -91,14 +91,10 @@ Web 內容篩選原則會指定哪些網站類別會封鎖在哪些裝置群組�
 
 5. 請複查摘要並儲存原則。 原則更新最多可能需要2個小時才能套用至您選取的裝置。
 
-> [!TIP]
-> 您可以部署原則，而不需要選取裝置群組上的任何類別。 此巨集指令只會建立一個審核原則，以協助您在建立封鎖原則之前瞭解使用者行為。
-
->[!NOTE]
->如果您要同時移除原則或變更裝置群組，這可能會導致原則部署延遲。
-
->[!IMPORTANT]
->封鎖 "未分類" 類別可能會導致意外的和不想要的結果。  
+> [!NOTE]
+> - 您可以部署原則，而不需要選取裝置群組上的任何類別。 此巨集指令只會建立一個審核原則，以協助您在建立封鎖原則之前瞭解使用者行為。
+> - 如果您要同時移除原則或變更裝置群組，這可能會導致原則部署延遲。
+> - 封鎖 "未分類" 類別可能會導致意外的和不想要的結果。  
 
 ### <a name="allow-specific-websites"></a>允許特定網站
 
@@ -120,7 +116,7 @@ Web 內容篩選原則會指定哪些網站類別會封鎖在哪些裝置群組�
 
 ## <a name="web-content-filtering-cards-and-details"></a>Web 內容篩選卡片和詳細資料
 
-選取 [ **報告] > 網頁防護** ] 以查看卡片，其中包含有關 web 內容篩選和網頁威脅防護的資訊。 下列卡片提供有關 web 內容篩選的摘要資訊。
+選取 [**報告**  >  **web 保護**] 以查看卡片，以查看有關 web 內容篩選和網頁威脅防護的資訊。 下列卡片提供有關 web 內容篩選的摘要資訊。
 
 ### <a name="web-activity-by-category"></a>依類別的網頁活動
 
@@ -166,9 +162,4 @@ Web 內容篩選原則會指定哪些網站類別會封鎖在哪些裝置群組�
 
 - 「Web 內容篩選」報告目前僅限於顯示前5000記錄。 例如，[網域] 報告只會針對指定的篩選器查詢顯示最上層的5000網域（如果適用）。 
 
-## <a name="related-topics"></a>相關主題
 
-- [Web 保護概觀](web-protection-overview.md)
-- [網頁威脅防護](web-threat-protection.md)
-- [監視 Web 安全性](web-protection-monitoring.md)
-- [回應 Web 威脅](web-protection-response.md)

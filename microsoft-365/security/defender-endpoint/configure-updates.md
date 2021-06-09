@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d8f589da32ae72383bbe2da7624c9bb846265679
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 26695df0e34c0e06adc4f58acf3fea83122c1982
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809246"
+ms.locfileid: "52844475"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>建立 Microsoft Defender 更新的自訂逐步展示過程
 
@@ -54,7 +54,7 @@ ms.locfileid: "52809246"
 > [!NOTE]
 > 更新的 Defender ADMX 範本會一起發佈，與 Windows 10 的21H2 版本一起發行。
 
-您可以使用 [群組原則](https://docs.microsoft.com/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)   來設定及管理端點上的 Microsoft Defender 防毒軟體。
+您可以使用 [群組原則](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)   來設定及管理端點上的 Microsoft Defender 防毒軟體。
 
 一般來講，您可以使用下列程式設定或變更 Microsoft Defender 防毒軟體群組原則設定：
 
@@ -74,7 +74,7 @@ ms.locfileid: "52809246"
 
 遵循下列連結中的指示，在 Intune 中建立自訂原則：
 
-[Microsoft Intune Azure Microsoft 檔中的 Windows 10 裝置新增自訂設定 \|](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)
+[Microsoft Intune Azure Microsoft 檔中的 Windows 10 裝置新增自訂設定 \|](/mem/intune/configuration/custom-settings-windows-10)
 
 ## <a name="powershell"></a>PowerShell
 
@@ -94,4 +94,4 @@ Set-MpPreference
 
 用於 `Set-MpPreference -PlatformUpdatesChannel Beta` 設定平臺更新，以從 Beta 通道抵達。
 
-如需參數及其設定方式的詳細資訊，請參閱 [MpPreference (Defender) |Microsoft](https://docs.microsoft.com/powershell/module/defender/set-mppreference?view=windowsserver2019-ps)檔。
+如需參數及其設定方式的詳細資訊，請參閱 [MpPreference (Defender) |Microsoft](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps)檔。

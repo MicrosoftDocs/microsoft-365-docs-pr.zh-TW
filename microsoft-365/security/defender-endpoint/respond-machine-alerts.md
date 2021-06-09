@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ae8b08ce3d5bcc34e91f031223108fca053348ce
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: aab9c191e590b0717a0f1be62ed88a699d3b5b57
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572390"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844040"
 ---
 # <a name="take-response-actions-on-a-device"></a>在裝置上採取回應動作
 
@@ -124,7 +124,7 @@ Live response 的設計目的是讓您可以收集法律調查資料、執行腳
 
 >[!IMPORTANT]
 >- 此動作可用於 Windows 10 版本1709或更新版本的裝置。
->- Microsoft Defender 防毒軟體 (microsoft defender av) 掃描可與其他防病毒方案一起執行，不論 microsoft defender AV 是否使用中防病毒解決方案。 Microsoft Defender AV 可以是被動模式。 如需詳細資訊，請參閱[Microsoft Defender 防毒軟體相容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
+>- Microsoft Defender 防毒軟體 (microsoft defender av) 掃描可與其他防病毒方案一起執行，不論 microsoft defender AV 是否使用中防病毒解決方案。 Microsoft Defender AV 可以是被動模式。 如需詳細資訊，請參閱[Microsoft Defender 防毒軟體相容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 您已選取 [ **執行防病毒掃描**]，請選取您想要執行的掃描類型 (快速或完整) 並在確認掃描之前新增批註。
 
@@ -134,7 +134,7 @@ Live response 的設計目的是讓您可以收集法律調查資料、執行腳
 
 >[!NOTE]
 >使用 Defender for Endpoint response 動作觸發掃描時，Microsoft Defender 防毒程式 ' ScanAvgCPULoadFactor ' 值仍會套用，並限制掃描的 CPU 影響。<br> 如果未設定 ScanAvgCPULoadFactor，則預設值為在掃描期間最多50% 的 CPU 負載限制。<br>
->如需詳細資訊，請參閱 [configure-advanced-掃描類型-microsoft-defender-防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)。
+>如需詳細資訊，請參閱 [configure-advanced-掃描類型-microsoft-defender-防病毒](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)。
 
 ## <a name="restrict-app-execution"></a>限制應用程式執行
 
@@ -143,7 +143,7 @@ Live response 的設計目的是讓您可以收集法律調查資料、執行腳
 >[!IMPORTANT]
 > - 此動作可用於 Windows 10 版本1709或更新版本的裝置。
 > - 如果您的組織使用 Microsoft Defender 防毒軟體，便可使用此功能。
-> - 此巨集指令需要符合 Windows Defender 的應用程式控制代碼完整性原則格式及簽署需求。 如需詳細資訊，請參閱程式 [代碼完整性原則格式及簽署](https://docs.microsoft.com/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
+> - 此巨集指令需要符合 Windows Defender 的應用程式控制代碼完整性原則格式及簽署需求。 如需詳細資訊，請參閱程式 [代碼完整性原則格式及簽署](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
 
 若要限制應用程式的執行，則會套用程式碼完整性原則，只允許檔案以 Microsoft 簽發的憑證簽署。 這種限制方式可協助防止攻擊者控制已受損的裝置，並進一步執行惡意活動。
 
@@ -191,7 +191,7 @@ Live response 的設計目的是讓您可以收集法律調查資料、執行腳
 
 您可以參閱 Microsoft 威脅專家，以取得有關可能已遭破壞裝置或已受損裝置的更深入資訊。 Microsoft 威脅專家可以直接從 Microsoft Defender 資訊安全中心內直接參與，以進行及時且準確的回應。 專家不僅針對可能受到損害的裝置提供深入資訊，也能更好地瞭解複雜的威脅、您取得的目標攻擊通知，或者您需要有關提醒的詳細資訊，或是您在入口網站儀表板上看到的威脅情報內容。
 
-如需詳細資訊，請參閱查看 [Microsoft 威脅專家](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 。
+如需詳細資訊，請參閱查看 [Microsoft 威脅專家](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 。
 
 
 ## <a name="check-activity-details-in-action-center"></a>檢查控制中心的活動詳細資料
@@ -209,4 +209,4 @@ Live response 的設計目的是讓您可以收集法律調查資料、執行腳
 
 ## <a name="related-topic"></a>相關主題
 - [對檔案採取回應動作](respond-file-alerts.md)
-- [報表 inaccuracy](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
+- [報表 inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

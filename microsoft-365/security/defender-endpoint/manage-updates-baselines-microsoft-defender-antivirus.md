@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/07/2021
-ms.openlocfilehash: 33170d4706ed53f4de687c34806bb0492a08836e
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.date: 06/08/2021
+ms.openlocfilehash: ccbb57d781196e352e0fed456a1f7cb43eb17300
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809104"
+ms.locfileid: "52822271"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防毒軟體更新及套用基準
 
@@ -110,6 +110,7 @@ Microsoft Defender 防毒軟體需要 [每月更新 (KB4052623)](https://support
 ### <a name="whats-new"></a>新增功能
 - 其他行為監控邏輯
 - 改進的核心模式 keylogger 偵測
+- 新增控制項以管理[Microsoft Defender 更新](updates.md)的逐步式展示過程
 
 ### <a name="known-issues"></a>已知問題
 無已知問題  

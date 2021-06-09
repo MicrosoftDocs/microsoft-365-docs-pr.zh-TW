@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0276f0464f898d3675e4cc1d6b69185e7e390a87
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 7956c1454cd7bd962eda984cc9d93be9824d7458
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572666"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822102"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>適用於美國政府客戶的適用於端點的 Microsoft Defender
 
@@ -104,7 +104,7 @@ iOS | ![否](images/svg/check-no.svg) 在工程處理積壓工作 | ![否](image
 
 作業系統版本 | GCC | GCC High | DoD
 :---|:---|:---|:---
-Windows Server 2019 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+Windows Server 2019 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -164,7 +164,7 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 管理和 APIs：資料流程 API | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Web 內容篩選 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 整合： Azure Sentinel | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) 警示 <br /> ![否](images/svg/check-no.svg) & 原始資料的事件：開發中 | ![是](images/svg/check-yes.svg) 警示 <br /> ![否](images/svg/check-no.svg) & 原始資料的事件：開發中
-整合： Microsoft Cloud App Security | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
+整合： Microsoft Cloud App Security | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 整合： Microsoft 合規性管理員 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 整合： Microsoft Defender 身分識別 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發
 整合： Microsoft 端點 DLP | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發 | ![否](images/svg/check-no.svg) 在開發

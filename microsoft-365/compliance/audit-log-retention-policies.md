@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 稽核記錄保留原則是 Microsoft 365 中新增的「進階稽核」功能的一部分。 稽核記錄保留原則可讓您指定要在組織中保留稽核記錄的時間長度。
-ms.openlocfilehash: 2ac95d9bb9c13b6bf0c0e31d17b4fb46c30c492a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b3534f5d0572b2656711850b483651270b9e3315
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687356"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822138"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理稽核記錄保留原則
 
@@ -77,7 +77,7 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 
    5. **持續時間：** 保留符合原則準則之稽核記錄的時間量。
 
-   6. **優先順序：** 此值會決定組織中稽核記錄保留原則的處理順序。 較高的值表示優先順序較高。 例如，優先順序值為 **5** 的原則會優先於優先順序值為 **0** 的原則。 如先前所述，任何自訂稽核記錄保留原則的優先順序都會高於組織的預設原則。
+   6. **優先順序：** 此值會決定組織中稽核記錄保留原則的處理順序。 較低的值表示優先順序較高。 有效的優先順序是介於 **1** 到 **10000** 之間的數值。 值為 **1** 代表最高優先順序，而值為 **10000** 代表最低優先順序。 例如，值為 **5** 的原則優先於值為 **10** 的原則。 如先前所述，任何自訂稽核記錄保留原則的優先順序都會高於組織的預設原則。
 
 5. 按一下 [儲存] 建立新的稽核記錄保留原則。
 

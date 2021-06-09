@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3f8a8c04f608096e5c226d6899fbbd983bd8d8c1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 499ac9a6ee81bacb79cd83993d510f87e11c62c6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246425"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844715"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上適用於端點的 Microsoft Defender
 
@@ -48,13 +48,13 @@ ms.locfileid: "52246425"
 
 -   **使用者的**
 
-    -   指派給使用者 (s) 的 Microsoft Defender Endpoint 授權。 請參閱 [Microsoft Defender 的 Endpoint 授權需求](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+    -   指派給使用者 (s) 的 Microsoft Defender Endpoint 授權。 請參閱 [Microsoft Defender 的 Endpoint 授權需求](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
 
     -   Intune 公司入口網站應用程式可以從[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)下載，並可在 Android 裝置上使用。
 
-        -   此外，裝置 (s) 可以透過 Intune 公司入口網站應用程式進行[註冊](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal)，以強制執行 Intune 裝置的相容性原則。 這需要 Microsoft Intune 授權指派給使用者。
+        -   此外，裝置 (s) 可以透過 Intune 公司入口網站應用程式進行[註冊](/mem/intune/user-help/enroll-device-android-company-portal)，以強制執行 Intune 裝置的相容性原則。 這需要 Microsoft Intune 授權指派給使用者。
 
-    -   如需如何指派授權的詳細資訊，請參閱 [將授權指派給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)。
+    -   如需如何指派授權的詳細資訊，請參閱 [將授權指派給使用者](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
         
 
 -   **針對系統管理員**

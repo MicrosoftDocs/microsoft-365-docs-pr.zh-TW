@@ -1,7 +1,7 @@
 ---
 title: 透過 Microsoft 365 Defender 設定及管理 Microsoft 威脅專家功能
-description: 透過 Microsoft 365 Defender 訂閱 Microsoft 威脅專家，以在您的日常安全性作業和安全性管理工作中設定、管理及使用該功能。
-keywords: Microsoft 威脅專家、受管理的威脅搜尋服務、MTE、Microsoft managed 搜尋服務
+description: 透過 Microsoft 365 Defender 來訂閱 Microsoft 威脅專家，以在您的日常安全性作業及安全性管理工作中設定、管理及使用該功能。
+keywords: Microsoft 威脅專家，受管理的威脅搜尋服務，MTE，Microsoft 受管理的搜尋服務
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -14,12 +14,12 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 38bf768f1a5603fa3da0d7a3acc8f409ed6372de
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 0ccb8482dae94de4a9f43a5ecaf7c701e6dd82a5
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765524"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844787"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>透過 Microsoft 365 Defender 設定及管理 Microsoft 威脅專家功能
 
@@ -35,19 +35,19 @@ ms.locfileid: "51765524"
 ## <a name="before-you-begin"></a>開始之前
 
 > [!IMPORTANT]
-> 在您套用之前，請務必與您的 Microsoft 技術服務提供者和客戶團隊討論 Microsoft 威脅專家的資格需求–目標攻擊通知受管理的威脅搜尋服務。
+> 在您套用之前，請務必與您的 Microsoft 技術服務提供者及客戶團隊討論 Microsoft 威脅專家已設定目標的攻擊通知管理威脅搜尋服務的資格需求。
 
-若要接收已設定目標的攻擊通知，您需要在已註冊的裝置中部署 Microsoft 365 Defender。 然後，透過 M365 入口網站提交應用程式，以取得 Microsoft 威脅專家目標的攻擊通知。
+若要接收已設定目標的攻擊通知，您需要在已註冊的裝置上部署 Microsoft 365 Defender。 然後，透過 M365 入口網站提交應用程式，以 Microsoft 威脅專家目標攻擊通知。
 
-請與您的帳戶小組或 Microsoft 代表聯繫，以訂閱 Microsoft 威脅專家-點播的專家。 需求專家可讓您向我們的威脅專家請教如何保護您的組織，避免相關的偵測和敵人。
+請與您的帳戶小組或 Microsoft 代表聯繫，以訂閱 Microsoft 威脅專家的專家要求。 需求專家可讓您向我們的威脅專家請教如何保護您的組織，避免相關的偵測和敵人。
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>適用于 Microsoft 威脅專家-目標攻擊通知服務
+## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>適用于 Microsoft 威脅專家目標的攻擊通知服務
 
-如果您已有 Microsoft Defender for Endpoint 和 Microsoft 365 Defender，您可以套用 microsoft 威脅專家–透過其 Microsoft 365 Defender 入口網站的目標攻擊通知。  目標攻擊通知會授與您特殊的洞察力和分析，以協助您識別組織的最重要威脅，讓您能快速回應這些威脅。
+如果您已有 Microsoft defender for Endpoint 和 Microsoft 365 defender，您可以透過其 Microsoft 365 Defender 入口網站來套用 Microsoft 威脅專家目標攻擊通知。  目標攻擊通知會授與您特殊的洞察力和分析，以協助您識別組織的最重要威脅，讓您能快速回應這些威脅。
 
-1. 從功能窗格中，移至 [ **設定] > 端點] > 一般 > 高級功能 > Microsoft 威脅專家-已設定目標攻擊通知**。
+1. 在功能窗格中，移至 **設定 > 端點 > 一般 > 高級功能 > Microsoft 威脅專家定向的攻擊通知**。
 
-2. 選取 **套用**。
+2. 選取 ****[套用]。
 
     ![Microsoft 威脅專家設定的影像](../../media/mte/mte-collaboratewithmte.png)
 
@@ -61,21 +61,21 @@ ms.locfileid: "51765524"
 
 5. 當您收到歡迎電子郵件之後，您將會自動開始接收已設定目標的攻擊通知。
 
-6. 您可以透過將 **設定 > 端點 > 一般 > 高級功能** 來驗證您的狀態。 核准後， **Microsoft 威脅專家即會顯示並開啟 Microsoft 威脅專家目標的攻擊通知****切換。**
+6. 您可以 **設定 > 端點 > 一般 > 高級功能** 來驗證您的狀態。 一旦核准，就會顯示 **Microsoft 威脅專家目標的攻擊通知** 切換，並加以 **切換。**
 
-## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>您會看到 Microsoft 威脅專家對目標的攻擊通知
+## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>您可以從 Microsoft 威脅專家看到目標攻擊通知
 
-您可以透過下列媒介接收來自 Microsoft 威脅專家的目標攻擊通知：
+您可以透過下列媒體接收來自 Microsoft 威脅專家的目標攻擊通知：
 
 - Microsoft 365 Defender 入口網站的 **事件** 頁面
 - Microsoft 365 Defender 入口網站的 **警示** 儀表板
-- OData 警示 [api](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-alerts) 和 [REST API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
-- 高級搜尋中的[DeviceAlertEvents](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table)表格
+- OData 警示 [api](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) 和 [REST API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- 高級搜尋中的[DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table)表格
 - 您的收件匣，如果您選擇透過電子郵件傳送目標攻擊通知給您。 請參閱 [Create a email notification rule](#create-an-email-notification-rule) 。
 
 ### <a name="create-an-email-notification-rule"></a>建立電子郵件通知規則
 
-您可以建立規則來傳送通知收件者的電子郵件通知。 如需完整的詳細資料，請參閱  [設定警示通知](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications) 以建立、編輯、刪除或疑難排解電子郵件通知。
+您可以建立規則來傳送通知收件者的電子郵件通知。 如需完整的詳細資料，請參閱  [設定警示通知](/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications) 以建立、編輯、刪除或疑難排解電子郵件通知。
 
 ## <a name="view-targeted-attack-notifications"></a>查看已設定目標的攻擊通知
 
@@ -85,36 +85,36 @@ ms.locfileid: "51765524"
 
 2. 在 [ **提醒** ] 頁面上，選取您在電子郵件中收到的警示主題，以查看進一步的詳細資料。
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>訂閱 Microsoft 威脅專家-點播的專家
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>訂閱 Microsoft 威脅專家-依需求的專家
 
-如果您已經是 Microsoft Defender for Endpoint 客戶，您可以聯繫您的 Microsoft 代表，以訂閱 Microsoft 威脅專家-按需求的專家。
+如果您已經是 Microsoft Defender for Endpoint 客戶，您可以聯繫您的 Microsoft 代表，以訂閱 Microsoft 威脅專家的要求。
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>請參閱 Microsoft 威脅專家關於您組織中的可疑 cybersecurity 活動
 
-您可以從 Microsoft 365 Defender 入口網站中與 Microsoft 威脅專家聯繫。 專家可協助您瞭解複雜威脅及目標攻擊通知。 與專家合作，以取得有關警示和事件的詳細資訊，或有關如何處理遭到損害的建議。 深入瞭解入口網站儀表板所述的威脅情報內容。
+您可以從 Microsoft 365 Defender 入口網站中 Microsoft 威脅專家聯繫。 專家可協助您瞭解複雜威脅及目標攻擊通知。 與專家合作，以取得有關警示和事件的詳細資訊，或有關如何處理遭到損害的建議。 深入瞭解入口網站儀表板所述的威脅情報內容。
 
 > [!NOTE]
 >
 > - 目前不支援與貴組織的自訂威脅智慧資料相關的警示查詢。 如需詳細資訊，請參閱安全性作業或事件回應小組。
-> - 您必須具有 Microsoft 365 Defender 入口網站中的 [ **管理安全性中心的安全性設定** ] 許可權，才可透過 [ **諮詢威脅專家** ] 表單提交查詢。
+> - 您必須具備 Microsoft 365 Defender 入口網站的 [管理安全性中心] 許可權中的 [**管理安全性設定**]，才能提交透過 **諮詢威脅專家** 表單的查詢。
 
 1. 流覽至與您想要調查之資訊相關的入口網站頁面：例如， **裝置**、 **警示** 或 **事件**。 在您傳送調查要求之前，請確定與您查詢相關的入口網站頁面已在視圖中。
 
 2. 從上方的功能表中，選取 **？請參閱威脅專家**。
 
-    ![來自功能表之要求的 Microsoft 威脅專家專家影像](../../media/mte/incidents-action-mte-highlighted.png)
+    ![從功能表 Microsoft 威脅專家專家所需的影像](../../media/mte/incidents-action-mte-highlighted.png)
 
     隨即會開啟彈出畫面。
 
-    標頭會指出您是在試用訂閱上，還是完整的 Microsoft 威脅專家-點播訂閱。
+    標頭會指出您是在試用訂閱上，還是完全 Microsoft 威脅專家專家的點播訂閱。
 
-    ![Microsoft 威脅專家應需試用訂閱畫面的專家圖像](../../media/mte/mte-trial.png)
+    ![Microsoft 威脅專家專家按需試用訂閱畫面的影像](../../media/mte/mte-trial.png)
 
     「 **調查主題** 」欄位將會填入您要求之相關頁面的連結。
 
-3. 在下一個欄位中，提供足夠的資訊，讓 Microsoft 威脅專家有足夠的內容來開始調查。
+3. 在下一個欄位中，提供足夠的資訊，讓 Microsoft 威脅專家足夠的上下文開始調查。
 
-4. 輸入您想要用來對應 Microsoft 威脅專家的電子郵件地址。
+4. 輸入您想要用來與 Microsoft 威脅專家對應的電子郵件地址。
 
 > [!NOTE]
 > 如果您想要透過 Microsoft Services Hub 追蹤專家對需求案例的狀態，請與您的技術客戶經理聯繫。
@@ -141,17 +141,17 @@ ms.locfileid: "51765524"
 ### <a name="threat-intelligence-details"></a>威脅智慧詳細資料
 
 - 我們偵測到網路釣魚電子郵件，將惡意的 Word 檔傳遞給使用者。 檔導致一系列的可疑事件，這些事件會觸發針對特定惡意程式碼系列的多個警示。 您是否有這種惡意程式碼的資訊？ 如果是，您可以將連結傳送給我們嗎？
-- 我們最近看到的是以我們為行業之威脅為目標的博客文章。 您可以協助我們瞭解 Microsoft 365 Defender 針對此威脅的內容提供什麼保護？
+- 我們最近看到的是以我們為行業之威脅為目標的博客文章。 您可以協助我們瞭解哪些防護 Microsoft 365 Defender 會針對此威脅的演員提供什麼內容？
 - 我們最近觀察到我們對我們組織進行的網路釣魚活動。 您可以告訴我們我們是否特別針對公司或縱向？
 
-### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft 威脅專家的警示通訊
+### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft 威脅專家 ' 警示通訊
 
 - 您的事件回應小組可以協助我們解決我們所收到的目標攻擊通知嗎？
-- 我們收到來自 Microsoft 威脅專家的此目標攻擊通知。 我們沒有自己的事件回應小組。 我們現在可以做什麼，以及如何包含該事件？
-- 我們收到來自 Microsoft 威脅專家的目標攻擊通知。 您可以為我們提供哪些資料，讓我們能夠傳遞給我們的事件回應小組？
+- 我們從 Microsoft 威脅專家收到這一目標攻擊通知。 我們沒有自己的事件回應小組。 我們現在可以做什麼，以及如何包含該事件？
+- 我們從 Microsoft 威脅專家收到目標攻擊通知。 您可以為我們提供哪些資料，讓我們能夠傳遞給我們的事件回應小組？
 
 > [!NOTE]
-> Microsoft 威脅專家是受管理的威脅搜尋服務，不是事件回應服務。 不過，當必要時，專家可將調查順利轉換至 Microsoft Cybersecurity 解決方案群組 (CSG) 的偵測和回應小組 (DART) 服務。 您也可以選擇與您自己的事件回應小組合作，以解決需要事件回應的問題。
+> Microsoft 威脅專家是受管理的威脅搜尋服務，而非事件回應服務。 不過，當必要時，專家可將調查順利轉換至 Microsoft Cybersecurity 解決方案群組 (CSG) 的偵測和回應小組 (DART) 服務。 您也可以選擇與您自己的事件回應小組合作，以解決需要事件回應的問題。
 
 ## <a name="scenario"></a>案例
 

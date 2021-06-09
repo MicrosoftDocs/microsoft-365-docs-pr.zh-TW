@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b6b664d471e238e2feb1e1aedd100c1299fc5bbe
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861143"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844259"
 ---
 # <a name="protect-your-network"></a>保護您的網路
 
@@ -33,9 +33,9 @@ ms.locfileid: "51861143"
 
 > 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-網路保護可協助從網際網路型事件降低裝置的受攻擊面。 它可防止員工使用任何應用程式來存取可能在網際網路上主控網路釣魚詐騙、利用方式及其他惡意內容的危險網域。 網路保護可擴充 [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 的範圍，以封鎖嘗試連線至低信譽來源的所有輸出 HTTP (s) 流量， (根據網域或主機名稱) 。
+網路保護可協助從網際網路型事件降低裝置的受攻擊面。 它可防止員工使用任何應用程式來存取可能在網際網路上主控網路釣魚詐騙、利用方式及其他惡意內容的危險網域。 網路保護會擴充[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)的範圍，以封鎖嘗試連線至低信譽來源的所有輸出 HTTP (s) 流量， (根據網域或主機名稱) 。
 
-Windows 10 版本1709開始支援網路保護。 在其他作業系統上尚不支援網路保護，但使用以 Chromium 為基礎的新 Microsoft Edge 支援 web 保護。 若要深入瞭解，請參閱 [Web 保護](web-protection-overview.md)。
+從 Windows 10 版本1709開始，Windows 支援網路保護。 在其他作業系統上尚不支援網路保護，但使用新 Microsoft Edge 以 Chromium 來支援 web 保護。 若要深入瞭解，請參閱 [Web 保護](web-protection-overview.md)。
 
 網路保護將 [Web 保護](web-protection-overview.md) 的保護擴充至作業系統層級。 它提供與其他支援的瀏覽器和非瀏覽器應用程式 Edge 的 web 保護功能。 此外，網路保護也會在與 [端點偵測和回應](overview-endpoint-detection-response.md)搭配使用時，提供與封鎖 (IOCs) 遭到損害的可見度和封鎖。 例如，網路保護可與您的 [自訂指示器](manage-indicators.md)搭配運作。
 
@@ -52,11 +52,11 @@ Windows 10 版本1709開始支援網路保護。 在其他作業系統上尚不�
 
 ## <a name="requirements"></a>需求
 
-網路保護需要 Windows 10 專業版或企業版，以及 Microsoft Defender 防病毒即時保護。
+網路保護需要 Windows 10 專業版或 Enterprise，且 Microsoft Defender 防毒軟體即時保護。
 
-| Windows 版本 | Microsoft Defender 防病毒 |
+| Windows 版本 | Microsoft Defender 防毒軟體 |
 |:---|:---|
-| Windows 10 版本1709或更新版本 <p>Windows Server 1803 或更新版本 | 必須啟用[Microsoft Defender 防病毒即時保護](configure-real-time-protection-microsoft-defender-antivirus.md)和[雲端傳送保護](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| Windows 10 版本1709或更新版本 <p>Windows伺服器1803或更新版本 | 必須啟用[即時保護](configure-real-time-protection-microsoft-defender-antivirus.md)和[雲端傳送保護](enable-cloud-protection-microsoft-defender-antivirus.md)Microsoft Defender 防毒軟體 |
 
 在您啟用服務之後，您可能需要設定網路或防火牆，以允許服務和裝置之間的連線 (也稱為端點) 。  
 
@@ -82,7 +82,7 @@ DeviceEvents
 
 1. [直接複製 XML](event-views.md)。
 
-2. 選取 [確定]。
+2. 選取 **[確定]**。
 
 此程式會建立自訂視圖，篩選為只顯示下列與網路保護相關的事件：
 
@@ -92,7 +92,7 @@ DeviceEvents
 | 1125 | 在稽核模式中觸發網路保護時的事件 |
 | 1126 | 在封鎖模式中觸發網路保護時的事件 |
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Windows 10 企業版多重會話 Windows 虛擬桌面的考慮
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>在多重會話 Windows 10 企業版執行 Windows 虛擬桌面的考慮
 
 由於 Windows 10 企業版的多使用者性質，請牢記下列幾點：
 
@@ -108,7 +108,7 @@ DeviceEvents
 
 ### <a name="alternative-option-for-network-protection"></a>網路保護的替代選項
 
-針對 Windows 10 企業版的多會話1909和 up，可在 Azure 上的 Windows 虛擬桌面中使用下列方法來啟用網路 Edge 的網路保護：
+若為 Windows 10 企業版多重會話1909和 up，使用於 Azure 上 Windows 虛擬桌面，可使用下列方法來啟用網路保護 Microsoft Edge：
 
 1. 使用 [ [開啟網路保護](enable-network-protection.md) ]，然後依照指示套用原則。
 

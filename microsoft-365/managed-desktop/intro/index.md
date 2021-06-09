@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259664"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841363"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
@@ -61,7 +61,7 @@ Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft
 
 - **更新：** Microsoft 受管理的電腦會針對 Windows 10 品質和功能更新、驅動程式、韌體、防毒定義，以及用於企業更新的 Microsoft 365 應用程式來設定及管理 [部署群組](../service-description/updates.md)的所有層面。 其中包含所有更新的周延測試和驗證，從而確保已註冊的裝置永遠保持最新狀態並降低系統中斷機率，讓您的 IT 部門擺脫這個無止盡的過程。
 
-- **應用程式：** 作為 Microsoft 365 企業版的功能一部分，Microsoft 會為您提供 (和管理) 數款關鍵 Microsoft 應用程式。 但是您可能還需要企業所需的其他應用程式。 那些應用程式不需要靠您的 IT 部門進行測試、封裝和部署，Microsoft 可協助您透過 [FastTrack](https://www.microsoft.com/FastTrack) 計畫來部署。 此外，Microsoft [App 保證](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) 計畫可協助補救在移轉至我們產品的最新版本時，發生的任何應用程式相容性問題。 若要深入了解，請前往 [Microsoft 受管理的電腦中的應用程式](../get-ready/apps.md)。
+- **應用程式：** 作為 Microsoft 365 企業版的功能一部分，Microsoft 會為您提供 (和管理) 數款關鍵 Microsoft 應用程式。 但是您可能還需要企業所需的其他應用程式。 那些應用程式不需要靠您的 IT 部門進行測試、封裝和部署，Microsoft 可協助您透過 [FastTrack](https://www.microsoft.com/FastTrack) 計畫來部署。 此外，Microsoft [App 保證](/fasttrack/products-and-capabilities#app-assuree) 計畫可協助補救在移轉至我們產品的最新版本時，發生的任何應用程式相容性問題。 若要深入了解，請前往 [Microsoft 受管理的電腦中的應用程式](../get-ready/apps.md)。
 
 
 ## <a name="device-monitoring"></a>裝置監視

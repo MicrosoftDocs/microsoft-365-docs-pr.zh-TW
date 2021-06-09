@@ -15,12 +15,12 @@ ms.custom:
 description: 在本文中，您將瞭解可用來 Microsoft Exchange Online Protection (EOP) 系統管理員的報告和疑難排解工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae55ded9d907754161813c9f7bfa7eeb14c558a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625026"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841435"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的報告和郵件追蹤
 
@@ -46,11 +46,8 @@ ms.locfileid: "52625026"
 如需詳細資訊，請參閱下列資源：
 
 - [Microsoft 365系統管理中心的報告-Microsoft 365 群組](../../admin/activity-reports/office-365-groups.md)
-
 - [Microsoft 365系統管理中心內的報告-電子郵件活動](../../admin/activity-reports/email-activity.md)
-
 - [Microsoft 365系統管理中心的報告-電子郵件應用程式使用方式](../../admin/activity-reports/email-apps-usage.md)
-
 - [Microsoft 365系統管理中心的報告-信箱使用量](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的安全性 & 符合性報告

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: ba206002415fcd4ae968cc88563136399b78f435
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6d453a8b6e5c4947c0fb03131c539b083227c28a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274771"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844643"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自動化調查和修正功能的自動化層級
 
@@ -52,7 +52,7 @@ ms.locfileid: "52274771"
 |**半要求進行任何修正的核准** <br/> (也稱為 *半自動化*) | 有了這一層級的半自動， *任何* 修正動作都必須進行核准。 在 [**暫** 止] 索引標籤上，您可以在 [[行動中心](auto-investigation-action-center.md)] 中查看和核准這類待定的動作。<br/><br/>*預設會為在8月 16 2020 日之前所建立的承租人選取此部分，但不定義任何裝置群組。*|
 |**半自動要求核心資料夾修正的核准** <br/>此外，還 (一種 *半自動化*)   | 在具有這種基本自動化的情況下，必須針對核心資料夾中的檔案或可執行檔所需的任何修正動作進行核准。 核心資料夾包括作業系統目錄，例如 **Windows** (`\windows\*`) 。<br/><br/>修正動作可自動在其他 (非核心) 資料夾中的檔案或可執行檔上加以採取。 <br/><br/>在核心資料夾中的檔案或可執行檔的擱置動作，可在 [**擱置**] 索引標籤上的 [[行動中心](auto-investigation-action-center.md)] 中查看和核准。 <br/><br/>在 [**記錄**] 索引標籤上，可以在 [[行動中心](auto-investigation-action-center.md)] 中查看對其他資料夾中的檔案或可執行檔所採取的動作。 |
 |**非 temp 資料夾修正的半要求核准** <br/>此外，還 (一種 *半自動化*) | 使用此半高層級時，必須對 *不* 在暫存資料夾中之檔案或可執行檔的任何修正動作進行核准。 <br/><br/>暫存資料夾可包含下列範例： <br/>- `\users\*\appdata\local\temp\*`<br/>- `\documents and settings\*\local settings\temp\*` <br/>- `\documents and settings\*\local settings\temporary\*`<br/>- `\windows\temp\*`<br/>- `\users\*\downloads\*`<br/>- `\program files\` <br/>- `\program files (x86)\*`<br/>- `\documents and settings\*\users\*`<br/><br/>您可以在暫存資料夾中的檔案或可執行檔上自動採取修正動作。 <br/><br/>在 [**暫** 止] 索引標籤的 [動作中心] 中，您可以在「[動作中心](auto-investigation-action-center.md)」中查看並核准未在暫存資料夾中的檔案或可執行檔。<br/><br/>您可以在 [行動中心](auto-investigation-action-center.md)的 [ **記錄** ] 索引標籤上，查看並核准對暫存資料夾中的檔案或可執行檔採取的動作。   |
-|**無自動回應** <br/> (也稱為「 *沒有自動化* 」)  | 無自動化，自動化調查不會在您組織的裝置上執行。 因此，由於自動調查，不會採取任何修正動作，也不會擱置。 不過，其他威脅防護功能（例如 [防禦可能有害的應用程式](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)）可能會生效，視如何設定您的防病毒和下一代保護功能而定。<br/><br/>***不建議使用 [ *不自動化* ] 選項**，因為它會降低組織裝置的安全性狀況。 [請考慮將您的自動化層級設定為 [完全 (自動化]，或至少半自動) ](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups)*。 |
+|**無自動回應** <br/> (也稱為「 *沒有自動化* 」)  | 無自動化，自動化調查不會在您組織的裝置上執行。 因此，由於自動調查，不會採取任何修正動作，也不會擱置。 不過，其他威脅防護功能（例如 [防禦可能有害的應用程式](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)）可能會生效，視如何設定您的防病毒和下一代保護功能而定。<br/><br/>***不建議使用 [ *不自動化* ] 選項**，因為它會降低組織裝置的安全性狀況。 [請考慮將您的自動化層級設定為 [完全 (自動化]，或至少半自動) ](/microsoft-365/security/defender-endpoint/machine-groups)*。 |
 
 ## <a name="important-points-about-automation-levels"></a>有關自動化層級的重要事項
 
@@ -62,10 +62,10 @@ ms.locfileid: "52274771"
 
 - 如果您的安全小組已經定義了具有「自動化」層級的裝置群組，則所進行的新預設設定不會變更這些設定。 
 
-- 您可以保留預設的自動化設定，或根據組織的需求加以變更。 若要變更您的設定，請 [設定您的自動化層級](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups)。
+- 您可以保留預設的自動化設定，或根據組織的需求加以變更。 若要變更您的設定，請 [設定您的自動化層級](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups)。
 
 ## <a name="next-steps"></a>後續步驟
 
 - [在 Microsoft Defender for Endpoint 中設定自動調查和修正功能](configure-automated-investigations-remediation.md)
 
-- [流覽行動中心](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
+- [流覽行動中心](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)

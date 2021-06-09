@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7ed7390f67747d176145bb051d8b1633a7146a23
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: d0cb4a3d01c1380f4fd06999c8f81a4054e2fd00
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730807"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844427"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>將上一版 Windows 上線
 
@@ -59,11 +59,11 @@ Defender for Endpoint 會與 System Center Endpoint Protection 整合，以提�
 若要啟用此整合，必須執行下列步驟： 
 - 安裝[Endpoint Protection 用戶端的2017年1月反惡意程式碼平臺更新](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - 將 SCEP 用戶端 Cloud Protection Service 成員資格設定為 [ **高級** ] 設定
-- 設定您的網路以允許連線至 Microsoft Defender 防毒軟體雲端。 如需詳細資訊，請參閱[Allow connections to the Microsoft Defender 防毒軟體 cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
+- 設定您的網路以允許連線至 Microsoft Defender 防毒軟體雲端。 如需詳細資訊，請參閱[Allow connections to the Microsoft Defender 防毒軟體 cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>安裝和設定 Microsoft Monitoring Agent (MMA) ，向 Microsoft Defender for Endpoint 報告感應器資料
 
-### <a name="before-you-begin"></a>在您開始之前
+### <a name="before-you-begin"></a>開始之前
 請參閱下列詳細資料以驗證最低系統需求：
 - 安裝 [每月2018月更新彙總套件](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
@@ -90,10 +90,10 @@ Defender for Endpoint 會與 System Center Endpoint Protection 整合，以提�
    - 複製工作區識別碼與工作區機碼
 
 3. 使用 [工作區識別碼與工作區金鑰] 選擇下列任一安裝方法來安裝代理程式：
-    - [使用安裝程式手動安裝代理程式](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)。 <br>
+    - [使用安裝程式手動安裝代理程式](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)。 <br>
       在「**代理程式安裝選項**」頁面上，選取 **[連線代理程式至 Azure 記錄分析 (OMS)**
-    - [使用命令列安裝代理程式](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。
-    - [使用腳本設定代理程式](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)。
+    - [使用命令列安裝代理程式](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。
+    - [使用腳本設定代理程式](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)。
 
    > [!NOTE]
    > 如果您是 [美國政府客戶](gov.md)，請在「azure 雲端」下，如果使用設定向導，或是使用命令列或腳本-將 "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" 參數設定為1，則必須選擇「Azure US 政府」。
@@ -104,8 +104,8 @@ Defender for Endpoint 會與 System Center Endpoint Protection 整合，以提�
 
 ### <a name="configure-proxy-and-internet-connectivity-settings"></a>設定 Proxy 和網際網路連接設定
  
-- 每個 Windows 端點都必須能夠使用 HTTPS 連接至網際網路。 這種連線可以直接使用 proxy，也可以透過 [OMS 閘道](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)。
-- 如果一個 proxy 或防火牆預設會封鎖所有流量，而且只允許特定網域透過或 HTTPS 掃描 (已啟用 SSL 檢查) ，請確定您已啟用 [Endpoint service URLs 的存取權](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
+- 每個 Windows 端點都必須能夠使用 HTTPS 連接至網際網路。 這種連線可以直接使用 proxy，也可以透過 [OMS 閘道](/azure/log-analytics/log-analytics-oms-gateway)。
+- 如果一個 proxy 或防火牆預設會封鎖所有流量，而且只允許特定網域透過或 HTTPS 掃描 (已啟用 SSL 檢查) ，請確定您已啟用 [Endpoint service URLs 的存取權](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
 
 ## <a name="offboard-client-endpoints"></a>下架用戶端端點
 若要下架，您可以從端點卸載 MMA agent，或將其從報告中拔出至您的 Defender for Endpoint workspace。 脫離代理程式後，端點就不再將感應器資料傳送至端點的 Defender。 

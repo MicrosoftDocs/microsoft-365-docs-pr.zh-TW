@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ba48adcf93c5b768b2280729b33a1a7d361919cb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51059359"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844067"
 ---
 # <a name="take-response-actions-on-a-file"></a>對檔案採取回應動作
 
@@ -33,7 +33,7 @@ ms.locfileid: "51059359"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 停用或隔離檔案或封鎖檔案，以快速回應偵測到的攻擊。 對檔案採取動作後，您可以在「行動中心」中檢查活動詳細資料。
 
@@ -60,20 +60,20 @@ ms.locfileid: "51059359"
 
 如需角色的詳細資訊，請參閱 [建立與管理角色型存取控制的角色](user-roles.md)。
 
-## <a name="stop-and-quarantine-files-in-your-network"></a>在您的網路中停止和隔離檔
+## <a name="stop-and-quarantine-files-in-your-network"></a>停止並隔離您網路中的檔案
 
 您可以在您的組織中包含攻擊，方法是停止惡意程式，然後在觀察到的位置隔離該檔。
 
 > [!IMPORTANT]
 > 只有在下列情況中才能採取此動作：
 >
-> - 您正在執行該動作的裝置執行 Windows 10、版本1703或更新版本
+> - 您正在執行動作的裝置執行 Windows 10，版本1703或更新版本
 > - 檔案不屬於受信任的協力廠商發行者，或未由 Microsoft 簽署
-> - Microsoft Defender 防病毒至少必須以被動模式執行。 如需詳細資訊，請參閱 [Microsoft Defender 防毒程式相容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+> - Microsoft Defender 防毒軟體必須至少在被動模式下執行。 如需詳細資訊，請參閱[Microsoft Defender 防毒軟體相容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
 **Stop 和隔離** 檔動作包括停止執行中的程式、隔離檔案，以及刪除持久性資料（例如登錄機碼）。
 
-此巨集指令會在具有 Windows 10 版本1703或更新版本的裝置上生效，在過去30天內觀察到的檔案。
+此巨集指令會在裝置上的 Windows 10，版本1703或更新版本之間生效，在過去30天內觀察到檔案。
 
 > [!NOTE]
 > 您可以在任何時間從隔離區還原檔案。
@@ -160,11 +160,11 @@ Banning 潛在的惡意檔案或可疑惡意程式碼，以防止進一步傳播
 
 > [!IMPORTANT]
 >
-> - 如果您的組織使用 Microsoft Defender 防病毒和雲端傳遞的保護功能，便可使用此功能。 如需詳細資訊，請參閱 [管理 cloud-已提供的保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+> - 如果您的組織使用 Microsoft Defender 防毒軟體且已啟用雲端傳遞的保護，則可以使用此功能。 如需詳細資訊，請參閱 [管理 cloud-已提供的保護](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 >
 > - 反惡意軟體用戶端版本必須是4.18.1901 或更新版本。
 > - 這項功能的設計是為了防止可疑的惡意程式碼 (或可能的惡意檔案) 從網頁下載。 它目前支援可遷移的可執行檔 (PE) 檔案（包括 _.exe_ 和 _.dll_ 檔案）。 覆蓋範圍會隨著時間擴充。
-> - 此回應動作適用于 Windows 10 版本1703或更新版本上的裝置。
+> - 此回應動作適用于 Windows 10，版本1703或更新版本上的裝置。
 > - 如果檔案的分類存在於 allow 或封鎖動作之前，則無法在檔案上執行 allow 或 block 功能。
 
 > [!NOTE]
@@ -174,7 +174,7 @@ Banning 潛在的惡意檔案或可疑惡意程式碼，以防止進一步傳播
 
 ### <a name="enable-the-block-file-feature"></a>啟用封鎖檔功能
 
-若要開始封鎖檔案，您必須先在 [設定] 中 [關閉 [ **封鎖] 或 [允許** ] 功能](advanced-features.md) 。
+若要開始封鎖檔案，您必須先在設定中 [關閉 **封鎖或允許** 功能](advanced-features.md)。
 ### <a name="allow-or-block-file"></a>允許或封鎖檔
 
 當您為檔案新增指示器雜湊時，您可以選擇每當組織中的設備嘗試執行時，就會引發警示並封鎖檔案。
@@ -185,15 +185,15 @@ Banning 潛在的惡意檔案或可疑惡意程式碼，以防止進一步傳播
 
 若要停止封鎖檔，請移除指標。 您可以透過檔案的 [設定檔] 頁面上的 [ **編輯指示器** ] 動作來執行此動作。 在新增指示器之前，此巨集指令會在 [ **新增指示器** ] 動作相同的位置上顯示。
 
-您也可以從 [**設定**] 頁面的 [**規則** 指標] 底下編輯指示器  >  ****。 指示器會以檔案的雜湊列在此區域中。
+您也可以從 **設定**] 頁面的 [**規則** 指標] 底下編輯指示器  >  ****。 指示器會以檔案的雜湊列在此區域中。
 
 ## <a name="consult-a-threat-expert"></a>諮詢威脅專家
 
-請參閱 Microsoft 威脅專家，以取得可能受損裝置或已受損裝置的更深入資訊。 Microsoft 威脅專家直接從 Microsoft Defender Security Center 內直接接洽，以取得及時且準確的回應。 專家對潛在的受損裝置提供深入瞭解，協助您瞭解複雜威脅及目標攻擊通知。 他們也可以提供您在入口網站儀表板上看到之警示或威脅情報內容的相關資訊。
+請參閱 Microsoft 威脅專家，以取得可能受損裝置或已受損裝置的更深入資訊。 Microsoft 威脅專家直接參與 Microsoft Defender 資訊安全中心中，以進行及時且準確的回應。 專家對潛在的受損裝置提供深入瞭解，協助您瞭解複雜威脅及目標攻擊通知。 他們也可以提供您在入口網站儀表板上看到之警示或威脅情報內容的相關資訊。
 
-如需詳細資訊，請參閱查看 [Microsoft 威脅專家](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 。
+如需詳細資訊，請參閱查看 [Microsoft 威脅專家](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 。
 
-## <a name="check-activity-details-in-action-center"></a>檢查重要訊息中心的活動詳細資料
+## <a name="check-activity-details-in-action-center"></a>檢查控制中心的活動詳細資料
 
 「 **行動中心** 」提供對裝置或檔案所採取動作的資訊。 您可以查看下列詳細資料：
 
@@ -211,7 +211,7 @@ Banning 潛在的惡意檔案或可疑惡意程式碼，以防止進一步傳播
 網路安全性調查通常是由警示所觸發。 警示與一個或多個觀測到的檔案（通常是新的或未知的）有關。 選取檔案會帶您前往檔案視圖，您可以在其中看到檔案的中繼資料。 若要濃縮檔相關的資料，您可以提交檔案進行深層分析。
 
 Deep analysis 功能會在安全且充分受充分規范的雲端環境中執行檔案。 深入分析結果會顯示檔案的活動、觀測的行為和相關聯的專案，例如：刪除的檔案、登錄修改以及與 IPs 的通訊。
-深入分析目前支援可遷移的可執行檔 (PE) 檔案的廣泛分析 (包括 _.exe_ 和 _.dll_ 檔案) 。
+深層分析目前支援可遷移的可執行檔 (PE) 檔案的廣泛分析 (包括 _.exe_ 及 _.dll_ 檔) 。
 
 檔案的深層分析需要數分鐘的時間。 檔案分析完成之後，[深入分析] 索引標籤將會更新，以顯示摘要及最新可用結果的日期和時間。
 
@@ -224,12 +224,12 @@ Deep analysis 功能會在安全且充分受充分規范的雲端環境中執行
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
 
-當檔案可用於「Defender for Endpoint」範例集合，或是在支援送出深入分析的 Windows 10 裝置上進行深入分析時，會啟用送出 **以進行深入分析**。
+當檔案可用於「Defender for Endpoint」範例集合，或是在支援送出深入分析的 Windows 10 裝置上進行深入分析時，就會啟用 [**提交以進行深入分析**]。
 
 > [!NOTE]
-> 只會自動收集來自 Windows 10 的檔案。
+> 只會自動收集 Windows 10 中的檔案。
 
-您也可以在 Windows 10 裝置上未觀察到檔案時，透過 [Microsoft Security Center 入口網站](https://www.microsoft.com/security/portal/submission/submit.aspx) 提交範例，並等候 [ **提交深入分析** ] 按鈕變為可用。
+您也可以透過 Microsoft 的「[安全性中心」入口網站](https://www.microsoft.com/security/portal/submission/submit.aspx)提交範例（如果未在 Windows 10 裝置上看到檔案），然後等候 **提交深入分析** 按鈕成為可用。
 
 > [!NOTE]
 > 由於 Microsoft Security Center 入口網站中的後端處理流程，在檔提交與更新的 Defender 中的「深入分析」功能之間可能有10分鐘的延遲。
@@ -254,7 +254,7 @@ Deep analysis 功能會在安全且充分受充分規范的雲端環境中執行
 隨即會顯示進度列，並提供分析的不同階段的資訊。 然後您就可以在分析完成時查看報告。
 
 > [!NOTE]
-> 根據裝置可用性而定，範例集合時間可能會不同。 範例集合的超時為 3-小時。 如果目前沒有線上 Windows 10 設備報告，此集合就會失敗，且作業會終止。 您可以重新提交檔案進行深入分析，以取得檔案的新資料。
+> 根據裝置可用性而定，範例集合時間可能會不同。 範例集合的超時為 3-小時。 如果目前沒有線上 Windows 10 設備報告，此集合就會失敗，且作業會中斷。 您可以重新提交檔案進行深入分析，以取得檔案的新資料。
 
 ### <a name="view-deep-analysis-reports"></a>查看深入分析報告
 
@@ -276,7 +276,7 @@ Deep analysis 功能會在安全且充分受充分規范的雲端環境中執行
 
 如果您在嘗試提交檔案時遇到問題，請嘗試下列每個疑難排解步驟。
 
-1. 確定有問題的檔案是 PE 檔案。 PE 檔案一般會有 _.exe_ 或 _.dll_ 副檔名 (可執行檔程式或應用程式) 。
+1. 確定有問題的檔案是 PE 檔案。 PE 檔案一般會有 _.exe_ 或 _.dll_ 副檔名 (可執行程式或應用程式) 。
 2. 請確定服務具有存取權，但仍然存在且未損毀或修改的檔案。
 3. 請稍等片刻，然後再次嘗試提交檔案。 佇列可能已滿，或發生暫時連線或通訊錯誤。
 4. 若未設定範例集合原則，則預設行為為允許範例集合。 如果已設定，請確認原則設定允許範例集合，再提交檔案。 設定範例集合後，請檢查下列登錄值：
@@ -296,4 +296,4 @@ Deep analysis 功能會在安全且充分受充分規范的雲端環境中執行
 ## <a name="related-topics"></a>相關主題
 
 - [在裝置上採取回應動作](respond-machine-alerts.md)
-- [調查檔](investigate-files.md)
+- [調查檔案](investigate-files.md)

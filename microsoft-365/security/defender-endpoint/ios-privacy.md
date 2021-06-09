@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: a232bd8d600df37d5b9b01921859556476ced345
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694470"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822367"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>隱私權資訊-iOS 上的端點的 Microsoft Defender
 
@@ -51,7 +51,7 @@ IOS 上的 Defender for Endpoint 會從您設定的 iOS 裝置收集資訊，並
 
 ### <a name="web-page-or-network-information"></a>網頁或網路資訊 
 
-- 僅當偵測到惡意的連線或網頁時，才會使用網站的功能變數名稱。 
+- 僅當偵測到惡意的連線或網頁時，才會使用網站的功能變數名稱和 IP 位址。 
 
 ### <a name="device-and-account-information"></a>裝置和帳戶資訊 
 

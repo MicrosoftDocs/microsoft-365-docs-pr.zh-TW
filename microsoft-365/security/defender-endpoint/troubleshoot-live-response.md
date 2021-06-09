@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 2601001687fc22da98ca3cd81010237d12705ea4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 99a52188dd5f6eca2f8368aa3c114d0bfb950b10
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687408"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844151"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>疑難排解 Microsoft Defender 的 Endpoint live 回應問題
 
@@ -31,7 +31,7 @@ ms.locfileid: "51687408"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 此頁面提供疑難排解 live response 問題的詳細步驟。
 
@@ -62,12 +62,12 @@ ms.locfileid: "51687408"
 5. 請執行您想要對複製的檔案採取的動作。
 
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>在初始連線期間緩慢即時回應會話或延遲
-Live response 利用在 Windows 中的 WNS 服務，使用 Defender 進行 Endpoint 感應器註冊。 如果您有即時回應的連線問題，請確認下列詳細資料：
+Live response 利用 Defender 在 Windows 中使用 WNS 服務的端點感應器註冊。 如果您有即時回應的連線問題，請確認下列詳細資料：
 1. `notify.windows.com` 在您的環境中未遭到封鎖。 如需詳細資訊，請參閱 [Configure device proxy And Internet connectivity settings](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
-2. WpnService (Windows 推入通知系統服務) 未停用。
+2. 未停用 WpnService (Windows 推播通知系統服務) 。
 
 請參閱下列文章，以完全瞭解 WpnService 服務的行為和需求：
-- [Windows 推播通知服務 (WNS) 概述](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [支援 WNS 流量的企業防火牆和 Proxy 設定](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windows推播通知服務 (WNS) 概述](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Enterprise支援 WNS 流量的防火牆和 Proxy 設定](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Microsoft 推播通知服務 (MPNS) 公用 IP 範圍](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

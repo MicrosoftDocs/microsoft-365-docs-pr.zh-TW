@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全性與合規性中心建立關鍵字字典的基本步驟。
-ms.openlocfilehash: 24f6bb636c702438be8ca9520c6523031f297410
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1e1aa45c3bf4d31e4c969b0bc0949109fa716467
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683760"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841159"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
@@ -31,7 +31,7 @@ ms.locfileid: "52683760"
 
 ## <a name="keyword-dictionary-limits"></a>關鍵字字典限制
 
-每個租用最多可以建立 50 個基於關鍵字字典的敏感性資訊類型。 若要了解租用戶中有多少關鍵字字典，請利用 [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到您的租用戶並執行此 PowerShell 指令碼。
+每個租用最多可以建立 50 個基於關鍵字字典的敏感性資訊類型。 若要了解租用戶中有多少關鍵字字典，請利用 [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到您的租用戶並執行此 PowerShell 指令碼。
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"

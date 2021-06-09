@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: da88bc2aa0e001d714d4317948e28cdca633d17d
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: 5a9f5a6b218ec7a0e1fe9b05524ea1898b03e370
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736357"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822126"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -130,7 +130,7 @@ ms.locfileid: "52736357"
 
     - **Teams 聊天通訊：** 指派個別使用者或指派 [通訊群組](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)至通訊相容性原則。 此設定適用於一對一或一對多使用者/聊天關係。
     - **Teams 通道通訊：** 將您想要掃描的每個 Microsoft Teams 通道或 Microsoft 365 群組，指派為通訊合規性原則所在的特定使用者。 如果您將同一位使用者新增到其他 Microsoft Teams 頻道或 Microsoft 365 群組，請務必將這些新頻道和群組新增到通訊合規性原則。 如果通道的任何成員是原則內的受監督使用者，且 *輸入* 方向是設定于原則中，則在該通道內傳送的所有郵件都會受到審核和潛在原則比對 (，即便是頻道中未明確監督) 的使用者。 例如，使用者 A 是擁有者或是通道的成員。 使用者 B 和使用者 C 是相同通道的成員，並使用與 supervises 只有使用者 A 的冒犯性語言原則相符的語言。使用者 B 和使用者 C 會為通道內的交談建立原則比對，即使這些專案不會直接受到冒犯性語言原則的監督也是一樣。 在包含使用者 a 之通道以外的使用者 B 和使用者 C 之間 Teams 交談，不會受到包含使用者 a 的冒犯性語言原則的制約。若要在直接監督通道的其他成員時，將通道成員從監察中排除，請關閉適用的通訊相容性原則中的 *輸入* 通訊方向設定。
-    - **針對與混合式電子郵件環境的 Teams 聊天通訊**：通訊相容性可以針對具有 Exchange 內部部署部署的組織，或已啟用 Microsoft Teams 的外部電子郵件提供者，監視其使用者的聊天訊息。 您必須為具有內部部署或外部信箱的使用者建立通訊群組，以進行監視。 建立通訊相容性原則時，您會將此通訊群組指派為 [原則嚮導] 中的 [ **監督使用者和群組** ] 選擇。
+    - **針對與混合式電子郵件環境的 Teams 聊天通訊**：通訊相容性可以針對具有 Exchange 內部部署部署的組織，或已啟用 Microsoft Teams 的外部電子郵件提供者，監視其使用者的聊天訊息。 您必須為具有內部部署或外部信箱的使用者建立通訊群組，以進行監視。 建立通訊相容性原則時，您會將此通訊群組指派為 [原則嚮導] 中的 [ **監督使用者和群組** ] 選擇。 如需對內部部署使用者啟用雲端式儲存和 Teams 支援之需求和限制的相關資訊，請參閱[搜尋內部部署使用者 Teams 聊天室資料](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 - **Exchange 電子郵件**：以 Microsoft 365 或 Office 365 訂閱的一部分 Exchange Online 主控的信箱都符合郵件掃描的條件。 Exchange 電子郵件訊息和附件符合通訊相容性原則的情況可能需要長達24小時才能處理。 支援的通訊合規性附件類型與 [Exchange 郵件流程規則內容檢查所支援的檔案類型](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 

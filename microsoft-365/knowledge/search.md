@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft 搜尋來尋找 Microsoft Viva 主題中的主題
-ms.author: efrene
-author: efrene
+ms.author: chuckedmonson
+author: chucked
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 瞭解您可以在 Microsoft Viva 中搜尋主題的方式。
-ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795991"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844728"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜尋來尋找 Microsoft Viva 主題中的主題
 
@@ -23,7 +23,7 @@ ms.locfileid: "52795991"
 
 ## <a name="topic-answer"></a>主題答案
 
-當您在 Microsoft 搜尋 (中搜尋特定主題時（例如，"Saturn" ) ），如果有主題存在且找到該主題，則會以答案建議格式顯示結果。
+當您在 Microsoft Search (中搜尋特定主題時（例如 "Saturn" ) ），如果有主題存在且找到該主題，則會在主題答案建議格式中顯示結果。
 
 主題答案會顯示：
 - 主題名稱
@@ -56,4 +56,4 @@ Word、PowerPoint Outlook 和 Excel 中的搜尋結果也會在找到一個主�
  
 ### <a name="search-results-priority"></a>搜尋結果優先順序 
 
-在使用者的搜尋體驗中，當使用者搜尋像 "旅行" 的字詞時，如果有可用的書簽，則書簽會出現在主題之前。
+在使用者的搜尋體驗中，當使用者搜尋像 "旅行" 的字詞時，如果有可用的書簽，便會顯示書簽，以取代主題。

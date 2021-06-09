@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: b791f2b62cb4a3f8062c80ceeb04ccfa72f704bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b17af7931b181a5fa30271a3eee07c7abf10a010
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51057328"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844019"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中檢查提醒
 
@@ -32,7 +32,7 @@ ms.locfileid: "51057328"
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Microsoft Defender for Endpoint 中的 [警示] 頁面會透過結合與所選警示相關的攻擊信號和警示，提供完整的警示內容，以建立詳細的警示案例。
 
@@ -46,7 +46,7 @@ Microsoft Defender for Endpoint 中的 [警示] 頁面會透過結合與所選�
 
 1. **提醒標題** 會顯示警示的名稱，而且可以提醒您，不論您在頁面上選取的是哪一個警示已開始您目前的調查。
 2. [**受影響資產**](#review-affected-assets) 列出此警示所影響的裝置和使用者卡，以供進一步資訊和動作使用。
-3. **警示案例** 會顯示與該警示相關的所有實體，並以樹狀檢視互連。 當您第一次在選取的警示頁面上移動時，標題中的警示會是焦點中的警示。 警示案例中的實體可展開和按一下，以提供額外的資訊，並可讓您在警示頁面的內容中採取動作，以加速回應。 使用警示案例開始您的調查。 瞭解如何 [調查 Microsoft Defender For Endpoint 中的通知](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-alerts)。
+3. **警示案例** 會顯示與該警示相關的所有實體，並以樹狀檢視互連。 當您第一次在選取的警示頁面上移動時，標題中的警示會是焦點中的警示。 警示案例中的實體可展開和按一下，以提供額外的資訊，並可讓您在警示頁面的內容中採取動作，以加速回應。 使用警示案例開始您的調查。 瞭解如何 [調查 Microsoft Defender For Endpoint 中的通知](/microsoft-365/security/defender-endpoint/investigate-alerts)。
 4. [ **詳細資料] 窗格** 會先顯示選取警示的詳細資料，以及與此警示相關的詳細資料和動作。 如果您選取預警案例中的任何受影響的資產或實體，詳細資料窗格會變更，以提供所選物件的上下文資訊和動作。
 
 請注意警示的偵測狀態。 

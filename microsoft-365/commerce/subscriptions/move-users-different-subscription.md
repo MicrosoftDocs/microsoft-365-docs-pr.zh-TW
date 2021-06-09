@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何在訂閱間移動使用者。
 ms.date: 07/01/2020
-ms.openlocfilehash: 0261ee15d16e895cb2552320097d8e6b396d5220
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333203"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822078"
 ---
 # <a name="move-users-to-a-different-subscription"></a>將使用者移至其他訂閱
 
@@ -72,5 +72,5 @@ ms.locfileid: "52333203"
 [將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md) (文章)\
 [從您的訂閱中移除授權](../licenses/buy-licenses.md) (文章) \
 [手動變更方案](change-plans-manually.md) (文章) \
-[瞭解 Microsoft 365 for business 中的訂閱和授權](../licenses/subscriptions-and-licenses.md) (文章) \
-[購買其他 Microsoft 365 for business 訂閱](../try-or-buy-microsoft-365.md) (文章) 
+[瞭解商務 Microsoft 365 中的訂閱與授權](../licenses/subscriptions-and-licenses.md) (文章) \
+[Microsoft 365 商務訂閱 (文章) 購買其他的](../try-or-buy-microsoft-365.md)

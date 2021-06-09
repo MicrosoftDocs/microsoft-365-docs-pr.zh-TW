@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 microsoft cloud 德國移動 (microsoft cloud Deutschland) 以 Office 365 新德文 datacenter 區域中的服務的準備工作。
-ms.openlocfilehash: 5eefa56b96eb616c694b26c374b235ccd95c3ee9
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: db4563b4a63dc39ee8171e80fd76ae15b7cd10e9
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796015"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844283"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的預先遷移活動
 
@@ -58,8 +58,8 @@ ms.locfileid: "52796015"
 | 準備在遷移後，通知使用者如何重新開機和登出用戶端。 | Office 用戶端授權會從 Microsoft Cloud Deutschland 轉換為遷移中 Office 365 服務。 用戶端登入及簽出 Office 用戶端後，用戶端會挑選新的有效授權。 | 使用者的 Office 產品需要重新整理 Office 365 服務的授權。 如果未重新整理授權，Office 產品可能會遇到授權驗證錯誤。 |
 | 確定 Office 365 服務的網路連線能力[URLs 和 IP 位址](https://aka.ms/o365urls)。 | 由客戶所主控的所有用戶端和服務，用來存取 Office 365 服務，必須能夠存取 Office 365 泛型服務端點。 <br>若您或您的共同作業夥伴有適當的防火牆規則，可防止存取 Office 365 服務中所列的 URLs 和 ip 位址[URLs 和 ip 位址](https://aka.ms/o365urls)必須變更防火牆規則，以允許存取 Office 365 全域服務端點| 如果不是在階段4之前完成，則可能會發生服務或用戶端軟體失敗  |
 | 取消所有的試用訂閱。 | 不會遷移試用訂閱，而且會封鎖付費訂閱的轉接。 | 若使用者在取消後存取，試用版服務會到期且無法運作。 |
-| 分析 Microsoft Cloud Deutschland 與 Office 365 泛型服務之間的授權功能差異。 | Office 365 服務包含目前 Microsoft Cloud Deutschland 中無法使用的其他功能和服務。 在訂閱轉移期間，使用者將可以使用新功能。 | <ul><li> 分析 Microsoft Cloud Deutschland 的授權所提供的不同功能，並 Office 365 泛型服務。 請從[Office 365 平臺服務描述](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)開始。 </li><li> 決定是否應該最初停用 Office 365 服務的任何新功能，以限制使用者或使用者變更管理上的影響，並視需要變更使用者授權指派。 </li><li>準備使用者及服務台人員，以取得 Office 365 服務提供的新服務和功能。 |
-| 建立整個組織 [保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention) ，以防止在遷移期間因無意中刪除內容。  |<ul><li>為了確保使用者不會在遷移期間由使用者意外刪除內容，客戶可以選擇啟用整個組織的保留原則。 </li><li>雖然不需要保留，但在遷移期間可隨時使用保留原則，但具有保留原則是備份的安全性機制。 同時，所有客戶可能不會使用保留原則，尤其是有關保留原則的使用者。</li></ul>| 如 [深入瞭解保留原則和保留標籤](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)所述套用保留原則。 如果這不是在第4階段中執行，則可能會發生服務或用戶端軟體失敗。 </li></ul>|
+| 分析 Microsoft Cloud Deutschland 與 Office 365 泛型服務之間的授權功能差異。 | Office 365 服務包含目前 Microsoft Cloud Deutschland 中無法使用的其他功能和服務。 在訂閱轉移期間，使用者將可以使用新功能。 | <ul><li> 分析 Microsoft Cloud Deutschland 的授權所提供的不同功能，並 Office 365 泛型服務。 請從[Office 365 平臺服務描述](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)開始。 </li><li> 決定是否應該最初停用 Office 365 服務的任何新功能，以限制使用者或使用者變更管理上的影響，並視需要變更使用者授權指派。 </li><li>準備使用者及服務台人員，以取得 Office 365 服務提供的新服務和功能。 |
+| 建立整個組織 [保留原則](/microsoft-365/compliance/retention) ，以防止在遷移期間因無意中刪除內容。  |<ul><li>為了確保使用者不會在遷移期間由使用者意外刪除內容，客戶可以選擇啟用整個組織的保留原則。 </li><li>雖然不需要保留，但在遷移期間可隨時使用保留原則，但具有保留原則是備份的安全性機制。 同時，所有客戶可能不會使用保留原則，尤其是有關保留原則的使用者。</li></ul>| 如 [深入瞭解保留原則和保留標籤](/microsoft-365/compliance/retention-policies)所述套用保留原則。 如果這不是在第4階段中執行，則可能會發生服務或用戶端軟體失敗。 </li></ul>|
 |||||
 
 ## <a name="dns-entries-for-custom-domains"></a>自訂網域的 DNS 專案
@@ -131,13 +131,15 @@ OCCT 可在任何時間，在階段9之前部署在 Windows 用戶端上。 [！
 **適用于：** 使用作用中 Exchange 混合式設定與內部部署 Exchange 伺服器的所有客戶<br>
 套用 **時**：第5階段之前的任何時間
 
-Enterprise 具有 Exchange Online 和內部部署 Exchange Server 混合式部署的客戶，請執行混合式設定向導 (HCW) 和 AAD 連線，以維護及建立混合安裝。 Exchange Online混合管理員 **必須執行混合式設定向導 (HCW)** 做為這項轉換的一部分。 從 Microsoft Cloud Deutschland 轉換為 Office 365 德國地區時，系統管理員必須先于「Office 365 德國」模式重新執行 HCW 的最新組建，Exchange 遷移 (階段 5) 開始。 然後，在完成階段5時，在「Office 365 世界」模式中再次執行 HCW，以完成內部部署，並使用 Office 365 德國地區設定。 HCW 執行不能在階段5執行，請務必執行 HCW，直到階段5完成。
-目錄屬性會在 Office 365 和 Azure AD 之間以透過 AAD 連線的內部部署進行同步處理。 
+Enterprise 具有 Exchange Online 和內部部署 Exchange Server 混合式部署的客戶，請執行混合式設定向導 (HCW) 和 AAD 連線，以維護及建立混合安裝。
+Exchange Online混合管理員 **必須執行混合式設定向導 (HCW)** 做為這項轉換的一部分。
+從 Microsoft Cloud Deutschland 轉換為 Office 365 德國地區時，系統管理員必須先于「Office 365 德國」模式重新執行 HCW 的最新組建，Exchange 遷移 (階段 5) 開始。 然後，在完成階段5時，在「Office 365 世界」模式中再次執行 HCW，以完成內部部署，並使用 Office 365 德國地區設定。 HCW 執行不能在階段5執行，請務必執行 HCW，直到階段5完成。
+目錄屬性會在 Office 365 和 Azure AD 之間以透過 AAD 連線的內部部署進行同步處理。
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
-| 使用 Office 365 德國設定重新執行 HCW <br><br> <i>您可以在接收到 Office 365 租使用者遷移 (階段 1) 開始的訊息中心通知之後，立即啟動此活動。</i>| 卸載及重新執行 HCW (17.0.5378.0 或以上) 從 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 第5階段開始，可確保您的內部部署設定準備好使用 Microsoft Cloud Deutschland 使用者和遷移至 Office 365 德國地區的使用者來傳送和接收郵件。 <p><li> 在 HCW 的 [**我的 Office 365 組織** 底下的清單方塊] 中，選取 [ **Office 365 德國]。** | 在階段 5 [Exchange 遷移] 開始之前，無法完成這項工作，可能會導致 NDRs 內部部署 Exchange 部署及 Office 365 之間的郵件路由。  
-| 保留共用信箱設定 | 有些混合式客戶已使用 Exchange Online 命令將雲端使用者信箱轉換成「共用」信箱。 此雲端信箱設定會寫入至信箱和本機 Exchange Online 目錄，但是它並未透過 AAD 連線同步處理回客戶的 Active directory。 結果是信箱 RemoteRecipientType 及 RemoteDisplayType 值之 Active Directory 表示的差異，以及 Exchange Online 定義為共用信箱。 <br><br> 客戶負責確定已使用、或將所有共用信箱正確布建 `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` `Set-RemoteMailbox -Shared` 。  請參閱此參考以瞭解如何 [在混合式環境中轉換使用者的信箱](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)。| 無法在階段 5 [Exchange Online 遷移] 之前完成此工作，可能會導致 NDRs 共用信箱，將其轉換回未授權的信箱，並失去受影響信箱的共用存取權。 [在 Exchange 混合式部署中執行目錄同步處理之後，共用信箱會意外轉換為使用者信箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)。 Exchange Online 遷移完成之前，不會解決此影響的影響。  
+| 使用 Office 365 德國設定重新執行 HCW <br><br> <i>您可以在接收到 Office 365 租使用者遷移 (階段 1) 開始的訊息中心通知之後，立即啟動此活動。</i>| 卸載及重新執行 HCW (17.0.5378.0 或以上) 從 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 第5階段開始，可確保您的內部部署設定準備好使用 Microsoft Cloud Deutschland 使用者和遷移至 Office 365 德國地區的使用者來傳送和接收郵件。 <p><li> 在 HCW 的 [**我的 Office 365 組織** 底下的清單方塊] 中，選取 [ **Office 365 德國]。** | 在階段 5 [Exchange 遷移] 開始之前，無法完成這項工作，可能會導致 NDRs 內部部署 Exchange 部署及 Office 365 之間的郵件路由。
+| 保留共用信箱設定 | 有些混合式客戶已使用 Exchange Online 命令將雲端使用者信箱轉換成「共用」信箱。 此雲端信箱設定會寫入至信箱和本機 Exchange Online 目錄，但是它並未透過 AAD 連線同步處理回客戶的 Active directory。 結果是信箱 RemoteRecipientType 及 RemoteDisplayType 值之 Active Directory 表示的差異，以及 Exchange Online 定義為共用信箱。 <br><br> 客戶負責確定已使用、或將所有共用信箱正確布建 `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` `Set-RemoteMailbox -Shared` 。  請參閱此參考以瞭解如何 [在混合式環境中轉換使用者的信箱](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)。| 無法在階段 5 [Exchange Online 遷移] 之前完成此工作，可能會導致 NDRs 共用信箱，將其轉換回未授權的信箱，並失去受影響信箱的共用存取權。 [在 Exchange 混合式部署中執行目錄同步處理之後，共用信箱會意外轉換為使用者信箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)。 Exchange Online 遷移完成之前，不會解決此影響的影響。
 ||||
 
 ## <a name="skype-for-business-online"></a>商務用 Skype Online
@@ -203,7 +205,7 @@ Enterprise 具有 Exchange Online 和內部部署 Exchange Server 混合式部�
 > [!NOTE]
 > 您的 Microsoft Azure 服務的遷移可能無法在您的 Office 365 租使用者達到遷移階段9之前開始，必須在遷移階段10開始之前完成。
 
-使用 Office 365 和 Azure 資源 (（例如網路、計算和儲存) ）的客戶會執行資源的遷移到 Office 365 服務實例。 這種遷移是客戶的責任。 訊息中心文章會通知開始。 在 Office 365 服務環境中完成 Azure AD 組織之前，必須完成遷移。 如需 Azure 遷移，請參閱 azure 遷移行動手冊（ [Azure 德國遷移指南的概述](https://docs.microsoft.com/azure/germany/germany-migration-main)）。
+使用 Office 365 和 Azure 資源 (（例如網路、計算和儲存) ）的客戶會執行資源的遷移到 Office 365 服務實例。 這種遷移是客戶的責任。 訊息中心文章會通知開始。 在 Office 365 服務環境中完成 Azure AD 組織之前，必須完成遷移。 如需 Azure 遷移，請參閱 azure 遷移行動手冊（ [Azure 德國遷移指南的概述](/azure/germany/germany-migration-main)）。
 
 | 步驟 (s)  | 描述 | 影響 |
 |:-------|:-------|:-------|
@@ -215,15 +217,15 @@ Reworked as text:
 
 **Step:** Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 services tenant by working with your partners. Follow the steps described in the [Azure migration playbook](/azure/germany/germany-migration-main).
 
-**Description:** Migration of Azure resources is a customer responsibility and requires manual effort following prescribed steps. Understanding what services are in use in the organization is key to successful migration of Azure services. 
+**Description:** Migration of Azure resources is a customer responsibility and requires manual effort following prescribed steps. Understanding what services are in use in the organization is key to successful migration of Azure services.
 
 Office 365 Germany customers who have Azure subscriptions under the same identity partition (organization) must follow the Microsoft-prescribed order when they can begin subscription and services migration.
 
 **Applies to:** Azure Customers
 
-**Impact:** 
+**Impact:**
 
-- Customers may have multiple Azure subscriptions, each subscription containing infrastructure, services, and platform components. 
+- Customers may have multiple Azure subscriptions, each subscription containing infrastructure, services, and platform components.
 - Administrators should identify subscriptions and stakeholders to ensure prompt migration and validation is possible as part of this migration event.
 
   Failing to successfully complete migration of these subscriptions and Azure components within the prescribed timeline will affect completion of the Office and Azure AD transition to Office 365 services and may result in data loss.

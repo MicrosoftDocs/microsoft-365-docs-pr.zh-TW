@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a985719663ec23d41ce4da57aea9aa5e0cf7674c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: eed208da92f7e196cc71dab4e9d32e5666f3f6a4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688966"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844199"
 ---
 # <a name="web-protection"></a>Web 保護
 
@@ -32,9 +32,9 @@ ms.locfileid: "51688966"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Microsoft Defender for Endpoint 中的 Web 保護是由 [web 威脅防護](web-threat-protection.md) 和 [web 內容篩選](web-content-filtering.md)所組成的功能。 Web 保護功能可讓您保護裝置免受網頁威脅，並協助您控制不想要的內容。 您可以在 Microsoft Defender Security Center 中尋找 Web 保護報告，以 **> web 保護的報表**。
+Microsoft Defender for Endpoint 中的 Web 保護是由 [web 威脅防護](web-threat-protection.md) 和 [web 內容篩選](web-content-filtering.md)所組成的功能。 Web 保護功能可讓您保護裝置免受網頁威脅，並協助您控制不想要的內容。 您可以前往 **報告 > web 保護**，在 Microsoft Defender 資訊安全中心中尋找 web 保護報告。
 
 ![所有 web 保護卡的影像](images/web-protection.png)
 
@@ -53,7 +53,7 @@ Microsoft Defender for Endpoint 中的 Web 保護是由 [web 威脅防護](web-t
 
 Web 內容篩選包括：
 - 使用者無法存取封鎖類別中的網站，不論他們流覽內部部署或離開
-- 您可以使用[Microsoft Defender For Endpoint role 的存取控制設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)中所定義的裝置群組，輕鬆地將不同的原則部署至不同的使用者群組
+- 您可以使用[Microsoft Defender For Endpoint role 的存取控制設定](/microsoft-365/security/defender-endpoint/rbac)中所定義的裝置群組，輕鬆地將不同的原則部署至不同的使用者群組
 - 您可以在相同的中央位置存取 web 報表，並透過實際區塊和 web 使用狀況進行查看
 
 ## <a name="in-this-section"></a>本節內容

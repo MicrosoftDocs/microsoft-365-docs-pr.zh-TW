@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 462fa6177ee35d5d988efa985422b499e2339ff4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 264ebbe0ceb6d6b83c006dbd1dd071a78ae219c3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935314"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841335"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>設定 Android 功能上的 Defender for Endpoint
 
@@ -33,9 +33,9 @@ ms.locfileid: "51935314"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>在 Android 上使用 Defender for Endpoint 進行條件式存取  
-Android 上的 Microsoft Defender for Endpoint 和 Microsoft Intune 和 Azure Active Directory 可根據裝置風險層級，強制實施裝置規範和條件式存取原則。 Defender for Endpoint 是行動威脅防護 (MTD) 解決方案，您可以透過 Intune 部署此功能，以利用這項功能。
+Android 上的 Microsoft Defender for Endpoint 和 Microsoft Intune 和 Azure Active Directory 可根據裝置風險層級強制實施裝置合規性和條件式存取原則。 Defender for Endpoint 是行動威脅防護 (MTD) 解決方案，您可以透過 Intune 部署此功能，以利用這項功能。
 
-如需如何在 Android 和條件式存取上為端點設定 Defender 的詳細資訊，請參閱 [適用于 endpoint 和 Intune 的 defender](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)。
+如需如何在 Android 和條件式存取上為端點設定 Defender 的詳細資訊，請參閱 [適用于 endpoint 和 Intune 的 defender](/mem/intune/protect/advanced-threat-protection)。
 
 ## <a name="configure-custom-indicators"></a>設定自訂指示器  
 
@@ -45,10 +45,10 @@ Android 上的 Microsoft Defender for Endpoint 和 Microsoft Intune 和 Azure Ac
 Android 上的 Defender for Android 可讓系統管理員設定自訂指示器，以同時支援 Android 裝置。 如需如何設定自訂指示器的詳細資訊，請參閱 [管理指示器](manage-indicators.md)。
 
 ## <a name="configure-web-protection"></a>設定 web 保護
-Android 上的 Defender for Android 可讓 IT 管理員設定 web 保護功能。 這項功能可在 Microsoft 端點管理員系統管理中心內使用。
+Android 上的 Defender for Android 可讓 IT 管理員設定 web 保護功能。 這項功能可在 Microsoft 端點管理員系統管理中心內取得。
 
 > [!NOTE]
-> Android 上的 Defender for Endpoint 會使用 VPN，以便提供 Web 保護功能。 這不是一般 VPN，也就是本機/自我迴圈的 VPN，不會對裝置以外的流量進行流量。 如需詳細資訊，請參閱 [在執行 Android 的裝置上設定 web 保護](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android)。
+> Android 上的 Defender for Endpoint 會使用 VPN，以便提供 Web 保護功能。 這不是一般 VPN，也就是本機/自我迴圈的 VPN，不會對裝置以外的流量進行流量。 如需詳細資訊，請參閱 [在執行 Android 的裝置上設定 web 保護](/mem/intune/protect/advanced-threat-protection-manage-android)。
 
 ## <a name="related-topics"></a>相關主題
 - [Android 上適用於端點的 Microsoft Defender 概觀](microsoft-defender-endpoint-android.md)
