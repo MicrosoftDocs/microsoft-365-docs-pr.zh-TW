@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > 在 EOP 保護內部部署 Exchange 信箱的混合部署中，您必須設定兩個 Exchange 郵件流程規則 (也稱為內部部署 Exchange 組織中的傳輸規則) ，以偵測新增至郵件的 EOP 垃圾郵件篩選標頭。 如需詳細資訊，請參閱 [CONFIGURE EOP To Email to The 垃圾郵件資料夾中的混合式環境](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
+      > 在 EOP 保護內部部署 Exchange 信箱的混合部署中，您必須設定兩個 Exchange 郵件流程規則 (也稱為內部部署 Exchange 組織中的傳輸規則) ，以偵測新增至郵件的 EOP 垃圾郵件篩選標頭。 如需詳細資訊，請參閱[設定 EOP 以將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
        **輸出郵件：** 郵件是透過 [高風險傳遞集](high-risk-delivery-pool-for-outbound-messages.md) 區路由傳送，或是傳回給寄件者的未傳遞回報 (也稱為 NDR 或退回郵件) 。 如需輸出垃圾郵件保護的詳細資訊，請參閱 [輸出垃圾郵件控制](outbound-spam-controls.md)。
   - question: >

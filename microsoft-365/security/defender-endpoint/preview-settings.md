@@ -23,29 +23,29 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2021
 ms.locfileid: "51861080"
 ---
-# <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a><span data-ttu-id="de6ac-104">在 Microsoft Defender for Endpoint 中開啟預覽體驗</span><span class="sxs-lookup"><span data-stu-id="de6ac-104">Turn on the preview experience in Microsoft Defender for Endpoint</span></span>
+# <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a><span data-ttu-id="1f6b7-104">在 Microsoft Defender for Endpoint 中開啟預覽體驗</span><span class="sxs-lookup"><span data-stu-id="1f6b7-104">Turn on the preview experience in Microsoft Defender for Endpoint</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="de6ac-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="de6ac-105">**Applies to:**</span></span>
-- [<span data-ttu-id="de6ac-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="de6ac-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="de6ac-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="de6ac-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="1f6b7-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="1f6b7-105">**Applies to:**</span></span>
+- [<span data-ttu-id="1f6b7-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="1f6b7-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="1f6b7-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="1f6b7-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-><span data-ttu-id="de6ac-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="de6ac-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="de6ac-109">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="de6ac-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
+><span data-ttu-id="1f6b7-108">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="1f6b7-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="1f6b7-109">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="1f6b7-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
 
-<span data-ttu-id="de6ac-110">開啟預覽體驗設定，成為第一批嘗試即將推出的功能的人。</span><span class="sxs-lookup"><span data-stu-id="de6ac-110">Turn on the preview experience setting to be among the first to try upcoming features.</span></span>
+<span data-ttu-id="1f6b7-110">開啟預覽體驗設定，成為第一批嘗試即將推出的功能的人。</span><span class="sxs-lookup"><span data-stu-id="1f6b7-110">Turn on the preview experience setting to be among the first to try upcoming features.</span></span>
 
-1. <span data-ttu-id="de6ac-111">在功能窗格中，選取 [**設定**  >  **高級功能**]。</span><span class="sxs-lookup"><span data-stu-id="de6ac-111">In the navigation pane, select **Settings** > **Advanced features**.</span></span>
+1. <span data-ttu-id="1f6b7-111">在功能窗格中，選取 [**設定**  >  **高級功能**]。</span><span class="sxs-lookup"><span data-stu-id="1f6b7-111">In the navigation pane, select **Settings** > **Advanced features**.</span></span>
 
     ![設定和預覽體驗的影像](images/atp-preview-features.png)
 
 
-2. <span data-ttu-id="de6ac-113">**在 [開啟**] 和 [**關閉**] 間切換設定，然後選取 [**儲存喜好** 設定]。</span><span class="sxs-lookup"><span data-stu-id="de6ac-113">Toggle the setting between **On** and **Off** and select **Save preferences**.</span></span>
+2. <span data-ttu-id="1f6b7-113">**在 [開啟**] 和 [**關閉**] 間切換設定，然後選取 [**儲存喜好** 設定]。</span><span class="sxs-lookup"><span data-stu-id="1f6b7-113">Toggle the setting between **On** and **Off** and select **Save preferences**.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="de6ac-114">相關主題</span><span class="sxs-lookup"><span data-stu-id="de6ac-114">Related topics</span></span>
-- [<span data-ttu-id="de6ac-115">更新 Microsoft Defender for Endpoint 中的一般設定</span><span class="sxs-lookup"><span data-stu-id="de6ac-115">Update general settings in Microsoft Defender for Endpoint</span></span>](data-retention-settings.md)
-- [<span data-ttu-id="de6ac-116">在 Microsoft Defender for Endpoint 中開啟高級功能</span><span class="sxs-lookup"><span data-stu-id="de6ac-116">Turn on advanced features in Microsoft Defender for Endpoint</span></span>](advanced-features.md)
-- [<span data-ttu-id="de6ac-117">在 Microsoft Defender for Endpoint 中設定電子郵件通知</span><span class="sxs-lookup"><span data-stu-id="de6ac-117">Configure email notifications in Microsoft Defender for Endpoint</span></span>](configure-email-notifications.md)
-- [<span data-ttu-id="de6ac-118">在 Microsoft Defender for Endpoint 中啟用 SIEM 整合</span><span class="sxs-lookup"><span data-stu-id="de6ac-118">Enable SIEM integration in Microsoft Defender for Endpoint</span></span>](enable-siem-integration.md)
+## <a name="related-topics"></a><span data-ttu-id="1f6b7-114">相關主題</span><span class="sxs-lookup"><span data-stu-id="1f6b7-114">Related topics</span></span>
+- [<span data-ttu-id="1f6b7-115">更新 Microsoft Defender for Endpoint 中的一般設定</span><span class="sxs-lookup"><span data-stu-id="1f6b7-115">Update general settings in Microsoft Defender for Endpoint</span></span>](data-retention-settings.md)
+- [<span data-ttu-id="1f6b7-116">在 Microsoft Defender for Endpoint 中開啟高級功能</span><span class="sxs-lookup"><span data-stu-id="1f6b7-116">Turn on advanced features in Microsoft Defender for Endpoint</span></span>](advanced-features.md)
+- [<span data-ttu-id="1f6b7-117">在 Microsoft Defender for Endpoint 中設定電子郵件通知</span><span class="sxs-lookup"><span data-stu-id="1f6b7-117">Configure email notifications in Microsoft Defender for Endpoint</span></span>](configure-email-notifications.md)
+- [<span data-ttu-id="1f6b7-118">在 Microsoft Defender for Endpoint 中啟用 SIEM 整合</span><span class="sxs-lookup"><span data-stu-id="1f6b7-118">Enable SIEM integration in Microsoft Defender for Endpoint</span></span>](enable-siem-integration.md)
 
