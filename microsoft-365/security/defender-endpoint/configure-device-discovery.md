@@ -40,20 +40,20 @@ ms.locfileid: "51765248"
 
 探索可以設定為 on standard 或 basic 模式。 使用標準選項可在您的網路中主動尋找裝置，這樣就能更好地保證端點的探索，並提供更豐富的裝置分類。 
 
-您可以自訂用來執行標準探索的裝置清單。 您可以在目前只支援此功能的所有架裝置上啟用標準探索 (目前只有 Windows 10 裝置) 或透過指定裝置的裝置標記來選取一部分裝置或子集。 
+您可以自訂用來執行標準探索的裝置清單。 您可以在所有也支援此功能的架裝置上啟用 standard discovery， (目前 Windows 10 裝置只) 或透過指定裝置的裝置標記來選取裝置的子集或子集。 
 
 
 > [!IMPORTANT]
-> 預覽時，您必須先在 Microsoft Defender 安全中心開啟預覽功能。
-> 然後，您可以在 Microsoft 365 的安全性中心存取裝置探索設定。 Microsoft Defender Security Center 和 Microsoft 365 security center 中皆提供非管理裝置及安全性建議的清單，而儀表板磚只會在 Microsoft 365 安全性中心提供。
+> 預覽時，您必須先在 Microsoft Defender 資訊安全中心中開啟預覽功能。
+> 然後，您可以在 Microsoft 365 的安全性中心存取裝置探索設定。 在 Microsoft Defender 資訊安全中心和 Microsoft 365 的安全性中心都有未管理裝置及安全性建議的清單，而儀表板磚只會 Microsoft 365 安全性中心提供。
 
 
-在 Microsoft 365 安全中心採取下列設定步驟：
+在 Microsoft 365 的安全性中心採取下列設定步驟：
 
-1.  流覽至 [ **設定] > 裝置探索**。
+1.  流覽至 **設定 > 裝置探索**。
 2.  選取要用於架裝置的探索模式。 
 3.  如果您已選擇使用標準探索，請選取要用於作用中探測的裝置： [所有裝置] 或 [子集]，方法是指定其裝置標記。
-4. 按一下 **儲存**。
+4. 按一下 **[儲存]**。
 
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>排除在標準探索中積極探測裝置
@@ -86,7 +86,7 @@ ms.locfileid: "51765248"
 
 選擇初始探索分類意味著套用預設的系統建立網路監視器狀態。 選取預設的系統網路監視器狀態，表示系統會自動忽略已識別成公司的網路，並將其識別為非公司的網路。
  
-1. 選取 [ **設定] > 裝置探索**。
+1. 選取 [**設定 > 裝置探索**]。
 2. 選取 [ **受監視的網路**]。 
 3. 查看網路清單。 
 4. 選取網路名稱旁邊的三個點。 
@@ -104,5 +104,5 @@ ms.locfileid: "51765248"
 
 
 ## <a name="see-also"></a>另請參閱
-- [裝置探索概述](device-discovery.md)
+- [裝置探索概觀](device-discovery.md)
 - [裝置探索 FAQs](device-discovery-faq.md)

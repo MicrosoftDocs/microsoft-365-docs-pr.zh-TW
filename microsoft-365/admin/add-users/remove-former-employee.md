@@ -37,7 +37,7 @@ ms.locfileid: "52730171"
 
 :::image type="content" source="../../media/delete-user-overview.png" alt-text="螢幕擷取畫面：刪除離職員工的步驟":::
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 您必須是全域系統管理員，才可完成此方案中的步驟。
 

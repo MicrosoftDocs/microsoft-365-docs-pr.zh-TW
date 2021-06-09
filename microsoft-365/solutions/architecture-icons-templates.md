@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 架構圖標與範本
-description: 用於建立 Microsoft 365 之架構圖表的圖示。
+description: 為 Microsoft 365 建立架構圖表時所使用的圖示。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -19,7 +19,7 @@ ms.locfileid: "49688730"
 ---
 # <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365 架構圖標與範本
 
-協助我們的合作夥伴及客戶設計及設計新的解決方案很重要。 類似于我們指導中所包含的架構圖表可協助交流設計決策，以及環境中元件之間的關係。 我們使用一組符號和圖示及 Visio 範本，建立我們產品的架構圖，並在這裡提供這些工具，以協助您建立下一個解決方案的自訂架構圖表。
+協助我們的合作夥伴及客戶設計及設計新的解決方案很重要。 類似于我們指導中所包含的架構圖表可協助交流設計決策，以及環境中元件之間的關係。 我們會使用一組符號和圖示及 Visio 範本，建立我們產品的架構圖，並在這裡提供這些工具，以協助您建立下一個解決方案的自訂架構圖表。
 
 您可以在下列頁面上看到可下載檔案的動作圖示、符號和範本：
 
@@ -45,6 +45,6 @@ Microsoft 允許在架構圖表、訓練材料或檔中使用這些圖示。 除
 
     ![SharePoint 的範例搜尋架構](../media/configure-search-for-multi-geo-image1-1.png)
 
-2. 小組保留週期架構圖表：
+2. Teams 保留週期架構圖表：
 
-    ![團隊保留週期](../media/TeamsRetentionLifecycle.png)
+    ![Teams 保留週期](../media/TeamsRetentionLifecycle.png)

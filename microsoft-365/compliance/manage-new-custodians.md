@@ -1,5 +1,5 @@
 ---
-title: 在高級 eDiscovery 案例中管理保管人
+title: 在 Advanced eDiscovery 案例中管理保管人
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 瞭解如何在高級 eDiscovery 案例中查看對保管人清單的詳細資料、編輯和大量編輯。
+description: 瞭解如何在 Advanced eDiscovery 案例中查看詳細資料、編輯和大量編輯保管人清單。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: a1e9e9d481073c8bb2827d5d65537dbf2b63ef1f
 ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
@@ -24,9 +24,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 12/30/2020
 ms.locfileid: "49739866"
 ---
-# <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>在高級 eDiscovery 案例中管理保管人
+# <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>在 Advanced eDiscovery 案例中管理保管人
 
-在高級 eDiscovery 案例中，[ **來源** ] 索引標籤上的「保管人」頁面包含已新增至此案例的所有保管人清單。 在您將保管人新增至案例後，會自動從 Azure Active Directory 收集每個保管人的詳細資訊，並在高級 eDiscovery 中查看。
+Advanced eDiscovery 案例中 [**來源**] 索引標籤上的「保管人」頁面包含已新增至此案例的所有保管人清單。 在您將保管人新增至案例後，會自動從 Azure Active Directory 收集每個保管人的詳細資訊，並在 Advanced eDiscovery 中查看。
 
 ![管理保管人](../media/CustodianDetails.PNG)
 
@@ -66,7 +66,7 @@ ms.locfileid: "49739866"
 
 - 資料來源和索引資訊
 
-    - **資料來源** -顯示與保管人相關聯且屬於案例一部分之資料來源 (的統計資料和類型) 。
+    - **資料來源**-顯示與保管人相關聯且屬於案例一部分之資料來源的計數和類型 (信箱、網站和 Teams) 。
 
     - **索引更新時間** -指出上次觸發高級索引工作的時間與日期。 此屬性也會指出高級索引處理常式目前的進行時間。
 
@@ -77,7 +77,7 @@ ms.locfileid: "49739866"
 
 若要更新與保管人相關聯的資料來源：
 
-1. 請移至  **eDiscovery > Advanced ediscovery** ，然後開啟案例。
+1. 請移至 **eDiscovery > Advanced eDiscovery** ，然後開啟此案例。
   
 2. 按一下 [ **來源** ] 索引標籤。
   
@@ -85,9 +85,9 @@ ms.locfileid: "49739866"
 
     ![編輯資料來源](../media/EditCustodianDataSource.PNG)
   
-4. 按一下 **[選擇資料來源** ] 索引標籤，以變更保管人的 Exchange 信箱和 OneDrive 帳戶的設定，然後按一下 **[選擇資料來源**]。
+4. 按一下 **[選擇資料來源**] 索引標籤，以變更保管人的 Exchange 信箱和 OneDrive 帳戶的設定，然後按一下 **[選擇資料來源**]。
   
-5. 按一下 [ **選取其他資料來源** ] 索引標籤，新增或移除與保管人管理員相關聯的小組、SharePoint 或 Exchange 信箱。 
+5. 按一下 [**選取其他資料來源**] 索引標籤，以新增或移除與保管人關聯的 Teams、SharePoint 或 Exchange 信箱。 
 
     如需與保管人相關聯之資料來源的詳細資訊，請參閱 [Add 保管人 to a a case](add-custodians-to-case.md)。 
   
@@ -95,13 +95,13 @@ ms.locfileid: "49739866"
 
 ## <a name="re-index-custodian-data"></a>重新索引保管人資料
 
-在大部分法律調查的 eDiscovery 工作流程中，在將保管人新增至合法案例後，會搜尋保管人資料的子集。 由於非常大的檔案大小或可能的資料損毀，與管理員相關聯之資料來源中的某些專案可能會進行部分編制索引。 使用高級 eDiscovery 中的 [高級索引](indexing-custodian-data.md) 功能時，可以根據需要重新建立這些專案的索引，以自動修正部分的索引項目目。
+在大部分法律調查的 eDiscovery 工作流程中，在將保管人新增至合法案例後，會搜尋保管人資料的子集。 由於非常大的檔案大小或可能的資料損毀，與管理員相關聯之資料來源中的某些專案可能會進行部分編制索引。 在 Advanced eDiscovery 中使用[高級索引](indexing-custodian-data.md)功能時，可以根據需要重新建立這些專案的索引，以自動修正部分索引的專案。
 
 當系統管理員新增至案例時，位於與保管人相關之資料來源中的資料會自動由高級索引處理常式) 重新編制索引 (。 這表示您可以就地保留資料，而不是下載並修復資料，然後) 離線搜尋。 不過，在法律案例的生命週期中，可能會與保管人產生關聯的新資料來源。 在此情況下，您可以重新執行「高級索引處理常式」以修正任何已部分索引的專案，並更新保管人資料的索引，以重新建立保管人的資料索引。
 
 觸發重新編制索引處理常式來處理部分索引的專案：
 
-1. 請移至  **eDiscovery > Advanced ediscovery** ，然後開啟案例。
+1. 請移至 **eDiscovery > Advanced eDiscovery** ，然後開啟此案例。
 
 2. 按一下 [ **來源** ] 索引標籤。
 
@@ -127,7 +127,7 @@ ms.locfileid: "49739866"
 
 若要發行管理員： 
 
-1. 請移至  **eDiscovery > Advanced ediscovery** ，然後開啟案例。
+1. 請移至 **eDiscovery > Advanced eDiscovery** ，然後開啟此案例。
 
 2. 按一下 [ **來源** ] 索引標籤。
 
@@ -135,7 +135,7 @@ ms.locfileid: "49739866"
 
 4. 在飛入頁面上，按一下 [ **發行管理員**]。
 
-   隨即會顯示 [警告] 頁面，說明如果保留是放在與保管人相關聯的資料來源上，保留將會被移除，而且與不同的高級 eDiscovery 案例關聯的任何其他保留仍會適用。 包括其他類型的保留和保留功能 (例如 Microsoft 365 保留原則) 。
+   隨即會顯示 [警告] 頁面，說明如果將保留放在與保管人相關聯的資料來源，保留將會被移除，而且其他與不同的 Advanced eDiscovery 案例關聯的保留仍然適用。 包括其他類型的保留和保留功能 (例如 Microsoft 365 保留原則) ）。
 
 5. 按一下 **[是]** 確認您要釋放保管人。 
 

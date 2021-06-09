@@ -28,17 +28,17 @@ ms.locfileid: "49073189"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-您可以使用 Microsoft 365 的 PowerShell 作為 Microsoft 365 系統管理中心的替代方法，以在 Microsoft 365 中管理密碼。 
+您可以使用 PowerShell Microsoft 365 Microsoft 365 系統管理中心以管理 Microsoft 365 中的密碼。 
 
 當本文中的命令區塊要求您指定變數值時，請使用下列步驟。
 
-1. 將命令區塊複製到 [剪貼簿]，然後將它貼到 [記事本] 或 PowerShell 整合型腳本環境 (ISE) 。
+1. 將命令區塊複製到 [剪貼簿]，然後將它貼到記事本或 PowerShell 整合式腳本環境 (ISE) 。
 2. 填入變數值，並移除 "<" 和 ">" 字元。
 3. 在 PowerShell] 視窗或 PowerShell ISE 中執行命令。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 ### <a name="set-a-password"></a>設定密碼
 
@@ -72,7 +72,7 @@ Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -ForceChangeP
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 ### <a name="set-a-password"></a>設定密碼
 
@@ -93,7 +93,7 @@ $userUPN="<user account sign in name>"
 Set-MsolUserPassword -UserPrincipalName $userUPN -ForceChangePassword $true
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

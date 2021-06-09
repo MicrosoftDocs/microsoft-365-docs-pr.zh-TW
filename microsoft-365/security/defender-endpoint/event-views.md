@@ -1,5 +1,5 @@
 ---
-title: 查看攻擊面縮小事件
+title: 檢視受攻擊面縮小事件
 description: 匯入自訂視圖，以查看攻擊面降低事件。
 keywords: 事件檢視、入侵防護、審核、複查、事件
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52769314"
 ---
-# <a name="view-attack-surface-reduction-events"></a>查看攻擊面縮小事件
+# <a name="view-attack-surface-reduction-events"></a>檢視受攻擊面縮小事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -78,7 +78,7 @@ ms.locfileid: "52769314"
 
 4. 將您要篩選事件的功能的 XML 程式碼貼到 XML 區段中。
 
-5. 選取 [確定]。 指定篩選的名稱。
+5. 選取 **[確定]**。 指定篩選的名稱。
 
 6. 它會建立自訂視圖，篩選為只顯示與該功能相關的事件。
 

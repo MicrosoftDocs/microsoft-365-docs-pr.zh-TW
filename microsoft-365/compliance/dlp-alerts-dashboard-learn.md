@@ -1,5 +1,5 @@
 ---
-title: 深入瞭解資料遺失防護警示儀表板
+title: 了解資料外洩防護警示儀表板
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/13/2021
 ms.locfileid: "51760702"
 ---
-# <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>深入瞭解資料遺失防護警示儀表板
+# <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>了解資料外洩防護警示儀表板
 
 當資料遺失防護中的準則 (DLP) 原則與使用者對機密專案所採取的動作相符時，該原則就會產生警示。 這可能會產生大量的警示。 DLP 警示會收集于警示儀表板中。 [警示] 儀表板為您提供單一位置，可對原則相符的所有詳細資料執行深入調查。  
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760702"
 
 ## <a name="workloads"></a>工作負載
 
-「 [Dlp 警示管理」儀表板](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)的 [Microsoft 365 規範中心](https://compliance.microsoft.com/)，顯示這些工作負載上 dlp 原則的警示：
+[dlp 警示管理儀表板](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)的[Microsoft 365 規範中心](https://compliance.microsoft.com/)] 顯示這些工作負載上 dlp 原則的警示：
 
 - Exchange
 - SharePoint
@@ -44,7 +44,7 @@ ms.locfileid: "51760702"
 - Windows 10 裝置 
 
 > [!TIP]
-> 使用適用于[小組 dlp](dlp-microsoft-teams.md)之[端點 dlp](endpoint-dlp-learn-about.md)的客戶，將會看到其 endpoint Dlp 原則警示和團隊 dlp 警示管理儀表板中的 dlp 原則警示。
+> 使用適用于[Teams DLP](dlp-microsoft-teams.md)之[endpoint dlp](endpoint-dlp-learn-about.md)的客戶，將會看到其 endpoint dlp 原則警示，並 Teams dlp 警示管理儀表板中的 dlp 原則警示。
 
 ## <a name="single-alert-and-aggregate-alert"></a>單一警示和匯總警示
 
@@ -102,5 +102,5 @@ ms.locfileid: "51760702"
 
 ## <a name="see-also"></a>另請參閱
 
-- [開始使用資料遺失防護警示儀表板](dlp-alerts-dashboard-get-started.md)
+- [開始使用資料外洩防護警示儀表板](dlp-alerts-dashboard-get-started.md)
 - [從資料遺失防護開始的位置](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention)

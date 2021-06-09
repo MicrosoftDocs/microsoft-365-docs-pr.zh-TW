@@ -31,7 +31,7 @@ ms.locfileid: "52683352"
 ---
 # <a name="remove-a-domain"></a>移除網域
   
- 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 您移除的是您的網域，因為您想要將它新增至不同的 Microsoft 365 訂閱計畫嗎？ 還是您只想取消訂閱？ 您可以[變更您的方案或訂閱](../../commerce/subscriptions/switch-to-a-different-plan.md)或[取消您的訂閱](../../commerce/subscriptions/cancel-your-subscription.md)。
   
@@ -154,7 +154,7 @@ ms.locfileid: "52683352"
   
 如果您有數百名或數千名使用者，請使用 PowerShell 來查詢所有使用者，然後將他們移到另一個網域。否則，UI 中很可能會遺失一些使用者，當您隨後想移除此網域時，將無法執行且不知道原因為何。如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true) (英文)。若要設定預設網域，請使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true) (英文)。
   
-## <a name="still-need-help"></a>是否仍需要協助？
+## <a name="still-need-help"></a>仍需要協助嗎？
 
 ::: moniker range="o365-worldwide"
 

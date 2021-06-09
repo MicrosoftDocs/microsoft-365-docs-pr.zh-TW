@@ -27,7 +27,7 @@ ms.locfileid: "48995906"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive 和 SharePoint Online 中的多地理位置功能
 
-在 OneDrive 和 SharePoint Online 中的多地理位置功能可讓您控制共用資源，例如，SharePoint 小組網站和 Microsoft 365 群組信箱儲存在全國或地區的地方。
+OneDrive 和 SharePoint Online 中的多地理位置功能可讓您控制共用資源，例如 SharePoint 小組網站，以及儲存在全國或地區中的 Microsoft 365 群組信箱。
 
 每個使用者、群組信箱和 SharePoint 網站會有慣用的資料位置 (PDL)，這表示儲存相關資料所在的地理位置。 使用者的個人資料 (Exchange 信箱和 OneDrive) 以及他們所建立的任何 Microsoft 365 群組或 SharePoint 網站，可以儲存在指定的地理位置，以滿足資料落地需求。 您可以[為每個地理位置指定不同的系統管理員](add-a-sharepoint-geo-admin.md)。
 

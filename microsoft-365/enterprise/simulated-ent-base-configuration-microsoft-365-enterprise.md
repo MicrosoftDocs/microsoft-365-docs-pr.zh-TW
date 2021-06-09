@@ -17,7 +17,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: 使用此測試實驗室指南來建立適用于企業的 Microsoft 365 模擬企業測試環境。
+description: 使用此測試實驗室指南為企業版的 Microsoft 365 建立模擬企業測試環境。
 ms.openlocfilehash: 8df63e1a580b57aa263c11dccaed947f46f2cbb9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.locfileid: "50926041"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模擬企業基本設定
 
-*此測試實驗室指南可用於 enterprise 和 Office 365 企業測試環境的 Microsoft 365。*
+*此測試實驗室指南可用於 enterprise 和 Office 365 企業版測試環境的 Microsoft 365。*
 
-本文說明如何為適用于企業的 Microsoft 365 建立簡化的環境，其中包括：
+本文說明如何為適用于 enterprise 的 Microsoft 365 建立簡化的環境，其中包括：
 
 - Microsoft 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網路連接至網際網路，由 Azure 虛擬網路上的三個虛擬機器所組成 (DC1、APP1 和 CLIENT1) 。
@@ -40,18 +40,18 @@ ms.locfileid: "50926041"
 - [階段 1：建立模擬的內部網路](#phase-1-create-a-simulated-intranet)
 - [階段 2：建立您的 Microsoft 365 E5 訂閱](#phase-2-create-your-microsoft-365-e5-subscription)
 
-您可以使用所產生的環境，利用其他[測試實驗室指南](m365-enterprise-test-lab-guides.md)或您自己的方式，測試[適用于 enterprise 的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的功能。
+您可以使用所產生的環境，利用其他[測試實驗室指南](m365-enterprise-test-lab-guides.md)或您自己的方式來測試[enterprise 的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)功能和功能。
 
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 如需 Microsoft 365 for enterprise 測試實驗室指南堆疊中所有文章的視覺對應，請移至 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 如需適用于企業測試實驗室指南堆疊的 Microsoft 365 中的所有文章的視覺對應，請移至[Microsoft 365 for enterprise test lab guide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>階段 1：建立模擬的內部網路
 
 在此階段中，請在 Azure 基礎結構服務中建立模擬的內部網路，其中包含 Active Directory 網域服務 (AD DS) 網域控制站、應用程式伺服器及用戶端電腦。
 
-您將在其他 [Microsoft 365 for Enterprise 測試實驗室指南](m365-enterprise-test-lab-guides.md) 中使用這些電腦，以設定並示範混合式身分識別和其他功能。
+您可以使用這些電腦做[為企業測試實驗室指南的其他 Microsoft 365](m365-enterprise-test-lab-guides.md) ，以設定並示範混合式身分識別和其他功能。
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>方法 1：使用 Azure Resource Manager 範本建立模擬內部網路
 
@@ -160,19 +160,19 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 接下來，連接至 DC1 虛擬機器：
   
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [**資源群組**] > <**_新資源群組的名稱_，*> > _* DC1**  >  **Connect]**。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [**資源群組**] > <**_新資源群組的名稱_，*> > _* DC1**[  >  **連線**]。
     
-2. 在 [開啟] 窗格中，選取 [ **下載 RDP 檔**]。 開啟所下載的 DC1.rdp 檔案，然後選取 [連線 **]**。
+2. 在 [開啟] 窗格中，選取 [ **下載 RDP 檔**]。 開啟所下載的 DC1.rdp 檔案，然後選取 [**連線**]。
     
 3. 指定 DC1 本機系統管理員帳戶名稱：
     
    - 對於 Windows 7：
     
-     在 [ **Windows 安全性** ] 對話方塊中，選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入 **DC1 \\** < *本機系統管理員帳戶名稱*>。
+     在 [ **Windows 安全性**] 對話方塊中，選取 [**使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入 **DC1 \\** < *本機系統管理員帳戶名稱*>。
     
    - 對於 Windows 8 或 Windows 10：
     
-     在 [ **Windows 安全性** ] 對話方塊中，選取 [ **更多選項**]，然後選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入 **DC1 \\** < *本機系統管理員帳戶名稱*>。
+     在 [ **Windows 安全性**] 對話方塊中，選取 [**更多選項**]，然後選取 [**使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入 **DC1 \\** < *本機系統管理員帳戶名稱*>。
     
 4. 在 [ **密碼**] 中，輸入本機系統管理員帳戶的密碼，然後選取 **[確定]**。
     
@@ -184,7 +184,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-接下來，將 DC1 設定為網域控制站，並將 DNS 伺服器設定為 **testlab。**\<*your public domain*> 網域。 指定您的公用功能變數名稱、移除角括弧，然後在系統管理員層級的 Windows 上執行這些命令。 DC1 上 PowerShell 命令提示字元。
+接下來，將 DC1 設定為網域控制站，並將 DNS 伺服器設定為 **testlab。**\<*your public domain*> 網域。 指定您的公用功能變數名稱、移除角括弧，然後在 DC1 上的系統管理員層級 Windows PowerShell 命令提示字元執行這些命令。
   
 ```powershell
 $yourDomain="<your public domain>"
@@ -197,17 +197,17 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 DC1 重新啟動後，重新連線到 DC1 虛擬機器。
   
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [**資源群組** > <*您的資源群組名稱*> > **DC1**  >  **Connect]**。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [**資源** 群組 > <*您的資源群組名稱*> > **DC1**  >  **連線**]。
     
-2. 執行已下載的 DC1.rdp 檔案，然後選取 [連線 **]**。
+2. 執行已下載的 DC1.rdp 檔案，然後選取 [**連線**]。
     
-3. 在 [ **Windows 安全性**] 中，選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入 **TESTLAB \\** < 的 *本機系統管理員帳戶名稱*>。
+3. 在 **Windows 安全性** 中，選取 [**使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入 **TESTLAB \\** < 的 *本機系統管理員帳戶名稱*>。
     
 4. 在 [ **密碼** ] 方塊中，輸入本機系統管理員帳戶的密碼，然後選取 **[確定]**。
     
 5. 出現提示時，請選取 **[是]**。
     
-接下來，在 Active Directory 中建立登入 TESTLAB 網域成員電腦時所使用的使用者帳戶。 在系統管理員層級的 Windows PowerShell 命令提示字元中執行此命令。
+接下來，在 Active Directory 中建立登入 TESTLAB 網域成員電腦時所使用的使用者帳戶。 在系統管理員層級 Windows PowerShell 命令提示字元執行此命令。
   
 ```powershell
 New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password" -assecurestring) -name "User1" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
@@ -381,11 +381,11 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
 
 如果您只需要 Office 365 測試環境，您不需要閱讀本文的其餘部分。
 
-如需同時適用于 Microsoft 365 和 Office 365 的其他測試實驗室指南，請參閱 [Microsoft 365 for Enterprise Test Lab 指南](m365-enterprise-test-lab-guides.md)。
+如需同時適用 Microsoft 365 和 Office 365 的其他測試實驗室指南，請參閱[Microsoft 365 for enterprise Test lab 指南](m365-enterprise-test-lab-guides.md)。
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>新增 Microsoft 365 E5 試用版訂閱
 
-若要新增 Microsoft 365 E5 試用訂閱，並為您的使用者帳戶設定授權，請執行「輕量基本設定測試實驗室指南」的 [階段 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) 中的指示。
+若要新增 Microsoft 365 E5 試用訂閱並設定您的使用者帳戶擁有授權，請執行輕量基本設定測試實驗室指南的[階段 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription)中的指示。
 
   
 ## <a name="results"></a>結果
@@ -400,7 +400,7 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
   
 ![模擬企業基本設定階段 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-您現在已準備好嘗試使用 [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
+您現在已準備好嘗試使用[enterprise 的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
   
 ## <a name="next-steps"></a>後續步驟
 

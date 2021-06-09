@@ -39,7 +39,7 @@ ms.locfileid: "52470685"
 
 - 適用於端點的 Microsoft Defender
 - 適用於 Office 365 的 Microsoft Defender
-- Microsoft 雲端 App 安全性
+- Microsoft Cloud App Security
 - 適用於身分識別的 Microsoft Defender
 
 >[!NOTE]

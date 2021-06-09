@@ -315,5 +315,5 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 Microsoft Defender for Endpoint OData 查詢](exposed-apis-odata-samples.md)

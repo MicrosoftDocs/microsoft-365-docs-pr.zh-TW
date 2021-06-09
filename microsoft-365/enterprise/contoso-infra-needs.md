@@ -13,7 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 瞭解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 for enterprise 如何滿足公司的業務需求。
+description: 瞭解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 企業版如何滿足公司的業務需求。
 ms.openlocfilehash: 72d502b5078a1e572eeba27832550af52907e209
 ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
@@ -67,7 +67,7 @@ Contoso 商務需求分為五個主要類別：
 
 **安全性**
 
-- 身分識別和存取管理
+- 身分識別與存取管理
 
   強制執行多重要素和其他形式的驗證，並保護使用者和系統管理員帳號憑證。
 
@@ -107,22 +107,22 @@ Contoso 商務需求分為五個主要類別：
 
 - 降低在用戶端電腦和裝置上執行軟體的管理成本。
 
-  自動將更新安裝至整個組織中的 Windows 作業系統和 Microsoft 365 應用程式。
+  自動將更新安裝至整個組織中 Windows 作業系統和 Microsoft 365 Apps 企業版。
 
-## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>將 Contoso 商務需求對應至 Microsoft 365 for enterprise
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>將 Contoso 商務需求對應至適用于企業的 Microsoft 365
 
-Contoso IT 部門決定在部署之前，下列業務需求對應至 Microsoft 365 E5 功能：
+Contoso IT 部門決定在部署之前 Microsoft 365 E5 功能需要下列對應的業務：
 
 
-| 類別 | 商務需求 | 適用于企業產品或功能的 Microsoft 365 |
+| Category | 商務需求 | 企業產品或功能的 Microsoft 365 |
 |:-------|:-----|:-----|
 | 生產力 |  |  |
 |  | 讓共同作業更輕鬆 | Microsoft Teams、SharePoint、OneDrive |
 |  | 改善遠端和行動工作者的生產力 | Microsoft 365 工作負載和雲端式資料 |
 |  | 增加創意和創新 | Windows Ink、Cortana at Work、PowerPoint |
 | 安全性 |  |  |
-|  | 身分識別和存取管理 | 具備 Azure AD Multi-Factor 驗證 (MFA) 和 Azure AD 特權身分識別管理 (PIM) 的專屬全域管理員帳戶。 <BR> 適用於所有使用者帳戶的 MFA <BR> 條件式存取 <BR> Windows Hello <BR> Windows Credential Guard |
-|  | 威脅防護 | 進階威脅分析 <BR> Windows Defender <BR> 適用于 Office 的 Defender 365 <BR> Microsoft Defender for Office 365 <BR> Microsoft 365 威脅調查和回應 <BR> |
+|  | 身分識別和存取管理 | 使用 azure ad 的專屬全域管理員帳戶 Multi-Factor 驗證 (MFA) 和 Azure ad Privileged Identity Management (PIM)  <BR> 適用於所有使用者帳戶的 MFA <BR> 條件式存取 <BR> Windows Hello <BR> Windows Credential Guard |
+|  | 威脅防護 | 進階威脅分析 <BR> Windows Defender <BR> 適用於 Office 365 的 Defender <BR> 適用於 Office 365 的 Microsoft Defender <BR> Microsoft 365 威脅調查和回應 <BR> |
 |  | 資訊保護 | Azure 資訊保護 <BR> 資料外洩防護 (DLP) <BR> Windows 資訊保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | 安全性管理 | Azure Defender  <BR> Windows Defender 資訊安全中心 |
 | 遠端和行動裝置存取與商務合作夥伴 |  |  |
@@ -137,9 +137,9 @@ Contoso IT 部門決定在部署之前，下列業務需求對應至 Microsoft 3
 
 ## <a name="next-step"></a>下一步
 
-深入瞭解 Contoso Corporation [內部部署網路](contoso-networking.md) ，以及其如何針對 Microsoft 365 雲端架構資源進行存取和延遲優化。
+深入瞭解 Contoso Corporation[內部部署網路](contoso-networking.md)，以及它如何針對存取和延遲優化，以 Microsoft 365 雲端架構資源。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 德國的 Office 365 端點
+title: Office 365 德國端點
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: 在本文中，您將會發現在德國使用 Office 365 之客戶可以到達的端點。
+description: 在本文中，您會發現可供使用德國 Office 365 的客戶使用的端點。
 hideEdit: true
 ms.openlocfilehash: 0d96300e77c67ac05ea18ab23d63c01d4f840dfb
 ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
@@ -29,13 +29,13 @@ ms.locfileid: "51759891"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany 端點
 
- *適用版本： Office 365 系統管理員*
+ *適用于： Office 365 系統管理員*
 
 Office 365 需要連接至網際網路。 下列端點應可供使用 **Office 365 德國** 方案的客戶使用。
 
 > [!NOTE]
-> 若為客戶（位於德國的新 Microsoft 365 資料中心區域過渡），端點將會變更。
-> 如需其他資訊，請參閱 [從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務](ms-cloud-germany-transition.md)。
+> 針對在德國的新 Microsoft 365 資料中心區域轉換的客戶，端點將會變更。
+> 如需其他資訊，請參閱[從 Microsoft Cloud Deutschland 遷移至新的德國資料中心區域的 Office 365 服務](ms-cloud-germany-transition.md)。
   
  **Office 365 端點：** [全球 (包括 GCC)](urls-and-ip-address-ranges.md)  | [21 Vianet 提供的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 德國* |  [Office 365 美國政府 DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 美國政府 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
@@ -47,7 +47,7 @@ Office 365 需要連接至網際網路。 下列端點應可供使用 **Office 3
 
 本頁下方顯示的資料全部來自基於 REST 的 Web 服務。 如果您正使用指令碼或網路裝置來存取本資料，您應直接前往 [Web 服務](microsoft-365-ip-web-service.md)。
 
-以下的端點資料會列出從使用者電腦到 Office 365 的連線需求。 不包括從 Microsoft 到客戶網路的網路連線，有時也稱為混合式或輸入的網路連線。
+以下的端點資料會列出從使用者電腦連線至 Office 365 的需求。 不包括從 Microsoft 到客戶網路的網路連線，有時也稱為混合式或輸入的網路連線。
 
 端點則被歸類成四個服務區域。前三個服務區域可以個別選取進行連線。第四個服務區域 (稱為 Microsoft 365 Common 與 Office) 的常見相依性，且必須一律具有網路連線能力。
 

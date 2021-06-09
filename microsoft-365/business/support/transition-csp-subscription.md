@@ -1,6 +1,6 @@
 ---
 title: 轉換 Microsoft 365 商務版雲端解決方案提供者訂閱
-description: 瞭解如何將 Microsoft 365 商務 CSP 訂閱從預覽轉換為一般可用性（GA）。
+description: 瞭解如何將 Microsoft 365 商務版的 CSP 訂閱從預覽轉換為一般發行 (GA) 。
 author: jasongroce
 f1.keywords:
 - NOCSH
@@ -27,15 +27,15 @@ ms.locfileid: "44403423"
 
 **如何將預覽訂閱轉換至 GA**
 
-1. 登入<a href="https://partnercenter.microsoft.com" target="_blank">夥伴中心</a>。
+1. 登入 <a href="https://partnercenter.microsoft.com" target="_blank">夥伴中心</a>。
 2. From the dashboard, select **Customers**, and then find and select the company name.
 
     將會列出該公司的訂閱。
 
     ![合作夥伴中心的客戶訂閱](../../media/pc_customer_subscriptions_1.png)
     
-3. 在 [公司**訂閱**] 頁面上，選取 [**新增訂閱**]。
-4. 在 [**新增訂閱**] 頁面上，選取 [ **Small business** ]，然後從清單中選取 [ **Microsoft 365 business** ]。
+3. 在 [公司 **訂閱** ] 頁面上，選取 [ **新增訂閱**]。
+4. 在 [**新增訂閱**] 頁面上，選取 [ **Small business** ]，然後從清單中選取 [ **Microsoft 365 商務版**]。
 5. Add the number of licenses and then select **Next: Review** to review the subscription and then select **Submit**.
 
     ![檢視 Microsoft 365 商務版的新訂閱](../../media/pc_customer_reviewnewsubscription.png)
@@ -43,20 +43,20 @@ ms.locfileid: "44403423"
     The **License-based subscriptions** will show **Microsoft 365 Business Preview** and **Microsoft 365 Business**. 您會在下一步暫停預覽訂閱。
 
 6. Select **Microsoft 365 Business Preview**.
-7. 在 [ **Microsoft 365 商務版預覽**] 頁面上，選取 [已**擱置**] 以暫停預覽訂閱。
+7. 在 [ **Microsoft 365 商務版預覽**] 頁面上，選取 [已 **擱置**] 以暫停預覽訂閱。
 
     ![暫停 Microsoft 365 商務版預覽訂閱](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Select **Submit** to confirm.
 
-    在 [**訂閱**] 頁面上，確認**Microsoft 365 商務版預覽**狀態顯示為 [已**擱置**]。
+    在 [**訂閱**] 頁面上，確認 **Microsoft 365 商務版預覽** 狀態顯示為 [已 **擱置**]。
 
     ![確認預覽訂閱狀態為已暫停](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. 或者，您也可以驗證授權合約。 若要這樣做，請執行下列步驟：
     1. Select **Users and licenses** from the company's **Subscriptions** page.
-    2. 在 [**使用者和授權**] 頁面上，選取使用者。
-    3. 在使用者的頁面上，檢查 [**指派授權**] 區段，並確認它顯示**Microsoft 365 商務**。
+    2. 在 [ **使用者和授權** ] 頁面上，選取使用者。
+    3. 在使用者的頁面上，檢查 [**指派授權**] 區段，並確認它顯示 **Microsoft 365 商務版**。
 
         ![確認 Microsoft 365 商務版授權已指派給使用者](../../media/pc_customer_userslicenses_m365b_validate.png)
 
@@ -92,7 +92,7 @@ ms.locfileid: "44403423"
 | **登入失敗時重設 PIN 碼** | 對應用程式的存取受限制 | 無應用程式層級的存取限制 |
 | **Office 應用程式閒置後需要使用者重新登入** | 需要登入 | 不需要登入 |
 | **已進行 JB/Root 破解的的裝置上拒絕存取工作檔案** | 在已越獄/具有根功能的裝置上無法存取工作檔 | 可以存取已進行 JB/Root 破解的的裝置上的工作檔案 |
-| **允許使用者從 Office 應用程式複製內容到個人應用程式** | 複製/貼上限制為 Microsoft 365 訂閱中提供的應用程式 | 可對所有應用程式使用複製/貼上 |
+| **允許使用者從 Office 應用程式複製內容到個人應用程式** | 複製/貼上限制為 Microsoft 365 訂閱的一部分可供使用的應用程式 | 可對所有應用程式使用複製/貼上 |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>訂閱到期對 Windows 10 電腦的影響
 
@@ -100,10 +100,10 @@ ms.locfileid: "44403423"
 
 |                            | 完整授權體驗                      | 到期後 T+60 天          |
 |----------------------------|------------------------------------------------|------------------------------------|
-| **使用 Windows Defender 保護電腦預防威脅** | 使用者無法控制開啟/關閉 | 使用者可以在 Windows 10 電腦上開啟/關閉 Windows Defender |
-| **在 Microsoft Edge 中協助保護電腦預防網頁威脅** | Microsoft Edge 中的電腦保護 | 使用者可以開啟/關閉 Microsoft Edge 中的電腦保護 |
+| **使用 Windows Defender 保護電腦預防威脅** | 使用者無法控制開啟/關閉 | 使用者可以開啟/關閉 Windows 10 電腦上的 Windows Defender |
+| **在 Microsoft Edge 中協助保護電腦預防網頁威脅** | Microsoft Edge 中的電腦保護 | 使用者可以在 Microsoft Edge 中開啟/關閉電腦保護 |
 | **閒置時關閉裝置螢幕** | 系統管理員定義螢幕逾時間隔原則 | 使用者可以設定螢幕逾時 |
 | **允許使用者從 Microsoft Store 下載應用程式** | 由系統管理員定義使用者是否可從 Microsoft Store 下載應用程式 | 使用者可隨時從 Microsoft Store 下載應用程式 |
 | **允許使用者存取 Cortana** | 由系統管理員定義使用者對 Cortana 的存取原則 | 使用者裝置開啟/關閉 Cortana |
 | **允許使用者從 Microsoft 接收提示與廣告** | 系統管理員定義使用者從 Microsoft 接收提示與廣告的原則 | 使用者可以開啟/關閉 Microsoft 的秘訣和廣告 |
-| **允許使用者從 Office 應用程式複製內容到個人應用程式** | Admin 定義將 Windows 10 裝置保持在最新狀態的原則 | 使用者可以決定何時更新 Windows |
+| **允許使用者從 Office 應用程式複製內容到個人應用程式** | Admin 定義保護 Windows 10 裝置最新的原則 | 使用者可以決定何時更新 Windows |

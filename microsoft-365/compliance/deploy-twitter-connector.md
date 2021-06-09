@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: 管理員可以設定原生連接器，以匯入和封存 Twitter 資料至 Microsoft 365。 在將資料匯入 Microsoft 365 之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理組織的 Twitter 資料的控管。
+description: 管理員可以設定原生連接器，以匯入並封存 Twitter 資料至 Microsoft 365。 將資料匯入 Microsoft 365 後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理組織的 Twitter 資料的管理。
 ms.openlocfilehash: 0dd996802964b2a2fc58d26e23af57193c89ee8c
 ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49619909"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>部署連接器以封存 Twitter 資料
 
-本文包含的逐步程式可讓您部署使用 Office 365 Import 服務的連接器，將資料從組織的 Twitter 帳戶匯入至 Microsoft 365。 如需此程式的高層次概述，以及部署 Twitter 連接器所需的必要條件清單，請參閱 [Set up a connector to Archive Twitter data ](archive-twitter-data-with-sample-connector.md)。 
+本文包含逐步程式，用以部署使用 Office 365 匯入服務的連接器，將資料從組織的 Twitter 帳戶匯入 Microsoft 365。 如需此程式的高層次概述，以及部署 Twitter 連接器所需的必要條件清單，請參閱 [Set up a connector to Archive Twitter data ](archive-twitter-data-with-sample-connector.md)。 
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步驟1：在 Azure Active Directory 中建立應用程式
 
@@ -32,7 +32,7 @@ ms.locfileid: "49619909"
 
    ![登入 Azure](../media/TCimage01.png)
 
-2. 在左功能窗格中，按一下 [ **Azure Active Directory**]。
+2. 在左側瀏覽窗格中，按一下 **Azure Active Directory**。
 
    ![移至 Azure Active Directory](../media/TCimage02.png)
 
@@ -63,11 +63,11 @@ ms.locfileid: "49619909"
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>步驟2：將連接器 web 服務從 GitHub 部署至您的 Azure 帳戶
 
-1. 移 [至此 GitHub 網站](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) ，然後按一下 [ **部署至 Azure**]。
+1. 移 [至此 GitHub 網站](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)，然後按一下 [**部署至 Azure**]。
 
     ![前往 Azure 首頁](../media/FBCimage11.png)
 
-2. 按一下 [ **部署至 Azure**] 後，系統會以自訂範本頁面重新導向至 azure 入口網站。 填入 **基本概念** 和 **設定** 詳細資料，然後按一下 [ **購買**]。
+2. 按一下 [ **部署至 Azure**] 後，系統會以自訂範本頁面重新導向至 azure 入口網站。 填入 **基礎** 和 **設定** 詳細資料，然後按一下 [**購買**]。
 
    ![按一下 [建立資源並輸入儲存體帳戶]](../media/FBCimage12.png)
 
@@ -79,13 +79,13 @@ ms.locfileid: "49619909"
 
     - **Web 應用程式名稱：** 提供連接器 web 應用程式的唯一名稱。 Th 名稱的長度必須介於3到18個字元之間。 這個名稱是用來建立 Azure app service URL;例如，如果您提供 **twitterconnector** 的 Web 應用程式名稱，Azure 應用程式服務 URL 會是 **twitterconnector.azurewebsites.net**。
     
-    - **tenantId：** 您在步驟1中建立 Azure Active Directory 中的 Facebook 連接器應用程式之後所複製之 Microsoft 365 組織的租使用者識別碼。
+    - **tenantId：** 在步驟1中，您在 Azure Active Directory 中建立 Facebook 連接器應用程式之後所複製之 Microsoft 365 組織的租使用者識別碼。
     
    - **APISecretKey：** 您可以輸入任何值做為密碼。 這是用來存取步驟5中的連接器 web 應用程式。
 
 3. 部署成功之後，頁面看起來會類似下列螢幕擷取畫面：
 
-    ![按一下 [儲存]，然後按一下 [儲存帳戶]](../media/FBCimage13.png)
+    ![按一下 [儲存體然後按一下 [儲存體帳戶]](../media/FBCimage13.png)
 
 ## <a name="step-3-create-the-twitter-app"></a>步驟3：建立 Twitter 應用程式
 
@@ -138,7 +138,7 @@ Twitter 開發人員應用程式現在已可供使用。
 
    ![按一下 [設定] 以顯示登入頁面](../media/FBCimage42.png)
 
-3. 在 [租使用者識別碼] 方塊中，輸入或貼上您在步驟 2) 中取得的租使用者識別碼 (。 在 [密碼] 方塊中，輸入或貼上您在步驟 2) 中取得的 APISecretKey (，然後按一下 [ **設定配置設定** ] 以顯示 [設定詳細資料] 頁面。
+3. 在 [租使用者識別碼] 方塊中，輸入或貼上您在步驟 2) 中取得的租使用者識別碼 (。 在 [密碼] 方塊中，輸入或貼上您在步驟 2) 中取得的 APISecretKey (，然後按一下 [**設定設定] 設定** 以顯示 [設定詳細資料] 頁面。
 
    ![使用租使用者識別碼和 API 金鑰登入](../media/TCimage35.png)
 
@@ -152,13 +152,13 @@ Twitter 開發人員應用程式現在已可供使用。
    
    - **Twitter 存取權杖密碼：** 您在步驟3中建立的存取權杖機密。
    
-   - **AAD 應用程式 ID:** 您在步驟1中建立之 Azure Active Directory 應用程式的應用程式識別碼
+   - **AAD 應用程式 ID:** 您在步驟1中建立的 Azure Active Directory 應用程式的應用程式識別碼
    
    - **AAD 應用程式密碼：** 您在步驟1中建立的 APISecretKey 密碼值。
 
 5. 按一下 [ **儲存** ] 以儲存連接器設定。
 
-## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>步驟5：在 Microsoft 365 規範中心設定 Twitter 連接器
+## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>步驟5：在 Microsoft 365 規範中心內設定 Twitter 連接器
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下左側導覽中的 [ **資料連線器** ]。
 
@@ -182,7 +182,7 @@ Twitter 開發人員應用程式現在已可供使用。
 
 6. 成功驗證成功後，請按 **[下一步]**。
 
-7. 在 [ **授權 Microsoft 365 匯入資料** ] 頁面上，再次輸入或貼上 APISecretKey，然後按一下  **[登入 web app**]。
+7. 在 [**授權 Microsoft 365 以匯入資料**] 頁面上，再次輸入或貼上 APISecretKey，然後按一下 **[登入 web app**]。
 
 8. 按一下 **[以 Twitter 登** 入]。
 
@@ -196,7 +196,7 @@ Twitter 開發人員應用程式現在已可供使用。
 
 11. 在 [ **設定篩選** ] 頁面上，您可以將篩選器最初匯入特定時期的專案。 選取 [年齡]，然後按 **[下一步]**。
 
-12. 在 [ **選擇儲存位置** ] 頁面上，輸入要匯入 Twitter 專案的 Microsoft 365 信箱的電子郵件地址，然後按 **[下一步]**。
+12. 在 [**選擇儲存位置**] 頁面上，輸入要匯入 Twitter 專案的 Microsoft 365 信箱的電子郵件地址，然後按 **[下一步]**。
 
 13. 按 **[下一步]** 以查看連接器設定，然後按一下 **[完成]** 以完成連接器設定。
 

@@ -26,7 +26,7 @@ ms.locfileid: "50926029"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 測試環境中模擬的跨單位部署虛擬網路
 
-*此測試實驗室指南可用於 enterprise 和 Office 365 企業測試環境的 Microsoft 365。*
+*此測試實驗室指南可用於 enterprise 和 Office 365 企業版測試環境的 Microsoft 365。*
 
 本文逐步引導您建立模擬的混合式雲端環境，具有使用兩個 Azure 虛擬網路的 Microsoft Azure。以下是產生的組態配置。 
   
@@ -59,12 +59,12 @@ ms.locfileid: "50926029"
 > [!NOTE]
 > 此組態需要付費的 Azure 訂用帳戶。 
 
-您可以使用所產生的環境，利用其他[測試實驗室指南](m365-enterprise-test-lab-guides.md)或您自己的方式，測試[適用于 enterprise 的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的功能。
+您可以使用所產生的環境，利用其他[測試實驗室指南](m365-enterprise-test-lab-guides.md)或您自己的方式來測試[enterprise 的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)功能和功能。
 
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 移至 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../downloads/Microsoft365EnterpriseTLGStack.pdf) ，以顯示 microsoft 365 For Enterprise Test lab guide 堆疊中所有文章的視覺對應。
+> 移至[Microsoft 365 for enterprise test lab 指南堆疊](../downloads/Microsoft365EnterpriseTLGStack.pdf)，以查看企業測試實驗室指南堆疊 Microsoft 365 中所有文章的視覺對應。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>階段 1：設定 TestLab 虛擬網路
 
@@ -205,7 +205,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
   
 模擬的 Azure 混合式雲端環境已準備好進行測試。
   
-您現在已準備好嘗試使用 [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
+您現在已準備好嘗試使用[enterprise 的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
   
 ## <a name="next-steps"></a>後續步驟
 

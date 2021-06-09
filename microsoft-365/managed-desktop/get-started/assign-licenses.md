@@ -18,10 +18,10 @@ ms.locfileid: "50925786"
 ---
 # <a name="assign-licenses"></a>指派授權
 
-在準備登錄 Microsoft 受管理的電腦時，您必須確定您已取得必要的授權。 如果您還沒有取得授權，請參閱 [授權的詳細](../get-ready/prerequisites.md#more-about-licenses) 資訊，以取得您所需之授權的詳細資訊。
+準備在 Microsoft 受管理的電腦中進行註冊時，您必須確定已取得必要的授權。 如果您還沒有取得授權，請參閱 [授權的詳細](../get-ready/prerequisites.md#more-about-licenses) 資訊，以取得您所需之授權的詳細資訊。
 
 
-如果所有的授權都是上對齊的，現在可以將其指派給您的使用者。 若要指派授權，我們建議您利用 Azure Active Directory 的 [群組型授權功能](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) 。
+如果所有的授權都是上對齊的，現在可以將其指派給您的使用者。 若要指派授權，建議您利用 Azure Active Directory 的[群組型授權功能](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
 如果您有任何有關授權指派的困難，請與系統管理員 [支援](../working-with-managed-desktop/admin-support.md)人員聯繫。
 

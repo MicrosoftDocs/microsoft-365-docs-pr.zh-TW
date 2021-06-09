@@ -85,7 +85,7 @@ targetDevices | Long | 此修復適用的公開裝置數目
 類型 | 字串 | 修正類型
 vendorId | 字串 | 相關的供應商名稱
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [根據識別碼取得一個補救活動](get-remediation-one-activity.md)
 

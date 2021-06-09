@@ -135,7 +135,7 @@ Edge 區塊是設計為自動。 在誤報的情況下，寄件者會收到通�
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="MDO 中篩選的所有階段，順序為1到4。":::
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 您 **現在** 是否需要為 Office 365 * 設定 Microsoft Defender？ 使用此堆疊（_now * [）逐步開始](protect-against-threats.md) 保護您的組織。
 

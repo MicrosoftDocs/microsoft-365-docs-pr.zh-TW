@@ -116,7 +116,7 @@ ms.locfileid: "52623866"
 
 7. 在 **[執行下列** 動作] 中，選取 **[修改郵件安全性** \> **移除 Office 365 郵件加密和許可權保護**]。
 
-8. 選取 [儲存]。
+8. 選取 ****[儲存]。
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>為沒有新功能的 Office 365 郵件加密建立郵件流程規則
 

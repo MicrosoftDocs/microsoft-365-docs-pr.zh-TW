@@ -55,7 +55,7 @@ ms.locfileid: "52470493"
 
 | 資料行名稱 | 原始值名稱 | 新值名稱 | 變更的原因
 |--|--|--|--|
-| `DetectionSource` | MCAS |    Microsoft 雲端 App 安全性 | ..Org |
+| `DetectionSource` | MCAS |    Microsoft Cloud App Security | ..Org |
 | `DetectionSource` | WindowsDefenderAtp|   EDR| ..Org |
 | `DetectionSource` | WindowsDefenderAv | 防毒 | ..Org |
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | ..Org |

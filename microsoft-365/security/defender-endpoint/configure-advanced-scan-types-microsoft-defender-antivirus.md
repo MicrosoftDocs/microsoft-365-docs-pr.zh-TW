@@ -58,17 +58,17 @@ ms.locfileid: "52683808"
 
 | 原則專案和位置 | 預設設定 (（如果未設定）)  | `Set-MpPreference`Class 的 PowerShell 參數或 WMI 屬性 `MSFT_MpPreference` |
 |---|---|---|
-| 電子郵件掃描 <p> **掃描**  > **開啟電子郵件掃描**<p>請參閱本文 (的 [電子郵件掃描限制](#email-scanning-limitations))  | 已停用 | `-DisableEmailScanning` |
-|掃描重新 [分析點](/windows/win32/fileio/reparse-points) <p> **掃描**  > **開啟重新分析點掃描** | 已停用 | 無 <p>請參閱重新 [分析點](/windows/win32/fileio/reparse-points)  |
-| 掃描對應的網路磁碟機 <p> **掃描**  > **在對應的網路磁碟機上執行完整掃描** | 已停用 | `-DisableScanningMappedNetworkDrivesForFullScan`|
-| 掃描封存檔案 (例如 .zip 或 .rar 檔) 。  <p> **掃描**  > **掃描封存檔案** | 已啟用 | `-DisableArchiveScanning` <p>[副檔名排除清單](configure-extension-file-exclusions-microsoft-defender-antivirus.md)會優先于此設定。|
-| 掃描網路上的檔案 <p> **掃描**  > **掃描網路檔** | 已停用 | `-DisableScanningNetworkFiles` |
-| 掃描打包的可執行檔 <p> **掃描**  > **掃描打包的可執行檔** | 已啟用 | 無 |
-| 僅在完整掃描期間掃描抽取式磁碟磁碟機 <p> **掃描**  > **掃描可移除的磁片磁碟機** | 已停用 | `-DisableRemovableDriveScanning` |
+| 電子郵件掃描 <p> **掃描**  > **開啟電子郵件掃描**<p>請參閱本文 (的 [電子郵件掃描限制](#email-scanning-limitations))  | 停用 | `-DisableEmailScanning` |
+|掃描重新 [分析點](/windows/win32/fileio/reparse-points) <p> **掃描**  > **開啟重新分析點掃描** | 停用 | 無 <p>請參閱重新 [分析點](/windows/win32/fileio/reparse-points)  |
+| 掃描對應的網路磁碟機 <p> **掃描**  > **在對應的網路磁碟機上執行完整掃描** | 停用 | `-DisableScanningMappedNetworkDrivesForFullScan`|
+| 掃描封存檔案 (例如 .zip 或 .rar 檔) 。  <p> **掃描**  > **掃描封存檔案** | 啟用 | `-DisableArchiveScanning` <p>[副檔名排除清單](configure-extension-file-exclusions-microsoft-defender-antivirus.md)會優先于此設定。|
+| 掃描網路上的檔案 <p> **掃描**  > **掃描網路檔** | 停用 | `-DisableScanningNetworkFiles` |
+| 掃描打包的可執行檔 <p> **掃描**  > **掃描打包的可執行檔** | 啟用 | 無 |
+| 僅在完整掃描期間掃描抽取式磁碟磁碟機 <p> **掃描**  > **掃描可移除的磁片磁碟機** | 停用 | `-DisableRemovableDriveScanning` |
 | 指定要掃描之封存資料夾內的子資料夾層級 <p>**掃描**  > **指定掃描封存檔案的最大深度** | 0 | 無法使用 |
 | 在掃描期間，指定 CPU 負載 (為百分比) 。 <p> **掃描**  > **指定掃描期間 CPU 使用率的最大百分比** | 50 |  `-ScanAvgCPULoadFactor` <p>**附注**： CPU 負載上限不是硬性限制，但是掃描引擎不會超過平均平均上限的指導。 手動執行掃描將會略過此設定，而不需要任何 CPU 限制即可執行。 |
 | 指定應掃描之封存檔的大小上限 (以 kb 為單位）) 。 <p> **掃描**  > **指定要掃描的封存檔案大小上限** | 無限制 | 無 <p>預設值0不會套用任何限制 |
-| 設定排程掃描的低 CPU 優先順序 <p> **掃描**  > 設定 **排程掃描的低 CPU 優先順序** | 已停用 | 無 |
+| 設定排程掃描的低 CPU 優先順序 <p> **掃描**  > 設定 **排程掃描的低 CPU 優先順序** | 停用 | 無 |
  
 > [!NOTE]
 > 如果即時保護已開啟，則會先掃描檔案，再加以存取和執行。 掃描範圍包括所有檔案，包括裝入的卸除式媒體（例如 USB 磁片磁碟機）上的檔案。 如果執行掃描的裝置已開啟即時保護或開啟時保護，則掃描也會包含網路共用。

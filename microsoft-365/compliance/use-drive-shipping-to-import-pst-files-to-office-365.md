@@ -79,7 +79,7 @@ ms.locfileid: "52684081"
     
 - 您可以透過 Microsoft Enterprise 合約 (EA) 取得磁片磁碟機運送。 Microsoft Products and Services Agreement (MPSA) 則沒有提供磁碟機寄送。
     
-- 使用磁片磁碟機運送將 PST 檔案匯入至 Microsoft 365 信箱所需的成本為 $2 USD 每 GB 的資料。 例如，假設您寄送的硬碟含有 1,000 GB (即 1 TB) 的 PST 檔案，則費用為 $2,000 美元。 您可以與夥伴合作來支付匯入費用。 如需有關尋找合作夥伴的資訊，請參閱[尋找您的 Microsoft 365 合作夥伴或轉售商](../admin/manage/find-your-partner-or-reseller.md)。
+- 使用磁碟機寄送以將 PST 檔案匯入到 Microsoft 365 信箱的成本，是每 GB 的資料 $2 USD。 例如，假設您寄送的硬碟含有 1,000 GB (即 1 TB) 的 PST 檔案，則費用為 $2,000 美元。 您可以與夥伴合作來支付匯入費用。 如需有關尋找合作夥伴的資訊，請參閱[尋找您的 Microsoft 365 合作夥伴或轉售商](../admin/manage/find-your-partner-or-reseller.md)。
     
 - 您或貴組織必須擁有 FedEx 或 DHL 的帳戶。 
     
@@ -117,14 +117,14 @@ ms.locfileid: "52684081"
 > [!IMPORTANT]
 > 您必須使用 Azure 匯入/匯出工具版本 1 (WAimportExportV1) 使用磁片磁碟機貨運方法成功匯入 PST 檔案。 Azure 匯入/匯出工具的版本2不受支援，因此使用它將無法正確地為匯入工作準備硬碟磁碟機。 請遵循此步驟中的程式，以確定從 Microsoft 365 合規性中心下載 Azure 匯入/匯出工具。 
   
-1. 前往 <https://compliance.microsoft.com>，然後使用您組織中系統管理員帳戶的認證來登入。
+1. 移至 <https://compliance.microsoft.com>，然後使用您組織中的系統管理員帳戶認證來登入。
 
 2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**資訊管理** 匯 \> **入**]。
     
     > [!NOTE]
     > 如先前所述，您必須獲指派適當的許可權，才能存取「Microsoft 365 規範中心」中的 [匯 **入**] 頁面。 
   
-3. 在 [匯 **入** ] 索引標籤上，按一下 [ ![ 新增新的匯 ](../media/ITPro-EAC-AddIcon.gif) **入工作**]。
+3. 在 **[匯入]** 索引標籤上，按一下 ![[新增圖示]](../media/ITPro-EAC-AddIcon.gif) **[新增匯入工作]**。
     
 4. 在 [匯入工作] 嚮導中，輸入 PST 匯入工作的名稱，然後按 **[下一步]**。 請使用小寫字母、數字、連字號和底線。 無法使用大寫字母，且名稱中不得包含空格。
     
@@ -251,11 +251,11 @@ ms.locfileid: "52684081"
 
 下一個步驟是在 Office 365 的匯入服務中，建立 PST 匯入工作。 如先前所述，您提交您在步驟3中建立的 PST 匯入對應檔案。 在您建立工作之後，匯入服務會使用對應檔中的資訊，將 pst 檔案複製到指定 Azure 儲存體的使用者信箱後，將 pst 檔案匯入至指定的使用者信箱，並建立及啟動匯入工作。
   
-1. 前往 <https://compliance.microsoft.com>，然後使用您組織中系統管理員帳戶的認證來登入。
+1. 移至 <https://compliance.microsoft.com>，然後使用您組織中的系統管理員帳戶認證來登入。
 
 2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**資訊管理** 匯 \> **入**]。
 
-3. 在 [匯 **入** ] 索引標籤上，按一下 [ ![ 新增新的匯 ](../media/ITPro-EAC-AddIcon.gif) **入工作**]。
+3. 在 **[匯入]** 索引標籤上，按一下 ![[新增圖示]](../media/ITPro-EAC-AddIcon.gif) **[新增匯入工作]**。
 
     > [!NOTE]
     > 如先前所述，您必須獲指派適當的許可權，才能存取「Microsoft 365 規範中心」中的 [匯 **入**] 頁面。
@@ -335,7 +335,7 @@ ms.locfileid: "52684081"
 
 在您運送硬碟給 Microsoft 之後，請在 [匯入] 服務頁面完成下列程序。
   
-1. 前往 <https://compliance.microsoft.com>，然後使用您組織中系統管理員帳戶的認證來登入。
+1. 移至 <https://compliance.microsoft.com>，然後使用您組織中的系統管理員帳戶認證來登入。
 
 2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**資訊管理] > 匯入**。
 
@@ -361,7 +361,7 @@ ms.locfileid: "52684081"
   
 將 PST 檔案上傳至 Azure 後，狀態會變更為 [ **正在進行分析**]。 這表示 Microsoft 365 會以安全且安全的方式來分析 PST 檔案 (中的資料，) 以找出專案的年齡及 PST 檔案中包含的不同郵件類型。 分析完成且資料可供匯入時，會將匯入工作的狀態變更為 [ **分析完成**]。 此時，您可以選擇匯入 PST 檔案中所包含的所有資料，也可以透過設定篩選來控制要匯入哪些資料，以裁切匯入的資料。
   
-1. 前往 <https://compliance.microsoft.com>，然後使用您組織中系統管理員帳戶的認證來登入。
+1. 移至 <https://compliance.microsoft.com>，然後使用您組織中的系統管理員帳戶認證來登入。
 
 2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**資訊管理**] * * [匯入] * * * \> 。
 
@@ -400,11 +400,11 @@ ms.locfileid: "52684081"
 
 若要安裝 Azure 儲存體總管並連線到您 Azure 儲存體區域：
 
-1. 前往 <https://compliance.microsoft.com>，然後使用您組織中系統管理員帳戶的認證來登入。
+1. 移至 <https://compliance.microsoft.com>，然後使用您組織中的系統管理員帳戶認證來登入。
 
-2. 在 Microsoft 365 規範中心的左窗格中，按一下 [**資訊管理] > 匯入**。
+2. 在 [Microsoft 365 合規性中心] 的左窗格中，按一下 **[資訊控管] > [匯入]**。
 
-3. 在 [匯 **入** ] 索引標籤上，按一下 [ ![ 新增新的匯 ](../media/ITPro-EAC-AddIcon.gif) **入工作**]。
+3. 在 **[匯入]** 索引標籤上，按一下 ![[新增圖示]](../media/ITPro-EAC-AddIcon.gif) **[新增匯入工作]**。
 
 4. 在 [匯入工作] 嚮導中，輸入 PST 匯入工作的名稱，然後按 **[下一步]**。 請使用小寫字母、數字、連字號和底線。 無法使用大寫字母，且名稱中不得包含空格。
 
@@ -446,7 +446,7 @@ ms.locfileid: "52684081"
     > [!NOTE]
     > 若要協助您疑難排解 pst Import CSV 對應檔，請使用 [Azure 儲存體總管](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365)工具，在您的硬碟上，用來查看已上傳至 Azure 儲存體區域之 pst 檔案的 **ingestiondata** 容器中的資料夾結構。 對應檔案錯誤通常是因 FilePath 參數中不正確的值所造成。 此參數會指定 [Azure 存放區] 中 PST 檔案的位置。 請參閱在 [步驟 3](#step-3-create-the-pst-import-mapping-file)的 table 中 FilePath 參數的描述。 如先前所述，  `/dstdir:` 當您在 [步驟2中執行](#step-2-copy-the-pst-files-to-the-hard-drive)WAImportExport.exe 工具時，此參數會指定 Azure 儲存體區域中 PST 檔案的位置。 
   
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 - 磁片磁碟機運送是一種有效的方式，可將大量的封存郵件資料匯入 Microsoft 365，以利用組織所提供的相容性功能。 將封存資料匯入使用者信箱之後，您可以：
 

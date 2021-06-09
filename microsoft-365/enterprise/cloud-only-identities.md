@@ -1,5 +1,5 @@
 ---
-title: 僅限 Microsoft 365 雲端身分識別
+title: Microsoft 365 僅限雲端身分識別
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -33,11 +33,11 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 10/01/2020
 ms.locfileid: "48327924"
 ---
-# <a name="microsoft-365-cloud-only-identity"></a>僅限 Microsoft 365 雲端身分識別
+# <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 僅限雲端身分識別
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-使用僅限雲端身分識別，所有的使用者、群組和連絡人都儲存在 Microsoft 365 訂閱的 Azure Active Directory (Azure AD) 租使用者中。 以下是僅限雲端身分識別的基本元件。
+使用僅限雲端身分識別，所有的使用者、群組和連絡人都儲存在 Microsoft 365 訂閱的 Azure Active Directory (Azure AD) 承租人中。 以下是僅限雲端身分識別的基本元件。
  
 ![僅限雲端身分識別的基本元件](../media/about-microsoft-365-identity/cloud-only-identity.png)
 

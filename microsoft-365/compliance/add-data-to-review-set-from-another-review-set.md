@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 瞭解如何從一項審閱集選取檔，並在高級 eDiscovery 案例中個別使用另一組檔。
+description: 瞭解如何從一項審閱集選取檔，並在 Advanced eDiscovery 案例中個別使用另一組檔案。
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
@@ -26,9 +26,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285177"
 ---
-# <a name="add-data-to-a-review-set-from-another-review-set"></a>從另一個複查集將資料新增至審閱集
+# <a name="add-data-to-a-review-set-from-another-review-set"></a>從另一個檢閱集將資料新增至檢閱集
 
-在某些情況下，您可能需要從一部審閱集選取檔，並在另一個審校集內個別使用這些檔。 如果您已在評審集中 culled 內容，而且想要對資料子集執行分析，這一點特別有用。
+在某些情況下，您可能需要從一部審閱集選取檔，並在另一個審校集內個別使用這些檔。 當您已在檢閱集中剔除內容，並想要對資料的子集執行分析時，這特別有用。
 
 請遵循本文中的工作流程，將其中一個複查集的內容新增至另一個。
 
@@ -38,7 +38,7 @@ ms.locfileid: "48285177"
 
 ## <a name="step-1-identify-content-to-add-to-another-review-set"></a>步驟1：識別要新增至其他審閱集的內容
 
-您可以選取來源複查集內的特定檔，或選取 [複查] 集合查詢所傳回的所有專案，以將內容從一項審閱集新增至另一個。 若要新增選取的專案，請選取專案，然後選取 [ **動作**]，然後選取 [ **新增至其他審閱集**]。
+您可以選取來源檢閱集的特定文件，或選取由檢閱集查詢所傳回的所有項目，即可將內容從一個檢閱集新增到另一個檢閱集。 若要新增選取的專案，請選取專案，然後選取 [ **動作**]，然後選取 [ **新增至其他審閱集**]。
 
 ![在 [動作] 功能表中新增至其他審閱集](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
 

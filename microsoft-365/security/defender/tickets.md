@@ -1,7 +1,7 @@
 ---
-title: 將 ServiceNow 票證整合至 Microsoft 365 的安全性中心和合規性中心
+title: 將 ServiceNow 票證整合到 Microsoft 365 的安全性中心和合規性中心
 description: 瞭解如何從 Microsoft 365 的安全性中心和合規性中心開始，在 ServiceNow 中建立及追蹤入場券。
-keywords: 安全性，Microsoft 365，M365，合規性中心，安全性中心，ServiceNow，票證，任務，雪，connection
+keywords: security，Microsoft 365，M365，合規性，合規性中心，安全性中心，ServiceNow，票證，任務，雪，connection
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51569863"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>將 ServiceNow 票證整合至 Microsoft 365 的安全性中心和合規性中心
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>將 ServiceNow 票證整合到 Microsoft 365 的安全性中心和合規性中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
