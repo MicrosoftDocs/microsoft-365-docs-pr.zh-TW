@@ -21,4 +21,4 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46688344"
 ---
-# <a name="office-365-network-score-benchmarks-and-comparisons"></a><span data-ttu-id="7069d-103">Office 365 網路分數基準和比較</span><span class="sxs-lookup"><span data-stu-id="7069d-103">Office 365 network score benchmarks and comparisons</span></span>
+# <a name="office-365-network-score-benchmarks-and-comparisons"></a><span data-ttu-id="fb879-103">Office 365 網路分數基準和比較</span><span class="sxs-lookup"><span data-stu-id="fb879-103">Office 365 network score benchmarks and comparisons</span></span>

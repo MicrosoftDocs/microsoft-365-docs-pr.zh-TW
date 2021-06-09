@@ -20,6 +20,6 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46688510"
 ---
-# <a name="placeholder-article"></a><span data-ttu-id="9324b-103">預留位置文章</span><span class="sxs-lookup"><span data-stu-id="9324b-103">Placeholder article</span></span>
+# <a name="placeholder-article"></a><span data-ttu-id="99bd0-103">預留位置文章</span><span class="sxs-lookup"><span data-stu-id="99bd0-103">Placeholder article</span></span>
 
-<span data-ttu-id="9324b-104">本文是現在的預留位置。</span><span class="sxs-lookup"><span data-stu-id="9324b-104">This article is a placeholder for now.</span></span>
+<span data-ttu-id="99bd0-104">本文是現在的預留位置。</span><span class="sxs-lookup"><span data-stu-id="99bd0-104">This article is a placeholder for now.</span></span>

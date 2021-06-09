@@ -102,7 +102,7 @@ landingContent:
     links:
     - text: EOP 中的報告和郵件追蹤
       url: reporting-and-message-trace-in-exchange-online-protection.md
-    - text: 查看系統管理員審核記錄檔
+    - text: 檢視系統管理稽核記錄
       url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
 - title: 回覆
   linkLists:
