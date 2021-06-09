@@ -60,7 +60,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 - **垃圾郵件篩選 (內容篩選)**： EOP 使用垃圾郵件篩選 verdicts **垃圾** 郵件、 **高可信度垃圾郵件**、 **大量電子郵件**、 **網路釣魚電子** 郵件和 **高可信度網路釣魚電子** 郵件來分類郵件。 您可以根據這些 verdicts 設定要採取的動作，而且可以針對隔離而非傳遞的郵件，設定使用者通知選項。 如需詳細資訊，請參閱[設定 Microsoft 365 中的反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
   > [!NOTE]
-  > 根據預設，垃圾郵件篩選會設定為將標記為垃圾郵件的郵件傳送至收件者的 [垃圾郵件] 資料夾。 不過，在 EOP 保護內部部署 Exchange 信箱的混合式環境中，您必須設定兩個郵件流程規則 (也稱為「內部部署 Exchange 組織中的傳輸規則) ，以辨識新增至郵件的 EOP 垃圾郵件頭。 如需詳細資訊，請參閱 [CONFIGURE EOP To Email to The 垃圾郵件資料夾中的混合式環境](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
+  > 根據預設，垃圾郵件篩選會設定為將標記為垃圾郵件的郵件傳送至收件者的 [垃圾郵件] 資料夾。 不過，在 EOP 保護內部部署 Exchange 信箱的混合式環境中，您必須設定兩個郵件流程規則 (也稱為「內部部署 Exchange 組織中的傳輸規則) ，以辨識新增至郵件的 EOP 垃圾郵件頭。 如需詳細資訊，請參閱[設定 EOP 以將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 - **輸出垃圾郵件篩選**： EOP 也會檢查，確定您的使用者不會在輸出郵件內容中或超過輸出郵件限制傳送垃圾郵件。 如需詳細資訊，請參閱[設定 Microsoft 365 中的外寄垃圾郵件篩選](configure-the-outbound-spam-policy.md)。
 
@@ -100,7 +100,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 
 - **從大量電子郵件取消訂閱** 如果郵件是使用者為 (電子報、產品 ) 宣告等所註冊的專案，且包含知名來源的取消訂閱連結，請考慮要求他們只是取消訂閱。
 
-- **獨立 EOP：在內部部署 Exchange 中建立郵件流程規則，以進行 EOP 垃圾郵件篩選 verdicts**：在 EOP 保護內部部署 Exchange 信箱的 EOP 環境中，您必須設定郵件流程規則， (也稱為 Exchange 內部部署中) 的傳輸規則。若要轉譯 EOP 垃圾郵件篩選判定專案，垃圾郵件規則可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱 [CONFIGURE EOP To Email to The 垃圾郵件資料夾中的混合式環境](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
+- **獨立 EOP：在內部部署 Exchange 中建立郵件流程規則，以進行 EOP 垃圾郵件篩選 verdicts**：在 EOP 保護內部部署 Exchange 信箱的 EOP 環境中，您必須設定郵件流程規則， (也稱為 Exchange 內部部署中) 的傳輸規則。若要轉譯 EOP 垃圾郵件篩選判定專案，垃圾郵件規則可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定 EOP 以將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>防止令人滿意的電子郵件被識別為垃圾郵件
 

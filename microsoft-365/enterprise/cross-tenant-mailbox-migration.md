@@ -313,7 +313,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
  
      範例 **目標** MailUser 物件：
  
-     | 屬性             | 值                                                                                                                    |
+     | Attribute             | 值                                                                                                                    |
      |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
      | 別名                 | LaraN                                                                                                                    |
      | RecipientType         | MailUser                                                                                                                 |
@@ -332,7 +332,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
      **來源** 信箱物件範例：
 
-     | 屬性             | 值                                                                    |
+     | Attribute             | 值                                                                    |
      |-----------------------|--------------------------------------------------------------------------|
      | 別名                 | LaraN                                                                    |
      | RecipientType         | UserMailbox                                                              |

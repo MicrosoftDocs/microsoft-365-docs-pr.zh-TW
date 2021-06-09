@@ -1,5 +1,5 @@
 ---
-title: 網路設備探索和弱點管理
+title: 網路裝置探索和弱點管理
 description: 現在，安全性建議和弱點偵測可供交換器、路由器、WLAN 控制器及防火牆的作業系統使用。
 keywords: 網路裝置、網路裝置弱點偵測、交換器的作業系統、路由器、WLAN 控制器及防火牆
 search.product: eADQiWindows 10XVcnh
@@ -25,14 +25,14 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2021
 ms.locfileid: "51862064"
 ---
-# <a name="network-device-discovery-and-vulnerability-management"></a>網路設備探索和弱點管理
+# <a name="network-device-discovery-and-vulnerability-management"></a>網路裝置探索和弱點管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
@@ -45,9 +45,9 @@ ms.locfileid: "51862064"
 > [!NOTE]  
 > 「 [網路設備探索」和「安全性漏洞評估](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) 」博客 \( 發佈 \) 的04-13-2021 可深入瞭解如何在適用于 Endpoint 的 Defender 中進行新的 **網路設備探索** 功能。 本文提供 **網路裝置探索** 的設計目的問題，以及如何開始使用這些新功能的詳細資訊的概述。
 
-網路探索功能可在 Microsoft 365 安全性中心和 Microsoft Defender 安全性中心主控台的 [ **裝置庫存** ] 區段中取得。  
+網路探索功能可在「Microsoft 365 安全性中心」和「Microsoft Defender 資訊安全中心主控台」的 [**裝置庫存**] 區段中取得。  
 
-會在每個網段上使用指定的 Microsoft Defender for Endpoint 裝置，對預先設定的網路裝置執行定期驗證掃描。 一旦探索，Defender 的威脅和弱點管理功能會提供整合的工作流程，以保護探索到的交換器、路由器、WLAN 控制器、防火牆和 VPN 閘道。  
+會在每個網段上使用指定的 Microsoft Defender for Endpoint 裝置，對預先設定的網路裝置執行定期驗證掃描。 一旦探索，Defender 的威脅與弱點管理功能會提供整合式工作流程，以保護探索到的交換器、路由器、WLAN 控制器、防火牆和 VPN 閘道。  
 
 一旦發現網路裝置並分類，安全性系統管理員就能接收最新的安全性建議，並在其組織中的網路裝置上回顧最近發現的漏洞。
 
@@ -89,7 +89,7 @@ ms.locfileid: "51862064"
 
 5. 取得要掃描之網路裝置的 IP 位址 (或) 部署這些裝置的子網。
 
-6. 取得網路裝置的 SNMP 認證 (例如：社團字串、noAuthNoPriv、authNoPriv、authPriv) 。 設定新的評估工作時，您必須提供認證。  
+6. 取得網路裝置的 SNMP 認證 (例如： Community String、noAuthNoPriv、authNoPriv、authPriv) 。 設定新的評估工作時，您必須提供認證。  
 
 7. Proxy 用戶端設定：除了 Defender for Endpoint 裝置 proxy 需求以外，不需要額外的設定。
 
@@ -105,12 +105,12 @@ ms.locfileid: "51862064"
 
 ## <a name="permissions"></a>權限
 
-若要設定評估工作，需要下列使用者許可權選項： **管理安全性中心的安全性設定**。 您可以移至 [**設定**] 角色，找到該許可權  >  ****。 如需詳細資訊，請參閱 [建立及管理以角色為基礎的存取控制角色](user-roles.md)。
+若要設定評估工作，需要下列使用者許可權選項： **管理安全性中心的安全性設定**。 您可以移至 **設定** 角色，以尋找許可權  >  ****。 如需詳細資訊，請參閱 [建立及管理以角色為基礎的存取控制角色](user-roles.md)。
 
 ## <a name="install-the-network-scanner"></a>安裝網路掃描程式
 
-1. 移至 [網路評估) ] 底下 (的 [ **Microsoft 365 安全性**  >  **設定**]  >  **端點**  >  **評估工作**。 
-    1. 在 Microsoft Defender Security Center 中，移至 [設定] > 評估工作] 頁面。
+1. 移至 **Microsoft 365 security**  >  **設定**  >    >  (**網路評估**) 的端點 **評估工作**。
+    1. 在 Microsoft Defender 資訊安全中心中，移至設定 > 評估工作] 頁面。
 
 2. 下載網路掃描程式，並將其安裝在「指定的 Defender for Endpoint 評估」裝置上。
 
@@ -134,7 +134,7 @@ ms.locfileid: "51862064"
 
 ## <a name="configure-a-new-assessment-job"></a>設定新的評估工作  
 
-在 [ **設定**] 中的 [評估工作] 頁面上，選取 [ **新增網路評估工作**]。 依照設定程式選擇要定期掃描的網路裝置，並將其新增至設備清查。
+在 **設定** 的 [評估工作] 頁面中，選取 [**新增網路評估工作**]。 依照設定程式選擇要定期掃描的網路裝置，並將其新增至設備清查。
 
 若要防止網路設備清查中的裝置重複，請確定每個 IP 位址在多個評估裝置中只設定一次。
 
@@ -193,7 +193,7 @@ ms.locfileid: "51862064"
 
 驗證掃描器是否正常運作。 然後移至 [掃描定義]，然後選取 [執行測試]。 檢查相關 IP 位址傳回的錯誤訊息。
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>必要威脅和弱點管理使用者許可權
+### <a name="required-threat-and-vulnerability-management-user-permission"></a>必要威脅與弱點管理使用者許可權
 
 註冊完成時出現錯誤：「似乎您沒有足夠的許可權可以新增代理程式。 必要的許可權是「管理安全性中心的安全性設定」。
 

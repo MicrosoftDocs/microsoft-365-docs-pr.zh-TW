@@ -1,7 +1,7 @@
 ---
 title: 有問必答風險管理設定
 description: 深入瞭解 Microsoft 365 中的內幕人士風險管理設定
-keywords: Microsoft 365, 測試人員風險管理, 風險管理, 合規性
+keywords: Microsoft 365, 內部風險管理, 風險管理, 合規性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -71,7 +71,7 @@ ms.locfileid: "52624690"
 若要定義所有有問必答風險原則中已啟用的有問必答風險原則指示器，請流覽至 [**內幕人員風險設定**  >  **指示器**]，然後選取一或多個原則指標。 在 [原則嚮導] 中建立或編輯「內幕人員風險原則」時，無法個別設定 [標記設定] 頁面上選取的標記。
 
 >[!NOTE]
->新增手動新增的使用者可能需要數小時的時間，才能出現在 [ **使用者] 儀表板** 中。 這些使用者過去90天的活動可能需要長達24小時才會顯示。 若要查看手動新增使用者的活動，請在 [ **使用者] 儀表板** 上選取使用者，然後在詳細資料窗格中開啟 [ **使用者活動** ] 索引標籤。
+>新增手動新增的使用者可能需要數小時的時間，才能出現在 [ **使用者] 儀表板** 中。 這些使用者過去 90 天的活動最多可能需要 24 小時的時間才能顯示。 若要查看手動新增使用者的活動，請在 [ **使用者] 儀表板** 上選取使用者，然後在詳細資料窗格中開啟 [ **使用者活動** ] 索引標籤。
 
 ### <a name="enable-device-indicators-and-onboard-devices"></a>啟用裝置指示器和板載裝置
 <a name="OnboardDevices"> </a>
@@ -108,7 +108,7 @@ ms.locfileid: "52624690"
 5. 從 [ **部署方法** ] 清單中選擇您想要部署到這些裝置的方式，然後再 **下載套件**。
 6. 按照 [Windows 10 電腦的上線工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會帶您前往一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
     - 使用群組原則上線 Windows 10 電腦
-    - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
+    - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
     - 使用行動裝置管理工具上線 Windows 10 電腦
     - 使用本機指令碼上線 Windows 10 電腦
     - 上線非永續性 Virtual Desktop Infrastructure (VDI) 電腦。
@@ -130,7 +130,7 @@ ms.locfileid: "52624690"
 5. 從 [ **部署方法** ] 清單中選擇您想要部署到這些裝置的方式，然後再 **下載套件**。
 6. 按照 [Windows 10 電腦的上線工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會帶您前往一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
     - 使用群組原則上線 Windows 10 電腦
-    - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
+    - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
     - 使用行動裝置管理工具上線 Windows 10 電腦
     - 使用本機指令碼上線 Windows 10 電腦
     - 上線非永續性 Virtual Desktop Infrastructure (VDI) 電腦。
@@ -200,7 +200,7 @@ ms.locfileid: "52624690"
 例如，如果您為此設定選取 [ *新增*]、[ *正在進行*] 及 [ *已解決* ]，則在產生 Microsoft Defender for Endpoint 警示時，當狀態為「 *新*」時，會為使用者匯入「內幕風險」的初始警示活動。 當 Defender for Endpoint 會審狀態變更為 [ *正在進行中*] 時，會為使用者匯入此警示的第二個活動。 設定 *解決* 的最終「端點會審」狀態時，會為使用者匯入此警示的第三個活動。 這項功能可讓調查人員追蹤 Defender for Endpoint 警示的進度，並選擇其調查所需的可見度層級。
 
 >[!IMPORTANT]
->您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
+>您必須在組織中已設定有 Microsoft Defender 進階威脅防護，並在 Defender 安全性中心內針對內部管理風險整合啟用 Defender for Endpoint，以匯出安全性違規警示。 如需關於設定內部風險管理整合的 Defender for Endpoint 的詳細資訊，請參閱[在 Defender for Endpoint 中設定進階功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="domains-preview"></a>網域 (預覽) 
 
@@ -241,10 +241,10 @@ ms.locfileid: "52624690"
 |:------------------|:----------------|
 | AlertType | 警示的類型為 [ *自訂*]。  |
 | 為 alertid | 警示的 GUID。 有問必答風險管理提醒是可變的。 當警示狀態變更時，會產生具有相同 AlertID 的新記錄。 此 AlertID 可用於關聯警示的更新。 |
-| 類別 | 警示的類別是 *InsiderRiskManagement*。 此類別可用於辨別來自其他安全性 & 合規性警示的警示。 |
+| Category | 警示的類別是 *InsiderRiskManagement*。 此類別可用於辨別來自其他安全性 & 合規性警示的警示。 |
 | 註解 | 警示的預設批註。 值是在建立警示時所記錄的 *新警示* () 並在更新警示) 時， (記錄 *警示更新* 。 使用 AlertID 來關聯警示的更新。 |
 | 資料 | 警示的資料，包含使用者的唯一識別碼、使用者主體名稱，以及在使用者被觸發到原則時 (UTC) 的日期和時間。 |
-| 姓名 | 產生警示之有問必答風險管理原則的原則名稱。 |
+| 名稱 | 產生警示之有問必答風險管理原則的原則名稱。 |
 | PolicyId | 觸發警示的「有問必答風險管理」原則的 GUID。 |
 | 嚴重性 | 警示的嚴重性。 值為 *高*、 *中* 或 *低*。 |
 | 來源 | 警示的來源。 其值為 *Office 365 安全性 & 相容性*。 |
@@ -494,7 +494,7 @@ ms.locfileid: "52624690"
 
 ## <a name="analytics-preview"></a>分析 (預覽) 
 
-「內部使用者風險分析」可讓您在組織中評估潛在的內幕風險，而不需設定任何內部擁有者風險原則。 這項評估可協助您的組織識別潛在的使用者風險的潛在方面，並協助決定您可以考慮設定的有問必答風險管理原則類型和範圍。 分析掃描可為您的組織提供下列優點：
+內部風險分析可讓您對組織中潛在的內部風險進行評估，而不需要設定任何內部風險原則。 此評估可協助貴組織識別使用者風險較高的潛在區域，並有助於判斷您可能要考慮的內部風險管理原則類型和範圍。 分析掃描可為您的組織提供下列優點：
 
 - 易於設定：若要開始流量分析掃描，您可以選取 [分析建議時執行掃描] 或 [移至內部使用者風險設定 > 分析] 索引標籤，並啟用分析。
 - 隱私權最低的隱私權：掃描結果和洞察力會以匿名使用者活動的形式傳回，個別使用者名稱無法由檢閱者識別。

@@ -24,7 +24,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 06/03/2021
 ms.locfileid: "52736389"
 ---
-# <a name="query-and-filter-content-in-a-review-set"></a>查詢及篩選審閱集中的內容
+# <a name="query-and-filter-content-in-a-review-set"></a>查詢和篩選檢閱集中的內容
 
 在大多數情況下，深入查看審閱集合中的內容，並加以組織，以促進更有效率的審閱。 在審閱集中使用篩選和查詢可協助您將重點放在符合您的審閱準則的檔子集。
 

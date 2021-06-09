@@ -1,7 +1,7 @@
 ---
 title: 有問必答風險解決方案
-description: 瞭解如何使用 Microsoft 365 中的「內部人員風險解決方案」，協助將組織中的風險降至最低。
-keywords: Microsoft 365，內幕人士風險，合規性
+description: 瞭解如何使用 Microsoft 365 中的「內部使用者風險」解決方案，協助將組織中的風險降至最低。
+keywords: Microsoft 365，有問必答風險，合規性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -29,7 +29,7 @@ ms.locfileid: "50838268"
 
 ![有問必答風險威脅](../media/ir-solution-threats.png)
 
-Microsoft 365 風險防護功能是設計和內建給我們的有問必答風險產品和解決方案。 這些解決方案共同運作，並使用高級服務和協力廠商指示，協助您快速識別、會審及行動風險活動。 大部分的解決方案為您的資料分析員和調查人員提供完整的偵測、警示和修正工作流程，以用於快速地處理及最小化這些風險。
+Microsoft 365 的風險防護功能是設計和內建給我們的有問必答風險產品和解決方案。 這些解決方案共同運作，並使用高級服務和協力廠商指示，協助您快速識別、會審及行動風險活動。 大部分的解決方案為您的資料分析員和調查人員提供完整的偵測、警示和修正工作流程，以用於快速地處理及最小化這些風險。
 
 | 風險圖示 | 風險 | 通訊合規性 | 內部風險管理 | 資訊屏障 | 特殊權限存取管理 |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
@@ -44,28 +44,28 @@ Microsoft 365 風險防護功能是設計和內建給我們的有問必答風險
 | ![敏感性資料洩漏/裝置圖示](../media/ir-risk-sensitive-data-leaks.png)| 敏感性資料洩漏 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |  |  |
 | ![工作地點騷擾/人員圖示](../media/ir-risk-workplace-harassment.png)| Workplace 騷擾 | ![支援](../media/check-mark.png) |  |  |  |
 | ![安全性違規圖示](../media/ir-risk-security-violations.png)| 違反安全性 |  | ![支援](../media/check-mark.png) |  | ![支援](../media/check-mark.png) |
-| ![法規遵從性違規圖示](../media/ir-risk-regulatory-compliance-violations.png)| 法規合規性違規 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |  |
+| ![法規遵從性違規圖示](../media/ir-risk-regulatory-compliance-violations.png)| 違反法規合規性 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |  |
 
 ## <a name="microsoft-365-insider-risk-solutions"></a>Microsoft 365 內部風險解決方案
 
-若要協助保護您的組織不受內幕人士的風險，請使用下列 Microsoft 365 功能。
+若要協助保護您的組織不受內幕人士的風險，請使用下列 Microsoft 365 能力和功能。
 
 ### <a name="communication-compliance"></a>通訊合規性
 
 通訊相容性協助您在組織中偵測、捕獲和處理不適當的郵件，以協助將通訊風險降至最低。 您可以在下列訂閱中取得通訊法規遵從性：
 
-- Microsoft 365 E5 訂閱 (付費或試用版本) 
+- Microsoft 365 E5 訂閱 (付費或試用版) 
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
-- Microsoft 365 A5 訂閱 (付費或試用版本) 
-- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
-- Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
-- Microsoft 365 G5 訂閱 (付費或試用版本) 
-- Microsoft 365 G5 訂閱 + Microsoft 365 G5 合規性附加元件
-- Microsoft 365 G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
-- Office 365 企業版 E5 訂閱 (付費或試用版本) 
-- Office 365 A5 訂閱 (付費或試用版本) 
-- Office 365 Enterprise E3 訂閱 + Office 365 Advanced 合規性附加元件 (已無法再供新訂閱使用) 
+- Microsoft 365A5 訂閱 (付費或試用版本) 
+- Microsoft 365A3 訂閱 + Microsoft 365 A5 符合性附加元件
+- Microsoft 365A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Microsoft 365G5 訂閱 (付費或試用版) 
+- Microsoft 365G5 訂閱 + Microsoft 365 G5 合規性附加元件
+- Microsoft 365G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
+- Office 365 企業版E5 訂閱 (付費或試用版本) 
+- Office 365 A5 訂閱 (付費或試用版) 
+- Office 365 企業版 E3 訂閱 + Office 365 進階合規性附加元件 (不再適用於新訂閱)
 
 ### <a name="insider-risk-management"></a>內部風險管理
 
@@ -73,16 +73,16 @@ Microsoft 365 風險防護功能是設計和內建給我們的有問必答風險
 
 內幕風險管理可在下列訂閱中取得：
 
-- Microsoft 365 E5 訂閱 (付費或試用版本) 
+- Microsoft 365 E5 訂閱 (付費或試用版) 
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
-- Microsoft 365 A5 訂閱 (付費或試用版本) 
-- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
-- Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
-- Microsoft 365 G5 訂閱 (付費或試用版本) 
-- Microsoft 365 G3 訂閱 + Microsoft 365 G5 合規性附加元件
-- Microsoft 365 G3 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
-- Office 365 E3 訂閱 + Enterprise 可移動性和 Security E3 + Microsoft 365 E5 合規性附加元件
+- Microsoft 365A5 訂閱 (付費或試用版本) 
+- Microsoft 365A3 訂閱 + Microsoft 365 A5 符合性附加元件
+- Microsoft 365A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Microsoft 365G5 訂閱 (付費或試用版) 
+- Microsoft 365 G3 訂閱 + Microsoft 365 G5 相容性附加元件
+- Microsoft 365 G3 訂閱 + Microsoft 365 G5 內部風險管理附加元件
+- Office 365E3 訂閱 + Enterprise 行動性和安全性 E3 + Microsoft 365 E5 合規性附加元件
 
 ### <a name="information-barriers"></a>資訊屏障
 
@@ -90,34 +90,34 @@ Microsoft 365 風險防護功能是設計和內建給我們的有問必答風險
 
 資訊屏障可用於下列訂閱：
 
-- Microsoft 365 E5 訂閱 (付費或試用版本) 
-- Microsoft 365 A5 訂閱 (付費或試用版本) 
-- Office 365 企業版 E5 訂閱 (付費或試用版本) 
-- Office 365 A5 訂閱 (付費或試用版本) 
-- Office 365 Advanced 合規性附加元件 (無法再供新訂閱使用) 
+- Microsoft 365 E5 訂閱 (付費或試用版) 
+- Microsoft 365A5 訂閱 (付費或試用版本) 
+- Office 365 企業版E5 訂閱 (付費或試用版本) 
+- Office 365 A5 訂閱 (付費或試用版) 
+- 新訂閱無法再使用 Office 365 進階合規性附加 () 
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
-- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
-- Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Microsoft 365A3 訂閱 + Microsoft 365 A5 符合性附加元件
+- Microsoft 365A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
 
 ### <a name="privileged-access-management"></a>特殊權限存取管理
 
-「特權存取管理」允許對 Office 365 中的特殊 Exchange Online 系統管理員工作進行精細存取控制。 它可協助保護您的組織，避免因使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。
+「特權存取管理」允許 Office 365 中的特殊 Exchange Online 系統管理員工作進行精細存取控制。 可以協助防止他人使用對敏感性資料或關鍵組態設定具有常設存取權的現有特殊權限管理帳戶入侵您的組織。
 
 下列訂閱提供了特殊許可權存取管理：
 
-- Microsoft 365 E5 訂閱 (付費或試用版本) 
-- Microsoft 365 A5 訂閱 (付費或試用版本) 
-- Office 365 企業版 E5 訂閱 (付費或試用版本) 
-- Office 365 A5 訂閱 (付費或試用版本) 
+- Microsoft 365 E5 訂閱 (付費或試用版) 
+- Microsoft 365A5 訂閱 (付費或試用版本) 
+- Office 365 企業版E5 訂閱 (付費或試用版本) 
+- Office 365 A5 訂閱 (付費或試用版) 
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
-- Microsoft 365 E3 訂閱 + Microsoft 365 E5 資訊保護和管理法規附加元件
-- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
-- Microsoft 365 A3 訂閱 + Microsoft 365 A5 Information Protection and 調控附加元件
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 資訊保護與管理附加元件
+- Microsoft 365A3 訂閱 + Microsoft 365 A5 符合性附加元件
+- Microsoft 365A3 訂閱 + Microsoft 365 A5 資訊保護與管理附加元件
 
-## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署 Microsoft 365 有問必答風險解決方案
+## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署 Microsoft 365 的有問必答風險解決方案
 
-若要協助保護您的組織免受內部使用者風險，請安裝並部署下列 Microsoft 365 解決方案：
+為了協助保護您的組織不受內幕人士的風險，請設定及部署下列 Microsoft 365 解決方案：
 
 ![內部擁有風險解決方案深入防護](../media/ir-solution-defense-in-depth.png)
 
@@ -128,11 +128,11 @@ Microsoft 365 風險防護功能是設計和內建給我們的有問必答風險
 
 ## <a name="illustrations-with-examples"></a>範例圖例
 
-若要協助您規劃整合策略以執行 Microsoft 365 內幕人士的風險功能，請下載 *microsoft 365 資訊保護和合規性功能* 組圖例。 如需內幕風險功能，請參閱架構圖解 pages 5-7。 您可以隨意使用這些圖。
+為了協助您規劃實施 Microsoft 365 有問必答風險功能的整合策略，請下載 *Microsoft 365 資訊保護和符合性功能* 的圖例集合。 如需內幕風險功能，請參閱架構圖解 pages 5-7。 您可以隨意使用這些圖例。
 
 | 項目 | 描述 |
 |:-----|:------------|
-|[![模型海報：Microsoft 365 資訊保護和合規性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [以 PDF 格式下載](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \|[下載為 Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 2020年10月更新|包含： <ul><li>  Microsoft 資訊保護和資料外洩防護</li><li>保留原則和保留標籤 </li><li>資訊屏障</li><li>通訊合規性</li><li>內部風險管理</li><li>協力廠商資料攝取</li>|
+|[![模型海報：Microsoft 365 資訊保護和合規性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [下載為 PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [下載為 Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 2020 年 10 月更新|包含： <ul><li>  Microsoft 資訊保護和資料外洩防護</li><li>保留原則和保留標籤 </li><li>資訊屏障</li><li>通訊合規性</li><li>內部風險管理</li><li>協力廠商資料擷取</li>|
 
 ## <a name="training"></a>訓練
 
@@ -142,8 +142,8 @@ Microsoft 365 提供下列資源，協助您在組織中告知及訓練這些使
 
 | 方案/區域 | 資源 |
 |:------------------|:--------------|
-| 在 Microsoft 365 中管理有問必答風險 |[完成學習路徑](/learn/paths/m365-compliance-insider) <br> 這種教學途徑包括所有個別的解決方案模組，以進行通訊相容性、內幕風險管理、資訊障礙及特殊的訪問管理。 選取這個學習路徑，以完成所有模組。 |
-| 通訊合規性 | [學習模組：在 Microsoft 365 中準備通訊法規遵從性](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> 此模組可協助您瞭解如何使用通訊相容性識別和修正行為原則違規的基礎知識，涵蓋建立通訊規範原則之前所需的必要條件，以及深入瞭解通訊規範中內建的內建、預先定義的原則範本類型。 |
-| 內部風險管理 | [學習模組： Microsoft 365 中的有問必答風險管理](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> 此模組可協助您瞭解 Microsoft 365 中的「內幕人員風險管理」如何協助您避免、偵測及包含組織內的內部風險、瞭解內建、預先定義的原則範本類型、深入瞭解建立內部的風險原則之前所需的基本必要條件，以及說明您可對內幕人士的風險管理案例採取的動作類型。 |
+| 管理 Microsoft 365 中的內部風險 |[完成學習路徑](/learn/paths/m365-compliance-insider) <br> 這種教學途徑包括所有個別的解決方案模組，以進行通訊相容性、內幕風險管理、資訊障礙及特殊的訪問管理。 選取這個學習路徑，以完成所有模組。 |
+| 通訊合規性 | [學習模組：在 Microsoft 365 中準備通訊符合性](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> 此模組可協助您瞭解如何使用通訊相容性識別和修正行為原則違規的基礎知識，涵蓋建立通訊規範原則之前所需的必要條件，以及深入瞭解通訊規範中內建的內建、預先定義的原則範本類型。 |
+| 內部風險管理 | [學習模組： Microsoft 365 中的內幕人士風險管理](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> 此模組可協助您瞭解 Microsoft 365 中的內幕程式風險管理如何協助避免、偵測及包含組織內的內部風險、瞭解內建、預先定義的原則範本類型、瞭解在建立內部的風險原則之前所需的基本必要條件，以及說明您可以對內部使用者風險管理案例採取的動作類型。 |
 | 資訊屏障 | [學習模組：規劃資訊障礙](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> 此模組可協助您瞭解資訊障礙原則如何協助您的組織維持相關的行業標準與法規的遵從性，列出可適用資訊障礙的情形類型、協助說明建立資訊屏障原則的程式，以及協助說明如何在資訊壁壘已到位後疑難排解未預期的問題。 |
 | 特殊權限存取管理 | [學習模組：實施特殊許可權存取管理](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> 此模組可協助您瞭解特殊許可權存取管理與特權身分識別管理之間的差異、瞭解許可權存取管理程式流程，以及瞭解如何設定及啟用特殊許可權存取管理的基本概念。 |

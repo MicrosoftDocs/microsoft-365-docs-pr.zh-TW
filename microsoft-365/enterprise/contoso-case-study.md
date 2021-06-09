@@ -1,5 +1,5 @@
 ---
-title: 適用于 Contoso Corporation 的 Microsoft 365 for enterprise
+title: 適用于 Contoso Corporation 的 enterprise Microsoft 365
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -13,7 +13,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: 虛構但具有代表性的全球組織如何採用 Microsoft 365 for enterprise。
+description: 虛構但具有代表性的全球組織如何針對企業 Microsoft 365 採用。
 ms.openlocfilehash: e14c2747837ed91a63e7609ce46307b0f38aa758
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,13 +21,13 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927577"
 ---
-# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>適用于 Contoso Corporation 的 Microsoft 365 for enterprise
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>適用于 Contoso Corporation 的 enterprise Microsoft 365
 
-適用于企業的 microsoft 365 是 Microsoft premier 雲端服務，可結合使用 Windows 10 企業版和高級安全性功能的本機和雲端式生產力應用程式和服務。 這是一個完整的智慧解決方案，可讓所有人以創造性且安全的方式共同運作。
+Microsoft 365 for enterprise 是 Microsoft premier 雲端服務，其結合了本機和雲端架構的生產力應用程式，以及服務與 Windows 10 企業版和高級安全性功能。 這是一個完整的智慧解決方案，可讓所有人以創造性且安全的方式共同運作。
 
-Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部為巴黎。 公司部署 Microsoft 365 for enterprise 並解決主要設計決策，以及網路、身分識別、Windows 10 企業版、Microsoft 365 應用程式的企業版、行動裝置管理、資訊保護及安全性等方面的執行細節。
+Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部為巴黎。 公司已部署 Microsoft 365 用於企業，並解決網路、身分識別、Windows 10 企業版、Microsoft 365 Apps 企業版、行動裝置管理、資訊保護和安全性等方面的主要設計決策和執行細節。
 
-公司對於企業的 Microsoft 365 的整體目標是使用雲端服務，將其員工、合作夥伴、資料和程式結合在一起，以建立客戶價值，並在數位優先世界中維持其競爭優勢，以加速其數位轉換。
+公司為 Microsoft 365 企業的整體目標是使用雲端服務，將其員工、合作夥伴、資料和程式結合在一起，以取得客戶的價值，並以數位優先的世界保持競爭優勢。
 
 如需詳細資訊，請參閱下列文章：
 
@@ -43,17 +43,17 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
   Contoso 網路工程師將其內部部署使用者的流量優化至其內部網路 edge 和網際網路上最接近的 Microsoft 網路位置。
 
-- [身分識別](contoso-identity.md)
+- [Identity](contoso-identity.md)
 
   Contoso 身分識別的雲端解決方案利用公司內部部署的 Active Directory 網域服務 (AD DS) 樹系。 包括與其現有信任的協力廠商身分識別提供者的同盟驗證。
 
 - [Windows 10 企業版](contoso-win10.md)
 
-  Contoso 基礎結構 for Windows 10 Enterprise 部署並自動安裝執行公司主要電腦和裝置作業系統之裝置的更新。
+  Contoso 基礎結構的 Windows 10 企業版會為執行公司主要電腦和裝置作業系統的裝置進行部署，並自動安裝更新。
 
 - [Microsoft 365 Apps 企業版](contoso-o365pp.md)
 
-  Contoso 基礎結構，適用于企業的 Microsoft 365 應用程式進行部署，並自動安裝 Microsoft Office 套件之生產力軟體的更新。
+  Contoso 基礎結構用於 Microsoft 365 Apps 企業版部署，並自動安裝 Microsoft Office 生產力軟體套件的更新。
 
 - [行動裝置管理](contoso-mdm.md)
 
@@ -61,11 +61,11 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
 - [資訊保護](contoso-info-protect.md)
 
-  為了確保一般和高價值的資料都已識別、標示並受到安全性層級的制約，Contoso 會以 Microsoft 365 為公司資訊保護，強制執行其資料安全性原則。
+  為了確保一般和高價值的資料都已識別、標示並受限於安全性層級，Contoso 會以 Microsoft 365 來強制執行公司資訊保護的資料安全性原則。
 
-- [Microsoft 365 enterprise security 的摘要](contoso-security-summary.md)
+- [企業安全性的 Microsoft 365 摘要](contoso-security-summary.md)
 
-  Contoso 針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用 Microsoft 365 的全套企業安全性功能。
+  Contoso 針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用各種 Microsoft 365 的企業安全性功能。
 
 請參閱這些其他的 IT 案例及設定：
 
@@ -79,15 +79,15 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
 - [Teams 語音移轉](/MicrosoftTeams/voice-case-study-overview)
 
-  瞭解 Contoso 如何將其內部部署使用者遷移至 Microsoft 小組，以進行統一通訊、共同作業和語音。
+  瞭解 Contoso 如何遷移其內部部署使用者，以 Microsoft Teams 整合通訊、共同作業及語音。
 
 - [通訊相容性冒犯性語言原則](../compliance/communication-compliance-case-study.md)
 
-  瞭解 Contoso 如何快速設定適用于 Microsoft 小組、Exchange 及 Yammer 通訊的冒犯性語言原則。
+  瞭解 Contoso 如何快速設定冒犯性語言原則，以進行 Microsoft Teams、Exchange 和 Yammer 通訊。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
-深入瞭解 [Contoso 公司](contoso-overview.md) ，以及在部署 Microsoft 365 for enterprise 時所解決的設計考慮。
+深入瞭解[Contoso 公司](contoso-overview.md)，以及在部署 Microsoft 365 for enterprise 時所解決的設計考慮。
 
 
 ## <a name="see-also"></a>另請參閱

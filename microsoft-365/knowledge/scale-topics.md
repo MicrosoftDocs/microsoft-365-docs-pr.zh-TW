@@ -170,7 +170,7 @@ ms.locfileid: "52624834"
 
 如果您的組織已投資掌握知識文庫或 wiki 網站，這些可提供您初始 curation 工作所使用的主題清單。 如果是特別大的，請選取最有查看或已編輯的主題做為起始點。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [在主題中心中管理主題](manage-topics.md)
 

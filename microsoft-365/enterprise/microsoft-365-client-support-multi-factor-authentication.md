@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 用戶端應用程式支援：多重要素驗證
+title: Microsoft 365用戶端應用程式支援：多重要素驗證
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927555"
 ---
-# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 用戶端應用程式支援：多重要素驗證
+# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365用戶端應用程式支援：多重要素驗證
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
@@ -36,7 +36,7 @@ ms.locfileid: "50927555"
 
 ## <a name="supported-clients--platforms"></a>支援的用戶端 & 平臺
 
-下列用戶端和平臺的最新版本支援多重要素驗證。 如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](/microsoft-365/microsoft-365-and-office-resources)。
+下列用戶端和平臺的最新版本支援多重要素驗證。 如需 Microsoft 365 中平臺支援的詳細資訊，請參閱[Microsoft 365 的系統需求](/microsoft-365/microsoft-365-and-office-resources)。
 <br>
 <br>
 
@@ -44,6 +44,6 @@ ms.locfileid: "50927555"
 
 ## <a name="supported-powershell-modules"></a>支援的 PowerShell 模組
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active DirectoryPowerShell:](/powershell/azure/active-directory/overview?view=azureadps-2.0)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

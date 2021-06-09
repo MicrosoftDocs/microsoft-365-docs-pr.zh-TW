@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 用戶端及服務應用程式支援
+title: Microsoft 365 用戶端和服務應用程式支援
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: 在本文中，尋找 Microsoft 365 用戶端和服務應用程式支援的詳細資料。
+description: 在本文中，會尋找 Microsoft 365 用戶端和服務應用程式支援的詳細資料。
 ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,15 +22,15 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905005"
 ---
-# <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365 用戶端及服務應用程式支援
+# <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365 用戶端和服務應用程式支援
 
-Microsoft 支援廣泛的安全性、驗證和合規性功能，以確保客戶資料安全，並可讓 IT 系統管理員在 Microsoft 365 系統管理中心中為其使用者自訂原則。 下列功能只是您可以設定的眾多企業功能的子集，具體取決於您的 Microsoft 365 訂閱。
+Microsoft 支援廣泛的安全性、驗證和合規性功能，以確保客戶資料安全，並可讓 IT 系統管理員在 Microsoft 365 系統管理中心內為使用者自訂原則。 下列功能只是許多企業功能的子集，您可以根據您的 Microsoft 365 訂閱加以設定。
 
 ## <a name="client-and-service-support"></a>用戶端和服務支援
 
 ### <a name="continuous-access-evaluation-preview"></a>連續存取評估 (預覽) 
 
-連續存取評估的實施方式是讓服務（例如 Exchange Online、SharePoint 線上及小組）在 Azure Active Directory 中訂閱重要事件，以便在即時評估及強制執行這些事件。 重大事件評估不依賴條件式存取原則，所以可用於任何租使用者。
+連續存取評估的實施方式 Exchange Online 如下： SharePoint 線上及 Teams 等服務，以訂閱 Azure Active Directory 中的重要事件，以便在即時評估及強制執行這些事件。 重大事件評估不依賴條件式存取原則，所以可用於任何租使用者。
 
 下列事件目前已評估：
 
@@ -50,11 +50,11 @@ Microsoft 支援廣泛的安全性、驗證和合規性功能，以確保客戶�
 
 有些傳統的解決方案只適用于使用者，例如生物特徵和單一時間密碼 (OTP) 。 使用憑證型驗證時，相同的解決方案可用於所有端點;使用者、裝置和不斷增加的網際網路 (IoT) 。
 
-如需用戶端和服務應用程式支援之憑證型驗證的詳細資訊，請參閱 [Microsoft 365 用戶端應用程式支援：憑證型驗證](microsoft-365-client-support-certificate-based-authentication.md)。
+如需用戶端和服務應用程式支援之憑證型驗證的詳細資訊，請參閱[Microsoft 365 用戶端應用程式支援：以憑證為基礎的驗證](microsoft-365-client-support-certificate-based-authentication.md)。
 
 ### <a name="conditional-access"></a>條件式存取
 
-條件式存取是 Azure Active Directory 用來將信號一起使用的工具，以作出決策，並強制執行組織存取原則。 條件式存取是在新的身分識別導向控制模型的核心。
+條件式存取是 Azure Active Directory 用來將信號一起使用的工具，以進行決策，並強制執行組織存取原則。 條件式存取是在新的身分識別導向控制模型的核心。
 
 條件式存取原則是用來授與資源存取權的 if 語句。 若使用者想要存取資源，使用者必須完成動作。 在進行原則訪問決策時，條件式存取可使用的常見信號包括：
 
@@ -78,7 +78,7 @@ Microsoft 支援廣泛的安全性、驗證和合規性功能，以確保客戶�
 
 如需用戶端和服務應用程式支援的條件式存取的相關資訊，請參閱：
 
-- [Microsoft 365 用戶端應用程式支援：以裝置為基礎的條件式存取](microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365用戶端應用程式支援：以裝置為基礎的條件式存取](microsoft-365-client-support-conditional-access.md)
 
 ### <a name="mobile-application-management"></a>行動應用程式管理
 
@@ -86,7 +86,7 @@ Microsoft 支援廣泛的安全性、驗證和合規性功能，以確保客戶�
 
 當使用者存取組織資料時，組織必須確信組織原則（例如設定原則及保護原則）得以套用，以協助保護裝置上的組織資料。 此外，使用者在裝置上的個人內容應該保留在組織的控制範圍之外。
 
-若為組織管理的內容，您可以套用應用程式管理原則，以控制如何使用 Microsoft Intune 存取、共用和使用資料。 例如，支援下列動作：
+若為組織管理的內容，您可以套用應用程式管理原則，以控制如何使用 Microsoft Intune 來存取、共用和使用資料。 例如，支援下列動作：
 
 - Remote 擦除受管理的組織內容 (也稱為組織資料) 
 - 避免將組織內容粘貼到非組織位置
@@ -98,7 +98,7 @@ Microsoft 支援廣泛的安全性、驗證和合規性功能，以確保客戶�
 - 提供應用程式設定以管理應用程式的行為和設定
 - 停用多身分識別功能或個人用途，將受管理的應用程式限制為已定義的身分識別。
 
-如需使用 Microsoft Intune 行動應用程式管理的詳細資訊，請參閱 [什麼是 Microsoft intune 應用程式管理？](/mem/intune/apps/app-management)
+如需與 Microsoft Intune 行動應用程式管理相關的詳細資訊，請參閱[什麼是 Microsoft Intune 應用程式管理？](/mem/intune/apps/app-management)
 
 ### <a name="multi-factor-authentication"></a>多重要素驗證
 
@@ -108,19 +108,19 @@ Microsoft 支援廣泛的安全性、驗證和合規性功能，以確保客戶�
 - 已擁有 () 的內容
 - Inherence () 的內容
 
-如需用戶端和服務應用程式支援之多重要素驗證的詳細資訊，請參閱 [Microsoft 365 用戶端應用程式支援：多重要素驗證](microsoft-365-client-support-multi-factor-authentication.md)。
+如需用戶端和服務應用程式支援之多重要素驗證的詳細資訊，請參閱[Microsoft 365 用戶端應用程式支援：多重要素驗證](microsoft-365-client-support-multi-factor-authentication.md)。
 
 ### <a name="single-sign-on"></a>單一登入
 
-單一登入 (SSO) 會在使用者登入 Azure Active Directory 中的應用程式時，加入安全性和便利性。 使用單一登入時，使用者可以使用一個帳戶登入一次，以存取內部部署 Active Directory 網域服務 (AD DS) 加入網域的裝置、軟體為服務 (SaaS) 應用程式，以及組織中的 web 應用程式。
+單一登入 (SSO) 會在使用者登入 Azure Active Directory 中的應用程式時，新增安全性和便利性。 使用單一登入時，使用者可以使用一個帳戶登入一次，以存取內部部署 Active Directory 網域服務 (AD DS) 加入網域的裝置、軟體為服務 (SaaS) 應用程式，以及組織中的 web 應用程式。
 
-如需有關用戶端和服務應用程式支援的單一登入的詳細資訊，請參閱 [Microsoft 365 用戶端應用程式支援：單一登入](microsoft-365-client-support-single-sign-on.md)。
+如需有關用戶端和服務應用程式支援的單一登入的詳細資訊，請參閱[Microsoft 365 用戶端應用程式支援：單一登入](microsoft-365-client-support-single-sign-on.md)。
 
 ## <a name="services-support"></a>服務支援
 
 ### <a name="modern-authentication"></a>新式驗證
 
-新式驗證可讓客戶針對 Office 365 進行驗證的新案例，並針對租使用者系統管理員強制執行各 Office 365 租使用者的特定驗證需求，例如：
+新式驗證可讓客戶進行 Office 365 驗證的新案例，以及租使用者系統管理員在 Office 365 租用中強制執行特定驗證需求，例如：
 
 - 多重要素驗證支援與租使用者和服務的管理互動，以及與應用程式及其資料的使用者互動
 - 條件式存取
@@ -133,23 +133,23 @@ Microsoft 支援廣泛的安全性、驗證和合規性功能，以確保客戶�
 
 ### <a name="azure-active-directory-conditional-access"></a>Azure Active Directory 條件式存取
 
-Azure Active Directory (Azure AD) 條件式存取規則，可讓客戶根據諸如裝置規範或網路位置等屬性，控制線上服務的存取權。 您可以使用下列解決方案：
+Azure Active Directory (Azure AD) 條件式存取規則，可讓客戶根據裝置規範或網路位置等屬性，控制線上服務的存取權。 您可以使用下列解決方案：
 
 - Azure AD 多重要素驗證-基礎的條件式存取
 - Azure AD 位置基礎的條件式存取
 - Azure AD 裝置基礎的條件式存取
 
-Azure AD 條件式存取規則會套用於每個應用程式，客戶可以根據不同的條件來控制存取。 使用行動 [裝置管理 (MDM) 或 Intune](/mem/intune/fundamentals/what-is-device-management)，客戶必須能夠將 Microsoft 365 的存取許可權制為僅限使用組織裝置的使用者，或是已註冊個人裝置以進行管理的使用者。 例如，客戶可以設定條件式存取規則，以強制執行下列控制項：
+Azure AD 條件式存取規則會套用於每個應用程式，客戶可以根據不同的條件來控制存取。 使用行動[裝置管理 (MDM) 或 Intune](/mem/intune/fundamentals/what-is-device-management)，客戶必須能夠將 Microsoft 365 的存取許可權制為僅限使用組織裝置的使用者，或是已註冊個人裝置以進行管理的使用者。 例如，客戶可以設定條件式存取規則，以強制執行下列控制項：
 
 - 只允許來自已加入網域或符合網域的裝置的存取權
-- 針對所有 Exchange Online 服務存取強制執行多重要素驗證
+- 強制執行多重要素驗證，以取得 Exchange Online 服務的所有存取權
 
-如需 Azure Active Directory 條件式存取的相關資訊，請參閱 [什麼是條件式存取？](/azure/active-directory/conditional-access/overview)
+如需 Azure Active Directory 條件式存取的詳細資訊，請參閱[什麼是條件式存取？](/azure/active-directory/conditional-access/overview)
 
 ### <a name="tls-12-support"></a>TLS 1.2 支援
 
-若要為我們的客戶提供一流的加密，Microsoft 計畫停止支援傳輸層安全性 (TLS) 版本1.0 和 1.1 in Office 365 和 Office 365 GCC。
+若要為我們的客戶提供一流的加密，Microsoft 計畫停止支援傳輸層安全性 (TLS) 版本1.0 和1.1 （Office 365 和 Office 365 GCC）。
 
 我們明白資料的安全性很重要，也承諾透明公開可能會影響 TLS 服務使用的變更。 建議所有用戶端伺服器及瀏覽器-伺服器的組合使用 TLS 1.2 (或更新版本) ，以維護 Office 365 服務的連線。 您可能必須更新特定的用戶端-伺服器及瀏覽器伺服器組合。
 
-如需 TLS 1.2 支援和服務支援的詳細資訊，請參閱在 [office 365 和 office 365 GCC 中準備 TLS 1.2](../compliance/prepare-tls-1.2-in-office-365.md)。
+如需 TLS 1.2 支援和服務支援的詳細資訊，請參閱[Office 365 和 Office 365 GCC 中的 tls 1.2 的準備](../compliance/prepare-tls-1.2-in-office-365.md)。

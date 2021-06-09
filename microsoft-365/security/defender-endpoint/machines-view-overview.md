@@ -89,7 +89,7 @@ ms.locfileid: "51861572"
 
 ### <a name="antivirus-status"></a>防病毒狀態
 
-依防病毒狀態篩選裝置。 僅適用于 active Windows 10 裝置。
+依防病毒狀態篩選裝置。 僅適用于使用中 Windows 10 裝置。
 
 - **Disabled** -已關閉病毒 & 威脅防護。
 - **不報告** -病毒 & 威脅防護不會報告。
@@ -105,7 +105,7 @@ ms.locfileid: "51861572"
 
 ### <a name="windows-10-version"></a>Windows 10 版本
 
-僅選取您要調查的 Windows 10 版本。
+僅選取您想要調查的 Windows 10 版本。
 
 ### <a name="tags--groups"></a>& 群組的標記
 

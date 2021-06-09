@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 365 的法律調查
+title: 管理 Microsoft 365 中的法律調查
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: 在 Office 365 的安全性 & 規範中心使用 eDiscovery 案例，以管理組織的法律調查。
+description: 在 Office 365 中的安全性 & 合規性中心使用 eDiscovery 案例，以管理組織的法律調查。
 ms.openlocfilehash: c052daab8de33e21cccc3c638ab4995a007f60fb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50903457"
 ---
-# <a name="manage-legal-investigations-in-microsoft-365"></a>管理 Microsoft 365 的法律調查
+# <a name="manage-legal-investigations-in-microsoft-365"></a>管理 Microsoft 365 中的法律調查
 
 組織會有許多理由，以回應與組織中特定主管或其他員工相關的法律案例。 這可能會讓您快速尋找及保留電子郵件、檔、立即訊息交談，以及人員在日常工作工作中所使用之其他內容位置中的進一步調查特定資訊。 您可以使用安全性與合規性中心的 eDiscovery 案例工具來執行這些及許多其他類似的活動。
   
@@ -50,17 +50,17 @@ eDiscovery 案例可讓您控制哪些人員可以在組織中建立、存取及
 
 - 將使用者清單的[信箱和 OneDrive 位置新增](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)至 eDiscovery 保留。
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>使用 Microsoft 365 中的高級 eDiscovery 解決方案管理法律調查
+## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>在 Microsoft 365 中管理 Advanced eDiscovery 解決方案的法律調查
 
-Microsoft 365 中的「高級 eDiscovery 解決方案」是以 Office 365 中現有的 eDiscovery 和分析功能為基礎。 這個新的解決方案稱為「 *高級 eDiscovery*」，提供了端對端工作流程，可保留、收集、審閱、分析及匯出回應組織內部和外部調查的內容。 它也可讓法律團隊管理整個法律封存通知工作流程，以與案例中的保管人進行通訊。
+Microsoft 365 中的 Advanced eDiscovery 解決方案是以 Office 365 中現有的 eDiscovery 和分析功能為基礎。 這個新的解決方案稱為 *Advanced eDiscovery*，可提供端對端的工作流程，以保留、收集、審閱、分析及匯出回應組織內部和外部調查的內容。 此外也可讓您的法律小組管理整個法務保存措施工作流程，以與涉及案例的監管人通訊。
 
-「高級 eDiscovery」需要您的 Microsoft 365 或 Office 365 組織的 E5 訂閱。 如需授權的詳細資訊，請參閱 [Set Up Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)。
+Advanced eDiscovery 需要 Microsoft 365 或 Office 365 組織的 E5 訂閱。 如需授權的詳細資訊，請參閱[Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)。
 
-以下是 Advanced eDiscovery 中內建工作流程的快速綜述。 如需詳細資訊，請參閱 [Manage The Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)。
+以下是 Advanced eDiscovery 中內建工作流程的快速綜述。 如需詳細資訊，請參閱[管理 Advanced eDiscovery 工作流程](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)。
 
 - [建立案例開始使用](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) 。
 
-- 透過將保管人新增至案例，並對其信箱中的內容（OneDrive 帳戶，以及他們是其成員的 Microsoft 團隊）進行合法保留，來[管理保管人](managing-custodians.md)。
+- [管理保管人](managing-custodians.md)的方式是將其新增至案例，並在其信箱中的內容中進行合法保留，OneDrive 帳戶，以及 Microsoft Teams 他們的成員。
 
 - 自動執行合法保留通知程式，以管理與保管人的[通訊](managing-custodian-communications.md)。
 
@@ -74,4 +74,4 @@ Microsoft 365 中的「高級 eDiscovery 解決方案」是以 Office 365 中現
 
 - [匯出案例資料](exporting-data-ediscover20.md) 供外部顧問審閱。
 
-- 在 [Advanced eDiscovery] 中[管理長時間](managing-jobs-ediscovery20.md)執行的工作。
+- 在 Advanced eDiscovery 中[管理長期](managing-jobs-ediscovery20.md)執行的工作。

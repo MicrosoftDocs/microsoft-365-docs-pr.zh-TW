@@ -58,7 +58,7 @@ ms.locfileid: "52624798"
 
 - 您必須在 Exchange Online 中指派許可權，才能執行本文中的程式。 具體說來，您需要「 **郵件** 收件者」角色 (會指派給 **組織管理**、 **收件者管理** 及 **自訂郵件** 收件者角色群組的預設) 或「 **使用者選項** 」角色 (預設會指派給 **組織管理** 及 **服務台** 角色群組的預設) 。 若要將使用者新增至 Exchange Online 中的角色群組，請參閱[Modify role groups in Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups)。 請注意，具有預設許可權的使用者可以在自己的信箱上執行這些相同的程式，只要他們可以[存取 Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)。
 
-- 在 EOP 保護內部部署 Exchange 信箱的混合式環境中，您必須在內部部署 Exchange 中設定郵件流程規則 (也稱為 transport rules) ，以轉譯 EOP 垃圾郵件篩選判定結果，垃圾郵件規則才能將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱 [CONFIGURE EOP To Email to The 垃圾郵件資料夾中的混合式環境](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
+- 在 EOP 會保護內部部署 Exchange 信箱的混合式環境中，您必須在內部部署 Exchange 中設定郵件流程規則 (又稱為傳輸規則) 以轉譯 EOP 垃圾郵件篩選裁決，這樣垃圾郵件規則才可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定 EOP 以將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 - 共用信箱的安全寄件者不會與 Azure AD 同步處理，也不會 EOP 設計。
 

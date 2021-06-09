@@ -45,7 +45,7 @@ ms.locfileid: "51893410"
  
 2.  在您需要調查的機器上啟動 [即時回應會話](live-response.md#initiate-a-live-response-session-on-a-device) 。
 
-3.  選取 **[將檔案上傳至文件庫**]。
+3.  選取 [ **Upload 檔案至文件庫**]。
 
     ![上傳檔案的影像](images/upload-file.png)
 

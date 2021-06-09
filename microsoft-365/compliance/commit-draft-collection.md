@@ -1,5 +1,5 @@
 ---
-title: 將草稿集合認可為審閱集
+title: 草稿集合提交至檢閱集
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -23,13 +23,13 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/17/2021
 ms.locfileid: "50838855"
 ---
-# <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>在高級 eDiscovery 中認可草稿集合至審閱集
+# <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>將草稿集合認可為 Advanced eDiscovery 中的審閱集
 
-當您對您在草稿集合中收集並準備好進行分析、標記及檢查的專案滿意時，您可以在案例中新增集合至審閱集。 當您將草稿集合認可至審閱集時，收集的專案會從 Microsoft 365 中其原始內容位置複製到審閱集。 「審閱」集是 microsoft 雲端中，Microsoft 提供的安全 Azure 儲存位置。
+當您對您在草稿集合中收集並準備好進行分析、標記及檢查的專案滿意時，您可以在案例中新增集合至審閱集。 當您將草稿集合認可至審閱集時，收集的專案會從其原始內容位置複製到 Microsoft 365 的審閱集。 「審閱集」是 microsoft 雲端中，由 microsoft 提供的安全 Azure 儲存體位置。
 
-## <a name="commit-a-draft-collection-to-a-review-set"></a>將草稿集合認可為審閱集
+## <a name="commit-a-draft-collection-to-a-review-set"></a>草稿集合提交至檢閱集
 
-1. 在 [Microsoft 365 規範中心] 中，開啟 [高級 eDiscovery] 案例，然後選取 [ **集合** ] 索引標籤，以顯示案例的集合清單。
+1. 在 Microsoft 365 規範中心] 中，開啟 Advanced eDiscovery 案例，然後選取 [**集合**] 索引標籤，以顯示案例的集合清單。
 
    ![案例中的集合清單](../media/CommitDraftCollections1.png)
 
@@ -42,7 +42,7 @@ ms.locfileid: "50838855"
 
 4. 在 [編輯集合] 嚮導中，按 **[下一步** ]，直到顯示 [ **儲存草稿] 或 [收集** ] 頁面。
 
-5. 設定下列設定：
+5. 進行下列設定：
 
    1. 選取 [ **收集項目並新增至審閱集**]。
 
@@ -50,7 +50,7 @@ ms.locfileid: "50838855"
 
    3. 設定其他集合設定：
 
-       - **小組和 Yammer 郵件**：選取此選項可將討論執行緒新增至集合，此集合包含集合中的搜尋查詢所傳回的聊天室專案。 這表示會重建包含符合搜尋準則之專案的交談交談。 這可讓您查看前後交談內容中的聊天室專案。 如需詳細資訊，請參閱 [Advanced eDiscovery 中的交談執行緒](conversation-review-sets.md)。
+       - **Teams 和 Yammer 郵件**：選取此選項可將討論執行緒新增至集合，此集合包含集合中的搜尋查詢所傳回的聊天室專案。 這表示會重建包含符合搜尋準則之專案的交談交談。 這可讓您查看前後交談內容中的聊天室專案。 如需詳細資訊，請參閱[Advanced eDiscovery 中的交談執行緒](conversation-review-sets.md)。
 
        - **雲端附件**：選取此選項可在將集合結果新增至審閱集時包含新式附件或連結的檔案。 這表示新式附件或連結檔案的目標檔案會新增至審閱集。
 
@@ -76,11 +76,11 @@ ms.locfileid: "50838855"
 
 - 會再次執行收藏搜尋查詢。 這表示複製到審閱集的實際搜尋結果可能會不同于上次執行集合搜尋時所傳回的估計結果。
 
-- 搜尋結果中的所有專案都會從 live service 中的原始資料來源複製，然後複製至 Microsoft 雲端中的安全 Azure 儲存位置。
+- 搜尋結果中的所有專案都會從 live service 中的原始資料來源複製，然後複製至 Microsoft 雲端中的安全 Azure 儲存體位置。
 
 - 所有專案 (包含不位於保管人或非保管人資料來源中的內容和中繼資料) ，會在稱為「 *深度索引*) 」的程式中重新編制索引 (，這樣就能在複查案例資料時完全搜尋評審集中的所有資料。 當您在案例調查期間搜尋或篩選考核集中的內容時，會在集合中的內容進行完整且快速的搜尋。
 
-- 在將集合認可至審閱集時，會解密在搜尋結果中傳回的加密 SharePoint 和 OneDrive 檔與加密檔案。 您可以在複查集中複查及查詢解密的檔案。 如需詳細資訊，請參閱 [Microsoft 365 eDiscovery tools 中的解密](ediscovery-decryption.md)。
+- 在將集合認可至審閱集時，會解密在搜尋結果中傳回的加密 SharePoint 和 OneDrive 檔與加密檔案。 您可以在複查集中複查及查詢解密的檔案。 如需詳細資訊，請參閱[Microsoft 365 eDiscovery tools 中的解密](ediscovery-decryption.md)。
 
 - 光學字元辨識 (OCR) 功能會從影像析取文字，並包含具有新增至審閱集之內容的影像文字。 如需詳細資訊，請參閱本文中的 [光學字元辨識](#optical-character-recognition) 一節。
 
@@ -88,6 +88,6 @@ ms.locfileid: "50838855"
 
 ## <a name="optical-character-recognition"></a>光學字元辨識
 
-當您認可集合至審閱集時，在 [高級 eDiscovery] 中 (OCR) 功能，會自動從影像提取文字，並包含包含在審閱集新增內容的圖像文字。 您可以在 [審閱] 集中的選取影像檔的文字檢視器中查看解壓縮的文字。 這可讓您對影像中的文字進行進一步的複查和分析。 疏鬆檔案、電子郵件附件和內嵌的圖像支援 OCR。 如需 OCR 支援的圖像檔案格式清單，請參閱 [Advanced eDiscovery 中的支援檔案類型](supported-filetypes-ediscovery20.md#image)。
+當您將集合認可至審閱集時，會自動從影像提取文字的光字元識別 (OCR) Advanced eDiscovery 功能，並包含包含在審閱集新增內容的影像文字。 您可以在 [審閱] 集中的選取影像檔的文字檢視器中查看解壓縮的文字。 這可讓您對影像中的文字進行進一步的檢閱和分析。 OCR 支援用於鬆散檔案、電子郵件附件和內嵌影像。 如需 OCR 支援的影像檔格式清單，請參閱[進階電子文件探索中支援的檔案類型](supported-filetypes-ediscovery20.md#image)。
 
-您必須為您在高級 eDiscovery 中所建立的每個案例啟用 OCR 功能。 如需詳細資訊，請參閱 [設定搜尋及分析設定](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr)。
+您必須針對在進階電子文件探索中建立的每個案例啟用 OCR 功能。 如需詳細資訊，請參閱 [設定搜尋及分析設定](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr)。

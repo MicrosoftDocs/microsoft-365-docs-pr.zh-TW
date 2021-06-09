@@ -39,7 +39,7 @@ ms.locfileid: "51893314"
 訂閱 [Microsoft Defender For Endpoint Developer 授權](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9)。 訂閱功能可讓您使用 Microsoft Defender for Endpoint 租使用者和最多10個裝置，以開發與 Microsoft Defender for Endpoint 整合的解決方案。 
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>步驟2：滿足解決方案驗證和認證需求
-若要 (讓技術合作夥伴保證整合運作的最佳方式是讓客戶可以在 Microsoft Defender Security Center) 中使用 [協力廠商 [應用程式] 頁面](https://securitycenter.microsoft.com/interoperability/partners)上的 [**建議** 協力廠商] 選項，並將其測試並 demoed 至 microsoft defender for Endpoint 團隊。
+若要讓技術合作夥伴保證整合運作的最佳方法，就是讓客戶可以在 Microsoft Defender 資訊安全中心) 中使用 [[夥伴應用程式] 頁面](https://securitycenter.microsoft.com/interoperability/partners)上的 [**建議** 協力廠商] 選項，並將其測試並 demoed 至 Microsoft Defender for Endpoint 小組 (。
 
 一旦 Microsoft Defender for Endpoint 小組已複習並核准整合，我們就會指導您在 Microsoft 智慧型安全性關聯上加入為合作夥伴。
 
@@ -56,9 +56,9 @@ Microsoft Defender for Endpoint 支援協力廠商應用程式探索和整合，
 3. 提供15個字的產品描述。
 4. 連結至客戶的登陸頁面，以完成將會包含足夠資訊給客戶的整合或博客文章。 任何電子報（包括 Microsoft Defender for Endpoint product name）都應該由行銷及工程小組進行審閱。 請至少等候10天，以供審閱程式完成。
 5.  如果您使用多承租人 Azure AD 方法，我們將需要 Azure AD 應用程式名稱，以追蹤應用程式的使用量。
-6. 在針對 APIs 或圖形安全性 APIs 的每個 API 呼叫中，加入對 Microsoft Defender 所做的 User-Agent 欄位。 這將用於統計用途、疑難排解及夥伴識別。 此外，此步驟是 Microsoft 智慧型 Security Association 中的成員資格 (MISA) 的必要條件。
+6. 在針對 APIs 或 Graph 安全性 APIs 的每個 API 呼叫中，加入對 Microsoft Defender 所做的 User-Agent 欄位。 這將用於統計用途、疑難排解及夥伴識別。 此外，此步驟是 Microsoft 智慧型 Security Association 中的成員資格 (MISA) 的必要條件。
 
-    請遵循下列步驟：
+    遵循下列步驟：
     
     - 將每個 HTTP 要求標頭中的 [User-Agent] 欄位設定為下列格式。
 

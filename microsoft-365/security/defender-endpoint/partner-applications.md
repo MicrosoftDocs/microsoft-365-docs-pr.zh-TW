@@ -62,9 +62,9 @@ Microsoft Defender for Endpoint 會與現有的安全性解決方案無縫整合
 ![彈性安全性標誌的影像](images/elastic-security-logo.png) | [彈性安全性](https://go.microsoft.com/fwlink/?linkid=2139303) | 彈性安全性是用於預防、偵測及回應威脅的免費和開放解決方案
 ![IBM QRadar 標誌的影像](images/ibm-qradar-logo.png) | [IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903) | 設定 IBM QRadar 以從適用于 Endpoint 的 Defender 收集偵測 
 ![微焦點 ArcSight 標誌的影像](images/arcsight-logo.png) | [微焦點 ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548) | 使用微型焦點 ArcSight 來拉入 Defender for Endpoint 偵測
-![RSA NetWitness 標誌的影像](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | 使用 Microsoft Graph 安全性 API 將 Endpoint 警示的資料流程 Defender 用於 RSA NetWitness
+![RSA NetWitness 標誌的影像](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | 使用 Microsoft Graph 的安全性 API 將 Endpoint 警示的資料流程 Defender 用於 RSA NetWitness
 ![SafeBreach 標誌的影像](images/safebreach-logo.png) | [SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)| 深入瞭解自動與 SafeBreach 模擬相關的端點安全性事件
-![Skybox 弱點控制項標誌的影像](images/skybox-logo.png) | [Skybox 弱點控制](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox 弱點會透過弱點管理的噪音來控制，將商務、網路和威脅內容關聯起來，以揭示您的 riskiest 弱點
+![Skybox 弱點控制項標誌的影像](images/skybox-logo.png) | [Skybox 弱點控制](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox 弱點會透過弱點管理的噪音來控制，將商務、網路和威脅內容關聯，以找出 riskiest 弱點
 ![Splunk 標誌的影像](images/splunk-logo.png) | [Splunk](https://go.microsoft.com/fwlink/?linkid=2129805) | 適用于 Endpoint 增益集的 Defender 可讓 Splunk 使用者將所有警示及支援資訊插入其 Splunk 中。
 ![XM 網路標誌的影像](images/xmcyber-logo.png) | [XM 網路](https://go.microsoft.com/fwlink/?linkid=2136700) | 根據風險因素和高價值資產，排定對警示的回應優先順序
 
@@ -76,9 +76,9 @@ Microsoft Defender for Endpoint 會與現有的安全性解決方案無縫整合
 ![CyberSponse CyOps 標誌的影像](images/cybersponse-logo.png) | [CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943) | CyOps 與適用于 Endpoint 的 Defender 整合，以自動化客戶的高速度事件回應行動手冊
 ![Delta 危險 ActiveEye 標誌的影像](images/delta-risk-activeeye-logo.png) | [Delta 風險 ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468) | 增量風險是一種新的 SOC 即服務和安全性服務提供者，它會以雲端原生 SOAR platform，ActiveEye 整合 Defender。
 ![Demisto 的影像，a Palo Alto 網路公司標誌](images/demisto-logo.png) | [Demisto，a Palo Alto 網路公司](https://go.microsoft.com/fwlink/?linkid=2108414) | Demisto 與適用于 Endpoint 的 Defender 整合，讓安全性小組能夠協調及自動化端點安全性監控、豐富和回應
-![Microsoft Flow & Azure 函數標誌的影像](images/ms-flow-logo.png) | [Microsoft & Azure 函數的流程](https://go.microsoft.com/fwlink/?linkid=2114300) | 將適用于 Azure 邏輯應用程式的 Defender 連接器用於 Azure 邏輯應用程式 & Microsoft 流程以自動化安全性程式
+![& Azure 函數標誌的 Microsoft Flow 影像](images/ms-flow-logo.png) | [Microsoft Flow & Azure 功能](https://go.microsoft.com/fwlink/?linkid=2114300) | 針對 Azure Logic Apps & 使用 Defender for Endpoint connector Microsoft Flow 以自動化安全性程式
 ![Rapid7 InsightConnect 標誌的影像](images/rapid7-logo.png) | [Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040) | InsightConnect 與適用于 Endpoint 的 Defender 整合，以加速、簡化和整合大量耗時的安全性程式
-![ServiceNow 標誌的影像](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | 根據 Microsoft Graph API 整合，將警示插入 ServiceNow 安全性作業解決方案
+![ServiceNow 標誌的影像](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | 根據 Microsoft Graph API 整合，將警示攝取至 ServiceNow 安全性作業解決方案
 ![泳道標誌的影像](images/swimlane-logo.png) | [泳道](https://go.microsoft.com/fwlink/?linkid=2113902) | 最大化使用泳道和 Defender 搭配端點的事件回應功能
 
 
@@ -109,8 +109,8 @@ Microsoft Defender for Endpoint 會與現有的安全性解決方案無縫整合
 ![更佳行動標誌的影像](images/bettermobile-logo.png) | [更佳行動裝置](https://go.microsoft.com/fwlink/?linkid=2086214)| 以 AI 為基礎的 MTD 解決方案，可停止行動威脅 & 網路釣魚。 私人網際網路流覽以保護使用者隱私權 
 ![Corrata 標誌的影像](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | 行動方案—利用 Corrata 的細微洞察力和控制，保護您的行動裝置 
 ![注意標誌的影像](images/lookout-logo.png)| [望風](https://go.microsoft.com/fwlink/?linkid=866935)| 取得注意 Mobile 威脅防護遙測 for Android 和 iOS 行動裝置
-![Symantec Endpoint Protection 行動電話標誌的影像](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP 行動裝置可協助公司預測、偵測和避免行動裝置上的安全性威脅和弱點 
-![Zimperium 標誌的影像](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|以機器學習型行動威脅防護方式，將您的 Defender 的端點擴充至 iOS 和 Android
+![Symantec Endpoint Protection Mobile 標誌的影像](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP 行動裝置可協助公司預測、偵測和避免行動裝置上的安全性威脅和弱點 
+![Zimperium 標誌的影像](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|使用機器學習型行動威脅防護，將您的 Defender 的端點擴充至 iOS 和 Android
 
 
 
@@ -152,5 +152,5 @@ IoCs 的 Defender 可讓您透過關聯豐富遙測來建立警示，與這些�
 
 目前的 Defender for Endpoint 支援 IOC 比對檔案和網路指示器。 封鎖可支援檔指示器。  
 
-## <a name="support-for-non-windows-platforms"></a>非 Windows 平臺的支援
-Defender for Endpoint 提供 Windows 和非 Windows 平臺（包括行動裝置）的集中式安全性作業體驗。 您可以在入口網站中查看不同支援作業系統 (OS) 中的警示，並更好地保護組織的網路。 
+## <a name="support-for-non-windows-platforms"></a>支援非 Windows 平臺
+用於 Windows 和非 Windows 平臺（包括行動裝置）的 Defender for Endpoint 提供集中的安全性作業體驗。 您可以在入口網站中查看不同支援作業系統 (OS) 中的警示，並更好地保護組織的網路。 

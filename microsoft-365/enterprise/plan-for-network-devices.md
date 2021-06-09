@@ -29,20 +29,20 @@ ms.locfileid: "50927497"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
   
-有些網路硬體可能會限制支援的並行會話數目。 對於擁有超過2000使用者的組織，建議他們監視其網路裝置，以確保它們能夠處理其他 Office 365 服務流量。 簡易網路管理通訊協定 (SNMP) 監視軟體可協助您執行這項作業。
+有些網路硬體可能會限制支援的並行會話數目。 對於擁有超過2000使用者的組織，建議他們監視其網路裝置，以確保它們能夠處理其他的 Office 365 服務流量。 簡易網路管理通訊協定 (SNMP) 監視軟體可協助您執行這項作業。
 
 本文是 [Office 365 的網路規劃與效能調整](./network-planning-and-performance.md)的一部分。
 
-內部部署外寄網際網路 proxy 設定也會影響用戶端應用程式的 Office 365 服務連線能力。 您也必須設定網路 proxy 裝置，以允許 Microsoft cloud services URLs 和應用程式的連線。 每個組織都不同。 若要瞭解 Microsoft 如何管理此程式以及我們提供的頻寬量，請 [閱讀案例分析](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)。
+內部部署外寄網際網路 proxy 設定也會影響用戶端應用程式的 Office 365 服務的連線能力。 您也必須設定網路 proxy 裝置，以允許 Microsoft cloud services URLs 和應用程式的連線。 每個組織都不同。 若要瞭解 Microsoft 如何管理此程式以及我們提供的頻寬量，請 [閱讀案例分析](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)。
   
-下列商務用 Skype 說明文章具有商務用 Skype 設定的詳細資訊：
+下列商務用 Skype 說明文章提供有關商務用 Skype 設定的詳細資訊：
   
-- [疑難排解系統管理員的商務用 Skype Online 登入錯誤](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
+- [疑難排解管理員的商務用 Skype 線上登入錯誤](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [您無法連線至商務用 Skype，或某些功能無法運作，因為內部部署防火牆會封鎖連線](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
 > [!NOTE]
-> 雖然這些設定中有許多是商務用 Skype，但網路設定的一般指導也適用于所有 Office 365 服務。
+> 雖然這些設定中有許多是商務用 Skype 特有的，但網路設定的一般指導方針對於所有 Office 365 服務都很有用。
   
 ## <a name="determining-network-capacity"></a>決定網路容量
 
@@ -54,22 +54,22 @@ ms.locfileid: "50927497"
   
 ## <a name="wan-accelerators"></a>WAN 加速器
 
-如果您的組織使用廣域網路絡 (WAN) 加速 proxy 裝置，當您存取 Office 365 服務時，可能會發生問題。 您可能需要優化網路裝置或裝置，以確保您的使用者在存取 Office 365 時有一致的經驗。 例如，Office 365 服務會加密某些 Office 365 內容和 TCP 標頭。 您的裝置可能無法處理這類流量。
+如果您的組織使用廣域網路絡 (WAN) 加速 proxy 裝置，當您存取 Office 365 服務時，可能會發生問題。 您可能需要優化網路裝置或裝置，以確保您的使用者在存取 Office 365 時有一致的經驗。 例如，Office 365 服務會對部分 Office 365 內容和 TCP 標頭進行加密。 您的裝置可能無法處理這類流量。
   
-如需 [使用 WAN 優化控制器或流量/檢查裝置與 Office 365 的支援聲明，請](https://support.microsoft.com/kb/2690045)參閱。
+閱讀我們有關[使用 WAN 優化控制器或流量/檢查裝置與 Office 365 的](https://support.microsoft.com/kb/2690045)支援聲明。
   
 ## <a name="hardware-and-software-load-balancing-devices"></a>硬體與軟體負載平衡裝置
 
-您的組織必須使用硬體負載平衡器 (HLB) 或網路負載平衡 (NLB) 解決方案，將要求散佈至 Active Directory Federation Services (AD FS) 伺服器和（或） Exchange 混合伺服器。 負載平衡裝置可控制內部部署伺服器的網路流量。 這些伺服器對於協助確保單一登入與 Exchange 混合式部署的可用性非常重要。
+您的組織必須使用硬體負載平衡器 (HLB) 或網路負載平衡 (NLB) 解決方案，將要求散佈至 Active Directory Federation Services (AD FS) 伺服器和（或） Exchange 混合伺服器。 負載平衡裝置可控制內部部署伺服器的網路流量。 這些伺服器對於協助確保單一登入和 Exchange 混合式部署的可用性非常重要。
   
-我們提供 Windows Server 內建的軟體型 NLB 解決方案。 Office 365 支援此解決方案，以達到負載平衡。
+我們提供以軟體為基礎的 NLB 解決方案，內建于 Windows Server。 Office 365 支援此解決方案，以達到負載平衡。
   
 ## <a name="firewalls-and-proxies"></a>防火牆和代理
 
-如需設定防火牆和代理伺服器以連線至 Office 365 的詳細資訊，請參閱 [管理 office 365 端點](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)、 [評估 Office 365 網路](assessing-network-connectivity.md)連線，以及 [office 365 端點常見問題](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) 以深入瞭解裝置和電路選項。
+如需設定防火牆及 proxy 以連線至 Office 365 的詳細資訊，請參閱[管理 Office 365 端點](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)、[評估 Office 365 網路](assessing-network-connectivity.md)連線及[Office 365 端點常見問題](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)以深入瞭解裝置和電路選項。
   
 ## <a name="see-also"></a>另請參閱
 
-[Office 365 服務的安裝指南](setup-guides-for-microsoft-365.md)
+[Office 365 服務的設定指南](setup-guides-for-microsoft-365.md)
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)

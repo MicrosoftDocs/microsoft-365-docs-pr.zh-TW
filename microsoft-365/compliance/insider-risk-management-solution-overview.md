@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 中的有問必答風險管理
-description: 瞭解如何在 Microsoft 365 中設定有問必答風險管理。
-keywords: Microsoft 365，內幕人士風險，合規性
+title: Microsoft 365 中的內部人員風險管理
+description: 瞭解如何設定 Microsoft 365 中的「有問必答風險管理」。
+keywords: Microsoft 365，有問必答風險，合規性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -23,11 +23,11 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "50819745"
 ---
-# <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的有問必答風險管理
+# <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的內部人員風險管理
 
 員工們在許多平臺和服務上都具有更多存取權，可建立、管理及共用資料。 在大多數的情況下，組織的資源和工具有限，可找出並減輕整個組織的風險，同時也符合規範需求和員工隱私權標準。 這些風險可能包括透過非有意 oversharing 或惡意目的，向外盜竊員工和組織外資訊的資料洩漏等資料竊取。
 
-Microsoft 365 中的內幕程式風險管理使用全面的服務和協力廠商指標，協助您快速識別、會審和採取危險的使用者活動。 透過使用 Microsoft 365 和 Microsoft Graph 中的記錄，「有問必答風險管理」可讓您定義特定原則，以識別風險指示器，並採取行動以減輕這些風險。
+「內部使用者風險管理」 Microsoft 365 會使用完整的服務和協力廠商指標，協助您快速識別、會審和採取危險的使用者活動。 透過使用 Microsoft 365 和 Microsoft Graph 中的記錄，「有問必答風險管理」可讓您定義特定原則，以識別風險指示器，並採取行動以減輕這些風險。
 
 ## <a name="configure-insider-risk-management-for-microsoft-365"></a>設定 Microsoft 365 的有問必答風險管理
 

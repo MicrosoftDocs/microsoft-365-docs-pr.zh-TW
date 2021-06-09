@@ -47,21 +47,21 @@ ms.locfileid: "51576970"
 
 ## <a name="set-it-up"></a>進行設定
 
-如果您想要加密的郵件不符合預先定義的規則，或系統管理員尚未設定任何規則，您可以在傳送郵件之前，套用各種不同的加密規則。 若要從 Outlook 2013 或2016（或 Outlook 2016 Mac）傳送加密的郵件，請選取 [ **選項] > 許可權**]，然後選取所需的保護選項。 您也可以在 web 上的 Outlook 中選取 [ **保護** ] 按鈕來傳送加密的郵件。 如需詳細資訊，請參閱 [在 Outlook 中傳送、查看和回復加密郵件的電腦](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)。
+如果您想要加密的郵件不符合預先定義的規則，或系統管理員尚未設定任何規則，您可以在傳送郵件之前，套用各種不同的加密規則。 若要從 Outlook 2013 或2016或 Mac 版 Outlook 2016 中傳送加密的郵件，請選取 [選項] [ **> 許可權**]，然後選取所需的保護選項。 您也可以選取網頁 Outlook 中的 [**保護**] 按鈕來傳送加密的郵件。 如需詳細資訊，請參閱[Outlook 中的電腦傳送、查看和回復加密的郵件](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)。
 
 ## <a name="admin-settings"></a>系統管理員設定
 
-您可以 [在 Microsoft 365 中瞭解如何在電子郵件加密中](../compliance/email-encryption.md)設定電子郵件加密。
+您可以[在 Microsoft 365 中深入瞭解設定電子郵件加密中](../compliance/email-encryption.md)的電子郵件加密。
 
 ### <a name="automatically-encrypt-email-messages"></a>自動加密電子郵件
 
 系統管理員可以建立郵件流程規則，以自動保護從您的活動中傳送及接收的電子郵件。 設定用來加密任何外寄電子郵件的規則，並從組織內部或從組織傳送的加密郵件中移除加密。
 
-您可以建立郵件流程規則，以使用新的 Office 365 郵件加密來加密電子郵件訊息。 (OME) 功能。 使用 Exchange 系統管理中心 (EAC) ，定義用新 OME 功能觸發郵件加密的郵件流程規則。 
+您可以建立郵件流程規則，以使用新 Office 365 郵件加密 (OME) 功能來加密電子郵件。 使用 Exchange 系統管理中心 (EAC) ，定義用新 OME 功能觸發郵件加密的郵件流程規則。 
 
 1. 在網頁瀏覽器中，使用已被授與全域管理員許可權的工作或學校帳戶登入。
 2. 選擇 [管理] 磚。
-3. 在系統管理中心中，選擇 [系統 **管理中心] > Exchange**。
+3. 在系統管理中心中，選擇 [系統 **管理中心] > Exchange**]。
 
 如需詳細資訊，請參閱 [定義郵件流程規則以加密電子郵件訊息](../compliance/define-mail-flow-rules-to-encrypt-email.md)。
 
