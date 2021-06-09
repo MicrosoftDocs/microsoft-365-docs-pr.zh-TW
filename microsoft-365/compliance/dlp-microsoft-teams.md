@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams 聊天和頻道支援資料遺失防護 (DLP) 原則。
-ms.openlocfilehash: 6467ae7fdfc9c8636bd306efde5cb89c100e5e6c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fa7e0967e24d8fa5e64b84fbccf54ff8cf45d1d6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782558"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843539"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料外洩防護和 Microsoft Teams
 
@@ -46,7 +46,7 @@ Office 365 和 Microsoft 365 E3 包含 SharePoint 線上、OneDrive 及 Exchange
 
 支援 Teams 聊天中的 DLP 保護需要 E5。
 
-若要深入了解授權需求，請參閱 [Microsoft 365 租用戶層級服務授權指導方針](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+若要深入了解授權需求，請參閱 [Microsoft 365 租用戶層級服務授權指導方針](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 > [!IMPORTANT]
 > DLP 只適用于聊天或通道執行緒中的實際郵件。 活動通知--其中包括簡短的訊息預覽，而且會根據使用者的通知設定出現--**不** 會包含在 Teams DLP 中。 預覽中出現的郵件部分中的任何敏感資訊，即使已套用 DLP 原則並移除郵件本身的機密資訊之後，也會在通知中看到。
@@ -138,7 +138,7 @@ DLP 保護的套用方式不同于 Teams 的實體。
     
 6. 接著選擇 [下一步]。
 
-7. 按一下 **儲存**。
+7. 按一下 **[儲存]**。
 
 針對您的變更，允許大約一小時以透過您的資料中心進行，並同步處理至使用者帳戶。
 <!-- again, why user accounts? -->

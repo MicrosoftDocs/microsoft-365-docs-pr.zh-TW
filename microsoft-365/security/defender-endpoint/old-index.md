@@ -1,5 +1,5 @@
 ---
-title: 'Windows 10 (威脅防護) '
+title: '威脅防護 (Windows 10) '
 description: 適用於端點的 Microsoft Defender 是用於預防性保護、入侵後偵測、自動調查及回應的整合式平台。
 keywords: 威脅防護，Microsoft Defender for Endpoint，攻擊面降低，新一代保護，端點偵測和回應，自動化調查和回應，microsoft 威脅專家，Microsoft 安全評分的裝置，高級搜尋，網路威脅搜尋，網頁威脅防護
 search.product: eADQiWindows 10XVcnh
@@ -14,20 +14,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3db1517d87a47aae254d36cfb28f6c057830ef3e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934930"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840991"
 ---
 # <a name="threat-protection"></a>威脅防護
-[適用於端點的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) 是用於預防性保護、入侵後偵測、自動調查及回應的整合式平台。 Defender for Endpoint 可保護端點免受網路威脅、偵測高級攻擊和資料違例、自動化安全性事件，以及改善安全性狀況。
+[適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) 是用於預防性保護、入侵後偵測、自動調查及回應的整合式平台。 Defender for Endpoint 可保護端點免受網路威脅、偵測高級攻擊和資料違例、自動化安全性事件，以及改善安全性狀況。
 
 > [!TIP]
-> 讓您的使用者能夠輕鬆存取雲端服務和內部部署應用程式，並為所有裝置啟用新式管理功能。 如需詳細資訊，請參閱 [保護您的遠端員工](https://docs.microsoft.com/enterprise-mobility-security/remote-work/)。 
+> 讓您的使用者能夠輕鬆存取雲端服務和內部部署應用程式，並為所有裝置啟用新式管理功能。 如需詳細資訊，請參閱 [保護您的遠端員工](/enterprise-mobility-security/remote-work/)。 
 
-<center><h2>適用於端點的 Microsoft Defender</center></h2>
+<center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>威脅 & 弱點管理</b></center></a></td>
@@ -42,7 +42,7 @@ ms.locfileid: "51934930"
 <a href="#apis"><center><b>集中式設定和管理、APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365後衛</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -67,24 +67,24 @@ ms.locfileid: "51934930"
 攻擊面降減功能集可提供堆疊中的第一項防護。 透過確定設定設定正確，並套用利用緩解技術，這些功能可讓攻擊和利用。
 
 - [以硬體為基礎的隔離](overview-hardware-based-isolation.md)
-- [應用程式控制](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
-- [裝置控制](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+- [應用程式控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+- [裝置控制](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [入侵防護](exploit-protection.md)
 - [網路保護](network-protection.md)， [web 保護](web-protection-overview.md)
 - [受控資料夾存取權](controlled-folders.md)
-- [網路防火牆](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [網路防火牆](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [受攻擊面縮小規則](attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
-**[新一代保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[新一代保護](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 若要進一步鞏固網路的安全性周邊，Microsoft Defender for Endpoint 會使用下一代保護，以捕捉所有類型的新威脅。
 
-- [行為監控](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
-- [雲端型保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
-- [機器學習](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [URL 保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
-- [自動化沙箱服務](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [行為監控](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+- [雲端型保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
+- [機器學習](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [URL 保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+- [自動化沙箱服務](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
 
@@ -93,7 +93,7 @@ ms.locfileid: "51934930"
 
 - [提醒](alerts-queue.md)
 - [歷史端點資料](investigate-machines.md#timeline)
-- [回應 orchestration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
+- [回應 orchestration](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
 - [鑒證集合](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [威脅情報](threat-indicator-concepts.md)
 - [Advanced 引爆及 analysis service](respond-file-alerts.md#deep-analysis)
@@ -102,21 +102,21 @@ ms.locfileid: "51934930"
 
 <a name="ai"></a>
 
-**[自動化調查與補救措施](automated-investigations.md)**<br>
+**[自動化調查和修正](automated-investigations.md)**<br>
 除了快速回應高級攻擊之外，Microsoft Defender for Endpoint 還提供自動調查和修正功能，可協助減少提醒數量，以分鐘為單位的規模。
 
-- [自動化調查與補救措施](automated-investigations.md)
+- [自動化調查和修正](automated-investigations.md)
 - [檢視自動調查的詳細資料和結果](auto-investigation-action-center.md)
 - [查看和核准補救動作](manage-auto-investigation.md)
 
 <a name="mte"></a>
 
 **[Microsoft 威脅專家](microsoft-threat-experts.md)**<br>
-Microsoft Defender for Endpoint 的新受管理威脅搜尋服務提供主動的搜尋、優先順序及其他內容和洞察力。 Microsoft 威脅專家會進一步讓安全性運作中心 (SOCs) ，快速且準確地識別及回應威脅。
+Microsoft Defender for Endpoint 的新受管理威脅搜尋服務提供主動的搜尋、優先順序及其他內容和洞察力。 Microsoft 威脅專家進一步讓安全性運作中心 (SOCs) ，快速且正確地識別及回應威脅。
 
 - [目標攻擊通知](microsoft-threat-experts.md)
 - [專家隨選](microsoft-threat-experts.md)
-- [設定您的 Microsoft 365 Defender managed 搜尋服務](configure-microsoft-threat-experts.md)
+- [設定 Microsoft 365 的 Defender 受管理搜尋服務](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 
@@ -136,8 +136,8 @@ Microsoft Defender for Endpoint 的新受管理威脅搜尋服務提供主動的
 - 適用於身分識別的 Microsoft Defender
 - Azure Defender
 - 商務用 Skype
-- Microsoft Cloud App Security
+- Microsoft 雲端 App 安全性
 
 <a name="mtp"></a>
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
- 使用 Microsoft 365 Defender 時，Microsoft Defender for Endpoint 和各種 Microsoft 安全性解決方案組成的整合內送和後序性企業防護套件，可共同整合在端點、身分識別、電子郵件和應用程式中，以偵測、預防、調查和自動回應複雜的攻擊。
+**[Microsoft 365後衛](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+ 使用 Microsoft 365 defender 時，microsoft defender for Endpoint 和各種 Microsoft security 解決方案會形成共同作業的整合內發佈和入侵後的 enterprise 防護套件，該套件原本會透過端點、身分識別、電子郵件和應用程式整合，以偵測、預防、調查和自動回應複雜的攻擊。

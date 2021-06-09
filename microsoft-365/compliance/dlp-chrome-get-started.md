@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 準備並部署 Microsoft 合規性延伸模組。
-ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730507"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843827"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>開始使用 Microsoft 合規性延伸模組
 
@@ -55,7 +55,7 @@ ms.locfileid: "52730507"
 - Microsoft 365 E5 資訊保護和控管
 - Microsoft 365 A5 資訊保護和控管
 
-如需授權指南的詳細資料，請參閱：[Microsoft 365 安全性與合規性的授權指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
+如需授權指南的詳細資料，請參閱：[Microsoft 365 安全性與合規性的授權指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 - 您的組織必須獲得端點 DLP 授權
 - 您的裝置必須是可以執行 Windows 10 x64 組建 1809 或更新版本。
@@ -169,7 +169,7 @@ ms.locfileid: "52730507"
 
 如果您不想使用 Microsoft 端點管理員，您可以使用群組原則以在組織中部署 Microsoft 合規性延伸模組
 
-1. 您的裝置必須可透過群組原則管理，而且您必須將所有的 Chrome ADMX 都匯入群組原則集中存放區。 如需詳細資訊，請參閱 [如何在 Windows 中建立和管理群組原則系統管理範本的集中存放區](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store)。
+1. 您的裝置必須可透過群組原則管理，而且您必須將所有的 Chrome ADMX 都匯入群組原則集中存放區。 如需詳細資訊，請參閱 [如何在 Windows 中建立和管理群組原則系統管理範本的集中存放區](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)。
 
 2.  使用此 PowerShell 命令以建立 PowerShell 指令碼：
 
@@ -276,8 +276,8 @@ ms.locfileid: "52730507"
 - [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)
-- [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Windows 10 電腦上線的工具及方法 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
+- [適用於端點的 Microsoft Defender](/windows/security/threat-protection/)
+- [Windows 10 電腦上線的工具及方法 ](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 - [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [加入 Azure AD 的裝置](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [加入 Azure AD 的裝置](/azure/active-directory/devices/concept-azure-ad-join)
 - [下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。

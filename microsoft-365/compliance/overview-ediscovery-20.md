@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 深入瞭解 Microsoft 365 中的 Advanced eDiscovery 解決方案。 本文概要說明 Microsoft 365 中的 Advanced eDiscovery，它是協助您管理內部及外部調查的工具。 它也可讓您使用 Advanced eDiscovery 來管理您的法律調查的商業原因。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ec5ea7b32abb03edd31ab69abc7b8d3044b1d353
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 16f597fdbbbad89116af73fdd0a607f3f03116ad
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782786"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840835"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Microsoft 365 Advanced eDiscovery 概述
 
@@ -105,7 +105,7 @@ Advanced eDiscovery 授權要求適當的組織訂閱和每一使用者授權。
 
   - Microsoft 365 教育版a5 或 Office 365 教育版 a5 訂閱
 
-   如果您沒有現有的 Microsoft 365 E5 計畫，且想要嘗試 Advanced eDiscovery，您可以[將 Microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的訂閱或註冊 Microsoft 365 E5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
+   如果您沒有現有的 Microsoft 365 E5 計畫，且想要嘗試 Advanced eDiscovery，您可以[將 Microsoft 365 新增](/office365/admin/try-or-buy-microsoft-365)至現有的訂閱或註冊 Microsoft 365 E5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
 - **每位使用者授權：** 若要在預先 eDiscovery 案例中將使用者新增為系統管理員，該使用者必須根據您的組織訂閱，被指派下列其中一個授權：
 
@@ -113,7 +113,7 @@ Advanced eDiscovery 授權要求適當的組織訂閱和每一使用者授權。
 
   - Office 365：使用者必須被指派 Office 365 E5 或 Office 365 教育版 A5 授權。
 
-   如需如何指派授權的詳細資訊，請參閱 [將授權指派給使用者](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+   如需如何指派授權的詳細資訊，請參閱 [將授權指派給使用者](/microsoft-365/admin/manage/assign-licenses-to-users)。
 
 > [!NOTE]
 > 使用者只需要 E5 或 A5 授權 (或適當的附加元件授權) 新增至 Advanced eDiscovery 案例。 IT 系統管理員、eDiscovery 管理員、律師、paralegals 或調查人員，使用 Advanced eDiscovery 來管理案例及審閱案例資料不需要 E5、A5 或附加元件授權。

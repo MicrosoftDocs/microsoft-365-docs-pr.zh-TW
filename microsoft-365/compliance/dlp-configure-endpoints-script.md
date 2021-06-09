@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用本機腳本在裝置上部署設定套件，使其可架至服務。
-ms.openlocfilehash: e9efa76af72f9169bdec1acf35d72066ac0a776e
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 55109d8fda52db6651d4398cd84ffd6668b4d871
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893304"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843443"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本機指令碼上線 Windows 10 裝置
 
@@ -93,7 +93,7 @@ ms.locfileid: "51893304"
 
 
 ## <a name="monitor-device-configuration"></a>監視裝置設定
-您可以遵循 [疑難排解上架問題] ( (中的不同驗證步驟， https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) 驗證腳本是否順利完成，且代理程式正在執行中。
+您可以遵循 [疑難排解上架問題] 中的不同驗證步驟 ( (/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) 以驗證腳本是否順利完成且代理程式正在執行中。
 
 監視也可以直接在入口網站上進行，或是使用不同的部署工具來執行。
 

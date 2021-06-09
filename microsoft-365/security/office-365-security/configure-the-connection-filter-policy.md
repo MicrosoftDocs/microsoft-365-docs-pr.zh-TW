@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中設定連線篩選，以允許或封鎖電子郵件伺服器的電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 27c8cbbc70a4844e11bf85003215d2798a57a7ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: b5eb24377dd9f9ac304e1df7b2902d29e4a738b9
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792977"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821958"
 ---
 # <a name="configure-connection-filtering"></a>設定連線篩選
 
@@ -51,7 +51,7 @@ ms.locfileid: "52792977"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以開啟安全性中心，網址為 <https://security.microsoft.com/>。 若要直接移至 [反垃圾郵件原則 **]** 頁面，請使用 <https://security.microsoft.com/antispam>。
+- 您可以開啟安全性中心，網址為 <https://security.microsoft.com>。 若要直接移至 [反垃圾郵件原則 **]** 頁面，請使用 <https://security.microsoft.com/antispam>。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -74,7 +74,7 @@ ms.locfileid: "52792977"
 
 ## <a name="use-the-security-center-to-modify-the-default-connection-filter-policy"></a>使用 [安全性中心] 修改預設連線篩選原則
 
-1. 在 [安全性中心] 中，移至 [**電子郵件 & 協同** 作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反垃圾郵件**。
+1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
 
 2. 在 [ **反垃圾郵件原則** ] 頁面上，從清單中選取 [連線 **篩選原則 (預設)** ]，方法是按一下原則的名稱。
 
@@ -82,7 +82,7 @@ ms.locfileid: "52792977"
 
    - **描述** 區段：按一下 [ **編輯名稱與描述**]。 在出現的 [ **編輯名稱與描述** ] 浮出控制項中，于 [ **描述** ] 方塊中輸入選用的描述性文字。
 
-     完成後，按一下 ****[儲存]。
+     完成後，按一下 [儲存]。
 
    - **連接篩選區段**：按一下 [ **編輯連線篩選原則**]。 在出現的浮出控制項中，設定下列設定：
 
@@ -93,7 +93,7 @@ ms.locfileid: "52792977"
 
        視需要重複此步驟多次。 若要移除現有的值，請按一下 ![[移除] 圖示](../../media/m365-cc-sc-remove-selection-icon.png) 值旁邊的 [移除]。
 
-     若要新增 IP 位址或位址範圍，請在方塊中按一下並輸入 itclick **add** ![ add Icon ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **允許的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 ****[儲存]。
+     若要新增 IP 位址或位址範圍，請在方塊中按一下並輸入 itclick **add** ![ add Icon ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **允許的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 [儲存]。
 
    - **永遠封鎖來自下列 ip 位址或位址範圍的郵件**：這是 IP 封鎖清單。 如先前所述，請在方塊中輸入單一 IP、IP 範圍或 CIDR IP，如先前所述，在 [ **永遠允許來自下列 IP 位址或位址範圍的郵件** ] 設定中。
 
@@ -105,7 +105,7 @@ ms.locfileid: "52792977"
 
 ## <a name="use-the-security-center-to-view-the-default-connection-filter-policy"></a>使用安全中心來查看預設連線篩選原則
 
-1. 在 [安全性中心] 中，移至 [**電子郵件 & 協同** 作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反垃圾郵件**。
+1. 在安全性中心，移至 **電子郵件與共同作業** \> **原則與規則** \> **威脅原則** \> **原則** 選擇\> **反垃圾郵件**。
 
 2. 在 [ **反垃圾郵件原則** ] 頁面上，下列屬性會顯示在原則清單中：
 

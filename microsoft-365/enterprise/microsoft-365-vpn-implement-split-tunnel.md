@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何實作 Office 365 的 VPN 分割通道
-ms.openlocfilehash: 49d64a40a39a6f8b1f8ea585b2915c26bd1115c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c2195eb9e3af3c591ff59d0b0f87583455b9b119
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114233"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843647"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>實作 Office 365 的 VPN 分割通道
 
@@ -328,7 +328,7 @@ Microsoft 安全小組已發佈概括安全性專業人員重要方式的 [文�
 
 ### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>分割隧道設定是否適用于瀏覽器中執行的 Teams？
 
-可以透過支援的瀏覽器，在 [[取得用戶端的 Microsoft Teams](https://docs.microsoft.com/microsoftteams/get-clients#web-client)中列出。
+可以透過支援的瀏覽器，在 [[取得用戶端的 Microsoft Teams](/microsoftteams/get-clients#web-client)中列出。
 
 ## <a name="related-topics"></a>相關主題
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ca62db922a13ab2cb3226eaf0efb92bfaf8c572b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ab987089c20d0a1d0baed152e7ddcfdd2878cc65
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274889"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843455"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>疑難排解更新合規性中的 Microsoft Defender 防毒軟體報告
 
@@ -66,7 +66,7 @@ ms.locfileid: "52274889"
 > - 如果端點執行 Windows 10 版本1607或更舊版本，則[必須將 Windows 10 診斷資料設定為增強的層級](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)。
 > - 由於已符合所有需求，因此已完成3天
 
-「您可以搭配更新規範使用 Microsoft Defender 防毒軟體。 您將會看到 E3、B、F1、VL 和 Pro 授權的狀態。 不過，對於 E5 授權，您必須使用 Microsoft Defender for Endpoint 入口網站 (https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) 。 若要深入瞭解授權選項，請參閱 Windows 10 產品授權選項 "。
+「您可以搭配更新規範使用 Microsoft Defender 防毒軟體。 您將會看到 E3、B、F1、VL 和 Pro 授權的狀態。 不過，對於 E5 授權，您必須使用 Microsoft Defender for Endpoint 入口 (/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) 。 若要深入瞭解授權選項，請參閱 Windows 10 產品授權選項 "。
 
 若上述必要條件皆已符合，您可能需要繼續進行下一個步驟，以收集診斷資訊並傳送給我們。
 

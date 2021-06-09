@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 8b3b864e716957c24893d2097249440b0a90f10a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 626be9e949170fcda1f0bcf2a88e1b9780bbe764
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186098"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841087"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>調查 Microsoft Defender for Endpoint 中的警示
 
@@ -34,13 +34,13 @@ ms.locfileid: "51186098"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
 
 調查影響網路的警示，瞭解其含義及解決方法。
 
 選取 [警示] 佇列中的警示，以移至 [警示] 頁面。 此視圖包含提醒標題、受影響的資產、詳細資料側窗格及警示案例。
 
-在 [警示] 頁面中，選取 [警示案例] 樹狀目錄中的受影響資產或任何實體，以開始調查。 [詳細資料] 窗格會自動填入有關您所選取之專案的詳細資訊。 若要查看您可以在這裡查看的資訊類型，請閱讀 [Microsoft Defender For Endpoint 中的審閱警示](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/review-alerts)。
+在 [警示] 頁面中，選取 [警示案例] 樹狀目錄中的受影響資產或任何實體，以開始調查。 [詳細資料] 窗格會自動填入有關您所選取之專案的詳細資訊。 若要查看您可以在這裡查看的資訊類型，請閱讀 [Microsoft Defender For Endpoint 中的審閱警示](/microsoft-365/security/defender-endpoint/review-alerts)。
 
 ## <a name="investigate-using-the-alert-story"></a>使用警示案例調查
 

@@ -1,7 +1,7 @@
 ---
-title: 利用威脅和弱點管理修正弱點
-description: 修正透過安全性建議所發現的安全性弱點，視需要在威脅和弱點管理中建立例外狀況。
-keywords: Microsoft Defender for Endpoint tvm 修復，Microsoft Defender for Endpoint tvm，威脅和弱點管理，威脅 & 漏洞管理，威脅 & 漏洞管理修正，tvm 修復 intune，tvm 修正 sccm
+title: 使用威脅與弱點管理修正弱點
+description: 修正透過安全性建議所發現的安全性弱點，如有需要，請在威脅與弱點管理中建立例外狀況。
+keywords: microsoft defender for endpoint tvm 修復，microsoft defender for endpoint tvm，威脅與弱點管理，威脅 & 弱點管理，威脅 & 弱點管理修正，tvm 修復 intune，tvm 修正 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,63 +18,63 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56b6c809e31285bbfae47a5fdcc0446890919e8b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 602a38d8ad27505e81628db265681ac89218e593
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934066"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840907"
 ---
-# <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>利用威脅和弱點管理修正弱點
+# <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>使用威脅與弱點管理修正弱點
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="request-remediation"></a>要求修正
 
-Microsoft Defender for Endpoint 中的威脅和弱點管理功能會透過修正要求工作流程，在安全性與 IT 系統管理員之間取得橋樑。 安全性管理員贊您可要求 IT 管理員從 Intune 的 **安全性建議** 頁面修復弱點。
+Microsoft Defender for Endpoint 中的威脅與弱點管理功能會透過修正要求工作流程，讓安全性與 IT 系統管理員間的缺口得以橋接。 安全性管理員贊您可要求 IT 管理員從 Intune 的 **安全性建議** 頁面修復弱點。
 
 ### <a name="enable-microsoft-intune-connection"></a>啟用 Microsoft Intune 連線
 
-若要使用此功能，請啟用您的 Microsoft Intune 連線。 在 Microsoft Defender Security Center 中，流覽至 [**設定**]  >  **[一般**  >  **高級功能**]。 向左下向和尋找 **Microsoft Intune** 連線。 預設會關閉切換功能。 開啟您 **的** **Microsoft Intune** 連線切換功能。
+若要使用此功能，請啟用您的 Microsoft Intune 連接。 在 Microsoft Defender 資訊安全中心中，流覽至 **設定**  >  **一般**  >  **高級功能**。 向左下向和尋找 **Microsoft Intune** 連線。 預設會關閉切換功能。 開啟您 **的** **Microsoft Intune** 連線切換開啟。
 
 **附注**：如果您已啟用 intune 連線，您可以在建立修復要求時，取得建立 intune 安全性工作的選項。 如果未設定 connection，則不會顯示此選項。
 
-請參閱 [使用 Intune 修復 Microsoft Defender For Endpoint 所識別的漏洞](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) 以取得詳細資訊。
+請參閱 [使用 Intune 修復 Microsoft Defender For Endpoint 所識別的漏洞](/intune/atp-manage-vulnerabilities) 以取得詳細資訊。
 
 ### <a name="remediation-request-steps"></a>修正要求步驟
 
-1. 移至 Microsoft Defender Security Center 中的 [威脅與弱點管理] 流覽功能表，然後選取 [ [**安全性建議**](tvm-security-recommendation.md)]。
+1. 前往 Microsoft Defender 資訊安全中心中的威脅與弱點管理導覽功能表，然後選取 [[**安全性建議**](tvm-security-recommendation.md)]。
 
 2. 選取您要要求修復的安全性建議，然後選取 [ **修正選項**]。
 
 3. 填寫表單，包含您要求修正的專案、適用的裝置群組、優先順序、到期日及選用的附注。
     1. 如果您選擇「需要注意」修正選項，由於沒有特定動作，所以無法使用選取到期日。
 
-4. 選取 [ **提交要求**]。 送出修正要求會在威脅和弱點管理中建立修復活動專案，以用於監視此建議的修正進度。 這不會觸發修復或將任何變更套用到裝置。
+4. 選取 [ **提交要求**]。 送出修正要求會在威脅與弱點管理內建立修復活動專案，此專案可用於監視此建議的修正進度。 這不會觸發修復或將任何變更套用到裝置。
 
 5. 通知 IT 管理員有關新要求的資訊，讓他們登入 Intune，以核准或拒絕要求，然後啟動套件部署。
 
 6. 移至 [ [**修復**](tvm-remediation.md) ] 頁面，以查看修正要求的狀態。
 
-如果您想要檢查票證在 Intune 中的顯示方式，請參閱 [使用 Intune 修復 Microsoft Defender For Endpoint 所識別的漏洞](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) 以取得詳細資訊。
+如果您想要檢查票證在 Intune 中的顯示方式，請參閱 [使用 Intune 修復 Microsoft Defender For Endpoint 所識別的漏洞](/intune/atp-manage-vulnerabilities) 以取得詳細資訊。
 
 >[!NOTE]
 >如果您的要求需要修正超過10000台裝置，我們只能將10000裝置傳送至 Intune 的修正裝置。
 
-識別組織的 cybersecurity 弱點並對應至可操作的 [安全性建議](tvm-security-recommendation.md)後，開始建立安全性工作。 您可以透過與 Microsoft Intune 整合的方式建立工作，以建立修復票證。
+識別組織的 cybersecurity 弱點並對應至可操作的 [安全性建議](tvm-security-recommendation.md)後，開始建立安全性工作。 您可以在建立修復票證的 Microsoft Intune 上整合，以建立工作。
 
 降低組織面臨的隱患，並修正安全性建議，以提升安全性設定。
 
 ## <a name="view-your-remediation-activities"></a>查看您的修復活動
 
-當您從 [安全性建議] 頁面提交修正要求時，它會停用修復活動。 建立可在威脅和弱點管理 **修正** 頁面中追蹤的安全性任務，並在 Microsoft Intune 中建立修正憑證。
+當您從 [安全性建議] 頁面提交修正要求時，它會停用修復活動。 在 [威脅與弱點管理 **修復**] 頁面中建立可以追蹤的安全性任務，並在 Microsoft Intune 中建立修正憑證。
 
 如果您選擇「注意必要」修復選項，則不會有任何進度列、票證狀態或到期日，因為我們沒有任何實際的動作可供監視。
 
@@ -96,12 +96,12 @@ Microsoft Defender for Endpoint 中的威脅和弱點管理功能會透過修正
 
 ### <a name="top-remediation-activities-in-the-dashboard"></a>儀表板中的主要修復活動
 
-在「[威脅與弱點管理」儀表板](tvm-dashboard-insights.md)中查看 **主要修復活動**。 選取任何專案，以移至 [ **修復** ] 頁面。 您可以在 IT 系統管理員小組 remediates 任務之後，將修復活動標示為已完成。
+在 [威脅與弱點管理儀表板](tvm-dashboard-insights.md)中查看 **主要修復活動**。 選取任何專案，以移至 [ **修復** ] 頁面。 您可以在 IT 系統管理員小組 remediates 任務之後，將修復活動標示為已完成。
 
 ![主要修復活動卡的範例，其中會列出由安全性建議所產生之主要活動的表格。](images/tvm-remediation-activities-card.png)
 
 ## <a name="related-articles"></a>相關文章
 
-- [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [儀表板](tvm-dashboard-insights.md)
 - [安全性建議](tvm-security-recommendation.md)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8eb36ca630a9748de07c5cbe84f0e43ef23a47cf
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297221"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841075"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>步驟 1. 會審及分析您的第一個事件
 
@@ -45,10 +45,10 @@ ms.locfileid: "52297221"
 Microsoft 365Defender 會從多個 Microsoft 安全性平臺接收警示和事件，作為偵測來源，以建立整體的圖片和惡意活動的內容。 可能的偵測來源如下：
 
 - [Microsoft defender for endpoint](../defender-endpoint/microsoft-defender-endpoint.md)是一個端點偵測和回應方案 (EDR) 使用 microsoft Defender 防毒軟體，以及使用 microsoft Security Graph 的啟用雲端功能的高級威脅防護。 Defender for Endpoint 是一種整合的平臺，可提供預防性保護、破壞性偵測、自動調查和回應。 它會保護 cyberthreats 中的端點、偵測高級攻擊和資料違例、自動化安全性事件，以及改善安全性狀況。 
-- [Microsoft Defender For Identity](https://docs.microsoft.com/defender-for-identity/what-is) 是雲端式的安全性解決方案，可使用內部部署的 Active Directory 網域服務 (AD DS) 信號來識別、偵測和調查組織中的高級威脅、已遭破壞的身分識別，以及惡意的內幕程式列動。 
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/)充當您的企業使用者和其使用的雲端資源之間即時經紀人存取的閘道，不論使用者位於何處，不論其使用的裝置為何。 
+- [Microsoft Defender For Identity](/defender-for-identity/what-is) 是雲端式的安全性解決方案，可使用內部部署的 Active Directory 網域服務 (AD DS) 信號來識別、偵測和調查組織中的高級威脅、已遭破壞的身分識別，以及惡意的內幕程式列動。 
+- [Microsoft Cloud App Security](/cloud-app-security/)充當您的企業使用者和其使用的雲端資源之間即時經紀人存取的閘道，不論使用者位於何處，不論其使用的裝置為何。 
 - [Microsoft Defender for Office 365](../office-365-security/overview.md)會防範電子郵件訊息、連結 (URLs) 及共同作業工具的惡意威脅，以保護您的組織。 
-- [Azure 安全性中心](https://docs.microsoft.com/azure/security-center/security-center-introduction) 是一種整合的基礎結構安全性管理系統，可增強資料中心的安全性狀況，並在雲端和內部部署中，為您的混合工作負載提供高級威脅防護。 
+- [Azure 安全性中心](/azure/security-center/security-center-introduction) 是一種整合的基礎結構安全性管理系統，可增強資料中心的安全性狀況，並在雲端和內部部署中，為您的混合工作負載提供高級威脅防護。 
 
 在 Microsoft 365 Defender 中，[事件](incidents-overview.md)是透過關聯來自這些不同偵測來源的警示來識別。 您可以立即從 Microsoft 365 Defender 中的事件佇列開始，而不是將資源 stringing 在一起，也不會將多個警示放在各自的事件中。 這可讓您以有效的方式透過端點、身分識別、電子郵件和應用程式來會審事件，並減少攻擊的損毀。
 
@@ -99,7 +99,7 @@ Microsoft 365 Defender 中的事件回應會在您使用組織之優先順序的
 
 使用 Microsoft 365 Defender 可讀取及分析資料，但分析者的最終目標是儘快回應事件。 雖然 Microsoft 365 Defender 可大幅減少[平均時間以修正 (MTTR) ](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)透過業界領先的[自動化調查和回應](m365d-autoir.md)功能，但總會需要手動分析的情況。 
 
-以下為範例:
+以下為範例：
 
 1. 決定會審優先順序之後，分析員會透過選取事件名稱來開始深入分析。 此頁面會顯示 **事件摘要** ，其中的資料會顯示在索引標籤中，以協助進行分析。 在 [ **警示** ] 索引標籤下會顯示警示類型。 分析員可依序按一下每個警示，以深入查看個別的偵測來源。 
 
@@ -133,7 +133,7 @@ Microsoft 365 Defender 中的事件回應會在您使用組織之優先順序的
 
 瞭解如何 [修正事件](first-incident-remediate.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
 - [調查事件](investigate-incidents.md)

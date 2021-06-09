@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 951b0f33356ab99485f09ccc4147691e13ed3c6e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 45aa406212fe39f088f58bf311b1aed3fed16498
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935002"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843431"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用行動裝置管理工具上線 Windows 10 電腦
 
@@ -38,31 +38,31 @@ ms.locfileid: "51935002"
 如需使用 Defender for Endpoint CSP 的詳細資訊，請參閱 [WINDOWSADVANCEDTHREATPROTECTION CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) 和 [WindowsAdvancedThreatProtection DDF](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)檔案。
 
 ## <a name="before-you-begin"></a>開始之前
-如果您使用的是 Microsoft Intune，則必須已註冊裝置 MDM。 否則，將不會成功套用設定。 
+如果您正在使用 Microsoft Intune，則必須已註冊裝置 MDM。 否則，將不會成功套用設定。 
 
-如需使用 Microsoft Intune 啟用 MDM 的詳細資訊，請參閱 [Device 註冊名 (Microsoft intune) ](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)。
+如需使用 Microsoft Intune 啟用 MDM 的詳細資訊，請參閱[Device 註冊 (Microsoft Intune) ](/mem/intune/enrollment/device-enrollment)。
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>使用 Microsoft Intune 的板載裝置
 
-[![顯示使用 Microsoft Intune ](images/onboard-intune.png) 之 Endpoint To Defender 上架裝置的 PDF 影像 ](images/onboard-intune-big.png#lightbox)
+[![顯示使用 Microsoft Intune ](images/onboard-intune.png) 之 Endpoint To Defender 的內架裝置的 PDF 影像](images/onboard-intune-big.png#lightbox)
 
-請取出 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  或  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) ，以查看部署 Defender for Endpoint 的各種路徑。 
+請取出[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) ，以查看部署 Defender for Endpoint 的各種路徑。 
 
-遵循 [Intune](https://docs.microsoft.com/intune/advanced-threat-protection)中的指示。
+遵循 [Intune](/intune/advanced-threat-protection)中的指示。
 
 如需使用 Defender for Endpoint CSP 的詳細資訊，請參閱 [WINDOWSADVANCEDTHREATPROTECTION CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) 和 [WindowsAdvancedThreatProtection DDF](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)檔案。
 
 
 > [!NOTE]
 > - **架裝置原則的健全狀況狀態** 會使用唯讀屬性，而且無法補救。
-> - 設定診斷資料包告頻率只適用于 Windows 10，版本1703上的裝置。
+> - 診斷資料包表頻率設定僅適用于 Windows 10，版本1703上的裝置。
 
 
 >[!TIP]
 > 在裝置上架後，您可以選擇執行偵測測試，以確認裝置已正確架至服務。 如需詳細資訊，請參閱 [在新架的 Microsoft Defender For Endpoint 裝置上執行偵測測試](run-detection-test.md)。
 
 
-請取出 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  或  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) ，以查看部署 Microsoft Defender for Endpoint 中的各種路徑。
+取出[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) ，以查看部署 Microsoft Defender for Endpoint 中的各種路徑。
 
 ## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>使用行動裝置管理工具下架及監視裝置
 基於安全性的考慮，用來下架裝置的套件會在下載之日期之後的30天后到期。 傳送給裝置的已到期的脫離套件會遭到拒絕。 下載脫離套件時，系統會通知您套件到期日，也會包含在套件名稱中。
@@ -70,15 +70,15 @@ ms.locfileid: "51935002"
 > [!NOTE]
 > 上架和脫離的原則不得同時部署在相同的裝置上，否則會造成無法預期的衝突。
 
-1. 從 [Microsoft Defender Security Center](https://securitycenter.windows.com/)取得脫離套件：
+1. 從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得脫離套件：
 
    1. 在功能窗格中，選取 [**設定**  >  **脫離**]。
 
    1. 選取 [Windows 10] 做為作業系統。
 
-   1. 在 [ **部署方法** ] 欄位中，選取 [行動 **裝置管理/Microsoft Intune**]。
+   1. 在 [**部署方法**] 欄位中，選取 [行動 **裝置管理/Microsoft Intune**]。
     
-   1. 按一下 [ **下載套件**]，然後儲存 .zip 檔案。
+   1. 按一下 [ **下載套件**]，然後儲存 .zip 檔。
 
 2. 將 .zip 檔案的內容解壓至共用的唯讀位置，該位置可供將要部署此套件的網路系統管理員存取。 您應該會有一個名為 *WindowsDefenderATP_valid_until_YYYY-MM 的* 檔案名。
 
@@ -88,7 +88,7 @@ ms.locfileid: "51935002"
       Date type： String<br/>
       值： [從 WindowsDefenderATP_valid_until_YYYY-DD 映射檔的內容複寫並貼上值]
 
-如需 Microsoft Intune 原則設定的詳細資訊，請參閱 [Microsoft intune 中的 Windows 10 原則設定](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)。
+如需 Microsoft Intune 原則設定的詳細資訊，請參閱[Windows 10 Microsoft Intune 中的原則設定](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)。
 
 
 > [!NOTE]

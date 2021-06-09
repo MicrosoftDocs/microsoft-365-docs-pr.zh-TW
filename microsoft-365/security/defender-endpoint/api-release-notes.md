@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ec7adcc153d4c6bedfb1984951acad7a401cbd55
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 4843894638ccf119c0cadcf003e159e793c18368
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788808"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843731"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Microsoft Defender for Endpoint API 發行附注
 
@@ -35,7 +35,7 @@ ms.locfileid: "52788808"
 > RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此頁面的通知：
 >
 > ```http
-> https://docs.microsoft.com/api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
+> /api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
 > ```
 
 ## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>發行附注-最新到最舊 (dd yyyy) 

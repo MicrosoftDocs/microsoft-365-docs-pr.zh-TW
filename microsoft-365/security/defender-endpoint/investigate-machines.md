@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929106"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843575"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>調查 Microsoft Defender for Endpoint Devices 清單中的裝置
 
@@ -39,7 +39,7 @@ ms.locfileid: "51929106"
 調查特定裝置上產生之警示的詳細資料，識別可能與警示或可能的破壞範圍有關的其他行為或事件。
 
 > [!NOTE]
-> 作為調查或回應程式的一部分，您可以從裝置收集調查套件。 方法如下： [從裝置收集調查套件](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)。
+> 作為調查或回應程式的一部分，您可以從裝置收集調查套件。 方法如下： [從裝置收集調查套件](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)。
 
 您可以按一下 [受影響的裝置]，只要您在入口網站中看到這些裝置，即可開啟有關該裝置的詳細報告。 受影響的裝置會在下列方面加以識別：
 
@@ -109,12 +109,12 @@ ms.locfileid: "51929106"
 時程表也可讓您選擇性地向下流覽至指定期間內發生的事件。 您可以在選取的時段內，查看裝置上發生之事件的時態順序。 若要進一步控制您的視圖，您可以依事件群組篩選或自訂欄位。
 
 >[!NOTE]
-> 若要顯示防火牆事件，您必須啟用審核原則，請參閱「 [審核篩選平臺](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection)連線」。
+> 若要顯示防火牆事件，您必須啟用審核原則，請參閱「 [審核篩選平臺](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)連線」。
 >防火牆涵蓋下列事件
 >
->- [5025](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) -防火牆服務已停止
->- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) -應用程式阻止接收網路上的傳入連線
->- [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) -封鎖的連線
+>- [5025](/windows/security/threat-protection/auditing/event-5025) -防火牆服務已停止
+>- [5031](/windows/security/threat-protection/auditing/event-5031) -應用程式阻止接收網路上的傳入連線
+>- [5157](/windows/security/threat-protection/auditing/event-5157) -封鎖的連線
 
 ![具有事件的裝置時程表圖像](images/timeline-device.png)
 
@@ -134,7 +134,7 @@ ms.locfileid: "51929106"
 - 偵測到主動威脅-執行威脅時，發生威脅偵測
 - 修正失敗-已呼叫對偵測到的威脅進行修正，但失敗
 - 修正成功-已停止並清理偵測到的威脅
-- 使用者略過的警告-Windows Defender SmartScreen 警告已被使用者關閉並覆寫
+- 使用者略過的警告-使用者已解除 Windows Defender SmartScreen 警告，並覆寫該
 - 偵測到可疑的腳本-發現可能有惡意的腳本
 - 警示類別-如果事件導致警示產生，警示類別 ( 「橫向移動」，例如，) 會提供
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 合規性延伸模組能會將監視並控制檔案活動和保護動作擴充至 Google Chrome 瀏覽器
-ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: cf7a3cd2e26f2e7d7a116e4a609f98aeea78be19
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730483"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843803"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>了解 Microsoft 合規性延伸模組
 
@@ -63,5 +63,5 @@ Microsoft 合規性延伸模組可讓您稽核及管理下列類型的活動，�
 - [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)
-- [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)
+- [適用於端點的 Microsoft Defender](/windows/security/threat-protection/)
 - [測試人員風險管理](insider-risk-management.md)

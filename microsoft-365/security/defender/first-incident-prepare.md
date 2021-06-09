@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4fc124bf8787d5880d78a4f5208bd66329da07a0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: da9147955c5da9ea727854420b3d4d160583ef73
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539032"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840931"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>為第一個事件準備安全性狀況
 
@@ -40,14 +40,14 @@ ms.locfileid: "52539032"
 
 Microsoft 365Defender 可協助您解決事件防護的幾個層面： 
 
-- 實施 [零信任](https://docs.microsoft.com/security/zero-trust/) 架構
+- 實施 [零信任](/security/zero-trust/) 架構
 - 使用[Microsoft 安全分數](microsoft-secure-score.md)指派分數來判斷您的安全性狀況
 - 透過[威脅和弱點管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)中的漏洞評估來防止威脅
 - 瞭解最新的安全性威脅，以做好準備
 
 ## <a name="step-1-implement-zero-trust"></a>步驟 1. 實現零信任
 
-「[零信任](https://docs.microsoft.com/security/zero-trust/)」是整合的安全性理念和端對端策略，可考慮任何現代環境的複雜性質，包括行動工作力和使用者、裝置、應用程式及資料（可能位於何處）。 透過提供單一的玻璃窗格，以一致的方式管理所有的偵測，Microsoft 365 Defender 可讓安全性作業小組輕鬆地執行零信任的[指導原則](https://docs.microsoft.com/security/zero-trust/#guiding-principles-of-zero-trust)。 
+「[零信任](/security/zero-trust/)」是整合的安全性理念和端對端策略，可考慮任何現代環境的複雜性質，包括行動工作力和使用者、裝置、應用程式及資料（可能位於何處）。 透過提供單一的玻璃窗格，以一致的方式管理所有的偵測，Microsoft 365 Defender 可讓安全性作業小組輕鬆地執行零信任的[指導原則](/security/zero-trust/#guiding-principles-of-zero-trust)。 
 
 Microsoft 365 的元件會顯示已執行之規則的破壞，該規則會將 Microsoft Defender for Endpoint (MDE) 或其他行動安全性廠商整合為資訊來源，以針對裝置合規性原則和裝置型條件式存取原則的資訊來源，以建立零信任的條件存取原則。 
 

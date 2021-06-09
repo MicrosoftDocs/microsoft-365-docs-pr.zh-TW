@@ -1,5 +1,5 @@
 ---
-title: 為 IPs 和 URLs/網域建立指示器
+title: 建立 IP 和 URL/網域的指示器
 ms.reviewer: ''
 description: 為 IPs 及定義實體的偵測、預防和排除的 URLs/網域建立指示器。
 keywords: ip，url，domain，manage，允許，封鎖，封鎖，clean，惡意，檔雜湊，ip 位址，url，網域
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e7dc11fe709a6d04b6309706df90f0ebbc177e25
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198480"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841063"
 ---
-# <a name="create-indicators-for-ips-and-urlsdomains"></a>為 IPs 和 URLs/網域建立指示器 
+# <a name="create-indicators-for-ips-and-urlsdomains"></a>建立 IP 和 URL/網域的指示器 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,10 +35,10 @@ ms.locfileid: "51198480"
 
 
 > [!TIP]
-> 想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
-Defender for Endpoint 可以封鎖 Microsoft 認為是惡意 IPs/URLs、透過 Windows Defender SmartScreen Microsoft browser，以及透過網路瀏覽器以外的網路保護或瀏覽器以外的呼叫進行保護。
+Defender for Endpoint 可以透過 microsoft browser 的 Windows Defender SmartScreen，以及透過瀏覽器以外的非 Microsoft 瀏覽器或通話的網路保護，封鎖 microsoft 認為是惡意的 IPs/URLs。
 
 其威脅情報資料集是由 Microsoft 所管理。
 
@@ -51,14 +51,14 @@ Defender for Endpoint 可以封鎖 Microsoft 認為是惡意 IPs/URLs、透過 W
 在建立 IPS、URLs 或網域的指示器之前，請務必先瞭解下列必要條件：
 - URL/IP 允許和封鎖依賴在封鎖模式中啟用的 Defender for Endpoint component 網路保護。 如需網路保護和設定指示的詳細資訊，請參閱 [Enable Network Protection](enable-network-protection.md)。
 - 反惡意軟體用戶端版本必須是4.18.1906 或更新版本。 
-- 在 Windows 10 版本1709或更新版本上的電腦上支援。 
-- 確定 Microsoft Defender Security Center 中已啟用 **自訂網路指示器** **> 設定 > 高級功能**。 如需詳細資訊，請參閱 [高級功能](advanced-features.md)。
-- 如需 iOS 的指示器支援，請參閱 [Configure custom 指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
+- 在 Windows 10 版本1709或更新版本上支援的機器上。 
+- 確定 **設定 > 的高級功能 Microsoft Defender 資訊安全中心 >** 中已啟用 **自訂網路指示器**。 如需詳細資訊，請參閱 [高級功能](advanced-features.md)。
+- 如需 iOS 的指示器支援，請參閱 [Configure custom 指示器](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
 
 
 > [!IMPORTANT]
 > 只有外部 Ip 可以新增至 [標記] 清單。 無法為內部 Ip 建立指示器。
-> 在 web 保護案例中，我們建議您在 Microsoft Edge 中使用內建功能。 Microsoft Edge 利用 [網路保護](network-protection.md) 檢查網路流量，並允許 TCP、HTTP 及 HTTPS (TLS) 的封鎖。 如果有衝突的 URL 指示器原則，則會套用較長的路徑。 例如，URL 指示器原則的 `https:\\support.microsoft.com/en-us/office` 優先順序會高於 url 指示器原則 `https:\\support.microsoft.com` 。
+> 在 web 保護案例中，建議您在 Microsoft Edge 中使用內建功能。 Microsoft Edge 會利用[網路保護](network-protection.md)檢查網路流量，並允許 TCP、HTTP 及 HTTPS (TLS) 的封鎖。 如果有衝突的 URL 指示器原則，則會套用較長的路徑。 例如，URL 指示器原則的 `https:\\support.microsoft.com/en-us/office` 優先順序會高於 url 指示器原則 `https:\\support.microsoft.com` 。
 
 > [!NOTE]
 > 對於所有其他程式，web 保護案例會利用網路保護進行檢查及強制執行： 

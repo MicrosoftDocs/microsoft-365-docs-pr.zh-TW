@@ -24,20 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 description: 封鎖離職員工的登入，並封鎖 Microsoft 365 服務的存取權。
-ms.openlocfilehash: 84852e9bccb1d4370db07492baf7ccaed7f6db3d
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: cdba6dcaf239e94cf33f3bf88e7f217b4793bfd6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698901"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840847"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步驟 1-防止離職員工登入並封鎖 Microsoft 365 服務的存取權
 
 如果您需要立即避免使用者登入存取，您應該重設其密碼。 在此步驟中，請從 Microsoft 365 中強制登出使用者。
 
 > [!NOTE]
-> 您必須是全域系統管理員，才能啟動其他系統管理員的登出。 若為非系統管理員的使用者，您可以使用使用者系統管理員或服務台管理員使用者來執行此動作。
-> 深入瞭解系統 <a href="https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles">管理員角色的系統管理員角色</a>
+> 您必須是全域系統管理員，才能啟動其他系統管理員的登出。 若為非系統管理員的使用者，您可以使用使用者系統管理員或服務台管理員使用者來執行此動作。 [深入瞭解系統管理角色](about-admin-roles.md)
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 2. 選取使用者名稱旁的方塊，然後選取 [ **重設密碼**]。

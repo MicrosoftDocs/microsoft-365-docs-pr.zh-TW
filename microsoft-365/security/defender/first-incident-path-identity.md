@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c028289a58247075c33e85d6d6f3797b3ddad7b4
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 204530b8b4a87215053ddcb0434e40e45271da3d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297185"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841003"
 ---
 # <a name="example-of-an-identity-based-attack"></a>以身分識別的攻擊範例
 
@@ -44,7 +44,7 @@ Microsoft 365Defender 可讓分析員根據「事件」頁面之 [**警示**] �
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="篩選用於身分識別之 Defender 的偵測來源的範例":::
 
-選取 **置疑的 overpass-雜湊攻擊** 警示會移至 Microsoft Cloud App Security 中顯示更詳細資訊的頁面。 您可以選擇 **深入瞭解此警示類型** 以閱讀有關 [攻擊的描述](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) 和修正建議，以進一步瞭解警示或攻擊。
+選取 **置疑的 overpass-雜湊攻擊** 警示會移至 Microsoft Cloud App Security 中顯示更詳細資訊的頁面。 您可以選擇 **深入瞭解此警示類型** 以閱讀有關 [攻擊的描述](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) 和修正建議，以進一步瞭解警示或攻擊。
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="可疑 overpass-雜湊攻擊警示的範例"::: 
 
@@ -91,7 +91,7 @@ IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com
 
 請參閱 [網路釣魚](first-incident-path-phishing.md) 調查路徑。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
 - [管理事件](manage-incidents.md)

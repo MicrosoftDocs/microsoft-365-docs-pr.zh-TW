@@ -1,7 +1,7 @@
 ---
 title: 確保您的裝置已正確設定
 description: 適當設定裝置，以提升抵禦威脅的整體能力，並增強您偵測和回應攻擊的能力。
-keywords: 板載，Intune management，Microsoft Defender for Endpoint，Microsoft Defender，Windows Defender，攻擊面降低，ASR，安全性基準
+keywords: 板載，Intune management，microsoft defender for Endpoint，microsoft defender，Windows Defender，攻擊面降低，ASR，安全性基準
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fd58ee17b2cb86c0bcc858b9b0fd57c12ac501e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dccc623bfa6c3f5e8fe4d88ccfafd66d3e53482a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932808"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840895"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>確保您的裝置已正確設定
 
@@ -44,7 +44,7 @@ ms.locfileid: "51932808"
 ![安全性設定管理頁面](images/secconmgmt_main.png)<br>
 *裝置設定管理頁面*
 
-您可以追蹤組織層級的設定狀態，並快速採取行動，以回應 Microsoft Intune 和 Microsoft 365 security center 上的裝置管理頁面直接連結，以回應不良的內架、法規遵從性問題和優化程度欠佳的攻擊面。
+您可以追蹤組織層級的設定狀態，快速採取行動，以回應不良的內架、法規遵從性問題，以及透過直接連結到 Microsoft Intune 和 Microsoft 365 安全中心上的裝置管理頁面的深入連結。
 
 如此一來，您可以：
 - 裝置上事件的完整可視性
@@ -56,13 +56,13 @@ ms.locfileid: "51932808"
 
 裝置設定管理與 Intune 裝置管理緊密合作，以建立組織中裝置的清查和基準安全性設定。 您將能夠在 Intune 管理的 Windows 10 裝置上追蹤和管理設定問題。
 
-在您可以確保您的裝置設定正確之前，請先將其註冊至 Intune management。 Intune 註冊很強大，且有許多 Windows 10 裝置的註冊選項。 如需 Intune 註冊選項的詳細資訊，請參閱 [設定 Windows 裝置的註冊](https://docs.microsoft.com/intune/windows-enroll)。
+在您可以確保您的裝置設定正確之前，請先將其註冊至 Intune management。 Intune 註冊很強大，且有許多 Windows 10 裝置的註冊選項。 如需 Intune 註冊選項的詳細資訊，請參閱[設定 Windows 裝置的註冊](/intune/windows-enroll)。
 
 >[!NOTE]
->若要將 Windows 裝置註冊至 Intune，系統管理員必須已獲指派授權。 [閱讀指派裝置註冊的授權](https://docs.microsoft.com/intune/licenses-assign)。
+>若要在 Intune 中登記 Windows 裝置，系統管理員必須已獲指派授權。 [閱讀指派裝置註冊的授權](/intune/licenses-assign)。
 
 >[!TIP] 
->若要透過 Intune 優化裝置管理，請 [將 Intune 連線至 Defender For Endpoint](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
+>若要透過 Intune 優化裝置管理，請 [將 Intune 連線至 Defender For Endpoint](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
 
 ## <a name="obtain-required-permissions"></a>取得必要的許可權
 根據預設，只有已獲指派全域管理員的使用者或 Azure AD 上的 Intune 服務系統管理員角色，才能管理及指派上架裝置和部署安全性基準所需的裝置設定設定檔。
@@ -78,7 +78,7 @@ ms.locfileid: "51932808"
 *Intune 上的裝置設定許可權*
 
 >[!TIP] 
->若要深入瞭解在 Intune 上指派許可權，請 [參閱建立自訂角色](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role)。
+>若要深入瞭解在 Intune 上指派許可權，請 [參閱建立自訂角色](/intune/create-custom-role#to-create-a-custom-role)。
 
 ## <a name="in-this-section"></a>本節內容
 主題 | 描述

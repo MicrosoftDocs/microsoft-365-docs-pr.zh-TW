@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft 諮詢服務
 description: 準備使用 MCS 以封裝應用程式的準備工作和步驟
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1441ca3305a5f3e5a83ddd5e1547812f08d7d96b
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 7a967f5e4b2678b55ed87f2eaa68590703c55805
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445693"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840883"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>使用 Microsoft 諮詢服務
 
@@ -34,7 +34,7 @@ ms.locfileid: "51445693"
 **MCS 將處理下列動作：**
 
 - 檢查此應用程式在 Microsoft 受管理的電腦環境中是否禁止或受限制。
-- 測試安裝、啟動及解除安裝應用程式，以確保與 Windows 10 相容。 如果 MCS 發現相容性問題，將會將應用程式提交給應用程式，以 [確保](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) 修復程式的執行。
+- 測試安裝、啟動及解除安裝應用程式，以確保與 Windows 10 相容。 如果 MCS 發現相容性問題，將會將應用程式提交給應用程式，以 [確保](/fasttrack/products-and-capabilities#app-assure) 修復程式的執行。
 - 以您的規格封裝應用程式，然後使用 Microsoft Intune 測試應用程式部署。
 
 ## <a name="app-delivery-schedule"></a>應用程式交付排程
@@ -43,18 +43,18 @@ ms.locfileid: "51445693"
 
 ![行事曆顯示應用程式在星期四輸入 (在此範例中為 21 日)，第二天做媒體驗證，下星期一封裝 (25 日)，之後的星期五交付應用程式 (29 日)](../../media/MCS-cal.png)
 
-應用程式交付之後，您會收到通知。 在該點，您有21天的時間可執行接受度測試，並核准 Microsoft 受管理的桌面入口網站中的工作。 如果您在接受度測試期間發現應用程式有些問題，請在 Microsoft 受管理的電腦入口網站中拒絕該應用程式，您將會透過電子郵件與 MCS 封裝程式連線，以了解並解決這個問題。
+應用程式交付之後，您會收到通知。 在該點，您可以在 Microsoft 受管理的電腦入口網站中執行接受度測試並核准工作。 如果您在接受度測試期間發現應用程式有些問題，請在 Microsoft 受管理的電腦入口網站中拒絕該應用程式，您將會透過電子郵件與 MCS 封裝程式連線，以了解並解決這個問題。
 
 ## <a name="testing-accounts-and-environment"></a>測試帳戶和環境
 
-若要讓打包小組完成對 Microsoft Intune 的遷移，我們建議您提供某些許可權：
- 
--   封裝程式的 Microsoft Intune App 部署功能的存取權，以新增並指派應用程式 
--   搭配封裝程式的測試群組、使用者帳戶和授權，以便能夠測試應用程式
+為了讓打包小組完成 Microsoft Intune 的遷移，我們建議您提供某些許可權：
+
+- 封裝程式的 Microsoft Intune App 部署功能的存取權，以新增並指派應用程式
+- 搭配封裝程式的測試群組、使用者帳戶和授權，以便能夠測試應用程式
 
 MCS 將使用這些權限來執行下列動作：
- 
--   確保應用程式能夠在 Microsoft 受管理的電腦設定之虛擬機器上正常運作
--   將應用程式上傳到 Microsoft Intune，以便部署至您的使用者
+
+- 確保應用程式能夠在 Microsoft 受管理的電腦設定之虛擬機器上正常運作
+- 將應用程式上傳到 Microsoft Intune，以便部署至您的使用者
 
 若沒有這些使用權限，MCS 可能會繼續進行，但無法將應用程式上傳到您的環境。

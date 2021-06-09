@@ -349,4 +349,4 @@
     - name: 適用於端點的 Microsoft Defender
       href: ../defender-endpoint/index.yml
     - name: 適用於身分識別的 Microsoft Defender
-      href: 'https://docs.microsoft.com/defender-for-identity/'
+      href: /defender-for-identity/

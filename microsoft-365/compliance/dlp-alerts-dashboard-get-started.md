@@ -1,5 +1,5 @@
 ---
-title: 開始使用資料遺失防護警示儀表板
+title: 開始使用資料外洩防護警示儀表板
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 開始定義及管理資料遺失防護原則的提醒。
-ms.openlocfilehash: 7f070dd960cc00ad7899c75117cd2a3fcf679973
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760698"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843863"
 ---
-# <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>開始使用資料遺失防護警示儀表板
+# <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>開始使用資料外洩防護警示儀表板
 
-資料遺失防護 (DLP) 原則可以採取保護性動作，以避免無意間共用機密專案。 針對敏感專案採取動作時，您可以設定 DLP 的警示來通知您。 本文說明如何定義與資料遺失防護 (DLP) 原則相關聯的各種警示原則。 您將會瞭解如何使用[Microsoft 365 合規性中心](https://compliance.microsoft.com/)的[DLP 警示管理儀表板](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)來查看警示、事件，以及與 DLP 原則違規相關聯的中繼資料。
+資料遺失防護 (DLP) 原則可以採取保護性動作，以避免無意間共用機密專案。 針對敏感專案採取動作時，您可以設定 DLP 的警示來通知您。 本文說明如何定義與資料遺失防護 (DLP) 原則相關聯的各種警示原則。 您將會瞭解如何使用[Microsoft 365 規範中心](https://compliance.microsoft.com/)的[DLP 警示管理儀表板](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)來查看警示、事件，以及與 DLP 原則違規相關聯的中繼資料。
 
 如果您是新的 DLP 警示，請參閱 [瞭解資料遺失防護警示儀表板](dlp-alerts-dashboard-learn.md)
 
@@ -43,16 +43,16 @@ ms.locfileid: "51760698"
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP 警示管理儀表板的授權
 
-Office 365 DLP 所有合格租使用者都可以存取 DLP 警示管理儀表板。 若要開始，您應該具備適用于 Exchange Online、SharePoint 線上和商務 OneDrive 的 Office 365 DLP。 如需有關 Office 365 DLP 授權需求的詳細資訊，請參閱 [哪些授權可為使用者提供從服務受益的許可權？](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
+Office 365 dlp 的所有合格租使用者都可以存取 DLP 警示管理儀表板。 若要開始，您應該具備 Office 365 DLP Exchange Online、SharePoint 線上及商務用 OneDrive 的資格。 如需 Office 365 DLP 之授權需求的詳細資訊，請參閱[哪些授權可為使用者提供從服務受益的許可權？](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)。
 
-使用適用于[小組 dlp](dlp-microsoft-teams.md)之[端點 dlp](endpoint-dlp-learn-about.md)的客戶，將會看到其 endpoint Dlp 原則警示和團隊 dlp 警示管理儀表板中的 dlp 原則警示。
+使用適用于[Teams DLP](dlp-microsoft-teams.md)之[endpoint dlp](endpoint-dlp-learn-about.md)的客戶，將會看到其 endpoint dlp 原則警示，並 Teams dlp 警示管理儀表板中的 dlp 原則警示。
 
 **內容預覽** 功能僅適用于這些授權：
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - 高級規範 (E5) 新增
-- Microsoft 365 E5/A5 資訊保護和控管
+- Microsoft 365 E5/A5 資訊保護和管理
 - Microsft 365 E5/A5 相容性
 
 ### <a name="licensing-for-alert-configuration-options"></a>警示設定選項的授權
@@ -65,7 +65,7 @@ Office 365 DLP 所有合格租使用者都可以存取 DLP 警示管理儀表板
 - 具有下列其中一項功能的 E1、F1 或 G1 訂閱或 E3 或 G3 訂閱：
     - Office 365 進階威脅防護方案 2
     - Microsoft 365 E5 合規性
-    - Microsoft 365 電子檔探索和審核附加元件授權
+    - Microsoft 365 電子檔探索和審計附加元件授權
 
 ### <a name="roles"></a>角色
 
@@ -115,7 +115,7 @@ Office 365 DLP 所有合格租使用者都可以存取 DLP 警示管理儀表板
 
 若要使用 DLP 警示管理儀表板：
 
-1. 在 [Microsoft 365 規範中心](https://www.compliance.microsoft.com)內，移至 [ **資料遺失防護**]。
+1. 在 [Microsoft 365 規範中心](https://www.compliance.microsoft.com)] 中，移至 [**資料遺失防護**]。
 2. 選取 [ **警示** ] 索引標籤，以查看 [DLP 警示] 儀表板。
 3. 選取警示以查看詳細資料：
 

@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中設定條件式存取
-description: 深入瞭解在 Intune、Microsoft Defender Security Center 和 Azure 中執行條件式存取所需的步驟
+description: 深入瞭解在 Intune、Microsoft Defender 資訊安全中心和 Azure 中執行條件式存取所需的步驟
 keywords: 條件式存取、條件化、存取、裝置風險、風險層級、整合、intune 整合
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: ceb69d59dc5208c0908e33d0880d9352562ec140
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903775"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843971"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中設定條件式存取
 
@@ -44,49 +44,49 @@ ms.locfileid: "51903775"
 您必須確定您的所有裝置都已在 Intune 中註冊。 您可以使用下列任何選項，在 Intune 中註冊裝置：
 
 
-- IT 系統管理員：如需如何啟用自動註冊的詳細資訊，請參閱 [Windows 註冊](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- 使用者：如需如何在 Intune 中註冊 Windows 10 裝置的詳細資訊，請參閱 [在 intune 中註冊您的 windows 10 裝置](https://docs.microsoft.com/intune/quickstart-enroll-windows-device)
-- 使用者替代：如需有關加入 Azure AD 網域的詳細資訊，請參閱 how [to： Plan a AZURE ad join 實現](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)。
+- IT 系統管理員：如需如何啟用自動註冊的詳細資訊，請參閱[Windows 登記](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+- 使用者：如需如何在 intune 中註冊 Windows 10 裝置的詳細資訊，請參閱在[intune 中註冊您的 Windows 10 裝置](/intune/quickstart-enroll-windows-device)
+- 使用者替代：如需有關加入 Azure AD 網域的詳細資訊，請參閱 how [to： Plan a AZURE ad join 實現](/azure/active-directory/devices/azureadjoin-plan)。
 
 
 
-在 Microsoft Defender 安全中心、Intune 入口網站和 Azure AD 入口網站中，您必須採取下列步驟。
+您必須採取下列步驟，Microsoft Defender 資訊安全中心、Intune 入口網站和 Azure AD 入口網站。
 
 請務必注意存取這些入口網站所需的角色，並執行條件式存取：
-- **Microsoft Defender 安全中心** -您必須以全域系統管理員角色登入入口網站，才能開啟整合。
+- **Microsoft Defender 資訊安全中心**-您必須登入具有全域系統管理員角色的入口網站，以開啟整合。
 - **Intune** -您必須使用具有管理許可權的安全性系統管理員許可權登入入口網站。 
 - **AZURE AD 入口網站** -您必須以全域系統管理員、安全性管理員或條件式存取管理員身分登入。
 
 
 > [!NOTE]
-> 您將需要 Microsoft Intune 環境（Intune managed 和 Azure AD 加入的 Windows 10 裝置）。
+> 您將需要 Microsoft Intune 環境，並已加入 Intune managed 和 Azure AD Windows 10 裝置。
 
 請執行下列步驟來啟用條件式存取：
-- 步驟1：從 Microsoft Defender 安全中心開啟 Microsoft Intune 連線
+- 步驟1：從 Microsoft Defender 資訊安全中心開啟 Microsoft Intune 連接
 - 步驟2：在 Intune 中開啟用於端點整合的 Defender
 - 步驟3：在 Intune 中建立相容性原則
 - 步驟4：指派原則 
 - 步驟5：建立 Azure AD 條件式存取原則
 
 
-### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>步驟1：開啟 Microsoft Intune 連線
-1. 在功能窗格中，選取 [**設定**  >  **高級功能**] [  >  **Microsoft Intune connection**]。
-2. 將 Microsoft Intune 設定切換為 [ **開啟**]。
+### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>步驟1：開啟 Microsoft Intune 連接
+1. 在功能窗格中，選取 [**設定**  >  **高級功能**]  >  **Microsoft Intune** 連線]。
+2. 將 Microsoft Intune 設定切換為 [**開啟**]。
 3. 按一下 [ **儲存喜好** 設定]。
 
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>步驟2：在 Intune 中開啟用於端點整合的 Defender
 1. 登入 [Azure 入口網站](https://portal.azure.com)。
-2. 選取 [**裝置規範**] [  >  **Microsoft Defender ATP**]。
-3. 將 **[連線 Windows 10.0.15063 + 裝置至 Microsoft Defender 高級威脅防護]** 設定為 [ **開啟**]。
-4. 按一下 [儲存]。
+2. 選取 [**裝置符合性**  >  **Microsoft Defender ATP**]。
+3. 設定 **連線 Windows 10 0.15063 + 裝置以 Microsoft Defender 進階威脅防護** 至 [**開啟**]。
+4. 按一下 **[儲存]**。
 
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>步驟3：在 Intune 中建立相容性原則
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [ **所有服務**]、[在 **Intune** 上篩選]，然後選取 [ **Microsoft Intune**]。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [**所有服務**]、[在 **Intune** 上篩選]，然後選取 [ **Microsoft Intune**]。
 2. 選取 [**裝置規範**  >  **原則**] [  >  **建立原則**]。
 3. 輸入 **名稱** 和 **描述**。
-4. 在 [ **平臺**] 中，選取 [ **Windows 10 和更新版本**]。
+4. 在 [**平臺**] 中，選取 [ **Windows 10 和更新版本**]。
 5. 在 [ **裝置健康情況** 設定] 中，設定 **[要求裝置位於或低於裝置威脅層級** ] 的首選層級：
 
    - **安全**：這是最安全的層級。 裝置不能有任何現有威脅，但仍然可以存取公司資源。 如果找到任何威脅，裝置就會評估為不相容。
@@ -97,23 +97,23 @@ ms.locfileid: "51903775"
 6. 選取 **[確定]**，並 **建立** 以儲存變更 (並建立) 原則。
 
 ### <a name="step-4-assign-the-policy"></a>步驟4：指派原則
-1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [ **所有服務**]、[在 **Intune** 上篩選]，然後選取 [ **Microsoft Intune**]。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，選取 [**所有服務**]、[在 **Intune** 上篩選]，然後選取 [ **Microsoft Intune**]。
 2. 選取 **裝置符合性**  >  **原則**> 選取您的 Microsoft Defender for Endpoint 相容性原則。
 3. 選取 [作業 **]**。
 4. 包含或排除 Azure AD 群組，以指派原則。
 5. 若要將原則部署至群組，請選取 [ **儲存**]。 原則所針對的使用者裝置會根據規範評估。
 
 ### <a name="step-5-create-an-azure-ad-conditional-access-policy"></a>步驟5：建立 Azure AD 條件式存取原則
-1. 在 [azure 入口網站](https://portal.azure.com)中，開啟 **Azure Active Directory**  >  **條件式存取**  >  **新原則**。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，開啟 **Azure Active Directory**  >  **條件式存取**  >  **新原則**。
 2. 輸入原則 **名稱**，然後選取 [ **使用者和群組**]。 使用 [包含] 或 [排除] 選項新增原則的群組，然後選取 [ **完成**]。
-3. 選取 [ **Cloud app**]，然後選擇要保護的應用程式。 例如，選擇 [ **選取應用程式**]，然後選取 [ **Office 365 SharePoint 線上** 和 **office 365 Exchange Online**。 選取 **[完成]** 以儲存變更。
+3. 選取 [ **Cloud app**]，然後選擇要保護的應用程式。 例如，選擇 [**選取應用程式**]，然後選取 [ **Office 365 SharePoint 線上** 及 **Office 365 Exchange Online**]。 選取 **[完成]** 來儲存變更。
 
-4. 選取  >  [**用戶端應用程式**] 以將原則套用至應用程式和瀏覽器的條件。 例如，選取 **[是]**，然後啟用 **瀏覽器** 和行動 **應用程式及桌面用戶端**。 選取 **[完成]** 以儲存變更。
+4. 選取  >  [**用戶端應用程式**] 以將原則套用至應用程式和瀏覽器的條件。 例如，選取 **[是]**，然後啟用 **瀏覽器** 和行動 **應用程式及桌面用戶端**。 選取 **[完成]** 來儲存變更。
 
 5. 根據裝置符合性，選取 **[授** 與套用條件式存取]。 例如，選取 **[授與存取權**]  >  **需要將裝置標示為相容**。 選擇 [ **選取** ] 以儲存變更。
 
 6. 選取 [ **啟用原則**]，然後 **建立** 以儲存變更。
 
-如需詳細資訊，請參閱 [在 Intune 中強制使用條件式存取的 Microsoft Defender For Endpoint 相容性](https://docs.microsoft.com/intune/advanced-threat-protection)。
+如需詳細資訊，請參閱 [在 Intune 中強制使用條件式存取的 Microsoft Defender For Endpoint 相容性](/intune/advanced-threat-protection)。
 
 >想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

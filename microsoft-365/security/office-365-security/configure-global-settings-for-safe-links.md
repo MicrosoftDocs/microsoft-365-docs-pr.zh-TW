@@ -18,12 +18,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何查看和設定全域設定 (「封鎖下列 URLs」清單和保護 Office 365 應用程式) 以取得 Office 365 的 Microsoft Defender 中的安全連結。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 623b1bcd670f42c7c6b49c06cacfa31cb8adfd49
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 4e77373657d3167ca8f5bafa544923ab3a2320ce
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792989"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821980"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>設定 Office 365 的 Microsoft Defender 中安全連結的全域設定
 
@@ -51,7 +51,7 @@ ms.locfileid: "52792989"
 
 - 沒有內建或預設的安全連結原則，因此您必須建立至少一個安全連結原則，讓 **封鎖下列 URLs** 清單成為作用中的專案。 如需相關指示，請參閱[為 Office 365 設定 Microsoft Defender 中的安全連結原則](set-up-safe-links-policies.md)。
 
-- 您可以開啟安全性中心，網址為 <https://security.microsoft.com/>。 若要直接移至 [ **安全連結** ] 頁面，請使用 <https://security.microsoft.com/safelinksv2> 。
+- 您可以開啟安全性中心，網址為 <https://security.microsoft.com>。 若要直接移至 [ **安全連結** ] 頁面，請使用 <https://security.microsoft.com/safelinksv2> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -82,7 +82,7 @@ ms.locfileid: "52792989"
 
 3. 設定一或多個專案，如 ["封鎖下列 URLs 的專案語法](safe-links.md#entry-syntax-for-the-block-the-following-urls-list)中所述] 清單。
 
-   完成後，按一下 ****[儲存]。
+   完成後，按一下 [儲存]。
 
 ### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>設定 PowerShell 中的「封鎖下列 URLs」清單
 
@@ -131,7 +131,7 @@ Office 365 應用程式的安全連結保護功能適用于支援的 Office 桌�
 
    - **請勿讓使用者在 Office 365 應用程式中，按原始 URL**：確認切換是向右，以防止使用者在支援的 Office 365 應用程式中按一下原始的封鎖 url：開啟開啟] ![ ](../../media/scc-toggle-on.png) 。
 
-   完成後，按一下 ****[儲存]。
+   完成後，按一下 [儲存]。
 
 ### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>針對 PowerShell 中的 Office 365 應用程式設定安全連結保護
 

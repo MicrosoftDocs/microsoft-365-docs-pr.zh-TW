@@ -1,5 +1,5 @@
 ---
-title: 在高級 eDiscovery 中停用相關性模組
+title: Advanced eDiscovery 停用相關性模組
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,18 +11,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
-description: 在2021年3月10日，「高級 eDiscovery」中的 [相關性] 模組會停用。 本文說明停用相關性之前所執行的動作。 尤其是，您可以執行批次計算來精加工任何未完成的模型，這樣您就可以保留模型中的中繼資料。
-ms.openlocfilehash: 22a7fc37a62dc665d4d798525d5e1e55250d0cb1
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+description: Advanced eDiscovery 中的相關性模組即將于2021年3月10日停用。 本文說明停用相關性之前所執行的動作。 尤其是，您可以執行批次計算來精加工任何未完成的模型，這樣您就可以保留模型中的中繼資料。
+ms.openlocfilehash: 0719c2cb1b6b0d867ffc045fe02d57e1e2f32a61
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122527"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821994"
 ---
-# <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>在高級 eDiscovery 中停用相關性模組
+# <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>Advanced eDiscovery 中的相關性模組退休
 
-在2021年3月10日，我們即將在「高級 eDiscovery」中淘汰相關性模組。 這項淘汰表示組織將無法再存取相關性模組 (，方法是在高級 eDiscovery 案例中 **管理「複查」設定**  >  **相關性**) 或能夠存取任何現有的相關性模型。 即將停用的目前相關性模組會取代為第2季度2021的新預測編碼解決方案。 這項新功能可讓組織在更輕鬆且更為直觀的工作流程中建立自己的預測編碼模型。
+在2021年3月10日，我們即將在 Advanced eDiscovery 中淘汰相關性模組。 這項淘汰表示組織將無法再存取相關性模組 (，只要管理 Advanced eDiscovery 案例中的「**審閱」設定**  >  **相關性**) 或能夠存取任何現有的相關性模型。 即將停用的目前相關性模組會取代為第2季度2021的新預測編碼解決方案。 這項新功能可讓組織在更輕鬆且更為直觀的工作流程中建立自己的預測編碼模型。
 
 若要準備即將進行的退休狀態，建議使用相關性模組的組織，針對所有現有模型執行批次計算，以匯出其模型輸出。 您的模型中的所有相關性分數會永久儲存在對應的審查集內，並可在匯出檔時加以存取。 相關性分數也會保留為載入檔案中的中繼資料。 此外，您仍然可以根據相關性分數篩選審查集中的內容，並存取相關性模型所產生的所有中繼資料。
 

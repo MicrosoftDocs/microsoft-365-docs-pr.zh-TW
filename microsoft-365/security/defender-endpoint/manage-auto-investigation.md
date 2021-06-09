@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 410972bd823c3a3c4fda53cacc225014d83f3457
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274925"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844007"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>在自動調查後複查修正動作
 
@@ -39,7 +39,7 @@ ms.locfileid: "52274925"
 
 - 威脅類型 
 - 產生的判定和 
-- 如何設定組織的 [裝置群組](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) 、 
+- 如何設定組織的 [裝置群組](/microsoft-365/security/defender-endpoint/machine-groups) 、 
 
 修正動作可以自動進行，也可以只在組織的安全性運作小組核准時進行。 
 
@@ -49,7 +49,7 @@ ms.locfileid: "52274925"
 
 - **範例 2**： Contoso 的裝置會包含在裝置群組中，此裝置群組是針對 **任何修正要求核准** 所設定的。 在此案例中，Contoso 的安全操作小組必須在自動調查後複查及核准所有修正動作 (請參閱 [複查擱置的動作](#review-pending-actions)) 。
 
-- **範例 3**： Tailspin 玩具的裝置群組設定為 **無自動回應** (不建議) 。 在此情況下，不會進行自動調查。 未採取任何修正動作或擱置，而且不會在其裝置的 [動作中心](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) 記錄任何動作 (請參閱 [Manage device groups](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)) 。
+- **範例 3**： Tailspin 玩具的裝置群組設定為 **無自動回應** (不建議) 。 在此情況下，不會進行自動調查。 未採取任何修正動作或擱置，而且不會在其裝置的 [動作中心](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) 記錄任何動作 (請參閱 [Manage device groups](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)) 。
 
 不論是自動或核准，自動調查都可能會產生一或多項修正動作：
 - 隔離檔
@@ -111,8 +111,8 @@ ms.locfileid: "52274925"
 |**半自動要求核心資料夾修正的核准** |有一條證據會達到 *可疑* 的判定。 <br/><br/>修正動作正待核准。  |[核准 (或拒絕) 擱置的動作](#review-pending-actions)。|
 |**非 temp 資料夾修正的半要求核准** |對一條證據達成 *惡意的蓄意* 性。 <br/><br/>如果專案是不在暫存資料夾中的檔案或可執行檔，例如使用者的 [下載] 資料夾或 temp 資料夾，則修正動作會等候進行核准。 <br/><br/>如果專案是暫存資料夾中的檔案或可執行檔 *，便會* 自動採取修正動作。  |1. [核准 (或拒絕) 擱置的動作](#review-pending-actions)<br/><br/>2. [檢查完成的動作](#review-completed-actions)  |
 |**非 temp 資料夾修正的半要求核准** |有一條證據會達到 *可疑* 的判定。 <br/><br/>修正動作正待核准。 |[核准 (或拒絕) 擱置的動作](#review-pending-actions)  | 
-|任何 **完整** 或 **半成品** 的自動化層級 |對某項證據的判定，未 *找到任何威脅* 。 <br/><br/>不會採取任何修正動作，也不會有任何動作正待核准。 |[檢視自動調查的詳細資料和結果](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
-|不建議使用 **自動回應** () |不會執行自動調查，因此不會達到 verdicts，也不會採取任何修正動作，也不會等候核准。 |[考慮設定或變更您的裝置群組，以使用 **完整** 或 **半** 個自動化](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) |
+|任何 **完整** 或 **半成品** 的自動化層級 |對某項證據的判定，未 *找到任何威脅* 。 <br/><br/>不會採取任何修正動作，也不會有任何動作正待核准。 |[檢視自動調查的詳細資料和結果](/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
+|不建議使用 **自動回應** () |不會執行自動調查，因此不會達到 verdicts，也不會採取任何修正動作，也不會等候核准。 |[考慮設定或變更您的裝置群組，以使用 **完整** 或 **半** 個自動化](/microsoft-365/security/defender-endpoint/machine-groups) |
 
 在 Microsoft Defender for Endpoint 中，所有的 verdicts 都會在「 [行動中心](auto-investigation-action-center.md#new-a-unified-action-center)」追蹤。
 

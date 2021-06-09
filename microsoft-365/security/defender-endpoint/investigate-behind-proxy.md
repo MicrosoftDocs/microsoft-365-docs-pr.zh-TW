@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47be07759a72a080a3687ed3bb50cef9d0a959b7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 55c001781ff016d7a23dc5db286d454b39fac5de
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904043"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841051"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>調查正向 Proxy 背後發生的連線事件。
 
@@ -45,11 +45,11 @@ Endpoint for Endpoint 支援透過網路保護進行的高級 HTTP 層級監視�
 
 您可以使用下列模式來控制網路保護：
 
-- **封鎖** <br> 使用者或應用程式將被封鎖，無法連線到危險網域。 您可以在 Microsoft Defender Security Center 中看到這項活動。
-- **稽核** <br> 不會封鎖使用者或應用程式連線到危險網域。 不過，您仍會在 Microsoft Defender 安全中心看到這項活動。
+- **封鎖** <br> 使用者或應用程式將被封鎖，無法連線到危險網域。 您將可以在 Microsoft Defender 資訊安全中心中看到此活動。
+- **稽核** <br> 不會封鎖使用者或應用程式連線到危險網域。 不過，您在 Microsoft Defender 資訊安全中心仍會看到這項活動。
 
 
-如果關閉網路保護，將不會封鎖使用者或應用程式連線到危險網域。 在 Microsoft Defender Security Center 中，您不會看到任何網路活動。
+如果關閉網路保護，將不會封鎖使用者或應用程式連線到危險網域。 您不會在 Microsoft Defender 資訊安全中心中看到任何網路活動。
 
 如果您未設定它，預設會關閉網路封鎖功能。
 
@@ -94,4 +94,4 @@ DeviceNetworkEvents
 
 
 ## <a name="related-topics"></a>相關主題
-- [使用 GP-原則 CSP 應用網路保護](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+- [使用 GP-原則 CSP 應用網路保護](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

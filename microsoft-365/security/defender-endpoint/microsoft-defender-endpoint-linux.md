@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2242d195f4a4ea4b8f0c345d82fa0ad1f947bfa2
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: bd9d42ed85e9a489107a72ccbe841537a7e524d4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730759"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843515"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上適用於端點的 Microsoft Defender
 
@@ -140,7 +140,7 @@ ms.locfileid: "52730759"
 |![Microsoft Defender for Endpoint URLs 試算表的縮圖影像](images/mdatp-urls.png)<br/>  | 服務位置、地理位置和作業系統的特定 DNS 記錄試算表。 <br><br>[在這裡下載試算表。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 > [!NOTE]
-> 如需詳細的 URL 清單，請參閱 [設定 proxy 和網際網路連線設定](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
+> 如需詳細的 URL 清單，請參閱 [設定 proxy 和網際網路連線設定](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
 
 「！的 Defender」可以使用下列探索方法探索 proxy 伺服器：
 - 透明Proxy
@@ -159,7 +159,7 @@ ms.locfileid: "52730759"
 
 Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供新功能。 若要在 Linux 上更新 Microsoft Defender for Endpoint，請參閱 [在 linux 上為 Microsoft defender For Endpoint 部署更新](linux-updates.md)。
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上設定 Microsoft Defender for Endpoint
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>設定 Linux 上適用於端點的 Microsoft Defender 的方式
 
 有關如何在企業環境中設定產品的指引，可在 [Linux 上的 Microsoft Defender For Endpoint 的 [設定偏好設定](linux-preferences.md)] 中取得。
 
