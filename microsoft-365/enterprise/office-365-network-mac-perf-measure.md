@@ -21,4 +21,4 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46695566"
 ---
-# <a name="office-365-measurements-for-network-performance-recommendations"></a><span data-ttu-id="06587-103">網路效能建議的 Office 365 度量</span><span class="sxs-lookup"><span data-stu-id="06587-103">Office 365 measurements for network performance recommendations</span></span>
+# <a name="office-365-measurements-for-network-performance-recommendations"></a><span data-ttu-id="a4a6b-103">網路效能建議的 Office 365 度量</span><span class="sxs-lookup"><span data-stu-id="a4a6b-103">Office 365 measurements for network performance recommendations</span></span>

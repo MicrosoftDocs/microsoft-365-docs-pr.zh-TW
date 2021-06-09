@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 中的通訊法規遵從性
-description: 瞭解如何在 Microsoft 365 中設定通訊法規遵從性。
-keywords: Microsoft 365，內幕人士風險，合規性
+title: Microsoft 365 中的通訊合規性
+description: 瞭解如何在 Microsoft 365 中設定通訊符合性。
+keywords: Microsoft 365，有問必答風險，合規性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -23,23 +23,23 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50423221"
 ---
-# <a name="communication-compliance-in-microsoft-365"></a><span data-ttu-id="ec008-104">Microsoft 365 中的通訊法規遵從性</span><span class="sxs-lookup"><span data-stu-id="ec008-104">Communication compliance in Microsoft 365</span></span>
+# <a name="communication-compliance-in-microsoft-365"></a><span data-ttu-id="7bd0b-104">Microsoft 365 中的通訊合規性</span><span class="sxs-lookup"><span data-stu-id="7bd0b-104">Communication compliance in Microsoft 365</span></span>
 
-<span data-ttu-id="ec008-105">保護機密資訊和偵測和作用於工作場所騷擾的事件，是遵守內部原則和標準的重要部分。</span><span class="sxs-lookup"><span data-stu-id="ec008-105">Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards.</span></span> <span data-ttu-id="ec008-106">Microsoft 365 中的通訊法規遵從性協助您快速偵測、捕獲和採取電子郵件和 Microsoft 小組通訊的修正動作，協助將這些風險降至最低。</span><span class="sxs-lookup"><span data-stu-id="ec008-106">Communication compliance in Microsoft 365 helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications.</span></span> <span data-ttu-id="ec008-107">這包括不適當的通訊，包含與您組織內部和外部的敏感資訊共用的猥褻、威脅及騷擾和通訊。</span><span class="sxs-lookup"><span data-stu-id="ec008-107">These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.</span></span>
+<span data-ttu-id="7bd0b-105">保護機密資訊和偵測和作用於工作場所騷擾的事件，是遵守內部原則和標準的重要部分。</span><span class="sxs-lookup"><span data-stu-id="7bd0b-105">Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards.</span></span> <span data-ttu-id="7bd0b-106">Microsoft 365 中的通訊相容性協助您快速偵測、捕獲和採取電子郵件和 Microsoft Teams 通訊的修正動作，協助將這些風險降至最低。</span><span class="sxs-lookup"><span data-stu-id="7bd0b-106">Communication compliance in Microsoft 365 helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications.</span></span> <span data-ttu-id="7bd0b-107">這包括不適當的通訊，包含與您組織內部和外部的敏感資訊共用的猥褻、威脅及騷擾和通訊。</span><span class="sxs-lookup"><span data-stu-id="7bd0b-107">These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.</span></span>
 
-## <a name="configure-communication-compliance-for-microsoft-365"></a><span data-ttu-id="ec008-108">設定 Microsoft 365 的通訊相容性</span><span class="sxs-lookup"><span data-stu-id="ec008-108">Configure communication compliance for Microsoft 365</span></span>
+## <a name="configure-communication-compliance-for-microsoft-365"></a><span data-ttu-id="7bd0b-108">設定 Microsoft 365 的通訊相容性</span><span class="sxs-lookup"><span data-stu-id="7bd0b-108">Configure communication compliance for Microsoft 365</span></span>
 
-<span data-ttu-id="ec008-109">請使用下列步驟設定組織的通訊相容性：</span><span class="sxs-lookup"><span data-stu-id="ec008-109">Use the following steps to configure communication compliance for your organization:</span></span>
+<span data-ttu-id="7bd0b-109">請使用下列步驟設定組織的通訊相容性：</span><span class="sxs-lookup"><span data-stu-id="7bd0b-109">Use the following steps to configure communication compliance for your organization:</span></span>
 
 ![內部擁有風險方案通訊規範步驟](../media/ir-solution-cc-steps.png)
 
-1. <span data-ttu-id="ec008-111">深入瞭解 Microsoft 365 中的[通訊法規遵從性](communication-compliance.md)</span><span class="sxs-lookup"><span data-stu-id="ec008-111">Learn about [communication compliance](communication-compliance.md) in Microsoft 365</span></span>
-2. <span data-ttu-id="ec008-112">規劃 [通訊合規性](communication-compliance-plan.md) 及 [驗證授權](communication-compliance-configure.md#subscriptions-and-licensing)</span><span class="sxs-lookup"><span data-stu-id="ec008-112">Plan for [communication compliance](communication-compliance-plan.md) and [verify licensing](communication-compliance-configure.md#subscriptions-and-licensing)</span></span>
-3. <span data-ttu-id="ec008-113">檢查 [功能參考和解決方案功能](communication-compliance-feature-reference.md)</span><span class="sxs-lookup"><span data-stu-id="ec008-113">Review [feature reference and solution capabilities](communication-compliance-feature-reference.md)</span></span>
-4. <span data-ttu-id="ec008-114">設定 [必要條件](communication-compliance-configure.md#step-2-required-enable-the-audit-log) 和 [許可權](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)</span><span class="sxs-lookup"><span data-stu-id="ec008-114">Configure [prerequisites](communication-compliance-configure.md#step-2-required-enable-the-audit-log) and [permissions](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)</span></span>
-5. <span data-ttu-id="ec008-115">建立及設定 [通訊相容性原則](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)</span><span class="sxs-lookup"><span data-stu-id="ec008-115">Create and configure [communication compliance policies](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)</span></span>
+1. <span data-ttu-id="7bd0b-111">深入瞭解 Microsoft 365 中的[通訊符合性](communication-compliance.md)</span><span class="sxs-lookup"><span data-stu-id="7bd0b-111">Learn about [communication compliance](communication-compliance.md) in Microsoft 365</span></span>
+2. <span data-ttu-id="7bd0b-112">規劃 [通訊合規性](communication-compliance-plan.md) 及 [驗證授權](communication-compliance-configure.md#subscriptions-and-licensing)</span><span class="sxs-lookup"><span data-stu-id="7bd0b-112">Plan for [communication compliance](communication-compliance-plan.md) and [verify licensing](communication-compliance-configure.md#subscriptions-and-licensing)</span></span>
+3. <span data-ttu-id="7bd0b-113">檢查 [功能參考和解決方案功能](communication-compliance-feature-reference.md)</span><span class="sxs-lookup"><span data-stu-id="7bd0b-113">Review [feature reference and solution capabilities](communication-compliance-feature-reference.md)</span></span>
+4. <span data-ttu-id="7bd0b-114">設定 [必要條件](communication-compliance-configure.md#step-2-required-enable-the-audit-log) 和 [許可權](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)</span><span class="sxs-lookup"><span data-stu-id="7bd0b-114">Configure [prerequisites](communication-compliance-configure.md#step-2-required-enable-the-audit-log) and [permissions](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)</span></span>
+5. <span data-ttu-id="7bd0b-115">建立及設定 [通訊相容性原則](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)</span><span class="sxs-lookup"><span data-stu-id="7bd0b-115">Create and configure [communication compliance policies](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)</span></span>
 
-## <a name="more-information-about-communication-compliance"></a><span data-ttu-id="ec008-116">有關通訊規範的詳細資訊</span><span class="sxs-lookup"><span data-stu-id="ec008-116">More information about communication compliance</span></span>
+## <a name="more-information-about-communication-compliance"></a><span data-ttu-id="7bd0b-116">有關通訊規範的詳細資訊</span><span class="sxs-lookup"><span data-stu-id="7bd0b-116">More information about communication compliance</span></span>
 
-- [<span data-ttu-id="ec008-117">調查和修正警示</span><span class="sxs-lookup"><span data-stu-id="ec008-117">Investigate and remediate alerts</span></span>](communication-compliance-investigate-remediate.md)
-- [<span data-ttu-id="ec008-118">案例研究-Contoso 會快速設定適用于 Microsoft 小組、Exchange 及 Yammer 通訊的冒犯性語言原則</span><span class="sxs-lookup"><span data-stu-id="ec008-118">Case study - Contoso quickly configures an offensive language policy for Microsoft Teams, Exchange, and Yammer communications</span></span>](communication-compliance-case-study.md)
+- [<span data-ttu-id="7bd0b-117">調查和修正警示</span><span class="sxs-lookup"><span data-stu-id="7bd0b-117">Investigate and remediate alerts</span></span>](communication-compliance-investigate-remediate.md)
+- [<span data-ttu-id="7bd0b-118">案例研究-Contoso 會快速設定冒犯性語言原則，以進行 Microsoft Teams、Exchange 和 Yammer 通訊</span><span class="sxs-lookup"><span data-stu-id="7bd0b-118">Case study - Contoso quickly configures an offensive language policy for Microsoft Teams, Exchange, and Yammer communications</span></span>](communication-compliance-case-study.md)

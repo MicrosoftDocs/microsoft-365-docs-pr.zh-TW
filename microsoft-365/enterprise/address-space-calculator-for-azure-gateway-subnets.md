@@ -23,20 +23,20 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "49780565"
 ---
-# <a name="address-space-calculator-for-azure-gateway-subnets"></a><span data-ttu-id="edca7-103">Azure 閘道子網的位址空間計算機</span><span class="sxs-lookup"><span data-stu-id="edca7-103">Address space calculator for Azure gateway subnets</span></span>
+# <a name="address-space-calculator-for-azure-gateway-subnets"></a><span data-ttu-id="cc583-103">Azure 閘道子網的位址空間計算機</span><span class="sxs-lookup"><span data-stu-id="cc583-103">Address space calculator for Azure gateway subnets</span></span>
 
-<span data-ttu-id="edca7-104">連線至其他網路之 Azure 基礎結構服務中的虛擬網路 (VNet) 必須具有閘道子網。</span><span class="sxs-lookup"><span data-stu-id="edca7-104">A virtual network (VNet) in Azure infrastructure services that is connected to other networks must have a gateway subnet.</span></span> <span data-ttu-id="edca7-105">定義閘道子網的最佳作法如下：</span><span class="sxs-lookup"><span data-stu-id="edca7-105">The best practices for defining the gateway subnet are:</span></span>
+<span data-ttu-id="cc583-104">連線至其他網路之 Azure 基礎結構服務中的虛擬網路 (VNet) 必須具有閘道子網。</span><span class="sxs-lookup"><span data-stu-id="cc583-104">A virtual network (VNet) in Azure infrastructure services that is connected to other networks must have a gateway subnet.</span></span> <span data-ttu-id="cc583-105">定義閘道子網的最佳作法如下：</span><span class="sxs-lookup"><span data-stu-id="cc583-105">The best practices for defining the gateway subnet are:</span></span>
 
-- <span data-ttu-id="edca7-106">閘道子網的前置長度可以有最大前置長度 29 (例如，10.119.255.248/29) ，但目前建議使用的前置詞長度為 27 (例如，10.119.255.224/27) 。</span><span class="sxs-lookup"><span data-stu-id="edca7-106">The prefix length of the gateway subnet can have a maximum prefix length of 29 (for example, 10.119.255.248/29), but the current recommendation is that you use a prefix length of 27 (for example, 10.119.255.224/27).</span></span>
-- <span data-ttu-id="edca7-107">在定義閘道子網的位址空間時，請使用 VNet 位址空間的最後一部分。</span><span class="sxs-lookup"><span data-stu-id="edca7-107">When defining the address space of the gateway subnet, use the last part of the VNet address space.</span></span>
+- <span data-ttu-id="cc583-106">閘道子網的前置長度可以有最大前置長度 29 (例如，10.119.255.248/29) ，但目前建議使用的前置詞長度為 27 (例如，10.119.255.224/27) 。</span><span class="sxs-lookup"><span data-stu-id="cc583-106">The prefix length of the gateway subnet can have a maximum prefix length of 29 (for example, 10.119.255.248/29), but the current recommendation is that you use a prefix length of 27 (for example, 10.119.255.224/27).</span></span>
+- <span data-ttu-id="cc583-107">在定義閘道子網的位址空間時，請使用 VNet 位址空間的最後一部分。</span><span class="sxs-lookup"><span data-stu-id="cc583-107">When defining the address space of the gateway subnet, use the last part of the VNet address space.</span></span>
 
-<span data-ttu-id="edca7-108">針對第二個建議，您可以透過將閘道子網所用的位數設定為0，以及 VNet 位址空間中的剩餘位數設定為1，以判斷閘道子網的位址空間。</span><span class="sxs-lookup"><span data-stu-id="edca7-108">For the second recommendation, you can determine the address space of the gateway subnet by setting the bits used for the gateway subnet to 0 and the remaining bits in the VNet address space to 1.</span></span> <span data-ttu-id="edca7-109">若要快速計算閘道子網位址空間，而不需要轉換成二進位及回到十進位，您可以使用以 c # 或 Python 或使用 PowerShell 命令區塊編寫的主控台應用程式。</span><span class="sxs-lookup"><span data-stu-id="edca7-109">To quickly calculate the gateway subnet address space without having to convert to binary and back to decimal, you can use a console application written in C# or Python or with a PowerShell command block.</span></span>
+<span data-ttu-id="cc583-108">針對第二個建議，您可以透過將閘道子網所用的位數設定為0，以及 VNet 位址空間中的剩餘位數設定為1，以判斷閘道子網的位址空間。</span><span class="sxs-lookup"><span data-stu-id="cc583-108">For the second recommendation, you can determine the address space of the gateway subnet by setting the bits used for the gateway subnet to 0 and the remaining bits in the VNet address space to 1.</span></span> <span data-ttu-id="cc583-109">若要快速計算閘道子網位址空間，而不需要轉換成二進位及回到十進位，您可以使用以 c # 或 Python 或使用 PowerShell 命令區塊編寫的主控台應用程式。</span><span class="sxs-lookup"><span data-stu-id="cc583-109">To quickly calculate the gateway subnet address space without having to convert to binary and back to decimal, you can use a console application written in C# or Python or with a PowerShell command block.</span></span>
 
-<span data-ttu-id="edca7-110">本文包含的 c #、Python 及 PowerShell 程式碼區塊，會根據 w.x.y.z/n 的值，計算 VNet 位址前置詞和閘道子網前置長度的閘道子網位址空間。</span><span class="sxs-lookup"><span data-stu-id="edca7-110">This article contains C#, Python, and PowerShell code blocks that calculate the gateway subnet address space based on the values of w.x.y.z/n for the VNet address prefix and the gateway subnet prefix length.</span></span>
+<span data-ttu-id="cc583-110">本文包含的 c #、Python 及 PowerShell 程式碼區塊，會根據 w.x.y.z/n 的值，計算 VNet 位址前置詞和閘道子網前置長度的閘道子網位址空間。</span><span class="sxs-lookup"><span data-stu-id="cc583-110">This article contains C#, Python, and PowerShell code blocks that calculate the gateway subnet address space based on the values of w.x.y.z/n for the VNet address prefix and the gateway subnet prefix length.</span></span>
 
-## <a name="c-code-block"></a><span data-ttu-id="edca7-111">C # 程式碼區塊</span><span class="sxs-lookup"><span data-stu-id="edca7-111">C# code block</span></span>
+## <a name="c-code-block"></a><span data-ttu-id="cc583-111">C # 程式碼區塊</span><span class="sxs-lookup"><span data-stu-id="cc583-111">C# code block</span></span>
 
-<span data-ttu-id="edca7-112">使用此程式碼區塊，可在 c # 中建立主控台應用程式。</span><span class="sxs-lookup"><span data-stu-id="edca7-112">Use this code block to create a console app in C#.</span></span>
+<span data-ttu-id="cc583-112">使用此程式碼區塊，可在 c # 中建立主控台應用程式。</span><span class="sxs-lookup"><span data-stu-id="cc583-112">Use this code block to create a console app in C#.</span></span>
 
 ```c#
 using System; 
@@ -108,9 +108,9 @@ namespace ConsoleApplication1
 } 
 ```
 
-## <a name="python-code-block"></a><span data-ttu-id="edca7-113">Python 程式碼區塊</span><span class="sxs-lookup"><span data-stu-id="edca7-113">Python code block</span></span>
+## <a name="python-code-block"></a><span data-ttu-id="cc583-113">Python 程式碼區塊</span><span class="sxs-lookup"><span data-stu-id="cc583-113">Python code block</span></span>
 
-<span data-ttu-id="edca7-114">使用此程式碼區塊可在 Python 中建立主控台應用程式。</span><span class="sxs-lookup"><span data-stu-id="edca7-114">Use this code block to create a console app in Python.</span></span>
+<span data-ttu-id="cc583-114">使用此程式碼區塊可在 Python 中建立主控台應用程式。</span><span class="sxs-lookup"><span data-stu-id="cc583-114">Use this code block to create a console app in Python.</span></span>
 
 ```python
 import math 
@@ -147,9 +147,9 @@ print(gwAddrPref)
 ```
 
 
-## <a name="powershell-command-block"></a><span data-ttu-id="edca7-115">PowerShell 命令區塊</span><span class="sxs-lookup"><span data-stu-id="edca7-115">PowerShell command block</span></span>
+## <a name="powershell-command-block"></a><span data-ttu-id="cc583-115">PowerShell 命令區塊</span><span class="sxs-lookup"><span data-stu-id="cc583-115">PowerShell command block</span></span>
 
-<span data-ttu-id="edca7-116">填寫值，並在 PowerShell 視窗或 PowerShell 整合式腳本環境 (ISE) 中執行所產生的命令區塊。</span><span class="sxs-lookup"><span data-stu-id="edca7-116">Fill in the values and run the resulting command block in a PowerShell window or in the PowerShell Integrated Script Environment (ISE).</span></span>
+<span data-ttu-id="cc583-116">填寫值，並在 PowerShell 視窗或 PowerShell 整合式腳本環境 (ISE) 中執行所產生的命令區塊。</span><span class="sxs-lookup"><span data-stu-id="cc583-116">Fill in the values and run the resulting command block in a PowerShell window or in the PowerShell Integrated Script Environment (ISE).</span></span>
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 
@@ -177,6 +177,6 @@ $dx= [string]$w2 + "." + [string]$x2 + "." + [string]$y2 + "." + [string]$z2 + "
 Write-Host "Your gateway address prefix is: " $dx
 ```
     
-## <a name="related-topics"></a><span data-ttu-id="edca7-117">相關主題</span><span class="sxs-lookup"><span data-stu-id="edca7-117">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="cc583-117">相關主題</span><span class="sxs-lookup"><span data-stu-id="cc583-117">Related topics</span></span>
 
-[<span data-ttu-id="edca7-118">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="edca7-118">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+[<span data-ttu-id="cc583-118">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="cc583-118">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
