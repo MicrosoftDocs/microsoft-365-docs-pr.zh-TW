@@ -15,7 +15,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
 productDirectory:
   items:
-    - title: 快速入門
+    - title: 入門
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: 規劃您的移動 Microsoft 365 商務。
       url: what-is-microsoft-365.md

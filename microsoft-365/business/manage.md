@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 365 for business
+title: 管理商務 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: 瞭解如何管理 Microsoft 365 相關的系統管理員工作、行動裝置、Windows 10 電腦及許多這類工作。
+description: 瞭解如何管理商務相關的系統管理員工作、行動裝置、Windows 10 電腦及許多這類工作的 Microsoft 365。
 ms.openlocfilehash: 0ad2326bdcc785c0d8d1a52dee74187cdc1668e7
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -29,74 +29,74 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578360"
 ---
-# <a name="manage-microsoft-365-for-business"></a><span data-ttu-id="29e17-103">管理 Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="29e17-103">Manage Microsoft 365 for business</span></span>
+# <a name="manage-microsoft-365-for-business"></a><span data-ttu-id="241b2-103">管理商務 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="241b2-103">Manage Microsoft 365 for business</span></span>
 
-## <a name="general-microsoft-365-for-business-admin-tasks"></a><span data-ttu-id="29e17-104">一般 Microsoft 365 for business 系統管理工作</span><span class="sxs-lookup"><span data-stu-id="29e17-104">General Microsoft 365 for business admin tasks</span></span>
+## <a name="general-microsoft-365-for-business-admin-tasks"></a><span data-ttu-id="241b2-104">商務系統管理員任務的一般 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="241b2-104">General Microsoft 365 for business admin tasks</span></span>
 
-<span data-ttu-id="29e17-105">Office 365 的大部分系統 [管理內容](/office365/admin/admin-home) 也適用于商務用 Microsoft 365。</span><span class="sxs-lookup"><span data-stu-id="29e17-105">Most of the [admin content](/office365/admin/admin-home) for Office 365 also applies to Microsoft 365 for business.</span></span>
+<span data-ttu-id="241b2-105">大多數的 Office 365 系統[管理內容](/office365/admin/admin-home)也適用于商務 Microsoft 365。</span><span class="sxs-lookup"><span data-stu-id="241b2-105">Most of the [admin content](/office365/admin/admin-home) for Office 365 also applies to Microsoft 365 for business.</span></span>
 
-- [<span data-ttu-id="29e17-106">將更多使用者新增至 Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="29e17-106">Add more users to Microsoft 365 for business</span></span>](../admin/add-users/add-users.md)
+- [<span data-ttu-id="241b2-106">將更多使用者新增至 Microsoft 365 商務</span><span class="sxs-lookup"><span data-stu-id="241b2-106">Add more users to Microsoft 365 for business</span></span>](../admin/add-users/add-users.md)
     
-- [<span data-ttu-id="29e17-107">檢視原則和裝置</span><span class="sxs-lookup"><span data-stu-id="29e17-107">View policies and devices</span></span>](view-policies-and-devices.md)
+- [<span data-ttu-id="241b2-107">檢視原則和裝置</span><span class="sxs-lookup"><span data-stu-id="241b2-107">View policies and devices</span></span>](view-policies-and-devices.md)
     
-- [<span data-ttu-id="29e17-108">Microsoft 365 商務版安全性功能</span><span class="sxs-lookup"><span data-stu-id="29e17-108">Microsoft 365 for business security features</span></span>](security-features.md)
+- [<span data-ttu-id="241b2-108">商務安全功能 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="241b2-108">Microsoft 365 for business security features</span></span>](security-features.md)
     
-- [<span data-ttu-id="29e17-109">Microsoft 365 for business 中的保護功能如何對應至 Intune 設定</span><span class="sxs-lookup"><span data-stu-id="29e17-109">How do protection features in Microsoft 365 for business map to Intune settings</span></span>](map-protection-features-to-intune-settings.md)
+- [<span data-ttu-id="241b2-109">商務用 Microsoft 365 中的保護功能如何對應至 Intune 設定</span><span class="sxs-lookup"><span data-stu-id="241b2-109">How do protection features in Microsoft 365 for business map to Intune settings</span></span>](map-protection-features-to-intune-settings.md)
     
-<span data-ttu-id="29e17-110">請參閱下列各節，以瞭解如何使用 Microsoft 365 for business 來保護您組織的電腦和行動裝置上的資料。</span><span class="sxs-lookup"><span data-stu-id="29e17-110">See the following sections on how to use Microsoft 365 for business to protect your organization's data on PCs and mobile devices.</span></span>
+<span data-ttu-id="241b2-110">請參閱下列各節，以瞭解如何使用 Microsoft 365 商務用來保護您組織的電腦和行動裝置上的資料。</span><span class="sxs-lookup"><span data-stu-id="241b2-110">See the following sections on how to use Microsoft 365 for business to protect your organization's data on PCs and mobile devices.</span></span>
   
-## <a name="manage-mobile-devices"></a><span data-ttu-id="29e17-111">管理行動裝置</span><span class="sxs-lookup"><span data-stu-id="29e17-111">Manage mobile devices</span></span>
+## <a name="manage-mobile-devices"></a><span data-ttu-id="241b2-111">管理行動裝置</span><span class="sxs-lookup"><span data-stu-id="241b2-111">Manage mobile devices</span></span>
 
-- [<span data-ttu-id="29e17-112">為商務用 Microsoft 365 使用者設定行動裝置</span><span class="sxs-lookup"><span data-stu-id="29e17-112">Set up mobile devices for Microsoft 365 for business users</span></span>](set-up-mobile-devices.md)
+- [<span data-ttu-id="241b2-112">為商務使用者設定 Microsoft 365 的行動裝置</span><span class="sxs-lookup"><span data-stu-id="241b2-112">Set up mobile devices for Microsoft 365 for business users</span></span>](set-up-mobile-devices.md)
     
-- [<span data-ttu-id="29e17-113">設定 Android 或 iOS 裝置的 App 保護設定</span><span class="sxs-lookup"><span data-stu-id="29e17-113">Set app protection settings for Android or iOS devices</span></span>](app-protection-settings-for-android-and-ios.md)
+- [<span data-ttu-id="241b2-113">設定 Android 或 iOS 裝置的 App 保護設定</span><span class="sxs-lookup"><span data-stu-id="241b2-113">Set app protection settings for Android or iOS devices</span></span>](app-protection-settings-for-android-and-ios.md)
     
-    <span data-ttu-id="29e17-114">若要確定這是否正常運作，請參閱 [驗證 Android 或 iOS 裝置上的 app 保護設定](validate-settings-on-android-or-ios.md)。</span><span class="sxs-lookup"><span data-stu-id="29e17-114">To make sure this worked, see [Validate app protection settings on an Android or iOS device](validate-settings-on-android-or-ios.md).</span></span> 
+    <span data-ttu-id="241b2-114">若要確定這是否正常運作，請參閱 [驗證 Android 或 iOS 裝置上的 app 保護設定](validate-settings-on-android-or-ios.md)。</span><span class="sxs-lookup"><span data-stu-id="241b2-114">To make sure this worked, see [Validate app protection settings on an Android or iOS device](validate-settings-on-android-or-ios.md).</span></span> 
     
-- [<span data-ttu-id="29e17-115">從裝置移除公司資料</span><span class="sxs-lookup"><span data-stu-id="29e17-115">Remove company data from devices</span></span>](remove-company-data.md)
+- [<span data-ttu-id="241b2-115">從裝置移除公司資料</span><span class="sxs-lookup"><span data-stu-id="241b2-115">Remove company data from devices</span></span>](remove-company-data.md)
     
-## <a name="manage-windows-10-pcs"></a><span data-ttu-id="29e17-116">管理 Windows 10 電腦</span><span class="sxs-lookup"><span data-stu-id="29e17-116">Manage Windows 10 PCs</span></span>
+## <a name="manage-windows-10-pcs"></a><span data-ttu-id="241b2-116">管理 Windows 10 電腦</span><span class="sxs-lookup"><span data-stu-id="241b2-116">Manage Windows 10 PCs</span></span>
 
-- [<span data-ttu-id="29e17-117">為商務用 Microsoft 365 使用者設定 Windows 裝置</span><span class="sxs-lookup"><span data-stu-id="29e17-117">Set up Windows devices for Microsoft 365 for business users</span></span>](set-up-windows-devices.md)
+- [<span data-ttu-id="241b2-117">為商務使用者設定 Microsoft 365 的 Windows 裝置</span><span class="sxs-lookup"><span data-stu-id="241b2-117">Set up Windows devices for Microsoft 365 for business users</span></span>](set-up-windows-devices.md)
 
-    <span data-ttu-id="29e17-118">在您自動安裝 Office 之前，請先閱讀 [Microsoft 365 for Business 準備 office 用戶端部署](prepare-for-office-client-deployment.md) 。</span><span class="sxs-lookup"><span data-stu-id="29e17-118">Read [Prepare for Office client deployment by Microsoft 365 for business](prepare-for-office-client-deployment.md) before you auto-install Office.</span></span> 
+    <span data-ttu-id="241b2-118">在您自動安裝 Office 之前，請[Microsoft 365 進行商務用，以取得 Office 用戶端部署的準備](prepare-for-office-client-deployment.md)。</span><span class="sxs-lookup"><span data-stu-id="241b2-118">Read [Prepare for Office client deployment by Microsoft 365 for business](prepare-for-office-client-deployment.md) before you auto-install Office.</span></span> 
     
-- [<span data-ttu-id="29e17-119">設定 Windows 10 裝置的裝置保護設定</span><span class="sxs-lookup"><span data-stu-id="29e17-119">Set device protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-pcs.md)
+- [<span data-ttu-id="241b2-119">設定 Windows 10 裝置的裝置保護設定</span><span class="sxs-lookup"><span data-stu-id="241b2-119">Set device protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-pcs.md)
     
-    <span data-ttu-id="29e17-120">若要確定這是否正常運作，請參閱 [在 Windows 10 裝置上驗證裝置保護設定](validate-settings-on-windows-10-pcs.md)。</span><span class="sxs-lookup"><span data-stu-id="29e17-120">To make sure this worked, see [Validate device protection settings on Windows 10 devices](validate-settings-on-windows-10-pcs.md).</span></span> 
+    <span data-ttu-id="241b2-120">若要確定這是否正常運作，請參閱[在 Windows 10 裝置上驗證裝置保護設定](validate-settings-on-windows-10-pcs.md)。</span><span class="sxs-lookup"><span data-stu-id="241b2-120">To make sure this worked, see [Validate device protection settings on Windows 10 devices](validate-settings-on-windows-10-pcs.md).</span></span> 
     
-- [<span data-ttu-id="29e17-121">設定 Windows 10 裝置的應用程式保護設定</span><span class="sxs-lookup"><span data-stu-id="29e17-121">Set application protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-devices.md)
+- [<span data-ttu-id="241b2-121">設定 Windows 10 裝置的應用程式保護設定</span><span class="sxs-lookup"><span data-stu-id="241b2-121">Set application protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-devices.md)
     
-    <span data-ttu-id="29e17-122">若要確定這是否正常運作，請參閱 [在 Windows 10 電腦上驗證應用程式保護設定](validate-protection-settings-on-windows-10-pcs.md)。</span><span class="sxs-lookup"><span data-stu-id="29e17-122">To make sure this worked, see [Validate app protection settings on Windows 10 PCs](validate-protection-settings-on-windows-10-pcs.md).</span></span> 
+    <span data-ttu-id="241b2-122">若要確定這是否正常運作，請參閱[驗證 Windows 10 電腦上的 app 保護設定](validate-protection-settings-on-windows-10-pcs.md)。</span><span class="sxs-lookup"><span data-stu-id="241b2-122">To make sure this worked, see [Validate app protection settings on Windows 10 PCs](validate-protection-settings-on-windows-10-pcs.md).</span></span> 
     
-- [<span data-ttu-id="29e17-123">從裝置移除公司資料</span><span class="sxs-lookup"><span data-stu-id="29e17-123">Remove company data from devices</span></span>](remove-company-data.md)
+- [<span data-ttu-id="241b2-123">從裝置移除公司資料</span><span class="sxs-lookup"><span data-stu-id="241b2-123">Remove company data from devices</span></span>](remove-company-data.md)
     
-- [<span data-ttu-id="29e17-124">將 Windows 10 裝置重設成出廠預設值</span><span class="sxs-lookup"><span data-stu-id="29e17-124">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
+- [<span data-ttu-id="241b2-124">將 Windows 10 裝置重設成出廠預設值</span><span class="sxs-lookup"><span data-stu-id="241b2-124">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
     
-### <a name="use-autopilot-to-deploy-windows-10-devices"></a><span data-ttu-id="29e17-125">使用 AutoPilot 部署 Windows 10 裝置</span><span class="sxs-lookup"><span data-stu-id="29e17-125">Use AutoPilot to deploy Windows 10 devices</span></span>
+### <a name="use-autopilot-to-deploy-windows-10-devices"></a><span data-ttu-id="241b2-125">使用 AutoPilot 部署 Windows 10 裝置</span><span class="sxs-lookup"><span data-stu-id="241b2-125">Use AutoPilot to deploy Windows 10 devices</span></span>
 
-<span data-ttu-id="29e17-126">下列主題說明如何使用 Microsoft 365 for business 中的 Windows AutoPilot 預先設定 Windows 10 裝置。</span><span class="sxs-lookup"><span data-stu-id="29e17-126">The following topics describe how you can use Windows AutoPilot in Microsoft 365 for business to pre-configure Windows 10 devices.</span></span>
+<span data-ttu-id="241b2-126">下列主題說明如何使用 Windows AutoPilot，以 Microsoft 365 進行商務用以預先設定 Windows 10 裝置。</span><span class="sxs-lookup"><span data-stu-id="241b2-126">The following topics describe how you can use Windows AutoPilot in Microsoft 365 for business to pre-configure Windows 10 devices.</span></span>
   
-- [<span data-ttu-id="29e17-127">使用逐步指南新增 Autopilot 裝置和設定檔</span><span class="sxs-lookup"><span data-stu-id="29e17-127">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
+- [<span data-ttu-id="241b2-127">使用逐步指南新增 Autopilot 裝置和設定檔</span><span class="sxs-lookup"><span data-stu-id="241b2-127">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
     
-- [<span data-ttu-id="29e17-128">建立及編輯 AutoPilot 設定檔</span><span class="sxs-lookup"><span data-stu-id="29e17-128">Create and edit AutoPilot profiles</span></span>](create-and-edit-autopilot-profiles.md)
+- [<span data-ttu-id="241b2-128">建立及編輯 AutoPilot 設定檔</span><span class="sxs-lookup"><span data-stu-id="241b2-128">Create and edit AutoPilot profiles</span></span>](create-and-edit-autopilot-profiles.md)
     
-- [<span data-ttu-id="29e17-129">建立及編輯 AutoPilot 裝置</span><span class="sxs-lookup"><span data-stu-id="29e17-129">Create and edit AutoPilot devices</span></span>](create-and-edit-autopilot-devices.md)
+- [<span data-ttu-id="241b2-129">建立及編輯 AutoPilot 裝置</span><span class="sxs-lookup"><span data-stu-id="241b2-129">Create and edit AutoPilot devices</span></span>](create-and-edit-autopilot-devices.md)
     
-- [<span data-ttu-id="29e17-130">AutoPilot 裝置錯誤疑難排解</span><span class="sxs-lookup"><span data-stu-id="29e17-130">Troubleshoot AutoPilot device errors</span></span>](troubleshoot-autopilot-errors.md)
+- [<span data-ttu-id="241b2-130">AutoPilot 裝置錯誤疑難排解</span><span class="sxs-lookup"><span data-stu-id="241b2-130">Troubleshoot AutoPilot device errors</span></span>](troubleshoot-autopilot-errors.md)
     
-- [<span data-ttu-id="29e17-131">裝置狀態</span><span class="sxs-lookup"><span data-stu-id="29e17-131">Device states</span></span>](device-states.md)
+- [<span data-ttu-id="241b2-131">裝置狀態</span><span class="sxs-lookup"><span data-stu-id="241b2-131">Device states</span></span>](device-states.md)
     
-- [<span data-ttu-id="29e17-132">關於 AutoPilot 設定檔的設定</span><span class="sxs-lookup"><span data-stu-id="29e17-132">About AutoPilot Profile settings</span></span>](autopilot-profile-settings.md)
+- [<span data-ttu-id="241b2-132">關於 AutoPilot 設定檔的設定</span><span class="sxs-lookup"><span data-stu-id="241b2-132">About AutoPilot Profile settings</span></span>](autopilot-profile-settings.md)
     
-## <a name="set-up-and-prerequisite-information"></a><span data-ttu-id="29e17-133">設定及必要資訊</span><span class="sxs-lookup"><span data-stu-id="29e17-133">Set up and prerequisite information</span></span>
+## <a name="set-up-and-prerequisite-information"></a><span data-ttu-id="241b2-133">設定及必要資訊</span><span class="sxs-lookup"><span data-stu-id="241b2-133">Set up and prerequisite information</span></span>
 
-- [<span data-ttu-id="29e17-134">使用 Microsoft 365 for business 保護裝置上資料的必要條件</span><span class="sxs-lookup"><span data-stu-id="29e17-134">Prerequisites for protecting data on devices with Microsoft 365 for business</span></span>](pre-requisites-for-data-protection.md)
+- [<span data-ttu-id="241b2-134">使用 Microsoft 365 商務裝置保護裝置資料的先決條件</span><span class="sxs-lookup"><span data-stu-id="241b2-134">Prerequisites for protecting data on devices with Microsoft 365 for business</span></span>](pre-requisites-for-data-protection.md)
     
-- [<span data-ttu-id="29e17-135">使用設定向導設定 Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="29e17-135">Set up Microsoft 365 for business by using the setup wizard</span></span>](set-up.md)
+- [<span data-ttu-id="241b2-135">使用設定向導設定商務用 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="241b2-135">Set up Microsoft 365 for business by using the setup wizard</span></span>](set-up.md)
     
-- [<span data-ttu-id="29e17-136">遷移至 Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="29e17-136">Migrate to Microsoft 365 for business</span></span>](migrate-to-microsoft-365-business.md)
+- [<span data-ttu-id="241b2-136">遷移至商務 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="241b2-136">Migrate to Microsoft 365 for business</span></span>](migrate-to-microsoft-365-business.md)
     
-- [<span data-ttu-id="29e17-137">啟用已加入網域的 Windows 10 裝置以供商務用 Microsoft 365 管理</span><span class="sxs-lookup"><span data-stu-id="29e17-137">Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business</span></span>](manage-windows-devices.md)
+- [<span data-ttu-id="241b2-137">啟用已加入網域的 Windows 10 裝置以供商務 Microsoft 365 管理</span><span class="sxs-lookup"><span data-stu-id="241b2-137">Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business</span></span>](manage-windows-devices.md)
     
-- [<span data-ttu-id="29e17-138">其他安全性功能</span><span class="sxs-lookup"><span data-stu-id="29e17-138">Additional security features</span></span>](security-features.md#additional-security-features)
+- [<span data-ttu-id="241b2-138">其他安全性功能</span><span class="sxs-lookup"><span data-stu-id="241b2-138">Additional security features</span></span>](security-features.md#additional-security-features)
