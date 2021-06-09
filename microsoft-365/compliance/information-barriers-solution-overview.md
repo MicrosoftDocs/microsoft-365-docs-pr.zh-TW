@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 中的資訊障礙
 description: 瞭解如何在 Microsoft 365 中設定資訊障礙。
-keywords: Microsoft 365，內幕人士風險，合規性
+keywords: Microsoft 365，有問必答風險，合規性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -25,9 +25,9 @@ ms.locfileid: "50423594"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>Microsoft 365 中的資訊障礙
 
-Microsoft 365 可跨群組和組織進行通訊及共同作業，並支援在必要時限制特定使用者群組間通訊和共同作業的方式。 這可能包括您想要限制兩個群組之間的通訊和共同作業，以避免組織中發生利益衝突的情況或案例。 如果您需要限制組織內部的某些人員之間的通訊和共同作業，也可能會發生這種情況，以確保內部資訊的安全。
+Microsoft 365 可跨群組和組織進行通訊及共同作業，並支援在必要時限制特定使用者群組之間的通訊和共同作業的方式。 這可能包括您想要限制兩個群組之間的通訊和共同作業，以避免組織中發生利益衝突的情況或案例。 如果您需要限制組織內部的某些人員之間的通訊和共同作業，也可能會發生這種情況，以確保內部資訊的安全。
 
-資訊障礙在 Microsoft 小組中支援，SharePoint 線上和商務 OneDrive。 合規性管理員或資訊屏障管理員可以定義原則，以允許或防止 Microsoft 小組中的使用者群組之間進行通訊。 資訊屏障原則可以用於下列情況：
+Microsoft Teams、SharePoint 線上及商務用 OneDrive 均支援資訊障礙。 合規性管理員或資訊屏障管理員可以定義原則，以允許或防止 Microsoft Teams 中使用者群組之間的通訊。 資訊屏障原則可以用於下列情況：
 
 - Day trader 群組中的使用者應該不會與行銷小組進行通訊或共用檔案
 - 從事機密公司資訊的融資人員不應該與組織內的某些群組進行通訊或共用檔案

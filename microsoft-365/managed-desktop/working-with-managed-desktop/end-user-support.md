@@ -1,5 +1,5 @@
 ---
-title: 取得 Microsoft 受管理桌面的使用者支援
+title: 取得 Microsoft 受管理的電腦的使用者支援
 description: 使用者如何取得服務和裝置的協助
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
@@ -18,41 +18,41 @@ ms.locfileid: "49841360"
 ---
 # <a name="getting-help-for-users"></a>為使用者取得協助
 
-組織中的使用者可透過下列兩種方式取得 Microsoft 受管理桌面裝置的協助： **取得協助** 應用程式或電話支援。 這兩種支援選項均可供使用者在一周7天、一天24小時。
+組織中的使用者可以使用下列兩種方式取得 Microsoft 受管理的電腦裝置的協助：**取得協助** 應用程式或電話支援。 這兩種支援選項均可供使用者在一周7天、一天24小時。
  
 >[!NOTE]
 >這些支援選項不適用於測試群組中的裝置。
 
 ## <a name="get-help-app"></a>取得協助應用程式
 
-為您的使用者提供支援的慣用方法，可 **協助** 您在使用者裝置內建便於使用的介面。  
+為使用者提供支援的慣用方法是 **取得協助**，該使用者裝置內建便於使用的介面。  
 
 ![取得協助應用程式圖示](../../media/get-help.png)
 
-取得「說明」是安裝在所有 Microsoft 受管理的桌面裝置上的應用程式，且會釘住在任務列。 
+取得協助是安裝在所有 Microsoft 受管理的電腦裝置上的應用程式，且會釘住至任務列。 
 
 - 使用者可以要求提供的電話號碼的回撥，或與服務代表線上交談。
-- 在 Microsoft 受管理桌面支援範圍之外的要求會透過電話重新導向至本機 IT 支援人員。
+- 在 Microsoft 受管理的電腦支援範圍外的要求會透過電話重新導向至本機的 IT 服務台。
 
 > [!NOTE]
-> 「取得説明」應用程式的顯示語言只是英文，即使使用者在設定其裝置或裝置設定時選取了不同的語言。 
+> 取得協助應用程式的顯示語言只是英文，即使使用者在設定其裝置或裝置設定時選取了不同的語言。 
 
 ### <a name="prerequisites"></a>必要條件
 為了讓您的使用者能夠透過應用程式取得協助，請確定符合下列必要條件：
 
-- 裝置必須使用 [設定 Microsoft 受管理的桌面裝置](../get-started/set-up-devices.md)中的其中一種方法，向 Microsoft managed desktop 註冊，例如 [自行註冊新裝置](../get-started/register-devices-self.md)。
+- 裝置必須使用[設定 Microsoft 受管理的電腦裝置](../get-started/set-up-devices.md)中的其中一種方法來 Microsoft 受管理的電腦註冊，例如[自行註冊新裝置](../get-started/register-devices-self.md)。
 - 裝置的顯示語言必須設定為下列任何一種英文語言地區設定： en-us、en、en、en 或 en-ca。
-- 「取得説明」應用程式應該是最新的。 若要確認其狀態，請檢查 Microsoft Store 中的應用程式更新。
+- 取得協助應用程式應該是最新的。 若要確認其狀態，請檢查 Microsoft Store 中的應用程式更新。
 - 必須可從裝置存取特定 [端點](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) 。
 
 > [!NOTE]
-> 在部署裝置以完全運作後，取得輔助應用程式最多可能需要一小時。
+> 在部署裝置以完全運作後，取得協助應用程式最多可能需要一小時。
 
-如果您已檢查這些必要條件，但取得協助應用程式仍無法運作，您的 IT 系統管理員應該會將 [支援要求](admin-support.md)歸檔。
+如果您已檢查這些必要條件，但取得協助應用程式仍無法運作，您的 IT 系統管理員應該會將[支援要求](admin-support.md)歸檔。
 
 ## <a name="phone-support"></a>電話支援
 
-使用 Microsoft 受管理的桌面裝置的使用者也可以存取他們可以撥打的免付費電話號碼。 當取得 [說明] 無法使用時，應使用這些數位。 例如，如果他們無法登入裝置，或裝置遭到中斷。 以下是電話支援電話號碼：
+具有 Microsoft 受管理的電腦裝置的使用者也可以存取他們可以撥打的免付費電話號碼。 當取得協助無法使用時，應使用這些數位。 例如，如果他們無法登入裝置，或裝置遭到中斷。 以下是電話支援電話號碼：
 
 - 美國： + 1 855 425 0216
 - 加拿大 (（魁北克）) ： + 1 855 425 0216
@@ -73,5 +73,5 @@ ms.locfileid: "49841360"
 
 ## <a name="more-resources"></a>其他資源
 - [Microsoft 受管理的電腦的系統管理員支援](admin-support.md)。 
-- [Microsoft 受管理電腦的支援](../service-description/support.md)。
-- 如果您已訂閱 Microsoft 受管理的電腦，您可以在 microsoft 管理的桌面系統管理指南中，[于 microsoft 的](https://endpoint.microsoft.com/)「**租** 使用者管理」功能表的 [Microsoft 受管理的桌面] 區段 **中，找到** 相關的詳細程式、處理流程、工作指示及 FAQs。
+- [Microsoft 受管理的電腦的支援](../service-description/support.md)。
+- 如果您已訂閱 Microsoft 受管理的電腦，您可以在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的 **承租人管理** 功能表之 Microsoft 受管理的電腦區段 **的 [Microsoft 受管理的電腦** 管理指南] 中，找到詳細程式、處理流程、工作指示及 FAQs。

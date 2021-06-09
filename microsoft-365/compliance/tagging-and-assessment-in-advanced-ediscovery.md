@@ -1,5 +1,5 @@
 ---
-title: 高級 eDiscovery 中的標記與評估
+title: Advanced eDiscovery 中的標記與評估
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
-description: 請參閱執行評估訓練的步驟，包括標記檔，以及在高級 eDiscovery 中查看評估結果。
+description: 請參閱執行評估訓練的步驟，包括標記檔，並在 Advanced eDiscovery 中查看評估結果。
 ms.openlocfilehash: 15bc8254ea1589d9afa17a74eaf3bfbcdfd4bba0
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -24,9 +24,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49769188"
 ---
-# <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>在 [高級 eDiscovery] 中的 [相關性] 模組中進行標記與評估
+# <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Advanced eDiscovery 中的「相關性」模組中的標記與評估
   
-本節說明在「高級 eDiscovery」的 [相關性] 模組中進行評估的程式。
+本節說明 Advanced eDiscovery [相關性] 模組中評估的程式。
   
 ## <a name="performing-assessment-training-and-analysis"></a>執行評估訓練和分析
 
@@ -106,7 +106,7 @@ ms.locfileid: "49769188"
 
 - 需要 (以進行審閱) 其他評估檔案
 
-評估目前錯誤邊界是「高級 eDiscovery」所建議的錯誤邊際。 「需要其他評估檔案」所顯示的數位會對應至該建議。
+評估目前錯誤邊界是 Advanced eDiscovery 所建議的錯誤邊際。 「需要其他評估檔案」所顯示的數位會對應至該建議。
   
 評估進度指標會顯示評估的完成程度（指定目前的錯誤邊界）。 當評估進行中時，使用者將會標記另一個評估範例。
   
@@ -114,7 +114,7 @@ ms.locfileid: "49769188"
   
 展開的曲目顯示會顯示建議的下一個步驟、評估統計資料，以及對詳細結果的存取。
   
-當豐富程度非常低時，需要的額外評估檔案數目若要產生有用的統計資料，就會非常高。 「高級 eDiscovery」會建議您移至訓練。 評估進度指示器會變成陰影，不會提供任何統計資料。
+當豐富程度非常低時，需要的額外評估檔案數目若要產生有用的統計資料，就會非常高。 Advanced eDiscovery 會建議您移至訓練。 評估進度指示器會變成陰影，不會提供任何統計資料。
   
 在缺少以統計為基礎的穩定化時，將會有較低的精確度和信賴等級的結果。 不過，當您不需要知道所找到之相關檔案的百分比時，可以使用這些結果來尋找相關檔案。 同樣地，這種狀態也可以用來訓練低豐富的問題，在此情況下，相關性分數可以加速與特定問題相關的檔案存取。
   

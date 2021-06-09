@@ -1,5 +1,5 @@
 ---
-title: 使用適用于合作協力廠商的 Windows PowerShell 檢索客戶租使用者報告資料
+title: 使用適用于合作協力廠商的 Windows PowerShell，找回客戶租使用者報告資料
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -26,11 +26,11 @@ ms.locfileid: "50927213"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-使用 Microsoft Exchange Online 的遠端 Windows PowerShell，從個別客戶承租人取得報告。
+使用遠端 Windows PowerShell 進行 Microsoft Exchange Online，以從個別客戶承租人取得報告。
   
-整合和雲端解決方案提供者 (CSP) 合作夥伴可以直接透過遠端 Windows PowerShell 為 Exchange Online PowerShell，存取組成客戶租使用者報告的資料。 這可讓合作夥伴收集和儲存報告資料，再據此執行其他作業。 開啟遠端連線之後，擷取客戶租用相關報告資料的程序與針對客戶租用執行任何 Cmdlet 相同。
+整合和雲端解決方案提供者 (CSP) 合作夥伴可以透過 Exchange Online PowerShell 的遠端 Windows PowerShell，直接存取組成客戶租使用者報告的資料。 這可讓合作夥伴收集和儲存報告資料，再據此執行其他作業。 開啟遠端連線之後，擷取客戶租用相關報告資料的程序與針對客戶租用執行任何 Cmdlet 相同。
   
-在本文中，您會使用遠端 Windows PowerShell 以進行 Exchange Online，以連線到單一客戶租使用者並取得報告。 依預設，Windows PowerShell 不支援從多個客戶租用彙集資料。 使用此程序擷取的報告僅限您連接的  _DelegatedOrg_。
+在本文中，您會使用遠端 Windows PowerShell Exchange Online 連線到單一客戶租使用者，並取得報告。 依預設，Windows PowerShell 不支援從多個客戶租用彙集資料。 使用此程序擷取的報告僅限您連接的  _DelegatedOrg_。
   
  
 ## <a name="before-you-begin"></a>開始之前

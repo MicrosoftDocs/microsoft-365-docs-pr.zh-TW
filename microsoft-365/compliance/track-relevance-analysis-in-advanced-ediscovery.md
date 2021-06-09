@@ -1,5 +1,5 @@
 ---
-title: 在高級 eDiscovery 中追蹤相關性分析
+title: 在 Advanced eDiscovery 中追蹤相關性分析
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
-description: 瞭解如何在「高級 eDiscovery」中查看及解釋「案例問題」的相關性訓練狀態和結果。
+description: 瞭解如何在 Advanced eDiscovery 中查看和轉譯案例問題的相關性訓練狀態和結果。
 ms.openlocfilehash: 224337969b5e662d45c5b804fa5a0ee045f4fb84
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -24,9 +24,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49769178"
 ---
-# <a name="track-relevance-analysis-in-advanced-ediscovery"></a>在高級 eDiscovery 中追蹤相關性分析
+# <a name="track-relevance-analysis-in-advanced-ediscovery"></a>在 Advanced eDiscovery 中追蹤相關性分析
   
-在 [Advanced eDiscovery] 中，[相關性追蹤] 索引標籤會顯示在 [標籤] 索引標籤中所執行相關性訓練的計算有效性，並指出在重複訓練程式中要採取的下一個步驟。 
+在 Advanced eDiscovery 中，[相關性追蹤] 索引標籤會顯示在 [標籤] 索引標籤中所執行相關性訓練的計算有效性，並指出在重複訓練程式中要採取的下一個步驟（相關性）。 
   
 ## <a name="tracking-relevance-training-status"></a>追蹤相關性訓練狀態
 
@@ -59,7 +59,7 @@ ms.locfileid: "49769178"
 
 ### <a name="reaching-stable-training-levels"></a>達到穩定的訓練層級
 
-在評估檔已具備穩定的訓練等級之後，就可以使用「高級 eDiscovery」來進行批次計算。
+在評估檔已具備穩定的訓練等級之後，Advanced eDiscovery 已準備好進行批次計算。
   
 > [!NOTE]
 > 通常，在三個穩定的訓練範例後，下一步是「批次計算」。 例如，當先前範例中的檔案卷標已變更時，或新增 seed 檔案時，可能會有例外狀況。 
@@ -79,7 +79,7 @@ ms.locfileid: "49769178"
   
 ### <a name="assessing-tagging-consistency"></a>評估標記一致性
 
-若檔標記中有不一致，它會影響分析。 當結果不是最優或一致性不確定時，可以使用高級 eDiscovery 標記一致性處理常式。 會傳回可能不一致的標記檔案清單，並視需要加以檢查和 retagged。
+若檔標記中有不一致，它會影響分析。 當結果不是最優或一致性不確定時，可以使用 Advanced eDiscovery 標記一致性處理常式。 會傳回可能不一致的標記檔案清單，並視需要加以檢查和 retagged。
   
 > [!NOTE]
 > 在七個或多個訓練四捨五入後，可在 **相關性** 追蹤問題中查看標記一致性 \>  \>  \> 。**詳細結果** \> **訓練進度** 此項檢查一次只對一個問題進行。
@@ -108,11 +108,11 @@ ms.locfileid: "49769178"
   
 ### <a name="keywords"></a>關鍵字
 
-關鍵字是由「高級 eDiscovery」識別為有關檔案是否相關的重要標記，而由「高級 eDiscovery」所識別之檔案中的唯一字串、word、片語或字詞順序。 標記為相關的檔案中的「包含」欄清單關鍵字和權重，而「排除」欄會列出標示為不相關之檔案中的關鍵字和重量。
+關鍵字是唯一的字串、文字、片語或 Advanced eDiscovery 所識別的檔案中的字順序，做為檔案是否相關的重要指示器。 標記為相關的檔案中的「包含」欄清單關鍵字和權重，而「排除」欄會列出標示為不相關之檔案中的關鍵字和重量。
   
-「高級 eDiscovery」會指派負數或正值關鍵字權重值。 權重越高，關鍵字顯示所在檔案的可能性越高，在批次計算期間指派的相關性分數越高。
+Advanced eDiscovery 會指派負數或正值關鍵字加權值。 權重越高，關鍵字顯示所在檔案的可能性越高，在批次計算期間指派的相關性分數越高。
   
-可使用關鍵字的高級 eDiscovery 清單來補充由專家所建的清單，或在檔案檢查程式中的任何一點以間接的健全檢查。
+Advanced eDiscovery 的關鍵字清單可用於補充由專家所建立的清單，或在檔案審閱程式的任何時刻以間接的健全檢查的方式。
   
 ### <a name="training-progress"></a>訓練進度
 
@@ -128,7 +128,7 @@ ms.locfileid: "49769178"
 
 - **警告**：許多檔的標記可能不一致。 顯示 (紅燈光) 
 
-**訓練進度圖**：顯示與 F 量值進行比較的許多關聯性訓練週期之後，相關性訓練穩定性的程度。 當我們透過圖形從左向右移動時，置信區間會隨著高級 eDiscovery 相關性而縮小及使用，以判斷相關性訓練結果的穩定性。
+**訓練進度圖**：顯示與 F 量值進行比較的許多關聯性訓練週期之後，相關性訓練穩定性的程度。 當我們透過圖形從左向右移動時，置信區間會隨著其 Advanced eDiscovery 相關性，隨著相關程度訓練結果的一致性，加以判斷，以判斷穩定性。
   
 > [!NOTE]
 > 「相關性」會使用 F2，其中的召回會以精確度的精確度接收兩倍的值。 對於高豐富 (超過 25% ) 的情況，相關性使用 F1 (1:1 比率) 。 您可以在 [ **相關性設定**] [ \> **高級設定**] 中設定 F 測量比率。
@@ -152,7 +152,7 @@ ms.locfileid: "49769178"
   
 ### <a name="training-statistics"></a>訓練統計資料
 
-[ **訓練統計資料** ] 窗格會根據高級 eDiscovery 相關性訓練中的結果，顯示統計資料和曲線圖。 
+[**訓練統計資料**] 窗格會根據 Advanced eDiscovery 相關性訓練的結果，顯示統計資料和曲線圖。 
   
 ![相關性追蹤訓練統計資料](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   

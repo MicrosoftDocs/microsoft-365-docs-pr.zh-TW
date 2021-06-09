@@ -1,5 +1,5 @@
 ---
-title: 開始使用 Microsoft Viva 主題
+title: 開始使用 Microsoft Viva Topics
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -16,9 +16,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/03/2021
 ms.locfileid: "50416788"
 ---
-# <a name="get-started-with-microsoft-viva-topics"></a>開始使用 Microsoft Viva 主題
+# <a name="get-started-with-microsoft-viva-topics"></a>開始使用 Microsoft Viva Topics
 
-如何找出對您工作很重要的人員和資源？ 當您與其他人共用重要檔案時，他們是否可以稍後再重新尋找這些檔案？ Viva 主題會提供新的方式，用以探索和探索 Microsoft 365 中內容的資訊。  
+如何找出對您工作很重要的人員和資源？ 當您與其他人共用重要檔案時，他們是否可以稍後再重新尋找這些檔案？ Viva 主題提供在 Microsoft 365 中探索及探索內容資訊的新方式。  
 
 Viva 主題可讓您： 
 
@@ -46,11 +46,11 @@ Viva 主題可讓您：
 
 ## <a name="improve-the-network-by-adding-topic-definitions-editing-connections-and-more"></a>新增主題定義、編輯連線與其他內容，以改善網路 
 
-主題頁面提供主題的完整詳細資料，可由組織指定的任何人員策劃。 雖然主題卡片只會顯示兩個人和資源，但您會看到主題頁面上的完整清單。 編輯頁面以改進描述，或更新人員和資源的連線。 雖然每個人都可以提供意見以改善網路，但您的組織可能會限制誰可以直接編輯主題。 只有共用資源的人員才能看到主題和資源。
+主題頁面提供主題的完整詳細資料，可由組織指定的任何人員策劃。 雖然主題卡片只會顯示兩個使用者和資源，但是您可以在主題頁面上看到完整清單。 編輯頁面以改善描述，或更新與使用者和資源的關聯。 雖然每個人都能提供改善網路的意見反應，但是貴組織可能會限制哪些人可以直接編輯主題。 只有共用資源的人員才能看到主題和資源。
 
 
 ## <a name="see-also"></a>另請參閱
-[Microsoft Viva 主題概述](topic-experiences-overview.md)</br>
+[Microsoft Viva Topics 概觀](topic-experiences-overview.md)</br>
 [主題中心概觀](topic-center-overview.md)</br>
 [建立主題](create-a-topic.md)</br>
 [編輯主題](edit-a-topic.md)</br>

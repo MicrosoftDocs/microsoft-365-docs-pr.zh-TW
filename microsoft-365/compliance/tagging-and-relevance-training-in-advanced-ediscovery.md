@@ -1,5 +1,5 @@
 ---
-title: 高級 eDiscovery 中的標記與相關性訓練
+title: Advanced eDiscovery 中的標記和關聯性訓練
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
-description: 在 [高級 eDiscovery] 的「相關性訓練」階段中，瞭解標記的步驟，然後再使用40檔案的訓練範例。
+description: 在 Advanced eDiscovery 的關聯性訓練階段中，瞭解標記的步驟，並使用40檔案的訓練範例。
 ms.openlocfilehash: ae4a9f2e9fd87fdd0679bbfd8f287b6eaa98e41f
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -24,11 +24,11 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49769218"
 ---
-# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>高級 eDiscovery 中的標記與相關性訓練
+# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Advanced eDiscovery 中的標記和關聯性訓練
   
-本文說明在「高級 eDiscovery」中使用相關性訓練模組的步驟。
+本文說明在 Advanced eDiscovery 中使用相關性訓練模組的步驟。
   
-在 [Advanced eDiscovery] 中完成評估之後，並輸入相關性訓練階段時，40檔的訓練範例會進入 [標籤] 索引標籤以進行標記。
+在 Advanced eDiscovery 中完成評估，並輸入相關性訓練階段時，會將40檔案的訓練範例放入 [標籤] 索引標籤中以進行標記。
   
 ## <a name="performing-relevance-training"></a>執行相關性訓練
 

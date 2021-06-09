@@ -1,5 +1,5 @@
 ---
-title: 在高級 eDiscovery 中測試相關性分析
+title: 在 Advanced eDiscovery 中測試相關性分析
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: 瞭解如何使用 [測試] 索引標籤，在 [高級 eDiscovery] 中成批計算後，測試、比較和驗證整體的處理品質。
+description: 瞭解如何在 Advanced eDiscovery 中成批計算之後使用 [測試] 索引標籤來測試、比較及驗證整體的處理品質。
 ms.openlocfilehash: 3ac12c176f2e46ac0321976a7e0689fbd8893bba
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49769168"
 ---
-# <a name="test-relevance-analysis-in-advanced-ediscovery"></a>在高級 eDiscovery 中測試相關性分析
+# <a name="test-relevance-analysis-in-advanced-ediscovery"></a>在 Advanced eDiscovery 中測試相關性分析
   
 Advanced eDiscovery 中的 [測試] 索引標籤可讓您測試、比較及驗證整體的處理品質。 這些測試會在批次計算之後執行。 將檔案標記在集合中，一位專家就知道每個標籤檔案是否與案例相關作出最後的判斷。
   
@@ -32,7 +32,7 @@ Advanced eDiscovery 中的 [測試] 索引標籤可讓您測試、比較及驗�
   
 ## <a name="testing-the-rest"></a>測試其他
 
-「測試 Rest」測試是用來驗證剔除決策，例如，根據最終的高級 eDiscovery 結果，只複查高於特定相關性截止分數的檔案。 專家會檢查所選截止分數底下的檔案範例，以評估該集合內相關檔案的數量。
+「測試 Rest」測試是用來驗證剔除決策，例如，根據最終的 Advanced eDiscovery 結果，只複查高於特定相關性截止分數的檔案。 專家會檢查所選截止分數底下的檔案範例，以評估該集合內相關檔案的數量。
   
 這種測試會提供統計資料，以及複查集與測試 Rest 人口之間的比較。 考核集的結果是在訓練期間依相關性計算的結果。 結果包含以設定和輸入參數為基礎的計算，例如：
   

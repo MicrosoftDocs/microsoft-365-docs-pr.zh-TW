@@ -31,12 +31,12 @@ ms.locfileid: "50927285"
 
 如果您已啟用混合式新式驗證 (HMA) 找到它不適用於您目前的環境，您可以停用 HMA。 本文說明如何進行。
   
-## <a name="who-is-this-article-for"></a>本文的人選是誰？
+## <a name="who-is-this-article-for"></a>本文是針對哪些專案神秘的？
 
-如果您已在商務用 Skype Online 或內部部署和/或 Exchange Online 或內部部署中啟用新式驗證，且找到您需要停用 HMA，這些步驟適用于您。
+如果您已在商務用 Skype Online 或內部部署以及（或） Exchange Online 或內部部署中啟用新式驗證，且找到您需要停用 HMA，這些步驟適用于您。
 
 > [!IMPORTANT]
-> 若您是在商務用 Skype Online 或內部部署中，請參閱「[新式驗證支援的商務用 skype 拓撲](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)」文章，其具有混合拓撲 HMA，您必須先查看支援的拓撲，再開始。
+> 若您在商務用 Skype 線上或內部部署中使用混合式拓撲 HMA，請參閱「[新式驗證支援的商務用 Skype 拓撲](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)」，並在您開始之前，先查看支援的拓撲。
   
 ## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>如何停用混合式新式驗證 (Exchange) 
 
@@ -47,21 +47,21 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange online**：以遠端 PowerShell [連接至 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) 。 執行下列命令，將您的  *OAuth2ClientProfileEnabled*  旗標轉換為 "false"：
+2. **Exchange Online**：[連線 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)使用遠端 PowerShell。 執行下列命令，將您的  *OAuth2ClientProfileEnabled*  旗標轉換為 "false"：
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 ```
     
-## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>如何停用 (商務用 Skype) 的混合式新式驗證
+## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>如何停用混合式新式驗證 (商務用 Skype) 
 
-1. **商務用 skype 內部部署**：在商務用 Skype 管理命令介面中執行下列命令：
+1. **商務用 Skype 內部部署**：在商務用 Skype 管理命令介面中執行下列命令：
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. **商務用 Skype online**：使用遠端 PowerShell [連接至商務用 skype online](manage-skype-for-business-online-with-microsoft-365-powershell.md) 。 執行下列命令以停用新式驗證：
+2. **線上商務用 Skype**：[連線商務用 Skype](manage-skype-for-business-online-with-microsoft-365-powershell.md)使用遠端 PowerShell 線上。 執行下列命令以停用新式驗證：
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed

@@ -41,9 +41,9 @@ ms.locfileid: "49876849"
 
 - 請確定您已設定 APNs 憑證。 如需詳細資訊，請參閱 [建立 iOS 裝置的 APNs 憑證](create-an-apns-certificate-for-ios-devices.md)。
 
-- 在 ****   >  **[設定一般**   >  **設定檔 (] 或 [裝置管理)**] 中，確定尚未安裝管理設定檔。 如果是，請將其移除。
+- 在 **設定**   >  **一般**   >  **設定檔 (或裝置管理)** 中，請確定尚未安裝管理設定檔。 如果是，請將其移除。
 
-- 如果您看到錯誤訊息「裝置無法註冊，請登入 Microsoft 365，並確定包含 Exchange Online 的授權已指派給登入裝置的使用者。
+- 如果您看到錯誤訊息「裝置未能註冊，請登入 Microsoft 365，並確定已將包含 Exchange Online 的授權指派給已登入裝置的使用者。
 
 - 如果您看到錯誤訊息「設定檔安裝失敗」，請嘗試下列其中一項：
 
@@ -53,15 +53,15 @@ ms.locfileid: "49876849"
 
 ## <a name="windows-rt"></a>Windows RT
 
-- 確定您的網域已在 Microsoft 365 中設定，以使用基本行動性和安全性。 如需詳細資訊，請參閱 [設定基本行動性和安全性](set-up.md)。
+- 確定您的網域已在 Microsoft 365 中設定成使用基本行動性和安全性。 如需詳細資訊，請參閱 [設定基本行動性和安全性](set-up.md)。
     
 - 請確定使用者正在選擇 [ **開啟**]，   而非選擇 [ **加入**]。
 
-## <a name="windows-10-pc"></a>Windows 10 電腦
+## <a name="windows-10-pc"></a>Windows 10Pc
 
-- 確定您的網域已在 Microsoft 365 中設定，以使用基本行動性和安全性。 如需詳細資訊，請參閱 [設定基本行動性和安全性](set-up.md)。
+- 確定您的網域已在 Microsoft 365 中設定成使用基本行動性和安全性。 如需詳細資訊，請參閱 [設定基本行動性和安全性](set-up.md)。
     
-- 除非您有 Azure Active Directory Premium，否則請確定使用者正在選擇 [ **僅登錄裝置管理**   ]，而不是選擇 [ **連接]**。
+- 除非您有 Azure Active Directory 進階版，否則請確定使用者只選擇 [ **登錄裝置管理**]，   而不是選擇 [ **連線**]。
 
 ## <a name="android-phone-or-tablet"></a>Android 手機或平板電腦
 

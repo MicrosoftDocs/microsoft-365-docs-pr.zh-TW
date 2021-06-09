@@ -43,7 +43,7 @@ ms.locfileid: "51860782"
 
 Defender for Endpoint 會為此案例增加合作機會，並允許 MSSPs 採取下列動作：
 
-- 取得 MSSP 客戶的 Microsoft Defender 安全中心入口網站的存取權
+- 取得 MSSP 客戶 Microsoft Defender 資訊安全中心入口網站的存取權
 - 取得電子郵件通知，以及 
 - 透過安全性資訊和事件管理 (SIEM) 工具取得警示
 

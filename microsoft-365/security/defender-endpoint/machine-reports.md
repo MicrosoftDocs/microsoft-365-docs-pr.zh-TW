@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint 中的裝置健康情況和符合性報告
-description: 使用裝置健康情況和合規性報告追蹤裝置健康狀態偵測、防病毒狀態、作業系統平臺及 Windows 10 版本
+description: 使用裝置健康情況和符合性報告追蹤裝置健康狀態偵測、防病毒狀態、作業系統平臺及 Windows 10 版本
 keywords: 健康狀態、防毒程式、作業系統平臺、windows 10 版本、版本、健康情況、規範、狀態
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51860288"
 
 > 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-裝置狀態報表提供組織中裝置的高層級資訊。 報告包含趨勢資訊，顯示感應器狀況狀態、防病毒狀態、作業系統平臺及 Windows 10 版本。
+裝置狀態報表提供組織中裝置的高層級資訊。 報告包含趨勢資訊，顯示感應器健康狀態、防病毒狀態、作業系統平臺及 Windows 10 版本。
 
 儀表板分為兩個區段： ![ 裝置報表的影像](images/device-reports.png)
  
@@ -72,11 +72,11 @@ ms.locfileid: "51860288"
  
 - **健康狀態**：顯示裝置上感應器狀態的相關資訊，提供作用中裝置的匯總視圖、未使用的通訊、非使用中或未看到的感應器資料。
   
-- **Active Windows 10 裝置的防毒程式狀態**：顯示裝置數目及 Microsoft Defender 防病毒的狀態。
+- **active Windows 10 裝置的防毒程式狀態**：顯示裝置數目及 Microsoft Defender 防毒軟體狀態。
     
 - **作業系統平臺**：顯示組織記憶體在的作業系統平臺散佈。 
  
-- **Windows 10 版本**：顯示組織中 windows 10 裝置和其版本的散佈。
+- **Windows 10 版本**：顯示組織中 Windows 10 裝置和其版本的散佈。
  
  
  
@@ -89,11 +89,11 @@ ms.locfileid: "51860288"
 >[!NOTE]
 >這些篩選器適用于報告中的 **所有** 卡片。
  
-例如，若要顯示具有使用中感應器健全狀態的 Windows 10 裝置相關資料：
+例如，若要顯示具有使用中感應器健康狀態之 Windows 10 裝置的相關資料：
  
 1. 在 [篩選] 底下 **> 感應器健全狀況狀態 > Active**。
-2. 然後，選取 [ **作業系統平臺] > Windows 10**。
-3. 選取 **套用**。
+2. 然後 **> Windows 10 選取 [作業系統平臺**]。
+3. 選取 ****[套用]。
 
 
 ## <a name="related-topic"></a>相關主題

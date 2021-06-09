@@ -1,5 +1,5 @@
 ---
-title: 根據高級 eDiscovery 的結果決定
+title: 根據 Advanced eDiscovery 的結果決策
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 瞭解 [Advanced eDiscovery] 中的 [決定] 索引標籤可如何提供資料，以協助您決定正確的查看案例檔案集大小。
+description: 瞭解 Advanced eDiscovery 中的 [決定] 索引標籤如何提供可協助您決定正確的案例檔案集大小的資料。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 7a4c2fe891a48451d9b8d852f603b225ab7b080d
@@ -24,9 +24,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49769148"
 ---
-# <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>在高級電子檔探索中以相關性結果為基礎的決策
+# <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>在 Advanced eDiscovery 中以相關性結果為基礎的決策
   
-在 [Advanced eDiscovery] 中的 [相關性] 模組中，[判斷] 索引標籤可提供其他資訊，供您用來判斷查看案例檔案集大小，以供查看及使用決策支援的統計資料。
+在 Advanced eDiscovery 的 [相關性] 模組中，[判斷] 索引標籤會提供其他資訊，供您用來判斷查看案例檔案集大小，以供查看及使用決策支援的統計資料。
   
 ## <a name="using-the-decide-tab"></a>使用 [決定] 索引標籤
 
@@ -36,7 +36,7 @@ ms.locfileid: "49769148"
   
 - **問題**：在這裡，您可以從清單中選取感興趣的問題。
 
-- **回顧-召回比率**：根據相關性分數，進行高級 eDiscovery 檢查的比較。 圖表中的截止點代表要檢查的檔百分比，對應至相關性分數。 這是用於相關性測試階段和用於剔除的匯出臨界值。 若要檢查的檔案數目是預設的截止點，表示重新開始和精確度之間的平衡是最佳的。 實際的截止點應該取決於目標及成本折衷 (% 考核) 和風險 (% 召回) 。 使用此滑塊，您可以調整截止點，並查看圖表和參數的效果，調整要檢索的相關檔案的百分比，以及驗證決策之前。
+- **回顧-召回比率**：根據相關性分數 Advanced eDiscovery 評審的比較。 圖表中的截止點代表要檢查的檔百分比，對應至相關性分數。 這是用於相關性測試階段和用於剔除的匯出臨界值。 若要檢查的檔案數目是預設的截止點，表示重新開始和精確度之間的平衡是最佳的。 實際的截止點應該取決於目標及成本折衷 (% 考核) 和風險 (% 召回) 。 使用此滑塊，您可以調整截止點，並查看圖表和參數的效果，調整要檢索的相關檔案的百分比，以及驗證決策之前。
 
 - **參數**：檢查、召回、接下來的相關及總成本參數是與評審集相對於整個案例集合相關的累計計算統計資料。 這些參數的定義如下：
 

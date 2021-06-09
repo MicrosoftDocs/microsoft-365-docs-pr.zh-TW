@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 的 Privileged Access Management
 description: 瞭解如何跨 Microsoft 365 設定有問必答風險功能。
-keywords: Microsoft 365，內幕人士風險，合規性
+keywords: Microsoft 365，有問必答風險，合規性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -25,7 +25,7 @@ ms.locfileid: "50423806"
 ---
 # <a name="privileged-access-management-in-microsoft-365"></a>Microsoft 365 的 Privileged Access Management
 
-在 Microsoft Exchange Online 中，某些使用者對機密資訊或重要網路設定設定的存取權，對遭到損害的帳戶或內部威脅活動可能是一種可能的路徑。 「特殊設定管理」可協助保護您的組織不會遭到破壞，並可限制存取機密資料或存取重要的設定設定，以協助滿足法規遵從性最佳作法。 不是具有持續存取權的系統管理員，需要提升許可權的工作才會執行即時存取規則。 在 Microsoft 365 中啟用 Exchange Online 的「特殊存取權存取」功能可讓您的組織以零為起始的許可權運作，並提供防禦受影響的系統管理存取弱點。
+讓部分使用者存取 Microsoft Exchange Online 中的機密資訊或重要網路設定，是遭到攻破的帳戶或內部威脅活動的可能路徑。 「特殊設定管理」可協助保護您的組織不會遭到破壞，並可限制存取機密資料或存取重要的設定設定，以協助滿足法規遵從性最佳作法。 不是具有持續存取權的系統管理員，需要提升許可權的工作才會執行即時存取規則。 在 Microsoft 365 中啟用 Exchange Online 的特殊許可權存取管理，可讓您的組織以零為起始的許可權來運作，並提供防禦受影響的系統管理存取弱點。
 
 ## <a name="configure-privileged-access-management-for-microsoft-365"></a>設定 Microsoft 365 的特殊許可權存取管理
 

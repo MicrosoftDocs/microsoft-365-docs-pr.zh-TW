@@ -1,5 +1,5 @@
 ---
-title: 將保管人匯入至高級電子檔探索案例
+title: 將保管人匯入至 Advanced eDiscovery 案例
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 使用匯入工具 dto 將多個保管人和其相關聯的資料來源快速新增至高級 eDiscovery 中的案例。
+description: 使用匯入工具 dto 會快速將多個保管人及其相關聯的資料來源新增至 Advanced eDiscovery 中的案例。
 ms.openlocfilehash: 98ff3690fe7fd8c956fce436585014ef0db82a26
 ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
@@ -22,13 +22,13 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50421610"
 ---
-# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>將保管人匯入至高級電子檔探索案例
+# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>將保管人匯入至 Advanced eDiscovery 案例
 
-針對涉及許多保管人的高級 eDiscovery 案例，您可以使用 CSV 檔（包含將其新增至案例所需的資訊）一次匯入多位保管人。
+針對涉及許多保管人的 Advanced eDiscovery 案例，您可以使用 CSV 檔（包含將其新增至案例所需的資訊）一次匯入多位保管人。
 
 ## <a name="import-custodians"></a>匯入保管人
 
-1. 開啟 [Advanced eDiscovery] 案例，然後選取 [ **資料來源** ] 索引標籤。
+1. 開啟 Advanced eDiscovery 案例，然後選取 [**資料來源**] 索引標籤。
 
 2. 按一下 [**新增資料來源** 匯  >  **入保管人**]。
 
@@ -51,19 +51,19 @@ ms.locfileid: "50421610"
 | 欄名稱|描述|
 |:------- |:------------------------------------------------------------|
 |**保管人 contactEmail**     |管理員的 UPN 電子郵件地址。 例如，sarad@contoso.onmicrosoft.com。           |
-|**已啟用 Exchange** | TRUE/FALSE 值可包含或不包含保管人的信箱。      |
-|**OneDrive 啟用** | TRUE/FALSE 值可包含或不包含保管人的 OneDrive 商務帳戶。 |
+|**Exchange啟用** | TRUE/FALSE 值可包含或不包含保管人的信箱。      |
+|**OneDrive啟用** | TRUE/FALSE 值可包含或不包含保管人的商務用 OneDrive 帳戶。 |
 |**為 OnHold**        | TRUE/FALSE 值，表示是否要將保管人資料來源保留。 <sup>1</sup>     |
 |**Workload1 類型**         |String 值，表示要與保管人關聯的資料來源類型。 可能的值包括： <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
 |**Workload1 位置**     | 視您的工作量類型而定，這會是資料來源的位置。 例如，Exchange 信箱的電子郵件地址或 SharePoint 網站的 URL。 |
 |||
 
 > [!NOTE]
-> <sup>1</sup> 使用保管人匯入程式和 CSV 檔案，您最多可以將1000個信箱和100個網站保留。 您可以使用此程式將超過1000的保管人新增至案例，但保留限制仍然適用。 如需有關保留限制的詳細資訊，請參閱 [Advanced eDiscovery 中的限制](limits-ediscovery20.md#hold-limits)。
+> <sup>1</sup> 使用保管人匯入程式和 CSV 檔案，您最多可以將1000個信箱和100個網站保留。 您可以使用此程式將超過1000的保管人新增至案例，但保留限制仍然適用。 如需有關保留限制的詳細資訊，請參閱[Advanced eDiscovery 中的限制](limits-ediscovery20.md#hold-limits)。
 
 以下是具有保管人資訊之 CSV 檔案的範例：<br/><br/>
 
-|保管人 contactEmail      | 已啟用 Exchange | OneDrive 啟用 | 為 OnHold | Workload1 類型 | Workload1 位置             |
+|保管人 contactEmail      | Exchange啟用 | OneDrive啟用 | 為 OnHold | Workload1 類型 | Workload1 位置             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
 |robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
 |pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
@@ -71,7 +71,7 @@ ms.locfileid: "50421610"
 
 ## <a name="custodian-and-data-source-validation"></a>保管人和資料來源驗證
 
-在您上傳保管人 CSV 檔案之後，Advanced eDiscovery 會執行下列其中一項：
+在上傳保管人 CSV 檔案之後，Advanced eDiscovery 會執行下列其中一項操作：
 
 1. 驗證保管人及其資料來源。
 
@@ -79,7 +79,7 @@ ms.locfileid: "50421610"
 
 ### <a name="custodian-validation"></a>保管人驗證
 
-目前，我們只支援匯入您組織的 Azure Active Directory (Azure AD) 中所包含的保管人。
+目前，我們只支援匯入您組織 Azure Active Directory (Azure AD) 中所包含的保管人。
 
 保管人匯入工具會使用 CSV 檔案中的 **保管人 contactEmail** 欄中的 UPN 值，尋找並驗證保管人。 已驗證的保管人會自動新增至案例，並列于案例的 [ **資料來源** ] 索引標籤上。 如果系統管理員無法驗證，則會在案例中的 [ **工作** ] 索引標籤上列出之 BulkAddCustodian 工作的錯誤記錄中列出。 Unvalidated 保管人不會加入到案例中或列于 [ **資料來源** ] 索引標籤上。
 
@@ -87,7 +87,7 @@ ms.locfileid: "50421610"
 
 在驗證並新增保管人後，會新增每個與保管人相關聯的主要信箱和 OneDrive 帳戶。
 
-不過，如果找不到與系統管理員相關聯的任何其他資料來源 (例如 SharePoint 網站、Microsoft 團隊、Microsoft 365 群組或 Yammer) 群組，也不會將其指派給保管人，而且 **未驗證** 的值會顯示在 [**資料來源**] 索引標籤上的管理員旁的 [**狀態**] 欄中。
+不過，如果找不到與系統管理員相關聯的任何其他資料來源 (例如 SharePoint 網站、Microsoft Teams、Microsoft 365 群組或 Yammer 群組) ，也不會將其指派給保管人，且 **未驗證** 的值會顯示在 [**資料來源**] 索引標籤上的管理員旁的 [**狀態**] 欄中。
 
 若要為保管人新增已驗證的資料來源：
 
@@ -105,7 +105,7 @@ ms.locfileid: "50421610"
 
 1. 在 [ **資料來源** ] 索引標籤上，選取管理員以手動新增和關聯先前不正確資料來源。
 
-2. 按一下彈出頁面頂端的 [ **編輯** ]，將信箱、網站、小組或 Yammer 群組與保管人建立關聯。 若要執行此動作，請按一下適當資料位置類型旁的 [ **編輯** ]。
+2. 按一下彈出頁面頂端的 [**編輯**]，將信箱、網站、Teams 或 Yammer 群組與保管人建立關聯。 若要執行此動作，請按一下適當資料位置類型旁的 [ **編輯** ]。
 
 3. 按 **[下一步]** 顯示 [ **保留設定** ] 頁面，並設定您新增之資料來源的 [保留] 設定。
 

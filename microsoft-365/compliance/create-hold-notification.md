@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 使用高級 eDiscovery 案例中的通訊工具來傳送、收集和追蹤法律封存通知。
+description: 在 Advanced eDiscovery 案例中使用通訊工具，以傳送、收集和追蹤法律封存通知。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: df1b2d962e83110c62ccac871f669bbc0d3bfe02
 ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
@@ -26,7 +26,7 @@ ms.locfileid: "49840558"
 ---
 # <a name="create-a-legal-hold-notice"></a>建立法律封存通知
 
-組織可使用高級 eDiscovery 保管人通訊，管理與保管人進行通訊的工作流程。 透過通訊工具，法律小組可以系統地傳送、收集和追蹤法律封存通知。 靈活的建立程式也可讓小組自訂保留通知工作流程，以及傳送給保管人之通知中的內容。
+組織使用 Advanced eDiscovery 管理員通訊，可管理與保管人進行通訊的工作流程。 透過通訊工具，法律小組可以系統地傳送、收集和追蹤法律封存通知。 靈活的建立程式也可讓小組自訂保留通知工作流程，以及傳送給保管人之通知中的內容。
 
 ![通訊頁面](../media/CommunicationPage.PNG)
 
@@ -38,7 +38,7 @@ ms.locfileid: "49840558"
 
 ![名稱通訊頁面](../media/NameCommunication.PNG)
 
-1. 在安全性 & 規範中心內，移至 **eDiscovery > Advanced ediscovery** ，以顯示組織中案例的清單。
+1. 在 [安全性 & 規範中心] 中，移至 [ **eDiscovery > Advanced eDiscovery** ] 以顯示您組織中的案例清單。
 
 2. 選取案例，按一下 [ **通訊** ] 索引標籤，然後按一下 [ **新增通訊**]。
 
@@ -46,13 +46,13 @@ ms.locfileid: "49840558"
 
     - **名稱**：這是通訊的名稱。
 
-    - **簽發官**：下拉式清單會顯示案例成員清單清單。 如需如何新增成員至案例的詳細資訊，請參閱 [Create a Advanced eDiscovery case](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case)。 傳送給保管人的每個通知都會代表指定的發行專員傳送。
+    - **簽發官**：下拉式清單會顯示案例成員清單清單。 如需如何新增成員至案例的詳細資訊，請參閱[建立 Advanced eDiscovery 案例](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case)。 傳送給保管人的每個通知都會代表指定的發行專員傳送。
 
 > [!NOTE]
 > 簽發專員必須在寄件者員的下拉式清單中顯示 **主動信箱**
 
 
-4. 按 **[下一步]**。
+4. 按 [下一步 **]**。
 
 ## <a name="step-2-define-the-portal-content"></a>步驟2：定義入口網站內容
 
@@ -66,7 +66,7 @@ ms.locfileid: "49840558"
 
 2. 將合併變數插入您的通知，以自訂通知及共用保管人規範入口網站。
 
-3. 按 **[下一步]**。
+3. 按 [下一步 **]**。
 
   >[!Tip]
   >若要深入瞭解如何自訂入口網站內容和格式，請參閱 [使用通訊編輯器](using-communications-editor.md)。
