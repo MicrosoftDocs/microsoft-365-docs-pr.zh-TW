@@ -1,5 +1,5 @@
 ---
-title: '取消 Google Workspace (，並保持您的網域) '
+title: '取消 Google Workspace (，並保留您的網域) '
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -29,14 +29,14 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49928255"
 ---
-# <a name="cancel-google-workspace-subscription"></a><span data-ttu-id="abff7-103">取消 Google Workspace 訂閱</span><span class="sxs-lookup"><span data-stu-id="abff7-103">Cancel Google Workspace subscription</span></span>
+# <a name="cancel-google-workspace-subscription"></a><span data-ttu-id="aa32f-103">取消 Google Workspace 訂閱</span><span class="sxs-lookup"><span data-stu-id="aa32f-103">Cancel Google Workspace subscription</span></span>
 
-1. <span data-ttu-id="abff7-104">請登出 [Google 系統管理](https://admin.google.com/) ，然後前往 **帳單**。</span><span class="sxs-lookup"><span data-stu-id="abff7-104">Sign in to [Google Admin](https://admin.google.com/) and go to **Billing**.</span></span>
-1. <span data-ttu-id="abff7-105">在訂閱 **清單中**，選擇您的 G Suite 訂閱、取消訂閱 **，然後選擇繼續**。</span><span class="sxs-lookup"><span data-stu-id="abff7-105">In the **Subscriptions** list,choose your G Suite subscription, **Cancel subscription**, and then choose **Continue**.</span></span>
+1. <span data-ttu-id="aa32f-104">登入 [Google 系統管理員](https://admin.google.com/) ，然後移至 **帳單**。</span><span class="sxs-lookup"><span data-stu-id="aa32f-104">Sign in to [Google Admin](https://admin.google.com/) and go to **Billing**.</span></span>
+1. <span data-ttu-id="aa32f-105">在 [ **訂閱** ] 清單中，選擇您的 G Suite 訂閱， **取消訂閱**，然後選擇 [ **繼續**]。</span><span class="sxs-lookup"><span data-stu-id="aa32f-105">In the **Subscriptions** list,choose your G Suite subscription, **Cancel subscription**, and then choose **Continue**.</span></span>
 
     > [!IMPORTANT]
-    > <span data-ttu-id="abff7-106">您的訂閱將會立即取消，而且您無法復原這個動作。</span><span class="sxs-lookup"><span data-stu-id="abff7-106">your subscription will be cancelled immediately and you cannot undo this action.</span></span>
+    > <span data-ttu-id="aa32f-106">您的訂閱將會立即取消，而且您無法撤銷此動作。</span><span class="sxs-lookup"><span data-stu-id="aa32f-106">your subscription will be cancelled immediately and you cannot undo this action.</span></span>
 
-    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Google 系統管理帳單頁面的螢幕擷取畫面。":::
+    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Google 系統管理員計費頁面的螢幕擷取畫面。":::
 
-<span data-ttu-id="abff7-108">請注意，如果您的 DNS 主機提供者不是 Google 網域，您可能不會在訂閱清單中看到網域註冊。</span><span class="sxs-lookup"><span data-stu-id="abff7-108">Note that you might not see Domain Registration in your Subscriptions list if your DNS host provider isn't Google domains.</span></span>
+<span data-ttu-id="aa32f-108">請注意，如果您的 DNS 主機提供者並非 Google 網域，您可能不會在訂閱清單中看到網域註冊。</span><span class="sxs-lookup"><span data-stu-id="aa32f-108">Note that you might not see Domain Registration in your Subscriptions list if your DNS host provider isn't Google domains.</span></span>

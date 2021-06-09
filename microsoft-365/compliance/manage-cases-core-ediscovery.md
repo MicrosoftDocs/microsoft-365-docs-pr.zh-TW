@@ -24,13 +24,13 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/17/2020
 ms.locfileid: "43551403"
 ---
-# <a name="manage-cases-in-core-ediscovery"></a><span data-ttu-id="f4035-103">管理核心電子檔探索中的案例</span><span class="sxs-lookup"><span data-stu-id="f4035-103">Manage cases in core eDiscovery</span></span>
+# <a name="manage-cases-in-core-ediscovery"></a><span data-ttu-id="3aa31-103">管理核心電子檔探索中的案例</span><span class="sxs-lookup"><span data-stu-id="3aa31-103">Manage cases in core eDiscovery</span></span>
 
-## <a name="create-a-case"></a><span data-ttu-id="f4035-104">建立案例</span><span class="sxs-lookup"><span data-stu-id="f4035-104">Create a case</span></span>
+## <a name="create-a-case"></a><span data-ttu-id="3aa31-104">建立案例</span><span class="sxs-lookup"><span data-stu-id="3aa31-104">Create a case</span></span>
 
-## <a name="close-a-case"></a><span data-ttu-id="f4035-105">關閉案例</span><span class="sxs-lookup"><span data-stu-id="f4035-105">Close a case</span></span>
+## <a name="close-a-case"></a><span data-ttu-id="3aa31-105">關閉案例</span><span class="sxs-lookup"><span data-stu-id="3aa31-105">Close a case</span></span>
 
-## <a name="reopen-a-case"></a><span data-ttu-id="f4035-106">重新開啟案例</span><span class="sxs-lookup"><span data-stu-id="f4035-106">Reopen a case</span></span>
+## <a name="reopen-a-case"></a><span data-ttu-id="3aa31-106">重新開啟案例</span><span class="sxs-lookup"><span data-stu-id="3aa31-106">Reopen a case</span></span>
 
-## <a name="delete-a-case"></a><span data-ttu-id="f4035-107">刪除案例</span><span class="sxs-lookup"><span data-stu-id="f4035-107">Delete a case</span></span>
+## <a name="delete-a-case"></a><span data-ttu-id="3aa31-107">刪除案例</span><span class="sxs-lookup"><span data-stu-id="3aa31-107">Delete a case</span></span>
 

@@ -19,6 +19,6 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050883"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="704cf-103">設定 Microsoft 365 服務的安全存取權</span><span class="sxs-lookup"><span data-stu-id="704cf-103">Configure secure access to Microsoft 365 services</span></span>
+# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="767bc-103">設定 Microsoft 365 服務的安全存取權</span><span class="sxs-lookup"><span data-stu-id="767bc-103">Configure secure access to Microsoft 365 services</span></span>
 
-<span data-ttu-id="704cf-104">此方案是以「[M365 黃金 config](../security/defender-365-security/microsoft-365-policies-configurations.md)」為基礎，針對三種保護層級實施 MFA、條件式存取和相關原則的指導方針：比較基準、敏感、高敏感度。</span><span class="sxs-lookup"><span data-stu-id="704cf-104">This solution is based on the "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
+<span data-ttu-id="767bc-104">此方案是以「[M365 黃金 config](../security/defender-365-security/microsoft-365-policies-configurations.md)」為基礎，針對三種保護層級實施 MFA、條件式存取和相關原則的指導方針：比較基準、敏感、高敏感度。</span><span class="sxs-lookup"><span data-stu-id="767bc-104">This solution is based on the "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>

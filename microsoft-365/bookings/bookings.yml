@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Bookings
-summary: 使用 Microsoft 預約排程和管理約會。 包含與 Outlook 和自動通知的整合。
+summary: 使用 Microsoft 預約排程和管理約會。 包括與 Outlook 和自動化通知的整合。
 metadata:
   title: Microsoft Bookings
-  description: 使用 Microsoft 預約排程和管理約會。 包含與 Outlook 和自動通知的整合。
+  description: 使用 Microsoft 預約排程和管理約會。 包括與 Outlook 和自動化通知的整合。
   ms.service: bookings
   ms.topic: landing-page
   author: dmaguire
@@ -26,7 +26,7 @@ landingContent:
       url: bookings-overview.md
   - linkListType: download
     links:
-    - text: 取得預定應用程式
+    - text: 取得 Bookings 應用程式
       url: get-bookings-app.md
 - title: 設定 Microsoft 預定
   linkLists:
@@ -34,13 +34,13 @@ landingContent:
     links:
     - text: 輸入您的商務資訊
       url: enter-business-information.md
-    - text: 設定排程原則
+    - text: 設定您的排程原則
       url: set-scheduling-policies.md
-    - text: 定義您的服務選項
+    - text: 定義您的服務方案
       url: define-service-offerings.md
     - text: 設定員工工作時數
       url: employee-hours.md
-    - text: 自訂併發布您的預約頁面
+    - text: 定制並發佈您的預約頁面
       url: customize-booking-page.md
     - text: 建立和人員預定您的預約
       url: create-a-manual-booking.md

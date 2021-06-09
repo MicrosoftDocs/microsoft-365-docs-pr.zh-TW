@@ -19,6 +19,6 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 07/29/2020
 ms.locfileid: "46521096"
 ---
-# <a name="multi-national-design-principles-for-microsoft-365"></a><span data-ttu-id="4a568-103">Microsoft 365 的多國設計原則</span><span class="sxs-lookup"><span data-stu-id="4a568-103">Multi-national design principles for Microsoft 365</span></span>
+# <a name="multi-national-design-principles-for-microsoft-365"></a><span data-ttu-id="3299a-103">Microsoft 365 的多國設計原則</span><span class="sxs-lookup"><span data-stu-id="3299a-103">Multi-national design principles for Microsoft 365</span></span>
 
-<span data-ttu-id="4a568-104">文字</span><span class="sxs-lookup"><span data-stu-id="4a568-104">Text</span></span>
+<span data-ttu-id="3299a-104">文字</span><span class="sxs-lookup"><span data-stu-id="3299a-104">Text</span></span>
