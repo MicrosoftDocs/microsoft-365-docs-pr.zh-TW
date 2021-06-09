@@ -74,7 +74,7 @@ ms.locfileid: "52651389"
 
 若要刪除規則，請從規則清單中進行選取。 在具有規則名稱的窗格上，選取 [ **刪除**]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [事件概觀](incidents-overview.md)
 - [設定事件優先順序](incident-queue.md)
 - [調查事件](investigate-incidents.md)

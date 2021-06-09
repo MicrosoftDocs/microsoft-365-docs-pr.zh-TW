@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 來查看 Microsoft 365 帳戶授權與服務詳細資料
+title: 使用 PowerShell，查看 Microsoft 365 帳戶授權與服務詳細資料
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -26,17 +26,17 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46688847"
 ---
-# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>使用 PowerShell 來查看 Microsoft 365 帳戶授權與服務詳細資料
+# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>使用 PowerShell，查看 Microsoft 365 帳戶授權與服務詳細資料
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-在 Microsoft 365 中，授權計畫中的授權 (也稱為 SKUs 或 Microsoft 365 方案) 讓使用者能夠存取為這些計畫定義的 Microsoft 365 服務。 不過，使用者可能無法存取目前指派給他們的授權中可用的所有服務。 您可以使用 Microsoft 365 的 PowerShell，以查看使用者帳戶上的服務狀態。 
+在 Microsoft 365 中，授權計畫中的授權 (也稱為 SKUs 或 Microsoft 365 計畫，) 讓使用者能夠存取為這些計畫定義的 Microsoft 365 服務。 不過，使用者可能無法存取目前指派給他們的授權中可用的所有服務。 您可以使用 PowerShell 進行 Microsoft 365，以查看使用者帳戶上的服務狀態。 
 
 如需授權方案、授權及服務的詳細資訊，請參閱 [使用 PowerShell 查看授權和服務](view-licenses-and-services-with-microsoft-365-powershell.md)。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下來，使用此命令列出租使用者的授權計畫。
 
@@ -69,7 +69,7 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 接下來，執行此命令，列出您組織中可用的授權計畫。 
 
@@ -112,7 +112,7 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
 ```
 
-若要查看已指派 *多個授權*之使用者的所有服務，請使用下列語法：
+若要查看已指派 *多個授權* 之使用者的所有服務，請使用下列語法：
 
 ```powershell
 $userUPN="<user account UPN>"
@@ -127,7 +127,7 @@ $licArray +=  ""
 $licArray
 ```
  
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

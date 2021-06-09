@@ -24,10 +24,10 @@ ms.locfileid: "46688826"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>在您的衛星地理位置啟用 SharePoint 多地理位置
 
-本文件的目標對象是於 2019 年 3 月 27 日 SharePoint 多重地理位置正式推出**之前**已建立多地理位置衛星位置的全域或 SharePoint 系統管理員，以及尚未在其衛星地理位置中啟用 SharePoint 多地理位置的使用者。 
+本文件的目標對象是於 2019 年 3 月 27 日 SharePoint 多重地理位置正式推出 **之前** 已建立多地理位置衛星位置的全域或 SharePoint 系統管理員，以及尚未在其衛星地理位置中啟用 SharePoint 多地理位置的使用者。 
 
 >[!Note]
->如果您於 **3 月 27 日之後**新增了新的地理位置，則不需要執行下列指示，因為您的新地理位置將已針對 OneDrive 和 SharePoint 多地理位置啟用。
+>如果您於 **3 月 27 日之後** 新增了新的地理位置，則不需要執行下列指示，因為您的新地理位置將已針對 OneDrive 和 SharePoint 多地理位置啟用。
 
 這些指示可讓您在您的衛星位置啟用 SharePoint，使得多地理位置衛星使用者可以同時利用 O365 中的 OneDrive 與 SharePoint 多地理位置功能。 
 

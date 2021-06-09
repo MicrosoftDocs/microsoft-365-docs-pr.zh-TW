@@ -57,7 +57,7 @@ ms.locfileid: "52344620"
 
 ## <a name="find-out-if-you-can-use-the-upgrade-tab-to-upgrade-to-a-new-plan"></a>瞭解您是否可以使用 [升級] 索引標籤升級為新的計畫
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
 2. 選取您的 Office 365 E4 訂閱。
 3. 選取 [ **升級** ] 索引標籤。如果您看到列出的其他計畫，則表示您可以自動升級方案。
 4. 如果您無法自動升級，您會看到一則訊息，描述您無法升級的原因。
@@ -82,7 +82,7 @@ ms.locfileid: "52344620"
 
 ### <a name="start-the-upgrade-by-using-the-upgrade-tab"></a>使用 [升級] 索引標籤開始升級
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
 2. 選取您的 Office 365 E4 訂閱。
 3. 在 [訂閱詳細資料] 頁面上，選取 [ **升級** ] 索引標籤。
 4. 找到您要購買的訂閱，然後選取 [ **升級**]。
@@ -120,7 +120,7 @@ ms.locfileid: "52344620"
 > [!NOTE]
 > 如果您選擇依發票支付新的訂閱，則可能需要信用檢查。 訂閱可用前，最多可能需要兩個工作日。
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
 2. 從 [ **訂閱狀態** ] 下拉式清單中，選取 [ **Active**]。
 3. 請確定您的新訂閱已顯示，且授權數目與 Office 365 E4 的授權數目相同。
 4. 如果您需要購買更多授權，請依照 [購買或移除訂閱授權](../licenses/buy-licenses.md)中的步驟進行。

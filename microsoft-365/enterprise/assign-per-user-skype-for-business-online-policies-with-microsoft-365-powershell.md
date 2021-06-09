@@ -1,5 +1,5 @@
 ---
-title: 將每一使用者商務用 Skype Online 原則指派給 Microsoft 365 的 PowerShell
+title: 使用 Microsoft 365 的 PowerShell 指派每位使用者商務用 Skype 線上原則
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 摘要：使用 Microsoft 365 的 PowerShell，將每位使用者的通訊設定指派給商務用 Skype Online 原則。
+description: 摘要：使用 PowerShell Microsoft 365 將每一使用者的通訊設定指派給商務用 Skype 線上原則。
 ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905401"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>將每一使用者商務用 Skype Online 原則指派給 Microsoft 365 的 PowerShell
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>使用 Microsoft 365 的 PowerShell 指派每位使用者商務用 Skype 線上原則
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-使用 Microsoft 365 PowerShell，是一種將每一使用者通訊設定指派給商務用 Skype Online 原則的有效方式。
+對 Microsoft 365 使用 PowerShell 是將每一使用者的通訊設定指派給商務用 Skype 線上原則的有效方式。
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>準備執行 PowerShell 命令
 
@@ -43,11 +43,11 @@ ms.locfileid: "50905401"
    Connect-MicrosoftTeams
    ```
 
-   出現提示時，請輸入您的商務用 Skype Online 系統管理員帳戶名稱和密碼。
+   出現提示時，請輸入您的商務用 Skype 線上系統管理員帳戶名稱和密碼。
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>更新使用者帳戶的外部通訊設定
 
-假設您想要變更使用者帳戶上的外部通訊設定。 例如，您想要允許 Alex 與同盟使用者通訊 (EnableFederationAccess 等於 True) 但不是與 Windows Live 使用者 (EnablePublicCloudAccess 等於 False) 。 若要這麼做，您必須執行下列兩項動作：
+假設您想要變更使用者帳戶上的外部通訊設定。 例如，您想要允許 Alex 與同盟使用者通訊 (EnableFederationAccess 等於 True) 但不是 Windows Live 使用者 (EnablePublicCloudAccess 等於 False) 。 若要這麼做，您必須執行下列兩項動作：
   
 1. 尋找符合我們準則的外部存取原則。
     

@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender for Endpoint 中主控防火牆報告
+title: 適用於端點的 Microsoft Defender 中的主機防火牆報告
 description: 在 Microsoft 365 的安全性中心內主控及流覽防火牆報告。
 keywords: windows defender，防火牆
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52809252"
 ---
-# <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中主控防火牆報告
+# <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender 中的主機防火牆報告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

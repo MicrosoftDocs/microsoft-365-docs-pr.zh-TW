@@ -82,7 +82,7 @@ Site name,URL
 
 雖然您可以指定個別的主題管理員，但建議您建立安全性群組 (或使用現有的一個) ，其中包含您想要成為知識管理員的人員。 您可以在安裝過程中指定此安全性群組。
 
-*建立及編輯主題*
+*建立和編輯主題*
 
 主題參與者是組織中的擁護者和主題專家。 他們可以建立及編輯主題。 
 
@@ -142,7 +142,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 > * 要從主題探索中排除的機密主題清單
 > * 主題中心網站的名稱
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [設定主題體驗](set-up-topic-experiences.md)
 

@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
-description: 瞭解如何使用 Microsoft 365 審核記錄搜尋工具來協助疑難排解電子郵件帳戶的常見支援問題。
+description: 瞭解如何使用 Microsoft 365 的審計記錄檔搜尋工具，協助疑難排解電子郵件帳戶的常見支援問題。
 ms.openlocfilehash: 5f753163b5d4d6c04c121a7ce3fae970690a57b0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -43,7 +43,7 @@ ms.locfileid: "50906091"
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>使用審核記錄搜尋工具所需的許可權
 
-您必須獲指派「View-Only 審核記錄」或「審核記錄」角色在 Exchange Online 中，才可搜尋審核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 **[權限]** 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 Office 365 和 Microsoft 365 中的全域系統管理員會自動新增為 Exchange Online 中「組織管理」角色群組的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](/Exchange/permissions-exo/role-groups)。
+您必須在 Exchange Online 中為您指派 View-Only 的「審計記錄」或「審計記錄」角色，才可搜尋審核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 **[權限]** 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 Office 365 和 Microsoft 365 中的全域系統管理員會自動新增為 Exchange Online 中的「組織管理」角色群組的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](/Exchange/permissions-exo/role-groups)。
 
 ### <a name="running-audit-log-searches"></a>執行審核記錄搜尋
 
@@ -57,7 +57,7 @@ ms.locfileid: "50906091"
   
 4. 您可以設定下列搜尋準則。 本文中的每個疑難排解案例都建議您設定這些欄位的特定指導方針。
     
-    a. **活動：** 選取下拉式清單，以顯示您可以搜尋的活動。 執行搜尋後，只會顯示所選活動的審計記錄。 選取 [ **顯示所有活動的結果** ]，會顯示符合其他搜尋準則之所有活動的結果。 在某些疑難排解案例中，您也必須將此欄位保留空白。
+    a. **活動：** 選取下拉式清單，以顯示您可以搜尋的活動。 執行搜尋後，系統只會顯示所選活動的稽核記錄。 選取 [ **顯示所有活動的結果** ]，會顯示符合其他搜尋準則之所有活動的結果。 在某些疑難排解案例中，您也必須將此欄位保留空白。
     
     b. **開始日期** 和 **結束日期：** 選取日期和時間範圍可顯示在該期間內發生的事件。 預設會選取最後七天。 日期和時間以國際標準時間 (UTC) 格式表示。 您可以指定的最大日期範圍為 90 天。
 
@@ -81,10 +81,10 @@ ms.locfileid: "50906091"
 
 以下說明如何為此案例設定審核記錄搜尋查詢：
 
-**活動：** 如果與您的案例相關，請選取要搜尋的特定活動。 若要疑難排解已遭破壞的帳戶，請考慮選取 [ **Exchange 信箱活動**] 底下的 [**使用者已登入信箱** 活動]。 這會傳回審計記錄，顯示登入信箱時所使用的 IP 位址。 否則，請將此欄位保留空白，以傳回所有活動的審計記錄。 
+**活動：** 如果與您的案例相關，請選取要搜尋的特定活動。 若要疑難排解已遭破壞的帳戶，請考慮在 **Exchange 信箱活動**] 底下選取 [**使用者已登入信箱**] 活動。 這會傳回審計記錄，顯示登入信箱時所使用的 IP 位址。 否則，請將此欄位保留空白，以傳回所有活動的審計記錄。 
 
 > [!TIP]
-> 將此欄位保留空白將會傳回 **UserLoggedIn** 活動，也就是 Azure Active Directory 活動，表示某人已登入使用者帳戶。 在搜尋結果中使用篩選來顯示 **UserLoggedIn** 的審計記錄。
+> 將此欄位保留空白將會傳回 **UserLoggedIn** 活動，也就是表示某人已登入使用者帳戶的 Azure Active Directory 活動。 在搜尋結果中使用篩選來顯示 **UserLoggedIn** 的審計記錄。
 
 **開始日期** 和 **結束日期：** 選取適用于調查的日期範圍。
 
@@ -96,7 +96,7 @@ ms.locfileid: "50906091"
 
 ## <a name="determine-who-set-up-email-forwarding-for-a-mailbox"></a>決定信箱的電子郵件轉發設定
 
-為信箱設定電子郵件轉寄時，傳送至信箱的電子郵件會轉送到另一個信箱。 郵件可以轉寄給組織內部或外部的使用者。 在信箱上設定電子郵件轉寄時，所使用的基礎 Exchange Online Cmdlet 會 **Set-Mailbox**。
+為信箱設定電子郵件轉寄時，傳送至信箱的電子郵件會轉送到另一個信箱。 郵件可以轉寄給組織內部或外部的使用者。 在信箱上設定電子郵件轉寄時，會 **Set-Mailbox** 所用的基礎 Exchange Online Cmdlet。
 
 以下說明如何為此案例設定審核記錄搜尋查詢：
 
@@ -134,7 +134,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>決定使用者是否刪除電子郵件專案
 
-從2019年1月開始，Microsoft 預設會針對所有 Office 365 和 Microsoft 組織開啟信箱審核記錄。 這表示會自動記錄信箱擁有者執行的某些動作，當您在信箱審核記錄檔中搜尋時，會提供對應的信箱審計記錄。 在信箱審核預設為開啟狀態之前，您必須針對組織中的每個使用者信箱手動啟用它。 
+從2019年1月開始，microsoft 預設會針對所有的 Office 365 和 Microsoft 組織開啟信箱審核記錄。 這表示會自動記錄信箱擁有者執行的某些動作，當您在信箱審核記錄檔中搜尋時，會提供對應的信箱審計記錄。 在信箱審核預設為開啟狀態之前，您必須針對組織中的每個使用者信箱手動啟用它。 
 
 預設會記錄的信箱動作包括信箱擁有者執行的 SoftDelete 和 HardDelete 信箱動作。 這表示您可以使用下列步驟，在審計記錄檔中搜尋與已刪除之電子郵件專案相關的事件。 如需預設信箱審核的詳細資訊，請參閱 [管理信箱審核](enable-mailbox-auditing.md)。
 
@@ -164,9 +164,9 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 ### <a name="recover-deleted-email-items"></a>復原已刪除的電子郵件專案
 
-如果刪除的郵件保留期間尚未到期，使用者可以復原虛刪除的專案。 在 Exchange Online 中，預設已刪除郵件的保留期間為14天，但是系統管理員可將此設定增加為最長30天。 請使用者在 [Outlook 網頁版中的 [復原刪除的郵件] 或 [電子郵件](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) ]，以取得復原已刪除專案的指示。
+如果刪除的郵件保留期間尚未到期，使用者可以復原虛刪除的專案。 在 Exchange Online 中，預設已刪除郵件的保留期間為14天，但是系統管理員可將此設定增加為最長30天。 在本文的 Outlook 中，將使用者指向 [[復原已刪除的郵件] 或 [電子郵件](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)]，以取得復原已刪除專案的指示。
 
-如先前所述，當已刪除專案的保留期間尚未到期或信箱處於保留狀態時，系統管理員可能能夠復原已刪除的專案，在此情況下，會保留專案，直到保留期間到期為止。 當您執行內容搜尋時，[可復原的專案] 資料夾中的虛刪除和實刪除專案會在搜尋結果中傳回，如果符合搜尋查詢。 如需有關執行內容搜尋的詳細資訊，請參閱 [內容搜尋 In Office 365](content-search.md)。
+如先前所述，當已刪除專案的保留期間尚未到期或信箱處於保留狀態時，系統管理員可能能夠復原已刪除的專案，在此情況下，會保留專案，直到保留期間到期為止。 當您執行內容搜尋時，[可復原的專案] 資料夾中的虛刪除和實刪除專案會在搜尋結果中傳回，如果符合搜尋查詢。 如需執行內容搜尋的詳細資訊，請參閱[Office 365 中的內容搜尋](content-search.md)。
 
 > [!TIP]
 > 若要搜尋刪除的電子郵件專案，請搜尋在審計記錄的 [ **AffectedItems** ] 欄位中顯示的全部或部分主旨行。
@@ -175,12 +175,12 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 當使用者建立其 Exchange Online 信箱的收件匣規則時，對應的審計記錄會儲存至審計記錄檔。 如需收件匣規則的相關資訊，請參閱：
 
-- [在 web 上的 Outlook 中使用收件匣規則](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
+- [在 web 上的 Outlook 使用收件匣規則](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
 - [使用規則管理 Outlook 中的電子郵件](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
 
 以下說明如何為此案例設定審核記錄搜尋查詢：
 
-**活動：** 在 [ **Exchange 信箱活動**] 底下，選取 [ **New-InboxRule 建立/修改/啟用/停用收件匣規則**]。
+**活動：** 在 [ **Exchange 信箱活動**] 底下，選取 **New-InboxRule 建立/修改/啟用/停用收件匣規則**。
 
 **開始日期** 和 **結束日期：** 選取適用于調查的日期範圍。
 
@@ -202,12 +202,12 @@ d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收�
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>調查組織外部使用者成功登入的原因
 
-在審核記錄中檢查審計記錄時，您可能會看到指出外部使用者已透過 Azure Active Directory 驗證，且已成功登入組織的記錄。 例如，contoso.onmicrosoft.com 中的系統管理員可能會看到一個審計記錄，顯示來自不同組織的使用者 (例如，fabrikam.onmicrosoft.com) 成功登入 contoso.onmicrosoft.com。 同樣地，您可能會看到審計記錄指出使用 Microsoft 帳戶的使用者 (MSA) （如 Outlook.com 或 Live.com）成功登入您的組織。 在這些情況下，已審核的活動為 **使用者登入**。 
+在審核記錄中檢查審計記錄時，您可能會看到指出外部使用者已 Azure Active Directory 驗證，且已成功登入組織的記錄。 例如，contoso.onmicrosoft.com 中的系統管理員可能會看到一個審計記錄，顯示來自不同組織的使用者 (例如，fabrikam.onmicrosoft.com) 成功登入 contoso.onmicrosoft.com。 同樣地，您可能會看到審計記錄指出使用 Microsoft 帳戶的使用者 (MSA) （例如，Outlook .com 或 Live.com）已成功登入您的組織。 在這些情況下，已審核的活動為 **使用者登入**。 
 
-產生此錯誤是系統刻意為之。 當外部使用者嘗試存取 SharePoint 網站或組織中的 OneDrive 位置時，azure Active Directory (Azure AD) （目錄服務）可允許所謂 *的傳遞驗證* 。 當外部使用者嘗試這麼做時，系統會提示他們輸入認證。 Azure AD 使用認證來驗證使用者，這表示只有 Azure AD 驗證使用者是其所聲稱的使用者。 在審計記錄中成功登入的指示是 Azure AD 驗證使用者的結果。 成功的登入並不表示使用者能夠存取任何資源或在您的組織中執行其他任何動作。 它只會指出使用者已由 Azure AD 進行驗證。 為了讓透過使用者能夠存取 SharePoint 或 OneDrive 資源，貴組織中的使用者必須透過傳送共用邀請或匿名共用連結，明確地與外部使用者共用資源。 
+產生此錯誤是系統刻意為之。 Azure Active Directory (Azure AD) ，目錄服務可在外部使用者嘗試存取 SharePoint 網站或組織中的 OneDrive 位置時，允許所謂 *的傳遞驗證*。 當外部使用者嘗試這麼做時，系統會提示他們輸入認證。 Azure AD 使用認證來驗證使用者，這表示只有 Azure AD 驗證使用者是其所聲稱的使用者。 在審計記錄中成功登入的指示是 Azure AD 驗證使用者的結果。 成功的登入並不表示使用者能夠存取任何資源或在您的組織中執行其他任何動作。 它只會指出使用者已由 Azure AD 進行驗證。 為了讓透過使用者能夠存取 SharePoint 或 OneDrive 資源，貴組織中的使用者必須透過傳送共用邀請或匿名共用連結，明確地與外部使用者共用資源。 
 
 > [!NOTE]
-> Azure AD 只允許 *第一方應用程式* 的傳遞驗證，例如 SharePoint 線上和商務 OneDrive。 不允許其他協力廠商應用程式。
+> Azure AD 只允許 *第一方應用程式* 的傳遞驗證，例如 SharePoint 線上及商務用 OneDrive。 不允許其他協力廠商應用程式。
 
 以下是已 **登入** 事件（即傳遞驗證的結果）之審核記錄中相關屬性的範例及描述。 選取 [審計記錄] 以顯示 [ **詳細資料** ] 飛出頁面，然後選取 [ **詳細資訊**]。
 
@@ -217,21 +217,21 @@ d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收�
 
    b. 此欄位會顯示嘗試存取組織中資源的外部使用者的 UPN。 此使用者識別碼也會在 **使用者** 中識別，並 **UserId** 審計記錄中的屬性。
 
-   c. **ApplicationId** 屬性可識別觸發登入要求的應用程式。 此審計記錄中 ApplicationId 屬性所顯示的00000003-0000-0ff1-ce00-000000000000 值會指出 SharePoint 線上。 OneDrive 商務用 ApplicationId 也相同。
+   c. **ApplicationId** 屬性可識別觸發登入要求的應用程式。 此審計記錄中 ApplicationId 屬性所顯示的00000003-0000-0ff1-ce00-000000000000 值會指出 SharePoint 線上。 商務用 OneDrive 也會有相同的 ApplicationId。
 
    d. 這表示透過驗證成功。 換句話說，使用者已透過 Azure AD 成功驗證。 
 
    e. **RecordType** 值為 **15** 表示已審核的活動 (USERLOGGEDIN) 為 (STS) Azure AD 中登入事件的安全權杖服務。
 
-如需 UserLoggedIn 審計記錄中所顯示之其他屬性的詳細資訊，請參閱 [Office 365 管理活動 API 架構](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)中的 Azure AD 相關架構資訊。
+如需 UserLoggedIn 審計記錄中所顯示之其他屬性的詳細資訊，請參閱[Office 365 管理活動 API 架構](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)中的 Azure AD 相關架構資訊。
 
 以下兩個範例案例會導致成功的使用者因透過驗證而 **登入** 審核活動： 
 
-  - 使用 Microsoft 帳戶 (的使用者，例如 SaraD@outlook.com) 嘗試存取 fourthcoffee.onmicrosoft.com 中商務用帳戶的 OneDrive 中的檔，但沒有 fourthcoffee.onmicrosoft.com 中 SaraD@outlook.com 的對應來賓使用者帳戶。
+  - 使用 Microsoft 帳戶 (的使用者，例如 SaraD@outlook.com) 嘗試存取 fourthcoffee.onmicrosoft.com 中商務用 OneDrive 帳戶中的檔，但沒有 fourthcoffee.onmicrosoft.com 中 SaraD@outlook.com 的對應來賓使用者帳戶。
 
   - 在組織中有工作或學校帳戶的使用者 (例如 pilarp@fabrikam.onmicrosoft.com) 已嘗試存取 contoso.onmicrosoft.com 中的 SharePoint 網站，但沒有 contoso.onmicrosoft.com 中 pilarp@fabrikam.com 的對應來賓使用者帳戶。
 
-### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>透過透過驗證來調查成功登入的秘訣
+### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>用於調查透過驗證所產生之成功登入的提示
 
 - 搜尋審計記錄檔，以瞭解在 **使用者登入** 的審計記錄中所識別的外部使用者所執行的活動。 在 [ **使用者** ] 方塊中輸入外部使用者的 UPN，並使用與您的案例相關的日期範圍。 例如，您可以使用下列搜尋準則來建立搜尋：
 
@@ -245,7 +245,7 @@ d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收�
 
 ## <a name="search-for-mailbox-activities-performed-by-users-with-non-e5-licenses"></a>搜尋使用非 E5 授權之使用者執行的信箱活動
 
-即使已開啟組織的 [預設信箱審核](enable-mailbox-auditing.md) ，您也可能注意到某些使用者的信箱審核事件，在審計記錄搜尋中，未使用「規範中心」、「 **Search-UnifiedAuditLog** Cmdlet」或「Office 365 管理」活動 API 找到。 原因是，只有當您使用其中一種方法來搜尋整合的審計記錄時，才會傳回具有 E5 授權的使用者的信箱審核事件。
+即使已開啟組織的 [預設信箱審核](enable-mailbox-auditing.md)，您也可能會發現某些使用者的信箱審核事件，在審計記錄搜尋中卻無法使用規範中心、 **Search-UnifiedAuditLog** Cmdlet 或 Office 365 管理活動 API 找到。 原因是，只有當您使用其中一種方法來搜尋整合的審計記錄時，才會傳回具有 E5 授權的使用者的信箱審核事件。
 
 若要取得非 E5 使用者的信箱審計記錄記錄，您可以執行下列其中一項變通措施：
 
@@ -262,7 +262,7 @@ d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收�
 
 ## <a name="search-for-mailbox-activities-performed-in-a-specific-mailbox-including-shared-mailboxes"></a>搜尋在特定信箱中執行的信箱活動 (包括共用信箱) 
 
-當您使用「規範中心」的 [審核記錄搜尋工具] 中的 [ **使用者** ] 下拉式清單，或 Exchange Online PowerShell 中的 **Search-UnifiedAuditLog UserIds** ] 命令時，您可以搜尋特定使用者執行的活動。 針對信箱審核活動，這種類型的搜尋會搜尋指定使用者執行的活動。 它不保證在相同信箱中執行的所有活動都會傳回搜尋結果中。 例如，「審核記錄搜尋」不會傳回代理人使用者執行之活動的審計記錄，因為搜尋特定使用者執行的信箱活動不會傳回代理人使用者所執行的活動，該使用者已獲指派許可權來存取另一個使用者的信箱。  (代理人使用者是指配給其他使用者信箱的 SendAs、SendOnBehalf 或 FullAccess 信箱許可權的人員。 ) 
+當您使用「規範中心」的 [審計記錄搜尋工具] 中的 [**使用者**] 下拉式清單，或 Exchange Online PowerShell 的 **Search-UnifiedAuditLog UserIds** ] 命令時，您可以搜尋特定使用者執行的活動。 針對信箱審核活動，這種類型的搜尋會搜尋指定使用者執行的活動。 它不保證在相同信箱中執行的所有活動都會傳回搜尋結果中。 例如，「審核記錄搜尋」不會傳回代理人使用者執行之活動的審計記錄，因為搜尋特定使用者執行的信箱活動不會傳回代理人使用者所執行的活動，該使用者已獲指派許可權來存取另一個使用者的信箱。  (代理人使用者是指配給其他使用者信箱的 SendAs、SendOnBehalf 或 FullAccess 信箱許可權的人員。 ) 
 
 此外，使用 [審計記錄] 搜尋工具或 **Search-UnifiedAuditLog UserIds** 中的 [**使用者**] 下拉式清單，不會傳回共用信箱中所執行之活動的結果。
 

@@ -93,7 +93,7 @@ Microsoft 365Defender 會將信號和資料一起帶入整合的[Microsoft 365 �
 
 您可以平行設定威脅防護功能，因此，如果您有多個網路安全小組負責不同的服務，則可以同時設定組織的保護功能。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 繼續[設定不同 Microsoft 365 的威脅防護功能](deploy-threat-protection-configure.md)。
 

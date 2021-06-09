@@ -64,11 +64,11 @@ SharePoint Server 2013 和 SharePoint Online 最強大的新功能之一就是�
   
 ## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>在 SharePoint Online 中新增內容搜尋網頁組件
 
-新增內容搜尋網頁組件的程序與一般內容查詢網頁組件非常類似。 請參閱[「在 SharePoint 中設定內容搜尋網頁組件」](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)中的 *「新增內容搜尋網頁組件」* ​​一節。
+新增內容搜尋網頁組件的程序與一般內容查詢網頁組件非常類似。 請參閱 [「在 SharePoint 中設定內容搜尋網頁組件」](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)中的 *「新增內容搜尋網頁組件」* ​​一節。
   
 ## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>為您的內容搜尋網頁組件建立正確的搜尋查詢
 
-一旦新增內容搜尋網頁組件，您就可以縮小搜尋並傳回想要的項目。 如需如何執行此操作的詳細指示，請參閱在[ SharePoint 中設定內容搜尋網頁組件](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)中的 *「透過設定內容搜尋網頁組件中的進階查詢來顯示內容​」* 一節。
+一旦新增內容搜尋網頁組件，您就可以縮小搜尋並傳回想要的項目。 如需如何執行此操作的詳細指示，請參閱在 [ SharePoint 中設定內容搜尋網頁組件](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)中的 *「透過設定內容搜尋網頁組件中的進階查詢來顯示內容​」* 一節。
   
 ## <a name="query-building-and-testing-tool"></a>建置查詢與測試工具
 

@@ -111,7 +111,7 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理許
 
 該表也會指出 Office 365 企業版，並 Office 365 每個必要的政府方案。 當您的組織除了 E1/F1/G1 或 E3/F3/G3 訂閱之外，如果您的組織具有適當的附加元件訂閱，則可以使用某些預設的警示原則。
 
-| 預設警示原則 | 描述 | 類別 | Enterprise 訂閱 |
+| 預設警示原則 | 描述 | Category | Enterprise 訂閱 |
 |:-----|:-----|:-----|:-----|
 |**偵測到可能的惡意 URL 按一下**|當您組織中的 [安全連結](../security/office-365-security/safe-links.md) 保護的使用者按一下惡意連結時，會產生警示。 當 Microsoft Defender 針對 Office 365，或使用者根據組織 Microsoft 365 的商務安全連結原則)  (，來覆寫 [安全連結] 頁面時，就會觸發此事件。 此警示原則具有 **高** 嚴重性設定。 若為 Office 365 P2，G5，G5 客戶的 Defender，此提醒會[在 Office 365 中自動觸發自動調查和回應](../security/office-365-security/office-365-air.md)。 如需觸發此警示之事件的詳細資訊，請參閱 [設定安全連結原則](../security/office-365-security/set-up-safe-links-policies.md)。|威脅管理|E5/G5 或 Office 365 P2 附加元件訂閱的 Defender|
 |**系統管理員提交結果已完成**|當系統 [管理員提交](../security/office-365-security/admin-submission.md) 完成已送出之實體的重新掃描時產生警示。 每當系統管理員提交轉譯重新掃描結果時，就會觸發警示。 這些提醒會提醒您 [複查先前提交的結果](https://protection.office.com/reportsubmission)、提交使用者報告的郵件以取得最新的原則檢查和重新掃描 verdicts，以及協助您判斷組織中的篩選原則是否有預期的影響。 這個原則有 **資訊性** 嚴重性設定。|威脅管理|E1/F1、E3/F3 或 E5|

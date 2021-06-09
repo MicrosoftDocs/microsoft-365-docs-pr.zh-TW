@@ -41,13 +41,13 @@ ms.locfileid: "46688293"
 您可以使用協力廠商軟體（如 Web Essentials）來捆綁 CSS 和 JavaScript 檔案。
   
 > [!IMPORTANT]
-> Web Essentials 是協力廠商、開放來源、以群組為基礎的專案。 軟體是 Visual Studio 2012 和 Visual Studio 2013 的擴充功能，且不受 Microsoft 支援。 若要下載 Web Essentials，請流覽網站，網址為 [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) 。 
+> Web Essentials 是協力廠商、開放來源、以群組為基礎的專案。 軟體是 Visual Studio 2012 和 Visual Studio 2013 的分機，而且不受 Microsoft 支援。 若要下載 Web Essentials，請流覽網站，網址為 [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) 。 
   
 Web Essentials 提供兩種捆綁形式：
   
 - 。束： CSS 和 JavaScript 檔案
     
-- sprite：只有在 Visual Studio 2013 中才能使用的影像 () 
+- sprite：影像的 (僅可用於 Visual Studio 2013) 
     
 如果現有的功能包含一些在自訂主版頁面內參照的署名元素，您可以使用 Web Essentials，例如：
   

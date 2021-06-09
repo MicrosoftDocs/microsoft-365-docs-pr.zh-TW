@@ -28,31 +28,31 @@ ms.locfileid: "50905689"
 
 入口網站是您內部網路上的 SharePoint 網站，擁有大量網站檢視者在該網站上取用內容。 大型組織可能會有多個入口網站；例如公司入口網站和人力資源入口網站。 通常，入口網站建立及撰寫網站和內容的人相對較少。 大部分的訪客來到入口網站只會閱讀並取用內容。
 
-本文說明如何規劃您的部署和外推行計畫，以 SharePoint 線上。 它也會提供在 SharePoint 線上上不允許傳統負載測試時遵循的方法。 SharePoint 線上是雲端服務，且服務的負載、健康情況和整體平衡是由 Microsoft 所管理。
+本文說明如何規劃您的部署和外推行計畫，以 SharePoint 線上。 它也會提供在 SharePoint 線上上不允許傳統負載測試時遵循的方法。 SharePoint線上是一項雲端服務，且服務的負載、健康情況和整體平衡是由 Microsoft 所管理。
 
 若要協助建立成功的入口網站，請遵循[建立、啟動及維護健康入口網站](/sharepoint/portal-health)的基本原則、作法和建議 
 
 部署方法會在下方反白顯示。
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>SharePoint 線上的容量規劃概述
-為了有效地使用容量並處理未預期的成長，在任何伺服器陣列中，我們都有追蹤某些使用案例的自動化。 在任何一個伺服器陣列中，任何一個承租人的實際成長都無法預測，而且總的要求總數可透過時間預測。 透過找出 SharePoint 線上中的成長趨勢，我們可以規劃未來的擴充。 如需詳細資訊 [，請 SharePoint 線上的容量規劃和負載測試](capacity-planning-and-load-testing-sharepoint-online.md)。
+為了有效地使用容量並處理未預期的成長，在任何伺服器陣列中，我們都有追蹤某些使用案例的自動化。 在任何一個伺服器陣列中，任何一個承租人的實際成長都無法預測，而且總的要求總數可透過時間預測。 透過找出 SharePoint 線上中的成長趨勢，我們可以規劃未來的擴充。 如需詳細資訊[，請 SharePoint 線上的容量規劃和負載測試](capacity-planning-and-load-testing-sharepoint-online.md)。
 
 成功啟動的關鍵區段是下文的「波形」或「逐步外滾」方式。 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>我可以線上載入測試 SharePoint 嗎？
-SharePoint 線上是跨伺服器陣列進行平衡的共用多 tenanted 環境，並可在不斷調整規模。 負載測試環境（如 SharePoint Online），其縮放比例變更不只會給您未預期的結果，但不允許。 
+SharePoint線上是跨伺服器陣列進行平衡的共用多 tenanted 環境，其規模會不斷調整。 負載測試環境（如 SharePoint Online），其縮放比例變更不只會給您未預期的結果，但不允許。 
 
-深入瞭解：  [容量規劃和負載測試 SharePoint 線上](capacity-planning-and-load-testing-sharepoint-online.md)
+深入瞭解：[容量規劃和負載測試 SharePoint 線上](capacity-planning-and-load-testing-sharepoint-online.md)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>遵循建議的指導方針以優化頁面
 內部部署中部署的頁面不只是移至 SharePoint 線上，而不需針對線上 SharePoint 建議方針進行查看。 最佳的做法是，針對 SharePoint 中的任何網站或入口網站，一定要優化任何首頁，因為這是您組織中的大部分使用者將存取為網站 (s) 的起點的地方。
 
 應該考慮的一些基本因素如下：
 - 內部部署可利用傳統的伺服器端快取，例如物件快取、輸出快取和 blob 快取。 在雲端的拓撲差異中，這些選項不一定可供您使用，因為大量的比例差異使其不太可行。
-- 用於雲端消耗的任何頁面/功能/自訂，都應該針對較高的延遲和使用者的分散位置進行優化，這樣不同區域或地區的使用者便可獲得更一致的經驗。 雲端提供優化功能（例如內容傳遞網路） (CDN) 若要針對分散式使用者基礎進行優化，也就是對現代 SharePoint 而言，我們可以使用全新的 (LKG)  (OOTB) 網頁元件。
+- 用於雲端消耗的任何頁面/功能/自訂，都應該針對較高的延遲和使用者的分散位置進行優化，這樣不同區域或地區的使用者便可獲得更一致的經驗。 雲端提供優化功能（如內容傳遞網路） (CDN) 以優化分散式使用者基底及現代 SharePoint 時，我們可以使用的最後一個已知良好 (LKG)  (OOTB) 網頁元件。
 
 ### <a name="what-to-do"></a>要執行的動作：
- - 在 SharePoint Online 中的所有網站頁面上使用 [頁面診斷工具](./page-diagnostics-for-spo.md)，Chromium 擴充功能可協助分析和提供指導方針。 這可供網站擁有者、編輯者及開發人員使用，因為其設計是要成為分析和優化的起點。
+ - 對於 SharePoint Online 中的所有網站頁面，都使用[頁面診斷工具](./page-diagnostics-for-spo.md)，這是一種可協助分析及提供指導方針的 Chromium 擴充功能。 這可供網站擁有者、編輯者及開發人員使用，因為其設計是要成為分析和優化的起點。
  - 開發人員也應該使用像是 F12 瀏覽器開發人員工具的開發工具，以及在新式頁面上的瀏覽器中的 CTRL-F12。 [Fiddler](https://www.telerik.com/download/fiddler) 也可以用來查看大小的長短 (頁面以 mb) 的大小，以及影響整體頁面負載的呼叫和元素數目。 
 
 本節是優化頁面的簡短摘要。  若要深入瞭解，請參閱：  [建立、啟動及維護健康的入口網站](/sharepoint/portal-health)。

@@ -26,10 +26,10 @@ ms.locfileid: "50906777"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>形成查詢以搜尋儲存在網站上的敏感資料
 
-使用者經常會在網站上儲存敏感資料，例如信用卡號碼、身分證字號，或其他個人資料，長期下來，這會讓組織處於資料遺失的巨大風險中。 儲存在網站上的檔（包括商務網站 OneDrive）可以與組織外部的人員共用，而不應該存取訊號。 透過資料遺失防護 (DLP) SharePoint 線上，您可以探索包含整個租使用者的敏感性資料的檔。 探索文件之後，您可以與文件擁有者協力保護資料。 本主題可以協助您進行查詢，以搜尋敏感資料。
+使用者經常會在網站上儲存敏感資料，例如信用卡號碼、身分證字號，或其他個人資料，長期下來，這會讓組織處於資料遺失的巨大風險中。 儲存在網站上的檔（包括商務用 OneDrive 網站）可與組織外部的人員共用，而不應該存取訊號。 透過資料遺失防護 (DLP) SharePoint 線上，您可以探索包含整個租使用者的敏感性資料的檔。 探索文件之後，您可以與文件擁有者協力保護資料。 本主題可以協助您進行查詢，以搜尋敏感資料。
   
 > [!NOTE]
-> 電子化探索（或 eDiscovery）和 DLP 是需要 [SharePoint 線上方案 2](https://go.microsoft.com/fwlink/?LinkId=510080)的高級功能。 
+> 電子化探索（或 eDiscovery）和 DLP 是需要[SharePoint 線上方案 2](https://go.microsoft.com/fwlink/?LinkId=510080)的高級功能。 
   
 ## <a name="forming-a-basic-dlp-query"></a>形成基本 DLP 查詢
 
@@ -39,11 +39,11 @@ ms.locfileid: "50906777"
   
 ### <a name="sensitive-type---required"></a>敏感類型 - 必要
 
-那麼各個部分分別是什麼？ SharePoint DLP 查詢通常會以屬性  `SensitiveType:"` 和 [機密資訊類型清單](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help)中的資訊類型名稱開始，並以  `"` 。 您也可以使用您為組織建立的 [自訂機密資訊類型](create-a-custom-sensitive-information-type.md) 的名稱。 例如，您可能要尋找包含信用卡號碼的文件。 在這種情況下，您會使用下列格式：  `SensitiveType:"Credit Card Number"` 。 因為您未包含計數範圍或信賴範圍，所以查詢會傳回偵測到信用卡號碼的每個檔。 這是您可以執行的最簡單的查詢，會傳回最多結果。 請記住，敏感類型的拼字和空格有影響。 
+那麼各個部分分別是什麼？ SharePointDLP 查詢通常會以屬性 `SensitiveType:"` 和[機密資訊類型清單](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help)中的資訊類型名稱開始，並以 a 結尾 `"` 。 您也可以使用您為組織建立的 [自訂機密資訊類型](create-a-custom-sensitive-information-type.md) 的名稱。 例如，您可能要尋找包含信用卡號碼的文件。 在這種情況下，您會使用下列格式：  `SensitiveType:"Credit Card Number"` 。 因為您未包含計數範圍或信賴範圍，所以查詢會傳回偵測到信用卡號碼的每個檔。 這是您可以執行的最簡單的查詢，會傳回最多結果。 請記住，敏感類型的拼字和空格有影響。 
   
 ### <a name="ranges---optional"></a>範圍 - 選用
 
-接下來的兩個部分皆為範圍，讓我們快速檢查範圍的外觀。 在 SharePoint DLP 查詢中，基本範圍是以兩個數字來表示，這兩個數字是以兩個句點隔開，如下所示：  `[number]..[number]` 。 例如，如果  `10..20` 使用，該範圍會從10到20取得數位。 有許多不同的範圍組合，本主題涵蓋其中一些組合。 
+接下來的兩個部分皆為範圍，讓我們快速檢查範圍的外觀。 在 SharePoint DLP 查詢中，基本範圍是以兩個數字來表示，這兩個數字是以兩個句點隔開，如下所示： `[number]..[number]` 。 例如，如果  `10..20` 使用，該範圍會從10到20取得數位。 有許多不同的範圍組合，本主題涵蓋其中一些組合。 
   
 讓我們將計數範圍新增至查詢。 您可以使用 count 範圍來定義檔在查詢結果中包含之前必須包含的機密資訊發生次數。 例如，如果您希望查詢只傳回正好包含五個信用卡號碼的檔，請使用下列：  `SensitiveType:"Credit Card Number|5"` 。 計數範圍也可以協助您識別有高度風險的文件。 例如，您的組織可能會將具有 5 個以上信用卡號碼的文件視為高風險。 若要尋找符合此準則的檔，您可以使用此查詢：  `SensitiveType:"Credit Card Number|5.."` 。 或者，您可以使用下列查詢找到具有五個或更少信用卡號碼的檔：  `SensitiveType:"Credit Card Number|..5"` 。 
   
@@ -58,7 +58,7 @@ ms.locfileid: "50906777"
 
 DLP in SharePoint 也會引入 LastSensitiveContentScan 屬性，可協助您搜尋特定時間範圍內掃描的檔案。 如需屬性的查詢範例  `LastSensitiveContentScan` ，請參閱下一節中的 [複雜查詢範例](#examples-of-complex-queries) 。 
   
-您不僅可以使用 DLP 特有的屬性來建立查詢，也可以使用標準 SharePoint eDiscovery 搜尋屬性（例如  `Author` or）  `FileExtension` 。 您可以使用運算子來建立複雜查詢。 如需可用的屬性及運算子清單，請參閱 [使用搜尋屬性和操作員搭配 eDiscovery](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery) 博客文章。 
+您不僅可以使用 DLP 特有的屬性來建立查詢，也可以使用標準 SharePoint eDiscovery 搜尋屬性（例如 `Author` or） `FileExtension` 。 您可以使用運算子來建立複雜查詢。 如需可用的屬性及運算子清單，請參閱 [使用搜尋屬性和操作員搭配 eDiscovery](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery) 博客文章。 
   
 ## <a name="examples-of-complex-queries"></a>範例
 

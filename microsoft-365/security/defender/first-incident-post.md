@@ -50,7 +50,7 @@ Microsoft 365您可以為組織提供與[MITRE ATT&CK Framework](https://attack.
 
 事件後檢查活動也可導致微調安全性設定和安全性小組的程式，以加強組織的回應能力。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 請參閱下列其他調查路徑：
 
@@ -58,7 +58,7 @@ Microsoft 365您可以為組織提供與[MITRE ATT&CK Framework](https://attack.
 - [以身分識別為基礎的攻擊](first-incident-path-identity.md)
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
 - [調查事件](investigate-incidents.md)

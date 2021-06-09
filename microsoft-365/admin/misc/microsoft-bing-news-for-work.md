@@ -25,15 +25,15 @@ ms.locfileid: "51649959"
 
 ## <a name="what-is-it"></a>這是什麼？
 
-利用 Microsoft 的 Bing 搜尋引擎的力量，行業更新是網頁上最重要的工作新聞集合，只為您所選取。
+利用 Microsoft Bing 搜尋引擎的力量，行業更新是網頁上最重要的工作新聞集合，只為您所選取。
 
-## <a name="how-does-it-work"></a>它的運作方式為何？
+## <a name="how-does-it-work"></a>它如何運作？
 
 請遵循下列主題和興趣來自訂您的體驗。 請先取得公司的相關資訊，追蹤行業趨勢，以及第一個瞭解重要產品發佈的資訊。 此外，還會深入瞭解增加職業所需的技能和資訊。
 
 ## <a name="how-do-i-customize-my-industry-updates-email"></a>如何自訂我的行業更新電子郵件？
 
-若要自訂您的體驗，請流覽 [設定] 頁面，以遵循您重要的主題和興趣。 透過書簽 [自訂您在 Bing、Edge 和工業更新簡報的內容，](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) 或按一下您行業更新電子郵件中的 [設定] 按鈕，存取您的個人設定頁面。
+若要自訂您的體驗，請流覽 [設定] 頁面，以遵循您重要的主題和興趣。 透過書簽[自訂您在 Bing、Edge 和工業更新電子報上的內容，](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1)或按一下您行業更新電子郵件中的 [設定] 按鈕，即可存取您的個人設定頁面。
 
 立即[訂閱](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form=BAWLOG&frb=1)並取得業界更新已傳遞至您的收件匣的電子郵件！
 

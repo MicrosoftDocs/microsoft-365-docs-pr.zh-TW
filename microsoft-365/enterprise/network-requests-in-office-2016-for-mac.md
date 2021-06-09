@@ -16,7 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: 本文說明如何嘗試聯繫哪些端點和 URLs Office for Mac 應用程式，以及所提供的服務。
+description: 本文說明嘗試到達哪些端點和 URLs Mac 版 Office 應用程式，以及提供的服務。
 ms.openlocfilehash: b777b4ea7e03495cb6389be8fe05e96a26fd9664
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "46688571"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Mac 版 Office 中的網路要求
 
-Office for Mac 應用程式提供 macOS 平臺上的原生應用程式體驗。 每個應用程式的設計目的都是在各種案例中運作，包括沒有網路存取可用時的狀態。 當機器連接至網路時，應用程式會自動連接至一系列的 web 型服務，以提供增強的功能。 下列資訊說明應用程式嘗試到達哪些端點和 URLs，以及所提供的服務。 此資訊對於疑難排解網路設定問題及設定網路 proxy 伺服器的原則很有用。 本文中的詳細資料是用於補充 [Office 365 URL 和位址範圍文章](urls-and-ip-address-ranges.md)，其中包含執行 Microsoft Windows 之電腦的端點。 除非另有說明，否則本文中的資訊也適用于 mac 版 Office 2019 和 Office 2016 for Mac，可從零售商店購買一次，或透過大量授權達成。 
+Mac 版 Office 應用程式提供 macOS 平臺上的原生應用程式體驗。 每個應用程式的設計目的都是在各種案例中運作，包括沒有網路存取可用時的狀態。 當機器連接至網路時，應用程式會自動連接至一系列的 web 型服務，以提供增強的功能。 下列資訊說明應用程式嘗試到達哪些端點和 URLs，以及所提供的服務。 此資訊對於疑難排解網路設定問題及設定網路 proxy 伺服器的原則很有用。 本文中的詳細資料是用於補充[Office 365 URL 和位址範圍文章](urls-and-ip-address-ranges.md)，其中包含執行 Microsoft Windows 之電腦的端點。 除非另有說明，否則本文中的資訊也適用于 Mac 和 Mac 版 Office 2016 的 Office 2019，可從零售商店購買一次，或透過大量授權達成。 
 
   
 本文大部分是詳述網路 URLs、類型，以及該端點所提供之服務或功能說明的表格。 每個 Office 應用程式在其服務和端點使用量上可能會有所不同。 下列應用程式是在下表中定義：
@@ -41,58 +41,58 @@ URL 類型定義如下：
   
 - ST： Static-URL 已硬編碼為用戶端應用程式。
     
-- SS：半靜電-URL 是以網頁或重新導向程式的一部分編碼。
+- SS： Semi-Static-此 URL 是以網頁或重新導向程式的一部分編碼。
     
-- CS： Config Service-此 URL 會以 Office 設定服務的一部分傳回。
+- CS： Config service-此 URL 會傳回為 Office 設定服務的一部分。
 
     
 ## <a name="office-for-mac-default-configuration"></a>Mac 版 Office 預設設定
 
  **安裝和更新**
   
-下列網路端點是用來從 Microsoft Content 傳遞網路 (CDN) 下載 Office for Mac 安裝方案。
+下列網路端點是用來從 Microsoft 內容傳遞網路 (CDN) 下載 Mac 版 Office 安裝程式。
   
-|[URL]****|**類型**|**描述**|
+|**URL**|**類型**|**描述**|
 |:-----|:-----|:-----|
-|```https://go.microsoft.com/fwlink/```  <br/> |聖  <br/> |Microsoft 365 安裝入口網站會將服務轉寄連結至最新的安裝套件。  <br/> |
-|```https://officecdn-microsoft-com.akamaized.net/```  <br/> |秒  <br/> |內容傳遞網路上安裝套件的位置。  <br/> |
-|```https://officecdn.microsoft.com/```  <br/> |秒  <br/> |內容傳遞網路上安裝套件的位置。  <br/> |
+|```https://go.microsoft.com/fwlink/```  <br/> |聖  <br/> |Microsoft 365安裝入口網站會將連結服務轉寄至最新的安裝套件。  <br/> |
+|```https://officecdn-microsoft-com.akamaized.net/```  <br/> |秒  <br/> |安裝套件在內容傳遞網路上的位置。  <br/> |
+|```https://officecdn.microsoft.com/```  <br/> |秒  <br/> |安裝套件在內容傳遞網路上的位置。  <br/> |
 |```https://officeci-mauservice.azurewebsites.net/```  <br/> |聖  <br/> |Microsoft AutoUpdate 的管理控制端點  <br/> |
    
  **第一個應用程式啟動**
   
-在第一次啟動 Office 應用程式時，會與下列網路端點取得聯繫。 這些端點為使用者提供增強的 Office 功能，而不論授權類型 (（包括大量授權安裝) ），都會聯繫 URLs。
+在第一次啟動 Office 應用程式時會取得下列網路端點。 這些端點為使用者提供增強型 Office 功能，而不論授權類型 (包括大量授權安裝) ，都會聯繫 URLs。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
 |```https://config.edge.skype.com/```  <br/> |WXPON  <br/> |聖  <br/> |' Flighting ' 設定-允許功能變亮及實驗。  <br/> |
 |```https://ocos-office365-s2s.msedge.net/```  <br/> |WXPON  <br/> |聖  <br/> |' Flighting ' 網路設定測試  <br/> |
 |```https://client-office365-tas.msedge.net/```  <br/> |WXPON  <br/> |聖  <br/> |' Flighting ' 網路設定測試  <br/> |
-|```https://officeclient.microsoft.com/```  <br/> |WXPON  <br/> |聖  <br/> |Office 設定服務-服務端點的主清單。  <br/> |
-|```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |聖  <br/> |Office 規則遙測下載-告知用戶端要上傳至遙測服務的資料和事件。  <br/> |
-|```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |Cs  <br/> |OneNote 遙測服務  <br/> |
-|```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |聖  <br/> |Office 遙測上傳報告-"Heartbeart" 和在用戶端發生的錯誤事件會上傳至遙測服務。  <br/> |
-|```https://templateservice.office.com/```  <br/> |WXP  <br/> |Cs  <br/> |Office 範本服務-為使用者提供線上檔範本。  <br/> |
-|```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |Cs  <br/> |Office 範本下載-PNG 範本影像的儲存。  <br/> |
+|```https://officeclient.microsoft.com/```  <br/> |WXPON  <br/> |聖  <br/> |OfficeConfiguration Service-服務端點的主清單。  <br/> |
+|```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |聖  <br/> |Office規則遙測下載-通知用戶端要上傳至遙測服務的資料和事件。  <br/> |
+|```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |Cs  <br/> |OneNote遙測服務  <br/> |
+|```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |聖  <br/> |Office遙測 Upload 報告-"Heartbeart" 和發生在用戶端上的錯誤事件會上傳至遙測服務。  <br/> |
+|```https://templateservice.office.com/```  <br/> |WXP  <br/> |Cs  <br/> |OfficeTemplate Service-為使用者提供線上檔範本。  <br/> |
+|```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |Cs  <br/> |Office範本下載-PNG 範本影像儲存體。  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |Cs  <br/> |Office 應用程式的儲存區設定。  <br/> |
-|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |Cs  <br/> |Office 檔整合服務目錄 (服務和端點的清單) 和主領域探索。  <br/> |
+|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |Cs  <br/> |Office檔 Integration Services 目錄 (服務和端點的清單) 和主領域探索。  <br/> |
 |```https://cdn.odc.officeapps.live.com/```  <br/> |WXPON  <br/> |Cs  <br/> |家用領域探索 v2 的資源 (15.40 和更新版本)   <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |WXPON  <br/> |聖  <br/> |Microsoft AutoUpdate 資訊清單-檢查是否有可用的更新  <br/> |
 |```https://ajax.aspnetcdn.com/```  <br/> |WXPO  <br/> |秒  <br/> |Microsoft Ajax JavaScript 程式庫  <br/> |
-|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |秒  <br/> |適用于 Office 的維琪百科應用程式設定和資源。  <br/> |
-|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |秒  <br/> |適用于 Office 設定和資源的 Bing 地圖應用程式。  <br/> |
-|```https://peoplegraph.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |秒  <br/> |Office 設定和資源的人員圖表應用程式。  <br/> |
+|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |秒  <br/> |用於 Office 設定和資源的維琪百科應用程式。  <br/> |
+|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |秒  <br/> |Bing對應 Office 設定和資源的應用程式。  <br/> |
+|```https://peoplegraph.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |秒  <br/> |Office 設定和資源的人員 Graph 應用程式。  <br/> |
 |```https://www.onenote.com/```  <br/> |N  <br/> |聖  <br/> |OneNote 的新內容。  <br/> |
 |```https://site-cdn.onenote.net/```  <br/> |N  <br/> |聖  <br/> |OneNote 的新內容。  <br/> |
 |```https://site-cdn.onenote.net/```  <br/> |N  <br/> |秒  <br/> |OneNote 的新圖像。  <br/> |
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |聖  <br/> |應用程式內支援服務。  <br/> |
 |```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |聖  <br/> |電子郵件帳戶偵測服務。  <br/> |
-|```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |聖  <br/> |Outlook 自動探索  <br/> |
+|```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |聖  <br/> |Outlook搜索  <br/> |
 |```https://outlook.office365.com/```  <br/> |WXPO  <br/> |聖  <br/> |Microsoft 365 服務的 Outlook 端點。  <br/> |
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |聖  <br/> |Outlook 增益集的圖示。  <br/> |
    
 > [!NOTE]
-> Office 設定服務充當所有 Microsoft Office 用戶端的自動探索服務，而不只是 Mac 的功能。 在回應中傳回的端點是非靜態的，因為這項變更很少，但仍然可行。 
+> Office 設定服務充當所有 Microsoft Office 用戶端（而不只是 Mac）的自動探索服務。 在回應中傳回的端點是非靜態的，因為這項變更很少，但仍然可行。 
   
  **登入**
   
@@ -102,14 +102,14 @@ URL 類型定義如下：
     
 - **OrgID：組織帳戶** -通常用於商業案例 
     
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
-|```https://login.windows.net/```  <br/> |WXPON  <br/> |聖  <br/> |Windows 授權服務  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |聖  <br/> |Microsoft 365 登入服務 (OrgID)   <br/> |
+|```https://login.windows.net/```  <br/> |WXPON  <br/> |聖  <br/> |Windows授權服務  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |聖  <br/> |Microsoft 365登入服務 (OrgID)   <br/> |
 |```https://login.live.com/```  <br/> |WXPON  <br/> |聖  <br/> |Microsoft 帳戶登入服務 (MSA)   <br/> |
 |```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |Cs  <br/> |Microsoft 帳戶登入服務協助 (MSA)   <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |秒  <br/> |Microsoft 365 登入署名 (OrgID)   <br/> |
-|```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |Cs  <br/> |檔和位置存放區定位器  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |秒  <br/> |Microsoft 365登入商標 (OrgID)   <br/> |
+|```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |Cs  <br/> |儲存體定位器的檔和位置  <br/> |
 |```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |Cs  <br/> |最近使用 (MRU) 檔服務  <br/> |
    
 > [!NOTE]
@@ -119,7 +119,7 @@ URL 類型定義如下：
   
 下列網路端點適用于 Microsoft 365 訂閱和零售授權啟用。 具體而言，這不會套用到大量授權安裝。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
 |```https://ols.officeapps.live.com/```  <br/> |WXPON  <br/> |Cs  <br/> |Office 授權服務  <br/> |
    
@@ -127,7 +127,7 @@ URL 類型定義如下：
   
 下列網路端點只適用于 Microsoft 365 訂閱。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |秒  <br/> |何謂「新的 JSON 頁面」內容。  <br/> |
    
@@ -135,7 +135,7 @@ URL 類型定義如下：
   
 下列網路端點只適用于 Microsoft 365 訂閱。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
 |```https://entity.osi.office.net/```  <br/> |W  <br/> |Cs  <br/> |研究員 Web 服務  <br/> |
 |```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |Cs  <br/> |研究員靜態內容  <br/> |
@@ -145,7 +145,7 @@ URL 類型定義如下：
   
 下列網路端點同時適用于 Microsoft 365 訂閱和零售/大量授權啟用。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
 |```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |Cs  <br/> |Insights Web 服務  <br/> |
 |```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |Cs  <br/> |JQuery 程式庫  <br/> |
@@ -157,7 +157,7 @@ URL 類型定義如下：
   
 下列網路端點只適用于 Microsoft 365 訂閱。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |Cs  <br/> |PowerPoint 設計工具 web 服務  <br/> |
    
@@ -165,15 +165,15 @@ URL 類型定義如下：
   
 下列網路端點只適用于 Microsoft 365 訂閱。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
-|```https://pptcts.officeapps.live.com/```  <br/> |P  <br/> |Cs  <br/> |PowerPoint 快速啟動工具 web 服務  <br/> |
+|```https://pptcts.officeapps.live.com/```  <br/> |P  <br/> |Cs  <br/> |PowerPoint快速啟動工具 web 服務  <br/> |
    
  **傳送微笑/Frown**
   
 下列網路端點同時適用于 Microsoft 365 訂閱和零售/大量授權啟用。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
 |```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |Cs  <br/> |傳送微笑服務  <br/> |
    
@@ -181,7 +181,7 @@ URL 類型定義如下：
   
 下列網路端點同時適用于 Microsoft 365 訂閱和零售/大量授權啟用。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
 |```https://powerlift-frontdesk.acompli.net/```  <br/> |O  <br/> |Cs  <br/> |聯絡人支援服務  <br/> |
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |Cs  <br/> |應用程式內支援服務  <br/> |
@@ -190,26 +190,26 @@ URL 類型定義如下：
   
 下列網路端點同時適用于 Microsoft 365 訂閱和零售/大量授權啟用。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
 |```https://wordcs.officeapps.live.com/```  <br/> |W  <br/> |Cs  <br/> |Word 檔轉換服務 (PDF)   <br/> |
    
- **Office App (稱為增益集) **
+ **Office應用程式 (稱為增益集)**
   
 當 Office 應用程式增益集受到信任時，下列網路端點會同時適用于 Microsoft 365 訂閱和零售/大量授權啟用。
   
-|[URL]****|**應用程式**|**類型**|**描述**|
+|**URL**|**應用程式**|**類型**|**描述**|
 |:-----|:-----|:-----|:-----|
-|```https://store.office.com/```  <br/> |WXPO  <br/> |Cs  <br/> |Office 應用程式存放區設定  <br/> |
+|```https://store.office.com/```  <br/> |WXPO  <br/> |Cs  <br/> |Office 應用程式儲存區設定  <br/> |
 |```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |秒  <br/> |維琪百科應用程式資源  <br/> |
-|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |秒  <br/> |Bing 地圖應用程式資源  <br/> |
-|```https://peoplegraph.firstpartyapps.oaspapps.com```  <br/> |X  <br/> |秒  <br/> |人員圖表應用程式資源  <br/> |
-|```https://o15.officeredir.microsoft.com/```  <br/> |WPX  <br/> |秒  <br/> |Office 重新導向服務  <br/> |
-|```https://appsforoffice.microsoft.com/```  <br/> |WXP  <br/> |秒  <br/> |Office JavaScript 文件庫  <br/> |
-|```https://telemetry.firstpartyapps.oaspapps.com/```  <br/> |Wx  <br/> |秒  <br/> |適用于 Office 應用程式的遙測和報表服務  <br/> |
+|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |秒  <br/> |Bing地圖應用程式資源  <br/> |
+|```https://peoplegraph.firstpartyapps.oaspapps.com```  <br/> |X  <br/> |秒  <br/> |人員 Graph 的應用程式資源  <br/> |
+|```https://o15.officeredir.microsoft.com/```  <br/> |WPX  <br/> |秒  <br/> |Office重新定向服務  <br/> |
+|```https://appsforoffice.microsoft.com/```  <br/> |WXP  <br/> |秒  <br/> |OfficeJavaScript 文件庫  <br/> |
+|```https://telemetry.firstpartyapps.oaspapps.com/```  <br/> |Wx  <br/> |秒  <br/> |Office 應用程式的遙測和報表服務  <br/> |
 |```https://ajax.microsoft.com/```  <br/> |W  <br/> |秒  <br/> |Microsoft Ajax JavaScript 程式庫  <br/> |
 |```https://ajax.aspnetcdn.com/```  <br/> |X  <br/> |秒  <br/> |Microsoft Ajax JavaScript 程式庫  <br/> |
-|```https://c.microsoft.com/```  <br/> |WPXO  <br/> |秒  <br/> |Office JavaScript 文件庫  <br/> |
+|```https://c.microsoft.com/```  <br/> |WPXO  <br/> |秒  <br/> |OfficeJavaScript 文件庫  <br/> |
 |```https://c1.microsoft.com/```  <br/> |WPXO  <br/> |秒  <br/> |支援資源  <br/> |
 |```https://cs.microsoft.com/```  <br/> |WPXO  <br/> |秒  <br/> |支援資源  <br/> |
 |```https://c.bing.com/```  <br/> |WPXO  <br/> |秒  <br/> |支援資源  <br/> |
@@ -218,7 +218,7 @@ URL 類型定義如下：
 |```https://*-contentstorage.osi.office.net/```  <br/> |WPXO  <br/> |秒  <br/> |字型資源  <br/> |
 |```https://nexus.ensighten.com/```  <br/> |WPXO  <br/> |秒  <br/> |遙測服務  <br/> |
 |```https://browser.pipe.aria.microsoft.com/```  <br/> |WPXO  <br/> |秒  <br/> |遙測報告  <br/> |
-|```https://*.vo.msecnd.net/```  <br/> |WPXO  <br/> |秒  <br/> |Microsoft Store 資產庫  <br/> |
+|```https://*.vo.msecnd.net/```  <br/> |WPXO  <br/> |秒  <br/> |Microsoft Store資產庫  <br/> |
 |```https://*.wikipedia.org/```  <br/> |W  <br/> |秒  <br/> |維琪百科頁面資源  <br/> |
 |```https://upload.wikimedia.org/```  <br/> |W  <br/> |秒  <br/> |維琪百科媒體資源  <br/> |
 |```https://wikipedia.firstpartyappssandbox.oappseperate.com/```  <br/> |W  <br/> |秒  <br/> |維琪百科沙箱框架  <br/> |
@@ -228,7 +228,7 @@ URL 類型定義如下：
   
 下列網路端點只適用于 Microsoft 365 訂閱的所有 Office 應用程式。
   
-|[URL]****|**類型**|**描述**|
+|**URL**|**類型**|**描述**|
 |:-----|:-----|:-----|
 |```https://*.oscs.protection.outlook.com/```  <br/> |Cs  <br/> |Microsoft 安全連結服務  <br/> |
    
@@ -236,16 +236,16 @@ URL 類型定義如下：
   
 下列網路端點適用于 Microsoft 365 訂閱和零售/大量授權啟用的所有 Office 應用程式。 當程式意外地損毀時，就會產生報告並傳送至 Watson 服務。
   
-|[URL]****|**類型**|**描述**|
+|**URL**|**類型**|**描述**|
 |:-----|:-----|:-----|
 |```https://watson.microsoft.com/```  <br/> |聖  <br/> |Microsoft 錯誤報表服務  <br/> |
-|```https://officeci.azurewebsites.net/```  <br/> |聖  <br/> |Office 協同 Insights 服務  <br/> |
+|```https://officeci.azurewebsites.net/```  <br/> |聖  <br/> |Office合作 Insights 服務  <br/> |
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>減少網路要求與流量的選項
 
 Mac 版 Office 的預設設定可提供最佳的使用者體驗，也就是功能和保持機器的最新能力。 在某些情況下，您可能想要防止應用程式與網路端點聯繫。 本節討論這樣做的選項。
   
- ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>停用 Cloud Sign-In 和 Office 增益集
+ ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>停用 Cloud Sign-In 和 Office Add-Ins
   
 大量授權客戶可能會嚴格遵守將檔儲存至雲端架構儲存的原則。 您可以設定下列每個應用程式首選項，以停用 MSA/OrgID 登入，並存取 Office 增益集。
   
@@ -267,16 +267,16 @@ Mac 版 Office 的預設設定可提供最佳的使用者體驗，也就是功�
     
 - 上的「產品啟用」區段中所列的所有端點。
     
-- 上面的「Office App (中所列的所有端點都) ' 增益集」一節。
+- "Office 應用程式 (中列出的所有端點（稱為增益集) ] 區段）。
     
 若要為使用者重新建立完整功能，請將偏好設定為 "2" 或加以移除。
   
 > [!NOTE]
-> 此首選項需要 Office for Mac build 15.25 [160726] 或更新版本。 
+> 此首選項需要 Mac 版 Office 組建 15.25 [160726] 或更新版本。 
   
 ### <a name="telemetry"></a>遙測
   
-Office for Mac 定期將遙測資訊傳送回 Microsoft。 資料上傳到「結點」端點。 遙測資料可協助工程小組評估每個 Office 應用程式的健全狀況及任何未預期的行為。 遙測分為兩種類別：
+Mac 版 Office 定期將遙測資訊傳送回 Microsoft。 資料上傳到「結點」端點。 遙測資料可協助工程小組評估每個 Office 應用程式的健康情況及任何未預期的行為。 遙測分為兩種類別：
   
 - **心跳** 包含版本和授權資訊。 此資料會在應用程式啟動時立即傳送。 
     
@@ -313,18 +313,18 @@ Microsoft 會認真對待您的隱私權。 您可以在中閱讀 Microsoft 的�
   
 ### <a name="updates"></a>更新
   
-Microsoft 會定期為 Mac 版 Office 發行更新 (每月) 。 我們強烈鼓勵使用者和 IT 系統管理員保持最新的機器，以確保已安裝最新的安全性修正程式。 在 IT 系統管理員想要密切控制及管理電腦更新的情況下，可以設定下列首選項，以避免 AutoUpdate 程式自動偵測及提供產品更新：
+Microsoft 會定期發行 Mac 版 Office 更新， (通常是每月) 。 我們強烈鼓勵使用者和 IT 系統管理員保持最新的機器，以確保已安裝最新的安全性修正程式。 在 IT 系統管理員想要密切控制及管理電腦更新的情況下，可以設定下列首選項，以避免 AutoUpdate 程式自動偵測及提供產品更新：
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
 ### <a name="blocking-requests-with-a-firewallproxy"></a>使用防火牆/Proxy 封鎖要求
   
-如果您的組織透過防火牆或 proxy 伺服器封鎖 URLs 的要求，請務必將此檔中所列的 URLs 設定為 [允許]，或是以40X 回應列出的封鎖 (例如403或 404) 。 40X 回應可讓 Office 應用程式適當地接受無法存取資源，而且會提供更快的使用者體驗，而不只是放入連線，而是會使用戶端重試。
+如果您的組織透過防火牆或 proxy 伺服器封鎖 URLs 的要求，請務必將此檔中所列的 URLs 設定為 [允許]，或是以40X 回應列出的封鎖 (例如403或 404) 。 40X 回應會讓 Office 的應用程式適當地接受無法存取資源的功能，並提供更快的使用者體驗，而不只是放入連線，而是會使用戶端重試。
   
-如果您的 proxy 伺服器需要驗證，則407回應會傳回用戶端。 為了獲得最佳的體驗，請確定您使用的是 Office for Mac 組建15.27 或更新版本，因為它們包含使用 NTLM 和 Kerberos 伺服器的特定修正。
+如果您的 proxy 伺服器需要驗證，則407回應會傳回用戶端。 為了獲得最佳的體驗，請確定您使用的是 Mac 版 Office 組建15.27 或更新版本，因為它們包含使用 NTLM 和 Kerberos 伺服器的特定修正。
   
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Office 365 URL 與 IP 位址範圍](urls-and-ip-address-ranges.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 使用適用于合作協力廠商的 Windows PowerShell 管理 Microsoft 365 承租人
+title: 使用合作協力廠商的 Windows PowerShell 管理 Microsoft 365 承租人
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: 在本文中，您將瞭解如何使用 Microsoft 365 的 PowerShell 來管理客戶租用。
+description: 在本文中，您將瞭解如何使用 PowerShell 進行 Microsoft 365，以管理客戶租用。
 ms.openlocfilehash: 14290f04159e3ba0ce46971d204b71d3bb1600d9
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -24,16 +24,16 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46688383"
 ---
-# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用 Windows PowerShell 管理適用于委派存取權限的 Microsoft 365 租使用者 (結合) 夥伴
+# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用委派存取許可權的 Windows PowerShell 管理 Microsoft 365 承租人 (結合) 夥伴
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-Windows PowerShell 允許供稿和雲端解決方案提供者 (CSP) 合作夥伴，以輕鬆管理和報告 Microsoft 365 系統管理中心無法使用的客戶租使用者設定。 請注意，合作夥伴系統管理員帳戶須有管理代表 (AOBO) 權限才能連接其客戶租用。
+Windows PowerShell 允許合作和雲端解決方案提供者 (CSP) 協力廠商可輕鬆管理及報告 Microsoft 365 系統管理中心中無法提供的客戶租使用者。 請注意，合作夥伴系統管理員帳戶須有管理代表 (AOBO) 權限才能連接其客戶租用。
   
-委派的存取權限 (DAP) 合作夥伴就是新聞訂閱方式和雲端解決方案提供者 (CSP) 合作夥伴。 他們通常是其他公司的網路或電信服務提供者。 他們會將 Microsoft 365 訂閱捆綁到其客戶的服務產品中。 當他們銷售 Microsoft 365 訂閱時，系統會自動授與 (AOBO 的「管理」) 許可權給客戶租用，讓他們能管理及報告客戶租用。
+委派的存取權限 (DAP) 合作夥伴就是新聞訂閱方式和雲端解決方案提供者 (CSP) 合作夥伴。 他們通常是其他公司的網路或電信服務提供者。 他們會將 Microsoft 365 訂閱捆綁到其客戶的服務產品中。 當他們銷售 Microsoft 365 訂閱時，系統會自動授與租用 AOBO) 許可權的 (管理，讓他們能管理及報告客戶租用。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-本主題中的程式需要使用 PowerShell 連接至 [Microsoft 365](connect-to-microsoft-365-powershell.md)。
+本主題中的程式需要連接至[連線，才能與 PowerShell Microsoft 365](connect-to-microsoft-365-powershell.md)。
   
 您也需要合作夥伴租用戶系統管理員認證。
   
@@ -76,7 +76,7 @@ Get-MsolDomain -TenantId <customer TenantId value>
   
 ### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>取得所有租用戶和註冊網域的對應
 
-先前的 Microsoft 365 命令 PowerShell 會向您展示如何在租使用者 IDs 或網域中檢索，但不能同時在兩者之間取得任何明確對應。 此命令會產生所有客戶租用戶識別碼和網域的清單。
+Microsoft 365 命令的先前 PowerShell 會向您說明如何在承租人 IDs 或網域中檢索，但不能同時在兩者之間取得任何明確的對應。 此命令會產生所有客戶租用戶識別碼和網域的清單。
   
 ```
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
@@ -100,7 +100,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 ### <a name="add-users-set-options-and-assign-licenses"></a>新增使用者、設定選項及指派授權
 
-Microsoft 365 使用者的大量建立、設定及授權特別有效率地使用 Microsoft 365 PowerShell。 在這兩個步驟的程式中，您會先建立要以逗號分隔值 (CSV) 檔案的所有使用者專案，然後使用 Microsoft 365 PowerShell 來匯入該檔案。 
+Microsoft 365 使用者的大量建立、設定及授權，對 Microsoft 365 使用 PowerShell 特別有效。 在這兩個步驟的程式中，您會先以逗號分隔的值 (CSV) 檔案建立所有使用者的專案，然後使用 Microsoft 365 的 PowerShell 匯入該檔案。 
   
 #### <a name="create-a-csv-file"></a>建立 CSV 檔案
 
@@ -110,7 +110,7 @@ Microsoft 365 使用者的大量建立、設定及授權特別有效率地使用
     
 其中：
   
-- **UsageLocation** ：此項目的值是由兩個字母組成的使用者 ISO 國家/地區碼。您可以在[ISO 線上瀏覽平台](https://go.microsoft.com/fwlink/p/?LinkId=532703)查詢國家/地區碼。例如，美國的代碼是 US，而巴西的代碼則是 BR。 
+- **UsageLocation** ：此項目的值是由兩個字母組成的使用者 ISO 國家/地區碼。您可以在 [ISO 線上瀏覽平台](https://go.microsoft.com/fwlink/p/?LinkId=532703)查詢國家/地區碼。例如，美國的代碼是 US，而巴西的代碼則是 BR。 
     
 - **LicenseAssignment** ：此項目的值使用格式： `syndication-account:<PROVISIONING_ID>`. 例如，如果您要將 O365_Business_Premium 授權指派給客戶租用戶使用者， **LicenseAssignment** 值看起來會像： **syndication-account:O365_Business_Premium** 。在新聞訂閱方式合作夥伴入口網站中，您可以找到能以新聞訂閱方式或 CSP 合作夥伴身分存取的 PROVISIONING_ID。
     

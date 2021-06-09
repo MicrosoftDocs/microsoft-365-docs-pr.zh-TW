@@ -31,21 +31,21 @@ ms.locfileid: "46688312"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-Microsoft 365 上架的一個重要部分是，確定您的網路和網際網路連線已設定為優化的存取。 將您的內部部署網路設定為存取全域分散式軟體即服務 (SaaS) 雲端與針對內部部署資料中心和中央網際網路連線的流量優化的傳統網路有所不同。 
+您的 Microsoft 365 上架重要的一點是，確定您的網路和網際網路連線已設定為優化的存取。 將您的內部部署網路設定為存取全域分散式軟體即服務 (SaaS) 雲端與針對內部部署資料中心和中央網際網路連線的流量優化的傳統網路有所不同。 
 
 參閱這些文章以了解主要差異，並修改您的邊緣裝置、用戶端電腦與內部部署網路，以為您的內部使用者取得最佳的效能。
 
 ## <a name="how-microsoft-365-networking-works"></a>Microsoft 365 網路的運作方式
 
-請參閱下列文章，以瞭解 Microsoft 365 的連線能力：
+請參閱下列文章，以取得 Microsoft 365 的連線能力：
 
 - [Microsoft 365 網路連線能力概觀](microsoft-365-networking-overview.md)
-- [Microsoft 365 網路連接原則](microsoft-365-network-connectivity-principles.md)
-- [評估 Microsoft 365 網路連線能力](assessing-network-connectivity.md)
+- [Microsoft 365 網路連線原則](microsoft-365-network-connectivity-principles.md)
+- [評定 Microsoft 365 網路連線](assessing-network-connectivity.md)
 
-如需增強效能的建議，請參閱 [Microsoft 365 的網路規劃和效能調整](network-planning-and-performance.md)。
+如需增強效能的建議，請參閱[Microsoft 365 的網路規劃和效能調整](network-planning-and-performance.md)。
 
-## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>支援 Microsoft 365 網路作為網路設備廠商
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>支援網路設備廠商 Microsoft 365 網路
 
 如果您是網路設備廠商，請加入 [Office 365 網路合作夥伴計畫](microsoft-365-networking-partner-program.md)。註冊此計畫，將 Office 365 網路連線原則建置到您的產品與解決方案中。 
 
@@ -78,7 +78,7 @@ Microsoft 365 上架的一個重要部分是，確定您的網路和網際網路
 
 ## <a name="additional-topics-for-microsoft-365-networking"></a>Microsoft 365 網路的其他主題
 
-請參閱下列文章，瞭解 Microsoft 365 網路中的特殊主題：
+如需 Microsoft 365 網路的特殊主題，請參閱下列文章：
 
 - [內容傳遞網路](content-delivery-networks.md)
 - [Office 365 服務中的 IPv6 支援](ipv6-support.md)

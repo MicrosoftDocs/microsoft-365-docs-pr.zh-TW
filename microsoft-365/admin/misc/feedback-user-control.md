@@ -31,7 +31,7 @@ ms.locfileid: "51650054"
 使用者意見反應是 Microsoft 用來瞭解使用者對 Microsoft 產品的體驗的重要信號。 Microsoft 的價值是我們的使用者觀點。 使用者意見反應直接前往我們的工程師，可協助我們為我們所有的使用者提供 Microsoft 產品和服務的未來。  
 在本主題中，您將會看到有關存在哪些類型的意見反應、收集其資訊的方式、我們收集的內容，以及如何處理資料的資訊。
 
-做為系統管理員，您可以管理組織的意見反應信號。 我們正在引進一組新的原則設定，協助您管理組織中 Microsoft 365 應用程式內的使用者意見反應集合。 這些原則設定可協助您以 Azure Active Directory 群組為目標，並為您的組織設定意見反應收集經驗。 使用者意見反應直接前往我們的工程師，可協助我們為我們所有的使用者提供 Microsoft 產品和服務的未來。 您可以深入瞭解這些原則設定，這些設定適用于哪些應用程式，以及為 [您的組織管理 Microsoft 意見反應的](../manage/manage-feedback-ms-org.md)最佳作法。
+做為系統管理員，您可以管理組織的意見反應信號。 我們正在引進一組新的原則設定，協助您管理組織的 Microsoft 365 應用程式內的使用者意見反應集合。 這些原則設定可協助您瞄準 Azure Active Directory 群組，並為您的組織設定意見反應收集經驗。 使用者意見反應直接前往我們的工程師，可協助我們為我們所有的使用者提供 Microsoft 產品和服務的未來。 您可以深入瞭解這些原則設定，這些設定適用于哪些應用程式，以及為 [您的組織管理 Microsoft 意見反應的](../manage/manage-feedback-ms-org.md)最佳作法。
 
 ## <a name="feedback-types"></a>意見反應類型
 
@@ -42,12 +42,12 @@ ms.locfileid: "51650054"
 #### <a name="in-product-feedback-examples"></a>產品內意見反應範例
 
 :::image type="content" source="../../media/In-appfeedbackbackstage.png" alt-text="螢幕擷取畫面：產品中的意見反應範例":::
-:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="螢幕擷取畫面： Windows 內產品意見反應範例 ":::
-:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="螢幕擷取畫面：小組內產品的意見反應範例":::
+:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="螢幕擷取畫面： Windows 產品中的意見反應範例":::
+:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="螢幕擷取畫面： Teams 產品中的意見反應範例":::
 
 ### <a name="in-product-surveys"></a>產品內調查
 
-使用者也可以評價其經驗，並透過系統啟動的問卷調查提示提供其經驗的其他相關資訊。 這些提示會在 Microsoft 365 產品中從一開始時間。 出現提示時，使用者可以選擇是否要提供意見反應。 調查提示通常會出現在 app 的右下方。 如果使用者決定提供意見反應、關閉提示，或是讓提示自行消失，該使用者將不會再次看到一次調查。 Microsoft 也會利用控管程式來限制這些系統發起問卷的數目。  控管的目的是為了確保使用者未受到調查提示數目的淹沒。
+使用者也可以評價其經驗，並透過系統啟動的問卷調查提示提供其經驗的其他相關資訊。 這些提示會在 Microsoft 365 的產品之間的時段。 出現提示時，使用者可以選擇是否要提供意見反應。 調查提示通常會出現在 app 的右下方。 如果使用者決定提供意見反應、關閉提示，或是讓提示自行消失，該使用者將不會再次看到一次調查。 Microsoft 也會利用控管程式來限制這些系統發起問卷的數目。  控管的目的是為了確保使用者未受到調查提示數目的淹沒。
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="螢幕擷取畫面：產品型回饋要求的範例":::
 
@@ -57,7 +57,7 @@ ms.locfileid: "51650054"
 
 詳細及可行動的意見反應對於在 Microsoft 產品中進行變更與改進很重要。 如果您的使用者有問題，或建議您如何改善，我們想要聽到這種方式。 以下是幾個秘訣和範例，說明傳送給 Microsoft 的可操作意見反應。
 
-- **簡明和描述性標題**   描述和特定職稱可協助我們瞭解所報告的問題。 範例： Excel 的 **最近使用** 的檔案清單不包含最近新增的 OneDrive 檔案。
+- **簡明和描述性標題**   描述和特定職稱可協助我們瞭解所報告的問題。 範例： Excel 的 **最近使用** 的檔案清單不包括最近新增 OneDrive 檔案。
 - **一次關注一個問題**   提供一項問題的意見反應，或每次建議一個專案。 這可確保每次提交時都會收到正確的記錄檔和資料，而且可以指派以進行後續工作。 如果您有多個問題，請提交每個問題的新意見要求。 這可協助我們識別在特定問題時所收到的意見反應數量。
 - **在 [描述] 方塊中寫入詳細資料**   您的裝置、作業系統及應用程式的相關資訊，會自動包含在每個報告的意見反應中。 新增您認為問題的任何其他資訊。 例如，包含再現問題的詳細步驟。
 
@@ -82,7 +82,7 @@ Microsoft 使用意見反應來改進 Microsoft 產品。 我們會以問題、�
 - **應用程式組建**   提交時所捕獲的 Microsoft 產品組建編號。
 - **應用程式語言**   提交時所捕獲的 Microsoft 產品語言。
 - **附件**   任何附件 (例如 螢幕擷取畫面，檔案) 會收集為意見反應的一部分？  (Yes/No) 。
-- **TenantId**   如果從 Azure Active Directory 帳戶提交意見反應（TenantId 已關聯）。
+- **TenantId**  如果已從 Azure Active Directory 帳戶提交意見反應，則 TenantId 會產生關聯。
 
 ## <a name="data-handling-and-privacy"></a>資料處理和隱私權
 
@@ -93,4 +93,4 @@ Microsoft 使用意見反應來改進 Microsoft 產品。 我們會以問題、�
 
 ## <a name="how-can-i-see-my-users-feedback"></a>如何查看我的使用者意見反應？
 
-即將推出，我們將會分享我們為您的 Microsoft 產品收集的意見反應資料。 我們使用的是 Microsoft 365 系統管理中心的新體驗，讓您可以查看、刪除及匯出組織的意見反應資料。 這可讓您直接透明並深入瞭解使用者對 Microsoft 365 產品的體驗。
+即將推出，我們將會分享我們為您的 Microsoft 產品收集的意見反應資料。 我們正在處理 Microsoft 365 系統管理中心的新體驗，讓我們來查看、刪除及匯出組織的意見反應資料。 這可讓您直接透明並深入瞭解使用者對 Microsoft 365 產品的體驗。

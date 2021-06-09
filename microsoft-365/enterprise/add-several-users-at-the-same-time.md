@@ -1,5 +1,5 @@
 ---
-title: 同時將多個使用者新增至 Microsoft 365-系統管理說明
+title: 同時將多個使用者新增至 Microsoft 365-系統管理協助
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -23,7 +23,7 @@ search.appverid:
 - MBS150
 - GEA150
 - BCS160
-description: '瞭解如何從試算表或其他 CSV 格式的檔案中的清單，將多個使用者新增至 Microsoft 365 for business。 在說明如何將帳戶新增至 Microsoft 365 的 YouTube 觀看影片。 在此程式結束時，具有帳戶的每位使用者都會有 Microsoft 365 信箱。 '
+description: '瞭解如何從試算表或其他 CSV 格式的檔案中的清單，將多個使用者新增至 Microsoft 365 商務用清單。 在說明如何將帳戶新增至 Microsoft 365 的 YouTube 觀看影片。 在此程式結束時，每個具有帳戶的使用者都會有 Microsoft 365 信箱。 '
 ms.openlocfilehash: 6b3e8d885466e44a4aa23427a54cfc98b2eebdf3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -31,9 +31,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905617"
 ---
-# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>同時將多個使用者新增至 Microsoft 365-系統管理說明
+# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>同時將多個使用者新增至 Microsoft 365-系統管理協助
 
-小組中的每位人員必須先使用使用者帳戶，才能登入並存取 Microsoft 365 服務，例如電子郵件和 Office。 如果您有許多人員，您可以從 Excel 試算表或以 CSV 格式儲存的其他檔案，一次新增他們的帳戶。 [不確定 CSV 格式是什麼](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)？
+小組中的每個人都需要一個使用者帳戶，才能登入並存取 Microsoft 365 服務，例如電子郵件和 Office。 如果您有許多人員，您可以從 Excel 試算表或以 CSV 格式儲存的其他檔案，全部新增其帳戶。 [不確定 CSV 格式是什麼](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)？
   
 > [!NOTE]
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心]** 開關將它開啟。
@@ -48,7 +48,7 @@ ms.locfileid: "50905617"
 
 4. 在 **[匯入多個使用者]** 面板中，您可以選擇下載包含或不含範例資料的範例 CSV 檔。
 
-    您的試算表必須包含與範例一 (使用者名稱、名字等 **完全相同的欄標題** ，如此) 。 如果您使用範本，請在文字編輯工具（例如 [記事本]）中開啟它，並考慮只保留第1列的資料，並且只在第2列及下列的資料中輸入資料。
+    您的試算表必須包含與範例一 (使用者名稱、名字等 **完全相同的欄標題** ，如此) 。 如果您使用範本，請在文字編輯工具中開啟它（如記事本），並考慮只保留第1列的資料，並只在第2列及下列資料中輸入資料。
 
     您的試算表也必須包含使用者名稱 (例如 bob@contoso.com) 與每個使用者的顯示名稱 (例如「柯百勝」) 這兩個值。
 
@@ -72,11 +72,11 @@ ms.locfileid: "50905617"
 
 ## <a name="next-steps"></a>後續步驟
 
-- 現在，這些人具有帳戶，他們必須 [在電腦或 Mac 上下載並安裝或重新安裝 Microsoft 365 或 Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)。 您的小組中的每位人員最多可以在5部 Pc 或 Mac 上安裝 Microsoft 365。
+- 現在，這些人具有帳戶，必須在[電腦或 Mac 上下載並安裝或重新安裝 Microsoft 365 或 Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)。 小組中的每位人員最多可以在5部 pc 或 mac 上安裝 Microsoft 365。
 
 - 每位人員也可以[在行動裝置上安裝 Office 應用程式和電子郵件](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) (最多 5 部平板電腦和 5 支手機)，例如 iPhone、iPad 和 Android 電話及平板電腦。 這樣一來，他們就能隨時隨地編輯 Office 檔案。
 
-    如需安裝步驟的端對端清單，請參閱 [設定 Microsoft 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) 。
+    如需安裝步驟的端對端清單，請參閱[設定商務用 Microsoft 365](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) 。
 
 ## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>如何將使用者新增至 Microsoft 365 的詳細資訊
 
@@ -84,7 +84,7 @@ ms.locfileid: "50905617"
 
 CSV 檔案是以逗號區分值的檔案。您可以用任何文字編輯器或試算表程式 (例如 Excel) 來建立或編輯這樣的檔案。
   
-您可以從下載[這份樣本試算表](https://www.microsoft.com/download/details.aspx?id=45485)開始著手。 請注意，Microsoft 365 需要在第一列中欄標題，否則請勿將其取代為其他內容。 
+您可以從下載[這份樣本試算表](https://www.microsoft.com/download/details.aspx?id=45485)開始著手。 請記住，Microsoft 365 在第一列中需要欄標題，否則請勿將其取代為其他內容。 
   
 接著請以新名稱儲存檔案，然後指定 CSV 格式。
   
@@ -96,7 +96,7 @@ CSV 檔案是以逗號區分值的檔案。您可以用任何文字編輯器或�
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>設定試算表格式的祕訣
 
-- **我需要使用和範例試算表中相同的欄標題嗎？** 是。 樣本試算表的第一列是欄標題。 這些標題不能省略。 針對您要新增至 Microsoft 365 的每一位使用者，在標題底下建立一列。 如果您新增、變更或刪除任何欄標題，Microsoft 365 可能無法從檔案中的資訊建立使用者。
+- **我需要使用和範例試算表中相同的欄標題嗎？** 是。 樣本試算表的第一列是欄標題。 這些標題不能省略。 針對您要新增至 Microsoft 365 的每一位使用者，在標題底下建立一列。 如果您新增、變更或刪除任何欄標題，Microsoft 365 也許無法從檔案中的資訊建立使用者。
 
 - **如果我沒有每位使用者所需的所有資訊，該怎麼辦？** 使用者名稱和顯示名稱是必要資訊，缺少的話無法新增新使用者。 若您缺少部分其他資訊 (例如傳真)，可使用空格加上逗號表示此欄位應保留空白。
 
@@ -126,12 +126,12 @@ CSV 檔案是以逗號區分值的檔案。您可以用任何文字編輯器或�
 |郵遞區號  <br/> |40  <br/> |
 |國家/地區  <br/> |128  <br/> |
 
-### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>將使用者新增至 Microsoft 365 時仍然有問題嗎？
+### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>將使用者新增至 Microsoft 365 時仍然存在問題嗎？
 
 - **請仔細檢查試算表的格式是否正確。** 檢查欄標題，確認與樣本檔案中的標題相符。 務必遵循字元長度的規則，各欄位均以逗號隔開。
 
-- **如果您在 Microsoft 365 中看不到新的使用者，請稍候幾分鐘。** 您可能需要一點時間，才能讓變更移至 Microsoft 365 中的所有服務。 
+- **如果您在 Microsoft 365 中看不到新的使用者，請稍候幾分鐘。** 可能需要一些時間，變更才會移至 Microsoft 365 中的所有服務。 
 
 ## <a name="related-articles"></a>相關文章
 
-[個別或大量將使用者新增至 Microsoft 365](/office365/admin/add-users/add-users)
+[個別或大量新增使用者 Microsoft 365](/office365/admin/add-users/add-users)

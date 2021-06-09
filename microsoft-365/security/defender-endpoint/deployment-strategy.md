@@ -30,7 +30,7 @@ ms.locfileid: "51163572"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
 
 規劃 Microsoft Defender for Endpoint deployment，使您可以最大化套件中的安全性功能，並更好地保護您的企業免受網路威脅。
@@ -74,8 +74,8 @@ Defender for Endpoint 支援您可以在服務上架的各種端點。
 在上架端點之後，在 Defender for Endpoint 中設定安全性功能，讓您可以最大化套件中可用的穩健安全性保護。 功能包括：
 
 - 端點偵測及回應
-- 下一代保護
-- 受攻擊面縮小
+- 新一代保護
+- 攻擊面縮小
 
 
   

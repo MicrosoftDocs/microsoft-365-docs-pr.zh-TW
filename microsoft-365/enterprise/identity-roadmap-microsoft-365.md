@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 ms.custom: ''
-description: Microsoft 365 的身分識別藍圖。
+description: Microsoft 365 身分識別的藍圖。
 ms.openlocfilehash: 456841bfc15d143409535140f2b5a63ee72e99d2
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -25,15 +25,15 @@ ms.locfileid: "51051303"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的身分識別藍圖
 
-在適用于企業的 Microsoft 365 中，已規劃好且執行的身分識別基礎結構會 paves 更高的安全性，包括限制生產力工作負載的存取，以及將其資料限制為僅限已驗證的使用者和裝置。
+在企業版 Microsoft 365 中，paves 完善規劃及執行的身分識別基礎結構，可讓您提高安全性的方式，包括限制生產力工作負載的存取權，以及將其資料限制為僅限已驗證的使用者和裝置。
 
-如需適用于企業的 Microsoft 365 身分識別模型及驗證，請觀看這段影片。
+如需有關 enterprise Microsoft 365 身分識別模型及驗證的概述，請觀看這段影片。
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-如需每個 Microsoft 365 for enterprise plan 的身分識別功能的相關資訊，Azure Active Directory 的角色、內部部署和雲端式元件，以及最常見的驗證設定，請參閱 [Identity 基礎結構海報](../downloads/m365e-identity-infra.pdf)。
+如需每個 Microsoft 365 for enterprise plan 的身分識別功能的相關資訊，Azure Active Directory 的角色，以及內部部署和雲端架構元件，以及最常見的驗證設定，請參閱[identity 基礎結構海報](../downloads/m365e-identity-infra.pdf)。
 
 [![身分識別基礎結構海報](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
@@ -73,10 +73,10 @@ ms.locfileid: "51051303"
 - [授權](assign-licenses-to-user-accounts.md)
 - [密碼](manage-microsoft-365-passwords.md)
 - [群組](manage-microsoft-365-groups.md)
-- [Governance](manage-microsoft-365-identity-governance.md)
+- [管理](manage-microsoft-365-identity-governance.md)
 - [目錄同步處理](view-directory-synchronization-status.md)
 
-## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Microsoft 對 Microsoft 365 的身分識別方式
+## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Microsoft 對 Microsoft 365 身分識別的方式
 
 了解 Microsoft 的 IT 專家如何使用[管理身分識別和保護存取](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft)。
 
@@ -86,7 +86,7 @@ ms.locfileid: "51051303"
 
 ## <a name="how-contoso-did-identity-for-microsoft-365"></a>Contoso 對 Microsoft 365 的身分識別方式
 
-如需虛構但具有代表性的跨國組織如何部署 Microsoft 365 雲端服務的混合式身分識別基礎結構的範例，請參閱 [Contoso Corporation](contoso-identity.md)的身分識別。
+如需虛構但具有代表性的跨國組織如何為 Microsoft 365 雲端服務部署混合式身分識別基礎結構的範例，請參閱[Contoso Corporation](contoso-identity.md)的身分識別。
 
 ## <a name="next-step"></a>下一步
 

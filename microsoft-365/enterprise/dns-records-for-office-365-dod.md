@@ -31,23 +31,23 @@ ms.locfileid: "46688469"
 
 *本文適用于 Office 365 DoD 和 Microsoft 365 DoD*
 
-加入 Office 365 DoD 的一部分，您必須將您的 SMTP 和 SIP 網域新增至您的線上服務租使用者。  您將使用 Azure AD PowerShell 中的 MsolDomain Cmdlet 來執行這項作業，或使用 [Azure 政府入口網站](https://portal.azure.us) 來開始新增網域及證明擁有權的程式。
+在加入 Office 365 DoD 的情況下，您必須將您的 SMTP 和 SIP 網域新增至您的線上服務租使用者。  您將使用 Azure AD 中的 New-MsolDomain Cmdlet 來執行此動作 PowerShell 或使用 [Azure 政府入口網站](https://portal.azure.us) 來開始新增網域及證明擁有權的程式。
 
 當您將網域新增至租使用者並加以驗證之後，請使用下列指引為下列服務新增適當的 DNS 記錄。  您可能需要修改下表，以符合組織對輸入 MX 記錄 () s 的需求，以及您已具備的任何現有 Exchange 自動探索記錄 () 。  強烈建議您將這些 DNS 記錄與您的郵件小組協調，以避免任何中斷或錯誤傳送電子郵件。
 
 ## <a name="exchange-online"></a>Exchange Online
 
-| Type (類型) | Priority (優先順序) | 主機名稱 | 指向 [位址] 或 [值] | TTL |
+| Type (類型) | Priority (優先順序) | 主機名稱 | 指向位址或值 | TTL |
 | --- | --- | --- | --- | --- |
-| MX | 0 | @ | * *mail.protection.office365.us (請參閱下方的其他詳細資料)  | 1 Hour |
+| MX | 0 | @ | ** mail.protection.office365.us (請參閱下方的其他詳細資料)  | 1 Hour |
 | TXT | - | @ | v = spf1 包含: spf.protection.outlook.com office365。美國所有 | 1 小時 |
 | CNAME | - | autodiscover | autodiscover-dod.office365.us | 1 Hour |
 
-### <a name="exchange-autodiscover-record"></a>Exchange 自動探索記錄
+### <a name="exchange-autodiscover-record"></a>Exchange自動探索記錄
 
-如果您有 Exchange Server 內部部署，建議您在遷移至 Exchange Online 時保留現有的記錄，並在完成遷移時更新該記錄。
+如果您有 Exchange Server 內部部署，建議您在遷移至 Exchange Online 時保留現有的記錄，並在完成遷移之後更新該記錄。
 
-### <a name="exchange-online-mx-record"></a>Exchange Online MX 記錄
+### <a name="exchange-online-mx-record"></a>Exchange OnlineMX 記錄
 
 公認的網域的 MX 記錄值遵循如上所述的標準 *格式： mail.protection.office365.us*，以您的預設租使用者名稱的第一個部分取代 *承租人* 。
 
@@ -57,7 +57,7 @@ ms.locfileid: "46688469"
 
 ### <a name="cname-records"></a>CNAME 記錄
 
-| 類型 | 主機名稱 | 指向 [位址] 或 [值] | TTL |
+| 類型 | 主機名稱 | 指向位址或值 | TTL |
 | --- | --- | --- | --- |
 | CNAME | sip | sipdir.online.dod.skypeforbusiness.us | 1 小時 |
 | CNAME | lyncdiscover | webdir.online.dod.skypeforbusiness.us | 1 Hour | 
@@ -72,4 +72,4 @@ ms.locfileid: "46688469"
 ## <a name="additional-dns-records"></a>其他 DNS 記錄
 
 > [!IMPORTANT]
-> 如果您的 DNS 區域中有現有的 *msoid* CNAME 記錄，您必須在這段時間內從 DNS **移除** 記錄。  Msoid 記錄與 Microsoft 365 企業版應用程式不相容 * (以前的 Office 365 ProPlus) * 而且會使啟用不再成功。
+> 如果您的 DNS 區域中有現有的 *msoid* CNAME 記錄，您必須在這段時間內從 DNS **移除** 記錄。  msoid 記錄與 *(以前 Office 365 專業增強版)* 的 Microsoft 365 企業版應用程式不相容，因此會使您無法成功啟用。

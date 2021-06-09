@@ -107,4 +107,4 @@ Stream 目前提供下列語言：
 
 ## <a name="yammer"></a>Yammer
 
-Yammer 不是多地理位置工作負載。 儲存在 Yammer 中的 yammer 執行緒將會置於租使用者的中央位置。 Yammer 正在推出儲存在 SharePoint 中 Yammer 檔案的檔案儲存變更。 儲存在 SharePoint 中的 Yammer 檔案會放入與 Yammer 群組相關聯的 SharePoint 網站。 SharePoint 群組網站是以 PDL 邏輯為基礎，如 [SharePoint 網站和群組](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)中所述。
+Yammer 不是多地理位置工作負載。 儲存在 Yammer 中的 Yammer 執行緒都會放置在租使用者的中央位置。 Yammer 正在推出會將 Yammer 檔案儲存在 SharePoint 中的檔案儲存變更。 儲存在 SharePoint 中的 Yammer 檔案將會放入與 Yammer 群組相關聯的 SharePoint 網站。 SharePoint 群組網站是以 PDL 邏輯為基礎，如[SharePoint 網站和群組](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)中所述。

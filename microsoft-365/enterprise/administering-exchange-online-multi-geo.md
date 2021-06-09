@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
-description: 瞭解如何使用 PowerShell 在您的 Microsoft 365 環境中管理 Exchange Online 多地理位置設定。
+description: 瞭解如何使用 PowerShell 管理 Microsoft 365 環境中的 Exchange Online 多地理位置設定。
 ms.openlocfilehash: c8f06318313c4192fc2b3a289727933c5a54f3ad
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.locfileid: "50905581"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>管理多地理位置環境中的 Exchange Online 信箱
 
-Exchange Online PowerShell 是在您的 Microsoft 365 環境中查看及設定多地理屬性所需的。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
+Exchange Online在您的 Microsoft 365 環境中查看及設定多地理屬性時，需要 PowerShell。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 您需要 [Microsoft Azure Active Directory PowerShell 模組](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) 1.1.166.0 版或使用 1.x 版的更新版本，才能查看使用者物件上的 **PreferredDataLocation** 屬性。 透過 AAD Connect 同步處理至 AAD 的使用者物件，您無法經由 AAD PowerShell 直接修改其 **PreferredDataLocation** 值。 您可以透過 AAD PowerShell 修改僅雲端的使用者物件。 若要連線到 Azure AD PowerShell，請參閱[連線至 PowerShell](connect-to-microsoft-365-powershell.md)。
 
-在 Exchange Online 多地理位置環境中，您不需要執行任何手動步驟，即可將 geos 新增至您的租使用者。 當您收到「多地理位置已準備好進行 Exchange Online」的訊息中心 post 之後，所有可用的 geos 都會準備好並設定供您使用。
+在 Exchange Online 多地理位置環境中，您不需要執行任何手動步驟，即可將 geos 新增至您的租使用者。 當您收到訊息中心 post，表示有多地理位置可供 Exchange Online，所有可用的 geos 都會準備好，並已設定為您使用。
 
 ## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>使用 Exchange Online PowerShell 直接連線到地理位置
 
@@ -33,13 +33,13 @@ Exchange Online PowerShell 是在您的 Microsoft 365 環境中查看及設定�
 
 安裝和使用 EXO V2 模組的需求，請參閱 [安裝及維護 EXO V2 模組](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
 
-若要將 Exchange Online PowerShell 連線到特定地理位置， *ConnectionUri* 參數與一般連線指示不同。 其餘命令和值則是相同的。
+若要將 Exchange Online PowerShell 連接至特定地理位置， *ConnectionUri* 參數與一般連接指示不同。 其餘命令和值則是相同的。
 
-具體說來，您必須將此 `?email=<emailaddress>` 值新增至 _ConnectionUri_ 值的結尾。 `<emailaddress>` 是目標地理位置中 **任何** 信箱的電子郵件地址。 您對該信箱的許可權或您的認證的關聯性不是因素;電子郵件地址只會告訴 Exchange Online PowerShell 要連接的地方。
+具體說來，您必須將此 `?email=<emailaddress>` 值新增至 _ConnectionUri_ 值的結尾。 `<emailaddress>` 是目標地理位置中 **任何** 信箱的電子郵件地址。 您對該信箱的許可權或您的認證的關聯性不是因素;電子郵件地址只會告訴 Exchange Online PowerShell 連接的位置。
 
-Microsoft 365 或 Microsoft 365 GCC 客戶通常不需要使用 _ConnectionUri_ 參數以連線至 Exchange Online PowerShell。 不過，若要連線至特定地理位置，您必須使用 _ConnectionUri_ 參數，這樣您就可以 `?email=<emailaddress>` 在值中使用。
+Microsoft 365 或 Microsoft 365 GCC 客戶通常不需要使用 _ConnectionUri_ 參數，來連接至 Exchange Online PowerShell。 不過，若要連線至特定地理位置，您必須使用 _ConnectionUri_ 參數，這樣您就可以 `?email=<emailaddress>` 在值中使用。
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>連接至 Exchange Online 中的地理位置 PowerShell
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>連線至 Exchange Online 中的地理位置 PowerShell
 
 下列連線指示適用于已設定或未針對多重要素驗證 (MFA) 進行的帳戶。
 
@@ -104,7 +104,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
 > [!NOTE]
-> 如果資料庫名稱中的地理位置代碼不符合 **MailboxRegion** 值，則信箱將會自動放入重新置放佇列中，並移至 **MailboxRegion** 值所指定的地理位置。 (Exchange Online 會在這些屬性值) 之間尋找不相符。
+> 如果資料庫名稱中的地理位置代碼不符合 **MailboxRegion** 值，則信箱將會自動放入重新置放佇列中，並移至 [ **MailboxRegion** (值] 所指定的地理位置。 Exchange Online 會在這些屬性值) 之間尋找不相符。
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>將現有僅雲端信箱移動至特定的地理位置
 
@@ -150,25 +150,25 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 1. 復原非使用中的信箱。 如需相關指示，請參閱 [復原非使用中的信箱](../compliance/recover-an-inactive-mailbox.md)。
 
-2. 以信箱的名稱、別名、帳戶或電子郵件地址取代，以防止受管理的資料夾助理處理復原的信箱， \<MailboxIdentity\> 並在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
+2. \<MailboxIdentity\>以信箱的名稱、別名、帳戶或電子郵件地址取代，以防止受管理的資料夾助理處理復原的信箱，並在[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-3. 將 **Exchange Online Plan 2** 授權指派給復原的信箱。 您必須執行此步驟，才能將信箱還原為訴訟暫止狀態。 如需相關指示，請參閱 [將授權指派給使用者](../admin/manage/assign-licenses-to-users.md)。
+3. 將 **Exchange Online 方案 2** 授權指派給復原的信箱。 您必須執行此步驟，才能將信箱還原為訴訟暫止狀態。 如需相關指示，請參閱 [將授權指派給使用者](../admin/manage/assign-licenses-to-users.md)。
 
 4. 如前一節所述，在信箱上設定 **PreferredDataLocation** 值。
 
 5. 在您確認信箱已經移至新的地理位置之後，請將復原的信箱回復回訴訟暫止狀態。 如需相關指示，請參閱 [將信箱設為訴訟暫止狀態](../compliance/create-a-litigation-hold.md#place-a-mailbox-on-litigation-hold)。
 
-6. 確認訴訟暫止已到位之後，讓受管理的資料夾助理以 \<MailboxIdentity\> 信箱的名稱、別名、帳戶或電子郵件地址取代，並在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令，以再次處理信箱：
+6. 確認訴訟暫止已到位後，請將 \<MailboxIdentity\> 信箱的名稱、別名、帳戶或電子郵件地址取代，然後在[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令，讓受管理的資料夾助理再次處理該信箱：
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
     ```
 
-7. 移除與信箱相關聯的使用者帳戶，將信箱停用停用。 如需相關指示，請參閱 [刪除組織中的使用者](../admin/add-users/delete-a-user.md)。 此步驟也會為其他用途發佈 Exchange Online Plan 2 授權。
+7. 移除與信箱相關聯的使用者帳戶，將信箱停用停用。 如需相關指示，請參閱 [刪除組織中的使用者](../admin/add-users/delete-a-user.md)。 此步驟也會為其他用途發行 Exchange Online 方案2授權。
 
 **附注**：當您將非使用中的信箱移至不同的地理位置時，您可能會影響內容的搜尋結果，或從先前的地理位置搜尋該信箱的功能。 如需詳細資訊，請參閱 [在多地理位置環境中搜尋和匯出內容](../compliance/set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments)。
 

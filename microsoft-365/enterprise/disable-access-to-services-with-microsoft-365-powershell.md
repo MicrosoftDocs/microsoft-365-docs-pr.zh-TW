@@ -19,7 +19,7 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: 在本文中，您將瞭解如何使用 PowerShell 來停用使用者的 Microsoft 365 服務存取權。
+description: 在本文中，您將瞭解如何使用 PowerShell 來停用使用者 Microsoft 365 服務的存取權。
 ms.openlocfilehash: 292bda3b380b9ce3947b2427288da4f16198bb51
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -31,19 +31,19 @@ ms.locfileid: "46688478"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-將授權方案的授權指派給 Microsoft 365 帳戶時，使用者就可以從該授權取得 Microsoft 365 服務。 不過，您可以控制使用者可以存取的 Microsoft 365 服務。 例如，即使授權允許存取 SharePoint 線上服務，您還是可以停用存取權。 您可以使用 PowerShell 針對特定授權方案停用任何數目的服務存取權：
+Microsoft 365 帳戶指派授權方案的授權時，使用者就可以從該授權取得 Microsoft 365 服務。 不過，您可以控制使用者可以存取的 Microsoft 365 服務。 例如，即使授權允許存取 SharePoint 線上服務，您還是可以停用存取權。 您可以使用 PowerShell 針對特定授權方案停用任何數目的服務存取權：
 
 - 個別帳戶。
 - 一組帳戶。
 - 您組織中的所有帳戶。
 
 >[!Note]
->當其他服務依賴于指定的服務時，Microsoft 365 服務相依性會使您無法停用。
+>有 Microsoft 365 服務相依性，可防止當其他服務依賴于指定的服務時停用此服務。
 >
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 接下來，使用此命令來查看可用的授權方案，也稱為 AccountSkuIds：
 
@@ -64,7 +64,7 @@ PowerShell 指令碼可供使用，會自動執行本主題中所述的程序。
     
 ### <a name="disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan"></a>針對特定授權方案停用特定使用者的特定 Microsoft 365 服務
   
-若要針對特定授權方案停用一組特定的 Microsoft 365 服務，請執行下列步驟：
+若要針對特定授權方案停用特定的一組 Microsoft 365 服務，請執行下列步驟：
   
 #### <a name="step-1-identify-the-undesirable-services-in-the-licensing-plan-by-using-the-following-syntax"></a>步驟1：使用下列語法識別授權方案中不想要的服務：
     
@@ -72,7 +72,7 @@ PowerShell 指令碼可供使用，會自動執行本主題中所述的程序。
 $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
 ```
 
-下列範例會建立 **LicenseOptions** 物件，以停用名為 `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) 之授權方案中的 Office 和 SharePoint Online 服務。
+下列範例會建立一個 **LicenseOptions** 物件，該物件會停用名為 (的授權計畫中的 Office 和 SharePoint 線上服務 `litwareinc:ENTERPRISEPACK` Office 365 企業版 E3) 。
     
 ```powershell
 $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -92,7 +92,7 @@ New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName 
 New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
 ```
 
-如需在 Microsoft 365 的 PowerShell 中建立使用者帳戶的詳細資訊，請參閱 [使用 PowerShell 建立使用者帳戶](create-user-accounts-with-microsoft-365-powershell.md)。
+如需在 Microsoft 365 中為 PowerShell 建立使用者帳戶的詳細資訊，請參閱[使用 PowerShell 建立使用者帳戶](create-user-accounts-with-microsoft-365-powershell.md)。
     
 若要停用現有授權使用者的服務，請使用下列語法：
     
@@ -106,7 +106,7 @@ Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
 ```
 
-若要停用步驟1中所述的所有現有授權使用者的服務，請從 **Get-MsolAccountSku** Cmdlet (（例如 **litwareinc:ENTERPRISEPACK**) ）中指定您的 Microsoft 365 方案名稱，然後執行下列命令：
+若要停用步驟1中所述的所有現有授權使用者的服務，請從 **Get-MsolAccountSku** (Cmdlet 的顯示（如 **litwareinc:ENTERPRISEPACK**) ）中指定 Microsoft 365 計畫的名稱，然後執行下列命令：
     
 ```powershell
 $acctSKU="<AccountSkuId>"
@@ -159,7 +159,7 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 - 已指派授權方案的使用者帳戶。
 - 授權方案提供要停用的服務。
 
-若要在將使用者指派給授權方案時，為他們停用 Microsoft 365 服務，請參閱在 [指派使用者授權時停用服務的存取權](disable-access-to-services-while-assigning-user-licenses.md)。
+若要在指派使用者給授權計畫時為使用者停用 Microsoft 365 服務，請參閱在[指派使用者授權時停用服務存取權](disable-access-to-services-while-assigning-user-licenses.md)。
 
 ### <a name="assign-all-services-in-a-licensing-plan-to-a-user-account"></a>將授權方案中的所有服務指派給使用者帳戶
 

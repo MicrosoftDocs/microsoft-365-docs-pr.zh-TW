@@ -1,5 +1,5 @@
 ---
-title: 規劃資料遺失防護
+title: 規劃資料外洩防護
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -145,7 +145,7 @@ start small and always in test mode. Note that DLP policies can feed into inside
 - OneDrive 帳戶
 - Teams 聊天和頻道訊息
 - Windows 10設備
-- Microsoft 雲端 App 安全性
+- Microsoft Cloud App Security
 - 內部部署存放庫
 
 **範例** 您組織的內部稽核員正在追蹤一組信用卡號碼。 它們會在安全的 SharePoint 網站中保存它們的試算表。 有些員工會製作副本，並將其儲存至其工作商務用 OneDrive 網站，該網站會與其 Windows 10 裝置同步。 其中一個會在電子郵件中貼上其中的14個清單，並嘗試將其傳送至外部審計員進行審閱。 您想要將原則套用至安全 SharePoint 網站，所有內部稽核員商務用 OneDrive 帳戶、其 Windows 10 裝置，以及 Exchange 電子郵件。
@@ -222,5 +222,5 @@ start small and always in test mode. Note that DLP policies can feed into inside
 ### On-premises Scanner
 -->
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [深入了解資料外洩防護](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)

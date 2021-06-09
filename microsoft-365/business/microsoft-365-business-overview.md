@@ -42,7 +42,7 @@ ms.locfileid: "52705515"
 
 Microsoft 365 商務進階版 (之前稱為 Microsoft 365 商務版) 是一項全面的訂閱服務，適用於員工人數低於 300 人的企業。 它整合了您最愛的 Office 生產力應用程式和服務，以及 Microsoft Teams 等共同作業工具，並具有進階安全性和裝置管理功能。
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>觀賞：何謂 Microsoft 365 商務進階版
+## <a name="watch-what-is-microsoft-365-business-premium"></a>觀看：什麼是 Microsoft 365 商務進階版？
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   

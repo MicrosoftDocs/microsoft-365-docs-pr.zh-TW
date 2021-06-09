@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 深入瞭解 Microsoft 365 E5 或 Microsoft 365 E5 Security 中的安全檔。
+description: 深入瞭解 Microsoft 365 E5 或 Microsoft 365 E5 安全性中的安全檔。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 1186c7856d0b979c483cf6dd1c0a010ab582e2ce
@@ -30,13 +30,13 @@ ms.locfileid: "51644749"
 **適用於**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全檔是 Microsoft 365 E5 或 Microsoft 365 E5 安全性中的一項功能，可使用 [Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 來掃描在 [受保護的檢視](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) 或 [Office 的應用程式防護](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)中開啟的檔和檔案。
+安全檔是 Microsoft 365 E5 或 Microsoft 365 E5 安全性中的一項功能，可使用[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)掃描在[受保護的檢視](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)中開啟的檔和檔案，或在 Office 中開啟[應用程式防護](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 只有使用 *Microsoft 365 e5* 或 *Microsoft 365 e5 安全性* 授權的使用者才能使用安全檔。 Microsoft Defender for Office 365 方案中並未包含這些授權。
+- 只有具有 *Microsoft 365 E5* 或 *Microsoft 365 E5 安全性* 授權的使用者才能使用安全檔。 這些授權不會包含在 Microsoft Defender 中 Office 365 計畫。
 
-- Microsoft 365 Apps for enterprise (（以前稱為 Office 365 ProPlus) 版本2004或更新版本）支援安全檔。
+- Microsoft 365 Apps 企業版以前稱為 Office 365 專業增強版) 版本2004或更新版本 (支援安全檔。
 
 - 您要在 <https://protection.office.com> 開啟安全性與合規性中心。 若要直接移至 [ **ATP 安全附件** ] 頁面，請開啟] <https://protection.office.com/safeattachmentv2> 。
 
@@ -66,11 +66,11 @@ ms.locfileid: "51644749"
 
 2. 在顯示的 [ **全域設定** ] 中，設定下列設定：
 
-   - **開啟 Office 用戶端的安全檔**：向右移動切換以開啟功能： ![ 開啟開啟 ](../../media/scc-toggle-on.png) 。
+   - **開啟 Office 用戶端的安全檔**：將切換移至右邊開啟功能： ![ 開啟 ](../../media/scc-toggle-on.png) 。
 
    - **即使安全檔會將檔案識別為惡意，允許人員按一下 [受保護的檢視**]：建議您保留此選項關閉， (保持向左切換：請 ![ 關閉 ](../../media/scc-toggle-off.png)) 。
 
-   完成後，按一下 **[儲存]**。
+   完成後，按一下 [儲存]。
 
    ![在 [安全附件] 頁面上選取全域設定後的 [安全檔] 設定。](../../media/safe-docs.png)
 
@@ -103,7 +103,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 若要確認您已啟用並設定安全檔，請執行下列任一步驟：
 
-- 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，按一下 [ **通用設定**]，然後確認 [ **開啟 Office 用戶端的安全檔** ]，而且 **即使安全檔識別為惡意設定，也可讓使用者依序按一下透過受保護的檢視** 。
+- 在 [安全性 & 合規性中心] 中，移至 [**威脅管理** \> **原則** \> **ATP 安全附件**]，按一下 [**通用設定**]，然後確認 **開啟 Office 用戶端的安全檔**，以及是否 **允許使用者在受保護的檢視上按一下，即使安全檔識別為惡意設定也是如此**。
 
 - 在 Exchange Online PowerShell 中執行下列命令，並確認屬性值：
 

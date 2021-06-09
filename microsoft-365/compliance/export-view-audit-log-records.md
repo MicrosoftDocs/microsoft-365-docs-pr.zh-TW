@@ -27,7 +27,7 @@ ms.locfileid: "50906863"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>匯出、 設定及檢視稽核記錄檔的記錄
 
-在您搜尋審核記錄並將搜尋結果下載至 CSV 檔案之後，該檔案會包含一個名為 **AuditData** 的欄，其中包含每個事件的詳細資訊。 此欄中的資料已格式化為 JSON 物件，包含多個屬性設定為 *property：值* 組合，以逗號分隔。 您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將 **AuditData** 欄中 JSON 物件的每個屬性分割成多個欄，使每個屬性都有自己的資料行。 這可讓您在一個或多個屬性上進行排序和篩選，這可協助您快速找到所要尋找的特定審核資料。
+在您搜尋審核記錄並將搜尋結果下載至 CSV 檔案之後，該檔案會包含一個名為 **AuditData** 的欄，其中包含每個事件的詳細資訊。 此欄中的資料已格式化為 JSON 物件，包含多個屬性設定為 *property：值* 組合，以逗號分隔。 您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將 **AuditData** 欄內 JSON 物件中的每個屬性分割成多個欄，使每個屬性都有自己的資料行。 這可讓您在一個或多個屬性上進行排序和篩選，這可協助您快速找到所要尋找的特定審核資料。
 
 ## <a name="step-1-export-audit-log-search-results"></a>步驟1：匯出審計記錄搜尋結果
 
@@ -52,9 +52,9 @@ ms.locfileid: "50906863"
 
 ## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>步驟2：使用 Power Query 編輯器格式化匯出的審計記錄檔
 
-下一步是在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將 **AuditData** 欄中 JSON 物件中的每個屬性分割成自己的資料行。 然後，根據特定屬性的值，篩選欄以查看記錄。 這可協助您快速找到您要尋找的特定審核資料。
+下一步是使用 Power Query 編輯器中的 json 轉換功能 Excel，將 **AuditData** 欄中 JSON 物件中的每個屬性分割成自己的資料行。 然後，根據特定屬性的值，篩選欄以查看記錄。 這可協助您快速找到您要尋找的特定審核資料。
 
-1. 在 Excel 中開啟空白活頁簿，以供 Office 365、Excel 2019 或 Excel 2016 使用。
+1. 在 Excel 中開啟 Office 365、Excel 2019 或 Excel 2016 的空白活頁簿。
 
 2. 在 [ **資料** ] 索引標籤的 [ **取得 & 轉換資料** ] 功能區群組中，按一下 [ **從文字/CSV**]。
 
@@ -96,15 +96,15 @@ ms.locfileid: "50906863"
 
     - 選取 [ **使用原始欄名稱做為前置** 詞] 核取方塊，以將 AuditData 前置詞加入欄名稱中;例如， **AuditData。 RecordType** 或 **AuditData SourceFileName**。
 
-9. 點擊 **[確定]**。
+9. 按一下 ****[確定]。
 
     **AuditData** 欄會分割成多個欄。 每個新欄會對應至 AuditData JSON 物件中的屬性。 資料行中的每一列都包含屬性的值。 如果此屬性不包含值，則會顯示 *null* 值。 在 Excel 中，具有 null 值的儲存格是空白的。
   
-10. 在 [ **常用** ] 索引標籤上，按一下 [ **關閉 & 載入** ]，關閉 Power Query 編輯器，並在 Excel 活頁簿中開啟轉換後的 CSV 檔案。
+10. 在 [**首頁**] 索引標籤上，按一下 [**關閉 & 載入**]，關閉 Power Query 編輯器，然後在 Excel 活頁簿中開啟轉換後的 CSV 檔案。
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>使用 PowerShell 來搜尋和匯出審計記錄記錄
 
-您可以使用 Exchange Online PowerShell 中的 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) Cmdlet，將審核記錄搜尋的結果匯出至 CSV 檔案，而不是在安全性 & 合規性中心使用「審核記錄搜尋」工具。 接著，您可以遵循步驟2所述的相同程式，以使用 Power Query 編輯器來格式化審核記錄檔。 使用 PowerShell Cmdlet 的其中一個優點是，您可以使用 *RecordType* 參數，從特定服務搜尋事件。 以下是一些使用 PowerShell 將審核記錄匯出至 CSV 檔案的範例，因此您可以使用 Power Query 編輯器，依步驟2所述，在 **AuditData** 欄中轉換 JSON 物件。
+在 [安全性 & 規範中心] 中，您可以使用 Exchange Online PowerShell 中的[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) Cmdlet，將審核記錄搜尋的結果匯出至 CSV 檔案，而不是使用 [安全性規範中心] 中的 [審計記錄] 搜尋工具。 接著，您可以遵循步驟2所述的相同程式，以使用 Power Query 編輯器來格式化審核記錄檔。 使用 PowerShell Cmdlet 的其中一個優點是，您可以使用 *RecordType* 參數，從特定服務搜尋事件。 以下是一些使用 PowerShell 將審核記錄匯出至 CSV 檔案的範例，因此您可以使用 Power Query 編輯器，依步驟2所述，在 **AuditData** 欄中轉換 JSON 物件。
 
 在此範例中，執行下列命令以傳回與 SharePoint 共用作業相關的所有記錄。
 
@@ -118,7 +118,7 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 搜尋結果會匯出至名為 *PowerShellAuditlog* 的 CSV 檔案，該檔案包含四個欄： CreationDate、UserIds、RecordType AuditData) 。
 
-您也可以使用 record 類型的 name 或 enum 值做為 *RecordType* 參數的值。 如需記錄類型名稱及其對應列舉值的清單，請參閱 [Office 365 管理活動 API 架構](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)中的 *AuditLogRecordType* 表格。
+您也可以使用 record 類型的 name 或 enum 值做為 *RecordType* 參數的值。 如需記錄類型名稱及其對應列舉值的清單，請參閱 [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)中的 *AuditLogRecordType* 表格。
 
 *RecordType* 參數只能包含單一值。 若要搜尋其他記錄類型的審計記錄，您必須再次執行這兩個先前的命令，以指定不同的記錄類型，並將這些結果附加至原始 CSV 檔案。 例如，您可以執行下列兩個命令，將相同日期範圍的 SharePoint 檔案活動新增至 PowerShellAuditlog.csv 檔案。
 
@@ -130,7 +130,7 @@ $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -Re
 $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
 ```
 
-## <a name="tips-for-exporting-and-viewing-the-audit-log"></a>匯出及查看審核記錄的秘訣
+## <a name="tips-for-exporting-and-viewing-the-audit-log"></a>匯出及查看審核記錄檔的提示
 
 以下是在您使用 JSON 轉換功能將 **AuditData** 欄分割成多個欄之前和之後，匯出及查看審核記錄的一些秘訣和範例。
 

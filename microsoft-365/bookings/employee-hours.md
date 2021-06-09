@@ -30,7 +30,7 @@ ms.locfileid: "47962522"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
-1. 在 [Microsoft 365] 中，選取應用程式啟動器，然後選取 [ **預定**]。
+1. 在 Microsoft 365 中，選取應用程式啟動器，然後選取 [**預定**]。
 
 1. 在功能窗格中，選取 [ **職員**]，然後選取要設定其工時的教職員工成員。
 

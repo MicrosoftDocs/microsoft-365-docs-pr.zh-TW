@@ -207,6 +207,6 @@ Microsoft 建議您不要建立適用于所有應用程式的原則集，因為�
 
 在您設定身分識別與裝置存取後，請參閱 [AZURE ad 功能部署指南](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) ，以瞭解其他應考慮的功能和 [Azure AD 身分識別](/azure/active-directory/governance/) 控管，以保護、監控和審核存取。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [實施身分識別與裝置存取原則的必要條件工作](identity-access-prerequisites.md)
