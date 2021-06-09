@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 44f64334d08d8d0d6a5ed1e8e06baa2880859ad2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4498761fd21331821cf4676bfe65630be5436ce5
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771126"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845125"
 ---
-# <a name="get-security-recommendations"></a><span data-ttu-id="b8664-104">取得安全性建議</span><span class="sxs-lookup"><span data-stu-id="b8664-104">Get security recommendations</span></span>
+# <a name="get-security-recommendations"></a><span data-ttu-id="33b4c-104">取得安全性建議</span><span class="sxs-lookup"><span data-stu-id="33b4c-104">Get security recommendations</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="b8664-105">**適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="b8664-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="33b4c-105">**適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="33b4c-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-> <span data-ttu-id="b8664-106">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="b8664-106">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="b8664-107">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="b8664-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="33b4c-106">想要體驗 Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="33b4c-106">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="33b4c-107">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="33b4c-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,48 +37,48 @@ ms.locfileid: "52771126"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-<span data-ttu-id="b8664-108">會檢索與指定裝置識別碼相關的安全性建議集合。</span><span class="sxs-lookup"><span data-stu-id="b8664-108">Retrieves a collection of security recommendations related to a given device ID.</span></span>
+<span data-ttu-id="33b4c-108">會檢索與指定裝置識別碼相關的安全性建議集合。</span><span class="sxs-lookup"><span data-stu-id="33b4c-108">Retrieves a collection of security recommendations related to a given device ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b8664-109">權限</span><span class="sxs-lookup"><span data-stu-id="b8664-109">Permissions</span></span>
-<span data-ttu-id="b8664-110">需要有下列其中一個許可權才能呼叫此 API。</span><span class="sxs-lookup"><span data-stu-id="b8664-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="b8664-111">若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="b8664-111">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="33b4c-109">權限</span><span class="sxs-lookup"><span data-stu-id="33b4c-109">Permissions</span></span>
+<span data-ttu-id="33b4c-110">需要有下列其中一個許可權才能呼叫此 API。</span><span class="sxs-lookup"><span data-stu-id="33b4c-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="33b4c-111">若要深入瞭解，包括如何選擇許可權，請參閱 [使用 Microsoft Defender For Endpoint APIs](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="33b4c-111">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="b8664-112">許可權類型</span><span class="sxs-lookup"><span data-stu-id="b8664-112">Permission type</span></span> |   <span data-ttu-id="b8664-113">權限</span><span class="sxs-lookup"><span data-stu-id="b8664-113">Permission</span></span>  |   <span data-ttu-id="b8664-114">許可權顯示名稱</span><span class="sxs-lookup"><span data-stu-id="b8664-114">Permission display name</span></span>
+<span data-ttu-id="33b4c-112">許可權類型</span><span class="sxs-lookup"><span data-stu-id="33b4c-112">Permission type</span></span> |   <span data-ttu-id="33b4c-113">權限</span><span class="sxs-lookup"><span data-stu-id="33b4c-113">Permission</span></span>  |   <span data-ttu-id="33b4c-114">許可權顯示名稱</span><span class="sxs-lookup"><span data-stu-id="33b4c-114">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="b8664-115">應用程式</span><span class="sxs-lookup"><span data-stu-id="b8664-115">Application</span></span> | <span data-ttu-id="b8664-116">SecurityRecommendation Read。 All</span><span class="sxs-lookup"><span data-stu-id="b8664-116">SecurityRecommendation.Read.All</span></span> | <span data-ttu-id="b8664-117">「讀取威脅及弱點管理安全性建議資訊」</span><span class="sxs-lookup"><span data-stu-id="b8664-117">'Read Threat and Vulnerability Management security recommendation information'</span></span>
-<span data-ttu-id="b8664-118">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="b8664-118">Delegated (work or school account)</span></span> | <span data-ttu-id="b8664-119">SecurityRecommendation 讀取</span><span class="sxs-lookup"><span data-stu-id="b8664-119">SecurityRecommendation.Read</span></span> |  <span data-ttu-id="b8664-120">「讀取威脅及弱點管理安全性建議資訊」</span><span class="sxs-lookup"><span data-stu-id="b8664-120">'Read Threat and Vulnerability Management security recommendation information'</span></span>
+<span data-ttu-id="33b4c-115">應用程式</span><span class="sxs-lookup"><span data-stu-id="33b4c-115">Application</span></span> | <span data-ttu-id="33b4c-116">SecurityRecommendation Read。 All</span><span class="sxs-lookup"><span data-stu-id="33b4c-116">SecurityRecommendation.Read.All</span></span> | <span data-ttu-id="33b4c-117">「讀取威脅及弱點管理安全性建議資訊」</span><span class="sxs-lookup"><span data-stu-id="33b4c-117">'Read Threat and Vulnerability Management security recommendation information'</span></span>
+<span data-ttu-id="33b4c-118">委派 (工作或學校帳戶) </span><span class="sxs-lookup"><span data-stu-id="33b4c-118">Delegated (work or school account)</span></span> | <span data-ttu-id="33b4c-119">SecurityRecommendation 讀取</span><span class="sxs-lookup"><span data-stu-id="33b4c-119">SecurityRecommendation.Read</span></span> |  <span data-ttu-id="33b4c-120">「讀取威脅及弱點管理安全性建議資訊」</span><span class="sxs-lookup"><span data-stu-id="33b4c-120">'Read Threat and Vulnerability Management security recommendation information'</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="b8664-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b8664-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="33b4c-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="33b4c-121">HTTP request</span></span>
 ```
 GET /api/machines/{machineId}/recommendations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b8664-122">要求標頭</span><span class="sxs-lookup"><span data-stu-id="b8664-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="33b4c-122">要求標頭</span><span class="sxs-lookup"><span data-stu-id="33b4c-122">Request headers</span></span>
 
-<span data-ttu-id="b8664-123">名稱</span><span class="sxs-lookup"><span data-stu-id="b8664-123">Name</span></span> | <span data-ttu-id="b8664-124">類型</span><span class="sxs-lookup"><span data-stu-id="b8664-124">Type</span></span> | <span data-ttu-id="b8664-125">描述</span><span class="sxs-lookup"><span data-stu-id="b8664-125">Description</span></span>
+<span data-ttu-id="33b4c-123">名稱</span><span class="sxs-lookup"><span data-stu-id="33b4c-123">Name</span></span> | <span data-ttu-id="33b4c-124">類型</span><span class="sxs-lookup"><span data-stu-id="33b4c-124">Type</span></span> | <span data-ttu-id="33b4c-125">描述</span><span class="sxs-lookup"><span data-stu-id="33b4c-125">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="b8664-126">授權</span><span class="sxs-lookup"><span data-stu-id="b8664-126">Authorization</span></span> | <span data-ttu-id="b8664-127">字串</span><span class="sxs-lookup"><span data-stu-id="b8664-127">String</span></span> | <span data-ttu-id="b8664-128">載荷 {token}。</span><span class="sxs-lookup"><span data-stu-id="b8664-128">Bearer {token}.</span></span> <span data-ttu-id="b8664-129">**必要欄位**。</span><span class="sxs-lookup"><span data-stu-id="b8664-129">**Required**.</span></span>
+<span data-ttu-id="33b4c-126">授權</span><span class="sxs-lookup"><span data-stu-id="33b4c-126">Authorization</span></span> | <span data-ttu-id="33b4c-127">字串</span><span class="sxs-lookup"><span data-stu-id="33b4c-127">String</span></span> | <span data-ttu-id="33b4c-128">載荷 {token}。</span><span class="sxs-lookup"><span data-stu-id="33b4c-128">Bearer {token}.</span></span> <span data-ttu-id="33b4c-129">**必要欄位**。</span><span class="sxs-lookup"><span data-stu-id="33b4c-129">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="b8664-130">要求正文</span><span class="sxs-lookup"><span data-stu-id="b8664-130">Request body</span></span>
-<span data-ttu-id="b8664-131">空白</span><span class="sxs-lookup"><span data-stu-id="b8664-131">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="33b4c-130">要求正文</span><span class="sxs-lookup"><span data-stu-id="33b4c-130">Request body</span></span>
+<span data-ttu-id="33b4c-131">空白</span><span class="sxs-lookup"><span data-stu-id="33b4c-131">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="b8664-132">回應</span><span class="sxs-lookup"><span data-stu-id="b8664-132">Response</span></span>
-<span data-ttu-id="b8664-133">如果成功，這個方法會以本文中的安全性建議傳回 200 OK。</span><span class="sxs-lookup"><span data-stu-id="b8664-133">If successful, this method returns 200 OK with the security recommendations in the body.</span></span>
+## <a name="response"></a><span data-ttu-id="33b4c-132">回應</span><span class="sxs-lookup"><span data-stu-id="33b4c-132">Response</span></span>
+<span data-ttu-id="33b4c-133">如果成功，這個方法會以本文中的安全性建議傳回 200 OK。</span><span class="sxs-lookup"><span data-stu-id="33b4c-133">If successful, this method returns 200 OK with the security recommendations in the body.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="b8664-134">範例</span><span class="sxs-lookup"><span data-stu-id="b8664-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="33b4c-134">範例</span><span class="sxs-lookup"><span data-stu-id="33b4c-134">Example</span></span>
 
-<span data-ttu-id="b8664-135">**請求**</span><span class="sxs-lookup"><span data-stu-id="b8664-135">**Request**</span></span>
+<span data-ttu-id="33b4c-135">**請求**</span><span class="sxs-lookup"><span data-stu-id="33b4c-135">**Request**</span></span>
 
-<span data-ttu-id="b8664-136">以下是要求的範例。</span><span class="sxs-lookup"><span data-stu-id="b8664-136">Here is an example of the request.</span></span>
+<span data-ttu-id="33b4c-136">以下是要求的範例。</span><span class="sxs-lookup"><span data-stu-id="33b4c-136">Here is an example of the request.</span></span>
 
 ```
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/recommendations
 ```
 
-<span data-ttu-id="b8664-137">**回應**</span><span class="sxs-lookup"><span data-stu-id="b8664-137">**Response**</span></span>
+<span data-ttu-id="33b4c-137">**回應**</span><span class="sxs-lookup"><span data-stu-id="33b4c-137">**Response**</span></span>
 
-<span data-ttu-id="b8664-138">以下是回應的範例。</span><span class="sxs-lookup"><span data-stu-id="b8664-138">Here is an example of the response.</span></span>
+<span data-ttu-id="33b4c-138">以下是回應的範例。</span><span class="sxs-lookup"><span data-stu-id="33b4c-138">Here is an example of the response.</span></span>
 
 
 ```
@@ -111,6 +111,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 }
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="b8664-139">相關主題</span><span class="sxs-lookup"><span data-stu-id="b8664-139">Related topics</span></span>
-- [<span data-ttu-id="b8664-140">風險威脅 & 弱點管理</span><span class="sxs-lookup"><span data-stu-id="b8664-140">Risk-based Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [<span data-ttu-id="b8664-141">威脅 & 漏洞安全性建議</span><span class="sxs-lookup"><span data-stu-id="b8664-141">Threat & Vulnerability security recommendation</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+## <a name="related-topics"></a><span data-ttu-id="33b4c-139">相關主題</span><span class="sxs-lookup"><span data-stu-id="33b4c-139">Related topics</span></span>
+- [<span data-ttu-id="33b4c-140">風險威脅 & 弱點管理</span><span class="sxs-lookup"><span data-stu-id="33b4c-140">Risk-based Threat & Vulnerability Management</span></span>](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="33b4c-141">威脅 & 漏洞安全性建議</span><span class="sxs-lookup"><span data-stu-id="33b4c-141">Threat & Vulnerability security recommendation</span></span>](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
