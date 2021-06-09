@@ -11,7 +11,7 @@ ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
-description: In-Place 保留、訴訟暫止和 Microsoft 365 保留原則可讓您保留信箱內容，以符合法規遵從性和 eDiscovery 需求。
+description: In-Place 保留、訴訟暫止及 Microsoft 365 保留原則可讓您保留信箱內容，以符合法規遵從性和 eDiscovery 的需求。
 ms.openlocfilehash: f00ed951fb68778b9c62ae874c2cca964bd6cb5c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,25 +21,25 @@ ms.locfileid: "50927939"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>保留電子文件探索密件副本與展開的通訊群組收件者
   
-In-Place 保留、訴訟暫止及 [Microsoft 365 保留原則](./retention.md) (以安全性 & 合規性中心建立) 可讓您保留信箱內容，以符合法規遵從性和 eDiscovery 需求。 預設會在郵件的 [收件者] 和 [副本] 欄位中包含收件者的相關資訊。 不過，您的組織可能需要能夠搜尋並再現郵件之所有收件者的詳細資料。 這包括：
+In-Place 保留、訴訟暫止及[Microsoft 365 保留原則](./retention.md) (在安全性 & 規範中心內建立) ，可讓您保留信箱內容，以符合法規遵從性和 eDiscovery 的需求。 預設會在郵件的 [收件者] 和 [副本] 欄位中包含收件者的相關資訊。 不過，您的組織可能需要能夠搜尋並再現郵件之所有收件者的詳細資料。 這包括：
   
 - **使用郵件的 [密件副本] 欄位進行位址** 的收件者：密件副本收件者會儲存在寄件者信箱中的郵件中，但不會包含在傳送給收件者之郵件的標頭中。 
     
 - **展開的通訊群組** 收件者：接收郵件的收件者，因為這些收件者是通訊群組的成員，其位址是在 [收件者]、[副本] 或 [密件副本] 欄位中。 
     
-Exchange Online 和 Exchange Server 2013 (累計更新7和更新版本) 會保留密送和展開的通訊群組收件者的相關資訊。 您可以使用 Exchange 系統管理中心的 In-Place eDiscovery 搜尋 (EAC) 或安全性 & 規範中心的內容搜尋來搜尋此資訊。 
+Exchange Online 和 Exchange Server 2013 (累計更新7和更新版本) 保留密送和展開的通訊群組收件者的相關資訊。 您可以使用 Exchange 系統管理中心的 In-Place eDiscovery 搜尋來搜尋此資訊 (EAC) 或安全性 & 規範中心的內容搜尋。 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>如何保留密件副本收件者和展開的通訊群組收件者
 
 如先前所述，Bcc'ed 收件者的相關資訊會儲存在寄件者信箱中的郵件。 這種資訊已編制索引，可供 eDiscovery 搜尋和保留使用。 
   
-在您將信箱設為 In-Place 保留或訴訟資料暫止後，展開的通訊群組收件者的相關資訊會儲存在郵件中。 在 Office 365 中，當 Microsoft 365 保留原則套用至信箱時，也會儲存此資訊。 通訊群組成員資格是在傳送郵件時決定。 在傳送郵件後，群組成員資格的變更不會影響與郵件一起儲存的展開收件者清單。 
+在您將信箱設為 In-Place 保留或訴訟資料暫止後，展開的通訊群組收件者的相關資訊會儲存在郵件中。 在 Office 365 中，也會在將 Microsoft 365 保留原則套用至信箱時儲存此資訊。 通訊群組成員資格是在傳送郵件時決定。 在傳送郵件後，群組成員資格的變更不會影響與郵件一起儲存的展開收件者清單。 
   
 | 相關資訊 .。。 | 儲存在 .。。 | 預設會儲存？ | 可供存取 .。。 |
 |:-----|:-----|:-----|:-----|
 |收件者及抄送收件者  <br/> |寄件者和收件者信箱中的郵件屬性。  <br/> |是  <br/> |寄件者、收件者和合規性監察官  <br/> |
 |密件副本收件者  <br/> |寄件者信箱中的郵件屬性。  <br/> |是  <br/> |寄件者和合規性監察官  <br/> |
-|展開的通訊群組收件者  <br/> |寄件者信箱中的郵件屬性。  <br/> |否。 展開的通訊群組收件者資訊會儲存在信箱設定 In-Place 保留或訴訟暫止，或指派給 Microsoft 365 保留原則之後。  <br/> |法規遵循主管  <br/> |
+|展開的通訊群組收件者  <br/> |寄件者信箱中的郵件屬性。  <br/> |否。 展開的通訊群組收件者資訊會儲存在信箱置於 In-Place 保留或訴訟資料暫止，或指派給 Microsoft 365 保留原則之後。  <br/> |法規遵循主管  <br/> |
    
 ## <a name="searching-for-messages-sent-to-bcc-and-expanded-distribution-group-recipients"></a>搜尋傳送至 Bcc 和展開的通訊群組收件者的郵件
 
@@ -76,7 +76,7 @@ Exchange Online 和 Exchange Server 2013 (累計更新7和更新版本) 會保�
   
  **問。展開的通訊群組收件者的清單是在何時和何處儲存？**
   
-答： 在傳送郵件時展開群組成員資格。 展開的通訊群組成員清單會儲存于寄件者信箱中的原始郵件。 寄件者的信箱必須處於「In-Place 暫止」、「訴訟暫止」或「Microsoft 365 保留原則」。
+答： 在傳送郵件時展開群組成員資格。 展開的通訊群組成員清單會儲存于寄件者信箱中的原始郵件。 寄件者的信箱必須處於「In-Place 保留」、「訴訟暫止」或「指派給 Microsoft 365 保留原則」。
   
  **問。[收件者/副本收件者] 可以查看 Bcc'ed 的收件者？**
   
@@ -84,7 +84,7 @@ Exchange Online 和 Exchange Server 2013 (累計更新7和更新版本) 會保�
   
  **問。如何確定已展開的通訊群組收件者永遠都能保留？**
   
-答： 為了確保展開的通訊群組成員永遠會保留郵件，請 [將所有信箱](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) 保留或建立整個組織的 Microsoft 365 保留原則。 
+答： 為了確保展開的通訊群組成員永遠會以郵件保留，請[將所有信箱](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold)保留或建立整個組織 Microsoft 365 保留原則。 
   
  **問。支援的群組類型為何？**
   

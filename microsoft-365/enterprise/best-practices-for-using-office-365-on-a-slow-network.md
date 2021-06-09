@@ -19,7 +19,7 @@ ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: 本文會引導您完成在慢速網路上使用 Office 365 的最佳作法。
+description: 本文將引導您瞭解在慢速網路上使用 Office 365 所採用的最佳作法。
 ms.openlocfilehash: effa1038b03a9fcafc74166a1f53682186688906
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

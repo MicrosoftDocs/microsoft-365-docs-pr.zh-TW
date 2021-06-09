@@ -26,11 +26,11 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50908707"
 ---
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中管理群組
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>管理 Microsoft 365 系統管理中心中的群組
 
 [建立 Microsoft 365 群組](create-groups.md)並新增群組成員之後，您可以設定群組。 您可以編輯群組名稱或描述、管理擁有者或成員，並指定外部寄件者是否可以寄出群組，以及是否要將群組交談的複本傳送給成員。
 
-移至 Microsoft 365 系統管理中心，網址為 [https://admin.microsoft.com](https://admin.microsoft.com) 。
+前往 Microsoft 365 系統管理中心 [https://admin.microsoft.com](https://admin.microsoft.com) 。
 
 ## <a name="edit-the-group-name-or-description"></a>編輯群組名稱或描述
 
@@ -50,13 +50,13 @@ ms.locfileid: "50908707"
 
 4. 選擇 [ **新增** ] 以新增人員，或按一下 **X** 以移除某人。
 
-5. 按一下 [關閉 **]**。
+5. 按一下 **[關閉]**。
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>將交談複本傳送至群組成員的收件匣
   
 當您使用系統管理中心建立群組時，使用者預設不會取得群組電子郵件和會議邀請傳送至其收件匣的副本。 他們必須前往群組，才能看到交談和會議。 您可以在系統管理中心變更此設定。
 
-當您開啟此設定時，群組成員將會取得組電子郵件和會議邀請傳送至其 Outlook 收件匣的副本。 群組成員可以閱讀和刪除此電子郵件複本，且不會影響任何其他人。 電子郵件複本仍會存在群組收件匣中。
+當您開啟此設定時，群組成員將會取得群組電子郵件和會議邀請傳送至其 Outlook 收件匣的副本。 群組成員可以閱讀和刪除此電子郵件複本，且不會影響任何其他人。 電子郵件複本仍會存在群組收件匣中。
 
 群組成員可以選擇停止關注 Outlook 中的群組，以選擇不接收這些電子郵件。
 
@@ -64,9 +64,9 @@ ms.locfileid: "50908707"
 
 2. 按一下您要管理的群組名稱，以開啟 [設定] 窗格。
 
-3. 在 [ **設定** ] 索引標籤上，如果您想要讓成員在自己的收件匣接收群組郵件和行事曆專案的副本，請選取 [ **將群組交談和事件的副本傳送至群組成員** ]
+3. 在 [**設定**] 索引標籤上，如果您想要讓成員在自己的收件匣接收群組郵件和行事曆專案的副本，請選取 [**將群組交談和事件的副本傳送至群組成員**]
 
-4. 選取 [儲存]。
+4. 選取 ****[儲存]。
 
 ## <a name="let-people-outside-the-organization-email-the-group"></a>讓組織外部的人員以電子郵件傳送群組
 
@@ -76,9 +76,9 @@ ms.locfileid: "50908707"
 
 2. 按一下您要管理的群組名稱，以開啟 [設定] 窗格。
 
-3. 在 [系統管理中心群組] 清單中，選取您要變更之群組的名稱，然後在 [ **設定** ] 索引標籤上，選取 [ **允許外部寄件者以電子郵件傳送此群組**]。
+3. 在 [系統管理中心群組] 清單中，選取您要變更之群組的名稱，然後在 [**設定**] 索引標籤上，選取 [**允許外部寄件者以電子郵件傳送此群組**]。
     
-4. 選取 [儲存]。
+4. 選取 ****[儲存]。
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>永久刪除 Microsoft 365 群組
 
@@ -105,11 +105,11 @@ ms.locfileid: "50908707"
 
 [建立 Microsoft 365 群組](create-groups.md)
 
-[管理 Microsoft 365 群組的來賓存取權](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[管理 Microsoft 365 群組的來賓存取](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[選擇建立 Microsoft 365 群組時要使用的網域](../../solutions/choose-domain-to-create-groups.md)
+[選擇建立 Microsoft 365 群組時所要使用的網域](../../solutions/choose-domain-to-create-groups.md)
 
-[允許成員以 Microsoft 365 群組的身分傳送或傳送](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[允許成員以「代理傳送」或「代表 Microsoft 365 群組傳送」](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [將通訊群組清單升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)
 

@@ -35,7 +35,7 @@ ms.locfileid: "52245189"
 
 1. 選取 [ **新增**]。
 1. 新增訂單的詳細資料。
-1. 選取 [儲存]。
+1. 選取 ****[儲存]。
 
 ### <a name="share-the-list-with-partners-or-coworkers"></a>與合作夥伴或合作者共用清單
 

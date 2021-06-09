@@ -1,5 +1,5 @@
 ---
-title: 尋找檔和訓練
+title: 尋找文件和訓練
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -28,7 +28,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52245225"
 ---
-# <a name="find-docs-and-training"></a>尋找檔和訓練
+# <a name="find-docs-and-training"></a>尋找文件和訓練
 
 如果您有疑問或需要協助 Microsoft 365 商務進階版，您有數個選項可以取得協助。
 

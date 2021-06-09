@@ -29,7 +29,7 @@ ms.locfileid: "50908407"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>在電子文件探索案例中的保留建立報表
 
-本文中的腳本可讓 eDiscovery 管理員和 eDiscovery 管理員產生報告，其中包含與 Office 365 或 Microsoft 365 中的「規範中心」有關 eDiscovery 案例相關聯之所有保留的相關資訊。 報告包含與保留相關聯之案例的名稱、置於保留狀態的內容位置，以及該保留是否是以查詢為基礎的資訊。 如果有些案例沒有任何保留，腳本將會建立其他不含保留案例清單的報表。
+本文中的腳本可讓 ediscovery 管理員和 ediscovery 管理員產生一個報告，其中包含與 Office 365 或 Microsoft 365 中的「規範中心」有關之所有保留相關的資訊。 報告包含與保留相關聯之案例的名稱、置於保留狀態的內容位置，以及該保留是否是以查詢為基礎的資訊。 如果有些案例沒有任何保留，腳本將會建立其他不含保留案例清單的報表。
 
 請參閱 [詳細資訊](#more-information) 一節，以取得報告中所含資訊的詳細描述。
 
@@ -41,15 +41,15 @@ ms.locfileid: "50908407"
 
 - 在任何 Microsoft 標準支援程式或服務下，不支援本主題提供的指令碼。範例指令碼係依「現狀」提供，不附帶任何明示或默示的擔保。Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。使用或操作範例指令碼和文件發生的所有風險皆屬於您的責任。Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
 
-## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步驟1：連線至安全性 & 規範中心 PowerShell
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步驟1：連線安全 & 規範中心 PowerShell
 
-第一步是連接至組織的安全性 & 規範中心 PowerShell。 如需逐步指示，請參閱[連線至安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
+第一步是將組織連線至安全性與合規性中心 PowerShell。 如需逐步指示，請參閱[連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>步驟2：執行腳本以報告與 eDiscovery 案例相關聯的封存
 
 在您連接至安全性 & 規範中心 PowerShell 之後，下一步是建立並執行腳本，以收集組織中 eDiscovery 案例的相關資訊。
 
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如，CaseHoldsReport.ps1。
+1. 使用 .ps1 的檔案名尾碼，將下列文字儲存至 Windows PowerShell 腳本檔案;例如，CaseHoldsReport.ps1。
 
    ```powershell
    #script begin
@@ -139,7 +139,7 @@ ms.locfileid: "50908407"
    #script end
    ```
 
-2. 在步驟1中開啟的 [Windows PowerShell] 會話中，移至您用來儲存腳本的資料夾。
+2. 在步驟1中開啟的 Windows PowerShell 會話中，移至您用來儲存腳本的資料夾。
 
 3. 執行腳本;例如：
 
@@ -154,7 +154,7 @@ ms.locfileid: "50908407"
    > [!TIP]
    > 若要將報告儲存在腳本所在的相同資料夾中，請輸入句點 ( "。提示目的檔案夾時 ) 。 若要將報告儲存至腳本所在之資料夾的子資料夾，只要輸入子資料夾的名稱即可。
 
-   腳本開始收集組織中所有 eDiscovery 案例的相關資訊。 在腳本執行時，請勿存取報告檔案。 腳本完成後，會在 Windows PowerShell 會話中顯示確認訊息。 顯示此訊息之後，您可以在步驟4中所指定的資料夾中存取報告。 報表的檔案名是 `CaseHoldsReport<DateTimeStamp>.csv` 。
+   腳本開始收集組織中所有 eDiscovery 案例的相關資訊。 在腳本執行時，請勿存取報告檔案。 腳本完成之後，Windows PowerShell 會話中就會顯示確認訊息。 顯示此訊息之後，您可以在步驟4中所指定的資料夾中存取報告。 報表的檔案名是 `CaseHoldsReport<DateTimeStamp>.csv` 。
 
    Addtionally，腳本也會建立報表，其中包含沒有任何保留的案例清單。 此報告的檔案名為 `CaseswithNoHolds<DateTimeStamp>.csv` 。
 

@@ -17,7 +17,7 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
-description: 瞭解如何管理 Office 365 端點，以與企業組織網路架構搭配運作。
+description: 瞭解如何管理 Office 365 端點，以與企業組織網路架構一起運作。
 ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,17 +27,17 @@ ms.locfileid: "50905113"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 端點
 
-擁有多個辦公室位置和相連 WAN 的多數企業組織，都需要針對 Office 365 網路連線的設定。 您可以讓所有信任的 Office 365 網路要求直接通過防火牆，藉此略過所有額外的封包層級檢查或處理，進而將網路效能最佳化。 這會降低延遲和您的周邊容量需求。 要為使用者提供最佳效能的第一步，就是要找出 Office 365 網路流量。 如需詳細資訊，請參閱 [Office 365 Network Connectivity 原則](microsoft-365-network-connectivity-principles.md)。
+擁有多個辦公室位置和相連 WAN 的多數企業組織，都需要針對 Office 365 網路連線的設定。 您可以讓所有信任的 Office 365 網路要求直接通過防火牆，藉此略過所有額外的封包層級檢查或處理，進而將網路效能最佳化。 這會降低延遲和您的周邊容量需求。 要為使用者提供最佳效能的第一步，就是要找出 Office 365 網路流量。 如需詳細資訊，請參閱[Office 365 網路連接原則](microsoft-365-network-connectivity-principles.md)。
 
-Microsoft 建議您使用 [office 365 IP 位址和 URL Web 服務](microsoft-365-ip-web-service.md)，存取 office 365 網路端點和進行中的變更。
+Microsoft 建議您使用[Office 365 IP 位址和 URL Web 服務](microsoft-365-ip-web-service.md)，存取 Office 365 網路端點和進行的變更。
 
 無論您管理重要 Office 365 網路流量的方式為何，Office 365 都需要網際網路連線。 [Office 365 IP 位址和 URL Web 服務中未包含的其他端點](additional-office365-ip-addresses-and-urls.md)中會列出需要連線的其他網路端點。
 
-您使用 Office 365 網路端點的方式，將取決於您的企業組織網路架構。 本文概述企業網路架構可與 Office 365 IP 位址和 URL 整合的幾種方式。 選擇信任哪些網路要求的最簡單方法，就是使用在每個辦公室位置都支援自動 Office 365 設定的 SD-WAN 裝置。
+您使用 Office 365 網路端點的方式，將取決於您的企業組織網路架構。 本文概述企業網路架構可與 Office 365 IP 位址和 URL 整合的幾種方式。 選擇信任哪些網路要求的最簡單方法，就是使用可在每個辦公室位置都支援自動 Office 365 設定的 SD-WAN 裝置。
 
-## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>重要 Office 365 網路流量的本機分支出口 SD-WAN
+## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SD-WAN 重要 Office 365 網路流量的本機分支出口
 
-在每個分支辦公室位置，您可以提供設定為將 Office 365 的流量進行路由傳送的 SD-WAN 裝置，將端點的 [優化] 或 [優化] 和 [允許] 類別直接傳送至 Microsoft 的網路。 其他網路流量包括內部部署資料中心流量、一般網際網路網站流量，而連至 Office 365 [預設] 類別端點的流量會傳送到您在其中具有更實質網路周邊的另一個位置。
+在每個分支辦公室位置，您可以提供設定為將流量路由傳送至 Office 365 最優化類別端點的 SD-WAN 裝置，或將其優化並允許類別，直接對應至 Microsoft 的網路。 其他網路流量包括內部部署資料中心流量、一般網際網路網站流量，而連至 Office 365 [預設] 類別端點的流量會傳送到您在其中具有更實質網路周邊的另一個位置。
 
 Microsoft 使用 SD-WAN 提供者來啟用自動設定。 如需詳細資訊，請參閱 [Office 365 網路合作夥伴計畫](microsoft-365-networking-partner-program.md)。
 
@@ -76,7 +76,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 | 參數 | 說明 |
 |:-----|:-----|
 |**ClientRequestId** <br/> |這是必要項目，且是傳遞至 Web 服務的 GUID，代表正在進行呼叫的用戶端電腦。 <br/> |
-|**Instance** <br/> |Office 365 服務實例，其預設為全球通用。 這也會傳遞到 web 服務。 <br/> |
+|**Instance** <br/> |Office 365 服務實例，預設為全球通用。 這也會傳遞到 web 服務。 <br/> |
 |**TenantName** <br/> |您的 Office 365 租用戶名稱。 傳遞至 Web 服務，並用作某些 Office 365 URL 中的可取代參數。 <br/> |
 |**Type** <br/> |您要產生的 Proxy PAC 檔案類型。 <br/> |
 
@@ -90,7 +90,7 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 在未將 PAC 檔案用於導向輸出流量的情況下，您仍想要設定您的 Proxy 伺服器，以在周邊網路上略過處理。 部分 Proxy 伺服器廠商已啟用此功能的自動設定，如 [Office 365 網路合作夥伴計畫](microsoft-365-networking-partner-program.md)中所述。
 
-如果您是手動執行此動作，則必須從 Office 365 IP 位址和 URL Web 服務取得 [優化] 和 [允許] 端點類別資料，並設定 proxy 伺服器以略過處理這些情況。 務必避免 [最佳化] 和 [允許] 類別端點的 [SSL 中斷和檢查] 與 [Proxy 驗證]。
+如果您是手動執行這項操作，則需要從 Office 365 IP 位址和 URL Web 服務取得 [優化] 及 [允許] 端點類別資料，並將 proxy 伺服器設定為略過處理。 務必避免 [最佳化] 和 [允許] 類別端點的 [SSL 中斷和檢查] 與 [Proxy 驗證]。
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Office 365 IP 位址和 URL 的變更管理
@@ -120,7 +120,7 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Office 365 網路端點常見問題集
 
-請參閱這些有關 Office 365 網路連線的常見問題。
+請參閱下列有關 Office 365 網路連線的常見問題。
   
 ### <a name="how-do-i-submit-a-question"></a>如何提交問題？
 
@@ -146,7 +146,7 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 1. 使用 CIDR 計算工具 (例如用於 [IPv4](https://www.ipaddressguide.com/cidr) 或 [IPv6](https://www.ipaddressguide.com/ipv6-cidr) 的這些) 檢查 IP 位址是否包含在更大的發佈範圍中。 例如，40.96.0.0/13 會包括 IP 位址40.103.0.1，儘管 40.96 不符合40.103。
 2. 使用 [whois 查詢](https://dnsquery.org/)查看合作夥伴是否擁有該 IP。 如果這是 Microsoft 所擁有，則可能是內部合作夥伴。 許多合作夥伴網路端點會列為屬於 _預設_ 類別，其中的 IP 位址並未發佈。
 3. 該 IP 位址可能不屬於 Office 365 或相依性。 Office 365 網路端點發佈不包含所有 Microsoft 網路端點。
-4. 請檢查憑證。 透過瀏覽器，使用 *HTTPS:// \<IP_ADDRESS\>* 連接至 IP 位址，並檢查憑證上所列的網域，以瞭解哪些網域與 IP 位址相關聯。 如果它是 Microsoft 擁有的 IP 位址，而不是在 Office 365 IP 位址清單上，則此 IP 位址可能會與 Microsoft CDN 相關聯，例如  *MSOCDN.NET*  或其他未發佈 IP 資訊的 microsoft 網域。 如果您發現憑證上的網域確實是我們宣稱有列出 IP 位址的網域，請通知我們。
+4. 請檢查憑證。 透過瀏覽器，使用 *HTTPS:// \<IP_ADDRESS\>* 連接至 IP 位址，並檢查憑證上所列的網域，以瞭解哪些網域與 IP 位址相關聯。 如果是 microsoft 擁有的 ip 位址，而不是在 Office 365 IP 位址清單上，則此 IP 位址可能會與 Microsoft CDN 相關聯，例如 *MSOCDN.NET* 或其他未發佈 IP 資訊的 microsoft 網域。 如果您發現憑證上的網域確實是我們宣稱有列出 IP 位址的網域，請通知我們。
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>部分 Office 365 URL 指向 CNAME 記錄，而非 DNS 中的 A 記錄。 我需要對 CNAME 記錄執行什麼動作？
@@ -159,9 +159,9 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 這些 CNAME 重新導向是 DNS 的一般部分，並且對用戶端電腦且對 Proxy 伺服器都是透明的。 它們用於負載平衡、內容傳遞網路、高可用性及服務事件緩和。 Microsoft 不會發佈中繼 CNAME 記錄，它們可能會隨時變更，而且您不應需要在您的 Proxy 伺服器中將它們設為允許。
 
-Proxy 伺服器會驗證初始 URL，在上述範例中為 serviceA.office.com，此 URL 會包含在 Office 365 發佈中。 Proxy 伺服器會要求將該 URL 進行 DNS 解析為 IP 位址，並將接收回 IP_1。 它不會驗證中繼 CNAME 重新導向記錄。
+proxy 伺服器會驗證初始 URL，在上述範例中為 serviceA.office.com，此 url 會包含在 Office 365 發佈中。 Proxy 伺服器會要求將該 URL 進行 DNS 解析為 IP 位址，並將接收回 IP_1。 它不會驗證中繼 CNAME 重新導向記錄。
 
-Microsoft 不支援使用實編碼的設定或 whitelisting，而是以間接的 Office 365 Fqdn 為基礎，而且知道會造成客戶連線問題。 在 CNAME 重新導向上封鎖的 DNS 解決方案，或以其他方式錯誤解析 Office 365 DNS 專案的 DNS 解決方案，可透過已啟用 DNS 遞迴的 DNS 轉寄站或使用 DNS 根提示來加以解決。 許多協力廠商網路周邊產品會以本機方式 [，使用 office 365 IP 位址和 URL Web 服務](microsoft-365-ip-web-service.md)，將建議的 Office 365 端點 whitelisting 整合在其設定中。
+不建議使用以間接 Office 365 fqdn 為基礎的硬編碼設定或 whitelisting，而是 Microsoft 不支援的，已知會造成客戶連線問題。 在 CNAME 重新導向中封鎖的 DNS 解決方案，或是以其他方式錯誤解析 Office 365 dns 專案，可透過使用 dns 遞迴的 dns 轉寄站或使用 dns 根提示來解決。 許多協力廠商網路周邊產品會以本機方式[，使用 Office 365 IP 位址和 URL Web 服務，](microsoft-365-ip-web-service.md)將其設定中建議的 Office 365 端點 whitelisting 整合。
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>為什麼 Microsoft 網域名稱內會有 nsatc.net 或 akadns.net 等名稱？
@@ -200,9 +200,9 @@ Office 365 套件可劃分成幾個主要服務領域。 您可以選擇性地�
 |**商務用 Skype Online 和 Microsoft Teams** <br/> |商務用 Skype 和 Microsoft Teams <br/> |
 |**通用** <br/> |Office 365 專業增強版、瀏覽器、Azure AD 及其他常見網路端點中的 Office <br/> |
 
-除了基本網際網路服務之外，還需要一些只用於整合功能的協力廠商服務。 雖然這些是整合所需要的，但在 Office 365 端點文章中標示為選用，這表示當端點無法存取時，服務的核心功能仍可繼續運作。 任何必要的網路端點都必須將必要屬性設定為 true。 任何選用的網路端點都會將必要的屬性設定為 false，而且記事屬性將會詳細說明當連線封鎖時，應預期的遺失功能。
+除了基本網際網路服務之外，還需要一些只用於整合功能的協力廠商服務。 雖然這些是整合所需要的，但在 Office 365 端點專案中標示為選用，這表示當端點無法存取時，服務的核心功能仍會繼續運作。 任何必要的網路端點都必須將必要屬性設定為 true。 任何選用的網路端點都會將必要的屬性設定為 false，而且記事屬性將會詳細說明當連線封鎖時，應預期的遺失功能。
   
-如果您嘗試使用 Office 365，而且找不到協力廠商服務可供存取，您會想要 [透過 proxy 和防火牆，確定允許所有標為必要或選用的 fqdn](urls-and-ip-address-ranges.md)。
+如果您嘗試使用 Office 365，而且找不到協力廠商服務可供存取，您會想要[透過 proxy 和防火牆，確定允許所有標為必要或選用的 fqdn](urls-and-ip-address-ranges.md)。
   
 <a name="bkmk_consumer"> </a>
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>如何封鎖對 Microsoft 消費者服務的存取權限？

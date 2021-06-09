@@ -44,7 +44,7 @@ ms.locfileid: "52245237"
 
 ## <a name="compare-plans"></a>比較方案
 
-| 服務區域 | 功能 | Microsoft 365 商務標準版 | Microsoft 365 商務進階版 | Office 365 企業版 E3 |
+| 服務區域 | 功能 | Microsoft 365 商務標準版 | Microsoft 365 商務進階版 | Office 365 Enterprise E3 |
 | --- | --- | --- | --- | --- |
 | **可用的授權** | 使用者數目上限 | 300 | 300 | 無限制 |
 | **Office 應用程式** | 在每位使用者上安裝 Office，最多5部電腦上 (Word、Excel、PowerPoint、OneNote、Access) 、Office 線上 | Business | Business | ProPlus |

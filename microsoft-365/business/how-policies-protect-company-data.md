@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for business 中的原則如何保護公司資料
+title: 商務用 Microsoft 365 中的原則如何保護公司資料
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -34,9 +34,9 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578420"
 ---
-# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Microsoft 365 for business 中的原則如何保護公司資料
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>商務用 Microsoft 365 中的原則如何保護公司資料
 
-本文適用于 Microsoft 365 商務版 Premium。
+本文適用于 Microsoft 365 商務進階版。
 
 您建立的原則能夠針對特定的裝置類型，且可以套用至特定的使用者群組。這表示您能夠建立一個套用至高階主管的原則，以及另一個套用至其他所有人的原則。
   

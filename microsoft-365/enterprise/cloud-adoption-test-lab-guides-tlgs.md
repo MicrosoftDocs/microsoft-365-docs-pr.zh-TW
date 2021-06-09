@@ -1,5 +1,5 @@
 ---
-title: 使用測試實驗室指南 (Tlg) 測試 Microsoft 365
+title: '測試 Microsoft 365 測試實驗室指南 (tlg) '
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905173"
 ---
-# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>使用測試實驗室指南 (Tlg) 測試 Microsoft 365
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>測試 Microsoft 365 測試實驗室指南 (tlg) 
 
 TLG 可協助您快速學習 Microsoft 各項產品。它們非常適合在決定是否適合您，以及在開始設計、規劃和推出給使用者使用之前，用來評估技術或組態的情況。「我自己建置它且可以運作」的實際經驗有助您了解新產品或解決方案的部署需求，因此您可以更妥善地規劃在生產環境中進行裝載。
   
@@ -45,11 +45,11 @@ TLG 也會針對應用程式開發和測試建立具有代表性的環境，亦�
 
 - [模擬企業基本設定](simulated-ent-base-configuration-microsoft-365-enterprise.md)
     
-    在 Microsoft Azure 基礎結構服務和 Microsoft 365 企業版 E5 試用訂閱中建立執行中的簡化內部網路。 
+    在 Microsoft Azure 基礎結構服務和 Microsoft 365 企業版 E5 試用訂閱中建立簡化的內部網路。 
 
     這是選擇性的步驟，但如果您想要為混合身分識別建置模擬的企業組態，則為必要步驟。
     
-如需適用于 Office 365 和 Microsoft 365 的其他 Tlg，請移至 [測試實驗室指南](m365-enterprise-test-lab-guides.md)。  
+如需同時適用 Office 365 和 Microsoft 365 的其他 tlg，請移至[測試實驗室指南](m365-enterprise-test-lab-guides.md)。  
     
 ## <a name="related-topics"></a>相關主題
 

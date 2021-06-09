@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: 瞭解如何使用 Microsoft 365 for business 以原始方式重設您管理的 Windows 10 裝置，並在購買時將其還原為原始設定。
+description: 瞭解如何使用 Microsoft 365 以供商務用來重設 Windows 10 裝置以供您管理，並在購買時將其還原為原始設定。
 ms.openlocfilehash: 29d5b8758ef7d86c7ac283460d0a1a87bffaf5f3
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,9 +33,9 @@ ms.locfileid: "51578200"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>將 Windows 10 裝置重設成出廠預設值
 
-本文適用于 Microsoft 365 商務版 Premium。
+本文適用于 Microsoft 365 商務進階版。
 
-重設成出廠預設值會將裝置還原為當初購買時的原始設定。 裝置在購買之後安裝的所有 App 和資料會遭到移除。 您可以使用 Microsoft 365 for business 對您管理的 Windows 10 裝置進行出廠重設。
+重設成出廠預設值會將裝置還原為當初購買時的原始設定。 裝置在購買之後安裝的所有 App 和資料會遭到移除。 您可以使用商務用 Microsoft 365，以供您管理 Windows 10 裝置出廠時重設。
   
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
     

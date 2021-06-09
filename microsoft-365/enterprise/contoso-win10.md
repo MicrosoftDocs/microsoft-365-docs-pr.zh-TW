@@ -23,7 +23,7 @@ ms.locfileid: "50907683"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 的 Windows 10 企業版部署
 
-在 Microsoft 365 for enterprise 的廣泛展示之前，Contoso 具有 Windows 相容的電腦和裝置，其混合了 Windows 7 (10% ) 、Windows 8.1 (65% ) 和 Windows 10 (25% ) 。 Contoso 想要升級其電腦的 Windows 10 企業版利用高級安全性，並從自動部署更新，降低 IT 負荷。 
+在企業的 Microsoft 365 的廣泛部署之前，Contoso 具有 Windows 相容的電腦和裝置，其混合了 Windows 7 (10% ) ，Windows 8.1 (65% ) ，而且 Windows 10 (25% ) 。 Contoso 想要將其電腦升級為 Windows 10 企業版利用高級安全性，並從自動部署更新中降低 IT 負荷。 
 
 在評估基礎架構和業務需求後，Contoso 識別這些部署的關鍵需求：
 
@@ -54,7 +54,7 @@ Contoso 已擁有 Configuration Manager (最新分支) 基礎架構。Configurat
 
 ## <a name="planning-process"></a>規劃程序
 
-Contoso 使用 Windows Analytics 中的升級準備，判斷已安裝應用程式的集合，及其與 Windows 10 企業版的相容性。
+Contoso 使用 Windows Analytics 中的升級準備，判斷已安裝應用程式的集合及其與 Windows 10 企業版的相容性。
 
 ## <a name="deployment-process"></a>部署程序
 
@@ -62,7 +62,7 @@ Contoso 使用 Windows Analytics 中的升級準備，判斷已安裝應用程�
 
 1. 為 Configuration Manager 啟用對等快取。
 2. 根據大量授權服務中心建立自訂 Windows 套件。
-3. 使用 Configuration Manager 將 Windows 套件部署到跨網路的發佈點，並將其部署至三個驗證和部署過渡群組。
+3. 使用 Configuration Manager 將 Windows 套件部署至其網路上的發佈點，並將其部署至三個驗證和部署暫存群組。
 4. 使用 Windows Analytics 的「裝置健全狀況」和「升級相容性」解決方案，對在三個驗證和部署執行週期中的電腦和裝置執行成功評估。
 5. 根據 Windows Analytics 資訊，Contoso 決定要部署至廣泛部署群組的 Windows 10 企業版版本。
 6. 執行 Configuration Manager 部署工作順序，將選取的 Windows 套件部署到廣泛的部署群組。
@@ -78,11 +78,11 @@ Contoso 使用 Windows Analytics 中的升級準備，判斷已安裝應用程�
   - 從 Microsoft 網路中的 Microsoft 大量授權取得取得 Windows 10 企業版套件的映像。
   - 部署套件的管理中心點。
 - 通常位於 Contoso 地區中心辦公室的地區發布點。
-- 在不同位置上的 Windows 電腦和裝置，會根據群組成員資格，針對就地升級或持續更新接收及安裝部署套件。
+- Windows各種位置的電腦和裝置，會根據群組成員資格，針對就地升級或持續更新，接收及安裝部署套件。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
-瞭解 Contoso 如何利用其 Configuration Manager 基礎結構，在其整個組織中 [部署及保留目前的 Microsoft 365 應用程式](contoso-o365pp.md) 。 
+瞭解 Contoso 如何利用其 Configuration Manager 基礎結構，在整個組織中[部署及保留目前的 Microsoft 365 Apps 企業版](contoso-o365pp.md)。 
 
 ## <a name="see-also"></a>另請參閱
 

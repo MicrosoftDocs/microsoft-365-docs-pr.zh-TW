@@ -75,5 +75,5 @@ ms.locfileid: "52634265"
 ## <a name="related-content"></a>相關內容
 
 為[您的組織設定密碼到期原則](../manage/set-password-expiration-policy.md) (文章) \
-[將個別使用者的密碼設為永不過期](set-password-to-never-expire.md) (篇文章) \
+[設定個別使用者的密碼永不過期](set-password-to-never-expire.md) (文章)
 [Microsoft 365 商務版訓練](../../business-video/index.yml)影片 (連結] 頁面) 

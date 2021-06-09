@@ -76,14 +76,14 @@ ms.locfileid: "52706106"
     - 主機名稱： sip
     - 類型： CNAME
     - 位址： sipdir.online.lync.com
-- 選取 [確定]。
+- 選取 **[確定]**。
 
 新增商務用 Skype Online 自動探索 CNAME 記錄。  
 - 在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname)**]。 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     - 主機名稱： lyncdiscover
     - 類型： CNAME
     - 位址： webdir.online.lync.com
-- 選取 [確定]。
+- 選取 **[確定]**。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>為 Microsoft 的 (MDM) 新增兩個適用于行動裝置管理的 CNAME 記錄。
 
@@ -97,7 +97,7 @@ ms.locfileid: "52706106"
 - 主機名稱： enterpriseregistration
 - 類型： CNAME
 - 位址： enterpriseregistration.windows.net
-- 選取 [確定]。 
+- 選取 **[確定]**。 
 
 新增 MDM Enterpriseenrollment CNAME 記錄。 
 -  在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname)**]。 
@@ -105,7 +105,7 @@ ms.locfileid: "52706106"
     - 主機名稱： enterpriseenrollment
     - 類型： CNAME
     - 位址： enterpriseenrollment-s.manage.microsoft.com
-- 選取 [確定]。
+- 選取 **[確定]**。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 <a name="BKMK_add_TXT"> </a>
@@ -125,7 +125,7 @@ ms.locfileid: "52706106"
 -  記錄類型： TXT
 -  Address： v = spf1 包含: spf.protection.outlook.com。 .com-all 
          
--  選取 [確定]。
+-  選取 **[確定]**。
    
 ## <a name="add-srv-records"></a>新增 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
@@ -142,7 +142,7 @@ ms.locfileid: "52706106"
     -  加權：1
     -  連接埠：443
     -  目標 (主機名稱) ： sipdir.online.lync.com
--  選取 [確定]。 
+-  選取 **[確定]**。 
 
 
 為商務用 Skype Online 同盟新增 SIP SRV 記錄。  
@@ -155,7 +155,7 @@ ms.locfileid: "52706106"
     -  加權：1
     -  連接埠：5061
     -  目標 (主機名稱) ： sipfed.online.lync.com
--  選取 [確定]。 
+-  選取 **[確定]**。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>新增記錄以驗證您擁有網域 (若您尚未這麼做)
 <a name="BKMK_verify"> </a>

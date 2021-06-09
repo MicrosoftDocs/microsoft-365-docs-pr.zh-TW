@@ -32,7 +32,7 @@ ms.locfileid: "51578020"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>查看及管理原則和裝置
 
-本文適用于 Microsoft 365 商務版 Premium。
+本文適用于 Microsoft 365 商務進階版。
 
 ## <a name="view-and-edit-device-policies"></a>查看和編輯裝置原則
 

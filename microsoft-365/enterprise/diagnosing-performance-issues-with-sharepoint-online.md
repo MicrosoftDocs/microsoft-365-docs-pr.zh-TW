@@ -36,7 +36,7 @@ ms.locfileid: "50927609"
 
 - 比較非自訂基準
 
-- SharePoint 線上回應標頭度量
+- SharePoint線上回應標頭度量
 
 本主題說明如何使用上述每一種方法來診斷效能問題。 當您瞭解問題的原因之後，您可以使用改進 SharePoint 效能的相關文章，對解決方案進行工作 https://aka.ms/tune 。
   
@@ -66,7 +66,7 @@ ms.locfileid: "50927609"
 ## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>設定 SharePoint 線上的非自訂基準
 <a name="F12ToolInfo"> </a>
 
-若要判斷您的網站效能薄弱點，最好的方法是在 SharePoint Online 中設定完全現成的網站集合。 如此一來，您可以將網站的各個層面與您在頁面上沒有自訂的內容進行比較。 商務用 OneDrive 首頁是不太可能有任何自訂之個別網站集合的好例子。
+若要判斷您的網站效能薄弱點，最好的方法是在 SharePoint Online 中設定完全現成的網站集合。 如此一來，您可以將網站的各個層面與您在頁面上沒有自訂的內容進行比較。 商務用 OneDrive 首頁是不太可能具有任何自訂之個別網站集合的很好的範例。
   
 ## <a name="viewing-sharepoint-response-header-information"></a>查看 SharePoint 回應標頭資訊
 <a name="F12ToolInfo"> </a>

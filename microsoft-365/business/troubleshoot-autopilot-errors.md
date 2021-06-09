@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: 瞭解如何疑難排解在使用 Microsoft 365 商務版 Premium 中的 AutoPilot 裝置檔案時，可能會看到的錯誤。
+description: 瞭解如何疑難排解您在 Microsoft 365 商務進階版中使用 AutoPilot 裝置檔案時可能看到的錯誤。
 ms.openlocfilehash: 1078ab74b07952e4bb565555a081b98ecce9db5c
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -39,7 +39,7 @@ ms.locfileid: "51578080"
 
 ## <a name="device-file-error-messages"></a>裝置檔錯誤訊息
 
-以下是在使用 Microsoft 365 商務版 Premium 中的 AutoPilot 裝置檔案時，可能會看到的一些錯誤的相關資訊。 
+以下是使用 Microsoft 365 商務進階版中的 AutoPilot 裝置檔案時，可能會看到的一些錯誤的相關資訊。 
   
 |**錯誤碼**|**修正以嘗試**|
 |:-----|:-----|

@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: 提供在 Microsoft Azure 中部署 Office Server 工作負載時有用資訊的連結清單。
+description: 提供在 Microsoft Azure 中部署 Office 伺服器工作負載的有用資訊連結清單。
 ms.openlocfilehash: 47e885d3db7d9211b917414d03efdc5b716dcd1e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.locfileid: "50907489"
 ---
 # <a name="hybrid-solutions"></a>混合式解決方案
 
-使用 Microsoft Azure，您可以部署一些通常在 Azure 基礎結構服務中部署內部部署的 Office Server 工作負載。
+透過 Microsoft Azure，您可以部署一些通常在 Azure 基礎結構服務中部署內部部署的 Office 伺服器工作負載。
   
-Azure 中的 Microsoft 365 身分識別基礎結構：
+針對 Azure 中的 Microsoft 365 身分識別基礎結構：
 
 - [針對 SharePoint Server 驗證使用 Azure AD](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 

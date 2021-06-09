@@ -33,7 +33,7 @@ ms.locfileid: "50905089"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-您可以根據您的身分識別設定，以數種不同的方式管理 Microsoft 365 使用者帳戶密碼。 您可以在 [Microsoft 365 系統管理中心](../admin/add-users/index.yml)、Active Directory 網域服務 (AD DS) 或 Azure Active Directory (azure AD) 系統管理中心中管理使用者帳戶。
+您可以根據您的身分識別設定，以數種不同的方式管理 Microsoft 365 使用者帳戶密碼。 您可以在[Microsoft 365 系統管理中心](../admin/add-users/index.yml)、Active Directory 網域服務 (AD DS) 或 Azure Active Directory (Azure AD) 系統管理中心中管理使用者帳戶。
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>規劃管理使用者帳戶密碼的位置和方式
 

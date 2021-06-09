@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 加密鏈-DOD 和 GCC 高
+title: Microsoft 365 加密鏈-DOD 及 GCC 高
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -16,7 +16,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: 查看 Microsoft 365 中的 DOD 和 GCC 高根憑證和憑證授權 (CAs) 的完整清單。
+description: 請查看 Microsoft 365 中的 DOD 和 GCC 高根憑證和憑證頒發機構 (CAs) 的完整清單。
 ms.openlocfilehash: 016c7d6b4c5557b7930763c2628525cc3c2c409f
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,24 +24,24 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927803"
 ---
-# <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 加密鏈-DOD 和 GCC 高
+# <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 加密鏈-DOD 及 GCC 高
 
-Microsoft 365 利用許多不同的憑證提供者。 下列說明當存取 Microsoft 365 時， **DOD 和 GCC 高的使用者** 可能會遇到的已知 Microsoft 365 根憑證的完整清單。 如需您可能需要在自己的基礎結構中安裝之憑證的詳細資訊，請參閱 [Plan For Microsoft 365 的協力廠商 SSL 憑證](../enterprise/plan-for-third-party-ssl-certificates.md)。
+Microsoft 365 會利用許多不同的憑證提供者。 下列說明在存取 Microsoft 365 時， **DOD 和 GCC 高客戶** 可能會遇到的已知 Microsoft 365 根憑證的完整清單。 如需您可能需要在自己的基礎結構中安裝之憑證的詳細資訊，請參閱[Plan for 協力廠商 SSL 憑證以取得 Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md)。
 
-下列憑證資訊適用于 **所有 DOD 和 GCC 高級客戶**。
+下列憑證資訊適用于 **所有 DOD 和 GCC 高客戶**。
 
 上次更新： **10/16/2020**
 
 >[!NOTE]
->如需適用于 **全球客戶** 的憑證資訊，請參閱 [Microsoft 365 加密連結](encryption-office-365-certificate-chains.md)。
+>如需適用于 **全球客戶** 的憑證資訊，請參閱 [Microsoft 365 加密鏈](encryption-office-365-certificate-chains.md)。
 
 | **憑證類型** | **P7b 下載** | **CRL 端點** | **OCSP 端點** |
 | --- | --- | --- | --- | --- |
-| 公開信任的根和中級憑證 | [Microsoft 365 ITAR 憑證捆綁 (P7B) ](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
+| 公開信任的根和中級憑證 | [Microsoft 365ITAR 憑證捆綁 (P7B) ](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
 
 展開下列的根及中間部分，以查看憑證提供者的其他詳細資料。
 
-## <a name="microsoft-365-certificate-details"></a>**Microsoft 365 憑證詳細資料**
+## <a name="microsoft-365-certificate-details"></a>**Microsoft 365憑證詳細資料**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
@@ -146,7 +146,7 @@ Microsoft 365 利用許多不同的憑證提供者。 下列說明當存取 Micr
 | **簽名演算法** | sha256RSA |
 | **不早的合法性** | Oct 22 00:00:00 2013 UTC |
 | **不晚的合法性** | Oct 22 00:00:00 2028 UTC |
-| **主體金鑰識別碼** | 3D： D3：50： A5： D6： A0： AD： EE： F3：4A：60：0A：65： D3：21： D4： F8： F8： D6：0F |
+| **主體金鑰識別碼** | 3d： D3：50： A5： D6： A0： AD： EE： F3：4a：60：0A：65： D3：21： D4： f8： f8： D6：0F |
 | **授權機碼識別碼** | keyID： b1：3e： c3：69：03： f8： bf：47：01： d4：02：26：1a：64：2b： c3 |
 | **指紋 (SHA-1)** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F |
 | **指紋 (SHA-256)** | 403E062A2653059113285BAF80A0D4AE422C848C9F78FAD01FC94BC5B87FEF1A |
@@ -314,9 +314,9 @@ Microsoft 365 利用許多不同的憑證提供者。 下列說明當存取 Micr
 | **CRL URLs** | http://crl.entrust.net/g2ca.crl |
 | **OCSP URLs** | http://ocsp.entrust.net |
 
-### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft Azure TLS 發證 CA 01**
+### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft AzureTLS 簽發 CA 01**
 
-| **主旨** | Azure TLS 發證 CA 01 CN=Microsoft<br>O=Microsoft 公司<br>C=US |
+| **主旨** | CN = Microsoft Azure TLS 發證 CA 01<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 0A： AF： A6： C5：下列 CA：63： C4：51：41： EA：3B： E1： F7： C7：53：17 |
@@ -331,9 +331,9 @@ Microsoft 365 利用許多不同的憑證提供者。 下列說明當存取 Micr
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure TLS 發證 CA 02**
+### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft AzureTLS 簽發 CA 02**
 
-| **主旨** | Azure TLS 發證 CA 02 CN=Microsoft<br>O=Microsoft 公司<br>C=US |
+| **主旨** | CN = Microsoft Azure TLS 發證 CA 02<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 0C：6A： E9：7C： CE： D5：99：83：86：90： A0：0A：9E： A5：32：14 |
@@ -348,9 +348,9 @@ Microsoft 365 利用許多不同的憑證提供者。 下列說明當存取 Micr
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure TLS 發證 CA 05**
+### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft AzureTLS 發證 CA 05**
 
-| **主旨** | Azure TLS 發證 CA 05 CN=Microsoft<br>O=Microsoft 公司<br>C=US |
+| **主旨** | CN = Microsoft Azure TLS 發證 CA 05<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 0D：7B： ED： E9：7D：82：09：96：7A：52：63：1B：8B： DD：18： BD |
@@ -365,9 +365,9 @@ Microsoft 365 利用許多不同的憑證提供者。 下列說明當存取 Micr
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS 發證 CA 06**
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft AzureTLS 發證 CA 06**
 
-| **主旨** | Azure TLS 發證 CA 06 CN=Microsoft<br>O=Microsoft 公司<br>C=US |
+| **主旨** | CN = Microsoft Azure TLS 發證 CA 06<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
 | **序號** | 02： E7：91：71： FB：80：21： E9：3F： E2： D9：83：83：4C：50： C0 |

@@ -27,15 +27,15 @@ ms.locfileid: "50927741"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>使用郵件加密為組織建立機密資訊類型原則
 
-您可以使用 Exchange 郵件流程規則或資料遺失防護 (DLP) ，以 Office 365 郵件加密建立機密資訊類型原則。 若要建立 Exchange 郵件流程規則，您可以使用 Exchange 系統管理中心 (EAC) 或 PowerShell。
+您可以使用 Exchange 郵件流程規則或資料遺失防護 (DLP) 建立具有 Office 365 郵件加密的敏感資訊類型原則。 若要建立 Exchange 郵件流程規則，您可以使用 Exchange admin center (EAC) 或 PowerShell。
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>使用 EAC 中的郵件流程規則建立原則
 
-登入 Exchange 系統管理中心 (EAC) 並移至 **郵件流程**  >  **規則**。 在 [規則] 頁面上，建立套用 Office 365 郵件加密的規則。 您可以根據狀況（例如郵件或附件中的某些關鍵字或機密資訊類型的存在性）來建立規則。
+ (EAC) 登入 Exchange 系統管理中心，然後移至 **郵件流程**  >  **規則**。 在 [規則] 頁面上，建立套用 Office 365 郵件加密的規則。 您可以根據狀況（例如郵件或附件中的某些關鍵字或機密資訊類型的存在性）來建立規則。
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>若要使用 PowerShell 中的郵件流程規則建立原則
 
-使用組織中具有全域系統管理員許可權的工作或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 使用 Set-IRMConfiguration 和 New-TransportRule Cmdlet 來建立原則。
+使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並連接至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 使用 Set-IRMConfiguration 和 New-TransportRule Cmdlet 來建立原則。
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>使用 PowerShell 建立的郵件流程規則範例
 
@@ -62,10 +62,10 @@ New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -S
 
 ## <a name="to-prepare-for-this-change"></a>準備進行此變更
 
-您可能會想要更新任何適用的使用者檔和訓練材料，以準備組織中的人員進行此項變更。 請適當地與您的使用者分享這些 Office 365 郵件加密資源：
+您可能會想要更新任何適用的使用者檔和訓練材料，以準備組織中的人員進行此項變更。 視您的使用者分享下列 Office 365 郵件加密資源：
 
-- [在 Outlook 中針對電腦傳送、查看和回復加密的郵件](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Microsoft 365 Essentials 影片： Office 郵件加密](https://youtu.be/CQR0cG_iEUc)
+- [在電腦的 Outlook 中傳送、查看和回復加密郵件](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [Microsoft 365Essentials 影片： Office 郵件加密](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>在審核記錄中查看這些變更
 
@@ -77,4 +77,4 @@ Microsoft 365 會審核此活動，並使其可供系統管理員使用。 作�
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>停用或自訂敏感資訊類型原則
 
-建立 exchange 郵件流程規則之後，您可以在 exchange 系統管理中心中，移至 **郵件流程** 規則，以 [停用或編輯規則](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)  >   (EAC) 並停用 [*加密輸出機密電子郵件 (現成規則)*] 規則。
+建立 Exchange 郵件流程規則之後，您可以在 Exchange 系統管理中心 (EAC) 中，移至 [**郵件流程** 規則] 以 [停用或編輯規則](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)，  >  並停用 [*加密輸出的敏感電子郵件 (現成的規則)*] 規則。

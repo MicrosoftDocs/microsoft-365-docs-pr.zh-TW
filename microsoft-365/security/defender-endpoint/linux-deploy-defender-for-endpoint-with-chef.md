@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/20/2021
 ms.locfileid: "51903925"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>使用 Chef 在 Linux 上部署適用於端點的 Defender
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>使用 Chef 在 Linux 上部署適用於端點的 Microsoft Defender
 
 開始之前：
 
@@ -37,7 +37,7 @@ ms.locfileid: "51903925"
 
 `mkdir mdatp/files`
 
-將可從 Microsoft Defender Security Center 入口網站下載的 Linux Server 上架 zip 檔案，轉移至此新的 files 資料夾。
+將可從 Microsoft Defender 資訊安全中心入口網站下載的 Linux Server 上架 zip 檔案轉接至此新的 files 資料夾。
 
 在 Chef 工作站上，流覽至 [mdatp/食譜] 資料夾。 當產生菜譜時，就會建立此資料夾。 使用您偏好的文字編輯器 (例如 vi 或 nano) ，將下列指示新增至預設的 rb 檔案的結尾：
 -   include_recipe '：： onboard_mdatp '

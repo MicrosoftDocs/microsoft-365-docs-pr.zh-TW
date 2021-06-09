@@ -187,7 +187,7 @@ ms.locfileid: "52770766"
 如需如何使用 REST API 提取提醒的詳細資訊，請參閱 [使用 REST api 的 Pull 警示](pull-alerts-using-rest-api.md)。
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [將入口網站存取權授予 MSSP](grant-mssp-access.md)
 - [存取 MSSP 客戶入口網站](access-mssp-portal.md)
 - [設定警示通知](configure-mssp-notifications.md)

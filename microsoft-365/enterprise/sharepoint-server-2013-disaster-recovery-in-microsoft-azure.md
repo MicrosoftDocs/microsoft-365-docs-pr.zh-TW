@@ -32,9 +32,9 @@ ms.locfileid: "50907429"
  **觀賞 SharePoint Server 2013 嚴重損壞恢復概述影片**
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
   
- 當發生災難時，您的 SharePoint 內部部署環境，您的最高優先順序是讓系統立即重新執行。 當您有備份環境已在 Microsoft Azure 中執行時，具有 SharePoint 的嚴重損壞復原會變得更快且更容易。 這段影片說明 SharePoint 溫容錯移轉環境的主要概念，並補充本文中提供的完整詳細資料。
+ 當發生災難時，您的 SharePoint 內部部署環境，您的最高優先順序是讓系統立即重新執行。 當您已在 Microsoft Azure 中執行備份環境時，具有 SharePoint 的嚴重損壞修復會變得更快速且更容易。 這段影片說明 SharePoint 溫容錯移轉環境的主要概念，並補充本文中提供的完整詳細資料。
   
-請使用本文搭配下列解決方案模型： **在 Microsoft Azure 中 SharePoint 災難修復**。
+請使用本文搭配下列解決方案模型： **Microsoft Azure 中的 SharePoint** 嚴重損壞修復。
   
 [![SharePoint 到 Azure 的災害復原程序](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
@@ -66,7 +66,7 @@ ms.locfileid: "50907429"
   
 本文中的指導方針會說明如何執行預熱的待機環境。 您也可以將它調整為 cold 待命環境，但是您必須遵循其他程式以支援這類環境。 本文不會說明如何執行熱待機環境。
   
-如需有關嚴重損壞修復解決方案的詳細資訊，請參閱 [SharePoint 2013 的高可用性和嚴重損壞修復概念](/SharePoint/administration/high-availability-and-disaster-recovery-concepts) ，然後 [選擇 SharePoint 2013](/SharePoint/administration/plan-for-disaster-recovery)的嚴重損壞修復策略。
+如需有關嚴重損壞修復解決方案的詳細資訊，請參閱[SharePoint 2013 的高可用性和嚴重損壞修復概念](/SharePoint/administration/high-availability-and-disaster-recovery-concepts)，然後[選擇 SharePoint 2013](/SharePoint/administration/plan-for-disaster-recovery)的嚴重損壞修復策略。
   
 ## <a name="solution-description"></a>解決方案說明
 
@@ -84,7 +84,7 @@ ms.locfileid: "50907429"
 
 ![Azure 中 SharePoint 暖待命解決方案的元素](../media/AZarch-AZWarmStndby.png)
   
-使用分散式檔案系統複寫的 SQL Server 記錄傳送 (DFSR) ，用來將資料庫備份和交易記錄檔複製到 Azure 中的復原伺服器陣列： 
+使用分散式檔案系統複寫 SQL Server 記錄傳送 (DFSR) 用來將資料庫備份和交易記錄檔複製到 Azure 中的復原伺服器陣列： 
   
 - DFSR 會將記錄從實際執行環境轉移至復原環境。 在 WAN 案例中，DFSR 比直接將記錄傳送至 Azure 中的次要伺服器更為有效率。
     
@@ -190,7 +190,7 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
   
 容錯移轉至冷待命環境之後，所有虛擬機器都會啟動，而且必須設定實現資料庫伺服器高可用性的方法，例如 SQL Server AlwaysOn 可用性群組。
   
-如果已執行多個儲存群組 (資料庫會分散在多個 SQL Server 高可用性集) 上，必須執行每個儲存群組的主資料庫才能接受與其儲存群組相關聯的記錄檔。
+如果已執行多個儲存群組 (資料庫會分散在多個 SQL Server 高可用性集) 上，必須執行每個儲存群組的主資料庫，以接受與其儲存群組相關聯的記錄檔。
   
 ### <a name="skills-and-experience"></a>技能和經驗
 
@@ -198,19 +198,19 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
   
 - [分散式檔案系統 (DFS) 複寫服務](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
     
-- [使用 SQL Server (WSFC) 的 Windows Server 容錯移轉叢集](/sql/sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server)
+- [Windows伺服器容錯移轉叢集 (WSFC) 與 SQL Server](/sql/sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server)
     
 - [AlwaysOn 可用性群組 (SQL Server)](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server)
     
 - [備份及還原 SQL Server 資料庫](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)
     
-- [SharePoint Server 2013 安裝和伺服器陣列部署](/SharePoint/install/installation-and-configuration-overview)
+- [SharePoint伺服器2013安裝和伺服器陣列部署](/SharePoint/install/installation-and-configuration-overview)
     
 - [Microsoft Azure](/azure/)
     
 最後，我們建議您可以用來自動化與這些技術相關之工作的腳本技能。 您可以使用可用的使用者介面，以完成此方案中所述的所有工作。 不過，手動方法可能非常耗時且容易出錯，並提供不一致的結果。
   
-除了 Windows PowerShell 之外，還有 SQL Server、SharePoint Server 和 Azure 的 Windows PowerShell 文件庫。 別忘了 T-SQL，也有助於縮短設定及維護災難復原環境的時間。
+除了 Windows PowerShell 之外，SQL Server、SharePoint Server 和 Azure 也會 Windows PowerShell 文件庫。 別忘了 T-SQL，也有助於縮短設定及維護災難復原環境的時間。
   
 ## <a name="disaster-recovery-roadmap"></a>嚴重損壞修復藍圖
 
@@ -224,7 +224,7 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
 |:-----|:-----|
 |階段1  <br/> |設計嚴重損壞修復環境。  <br/> |
 |階段2  <br/> |建立 Azure 虛擬網路和 VPN 連線。  <br/> |
-|階段3  <br/> |將 Windows Active Directory 和功能變數名稱服務部署到 Azure 虛擬網路。  <br/> |
+|階段3  <br/> |將 Windows Active Directory 和網功能變數名稱稱服務部署到 Azure 虛擬網路。  <br/> |
 |階段4  <br/> |在 Azure 中部署 SharePoint 復原伺服器陣列。  <br/> |
 |階段5  <br/> |在伺服器陣列之間設定 DFSR。  <br/> |
 |階段6  <br/> |設定恢復伺服器陣列的記錄傳送。  <br/> |
@@ -232,14 +232,14 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>階段1：設計嚴重損壞修復環境
 
-使用 [Microsoft Azure 架構](microsoft-azure-architectures-for-sharepoint-2013.md) 中的指南 SharePoint 2013 來設計災害復原環境，包括 SharePoint 復原伺服器陣列。 您可以使用 Azure Visio 檔案 [中 SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=392554) 嚴重損壞復原解決方案中的圖形，以啟動設計程式。 建議您先設計整個環境，然後再開始執行 Azure 環境中的任何工作。
+使用[SharePoint 2013 Microsoft Azure 架構](microsoft-azure-architectures-for-sharepoint-2013.md)的指導方針來設計災難復原環境，包括 SharePoint 復原伺服器陣列。 您可以使用 Azure 中 SharePoint 嚴重損壞復原[解決方案中](https://go.microsoft.com/fwlink/p/?LinkId=392554)的圖形 Visio 檔案，以啟動設計程式。 建議您先設計整個環境，然後再開始執行 Azure 環境中的任何工作。
   
-除了用於設計虛擬網路、VPN 連線、Active Directory 及 SharePoint 伺服器陣列的 [Microsoft Azure 2013 SharePoint 架構](microsoft-azure-architectures-for-sharepoint-2013.md) 中所提供的指引，請務必將檔案共用角色新增至 Azure 環境。
+除了[Microsoft Azure 架構 2013 SharePoint 用於](microsoft-azure-architectures-for-sharepoint-2013.md)設計虛擬網路、VPN 連線、Active Directory 及 SharePoint 伺服器陣列的指導方針之外，請務必將檔案共用角色新增至 Azure 環境。
   
-若要在嚴重損壞修復解決方案中支援記錄傳送，則會將檔案共用虛擬機器新增至資料庫角色所在的子網。 檔案共用也充當 SQL Server AlwaysOn 可用性群組的第三個節點的節點。 在使用 SQL Server AlwaysOn 可用性群組的標準 SharePoint 伺服器陣列中，這是建議的設定。 
+若要在嚴重損壞修復解決方案中支援記錄傳送，則會將檔案共用虛擬機器新增至資料庫角色所在的子網。 檔案共用也會充當 SQL Server AlwaysOn 可用性群組的節點的第三個節點。 在使用 SQL Server AlwaysOn 可用性群組的標準 SharePoint 伺服器陣列中，這是建議的設定。 
   
 > [!NOTE]
-> 務必要檢查資料庫的必要條件，以加入 SQL Server AlwaysOn 可用性群組。 如需詳細資訊，請參閱 [AlwaysOn 可用性群組的必要條件、限制和建議](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability)。 
+> 務必要檢查資料庫的必要條件，以加入 SQL Server AlwaysOn 可用性群組。 如需詳細資訊，請參閱[AlwaysOn 可用性群組的必要條件、限制和建議](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability)。 
   
 **圖：用於嚴重損壞修復解決方案的檔案伺服器位置**
 
@@ -247,7 +247,7 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
   
 在此圖中，檔案共用虛擬機器會新增至包含資料庫伺服器角色之 Azure 中的相同子網。 請勿將檔案共用虛擬機器新增至具有其他伺服器角色的可用性設定，例如 SQL Server 角色。
   
-如果您擔心記錄的高可用性，請考慮使用 [SQL Server 備份和使用 Azure Blob 儲存服務進行還原](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service)，以採取不同的方式。 這是 Azure 中的新功能，可直接將記錄儲存至 blob 儲存 URL。 此方案不包含使用此功能的指導方針。
+如果您擔心記錄的高可用性，請考慮使用使用[Azure Blob 儲存體服務的 SQL Server 備份與還原](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service)來採取不同的方式。 這是 Azure 中的新功能，可直接將記錄儲存至 blob 儲存 URL。 此方案不包含使用此功能的指導方針。
   
 當您設計復原伺服器陣列時，請記住成功的嚴重損壞修復環境會正確反映您要復原的實際執行伺服器陣列。 復原伺服器陣列的大小並不是復原伺服器陣列設計、部署及測試中最重要的一點。 伺服器陣列規模會根據業務需求，依組織而異。 您可以使用縮小的伺服器陣列進行短暫的中斷，或直到效能與容量需求需要您縮放伺服器陣列。
   
@@ -255,7 +255,7 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
   
 ## <a name="phase-2-create-the-azure-virtual-network-and-vpn-connection"></a>階段2：建立 Azure 虛擬網路和 VPN 連線
 
-[Connect 內部部署網路與 Microsoft Azure 虛擬網路](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md) 顯示如何在 Azure 中規劃及部署虛擬網路，以及如何建立 VPN 連線。 遵循主題中的指導方針完成下列程式：
+[連線內部部署網路至 Microsoft Azure 虛擬網路](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)顯示如何在 Azure 中規劃及部署虛擬網路，以及如何建立 VPN 連線。 遵循主題中的指導方針完成下列程式：
   
 - 規劃虛擬網路的私人 IP 位址空間。
     
@@ -269,7 +269,7 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
     
 ## <a name="phase-3-deploy-active-directory-and-domain-name-services-to-the-azure-virtual-network"></a>階段3：將 Active Directory 和功能變數名稱服務部署到 Azure 虛擬網路
 
-這個階段包括將 Windows Server Active Directory 和 DNS 部署至混合案例中的虛擬網路，如 [Microsoft Azure 架構中的 SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) 所述，如下圖所示。
+此階段包含[SharePoint 2013 Microsoft Azure 架構](microsoft-azure-architectures-for-sharepoint-2013.md)中所述的混合式案例中，部署 Windows Server Active Directory 和 DNS 至虛擬網路，如下圖所示。
   
 **圖：混合式 Active Directory 網域設定**
 
@@ -277,7 +277,7 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
   
 在圖例中，兩部虛擬機器會部署至相同的子網。 這些虛擬機器分別主控兩個角色： Active Directory 和 DNS。
   
-在 Azure 中部署 Active Directory 之前，請閱讀 [在 Azure 虛擬機器上部署 Windows Server Active Directory 的指導方針](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)。 這些指導方針可協助您判斷方案是否需要不同的架構或不同的設定設定。
+在 azure 中部署 Active directory 之前，請閱讀在[azure 虛擬機器上部署 Windows Server Active Directory 的指導方針](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)。 這些指導方針可協助您判斷方案是否需要不同的架構或不同的設定設定。
   
 如需在 Azure 中設定網域控制站的詳細指導，請參閱 [在 Azure 虛擬網路中安裝複本 Active Directory 網域控制站](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)。
   
@@ -285,7 +285,7 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
   
 ## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>階段4：在 Azure 中部署 SharePoint 復原伺服器陣列
 
-根據設計方案，在您的虛擬網路中部署 SharePoint 伺服器陣列。 檢查 azure [基礎結構服務上的 SharePoint 2013](/previous-versions/azure/dn275958(v=azure.100)) ，以在 azure 中部署 SharePoint 角色之前，可能會有所説明。
+根據設計方案，在您的虛擬網路中部署 SharePoint 伺服器陣列。 檢查 azure[基礎結構服務上的 SharePoint 2013](/previous-versions/azure/dn275958(v=azure.100)) ，以在 azure 中部署 SharePoint 角色之前，可能會有所説明。
   
 請考慮我們透過建立概念證明環境所學到的下列做法：
   
@@ -307,7 +307,7 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
     
 ## <a name="phase-5-set-up-dfsr-between-the-farms"></a>階段5：設定伺服器陣列之間的 DFSR
 
-若要使用 DFSR 設定檔複寫，請使用 DNS 管理嵌入式管理單元。 不過，在 DFSR 設定之前，請登入您的內部部署檔案伺服器和 Azure 檔案伺服器，並啟用 Windows 中的服務。
+若要使用 DFSR 設定檔複寫，請使用 DNS 管理嵌入式管理單元。 不過，在 DFSR 設定之前，請登入您的內部部署檔案伺服器和 Azure 檔案伺服器，並在 Windows 中啟用服務。
   
 在 [伺服器管理員] 儀表板中，完成下列步驟：
   
@@ -315,7 +315,7 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
     
 - 啟動 **[新增角色及功能精靈]**。
     
-- 開啟 [檔案 **及儲存體服務** ] 節點。
+- 開啟 [檔案 **和儲存體服務**] 節點。
     
 - 選取 [ **Dfs 命名空間** 及 **dfs** 複寫]。
     
@@ -331,14 +331,14 @@ Azure 中的環境可以是較小版本的實際執行伺服器陣列。 如果�
 |[DFS 複寫：倖存指南](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |包含 DFS 資訊連結的 Wiki  <br/> |
 |[DFS 複寫：常見問題](/previous-versions/windows/it-pro/windows-server-2003/cc773238(v=ws.10)) <br/> |DFS 複寫 TechNet 主題  <br/> |
 |[聖約瑟 Barreto 的博客](/archive/blogs/josebda/) <br/> |Microsoft 的檔案伺服器小組主要程式管理員撰寫的博客  <br/> |
-|[Microsoft 檔案檔案櫃博客的儲存小組](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |有關 Windows Server 中檔服務和儲存功能的博客  <br/> |
+|[Microsoft 檔案檔案櫃博客的儲存體小組](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |關於 Windows Server 中的檔案服務和儲存功能的博客  <br/> |
    
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>階段6：設定對復原伺服器陣列的記錄傳送
 
-「記錄傳送」是在此環境中設定嚴重損壞修復的重要元件。 您可以使用記錄傳送，將資料庫的交易記錄檔從主要資料庫伺服器實例自動傳送至輔助資料庫伺服器實例。 若要設定記錄傳送，請參閱 [在 2013 SharePoint 中設定記錄傳送](/sharepoint/administration/configure-log-shipping)。 
+「記錄傳送」是在此環境中設定嚴重損壞修復的重要元件。 您可以使用記錄傳送，將資料庫的交易記錄檔從主要資料庫伺服器實例自動傳送至輔助資料庫伺服器實例。 若要設定記錄傳送，請參閱[在 2013 SharePoint 中設定記錄傳送](/sharepoint/administration/configure-log-shipping)。 
   
 > [!IMPORTANT]
-> SharePoint Server 中的記錄傳送支援僅限特定資料庫。 如需詳細資訊，請參閱 [SharePoint 資料庫支援的高可用性和嚴重損壞修復選項 (SharePoint 2013) ](/SharePoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)。 
+> SharePoint Server 中的記錄傳送支援僅限特定資料庫。 如需詳細資訊，請參閱[SharePoint 資料庫支援的高可用性和嚴重損壞修復選項 (SharePoint 2013) ](/SharePoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)。 
   
 ## <a name="phase-7-validate-failover-and-recovery"></a>階段7：驗證容錯移轉和復原
 
@@ -401,9 +401,9 @@ restore database WSS_Content with recovery
 ```
 
 > [!IMPORTANT]
-> 當您明確使用 T-SQL 時，請在每個 RESTORE 語句中指定 **WITH NORECOVERY** OR **with RECOVERY** ，以消除多義性，這在撰寫腳本時非常重要。 還原完整和差異備份後，可在 SQL Server Management Studio 中還原交易記錄。 此外，因為已停止記錄傳送，所以內容資料庫處於待機狀態，所以您必須將狀態變更為 [完整存取]。
+> 當您明確使用 T-SQL 時，請在每個 RESTORE 語句中指定 **with NORECOVERY** or **with RECOVERY** ，以消除多義性，這在撰寫腳本時非常重要。 還原完整和差異備份後，可在 SQL Server Management Studio 中還原交易記錄。 此外，因為已停止記錄傳送，所以內容資料庫處於待機狀態，所以您必須將狀態變更為 [完整存取]。
   
-在 SQL Server Management Studio 中 **，以滑鼠** 按右鍵 **WSS_Content** 資料庫，指向 [工作] [  >  **還原**]，然後按一下 [**交易記錄** 檔] (若尚未還原完整備份，) 將無法使用此功能。 如需詳細資訊，請參閱[還原交易記錄備份 (SQL Server) ](/sql/relational-databases/backup-restore/restore-a-transaction-log-backup-sql-server)。
+在 SQL Server Management Studio 中，以滑鼠右鍵按一下 **WSS_Content** 資料庫，指向 [**任務**  >  **還原**]，然後按一下 [**交易記錄** 檔 (]。如果您未還原完整備份，) 將無法使用此功能。 如需詳細資訊，請參閱[還原交易記錄備份 (SQL Server) ](/sql/relational-databases/backup-restore/restore-a-transaction-log-backup-sql-server)。
   
 ### <a name="crawl-the-content-source"></a>編目內容來源
 
@@ -420,7 +420,7 @@ restore database WSS_Content with recovery
 下表顯示如何復原具有記錄傳送資料庫的服務、具有資料庫但不建議使用記錄傳送還原的服務，以及沒有資料庫的服務。
   
 > [!IMPORTANT]
-> 將內部部署 SharePoint 資料庫還原到 Azure 環境中，不會復原您在 Azure 中已手動安裝的任何 SharePoint 服務。 
+> 將內部部署 SharePoint 資料庫還原到 azure 環境中，不會復原您在 azure 中已手動安裝的任何 SharePoint 服務。 
   
 **表：服務應用程式資料庫參考**
 
@@ -448,7 +448,7 @@ restore database WSS_Content with recovery
 
 您必須手動建立 DNS 記錄，以指向您的 SharePoint 伺服器陣列。
   
-在您有多部前端網頁伺服器的情況下，使用 Windows Server 2012 或硬體負載平衡器的網路負載平衡功能，可在伺服器陣列中的 web 前端伺服器間散佈要求。 網路負載平衡也可以將要求散佈至其他伺服器，以協助降低風險，如果其中一部 web 前端伺服器失敗。 
+在大多數前端網頁伺服器的情況下，使用 Windows Server 2012 或硬體負載平衡器中的網路負載平衡功能，可在伺服器陣列中的 web 前端伺服器間散佈要求。 網路負載平衡也可以將要求散佈至其他伺服器，以協助降低風險，如果其中一部 web 前端伺服器失敗。 
   
 一般來說，當您設定網路負載平衡時，您的叢集會被指派單一 IP 位址。 接著，您可以在網路的 DNS 提供者中建立指向該叢集的 DNS 主機記錄。  (針對此專案，我們會在 Azure 中放置一個 DNS 伺服器以進行復原，以防內部部署資料中心失敗。 ) 例如，您可以在 Active Directory 的 DNS 管理員中建立 DNS 記錄，例如，稱為  `https://sharepoint.contoso.com` ，指向您負載平衡叢集的 IP 位址。
   
@@ -460,7 +460,7 @@ restore database WSS_Content with recovery
   
  **範例案例：內部部署資料中心完全遺失。** 這種情況可能是由於自然災害，例如火災或洪水引起。 在此情況下，針對企業，您可能會在另一個區域中裝載次要資料中心，以及您的 Azure 子網具有自己的目錄服務和 DNS。 如先前的嚴重情況，您可以重新導向您的內部和外部 DNS 記錄，以指向 Azure SharePoint 伺服器陣列。 另外請注意，DNS 記錄傳播可能需要一些時間。
   
-如果您使用主機命名型網站集合（如 [主機命名型網站集合架構和部署 (](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)中所建議的） SharePoint 2013) ，則 SharePoint 伺服器陣列中的相同 web 應用程式可能會有多個網站集合，且有唯一的 DNS 名稱 (例如， `https://sales.contoso.com` 及 `https://marketing.contoso.com`) 。 在此情況下，您可以針對每個指向您的叢集 IP 位址的網站集合建立 DNS 記錄。 要求到達您 SharePoint 的 web 前端伺服器後，它們會處理每個要求的路由傳送至適當的網站集合。
+如果您使用主機命名型網站集合（如[主機命名型網站集合架構和部署 (](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)中所建議的） SharePoint 2013) ，則 SharePoint 伺服器陣列中的相同 web 應用程式可能會有多個網站集合，且有唯一的 DNS 名稱 (例如， `https://sales.contoso.com` 及 `https://marketing.contoso.com`) 。 在此情況下，您可以針對每個指向您的叢集 IP 位址的網站集合建立 DNS 記錄。 要求到達您 SharePoint 的 web 前端伺服器後，它們會處理每個要求的路由傳送至適當的網站集合。
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft 概念證明環境
 
@@ -477,7 +477,7 @@ restore database WSS_Content with recovery
 |FS1  <br/> |包含備份共用的檔案伺服器，以及 DFSR 的端點。  <br/> |四個處理器  <br/> 2-12 GB 的 RAM  <br/> 1 x 127 GB 的硬碟  <br/> 1 x 1 TB 的硬碟 (SAN)   <br/> 1 x 750 GB 的硬碟  <br/> |
 |SP-WFE1，SP-WFE2  <br/> |前端網頁伺服器。  <br/> |四個處理器  <br/> 16 GB 的 RAM  <br/> |
 |SP-APP1，SP-1 APP2，SP-1 APP3  <br/> |應用程式伺服器。  <br/> |四個處理器  <br/> 2-16 GB 的 RAM  <br/> |
-|SP-SQL-HA1，SP-SQL-HA2  <br/> |以 SQL Server 2012 設定的資料庫伺服器 AlwaysOn 可用性群組提供高可用性。 這種設定會使用 SP-SQL-HA1 和 SP-SQL-HA2 做為主要和次要複本。  <br/> |四個處理器  <br/> 2-16 GB 的 RAM  <br/> |
+|SP-SQL-HA1，SP-SQL-HA2  <br/> |使用 SQL Server 2012 設定的資料庫伺服器 AlwaysOn 可用性群組，以提供高可用性。 這種設定會使用 SP-SQL-HA1 和 SP-SQL-HA2 做為主要和次要複本。  <br/> |四個處理器  <br/> 2-16 GB 的 RAM  <br/> |
    
 下表說明為內部部署測試環境的前端網頁伺服器和應用程式伺服器建立及設定的 Hyper-V 虛擬機器的磁片磁碟機設定。
   
@@ -485,21 +485,21 @@ restore database WSS_Content with recovery
 
 |**磁碟機號**|**大小**|**目錄名稱**|**Path**|
 |:-----|:-----|:-----|:-----|
-|C  <br/> |80  <br/> |系統磁片磁碟機  <br/> |<DriveLetter>： \\ 程式檔 \\ Microsoft SQL Server\\  <br/> |
-|E  <br/> |80  <br/> |記錄磁片磁碟機 (40 GB)   <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL10_50。 MSSQLSERVER \\ MSSQL \\ 資料  <br/> |
-|F  <br/> |80  <br/> |頁面 (36 GB)   <br/> |<DriveLetter>： \\ 程式檔 \\ Microsoft SQL Server \\ MSSQL \\ 資料  <br/> |
+|C  <br/> |80  <br/> |系統磁片磁碟機  <br/> |<DriveLetter>： \\ 程式檔案 \\ Microsoft SQL Server\\  <br/> |
+|E  <br/> |80  <br/> |記錄磁片磁碟機 (40 GB)   <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL10_50 MSSQLSERVER \\ MSSQL \\ 資料  <br/> |
+|F  <br/> |80  <br/> |頁面 (36 GB)   <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL \\ 資料  <br/> |
    
-下表說明建立並設定為內部部署資料庫伺服器的 Hyper-V 虛擬機器的磁片磁碟機設定。 在 [ **資料庫引擎** 設定] 頁面上，存取 [ **資料目錄** ] 索引標籤，以設定及確認下表所示的設定。
+下表說明建立並設定為內部部署資料庫伺服器的 Hyper-V 虛擬機器的磁片磁碟機設定。 在 [**資料庫引擎** 設定] 頁面上，存取 [**資料目錄**] 索引標籤以設定及確認下表所示的設定。
   
 **表：內部部署測試的資料庫伺服器的虛擬機器磁碟機需求**
 
 |**磁碟機號**|**大小**|**目錄名稱**|**Path**|
 |:-----|:-----|:-----|:-----|
-|C  <br/> |80  <br/> |資料根目錄  <br/> |<DriveLetter>： \\ 程式檔 \\ Microsoft SQL Server\\  <br/> |
-|E  <br/> |500  <br/> |使用者資料庫目錄  <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL10_50。 MSSQLSERVER \\ MSSQL \\ 資料  <br/> |
-|F  <br/> |500  <br/> |使用者資料庫記錄目錄  <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL10_50。 MSSQLSERVER \\ MSSQL \\ 資料  <br/> |
-|G  <br/> |500  <br/> |Temp DB 目錄  <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL10_50。 MSSQLSERVER \\ MSSQL \\ 資料  <br/> |
-|H  <br/> |500  <br/> |Temp DB 記錄目錄  <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL10_50。 MSSQLSERVER \\ MSSQL \\ 資料  <br/> |
+|C  <br/> |80  <br/> |資料根目錄  <br/> |<DriveLetter>： \\ 程式檔案 \\ Microsoft SQL Server\\  <br/> |
+|E  <br/> |500  <br/> |使用者資料庫目錄  <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL10_50 MSSQLSERVER \\ MSSQL \\ 資料  <br/> |
+|F  <br/> |500  <br/> |使用者資料庫記錄目錄  <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL10_50 MSSQLSERVER \\ MSSQL \\ 資料  <br/> |
+|G  <br/> |500  <br/> |Temp DB 目錄  <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL10_50 MSSQLSERVER \\ MSSQL \\ 資料  <br/> |
+|H  <br/> |500  <br/> |Temp DB 記錄目錄  <br/> |<DriveLetter>： \\ Program Files \\ Microsoft SQL Server \\ MSSQL10_50 MSSQLSERVER \\ MSSQL \\ 資料  <br/> |
    
 ### <a name="setting-up-the-test-environment"></a>設定測試環境
 
@@ -525,10 +525,10 @@ restore database WSS_Content with recovery
 
 SharePoint 伺服器陣列是以兩個階段進行部署，以簡化環境穩定化及疑難排解（如有必要）。 在第一個階段中，每個伺服器陣列都是針對拓撲的各層級的伺服器上的最低數目部署，以支援必要的功能。
   
-在建立 SharePoint 2013 伺服器之前，我們會建立安裝了 SQL Server 的資料庫伺服器。 由於這是新的部署，因此我們先建立可用性群組，再部署 SharePoint。 我們會根據 MCS 最佳做法指導方針建立三個群組。 
+在建立 SharePoint 2013 伺服器之前，我們會建立 SQL Server 已安裝的資料庫伺服器。 由於這是新的部署，因此我們先建立可用性群組，再部署 SharePoint。 我們會根據 MCS 最佳做法指導方針建立三個群組。 
   
 > [!NOTE]
-> 建立預留位置資料庫，這樣您就可以在安裝 SharePoint 之前建立可用性群組。 如需詳細資訊，請參閱 [CONFIGURE SQL Server 2012 AlwaysOn Availability Groups for SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
+> 建立預留位置資料庫，這樣您就可以在安裝 SharePoint 之前建立可用性群組。 如需詳細資訊，請參閱[Configure SQL Server 2012 AlwaysOn Availability Groups for SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 我們依下列順序建立伺服器陣列及加入其他伺服器：
   
@@ -540,7 +540,7 @@ SharePoint 伺服器陣列是以兩個階段進行部署，以簡化環境穩定
     
 - 布建 SP-WFE1 和 SP-WFE2 以主控分散式快取。 
     
-我們在命令列上執行 **psconfig.exe** 時使用 _skipRegisterAsDistributedCachehost_ 參數。 如需詳細資訊，請參閱 [Plan for feed And 分散式快取服務 in SharePoint Server 2013](/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service)。 
+我們在命令列上執行 **psconfig.exe** 時使用 _skipRegisterAsDistributedCachehost_ 參數。 如需詳細資訊，請參閱[Plan for feed and 分散式快取服務 in SharePoint Server 2013](/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service)。 
   
 我們在復原環境中重複下列步驟：
   
@@ -606,9 +606,9 @@ SharePoint 伺服器陣列是以兩個階段進行部署，以簡化環境穩定
 
 檢查您的內容網站集合與內容類型中樞之間是否有遺失的服務應用程式關聯。 此外，在 [ **受管理的元 <site collection name> 資料-** 線上內容] 畫面底下，確定已啟用此選項： **此服務應用程式是欄特定字詞集的預設儲存位置。**
   
-### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>Get-ADForest Windows PowerShell 命令會產生錯誤，「字詞 ' ADForest ' 不會被辨識為 Cmdlet、函數、腳本檔案或可運行程式的名稱。
+### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>Get-ADForest Windows PowerShell 命令會產生錯誤，「字詞 ' ADForest ' 不會被辨識為 Cmdlet、function、script file 或可運行程式的名稱。
 
-設定使用者設定檔時，您需要使用 Active Directory 樹系名稱。 在 [新增角色及功能] 嚮導中，確定已在 [ **遠端伺服器管理工具>AD DS 和 AD LDS 工具** ]) 區段中，啟用 [Windows PowerShell 的 Active Directory 模組] (>角色管理工具]。 此外，在使用 **ADForest** 之前，請先執行下列命令，以協助確保載入您的軟體相依性。
+設定使用者設定檔時，您需要使用 Active Directory 樹系名稱。 在 [新增角色及功能] 嚮導中，確定已在 [**遠端伺服器管理工具>ad DS 和 ad LDS 工具**]) 區段中，啟用 Windows PowerShell (的 Active Directory 模組>。 此外，在使用 **ADForest** 之前，請先執行下列命令，以協助確保載入您的軟體相依性。
   
 ```
 Import-module servermanager
@@ -620,7 +620,7 @@ Import-module activedirectory
 
 確定容錯移轉叢集的兩個節點都處於「Up」狀態，而不是「已暫停」或「已停止」。 
   
-### <a name="sql-server-log-shipping-job-fails-with-access-denied-error-trying-to-connect-to-the-file-share"></a>嘗試連線至檔案共用時，SQL Server 記錄傳送工作失敗，存取權被拒絕
+### <a name="sql-server-log-shipping-job-fails-with-access-denied-error-trying-to-connect-to-the-file-share"></a>在嘗試連線至檔案共用時，存取權遭到拒絕時，SQL Server 記錄傳送作業失敗
 
 確定您的 SQL Server 代理程式是在 [網路認證] （而非預設認證）下執行。
   
@@ -630,7 +630,7 @@ Import-module activedirectory
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>在安裝之後，Managed Metadata service (或其他 SharePoint 服務) 無法自動啟動
 
-服務可能需要數分鐘的時間，視效能和目前負載的 SharePoint 伺服器而定。 手動按一下服務的 [ **啟動** ]，並提供足夠的啟動時間，以偶爾重新整理伺服器畫面上的服務來監視其狀態。 若服務保持停止狀態，請啟用 SharePoint 診斷記錄，然後再次嘗試啟動服務，然後檢查記錄是否有錯誤。 如需詳細資訊，請參閱 [Configure SharePoint 2013 中的診斷記錄](/sharepoint/administration/configure-diagnostic-logging)
+服務可能需要數分鐘的時間，視效能和目前負載的 SharePoint 伺服器而定。 手動按一下服務的 [ **啟動** ]，並提供足夠的啟動時間，以偶爾重新整理伺服器畫面上的服務來監視其狀態。 若服務保持停止狀態，請啟用 SharePoint 診斷記錄，然後再次嘗試啟動服務，然後檢查記錄是否有錯誤。 如需詳細資訊，請參閱[Configure SharePoint 2013 中的診斷記錄](/sharepoint/administration/configure-diagnostic-logging)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>將 DNS 變更為 Azure 容錯移轉環境之後，用戶端瀏覽器會繼續使用舊的 SharePoint 網站的 IP 位址。
 
@@ -644,7 +644,7 @@ Ipconfig /flushdns
 
 [SharePoint 資料庫支援的高可用性和災害復原選項](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
-[設定 SharePoint 2013 的 SQL Server 2012 AlwaysOn 可用性群組](/SharePoint/administration/configure-an-alwayson-availability-group)
+[為 SharePoint 2013 設定 SQL Server 2012 AlwaysOn 可用性群組](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 ## <a name="see-also"></a>另請參閱
 

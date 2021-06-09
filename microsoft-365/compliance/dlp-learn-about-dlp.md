@@ -89,7 +89,7 @@ DLP 原則可以封鎖禁止的活動，例如透過電子郵件不適當的敏�
 - SharePoint Online 網站
 - OneDrive 帳戶
 - Teams 聊天和頻道訊息
-- Microsoft 雲端 App 安全性
+- Microsoft Cloud App Security
 - Windows 10 裝置
 - 內部部署存放庫
 

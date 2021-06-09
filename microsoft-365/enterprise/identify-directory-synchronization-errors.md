@@ -38,13 +38,13 @@ ms.locfileid: "50907501"
 
 若要在 Microsoft 365 系統管理中心中查看任何錯誤：
   
-1. 使用全域系統管理員帳戶登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com) 。 
+1. 使用全域系統管理員帳戶登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。 
     
 2. 在 **首頁** 上，您會看到 [ **使用者管理** 卡]。 
     
-    ![Microsoft 365 系統管理中心中的使用者管理卡](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![Microsoft 365 系統管理中心的使用者管理卡](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-3. 在卡片上，選擇 [ **AZURE AD Connect]** 底下的 [**同步處理錯誤**]，以查看 [**目錄同步處理錯誤**] 頁面上的錯誤。   
+3. 在卡片上，選擇 [ **Azure AD 連線** 下的 [**同步處理錯誤**]，以查看 [**目錄同步處理錯誤**] 頁面上的錯誤。   
     
     ![「目錄同步處理錯誤」頁面的範例](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
 
@@ -52,4 +52,4 @@ ms.locfileid: "50907501"
 
    ![目錄同步處理錯誤詳細資料的範例](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
-查看之後，請參閱 [修正 Microsoft 365 目錄同步處理的問題](fix-problems-with-directory-synchronization.md) ，修正任何已識別的問題。
+查看之後，請參閱[修正 Microsoft 365 的目錄同步處理問題](fix-problems-with-directory-synchronization.md)，以修正任何已識別的問題。

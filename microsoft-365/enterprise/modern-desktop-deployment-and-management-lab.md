@@ -1,5 +1,5 @@
 ---
-title: Windows 10 和 Office 365 部署實驗室套件
+title: Windows 10 和 Office 365 部署的 Lab Kit
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -22,7 +22,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52770670"
 ---
-# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 和 Office 365 部署實驗室套件
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 和 Office 365 部署的 Lab Kit
 
 Windows 10 和 Office 365 部署實驗室套件的設計目的是協助您規劃、測試及驗證執行 Windows 10 企業版和 Microsoft 365 Apps 企業版的桌面部署和管理。 套件封面中的實驗室使用 Microsoft Endpoint Configuration Manager、桌面分析、Office 自訂工具、OneDrive、Windows Autopilot 等等。
 

@@ -220,7 +220,7 @@ WPR 是 Windows 評估與部署套件 (Windows ADK) 的一部分，而且可以�
     >[!TIP]
     >將資料收集保留在五分鐘內。 在收集大量資料後，有兩到三分鐘是很好的範圍。
 
-12. 選取 [儲存]。
+12. 選取 ****[儲存]。
 
     ![選取 [儲存]](images/wpr-10.png)
 
@@ -229,7 +229,7 @@ WPR 是 Windows 評估與部署套件 (Windows ADK) 的一部分，而且可以�
     ![填滿詳細資料](images/wpr-12.png)
 
     1. 選取檔案名 **：** 以決定儲存追蹤檔案的位置。 根據預設，1.is 會儲存至 `%user%\Documents\WPR Files\` 。
-    1. 選取 [儲存]。
+    1. 選取 ****[儲存]。
 
 14. 正在合併追蹤，請稍候。
 
@@ -277,7 +277,7 @@ WPR 是 Windows 評估與部署套件 (Windows ADK) 的一部分，而且可以�
 
 9. 將您提交的檔案和資料夾都包含在 Microsoft 支援檔中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [收集 Microsoft Defender 防毒軟體診斷資料](collect-diagnostic-data.md)
 - [設定及驗證 Microsoft Defender 防毒軟體掃描的排除專案](configure-exclusions-microsoft-defender-antivirus.md)
