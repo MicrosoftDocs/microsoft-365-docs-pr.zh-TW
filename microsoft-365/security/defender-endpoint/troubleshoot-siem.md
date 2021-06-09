@@ -53,7 +53,7 @@ ms.locfileid: "52311985"
 
 5. 選取 [ **憑證 & 機密** ] 區段，按一下 [新用戶端密碼]，然後提供描述並指定有效期限。
 
-6. 按一下 [儲存]。 會顯示機碼值。
+6. 按一下 **[儲存]**。 會顯示機碼值。
 
 7. 複製此值，並將其儲存在安全的位置。
 
@@ -74,7 +74,7 @@ ms.locfileid: "52311985"
    - 英國： `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
    - 美國：  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` 。
  
-6. 按一下 [儲存]。
+6. 按一下 **[儲存]**。
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>啟用 SIEM 連接器應用程式時發生錯誤
 如果您嘗試啟用 SIEM 連接器應用程式時遇到錯誤，請檢查瀏覽器的快顯封鎖器設定。 當您啟用功能時，它可能會封鎖所開啟的新視窗。

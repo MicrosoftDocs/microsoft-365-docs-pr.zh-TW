@@ -1,7 +1,7 @@
 ---
 title: 支援的地區
-description: Microsoft 受管理的桌面支援的區域
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+description: Microsoft 受管理的電腦支援的地區
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -19,19 +19,19 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/30/2021
 ms.locfileid: "51445307"
 ---
-# <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft 受管理的桌面支援區域
+# <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft 受管理的電腦支援的地區
 
-本文提供您可以使用 Microsoft 受管理的桌面及支援位置之地區的詳細資訊。 如需 Microsoft Managed Desktop 針對使用者經驗所支援之語言的詳細資訊，請參閱 [為使用者當地語系化裝置](../get-started/localization.md)。
+本文提供可供您使用 Microsoft 受管理的電腦及支援位置之地區的詳細資訊。 如需 Microsoft 受管理的電腦針對使用者經驗所支援之語言的詳細資訊，請參閱[為使用者當地語系化裝置](../get-started/localization.md)。
 
-您仍然可以使用這些地區以外的受管理裝置，而不中斷 Microsoft 受管理的桌面服務。 例如，以英國為基礎的員工可以在亞洲、歐洲或南美旅行時，安全地在其受管理的裝置上運作，並接收更新。
+您仍然可以使用這些地區以外的受管理裝置，而不會中斷 Microsoft 受管理的電腦服務。 例如，以英國為基礎的員工可以在亞洲、歐洲或南美旅行時，安全地在其受管理的裝置上運作，並接收更新。
 
-如需 Microsoft 受管理的桌面針對使用者和系統管理員經驗所支援語言的詳細資訊，請參閱 [當地語系化使用者體驗](../get-started/localization.md)。
+如需 Microsoft 受管理的電腦使用者和系統管理員經驗所支援語言的詳細資訊，請參閱[當地語系化使用者體驗](../get-started/localization.md)。
 
-如需使用 Microsoft 受管理的桌面進行使用者支援的詳細資訊，請參閱 [Microsoft Managed desktop 的支援](support.md)。
+如需使用 Microsoft 受管理的電腦使用者支援的詳細資訊，請參閱[support for Microsoft 受管理的電腦](support.md)。
 
 ## <a name="availability-of-the-service"></a>服務的可用性
 
-下列國家/地區的組織可以訂閱 Microsoft 受管理的桌面：
+下列國家/地區的組織可以訂閱 Microsoft 受管理的電腦：
 
 - 美國
 - 加拿大 (除外（魁北克）) 

@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何利用 Microsoft 365 增強您的安全性，以保護您的活動或公司。
+description: 瞭解如何使用 Microsoft 365 提高安全性，以保護您的活動或公司。
 ms.openlocfilehash: d2486f7160bef57a91d76fba756ff75ba319b8fa
 ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT

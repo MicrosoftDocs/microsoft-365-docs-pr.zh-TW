@@ -77,6 +77,6 @@ Microsoft 365 包含許多保護措施，以防範攻擊，但您可以採取一
 
 深入瞭解操作方法：
 
-- [使用 Office 來保護您的檔案和通訊](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)。
+- [使用 Office 來保護您的檔案及通訊安全](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)。
 - [在工作時保持安全和私人](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)。
   

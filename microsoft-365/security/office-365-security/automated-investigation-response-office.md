@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 的自動化調查和回應運作方式
+title: Microsoft Defender Office 365 中的自動化調查和回應運作方式
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,7 +16,7 @@ ms.collection:
 - m365initiative-defender-office365
 keywords: 自動化的事件回應、調查、修正及威脅防護
 ms.date: 01/29/2021
-description: 請參閱 Office 365 的 Microsoft Defender 中的自動化調查和回應功能的運作方式
+description: 請參閱 Microsoft Defender for Office 365 中的自動化調查和回應功能的運作方式
 ms.custom:
 - air
 - seo-marvel-mar2020
@@ -29,7 +29,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52269633"
 ---
-# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應運作方式
+# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender Office 365 中的自動化調查和回應運作方式
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "52269633"
 - [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 在某些情況下，安全性作業小組可能感覺到所觸發的警示數量所淹沒。 Microsoft Defender for Office 365 中 (AIR) 功能的自動化調查和回應可提供協助。
+在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 在某些情況下，安全性作業小組可能感覺到所觸發的警示數量所淹沒。 Office 365 中的 (AIR) 功能，可協助您進行自動化調查和回應。
 
 AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括自動調查處理程式，以回應目前存在的已知威脅。 適當的修正動作等待核准，讓您的安全性作業小組能夠回應偵測到的威脅。
 
@@ -54,7 +54,7 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 在根調查階段中，會評估電子郵件的各個層面。 這些方面包括：
 
 - 決定可能的威脅類型;
-- 誰送出;
+- 神秘送出;
 - 電子郵件傳送來源的 (傳送基礎結構) ;
 - 電子郵件的其他實例是否已傳遞或封鎖;
 - 我們分析員的評估;
@@ -68,8 +68,8 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 - 類似的電子郵件會透過電子郵件聚簇搜尋加以識別。
 - 此信號是與其他平臺（例如 [Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共用。
 - 決定是否任何使用者已透過可疑電子郵件訊息中的任何惡意連結進行按一下。
-- 在 Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) 和 ([Microsoft Defender for Office 365](defender-for-office-365.md)) 中進行檢查，以查看使用者是否已報告任何其他類似的郵件。
-- 會執行檢查以查看使用者是否遭到破壞。 這種檢查會利用跨 Office 365、 [Microsoft Cloud App Security](/cloud-app-security)和 [Azure Active Directory](/azure/active-directory)的信號，以關聯任何相關的使用者活動異常。
+- Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) 和 (的[Microsoft Defender Office 365](defender-for-office-365.md)) ，以查看使用者是否報告任何其他類似的郵件。
+- 會執行檢查以查看使用者是否遭到破壞。 這種檢查會利用每個信號的 Office 365、 [Microsoft Cloud App Security](/cloud-app-security)及[Azure Active Directory](/azure/active-directory)，以關聯任何相關的使用者活動異常。
 
 在搜尋階段中，會將風險和威脅指派給各種搜尋步驟。
 
@@ -89,11 +89,11 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 
 類似于警示所觸發的行動行動方式，從瀏覽器中的視圖觸發的自動調查包括根調查、識別和關聯威脅的步驟，以及緩解這些威脅的建議動作。
 
-## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>範例：使用 Office 365 管理活動 API，安全性運作小組與其 SIEM 整合 AIR
+## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>範例：安全操作小組使用 Office 365 管理活動 API，將 AIR 與其 SIEM 整合
 
-Microsoft Defender for Office 365 中的 AIR 功能包括 [報告 & 詳細資料](air-view-investigation-results.md) ，安全性作業小組可用以監視和處理威脅。 不過，您也可以整合 AIR 功能與其他解決方案。 範例包括安全性資訊和事件管理 (SIEM) 系統、案例管理系統或自訂報告解決方案。 您可以使用 [Office 365 管理活動 API](/office/office-365-management-api/office-365-management-activity-api-reference)來完成這些類型的整合。
+Microsoft Defender for Office 365 中的 AIR 功能包括可供安全運作小組用來監視和處理威脅的[報告 & 細節](air-view-investigation-results.md)。 不過，您也可以整合 AIR 功能與其他解決方案。 範例包括安全性資訊和事件管理 (SIEM) 系統、案例管理系統或自訂報告解決方案。 您可以使用[Office 365 管理活動 API](/office/office-365-management-api/office-365-management-activity-api-reference)來完成這些類型的整合。
 
-例如，在最近，組織會設定安全性作業小組的方式，以查看已由 AIR 處理的使用者報告網路釣魚警報。 其解決方案會將相關的警示與組織的 SIEM 伺服器及其案例管理系統整合在一起。 此解決方案大幅減少誤報的數目，讓他們的安全性運作小組能夠專注于實際威脅的時間和工作。 若要深入瞭解此自訂解決方案，請參閱 [技術社區博客：使用 Microsoft Defender For Office 365 和 O365 管理 API，改善 SOC 的效能](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
+例如，在最近，組織會設定安全性作業小組的方式，以查看已由 AIR 處理的使用者報告網路釣魚警報。 其解決方案會將相關的警示與組織的 SIEM 伺服器及其案例管理系統整合在一起。 此解決方案大幅減少誤報的數目，讓他們的安全性運作小組能夠專注于實際威脅的時間和工作。 若要深入瞭解此自訂解決方案，請參閱[Tech Community 博客：使用 Microsoft Defender 取得 Office 365 和 O365 管理 API，以提升 SOC 的效能](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
 
 ## <a name="next-steps"></a>後續步驟
 

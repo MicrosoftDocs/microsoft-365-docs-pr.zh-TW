@@ -1,5 +1,5 @@
 ---
-title: 將自訂及必要問題新增至預約頁面
+title: 向預約頁面新增自訂和必需的問題
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -16,7 +16,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "47419435"
 ---
-# <a name="add-custom-and-required-questions-to-the-booking-page"></a>將自訂及必要問題新增至預約頁面
+# <a name="add-custom-and-required-questions-to-the-booking-page"></a>向預約頁面新增自訂和必需的問題
 
 預約可讓您建立在客戶預約約會時，向客戶提出的問題。 它也可讓您選擇所需的問題。
 
@@ -31,7 +31,7 @@ ms.locfileid: "47419435"
 
 ## <a name="add-custom-questions-to-your-services"></a>將自訂問題新增至您的服務
 
-1. 登入 Microsoft 365，然後移至 [ **預定**]。
+1. 登入 Microsoft 365，然後移至 [**預定**]。
 
 1. 移至 [ **服務** ]，然後編輯現有的服務或 **新增服務**。
 
@@ -57,12 +57,12 @@ ms.locfileid: "47419435"
 
    ![針對多項服務出現的問題影像](../media/bookings-questions-services.png)
 
-如果您的預約頁面已發佈，您不需要執行任何其他動作。 客戶會在下次與您進行圖書時看到問題。 若尚未發佈您的預約頁面，請從網頁上的 Outlook 移至 [ **預約] 頁面** ，然後選取 [ **儲存併發布**]。
+如果您的預約頁面已發佈，您不需要執行任何其他動作。 客戶會在下次與您進行圖書時看到問題。 若尚未發佈您的預約頁面，請移至 [**預約] 頁面** Outlook 網頁上的]，然後選取 [**儲存併發布**]。
 
 > [!WARNING]
 > 您也可以從主要清單中刪除問題。 不過，如果您刪除問題，它會從每個服務中刪除。 建議您選取該問題，以確保您不會影響其他任何服務。 如果問題不是以反白顯示的矩形環繞，您可以看到該問題已停用。
 
-## <a name="customer-experience"></a>客戶經驗
+## <a name="customer-experience"></a>客戶體驗
 
 當您的客戶與您預約預約預約時，基本客戶資訊問題會顯示在 [ **新增詳細資料** ] 區段中。 您新增的任何自訂問題都會在 [ **提供其他資訊** ] 區段中。
 
@@ -70,6 +70,6 @@ ms.locfileid: "47419435"
 
 ## <a name="staff-experience"></a>人員經驗
 
-當您的客戶與您預約預約預約時，您的員工將會在預約行事曆上看到問題及客戶的答案。 若要查看，請移至 [ **預定**行事 \> **曆** ]，然後開啟約會。
+當您的客戶與您預約預約預約時，您的員工將會在預約行事曆上看到問題及客戶的答案。 若要查看，請移至 [ **預定** 行事 \> **曆** ]，然後開啟約會。
 
 ![啟用問題時所看到之人員的影像](../media/bookings-questions-staff.png)

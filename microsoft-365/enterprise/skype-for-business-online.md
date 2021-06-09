@@ -21,7 +21,7 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: 以系統管理員的身分瞭解如何設定商務用 Skype Online 的部分，包括您的網路、會議和 IM，以及使用者的外部存取。
+description: 以系統管理員的身分瞭解如何設定商務用 Skype 線上的部分，包括您的網路、會議和 IM，以及使用者的外部存取。
 ms.openlocfilehash: 1e3807199fc83d642399b29870f2cac477d2ec75
 ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ms.locfileid: "47415703"
     
 ## <a name="improve-call-and-video-quality"></a>改善電話與視訊品質
 
-您的使用者遇到通話中斷的問題嗎？ 音訊、視訊及應用程式共用的品質不佳嗎？ 商務用 Skype 深受端對端網路連線的品質影響。 為獲得最佳使用體驗，請務必確保您的公司網路和商務用 Skype Online 之間有高品質的連線。 若要深入瞭解，請參閱 **[調整商務用 Skype Online 效能](tune-skype-for-business-online-performance.md)**。 
+您的使用者遇到通話中斷的問題嗎？ 音訊、視訊及應用程式共用的品質不佳嗎？ 商務用 Skype 深受端對端網路連線的品質影響。 為獲得最佳使用體驗，請務必確保您的公司網路和商務用 Skype Online 之間有高品質的連線。 若要深入瞭解，請參閱 **[微調商務用 Skype 線上效能](tune-skype-for-business-online-performance.md)**。 
   
 另請參閱：
   
@@ -67,11 +67,11 @@ ms.locfileid: "47415703"
 
 - [在商務用 Skype 中設定個人選項](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
     
-- [需要協助登錄商務用 Skype 嗎？](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
+- [需要協助登入商務用 Skype 嗎？](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
 - [影片：登入和登出商務用 Skype](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
-- [在商務用 Skype 中設定音訊裝置選項](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
+- [設定商務用 Skype 中的音訊裝置選項](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
 - [加入商務用 Skype 會議](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     
@@ -89,6 +89,6 @@ ms.locfileid: "47415703"
     
 - [召開商務用 Skype 電話會議](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **如需更多適用于使用者的文章，請參閱 [商務用 Skype 説明](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)。**
+ **如需更多適用于使用者的文章，請參閱 [商務用 Skype](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)說明。**
   
 

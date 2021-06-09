@@ -22,7 +22,7 @@ ms.locfileid: "47419387"
 
 ## <a name="access-bookings-for-the-first-time"></a>第一次存取預訂
 
-如果您的 IT 系統管理員已授與您的預約存取權，您可以透過 Office online 存取該應用程式。
+如果您的 IT 系統管理員已授與您的預約存取權，您可以透過 Office 線上存取該應用程式。
 
 您第一次使用預約時 [，您會](https://outlook.office.com/bookings/onboarding) 建立行事曆並設定您的業務。
 
@@ -35,10 +35,10 @@ ms.locfileid: "47419387"
 您現在已準備好為您的組織設定預定。 您可以從應用程式啟動器或從 office.com 取得此 [連結](https://outlook.office.com/bookings/onboarding)的 [預定] 頁面。 請使用下列主題繼續設定您的預約功能。
 
 - [輸入您的商務資訊](enter-business-information.md)
-- [將員工新增至預定](add-staff.md)
-- [定義您的服務選項](define-service-offerings.md)
+- [向 Bookings 新增員工](add-staff.md)
+- [定義您的服務方案](define-service-offerings.md)
 - [排程公休日、休息時間和休假時間](schedule-closures-time-off-vacation.md)
-- [設定排程原則](set-scheduling-policies.md)
+- [設定您的排程原則](set-scheduling-policies.md)
 - [設定員工工作時數](employee-hours.md)
-- [自訂併發布您的預約頁面](customize-booking-page.md)
+- [定制並發佈您的預約頁面](customize-booking-page.md)
 - [建立手動預約](create-a-manual-booking.md)

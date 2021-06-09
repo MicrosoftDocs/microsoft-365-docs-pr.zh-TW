@@ -30,7 +30,7 @@ ms.locfileid: "52314300"
 
 如果您的組織擁有支援高級審計的訂閱和使用者授權，請執行下列步驟，以在高級審計中設定及使用其他功能。
 
-![設定高級審計的工作流程](../media/AdvancedAuditWorkflow.png)
+![設定進階稽核的工作流程](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step1-set-up-advanced-audit-for-users"></a>步驟1：設定使用者的高級審計
 
@@ -70,7 +70,7 @@ Get-Mailbox <user identity> | FL MailboxLocations
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>步驟3：設定審核保留原則
 
-在其他可保留一年的 Exchange、SharePoint 和 Azure AD 審計記錄的預設原則中，您可以建立額外的審計記錄保留原則，以符合組織的安全性作業、IT 及合規性小組的需求。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
+除了保留 Exchange、SharePoint 和 Azure AD 稽核記錄一年的預設原則之外，您還可以建立其他稽核記錄保留原則以符合組織的安全性作業、IT 和合規性小組的需求。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
 
 ## <a name="step-4-search-for-crucial-events"></a>步驟4：搜尋重要事件
 

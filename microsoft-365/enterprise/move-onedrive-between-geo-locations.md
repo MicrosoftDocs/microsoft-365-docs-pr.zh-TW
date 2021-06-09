@@ -24,9 +24,9 @@ ms.locfileid: "46688231"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>將 OneDrive 網站移至不同的地理位置 
 
-使用 OneDrive 地理位置移動，您可以將使用者的 OneDrive 移至不同的地理位置。OneDrive 地理位置移動由 SharePoint Online 系統管理員或 Microsoft 365 全域管理員執行。在您開始 OneDrive 地理位置移動之前，請務必通知使用者其 OneDrive 已移動，並建議使用者在移動期間關閉所有檔案。 (如果使用者在移動期間使用 Office 用戶端開啟檔，則在移動完成時，將需要將檔儲存到新的位置。 ) 如有需要，可以排程未來時間的移動。
+使用 OneDrive 地理位置移動，您可以將使用者的 OneDrive 移至不同的地理位置。 OneDrive 地理位置移動由 SharePoint 線上管理員或 Microsoft 365 全域管理員執行。 在您開始 OneDrive 地理位置移動之前，請務必通知使用者其 OneDrive 已移動，並建議使用者在移動期間關閉所有檔案。  (如果使用者在移動期間使用 Office 用戶端開啟了檔，則在移動完成時，將需要將檔儲存到新的位置。 ) 如果需要，可以為未來的時間排程移動。
 
-OneDrive 服務使用 Azure Blob 儲存來儲存內容。與使用者的 OneDrive 相關聯的儲存區，將會從來源移至目的地地理位置，40在目的地 OneDrive 可供使用者使用。當目的地 OneDrive 可用時，就會立即還原使用者 OneDrive 的存取權。
+OneDrive 服務使用 Azure Blob 儲存體來儲存內容。 與使用者 OneDrive 相關聯的儲存體 blob 將會從來源移至目的地地理位置 OneDrive 的40天內，以供使用者使用。 當目的地 OneDrive 可用時，就會立即還原使用者 OneDrive 的存取權。
 
 在 OneDrive 異地移動期間 (大約 2-6 小時)，使用者的 OneDrive 會設為唯讀狀態。使用者仍可以透過 OneDrive 同步處理用戶端或 SharePoint Online 中的 OneDrive 網站存取檔案。在完成 OneDrive 異地移動後，若使用者瀏覽至 Microsoft 365 應用程式啟動器中的 OneDrive，將會自動連線到位於目的地理位置的 OneDrive。同步處理用戶端將自動開始新位置的同步處理。
 
@@ -54,13 +54,13 @@ OneDrive 服務使用 Azure Blob 儲存來儲存內容。與使用者的 OneDriv
 
 ## <a name="moving-a-onedrive-site"></a>移動 OneDrive 網站
 
-若要執行 OneDrive 地理移動，租使用者管理員必須先將使用者的慣用資料位置 (PDL) 設定為適當的地理位置。設定 PDL 後，請至少等候24小時，以供 PDL 更新在開始 OneDrive 地理位置移動之前于整個地理位置進行同步處理。
+若要執行 OneDrive 地理移動，租使用者管理員必須先將使用者的慣用資料位置 (PDL) 設定為適當的地理位置。 設定 pdl 後，請至少等候24小時，以供 PDL 更新在開始 OneDrive 地理位置移動之前于整個地理位置進行同步處理。
 
 使用 geo 移動指令程式時，請使用下列語法，在使用者目前 OneDrive 地理位置連接至 SPO 服務：
 
 `Connect-SPOService -url https://<tenantName>-admin.sharepoint.com`
 
-例如：若要移動使用者 ' Matt@contosoenergy.onmicrosoft.com ' 的 OneDrive，請在使用者的 OneDrive 位於 EUR 地理位置時，連接到 EUR SharePoint 系統管理中心：
+例如：若要移動使用者 ' Matt@contosoenergy.onmicrosoft.com ' 的 OneDrive，請在使用者的 OneDrive 位於 eur 地理位置時，連接到 eur SharePoint 系統管理中心：
 
 `Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
@@ -92,7 +92,7 @@ OneDrive 服務使用 Azure Blob 儲存來儲存內容。與使用者的 OneDriv
 
 -   _UserPrincipalName_ – OneDrive 即將移動的使用者 UPN。
 
--   _DestinationDataLocation_ –需要移動 OneDrive 地理位置。這應該與使用者的慣用資料位置相同。
+-   _DestinationDataLocation_ – Geo-Location OneDrive 需要移動的位置。 這應該與使用者的慣用資料位置相同。
 
 比方說，若要將 matt@contosoenergy.onmicrosoft.com 的 OneDrive 從 EUR 移動到 AUS，請執行：
 
@@ -163,7 +163,7 @@ OneDrive 服務使用 Azure Blob 儲存來儲存內容。與使用者的 OneDriv
 
 ### <a name="onedrive-for-business"></a>商務用 OneDrive
 
-進行移動時，使用者的 OneDrive 會設定為唯讀。移動完成之後，當使用者流覽 OneDrive Microsoft 365 應用程式啟動器或網頁瀏覽器時，會將他們的 OneDrive 導向新的地理位置。
+進行移動時，使用者的 OneDrive 會設定為唯讀。 移動完成之後，當使用者流覽 OneDrive Microsoft 365 應用程式啟動器或網頁瀏覽器時，會將他們的 OneDrive 導向至新的地理位置。
 
 ### <a name="permissions-on-onedrive-content"></a>OneDrive 內容的權限
 
@@ -199,8 +199,8 @@ OneDrive 異地移動完成後，使用者可以在 Teams 應用程式上存取�
 
 ### <a name="existing-followed-groups-and-sites"></a>現有的已追蹤群組和網站
 
-已遵循的網站和群組會顯示在使用者的 OneDrive，不論其地理位置為何。位於其他地理位置的網站和群組會在個別的索引標籤中開啟。
+已遵循的網站和群組會顯示在使用者的 OneDrive，不論其地理位置為何。 位於其他地理位置的網站和群組會在個別的索引標籤中開啟。
 
-### <a name="delve-geo-url-updates"></a>Delve 地理 URL 更新
+### <a name="delve-geo-url-updates"></a>Delve地理 URL 更新
 
-只有在將使用者的 OneDrive 移至新的地理位置之後，使用者才會傳送至其 PDL 的 Delve 地理對應的 Delve 地理位置。
+只有在將使用者的 OneDrive 移至新的地理位置之後，才會將使用者傳送至其 PDL 的 Delve 地理位置。

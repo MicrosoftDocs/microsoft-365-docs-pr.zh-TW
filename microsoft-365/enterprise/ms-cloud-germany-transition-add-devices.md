@@ -17,7 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時，服務的其他裝置資訊) 新德文 datacenter 區域中的 Office 365 服務。
+description: 摘要：從 microsoft cloud 德國移至服務時，服務的其他裝置資訊 (Microsoft cloud Deutschland) 以 Office 365 新德文 datacenter 區域中的服務。
 ms.openlocfilehash: 21188372f03af394fe1c0e227c1adeabbad02a85
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ms.locfileid: "50928153"
 
 **如何在遷移後還原我的裝置狀態？**
 
-對於以 Azure AD 註冊的混合式 Azure AD （已加入及公司所擁有的 Windows 裝置），管理員將能夠透過遠端觸發的工作流程（會取消註冊舊的裝置狀態）來管理這些裝置的遷移。
+對於向 azure ad 註冊的混合 Azure AD-已加入和公司所擁有的 Windows 裝置，管理員將可以透過遠端觸發的工作流程（會取消註冊舊的裝置狀態）來管理這些裝置的遷移。
   
 對於所有其他裝置，包括在 Azure AD 中註冊的個人 Windows 裝置，使用者必須手動執行這些步驟。 若為已加入 Azure 的裝置，使用者必須具有本機系統管理員帳戶，才可取消註冊，然後重新登錄其裝置。
 
@@ -63,11 +63,11 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 ## <a name="hybrid-azure-ad-join"></a>混合式 Azure AD Join
 
-### <a name="windows-down-level"></a>Windows 低層級
+### <a name="windows-down-level"></a>Windows 下級
 
-_Windows 下層裝置_ 是目前執行舊版 Windows 的 windows 裝置 (例如 windows 8.1 或 windows 7) ，或執行2019和2016之前的 windows Server 版本。 如果這些裝置在註冊之前已註冊，您必須撤銷註冊並重新登錄這些裝置。 
+_Windows 下層裝置_ 是目前執行舊版 Windows (的 Windows 裝置例如 Windows 8.1 或 Windows 7) ，或執行 Windows 2019 和2016之前的伺服器版本。 如果這些裝置在註冊之前已註冊，您必須撤銷註冊並重新登錄這些裝置。 
 
-若要判斷 Windows 下層裝置先前是否加入 Azure AD，請在裝置上使用下列命令：
+若要判斷 Windows 的低級裝置先前是否加入 Azure AD，請在裝置上使用下列命令：
 
 ```console
 %programfiles%\Microsoft Workplace Join\autoworkplace /status
@@ -94,11 +94,11 @@ Private key state : Okay
 "%programfiles%\Microsoft Workplace Join\autoworkplace /leave"
 ```
 
-在 Windows 下層裝置上，針對每個網域使用者登入，上述命令只需執行一次。 這個命令應該在網域使用者登入的內容中執行。 
+在 Windows 下層裝置上，每個網域使用者登入都只需要執行上述命令一次。 這個命令應該在網域使用者登入的內容中執行。 
 
 在使用者後續登入時，您必須採取足夠的護理，才可執行此命令。 當先前的命令執行時，它會為登入的使用者清除本機混合式 Azure AD –加入的電腦的已加入狀態。 而且，如果電腦仍設定為在租使用者中加入混合式 Azure AD，它會在使用者重新登入時嘗試加入。
 
-### <a name="windows-current"></a>Windows Current
+### <a name="windows-current"></a>Windows當前
 
 #### <a name="unjoin"></a>脫離
 
@@ -128,7 +128,7 @@ Private key state : Okay
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-上述命令只需要在 Windows 裝置的系統管理內容中執行一次。
+上述命令只需要在 Windows 裝置上的系統管理內容中執行一次。
 
 #### <a name="hybrid-ad-joinre-registration"></a>混合式 AD Join\Re-Registration
 
@@ -137,7 +137,7 @@ Private key state : Okay
 
 ## <a name="azure-ad-join"></a>Azure AD 加入
 
-**重要：** 在商務用遷移後，將會啟用 Intune 服務主體，這表示 Azure AD Device Registration 的啟用。 如果您在遷移之前封鎖 Azure AD 裝置註冊，您必須使用 PowerShell 停用 Intune service 主體，以使用 Azure AD 入口網站停用 Azure AD 裝置註冊。 您可以在 [Graph] 模組的 [Azure Active Directory PowerShell 中使用此命令來停用 Intune 服務主體。
+**重要：** 在商務用遷移後，將會啟用 Intune 服務主體，這表示 Azure AD Device Registration 的啟用。 如果您在遷移之前封鎖 Azure AD 裝置註冊，您必須使用 PowerShell 停用 Intune service 主體，以使用 Azure AD 入口網站停用 Azure AD 裝置註冊。 您可以在 Graph 模組的 Azure Active Directory PowerShell 中，使用此命令來停用 Intune 服務主體。
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
@@ -173,16 +173,16 @@ Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者�
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-上述命令只需要在 Windows 裝置的系統管理內容中執行一次。 
+上述命令只需要在 Windows 裝置上的系統管理內容中執行一次。 
 
 ### <a name="azure-ad-joinre-registration"></a>Azure AD 加入/重新註冊
 
-使用者可以從 [Windows 設定] 將裝置加入 Azure AD： **設定 > 帳戶 > 存取工作或學校 >** 連線。
+使用者可以從 Windows 設定將裝置加入 Azure AD：**設定 > 帳戶 > 存取單位或學校 > 連線**。
  
 
 ## <a name="azure-ad-registered-company-owned"></a>Azure AD 已登記 (公司擁有) 
 
-若要判斷 Windows 10 裝置是否已登錄 Azure AD，請在裝置上執行下列命令：
+若要判斷 Windows 10 裝置是否已登錄 Azure AD –已註冊，請在裝置上執行下列命令：
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
@@ -209,7 +209,7 @@ Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者�
 
 若要停用 Web 帳戶管理員在 Azure AD 中註冊裝置的提示，請新增此登錄值： 
 
-- 位置： HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin
+- 位置： HKLM\SOFTWARE\Policies\Microsoft\ Windows \WorkplaceJoin
 - 類型： DWORD (32 位) 
 - 名稱： BlockAADWorkplaceJoin
 - 值資料：1
@@ -218,63 +218,63 @@ Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者�
 
 ## <a name="android"></a>Android
 
-若為 Android，使用者將需要撤銷註冊並重新登錄其裝置。 這可以透過 Microsoft 驗證器應用程式或公司入口網站應用程式來完成。 
+若為 Android，使用者將需要撤銷註冊並重新登錄其裝置。 這可以透過 Microsoft Authenticator 應用程式或公司入口網站應用程式來完成。 
 
-- 使用者可以從 Microsoft 驗證器應用程式移至 [ **設定] > Device Registration**。 從這裡開始，使用者可以撤銷註冊並重新登錄其裝置。
+- 在 Microsoft Authenticator 應用程式中，使用者可以前往 **設定 > 裝置註冊**。 從這裡開始，使用者可以撤銷註冊並重新登錄其裝置。
  
-- 在公司入口網站中，使用者可以移至 [ **裝置** ] 索引標籤並移除裝置。 之後，使用公司入口網站重新註冊裝置。
+- 從公司入口網站中，使用者可以移至 [**裝置**] 索引標籤並移除裝置。 之後，使用公司入口網站重新註冊裝置。
  
 - 使用者也可以從 [帳戶設定] 頁面移除帳戶，然後重新加入工作帳戶，以取消登錄和重新註冊。
 
-若要使用 Microsoft 驗證器應用程式，在 Android 上撤銷登錄並重新註冊裝置：
+若要使用 Microsoft Authenticator 應用程式在 Android 上撤銷登錄並重新登錄，請執行下列動作：
 
-1.  開啟 Microsoft 驗證器應用程式，然後移至 [ **設定**]。
+1.  開啟 Microsoft Authenticator 應用程式，然後移至 **設定**。
 2.  選取 **Device registration**。
 3.  選取 [ **登出**] 以取消登錄裝置。
 4.  若為 **Device registration**，請輸入您的電子郵件地址，然後選取 [ **註冊**]，以重新註冊裝置。
 
-若要使用 [Android 設定] 頁面撤銷註冊並重新登錄 Android 裝置，請執行下列動作：
+若要使用 Android 設定頁面來撤銷註冊並重新登錄 Android 裝置，請執行下列動作：
 
-1.  開啟 [ **裝置設定** ]，然後移至 [ **帳戶**]。
+1.  開啟 [**裝置設定**]，然後移至 [**帳戶**]。
 2.  選取您要重新註冊的工作帳戶，然後選取 [ **移除帳戶**]。
 3.  移除帳戶後，請從 [ **帳戶** ] 頁面中，選取 [ **新增帳戶 > 工作帳戶**]。
 4.  在 [ **Workplace Join**] 中輸入您的電子郵件地址，然後選取 [ **加入** ] 以完成裝置的註冊。
 
-若要從公司入口網站上登出並重新登錄 Android 上的裝置：
+若要從公司入口網站登出並重新登錄 Android 上的裝置：
 
-1.  啟動公司入口網站，然後移至 [ **裝置** ] 索引標籤。
+1.  啟動公司入口網站，然後移至 [**裝置**] 索引標籤。
 2.  選取裝置以查看裝置詳細資料。
 3.  從省略號 (三點) 功能表中，選取 [ **移除裝置**]，並在對話方塊中確認以完成移除。
-4.  您現在應該已登出公司入口網站應用程式。 選取 [登入] 以重新 **登錄** 裝置。
+4.  您現在應該已登出公司入口網站的應用程式。 選取 [登入] 以重新 **登錄** 裝置。
 
-如需此工作負載遷移階段所需之任何動作的詳細資訊，或對管理或使用的影響，請參閱其他 Azure AD information for the Azure Active Directory (Azure AD) 中的相關資訊，以 [供從 Microsoft Cloud Deutschland 進行遷移](ms-cloud-germany-transition-azure-ad.md)。
+如需此工作負載遷移階段所需之任何動作的詳細資訊，或對管理或使用的影響，請參閱 azure ad) 中 Azure Active Directory (Azure ad 的相關資訊，以[供從 Microsoft Cloud Deutschland 進行遷移的其他 azure ad 資訊中取得](ms-cloud-germany-transition-azure-ad.md)。
 
 ## <a name="ios"></a>iOS
 
-在 iOS 裝置上，使用者將需要從 Microsoft 驗證者手動移除任何快取的帳戶、登出裝置，然後登出裝置上的任何原生應用程式。
+在 iOS 裝置上，使用者將需要從 Microsoft Authenticator 手動移除任何快取的帳戶、登出裝置，然後登出裝置上的任何原生應用程式。
 
-### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>步驟1：若存在，請從 Microsoft 驗證器應用程式中移除帳戶
+### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>步驟1：若存在，請從 Microsoft Authenticator 應用程式中移除帳戶。
 
-1. 點擊 Microsoft 驗證應用程式中的帳戶。
-2. 按一下右上角的 [ **設定** ] 圖示。 如果您看不到 [ **設定** ] 圖示，表示您可能並未使用最新版的 Microsoft 驗證者。
+1. 在 Microsoft Authenticator 應用程式中點擊帳戶。
+2. 按一下右上角的 **設定** 圖示。 如果您沒有看到 **設定** 圖示，則可能是您使用的是 Microsoft Authenticator 的最新版本。
 3. 點擊 [ **移除帳戶** ] 按鈕。
 4. 點擊 [ **此裝置上的所有應用程式**]。
  
-### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>步驟2：從 Microsoft 驗證器應用程式登出裝置
+### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>步驟2：從 Microsoft Authenticator 應用程式中登出裝置
 
 1. 在右上角點擊功能表圖示。
-2. 點擊 [ **設定** ]，然後按 **裝置註冊**。
+2. 按 **設定**，然後按 **裝置註冊**。
 4. 如果顯示您的帳戶，請點擊 [ **登出裝置** ]，然後在對話方塊中 **繼續** 。 之後，您就不會看到任何帳戶。
  
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>步驟3：必要時登出個別應用程式
 
-使用者可以移至個別應用程式，例如 Outlook、小組和 OneDrive，以及從這些應用程式中移除帳戶。
+使用者可以移至個別應用程式，例如 Outlook、Teams 及 OneDrive，以及從這些應用程式中移除帳戶。
 
 ## <a name="more-information"></a>其他資訊
 
 開始：
 
-- [從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務](ms-cloud-germany-transition.md)
+- [從 Microsoft Cloud Deutschland 遷移至新德國資料中心區域的 Office 365 服務](ms-cloud-germany-transition.md)
 - [Microsoft Cloud Deutschland 移轉協助](https://aka.ms/germanymigrateassist)
 - [如何選擇加入移轉](ms-cloud-germany-migration-opt-in.md)
 - [遷移期間的客戶體驗](ms-cloud-germany-transition-experience.md)

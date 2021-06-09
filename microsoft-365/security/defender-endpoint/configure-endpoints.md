@@ -1,7 +1,7 @@
 ---
 title: Windows 10 裝置的上線工具及方法
-description: 板載 Windows 10 裝置，讓他們可以將感應器資料傳送至 Microsoft Defender for Endpoint 感應器
-keywords: 板載 Windows 10 裝置、群組原則、端點 configuration manager、行動裝置管理、本機腳本、gp、sccm、mdm、intune
+description: 板載 Windows 10 裝置，使其可將感應器資料傳送至 Microsoft Defender for Endpoint 感應器
+keywords: 板載 Windows 10 裝置，群組原則，端點設定管理員，行動裝置管理，本機腳本，gp，sccm，mdm，intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -30,8 +30,8 @@ ms.locfileid: "51892826"
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft 365 端點資料遺失防護 (DLP) ](/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Microsoft 365 有問必答風險管理](/microsoft-365/compliance/insider-risk-management)
+- [Microsoft 365端點資料遺失防護 (DLP) ](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365有問必答風險管理](/microsoft-365/compliance/insider-risk-management)
 
 >想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -49,7 +49,7 @@ ms.locfileid: "51892826"
 :---|:---
 [使用群組原則的板載 Windows 10 裝置](configure-endpoints-gp.md) | 使用群組原則在裝置上部署設定套件。
 [使用 Microsoft Endpoint Configuration Manager 的板載 Windows 裝置](configure-endpoints-sccm.md) | 您可以使用 Microsoft 端點管理員 (目前的分支) 版本1606或 Microsoft 端點管理員 (目前的分支) 版本1602或更早版本，以在裝置上部署設定套件。
-[使用行動裝置管理工具上線 Windows 10 電腦](configure-endpoints-mdm.md) | 使用行動裝置管理工具或 Microsoft Intune 在裝置上部署設定套件。
+[使用行動裝置管理工具上線 Windows 10 電腦](configure-endpoints-mdm.md) | 使用行動裝置管理工具或 Microsoft Intune，在裝置上部署設定套件。
 [使用本機指令碼上線 Windows 10 裝置](configure-endpoints-script.md) | 瞭解如何使用本機腳本，在端點上部署設定套件。
 [上線非持續 Virtual Desktop Infrastructure (VDI) 裝置](configure-endpoints-vdi.md) | 瞭解如何使用 configuration 套件來設定 VDI 裝置。
 

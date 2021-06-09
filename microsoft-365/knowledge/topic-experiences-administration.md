@@ -19,14 +19,14 @@ ms.locfileid: "50107719"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>變更 Microsoft Viva 主題中主題中心的名稱
 
-您可以在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)變更主題中心的名稱。 您必須是全域系統管理員或 SharePoint 管理員，才可執行這些工作。
+您可以在[Microsoft 365 系統管理中心](https://admin.microsoft.com)變更主題中心的名稱。 您必須是全域系統管理員或 SharePoint 管理員，才可執行這些工作。
 
 ## <a name="to-access-topics-management-settings"></a>若要存取主題管理設定：
 
-1. 在 Microsoft 365 系統管理中心中，按一下 [ **設定**]，然後按一下 [ **組織設定**]。
+1. 在 Microsoft 365 系統管理中心，按一下 [**設定**，然後按一下 [**組織設定**]。
 2. 在 [ **服務** ] 索引標籤上，按一下 [ **主題經驗**]。
 
-    ![將人員連線至知識](../media/admin-org-knowledge-options-completed.png) 
+    ![連線人員的知識](../media/admin-org-knowledge-options-completed.png) 
 
 3. 選取 [ **主題中心** ] 索引標籤。請參閱下列各節以取得每個設定的相關資訊。
 

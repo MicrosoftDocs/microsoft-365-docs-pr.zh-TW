@@ -1,5 +1,5 @@
 ---
-title: 系統管理中心的 Microsoft 365 報告-電子郵件活動
+title: Microsoft 365系統管理中心內的報告-電子郵件活動
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
-description: 瞭解如何使用 Microsoft 365 系統管理中心的 [Microsoft 365 報告] 儀表板來取得電子郵件活動報告。
+description: 瞭解如何使用 Microsoft 365 系統管理中心的「Microsoft 365 報告」儀表板來取得電子郵件活動報告。
 ms.openlocfilehash: 65ef74ccd05aa4b55fc127985c03a490bb109b4b
 ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: MT
@@ -26,20 +26,20 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/21/2021
 ms.locfileid: "49921930"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>系統管理中心的 Microsoft 365 報告-電子郵件活動
+# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Microsoft 365系統管理中心內的報告-電子郵件活動
 
-Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。
+[Microsoft 365 **報告**] 儀表板會顯示您組織中產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。
   
 例如，您可以從 [報告] 頁面取得組織內電子郵件流量的高層級檢視，然後深入電子郵件活動小工具，以了解組織內的趨勢和每個使用者層級的電子郵件活動詳細資料。
   
 > [!NOTE]
-> 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。 
+> 您必須是全域系統管理員、全域讀取者或報告讀取者 Microsoft 365 或 Exchange、SharePoint、Teams 服務、Teams 通訊或商務用 Skype 管理員查看報告。 
 
 ## <a name="how-to-get-to-the-email-activity-report"></a>如何取得電子郵件活動報告
 
 1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。
 2. 選取 [**電子郵件活動**] 底下的 [**流覽**]。 
-3. 從 [ **電子郵件活動** ] 下拉式清單中，選取 [ **Exchange** \> **電子郵件活動**]。
+3. 在 [**電子郵件活動**] 下拉式清單中，選取 [ **Exchange** \> **電子郵件活動**]。
   
 ## <a name="interpret-the-email-activity-report"></a>解讀電子郵件活動報告
 
@@ -57,7 +57,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |6.  <br/> |您可以選取圖例中的專案，以篩選您在圖表上看到的數列。  <br/> |
 |7.  <br/> | 表格顯示每個使用者層級的電子郵件活動明細。 這會顯示所有已受指派 Exchange 產品的使用者以及他們的電子郵件活動。 <br/> <br/> [使用者 **名稱**] 是使用者的電子郵件地址。  <br/> [**顯示名稱**] 是使用者的完整名稱。  <br/> [**已刪除**] 代表目前狀態為已刪除的使用者，但在報告的部分報告期間內為作用中狀態。  <br/> 「**刪除日期**」是指使用者已遭刪除的日期。  <br/> [**上次活動日期**] 是指使用者上次執行讀取或傳送電子郵件活動的時間。  <br/> [**傳送動作**] 是針對使用者記錄的電子郵件傳送動作次數。  <br/> 「**接收動作**」是為使用者記錄的電子郵件接收動作次數。  <br/> 「**讀取動作**」是為使用者記錄的電子郵件讀取動作次數。  <br/> 「**會議建立動作**」是為使用者記錄會議要求傳送動作的次數。  <br/> 「**會議互動動作**」是為使用者記錄會議邀請接受、暫定、謝絕或取消動作的次數。  <br/> 「已 **指派產品**」是指派給此使用者的產品。  <br/>  如果貴組織的原則防止您檢視可識別之使用者資訊的報告，您可以變更所有這類報告的隱私權設定。 請參閱 [Microsoft 365 系統管理中心的活動報告中](activity-reports.md)的 [**我要如何隱藏使用者層級詳細資料？** ] 區段。  <br/> |
 |8.  <br/> |選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![電子郵件活動報告-選擇欄](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)|
-|9.  <br/> |您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。  <br/> |
+|9.  <br/> |您也可以選取 [**匯出**] 連結，將報表資料匯出至 Excel .csv 檔案中。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。  <br/> |
 |||
    
 > [!NOTE]

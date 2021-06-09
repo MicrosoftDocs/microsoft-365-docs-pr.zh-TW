@@ -1,5 +1,5 @@
 ---
-title: 設定排程原則
+title: 設定您的排程原則
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -16,7 +16,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "47419365"
 ---
-# <a name="set-your-scheduling-policies"></a>設定排程原則
+# <a name="set-your-scheduling-policies"></a>設定您的排程原則
 
 並非所有約會都相同。 有些只需要幾分鐘的時間，有些人可能需要數小時或更多時間。 在 Microsoft 預約中，[預約] 頁面是您為您的公司設定排程原則的位置。 排程原則包括約會的期限、可接受的潛在客戶和取消時間，以及自動的預約變更通知。 您可以針對 [服務] 頁面中的每個服務新增額外的自訂，以及只套用到該服務的其他期間設定和原則。
 
@@ -35,7 +35,7 @@ ms.locfileid: "47419365"
 
 ## <a name="set-your-policies"></a>設定您的原則
 
-1. 在 [Microsoft 365] 中，選取應用程式啟動器，然後選取 [預定]。
+1. 在 Microsoft 365 中，選取應用程式啟動器，然後選取 [預定]。
 
 1. 在功能窗格中，選取 [ **預約] 頁面**。
 

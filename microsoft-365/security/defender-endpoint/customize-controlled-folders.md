@@ -169,7 +169,7 @@ Microsoft Defender for Endpoint 憑證和檔指示器可允許簽署的可執行
 
 如需在觸發規則時自訂通知並封鎖應用程式或檔案的詳細資訊，請參閱 [在 Microsoft Defender For Endpoint 中設定警示通知](configure-email-notifications.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用受控資料夾存取權來保護重要資料夾](controlled-folders.md)
 - [啟用受控資料夾存取權](enable-controlled-folders.md)

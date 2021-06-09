@@ -88,6 +88,6 @@ ms.locfileid: "52657773"
     >[!NOTE]
     >在 Excel 檔案中，您現在有兩個連結可供使用：**在 Microsoft Defender for Identity** 和 **view in Microsoft 365 Defender** 中查看。 每個連結將會帶您前往相關入口網站，並提供該警示的相關資訊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [調查 Microsoft 365 Defender 中的警示](../defender/investigate-alerts.md)

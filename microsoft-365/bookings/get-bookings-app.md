@@ -26,7 +26,7 @@ ms.locfileid: "47419386"
 
    ![應用程式啟動器影像](../media/bookings-all-apps-launcher.png)
 
-2. 到達 [Office 首頁](https://office.com) ，然後從應用程式 **啟動器選取 [** 預約]。
+2. 前往 [Office 首頁](https://office.com)，然後從應用程式啟動器選取 [**預定**]。
 
 3. 選取 [ **立即取得**]。
 

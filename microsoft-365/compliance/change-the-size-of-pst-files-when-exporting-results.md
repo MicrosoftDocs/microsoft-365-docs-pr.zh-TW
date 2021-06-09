@@ -24,10 +24,10 @@ ms.locfileid: "43942916"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>在匯出 eDiscovery 搜尋結果時變更 PST 檔案的大小
 
-當您使用 eDiscovery 匯出工具從不同的 Microsoft eDiscovery 工具匯出 eDiscovery 搜尋的電子郵件結果時，可以匯出的 PST 檔案的預設大小為 10 GB。 如果您想要變更此預設大小，您可以在用來匯出搜尋結果的電腦上編輯 Windows 登錄。 執行這項作業的一個原因是，您可以在卸除式媒體（例如 DVD、光碟或 USB 磁片磁碟機）上容納 PST 檔案。 
+當您使用 eDiscovery 匯出工具從不同的 Microsoft eDiscovery 工具匯出 eDiscovery 搜尋的電子郵件結果時，可以匯出的 PST 檔案的預設大小為 10 GB。 如果您想要變更此預設大小，您可以在用來匯出搜尋結果的電腦上，編輯 Windows 的註冊表。 執行這項作業的一個原因是，您可以在卸除式媒體（例如 DVD、光碟或 USB 磁片磁碟機）上容納 PST 檔案。 
   
 > [!NOTE]
-> 在 [安全性 & 規範中心] 中使用內容搜尋工具，在 Exchange Online 中 In-Place eDiscovery，以及 SharePoint Online 中的 eDiscovery 中心，可使用 eDiscovery 匯出工具匯出搜尋結果。
+> 在 [安全性 & 規範中心] 中使用「內容搜尋」工具、In-Place ediscovery Exchange Online，以及 SharePoint Online 中的 ediscovery 中心，可使用 ediscovery 匯出工具匯出搜尋結果。
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>當您匯出 eDiscovery 搜尋結果時，建立登錄設定以變更 PST 檔案的大小
 
@@ -43,18 +43,18 @@ ms.locfileid: "43942916"
     "PstSizeLimitInBytes"="1073741824"
     ```
 
-    在上面的範例中， `PstSizeLimitInBytes`此值設為1073741824位元組或大約 1 GB。 以下是`PstSizeLimitInBytes`設定的一些其他範例值。 
+    在上面的範例中，此  `PstSizeLimitInBytes` 值設為1073741824位元組或大約 1 GB。 以下是設定的一些其他範例值  `PstSizeLimitInBytes` 。 
     
-    |**大小（以 GB 為單位）**|**大小（位元組）**|
+    |**大小，以 GB 為單位 ()**|**大小（位元組）**|
     |:-----|:-----|
-    |0.7 GB （700 MB）  <br/> |751619277  <br/> |
+    |0.7 GB (700 MB)   <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
    
-3. 當您`PstSizeLimitInBytes`匯出搜尋結果時，將值變更為所需的 PST 檔案大小上限，然後儲存檔案。 
+3. `PstSizeLimitInBytes`當您匯出搜尋結果時，將值變更為所需的 PST 檔案大小上限，然後儲存檔案。 
     
-4. 在 [Windows Explorer] 中，按一下或按兩下您在先前步驟中建立的 .reg 檔案。
+4. 在 Windows Explorer 中，按一下或按兩下您在先前步驟中建立的 .reg 檔案。
     
 5. 在 [使用者存取控制] 視窗中，按一下 **[是]** 讓登錄編輯程式進行變更。 
     
@@ -62,7 +62,7 @@ ms.locfileid: "43942916"
     
     登錄編輯器會顯示一則訊息，指出已成功將設定新增至註冊表。
     
-7. 您可以重複步驟 3-6，以變更 [登錄] `PstSizeLimitInBytes`設定的值。 
+7. 您可以重複步驟 3-6，以變更 [登錄]  `PstSizeLimitInBytes` 設定的值。 
   
 ## <a name="frequently-asked-questions-about-changing-the-default-size-of-pst-files-when-you-export-ediscovery-search-results"></a>當您匯出 eDiscovery 搜尋結果時，變更 PST 檔案預設大小的常見問題
 

@@ -1,6 +1,6 @@
 ---
-title: 定義 Microsoft Defender 防毒軟體如何更新行動裝置
-description: 管理行動裝置（例如膝上機）應如何使用 Microsoft Defender 防病毒防護更新進行更新。
+title: 定義移動裝置的更新方式 Microsoft Defender 防毒軟體
+description: 管理行動裝置（例如膝上機）應如何更新 Microsoft Defender 防毒軟體保護更新。
 keywords: 更新，保護，排程更新，電池，行動裝置，膝上型電腦，筆記本，自願加入，microsoft update，wsus，覆寫
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -45,7 +45,7 @@ ms.locfileid: "52269537"
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>在未使用 WSUS 連線的情況下，在行動電腦上加入宣告 Microsoft 更新
 
-當行動裝置未連接到公司網路或沒有 WSUS 連線時，您可以使用 Microsoft 更新，將在執行 Microsoft Defender 防病毒的行動裝置上的安全性智慧保持在最新狀態。 
+當行動裝置未連接到公司網路或沒有 WSUS 連線時，您可以使用 Microsoft Update，將其上的安全性智慧保持在最新狀態的移動 Microsoft Defender 防毒軟體裝置上。 
 
 這表示即使您已將 WSUS 設定為覆寫 Microsoft Update，也可以透過 Microsoft Update) 將保護更新傳送至裝置 (。
 
@@ -53,7 +53,7 @@ ms.locfileid: "52269537"
 
 - 使用群組原則變更設定。
 - 使用 VBScript 建立腳本，然後在網路中的每一部電腦上執行。
-- 透過 [ **設定** ] 功能表，手動選擇在您的網路上的每一部電腦。
+- 透過 **設定** 功能表，在網路上的每一部電腦上手動選擇。
 
 ### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>使用群組原則加入宣告 Microsoft 更新
 
@@ -63,7 +63,7 @@ ms.locfileid: "52269537"
 
 3. 選取 [ **原則** ]，然後選取 [ **管理範本**]。
 
-4. 將樹狀目錄展開為 **Windows 元件**  >  **Microsoft Defender 防病毒**  >  **簽名更新**。
+4. 展開樹狀目錄， **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **簽名更新**。
 
 5. 將 [ **允許 Microsoft 更新的安全性智慧更新** ] 設定為 [ **啟用**]，然後選取  **[確定]**。
 
@@ -76,15 +76,15 @@ ms.locfileid: "52269537"
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>手動加入宣告 Microsoft Update
 
-1. 在您想要加入的電腦上，在 [**更新 & 的安全性** 設定中開啟 **Windows update** 。
+1. 在您想要加入的電腦上，在 [**更新 & 安全性** 設定] 中開啟 **Windows 更新**。
 
 2. 選取 [ **高級** 選項]。
 
-3. 選取 [ **在我更新 Windows 時，提供其他 Microsoft 產品的更新**] 核取方塊。
+3. 選取在 **更新 Windows 時，提供其他 Microsoft 產品更新** 的核取方塊。
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>在使用電池電源時防止安全性智慧更新
 
-您可以將 Microsoft Defender 防病毒設定為僅在電腦連線至有線電源時下載保護更新。 
+您可以設定 Microsoft Defender 防毒軟體，只在電腦連線至有線電源時，才下載保護更新。 
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>使用群組原則防止在電池電源上進行安全性情報更新
 
@@ -94,11 +94,11 @@ ms.locfileid: "52269537"
 
 3.  選取 [ **原則** ]，然後選取 [ **管理範本**]。
 
-4.  將樹狀目錄展開為 **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **簽名更新**，然後設定 **允許使用電池供電時，啟用安全智慧更新**。  然後選取 **[確定]**。 
+4.  展開樹狀目錄，以 **Windows 元件**  >  **Microsoft Defender 防毒軟體** 簽章  >  **更新**，然後設定 **在使用電池供電時**（停用）為 **停用** 時，允許安全性智慧更新。 然後選取 **[確定]**。 
 
 當電腦使用電池電源時，此動作可防止下載保護更新。
 
 ## <a name="related-articles"></a>相關文章
 
-- [管理 Microsoft Defender 防病毒更新並套用基準](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [在 Windows 10 中更新及管理 Microsoft Defender 防毒程式](deploy-manage-report-microsoft-defender-antivirus.md)
+- [管理 Microsoft Defender 防毒軟體更新及套用基準](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [更新和管理 Windows 10 中的 Microsoft Defender 防毒軟體](deploy-manage-report-microsoft-defender-antivirus.md)
