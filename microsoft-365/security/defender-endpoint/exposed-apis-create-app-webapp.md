@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4742a32fd899f41d4e7772c52415891cdd8895bf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2d78b7ea31c45220735a8579d728f9c0f7bda181
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769506"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842107"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>建立應用程式以存取 Microsoft Defender for Endpoint （不含使用者）
 
@@ -39,7 +39,7 @@ ms.locfileid: "52769506"
 
 此頁面說明如何建立應用程式，以在沒有使用者的情況下，取得端點的程式設計存取權。 如果您需要代表使用者以程式設計方式存取 Defender for Endpoint，請參閱 [Get access with user coNtext](exposed-apis-create-app-nativeapp.md)。 如果您不確定需要哪一種存取權，請參閱 [入門](apis-intro.md)。
 
-Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 會協助您根據使用 Defender for Endpoint 功能自動化工作流程與創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 會協助您根據使用 Defender for Endpoint 功能自動化工作流程與創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般來講，您必須採取下列步驟，才能使用 APIs：
 - 建立 Azure Active Directory (Azure AD) 應用程式。
@@ -116,7 +116,7 @@ Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料
 
 ## <a name="get-an-access-token"></a>取得存取權杖
 
-如需 Azure AD 標記的詳細資訊，請參閱 [AZURE ad 教學](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
+如需 Azure AD 標記的詳細資訊，請參閱 [AZURE ad 教學](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
 
 ### <a name="use-powershell"></a>使用 PowerShell
 
@@ -222,6 +222,6 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
     // Do something useful with the response
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [受支援的適用於端點的 Microsoft Defender API](exposed-apis-list.md)
 - [代表使用者存取 Microsoft Defender for Endpoint](exposed-apis-create-app-nativeapp.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 36095f14ad3ed71c6a8d4707522c08c07ea738c4
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 13bcbc74fcb9c540c45a6eec7e7e506b6943986a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572726"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841786"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -148,8 +148,8 @@ ms.locfileid: "52572726"
   ```bash
   - name: Add Microsoft APT key
     apt_key:
-      keyserver: https://packages.microsoft.com/
-      id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
+      url: https://packages.microsoft.com/keys/microsoft.asc
+      state: present
     when: ansible_os_family == "Debian"
 
   - name: Add Microsoft apt repository for MDATP
@@ -157,7 +157,7 @@ ms.locfileid: "52572726"
       repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
       update_cache: yes
       state: present
-      filename: microsoft-[channel].list
+      filename: microsoft-[channel]
     when: ansible_os_family == "Debian"
 
   - name: Add Microsoft DNF/YUM key
@@ -283,5 +283,5 @@ ms.locfileid: "52572726"
 
 - [管理 apt-套件](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [調查代理程式健康狀況問題](health-status.md)

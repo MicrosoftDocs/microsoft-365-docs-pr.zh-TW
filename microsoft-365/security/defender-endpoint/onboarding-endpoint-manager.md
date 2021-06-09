@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft 端點管理員上線
-description: 瞭解如何使用 Microsoft 端點管理員對 Microsoft Defender for Endpoint 進行板載
+description: 瞭解如何使用 Microsoft 端點管理員對端點的 Microsoft Defender 進行上架
 keywords: 上架、設定、部署、部署、端點管理員、Microsoft Defender for Endpoint、集合建立、端點偵測回應、下一代保護、攻擊面減少、Microsoft 端點管理員
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f3442528f6d9239219f0b4638f75758a055717de
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935254"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842635"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft 端點管理員上線
 
@@ -46,18 +46,18 @@ ms.locfileid: "51935254"
 當 Defender for Endpoint 支援各種端點和工具的上架時，本文並未涵蓋這類功能。 如需使用其他支援部署工具及方法的一般上架資訊，請參閱上 [架一覽](onboarding.md)。
 
 
-[Microsoft 端點管理員](https://docs.microsoft.com/mem/endpoint-manager-overview) 是一種可統一數項服務的解決方案平臺。 包含用於雲端式裝置管理的 [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) 。
+[Microsoft 端點管理員](/mem/endpoint-manager-overview)是一種可統一數種服務的方案平臺。 它包含雲端式裝置管理的[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 。
 
 
 本主題指導使用者：
 - 步驟1：將裝置加入服務，方法是在 Microsoft 端點管理員中建立群組 (MEM) 指派設定
-- 步驟2：使用 Microsoft 端點管理員設定用於端點功能的 Defender
+- 步驟2：使用 Microsoft 端點管理員設定用 Defender 做為端點功能
 
 此上架指引會逐步引導您使用 Microsoft 端點管理員時，您必須採取下列基本步驟：
 
 -   [識別目標裝置或使用者](#identify-target-devices-or-users)
 
-    -   建立 Azure Active Directory 群組 (使用者或裝置) 
+    -    (使用者或裝置建立 Azure Active Directory 組) 
 
 -   [建立設定檔](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
 
@@ -76,10 +76,10 @@ ms.locfileid: "51935254"
 
 -   [安全中心](https://securitycenter.windows.com/)
 
--   [Intune 安全性基準](https://docs.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
+-   [Intune 安全性基準](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 如需 Microsoft 端點管理員的詳細資訊，請參閱下列資源：
-- [Microsoft 端點管理員頁面](https://docs.microsoft.com/mem/)
+- [Microsoft 端點管理員頁面](/mem/)
 - [Intune 和 ConfigMgr 的結合的博客文章](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [有關 MEM 的簡介影片](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -89,7 +89,7 @@ ms.locfileid: "51935254"
 
 >[!NOTE]
 >Intune 使用 Azure Active Directory (Azure AD) 群組來管理裝置和使用者。 作為 Intune 系統管理員，您可以設定群組以符合您的組織需求。<br>
-如需詳細資訊，請參閱 [新增群組以組織使用者和裝置](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)。
+如需詳細資訊，請參閱 [新增群組以組織使用者和裝置](/mem/intune/fundamentals/groups-add)。
 
 ### <a name="create-a-group"></a>建立群組
 
@@ -139,7 +139,7 @@ ms.locfileid: "51935254"
     > [!div class="mx-imgBorder"]
     > ![Microsoft 端點管理員 portal4 的影像](images/58dcd48811147feb4ddc17212b7fe840.png)
 
-3.  在 [平臺] 底下 **，選取 [Windows 10 和更新版本]，並 > 建立設定檔端點偵測和回應**。
+3.  在 [平臺] 底下，**選取 [Windows 10 和更新版本]。 > 建立設定檔端點偵測和回應**。
 
 4.  輸入名稱和描述，然後選取  **[下一步]**。
 
@@ -152,7 +152,7 @@ ms.locfileid: "51935254"
     > ![Microsoft 端點管理員 portal6 的影像](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > 在此範例中，這已自動填入，因為已將 Defender 的 Endpoint 已整合至已與 Intune 整合。 如需整合的詳細資訊，請參閱 [在 Intune 中啟用 Microsoft Defender For Endpoint](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)。
+    > 在此範例中，這已自動填入，因為已將 Defender 的 Endpoint 已整合至已與 Intune 整合。 如需整合的詳細資訊，請參閱 [在 Intune 中啟用 Microsoft Defender For Endpoint](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)。
     > 
     > 下列圖像是 Microsoft Defender for Endpoint 未與 Intune 整合時所看到之內容的範例：
     >
@@ -187,14 +187,14 @@ ms.locfileid: "51935254"
     > [!div class="mx-imgBorder"]
     > ![Microsoft 端點管理員 portal12 的影像](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3.  選取 **平臺-windows 10 和更新版本-windows 和設定檔– Microsoft Defender 防病毒 > 建立**。
+3.  選取 [**平臺-Windows 10 和更新版本-Windows 和設定檔– Microsoft Defender 防毒軟體 > 建立**]。
 
 4.  輸入名稱和描述，然後選取  **[下一步]**。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 端點管理員 portal13 的影像](images/a7d738dd4509d65407b7d12beaa3e917.png)
 
-5.  在 [ **設定設定] 頁面** 中，設定您所需的 Microsoft Defender 防毒軟體 (Cloud Protection、排除、Real-Time 保護和修正) 。
+5.  在 [設定 **設定] 頁面** 中，設定 Microsoft Defender 防毒軟體所需的設定 (Cloud Protection，排除，Real-Time 保護和修正) 。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 端點管理員 portal14 的影像](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
@@ -227,7 +227,7 @@ ms.locfileid: "51935254"
 
 3.  選取 [  **建立原則**]。
 
-4.  選取 **平臺-Windows 10 和更新版本–設定檔-已 > 建立的攻擊面降減規則**。
+4.  選取 [**平臺-Windows 10 和更新版本–設定檔-> 建立的攻擊面降減規則**。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 端點管理員 portal19 的影像](images/522d9bb4288dc9c1a957392b51384fdd.png)
@@ -275,7 +275,7 @@ ms.locfileid: "51935254"
 
 3.  選取 [  **建立原則**]。
 
-4.  選取 [ **Windows 10 和更新版本– Web 保護 > 建立**]。
+4.  選取 [ **Windows 10 和更新版本– > 建立 Web 保護**]。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 端點管理員 portal26 的影像](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
@@ -323,7 +323,7 @@ ms.locfileid: "51935254"
 
 指派好設定原則之後，將需要一些時間才能套用。
 
-如需有關計時的資訊，請參閱 [Intune 設定資訊](https://docs.microsoft.com/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
+如需有關計時的資訊，請參閱 [Intune 設定資訊](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
 
 若要確認已將設定原則套用至測試裝置，請針對每個設定原則遵循下列程式。
 
@@ -358,20 +358,20 @@ ms.locfileid: "51935254"
 ### <a name="endpoint-detection-and-response"></a>端點偵測及回應
 
 
-1.  在套用設定之前，不應該啟動 Defender for Endpoint Protection 服務。
+1.  套用此設定之前，不應該啟動 Endpoint Protection 的 Defender for service。
 
     > [!div class="mx-imgBorder"]
     > [![服務的圖像 panel1 ](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2.  套用設定後，應啟動 Defender for Endpoint Protection 服務。
+2.  套用設定後，應啟動 Endpoint Protection 服務的 Defender。
 
     > [!div class="mx-imgBorder"]
     > [![服務的圖像 panel2 ](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3.  在裝置上執行服務後，裝置會顯示在 Microsoft Defender Security Center 中。
+3.  在裝置上執行服務後，裝置會出現在 Microsoft Defender 資訊安全中心中。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Defender 安全中心 ](images/df0c64001b9219cfbd10f8f81a273190.png) 的影像](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Microsoft Defender 資訊安全中心 ](images/df0c64001b9219cfbd10f8f81a273190.png) 的影像](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### <a name="next-generation-protection"></a>新一代保護
 
@@ -403,7 +403,7 @@ ms.locfileid: "51935254"
 
     ![命令 line1 的圖像](images/cb0260d4b2636814e37eee427211fe71.png)
 
-3.  在測試裝置上套用原則之後，請開啟 PowerShell 視窗，然後輸入 `Get-MpPreference` 。
+3.  在測試裝置上套用原則之後，請開啟 PowerShell Windows 並輸入 `Get-MpPreference` 。
 
 4.  這應該會以下列包含內容的行來回應，如下所示：
 
@@ -411,13 +411,13 @@ ms.locfileid: "51935254"
 
 ### <a name="attack-surface-reduction--web-protection"></a>攻擊面減少– Web 保護
 
-1.  在測試裝置上，開啟 PowerShell 視窗，然後輸入 `(Get-MpPreference).EnableNetworkProtection` 。
+1.  在測試裝置上，開啟 PowerShell Windows 並輸入 `(Get-MpPreference).EnableNetworkProtection` 。
 
 2.  這應該會以0做回應，如下所示。
 
     ![命令 line3 的影像](images/196a8e194ac99d84221f405d0f684f8c.png)
 
-3.  套用原則之後，請開啟 PowerShell 的視窗，然後輸入 `(Get-MpPreference).EnableNetworkProtection` 。
+3.  套用原則之後，請開啟 PowerShell Windows 並輸入 `(Get-MpPreference).EnableNetworkProtection` 。
 
 4.  這應該會以如下所示的1回應。
 

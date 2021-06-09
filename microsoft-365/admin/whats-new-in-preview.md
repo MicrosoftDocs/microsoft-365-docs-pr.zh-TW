@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-瞭解本月新增的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: d4bd7d02b8c14f8b57b6f2e3eef99c2233d820fe
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 5bb8377dd45714dcdf25533055159f8964acc558
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779888"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841963"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -291,7 +291,7 @@ ms.locfileid: "52779888"
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 解決方案與架構中心
 
-只會在這個月發行新的網站， [https://docs.microsoft.com]() 稱為「 [Microsoft 365 解決方案」和「架構中心](../solutions/index.yml)」，這會結合技術指導方針，以瞭解、規劃及實施安全且相容性共同作業的整合式 Microsoft 365 解決方案。 在此中心，您會發現：
+僅在這個月，我們已于 docs.microsoft.com 中發佈新的網站，稱為[Microsoft 365 方案和架構中心](../solutions/index.yml)，其結合了您所需的技術指導方針，以瞭解、規劃及實施安全且相容性共同作業的整合式 Microsoft 365 解決方案。 在此中心，您會發現：
 
 - 基礎解決方案指導方針
 - 工作負載解決方案與案例指南

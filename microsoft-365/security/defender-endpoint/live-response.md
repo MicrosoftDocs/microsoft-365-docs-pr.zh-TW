@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d5e48f1e4f6bc2cfaa836d90e24f2ce8ba3f2114
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246462"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845327"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用即時回應調查裝置上的實體
 
@@ -47,7 +47,7 @@ Live response 的設計目的是讓您的安全性作業小組收集法律資料
 - Upload PowerShell 腳本或可執行檔至文件庫，並在租使用者層級上的裝置上執行該腳本。
 - 採取或撤銷修正動作。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 在裝置上啟動會話之前，請先確定您符合下列需求：
 
@@ -55,11 +55,11 @@ Live response 的設計目的是讓您的安全性作業小組收集法律資料
 裝置必須執行下列其中一個 Windows 版本
 
   - **Windows 10**
-    - [版本 1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) 或更新版本  
-    - [版本 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) 與 [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5) ](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) 與 [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-    - [版本 1803 (RS 4) ](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) 與 [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
-    - [版本 1709 (RS 3) ](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 與 [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+    - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更新版本  
+    - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) 與 [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
+    - [版本 1809 (RS 5) ](/windows/whats-new/whats-new-windows-10-version-1809) 與 [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) 與 [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) 與 [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
   - **Windows伺服器 2019-僅適用于公開預覽**
     - 版本1903或 (隨 [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) 更新版本 
@@ -172,7 +172,7 @@ Live response 的設計目的是讓您的安全性作業小組收集法律資料
 
 ## <a name="use-live-response-commands"></a>使用即時回應命令
 
-您可以在主控台中使用的命令遵循與[Windows 命令](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)類似的原則。
+您可以在主控台中使用的命令遵循與[Windows 命令](/windows-server/administration/windows-commands/windows-commands#BKMK_c)類似的原則。
 
 Advanced 命令提供一組更為強大的動作，可讓您採取更強大的動作，例如下載和上傳檔案、在裝置上執行腳本，以及對實體採取修正動作。
 
@@ -194,7 +194,7 @@ Advanced 命令提供一組更為強大的動作，可讓您採取更強大的�
 - 如果您正在等候下載檔案，您可以使用 Ctrl+Z 將檔案移至背景。
 - 若要將檔案下載移至前臺，請在 live response 命令主控台中輸入 `fg <command_id>` 。
 
-以下為一些範例：
+範例如下：
 
 
 |命令  |功能  |

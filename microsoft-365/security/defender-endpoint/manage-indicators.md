@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: fb87f36c5289d622df2615046c5bb2fd8fad9543
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470890"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842239"
 ---
 # <a name="create-indicators"></a>建立指示器
 
@@ -34,13 +34,13 @@ ms.locfileid: "51470890"
 
 
 > [!TIP]
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
  (IoCs) 相符的指示器是每個 endpoint protection 解決方案中的基本功能。 這項功能可讓 SecOps 設定標記清單以進行偵測，以及封鎖封鎖 (防護和回應) 。
 
 建立指示器，以定義實體的偵測、預防和排除。 您可以定義要採取的動作，以及要套用動作的時間和裝置群組的範圍，以及要套用的動作。
 
-目前支援的來源是用於 Defender for Endpoint 的雲端偵測引擎、自動調查和修正引擎，以及 Endpoint 防護引擎 (Microsoft Defender 防病毒) 。
+目前支援的來源是用於 Defender for Endpoint 的雲端偵測引擎、自動調查和修正引擎，以及端點防護引擎 (Microsoft Defender 防毒軟體) 。
 
 **雲端偵測引擎**<br>
 Defender for Endpoint 的雲端偵測引擎會定期掃描收集的資料，並嘗試符合您設定的指示器。 當有相符時，會根據您為 IoC 所指定的設定採取動作。
@@ -68,7 +68,7 @@ Defender for Endpoint 的雲端偵測引擎會定期掃描收集的資料，並�
 
 
 > [!NOTE]
-> 每個租使用者的指示器限制為15000。 檔案和憑證指示器不會封鎖 [為 Microsoft Defender 防病毒定義的排除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)。 Microsoft Defender 防病毒在被動模式時不支援指示器。 
+> 每個租使用者的指示器限制為15000。 檔案和憑證指示器不會封鎖[為 Microsoft Defender 防毒軟體定義的排除](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)專案。 Microsoft Defender 防毒軟體在被動模式中時，不支援指示器。 
 
 
 ## <a name="related-topics"></a>相關主題

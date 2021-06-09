@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dab72da02927c3fff6025eb2d0fa9ed0fdf1d0d7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245273"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842251"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上設定 Microsoft Defender for Endpoint
 
@@ -40,10 +40,10 @@ ms.locfileid: "52245273"
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>在 iOS 上使用 Defender for Endpoint 進行條件式存取  
 Microsoft Defender for Endpoint on iOS 隨 Microsoft Intune 和 Azure Active Directory 可根據裝置風險分數強制強制執行裝置合規性和條件式存取原則。 Defender for Endpoint 是行動威脅防護 (MTD) 解決方案，您可以透過 Intune 部署此功能，以利用這項功能。
 
-如需如何設定 iOS 上的使用 Defender for Endpoint 的條件式存取的相關資訊，請參閱 [Defender For endpoint And Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)。
+如需如何設定 iOS 上的使用 Defender for Endpoint 的條件式存取的相關資訊，請參閱 [Defender For endpoint And Intune](/mem/intune/protect/advanced-threat-protection)。
 
-> [!NOTE]
-> **Jailbreak 中 Microsoft Defender for IOS Endpoint 的偵測目前正在預覽中**。 如果偵測到裝置已受到 Microsoft Defender for Endpoint 的鎖定，將會向安全中心報告 **高** 風險警示，而且如果根據裝置風險分數設定條件式存取，則系統會封鎖裝置存取公司資料。
+### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的 Jailbreak 偵測
+Microsoft Defender for Endpoint 具備偵測已越獄之受管理和受管理裝置的能力。 如果偵測到裝置已越獄，將會向安全中心報告 **高** 風險警示，而且如果根據裝置風險分數設定條件式存取，則系統會封鎖裝置以存取公司資料。
 
 ## <a name="web-protection-and-vpn"></a>Web 保護和 VPN
 
@@ -71,7 +71,7 @@ Apple iOS 不支援多個全裝置的 Vpn 同時作用中。 雖然裝置上可�
 為了保護公司資料無法在已越獄的 iOS 裝置上存取，我們建議您在 Intune 上設定下列符合性原則。
 
 > [!NOTE]
-> 目前，jailbreak 的 Microsoft Defender for iOS Endpoint 偵測是在預覽中。 建議您將此原則設定為其他防禦層級，以防禦 jailbreak 案例。
+> Jailbreak 偵測是 Microsoft Defender for Endpoint on iOS 所提供的功能。 不過，我們建議您將此原則設定為其他防禦層級，以防禦 jailbreak 案例。
 
 請遵循下列步驟，建立對已越獄裝置的相容性原則。
 
@@ -96,7 +96,7 @@ Apple iOS 不支援多個全裝置的 Vpn 同時作用中。 雖然裝置上可�
 
 ## <a name="configure-custom-indicators"></a>設定自訂指示器
 
-IOS 上的 Defender for Endpoint 可讓系統管理員也在 iOS 裝置上設定自訂指示器。 如需如何設定自訂指示器的詳細資訊，請參閱 [管理指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators)。
+IOS 上的 Defender for Endpoint 可讓系統管理員也在 iOS 裝置上設定自訂指示器。 如需如何設定自訂指示器的詳細資訊，請參閱 [管理指示器](/microsoft-365/security/defender-endpoint/manage-indicators)。
 
 > [!NOTE]
 > IOS 上的 Defender for Endpoint 支援只為 IP 位址和 URLs/網域建立自訂指示器。
@@ -105,8 +105,3 @@ IOS 上的 Defender for Endpoint 可讓系統管理員也在 iOS 裝置上設定
 
 網路釣魚網站會為了取得您的個人或財務資訊，模仿可信的網站。 如果您想要報告可能是網路釣魚網站的網站，請造訪 [ [提供有關網路保護的意見](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) 反應] 頁面。
 
-## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>安裝 Microsoft Defender for Endpoint 時 iOS 的電池消耗問題
-
-應用程式的電池使用量是根據許多因素（包括 CPU 和網路使用量）計算而來。 Microsoft Defender for Endpoint 會在背景中使用本機/環路傳回 VPN，檢查任何惡意網站或連線的網頁流量。 任何應用程式的網路封包都會進行此項檢查，從而導致無法準確計算 Microsoft Defender for Endpoint 的電池使用量。 這為使用者提供了錯誤的印象。 Microsoft Defender for Endpoint 的實際電池消耗小於裝置上的 [電池設定] 頁面上顯示的數目。 這是以 Microsoft Defender for Endpoint app 所進行的測試為基礎，以瞭解電池消耗。
-
-此外，使用的 VPN 也是本機 VPN，與傳統的 vpn 不同的是，網路流量不會傳送到裝置外。

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87305f28975b8997afce211ffa4de3711d26be6b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246365"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845471"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中設定高級功能
 
@@ -167,7 +167,7 @@ ms.locfileid: "52246365"
 > [!NOTE]
 > 您必須具有適當的授權，才能啟用此功能。
 
-若要在 Office 365 威脅情報中接收上下文相關的裝置整合，您必須在安全性 & 規範儀表板中啟用 [Endpoint for Endpoint] 設定。 如需詳細資訊，請參閱 [威脅調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)。
+若要在 Office 365 威脅情報中接收上下文相關的裝置整合，您必須在安全性 & 規範儀表板中啟用 [Endpoint for Endpoint] 設定。 如需詳細資訊，請參閱 [威脅調查和回應](/microsoft-365/security/office-365-security/office-365-ti)。
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 威脅專家目標攻擊通知
 
@@ -212,7 +212,7 @@ ms.locfileid: "52246365"
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune 連接
 
-可以將 Endpoint for 端點與[Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune)整合，以[啟用裝置風險的條件式存取](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 當您 [開啟此功能](configure-conditional-access.md)時，您可以使用 Intune 與 Intune 共用 Defender 裝置資訊，進而增強原則的執行能力。
+可以將 Endpoint for 端點與[Microsoft Intune](/intune/what-is-intune)整合，以[啟用裝置風險的條件式存取](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 當您 [開啟此功能](configure-conditional-access.md)時，您可以使用 Intune 與 Intune 共用 Defender 裝置資訊，進而增強原則的執行能力。
 
 > [!IMPORTANT]
 > 您必須在 Intune 和 Defender for Endpoint 上啟用整合，才能使用此功能。 如需特定步驟的詳細資訊，請參閱 [在 Defender For Endpoint 中設定條件式存取](configure-conditional-access.md)。
@@ -220,7 +220,7 @@ ms.locfileid: "52246365"
 只有在下列情況下，才可使用此功能：
 
 - 企業行動力 + 安全性 E3 的授權租使用者，以及 Windows e5 (或 Microsoft 365 企業版 e5) 
-- 使用 Intune 管理 Windows 10 裝置的作用中 Microsoft Intune 環境會[連接 Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)。
+- 使用 Intune 管理 Windows 10 裝置的作用中 Microsoft Intune 環境會[連接 Azure AD](/azure/active-directory/devices/concept-azure-ad-join/)。
 
 
 ### <a name="conditional-access-policy"></a>條件式存取原則
@@ -228,7 +228,7 @@ ms.locfileid: "52246365"
 當您啟用 Intune 整合時，Intune 會自動建立傳統的條件式存取 (CA) 原則。 這項傳統 CA 原則是設定狀態報表至 Intune 的必要條件。 不應該刪除。
 
 > [!NOTE]
-> Intune 所建立的傳統 CA 原則與新式條件式 [存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)不同，用來設定端點。
+> Intune 所建立的傳統 CA 原則與新式條件式 [存取原則](/azure/active-directory/conditional-access/overview/)不同，用來設定端點。
 
 
 ## <a name="device-discovery"></a>裝置探索

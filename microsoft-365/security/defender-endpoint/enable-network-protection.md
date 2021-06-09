@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a2bc36f9d3a3e9179f07662da8d97f4c55e72a24
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 6afdcc16493839e83771ac831831fdbb121663a1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302049"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841771"
 ---
 # <a name="turn-on-network-protection"></a>開啟網路保護
 
@@ -81,7 +81,7 @@ ms.locfileid: "52302049"
 
 ### <a name="mobile-device-management-mdm"></a>行動裝置管理 (MDM)
 
-使用 [/Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service PROVIDER (CSP) 以啟用或停用網路保護或啟用稽核模式。
+使用 [/Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) configuration service PROVIDER (CSP) 以啟用或停用網路保護或啟用稽核模式。
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft 端點管理員 (以前的 Intune) 
 
@@ -127,7 +127,7 @@ ms.locfileid: "52302049"
    * 1 = 開啟
    * 2 = 審計
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [網路保護](network-protection.md)
 * [評估網路保護](evaluate-network-protection.md)

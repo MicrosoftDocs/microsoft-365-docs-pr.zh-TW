@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f5db08e4eb98dd3fe6f7e8a84fb0c49e889fb73f
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 435a77432caa9d7335a22993f85cae69eff6cd38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809249"
+ms.locfileid: "52841759"
 ---
 #  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>管理 Microsoft Defender 更新的逐步展示過程
 
@@ -56,7 +56,7 @@ ms.locfileid: "52809249"
 
 1. 第一個版本會發佈到 Beta 通道訂閱者。
 2. 在驗證、意見反應和修正程式之後，我們會以節流的方式開始逐步展示處理常式，並先預覽通道訂閱者。
-3. 接著，我們會繼續發行更新 ato，以從10-100% 向內擴充。
+3. 接著，我們會繼續發行對其他全域填充的更新，從10-100% 向內擴充。
 
 我們的工程師會持續監控影響並上報任何問題，以視需要建立修正。
 

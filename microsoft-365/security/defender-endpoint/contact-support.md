@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eaf26c566b54b21e63af5ecbfe3603f2b1389208
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 2231a4fc1f8bb58a83c639c8e60ad790af0df236
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892838"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845627"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>聯絡適用於端點的 Microsoft Defender 支援
 
@@ -46,9 +46,9 @@ ms.locfileid: "51892838"
 您必須至少要有服務支援管理員 **或** 支援人員的系統管理員角色。
 
 
-如需哪些角色具有許可權的詳細資訊，請參閱 [安全性管理員許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions)。 包含動作的角色 `microsoft.office365.supportTickets/allEntities/allTasks` 可以提交案例。
+如需哪些角色具有許可權的詳細資訊，請參閱 [安全性管理員許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions)。 包含動作的角色 `microsoft.office365.supportTickets/allEntities/allTasks` 可以提交案例。
 
-如需系統管理員角色的一般資訊，請參閱 [關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)。
+如需系統管理員角色的一般資訊，請參閱 [關於系統管理員角色](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)。
 
 
 ## <a name="access-the-widget"></a>存取小工具
@@ -58,7 +58,7 @@ ms.locfileid: "51892838"
 
     ![選取 [問號時構件的圖像] 標記](images/support-widget.png)
 
-2. 按一下 [ **需要協助]？**  在 Microsoft Defender 安全中心右下方的按鈕：
+2. 按一下 [ **需要協助]？**  Microsoft Defender 資訊安全中心的右下方按鈕：
 
 
     ![[需要協助] 按鈕的圖像](images/need-help.png)

@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 安全性中心概述，結合 MDO、MDE、MDI 及 MCAS
-description: Microsoft 365 security center 中的優點，結合 microsoft defender for Office 365 (MDO) 和 microsoft defender for Endpoint (MDE) ，使用 Microsoft defender for Identity (MDI) ，並 Microsoft Cloud App Security (MCAS) 。 本文概述管理員 Microsoft 365 的安全性中心提升。
+title: Microsoft 365Defender 概述，結合 MDO、MDE、MDI 及 MCAS
+description: Microsoft 365 defender 的優點，結合 microsoft defender for Office 365 (MDO) 和 microsoft defender for Endpoint (MDE) ，使用 Microsoft defender for Identity (MDI) ，並 Microsoft Cloud App Security (MCAS) 。 本文概述管理員 Microsoft 365 的 Defender 提升。
 keywords: security，malware，Microsoft 365，M365，security center，monitor，report，identity，data，裝置，應用程式
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,14 +19,14 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 3f71e5aa37ad9184a21bf92232951d8884ee2577
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e88f23013a1a7d9fbeb6ae1d72592182eaaa7547
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782510"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841675"
 ---
-# <a name="the-unified-microsoft-365-security-center-overview"></a>整合的 Microsoft 365 安全性中心概述
+# <a name="microsoft-365-defender-overview"></a>Microsoft 365Defender 概述
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,9 +38,9 @@ ms.locfileid: "52782510"
 
 > 想要體驗 Microsoft 365 Defender 嗎？ 您可以[在實驗室環境中評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[在生產環境中執行試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
 
-改良的 **Microsoft 365 security center** ([https://security.microsoft.com](https://security.microsoft.com)) 結合了保護、偵測 *、* 調查，以及對 *電子郵件*、共同作業、身分 *識別* 及 *裝置* 威脅的回應，集中入口網站。
+**Microsoft 365 Defender** ([https://security.microsoft.com](https://security.microsoft.com)) 結合了保護、偵測 *、* 調查，以及對 *電子郵件*、共同作業、身分 *識別* 及 *裝置* 威脅的回應，集中入口網站。
 
-Microsoft 365 的安全性中心會將現有 Microsoft 安全性入口網站的功能彙集在一起，如 Microsoft Defender 資訊安全中心和 Office 365 安全性 & 規範中心。 [安全性中心] 強調快速存取訊號、簡化版面配置，以及將相關資訊放在一起，以方便使用。 此中心包括：
+Microsoft 365Defender 會將現有 Microsoft 安全性入口網站的功能彙集在一起，如 Microsoft Defender 資訊安全中心和 Office 365 安全性 & 規範中心。 [安全性中心] 強調快速存取訊號、簡化版面配置，以及將相關資訊放在一起，以方便使用。 此中心包括：
 
 - **[Microsoft Defender Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** 適用于 Office 365 的 Microsoft Defender 可協助組織使用一組預防、偵測和搜尋功能保護其企業，以保護電子郵件，並 Office 365 資源。
 - **[Microsoft Defender For Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** 會為組織中的裝置提供預防性保護、入侵後偵測、自動調查和回應。
@@ -48,24 +48,24 @@ Microsoft 365 的安全性中心會將現有 Microsoft 安全性入口網站的�
 
 如果您需要 Office 365 安全性 & 規範中心或 Microsoft Defender 資訊安全中心中所做變更的相關資訊，請參閱：
 
-- [Microsoft 365 安全性中心中的適用於 Office 365 的 Defender](microsoft-365-security-center-mdo.md)
-- [Microsoft 365 安全性中心中的適用於端點的 Defender](microsoft-365-security-center-mde.md)
+- [Microsoft 365 defender 中 Office 365 的 defender](microsoft-365-security-center-mdo.md)
+- [Microsoft 365 defender 中的端點的 defender](microsoft-365-security-center-mde.md)
 
 > [!NOTE]
 > Microsoft 365 安全性入口網站會使用並強制執行現有的角色型存取，並將每一種安全性模型移至統一入口網站。 每個收斂工作負載 (例如 MDO 或 MDE) 具有自己的角色型存取權。 產品中已有的角色將會自動收斂至 Microsoft 365 的安全性入口網站。 不過，MCAS 的角色和許可權仍會在 MCAS 中處理。
 
 ## <a name="what-to-expect"></a>預期的專案
 
-在 Office 365 安全性與合規性中心 (protection.office.com) 和 Microsoft Defender security center (securitycenter.microsoft.com) 中所使用的所有安全性內容，都可以在 *Microsoft 365 的安全性中心* 找到。
+在 Office 365 安全性與合規性中心 (protection.office.com) 和 Microsoft Defender security center (securitycenter.microsoft.com) 中所使用的所有安全性內容，現在都可以在 *Microsoft 365 Defender* 中找到。
 
-Microsoft 365 的安全性中心，可協助安全小組調查並回應攻擊，方法是將不同工作負載的信號引入一組整合體驗：
+Microsoft 365Defender 可協助安全小組調查和回應攻擊，方法是將不同工作負載的信號引入一組整合體驗：
 
 - 事件 & 警示
 - 搜捕
 - 控制中心
 - 威脅分析
 
-Microsoft 365 的安全性中心會強調 *unity、清晰度及共同目標*，因為它會合並 microsoft defender for Office 365 和 microsoft defender for Endpoint。 合併是以下列所列的優先順序為基礎，而不犧牲每個安全性套件所加入的功能：
+Microsoft 365當合併 microsoft defender for Office 365 和 microsoft defender for Endpoint 時，Defender 強調 *unity、清晰度及共同目標*。 合併是以下列所列的優先順序為基礎，而不犧牲每個安全性套件所加入的功能：
 
 - 萬用群組建區塊
 - 常見術語
@@ -73,27 +73,27 @@ Microsoft 365 的安全性中心會強調 *unity、清晰度及共同目標*，�
 - 與其他工作負載的功能同位
 
 > [!NOTE]
-> 整合的 Microsoft 365 安全性中心可供存取，而不需要客戶進行遷移步驟或購買新的授權。 例如，具有 E3 訂閱的系統管理員可以存取這個新入口網站，就像使用 Microsoft Defender 做為 Office 365 方案1和方案2一樣）。不過，Exchange Online Protection 或 MDO Plan 1 客戶只會看到其訂閱授權所支援的安全性功能。 新的中心目標是集中安全性。
+> Microsoft 365您不需要讓客戶進行遷移步驟或購買新的授權，即可存取 Defender。 例如，具有 E3 訂閱的系統管理員可以存取這個新入口網站，就像使用 Microsoft Defender 做為 Office 365 方案1和方案2一樣）。不過，Exchange Online Protection 或 MDO Plan 1 客戶只會看到其訂閱授權所支援的安全性功能。 新的中心目標是集中安全性。
 
 ## <a name="unified-investigations"></a>整合調查
 
-彙聚安全性中心建立單一位置，以用於調查各 Microsoft 365 的安全性事件。 主要範例是 Microsoft 365 安全中心的快速啟動上，**事件 & 警示** 的 **事件**。
+彙聚安全性中心建立單一位置，以用於調查各 Microsoft 365 的安全性事件。 主要範例是 Microsoft 365 Defender 的快速啟動上之 **事件 & 警示** 的 **事件**。
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Microsoft 365 security center 中的 [事件] 頁面。":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Microsoft 365 Defender 中的 [事件] 頁面。":::
 
 選取 [事件名稱] 會顯示一個頁面，其中會示範「整合」安全中心的價值。
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Microsoft 365 security center 中的事件摘要頁面範例":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Microsoft 365 Defender 中的事件摘要頁面範例":::
 
 <!--
-![Example of the Summary page for an incident in the Microsoft 365 security center](../../media/converged-incident-info-3.png)
+![Example of the Summary page for an incident in Microsoft 365 Defender](../../media/converged-incident-info-3.png)
 --> 
 
 在 [事件] 頁面的頂端，您會看到 **摘要**、 **警示**、 **裝置**、 **使用者**、 **信箱**、 **調查** 和 **證據** 索引標籤。 如需詳細資訊，請選取這些索引標籤。 例如，[**使用者**] 索引標籤會顯示聚合工作負載 (microsoft defender for Endpoint、microsoft defender 身分識別及 Microsoft Cloud App Security) 和來源範圍（如內部部署 Active Directory 網域服務 (AD DS) 、Azure Active Directory (Azure AD) 和協力廠商身分識別提供者）的使用者資訊。 如需詳細資訊，請參閱 [調查使用者](investigate-users.md)。
 
 花時間複習您環境中的事件、深入查看這些索引標籤，並練習如何針對不同類型的威脅存取針對事件所提供的資訊。
 
-如需詳細資訊，請參閱[Microsoft 365 security center 中的事件](incidents-overview.md)。
+如需詳細資訊，請參閱[Microsoft 365 Defender 中的事件](incidents-overview.md)。
 
 ## <a name="improved-processes"></a>改進的處理常式
 
@@ -107,23 +107,23 @@ Microsoft 365 的安全性中心會強調 *unity、清晰度及共同目標*，�
 
 ![& 角色] 頁面顯示端點角色的許可權 & 群組、角色和裝置群組。](../../media/converged-roles-5.png)
 
- Access Microsoft 365 的安全性中心是使用 Azure Active Directory 通用角色或使用自訂角色進行設定。 若為 Defender for Endpoint，請參閱[Assign user access to Microsoft Defender 資訊安全中心](/microsoft-365/security/defender-endpoint/assign-portal-access)。 若為 Office 365 的 Defender，請參閱[Microsoft 365 規範中心的許可權和 Microsoft 365 安全性中心](../office-365-security/permissions-microsoft-365-compliance-security.md)。
+ 使用 Azure Active Directory 通用角色或使用自訂角色設定 Microsoft 365 Defender 的存取權。 若為 Defender for Endpoint，請參閱[Assign user access to Microsoft Defender 資訊安全中心](/microsoft-365/security/defender-endpoint/assign-portal-access)。 若為 Office 365 的 Defender，請參閱[Microsoft 365 規範中心的許可權和 Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md)。
 
 - 深入瞭解如何[管理 Microsoft 365 Defender 的存取權](m365d-permissions.md)
-- 深入瞭解如何在 Microsoft 365 安全性中心[建立自訂角色](custom-roles.md)
+- 深入瞭解如何在 Microsoft 365 Defender 中[建立自訂角色](custom-roles.md)
 
 > [!NOTE]
-> Microsoft 365 security center 中的 Microsoft Defender for Endpoint 支援在[microsoft defender security center 中授](./mssp-access.md)與存取[受管理的安全性服務提供者 (MSSPs) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) 。
+> Microsoft 365 defender 中的 Microsoft defender for Endpoint 支援在[microsoft defender security center 中授](./mssp-access.md)與存取[受管理的安全性服務提供者 (MSSPs) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)的方式。
 
 ### <a name="integrated-reports"></a>整合報告
 
-報告在 Microsoft 365 的安全性中心也是統一的。 系統管理員可以從一般的安全性報告開始，並在特定報告中分支至相關的端點、電子郵件 & 協同作業。 此處的連結是根據工作負載設定動態產生。
+報表在 Microsoft 365 Defender 中也是統一的。 系統管理員可以從一般的安全性報告開始，並在特定報告中分支至相關的端點、電子郵件 & 協同作業。 此處的連結是根據工作負載設定動態產生。
 
 ### <a name="quickly-view-your-microsoft-365-environment"></a>快速查看您的 Microsoft 365 環境
 
 **首頁** 會顯示許多安全小組需要的常見智慧卡。 名片和資料的組成取決於使用者角色。 因為 Microsoft 365 的安全性中心使用角色型存取控制，所以不同的角色會在日常工作中看到更有意義的卡片。  
 
-這種一覽的資訊可協助您維持組織中的最新活動。 Microsoft 365 的安全性中心會將不同來源的信號彙集在一起，以呈現您 Microsoft 365 環境的整體觀點。
+這種一覽的資訊可協助您維持組織中的最新活動。 Microsoft 365Defender 會將不同來源的信號彙集在一起，以呈現您 Microsoft 365 環境的整體觀點。
 
 這些卡片分為下列類別：
 
@@ -143,7 +143,7 @@ Microsoft 365 的安全性中心會強調 *unity、清晰度及共同目標*，�
 
 ## <a name="a-centralized-learning-hub"></a>集中式學習中樞
 
-Microsoft 365 的安全性中心包含的學習中樞可深入瞭解 microsoft 安全性博客、YouTube 上的 microsoft security 社區，以及 docs.microsoft.com 中的官方檔等資源的官方指導方針。
+Microsoft 365 的安全性中心包含的學習中樞可深入瞭解 microsoft 安全性博客、YouTube 上的 microsoft security 社區，以及 docs.microsoft.com 的官方檔等資源的官方指導方針。
 
 在學習中樞內，電子郵件 & 共同作業 (microsoft defender for Office 365 或 MDO) 指導方針是以 (microsoft defender for endpoint 或 MDE) 做並列的方式，而且 Microsoft 365 的 Defender 學習資源。
 
@@ -152,12 +152,12 @@ Microsoft 365 的安全性中心包含的學習中樞可深入瞭解 microsoft �
 按一下內容之後，將此網站做成書簽並將書簽組織至 ' Security ' 或 ' 嚴重」資料夾可能會很有用。 若要查看所有學習路徑，請按一下主面板中的 [全部顯示] 連結。
 
 > [!NOTE]
-> Microsoft 365 的「安全性中心」學習中心」上有一些有説明的 **篩選準則**，可讓您選擇目前 Microsoft 365 的 defender、microsoft defender for Endpoint 和 microsoft defender for Office 365) 中的 (產品。 請注意，會列出每個區段的學習資源數目，可協助教學人員追蹤他們手頭的訓練和學習資源數目。
+> Microsoft 365 defender 教學中樞的最上層有一些有説明的 **篩選準則**，可讓您在目前 Microsoft 365 的產品 (、microsoft defender for Endpoint 和 microsoft defender for Office 365) 中，進行選擇。 請注意，會列出每個區段的學習資源數目，可協助教學人員追蹤他們手頭的訓練和學習資源數目。
 >
 > 除了產品篩選、目前主題、 (從影片到網路研討會的資源類型) 、熟悉或經驗的安全性區域、安全性角色及產品功能的層級。
 
 > [!TIP]
-> 在 [Microsoft 中學](https://docs.microsoft.com/e/learn/)中還有許多其他的學習機會。 您可以找到認證訓練，例如[課程500T02：實施 Microsoft 365 威脅防護](https://docs.microsoft.com/learn/certifications/courses/ms-500t02)。
+> 在 [Microsoft 中學](/e/learn/)中還有許多其他的學習機會。 您可以找到認證訓練，例如[課程500T02：實施 Microsoft 365 威脅防護](/learn/certifications/courses/ms-500t02)。
 
 ## <a name="send-us-your-feedback"></a>將您的意見傳送給我們
 
@@ -171,14 +171,14 @@ Microsoft 365 的安全性中心包含的學習中樞可深入瞭解 microsoft �
     1. 如果您想要繼續閱讀這些指示，請在按鈕上按一下滑鼠右鍵，然後按一下 [在新索引標籤中開啟]。
 2. 這會流覽至 **UserVoice 論壇**。
 3. 您有2個選項：
-    1. 向左下到文字方塊，*我們應如何改善法規遵從性，或在 Office 365 中更好地保護您的使用者*，並貼上 *Microsoft 365 的安全性中心*。 您可以搜尋結果與您的觀點，並向上-投票，或使用按鈕 **發佈新的觀點**。
-    1. 如果您認為已經報告此問題，而且想要使用投票 (或投票) 提升其設定檔，請使用 UserVoice 右側的 [ *提供意見* 反應] 方塊。 搜尋 *Microsoft 365 的安全性中心*、**找出問題，然後使用 [投票] 按鈕** 提升其狀態。
+    1. 向左下到文字方塊，*我們應如何改善法規遵從性，或在 Office 365 中更好地保護您的使用者*，並在 *Microsoft 365 Defender* 中貼上。 您可以搜尋結果與您的觀點，並向上-投票，或使用按鈕 **發佈新的觀點**。
+    1. 如果您認為已經報告此問題，而且想要使用投票 (或投票) 提升其設定檔，請使用 UserVoice 右側的 [ *提供意見* 反應] 方塊。 搜尋 *Microsoft 365 Defender*、**找出問題，然後使用 [投票] 按鈕** 提升其狀態。
 
 使用 *此頁面* 以取得文章本身的回饋。 感謝您的意見反應。 您的語音可協助我們改進產品。
 
 ### <a name="explore-what-the-security-center-has-to-offer"></a>探索「安全性中心」所提供的功能
 
-繼續探索 Microsoft 365 安全性中心的功能：
+繼續探索 Microsoft 365 Defender 的功能：
 
 - [管理事件及警示](manage-incidents.md)
 - [使用威脅分析追蹤並回應新興威脅](threat-analytics.md)
@@ -189,7 +189,6 @@ Microsoft 365 的安全性中心包含的學習中樞可深入瞭解 microsoft �
 - [建立網路釣魚攻擊模擬](../office-365-security/attack-simulation-training.md) ，並 [建立訓練您的小組的負載](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
  
 ### <a name="related-information"></a>相關資訊
-- [Microsoft 365 安全性中心](overview-security-center.md)
-- [Microsoft 365 安全性中心中的適用於 Office 365 的 Microsoft Defender](microsoft-365-security-center-mdo.md)
-- [Microsoft 365 security center 中的 Microsoft Defender for Endpoint](microsoft-365-security-center-mde.md)
-- [將帳戶從 Microsoft Defender for Endpoint 重新導向至 Microsoft 365 的安全性中心](microsoft-365-security-mde-redirection.md)
+- [Microsoft 365 Defender 中的 Microsoft Defender Office 365](microsoft-365-security-center-mdo.md)
+- [Microsoft 365 defender 中的 Microsoft defender for Endpoint](microsoft-365-security-center-mde.md)
+- [將帳戶從 Microsoft Defender for Endpoint 重新導向至 Microsoft 365 Defender](microsoft-365-security-mde-redirection.md)

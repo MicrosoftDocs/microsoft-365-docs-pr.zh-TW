@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: 9913d1b0b0d5d0462fdee0b9c576a590bd3ddbc9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ef6d05bb27018bb72f731da2e8b7837c9d9f0127
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198317"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842059"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>Microsoft Defender for Endpoint APIs 使用 PowerShell
 
@@ -30,13 +30,13 @@ ms.locfileid: "51198317"
 
 **適用于：** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 使用 Microsoft Defender for Endpoint 中的多個 APIs 的完整案例。
 
@@ -55,7 +55,7 @@ ms.locfileid: "51198317"
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-如需詳細資訊，請參閱 [PowerShell 檔](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+如需詳細資訊，請參閱 [PowerShell 檔](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## <a name="get-token"></a>取得 token
 
@@ -132,4 +132,4 @@ $response
 ## <a name="see-also"></a>另請參閱
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [進階搜捕 API](run-advanced-query-api.md)
-- [使用 Python 的高級搜尋](run-advanced-query-sample-python.md)
+- [使用 Python 進階搜尋](run-advanced-query-sample-python.md)

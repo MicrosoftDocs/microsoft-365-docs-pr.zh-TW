@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26c531c0544f92d664bfa0f1a21e4f33a0765d24
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 06ef716e9deee7b20e8615bd22c93130ee18b77f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893494"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845579"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中連線的應用程式
 
@@ -39,7 +39,7 @@ ms.locfileid: "51893494"
 
 應用程式使用 standard OAuth 2.0 通訊協定來驗證及提供與 Microsoft Defender for Endpoint APIs 搭配使用的權杖。  此外，Azure Active Directory (Azure AD) 應用程式允許租使用者管理員設定可使用對應的應用程式存取 APIs 的明確控制。
  
-您必須遵循 [下列步驟](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) ，才能將 APIs 與連接的應用程式搭配使用。
+您必須遵循 [下列步驟](/microsoft-365/security/defender-endpoint/apis-intro) ，才能將 APIs 與連接的應用程式搭配使用。
  
 ## <a name="access-the-connected-application-page"></a>存取連線的應用程式頁面
 從左導覽功能表中，選取 [**夥伴] & APIs**  >  **連接的 AAD 應用程式**。

@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 security center 中的 Microsoft Defender for Endpoint
-description: 深入瞭解 Microsoft Defender 資訊安全中心的 Microsoft 365 安全性中心的變更
-keywords: 開始使用「Microsoft 365 安全性中心」、microsoft defender for Office 365、microsoft defender for Endpoint、MDO、MDE、單一窗格的玻璃、混合入口網站、安全性入口網站、Defender 安全性入口網站
+title: Microsoft 365 defender 中的 Microsoft defender for Endpoint
+description: 瞭解從 Microsoft Defender 資訊安全中心到 Microsoft 365 Defender 的變更
+keywords: 開始使用 Microsoft 365 defender、microsoft defender for Office 365、microsoft defender for Endpoint、MDO、MDE、security 入口網站、Defender 安全性入口網站
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 487fc87c613d7321e3ae608097d98d2c90f8874e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b43b7c99c6585e8610d34f3c4e5b372fb1c829a2
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771906"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842623"
 ---
-# <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的 Microsoft Defender for Endpoint
+# <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft 365 defender 中的 Microsoft defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,16 +34,15 @@ ms.locfileid: "52771906"
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [適用於 Office 365 的 Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 ## <a name="quick-reference"></a>快速參考
 
-下圖列出在 Microsoft Defender 資訊安全中心和 Microsoft 365 安全中心之間的導覽變更。
+下圖列出在 Microsoft Defender 資訊安全中心和 Microsoft 365 Defender 之間的導覽變更。
 
 > [!div class="mx-imgBorder"]
 > ![移至何處的影像](../../media/mde-m3d-security-center.png)
 
-| Microsoft Defender 資訊安全中心 | Microsoft 365 安全性中心 |
+| Microsoft Defender 資訊安全中心 | Microsoft 365 Defender |
 |---------|---------|
 | 儀錶 板 <ul><li>安全性作業</li><li>威脅分析</li></ul>  |首頁 <ul><li>威脅分析</li></ul>   |
 | 事件 | 事件 & 警示 |
@@ -58,40 +57,39 @@ ms.locfileid: "52771906"
 | 設定管理 | 設定管理 |
 | 設定 | 設定 | 
 
-改良的[Microsoft 365 安全性中心](overview-security-center.md) [https://security.microsoft.com](https://security.microsoft.com) 結合了保護、偵測、調查和回應電子郵件、共同作業、身分識別及裝置威脅的安全性功能。 此安全中心會將現有 Microsoft 安全性入口網站的功能彙集在一起，包括 Microsoft Defender 資訊安全中心和 Office 365 安全性 & 規範中心。
+改良的[Microsoft 365 Defender](overview-security-center.md) [https://security.microsoft.com](https://security.microsoft.com) 結合了保護、偵測、調查和回應電子郵件、共同作業、身分識別及裝置威脅的安全性功能。 這會將現有 Microsoft 安全性入口網站的功能彙集在一起，包括 Microsoft Defender 資訊安全中心和 Office 365 安全性 & 規範中心。
 
-如果您熟悉 Microsoft Defender 資訊安全中心，本文會協助說明改進的 Microsoft 365 安全性中心的一些變更與改進。 不過，有一些新的和更新的元素需要注意。
+如果您熟悉 Microsoft Defender 資訊安全中心，本文會協助說明 Microsoft 365 Defender 中的一些變更與改進功能。 不過，有一些新的和更新的元素需要注意。
 
-從過去開始， [Microsoft Defender 資訊安全中心](/windows/security/threat-protection/microsoft-defender-atp/portal-overview)是 Microsoft Defender for Endpoint 的主版。 Enterprise 安全小組已使用它監視及協助回應潛在的持續威脅活動或資料違例的警示。 為了協助減少入口網站數目，Microsoft 365 的安全性中心會在您的 Microsoft 身分識別、資料、裝置、應用程式和基礎結構之間進行監視和管理安全性的家鄉。
+從過去開始， [Microsoft Defender 資訊安全中心](/windows/security/threat-protection/microsoft-defender-atp/portal-overview)是 Microsoft Defender for Endpoint 的主版。 Enterprise 安全小組已使用它監視及協助回應潛在的持續威脅活動或資料違例的警示。 為了協助減少入口網站數目，Microsoft 365 Defender 將會成為監控和管理整個 Microsoft 身分識別、資料、裝置、應用程式和基礎結構的安全性的家鄉。
 
-Microsoft 365 security center 中的 Microsoft Defender for Endpoint[可將受管理的安全性服務提供者 (MSSPs) 的存取](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)權[授與 Microsoft defender security center](mssp-access.md)中的相同存取方式。
-
+Microsoft 365 defender 中的 Microsoft Defender for Endpoint 可以在[microsoft defender security center 中授與存取](mssp-access.md)[受管理的安全性服務提供者 (MSSPs) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access)相同方式。
 
 > [!IMPORTANT]
-> 您在「Microsoft 365 安全性中心」所看到的專案取決於您目前的訂閱。 例如，如果您沒有用於 Office 365 的 Microsoft Defender 授權，則不會顯示電子郵件 & 協同作業區段。
+> 您在 Microsoft 365 Defender 中所看到的內容取決於您目前的訂閱。 例如，如果您沒有用於 Office 365 的 Microsoft Defender 授權，則不會顯示電子郵件 & 協同作業區段。
 
->[!Note]
->無法使用新的整合入口網站：
+> [!Note]
+> Microsoft 365無法使用 Defender：
 >- 我們政府社群雲端 (GCC) 
 >- GCC 高) ，我們政府社群雲端高 (
 >- 美國國防部
 >- 具有商業授權的所有美國政府機構
 
-請參閱改良的 Microsoft 365 安全性中心： [https://security.microsoft.com](https://security.microsoft.com) 。
+請看一下 Microsoft 365 Defender： [https://security.microsoft.com](https://security.microsoft.com) 。
 
-深入了解優點：[Microsoft 365 安全性中心的概觀](overview-security-center.md)
+深入瞭解好處： [Microsoft 365 Defender 的概述](overview-security-center.md)
 
 ## <a name="whats-changed"></a>變更的項目
 
-此表格是 Microsoft Defender 資訊安全中心與 Microsoft 365 安全中心之間的變更的快速參考。
+此表格是 Microsoft Defender 資訊安全中心和 Microsoft 365 Defender 之間的變更的快速參考。
 
 ### <a name="alerts-and-actions"></a>警示和動作
 
 | 區域 | 變更描述 |
 |---------|---------|
-| [事件 & 警示](incidents-overview.md)  | 在 Microsoft 365 的安全性中心內，您可以管理所有端點、電子郵件及身分識別的事件和警示。 我們已融合經驗，以協助您更輕鬆地找到相關的事件。 如需詳細資訊，請參閱 [事件概述](incidents-overview.md)。   |
+| [事件 & 警示](incidents-overview.md)  | 在 Microsoft 365 Defender 中，您可以管理所有端點、電子郵件和身分識別的事件及警示。 我們已融合經驗，以協助您更輕鬆地找到相關的事件。 如需詳細資訊，請參閱 [事件概述](incidents-overview.md)。   |
 | [搜捕](advanced-hunting-overview.md)  |  修改在 Microsoft Defender for Endpoint 中建立的自訂偵測規則，以包含身分識別和電子郵件表格，會自動將其移至 Microsoft 365 Defender。 其對應的提醒也會出現在 Microsoft 365 Defender 中。 如需這些變更的詳細資訊，請參閱 [遷移自訂偵測規則](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules)。 <br><br>`DeviceAlertEvents`Microsoft 365 Defender 中無法使用「高級搜尋」表格。 若要在 Microsoft 365 Defender 中查詢裝置特有的警示資訊，您可以使用 `AlertInfo` 和 `AlertEvidence` 表格來從一組不同的來源取得更多資訊。 在不 DeviceAlertEvents 的情況下，使用 [寫入查詢](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)製作下一個裝置相關的查詢。|
-|[控制中心](m365d-action-center.md)    | 列出遵循自動調查和修正動作所採取的擱置及已完成動作。 先前，Microsoft Defender 資訊安全中心中的行動中心是針對裝置上所執行的修復動作和已完成的動作列出，而且自動調查會列出警示和狀態。 在 [改進的 Microsoft 365 安全性中心] 中，行動中心會將修正動作和調查集中在電子郵件、裝置和使用者上，全部都位於一個位置。  |
+|[控制中心](m365d-action-center.md)    | 列出遵循自動調查和修正動作所採取的擱置及已完成動作。 先前，Microsoft Defender 資訊安全中心中的行動中心是針對裝置上所執行的修復動作和已完成的動作列出，而且自動調查會列出警示和狀態。 在改進的 Microsoft 365 Defender 中，行動中心會將修正動作和調查集中在電子郵件、裝置和使用者上，全部都位於一個位置。  |
 | [威脅分析](threat-analytics.md) |  移至導覽列的頂端，以方便探索和使用。 現在包括端點的威脅資訊，以及電子郵件與共同作業。    |
 
 ### <a name="endpoints"></a>端點
@@ -118,7 +116,7 @@ Microsoft 365 security center 中的 Microsoft Defender for Endpoint[可將受�
 |---------|---------|
 | 報告  | 請參閱報告中的端點和電子郵件 & 共同作業，包括威脅防護、裝置健康情況和合規性，以及易受攻擊的裝置。 |
 | 健康情況  |  目前[Microsoft 365 系統管理中心](https://admin.microsoft.com/)的「服務健康情況」頁面連結。 |
-| 設定 |  管理 Microsoft 365 安全性中心的設定、Microsoft 365 Defender、端點、電子郵件 & 共同作業、身分識別及裝置探索。   |
+| 設定 |  管理 Microsoft 365 Defender、端點、電子郵件 & 共同作業、身分識別及裝置探索的設定。   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 安全性導覽和功能
 
@@ -154,7 +152,7 @@ Microsoft 365 security center 中的 Microsoft Defender for Endpoint[可將受�
 - 與威脅相關的事件檢視。
 - 用於快速識別及使用報告中可採取動作資訊的增強體驗。
 
-您可以從 Microsoft 365 security center 的左上方導覽列中存取威脅分析，或是從顯示組織之主要威脅的專用儀表板卡存取。
+您可以從 Microsoft 365 Defender 的上方左導覽列，或是從顯示組織之主要威脅的專用儀表板卡，存取威脅分析。
 
 深入瞭解如何 [使用威脅分析追蹤和回應新興威脅](./threat-analytics.md)。
 
@@ -172,11 +170,11 @@ Microsoft 365 security center 中的 Microsoft Defender for Endpoint[可將受�
 
 ### <a name="siem-api-connections"></a>SIEM API 連接
 
-如果您使用 [Defender For ENDPOINT SIEM API](../defender-endpoint/enable-siem-integration.md)，您可以繼續執行。 我們已在 API 負載上新增連結，指向 [警示] 頁面或 Microsoft 365 安全性入口網站中的 [事件] 頁面。 新的 API 欄位包括 LinkToMTP 及 IncidentLinkToMTP。 如需詳細資訊，請參閱重新導向[從 Microsoft Defender to Endpoint to to the Microsoft 365 security center 的帳戶](./microsoft-365-security-mde-redirection.md)。
+如果您使用 [Defender For ENDPOINT SIEM API](../defender-endpoint/enable-siem-integration.md)，您可以繼續執行。 我們已在 API 負載上新增連結，指向 [警示] 頁面或 Microsoft 365 安全性入口網站中的 [事件] 頁面。 新的 API 欄位包括 LinkToMTP 及 IncidentLinkToMTP。 如需詳細資訊，請參閱重新導向[從 Microsoft Defender for Endpoint to to Microsoft 365 Defender 的帳戶](./microsoft-365-security-mde-redirection.md)。
 
 ### <a name="email-alerts"></a>電子郵件警示
 
-您可以繼續使用用於端點的電子郵件警示。 我們已新增電子郵件中的新連結，指向 [提醒] 頁面或 Microsoft 365 安全性中心的 [事件] 頁面。 如需詳細資訊，請參閱重新導向[從 Microsoft Defender to Endpoint to to the Microsoft 365 security center 的帳戶](./microsoft-365-security-mde-redirection.md)。
+您可以繼續使用用於端點的電子郵件警示。 我們已在電子郵件中新增連結，指向 [提醒] 頁面或 Microsoft 365 Defender 中的 [事件] 頁面。 如需詳細資訊，請參閱重新導向[從 Microsoft Defender for Endpoint to to Microsoft 365 Defender 的帳戶](./microsoft-365-security-mde-redirection.md)。
 
 ### <a name="managed-security-service-providers-mssp"></a>受管理的安全性服務提供者 (MSSP) 
 
@@ -184,6 +182,6 @@ Microsoft 365 security center 中的 Microsoft Defender for Endpoint[可將受�
 
 ## <a name="related-information"></a>相關資訊
 
-- [Microsoft 365 安全性中心](overview-security-center.md)
-- [Microsoft 365 security center 中的 Microsoft Defender for Endpoint](microsoft-365-security-center-mde.md)
-- [將帳戶從 Microsoft Defender for Endpoint 重新導向至 Microsoft 365 的安全性中心](microsoft-365-security-mde-redirection.md)
+- [Microsoft 365 Defender](overview-security-center.md)
+- [Microsoft 365 defender 中的 Microsoft defender for Endpoint](microsoft-365-security-center-mde.md)
+- [將帳戶從 Microsoft Defender for Endpoint 重新導向至 Microsoft 365 Defender](microsoft-365-security-mde-redirection.md)

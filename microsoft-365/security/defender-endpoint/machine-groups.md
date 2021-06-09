@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4fc2768392e818f74600e3c2d749b6e95bf957e4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: d4f62acde4e7d790c7a7c8635f51c99f0823687d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259412"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842767"
 ---
 # <a name="create-and-manage-device-groups"></a>建立及管理裝置群組
 
@@ -75,7 +75,7 @@ ms.locfileid: "52259412"
     >[!NOTE]
     >您只可將存取權授與指派給 RBAC 角色的 Azure AD 使用者群組。
 
-6. 按一下 [關閉 **]**。 設定變更。
+6. 按一下 **[關閉]**。 設定變更。
 
 ## <a name="manage-device-groups"></a>管理裝置群組
 
@@ -111,4 +111,4 @@ ms.locfileid: "52259412"
 
 - [使用以角色為基礎的存取控制來管理入口網站存取](rbac.md)
 - [建立及管理裝置標記](machine-tags.md)
-- [使用 Graph API 取得租使用者群組的清單](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [使用 Graph API 取得租使用者群組的清單](/graph/api/device-list-memberof)

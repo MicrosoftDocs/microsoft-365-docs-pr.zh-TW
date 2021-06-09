@@ -1,6 +1,6 @@
 ---
 title: 定義資訊屏障原則
-description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
+description: 瞭解如何在 Microsoft Teams 中定義資訊障礙的原則。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b245a0f7ca0845024fec0c498aca4c7d447f14ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ce387799a2f9e6d6cdffe063d3adf7310d7e7757
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928013"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842719"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -29,24 +29,24 @@ ms.locfileid: "50928013"
 本文說明如何規劃、定義、實施及管理資訊屏障原則。 包含數個步驟，且工作流程分為數個部分。 在您開始定義 (或編輯) 資訊屏障原則之前，請務必通讀 [必要條件](#prerequisites) 和整個程式。
 
 > [!TIP]
-> 本文包含 [範例案例](#example-contosos-departments-segments-and-policies) 和 [可下載的 Excel 活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) ，可協助您規劃及定義資訊障礙原則。
+> 本文包含[範例案例](#example-contosos-departments-segments-and-policies)和[可下載的 Excel 活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)，可協助您規劃及定義資訊障礙原則。
 
-## <a name="concepts-of-information-barrier-policies"></a>資訊屏障原則的概念
+## <a name="concepts-of-information-barrier-policies"></a>資訊屏障原則概念
 
 當您定義資訊障礙的原則時，您會使用使用者帳戶屬性、區段、「封鎖」和/或「允許」原則，以及原則應用程式。
 
-- 使用者帳戶屬性是在 [Azure Active Directory (或 Exchange Online) 中定義。 這些屬性可包含部門、職稱、位置、小組名稱及其他工作設定檔詳細資料。 
-- 區段是在安全性 & 合規性中心使用選取的 **使用者帳戶屬性** 定義的使用者集合。  (請參閱 [支援的屬性清單](information-barriers-attributes.md)。 ) 
-- 資訊屏障原則決定通訊限制或限制。 當您定義資訊屏障原則時，可以選擇兩種原則：
+- 使用者帳戶屬性會在 Azure Active Directory (或 Exchange Online) 中定義。 這些屬性可能包括部門、職稱、地區、小組名稱及其他工作設定檔詳細資料。 
+- 區段是在安全性 & 合規性中心使用選取的 **使用者帳戶屬性** 定義的使用者集合。 (請參閱 [支援屬性的清單](information-barriers-attributes.md)。)
+- 資訊屏障原則會決定通訊限制。 定義資訊屏障原則時，您可以選擇兩種原則：
     - 「封鎖」原則防止一個區段與另一個區段通訊。
     - 「允許」原則允許一個區段只與特定其他的區段進行通訊。
-- 原則應用程式是在定義所有資訊屏障原則之後完成，您準備好將它們套用到您的組織中。
+- 原則應用程式會在定義所有資訊屏障原則之後完成，而且您已準備好在組織中套用這些原則。
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概覽
 
 | 階段 | 涉及的內容 |
 |:--------|:------------------|
-| [請確定符合先決條件](#prerequisites) | -確認您具備必要的 [授權和許可權](information-barriers.md#required-licenses-and-permissions)<br/>-確認您的目錄包含分割使用者的資料<br/>-針對 Microsoft 團隊啟用範圍型目錄搜尋<br/>-請確定已開啟審核記錄<br/>-確定沒有 Exchange 通訊錄原則已就緒<br/>-提供 (範例的使用 PowerShell) <br/>-提供 Microsoft 團隊的系統管理員同意 (步驟包括)  |
+| [請確定符合先決條件](#prerequisites) | -確認您具備必要的 [授權和許可權](information-barriers.md#required-licenses-and-permissions)<br/>-確認您的目錄包含分割使用者的資料<br/>-啟用 Microsoft Teams 的範圍式目錄搜尋<br/>-請確定已開啟審核記錄<br/>-確定沒有任何 Exchange 的通訊錄原則存在<br/>-提供 (範例的使用 PowerShell) <br/>-提供 Microsoft Teams (步驟的系統管理員同意)  |
 | [第1部分：分割組織中的使用者](#part-1-segment-users) | -決定所需的原則<br/>-建立區段清單以定義<br/>-識別要使用的屬性<br/>-以原則篩選的條款定義區段 |
 | [第2部分：定義資訊障礙原則](#part-2-define-information-barrier-policies) | -定義您的原則 (未套用) <br/>-從兩種 (封鎖或允許) 選擇 |
 | [第3部分：套用資訊障礙原則](#part-3-apply-information-barrier-policies) | -將原則設為主動狀態<br/>-執行原則應用程式<br/>-查看原則狀態 |
@@ -57,26 +57,26 @@ ms.locfileid: "50928013"
 
 除了 [必要的授權和許可權](information-barriers.md#required-licenses-and-permissions)之外，請確定符合下列需求：
 
-- 目錄資料-確保您的組織結構反映在目錄資料中。 若要採取此動作，請確定已在 Azure Active Directory (或 Exchange Online) 中正確填入使用者帳戶屬性（如群組成員資格、部門名稱等）。 若要深入了解，請參閱下列資源：
+- 目錄資料-確保您的組織結構反映在目錄資料中。 若要採取此動作，請確定在 Azure Active Directory (或 Exchange Online) 中正確填入使用者帳戶屬性（如群組成員資格、部門名稱等等）。 若要深入了解，請參閱下列資源：
   - [資訊屏障原則的屬性](information-barriers-attributes.md)
   - [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [使用 Office 365 PowerShell 中設定使用者帳戶屬性](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- 範圍型目錄搜尋-在您定義組織的第一個資訊障礙原則之前，您必須 [在 Microsoft 小組中啟用範圍型目錄搜尋](/MicrosoftTeams/teams-scoped-directory-search)。 在您設定或定義資訊屏障原則之前，請先等候至少24小時後，再啟用範圍目錄搜尋。
+- 範圍型目錄搜尋-在您定義組織的第一個資訊障礙原則之前，您必須[在 Microsoft Teams 中啟用範圍內目錄搜尋](/MicrosoftTeams/teams-scoped-directory-search)。 在您設定或定義資訊屏障原則之前，請先等候至少24小時後，再啟用範圍目錄搜尋。
 
 - 只有在目標使用者已獲指派 EXO 授權時，EXO 授權 IB 原則才能運作。
 
 - 審核記錄-為了查詢原則應用程式的狀態，必須開啟審核記錄。 建議您先啟用審核，再開始定義區段或原則。 若要深入瞭解，請參閱 [開啟或關閉審核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
-- 無通訊錄原則-在您定義及套用資訊屏障原則之前，請確定沒有任何 Exchange 通訊錄原則存在到位。 資訊障礙是以通訊錄原則為基礎，但這兩種原則不相容。 如果您有這類原則，請務必先 [移除您的通訊錄原則](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 一旦資訊障礙原則已啟用，且已啟用階層式通訊錄，所有 ***未包含*** 在資訊屏障區段中的使用者，都會在 Exchange online 中看到 [階層式通訊錄](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) 。
+- 無通訊錄原則-在您定義及套用資訊屏障原則之前，請確定沒有任何 Exchange 的通訊錄原則存在到位。 資訊屏障是以通訊錄原則為基礎，但兩種原則不相容。 如果您有這類原則，請務必先 [移除您的通訊錄原則](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 一旦資訊障礙原則已啟用，且已啟用階層式通訊錄，所有 ***未包含*** 在資訊屏障區段中的使用者，都會在線上 Exchange 中看到 [階層式通訊錄](/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
-- 目前 PowerShell 中，資訊屏障原則是在 Office 365 安全性 & 規範中心使用 PowerShell Cmdlet 來定義及管理。 雖然本文提供了數個範例，但您需要熟悉 PowerShell Cmdlet 及參數。 您也會需要 Azure PowerShell 模組。
+- PowerShell 目前，使用 PowerShell Cmdlet 在 Office 365 安全性 & 規範中心內定義及管理資訊屏障原則。 雖然本文提供了數個範例，但您需要熟悉 PowerShell Cmdlet 及參數。 您也會需要 Azure PowerShell 模組。
     - [連線到安全性與合規性中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
     - [安裝 Azure PowerShell 模組](/powershell/azure/install-az-ps?view=azps-2.3.2)
 
-- 管理員對 Microsoft 小組資訊障礙的同意-當您的 IB 原則已到位時，可以從群組中移除非 IB 合規性使用者 (亦即，小組通道是以群組) 為基礎。 這種設定可協助確保您的組織符合原則及規定。 使用下列程式可讓資訊障礙原則在 Microsoft 小組中如預期的方式運作。
+- 系統管理員同意 Microsoft Teams 的資訊障礙-當您的 IB 原則已到位時，可以從群組 (（Teams 通道，其為以) 群組為基礎）中移除非 IB 相容性使用者。 這種設定可協助確保您的組織符合原則及規定。 使用下列程式可讓資訊障礙原則在 Microsoft Teams 中如期運作。
 
-   1. 預備必要條件：從 [安裝 azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)安裝 azure PowerShell。
+   1. 先決條件：從[安裝 Azure PowerShell](/powershell/azure/install-az-ps)安裝 Azure PowerShell。
 
    1. 執行下列 PowerShell Cmdlet：
 
@@ -88,7 +88,7 @@ ms.locfileid: "50928013"
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
-   1. 出現提示時，使用您的公司或學校帳戶登入 Office 365。
+   1. 出現提示時，使用您的工作或學校帳戶登入 Office 365。
 
    1. 在 [ **要求的許可權** ] 對話方塊中，複查資訊，然後選擇 [ **接受**]。 下列提供應用程式要求的許可權。
       
@@ -99,7 +99,7 @@ ms.locfileid: "50928013"
 當滿足所有必要條件時，請繼續進行下一節。
 
 > [!TIP]
-> 為了協助您準備方案，本文包含範例案例。 [請參閱 Contoso 的部門、區段和原則](#example-contosos-departments-segments-and-policies)。<p>此外，也可以使用可下載的 Excel 活頁簿，協助您規劃及定義您的區段和原則 (及建立 PowerShell Cmdlet) 。 [取得活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)。
+> 為了協助您準備方案，本文包含範例案例。 [請參閱 Contoso 的部門、區段和原則](#example-contosos-departments-segments-and-policies)。<p>此外，也可以使用可下載的 Excel 活頁簿，協助您規劃及定義您的區段和原則， (並建立 PowerShell Cmdlet) 。 [取得活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)。
 
 ## <a name="part-1-segment-users"></a>第1部分：區段使用者
 
@@ -124,7 +124,7 @@ ms.locfileid: "50928013"
 決定您的組織目錄資料中所要用來定義段落的屬性。 您可以使用 *部門*、 *MemberOf* 或任何支援的屬性。 請確定您為使用者選取的屬性中有值。 [請參閱資訊障礙的支援屬性清單](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
-> **繼續進行下一節之前，請確定您的目錄資料具有可用於定義區段之屬性的值**。 如果您的目錄資料沒有您想要使用的屬性值，則必須更新使用者帳戶，以包含該資訊，然後再繼續進行資訊障礙。 若要取得這項協助，請參閱下列資源：<br/>- [使用 Office 365 PowerShell 設定使用者帳戶屬性](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **繼續進行下一節之前，請確定您的目錄資料具有可用於定義區段之屬性的值**。 如果您的目錄資料沒有您想要使用的屬性值，則必須更新使用者帳戶，以包含該資訊，然後再繼續進行資訊障礙。 若要取得這項協助，請參閱下列資源：<br/>- [使用 Office 365 設定使用者帳戶屬性 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>使用 PowerShell 定義線段
 
@@ -177,17 +177,17 @@ ms.locfileid: "50928013"
 
 在您的使用者區段清單和您想要定義的資訊屏障原則中，選取案例，然後依照步驟執行。
 
-- [案例1：封鎖區段之間的通訊](#scenario-1-block-communications-between-segments)
-- [案例2：允許區段只與其他一個段落通訊](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
+- [案例 1：封鎖區段之間的通訊](#scenario-1-block-communications-between-segments)
+- [案例 2：允許區段只與其他一個區段通訊](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
 > 請 **務必在定義原則時，不要將多個原則指派給一個段落**。 例如，如果您為一個稱為 *sales* 的區段定義一個原則，請勿為 *sales* 定義其他原則。<p> 此外，在您定義資訊屏障原則時，請務必將這些原則設為非使用中狀態，直到您準備好套用這些原則為止。 定義 (或編輯) 原則不會影響使用者，除非這些原則設為 [使用中狀態]，然後套用。
 
  (請參閱 [範例： Contoso 的資訊屏障原則](#contosos-information-barrier-policies) 中的專案。 ) 
 
-### <a name="scenario-1-block-communications-between-segments"></a>案例1：封鎖區段之間的通訊
+### <a name="scenario-1-block-communications-between-segments"></a>案例 1：封鎖區段之間的通訊
 
-當您想要封鎖彼此之間的通訊時，您會定義兩個原則：每個方向一個。 每個原則只會封鎖單向通訊。
+當您想要封鎖彼此之間的通訊時，您會定義兩個原則：每個方向一個。 每個原則只單向封鎖通訊。
 
 例如，假設您想要封鎖段 A 與區段 B 之間的通訊。在此情況下，您會定義一個原則，讓區段 A 無法與段落 B 通訊，然後定義第二個原則，以防止 A 欄位 B 與 A 欄位進行通訊。
 
@@ -208,7 +208,7 @@ ms.locfileid: "50928013"
    - 如有需要， () [定義原則以允許區段只與其他一個網段進行通訊](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
    - 在定義所有原則之後 () 套用 [資訊屏障原則](#part-3-apply-information-barrier-policies)
 
-### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>案例2：允許區段只與其他一個段落通訊
+### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>案例 2：允許區段只與其他一個區段通訊
 
 1. 若要允許一個區段只與一個其他的區段進行通訊，請使用具有 **SegmentsAllowed** 參數的 **InformationBarrierPolicy** Cmdlet。
 
@@ -257,7 +257,7 @@ ms.locfileid: "50928013"
 
 | 若要查看此資訊 | 採取此動作 |
 |:---------------|:----------|
-| 使用者帳戶 | 使用具有 Identity 參數的 **InformationBarrierRecipientStatus** Cmdlet。 <p> 語法： `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 <p> 範例：`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此範例中，我們會參考 Office 365 中的兩個使用者帳戶： *meganb* for *Megan* 和 *alexw* for *Alex*。 <p>  (您也可以將此 Cmdlet 用於單一使用者： `Get-InformationBarrierRecipientStatus -Identity <value>`)  <p> 此 Cmdlet 會傳回使用者的相關資訊，例如屬性值以及所套用的任何資訊屏障原則。|
+| 使用者帳戶 | 使用具有 Identity 參數的 **InformationBarrierRecipientStatus** Cmdlet。 <p> 語法： `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 <p> 範例：`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此範例中，我們會參考 Office 365： *Megan* 的 *meganb* 中的兩個使用者帳戶，以及 *Alex* 的 *alexw* 。 <p>  (您也可以將此 Cmdlet 用於單一使用者： `Get-InformationBarrierRecipientStatus -Identity <value>`)  <p> 此 Cmdlet 會傳回使用者的相關資訊，例如屬性值以及所套用的任何資訊屏障原則。|
 | 段 | 使用 **OrganizationSegment** Cmdlet。<p> 語法： `Get-OrganizationSegment` <p> 此 Cmdlet 會顯示針對您組織所定義的所有網段清單。 |
 | 資訊屏障原則 | 使用 **InformationBarrierPolicy** Cmdlet。 <p> 語法： `Get-InformationBarrierPolicy` <p> 此 Cmdlet 會顯示已定義的資訊屏障原則清單，及其狀態。 |
 | 最新的資訊屏障原則應用程式 | 使用 **InformationBarrierPoliciesApplicationStatus** Cmdlet。 <p> 語法： `Get-InformationBarrierPoliciesApplicationStatus`<p> 此 Cmdlet 會顯示原則應用程式是否已完成、失敗或進行中的資訊。 |
@@ -276,19 +276,19 @@ ms.locfileid: "50928013"
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>範例： Contoso 的部門、區段和原則
 
-若要查看組織如何使用定義區段和原則的方法，請考慮下列範例。
+若要了解組織如何接近定義區隔和原則，請考慮下列範例。
 
 ### <a name="contosos-departments-and-plan"></a>Contoso 的部門與計畫
 
-Contoso 有五個部門： HR、Sales、Marketing、Research 及製造業。 為了維持與業界法規的相容性，某些部門中的人員不應該與其他部門通訊，如下表所列：
+Contoso 有五個部門：人力資源、銷售、行銷、研發及製造。 為了維持與業界法規的相容性，某些部門中的人員不應該與其他部門通訊，如下表所列：
 
-| 段 | 可以交談 | 無法交談 |
+| 區隔 | 可以相互通訊 | 不可以相互通訊 |
 |:----------|:--------------|:-----------------|
-| 人力資源 | 所有人 |  (無限制)  |
-| 銷售 | HR、行銷、製造業 | 參考資料 |
-| 行銷 | 所有人 |  (無限制)  |
-| 參考資料 | HR、行銷、製造業 | 銷售 |
-| 製造業 | 人力資源、行銷 | HR 或 Marketing 以外的任何人員 |
+| 人力資源 | 所有人 | (沒有限制) |
+| 銷售 | HR、行銷、製造業 | 研發 |
+| 行銷 | 所有人 | (沒有限制) |
+| 研發 | HR、行銷、製造業 | 銷售 |
+| 製造 | 人力資源、行銷 | HR 或 Marketing 以外的任何人員 |
 
 針對此結構，Contoso 的計畫包括三項資訊障礙原則：
 
@@ -298,19 +298,19 @@ Contoso 有五個部門： HR、Sales、Marketing、Research 及製造業。 為
 
 在此案例中，您不需要為 HR 或 Marketing 定義原則。
 
-### <a name="contosos-defined-segments"></a>Contoso 的定義區段
+### <a name="contosos-defined-segments"></a>Contoso 的已定義區隔
 
-Contoso 會使用 Azure Active Directory 中的部門屬性定義區段，如下所示：
+Contoso 會使用 Azure Active Directory 中的 [部門] 屬性來定義區段，如下所示：
 
 | 部門 | 段定義 |
 |:-------------|:---------------------|
 | 人力資源 | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` |
 | 銷售 | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"` |
 | 行銷 | `New-OrganizationSegment -Name "Marketing" -UserGroupFilter "Department -eq 'Marketing'"` |
-| 參考資料 | `New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"` |
-| 製造業 | `New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"` |
+| 研發 | `New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"` |
+| 製造 | `New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"` |
 
-在定義的區段中，Contoso 會繼續定義原則。
+定義區隔之後，Contoso 會繼續定義原則。
 
 ### <a name="contosos-information-barrier-policies"></a>Contoso 的資訊屏障原則
 
@@ -318,9 +318,9 @@ Contoso 定義三個原則，如下表所述：
 
 | 原則 | 原則定義 |
 |:---------|:--------------------|
-| **原則1：防止銷售人員與調查進行通訊** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此範例中，資訊屏障原則稱為「 *銷售-調研*」。 當您使用並套用此原則時，會協助避免銷售資料段中的使用者與研究資料段中的使用者進行通訊。 這項原則是單向原則;它不會防止「調查」與銷售進行通訊。 針對此，需要原則2。 |
-| **原則2：防止調查與銷售通訊** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此範例中，資訊屏障原則稱為「 *調研-銷售*」。 當您使用並套用此原則時，它會協助避免使用調查區段中的使用者與銷售部門中的使用者進行通訊。 |
-| **原則3：允許製造業只與 HR 和 Marketing 通訊** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> 在此情況下，資訊屏障原則稱為「 *製造-HRMarketing*。 當您使用並套用此原則時，製造只能與 HR 和 Marketing 進行通訊。 HR 和 Marketing 不限制與其他的區段進行通訊。 |
+| **原則 1：防止銷售部門與研發部門相互通訊** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此範例中，資訊屏障原則稱為 *Sales-Research*。 當此原則為作用中且已套用時，有助於防止位於銷售區隔中的使用者與研發區隔中的使用者通訊。 這項原則是單向原則;它不會防止「調查」與銷售進行通訊。 因此我們需要原則 2。 |
+| **原則 2：防止研發部門與銷售部門相互通訊** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此範例中，資訊屏障原則稱為 *Research-Sales*。 當此原則為作用中且已套用時，有助於防止位於研發區隔中的使用者與銷售區隔中的使用者通訊。 |
+| **原則3：允許製造業只與 HR 和 Marketing 通訊** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> 在此案例中，資訊屏障政策稱為 *Manufacturing-HRMarketing*。 當此原則為作用中且已套用時，製造部門只能與人力資源部門和行銷部門通訊。 HR 和 Marketing 不限制與其他的區段進行通訊。 |
 
 在定義的區段和原則中，Contoso 會執行 **InformationBarrierPoliciesApplication** Cmdlet 來套用原則。
 
@@ -329,6 +329,6 @@ Contoso 定義三個原則，如下表所述：
 ## <a name="resources"></a>資源
 
 - [取得資訊障礙的概覽](information-barriers.md)
-- [深入瞭解 Microsoft 小組中的資訊障礙](/MicrosoftTeams/information-barriers-in-teams)
+- [深入瞭解 Microsoft Teams 中的資訊障礙](/MicrosoftTeams/information-barriers-in-teams)
 - [深入瞭解 SharePoint 線上中的資訊障礙](/sharepoint/information-barriers)
 - [深入瞭解 OneDrive 中的資訊障礙](/onedrive/information-barriers)

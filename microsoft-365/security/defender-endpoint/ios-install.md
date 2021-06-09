@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f2b9a1365a27bb7397aea51dcd5bc9e2631afe2
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 371208433cbb0f65ab5a2808318c03dae6bb6d8b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624702"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842282"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
@@ -44,7 +44,7 @@ ms.locfileid: "52624702"
 - 確定已為您的使用者執行 iOS 註冊。 使用者必須具有指派的 Defender for Endpoint 授權，才能在 iOS 上使用 Defender for Endpoint。 如需指派授權的相關指示，請參閱 [指派授權給使用者](/azure/active-directory/users-groups-roles/licensing-groups-assign) 。
 
 > [!NOTE]
-> 現在，您可以在 [Apple App Store](https://aka.ms/mdatpiosappstore)中使用 iOS 上的 Microsoft Defender for Endpoint。
+> IOS 上的 Microsoft Defender for Endpoint 可用於 [Apple 應用程式存放區](https://aka.ms/mdatpiosappstore)。
 
 ## <a name="deployment-steps"></a>部署步驟
 
@@ -78,9 +78,6 @@ ms.locfileid: "52624702"
 
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>自動載入 VPN 設定檔 (簡化型架) 
 
-> [!NOTE]
-> 自動-載入 VPN 設定檔目前正在預覽中，此區段中所述的步驟在正式發行之前，可能會受到大量修改。
-
 系統管理員可以設定 VPN 設定檔的自動設定。 這會自動設定 Defender for Endpoint VPN 設定檔，而不需要使用者在上架時執行此作業。 請注意，使用 VPN 是為了提供 Web 保護功能。 這不是一般 VPN，也就是本機/自我迴圈的 VPN，不會對裝置以外的流量進行流量。
 
 1. 在 [Microsoft 端點](https://go.microsoft.com/fwlink/?linkid=2109431)管理員系統管理中心中，移至 [**裝置** 設定配置  ->  **檔**  ->  **建立設定檔**]。
@@ -107,7 +104,7 @@ ms.locfileid: "52624702"
 
     ![自動產生之智慧型電話描述的螢幕擷取畫面](images/41627a709700c324849bf7e13510c516.png)
 
-2. 點擊 [Defender for Endpoint app] 圖示，然後依照螢幕指示完成上架步驟。 詳細資料包括 iOS 使用者接受 iOS 上的 Defender for Endpoint 所需的許可權。
+2. 點擊 [Defender for Endpoint 應用程式] 圖示 (MSDefender) 並依照螢幕指示完成上架步驟。 詳細資料包括 iOS 使用者接受 iOS 上的 Defender for Endpoint 所需的許可權。
 
 3. 成功上架後，裝置會在 Microsoft Defender 資訊安全中心中的 [裝置] 清單上開始顯示。
 
@@ -133,7 +130,7 @@ Intune 可讓您透過應用程式設定原則設定 iOS 應用程式的 Defende
 1. 在 [ *建立應用程式佈建原則* ] 頁面中，提供下列資訊：
     - 原則名稱
     - 平臺： Select iOS/iPadOS
-    - 目標應用程式：從清單中選取 **Microsoft Defender ATP**
+    - 目標應用程式：從清單中選取 [ **Microsoft Defender 端點** ]
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 端點管理員系統管理 Center5 的影像](images/ios-deploy-5.png)

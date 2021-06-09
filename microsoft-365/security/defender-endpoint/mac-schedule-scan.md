@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2c1dc16dc3fbb61a77e1d7348d47fdfd778c56e2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a93ea3427c72eb5529715b92cb18d01462493cc6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934510"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842851"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用 Microsoft Defender for Endpoint 排程掃描
 
@@ -104,4 +104,4 @@ ms.locfileid: "51934510"
 
 您也可以使用 Microsoft Intune 排程掃描。 當裝置從睡眠模式繼續時，可在[Microsoft Defender For Endpoint 的腳本](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP)中使用的[runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh)命令介面腳本將會保留。 
 
-如需如何在您的企業中使用此腳本的詳細指示，請參閱 [在 Intune 中的 macOS 裝置上使用命令介面腳本](https://docs.microsoft.com/mem/intune/apps/macos-shell-scripts) 。
+如需如何在您的企業中使用此腳本的詳細指示，請參閱 [在 Intune 中的 macOS 裝置上使用命令介面腳本](/mem/intune/apps/macos-shell-scripts) 。

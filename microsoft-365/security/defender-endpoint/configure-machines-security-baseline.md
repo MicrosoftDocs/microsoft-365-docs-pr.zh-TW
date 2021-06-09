@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fbdc0d02d4c5ba5cfda9773e62082217ba4f8c4e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a5f3d2de452a8a1ab201f558b93d45dfa6ded3e6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933598"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841543"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>將合規性提升至 Microsoft Defender for Endpoint security 基準
 
@@ -33,28 +33,28 @@ ms.locfileid: "51933598"
 
 >想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-安全性基準可確保根據安全性專家和專家 Windows 系統管理員的指導方針來設定安全性功能。 當部署時，用於端點安全性基準的 Defender 會將 Defender 設定為端點安全性控制，以提供最佳防護。
+安全性基準可確保根據安全性專家和專家 Windows 系統管理員的指導，設定安全性功能。 當部署時，用於端點安全性基準的 Defender 會將 Defender 設定為端點安全性控制，以提供最佳防護。
 
-若要瞭解安全性基準，以及如何使用設定檔在 Intune 上指派它們，請 [閱讀此 FAQ](https://docs.microsoft.com/intune/security-baselines#q--a)。
+若要瞭解安全性基準，以及如何使用設定檔在 Intune 上指派它們，請 [閱讀此 FAQ](/intune/security-baselines#q--a)。
 
 在您部署及追蹤安全性基準的符合性之前，您可以：
 - [將裝置註冊到 Intune 管理](configure-machines.md#enroll-devices-to-intune-management)
 - [確定您具備必要的許可權](configure-machines.md#obtain-required-permissions)
 
 ## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>比較 Microsoft Defender for Endpoint 和 Windows Intune 安全性基準
-Windows Intune 安全性基準提供一組完整的建議設定，以安全地設定執行 Windows 的裝置，包括瀏覽器設定、PowerShell 設定，以及 Microsoft Defender 防病毒等某些安全性功能的設定。 相反地，「終結點」基準會提供設定，以優化 Defender for Endpoint 堆疊中所有的安全性控制，包括端點偵測和回應 (EDR) 的設定，以及 Windows Intune 安全性基準中也會找到的設定。 如需每個基準的詳細資訊，請參閱：
+Windows Intune 安全性基準會提供一組完整的建議設定，以安全地設定執行 Windows 的裝置，包括瀏覽器設定、PowerShell 設定，以及某些安全性功能（如 Microsoft Defender 防毒軟體）的設定。 相反地，「終結點」基準會提供設定，以優化所有的 endpoint 堆疊中的安全性控制，包括 Windows Intune 安全性基準中 EDR) 的端點偵測和回應 (的設定，以及也位於 Intune 安全性基準中的設定。 如需每個基準的詳細資訊，請參閱：
 
-- [Intune 的 Windows 安全性基準設定](https://docs.microsoft.com/intune/security-baseline-settings-windows)
-- [Intune 的 Microsoft Defender 端點基準設定](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
+- [Windows Intune 的安全性基準設定](/intune/security-baseline-settings-windows)
+- [Intune 的 Microsoft Defender 端點基準設定](/intune/security-baseline-settings-defender-atp)
 
-理想狀況下，架 to Defender for Endpoint 的裝置會同時部署這兩種基準： Windows Intune 安全性基準，最初為安全的 Windows，而在最上層的 Defender for Endpoint security 基準會以最優化方式設定 Defender for Endpoint security 控制項。 若要受益于風險和威脅的最新資料，並在比較基準演變時盡可能減少衝突，請在發行所有產品時，隨時套用最新的基準版本。
+理想狀況下，架 to Defender for endpoint 的裝置會同時部署這兩種基準：「Windows Intune 安全性基準」最初是安全的 Windows，而在最上層的 defender for endpoint security 基準會以最優化方式設定 defender for endpoint security 控制項。 若要受益于風險和威脅的最新資料，並在比較基準演變時盡可能減少衝突，請在發行所有產品時，隨時套用最新的基準版本。
 
 >[!NOTE]
 >已針對實體裝置優化端點安全性基準，目前不建議用於虛擬機器 (Vm) 或 VDI 端點。 某些基準設定會影響虛擬環境中的遠端互動會話。
 
 ## <a name="monitor-compliance-to-the-defender-for-endpoint-security-baseline"></a>監視對 Defender for Endpoint security 基準的合規性
 
-[裝置設定管理](configure-machines.md)上的 **安全性基準** 卡為已指派 Defender for Endpoint Security 基準的 Windows 10 裝置提供相容性概覽。
+[裝置設定管理](configure-machines.md)上的 **安全性基準** 卡會在已指派 Defender for Endpoint Security 基準的 Windows 10 裝置中，提供相容性的概覽。
 
 ![安全性基準卡](images/secconmgmt_baseline_card.png)<br>
 *顯示對 Defender for Endpoint security 基準的合規性的卡片*
@@ -73,12 +73,12 @@ Windows Intune 安全性基準提供一組完整的建議設定，以安全地�
 
 ## <a name="review-and-assign-the-microsoft-defender-for-endpoint-security-baseline"></a>檢查並指派 Microsoft Defender for Endpoint security 基準
 
-裝置設定管理會監控僅限專為端點安全性基準指派 Microsoft Defender 的 Windows 10 裝置的基準相容性。 您可以在 Intune 裝置管理上輕鬆查看基準，並將其指派給裝置。
+裝置設定管理會監控僅限明確指派 Microsoft Defender for Endpoint security 基準的 Windows 10 裝置的基準相容性。 您可以在 Intune 裝置管理上輕鬆查看基準，並將其指派給裝置。
 
 1. 選取 [**安全性基準** 卡] 上的 [**設定安全性基準**]，以移至 [Intune 裝置管理]。 會顯示類似的基準相容性綜述。
 
    >[!TIP]
-   > 或者，您可以在 Microsoft Azure 入口網站中，從 **所有服務 > Intune > 裝置安全性 > 安全性基準 > Microsoft DEFENDER ATP 基準**] 流覽至 Endpoint security 基準。
+   > 或者，您可以從所有服務 > Intune 流覽至 Microsoft Azure 入口網站的 Defender for Endpoint security 基準 **> 裝置安全性 > 安全性基準 > Microsoft Defender ATP 基準**。
 
 
 2. 建立新的設定檔。
@@ -102,7 +102,7 @@ Windows Intune 安全性基準提供一組完整的建議設定，以安全地�
    *在 Intune 上建立安全性基準設定檔*
 
 >[!TIP]
->Intune 上的安全性基準可讓您輕鬆地保護裝置，並保護您的裝置。 [深入瞭解 Intune 上的安全性基準](https://docs.microsoft.com/intune/security-baselines)。
+>Intune 上的安全性基準可讓您輕鬆地保護裝置，並保護您的裝置。 [深入瞭解 Intune 上的安全性基準](/intune/security-baselines)。
 
 >想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 

@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 9ff00c706b0fb336c178e227b1cb33eff9e9ebbc
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c5c76553ff3f0b32def5fbafbf2c8f010e49eeb2
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935218"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845415"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>疑難排解攻擊面降低規則
 
@@ -56,11 +56,11 @@ ms.locfileid: "51935218"
 
 攻擊面減少規則只會在裝置上運作，但有下列情況：
 
-- 端點正在執行 Windows 10 企業版，版本 1709 (也稱為「秋季建立者更新) 。
+- 端點執行 Windows 10 企業版，版本 1709 (也稱為「秋季建立者更新) 」。
 
-- 端點使用 Microsoft Defender 防病毒作為獨立的防防毒保護應用程式。 [使用任何其他防病毒應用程式會使 Microsoft DEFENDER AV 自行自行停用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+- 端點使用 Microsoft Defender 防毒軟體作為獨立的防防毒保護應用程式。 [使用任何其他防病毒應用程式會使 Microsoft DEFENDER AV 自行自行停用](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
-- 已啟用[即時保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
+- 已啟用[即時保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
 - 未啟用稽核模式。 使用群組原則將規則設定為 **停用** (值： **0**) 如 [啟用攻擊面降低規則](enable-attack-surface-reduction.md)中所述。
 
@@ -68,7 +68,7 @@ ms.locfileid: "51935218"
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>使用稽核模式來測試規則
 
-您可以在 [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 流覽 Windows Defender Test 基礎網站，以確認攻擊面降低規則一般會在裝置上預先設定的案例和程式中運作，也可以使用審計模式，啟用僅限報告的規則。
+您可以在[demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)中流覽 Windows Defender 測試基礎網站，以確認攻擊面降低規則一般會在裝置上預先設定的案例和程式運作，也可以使用審計模式，啟用僅限報告的規則。
 
 請遵循下列指示， [使用示範工具來查看攻擊面降低規則的運作方式](evaluate-attack-surface-reduction.md) ，以測試您所遇到之問題的特定規則。
 
@@ -100,7 +100,7 @@ ms.locfileid: "51935218"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>報告誤報或 false 負數
 
-使用 [Windows Defender 安全性情報 web 型提交表單](https://www.microsoft.com/wdsi/filesubmission) ，針對網路保護報告虛假的負數或假正值。 使用 Windows E5 訂閱，您也可以 [提供任何相關聯警示的連結](alerts-queue.md)。
+使用[Windows Defender Security 情報 web 型提交表單](https://www.microsoft.com/wdsi/filesubmission)，針對網路保護報告虛假的負數或假正值。 使用 Windows E5 訂閱，您也可以[提供任何相關聯警示的連結](alerts-queue.md)。
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>收集診斷資料以取得檔提交
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9da87dcb64f8c62966382e3a2888f03c49149a09
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 071b0e7597d334fe06d5045e06a5c4d82dd65609
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770423"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845387"
 ---
 # <a name="get-exposure-score"></a>取得暴險分數
 
@@ -97,7 +97,7 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [風險威脅 & 弱點管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [威脅 & 漏洞洩密分數](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [風險威脅 & 弱點管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [威脅 & 漏洞洩密分數](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

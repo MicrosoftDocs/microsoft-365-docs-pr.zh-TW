@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e1adf28823d6b86417c32578a89480958946c50d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 8312818fe06b5a25ae32bf1f9585a51fe8848de6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770550"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845375"
 ---
 # <a name="list-devices-by-software"></a>依軟體列出裝置
 
@@ -102,5 +102,5 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machi
 ```
 
 ## <a name="related-topics"></a>相關主題
-- [風險威脅 & 弱點管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [威脅 & 弱點軟體清單](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [風險威脅 & 弱點管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [威脅 & 弱點軟體清單](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

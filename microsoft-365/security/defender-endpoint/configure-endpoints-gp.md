@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 81a3b41fb8e38a224a030571093b2145d2efb3d4
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f607e36cef85f30fa1d6e073da871ac1c140684c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593426"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841831"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用群組原則的板載 Windows 10 裝置 
 
@@ -62,7 +62,7 @@ ms.locfileid: "52593426"
 
 2. 將 .zip 檔案的內容解壓至共用的唯讀位置，可供裝置存取。 您應該會有一個稱為 *OptionalParamsPolicy* 的資料夾，以及檔案 *WindowsDefenderATPOnboardingScript .cmd*。
 
-3. 開啟「 [群組原則管理主控台](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
+3. 開啟「 [群組原則管理主控台](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
 
 4. 在 [ **群組原則管理編輯器**] 中，移至 [ **電腦** 設定]、[ **喜好** 設定] 及 [控制台 **設定**]。
 
@@ -97,7 +97,7 @@ ms.locfileid: "52593426"
 
     - 將 _AtpConfiguration_ 複製到 _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ 原則 \\ PolicyDefinitions \\ en-US_
 
-2.  開啟 [群組原則管理主控台](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)，以滑鼠右鍵按一下您要設定的 GPO，然後按一下 [ **編輯**]。
+2.  開啟 [群組原則管理主控台](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)，以滑鼠右鍵按一下您要設定的 GPO，然後按一下 [ **編輯**]。
 
 3.  在 [ **群組原則管理編輯器**] 中，移至 [ **電腦** 設定]。
 
@@ -148,10 +148,10 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 
 原則 | 設定 
 :---|:---
-關閉即時保護|已停用
-開啟行為監控|已啟用
-掃描所有已下載的檔案和附件|已啟用
-監視電腦上的檔案和程式活動|已啟用
+關閉即時保護|停用
+開啟行為監控|啟用
+掃描所有已下載的檔案和附件|啟用
+監視電腦上的檔案和程式活動|啟用
 
 <br/>
 
@@ -161,7 +161,7 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 
 原則 | 設定 
 :---|:---
-執行排程掃描之前，請先檢查是否有最新的病毒和間諜軟體安全性情報 |已啟用
+執行排程掃描之前，請先檢查是否有最新的病毒和間諜軟體安全性情報 |啟用
 
 
 <br/>
@@ -208,7 +208,7 @@ Enable\Disable 範例集合|   Enabled-「在機器上啟用範例集合」已�
 
 2. 將 .zip 檔案的內容解壓至共用的唯讀位置，可供裝置存取。 您應該有一個名為 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-mm-dd* 的檔案。
 
-3. 開啟「 [群組原則管理主控台](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
+3. 開啟「 [群組原則管理主控台](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) 中，以滑鼠右鍵按一下您要設定 (GPO) 的群組原則物件，然後按一下 [ **編輯**]。
 
 4. 在 [ **群組原則管理編輯器**] 中，移至 [電腦設定] **、** [ **喜好** 設定] 及 [控制台 **設定**]。
 

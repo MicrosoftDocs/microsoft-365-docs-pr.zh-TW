@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: fa5d5b4470644e1ff50af46a8dd3f035cd9b3184
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346387"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842863"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 資源
 
@@ -99,17 +99,17 @@ ms.locfileid: "52346387"
 
 |Group        |案例                                   |命令                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
-|組態|開啟/關閉即時保護           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
-|組態|開啟/關閉雲端保護               |`mdatp config cloud --value [enabled/disabled]`                                   |
-|組態|開啟/關閉產品診斷程式            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
-|組態|開啟/關閉自動範例提交    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
-|組態|新增威脅名稱至允許清單      |`mdatp threat allowed add --name [threat-name]`                                   |
-|組態|從允許的清單中移除威脅名稱 |`mdatp threat allowed remove --name [threat-name]`                                |
-|組態|列出所有允許的威脅名稱              |`mdatp threat allowed list`                                                       |
-|組態|開啟 PUA 保護                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
-|組態|關閉 PUA 保護                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
-|組態|開啟 PUA 保護的審計模式      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
-|組態|開啟/關閉 passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
+|設定|開啟/關閉即時保護           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
+|設定|開啟/關閉雲端保護               |`mdatp config cloud --value [enabled/disabled]`                                   |
+|設定|開啟/關閉產品診斷程式            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
+|設定|開啟/關閉自動範例提交    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
+|設定|新增威脅名稱至允許清單      |`mdatp threat allowed add --name [threat-name]`                                   |
+|設定|從允許的清單中移除威脅名稱 |`mdatp threat allowed remove --name [threat-name]`                                |
+|設定|列出所有允許的威脅名稱              |`mdatp threat allowed list`                                                       |
+|設定|開啟 PUA 保護                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
+|設定|關閉 PUA 保護                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
+|設定|開啟 PUA 保護的審計模式      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
+|設定|開啟/關閉 passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
 |診斷  |變更記錄層級                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
 |診斷  |產生診斷記錄                   |`mdatp diagnostic create --path [directory]`                                      |
 |健康情況       |檢查產品的健康情況                 |`mdatp health`                                                                    |
@@ -119,7 +119,7 @@ ms.locfileid: "52346387"
 |保護   |執行完整掃描                             |`mdatp scan full`                                                                 |
 |保護   |取消進行中的隨選掃描           |`mdatp scan cancel`                                                               |
 |保護   |要求安全性智慧更新     |`mdatp definitions update`                                                        |
-|EDR          |Add group tag to to device。 EDR 標記是用來管理裝置群組。 如需詳細資訊，請造訪 https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|EDR          |Add group tag to to device。 EDR 標記是用來管理裝置群組。 如需詳細資訊，請造訪/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |從裝置移除組標記               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |新增群組識別碼                               |`mdatp edr group-ids --group-id [group]`                                          |
 

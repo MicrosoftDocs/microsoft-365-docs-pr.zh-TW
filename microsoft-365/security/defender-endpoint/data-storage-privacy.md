@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2279045093ebfac4a7eb4544a3e0c137c08c9c0c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0258b2cdbff4a8b20be42e508863985c7402f609
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935386"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845507"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint data storage and 隱私權
 
@@ -35,7 +35,7 @@ ms.locfileid: "51935386"
 
 本節涵蓋一些有關隱私權和用於 Defender 的資料處理的最常見常見問題。
 > [!NOTE]
-> 這份檔說明與 Defender for Endpoint 相關的資料儲存區與隱私權詳細資料。 如需與 Defender for Endpoint 和其他產品及服務如 Microsoft Defender 防病毒和 Windows 10 相關的詳細資訊，請參閱 [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?linkid=827576)。 如需詳細資訊，另請參閱 [Windows 10 隱私權 FAQ](https://go.microsoft.com/fwlink/?linkid=827577) 。
+> 這份檔說明與 Defender for Endpoint 相關的資料儲存區與隱私權詳細資料。 如需與 Defender for Endpoint 及其他產品及服務如 Microsoft Defender 防毒軟體和 Windows 10 相關的詳細資訊，請參閱[Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?linkid=827576)。 如需詳細資訊，請參閱[Windows 10 隱私權 FAQ](https://go.microsoft.com/fwlink/?linkid=827577) 。
 
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Microsoft Defender for Endpoint 會收集哪些資料？
@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint 會收集和儲存已設定裝置中已設定之
 
 收集的資訊包括檔案資料 (例如：檔案名、大小和雜湊) 、處理資料 (執行中的程式、雜湊) 、登錄資料、網路連線資料 (主機 IPs 及埠) ，以及裝置詳細資料 (（如裝置識別碼、名稱和作業系統版本) ）。
 
-Microsoft 會安全地將此資料儲存在 Microsoft Azure 中，並依照 Microsoft 隱私權慣例和 [Microsoft 信任中心原則](https://go.microsoft.com/fwlink/?linkid=827578)加以維護。
+microsoft 會安全地將此資料儲存在 Microsoft Azure，並依照 microsoft 隱私權慣例和[microsoft 信任中心原則](https://go.microsoft.com/fwlink/?linkid=827578)加以維護。
 
 此資料可讓 Defender for Endpoint：
 - 主動識別組織中 (IOAs) 的攻擊指示器
@@ -56,14 +56,14 @@ Microsoft 不會使用您的資料進行廣告。
 ## <a name="data-protection-and-encryption"></a>資料保護和加密
 「Defender for Endpoint service」利用以 Microsoft Azure 基礎結構為基礎的 art 資料保護技術狀態。 
 
-有許多與我們的服務維護相關之資料保護的相關事項。 加密是一項最重要的功能，其中包括靜態資料加密、航班中的加密，以及使用主要 Vault 的金鑰管理。 如需有關供 Defender for Endpoint service 使用之其他技術的詳細資訊，請參閱 [Azure 加密概述](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)。 
+有許多與我們的服務維護相關之資料保護的相關事項。 加密是一項最重要的功能，其中包括靜態資料加密、航班中的加密，以及使用主要 Vault 的金鑰管理。 如需有關供 Defender for Endpoint service 使用之其他技術的詳細資訊，請參閱 [Azure 加密概述](/azure/security/security-azure-encryption-overview)。 
 
 在所有案例中，至少會以256位的 [AES 加密](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) 加密資料。
 
 
 ## <a name="data-storage-location"></a>資料儲存位置
 
-在歐洲同盟、英國或美國地區的 Microsoft Azure 資料中心內，用來進行端點的 Defender。 服務所收集的客戶資料可能會儲存在： (a) 租使用者地理位置（如布建期間所識別）; 若要使用其他 Microsoft online 服務處理這類資料，則 (b) （如其他線上服務的資料儲存規則所定義的地理位置）。
+在歐盟、英國或美國的 Microsoft Azure 資料中心內，用來進行端點的 Defender。 服務所收集的客戶資料可能會儲存在： (a) 租使用者地理位置（如布建期間所識別）; 若要使用其他 Microsoft online 服務處理這類資料，則 (b) （如其他線上服務的資料儲存規則所定義的地理位置）。
 
 在假名化表單中的客戶資料也可以儲存在美國的中央儲存區與處理系統中。
 
@@ -86,7 +86,7 @@ Microsoft 不會使用您的資料進行廣告。
 
 
 ## <a name="is-data-shared-with-other-customers"></a>資料是否與其他客戶共用？
-不對。 客戶資料會與其他客戶隔離，而且不會共用。 不過，Microsoft 處理所產生的資料或不包含任何客戶特有資料的深入資訊，可能會與其他客戶共用。 每個客戶只能存取來自其自身組織的資料，以及 Microsoft 所提供的一般資料。
+否。 客戶資料會與其他客戶隔離，而且不會共用。 不過，Microsoft 處理所產生的資料或不包含任何客戶特有資料的深入資訊，可能會與其他客戶共用。 每個客戶只能存取來自其自身組織的資料，以及 Microsoft 所提供的一般資料。
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft 將資料儲存多久？ 什麼是 Microsoft 的資料保留原則？
 **在服務上架**<br>

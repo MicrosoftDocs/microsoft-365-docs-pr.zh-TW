@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 6348d688103c51176fbed36c923a660c77a2258d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651269"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842779"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 版端點的 Microsoft Defender 新增功能
 
@@ -163,7 +163,7 @@ ms.locfileid: "52651269"
 
 ## <a name="1010031"></a>101.00.31
 
-- 改進 [Intune 使用者的產品上架體驗](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
+- 改進 [Intune 使用者的產品上架體驗](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - 防病毒 [排除現在支援萬用字元](mac-exclusions.md#supported-exclusion-types)
 - 新增從 macOS 內容功能表觸發防病毒掃描的功能。 您現在可以在 Finder 中以滑鼠右鍵按一下檔案或資料夾，然後選取 [**使用 Microsoft Defender 做為端點掃描**]
 - 就地產品降級現在已由安裝程式明確地禁止使用。 如果您需要降級，請先卸載現有版本，然後重新設定裝置

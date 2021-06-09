@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: e919f697048840b0eb7bffd34914328fe233f823
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d827fb89a082286b1b7b77ea0a14e588ce171161
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935158"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842191"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 上線 Windows 10 裝置
 
@@ -32,7 +32,7 @@ ms.locfileid: "51935158"
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft 端點 Configuration Manager 目前的分支
+- Microsoft Endpoint Configuration Manager 目前的分支
 - System Center 2012 R2 Configuration Manager
 
 >想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
@@ -57,7 +57,7 @@ ms.locfileid: "51935158"
 - Windows Server 2019
 
 >[!NOTE]
->如需有關如何將 Windows Server 2012 R2、Windows Server 2016 及 Windows Server 2019 上架上的詳細資訊，請參閱 [板載 Windows](configure-server-endpoints.md)server。
+>如需如何在板載 Windows Server 2012 R2、Windows Server 2016 及 Windows Server 2019 的詳細資訊，請參閱，[板載 Windows server](configure-server-endpoints.md)。
 
 
 
@@ -67,28 +67,28 @@ ms.locfileid: "51935158"
 [![顯示各種部署路徑的 PDF 影像](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
 
-請取出 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  或  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) ，以查看部署 Microsoft Defender for Endpoint 中的各種路徑。 
+取出[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) ，以查看部署 Microsoft Defender for Endpoint 中的各種路徑。 
 
 
 
-1. 從 [服務上架] 嚮導中，開啟您從 [服務上架] 的 [設定套件 .zip 檔案] (*WindowsDefenderATPOnboardingPackage.zip*) 。 您也可以從 [Microsoft Defender Security Center](https://securitycenter.windows.com/)取得套件：
+1. 從服務上架嚮導，開啟 Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) 。 您也可以從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得套件：
 
-    1. 在功能窗格中，選取 [**設定**] [上  >  **架**]。
+    1. 在功能窗格中，選取 [**設定** 上  >  **架**]。
     
     1. 選取 [Windows 10] 做為作業系統。
 
-    1. 在 [ **部署方法** ] 欄位中，選取 **System Center Configuration Manager 2012/2012 R2/1511/1602**。
+    1. 在 [**部署方法**] 欄位中，選取 [ **System Center Configuration Manager 2012/2012 R2/1511/1602**]。
     
-    1. 選取 [ **下載套件**]，然後儲存 .zip 檔案。
+    1. 選取 [ **下載套件**]，然後儲存 .zip 檔。
 
 2. 將 .zip 檔案的內容解壓至共用的唯讀位置，該位置可供將要部署此套件的網路系統管理員存取。 您應該會有一個名為 *WindowsDefenderATPOnboardingScript* 的檔案。
 
-3. 遵循 [System Center 2012 R2 Configuration Manager 文章中的套件和程式](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) 中的步驟，部署套件。
+3. 遵循[System Center 2012 R2 Configuration Manager 文章中的套件和程式](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))中的步驟，部署套件。
 
     a. 選擇要將套件部署至其中的預先定義的裝置集合。
 
 > [!NOTE]
-> 在 [) 全新體驗 (OOBE ](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 階段中，端點不支援上架。 請確定使用者在執行 Windows 安裝或升級後完成 OOBE。
+> 在 [) 全新體驗 (OOBE ](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 階段中，端點不支援上架。 請確定使用者在執行 Windows 安裝或升級後，已完成 OOBE。
 
 >[!TIP]
 > 在裝置上架後，您可以選擇執行偵測測試，以確認裝置已正確架至服務。 如需詳細資訊，請參閱 [在新的架 Defender For Endpoint 裝置上執行偵測測試](run-detection-test.md)。
@@ -97,12 +97,12 @@ ms.locfileid: "51935158"
 > 如果裝置尚未架 (由於是未決的 OOBE 完成或任何其他原因) ，Configuration Manager 會重試裝置上架裝置，直到規則偵測到狀態變更為止。
 > 
 > 如果 "OnboardingState" 登錄值 (類型 REG_DWORD) = 1，則可以建立偵測規則檢查，以完成此行為。
-> 此登錄值位於 "HKLM\SOFTWARE\Microsoft\Windows Advanced 威脅 Protection\Status" 底下。
-如需詳細資訊，請參閱 [Configure 偵測方法 In System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)。
+> 此登錄值位於 "HKLM\SOFTWARE\Microsoft\ Windows Advanced 威脅 Protection\Status" 底下。
+如需詳細資訊，請參閱[Configure in System Center 2012 R2 Configuration Manager 中的偵測方法](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)。
 
 ### <a name="configure-sample-collection-settings"></a>設定範例集合設定
 
-針對每個裝置，您可以設定設定值，以指出當您透過 Microsoft Defender Security Center 提交檔案進行深入分析時，是否可以從裝置收集範例。
+針對每個裝置，您可以設定設定值，以指出是否可以在要求透過 Microsoft Defender 資訊安全中心提交檔案進行深層分析時，從裝置收集範例。
 
 >[!NOTE]
 >這些設定設定通常是透過 Configuration Manager 進行。 
@@ -127,7 +127,7 @@ Value: 0 or 1
 
 當登錄機碼不存在時的預設值為1。
 
-如需 System Center Configuration Manager 合規性的詳細資訊，請參閱 [System center 2012 R2 Configuration Manager 中的規範設定簡介](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
+如需 System Center Configuration Manager 規範的詳細資訊，請參閱[System Center 2012 R2 Configuration Manager 中的規範設定簡介](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
 
 
 ## <a name="other-recommended-configuration-settings"></a>其他建議的設定
@@ -173,25 +173,25 @@ Value: 0 or 1
 > [!NOTE]
 > 上架和脫離的原則不得同時部署在相同的裝置上，否則會造成無法預期的衝突。
 
-### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>使用 Microsoft 端點管理員的下架裝置目前的分支
+### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>使用 Microsoft 端點管理員目前分支的裝置下架裝置
 
-如果您使用 Microsoft 端點管理員的 [目前] 分支，請參閱 [建立脫離設定檔](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
+如果您使用 Microsoft 端點管理員目前的分支，請參閱[Create a 脫離 configuration file](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>使用 System Center 2012 R2 Configuration Manager 下架裝置
 
-1. 從 [Microsoft Defender Security Center](https://securitycenter.windows.com/)取得脫離套件：
+1. 從[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)取得脫離套件：
 
     1. 在功能窗格中，選取 [**設定**  >   **脫離**]。
 
     1. 選取 [Windows 10] 做為作業系統。
 
-    1. 在 [ **部署方法** ] 欄位中，選取 **System Center Configuration Manager 2012/2012 R2/1511/1602**。
+    1. 在 [**部署方法**] 欄位中，選取 [ **System Center Configuration Manager 2012/2012 R2/1511/1602**]。
     
-    1. 選取 [ **下載套件**]，然後儲存 .zip 檔案。
+    1. 選取 [ **下載套件**]，然後儲存 .zip 檔。
 
 2. 將 .zip 檔案的內容解壓至共用的唯讀位置，該位置可供將要部署此套件的網路系統管理員存取。 您應該有一個名為 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-mm-dd* 的檔案。
 
-3. 遵循 [System Center 2012 R2 Configuration Manager 文章中的套件和程式](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) 中的步驟，部署套件。
+3. 遵循[System Center 2012 R2 Configuration Manager 文章中的套件和程式](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))中的步驟，部署套件。
 
     a. 選擇要將套件部署至其中的預先定義的裝置集合。
 
@@ -201,9 +201,9 @@ Value: 0 or 1
 
 ## <a name="monitor-device-configuration"></a>監視裝置設定
 
-如果您使用的是 Microsoft 端點管理員目前的分支，請在 Configuration Manager 主控台中使用內建的 Defender for Endpoint 儀表板。 如需詳細資訊，請參閱 [適用于 Endpoint Monitor 的 Defender](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
+如果您正在使用 Microsoft 端點管理員目前的分支，請在 Configuration Manager 主控台中使用內建的 Defender for Endpoint 儀表板。 如需詳細資訊，請參閱 [適用于 Endpoint Monitor 的 Defender](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
-如果您使用的是 System Center 2012 R2 Configuration Manager，監控會包含兩個部分：
+如果您正在使用 System Center 2012 R2 Configuration Manager，監控會包含兩個部分：
 
 1. 確認設定套件已正確部署，且正在執行 (或已在您的網路上的裝置上成功執行) 。
 
@@ -225,7 +225,7 @@ Value: 0 or 1
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>檢查裝置是否符合 Microsoft Defender for Endpoint service
 
-您可以設定 System Center 2012 R2 Configuration Manager 中設定專案的符合性規則，以監視您的部署。
+您可以在 System Center 2012 R2 configuration Manager 中設定設定專案的符合性規則，以監視您的部署。
 
 此規則應該 *是非補救* 性規則設定專案，可監視目標裝置上之登錄機碼的值。
 
@@ -237,7 +237,7 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-如需詳細資訊，請參閱 [System Center 2012 R2 Configuration Manager 中的規範設定簡介](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
+如需詳細資訊，請參閱[System Center 2012 R2 Configuration Manager 中的規範設定簡介](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
 
 ## <a name="related-topics"></a>相關主題
 - [使用群組原則的板載 Windows 10 裝置](configure-endpoints-gp.md)

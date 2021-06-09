@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解如何設定 Exchange Server 內部部署以使用混合式新式驗證 (HMA) ，為您提供更安全的使用者驗證和授權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f52b7c011b717c5dcb91270ab0a7dd2015131c0e
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694446"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841627"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何設定 Exchange Server 內部部署以使用混合式新式驗證
 
@@ -183,12 +183,12 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 如果您是使用 TCP 443 上的 Exchange 伺服器的內部部署客戶，請回避下列 IP 位址範圍的流量處理：
 
-```
+```text
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-iOS 和 Android 的 Outlook 應用程式是設計為在行動裝置上使用 Microsoft 服務來體驗 Microsoft 365 或 Office 365 的最佳方式，以協助您尋找、規劃及設定每日生命和工作的優先順序。 如需詳細資訊，請參閱[針對 iOS 和 Android 使用 Outlook 的混合新式驗證](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)。
+iOS 和 Android 的 Outlook 應用程式是設計為在行動裝置上使用 Microsoft 服務來體驗 Microsoft 365 或 Office 365 的最佳方式，以協助您尋找、規劃及設定每日生命和工作的優先順序。 如需詳細資訊，請參閱[針對 iOS 和 Android 使用 Outlook 的混合新式驗證](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。
 
 ## <a name="related-topics"></a>相關主題
 

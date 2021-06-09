@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6182b4cb0d1f648f33c3a7fc4da4c648d8996bcd
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5546b69fa924025491e1762d199678fa549a9c7c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770610"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842143"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>透過 Microsoft Defender for Endpoint APIs 取得夥伴存取權
 
@@ -40,7 +40,7 @@ ms.locfileid: "52770610"
 此頁面說明如何建立 Azure Active Directory (Azure AD) 應用程式，以將代表客戶以程式設計方式存取 Microsoft Defender for Endpoint。
 
 
-Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 會協助您根據 Microsoft Defender for Endpoint 功能來自動化工作流程與創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料和動作。 這些 APIs 會協助您根據 Microsoft Defender for Endpoint 功能來自動化工作流程與創新。 API 存取需要 OAuth 2.0 驗證。 如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般來講，您必須採取下列步驟，才能使用 APIs：
 - 建立 **多承租人** Azure AD 應用程式。
@@ -139,7 +139,7 @@ Microsoft Defender for Endpoint 會透過一組程式設計 APIs 公開其資料
 
 **附注：** 若要代表客戶取得存取權杖，請在下列標記上使用客戶的租使用者識別碼。
 
-<br>如需 AAD 權杖的詳細資訊，請參閱[aad 教學](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程
+<br>如需 AAD 權杖的詳細資訊，請參閱[aad 教學](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
@@ -248,6 +248,6 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
     // Do something useful with the response
     ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [受支援的適用於端點的 Microsoft Defender API](exposed-apis-list.md)
 - [代表使用者存取 Microsoft Defender for Endpoint](exposed-apis-create-app-nativeapp.md)

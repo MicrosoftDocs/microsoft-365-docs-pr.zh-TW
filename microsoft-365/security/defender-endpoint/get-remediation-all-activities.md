@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b95fa2da177a3ecb93bcf3e2085be6111c2c641e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 60f80e78a5f5c7da44a218c30f4b0173d4ecc829
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770514"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845126"
 ---
 # <a name="list-all-remediation-activities"></a>列出所有補救活動
 
@@ -55,7 +55,7 @@ ms.locfileid: "52770514"
 許可權類型 | 權限 | 許可權顯示名稱
 :---|:---|:---
 應用程式 | RemediationTask Read。 All | \'讀取威脅及弱點管理弱點資訊\'
-委派 (工作或學校帳戶)  | RemediationTask 讀取。 | \'讀取威脅及弱點管理弱點資訊\'
+委派 (工作或學校帳戶)  | RemediationTask 讀取 | \'讀取威脅及弱點管理弱點資訊\'
 
 ## <a name="properties"></a>屬性
 
@@ -141,7 +141,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [修正方法和屬性](get-remediation-methods-properties.md)
 

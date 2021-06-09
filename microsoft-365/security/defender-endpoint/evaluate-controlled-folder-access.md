@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 15ea4696052a6c987314e3c7b0dd282a49ed4df8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569902"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842911"
 ---
 # <a name="evaluate-controlled-folder-access"></a>評估受控資料夾存取權
 
@@ -28,7 +28,7 @@ ms.locfileid: "51569902"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
 「[受管理的資料夾存取](controlled-folders.md)」是一項功能，可協助您保護檔和檔案，避免遭到可疑或惡意應用程式的修改。 Windows Server 2019 和 Windows 10 用戶端支援受控資料夾存取。
@@ -52,20 +52,20 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > 如果您想要完全核查控制的資料夾存取在組織中的運作方式，您必須使用管理工具，將此設定部署至網路中的裝置 (s) 。
-您也可以使用「群組原則」、「Intune」、「行動裝置管理」 (MDM) 或 Microsoft 端點管理員來設定及部署設定，如主要 [受控資料夾存取主題](controlled-folders.md)所述。
+您也可以使用「群組原則」、「Intune」、「行動裝置管理」 (MDM) 或 Microsoft 端點管理員來設定及部署設定，如主要的[受控資料夾存取主題](controlled-folders.md)所述。
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在 Windows 事件檢視器中檢查受控資料夾存取事件
 
-下列的受控資料夾存取事件會出現在 Windows 事件檢視器中的 [Microsoft/Windows/Windows Defender/操作] 資料夾底下。
+下列受控資料夾存取事件會顯示在 [Microsoft/Windows/Windows Defender/Operational] 資料夾底下 Windows 事件檢視器中。
 
-事件識別碼 | 說明
+事件識別碼 | 描述
 -|-
  5007 | 設定變更時的事件
  1124 | 已審核的受管理資料夾存取事件
  1123 | 封鎖的受管理資料夾存取事件
 
 > [!TIP]
-> 您可以設定 [Windows 事件轉移訂閱](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) 來集中收集記錄。 
+> 您可以設定[Windows 事件轉移訂閱](/windows/win32/wec/setting-up-a-source-initiated-subscription)來集中收集記錄。 
 
 ## <a name="customize-protected-folders-and-apps"></a>自訂受保護的資料夾和應用程式
 

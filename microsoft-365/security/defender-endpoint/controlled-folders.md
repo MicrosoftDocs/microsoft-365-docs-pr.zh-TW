@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b937dd41f0296f2cf4102f41f8ab10bd55e1c35d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200278"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845567"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控資料夾存取權來保護重要資料夾
 
@@ -32,14 +32,14 @@ ms.locfileid: "51200278"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>何謂受控制的資料夾存取？
 
-控制的資料夾存取可協助保護您的重要資料免受惡意應用程式和威脅（例如勒索軟體）的威脅。 「受管理的資料夾存取」會透過已知的受信任應用程式清單來檢查應用程式，以保護您的資料。 在 Windows Server 2019 和 Windows 10 用戶端上受支援，可使用受管理裝置的 Windows 安全性 App、Microsoft 端點設定管理員或 Intune (，開啟受控資料夾存取權) 。 
+控制的資料夾存取可協助保護您的重要資料免受惡意應用程式和威脅（例如勒索軟體）的威脅。 「受管理的資料夾存取」會透過已知的受信任應用程式清單來檢查應用程式，以保護您的資料。 支援 Windows Server 2019 和 Windows 10 用戶端，可使用受管理裝置 (的 Windows 安全性 App、Microsoft Endpoint Configuration Manager 或 Intune) 來開啟受控資料夾存取。 
 
 > [!NOTE]
-> 腳本引擎是不受信任的，您無法允許他們存取受控制的受保護資料夾。  例如，即使您允許使用 [憑證及檔指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates)，「受控資料夾存取」也不會信任 PowerShell。 
+> 腳本引擎是不受信任的，您無法允許他們存取受控制的受保護資料夾。  例如，即使您允許使用 [憑證及檔指示器](/microsoft-365/security/defender-endpoint/indicator-certificates)，「受控資料夾存取」也不會信任 PowerShell。 
 
 「受管理的資料夾存取」最適合使用 [Microsoft Defender For Endpoint](microsoft-defender-endpoint.md)」，可讓您在一般 [警示調查案例](investigate-alerts.md)中深入報告，以進行受控資料夾存取事件和區塊。
 
@@ -62,15 +62,15 @@ ms.locfileid: "51200278"
 
 [ [受保護的資料夾](#review-controlled-folder-access-events-in-windows-event-viewer) ] 包括常見的系統資料夾， (包括「開機磁區」) ，而且您可以 [新增更多資料夾](customize-controlled-folders.md#protect-additional-folders)。 您也可以 [讓應用程式](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) 能夠存取受保護的資料夾。
 
-您可以使用 [審計模式](audit-windows-defender.md) ，評估當組織啟用時，受控資料夾存取會如何影響您的組織。 您也可以在 [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 參觀 Windows Defender Test 基礎網站，確認該功能是否正常運作，並查看其運作方式。
+您可以使用 [審計模式](audit-windows-defender.md) ，評估當組織啟用時，受控資料夾存取會如何影響您的組織。 您也可以在[demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)流覽 Windows Defender Test 基礎網站，確認該功能是否正常運作，並查看其運作方式。
 
-下列 Windows 版本支援受控制的資料夾存取：
-- [Windows 10 版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 和更新版本
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+下列 Windows 版本支援受控資料夾存取：
+- [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)和更新版本
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="windows-system-folders-are-protected-by-default"></a>預設會保護 Windows 系統資料夾
 
-Windows 系統資料夾預設會受到保護，另外還有其他一些資料夾： 
+預設會保護 Windows 系統資料夾，以及其他數個資料夾： 
 
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
@@ -87,13 +87,13 @@ Windows 系統資料夾預設會受到保護，另外還有其他一些資料夾
 
 ## <a name="requirements-for-controlled-folder-access"></a>受控資料夾存取的需求
 
-受控制的資料夾存取需要啟用 [Microsoft Defender 防病毒即時保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
+受控制的資料夾存取需要啟用[Microsoft Defender 防毒軟體即時保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>在 Microsoft Defender 安全中心檢查受控資料夾存取事件
+## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>在 Microsoft Defender 資訊安全中心中檢查受控資料夾存取事件
 
 當事件和區塊成為其 [警示調查案例](investigate-alerts.md)的一部分時，它會提供端點的詳細報告。
 
-您可以使用 [ [高級搜尋](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)] 查詢 Microsoft Defender 的端點資料。 如果您使用的是「 [審核」模式](audit-windows-defender.md)，您可以使用 [高級搜尋](advanced-hunting-overview.md) 查看受控制的資料夾存取設定如何影響環境（如果已啟用）。
+您可以使用 [ [高級搜尋](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)] 查詢 Microsoft Defender 的端點資料。 如果您使用的是「 [審核」模式](audit-windows-defender.md)，您可以使用 [高級搜尋](advanced-hunting-overview.md) 查看受控制的資料夾存取設定如何影響環境（如果已啟用）。
 
 例如查詢：
 
@@ -104,13 +104,13 @@ DeviceEvents
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在 Windows 事件檢視器中檢查受控資料夾存取事件
 
-您可以查看 Windows 事件記錄檔，以查看當控制的資料夾存取封鎖 (或) 應用程式進行審核時所建立的事件：
+您可以查看 Windows 事件記錄檔，以查看當控制的資料夾存取封鎖 (或審核) 應用程式時所建立的事件：
 
 1. 下載 [評估套件](https://aka.ms/mp7z2w) ，並將檔案 *cfa-events.xml* 解壓至裝置上易於存取的位置。
-2. 在 [開始] 功能表中輸入 **事件檢視器** ，以開啟 Windows 事件檢視器。
+2. 在 [開始] 功能表中輸入 **事件檢視器**，以開啟 Windows 事件檢視器。
 3. 在左窗格的 [ **動作**] 下，選取 [匯 **入自訂視圖 ...**]。
 4. 流覽至解壓縮 *cfa-events.xml* 的位置，然後選取。 或者， [直接複製 XML](event-views.md)。
-5. 選取 [確定]。
+5. 選取 **[確定]**。
 
 下表顯示與受控資料夾存取相關的事件：
 
@@ -122,21 +122,21 @@ DeviceEvents
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>查看或變更受保護的資料夾清單
 
-您可以使用 Windows 安全性應用程式來查看受控制的資料夾存取所保護的資料夾清單。 
+您可以使用 Windows 安全性應用程式來查看受控制的資料夾存取保護的資料夾清單。 
 
-1. 在您的 Windows 10 裝置上，開啟 [Windows 安全性應用程式]。
-2. 選取 [ **病毒 & 威脅防護**]。
+1. 在您的 Windows 10 裝置上，開啟 Windows 安全性應用程式。
+2. 選取 **病毒與威脅防護**。
 3. 在 [ **勒索軟體防護**] 底下，選取 [ **管理勒索軟體防護**]。
 4. 如果已關閉受管理的資料夾存取，您必須將其開啟。 選取 [ **受保護的資料夾**]。
-5. 請執行下列其中一個步驟：
+5. 執行下列其中一個步驟：
    - 若要新增資料夾，請選取 [ **+ 新增受保護的資料夾**]。
    - 若要移除資料夾，請選取它，然後選取 [ **移除**]。 
 
 > [!NOTE]
-> [Windows 系統資料夾](#windows-system-folders-are-protected-by-default) 預設會受到保護，您無法將其從清單中移除。
+> [Windows 系統資料夾](#windows-system-folders-are-protected-by-default)預設會受到保護，您無法將其從清單中移除。
 
 ## <a name="see-also"></a>另請參閱
 
 - [評估受控資料夾存取權](evaluate-controlled-folder-access.md)
-- [自訂受控資料夾存取](customize-controlled-folders.md)
+- [自訂受控資料夾存取權](customize-controlled-folders.md)
 - [保護更多資料夾](customize-controlled-folders.md#protect-additional-folders)

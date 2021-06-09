@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8cf611e38bc781c2302f70f6491bb827410235b0
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164678"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845447"
 ---
 # <a name="create-indicators-based-on-certificates"></a>根據憑證建立指示器
 
@@ -34,21 +34,21 @@ ms.locfileid: "51164678"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 您可以為憑證建立指示器。 常見的使用案例包括：
 
 - 案例當您需要部署封鎖技術時（例如 [攻擊面降減規則](attack-surface-reduction.md) 和 [可控資料夾存取](controlled-folders.md) ），但是需要在允許清單中新增憑證，以允許來自簽署應用程式的行為。
-- 封鎖整個組織中特定簽署應用程式的使用。 透過建立指示器以封鎖應用程式的憑證，Windows Defender AV 會使檔案執行 (區塊和修正) ，而且自動化調查和修正行為相同。
+- 封鎖整個組織中特定簽署應用程式的使用。 透過建立封鎖應用程式憑證的標記，Windows Defender AV 將會防止檔執行 (區塊和) 修正，而自動化調查和修正行為相同。
 
 
 ### <a name="before-you-begin"></a>開始之前
 
 在為憑證建立指示器之前，請務必先瞭解下列需求：
 
-- 如果您的組織使用 Windows Defender 防病毒和雲端式保護，則可以使用此功能。 如需詳細資訊，請參閱 [管理以雲端為基礎的保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- 如果您的組織使用 Windows Defender 防毒軟體和雲端型防護，則可以使用此功能。 如需詳細資訊，請參閱 [管理以雲端為基礎的保護](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 - 反惡意軟體用戶端版本必須是4.18.1901 或更新版本。
-- 在 Windows 10 版本1703或更新版本、Windows server 2016 及2019上的電腦上支援。
+- 在 Windows 10 版本1703或更新版本上的機器上支援，Windows 伺服器2016及2019。
 - 病毒和威脅防護定義必須是最新的。
 - 此功能目前支援輸入。CER 或。PEM 副檔名。
 
@@ -78,5 +78,5 @@ ms.locfileid: "51164678"
 ## <a name="related-topics"></a>相關主題
 - [建立指示器](manage-indicators.md)
 - [建立檔案的指示器](indicator-file.md)
-- [為 IPs 和 URLs/網域建立指示器](indicator-ip-domain.md)
+- [建立 IP 和 URL/網域的指示器](indicator-ip-domain.md)
 - [管理指示器](indicator-manage.md)

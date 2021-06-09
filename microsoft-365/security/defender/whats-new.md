@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 的新功能
 description: 列出 Microsoft 365 Defender 中的新功能與功能
-keywords: Microsoft 365 Defender 中的新功能，ga，一般可用，功能，可用，新
+keywords: Microsoft 365 的 Defender、ga、正式提供、功能、可供使用的新功能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 91029f03e089f44f49800bfe2d18536a8d415411
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: c974701b83fbb6dbcac1cc597578a97144b2b482
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029025"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845591"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新功能
 
@@ -32,23 +32,23 @@ ms.locfileid: "52029025"
 > 想要體驗 Microsoft 365 Defender 嗎？ 您可以[在實驗室環境中評估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[在生產環境中執行試驗專案](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
-在最新版本的 Microsoft 365 Defender 中， (GA) 一般都有下列功能可供使用。
+Microsoft 365 Defender 的最新版本中， (GA) 一般都有下列功能可供使用。
 
 RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此頁面的通知：
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
+/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
 ## <a name="april-2021"></a>2021 年 4 月
-- 改進的 Microsoft 365 安全中心 <br> 改良的 [Microsoft 365 安全性中心](https://security.microsoft.com)現在可供公開預覽。 這個新的體驗會將適用於端點的 Defender、適用於 Office 365 的 Defender、Microsoft 365 Defender 和更多功能帶到 Microsoft 365 安全性中心。 這是管理安全性控制的新家用。 [了解新功能](./overview-security-center.md)。
+- 改進的 Microsoft 365 安全性中心 <br> 改良的 [Microsoft 365 安全性中心](https://security.microsoft.com)現在可供公開預覽。 這個新的體驗會將適用於端點的 Defender、適用於 Office 365 的 Defender、Microsoft 365 Defender 和更多功能帶到 Microsoft 365 安全性中心。 這是管理安全性控制的新家用。 [了解新功能](./overview-security-center.md)。
 
-- [Microsoft 365 Defender 威脅分析報告](threat-analytics.md)<br>
- 威脅分析可協助您回應並將主動攻擊的影響降至最低。 您也可以瞭解 Microsoft 365 Defender 解決方案所封鎖的攻擊嘗試，並採取預防措施，緩解進一步披露及提高恢復的風險。 在統一的安全性體驗中，威脅分析現在可用於 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 授權持有者。
+- [Microsoft 365Defender 威脅分析報告](threat-analytics.md)<br>
+ 威脅分析可協助您回應並將主動攻擊的影響降至最低。 您也可以瞭解 Microsoft 365 Defender 解決方案所封鎖的攻擊嘗試，並採取預防措施，緩解進一步披露及提高恢復的風險。 在統一的安全性體驗中，威脅分析現在可用於 microsoft defender for Endpoint 和 microsoft defender Office E5 授權擁有者。
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [CloudAppEvents 表格](advanced-hunting-cloudappevents-table.md) <br>尋找 Microsoft Cloud App Security 涵蓋的各種雲端應用程式和服務中的事件資訊。 此表格也包含先前在中提供的資訊 `AppFileEvents` 。
+- [CloudAppEvents 表格](advanced-hunting-cloudappevents-table.md) <br>在 Microsoft Cloud App Security 所涵蓋的各種雲端 app 和服務中，尋找有關事件的資訊。 此表格也包含先前在中提供的資訊 `AppFileEvents` 。
 ## <a name="february-2021"></a>2021 年 2 月
--  (預覽) 增強型[Microsoft 365 安全性中心 (https://security.microsoft.com) ](https://security.microsoft.com)現在已提供公開預覽。 這種新的經驗會將適用于 Office 365 的 Defender 和 Defender 帶入中央。 [深入了解變更的功能](./overview-security-center.md)。
+-  (預覽) 「增強[Microsoft 365 安全性中心」 https://security.microsoft.com) (](https://security.microsoft.com)現在可用於公開預覽。 這種全新體驗會將 defender 用於端點，將 Office 365 的 defender 用於中央。 [深入了解變更的功能](./overview-security-center.md)。
 
 ## <a name="september-2020"></a>2020 年 9 月
 - [IdentityDirectoryEvents 表格](advanced-hunting-identitydirectoryevents-table.md) <br> 尋找與執行 Active Directory (AD) 之內部部署網域控制站有關的事件。 這個 [高級搜尋](advanced-hunting-overview.md) 架構表涵蓋網域控制站上的身分識別相關事件及系統事件範圍。

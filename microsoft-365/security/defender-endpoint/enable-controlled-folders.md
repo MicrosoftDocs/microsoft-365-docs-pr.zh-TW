@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 1d09eaf04999478a0cd0b4907667a522a23fb39f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571005"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841975"
 ---
 # <a name="enable-controlled-folder-access"></a>啟用受控資料夾存取權
 
@@ -29,9 +29,9 @@ ms.locfileid: "51571005"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[受控制的資料夾存取](controlled-folders.md) 可協助您保護寶貴的資料，避免惡意應用程式和威脅（如勒索軟體）。 Windows 10 和 Windows Server 2019 隨附的受管理資料夾存取。
+[受控制的資料夾存取](controlled-folders.md) 可協助您保護寶貴的資料，避免惡意應用程式和威脅（如勒索軟體）。 [受管理的資料夾存取] 包含在 Windows 10 和 Windows Server 2019。
 
 您可以使用下列任何一種方法來啟用受控資料夾存取：
 
@@ -46,23 +46,23 @@ ms.locfileid: "51571005"
 
 停用本機管理員清單合併的群組原則設定會覆寫「控制的資料夾存取」設定。 它們也會覆寫受保護的資料夾，以及由本機系統管理員透過「可控資料夾存取」所設定的應用程式。 這些原則包括：
 
-* Microsoft Defender 防病毒 **設定清單的本機系統管理員合併行為**
+* Microsoft Defender 防毒軟體 **設定清單的本機系統管理員合併行為**
 * System Center Endpoint Protection **允許使用者新增排除和覆寫**
 
-如需停用本機清單合併的詳細資訊，請參閱 [防止或允許使用者從本機修改 Microsoft DEFENDER AV 原則設定](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)。
+如需停用本機清單合併的詳細資訊，請參閱 [防止或允許使用者從本機修改 Microsoft DEFENDER AV 原則設定](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)。
 
 ## <a name="windows-security-app"></a>Windows 安全性應用程式
 
-1. 選取工作列中的盾牌圖示，以開啟 [Windows 安全性] 應用程式。 您也可以搜尋 **Defender** 的 [開始] 功能表。
+1. 選取工作列中的盾牌圖示，以開啟 Windows 安全性應用程式。 您也可以搜尋 **Defender** 的 [開始] 功能表。
 
 2. 在左功能表列上選取 [ **病毒 & 威脅防護** 磚 (] 或 [盾牌] 圖示) 然後選取 [ **勒索軟體防護**]。
 
 3. 將「 **受控資料夾存取** 」的參數設為 [ **開啟**]。
 
 > [!NOTE]
-> 如果已使用群組原則、PowerShell 或 MDM Csp 設定受管理的資料夾存取，則在重新開機裝置後，系統會在 Windows 安全性應用程式中變更狀態。
-> 如果使用任何工具將功能設定為 [ **稽核模式]** ，Windows 安全性應用程式就會顯示狀態為 [ **關閉**]。
-> 如果您要保護使用者設定檔資料，建議使用者設定檔應位於預設 Windows 安裝磁片磁碟機上。
+> 如果已使用群組原則、PowerShell 或 MDM csp 設定受管理的資料夾存取，則在重新開機裝置後，該狀態會在 Windows 安全性應用程式中變更。
+> 如果使用任何工具將功能設定為 [**審計模式]** ，Windows 安全性應用程式會顯示狀態為 [**關閉**]。
+> 如果您要保護使用者設定檔資料，建議使用者設定檔應位於預設的 Windows 安裝磁片磁碟機上。
 
 ## <a name="intune"></a>Intune
 
@@ -70,11 +70,11 @@ ms.locfileid: "51571005"
 
 2. 移至 **裝置配置**  >  **檔**  >  **建立設定檔**。
 
-3. 命名設定檔，請選擇 [ **Windows 10 和更新版本** ] 和 [ **Endpoint protection**]。 <br/> ![建立 endpoint protection 設定檔](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. 命名設定檔，選擇 [ **Windows 10 和更新版本**] 和 [ **Endpoint protection**]。 <br/> ![建立 endpoint protection 設定檔](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
 
-4. 移至 **設定**  >  **Windows Defender exploit Guard**  >  **受控制的資料夾存取**  >  **啟用**。
+4. 移至 **設定**  >  **Windows Defender Exploit Guard**  >  **控制的資料夾存取**  >  **啟用**。
 
-5. 輸入可存取受保護資料夾之每個應用程式的路徑，以及任何需要保護之其他資料夾的路徑。 選取 [新增]。<br/> ![啟用 Intune 中的可控資料夾存取](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
+5. 輸入可存取受保護資料夾之每個應用程式的路徑，以及任何需要保護之其他資料夾的路徑。 選取 ****[新增]。<br/> ![啟用 Intune 中的可控資料夾存取](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
 
    > [!NOTE]
    > Wilcard 支援應用程式，但不適用於資料夾。 子資料夾不受保護。 允許的應用程式會繼續觸發事件，直到重新開機為止。
@@ -85,11 +85,11 @@ ms.locfileid: "51571005"
 
 ## <a name="mobile-device-management-mdm"></a>移動裝置管理 (MDM) 
 
-使用 [/Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) configuration service PROVIDER (CSP) 以允許應用程式變更受保護的資料夾。
+使用 [/Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) configuration service PROVIDER (CSP) 以允許應用程式變更受保護的資料夾。
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. 在 Microsoft 端點 Configuration Manager 中，移至 [**資產和合規性**  >  **端點防護**] 「  >  **Windows Defender 利用防護**」。
+1. 在 Microsoft Endpoint Configuration Manager 中，移至 **資產及規範**  >  **Endpoint Protection**  >  **Windows Defender Exploit Guard**。
 
 2. 選取 [**首頁**  >  **建立 Exploit Guard 原則**]。
 
@@ -107,16 +107,16 @@ ms.locfileid: "51571005"
 
 1. 在您的群組原則管理裝置上，開啟 [ [群組原則管理主控台](https://technet.microsoft.com/library/cc731212.aspx)]，以滑鼠右鍵按一下您要設定的群組原則物件，然後選取 [ **編輯**]。
 
-2. 在 [**群組原則管理編輯器**] 中，移至 [電腦設定]，然後選取 [**系統****管理範本**]。
+2. 在 **[群組原則管理編輯器]** 中，移至 **[電腦設定]** 然後選取 **[系統管理範本]**。
 
-3. 在 **Microsoft Defender 防病毒 > Windows Defender Exploit Guard > 可控資料夾存取 >** 中，展開 [windows 元件] 的樹狀目錄。
+3. 展開樹狀目錄， **Windows 元件 > Microsoft Defender 防毒軟體 > Windows Defender Exploit Guard > 受控制的資料夾存取**。
 
 4. 按兩下 [ **設定受控資料夾存取** 設定]，並將選項設定為 [ **啟用**]。 在 [選項] 區段中，您必須指定下列其中一個選項：
-    * **Enable** -不允許惡意和可疑應用程式對受保護資料夾中的檔案進行變更。 Windows 事件記錄檔中會提供通知。
+    * **Enable** -不允許惡意和可疑應用程式對受保護資料夾中的檔案進行變更。 在 Windows 事件記錄檔中會提供通知。
     * **停用 (預設)** -「受管理的資料夾存取」功能將無法運作。 所有應用程式都可對受保護資料夾中的檔案進行變更。
-    * 「**審計模式**」-如果惡意或可疑應用程式嘗試對受保護資料夾中的檔案進行變更，便允許變更。 不過，它會記錄在 Windows 事件記錄檔中，您可以在此記錄中評估對組織的影響。
-    * **僅封鎖磁片修改** ：在 Windows 事件記錄檔中，將不受信任的應用程式嘗試寫入磁片磁區。 您可以在 Microsoft > Windows > Windows Defender > 作業 > ID 1123 中 **，于應用程式及服務 > 記錄** 檔中找到這些記錄檔。
-    * **僅限審核磁片修改只** 會在 [**應用程式及服務記錄**] [  >  **Microsoft**  >  **windows**  >  **windows Defender**  >  **運作**  >  **識別碼 1124**) ] 底下的 [Windows 事件 (記錄檔] 中，記錄寫入受保護的磁片磁區的企圖。 不會記錄在 [受保護的資料夾] 中修改或刪除檔的嘗試。
+    * 「**審計模式**」-如果惡意或可疑應用程式嘗試對受保護資料夾中的檔案進行變更，便允許變更。 不過，它會記錄在 Windows 事件記錄檔中，您可以在其中評估對組織的影響。
+    * **僅封鎖磁片修改**：在 Windows 事件記錄檔中，會記錄不受信任應用程式對磁片區的嘗試。 在 [**應用程式及服務記錄**] 中，可以找到這些記錄檔 > Microsoft > Windows > Windows Defender > 作業 > ID 1123。
+    * **僅限審核磁片修改只** 會在 [**應用程式及服務 Windows 記錄** 檔] 下的 [Windows 事件記錄 (中記錄寫入受保護的磁片磁區，  >    >    >  **Windows Defender**  >  **運作**  >  **識別碼 1124**) 。 不會記錄在 [受保護的資料夾] 中修改或刪除檔的嘗試。
 
       ![已啟用群組原則選項的螢幕擷取畫面和下拉式清單中選取的審計模式](/microsoft-365/security/defender-endpoint/images/cfa-gp-enable)
 
@@ -125,7 +125,7 @@ ms.locfileid: "51571005"
 
 ## <a name="powershell"></a>PowerShell
 
-1. 在 [開始] 功能表中 **，以滑鼠** 按右鍵 [ **Windows PowerShell** ]，然後選取 [ **以系統管理員身分執行**]。
+1. 在 [開始] 功能表中 **，以滑鼠** 按右鍵 [ **Windows PowerShell** ]，然後選取 [以 **系統管理員身分執行**]。
 
 2. 輸入下列 Cmdlet：
 
