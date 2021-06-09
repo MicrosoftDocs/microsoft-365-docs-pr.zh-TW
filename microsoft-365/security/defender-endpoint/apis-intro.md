@@ -17,70 +17,70 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 43c797dc8ee9f431ceda6ddecb0a1eada0e362f5
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9d3f4431825193d189f7ea1d73b6a99163cac428
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769650"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843695"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-apis"></a><span data-ttu-id="199c2-104">存取適用於端點的 Microsoft Defender API</span><span class="sxs-lookup"><span data-stu-id="199c2-104">Access the Microsoft Defender for Endpoint APIs</span></span> 
+# <a name="access-the-microsoft-defender-for-endpoint-apis"></a><span data-ttu-id="35977-104">存取適用於端點的 Microsoft Defender API</span><span class="sxs-lookup"><span data-stu-id="35977-104">Access the Microsoft Defender for Endpoint APIs</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="199c2-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="199c2-105">**Applies to:**</span></span>
-- [<span data-ttu-id="199c2-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="199c2-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="199c2-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="199c2-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="35977-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="35977-105">**Applies to:**</span></span>
+- [<span data-ttu-id="35977-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="35977-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="35977-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="35977-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-<span data-ttu-id="199c2-108">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="199c2-108">**Applies to:**</span></span> 
-- [<span data-ttu-id="199c2-109">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="199c2-109">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+<span data-ttu-id="35977-108">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="35977-108">**Applies to:**</span></span> 
+- [<span data-ttu-id="35977-109">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="35977-109">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> <span data-ttu-id="199c2-110">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="199c2-110">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="199c2-111">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="199c2-111">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="35977-110">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="35977-110">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="35977-111">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="35977-111">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 
-<span data-ttu-id="199c2-112">「！的 Defender」會透過一組程式設計 APIs 公開其資料和動作。</span><span class="sxs-lookup"><span data-stu-id="199c2-112">Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="199c2-113">這些 APIs 可讓您以使用 Defender for Endpoint 功能來自動化工作流程及創新。</span><span class="sxs-lookup"><span data-stu-id="199c2-113">Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.</span></span> <span data-ttu-id="199c2-114">API 存取需要 OAuth 2.0 驗證。</span><span class="sxs-lookup"><span data-stu-id="199c2-114">The API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="199c2-115">如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。</span><span class="sxs-lookup"><span data-stu-id="199c2-115">For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
+<span data-ttu-id="35977-112">「！的 Defender」會透過一組程式設計 APIs 公開其資料和動作。</span><span class="sxs-lookup"><span data-stu-id="35977-112">Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs.</span></span> <span data-ttu-id="35977-113">這些 APIs 可讓您以使用 Defender for Endpoint 功能來自動化工作流程及創新。</span><span class="sxs-lookup"><span data-stu-id="35977-113">Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.</span></span> <span data-ttu-id="35977-114">API 存取需要 OAuth 2.0 驗證。</span><span class="sxs-lookup"><span data-stu-id="35977-114">The API access requires OAuth2.0 authentication.</span></span> <span data-ttu-id="35977-115">如需詳細資訊，請參閱[OAuth 2.0 授權碼 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。</span><span class="sxs-lookup"><span data-stu-id="35977-115">For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).</span></span>
 
-<span data-ttu-id="199c2-116">觀賞這段影片，以快速瞭解如何使用 Defender 的 Endpoint APIs。</span><span class="sxs-lookup"><span data-stu-id="199c2-116">Watch this video for a quick overview of Defender for Endpoint's APIs.</span></span> 
+<span data-ttu-id="35977-116">觀賞這段影片，以快速瞭解如何使用 Defender 的 Endpoint APIs。</span><span class="sxs-lookup"><span data-stu-id="35977-116">Watch this video for a quick overview of Defender for Endpoint's APIs.</span></span> 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
-<span data-ttu-id="199c2-117">一般來講，您必須採取下列步驟，才能使用 APIs：</span><span class="sxs-lookup"><span data-stu-id="199c2-117">In general, you’ll need to take the following steps to use the APIs:</span></span>
-- <span data-ttu-id="199c2-118">建立 [AAD 應用程式](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span><span class="sxs-lookup"><span data-stu-id="199c2-118">Create an [AAD application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span></span>
-- <span data-ttu-id="199c2-119">使用此應用程式取得存取 token</span><span class="sxs-lookup"><span data-stu-id="199c2-119">Get an access token using this application</span></span>
-- <span data-ttu-id="199c2-120">使用權杖來存取適用于 Endpoint API 的 Defender</span><span class="sxs-lookup"><span data-stu-id="199c2-120">Use the token to access Defender for Endpoint API</span></span>
+<span data-ttu-id="35977-117">一般來講，您必須採取下列步驟，才能使用 APIs：</span><span class="sxs-lookup"><span data-stu-id="35977-117">In general, you’ll need to take the following steps to use the APIs:</span></span>
+- <span data-ttu-id="35977-118">建立 [AAD 應用程式](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span><span class="sxs-lookup"><span data-stu-id="35977-118">Create an [AAD application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)</span></span>
+- <span data-ttu-id="35977-119">使用此應用程式取得存取 token</span><span class="sxs-lookup"><span data-stu-id="35977-119">Get an access token using this application</span></span>
+- <span data-ttu-id="35977-120">使用權杖來存取適用于 Endpoint API 的 Defender</span><span class="sxs-lookup"><span data-stu-id="35977-120">Use the token to access Defender for Endpoint API</span></span>
 
 
-<span data-ttu-id="199c2-121">您可以使用 **應用程式內容** 或 **使用者內容**，存取適用于 Endpoint API 的 Defender。</span><span class="sxs-lookup"><span data-stu-id="199c2-121">You can access Defender for Endpoint API with **Application Context** or **User Context**.</span></span>
+<span data-ttu-id="35977-121">您可以使用 **應用程式內容** 或 **使用者內容**，存取適用于 Endpoint API 的 Defender。</span><span class="sxs-lookup"><span data-stu-id="35977-121">You can access Defender for Endpoint API with **Application Context** or **User Context**.</span></span>
 
-- <span data-ttu-id="199c2-122">**應用程式內容：建議 ()**</span><span class="sxs-lookup"><span data-stu-id="199c2-122">**Application Context: (Recommended)**</span></span> <br>
-    <span data-ttu-id="199c2-123">由未登入使用者的執行中執行的應用程式所使用。</span><span class="sxs-lookup"><span data-stu-id="199c2-123">Used by apps that run without a signed-in user present.</span></span> <span data-ttu-id="199c2-124">例如，以背景服務或守護程式形式執行的應用程式。</span><span class="sxs-lookup"><span data-stu-id="199c2-124">for example, apps that run as background services or daemons.</span></span>
+- <span data-ttu-id="35977-122">**應用程式內容：建議 ()**</span><span class="sxs-lookup"><span data-stu-id="35977-122">**Application Context: (Recommended)**</span></span> <br>
+    <span data-ttu-id="35977-123">由未登入使用者的執行中執行的應用程式所使用。</span><span class="sxs-lookup"><span data-stu-id="35977-123">Used by apps that run without a signed-in user present.</span></span> <span data-ttu-id="35977-124">例如，以背景服務或守護程式形式執行的應用程式。</span><span class="sxs-lookup"><span data-stu-id="35977-124">for example, apps that run as background services or daemons.</span></span>
 
-    <span data-ttu-id="199c2-125">必須採取的步驟，才能存取應用程式內容之 Endpoint API 的 Defender：</span><span class="sxs-lookup"><span data-stu-id="199c2-125">Steps that need to be taken to access Defender for Endpoint API with application context:</span></span>
+    <span data-ttu-id="35977-125">必須採取的步驟，才能存取應用程式內容之 Endpoint API 的 Defender：</span><span class="sxs-lookup"><span data-stu-id="35977-125">Steps that need to be taken to access Defender for Endpoint API with application context:</span></span>
 
-  1. <span data-ttu-id="199c2-126">建立 AAD Web 應用程式。</span><span class="sxs-lookup"><span data-stu-id="199c2-126">Create an AAD Web-Application.</span></span>
-  2. <span data-ttu-id="199c2-127">將所需的許可權指派給應用程式，例如「讀取警示」、「隔離電腦」。</span><span class="sxs-lookup"><span data-stu-id="199c2-127">Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'.</span></span> 
-  3. <span data-ttu-id="199c2-128">建立此應用程式的索引鍵。</span><span class="sxs-lookup"><span data-stu-id="199c2-128">Create a key for this Application.</span></span>
-  4. <span data-ttu-id="199c2-129">使用應用程式及其金鑰取得標記。</span><span class="sxs-lookup"><span data-stu-id="199c2-129">Get token using the application with its key.</span></span>
-  5. <span data-ttu-id="199c2-130">使用權杖來存取 Microsoft Defender for Endpoint API</span><span class="sxs-lookup"><span data-stu-id="199c2-130">Use the token to access the Microsoft Defender for Endpoint API</span></span>
+  1. <span data-ttu-id="35977-126">建立 AAD Web 應用程式。</span><span class="sxs-lookup"><span data-stu-id="35977-126">Create an AAD Web-Application.</span></span>
+  2. <span data-ttu-id="35977-127">將所需的許可權指派給應用程式，例如「讀取警示」、「隔離電腦」。</span><span class="sxs-lookup"><span data-stu-id="35977-127">Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'.</span></span> 
+  3. <span data-ttu-id="35977-128">建立此應用程式的索引鍵。</span><span class="sxs-lookup"><span data-stu-id="35977-128">Create a key for this Application.</span></span>
+  4. <span data-ttu-id="35977-129">使用應用程式及其金鑰取得標記。</span><span class="sxs-lookup"><span data-stu-id="35977-129">Get token using the application with its key.</span></span>
+  5. <span data-ttu-id="35977-130">使用權杖來存取 Microsoft Defender for Endpoint API</span><span class="sxs-lookup"><span data-stu-id="35977-130">Use the token to access the Microsoft Defender for Endpoint API</span></span>
 
-     <span data-ttu-id="199c2-131">如需詳細資訊，請參閱 [Get access with application coNtext](exposed-apis-create-app-webapp.md)。</span><span class="sxs-lookup"><span data-stu-id="199c2-131">For more information, see [Get access with application context](exposed-apis-create-app-webapp.md).</span></span>
-
-
-- <span data-ttu-id="199c2-132">**使用者內容：**</span><span class="sxs-lookup"><span data-stu-id="199c2-132">**User Context:**</span></span> <br>
-    <span data-ttu-id="199c2-133">用來代表使用者在 API 中執行動作。</span><span class="sxs-lookup"><span data-stu-id="199c2-133">Used to perform actions in the API on behalf of a user.</span></span>
-
-    <span data-ttu-id="199c2-134">使用應用程式內容存取應用程式的 Endpoint API 時，所需採取的步驟：</span><span class="sxs-lookup"><span data-stu-id="199c2-134">Steps to take to access Defender for Endpoint API with application context:</span></span>
-
-  1. <span data-ttu-id="199c2-135">建立 AAD 原生應用程式。</span><span class="sxs-lookup"><span data-stu-id="199c2-135">Create AAD Native-Application.</span></span>
-  2. <span data-ttu-id="199c2-136">將所需的許可權指派給應用程式，例如「讀取警示」、「隔離電腦」等等。</span><span class="sxs-lookup"><span data-stu-id="199c2-136">Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc.</span></span> 
-  3. <span data-ttu-id="199c2-137">使用具有使用者認證的應用程式取得權杖。</span><span class="sxs-lookup"><span data-stu-id="199c2-137">Get token using the application with user credentials.</span></span>
-  4. <span data-ttu-id="199c2-138">使用權杖來存取 Microsoft Defender for Endpoint API</span><span class="sxs-lookup"><span data-stu-id="199c2-138">Use the token to access the Microsoft Defender for Endpoint API</span></span>
-
-     <span data-ttu-id="199c2-139">如需詳細資訊，請參閱 [Get access with user coNtext](exposed-apis-create-app-nativeapp.md)。</span><span class="sxs-lookup"><span data-stu-id="199c2-139">For more information, see [Get access with user context](exposed-apis-create-app-nativeapp.md).</span></span>
+     <span data-ttu-id="35977-131">如需詳細資訊，請參閱 [Get access with application coNtext](exposed-apis-create-app-webapp.md)。</span><span class="sxs-lookup"><span data-stu-id="35977-131">For more information, see [Get access with application context](exposed-apis-create-app-webapp.md).</span></span>
 
 
-## <a name="related-topics"></a><span data-ttu-id="199c2-140">相關主題</span><span class="sxs-lookup"><span data-stu-id="199c2-140">Related topics</span></span>
-- [<span data-ttu-id="199c2-141">Microsoft Defender for Endpoint APIs</span><span class="sxs-lookup"><span data-stu-id="199c2-141">Microsoft Defender for Endpoint APIs</span></span>](exposed-apis-list.md)
-- [<span data-ttu-id="199c2-142">使用應用程式內容存取 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="199c2-142">Access Microsoft Defender for Endpoint with application context</span></span>](exposed-apis-create-app-webapp.md)
-- [<span data-ttu-id="199c2-143">使用使用者內容存取 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="199c2-143">Access Microsoft Defender for Endpoint with user context</span></span>](exposed-apis-create-app-nativeapp.md)
+- <span data-ttu-id="35977-132">**使用者內容：**</span><span class="sxs-lookup"><span data-stu-id="35977-132">**User Context:**</span></span> <br>
+    <span data-ttu-id="35977-133">用來代表使用者在 API 中執行動作。</span><span class="sxs-lookup"><span data-stu-id="35977-133">Used to perform actions in the API on behalf of a user.</span></span>
+
+    <span data-ttu-id="35977-134">使用應用程式內容存取應用程式的 Endpoint API 時，所需採取的步驟：</span><span class="sxs-lookup"><span data-stu-id="35977-134">Steps to take to access Defender for Endpoint API with application context:</span></span>
+
+  1. <span data-ttu-id="35977-135">建立 AAD 原生應用程式。</span><span class="sxs-lookup"><span data-stu-id="35977-135">Create AAD Native-Application.</span></span>
+  2. <span data-ttu-id="35977-136">將所需的許可權指派給應用程式，例如「讀取警示」、「隔離電腦」等等。</span><span class="sxs-lookup"><span data-stu-id="35977-136">Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc.</span></span> 
+  3. <span data-ttu-id="35977-137">使用具有使用者認證的應用程式取得權杖。</span><span class="sxs-lookup"><span data-stu-id="35977-137">Get token using the application with user credentials.</span></span>
+  4. <span data-ttu-id="35977-138">使用權杖來存取 Microsoft Defender for Endpoint API</span><span class="sxs-lookup"><span data-stu-id="35977-138">Use the token to access the Microsoft Defender for Endpoint API</span></span>
+
+     <span data-ttu-id="35977-139">如需詳細資訊，請參閱 [Get access with user coNtext](exposed-apis-create-app-nativeapp.md)。</span><span class="sxs-lookup"><span data-stu-id="35977-139">For more information, see [Get access with user context](exposed-apis-create-app-nativeapp.md).</span></span>
+
+
+## <a name="related-topics"></a><span data-ttu-id="35977-140">相關主題</span><span class="sxs-lookup"><span data-stu-id="35977-140">Related topics</span></span>
+- [<span data-ttu-id="35977-141">Microsoft Defender for Endpoint APIs</span><span class="sxs-lookup"><span data-stu-id="35977-141">Microsoft Defender for Endpoint APIs</span></span>](exposed-apis-list.md)
+- [<span data-ttu-id="35977-142">使用應用程式內容存取 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="35977-142">Access Microsoft Defender for Endpoint with application context</span></span>](exposed-apis-create-app-webapp.md)
+- [<span data-ttu-id="35977-143">使用使用者內容存取 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="35977-143">Access Microsoft Defender for Endpoint with user context</span></span>](exposed-apis-create-app-nativeapp.md)

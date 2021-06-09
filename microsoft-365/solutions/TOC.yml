@@ -13,7 +13,7 @@
       href: architecture-icons-templates.md
 - name: Microsoft 365 基礎解決方案
   items:
-    - name: 設定遠端工作基礎結構。
+    - name: 設定混合式工作基礎結構
       items:
         - name: 概觀
           href: empower-people-to-work-remotely.md
@@ -27,7 +27,7 @@
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: 步驟 5： 部署生產力應用程式和服務
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 步驟6：訓練遠端工作者
+        - name: 步驟 6：訓練工作者
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: 使用 Microsoft 365 設定安全的共同作業
       items:
@@ -225,7 +225,7 @@
       items:
         - name: 適用於 Contoso Corporation 的 Microsoft 365 解決方案
           href: contoso-case-study-solutions.md
-        - name: 適用於遠端和現場工作的 COVID-19 回應與支援
+        - name: 針對混合式工作的 COVID-19 回應和支援
           href: contoso-remote-onsite-work.md
         - name: 用於高度機密專案的隔離團隊
           href: contoso-team-for-top-secret-project.md
