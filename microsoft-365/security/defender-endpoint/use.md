@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender 資訊安全中心概觀
-description: 深入瞭解 Microsoft Defender Security Center 的功能，包括警示的運作方式，以及如何調查可能的破壞和攻擊的建議。
+description: 深入瞭解 Microsoft Defender 資訊安全中心的功能，包括警示的運作方式，以及如何調查可能的破壞和攻擊的建議。
 keywords: 儀表板、警示佇列、管理提醒、調查、調查提醒、調查裝置、提交檔案、深入分析、高、中、低、嚴重性、ioc、ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -33,9 +33,9 @@ ms.locfileid: "51581091"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
 
-Microsoft Defender 安全中心是可讓您存取 Microsoft Defender for Endpoint 功能的入口網站。
+Microsoft Defender 資訊安全中心是您可以用來存取 Microsoft Defender for Endpoint 功能的入口網站。
 
 使用 [ **安全性作業** ] 儀表板深入瞭解網路中裝置和使用者的各種警示。
 
@@ -46,11 +46,11 @@ Microsoft Defender 安全中心是可讓您存取 Microsoft Defender for Endpoin
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Microsoft Defender for Endpoint 互動指南
 在此互動式指南中，您將瞭解如何使用 Microsoft Defender for Endpoint 來調查組織的威脅。 您將會看到 Microsoft Defender for Endpoint 如何協助您識別可疑的活動、調查組織面臨的風險，以及修正威脅。
 
-[查看互動式輔助線](https://aka.ms/MSDE-IG)
+[查看互動指南](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>本節內容
 
-主題 | 說明
+主題 | 描述
 :---|:---
 [入口網站概觀](portal-overview.md) | 瞭解入口網站版面配置與區域描述。
 [View the Security operations 儀表板](security-operations-dashboard.md) | Microsoft Defender for Endpoint  **Security operations 儀表板** 提供您網路的快照。 您可以查看警示的合計、網路上裝置的整體狀態、調查裝置、檔案及 URLs，以及查看裝置上看到之威脅的快照。

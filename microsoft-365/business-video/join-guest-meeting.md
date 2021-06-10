@@ -1,5 +1,5 @@
 ---
-title: 加入與客人的 Microsoft 小組會議
+title: 加入具有來賓的 Microsoft Teams 會議
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何加入與客人的團隊會議。
+description: 瞭解如何加入具有來賓的 Teams 會議。
 ms.openlocfilehash: 781e1aa242270588ba50a025ca0dd71c06354ad0
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -31,13 +31,13 @@ ms.locfileid: "51580543"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn?autoplay=false]
 
-透過 Microsoft 小組，您可以輕鬆加入和參與與內部及外部使用者的會議。
+透過 Microsoft Teams，您可以輕鬆加入和參與與內部及外部使用者的會議。
 
 ## <a name="try-it"></a>試試看吧！
 
-1. 在 Microsoft 小組中，選擇 [行事 **曆**]，然後尋找您的會議。
+1. 在 Microsoft Teams 中，選擇 [行事 **曆**]，然後尋找會議。
 1. 選取 [ **加入**]，決定是否要開啟或關閉相機和麥克風，然後選取 [ **立即加入**]。
-1. 如果您是外部來賓，請開啟您收到之會議的電子郵件，並選取 [ **加入 Microsoft 團隊會議**]。
+1. 如果您是外部來賓，請開啟您收到之會議的電子郵件，並選取 [**加入 Microsoft Teams 會議**]。
 
     如果您不想要下載應用程式，請改為選擇 [ **在網頁上加入** ]。
 1. 輸入您的名稱，然後選取 [ **立即加入**]。

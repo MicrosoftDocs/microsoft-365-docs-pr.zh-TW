@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
-description: '瞭解流量分析如何連接至 API，並提供各種 Microsoft 365 服務的每月使用趨勢。  '
+description: '瞭解流量分析如何連接至 API，並提供各種 Microsoft 365 服務每月的使用趨勢。  '
 ms.openlocfilehash: 877ad005e3ff7f7537247963fafcab5fb1ff6c74
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -30,12 +30,12 @@ ms.locfileid: "51580747"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情況分析資料模型
 
-## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Microsoft 365 使用方式分析方格的資料
+## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Microsoft 365 流量分析表的資料
 
-Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Microsoft 365 流量分析用來產生其資料的 APIs，來自各種、一般可用的圖形 APIs。 Microsoft 365 流量分析 API 的功能一般無法使用。
+Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Microsoft 365 流量分析用來產生其資料的 APIs，都來自各種、可供一般使用的 Graph APIs。 Microsoft 365 流量分析 API 的功能一般無法使用。
   
 > [!NOTE]
-> 如需詳細資訊，請參閱使用 microsoft [Graph 中的 microsoft 365 使用量報告](/graph/api/resources/report)。 
+> 如需詳細資訊，請參閱使用[Microsoft Graph 中的 Microsoft 365 使用方式報告](/graph/api/resources/report)。 
   
 此 API 提供各種 Microsoft 365 服務每月使用趨勢的相關資訊。 如需 API 傳回的確切資料，請參閱下一節中的表格。
   
@@ -50,8 +50,8 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
 |租用戶用戶端使用量  <br/> |包含主動使用特定用戶端/裝置連線到 Exchange Online、商務用 Skype 和 Yammer 之使用者數目的相關資料。  <br/> |包含 12 個月期間內每月彙總的資料，包括目前部分月份。  <br/> |
 |租用戶 SharePoint Online 使用量  <br/> |包含 SharePoint 網站 (涵蓋小組或群組網站) 的相關資料，例如網站總數、網站上的文件數目、依活動類型計算的檔案計數，以及使用的儲存空間。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
 |租用戶商務用 OneDrive 使用量  <br/> |包含 OneDrive 帳戶的相關資料，例如帳戶數目、OneDrive 上的文件數目、使用的儲存空間、依活動類型計算的檔案計數。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
-|承租人 Microsoft 365 群組使用量  <br/> |包含有關 Microsoft 365 群組使用量（包括信箱、SharePoint 及 Yammer）的資料。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
-|租用戶 Office 啟用  <br/> |包含有關 Office 訂閱啟用數目、每個裝置的啟用計數 (Android/iOS/Mac/PC) 、依服務方案啟動的 Microsoft 365 應用程式，例如 Microsoft 應用程式（適用于企業、Visio、Project）的資料。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
+|租使用者 Microsoft 365 群組使用量  <br/> |包含有關 Microsoft 365 群組使用量的資料，包括信箱、SharePoint 及 Yammer。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
+|租用戶 Office 啟用  <br/> |包含有關 Office 訂閱啟用的數目、每個裝置的啟用計數 (Android/iOS/Mac/PC) ，依服務方案啟動的資料，例如 Microsoft 365 Apps 企業版、Visio、Project。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
 |使用者狀態  <br/> |包含使用者的相關中繼資料，包括使用者顯示名稱、指派的產品、地點、部門、職稱、公司。 此資料是關於在最後一個完整月份期間獲指派授權的使用者。 每個使用者都由使用者識別碼唯一表示。  <br/> |此資料與上一個完整月份期間指派授權的使用者有關。  <br/> |
 |使用者活動  <br/> |包含授權使用者執行活動的每個使用者層級資訊。  <br/> 如需產品內此資料表格中傳回活動的相關資訊，請參閱[作用中使用者定義](active-user-in-usage-reports.md)。  <br/> |此資料與上一個完整月份期間在任何服務中執行活動的使用者有關。  <br/> |
    
@@ -67,13 +67,13 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
 |Timeframe  <br/> |此表格內含資料的月份值。  <br/> |
 |UPN  <br/> |使用者主體名稱，可唯一識別能夠使用其他外部資料來源加入的使用者。  <br/> |
 |DisplayName  <br/> |使用者的顯示名稱。  <br/> |
-|IDType  <br/> |如果使用者是使用其 Yammer 識別碼來連線的 Yammer 使用者，則識別碼類型設為 1; 如果使用者使用 Microsoft 365 識別碼連線到 Yammer，則為0。  <br/> 值為1表示此使用者使用 Yammer 識別碼（而不是其 Microsoft 365 識別碼）連線至 Yammer  <br/> |
+|IDType  <br/> |如果使用者是使用其 Yammer 識別碼進行連線的 Yammer 使用者，則識別碼類型設為 1; 如果使用者使用 Microsoft 365 識別碼連線到 Yammer，則為0。  <br/> 值為1表示此使用者使用 Yammer 識別碼（而不是其 Microsoft 365 識別碼）連接至 Yammer  <br/> |
 |HasLicenseEXO  <br/> |如果使用者有獲指派授權，而且可以使用 Exchange，則設為 true。  <br/> |
 |HasLicenseODB  <br/> |如果使用者有獲指派授權，而且可以使用商務用 OneDrive，則設為 true。  <br/> |
 |HasLicenseSPO  <br/> |如果使用者有獲指派授權，而且可以使用 SharePoint Online，則設為 true。  <br/> |
 |HasLicenseYAM  <br/> |如果使用者有獲指派授權，而且可以使用 Yammer，則設為 true。  <br/> |
 |HasLicenseSFB  <br/> |如果使用者有獲指派授權，而且可以使用商務用 Skype，則設為 true。  <br/> |
-|HasLicenseTeams  <br/> |如果使用者已獲指派授權，而且可讓您使用 Microsoft 團隊，則設為 true。  <br/> |
+|HasLicenseTeams  <br/> |若使用者已獲指派授權，而且可以使用 Microsoft Teams 則設定為 true。  <br/> |
 |Company  <br/> |在 Azure Active Directory 中表示此使用者的公司資料。  <br/> |
 |Department  <br/> |在 Azure Active Directory 中表示此使用者的部門資料。  <br/> |
 |LocationCity  <br/> |在 Azure Active Directory 中表示此使用者的城市資料。  <br/> |
@@ -81,9 +81,9 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
 |LocationState  <br/> |在 Azure Active Directory 中表示此使用者的州資料。  <br/> |
 |LocationOffice  <br/> |使用者的辦公室。  <br/> |
 |Title  <br/> |在 Azure Active Directory 中表示此使用者的職稱資料。  <br/> |
-|Deleted  <br/> |True 是表示如果使用者已從 Microsoft 365 刪除最後一個完整月份的使用者。  <br/> |
+|Deleted  <br/> |True 是表示如果使用者已從最後一個完整月份的 Microsoft 365 中刪除。  <br/> |
 |DeletedDate  <br/> |從 Microsoft 365 刪除使用者的日期。  <br/> |
-|YAM_State  <br/> |Yammer 系統中使用者的狀態，可為 active、deleted 或擱置狀態。  <br/> |
+|YAM_State  <br/> |Yammer 系統中使用者的狀態，可為作用中、已刪除或已暫停狀態。  <br/> |
 |YAM_ActivationDate  <br/> |使用者在 Yammer 中進入作用中狀態的日期。  <br/> |
 |YAM_DeletionDate  <br/> |使用者在 Yammer 中進入已刪除狀態的日期。  <br/> |
 |YAM_SuspensionDate  <br/> |使用者在 Yammer 中進入已暫停狀態的日期。  <br/> |
@@ -95,7 +95,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
 |UserID  <br/> |代表使用者的唯一使用者識別碼，可與資料集內的其他資料表格加入。  <br/> |
-|IDType  <br/> |如果使用者是使用其 Yammer 識別碼來連線的 Yammer 使用者，則識別碼類型設為 1; 如果使用者使用 Microsoft 365 識別碼連線到 Yammer，則為0。  <br/> 值為1表示此使用者使用 Yammer 識別碼（而不是其 Microsoft 365 識別碼）連線至 Yammer  <br/> |
+|IDType  <br/> |如果使用者是使用其 Yammer 識別碼進行連線的 Yammer 使用者，則識別碼類型設為 1; 如果使用者使用 Microsoft 365 識別碼連線到 Yammer，則為0。  <br/> 值為1表示此使用者使用 Yammer 識別碼（而不是其 Microsoft 365 識別碼）連接至 Yammer  <br/> |
 |Timeframe  <br/> |此表格表示有資料的月份值。  <br/> |
 |EXO_EmailSent  <br/> |已傳送的電子郵件數目。  <br/> |
 |EXO_EmailReceived  <br/> |已接收的電子郵件數目。  <br/> |
@@ -107,7 +107,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
 |EXO_MeetingSent  <br/> |已傳送的會議數目。  <br/> |
 |ODB_FileViewedModified  <br/> |此使用者在任何商務用 OneDrive 上互動的檔案數目 (例如建立、更新、刪除、檢視或下載)。  <br/> |
 |ODB_FileSynched  <br/> |此使用者在任何商務用 OneDrive 上同步處理的檔案數目。  <br/> |
-|ODB_FileSharedInternally  <br/> |此使用者從任何 OneDrive 公司內部共用的檔案數目，或與可能包含外部使用者) 的群組 (中的使用者共用的檔案數目。  <br/> |
+|ODB_FileSharedInternally  <br/> |此使用者從任何商務用 OneDrive （或群組 (中的使用者）內部共用的檔案數目（可能包括外部使用者) ）。  <br/> |
 |ODB_FileSharedExternally  <br/> |此使用者從任何商務用 OneDrive 外部共用的檔案數目。  <br/> |
 |ODB_AccessByOwner  <br/> |使用者與自己的商務用 OneDrive 上檔案互動的檔案數目。  <br/> |
 |ODB_AccessOthers  <br/> |使用者與其他使用者的商務用 OneDrive 上檔案互動的檔案數目。  <br/> |
@@ -133,9 +133,9 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
 |Teams_ChannelMessage  <br/> |張貼到通道的郵件數目。  <br/> |
 |Teams_CallParticipate  <br/> |使用者參與的通話數目。  <br/> |
 |Teams_MeetingParticipate  <br/> |使用者加入的會議數目。  <br/> |
-|Teams_HasOtherAction  <br/> |布林值，如果使用者在 Microsoft 小組中執行其他動作。  <br/> |
-|YAM_MessagePost  <br/> |此使用者投遞的 Yammer 訊息數目。  <br/> |
-|YAM_MessageLiked  <br/> |此使用者贊的 Yammer 訊息數目。  <br/> |
+|Teams_HasOtherAction  <br/> |布林值，如果使用者在 Microsoft Teams 中執行其他動作。  <br/> |
+|YAM_MessagePost  <br/> |此使用者投遞的 Yammer 郵件數目。  <br/> |
+|YAM_MessageLiked  <br/> |此使用者贊的 Yammer 郵件數目。  <br/> |
 |YAM_MessageRead  <br/> |此使用者讀取的 Yammer 郵件數目。  <br/> |
 |SFB_P2PSummary  <br/> |此使用者參與的對等工作階段數目。  <br/> |
 |SFB_ConfOrgSummary  <br/> |此使用者組織的會議工作階段數目。  <br/> |
@@ -146,7 +146,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
    
 ### <a name="data-table---tenant-product-usage"></a>資料表格 - 租用戶產品使用情況
 
-此表格針對 Microsoft 365 內每個產品的 enable、active、傳回和初次使用的使用者，提供每月的採用資料。 Microsoft 365 值代表任何產品中的使用中用法。
+此表格針對 Microsoft 365 中每個產品的「啟用」、「作用中」、「傳回」和「初次」的使用者，提供每月採用的採用資料。 Microsoft 365 值代表任何產品中的使用中用法。
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
@@ -166,7 +166,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
 |Timeframe  <br/> |月份值。每個產品在過去 12 個月內，每個月都會有一列，包括目前部分月份。  <br/> |
-|Product  <br/> |Microsoft 365 內可用使用方式資料的產品名稱。  <br/> |
+|Product  <br/> |可供使用中資料的 Microsoft 365 內的產品名稱。  <br/> |
 |Activity  <br/> |產品中用來展現產品使用中的活動名稱。  <br/> |
 |ActivityCount  <br/> |這是針對產品內所有作用中使用者執行的每個活動計算的動作總數。  <br/> **注意：** 若是 SharePoint Online 和商務用 OneDrive 活動，此值代表與使用者互動的不同文件數目。  <br/> |
 |ActiveUserCount  <br/> |已在產品內執行活動的使用者數目。  <br/> |
@@ -175,7 +175,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
    
 ### <a name="data-table---tenant-mailbox-usage"></a>資料表格 - 租用戶信箱使用量
 
-此表格是由具有使用者信箱之所有授權 Exchange Online 使用者的摘要資料所組成。 其中包含所有使用者信箱的月底狀態。 此表格在多個月份內的資料不具有累計性。 此表格中最新月份的資料代表最新的狀態。
+此表格包含所有擁有使用者信箱之授權 Exchange Online 使用者的摘要資料。 其中包含所有使用者信箱的月底狀態。 此表格在多個月份內的資料不具有累計性。 此表格中最新月份的資料代表最新的狀態。
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
@@ -194,11 +194,11 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
    
 ### <a name="data-table---tenant-client-usage"></a>資料表格 - 租用戶用戶端使用量
 
-此表格提供使用者用來連線至 Exchange Online、商務用 Skype 和 Yammer 之用戶端的每月相關摘要資料。 此表格還沒有適用於 SharePoint Online 和商務用 OneDrive 的用戶端使用資料。
+此表格提供每月的摘要資料，以供使用者用來連線至 Exchange Online、商務用 Skype 及 Yammer 的用戶端使用。 此表格還沒有適用於 SharePoint Online 和商務用 OneDrive 的用戶端使用資料。
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
-|Product  <br/> |Microsoft 365 內可用用戶端使用方式資料的產品名稱。  <br/> |
+|Product  <br/> |可供使用之用戶端使用狀況資料 Microsoft 365 內的產品名稱。  <br/> |
 |ClientId  <br/> |用來連線至產品之每個裝置的名稱。  <br/> |
 |UserCount  <br/> |使用每個產品適用之每個用戶端的使用者數目。  <br/> |
 |Timeframe  <br/> |月份值  <br/> |
@@ -206,7 +206,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
    
 ### <a name="data-table---tenant-sharepoint-online-usage"></a>資料表格 - 租用戶 SharePoint Online 使用量
 
-此表格包含 SharePoint Online 網站使用量或活動的每月相關摘要資料。 這只涵蓋小組網站與群組網站。 SharePoint Online 網站的 month 狀態的結束點會以此欄位表示，例如，如果使用者建立了五個檔，並使用 10 MB 來儲存總儲存體，然後刪除部分檔案，並新增更多的檔案，讓檔案的月末狀態為使用五 MB 儲存體的7個，則此表格中所表示的值就是月底的狀態。 系統會隱藏此表格以避免重複計算彙總，並當做建立兩個參照表格的來源使用。
+此表格包含 SharePoint Online 網站使用量或活動的每月相關摘要資料。 這只涵蓋小組網站與群組網站。 SharePoint Online 網站的 month 狀態的結束點會以此欄位表示，例如，如果使用者建立了五個檔，並使用 10 mb 來儲存總儲存體，然後刪除部分檔案，並新增更多的檔案，讓檔案的月末狀態為使用五 MB 儲存體的7個，則此表格中所表示的值就是月底的狀態。 系統會隱藏此表格以避免重複計算彙總，並當做建立兩個參照表格的來源使用。
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
@@ -246,7 +246,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
 
 |**資料行名稱**|**欄說明**|
 |:-----|:-----|
-|時間  <br/> |月份值。 每個產品在過去 12 個月內，每個月都會有一列，包括目前部分月份。  <br/> |
+|時間  <br/> |月份值。每個產品在過去 12 個月內，每個月都會有一列，包括目前部分月份。  <br/> |
 |GroupType  <br/> |群組 (private/public/any) 的類型。  <br/> |
 |TotalGroups  <br/> |每個群組類型中的群組數目。  <br/> |
 |ActiveGroups  <br/> |作用中的群組數目。  <br/> |
@@ -270,18 +270,18 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 Micr
 |SPO_ActiveFiles  <br/> |作用中 SharePoint 檔案數目。  <br/> |
 |SPO_StorageUsed  <br/> |使用的 SharePoint 儲存量數量。  <br/> |
 |YAM_TotalGroups  <br/> |Yammer 群組數目。  <br/> |
-|YAM_ActiveGroups  <br/> |作用中的 Yammer 群組數目。  <br/> |
+|YAM_ActiveGroups  <br/> |作用中 Yammer 群組數目。  <br/> |
 |YAM_LikedActiveGroups  <br/> |具有類似活動的 Yammer 群組數目。  <br/> |
-|YAM_PostedActiveGroups  <br/> |具有後續活動的 Yammer 群組數目。  <br/> |
+|YAM_PostedActiveGroups  <br/> |具有開機自檢活動的 Yammer 群組數目。  <br/> |
 |YAM_ReadActiveGroups  <br/> |具有讀取活動的 Yammer 群組數目。  <br/> |
 |YAM_TotalActivities  <br/> |Yammer 活動的數目。  <br/> |
-|YAM_LikedActivities  <br/> |類似活動的 Yammer 數目。  <br/> |
-|YAM_PostedActivties  <br/> |Yammer 發佈活動的數目。  <br/> |
+|YAM_LikedActivities  <br/> |Yammer 類似活動的數目。  <br/> |
+|YAM_PostedActivties  <br/> |Yammer 開機自檢活動的數目。  <br/> |
 |YAM_ReadActivites  <br/> |Yammer 讀取活動的數目。  <br/> |
    
 ### <a name="data-table---tenant-office-activation"></a>資料表格 - 租用戶 Office 啟用
 
-表格提供跨服務方案的 Office 訂閱啟用次數的相關資料，例如，適用于企業的 Microsoft 365 應用程式、Visio、Project。 它也會提供每個裝置 (Android/iOS/Mac/PC) 啟用次數的相關資料。
+此表格提供有關整個服務方案中的 Office 訂閱啟用數目的資料，例如，針對企業、Visio Project 的 Microsoft 365 Apps。 它也會提供每個裝置 (Android/iOS/Mac/PC) 啟用次數的相關資料。
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|

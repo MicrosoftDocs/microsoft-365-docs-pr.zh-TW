@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 瞭解 Contoso 如何使用 Microsoft 365 for enterprise 中的資訊保護功能，在雲端中保護其數位資產。
+description: 瞭解 Contoso 如何使用 Microsoft 365 for enterprise 的資訊保護功能，在雲端中保護其數位資產。
 ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "51051493"
 
 Contoso 對其資訊安全性很重要。 對其產品設計和專有製造技術相關的智慧財產權的洩漏或破壞會帶來競爭的劣勢。
 
-在將其機密數位資產移至雲端之前，Contoso 確定 Microsoft 365 for enterprise 的雲端架構服務是否支援其內部部署資訊分類及保護需求。
+在將其機密數位資產移至雲端之前，Contoso 確定其內部部署資訊分類及保護需求是以雲端架構服務的 Microsoft 365 for enterprise 所支援。
 
 ## <a name="contoso-data-security-classification"></a>Contoso 資料安全性分類
 
@@ -34,7 +34,7 @@ Contoso 執行其資料的分析，並確定下列分類層級。
 
 | 第 1 級：基準 | 第 2 級：敏感性 | 第 3 級：高管制 |
 |:-------|:-----|:-----|
-| 資料經過加密並且僅提供給已驗證的使用者。<BR> <BR> 針對所有儲存在內部部署和雲端架構存放區和工作負載中的資料提供。 當資料位於服務中，且在服務和用戶端裝置之間傳輸時，會進行加密。 <BR><BR>第 1 級的範例：一般業務通訊 (電子郵件) 和用於行政、銷售和支援員工的檔案之資料。 | 第 1 級再加上增強式驗證及資料遺失保護。<BR> <BR> 強驗證封裝含 Azure AD Multi-Factor 驗證 (MFA) 搭配 SMS 驗證。 資料遺失防護可確保敏感或重要資訊不會在 Microsoft 雲端外移動。<BR><BR>第 2 級的範例：財務和法務資訊以及新產品的研發資料。 | 第 2 級再加上最高層級的加密、驗證及稽核。<BR><BR>對靜態資料和雲端資料的最高層級資料加密，遵循地區法規，結合 MFA 與智慧卡以及細微稽核與警示。<BR> <BR>第3級資料範例包括客戶及合作夥伴個人資訊、產品工程規格，以及專屬的製造技術。  |
+| 資料經過加密並且僅提供給已驗證的使用者。<BR> <BR> 針對所有儲存在內部部署和雲端架構存放區和工作負載中的資料提供。 當資料位於服務中，且在服務和用戶端裝置之間傳輸時，會進行加密。 <BR><BR>第 1 級的範例：一般業務通訊 (電子郵件) 和用於行政、銷售和支援員工的檔案之資料。 | 第 1 級再加上增強式驗證及資料遺失保護。<BR> <BR> 強驗證封裝含 Azure AD Multi-Factor 驗證 (MFA) 搭配簡訊驗證。 資料遺失防護可確保敏感或重要資訊不會在 Microsoft 雲端外移動。<BR><BR>第 2 級的範例：財務和法務資訊以及新產品的研發資料。 | 第 2 級再加上最高層級的加密、驗證及稽核。<BR><BR>對靜態資料和雲端資料的最高層級資料加密，遵循地區法規，結合 MFA 與智慧卡以及細微稽核與警示。<BR> <BR>第3級資料範例包括客戶及合作夥伴個人資訊、產品工程規格，以及專屬的製造技術。  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Contoso 資訊原則
@@ -48,7 +48,7 @@ Contoso 執行其資料的分析，並確定下列分類層級。
 | 高商業價值 (第 3 級：高管制) | 允許高階主管以及工程部和製造部的主管存取。 <BR> <BR> 版權管理系統 (RMS)，只有受控網路裝置。  | 7 年  | 使用數位簽章以提供不可否認性。  |
 |||||
 
-## <a name="the-contoso-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Microsoft 365 for enterprise 的資訊保護的 Contoso 途徑
+## <a name="the-contoso-path-to-information-protection-with-microsoft-365-for-enterprise"></a>以企業 Microsoft 365 為資訊保護的 Contoso 途徑
 
 Contoso 遵循這些步驟，針對其資訊保護需求準備 Microsoft 365 for enterprise：
 
@@ -74,7 +74,7 @@ Contoso 遵循這些步驟，針對其資訊保護需求準備 Microsoft 365 for
 
 ## <a name="conditional-access-policies-for-information-protection"></a>資訊保護的條件式存取原則
 
-在 Exchange Online 和 SharePoint 的部署過程中，Contoso 設定下列一組條件式存取原則，並將它們套用至適當的群組：
+在其 Exchange Online 與 SharePoint 的首展過程中，Contoso 設定下列一組條件式存取原則，並將它們套用至適當的群組：
 
 - [裝置原則的受控和非受控應用程式存取](../security/defender-365-security/identity-access-policies.md)
 - [Exchange Online 存取原則](../security/defender-365-security/secure-email-recommended-policies.md)
@@ -92,13 +92,13 @@ Contoso 遵循這些步驟，針對其資訊保護需求準備 Microsoft 365 for
 
 - 允許的應用程式，以及他們可對組織的資料採取的動作，是由應用程式保護原則定義。
 - 電腦和行動裝置都必須符合規範。
-- Exchange Online 使用 Office 365 郵件加密 (OME) 用於 Exchange Online。
+- Exchange Online 會使用 Office 365 郵件加密， (Exchange Online 的 OME) 。
 - SharePoint 會使用應用程式強制性限制。
 - SharePoint 會針對僅限瀏覽器存取使用存取控制原則，並封鎖未受控裝置的存取。
 
-## <a name="mapping-microsoft-365-for-enterprise-features-to-contoso-data-levels"></a>將 Microsoft 365 企業版功能對應至 Contoso 資料層級
+## <a name="mapping-microsoft-365-for-enterprise-features-to-contoso-data-levels"></a>將企業功能對應至 Contoso 資料層級的 Microsoft 365
 
-下表將 Contoso 資料層級對應至 Microsoft 365 for enterprise 中的資訊保護功能。
+下表對應至 enterprise Microsoft 365 中的資訊保護功能的 Contoso 資料層級。
 
 | 層級 | Microsoft 365 雲端服務 | Windows 10 和 Microsoft 365 Apps 企業版 | 安全性與合規性 |
 |:-------|:-----|:-----|:-----|
@@ -113,7 +113,7 @@ Contoso 遵循這些步驟，針對其資訊保護需求準備 Microsoft 365 for
 
 ## <a name="next-step"></a>下一步
 
-瞭解 Contoso 如何針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用 [跨 Microsoft 365 的安全性功能](contoso-security-summary.md) 。
+瞭解 Contoso 如何針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用[跨 Microsoft 365 的安全性功能](contoso-security-summary.md)。
 
 ## <a name="see-also"></a>另請參閱
 

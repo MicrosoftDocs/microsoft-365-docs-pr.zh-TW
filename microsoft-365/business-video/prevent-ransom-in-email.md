@@ -32,11 +32,11 @@ ms.locfileid: "51580495"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
 
-Microsoft 365 會防止在 Outlook 中開啟可能有害的檔案（例如 JavaScript、批次及可執行檔），以協助保護您的企業抵禦勒索軟體。 若要增加這種保護層級，您可以新增封鎖或警告您其他檔案類型的規則，請遵循下列步驟。
+Microsoft 365 會防止在 Outlook 中開啟可能有害的檔案（如 JavaScript、批次及可執行檔），以協助保護您的企業抵禦勒索軟體。 若要增加這種保護層級，您可以新增封鎖或警告您其他檔案類型的規則，請遵循下列步驟。
 
 ## <a name="try-it"></a>試試看吧！
 
-1. 從系統管理中心的 [https://admin.microsoft.com](https://admin.microsoft.com) ，選擇 [系統 **管理中心**] 底下的 [ **Exchange** ]。
+1. 在系統管理中心，選擇 [系統管理中心] 底下的 [ [https://admin.microsoft.com](https://admin.microsoft.com) **Exchange** ]。 
 1. 從左側的功能表中，選擇 [ **郵件流程**]。
 1. 在 [規則] 索引標籤上，選擇加號 (+) 符號旁的箭號，然後選擇 [ **建立新規則**]。
 1. 在 [ **新增規則** ] 頁面上，輸入規則的名稱，然後滾動至底部，然後選擇 [ **更多選項**]。

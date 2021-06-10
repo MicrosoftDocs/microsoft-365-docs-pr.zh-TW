@@ -37,6 +37,6 @@ ms.locfileid: "51051469"
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
-此套件可協助您規劃、測試及驗證執行 Windows 10 企業版和 Microsoft 365 應用程式企業版的桌面部署和管理。 使用 Microsoft 端點設定管理員、桌面 Analytics、Office 自訂工具、OneDrive、Windows Autopilot 等的實驗封面。
+此套件可協助您規劃、測試及驗證執行 Windows 10 企業版和 Microsoft 365 Apps 企業版的桌面部署和管理。 使用 Microsoft Endpoint Configuration Manager、桌面分析、Office 自訂工具、OneDrive、Windows Autopilot 等的實驗封面。
 
-如需詳細資訊，請參閱 [Windows 和 Office 部署實驗室套件](modern-desktop-deployment-and-management-lab.md) 。
+如需詳細資訊，請參閱[Windows 和 Office 部署實驗室套件](modern-desktop-deployment-and-management-lab.md)。

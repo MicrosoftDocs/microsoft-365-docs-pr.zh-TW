@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: '瞭解如何尋找新的 Microsoft 365 合作夥伴，或取得您已在過去使用之合作夥伴的連絡人資訊。 '
+description: '瞭解如何尋找新的 Microsoft 365 合作夥伴，或取得您過去已使用之合作夥伴的連絡人資訊。 '
 ms.openlocfilehash: 189eda83f3eca957e6f9fa720e2f6ccdd07db171
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -47,7 +47,7 @@ ms.locfileid: "51580939"
 ## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a>尋找您曾經合作過的合作夥伴的連絡資訊
 
 > [!NOTE]
-> 在某些情況下，您可以在 Microsoft 365 系統管理中心找到您過去已使用的合作夥伴的資訊。 提醒您，這項資訊不一定是最新資訊。 因此我們建議您最好能與您組織中負責採購的人員或部門連絡，以找出適合您的合作夥伴。 
+> 在某些情況下，您可以在 Microsoft 365 系統管理中心找到您以前使用過之合作夥伴的資訊。 提醒您，這項資訊不一定是最新資訊。 因此我們建議您最好能與您組織中負責採購的人員或部門連絡，以找出適合您的合作夥伴。 
   
 ## <a name="get-partner-info-in-the-admin-center"></a>在系統管理中心取得夥伴資訊
 

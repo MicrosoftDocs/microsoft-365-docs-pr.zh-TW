@@ -29,7 +29,7 @@ ms.locfileid: "50909759"
 
 ## <a name="using-azure-infrastructure-services-for-internet-sites"></a>針對網際網路網站使用 Azure 基礎結構服務
 
-Microsoft Azure 提供了極具說服力的選項，可讓您根據 SharePoint Server 2013 來裝載網際網路網站。 其優點包括下列各項：
+Microsoft Azure 為以 SharePoint 伺服器2013為基礎的網際網路網站提供一個極具吸引力的選項。 其優點包括下列各項：
 
 - 致力於開發卓越的網站，而不是建立基礎結構。
 
@@ -37,7 +37,7 @@ Microsoft Azure 提供了極具說服力的選項，可讓您根據 SharePoint S
 
 - 只支付您所需的資源並加以使用。
 
-- 使用 Azure Active Directory 做為客戶帳戶。
+- 請利用客戶帳戶的 Azure Active Directory。
 
 - 新增 Microsoft 365 中目前無法使用的功能，例如深入報告和分析。
 
@@ -47,9 +47,9 @@ Microsoft Azure 提供了極具說服力的選項，可讓您根據 SharePoint S
 
 |資源|其他資訊|
 |---|---|
-|**Azure 中的 SharePoint Server 2013 網際網路網站** <br/> [![Azure 中使用 SharePoint 的網際網路網站影像](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|這種架構模型概述 Azure 中網際網路網站的重要設計活動和建議的架構選項。|
-|**設計範例： Azure 中用於 SharePoint Server 2013 的網際網路網站** <br/> [ ![ 設計範例影像： Microsoft Azure 中用於 SharePoint 2013] 的網際網路網站 ](../media/MS-AZ-InternetSitesDesignSample.jpg) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|使用此設計範例做為您自己架構的起點。|
-|**[SharePoint 2013 的 Microsoft Azure 架構](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |本文說明如何設計 Azure 架構以主控 SharePoint 解決方案。|
+|**SharePointAzure 中的伺服器2013網際網路網站** <br/> [![Azure 中使用 SharePoint 的網際網路網站影像](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|這種架構模型概述 Azure 中網際網路網站的重要設計活動和建議的架構選項。|
+|**設計範例： Azure 中用於 SharePoint Server 2013 的網際網路網站** <br/> [ ![ 設計範例的影像： SharePoint 2013] Microsoft Azure 中的網際網路網站 ](../media/MS-AZ-InternetSitesDesignSample.jpg) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|使用此設計範例做為您自己架構的起點。|
+|**[Microsoft AzureSharePoint 2013 的架構](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |本文說明如何設計 Azure 架構以主控 SharePoint 解決方案。|
 |
 
 ## <a name="see-also"></a>另請參閱

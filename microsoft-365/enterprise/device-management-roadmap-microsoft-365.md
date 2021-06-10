@@ -24,7 +24,7 @@ ms.locfileid: "51051457"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 的裝置管理藍圖
 
-Microsoft 365 for enterprise 包含的功能可協助您管理組織內的裝置及其應用程式。 管理行動裝置可協助您保護和保護組織的資源。
+適用于企業的 Microsoft 365 包括協助管理組織中的裝置及其應用程式的功能。 管理行動裝置可協助您保護和保護組織的資源。
 
 裝置管理有兩個選項：
 
@@ -33,7 +33,7 @@ Microsoft 365 for enterprise 包含的功能可協助您管理組織內的裝置
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-您可以使用 Microsoft Intune，利用行動裝置管理或行動應用程式管理來管理組織的存取權。 行動裝置管理是使用者在 Intune 中「註冊」其裝置的時間。 裝置註冊後，即為受管理的裝置;因此，它可以接收您組織的原則、規則和設定。 例如，您可以安裝特定的應用程式、建立密碼原則、安裝 VPN 連線等等。
+您可以使用 Microsoft Intune，使用行動裝置管理或行動應用程式管理來管理組織的存取權。 行動裝置管理是使用者在 Intune 中「註冊」其裝置的時間。 裝置註冊後，即為受管理的裝置;因此，它可以接收您組織的原則、規則和設定。 例如，您可以安裝特定的應用程式、建立密碼原則、安裝 VPN 連線等等。
 
 具有自己個人裝置的使用者可能不想要註冊其裝置，或由 Intune 和您組織的原則進行管理。 不過，您仍然需要保護組織的資源和資料。 在此案例中，您可以使用行動應用程式管理來保護您的應用程式。 例如，您可以使用行動應用程式管理原則，此原則要求使用者在存取裝置上的 SharePoint 線上時輸入 PIN 碼。
 
@@ -41,7 +41,7 @@ Microsoft 365 for enterprise 包含的功能可協助您管理組織內的裝置
 
 ## <a name="basic-mobility-and-security"></a>設定基本行動與安全性
 
-這是 Microsoft 365 內建的，可協助您保護和管理使用者的行動裝置，例如 Iphone、Ipad、Androids 和 Windows phone。 您可以建立及管理裝置安全性原則、遠端抹除裝置資料，以及檢視詳細的裝置報告。
+這已內置 Microsoft 365，可協助您保護和管理使用者的行動裝置，例如 iphone、ipad、Androids 和 Windows 電話。 您可以建立及管理裝置安全性原則、遠端抹除裝置資料，以及檢視詳細的裝置報告。
 
 ## <a name="choose-between-the-two-options"></a>選擇兩個選項
 
@@ -59,6 +59,6 @@ Microsoft 會針對[身分識別與裝置存取](../security/defender-365-securi
 - [必要條件](../security/defender-365-security/identity-access-prerequisites.md)
 - [一般身分識別與裝置存取原則](../security/defender-365-security/identity-access-policies.md)
 
-## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 如何對 Microsoft 365 進行裝置管理
+## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 如何管理 Microsoft 365 的裝置
 
-如需虛構但具有代表性的多國公司如何使用 Microsoft 365 雲端服務部署行動裝置管理基礎結構的資訊，請參閱 [mobile device management For Contoso](contoso-mdm.md)。
+如需虛構但具有代表性的多國公司如何使用 Microsoft 365 雲端服務部署行動裝置管理基礎結構的資訊，請參閱[mobile device management for Contoso](contoso-mdm.md)。

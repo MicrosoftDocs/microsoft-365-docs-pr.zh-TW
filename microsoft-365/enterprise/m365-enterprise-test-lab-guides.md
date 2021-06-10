@@ -37,17 +37,17 @@ Tlg 設計為模組式。 它們相互建立，以建立與您的學習或測試
   
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-如需 Microsoft 365 for enterprise 測試實驗室指南堆疊中所有文章的視覺對應，請展開下圖，或前往 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+如需適用于企業測試實驗室指南堆疊的 Microsoft 365 中的所有文章的視覺對應，請展開下圖，或前往[Microsoft 365 for enterprise test lab guide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 [![企業用 Microsoft 365 測試實驗室指南堆疊](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>基本設定
 
-首先，建立 [Microsoft 365 for enterprise](/microsoft-365-enterprise/)的測試環境。 您可以建立兩種不同的基本設定類型：
+首先，建立適用于[enterprise Microsoft 365 的](/microsoft-365-enterprise/)測試環境。 您可以建立兩種不同的基本設定類型：
 
-- [羽量級基本](lightweight-base-configuration-microsoft-365-enterprise.md) 設定-當您想要在僅雲端環境中為企業功能（不包含任何內部部署元件）設定及示範 Microsoft 365 時，請使用此設定。
+- [羽量級基本](lightweight-base-configuration-microsoft-365-enterprise.md)設定-當您想要在僅雲端環境（不包含任何內部部署元件）中設定及示範企業版功能的 Microsoft 365 時，請使用此設定。
 
-- [模擬企業基本](simulated-ent-base-configuration-microsoft-365-enterprise.md) 設定-當您想要設定及365示範混合雲端環境中的企業功能（例如 Active Directory 網域服務 (AD DS) 網域）時，請使用此設定。
+- [模擬企業基本](simulated-ent-base-configuration-microsoft-365-enterprise.md)設定-當您想要設定並示範混合雲端環境中的企業功能 Microsoft 365，而該環境使用內部部署元件（例如 Active Directory 網域服務 (AD DS) 網域）時，請使用此設定。
 
 您也可以建立 Office 365 E5 的測試環境，做法是不要將 Microsoft 365 E5 授權新增至您的試用版或生產測試環境。
     

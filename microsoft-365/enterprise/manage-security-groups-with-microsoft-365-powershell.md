@@ -28,13 +28,13 @@ ms.locfileid: "50909499"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-您可以使用 Microsoft 365 的 PowerShell 作為 Microsoft 365 系統管理中心的替代方案，以管理安全性群組。 
+您可以使用 PowerShell 做為 Microsoft 365 Microsoft 365 系統管理中心的替代，以管理安全性群組。 
 
 本文說明如何列出、建立、變更設定和移除安全性群組。 
 
 當本文中的命令區塊要求您指定變數值時，請使用下列步驟。
 
-1. 將命令區塊複製到 [剪貼簿]，然後將它貼到 [記事本] 或 PowerShell 整合型腳本環境 (ISE) 。
+1. 將命令區塊複製到 [剪貼簿]，然後將它貼到記事本或 PowerShell 整合式腳本環境 (ISE) 。
 2. 填入變數值，並移除 "<" 和 ">" 字元。
 3. 在 PowerShell] 視窗或 PowerShell ISE 中執行命令。
 
@@ -42,7 +42,7 @@ ms.locfileid: "50909499"
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 ### <a name="list-your-groups"></a>列出您的群組
 
@@ -126,7 +126,7 @@ Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -e
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 ### <a name="list-your-groups"></a>列出您的群組
 

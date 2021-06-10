@@ -37,11 +37,11 @@ ms.locfileid: "51051529"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-針對僅限雲端的身分識別模型，您可以根據建立的方式，將 Microsoft 365 授權指派給使用者帳戶。
+針對僅限雲端的身分識別模型，您可以在建立使用者帳戶時，根據建立的方式，將 Microsoft 365 授權指派給他們。
 
-針對混合式識別模型，當第一次同步處理 Active Directory 網域服務 (AD DS) 使用者帳戶時，系統不會自動指派位置或 Microsoft 365 授權。 **您必須在指派授權之前或之前，設定每個使用者帳戶的使用者位置。**
+針對混合式識別模型，當第一次同步處理 Active Directory 網域服務 (AD DS) 使用者帳戶時，將不會自動指派位置或 Microsoft 365 授權。 **您必須在指派授權之前或之前，設定每個使用者帳戶的使用者位置。**
 
-在這兩種情況下，您必須指派授權給使用者帳戶，讓您的使用者能夠存取 Microsoft 365 服務，例如電子郵件和 Microsoft 團隊。
+在這兩種情況下，您必須指派授權給使用者帳戶，讓您的使用者能夠存取 Microsoft 365 服務，例如電子郵件和 Microsoft Teams。
 
 您可以透過群組成員資格個別或自動將授權指派給使用者帳戶。
 
@@ -68,6 +68,6 @@ ms.locfileid: "51051529"
 使用已獲指派授權的適當使用者帳戶集，您現在可以：
 
 - [實施安全性](../security/defender-365-security/security-roadmap.md)
-- [部署用戶端軟體，例如 Microsoft 365 應用程式](/DeployOffice/deployment-guide-microsoft-365-apps)
+- [部署用戶端軟體，例如 Microsoft 365 Apps](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [設定裝置管理](device-management-roadmap-microsoft-365.md)
 - [設定服務和應用程式](configure-services-and-applications.md)

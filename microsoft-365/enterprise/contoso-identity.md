@@ -23,7 +23,7 @@ ms.locfileid: "51051517"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的身分識別
 
-Microsoft 透過 Azure Active Directory (Azure AD) ，以服務 (IDaaS) 所有雲端產品。 為了採用 Microsoft 365 for enterprise，Contoso IDaaS 解決方案必須使用內部部署身分識別提供者，並包含與其現有信任的協力廠商身分識別提供者的同盟驗證。
+Microsoft 透過 Azure Active Directory (Azure AD) ，以服務 (IDaaS) 所有雲端產品。 若要採用 Microsoft 365 for enterprise，Contoso IDaaS 解決方案必須使用內部部署身分識別提供者，並將同盟驗證納入現有的受信任的協力廠商身分識別提供者。
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Contoso Active Directory 網域服務樹系
 
@@ -33,7 +33,7 @@ Contoso 會使用單一 Active Directory 網域服務，將 contoso com 的單�
 
 ![Contoso 的樹系和世界各地的網域](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso 決定使用 contoso com 樹系中的帳戶和群組 \. ，以進行 Microsoft 365 工作負載和服務的驗證和授權。
+contoso 決定使用 contoso com 樹系中的帳戶和群組 \. ，進行其 Microsoft 365 工作負載和服務的驗證和授權。
 
 ## <a name="the-contoso-federated-authentication-infrastructure"></a>Contoso 同盟驗證基礎結構
 
@@ -52,13 +52,13 @@ Contoso 決定保留這種基礎結構，並將其專用於客戶及夥伴驗證
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>用於雲端式驗證的混合式身分識別和密碼雜湊同步
 
-Contoso 想要將其內部部署 AD DS 樹系用於 Microsoft 365 雲端資源的驗證。 它決定使用密碼雜湊同步處理 (PHS) 。
+Contoso 想要使用內部部署 AD DS 樹系進行驗證，以 Microsoft 365 雲端資源。 它決定使用密碼雜湊同步處理 (PHS) 。
 
-PHS 會同步處理內部部署 AD DS 樹系與其 Microsoft 365 for enterprise 訂閱的 Azure AD 租使用者，並複製使用者和群組帳戶，以及散列版本的使用者帳戶密碼。
+PHS 會同步處理內部部署 AD DS 樹系與其 Microsoft 365 for enterprise 訂閱的 Azure ad 租使用者，複製使用者和群組帳戶，以及散列版本的使用者帳戶密碼。
 
-為了進行目錄同步處理，Contoso 已在其巴黎 datacenter 中的伺服器上部署 Azure AD Connect 工具。
+Contoso 在其巴黎 datacenter 中的伺服器上部署 Azure AD 連線工具，以進行目錄同步處理。
 
-以下是執行 Azure AD Connect 的伺服器輪詢 Contoso AD DS 樹系的變更，然後與 Azure AD 租使用者同步處理這些變更。
+以下是執行 Azure AD 連線的伺服器輪詢 Contoso AD DS 樹系以進行變更，然後使用 Azure AD 租使用者同步這些變更。
 
 ![Contoso PHS 目錄同步處理基礎結構](../media/contoso-identity/contoso-identity-fig4.png)
  
@@ -76,7 +76,7 @@ Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件�
  
 ## <a name="next-step"></a>下一步
 
-瞭解 Contoso 如何使用其 Microsoft 端點 Configuration Manager 基礎結構，在其整個組織中 [部署及保留目前的 Windows 10 企業版](contoso-win10.md) 。
+瞭解 Contoso 如何使用它的 Microsoft Endpoint Configuration Manager 基礎結構，在整個組織中[部署及保持目前的 Windows 10 企業版](contoso-win10.md)。
 
 ## <a name="see-also"></a>另請參閱
 

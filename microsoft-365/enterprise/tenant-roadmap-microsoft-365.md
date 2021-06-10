@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 租使用者藍圖
+title: Microsoft 365 的承租人藍圖
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -21,7 +21,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50909451"
 ---
-# <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 租使用者藍圖
+# <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 的承租人藍圖
 
 您的 Microsoft 365 租使用者是指派給您組織的一組服務。 此租使用者通常會與一或多個公用 DNS 功能變數名稱產生關聯，並且充當不同訂閱的中央和獨立容器，以及您指派給使用者帳戶的授權。 如需詳細資訊，請參閱 [Microsoft 雲端供應專案的訂閱、授權、帳戶及承租人](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)。
 
@@ -29,17 +29,17 @@ ms.locfileid: "50909451"
 
 若要讓您的租使用者準備好進行使用者、群組、授權和雲端應用程式，請務必仔細規劃並執行您的租使用者設定。
 
-## <a name="set-up-your-microsoft-365-tenant"></a>設定您的 Microsoft 365 租使用者
+## <a name="set-up-your-microsoft-365-tenant"></a>設定 Microsoft 365 租使用者
 
-確定您的網路可針對內部部署和遠端工作者存取 Microsoft 365 之後，您的下一個重要工作是針對 DNS 功能變數名稱、泛型服務，以及支援安全使用者登入的身分識別基礎結構，設定您的 Microsoft 365 租使用者。
+確定您的網路已針對內部部署和遠端工作者的 Microsoft 365 存取進行優化後，您下一次的大型工作會進行規劃，然後針對 DNS 功能變數名稱、泛型服務，以及支援安全使用者登入的身分識別基礎結構，設定 Microsoft 365 租使用者。
 
-### <a name="plan"></a>規劃
+### <a name="plan"></a>方案
 
 若要規劃租使用者的執行：
 
 - [瞭解訂閱、授權和 Azure Active Directory (Azure AD) 承租人](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [瞭解如何使用協力廠商 SSL 憑證](plan-for-third-party-ssl-certificates.md)
-- [瞭解 Microsoft 365 租使用者與 Azure AD 服務的整合方式](integrated-apps-and-azure-ads.md)
+- [瞭解 Microsoft 365 租使用者與 Azure AD 服務整合的方式](integrated-apps-and-azure-ads.md)
 - [規劃用戶端應用程式的支援](microsoft-365-client-support-certificate-based-authentication.md)
 - [決定如何使用混合式新式驗證](hybrid-modern-auth-overview.md)
 - [規劃 Office 2007 和 Office 2010 升級](plan-upgrade-previous-versions-office.md)
@@ -50,14 +50,14 @@ ms.locfileid: "50909451"
 若要部署您的租使用者： 
 
 - 為您的組織新增 [DNS 網域](../admin/setup/add-domain.md) 。
-- 使用 [Microsoft 365 系統管理中心的設定指南](setup-guides-for-microsoft-365.md)。
+- 使用[Microsoft 365 系統管理中心的設定指南](setup-guides-for-microsoft-365.md)。
 - 組建您的身分 [識別基礎結構](identity-roadmap-microsoft-365.md) ，並 [保護使用者登入](microsoft-365-secure-sign-in.md)。
 
 ### <a name="move-a-tenants-geographic-locations"></a>移動租使用者的地理位置
 
-Microsoft 會繼續開啟新的資料中心地理位置， (geos) Microsoft 365 服務。 這些新的資料中心 geos 可增加容量及計算資源，以支援客戶需求和使用量成長。 此外，新的資料中心 geos 提供核心客戶資料的地理位置資料派駐服務。
+Microsoft 繼續開啟新的資料中心地理位置， (geos) Microsoft 365 服務。 這些新的資料中心 geos 可增加容量及計算資源，以支援客戶需求和使用量成長。 此外，新的資料中心 geos 提供核心客戶資料的地理位置資料派駐服務。
 
-如需詳細資訊，請參閱 [將核心資料移至新的 Microsoft 365 datacenter geos](moving-data-to-new-datacenter-geos.md)。
+如需詳細資訊，請參閱[將核心資料移至新 Microsoft 365 datacenter geos](moving-data-to-new-datacenter-geos.md)。
 
 
 ## <a name="deploy-microsoft-365-multi-geo"></a>部署 Microsoft 365 多地理位置
@@ -76,6 +76,6 @@ Microsoft 會繼續開啟新的資料中心地理位置， (geos) Microsoft 365 
 - [跨租用戶信箱移轉](cross-tenant-mailbox-migration.md)
 - [租用戶到租用戶的移轉](microsoft-365-tenant-to-tenant-migrations.md)
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 以 [訂閱、授權、帳戶及](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)租使用者的方式開始規劃承租人。

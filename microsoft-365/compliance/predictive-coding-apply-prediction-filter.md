@@ -66,6 +66,6 @@ ms.locfileid: "52822494"
   > [!TIP]
   > 若要查看指派給檔的實際預測分數，您可以按一下 [讀取窗格] 中的 [ **中繼資料** ] 索引標籤。 在考核集中，所有模型的預測分數會顯示在 **RelevanceScores** 中繼資料屬性中。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 - 如需使用篩選的詳細資訊，請參閱 [查詢及篩選審閱集中的內容](review-set-search.md)。

@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何在 Microsoft 小組中建立組織的廣泛團隊。
+description: 瞭解如何在 Microsoft Teams 中建立組織範圍的團隊。
 ms.openlocfilehash: fa24457bbe34136c793fd0e7a5856ba57e345ca1
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,14 +33,14 @@ ms.locfileid: "51580531"
 
 ## <a name="try-it"></a>試試看吧！
 
-在您公司的每個人都可以隸屬的 Microsoft 小組中建立全組織團隊。 當您將更多使用者新增至 Microsoft 365 時，系統會自動將這些使用者新增至此小組。
+在 Microsoft Teams，您公司的每個人都可以隸屬于組織內的團隊。 當您在 Microsoft 365 新增更多使用者時，系統會自動將這些使用者新增至此小組。
 
-1. 在 Microsoft 團隊中，選取 [  **小組**]，然後 **建立小組。**
+1. 在 Microsoft Teams 中，選取 [ **Teams**]，然後 **建立小組。**
 2. 選擇  **從頭開始建立小組**。
 3. 選取 [  **建立整個組織的小組**]。
 
 > [!NOTE]
-> 您必須是 Microsoft 365 系統管理員，才可查看此選項。
+> 您必須是 Microsoft 365 管理員才能查看此選項。
 
 1. 為您的小組提供名稱、新增描述，然後選取 [  **建立**]。
 

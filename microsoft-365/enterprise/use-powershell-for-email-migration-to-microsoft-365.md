@@ -15,7 +15,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: 瞭解如何使用 PowerShell 將電子郵件從現有的系統移轉至 Microsoft 365。
+description: 瞭解如何使用 PowerShell 將電子郵件從現有系統移轉至 Microsoft 365。
 ms.openlocfilehash: 0ba090db6c5e7fd617f3b50b21dfd08605f84594
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "51581115"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-系統管理員第一次設定 Microsoft 365 時，通常會從現有的系統移轉電子郵件。 下列文章說明如何使用 Windows PowerShell: 來遷移電子郵件
+系統管理員第一次設定 Microsoft 365 時，通常會從現有的系統移轉電子郵件。 下列文章說明如何使用 Windows PowerShell 來遷移電子郵件：
   
 - [使用 PowerShell 以完全移轉至 Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md)
     

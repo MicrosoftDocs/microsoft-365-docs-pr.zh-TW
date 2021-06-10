@@ -14,7 +14,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: 瞭解如何使用 PowerShell 一次從來源電子郵件系統移動內容，方法是對 Microsoft 365 執行完全遷移。
+description: 瞭解如何使用 PowerShell 一次從來源電子郵件系統移動內容，方法是執行 Microsoft 365 的轉移遷移。
 ms.openlocfilehash: 6e59ac4d590208e0faed22e94cabe05601b17f18
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -26,16 +26,16 @@ ms.locfileid: "51581055"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-您可以使用完全遷移，將使用者信箱的內容從來源電子郵件系統移轉至 Microsoft 365。 本文會引導您使用 Exchange Online PowerShell 來進行電子郵件完全移轉的工作。
+您可以將使用者信箱的內容從來源電子郵件系統移轉，以透過使用已完全遷移的方式 Microsoft 365 一次。 本文會引導您使用 Exchange Online PowerShell 來進行電子郵件完全移轉的工作。
 
-透過複習主題， [您需要瞭解如何將電子郵件遷移到 Microsoft 365](/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration)，您就可以瞭解遷移程式的概況。 在熟悉該文章的內容後，請使用此主題來開始在不同電子郵件系統中移轉信箱。
+透過複習主題，[您需要瞭解如何將電子郵件遷移到 Microsoft 365](/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration)，您就可以取得遷移程式的概況。 在熟悉該文章的內容後，請使用此主題來開始在不同電子郵件系統中移轉信箱。
 
 > [!NOTE]
-> 您也可以使用 Exchange 系統管理中心來執行完全移轉。 請參閱 [執行電子郵件的完全遷移至 Microsoft 365](/Exchange/mailbox-migration/cutover-migration-to-office-365)。
+> 您也可以使用 Exchange 系統管理中心來執行完全移轉。 請參閱[執行電子郵件的完全遷移以 Microsoft 365](/Exchange/mailbox-migration/cutover-migration-to-office-365)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-完成此工作的預估時間：2-5 分鐘來建立遷移批次。 啟動移轉批次之後，移轉所需的時間會依批次中的信箱數目、每個信箱的大小和可用的網路容量而有所不同。 如需其他影響將信箱遷移至 Microsoft 365 的因素的詳細資訊，請參閱 [遷移效能](/Exchange/mailbox-migration/office-365-migration-best-practices)。
+完成此工作的預估時間：2-5 分鐘來建立遷移批次。 啟動移轉批次之後，移轉所需的時間會依批次中的信箱數目、每個信箱的大小和可用的網路容量而有所不同。 如需其他影響將信箱遷移至 Microsoft 365 所需時間的因素的詳細資訊，請參閱[遷移效能](/Exchange/mailbox-migration/office-365-migration-best-practices)。
 
 您必須已獲指派的權限，才能執行此程序。若要查看您需要哪些權限，請參閱[收件者權限](/exchange/recipients-permissions-exchange-2013-help)主題中所含表格的「移轉」項目。
 
@@ -48,7 +48,7 @@ ms.locfileid: "51581055"
 ### <a name="step-1-prepare-for-a-cutover-migration"></a>步驟 1：準備完全移轉
 <a name="BK_Step1"> </a>
 
-- **將您的內部部署 Exchange 組織新增為 Microsoft 365 組織公認的網域。** 遷移服務會使用內部部署信箱的 SMTP 位址，為新的 Microsoft 365 信箱建立 Microsoft 線上服務使用者識別碼和電子郵件地址。 如果您的 Exchange 網域不是 Microsoft 365 組織的公認網域或主域，遷移將會失敗。 如需詳細資訊，請參閱 [驗證您的網域](../admin/setup/add-domain.md)。
+- **將您的內部部署 Exchange 組織新增為您 Microsoft 365 組織的公認網域。** 遷移服務會使用內部部署信箱的 SMTP 位址，為新的 Microsoft 365 信箱建立 Microsoft Online Services 使用者識別碼和電子郵件地址。 如果您的 Exchange 網域不是 Microsoft 365 組織的公認網域或主域，遷移將會失敗。 如需詳細資訊，請參閱 [驗證您的網域](../admin/setup/add-domain.md)。
 
 - **在內部部署 Exchange 伺服器上設定 Outlook 無所不在。** 電子郵件移轉服務會使用 RPC over HTTP (或 Outlook 無所不在) 連線至您的內部部署 Exchange 伺服器。如需如何為 Exchange 2010、Exchange 2007 和 Exchange 2003 設定 Outlook 無所不在的相關資訊，請參閱下列主題：
 
@@ -79,7 +79,7 @@ ms.locfileid: "51581055"
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **指派必要權限給內部部署使用者帳戶來存取 Exchange 組織中的信箱。** 您用來連線至內部部署 Exchange 組織的內部部署使用者帳戶 (也稱為「遷移系統管理員」) 必須具備必要的許可權，才能存取您要遷移至 Microsoft 365 的內部部署信箱。 此使用者帳戶可用來建立內部部署組織的移轉端點。
+- **指派必要權限給內部部署使用者帳戶來存取 Exchange 組織中的信箱。** 您用來連線至內部部署 Exchange 組織的內部部署使用者帳戶 (也稱為「遷移系統管理員) ，必須具備必要的許可權，才能存取您要遷移到 Microsoft 365 的內部部署信箱。 此使用者帳戶可用來建立內部部署組織的移轉端點。
 
     下列清單顯示使用完全移轉來移轉信箱時所需的系統管理權限。有三個可能的選項。
 
@@ -95,12 +95,12 @@ ms.locfileid: "51581055"
 
 - **停用整合通訊。** 如果您要移轉的內部部署信箱已啟用整合通訊 (UM)，則移轉之前必須先在信箱上停用 UM。您可以在移轉完成之後，再於信箱上啟用 UM。
 
-- **安全性群組和代理人** 電子郵件遷移服務無法偵測內部部署 Active Directory 群組是否為安全性群組，所以無法將任何遷移的群組布建為 Microsoft 365 中的安全性群組。 如果您想要在 Microsoft 365 承租人中擁有安全性群組，您必須先在您的 Microsoft 365 租使用者中布建已啟用郵件功能的安全性群組，再開始完全遷移。 此外，此移轉方法只會移動信箱、郵件使用者、郵件連絡人和擁有郵件功能的群組。 如果有任何其他 Active Directory 物件（例如未遷移至 Microsoft 365 的使用者）被指派為要遷移之物件的管理員或代理人，必須先將其從物件中移除才能進行遷移。
+- **安全性群組和代理人** 電子郵件遷移服務無法偵測內部部署 Active Directory 群組是否為安全性群組，所以無法將任何遷移的群組布建為 Microsoft 365 中的安全性群組。 如果您想要在 Microsoft 365 租使用者中有安全性群組，您必須先在 Microsoft 365 租使用者中布建已啟用郵件功能的安全性群組，再開始轉換遷移。 此外，此移轉方法只會移動信箱、郵件使用者、郵件連絡人和擁有郵件功能的群組。 如果有任何其他 Active Directory 物件（如未遷移至 Microsoft 365 的使用者）被指派為管理員或委派給要遷移的物件，則必須先將其從物件中移除才能進行遷移。
 
 ### <a name="step-2-create-a-migration-endpoint"></a>步驟 2：建立移轉端點
 <a name="BK_Step2"> </a>
 
-若要成功遷移電子郵件，Microsoft 365 必須與來源電子郵件系統連線並進行通訊。 若要這樣做，Microsoft 365 會使用遷移端點。 若要建立 Outlook 無所不在移轉端點以進行分段移轉，請先[連線至 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
+若要成功遷移電子郵件，Microsoft 365 必須與來源電子郵件系統連線並進行通訊。 若要這麼做，Microsoft 365 會使用遷移端點。 若要建立 Outlook 無所不在移轉端點以進行分段移轉，請先[連線至 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 若需要移轉命令的完整清單，請參閱[移動與移轉 Cmdlet](/powershell/exchange/)。
 
@@ -175,7 +175,7 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>步驟5：將電子郵件路由傳送至 Microsoft 365
 <a name="BK_Step5"> </a>
 
-電子郵件系統使用稱為 MX 記錄的 DNS 記錄來找出要將電子郵件傳遞到哪裡。 在電子郵件移轉過程中，您的 MX 記錄指向來源電子郵件系統。 現在，已完成將電子郵件遷移至 Microsoft 365，您可以將您的 MX 記錄指向 Microsoft 365。 這可協助確定電子郵件已傳遞至您的 Microsoft 365 信箱。 藉由移動 MX 記錄，您也可以在準備好時關閉舊的電子郵件系統。
+電子郵件系統使用稱為 MX 記錄的 DNS 記錄來找出要將電子郵件傳遞到哪裡。 在電子郵件移轉過程中，您的 MX 記錄指向來源電子郵件系統。 現在已完成 Microsoft 365 的電子郵件遷移，您可以將 MX 記錄指向 Microsoft 365。 這有助於確定電子郵件已傳遞至您的 Microsoft 365 信箱。 藉由移動 MX 記錄，您也可以在準備好時關閉舊的電子郵件系統。
 
 我們針對許多 DNS 提供者提供變更 MX 記錄的特定指示。 如果您的 DNS 提供者不包含在內，或者如果您想要了解一般指示，我們也會提供[一般 MX 記錄指示](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx)。
 
@@ -184,11 +184,11 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>步驟 6：刪除完全移轉批次
 <a name="Bk_step6"> </a>
 
-在您變更 MX 記錄，並確認所有電子郵件都會路由傳送至 Microsoft 365 信箱之後，請通知使用者他們的郵件即將移至 Microsoft 365。 在此之後，您便可以刪除完全移轉批次。 在刪除移轉批次之前，請先確認下列事項。
+在您變更 MX 記錄，並確認所有電子郵件都會路由傳送至 Microsoft 365 信箱之後，請通知使用者他們的郵件即將 Microsoft 365。 在此之後，您便可以刪除完全移轉批次。 在刪除移轉批次之前，請先確認下列事項。
 
-- 所有使用者都使用 Microsoft 365 信箱。 刪除批次之後，傳送至內部部署 Exchange 伺服器上之信箱的郵件不會複製到對應的 Microsoft 365 信箱。
+- 所有使用者都使用 Microsoft 365 信箱。 刪除批次之後，傳送至內部部署 Exchange Server 信箱的郵件不會複製到對應的 Microsoft 365 信箱。
 
-- 當郵件開始直接傳送給他們之後，Microsoft 365 信箱會至少同步處理一次。 若要這麼做，請確定遷移批次的 [上次同步處理時間] 方塊中的值比直接路由傳送至 Microsoft 365 信箱的時間晚。
+- 當郵件開始直接傳送給他們之後，Microsoft 365 信箱的同步處理至少一次。 若要這麼做，請確定遷移批次的 [上次同步處理時間] 方塊中的值比直接路由傳送至 Microsoft 365 信箱的時間晚。
 
 若要在 Exchange Online PowerShell 中刪除 "CutoverBatch" 移轉批次，請執行下列命令：
 
@@ -199,19 +199,19 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>第 7 節：指派使用者授權
 <a name="BK_Step7"> </a>
 
- **指派授權，為遷移的帳戶啟動 Microsoft 365 使用者帳戶。** 如果您未指派授權，則當寬限期 (30 天) 結束時就會停用信箱。 若要在 Microsoft 365 系統管理中心中指派授權，請參閱 [指派或取消指派授權](../admin/manage/assign-licenses-to-users.md)。
+ **指派授權，啟用已遷移帳戶的 Microsoft 365 使用者帳戶。** 如果您未指派授權，則當寬限期 (30 天) 結束時就會停用信箱。 若要在 Microsoft 365 系統管理中心中指派授權，請參閱[指派或取消指派授權](../admin/manage/assign-licenses-to-users.md)。
 
 ### <a name="step-8-complete-post-migration-tasks"></a>步驟 8：完成移轉後工作
 <a name="BK_Step8"> </a>
 
-- **建立自動探索 DNS 記錄，讓使用者可以輕鬆存取信箱。** 在所有內部部署信箱遷移至 Microsoft 365 之後，您可以設定 Microsoft 365 組織的自動探索 DNS 記錄，讓使用者能夠使用 Outlook 和行動用戶端輕鬆連線到其新的 Microsoft 365 信箱。 這個新的自動探索 DNS 記錄必須使用您的 Microsoft 365 組織所使用的相同命名空間。 舉例來說，如果您的雲端架構命名空間是 cloud.contoso.com，則您需要建立的自動探索 DNS 記錄是 autodiscover.cloud.contoso.com。
+- **建立自動探索 DNS 記錄，讓使用者可以輕鬆存取信箱。** 將所有內部部署信箱遷移至 Microsoft 365 後，您就可以設定 Microsoft 365 組織的自動探索 DNS 記錄，讓使用者能夠使用 Outlook 和行動用戶端輕鬆地連接至其新的 Microsoft 365 信箱。 這個新的自動探索 DNS 記錄必須使用您的 Microsoft 365 組織所使用的相同命名空間。 舉例來說，如果您的雲端架構命名空間是 cloud.contoso.com，則您需要建立的自動探索 DNS 記錄是 autodiscover.cloud.contoso.com。
 
-    如果您保留 Exchange 伺服器，也應確定在遷移後，在內部和外部 DNS 中，自動探索 DNS CNAME 記錄必須指向 Microsoft 365，以便讓 Outlook 用戶端能夠連線到正確的信箱。
+    如果您保留 Exchange Server，也應確定在遷移後，必須在遷移後 Microsoft 365 指向內部和外部 DNS 中的自動探索 dns CNAME 記錄，以便 Outlook 用戶端將連接到正確的信箱。
 
     > [!NOTE]
     >  在 Exchange 2007、Exchange 2010 和 Exchange 2013 中，您也應該將  `Set-ClientAccessServer AutodiscoverInternalConnectionURI` 設為 `Null`。
 
-    Microsoft 365 使用 CNAME 記錄來實施 Outlook 和行動用戶端的自動探索服務。 自動探索 CNAME 記錄必須包含下列資訊：
+    Microsoft 365 使用 CNAME 記錄來執行 Outlook 和行動用戶端的自動探索服務。 自動探索 CNAME 記錄必須包含下列資訊：
 
   - **別名：** 自動探索
 
@@ -219,7 +219,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 
     如需詳細資訊，請參閱 [新增 DNS 記錄以連接您的網域](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
-- **解除委任內部部署 Exchange 伺服器。** 在您確認所有電子郵件都直接路由傳送至 Microsoft 365 信箱之後，如果您不再需要維護內部部署電子郵件組織，或不需要維護單一登入 (SSO) 解決方案，您可以從伺服器卸載 Exchange，並移除內部部署 Exchange 組織。
+- **解除委任內部部署 Exchange 伺服器。** 在您確認所有電子郵件都直接路由傳送至 Microsoft 365 信箱，且您不再需要維護內部部署電子郵件組織，或不計畫實施單一登入 (SSO) 解決方案，您可以從伺服器卸載 Exchange，並移除內部部署 Exchange 組織。
 
     如需詳細資訊，請參閱下列各主題：
 
