@@ -23,17 +23,17 @@ ms.locfileid: "50917989"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用行動裝置管理工具上線 Windows 10 電腦
 
-適用於：
+**適用於：**
 
-- [Microsoft 365 端點資料遺失防護 (DLP) ](./endpoint-dlp-learn-about.md)
+- [Microsoft 365端點資料遺失防護 (DLP) ](./endpoint-dlp-learn-about.md)
 
-您可以使用 [行動裝置管理] (MDM) 解決方案來設定裝置。 Microsoft 365 端點資料遺失防護可提供 OMA-URIs 來建立管理裝置的原則，以支援 MDMs。
+您可以使用 [行動裝置管理] (MDM) 解決方案來設定裝置。 Microsoft 365端點資料遺失防護可提供 OMA-URIs 來建立管理裝置的原則，以支援 MDMs。
 
 
 ## <a name="before-you-begin"></a>開始之前
-如果您使用的是 Microsoft Intune，則必須已註冊裝置 MDM。 否則，將不會成功套用設定。 
+如果您正在使用 Microsoft Intune，則必須已註冊裝置 MDM。 否則，將不會成功套用設定。 
 
-如需使用 Microsoft Intune 啟用 MDM 的詳細資訊，請參閱 [Device 註冊名 (Microsoft intune) ](/mem/intune/enrollment/device-enrollment)。
+如需使用 Microsoft Intune 啟用 MDM 的詳細資訊，請參閱[Device 註冊 (Microsoft Intune) ](/mem/intune/enrollment/device-enrollment)。
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>使用 Microsoft Intune 的板載裝置
 
@@ -51,11 +51,11 @@ ms.locfileid: "50917989"
 
 1. 從 [Microsoft 規範中心](https://compliance.microsoft.com/)取得脫離套件。
 
-2. 在功能窗格中，選取 [**設定**  >  **裝置上架**  >  **脫離**]。
+2. 在功能窗格中，選取 [**設定**  >  **裝置上架**]  >  **脫離**。
 
-3. 在 [ **部署方法** ] 欄位中，選取 [行動 **裝置管理/Microsoft Intune**]。
+3. 在 [**部署方法**] 欄位中，選取 [行動 **裝置管理/Microsoft Intune**]。
     
-4. 按一下 [ **下載套件**]，然後儲存 .zip 檔案。
+4. 按一下 [ **下載套件**]，然後儲存 .zip 檔。
 
 5. 將 .zip 檔案的內容解壓至共用的唯讀位置，該位置可供將要部署此套件的網路系統管理員存取。 您應該會有一個名為 *DeviceCompliance_valid_until_YYYY-MM 的* 檔案名。
 
@@ -65,7 +65,7 @@ ms.locfileid: "50917989"
       Date type： String      
       值： [從 DeviceCompliance_valid_until_YYYY-DD 映射檔的內容複寫並貼上值]
 
-如需 Microsoft Intune 原則設定的詳細資訊，請參閱 [Microsoft intune 中的 Windows 10 原則設定](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)。
+如需 Microsoft Intune 原則設定的詳細資訊，請參閱[Windows 10 Microsoft Intune 中的原則設定](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)。
 
 > [!NOTE]
 > **Offboarded 裝置原則的健全狀況狀態** 會使用唯讀屬性，而且無法補救。
@@ -78,4 +78,4 @@ ms.locfileid: "50917989"
 - [使用 Microsoft Endpoint Configuration Manager 的板載 Windows 10 裝置](dlp-configure-endpoints-sccm.md)
 - [使用本機指令碼上線 Windows 10 裝置](dlp-configure-endpoints-script.md)
 - [上線非持續 Virtual Desktop Infrastructure (VDI) 裝置](dlp-configure-endpoints-vdi.md)
-- [疑難排解 Microsoft Defender 高級威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [疑難排解 Microsoft Defender 進階威脅防護上架問題](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

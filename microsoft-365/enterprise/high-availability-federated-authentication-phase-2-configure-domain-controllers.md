@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: 摘要：在 Microsoft Azure 中設定 Microsoft 365 高可用性同盟驗證的網域控制站與目錄同步處理伺服器。
+description: 摘要：設定 Microsoft Azure 中 Microsoft 365 的高可用性同盟驗證的網域控制站及目錄同步處理伺服器。
 ms.openlocfilehash: 751d332ce5f5606fe5f833182f002a1f4b6f29ad
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,12 +23,12 @@ ms.locfileid: "50909807"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性同盟驗證階段 2：設定網域控制站
 
-在此階段，在 Azure 基礎結構服務中為 Microsoft 365 同盟驗證部署高可用性時，您會在 Azure 虛擬網路中設定兩個網域控制站與目錄同步處理伺服器。 然後用戶端 Web 驗證要求即可在 Azure 虛擬網路中驗證，而非透過站台對站台的 VPN 連線來傳送驗證流量至內部部署網路。
+在此階段，針對 azure 基礎結構服務中 Microsoft 365 同盟驗證部署高可用性時，您會在 azure 虛擬網路中設定兩個網域控制站與目錄同步處理伺服器。 然後用戶端 Web 驗證要求即可在 Azure 虛擬網路中驗證，而非透過站台對站台的 VPN 連線來傳送驗證流量至內部部署網路。
   
 > [!NOTE]
-> Active Directory Federation Services (AD FS) 無法使用 Azure Active Directory (Azure AD) 取代 Active Directory 網域服務 (AD DS) 網域控制站。 
+> active directory Federation Services (ad FS) 無法使用 Azure Active Directory (Azure AD) 取代 Active Directory 網域服務 (AD DS) 網域控制站。 
   
-您必須先完成此階段，再移至 [階段3：設定 AD FS 伺服器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。 請參閱 [在 Azure 中部署 Microsoft 365 的高可用性同盟驗證](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) ，以瞭解所有階段。
+您必須先完成此階段，再移至 [階段3：設定 AD FS 伺服器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。 如需所有階段，請參閱[在 Azure 中部署 Microsoft 365 的高可用性同盟驗證](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)。
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>在 Azure 中建立網域控制站虛擬機器
 
@@ -65,12 +65,12 @@ ms.locfileid: "50909807"
 請記得您在 [階段1： Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定義的表格 R、V、S、I 和 A。
   
 > [!NOTE]
-> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱 [Azure PowerShell 入門](/powershell/azure/get-started-azureps)。 
+> [!附註] 下列命令集會使用最新版的 Azure PowerShell。 請參閱[開始使用 Azure PowerShell](/powershell/azure/get-started-azureps)。 
   
 當您已經提供所有正確的值時，在 Azure PowerShell 提示中或本機電腦的 PowerShell 整合式指令碼環境 (ISE) 中執行結果區塊。
   
 > [!TIP]
-> 若要根據您的自訂設定來產生現成 PowerShell 命令區塊，請使用此 [Microsoft Excel 配置活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
+> 若要根據您的自訂設定產生現成 PowerShell 命令區塊，請使用此 Microsoft Excel 設定活頁[簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 ```powershell
 # Set up variables common to both virtual machines
@@ -150,7 +150,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 使用您所選的遠端桌面用戶端，建立第一個網域控制站虛擬機器的遠端桌面連線。請使用其內部網路 DNS 或本機管理員帳戶的電腦名稱和認證。
   
-接下來， **在第一個網域控制站虛擬機器** 的 Windows PowerShell 命令提示字元中，使用此命令將額外的資料磁片新增至第一個網域控制站：
+接下來，使用 **第一個網域控制站虛擬機器上** 的 Windows PowerShell 命令提示字元將額外的資料磁片新增至第一個網域控制站：
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -175,7 +175,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 使用您所選的遠端桌面用戶端，建立第二個網域控制站虛擬機器的遠端桌面連線。請使用其內部網路 DNS 或本機管理員帳戶的電腦名稱和認證。
   
-接下來，您必須使用 **第二個網域控制站虛擬機器上** 的 Windows PowerShell 命令提示字元，將額外的資料磁片新增至第二個網域控制站。
+接下來，您需要 **在第二個網域控制站虛擬機器上** 的 Windows PowerShell 命令提示字元中，使用此命令將額外的資料磁片新增至第二個網域控制站：
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -193,7 +193,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 系統會提示您提供網域管理員帳戶的認證。電腦將會重新啟動。
   
-下一步，您需要更新虛擬網路的 DNS 伺服器，如此一來，此 Azure 會指派兩個新的網域控制站 IP 位址給虛擬機器，以便使用虛擬機器的 DNS 伺服器。 填寫變數，然後在本機電腦上的 Windows PowerShell 命令提示字元中執行下列命令：
+下一步，您需要更新虛擬網路的 DNS 伺服器，如此一來，此 Azure 會指派兩個新的網域控制站 IP 位址給虛擬機器，以便使用虛擬機器的 DNS 伺服器。 填寫變數，然後從本機電腦上的 Windows PowerShell 命令提示字元執行下列命令：
   
 ```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -232,7 +232,7 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 使用您選擇的遠端桌面用戶端，建立與目錄同步處理伺服器虛擬機器的遠端桌面連線。 請使用其內部網路 DNS 或本機管理員帳戶的電腦名稱和認證。
   
-接下來，在 Windows PowerShell 提示字元，使用下列命令將其加入適當的 AD DS 網域。
+接下來，在 Windows PowerShell 提示字元處，使用下列命令將其加入適當的 AD DS 網域。
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -245,9 +245,9 @@ Restart-Computer
   
 **階段2： Azure 中高可用性同盟驗證基礎結構的網域控制站及目錄同步處理伺服器**
 
-![Azure 中具有網域控制站之高可用性 Microsoft 365 同盟驗證基礎結構的階段2](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Azure 中具有網域控制站的高可用性 Microsoft 365 同盟驗證基礎結構的階段2](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 使用 [階段3：設定 AD FS 伺服器](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) 以繼續設定此工作負載。
   

@@ -219,7 +219,7 @@ ms.locfileid: "52331979"
 
 ## <a name="can-i-pay-my-invoice-online"></a>我可以在線上支付我的發票嗎？
 
-如果為您的帳單設定檔關閉定期計費，您可以使用信用卡線上支付發票。 若要進行支付，請在 Microsoft 365 系統管理中心的發票上使用 [ **立即付款** ] 按鈕。 若要尋找您的發票，請參閱 [查看您的帳單或發票](view-your-bill-or-invoice.md)。
+如果為您的帳單設定檔關閉定期計費，您可以使用信用卡線上支付發票。 若要進行支付，請在 Microsoft 365 系統管理中心的發票上使用 [**立即付款**] 按鈕。 若要尋找您的發票，請參閱 [查看您的帳單或發票](view-your-bill-or-invoice.md)。
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>我可以從目前的付款方式變更為透過發票付款嗎？
 

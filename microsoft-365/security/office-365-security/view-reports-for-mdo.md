@@ -1,5 +1,5 @@
 ---
-title: 在報告儀表板中查看 Office 365 報告的 Defender
+title: 在報表儀表板中查看 Office 365 報表的 Defender
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,7 +16,7 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 在安全性 & 合規性中心尋找及使用 Microsoft Defender for Office 365 的報告。
+description: 在安全性 & 規範中心中尋找並使用 Microsoft Defender for Office 365 的報告。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51599896"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中，查看 Office 365 報表的 Defender
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>在安全性 & 規範中心的「報告」儀表板中，查看 Office 365 報告的 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,26 +35,26 @@ ms.locfileid: "51599896"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Microsoft Defender for Office 365 Plan 1 或 Microsoft Defender for Office 365 方案2增益集) 包含各種安全性相關的報告。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)，您可以移至 [ **報表**] \> **儀表板**，在安全性 & 規範中心中查看這些報告。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
+適用于 Office 365 組織的 Microsoft Defender (例如，Microsoft 365 E5 訂閱或 microsoft defender for Office 365 plan 1 或 microsoft defender for Office 365 plan 2 附加元件) 包含各種安全性相關的報表。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)，您可以移至 [ **報表**] \> **儀表板**，在安全性 & 規範中心中查看這些報告。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
 
 ![安全性 & 規範中心內的報告儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="defender-for-office-365-file-types-report"></a>適用於 Office 365 的 Defender 檔案類型報告
 
-[ **Office 365 的 Defender] 檔案類型報告** 報告會顯示偵測為 [安全附件](safe-attachments.md)的檔案類型。
+**Office 365 檔案類型的 Defender 報告** 報告會向您顯示以 [安全附件](safe-attachments.md)方式偵測為惡意的檔案類型。
 
  報表的匯總視圖允許90天的篩選，而詳細資料檢視只允許10天的篩選。
 
-若要查看報告，請開啟 [安全性 & 規範中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **Office 365 檔案類型的 Defender**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPFileReport> 。
+若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **Office 365 檔案類型的 Defender**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPFileReport> 。
 
-![報表儀表板中的 Office 365 檔案類型構件](../../media/atp-file-types-report-widget.png)
+![報表儀表板中 Office 365 檔案類型構件的 Defender](../../media/atp-file-types-report-widget.png)
 
 > [!NOTE]
-> 您也可以在 [Office 365 的 [Defender For Office 郵件](#defender-for-office-365-message-disposition-report)處理] 報告中取得此報告中的資訊。
+> 您也可以在[Office 365 郵件處理報告的 Defender](#defender-for-office-365-message-disposition-report)中使用此報告中的資訊。
 
-### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>適用于 Office 365 檔案類型的報表檢視報告
+### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Office 365 檔案類型的 Defender 報表檢視報告
 
-可供使用的視圖如下：
+您可使用下列檢視：
 
 - **資料查看依據：** 檔案：此圖表包含下列資訊：
 
@@ -69,7 +69,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
   當您將滑鼠停留在特定日期 (資料點) 時，您可以看到 EOP 中 [安全附件](safe-attachments.md) 和 [反惡意程式碼保護](anti-malware-protection.md)偵測到的惡意檔案類型細目。
 
-  ![Office 365 中的檔案視圖檔案類型報告](../../media/atp-file-types-report-file-view.png)
+  ![Office 365 檔案類型的 Defender 中的檔案查看報告](../../media/atp-file-types-report-file-view.png)
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
 
@@ -83,14 +83,14 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
   - **監控的郵件**
   - 以 **動態電子郵件傳遞取代**：如需詳細資訊，請參閱 [在安全附件原則中傳遞](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。
 
-  ![Office 365 的 Defender for Office 檔案類型報告中的郵件視圖](../../media/atp-file-types-report-message-view.png)
+  ![Office 365 檔案類型的 Defender 中的郵件視圖報告](../../media/atp-file-types-report-message-view.png)
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
 
   - **開始日期** 和 **結束日期**
   - 圖表中可用的相同郵件處置值，以及已傳遞的其他 **郵件** 值。
 
-### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Defender for Office 365 檔案類型報告的詳細資料表格視圖
+### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Office 365 檔案類型的 Defender 的詳細資料表格視圖報告
 
 如果您按一下 [ **查看詳細資料] 表格**，此報告可提供最近10天內所有按一下動作的近乎即時視圖。 顯示的資訊取決於您所看到的圖表：
 
@@ -127,16 +127,16 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 **ATP 郵件** 處理報告會顯示偵測到有惡意內容的電子郵件所採取的動作。
 
-若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **Office 365 的 Defender] 進行郵件** 處理。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPMessageReport> 。
+若要查看報告，請開啟 [安全性 & 規範中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **Office 365 郵件部署的 Defender**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPMessageReport> 。
 
-![報表儀表板中的 Office 365 郵件處置小工具](../../media/atp-message-disposition-report-widget.png)
+![報表儀表板中 Office 365 郵件處置小工具的 Defender](../../media/atp-message-disposition-report-widget.png)
 
 > [!NOTE]
-> 您也可以在 [Office 365 檔案類型報告](#defender-for-office-365-file-types-report)中使用此報告中的資訊。
+> 您也可以在[Office 365 檔案類型報告的 Defender](#defender-for-office-365-file-types-report)中使用此報告中的資訊。
 
-### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>適用于 Office 365 的 Defender for Office 郵件處理報告
+### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Office 365 郵件處理報告的 Defender 報表檢視
 
-可供使用的視圖如下：
+您可使用下列檢視：
 
 - **資料查看方式：訊息**：此圖表包含下列資訊：
 
@@ -145,7 +145,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
   - **監控的郵件**
   - 以 **動態電子郵件傳遞取代**：如需詳細資訊，請參閱 [在安全附件原則中傳遞](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。
 
-  ![Office 365 的 Defender for Office 檔案類型報告中的郵件視圖](../../media/atp-file-types-report-message-view.png)
+  ![Office 365 檔案類型的 Defender 中的郵件視圖報告](../../media/atp-file-types-report-message-view.png)
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
 
@@ -165,14 +165,14 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
   當您將滑鼠停留在特定日期 (資料點) 時，您可以看到 EOP 中 [安全附件](safe-attachments.md) 和 [反惡意程式碼保護](anti-malware-protection.md)偵測到的惡意檔案類型細目。
 
-  ![Office 365 中的檔案視圖檔案類型報告](../../media/atp-file-types-report-file-view.png)
+  ![Office 365 檔案類型的 Defender 中的檔案查看報告](../../media/atp-file-types-report-file-view.png)
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
 
   - **開始日期** 和 **結束日期**
   - 圖表中顯示的相同檔案類型值。
 
-### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Defender for Office 365 郵件處理報告的詳細資料表格視圖
+### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Office 365 郵件處理報告的 Defender 的詳細資料表格視圖
 
 如果您按一下 [ **查看詳細資料] 表格**，此報告可提供最近10天內所有按一下動作的近乎即時視圖。 顯示的資訊取決於您所看到的圖表：
 
@@ -262,7 +262,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 ## <a name="threat-protection-status-report"></a>威脅防護狀態報告
 
-「 **威脅防護狀態** 報告」是一種單一的視圖，可透過 [Exchange ONLINE protection](exchange-online-protection-overview.md) (EOP) 和 Microsoft Defender for Office 365，彙集惡意內容和惡意電子郵件的相關資訊。 如需詳細資訊，請參閱 [威脅防護狀態報表](view-email-security-reports.md#threat-protection-status-report)。
+「**威脅防護狀態** 報告」是單一的視圖，可透過 [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) 和 Microsoft Defender for Office 365，彙集惡意內容和惡意電子郵件的相關資訊。 如需詳細資訊，請參閱 [威脅防護狀態報表](view-email-security-reports.md#threat-protection-status-report)。
 
 ## <a name="url-threat-protection-report"></a>URL 威脅防護報告
 
@@ -317,8 +317,8 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 - **按一下 [時間]**
 - **使用者**
 - **URL**
-- **動作**
-- **App**
+- **Action**
+- **應用程式**
 
 如果您按一下 [詳細資料] 表格視圖中的 [**篩選器**]，可以篩選與報表檢視中相同的準則，**以及以逗號分隔的****網域** 或收件者。
 
@@ -335,15 +335,15 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 |報告|主題|
 |---|---|
-|**Explorer** (microsoft Defender for Office 365 plan 2) 或 **即時** 偵測， (Microsoft Defender for office 365 plan 1) |[威脅總管 (及即時偵測)](threat-explorer.md)|
+|**Explorer** (microsoft defender for Office 365 plan 2) 或 **即時** 偵測 (Microsoft defender for Office 365 Plan 1) |[威脅總管 (及即時偵測)](threat-explorer.md)|
 |**電子郵件安全性報告**，例如主要寄件者和收件者報告、冒名郵件報告和垃圾郵件偵測報告。|[檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)|
 |**郵件流程報告**，例如轉寄報告、郵件流程狀態報表，以及主要寄件者和收件者報告。|[在安全性 & 規範中心內，查看郵件流程報告](view-mail-flow-reports.md)|
 |**安全連結的 URL 追蹤** (僅 PowerShell) 。 此 Cmdlet 的輸出會顯示過去7天中安全連結動作的結果。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
-|**EOP 和 Microsoft Defender For Office 365 (的郵件流量結果，** 只 PowerShell) 。 此 Cmdlet 的輸出包含網域、日期、事件種類、方向、動作和郵件數目的相關資訊。|[MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
-|**EOP 和 Defender For Office 365 偵測的郵件詳細資料包告** (僅 PowerShell) 。 此 Cmdlet 的輸出包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|僅 PowerShell) ， **EOP 和 Microsoft Defender for Office 365 (的郵件流量結果**。 此 Cmdlet 的輸出包含網域、日期、事件種類、方向、動作和郵件數目的相關資訊。|[MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
+|**EOP 和 Defender Office 365 偵測的郵件詳細資料包告** (僅 PowerShell) 。 此 Cmdlet 的輸出包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看 Office 365 的 Defender 時，需要哪些許可權？
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>流覽 Office 365 報表的 Defender 時，需要哪些許可權？
 
 為了查看和使用本文所述的報表，您必須是安全性 & 合規性中心之一的下列其中一個角色群組的成員：
 
@@ -354,14 +354,14 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+**附注**：將使用者新增至 Microsoft 365 系統管理中心中對應的 Azure Active Directory 角色，可為使用者提供 Microsoft 365 的安全性 & 合規性中心 _和_ 許可權中所需的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 
-如果您未看到您的 Office 365 報告中的資料，請仔細檢查您的原則設定是否正確。 您的組織必須已定義 [安全連結原則](set-up-safe-links-policies.md) 及 [安全附件原則](set-up-safe-attachments-policies.md) ，Office 365 防護功能才能就地使用。 另請參閱 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
+如果您未在 Office 365 報告中看到您的 Defender 資料，請仔細檢查您的原則設定是否正確。 您的組織必須定義[安全連結原則](set-up-safe-links-policies.md)及[安全附件原則](set-up-safe-attachments-policies.md)，Office 365 防護功能才能進行。 另請參閱 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
 
 ## <a name="related-topics"></a>相關主題
 
 [安全性與合規性中心內的智慧型報表和深入解析](reports-and-insights-in-security-and-compliance.md)
 
-[ (Azure Active Directory 的角色許可權](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[角色許可權 (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

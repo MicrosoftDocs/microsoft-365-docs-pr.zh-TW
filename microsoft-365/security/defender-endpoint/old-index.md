@@ -136,7 +136,7 @@ Microsoft Defender for Endpoint 的新受管理威脅搜尋服務提供主動的
 - 適用於身分識別的 Microsoft Defender
 - Azure Defender
 - 商務用 Skype
-- Microsoft 雲端 App 安全性
+- Microsoft Cloud App Security
 
 <a name="mtp"></a>
 **[Microsoft 365後衛](/microsoft-365/security/defender/microsoft-threat-protection)**<br>

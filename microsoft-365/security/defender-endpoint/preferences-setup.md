@@ -1,5 +1,5 @@
 ---
-title: 設定 Microsoft Defender 安全性中心設定
+title: 設定 Microsoft Defender 資訊安全中心設定
 description: 使用 [設定] 頁面來設定一般設定、許可權、api 及規則。
 keywords: 設定、一般設定、許可權、api、規則
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "51604342"
 ---
-# <a name="configure-microsoft-defender-security-center-settings"></a>設定 Microsoft Defender 安全性中心設定
+# <a name="configure-microsoft-defender-security-center-settings"></a>設定 Microsoft Defender 資訊安全中心設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,9 +31,9 @@ ms.locfileid: "51604342"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
-使用 [ **設定** ] 功能表，修改一般設定、高級功能、啟用預覽體驗、電子郵件通知及自訂威脅智慧功能。
+使用 **設定** 功能表，修改一般設定、高級功能、啟用預覽體驗、電子郵件通知及自訂威脅智慧功能。
 
 ## <a name="in-this-section"></a>本節內容
 

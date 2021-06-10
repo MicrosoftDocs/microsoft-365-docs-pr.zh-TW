@@ -29,7 +29,7 @@ ms.locfileid: "51599508"
 > [!NOTE]
 > 本文中所述的功能目前在預覽中，無法供所有人使用，而且可能會變更。
 
-使用者可以管理被隔離的郵件，而這些郵件是以 [EOP 中的使用者身分發現和發行隔離郵件](find-and-release-quarantined-messages-as-a-user.md)所述的其中一位收件者。 不過，如果使用者擁有信箱的「完整存取」和「代理傳送」或「代理傳送者」許可權（如 [Exchange Online 中的共用信箱](/exchange/collaboration-exo/shared-mailboxes)所述），共用信箱又該如何做呢？
+使用者可以管理被隔離的郵件，而這些郵件是以 [EOP 中的使用者身分發現和發行隔離郵件](find-and-release-quarantined-messages-as-a-user.md)所述的其中一位收件者。 不過，如果使用者擁有信箱的「完整存取」和「代理傳送」或「代理傳送者」許可權（如[Exchange Online 中共用信箱](/exchange/collaboration-exo/shared-mailboxes)所述），共用信箱又該如何處理呢？
 
 先前，使用者能夠管理傳送至共用信箱的隔離郵件時，系統管理員可以將自動對應啟用，以供系統管理員在使用者存取另一個信箱) 時，預設會啟用該共用 (信箱。 不過，視使用者有權存取的信箱大小和數目而定，當 Outlooks 嘗試開啟使用者可以存取的 *所有* 信箱時，效能會受到影響。 基於這個理由，許多系統管理員會選擇 [移除共用信箱的自動對應](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "51599508"
 
 - 關於共用信箱的隔離作業，如果您使用嵌套安全性群組來授與共享信箱的存取權，我們建議不多於兩層的嵌套群組。 例如，群組 A 是群組 B 的成員，也就是 C 群組的成員。若要指派許可權給共用信箱，請勿將使用者新增至群組 A，然後將群組 C 指派給共用信箱。  
 
-- 若要管理 [Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)中共用信箱的隔離郵件 PowerShell，使用者必須使用 [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) Cmdlet 與共享信箱電子郵件 _RecipientAddress_ 位址，以識別郵件。 例如：
+- 若要在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中管理共用信箱的隔離郵件，使用者必須使用 [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) Cmdlet 與共享信箱電子郵件 _RecipientAddress_ 位址來識別郵件。 例如：
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com

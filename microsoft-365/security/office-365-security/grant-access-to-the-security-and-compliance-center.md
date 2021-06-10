@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: 使用者必須先獲指派 Microsoft 365 Security & 合規性中心的許可權，才能管理任何安全性或規範功能。
+description: 使用者必須具備 Microsoft 365 安全性 & 規範中心的許可權，才能管理其任何安全性或規範功能。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -44,9 +44,9 @@ ms.locfileid: "51599920"
 
 - 您必須是全域系統管理員或安全性 & 規範中心的 OrganizationManagement 角色群組成員，才可完成本文中的步驟。
 
-- 安全性 & 合規性中心的角色群組可能會具有與 Exchange Online 中的角色群組類似的名稱，但它們不是相同的。
+- 安全性 & 合規性中心的角色群組可能會對 Exchange Online 中的角色群組具有類似的名稱，但它們不是相同的。
 
-- 角色群組成員資格不會在 Exchange Online 與安全性 & 合規性中心共用。
+- 角色群組成員資格不會在 Exchange Online 與安全性 & 規範中心之間共用。
 
 - 委派存取許可權 () 協力廠商使用管理代表 (AOBO) 許可權無法存取安全性 & 規範中心。
 
@@ -60,7 +60,7 @@ ms.locfileid: "51599920"
 
 4. 當您選取要新增至角色群組的所有使用者時，請按一下 [**新增- \>** ]，然後按一下 **[確定]**。
 
-5. 完成後，按一下 **[儲存]**。
+5. 完成後，按一下 [儲存]。
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用安全性 & 規範中心 PowerShell 授予另一個使用者存取安全性 & 規範中心的許可權
 

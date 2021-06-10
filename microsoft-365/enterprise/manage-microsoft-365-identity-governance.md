@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: 深入瞭解如何使用 Microsoft 365 身分識別管理功能。
+description: 瞭解如何使用 Microsoft 365 身分識別管理功能。
 ms.openlocfilehash: 6a97ca24c609724a2cab93feec9e90f25d3361e3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "50910951"
 
 身分識別治理就是保護、監控及稽核對關鍵資產的存取權，同時確保員工生產力。 例如，您可以使用身分識別治理來確保適當的使用者具有適當資源的存取權，並隨著時間判斷該存取權是否有所變更。
 
-如需詳細資訊，請參閱 [Azure Active Directory (AZURE AD) 的身分識別管理 ](/azure/active-directory/governance/identity-governance-overview)。
+如需詳細資訊，請參閱[Azure Active Directory (Azure AD) 的身分識別管理](/azure/active-directory/governance/identity-governance-overview)。
 
 ## <a name="set-up-azure-ad-access-reviews"></a>設定 Azure AD 存取權檢閱
 

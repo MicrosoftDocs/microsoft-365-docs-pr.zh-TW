@@ -43,7 +43,7 @@ ms.locfileid: "52332135"
 
 計費通知電子郵件會以組織的慣用語言傳送。 若要變更慣用語言，請使用下列步驟。
 
-1. 在 Microsoft 365 系統管理中心中，移至 [**帳單**] [帳單  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">通知</a>] 頁面。
+1. 在 Microsoft 365 系統管理中心，移至 [**計費**] [帳單  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">通知</a>] 頁面。
 2. 在 [ **帳單通知設定** ] 區段中，選取 [ **編輯通知設定**]。
 3. 在 [ **帳單通知設定** ] 窗格中的 [ **喜好語言** ] 下，選取您要使用的語言，然後選取 [ **儲存**]。
 
@@ -58,7 +58,7 @@ ms.locfileid: "52332135"
 3. 在右窗格的 [指派的系統 **管理員** ] 索引標籤上，選取 [ **新增**]。
 4. 在 [ **新增系統管理員** ] 窗格中，輸入使用者的顯示名稱或使用者名稱，然後從建議清單中選取使用者。
 5. 在您完成之前，新增多個使用者。
-6. 選取 **[儲存]**。 使用者已新增至指派的系統管理員清單。
+6. 選取 ****[儲存]。 使用者已新增至指派的系統管理員清單。
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>使用 [帳單通知] 頁面移除系統管理員角色
 
@@ -103,7 +103,7 @@ ms.locfileid: "52332135"
 
 如果您有帳單設定檔，本文中所述的部分步驟對您的某些訂閱可能稍有不同。 本節說明這些差異。 [如何知道我是否有帳單設定檔？](manage-billing-profiles.md)
 
-### <a name="who-receives-billing-notifications"></a>誰會收到帳單通知？
+### <a name="who-receives-billing-notifications"></a>神秘接收帳單通知？
 
 對於指派有下列其中一個角色的使用者，計費通知電子郵件會傳送至主要和備用電子郵件地址：
 
@@ -130,5 +130,5 @@ ms.locfileid: "52332135"
 ## <a name="related-content"></a>相關內容
 
 [檢視帳單](view-your-bill-or-invoice.md) (文章)\
-[瞭解適用于商務用 Microsoft 365 的帳單或發票](understand-your-invoice2.md) (文章) \
+[瞭解商務用 Microsoft 365 帳單或發票](understand-your-invoice2.md) (文章) \
 [同時新增使用者並指派授權](../../admin/add-users/add-users.md) (文章) 

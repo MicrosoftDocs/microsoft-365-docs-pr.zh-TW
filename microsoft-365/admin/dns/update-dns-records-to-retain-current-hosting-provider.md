@@ -49,7 +49,7 @@ ms.locfileid: "52572135"
     
    This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website. 
     
-1. 選取 [儲存 **]**。 
+1. 選取 ****[儲存]。 
     
 此外，您還可以建立 CNAME 記錄，協助客戶找到您的網站。
   
@@ -61,7 +61,7 @@ ms.locfileid: "52572135"
     
    - 在 [ **指向位址**] 中，為您的網站輸入完整功能變數名稱 (FQDN)  (例如，contoso.com) 。 
     
-2. 選取 [儲存 **]**。 
+2. 選取 ****[儲存]。 
     
 最後，請執行下列動作：
   

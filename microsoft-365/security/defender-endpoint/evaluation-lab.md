@@ -52,7 +52,7 @@ Microsoft Defender for Endpoint 評估實驗室的設計是為了消除裝置和
  安裝您慣用的模擬器、在評估實驗室內執行案例，並立即查看平臺的執行方式-所有可方便您免費取得，而不需要額外成本。 您也可以輕鬆存取您可以從模擬目錄存取及執行的大量類比。
     
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 您將需要履行 [授權需求](minimum-requirements.md#licensing-requirements) ，或擁有 Microsoft Defender for Endpoint 的試用存取權，才能存取評估實驗室。
 
 您必須具有「 **管理安全性設定** 」許可權，才能執行下列動作：

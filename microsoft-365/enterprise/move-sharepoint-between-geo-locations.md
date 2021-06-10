@@ -80,7 +80,7 @@ SharePoint 網站地理移動要求您從網站所在地理位置中的 SharePoi
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![顯示 Connect-SPOService 命令的 SharePoint 線上管理命令介面視窗](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint顯示 Connect-SPOService 命令的線上管理命令介面視窗](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>驗證環境
 

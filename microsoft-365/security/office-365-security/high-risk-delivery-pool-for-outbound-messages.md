@@ -33,12 +33,12 @@ ms.locfileid: "51599908"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 資料中心的電子郵件伺服器可能會暫時 guilty 寄送垃圾郵件。 例如，在內部部署電子郵件組織中的惡意程式碼或惡意垃圾郵件攻擊，會透過 Microsoft 365 傳送輸出郵件，或遭到受損的 Microsoft 365 帳戶。 攻擊者也會嘗試透過 Microsoft 365 轉寄來轉送郵件，以避免偵測。
+Microsoft 365 資料中心的電子郵件伺服器可能會暫時 guilty 寄送垃圾郵件。 例如，內部部署電子郵件組織中的惡意程式碼或惡意垃圾郵件攻擊，會透過 Microsoft 365 傳送輸出郵件，或 Microsoft 365 帳戶遭到破壞。 攻擊者也會嘗試透過 Microsoft 365 轉送來轉送郵件，以避免偵測。
 
-這些案例會產生出現在協力廠商 blocklists 上受影響的 Microsoft 365 資料中心伺服器的 IP 位址。 使用這些 blocklists 的目的地電子郵件組織會拒絕來自這些郵件來源的電子郵件。
+這些案例可能會產生協力廠商 blocklists 上受影響的 Microsoft 365 datacenter 伺服器的 IP 位址。 使用這些 blocklists 的目的地電子郵件組織會拒絕來自這些郵件來源的電子郵件。
 
 ## <a name="high-risk-delivery-pool"></a>高風險傳遞集區
-若要防止這種情況，所有來自 Microsoft 365 datacenter server 但決定為垃圾郵件的外寄郵件，或超過 [服務](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) 之傳送限制或 [輸出垃圾郵件原則](configure-the-outbound-spam-policy.md) 的所有外寄郵件都會透過 _高風險傳遞集_ 區來傳送。
+若要防止這種情況，來自決定是垃圾郵件的 Microsoft 365 datacenter 伺服器的所有輸出郵件，或超過 [服務](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)之傳送限制或 [輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)的所有輸出郵件都會透過 _高風險傳遞集_ 區來傳送。
 
 「高風險傳遞集區」是外寄電子郵件的個別 IP 位址集區，只用于傳送「低品質」郵件 (例如，垃圾郵件和 [退信攻擊](backscatter-messages-and-eop.md)) 。 使用 [高風險傳遞集區]，可防止輸出電子郵件的一般 IP 位址集區傳送垃圾郵件。 外寄電子郵件的一般 IP 位址集區維持「高品質」郵件的信譽，這會降低這些 IP 位址會出現在 IP blocklists 上的可能性。
 

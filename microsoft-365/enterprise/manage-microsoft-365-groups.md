@@ -33,7 +33,7 @@ ms.locfileid: "50911004"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-您可以根據您的設定，以數種不同的方式管理 Microsoft 365 群組。 您可以在 [Microsoft 365 系統管理中心](../admin/add-users/index.yml)、PowerShell、Active Directory 網域服務 (AD DS) 或 [azure Active DIRECTORY (azure AD) admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)中管理使用者帳戶。 
+您可以根據您的設定，以數種不同的方式管理 Microsoft 365 群組。 您可以在「 [Microsoft 365 系統管理中心](../admin/add-users/index.yml)」、「PowerShell」、Active Directory 網域服務 (AD DS) 或[Azure Active Directory (Azure AD) 系統管理中心](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)] 中管理使用者帳戶。 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>規劃管理群組的位置和方式
 
@@ -49,7 +49,7 @@ ms.locfileid: "50911004"
     
 ### <a name="hybrid"></a>混合式
 
-AD DS 群組與 Microsoft 365 從 AD DS 同步處理，因此您必須使用內部部署 AD DS 工具來管理這些群組。
+ad ds 群組與從 AD ds Microsoft 365 同步處理，所以您必須使用內部部署 AD ds 工具來管理這些群組。
 
 您也可以建立和管理獨立于 AD DS 群組的 Azure AD 群組，但可包含 AD DS 中的使用者和群組。 在此情況下，您可以使用：
 

@@ -1,5 +1,5 @@
 ---
-title: 身分識別和裝置存取原則，允許來賓和外部使用者 B2B 存取-Microsoft 365 for enterprise |Microsoft 檔
+title: 身分識別和裝置存取原則，允許來賓和外部使用者 B2B enterprise Microsoft 365 的存取權Microsoft 檔
 description: 描述建議的條件式存取和相關原則，以保護來賓和外部使用者的存取。
 ms.prod: m365-security
 ms.topic: article
@@ -54,9 +54,9 @@ ms.locfileid: "51615492"
 
 ## <a name="more-information"></a>其他資訊
 
-### <a name="guests-and-external-user-access-with-microsoft-teams"></a>來賓和 Microsoft 小組的外部使用者存取
+### <a name="guests-and-external-user-access-with-microsoft-teams"></a>使用 Microsoft Teams 的客人和外部使用者存取
 
-Microsoft 小組定義下列使用者：
+Microsoft Teams 定義下列使用者：
 
 - **來賓存取** 使用 Azure AD B2B 帳戶，可將其新增為小組成員，並可存取小組的通訊和資源。
 
@@ -64,7 +64,7 @@ Microsoft 小組定義下列使用者：
 
 如需詳細資訊，請參閱 [來賓和團隊外部使用者存取之間的比較](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
 
-如需安全小組之身分識別與裝置存取原則的詳細資訊，請參閱 [保護小組聊天、群組和檔案的原則建議](teams-access-policies.md)。
+如需保護 Teams 身分識別與裝置存取原則的詳細資訊，請參閱[保護 Teams 聊天、群組和檔案的原則建議](teams-access-policies.md)。
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>需要對來賓和外部使用者永遠進行 MFA
 
@@ -82,12 +82,12 @@ Microsoft 小組定義下列使用者：
 
 ## <a name="next-step"></a>下一步
 
-![步驟4： Microsoft 365 雲端應用程式和 Microsoft Cloud App Security 的原則](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![步驟4： Microsoft 365 cloud app 和 Microsoft Cloud App Security 的原則](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 為下列專案設定條件式存取原則：
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
-- [Microsoft Cloud App Security](mcas-saas-access-policies.md)
+- [Microsoft 雲端 App 安全性](mcas-saas-access-policies.md)
  

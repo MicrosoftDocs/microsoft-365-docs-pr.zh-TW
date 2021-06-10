@@ -31,14 +31,14 @@ Microsoft 合規性管理員可以協助您管理資料隱私權法規（如歐�
 本文提供有關資料隱私權用途的使用此工具的指導方針。
 
 >[!Note]
->您不應將 [合規性管理員] 提供的建議視為合規性的保證。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務須遵守 [線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱 [Microsoft 365 授權指南以取得安全性和合規性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>您不應將 [合規性管理員] 提供的建議視為合規性的保證。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務須遵守 [線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱[Microsoft 365 授權指南以取得安全性和合規性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
 ## <a name="getting-started-with-compliance-manager"></a>合規性管理員快速入門
 
 #### <a name="what-is-compliance-manager"></a>何謂合規性管理員
 
-[合規性管理員](../compliance/compliance-manager.md) 是 microsoft 365 合規性中心的工作流程型風險評估工具，以管理與 Microsoft cloud services 相關的法規遵從性活動。 在 Microsoft 365 或 Azure Active Directory 的一部分中 (Azure AD) 訂閱，合規性管理員可協助您管理 Microsoft 雲端服務共用責任模型內的法規遵從性。
+[合規性管理員](../compliance/compliance-manager.md)是「Microsoft 365 規範中心」中的工作流程型風險評估工具，以管理與 Microsoft cloud services 相關的規章遵循活動。 在您的 Microsoft 365 或 Azure Active Directory (Azure AD) 訂閱中，合規性管理員可協助您管理 Microsoft 雲端服務共用責任模型內的法規遵從性。
 
 **準備好使用評估**
 
@@ -66,7 +66,7 @@ Microsoft 合規性管理員可以協助您管理資料隱私權法規（如歐�
     - 執行執行和測試改進動作以完成評估中的控制項
     - 瞭解不同的動作會如何影響您的合規性分數
 - [向上擴充：使用高級功能以符合您的自訂需求](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - 建立您的自訂評估以追蹤非 Microsoft 365 產品
+    - 建立自訂評估以追蹤非 Microsoft 365 產品
     - 修改現有範本以新增或移除控制項
     - 設定改進動作的自動測試
 

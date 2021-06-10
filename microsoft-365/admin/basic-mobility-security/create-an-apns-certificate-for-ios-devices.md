@@ -46,14 +46,14 @@ ms.locfileid: "49877077"
 
     3. 選取 [  **建立憑證**]   並接受 [使用條款]。
 
-    4. 流覽至您從 Microsoft 365 下載到電腦的憑證簽署要求，然後選取 **[上傳**]。
+    4. 流覽至您從 Microsoft 365 下載到電腦的憑證簽署要求，然後選取 [ **Upload**]。
 
         將 Apple Push Certificate 入口網站建立的 APNs 憑證下載至您的電腦。
 
        >[!TIP]
        >If you're having trouble downloading the certificate, refresh your browser.
 
-7. 回到 [Microsoft 365]，然後選取 [**下一步]**   進入 [  **上傳 APNS 憑證**]   頁面。
+7. 回到 Microsoft 365，然後選取 [**下一步]**   以取得「  **Upload APNS 憑證**」   頁面。
 
 8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
 

@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: 使用本文中的 PowerShell 腳本，可在 Office 365 或 Microsoft 365 中的規範中心內快速複製現有的內容搜尋。
+description: 使用本文中的 PowerShell 腳本，可在 Office 365 或 Microsoft 365 的規範中心內快速複製現有的內容搜尋。
 ms.openlocfilehash: c64cec2415819dc53f30c303c241e3902f34017d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50918059"
 ---
 # <a name="clone-a-content-search"></a>複製內容搜尋
 
-在 Office 365 或 Microsoft 365 中建立「規範中心」的內容搜尋，以搜尋許多信箱或 SharePoint，並 OneDrive 商務網站可能需要一段時間。 如果您錯誤鍵入 URL，也可以指定要搜尋的網站。 為了避免發生這些問題，您可以使用本文中的 Windows PowerShell 腳本，快速複製現有的內容搜尋。 當您複製搜尋時，會建立新的搜尋)  (，其中包含相同的 (屬性，如內容位置和搜尋查詢) 的原始搜尋。 然後，您可以變更關鍵字查詢或日期範圍，並執行它，以編輯新的搜尋。
+在搜尋許多信箱或 SharePoint 和商務用 OneDrive 網站的 Office 365 或 Microsoft 365 中建立內容搜尋，可能需要一段時間。 如果您錯誤鍵入 URL，也可以指定要搜尋的網站。 為了避免發生這些問題，您可以使用本文中的 Windows PowerShell 腳本，快速複製現有的內容搜尋。 當您複製搜尋時，會建立新的搜尋)  (，其中包含相同的 (屬性，如內容位置和搜尋查詢) 的原始搜尋。 然後，您可以變更關鍵字查詢或日期範圍，並執行它，以編輯新的搜尋。
   
 為何要複製內容搜尋？
   
@@ -53,7 +53,7 @@ ms.locfileid: "50918059"
 
 此步驟中的腳本會複製現有的內容，以建立新的內容搜尋。 當您執行此腳本時，系統會提示您輸入下列資訊：
   
-- **您的使用者認證** -腳本會使用您的認證，以 Windows PowerShell 連接至組織的安全性 & 規範中心。 如先前所述，您必須是 Security & compCompliance Center 中 eDiscovery Manager 角色群組的成員，才能執行該腳本。 
+- **您的使用者認證**-腳本會使用您的認證，以使用 Windows PowerShell 連接組織的安全性 & 規範中心。 如先前所述，您必須是 Security & compCompliance Center 中 eDiscovery Manager 角色群組的成員，才能執行該腳本。 
     
 - **現有搜尋的名稱** -這是您要複製的內容搜尋。 
     
@@ -61,7 +61,7 @@ ms.locfileid: "50918059"
     
 若要複製搜尋：
   
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `CloneSearch.ps1` 。
+1. 使用 .ps1 的檔案名尾碼，將下列文字儲存至 Windows PowerShell 腳本檔案;例如， `CloneSearch.ps1` 。
     
   ```powershell
   # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.

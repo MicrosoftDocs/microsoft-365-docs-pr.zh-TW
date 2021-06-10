@@ -1,6 +1,6 @@
 ---
 title: 法規符合性
-description: 本文列出與 Microsoft 受管理的桌面相關的相容性標準。
+description: 本文列出與 Microsoft 受管理的電腦相關的相容性標準。
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -18,11 +18,11 @@ ms.locfileid: "50918427"
 ---
 # <a name="compliance"></a>合規性
 
-當您使用 Microsoft 受管理的桌面時，Microsoft 會為您提供一組完整的規範選項。 如此一來，可協助您的組織遵守各種相容性需求。
+當您使用 Microsoft 受管理的電腦時，Microsoft 會為您提供一組完整的規範選項。 如此一來，可協助您的組織遵守各種相容性需求。
 
 ## <a name="compliance-coverage"></a>規範範圍
 
-Microsoft 受管理的桌面已達到下列認證：
+Microsoft 受管理的電腦已取得下列認證：
 
 - [ISO 27001 資訊安全性管理標準 (ISM) ](/compliance/regulatory/offering-ISO-27001)
 - [ISO 27701 隱私權資訊管理系統 (PIMS) ](/compliance/regulatory/offering-iso-27701)
@@ -42,10 +42,10 @@ Microsoft 受管理的桌面已達到下列認證：
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>審計員報告和合規性憑證
 
-您可以在 [服務信任入口網站 (STP) ](https://servicetrust.microsoft.com/)（包括 Microsoft 雲端服務產品的相關資訊）的中央存放庫中，找到相關資訊，包括控制項和技術需求。 您可以從 STP 的「 [審核報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) 」區段下載審計員報告、符合性憑證等等。
+您可以在[服務信任入口網站 (STP) ](https://servicetrust.microsoft.com/)（包含 Microsoft Cloud Service 產品相關資訊的中央存放庫）中，找到相關資訊，包括控制項和技術需求。 您可以從 STP 的「 [審核報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) 」區段下載審計員報告、符合性憑證等等。
 
 > [!NOTE]
-> 因為 Microsoft 受管理的桌面會在 Azure 上執行，所以相關的檔通常會有檔案名（如 "Microsoft Azure、Dynamics 365）及其他線上服務"）。 在這些檔中，您通常可以在類別 "Microsoft Online Services" 或 "Monitoring + Management" 下找到 Microsoft Managed Desktop。
+> 因為 Microsoft 受管理的電腦會在 Azure 上執行，所以相關的檔通常會有檔案名，例如 "Microsoft Azure、Dynamics 365 和其他線上服務"。 在這些檔中，您通常可以在類別 "Microsoft Online Services" 或 "Monitoring + Management" 下找到 Microsoft 受管理的電腦。
 
 ## <a name="shared-responsibility"></a>共用責任
 
