@@ -29,17 +29,17 @@ ms.locfileid: "50919137"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 刪除 Microsoft 365 使用者帳戶
 
-您可以使用 Microsoft 365 的 PowerShell 來刪除及還原使用者帳戶。
+您可以針對 Microsoft 365 使用 PowerShell，以刪除及還原使用者帳戶。
 
 >[!Note]
->瞭解如何使用 Microsoft 365 系統管理中心 [還原使用者帳戶](../admin/add-users/restore-user.md) 。
+>瞭解如何使用 Microsoft 365 系統管理中心[還原使用者帳戶](../admin/add-users/restore-user.md)。
 >
 >如需其他資源的清單，請參閱 [管理使用者和群組](../admin/add-users/index.yml)。
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 連接後，請使用下列語法來移除個別使用者帳戶：
   
@@ -79,9 +79,9 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-當您透過 Microsoft Azure Active Directory Module for Windows PowerShell 刪除使用者帳戶時，系統不會永久刪除該帳戶。 您可以在 30 天內還原已刪除的使用者帳戶。
+當您透過 Windows PowerShell 的 Microsoft Azure Active Directory 模組刪除使用者帳戶時，不會永久刪除該帳戶。 您可以在 30 天內還原已刪除的使用者帳戶。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 若要刪除使用者帳戶，請使用下列語法：
   

@@ -32,7 +32,7 @@ ms.locfileid: "50922627"
   
 ## <a name="security-and-data-encryption-in-office-365"></a>Office 365 中的安全性和資料加密
 
-Microsoft 365 是高度安全的環境，可提供多層的廣泛保護：實體資料中心安全性、網路安全性、存取安全性、應用程式安全性和資料安全性。 本文特別著重在OneDrive for Business 和 SharePoint Online 的傳輸中和靜態加密等方面。
+Microsoft 365 是高安全性的環境，可提供多層的廣泛保護：實體資料中心安全性、網路安全性、存取安全性、應用程式安全性及資料安全性。 本文特別著重在OneDrive for Business 和 SharePoint Online 的傳輸中和靜態加密等方面。
   
 觀看下列影片，了解資料加密如何運作。
   
@@ -50,7 +50,7 @@ Microsoft 365 是高度安全的環境，可提供多層的廣泛保護：實體
 
 靜態加密包括兩個元件：BitLocker 磁碟層級加密，以及客戶內容的每一檔案加密。
   
-服務針對OneDrive for Business 和 SharePoint Online 部署了 BitLocker。 在 Microsoft 365 多承租人和以多承租人技術為基礎的新專用環境中 SharePoint，每個檔案加密也是在商務用 OneDrive。
+服務針對OneDrive for Business 和 SharePoint Online 部署了 BitLocker。 根據每個檔案加密，Microsoft 365 多承租人和以多承租人技術為基礎的新專用環境中，也商務用 OneDrive 和 SharePoint 線上。
   
 當 BitLocker 加密磁碟中的所有資料時，每一檔案的加密會進一步地納入每個檔案唯一的加密金鑰。此外，每個檔案的每次更新都會使用自己的加密金鑰進行加密。在儲存之前，已加密內容的金鑰會儲存在與內容不同的實體位置。此加密的每個步驟都會使用搭配 256 位元機碼的進階加密標準 (AES)，並與聯邦資訊處理標準 (FIPS) 140-2 相容。已加密的內容會分散到資料中心的數個容器中，而且每個容器都有唯一的認證。這些認證會儲存在內容或內容金鑰等不同的實體位置。
   

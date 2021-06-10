@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 Defender 中建立及管理自訂偵測規則
 description: 瞭解如何根據高級搜尋查詢建立及管理自訂偵測規則
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，自訂偵測，rules，schema，kusto，RBAC，許可權，Microsoft Defender for Endpoint
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，自訂偵測，rules，schema，kusto，RBAC，許可權，Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -42,14 +42,14 @@ ms.locfileid: "51952557"
 
 若要管理自訂偵測，您必須被指派其中一個角色：
 
-- **安全性管理員**：具有此 [Azure Active Directory 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理 Microsoft 365 安全性中心及其他入口網站和服務中的安全性設定。
+- **安全性管理員**：具有此 [Azure Active Directory 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)的使用者可以管理 Microsoft 365 安全性中心及其他入口網站和服務中的安全性設定。
 
-- **安全操作員**-具有此 [Azure Active Directory 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理提醒，並具有安全相關功能的全域唯讀許可權，包括 Microsoft 365 Security center 中的所有資訊。 只有在 Microsoft Defender for Endpoint 中關閉以角色為基礎的存取控制 (RBAC) 時，此角色才足以管理自訂偵測。 如果您已設定 RBAC，您也需要使用 Defender for Endpoint 的「 **管理安全性設定** 」許可權。
+- **安全操作員**-具有此 [Azure Active Directory 角色](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)的使用者可以管理提醒，並具有安全性相關功能的全域唯讀許可權，包括 Microsoft 365 安全中心的所有資訊。 只有在 Microsoft Defender for Endpoint 中關閉以角色為基礎的存取控制 (RBAC) 時，此角色才足以管理自訂偵測。 如果您已設定 RBAC，您也需要使用 Defender for Endpoint 的「 **管理安全性設定** 」許可權。
 
 若要管理必要的許可權， **全域管理員** 可以：
 
-- 在 [ **role** security admin] 底下的 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)中指派 **安全性管理員** 或 **安全性操作員** 角色  >  ****。
-- 在 [**設定** 許可權角色] 底下的 [microsoft defender Security Center](https://securitycenter.windows.com/)中檢查 microsoft defender for Endpoint 的 RBAC 設定  >    >  ****。 選取對應的角色以指派「 **管理安全性設定** 」許可權。
+- 在 [**角色**] 安全性管理員底下的 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)指派 **安全性管理員** 或 **安全性操作員** 角色  >  ****。
+- 在 [ [](https://securitycenter.windows.com/) **設定**  >  **許可權**  >  **角色**] 底下的 Microsoft Defender 資訊安全中心中檢查 Microsoft Defender for Endpoint 的 RBAC 設定。 選取對應的角色以指派「 **管理安全性設定** 」許可權。
 
 > [!NOTE]
 > 若要管理自訂偵測，當已開啟 RBAC 時， **安全性操作員** 會需要 Microsoft Defender for Endpoint 中的「 **管理安全性設定** 」許可權。
@@ -57,7 +57,7 @@ ms.locfileid: "51952557"
 ## <a name="create-a-custom-detection-rule"></a>建立自訂偵測規則
 ### <a name="1-prepare-the-query"></a>1. 準備查詢。
 
-在 Microsoft 365 的 [安全性中心] 中，移至 [ **高級搜尋** ]，然後選取現有的查詢或建立新的查詢。 使用新的查詢時，請執行查詢以識別錯誤，並瞭解可能的結果。
+在 Microsoft 365 的安全性中心，移至 [**高級搜尋**]，然後選取現有的查詢或建立新的查詢。 使用新的查詢時，請執行查詢以識別錯誤，並瞭解可能的結果。
 
 >[!IMPORTANT]
 >若要防止服務傳回太多警示，每個規則都限制為每次執行時只產生100警示。 在建立規則之前，請先調整您的查詢，以避免正常、日常活動的警示。
@@ -145,7 +145,7 @@ DeviceEvents
 這些動作會套用至 `DeviceId` 查詢結果欄中的裝置：
 - **隔離裝置**—使用 Microsoft Defender for Endpoint 來套用完整網路隔離，以防止裝置連接至任何應用程式或服務。 [深入瞭解 Microsoft Defender for Endpoint machine 隔離](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **收集調查套件**—收集 ZIP 檔案中的裝置資訊。 [深入瞭解 Microsoft Defender for Endpoint 調查套件](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **執行防病毒掃描**-在裝置上執行完整的 Windows Defender 防病毒掃描
+- **執行防病毒掃描**-在裝置上執行完整 Windows Defender 防毒軟體掃描
 - **開始調查**--在裝置上開始 [自動調查](m365d-autoir.md)
 - **限制應用程式執行**—設定裝置上的限制，只允許以 Microsoft 發行的憑證簽署的檔案執行。 [深入瞭解 Microsoft Defender for Endpoint 的應用程式限制](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
@@ -153,10 +153,10 @@ DeviceEvents
 選取此選項時，您可以選擇對查詢結果的、、或欄中的檔案套用 **隔離檔** 動作 `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` 。 此巨集指令會從目前的位置刪除檔案，並將複本放入隔離區。
 
 #### <a name="actions-on-users"></a>使用者的動作
-選取此選項時，會對使用者于、或欄中的查詢結果，對使用者採取「將 **使用者標示為受損** 」動作 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` 。 此動作會在 Azure Active Directory 中將使用者風險層級設為「高」，以觸發對應的身分 [識別保護原則](/azure/active-directory/identity-protection/overview-identity-protection)。
+選取此選項時，會對使用者于、或欄中的查詢結果，對使用者採取「將 **使用者標示為受損** 」動作 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` 。 此巨集指令會在 Azure Active Directory 中，觸發對應的身分[識別保護原則](/azure/active-directory/identity-protection/overview-identity-protection)，將使用者風險層級設定為「高」。
 
 > [!NOTE]
-> Microsoft 365 Defender 目前不支援自訂偵測規則的 allow 或 block 動作。
+> Microsoft 365 Defender 上目前不支援自訂偵測規則的 allow 或 block 動作。
 
 ### <a name="5-set-the-rule-scope"></a>5. 設定規則範圍。
 設定範圍以指定規則涵蓋哪些裝置。 此範圍會影響檢查裝置的規則，而不會影響僅檢查信箱和使用者帳戶或身分識別的規則。
@@ -181,7 +181,7 @@ DeviceEvents
 您可以查看現有的自訂偵測規則清單，檢查其先前的執行，並查看其觸發的警示。 您也可以根據需要執行規則，並加以修改。
 
 >[!TIP]
-> 自訂偵測所引發的警示會透過警示和事件 APIs 獲得。 如需詳細資訊，請參閱 [支援的 Microsoft 365 Defender APIs](api-supported.md)。
+> 自訂偵測所引發的警示會透過警示和事件 APIs 獲得。 如需詳細資訊，請參閱[支援的 Microsoft 365 Defender APIs](api-supported.md)。
 
 ### <a name="view-existing-rules"></a>查看現有規則
 
@@ -222,7 +222,7 @@ DeviceEvents
 >若要快速查看資訊，並對表格中的專案採取動作，請使用表格左邊的選取範圍欄 [&#10003;]。
 
 >[!NOTE]
->本文中的部分欄可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
+>本文中的部分欄可能無法在 Microsoft Defender for Endpoint 中使用。 使用更多資料來源[開啟 Microsoft 365 Defender](m365d-enable.md)以搜尋威脅。 您可以遵循[從 microsoft defender for endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft defender for endpoint 移至 Microsoft 365 Defender。
 
 ## <a name="see-also"></a>另請參閱
 - [自訂偵測概觀](custom-detections-overview.md)

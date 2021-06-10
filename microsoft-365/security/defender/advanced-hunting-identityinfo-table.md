@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 IdentityInfo 表格
 description: 深入瞭解高級搜尋架構的 IdentityInfo 資料表中的使用者帳戶資訊
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，AccountInfo，IdentityInfo，account
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，AccountInfo，IdentityInfo，account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51935818"
 **適用於：**
 - Microsoft 365 Defender
 
-[！附注] `IdentityInfo` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含從各種服務（包含 Azure Active Directory）取得之使用者帳戶的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `IdentityInfo` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含從各種服務取得之使用者帳戶的相關資訊，包括 Azure Active Directory。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!NOTE]
 >此資料表已重新命名 `AccountInfo` 。 重新命名時，儲存在入口網站中的所有查詢都會自動更新。 檢查您已儲存在其他位置的查詢。

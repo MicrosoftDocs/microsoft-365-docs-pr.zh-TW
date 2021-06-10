@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 文檔導覽秘訣
-description: 流覽 Microsoft 365 技術檔的秘訣和竅門-說明 hub 頁面、目錄、標頭，以及如何使用該痕跡篩選和如何使用版本篩選的秘訣。
+title: Microsoft 365 文檔導覽提示
+description: 導覽 Microsoft 365 技術檔的提示和竅門-說明 hub 頁面、目錄、標頭，以及如何使用該痕跡及如何使用版本篩選器等事項。
 ms.date: 08/12/2020
 ms.prod: sql
 ms.technology: release-landing
@@ -18,15 +18,15 @@ ms.locfileid: "50922421"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 文檔導覽指南
 
-本主題提供一些提示和技巧，以導覽 Microsoft 365 技術檔空間。  
+本主題提供一些提示和技巧，以導覽 Microsoft 365 的技術檔空間。  
 
 ## <a name="hub-page"></a>中樞頁面
 
-您可以在 [Microsoft 365 hub] 頁面上找到 [https://aka.ms/microsoft365docs](./index.yml) ，也就是尋找相關 Microsoft 365 內容的進入點。
+您可以在中找到 [Microsoft 365 hub] 頁面 [https://aka.ms/microsoft365docs](./index.yml) ，也就是尋找相關 Microsoft 365 內容的進入點。
 
-您可以從 Microsoft 365 技術檔組內每頁頂端的頁首，選取 [ **microsoft 365** ]，以流覽回到此頁面：
+您可以從 Microsoft 365 技術檔集內每個頁面頂端的頁首中，選取 **Microsoft 365** ，以移回到此頁面：
 
-![頁首中的 Microsoft 365](media/m365-header-cursor.png)
+![標頭中 Microsoft 365](media/m365-header-cursor.png)
 
 ## <a name="offline-documentation"></a>離線檔
 
@@ -42,9 +42,9 @@ ms.locfileid: "50922421"
 ![使用篩選框](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>版本篩選
-Microsoft 365 技術檔會提供其他產品的內容，包括由 21 Vianet (中國) 所運作的 Office 365 德國和 Office 365。 這些版本之間的功能可能會不同，因此內容本身有時也會不同。
+Microsoft 365 的技術檔會提供其他產品的內容，包括 Office 365 德國和 Office 365 由 21 Vianet (中國) 運作。 這些版本之間的功能可能會不同，因此內容本身有時也會不同。
 
-您可以使用版本篩選，確定您看到的是 Microsoft 365 的適當版本內容：
+您可以使用版本篩選，以確保您看到適當版本的 Microsoft 365 內容：
 
 ![Microsoft 365 版本篩選](media/m365-version-filter.png)
 
@@ -62,7 +62,7 @@ Microsoft 365 技術檔會提供其他產品的內容，包括由 21 Vianet (中
 
 ## <a name="submit-docs-feedback"></a>提交檔意見反應
 
-如果您在文章中發現問題，您可以向下滾動頁面底部，然後選取 **內容意見** 反應，將意見提交給 SQL 內容小組以取得該專案。
+如果您在文章中發現問題，您可以向下滾動頁面底部，然後選取 **內容意見** 反應，將意見送出至該文章的 SQL 內容團隊。
 
 ![Git 問題內容意見反應](media/m365-article-feedback.png)
 
@@ -74,4 +74,4 @@ Microsoft 365 技術檔會提供其他產品的內容，包括由 21 Vianet (中
 
 ## <a name="next-steps"></a>後續步驟
 
-- 開始使用 [Microsoft 365 技術檔](index.yml)。
+- 開始使用 Microsoft 365 的[技術檔](index.yml)。

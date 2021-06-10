@@ -31,7 +31,7 @@ ms.locfileid: "51165246"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
  
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "51165246"
 
 整合會讓 MSSPs 採取下列動作：
 
-- 取得 MSSP 客戶的 Microsoft Defender 安全中心入口網站的存取權
+- 取得 MSSP 客戶 Microsoft Defender 資訊安全中心入口網站的存取權
 - 取得電子郵件通知，以及 
 - 透過安全性資訊和事件管理 (SIEM) 工具取得警示
 
@@ -57,7 +57,7 @@ ms.locfileid: "51165246"
 一般而言，必須採取下列設定步驟：
 
 
-- **授與 Microsoft Defender Security Center 的 MSSP 存取權** <br>
+- **授與 Microsoft Defender 資訊安全中心的 MSSP 存取權** <br>
 MSSP 客戶必須執行此動作。 它會授與 MSSP 存取權給 MSSP 客戶的端點租使用者的 Defender。
  
 
@@ -75,8 +75,8 @@ MSSP 會採取此動作。 它允許 MSSPs 使用 APIs 來取得提醒。
 
 
 ## <a name="related-topics"></a>相關主題
-- [授與 MSSP 存取入口網站](grant-mssp-access.md)
+- [將入口網站存取權授予 MSSP](grant-mssp-access.md)
 - [存取 MSSP 客戶入口網站](access-mssp-portal.md)
 - [設定警示通知](configure-mssp-notifications.md)
-- [從客戶租使用者提取警示](fetch-alerts-mssp.md)
+- [從客戶租用戶中抓取警示](fetch-alerts-mssp.md)
 

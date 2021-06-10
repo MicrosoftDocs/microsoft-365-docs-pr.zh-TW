@@ -39,7 +39,7 @@ MpCmdRun 實用程式使用下列語法：
 MpCmdRun.exe [command] [-options]
 ```
 
-以下為範例:
+以下為範例：
 
 ```console
 MpCmdRun.exe -Scan -ScanType 2
@@ -83,7 +83,7 @@ MpCmdRun.exe -Scan -ScanType 2
 | **ValidateMapsConnection 無法建立與對應 (hr = 800722F0D 的連接** | 防火牆會封鎖連接或進行 SSL 檢查。 |
 | **ValidateMapsConnection 無法建立與對應 (hr = 80072EE7 HTTPcode = 451 的連接)** | 防火牆會封鎖連接或進行 SSL 檢查。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [設定 Microsoft Defender 防毒軟體功能](configure-microsoft-defender-antivirus-features.md)
 - [設定及驗證 Microsoft Defender 防毒軟體網路連線](configure-network-connections-microsoft-defender-antivirus.md)

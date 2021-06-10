@@ -1,7 +1,7 @@
 ---
 title: 其他安全性和威脅防護 APIs
 description: 查看與 Microsoft 安全性和威脅防護產品相關的 APIs 清單。
-keywords: api，安全性，威脅防護，mde，Microsoft Defender for Endpoint，Microsoft Defender for Office 365，cloud app security
+keywords: api，安全性，威脅防護，mde，microsoft defender for Endpoint，microsoft defender for Office 365，cloud app security
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -33,13 +33,13 @@ ms.locfileid: "51935746"
 
 **適用於：**
 
-- Microsoft 365 Defender API
+- Microsoft 365Defender API
 
 > [!IMPORTANT]
 > 部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。 Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。
 
-下列資源提供其他 Microsoft 安全性解決方案的詳細資訊 APIs，除了 Microsoft 365 Defender API 以外。
+下列資源提供其他 Microsoft 安全性解決方案（Microsoft 365 Defender API）以外可用 APIs 的詳細資訊。
 
 - [適用於端點的 Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
 - [適用於 Office 365 的 Microsoft Defender](/office/office-365-management-api/)
-- [Microsoft Cloud App Security](/cloud-app-security/api-introduction)
+- [Microsoft 雲端 App 安全性](/cloud-app-security/api-introduction)

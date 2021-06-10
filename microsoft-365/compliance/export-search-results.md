@@ -175,7 +175,7 @@ ms.locfileid: "52653532"
   
     **EDiscovery 匯出工具** 會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 以下是匯出搜尋結果的詳細資訊。
   

@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 移除使用者帳戶中的 Microsoft 365 授權
+title: 移除具有 PowerShell 之使用者帳戶的 Microsoft 365 授權
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: 說明如何使用 PowerShell 來移除先前指派給使用者的 Microsoft 365 授權。
+description: 說明如何使用 PowerShell 移除先前指派給使用者的 Microsoft 365 授權。
 ms.openlocfilehash: 9944d1ab056d109b6bf71a44fe01acef78ce1f14
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50920665"
 ---
-# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>使用 PowerShell 移除使用者帳戶中的 Microsoft 365 授權
+# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>移除具有 PowerShell 之使用者帳戶的 Microsoft 365 授權
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
@@ -37,7 +37,7 @@ ms.locfileid: "50920665"
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 接下來，使用此命令列出租使用者的授權計畫。
 
@@ -81,7 +81,7 @@ if($userList.Count -ne 0) {
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。
 
-首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，連線[至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
    
 若要查看授權方案 (**AccountSkuID** 組織中的) 資訊，請參閱下列主題：
     
@@ -103,7 +103,7 @@ Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1
 >PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 **Msol** 的 Cmdlet。 若要繼續使用這些 Cmdlet，您必須從 Windows PowerShell 執行。
 >
 
-本範例會從使用者帳戶 BelindaN@litwareinc.com 中移除 (Office 365 Enterprise E3) 授權的 **litwareinc:ENTERPRISEPACK** 。
+本範例會從使用者帳戶 BelindaN@litwareinc.com 移除 Office 365 企業版 E3) 授權的 **litwareinc:ENTERPRISEPACK** (。
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
@@ -154,7 +154,7 @@ kakers@contoso.com
   Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
   }
   ```
-本範例會從文字檔 C:\My Documents\Accounts.txt 中所定義的使用者帳戶移除 **litwareinc:ENTERPRISEPACK** (Office 365 企業版 E3) 授權。
+本範例會從在文字檔 C:\My Documents\Accounts.txt 中所定義的使用者帳戶中，移除 **litwareinc:ENTERPRISEPACK** (Office 365 企業版 E3) 授權。
     
   ```powershell
   $x=Get-Content "C:\My Documents\Accounts.txt"

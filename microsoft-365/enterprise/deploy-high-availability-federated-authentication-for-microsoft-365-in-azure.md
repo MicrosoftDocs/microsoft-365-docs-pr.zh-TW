@@ -28,7 +28,7 @@ ms.locfileid: "50919149"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Azure 中的 Microsoft 365 高可用性同盟驗證
 
-本文提供以下列虛擬機器在 Azure 基礎結構服務中部署 Microsoft Microsoft 365 高可用性同盟驗證的逐步指示連結。
+本文提供使用下列虛擬機器在 Azure 基礎結構服務中部署 Microsoft Microsoft 365 高可用性同盟驗證的逐步指示連結：
   
 - 兩個 Web 應用程式 Proxy 伺服器
     
@@ -98,13 +98,13 @@ ms.locfileid: "50919149"
     
 - [階段5：設定 Microsoft 365 的同盟驗證](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 為您的 Microsoft 365 訂閱設定同盟驗證。
     
-這些文章針對預先定義的架構，提供在 Azure 基礎結構服務中為 Microsoft 365 建立功能性、高可用性同盟驗證的規範性階段指南。 請記住下列事項：
+這兩篇文章針對 Azure 基礎結構服務中的 Microsoft 365，提供預先定義之架構的分階段指南，以建立功能、高可用性同盟驗證。 請記住下列事項：
   
 - 如果您是有經驗的 AD FS 實作者，請自行適應階段 3 至 4 中的指示，並建置最符合您需求的伺服器組。
     
 - 如果您已擁有的現有 Azure 混合式雲端部署具有現有跨單位虛擬網路，請依需要調整或略過階段 1 和 2 中的指示，並將 AD FS 和 Web 應用程式 Proxy 伺服器置於適當的子網路中。
     
-若要建立開發/測試環境或此設定的概念證明，請參閱 [適用于 Microsoft 365 開發/測試環境](federated-identity-for-your-microsoft-365-dev-test-environment.md)的同盟身分識別。
+若要建立開發/測試環境或此設定的概念證明，請參閱[Microsoft 365 開發/測試環境](federated-identity-for-your-microsoft-365-dev-test-environment.md)的同盟身分識別。
   
 ## <a name="next-step"></a>下一步
 

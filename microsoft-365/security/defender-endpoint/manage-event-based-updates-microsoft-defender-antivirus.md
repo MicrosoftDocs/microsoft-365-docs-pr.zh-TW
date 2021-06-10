@@ -70,7 +70,7 @@ Microsoft Defender 防毒軟體可讓您判斷是否 (應該在特定事件（�
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-如需詳細資訊，請參閱[Use PowerShell Cmdlet 以設定及執行 Microsoft Defender 防毒軟體](use-powershell-cmdlets-microsoft-defender-antivirus.md)和[Defender Cmdlet](/powershell/module/defender/index)。
+要深入了解，請參閱 [《使用 PowerShell Cmdlets 設定和執行 Microsoft Defender 防毒軟體》](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender Cmdlets](/powershell/module/defender/index)。
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>在執行掃描之前，使用 Windows 管理指令 (WMI) 檢查保護更新
 

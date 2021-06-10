@@ -97,7 +97,7 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-將文字檔儲存為副檔名為 .js 的 JavaScript 檔，例如 delayLoadImages.js。
+將文字檔儲存為副檔名為 .js 的 JavaScript 檔案，例如 delayLoadImages.js。
   
 delayLoadImages.js 寫入完畢後，您可以在 SharePoint 線上中將檔案的內容新增至主版頁面。 若要這麼做，您可以將腳本連結新增至主版頁面的頁首。 在主版頁面中，JavaScript 會套用至所有使用該主版頁面版面配置的 SharePoint Online 網站中的所有頁面。 或者，如果您只想在網站的一個頁面上使用此程式，請使用 [腳本編輯器網頁元件] 將 JavaScript 嵌入頁面中。 如需詳細資訊，請參閱以下主題：
   
@@ -119,11 +119,11 @@ delayLoadImages.js 寫入完畢後，您可以在 SharePoint 線上中將檔案�
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub 程式碼範例：注入 JavaScript 以提升效能
 
-在 GitHub 上所提供的 [JavaScript 注入](https://go.microsoft.com/fwlink/p/?LinkId=524759) 上，請勿錯過文章和程式碼範例。
+在 GitHub 上所提供的[JavaScript 注入](https://go.microsoft.com/fwlink/p/?LinkId=524759)上，請勿錯過文章和程式碼範例。
   
 ## <a name="see-also"></a>另請參閱
 
-[Office 2013 和 Microsoft 365 應用程式中支援的瀏覽器](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Office 2013 及 Microsoft 365 Apps 企業版中支援的瀏覽器](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [操作方法：將主版頁面套用至 SharePoint 2013 的網站](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
   

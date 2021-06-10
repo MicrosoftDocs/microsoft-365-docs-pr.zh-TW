@@ -62,7 +62,7 @@ Windows Server 2016 和 Windows Server 2019 上的 Microsoft Defender 防毒軟�
 
 ### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>使用群組原則來停用 Windows Server 2016 的自動排除清單及 Windows 伺服器2019
 
-1. 在您的群組原則管理電腦上，開啟 [ [群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))]。 以滑鼠右鍵按一下您要設定的群組原則物件，然後按一下 [ **編輯**]。
+1. 在您的群組原則管理電腦，開啟 [群組原則管理主控台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))。 以滑鼠右鍵按一下您要設定的群組原則物件，然後按一下 [ **編輯**]。
 2. 在 [**群組原則管理編輯器**] 中，移至 [電腦設定]，然後按一下 [**系統****管理範本**]。
 3. 展開樹狀目錄，以 **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **排除**。
 4. 按兩下 [ **關閉自動排除**]，然後將選項設定為 [ **啟用**]。 然後按一下 **[確定]**。 

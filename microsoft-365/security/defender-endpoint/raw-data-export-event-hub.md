@@ -34,7 +34,7 @@ ms.locfileid: "52780162"
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 1. 在您的租使用者中建立 [事件中樞](/azure/event-hubs/) 。
 

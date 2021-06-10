@@ -1,7 +1,7 @@
 ---
 title: 內部人員風險管理案例
 description: 深入瞭解 Microsoft 365 中的內幕人士風險管理案例
-keywords: Microsoft 365, 測試人員風險管理, 風險管理, 合規性
+keywords: Microsoft 365, 內部風險管理, 風險管理, 合規性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article

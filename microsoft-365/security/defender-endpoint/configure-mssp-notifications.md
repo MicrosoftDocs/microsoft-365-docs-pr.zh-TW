@@ -31,7 +31,7 @@ ms.locfileid: "51166050"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 
 >[!NOTE]
@@ -49,6 +49,6 @@ ms.locfileid: "51166050"
 
 
 ## <a name="related-topics"></a>相關主題
-- [授與 MSSP 存取入口網站](grant-mssp-access.md)
+- [將入口網站存取權授予 MSSP](grant-mssp-access.md)
 - [存取 MSSP 客戶入口網站](access-mssp-portal.md)
-- [從客戶租使用者提取警示](fetch-alerts-mssp.md)
+- [從客戶租用戶中抓取警示](fetch-alerts-mssp.md)

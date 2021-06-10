@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 CloudAppEvents 表格
 description: 深入瞭解高級搜尋架構之 CloudAppEvents 資料表中 cloud apps and service 的事件
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，query，遙測，schema reference，kusto，table，欄，資料類型，描述，CloudAppEvents，Cloud App Security，MCAS
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，CloudAppEvents，雲端 App 安全性，MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -37,10 +37,10 @@ ms.locfileid: "51935866"
 
 
 
-[！附注] `CloudAppEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含 Microsoft cloud App Security 所涵蓋之各種雲端應用程式和服務中的活動相關資訊。 如需完整清單，請跳至 [應用程式和服務涵蓋](#apps-and-services-covered)。 使用這個參考來建立從此表格取回之資訊的查詢。 
+[！附注] `CloudAppEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含 Microsoft Cloud App Security 所涵蓋之各種雲端 app 和服務中的活動相關資訊。 如需完整清單，請跳至 [應用程式和服務涵蓋](#apps-and-services-covered)。 使用這個參考來建立從此表格取回之資訊的查詢。 
 
 >[!IMPORTANT]
->此表格包含可用於表格的資訊 `AppFileEvents` 。 從2021年3月7日起，使用者在此日期以外的雲端服務中搜尋與檔案相關的活動，應改為使用 `CloudAppEvents` 表格。 <br><br>請務必搜尋查詢和自訂偵測規則，該規則仍會使用 `AppFileEvents` 該表，並進行編輯，以使用 `CloudAppEvents` 該表。 若要瞭解轉換受影響查詢的相關指引，請參閱 [使用 Microsoft 365 Defender advanced 搜尋跨 cloud app Activity 搜尋](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
+>此表格包含可用於表格的資訊 `AppFileEvents` 。 從2021年3月7日起，使用者在此日期以外的雲端服務中搜尋與檔案相關的活動，應改為使用 `CloudAppEvents` 表格。 <br><br>請務必搜尋查詢和自訂偵測規則，該規則仍會使用 `AppFileEvents` 該表，並進行編輯，以使用 `CloudAppEvents` 該表。 若要瞭解轉換受影響查詢的相關指引[，請參閱使用 Microsoft 365 Defender 高級搜尋來搜尋各項 cloud app activity](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
 
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
@@ -51,7 +51,7 @@ ms.locfileid: "51935866"
 | `ActionType` | string | 觸發事件的活動類型 |
 | `Application` | string | 執行錄製動作的應用程式 |
 | `ApplicationId` | string | 應用程式的唯一識別碼 |
-| `AccountObjectId` | string | Azure Active Directory 中帳戶的唯一識別碼 |
+| `AccountObjectId` | string | 帳戶在 Azure Active Directory 中的唯一識別碼 |
 | `AccountDisplayName` | string | 顯示在通訊錄中之帳戶使用者的名稱。 通常是指定的名稱或名字、中間初始名稱或姓氏的組合。 |
 | `IsAdminOperation` | string | 指出活動是否由系統管理員執行 |
 | `DeviceType` | string | 根據用途及功能的裝置類型，例如「網路裝置」、「工作站」、「伺服器」、「Mobile」、「遊戲主控台」或「印表機」。 | 
@@ -78,7 +78,7 @@ ms.locfileid: "51935866"
 - Exchange Online
 - Microsoft Teams
 - 商務用 OneDrive
-- Power Automate
+- 電源自動化
 - Power BI
 - SharePoint Online
 - 商務用 Skype

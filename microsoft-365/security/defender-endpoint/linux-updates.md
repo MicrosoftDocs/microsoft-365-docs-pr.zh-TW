@@ -1,5 +1,5 @@
 ---
-title: 在 Linux 上部署 Microsoft Defender for Endpoint 的更新
+title: 為 Linux 上適用於端點的 Microsoft Defender 部署更新
 ms.reviewer: ''
 description: 說明如何在企業環境中為 Linux 上的端點部署 Microsoft Defender 的更新。
 keywords: microsoft，defender，Microsoft Defender for Endpoint，linux，update，deploy
@@ -26,7 +26,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274721"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上部署 Microsoft Defender for Endpoint 的更新
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>為 Linux 上適用於端點的 Microsoft Defender 部署更新
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

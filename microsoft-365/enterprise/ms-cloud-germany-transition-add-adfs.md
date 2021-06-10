@@ -28,7 +28,7 @@ ms.locfileid: "51165654"
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的 AD FS 遷移步驟
 
 在第2階段開始之前，必須套用此設定變更。
-當階段2完成之後，設定變更便可運作，而且您可以透過 Office 365 全域端點（例如）登入 `https://portal.office.com` 。 如果您要在第2階段之前實施設定變更，Office 365 全域端點仍會 _運作_ ，但新的信賴憑證者信任仍是 Active Directory Federation SERVICES (AD FS) 設定的一部分。
+當階段2完成之後，設定變更便可運作，而且您可以透過 Office 365 全域端點（例如）來登入 `https://portal.office.com` 。 如果您要在第2階段之前實施設定變更，則 Office 365 全域端點仍會 _運作_，但新的信賴憑證者信任仍是 Active Directory Federation Services (AD FS) 設定的一部分。
 
 使用同盟驗證搭配 Active Directory Federation Services (AD FS 的客戶) 不應該對使用內部部署 Active Directory 網域服務之所有驗證的發行人 URIs 進行變更，以進行遷移時 (AD DS) 。 變更簽發者 URIs 會導致網域中的使用者驗證失敗。 簽發者 URIs 可以直接在 AD FS 中變更，或將網域從 _managed_ 轉換成 _同盟，反之亦然_ 。 建議您不要在已遷移的 Azure AD 租使用者中新增、移除或轉換同盟網域。 在遷移完全完成後，可以變更發行者 URIs。
 
@@ -37,13 +37,13 @@ ms.locfileid: "51165654"
 1. 使用 [下列步驟](#backup)備份您的 AD FS 設定，包括現有的 Microsoft Cloud Deutschland 信賴憑證者信任。 命名備份 **MicrosoftCloudDeutschlandOnly** ，以表示它只具有 Microsoft Cloud Deutschland 租使用者資訊。
 
    > [!NOTE]
-   > 此備份不僅會包含適用于 Microsoft Cloud Deutschland 的現有 Office 365 信賴憑證者信任，還會在各自的 AD FS 伺服器陣列上顯示所有其他信賴憑證方信任。
+   > 備份不僅會包含 Microsoft Cloud Deutschland 現有的 Office 365 信賴憑證者信任，還會在各自的 AD FS 伺服器陣列上顯示所有其他信賴憑證方信任。
 
 2. 使用 MicrosoftCloudDeutschlandOnly 備份測試還原，AD FS 伺服器陣列應繼續以 Microsoft Cloud Deutschland 的方式運作。
 
 完成並測試 AD FS 備份後，請執行下列步驟，以將新的信賴憑證者信任新增至 ADFS 設定：
 
-1. 開啟 [AD FS 管理主控台]。
+1. 開啟 AD FS 管理主控台。
 
 2. 在 ADFS 管理主控台的左窗格中，流覽至 [ **信賴** 憑證者信任] 功能表。
 
@@ -53,9 +53,9 @@ ms.locfileid: "51165654"
 
 5. 在 [ **選取資料來源** ] 頁面上，選取 [匯 **入已發佈線上或本機網路上的信賴憑證者相關資料**]。 **(主機名稱或 URL) 值的同盟中繼資料位址** 必須設定為 `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 按 [下一步 **]**。
 
-6. 在 [ **指定顯示名稱** ] 頁面上，輸入顯示名稱，例如「 **全球通用的 Microsoft Office 365 身分識別平臺**」。 按 [下一步 **]**。
+6. 在 [**指定顯示名稱**] 頁面上，輸入顯示名稱，例如「**全球 Microsoft Office 365 身分識別平臺**」。 按 [下一步 **]**。
 
-7. 如果您是在 Windows Server 2012 中使用 ADFS，請在 [嚮導] 頁面上的 [ **立即設定多重要素驗證？**] 中，根據您的驗證需求選取適當的選項。 如果您堅持使用預設值，請選取 [ **我不想要設定此信賴憑證者信任的多重要素驗證設定**]。 您可以稍後在需要時變更此設定。
+7. 如果您是在 Windows Server 2012 中使用 ADFS，請在 [嚮導] 頁面上的 [**立即設定多重要素驗證？**] 中，根據您的驗證需求選取適當的選項。 如果您堅持使用預設值，請選取 [ **我不想要設定此信賴憑證者信任的多重要素驗證設定**]。 您可以稍後在需要時變更此設定。
 
 8. 針對 AD FS 2012：在 [ **選擇發行授權規則**] 上，[保留 **允許所有使用者存取此信賴憑證方** ]，然後按 **[下一步]**。
 
@@ -70,7 +70,7 @@ ms.locfileid: "51165654"
 您可以使用 [AD FS 説明](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 產生正確的發行轉換規則。 您可以透過 AD FS 管理主控台或 PowerShell，手動新增以 AD FS 協助所產生的宣告規則。 AD FS 説明會產生必要執行的必要 PowerShell 腳本。  
 
 > [!NOTE]
-> [AD FS 説明](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 會產生產品隨附的標準發行轉換規則。 不過，如果在 Microsoft 雲端 Deutschland 信賴憑證者信任 (中使用自訂發行轉換規則，例如，自訂發行者 URIs、非標準不彈性識別碼s 或任何其他自訂) ，必須修改 AD FS 説明所產生的規則，使其符合目前就地適用于 Microsoft Cloud Deutschland 信賴憑證者信任的自訂邏輯。 如果這些自訂未在透過 [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)說明所產生的規則內整合，則 **全球的 Microsoft Office 365 身分識別平臺** 驗證很可能 **無法** 用於您的同盟身分識別。
+> [AD FS 説明](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 會產生產品隨附的標準發行轉換規則。 不過，如果在 Microsoft 雲端 Deutschland 信賴憑證者信任 (中使用自訂發行轉換規則，例如，自訂發行者 URIs、非標準不彈性識別碼s 或任何其他自訂) ，必須修改 AD FS 説明所產生的規則，使其符合目前就地適用于 Microsoft Cloud Deutschland 信賴憑證者信任的自訂邏輯。 如果這些自訂未整合透過 [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)說明所產生的規則，則在 **全球範圍內 Microsoft Office 365 身分識別平臺** 的驗證，就很可能 **無法** 用於您的同盟身分識別。
 
 1. Run 在 [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)說明上執行 [**產生宣告**]，並使用腳本右上角的 [**複製**] 選項來複製 PowerShell 腳本。
 
@@ -88,7 +88,7 @@ ms.locfileid: "51165654"
    Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
    ```
 
-3. 確認有兩個信賴 PartyTtrusts 存在;一個用於 Microsoft Cloud Deutschland，另一個適用于 Office 365 全域服務。 您可以利用下列命令進行檢查。 它應傳回兩列以及各自的名稱和識別碼。
+3. 確認有兩個信賴 PartyTtrusts 存在;一個用於 Microsoft Cloud Deutschland，另一個用於 Office 365 泛型服務。 您可以利用下列命令進行檢查。 它應傳回兩列以及各自的名稱和識別碼。
 
    ```powershell
    Get-AdfsRelyingPartyTrust | Where-Object {$_.Identifier -like 'urn:federation:MicrosoftOnline*'} | Select-Object Name, Identifier
@@ -136,11 +136,11 @@ ms.locfileid: "51165654"
 
 3. 將新的 DNS 記錄或負載平衡器指向新的 AD FS 伺服器。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 
-- [從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務](ms-cloud-germany-transition.md)
+- [從 Microsoft Cloud Deutschland 遷移至新德國資料中心區域的 Office 365 服務](ms-cloud-germany-transition.md)
 - [Microsoft Cloud Deutschland 移轉協助](https://aka.ms/germanymigrateassist)
 - [如何選擇加入移轉](ms-cloud-germany-migration-opt-in.md)
 - [遷移期間的客戶體驗](ms-cloud-germany-transition-experience.md)

@@ -1,6 +1,6 @@
 ---
 title: 資訊屏障原則的屬性
-description: 本文是 Azure Active Directory 使用者帳戶屬性的參考，您可以用來定義資訊屏障段。
+description: 本文是您可以用來定義資訊障礙區段之 Azure Active Directory 使用者帳戶屬性的參考。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -27,7 +27,7 @@ Azure Active Directory 中的某些屬性可用於分割使用者。 在定義�
 本文說明如何使用具有資訊障礙的屬性，並提供可使用的屬性清單。 若要深入瞭解資訊障礙，請參閱下列資源：
 
 - [資訊屏障](information-barriers.md)
-- [在 Microsoft 小組中定義資訊障礙的原則](information-barriers-policies.md)
+- [在 Microsoft Teams 中定義資訊障礙的原則](information-barriers-policies.md)
 - [編輯 (或移除) 資訊屏障原則](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何使用資訊屏障原則中的屬性
@@ -38,9 +38,9 @@ Azure Active Directory 中的某些屬性可用於分割使用者。 在定義�
 
 2. 請確定使用者帳戶已填入值，以供您在步驟1中選取的屬性 (s) 。 查看使用者帳戶詳細資料，必要時，編輯使用者帳戶以包含屬性值。 
 
-    - 若要編輯多個帳戶 (或使用 PowerShell 編輯單一帳戶) ，請參閱 [Configure user account properties With Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
+    - 若要編輯多個帳戶 (或使用 PowerShell 編輯單一帳戶) ，請參閱[Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
 
-    - 若要編輯單一帳戶，請參閱 [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+    - 若要編輯單一帳戶，請參閱[使用 Azure Active Directory 新增或更新使用者的設定檔資訊](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
 3. [使用 PowerShell 定義線段](information-barriers-policies.md#define-segments-using-powershell)，類似下列範例：
 
@@ -53,7 +53,7 @@ Azure Active Directory 中的某些屬性可用於分割使用者。 在定義�
     > [!TIP]
     > 當您定義區段時，請針對所有的區段使用相同的屬性。 例如，如果您使用 *部門* 定義部分區段，請使用 *部門* 定義所有的區段。 不要使用 *MemberOf* 來定義某些區段使用 *部門* 和其他。 請確定您的區段沒有交疊;每一位使用者都應該被指派為一個段落。
 
-## <a name="reference"></a>參考
+## <a name="reference"></a>參考資料
 
 下表列出您可以與資訊障礙搭配使用的屬性。
 
@@ -83,7 +83,7 @@ Azure Active Directory 中的某些屬性可用於分割使用者。 在定義�
 | MSExchExtensionCustomAttribute4 | ExtensionCustomAttribute4 |
 | MSExchExtensionCustomAttribute5 | ExtensionCustomAttribute5 |
 | MailNickname | 別名 |
-| PhysicalDeliveryOfficeName | 辦公室 |
+| PhysicalDeliveryOfficeName | Office |
 | PostalCode | PostalCode |
 | ProxyAddresses | EmailAddresses |
 | StreetAddress | StreetAddress |
@@ -96,6 +96,6 @@ Azure Active Directory 中的某些屬性可用於分割使用者。 在定義�
 
 ## <a name="resources"></a>資源
 
-- [在 Microsoft 小組中定義資訊障礙的原則](information-barriers-policies.md)
-- [疑難排解資訊屏障](information-barriers-troubleshooting.md)
+- [在 Microsoft Teams 中定義資訊障礙的原則](information-barriers-policies.md)
+- [資訊屏障疑難排解](information-barriers-troubleshooting.md)
 - [資訊屏障](information-barriers.md)

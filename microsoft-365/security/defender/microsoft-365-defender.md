@@ -92,7 +92,7 @@ Microsoft 365Defender 跨產品的功能包括：
 - **跨產品威脅搜尋** -安全小組可以透過透過各種保護產品所收集的原始資料來建立自己的自訂查詢，利用其獨特的組織知識來尋找損害的跡象。 Microsoft 365Defender 提供以查詢為基礎的存取權，可對30天的歷史原始信號進行存取，並以每個端點和 Microsoft Defender 為 Office 365 資料的警示資料 
 
 
-## <a name="get-started"></a>快速入門
+## <a name="get-started"></a>入門
 Microsoft 365您必須先符合 Defender 授權需求，才能在 Microsoft 365 的安全性中心啟用服務， [security.microsoft.com](https://security.microsoft.com)。 如需詳細資訊，請參閱：
 - [授權需求](prerequisites.md#licensing-requirements)
 - [開啟 Microsoft 365 Defender](m365d-enable.md)

@@ -27,7 +27,7 @@ ms.locfileid: "50921525"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的傳遞驗證
 
-*此測試實驗室指南可用於 enterprise 和 Office 365 企業測試環境的 Microsoft 365。*
+*此測試實驗室指南可用於 enterprise 和 Office 365 企業版測試環境的 Microsoft 365。*
 
 想要直接使用內部部署 Active Directory Domain Services (AD DS) 基礎結構，對 Microsoft 雲端式服務和應用程式進行驗證的組織，可以使用傳遞驗證。 本文說明可以如何針對傳遞驗證設定 Microsoft 365 測試環境，以造成下列組態：
   

@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 Defender 中對高級搜尋查詢結果採取動作
 description: 在您的高級搜尋查詢結果中快速處理威脅與受影響的資產
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、查詢、遙測、採取動作
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、Microsoft 365、m365、搜尋、查詢、遙測、採取動作
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -46,7 +46,7 @@ ms.locfileid: "51952605"
 ## <a name="required-permissions"></a>必要權限
 若要能夠透過「高級搜尋」採取行動，您必須在 Microsoft Defender for Endpoint 中有一個角色，具有 [在裝置上提交修正動作的許可權](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。 如果您無法採取行動，請洽詢全域管理員以取得下列許可權：
 
-*使用中修復的動作 > 威脅和弱點管理-修正處理*
+*> 威脅及弱點管理修正處理的使用中修復動作*
 
 ## <a name="take-various-actions-on-devices"></a>在裝置上執行各種動作
 您可以在查詢結果中對欄所識別的裝置採取下列動作 `DeviceId` ：
@@ -72,7 +72,7 @@ ms.locfileid: "51952605"
 >[!NOTE]
 >若要尋找並隔離檔案，查詢結果也應包含 `DeviceId` 設備識別碼的值。  
 
-## <a name="take-action"></a>採取動作
+## <a name="take-action"></a>採取行動
 若要採取任何說明的動作，請在查詢結果中選取一或多筆記錄，然後選取 [ **採取動作**]。 嚮導會引導您完成選取及提交您偏好動作的程式。
 
 ![具有檢查記錄之面板之選取記錄的影像](../../media/mtp-ah/ah-take-actions.png)
@@ -81,7 +81,7 @@ ms.locfileid: "51952605"
 每個動作會個別記錄在「**動作中心**」的「動作中心」下的「動作 [中心](m365d-action-center.md)」  >   ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) 。 移至 [行動中心]，檢查每個動作的狀態。
  
 >[!NOTE]
->本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
+>本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 使用更多資料來源[開啟 Microsoft 365 Defender](m365d-enable.md)以搜尋威脅。 您可以遵循[從 microsoft defender for endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft defender for endpoint 移至 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

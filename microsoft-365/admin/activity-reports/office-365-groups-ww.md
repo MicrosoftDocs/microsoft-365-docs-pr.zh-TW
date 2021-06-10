@@ -1,5 +1,5 @@
 ---
-title: Admin center 中的 microsoft 365 報告-Microsoft 365 群組
+title: Microsoft 365系統管理中心的報告-Microsoft 365 群組
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -26,25 +26,25 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2021
 ms.locfileid: "51939227"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Admin center 中的 microsoft 365 報告-Microsoft 365 群組
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365系統管理中心的報告-Microsoft 365 群組
 
-Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。 在 [Microsoft 365 群組報告] 中，您可以深入瞭解組織中群組的活動，並查看已建立及使用的群組數目。
+[Microsoft 365 **報告**] 儀表板會顯示您組織中產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。 在 [Microsoft 365 群組] 報告中，您可以深入瞭解組織中群組的活動，並查看已建立及使用的群組數目。
   
 > [!NOTE]
-> 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。  
+> 您必須是全域系統管理員、全域讀取者或報告讀取者 Microsoft 365 或 Exchange、SharePoint、Teams 服務、Teams 通訊或商務用 Skype 管理員查看報告。  
   
 ## <a name="how-to-get-to-the-groups-report"></a>如何取得群組報告
 
 1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。 
-2. 在 [儀表板] 主頁上，按一下 [作用中的使用者-Microsoft 365 應用程式] 或 [作用中使用者]-Microsoft 365 服務卡片上的 [ **View more** ] 按鈕，以取得 Office 365 報告頁面。
+2. 從儀表板主頁上，按一下 [使用中使用者-Microsoft 365 Apps] 或 [作用中使用者]-Microsoft 365 服務卡片上的 [**查看其他**] 按鈕，以取得 [Office 365 報告] 頁面。
   
 ## <a name="interpret-the-groups-report"></a>轉譯群組報告
 
-您可以選擇 [群組] [ **活動** ] 索引標籤，在 Office 365 報告中查看啟用。<br/>![Microsoft 365 報告-Microsoft Office 365 群組活動。](../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png)
+您可以選擇 [群組] [**活動**] 索引標籤，在 Office 365 報告中查看啟動。<br/>![Microsoft 365 報告-Microsoft Office 365 群組活動。](../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png)
 
 選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![Office 365 群組活動報告-選擇欄](../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png)
 
-您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
+您也可以選取 [**匯出**] 連結，將報表資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
 
 |項目|描述|
 |:-----|:-----|
@@ -55,19 +55,19 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |上次活動日期 (UTC)   <br/> |最近一天群組收到郵件的日期。 這是電子郵件交談、Yammer 或網站上發生之活動的上次日期。  <br/> |
 |類型  <br/> |群組的類型。 這可以是私人群組或公開群組。  <br/> |
 |Exchange 中收到的電子郵件  <br/> |群組接收的郵件數目。|
-|Exchange 中的電子郵件 (總計)   <br/> |群組信箱中的總專案數。  <br/> |
-|Exchange (MB) 所用的信箱儲存空間  <br/> |群組信箱所使用的儲存空間。 <br/>|
+|Exchange (總額) 中的電子郵件  <br/> |群組信箱中的總專案數。  <br/> |
+|用於 Exchange (MB 的信箱儲存體)   <br/> |群組信箱所使用的儲存空間。 <br/>|
 |SharePoint 檔案 (總計)   <br/> |儲存在 SharePoint 群組網站中的檔案數目。  <br/> |
 | (使用中) 的 SharePoint 檔案  <br/> |在報告期間內 (查看或修改、同步處理、內部或外部共用) 的 SharePoint 群組網站中的檔案數目。  <br/> |
 |用於 SharePoint (MB 的網站總儲存量)   <br/> |報告期間使用的儲存空間（MB）。  <br/> |
-|Yammer 中的郵件 (發表)   <br/> |在報告期間內，在 Yammer 群組中張貼的郵件數目。  <br/> |
-|Yammer 中的郵件 (讀取)   <br/> |在報告期間，Yammer 群組中讀取的交談數目。  <br/> |
-|Yammer 中的郵件 (贊)   <br/> |在報告期間，Yammer 群組中所贊的郵件數目。  <br/> |
+| (投遞的 Yammer 中的郵件)   <br/> |在報告期間內，在 Yammer 群組中張貼的郵件數目。  <br/> |
+|Yammer (讀取) 中的郵件  <br/> |在報告期間內，在 Yammer 群組中讀取的交談數目。  <br/> |
+|Yammer (贊的郵件)   <br/> |報告期間的 Yammer 群組中贊的郵件數目。  <br/> |
 |成員  <br/> |群組中的成員數目。  <br/> |
 |外部成員 |群組中的外部使用者數目。|
 |||
 
 ## <a name="related-content"></a>相關內容
 
-在系統[管理中心的 microsoft 365 報告](activity-reports.md)中 (篇文章) [《安全性 & 合規性中心」中的報告](../../compliance/reports-in-security-and-compliance.md) (文章) 系統[管理中心的 microsoft 365 報告-作用中的使用者](../../admin/activity-reports/active-users-ww.md) (文章) 
+在系統[管理中心中 Microsoft 365 報告](activity-reports.md) (篇文章) [安全性 & 規範中心內](../../compliance/reports-in-security-and-compliance.md)的報告 () 系統[管理員中心內的報告-](../../admin/activity-reports/active-users-ww.md)作用中的使用者 Microsoft 365 文章 (
 

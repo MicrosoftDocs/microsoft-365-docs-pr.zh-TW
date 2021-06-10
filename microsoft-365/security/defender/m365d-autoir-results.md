@@ -35,17 +35,17 @@ ms.locfileid: "52274673"
 **適用於：**
 - Microsoft 365 Defender
 
-使用 Microsoft 365 Defender 時，當 [自動調查](m365d-autoir.md) 執行時，就會在自動調查程式期間和之後使用該調查的詳細資料。 如果您擁有[必要權限](m365d-action-center.md#required-permissions-for-action-center-tasks)，您可以在調查詳細資料檢視中查看這些詳細資料。 此 view 提供您的最新狀態，以及核准任何擱置中動作的功能。 
+使用 Microsoft 365 Defender 時，當[自動調查](m365d-autoir.md)執行時，系統會在自動調查程式期間和之後使用該調查的詳細資料。 如果您擁有[必要權限](m365d-action-center.md#required-permissions-for-action-center-tasks)，您可以在調查詳細資料檢視中查看這些詳細資料。 此 view 提供您的最新狀態，以及核准任何擱置中動作的功能。 
 
 ![調查詳細資料](../../media/mtp-air-investdetails.png)
 
 ## <a name="new-unified-investigation-page"></a> (NEW！ ) 整合調查頁面
 
-調查頁面最近已經過更新，可納入整個裝置、電子郵件及共同作業內容的資訊。 新的整合調查頁面會定義一種通用語言，並提供跨 [Microsoft defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 和 [Microsoft defender for Office 365](../office-365-security/defender-for-office-365.md)進行自動調查的整合體驗。 若要存取「統一調查」頁面，請選取您將在黃色橫幅中看到的連結：
+調查頁面最近已經過更新，可納入整個裝置、電子郵件及共同作業內容的資訊。 新的整合調查頁面會定義一種通用語言，並提供在[Microsoft defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)和[microsoft defender for Office 365](../office-365-security/defender-for-office-365.md)中自動調查的整合體驗。 若要存取「統一調查」頁面，請選取您將在黃色橫幅中看到的連結：
 
 - Office 365 安全性 & 規範中心 (中的任何調查頁面 [https://protection.office.com](https://protection.office.com)) 
-- Microsoft Defender Security Center 中的任何調查頁面 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 
-- Microsoft 365 security center 中的任何事件或動作中心體驗 ([https://security.microsoft.com](https://security.microsoft.com)) 
+- Microsoft Defender 資訊安全中心 (中的任何調查頁面 [https://securitycenter.windows.com](https://securitycenter.windows.com)) 
+- Microsoft 365 security center (中的任何事件或行動中心體驗 [https://security.microsoft.com](https://security.microsoft.com)) 
 
 ## <a name="open-the-investigation-details-view"></a>開啟調查詳細資料檢視
 
@@ -100,12 +100,12 @@ ms.locfileid: "52274673"
 在調查詳細資料檢視中，您可以在 [調查圖表]、[警示]、[裝置]、[身分識別]、[重要結果]、[實體]、**[記錄]**，以及 [待核准的動作] 索引標籤上查看資訊，如下表所述。
 
 > [!NOTE]
-> 您在 [調查詳細資料] 頁面看到的特定索引標籤取決於您的訂閱所包含的專案。 例如，如果您的訂閱不包含 Microsoft Defender for Office 365 方案2，您就不會看到 [ **信箱** ] 索引標籤。
+> 您在 [調查詳細資料] 頁面看到的特定索引標籤取決於您的訂閱所包含的專案。 例如，如果您的訂閱不包含適用于 Office 365 方案2的 Microsoft Defender，您就不會看到 [**信箱**] 索引標籤。
 
 | 索引標籤 | 描述 |
 |:--------|:--------|
 | **調查圖表**   | 提供調查的視覺呈現。 描述實體並列出發現的威脅和警示，以及是否有任何待核准的動作。<br/>您可以在圖形上選取一個專案，以查看詳細資料。 例如，選取 **證據** 圖示會帶您前往 [ **證據** ] 索引標籤，您可以在其中看到偵測到的實體及其 verdicts。 |
-| **提醒**    | 列出與調查相關聯的警示。 提醒可能來自使用者裝置上的威脅防護功能、Office 應用程式、Microsoft Cloud App Security 及其他 Microsoft 365 Defender 功能。|
+| **提醒**    | 列出與調查相關聯的警示。 警示可能來自使用者裝置上的威脅防護功能、Office 應用程式、Microsoft Cloud App Security 及其他 Microsoft 365 Defender 功能。|
 | **裝置** | 列出調查中包含的裝置及其修正層級。  (修正層級會對應至 [裝置群組的自動化層級](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)。 )  |
 | **信箱** |列出受偵測到之威脅影響的信箱。  |
 | **Users**  | 列出受偵測到之威脅影響的使用者帳戶。 |

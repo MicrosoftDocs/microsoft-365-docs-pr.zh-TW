@@ -184,7 +184,7 @@ ms.locfileid: "52636203"
 
    ![顯示 [將模型套用至程式庫] 選項的 [協定] 頁面的螢幕擷取畫面。](../media/content-understanding/key-actions-apply-model.png)
 
-2. 在 [**新增合約**] 面板上，選取包含您要套用模型之文件庫的 SharePoint 網站。 如果網站沒有顯示在清單中，請使用搜尋方塊尋找。 選取 **[新增]**。
+2. 在 [**新增合約**] 面板上，選取包含您要套用模型之文件庫的 SharePoint 網站。 如果網站沒有顯示在清單中，請使用搜尋方塊尋找。 選取 ****[新增]。
 
     > [!NOTE]
     > 您必須要有您將套用模型的文件庫的 *管理清單* 權限或 *編輯* 權限。
@@ -201,6 +201,6 @@ ms.locfileid: "52636203"
 
 將模型套用至文件庫之後，您可以開始將檔上傳至網站並查看結果。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [步驟2。使用 Microsoft Teams 建立您的合約管理通道](solution-manage-contracts-step2.md)

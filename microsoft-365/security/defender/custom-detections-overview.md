@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender 中的自訂偵測概述
+title: Microsoft 365 Defender 中的自訂偵測綜述
 description: 瞭解您可以如何使用高級搜尋來建立自訂偵測並產生警示
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、查詢、遙測、自訂偵測、架構、kusto
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、Microsoft 365、m365、搜尋、查詢、遙測、自訂偵測、架構、kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

@@ -52,9 +52,9 @@ ms.locfileid: "50919529"
 
 - 您必須是組織中的全域系統管理員，才可執行本主題中的步驟。 
 
-- 當您建立新的使用者帳戶並指派 Exchange Online 授權給使用者時，系統會自動為使用者建立信箱。 建立信箱時，會自動將其指派為預設保留原則，名稱為 [預設 MRM 原則]。 在本文中，您將建立新的保留原則，然後將其指派給使用者信箱，取代預設的 MRM 原則。 一個信箱一次只能有一個指派給它的保留原則。
+- 當您建立新的使用者帳戶，並將 Exchange Online 授權指派給使用者時，會自動為使用者建立信箱。 建立信箱時，會自動將其指派為預設保留原則，名稱為 [預設 MRM 原則]。 在本文中，您將建立新的保留原則，然後將其指派給使用者信箱，取代預設的 MRM 原則。 一個信箱一次只能有一個指派給它的保留原則。
 
-- 若要深入瞭解 Exchange Online 中的保留標記和保留原則，請參閱 [保留標記和保留原則](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)。
+- 若要深入瞭解 Exchange Online 中的保留標記和保留原則，請參閱[保留標記和保留原則](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)。
 
 ## <a name="step-1-enable-archive-mailboxes-for-users"></a>步驟1：啟用使用者的封存信箱
 
@@ -98,7 +98,7 @@ ms.locfileid: "50919529"
 
 - 高山房屋刪除的郵件5年刪除並允許復原 (自訂標籤的 [刪除的郵件] 資料夾) 
 
-若要建立新的保留標記，您可以使用 exchange Online 組織中的 Exchange 系統管理中心 (EAC) 。 請務必使用 EAC 的傳統型版本。
+若要建立新的保留標記，您可以使用 Exchange Online 組織中 (EAC) 的 Exchange 系統管理中心。 請務必使用 EAC 的傳統型版本。
   
 1. 移至 [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) 並使用您的認證登入。
   
@@ -114,7 +114,7 @@ ms.locfileid: "50919529"
 
 2. 在 [ **自動套用至整個信箱的新標記] (預設)** ] 頁面上，完成下欄欄位： 
 
-    ![建立新封存預設原則標記的設定](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![設定建立新的封存預設原則標記](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
    1. **名稱** 輸入新保留標記的名稱。 
 
@@ -136,7 +136,7 @@ ms.locfileid: "50919529"
 
 2. 在 [ **自動套用至整個信箱的新標記] (預設)** ] 頁面上，完成下欄欄位： 
 
-    ![建立新的刪除預設原則標記的設定](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+    ![設定以建立新的刪除預設原則標記](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
   
    1. **名稱** 輸入新保留標記的名稱。 
 
@@ -158,7 +158,7 @@ ms.locfileid: "50919529"
 
 2. 在 [ **自動套用至預設資料夾** ] 頁面上的 [新增標記] 中，完成下欄欄位：
 
-    ![為 [刪除的郵件] 資料夾建立新的保留原則標記的設定](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![設定為 [刪除的郵件] 資料夾建立新的保留原則標記](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
    1. **名稱** 輸入新保留標記的名稱。 
 
@@ -231,7 +231,7 @@ ms.locfileid: "50919529"
 
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a> (選用) 步驟5：執行受管理的資料夾助理以套用新的設定
 
-在步驟4中對信箱套用新的保留原則之後，最多可能需要7天的 Exchange Online 才能將新的保留設定套用至信箱。 這是因為稱為「 *受管理的資料夾助理* 」的處理常式至少每隔7天處理一次信箱。 您可以在 Exchange Online PowerShell 中執行 **Start-ManagedFolderAssistant** Cmdlet，強制執行此動作，而不是等待受管理的資料夾助理執行。
+在步驟4中對信箱套用新的保留原則之後，最多可能需要7天的 Exchange Online，才能將新的保留設定套用至信箱。 這是因為稱為「 *受管理的資料夾助理* 」的處理常式至少每隔7天處理一次信箱。 您可以在 Exchange Online PowerShell 中執行 **Start-ManagedFolderAssistant** Cmdlet，強制執行此動作，而不是等待受管理的資料夾助理執行。
 
  **當您執行受管理的資料夾助理時會發生什麼情況？** 它會檢查信箱中的專案，並決定是否服從保留原則，以套用保留原則中的設定。 然後使用適當的保留標記來標記要保留的專案，然後對超過保留天數的專案採取指定的保留動作。
   
@@ -294,6 +294,6 @@ ms.locfileid: "50919529"
     |永不刪除  <br/> |此標記可防止保留原則刪除專案。  <br/> |內建  <br/> |自己使用者可以套用此標記。  <br/> |
     |個人 1 年移至封存  <br/> |在1年後將專案移至封存信箱。  <br/> |內建  <br/> |自己使用者可以套用此標記。  <br/> |
 
-    > <sup>\*</sup> 使用者可以使用 Outlook 和 Outlook (網頁版中的 [復原刪除的專案] 工具（先前稱為 Outlook Web App）) 在刪除的專案保留期間內復原已刪除的專案，在 Exchange Online 中，預設為14天。 系統管理員可以使用 Windows PowerShell 將刪除的專案保留期間增加至最長30天。 如需詳細資訊，請參閱： [復原 Windows Outlook 中已刪除的郵件](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) ，以及 [變更 Exchange Online 中信箱的已刪除專案保留期間](https://www.microsoft.com/?ref=go)
+    > <sup>\*</sup>使用者可以使用「復原刪除的郵件」工具 Outlook 和 (Outlook （以前稱為 Outlook Web App) ）在已刪除專案的保留期間內復原已刪除的專案，這在 Exchange Online 中預設為14天。 系統管理員可以使用 Windows PowerShell 將刪除的專案保留期間增加至最長30天。 如需詳細資訊，請參閱：[在 Outlook 中復原已刪除的專案 Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)並[變更 Exchange Online 中信箱的已刪除專案保留期間。](https://www.microsoft.com/?ref=go)
   
 - 使用 **可復原的專案14天移至** 封存保留標記有助於在使用者主要信箱的 [可復原的專案] 資料夾中釋放儲存空間。 當使用者的信箱處於保留狀態時，這是很有用的，這表示永遠不會永久刪除使用者的信箱。 在不將專案移至封存信箱時，可能會到達主要信箱中 [可復原的專案] 資料夾的儲存配額。 如需這項功能及其避免方式的詳細資訊，請參閱 [增加保留信箱的可復原專案配額](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)。

@@ -28,11 +28,11 @@ ms.locfileid: "50921627"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>針對 SharePoint 工具使用頁面診斷程式
 
-本文說明如何使用 **SharePoint 工具的頁面診斷** ，對照一組預先定義的效能準則來 SharePoint 分析線上現代化和傳統的網站頁面。
+本文說明如何使用 **SharePoint 工具的頁面診斷**，對照一組預先定義的效能準則來 SharePoint 分析線上現代化和傳統的網站頁面。
 
 您可以為下列專案安裝 SharePoint 工具的頁面診斷程式：
 
-- **Microsoft edge** [ (edge 延伸)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **Microsoft Edge** [ (Edge 延伸)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
 - **Chrome** [ (chrome 副檔名)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
@@ -40,7 +40,7 @@ ms.locfileid: "50921627"
 
 適用於 SharePoint 的頁面診斷工具是全新 Microsoft Edge (https://www.microsoft.com/edge) 和 Chrome 瀏覽器的擴充功能，可以用來分析 SharePoint Online 新式入口網站與傳統發佈網站頁面。 此工具僅適用于線上 SharePoint，無法在 SharePoint 系統] 頁面上使用。
 
-工具會針對每個已分析的頁面產生報表，顯示頁面如何針對預先定義的規則集執行，並在測試結果超出基線值時顯示詳細資訊。 SharePoint Online 管理員和設計者可以使用工具來疑難排解效能問題，並確保新頁面在發佈之前已經過優化。
+工具會針對每個已分析的頁面產生報表，顯示頁面如何針對預先定義的規則集執行，並在測試結果超出基線值時顯示詳細資訊。 SharePoint線上管理員和設計者可以使用工具來疑難排解效能問題，並確保新頁面在發佈之前已經過優化。
 
 頁面診斷工具專門設計用來分析 SharePoint 網站頁面，而不是 allitems 的系統頁面（如： *.aspx* 或 *SharePoint .aspx*）。 如果您嘗試在系統頁面或任何其他非網站頁面上執行該工具，您將會收到錯誤訊息，建議您無法針對該類型的頁面執行該工具。
 
@@ -61,7 +61,7 @@ ms.locfileid: "50921627"
 > [!IMPORTANT]
 > Microsoft 不會讀取由「SharePoint 工具」頁面診斷進行分析的資料或頁面內容，也不會捕獲任何個人資訊、網站或下載資訊。 由工具記錄的唯一可識別資訊是租使用者名稱、失敗的規則計數，以及執行該工具的日期和時間。 Microsoft 使用此資訊來更深入瞭解新式入口網站，併發布網站使用量趨勢和常見效能問題。
 
-1. 針對適用于 **Microsoft Edge** [ (Edge 擴充](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) 的 SharePoint 工具安裝頁面診斷，) 或 **chrome** [ (chrome 副檔名)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)。 請查看存放區中「描述」頁面上提供的使用者隱私權原則。 在您的瀏覽器中新增工具時，您會看到下列許可權通知。
+1. 針對 **Microsoft Edge** [ (Edge 分機)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)或 **chrome** [ (chrome extension)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)，安裝 SharePoint 工具的頁面診斷。 請查看存放區中「描述」頁面上提供的使用者隱私權原則。 在您的瀏覽器中新增工具時，您會看到下列許可權通知。
 
     > [!div class="mx-imgBorder"]
     > ![副檔名許可權](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
@@ -70,7 +70,7 @@ ms.locfileid: "50921627"
 
     「 _管理您的下載_ 」許可權涵蓋如何使用此工具的 **匯出至 JSON** 功能。 請遵照貴公司專屬的隱私權指導方針，在組織外共用 JSON 檔案，因為結果包含 URLs，而且可以分類為 PII (個人身分識別資訊) 。
 1. 如果您想要在 Incognito 或 InPrivate 模式中使用工具，請遵循瀏覽器的程式：
-    1. 在 Microsoft Edge 中，流覽至 [ **副檔名** ] 或在 URL 欄中輸入 _edge://extensions_ ，然後選取分機的 **詳細資料** 。 在 [副檔名] 設定中，選取 [ **允許在 InPrivate**] 的核取方塊。
+    1. 在 Microsoft Edge 中，流覽至 [**副檔名**] 或在 URL 欄中輸入 _edge://extensions_ ，然後選取分機的 **詳細資料**。 在 [副檔名] 設定中，選取 [ **允許在 InPrivate**] 的核取方塊。
     1. 在 Chrome 中，流覽至 [ **副檔名** ] 或在 URL 欄中輸入 _chrome://extensions_ ，然後選取分機的 **詳細資料** 。 在 [副檔名] 設定中，選取 [ **允許在 Incognito 中** 的滑塊]。
 1. 流覽至您要審閱 SharePoint Online 上的 [SharePoint 網站] 頁面。 我們允許對頁面上的專案進行「延遲載入」;因此，此工具不會自動停止 (這種設計是為了容納) 所有的頁面載入案例。 若要停止收集，請選取 [ **停止**]。 在停止資料收集之前，請確定頁面載入已完成，否則您只會捕獲部分追蹤。
 1. 按一下分機的工具列按鈕 ![SharePoint 標誌的頁面診斷](../media/page-diagnostics-for-spo/pagediag-icon32.png) 若要載入工具，將會出現下列副檔名快顯功能表視窗：
@@ -83,7 +83,7 @@ ms.locfileid: "50921627"
 
 1. 按一下工具右上角的 [省略號 ( ... ) ，以尋找下列連結：
    1. [ **其他資源** ] 連結提供有關工具的一般指導及詳細資訊，包括傳回本文的連結。
-   1. [ **提供意見** 反應] 連結可提供 _SharePoint 網站與共同作業使用者語音_ 網站的連結。
+   1. [**提供意見** 反應] 連結可提供 _SharePoint 網站與共同作業使用者語音_ 網站的連結。
    1. [ **關於** ] 連結包括目前已安裝的工具版本，以及該工具的協力廠商通知的直接連結。  
 1. **相關識別碼、SPRequestDuration、SPIISLatency**、**頁面載入時間** 及 **URL** 詳細資料都是資訊性的，可用於少數用途。
 
@@ -98,7 +98,7 @@ ms.locfileid: "50921627"
 
 1. [ [**診斷測試**](#how-to-use-the-diagnostic-tests-tab) ] 索引標籤會以三個類別顯示分析結果。 **不需要任何動作**、 **改進機遇** 及 **必要的注意事項**。 每個測試結果都是以下列其中一個類別中的專案表示，如下表所述：
 
-    |類別  |色彩  |描述  |
+    |Category  |色彩  |描述  |
     |---------|---------|---------|
     |**需要注意** |紅色 |測試結果會超出比較基準值，而且會影響頁面效能。 遵循修復指導方針。|
     |**改進機會** |黃色 |測試結果會超出基準值，而且可能會影響效能問題。 可能會套用特定測試準則。|
@@ -111,7 +111,7 @@ ms.locfileid: "50921627"
 
 ## <a name="how-to-use-the-diagnostic-tests-tab"></a>如何使用 [診斷測試] 索引標籤
 
-當您使用 SharePoint 工具的頁面診斷來分析 SharePoint 新式入口網站頁面或傳統發佈網站頁面時，會使用預先定義的規則來分析結果，以比較比較基準值及顯示在 [ **診斷測試** ] 索引標籤中的結果。某些測試的規則可能會針對新式入口網站和傳統發佈網站使用不同的比較基準值，具體取決於兩者之間的特定效能特性各有不同。
+當您使用 SharePoint 工具的頁面診斷來分析 SharePoint 新式入口網站頁面或傳統發佈網站頁面時，會使用預先定義的規則來分析結果，以比較比較基準值及顯示在 [**診斷測試**] 索引標籤中的結果。某些測試的規則可能會針對新式入口網站和傳統發佈網站使用不同的比較基準值，具體取決於兩者之間的特定效能特性各有不同。
 
 出現在 [增加 **機會** ] 或 [ **注意事項** ] 類別中的測試結果指出應該針對建議的做法評審的區域，並可供選取以顯示結果的其他資訊。 每個專案的詳細資料包括「 _深入瞭解_ 」連結，它會直接向您傳送與測試相關的適當指導方針。 [ **無必要動作** ] 類別中顯示的測試結果表示符合相關的規則，且選取時不會顯示其他詳細資料。
 
@@ -120,14 +120,14 @@ ms.locfileid: "50921627"
 紅色或黃色結果也可能表示重新整理資料的網頁元件過於頻繁。 例如，公司新聞並非每秒都會更新，但是自訂網頁元件通常是用來每秒提取最新的新聞，而不是執行可改善整體使用者體驗的快取元素。 在頁面上加入網頁元件時，請務必注意，如果是透過評估每個可用參數的值來降低其效能影響，以確保針對其預定用途進行適當設定，請務必注意。
 
 >[!NOTE]
->未啟用發佈功能的傳統小組網站無法使用 Cdn。 當您在這些網站上執行工具時，CDN 測試預期會失敗而且可以忽略，但其餘的測試皆適用。 SharePoint 發佈功能的其他功能可增加頁面載入時間，所以不應該只為允許啟用 CDN 功能。
+>未啟用發佈功能的傳統小組網站無法使用 Cdn。 當您在這些網站上執行工具時，CDN 測試應該會失敗，而且可以忽略，但剩下的所有測試皆適用。 SharePoint 發佈功能的其他功能可增加頁面載入時間，所以只有在允許 CDN 功能時才能啟用此功能。
 
 >[!IMPORTANT]
 >已定期新增及更新測試規則因此，請參閱最新版的工具，以取得目前的規則及測試結果中所含特定資訊的詳細資訊。 您可以透過管理您的分機來驗證版本，而且分機將會告知是否有可用的更新。
 
 ## <a name="how-to-use-the-network-trace-tab-and-how-to-export-a-har-file"></a>如何使用 [網路追蹤] 索引標籤以及如何匯出 HAR 檔案
 
-[ **網路追蹤** ] 索引標籤提供兩個要求的詳細資訊，用以建立頁面及從 SharePoint 收到的回應。
+[**網路追蹤**] 索引標籤提供兩個要求的詳細資訊，用以建立頁面及從 SharePoint 收到的回應。
 
 1. **尋找標記為紅色的專案載入時間**。 每個要求和回應都是以色彩編碼，以指出其對整體頁面效能的影響，使用下列延遲度量值：
     - 綠色： \< 500ms

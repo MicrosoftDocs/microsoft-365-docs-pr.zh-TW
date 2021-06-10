@@ -199,6 +199,6 @@ Down-Level 裝置包含 Windows 7 SP1 和 Windows 8.1 工作站，以及 Windows
 > [!NOTE]
 > 如果您是美國政府客戶，請參閱適用于 US 政府頁面的 [Defender For Endpoint](gov.md#service-backend-ip-ranges) 中的對應章節。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 ![* * 階段3：板載 * *](images/onboard.png) <br>[階段3：板載](onboarding.md)：對服務的板載裝置，使 Microsoft Defender for Endpoint service 可以從這些裝置取得感應器資料。 

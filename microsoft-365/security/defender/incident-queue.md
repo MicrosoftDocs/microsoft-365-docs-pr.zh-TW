@@ -90,7 +90,7 @@ Microsoft 365Defender 會將相互關聯的分析和匯總相關的警報和自�
 - [管理](manage-incidents.md) 事件的屬性，以供標記、指派、立即解決誤報和批註的事件。
 - 開始進行 [調查](investigate-incidents.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [事件概觀](incidents-overview.md)
 - [管理事件](manage-incidents.md)
 - [調查事件](investigate-incidents.md)

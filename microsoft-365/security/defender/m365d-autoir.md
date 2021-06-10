@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fcb7283faed6fe8c5af59cedeeb90577b557ab34
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 976a79be98efcbb5d7fd3749ddb0cdb282b1e3e3
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259532"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274565"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自動化調查和回應
 
@@ -35,7 +35,7 @@ ms.locfileid: "52259532"
 **適用於：**
 - Microsoft 365 Defender
 
-如果您的組織使用[Microsoft 365 Defender](microsoft-365-defender.md)，當偵測到惡意或可疑的活動或專案時，安全性作業小組會在 Microsoft 365 安全中心收到警示。 針對可能來自的威脅，在這種情況下，安全性小組通常會面臨解決大量提醒問題的難題。 幸運的是，Microsoft 365 Defender 包含自動調查和修正 (AIR) 能力，可協助安全性運作小組更有效率地處理威脅。
+如果您的組織使用[Microsoft 365 Defender](microsoft-365-defender.md)，當偵測到惡意或可疑的活動或專案時，安全性作業小組會在 Microsoft 365 安全中心收到警示。 針對可能來自的威脅，在這種情況下，安全性小組通常會面臨解決大量提醒問題的難題。 幸運的是，Microsoft 365 Defender 包含自動調查和回應 (AIR) 能力，可協助安全性運作小組更有效率地處理威脅。
 
 本文提供 AIR 的概述，並包含後續步驟和其他資源的連結。
 
@@ -59,7 +59,7 @@ ms.locfileid: "52259532"
 
 在第1層或第2層安全性作業小組中 Imagine 虛擬分析員。 虛擬分析員會模仿安全性作業要採取哪些理想步驟來調查和補救威脅。 虛擬分析員可以全天候運作，並可在大量進行調查和威脅修復時採取大量的功能。 這類虛擬分析員可大幅減少回應時間，以騰出安全性運作小組的其他重要威脅或戰略性專案。 如果此案例好像是科學 fiction，就不是！ 這類虛擬分析員是 Microsoft 365 Defender 套件的一部分，而且其名稱是 *自動調查和回應*。
 
-自動化調查和回應功能可讓您的安全性運作小組大幅增加組織的容量，以處理安全性警示和事件。 透過自動化調查和回應，您可以減少處理調查和修復活動的成本，並充分利用威脅防護套件。 自動化調查和回應功能可協助您的安全性運作小組：
+自動化調查和回應功能可讓您的安全性運作小組大幅增加組織的容量，以處理安全性警示和事件。 透過自動化調查和回應，您可以減少處理調查和回應活動的成本，並充分利用威脅防護套件。 自動化調查和回應功能可協助您的安全性運作小組：
 
 1. 決定威脅是否需要採取動作。
 2. 採取 (或建議) 任何必要的修復動作。

@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: 瞭解如何使用 SharePoint Online 中所包含的工具，在 SharePoint 線上新式網站頁面中優化圖像。
+description: 瞭解如何使用 SharePoint online 中所包含的工具，在 SharePoint 線上新式網站頁面中優化圖像。
 ms.openlocfilehash: a4f2def86e1378a9fb76ae9ecbe6a55da75ecffc
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

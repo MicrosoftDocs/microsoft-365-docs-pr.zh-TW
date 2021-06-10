@@ -31,7 +31,7 @@ ms.locfileid: "51166194"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
 
 條件式存取是一項功能，可確保只有安全的裝置能夠存取應用程式，以協助您更好地保護使用者和公司資訊。
 
@@ -41,7 +41,7 @@ ms.locfileid: "51166194"
 
 您可以在裝置回到相容狀態時強制執行原則，以阻止應用程式執行並存取網路上的資訊，以定義安全性條件。 
 
-在 Defender for Endpoint 中的條件式存取的實施是以 Microsoft Intune 為基礎， (Intune) 裝置合規性原則和 Azure Active Directory (Azure AD) 條件式存取原則。 
+在 Defender for Endpoint 中的條件式存取的實施是根據 Microsoft Intune (Intune) 裝置相容性原則及 Azure Active Directory (Azure AD) 條件式存取原則。 
 
 相容性原則與條件式存取一起使用，僅允許滿足一或多項裝置合規性原則規則的裝置存取應用程式。 
 

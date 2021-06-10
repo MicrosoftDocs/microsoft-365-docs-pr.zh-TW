@@ -1,6 +1,6 @@
 ---
 title: 設定微焦點 ArcSight 以拉入 Microsoft Defender for Endpoint 偵測
-description: 設定從 Microsoft Defender Security Center 接收及提取偵測的微焦點 ArcSight
+description: 設定從 Microsoft Defender 資訊安全中心接收及提取偵測的微焦點 ArcSight
 keywords: 設定微焦點 ArcSight、安全性資訊和事件管理工具、ArcSight
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -32,7 +32,7 @@ ms.locfileid: "51166182"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
 
 您將需要安裝及設定部分檔案和工具，以使用微型焦點 ArcSight，以便讓其能夠拉入 Defender 以進行端點偵測。
 
@@ -46,7 +46,7 @@ ms.locfileid: "51166182"
 
 本節會引導您取得正確設定及使用必要設定檔的必要資訊。
 
-- 請確認您已從 [ **設定** ] 功能表啟用 SIEM 整合功能。 如需詳細資訊，請參閱 [ENABLE SIEM integration In Defender For Endpoint](enable-siem-integration.md)。
+- 請確認您已從 **設定** 功能表啟用 SIEM 整合功能。 如需詳細資訊，請參閱 [ENABLE SIEM integration In Defender For Endpoint](enable-siem-integration.md)。
 
 - 讓您儲存的檔案啟用 SIEM 整合功能。 您必須取得下列值：
   - OAuth 2.0 Token 重新整理 URL
@@ -57,7 +57,7 @@ ms.locfileid: "51166182"
   - WDATP-連接器。屬性
   - WDATP-connector.jsonparser 屬性
 
-    當您選擇 [微焦點] ArcSight 做為您在組織中使用的 SIEM 類型時，您將會儲存包含這兩個檔案的 .zip 檔案。
+    當您選擇微焦點 ArcSight 做為您在組織中使用的 SIEM 類型時，您就會儲存一個包含這兩個檔案的 .zip 檔案。
 
 - 請確定您產生下列標記並準備好：
   - 存取權杖
@@ -105,7 +105,7 @@ ms.locfileid: "51166182"
     </tr>
     <tr>
     <td>設定檔</td>
-    <td>輸入用戶端屬性檔的名稱。 此名稱必須符合您下載之 .zip 中所提供的檔案。
+    <td>輸入用戶端屬性檔的名稱。 此名稱必須符合您所下載的 .zip 所提供的檔案。
 例如，如果 flexagent 目錄中的配置 &quot; 檔 &quot; 命名為 &quot;WDATP-Connector.jsonparser 屬性 &quot; ，您必須輸入 &quot; WDATP 連接器 &quot; 做為用戶端屬性檔案名的名稱。</td>
     </tr>
     <td>事件 URL</td>
@@ -116,7 +116,7 @@ ms.locfileid: "51166182"
     <td>OAuth 2</td>
     </tr>
     <td>OAuth 2 用戶端屬性檔</td>
-    <td>流覽至 <em>wdatp-connector</em> 的位置。 此名稱必須符合您下載之 .zip 中所提供的檔案。</td>
+    <td>流覽至 <em>wdatp-connector</em> 的位置。 此名稱必須符合您所下載的 .zip 所提供的檔案。</td>
     <tr>
     <td>重新整理權杖</td>
     <td>您可以透過兩種方式取得重新整理權杖：透過從 [ <b>SIEM 設定</b> ] 頁面產生重新整理權杖，或使用 restutil 工具來取得更新。 <br><br> 如需從 <b>偏好設定</b> 中產生重新整理權杖的詳細資訊，請參閱 <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">Enable SIEM integration In Defender for Endpoint</a>。 </br> </br><b>使用 restutil 工具取得您的重新整理權杖：</b> </br> a. 開啟命令提示字元。 流覽至 C：\<em>folder_location</em>\current\bin，其中 <em>folder_location</em> 代表您安裝工具的位置。 </br></br> b. 類型： <code>arcsight restutil token -config</code> 從 bin 目錄。例如： <b>arcsight restutil boxtoken-proxy proxy.location.hp.com:8080</b> 隨即會開啟網頁瀏覽器視窗。 </br> </br>c. 輸入您的認證，然後按一下 [密碼] 欄位，讓頁面重新導向。 在 [登入] 提示中，輸入您的認證。 </br> </br>d. 重新整理權杖會顯示在命令提示字元中。 </br></br> e. 複製並貼到 [重新整理 <b>權杖</b> ] 欄位。
@@ -177,11 +177,11 @@ ms.locfileid: "51166182"
 
 9. 流覽至 [**現用通道集**]  >  **新的條件**  >  **裝置**  >  **裝置產品**。
 
-10. 設定 **裝置產品 = Microsoft DEFENDER ATP**。 當您驗證事件已流過工具時，請停止此程式，然後移至 [Windows 服務]，然後啟動 ArcSight FlexConnector REST。
+10. 設定 **裝置產品 = Microsoft Defender ATP**。 當您驗證事件已流過工具時，請停止此程式，然後移至 Windows 服務]，然後啟動 ArcSight FlexConnector REST。
 
 您現在可以在 [微焦點 ArcSight] 主控台中執行查詢。
 
-Endpoint 偵測的 Defender 會顯示為獨立的事件，並使用 "Microsoft" 作為廠商，並使用 "Windows Defender ATP" 作為裝置名稱。
+Endpoint 偵測的 Defender 會顯示為獨立的事件，並使用 "Microsoft" 作為廠商，而 "Windows Defender ATP" 為裝置名稱。
 
 
 ## <a name="troubleshooting-micro-focus-arcsight-connection"></a>疑難排解微型聚焦 ArcSight connection
@@ -209,4 +209,4 @@ Endpoint 偵測的 Defender 會顯示為獨立的事件，並使用 "Microsoft" 
 - [在 Defender for Endpoint 中啟用 SIEM 整合](enable-siem-integration.md)
 - [向 SIEM 工具提取偵測](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)
 - [使用 REST API 的端點偵測的拉取 Defender](pull-alerts-using-rest-api.md)
-- [疑難排解 SIEM 工具整合問題](troubleshoot-siem.md)
+- [為 SIEM 工具整合問題疑難排解](troubleshoot-siem.md)

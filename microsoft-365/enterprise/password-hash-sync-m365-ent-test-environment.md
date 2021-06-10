@@ -28,11 +28,11 @@ ms.locfileid: "50921501"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>適用於 Office 365 測試環境的密碼雜湊同步處理
 
-*此測試實驗室指南可用於 enterprise 和 Office 365 企業測試環境的 Microsoft 365。*
+*此測試實驗室指南可用於 enterprise 和 Office 365 企業版測試環境的 Microsoft 365。*
 
 許多組織使用 Azure AD Connect 和密碼雜湊同步處理，將其內部部署 Active Directory Domain Services (AD DS) 樹系中的帳戶集同步處理至 Microsoft 365 訂閱的 Azure AD 租用戶帳戶集。 
 
-本文說明如何將密碼雜湊同步處理新增至 Microsoft 365 測試環境，這會產生下列設定：
+本文說明如何在 Microsoft 365 測試環境中新增密碼雜湊同步處理，這會產生下列設定：
   
 ![使用密碼雜湊同步處理測試環境的模擬企業](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -42,11 +42,11 @@ ms.locfileid: "50921501"
 - [階段 3：在 APP1 上安裝 Azure AD Connect](#phase-3-install-azure-ad-connect-on-app1)
     
 > [!TIP]
-> 如需 Microsoft 365 for enterprise 測試實驗室指南堆疊中所有文章的視覺對應，請移至 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 如需適用于企業測試實驗室指南堆疊的 Microsoft 365 中的所有文章的視覺對應，請移至[Microsoft 365 for enterprise test lab guide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>階段 1：建立 Microsoft 365 模擬企業測試環境
 
-遵循 [Microsoft 365 的模擬企業基本](simulated-ent-base-configuration-microsoft-365-enterprise.md)設定中的指示。 您產生的設定如下所示：
+依照[模擬企業基本設定的 Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md)中的指示進行。 您產生的設定如下所示：
   
 ![模擬企業基本設定](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
@@ -61,7 +61,7 @@ ms.locfileid: "50921501"
 
 首先，請與您的公用 DNS 註冊提供者合作，以根據您目前的功能變數名稱建立新的公用 DNS 功能變數名稱，然後將其新增至您的訂閱。 建議使用 name **testlab <*您的公用網域* >**。 例如，如果您的公用功能變數名稱是 **<span>contoso</span>.com**，請新增 public domain name： **<span>testlab</span>. contoso.com**。
   
-接下來，透過網域註冊程式，將 **<testlab *公用網域* >** 網域新增至您的 Microsoft 365 試用版或付費訂閱。 這包含在 testlab 中新增額外的 DNS 記錄 **。 <*您的公用網域* >** 網域。 如需詳細資訊，請參閱 [Add a domain To Microsoft 365](../admin/setup/add-domain.md)。
+接下來，透過網域註冊程式，將 **<testlab *您的公用網域* >** 網域新增至 Microsoft 365 試用或付費訂閱。 這包含在 testlab 中新增額外的 DNS 記錄 **。 <*您的公用網域* >** 網域。 如需詳細資訊，請參閱[Add a domain to Microsoft 365](../admin/setup/add-domain.md)。
 
 您產生的設定如下所示：
   
@@ -69,7 +69,7 @@ ms.locfileid: "50921501"
   
 此組態包含：
 
-- 使用 DNS 網域 testlab 的 Microsoft 365 E5 試用版或付費訂閱。 <*您的公用功能變數名稱*> 註冊。
+- 使用 DNS 網域 testlab Microsoft 365 E5 試用版或付費訂閱。 <*您的公用功能變數名稱*> 已註冊。
 - 簡化的組織內部網路連接至網際網路，由 Azure 虛擬網路子網上的 DC1、APP1 和 CLIENT1 虛擬機器所組成。
 
 請注意，testlab <*您的公用功能變數名稱*> 現在如下：
@@ -80,9 +80,9 @@ ms.locfileid: "50921501"
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>階段 3：在 APP1 上安裝 Azure AD Connect
 
-在此階段中，請在 APP1 上安裝及設定 Azure AD Connect 工具，然後驗證它是否運作正常。
+在這個階段中，請在 APP1 上安裝及設定 Azure AD 連線工具，然後驗證它是否運作正常。
   
-首先，在 APP1 上安裝及設定 Azure AD Connect。
+首先，在 APP1 上安裝及設定 Azure AD 連線。
 
 1. 從 [Azure 入口網站](https://portal.azure.com)，以您的全域管理員帳戶登入，然後以 TESTLAB\\User1 帳戶連線到 APP1。
     
@@ -96,15 +96,15 @@ ms.locfileid: "50921501"
 
 3. 從工作列中，選取 [ **Internet Explorer** ]，然後移至 [https://aka.ms/aadconnect](https://aka.ms/aadconnect) 。
     
-4. 在 [Microsoft Azure Active Directory 連線] 頁面上，選取 [ **下載**]，然後選取 [ **執行**]。
+4. 在 [Microsoft Azure Active Directory 連線] 頁面上，選取 [**下載**]，然後選取 [**執行**]。
     
-5. 在 [ **歡迎使用 AZURE AD Connect]** 頁面上，選取 [ **我同意**]，然後選取 [ **繼續**]。
+5. 在 [**歡迎使用 Azure AD 連線**] 頁面上，選取 [**我同意**]，然後選取 [**繼續**]。
     
-6. 在 [ **快速設定** ] 頁面上，選取 [ **使用快速設定**]。
+6. 在 [ **Express 設定**] 頁面上，選取 [**使用快速設定**]。
     
-7. 在 [連線 **到 AZURE AD]** 頁面上，在 [使用者名稱] 中輸入全域管理員帳戶名稱 **，** 在 [ **密碼**] 中輸入其密碼，然後選取 **[下一步]**。
+7. 在 [**連線至 Azure AD** ] 頁面上，在 [使用者名稱] 中輸入全域管理員帳戶名稱 **，** 在 [**密碼**] 中輸入其密碼，然後選取 **[下一步]**。
     
-8. 在 [連線 **到 AD DS]** 頁面上，輸入 [ **TESTLAB \\ User1** In **Username]，** 在 [ **密碼**] 中輸入密碼，然後選取 **[下一步]**。
+8. 在 [**連線到 AD DS** ] 頁面上，輸入 [ **TESTLAB \\ User1** in **Username]，** 在 [**密碼**] 中輸入密碼，然後選取 **[下一步]**。
     
 9. 在 [ **準備設定** ] 頁面上，選取 [ **安裝**]。
     
@@ -118,7 +118,7 @@ ms.locfileid: "50921501"
     
 13. 選取 **User1** 帳戶，然後選取 [ **授權和應用程式**]。
     
-14. 在 [ **產品授權**] 中，選取您的位置 (必要時) 、停用 **Office 365 e5** 授權，然後啟用 **Microsoft 365 E5** 授權。 
+14. 在 [**產品授權**] 中，選取您的位置 (必要時) 、停用 **Office 365 E5** 授權，然後啟用 **Microsoft 365 E5** 授權。 
 
 15. 選取頁面底部的 [ **儲存** ]，然後選取 [ **關閉**]。
     
@@ -136,8 +136,8 @@ ms.locfileid: "50921501"
 
 此組態包含： 
   
-- 使用 DNS 網域 TESTLAB 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。 <*您的功能變數名稱*> 註冊。
-- 簡化的組織內部網路連接至網際網路，由 Azure 虛擬網路子網上的 DC1、APP1 和 CLIENT1 虛擬機器所組成。 Azure AD Connect 會在 APP1 上執行，定期將 TESTLAB AD DS 網域同步處理至您的 Microsoft 365 訂閱的 Azure AD 租使用者。
+- 使用 DNS 網域 TESTLAB Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。 <*您的功能變數名稱*> 已註冊。
+- 簡化的組織內部網路連接至網際網路，由 Azure 虛擬網路子網上的 DC1、APP1 和 CLIENT1 虛擬機器所組成。 Azure ad 連線會在 APP1 上執行，定期將 TESTLAB AD DS 網域同步處理至 Microsoft 365 訂閱的 Azure AD 租使用者。
 - TESTLAB AD DS 網域中的 User1 帳戶已經與 Azure AD 租用戶同步處理。
 
 ## <a name="next-step"></a>下一步

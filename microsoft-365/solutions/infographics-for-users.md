@@ -1,6 +1,6 @@
 ---
-title: 適用于使用者的 Microsoft 365 infographics
-description: 這些 Microsoft 365 infographics 可協助您組織中的使用者瞭解在 Microsoft 365 中運作的最佳作法。
+title: Microsoft 365 使用者 infographics
+description: 這些 Microsoft 365 infographics 可協助組織中的使用者瞭解在 Microsoft 365 中運作的最佳作法。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -19,11 +19,11 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/22/2021
 ms.locfileid: "51939780"
 ---
-# <a name="microsoft-365-infographics-for-your-users"></a>適用于使用者的 Microsoft 365 infographics
+# <a name="microsoft-365-infographics-for-your-users"></a>為使用者 Microsoft 365 infographics
 
-這些 infographics 代表在 Microsoft 365 中工作和協同作業的最佳作法。 與您的使用者分享，以協助確保他們能夠充分運用檔案的安全儲存和共用，以及存放共同作業和共用。
+這些 infographics 代表在 Microsoft 365 中運作及合作的最佳作法。 與您的使用者分享，以協助確保他們能夠充分運用檔案的安全儲存和共用，以及存放共同作業和共用。
 
-在[Microsoft 365 訓練](https://support.microsoft.com/training)網站上尋找更多[可下載的 Office infographics](https://support.microsoft.com/office/great-ways-to-work-with-office-6fe70269-b9a4-4ef0-a96e-7a5858b3bd5a) 。
+在[Microsoft 365 訓練](https://support.microsoft.com/training)網站上尋找更[infographics 的可下載 Office](https://support.microsoft.com/office/great-ways-to-work-with-office-6fe70269-b9a4-4ef0-a96e-7a5858b3bd5a) 。
 
 <a name="securitytips"></a>
 ## <a name="security-tips"></a>安全性秘訣
@@ -46,11 +46,11 @@ ms.locfileid: "51939780"
 <a name="onlinemeeting"></a>
 ## <a name="host-online-meetings"></a>主控線上會議
 
-下載資訊圖表，以快速瞭解如何使用 Microsoft 小組加入或主控線上會議：
+下載資訊圖表，以快速瞭解如何使用 Microsoft Teams 加入或主控線上會議：
 
 | 項目 | 描述 |
 |:-----|:-----|
-|[![主機線上會議資訊圖表的縮圖影像](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [以 PDF 格式下載](https://go.microsoft.com/fwlink/?linkid=2078712)  \ [下載成 PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | 快速瞭解如何使用 Microsoft 小組主持或加入線上會議。 相關文章： [針對您的商務版主控線上會議](../business-video/overview-online-meetings.md)|
+|[![主機線上會議資訊圖表的縮圖影像](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [以 PDF 格式下載](https://go.microsoft.com/fwlink/?linkid=2078712)  \ [下載成 PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | 快速瞭解如何使用 Microsoft Teams 主控或加入線上會議。 相關文章： [針對您的商務版主控線上會議](../business-video/overview-online-meetings.md)|
 
 <a name="workfromanywhere"></a>
 ## <a name="work-from-anywhere"></a>隨時隨地都能工作

@@ -24,7 +24,7 @@ ms.locfileid: "50919809"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的內幕人士風險管理
 
-「內部使用者風險管理」是 Microsoft 365 中的規範解決方案，可讓您偵測、調查和動作組織中的惡意和無意活動，以協助將內部風險降至最低。 內部使用者風險原則可讓您定義在組織中識別及偵測的風險類型，包括在案例中採取行動，以及在必要時將案例升級至 Microsoft 高級 eDiscovery。 組織中的風險分析師可以迅速採取適當的動作，以確保使用者符合組織的合規性標準。
+「內部使用者風險管理」是 Microsoft 365 中的規範解決方案，可讓您偵測、調查和動作組織中的惡意和意外活動，以協助將內部風險降至最低。 內部人員風險原則可讓您定義在組織中識別及偵測的風險類型，包括在案例中採取行動，以及在必要時將案例升級至 Microsoft Advanced eDiscovery。 組織中的風險分析師可以迅速採取適當的動作，以確保使用者符合組織的合規性標準。
 
 觀看下列影片，瞭解內幕人士風險管理如何協助您的組織避免、偵測和包含風險，同時排定組織值、文化和使用者經驗的優先順序：
 <br>
@@ -44,7 +44,7 @@ ms.locfileid: "50919809"
 
 現代工作場所的使用者可以存取跨多種平臺和服務的資料，以建立、管理及共用資料。 在大多數情況下，組織的資源和工具有限，可找出並減輕整個組織的風險，同時也可滿足使用者的隱私權標準。
 
-「內部使用者風險管理」使用全面的服務和協力廠商指示，協助您快速識別、會審及行動風險活動。 透過使用 Microsoft 365 和 Microsoft Graph 的記錄，「有問必答風險管理」可讓您定義特定原則，以識別風險指示器。 這些原則可讓您識別危險的活動，並採取措施緩解這些風險。
+「內部使用者風險管理」使用全面的服務和協力廠商指示，協助您快速識別、會審及行動風險活動。 透過使用 Microsoft 365 和 Microsoft Graph 中的記錄，「內部使用者風險管理」可讓您定義特定原則，以識別風險指示器。 這些原則可讓您識別危險的活動，並採取措施緩解這些風險。
 
 測試人員風險管理聚焦於以下原則：
 
@@ -55,13 +55,13 @@ ms.locfileid: "50919809"
 
 ## <a name="identifying-potential-risks-with-analytics-preview"></a>流量分析 (預覽識別潛在風險) 
 
-「內部使用者風險分析」可讓您在組織中評估潛在的內幕風險，而不需設定任何內部擁有者風險原則。 這項評估可協助您的組織識別潛在的使用者風險的潛在方面，並協助決定您可以考慮設定的有問必答風險管理原則類型和範圍。 這項評估還可以協助您判斷現有的有問必答風險原則的其他授權或未來優化的需求。
+內部風險分析可讓您對組織中潛在的內部風險進行評估，而不需要設定任何內部風險原則。 此評估可協助貴組織識別使用者風險較高的潛在區域，並有助於判斷您可能要考慮的內部風險管理原則類型和範圍。 這項評估還可以協助您判斷現有的有問必答風險原則的其他授權或未來優化的需求。
 
 若要深入瞭解內幕風險分析，請參閱「 [有問必答風險管理設定：分析](insider-risk-management-settings.md#analytics-preview)」。
 
 ## <a name="workflow"></a>工作流程
 
-「內幕風險管理」工作流程可協助您識別、調查和採取動作，以解決組織中的內部風險。 透過焦點原則範本、透過 Microsoft 365 服務的綜合活動信號，以及警示和案例管理工具，您可以使用可行動的觀點，快速找出並處理風險行為。
+「內幕風險管理」工作流程可協助您識別、調查和採取動作，以解決組織中的內部風險。 透過焦點原則範本、整個 Microsoft 365 服務的綜合活動信號，以及警示和案例管理工具，您可以使用可行動的洞察力，以快速找出並處理風險行為。
 
 使用下列工作流程，辨識並解決 Microsoft 365 中的測試人員風險管理的內部風險活動和合規性問題：
 
@@ -73,14 +73,14 @@ ms.locfileid: "50919809"
 
 您可以從下列原則範本中選取，以快速開始使用測試人員風險管理：
 
-- [由去聲使用者竊取資料](insider-risk-management-policies.md#data-theft-by-departing-users)
-- [一般資料洩漏](insider-risk-management-policies.md#general-data-leaks)
-- [依優先順序的使用者 (預覽的資料洩漏) ](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [因不滿使用者 (預覽的資料洩漏) ](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-- [ (預覽的一般安全性原則違規) ](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [由使用者 (預覽) 中的使用者進行安全性原則違規 ](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
-- [優先使用者 (預覽的安全性原則違規) ](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [因不滿使用者 (預覽所違反的安全性原則) ](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [離職使用者竊取的資料](insider-risk-management-policies.md#data-theft-by-departing-users)
+- [一般資料外洩](insider-risk-management-policies.md#general-data-leaks)
+- [優先使用者造成的資料外洩 (預覽)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [心懷不滿的使用者造成的資料外洩 (預覽)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [一般安全性原則違規 (預覽)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [離職使用者造成的安全性原則違規 (預覽)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
+- [優先使用者造成的安全性原則違規 (預覽)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
+- [心懷不滿的使用者造成的安全性原則違規 (預覽)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
 ![測試人員風險管理原則儀表板](../media/insider-risk-policy-dashboard.png)
 
@@ -120,12 +120,12 @@ ms.locfileid: "50919809"
 
 ### <a name="action"></a>動作
 
-在調查案例之後，檢閱者可以快速處理案例，或與組織中的其他風險專案關係人共同作業。 如果使用者無意或不經意地違反原則條件，則可以將簡單的提醒通知傳送給使用者，您可以自訂群組織的通知範本。 這些通知可能會做為簡單的提醒，也可能指導使用者進行複習訓練或指導，以協助避免未來的危險行為。 如需詳細資訊，請參閱[測試人員風險管理通知範本](insider-risk-management-notices.md)。
+在調查案例之後，檢閱者可以快速處理案例，或與組織中的其他風險專案關係人共同作業。 如果使用者無意或不經意地違反原則條件，則可以將簡單的提醒通知傳送給使用者，您可以自訂群組織的通知範本。 這些通知可能會做為簡單的提醒，也可能指導使用者進行複習訓練或指導，以協助避免未來的危險行為。 如需詳細資訊，請參閱[內部風險管理通知範本](insider-risk-management-notices.md)。
 
-在較嚴重的情況下，您可能需要與組織中的其他檢閱者或服務共用內部使用者風險管理案例資訊。 有問必答風險管理與其他 Microsoft 365 合規性解決方案緊密整合，以協助您進行端對端的風險解決。
+在較嚴重的情況下，您可能需要與組織中的其他檢閱者或服務共用內部使用者風險管理案例資訊。 內部使用者風險管理與其他 Microsoft 365 合規性解決方案緊密整合，以協助您進行端對端的風險解決。
 
-- **Advanced ediscovery**：上報調查案例可讓您將案例的資料和管理轉移至 Microsoft 365 中的「高級 eDiscovery」。 進階電子文件探索提供端對端工作流程，可讓您保留、收集、檢閱、分析及匯出您組織內部及外部調查所需的內容。 這可讓法務小組管理整個法務保存措施通知工作流程。 若要深入了解進階電子文件探索案例，請參閱[ Mcrosoft 365 中的進階電子文件探索概觀](overview-ediscovery-20.md)。
-- **Office 365 Management APIs integration (preview)**：「內部人員風險管理」支援透過 Office 365 管理) 將警示資訊匯出至安全性資訊和事件管理 (SIEM APIs 服務。 在平臺中存取警示資訊最適合組織的風險流程，可讓您更靈活地處理風險活動。 若要深入瞭解使用 Office 365 管理 APIs 匯出提醒資訊，請參閱 [匯出警示](insider-risk-management-settings.md#export-alerts-preview)。
+- **Advanced eDiscovery**：升級案例以供調查，可讓您將案例的資料和管理轉移至 Microsoft 365 中 Advanced eDiscovery。 進階電子文件探索提供端對端工作流程，可讓您保留、收集、檢閱、分析及匯出您組織內部及外部調查所需的內容。 這可讓法務小組管理整個法務保存措施通知工作流程。 若要深入了解進階電子文件探索案例，請參閱[ Mcrosoft 365 中的進階電子文件探索概觀](overview-ediscovery-20.md)。
+- **Office 365 管理 APIs 整合 (預覽)**：「有問必答風險管理」支援透過 (管理) 將警示資訊匯出至安全性資訊和事件管理 Office 365 SIEM APIs 服務。 在平臺中存取警示資訊最適合組織的風險流程，可讓您更靈活地處理風險活動。 若要深入瞭解使用 Office 365 管理 APIs 匯出提醒資訊，請參閱[匯出警示](insider-risk-management-settings.md#export-alerts-preview)。
 
 >[!NOTE]
 >感謝您在 ServiceNow 連接器預覽期間進行意見反應和支援。 我們決定在2020年11月30日的「內幕人員風險管理」中結束支援 ServiceNow 連接器的預覽。 我們正在積極評估替代方法，讓客戶在內幕風險管理中 ServiceNow 整合。
@@ -134,40 +134,40 @@ ms.locfileid: "50919809"
 
 測試人員風險管理可協助您偵測、調查並採取行動，以降低組織中數個常見案例的內部風險：
 
-### <a name="data-theft-by-departing-users"></a>由去聲使用者竊取資料
+### <a name="data-theft-by-departing-users"></a>離職使用者竊取的資料
 
-當使用者離開組織時（自願或終止時），通常是因為公司、客戶及使用者資料面臨危險的原因。 使用者可能會 innocently 假設專案資料並非專屬的，也可能是要取得公司資料以取得個人利益，以及違反公司原則和法律標準。 透過使用者原則範本使用 [資料竊取](insider-risk-management-policies.md#policy-templates) 的內幕風險管理原則，會自動偵測與此類型的盜竊相關的活動。 透過這種原則，您將會在您的使用者上，自動接收與資料竊取相關的可疑活動提醒，以便您採取適當的調查動作。 這個原則範本需要為您的組織設定 [Microsoft 365 HR connector](import-hr-data.md) 。
+當使用者離開組織時（自願或終止時），通常是因為公司、客戶及使用者資料面臨危險的原因。 使用者可能會 innocently 假設專案資料並非專屬的，也可能是要取得公司資料以取得個人利益，以及違反公司原則和法律標準。 透過使用者原則範本使用 [資料竊取](insider-risk-management-policies.md#policy-templates) 的內幕風險管理原則，會自動偵測與此類型的盜竊相關的活動。 透過這種原則，您將會在您的使用者上，自動接收與資料竊取相關的可疑活動提醒，以便您採取適當的調查動作。 為您的組織設定[Microsoft 365 HR 連接器](import-hr-data.md)是這個原則範本的必要條件。
 
 ### <a name="intentional-or-unintentional-leak-of-sensitive-or-confidential-information"></a>故意或無意洩漏敏感或機密資訊
 
 在大多數情況下，使用者可以嘗試適當地處理機密或機密資訊。 但是有時候使用者可能會造成錯誤和資訊意外地在您的組織外共用，或違反您的資訊保護原則。 在其他情況下，使用者可能會故意洩漏或分享機密和機密資訊，惡意目的和潛在個人利益。 使用下列資料洩漏原則範本所建立的會員風險管理原則，會自動偵測與共享敏感或機密資訊相關的活動：
 
-- [一般資料洩漏](insider-risk-management-policies.md#general-data-leaks)
-- [依優先順序的使用者 (預覽的資料洩漏) ](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [因不滿使用者 (預覽的資料洩漏) ](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [一般資料外洩](insider-risk-management-policies.md#general-data-leaks)
+- [優先使用者造成的資料外洩 (預覽)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [心懷不滿的使用者造成的資料外洩 (預覽)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a> (預覽) 的故意或無意間的安全性原則違規
 
 使用者在新式的工作場所管理其裝置時，通常會有很大的控制權。 此控制項可能包含安裝或卸載其責任效能中所需的應用程式，或暫時停用裝置安全性功能的許可權。 無論此活動是無意、意外或惡意的，此行為都會對您的組織造成風險，而且很重要的是識別和採取最小化。 為了協助識別這些危險的安全性活動，下列內部的「內幕人員風險管理」安全性原則違規模板會評分安全性風險指示器，並使用 Microsoft Defender for Endpoint 警示，提供與安全性相關活動的洞察力：
 
-- [ (預覽的一般安全性原則違規) ](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [由使用者 (預覽) 中的使用者進行安全性原則違規 ](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
-- [優先使用者 (預覽的安全性原則違規) ](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [因不滿使用者 (預覽所違反的安全性原則) ](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [一般安全性原則違規 (預覽)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [離職使用者造成的安全性原則違規 (預覽)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
+- [優先使用者造成的安全性原則違規 (預覽)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
+- [心懷不滿的使用者造成的安全性原則違規 (預覽)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
 ## <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>根據位置、存取層級或風險記錄 (預覽的使用者原則) 
 
 組織中的使用者可能會有不同層級的風險，取決於其位置、敏感資訊存取權或風險記錄。 此結構可能包含組織的高層領導團隊成員、具有大量資料和網路存取許可權的 IT 管理員，或過去具有風險活動之歷史的使用者。 在這些情況下，更深入的檢查和更積極的風險計分對於協助表面上的調查和快速動作都很重要。 若要協助識別這類使用者的危險活動，您可以建立優先順序使用者群組，並建立下列原則範本中的原則：
 
-- [優先使用者 (預覽的安全性原則違規) ](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [依優先順序的使用者 (預覽的資料洩漏) ](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [優先使用者造成的安全性原則違規 (預覽)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
+- [優先使用者造成的資料外洩 (預覽)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
 ## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>因不滿使用者 (預覽所做的動作和行為) 
 
-雇用強調事件可能會影響使用者行為與內幕程式風險相關的數種方式。 這些 stressors 可能是效能檢查、職位降級，或使用者放置於績效審查計畫的情況不良。 雖然大多數使用者沒有惡意回應這些事件，但這些動作的壓力可能會導致某些使用者採取的動作可能不會在一般情況下正常考慮。 為了協助識別這些類型的危險活動，下列內部的「內幕人員風險管理」原則範本會使用 Microsoft 365 HR 連接器，並從與雇傭雇用 stressor 事件接近的行為產生計分風險指示器：
+雇用強調事件可能會影響使用者行為與內幕程式風險相關的數種方式。 這些 stressors 可能是效能檢查、職位降級，或使用者放置於績效審查計畫的情況不良。 雖然大多數使用者沒有惡意回應這些事件，但這些動作的壓力可能會導致某些使用者採取的動作可能不會在一般情況下正常考慮。 為了協助識別這些類型的危險活動，下列內部的「內幕人員風險管理」原則範本會使用 Microsoft 365 HR 連接器，並開始與可能發生雇用 stressor 事件的行為相關的計分風險指示器：
 
-- [因不滿使用者 (預覽的資料洩漏) ](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-- [因不滿使用者 (預覽所違反的安全性原則) ](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [心懷不滿的使用者造成的資料外洩 (預覽)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [心懷不滿的使用者造成的安全性原則違規 (預覽)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
 ## <a name="ready-to-get-started"></a>準備好開始使用了嗎？
 

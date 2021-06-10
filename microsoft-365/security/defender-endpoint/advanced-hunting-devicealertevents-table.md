@@ -35,7 +35,7 @@ ms.locfileid: "51939645"
 
 >想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-[！附注] `DeviceAlertEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含 Microsoft Defender Security Center 中警示的相關資訊。 使用這個參考來建立從表格取回之資訊的查詢。
+[！附注] `DeviceAlertEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含 Microsoft Defender 資訊安全中心中警示的相關資訊。 使用這個參考來建立從表格取回之資訊的查詢。
 
 如需高級搜尋架構中其他資料表的詳細資訊，請參閱「 [高級搜尋架構參考](advanced-hunting-schema-reference.md)」。
 

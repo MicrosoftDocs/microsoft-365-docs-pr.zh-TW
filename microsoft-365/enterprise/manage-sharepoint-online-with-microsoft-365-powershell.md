@@ -19,7 +19,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 瞭解如何使用 Microsoft 365 的 PowerShell 來管理使用者、群組及網站群組。
+description: 瞭解如何使用 PowerShell 來 Microsoft 365 管理使用者、群組及網站群組。
 ms.openlocfilehash: bb7c48a5a44bc82aa0a16e0d38c7ea5036358ee7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -31,7 +31,7 @@ ms.locfileid: "50923264"
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-SharePoint 管理員必須管理網站、網站群組和使用者。 雖然您可以在 Microsoft 365 系統管理中心中執行下列其中一項工作，但其他一些在 PowerShell 更為容易。 如需詳細資訊，請參閱下列文章：
+SharePoint 管理員必須管理網站、網站群組和使用者。 雖然您可以在 Microsoft 365 系統管理中心執行下列其中一項工作，但其他一些在 PowerShell 中會比較容易。 如需詳細資訊，請參閱下列文章：
 
 - [開始使用 SharePoint Online 管理命令介面](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   

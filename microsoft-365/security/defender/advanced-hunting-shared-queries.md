@@ -1,7 +1,7 @@
 ---
-title: 在 Microsoft 365 Defender advanced 搜尋中使用共用查詢
+title: 在 Microsoft 365 Defender 高級搜尋中使用共用查詢
 description: 立即開始威脅搜捕，並使用預先定義的共用查詢。 將您的查詢與大眾或您的組織共用。
-keywords: 「高級搜尋」、「威脅搜尋」、「網路威脅搜尋」、「Microsoft 365 Defender」、「microsoft 365」、「m365」、「搜尋」、「遙測」、「自訂偵測」、「架構」、「kusto
+keywords: 「高級搜尋」、「威脅搜尋」、「網路威脅搜尋」、「Microsoft 365 Defender」、「Microsoft 365」、「m365」、「搜尋」、「遙測」、「自訂偵測」、「架構」、「kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -76,7 +76,7 @@ Microsoft 安全研究人員會定期在 [GitHub 上的指定公開儲存庫](ht
 >Microsoft 安全研究人員也會提供進階搜捕查詢，您可以用來尋找與新興威脅相關聯的活動和指標。 這些查詢是由 Microsoft Defender 安全性中心中的[威脅分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)報告提供。
 
 >[!NOTE]
->本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
+>本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 使用更多資料來源[開啟 Microsoft 365 Defender](m365d-enable.md)以搜尋威脅。 您可以遵循[從 microsoft defender for endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft defender for endpoint 移至 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

@@ -1,6 +1,6 @@
 ---
 title: 根據副檔名、名稱或位置來設定及驗證排除
-description: 根據檔案副檔名、檔案名或位置排除來自 Microsoft Defender 防病毒掃描的檔案。
+description: 根據檔案副檔名、檔案名或位置，將檔案從 Microsoft Defender 防毒軟體掃描中排除。
 keywords: 排除專案、檔、副檔名、檔案類型、資料夾名稱、檔案名、掃描
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -31,19 +31,19 @@ ms.locfileid: "52274529"
 - [適用於端點的 Microsoft Defender](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Microsoft Defender 防病毒排除不會套用至其他 Microsoft Defender for Endpoint 功能，包括 [端點偵測和回應 (EDR) ](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)、 [攻擊面減少 (ASR) 規則](/microsoft-365/security/defender-endpoint/attack-surface-reduction)，以及 [受控制的資料夾存取](/microsoft-365/security/defender-endpoint/controlled-folders)。 使用本文所述方法排除的檔案，仍然可以觸發 EDR 警示及其他偵測。 若要排除廣泛的檔案，請將其新增至 Microsoft Defender for Endpoint [自訂指示器](/microsoft-365/security/defender-endpoint/manage-indicators)。
+> Microsoft Defender 防毒軟體排除項不會套用至其他 Microsoft Defender for endpoint 功能，包括[端點偵測和回應 (EDR) ](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)、[攻擊面降低 (ASR) 規則](/microsoft-365/security/defender-endpoint/attack-surface-reduction)及[受控資料夾存取](/microsoft-365/security/defender-endpoint/controlled-folders)。 使用本文所述方法排除的檔案，仍然可以觸發 EDR 警示及其他偵測。 若要排除廣泛的檔案，請將其新增至 Microsoft Defender for Endpoint [自訂指示器](/microsoft-365/security/defender-endpoint/manage-indicators)。
 
 ## <a name="exclusion-lists"></a>排除清單
 
-您可以修改排除清單，以排除 Microsoft Defender 防病毒掃描中的某些檔案。 **一般來說，您不需要套用排除**。 Microsoft Defender 防毒軟體會根據已知的作業系統行為和一般管理檔案（例如企業管理、資料庫管理及其他企業案例及案例中所使用的管理檔案），包含許多自動排除。
+您可以修改排除清單，以排除 Microsoft Defender 防毒軟體掃描中的某些檔案。 **一般來說，您不需要套用排除**。 Microsoft Defender 防毒軟體包含許多以已知作業系統行為和一般管理檔案為基礎的自動排除專案，例如在企業管理、資料庫管理及其他企業案例及案例中使用的功能。
 
 > [!NOTE]
 > 例外狀況也適用于可能有害的應用程式 (PUA) 偵測。
 
 > [!NOTE]
-> 自動排除只適用于 Windows Server 2016 和更新版本。 在 Windows 安全性應用程式和 PowerShell 中看不到這些排除專案。
+> 自動排除只適用于 Windows Server 2016 及以上的專案。 在 Windows 安全性應用程式和 PowerShell 中看不到這些排除專案。
 
-本文說明如何設定檔案和資料夾的排除清單。 定義排除清單之前，請參閱定義排除專案 [的建議](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 。
+本文說明如何設定檔案和資料夾的排除清單。 定義排除清單之前，請參閱[建議以定義](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)排除清單。
 
 | 排除 | 範例 | 排除清單 |
 |:---|:---|:---|
@@ -60,7 +60,7 @@ ms.locfileid: "52274529"
 > [!IMPORTANT]
 > - 使用萬用字元（如星號 (\*) ）將會變更如何轉譯排除規則。 如需有關萬用字元如何運作的重要資訊，請參閱在檔案名 [和資料夾路徑或副檔名排除清單區段中使用萬用字元](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 。
 > - 您無法排除對應的網路磁碟機。 您必須指定實際的網路路徑。
-> - 在 Microsoft Defender 防病毒服務啟動之後所建立並已新增至排除清單的重新分析點，將不會包含在其中的資料夾。 您必須重新開機 Windows) 以重新開機服務 (，以將新重新分析點識別為有效的排除目標。
+> - 在 Microsoft Defender 防毒軟體服務啟動之後所建立的重新分析點，也不會包含在 [排除] 清單中的資料夾。 您必須重新開機服務 (以重新開機 Windows) ，以將新重新分析點辨識為有效的排除目標。
 
 若要排除特定程式所開啟的檔案，請參閱 [Configure and validate 由進程開啟的檔案排除](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)專案。
 
@@ -80,11 +80,11 @@ ms.locfileid: "52274529"
 
 請參閱下列文章：
 - [在 Microsoft Intune 中設定裝置限制設定](/intune/device-restrictions-configure)
-- [Intune 中 Windows 10 版的 Microsoft Defender 防病毒裝置限制設定](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+- [在 Intune 中 Microsoft Defender 防毒軟體 Windows 10 裝置限制設定](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Configuration Manager 來設定檔案名、資料夾或副檔名排除
 
-請參閱 [如何建立及部署反惡意程式碼原則：有關設定](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) Microsoft 端點管理員 (目前分支) 的詳細資訊，請參閱 [排除] 設定。
+請參閱[如何建立及部署反惡意程式碼原則：設定](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)Microsoft 端點管理員 (目前分支) 的詳細資料。
 
 ### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>使用群組原則來設定資料夾或副檔名排除
 
@@ -95,7 +95,7 @@ ms.locfileid: "52274529"
 
 2. 在 [ **群組原則管理編輯器** ] 中，移至 [ **電腦** 設定]，然後選取 [ **管理範本**]。
 
-3. 將樹狀目錄展開為  >  **microsoft Defender 防病毒**  >  **排除** 專案的 Windows 元件。
+3. 展開樹狀目錄，以 **Windows 元件**  >  **Microsoft Defender 防毒軟體**  >  **排除**。
 
 4. 開啟 [ **路徑排除** ] 設定進行編輯，然後新增您的排除專案。
 
@@ -144,15 +144,15 @@ Cmdlet 的格式如下：
 > [!IMPORTANT]
 > 如果您已建立清單，請使用 `Set-MpPreference` 或 `Add-MpPreference` 再次使用 Cmdlet， `Set-MpPreference` 將覆寫現有清單。
 
-例如，下列程式碼片段會使 Microsoft Defender 防病毒掃描排除副檔名為下列的任何檔案 `.test` ：
+例如，下列程式碼段會導致 Microsoft Defender 防毒軟體掃描排除副檔名為下列的任何檔案 `.test` ：
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
 ```
 
-如需詳細資訊，請參閱 [Use PowerShell Cmdlet 以設定及執行 Microsoft Defender 防病毒](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender Cmdlet](/powershell/module/defender/)。
+要深入了解，請參閱 [《使用 PowerShell Cmdlets 設定和執行 Microsoft Defender 防毒軟體》](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender Cmdlets](/powershell/module/defender/)。
 
-### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Windows Management 指令 (WMI) 設定檔案名、資料夾或副檔名排除專案
+### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Windows 管理指令 (WMI) 設定檔案名、資料夾或副檔名排除專案
 
 針對下列屬性，使用 MSFT_MpPreference 類別的 [ **Set**、 **Add** 和 **Remove** 方法](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) ：
 
@@ -163,13 +163,13 @@ ExclusionPath
 
 [ **設定**]、[ **新增**] 和 [ **移除** ] 的使用與其在 PowerShell:、] 和中的對等專案類似 `Set-MpPreference` `Add-MpPreference` `Remove-MpPreference` 。
 
-如需詳細資訊，請參閱 [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)。
+如需詳細資訊，請參閱[Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)。
 
 <a id="man-tools"></a>
 
-### <a name="use-the-windows-security-app-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Windows 安全性應用程式來設定檔案名、資料夾或副檔名排除
+### <a name="use-the-windows-security-app-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Windows 安全性應用程式設定檔案名、資料夾或副檔名排除專案
 
-如需相關指示，請參閱 [在 Windows 安全性應用程式中新增排除](microsoft-defender-security-center-antivirus.md) 專案。
+如需相關指示，請參閱[Add Windows 安全性 app 中的排除](microsoft-defender-security-center-antivirus.md)專案。
 
 <a id="wildcards"></a>
 
@@ -284,7 +284,7 @@ ExclusionPath
 
 如果您使用 PowerShell，您可以使用下列兩種方式來找回清單：
 
-- 取得所有 Microsoft Defender 防毒軟體偏好設定的狀態。 每個清單都顯示在不同的行上，但是每個清單中的專案會組合成同一行。
+- 取得所有 Microsoft Defender 防毒軟體首選項的狀態。 每個清單都顯示在不同的行上，但是每個清單中的專案會組合成同一行。
 - 將所有喜好設定的狀態寫入變數中，並使用該變數只呼叫您感興趣的特定清單。 每次使用 `Add-MpPreference` 都會寫入新行。
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>使用 MpCmdRun 驗證排除清單
@@ -299,9 +299,9 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 >[!NOTE]
->使用 MpCmdRun 檢查排除專案時，需要 Microsoft Defender 防病毒預約通話版本 4.18.1812.3 (于十二月 2018) 或更新版本發行。
+>檢查包含 MpCmdRun 的排除專案時，需要 (2018 年) 或更新版本中發佈 Microsoft Defender 防毒軟體預約通話版本4.18.1812.3。
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell 查看排除清單及所有其他 Microsoft Defender 防病毒偏好設定
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell，查看排除清單及所有其他 Microsoft Defender 防毒軟體偏好設定
 
 請使用下列 Cmdlet：
 
@@ -313,7 +313,7 @@ Get-MpPreference
 
 ![Get-MpPreference 的 PowerShell 輸出，顯示排除清單及其他喜好設定](images/defender/wdav-powershell-get-exclusions-all.png)
 
-如需詳細資訊，請參閱 [Use PowerShell Cmdlet 以設定及執行 Microsoft Defender 防病毒](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender Cmdlet](/powershell/module/defender/)。
+要深入了解，請參閱 [《使用 PowerShell Cmdlets 設定和執行 Microsoft Defender 防毒軟體》](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender Cmdlets](/powershell/module/defender/)。
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>使用 PowerShell 來檢索特定排除清單
 
@@ -329,7 +329,7 @@ $WDAVprefs.ExclusionPath
 
 ![PowerShell 輸出僅顯示排除清單中的專案](images/defender/wdav-powershell-get-exclusions-variable.png)
 
-如需詳細資訊，請參閱 [Use PowerShell Cmdlet 以設定及執行 Microsoft Defender 防病毒](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender Cmdlet](/powershell/module/defender/)。
+要深入了解，請參閱 [《使用 PowerShell Cmdlets 設定和執行 Microsoft Defender 防毒軟體》](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender Cmdlets](/powershell/module/defender/)。
 
 <a id="validate"></a>
 
@@ -343,7 +343,7 @@ $WDAVprefs.ExclusionPath
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
 ```
 
-如果 Microsoft Defender 防病毒報告惡意程式碼，則規則不會正常運作。 如果沒有惡意軟體的報表，而且下載的檔案存在，則排除作業正常運作。 您可以開啟檔案，確認內容與 [eicar.txt test file 網站](http://www.eicar.org/86-0-Intended-use.html)上所述的內容相同。
+如果 Microsoft Defender 防毒軟體報告惡意程式碼，則規則不會正常運作。 如果沒有惡意軟體的報表，而且下載的檔案存在，則排除作業正常運作。 您可以開啟檔案，確認內容與 [eicar.txt test file 網站](http://www.eicar.org/86-0-Intended-use.html)上所述的內容相同。
 
 您也可以使用下列 PowerShell 程式碼，它會呼叫 .NET WebClient 類別以下載測試檔-如 Cmdlet 所示 `Invoke-WebRequest` ; 將 *c:\test.txt* 取代為符合您所驗證之規則的檔案：
 
@@ -362,7 +362,7 @@ $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt"
 
 ## <a name="related-topics"></a>相關主題
 
-- [設定及驗證 Microsoft Defender 防病毒掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md)
+- [設定及驗證 Microsoft Defender 防毒軟體掃描中的排除專案](configure-exclusions-microsoft-defender-antivirus.md)
 - [設定及驗證由進程開啟之檔案的排除專案](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [設定 Windows Server 上的 Microsoft Defender 防病毒排除](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [設定 Windows 伺服器上的 Microsoft Defender 防毒軟體排除](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [定義排除時應避免的常見錯誤](common-exclusion-mistakes-microsoft-defender-antivirus.md)

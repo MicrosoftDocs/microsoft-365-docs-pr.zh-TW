@@ -27,11 +27,11 @@ ms.locfileid: "50921477"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼回寫
 
-*此測試實驗室指南僅可用於適用于企業測試環境的 Microsoft 365。*
+*此測試實驗室指南僅可用於企業測試環境的 Microsoft 365。*
 
-使用者可以使用密碼寫回以透過 Azure Active Directory (Azure AD) （然後將其複寫至您的本機 Active Directory 網域服務 (AD DS) ）來更新其密碼。 使用密碼回寫時，使用者不必透過內部部署 AD DS （儲存其原始使用者帳戶）來更新其密碼。 這可協助漫遊或遠端使用者沒有其內部部署網路的遠端存取連線。
+使用者可以使用密碼寫回來更新其密碼，Azure Active Directory (Azure AD) ，然後將其複寫到您的本機 Active Directory 網域服務 (AD DS) 。 使用密碼回寫時，使用者不必透過內部部署 AD DS （儲存其原始使用者帳戶）來更新其密碼。 這可協助漫遊或遠端使用者沒有其內部部署網路的遠端存取連線。
 
-本文說明如何設定您的 Microsoft 365 測試環境，以進行密碼回寫。
+本文說明如何設定 Microsoft 365 測試環境，以進行密碼回寫。
 
 設定密碼寫回的測試環境包括兩個階段：
 - [階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -40,7 +40,7 @@ ms.locfileid: "50921477"
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 如需 Microsoft 365 for enterprise 測試實驗室指南堆疊中所有文章的視覺對應，請移至 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 如需適用于企業測試實驗室指南堆疊的 Microsoft 365 中的所有文章的視覺對應，請移至[Microsoft 365 for enterprise test lab guide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理
 
@@ -109,9 +109,9 @@ ms.locfileid: "50921477"
 
 4. 在 [ **其他** 工作] 頁面上，選取 [ **自訂同步處理選項**]，然後選取 **[下一步]**。
 
-5. 在 [連線 **到 AZURE AD]** 頁面上，輸入您的全域系統管理員帳號憑證，然後選取 **[下一步]**。
+5. 在 [**連線至 Azure AD** ] 頁面上，輸入您的全域系統管理員帳號憑證，然後選取 **[下一步]**。
 
-6. 在 [ **連接目錄] 和 [** **網域/OU 篩選** ] 頁面上，選取 **[下一步]**。
+6. 在 [**連線目錄**] 和 [**網域/OU 篩選**] 頁面上，選取 **[下一步]**。
 
 7. 在 [ **選用功能** ] 頁面上，選取 [ **密碼回寫**]，然後選取 **[下一步]**。
 

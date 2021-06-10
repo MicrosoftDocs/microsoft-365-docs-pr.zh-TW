@@ -1,7 +1,7 @@
 ---
-title: 使用 Microsoft 365 Defender 中的高級搜尋查詢結果
-description: 在 Microsoft 365 Defender 中使用高級搜尋所傳回的查詢結果
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，microsoft 365，m365，search，查詢，遙測，自訂偵測，架構，kusto，視覺化，圖表，篩選器，向外鑽取
+title: 在 Microsoft 365 Defender 中使用高級搜尋查詢結果
+description: 在 Microsoft 365 Defender 中充分利用高級搜尋所傳回的查詢結果
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，自訂偵測，架構，kusto，視覺化，圖表，篩選器，向外鑽取
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -122,7 +122,7 @@ AppFileEvents
 ## <a name="export-tables-and-charts"></a>匯出資料表和圖表
 執行查詢後，請選取 [ **匯出** ]，將結果儲存至本機檔案。 您所選擇的查看會決定結果的匯出方式：
 
-- **表格視圖** --查詢結果會以表格形式匯出為 Microsoft Excel 活頁簿
+- **表格視圖**--查詢結果會以表格形式匯出為 Microsoft Excel 活頁簿
 - **任何圖表** --查詢結果會匯出為所呈現圖表的 JPEG 圖像
 
 ## <a name="drill-down-from-query-results"></a>從查詢結果向下切入
@@ -155,7 +155,7 @@ AppFileEvents
 一旦套用篩選來修改查詢，然後執行查詢，結果就會相應更新。
 
 >[!NOTE]
->本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 [開啟 Microsoft 365 Defender](m365d-enable.md) 以使用更多資料來源尋找威脅。 您可以遵循 [從 Microsoft defender For Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft Defender for endpoint 移至 Microsoft 365 Defender。
+>本文中的部分表格可能無法在 Microsoft Defender for Endpoint 中使用。 使用更多資料來源[開啟 Microsoft 365 Defender](m365d-enable.md)以搜尋威脅。 您可以遵循[從 microsoft defender for endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mde.md)中的步驟，將您的高級搜尋工作流程從 microsoft defender for endpoint 移至 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)
