@@ -19,28 +19,28 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52299889"
 ---
-# <a name="contact-support-for-cte-divoire"></a><span data-ttu-id="81755-103">對象牙海岸的支援聯繫</span><span class="sxs-lookup"><span data-stu-id="81755-103">Contact support for Côte d'Ivoire</span></span>
+# <a name="contact-support-for-cte-divoire"></a><span data-ttu-id="77356-103">對象牙海岸的支援聯繫</span><span class="sxs-lookup"><span data-stu-id="77356-103">Contact support for Côte d'Ivoire</span></span>
 
-<span data-ttu-id="81755-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="81755-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="77356-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="77356-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="81755-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="81755-105">Phone number</span></span>
-<span data-ttu-id="81755-106">020 24 24 90</span><span class="sxs-lookup"><span data-stu-id="81755-106">020 24 24 90</span></span>
+## <a name="phone-number"></a><span data-ttu-id="77356-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="77356-105">Phone number</span></span>
+<span data-ttu-id="77356-106">020 24 24 90</span><span class="sxs-lookup"><span data-stu-id="77356-106">020 24 24 90</span></span>
 
-<span data-ttu-id="81755-107">選取選項9</span><span class="sxs-lookup"><span data-stu-id="81755-107">Select option 9</span></span>
+<span data-ttu-id="77356-107">選取選項9</span><span class="sxs-lookup"><span data-stu-id="77356-107">Select option 9</span></span>
 
-<span data-ttu-id="81755-108">輸入程式碼7703</span><span class="sxs-lookup"><span data-stu-id="81755-108">Enter code 7703</span></span>
+<span data-ttu-id="77356-108">輸入程式碼7703</span><span class="sxs-lookup"><span data-stu-id="77356-108">Enter code 7703</span></span>
 
-## <a name="hours"></a><span data-ttu-id="81755-109">小時</span><span class="sxs-lookup"><span data-stu-id="81755-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="81755-110">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="81755-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="77356-109">小時</span><span class="sxs-lookup"><span data-stu-id="77356-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="77356-110">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="77356-110">Billing Support:</span></span>
 
-<span data-ttu-id="81755-111">法文： Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="81755-111">French: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="77356-111">法文： Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="77356-111">French: Mon-Fri 8 AM-4 PM</span></span>
 
-<span data-ttu-id="81755-112">英文： Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="81755-112">English: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="77356-112">英文： Mon-Fri 8 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="77356-112">English: Mon-Fri 8 AM-4 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="81755-113">技術支援：</span><span class="sxs-lookup"><span data-stu-id="81755-113">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="77356-113">技術支援：</span><span class="sxs-lookup"><span data-stu-id="77356-113">Technical Support:</span></span>
 
-<span data-ttu-id="81755-114">法文： Mon-Fri 7 AM-下午8點</span><span class="sxs-lookup"><span data-stu-id="81755-114">French: Mon-Fri 7 AM-8 PM</span></span>
+<span data-ttu-id="77356-114">法文： Mon-Fri 7 AM-下午8點</span><span class="sxs-lookup"><span data-stu-id="77356-114">French: Mon-Fri 7 AM-8 PM</span></span>
 
-<span data-ttu-id="81755-115">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="81755-115">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="77356-115">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="77356-115">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="81755-116">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="81755-116">Local call charges apply</span></span>
+<span data-ttu-id="77356-116">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="77356-116">Local call charges apply</span></span>

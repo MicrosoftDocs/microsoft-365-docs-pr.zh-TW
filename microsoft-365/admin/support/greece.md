@@ -19,18 +19,18 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298791"
 ---
-# <a name="contact-support-for-greece"></a><span data-ttu-id="f3bfa-103">希臘的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="f3bfa-103">Contact support for Greece</span></span>
+# <a name="contact-support-for-greece"></a><span data-ttu-id="89238-103">希臘的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="89238-103">Contact support for Greece</span></span>
 
-<span data-ttu-id="f3bfa-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="f3bfa-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="89238-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="89238-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f3bfa-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="f3bfa-105">Phone number</span></span>
-<span data-ttu-id="f3bfa-106">00800 4414 2831</span><span class="sxs-lookup"><span data-stu-id="f3bfa-106">00800 4414 2831</span></span>
+## <a name="phone-number"></a><span data-ttu-id="89238-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="89238-105">Phone number</span></span>
+<span data-ttu-id="89238-106">00800 4414 2831</span><span class="sxs-lookup"><span data-stu-id="89238-106">00800 4414 2831</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f3bfa-107">小時</span><span class="sxs-lookup"><span data-stu-id="f3bfa-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f3bfa-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="f3bfa-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="89238-107">小時</span><span class="sxs-lookup"><span data-stu-id="89238-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="89238-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="89238-108">Billing Support:</span></span>
 
-<span data-ttu-id="f3bfa-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="f3bfa-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="89238-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="89238-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f3bfa-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="f3bfa-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="89238-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="89238-110">Technical Support:</span></span>
 
-<span data-ttu-id="f3bfa-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="f3bfa-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="89238-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="89238-111">English: 24 hours a day, 7 days a week</span></span>

@@ -19,20 +19,20 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298073"
 ---
-# <a name="contact-support-for-marshall-islands"></a><span data-ttu-id="5e593-103">整理群島的接觸支援</span><span class="sxs-lookup"><span data-stu-id="5e593-103">Contact support for Marshall Islands</span></span>
+# <a name="contact-support-for-marshall-islands"></a><span data-ttu-id="b9835-103">整理群島的接觸支援</span><span class="sxs-lookup"><span data-stu-id="b9835-103">Contact support for Marshall Islands</span></span>
 
-<span data-ttu-id="5e593-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="5e593-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="b9835-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="b9835-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="5e593-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="5e593-105">Phone number</span></span>
-<span data-ttu-id="5e593-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="5e593-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b9835-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="b9835-105">Phone number</span></span>
+<span data-ttu-id="b9835-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="b9835-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="5e593-107">小時</span><span class="sxs-lookup"><span data-stu-id="5e593-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="5e593-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="5e593-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b9835-107">小時</span><span class="sxs-lookup"><span data-stu-id="b9835-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b9835-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="b9835-108">Billing Support:</span></span>
 
-<span data-ttu-id="5e593-109">英文： Mon-Fri 1 PM-9 PM</span><span class="sxs-lookup"><span data-stu-id="5e593-109">English: Mon-Fri 1 PM-9 PM</span></span>
+<span data-ttu-id="b9835-109">英文： Mon-Fri 1 PM-9 PM</span><span class="sxs-lookup"><span data-stu-id="b9835-109">English: Mon-Fri 1 PM-9 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="5e593-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="5e593-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b9835-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="b9835-110">Technical Support:</span></span>
 
-<span data-ttu-id="5e593-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="5e593-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b9835-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="b9835-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="5e593-112">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="5e593-112">International call charges apply</span></span>
+<span data-ttu-id="b9835-112">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="b9835-112">International call charges apply</span></span>

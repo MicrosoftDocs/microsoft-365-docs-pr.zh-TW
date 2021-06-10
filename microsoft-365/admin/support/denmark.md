@@ -19,22 +19,22 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298935"
 ---
-# <a name="contact-support-for-denmark"></a><span data-ttu-id="fd4fc-103">丹麥的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="fd4fc-103">Contact support for Denmark</span></span>
+# <a name="contact-support-for-denmark"></a><span data-ttu-id="30c74-103">丹麥的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="30c74-103">Contact support for Denmark</span></span>
 
-<span data-ttu-id="fd4fc-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="fd4fc-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="30c74-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="30c74-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="fd4fc-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="fd4fc-105">Phone number</span></span>
-<span data-ttu-id="fd4fc-106">80 34 76 23</span><span class="sxs-lookup"><span data-stu-id="fd4fc-106">80 34 76 23</span></span>
+## <a name="phone-number"></a><span data-ttu-id="30c74-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="30c74-105">Phone number</span></span>
+<span data-ttu-id="30c74-106">80 34 76 23</span><span class="sxs-lookup"><span data-stu-id="30c74-106">80 34 76 23</span></span>
 
-## <a name="hours"></a><span data-ttu-id="fd4fc-107">小時</span><span class="sxs-lookup"><span data-stu-id="fd4fc-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="fd4fc-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="fd4fc-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="30c74-107">小時</span><span class="sxs-lookup"><span data-stu-id="30c74-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="30c74-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="30c74-108">Billing Support:</span></span>
 
-<span data-ttu-id="fd4fc-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="fd4fc-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="30c74-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="30c74-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="fd4fc-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="fd4fc-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="30c74-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="30c74-110">Technical Support:</span></span>
 
-<span data-ttu-id="fd4fc-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="fd4fc-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="30c74-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="30c74-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="fd4fc-112">替代電話號碼： 38 48 70 67</span><span class="sxs-lookup"><span data-stu-id="fd4fc-112">Alternative Phone Number: 38 48 70 67</span></span>
+<span data-ttu-id="30c74-112">替代電話號碼： 38 48 70 67</span><span class="sxs-lookup"><span data-stu-id="30c74-112">Alternative Phone Number: 38 48 70 67</span></span>
 
-<span data-ttu-id="fd4fc-113">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="fd4fc-113">Local call charges apply</span></span>
+<span data-ttu-id="30c74-113">適用本機通話費用</span><span class="sxs-lookup"><span data-stu-id="30c74-113">Local call charges apply</span></span>

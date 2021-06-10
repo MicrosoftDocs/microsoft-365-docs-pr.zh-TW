@@ -19,24 +19,24 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297557"
 ---
-# <a name="contact-support-for-timor-leste"></a><span data-ttu-id="4b47d-103">Timor-Leste 的支援人員</span><span class="sxs-lookup"><span data-stu-id="4b47d-103">Contact support for Timor-Leste</span></span>
+# <a name="contact-support-for-timor-leste"></a><span data-ttu-id="32eab-103">Timor-Leste 的支援人員</span><span class="sxs-lookup"><span data-stu-id="32eab-103">Contact support for Timor-Leste</span></span>
 
-<span data-ttu-id="4b47d-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="4b47d-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="32eab-104">[尋找其他國家或地區](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="32eab-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="4b47d-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="4b47d-105">Phone number</span></span>
-<span data-ttu-id="4b47d-106">+ 1 312 843 5155</span><span class="sxs-lookup"><span data-stu-id="4b47d-106">+1 312 843 5155</span></span>
+## <a name="phone-number"></a><span data-ttu-id="32eab-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="32eab-105">Phone number</span></span>
+<span data-ttu-id="32eab-106">+ 1 312 843 5155</span><span class="sxs-lookup"><span data-stu-id="32eab-106">+1 312 843 5155</span></span>
 
-## <a name="hours"></a><span data-ttu-id="4b47d-107">小時</span><span class="sxs-lookup"><span data-stu-id="4b47d-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="4b47d-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="4b47d-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="32eab-107">小時</span><span class="sxs-lookup"><span data-stu-id="32eab-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="32eab-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="32eab-108">Billing Support:</span></span>
 
-<span data-ttu-id="4b47d-109">葡萄牙文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="4b47d-109">Portuguese: Mon-Fri 9 PM-5 AM</span></span>
+<span data-ttu-id="32eab-109">葡萄牙文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="32eab-109">Portuguese: Mon-Fri 9 PM-5 AM</span></span>
 
-<span data-ttu-id="4b47d-110">英文： Mon-Fri 9 PM-5 AM</span><span class="sxs-lookup"><span data-stu-id="4b47d-110">English: Mon-Fri 9 PM-5 AM</span></span>
+<span data-ttu-id="32eab-110">英文： Mon-Fri 9 PM-5 AM</span><span class="sxs-lookup"><span data-stu-id="32eab-110">English: Mon-Fri 9 PM-5 AM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="4b47d-111">技術支援：</span><span class="sxs-lookup"><span data-stu-id="4b47d-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="32eab-111">技術支援：</span><span class="sxs-lookup"><span data-stu-id="32eab-111">Technical Support:</span></span>
 
-<span data-ttu-id="4b47d-112">葡萄牙文：一天24小時，介於週一至中午和週六的中午</span><span class="sxs-lookup"><span data-stu-id="4b47d-112">Portuguese: 24 hours a day, between Mon noon and Sat noon</span></span>
+<span data-ttu-id="32eab-112">葡萄牙文：一天24小時，介於週一至中午和週六的中午</span><span class="sxs-lookup"><span data-stu-id="32eab-112">Portuguese: 24 hours a day, between Mon noon and Sat noon</span></span>
 
-<span data-ttu-id="4b47d-113">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="4b47d-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="32eab-113">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="32eab-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="4b47d-114">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="4b47d-114">International call charges apply</span></span>
+<span data-ttu-id="32eab-114">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="32eab-114">International call charges apply</span></span>

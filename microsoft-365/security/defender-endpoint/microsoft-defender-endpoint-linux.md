@@ -26,87 +26,87 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52843515"
 ---
-# <a name="microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="3a9a6-104">Linux 上適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="3a9a6-104">Microsoft Defender for Endpoint on Linux</span></span>
+# <a name="microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="a0249-104">Linux 上適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="a0249-104">Microsoft Defender for Endpoint on Linux</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="3a9a6-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="3a9a6-105">**Applies to:**</span></span>
-- [<span data-ttu-id="3a9a6-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="3a9a6-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="3a9a6-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3a9a6-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="a0249-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="a0249-105">**Applies to:**</span></span>
+- [<span data-ttu-id="a0249-106">適用於端點的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="a0249-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="a0249-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a0249-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="3a9a6-108">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="3a9a6-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="3a9a6-109">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="a0249-108">想要體驗適用於端點的 Microsoft Defender 嗎？</span><span class="sxs-lookup"><span data-stu-id="a0249-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="a0249-109">注册免費試用版。</span><span class="sxs-lookup"><span data-stu-id="a0249-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-<span data-ttu-id="3a9a6-110">本主題說明如何在 Linux 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-110">This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.</span></span>
+<span data-ttu-id="a0249-110">本主題說明如何在 Linux 上安裝、設定、更新及使用 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="a0249-110">This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="3a9a6-111">在 Linux 上執行其他協力廠商端點保護產品及 Microsoft Defender for Endpoint 時，可能會造成效能問題和不可預測的副作用。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-111">Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects.</span></span> <span data-ttu-id="3a9a6-112">若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以[被動式模式](linux-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以在 Linux EDR 功能上安全地利用 Defender for endpoint。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-112">If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).</span></span>
+> <span data-ttu-id="a0249-111">在 Linux 上執行其他協力廠商端點保護產品及 Microsoft Defender for Endpoint 時，可能會造成效能問題和不可預測的副作用。</span><span class="sxs-lookup"><span data-stu-id="a0249-111">Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects.</span></span> <span data-ttu-id="a0249-112">若非 Microsoft endpoint protection 是您環境中的絕對需求，則在將防病毒功能設定為以[被動式模式](linux-preferences.md#enable--disable-passive-mode)執行之前，您仍然可以在 Linux EDR 功能上安全地利用 Defender for endpoint。</span><span class="sxs-lookup"><span data-stu-id="a0249-112">If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).</span></span>
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="3a9a6-113">如何在 Linux 上安裝 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="3a9a6-113">How to install Microsoft Defender for Endpoint on Linux</span></span>
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="a0249-113">如何在 Linux 上安裝 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="a0249-113">How to install Microsoft Defender for Endpoint on Linux</span></span>
 
-### <a name="prerequisites"></a><span data-ttu-id="3a9a6-114">必要條件</span><span class="sxs-lookup"><span data-stu-id="3a9a6-114">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="a0249-114">必要條件</span><span class="sxs-lookup"><span data-stu-id="a0249-114">Prerequisites</span></span>
 
-- <span data-ttu-id="3a9a6-115">存取 Microsoft Defender 資訊安全中心入口網站</span><span class="sxs-lookup"><span data-stu-id="3a9a6-115">Access to the Microsoft Defender Security Center portal</span></span>
-- <span data-ttu-id="3a9a6-116">使用 [systemd](https://systemd.io/) 系統管理員的 Linux 發行</span><span class="sxs-lookup"><span data-stu-id="3a9a6-116">Linux distribution using the [systemd](https://systemd.io/) system manager</span></span>
-- <span data-ttu-id="3a9a6-117">在 Linux 和 BASH 腳本中的初級層級體驗</span><span class="sxs-lookup"><span data-stu-id="3a9a6-117">Beginner-level experience in Linux and BASH scripting</span></span>
-- <span data-ttu-id="3a9a6-118">當手動部署時，裝置上的系統管理許可權 () </span><span class="sxs-lookup"><span data-stu-id="3a9a6-118">Administrative privileges on the device (in case of manual deployment)</span></span>
+- <span data-ttu-id="a0249-115">存取 Microsoft Defender 資訊安全中心入口網站</span><span class="sxs-lookup"><span data-stu-id="a0249-115">Access to the Microsoft Defender Security Center portal</span></span>
+- <span data-ttu-id="a0249-116">使用 [systemd](https://systemd.io/) 系統管理員的 Linux 發行</span><span class="sxs-lookup"><span data-stu-id="a0249-116">Linux distribution using the [systemd](https://systemd.io/) system manager</span></span>
+- <span data-ttu-id="a0249-117">在 Linux 和 BASH 腳本中的初級層級體驗</span><span class="sxs-lookup"><span data-stu-id="a0249-117">Beginner-level experience in Linux and BASH scripting</span></span>
+- <span data-ttu-id="a0249-118">當手動部署時，裝置上的系統管理許可權 () </span><span class="sxs-lookup"><span data-stu-id="a0249-118">Administrative privileges on the device (in case of manual deployment)</span></span>
 
 > [!NOTE]
->  <span data-ttu-id="3a9a6-119">Linux 代理程式上的 Microsoft Defender for Endpoint 獨立于 [OMS 代理程式](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-119">Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent).</span></span> <span data-ttu-id="3a9a6-120">Microsoft Defender for Endpoint 依賴其自身的獨立遙測管線。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-120">Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.</span></span>
+>  <span data-ttu-id="a0249-119">Linux 代理程式上的 Microsoft Defender for Endpoint 獨立于 [OMS 代理程式](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。</span><span class="sxs-lookup"><span data-stu-id="a0249-119">Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent).</span></span> <span data-ttu-id="a0249-120">Microsoft Defender for Endpoint 依賴其自身的獨立遙測管線。</span><span class="sxs-lookup"><span data-stu-id="a0249-120">Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.</span></span>
 > 
-> <span data-ttu-id="3a9a6-121">Linux 上的 Microsoft Defender for Endpoint 尚未整合到 Azure Security Center 中。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-121">Microsoft Defender for Endpoint on Linux is not yet integrated into Azure Security Center.</span></span>
+> <span data-ttu-id="a0249-121">Linux 上的 Microsoft Defender for Endpoint 尚未整合到 Azure Security Center 中。</span><span class="sxs-lookup"><span data-stu-id="a0249-121">Microsoft Defender for Endpoint on Linux is not yet integrated into Azure Security Center.</span></span>
 
 
 
-### <a name="installation-instructions"></a><span data-ttu-id="3a9a6-122">安裝指示</span><span class="sxs-lookup"><span data-stu-id="3a9a6-122">Installation instructions</span></span>
+### <a name="installation-instructions"></a><span data-ttu-id="a0249-122">安裝指示</span><span class="sxs-lookup"><span data-stu-id="a0249-122">Installation instructions</span></span>
 
-<span data-ttu-id="3a9a6-123">您可以使用數種方法和部署工具，在 Linux 上安裝及設定 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-123">There are several methods and deployment tools that you can use to install and configure Microsoft Defender for Endpoint on Linux.</span></span>
+<span data-ttu-id="a0249-123">您可以使用數種方法和部署工具，在 Linux 上安裝及設定 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="a0249-123">There are several methods and deployment tools that you can use to install and configure Microsoft Defender for Endpoint on Linux.</span></span>
 
-<span data-ttu-id="3a9a6-124">一般說來，您必須採取下列步驟：</span><span class="sxs-lookup"><span data-stu-id="3a9a6-124">In general you need to take the following steps:</span></span>
+<span data-ttu-id="a0249-124">一般說來，您必須採取下列步驟：</span><span class="sxs-lookup"><span data-stu-id="a0249-124">In general you need to take the following steps:</span></span>
 
-- <span data-ttu-id="3a9a6-125">確定您有 Microsoft Defender for Endpoint 訂閱，且您可以存取 [Microsoft defender For endpoint 入口網站](microsoft-defender-security-center.md)。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-125">Ensure that you have a Microsoft Defender for Endpoint subscription, and that you have access to the [Microsoft Defender for Endpoint portal](microsoft-defender-security-center.md).</span></span>
-- <span data-ttu-id="3a9a6-126">使用下列其中一個部署方法，在 Linux 上部署 Microsoft Defender for Endpoint：</span><span class="sxs-lookup"><span data-stu-id="3a9a6-126">Deploy Microsoft Defender for Endpoint on Linux using one of the following deployment methods:</span></span>
-  - <span data-ttu-id="3a9a6-127">命令列工具：</span><span class="sxs-lookup"><span data-stu-id="3a9a6-127">The command-line tool:</span></span>
-    - [<span data-ttu-id="3a9a6-128">手動部署</span><span class="sxs-lookup"><span data-stu-id="3a9a6-128">Manual deployment</span></span>](linux-install-manually.md)
-  - <span data-ttu-id="3a9a6-129">協力廠商管理工具：</span><span class="sxs-lookup"><span data-stu-id="3a9a6-129">Third-party management tools:</span></span>
-    - [<span data-ttu-id="3a9a6-130">使用 Puppet 建構管理工具進行部署</span><span class="sxs-lookup"><span data-stu-id="3a9a6-130">Deploy using Puppet configuration management tool</span></span>](linux-install-with-puppet.md)
-    - [<span data-ttu-id="3a9a6-131">使用 Ansible 建構管理工具進行部署</span><span class="sxs-lookup"><span data-stu-id="3a9a6-131">Deploy using Ansible configuration management tool</span></span>](linux-install-with-ansible.md)
+- <span data-ttu-id="a0249-125">確定您有 Microsoft Defender for Endpoint 訂閱，且您可以存取 [Microsoft defender For endpoint 入口網站](microsoft-defender-security-center.md)。</span><span class="sxs-lookup"><span data-stu-id="a0249-125">Ensure that you have a Microsoft Defender for Endpoint subscription, and that you have access to the [Microsoft Defender for Endpoint portal](microsoft-defender-security-center.md).</span></span>
+- <span data-ttu-id="a0249-126">使用下列其中一個部署方法，在 Linux 上部署 Microsoft Defender for Endpoint：</span><span class="sxs-lookup"><span data-stu-id="a0249-126">Deploy Microsoft Defender for Endpoint on Linux using one of the following deployment methods:</span></span>
+  - <span data-ttu-id="a0249-127">命令列工具：</span><span class="sxs-lookup"><span data-stu-id="a0249-127">The command-line tool:</span></span>
+    - [<span data-ttu-id="a0249-128">手動部署</span><span class="sxs-lookup"><span data-stu-id="a0249-128">Manual deployment</span></span>](linux-install-manually.md)
+  - <span data-ttu-id="a0249-129">協力廠商管理工具：</span><span class="sxs-lookup"><span data-stu-id="a0249-129">Third-party management tools:</span></span>
+    - [<span data-ttu-id="a0249-130">使用 Puppet 建構管理工具進行部署</span><span class="sxs-lookup"><span data-stu-id="a0249-130">Deploy using Puppet configuration management tool</span></span>](linux-install-with-puppet.md)
+    - [<span data-ttu-id="a0249-131">使用 Ansible 建構管理工具進行部署</span><span class="sxs-lookup"><span data-stu-id="a0249-131">Deploy using Ansible configuration management tool</span></span>](linux-install-with-ansible.md)
 
-<span data-ttu-id="3a9a6-132">如果您遇到任何安裝失敗問題，請參閱在 [Linux 上的 Microsoft Defender For Endpoint 中的安裝失敗疑難排解](linux-support-install.md)。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-132">If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).</span></span>
+<span data-ttu-id="a0249-132">如果您遇到任何安裝失敗問題，請參閱在 [Linux 上的 Microsoft Defender For Endpoint 中的安裝失敗疑難排解](linux-support-install.md)。</span><span class="sxs-lookup"><span data-stu-id="a0249-132">If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).</span></span>
 
 
 
-### <a name="system-requirements"></a><span data-ttu-id="3a9a6-133">系統需求</span><span class="sxs-lookup"><span data-stu-id="3a9a6-133">System requirements</span></span>
+### <a name="system-requirements"></a><span data-ttu-id="a0249-133">系統需求</span><span class="sxs-lookup"><span data-stu-id="a0249-133">System requirements</span></span>
 
-- <span data-ttu-id="3a9a6-134">支援的 Linux 伺服器發行和 x64 (AMD64/EM64T) 版本：</span><span class="sxs-lookup"><span data-stu-id="3a9a6-134">Supported Linux server distributions and x64 (AMD64/EM64T) versions:</span></span>
+- <span data-ttu-id="a0249-134">支援的 Linux 伺服器發行和 x64 (AMD64/EM64T) 版本：</span><span class="sxs-lookup"><span data-stu-id="a0249-134">Supported Linux server distributions and x64 (AMD64/EM64T) versions:</span></span>
 
-  - <span data-ttu-id="3a9a6-135">紅色帽子 Enterprise Linux 7.2 或更高版本</span><span class="sxs-lookup"><span data-stu-id="3a9a6-135">Red Hat Enterprise Linux 7.2 or higher</span></span>
-  - <span data-ttu-id="3a9a6-136">CentOS 7.2 或更高版本</span><span class="sxs-lookup"><span data-stu-id="3a9a6-136">CentOS 7.2 or higher</span></span>
-  - <span data-ttu-id="3a9a6-137">Ubuntu 16.04 LTS 或更高版本 LTS</span><span class="sxs-lookup"><span data-stu-id="3a9a6-137">Ubuntu 16.04 LTS or higher LTS</span></span>
-  - <span data-ttu-id="3a9a6-138">Debian 9 或更高版本</span><span class="sxs-lookup"><span data-stu-id="3a9a6-138">Debian 9 or higher</span></span>
-  - <span data-ttu-id="3a9a6-139">SUSE Linux Enterprise Server 12 或更高版本</span><span class="sxs-lookup"><span data-stu-id="3a9a6-139">SUSE Linux Enterprise Server 12 or higher</span></span>
-  - <span data-ttu-id="3a9a6-140">Oracle Linux 7.2 或更高版本</span><span class="sxs-lookup"><span data-stu-id="3a9a6-140">Oracle Linux 7.2 or higher</span></span>
+  - <span data-ttu-id="a0249-135">紅色帽子 Enterprise Linux 7.2 或更高版本</span><span class="sxs-lookup"><span data-stu-id="a0249-135">Red Hat Enterprise Linux 7.2 or higher</span></span>
+  - <span data-ttu-id="a0249-136">CentOS 7.2 或更高版本</span><span class="sxs-lookup"><span data-stu-id="a0249-136">CentOS 7.2 or higher</span></span>
+  - <span data-ttu-id="a0249-137">Ubuntu 16.04 LTS 或更高版本 LTS</span><span class="sxs-lookup"><span data-stu-id="a0249-137">Ubuntu 16.04 LTS or higher LTS</span></span>
+  - <span data-ttu-id="a0249-138">Debian 9 或更高版本</span><span class="sxs-lookup"><span data-stu-id="a0249-138">Debian 9 or higher</span></span>
+  - <span data-ttu-id="a0249-139">SUSE Linux Enterprise Server 12 或更高版本</span><span class="sxs-lookup"><span data-stu-id="a0249-139">SUSE Linux Enterprise Server 12 or higher</span></span>
+  - <span data-ttu-id="a0249-140">Oracle Linux 7.2 或更高版本</span><span class="sxs-lookup"><span data-stu-id="a0249-140">Oracle Linux 7.2 or higher</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="3a9a6-141">未明確列出的發行及版本不受支援 (，即使它們派生自正式支援的發行) 也是一樣。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-141">Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).</span></span>
+    > <span data-ttu-id="a0249-141">未明確列出的發行及版本不受支援 (，即使它們派生自正式支援的發行) 也是一樣。</span><span class="sxs-lookup"><span data-stu-id="a0249-141">Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).</span></span>
 
 
-- <span data-ttu-id="3a9a6-142">最小內核版本 3.10.0-327</span><span class="sxs-lookup"><span data-stu-id="3a9a6-142">Minimum kernel version 3.10.0-327</span></span>
+- <span data-ttu-id="a0249-142">最小內核版本 3.10.0-327</span><span class="sxs-lookup"><span data-stu-id="a0249-142">Minimum kernel version 3.10.0-327</span></span>
 
-- <span data-ttu-id="3a9a6-143">`fanotify`必須啟用內核選項</span><span class="sxs-lookup"><span data-stu-id="3a9a6-143">The `fanotify` kernel option must be enabled</span></span>
+- <span data-ttu-id="a0249-143">`fanotify`必須啟用內核選項</span><span class="sxs-lookup"><span data-stu-id="a0249-143">The `fanotify` kernel option must be enabled</span></span>
 
   > [!CAUTION]
-  > <span data-ttu-id="3a9a6-144">不支援以其他方式的安全性解決方案，並排在 Linux 上執行 Defender for Endpoint `fanotify` 。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-144">Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported.</span></span> <span data-ttu-id="3a9a6-145">這可能會造成無法預期的結果，包括懸掛作業系統。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-145">It can lead to unpredictable results, including hanging the operating system.</span></span>
+  > <span data-ttu-id="a0249-144">不支援以其他方式的安全性解決方案，並排在 Linux 上執行 Defender for Endpoint `fanotify` 。</span><span class="sxs-lookup"><span data-stu-id="a0249-144">Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported.</span></span> <span data-ttu-id="a0249-145">這可能會造成無法預期的結果，包括懸掛作業系統。</span><span class="sxs-lookup"><span data-stu-id="a0249-145">It can lead to unpredictable results, including hanging the operating system.</span></span>
 
-- <span data-ttu-id="3a9a6-146">磁碟空間： 1 GB</span><span class="sxs-lookup"><span data-stu-id="3a9a6-146">Disk space: 1 GB</span></span>
+- <span data-ttu-id="a0249-146">磁碟空間： 1 GB</span><span class="sxs-lookup"><span data-stu-id="a0249-146">Disk space: 1 GB</span></span>
 
-- <span data-ttu-id="3a9a6-147">/opt/microsoft/mdatp/sbin/wdavdaemon 需要可執行檔許可權。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-147">/opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission.</span></span> <span data-ttu-id="3a9a6-148">如需詳細資訊，請參閱 [疑難排解 Microsoft Defender for The Linux 上的 Microsoft Defender For Endpoint 的安裝問題](/microsoft-365/security/defender-endpoint/linux-support-install)。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-148">For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-install).</span></span>
+- <span data-ttu-id="a0249-147">/opt/microsoft/mdatp/sbin/wdavdaemon 需要可執行檔許可權。</span><span class="sxs-lookup"><span data-stu-id="a0249-147">/opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission.</span></span> <span data-ttu-id="a0249-148">如需詳細資訊，請參閱 [疑難排解 Microsoft Defender for The Linux 上的 Microsoft Defender For Endpoint 的安裝問題](/microsoft-365/security/defender-endpoint/linux-support-install)。</span><span class="sxs-lookup"><span data-stu-id="a0249-148">For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-install).</span></span>
 
-- <span data-ttu-id="3a9a6-149">記憶體： 1 GB</span><span class="sxs-lookup"><span data-stu-id="3a9a6-149">Memory: 1 GB</span></span>
+- <span data-ttu-id="a0249-149">記憶體： 1 GB</span><span class="sxs-lookup"><span data-stu-id="a0249-149">Memory: 1 GB</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="3a9a6-150">請確認您在/var. 中有可用的磁碟空間。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-150">Please make sure that you have free disk space in /var.</span></span>
+    > <span data-ttu-id="a0249-150">請確認您在/var. 中有可用的磁碟空間。</span><span class="sxs-lookup"><span data-stu-id="a0249-150">Please make sure that you have free disk space in /var.</span></span>
 
-- <span data-ttu-id="3a9a6-151">目前的解決方案為下列檔案系統類型提供即時保護：</span><span class="sxs-lookup"><span data-stu-id="3a9a6-151">The solution currently provides real-time protection for the following file system types:</span></span>
+- <span data-ttu-id="a0249-151">目前的解決方案為下列檔案系統類型提供即時保護：</span><span class="sxs-lookup"><span data-stu-id="a0249-151">The solution currently provides real-time protection for the following file system types:</span></span>
 
   - `btrfs`
   - `ecryptfs`
@@ -125,44 +125,44 @@ ms.locfileid: "52843515"
   - `vfat`
   - `xfs`
 
-<span data-ttu-id="3a9a6-152">在您啟用服務之後，您可能需要設定網路或防火牆，以允許它和您的端點之間的輸出連線。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-152">After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.</span></span>
+<span data-ttu-id="a0249-152">在您啟用服務之後，您可能需要設定網路或防火牆，以允許它和您的端點之間的輸出連線。</span><span class="sxs-lookup"><span data-stu-id="a0249-152">After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.</span></span>
 
-- <span data-ttu-id="3a9a6-153">必須啟用審核架構 (`auditd`) 。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-153">Audit framework (`auditd`) must be enabled.</span></span>
+- <span data-ttu-id="a0249-153">必須啟用審核架構 (`auditd`) 。</span><span class="sxs-lookup"><span data-stu-id="a0249-153">Audit framework (`auditd`) must be enabled.</span></span>
   > [!NOTE]
-  > <span data-ttu-id="3a9a6-154">新增至的規則所捕獲的系統事件 `/etc/audit/rules.d/` 會新增至 `audit.log` (s) ，而且可能會影響主機審核和上游集合。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-154">System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection.</span></span> <span data-ttu-id="3a9a6-155">在 Linux 上由 Microsoft Defender for Endpoint 新增的事件將會以 `mdatp` 金鑰標示。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-155">Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.</span></span>
+  > <span data-ttu-id="a0249-154">新增至的規則所捕獲的系統事件 `/etc/audit/rules.d/` 會新增至 `audit.log` (s) ，而且可能會影響主機審核和上游集合。</span><span class="sxs-lookup"><span data-stu-id="a0249-154">System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection.</span></span> <span data-ttu-id="a0249-155">在 Linux 上由 Microsoft Defender for Endpoint 新增的事件將會以 `mdatp` 金鑰標示。</span><span class="sxs-lookup"><span data-stu-id="a0249-155">Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.</span></span>
 
-### <a name="network-connections"></a><span data-ttu-id="3a9a6-156">網路連線</span><span class="sxs-lookup"><span data-stu-id="3a9a6-156">Network connections</span></span>
+### <a name="network-connections"></a><span data-ttu-id="a0249-156">網路連線</span><span class="sxs-lookup"><span data-stu-id="a0249-156">Network connections</span></span>
 
-<span data-ttu-id="3a9a6-157">下列可供下載的試算表會列出您網路必須能夠連線的服務及其相關 URLs。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-157">The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to.</span></span> <span data-ttu-id="3a9a6-158">您應確定沒有防火牆或網路篩選規則可拒絕這些 URLs 的存取權。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-158">You should ensure that there are no firewall or network filtering rules that would deny access to these URLs.</span></span> <span data-ttu-id="3a9a6-159">如果有，您可能需要專門為其建立一個 *allow* 規則。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-159">If there are, you may need to create an *allow* rule specifically for them.</span></span>
+<span data-ttu-id="a0249-157">下列可供下載的試算表會列出您網路必須能夠連線的服務及其相關 URLs。</span><span class="sxs-lookup"><span data-stu-id="a0249-157">The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to.</span></span> <span data-ttu-id="a0249-158">您應確定沒有防火牆或網路篩選規則可拒絕這些 URLs 的存取權。</span><span class="sxs-lookup"><span data-stu-id="a0249-158">You should ensure that there are no firewall or network filtering rules that would deny access to these URLs.</span></span> <span data-ttu-id="a0249-159">如果有，您可能需要專門為其建立一個 *allow* 規則。</span><span class="sxs-lookup"><span data-stu-id="a0249-159">If there are, you may need to create an *allow* rule specifically for them.</span></span>
 
-| <span data-ttu-id="3a9a6-160">網域清單的試算表</span><span class="sxs-lookup"><span data-stu-id="3a9a6-160">Spreadsheet of domains list</span></span> | <span data-ttu-id="3a9a6-161">描述</span><span class="sxs-lookup"><span data-stu-id="3a9a6-161">Description</span></span> |
+| <span data-ttu-id="a0249-160">網域清單的試算表</span><span class="sxs-lookup"><span data-stu-id="a0249-160">Spreadsheet of domains list</span></span> | <span data-ttu-id="a0249-161">描述</span><span class="sxs-lookup"><span data-stu-id="a0249-161">Description</span></span> |
 |:-----|:-----|
-|![Microsoft Defender for Endpoint URLs 試算表的縮圖影像](images/mdatp-urls.png)<br/>  | <span data-ttu-id="3a9a6-163">服務位置、地理位置和作業系統的特定 DNS 記錄試算表。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-163">Spreadsheet of specific DNS records for service locations, geographic locations, and OS.</span></span> <br><br>[<span data-ttu-id="3a9a6-164">在這裡下載試算表。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-164">Download the spreadsheet here.</span></span>](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+|![Microsoft Defender for Endpoint URLs 試算表的縮圖影像](images/mdatp-urls.png)<br/>  | <span data-ttu-id="a0249-163">服務位置、地理位置和作業系統的特定 DNS 記錄試算表。</span><span class="sxs-lookup"><span data-stu-id="a0249-163">Spreadsheet of specific DNS records for service locations, geographic locations, and OS.</span></span> <br><br>[<span data-ttu-id="a0249-164">在這裡下載試算表。</span><span class="sxs-lookup"><span data-stu-id="a0249-164">Download the spreadsheet here.</span></span>](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 > [!NOTE]
-> <span data-ttu-id="3a9a6-165">如需詳細的 URL 清單，請參閱 [設定 proxy 和網際網路連線設定](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-165">For a more specific URL list, see [Configure proxy and internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).</span></span>
+> <span data-ttu-id="a0249-165">如需詳細的 URL 清單，請參閱 [設定 proxy 和網際網路連線設定](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。</span><span class="sxs-lookup"><span data-stu-id="a0249-165">For a more specific URL list, see [Configure proxy and internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).</span></span>
 
-<span data-ttu-id="3a9a6-166">「！的 Defender」可以使用下列探索方法探索 proxy 伺服器：</span><span class="sxs-lookup"><span data-stu-id="3a9a6-166">Defender for Endpoint can discover a proxy server by using the following discovery methods:</span></span>
-- <span data-ttu-id="3a9a6-167">透明Proxy</span><span class="sxs-lookup"><span data-stu-id="3a9a6-167">Transparent proxy</span></span>
-- <span data-ttu-id="3a9a6-168">手動靜態 proxy 設定</span><span class="sxs-lookup"><span data-stu-id="3a9a6-168">Manual static proxy configuration</span></span>
+<span data-ttu-id="a0249-166">「！的 Defender」可以使用下列探索方法探索 proxy 伺服器：</span><span class="sxs-lookup"><span data-stu-id="a0249-166">Defender for Endpoint can discover a proxy server by using the following discovery methods:</span></span>
+- <span data-ttu-id="a0249-167">透明Proxy</span><span class="sxs-lookup"><span data-stu-id="a0249-167">Transparent proxy</span></span>
+- <span data-ttu-id="a0249-168">手動靜態 proxy 設定</span><span class="sxs-lookup"><span data-stu-id="a0249-168">Manual static proxy configuration</span></span>
 
-<span data-ttu-id="3a9a6-169">如果 proxy 或防火牆封鎖匿名流量，請確定先前所列的 URLs 允許匿名流量。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-169">If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.</span></span> <span data-ttu-id="3a9a6-170">針對透明 proxy，不需要其他設定供 Defender 用於端點。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-170">For transparent proxies, no additional configuration is needed for Defender for Endpoint.</span></span> <span data-ttu-id="3a9a6-171">針對靜態 proxy，依照 [手動靜態 proxy](linux-static-proxy-configuration.md)設定中的步驟進行。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-171">For static proxy, follow the steps in [Manual Static Proxy Configuration](linux-static-proxy-configuration.md).</span></span>
+<span data-ttu-id="a0249-169">如果 proxy 或防火牆封鎖匿名流量，請確定先前所列的 URLs 允許匿名流量。</span><span class="sxs-lookup"><span data-stu-id="a0249-169">If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.</span></span> <span data-ttu-id="a0249-170">針對透明 proxy，不需要其他設定供 Defender 用於端點。</span><span class="sxs-lookup"><span data-stu-id="a0249-170">For transparent proxies, no additional configuration is needed for Defender for Endpoint.</span></span> <span data-ttu-id="a0249-171">針對靜態 proxy，依照 [手動靜態 proxy](linux-static-proxy-configuration.md)設定中的步驟進行。</span><span class="sxs-lookup"><span data-stu-id="a0249-171">For static proxy, follow the steps in [Manual Static Proxy Configuration](linux-static-proxy-configuration.md).</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="3a9a6-172">不支援 PAC、WPAD 及已驗證的 proxy。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-172">PAC, WPAD, and authenticated proxies are not supported.</span></span> <span data-ttu-id="3a9a6-173">確定只使用靜態 proxy 或透明 proxy。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-173">Ensure that only a static proxy or transparent proxy is being used.</span></span>
+> <span data-ttu-id="a0249-172">不支援 PAC、WPAD 及已驗證的 proxy。</span><span class="sxs-lookup"><span data-stu-id="a0249-172">PAC, WPAD, and authenticated proxies are not supported.</span></span> <span data-ttu-id="a0249-173">確定只使用靜態 proxy 或透明 proxy。</span><span class="sxs-lookup"><span data-stu-id="a0249-173">Ensure that only a static proxy or transparent proxy is being used.</span></span>
 >
-> <span data-ttu-id="3a9a6-174">出於安全性原因，也不支援 SSL 檢查和截取 proxy。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-174">SSL inspection and intercepting proxies are also not supported for security reasons.</span></span> <span data-ttu-id="3a9a6-175">設定 SSL 檢查和 proxy 伺服器的例外狀況，以直接將來自 Linux 之 Defender 的資料傳遞至相關的 URLs，而不需截獲。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-175">Configure an exception for SSL inspection and your proxy server to directly pass through data from Defender for Endpoint on Linux to the relevant URLs without interception.</span></span> <span data-ttu-id="3a9a6-176">將您的截取憑證新增至全域存放區將不允許截取。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-176">Adding your interception certificate to the global store will not allow for interception.</span></span>
+> <span data-ttu-id="a0249-174">出於安全性原因，也不支援 SSL 檢查和截取 proxy。</span><span class="sxs-lookup"><span data-stu-id="a0249-174">SSL inspection and intercepting proxies are also not supported for security reasons.</span></span> <span data-ttu-id="a0249-175">設定 SSL 檢查和 proxy 伺服器的例外狀況，以直接將來自 Linux 之 Defender 的資料傳遞至相關的 URLs，而不需截獲。</span><span class="sxs-lookup"><span data-stu-id="a0249-175">Configure an exception for SSL inspection and your proxy server to directly pass through data from Defender for Endpoint on Linux to the relevant URLs without interception.</span></span> <span data-ttu-id="a0249-176">將您的截取憑證新增至全域存放區將不允許截取。</span><span class="sxs-lookup"><span data-stu-id="a0249-176">Adding your interception certificate to the global store will not allow for interception.</span></span>
 
-<span data-ttu-id="3a9a6-177">如需疑難排解步驟，請參閱 [疑難排解 Microsoft Defender for a For Endpoint On Linux 上的 cloud connectivity connectivity 問題](linux-support-connectivity.md)。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-177">For troubleshooting steps, see [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).</span></span>
+<span data-ttu-id="a0249-177">如需疑難排解步驟，請參閱 [疑難排解 Microsoft Defender for a For Endpoint On Linux 上的 cloud connectivity connectivity 問題](linux-support-connectivity.md)。</span><span class="sxs-lookup"><span data-stu-id="a0249-177">For troubleshooting steps, see [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).</span></span>
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="3a9a6-178">如何在 Linux 上更新 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="3a9a6-178">How to update Microsoft Defender for Endpoint on Linux</span></span>
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="a0249-178">如何在 Linux 上更新 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="a0249-178">How to update Microsoft Defender for Endpoint on Linux</span></span>
 
-<span data-ttu-id="3a9a6-179">Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供新功能。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-179">Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.</span></span> <span data-ttu-id="3a9a6-180">若要在 Linux 上更新 Microsoft Defender for Endpoint，請參閱 [在 linux 上為 Microsoft defender For Endpoint 部署更新](linux-updates.md)。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-180">To update Microsoft Defender for Endpoint on Linux, refer to [Deploy updates for Microsoft Defender for Endpoint on Linux](linux-updates.md).</span></span>
+<span data-ttu-id="a0249-179">Microsoft 會定期發行軟體更新，以提升效能、安全性，並提供新功能。</span><span class="sxs-lookup"><span data-stu-id="a0249-179">Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.</span></span> <span data-ttu-id="a0249-180">若要在 Linux 上更新 Microsoft Defender for Endpoint，請參閱 [在 linux 上為 Microsoft defender For Endpoint 部署更新](linux-updates.md)。</span><span class="sxs-lookup"><span data-stu-id="a0249-180">To update Microsoft Defender for Endpoint on Linux, refer to [Deploy updates for Microsoft Defender for Endpoint on Linux](linux-updates.md).</span></span>
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="3a9a6-181">設定 Linux 上適用於端點的 Microsoft Defender 的方式</span><span class="sxs-lookup"><span data-stu-id="3a9a6-181">How to configure Microsoft Defender for Endpoint on Linux</span></span>
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="a0249-181">設定 Linux 上適用於端點的 Microsoft Defender 的方式</span><span class="sxs-lookup"><span data-stu-id="a0249-181">How to configure Microsoft Defender for Endpoint on Linux</span></span>
 
-<span data-ttu-id="3a9a6-182">有關如何在企業環境中設定產品的指引，可在 [Linux 上的 Microsoft Defender For Endpoint 的 [設定偏好設定](linux-preferences.md)] 中取得。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-182">Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).</span></span>
+<span data-ttu-id="a0249-182">有關如何在企業環境中設定產品的指引，可在 [Linux 上的 Microsoft Defender For Endpoint 的 [設定偏好設定](linux-preferences.md)] 中取得。</span><span class="sxs-lookup"><span data-stu-id="a0249-182">Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).</span></span>
 
-## <a name="resources"></a><span data-ttu-id="3a9a6-183">資源</span><span class="sxs-lookup"><span data-stu-id="3a9a6-183">Resources</span></span>
+## <a name="resources"></a><span data-ttu-id="a0249-183">資源</span><span class="sxs-lookup"><span data-stu-id="a0249-183">Resources</span></span>
 
-- <span data-ttu-id="3a9a6-184">如需有關記錄、卸載或其他主題的詳細資訊，請參閱 [Resources](linux-resources.md)。</span><span class="sxs-lookup"><span data-stu-id="3a9a6-184">For more information about logging, uninstalling, or other topics, see [Resources](linux-resources.md).</span></span>
+- <span data-ttu-id="a0249-184">如需有關記錄、卸載或其他主題的詳細資訊，請參閱 [Resources](linux-resources.md)。</span><span class="sxs-lookup"><span data-stu-id="a0249-184">For more information about logging, uninstalling, or other topics, see [Resources](linux-resources.md).</span></span>
