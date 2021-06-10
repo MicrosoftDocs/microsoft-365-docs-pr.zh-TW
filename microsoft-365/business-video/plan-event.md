@@ -27,41 +27,41 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578720"
 ---
-# <a name="use-microsoft-planner-to-plan-an-event"></a><span data-ttu-id="497ae-103">使用 Microsoft Planner 規劃事件</span><span class="sxs-lookup"><span data-stu-id="497ae-103">Use Microsoft Planner to plan an event</span></span>
+# <a name="use-microsoft-planner-to-plan-an-event"></a><span data-ttu-id="e94db-103">使用 Microsoft Planner 規劃事件</span><span class="sxs-lookup"><span data-stu-id="e94db-103">Use Microsoft Planner to plan an event</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c8a41e1a-c30d-4adb-ab32-6eac922d0ec0?autoplay=false]
 
-## <a name="try-it"></a><span data-ttu-id="497ae-104">試試看吧！</span><span class="sxs-lookup"><span data-stu-id="497ae-104">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="e94db-104">試試看吧！</span><span class="sxs-lookup"><span data-stu-id="e94db-104">Try it!</span></span>
 
-<span data-ttu-id="497ae-105">使用 Microsoft Planner 規劃事件，例如追蹤產品投放市場。</span><span class="sxs-lookup"><span data-stu-id="497ae-105">Use Microsoft Planner to plan an event, like tracking a product launch.</span></span>
+<span data-ttu-id="e94db-105">使用 Microsoft Planner 規劃事件，例如追蹤產品投放市場。</span><span class="sxs-lookup"><span data-stu-id="e94db-105">Use Microsoft Planner to plan an event, like tracking a product launch.</span></span>
 
-### <a name="work-with-buckets"></a><span data-ttu-id="497ae-106">使用桶</span><span class="sxs-lookup"><span data-stu-id="497ae-106">Work with buckets</span></span>
+### <a name="work-with-buckets"></a><span data-ttu-id="e94db-106">使用桶</span><span class="sxs-lookup"><span data-stu-id="e94db-106">Work with buckets</span></span>
 
-<span data-ttu-id="497ae-107">使用 bucket 依類型排序任務，例如事件規劃、行銷和 ad 宣傳品，以及 PR。</span><span class="sxs-lookup"><span data-stu-id="497ae-107">Use buckets to sort tasks by type, such as event planning, marketing and ad collateral, and PR.</span></span>
+<span data-ttu-id="e94db-107">使用 bucket 依類型排序任務，例如事件規劃、行銷和 ad 宣傳品，以及 PR。</span><span class="sxs-lookup"><span data-stu-id="e94db-107">Use buckets to sort tasks by type, such as event planning, marketing and ad collateral, and PR.</span></span>
 
-1. <span data-ttu-id="497ae-108">選取 [新增  **桶**  ]，然後輸入新的任務類別。</span><span class="sxs-lookup"><span data-stu-id="497ae-108">Select  **Add new bucket**  and type a new task category.</span></span>
-2. <span data-ttu-id="497ae-109">選取  **+**  可將任務新增至桶，然後輸入名稱。</span><span class="sxs-lookup"><span data-stu-id="497ae-109">Select  **+**  to add tasks to a bucket, and type a name.</span></span>
-3. <span data-ttu-id="497ae-110">選取 [  **新增任務**]。</span><span class="sxs-lookup"><span data-stu-id="497ae-110">Select  **Add Task**.</span></span>
+1. <span data-ttu-id="e94db-108">選取 [新增  **桶**  ]，然後輸入新的任務類別。</span><span class="sxs-lookup"><span data-stu-id="e94db-108">Select  **Add new bucket**  and type a new task category.</span></span>
+2. <span data-ttu-id="e94db-109">選取  **+**  可將任務新增至桶，然後輸入名稱。</span><span class="sxs-lookup"><span data-stu-id="e94db-109">Select  **+**  to add tasks to a bucket, and type a name.</span></span>
+3. <span data-ttu-id="e94db-110">選取 [  **新增任務**]。</span><span class="sxs-lookup"><span data-stu-id="e94db-110">Select  **Add Task**.</span></span>
 
-### <a name="work-with-labels"></a><span data-ttu-id="497ae-111">使用標籤</span><span class="sxs-lookup"><span data-stu-id="497ae-111">Work with labels</span></span>
+### <a name="work-with-labels"></a><span data-ttu-id="e94db-111">使用標籤</span><span class="sxs-lookup"><span data-stu-id="e94db-111">Work with labels</span></span>
 
-<span data-ttu-id="497ae-112">使用標籤來查看需要您注意的工作。</span><span class="sxs-lookup"><span data-stu-id="497ae-112">Use labels to see which tasks need your attention.</span></span>
+<span data-ttu-id="e94db-112">使用標籤來查看需要您注意的工作。</span><span class="sxs-lookup"><span data-stu-id="e94db-112">Use labels to see which tasks need your attention.</span></span>
 
-1. <span data-ttu-id="497ae-113">輸入標籤的名稱。</span><span class="sxs-lookup"><span data-stu-id="497ae-113">Type in names for your labels.</span></span>
-2. <span data-ttu-id="497ae-114">選取彩色方塊以移除或新增標籤至任務。</span><span class="sxs-lookup"><span data-stu-id="497ae-114">Select a colored box to remove or add a label to a task.</span></span>
+1. <span data-ttu-id="e94db-113">輸入標籤的名稱。</span><span class="sxs-lookup"><span data-stu-id="e94db-113">Type in names for your labels.</span></span>
+2. <span data-ttu-id="e94db-114">選取彩色方塊以移除或新增標籤至任務。</span><span class="sxs-lookup"><span data-stu-id="e94db-114">Select a colored box to remove or add a label to a task.</span></span>
 
-## <a name="add-a-comment"></a><span data-ttu-id="497ae-115">Add a comment</span><span class="sxs-lookup"><span data-stu-id="497ae-115">Add a comment</span></span>
+## <a name="add-a-comment"></a><span data-ttu-id="e94db-115">Add a comment</span><span class="sxs-lookup"><span data-stu-id="e94db-115">Add a comment</span></span>
 
-<span data-ttu-id="497ae-116">發佈批註，以與指派給他們的任務一起討論。</span><span class="sxs-lookup"><span data-stu-id="497ae-116">Post a comment to discuss a task with the people it's assigned to.</span></span>
+<span data-ttu-id="e94db-116">發佈批註，以與指派給他們的任務一起討論。</span><span class="sxs-lookup"><span data-stu-id="e94db-116">Post a comment to discuss a task with the people it's assigned to.</span></span>
 
-1. <span data-ttu-id="497ae-117">在 [  **批註**  ] 方塊中輸入訊息。</span><span class="sxs-lookup"><span data-stu-id="497ae-117">Type a message in the  **Comments**  box.</span></span>
-2. <span data-ttu-id="497ae-118">選取 [  **傳送**]。</span><span class="sxs-lookup"><span data-stu-id="497ae-118">Select  **Send**.</span></span>
+1. <span data-ttu-id="e94db-117">在 [  **批註**  ] 方塊中輸入訊息。</span><span class="sxs-lookup"><span data-stu-id="e94db-117">Type a message in the  **Comments**  box.</span></span>
+2. <span data-ttu-id="e94db-118">選取 [  **傳送**]。</span><span class="sxs-lookup"><span data-stu-id="e94db-118">Select  **Send**.</span></span>
 
-### <a name="keep-track-of-tasks"></a><span data-ttu-id="497ae-119">追蹤任務</span><span class="sxs-lookup"><span data-stu-id="497ae-119">Keep track of tasks</span></span>
+### <a name="keep-track-of-tasks"></a><span data-ttu-id="e94db-119">追蹤任務</span><span class="sxs-lookup"><span data-stu-id="e94db-119">Keep track of tasks</span></span>
 
-<span data-ttu-id="497ae-120">您可以使用  **圖表**  和  **版塊**  視圖來監視每個小組成員和整個專案的進度，或排序及組織任務。</span><span class="sxs-lookup"><span data-stu-id="497ae-120">Use  **Charts**  and  **Board**  view to monitor progress for each team member and the overall project, or to sort and organize tasks.</span></span>
+<span data-ttu-id="e94db-120">您可以使用  **圖表**  和  **版塊**  視圖來監視每個小組成員和整個專案的進度，或排序及組織任務。</span><span class="sxs-lookup"><span data-stu-id="e94db-120">Use  **Charts**  and  **Board**  view to monitor progress for each team member and the overall project, or to sort and organize tasks.</span></span>
 
-- <span data-ttu-id="497ae-121">選取 [  **圖表**]，再選取 [ **群組依據**]，最後查看 [ **到期日**  ]，以查看後續的任務。</span><span class="sxs-lookup"><span data-stu-id="497ae-121">Select  **Charts**, then **Group by**, and finally **Due date**  to see which task is due next.</span></span>
-- <span data-ttu-id="497ae-122">選取 [  **電路板**]，然後 **按 [群組依據**] **，最後按進度排序**  任務。</span><span class="sxs-lookup"><span data-stu-id="497ae-122">Select  **Board**, then **Group by**, and finally **Progress**  to sort tasks by progress.</span></span>
+- <span data-ttu-id="e94db-121">選取 [  **圖表**]，再選取 [ **群組依據**]，最後查看 [ **到期日**  ]，以查看後續的任務。</span><span class="sxs-lookup"><span data-stu-id="e94db-121">Select  **Charts**, then **Group by**, and finally **Due date**  to see which task is due next.</span></span>
+- <span data-ttu-id="e94db-122">選取 [  **電路板**]，然後 **按 [群組依據**] **，最後按進度排序**  任務。</span><span class="sxs-lookup"><span data-stu-id="e94db-122">Select  **Board**, then **Group by**, and finally **Progress**  to sort tasks by progress.</span></span>
 
-<span data-ttu-id="497ae-123">**附注：**  工作是以 [  **未開始**]、[  **正在進行** 中] 或 [  **已完成**  ] 的方式進行組織，這樣您就會知道何時準備好啟動產品。</span><span class="sxs-lookup"><span data-stu-id="497ae-123">**Note:**  Tasks are organized by  **Not started**,  **In progress**, and  **Completed**  so you'll know when you're ready to launch your product.</span></span>
+<span data-ttu-id="e94db-123">**附注：**  工作是以 [  **未開始**]、[  **正在進行** 中] 或 [  **已完成**  ] 的方式進行組織，這樣您就會知道何時準備好啟動產品。</span><span class="sxs-lookup"><span data-stu-id="e94db-123">**Note:**  Tasks are organized by  **Not started**,  **In progress**, and  **Completed**  so you'll know when you're ready to launch your product.</span></span>

@@ -32,13 +32,13 @@ landingContent:
       url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
-    - text: 設定 Windows 10 裝置的自動註冊
+    - text: 設定 Windows 10 裝置的自動登記
       url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: 設定 Android 登記
       url: /mem/intune/enrollment/android-enroll
     - text: 設定 iOS/iPadOS 登記
       url: /mem/intune/enrollment/ios-enroll
-- title: 使用 Microsoft 365 商務版特優管理裝置和應用程式資料
+- title: 使用 Microsoft 365 商務進階版管理裝置和應用程式資料
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -52,7 +52,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft 365 for enterprise 一覽
+    - text: enterprise 的 Microsoft 365 綜述
       url: ../../enterprise/microsoft-365-overview.md
     - text: 適用于企業的 Microsoft 365 裝置管理道路地圖
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
