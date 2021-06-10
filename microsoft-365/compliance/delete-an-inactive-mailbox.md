@@ -212,7 +212,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
 
 - **移除保留後，是否會永久刪除非作用中的信箱？** 先前非作用中的信箱會在虛刪除狀態中提供183天。 在183天之後，信箱將會標示為永久刪除。
 
-- **移除保留後，如何顯示非使用中信箱的相關資訊？** 在移除保留，且非作用中的信箱回復回虛刪除信箱之後，就不會使用  *InactiveMailboxOnly*  參數搭配 **Get-Mailbox** Cmdlet 來傳回。 不過，您可以使用 **Get-Mailbox-SoftDeletedMailbox** 命令來顯示信箱的相關資訊。 例如:
+- **移除保留後，如何顯示非使用中信箱的相關資訊？** 在移除保留，且非作用中的信箱回復回虛刪除信箱之後，就不會使用  *InactiveMailboxOnly*  參數搭配 **Get-Mailbox** Cmdlet 來傳回。 不過，您可以使用 **Get-Mailbox-SoftDeletedMailbox** 命令來顯示信箱的相關資訊。 例如：
 
   ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In

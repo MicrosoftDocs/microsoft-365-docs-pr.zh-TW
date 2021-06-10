@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 06/02/2021
 ms.topic: article
-ms.openlocfilehash: 10351d97ba72945f929e042dc72a37724a1df291
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e78b21b751aa398ed4449fb398f12b60f1929873
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769602"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866676"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中測試攻擊面減少
 
@@ -46,7 +46,7 @@ ms.locfileid: "52769602"
 > [!TIP]
 > 您也可以在[demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)流覽 Windows Defender 的 Testground 網站，確認功能是否正常運作，並查看其運作方式。
 
- **審核選項** | **如何啟用稽核模式** | **如何查看事件**
+| 審核選項 | 如何啟用稽核模式 | 如何查看事件 |
 |---------|---------|---------|
 | 審核適用于所有事件 | [啟用受控資料夾存取權](enable-controlled-folders.md) | [受控資料夾存取事件](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
 | 審核適用于個別規則 | [啟用受攻擊面縮小規則](enable-attack-surface-reduction.md) | [攻擊面減少規則事件](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)

@@ -40,7 +40,7 @@ DLP 原則中的條件和例外情況可識別原則所套用的敏感專案。 
 下列各節中的表格說明 DLP 中提供的條件和例外狀況。
 
 - [寄件者](#senders)
-- [Recipients](#recipients)
+- [收件者](#recipients)
 - [郵件主題或本文](#message-subject-or-body)
 - [Attachments](#attachments)
 - [郵件標頭](#message-headers)

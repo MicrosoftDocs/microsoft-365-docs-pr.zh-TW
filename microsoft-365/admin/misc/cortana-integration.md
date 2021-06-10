@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 具有有效工作或學校帳戶的使用者可以在 Microsoft 365 體驗中取得 Cortana，以符合企業級的安全性承諾 Office 365。
-ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e4b934a8991837637869074d43df89e70b09924d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635795"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866616"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -89,19 +89,17 @@ Windows 中的 Cortana 可協助使用者更好地管理其排程和工作。 �
 
 **系統管理控制**
 
-預設會為承租人啟用 Cortana 語音協助。 系統管理員可以透過 (TeamsCortanaPolicy) 的原則，控制其承租人中的使用者可以使用 Cortana 語音協助 Teams。 這個原則可以設定為使用者帳戶層級或租使用者層級。 系統管理員也可以使用此原則控制中的 [CortanaVoiceInvocationMode] 欄位，判斷 Cortana 是否已停用、只使用推入按鈕 (叫用，或使用喚醒字呼叫啟用（如 Microsoft Teams 顯示) 的裝置）。 請注意，在第一次發行的第一個版本中，以英文 Microsoft 365 企業版使用者的初次發行時，Teams 行動應用程式將不支援喚醒 word 啟用，但未來會受到支援。
+預設會為承租人啟用 Cortana 語音協助。 系統管理員可以透過 (TeamsCortanaPolicy) 的原則，控制其承租人中的使用者可以使用 Cortana 語音協助 Teams。 這個原則可以設定為使用者帳戶層級或租使用者層級。 系統管理員也可以使用此原則控制中的 [CortanaVoiceInvocationMode] 欄位，判斷 Cortana 是否已停用、只使用推入按鈕 (叫用，或使用喚醒字呼叫啟用（如 Microsoft Teams 顯示) 的裝置）。 
 
 **使用者控制項**
 
-個別使用者可以在 Teams 行動應用程式中，按一下 [麥克風] 按鈕，以嘗試使用 Cortana 語音協助。 在 Microsoft Teams 顯示裝置上，只要口述 &#8220;Cortana，他們就可以嘗試使用 cortana 語音協助。 &#8221; 使用者也可以透過 Teams 行動應用程式或 Microsoft Teams 顯示中的設定來控制是否要為裝置啟用其裝置 Teams 的 cortana： 
+個別使用者可以在 Teams 行動應用程式中，按一下 [麥克風] 按鈕，以嘗試使用 Cortana 語音協助。 在 Microsoft Teams 顯示裝置上，只要口述 &#8220;Cortana，他們就可以嘗試使用 cortana 語音協助。 &#8221; 使用者也可以控制 cortana 是否回應喚醒字詞的呼叫。 
 
-1. 開啟 Teams 行動裝置 app，或前往 Microsoft Teams 顯示器的 [環境 (主) ] 畫面。
+1.  開啟 Teams mobile
+2.  移至設定
+3.  選取 Cortana
+4.  切換語音啟用切換
 
-2. 在 Teams 行動裝置應用程式中，移至 **設定**。 在 [Microsoft Teams 顯示] 上，選取使用者頭像，然後選取 [設定]。 如果已啟用 Cortana，請說 &#8220;Cortana，請移至設定。 &#8221;
-
-3. 選取 [ **Cortana**]。
-
-4. 視您是否要在裝置上的小娜語音協助，將切換移至 [ **開啟** ] 或 [ **關閉**]。
 
 [深入瞭解 Teams 中的 Cortana 語音協助](/microsoftteams/cortana-in-teams)
 

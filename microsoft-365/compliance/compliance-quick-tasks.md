@@ -146,7 +146,7 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 
 如需定義自訂敏感資訊類型的逐步指引，請參閱在 [安全性 & 規範中心建立自訂機密資訊類型](./create-a-custom-sensitive-information-type.md)。
 
-### <a name="prevent-data-loss"></a>防止資料遺失
+### <a name="prevent-data-loss"></a>防止資料外洩
 
 [資料遺失防護 (DLP) 原則](dlp-learn-about-dlp.md)可讓您識別、監視和自動保護整個 Microsoft 365 組織中的機密資訊。 使用 DLP 原則在 Microsoft 服務中識別敏感專案，避免意外共用機密專案，以及協助使用者瞭解如何保持相容性，而不中斷其工作流程。
 

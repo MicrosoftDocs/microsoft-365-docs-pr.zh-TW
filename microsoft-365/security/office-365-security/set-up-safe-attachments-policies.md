@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender for Office 365 中設定安全附件原則
+title: 在 Microsoft Defender 中為 Office 365 設定安全附件原則
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -25,7 +25,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51204657"
 ---
-# <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中設定安全附件原則
+# <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 中為 Office 365 設定安全附件原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,13 +34,13 @@ ms.locfileid: "51204657"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](whats-new-in-defender-for-office-365.md) 的商務客戶。 如果您是尋找 Outlook 中附件掃描相關資訊的家用使用者，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](whats-new-in-defender-for-office-365.md) 的商務客戶。 如果您是尋找 Outlook 中附件掃描相關資訊的家用使用者，請參閱[Advanced Outlook .com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-安全附件是 [Microsoft Defender For Office 365](whats-new-in-defender-for-office-365.md) 中的一項功能，可在 [Exchange ONLINE protection (EOP) ](anti-malware-protection.md)中，但在傳送給收件者之前，使用虛擬環境檢查輸入電子郵件中的附件。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的安全附件](safe-attachments.md)。
+安全附件是[Microsoft Defender](whats-new-in-defender-for-office-365.md)中的功能 Office 365，可使用虛擬環境在[Exchange Online Protection (EOP) 中的反惡意程式碼保護](anti-malware-protection.md)（但傳送至收件者）之後，檢查輸入電子郵件中的附件。 如需詳細資訊，請參閱[適用于 Microsoft Defender 的 Office 365 中的安全附件](safe-attachments.md)。
 
 沒有內建或預設的安全附件原則。 若要取得安全附件掃描電子郵件附件，您需要建立一個或多個安全附件原則，如本文所述。
 
-您可以使用 Exchange Online 中的信箱，在安全性 & 合規性中心或 PowerShell (Exchange Online 365 PowerShell 中設定安全附件原則;獨立 EOP PowerShell 適用于沒有 Exchange Online 信箱的組織，但使用 Defender for Office 365 附加元件訂閱) 。
+您可以在安全性 & 合規性中心或 PowerShell 中設定安全附件原則，以在 PowerShell 中使用信箱的合格 Microsoft 365 組織 (Exchange Online Exchange Online;組織的獨立 EOP PowerShell，但沒有 Exchange Online 信箱，但使用 Defender Office 365 附加元件訂閱) 。
 
 安全附件原則的基本元素如下：
 
@@ -53,10 +53,10 @@ ms.locfileid: "51204657"
 - 當您修改安全附件原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改安全附件規則。 所有其他設定會修改關聯的安全附件原則。
 - 當您移除安全附件原則時，會移除安全附件規則和相關聯的安全附件原則。
 
-在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全附件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) 一節。
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的[使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全附件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies)一節。
 
 > [!NOTE]
-> 在 [安全附件設定] 的 [全域設定] 區域中，設定不會相依于安全附件原則的功能。 如需相關指示，請參閱在[microsoft 365 E5 中](safe-docs.md)[開啟 SharePoint、OneDrive 和 Microsoft 小組和安全檔的安全附件](turn-on-mdo-for-spo-odb-and-teams.md)。
+> 在 [安全附件設定] 的 [全域設定] 區域中，設定不會相依于安全附件原則的功能。 如需相關指示，請參閱開啟[Microsoft 365 E5 中](safe-docs.md) [SharePoint、OneDrive 及 Microsoft Teams 和安全檔的安全附件](turn-on-mdo-for-spo-odb-and-teams.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -65,10 +65,10 @@ ms.locfileid: "51204657"
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派許可權，才能執行本文中的程式：
-  - 若要建立、修改和刪除安全附件原則，您必須是 Security & 合規性中心內的「 **組織管理** 」或「 **安全性管理員** 」角色群組成員， **以及** Exchange Online 中的「 **組織管理** 」角色群組的成員。
+  - 若要建立、修改和刪除安全附件原則，您必須是 Security & 合規性中心的「**組織管理**」或「**安全性管理員**」角色群組的成員，**以及** Exchange Online 中的「**組織管理**」角色群組的成員。
   - 針對安全附件原則的唯讀存取，您必須是「安全性 & 規範中心」中 **全域讀取** 者或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md) 和 [Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
+  如需詳細資訊，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)和[Exchange Online 中的許可權](/exchange/permissions-exo/permissions-exo)。
 
   **附註**：
 
@@ -93,9 +93,9 @@ ms.locfileid: "51204657"
 
    - **說明**：輸入原則的選擇性說明。
 
-   完成後，按 [下一步]。
+   完成後，按 [下一步 **]**。
 
-4. 在顯示的 [ **設定** ] 頁面上，設定下列設定：
+4. 在出現的 **設定** 頁面上，設定下列設定：
 
    - **安全附件未知的惡意程式碼回應**：選取下列其中一個值：
 
@@ -113,7 +113,7 @@ ms.locfileid: "51204657"
 
    - **若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取專案**。安全附件所指定的動作會對郵件採取 **未知惡意程式碼回應** ，即使無法完成安全附件掃描也是一樣。 如果您選取此選項，請永遠選取 [ **已啟用重新導向**]。 否則，郵件可能會遺失。
 
-   完成後，按 [下一步]。
+   完成後，按 [下一步 **]**。
 
 5. 在出現的 [套用 **至** ] 頁面上，識別套用原則的內部收件者。
 
@@ -137,7 +137,7 @@ ms.locfileid: "51204657"
 
    若要新增例外狀況，請按一下 [ **新增條件** ]，然後選取 [ **除外 if**] 底下的例外狀況。 設定和行為就像是條件。
 
-   完成後，按 [下一步]。
+   完成後，按 [下一步 **]**。
 
 6. 在 [ **複查您的設定** ] 頁面上，複查您的設定。 您可以按一下每個設定的 [ **編輯** ] 進行修改。
 
@@ -445,7 +445,7 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
 
 - 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **ATP 安全附件**。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請從清單中選取原則，然後在 [飛出] 中查看詳細資料。
 
-- 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中， \<Name\> 以原則或規則的名稱取代，執行下列命令，然後確認設定：
+- 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，以 \<Name\> 原則或規則名稱取代，執行下列命令，然後確認設定：
 
   ```PowerShell
   Get-SafeAttachmentPolicy -Identity "<Name>" | Format-List
@@ -455,4 +455,4 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-若要驗證安全附件是否正在掃描郵件，請檢查可用的 Defender for Office 365 報告。 如需詳細資訊，請參閱 [View For Office 365 的 Defender 報告](view-reports-for-mdo.md) 和 [使用 Explorer In Security & 合規性中心](threat-explorer.md)。
+若要驗證安全附件是否正在掃描郵件，請檢查可用的 Defender Office 365 報告。 如需詳細資訊，請參閱[View Office 365 的 Defender 報告](view-reports-for-mdo.md)]，然後[在安全性 & 規範中心使用 Explorer](threat-explorer.md)。

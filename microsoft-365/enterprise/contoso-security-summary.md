@@ -52,7 +52,7 @@ Contoso 遵循下列步驟，為企業版的 Microsoft 365 部署準備安全性
 
 為了遵循安全性最佳作法和 Microsoft 365 的企業部署需求，Contoso security administrators 和其 IT 部門部署了許多安全性功能，如下列各節所述。
 
-## <a name="identity-and-access-management"></a>身分識別和存取管理 
+## <a name="identity-and-access-management"></a>身分識別與存取管理 
 
 - 專用的全域管理員帳戶 (具有 MFA 和 PIM)
 

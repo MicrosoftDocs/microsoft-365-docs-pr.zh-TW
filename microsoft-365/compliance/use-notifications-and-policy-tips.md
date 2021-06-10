@@ -281,7 +281,7 @@ Office 桌面程式會自動從 Office 365 同步處理 DLP 原則，然後掃�
 
 您可以從電子郵件通知中單獨自訂原則提示的文字。 與電子郵件通知的自訂文字不同 (請參閱上述章節) 中原則提示的自訂文字不接受 HTML 或標記。 相反地，[原則提示] 的自訂文字只會以256個字元的限制顯示純文字。
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - [深入了解資料外洩防護](dlp-learn-about-dlp.md)    
 - [從範本建立 DLP 原則](create-a-dlp-policy-from-a-template.md)

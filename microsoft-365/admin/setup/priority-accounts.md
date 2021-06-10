@@ -37,7 +37,7 @@ ms.locfileid: "52535803"
 
 如需優先順序帳戶的安全性最佳作法，請參閱 [優先順序帳戶的安全性建議](../../security/office-365-security/security-recommendations-for-priority-accounts.md)。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 本主題中所述的「 **優先順序帳戶保護** 」功能僅適用于符合下列需求的組織：
 
@@ -46,7 +46,7 @@ ms.locfileid: "52535803"
 本主題中所述 **進階版郵件 Flow 監控** 功能僅適用于符合下列需求的組織：
 
 - 您的組織必須具有至少10000的授權計數、下列產品之一或其組合中的產品： Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5。 例如，您的組織可能會有 3000 Office 365 E3 授權和 8500 Microsoft 365 E5，共提供合格產品的11500授權。
-- 您的組織每月至少需要有 50 位作用中 Exchange Online 使用者
+- 您的組織每月至少需要有 50 位作用中 Exchange Online 使用者。
 
 > [!NOTE]
 > 您可以監控最多250個優先順序的帳戶。

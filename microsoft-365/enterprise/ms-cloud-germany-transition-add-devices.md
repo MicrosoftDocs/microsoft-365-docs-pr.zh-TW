@@ -18,167 +18,93 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 microsoft cloud 德國移至服務時，服務的其他裝置資訊 (Microsoft cloud Deutschland) 以 Office 365 新德文 datacenter 區域中的服務。
-ms.openlocfilehash: 21188372f03af394fe1c0e227c1adeabbad02a85
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 27426a26befab85bf62a0a143861e447dd722724
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928153"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861298"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 遷移的其他裝置資訊
+
+連接至 Microsoft 雲端 Deutschland 的 Azure AD 加入和註冊裝置必須在階段9和階段10之前遷移。 裝置的遷移取決於裝置類型、作業系統和 AAD 關聯。 
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 **如何判斷組織是否受到影響？**
 
-管理員應該檢查 `https://portal.microsoftazure.de` 是否有任何已註冊的裝置。 如果您的組織已註冊裝置，您會受到影響。
+管理員應該檢查 `https://portal.microsoftazure.de` 是否有任何已註冊或 AZURE AD 連接的裝置。 如果您的組織已註冊裝置，您會受到影響。
 
 **對我的使用者有何影響？**
 
-在您的遷移進入 [Finalize AZURE AD](ms-cloud-germany-transition.md#how-is-the-migration-organized) 遷移階段後，已登錄裝置的使用者將無法再登入。  
+已註冊的裝置中的使用者將無法再登入 [遷移階段 10](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) 已完成，且已停用 Microsoft Cloud Deutschland 的端點。  
 
 在您的組織中斷與 Microsoft 雲端 Deutschland 的連線之前，請確定您的所有裝置都已向全球端點註冊。
   
 **我的使用者何時重新註冊其裝置？**
 
-您的成功必須先取消註冊，然後在 [不同的 Microsoft 雲端 Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) 遷移階段重新登錄裝置，這一點很重要。
+您的成功必須先取消註冊，然後在 [階段 9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) 完成之後重新登錄裝置，這一點很重要。 您必須在第10階段開始之前完成重新註冊，否則您可能會失去對裝置的存取權。
 
 **如何在遷移後還原我的裝置狀態？**
 
-對於向 azure ad 註冊的混合 Azure AD-已加入和公司所擁有的 Windows 裝置，管理員將可以透過遠端觸發的工作流程（會取消註冊舊的裝置狀態）來管理這些裝置的遷移。
+對於向 Azure AD 註冊的公司所擁有的 Windows 裝置，管理員將能夠透過遠端觸發的工作流程（會取消註冊舊的裝置狀態）來管理這些裝置的遷移。
   
 對於所有其他裝置，包括在 Azure AD 中註冊的個人 Windows 裝置，使用者必須手動執行這些步驟。 若為已加入 Azure 的裝置，使用者必須具有本機系統管理員帳戶，才可取消註冊，然後重新登錄其裝置。
 
-Microsoft 會發佈有關如何成功還原裝置狀態的指示。 
+如需如何成功還原下列裝置狀態的詳細指示，請參閱詳細指示。 
  
 **如何知道我的所有裝置都已登錄公用雲端？**
 
 若要檢查您的裝置是否已在公用雲端中註冊，您應該將裝置清單從 Azure AD 入口網站匯出並下載至 Excel 試算表。 然後，使用 _registeredTime_ 欄) [不同于 Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) 遷移階段之後，篩選 (所註冊的裝置。
 
-在遷移租使用者後，裝置註冊會停用，且無法啟用或停用。 若未使用 Intune，請登入您的訂閱，並執行此命令以重新開機此選項：
+## <a name="additional-considerations"></a>其他考量
+在遷移租使用者後，裝置註冊會停用，且無法啟用或停用。 
+
+若未使用 Intune，請登入您的訂閱，並執行此命令以重新開機此選項：
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
-
-## <a name="hybrid-azure-ad-join"></a>混合式 Azure AD Join
-
-### <a name="windows-down-level"></a>Windows 下級
-
-_Windows 下層裝置_ 是目前執行舊版 Windows (的 Windows 裝置例如 Windows 8.1 或 Windows 7) ，或執行 Windows 2019 和2016之前的伺服器版本。 如果這些裝置在註冊之前已註冊，您必須撤銷註冊並重新登錄這些裝置。 
-
-若要判斷 Windows 的低級裝置先前是否加入 Azure AD，請在裝置上使用下列命令：
-
-```console
-%programfiles%\Microsoft Workplace Join\autoworkplace /status
-```
-
-如果裝置先前已加入 Azure AD，而且裝置具有與全域 Azure AD 端點的網路連線，您會看到下列輸出：
-
-```console
-+----------------------------------------------------------------------+
-| Device Details                                                       |
-+----------------------------------------------------------------------+
-         DeviceId : AEE2B956-DA62-48D0-BB47-046DD992A110
-       Thumbprint : 00fdfa2de5c32feae57489873a13aa6a3ff7433b
-             User : user1@<tenantname>.de
-Private key state : Okay
-     Device state : Unknown
-```
-
-受影響裝置的「裝置狀態」會具有值為 "Unknown"。 若輸出為 "裝置未加入" 或 "Device state" 值為 "Ok"，請忽略下列指導方針。
-
-僅限顯示裝置已通過 deviceId、指紋等等)  (加入，且其「裝置狀態」值為「未知」的裝置，管理員應該在此類下層裝置的網域使用者登入上下文中執行下列命令：
-
-```console
-"%programfiles%\Microsoft Workplace Join\autoworkplace /leave"
-```
-
-在 Windows 下層裝置上，每個網域使用者登入都只需要執行上述命令一次。 這個命令應該在網域使用者登入的內容中執行。 
-
-在使用者後續登入時，您必須採取足夠的護理，才可執行此命令。 當先前的命令執行時，它會為登入的使用者清除本機混合式 Azure AD –加入的電腦的已加入狀態。 而且，如果電腦仍設定為在租使用者中加入混合式 Azure AD，它會在使用者重新登入時嘗試加入。
-
-### <a name="windows-current"></a>Windows當前
-
-#### <a name="unjoin"></a>脫離
-
-若要判斷 Windows 10 裝置先前是否加入 Azure AD，請在裝置上執行下列命令：
-
-```console
-%SystemRoot%\system32\dsregcmd.exe /status
-```
-
-如果裝置為混合式 Azure AD-已加入，系統管理員會看到下列輸出：
-
-```console
-+----------------------------------------------------------------------+
-| Device State                                                         |
-+----------------------------------------------------------------------+
- 
-             AzureAdJoined : YES
-          EnterpriseJoined : NO
-              DomainJoined : YES
-```
-
-如果輸出為 "AzureAdJoined：否"，請忽略下列指導方針。
-
-僅限顯示裝置加入 Azure AD 的裝置，以系統管理員身分執行下列命令，以移除裝置的已加入狀態。
-
-```console
-%SystemRoot%\system32\dsregcmd.exe /leave
-```
-
-上述命令只需要在 Windows 裝置上的系統管理內容中執行一次。
-
-#### <a name="hybrid-ad-joinre-registration"></a>混合式 AD Join\Re-Registration
-
-只要裝置具有與全域 Azure AD 端點的網路連線，裝置就會自動加入至 Azure AD （無使用者或系統管理員干預）。 
-
-
-## <a name="azure-ad-join"></a>Azure AD 加入
-
 **重要：** 在商務用遷移後，將會啟用 Intune 服務主體，這表示 Azure AD Device Registration 的啟用。 如果您在遷移之前封鎖 Azure AD 裝置註冊，您必須使用 PowerShell 停用 Intune service 主體，以使用 Azure AD 入口網站停用 Azure AD 裝置註冊。 您可以在 Graph 模組的 Azure Active Directory PowerShell 中，使用此命令來停用 Intune 服務主體。
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-### <a name="unjoin"></a>脫離
 
-若要判斷 Windows 10 裝置先前是否加入 Azure AD，使用者或系統管理員可以在裝置上執行下列命令：
+## <a name="azure-ad-join"></a>Azure AD 加入
+這適用于 Windows 10 裝置。 
 
-```console
-%SystemRoot%\system32\dsregcmd.exe /status
-```
+如果裝置已加入 Azure AD，必須中斷與 Azure AD 的連線，並再次連線。 
 
-如果裝置加入 Azure AD，則使用者或系統管理員會看到下列輸出：
+[![AZURE AD 裝置 Re-Join Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
-```console
-+----------------------------------------------------------------------+
-| Device State                                                         |
-+----------------------------------------------------------------------+
- 
-             AzureAdJoined : YES
-          EnterpriseJoined : NO
-              DomainJoined : NO
-```
 
-如果輸出為 "AzureAdJoined：否"，請忽略下列指導方針。
+如果使用者是 Windows 10 裝置上的系統管理員，使用者可以從 Azure AD 中登出裝置，然後重新加入。 如果他沒有系統管理員許可權，則使用者需要此機器上本機系統管理員帳戶的認證。 
 
-使用者：如果裝置已加入 Azure AD，使用者可以從設定中脫離裝置。 在從 Azure AD unjoining 裝置之前，請確認裝置上具有本機系統管理員帳戶。 需要有本機系統管理員帳戶，才可重新登入裝置。
 
-Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者裝置，可在每個裝置上執行下列命令，以使用群組原則等機制來執行此動作。 管理員在從 Azure AD unjoining 裝置之前，必須先確認裝置上具有本機系統管理員帳戶。 需要有本機系統管理員帳戶，才可重新登入裝置。
+管理員可以在此設定路徑之後的裝置上建立本機系統管理員帳戶：
 
-```console
-%SystemRoot%\system32\dsregcmd.exe /leave
-```
+*設定 > 帳戶 > 其他帳戶 > 憑證未知 > 新增沒有 Microsoft 帳戶的使用者*
 
-上述命令只需要在 Windows 裝置上的系統管理內容中執行一次。 
-
-### <a name="azure-ad-joinre-registration"></a>Azure AD 加入/重新註冊
-
-使用者可以從 Windows 設定將裝置加入 Azure AD：**設定 > 帳戶 > 存取單位或學校 > 連線**。
- 
+### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>步驟1：判斷裝置是否已加入 Azure 識別碼
+1.  使用使用者電子郵件和密碼登入。
+2.  移至設定 > 帳戶 > 存取單位或學校。 
+3.  在清單中尋找 [ **連線至 ...] 的使用者。的 Azure AD**。 
+4.  如果已連線的使用者存在，請繼續進行步驟2。 如果不是，則不需要進一步的動作。
+### <a name="step-2-disconnect-the-device-from-azure-ad"></a>步驟2：從 Azure AD 中斷裝置連線
+1.  在連線的公司或學校帳戶上，按一下 [ **中斷連線]** 。 
+2.  確認 [中斷連線] 兩次。 
+3.  輸入本機系統管理員的使用者名稱和密碼。 裝置中斷連線。
+4.  重新開機裝置。
+### <a name="step-3-join-the-device-to-azure-ad"></a>步驟3：將裝置加入 Azure AD
+1.  使用者使用本機系統管理員的認證登入
+2.  移至 **設定** 然後 **帳戶****存取工作或學校**
+3.  點擊 **連線**
+4.  **重要** 事項：點擊 [**加入 Azure AD** ]
+5.  輸入使用者的電子郵件地址和密碼。 裝置已連線
+6.  重新開機裝置 
+7.  使用您的電子郵件地址和密碼進行簽署
 
 ## <a name="azure-ad-registered-company-owned"></a>Azure AD 已登記 (公司擁有) 
 

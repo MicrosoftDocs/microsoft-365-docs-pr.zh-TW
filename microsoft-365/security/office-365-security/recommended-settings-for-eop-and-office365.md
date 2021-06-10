@@ -141,8 +141,8 @@ ms.locfileid: "52793217"
 |**將郵件隔離為惡意程式碼時通知收件者** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
 |**啟用常見附件篩選器** <p> _EnableFileFilter_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
 |**為惡意程式碼啟用零小時自動清除** <p> _ZapEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
-|**將郵件隔離為惡意程式碼時通知內部寄件者** <p> _EnableInternalSenderNotifications_|已停用 <p> `$false`|已停用 <p> `$false`|已停用 <p> `$false`||
-|**將郵件隔離為惡意程式碼時通知外部寄件者** <p> _EnableExternalSenderNotifications_|已停用 <p> `$false`|已停用 <p> `$false`|已停用 <p> `$false`||
+|**將郵件隔離為惡意程式碼時通知內部寄件者** <p> _EnableInternalSenderNotifications_|停用 <p> `$false`|停用 <p> `$false`|停用 <p> `$false`||
+|**將郵件隔離為惡意程式碼時通知外部寄件者** <p> _EnableExternalSenderNotifications_|停用 <p> `$false`|停用 <p> `$false`|停用 <p> `$false`||
 |
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP 反網路釣魚原則設定

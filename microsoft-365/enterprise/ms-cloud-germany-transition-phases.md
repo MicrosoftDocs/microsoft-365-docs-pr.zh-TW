@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 microsoft cloud 德國移動 (microsoft cloud Deutschland) 到新德文 datacenter 區域中 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 28d5eebbe63db13edfb1bfc297bdd6ad0c13536c
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 3a5b95bac74ae405f4e1d6fa91ba4ab51e4a9d05
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861239"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796039"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的遷移階段動作和影響
 
@@ -315,11 +315,6 @@ Microsoft Azure 客戶必須在[azure 遷移行動手冊](/azure/germany/germany
 | 更新 Azure AD 應用程式端點 | 您必須更新驗證、Azure Active Directory (Azure AD) Graph 及 MS Graph 端點，讓應用程式成為 Microsoft 全球服務的端點。 | 在遷移完成後30天之後，Microsoft Cloud Deutschland 端點會停止接受要求;用戶端或應用程式流量將會失敗。 |
 | 遷移 Azure 工作負載 | Azure 服務客戶必須針對 Azure 服務布建全球通用訂閱，並根據 [Azure 遷移行動手冊](/azure/germany/germany-migration-main)執行遷移。 | 當完全轉換為全球服務 (階段 10) 時，客戶將無法再存取 Microsoft Cloud Deutschland Azure 入口網站中呈現的 Azure 工作負載。 |
 ||||
-
-**適用于：** 使用 Azure AD 註冊或加入裝置的客戶
-
-完成階段9後，Azure AD 已註冊及加入的裝置必須連線到新德文 datacenter 區域中已轉換的 Azure AD 實例。
-未重新加入至 Azure AD 的裝置可能會在階段10結束時不再運作。 如需詳細指示及詳細資訊，請參閱 [裝置的其他相關資訊](ms-cloud-germany-transition-add-devices.md)。
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect
 **適用于：** 與 Azure AD connect 同步處理的所有客戶

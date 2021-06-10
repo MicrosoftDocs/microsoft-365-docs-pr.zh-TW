@@ -184,7 +184,7 @@ Microsoft 365 包括40個現成的範本，可協助您符合廣泛的常見法�
   
 此外，您可以個別關閉每個規則，方法是編輯原則，然後關閉該規則的 **狀態** ，如上所述。 
   
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 - [深入了解資料外洩防護](dlp-learn-about-dlp.md)
 - [傳送通知並顯示 DLP 原則的原則秘訣](use-notifications-and-policy-tips.md)

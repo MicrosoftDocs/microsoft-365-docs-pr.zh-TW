@@ -34,7 +34,7 @@ ms.locfileid: "52536067"
 
 ## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>查看自助註冊訂閱清單
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取 [篩選] 圖示，然後選取 [ **自由**]。 隨即會顯示所有自助註冊訂閱清單。
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>這些訂閱與自助購買訂閱有何不同？
@@ -50,7 +50,7 @@ ms.locfileid: "52536067"
 > [!IMPORTANT]
 > 當您刪除自助註冊訂閱時，會封鎖所有使用者存取其資料和電子郵件，以及刪除所有的資料和電子郵件。
 
-1. 在系統管理中心，移至 [帳單 **]**  >  [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取 [篩選] 圖示，然後選取 [ **自由**]。
 3. 選取您要刪除的自我服務註冊訂閱。 
 4. 在 [訂閱詳細資料] 頁面上，選取 [ **訂閱和付款設定** ] 區段中的 [ **刪除訂閱**]。

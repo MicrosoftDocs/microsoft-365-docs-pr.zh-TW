@@ -53,7 +53,7 @@ ms.locfileid: "51204597"
 
 ![安全性 & 規範中心內自動轉寄郵件報告的詳細資料彈出報告](../../media/mfi-auto-forwarded-messages-details.png)
 
-## <a name="insights"></a>深入資訊
+## <a name="insights"></a>深入解析
 
 這兩種洞察力是根據報表資料產生的：
 

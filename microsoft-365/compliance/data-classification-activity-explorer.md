@@ -114,5 +114,5 @@ ms.locfileid: "52114005"
 
 - [了解敏感度標籤](sensitivity-labels.md)
 - [瞭解保留原則和保留標籤](retention.md)
-- [瞭解敏感性資訊類型](sensitive-information-type-learn-about.md)
-- [深入瞭解資料分類](data-classification-overview.md)
+- [了解敏感性資訊類型](sensitive-information-type-learn-about.md)
+- [了解資料分類](data-classification-overview.md)

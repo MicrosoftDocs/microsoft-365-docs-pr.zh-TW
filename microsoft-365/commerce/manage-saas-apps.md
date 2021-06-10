@@ -19,18 +19,16 @@ ms.custom:
 search.appverid: MET150
 description: 瞭解如何在 Microsoft 365 系統管理中心啟動和管理協力廠商應用程式。
 ms.date: 04/15/2021
-ms.openlocfilehash: 5a486dba03fbd34fe2e409bba8ba41c1f9873141
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: f061137270416d13db1f1cd32aa17f50f2f8c5d2
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331619"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866604"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理組織的協力廠商應用程式訂閱
 
 您可以在新的 Microsoft 365 系統管理中心管理協力廠商應用程式的授權和帳單。 更新的功能包括增強型訂閱管理、改進的計費資訊存取，以及更高的管理帳單的彈性。 訂閱管理是以 Microsoft 更新的商務平臺為基礎。 這適用于客戶直接購買的軟體即服務應用程式，或來自協力廠商提供者。
-
-您可以在已開啟預覽模式的情況下，管理 Microsoft 365 admin center 中協力廠商應用程式的授權和帳單。 更新的功能包括增強型訂閱管理、改進的計費資訊存取，以及更高的管理帳單的彈性。 訂閱管理是以 Microsoft 更新的商務平臺為基礎。 這適用于客戶直接購買的軟體即服務應用程式，或來自協力廠商提供者。
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>如何取得軟體即服務應用程式
 

@@ -95,7 +95,7 @@ Microsoft 365Defender 提供數種修正動作，讓分析員可以手動啟動�
 
 瞭解如何對 [事件執行後續事件複查](first-incident-post.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
 - [調查事件](investigate-incidents.md)

@@ -338,7 +338,7 @@ Microsoft 受管理的 IP 範圍和 DNS 區域會在遷移期間和全域服務�
 
 [選擇加入移轉](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 

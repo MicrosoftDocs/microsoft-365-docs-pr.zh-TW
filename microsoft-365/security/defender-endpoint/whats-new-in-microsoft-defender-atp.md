@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: bb4d50c06c123d3d380604ef64b887f4f00f751d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844187"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866664"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender 新功能
 
@@ -45,6 +45,9 @@ ms.locfileid: "52844187"
 > ```https
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
+
+## <a name="june-2021"></a>2021年6月
+- [裝置群組定義](/microsoft-365/security/defender-endpoint/machine-groups) 現在可以包含每個條件的多個值。 您可以將多個標記、裝置名稱和網域設定為單一裝置群組的定義。
 
 ## <a name="march-2021"></a>2021 年 3 月
 - [使用 Microsoft Defender 資訊安全中心管理無法篡改的保護](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> 您可以使用稱為 *租使用者附加* 的方法，在 Windows 10、Windows Server 2016 及 Windows Server 2019 上管理防篡改保護設定。 

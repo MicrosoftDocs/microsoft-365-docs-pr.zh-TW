@@ -35,22 +35,22 @@ ms.locfileid: "51204604"
 
 ![威脅總管](../../media/ThreatExplorerFirstOpened.png)
 
-[威脅瀏覽器](threat-explorer.md) (和即時偵測報告) 是強大的近即時工具，可協助安全性運作小組調查和回應安全性 & 合規性中心內的威脅。 Explorer (和即時偵測報告) 會顯示可疑惡意程式碼和網路釣魚詐騙在 Office 365 中的電子郵件和檔案中的相關資訊，以及組織的其他安全性威脅和風險。
+[威脅瀏覽器](threat-explorer.md) (和即時偵測報告) 是強大的近即時工具，可協助安全性運作小組調查和回應安全性 & 合規性中心內的威脅。 Explorer (和即時偵測報告) 會以 Office 365 中的電子郵件和檔案顯示可疑惡意程式碼和網路釣魚程式的相關資訊，以及組織的其他安全性威脅和風險。
 
-- 如果您有 [Microsoft Defender For Office 365](defender-for-office-365.md) 方案2，則會有 Explorer。
-- 如果您有 Microsoft Defender for Office 365 方案1，則會進行即時偵測。
+- 如果您有[Microsoft Defender for Office 365](defender-for-office-365.md) Plan 2，則會有 Explorer。
+- 如果您有 Microsoft Defender for Office 365 Plan 1，則會進行即時偵測。
 
-當您第一次開啟 Explorer (或即時偵測報告) 時，預設視圖會顯示過去7天的電子郵件惡意程式碼偵測。 此報告也可顯示 Microsoft Defender for Office 365 偵測，例如由 [安全連結](safe-links.md)偵測到的惡意 URLs，以及 [安全附件](safe-attachments.md)偵測到的惡意檔案。 您可以修改此報告以顯示過去30天的資料 (與 Microsoft Defender for Office 365 P2 付費訂閱) 。 試用訂閱只會包含過去7天的資料。
+當您第一次開啟 Explorer (或即時偵測報告) 時，預設視圖會顯示過去7天的電子郵件惡意程式碼偵測。 這份報告也可顯示 Microsoft Defender 的 Office 365 偵測，例如由[安全連結](safe-links.md)偵測到的惡意 URLs，以及由[安全附件](safe-attachments.md)偵測到的惡意檔。 您可以修改此報告以顯示過去30天的資料 (與 Microsoft Defender for Office 365 P2 付費訂閱) 。 試用訂閱只會包含過去7天的資料。
 
 ****
 
 |訂閱|實用|資料天數|
 |---|---|---|
-|Microsoft Defender for Office 365 P1 試用版|即時偵測|7 |
-|Microsoft Defender for Office 365 P1 已付費|即時偵測|大約|
-|適用于 office 的 Microsoft Defender 365 P1 已付費測試 Defender for Office 365 P2 試用版|威脅總管|7 |
-|Microsoft Defender for Office 365 P2 試用版|威脅總管|7 |
-|Microsoft Defender for Office 365 P2 已支付|威脅總管|大約|
+|用於 Office 365 P1 試用版的 Microsoft Defender|即時偵測|7 |
+|已支付 Office 365 P1 的 Microsoft Defender|即時偵測|大約|
+|適用于 Office 365 P2 試用版的 Office 365 P1 付費測試 Defender 的 Microsoft Defender|威脅總管|7 |
+|適用于 Office 365 P2 試用版的 Microsoft Defender|威脅總管|7 |
+|用於 Office 365 P2 已支付的 Microsoft Defender|威脅總管|大約|
 |
 
 > [!NOTE]
@@ -123,7 +123,7 @@ ms.locfileid: "51204604"
 > [!NOTE]
 > 如果您收到的錯誤是 **要顯示太多資料**，請新增篩選器，並視需要縮小您正在查看的日期範圍。
 
-若要套用篩選，請選擇 [ **寄件者**]，選取清單中的專案，然後按一下 [重新整理] 按鈕。 在我們的範例中，我們使用 **偵測技術** 做為篩選 (有許多選項可供使用) 。 依寄件者、寄件者的網域、收件者、主旨、附件檔案名、惡意程式碼系列、保護狀態 (動作來查看資訊。) 、偵測技術365中的威脅防護功能和原則， (偵測到惡意程式碼的方式) 等等。
+若要套用篩選，請選擇 [ **寄件者**]，選取清單中的專案，然後按一下 [重新整理] 按鈕。 在我們的範例中，我們使用 **偵測技術** 做為篩選 (有許多選項可供使用) 。 以寄件者、寄件者的網域、收件者、主旨、附件檔案名、惡意程式碼系列、保護狀態 (動作來查看資訊。 Office 365) 中的威脅防護功能和原則，偵測技術 (偵測惡意程式碼) 的方式等等。
 
 ![透過偵測技術查看偵測到的電子郵件相關資料](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
@@ -131,9 +131,9 @@ ms.locfileid: "51204604"
 
 ## <a name="content--malware"></a>內容 > 惡意程式碼
 
-若要查看此報告，請在 Explorer (或即時偵測) 中，選擇 [ **view** \> **Content** \> **Malware**]。 此視圖會顯示 [Microsoft Defender For Office 365 在 SharePoint Online、商務 OneDrive For Business 及 Microsoft 小組中](mdo-for-spo-odb-and-teams.md)識別為惡意的檔案。
+若要查看此報告，請在 Explorer (或即時偵測) 中，選擇 [ **view** \> **Content** \> **Malware**]。 此視圖會顯示[在 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中，以 Microsoft Defender for Office 365](mdo-for-spo-odb-and-teams.md)識別為惡意的檔案。
 
-透過惡意程式碼系列來查看資訊，偵測技術 (偵測到惡意軟體的方式) ，以及工作量 (OneDrive、SharePoint 或小組) 。
+透過惡意程式碼系列來查看資訊，偵測技術 (偵測惡意軟體的方式) ，以及工作量 (OneDrive、SharePoint 或 Teams) 。
 
 ![查看偵測到之惡意程式碼的資料](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
 
@@ -147,7 +147,7 @@ ms.locfileid: "51204604"
 
 按一下此圖表中的 **ATP 引爆** ，會產生如下的視圖：
 
-![瀏覽器篩選為只顯示 Office 365 的 Defender 引爆結果](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![瀏覽器篩選為只顯示 Office 365 引爆結果的 Defender](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
 在此視圖中，我們現在查看以 [安全附件](safe-attachments.md)引爆之檔案的資料。 在圖表下方，我們可以看到具有安全附件所偵測到之附件的特定電子郵件的詳細資料。
 
