@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 使用 Microsoft 365 (BYOD) 保護非受管理或附帶的裝置。
+description: 使用 Microsoft 365 來保護非受管理或附帶的裝置 (BYOD) 。
 ms.openlocfilehash: 430f5446f86c26cb1f0fd1c7f34613cddec473b2
 ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "51398250"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>保護未受管理的 Windows 10 PC 和 Mac
 
-您可以在 Microsoft Intune 中註冊 Windows 10 Pc 和 Mac，讓您在存取環境中的資料之前確保其健康和安全。 不過，許多的行銷活動和小型企業包含的人員會將自己的裝置 (BYOD) ，而不會由組織管理。 針對這些未受管理的電腦和 Mac，請使用本文，以確保已設定最基本的安全性功能。
+您可以在 Microsoft Intune 中登記 Windows 10 pc 和 mac，這樣可讓您在存取環境中的資料之前確保其健康和安全。 不過，許多的行銷活動和小型企業包含的人員會將自己的裝置 (BYOD) ，而不會由組織管理。 針對這些未受管理的電腦和 Mac，請使用本文，以確保已設定最基本的安全性功能。
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -46,25 +46,25 @@ ms.locfileid: "51398250"
 
 <!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
 -->
-如果您的組織未管理您的 Windows 10 電腦或 Mac，請務必設定這些安全性功能。
+如果您的 Windows 10 電腦或 Mac 不是由您的組織所管理，請務必設定這些安全性功能。
 
 ## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 
 **開啟裝置加密**<p>
 
-您可以在各種 Windows 裝置上使用裝置加密，並以加密方式協助保護您的資料。 如果您開啟裝置加密，只有經過授權的人員才能存取您的裝置和資料。 如需指示，請參閱 [開啟裝置加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 。
+您可以在大量的 Windows 裝置上使用裝置加密，並以加密的方式協助保護您的資料。 如果您開啟裝置加密，只有經過授權的人員才能存取您的裝置和資料。 如需指示，請參閱 [開啟裝置加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 。
 
- 如果裝置無法使用裝置加密，您可以改為開啟標準 [BitLocker 加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 。 Windows 10 Home edition 無法使用 (BitLocker。 )  
+ 如果裝置無法使用裝置加密，您可以改為開啟標準[BitLocker 加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)。 Windows 10 家用版版上無法使用 (BitLocker。 )  
 
 **使用 Windows 安全性保護您的裝置**<p>
-如果您有 Windows 10，您可以使用 Windows 安全性取得最新的病毒防護。 當您第一次啟動 Windows 10 時，Windows 安全性已開啟並積極協助您掃描惡意軟體 (惡意軟體) 、病毒及安全性威脅，以保護您的電腦。 Windows 安全性使用即時保護來掃描您在電腦上下載或執行的所有專案。
+如果您有 Windows 10，您會使用 Windows 安全性獲得最新的病毒防護。 當您第一次開始 Windows 10 時，Windows 安全性會開啟並積極協助您掃描惡意程式碼 (惡意軟體) 、病毒及安全性威脅，以保護您的電腦。 Windows 安全性會使用即時保護來掃描您在電腦上下載或執行的所有專案。
 
 Windows Update 會自動下載 Windows 安全性更新，以協助您保持電腦的安全，並保護其不受威脅。
 
-如果您有舊版 Windows，且正在使用 Microsoft Security Essentials，最好移至 Windows 安全性。 如需詳細資訊，請參閱 [使用 Windows 安全性協助保護我的裝置](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)。
+如果您有舊版的 Windows，而且正在使用 Microsoft Security Essentials，最好移至 Windows 安全性。 如需詳細資訊，請參閱[使用 Windows 安全性協助保護我的裝置](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)。
 
 **開啟 Windows 防火牆**<p>
-即使已開啟另一個防火牆，您還是應該無條件執行 Windows 防火牆。 關閉 Windows 防火牆可能會讓您的裝置 (和您的網路，如果您有一個) 更容易遭到未經授權的存取。 請參閱 [開啟或關閉 Windows 防火牆](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) 以取得指示。
+即使已開啟另一個防火牆，您還是應該無條件執行 Windows 防火牆。 關閉 Windows 防火牆可能會讓您的裝置 (和網路，如果您有一個) 更容易受到未授權的存取。 請參閱[開啟或關閉 Windows 防火牆](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)以取得指示。
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 

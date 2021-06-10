@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: 瞭解系統管理員如何設定和使用資料連線器，將立即 Bloomberg 聊天室工具中的資料匯入並封存至 Microsoft 365。
+description: 瞭解系統管理員如何設定和使用資料連線器，將資料從立即 Bloomberg 聊天室工具匯入並封存至 Microsoft 365。
 ms.openlocfilehash: 791b87b6512aa385a8cdcbf7465d01461ce1e649
 ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
@@ -24,13 +24,13 @@ ms.locfileid: "51221778"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>設定連接器來封存 Instant Bloomberg 資料
 
-使用 Microsoft 365 規範中心內的原生連接器，從 [立即 Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) 共同作業工具匯入及封存金融服務聊天資料。 在您設定及設定連接器之後，它會連線到您組織的 Bloomberg secure FTP site (SFTP) 一天，將聊天訊息的內容轉換成電子郵件格式，然後將這些專案匯入 Microsoft 365 中的信箱。
+使用 Microsoft 365 規範中心內的原生連接器，從[立即 Bloomberg](https://www.bloomberg.com/professional/product/collaboration/)共同作業工具匯入及封存金融服務聊天資料。 在您設定及設定連接器之後，它會連線到您組織的 Bloomberg secure FTP site (SFTP) 一天，將聊天訊息的內容轉換成電子郵件格式，然後將這些專案匯入 Microsoft 365 中的信箱。
 
-立即 Bloomberg 資料儲存在使用者信箱之後，您可以將 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋、In-Place 封存、審核、通訊法規遵從性）和 Microsoft 365 保留原則套用至立即 Bloomberg 資料。 例如，您可以使用內容搜尋來搜尋立即 Bloomberg 聊天室訊息，或將包含立即 Bloomberg 資料的信箱與高級 eDiscovery 案例中的保管人建立關聯。 使用立即 Bloomberg 連接器匯入和封存 Microsoft 365 中的資料，可協助您的組織遵守政府和法規原則。
+立即 Bloomberg 資料儲存在使用者信箱之後，您可以套用 Microsoft 365 合規性功能，例如訴訟暫止、內容搜尋、In-Place 封存、審核、通訊相容性，以及 Microsoft 365 立即 Bloomberg 資料的保留原則。 例如，您可以使用內容搜尋來搜尋立即 Bloomberg 聊天室訊息，或在 Advanced eDiscovery 案例中，將包含立即 Bloomberg 資料的信箱與保管人產生關聯。 使用立即 Bloomberg 連接器在 Microsoft 365 中匯入和封存資料，可協助您的組織遵守政府和法規原則。
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>封存立即 Bloomberg 資料一覽
 
-下列概要說明如何使用連接器在 Microsoft 365 中封存立即 Bloomberg 聊天室資料。 
+下列概要說明如何使用連接器封存 Microsoft 365 中的立即 Bloomberg 聊天室資料。 
 
 ![立即 Bloomberg 匯入與封存處理常式](../media/InstantBloombergDataArchiving.png)
 
@@ -38,15 +38,15 @@ ms.locfileid: "51221778"
 
 2. 每隔24小時，便會將來自立即 Bloomberg 的聊天訊息複製到 Bloomberg SFTP 網站。
 
-3. 您在 Microsoft 365 規範中心建立的立即 Bloomberg 連接器會連線至 Bloomberg SFTP 網站，並將前24小時的聊天訊息傳送至 Microsoft 雲端中的 secure Azure Storage 區域。 連接器也會將聊天室 massage 的內容轉換為電子郵件訊息格式。
+3. 您在 Microsoft 365 規範中心建立的立即 Bloomberg 連接器會連線至 Bloomberg SFTP 網站，並將前24小時的聊天訊息傳送至 Microsoft 雲端中的安全 Azure 儲存體區域。 連接器也會將聊天室 massage 的內容轉換為電子郵件訊息格式。
 
-4. 連接器會將聊天訊息專案匯入特定使用者的信箱。 在特定使用者的信箱中建立名為 InstantBloomberg 的新資料夾，並將這些專案匯入該資料夾。 連接器會使用 *CorporateEmailAddress* 屬性的值來執行此動作。 每個聊天訊息都包含此內容，該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用 *CorporateEmailAddress* 屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 這個對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您為每個聊天室專案啟用自動使用者對應並提供自訂對應，連接器會先查看自訂對應檔案。 如果找不到對應至使用者 Bloomberg UUID 的有效 Microsoft 365 使用者，連接器會使用聊天室專案的 *CorporateEmailAddress* 屬性。 如果連接器在自訂對應檔案或聊天室專案的 *CorporateEmailAddress* 屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
+4. 連接器會將聊天訊息專案匯入特定使用者的信箱。 在特定使用者的信箱中建立名為 InstantBloomberg 的新資料夾，並將這些專案匯入該資料夾。 連接器會使用 *CorporateEmailAddress* 屬性的值來執行此動作。 每個聊天訊息都包含此內容，該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用 *CorporateEmailAddress* 屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 這個對應檔案應該包含每位使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您為每個聊天室專案啟用自動使用者對應並提供自訂對應，連接器會先查看自訂對應檔案。 如果找不到有效的 Microsoft 365 使用者與使用者的 Bloomberg UUID 相對應，連接器會使用聊天室專案的 *CorporateEmailAddress* 屬性。 如果連接器在自訂對應檔案或聊天室專案的 *CorporateEmailAddress* 屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
 ## <a name="before-you-set-up-a-connector"></a>在您設定連接器之前
 
-封存立即 Bloomberg 資料所需的部分執行步驟是 Microsoft 365 的外部，必須先完成，才能在規範中心建立連接器。
+封存立即 Bloomberg 資料所需的部分執行步驟是 Microsoft 365 外部的，必須先完成，您才能在規範中心建立連接器。
 
-- 若要設定立即 Bloomberg 連接器，您必須使用金鑰和金鑰密碼短語，以取得非常好的隱私權 (PGP) 和安全命令介面 (SSH) 。 這些機碼是用來設定 Bloomberg SFTP 網站，並由連接器用來連線至 Bloomberg SFTP 網站，以將資料匯入至 Microsoft 365。 PGP 金鑰是用來設定從 Bloomberg SFTP 網站傳輸至 Microsoft 365 的資料加密。 SSH 金鑰用於設定安全命令介面，以在連接器連線至 Bloomberg SFTP 網站時，啟用安全的遠端登入。
+- 若要設定立即 Bloomberg 連接器，您必須使用金鑰和金鑰密碼短語，以取得非常好的隱私權 (PGP) 和安全命令介面 (SSH) 。 這些機碼是用來設定 Bloomberg SFTP 網站，並由連接器用來連線至 Bloomberg SFTP 網站，以將資料匯入 Microsoft 365。 PGP 金鑰是用來設定從 Bloomberg SFTP 網站傳輸到 Microsoft 365 的資料加密。 SSH 金鑰用於設定安全命令介面，以在連接器連線至 Bloomberg SFTP 網站時，啟用安全的遠端登入。
 
   當您設定連接器時，可以選擇使用 Microsoft 提供的公開金鑰和金鑰密碼，也可以使用您自己的私密金鑰和密碼。 建議您使用 Microsoft 提供的公用金鑰。 不過，如果您的組織已使用私密金鑰設定 Bloomberg SFTP 網站，則可以使用這些相同的私密金鑰建立連接器。
 
@@ -72,7 +72,7 @@ ms.locfileid: "51221778"
 
 - 立即 Bloomberg 連接器可以在一天內匯入200000項總計。 如果 SFTP 網站上的專案超過200000個，將不會將這些專案匯入至 Microsoft 365。
 
-- 在步驟 3 (中建立立即 Bloomberg 連接器，並在步驟 1) 中下載公開金鑰及 IP 位址的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟 3 (中建立立即 Bloomberg 連接器，並在步驟 1) 中下載公開金鑰及 IP 位址的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 在 [Microsoft 365 規範中心] 的 [**資料連線器**] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「在 Exchange Online 中管理角色群組」一文中的 [[建立角色群組](/Exchange/permissions-exo/role-groups#create-role-groups)或[修改角色](/Exchange/permissions-exo/role-groups#modify-role-groups)群組] 區段。
 
 ## <a name="set-up-a-connector-using-public-keys"></a>使用公開金鑰設定連接器
 
@@ -100,7 +100,7 @@ ms.locfileid: "51221778"
 
    這些檔案包含下列專案，可用來設定步驟2中的 Bloomberg SFTP 網站：
 
-   - PGP 公開金鑰：此機碼是用來設定從 Bloomberg SFTP 網站傳輸至 Microsoft 365 的資料加密。
+   - PGP 公開金鑰：此機碼是用來設定從 Bloomberg SFTP 網站傳輸到 Microsoft 365 的資料加密。
 
    - SSH 公開金鑰：此機碼用於設定安全命令介面，以在連接器連線至 Bloomberg SFTP 網站時，啟用安全的遠端登入。
 
@@ -110,7 +110,7 @@ ms.locfileid: "51221778"
 
 ### <a name="step-2-configure-the-bloomberg-sftp-site"></a>步驟2：設定 Bloomberg SFTP 網站
 
-下一步是使用您在步驟1中取得的 PGP 和 SSH 公開金鑰及 IP 位址，為 Bloomberg SFTP 網站設定 PGP 加密和 SSH 驗證。 這可讓您在步驟3中建立的立即 Bloomberg 連接器連線至 Bloomberg SFTP 網站，並將立即 Bloomberg 資料傳送至 Microsoft 365。 您需要與 Bloomberg 客戶支援合作，以設定 Bloomberg SFTP 網站。 請與 [Bloomberg 客戶支援](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) 部門聯繫以取得協助。 
+下一步是使用您在步驟1中取得的 PGP 和 SSH 公開金鑰及 IP 位址，為 Bloomberg SFTP 網站設定 PGP 加密和 SSH 驗證。 這可讓您在步驟3中建立的立即 Bloomberg 連接器連接至 Bloomberg SFTP 網站，並將立即 Bloomberg 資料傳送至 Microsoft 365。 您需要與 Bloomberg 客戶支援合作，以設定 Bloomberg SFTP 網站。 請與 [Bloomberg 客戶支援](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) 部門聯繫以取得協助。 
 
 > [!IMPORTANT]
 > Bloomberg 建議您將您在步驟1中下載的三個檔案附加到電子郵件訊息，並將其傳送給他們的客戶支援小組，以設定 Bloomberg SFTP 網站時使用這些檔案。
@@ -137,10 +137,10 @@ ms.locfileid: "51221778"
 
 5. 在 [**選取要匯入的資料類型**] 頁面上，選取要與 **郵件** 分開匯入的所需資料類型。
 
-6. 在 [將 **立即 Bloomberg 使用者對應至 Microsoft 365 使用者** ] 頁面上，啟用自動使用者對應，並視需要提供自訂使用者對應
+6. 在 [將 **立即 Bloomberg 使用者加入 Microsoft 365 使用者**] 頁面上，啟用自動使用者對應，並視需要提供自訂使用者對應
 
    > [!NOTE]
-   > 連接器會將聊天訊息專案匯入特定使用者的信箱。 在特定使用者的信箱中建立名為 **InstantBloomberg** 的新資料夾，並將這些專案匯入該資料夾。 連接器會使用 *CorporateEmailAddress* 屬性的值。 每個聊天訊息都包含此屬性，且該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用 *CorporateEmailAddress* 屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您為每個聊天室專案啟用自動使用者對應並提供自訂對應，連接器會先查看自訂對應檔案。 如果找不到對應至使用者 Bloomberg UUID 的有效 Microsoft 365 使用者，連接器會使用聊天室專案的 *CorporateEmailAddress* 屬性。 如果連接器在自訂對應檔案或聊天室專案的 *CorporateEmailAddress* 屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
+   > 連接器會將聊天訊息專案匯入特定使用者的信箱。 在特定使用者的信箱中建立名為 **InstantBloomberg** 的新資料夾，並將這些專案匯入該資料夾。 連接器會使用 *CorporateEmailAddress* 屬性的值。 每個聊天訊息都包含此屬性，且該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用 *CorporateEmailAddress* 屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您為每個聊天室專案啟用自動使用者對應並提供自訂對應，連接器會先查看自訂對應檔案。 如果找不到有效的 Microsoft 365 使用者與使用者的 Bloomberg UUID 相對應，連接器會使用聊天室專案的 *CorporateEmailAddress* 屬性。 如果連接器在自訂對應檔案或聊天室專案的 *CorporateEmailAddress* 屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
 7. 按 **[下一步]**，複查您的設定，然後按一下 **[完成]** 以建立連接器。
 
@@ -215,10 +215,10 @@ ms.locfileid: "51221778"
 
 7. 成功驗證成功後，請按 **[下一步]**。
 
-8. 在 [將 **立即 Bloomberg 使用者對應至 Microsoft 365 使用者** ] 頁面上，啟用 [自動使用者對應]，並視需要提供自訂使用者對應。
+8. 在 [將 **立即 Bloomberg 使用者對應至 Microsoft 365 使用者**] 頁面上，啟用 [自動使用者對應]，並視需要提供自訂使用者對應。
 
    > [!NOTE]
-   > 連接器會將聊天訊息專案匯入特定使用者的信箱。 在特定使用者的信箱中建立名為 **InstantBloomberg** 的新資料夾，並將這些專案匯入該資料夾。 連接器會使用 *CorporateEmailAddress* 屬性的值。 每個聊天訊息都包含此屬性，且該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用 *CorporateEmailAddress* 屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您為每個聊天室專案啟用自動使用者對應並提供自訂對應，連接器會先查看自訂對應檔案。 如果找不到對應至使用者 Bloomberg UUID 的有效 Microsoft 365 使用者，連接器會使用聊天室專案的 *CorporateEmailAddress* 屬性。 如果連接器在自訂對應檔案或聊天室專案的 *CorporateEmailAddress* 屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
+   > 連接器會將聊天訊息專案匯入特定使用者的信箱。 在特定使用者的信箱中建立名為 **InstantBloomberg** 的新資料夾，並將這些專案匯入該資料夾。 連接器會使用 *CorporateEmailAddress* 屬性的值。 每個聊天訊息都包含此屬性，且該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用 *CorporateEmailAddress* 屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您為每個聊天室專案啟用自動使用者對應並提供自訂對應，連接器會先查看自訂對應檔案。 如果找不到有效的 Microsoft 365 使用者與使用者的 Bloomberg UUID 相對應，連接器會使用聊天室專案的 *CorporateEmailAddress* 屬性。 如果連接器在自訂對應檔案或聊天室專案的 *CorporateEmailAddress* 屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
 9. 按 **[下一步]**，複查您的設定，然後按一下 **[完成]** 以建立連接器。
 

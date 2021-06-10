@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6afdcc16493839e83771ac831831fdbb121663a1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: b62659360e990467524ec632968dfea313d0b164
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841771"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861668"
 ---
 # <a name="turn-on-network-protection"></a>開啟網路保護
 
@@ -43,7 +43,7 @@ ms.locfileid: "52841771"
 
 2. 選擇側邊功能表中的 [ **HKEY_LOCAL_MACHINE**
 
-3. 透過嵌套功能表流覽至 **軟體**  >  **原則**  >  **Microsoft**  >  **Windows Defender**  >  **原則管理員** 
+3. 透過嵌套功能表流覽至 **軟體**  >  **Microsoft**  >  **Windows Defender**  >  **Windows Defender 利用防護**  >  **網路保護**
 
 4. 選取 [ **EnableNetworkProtection** ]，以查看裝置上目前的網路保護狀態。
 
@@ -120,7 +120,7 @@ ms.locfileid: "52841771"
 
 1. 選取 [ **啟動** ] 並輸入 **Regedit** 以開啟 **登錄編輯程式**。
 
-2. 流覽至 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
+2. 流覽至 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. 選取 **EnableNetworkProtection** 並確認值：
    * 0 = 關閉

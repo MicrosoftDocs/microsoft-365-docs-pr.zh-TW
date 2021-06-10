@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c761b4896ea5b616aed80ed2c54ef91fc465b201
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793157"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877881"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender 中 Office 365 的自動調查和回應 (AIR) 
 
@@ -46,7 +46,7 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 - [空氣的整體流向](#the-overall-flow-of-air);
 - [如何取得空氣](#how-to-get-air);和
 - 設定或使用 AIR 功能 [所需的許可權](#required-permissions-to-use-air-capabilities) 。
-- 您的安全性中心即將推出的變更
+- Microsoft 365 Defender 入口網站即將推出的變更
 
 本文也包含 [後續步驟](#next-steps)，以及深入瞭解的資源。
 
@@ -89,7 +89,11 @@ AIR 功能會包含在[Office 365 的 Microsoft Defender](defender-for-office-36
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>哪些警示原則會觸發自動調查？
 
-Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系統管理許可權濫用、惡意程式碼活動、潛在的外部和內部威脅，以及資訊控管風險。 某些預設的 [報警原則](../../compliance/alert-policies.md#default-alert-policies) 可以觸發自動調查。 下表說明觸發自動調查的警示、Microsoft 365 安全性中心的嚴重性，以及產生的方式：
+Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系統管理許可權濫用、惡意程式碼活動、潛在的外部和內部威脅，以及資訊控管風險。 某些預設的 [報警原則](../../compliance/alert-policies.md#default-alert-policies) 可以觸發自動調查。 下表說明觸發自動調查的警示、其在 Microsoft 365 Defender 入口網站中的嚴重性，以及產生的方式：
+
+<br>
+
+****
 
 |提醒|嚴重性|警示的產生方式|
 |---|---|---|
@@ -108,10 +112,15 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 許可權是透過特定角色授與的，如下表所述：
 
+<br>
+
+****
+
 |工作|需要) 角色 (|
 |---|---|
 |設定 AIR 功能|下列其中一個角色： <ul><li>全域管理員</li><li>安全性系統管理員</li></ul> <p> 您可以在[Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)指派這些角色。|
 |開始自動化調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|下列其中一個角色指派于[Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)： <ul><li>全域管理員</li><li>安全性系統管理員</li><li>安全性操作員</li><li>安全性讀取者 <br> --- 且 --- </li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
+|
 
 ## <a name="required-licenses"></a>必要的授權
 
@@ -121,16 +130,16 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 - 組織的安全性運作小組 (包括安全性讀者和具有 **搜尋和清除** 角色的使用者) 
 - 使用者
 
-## <a name="changes-are-coming-soon-in-your-security-center"></a>您的安全性中心即將推出變更
+## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中即將推出變更
 
-如果您已在 Office 365 的 Microsoft Defender 中使用 AIR 功能，您就會在[增強的 Microsoft 365 安全性中心](../defender/overview-security-center.md)看到一些變更。
+如果您已在 Office 365 的 Microsoft Defender 中使用 AIR 功能，您就會在[增強的 Microsoft 365 Defender 入口網站](../defender/overview-security-center.md)中看到一些變更。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="整合的動作中心":::
 
-新增及增強的安全性中心會在[microsoft defender 的 Office 365](defender-for-office-365.md)和[microsoft defender for Endpoint](../defender-endpoint/automated-investigations.md)中，彙集一種 AIR 功能。 有了這些更新與改善功能，您的安全性作業小組就能在單一位置檢視電子郵件、共同作業內容、使用者帳戶和裝置上的自動化調查和補救動作的詳細資訊。
+新增及增強的 Microsoft 365 defender 入口網站會在[microsoft defender 中為 Office 365](defender-for-office-365.md)和[microsoft defender for Endpoint](../defender-endpoint/automated-investigations.md)中的 AIR 功能。 有了這些更新與改善功能，您的安全性作業小組就能在單一位置檢視電子郵件、共同作業內容、使用者帳戶和裝置上的自動化調查和補救動作的詳細資訊。
 
 > [!TIP]
->  () 的新 Microsoft 365 安全性中心會 <https://security.microsoft.com> 取代下列中心：
+> 新 Microsoft 365 Microsoft 365 Defender 入口網站 (<https://security.microsoft.com>) 會取代下列中心：
 >
 > - Office 365安全性 & 規範中心 (<https://protection.office.com>) 
 > - Microsoft Defender 資訊安全中心 (<https://securitycenter.windows.com>) 
@@ -140,6 +149,10 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 ### <a name="what-to-expect"></a>預期的專案
 
 下表列出適用于 Office 365 之 Microsoft Defender 中的空氣變更與改進功能。
+
+<br>
+
+****
 
 |項目|變更的內容為何？|
 |---|---|

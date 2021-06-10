@@ -54,7 +54,7 @@ _威脅分析報告的分析報告區段_
 | 摘要 | 威脅的概述，包括初次看到的時間、其動機、明確的事件、主要目標，以及不同的工具和技術。 您可以使用此資訊來進一步評估如何在您的行業、地理位置和網路內容中排定威脅的優先順序。 |
 | 分析 | 威脅的技術資訊，包括攻擊的詳細資料，以及攻擊者可能使用新技術或攻擊面的方式 | 
 | MITRE ATT&所觀察到的 CK 技術 | 觀察到的技巧如何對應至 [MITRE ATT&CK 攻擊架構](https://attack.mitre.org/) | 
-| [減輕方式](#apply-additional-mitigations) | 可停止或協助減少威脅影響的建議。 本節也包含不會在威脅分析報告中動態追蹤的緩解。 |
+| [減輕方式](#apply-additional-mitigations) | 可停止或協助降低威脅影響的建議。 本節也包含不會在威脅分析報告中動態追蹤的緩解。 |
 | [偵測詳細資料](#understand-how-each-threat-can-be-detected) | Microsoft 安全性解決方案所提供的特定及一般偵測，可以呈現與威脅相關聯的活動或元件。 | 
 | [進階搜捕](#find-subtle-threat-artifacts-using-advanced-hunting) | 以主動識別可能威脅活動的[高級搜尋查詢](advanced-hunting-overview.md)。 大部分的查詢都是為了補充偵測，特別是找出可能惡意的元件或無法動態評估以成為惡意的行為。 | 
 | 參考 | 在建立報告期間，由分析員參考的 Microsoft 和協力廠商出版物。 威脅分析內容是以 Microsoft 研究員所驗證的資料為基礎。 公開提供的資訊，協力廠商來源會明確識別。 | 
@@ -73,21 +73,21 @@ _威脅分析報告的分析報告區段_
 雖然您可以使用 [ **緩解** ] 索引標籤，針對威脅評估安全性狀況，但這些建議可讓您採取額外步驟，以提升安全性狀況。 請仔細閱讀分析報告中的所有緩解指導方針，並盡可能加以套用。
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>瞭解每個威脅的偵測方式
-分析報告也會提供 Microsoft Defender 針對端點防病毒和 _端點偵測的偵測，以及_ (EDR) 功能的回應。
+分析報告也會提供 Microsoft Defender 針對端點防病毒和 _端點偵測_ (EDR) 功能的偵測。
 
 ### <a name="antivirus-detections"></a>防病毒偵測
-在已開啟 [Microsoft Defender 防病毒](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) 功能的裝置上可以使用這些偵測。 當這些偵測發生在已架至 Microsoft Defender for Endpoint 的裝置上時，也會觸發報告中的圖表，使其變亮。
+在[Microsoft Defender 防毒軟體](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)開啟的裝置上可以使用這些偵測。 當這些偵測發生在已架至 Microsoft Defender for Endpoint 的裝置上時，也會觸發報告中的圖表，使其變亮。
 
 >[!NOTE]
 >分析員報告也會列出 **一般性** 偵測，除了追蹤威脅特有的元件或行為之外，還可以識別範圍廣泛的威脅。 這些一般偵測不會反映在圖表中。
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a> (EDR) 警示的端點偵測和回應
-在 [架至 Microsoft Defender For Endpoint 的裝置](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)上會引發 EDR 警示。 這些警示通常會依賴 Microsoft Defender for Endpoint 感應器所收集的安全性信號，以及可充當功能強大之信號來源的其他端點功能（例如防毒軟體、網路保護、防篡改保護）。
+[架至 Microsoft Defender for Endpoint 的裝置](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)會引發 EDR 警示。 這些警示通常會依賴 Microsoft Defender for Endpoint 感應器所收集的安全性信號，以及可充當功能強大之信號來源的其他端點功能（例如防毒軟體、網路保護、防篡改保護）。
 
-如防病毒偵測清單所設計，有些 EDR 警示是設計為一般標記可能不會與追蹤威脅相關聯的可疑行為。 在這種情況下，報告會將警示明確識別為「一般」，而不會影響報表中的任何圖表。
+如防病毒偵測清單，有些 EDR 警示是設計為一般標記可能不會與追蹤威脅相關聯的可疑行為。 在這種情況下，報告會將警示明確識別為「一般」，而不會影響報表中的任何圖表。
 
 ### <a name="email-related-detections-and-mitigations"></a>電子郵件相關的偵測和緩解
-Microsoft Defender for Office 365 中的電子郵件相關偵測和緩解功能包含在分析報告中，除了 Microsoft Defender for Endpoint 中已提供的端點資料之外。 
+來自 microsoft defender for Office 365 的電子郵件相關偵測和緩解功能包含在分析報告中，除了 microsoft defender for endpoint 中已提供的端點資料之外。 
 
 避免電子郵件嘗試資訊可讓您深入瞭解您的組織是否為分析員報告中威脅 tackled 的目標，即使在傳送或傳送至 [垃圾郵件] 資料夾之前已經有效封鎖此攻擊。
 
@@ -100,7 +100,7 @@ Microsoft Defender for Office 365 中的電子郵件相關偵測和緩解功能�
 
 
 >[!NOTE]
-> 在 [Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)中也可以使用威脅分析。 不過，在 microsoft 365 Defender 威脅分析所擁有的 Office 和 Microsoft Defender 端點之間，它沒有資料整合。
+> 在 [Microsoft Defender For Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)中也可以使用威脅分析。 不過，它沒有 microsoft defender Office 和 Microsoft 365 Defender 威脅分析的 microsoft defender 的資料整合。
 
 
 ## <a name="related-topics"></a>相關主題

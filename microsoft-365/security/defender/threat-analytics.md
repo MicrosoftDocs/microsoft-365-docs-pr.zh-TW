@@ -2,7 +2,7 @@
 title: 使用威脅分析追蹤並回應新興威脅
 ms.reviewer: ''
 description: 深入瞭解新興的威脅和攻擊技巧，以及如何加以阻止。 評估其對您組織的影響，並評估您的組織恢復能力。
-keywords: 威脅分析、風險評估、Microsoft 365 Defender、M365D、緩解狀態、安全設定、Microsoft Defender for Office 365、Microsoft Defender for Office 365 威脅分析、MDO 威脅分析、整合的 MDE 和 MDO 威脅分析資料、威脅分析資料整合、整合的 Microsoft 365 Defender 威脅分析
+keywords: 威脅分析、風險評估、Microsoft 365 Defender、M365D、緩解狀態、安全設定、microsoft defender for Office 365、microsoft defender Office 365 威脅分析、MDO 威脅分析、整合的 MDE 和 MDO 威脅分析資料、威脅分析資料整合、Microsoft 365 整合的 Defender 威脅分析
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -131,7 +131,7 @@ _威脅分析報告的相關事件區段_
 ### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>受影響的資產：取得受影響的裝置和信箱清單
 如果資產受到作用中未解析的警示影響，便會視為受影響的資產。 [ **受影響的資產** ] 索引標籤會列出下列受影響的資產類型：
 - **受影響的裝置**—具有未解析之 Microsoft Defender for Endpoint 警示的端點。 這些警示通常會引發 sightings 已知威脅指示器和活動。
-- **受影響的信箱**-已收到已觸發 Microsoft Defender for Office 365 警示的電子郵件的信箱。 雖然通常會封鎖觸發提醒的郵件，但使用者或組織層級原則也可以覆寫篩選器。
+- **受影響的信箱**：已接收的電子郵件已觸發 Microsoft Defender 以 Office 365 警示的信箱。 雖然通常會封鎖觸發提醒的郵件，但使用者或組織層級原則也可以覆寫篩選器。
 
 ![威脅分析報告中「受影響的資產」區段的影像](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
@@ -140,7 +140,7 @@ _威脅分析報告的「受影響的資產」區段_
 ### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>禁止電子郵件企圖：查看封鎖或 junked 威脅電子郵件
 Microsoft Defender for Office 365 通常會封鎖具有已知威脅指示器的電子郵件，包括惡意連結或附件。 在某些情況下，檢查可疑內容的前瞻性篩選機制，會改為將威脅電子郵件傳送至 [垃圾郵件] 資料夾。 在任何情況下，在裝置上發動惡意程式碼碼威脅的機率都會降低。
 
-「 **避免的電子郵件嘗試** 」索引標籤會列出所有已封鎖的電子郵件，然後再傳送或傳送至 Microsoft Defender for Office 365 的垃圾郵件資料夾。 
+「**防止的電子郵件嘗試**」索引標籤會列出所有已封鎖的電子郵件，再傳送或傳送至 Microsoft Defender for Office 365 的垃圾郵件資料夾。 
 
 ![威脅分析報告中「禁止的電子郵件嘗試」區段的影像](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
@@ -155,7 +155,7 @@ _威脅分析報告的 [防止電子郵件嘗試] 區段_
   - 可能有害的應用程式 (PUA) 保護
   - 即時保護
  
-本節中的緩解資訊包含 [威脅和弱點管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的資料，也就是從報告中各種連結提供的詳細深入資訊。
+本節中的緩解資訊包含來自[威脅與弱點管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的資料，也就是從報告中各種連結提供的詳細深入資訊。
 
 ![顯示 ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ 弱點詳細資料之威脅分析報告之「緩解」區段之 [安全設定詳細資料] 的 [威脅分析] 區段的 [緩解] 區段的影像](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -164,19 +164,19 @@ _威脅分析報告的緩解區段_
 
 ## <a name="additional-report-details-and-limitations"></a>其他報告詳細資料與限制
 >[!NOTE]
->在統一的安全性體驗中，威脅分析現在不僅適用于 Microsoft Defender for Endpoint，也適用于 Microsoft Defender for Office E5 授權持有者。
->如果您不是使用 Microsoft 365 安全性入口網站 (Microsoft 365 Defender) ，您也可以在 Microsoft Defender Security Center 入口網站 (Microsoft defender for Endpoint) 中查看沒有 Microsoft Defender Office 資料) 的報告 (詳細資料。 
+>在統一的安全性體驗中，威脅分析現在不僅適用于 microsoft defender for Endpoint，也適用于 microsoft defender 的 Office E5 授權擁有者。
+>如果您未使用 Microsoft 365 安全性入口網站 (Microsoft 365 Defender) ，您也可以在 (入口網站 Office microsoft defender for Endpoint) 中，查看不含 Microsoft defender Microsoft Defender 資訊安全中心資料 (的報告詳細資料。 
 
-若要存取威脅分析報告，您需要特定的角色和許可權。 如需詳細資訊，請參閱 [適用于 Microsoft 365 Defender 的角色型存取控制中的自訂角色](custom-roles.md) 。
-  - 若要查看警示、事件或受影響的資產資料，您必須具有 Microsoft Defender for Office 或 Microsoft Defender for Endpoint 警示資料，或兩者的許可權。
-  - 若要查看已禁止的電子郵件嘗試，您必須具有 Microsoft Defender for Office 搜尋資料的許可權。 
-  - 若要查看緩解，您必須具有 Microsoft Defender for Endpoint 中威脅和弱點管理資料的許可權。
+若要存取威脅分析報告，您需要特定的角色和許可權。 如需詳細資訊，請參閱[Microsoft 365 Defender 的角色型存取控制中的自訂角色](custom-roles.md)。
+  - 若要查看警示、事件或受影響的資產資料，您必須具有 microsoft defender for Office 或 microsoft defender for Endpoint 警示資料，或兩者的許可權。
+  - 若要查看已禁止的電子郵件嘗試，您必須具有 Microsoft Defender 的許可權，才能 Office 搜尋資料。 
+  - 若要查看緩解，您必須具有在 Microsoft Defender for Endpoint 中威脅與弱點管理資料的許可權。
 
 在查看威脅分析資料時，請記住下列因素：
 - 圖表只會反映所追蹤的緩解。 請查看報告中未顯示圖表的其他緩解。
 - 緩解不會保證完全恢復。 提供的緩解反映改進恢復所需的最佳動作。
 - 如果裝置未將資料傳輸至服務，則會將裝置計為「無法使用」。
-- 防病毒相關的統計資料是以 Microsoft Defender 防病毒設定為基礎。 使用協力廠商防病毒解決方案的裝置可能會顯示為「已公開」。
+- 防病毒相關的統計資料是以 Microsoft Defender 防毒軟體設定為基礎。 使用協力廠商防病毒解決方案的裝置可能會顯示為「已公開」。
 
 ## <a name="related-topics"></a>相關主題
 - [使用高級搜尋主動尋找威脅](advanced-hunting-overview.md) 

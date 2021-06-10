@@ -1,5 +1,5 @@
 ---
-title: 註冊 Microsoft 365 以進行活動
+title: 註冊參加市場活動的 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Microsoft 365 針對市場活動的逐步註冊。 保護您的活動免受 cybersecurity 威脅的電子郵件、資料和通訊的威脅。
+description: 針對市場活動 Microsoft 365 逐步註冊。 保護您的活動免受 cybersecurity 威脅的電子郵件、資料和通訊的威脅。
 ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
 ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
@@ -31,13 +31,13 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/27/2021
 ms.locfileid: "51398214"
 ---
-# <a name="sign-up-for-microsoft-365-for-campaigns"></a>註冊 Microsoft 365 以進行活動 
+# <a name="sign-up-for-microsoft-365-for-campaigns"></a>註冊參加市場活動的 Microsoft 365 
 
-以下說明如何完成 Microsoft 365 的註冊，以進行活動。
+以下說明如何完成您的 Microsoft 365 註冊，以取得市場活動的。
 
 ## <a name="before-you-start"></a>開始之前：
 
-- 完成 [取得 Microsoft 客戶活動的 microsoft 365](get-microsoft-365-campaigns.md#get-microsoft-365-for-campaigns)中的步驟，即可將您的邀請加入至 microsoft 365。
+- 完成[取得市場活動 Microsoft 365](get-microsoft-365-campaigns.md#get-microsoft-365-for-campaigns)中的步驟，以取得宣傳活動 Microsoft 365。
 - 從 Microsoft 開啟您的電子郵件邀請。 邀請具有您組織的唯一註冊連結。 您必須這樣做才能取得特殊定價。
 - 讓您的商務用信用卡和電話準備好。
 
@@ -46,14 +46,14 @@ ms.locfileid: "51398214"
 
 ## <a name="steps-to-sign-up"></a>註冊步驟
 
-1. 在您對行銷活動電子郵件的 Microsoft 365 邀請中，選取 [ **註冊您的組織 >**。 這會帶您前往 Microsoft 365 註冊。
+1. 在您對市場活動電子郵件的 Microsoft 365 邀請中，選取 [**註冊您的組織 >**]。 這會帶您 Microsoft 365 註冊。
     > [!NOTE]
-    > 如果您已有現有的 Microsoft 365 for business 訂閱，而且想要新增 Microsoft 365 的活動提供給它，請移至 [現有訂閱的 [新增 microsoft 365 的活動](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)]。
-1. **在 [Microsoft 365 商務版] 頁面上**，輸入您的企業詳細資料。 若為 **商務電子郵件地址**，請使用目前的電子郵件地址。 只有在安裝程式期間，我們才需要此位址與您保持聯繫。 選取 [下一步]。
+    > 如果您已具備商務用現有的 Microsoft 365，且想要新增市場活動所提供的 Microsoft 365，請移至[現有訂閱的 [新增市場活動 Microsoft 365](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)]。
+1. **在 [Microsoft 365 商務版] 頁面上**，輸入您的商務詳細資料。 若為 **商務電子郵件地址**，請使用目前的電子郵件地址。 只有在安裝程式期間，我們才需要此位址與您保持聯繫。 選取 [下一步]。
 1. **在 [建立您的使用者識別碼] 頁面上**：
     1. 在 [使用者名稱 **] 中，** 輸入您要用於電子郵件地址的名稱或別名。 例如，您可能想要簡稱為劉愛琳或搶。 在較大的活動中，AliceC 或 AliceChavez 可能會更有意義。
     2. 在 **您的公司** 中，輸入您所使用之市場活動的名稱。 例如，ContosoCampaign。 如果您已經擁有網域，請在這裡使用該名稱。 
-    3. 在 [ **選取網域**] 中，選取 [立即 **onmicrosoft.com** ]。 我們可以稍後為您設定網域，或協助您將 Microsoft 365 連線到您已經擁有的網域。
+    3. 在 [ **選取網域**] 中，選取 [立即 **onmicrosoft.com** ]。 我們可以稍後為您設定網域，或是協助您取得 Microsoft 365 連線到您已經擁有的網域。
     4. 建立密碼，然後選取 [ **建立我的帳戶**]。
     > [!NOTE]
     > 如果您的活動或協力廠商沒有任何網域，而您決定要使用哪個網域，您可以選取它，立即購買一部。
@@ -66,19 +66,19 @@ ms.locfileid: "51398214"
 6. **如何查看此頁面**：
     1. 確認每位使用者的成本為 $5.00。 
     2. 如果您只想要立即設定，請選取 **[下一步]**。 
-    3. 選用：在 [ **使用者** ] 欄位中變更號碼，立即新增額外的授權。 [您使用的人員可以隨時將授權指派給 Microsoft 365](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) 。
+    3. 選用：在 [ **使用者** ] 欄位中變更號碼，立即新增額外的授權。 [您可以將授權指派給您使用的人員，以便](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json)在任何時間 Microsoft 365。
 7. **您要如何支付？頁面**：選取 [ **新增信用卡**]，輸入您的商務信用卡詳細資料，然後選取 [ **下訂單**]。 如果您願意，也可以使用銀行帳戶。
 8. **這可能需要一些時間頁面**：您會找到登入位置和使用者識別碼的詳細資料。 我們也會將此資訊傳送到您在步驟2中輸入的電子郵件地址。
 
 您的註冊步驟已完成！ 若要繼續進行下一個步驟，請選取 [ **啟動安裝程式**] 或稍後回來以完成步驟。 當您準備好時，請從步驟 2) 中檢查您的電子郵件 (，以尋找您的使用者名稱和密碼，讓您下次能夠登入。 這些是稱為系統管理員或全域系統管理員認證。
 
-## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>將市場活動新增至現有訂閱的 Microsoft 365 步驟
+## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>將市場活動的 Microsoft 365 新增至現有訂閱的步驟
 
-如果您已有 Microsoft 365 for business 的現有訂閱，例如 Microsoft 365 商務標準，您可以使用 Microsoft 365 的活動提供的授權新增授權。
+如果您已具備商務用 Microsoft 365 的現有訂閱，例如 Microsoft 365 商務標準版，您可以使用 Microsoft 365 的活動提供的授權新增授權。
 > [!IMPORTANT]
-> 您無法將市場活動提供的 Microsoft 365 新增至現有的 Microsoft 365 帳戶。
+> 您無法將促銷活動的 Microsoft 365 新增至現有的 Microsoft 365 帳戶。
 
-1. 在您對行銷活動電子郵件的 Microsoft 365 邀請中，選取 [ **註冊您的組織 >**。 這會帶您前往 Microsoft 365 註冊。
+1. 在您對市場活動電子郵件的 Microsoft 365 邀請中，選取 [**註冊您的組織 >**]。 這會帶您 Microsoft 365 註冊。
 2. 在 [ **歡迎使用] 中，讓我們知道您的** 頁面、按一下或點擊 [ **想要將此專案新增至現有的訂閱中？登入**。
     
     ![選擇右上角的 [登入]。](../media/addtoexisting.png)
@@ -90,6 +90,6 @@ ms.locfileid: "51398214"
 
 ## <a name="whats-next"></a>下一步是什麼？
 
-- [設定 microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以完成 microsoft 365 的活動設定。
+- [設定 Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)以完成所設定之市場活動的 Microsoft 365。
 - [將使用者新增](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) 至您的計畫。 包含市場活動候選人、所有資深的活動人員，以及任何可存取機密活動或參與方資訊的人員。
 - [讓您的活動具有凹凸保護](m365-campaigns-security-overview.md)

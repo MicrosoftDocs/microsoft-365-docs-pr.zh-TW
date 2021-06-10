@@ -58,7 +58,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | antivirusEngine |
+| **機碼** | antivirusEngine |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 
@@ -69,7 +69,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | enableRealTimeProtection |
+| **機碼** | enableRealTimeProtection |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
 
@@ -85,7 +85,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | passiveMode |
+| **機碼** | passiveMode |
 | **資料類型** | 布林值 |
 | **可能值** | false (預設)  <br/> 真 |
 | **Comments** | 可在 Microsoft Defender for Endpoint 版本100.67.60 或更新版本中使用。 |
@@ -97,7 +97,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | exclusionsMergePolicy |
+| **機碼** | exclusionsMergePolicy |
 | **資料類型** | 字串 |
 | **可能值** | merge (預設值)  <br/> admin_only |
 | **Comments** | 可在 Microsoft Defender for Endpoint 版本100.83.73 或更新版本中使用。 |
@@ -110,7 +110,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | 排除 |
+| **機碼** | 排除 |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 
@@ -121,7 +121,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | $type |
+| **機碼** | $type |
 | **資料類型** | 字串 |
 | **可能值** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 
@@ -132,7 +132,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | 路徑 |
+| **機碼** | 路徑 |
 | **資料類型** | 字串 |
 | **可能值** | 有效路徑 |
 | **Comments** | 僅適用于 *excludedPath* *$type* |
@@ -146,7 +146,7 @@ ms.locfileid: "52346399"
 副檔名 | 在裝置上的任何位置具有分機的所有檔案 | `.test`
 檔案 | 完整路徑所識別的特定檔案 | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 資料夾 | 指定資料夾底下的所有檔案 (以遞迴方式)  | `/var/log/`<br/>`/var/*/`
-程序 | 指定的程式 (會以完整路徑或檔案名指定，也可以是由它所開啟的所有檔案)  | `/bin/cat`<br/>`cat`<br/>`c?t`
+流程 | 指定的程式 (會以完整路徑或檔案名指定，也可以是由它所開啟的所有檔案)  | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
 > 以上的路徑必須是硬連結，而不是符號連結，才可成功排除。 您可以執行，檢查路徑是否為符號連結 `file <path-name>` 。
@@ -165,7 +165,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | isDirectory |
+| **機碼** | isDirectory |
 | **資料類型** | 布林值 |
 | **可能值** | false (預設)  <br/> 真 |
 | **Comments** | 僅適用于 *excludedPath* *$type* |
@@ -177,7 +177,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | 擴展 |
+| **機碼** | 擴展 |
 | **資料類型** | 字串 |
 | **可能值** | 有效的副檔名 |
 | **Comments** | 僅適用于 *excludedFileExtension* *$type* |
@@ -189,7 +189,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | name |
+| **機碼** | name |
 | **資料類型** | 字串 |
 | **可能值** | 任何字串 |
 | **Comments** | 僅適用于 *excludedFileName* *$type* |
@@ -201,7 +201,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | allowedThreats |
+| **機碼** | allowedThreats |
 | **資料類型** | 字串陣列 |
 
 #### <a name="disallowed-threat-actions"></a>不允許的威脅動作
@@ -211,7 +211,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | disallowedThreatActions |
+| **機碼** | disallowedThreatActions |
 | **資料類型** | 字串陣列 |
 | **可能值** | 允許 (限制使用者允許威脅)  <br/> restore (會限制使用者從隔離區還原威脅)  |
 | **Comments** | 可在 Microsoft Defender for Endpoint 版本100.83.73 或更新版本中使用。 |
@@ -223,7 +223,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | threatTypeSettings |
+| **機碼** | threatTypeSettings |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 
@@ -234,7 +234,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | 機碼 |
+| **機碼** | 機碼 |
 | **資料類型** | 字串 |
 | **可能值** | potentially_unwanted_application <br/> archive_bomb |
 
@@ -249,7 +249,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | 數值 |
+| **機碼** | 數值 |
 | **資料類型** | 字串 |
 | **可能值** | 審核 (預設)  <br/> 塊 <br/> 遠離 |
 
@@ -260,7 +260,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | threatTypeSettingsMergePolicy |
+| **機碼** | threatTypeSettingsMergePolicy |
 | **資料類型** | 字串 |
 | **可能值** | merge (預設值)  <br/> admin_only |
 | **Comments** | 可在 Microsoft Defender for Endpoint 版本100.83.73 或更新版本中使用。 |
@@ -272,7 +272,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | scanResultsRetentionDays |
+| **機碼** | scanResultsRetentionDays |
 | **資料類型** | 字串 |
 | **可能值** | 90 (預設) 。 允許的值介於1天到180天。 |
 | **Comments** | 可在 Microsoft Defender for Endpoint 版本101.07.23 或更新版本中使用。 |
@@ -284,7 +284,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | scanHistoryMaximumItems |
+| **機碼** | scanHistoryMaximumItems |
 | **資料類型** | 字串 |
 | **可能值** | 10000 (預設) 。 允許的值是從5000專案到15000專案。 |
 | **Comments** | 可在 Microsoft Defender for Endpoint 版本101.07.23 或更新版本中使用。 |
@@ -296,7 +296,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | cloudService |
+| **機碼** | cloudService |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 
@@ -307,7 +307,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | 啟用 |
+| **機碼** | 啟用 |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
 
@@ -318,7 +318,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | diagnosticLevel |
+| **機碼** | diagnosticLevel |
 | **資料類型** | 字串 |
 | **可能值** | 選用 (預設)  <br/> 必要 |
 
@@ -329,7 +329,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | automaticSampleSubmission |
+| **機碼** | automaticSampleSubmission |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
 
@@ -339,7 +339,7 @@ ms.locfileid: "52346399"
 
 |區段|值|
 |:---|:---|
-| **索引鍵** | automaticDefinitionUpdateEnabled |
+| **機碼** | automaticDefinitionUpdateEnabled |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
 
@@ -350,7 +350,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | userInterface |
+| **機碼** | userInterface |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 
@@ -361,7 +361,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | hideStatusMenuIcon |
+| **機碼** | hideStatusMenuIcon |
 | **資料類型** | 布林值 |
 | **可能值** | false (預設)  <br/> 真 |
 
@@ -372,7 +372,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | userInitiatedFeedback |
+| **機碼** | userInitiatedFeedback |
 | **資料類型** | 字串 |
 | **可能值** | 已啟用 (預設)  <br/> 禁用 |
 | **Comments** | 可在 Microsoft Defender for Endpoint 版本101.19.61 或更新版本中使用。 |
@@ -384,7 +384,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | edr |
+| **機碼** | edr |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 
@@ -397,7 +397,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | 標籤 |
+| **機碼** | 標籤 |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 
@@ -408,7 +408,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | 機碼 |
+| **機碼** | 機碼 |
 | **資料類型** | 字串 |
 | **可能值** | `GROUP` |
 
@@ -419,7 +419,7 @@ ms.locfileid: "52346399"
 |區段|值|
 |:---|:---|
 | **網域** | `com.microsoft.wdav` |
-| **索引鍵** | 數值 |
+| **機碼** | 數值 |
 | **資料類型** | 字串 |
 | **可能值** | 任何字串 |
 

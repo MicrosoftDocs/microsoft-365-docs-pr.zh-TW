@@ -1,5 +1,5 @@
 ---
-title: 在高級電子檔探索中的審閱集中查看檔
+title: 在 Advanced eDiscovery 中查看審閱集中的檔
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 選擇您在高級 eDiscovery 中查看內容的方式，例如文字、批註、轉換或原生視圖。
+description: 選擇您在 Advanced eDiscovery 中查看內容的方式，例如文字、批註、轉換或原生視圖。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: aa8e8e9ea22469ab6d0b223c1bcc9285e2c2ef40
 ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
@@ -22,46 +22,46 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/31/2021
 ms.locfileid: "51471066"
 ---
-# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>在高級電子檔探索中的審閱集中查看檔
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>在 Advanced eDiscovery 中查看審閱集中的檔
 
-「高級 eDiscovery」透過多個檢視器顯示內容，各有不同的用途。 按一下複查集內的任何檔，即可使用不同的檢視器。 目前提供的檢視器包括：
+進階電子文件探索會透過數個有不同用途的檢視器來顯示內容。 按一下檢閱集內的任何文件，即可使用各種檢視器。 目前提供的檢視器包括：
 
-- 檔中繼資料
+- 檔案中繼資料
 - 原生視圖
-- 文字視圖
-- 批註視圖
+- 文字檢視
+- 註釋檢視
 
-## <a name="file-metadata"></a>檔中繼資料
+## <a name="file-metadata"></a>檔案中繼資料
 
-您可以開啟/關閉此面板，以顯示與檔相關聯的各種中繼資料。 雖然搜尋結果格線可以自訂以顯示特定的中繼資料，但在某些情況下，在查看資料時水準滾動可能很困難。 [檔案中繼資料] 面板可讓使用者在檢視器內切換。
+您可以開啟/關閉此面板，以顯示與檔相關聯的各種中繼資料。 雖然可自訂搜尋結果方格以顯示特定中繼資料，但有時在檢閱資料時可能不方便進行水平捲動。 檔案中繼資料面板可讓使用者在檢視器內的檢視上進行切換。
 
 ![檔中繼資料面板
 ](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>原生視圖
 
-原生檢視器會顯示檔的最豐富的視圖。 它支援數百種檔案類型，並可將 truest 顯示成可能的原生體驗。 針對 Microsoft Office 檔案，viewer 會使用 Office 應用程式的 web 版本來顯示內容，例如檔批註、Excel 公式、隱藏列/欄，以及 PowerPoint 附注。
+原生檢視器會顯示檔的最豐富的視圖。 其支援數百種檔案類型，可用來盡可能地顯示最真實的原生體驗。 如果是 Microsoft Office 檔案，檢視器會使用網頁版的 Office 應用程式來顯示內容，例如文件註解、Excel 公式、隱藏列/欄和 PowerPoint 筆記。
 
 ![原生視圖
 ](../media/Reviewimage3.png)
 
-## <a name="text-view"></a>文字視圖
+## <a name="text-view"></a>文字檢視
 
-文字檢視器提供檔的解壓縮文字的視圖。 它會忽略任何內嵌的圖像和格式設定，但是如果您想要快速瞭解內容，則會非常有效。 文字視圖也包含下列功能：
+文字檢視器可讓您檢視所擷取的檔案文字。 其會忽略任何內嵌影像和格式，但如果您想要快速了解內容，則效果非常好。 文字檢視也包含這些功能：
 
-  - 行計數器可讓參考檔的特定部分變得更容易。
+  - 行計數器，可讓您更輕鬆地參考文件的特定部分
 
   - 搜尋醒目提示，將會在檔中和捲軸中醒目提示的字詞
 
   - Diff view 提供比較視圖，在接近重複的檔時查看文字差異
 
-![文字視圖
+![文字檢視
 ](../media/Reviewimage4.png)
 
 ![比較視圖
 ](../media/Reviewimage5.png)
 
-## <a name="annotate-view"></a>批註視圖
+## <a name="annotate-view"></a>註釋檢視
 
 [批註] 視圖提供的功能可讓使用者在檔上套用標記，包括：
 
@@ -85,7 +85,7 @@ ms.locfileid: "51471066"
 
   - 搜尋–使用者可以在檔內搜尋，並流覽至檔內的各種點擊
     
-    ![批註視圖
+    ![註釋檢視
     ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>儀表板視圖 

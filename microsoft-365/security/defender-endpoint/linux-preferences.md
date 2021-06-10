@@ -57,7 +57,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | antivirusEngine |
+| **機碼** | antivirusEngine |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 |||
@@ -68,7 +68,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | enableRealTimeProtection |
+| **機碼** | enableRealTimeProtection |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
 |||
@@ -84,7 +84,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | passiveMode |
+| **機碼** | passiveMode |
 | **資料類型** | 布林值 |
 | **可能值** | false (預設)  <br/> 真 |
 | **Comments** | 在100.67.60 或更高版本的 Defender 中提供。 |
@@ -96,7 +96,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | exclusionsMergePolicy |
+| **機碼** | exclusionsMergePolicy |
 | **資料類型** | 字串 |
 | **可能值** | merge (預設值)  <br/> admin_only |
 | **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
@@ -109,7 +109,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | 排除 |
+| **機碼** | 排除 |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 |||
@@ -120,7 +120,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | $type |
+| **機碼** | $type |
 | **資料類型** | 字串 |
 | **可能值** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 |||
@@ -131,7 +131,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | 路徑 |
+| **機碼** | 路徑 |
 | **資料類型** | 字串 |
 | **可能值** | 有效路徑 |
 | **Comments** | 僅適用于 *excludedPath* *$type* |
@@ -143,7 +143,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | isDirectory |
+| **機碼** | isDirectory |
 | **資料類型** | 布林值 |
 | **可能值** | false (預設)  <br/> 真 |
 | **Comments** | 僅適用于 *excludedPath* *$type* |
@@ -155,7 +155,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | 擴展 |
+| **機碼** | 擴展 |
 | **資料類型** | 字串 |
 | **可能值** | 有效的副檔名 |
 | **Comments** | 僅適用于 *excludedFileExtension* *$type* |
@@ -167,7 +167,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | name |
+| **機碼** | name |
 | **資料類型** | 字串 |
 | **可能值** | 任何字串 |
 | **Comments** | 僅適用于 *excludedFileName* *$type* |
@@ -179,7 +179,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | allowedThreats |
+| **機碼** | allowedThreats |
 | **資料類型** | 字串陣列 |
 |||
 
@@ -189,7 +189,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | disallowedThreatActions |
+| **機碼** | disallowedThreatActions |
 | **資料類型** | 字串陣列 |
 | **可能值** | 允許 (限制使用者允許威脅)  <br/> restore (會限制使用者從隔離區還原威脅)  |
 | **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
@@ -201,7 +201,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | threatTypeSettings |
+| **機碼** | threatTypeSettings |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 |||
@@ -212,7 +212,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | 機碼 |
+| **機碼** | 機碼 |
 | **資料類型** | 字串 |
 | **可能值** | potentially_unwanted_application <br/> archive_bomb |
 |||
@@ -227,7 +227,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | 數值 |
+| **機碼** | 數值 |
 | **資料類型** | 字串 |
 | **可能值** | 審核 (預設)  <br/> 塊 <br/> 遠離 |
 |||
@@ -238,7 +238,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | threatTypeSettingsMergePolicy |
+| **機碼** | threatTypeSettingsMergePolicy |
 | **資料類型** | 字串 |
 | **可能值** | merge (預設值)  <br/> admin_only |
 | **Comments** | 在100.83.73 或更高版本的 Defender 中提供。 |
@@ -250,7 +250,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | scanResultsRetentionDays |
+| **機碼** | scanResultsRetentionDays |
 | **資料類型** | 字串 |
 | **可能值** | 90 (預設) 。 允許的值介於1天到180天。 |
 | **Comments** | 在101.04.76 或更高版本的 Defender 中提供。 |
@@ -262,7 +262,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | scanHistoryMaximumItems |
+| **機碼** | scanHistoryMaximumItems |
 | **資料類型** | 字串 |
 | **可能值** | 10000 (預設) 。 允許的值是從5000專案到15000專案。 |
 | **Comments** | 在101.04.76 或更高版本的 Defender 中提供。 |
@@ -274,7 +274,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | cloudService |
+| **機碼** | cloudService |
 | **資料類型** | 字典 (嵌套偏好)  |
 | **Comments** | 請參閱下列各節以取得字典內容的描述。 |
 |||
@@ -285,7 +285,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | 啟用 |
+| **機碼** | 啟用 |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
 |||
@@ -296,7 +296,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | diagnosticLevel |
+| **機碼** | diagnosticLevel |
 | **資料類型** | 字串 |
 | **可能值** | 選用 (預設)  <br/> 必要 |
 |||
@@ -311,7 +311,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | automaticSampleSubmissionConsent |
+| **機碼** | automaticSampleSubmissionConsent |
 | **資料類型** | 字串 |
 | **可能值** | 無 <br/> 安全 (預設)  <br/> 所有 |
 |||
@@ -322,7 +322,7 @@ ms.locfileid: "52346375"
 
 |||
 |:---|:---|
-| **索引鍵** | automaticDefinitionUpdateEnabled |
+| **機碼** | automaticDefinitionUpdateEnabled |
 | **資料類型** | 布林值 |
 | **可能值** | true (預設)  <br/> 假 |
 |||

@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性，從 EOP 到適用於 Office 365 的 Defender 方案 1 和 2、標準與嚴格安全性組態等等。 了解您擁有哪些項目，以及如何保護您的屬性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db37718ce2feae9c79ff6b323eb22e30f24e72b2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 29602d5fe62c84b9293522a94b71c550d360b3e3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203625"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877797"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全性概觀
 
@@ -117,7 +117,7 @@ Office 365 安全性的核心是 EOP 保護。 適用於 Office 365 的 Microsof
 
 因此，適用於 Office 365 的 Microsoft Defender P2 會擴展房屋的 ***調查與回應*** 端，並且新增新的搜捕強度。 自動化。
 
-在適用於 Office 365 的 Microsoft Defender P2 中，主要搜捕工具稱為 **威脅總管**，而非即時偵測。 如果您在瀏覽至安全性中心時看到威脅總管，表示您位於適用於 Office 365 的 Microsoft Defender P2 中。
+在適用於 Office 365 的 Microsoft Defender P2 中，主要搜捕工具稱為 **威脅總管**，而非即時偵測。 當您流覽至 Microsoft 365 defender 入口網站時，如果看到威脅瀏覽器，則表示您正在 Microsoft defender 中 Office 365 P2。
 
 若要了解適用於 Office 365 的 Microsoft Defender P1 和 P2 的詳細資料，請 **[進入本文](defender-for-office-365.md)**。
 

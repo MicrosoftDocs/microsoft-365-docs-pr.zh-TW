@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可以在 Microsoft 365 中搜尋的使用者內容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 1a84bc77cb78a9da3cfe873849a4148e55501137
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706603"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878025"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -92,6 +92,9 @@ ms.locfileid: "52706603"
 雖然有更多使用者屬性可供使用，尤其是針對 Exchange 信箱的情況下，上述屬性是 OneDrive 目前支援的屬性。
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>步驟2：以 Microsoft 支援檔作為要求來同步處理使用者屬性與 OneDrive 帳戶
+
+> [!IMPORTANT]
+> 不再需要此步驟。 從2021年6月開始，信箱篩選會套用至商務用 OneDrive。 將屬性同步處理至 OneDrive 的要求將會遭到拒絕，因為它已不再需要。 這篇文章將于近期更新。
 
 下一步是以 Microsoft 支援檔為要求，將您在步驟1中所選擇的 Azure AD 屬性同步處理至組織中的所有 OneDrive 帳戶。 進行此同步處理之後，您在步驟1中所選擇的屬性 (及其值) 會對應至名為的隱藏 managed 屬性 `ComplianceAttribute` 。 您可以在步驟4中使用此屬性為 OneDrive 建立搜尋許可權篩選。
   

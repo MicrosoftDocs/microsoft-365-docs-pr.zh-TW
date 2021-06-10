@@ -20,12 +20,12 @@ ms.custom:
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 中的欺騙智慧洞察力。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fc591bbaf2ecc6f59c2b569acde521453887c2a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 280743e87ce6039f456cec0b89bff57a31d75691
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822345"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877821"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP 中的欺騙智慧洞察力
 
@@ -53,13 +53,13 @@ ms.locfileid: "52822345"
   - 寄件者位於郵寄清單中 (又稱為討論清單) ，而且郵寄清單會將來自原始寄件者的電子郵件轉送至郵寄清單上的所有參與者。
   - 外部公司代表其他公司傳送電子郵件 (例如，自動化報表或軟體即服務公司) 。
 
-您可以使用 Microsoft 365 security center 中的 **欺騙性智慧洞察力**，快速找出合法的寄件者，該寄件者會合法傳送您未驗證的電子郵件 (來自未通過 SPF、DKIM 或 DMARC) 檢查的網域郵件，並手動允許這些寄件者。
+您可以使用 Microsoft 365 Defender 入口網站中的 **欺騙智慧洞察力**，快速找出合法的寄件者，該寄件者會合法傳送您未驗證的電子郵件 (來自未通過 SPF、DKIM 或 DMARC) 檢查的網域郵件，並手動允許這些寄件者。
 
 透過允許已知寄件者從已知位置傳送哄騙郵件，您可以減少誤報 (已標示為錯誤) 的良好電子郵件。 透過監視允許的欺騙寄件者，您可以提供額外的安全性層級，以防止不安全的郵件到達您的組織中。
 
 同樣地，您也可以查看哄騙情報所允許的欺騙寄件者，並手動封鎖欺騙性智慧洞察力中的寄件者。
 
-本文的其餘部分將說明如何使用 [安全性中心] 中的 [哄騙智慧洞察力] 和 [PowerShell (Exchange Online PowerShell，以 Microsoft 365 使用信箱的信箱 Exchange Online;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
+本文的其餘部分將說明如何使用 Microsoft 365 Defender 入口網站和 PowerShell (Exchange Online PowerShell 中的欺騙智慧洞察力，以 Microsoft 365 具有 Exchange Online 信箱的組織;組織的獨立 EOP PowerShell，不 Exchange Online 信箱) 。
 
 > [!NOTE]
 >
@@ -71,7 +71,7 @@ ms.locfileid: "52822345"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以開啟安全性中心，網址為 <https://security.microsoft.com/>。 若要直接移至 [ **反網路釣魚** ] 頁面，請使用 <https://security.microsoft.com/antiphishing> 。 若要直接移至 [ **偽造智慧洞察力** ] 頁面，請使用 <https://security.microsoft.com/spoofintelligence> 。
+- 您可以在中開啟 Microsoft 365 的 Defender 入口網站 <https://security.microsoft.com/> 。 若要直接移至 [ **反網路釣魚** ] 頁面，請使用 <https://security.microsoft.com/antiphishing> 。 若要直接移至 [ **偽造智慧洞察力** ] 頁面，請使用 <https://security.microsoft.com/spoofintelligence> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -90,9 +90,9 @@ ms.locfileid: "52822345"
 
 - 如需適用于哄騙情報的建議設定，請參閱 [EOP 反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)。
 
-## <a name="open-the-spoof-intelligence-insight-in-the-security-center"></a>開啟安全性中心的欺騙智慧洞察力
+## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 入口網站中開啟欺騙智慧洞察力
 
-1. 在 [安全性中心] 中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** 原則] \> 區段 \> **反網路釣魚**。
+1. 在 Microsoft 365 Defender 入口網站中，移至 [**電子郵件 &** 共同作業 \> **原則] & 規則** \> **威脅原則** \> **原則**] 區段 \> **反網路釣魚**。
 
 2. 在 [ **反網路釣魚** ] 頁面上，欺騙性的智慧洞察力看起來像這樣：
 

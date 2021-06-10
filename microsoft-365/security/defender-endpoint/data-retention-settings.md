@@ -33,7 +33,7 @@ ms.locfileid: "51471098"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
 在上架過程中，嚮導會帶您透過 Defender for Endpoint 的資料儲存區和保留設定。 
 
@@ -42,7 +42,7 @@ ms.locfileid: "51471098"
 ## <a name="verify-data-storage-location"></a>驗證資料儲存位置
 在 [設定階段](production-deployment.md)內，您會選取要儲存資料的位置。 
 
-您可以流覽至 [**設定**  >  **資料保留**]，以確認資料位置。
+您可以流覽至 **設定**  >  **資料保留**，以確認資料位置。
 
 ## <a name="update-data-retention-settings"></a>更新資料保留設定
 

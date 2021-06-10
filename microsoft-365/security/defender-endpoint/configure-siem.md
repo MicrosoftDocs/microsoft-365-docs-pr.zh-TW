@@ -31,7 +31,7 @@ ms.locfileid: "51222332"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
 ## <a name="pull-detections-using-security-information-and-events-management-siem-tools"></a>使用安全性資訊和事件管理 (SIEM) 工具提取偵測
 
@@ -40,7 +40,7 @@ ms.locfileid: "51222332"
 >- [Microsoft Defender For Endpoint 偵測](api-portal-mapping.md) 是由裝置上發生的可疑事件及其相關警示詳細資料所組成。
 >-Microsoft Defender for Endpoint Alert API 是最新的警示消耗 API，且包含每個警示的相關證據的詳細清單。 如需詳細資訊，請參閱 [Alert 方法和屬性](alerts.md) 和 [清單警示](get-alerts.md)。
 
-Defender for Endpoint 支援安全性資訊和事件管理 (SIEM) 工具來提取偵測。 端點會透過 Azure 所主控的 HTTPS 端點公開警示。 端點可以設定為在 Azure Active Directory (AAD) 中使用 OAuth 2.0 驗證通訊協定來拉入您環境中所安裝之特定 SIEM 連接器的 AAD 應用程式的偵測。
+Defender for Endpoint 支援安全性資訊和事件管理 (SIEM) 工具來提取偵測。 端點會透過 Azure 所主控的 HTTPS 端點公開警示。 端點可以設定為在 Azure Active Directory (aad) 中，使用代表環境中所安裝之特定 SIEM 連接器的 aad 應用程式 OAuth 2.0 驗證通訊協定，從企業租使用者中拉入偵測。
 
 SIEM 的 Defender 目前是透過專用的 SIEM 整合模型，支援下列特定的解決方案工具：
 

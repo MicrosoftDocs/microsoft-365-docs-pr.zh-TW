@@ -17,12 +17,12 @@ ms.collection:
 description: '深入瞭解 Exchange Online Protection (EOP 中的 [安全的預設值] 設定) '
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624046"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861524"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 預設安全性
 
@@ -58,7 +58,7 @@ ms.locfileid: "52624046"
 您可以在 [ [建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)] 中找到這些優先選項的詳細資訊。
 
 > [!NOTE]
-> 我們正在取代 [ **將郵件移至垃圾郵件資料夾** ] 動作，以取得 EOP 反垃圾郵件原則中的 **高可信度網路釣魚電子郵件** 。 使用此動作進行高可信度網路釣魚郵件的反垃圾郵件原則會轉換成 **隔離郵件**。 高信賴網路釣魚郵件的重新 **導向電子郵件地址** 動作不會受到影響。
+> 我們已棄用 [ **將郵件移至垃圾郵件資料夾** ] 動作，讓 **高可信度網路釣魚電子郵件** 成為 EOP 反垃圾郵件原則。 使用此動作進行高可信度網路釣魚郵件的反垃圾郵件原則會轉換成 **隔離郵件**。 高信賴網路釣魚郵件的重新 **導向電子郵件地址** 動作不會受到影響。
 
 安全的預設值不是可以開啟或關閉的設定，但是我們的篩選功能的方式，讓您的信箱不會有潛在危險或有害的郵件。 應該隔離惡意程式碼和高可信度網路釣魚郵件。 只有系統管理員可以管理被隔離為惡意程式碼或高可信度網路釣魚的郵件，而且也可以從那裡向 Microsoft 報告誤報。 如需詳細資訊，請參閱 [在 EOP 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)
 

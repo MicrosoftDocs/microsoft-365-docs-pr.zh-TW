@@ -39,17 +39,17 @@ ms.locfileid: "51398288"
 
 如果您的訂閱是在10月22日2019（或後）完成，則會自動啟用安全性預設值，您 &mdash; 應該檢查您的設定以確認。
 
-若要在 Azure Active Directory 中啟用安全性預設值 (Azure AD) 或查看是否已啟用：
+若要在 Azure Active Directory (Azure AD) 中啟用安全性預設值，或查看是否已啟用這些預設值：
 
-1. 使用全域系統管理員認證登入 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> 。
+1. 使用全域系統管理員認證登入<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>。
 
-2. 在左窗格中，選取 [ **全部顯示]，** 然後在 [系統 **管理中心**] 底下，選取 [ **Azure Active Directory**]。
+2. 在左窗格中，選取 [**全部顯示]，** 然後在 [系統 **管理中心**] 底下，選取 [ **Azure Active Directory**]。
 
-3. 在 **Azure Active directory 系統管理中心** 的左窗格中，選取 [ **azure active directory**]。
+3. 在 **Azure Active Directory 系統管理中心** 的左窗格中，選取 [ **Azure Active Directory**]。
 
 4. 從儀表板的左側功能表中，選取 [ **管理** ] 區段中的 [ **屬性**]。
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Azure Active Directory 系統管理中心的螢幕擷取畫面，顯示 [屬性] 功能表項目目的位置。":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Azure Active Directory 系統管理中心的螢幕擷取畫面，顯示內容功能表項目目的位置。":::
 
 5. 在 [ **屬性** ] 頁面的底部，選取 [ **管理安全性預設值**]。
 
@@ -68,10 +68,10 @@ ms.locfileid: "51398288"
 
 安全性預設值可供所有客戶使用，而條件式存取需要授權執行下列其中一個計畫：
 
-- Azure Active Directory Premium P1 或 P2
+- Azure Active Directory 進階版 P1 或 P2
 - Microsoft 365 商務進階版
 - Microsoft 365 E3 或 E5
-- 企業行動性 & 安全性 E3 或 E5
+- Enterprise行動 & 安全性 E3 或 E5
 
 如果您想要使用條件式存取來設定與安全性預設啟用的原則同等的原則，請參閱下列逐步指南：
 
@@ -79,7 +79,7 @@ ms.locfileid: "51398288"
 - [Azure 管理需要 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [封鎖舊版驗證](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [要求所有使用者使用 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [需要 AZURE AD MFA 註冊](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) -需要 Azure Ad Identity Protection，也就是 Azure Active Directory Premium P2 的一部分
+- [需要 azure ad MFA 註冊](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)-需要 azure ad 身分識別保護，也就是 Azure Active Directory 進階版 P2 的一部分
 
 若要深入瞭解條件式存取，請參閱 [什麼是條件式存取？](/azure/active-directory/conditional-access/overview) 如需建立條件式存取原則的詳細資訊，請參閱 [建立條件式存取原則](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。
 

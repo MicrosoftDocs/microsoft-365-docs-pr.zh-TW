@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概觀。
-ms.openlocfilehash: c7a5af9d2a038c2b9cc5f26d851eb3776a00c71f
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866688"
+ms.locfileid: "52877809"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概觀 
 
@@ -70,7 +70,7 @@ Viva Topics 使用 Microsoft AI 技術來識別 Microsoft 365 環境中的 *主�
 
 您的知識系統管理員可以選擇對租用戶中所有 SharePoint 網站進行主題編目，或只選取特定網站。
 
-請參閱 [主題探索和 curation](./topic-experiences-discovery-curation.md)。
+如需詳細資訊，請參閱 [主題探索和 curation](./topic-experiences-discovery-curation.md)。
 
 ## <a name="roles"></a>角色
 
@@ -96,7 +96,7 @@ Viva Topics 使用 Microsoft AI 技術來識別 Microsoft 365 環境中的 *主�
 
 - 確認或移除在租用戶中發現的主題。
 - 根據需要手動建立新主題 (例如，如果提供的資訊不足，無法透過 AI 找到時)。
-- 編輯現有的主題頁面。<br/>
+- 編輯現有的主題頁面。
 
 如需詳細資訊，請參閱 [管理主題中心中的主題](manage-topics.md)。  
 

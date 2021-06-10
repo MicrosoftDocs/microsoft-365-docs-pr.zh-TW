@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c7b39b600af2fed130a0b78a590740a8bc063f50
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822319"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861692"
 ---
 # <a name="web-content-filtering"></a>Web 內容篩選
 
@@ -61,7 +61,9 @@ web 內容篩選在主要網頁瀏覽器上提供，Windows Defender SmartScreen
 
 - Windows 10 企業版E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性附加元件或 Microsoft Defender for Endpoint 獨立授權。 
 - 存取 Microsoft Defender 資訊安全中心入口網站 (https://securitycenter.windows.com) 。
-- 執行 Windows 10 周年紀念日的裝置會以最新的 Microsoft Defender 反惡意程式碼引擎更新 (版本 1607) 或更新版本。
+- 執行 Windows 10 周年紀念日的裝置會更新 (版本 1607) 或更新的最新 MoCAMP 更新。
+- Windows Defender已啟用 SmartScreen 和網路保護。
+
 
 ## <a name="data-handling"></a>資料處理
 
@@ -162,4 +164,11 @@ Web 內容篩選原則會指定哪些網站類別會封鎖在哪些裝置群組�
 
 - 「Web 內容篩選」報告目前僅限於顯示前5000記錄。 例如，[網域] 報告只會針對指定的篩選器查詢顯示最上層的5000網域（如果適用）。 
 
+
+
+- [Web 保護概觀](web-protection-overview.md)
+- [網頁威脅防護](web-threat-protection.md)
+- [監視 Web 安全性](web-protection-monitoring.md)
+- [回應 Web 威脅](web-protection-response.md)
+- [網路保護的需求](web-content-filtering.md)
 

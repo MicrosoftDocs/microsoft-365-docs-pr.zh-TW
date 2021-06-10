@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3f1a251d98be5b3a9fefa5c1f6d5d5562516d5d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908171"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861680"
 ---
 # <a name="privacy-and-personal-data"></a>隱私權和個人資料
 
@@ -109,10 +109,8 @@ Microsoft Defender for Endpoint data 可以儲存在幾個不同的地區。 基
 直接存取 Microsoft 受管理的電腦的內部資料儲存區的方式有幾種限制：
 
 - 它需要工程組長層級核准。
-- 它會進行審核，且時間有限。
-- 它需要使用高度安全且受限制的工作站。
+- 它會進行時間限制和審核。
 - 儲存時，會加密所有資料。
-- 沒有進行中的存取。
 - 存取 Microsoft 受管理的電腦的內部管理入口網站需要高安全性和限制的工作站。
 
 ## <a name="processing-personal-data-in-a-compliant-manner"></a>以相容的方式處理個人資料
