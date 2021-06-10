@@ -1,7 +1,7 @@
 ---
-title: 威脅和弱點管理的安全性建議
-description: 取得依威脅及威脅及弱點管理中威脅和價值的可操作安全性建議。
-keywords: 威脅和弱點管理，Microsoft Defender for Endpoint tvm security 建議，cybersecurity 建議，可操作的安全性建議
+title: 威脅與弱點管理的安全性建議
+description: 在威脅與弱點管理中取得依威脅（可能被破壞的可能性和價值）優先的可操作安全性建議。
+keywords: 威脅與弱點管理，Microsoft Defender for Endpoint tvm 安全性建議，cybersecurity 建議，可操作的安全性建議
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,21 +25,21 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933730"
 ---
-# <a name="security-recommendations---threat-and-vulnerability-management"></a>安全性建議-威脅和弱點管理
+# <a name="security-recommendations---threat-and-vulnerability-management"></a>安全性建議-威脅與弱點管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 組織中所識別的 Cybersecurity 弱點會對應至可操作的安全性建議，並依其影響來設定優先順序。 優先的建議有助於縮短緩解或修復弱點的時間，以及促進法規遵從性。
 
-每個安全性建議都包括可操作的修復步驟。 為了協助進行任務管理，也可以使用 Microsoft Intune 和 Microsoft 端點 Configuration Manager 傳送建議。 當威脅變化時，建議也會隨著它不斷地從您的環境收集資訊而變更。
+每個安全性建議都包括可操作的修復步驟。 若要協助任務管理，也可以使用 Microsoft Intune 和 Microsoft Endpoint Configuration Manager 傳送建議。 當威脅變化時，建議也會隨著它不斷地從您的環境收集資訊而變更。
 
 >[!TIP]
 >若要取得有關新弱點事件的電子郵件，請參閱 [在 Microsoft Defender For Endpoint 中設定弱點電子郵件通知](configure-vulnerability-email-notifications.md)
@@ -58,7 +58,7 @@ ms.locfileid: "51933730"
 
 以幾種不同的方式存取安全性建議頁面：
 
-- [Microsoft Defender Security Center](portal-overview.md)中的威脅和弱點管理導覽功能表
+- [Microsoft Defender 資訊安全中心](portal-overview.md)中的威脅和弱點管理導覽功能表
 - [威脅與弱點管理儀表板](tvm-dashboard-insights.md)中的最高安全性建議
 
 在下列位置查看相關的安全性建議：
@@ -68,11 +68,11 @@ ms.locfileid: "51933730"
 
 ### <a name="navigation-menu"></a>流覽功能表
 
-移至 [威脅與弱點管理] 導覽功能表，然後選取 [ **安全性建議**]。 此頁面包含組織中所發現之威脅及弱點的安全性建議清單。
+移至 [威脅與弱點管理] 導覽功能表，然後選取 [**安全性建議**]。 此頁面包含組織中所發現之威脅及弱點的安全性建議清單。
 
 ### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>威脅與弱點管理儀表板中的最高安全性建議
 
-在一天的安全性管理員中，您可以查看[威脅和弱點管理儀表板](tvm-dashboard-insights.md)，以查看[裝置的 Microsoft 安全分數](tvm-microsoft-secure-score-devices.md)並排[公開的總分](tvm-exposure-score.md)。 其目標是 **降低** 組織面臨的漏洞，並 **增加** 組織的裝置安全性，以更具彈性的 cybersecurity 威脅攻擊。 最常見的安全性建議清單可協助您達成該目標。
+在指定一天的安全性管理員中，您可以查看[威脅與弱點管理儀表板](tvm-dashboard-insights.md)，以查看[裝置的 Microsoft 安全分數](tvm-microsoft-secure-score-devices.md)並排[公開的分數](tvm-exposure-score.md)。 其目標是 **降低** 組織面臨的漏洞，並 **增加** 組織的裝置安全性，以更具彈性的 cybersecurity 威脅攻擊。 最常見的安全性建議清單可協助您達成該目標。
 
 ![安全性建議卡片的範例，具有四個安全性建議。](images/top-security-recommendations350.png)
 
@@ -85,7 +85,7 @@ ms.locfileid: "51933730"
 已 **公開裝置** 圖的色彩會隨著趨勢變更而變更。 如果公開的裝置數目增加，則色彩會變成紅色。 如果公開的裝置數目減少，圖形的色彩會變成綠色。
 
 >[!NOTE]
->威脅和弱點管理顯示在最多 **30 天** 前使用的裝置。 這與其余的 Microsoft Defender for Endpoint 不同，在此情況下，裝置未使用超過7天，其狀態為「非作用中」。
+>威脅和弱點管理會顯示在最多 **30 天** 前使用的裝置。 這與其余的 Microsoft Defender for Endpoint 不同，在此情況下，裝置未使用超過7天，其狀態為「非作用中」。
 
 ![安全性建議的登陸頁面範例。](images/tvmsecrec-updated.png)
 
@@ -106,7 +106,7 @@ ms.locfileid: "51933730"
 
 - **開啟軟體頁面** -開啟軟體頁面以取得軟體的更多內容，以及其散佈方式。 此資訊可包含威脅內容、相關的建議、發現的劣勢、公開的裝置數目、發現的漏洞、已安裝軟體的裝置名稱和詳細資訊，以及版本發行。
 
-- [**修正選項**](tvm-remediation.md) -提交修復要求以在 Microsoft Intune 中開啟票證，讓您的 IT 系統管理員挑選並解決。 在 [修正] 頁面中追蹤修復活動。
+- [**修正選項**](tvm-remediation.md)-提交修復要求以在 Microsoft Intune 中開啟票證，以供您的 IT 系統管理員挑選並解決。 在 [修正] 頁面中追蹤修復活動。
 
 - [**例外狀況選項**](tvm-exception.md) -提交例外狀況、提供理由，並設定例外期限（如果您無法修正問題）。
 
@@ -123,7 +123,7 @@ ms.locfileid: "51933730"
 
 ## <a name="request-remediation"></a>要求修正
 
-威脅和弱點管理修復功能會透過修正要求工作流程，來橋接安全性和 IT 管理員之間的缺口。 安全性管理員贊您可要求 IT 管理員從 [ **安全性建議** ] 頁面修正為 Intune 的漏洞。 [深入瞭解修復選項](tvm-remediation.md)
+威脅與弱點管理修復功能會透過修正要求工作流程，來橋接安全性與 IT 系統管理員之間的缺口。 安全性管理員贊您可要求 IT 管理員從 [ **安全性建議** ] 頁面修正為 Intune 的漏洞。 [深入瞭解修復選項](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>如何要求修正
 
@@ -157,11 +157,11 @@ ms.locfileid: "51933730"
 
 3. 從快顯視窗中，選取下拉式功能表中的 [inaccuracy] 類別、填入您的電子郵件地址，以及有關 inaccuracy 的詳細資料。
 
-4. 選取 **[提交]**。 您的意見反應會立即傳送給威脅和弱點管理專家。
+4. 選取 **[提交]**。 您的意見反應會立即傳送給威脅與弱點管理專家。
 
 ## <a name="related-articles"></a>相關文章
 
-- [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [儀表板](tvm-dashboard-insights.md)
 - [暴險分數](tvm-exposure-score.md)
 - [裝置用 Microsoft 安全分數](tvm-microsoft-secure-score-devices.md)

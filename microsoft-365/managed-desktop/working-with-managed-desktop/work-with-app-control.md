@@ -19,30 +19,30 @@ ms.locfileid: "50917637"
 ---
 # <a name="work-with-app-control"></a>使用應用程式控制
 
-在您的環境中部署應用程式控制後，您和 Microsoft 受管理的桌面作業都有持續的責任。 例如，您可能想要在環境中新增新的應用程式，或新增 (或移除) 信任的簽署者。 若要改善安全性，在您將所有應用程式發行給使用者之前，應先進行代碼簽署。 應用程式的發行者詳細資料會包含有關簽署者的資訊。
+在您的環境中部署應用程式控制後，您和 Microsoft 受管理的電腦作業都有持續的責任。 例如，您可能想要在環境中新增新的應用程式，或新增 (或移除) 信任的簽署者。 若要改善安全性，在您將所有應用程式發行給使用者之前，應先進行代碼簽署。 應用程式的發行者詳細資料會包含有關簽署者的資訊。
 
 
 ## <a name="add-a-new-app"></a>新增應用程式
 
 若要新增應用程式，請遵循下列步驟：
 
-1. 將 app 新增至 [Microsoft Intune](/mem/intune/apps/apps-win32-app-management)。
+1. 將 app 新增至[Microsoft Intune](/mem/intune/apps/apps-win32-app-management)。
 2. 將 app 部署到測試環中的任何裝置。 
 3. 根據標準商務程式測試您的應用程式。 
-4. 在 [ **應用程式和服務 Logs\Microsoft\Windows\AppLocker**] 底下，檢查事件檢視器，尋找任何 **8003** 或 **8006** 事件。 這些事件表示應用程式會遭到封鎖。 如需所有應用程式鎖定事件及其意義的詳細資訊，請參閱 [Using 事件檢視器 With AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)。
-5. 如果您發現以上任何事件，請使用 Microsoft 受管理的桌面作業開啟簽署者要求。
+4. 在 [**應用程式及服務 Windows Logs\Microsoft\**] 底下，檢查事件檢視器，以尋找任何 **8003** 或 **8006** 事件。 這些事件表示應用程式會遭到封鎖。 如需所有應用程式鎖定事件及其意義的詳細資訊，請參閱 [Using 事件檢視器 With AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)。
+5. 如果您發現以上事件中的任何一個，請開啟具有 Microsoft 受管理的電腦作業的簽署者要求。
 
 ## <a name="add-or-remove-a-trusted-signer"></a>新增 (或移除) 信任的簽署者
 
 當您開啟簽章要求時，您必須先提供一些重要的 publisher 詳細資料。 請遵循下列步驟：
 
 1. [收集發行者的詳細資料](#gather-publisher-details)。
-2. 使用 Microsoft Managed Desktop Operations 開啟票證以要求籤署者規則，並包含下列詳細資料：  
+2. 使用 Microsoft 受管理的電腦作業開啟票證以要求籤署者規則，並包含下列詳細資料：  
     - 應用程式名稱 
     - 應用程式版本 
     - 描述 
     - 變更類型 ( "add" 或 "remove" )   
-    - 發行者詳細資料 (例如： "O = <publisher name> ，L = <location> ，S = State，C = Country" )  
+    - Publisher 詳細資料 (例如： "O = <publisher name> ，L = <location> ，S = State，C = Country" )  
 
 > [!NOTE]
 > 若要移除應用程式的信任，請遵循相同的步驟，但設定要 *移除* 的 **變更類型**。
@@ -67,12 +67,12 @@ ms.locfileid: "50917637"
 
 若要存取應用程式的發行者資料，請遵循下列步驟：
 
-1. 在已套用稽核模式原則的測試環中，尋找 Microsoft 受管理的桌面裝置。 
+1. 在已套用稽核模式原則的測試環中，尋找 Microsoft 受管理的電腦裝置。 
 2. 嘗試在裝置上安裝應用程式。
 3. 開啟該裝置上的事件檢視器。 
-4. 在事件檢視器中，流覽至 [ **應用程式和服務 Logs\Microsoft\Windows**]，然後選取 **AppLocker**。 
+4. 在事件檢視器中，流覽至 [**應用程式和服務 Logs\Microsoft\ Windows**]，然後選取 **AppLocker**。 
 5. 尋找任何 **8003** 或 **8006** 事件，然後複製事件中的資訊： 
     - 應用程式名稱 
     - 應用程式版本 
     - 描述 
-    - 發行者詳細資料 (例如： "O = <publisher name> ，L = <location> ，S = State，C = Country" ) 
+    - Publisher 詳細資料 (例如： "O = <publisher name> ，L = <location> ，S = State，C = Country" ) 

@@ -1,7 +1,7 @@
 ---
 title: 提供受管理的安全性服務提供者 (MSSP) 存取權
-description: 深入瞭解 Microsoft Defender Security Center to the Microsoft 365 Security center 中的變更
-keywords: Microsoft 365 security center 快速入門，Microsoft Defender for Office 365，Microsoft Defender for Endpoint，MDO，MDE，單一窗格的玻璃，融合入口網站，安全性入口網站，Defender 安全性入口網站
+description: 深入瞭解 Microsoft Defender 資訊安全中心的 Microsoft 365 安全性中心的變更
+keywords: 開始使用「Microsoft 365 安全性中心」、microsoft defender for Office 365、microsoft defender for Endpoint、MDO、MDE、單一窗格的玻璃、混合入口網站、安全性入口網站、Defender 安全性入口網站
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -38,26 +38,26 @@ ms.locfileid: "51935350"
 
 若要執行多租使用者委派存取解決方案，請執行下列步驟：
 
-1. 在 Microsoft 365 security center 的 Defender for Endpoint 中啟用以 [角色為基礎的存取控制](/windows/security/threat-protection/microsoft-defender-atp/rbac) ，並聯機至 Azure Active Directory (azure AD) 群組。
+1. 在 Microsoft 365 security center 的 Defender for Endpoint 中啟用以[角色為基礎的存取控制](/windows/security/threat-protection/microsoft-defender-atp/rbac)，並以 Azure Active Directory (Azure AD) 群組連線。
 
 2. 設定存取要求與布建的控管 [訪問套件](/azure/active-directory/governance/identity-governance-overview) 。
 
 3. 在 [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve)中管理存取要求和審核。
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>在 Microsoft 365 安全中心的 Microsoft Defender for Endpoint 中啟用角色型存取控制
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>在 Microsoft 365 安全性中心的 Microsoft Defender for Endpoint 中啟用以角色為基礎的存取控制
 
 1. **在客戶 AAD 中建立 MSSP 資源的訪問群組：群組**
 
-    這些群組會連結至您在 Microsoft 365 安全中心的 [Defender for Endpoint] 中建立的角色。 若要這麼做，請在客戶 AD 承租人中建立三個群組。 在我們的範例方法中，我們建立下列群組：
+    這些群組會連結至您在 Microsoft 365 安全性中心的 Defender for Endpoint 中建立的角色。 若要這麼做，請在客戶 AD 承租人中建立三個群組。 在我們的範例方法中，我們建立下列群組：
 
     - 第1層分析員 
     - 第2層分析員 
     - MSSP 分析員核准者  
 
 
-2. 在 Microsoft 365 的安全性中心角色和群組中為端點的客戶 Defender 建立適當的訪問層級的 Endpoint role 建立 Defender。
+2. 在 Microsoft 365 的安全性中心角色和群組中，為端點的客戶 Defender 中的適當訪問層級建立適用于端點角色的 Defender 角色。
 
-    若要在客戶 Microsoft 365 的安全性中心啟用 RBAC，使用具有全域管理員或安全性管理員許可權的使用者帳戶， **> 端點角色 & 群組 > 角色** 的存取許可權。
+    若要在客戶 Microsoft 365 安全性中心內啟用 RBAC，使用具有全域管理員或安全性管理員許可權的使用者帳戶， **> 端點角色 & 群組 > 角色** 的存取許可權。
 
     ![MSSP 存取的影像](../../media/mssp-access.png)
 
@@ -135,4 +135,4 @@ ms.locfileid: "51935350"
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 具有所指派的許可權和角色。
 
 > [!IMPORTANT]
-> Microsoft 365 security center 中的 Microsoft Defender for Endpoint 的委派存取權目前允許存取每個瀏覽器視窗的單一承租人。
+> 在 Microsoft 365 security center 中對 Microsoft Defender for Endpoint 的委派存取目前允許存取每個瀏覽器視窗的單一承租人。

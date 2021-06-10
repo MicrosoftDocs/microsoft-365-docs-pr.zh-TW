@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 EmailEvents 表格
-description: 深入瞭解在高級搜尋架構的 EmailEvents 表格中與 Microsoft 365 電子郵件相關的事件
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、搜尋、查詢、遙測、架構參考、kusto、表格、欄、資料類型、描述、EmailEvents、網路郵件識別碼、寄件者、收件者、附件識別碼、連結計數、url 計數
+description: 深入瞭解在高級搜尋架構的 EmailEvents 資料表中，與 Microsoft 365 電子郵件相關聯的事件
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，欄，資料類型，描述、EmailEvents、網路郵件識別碼、寄件者、收件者、附件識別碼、連結計數、url 計數
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51935482"
 
 - Microsoft 365 Defender
 
-[！附注] `EmailEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含有關在 Microsoft Defender for Office 365 上處理電子郵件之事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `EmailEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含處理 Microsoft Defender 上的電子郵件處理 Office 365 的相關事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
 > 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的內建架構參照。
@@ -45,7 +45,7 @@ ms.locfileid: "51935482"
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
-| `NetworkMessageId` | string | Microsoft 365 產生之電子郵件的唯一識別碼 |
+| `NetworkMessageId` | string | 電子郵件的唯一識別碼，由 Microsoft 365 產生 |
 | `InternetMessageId` | 字串 | 透過傳送電子郵件系統所設定之電子郵件的公開識別碼 |
 | `SenderMailFromAddress` | 字串 | [郵件寄件者] 標頭中的寄件者電子郵件地址，又稱為信封寄件者或退回路徑位址 |
 | `SenderFromAddress` | 字串 | 電子郵件用戶端上的電子郵件收件者看得到 [寄件者] 標題中的寄件者電子郵件地址 |

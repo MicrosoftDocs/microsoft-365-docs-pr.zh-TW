@@ -42,11 +42,11 @@ ms.locfileid: "51933838"
 
 **開啟事件檢視器，並尋找 Microsoft Defender for Endpoint service 事件記錄檔：**
 
-1. 在 [Windows] 功能表上，按一下 [ **開始** ]，輸入 **事件檢視器**，然後按 **enter** 鍵。
+1. 在 [Windows] 功能表上，按一下 [**開始**]，輸入 **事件檢視器**，然後按 **enter** 鍵。
 
-2. 在 [記錄檔] 清單的 [**記錄摘要**] 下，向內滾動，直到看到 [ **Microsoft-Windows------Windows-** 按兩下專案以開啟記錄檔。
+2. 在 [記錄檔] 清單的 [**記錄摘要**] 下，向內滾動，直到您看到 [ **Microsoft Windows------** 按兩下專案以開啟記錄檔。
 
-   a.  您也可以透過擴充 **應用程式和服務記錄**  >  **Microsoft**  >  **Windows**  >  **感知**，然後按一下 [**操作**] 來存取記錄。
+   a.  您也可以透過擴充 **應用程式和服務記錄**  >  **Microsoft**  >  **Windows**  >  的 **意義** 來存取記錄檔，然後按一下 [作業]。
 
    > [!NOTE]
    > 判斷是指用來表示為 Microsoft Defender for Endpoint 供電的行為感應器的內部名稱。
@@ -99,14 +99,14 @@ ms.locfileid: "51933838"
 <td>裝置沒有正確板載，而且不會向入口網站回報。</td>
 <td>在啟動服務之前，必須先執行上架。<br>
 檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
 <td>7 </td>
 <td>Microsoft Defender for Endpoint service 無法讀取上架參數。 失敗： <code>variable</code> 。</td>
 <td>Variable = 詳細的錯誤描述。 裝置沒有正確板載，而且不會向入口網站回報。</td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
 <td>8 </td>
@@ -114,24 +114,24 @@ ms.locfileid: "51933838"
 <td><b>在上架期間：</b> 服務無法在上架期間清除其設定。 上架處理常式會繼續進行。 <br><br> <b>脫離時：</b> 服務無法在脫離期間清除其設定。 脫離處理常式完成，但服務仍在執行中。
  </td>
 <td>上<b>架：</b>不需要任何動作。 <br><br> <b>脫離：</b> 重新開機系統。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
 <td>9 </td>
 <td>Microsoft Defender for Endpoint service 無法變更其啟動類型。 失敗代碼： <code>variable</code> 。</td>
 <td><b>在上架期間：</b> 裝置沒有正確板載，而且不會向入口網站回報。 <br><br><b>脫離時：</b> 無法變更服務啟動類型。 脫離處理常式會繼續進行。 </td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
 <td>10 </td>
 <td>Microsoft Defender for Endpoint service 無法保留上架資訊。 失敗代碼： <code>variable</code> 。</td>
 <td>裝置沒有正確板載，而且不會向入口網站回報。</td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
-<td>11 </td>
+<td>第</td>
 <td>上架服務已完成的 Defender 或重新加入。</td>
 <td>裝置架正確。</td>
 <td>正常運作通知;不需要任何動作。<br>
@@ -150,7 +150,7 @@ ms.locfileid: "51933838"
 <td>正常運作通知;不需要任何動作。</td>
 </tr>
 <tr>
-<td>15 </td>
+<td>8</td>
 <td>Microsoft Defender for Endpoint 無法使用 URL: 啟動命令通道 <code>variable</code> 。</td>
 <td>Variable = 端點處理伺服器的 Defender URL。<br>
 服務無法與位於該 URL 的外部處理伺服器聯繫。</td>
@@ -162,26 +162,26 @@ ms.locfileid: "51933838"
 <td>Windows 遙測服務發生錯誤。</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">確定已啟用診斷資料服務</a>。<br>
 檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
 <td>18 </td>
-<td>已完成 OOBE (Windows 歡迎) 。</td>
-<td>只有在任何 Windows 更新安裝完畢後，服務才會啟動。</td>
+<td>OOBE (Windows 歡迎) 已完成。</td>
+<td>服務只會在任何 Windows 更新安裝完畢後開始。</td>
 <td>正常運作通知;不需要任何動作。</td>
 </tr>
 <tr>
 <td>19</td>
 <td>OOBE (Windows 歡迎) 尚未完成。</td>
-<td>只有在任何 Windows 更新安裝完畢後，服務才會啟動。</td>
+<td>服務只會在任何 Windows 更新安裝完畢後開始。</td>
 <td>正常運作通知;不需要任何動作。<br>
-如果此錯誤在系統重新開機之後仍然存在，請確定所有 Windows 更新已完整安裝。</td>
+如果此錯誤在系統重新開機之後仍然存在，請確定所有 Windows 更新都已完整安裝。</td>
 </tr>
 <tr>
 <td>共</td>
-<td>無法等候 OOBE (Windows 歡迎) 完成。 失敗代碼： <code>variable</code> 。</td>
+<td>無法等候 OOBE (Windows 歡迎使用) 完成。 失敗代碼： <code>variable</code> 。</td>
 <td>內部錯誤。</td>
-<td>如果此錯誤在系統重新開機之後仍然存在，請確定所有 Windows 更新已完整安裝。</td>
+<td>如果此錯誤在系統重新開機之後仍然存在，請確定所有 Windows 更新都已完整安裝。</td>
 </tr>
 <tr>
 <td>0.25</td>
@@ -189,7 +189,7 @@ ms.locfileid: "51933838"
 <td>裝置沒有正確板載。
 它會向入口網站回報，但服務可能不會顯示在 SCCM 或登錄中的註冊。</td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
 <td>得到</td>
@@ -197,14 +197,14 @@ ms.locfileid: "51933838"
 <td>裝置沒有正確板載。<br>
 它會向入口網站回報，但服務可能不會顯示在 SCCM 或登錄中的註冊。</td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
 <td>7</td>
-<td>Microsoft defender for Endpoint service 無法啟用 Microsoft Defender 防毒軟體中的感知感知模式。 上架過程失敗。 失敗代碼： <code>variable</code> 。</td>
-<td>一般情況下，如果其他即時惡意程式碼產品已在裝置上正常執行，則 Microsoft Defender 防病毒會進入特殊的被動狀態，而且裝置會向 Defender 報告端點。</td>
+<td>Microsoft Defender for Endpoint service 無法在 Microsoft Defender 防毒軟體中啟用感知感知模式。 上架過程失敗。 失敗代碼： <code>variable</code> 。</td>
+<td>一般來說，如果其他即時反惡意程式碼產品已在裝置上正常執行，Microsoft Defender 防毒軟體會進入特殊的被動狀態，而且裝置會向 Defender 報告端點。</td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。<br>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。<br>
 確定即時反惡意程式碼保護運作正常。</td>
 </tr>
 <tr>
@@ -213,7 +213,7 @@ ms.locfileid: "51933838"
 <td>Windows 遙測服務發生錯誤。</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">確定已啟用診斷資料服務</a>。<br>
 檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
 <td>29</td>
@@ -223,17 +223,17 @@ ms.locfileid: "51933838"
 </tr>
 <tr>
 <td>大約</td>
-<td>Microsoft Defender for Endpoint service 無法停用 Microsoft Defender 防病毒中的感知感知模式。 失敗代碼： <code>variable</code> 。</td>
-<td>一般情況下，如果其他即時惡意程式碼產品已在裝置上正常執行，則 Microsoft Defender 防病毒會進入特殊的被動狀態，而且裝置會向 Defender 報告端點。</td>
+<td>Microsoft Defender for Endpoint service 無法停用 Microsoft Defender 防毒軟體中的感知感知模式。 失敗代碼： <code>variable</code> 。</td>
+<td>一般來說，如果其他即時反惡意程式碼產品已在裝置上正常執行，Microsoft Defender 防毒軟體會進入特殊的被動狀態，而且裝置會向 Defender 報告端點。</td>
 <td>檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a><br>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a><br>
 確定即時反惡意程式碼保護運作正常。</td>
 </tr>
 <tr>
 <td>加</td>
 <td>Microsoft Defender 連線使用者經驗與遙測服務登出失敗。 失敗代碼： <code>variable</code> 。</td>
 <td>在上架期間執行 Windows 遙測服務時發生錯誤。 脫離處理常式會繼續進行。</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">使用 Windows 遙測服務檢查錯誤</a>。</td>
+<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">檢查 Windows 遙測服務的錯誤</a>。</td>
 </tr>
 <tr>
 <td>32</td>
@@ -254,12 +254,12 @@ ms.locfileid: "51933838"
 <td>Windows 遙測服務發生錯誤。</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">確定已啟用診斷資料服務</a>。<br>
 檢查是否已正確部署上架設定和腳本。 嘗試重新部署設定套件。<br>
-請參閱 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
+請參閱<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">板載 Windows 10 裝置</a>。</td>
 </tr>
 <tr>
 <td>35</td>
 <td>Microsoft Defender for Endpoint service 無法將其自我移除為對連接的使用者經驗和遙測服務的依賴性。 失敗代碼： <code>variable</code> 。</td>
-<td>在脫離時執行 Windows 遙測服務時發生錯誤。 脫離處理常式會繼續進行。
+<td>在脫離期間執行 Windows 遙測服務時發生錯誤。 脫離處理常式會繼續進行。
 </td>
 <td>使用 Windows 診斷資料服務檢查錯誤。</td>
 </tr>
@@ -494,7 +494,7 @@ ms.locfileid: "51933838"
 </tr>
 <tr>
    <td>84</td>
-   <td>設定 Windows Defender 防毒程式執行模式。 強制被動模式： %1，結果代碼： %2。</td>
+   <td>設定 Windows Defender 防毒軟體執行模式。 強制被動模式： %1，結果代碼： %2。</td>
    <td>設定 (主動或被動) 的 defender 執行模式。</td>
    <td>正常運作通知;不需要任何動作。</td>
 </tr>
@@ -532,13 +532,13 @@ ms.locfileid: "51933838"
    <td>90</td>
    <td>無法設定 System Guard Runtime Monitor 以連接地理區域 %1 中的雲端服務。 失敗代碼： %2</td>
    <td>System Guard Runtime Monitor 不會將證明資料傳送至雲端服務。</td>
-   <td>檢查註冊路徑的許可權： "HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm"。 若未發現任何問題，請與支援人員聯繫。</td>
+   <td>檢查註冊路徑上的許可權： "HKLM\Software\Microsoft\ Windows \CurrentVersion\Sgrm"。 若未發現任何問題，請與支援人員聯繫。</td>
 </tr>
 <tr>
    <td>91</td>
    <td>無法移除 System Guard Runtime Monitor 地理區域資訊。 失敗代碼： %1</td>
    <td>System Guard Runtime Monitor 不會將證明資料傳送至雲端服務。</td>
-   <td>檢查註冊路徑的許可權： "HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm"。 若未發現任何問題，請與支援人員聯繫。</td>
+   <td>檢查註冊路徑上的許可權： "HKLM\Software\Microsoft\ Windows \CurrentVersion\Sgrm"。 若未發現任何問題，請與支援人員聯繫。</td>
 </tr>
 <tr>
    <td>92</td>
@@ -613,5 +613,5 @@ ms.locfileid: "51933838"
 
 ## <a name="related-topics"></a>相關主題
 - [將 Windows 10 裝置上線](configure-endpoints.md)
-- [設定裝置 proxy 和網際網路連線設定](configure-proxy-internet.md)
+- [設定裝置 Proxy 和網際網路連線能力設定](configure-proxy-internet.md)
 - [為適用於端點的 Microsoft Defender 疑難排解](troubleshoot-onboarding.md)

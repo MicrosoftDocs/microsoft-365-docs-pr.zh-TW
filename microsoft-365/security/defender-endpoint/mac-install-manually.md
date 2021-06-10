@@ -47,14 +47,14 @@ ms.locfileid: "51935326"
 
 ## <a name="download-installation-and-onboarding-packages"></a>下載安裝和上架套件
 
-從 Microsoft Defender Security Center 下載安裝和上架套件：
+從 Microsoft Defender 資訊安全中心下載安裝和上架套件：
 
-1. 在 Microsoft Defender Security Center 中，移至 [ **設定] > 裝置管理 > 上架**]。
+1. 在 Microsoft Defender 資訊安全中心中，移至 **設定 > 裝置管理 > 上架**。
 2. 在頁面的區段1中，將 [作業系統] 設定為 **macOS** ，並將 Deployment 方法設定為 **本機腳本**。
 3. 在頁面的區段2中，選取 [ **下載安裝套件**]。 將其儲存為 wdav。 pkg 至本機目錄。
 4. 在頁面的區段2中，選取 [ **下載上架套件**]。 將它儲存成 WindowsDefenderATPOnboardingPackage.zip 相同的目錄。
 
-    ![Microsoft Defender 安全中心螢幕擷取畫面](images/atp-portal-onboarding-page.png)
+    ![Microsoft Defender 資訊安全中心螢幕擷取畫面](images/atp-portal-onboarding-page.png)
 
 5. 在命令提示字元中，確認您有兩個檔案。
     
@@ -107,11 +107,11 @@ ms.locfileid: "51935326"
 
 5. 針對 Mac 上的端點，針對所有隨 Microsoft Defender for Endpoint 發佈的系統擴充，重複步驟 3 & 4。
 
-6. 在端點偵測和回應功能中，Mac 版的 Microsoft Defender Endpoint 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 當系統提示您授與 Microsoft Defender for Endpoint 許可權以篩選網路流量時，請選取 [ **允許**]。
+6. 在端點偵測和回應功能的一部分中，Mac 上端點的 Microsoft Defender 會檢查通訊端流量，並向 Microsoft Defender 資訊安全中心入口網站回報此資訊。 當系統提示您授與 Microsoft Defender for Endpoint 許可權以篩選網路流量時，請選取 [ **允許**]。
 
     ![系統分機安全性 preferences2](images/big-sur-install-4.png)
 
-7. 開啟 **系統偏好設定**  >  **安全性 & 隱私權** 及流覽至 **[隱私權**] 索引標籤。授與 **microsoft defender atp** 和 **microsoft defender atp Endpoint Security Extension** 的 **完整磁片存取** 許可權。
+7. 開啟 **系統偏好** 設定  >  **安全性 & 隱私權** 及流覽至 **[隱私權**] 索引標籤。授與 **Microsoft Defender ATP** 和 **Microsoft Defender ATP 端點安全性擴充** 的 **完整磁片存取** 許可權。
 
     ![完全磁片存取](images/big-sur-install-5.png)
 
@@ -170,11 +170,11 @@ ms.locfileid: "51935326"
         mdatp threat list
         ```
 
-3. 執行 EDR 偵測測試，以確認裝置已正確架及報表服務。 在新的架裝置上執行下列步驟：
+3. 執行 EDR 偵測測試，以確認裝置已正確架及報告給服務。 在新的架裝置上執行下列步驟：
 
-   1. 在您的瀏覽器中（例如 Microsoft Edge for Mac 或 Safari）。
+   1. 在您的瀏覽器中，例如 Mac 或 Safari Microsoft Edge。
 
-   1. 下載 MDATP MacOS DIY.zip https://aka.ms/mdatpmacosdiy ，並從中解壓縮。
+   1. 從與解壓縮 MDATP MacOS DIY.zip 下載 https://aka.ms/mdatpmacosdiy 。
 
       您可能會收到提示：
 
@@ -185,22 +185,22 @@ ms.locfileid: "51935326"
 
 5. 開啟 **下載**。
 
-6. 您應該會看到 **MDATP MACOS DIY**。
+6. 您應該會看到 **MDATP MacOS DIY**。
 
    > [!TIP]
    > 如果您按兩下，將會收到下列訊息：
    > 
-   > > **無法開啟 "MDATP MacOS DIY"，因為開發人員無法成為驗證程式。**<br/>
+   > > **無法開啟「MDATP MacOS DIY」，因為開發人員無法成為驗證程式。**<br/>
    > > macOS 無法驗證此應用程式是否沒有惡意程式碼。<br/>
    > > **\[ 移至垃圾桶 \]** **\[ 取消 \]** 
   
 7. 按一下 [取消]。
 
-8. 以滑鼠右鍵按一下 [ **MDATP MACOS DIY**]，然後按一下 [ **開啟**]。 
+8. 以滑鼠右鍵按一下 [ **MDATP MacOS DIY**]，然後按一下 [**開啟**]。 
 
     系統應該會顯示下列訊息：
 
-    > **macOS 無法驗證 **MDATP MACOS DIY** 的開發人員。您確定要開啟它嗎？**<br/>
+    > **macOS 無法驗證 **MDATP macOS DIY** 的開發人員。您確定要開啟它嗎？**<br/>
     > 開啟此應用程式後，您將覆寫系統安全性，其可能會對您的電腦和個人資訊公開惡意程式碼，可能會損害您的 Mac 或危及您的隱私。
 
 10. 按一下 [開啟]。
@@ -212,13 +212,13 @@ ms.locfileid: "51935326"
 
 11. 按一下 [開啟]。
 
-    在幾分鐘內，應引發名為 "macOS EDR Test Alert" 的警示。
+    在幾分鐘內，應引發名為 "macOS EDR 測試警示" 的警示。
 
-12. 移至 Microsoft Defender Security Center (https://SecurityCenter.microsoft.com) 。
+12. 移至 Microsoft Defender 資訊安全中心 (https://SecurityCenter.microsoft.com) 。
 
 13. 移至警示佇列。
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="MacOS EDR 測試警示的範例，顯示嚴重性、類別、偵測來源及動作的折疊功能表。":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="macOS EDR 測試警示的範例，顯示嚴重性、類別、偵測來源及動作的折疊功能表。":::
     
     查看警示詳細資料和裝置時程表，並執行定期調查步驟。
 

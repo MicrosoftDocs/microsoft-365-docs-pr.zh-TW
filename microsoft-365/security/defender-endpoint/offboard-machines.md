@@ -45,10 +45,10 @@ ms.locfileid: "51934150"
 >[!NOTE]
 > 裝置狀態會在脫離後的7天內切換成 [非](fix-unhealthy-sensors.md#inactive-devices) 使用中狀態。 <br> Offboarded 裝置的資料 (例如時程表、警示、弱點等等 ) 會保留在入口網站中，直到設定的 [保留期間](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) 到期為止。 <br>
 > 裝置的設定檔 (（沒有資料）) 會保留在 [裝置清單](machines-view-overview.md) 中，不得超過180天。
-> 此外，在過去30天內未使用中的裝置，不會考慮反映組織威脅的資料，以及裝置的安全性漏洞管理 [洩密分數](tvm-exposure-score.md) 和 Microsoft 安全評分。 <br>
+> 此外，在過去30天內未使用中的裝置，不會考慮反映組織威脅與弱點管理[公開分數](tvm-exposure-score.md)和裝置的 Microsoft 安全分數的資料。 <br>
 > 若只要查看作用中的裝置，您可以依 [健康狀態](machines-view-overview.md#health-state)、 [裝置標記](machine-tags.md) 或 [機器群組](machine-groups.md)進行篩選。 
 
-## <a name="offboard-windows-10-devices"></a>Windows 10 裝置下架
+## <a name="offboard-windows-10-devices"></a>下架 Windows 10 裝置
 - [使用本機腳本的下架裝置](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [使用群組原則的下架裝置](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [使用行動裝置管理工具下架裝置](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)

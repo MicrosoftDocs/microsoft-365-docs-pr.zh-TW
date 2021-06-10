@@ -51,13 +51,13 @@ ms.locfileid: "51934570"
 
 ## <a name="download-the-onboarding-package"></a>下載上架套件
 
-從 Microsoft Defender 安全中心下載上架套件：
+從 Microsoft Defender 資訊安全中心下載上架套件：
 
-1. 在 Microsoft Defender Security Center 中，移至 [ **設定] > 裝置管理 > 上架**]。
+1. 在 Microsoft Defender 資訊安全中心中，移至 **設定 > 裝置管理 > 上架**。
 2. 在第一個下拉式功能表中，選取 [ **Linux 伺服器** ] 做為作業系統。 在第二個下拉式功能表中，選取 **您偏好的 Linux 設定管理工具** 做為部署方法。
 3. 選取 [ **下載上架] 套件**。 將檔案儲存為 WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft Defender 安全中心螢幕擷取畫面](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft Defender 資訊安全中心螢幕擷取畫面](images/atp-portal-onboarding-linux-2.png)
 
 4. 在命令提示字元中，確認您有檔案。 
 

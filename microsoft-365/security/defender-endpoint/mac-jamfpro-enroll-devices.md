@@ -1,6 +1,6 @@
 ---
-title: 在 macOS 裝置上為 Jamf Pro 註冊 Microsoft Defender for Endpoint
-description: 在 macOS 裝置上為 Jamf Pro 註冊 Microsoft Defender for Endpoint
+title: 在 macOS 裝置上，將 Microsoft Defender 用於端點註冊到 Jamf Pro
+description: 在 macOS 裝置上，將 Microsoft Defender 用於端點註冊到 Jamf Pro
 keywords: microsoft，defender，Microsoft Defender for Endpoint，mac，安裝，部署，卸載，intune，jamfpro，macos，catalina，mojave，高塞拉里昂
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933094"
 ---
-# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 裝置上為 Jamf Pro 註冊 Microsoft Defender for Endpoint 
+# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 裝置上，將 Microsoft Defender 用於端點註冊到 Jamf Pro 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,7 +50,7 @@ ms.locfileid: "51933094"
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>註冊方法1：註冊邀請
 
-1. 在 Jamf Pro 儀表板中，流覽至 [ **註冊邀請**]。
+1. 在 Jamf Pro 儀表板中，流覽至 [**註冊邀請**]。
 
     ![設定 settings1 的影像](images/a347307458d6a9bbfa88df7dbe15398f.png)
 

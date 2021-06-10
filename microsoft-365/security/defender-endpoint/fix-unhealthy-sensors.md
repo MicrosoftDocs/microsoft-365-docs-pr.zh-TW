@@ -45,7 +45,7 @@ ms.locfileid: "51935362"
 如果裝置由於任何原因尚未使用超過7天，它會保持入口網站中的「非使用中」狀態。
 
 ### <a name="device-was-reinstalled-or-renamed"></a>裝置已重新安裝或重新命名
-重新安裝或重新命名的裝置會在 Microsoft Defender Security Center 中產生新的裝置實體。 在入口網站中，舊的裝置實體仍會保持「非使用中」狀態。 如果您重新安裝裝置，並部署了端點套件的 Defender 套件，請搜尋新的裝置名稱，以確認裝置正常報告。
+重新安裝或重新命名的裝置會在 Microsoft Defender 資訊安全中心中產生新的裝置實體。 在入口網站中，舊的裝置實體仍會保持「非使用中」狀態。 如果您重新安裝裝置，並部署了端點套件的 Defender 套件，請搜尋新的裝置名稱，以確認裝置正常報告。
 
 ### <a name="device-was-offboarded"></a>裝置已 offboarded
 如果裝置 offboarded，它仍會出現在 [裝置] 清單中。 7天后，裝置健康狀態應該變更為 [非使用中]。
@@ -84,10 +84,10 @@ ms.locfileid: "51935362"
   驗證 proxy 設定是否順利完成，該 WinHTTP 可以透過您環境中的 proxy 伺服器探索和通訊，而且 proxy 伺服器允許流量至 Microsoft Defender for Endpoint service URLs。
 
 - [確定已啟用診斷資料服務](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
-如果裝置的報告不正確，您可能需要檢查 Windows 10 診斷資料服務是否設定為自動啟動，並在端點上執行。
+如果裝置的報告不正確，您可能需要確認 Windows 10 診斷資料服務設定為自動啟動，並在端點上執行。
 
-- [確定原則未停用 Microsoft Defender 防毒程式](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-如果您的裝置執行的是協力廠商反惡意軟體用戶端，則該 Defender 代理程式需要 Microsoft Defender 防毒程式的早期發行反惡意軟體 (ELAM) 驅動程式才能啟用。
+- [確定原則未停用 Microsoft Defender 防毒軟體](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
+如果您的裝置執行的是協力廠商反惡意軟體用戶端，則該 Defender 代理程式需要 Microsoft Defender 防毒軟體預先啟動反惡意程式碼 (ELAM) 要啟用的驅動程式。
 
 如果您採取了糾正動作但裝置狀態仍設定不正確，請 [開啟支援票證](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)。
 

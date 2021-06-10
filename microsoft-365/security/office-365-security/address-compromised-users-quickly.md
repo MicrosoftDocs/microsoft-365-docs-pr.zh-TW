@@ -12,7 +12,7 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: 瞭解如何使用 Microsoft Defender for Office 365 方案2中的自動調查和回應功能，以加速偵測和解決已遭破壞之使用者帳戶的處理常式。
+description: 瞭解如何在 Microsoft Office 365 方案2中，加快偵測和解決已遭破壞之使用者帳戶的程式，以進行 Microsoft Defender 中的自動調查和回應功能。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
@@ -32,7 +32,7 @@ ms.locfileid: "51934690"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[Microsoft Defender For Office 365 方案 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) 包含強大的 [自動化調查和回應](office-365-air.md) (AIR) 功能。 這類功能可讓您的安全性運作小組儲存大量的時間和精力處理威脅。 Microsoft 繼續加強安全性功能。 最近，AIR 功能已增強，可在目前預覽) 中包含已遭破壞的使用者安全性行動手冊 (。 請閱讀本文以深入瞭解已遭破壞的使用者安全性行動手冊。 [使用 Microsoft Defender For Office 365，查看並回應使用者洩密和限制損等範圍](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)的博客文章，以取得其他詳細資料。
+[適用于 Office 365 方案2的 Microsoft Defender](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)包含強大的[自動調查和回應](office-365-air.md) (AIR) 功能。 這類功能可讓您的安全性運作小組儲存大量的時間和精力處理威脅。 Microsoft 繼續加強安全性功能。 最近，AIR 功能已增強，可在目前預覽) 中包含已遭破壞的使用者安全性行動手冊 (。 請閱讀本文以深入瞭解已遭破壞的使用者安全性行動手冊。 請參閱「博客文章」[可加快使用者對使用 Microsoft Defender 的損害及限制遭到破壞範圍的時間](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)，以取得其他詳細資料的 Office 365。
 
 ![針對已遭破壞的使用者進行自動調查](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -46,7 +46,7 @@ ms.locfileid: "51934690"
 
 ## <a name="compromised-user-alerts"></a>遭到破壞的使用者警示
 
-當使用者帳戶受損時，會發生反常或反常的行為。 例如，網路釣魚和垃圾郵件可能會從受信任的使用者帳戶內部傳送。 適用于 office 365 的 Defender （適用于 office 365 中的電子郵件模式和共同作業活動中）可以偵測到。 發生這種情況時，就會觸發警示，威脅緩解程式會開始進行。
+當使用者帳戶受損時，會發生反常或反常的行為。 例如，網路釣魚和垃圾郵件可能會從受信任的使用者帳戶內部傳送。 Office 365 的 Defender 可偵測 Office 365 中的電子郵件模式和共同作業活動中的這類異常。 發生這種情況時，就會觸發警示，威脅緩解程式會開始進行。
 
 例如，以下是由於可疑電子郵件傳送而觸發的警示：
 

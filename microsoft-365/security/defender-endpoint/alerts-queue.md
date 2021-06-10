@@ -29,7 +29,7 @@ ms.locfileid: "51934330"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
-- [適用於端點的 Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [端點的 Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
@@ -65,7 +65,7 @@ ms.locfileid: "51934330"
 
 #### <a name="understanding-alert-severity"></a>瞭解警示嚴重性
 
-Microsoft defender 防病毒 (Microsoft Defender AV) 和 Defender for Endpoint 警示嚴重性不同，因為它們代表不同的範圍。
+Microsoft Defender 防毒軟體 (Microsoft Defender AV) 和 Defender for Endpoint alert 嚴重性不同，因為它們代表不同的範圍。
 
 Microsoft Defender AV 威脅嚴重性代表偵測到之威脅 (惡意程式碼) 中的絕對嚴重性，並根據個別裝置可能的潛在風險（如果受到感染）進行指派。
 
@@ -100,7 +100,7 @@ Defender for Endpoint alert 嚴重性代表偵測到的行為嚴重性、實際�
 | 堅持          | 堅持         | 建立 autostart 擴充點 (ASEPs) 保持使用中且可經受系統重新開機                                        |
 | 許可權提升 | PrivilegeEscalation | 在特權程式或帳戶的上下文中執行程式碼，以取得更高的許可權層級                         |
 | 軟體           | 軟體          | 惡意程式碼會加密檔案和 extorts 付款以還原存取                                                                     |
-| 可疑活動  | SuspiciousActivity  | 可能成為惡意程式碼或部分攻擊的非典型活動                                                                 |
+| 可疑的活動  | SuspiciousActivity  | 可能成為惡意程式碼或部分攻擊的非典型活動                                                                 |
 | 不需要的軟體    | UnwantedSoftware    | 影響生產力和使用者經驗的低信譽應用程式和應用程式偵測到可能有害的應用程式 (PUAs)  |
 
 ### <a name="status"></a>狀態
@@ -111,7 +111,7 @@ Defender for Endpoint alert 嚴重性代表偵測到的行為嚴重性、實際�
 
 會對應至自動調查狀態。
 
-### <a name="category"></a>類別
+### <a name="category"></a>Category
 
 您可以選擇篩選佇列以顯示特定類型的惡意活動。
 
@@ -124,7 +124,7 @@ Defender for Endpoint alert 嚴重性代表偵測到的行為嚴重性、實際�
 選取觸發警示偵測的來源。 Microsoft 威脅專家預覽參與者現在可以篩選並查看新威脅專家管理之搜尋服務中的偵測結果。
 
 >[!NOTE]
->只有在裝置使用 Microsoft Defender 防病毒作為預設即時防護反惡意軟體產品時，才會顯示防病毒篩選器。
+>只有在裝置使用 Microsoft Defender 防毒軟體作為預設即時保護反惡意軟體產品時，才會顯示防病毒篩選器。
 
 | 偵測來源                  | API 值                  |
 |-----------------------------------|----------------------------|

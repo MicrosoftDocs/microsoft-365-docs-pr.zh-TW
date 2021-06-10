@@ -60,7 +60,7 @@ ms.locfileid: "51935062"
 
 ### <a name="user-details"></a>使用者詳細資料
 
-左側的 **使用者詳細資料** 窗格提供使用者的相關資訊，例如相關的開啟事件、作用中警示、SAM 名稱、SID、Microsoft Defender for Identity 警示、使用者登入的裝置數目、角色和登入類型。 視您已啟用的整合功能而定，您將會看到其他詳細資料。 例如，如果您啟用商務用 Skype 整合，您就可以從入口網站聯繫使用者。 如果您已啟用 Microsoft Defender 身分識別功能，且有與使用者相關的警示， **AZURE ATP alerts** 區段會包含連結，以將您帶至 [microsoft Defender 身分識別] 頁面。 [Microsoft Defender 身分識別] 頁面將提供有關提醒的詳細資訊。
+左側的 **使用者詳細資料** 窗格提供使用者的相關資訊，例如相關的開啟事件、作用中警示、SAM 名稱、SID、Microsoft Defender for Identity 警示、使用者登入的裝置數目、角色和登入類型。 視您已啟用的整合功能而定，您將會看到其他詳細資料。 例如，如果您啟用 business integration 的 Skype，您就可以從入口網站聯繫使用者。 如果您已啟用 Microsoft Defender 身分識別功能，且有與使用者相關的警示， **AZURE ATP alerts** 區段會包含連結，以將您帶至 [microsoft Defender 身分識別] 頁面。 [Microsoft Defender 身分識別] 頁面將提供有關提醒的詳細資訊。
 
 >[!NOTE]
 >您必須在 Microsoft Defender for Identity 和 Defender for Endpoint 上啟用整合，才能使用此功能。 在 [Defender for Endpoint] 中，您可以在 [高級功能] 中啟用這項功能。 如需如何啟用高級功能的詳細資訊，請參閱 [開啟高級功能](advanced-features.md)。

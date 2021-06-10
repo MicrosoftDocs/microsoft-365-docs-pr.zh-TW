@@ -105,7 +105,7 @@ ms.locfileid: "51934618"
 
     2.  個別的應用程式存放區提供者和其子公司是這些條款的協力廠商受益人，當您接受這些條款時，應用程式存放區提供者 (s) 將有權直接強制執行，並依據任何規定授予其權益或權力的條款。
 
-9.  **商標通知。** Microsoft、Microsoft Defender for Endpoint 和 Microsoft 365 是 Microsoft Corporation 在美國及（或）其他國家/地區的註冊或共同法律商標。
+9.  **商標通知。** microsoft、microsoft Defender for Endpoint 和 Microsoft 365 是 microsoft Corporation 在美國及（或）其他國家/地區的註冊或共同法律商標。
 
 10. **ENTIRE AGREEMENT.** 本協定和您使用的增補、更新、網際網路服務和支援服務條款，都是適用于應用程式和支援服務的完整合約。
 

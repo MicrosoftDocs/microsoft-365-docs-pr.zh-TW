@@ -53,8 +53,8 @@ MacOS 上的 Microsoft Defender for Endpoint 可以偵測及報告 PUA 檔案。
 您可以透過下列其中一種方式，設定 macOS 的 Microsoft Defender for Endpoint 中的 PUA 保護：
 
 - **Off**：已停用 PUA 保護。
-- **Audit**： PUA files 會在產品記錄中報告，但不會在 Microsoft Defender Security Center 中報告。 使用者不會呈現任何通知，產品也不會採取任何動作。
-- **封鎖**： PUA 檔案會在產品記錄和 Microsoft Defender Security Center 中報告。 使用者會看到一則通知，並由產品採取動作。
+- **Audit**： PUA files 會在產品記錄中報告，但不會在 Microsoft Defender 資訊安全中心中報告。 使用者不會呈現任何通知，產品也不會採取任何動作。
+- **封鎖**： PUA 檔案會在產品記錄和 Microsoft Defender 資訊安全中心中報告。 使用者會看到一則通知，並由產品採取動作。
 
 >[!WARNING]
 >根據預設，會在 **審核** 模式中設定 PUA 保護。

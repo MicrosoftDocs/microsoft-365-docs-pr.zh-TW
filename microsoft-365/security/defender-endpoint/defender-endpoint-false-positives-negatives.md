@@ -1,5 +1,5 @@
 ---
-title: 解決適用於端點的 Microsoft Defender 中的誤判
+title: 解決適用於端點的 Microsoft Defender 中的誤判/漏報
 description: 瞭解如何在 Microsoft Defender for Endpoint 中處理誤報或虛假的否定。
 keywords: 防病毒，例外，排除，Microsoft Defender for Endpoint，誤報，false 負數，封鎖檔，封鎖的 url
 search.product: eADQiWindows 10XVcnh
@@ -29,7 +29,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933586"
 ---
-# <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解決適用於端點的 Microsoft Defender 中的誤判
+# <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解決適用於端點的 Microsoft Defender 中的誤判/漏報
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "51933586"
 
 ![在端點中定義 false 正值和負值](images/false-positives-overview.png)
 
-幸運的是，您可以採取步驟解決並減少這類問題。 如果您在 [Microsoft Defender Security Center](../defender/microsoft-365-security-center-mde.md)中看到誤報/負片，您的安全性作業可以採取步驟使用下列程式進行處理：
+幸運的是，您可以採取步驟解決並減少這類問題。 如果您在[Microsoft Defender 資訊安全中心](../defender/microsoft-365-security-center-mde.md)中看到誤報/負片，您的安全性作業可以採取步驟來處理它們，方法是使用下列程式：
 
 1.  [審閱和分類提醒](#part-1-review-and-classify-alerts) 
 2.  [複查所執行的修復動作](#part-2-review-remediation-actions)
@@ -66,7 +66,7 @@ ms.locfileid: "51933586"
 
 在您分類或抑制警示之前，請先判斷警示是否正確、誤報或良性。
 
-1. 請移至 Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
+1. 移至 Microsoft Defender 資訊安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
 
 2. 在功能窗格中，選擇 [ **警示佇列**]。
 
@@ -82,9 +82,9 @@ ms.locfileid: "51933586"
 
 ### <a name="classify-an-alert"></a>分類警示
 
-在 Microsoft Defender Security Center 中，警示可以分類為誤報或 true 陽性。 分類提醒可協助訓練 Microsoft Defender for Endpoint，這樣一來，您就能看到更真實的通知，以及更少的錯誤警示。
+警示可以分類為 Microsoft Defender 資訊安全中心中的誤報或 true 陽性。 分類提醒可協助訓練 Microsoft Defender for Endpoint，這樣一來，您就能看到更真實的通知，以及更少的錯誤警示。
 
-1. 請移至 Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
+1. 移至 Microsoft Defender 資訊安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
 
 2. 選取 [ **提醒佇列**]，然後選取警示。
 
@@ -97,9 +97,9 @@ ms.locfileid: "51933586"
 
 ### <a name="suppress-an-alert"></a>抑制警示
 
-如果您的提醒是誤報或為 true，但不重要的事件，您可以在 Microsoft Defender 安全中心抑制這些警示。 抑制提醒有助於減少安全性作業儀表板中的噪音。 
+如果您的提醒是誤報或為 true，但不重要的事件，您可以在 Microsoft Defender 資訊安全中心中抑制這些警示。 抑制提醒有助於減少安全性作業儀表板中的噪音。 
 
-1. 請移至 Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
+1. 移至 Microsoft Defender 資訊安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
 
 2. 在功能窗格中，選取 [ **警示佇列**]。
 
@@ -114,7 +114,7 @@ ms.locfileid: "51933586"
 
 ## <a name="part-2-review-remediation-actions"></a>第2部分：複查修復動作
 
-[修正動作](manage-auto-investigation.md#remediation-actions)（例如傳送檔案至隔離或停止程式）的工作是針對實體 (，例如偵測為威脅) 的檔案。 透過自動調查和 Microsoft Defender 防毒程式，會自動進行多種類型的修復動作：   
+[修正動作](manage-auto-investigation.md#remediation-actions)（例如傳送檔案至隔離或停止程式）的工作是針對實體 (，例如偵測為威脅) 的檔案。 透過自動調查和 Microsoft Defender 防毒軟體，會自動進行多種類型的修復動作：   
 - 隔離檔
 - 移除登錄機碼
 - 終止進程
@@ -199,42 +199,42 @@ CustomEnterpriseBlock!cl` 。 在過去30天內，在此裝置上已隔離的所
 排除是您指定作為修正動作例外狀況的實體（例如檔案或 URL）。 仍然可以偵測到已排除的實體，但不會對該實體採取任何修正動作。 也就是說，已偵測到的檔案或處理常式不會停止、傳送至隔離、移除，或由 Microsoft Defender for Endpoint 變更為已變更。 
 
 若要在 Microsoft Defender for Endpoint 中定義排除專案，請執行下列工作：
-- [定義 Microsoft Defender 防病毒的排除專案](#exclusions-for-microsoft-defender-antivirus)
+- [為 Microsoft Defender 防毒軟體定義排除專案](#exclusions-for-microsoft-defender-antivirus)
 - [為 Microsoft Defender for Endpoint 建立 "allow" 標記](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> Microsoft Defender 防病毒排除只適用于防防毒保護，而不是跨其他 Microsoft Defender for Endpoint 功能。 若要排除廣泛的檔案，請將 microsoft Defender 防病毒和 [自訂指示器](/microsoft-365/security/defender-endpoint/manage-indicators) 的排除用於 microsoft Defender for Endpoint。
+> Microsoft Defender 防毒軟體排除只會套用至防防毒保護，而不是跨其他 Microsoft Defender for Endpoint 功能。 若要排除廣泛的檔案，請針對 Microsoft Defender for Endpoint 的 Microsoft Defender 防毒軟體和[自訂指示器](/microsoft-365/security/defender-endpoint/manage-indicators)使用排除。
 
 本節中的程式說明如何定義排除和指示器。
 
-### <a name="exclusions-for-microsoft-defender-antivirus"></a>Microsoft Defender 防病毒的排除
+### <a name="exclusions-for-microsoft-defender-antivirus"></a>Microsoft Defender 防毒軟體的排除專案
 
-一般說來，您不需要為 Microsoft Defender 防病毒定義排除專案。 請確定您少定義排除專案，而且您只會包含會產生誤報的檔案、資料夾、處理常式及處理常式開啟的檔。 此外，請務必定期查看您定義的排除專案。 建議使用 [Microsoft 端點管理員](/mem/endpoint-manager-overview) 來定義或編輯您的防病毒排除專案。不過，您可以使用其他方法，例如 [群組原則](/azure/active-directory-domain-services/manage-group-policy) (請參閱 [管理 Microsoft Defender for Endpoint](manage-atp-post-migration.md)) 。
+一般說來，您不需要為 Microsoft Defender 防毒軟體定義排除專案。 請確定您少定義排除專案，而且您只會包含會產生誤報的檔案、資料夾、處理常式及處理常式開啟的檔。 此外，請務必定期查看您定義的排除專案。 建議使用[Microsoft 端點管理員](/mem/endpoint-manager-overview)來定義或編輯您的防病毒排除專案。不過，您可以使用其他方法，例如[群組原則](/azure/active-directory-domain-services/manage-group-policy) (請參閱[管理 Microsoft Defender for Endpoint](manage-atp-post-migration.md)) 。
 
 > [!TIP]
-> 需要防病毒排除的協助嗎？ 請參閱 [設定及驗證 Microsoft Defender 防病毒掃描的排除](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)專案。
+> 需要防病毒排除的協助嗎？ 請參閱[設定及驗證 Microsoft Defender 防毒軟體掃描的排除](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)專案。
 
 #### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>使用 Microsoft 端點管理員管理現有原則的防病毒排除 () 
 
-1. 請移至 Microsoft 端點管理員管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+1. 請移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
 
 2. 選擇 [ **Endpoint security**  >  **防病毒**]，然後選取現有的原則。  (如果您沒有現有的原則，或是您想要建立新的原則，請跳至 [下一個](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions) 程式) 。
 
 3. 選擇 [ **屬性**]，然後選擇 [ **設定設定**] 旁的 [ **編輯**]。
 
-4. 展開 [ **Microsoft Defender 防病毒排除** ]，然後指定您的排除專案。
+4. 展開 **Microsoft Defender 防毒軟體排除** 專案，然後指定排除專案。
 
 5. 選擇 [ **審閱 + 儲存**]，然後選擇 [ **儲存**]。
 
 #### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>使用 Microsoft 端點管理員建立包含排除的新防病毒原則
 
-1. 請移至 Microsoft 端點管理員管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+1. 請移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
 
 2. 選擇 [**安全性**  >  **防病毒**  >  **+ 建立原則**]。 
 
-3. 選取平臺 (例如 **windows 10 和更新版本**、 **macOS** 或 **windows 10 及 windows Server**) 。
+3. 選取平臺 (，例如 **Windows 10 和更新版本**、 **macOS**] 或 [ **Windows 10 及 Windows Server**) 。
 
-4. 在 [ **設定檔**] 中，選取 [ **Microsoft Defender 防病毒排除**]，然後選擇 [ **建立**]。
+4. 在 [**設定檔**] 中，選取 [ **Microsoft Defender 防毒軟體排除**]，然後選擇 [**建立**]。
 
 5. 指定設定檔的名稱和描述，然後選擇 **[下一步]**。
 
@@ -242,7 +242,7 @@ CustomEnterpriseBlock!cl` 。 在過去30天內，在此裝置上已隔離的所
 
 7. 在 [ **範圍** 標籤] 索引標籤上，如果您在組織中使用範圍標記，請指定您要建立之原則的範圍標記。  (請參閱 [Scope tags](/mem/intune/fundamentals/scope-tags)。 ) 
 
-8. 在 [ **工作分派** ] 索引標籤上，指定應套用原則的使用者和群組，然後選擇 **[下一步]**。  (如果您需要協助工作指派，請參閱 [在 Microsoft Intune 中指派使用者和裝置設定檔](/mem/intune/configuration/device-profile-assign)。 ) 
+8. 在 [ **工作分派** ] 索引標籤上，指定應套用原則的使用者和群組，然後選擇 **[下一步]**。  (如果您需要協助工作指派，請參閱[在 Microsoft Intune 中指派使用者和裝置設定檔](/mem/intune/configuration/device-profile-assign)。 ) 
 
 9. 在 [ **複查 + 建立** ] 索引標籤上，複查設定，然後選擇 [ **建立**]。
 
@@ -265,9 +265,9 @@ CustomEnterpriseBlock!cl` 。 在過去30天內，在此裝置上已隔離的所
 當您為檔案 [（例如可執行檔）建立「允許」指示器](/microsoft-365/security/defender-endpoint/indicator-file)時，它會協助防止您的組織所使用的檔案遭到封鎖。 檔案可以包含可遷移的可執行檔 (PE) 檔案，例如 `.exe` 和 `.dll` files。 
 
 在您為檔案建立指示器之前，請確定符合下列需求：
-- Microsoft Defender 防病毒已使用啟用雲端式保護加以設定 (請參閱 [管理雲端型保護](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)) 
+- 已啟用以雲端式保護方式設定 Microsoft Defender 防毒軟體 (請參閱[管理雲端型保護](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)) 
 - 反惡意軟體用戶端版本為4.18.1901 或更新版本 
-- 裝置執行的是 Windows 10、版本1703或更新版本;Windows Server 2016;或 Windows Server 2019 
+- 裝置執行 Windows 10，版本1703或更新版本;Windows Server 2016;或 Windows Server 2019 
 - [已開啟組塊或 allow 功能](/microsoft-365/security/defender-endpoint/advanced-features) 
 
 #### <a name="indicators-for-ip-addresses-urls-or-domains"></a>IP 位址、URLs 或網域的標記
@@ -277,18 +277,18 @@ CustomEnterpriseBlock!cl` 。 在過去30天內，在此裝置上已隔離的所
 在您為 IP 位址、URLs 或網域建立指示器之前，請確定符合下列需求：
 - 已在封鎖模式中啟用在 Defender for Endpoint 中的網路保護 (請參閱 [Enable network protection](/microsoft-365/security/defender-endpoint/enable-network-protection)) 
 - 反惡意軟體用戶端版本為4.18.1906 或更新版本 
-- 裝置執行的是 Windows 10、版本1709或更新版本 
+- 裝置執行 Windows 10、版本1709或更新版本） 
 
-在 Microsoft Defender Security Center 中已開啟自訂網路指示器 (請參閱「 [高級功能](/microsoft-365/security/defender-endpoint/advanced-features) 」)    
+在 Microsoft Defender 資訊安全中心中開啟自訂網路指示器 (請參閱[高級功能](/microsoft-365/security/defender-endpoint/advanced-features))    
 
 #### <a name="indicators-for-application-certificates"></a>應用程式憑證的標記 
 
 當您 [為應用程式憑證建立「允許」指示器](/microsoft-365/security/defender-endpoint/indicator-certificates)時，它可協助防止組織使用的應用程式（例如內部開發的應用程式）遭到封鎖。 `.CER``.PEM`支援副檔名或副檔名。   
 
 在您建立應用程式憑證的指示器之前，請確定符合下列需求：
-- Microsoft Defender 防病毒已使用啟用雲端式保護加以設定 (請參閱 [管理雲端型保護](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)) 
+- 已啟用以雲端式保護方式設定 Microsoft Defender 防毒軟體 (請參閱[管理雲端型保護](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)) 
 - 反惡意軟體用戶端版本為4.18.1901 或更新版本 
-- 裝置執行的是 Windows 10、版本1703或更新版本;Windows Server 2016;或 Windows Server 2019 
+- 裝置執行 Windows 10，版本1703或更新版本;Windows Server 2016;或 Windows Server 2019 
 - 病毒和威脅防護定義是最新的  
 
 > [!TIP]
@@ -304,20 +304,20 @@ CustomEnterpriseBlock!cl` 。 在過去30天內，在此裝置上已隔離的所
 
 1. 請參閱此處的指導方針： [提交檔案以進行分析](/windows/security/threat-protection/intelligence/submission-guide)。
 
-2. 請造訪 Microsoft Security 情報提交網站 ([https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)) ，並提交您的檔案 (s) 。
+2. 流覽 Microsoft 安全情報提交網站 ([https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)) ，並提交您的檔案 (s) 。
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>提交 fileless 偵測以供分析
 
-如果偵測到某項專案是以惡意程式碼為基礎，而且您沒有檔案，您可以提交檔案 `Mpsupport.cab` 進行分析。 您可以在 Windows 10 上使用 Microsoft 惡意程式碼保護 Command-Line 公用程式 (MPCmdRun.exe) 工具，以取得 *.cab* 檔案。
+如果偵測到某項專案是以惡意程式碼為基礎，而且您沒有檔案，您可以提交檔案 `Mpsupport.cab` 進行分析。 您可以在 Windows 10 上使用 Microsoft 惡意程式碼保護 Command-Line 公用程式 (MPCmdRun.exe) 工具，取得 *.cab* 檔案。
 
 1.  移至 ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` ，然後 `MpCmdRun.exe` 以系統管理員身分執行。
 
 2.  類型 `mpcmdrun.exe -GetFiles` ，然後按 **enter**。
-   產生包含各種診斷記錄的 .cab 檔案。 檔案的位置會在命令提示字元的輸出中指定。 根據預設，位置是 `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` 。
+   會產生包含各種診斷記錄檔的 .cab 檔。 檔案的位置會在命令提示字元的輸出中指定。 根據預設，位置是 `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` 。
 
 3.  請參閱此處的指導方針： [提交檔案以進行分析](/windows/security/threat-protection/intelligence/submission-guide)。
 
-4.  請造訪 Microsoft Security 情報提交網站 ([https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)) ，然後提交您的 .cab 檔案。
+4.  流覽 Microsoft 安全情報提交網站 ([https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)) ，然後提交您的 .cab 檔案。
 
 ### <a name="what-happens-after-a-file-is-submitted"></a>提交檔後會發生什麼情況？
 
@@ -329,7 +329,7 @@ CustomEnterpriseBlock!cl` 。 在過去30天內，在此裝置上已隔離的所
 - 已驗證的客戶，尤其是具有有效 [軟體保證 IDs (SAIDs) ](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx)中的企業客戶，都具有較高的優先順序。
 - 被稱為「持有者」標為高優先順序的報送會立即注意。
 
-若要檢查有關您提交的更新，請在 [Microsoft Security 情報提交網站](https://www.microsoft.com/wdsi/filesubmission)登入。 
+若要檢查有關您提交的更新，請在[Microsoft 安全情報提交網站](https://www.microsoft.com/wdsi/filesubmission)上登入。 
 
 > [!TIP]
 > 若要深入瞭解，請參閱 [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions)。
@@ -340,20 +340,20 @@ Microsoft Defender for Endpoint 提供各種各樣的選項，包括微調各種
 
 - [雲端提供的保護](#cloud-delivered-protection)
 - [可能有害之應用程式的修復](#remediation-for-potentially-unwanted-applications)
-- [自動化調查與補救措施](#automated-investigation-and-remediation)
+- [自動化調查和修正](#automated-investigation-and-remediation)
 
 ### <a name="cloud-delivered-protection"></a>雲端提供的保護
 
-請檢查您的雲端提供的 Microsoft Defender 防防毒保護層級。 根據預設，已將雲端傳送保護設定為 [ **未** 設定]，這會對應至大多陣列織的一般保護層級。 如果您的雲端傳送保護設定為 **高**、 **高 +** 或零的 **容錯**，您可能會遇到較高的誤報數目。
+檢查您的雲端提供的保護層級 Microsoft Defender 防毒軟體。 根據預設，已將雲端傳送保護設定為 [ **未** 設定]，這會對應至大多陣列織的一般保護層級。 如果您的雲端傳送保護設定為 **高**、 **高 +** 或零的 **容錯**，您可能會遇到較高的誤報數目。
 
 > [!TIP]
 > 若要深入瞭解設定雲端提供的保護，請參閱 [指定雲端提供的保護層級](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)。
 
-建議使用 [Microsoft 端點管理員](/mem/endpoint-manager-overview) 編輯或設定您的雲端提供的保護設定。不過，您可以使用其他方法，例如 [群組原則](/azure/active-directory-domain-services/manage-group-policy) (請參閱 [管理 Microsoft Defender for Endpoint](manage-atp-post-migration.md)) 。
+建議使用[Microsoft 端點管理員](/mem/endpoint-manager-overview)來編輯或設定您的雲端提供的保護設定。不過，您可以使用其他方法，例如[群組原則](/azure/active-directory-domain-services/manage-group-policy) (請參閱[管理 Microsoft Defender for Endpoint](manage-atp-post-migration.md)) 。
 
-#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>使用 Microsoft 端點管理員檢查及編輯現有原則的雲端傳送保護設定 () 
+#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>使用 Microsoft 端點管理員複查及編輯現有原則的雲端傳送保護設定 () 
 
-1. 請移至 Microsoft 端點管理員管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+1. 請移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
 
 2. 選擇 [ **Endpoint security**  >  **防病毒**]，然後選取現有的原則。  (如果您沒有現有的原則，或是您想要建立新的原則，請跳至 [下一個](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy) 程式) 。
 
@@ -365,21 +365,21 @@ Microsoft Defender for Endpoint 提供各種各樣的選項，包括微調各種
 
 #### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>使用 Microsoft 端點管理員設定新原則的雲端傳送保護設定 () 
 
-1. 請移至 Microsoft 端點管理員管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+1. 請移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
 
 2. 選擇 [**安全性**  >  **防病毒**  >  **+ 建立原則**]。
 
-3. 在 [ **平臺**] 中，選取選項，然後針對 [ **設定檔**]，選取 [ **防病毒** 或 **Microsoft Defender 防病毒** (特定選項取決於您為 **Platform** 選取的專案。 ) 然後選擇 [ **建立**]。
+3. 在 [**平臺**] 中，選取選項，然後針對 [**設定檔**]，選取 [**防病毒** 或 **Microsoft Defender 防毒軟體** (特定選項取決於您為 **Platform** 選取的專案。 ) 然後選擇 [**建立**]。
 
 4. 在 [ **基礎** ] 索引標籤上，指定原則的名稱和描述。 接著選擇 [下一步]。
 
 5. 在 [ **設定設定** ] 索引標籤上，展開 [ **Cloud protection**]，然後指定下列設定：
    - 將 **雲端傳送保護開啟** 為 **[是]**。
-   - 將 **雲端傳送的保護等級** 設為 [ **未設定**]。  (此層級預設會提供強層級的保護，同時降低取得誤報的機率。 ) 
+   - 將 **[雲端式保護層級]** 設定為 **[未設定]**。  (此層級預設會提供強層級的保護，同時降低取得誤報的機率。 ) 
 
 6. 在 [ **範圍** 標籤] 索引標籤上，如果您在組織中使用範圍標記，請指定原則的範圍標記。  (請參閱 [Scope tags](/mem/intune/fundamentals/scope-tags)。 ) 
 
-7. 在 [ **工作分派** ] 索引標籤上，指定應套用原則的使用者和群組，然後選擇 **[下一步]**。  (如果您需要協助工作指派，請參閱 [在 Microsoft Intune 中指派使用者和裝置設定檔](/mem/intune/configuration/device-profile-assign)。 ) 
+7. 在 [ **工作分派** ] 索引標籤上，指定應套用原則的使用者和群組，然後選擇 **[下一步]**。  (如果您需要協助工作指派，請參閱[在 Microsoft Intune 中指派使用者和裝置設定檔](/mem/intune/configuration/device-profile-assign)。 ) 
 
 8. 在 [ **複查 + 建立** ] 索引標籤上，複查設定，然後選擇 [ **建立**]。  
 
@@ -390,41 +390,41 @@ Microsoft Defender for Endpoint 提供各種各樣的選項，包括微調各種
 > [!TIP]
 > 若要深入瞭解 PUA，請參閱偵測 [和封鎖可能不需要的應用程式](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)。
  
-視您的組織使用的應用程式而定，您可能會因為 PUA 保護設定而取得誤報。 如有必要，請考慮在稽核模式中執行 PUA 保護一段時間，或將 PUA protection 套用至組織中裝置的子集。 PUA 保護可針對 Microsoft Edge browser 和 Microsoft Defender 防病毒進行設定。
+視您的組織使用的應用程式而定，您可能會因為 PUA 保護設定而取得誤報。 如有必要，請考慮在稽核模式中執行 PUA 保護一段時間，或將 PUA protection 套用至組織中裝置的子集。 您可以為 Microsoft Edge 瀏覽器及 Microsoft Defender 防毒軟體設定 PUA 保護。
 
-建議使用 [Microsoft 端點管理員](/mem/endpoint-manager-overview) 編輯或設定 PUA 保護設定;不過，您可以使用其他方法，例如 [群組原則](/azure/active-directory-domain-services/manage-group-policy) (請參閱 [管理 Microsoft Defender for Endpoint](manage-atp-post-migration.md)) 。
+建議使用[Microsoft 端點管理員](/mem/endpoint-manager-overview)來編輯或設定 PUA 保護設定;不過，您可以使用其他方法，例如[群組原則](/azure/active-directory-domain-services/manage-group-policy) (請參閱[管理 Microsoft Defender for Endpoint](manage-atp-post-migration.md)) 。
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>使用 Microsoft 端點管理員編輯現有設定設定檔的 PUA 保護 () 
 
-1. 請移至 Microsoft 端點管理員管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+1. 請移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
 
 2. 選擇 [**裝置** 設定  >  **設定檔**]，然後選取現有的原則。  (如果您沒有現有的原則，或是您想要建立新的原則，請跳至 [下一個](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile)程式。 ) 
 
 3. 在 [ **管理**] 下 **，選擇 [** 內容]，然後按一下 [ **設定設定**] 旁的 [ **編輯**]。
 
-4. 在 [ **設定設定** ] 索引標籤上，向下滾動並展開 [ **Microsoft Defender 防病毒**]。
+4. 在 [**設定設定**] 索引標籤上，向下滾動並展開 **Microsoft Defender 防毒軟體**。
 
 5. 將 [偵測 **可能有害的應用程式** ] 設定為 [ **審計**]。  (您可以將它關閉，但透過使用「稽核模式」，您就能看到偵測。 ) 
 
 6. 選擇 [ **審閱 + 儲存**]，然後選擇 [ **儲存**]。
 
-#### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>使用 Microsoft 端點管理員為新的設定檔設定 PUA protection () 
+#### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>使用 Microsoft 端點管理員設定新設定設定檔的 PUA 保護 () 
 
-1. 請移至 Microsoft 端點管理員管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
+1. 請移至 Microsoft 端點管理員系統管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 並登入。
 
 2. 選擇 [**裝置**  >  **設定檔**]  >  **+ [建立設定檔**]。
 
-3. 針對 [ **平臺**]，選擇 [ **Windows 10 和更新版本**]，針對 [ **設定檔**]，選取 [ **裝置限制**]。
+3. 針對 [**平臺**]，選擇 [ **Windows 10 和更新版本**]，然後針對 [**設定檔**] 選取 [**裝置限制**]。
 
 4. 在 [ **基礎** ] 索引標籤上，指定原則的名稱和描述。 接著選擇 [下一步]。
 
-5. 在 [ **設定設定** ] 索引標籤上，向下滾動並展開 [ **Microsoft Defender 防病毒**]。
+5. 在 [**設定設定**] 索引標籤上，向下滾動並展開 **Microsoft Defender 防毒軟體**。
 
 6. 設定 [偵測 **可能有害的應用程式** 進行 **審計**]，然後選擇 **[下一步]**。  (您可以關閉 PUA 保護，但透過使用稽核模式，您就可以看到偵測。 ) 
 
-7. 在 [ **工作分派** ] 索引標籤上，指定應套用原則的使用者和群組，然後選擇 **[下一步]**。  (如果您需要協助工作指派，請參閱 [在 Microsoft Intune 中指派使用者和裝置設定檔](/mem/intune/configuration/device-profile-assign)。 ) 
+7. 在 [ **工作分派** ] 索引標籤上，指定應套用原則的使用者和群組，然後選擇 **[下一步]**。  (如果您需要協助工作指派，請參閱[在 Microsoft Intune 中指派使用者和裝置設定檔](/mem/intune/configuration/device-profile-assign)。 ) 
 
-8. 在 [ **適用性規則** ] 索引標籤上，指定要包含或排除的原則中的 OS 版本。 例如，您可以將原則設定為套用至某些 Windows 10 版的裝置。 接著選擇 [下一步]。
+8. 在 [ **適用性規則** ] 索引標籤上，指定要包含或排除的原則中的 OS 版本。 例如，您可以設定原則套用至所有的裝置 Windows 10 的某些版本。 接著選擇 [下一步]。
 
 9. 在 [ **複查 + 建立** ] 索引標籤上，複查您的設定，然後選擇 [ **建立**]。
 
@@ -444,7 +444,7 @@ Microsoft Defender for Endpoint 提供各種各樣的選項，包括微調各種
 
 如果您已完成本文中的所有步驟，但仍需要協助，請與技術支援人員聯繫。
 
-1. 請移至 Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
+1. 移至 Microsoft Defender 資訊安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
 
 2. 在右上角，選取 [問號] (**？**) ]，然後選取 [ **Microsoft 支援**]。
 

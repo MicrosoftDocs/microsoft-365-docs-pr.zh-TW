@@ -72,5 +72,5 @@ ms.locfileid: "51934378"
 
 ## <a name="related-topics"></a>相關主題
 
-- [板載裝置](onboard-configure.md)
+- [將裝置上線](onboard-configure.md)
 - [將 Windows 10 裝置上線](configure-endpoints.md)

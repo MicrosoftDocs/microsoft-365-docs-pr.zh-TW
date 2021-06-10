@@ -29,7 +29,7 @@ ms.locfileid: "52635983"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>執行內部系統管理員接管
 
- 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
 
 如果您是系統管理員，而且想要接管自助使用者註冊所建立的非管理租使用者，您可以使用內部系統管理員接管。
 

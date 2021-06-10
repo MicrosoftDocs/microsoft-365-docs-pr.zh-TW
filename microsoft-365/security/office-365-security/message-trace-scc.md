@@ -36,11 +36,11 @@ ms.locfileid: "52274469"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您必須是 **Exchange Online** 中「**組織管理**」、「**合規性管理** **」或「服務台」** 角色群組的成員，才可使用郵件追蹤。 如需詳細資訊，請參閱 [Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo)。
+- 您必須是「**組織管理**」、「**合規性管理** **」或「服務台」** 角色群組的成員，才能 **Exchange Online** 使用郵件追蹤。 如需詳細資訊，請參閱 [Exchange Online 中的權限](/exchange/permissions-exo/permissions-exo)。
 
-  **附注**： microsoft 365 系統管理中心的對應 Azure Active Directory 角色中的成員資格，可為使用者提供 microsoft 365 中其他功能的必要許可權 _和_ 許可權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+  **附注**： Microsoft 365 系統管理中心對應的 Azure Active Directory 角色中的成員資格，可為使用者提供 Microsoft 365 中其他功能的 _必要許可權。_ 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
-- 在郵件追蹤結果中顯示的訊息數目上限取決於您選取的報告類型 (請參閱 [選擇報告類型](#choose-report-type) 一節，以取得詳細資料) 。 Exchange Online PowerShell 或獨立 EOP 中的 [Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) Cmdlet PowerShell 會傳回結果中的所有郵件。
+- 在郵件追蹤結果中顯示的訊息數目上限取決於您選取的報告類型 (請參閱 [選擇報告類型](#choose-report-type) 一節，以取得詳細資料) 。 Exchange Online PowerShell 或獨立 EOP 中的[Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) Cmdlet PowerShell 會傳回結果中的所有郵件。
 
 ## <a name="open-message-trace"></a>開啟郵件追蹤
 
@@ -105,7 +105,7 @@ ms.locfileid: "52274469"
 - **失敗**：未傳遞郵件。
 - **已隔離**：已隔離郵件 (垃圾郵件、大宗郵件或網路釣魚)。 如需詳細資訊，請參閱 [在 EOP 中隔離的電子郵件訊息](quarantine-email-messages.md)。
 - **篩選為垃圾郵件**：已將郵件識別為垃圾郵件，而且已拒絕或封鎖該郵件 (未隔離)。
-- **取得狀態：** 郵件最近是由 Microsoft 365 收到，但其他狀態資料仍無法使用。 請在幾分鐘後再回來查看。
+- **取得狀態：** 郵件最近 Microsoft 365 收到，但其他狀態資料仍無法使用。 請在幾分鐘後再回來查看。
 
 > [!NOTE]
 > 僅限超過10天的搜尋才可使用 **擱置中、** **隔離** 及 **篩選的垃圾郵件** 。 此外，實際和報告的傳遞狀態之間可能會有 5 到 10 分鐘的延遲。
@@ -114,7 +114,7 @@ ms.locfileid: "52274469"
 
 這是網際網路郵件識別碼 (也稱為「用戶端識別碼」)，可在郵件標頭的 [郵件識別碼:] 標頭欄位中找到。 使用者可將此值提供給您，以便您調查特定郵件。
 
-此值是郵件存留時間的常數。 針對 Microsoft 365 或 Exchange 中建立的郵件，此值的格式為 `<GUID@ServerFQDN>` （包括角括弧 () ） \< \> 。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他郵件系統可能會使用不同的語法或值。 此值應為唯一的狀態，但並非所有電子郵件系統都會嚴格遵循此要求。 如果來自外部來源的內送郵件的 [郵件識別碼:] 標頭欄位不存在或空白，則會指派任意值。
+此值是郵件存留時間的常數。 如果是在 Microsoft 365 或 Exchange 中建立的郵件，則值的格式會 `<GUID@ServerFQDN>` 包含 () 的 \< \> 角括弧。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他郵件系統可能會使用不同的語法或值。 此值應為唯一的狀態，但並非所有電子郵件系統都會嚴格遵循此要求。 如果來自外部來源的內送郵件的 [郵件識別碼:] 標頭欄位不存在或空白，則會指派任意值。
 
 當您使用 [郵件識別碼:] 來篩選結果時，請務必包含完整的字串，包括任何角括號。
 
@@ -345,7 +345,7 @@ ms.locfileid: "52274469"
 |`ETR|ruleId=<guid>`|已符合的規則 ID。|
 |`St=<datetime>`|規則相符時的日期和時間 (以 UTC 表示)。|
 |`Action=<ActionDefinition>`|已套用的動作。 如需可用動作的清單，請參閱 [Exchange Online 中的郵件流程規則動作](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
-|`Mode=<Mode>`|規則的模式。 有效值為：<ul><li>**強制**：將強制執行規則上的所有動作。</li><li>搭配 **原則提示來測試：**：將會傳送任何原則提示動作，但不會處理其他強制執行動作。</li><li>**無原則提示的測試**：動作將會列在記錄檔中，但是不會以任何方式通知寄件者，而且不會處理強制執行動作。</li></ul>|
+|`Mode=<Mode>`|規則的模式。 有效值為：<ul><li>**強制**：將強制執行規則上的所有動作。</li><li>**使用原則提示進行測試：**：將會傳送任何原則提示動作，但不會處理其他強制執行動作。</li><li>**不使用原則提示測試**：動作將會列在記錄檔中，但是不會以任何方式通知寄件者，而且不會處理強制執行動作。</li></ul>|
 |
 
 符合郵件流程規則條件之郵件的 **custom_data** 範例值看起來像這樣：

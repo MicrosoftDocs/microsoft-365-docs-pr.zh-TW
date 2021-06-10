@@ -1,6 +1,6 @@
 ---
-title: 存取 Microsoft Defender Security Center MSSP 客戶入口網站
-description: 存取 Microsoft Defender Security Center MSSP 客戶入口網站
+title: 存取 Microsoft Defender 資訊安全中心 MSSP 客戶入口網站
+description: 存取 Microsoft Defender 資訊安全中心 MSSP 客戶入口網站
 keywords: 受管理的安全性服務提供者、mssp、configure、integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51164854"
 ---
-# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>存取 Microsoft Defender Security Center MSSP 客戶入口網站
+# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>存取 Microsoft Defender 資訊安全中心 MSSP 客戶入口網站
 
 **適用於：**
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -36,7 +36,7 @@ ms.locfileid: "51164854"
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->想要體驗 Microsoft Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 
 
@@ -44,7 +44,7 @@ ms.locfileid: "51164854"
 >[!NOTE] 
 >這些步驟組會向 MSSP 導向。 
 
-根據預設，MSSP 客戶會透過下列 URL: 存取其 Microsoft Defender Security Center 承租人 `https://securitycenter.windows.com` 。
+根據預設，MSSP 客戶會透過下列 URL: 存取其 Microsoft Defender 資訊安全中心承租人 `https://securitycenter.windows.com` 。
  
 
 MSSPs 不過，將需要使用下列格式的承租人特定 URL：  `https://securitycenter.windows.com?tid=customer_tenant_id` 存取 MSSP 客戶入口網站。 
@@ -64,6 +64,6 @@ MSSPs 不過，將需要使用下列格式的承租人特定 URL：  `https://se
 
 
 ## <a name="related-topics"></a>相關主題
-- [授與 MSSP 存取入口網站](grant-mssp-access.md)
+- [將入口網站存取權授予 MSSP](grant-mssp-access.md)
 - [設定警示通知](configure-mssp-notifications.md)
-- [從客戶租使用者提取警示](fetch-alerts-mssp.md)
+- [從客戶租用戶中抓取警示](fetch-alerts-mssp.md)

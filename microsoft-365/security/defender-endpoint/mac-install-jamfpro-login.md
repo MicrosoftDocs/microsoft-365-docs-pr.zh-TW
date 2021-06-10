@@ -49,5 +49,5 @@ ms.locfileid: "51935578"
 
 
 ## <a name="next-step"></a>下一步
-[在 Jamf Pro 中安裝裝置群組](mac-jamfpro-device-groups.md)
+[在 Jamf 中安裝裝置群組 Pro](mac-jamfpro-device-groups.md)
 

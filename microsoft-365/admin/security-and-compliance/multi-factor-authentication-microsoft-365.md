@@ -176,5 +176,5 @@ ms.locfileid: "52635771"
 
 ## <a name="related-content"></a>相關內容
 
-[開啟多重要素驗證](../../business-video/turn-on-mfa.md) (影片) \
+[開啟多重要素驗證](../../business-video/turn-on-mfa.md) (影片)
 [為您的手機開啟多重要素驗證](../../business-video/set-up-mfa.md) (影片)

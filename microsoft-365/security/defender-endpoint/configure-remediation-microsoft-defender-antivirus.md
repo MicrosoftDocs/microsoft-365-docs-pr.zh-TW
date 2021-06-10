@@ -48,11 +48,11 @@ ms.locfileid: "52274505"
 
 4. 使用下表，選取位置，然後視需要編輯原則。 
 
-5. 選取 [確定]。
+5. 選取 **[確定]**。
 
 |位置 | 設定 | 描述 | 預設設定 (（如果未設定）)  |
 |:---|:---|:---|:---|
-|掃描 | 建立系統還原點 | 在嘗試清除或掃描之前每天都會建立系統還原點 | 已停用|
+|掃描 | 建立系統還原點 | 在嘗試清除或掃描之前每天都會建立系統還原點 | 停用|
 |掃描 | 開啟從掃描歷程記錄資料夾中移除專案 | 指定在掃描歷程記錄中應該保留的專案數天數 | 30 天 |
 |根 | 關閉常式修復 | 您可以指定 Microsoft Defender 防毒軟體是否會自動 remediates 威脅，或者是否應要求端點使用者執行的動作。 | 停用 (威脅會自動修正)  |
 |隔離 | 設定從隔離資料夾中移除專案 | 指定專案應該保留在隔離之前多少天之後才能被移除 | 90 天 |
@@ -73,7 +73,7 @@ ms.locfileid: "52274505"
 - [設定 Microsoft Defender 防毒軟體掃描選項](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [設定排定的 Microsoft Defender 防毒軟體掃描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [設定和執行隨選 Microsoft Defender 防毒軟體掃描](run-scan-microsoft-defender-antivirus.md)
-- [設定出現在端點上的通知](configure-notifications-microsoft-defender-antivirus.md)
+- [設定端點顯示的通知](configure-notifications-microsoft-defender-antivirus.md)
 - [設定使用者 Microsoft Defender 防毒軟體互動](configure-end-user-interaction-microsoft-defender-antivirus.md)
 - [自訂、啟動及審閱 Microsoft Defender 防毒軟體掃描和修正的結果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防毒軟體](microsoft-defender-antivirus-in-windows-10.md)

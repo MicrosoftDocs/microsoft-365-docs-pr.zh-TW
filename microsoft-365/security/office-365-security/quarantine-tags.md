@@ -29,7 +29,7 @@ ms.locfileid: "52274457"
 > [!NOTE]
 > 本文中所述的功能目前在預覽中，無法供所有人使用，而且可能會變更。
 
-Exchange Online Protection () EOP 中的隔離標籤，可讓系統管理員根據郵件如何抵達隔離的方式，控制使用者可以對隔離郵件執行的動作。
+Exchange Online Protection (EOP 中的隔離標記) 可讓系統管理員根據郵件如何抵達隔離的方式，控制使用者可以對隔離郵件執行的動作。
 
 EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a-user.md) 和 [使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)中的郵件的某些層級互動。 例如，使用者可以查看和放開反垃圾郵件篩選為垃圾郵件或大量進行隔離的郵件，但是不能查看或發行被隔離為高可信度網路釣魚的郵件。
 
@@ -59,7 +59,7 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 
 如果您不喜歡預設許可權群組中的預設許可權，您可以在建立或修改自訂隔離標記時使用自訂許可權。 如需每個許可權的相關資訊，請參閱本文稍後的隔離標籤 [許可權詳細資料](#quarantine-tag-permission-details) 一節。
 
-您可以使用 Exchange Online 信箱，在安全性 & 合規性中心或 PowerShell (Exchange Online 365 PowerShell 中建立並指派隔離標記;EOP 組織中的獨立 EOP PowerShell，但沒有 Exchange Online 信箱) 。
+您可以在 Security & 合規性中心或 PowerShell (Exchange Online PowerShell 中建立和指派隔離標記，以 Microsoft 365 具有 Exchange Online 信箱的組織;EOP 組織中的獨立 EOP PowerShell，但沒有 Exchange Online 信箱) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -75,7 +75,7 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 
 2. 在 [ **隔離標記** ] 頁面上，選取 [ **新增自訂標記**]。
 
-3. [ **新增標記** ] 嚮導隨即開啟。 在 [ **標記名稱** ] 頁面上，于 [ **標記名稱** ] 欄位中輸入簡短但唯一的名稱。 您必須在後續步驟中以名稱識別並選取標記。 完成後，按 [下一步]。
+3. [ **新增標記** ] 嚮導隨即開啟。 在 [ **標記名稱** ] 頁面上，于 [ **標記名稱** ] 欄位中輸入簡短但唯一的名稱。 您必須在後續步驟中以名稱識別並選取標記。 完成後，按 [下一步 **]**。
 
 4. 在 [ **收件者郵件存取** ] 頁面上，選取下列其中一個值：
    - **無法存取**
@@ -99,7 +99,7 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 
    這些許可權及其對隔離郵件和使用者垃圾郵件通知中的影響將會在本文稍後的隔離標籤 [許可權詳細資料](#quarantine-tag-permission-details) 一節中說明。
 
-   完成後，按 [下一步]。
+   完成後，按 [下一步 **]**。
 
 5. 在出現的 [ **摘要** ] 頁面上，複查您的設定。 您可以按一下每個設定的 [ **編輯** ] 進行修改。
 
@@ -111,7 +111,7 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 
 ### <a name="create-quarantine-tags-in-powershell"></a>在 PowerShell 中建立隔離標記
 
-如果您想要使用 PowerShell 建立隔離標記，請連線至 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 並使用 **QuarantineTag** Cmdlet。 您有兩種不同的方法可供您選擇：
+如果您不想使用 PowerShell 建立隔離標記，請連線至 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，並使用 **QuarantineTag 指令程式**。 您有兩種不同的方法可供您選擇：
 
 - 使用 _EndUserQuarantinePermissionsValue_ 參數。
 - 使用 _EndUserQuarantinePermissions_ 參數。
@@ -245,7 +245,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 |[郵件流程規則](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也稱為傳輸規則) 具有動作：將 **郵件傳遞至主控隔離** (_隔離_) 。|否|不適用|
 |
 
-<sup>\*</sup> 模擬保護設定只適用于 Microsoft Defender for Office 365 中的反網路釣魚原則。
+<sup>\*</sup>模擬保護設定僅適用于 Microsoft Defender 的 Office 365 中的反網路釣魚原則。
 
 如果您很樂意使用預設隔離標記所提供的使用者權限，您不需要執行任何動作。 如果您想要自訂使用者功能 (可用按鈕) 使用者垃圾郵件通知或隔離的郵件詳細資料中，您可以指定自訂隔離標記。
 
@@ -265,11 +265,11 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
    ![反垃圾郵件原則中的隔離標記選擇](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. 完成後，點擊 **[儲存]**。
+5. 完成後，按一下 [儲存]。
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>在 PowerShell 中的反垃圾郵件原則中指派隔離標記
 
-如果您想要使用 PowerShell 來指派反垃圾郵件原則中的隔離標記，請連線至 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，並使用下列語法：
+如果您想要使用 PowerShell 來指派反垃圾郵件原則中的隔離標記，請連接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，並使用下列語法：
 
 ```powershell
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
@@ -320,7 +320,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 3. 在開啟的 [ **隔離通知設定** ] 浮出控制項中，設定下列部分或所有設定：
 
-   - **使用我的公司徽標**：選取此選項以取代在使用者垃圾郵件通知頂端使用的預設 Microsoft 標誌。 在執行這項作業之前，您必須依照 [自訂群組織的 Microsoft 365 主題](../../admin/setup/customize-your-organization-theme.md) 中的指示，上傳自訂的徽標。
+   - **使用我的公司徽標**：選取此選項以取代在使用者垃圾郵件通知頂端使用的預設 Microsoft 標誌。 在執行這項作業之前，您必須遵循[自訂群組織的 Microsoft 365 主題](../../admin/setup/customize-your-organization-theme.md)中的指示，以上傳自訂的徽標。
 
      下列螢幕擷取畫面顯示使用者垃圾郵件通知中的自訂標誌：
 
@@ -485,7 +485,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 - **使用者垃圾郵件通知**：沒有作用。
 
-如需安全寄件者清單的詳細資訊，請參閱 [防止受信任的寄件者遭到封鎖](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) ，並 [使用 Exchange Online PowerShell 來設定信箱上的安全清單集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
+如需安全寄件者清單的詳細資訊，請參閱[防止受信任的寄件者遭到封鎖](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666)，並[使用 Exchange Online PowerShell 設定信箱上的安全清單集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
 #### <a name="block-sender-permission"></a>封鎖寄件者許可權
 
@@ -499,7 +499,7 @@ Remove-QuarantineTag -Identity "<TagName>"
   - 禁止 **封鎖寄件者** 許可權：無法使用 [**封鎖寄件者**] 按鈕。
   - 已啟用 **封鎖寄件者** 許可權：可用的 **封鎖寄件者** 按鈕。
 
-如需有關封鎖的寄件者清單的詳細資訊，請參閱 [封鎖來自某人的郵件](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) ，並 [使用 Exchange Online PowerShell 來設定信箱上的安全清單集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
+如需有關封鎖的寄件者清單的詳細資訊，請參閱[封鎖來自某人的郵件](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667)，並[使用 Exchange Online PowerShell 設定信箱上的安全清單集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
 #### <a name="delete-permission"></a>刪除權限
 

@@ -45,15 +45,15 @@ ms.locfileid: "51933154"
 
 在 Linux 上的 Defender for Endpoint 可以偵測並報告 PUA 檔案。 當以封鎖模式設定時，PUA 檔案會移至隔離區。
 
-在端點上偵測到 PUA 時，Linux 上的 Defender Endpoint 會在威脅歷程記錄中保存感染記錄。 您可以從 Microsoft Defender 安全性中心入口網站或透過 `mdatp` 命令列工具來進行記錄。 威脅名稱會包含 "Application" 一詞。
+在端點上偵測到 PUA 時，Linux 上的 Defender Endpoint 會在威脅歷程記錄中保存感染記錄。 您可以從 Microsoft Defender 資訊安全中心入口網站或透過 `mdatp` 命令列工具來進行記錄。 威脅名稱會包含 "Application" 一詞。
 
 ## <a name="configure-pua-protection"></a>設定 PUA 保護
 
 您可以採用下列其中一種方式，設定在 Linux 上的 PUA 中的 Defender for Endpoint protection：
 
 - **Off**：已停用 PUA 保護。
-- **Audit**： PUA files 會在產品記錄中報告，但不會在 Microsoft Defender Security Center 中報告。 不會將感染記錄儲存在威脅史中，也不會對產品採取任何動作。
-- **封鎖**： PUA 檔案會在產品記錄和 Microsoft Defender Security Center 中報告。 感染的記錄會儲存在威脅史中，且會在產品採取動作。
+- **Audit**： PUA files 會在產品記錄中報告，但不會在 Microsoft Defender 資訊安全中心中報告。 不會將感染記錄儲存在威脅史中，也不會對產品採取任何動作。
+- **封鎖**： PUA 檔案會在產品記錄和 Microsoft Defender 資訊安全中心中報告。 感染的記錄會儲存在威脅史中，且會在產品採取動作。
 
 >[!WARNING]
 >根據預設，會在 **審核** 模式中設定 PUA 保護。

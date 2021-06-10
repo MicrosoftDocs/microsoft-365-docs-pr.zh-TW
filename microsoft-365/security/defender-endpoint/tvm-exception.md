@@ -1,7 +1,7 @@
 ---
-title: 建立及查看安全性建議的例外狀況-威脅和弱點管理
-description: 針對威脅和弱點管理中的安全性建議建立及監視例外狀況。
-keywords: Microsoft Defender for Endpoint tvm 修復，Microsoft Defender for Endpoint tvm，威脅和弱點管理，威脅 & 漏洞管理，威脅 & 漏洞管理修正，tvm 修復 intune，tvm 修正 sccm
+title: 建立及查看安全性建議的例外狀況-威脅與弱點管理
+description: 在威脅與弱點管理中建立及監視安全性建議的例外狀況。
+keywords: microsoft defender for endpoint tvm 修復，microsoft defender for endpoint tvm，威脅與弱點管理，威脅 & 弱點管理，威脅 & 弱點管理修正，tvm 修復 intune，tvm 修正 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,14 +25,14 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933742"
 ---
-# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>建立及查看安全性建議的例外狀況-威脅和弱點管理
+# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>建立及查看安全性建議的例外狀況-威脅與弱點管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -62,9 +62,9 @@ ms.locfileid: "51933742"
 
 #### <a name="filtered-views"></a>篩選的視圖
 
-如果您已在任何威脅和弱點管理頁面上以裝置群組篩選，則只有篩選的裝置群組會顯示為 [選項]。
+如果您已在任何威脅與弱點管理頁面上以裝置群組篩選，則只有篩選的裝置群組會顯示為 [選項]。
 
-在任何威脅和弱點管理頁面上，按裝置群組篩選的按鈕： 
+在任何威脅與弱點管理頁面上，按裝置群組篩選的按鈕如下： 
 
 ![顯示選取的裝置群組篩選器。](images/tvm-selected-device-groups.png)
 
@@ -128,7 +128,7 @@ ms.locfileid: "51933742"
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>在套用例外狀況之後查看影響
 
-在 [安全性建議] 頁面中，選取 [**自訂欄位**]，然後在例外狀況) 和 **影響 (例外狀況) 之後**，選取 [已 **公開的裝置 (** ] 方塊。
+在 [安全性建議] 頁面中，選取 [**自訂欄位**]，然後在例外狀況) 和 **影響 () 之後**，選取 [已 **公開裝置 (** ] 核取方塊。
 
 ![顯示 [自訂欄位] 選項。](images/tvm-after-exceptions.png)
 
@@ -140,7 +140,7 @@ ms.locfileid: "51933742"
 
 ## <a name="related-topics"></a>相關主題
 
-- [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [修正安全性漏洞](tvm-remediation.md)
 - [安全性建議](tvm-security-recommendation.md)
 - [暴險分數](tvm-exposure-score.md)

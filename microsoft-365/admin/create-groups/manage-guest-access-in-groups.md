@@ -61,7 +61,7 @@ ms.locfileid: "52635759"
   
 4. 選取 [ **新增成員**]，然後選擇您要新增的客人名稱。
     
-5. 選取 [儲存]。
+5. 選取 ****[儲存]。
 
 如果您想要直接將來賓新增至目錄，您可以[在 Azure 入口網站中新增 Azure Active Directory B2B](/azure/active-directory/b2b/add-users-administrator)共同作業使用者。
 

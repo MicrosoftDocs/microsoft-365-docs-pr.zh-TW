@@ -30,7 +30,7 @@ ms.locfileid: "51165150"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint 裝置時程表中的事件旗標可協助您在調查可能的攻擊時，篩選和組織特定事件。
 
@@ -53,6 +53,6 @@ Defender for Endpoint 裝置時程表中的事件旗標可協助您在調查可�
 
 ## <a name="view-flagged-events"></a>查看已標記的事件  
 1. 在 [時程表 **篩選** ] 區段中，啟用已 **標記的事件**。
-2. 按一下 **[套用]**。 只會顯示已標示的事件。
+2. 按一下 ****[套用]。 只會顯示已標示的事件。
 您可以按一下時間列來套用其他篩選器。 這只會顯示已標示事件之前的事件。  
 ![具有篩選器之裝置時程表旗標的影像](images/device-flag-filter.png)

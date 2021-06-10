@@ -1,7 +1,7 @@
 ---
 title: 產生測試 Microsoft 365 Defender 警示
 description: 產生測試警示以嘗試 Microsoft 365 Defender 實驗室環境的運作方式
-keywords: Microsoft 365 Defender 模擬，請嘗試 Microsoft 365 Defender、在 Microsoft 365 Defender 中產生測試警示、Microsoft 365 Defender 評估實驗室中的測試警示
+keywords: Microsoft 365defender 模擬，請嘗試 Microsoft 365 defender，在 Microsoft 365 defender，Microsoft 365 defender 評估實驗室中產生測試警示
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -43,4 +43,4 @@ ms.locfileid: "51935650"
 
 ## <a name="next-steps"></a>後續步驟
 
-流覽 [Microsoft 365 解決方案和架構中心](../../solutions/index.yml) ，瞭解如何設計適合貴組織的解決方案和架構。
+流覽[Microsoft 365 方案和架構中心](../../solutions/index.yml)，瞭解如何設計適合貴組織的解決方案和架構。

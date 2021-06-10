@@ -1,7 +1,7 @@
 ---
 title: 裝置用 Microsoft 安全分數
 description: 您的裝置得分會顯示跨應用程式、作業系統、網路、帳戶及安全性控制裝置的集合安全性設定狀態。
-keywords: 適用于裝置的 microsoft 安全分數、Microsoft Defender for 裝置的端點 Microsoft 安全評分、安全分數、設定分數、威脅和弱點管理、安全性控制、改進機會、安全性設定分數隨時間、安全性狀況、基準
+keywords: 適用于裝置的 microsoft 安全分數、microsoft Defender for 裝置的端點 microsoft 安全評分、安全分數、設定分數、威脅與弱點管理、安全性控制、改進機遇、安全性設定分數，一段時間，安全性狀況，基準
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -32,16 +32,16 @@ ms.locfileid: "51934078"
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 >[!NOTE]
-> 設定總分現在是威脅和弱點管理的一部分，成為裝置的 Microsoft 安全分數。
+> 設定分數現在是裝置威脅與弱點管理的一部分，成為裝置的 Microsoft 安全分數。
 
-您的裝置得分會顯示在 Microsoft Defender 安全中心的 [ [威脅和弱點管理] 儀表板](tvm-dashboard-insights.md) 中。 針對裝置的 Microsoft 安全分數較高表示您的端點對 cybersecurity 威脅攻擊的彈性程度較高。 它會反映各類裝置的集合安全性設定狀態，其方式如下：
+您的裝置得分會顯示在 Microsoft Defender 資訊安全中心的[威脅與弱點管理儀表板](tvm-dashboard-insights.md)中。 針對裝置的 Microsoft 安全分數較高表示您的端點對 cybersecurity 威脅攻擊的彈性程度較高。 它會反映各類裝置的集合安全性設定狀態，其方式如下：
 
 - 應用程式
 - 作業系統
@@ -57,7 +57,7 @@ ms.locfileid: "51934078"
 
 變更可能需要數小時的時間，才能在儀表板中反映。
 
-1. 在功能窗格中，移至 [**設定**] [  >  **高級功能**] 
+1. 在功能窗格中，移至 **設定**  >  **高級功能** 
 
 2. 向左下往 **Microsoft 安全分數** ，將設定切換為 [ **開啟**]。
 
@@ -79,7 +79,7 @@ ms.locfileid: "51934078"
 
 修正安全性建議清單中的問題，以改善安全性設定。 當您這麼做時，裝置的 Microsoft 安全評分會提升，而且您的組織會變得更具彈性，以防禦 cybersecurity 威脅和弱點。
 
-1. 在 [威脅和弱點管理] 儀表板的 [裝置的 Microsoft 安全計分] 中，選取其中一個類別。 您將會看到與該類別相關的建議清單。 將會帶您前往 [ [**安全性建議**](tvm-security-recommendation.md) ] 頁面。 如果您想要查看所有安全性建議，只要您到達 [安全性建議] 頁面，就會清除 [搜尋] 欄位。
+1. 從威脅與弱點管理儀表板中的 [裝置] 的 [Microsoft Secure 得分] 中，選取其中一個類別。 您將會看到與該類別相關的建議清單。 將會帶您前往 [ [**安全性建議**](tvm-security-recommendation.md) ] 頁面。 如果您想要查看所有安全性建議，只要您到達 [安全性建議] 頁面，就會清除 [搜尋] 欄位。
 
 2. 選取清單中的專案。 隨即會開啟彈出面板，其中會顯示與建議相關的詳細資料。 選取 [ **修復選項**]。
 
@@ -110,7 +110,7 @@ ms.locfileid: "51934078"
 
 ## <a name="related-topics"></a>相關主題
 
-- [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [儀表板](tvm-dashboard-insights.md)
 - [暴險分數](tvm-exposure-score.md)
 - [安全性建議](tvm-security-recommendation.md)

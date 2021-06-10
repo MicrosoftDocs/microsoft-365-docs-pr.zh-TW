@@ -58,7 +58,7 @@ ms.locfileid: "52274517"
 
 位置 | 設定 | 文章
 ---|---|---|---
-地圖 | 設定本地設定覆寫以進行 Microsoft MAPS 報告 | [啟用雲端傳送保護](enable-cloud-protection-microsoft-defender-antivirus.md)
+地圖 | 設定本地設定覆寫以進行 Microsoft MAPS 報告 | [啟動雲端提供的保護](enable-cloud-protection-microsoft-defender-antivirus.md)
 隔離 | 設定從隔離區移除專案的本機設定覆寫 | [設定掃描的修正](configure-remediation-microsoft-defender-antivirus.md)
 即時保護 | 設定本機設定覆寫以監控電腦上的檔案和程式活動 | [啟用和設定 Microsoft Defender 防毒軟體 always on 防護和監控](configure-real-time-protection-microsoft-defender-antivirus.md)
 即時保護 | 設定針對內送和外寄檔案活動進行監視的本機設定覆寫 | [啟用和設定 Microsoft Defender 防毒軟體 always on 防護和監控](configure-real-time-protection-microsoft-defender-antivirus.md)

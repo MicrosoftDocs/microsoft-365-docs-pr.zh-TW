@@ -63,10 +63,10 @@ ms.locfileid: "51933550"
 ## <a name="in-this-section"></a>本節內容
 主題 | 描述
 :---|:---
-[將上一版 Windows 上線](onboard-downlevel.md)| 板載 Windows 7 和 Windows 8.1 裝置到 Defender for Endpoint。 
+[將上一版 Windows 上線](onboard-downlevel.md)| 板載 Windows 7 和 Windows 8.1 裝置的 Defender for Endpoint。 
 [將 Windows 10 裝置上線](configure-endpoints.md) | 您需要有板載裝置，才能向其報告「Defender for Endpoint service」。 深入瞭解您可以用來設定企業中裝置的工具和方法。
-[上架伺服器](configure-server-endpoints.md) |  板載 Windows Server 2008 R2 SP1，Windows Server 2012 R2，Windows Server 2016，Windows Server (SAC) 版本1803和更新版本、Windows Server 2019 和更新版本，以及 Windows Server 2019 core edition to Defender for Endpoint。
-[將非 Windows 裝置上線](configure-endpoints-non-windows.md) | Defender for Endpoint 提供 Windows 和非 Windows 平臺的集中式安全性作業體驗。 您可以在 Microsoft Defender Security Center 中查看不同支援作業系統 (OS) 中的警示，並更好地保護組織的網路。 這種經驗利用於協力廠商的安全性產品的感應器資料。 
+[上架伺服器](configure-server-endpoints.md) |  板載 Windows Server 2008 R2 SP1，Windows Server 2012 R2，Windows Server 2016，Windows server (SAC) 版本1803及更新版本，Windows server 2019 和更新版本，以及 Windows 伺服器2019核心版到 Defender for Endpoint。
+[將非 Windows 裝置上線](configure-endpoints-non-windows.md) | Defender for Endpoint 可提供 Windows 和非 Windows 平臺的集中式安全性作業體驗。 您可以在 Microsoft Defender 資訊安全中心中查看不同支援作業系統 (OS) 中的警示，也能更好地保護組織的網路。 這種經驗利用於協力廠商的安全性產品的感應器資料。 
 [在新上線的裝置上執行偵測測試](run-detection-test.md) | 在新的架裝置上執行腳本，以驗證它是否已正確報告至端點服務的 Defender。
 [設定 proxy 和網際網路設定](configure-proxy-internet.md)| 設定 proxy 和網際網路連線設定，以啟用與 Defender for Endpoint cloud service 的通訊。
 [為上線問題疑難排解](troubleshoot-onboarding.md) | 深入瞭解如何解決上架期間可能發生的問題。

@@ -1,7 +1,7 @@
 ---
-title: 威脅和弱點管理中的事件時程表
+title: 威脅與弱點管理中的事件時程表
 description: 事件時程表是一種風險資訊摘要，可協助您解讀組織中的風險被引進方式，以及哪些緩解措施減少。
-keywords: 事件時程表，Microsoft Defender for Endpoint 事件時程表，Microsoft Defender for Endpoint tvm 事件時程表，威脅和弱點管理，Microsoft Defender for Endpoint
+keywords: 事件時程表，microsoft defender for endpoint 事件時程表，microsoft defender for endpoint tvm 事件時程表，威脅與弱點管理，microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933478"
 ---
-# <a name="event-timeline---threat-and-vulnerability-management"></a>事件時程表-威脅和弱點管理
+# <a name="event-timeline---threat-and-vulnerability-management"></a>事件時程表-威脅與弱點管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "51933478"
 
 ## <a name="navigate-to-the-event-timeline-page"></a>流覽至 [事件時程表] 頁面
 
-[威脅和弱點管理儀表板](tvm-dashboard-insights.md)也有三個入門點：
+[威脅與弱點管理儀表板](tvm-dashboard-insights.md)中也有三個進入點：
 
 - **組織公開評分**：將滑鼠游標移至 [一段時間的披露分數] 圖表中的事件點上方，然後選取 [查看此天的所有事件]。 事件代表軟體弱點。
 - **適用于裝置的 Microsoft 安全計分**：將游標移到 [您的裝置一段時間的分數] 圖表中的事件點上方，然後選取 [查看此天的所有事件]。 事件代表新的設定評估。
@@ -53,7 +53,7 @@ ms.locfileid: "51933478"
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>裝置圖形的披露分數和 Microsoft 安全評分
 
-在 [威脅與弱點管理] 儀表板中，將游標移到 [曝光分數] 圖上方，以查看該天中影響裝置的主要軟體弱點事件。 將游標移至 [裝置的 Microsoft 安全評分] 圖表，以查看會影響得分的新安全性設定評估。
+在威脅與弱點管理儀表板中，將滑鼠停留在暴露分數圖上方，以查看該天中影響裝置的主要軟體弱點事件。 將游標移至 [裝置的 Microsoft 安全評分] 圖表，以查看會影響得分的新安全性設定評估。
 
 如果沒有會影響裝置或您的裝置得分的事件，則不會顯示任何事件。
 
@@ -120,7 +120,7 @@ ms.locfileid: "51933478"
 
 ## <a name="view-event-timelines-in-software-pages"></a>在軟體頁面中查看事件時程表
 
-若要開啟 [軟體] 頁面，請選取事件 > 選取 [超連結軟體名稱] (如 [Visual Studio 2017) ] 中的浮出控制項中名為 "相關元件" 的區段中。 [深入瞭解軟體頁面](tvm-software-inventory.md#software-pages)
+若要開啟軟體頁面，請選取事件 > 在浮出控制項中稱為 "相關元件" 的區段中，選取 [超連結的軟體名稱 (如 Visual Studio 2017) 。 [深入瞭解軟體頁面](tvm-software-inventory.md#software-pages)
 
 完整頁面會顯示特定軟體的所有詳細資料。 將滑鼠移到圖形上方，以查看該特定軟體的事件時程表。
 
@@ -132,7 +132,7 @@ ms.locfileid: "51933478"
 
 ## <a name="related-topics"></a>相關主題
 
-- [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [儀表板](tvm-dashboard-insights.md)
 - [暴險分數](tvm-exposure-score.md)
 - [安全性建議](tvm-security-recommendation.md)

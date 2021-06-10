@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 安全性入口網站中的裝置設定檔
 description: 查看組織中裝置的風險與暴露層級。 分析過去並呈現威脅，並以最新的更新保護裝置。
-keywords: security，惡意程式碼，Microsoft 365，M365，Microsoft 365 Defender，安全性中心，Microsoft Defender for Endpoint，Microsoft Defender for Office 365，Microsoft Defender for Identity，裝置頁面，裝置設定檔，機器頁面，電腦設定檔
+keywords: security，malware，Microsoft 365，M365，Microsoft 365 Defender，security center，microsoft defender for Endpoint，microsoft defender for Office 365，microsoft defender for Identity，裝置頁面，裝置設定檔，機器頁面，機器設定檔
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -25,7 +25,7 @@ ms.locfileid: "51935662"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此您可以快速評估網路上裝置的健康情況和狀態。
+Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，所以您可以快速評估網路上裝置的健康情況和狀態。
 
 > [!IMPORTANT]
 > 裝置設定檔頁面面的顯示可能稍有不同，這取決於裝置是否已在 Microsoft Defender for Endpoint，Microsoft Defender 身分識別，或兩者皆已註冊。
@@ -75,10 +75,10 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 在裝置設定檔頁面面上可用的動作包括：
 
 * **Manage tags** -更新您已套用至此裝置的自訂標記。
-* **隔離裝置** -從組織網路隔離裝置，並使其連線至 Microsoft Defender for 端點。 您可以選擇在隔離裝置時，允許 Outlook、小組和商務用 Skype 執行，以進行通訊的目的。
+* **隔離裝置** -從組織網路隔離裝置，並使其連線至 Microsoft Defender for 端點。 您可以選擇在隔離裝置時，允許 Outlook、Teams 及商務用 Skype 執行，以進行通訊的目的。
 * **行動中心** -查看已提交動作的狀態。 只有在已選取另一個動作時才可用。
 * **限制應用程式執行** -防止未由 Microsoft 簽署的應用程式執行。
-* **執行防病毒掃描** -更新 Windows Defender 防病毒定義，並立即執行防病毒掃描。 選擇 [快速掃描] 或 [完全掃描]。
+* **執行防病毒掃描**-更新 Windows Defender 防毒軟體定義，並立即執行防病毒掃描。 選擇 [快速掃描] 或 [完全掃描]。
 * 收集有關裝置的 **調查套件** 收集資訊。 完成調查後，您可以下載。
 * **Initiate Live Response Session** -在裝置上載入遠端命令介面，以進行 [深入的安全性調查](/microsoft-365/security/defender-endpoint/live-response)。
 * **啟動自動化調查** -自動 [調查和 remediates 威脅](../office-365-security/office-365-air.md)。 雖然您可以手動觸發從這個頁面執行的自動調查，但 [某些警示原則](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) 會自行觸發自動調查。
@@ -180,7 +180,7 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 
 ## <a name="related-topics"></a>相關主題
 
-* [Microsoft 365 Defender 概述](microsoft-365-defender.md)
+* [Microsoft 365Defender 概述](microsoft-365-defender.md)
 * [開啟 Microsoft 365 Defender](m365d-enable.md)
 * [使用即時回應調查裝置上的實體](../defender-endpoint/live-response.md)
-* [Office 365 中的自動調查和回應 (AIR) ](../office-365-security/office-365-air.md)
+* [ (空中) Office 365 中的自動化調查和回應](../office-365-security/office-365-air.md)

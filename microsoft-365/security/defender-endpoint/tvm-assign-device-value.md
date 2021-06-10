@@ -1,7 +1,7 @@
 ---
-title: 指派裝置價值-威脅和弱點管理
+title: 指派裝置值-威脅與弱點管理
 description: 瞭解如何對裝置指派低、標準或高值，以協助您區分資產優先順序。
-keywords: Microsoft Defender for Endpoint device value，威脅和弱點管理裝置值，高價值裝置，裝置價值暴露分數
+keywords: Microsoft Defender for Endpoint device value，威脅與弱點管理裝置值，高價值裝置，裝置價值暴露分數
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,21 +25,21 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935194"
 ---
-# <a name="assign-device-value---threat-and-vulnerability-management"></a>指派裝置價值-威脅和弱點管理
+# <a name="assign-device-value---threat-and-vulnerability-management"></a>指派裝置值-威脅與弱點管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗適用於端點的 Microsoft Defender 嗎？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-定義裝置的值可協助您區分資產優先順序。 裝置值用於將個別資產的風險 appetite 納入威脅和弱點管理洩密評分計算中。 指派為 "高值" 的裝置會獲得更多權重。
+定義裝置的值可協助您區分資產優先順序。 裝置值是用來將個別資產的風險 appetite 納入威脅與弱點管理曝露分數計算中。 指派為 "高值" 的裝置會獲得更多權重。
 
 您也可以使用 [ [設定裝置值] API](set-device-value.md)。
 
@@ -78,6 +78,6 @@ ms.locfileid: "51935194"
 
 ## <a name="related-topics"></a>相關主題
 
-- [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [披露分數](tvm-exposure-score.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)

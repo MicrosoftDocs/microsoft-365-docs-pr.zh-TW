@@ -33,7 +33,7 @@ ms.locfileid: "51165162"
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 瞭解如何部署 Microsoft Defender for Endpoint，使您的企業能夠利用預防性防護、入侵後偵測、自動調查和回應。 
 
@@ -49,9 +49,9 @@ ms.locfileid: "51165162"
 
 |階段 | 描述 | 
 |:-------|:-----|
-| [階段1：準備](prepare-deployment.md)| 深入瞭解部署 Defender （如專案關係人核准、環境考慮、存取權及功能採用順序）時，您需要考慮的事項。 
-| [階段2：設定](production-deployment.md)|  取得您必須採取之初始步驟的指導方針，讓您可以存取入口網站，例如驗證授權、完成安裝精靈及網路設定。 
-| [階段3：板載](onboarding.md) | 瞭解如何使用部署環、根據端點類型所支援的內架工具，以及設定可用的功能。 
+| [階段 1：準備](prepare-deployment.md)| 深入瞭解部署 Defender （如專案關係人核准、環境考慮、存取權及功能採用順序）時，您需要考慮的事項。 
+| [階段 2：設定](production-deployment.md)|  取得您必須採取之初始步驟的指導方針，讓您可以存取入口網站，例如驗證授權、完成安裝精靈及網路設定。 
+| [第 3 階段：導入](onboarding.md) | 瞭解如何使用部署環、根據端點類型所支援的內架工具，以及設定可用的功能。 
 
 
 當您完成本指南後，您將會使用正確的存取權限進行安裝，而您的端點將會架並報告感應器資料給服務，而下一代保護和攻擊面降低等功能將會就地實施。
@@ -76,8 +76,8 @@ ms.locfileid: "51165162"
 功能 | 描述 
 :---|:---
 端點偵測及回應 | 端點偵測和回應功能可就地偵測、調查和回應入侵嘗試和主動違例。
-下一代保護 | 若要進一步鞏固網路的安全性周邊，Microsoft Defender for Endpoint 會使用下一代保護，以捕捉所有類型的新威脅。
-受攻擊面縮小 |  在堆疊中提供第一項防護。 透過確定設定設定正確，並套用利用緩解技術，這些功能可讓攻擊和利用。
+新一代保護 | 若要進一步鞏固網路的安全性周邊，Microsoft Defender for Endpoint 會使用下一代保護，以捕捉所有類型的新威脅。
+攻擊面縮小 |  在堆疊中提供第一項防護。 透過確定設定設定正確，並套用利用緩解技術，這些功能可讓攻擊和利用。
 
 所有這些功能均可供 Microsoft Defender for Endpoint 授權擁有者使用。 如需詳細資訊，請參閱 [授權要求](minimum-requirements.md#licensing-requirements)。
 
@@ -85,15 +85,15 @@ ms.locfileid: "51165162"
 
 ### <a name="in-scope"></a>在範圍內
 
--   使用 Microsoft 端點管理員和 Microsoft 端點管理員，將端點置於服務和設定功能
+-   使用 Microsoft 端點管理員和 Microsoft 端點管理員上架端點至服務和設定功能
 
--   啟用 Defender for Endpoint endpoint endpoint 偵測和 response (EDR) 功能
+-   啟用 (EDR) 功能的 Defender endpoint endpoint 偵測和回應
 
 -   啟用適用于 Endpoint endpoint protection 平臺的 Defender (EPP) 功能
 
-    -   下一代保護
+    -   新一代保護
 
-    -   受攻擊面縮小
+    -   攻擊面縮小
 
 
 ### <a name="out-of-scope"></a>超出範圍
@@ -108,7 +108,7 @@ ms.locfileid: "51165162"
 
 
 ## <a name="see-also"></a>另請參閱
-- [階段1：準備](prepare-deployment.md)
-- [階段2：設定](production-deployment.md)
-- [階段3：板載](onboarding.md)
+- [階段 1：準備](prepare-deployment.md)
+- [階段 2：設定](production-deployment.md)
+- [第 3 階段：導入](onboarding.md)
 - [規劃部署](deployment-strategy.md)

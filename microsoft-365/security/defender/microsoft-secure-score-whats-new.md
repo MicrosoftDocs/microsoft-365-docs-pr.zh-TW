@@ -1,6 +1,6 @@
 ---
 title: Microsoft 安全分數的新功能
-description: 說明 microsoft 365 security center 中的 Microsoft Secure 得分發生了哪些新的變更。
+description: 說明 Microsoft 365 安全性中心內的 Microsoft 安全評分發生了哪些新的變更。
 keywords: microsoft 安全分數，安全分數，office 365 安全分數，microsoft security 得分，microsoft 365 security center
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -34,19 +34,19 @@ ms.locfileid: "51933862"
 
 若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱 [Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)
 
-Microsoft Secure 得分可在 https://security.microsoft.com/securescore [microsoft 365 的安全性中心](overview-security-center.md)找到。
+您可以 https://security.microsoft.com/securescore 在「 [Microsoft 365 安全性中心](overview-security-center.md)」找到 Microsoft Secure 得分。
     
 ## <a name="february-2021"></a>2021 年 2 月
 
-### <a name="compatibility-with-graph-api"></a>與圖形 API 的相容性
+### <a name="compatibility-with-graph-api"></a>與 Graph API 的相容性
 
-透過 Graph API 傳遞的 Microsoft 安全分數建議，會與您目前在 Microsoft 365 security center 中看到的建議一樣，具有加權效果。
+透過 Graph API 傳遞的 Microsoft 安全分數建議，會與您目前在 Microsoft 365 安全性中心看到的建議一樣，具有加權。
 
 ## <a name="january-2021"></a>2021 年 1 月
 
-### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>新增 Microsoft 小組的第一個安全性建議
+### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>新增第 Microsoft Teams 的安全性建議
 
-Microsoft 團隊客戶將會看到「限制匿名使用者加入會議」為安全評分的新改進動作。
+Microsoft Teams 客戶將會看到「限制匿名使用者加入會議」為安全評分的新改進動作。
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -75,7 +75,7 @@ Microsoft 團隊客戶將會看到「限制匿名使用者加入會議」為安�
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>移除與 Microsoft Defender for Endpoint 相關的改進動作
 
-- 設定 Microsoft Defender SmartScreen Windows 應用程式 web 內容檢查以警告
+- 設定 Microsoft Defender SmartScreen Windows 儲存應用程式 web 內容檢查以警告
 
 ## <a name="august-2020"></a>2020年 8月
 

@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 EmailPostDeliveryEvents 表格
-description: 深入瞭解在 Microsoft 365 電子郵件的高級搜尋架構 EmailPostDeliveryEvents 表格中所進行的傳遞動作
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、搜尋、查詢、遙測、架構參考、kusto、表格、欄、資料類型、描述、EmailPostDeliveryEvents、網路郵件識別碼、寄件者、收件者、附件識別碼、連結計數、url 計數
+description: 深入瞭解在高級搜尋架構的 EmailPostDeliveryEvents 資料表中 Microsoft 365 電子郵件上採取的傳遞動作
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，table，欄，資料類型，描述、EmailPostDeliveryEvents、網路郵件識別碼、寄件者、收件者、附件識別碼、連結計數、url 計數
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51935470"
 **適用於：**
 - Microsoft 365 Defender
 
-[！附注] `EmailPostDeliveryEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含對 Microsoft 365 所處理之電子郵件所採取之投遞後動作的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `EmailPostDeliveryEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含對 Microsoft 365 所處理之電子郵件傳送投遞動作的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
 > 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的內建架構參照。
@@ -45,7 +45,7 @@ ms.locfileid: "51935470"
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
-| `NetworkMessageId` | string | Microsoft 365 產生之電子郵件的唯一識別碼 |
+| `NetworkMessageId` | string | 電子郵件的唯一識別碼，由 Microsoft 365 產生 |
 | `InternetMessageId` | 字串 | 透過傳送電子郵件系統所設定之電子郵件的公開識別碼 |
 | `Action` | 字串 | 對實體採取的動作 |
 | `ActionType` | string | 觸發事件的活動類型：手動修復、網路釣魚 ZAP、惡意程式碼 ZAP |

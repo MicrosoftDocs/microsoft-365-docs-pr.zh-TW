@@ -1,5 +1,5 @@
 ---
-title: 將使用者存取權指派給 Microsoft Defender 安全中心
+title: 指派使用者對 Microsoft Defender 資訊安全中心的存取權
 description: 對 Microsoft Defender for Endpoint 入口網站指派讀取和寫入或唯讀存取權。
 keywords: 指派使用者角色、指派讀取和寫入權限、指派唯讀存取、使用者、使用者角色、角色
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51164749"
 ---
-# <a name="assign-user-access-to-microsoft-defender-security-center"></a>將使用者存取權指派給 Microsoft Defender 安全中心
+# <a name="assign-user-access-to-microsoft-defender-security-center"></a>指派使用者對 Microsoft Defender 資訊安全中心的存取權
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51164749"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要體驗 Defender for Endpoint？ [註冊免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint 支援兩種管理許可權的方式：
 
@@ -52,5 +52,5 @@ Defender for Endpoint 支援兩種管理許可權的方式：
 
 ## <a name="related-topics"></a>相關主題
 
-- [使用基本許可權來存取入口網站](basic-permissions.md)
+- [使用基本權限存取入口網站](basic-permissions.md)
 - [使用 RBAC 管理入口網站存取](rbac.md)

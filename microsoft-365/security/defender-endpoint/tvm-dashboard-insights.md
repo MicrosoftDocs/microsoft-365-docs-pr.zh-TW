@@ -1,7 +1,7 @@
 ---
-title: 儀表板深入資訊-威脅和弱點管理
-description: 威脅和弱點管理儀表板可協助 SecOps 及安全性系統管理員解決 cybersecurity 威脅，並建立其組織的安全性恢復能力。
-keywords: Microsoft Defender for Endpoint tvm，Microsoft Defender for Endpoint tvm 儀表板，威脅 & 漏洞管理，威脅和弱點管理，風險威脅 & 弱點管理，安全性設定，Microsoft 安全評分的裝置，披露分數
+title: 儀表板深入資訊-威脅與弱點管理
+description: 威脅與弱點管理儀表板可協助 SecOps 及安全性系統管理員解決 cybersecurity 威脅，並建立其組織的安全性恢復能力。
+keywords: microsoft defender for endpoint tvm，microsoft defender for endpoint tvm 儀表板，威脅 & 弱點管理，威脅與弱點管理，以風險為基礎的威脅 & 弱點管理，安全性設定，Microsoft 安全評分的裝置，披露分數
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -25,14 +25,14 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934138"
 ---
-# <a name="dashboard-insights---threat-and-vulnerability-management"></a>儀表板深入資訊-威脅和弱點管理
+# <a name="dashboard-insights---threat-and-vulnerability-management"></a>儀表板深入資訊-威脅與弱點管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用於：**
 
 - [適用於端點的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [威脅與弱點管理](next-gen-threat-and-vuln-mgt.md)
+- [威脅及弱點管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要體驗 Defender for Endpoint？ [注册免費試用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -42,9 +42,9 @@ ms.locfileid: "51934138"
 
 - 即時端點偵測和回應（EDR）深入資訊與端點漏洞相關聯
 - 事件調查期間的寶貴裝置弱點內容
-- 透過 Microsoft Intune 和 Microsoft 端點 Configuration Manager 的內建修復程式  
+- 透過 Microsoft Intune 和 Microsoft Endpoint Configuration Manager 內建的修復程式  
   
-您可以使用 [Microsoft Defender Security Center](https://securitycenter.windows.com/) 中的威脅和弱點管理功能，進行下列作業：
+您可以使用[Microsoft Defender 資訊安全中心](https://securitycenter.windows.com/)中的威脅與弱點管理功能來：
 
 - 查看裝置的披露分數和 Microsoft 安全分數，以及最上層的安全性建議、軟體弱點、修復活動及公開的裝置
 - 將 EDR 洞察力與端點漏洞關聯，並加以處理
@@ -52,9 +52,9 @@ ms.locfileid: "51934138"
 - 選取例外狀況選項及追蹤作用中例外狀況
 
 > [!NOTE]
-> 在過去30天內非使用中的裝置，不會考慮反映組織威脅的資料，也不會考慮到裝置的漏洞管理洩密分數和 Microsoft 安全分數。
+> 在過去30天內非使用中的裝置，不會考慮反映組織威脅與弱點管理公開分數和裝置的 Microsoft 安全分數的資料。
 
-觀賞這段影片，可快速流覽「威脅及弱點管理」儀表板中的內容。
+觀賞這段影片，快速流覽威脅與弱點管理儀表板中的內容。
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r1nv]
 
@@ -62,9 +62,9 @@ ms.locfileid: "51934138"
 
  ![Microsoft Defender for Endpoint 入口網站](images/tvm-dashboard-devices.png)
 
-範圍 | 描述
+區域 | 描述
 :---|:---
-**選取的裝置群組 ( #/# )**   | 篩選您想要在儀表板和卡片依設備群組查看的威脅和弱點管理資料。 您在篩選中選取的專案會套用整個威脅和弱點管理頁面。
+**選取的裝置群組 ( #/# )**   | 篩選您想要在儀表板和卡片依設備群組查看的威脅與弱點管理資料。 您在篩選中選取的專案會套用到整個威脅與弱點管理頁面。
 [**暴險分數**](tvm-exposure-score.md)   | 請參閱貴組織裝置對威脅及弱點的影響的目前狀態。 有許多因素會影響組織的暴露分數：在裝置中發現的弱點、裝置的可能性遭到破壞、組織中的裝置價值，以及您的裝置發現的相關警示。 目標是降低組織的暴露分數，使其更加安全。 若要降低分數，您需要修正安全性建議中所列的相關安全性設定問題。
 [**裝置用 Microsoft 安全分數**](tvm-microsoft-secure-score-devices.md) | 請參閱您組織的作業系統、應用程式、網路、帳戶及安全性控制的安全性狀況。 目標是修正相關的安全性設定問題，以提升裝置的排名。 選取這些條將會帶您前往 [ **安全性建議** ] 頁面。
 **裝置洩密分配** | 瞭解有多少裝置會根據其公開層級公開。 選取 [環圈圖] 中的區段，以移至 [ **裝置] 清單** 頁面，並查看受影響的裝置名稱、暴露層級、風險層級，以及其他詳細資料，例如網域、作業系統平臺、其健康狀態、最後一次看到的時間，以及其標記。
@@ -78,7 +78,7 @@ ms.locfileid: "51934138"
 
 ## <a name="related-topics"></a>相關主題
 
-- [威脅和弱點管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威脅與弱點管理概述](next-gen-threat-and-vuln-mgt.md)
 - [暴險分數](tvm-exposure-score.md)
 - [裝置用 Microsoft 安全分數](tvm-microsoft-secure-score-devices.md)
 - [安全性建議](tvm-security-recommendation.md)

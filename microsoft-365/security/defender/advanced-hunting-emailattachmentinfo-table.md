@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 EmailAttachmentInfo 表格
 description: 了解進階搜捕結構描述之 EmailAttachmentInfo 表格中的電子郵件附件資訊
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、查詢、遙測、架構參考、kusto、表格、欄、資料類型、描述、EmailAttachmentInfo、網路郵件識別碼、寄件者、收件者、附件識別碼、附件名稱、惡意程式碼結論
+keywords: 「高級搜尋」、「威脅搜尋」、「網路威脅搜尋」、「Microsoft 365 Defender」、「Microsoft 365」、「m365」、「搜尋」、「查詢」、「遙測」、「架構參考」、「kusto」、「表格」、「資料類型」、「描述」、「網路郵件識別碼」、「發
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -37,14 +37,14 @@ ms.locfileid: "51935494"
 
 
 
-[！附注] `EmailAttachmentInfo` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含 Microsoft Defender for Office 365 所處理電子郵件附件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `EmailAttachmentInfo` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含 Microsoft Defender 針對 Office 365 所處理之電子郵件附件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
-| `NetworkMessageId` | string | Microsoft 365 產生之電子郵件的唯一識別碼 |
+| `NetworkMessageId` | string | 電子郵件的唯一識別碼，由 Microsoft 365 產生 |
 | `SenderFromAddress` | 字串 | 電子郵件用戶端上的電子郵件收件者看得到 [寄件者] 標題中的寄件者電子郵件地址 |
 | `SenderDisplayName` | 字串 | 顯示在通訊錄中之寄件者的名稱，通常是指定或名字、中間名首字母的組合，以及姓氏或姓的組合 |
 | `SenderObjectId` | string | Azure AD 中寄件者帳戶的唯一識別碼 |

@@ -47,7 +47,7 @@ Unrestrict 程式碼執行 | 在驗證受損裝置後，請執行下列程式，
 停止並隔離檔案 |  執行此呼叫以停止執行程式、隔離檔案和刪除 persistency，例如登錄機碼。
 要求範例 | 執行此呼叫以從特定裝置要求檔案的範例。 將從裝置收集檔案，並將其上傳至安全儲存區。
 封鎖檔 | 在 banning 潛在的惡意檔案或可疑惡意程式碼的情況執行此 API，以防止進一步傳播您組織中的攻擊。 
-解除封鎖檔 | 允許使用 Microsoft Defender 防毒軟體在組織中執行檔案。
+解除封鎖檔 | 允許使用 Microsoft Defender 防毒軟體在組織中執行檔。
 取得套件 SAS URI | 執行此 API 以取得可下載調查套件的 URI。
 取得 MachineAction 物件 | 執行此 API 以取得 MachineAction 物件。
 取得 MachineActions 集合 | 執行此以取得 MachineAction 集合。

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 的高級搜尋中的 AssignedIPAddresses () 功能
 description: 瞭解如何使用 AssignedIPAddresses () 函數來取得指派給裝置的最新 IP 位址
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、查詢、遙測、架構參考、kusto、FileProfile、檔案設定檔、函數、豐富
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，Microsoft 365 Defender，Microsoft 365，m365，search，query，遙測，schema reference，kusto，FileProfile，file profile，function，豐富
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

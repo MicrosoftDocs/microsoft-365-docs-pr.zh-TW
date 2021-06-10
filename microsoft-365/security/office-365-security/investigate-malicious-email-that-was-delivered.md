@@ -1,5 +1,5 @@
 ---
-title: 調查 Office 365 中傳遞的惡意電子郵件，尋找並調查惡意電子郵件
+title: 調查 Office 365 中傳遞的惡意電子郵件，尋找並調查惡意的電子郵件
 keywords: TIMailData-Inline，Security Incident，incident，Microsoft Defender for Endpoint PowerShell，電子郵件惡意程式碼，已遭破壞的使用者，電子郵件網路釣魚程式，電子郵件惡意程式碼，讀取電子郵件標題，讀取標頭，開啟電子郵件頭，特殊動作
 f1.keywords:
 - NOCSH
@@ -36,7 +36,7 @@ ms.locfileid: "51933370"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender For Office 365](defender-for-office-365.md) 可讓您調查讓組織中的人員面臨風險的活動，並採取行動以保護您的組織。 例如，如果您是組織的安全性小組的一部分，您可以找出並調查已傳遞的可疑電子郵件訊息。 您可以使用 [威脅瀏覽器 (或即時偵測) ](threat-explorer.md)來執行此動作。
+[Microsoft Defender for Office 365](defender-for-office-365.md)可讓您調查讓組織中的人員面臨風險的活動，並採取行動以保護您的組織。 例如，如果您是組織的安全性小組的一部分，您可以找出並調查已傳遞的可疑電子郵件訊息。 您可以使用 [威脅瀏覽器 (或即時偵測) ](threat-explorer.md)來執行此動作。
 
 > [!NOTE]
 > 在 [這裡](remediate-malicious-email-delivered-office-365.md)跳到修正文章。
@@ -45,11 +45,11 @@ ms.locfileid: "51933370"
 
 請確定符合下列需求：
 
-- 您的組織已將 [Microsoft Defender 用於 Office 365](defender-for-office-365.md) ，而 [授權已指派給使用者](../../admin/manage/assign-licenses-to-users.md)。
+- 您的組織已將[Microsoft Defender 用於 Office 365](defender-for-office-365.md) ，並[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)。
 
 - 您的組織已開啟[審核記錄](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-- 您的組織有為反垃圾郵件、反惡意程式碼、反網路釣魚等定義的原則。 請參閱 [防禦 Office 365 中的威脅](protect-against-threats.md)。
+- 您的組織有為反垃圾郵件、反惡意程式碼、反網路釣魚等定義的原則。 請參閱[防範 Office 365 中的威脅](protect-against-threats.md)。
 
 - 您是全域系統管理員，或您已在安全性 & 合規性中心內指派安全性管理員或搜尋和清除角色。 請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。 在某些動作中，您也必須已指派新的預覽角色。
 
@@ -61,16 +61,16 @@ ms.locfileid: "51933370"
 
 |活動|角色群組|需要預覽角色？|
 |---|---|---|
-|使用威脅瀏覽器 (和即時偵測) 來分析威脅 |全域系統管理員 <p> 安全性系統管理員 <p> 安全性讀取者|否|
-|使用威脅瀏覽器 (和即時偵測) 來查看電子郵件的標頭，以及預覽及下載隔離的電子郵件|全域系統管理員 <p> 安全性系統管理員 <p> 安全性讀取者|否|
-|使用威脅瀏覽器來查看標頭、只在電子郵件實體頁面中預覽電子郵件 () 並下載傳送至信箱的電子郵件|全域系統管理員 <p> 安全性系統管理員 <p> 安全性讀取者 <p> 預覽|是|
+|使用威脅瀏覽器 (和即時偵測) 來分析威脅 |全域管理員 <p> 安全性系統管理員 <p> 安全性讀取者|否|
+|使用威脅瀏覽器 (和即時偵測) 來查看電子郵件的標頭，以及預覽及下載隔離的電子郵件|全域管理員 <p> 安全性系統管理員 <p> 安全性讀取者|否|
+|使用威脅瀏覽器來查看標頭、只在電子郵件實體頁面中預覽電子郵件 () 並下載傳送至信箱的電子郵件|全域管理員 <p> 安全性系統管理員 <p> 安全性讀取者 <p> 預覽|是|
 |
 
 > [!NOTE]
-> *Preview* 是角色，不是角色群組;預覽角色必須新增至現有的 Office 365 (角色群組中 <https://protection.office.com>) 。 移至 [ **許可權**]，然後編輯現有的角色群組，或新增「 **預覽** 」角色所指派的新角色群組。
-> 全域系統管理員角色會指派 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) ，而且安全性管理員和安全性讀取者角色會指派在安全性 & 規範中心 (<https://protection.office.com>) 。 若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+> *Preview* 是角色，不是角色群組;預覽角色必須新增至現有的角色群組，以供) Office 365 (使用 <https://protection.office.com> 。 移至 [ **許可權**]，然後編輯現有的角色群組，或新增「 **預覽** 」角色所指派的新角色群組。
+> 全域系統管理員角色會指派 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) ，而且安全性 & 規範中心會指派安全性管理員和安全性讀取者角色，以 (<https://protection.office.com>) 。 若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
-我們瞭解預覽和下載電子郵件是機密的活動，因此會為這些活動啟用審核。 當系統管理員在電子郵件上執行這些動作後，就會產生相同的審計記錄，並可在 Office 365 安全性 & 規範中心 () 中看到 <https://protection.office.com> 。 移至 **「搜尋**  >  **審核記錄**」搜尋，然後在 [搜尋] 區段中篩選 admin name。 篩選的結果會顯示活動 **AdminMailAccess**。 選取要在 [ **詳細資訊** ] 區段中預覽或下載之電子郵件的詳細資訊一列。
+我們瞭解預覽和下載電子郵件是機密的活動，因此會為這些活動啟用審核。 一旦系統管理員在電子郵件上執行這些動作，就會產生相同的審計記錄，並在 Office 365 安全性 & 規範中心 () 中看到 <https://protection.office.com> 。 移至 **「搜尋**  >  **審核記錄**」搜尋，然後在 [搜尋] 區段中篩選 admin name。 篩選的結果會顯示活動 **AdminMailAccess**。 選取要在 [ **詳細資訊** ] 區段中預覽或下載之電子郵件的詳細資訊一列。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>尋找已傳遞的可疑電子郵件
 
@@ -79,7 +79,7 @@ ms.locfileid: "51933370"
 > [!NOTE]
 > 瀏覽器中的預設搜尋目前不包含 Zapped 的專案。  這適用于所有的視圖，例如惡意程式碼或網路釣魚視圖。 若要包含 Zapped 的專案，您需要新增 **傳遞動作** 集，並將其新增至包含 **的** 物件。 如果您包括所有選項，您會看到所有傳遞動作結果，包括 Zapped 專案。
 
-1. **流覽至威脅瀏覽器**：移至 <https://protection.office.com> 並使用您的 Office 365 的公司或學校帳戶登入。 這會帶您前往安全性 & 規範中心。
+1. **流覽至威脅瀏覽器**：移至 <https://protection.office.com> 並使用您的工作或學校帳戶登入 Office 365。 這會帶您前往安全性 & 規範中心。
 
 2. 在 [左導覽快速啟動] 中，選擇 [ **威脅管理** \> **瀏覽器**]。
 
@@ -93,7 +93,7 @@ ms.locfileid: "51933370"
 
     *惡意* 代碼視圖目前是預設值，會捕獲偵測到惡意軟體威脅的電子郵件。 *網路釣魚* 視圖的運作方式與網路釣魚。
 
-    不過， *所有的電子郵件 View 都會* 列出組織收到的每封郵件，是否偵測到威脅。 您可以想像，這是許多資料，這就是為什麼此視圖會顯示要求套用篩選的預留位置。  (此 view 僅適用于 Office 365 P2 客戶的 Defender。 ) 
+    不過， *所有的電子郵件 View 都會* 列出組織收到的每封郵件，是否偵測到威脅。 您可以想像，這是許多資料，這就是為什麼此視圖會顯示要求套用篩選的預留位置。  (此視圖只適用于 Office 365 P2 客戶的 Defender。 ) 
 
     「*提交*」視圖會顯示系統管理員或使用者向 Microsoft 提交的所有郵件。
 
@@ -179,7 +179,7 @@ ms.locfileid: "51933370"
 
 - **封鎖** –隔離、失敗或丟棄的任何電子郵件訊息。  (使用者已完全無法存取。 ) 
 
-- **已取代** 所有惡意附件取代為附件惡意的 .txt 檔的電子郵件。
+- **已取代** 所有惡意附件取代為郵件附件為惡意的 .txt 檔所取代的任何電子郵件。
 
 傳遞位置顯示原則和執行傳遞後偵測的結果。 其連結到「傳遞動作」。 已新增此欄位，以深入了解找到問題電子郵件時所採取的動作。 以下是傳遞位置可能的值：
 
@@ -206,10 +206,10 @@ ms.locfileid: "51933370"
 
 ## <a name="related-topics"></a>相關主題
 
-[修復 Office 365 中傳遞的惡意電子郵件](remediate-malicious-email-delivered-office-365.md)
+[修正 Office 365 中傳遞的惡意電子郵件](remediate-malicious-email-delivered-office-365.md)
 
 [適用於 Office 365 的 Microsoft Defender](office-365-ti.md)
 
-[保護 Office 365 中的威脅](protect-against-threats.md)
+[在 Office 365 中防禦威脅](protect-against-threats.md)
 
-[查看 Office 365 的 Defender 報告](view-reports-for-mdo.md)
+[View Office 365 的 Defender 報告](view-reports-for-mdo.md)

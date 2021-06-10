@@ -68,7 +68,7 @@ MacOS 上的 Microsoft Defender for Endpoint 不會取決於任何廠商特有�
 
 ### <a name="package"></a>套件
 
-設定 [必要應用程式套件](mac-install-with-jamf.md)的部署，安裝套件 (wdav pkg) 從 [Microsoft Defender Security Center](mac-install-with-jamf.md)下載。
+設定[必要應用程式套件](mac-install-with-jamf.md)的部署，安裝套件 (wdav pkg) 從[Microsoft Defender 資訊安全中心](mac-install-with-jamf.md)下載。
 
 若要將套件部署至您的企業，請使用 MDM 解決方案相關聯的指示。
 
@@ -76,9 +76,9 @@ MacOS 上的 Microsoft Defender for Endpoint 不會取決於任何廠商特有�
 
 設定 [系統設定檔](mac-install-with-jamf.md)。 
 
-您的 MDM 解決方案可能會呼叫它，例如「自訂設定設定檔」，因為 macOS 中的 Microsoft Defender for Endpoint 不是 macOS 的一部分。
+您的 MDM 解決方案可能會呼叫它像 "Custom 設定 Profile" 之類的專案，因為 macOS 上的 Microsoft Defender for Endpoint 不是 macOS 的一部分。
 
-使用 [屬性] 清單中的 jamf/WindowsDefenderATPOnboarding plist，可從 [Microsoft Defender 安全中心](mac-install-with-jamf.md)下載的上架套件中解壓縮。
+使用 [屬性] 清單 jamf/WindowsDefenderATPOnboarding plist，可從從[Microsoft Defender 資訊安全中心](mac-install-with-jamf.md)下載的上架套件中解壓縮。
 您的系統可能支援 XML 格式的任意屬性清單。 在該情況下，您可以上傳 jamf/WindowsDefenderATPOnboarding plist 檔案。
 或者，您可能需要先將屬性清單轉換成不同的格式。
 
@@ -116,7 +116,7 @@ MDM 使用它將設定檔案部署至用戶端裝置上的 **/Library/Managed �
 
 ### <a name="network-extension-policy"></a>網路擴充原則
 
-在端點偵測和回應功能中，Microsoft Defender for Endpoint on macOS 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender Security Center 入口網站。 下列原則允許網路分機執行這項功能。
+在端點偵測和回應功能的一部分中，macOS 的 Microsoft Defender for endpoint 會檢查通訊端流量，並將此資訊報告給 Microsoft Defender 資訊安全中心入口網站。 下列原則允許網路分機執行這項功能。
 
 - 篩選類型：外掛程式
 - 外掛程式捆綁識別碼： `com.microsoft.wdav`

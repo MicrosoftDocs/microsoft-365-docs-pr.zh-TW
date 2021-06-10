@@ -1,7 +1,7 @@
 ---
 title: 尋找含高級搜尋的勒索軟體
 description: 使用高級搜尋來尋找與勒索軟體可能影響的裝置。
-keywords: 高級搜尋、勒索軟體、威脅搜尋、網路威脅搜尋、搜尋、查詢、遙測、Microsoft 365、Microsoft 365 Defender
+keywords: 高級搜尋、勒索軟體、威脅搜尋、網路威脅搜尋、搜尋、查詢、遙測、Microsoft 365 Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -34,11 +34,11 @@ ms.locfileid: "51934810"
 **適用於：**
 - Microsoft 365 Defender
 
-勒索軟體已快速演變為簡單的商品惡意程式碼，可影響個別電腦使用者對行業和政府機構產生嚴重影響的企業威脅。 雖然 [Microsoft 365 Defender](microsoft-365-defender.md) 提供許多功能可偵測和封鎖勒索軟體和相關的入侵活動，但執行主動型檢查是否有損損的功能可協助您保護您的網路。
+勒索軟體已快速演變為簡單的商品惡意程式碼，可影響個別電腦使用者對行業和政府機構產生嚴重影響的企業威脅。 雖然[Microsoft 365 Defender](microsoft-365-defender.md)提供許多功能，可偵測並封鎖勒索軟體和相關的入侵活動，但執行主動型檢查是否有損損的功能可協助您保護您的網路。
 
 > [閱讀有關人工運作的勒索軟體](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-透過 Microsoft 365 Defender 中的 [高級搜尋](advanced-hunting-overview.md) ，您可以建立查詢，以找出與勒索軟體活動相關聯的個別專案。 您也可以執行更複雜的查詢，以尋找活動的跡象，並權衡這些符號，以尋找需要立即注意的裝置。
+在 Microsoft 365 Defender 的[高級搜尋](advanced-hunting-overview.md)中，您可以建立查詢，以找出與勒索軟體活動相關聯的個別專案。 您也可以執行更複雜的查詢，以尋找活動的跡象，並權衡這些符號，以尋找需要立即注意的裝置。
 
 ## <a name="signs-of-ransomware-activity"></a>勒索軟體活動的跡象
 Microsoft 安全性調查人員已透過複雜的入侵者，看到許多勒索軟體活動中的各種常見但細微的專案。 這些符號大多包含使用系統工具來準備加密、防止偵測和清除辨識證據。

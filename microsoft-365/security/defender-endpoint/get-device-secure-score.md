@@ -96,6 +96,6 @@ GET https://api.securitycenter.microsoft.com/api/configurationScore
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 Microsoft Defender for Endpoint OData 查詢](exposed-apis-odata-samples.md)

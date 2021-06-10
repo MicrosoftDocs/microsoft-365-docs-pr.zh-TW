@@ -52,7 +52,7 @@ ms.locfileid: "51933322"
 
 2. 再現問題。
 
-3. 執行下列命令以備份端點記錄的 Defender。 檔案會儲存在 .zip 封存中。
+3. 執行下列命令以備份端點記錄的 Defender。 檔案會儲存在 .zip 封存內。
 
    ```bash
    sudo mdatp diagnostic create
@@ -79,7 +79,7 @@ ms.locfileid: "51933322"
 
 詳細記錄會儲存至 `/var/log/microsoft/mdatp_install.log` 。 如果您在安裝時發生問題，請將此檔案傳送給我們，讓我們能夠協助您診斷原因。
 
-## <a name="uninstall"></a>Uninstall
+## <a name="uninstall"></a>解除安裝
 
 有幾種方式可以在 Linux 上卸載端點的 Defender。 如果您使用的是設定工具（例如 Puppet），請遵循設定工具的套件卸載指示。
 
@@ -97,29 +97,29 @@ ms.locfileid: "51933322"
 
 命令列工具預設會以人類可讀取的格式來輸出結果。 此外，此工具也支援將結果輸出為 JSON，這對自動化案例很有用。 若要將輸出變更為 JSON，請傳遞 `--output json` 至下列任何命令。
 
-### <a name="supported-commands"></a>支援的命令
+### <a name="supported-commands"></a>支援命令
 
 下表列出一些最常見案例的命令。 `mdatp help`從終端執行，以查看完整的支援命令清單。
 
 |Group                 |案例                                                |命令                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
-|組態         |開啟/關閉即時保護                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|組態         |開啟/關閉行為監控                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
-|組態         |開啟/關閉雲端保護                            |`mdatp config cloud --value [enabled\|disabled]`                       |
-|組態         |開啟/關閉產品診斷程式                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
-|組態         |開啟/關閉自動範例提交                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
-|組態         |開啟/關閉 AV 被動式模式                             |`mdatp config passive-mode --value [enabled\|disabled]`                |
-|組態         |新增/移除副檔名的防病毒排除  |`mdatp exclusion extension [add\|remove] --name [extension]`           |
-|組態         |新增/移除檔案的防病毒排除            |`mdatp exclusion file [add\|remove] --path [path-to-file]`             |
-|組態         |新增/移除目錄的防病毒排除       |`mdatp exclusion folder [add\|remove] --path [path-to-directory]`      |
-|組態         |新增/移除處理常式的防病毒排除         |`mdatp exclusion process [add\|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add\|remove] --name [process-name]` |
-|組態         |列出所有防病毒排除                           |`mdatp exclusion list`                                                 |
-|組態         |新增威脅名稱至允許清單                   |`mdatp threat allowed add --name [threat-name]`                        |
-|組態         |從允許的清單中移除威脅名稱              |`mdatp threat allowed remove --name [threat-name]`                     |
-|組態         |列出所有允許的威脅名稱                           |`mdatp threat allowed list`                                            |
-|組態         |開啟 PUA 保護                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
-|組態         |關閉 PUA 保護                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
-|組態         |開啟 PUA 保護的審計模式                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
+|設定         |開啟/關閉即時保護                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|設定         |開啟/關閉行為監控                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
+|設定         |開啟/關閉雲端保護                            |`mdatp config cloud --value [enabled\|disabled]`                       |
+|設定         |開啟/關閉產品診斷程式                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
+|設定         |開啟/關閉自動範例提交                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
+|設定         |開啟/關閉 AV 被動式模式                             |`mdatp config passive-mode --value [enabled\|disabled]`                |
+|設定         |新增/移除副檔名的防病毒排除  |`mdatp exclusion extension [add\|remove] --name [extension]`           |
+|設定         |新增/移除檔案的防病毒排除            |`mdatp exclusion file [add\|remove] --path [path-to-file]`             |
+|設定         |新增/移除目錄的防病毒排除       |`mdatp exclusion folder [add\|remove] --path [path-to-directory]`      |
+|設定         |新增/移除處理常式的防病毒排除         |`mdatp exclusion process [add\|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add\|remove] --name [process-name]` |
+|設定         |列出所有防病毒排除                           |`mdatp exclusion list`                                                 |
+|設定         |新增威脅名稱至允許清單                   |`mdatp threat allowed add --name [threat-name]`                        |
+|設定         |從允許的清單中移除威脅名稱              |`mdatp threat allowed remove --name [threat-name]`                     |
+|設定         |列出所有允許的威脅名稱                           |`mdatp threat allowed list`                                            |
+|設定         |開啟 PUA 保護                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
+|設定         |關閉 PUA 保護                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
+|設定         |開啟 PUA 保護的審計模式                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
 |診斷           |變更記錄層級                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
 |診斷           |產生診斷記錄                                |`mdatp diagnostic create --path [directory]`                           |
 |健康情況                |檢查產品的健康情況                              |`mdatp health`                                                         |
@@ -163,8 +163,8 @@ ms.locfileid: "51933322"
 
 ### <a name="known-issues"></a>已知問題
 
-- 在 Microsoft Defender 安全中心入口網站的 [機器資訊] 頁面上，即使產品如預期般運作，您也可能會看到「沒有感應器資料、受損的通訊」。 我們正在努力解決此問題。
-- 登入的使用者不會出現在 Microsoft Defender Security Center 入口網站中。
+- 在 Microsoft Defender 資訊安全中心入口網站的 [機器資訊] 頁面中，您可能會看到 [沒有感應器資料、受損的通訊]，即使產品如預期般運作也一樣。 我們正在努力解決此問題。
+- 登入的使用者不會出現在 Microsoft Defender 資訊安全中心入口網站中。
 - 在 SUSE 分配中，如果 *libatomic1* 安裝失敗，您應該確認您的作業系統已登錄：
 
    ```bash
