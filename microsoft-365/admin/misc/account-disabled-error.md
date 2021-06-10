@@ -1,5 +1,5 @@
 ---
-title: 在網頁上的 Outlook 中取得帳戶停用的錯誤？
+title: 在 web 上的 Outlook 中取得帳戶停用的錯誤？
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,8 +24,8 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914939"
 ---
-# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a><span data-ttu-id="b718a-103">在 web 上的 Outlook 中取得帳戶停用的錯誤</span><span class="sxs-lookup"><span data-stu-id="b718a-103">Getting an account disabled error in Outlook on the web</span></span>
+# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a><span data-ttu-id="8f79b-103">在 web 上的 Outlook 中取得帳戶停用的錯誤</span><span class="sxs-lookup"><span data-stu-id="8f79b-103">Getting an account disabled error in Outlook on the web</span></span>
 
-<span data-ttu-id="b718a-104">如果您收到錯誤 `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` ，當您嘗試在網頁上開啟 outlook (以前稱為 outlook web App) 時，您的帳戶已經停用，您的系統管理員可能已停用您對網頁上的 outlook 的存取。</span><span class="sxs-lookup"><span data-stu-id="b718a-104">If you get the error **Your account has been disabled** with `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` when you try to open Outlook on the web (formerly known as Outlook Web App), your admin might have disabled your access to Outlook on the web.</span></span>
+<span data-ttu-id="8f79b-104">如果您收到錯誤 `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` ，當您嘗試在 (網頁上開啟 Outlook （以前稱為 Outlook Web App) ）時，您的帳戶已停用，您的系統管理員可能已停用您對網頁 Outlook 的存取權。</span><span class="sxs-lookup"><span data-stu-id="8f79b-104">If you get the error **Your account has been disabled** with `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` when you try to open Outlook on the web (formerly known as Outlook Web App), your admin might have disabled your access to Outlook on the web.</span></span>
 
-<span data-ttu-id="b718a-105">您的系統管理員可以遵循 [啟用或停用信箱的 Outlook Web App](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)主題中的步驟，修正此錯誤。</span><span class="sxs-lookup"><span data-stu-id="b718a-105">Your admin can fix this error by following the steps in the topic [Enable or disable Outlook Web App for a mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app).</span></span>
+<span data-ttu-id="8f79b-105">您的系統管理員可以遵循[啟用或停用信箱的 Outlook Web App](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)主題中的步驟，修正此錯誤。</span><span class="sxs-lookup"><span data-stu-id="8f79b-105">Your admin can fix this error by following the steps in the topic [Enable or disable Outlook Web App for a mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app).</span></span>

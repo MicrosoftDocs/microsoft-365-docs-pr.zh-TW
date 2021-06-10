@@ -78,11 +78,11 @@ landingContent:
     links:
     - text: Mac 上的 Microsoft Defender for Endpoint
       url: microsoft-defender-endpoint-mac.md
-    - text: iOS 上的 Microsoft Defender for Endpoint
+    - text: iOS 上適用於端點的 Microsoft Defender
       url: microsoft-defender-endpoint-ios.md
-    - text: Linux 上的 Microsoft Defender for Endpoint
+    - text: Linux 上適用於端點的 Microsoft Defender
       url: microsoft-defender-endpoint-linux.md
-    - text: Android 上的 Microsoft Defender for Endpoint
+    - text: Android 上適用於端點的 Microsoft Defender
       url: microsoft-defender-endpoint-android.md
 - title: 參考資料
   linkLists:

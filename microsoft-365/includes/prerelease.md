@@ -15,4 +15,4 @@ ms.lasthandoff: 03/23/2021
 ms.locfileid: "51056831"
 ---
 > [!IMPORTANT]
-> <span data-ttu-id="3264b-103">部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。</span><span class="sxs-lookup"><span data-stu-id="3264b-103">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="3264b-104">Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。</span><span class="sxs-lookup"><span data-stu-id="3264b-104">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> <span data-ttu-id="9092c-103">部分資訊與發行前版本產品有關，在正式發行之前可能會實質上進行修改。</span><span class="sxs-lookup"><span data-stu-id="9092c-103">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="9092c-104">Microsoft 對此處提供的資訊，不提供任何明確或隱含的瑕疵擔保。</span><span class="sxs-lookup"><span data-stu-id="9092c-104">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
