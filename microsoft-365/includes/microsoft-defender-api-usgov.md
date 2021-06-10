@@ -22,4 +22,4 @@ ms.lasthandoff: 03/25/2021
 ms.locfileid: "51197781"
 ---
 >[!NOTE]
-><span data-ttu-id="86342-104">如果您是美國政府客戶，請使用 [Microsoft Defender FOR Us 政府客戶的端點](/microsoft-365/security/defender-endpoint/gov#api)中所列的 URIs。</span><span class="sxs-lookup"><span data-stu-id="86342-104">If you are a US Government customer, please use the URIs listed in [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov#api).</span></span>
+><span data-ttu-id="15875-104">如果您是美國政府客戶，請使用 [Microsoft Defender FOR Us 政府客戶的端點](/microsoft-365/security/defender-endpoint/gov#api)中所列的 URIs。</span><span class="sxs-lookup"><span data-stu-id="15875-104">If you are a US Government customer, please use the URIs listed in [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov#api).</span></span>
