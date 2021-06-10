@@ -14,7 +14,7 @@ ms.collection:
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 此解決方案會告訴您，在 Microsoft 365 中最常見的 cybersecurity 攻擊可能如您所述，以及如何回應它們
+description: 此解決方案會告訴您，最常見的 cybersecurity 攻擊可能如 Microsoft 365 及如何回應它們。
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
@@ -41,7 +41,7 @@ ms.locfileid: "51203637"
 
 並非所有 cyberattacks 都可以 thwarted。 攻擊者不斷尋找防禦策略中的新弱點，或利用舊弱點。 瞭解如何辨識攻擊可讓您更快速地回應，進而縮短安全性事件的持續時間。
 
-這一系列的文章可協助您瞭解哪些特定類型的攻擊在 Microsoft 365 中看起來可能如您所示，並提供您可以採取回應的步驟。 它們是瞭解的快速入門知識：
+這一系列的文章可協助您瞭解特定類型的攻擊可能如 Microsoft 365 所示，並提供您可以採取回應的步驟。 它們是瞭解的快速入門知識：
 
 - 攻擊的含義及其運作方式。
 
@@ -67,7 +67,7 @@ ms.locfileid: "51203637"
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Microsoft 365
 
-您的 Microsoft 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [microsoft 365 安全性藍圖-前30天、90天和之後的最高優先順序](security-roadmap.md) ，以執行 microsoft 建議的最佳作法，以保護您的 microsoft 365 組織。
+您的 Microsoft 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  請使用[Microsoft 365 的安全性藍圖-前30天、90天和之後的優先順序](security-roadmap.md)，以執行 Microsoft 建議的最佳作法，以保護您的 Microsoft 365 組織。
 
 - 要在前 30 天內完成的工作。  這些工作會有立即的影響，而且對您的使用者影響較低。
 

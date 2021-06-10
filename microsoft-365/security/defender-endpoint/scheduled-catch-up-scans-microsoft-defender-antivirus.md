@@ -103,7 +103,7 @@ ms.locfileid: "52789265"
 |掃描 | 指定用於排程掃描的掃描類型 | 快速掃描 |
 |掃描 | 指定一周中的哪一天執行排程掃描 | 指定 [天] (或 [永不) ] 執行掃描。 | 從來不需要 |
 |掃描 | 指定一天中執行排程掃描的時間 | 指定午夜後的分鐘數 (例如，輸入 **60** a.m. ) 。 | 淩晨2點 |
-|根 | 隨機化排程的任務時間 |在 Microsoft Defender 防毒軟體中，將掃描的開始時間隨機化為從0到4小時的任何間隔。 <p>在 [SCEP](/mem/intune/protect/certificates-scep-configure)中，隨機化掃描任何間隔加上或減30分鐘。 這對虛擬機器或 VDI 部署很有用。 | 已啟用 |
+|根 | 隨機化排程的任務時間 |在 Microsoft Defender 防毒軟體中，將掃描的開始時間隨機化為從0到4小時的任何間隔。 <p>在 [SCEP](/mem/intune/protect/certificates-scep-configure)中，隨機化掃描任何間隔加上或減30分鐘。 這對虛擬機器或 VDI 部署很有用。 | 啟用 |
 
 
 ### <a name="use-powershell-cmdlets-to-schedule-scans"></a>使用 PowerShell Cmdlet 來排程掃描
@@ -145,7 +145,7 @@ RandomizeScheduleTaskTimes
 
 |位置 | 設定 | 描述 | 預設設定 (（如果未設定）)  |
 |:---|:---|:---|:---|
-|掃描 | 僅當電腦已開啟但未在使用中時啟動排程掃描 | 除非電腦已開啟但未在使用中，否則不會執行排程掃描 | 已啟用 |
+|掃描 | 僅當電腦已開啟但未在使用中時啟動排程掃描 | 除非電腦已開啟但未在使用中，否則不會執行排程掃描 | 啟用 |
 
 ### <a name="use-powershell-cmdlets"></a>使用 PowerShell Cmdlet
 
@@ -242,7 +242,7 @@ ScanScheduleQuickScanTime
 
 |位置 | 設定 | 描述 | 預設設定 (（如果未設定）) |
 |:---|:---|:---|:---|
-|特徵碼更新 | 在安全性智慧更新後開啟掃描 | 下載新的保護更新後會立即進行掃描 | 已啟用 |
+|特徵碼更新 | 在安全性智慧更新後開啟掃描 | 下載新的保護更新後會立即進行掃描 | 啟用 |
 
 ## <a name="see-also"></a>另請參閱
 

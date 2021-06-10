@@ -1,5 +1,5 @@
 ---
-title: 瞭解帳單帳戶
+title: 了解帳單帳戶
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,7 +26,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52535635"
 ---
-# <a name="understand-billing-accounts"></a>瞭解帳單帳戶
+# <a name="understand-billing-accounts"></a>了解帳單帳戶
 
 當您註冊以嘗試或購買 Microsoft 產品時，即會建立帳單帳戶。 您可以使用您的計費帳戶來管理帳戶設定、發票、支付方式及購買。 您可以存取多個帳單帳戶。 例如，您已直接註冊 Microsoft 365，或您可以存取組織的 Enterprise 合約、microsoft 產品 & 服務合約或 Microsoft 客戶合約。 針對上述每個案例，您會有個別的帳單帳戶。
 

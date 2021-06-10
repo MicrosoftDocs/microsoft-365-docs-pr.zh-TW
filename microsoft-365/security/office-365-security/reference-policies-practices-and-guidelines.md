@@ -39,7 +39,7 @@ Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 
 
 ## <a name="general-microsoft-policies"></a>一般 Microsoft 原則
 
-傳送給 Microsoft 365 使用者的電子郵件必須遵守所有管理電子郵件傳輸和使用 Microsoft 365 的 Microsoft 原則。
+傳送給 Microsoft 365 使用者的電子郵件，必須遵守所有管理電子郵件傳輸和使用 Microsoft 365 的 Microsoft 原則。
 
 - 適用于 Microsoft 365 的服務條款;特別是，禁止使用服務來垃圾郵件或散佈惡意程式碼。
 
@@ -47,7 +47,7 @@ Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 
 
 ## <a name="governmental-regulations"></a>政府法規
 
-傳送給 Microsoft 365 使用者的電子郵件，必須遵守所有適用司法轄區中的電子郵件通訊的法律和規定。
+傳送給 Microsoft 365 使用者的電子郵件必須遵守所有適用司法轄區中的電子郵件通訊的法律和規定。
 
 - [CAN-垃圾郵件法案：商務規範指南](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,9 +55,9 @@ Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 
 
 ## <a name="technical-guidelines"></a>技術指導方針
 
-傳送至 Microsoft 365 的電子郵件應該遵循下列檔中列出的適當建議 (某些連結只會以英文) 提供。
+傳送給 Microsoft 365 的電子郵件應該遵循下列檔中列出的適當建議 (某些連結只會提供英文版) 。
 
-- [RFC 2505： SMTP Mta 的 Anti-Spam 建議](https://www.ietf.org/rfc/rfc2505.txt)
+- [RFC 2505： SMTP Mta Anti-Spam 建議](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920：命令流水線作業的 SMTP 服務擴充](https://www.ietf.org/rfc/rfc2920.txt)
 
@@ -83,7 +83,7 @@ Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 
 
 ## <a name="microsoft-365-limits"></a>Microsoft 365 限制
 
-寄件者必須遵守 [Exchange Online Protection 限制](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)中所列的 Microsoft 365 限制。
+寄件者必須遵循[Exchange Online Protection 限制](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)中所列的 Microsoft 365 限制。
 
 ## <a name="email-delivery-resources-and-organizations"></a>電子郵件傳遞資源和組織
 
@@ -101,4 +101,4 @@ Microsoft 主動與業界主體和服務提供者合作，以改善網際網路�
 
 ## <a name="law-enforcement"></a>執法
 
-如果您是法律強制執行的成員，且想要為 Microsoft Corporation 提供 Office 365 的法律檔，請致電 (1)  (425) 722-1299。
+如果您是法律強制執行的成員，且想要為 microsoft Corporation 提供 Office 365 的法律檔，或是您對於提交給 Microsoft 的法律檔有疑問，請致電 (1)  (425) 722-1299。

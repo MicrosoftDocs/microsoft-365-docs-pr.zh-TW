@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c2dea22cc8a0ebb875f83ebd5a3e42f723e5f254
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771318"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861212"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>評估受攻擊面縮小規則
 
@@ -41,6 +41,9 @@ ms.locfileid: "52771318"
 - Windows 10 企業版，[版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更新版本
 - Windows伺服器，[版本 1803 (半年通道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更新版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+
+> [!WARNING]
+> 啟用 Windows Server 2016 的攻擊服務降低規則可能會導致意外的結果，並影響伺服器效能。 建議您不要對不受支援的平臺啟用或部署攻擊面降減規則。
 
 瞭解如何透過稽核模式直接在組織中測試功能，以評估攻擊面減少規則。
 

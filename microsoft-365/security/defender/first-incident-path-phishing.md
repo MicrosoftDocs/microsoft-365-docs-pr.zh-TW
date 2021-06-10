@@ -64,7 +64,7 @@ Microsoft 365Defender 可協助偵測透過電子郵件傳遞的惡意附件。 
 
 請參閱以身分 [識別的攻擊](first-incident-path-identity.md) 調查路徑。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [事件概觀](incidents-overview.md)
 - [調查事件](investigate-incidents.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Connectivity 遙測
+title: Microsoft 365Connectivity 遙測
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: 本文包含 Microsoft 365 Connectivity 遙測的相關資訊。
+description: 本文包含 Microsoft 365 連線遙測的相關資訊。
 ms.openlocfilehash: 9ad7abbabc293e1b283d6742966982b09f0bffa1
 ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52029144"
 ---
-# <a name="microsoft-365-connectivity-telemetry"></a>Microsoft 365 Connectivity 遙測
+# <a name="microsoft-365-connectivity-telemetry"></a>Microsoft 365Connectivity 遙測
 
 本文正在進行中。
 

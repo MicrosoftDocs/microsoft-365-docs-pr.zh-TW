@@ -23,7 +23,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52300122"
 ---
-# <a name="threat-explorer-and-real-time-detections-basics"></a>威脅瀏覽器和即時偵測基礎
+# <a name="threat-explorer-and-real-time-detections-basics"></a>威脅總管與即時偵測基本概念
 
 本文內容：
 

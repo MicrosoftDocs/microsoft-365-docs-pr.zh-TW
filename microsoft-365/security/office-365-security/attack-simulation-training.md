@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Defender for Office 365 模擬網路釣魚攻擊
+title: 使用 Microsoft Defender Office 365 來模擬網路釣魚攻擊
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 系統管理員可以瞭解如何使用 Microsoft Defender for Office 365 中的攻擊模擬訓練訓練，以模擬網路釣魚攻擊及訓練使用者。
+description: 系統管理員可以瞭解如何使用 Microsoft Defender 中 Office 365 的「攻擊模擬訓練訓練」來模擬網路釣魚攻擊，並以網路防範的方式訓練使用者。
 ms.technology: mdo
 ms.openlocfilehash: 27279f927a15ea94ae84112ffdc23d88ea42d2ff
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
@@ -21,15 +21,15 @@ ms.locfileid: "51203761"
 ---
 # <a name="simulate-a-phishing-attack"></a>模擬網路釣魚攻擊
 
-Microsoft Defender for Office 365 中的攻擊模擬訓練可讓您在組織上執行良性 cyberattack 模擬，以測試您的安全性原則和做法，並訓練員工以提升其知名度，並減少對攻擊的敏感程度。 本文將引導您使用攻擊模擬訓練來建立模擬網路釣魚攻擊。
+Office 365 中的攻擊模擬訓練，可讓您在組織上執行良性 cyberattack 模擬，以測試您的安全性原則和做法，並訓練員工以提升其知名度，並減少對攻擊的敏感程度。 本文將引導您使用攻擊模擬訓練來建立模擬網路釣魚攻擊。
 
 如需有關攻擊模擬訓練的快速入門資訊，請參閱 [開始使用攻擊模擬訓練](attack-simulation-training-get-started.md)。
 
-若要啟動模擬網路釣魚攻擊，請開啟 [Microsoft 365 的安全性中心](https://security.microsoft.com/)，移至 [ **電子郵件 &** 共同作業 \> **攻擊模擬訓練**]，然後切換至 [ [**類比**](https://security.microsoft.com/attacksimulator?viewid=simulations) ] 索引標籤。
+若要啟動模擬網路釣魚攻擊，請開啟 [Microsoft 365 的安全性中心](https://security.microsoft.com/)，移至 [**電子郵件 &** 共同 \> **攻擊模擬訓練**]，然後切換至 [[**類比**](https://security.microsoft.com/attacksimulator?viewid=simulations)] 索引標籤。
 
 在 [ **類比**] 底下，選取 [ **+ 發射類比**]。
 
-![在 Microsoft 365 的安全性中心啟動模擬按鈕](../../media/attack-sim-preview-launch.png)
+![在 Microsoft 365 安全性中心內啟動模擬按鈕](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
 > 在類比建立過程中的任何一點，您都可以儲存並關閉，繼續進行類比。
@@ -47,7 +47,7 @@ Microsoft Defender for Office 365 中的攻擊模擬訓練可讓您在組織上�
 > [!TIP]
 > 按一下每個技術說明中的 [ **查看詳細資料** ]，可顯示進一步的資訊及類比步驟的技術。
 >
-> ![Microsoft 365 安全中心內的認證模擬訓練中認證的類比步驟](../../media/attack-sim-preview-sim-steps.png)
+> ![Microsoft 365 安全性中心內，認證模擬訓練中認證的模擬步驟](../../media/attack-sim-preview-sim-steps.png)
 
 選取好技術並按一下 **[下一步]** 之後，請提供類比名稱並選擇性地提供描述。
 
@@ -58,12 +58,12 @@ Microsoft Defender for Office 365 中的攻擊模擬訓練可讓您在組織上�
 負載具有許多可協助您選擇的資料點：
 
 - **按一下 [流量** 計數] 按此負載的人數。
-- **預測的折衷率** 會根據 Microsoft Defender for Office 365 客戶的負載，預測此負載會危及之人員的百分比。
+- **預測的折衷率** 會根據 Microsoft Defender 針對 Office 365 客戶的負載，預測此負載會危及之人員的百分比。
 - **模擬已啟動** 計算此負載在其他類比中使用的次數。
 - 可透過 **篩選器** 使用的 **複雜性**，是根據在其指示其為攻擊之目標的負載內的指標數目來計算。 更多指示器會導致較低的複雜性。
 - **來源**（透過 **篩選器** 提供）會指出是否已在您的租使用者上建立負載，或是 Microsoft 預先存在的負載目錄 (全域) 的一部分。
 
-![Microsoft 365 security center 中的攻擊模擬訓練中所選的負載](../../media/attack-sim-preview-select-payload.png)
+![Microsoft 365 安全性中心內的攻擊模擬訓練中所選的負載](../../media/attack-sim-preview-select-payload.png)
 
 從清單中選取一個負載，以查看具有其相關詳細資訊的負載預覽。
 
@@ -76,7 +76,7 @@ Microsoft Defender for Office 365 中的攻擊模擬訓練可讓您在組織上�
 當您選擇 **只包含特定的使用者和群組** 時，您可以執行下列其中一項：
 
 - **新增使用者**，可讓您利用租使用者的搜尋功能，以及高級搜尋和篩選功能，例如以過去3個月內模擬的目標使用者為目標。
-  ![Microsoft 365 安全中心的攻擊模擬訓練中的使用者篩選](../../media/attack-sim-preview-user-targeting.png)
+  ![Microsoft 365 安全性中心的攻擊模擬訓練中的使用者篩選](../../media/attack-sim-preview-user-targeting.png)
 - **從 CSV 匯入** 可讓您為此模擬匯入一組預先定義的使用者。
 
 ## <a name="assigning-training"></a>指派訓練
@@ -90,7 +90,7 @@ Microsoft Defender for Office 365 中的攻擊模擬訓練可讓您在組織上�
 > [!NOTE]
 > 如果您選擇自行選取課程和模組，您仍然可以查看建議的內容，以及所有可用的課程和模組。
 >
-> ![在 Microsoft 365 安全中心的攻擊模擬訓練中新增建議訓練](../../media/attack-sim-preview-add-training.png)
+> ![在 Microsoft 365 安全性中心的攻擊模擬訓練中新增建議訓練](../../media/attack-sim-preview-add-training.png)
 
 在後續步驟中，如果您選擇自行自行選擇訓練，您將需要 **新增** 訓練，並自訂訓練登陸頁面。 您可以預覽 [訓練] 登陸頁面，也可以變更其頁首和本文。
 

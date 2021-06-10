@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 7ade1ae1e045cb52f48d231acbc1712e753b6bc3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841843"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861176"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虛擬桌面中上將 Windows 10 多工作階段裝置上線 
 6分鐘可供讀取 
@@ -148,3 +148,7 @@ Microsoft 建議將 Microsoft Defender for Endpoint 上架腳本新增至 WVD �
 
 授權時請注意：使用 Windows 10 企業版多個會話時，您可以選擇以每位使用者的端點 (所有使用者授權的所有使用者) 、Windows Enterprise E5、Microsoft 365 安全性或 Microsoft 365 E5，或讓 VM 透過 Azure Defender 授權。
 Microsoft Defender for endpoint 的授權需求可在下列位置找到： [授權要求](minimum-requirements.md#licensing-requirements)。
+
+#### <a name="related-links"></a>相關連結
+
+[使用 PowerShell 新增 Microsoft Defender 的排除專案](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)

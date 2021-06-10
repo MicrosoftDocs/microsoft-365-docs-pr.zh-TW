@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 本文提供將電子郵件傳送至 Microsoft 365 收件匣之問題的疑難排解資訊 & 大量郵遞至 Microsoft 365 客戶的最佳作法。
+description: 本文提供在 Microsoft 365 & 大宗郵件 Microsoft 365 客戶的最佳作法中傳送電子郵件至收件匣時問題的疑難排解資訊。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
@@ -34,11 +34,11 @@ ms.locfileid: "51203733"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 
-本文提供嘗試將電子郵件傳送至 Microsoft 365 收件匣的寄件者疑難排解資訊，以及大量郵遞至客戶的最佳作法。
+本文提供嘗試將電子郵件傳送至收件匣 Microsoft 365 和大宗郵件給客戶的最佳作法中的寄件者疑難排解資訊。
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>您是否正在管理您的 IP 和網域的傳送信譽？
 
-EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exchange Server）提供反垃圾郵件保護。 我們也會利用 SPF、DKIM 及 DMARC;電子郵件驗證技術，可協助您驗證傳送電子郵件的網域是否獲得授權，以解決哄騙和網路釣魚問題。 EOP 篩選會受到許多與傳送 IP、網域、驗證、清單準確性、投訴率、內容等等相關的因素所影響。 其中一個主要因素是降低寄件者的信譽，並提供電子郵件的能力為垃圾郵件的投訴率。
+EOP 篩選技術的設計是為了提供 Microsoft 365 的反垃圾郵件保護，以及其他 Microsoft 產品（如 Exchange Server）。 我們也會利用 SPF、DKIM 及 DMARC;電子郵件驗證技術，可協助您驗證傳送電子郵件的網域是否獲得授權，以解決哄騙和網路釣魚問題。 EOP 篩選會受到許多與傳送 IP、網域、驗證、清單準確性、投訴率、內容等等相關的因素所影響。 其中一個主要因素是降低寄件者的信譽，並提供電子郵件的能力為垃圾郵件的投訴率。
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>您從新的 IP 位址送出電子郵件嗎？
 
@@ -58,11 +58,11 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 - 10.0.0.0/8 (或 10.0.0.0-10.255.255.255) 
 - 172.16.0.0/11 (或 172.16.0.0 172.31.255.255) 
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>傳送電子郵件給 Office 365 中的使用者時，收到未傳遞回報 (NDR) 
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>將電子郵件傳送至 Office 365 中的使用者時，收到未傳遞回報 (NDR) 
 
 有些傳遞問題是由 Microsoft 封鎖的寄件者的 IP 位址，或是因為先前的垃圾郵件，將使用者帳戶識別為封鎖的寄件者的結果。 如果您認為您已接收到錯誤 NDR，請先遵循 NDR 訊息中的任何指示來解決問題。
 
-如需您收到之錯誤的詳細資訊，請參閱 Exchange Online 中的 [電子郵件未傳遞](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)回報中的錯誤代碼清單。
+如需您收到之錯誤的詳細資訊，請參閱 Exchange Online 中的[電子郵件未傳遞](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)回報中的錯誤代碼清單。
 
  例如，如果您收到下列 NDR，它表示 Microsoft 已封鎖傳送 IP 位址：
 
@@ -82,13 +82,13 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 
 您接收到 NDR，因為已偵測到 IP 位址有可疑的活動，而且在進一步評估時會暫時加以限制。 如果懷疑是透過評估加以清除，則會很快解除此限制。
 
-## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>我無法從 Microsoft 365 中的寄件者接收電子郵件
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>無法從 Microsoft 365 中的寄件者接收電子郵件
 
- 若要從我們的使用者接收郵件，請確定您的網路允許來自 EOP 在我們資料中心使用的 IP 位址的連線。 如需詳細資訊，請參閱 [Exchange Online PROTECTION IP 位址](../../enterprise/urls-and-ip-address-ranges.md)。
+ 若要從我們的使用者接收郵件，請確定您的網路允許來自 EOP 在我們資料中心使用的 IP 位址的連線。 如需詳細資訊，請參閱[Exchange Online Protection IP 位址](../../enterprise/urls-and-ip-address-ranges.md)。
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>大量電子郵件至 Microsoft 365 使用者的最佳作法
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>大量電子郵件 Microsoft 365 使用者的最佳作法
 
-如果您經常對 Microsoft 365 使用者執行大量電子郵件行銷活動，並想確保您的電子郵件能夠以安全且及時的方式送達，請遵循本節中的秘訣。
+如果您經常執行大量電子郵件宣傳，以 Microsoft 365 使用者，而且想要確保您的電子郵件以安全且及時的方式送達，請遵循本節中的秘訣。
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>確定 [寄件者] 名稱會反映傳送郵件的寄件者
 

@@ -139,6 +139,6 @@ To make Viva Learning (Preview) available for users in your organization, follow
 
 --->
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [設定教學內容來源以取得 Viva 教學 (預覽) Microsoft 365 系統管理中心](content-sources-365-admin-center.md)

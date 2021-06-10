@@ -33,10 +33,10 @@ ms.locfileid: "51203737"
 - [適用於 Office 365 的 Microsoft Defender 方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Office 365 威脅調查和回應](office-365-ti.md) 功能可讓您的組織的安全性小組探索和採取行動，以防範 cybersecurity 威脅。 Office 365 威脅調查和回應功能包括威脅追蹤器功能，包括值得注意的追蹤器。 請閱讀本文，以取得這些新功能及後續步驟的概述。
+[Office 365 威脅調查和回應](office-365-ti.md)功能可讓您的組織的安全性小組探索和採取行動，以防範 cybersecurity 威脅。 Office 365威脅調查和回應功能包括威脅追蹤器功能，包括值得注意的追蹤器。 請閱讀本文，以取得這些新功能及後續步驟的概述。
 
 > [!IMPORTANT]
-> Office 365 威脅情報現在是 Microsoft Defender for Office 365 Plan 2，另外還有其他威脅防護功能。 若要深入瞭解，請參閱 [Microsoft defender For office 365 方案和價格](https://products.office.com/exchange/advance-threat-protection) 和 [Microsoft defender For Office 365 服務說明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+> Office 365威脅情報現在是 Microsoft Defender 的 Office 365 方案2，另外還有其他威脅防護功能。 若要深入瞭解，請參閱[microsoft defender for Office 365 方案和價格](https://products.office.com/exchange/advance-threat-protection)和[microsoft defender for Office 365 Service Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
 ## <a name="what-are-threat-trackers"></a>何謂威脅追蹤器？
 
@@ -48,7 +48,7 @@ ms.locfileid: "51203737"
 
 ![瀏覽器中的市場活動資訊範例](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
 
-追蹤器只是您使用 [Microsoft Defender For Office 365 方案 2](office-365-ti.md)所獲得的眾多極佳功能。 威脅追蹤器包括 [Noteworth](#noteworthy-trackers)追蹤器、 [趨勢](#trending-trackers)追蹤器、 [追蹤的查詢](#tracked-queries)，以及 [已儲存的查詢](#saved-queries)。
+追蹤器只是您使用[Microsoft Defender Office 365 方案 2](office-365-ti.md)所能獲得的眾多極佳功能。 威脅追蹤器包括 [Noteworth](#noteworthy-trackers)追蹤器、 [趨勢](#trending-trackers)追蹤器、 [追蹤的查詢](#tracked-queries)，以及 [已儲存的查詢](#saved-queries)。
 
 若要為您的組織查看和使用威脅追蹤追蹤器，請移至安全性 & 合規性中心 (<https://protection.office.com>) ，然後選擇 [ **威脅管理** \> **威脅追蹤** 器]。
 
@@ -57,7 +57,7 @@ ms.locfileid: "51203737"
 
 ### <a name="noteworthy-trackers"></a>注意追蹤追蹤
 
-您會發現追蹤追蹤器，您可以在其中找到您應該知道的大、小威脅和風險。 值得注意的追蹤追蹤程式可協助您找出這些問題是否存在於 Microsoft 365 環境中，加上下列)  (的文章連結，可提供更多有關所發生事情的詳細資訊，以及如何影響組織使用 Office 365 的方式。 不論是 Wannacry、Petya) 或現有威脅（可能會造成一些新的 (難題） (例如，或現有威脅（如其他 inaugural 值得注意的專案-Nemucod) ），您可以在此找到重要的新專案，而您的安全小組應定期檢查及檢查。
+您會發現追蹤追蹤器，您可以在其中找到您應該知道的大、小威脅和風險。 值得注意的追蹤追蹤程式可協助您找出這些問題是否存在於您的 Microsoft 365 環境中，加上 () 這類文章的連結，可提供更多有關所發生事情的詳細資訊，以及如何影響組織使用 Office 365。 不論是 Wannacry、Petya) 或現有威脅（可能會造成一些新的 (難題） (例如，或現有威脅（如其他 inaugural 值得注意的專案-Nemucod) ），您可以在此找到重要的新專案，而您的安全小組應定期檢查及檢查。
 
 通常，追蹤追蹤追蹤器只會在我們找出新威脅時一周內發佈，而且考慮您可能需要此功能所提供的額外洞察力。 當威脅的最大風險通過後，我們就會移除該值得注意的專案。 如此一來，我們便可以將清單保持在最新和其他相關的新專案。
 
@@ -71,7 +71,7 @@ ms.locfileid: "51203737"
 
 ### <a name="tracked-queries"></a>追蹤的查詢
 
-追蹤的查詢會利用您已儲存的查詢，定期評估您組織中的 Microsoft 365 活動。 這可讓您進行事件的趨勢分析，以及即將到來的月份。 追蹤的查詢會自動執行，提供最新資訊，而不需要記住重新執行查詢。
+追蹤的查詢會利用您已儲存的查詢，定期評估組織中 Microsoft 365 的活動。 這可讓您進行事件的趨勢分析，以及即將到來的月份。 追蹤的查詢會自動執行，提供最新資訊，而不需要記住重新執行查詢。
 
 ![已選取一個查詢的追蹤查詢範例](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
 
@@ -85,28 +85,28 @@ ms.locfileid: "51203737"
 
 ## <a name="trackers-and-explorer"></a>追蹤器與瀏覽器
 
-不論您是在 (即將推出的電子郵件、內容或辦公室活動) ，Explorer 和追蹤追蹤都會一起運作，以協助您調查和追蹤安全性風險和威脅。 所有共同追蹤追蹤器提供的資訊，可保護您的使用者，方法是強調新的、值得注意和經常搜尋的問題-確保您的業務在移動至雲端時得到更好的保護。
+您是否要查看 (即將推出的電子郵件、內容或 Office 活動) 、Explorer 和追蹤追蹤器一起運作，以協助您調查和追蹤安全性風險和威脅。 所有共同追蹤追蹤器提供的資訊，可保護您的使用者，方法是強調新的、值得注意和經常搜尋的問題-確保您的業務在移動至雲端時得到更好的保護。
 
-請記住，您可以在 [安全性 & 合規性中心](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)的右下方，按一下右下角的 [**意見** 反應] 按鈕，隨時提供我們對此或其他 Microsoft 365 安全性功能的意見反應。
+此外，您可以按一下 [安全性 & 合規性中心一覽](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)的右下 **方，以** 徵求我們對此或其他 Microsoft 365 安全性功能的意見反應。
 
 ![安全性與合規性中心](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
 
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>追蹤器和 Microsoft Defender for Office 365
 
-透過我們的 inaugural 值得注意的威脅，我們會強調 [安全附件](safe-attachments.md)所偵測到的高級惡意程式碼威脅。 如果您是 Office 365 企業版 E5 客戶，而您不是使用 [Microsoft Defender For Office 365](defender-for-office-365.md)，您應該會包含在您的訂閱中。 即使您有其他安全性工具篩選您的 Office 365 服務的電子郵件流程，Office 365 的 Defender 仍可提供值。 不過，當您主要的電子郵件安全性解決方案是透過 Office 365 時，反垃圾郵件和 [安全連結](safe-links.md) 功能就能發揮最佳作用。
+透過我們的 inaugural 值得注意的威脅，我們會強調 [安全附件](safe-attachments.md)所偵測到的高級惡意程式碼威脅。 如果您是 Office 365 企業版 E5 客戶，而且不是使用[Microsoft Defender 進行 Office 365](defender-for-office-365.md)，則應該是它包含在您的訂閱中。 即使您有其他安全性工具篩選您 Office 365 服務的電子郵件流程，Office 365 的 Defender 也會提供值。 不過，當您主要的電子郵件安全性解決方案是透過 Office 365 時，反垃圾郵件和[安全連結](safe-links.md)功能的效果最佳。
 
-![安全性 & 規範中心內的 Microsoft Defender for Office 365](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![安全性 & 規範中心的 Microsoft Defender Office 365](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
 
-在當今威脅 riddled 世界中，只執行傳統的反惡意程式碼掃描，表示您未受到攻擊的程度不足。 當今更為複雜的攻擊者使用常用工具，以建立新的、經過模糊處理或延遲的攻擊，而這些攻擊會因傳統的簽章型反惡意程式碼引擎而無法辨識。 [安全附件] 功能會取得電子郵件附件，並在虛擬環境中引爆它們，以判斷它們是否安全或惡意。 此引爆程式會開啟虛擬電腦環境中的每個檔案，然後觀察在開啟該檔案後會發生什麼情況。 不論是 PDF、壓縮檔或 Office 檔，惡意程式碼都會隱藏在檔案中，只有在受害者在其電腦上開啟之後，才啟用該檔案。 透過 detonating 和分析電子郵件流程中的檔案，Office 365 的 Defender 功能會根據行為、檔信譽及許多啟發式規則，尋找這些威脅。
+在當今威脅 riddled 世界中，只執行傳統的反惡意程式碼掃描，表示您未受到攻擊的程度不足。 當今更為複雜的攻擊者使用常用工具，以建立新的、經過模糊處理或延遲的攻擊，而這些攻擊會因傳統的簽章型反惡意程式碼引擎而無法辨識。 [安全附件] 功能會取得電子郵件附件，並在虛擬環境中引爆它們，以判斷它們是否安全或惡意。 此引爆程式會開啟虛擬電腦環境中的每個檔案，然後觀察在開啟該檔案後會發生什麼情況。 不論是 PDF、壓縮檔或 Office 檔，惡意程式碼都會隱藏在檔案中，只有在受害者在其電腦上開啟時，才啟用。 透過 detonating 和分析電子郵件流程中的檔案，Office 365 功能的 Defender 會根據行為、檔信譽及許多啟發式規則，尋找這些威脅。
 
-新的值得注意的威脅篩選會顯示最近透過安全附件偵測到的專案。 這些偵測是指在您的電子郵件流程或其他客戶的電子郵件中，並非先前由 Microsoft 365 找到的新惡意檔案專案。 請留意值得注意之威脅追蹤追蹤專案中的專案，查看其目標，並查看 [高級分析] 索引標籤 (所顯示的引爆詳細資料，請按一下瀏覽器中的電子郵件主題) 。 附注您只會在 [安全附件] 功能所偵測到的電子郵件上找到此索引標籤-這項值得注意的追蹤器包含該篩選，但您也可以在瀏覽器中使用該篩選器進行其他搜尋
+新的值得注意的威脅篩選會顯示最近透過安全附件偵測到的專案。 這些偵測是指在您的電子郵件流程或其他客戶的電子郵件中，未 Microsoft 365 先前找到的新惡意檔案專案。 請留意值得注意之威脅追蹤追蹤專案中的專案，查看其目標，並查看 [高級分析] 索引標籤 (所顯示的引爆詳細資料，請按一下瀏覽器中的電子郵件主題) 。 附注您只會在 [安全附件] 功能所偵測到的電子郵件上找到此索引標籤-這項值得注意的追蹤器包含該篩選，但您也可以在瀏覽器中使用該篩選器進行其他搜尋
 
 ## <a name="next-steps"></a>後續步驟
 
-- 如果您的組織還沒有這些 Office 365 威脅調查和回應功能，請參閱 [如何取得 office 365 威脅調查和回應功能？](office-365-ti.md)。
+- 如果您的組織還沒有這些 Office 365 威脅調查和回應功能，請參閱[如何取得 Office 365 威脅調查和回應功能？](office-365-ti.md)。
 
 - 確定您的安全性小組已指派正確的角色和許可權。 您必須是全域系統管理員，或具有安全性 & 規範中心中所指派的安全性系統管理員或搜尋和清除角色。 請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 - 在您的 Microsoft 365 環境中觀賞要顯示的新追蹤器。 若有可用，您可以在 [這裡](https://protection.office.com/)找到追蹤追蹤器。 移至 **威脅管理** \> **威脅** 追蹤器。
 
-- 若尚未這麼做，請深入瞭解並為您的組織設定 [Microsoft Defender For Office 365](defender-for-office-365.md) （包括 [安全連結](safe-links.md) 和 [安全附件](safe-attachments.md)）。
+- 若尚未這麼做，請深入瞭解並為您的組織（包括[安全連結](safe-links.md)和[安全附件](safe-attachments.md)）設定[Microsoft Defender Office 365](defender-for-office-365.md) 。

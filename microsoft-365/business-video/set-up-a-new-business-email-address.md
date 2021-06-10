@@ -1,5 +1,5 @@
 ---
-title: 設定新的商務電子郵件地址
+title: 設定新的公司電子郵件地址
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -28,13 +28,13 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 04/28/2021
 ms.locfileid: "52065138"
 ---
-# <a name="set-up-a-new-business-email-address"></a>設定新的商務電子郵件地址
+# <a name="set-up-a-new-business-email-address"></a>設定新的公司電子郵件地址
 
 - [設定具有新網域的商務電子郵件](#set-up-business-email-with-a-new-domain)
 
 - [使用現有的網域設定商務電子郵件](#set-up-business-email-with-an-existing-domain)
 
-當您為商務設定 Microsoft 365 時，您可以建立包含您公司名稱的自訂電子郵件地址。 這樣可讓您和您的員工成為相同公司品牌的電子郵件，並在 Microsoft 雲端中提供更高的安全性。 
+當您為您的公司設定 Microsoft 365 時，可以建立包含您公司名稱的自訂電子郵件地址。 這樣可讓您和您的員工成為相同公司品牌的電子郵件，並在 Microsoft 雲端中提供更高的安全性。 
 
 ## <a name="set-up-business-email-with-a-new-domain"></a>設定具有新網域的商務電子郵件
 
@@ -61,4 +61,4 @@ ms.locfileid: "52065138"
 1. 自訂電子郵件地址或將其保留原樣。 
 1. 登出 Microsoft 365，然後使用新的電子郵件地址重新簽入。 您的員工電子郵件地址會以新的網域更新。 
 1. 匯出清單以與您的員工共用新的電子郵件地址。
-1. 重複上述步驟1，將您的網域連接至 Microsoft 365。 
+1. 重複上述步驟1，將您的網域連線 Microsoft 365。 

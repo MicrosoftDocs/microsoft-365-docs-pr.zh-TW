@@ -1,7 +1,7 @@
 ---
 title: 概覽-高級搜尋
 description: 了解 Microsoft 365 中的進階搜捕查詢，以及如何使用該功能主動找出您的網路中的威脅和弱點
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、microsoft 365、m365、search、查詢、遙測、自訂偵測、架構、kusto
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、Microsoft 365 Defender、Microsoft 365、m365、搜尋、查詢、遙測、自訂偵測、架構、kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -46,14 +46,14 @@ ms.locfileid: "52073958"
 
 您可以使用相同的威脅搜尋查詢來建立自訂的偵測規則。 這些規則會自動執行，以檢查是否有可疑的破壞活動、錯誤設定的機器及其他發現的回應。
 
-這項功能類似于 [Microsoft Defender For Endpoint 中的高級搜尋](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。 可在 Microsoft 365 的安全性中心使用此功能，可支援從下列專案中檢查更廣泛資料集的查詢：
+這項功能類似于 [Microsoft Defender For Endpoint 中的高級搜尋](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。 可用於 Microsoft 365 安全中心，此功能支援從下列各項檢查更廣泛資料集的查詢：
 
 - 適用於端點的 Microsoft Defender
 - 適用於 Office 365 的 Microsoft Defender
 - Microsoft Cloud App Security
 - 適用於身分識別的 Microsoft Defender
 
-若要使用高級搜尋，請 [開啟 Microsoft 365 Defender](m365d-enable.md)。
+若要使用高級搜尋，請[開啟 Microsoft 365 Defender](m365d-enable.md)。
 
 ## <a name="get-started-with-advanced-hunting"></a>開始使用進階搜捕
 
@@ -69,9 +69,9 @@ ms.locfileid: "52073958"
 | **建立自訂偵測規則** | 瞭解您可以如何使用高級搜尋查詢來觸發提醒並自動採取回應動作。 | - [自訂偵測簡介](custom-detections-overview.md) <br />- [自訂偵測規則](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>取得存取權
-若要使用高級搜尋或其他 [Microsoft 365 Defender](microsoft-365-defender.md) 功能，您需要在 Azure Active Directory 中使用適當的角色。 [閱讀高級搜尋所需的角色和許可權](custom-roles.md)。
+若要使用高級搜尋或其他[Microsoft 365 Defender](microsoft-365-defender.md)功能，您必須在 Azure Active Directory 中有適當的角色。 [閱讀高級搜尋所需的角色和許可權](custom-roles.md)。
 
-此外，您可以使用 Microsoft Defender for Endpoint 中的角色型存取控制 (RBAC) 設定來決定您對端點資料的存取。 [閱讀管理 Microsoft 365 Defender 存取的相關資訊](m365d-permissions.md)。
+此外，您可以使用 Microsoft Defender for Endpoint 中的角色型存取控制 (RBAC) 設定來決定您對端點資料的存取。 [閱讀如何管理 Microsoft 365 Defender 的存取](m365d-permissions.md)。
 
 
 ## <a name="data-freshness-and-update-frequency"></a>資料新鮮度和更新頻率

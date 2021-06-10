@@ -69,9 +69,9 @@ ms.locfileid: "51203788"
 
 - 安全性 & 規範中心內的 **組織管理** (全域管理員) 。
 
-- Azure Active Directory 中的 **[Exchange 系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)**。
+- Exchange Azure Active Directory 中的 **[系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)**。
 
-- 郵件流程安全性 & 規範中心的 **系統管理員**。 如果該帳戶並非也是「組織管理」或「Exchange 管理員」角色群組的成員，請考慮下列問題：
+- 郵件流程安全性 & 規範中心的 **系統管理員**。 如果帳戶不是「組織管理」或「Exchange 管理員」角色群組的成員，請考慮下列問題：
   - 使用者必須直接登入安全性 & 合規性中心 <https://protection.office.com> 。
   - 使用者只具有郵件流程儀表板的唯讀許可權。
   - 使用者將無法存取 Microsoft 365 系統管理中心。

@@ -126,7 +126,7 @@ Teams 檔案會儲存在 SharePoint 線上，且 Teams 的聊天室檔案會儲�
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>在新資料中心內所主控的承租人是否 Microsoft 365 會提供給全國以外的使用者？
   
-可以。 Microsoft 會在世界各地的35國家/地區內，以超過130個位置的 Internet 服務提供者（ (Isp) 中的對2700等合約來維護具有相關合約的大型全域網路。 使用者將能夠從網際網路上的任何地方存取資料中心。
+是。 Microsoft 會在世界各地的35國家/地區內，以超過130個位置的 Internet 服務提供者（ (Isp) 中的對2700等合約來維護具有相關合約的大型全域網路。 使用者將能夠從網際網路上的任何地方存取資料中心。
 
 ## <a name="my-tenant-has-configured-the-multi-geo-add-on-can-i-still-enroll-in-my-tenant-in-the-microsoft-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>我的承租人已設定 [多地理位置附加](https://aka.ms/multi-geo)元件。 我是否仍可在 Microsoft 365 移動程式中註冊我的租使用者，以變更我的預設地理位置，並將不在附屬區域中的任何使用者移至新的預設地理位置？
 

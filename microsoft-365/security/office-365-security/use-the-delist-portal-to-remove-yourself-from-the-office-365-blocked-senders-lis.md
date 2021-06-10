@@ -36,15 +36,15 @@ ms.locfileid: "51203705"
 - [適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-當您嘗試將電子郵件傳送給其電子郵件地址是 Microsoft 365 的收件者時，收到錯誤訊息嗎？ 如果您認為您不應該收到錯誤訊息，您可以使用取消列出入口網站，將您自己從 [封鎖的寄件者] 清單中移除。
+當您嘗試將電子郵件傳送給其電子郵件地址為 Microsoft 365 的收件者時，您收到錯誤訊息嗎？ 如果您認為您不應該收到錯誤訊息，您可以使用取消列出入口網站，將您自己從 [封鎖的寄件者] 清單中移除。
 
 ## <a name="what-is-the-blocked-senders-list"></a>什麼是封鎖的寄件者清單？
 
-Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件、詐騙和網路釣魚攻擊。 您的郵件伺服器的 IP 位址（亦即，郵件伺服器用來在網際網路上識別自己的位址）已標記為可能的 Microsoft 365 威脅，原因很多。 當 Microsoft 365 將 IP 位址新增至清單時，它會防止 IP 位址與任何以我們的資料中心進行的任何客戶之間的進一步通訊。
+Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件、詐騙和網路釣魚攻擊。 您的郵件伺服器的 IP 位址（亦即，郵件伺服器用來在網際網路上識別自己的位址）已標記為因各種原因之一而 Microsoft 365 的潛在威脅。 當 Microsoft 365 將 ip 位址新增至清單時，它會防止 ip 位址與我們所有客戶透過我們的資料中心之間的進一步通訊。
 
 當您收到包含錯誤如下的郵件訊息時，您就會知道您已新增至清單：
 
-> 550 5.7.606-649 拒絕存取，禁止傳送 IP _位址 [ip 位址_];若要向此清單要求移除，請流覽 <https://sender.office.com/> 並依照指示執行。 如需詳細資訊，請參閱 [Exchange Online 中的電子郵件未傳遞](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)回報。
+> 550 5.7.606-649 拒絕存取，禁止傳送 IP _位址 [ip 位址_];若要向此清單要求移除，請流覽 <https://sender.office.com/> 並依照指示執行。 如需詳細資訊，請參閱[Exchange Online 中的電子郵件未傳遞](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)回報。
 
 其中  _IP address_ 是郵件伺服器執行所在之電腦的 IP 位址。
 

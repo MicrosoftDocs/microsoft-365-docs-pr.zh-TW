@@ -74,7 +74,7 @@ Microsoft Defender 防毒軟體會自動啟用並安裝在執行 Windows 10 的�
 
 如果您使用 Windows Server、版本1803或更新版本，或是 Windows Server 2019，您可以設定下列登錄機碼，將 Microsoft Defender 防毒軟體設定為被動式模式：
 - 路徑： `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- 名稱：`ForceDefenderPassiveMode`
+- 名稱: `ForceDefenderPassiveMode`
 - 類型： `REG_DWORD`
 - 值：`1`
 
